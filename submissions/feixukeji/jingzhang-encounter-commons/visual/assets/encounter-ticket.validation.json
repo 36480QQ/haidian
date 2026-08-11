@@ -1,18 +1,21 @@
 {
   "schema_version": "0.2",
   "evidence_status": "recorded_deterministic_synthetic_validation_not_field_performance",
-  "executed_on": "2026-08-09",
+  "executed_on": "2026-08-10",
   "synthetic_only": true,
   "field_performance": false,
   "repository_ci_executes_submission_code": false,
   "replayable_runner": {
     "path": "run-encounter-ticket-validation.js",
-    "sha256": "f247fef71509f2d330167385df191e4d6ceea017d61e56e6a8c631016931e8a8",
+    "runner_version": "0.3.0",
+    "sha256": "10e1987c068431e56c1831cc83e9be143e869dd2af4a6130c96238ff196125d0",
     "command_from_submission_root": "node visual/assets/run-encounter-ticket-validation.js",
     "runtime_tested": "Node.js v24.12.0",
     "third_party_dependencies": 0,
     "result": "pass",
-    "replay_digest_sha256": "445cd41e751d4e4d841bfc57e576150bdbeedf9c834c237323fb8956ad3c8595",
+    "assertions_passed": 18,
+    "assertions_failed": 0,
+    "replay_digest_sha256": "c2c5b1e546e9f9c482271b27c3edea7f7d7034db7aa4914e2c5629f4368af0f2",
     "coverage": {
       "full_json_schema_draft_2020_12_implementation": false,
       "current_schema_keyword_subset_fail_closed": true,
@@ -23,10 +26,11 @@
         "Legal-basis, evidence, human-host and authorization conditions",
         "Publication artifact and rights conditions",
         "Three positive fixtures and five expected-invalid controls",
-        "Twelve-scenario inventory split into three synthetic and nine pending templates"
+        "Twelve-scenario inventory split into three synthetic and nine pending templates",
+        "S01 Zhongzhiyuan synthetic spatial fixture: exact roles, components, ticket binding, exhaustive six-condition decision rule, one pass, four expected rejects and blocked field release"
       ]
     },
-    "evidence_boundary": "Deterministic offline synthetic contract replay only; PASS is not field-performance evidence."
+    "evidence_boundary": "Deterministic offline synthetic contract and spatial-fixture replay only; PASS is not evidence of authorization, safety, public acceptance, venue release or field/operational performance."
   },
   "inputs": [
     {
@@ -48,6 +52,10 @@
     {
       "path": "encounter-ticket.scenarios.json",
       "sha256": "683d618def6ebf8e10835715cbc19d4fbed1b4d94dc933dfcc54ffc3dda479ac"
+    },
+    {
+      "path": "site-baseline-audit.json",
+      "sha256": "0a7e5157ba68ac9d839b1755e5e7996e6030a962ed276c3eba0627af5b2e9b18"
     }
   ],
   "validator": {
@@ -118,12 +126,50 @@
     "template_pending_authorisation": 9,
     "field_validation_performed": false
   },
+  "spatial_fixture_replay": {
+    "fixture_id": "S01-ZZY-SPATIAL-01",
+    "ticket_ref": "encounter-ticket.example.json#/tickets/0",
+    "synthetic_only": true,
+    "field_performance": false,
+    "session_minutes": 90,
+    "candidate_capacity": 12,
+    "venue_block_hours": 4,
+    "ticket_duration_minutes": 90,
+    "ticket_capacity": 12,
+    "role_slots": [
+      "authorised_venue_operator_acceptance",
+      "named_test_lead_and_physical_stop",
+      "access_and_safety_reviewer",
+      "setup_and_restoration_steward"
+    ],
+    "components": [
+      {"component": "public_problem_threshold", "count": 1},
+      {"component": "controlled_test_bay", "count": 3},
+      {"component": "physical_emergency_stop", "count": 1},
+      {"component": "clear_ai_off_bypass_exit", "count": 1},
+      {"component": "strike_and_restoration_checklist", "count": 1}
+    ],
+    "decision_rule": "pass iff public_path, separation, duty_holder, physical_stop, ai_off_bypass and restoration are all true",
+    "boolean_combinations_checked": 64,
+    "pass_count": 1,
+    "expected_reject_count": 4,
+    "case_results": [
+      {"case_id": "SPATIAL-PASS-01", "result": "pass"},
+      {"case_id": "SPATIAL-REJECT-NO-SEPARATION", "result": "rejected_as_expected"},
+      {"case_id": "SPATIAL-REJECT-NO-DUTY-HOLDER", "result": "rejected_as_expected"},
+      {"case_id": "SPATIAL-REJECT-BLOCKED-BYPASS", "result": "rejected_as_expected"},
+      {"case_id": "SPATIAL-REJECT-NO-RESTORATION", "result": "rejected_as_expected"}
+    ],
+    "field_release_status": "blocked_pending_authorised_operator_site_walk_and_professional_review",
+    "evidence_boundary": "Synthetic spatial-contract replay only; no venue capacity, safety, accessibility, authorisation or field-performance claim is made."
+  },
   "result": "pass",
   "limitations": [
     "No live participant, venue, operator, public service or field operation was tested.",
     "The repository CI treats this file as static, hash-bound evidence and does not execute participant-submitted code.",
     "The package-local Node.js runner implements and fail-closes around the keyword subset used by the current schemas; it is not a complete JSON Schema Draft 2020-12 implementation.",
     "Synthetic validation is not evidence of authorisation, safety, public acceptance or operational performance.",
+    "The S01 spatial fixture is a deterministic synthetic plan-to-acceptance replay; field release remains blocked pending an authorised operator, site walk and professional review.",
     "Any pilot requires an authorised operator, verified venue and capacity, confirmed legal basis, named accepting duty holder, non-AI equivalent, complaint route and documented stop authority."
   ]
 }

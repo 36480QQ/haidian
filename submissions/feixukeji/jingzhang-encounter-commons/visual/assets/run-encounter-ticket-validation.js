@@ -17,7 +17,8 @@ const inputNames = {
   fixture_schema: "encounter-ticket.fixture.schema.json",
   positive_fixture: "encounter-ticket.example.json",
   expected_invalid: "encounter-ticket.expected-invalid.json",
-  scenario_inventory: "encounter-ticket.scenarios.json"
+  scenario_inventory: "encounter-ticket.scenarios.json",
+  site_baseline: "site-baseline-audit.json"
 };
 
 const SUPPORTED_SCHEMA_KEYWORDS = new Set([
@@ -40,6 +41,31 @@ const PROHIBITED_FIELDS = new Set([
   "face", "contact_list", "precise_trajectory", "emotion", "health_record",
   "relationship_graph", "personal_score"
 ]);
+const SPATIAL_BOOLEAN_KEYS = [
+  "public_path", "separation", "duty_holder", "physical_stop",
+  "ai_off_bypass", "restoration"
+];
+const SPATIAL_ROLE_SLOTS = [
+  "authorised_venue_operator_acceptance",
+  "named_test_lead_and_physical_stop",
+  "access_and_safety_reviewer",
+  "setup_and_restoration_steward"
+];
+const SPATIAL_COMPONENTS = [
+  { component: "public_problem_threshold", count: 1 },
+  { component: "controlled_test_bay", count: 3 },
+  { component: "physical_emergency_stop", count: 1 },
+  { component: "clear_ai_off_bypass_exit", count: 1 },
+  { component: "strike_and_restoration_checklist", count: 1 }
+];
+const SPATIAL_CASES = [
+  { case_id: "SPATIAL-PASS-01", public_path: true, separation: true, duty_holder: true, physical_stop: true, ai_off_bypass: true, restoration: true, expected: "pass" },
+  { case_id: "SPATIAL-REJECT-NO-SEPARATION", public_path: true, separation: false, duty_holder: true, physical_stop: true, ai_off_bypass: true, restoration: true, expected: "reject" },
+  { case_id: "SPATIAL-REJECT-NO-DUTY-HOLDER", public_path: true, separation: true, duty_holder: false, physical_stop: true, ai_off_bypass: true, restoration: true, expected: "reject" },
+  { case_id: "SPATIAL-REJECT-BLOCKED-BYPASS", public_path: true, separation: true, duty_holder: true, physical_stop: true, ai_off_bypass: false, restoration: true, expected: "reject" },
+  { case_id: "SPATIAL-REJECT-NO-RESTORATION", public_path: true, separation: true, duty_holder: true, physical_stop: true, ai_off_bypass: true, restoration: false, expected: "reject" }
+];
+const FIELD_RELEASE_BLOCKED = "blocked_pending_authorised_operator_site_walk_and_professional_review";
 
 function readInput(name) {
   const filePath = path.join(assetDir, name);
@@ -407,6 +433,10 @@ function pushAssertion(assertions, id, passed, detail) {
   assertions.push({ id, passed: Boolean(passed), detail });
 }
 
+function spatialDecision(testCase) {
+  return SPATIAL_BOOLEAN_KEYS.every((key) => testCase[key] === true) ? "pass" : "reject";
+}
+
 function main() {
   const loaded = {};
   for (const [key, name] of Object.entries(inputNames)) loaded[key] = readInput(name);
@@ -415,6 +445,7 @@ function main() {
   const fixture = loaded.positive_fixture.value;
   const negatives = loaded.expected_invalid.value;
   const scenarios = loaded.scenario_inventory.value;
+  const siteBaseline = loaded.site_baseline.value;
   const assertions = [];
   const fatalErrors = [];
 
@@ -539,12 +570,89 @@ function main() {
     { total: scenarioRows.length, synthetic_validated: syntheticRows.length,
       template_pending_authorisation: templateRows.length, field_validation_performed: scenarios.field_validation_performed });
 
+  const spatialFixture = siteBaseline.controlled_test_spatial_fixture || {};
+  const spatialTargets = spatialFixture.design_targets || {};
+  const spatialCases = Array.isArray(spatialFixture.synthetic_cases) ? spatialFixture.synthetic_cases : [];
+  const spatialTicket = fixture.tickets && fixture.tickets[0];
+  const ticketStart = spatialTicket && spatialTicket.space_time_capacity
+    && spatialTicket.space_time_capacity.starts_at;
+  const ticketEnd = spatialTicket && spatialTicket.space_time_capacity
+    && spatialTicket.space_time_capacity.ends_at;
+  const ticketDurationMinutes = rfc3339(ticketStart) && rfc3339(ticketEnd)
+    ? (Date.parse(ticketEnd) - Date.parse(ticketStart)) / 60000 : null;
+  const ticketCapacity = spatialTicket && spatialTicket.space_time_capacity
+    && spatialTicket.space_time_capacity.capacity;
+
+  pushAssertion(assertions, "spatial_fixture_identity_and_evidence_boundary",
+    spatialFixture.fixture_id === "S01-ZZY-SPATIAL-01"
+      && spatialFixture.ticket_ref === "encounter-ticket.example.json#/tickets/0"
+      && spatialFixture.synthetic_only === true
+      && spatialFixture.field_performance === false
+      && nonEmptyString(spatialFixture.evidence_boundary),
+    {
+      fixture_id: spatialFixture.fixture_id,
+      ticket_ref: spatialFixture.ticket_ref,
+      synthetic_only: spatialFixture.synthetic_only,
+      field_performance: spatialFixture.field_performance
+    });
+  pushAssertion(assertions, "spatial_fixture_ticket_and_time_binding",
+    spatialTargets.session_minutes === 90
+      && spatialTargets.candidate_capacity === 12
+      && spatialTargets.venue_block_hours === 4
+      && ticketDurationMinutes === spatialTargets.session_minutes
+      && ticketCapacity === spatialTargets.candidate_capacity,
+    {
+      session_minutes: spatialTargets.session_minutes,
+      ticket_duration_minutes: ticketDurationMinutes,
+      candidate_capacity: spatialTargets.candidate_capacity,
+      ticket_capacity: ticketCapacity,
+      venue_block_hours: spatialTargets.venue_block_hours
+    });
+  pushAssertion(assertions, "spatial_fixture_exact_roles_and_components",
+    deepEqual(spatialTargets.role_slots, SPATIAL_ROLE_SLOTS)
+      && deepEqual(spatialTargets.components, SPATIAL_COMPONENTS),
+    { role_slots: spatialTargets.role_slots, components: spatialTargets.components });
+  pushAssertion(assertions, "spatial_fixture_exact_cases",
+    deepEqual(spatialCases, SPATIAL_CASES),
+    spatialCases.map((testCase) => ({ case_id: testCase.case_id, expected: testCase.expected })));
+
+  const spatialRuleMasks = Array.from({ length: 64 }, (_, mask) => {
+    const probe = Object.fromEntries(SPATIAL_BOOLEAN_KEYS.map((key, index) => [key, Boolean(mask & (1 << index))]));
+    return spatialDecision(probe);
+  });
+  pushAssertion(assertions, "spatial_fixture_pass_iff_all_six_conditions_true",
+    spatialRuleMasks.filter((decision) => decision === "pass").length === 1
+      && spatialRuleMasks[63] === "pass"
+      && spatialRuleMasks.slice(0, 63).every((decision) => decision === "reject"),
+    { required_true_conditions: SPATIAL_BOOLEAN_KEYS, exhaustive_boolean_combinations_checked: 64 });
+
+  const spatialResults = spatialCases.map((testCase) => {
+    const observed = spatialDecision(testCase);
+    return {
+      case_id: testCase.case_id,
+      expected: testCase.expected,
+      observed,
+      status: observed === testCase.expected ? (observed === "pass" ? "PASS" : "REJECTED_AS_EXPECTED") : "FAIL"
+    };
+  });
+  const spatialPassCount = spatialResults.filter((result) => result.observed === "pass").length;
+  const spatialRejectCount = spatialResults.filter((result) => result.observed === "reject").length;
+  pushAssertion(assertions, "spatial_fixture_one_pass_four_expected_rejects",
+    spatialResults.length === 5
+      && spatialPassCount === 1
+      && spatialRejectCount === 4
+      && spatialResults.every((result) => result.status !== "FAIL"),
+    spatialResults);
+  pushAssertion(assertions, "spatial_fixture_field_release_remains_blocked",
+    spatialFixture.field_release_status === FIELD_RELEASE_BLOCKED,
+    { field_release_status: spatialFixture.field_release_status });
+
   const failedAssertions = assertions.filter((assertion) => !assertion.passed);
   fatalErrors.push(...failedAssertions.map((assertion) => `${assertion.id} failed`));
   const status = fatalErrors.length === 0 ? "PASS" : "FAIL";
   const output = {
     runner: "run-encounter-ticket-validation.js",
-    runner_version: "0.2.0",
+    runner_version: "0.3.0",
     status,
     evidence_boundary: {
       synthetic_only: true,
@@ -562,7 +670,8 @@ function main() {
         "legal-basis, verified-evidence, host and authorization conditions",
         "publication artifact and rights conditions",
         "three synthetic-positive plus five expected-invalid fixtures",
-        "twelve-scenario inventory split into three synthetic and nine pending templates"
+        "twelve-scenario inventory split into three synthetic and nine pending templates",
+        "S01 Zhongzhiyuan synthetic spatial fixture: exact roles, components, ticket binding, six-condition decision rule, expected rejects, and blocked field release"
       ]
     },
     inputs: Object.values(loaded).map(({ path: inputPath, sha256 }) => ({ path: inputPath, sha256 })),
@@ -574,6 +683,23 @@ function main() {
       synthetic_validated: syntheticRows.length,
       template_pending_authorisation: templateRows.length,
       field_validation_performed: false
+    },
+    spatial_fixture_summary: {
+      fixture_id: spatialFixture.fixture_id,
+      ticket_ref: spatialFixture.ticket_ref,
+      synthetic_only: spatialFixture.synthetic_only,
+      field_performance: spatialFixture.field_performance,
+      decision_rule: `pass iff ${SPATIAL_BOOLEAN_KEYS.join(" && ")} are all true`,
+      session_minutes: spatialTargets.session_minutes,
+      candidate_capacity: spatialTargets.candidate_capacity,
+      venue_block_hours: spatialTargets.venue_block_hours,
+      role_slots: spatialTargets.role_slots,
+      components: spatialTargets.components,
+      results: spatialResults,
+      pass_count: spatialPassCount,
+      expected_reject_count: spatialRejectCount,
+      field_release_status: spatialFixture.field_release_status,
+      evidence_boundary: spatialFixture.evidence_boundary
     },
     errors: fatalErrors
   };
@@ -588,7 +714,7 @@ try {
 } catch (error) {
   const output = {
     runner: "run-encounter-ticket-validation.js",
-    runner_version: "0.2.0",
+    runner_version: "0.3.0",
     status: "FAIL",
     evidence_boundary: {
       synthetic_only: true,

@@ -48,6 +48,22 @@
       "statement_en": "Haidian's 2026 government report states that main works in implementable Phase II areas had been completed.",
       "not_proven_zh": "该表述不等于二期全线、46个计划入口或全部无障碍路径已全部建成、开放并完成运营验收。",
       "not_proven_en": "The statement does not mean that the whole Phase II corridor, all 46 planned entrances, or all accessible routes are complete, open, and operationally verified."
+    },
+    {
+      "id": "F04_CORRIDOR_RAIL_STATES",
+      "source_id": "BEIJING-JZ-PARK-PHASE2-PLAN",
+      "status": "official_public_corridor_background",
+      "published_date": "2024-09-07",
+      "facts": {
+        "high_speed_rail_within_fifth_ring": "reported_underground_tunnel_operation",
+        "former_surface_rail_corridor": "reported_heritage_public_space_reuse",
+        "line_13_context": "reported_existing_elevated_parallel_or_adjacent_condition",
+        "future_line_13_change": "future_plan_not_current_condition"
+      },
+      "statement_zh": "北京市政府公开报道把走廊级轨道状态分开：五环内京张高铁以地下隧道运行，原地面铁路空间改造为遗址公园，原铁路与既有13号线高架曾并行相邻；文中未来13号线变化不能预支为当前状态。",
+      "statement_en": "A Beijing government report separates corridor-scale rail states: the high-speed railway operates in an underground tunnel within the Fifth Ring, the former surface railway corridor is reused as heritage public space, and the former railway and existing elevated Line 13 were reported as parallel or adjacent; future Line 13 changes in the article cannot be prepaid as current conditions.",
+      "not_proven_zh": "该报道不提供精确线位、隧道保护界、权属、现状过线点、竣工状态或工程可行性。",
+      "not_proven_en": "The report provides no exact alignment, tunnel protection boundary, ownership, current legal crossing, as-built condition, or engineering feasibility."
     }
   ],
   "design_inferences": [
@@ -72,6 +88,86 @@
       "inference_en": "The three Commons are reversible operating prototypes on candidate carriers, not statutory land allocation, permanent buildings, or approved events."
     }
   ],
+  "representative_interface_dossier": {
+    "dossier_id": "IF-TYPE-01",
+    "status": "type_template_pending_site_and_authority",
+    "location_claim": "none",
+    "not_to_scale": true,
+    "purpose_zh": "用一个不落坐标的类型档案，把轨道状态、合法过线、普通公共服务基线、四方走查与停止条件放在同一张图；它不是新增跨线工程。",
+    "purpose_en": "Use a non-located type dossier to place rail states, legal crossing, ordinary-service baseline, four-party walkthrough, and stop conditions in one view; it is not a new cross-rail work.",
+    "corridor_state_matrix": [
+      {
+        "state": "operating_high_speed_rail",
+        "known": "underground_within_fifth_ring_at_corridor_scale",
+        "design_rule": "treat_as_hard_constraint_until_as_built_and_protection_data_arrive"
+      },
+      {
+        "state": "former_surface_rail_corridor",
+        "known": "heritage_public_space_reuse_reported",
+        "design_rule": "public_realm_candidate_only_after_current_operator_and_access_check"
+      },
+      {
+        "state": "line_13",
+        "known": "existing_elevated_parallel_or_adjacent_context_reported",
+        "design_rule": "separate_current_condition_from_future_change_and_never_assume_access"
+      }
+    ],
+    "five_part_route": [
+      "arrive_on_ordinary_public_route",
+      "use_existing_or_formally_approved_crossing_only",
+      "enter_through_verified_threshold",
+      "stay_with_human_host_and_non_ai_equivalent",
+      "exit_on_verified_accessible_route"
+    ],
+    "ordinary_service_baseline": [
+      "human_wayfinding_without_account",
+      "continuous_accessible_route",
+      "safe_waiting_and_crossing_control",
+      "lighting_and_visible_exit",
+      "named_operator_and_stop_authority"
+    ],
+    "unknowns_that_break_the_line": [
+      "exact_current_alignment_or_protection_boundary",
+      "ownership_or_operating_authority",
+      "current_legal_crossing_and_opening_hours",
+      "as_built_accessibility_and_egress",
+      "event_capacity_and_emergency_plan"
+    ],
+    "release_rule": "Only an existing or formally approved crossing may enter the candidate set; any live-rail boundary, authority, access, or safety unknown keeps the route unpublished."
+  },
+  "controlled_test_spatial_fixture": {
+    "fixture_id": "S01-ZZY-SPATIAL-01",
+    "synthetic_only": true,
+    "field_performance": false,
+    "ticket_ref": "encounter-ticket.example.json#/tickets/0",
+    "design_targets": {
+      "session_minutes": 90,
+      "candidate_capacity": 12,
+      "venue_block_hours": 4,
+      "role_slots": [
+        "authorised_venue_operator_acceptance",
+        "named_test_lead_and_physical_stop",
+        "access_and_safety_reviewer",
+        "setup_and_restoration_steward"
+      ],
+      "components": [
+        {"component": "public_problem_threshold", "count": 1},
+        {"component": "controlled_test_bay", "count": 3},
+        {"component": "physical_emergency_stop", "count": 1},
+        {"component": "clear_ai_off_bypass_exit", "count": 1},
+        {"component": "strike_and_restoration_checklist", "count": 1}
+      ]
+    },
+    "synthetic_cases": [
+      {"case_id": "SPATIAL-PASS-01", "public_path": true, "separation": true, "duty_holder": true, "physical_stop": true, "ai_off_bypass": true, "restoration": true, "expected": "pass"},
+      {"case_id": "SPATIAL-REJECT-NO-SEPARATION", "public_path": true, "separation": false, "duty_holder": true, "physical_stop": true, "ai_off_bypass": true, "restoration": true, "expected": "reject"},
+      {"case_id": "SPATIAL-REJECT-NO-DUTY-HOLDER", "public_path": true, "separation": true, "duty_holder": false, "physical_stop": true, "ai_off_bypass": true, "restoration": true, "expected": "reject"},
+      {"case_id": "SPATIAL-REJECT-BLOCKED-BYPASS", "public_path": true, "separation": true, "duty_holder": true, "physical_stop": true, "ai_off_bypass": false, "restoration": true, "expected": "reject"},
+      {"case_id": "SPATIAL-REJECT-NO-RESTORATION", "public_path": true, "separation": true, "duty_holder": true, "physical_stop": true, "ai_off_bypass": true, "restoration": false, "expected": "reject"}
+    ],
+    "field_release_status": "blocked_pending_authorised_operator_site_walk_and_professional_review",
+    "evidence_boundary": "A deterministic synthetic spatial-contract exercise only; it is not evidence of venue capacity, safety, accessibility, authorisation, or field performance."
+  },
   "field_handoff": {
     "required_inputs": [
       "as_built_boundary_and_phase_register",

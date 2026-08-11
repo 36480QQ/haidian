@@ -55,6 +55,8 @@ scenarios: ["enterprise-service-copilot", "ai-cultural-guide", "ai-health-servic
 | 2024 方案描述 9 条计划城市支路与“三道一绿” | 六条“缝”只抽取代表性到达—过街—进入—停留—退出核验剖面 | 核验路口控制、净宽/坡度、冲突点、夜间照明和安全替代路径；未核验路线不得发布 |
 | 2024 方案描述 8 处计划社区活动场地；2026 报告记载二期可实施区域主体建设完成 | 三座相遇场只是在候选载体上叠加可逆运营原型 | 核验权属、运营者、容量、消防、噪声、文保和数据条件；未获授权不得上线 |
 
+轨道状态也必须拆开阅读。北京市政府公开材料记载，五环内京张高铁以地下隧道运行，原地面铁路空间转化为遗址公园，并描述原铁路与既有13号线高架曾并行相邻；同一报道中的未来13号线变化不能预支为现状。本案据此建立不落坐标、非尺度的 `IF-TYPE-01` 代表性接口档案：只把既有或正式批准的过线点纳入候选集，分别记录运营铁路硬约束、地面遗产公共空间、普通服务基线和五段到达—退出路径；精确线位、隧道保护界、权属或现状过线状态任一未知，图上的连接即中断而不是补画。[source:BEIJING-JZ-PARK-PHASE2-PLAN] [assumption:A-SITE-VERIFY-001]
+
 任何候选“缝”只有在四类角色完成同一条到达—退出联合走查后，才能从 `pending/not_authorized` 升级为可发布路线：获授权场地运营方核验权属或运营权限、开放时段、容量与现场停止权；周边居民或社区代表核验日常通行、噪声与投诉响应；无障碍同行者以无本地账号、手机不可用和行动/感官辅助情境核验全程；安全或交通专业人员核验过街、照明、消防与疏散。四类槽位必须由真实具名主体接受，但公开输出只保留日期、匿名问题/停止清单、修复责任、复查日期和发布或撤回结论，不公开个人身份、精确轨迹或无障碍/投诉细节。[assumption:A-SITE-VERIFY-001] [depth:traffic_rail_slow_parking]
 
 当前仓库没有官方精确总体范围和三处重点区 polygon。`geometry/site_boundary.geojson` 与 `geometry/key_areas.geojson` 沿用组织方提供的 provisional rough geometry，属性均明确 `official_boundary=false`；图中虚线只用于构图、自检和可讨论的面积复算，不是官方红线、道路红线、权属线或审批依据。公开的 43.6 平方公里、约 11.4 平方公里和 368.4 公顷是公告标称规模；11,412,825.386 平方米是临时 polygon 在 EPSG:4548 下的计算结果，两者不能混作精确法定面积。官方 geometry 到位后，所有图层、比例和图纸必须整体复算。[source:BOUNDARY-SOURCE] [assumption:A-BOUNDARY-001]
@@ -120,6 +122,8 @@ scenarios: ["enterprise-service-copilot", "ai-cultural-guide", "ai-health-servic
 
 **众智园同题场 / COMMON PROBLEM YARD。** 以“先发布问题，再招募技术”为规则。社区、园区和公共服务单位把可公开的问题写成边界明确的任务卡，研发团队在隔离环境中测试模型、机器人或工具，主持人决定是否进入小范围首用。空间原型包括公开问题墙、可重新布置的测试桌、隔离演示带和失败复盘台。地标“第一张开放桌”每天只展示问题、验证条件和公共产出，不展示企业排名或个人关系。所有模型与机器人测试须另行完成安全、数据和运营审批。[assumption:A-TEST-001]
 
+本轮把该原型压成一张“平面—NTS剖面—验收”合成桌面 fixture：S01 使用90分钟、候选容量12人的纯合成时段，另预留4小时场地块覆盖布置、演练和恢复；空间只设1个公共问题阈值、3个受控测试位、1个实体急停、1条不依赖AI的清晰旁路和1份撤场恢复清单。四个责任槽为获授权运营方接受、具名测试负责人、无障碍/安全复核和布置恢复值守。包内回放器可通过 S01 合同与完整基线案例，并按预期拒绝无隔离、无值守、旁路受阻或无法恢复四类负例；但真实运营方、现场走查和专业核签仍未发生，所以 `field_release_status` 保持阻断，不能把合成 PASS 写成场地绩效。[metric:industry_test_count] [assumption:A-SITE-VERIFY-001]
+
 **AI 原点同桌场 / COMMON TABLE YARD。** 作为首个 90 天低成本试点候选，以跨校开放桌、导师门诊、OPC 合规门诊、多语新人台、人才与公共服务导航为核心。参与者可以无账号查看活动并现场报名；AI 根据公开任务标签、空间容量、语言和时段给出建议，主持人确认后才发布。试点不采集人脸、通讯录、精确轨迹、情感状态或私人关系数据；系统不预测“谁应该认识谁”。地标“公开贡献时刻墙”只记录共享文档、修复、翻译、测试与退役决定。[source:HD-TALENT-MOBILE-STATION] [metric:pilot_duration_days]
 
 ![AI 生成概念图：AI 原点同桌场的候选运营情境](assets/figures/ai-origin-common-table.png)
@@ -148,7 +152,7 @@ scenarios: ["enterprise-service-copilot", "ai-cultural-guide", "ai-health-servic
 
 一条 90 分钟合成旅程把包容性从口号变成可检查路径：一名首次来访、中文有限、没有本地账号且手机没电的国际新人，从实体双语导视到线下人工进入，选择已授权公共任务，以纸卡或口述共同完成，查看双语产出，要求删除临时偏好或提交投诉，再沿明示路线离场；全程不建立永久账号。每一步都标明 AI 的有限职责、人类责任人、最少数据和硬停止，见 `visual/assets/ordinary-person-journey.json`。这是待未来试点验证的复合设计场景，不是实地用户研究或绩效结果。[assumption:A-DATA-001] [assumption:A-ACCESS-001]
 
-十二张场景卡以 8 字段“相遇票 / Encounter Ticket 0.2”作为最小运行合同：①公开任务 ID 与到期日；②进入、无障碍与退出方式；③候选空间—时段—容量；④最少数据与删除日期；⑤具名人类主持人与停止权限；⑥资源依赖与费用类别；⑦公共产出与权利状态；⑧投诉、复核及采用/修正/退役决定。它不含永久账号、关系图谱或个人评分。完整 schema、fixture envelope、S01–S03 三张有效的未授权合成票、五类预期失败负例和十二场景索引分别见 `visual/assets/encounter-ticket.schema.json`、`encounter-ticket.fixture.schema.json`、`encounter-ticket.example.json`、`encounter-ticket.expected-invalid.json` 与 `encounter-ticket.scenarios.json`。包内无依赖回放器 `run-encounter-ticket-validation.js` 可用 `node visual/assets/run-encounter-ticket-validation.js --check` 复演当前 schema 使用到的关键字子集、格式、时间顺序、数据边界、授权条件、3 个正例、5 个负例和 12 场景索引；`encounter-ticket.validation.json` 固化输入哈希与回放摘要。该回放器明确不是完整 Draft 2020-12 引擎，合成校验通过也不代表现场绩效。[metric:encounter_ticket_field_count]
+十二张场景卡以 8 字段“相遇票 / Encounter Ticket 0.2”作为最小运行合同：①公开任务 ID 与到期日；②进入、无障碍与退出方式；③候选空间—时段—容量；④最少数据与删除日期；⑤具名人类主持人与停止权限；⑥资源依赖与费用类别；⑦公共产出与权利状态；⑧投诉、复核及采用/修正/退役决定。它不含永久账号、关系图谱或个人评分。完整 schema、fixture envelope、S01–S03 三张有效的未授权合成票、五类预期失败负例和十二场景索引分别见 `visual/assets/encounter-ticket.schema.json`、`encounter-ticket.fixture.schema.json`、`encounter-ticket.example.json`、`encounter-ticket.expected-invalid.json` 与 `encounter-ticket.scenarios.json`。包内无依赖回放器 `run-encounter-ticket-validation.js` 可用 `node visual/assets/run-encounter-ticket-validation.js --check` 复演当前 schema 使用到的关键字子集、格式、时间顺序、数据边界、授权条件、3 个正例、5 个负例和 12 场景索引；它还将 S01 众智园空间夹具绑定到首张相遇票，穷举六项空间条件的 64 种组合，并验证完整基线通过、4 类缺项按预期拒绝、真实场地放行保持阻断。`encounter-ticket.validation.json` 固化输入哈希与回放摘要。该回放器明确不是完整 Draft 2020-12 引擎，合成校验通过也不代表现场绩效。[metric:encounter_ticket_field_count]
 
 前三项被重构为尚未授权、尚未运行的产业验证协议；当前统一记录 `performance_results=null`。结构校验或合成桌面预演不证明现实服务可用、安全合规、公众接受或可规模部署。其余九项把技术嵌入日常公共服务，而不是制造额外 App。[metric:industry_test_count]
 
@@ -186,6 +190,8 @@ scenarios: ["enterprise-service-copilot", "ai-cultural-guide", "ai-health-servic
 “相遇主线”是公共空间和活动组织概念，不是新道路或轨道。2024 年公开方案中的 46 个计划入口、9 条计划城市支路和“三道一绿”只构成待核验的公共基线；本方案的六条东西向连接采用“到达—过街—进入—停留—退出”五段检查法抽取代表性障碍，不与上述计划数量建立一一对应。[source:BEIJING-JZ-PARK-PHASE2-PLAN] [assumption:A-PHASE2-ASBUILT-001]
 
 `roads.geojson` 中的一条南北线与六条横线只表达待现场核验的连接意图；取得竣工/运营清单前，不发布具体入口或安全路线，跨越主路、铁路、校园或园区边界的任何桥隧和穿行方案都需另行交通、工程、权属与安全论证。[data:geometry/roads.geojson#ROAD-CONNECT-001] [depth:traffic_rail_slow_parking]
+
+`visual/assets/site-baseline-audit.json` 中的 IF-TYPE-01 因而只是一份代表性接口证据档案，不是第七条“缝”或新建跨线方案。它先确认普通公共路线与现有/批准过线逻辑，再检查候车/等待、无障碍、照明、人工服务和退出；现役铁路边界、未来13号线工程或任何未核权限都不会被一条概念线自动跨越。[source:BEIJING-JZ-PARK-PHASE2-PLAN] [assumption:A-ACCESS-001]
 
 轨道站点被视为“服务换乘界面”，而非本方案可编辑的线位。候选动作是：站口至相遇场的连续易读导视、活动散场分批、步行/自行车停车提示、无障碍路线预检，以及大客流时关闭或缩小活动的规则。实时客流、视频监控和个人轨迹不是本方案运行前提；如未来依法接入聚合数据，必须经过数据保护、最小化和用途审查。[assumption:A-ACCESS-001]
 

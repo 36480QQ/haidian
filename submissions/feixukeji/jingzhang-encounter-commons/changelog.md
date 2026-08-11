@@ -2,6 +2,13 @@
 
 Change log / 变更记录
 
+## v1.5 - 2026-08-10
+
+- Added a non-located representative interface dossier that separates underground high-speed rail, surface heritage public space, and current Line 13 context; only existing or formally approved crossings may enter the candidate set.
+- Upgraded the Zhongzhiyuan prototype from a generic test diagram to a plan–section–acceptance contract with public path, separation, physical stop, AI-off bypass, restoration, and explicit professional release conditions.
+- Added a deterministic synthetic spatial replay for one complete baseline and four expected rejects; the result remains synthetic-only and real-site release remains blocked.
+- Preserved all exact alignment, ownership, protection, capacity, and authorisation unknowns for as-built records, a four-party field walk, and professional sign-off.
+
 ## v1.4 - 2026-08-10
 
 - Replaced the early A0 protocol-card sequence with a wall-readable spatial-system board that foregrounds the three scales, One Spine, Three Commons, Two Wings, and Six Seams.
