@@ -1,5 +1,22 @@
 # 方案迭代记录
 
+## v1.22 - 2026-08-12
+
+- Added a bilingual dynamic-preference and satisfaction screen for eight synthetic groups, four time windows and four policy candidates.
+- Separated the highest raw satisfaction proxy from the highest hard-gated eligible candidate, with 32 replayable decision cells and zero local survey responses or air agents.
+- Added four method-only references for dynamic multimodal planning, transit equity, people-and-parcels mobility and multimodal service quality.
+
+## v1.21 - 2026-08-12
+
+- Locked the mode-competition runner to the exact four-scenario identity set and added duplicate, missing and unknown-ID negative fixtures.
+- Declared the mode-competition screen supplemental to formal self-check and trusted review; it cannot promote, score or publish a package.
+
+## v1.20 - 2026-08-12
+
+- Added a bilingual mode-competition guard for rail/bus-first, capped feeder, unmanaged feeder expansion and ground-first air scenarios.
+- Added explicit synthetic thresholds for transit displacement, feeder share, vehicle-kilometres and worst-group access; unmanaged expansion and air operation fail closed.
+- Added a primary-source method note without importing coefficients or claiming local ridership, vehicle-kilometres, satisfaction or operations.
+
 ## v1.19 - 2026-08-12
 
 - Added a bilingual mobility failure-governance and appeal-writeback screen for six transport failure classes across the existing eight interfaces.
@@ -54,6 +71,13 @@
 ## v1.10 - 2026-08-10
 
 - Closed the projected-length formula expression in the normalized metric ledger; this is a text-quality fix only and does not change the metric value, source, status, or claim boundary.
+
+## v1.22 - 2026-08-12
+
+- Added a bilingual spatial mobility decision atlas for three provisional key areas across AM arrival, midday service, PM return and night return.
+- Added 12 model-to-human decision cells with backbone/support modes, synthetic feeder and worst-group guards, proposed responsibility interfaces, evidence requests and stop conditions.
+- Added a dependency-free runner and bilingual board. The screen remains a supplemental design-decision layer; field measurements, resident satisfaction, authorization, public acceptance, gallery score and air agents remain 0.
+- Added three primary method references for large-scale transportation-equity ABM, shared micromobility/transit equity and multimodal transit/shared autonomous network design. No local parameters or results were imported.
 
 ## v1.9 - 2026-08-10
 
