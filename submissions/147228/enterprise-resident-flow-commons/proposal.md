@@ -198,6 +198,31 @@ iteration: "v2.0-population-scale-screen"
 
 八类群组比例被显式写在 JSON 中，方式集合覆盖地铁、公交、自行车、步行/无障碍、汽车、企业接驳、物流接驳和夜班公交。离散选择先按声明式效用比较时间、等待、成本、可靠性与无障碍，再用容量/路缘/人工回退规则筛查；保护组不能通过平均值改善而变差。基线与“流线公地组合包”的门到门、可靠性、无障碍路径和满意度只是模型内的 screening readout，必须用现场 OD、班次、站口容量、无障碍审计和企业班次校准后才能进入运维决策 [data:visual/assets/population-scale-screen.json] [metric:synthetic_agent_count] [metric:synthetic_trip_legs_screened]。
 
+### 全人口 AM/PM 重放：把“能不能承受”拆成选择、容量、回退三层
+
+为避免摘要分数掩盖排队，本包把 `visual/assets/regional-scale-commute.json` 作为第二层可复核模型：运行器按六类运行群组逐一重放 3,122,000 个合成代理的早高峰与返程腿，只保留群组 × 分区 × 方式 × 路径模板的聚合计数，不保存个人轨迹。这个结构参考了合成群体、离散选择、活动链和大规模多代理交通分配的公开方法；论文和工具只约束模型结构，不提供海淀参数或绩效 [source:MUNICH-MULTISCALE-MODEL-2024] [source:MATSIM-LARGE-SCALE-ABM] [source:MATSIM-BOOK-ACTIVITY-BASED]。
+
+候选集合为 B0 参考、O1 公交优先、O3 慢行优先和 O4 容量平衡。先检查质量和安全硬门，再按满意度代理、最差组尾部、可达尾部、广义成本、P90 时间、冲突、外来汽车流入和车辆/服务公里排序。名义屏查选出 O4：3,122,000/3,122,000 代理完成处理，方式负荷上限 1.2088（硬门 1.35），无障碍完成代理 93.43%，代理满意度 66.44，广义成本代理 49.44，P90 时间 60 分钟，人员冲突代理 3.13/千人，外来汽车流入 8.47%。这些是可复算的 synthetic proxy，不是居民满意度、真实客流或交通运行结果 [source:ACTIVITY-BASED-DISAGGREGATE-2001]。
+
+| 名义 O4 输出 | 数值 | 解释边界 |
+| --- | ---: | --- |
+| 地铁 / 公交 / 自行车 | 30.50% / 19.30% / 13.54% | 方式选择代理，待分组 OD 与班次校准 |
+| 步行/无障碍 / 汽车 / 企业接驳 | 20.91% / 9.59% / 6.16% | 含连续无障碍路线与企业班车的设计输入 |
+| 最低群组满意度代理 | 57.21（物流/维护） | 不是问卷结果；暴露装卸、等待和可靠性压力 |
+| 服务时段残余队列 | 452,668 人次 | 单独运营筛查未过，不能直接投入 |
+
+这张表揭示一个重要的“模型内矛盾”：方式负荷硬门可以通过，服务时段 FIFO 队列仍会在声明容量下堆积。`capacity-closure-screen.json` 因而作为独立修复屏查：增加 301,925 个合成服务单位，最大需求倍率 1.34，最大峰值负荷 1.2011，残余队列归零，容量闭合门通过。它给出的动作是先补地铁、公交、步行/无障碍连续段、自行车服务槽位和企业接驳的时段供给，再谈扩展车辆或空中方式；实际数量必须由有日期的站点、断面、路缘和服务单元盘点替换 [source:SCHEDULED-CAPACITY-TRANSIT-2012]。
+
+回放还分开做 30 分钟地铁中断、强天气/骑行受限和多方式容量冲击。名义运行候选 O4 适合效率屏查，稳健性排序选出 O2 公平平衡；四种情景均处理全人口、保持质量守恒，并将空中候选继续锁定为 `blocked`。这意味着“日常效率最优”和“压力下更公平”是两个可解释的选择面，不能用一个总分替代安全、容量和最慢群组的复核 [source:EQUITABLE-ACCESSIBILITY-SRAI-2016] [source:ADAPTIVE-TRANSIT-ROUTE-CHOICE-2022]。
+
+审阅者可以离线运行 `node visual/assets/run-regional-commute-simulation.js`、`node visual/assets/run-regional-readout-audit.js` 和 `node visual/assets/run-capacity-closure-screen.js`，再查看 `regional-scale-commute-readout.json`、`network-flow-readout.json`、`activity-completion-readout.json` 与 `utility-welfare-readout.json`。活动链压力屏明确显示：名义 O4 链完成代理为 91.06%，但地铁中断、强天气和容量冲击分别跌至 64.53%、60.74% 和 65.90%；这些结果用于暴露回退缺口，不能包装成服务承诺。
+
+![区级早晚高峰全人口重放与容量闭合](assets/figures/regional-scale-commute-board.svg)
+![分组公平与无障碍尾部](assets/figures/distributional-equity-board.svg)
+![容量与队列修复](assets/figures/capacity-closure-board.svg)
+![鲁棒性压力屏](assets/figures/robustness-screen-board.svg)
+![方式参数校准债务与来源溯源](assets/figures/calibration-debt-board.svg)
+
 空中交通从 headline 方式集合中剔除，eligible agents=0、状态为 `blocked`。在空域/场地许可、具名运营方、安全论证、噪声与疏散、无障碍地面兜底、公众参与和可回滚事故审计都具备前，不画批准航线、不报飞行人数，也不把未来实验写成现状能力。这样做的价值是把真正可执行的地面系统优先级留给地铁、公交、自行车、步行/无障碍、汽车、接驳和物流，而不是用一个漂亮的飞行比例掩盖地面断点 [data:visual/assets/air-mobility-gate.json] [assumption:A-AIR-EXPERIMENT-001]。
 
 ## 指标体系、面积复算与合规矩阵

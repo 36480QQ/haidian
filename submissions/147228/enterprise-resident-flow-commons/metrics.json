@@ -446,6 +446,135 @@
       "confidence": "unknown",
       "assumptions": [],
       "reason": "SUMO can provide a method base, but no local count, signal or capacity calibration has been completed."
+    },
+    "regional_population_agents_processed": {
+      "status": "known",
+      "value": 3122000,
+      "unit": "agents",
+      "source_files": [
+        "visual/assets/regional-scale-commute-readout.json"
+      ],
+      "formula": "regional_scale_runner_agents_processed",
+      "confidence": "screening",
+      "assumptions": [
+        "Synthetic aggregate replay; not observed population movement."
+      ],
+      "reason": "Full-population synthetic replay preserves aggregate mass without personal traces."
+    },
+    "regional_return_agents_processed": {
+      "status": "known",
+      "value": 3122000,
+      "unit": "agents",
+      "source_files": [
+        "visual/assets/regional-scale-commute-readout.json"
+      ],
+      "formula": "regional_scale_runner_return_leg_agents_processed",
+      "confidence": "screening",
+      "assumptions": [
+        "Synthetic return-leg screen; not observed evening demand."
+      ],
+      "reason": "Return leg is a second declared stress screen."
+    },
+    "regional_nominal_satisfaction_proxy": {
+      "status": "known",
+      "value": 66.44,
+      "unit": "proxy_points_0_100",
+      "source_files": [
+        "visual/assets/regional-scale-commute-readout.json",
+        "visual/assets/utility-welfare-readout.json"
+      ],
+      "formula": "additive_proxy_decomposition_reconstructed_score",
+      "confidence": "screening",
+      "assumptions": [
+        "Not a survey, preference estimate or resident outcome."
+      ],
+      "reason": "Synthetic utility proxy used only for candidate comparison."
+    },
+    "regional_accessibility_completion_proxy": {
+      "status": "known",
+      "value": 0.9343,
+      "unit": "ratio",
+      "source_files": [
+        "visual/assets/regional-scale-commute-readout.json"
+      ],
+      "formula": "synthetic_accessibility_completed_agents / synthetic_agents",
+      "confidence": "screening",
+      "assumptions": [
+        "Requires dated accessibility audit and grouped assisted-trip observations."
+      ],
+      "reason": "Tail screen, not a professional accessibility audit."
+    },
+    "regional_maximum_mode_load_ratio": {
+      "status": "known",
+      "value": 1.2088,
+      "unit": "load_ratio",
+      "source_files": [
+        "visual/assets/regional-scale-commute-readout.json",
+        "visual/assets/network-flow-readout.json"
+      ],
+      "formula": "max_declared_mode_person_flow / declared_mode_capacity",
+      "confidence": "screening",
+      "assumptions": [
+        "Declared capacities are synthetic."
+      ],
+      "reason": "Capacity gate for candidate screening only."
+    },
+    "regional_service_screen_residual_queue": {
+      "status": "known",
+      "value": 452668,
+      "unit": "person_trips",
+      "source_files": [
+        "visual/assets/regional-scale-commute-readout.json"
+      ],
+      "formula": "sum(unresolved_queue_after_final_time_slice)",
+      "confidence": "screening",
+      "assumptions": [
+        "FIFO service-time screen under declared supply."
+      ],
+      "reason": "Exposes a calibration stop and does not represent observed denied boarding."
+    },
+    "regional_capacity_closure_added_units": {
+      "status": "known",
+      "value": 301925,
+      "unit": "synthetic_service_units",
+      "source_files": [
+        "visual/assets/capacity-closure-screen.json"
+      ],
+      "formula": "capacity_closure_units_after - units_before",
+      "confidence": "screening",
+      "assumptions": [
+        "Unit types and capacities require operator and field evidence."
+      ],
+      "reason": "Repair-screen quantity, not a procurement recommendation."
+    },
+    "regional_worst_group_satisfaction_proxy": {
+      "status": "known",
+      "value": 57.21,
+      "unit": "proxy_points_0_100",
+      "source_files": [
+        "visual/assets/regional-scale-commute-readout.json",
+        "visual/assets/utility-welfare-readout.json"
+      ],
+      "formula": "min(group_satisfaction_proxy)",
+      "confidence": "screening",
+      "assumptions": [
+        "Group membership and utility weights are synthetic."
+      ],
+      "reason": "Keeps the slowest group visible beside the mean."
+    },
+    "regional_nominal_activity_chain_completion_proxy": {
+      "status": "known",
+      "value": 0.9106,
+      "unit": "ratio",
+      "source_files": [
+        "visual/assets/activity-completion-readout.json"
+      ],
+      "formula": "completed_synthetic_activity_chains / synthetic_agents",
+      "confidence": "screening",
+      "assumptions": [
+        "Activity chain status is synthetic."
+      ],
+      "reason": "Stress-screen output for fallback planning."
     }
   }
 }

@@ -166,6 +166,31 @@ To test whether the operating logic can be stress-screened at district scale, th
 
 The declared choice model compares time, waiting, cost, reliability and accessibility across metro, bus, bicycle, walking/wheelchair, car, enterprise feeder, logistics feeder and night bus. Capacity, curb and human-takeover rules then screen the alternatives. Baseline and “Flow Commons bundle” readouts are synthetic screening outputs only; field OD, headways, station capacity, accessibility audits and employer schedules must calibrate them before any operations decision [data:visual/assets/population-scale-screen.json] [metric:synthetic_agent_count] [metric:synthetic_trip_legs_screened]. Air mobility is excluded from the headline mode set: eligible agents remain zero and the gate is `blocked` until airspace/site permission, named operator, safety case, noise/evacuation review, accessible ground fallback, public participation and reversible incident audit are all available [data:visual/assets/air-mobility-gate.json] [assumption:A-AIR-EXPERIMENT-001].
 
+### Full-population AM/PM replay: separate choice, capacity and fallback
+
+To keep an average score from hiding queues, the package adds `visual/assets/regional-scale-commute.json` as a second, fully replayable layer. Its runner processes all 3,122,000 synthetic agents for an AM leg and a return leg across six operational cohorts, retaining only aggregate counts by cohort, zone, mode and route template. No personal trajectory is stored. The structure is informed by public work on synthetic populations, discrete choice, activity chains and large-scale agent-based transport assignment; those papers and tools constrain the method, not Haidian parameters or performance [source:MUNICH-MULTISCALE-MODEL-2024] [source:MATSIM-LARGE-SCALE-ABM] [source:MATSIM-BOOK-ACTIVITY-BASED].
+
+The candidate set is B0 reference, O1 transit priority, O3 active-first and O4 capacity-balanced. Hard quality and safety gates run first; the eligible candidates are then ordered by proxy satisfaction, the worst-group tail, accessibility tail, generalized cost, P90 time, conflicts, external car inflow and vehicle/service kilometres. O4 is selected by the nominal screen: 3,122,000/3,122,000 agents processed, maximum mode load 1.2088 against a 1.35 gate, 93.43% accessibility-completion proxy, 66.44 satisfaction proxy, 49.44 generalized-cost proxy, 60-minute P90 time, 3.13 conflicts per 1,000 and 8.47% external-car inflow. These are reproducible synthetic proxies, not resident satisfaction, observed demand or operating results [source:ACTIVITY-BASED-DISAGGREGATE-2001].
+
+| Nominal O4 output | Value | Boundary |
+| --- | ---: | --- |
+| Metro / bus / bicycle | 30.50% / 19.30% / 13.54% | Choice proxy pending grouped OD and service calibration |
+| Walking/access / car / enterprise shuttle | 20.91% / 9.59% / 6.16% | Declared continuous-access and shuttle inputs |
+| Lowest group satisfaction proxy | 57.21 (logistics/maintenance) | Not a survey; exposes loading, waiting and reliability pressure |
+| Residual queue in service-time screen | 452,668 person-trips | Separate operations screen fails; do not deploy directly |
+
+The table exposes a useful model tension: the headline mode-load gate can pass while a FIFO service-time screen still accumulates queues under the declared supply. `capacity-closure-screen.json` is therefore a separate repair screen: it adds 301,925 synthetic service units, uses a maximum required multiplier of 1.34, reaches a maximum peak load of 1.2011 and closes the residual queue to zero. The operational instruction is to repair time-window supply for metro, bus, continuous accessible paths, bicycle service slots and enterprise shuttles before adding vehicles or opening an air mode; real quantities must be replaced by dated station, section, curb and service-unit counts [source:SCHEDULED-CAPACITY-TRANSIT-2012].
+
+The replay also runs a 30-minute metro disruption, severe-weather/bicycle constraint and multimodal capacity shock. O4 is useful for the nominal efficiency screen, while the robustness ranking selects O2 equity-balanced; all scenarios process the full population, conserve mass and keep the air candidate `blocked`. “Best on a normal day” and “more equitable under stress” are separate, inspectable selection surfaces; one composite score should not replace safety, capacity and worst-group review [source:EQUITABLE-ACCESSIBILITY-SRAI-2016] [source:ADAPTIVE-TRANSIT-ROUTE-CHOICE-2022].
+
+Reviewers can run `node visual/assets/run-regional-commute-simulation.js`, `node visual/assets/run-regional-readout-audit.js` and `node visual/assets/run-capacity-closure-screen.js`, then inspect `regional-scale-commute-readout.json`, `network-flow-readout.json`, `activity-completion-readout.json` and `utility-welfare-readout.json`. The activity-chain stress screen makes the fallback gap visible: nominal O4 chain completion is 91.06%, falling to 64.53% under metro disruption, 60.74% under severe weather and 65.90% under capacity shock. These values expose fallback work; they are not service guarantees.
+
+![Regional AM/PM population replay and capacity closure](assets/figures/regional-scale-commute-board.en.svg)
+![Distributional equity and accessibility tail](assets/figures/distributional-equity-board.en.svg)
+![Capacity and queue closure](assets/figures/capacity-closure-board.en.svg)
+![Robustness stress screen](assets/figures/robustness-screen-board.en.svg)
+![Mode-parameter calibration debt and provenance](assets/figures/calibration-debt-board.en.svg)
+
 The scale readout is explicitly two-part: synthetic agents and hypothetical trip legs are separate audit outputs [metric:synthetic_agent_count] [metric:synthetic_trip_legs_screened].
 
 ## Metrics, Area Recalculation, and Compliance Matrix

@@ -220,6 +220,76 @@
       "usage": "Multimodal public-transport and bicycle efficiency/equity method reference; no local outcome is imported.",
       "url": "https://portal.fis.tum.de/en/publications/efficiency-and-equality-of-the-multimodal-travel-between-public-t",
       "accessed_date": "2026-08-09"
+    },
+    {
+      "id": "HAIDIAN-POPULATION-2024",
+      "source_type": "official_public_statistics",
+      "usage": "Official Beijing profile reports 3.122 million Haidian permanent residents at the end of 2024; used only as a regional population-scale coverage reference, not as workforce counts, OD, mode shares or local performance.",
+      "url": "https://english.beijing.gov.cn/government/administrativedistricts/202005/t20200510_1893547.html",
+      "accessed_date": "2026-08-12"
+    },
+    {
+      "id": "MUNICH-MULTISCALE-MODEL-2024",
+      "source_type": "academic_primary",
+      "usage": "Synthetic population, discrete choice and MATSim network assignment method reference; used to structure a population-scale replay, with no Munich coefficients, demand or performance transferred to Haidian.",
+      "url": "https://doi.org/10.1093/pnasnexus/pgae489",
+      "accessed_date": "2026-08-12"
+    },
+    {
+      "id": "EQUITABLE-ACCESSIBILITY-SRAI-2016",
+      "source_type": "academic_primary",
+      "usage": "Accessibility and distributional equity method reference; used for group tails and sufficiency-style hard gates, with no external population or local outcome imported.",
+      "url": "https://doi.org/10.1007/S11116-015-9585-2",
+      "accessed_date": "2026-08-12"
+    },
+    {
+      "id": "EQUITABLE-BIKE-TRANSIT-2024",
+      "source_type": "academic_primary",
+      "usage": "Multimodal bike/transit equity optimization method reference; used to motivate paired supply and equity checks, not a Haidian station siting or demand result.",
+      "url": "https://doi.org/10.1016/j.jtrangeo.2024.103814",
+      "accessed_date": "2026-08-12"
+    },
+    {
+      "id": "ADAPTIVE-TRANSIT-ROUTE-CHOICE-2022",
+      "source_type": "academic_primary_preprint",
+      "usage": "Utility-based route choice with fixed and flexible transit, active modes and within-day adaptation; method boundary only, with no behavioural coefficients or local choice estimate imported.",
+      "url": "https://arxiv.org/abs/2211.10802",
+      "accessed_date": "2026-08-12"
+    },
+    {
+      "id": "DRT-FEEDER-TRADEOFF-2026",
+      "source_type": "academic_primary",
+      "usage": "Demand-responsive feeder area and capacity trade-off method reference; used to keep feeder expansion conditional on fixed-transit integration and capacity evidence, not as an operating plan.",
+      "url": "https://doi.org/10.1016/j.urbmob.2026.100219",
+      "accessed_date": "2026-08-12"
+    },
+    {
+      "id": "MATSIM-LARGE-SCALE-ABM",
+      "source_type": "technical_primary_framework",
+      "usage": "MATSim official framework reference for large-scale agent-based, activity-based and multimodal transport simulation; method inspiration only, not a Haidian calibration or performance result.",
+      "url": "https://matsim.org/",
+      "accessed_date": "2026-08-12"
+    },
+    {
+      "id": "MATSIM-BOOK-ACTIVITY-BASED",
+      "source_type": "technical_primary_book",
+      "usage": "MATSim book reference for population-scale activity-based demand, network interaction and iterative transport simulation; no coefficients or local outputs are imported.",
+      "url": "https://matsim.org/files/book/partOne-latest.pdf",
+      "accessed_date": "2026-08-12"
+    },
+    {
+      "id": "ACTIVITY-BASED-DISAGGREGATE-2001",
+      "source_type": "academic_primary",
+      "usage": "Activity-pattern, tour, time-of-day, destination and mode-choice model reference; supports separating activity chains from observed local demand, without transferring estimates.",
+      "url": "https://doi.org/10.1016/S0965-8564(99)00043-9",
+      "accessed_date": "2026-08-12"
+    },
+    {
+      "id": "SCHEDULED-CAPACITY-TRANSIT-2012",
+      "source_type": "academic_primary",
+      "usage": "Schedule-based transit assignment with explicit vehicle capacity, departure-time/stop/run choice, residual capacity and within-day queue formation; method boundary only, with no local coefficients or Haidian performance imported.",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0968090X11000337",
+      "accessed_date": "2026-08-12"
     }
   ]
 }
