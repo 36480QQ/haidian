@@ -17,7 +17,8 @@
         "submissions/SJTdreams/jingzhang-bounded-sky/spatial.json: items[3]: provisional spatial concept needs maintainer review before being treated as public-facing context",
         "submissions/SJTdreams/jingzhang-bounded-sky/spatial.json: items[4]: provisional spatial concept needs maintainer review before being treated as public-facing context",
         "submissions/SJTdreams/jingzhang-bounded-sky/spatial.json: items[5]: provisional spatial concept needs maintainer review before being treated as public-facing context",
-        "submissions/SJTdreams/jingzhang-bounded-sky/spatial.json: items[6]: provisional spatial concept needs maintainer review before being treated as public-facing context"
+        "submissions/SJTdreams/jingzhang-bounded-sky/spatial.json: items[6]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/SJTdreams/jingzhang-bounded-sky/spatial.json: items[7]: provisional spatial concept needs maintainer review before being treated as public-facing context"
       ],
       "proposal_files": [
         "submissions/SJTdreams/jingzhang-bounded-sky/proposal.md"
@@ -27,14 +28,28 @@
       ],
       "changed_files": [
         "submissions/SJTdreams/jingzhang-bounded-sky/agent.json",
+        "submissions/SJTdreams/jingzhang-bounded-sky/assets/figures/culture-identity.en.png",
+        "submissions/SJTdreams/jingzhang-bounded-sky/assets/figures/culture-identity.png",
+        "submissions/SJTdreams/jingzhang-bounded-sky/assets/figures/ecosystem-network.en.png",
+        "submissions/SJTdreams/jingzhang-bounded-sky/assets/figures/ecosystem-network.png",
+        "submissions/SJTdreams/jingzhang-bounded-sky/assets/figures/governance-gates.en.png",
+        "submissions/SJTdreams/jingzhang-bounded-sky/assets/figures/governance-gates.png",
         "submissions/SJTdreams/jingzhang-bounded-sky/assets/figures/key-areas.en.png",
         "submissions/SJTdreams/jingzhang-bounded-sky/assets/figures/key-areas.png",
         "submissions/SJTdreams/jingzhang-bounded-sky/assets/figures/land-use-structure.en.png",
         "submissions/SJTdreams/jingzhang-bounded-sky/assets/figures/land-use-structure.png",
+        "submissions/SJTdreams/jingzhang-bounded-sky/assets/figures/legal-operating-model.en.png",
+        "submissions/SJTdreams/jingzhang-bounded-sky/assets/figures/legal-operating-model.png",
         "submissions/SJTdreams/jingzhang-bounded-sky/assets/figures/metrics-evidence.en.png",
         "submissions/SJTdreams/jingzhang-bounded-sky/assets/figures/metrics-evidence.png",
+        "submissions/SJTdreams/jingzhang-bounded-sky/assets/figures/mission-matrix.en.png",
+        "submissions/SJTdreams/jingzhang-bounded-sky/assets/figures/mission-matrix.png",
         "submissions/SJTdreams/jingzhang-bounded-sky/assets/figures/mobility-bluegreen.en.png",
         "submissions/SJTdreams/jingzhang-bounded-sky/assets/figures/mobility-bluegreen.png",
+        "submissions/SJTdreams/jingzhang-bounded-sky/assets/figures/operations-calendar.en.png",
+        "submissions/SJTdreams/jingzhang-bounded-sky/assets/figures/operations-calendar.png",
+        "submissions/SJTdreams/jingzhang-bounded-sky/assets/figures/phasing-roadmap.en.png",
+        "submissions/SJTdreams/jingzhang-bounded-sky/assets/figures/phasing-roadmap.png",
         "submissions/SJTdreams/jingzhang-bounded-sky/assets/figures/site-overview.en.png",
         "submissions/SJTdreams/jingzhang-bounded-sky/assets/figures/site-overview.png",
         "submissions/SJTdreams/jingzhang-bounded-sky/assumptions.json",
@@ -83,7 +98,7 @@
       "ai_package_stages": {
         "submissions/SJTdreams/jingzhang-bounded-sky": "formal"
       },
-      "total_bytes": 2900152,
+      "total_bytes": 5805425,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -143,9 +158,7 @@
       "metrics_seen": {
         "site_area_sqm": 11412825.386,
         "green_ratio": 0.123423,
-        "public_space_ratio": 0.073281,
-        "scenario_card_count": 12.0,
-        "energy_budget_violations": 0.0
+        "public_space_ratio": 0.073281
       }
     },
     "stderr": ""
@@ -159,15 +172,15 @@
       "summary": {
         "standard_matrix_items": 6,
         "design_depth_items": 15,
-        "known_metric_refs_required": 15,
+        "known_metric_refs_required": 20,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 6,
-          "standard": 4,
-          "depth": 13,
-          "data": 21,
-          "metric": 10
+          "source": 17,
+          "standard": 2,
+          "depth": 10,
+          "data": 22,
+          "metric": 8
         }
       }
     },

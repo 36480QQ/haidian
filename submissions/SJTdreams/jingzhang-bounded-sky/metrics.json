@@ -78,6 +78,72 @@
       "confidence": "high",
       "assumptions": []
     },
+    "city_room_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "spatial.json"
+      ],
+      "formula": "count(concept city-room interfaces in the three required key areas)",
+      "confidence": "high",
+      "assumptions": [
+        "Rooms are conceptual program interfaces and do not imply construction, flight, or aircraft storage."
+      ]
+    },
+    "public_mission_class_count": {
+      "status": "known",
+      "value": 6,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/scenario-cards.json"
+      ],
+      "formula": "count(scenarios categorized as emergency, fire_safety, medical, ecology, or maintenance and not industry/negative tests)",
+      "confidence": "high",
+      "assumptions": [
+        "A mission class is a research candidate, not validated demand or authorization."
+      ]
+    },
+    "industry_validation_family_count": {
+      "status": "known",
+      "value": 4,
+      "unit": "count",
+      "source_files": [
+        "proposal.md",
+        "visual/assets/scenario-cards.json"
+      ],
+      "formula": "operating identification + link/takeover + acoustics/human factors + privacy/data minimization",
+      "confidence": "high",
+      "assumptions": [
+        "Families are a proposed research program, not certified tests."
+      ]
+    },
+    "human_and_authority_gate_count": {
+      "status": "known",
+      "value": 6,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/agent-governance.json"
+      ],
+      "formula": "count(hard_gates)",
+      "confidence": "high",
+      "assumptions": [
+        "Each listed gate may contain multiple statutory and professional checks."
+      ]
+    },
+    "default_no_go_class_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/operations-program.json"
+      ],
+      "formula": "count(no_go_businesses)",
+      "confidence": "high",
+      "assumptions": [
+        "No-go classes express this concept's scope discipline and do not replace law or authority decisions."
+      ]
+    },
     "airspace_budget_dimension_count": {
       "status": "known",
       "value": 5,

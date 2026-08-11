@@ -1,71 +1,166 @@
 {
   "schema_version": "0.1.0",
+  "retrieved_at": "2026-08-11",
   "sources": [
     {
       "id": "SITE-PACKAGE",
       "path": "brief/site-package/",
       "source_type": "official_public",
-      "usage": "Project brief, enums, allowed design space, ranges, and schemas."
+      "usage": "Project brief, enums, allowed design space, ranges, schemas, and three-level scope values.",
+      "limitations": "Exact official polygons and professional survey data are not included."
     },
     {
       "id": "SOURCE-REGISTRY",
       "path": "data/source_registry.json",
       "source_type": "repository_public_registry",
-      "usage": "Public/cleared/provisional source usability registry; distinguishes formal-ready, background-only, provisional-only, and needs-review materials."
-    },
-    {
-      "id": "PROCESSED-FACT-PACK",
-      "path": "data/processed/agent_fact_pack.md",
-      "source_type": "repository_processed_reference",
-      "usage": "Agent-readable navigation layer for scopes, required tasks, source-use boundaries, and missing-data checklist; not a new authority source."
+      "usage": "Distinguishes formal-ready, background-only, provisional-only, and needs-review materials."
     },
     {
       "id": "BOUNDARY-SOURCE",
       "path": "brief/site-package/geometry/provisional_boundaries.geojson",
       "source_type": "agent_inferred_from_public_data",
-      "usage": "Submitted site boundary geometry source (provisional)."
-    },
-    {
-      "id": "KEY-AREA-SOURCE",
-      "path": "brief/site-package/geometry/provisional_boundaries.geojson",
-      "source_type": "agent_inferred_from_public_data",
-      "usage": "Three required detailed-design key area boundaries (provisional)."
+      "usage": "Provisional site and three key-area geometries used only for conceptual topology and package consistency checks.",
+      "limitations": "Must not support flight planning, cadastral judgment, precise area, or engineering decisions."
     },
     {
       "id": "OFFICIAL-ANNOUNCEMENT",
       "url": "https://ghzrzyw.beijing.gov.cn/zhengwuxinxi/tzgg/hd/202605/t20260509_4643047.html",
       "source_type": "official_public",
-      "usage": "Official announcement tasks, scope levels, key areas, language, and deliverable context."
+      "usage": "Official project tasks, scope levels, key areas, language, and deliverable context."
     },
     {
       "id": "AGENT-TASKBOOK",
       "path": "brief/site-package/agent_taskbook.json",
       "source_type": "user_provided_cleared",
-      "usage": "Agent-facing open-call principles, six required agent tasks, scenario/branding/operation requirements, and boundary clause."
+      "usage": "Six required Agent tasks, scenario, branding, culture, public-space, and long-term operation requirements."
+    },
+    {
+      "id": "BEIJING-LOW-ALTITUDE-ACTION-PLAN",
+      "url": "https://www.beijing.gov.cn/zhengce/zhengcefagui/202409/t20240930_3910685.html",
+      "title_zh": "北京市促进低空经济产业高质量发展行动方案（2024-2027年）",
+      "source_type": "official_public",
+      "published_at": "2024-09-30",
+      "usage": "Supports Haidian's role in low-altitude regulatory/service platforms, digital base maps connected with CIM, test verification, and public-service demonstrations.",
+      "limitations": "Policy direction only; it does not authorize a project, route, operator, facility, or flight."
+    },
+    {
+      "id": "BEIJING-UAS-REGULATION-2026",
+      "url": "https://www.beijing.gov.cn/zhengce/dfxfg/202604/t20260418_4591842.html",
+      "title_zh": "北京市无人驾驶航空器管理规定",
+      "source_type": "official_public",
+      "published_at": "2026-04-18",
+      "effective_at": "2026-05-01",
+      "usage": "Establishes that all Beijing outdoor UAS activity requires application and approval, and that storage within the Sixth Ring is generally prohibited, with special safeguards for specified public and research needs.",
+      "limitations": "The proposal does not interpret exceptions as automatic permission; competent authorities determine applicability."
+    },
+    {
+      "id": "BEIJING-UAS-SPECIAL-SAFEGUARD-2026",
+      "url": "https://www.beijing.gov.cn/zhengce/zhengcefagui/202606/t20260622_4709336.html",
+      "title_zh": "北京市无人驾驶航空器特殊保障规定（试行）等文件",
+      "source_type": "official_public",
+      "published_at": "2026-03-28",
+      "effective_at": "2026-05-01",
+      "usage": "Supports the proposed evidence packet for approved special-purpose research, emergency, teaching, and public-service needs, including custody, identity, responsibility, and emergency procedures.",
+      "limitations": "Special safeguard eligibility and approval remain authority decisions."
     },
     {
       "id": "UAS-INTERIM-REGULATION",
-      "url": "https://www.gov.cn/zhengce/content/202306/content_6888799.htm",
+      "url": "https://www.caac.gov.cn/XXGK/XXGK/FLFG/202401/t20240115_222642.html",
       "title_zh": "无人驾驶航空器飞行管理暂行条例",
       "source_type": "official_public",
       "published_at": "2023-06-28",
       "effective_at": "2024-01-01",
-      "usage": "Supports governance interfaces for classification, registration, operating-area limits, emergency handling, cybersecurity, noise reduction, containment, and human intervention. It does not prove local authorization.",
+      "usage": "Supports classification, registration, operating-area restrictions, flight application, safety responsibility, emergency response, cybersecurity, privacy, and noise reduction gates.",
       "limitations": "National regulation only; project-specific airspace, operation, engineering, environmental, and local permissions remain unknown."
+    },
+    {
+      "id": "CAAC-UOM-NOTICE",
+      "url": "https://www.caac.gov.cn/PHONE/XXGK_17/XXGK/TZTG/202312/t20231231_222550.html",
+      "title_zh": "中国民用航空局关于民用无人驾驶航空器监管服务有关事宜的公告",
+      "source_type": "official_public",
+      "published_at": "2023-12-31",
+      "usage": "Supports UOM registration and national management-platform interoperability as a precondition rather than a local substitute."
+    },
+    {
+      "id": "CAAC-OPERATING-ID-2026",
+      "url": "https://www.caac.gov.cn/XXGK/XXGK/ZCJD/202601/t20260120_229793.html",
+      "title_zh": "民用无人驾驶航空器系统运行识别规范解读",
+      "source_type": "official_public",
+      "published_at": "2026-01-20",
+      "effective_at": "2026-05-01",
+      "usage": "Supports broadcast and network operating identification, public visibility of nearby operations, and nationwide flight-state management.",
+      "limitations": "Technical identification is not flight approval and does not justify public release of personal information."
+    },
+    {
+      "id": "BEIJING-SEQUENCING-2025",
+      "url": "https://jxj.beijing.gov.cn/jxdt/zwyw/202506/t20250624_4122477.html",
+      "source_type": "official_public",
+      "published_at": "2025-06-24",
+      "usage": "Supports the sequencing principle: cargo before passenger, segregated before integrated, outer suburbs before central city, with safety and demand discipline.",
+      "limitations": "Strategic sequence, not an approval or fixed implementation timetable."
+    },
+    {
+      "id": "HAIDIAN-AIRPORT-PRACTICE-2025",
+      "url": "https://zyk.bjhd.gov.cn/jbdt/auto4560_51856/auto4560_58039/auto4560/auto4560/202510/t20251011_4789515.shtml",
+      "source_type": "official_public",
+      "published_at": "2025-10-10",
+      "usage": "Documents a controlled Haidian test setting, research/verification services, patrol practice, and fire-rescue operator training; supports an off-site verification interface.",
+      "limitations": "Existing practice is site- and authorization-specific and cannot be transferred automatically to the Jingzhang corridor."
+    },
+    {
+      "id": "HAIDIAN-EMERGENCY-NEEDS-2026",
+      "url": "https://zyk.bjhd.gov.cn/jbdt/auto4504_56383/zdrw/202605/t20260528_4816485_hd.shtml",
+      "source_type": "official_public",
+      "published_at": "2026-05-28",
+      "usage": "Supports real needs in high-rise fire-risk governance, flood preparedness, forest-fire patrol, training, and emergency coordination.",
+      "limitations": "District-wide need evidence; it does not prove a low-altitude mission is suitable at a specific Jingzhang location."
+    },
+    {
+      "id": "BEIJING-FLOOD-UAS-PRACTICE-2025",
+      "url": "https://jxj.beijing.gov.cn/jxdt/gzdt/202508/t20250801_4164073.html",
+      "source_type": "official_public",
+      "published_at": "2025-08-01",
+      "usage": "Documents emergency communication relay and monitoring during flood response, supporting a narrowly defined emergency mission class.",
+      "limitations": "Outer-district disaster response evidence; central-city feasibility and authorization remain unproven."
+    },
+    {
+      "id": "JINGZHANG-PHASE2-CONTEXT",
+      "url": "https://zyk.bjhd.gov.cn/ywdt/hdywx/202409/t20240920_4670752_hd.shtml",
+      "source_type": "official_public",
+      "published_at": "2024-09-20",
+      "usage": "Supports the corridor's public-space, community, university, and research-institution context: approximately 9 km, nearly 70 communities, about 450,000 residents, 10+ universities, and 40+ research institutions.",
+      "limitations": "Published planning context; exact project boundary and current counts require confirmation."
+    },
+    {
+      "id": "JINGZHANG-PARK-PUBLIC-REALM",
+      "url": "https://zyk.bjhd.gov.cn/jbdt/auto4565_51809/auto4565_54102/auto4565/auto4565/202301/t20230131_4586160.shtml",
+      "source_type": "official_public",
+      "published_at": "2023-01-31",
+      "usage": "Supports ecological, cultural, historical-display, recreation, and free public-access priorities for the railway heritage park.",
+      "limitations": "Phase-one context only; later construction status must be checked before implementation."
+    },
+    {
+      "id": "PIPL",
+      "url": "https://www.samr.gov.cn/wljys/gzzd/art/2023/art_3ef1e889c1e644d4b65b5f5c7f432386.html",
+      "title_zh": "中华人民共和国个人信息保护法",
+      "source_type": "official_public",
+      "usage": "Supports necessity, purpose limitation, prominent notice for public-space image collection, and human explanation/refusal rights for consequential automated decisions.",
+      "limitations": "Legal compliance requires case-specific professional review."
+    },
+    {
+      "id": "HAIDIAN-SOUND-ZONING",
+      "url": "https://www.beijing.gov.cn/hudong/gfxwjzj/qjzjxx/202210/P020221020368951317382.pdf",
+      "title_zh": "北京市海淀区声环境功能区划实施细则（2022年修订）",
+      "source_type": "official_public",
+      "usage": "Supports receptor-sensitive baseline work and daytime/nighttime differentiation; the proposal does not convert its normalized quiet budget into legal limits.",
+      "limitations": "The document states that aircraft low-flight noise around airports is outside its application; UAS-specific acoustic assessment remains necessary."
     },
     {
       "id": "GLOBAL-CASE-SHORTLIST",
       "path": "brief/public-materials-plan.md",
       "source_type": "repository_background_index",
-      "usage": "Provides the repository-maintained shortlist of global innovation-district and civic-technology cases used to select six mechanism-comparison entries.",
-      "limitations": "Background-only index. Case details, dates, performance, institutions, licenses, and current status require primary-source verification before formal factual use."
-    },
-    {
-      "id": "BROOKINGS-INNOVATION-DISTRICTS",
-      "url": "https://www.brookings.edu/essay/rise-of-innovation-districts/",
-      "source_type": "external_background_only",
-      "usage": "General mechanism lens for anchor institutions, mixed-use urban fabric, networks, and public realm in innovation districts.",
-      "limitations": "Comparative framework only; does not support local planning controls, investment, output, business-attraction, or policy claims."
+      "usage": "Shortlist for mechanism-only comparison of innovation districts.",
+      "limitations": "Case details and current status require primary-source verification before factual use."
     }
   ]
 }
