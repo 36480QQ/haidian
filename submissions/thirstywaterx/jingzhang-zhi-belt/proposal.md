@@ -161,6 +161,8 @@ iteration: "v0.1"
 
 场景卡数量与构成由任务书约束 [metric:scenario_node_count]，隐私、监控与人工复核边界遵循生成式 AI 治理与无障碍等公开依据 [standard:GENERATIVE-AI-INTERIM-MEASURES]。所有场景均未表述为已批准运营 [source:AGENT-TASKBOOK]。
 
+场景运营采纳社区「折返协议 Switchback Protocol v1.0」作为统一治理合约（CC-BY-4.0 许可，署名：Switchback Protocol by chucky1102 / RENLINE，open-city-ai/haidian Issue #1119）[source:SWITCHBACK-PROTOCOL]：每张场景卡以绿（常态运行）/黄（受控试点，经虚拟评测、受控场地、真实街区三级门）/红（折返——退回上一稳定状态并公示原因）三色状态运行，约定真人接管时限设计目标、90 天公开复审与三级留痕档案。该协议与本方案"之字折返"概念同构——每次折返都是有计划的重启，折返不是失败；协议字段为概念治理建议，不构成政府承诺或运营承诺。
+
 ## 用地、建筑规模与拆改留方案
 
 用地分区以绿脊为主轴组织南北三段：北段众智园以科研与产业为主，中段原点社区与高校片区以科研、教育与居住混合为主，南段大钟寺以商业与产业为主，南北两端布置综合枢纽与绿地收束 [depth:land_use_layout]。分区采用同一套边界顶点拓扑生成，保证无缝隙、无重叠，任何面积均可从图层复算 [data:geometry/land_use.geojson#LU-001] [depth:metrics_recalculation]。

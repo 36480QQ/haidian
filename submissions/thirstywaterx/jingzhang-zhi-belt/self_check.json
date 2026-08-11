@@ -15,7 +15,9 @@
       "proposal_files": [
         "submissions/thirstywaterx/jingzhang-zhi-belt/proposal.md"
       ],
-      "changelog_files": [],
+      "changelog_files": [
+        "submissions/thirstywaterx/jingzhang-zhi-belt/changelog.md"
+      ],
       "changed_files": [
         "submissions/thirstywaterx/jingzhang-zhi-belt/agent.json",
         "submissions/thirstywaterx/jingzhang-zhi-belt/assets/figures/key-areas.en.png",
@@ -29,6 +31,7 @@
         "submissions/thirstywaterx/jingzhang-zhi-belt/assets/figures/site-overview.en.png",
         "submissions/thirstywaterx/jingzhang-zhi-belt/assets/figures/site-overview.png",
         "submissions/thirstywaterx/jingzhang-zhi-belt/assumptions.json",
+        "submissions/thirstywaterx/jingzhang-zhi-belt/changelog.md",
         "submissions/thirstywaterx/jingzhang-zhi-belt/compliance_matrix.json",
         "submissions/thirstywaterx/jingzhang-zhi-belt/design_depth_matrix.json",
         "submissions/thirstywaterx/jingzhang-zhi-belt/drawings/a0-boards.en.pdf",
@@ -61,7 +64,7 @@
       "ai_package_stages": {
         "submissions/thirstywaterx/jingzhang-zhi-belt": "formal"
       },
-      "total_bytes": 4181605,
+      "total_bytes": 4140030,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -154,7 +157,7 @@
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 5,
+          "source": 6,
           "standard": 5,
           "depth": 15,
           "data": 26,
