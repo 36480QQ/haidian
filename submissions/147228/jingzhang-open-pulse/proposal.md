@@ -5,12 +5,22 @@ language: "zh"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "基于 provisional boundary 和结构化自检要求生成的 formal AI 城市设计方案包；保留精度警示和复算要求，但组织方数据缺口不阻断内容评分。"
 translation_file: "proposal.en.md"
-iteration: "v2.0"
+iteration: "v2.4"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
 
 # 京张开源脉冲：一条可验证的 AI 创新公共带
+
+## 一页判读：把测试接回日常城市
+
+这套方案不把京张带做成一排 AI 装置。它把京张遗址公园当作一条公共主轴：众智园负责可信研发，AI 原点负责开放转化，大钟寺负责城市体验；中关村科技服务翼和小月河场景赋能翼把企业服务、社区需求与蓝绿系统接到三站。北纬社区、未来科学城、怀柔科学城、北京经开区和京津冀只作为任务书要求的协同接口，不代表已经确认合作。[source:AGENT-TASKBOOK] [depth:overall_spatial_structure]
+
+每次试点都走同一条公共回路：提问、获准、小测、裁决、回执、退出。没有普通服务、人工责任、停止条件或清权证据，就不进入下一阶段。当前空间仍基于临时约束，正式数据到位后须整体复算；本方案不主张合作、供地、投资、审批或现场绩效已经成立。[source:AGENT-TASKBOOK] [data:geometry/site_boundary.geojson#SITE-001]
+
+![一轴三站两翼与 S-02 双状态证据回路](assets/figures/site-overview.png)
+
+首图把 S-02 的桌面回放与现场窗口分开。本地合成桌面回放可重复通过 4/4 夹具、6/6 检查和 5/5 恢复步骤，只说明停止、撤回和恢复逻辑能够复跑；有限现场窗口继续 HOLD，尚未授权，也没有运行。路线、无障碍、安全、许可、维护责任和人工接管证据到齐前，普通步行与人工配送保持可用，任何人都可以要求停止。复跑记录见 `visual/assets/open-pulse-tabletop-evidence.json`，现场窗口边界见 `visual/assets/example-s02-embodied-test-window.json`。
 
 ## 设计依据与资料清单
 
@@ -74,7 +84,9 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 三处重点区域详细设计必须引用 [data:geometry/key_areas.geojson#PROV-KEY-001]、[data:geometry/key_areas.geojson#PROV-KEY-002]、[data:geometry/key_areas.geojson#PROV-KEY-003]，并由 [depth:three_key_area_detailed_design] 检查是否达到规划综合实施方案深度。若只描述“打造示范区”而没有功能、建筑、交通、公共空间和实施项目证据，应被视为未完成。
 
-![三处重点区域索引与设计任务图](assets/figures/key-areas.png)
+![三处重点区的三段日常任务、专业闸门与恢复路径](assets/figures/key-areas.png)
+
+这张图不把重点区只画成三个框，而是把临时几何和人的一天放在一起：居民在众智园无需注册账号，也能看懂状态、穿过园区并回到公园；老年居民在 AI 原点不用数字服务，也能走完同一条日常路线；大钟寺即使取消活动，过街、安静座位和日常商业仍保持开放。每段路线都写明人工责任、停止条件和恢复动作；河道、防洪、交通、权属、消防，校园、文保、搬迁影响，以及轨道、客流、应急管理等任一专业前置不满足，就不开试点或取消活动窗口。图源为 `geometry/key_areas.geojson` 与 `visual/assets/key-area-node-plans.json`；三处范围仍是 provisional rough geometry，不是正式地块、道路红线、权属或审批结论。
 
 三处重点区域必须在 `geometry/key_areas.geojson` 中出现。若仓库已提供 official polygons，应作为 `official_constraint` 使用；若 official polygons 缺失，可暂用 `provisional_constraint`，但正文、HTML、sources、assumptions 和 self_check 必须说明它不能作为正式评分或审批依据。`compliance_matrix.json` 应分别覆盖公告 1.5.3.1、1.5.3.2、1.5.3.3。设计表达应包含功能业态、建筑规模、建筑形态、拆改留分类、公共空间系统、交通组织、慢行连通和实施项目。HTML 页面应能切换查看三处重点区域，A3 文册和 A0 展板应至少包含重点片区总图、局部详图和指标说明。
 
