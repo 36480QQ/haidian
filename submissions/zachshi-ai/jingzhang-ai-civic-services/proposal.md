@@ -145,11 +145,11 @@ iteration: "v1.0"
 
 ### 用地面积复算
 
-方案用地面积基于临时粗略边界复算，场地面积约11.41平方公里 [metric:site_area_sqm]。绿地面积约2.93平方公里，绿地率约25.6% [metric:green_ratio]；公共空间面积约2.48平方公里，公共空间率约21.7%（含新增市民服务广场与驿站）[metric:public_space_ratio]。所有面积指标为概念性估算，官方红线发布后须重算 [assumption:A-CONTROLS-001] [depth:metrics_recalculation]。
+方案用地面积基于临时粗略边界复算，场地面积约11.41平方公里 [metric:site_area_sqm]。绿地面积约3.11平方公里，绿地率约27.2% [metric:green_ratio] [metric:green_space_area_sqm]；公共空间面积约2.75平方公里，公共空间率约24.1%（含新增市民服务广场与驿站）[metric:public_space_ratio] [metric:public_space_area_sqm]。所有面积指标为概念性估算，官方红线发布后须重算 [assumption:A-CONTROLS-001] [depth:metrics_recalculation]。
 
 ### 建筑规模
 
-建筑总基底面积约55.9万平方米，建筑密度约4.9% [metric:building_footprint_area_sqm] [metric:building_density]。其中市民服务类建筑6栋（BLD-016至BLD-021），包括市民服务馆、健康导航中心、法律援助中心、街道办服务楼等 [metric:civic_service_building_count]。建筑高度与容积率为概念建议，待控规条件确认 [metric:building_height_m]。
+建筑总基底面积约65.5万平方米，建筑密度约5.7% [metric:building_footprint_area_sqm] [metric:building_density]。其中市民服务类建筑6栋（BLD-016至BLD-021），包括市民服务馆、健康导航中心、法律援助中心、街道办服务楼等 [metric:civic_service_building_count]。建筑高度与容积率为概念建议，待控规条件确认 [metric:building_height_m]。
 
 ## 交通慢行与市民服务网络
 

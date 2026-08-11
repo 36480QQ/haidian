@@ -146,11 +146,11 @@ Among these, SC-07 (One-Click Emergency Medical Navigation), SC-10 (Service-Stat
 
 ### Land Area Recalculation
 
-The proposal's land areas are recalculated based on the provisional rough boundary; the site area is approximately 11.41 km² [metric:site_area_sqm]. The green space area is approximately 2.93 km², with a green ratio of approximately 25.6% [metric:green_ratio]; the public space area is approximately 2.48 km², with a public-space ratio of approximately 21.7% (including the newly added civic-service plazas and stations) [metric:public_space_ratio]. All area indicators are conceptual estimates and must be recalculated once the official red line is published [assumption:A-CONTROLS-001] [depth:metrics_recalculation].
+The proposal's land areas are recalculated based on the provisional rough boundary; the site area is approximately 11.41 km² [metric:site_area_sqm]. The green space area is approximately 3.11 km², with a green ratio of approximately 27.2% [metric:green_ratio] [metric:green_space_area_sqm]; the public space area is approximately 2.75 km², with a public-space ratio of approximately 24.1% (including the newly added civic-service plazas and stations) [metric:public_space_ratio] [metric:public_space_area_sqm]. All area indicators are conceptual estimates and must be recalculated once the official red line is published [assumption:A-CONTROLS-001] [depth:metrics_recalculation].
 
 ### Building Scale
 
-The total building footprint area is approximately 559,000 m², with a building density of approximately 4.9% [metric:building_footprint_area_sqm] [metric:building_density]. Among these are 6 civic-service buildings (BLD-016 through BLD-021), including the civic service hall, health navigation center, legal aid center, and subdistrict-office service building [metric:civic_service_building_count]. Building heights and floor-area ratios are conceptual suggestions, pending confirmation of regulatory-plan conditions [metric:building_height_m].
+The total building footprint area is approximately 655,000 m², with a building density of approximately 5.7% [metric:building_footprint_area_sqm] [metric:building_density]. Among these are 6 civic-service buildings (BLD-016 through BLD-021), including the civic service hall, health navigation center, legal aid center, and subdistrict-office service building [metric:civic_service_building_count]. Building heights and floor-area ratios are conceptual suggestions, pending confirmation of regulatory-plan conditions [metric:building_height_m].
 
 ## Mobility, Slow Traffic, and the Civic-Service Network
 
