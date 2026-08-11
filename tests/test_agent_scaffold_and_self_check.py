@@ -2,6 +2,7 @@ import hashlib
 import importlib.util
 import json
 import os
+import shlex
 import subprocess
 import sys
 import tempfile
@@ -297,6 +298,106 @@ def write_provisional_site_package(root: Path) -> None:
 
 @unittest.skipUnless(HAS_REVIEW_DEPS, "Install requirements-review.txt to run scaffold/self-check tests")
 class AgentScaffoldAndSelfCheckTests(unittest.TestCase):
+    def test_ready_package_manifest_refresh_updates_only_declared_hashes(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            write_official_site_package(root)
+            submission_dir = root / "submissions" / "alice" / "refresh-ready"
+            self.assertEqual(run_scaffold(submission_dir, cwd=root).returncode, 0)
+            self.assertEqual(complete_scaffold(submission_dir).returncode, 0)
+            self.assertEqual(mark_self_checked(submission_dir).returncode, 0)
+
+            changed = submission_dir / "visual" / "index.html"
+            changed.write_text(changed.read_text(encoding="utf-8") + "\n<!-- iteration -->\n", encoding="utf-8")
+            unlisted = submission_dir / "notes.tmp"
+            unlisted.write_text("not part of the manifest", encoding="utf-8")
+
+            completed = subprocess.run(
+                [
+                    sys.executable,
+                    str(REPO_ROOT / "scripts" / "refresh_submission_manifest.py"),
+                    str(submission_dir),
+                    "--json",
+                ],
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            self.assertEqual(completed.returncode, 0, completed.stdout + completed.stderr)
+            result = json.loads(completed.stdout)
+            manifest = json.loads((submission_dir / "manifest.json").read_text(encoding="utf-8"))
+            items = {item["path"]: item for item in manifest["files"]}
+            self.assertEqual(
+                hashlib.sha256(changed.read_bytes()).hexdigest(),
+                items["visual/index.html"]["sha256"],
+            )
+            self.assertNotIn("notes.tmp", items)
+            self.assertNotIn("manifest.json", result["refreshed_files"])
+            self.assertFalse(manifest["validation_claim"]["self_checked"])
+            self.assertIn("--mark-self-checked", result["next_command"])
+            self.assertNotIn("<github-login>", result["next_command"])
+            self.assertEqual(
+                "Replace GITHUB_LOGIN with the exact PR author login.",
+                result["next_command_note"],
+            )
+
+    def test_manifest_refresh_next_command_quotes_space_in_path(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            submission_dir = Path(tmp) / "workspace with spaces" / "submission"
+            submission_dir.mkdir(parents=True)
+            artifact = submission_dir / "proposal.md"
+            artifact.write_text("# Proposal\n", encoding="utf-8")
+            (submission_dir / "manifest.json").write_text(
+                json.dumps(
+                    {
+                        "package_state": "ready_for_review",
+                        "validation_claim": {"self_checked": True},
+                        "files": [{"path": "proposal.md", "sha256": "0" * 64}],
+                    }
+                ),
+                encoding="utf-8",
+            )
+
+            completed = subprocess.run(
+                [
+                    sys.executable,
+                    str(REPO_ROOT / "scripts" / "refresh_submission_manifest.py"),
+                    str(submission_dir),
+                    "--json",
+                ],
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            self.assertEqual(0, completed.returncode, completed.stdout + completed.stderr)
+            result = json.loads(completed.stdout)
+            command = shlex.split(result["next_command"])
+            self.assertEqual(str(submission_dir), command[2])
+            self.assertEqual("GITHUB_LOGIN", command[command.index("--pr-author") + 1])
+
+    def test_manifest_refresh_refuses_scaffold_and_unsafe_paths(self) -> None:
+        from refresh_submission_manifest import refresh_manifest
+
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            write_official_site_package(root)
+            submission_dir = root / "submissions" / "alice" / "refresh-refusal"
+            self.assertEqual(run_scaffold(submission_dir, cwd=root).returncode, 0)
+            ok, error, refreshed = refresh_manifest(submission_dir)
+            self.assertFalse(ok)
+            self.assertIn("must be ready_for_review", error)
+            self.assertEqual([], refreshed)
+
+            manifest_path = submission_dir / "manifest.json"
+            manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+            manifest["package_state"] = "ready_for_review"
+            manifest["files"].append({"path": "../outside.txt", "sha256": "0" * 64})
+            manifest_path.write_text(json.dumps(manifest), encoding="utf-8")
+            ok, error, refreshed = refresh_manifest(submission_dir)
+            self.assertFalse(ok)
+            self.assertIn("unsafe or duplicate", error)
+            self.assertEqual([], refreshed)
+
     def test_scaffold_emits_machine_readable_model_disclosure_fields(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             output_dir = Path(tmp) / "submissions" / "alice" / "model-disclosure"
