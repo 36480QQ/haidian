@@ -601,6 +601,66 @@
           40.011
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "id": "SCN-15",
+      "properties": {
+        "id": "SCN-15",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "QKD 北端节点（清华园站旧址方向）QKD Node North",
+        "scenario_type": "industry"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3475,
+          40.023
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SCN-16",
+      "properties": {
+        "id": "SCN-16",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "QKD 中段节点（五道口方向）QKD Node Central",
+        "scenario_type": "industry"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3478,
+          39.995
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SCN-17",
+      "properties": {
+        "id": "SCN-17",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "QKD 南端节点（大钟寺站）QKD Node South",
+        "scenario_type": "industry"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3475,
+          39.946
+        ]
+      }
     }
   ]
 }

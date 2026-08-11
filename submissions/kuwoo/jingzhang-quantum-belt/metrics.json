@@ -110,7 +110,7 @@
     },
     "scenario_node_count": {
       "status": "known",
-      "value": 14,
+      "value": 17,
       "unit": "count",
       "source_files": [
         "geometry/public_space.geojson"
@@ -118,7 +118,7 @@
       "formula": "count(SCENARIO_NODE features)",
       "confidence": "high",
       "assumptions": [
-        "14 AI scenario cards each mapped to a scenario node."
+        "17 scenario nodes: 14 scenario cards + 3 along-line QKD nodes."
       ]
     },
     "test_scenario_count": {
@@ -175,6 +175,19 @@
       "confidence": "low",
       "assumptions": [
         "Conceptual pilot directions: finance, government/public data, energy, transport; subject to authority confirmation and technology maturity."
+      ]
+    },
+    "qkd_node_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "geometry/public_space.geojson"
+      ],
+      "formula": "count(QKD along-line nodes)",
+      "confidence": "low",
+      "assumptions": [
+        "Conceptual QKD nodes along the Jing-Zhang corridor (north Qianghuayuan direction, central Wudaokou direction, south Dazhongsi station); spacing and relay engineering require professional confirmation."
       ]
     }
   }
