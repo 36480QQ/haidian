@@ -52,8 +52,16 @@
         "A-OFFICIAL-POLYGON-MISSING-001",
         "A-PLANNING-CONTROLS-001"
       ],
-      "note": "官方边界未提供；当前使用 provisional boundary，数值仅用于方案推演",
-      "status_note": "仅保留 provisional geometry QA 数值；未作为 proposal 中的正式指标引用。"
+      "note": "官方边界未提供；当前使用 provisional boundary，数值仅用于方案推演；shared-cut 产生约 0.000827 sqm 边缘 residual，无内部空洞；不声称 survey-level exact。",
+      "status_note": "仅保留 provisional geometry QA 数值；未作为 proposal 中的正式指标引用。",
+      "audit": {
+        "method": "shared_cut_residual_difference",
+        "edge_residual_sqm": 0.000827,
+        "internal_holes_sqm": 0.0,
+        "coverage_statement": "coverage≈1.0; not survey-level exact",
+        "survey_level_exact": false,
+        "crs_for_recalculation": "EPSG:4548"
+      }
     },
     "land_use_coverage_ratio": {
       "status": "not_applicable",
@@ -80,8 +88,16 @@
         "A-OFFICIAL-POLYGON-MISSING-001",
         "A-PLANNING-CONTROLS-001"
       ],
-      "note": "官方边界未提供；当前使用 provisional boundary，数值仅用于方案推演",
-      "status_note": "仅保留 provisional geometry QA 数值；未作为 proposal 中的正式指标引用。"
+      "note": "官方边界未提供；当前使用 provisional boundary，数值仅用于方案推演；coverage≈1.0，边缘 residual 约 0.000827 sqm，无内部空洞；不声称 survey-level exact。",
+      "status_note": "仅保留 provisional geometry QA 数值；未作为 proposal 中的正式指标引用。",
+      "audit": {
+        "method": "shared_cut_residual_difference",
+        "edge_residual_sqm": 0.000827,
+        "internal_holes_sqm": 0.0,
+        "coverage_statement": "coverage≈1.0; not survey-level exact",
+        "survey_level_exact": false,
+        "crs_for_recalculation": "EPSG:4548"
+      }
     },
     "building_footprint_sqm": {
       "status": "not_applicable",
@@ -138,7 +154,7 @@
     },
     "green_area_sqm": {
       "status": "not_applicable",
-      "value": 2091300.062,
+      "value": 1958566.416,
       "unit": "sqm",
       "source_files": [
         "geometry/green_space.geojson"
@@ -164,7 +180,7 @@
     },
     "green_space_area_sqm": {
       "status": "not_applicable",
-      "value": 2091300.062,
+      "value": 1958566.416,
       "unit": "sqm",
       "source_files": [
         "geometry/green_space.geojson"
@@ -190,7 +206,7 @@
     },
     "green_ratio": {
       "status": "known",
-      "value": 0.183241221,
+      "value": 0.171611003,
       "unit": "ratio",
       "source_files": [
         "geometry/green_space.geojson",

@@ -33,7 +33,7 @@ tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent
 | 总体设计范围 | 约 11.4 平方公里；以京张遗址公园周边约 1–2 公里城市地区和产业区为语境 | 面积和文字来自公告；official polygon missing | 城市更新总体框架、交通、市政、蓝绿和风貌 |
 | 重点区域范围 | 约 368.4 公顷，即约 3.684 平方公里；含众智园、AI原点、大钟寺 | 三个重点区文字和面积来自公告；exact polygon missing | 三个重点区的定位、结构、场景和更新逻辑 |
 
-上述三个面积是公告文字中的工作尺度，不是由临时 polygon 计算的精确面积。当前几何必须明确写成 `provisional_constraint`，`official_boundary=false`；不得把它当作 official redline、精确面积、控规或工程依据。[source:SRC-BJ-ANNOUNCEMENT] [source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE] [data:geometry/site_boundary.geojson#SITE-001] [data:geometry/key_areas.geojson#PROV-KEY-001] [metric:site_area_sqm] [metric:key_area_count] [depth:three_level_scope_framework]
+上述三个面积是公告文字中的工作尺度，不是由临时 polygon 计算的精确面积。当前几何必须明确写成 `provisional_constraint`，`official_boundary=false`；不得把它当作 official redline、精确面积、控规或工程依据。[source:SRC-BJ-ANNOUNCEMENT] [source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE] [data:geometry/site_boundary.geojson#PROV-SITE-001] [data:geometry/key_areas.geojson#PROV-KEY-001] [metric:site_area_sqm] [metric:key_area_count] [depth:three_level_scope_framework]
 
 ### provisional boundary 替换规则
 
@@ -82,7 +82,7 @@ tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent
 
 ### 交通、轨道、慢行、市政与公共服务
 
-交通策略以“站点可达、步行连续、骑行可停、微循环可观察”为原则：围绕现状轨道站点和京张公园接口建立步行/骑行优先的连接清单，针对学院路、五道口、清华东路西口、大钟寺等接口做断点核查；以时段、活动和人流类型构建可调整的交通组织建议。轨道线位、道路红线、交叉口渠化、停车配建、桥隧和市政容量均为 unknown + reason：缺少专项规划、测绘和管线资料；当前仅保留文件级 provisional constraint layer pending Task 3 引用，不把空 feature 当作已存在约束。新型基础设施只提出边缘算力、传感器、开放数据字典和人工复核台的概念接口，不提出设备型号或工程容量。[source:SRC-BJ-XUEYUAN-HALL] [standard:MOHURD-CONTROL-DETAILED-PLANNING] [data:geometry/roads.geojson#ROAD-001] [data:geometry/constraints.geojson] [depth:traffic_rail_slow_parking] [depth:municipal_new_infrastructure]
+交通策略以“站点可达、步行连续、骑行可停、微循环可观察”为原则：围绕现状轨道站点和京张公园接口建立步行/骑行优先的连接清单，针对学院路、五道口、清华东路西口、大钟寺等接口做断点核查；以时段、活动和人流类型构建可调整的交通组织建议。轨道线位、道路红线、交叉口渠化、停车配建、桥隧和市政容量均为 unknown + reason：缺少专项规划、测绘和管线资料；当前 `geometry/constraints.geojson#CONSTRAINT-001` 已存在，但它只是 candidate/provisional/unknown 分析要素，不是官方控制线；控制值、边界和法定效力仍待官方资料与专业确认。新型基础设施只提出边缘算力、传感器、开放数据字典和人工复核台的概念接口，不提出设备型号或工程容量。[source:SRC-BJ-XUEYUAN-HALL] [standard:MOHURD-CONTROL-DETAILED-PLANNING] [data:geometry/roads.geojson#ROAD-001] [data:geometry/constraints.geojson#CONSTRAINT-001] [depth:traffic_rail_slow_parking] [depth:municipal_new_infrastructure]
 
 ### 蓝绿空间、公共服务与风貌
 
@@ -170,11 +170,11 @@ tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent
 
 用地分类采用统一的 land-use 语义，建议把研发/教育/公共服务/生活服务/蓝绿空间/交通接口作为“功能关系”而非未经批准的用地变更。建筑图层仅表达现状或概念占位，当前工作指标显示 building footprint area 为 [metric:building_footprint_area_sqm]，但它不等于法定建筑规模。FAR、建筑高度、建筑密度、总建筑规模、开发强度和具体地块功能比例均为 unknown + reason：项目级控规条件、现状测绘和权属清单缺失，需 professional confirmation required。[source:SRC-BJ-ANNOUNCEMENT] [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [standard:MOHURD-CONTROL-DETAILED-PLANNING] [data:geometry/buildings.geojson#BLDG-001] [data:geometry/land_use.geojson#LU-001] [depth:development_intensity_controls]
 
-拆改留采用四类概念标签：保留（历史、结构、可持续使用价值待确认）；修复/改造（改善界面、可达和能源表现的参考方向）；复合使用（在不改变权属和审批结论前提下提出时段共享）；长期研究（数据不足或风险较高，暂不提出具体工程）。任何文保建筑、企业空间和居住空间的改造必须以产权、文保、消防、结构和运营审查为前置，不能从本方案推导拆除、桥隧、地下空间或市政工程结论；constraints 仍是 provisional constraint layer pending Task 3，当前只作文件级待确认引用。[data:geometry/constraints.geojson] [depth:retain_renovate_demolish] [depth:height_massing_character]
+拆改留采用四类概念标签：保留（历史、结构、可持续使用价值待确认）；修复/改造（改善界面、可达和能源表现的参考方向）；复合使用（在不改变权属和审批结论前提下提出时段共享）；长期研究（数据不足或风险较高，暂不提出具体工程）。任何文保建筑、企业空间和居住空间的改造必须以产权、文保、消防、结构和运营审查为前置，不能从本方案推导拆除、桥隧、地下空间或市政工程结论；`geometry/constraints.geojson#CONSTRAINT-001` 当前仅为 candidate/provisional/unknown 分析要素，不是官方控制线，具体控制值仍待官方资料与专业确认。[data:geometry/constraints.geojson#CONSTRAINT-001] [depth:retain_renovate_demolish] [depth:height_massing_character]
 
 ## 交通、轨道、市政与公共服务设施
 
-交通系统以步行、骑行、轨道换乘、活动时段和无障碍体验为核心观察量，构建“站点—公园—校园—园区—社区”五类接口的连续性检查。可供专业团队深化的建议包括：建立站点到公共节点的无障碍路径清单；为骑行和共享设备设置不阻塞消防与步行的候选停放区；在活动日用人工计数与匿名聚合数据比较路线；为公共服务设置人工问询和退出机制。道路红线、轨道线位、路口渠化、停车数量、桥隧、市政管网、分布式能源、端侧算力和公共服务容量均 unknown + reason：缺少交通、市政、消防和工程专项资料；不填写工程指标，constraints 为 provisional constraint layer pending Task 3 的文件级待确认引用。[source:SRC-BJ-XUEYUAN-HALL] [standard:MOHURD-CONTROL-DETAILED-PLANNING] [data:geometry/roads.geojson#ROAD-001] [data:geometry/constraints.geojson] [depth:traffic_rail_slow_parking] [depth:municipal_new_infrastructure]
+交通系统以步行、骑行、轨道换乘、活动时段和无障碍体验为核心观察量，构建“站点—公园—校园—园区—社区”五类接口的连续性检查。可供专业团队深化的建议包括：建立站点到公共节点的无障碍路径清单；为骑行和共享设备设置不阻塞消防与步行的候选停放区；在活动日用人工计数与匿名聚合数据比较路线；为公共服务设置人工问询和退出机制。道路红线、轨道线位、路口渠化、停车数量、桥隧、市政管网、分布式能源、端侧算力和公共服务容量均 unknown + reason：缺少交通、市政、消防和工程专项资料；不填写工程指标，`geometry/constraints.geojson#CONSTRAINT-001` 仅为 candidate/provisional/unknown 分析要素的文件级待确认引用，不是官方控制线。[source:SRC-BJ-XUEYUAN-HALL] [standard:MOHURD-CONTROL-DETAILED-PLANNING] [data:geometry/roads.geojson#ROAD-001] [data:geometry/constraints.geojson#CONSTRAINT-001] [depth:traffic_rail_slow_parking] [depth:municipal_new_infrastructure]
 
 ## 蓝绿空间、公共空间与城市风貌
 
@@ -197,7 +197,7 @@ tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent
 
 ## 指标体系、面积复算与合规矩阵
 
-指标分为“公开工作值、结构化复算值、待确认控制值”三组。公开工作值是 43.6、11.4 和 3.684 平方公里的公告文字尺度；结构化复算值当前包括 [metric:site_area_sqm]、[metric:building_footprint_area_sqm]、[metric:green_ratio]、[metric:public_space_ratio] 和 [metric:key_area_count]，仅作为本轮几何/指标联动的可追溯工作值，不能替代 official polygon 后的复算；待确认控制值包括 FAR、建筑高度、道路红线、面积权属、容量、投资、招商和政策，统一登记为 unknown + reason。替换 official polygon 后，所有结构化指标、图层和图面必须整体重算。constraints 当前没有 feature，只保留 provisional constraint layer pending Task 3 的文件级待确认引用。[data:geometry/site_boundary.geojson#SITE-001] [data:geometry/key_areas.geojson#PROV-KEY-001] [data:geometry/land_use.geojson#LU-001] [data:geometry/buildings.geojson#BLDG-001] [data:geometry/roads.geojson#ROAD-001] [data:geometry/green_space.geojson#GREEN-001] [data:geometry/public_space.geojson#PUBLIC-001] [data:geometry/constraints.geojson] [data:geometry/phasing.geojson#PHASE-001] [metric:site_area_sqm] [metric:building_footprint_area_sqm] [metric:green_ratio] [metric:public_space_ratio] [metric:key_area_count] [depth:metrics_recalculation]
+指标分为“公开工作值、结构化复算值、待确认控制值”三组。公开工作值是 43.6、11.4 和 3.684 平方公里的公告文字尺度；结构化复算值当前包括 [metric:site_area_sqm]、[metric:building_footprint_area_sqm]、[metric:green_ratio]、[metric:public_space_ratio] 和 [metric:key_area_count]，仅作为本轮几何/指标联动的可追溯工作值，不能替代 official polygon 后的复算；待确认控制值包括 FAR、建筑高度、道路红线、面积权属、容量、投资、招商和政策，统一登记为 unknown + reason。替换 official polygon 后，所有结构化指标、图层和图面必须整体重算。constraints 当前已提供 `geometry/constraints.geojson#CONSTRAINT-001`；该 feature 仅为 candidate/provisional/unknown 分析要素，不是官方控制线，相关控制值仍待官方资料与专业确认。[data:geometry/site_boundary.geojson#PROV-SITE-001] [data:geometry/key_areas.geojson#PROV-KEY-001] [data:geometry/land_use.geojson#LU-001] [data:geometry/buildings.geojson#BLDG-001] [data:geometry/roads.geojson#ROAD-001] [data:geometry/green_space.geojson#GREEN-001] [data:geometry/public_space.geojson#PUBLIC-001] [data:geometry/constraints.geojson#CONSTRAINT-001] [data:geometry/phasing.geojson#PHASE-001] [metric:site_area_sqm] [metric:building_footprint_area_sqm] [metric:green_ratio] [metric:public_space_ratio] [metric:key_area_count] [depth:metrics_recalculation]
 
 compliance_matrix、standard_matrix 和 design_depth_matrix 分别把公告 requirement、专业标准和 required depth 映射到 proposal、GeoJSON、指标、图纸、来源、假设和 self-check；矩阵中的 `status=complete` 仅表示本文件已提供可读的响应证据，不表示正式控制条件已经取得。[source:SITE-PACKAGE] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [depth:risk_missing_data]
 
