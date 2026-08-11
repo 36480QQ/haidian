@@ -6,12 +6,20 @@
 
 | 版本 | 旧编号范围 | 里程碑 |
 | --- | --- | --- |
+| **7.0** | v7.0 | P0 自认证标签清理 + P1 区域协同RACI矩阵/全球案例生态图谱补齐 |
 | **6.0** | v6.0 | 正式重构 16:9 QHD 品牌展板与 A0/A3 高清 PDF 矢量图册全套里程碑 |
 | **5.x** | v4.7–v5.7 | 内容增强 + 概念传达强化 + 补强迭代 |
 | **4.0** | v1.4.0–v1.4.6 | 路签制治理协议 / Proof-Mile / 责任矩阵 / 资产 |
 | **3.0** | v1.3.0 | 深度优化：City-as-Repo / 多物种 / 无障碍 |
 | **2.0** | v1.0.0–v1.2.0 | 首次提交 + 合规精细化 |
 | **1.0** | v0.x（~15 次） | 本地早期迭代：概念形成 / 数据搭建 |
+
+## v7.0 - 2026-08-11
+
+- **P0 自认证标签清理**：visual/index.html 中 "GeoJSON Topology Verified" → "GeoJSON 拓扑结构（provisional）"；visual/index.en.html 中 "GeoJSON Verified" / "Key Verified Metrics" → "GeoJSON Topology (provisional)" / "Key Metrics (provisional geometry)"；proposal.md L171 "达到控制性详细规划的城市设计深度" → "参照控制性详细规划的城市设计深度要求组织"
+- **P1 区域协同 RACI 矩阵**：新增 8 方协同主体 RACI 矩阵（北纬社区/未来科学城/怀柔科学城/经开区/中关村科技服务翼/小月河场景赋能翼/京津冀协调机构/京张AI带管委会），含角色、核心输入输出、权限边界和接口机制
+- **P1 全球案例生态图谱**：为 6 个全球案例新增结构化对比表（国家/城市/核心特征/规模/关键机制/可迁移性/来源链接）
+- 版本号统一升级：proposal.md/manifest.json/visual/index.html/visual/index.en.html → v7.0
 
 ---
 

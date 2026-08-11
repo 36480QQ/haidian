@@ -12,7 +12,7 @@
     "agent_name": "YuanYii AI Design Agent",
     "model": "agent-declared-model"
   },
-  "generated_at": "2026-08-10T12:29:02.743787+00:00",
+  "generated_at": "2026-08-11T12:00:00.000000+00:00",
   "files": [
     {
       "path": "agent.json",
@@ -121,7 +121,7 @@
       "role": "changelog",
       "required": false,
       "language": "zh",
-      "sha256": "54938868f7f36def9c035329858b64c203ec2b92a67796f4607fe4a5ced7666c"
+      "sha256": "2b8304a281af3f949cd4978516872cf05be1d5725a9de89d40baab3aa6e47dec"
     },
     {
       "path": "compliance_matrix.json",
@@ -141,14 +141,14 @@
       "required": false,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "800224aff4b5e54cbee8de78b40c1dd9afa811cb4c14a9170866379e4d521d7b"
+      "sha256": "72fca03efa5a1dc76c9b01560adb27ed7a0ea510b8557f5b73c8f8ff7310dc13"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "3c6bdde0bdebd7f09c80eda0836b46ae515e61f1d64c50f64e87ef1ab077de45"
+      "sha256": "622f8b2d0c13e4ec3e6be2b39e7e8ccb9fba6d468d57ad2cd44dce94bc550656"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -156,14 +156,14 @@
       "required": false,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "8cf46d15f746b6746b0be2ed322441f7f4fb5928e5fa6d7a9c878ad83e6983ea"
+      "sha256": "a0c6c5c47ab1d31fd102b535a7e6455b2925776bd283cc26045658ebd4c630ce"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "0cec7042a56ae59ec1840665299a9a1815243c68265e5b972bb7c0f9e9aa9bab"
+      "sha256": "926eadb8b47f257ce9c8f6df77472f12b028f2de9499f581c84010f0c3b9f25a"
     },
     {
       "path": "geometry/buildings.geojson",
@@ -243,7 +243,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "8e38390cd11bb1f3ed44542a6f6692674cf0a5a2cd35f9ca1e434aba0d30b3bc"
+      "sha256": "b86893d9020e9cd0a230831cd41611a574f51a7f41884496b6ca1a5441eec1c7"
     },
     {
       "path": "report/copyright_statement.md",
@@ -283,13 +283,13 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "80b71cb78d2c1581fc679eb561959ac515bc8a3ff6f76c74dcc2c4e20d49b72f"
+      "sha256": "47b6f57ac3b1ddbaae9103e2d827c2e85fc392a66c190e696a5295ef26b9f94c"
     },
     {
       "path": "simulation.json",
       "role": "simulation",
       "required": false,
-      "sha256": "34d5f87bbb1b195f7aaed4c09584a56d3e733817fa8ff05172e028824fd674f8"
+      "sha256": "02940c04998f025bc3f7d628cd78265b0090cb7cc6693368560e10c70a545ff8"
     },
     {
       "path": "sources.json",
@@ -301,7 +301,7 @@
       "path": "spatial.json",
       "role": "spatial_nodes",
       "required": false,
-      "sha256": "48ea2d53d7eeb37a4073ce136ead063f6e5c4f1de6eec193d4187d0046c46a8d"
+      "sha256": "443ac2b1e44932308f65a929a9274a6bdbdd122397054d8e273744f3592e7605"
     },
     {
       "path": "standard_matrix.json",
@@ -357,14 +357,14 @@
       "required": false,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "890d3dc9a08c1a49210b51c533979287dec4b1b52eaa0419354b06ce8689b9ef"
+      "sha256": "2c38cb9b0b0b72fa9d689b7d2c7cca8d2827f32ee4ce55d4c094c02774ef876e"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "79c770696100bad3fe5ed7fddea0717779c82f43b62689263db5d75e97855d89"
+      "sha256": "400f7b68999067722e7ce38e574ed19fca471d1e0ecb84192b4b03a06af98fa0"
     }
   ],
   "validation_claim": {
@@ -374,7 +374,7 @@
     "version": "4.0",
     "checked_at": "2026-08-10T00:00:00Z"
   },
-  "version": "6.0",
+  "version": "7.0",
   "updated_at": "2026-08-11T00:00:00Z",
   "checksums": {
     "proposal.md": "8e38390cd11bb1f3ed44542a6f6692674cf0a5a2cd35f9ca1e434aba0d30b3bc",

@@ -1,14 +1,18 @@
 {
   "schema": "jingzhang-ai-nexus/simulation",
   "version": "1",
-  "simulations": [
+  "tasks": [
     {
       "id": "SIM-01",
-      "name": "Wind Health Field CFD"
+      "name": "Wind Health Field CFD",
+      "status": "synthetic-tested",
+      "description": "CFD microclimate simulation for 9.5km wind corridor."
     },
     {
       "id": "SIM-02",
-      "name": "Block Token Scheduler"
+      "name": "Block Token Scheduler",
+      "status": "synthetic-tested",
+      "description": "Block permit verification and CVP compute feedback scheduler."
     }
   ]
 }
