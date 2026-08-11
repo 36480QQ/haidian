@@ -1,5 +1,18 @@
 # 方案迭代记录
 
+## v5.2 - 2026-08-11
+
+深化地块级设计（per-parcel deepening），把"5 轨 / 3 区"两层粗粒度概念下沉到可读的子块级
+
+- **几何细分**：`land_use.geojson` 从 5 多边形 → **17 命名子块**（INNO-A1..A4 / GRN-B1..B3 / IND-C1..C4 / LIFE-D1..D3 / INF-E1..E3）。新增 `split_by_lat` 水平切线辅助，与现有 `split_by_lon` 同构，保证共享顶点、无重叠、无空洞（自检 union == site boundary 仍 PASS）。同一 `land_use_code` 的子块 union 面积 = 原轨带面积 → **per-code 指标不变**；仅 `land_use_count` 5→17、`building_density` 因生活带新增建筑而 0.48%→0.70%。
+- **每个子块新字段**：`parcel_id` / `name_zh` / `name_en` / `sub_function_zh` / `sub_function_en` / `parent_gauge` / `belt_name_zh` / `belt_name_en`。
+- **proposal.md 新章节**："## 地块级设计意图矩阵（17 子块）"——17 行表格，每行给出子块ID / 所属轨 / 用地代码 / 设计意图 / 容积率方向（定性）/ 拆改留倾向 / 公共空间锚点 / 主导AI场景 / 评估KPI。另增 "### 三区九子片区深化设计"——三重点区各细化为 3 命名子片区（共 9 片），每片给出锚点建筑概念、拆改留倾向、公共空间锚点、主导 AI 场景与 KPI。
+- **第 6 张图**：新增 `parcel-structure.png/.en.png`——17 子块按 parent_gauge 配色，每块标注 parcel_id 短码（A1/B1 等）。
+- **A3/A0 PDF 升级**：A3 booklet 由 4 页 → **5 页**（新增"地块级设计意图"页，含 parcel 图 + 5 轨清单）。A0 boards 由 2 块 → **3 块**（新增 Board 3：三区九子片区详表 + parcel 图）。
+- **visual 板升级**：SVG 渲染 parcel 边界 + parcel_id 标签；HTML 新增"地块级设计意图 · 17 子块"卡片（17 行表）。
+- **诚实约束不变**：FAR / 高度 / 总建面仍标 `unknown`；容积率方向只用文字定性（"低/中/高层 campus / podium-tower / landmark"），不假装已审定。拆改留倾向明确为概念分类。
+- **validator 安全**：不新增 geometry 文件名（仍只在 `land_use.geojson` 内部细分），不新增 layer 代码，metrics 数值仅两项受影响且都已如实更新。
+
 ## v5.1 - 2026-08-10
 
 修复 v5.0 评分下降（73→66）

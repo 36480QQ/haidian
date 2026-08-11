@@ -112,7 +112,7 @@ translation_file: "proposal.en.md"
 
 ## 总体设计范围城市更新与控规深度城市设计
 
-总体设计范围（约11.4 km²，provisional `[data:geometry/site_boundary.geojson#SITE-001]`）的城市更新框架采用**"五轨分区"**——将范围划分为五条南北向功能带。分区的依据并非抽象等宽切割，而是从以下**可公开场地条件**推导 `[depth:land_use_layout]` `[depth:overall_spatial_structure]` `[depth:existing_conditions_diagnosis]`：
+总体设计范围（约11.4 km²，provisional `[data:geometry/site_boundary.geojson#SITE-001]`）的城市更新框架采用**"五轨分区"**——将范围划分为五条南北向功能带，每带再细分为 3-4 个命名子块（共 **17 子块**，详见下章"地块级设计意图矩阵"）。分区的依据并非抽象等宽切割，而是从以下**可公开场地条件**推导 `[depth:land_use_layout]` `[depth:overall_spatial_structure]` `[depth:existing_conditions_diagnosis]`：
 
 1. **京张铁路遗址走廊（南北向遗产主轴）**——遗址公园约9km贯通南北 `[source:HERITAGE-PARK]`，构成"绿地轨"的骨架与东西缝合的公共空间基底。
 2. **三处重点区的功能需求差异**——众智园(北)以研发/算力为主→创新轨；AI原点社区(中)以生活/体验为主→生活轨；大钟寺(南)以产业/商务为主→产业轨。三区沿走廊北中南布局 `[data:geometry/key_areas.geojson]`。
@@ -129,7 +129,7 @@ translation_file: "proposal.en.md"
 | 生活轨 | 0702 居住与社区服务 | 2.33 km² `[metric:land_use_area_0702_sqm]` | 20.4% `[metric:land_use_ratio_0702]` | 人才公寓、社区配套 |
 | 基建轨 | 1207 交通与市政设施 | 1.49 km² `[metric:land_use_area_1207_sqm]` | 13.0% `[metric:land_use_ratio_1207]` | 道路、轨道、算力、能源 |
 
-用地划分在 `geometry/land_use.geojson` `[data:geometry/land_use.geojson#LU-001]` 中为完整分区：5个用地块 `[metric:land_use_count]` 的 union = site boundary，无重叠、无空洞（自检已验证覆盖间隙与两两重叠均为0）。用地代码遵循国土空间用地用海分类指南 `[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]`。现状诊断与资料缺口分析 `[depth:existing_conditions_diagnosis]` 显示：现有公开资料仅提供 provisional 边界，缺现状建筑测绘、权属与市政容量，本方案据此在 `geometry/constraints.geojson` `[data:geometry/constraints.geojson#CON-001]` 中固化 provisional 约束层。
+用地划分在 `geometry/land_use.geojson` `[data:geometry/land_use.geojson#LU-0802-A1]` 中为完整分区：**5 个轨带细化为 17 个子块** `[metric:land_use_count]` 的 union = site boundary，无重叠、无空洞（自检已验证覆盖间隙与两两重叠均为0）。每个子块带 `parcel_id` / `name_zh` / `name_en` / `sub_function_zh` / `sub_function_en` / `parent_gauge` 字段，用地代码遵循国土空间用地用海分类指南 `[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]`，同一 `land_use_code` 的所有子块的 union 面积 = 原轨带面积（per-code 指标不变）。现状诊断与资料缺口分析 `[depth:existing_conditions_diagnosis]` 显示：现有公开资料仅提供 provisional 边界，缺现状建筑测绘、权属与市政容量，本方案据此在 `geometry/constraints.geojson` `[data:geometry/constraints.geojson#CON-001]` 中固化 provisional 约束层。
 
 **城市更新总体框架**：以"基准轨(研发)→生活轨(转化)→产业轨(规模化)"为主轴，通过绿地轨与基建轨串联。绿地率 `[metric:green_ratio]` 达23.1%（绿带 `[metric:green_space_area_sqm]`，union 复算），公共空间率 `[metric:public_space_ratio]` 约3.0%（公共空间 `[metric:public_space_area_sqm]`），建筑密度 `[metric:building_density]`（代表性足印 `[metric:building_footprint_area_sqm]` `[data:geometry/buildings.geojson#BLD-001]`，反映空间供给概念，非现状实测 `[assumption:A-BUILDING-REPRESENTATIVE-001]`）。
 
@@ -174,6 +174,60 @@ translation_file: "proposal.en.md"
 - **实施风险**：商业权属与运营主体待确认。
 
 三处重点区均形成"定位+空间结构+建筑更新+交通慢行+公共空间+AI场景+实施风险"的可读小方案。因 polygon 为 provisional，以上结论均为方向性设计 `[assumption:A-BOUNDARY-PROVISIONAL-001]`。
+
+## 地块级设计意图矩阵（17 子块）
+
+五轨带进一步细化为 **17 个命名子块**，每个子块都是 `geometry/land_use.geojson` 中一个独立 polygon，带 `parcel_id`（如 `LU-0802-A1`）、中英文名、子功能与父轨字段。子块划分在每条轨带内部用水平切线生成，与垂直切线一样共享顶点、无重叠、无空洞，故 union 仍等于 site boundary；同一 `land_use_code` 的子块 union 面积 = 原轨带面积，per-code 指标不变 `[depth:land_use_layout]` `[depth:overall_spatial_structure]`。
+
+![17 子块设计意图](assets/figures/parcel-structure.png)
+
+下表为 17 子块的**设计意图矩阵**：容积率/高度方向仅作定性描述（FAR 数值仍待官方控规 `[metric:floor_area_ratio]`），拆改留倾向为概念分类（不替代权属测绘），主导 AI 场景映射到 S1–S14（见后续章节），KPI 为示例级别（待真实基线）。每行字段的精确面积见对应 polygon 的 `area_sqm_declared`。
+
+| 子块 parcel_id | 所属轨 | 用地代码 | 设计意图 | 容积率/高度方向（定性） | 拆改留倾向 | 公共空间锚点 | 主导AI场景 | 评估KPI(示例) |
+|---|---|---|---|---|---|---|---|---|
+| **INNO-A1** 基础研发组团 | 创新轨 | 0802 | 实验室、研究院、共享测试台 | 低-中层 campus（科研街区型） | 以新建研发载体为主 | 研发组团内院 + 北绿环接入 | S2 开源共创工坊 | 活跃贡献者数、合并PR数 |
+| **INNO-A2** 共享算力中心 | 创新轨 | 0802 | 区域级算力、变电站、冷却设施 | 中层集约型（高密度设备机房） | 新建为主，保留弹性 | 算力广场（设备参观窗口） | S1 算力调度与基准测试 | 基准复现率≥95%、算力利用率≥70% |
+| **INNO-A3** 基准测试场 | 创新轨 | 0802 | 开放测试床、可观测性平台 | 低层开敞（测试场 + 观景台） | 新建 | 基准测试场观景台（朝圣地标③） | S1 + S11 治理看板 | 风险预警准确率、人工复核覆盖率100% |
+| **INNO-A4** 中试转化加速器 | 创新轨 | 0802 | 中试车间、产业联合实验室 | 中层 pod-tower（研发+中试混合） | 改造与新建混合 | 转化展示庭院 | S2 开源共创工坊 | 中试转化项目数 |
+| **GRN-B1** 遗址公园主轴带 | 绿地轨 | 1401 | 约9km南北向铁路遗址公园、解说节点 | 低层（地被+解说装置） | 保留-改造（铁路遗存） | 故事段①-⑤ 五节点 `[data:geometry/green_space.geojson#GR-001]` | S10 京张遗产AI导览 | 访客满意度、史料准确性 |
+| **GRN-B2** 重点区绿环 | 绿地轨 | 1401 | 三个重点区绿环串联 | 低层（绿道+小型驿站） | 保留-改造 | 绿环广场三处 | S4 全龄友好慢行导引 | 无障碍路径连通率 |
+| **GRN-B3** 海绵调蓄区 | 绿地轨 | 1401 | 雨水花园、滞留植草沟 | 低层（地被+植草沟） | 新建（生态设施） | 海绵科普园 | （非AI主导，配 S4 慢行） | 调蓄容积、年径流控制率（待水文模型 `[assumption:A-GREEN-BLUE-CONCEPT-001]`） |
+| **IND-C1** 企业总部基地 | 产业轨 | 05 | 总部塔楼、锚定企业 | 高层 landmark（塔楼群） | 改造更新为主 | 大钟寺产业广场 `[data:geometry/public_space.geojson#PS-004]` | S7 智能原生消费 | 入驻率、企业锚定数 |
+| **IND-C2** 智能原生商业 | 产业轨 | 05 | 沉浸式体验店、体验广场 | 中-高层 podium-tower（商业+办公） | 改造更新为主 | 体验广场 | S7 智能原生消费 | 消费满意度、申诉解决率 |
+| **IND-C3** 产业服务配套 | 产业轨 | 05 | 银行、IP服务、会议中心 | 中层 podium（服务聚合） | 改造更新为主 | 产业服务庭院 | （非AI主导，配 S11 治理看板） | 服务响应时长 |
+| **IND-C4** 创新企业孵化器 | 产业轨 | 05 | 弹性空间、demo室 | 中层灵活型（可分可合） | 改造与新建混合 | 创新庭院 | S2 开源共创工坊 | 孵化项目数、毕业率 |
+| **LIFE-D1** 人才公寓组团 | 生活轨 | 0702 | 租售并举、混合收入人才公寓 | 中-高层板楼（居住型） | 改造与新建混合 | 公寓邻里院落 | （非AI主导，配 S5/S6 便民） | 居住满意度、混合收入比例 |
+| **LIFE-D2** 混合社区中心 | 生活轨 | 0702 | 第三空间、托育、社区诊所 | 中层混合型（底商+社区设施） | 改造更新为主 | 原点生活广场 `[data:geometry/public_space.geojson#PS-003]` | S5 AI+社区健康驿站、S6 AI+教育便民节点 | 预筛准确率、儿童数据合规率、满意度 |
+| **LIFE-D3** 体验型零售带 | 生活轨 | 0702 | 主街零售、餐饮 | 中层底商型（主街界面） | 改造更新为主 | 主街集市广场 | S7 智能原生消费 | 消费满意度、申诉解决率 |
+| **INF-E1** 主轴道路与轨道站点 | 基建轨 | 1207 | TOD节点、公交流廊 | 中层（站城一体） | 新建与改造 | 站点广场（三处） `[data:geometry/roads.geojson#RD-001]` | S3 AI+轨道接驳导航、S9 自动驾驶接驳试点 | 接驳等待时间、安全里程数 |
+| **INF-E2** 算力管道与边缘节点 | 基建轨 | 1207 | 区域算力分配、边缘推理柜 | 低-中层（机房+边缘柜） | 新建（隐蔽型基础设施） | （不设公共空间锚点，地下/后台） | S1 算力调度（边缘补充） | 边缘节点覆盖率、延迟 |
+| **INF-E3** 区域能源中心 | 基建轨 | 1207 | 冷热电三联供、变电站 | 中层（能源建筑） | 新建 | 能源科普窗口 | （非AI主导） | 综合能耗、可再生能源比例 |
+
+设计意图矩阵把"五轨分区"从带级（5 块）下沉到子块级（17 块），每块都给出可读的功能、定性强度方向、拆改留倾向、公共空间锚点、主导 AI 场景与 KPI 示例。所有定性强度方向（"低/中/高层 campus / podium-tower / landmark"）均为**城市设计概念表达**，不替代法定控规的 FAR/高度/退线指标（仍标 `unknown` `[metric:floor_area_ratio]` `[assumption:A-CONTROLS-001]`）。拆改留倾向为概念分类，须以现状测绘与权属为准 `[assumption:A-BOUNDARY-PROVISIONAL-001]`。
+
+### 三区九子片区深化设计（agent.3 三重点区细化）
+
+三处重点区分别覆盖若干子块，每区再细化为 **3 个命名子片区**，共 **9 个子片区**。每片子片区给出锚点建筑概念、拆改留倾向、公共空间锚点、主导 AI 场景与 KPI `[depth:three_key_area_detailed_design]` `[depth:retain_renovate_demolish]` `[depth:height_massing_character]`。
+
+#### 众智园 AI 自主创新加速区 · 基准轨（北，约 1.93 km²）— 3 子片区
+
+- **众智园 ① 基准测试场片区**（INNO-A3 + INNO-A2 北部）—— 锚点：基准测试场观景台（朝圣地标③，可观摩 AI 基准测试的公共荣誉展示节点）+ 开放测试床；拆改留：以新建测试场与观景台为主；公共空间：观景台广场；主导 AI 场景：S1 算力调度与基准测试 + S11 治理看板；KPI：基准复现率≥95%、人工复核覆盖率100%。
+- **众智园 ② 共享算力中心片区**（INNO-A2 主体）—— 锚点：区域级算力中心 + 边缘节点 + 冷却设施，集约型中层机房；拆改留：新建为主，保留弹性扩容；公共空间：算力广场（设备参观窗口）；主导 AI 场景：S1 算力调度；KPI：算力利用率≥70%、边缘节点覆盖率。
+- **众智园 ③ 研发组团+绿环片区**（INNO-A1 + INNO-A4 + GRN-B2 北段）—— 锚点：基础研发组团 + 中试转化加速器 + 北绿环；拆改留：A1 以新建研发载体为主，A4 改造与新建混合；公共空间：研发组团内院 + 北绿环接入；主导 AI 场景：S2 开源共创工坊；KPI：活跃贡献者数、中试转化项目数。
+
+#### 北京 AI 原点社区 · 生活轨（中，约 1.04 km²）— 3 子片区
+
+- **AI 原点 ① 原点生活广场片区**（LIFE-D2 + LIFE-D3 核心）—— 锚点：原点生活广场 `[data:geometry/public_space.geojson#PS-003]`（中央广场 + 第三空间 + 体验店）；拆改留：改造更新为主；公共空间：原点生活广场；主导 AI 场景：S5 AI+社区健康驿站 + S6 AI+教育便民节点 + S7 智能原生消费；KPI：预筛准确率、儿童数据合规率、消费满意度。
+- **AI 原点 ② 混合社区中心片区**（LIFE-D2 北部）—— 锚点：托育 + 社区诊所 + 社区客厅，中层混合型（底商+社区设施）；拆改留：改造更新为主；公共空间：社区客厅内院；主导 AI 场景：S5 + S6；KPI：居民满意度、申诉响应时长。
+- **AI 原点 ③ 体验型零售带片区**（LIFE-D3 全段）—— 锚点：主街零售 + 餐饮 + 节事场地，中层底商型；拆改留：改造更新为主；公共空间：主街集市广场；主导 AI 场景：S7 智能原生消费；KPI：消费满意度、申诉解决率、节事场次。
+
+#### 大钟寺 AI 产业集聚区 · 产业轨（南，约 0.72 km²）— 3 子片区
+
+- **大钟寺 ① 企业总部基地片区**（IND-C1）—— 锚点：总部塔楼群 + 锚定企业，高层 landmark；拆改留：改造更新为主；公共空间：大钟寺产业广场 `[data:geometry/public_space.geojson#PS-004]`；主导 AI 场景：S7 智能原生消费（B 端）；KPI：入驻率、企业锚定数。
+- **大钟寺 ② 智能原生商业片区**（IND-C2）—— 锚点：沉浸式体验店 + 体验广场，中-高层 podium-tower；拆改留：改造更新为主；公共空间：体验广场；主导 AI 场景：S7；KPI：消费满意度、申诉解决率。
+- **大钟寺 ③ 产业服务配套片区**（IND-C3 + IND-C4）—— 锚点：银行 + IP 服务 + 会议中心 + 创新企业孵化器，中层 podium + 灵活型；拆改留：C3 改造更新为主，C4 改造与新建混合；公共空间：产业服务庭院 + 创新庭院；主导 AI 场景：S2 开源共创工坊 + S11 治理看板；KPI：服务响应时长、孵化项目数、毕业率。
+
+九子片区共同覆盖三处重点区的全部范围；与上节 17 子块矩阵保持一对一或一对多的映射（如"众智园 ① 基准测试场片区"对应 INNO-A3 + INNO-A2 北部）。所有结论均为方向性设计 `[assumption:A-BOUNDARY-PROVISIONAL-001]`，不替代现状测绘、权属核查与法定控规。
 
 ## AI 创新生态、人才画像与 AI+ 场景
 
@@ -373,10 +427,10 @@ SC-04 把 NG-6 六步扩展为**十段执行链**：问题 → 场地 → 数据
 
 ## 用地、建筑规模与拆改留方案
 
-用地布局见上节"五轨分区"。建筑规模表达 `[depth:height_massing_character]` `[depth:retain_renovate_demolish]`：
+用地布局见上节"五轨分区"，并进一步细化为 17 子块（详见"地块级设计意图矩阵"章节）。建筑规模表达 `[depth:height_massing_character]` `[depth:retain_renovate_demolish]`：
 
 - **建筑基底**：代表性足印总计 `[metric:building_footprint_area_sqm]`，密度 `[metric:building_density]`。这是体现用地密度的概念性足印，非现状测绘或工程方案 `[assumption:A-BUILDING-REPRESENTATIVE-001]`。
-- **保留/改造/拆除/新建**：三区差异化——众智园以新建研发载体为主，AI原点社区混合保留-改造-新建，大钟寺以改造更新为主。具体地块拆改留须以现状测绘与权属为准，本方案只给方向性分类。
+- **保留/改造/拆除/新建**：三区差异化——众智园以新建研发载体为主，AI原点社区混合保留-改造-新建，大钟寺以改造更新为主；**子块级拆改留倾向详见"地块级设计意图矩阵"17 行表格**（每块标 新建为主/改造为主/混合 等概念分类）。具体地块拆改留须以现状测绘与权属为准，本方案只给方向性分类。
 - **开发强度**：FAR/高度/密度均为 `unknown` `[metric:floor_area_ratio]`，待官方控规。不得表述为已审定。
 
 资料缺口：现状建筑、权属、地下空间、市政容量均待专业复核 `[assumption:A-CONTROLS-001]`。
