@@ -28,7 +28,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 方案按公告三层范围组织：统筹研究范围（约 43.6 km²）回答 AI 创新生态与未来城市形态；总体设计范围（约 11.4 km²）把判断落实为城市更新与控规深度设计；重点区域范围（约 368.4 ha）对众智园、AI原点社区、大钟寺三处做详细设计 [source:OFFICIAL-ANNOUNCEMENT] [depth:three_level_scope_framework]。
 
 | 层级 | 公告规模 | 本层回答的核心问题 | 档案带回答 |
-|:--|:--|:--|:--|
+|:---|:---|:---|:---|
 | 统筹研究范围 | 约 43.6 km² | AI 产业生态与未来城市形态 | 档案网络与区域协同：谁记录、谁可查、如何交换 |
 | 总体设计范围 | 约 11.4 km² | 更新结构、用地、交通、蓝绿、风貌 | 记忆主脊、三档案站、两翼记录器、用地与项目 |
 | 重点区域范围 | 约 368.4 ha | 三处片区如何实施 | 源头/转化/场景三座档案站的详细设计 |
@@ -43,12 +43,14 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 面向五大功能，方案建立档案带转译：AI全栈自主创新体系＝源头档案站记录算力、模型、标准与测试档案；世界级AI创新生态＝转化档案站记录成果、人才与企业档案；AI+场景赋能新范式＝场景档案站与大钟寺、小月河记录场景运营与纠错档案；智能化AI活力城市＝公共空间里的档案设施与可检索城市记忆；AI治理全球话语权＝档案章程本身，一套公开、可纠错、可传承的治理接口 [source:AGENT-TASKBOOK]。
 
+**命名体系与视觉识别方向（agent.1）**：主名沿用官方「百年京张AI创新带 / Centennial Jing-Zhang AI Innovation Belt（JZ-AI Belt）」；空间命名体系为「记忆主脊（Memory Spine）— 三座档案站（Source / Transform / Scenario Archive Station）— 两翼记录器（Record Wing）」；Logo 方向取「档案卡 × 铁轨枕木」意象——一张张归档卡沿铁轨排列，卡片上是一道"归档线"，线上方留白永远等待新的贡献；识别语言用档案状态三色（在档/待核/已纠错）贯通导视、场景卡与公共界面，与铁路信号文化同构。Logo、字体与图形均须清权后使用 [source:AGENT-TASKBOOK]。
+
 ### 全球案例：只取机制，不搬数字
 
 六个全球案例分两族——**记忆/档案机构**与**开放协作平台**，本方案的核心判断是两族的合流（案例信息取公开来源，登记为背景资料，不引用绩效数字、不作本地类比）：
 
 | 案例 | 可转译机制 | 档案带落点 |
-|:--|:--|:--|
+|:---|:---|:---|
 | 国际档案理事会（ICA） | 档案的公开、可检索与长期保存标准 | 档案章程第 1/2 条 |
 | 美国国家档案馆公民档案员项目 | 公众参与档案著录与纠错 | 贡献入档台与纠错复核 |
 | 维基百科贡献者体系 | 版本记录、争议仲裁、荣誉沉淀 | 提交碑与荣誉年鉴 |
@@ -68,6 +70,14 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 ### 区域协同：以档案为最小可交换对象
 
 区域协同不虚构签约与名单，只定义可交换的最小对象——**档案条目本身**：北纬社区提供居民问题与生活体验入档，未来科学城交换测试与中试档案，怀柔科学城交换测量与评测方法档案，经开区交换工程化与量产反馈档案，京津冀以去地点化的档案格式复用规则 [source:AGENT-TASKBOOK]。协同成效不以签约数衡量，以档案条目量、纠错回应率与荣誉授予完整性衡量（运营绩效指标，只定义口径不填伪值）。
+
+| 协同对象 | 概念输入 | 可交换的最小对象（档案条目） |
+|:---|:---|:---|
+| 北纬社区 | 居民问题与生活体验 | 去标识化问题卡、档案节点反馈 |
+| 未来科学城 | 测试与中试方向 | 基准测试协议、失效分类 |
+| 怀柔科学城 | 测量与评测方法 | 评测与校时方法档案 |
+| 经开区 | 工程化与量产反馈 | 互操作记录、召回条件 |
+| 京津冀 | 跨城规则复用 | 去地点化档案格式 |
 
 ## 总体设计范围城市更新与控规深度城市设计
 
@@ -110,7 +120,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 ### 用户画像（6 类）
 
 | 画像 | 核心需求 | 空间响应 | 数据边界 |
-|:--|:--|:--|:--|
+|:---|:---|:---|:---|
 | 全球 AI 开发者/创业者 | 提交贡献、留名荣誉 | 贡献入档台、开源提交碑 | 提交元数据授权制 |
 | 海淀高校师生与科研人员 | 成果转化档案 | 转化档案站、校城慢行缝合 | 成果数据需授权 |
 | 产业与资本从业者 | 要素与项目档案 | 中关村要素记录翼 | 企业案例与标识须清权 |
@@ -123,7 +133,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 每张卡统一 8 要素：定位/用户旅程/输入数据/AI能力/基础设施/运营主体/失败模式/隐私与人工复核（完整版见方案场景档案集，本节约述）：
 
 | 编号 | 场景 | 类型 | 空间载体 |
-|:--|:--|:--|:--|
+|:---|:---|:---|:---|
 | S01 | 贡献入档台 | 公共/运营 | 记忆主脊 |
 | S02 | 服务档案公示板 | 公共/治理 | 社区节点 |
 | S03 | 记忆年代装置 | 文化 | 遗址公园 |
@@ -157,7 +167,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ## 蓝绿空间、公共空间与城市风貌
 
-蓝绿骨架由"记忆主脊+小月河场景记录翼+节点绿地"构成 [depth:blue_green_public_space] [data:geometry/green_space.geojson#GREEN-001]。记忆主脊同时承担慢行、文化叙事、档案展示与生态调节复合功能；小月河绿廊承载场景体验路径；节点绿地结合海绵城市方向组织雨水径流（概念，防洪排涝待专项确认）。
+蓝绿骨架由"记忆主脊+小月河场景记录翼+节点绿地"构成 [depth:blue_green_public_space] [data:geometry/green_space.geojson#GREEN-001]。记忆主脊同时承担慢行、文化叙事、档案展示与生态调节复合功能；小月河绿廊承载场景体验路径；节点绿地结合海绵城市方向组织雨水径流（概念，防洪排涝待专项确认）。绿地率 15.2%（约 173.8 ha）为设计建议口径，由绿地图层在 provisional 边界下复算，与"城市公园带"叙事一致——主脊绿带与沿线公园节点共同构成，非官方绿地率控制值 [metric:green_ratio]。
 
 公共空间体系以"记忆主脊+三座档案站前广场+沿线社区档案节点+缝合广场"组织，图层含三座档案站前广场与沿线社区档案节点（概念多边形，与蓝绿骨架互不重叠）[data:geometry/public_space.geojson#PUBLIC-001] [metric:public_space_ratio]。**AI 朝圣地标群（概念建议，不少于3处）**：①源头档案碑（众智园，记录技术从哪里来）；②原点会客厅（清华园站记忆馆，转化叙事起点）；③场景档案册（大钟寺，记录 AI 如何被使用）。荣誉展示体系＝留名墙+荣誉年鉴+开源提交碑，图形、字体与标识须清权后使用。
 
@@ -172,7 +182,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 更新项目按"档案锚点+主脊缝合+蓝绿提升+服务嵌入"组织，13 项概念项目（JZA-01—JZA-13）见方案实施矩阵，本节约述 [depth:renewal_project_list]：
 
 | 分期 | 代表项目 | 回滚触发器 |
-|:--|:--|:--|
+|:---|:---|:---|
 | 一期（0–3年） | 记忆主脊南段贯通、贡献入档台试点、服务档案公示板、荣誉年鉴节点、开源提交碑、大钟寺四象限连通、档案开放季运营 | 文保/生态/隐私 |
 | 二期（3–6年） | 场景测试街区、模型评测场、小月河绿廊、档案数据平台与章程 | 安全/数据 |
 | 三期（6–10年） | 众智园源头档案站、大钟寺场景档案站 | 经济/能耗 |
@@ -201,7 +211,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 **概念约束图层**：方案随包提交概念约束图层 `geometry/constraints.geojson`——提交范围与三处重点区（provisional）、清河与小月河（概念位置）、京张铁路遗址公园轴带、北五环快速路与清华园车站旧址（概念位置）均登记为 `provisional_constraint`，蓝线、红线、文保范围以官方资料为准，不得用作工程或审批依据 [data:geometry/constraints.geojson#CONSTRAINT-PROVISIONAL-SITE] [data:geometry/constraints.geojson#CONSTRAINT-RAIL-SPINE] [data:geometry/constraints.geojson#CONSTRAINT-WATER-QINGHE]。
 
-**AI 治理边界**：档案设施只记录贡献与服务状态，不采集个人轨迹；AI 判断不直接变成对居民的处置；荣誉授予与档案纠错由人类最终判断 [standard:GENERATIVE-AI-INTERIM-MEASURES] [standard:BARRIER-FREE-ENVIRONMENT-LAW]。
+**AI 治理边界**：档案设施只记录贡献与服务状态，不采集个人轨迹；AI 判断不直接变成对居民的处置；荣誉授予与档案纠错由人类最终判断 [standard:GENERATIVE-AI-INTERIM-MEASURES] [standard:BARRIER-FREE-ENVIRONMENT-LAW]。涉及个人信息的处理按《个人信息保护法》最小必要、告知同意与查阅更正权执行 [source:PIPL]；归档系统本身不作为对外生成式服务部署，若某项归档或场景服务构成生成式AI暂行办法第 2 条所述服务且具有舆论属性或社会动员能力，依法完成安全评估与备案后再上线（概念建议，按条款级口径）。
 
 **版权**：license=COMMUNITY-DISPLAY-ONLY；方案由 AI 智能体生成，仅使用仓库登记或公开清权资料，未使用未授权商标、字体、图片与人物肖像；`report/copyright_statement.md` 提供完整声明。可视化页面为离线静态文件，不加载远程资源或追踪代码 [source:SOURCE-REGISTRY]。
 
@@ -214,6 +224,6 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 3. 仓库场地资料包：`brief/site-package/`（任务书、设计空间、枚举、限值、模式、临时边界与依据说明）[source:SITE-PACKAGE]。
 4. 仓库来源登记表与处理资料：`data/source_registry.json`、`data/processed/agent_fact_pack.md` [source:SOURCE-REGISTRY] [source:PROCESSED-FACT-PACK]。
 5. 临时边界与重点区几何：`brief/site-package/geometry/provisional_boundaries.geojson`（PROV-SITE-001、PROV-KEY-001/002/003）[source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE]。
-6. 专业标准参考：城市设计管理办法、控规编制审批办法、国土空间用地用海分类指南、生成式AI暂行办法、无障碍环境建设法等（以本地快照为准）[standard:MOHURD-URBAN-DESIGN-MEASURES] [standard:MOHURD-CONTROL-DETAILED-PLANNING] [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]。
+6. 专业标准参考：城市设计管理办法、控规编制审批办法、国土空间用地用海分类指南、生成式AI暂行办法、无障碍环境建设法、个人信息保护法等（以本地快照为准）[standard:MOHURD-URBAN-DESIGN-MEASURES] [standard:MOHURD-CONTROL-DETAILED-PLANNING] [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]。
 7. 完整机器索引以 `sources.json`、`metrics.json`、`compliance_matrix.json`、`standard_matrix.json`、`design_depth_matrix.json` 为准。
 8. 背景对标与机制参考：2020 年京张铁路遗址公园国际方案征集公开报道（背景，不暗示背书）[source:JZ-PARK-2020-BENCHMARK]；《北京市城市更新条例》（政策机制引用）[source:BEIJING-URBAN-RENEWAL-REG]；王建国院士访谈（观点引用）[source:WANG-JIANGUO-VIEW]；High Line 分段建设（背景）[source:HIGH-LINE-PHASING]；PPS 场所营造指南（背景）[source:PPS-PLACEMAKING]；海淀责任规划师机制（背景案例）[source:HAIDIAN-PLANNER-MECHANISM]。

@@ -243,6 +243,17 @@
         "A-CONTROLS-001"
       ],
       "reason": "官方控规指标缺失，待正式数据补齐后复算"
+    },
+    "building_count": {
+      "status": "known",
+      "value": 17,
+      "unit": "count",
+      "source_files": [
+        "geometry/buildings.geojson"
+      ],
+      "formula": "count(building_footprint_features)",
+      "confidence": "high",
+      "assumptions": []
     }
   }
 }

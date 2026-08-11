@@ -122,7 +122,7 @@
       "confidence": "high",
       "assumptions": []
     },
-    "time_ribbon_length_m": {
+    "civic_baseline_spine_length_m": {
       "status": "known",
       "value": 9339.97,
       "unit": "m",
@@ -172,12 +172,12 @@
     },
     "persona_count": {
       "status": "known",
-      "value": 6,
+      "value": 8,
       "unit": "count",
       "source_files": [
         "visual/assets/spatial-components.json"
       ],
-      "formula": "count(visual/assets/spatial-components.json.personas registry)",
+      "formula": "count(personas PER-01..PER-08)",
       "confidence": "high",
       "assumptions": []
     },
@@ -192,43 +192,6 @@
       "confidence": "high",
       "assumptions": []
     },
-    "weekly_public_open_hours": {
-      "status": "unknown",
-      "value": null,
-      "unit": "hours_per_week",
-      "source_files": [
-        "proposal.md",
-        "assumptions.json"
-      ],
-      "formula": "not calculated for the provisional overall design range",
-      "confidence": "unknown",
-      "assumptions": [
-        "A-TIME-001",
-        "A-BOUNDARY-001"
-      ],
-      "metric_role": "future_field_measurement",
-      "reason": "The 168-hour official directory fact applies to the listed existing park only; effective opening hours for the provisional overall design range have not been observed or authorized.",
-      "note": "现状公园名录的168h事实不外推到整个临时设计范围。"
-    },
-    "public_space_weekly_sqm_hours": {
-      "status": "unknown",
-      "value": null,
-      "unit": "sqm_hours_per_week",
-      "source_files": [
-        "proposal.md",
-        "geometry/public_space.geojson"
-      ],
-      "formula": "public_space_area_sqm * verified effective public hours; verified hours unavailable",
-      "confidence": "unknown",
-      "assumptions": [
-        "A-TIME-001",
-        "A-BOUNDARY-001",
-        "A-BASELINE-001"
-      ],
-      "metric_role": "future_field_measurement",
-      "reason": "Segment-level effective public hours and an official spatial denominator are unavailable, so the area-time product cannot be calculated without false precision.",
-      "note": "删除v2的97M伪精确展示值；待现场分段验证。"
-    },
     "renewal_project_count": {
       "status": "known",
       "value": 9,
@@ -241,50 +204,65 @@
       "confidence": "high",
       "assumptions": []
     },
-    "temporal_zone_count": {
+    "regional_interface_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/regional-interfaces.json"
+      ],
+      "formula": "count(REG-01..REG-05 proposed interfaces)",
+      "confidence": "high",
+      "assumptions": [
+        "A-GOVERNANCE-001"
+      ],
+      "metric_role": "proposal_interface_registry",
+      "statutory_use": "forbidden"
+    },
+    "dividend_yard_count": {
       "status": "known",
       "value": 3,
       "unit": "count",
       "source_files": [
-        "geometry/constraints.geojson",
-        "visual/assets/spatial-components.json"
+        "visual/assets/dividend-yards.json",
+        "geometry/constraints.geojson"
       ],
-      "formula": "count(TZ-*)",
+      "formula": "count(DY-01..DY-03)",
       "confidence": "high",
       "assumptions": []
     },
-    "booking_segment_count": {
+    "unplugged_seam_count": {
       "status": "known",
       "value": 6,
       "unit": "count",
       "source_files": [
-        "geometry/constraints.geojson",
-        "visual/assets/jz168-week.schema.json"
+        "visual/assets/spatial-components.json",
+        "geometry/constraints.geojson"
       ],
-      "formula": "count(BK-*)",
+      "formula": "count(US-01..US-06)",
       "confidence": "high",
       "assumptions": []
     },
-    "time_component_count": {
+    "offline_ready_component_count": {
       "status": "known",
       "value": 7,
       "unit": "count",
       "source_files": [
-        "geometry/constraints.geojson",
-        "visual/assets/spatial-components.json"
+        "visual/assets/spatial-components.json",
+        "geometry/constraints.geojson"
       ],
-      "formula": "count(TC-*)",
+      "formula": "count(OC-01..OC-07)",
       "confidence": "high",
       "assumptions": []
     },
-    "schedule_state_count": {
+    "dividend_state_count": {
       "status": "known",
       "value": 8,
       "unit": "count",
       "source_files": [
         "visual/assets/state-machine.json"
       ],
-      "formula": "count(unique protocol states)",
+      "formula": "count(states)",
       "confidence": "high",
       "assumptions": []
     },
@@ -323,17 +301,17 @@
       "confidence": "high",
       "assumptions": []
     },
-    "first_168h_stage_count": {
+    "first_twelve_week_stage_count": {
       "status": "known",
       "value": 9,
       "unit": "count",
       "source_files": [
-        "visual/assets/first-168h.json"
+        "visual/assets/first-12-weeks.json"
       ],
-      "formula": "count(relative-time stages H000..H168)",
+      "formula": "count(stages W00..W12)",
       "confidence": "high",
       "assumptions": [
-        "A-FIRST-168H-001"
+        "A-FIRST-12W-001"
       ]
     },
     "non_ai_equivalent_coverage_ratio": {
@@ -356,37 +334,39 @@
       "unit": "ratio",
       "source_files": [
         "visual/assets/scenario-cards.json",
-        "visual/assets/first-168h.json"
+        "visual/assets/first-12-weeks.json"
       ],
       "formula": "successful human takeover drills / takeover drills attempted",
       "confidence": "unknown",
       "assumptions": [
         "A-BASELINE-001"
       ],
-      "reason": "Requires executed drills, timestamps and signed receipts from an authorised operator."
+      "reason": "Requires executed drills, operationstamps and signed receipts from an authorised operator."
     },
-    "on_time_space_return_ratio": {
+    "field_bequest_delivery_ratio": {
       "status": "unknown",
       "value": null,
       "unit": "ratio",
       "source_files": [
-        "visual/assets/example-week.json"
+        "visual/assets/civic-dividend-contracts.json",
+        "visual/assets/first-12-weeks.json"
       ],
-      "formula": "slots with accepted return receipt by planned end / completed slots",
+      "formula": "authorized field contracts with accepted bequest receipt / authorized field contracts completed",
       "confidence": "unknown",
       "assumptions": [
         "A-BASELINE-001"
       ],
-      "reason": "The example week is synthetic and cannot prove operational restoration performance."
+      "reason": "No field contract is authorised or complete; contract fields and a synthetic example cannot prove delivery."
     },
-    "restoration_time_minutes": {
+    "unplug_recovery_time_minutes": {
       "status": "unknown",
       "value": null,
       "unit": "count",
       "source_files": [
-        "visual/assets/example-week.json"
+        "visual/assets/example-unplugged-test.json",
+        "visual/assets/first-12-weeks.json"
       ],
-      "formula": "minutes from slot end to accepted restoration receipt",
+      "formula": "minutes from physical disconnect to accepted ordinary-service restoration receipt in an authorised field drill",
       "confidence": "unknown",
       "assumptions": [
         "A-BASELINE-001"
@@ -398,7 +378,7 @@
       "value": null,
       "unit": "count",
       "source_files": [
-        "visual/assets/first-168h.json"
+        "visual/assets/first-12-weeks.json"
       ],
       "formula": "count(verified events that obstruct an accessible route or equivalent service)",
       "confidence": "unknown",
@@ -486,64 +466,51 @@
       "assumptions": [],
       "reason": "No ownership, structure safety, heritage, lease or existing-building survey supports a demolition decision."
     },
-    "listed_existing_park_open_hours_per_week": {
-      "status": "known",
-      "value": 168,
-      "unit": "hours_per_week",
-      "source_files": [
-        "sources.json"
-      ],
-      "formula": "24 hours/day * 7 days for the officially listed existing park only",
-      "confidence": "high",
-      "assumptions": [
-        "A-TIME-001"
-      ]
-    },
-    "station_prototype_count": {
+    "dividend_yard_prototype_count": {
       "status": "known",
       "value": 3,
       "unit": "count",
       "source_files": [
-        "visual/assets/station-prototypes.json"
+        "visual/assets/dividend-yards.json"
       ],
-      "formula": "count(station prototypes)",
+      "formula": "count(yards)",
       "confidence": "high",
       "assumptions": [
         "A-LOCATOR-001"
       ]
     },
-    "scheduled_ai_service_contract_count": {
+    "scenario_dividend_contract_count": {
       "status": "known",
       "value": 12,
       "unit": "count",
       "source_files": [
-        "visual/assets/civic-timetable.json"
+        "visual/assets/civic-dividend-contracts.json"
       ],
-      "formula": "count(service contracts)",
+      "formula": "count(contracts)",
       "confidence": "high",
       "assumptions": []
     },
-    "tabletop_case_count": {
+    "unplugged_tabletop_case_count": {
       "status": "known",
-      "value": 72,
+      "value": 84,
       "unit": "count",
       "source_files": [
-        "visual/assets/timetable-tabletop-evidence.json"
+        "visual/assets/unplugged-tabletop-evidence.json"
       ],
-      "formula": "12 contracts * 6 synthetic branches",
+      "formula": "12 scenario contracts x 7 synthetic branches",
       "confidence": "high",
       "assumptions": [
         "A-TABLETOP-001"
       ]
     },
-    "contract_human_conductor_coverage_ratio": {
+    "contract_human_owner_coverage_ratio": {
       "status": "known",
       "value": 1.0,
       "unit": "ratio",
       "source_files": [
-        "visual/assets/civic-timetable.json"
+        "visual/assets/civic-dividend-contracts.json"
       ],
-      "formula": "contracts with registered human_conductor_role_ids / 12",
+      "formula": "contracts with named human role / 12",
       "confidence": "high",
       "assumptions": []
     },
@@ -552,20 +519,20 @@
       "value": 1.0,
       "unit": "ratio",
       "source_files": [
-        "visual/assets/civic-timetable.json"
+        "visual/assets/civic-dividend-contracts.json"
       ],
-      "formula": "contracts with non-AI equivalent / 12",
+      "formula": "contracts with baseline.non_ai_service / 12",
       "confidence": "high",
       "assumptions": []
     },
-    "contract_stop_reset_coverage_ratio": {
+    "contract_unplug_recovery_coverage_ratio": {
       "status": "known",
       "value": 1.0,
       "unit": "ratio",
       "source_files": [
-        "visual/assets/civic-timetable.json"
+        "visual/assets/civic-dividend-contracts.json"
       ],
-      "formula": "contracts with stop triggers, reset actions and receipts / 12",
+      "formula": "contracts with blackout unplug and recovery evidence / 12",
       "confidence": "high",
       "assumptions": []
     },
@@ -574,7 +541,7 @@
       "value": 0,
       "unit": "count",
       "source_files": [
-        "visual/assets/timetable-tabletop-evidence.json"
+        "visual/assets/unplugged-tabletop-evidence.json"
       ],
       "formula": "synthetic-only runner performs no external I/O",
       "confidence": "high",
@@ -587,7 +554,7 @@
       "value": null,
       "unit": "ratio",
       "source_files": [
-        "visual/assets/civic-timetable.json"
+        "visual/assets/civic-dividend-contracts.json"
       ],
       "formula": "successful authorized field runs / authorized field runs",
       "confidence": "unknown",
@@ -596,6 +563,37 @@
         "A-BASELINE-001"
       ],
       "reason": "No field service is authorized or has been run; the synthetic tabletop receipt cannot supply a field-success numerator or denominator."
+    },
+    "contract_bequest_coverage_ratio": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": [
+        "visual/assets/civic-dividend-contracts.json"
+      ],
+      "formula": "contracts with a residual asset required to work without AI / 12",
+      "confidence": "high",
+      "assumptions": [
+        "A-DIVIDEND-001",
+        "A-TABLETOP-001"
+      ],
+      "metric_role": "machine_readable_contract_coverage",
+      "statutory_use": "forbidden"
+    },
+    "blackout_bequest_branch_count": {
+      "status": "known",
+      "value": 12,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/unplugged-tabletop-evidence.json"
+      ],
+      "formula": "count(blackout_residual_service synthetic branches)",
+      "confidence": "high",
+      "assumptions": [
+        "A-TABLETOP-001"
+      ],
+      "metric_role": "synthetic_protocol_test",
+      "statutory_use": "forbidden"
     }
   }
 }

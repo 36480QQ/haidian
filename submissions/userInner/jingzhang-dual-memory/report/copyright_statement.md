@@ -12,21 +12,22 @@
 
 ## 概念效果图
 
-assets/renders/ 下五张图由 OpenAI 内置图像生成工具根据本方案文字生成：
+assets/renders/ 下六张图由 OpenAI 内置图像生成工具根据本方案文字生成：
 
 - 00-belt-aerial.jpg：总体设计概念鸟瞰；
 - 01-qinghuayuan-memory-platform.jpg：清华园共同记忆站台；
 - 02-zhongzhiyuan-red-light-court.jpg：众智园红灯试验庭；
 - 03-ai-origin-provenance-clinic.jpg：AI 原点来源诊所；
 - 04-dazhongsi-inclusive-plaza.jpg：大钟寺普惠服务广场。
+- 05-consent-section-perspective-v2.png：60 × 14 米同意剖面场景；同时呈现无 AI 林荫步道、匿名辅助带、围合低速机器人测试庭、物理急停、人工控制台和连续绕行。
 
-这些图均在正文与展板中标注为“概念效果图 / CONCEPT RENDER”，不得解释为现状照片、官方设计、已建项目或精确建筑方案。生成时未使用第三方照片作为输入，也未要求复现具体人物、商标或受保护设计。
+这些图均在正文与展板中标注为“概念效果图 / CONCEPT RENDER”，不得解释为现状照片、官方设计、已建项目或精确建筑方案。新图使用“竞赛级城市设计剖透视、保留铁路砖建筑与成熟树木、三条同意梯度、六类日常使用者、设施必须可逆可维护、禁止科幻化、图内无文字”的项目绑定提示词生成。生成时未使用第三方照片作为输入，也未要求复现具体人物、商标或受保护设计。
 
 ## 空间与数据资产
 
 - 九个 GeoJSON 图层由仓库脚手架及本方案概念设计派生。
 - 总体和三处重点区边界来自仓库 provisional_boundaries.geojson，属于临时生成约束，不得解释为官方红线。
-- 核心信息图从本包 GeoJSON、metrics.json、方案矩阵与原创文字生成，不使用商业地图瓦片或新闻截图。
+- 核心信息图从本包 GeoJSON、metrics.json、方案矩阵、记忆边界护照与原创文字生成，不使用商业地图瓦片或新闻截图。
 
 ## 字体与软件
 

@@ -3,7 +3,7 @@ title: "百年京张AI创新带城市设计方案:京张智脉·绿意无界(智
 proposal_slug: "jingzhang-ai-nexus"
 author_github: "YuanYii"
 language: "zh"
-version: "9.2"
+version: "9.3"
 date: "2026-08-11"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
@@ -24,7 +24,9 @@ keywords: ["百年京张", "AI创新带", "城市设计", "中关村", "智轨�
 
 本 formal 方案以北京市规划和自然资源委员会海淀分局发布的《百年京张AI创新带城市设计国际方案征集资格预审公告》为第一依据,并以 `brief/site-package/` 中经维护者登记的临时粗略边界、重点区域、枚举、指标和来源清单为机器可读依据。AI agent 在生成方案前完整读取了 `design_brief.json`、`allowed_design_space.json`、`sources.json`、`enums/`、`ranges/`、`schemas/`、`data/source_registry.json` 和 `data/processed/agent_fact_pack.md`,并建立了任务、范围、资料用途和缺口清单。公告要求方案达到控制性详细规划的城市设计深度和规划综合实施方案的城市设计深度,因此文本叙述紧密结合 GeoJSON 图层、指标表、A3 文册、A0 展板和 HTML 电子展示成果。
 
-本方案证据链以结构化索引为主:sources.json 收录全部公开资料来源,standard_matrix.json 覆盖全部强制专业标准,design_depth_matrix.json 登记设计深度证据,metrics.json 提供全部指标复算。正文关键论断按需引用最核心条目,例如 [source:PUBLIC-BRIEF] 为第一权威入口、[standard:PROJECT-OFFICIAL-ANNOUNCEMENT] 约束任务覆盖、[depth:existing_conditions_diagnosis] 支撑现状研判,说明方案是从公告、面向智能体任务书、标准、边界、处理资料包和资料清单出发组织的严格设计成果。
+本方案证据链以结构化索引为主:sources.json 收录全部公开资料来源,standard_matrix.json 覆盖全部强制专业标准,design_depth_matrix.json 登记设计深度证据,metrics.json 提供全部指标复算。资料分级覆盖 [source:SITE-PACKAGE](设计概要/枚举/许可空间/指标) 与 [source:SOURCE-REGISTRY](公开资料登记);导航层见 [source:PROCESSED-FACT-PACK]。
+
+provisional 边界与重点区分别登记于 [source:BOUNDARY-SOURCE] 与 [source:KEY-AREA-SOURCE],公开智库资料见 [source:PUBLIC-THINKTANK-REGISTRY]。正文关键论断按需引用最核心条目,例如 [source:PUBLIC-BRIEF] 为第一权威入口、[standard:PROJECT-OFFICIAL-ANNOUNCEMENT] 约束任务覆盖、[depth:existing_conditions_diagnosis] 支撑现状研判,说明方案是从公告、面向智能体任务书、标准、边界、处理资料包和资料清单出发组织的严格设计成果。
 
 ![总体设计范围与三处重点区域图](assets/figures/site-overview.png)
 
@@ -241,6 +243,16 @@ Logo 概念方案由"双轨 + 节点网络"构成:两条钢轨象征百年京张
 - **AI场景与设施**:概念规划"02 安全治理沙盒"与"06 清河低碳创新水岸",提供低碳算力中心与标准制定工作坊。
 - **引用**:[data:geometry/key_areas.geojson#PROV-KEY-001]、[depth:three_key_area_detailed_design]。
 
+#### 节点级设计（概念，confidence=low）
+
+以下节点级设计概念用于展示方案在各片区内部的空间深化能力，所有规模、布局与参数均为概念级（confidence=low），官方数据到位后重新细化：
+
+| 节点 | 概念规模 | 设计要点 |
+| --- | --- | --- |
+| 国家级 AI 模型测试场 | 约 15 ha（概念） | 独立安全围网 + 红队/蓝队双区 + 开放参观环廊；退台建筑低向清河逐级跌落，最大化水岸曝光面 |
+| 清河低碳界面 | 沿清河约 1.5 km（概念） | 湿地净化梯级串 + 生态栈道 + AI 环境感知节点；滨河建筑退让 30-50 m 形成公共水岸带 |
+| 安全治理沙盒集群 | 约 8 ha（概念） | 标准制定工作坊 + 模型评测透明实验室 + 行业论坛空间；与测试场隔绿带布置，减少声光干扰 |
+
 ### 2. 北京 AI 原点社区 (104.3 ha)
 
 > **路签制角色:"零公里站(Zero-Kilometer Station)"** - 开源转化与成果孵化的原点,持有路签的场景在此完成最后一次沙盒测试后进入公开运营状态。
@@ -249,6 +261,14 @@ Logo 概念方案由"双轨 + 节点网络"构成:两条钢轨象征百年京张
 - **AI场景与设施**:概念规划"01 开源发布厅"与"07 近校成果转化街",打造 24 小时高密度的开发者交流节点。
 - **引用**:[data:geometry/key_areas.geojson#PROV-KEY-002]、[source:AGENT-TASKBOOK]。
 
+#### 节点级设计（概念，confidence=low）
+
+| 节点 | 概念规模 | 设计要点 |
+| --- | --- | --- |
+| 开源发布厅 | 约 5 ha（概念） | 360° 环形数字幕墙 + 24h 运营模式 + 代码贡献实时可视化屏；利用存量厂房改造，保留工业结构肌理 |
+| 近校转化街 | 约 800 m 线性（概念） | 缝合清华东路西口校区-园区断点；两侧布置概念验证实验室、IP 服务窗口与早期 VC 孵化空间；步行优先街道 |
+| 清华园 AI 原点印记公园 | 约 6 ha（概念） | 围绕清华园车站旧址低扰动设计；AI 智能雕塑 + AR 历史长廊 + 铁轨原址保留步道 |
+
 ### 3. 大钟寺 AI 产业集聚区 (72.0 ha)
 
 > **路签制角色:"编组场(Marshalling Yard)"** - 产业要素在此重新编组与对外输出;路签归还后区间自动释放,供下一轮产业对接使用。
@@ -256,6 +276,14 @@ Logo 概念方案由"双轨 + 节点网络"构成:两条钢轨象征百年京张
 - **空间动作**:依托大钟寺轨道站点开展 TOD 一体化开发,构建四象限空中步行连廊,连接商业与产业总部。
 - **AI场景与设施**:概念规划"05 大钟寺国际路演客厅"与"08 数据要素与数字资产会客厅",承接国际 AI 峰会与产品首发。
 - **引用**:[data:geometry/key_areas.geojson#PROV-KEY-003]、[metric:key_area_count]。
+
+#### 节点级设计（概念，confidence=low）
+
+| 节点 | 概念规模 | 设计要点 |
+| --- | --- | --- |
+| TOD 一体化核心 | 约 10 ha（概念） | 依托大钟寺轨道站点 200 m 核心圈高密度开发；概念容积率 3.5-4.5（待官方控规核实）；地下-地面-空中三层接驳 |
+| 四象限空中连廊 | 约 600 m 总长（概念） | 十字交叉穿越四象限连接商业与产业总部；底层架空预留公交与社会车辆通行 |
+| 国际路演客厅 | 约 4 ha（概念） | 同声传译 + 媒体中心 + 产品首发空间；与数据要素会客厅通过二层连廊直连；外立面预留大型数字屏幕位 |
 
 | 重点片区 | 面积 (ha) | 设计定位 | 核心空间动作 | 典型 AI 场景 | 证据落点 |
 | --- | --- | --- | --- | --- | --- |
@@ -274,6 +302,8 @@ Logo 概念方案由"双轨 + 节点网络"构成:两条钢轨象征百年京张
 4. **周边居民**:关切公园休闲、社区服务与低扰动更新;方案沿京张公园提供慢行绿环与嵌入式智能社区服务点。
 5. **高校师生**:关注近校成果转化与跨校学术交流;方案在清华东路部署校区-园区缝合步道与成果转化驿站。
 6. **国际访客与学术嘉宾**:注重高规格会议、路演体验与国际传播;方案在大钟寺与原点社区设置国际同声传译客厅与学术发布中心。
+
+![13 大 AI 场景卡总览（L1/L2/L3 准入等级色标）](assets/figures/scenario-cards-overview.png)
 
 ### 13 张 AI 场景卡表
 | 编号 | 场景卡名称 | 空间载体位置 | 详细设计说明 | AI产业测试验证场景 |
@@ -359,7 +389,7 @@ Logo 概念方案由"双轨 + 节点网络"构成:两条钢轨象征百年京张
 
 ### 2. 慢行与绿色交通
 - **连续慢行绿道**:构想沿京张遗址公园打造连续自行车与步行主干道,跨越主要主干路节点(具体线型与长度待专业部门核验)。
-- **量化情景(synthetic)**:基于 provisional 路网与绿地数据的情景测算——绿地 300m 服务覆盖率达 85.6%([metric:green_300m_coverage]),三处轨道站点 500m 服务圈并集覆盖总体设计范围 20.6%([metric:tod_station_500m_cover]),绿道主轴被概念路网打断的断点约 15 处([metric:greenway_gap_count]),作为后续实地核验的基线。
+- **量化情景(synthetic)**:基于 provisional 路网与绿地数据的情景测算——绿地 300m 服务覆盖率达 85.6%([metric:green_300m_coverage]),绿道骨架长度约 22.71 km（top-3 绿地斑块并集周长骨架([metric:greenway_length_km])）,绿道主轴被概念路网打断的断点约 15 处([metric:greenway_gap_count]),三处轨道站点 500m 服务圈并集覆盖总体设计范围 20.6%([metric:tod_station_500m_cover]),作为后续实地核验的基线。站点覆盖明细：[metric:tod_station_500m_cover.station_breakdown_500m_buffer]。
 - **无人微循环系统**:概念规划自动驾驶 Shuttle 循环线路,尝试串联轨道站点、各大园区与生活社区。
 
 ### 3. 三类测试场景与准入矩阵
@@ -421,6 +451,18 @@ Logo 概念方案由"双轨 + 节点网络"构成:两条钢轨象征百年京张
 | JZ-06 智慧组件 | 弱电维护 + 内容更新 + 客服人工 | 公共财政 + 广告/信息屏收入(概念) | 设备在线率 = 在线时长/总时长 | 月在线率 < 90% | 切换为静态标识,撤除故障组件 |
 
 > 以上所有资金来源、KPI 基准值和退出阈值均为概念情景假设。实际数值待主管部门确认后,由专业运营团队在获得现场基线数据和审批授权后制定正式方案。
+
+### 运营实施路线图（概念，供主管部门与运营团队深化）
+
+以下将 JZ-01~06 与概念责任主体、资金来源假设和三年里程碑串接为实施路线图。所有主体、金额与节点均为概念建议（confidence=low），实际安排以主管部门授权与正式方案为准：
+
+| 阶段 | 时间窗（概念） | 牵头动作（JZ 项目） | 概念责任主体 | 资金来源假设 | 关键交付物 |
+| --- | --- | --- | --- | --- | --- |
+| 第 1 年·试点 | 2026-2027 | JZ-01 慢行断点缝合（示范段）+ JZ-06 智慧导视试点 | 规自委/交通委（JZ-01）、城管委/文化局（JZ-06） | 公共财政为主 + 慢行商业节点租金分成 | 断点清册 + 连通率基线 + 首期试点评估报告 |
+| 第 2-3 年·成型 | 2027-2029 | JZ-02 清河生态体验 + JZ-04 连廊系统可行性研究 | 水务局/园林局（JZ-02）、轨交公司/发改委（JZ-04） | 生态补偿资金 + Civic Value Protocol 反哺 + TOD 商业租金 | 生态监测基线 + 连廊客流仿真报告 + 立项建议书 |
+| 第 4-5 年·示范 | 2029-2031 | JZ-03 厂房改造转化 + JZ-05 算力中心情景研究 | 发改委/高校办（JZ-03）、工信局/环保局（JZ-05） | 租金收入 + 产业基金 + 绿色债券（概念） | 入驻率基线 + PUE 实测报告 + 示范片区验收 |
+
+> 里程碑验收均走 Proof-Mile 闭环：桌面推演（synthetic-tested）→ 主管部门授权（field-pending）→ 试点运营（field-passed）→ 年度路签审计（白皮书）。任一硬停止条件触发即按退出表回滚。
 
 ### 长期运营与治理路线图
 
@@ -605,6 +647,11 @@ Logo 概念方案由"双轨 + 节点网络"构成:两条钢轨象征百年京张
 - **合规矩阵响应度**:全面响应(Fully Responds)公告任务 1.3、1.4、1.5 及面向智能体任务 agent.1 - agent.6。
 - **完整指标索引**:全部指标与复算公式见 metrics.json,此处仅列核心摘要。
 
+
+本方案城市设计方法与管理要求遵循 [standard:MOHURD-URBAN-DESIGN-MEASURES],建筑设计深度框架遵循 [standard:MOHURD-ARCH-DESIGN-DEPTH-2016],生成式 AI 服务边界遵循 [standard:GENERATIVE-AI-INTERIM-MEASURES]。
+
+无障碍与适老政策参照 [standard:BARRIER-FREE-ENVIRONMENT-LAW](第 39 条边界) 与 [standard:ELDERLY-SMART-TECH-PLAN-2020-45];指标复算口径见 [depth:metrics_recalculation],建筑密度复算见 [metric:building_density]。
+
 ## 风险、版权与合规说明
 
 根据 [depth:risk_missing_data] 的管理要求,本方案做出了清晰的合规说明:
@@ -620,22 +667,24 @@ Logo 概念方案由"双轨 + 节点网络"构成:两条钢轨象征百年京张
 
 | 图件 | 路径 | 内容说明 | 已知限制 |
 | --- | --- | --- | --- |
-| 总体设计范围与重点区域总览图 | assets/figures/site-overview.png | 总体设计范围、三处重点区域与三层空间控制体系 | 缺道路/站点/地名标注;provisional geometry |
-| 三层范围与空间结构图 | assets/figures/land-use-structure.png | 三层范围工作框架与总体空间结构(v9.2 重绘) | 概念结构图,无城市底图参照;四类用地与图例已对齐 |
-| 三处重点区域图 | assets/figures/key-areas.png | 重点区域索引与设计任务(v9.2 重绘,含三区名称标注) | provisional-only |
-| 交通慢行与蓝绿系统图 | assets/figures/mobility-bluegreen.png | 交通慢行与蓝绿公共空间复合系统 | 概念骨架图;真实路网/轨道/站点数据待官方提供后更新 |
+| 总体设计范围与重点区域总览图 | assets/figures/site-overview.png | 总体设计范围、三处重点区域与三层空间控制体系（含五道口/清华东路西口/大钟寺/清河/小月河地名标注、2km 比例尺与指北针） | provisional geometry |
+| 三层范围与空间结构图 | assets/figures/land-use-structure.png | 三层范围工作框架与总体空间结构(v9.2 重绘，含比例尺与指北针) | 概念结构图,无城市底图参照;四类用地与图例已对齐 |
+| 三处重点区域图 | assets/figures/key-areas.png | 重点区域索引与设计任务(v9.2 重绘,含三区名称、1km 比例尺与指北针) | provisional-only |
+| 交通慢行与蓝绿系统图 | assets/figures/mobility-bluegreen.png | 交通慢行与蓝绿公共空间复合系统（含比例尺与指北针） | 概念骨架图;真实路网/轨道/站点数据待官方提供后更新 |
 | 核心指标复算图 | assets/figures/metrics-evidence.png | 指标来源与复算关系、待确认控规指标 | 图例可能存在重复/越界问题 |
+| 场景卡总览图 | assets/figures/scenario-cards-overview.png | 13 张 AI 场景卡总览（L1/L2/L3 准入色标 + TRL 标识，v9.3 重绘对齐主稿） | 概念示意 |
 | Logo 概念 | assets/figures/logo.png | 钢轨双线 × 神经网络拓扑 | 概念方向;供专业品牌团队深化 |
+| Logo VI 基础包 | visual/assets/logo-vi/ | 主版/反白/单色 SVG+PNG + 规范页（最小尺寸/安全空间/禁用规则/色彩字体） | 概念版,供品牌团队深化 |
 | 全球 AI 创新生态案例图谱 | assets/figures/ecosystem-map.png | 6 大全球案例可迁移性气泡图 | 概念示意图,数据详见正文表格 |
 | 三区两翼协同空间关系图 | assets/figures/three-areas-two-wings.png | 三大定位/五大功能/三区两翼空间闭环 | 概念示意图 |
 | 主稿渲染阅读版 | report/proposal.html | proposal.md 离线渲染版 | - |
 | 交互展示页 | visual/index.html | 总览/三层范围/用地/交通/AI 场景等 14 项内容(含 13 张场景卡) | 场景卡为文字卡片,暂缺独立视觉呈现 |
-| A3 文册 | drawings/a3-booklet.pdf | 设计全过程说明 | v8.0 为文字简化版,嵌入 Noto Sans SC (OFL);整版排版待优化 |
-| A0 展板 | drawings/a0-boards.pdf | 关键成果展板 | v8.0 为文字简化版,嵌入 Noto Sans SC (OFL);整版排版待优化 |
-| A3 文册(英) | drawings/a3-booklet.en.pdf | A3 booklet - English mirror | 同上 |
-| A0 展板(英) | drawings/a0-boards.en.pdf | A0 boards - English mirror | 同上 |
+| A3 文册 | drawings/a3-booklet.pdf | 16 页图文册:封面/目录/依据/现状/三层范围/案例协同/用地/交通/蓝绿/重点区/场景卡/治理协议/更新清单/指标合规/风险/图件索引(v9.3) | 概念图件基于 provisional 几何 |
+| A0 展板 | drawings/a0-boards.pdf | 7 板主题展板:总览/用地/重点区/交通/指标/场景卡/治理合规(v9.3) | 概念图件基于 provisional 几何 |
+| A3 文册(英) | drawings/a3-booklet.en.pdf | A3 booklet (EN, v9.3) | 概念图件基于 provisional 几何 |
+| A0 展板(英) | drawings/a0-boards.en.pdf | A0 boards (EN, v9.3) | 概念图件基于 provisional 几何 |
 
-> **图件透明声明**:以上图件均为概念阶段可视化成果,部分缺地名、道路、比例尺、北箭头和来源标注。空间精确度为概念片区级,不替代专业测绘或工程图纸。所有边界与指标均为 provisional,官方几何数据发布后统一重出。
+> **图件透明声明**:以上图件均为概念阶段可视化成果。空间精确度为概念片区级,不替代专业测绘或工程图纸。所有边界与指标均为 provisional,官方几何数据发布后统一重出（见 scripts/recalc_on_official_data.py 一键重算入口）。
 
 ## 参考资料
 

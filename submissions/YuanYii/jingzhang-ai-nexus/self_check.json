@@ -32,6 +32,8 @@
         "submissions/YuanYii/jingzhang-ai-nexus/assets/figures/metrics-evidence.png",
         "submissions/YuanYii/jingzhang-ai-nexus/assets/figures/mobility-bluegreen.en.png",
         "submissions/YuanYii/jingzhang-ai-nexus/assets/figures/mobility-bluegreen.png",
+        "submissions/YuanYii/jingzhang-ai-nexus/assets/figures/scenario-cards-overview.en.png",
+        "submissions/YuanYii/jingzhang-ai-nexus/assets/figures/scenario-cards-overview.png",
         "submissions/YuanYii/jingzhang-ai-nexus/assets/figures/site-overview.en.png",
         "submissions/YuanYii/jingzhang-ai-nexus/assets/figures/site-overview.png",
         "submissions/YuanYii/jingzhang-ai-nexus/assets/figures/three-areas-two-wings.en.png",
@@ -68,6 +70,13 @@
         "submissions/YuanYii/jingzhang-ai-nexus/spatial.json",
         "submissions/YuanYii/jingzhang-ai-nexus/standard_matrix.json",
         "submissions/YuanYii/jingzhang-ai-nexus/visual/assets/execution-brief.json",
+        "submissions/YuanYii/jingzhang-ai-nexus/visual/assets/logo-vi/logo-mono.png",
+        "submissions/YuanYii/jingzhang-ai-nexus/visual/assets/logo-vi/logo-mono.svg",
+        "submissions/YuanYii/jingzhang-ai-nexus/visual/assets/logo-vi/logo-primary.png",
+        "submissions/YuanYii/jingzhang-ai-nexus/visual/assets/logo-vi/logo-primary.svg",
+        "submissions/YuanYii/jingzhang-ai-nexus/visual/assets/logo-vi/logo-reversed.png",
+        "submissions/YuanYii/jingzhang-ai-nexus/visual/assets/logo-vi/logo-reversed.svg",
+        "submissions/YuanYii/jingzhang-ai-nexus/visual/assets/logo-vi/logo-vi-spec.png",
         "submissions/YuanYii/jingzhang-ai-nexus/visual/assets/participation-cycle.json",
         "submissions/YuanYii/jingzhang-ai-nexus/visual/assets/pdf-regeneration-checklist.json",
         "submissions/YuanYii/jingzhang-ai-nexus/visual/assets/proof-mile-delivery.json",
@@ -80,7 +89,7 @@
       "ai_package_stages": {
         "submissions/YuanYii/jingzhang-ai-nexus": "formal"
       },
-      "total_bytes": 27856199,
+      "total_bytes": 6107459,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -156,15 +165,15 @@
       "summary": {
         "standard_matrix_items": 9,
         "design_depth_items": 15,
-        "known_metric_refs_required": 8,
+        "known_metric_refs_required": 10,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 3,
-          "standard": 4,
-          "depth": 14,
+          "source": 9,
+          "standard": 9,
+          "depth": 15,
           "data": 11,
-          "metric": 9
+          "metric": 12
         }
       }
     },

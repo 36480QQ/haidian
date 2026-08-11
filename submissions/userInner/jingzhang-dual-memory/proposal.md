@@ -4,6 +4,7 @@ author_github: "userInner"
 language: "zh"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
+iteration: "v2.0"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以百年京张、中关村创新史和面向2030的人机自主权为主线，建设一条公共记忆可积累、个人数据可退出、创新收益可共享的AI城市廊道。"
@@ -12,6 +13,16 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 ---
 
 # 京张双记 / DOUBLE MEMORY JINGZHANG
+
+> **v2.0 核心判断：** 城市设计不应只交付空间效果图，还应给每一个公共 AI 构件签发一张“记忆边界护照”：明确空间尺寸、责任主体、允许数据、遗忘期限、人工接管、普通等价服务、放行证据和退出决定。三处重点区因此从概念场景升级为可复核的 180 天试点合同；所有结果仍为 `design_target / not_run`，不冒充现场绩效或政府承诺。
+
+| 评审维度 | v2.0 的实质深化 | 核验入口 |
+| --- | --- | --- |
+| 任务契合与原创性 | “公共记忆脊 + 记忆边界护照 + 遗忘预算”把百年京张、人机自主与城市空间合成一套独有方法 | 本页、`memory-boundary-passports.json` |
+| AI 与规划创新 | AI 不再是设备清单，而是受 D0—D4 数据等级、删除回执、物理停止和独立复核约束的城市服务 | `forgetfulness-budget.json`、离线审计脚本 |
+| 实施可行性 | 三个可逆原型具备尺寸、成本区间、RACI、许可依赖、0—180 天闸门和退场资金规则 | `implementation-contract.json` |
+| 公共利益 | 六类人物逐路线测试；任何弱势组失败都不能被平均值掩盖 | `public-interest-route-tests.json` |
+| 风险与表达 | 明确 provisional、unknown、not_run；新剖透视和护照把空间、运营、数据与权利放在同一证据链 | 新增剖透视、manifest、自检 |
 
 ## 设计依据与资料清单
 
@@ -86,6 +97,18 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 三种梯度通过同一套现场语言表达：白色圆点表示自由通行，蓝色脉冲表示匿名辅助，琥珀色边框表示正在试验；绿/黄/红灯态分别表示正常、受限和停止。
 
+![三带同意剖透视：无AI通行、匿名辅助与受控试验并置，保留人工值守和连续绕行](assets/renders/05-consent-section-perspective-v2.png)
+
+v2.0 将抽象梯度压成一个可异地复用、现场再校准的 60 米 × 14 米原型包络：4.0 米连续无 AI 步行带、2.5 米匿名辅助带、5.0 米受控试验庭与 2.5 米种植安全缓冲。尺寸不是地块控制，而是进入专业测量前的最低功能检验；无障碍净宽任何时点不得低于 1.8 米。传感器必须外露，端侧柜可断电，试验庭有物理急停和有人值守控制台，公众绕行不经过试验区。完整构造、责任、数据和停止条件见 `visual/assets/memory-boundary-passports.json`。[depth:traffic_rail_slow_parking]
+
+### 记忆边界护照与遗忘预算
+
+每张护照同时回答八个问题：落在哪里、占多大、谁负责、记录什么、保留多久、普通服务如何继续、什么情况停机、用什么证据决定保留/返修/退役。三张护照当前统一为 `hold`，只有责任主体、普通等价路径、数据告知、急停接管、投诉删除渠道和独立无障碍走查全部有证据时，才可进入 `limited_release`。
+
+“遗忘预算”把数据分为 D0—D4：普通匿名使用零采集；聚合环境数据最长 90 天；自愿服务会话 0—7 天；受控试验事件 30 天；已清权的公共贡献按明示档期保存并可撤回。公共记忆可以在权利清楚时累积，但个人轨迹默认到期。任何字段超出护照、删除任务失败或删除回执不可验证，都冻结采集并恢复普通服务。规则见 `visual/assets/forgetfulness-budget.json`。[source:PIPL]
+
+![记忆边界护照系统：公共记忆可纠错地保存，个人数据按遗忘预算到期](assets/figures/memory-passport-system.png)
+
 ## 重点区域详细设计
 
 ![三个“人掌舵”的城市实验站](assets/figures/key-areas.png)
@@ -135,6 +158,8 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 每个场景必须登记运营者、使用者、数据、留存期、人工兜底、停止条件和试验后证据。至少 03、04、05、10、11 属于可审计的产业测试验证场景。[source:PIPL] [source:CAC-AGENT-GOVERNANCE]
 
+v2.0 增加六类人物路线测试，而不是只做需求画像：无智能手机长者、轮椅使用者、盲杖/导盲犬使用者、带儿童家长、夜班服务劳动者和中文有限的国际访客，必须分别完成通行、理解、人工接管和申诉。普通路线完成率、人工接管成功率均须为 100%，关键信息理解率至少 80%，且任何组不得有未解决关键问题；未达标即 `HOLD`。这些数值是试点放行阈值，不是现状成绩，当前状态为 `not_run`。详见 `visual/assets/public-interest-route-tests.json`。
+
 三处公共地标不是纪念性大物体，而是可使用的治理界面：清华园“共同记忆站台”、原点社区“公共 AI 登记塔”、众智园“红灯试验庭”。它们共同形成全球 AI 参访路线，但其价值来自公开规则而非造型奇观。[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]
 
 ## 用地、建筑规模与拆改留方案
@@ -160,6 +185,12 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 风貌语言来自铁路工程的清晰构造、中关村开放协作和 AI 治理的可见状态：深轨红代表公共记忆，冷蓝代表匿名辅助，琥珀代表受控试验，纸白代表无 AI 公共地带。历史材料不被仿古复制，新设施保持轻量、可逆和可维护。
 
 ## 更新项目清单、实施政策与分期计划
+
+### 0—180 天最小实施合同
+
+实施不从采购 AI 设备开始，而从锁定事实和普通服务开始：0—30 天核对边界、权属、责任和现场基线；31—60 天先完成无障碍绕行、纸面导视、人工服务、座椅遮阴与饮水；61—90 天才安装可逆分区、端侧柜、物理急停与审计记录；91—120 天最多运行 20 个有人值守窗口，同时记录成功、失败、近失、投诉和删除回执；121—180 天由独立小组作保留、返修或退役决定。
+
+三个原型与基线、运营和预备金的概念总成本区间为 750—1350 万元，其中首阶段至少 30%投向普通公共服务和无障碍，G3 前 AI 硬件不超过 25%，10%预备金留到独立复核后释放。该区间只用于比较实施量级，不是审定投资；官方边界、权属、文保、消防、交通、市政、树木土壤、数据影响评估、保险和维护责任缺一项，项目即停在相应闸门。完整 RACI 与退场规则见 `visual/assets/implementation-contract.json`。[depth:phasing_implementation]
 
 | 编号 | 项目 | 首期动作 | 扩展前置条件 |
 | --- | --- | --- | --- |
@@ -190,6 +221,8 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 - 公共收益权：每项试验公开成本、受益人群、节省资源与再投入方向。
 
 没有现场基线时，这些只能写成目标与测量协议，不能写成已实现绩效。
+
+包内提供无外部依赖的结构审计：`node visual/assets/run-memory-passport-audit.js`。当前回放结果为 `PASS`，仅证明三张护照均包含责任、数据、普通等价、停止、证据和 `hold` 决定，六类人物与五级遗忘预算结构完整；它不证明空间已建成、系统安全、公众接受或取得许可。
 
 ## 风险、版权与合规说明
 

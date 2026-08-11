@@ -10,7 +10,14 @@
       "ok": true,
       "errors": [],
       "warnings": [
-        "submissions/147228/jingzhang-open-pulse/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Provisional geometry supports only structural/intake review and human reading; it does not establish professional scoring, formal acceptance, publication or merge eligibility. Recalculate when official geometry is supplied."
+        "submissions/147228/jingzhang-open-pulse/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied",
+        "submissions/147228/jingzhang-open-pulse/proposal.md: a paragraph/block contains 14 evidence markers; keep the full index in structured files; legacy proposal remains compatible and the viewer will condense it",
+        "submissions/147228/jingzhang-open-pulse/proposal.md: a paragraph/block contains 5 consecutive evidence markers; attach no more than 3 to one claim; legacy proposal remains compatible and the viewer will condense it",
+        "submissions/147228/jingzhang-open-pulse/proposal.md: a paragraph/block contains 4 consecutive evidence markers; attach no more than 3 to one claim; legacy proposal remains compatible and the viewer will condense it",
+        "submissions/147228/jingzhang-open-pulse/proposal.md: a paragraph/block contains 9 evidence markers; keep the full index in structured files; legacy proposal remains compatible and the viewer will condense it",
+        "submissions/147228/jingzhang-open-pulse/proposal.md: a paragraph/block contains 6 consecutive evidence markers; attach no more than 3 to one claim; legacy proposal remains compatible and the viewer will condense it",
+        "submissions/147228/jingzhang-open-pulse/proposal.md: a paragraph/block contains 8 consecutive evidence markers; attach no more than 3 to one claim; legacy proposal remains compatible and the viewer will condense it",
+        "submissions/147228/jingzhang-open-pulse/proposal.md: a paragraph/block contains 12 evidence markers; keep the full index in structured files; legacy proposal remains compatible and the viewer will condense it"
       ],
       "proposal_files": [
         "submissions/147228/jingzhang-open-pulse/proposal.md"
@@ -31,13 +38,17 @@
         "submissions/147228/jingzhang-open-pulse/assets/figures/identity-system.en.png",
         "submissions/147228/jingzhang-open-pulse/assets/figures/identity-system.png",
         "submissions/147228/jingzhang-open-pulse/assets/figures/key-areas.en.png",
+        "submissions/147228/jingzhang-open-pulse/assets/figures/key-areas.en.svg",
         "submissions/147228/jingzhang-open-pulse/assets/figures/key-areas.png",
+        "submissions/147228/jingzhang-open-pulse/assets/figures/key-areas.svg",
         "submissions/147228/jingzhang-open-pulse/assets/figures/land-use-structure.en.png",
         "submissions/147228/jingzhang-open-pulse/assets/figures/land-use-structure.png",
         "submissions/147228/jingzhang-open-pulse/assets/figures/metrics-evidence.en.png",
         "submissions/147228/jingzhang-open-pulse/assets/figures/metrics-evidence.png",
         "submissions/147228/jingzhang-open-pulse/assets/figures/mobility-bluegreen.en.png",
+        "submissions/147228/jingzhang-open-pulse/assets/figures/mobility-bluegreen.en.svg",
         "submissions/147228/jingzhang-open-pulse/assets/figures/mobility-bluegreen.png",
+        "submissions/147228/jingzhang-open-pulse/assets/figures/mobility-bluegreen.svg",
         "submissions/147228/jingzhang-open-pulse/assets/figures/public-interest-positions.en.png",
         "submissions/147228/jingzhang-open-pulse/assets/figures/public-interest-positions.en.svg",
         "submissions/147228/jingzhang-open-pulse/assets/figures/public-interest-positions.png",
@@ -45,7 +56,9 @@
         "submissions/147228/jingzhang-open-pulse/assets/figures/regional-ecosystem.en.png",
         "submissions/147228/jingzhang-open-pulse/assets/figures/regional-ecosystem.png",
         "submissions/147228/jingzhang-open-pulse/assets/figures/site-overview.en.png",
+        "submissions/147228/jingzhang-open-pulse/assets/figures/site-overview.en.svg",
         "submissions/147228/jingzhang-open-pulse/assets/figures/site-overview.png",
+        "submissions/147228/jingzhang-open-pulse/assets/figures/site-overview.svg",
         "submissions/147228/jingzhang-open-pulse/assets/figures/sustainability-timeseries.en.png",
         "submissions/147228/jingzhang-open-pulse/assets/figures/sustainability-timeseries.png",
         "submissions/147228/jingzhang-open-pulse/assets/identity/open-pulse-mark.svg",
@@ -79,6 +92,7 @@
         "submissions/147228/jingzhang-open-pulse/sources.json",
         "submissions/147228/jingzhang-open-pulse/standard_matrix.json",
         "submissions/147228/jingzhang-open-pulse/visual/assets/annual-event-system.json",
+        "submissions/147228/jingzhang-open-pulse/visual/assets/build-open-pulse-review-boards.js",
         "submissions/147228/jingzhang-open-pulse/visual/assets/case-mechanism-matrix.json",
         "submissions/147228/jingzhang-open-pulse/visual/assets/case-policy-enterprise-crosswalk.json",
         "submissions/147228/jingzhang-open-pulse/visual/assets/city-api-energy-contract.json",
@@ -88,6 +102,7 @@
         "submissions/147228/jingzhang-open-pulse/visual/assets/construction-readiness.json",
         "submissions/147228/jingzhang-open-pulse/visual/assets/copyright-ledger.json",
         "submissions/147228/jingzhang-open-pulse/visual/assets/evidence-ledger.json",
+        "submissions/147228/jingzhang-open-pulse/visual/assets/example-s02-embodied-receipt.json",
         "submissions/147228/jingzhang-open-pulse/visual/assets/example-s02-embodied-test-window.json",
         "submissions/147228/jingzhang-open-pulse/visual/assets/gates/01-boundary-handoff.json",
         "submissions/147228/jingzhang-open-pulse/visual/assets/gates/02-key-area-refresh.json",
@@ -139,6 +154,7 @@
         "submissions/147228/jingzhang-open-pulse/visual/assets/key-area-node-plans.json",
         "submissions/147228/jingzhang-open-pulse/visual/assets/landmark-honor-crosswalk.json",
         "submissions/147228/jingzhang-open-pulse/visual/assets/model-backtest.json",
+        "submissions/147228/jingzhang-open-pulse/visual/assets/open-pulse-relay-receipt.schema.json",
         "submissions/147228/jingzhang-open-pulse/visual/assets/open-pulse-scenario-audit.json",
         "submissions/147228/jingzhang-open-pulse/visual/assets/open-pulse-tabletop-contract.json",
         "submissions/147228/jingzhang-open-pulse/visual/assets/open-pulse-tabletop-evidence.json",
@@ -176,7 +192,7 @@
       "ai_package_stages": {
         "submissions/147228/jingzhang-open-pulse": "formal"
       },
-      "total_bytes": 14419551,
+      "total_bytes": 13689021,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -237,12 +253,6 @@
         "site_area_sqm": 11412825.386,
         "green_ratio": 0.123423,
         "public_space_ratio": 0.073281,
-        "building_unit_count": 9.0,
-        "green_segment_count": 5.0,
-        "public_space_polygon_count": 3.0,
-        "public_scenario_node_count": 14.0,
-        "phase_count": 3.0,
-        "constraint_gate_count": 6.0,
         "design_slow_mobility_network_length_m": 13013.9,
         "osm_mapped_station_names_within_800m_count": 16.0,
         "osm_mapped_crossing_count": 189.0,
@@ -263,15 +273,15 @@
       "summary": {
         "standard_matrix_items": 6,
         "design_depth_items": 15,
-        "known_metric_refs_required": 48,
-        "proposal_format_version": "2",
-        "evidence_contract": "section-anchors-plus-structured-audit",
+        "known_metric_refs_required": 24,
+        "proposal_format_version": "1",
+        "evidence_contract": "legacy-exhaustive-inline",
         "proposal_reference_counts": {
-          "source": 68,
-          "standard": 7,
-          "depth": 16,
-          "data": 40,
-          "metric": 53
+          "source": 59,
+          "standard": 6,
+          "depth": 15,
+          "data": 18,
+          "metric": 31
         }
       }
     },

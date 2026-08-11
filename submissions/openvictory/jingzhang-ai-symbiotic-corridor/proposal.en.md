@@ -8,7 +8,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Five-Way Symbiosis Protocol: Inherited (heritage+AI), Campus-Industry, Human-AI Intelligence, Blue-Green, and Day-Night symbiosis. 24 buildings x 20 road segments x 5 green spaces x 6 public spaces covering 12 scenario cards (seven-field matrix with credential IDs), 5+5 user personas, 3 AI landmarks, 8 action packages with cost/duration/approval matrix, building retain-renovate-demolish decision tree, 6-row data baseline from Haidian 2025 statistics (GDP 1.37T, 37 universities, 2000+ AI companies), spatial morphology derived from 4 railway geometric genes. All areas recomputed in EPSG:4548 with provisional boundaries disclosed. Self-check PASS."
 tracks: ["jingzhang-heritage-narrative", "ai-origin-community", "civic-agent-governance"]
 scenarios: ["ai-cultural-guide", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v0.15"
+iteration: "v0.16"
 translation_of: "proposal.md"
 ---
 
@@ -115,6 +115,34 @@ Therefore "one belt" is not an abstract axis but a public space system readable 
 **Background observations never impersonate spatial metrics.** Haidian and Beijing administrative-scale statistics are all registered in `sources.json` and flagged `not_spatially_allocable`. They calibrate problem priority and symbiosis-mechanism selection only; they never enter spatial allocation, area computation or pilot performance targets, and citywide averages never fill corridor-level indicators. Corridor ridership, station OD and facility capacity stay unknown pending formal baselines. [assumption:A-STATS-001] [assumption:A-TRANSPORT-001]
 
 **AI innovation index: a framework, not pseudo-precise scores.** The taskbook requires research on innovation indices, talent density and industrial performance. Without baselines this proposal offers no scores; it proposes five dimensions — public-problem response, open contribution and reuse, testing safety and exit, daily talent experience, spatial and resource efficiency. Each dimension computes only after data responsibility, anonymous/aggregated aggregation, evaluation cycles and appeal mechanisms are defined; output, talent and enterprise figures come from statutory statistics or cleared operating data, never inferred from scenario usage. [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]
+
+**Taskbook requirement traceability index.** This table maps all 23 mandatory requirements of the official announcement sections 1.3-1.5 and agent taskbook items agent.1-agent.6 to the exact chapter headings and spatial layers of this proposal, so reviewers can verify clause-by-clause coverage. The machine-readable version is `compliance_matrix.json`; the "Response sections" column quotes `proposal.md` headings verbatim (hence in Chinese, the canonical document of record) and is script-verifiable — no phantom sections are claimed. All requirements share the nine `geometry/` layers (site_boundary, key_areas, land_use, buildings, roads, green_space, public_space, phasing, constraints), registered per requirement in the `geojson_layers` field of `compliance_matrix.json` and not repeated here. [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]
+
+| Requirement | Taskbook item | Response sections (exact headings in proposal.md) |
+|---|---|---|
+| 1.3.1 | Build a world-class AI innovation ecosystem | 统筹研究范围产业与未来城市研究; 五向共生接口协议; 七个全球生态参照案例 |
+| 1.3.2 | Build a new urban form adapted to AI new-quality productive forces | 总体设计范围城市更新与控规深度城市设计; 一页执行摘要 / Executive Brief; 用地、建筑规模与拆改留方案 |
+| 1.3.3 | Build a high-quality district that global AI innovation talent aspire to | AI 创新生态、人才画像与 AI+ 场景; 五类核心用户画像; 弱势群体与无障碍设计验证 |
+| 1.4.1 | Coordinated research scope | 三层范围工作框架; 统筹研究范围产业与未来城市研究; 3. 整体情境比选 |
+| 1.4.2 | Overall design scope | 三层范围工作框架; 总体设计范围城市更新与控规深度城市设计; 2. 更新方法：先调查、后分类、再行动 |
+| 1.4.3 | Key area scope | 三层范围工作框架; 重点区域详细设计; 指标体系、面积复算与合规矩阵 |
+| 1.5.1.1 | Coordinated research scope: AI innovation ecosystem | 统筹研究范围产业与未来城市研究; 七个全球生态参照案例; AI 创新生态、人才画像与 AI+ 场景 |
+| 1.5.1.2 | Coordinated research scope: future urban form adapted to AI | 五向共生接口协议; 空间形态推导：从铁路遗产推导形态; AI 创新生态、人才画像与 AI+ 场景 |
+| 1.5.2.1 | Overall design scope: industry objectives and functional layout | 总体设计范围城市更新与控规深度城市设计; 1. 空间判断; 用地、建筑规模与拆改留方案 |
+| 1.5.2.2 | Overall design scope: overall urban renewal framework | 2. 更新方法：先调查、后分类、再行动; 3. 控规深度的表达方式; 用地、建筑规模与拆改留方案 |
+| 1.5.2.3 | Overall design scope: transport, rail and municipal supporting facilities | 交通、轨道、市政与公共服务设施; 蓝绿空间、公共空间与城市风貌; 更新项目清单、实施政策与分期计划 |
+| 1.5.2.4 | Overall design scope: Jingzhang heritage park vitality belt | 蓝绿空间、公共空间与城市风貌; 京张文化叙事的深度展开; agent.5 文化叙事与数字导览系统 |
+| 1.5.2.5 | Overall design scope: urban character | 蓝绿空间、公共空间与城市风貌; agent.5 文化叙事与数字导览系统; 品牌、命名与国际传播力 |
+| 1.5.3.required | Mandatory items for key area detailed design | 重点区域详细设计; 5. 重点区域空间设计导则（概念级）; 八个行动包 |
+| 1.5.3.1 | Zhongzhiyuan AI independent innovation acceleration zone | 1. 众智园：技术-治理共生场 / Safety Symbiosis Garden; 十二张场景卡（全量七列矩阵）; 场景深度解析：从卡片到空间落地 |
+| 1.5.3.2 | Beijing AI origin community | 2. AI原点社区：知识-社区共生场 / Open Transfer Station; 十二张场景卡（全量七列矩阵）; 场景深度解析：从卡片到空间落地 |
+| 1.5.3.3 | Dazhongsi AI industry cluster | 3. 大钟寺：产业-生活共生场 / City Experience Station; 十二张场景卡（全量七列矩阵）; 场景深度解析：从卡片到空间落地 |
+| agent.1 | Belt-wide overall concept and functional coordination scheme | 品牌、命名与国际传播力; 一页执行摘要 / Executive Brief; 五向共生接口协议 |
+| agent.2 | Full-stack AI independent innovation system and world-class AI innovation ecosystem | 七个全球生态参照案例; AI 创新生态、人才画像与 AI+ 场景; 统筹研究范围产业与未来城市研究 |
+| agent.3 | AI+ scenario empowerment and intelligent vital city design | 场景共同协议; 十二张场景卡（全量七列矩阵）; 三个产业测试验证场 |
+| agent.4 | AI public space, smart-native business formats and pilgrimage landmarks | agent.4 三大AI朝圣地标与荣誉体系; 蓝绿空间、公共空间与城市风貌; 京张文化叙事的深度展开 |
+| agent.5 | Jingzhang-Zhongguancun-AI cultural fusion narrative | agent.5 文化叙事与数字导览系统; 京张文化叙事的深度展开; 品牌、命名与国际传播力 |
+| agent.6 | Belt-wide global AI innovation event system and long-term operations | agent.6 长期运营与开发者社区机制; 实施治理框架; 八个行动包 |
 
 ## SYM Symbiosis Credential Schema 1.0 (Named Deliverable Interface)
 

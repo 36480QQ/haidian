@@ -167,12 +167,12 @@
     },
     "scenario_card_count": {
       "status": "known",
-      "value": 10,
+      "value": 12,
       "unit": "count",
       "source_files": ["proposal.md", "geometry/constraints.geojson"],
-      "formula": "count(distinct scenario cards S01-S10 in the proposal scenario table), cross-checked against count(distinct scenario_card_id on SCENARIO_NODE features)",
+      "formula": "count(distinct scenario cards S01-S12 in the proposal scenario table); S01-S10 are additionally cross-checked against count(distinct scenario_card_id on SCENARIO_NODE features), while S11 and S12 declare no scenario node of their own",
       "confidence": "high",
-      "assumptions": ["The count describes declared design scenarios inside this package, not approved pilots, deployed services, or completed user research."],
+      "assumptions": ["The count describes declared design scenarios inside this package, not approved pilots, deployed services, or completed user research.", "S11 and S12 reuse existing scenario nodes (S11 on OP-09 and OP-10, S12 on OP-03 and OP-07) and add no spatial facility, so scenario_card_count and op_node_count are deliberately no longer equal."],
       "calculation_metadata": {
         "method_source": "PACKAGE-STRUCTURED-EVIDENCE-INDEX",
         "verified_on": "2026-08-11",
@@ -183,12 +183,12 @@
     },
     "persona_count": {
       "status": "known",
-      "value": 5,
+      "value": 6,
       "unit": "count",
       "source_files": ["proposal.md"],
-      "formula": "count(rows in the proposal persona table)",
+      "formula": "count(rows in the proposal persona table, five user-side personas plus the service-provider and maintainer role)",
       "confidence": "high",
-      "assumptions": ["Personas organise design questions and test scripts; they are not diagnostic labels, commercial segments, identity claims, or completed user research.", "Real co-design must be voluntary, accommodated, understandable, and withdrawable; the count says nothing about participation having occurred."],
+      "assumptions": ["Personas organise design questions and test scripts; they are not diagnostic labels, commercial segments, identity claims, or completed user research.", "Real co-design must be voluntary, accommodated, understandable, and withdrawable; the count says nothing about participation having occurred.", "The cross-language and low-digital-literacy persona describes a service threshold, not a nationality, migration status, or education claim; no such attribute is collected."],
       "calculation_metadata": {
         "method_source": "PACKAGE-STRUCTURED-EVIDENCE-INDEX",
         "verified_on": "2026-08-11",

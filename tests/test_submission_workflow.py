@@ -43,6 +43,7 @@ from github_pr_validation import (  # noqa: E402
     readiness_contract_dirs_from_base,
     run_trusted_review_gates,
     safe_manifest_paths,
+    strict_manifest_paths_for,
     validation_paths_for,
 )
 from validate_local_submission import discover_submission_files  # noqa: E402
@@ -663,6 +664,23 @@ class ManifestHydrationTests(unittest.TestCase):
     def test_removed_paths_are_excluded_from_validation_scope(self) -> None:
         files = [{"filename": "submissions/alice/design/proposal.md", "status": "removed"}]
         self.assertEqual([], validation_paths_for(files, False))
+
+    def test_added_copied_and_renamed_manifests_enter_strict_migration(self) -> None:
+        files = [
+            {"filename": "submissions/alice/added/manifest.json", "status": "added"},
+            {"filename": "submissions/alice/copied/manifest.json", "status": "copied"},
+            {"filename": "submissions/alice/renamed/manifest.json", "status": "renamed"},
+            {"filename": "submissions/alice/changed/manifest.json", "status": "modified"},
+            {"filename": "submissions/alice/removed/manifest.json", "status": "removed"},
+        ]
+        self.assertEqual(
+            [
+                "submissions/alice/added/manifest.json",
+                "submissions/alice/copied/manifest.json",
+                "submissions/alice/renamed/manifest.json",
+            ],
+            strict_manifest_paths_for(files),
+        )
 
     def test_participant_deletion_only_pr_is_warning_not_missing_file_failure(self) -> None:
         event = {
@@ -2885,6 +2903,69 @@ class SubmissionWorkflowTests(unittest.TestCase):
             self.assertIn(f"declared={declared}", mismatch)
             self.assertIn(f"actual={actual}", mismatch)
 
+    def test_manifest_self_referential_sha256_is_rejected(self) -> None:
+        """manifest.json must not declare sha256 for itself (self-referential).
+
+        All four official scripts (scaffold, finalize, backfill, refresh) skip
+        manifest.json's own hash. The validator must reject it explicitly so
+        that strict manifests do not carry meaningless integrity metadata.
+        """
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            base = "submissions/alice/ai-urban-loop"
+            changed = self.write_minimal_ai_package(root, base)
+            manifest_path = root / base / "manifest.json"
+            manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+            # Inject a deliberately wrong sha256 into the manifest.json entry
+            for item in manifest["files"]:
+                if item.get("path") == "manifest.json":
+                    item["sha256"] = "0" * 64
+                    break
+            else:
+                self.fail("manifest.json entry not found in files array")
+            manifest_path.write_text(
+                json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+            )
+            report = validate_submission(root, "alice", changed)
+            self.assertFalse(report.ok)
+            self.assertTrue(
+                any("manifest.json must not declare sha256" in e for e in report.errors),
+                f"expected 'must not declare sha256' error, but got: {report.errors}",
+            )
+
+    def test_manifest_content_hash_mismatch_still_reported(self) -> None:
+        """A real sha256 mismatch for a non-manifest file must still be reported.
+
+        This is the regression guard: the self-hash fix must not accidentally
+        silence genuine content drift for other files.
+        """
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            base = "submissions/alice/ai-urban-loop"
+            changed = self.write_minimal_ai_package(root, base)
+            # Tamper with metrics.json but keep the old manifest hash
+            metrics_path = root / base / "metrics.json"
+            original_hash = hashlib.sha256(metrics_path.read_bytes()).hexdigest()
+            metrics_path.write_text(
+                metrics_path.read_text(encoding="utf-8") + "\n  // tampered\n",
+                encoding="utf-8",
+            )
+            # Ensure the manifest still has the original (now stale) hash
+            manifest_path = root / base / "manifest.json"
+            manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+            for item in manifest["files"]:
+                if item.get("path") == "metrics.json":
+                    item["sha256"] = original_hash
+                    break
+            manifest_path.write_text(
+                json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+            )
+            report = validate_submission(root, "alice", changed)
+            mismatch = next(
+                error for error in report.errors if "sha256 mismatch for `metrics.json`" in error
+            )
+            self.assertIn(f"declared={original_hash}", mismatch)
+
     def test_removed_translation_file_is_non_blocking(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
@@ -3163,6 +3244,29 @@ class SubmissionWorkflowTests(unittest.TestCase):
             self.assertEqual(completed.returncode, 0, completed.stdout + completed.stderr)
             self.assertIn("Result: PASS", completed.stdout)
 
+    def test_local_submission_wrapper_can_enforce_forward_manifest_contract(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            base = "submissions/alice/ai-urban-loop"
+            self.write_minimal_ai_package(root, base)
+            completed = subprocess.run(
+                [
+                    sys.executable,
+                    str(REPO_ROOT / "scripts" / "validate_local_submission.py"),
+                    base,
+                    "--repo-root",
+                    str(root),
+                    "--pr-author",
+                    "alice",
+                    "--strict-manifest",
+                ],
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            self.assertNotEqual(completed.returncode, 0)
+            self.assertIn("new manifests must adopt schema_version 0.2.x", completed.stdout)
+
     def test_formal_blocking_self_check_fails_validation(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
@@ -3244,7 +3348,13 @@ class SubmissionWorkflowTests(unittest.TestCase):
                 root,
                 f"{base}/geometry/land_use.geojson",
                 lambda data: data["features"][0]["properties"].update(
-                    {"land_use_code": "BAD"}
+                    {
+                        "layer": "BAD_LAYER",
+                        "source_type": "bad-source",
+                        "confidence": "bad-confidence",
+                        "geometry_role": "bad-role",
+                        "land_use_code": "BAD",
+                    }
                 ),
             )
             self.update_json(
@@ -3264,9 +3374,24 @@ class SubmissionWorkflowTests(unittest.TestCase):
             report = validate_submission(root, "alice", changed)
             self.assertFalse(report.ok)
             errors = "\n".join(report.errors)
-            self.assertIn("unknown land_use_code", errors)
-            self.assertIn("unknown road_class", errors)
-            self.assertIn("unknown building_type", errors)
+            for field in [
+                "layer",
+                "source_type",
+                "confidence",
+                "geometry_role",
+                "land_use_code",
+                "road_class",
+                "building_type",
+            ]:
+                self.assertIn(f"unknown {field}", errors)
+            self.assertEqual(7, errors.count("; allowed: "))
+            self.assertIn("allowed: AI_SERVICE_ZONE", errors)
+            self.assertIn("allowed: agent_generated_design", errors)
+            self.assertIn("allowed: high, low, medium, unknown", errors)
+            self.assertIn("allowed: analysis_helper", errors)
+            self.assertIn("allowed: 05, 07, 0701", errors)
+            self.assertIn("allowed: arterial, branch, cycleway", errors)
+            self.assertIn("allowed: ai_r_and_d", errors)
 
     def test_formal_empty_core_geometry_fails(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:

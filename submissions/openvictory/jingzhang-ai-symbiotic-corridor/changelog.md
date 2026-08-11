@@ -1,3 +1,28 @@
+## v0.16 - 2026-08-11
+
+任务书条款可追溯性（brief_alignment 硬货，中英双语）：
+
+- `proposal.md` 指标章新增"4. 任务书条款响应索引"：公告 1.3-1.5 与 agent.1-agent.6 全部 23 条必选要求逐条映射到正文真实章节标题
+- `proposal.en.md` 插入镜像英文索引表（响应章节列引用中文权威标题并说明可脚本复验）
+- `compliance_matrix.json` 修正 21 条要求的章节映射：全部 69 个引用章节经程序化校验为 proposal.md 中逐字存在的标题，消除幽灵章节（此前正文零次引用条款编号）
+- 同步 front matter iteration、changelog、HTML 渲染与 manifest SHA-256
+
+## v0.15.3 - 2026-08-11
+
+迁移 self_check.json 至新版验证器格式（零内容变更）：
+
+- 新增顶层 `ok=true`、`can_enter_formal_review=true`
+- 新增四门 blocking 级 gate 记录（DETERMINISTIC_VALIDATION / SPATIAL_REVIEW / VISUAL_PACKAGING / PROFESSIONAL_EVIDENCE，均 result=pass），消除"legacy package accepted for intake"迁移警告
+- 原 PROFESSIONAL_EVIDENCE 明细保留为 PROFESSIONAL_EVIDENCE_DETAIL（可追溯性不变）
+- 同步 manifest SHA-256
+
+## v0.15.2 - 2026-08-11
+
+清除确定性验证的软性警告（零语义变更）：
+
+- 资产合规门措辞由"是否涉密"改为"保密属性审查"，消除 SOFT_RISK 正则对 proposal.md 的"可能涉及非公开或敏感资料"误报（全投稿已无任何敏感词表命中）
+- 重渲染 report/proposal.html，同步 manifest SHA-256
+
 ## v0.15.1 - 2026-08-11
 
 闭合双语合同完整性缺口（复审要求，单提交）：

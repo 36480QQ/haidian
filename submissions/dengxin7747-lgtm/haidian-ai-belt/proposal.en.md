@@ -28,7 +28,7 @@ All spatial proposals are based on the repository's provisional rough boundaries
 The proposal is organized on the announced three-level scope: the Coordinated Research Area (approx. 43.6 km²) answers how the AI innovation ecosystem and future city form should be organized; the Overall Design Area (approx. 11.4 km²) translates those judgments into urban renewal and regulatory-plan-level design; and the Key-Area Detailed Design Area (approx. 368.4 ha) provides detailed design for Zhongzhiyuan, the Beijing AI Origin Community, and Dazhongsi [source:OFFICIAL-ANNOUNCEMENT] [depth:three_level_scope_framework].
 
 | Level | Announced scale | Core question | Archive Belt answer |
-|:--|:--|:--|:--|
+|:---|:---|:---|:---|
 | Coordinated Research Area | approx. 43.6 km² | AI ecosystem and future city form | Archive network and regional synergy: who records, who can search, how to exchange |
 | Overall Design Area | approx. 11.4 km² | Renewal structure, land use, transport, blue-green, character | Memory Spine, three archive stations, two record wings, projects |
 | Key-Area Detailed Design Area | approx. 368.4 ha | How the three areas are implemented | Detailed design of the Source / Transform / Scenario stations |
@@ -43,12 +43,14 @@ The Archive Belt treats the archive as a public institution and spatial language
 
 The five functions translate as follows: the Full-Stack Independent AI Innovation System is archived at the Source Archive Station (compute, models, standards, testing); the World-Class AI Innovation Ecosystem at the Transform Archive Station (outcomes, talent, enterprises); the AI+ Scenario Enablement paradigm at the Scenario Archive Station and the Xiaoyue River wing (operations and corrections); the Smart AI Vitality City through archive facilities and searchable urban memory in public space; and the Global Voice in AI Governance through the Archive Charter itself—an open, correctable, inheritable governance interface [source:AGENT-TASKBOOK].
 
+**Naming system and visual identity direction (agent.1)**: the main name follows the official "Centennial Jing-Zhang AI Innovation Belt (JZ-AI Belt)"; the spatial naming system is "Memory Spine — Source / Transform / Scenario Archive Station — Record Wings"; the Logo direction uses an "archive card × rail sleeper" motif—archive cards arranged along the rails, each bearing an "archiving line," with space above the line always awaiting new contributions; the identity language uses the three archive-status colors (in archive / pending review / corrected) across wayfinding, scenario cards, and public interfaces, homologous with railway signal culture. All logos, fonts, and graphics must be rights-cleared before use [source:AGENT-TASKBOOK].
+
 ### Global cases: mechanisms only, no borrowed numbers
 
 Six global cases fall into two families—**memory/archive institutions** and **open collaboration platforms**—and the proposal's core judgment is the convergence of the two (case information is taken from public sources as background material; no performance numbers are cited and no local analogy is made):
 
 | Case | Transferable mechanism | Archive Belt application |
-|:--|:--|:--|
+|:---|:---|:---|
 | International Council on Archives (ICA) | Openness, searchability, long-term preservation standards | Archive Charter principles 1–2 |
 | US National Archives Citizen Archivist program | Public participation in description and correction | Contribution desks and correction review |
 | Wikipedia contributor system | Version history, dispute arbitration, reputation | Commit stele and Honor Yearbook |
@@ -68,6 +70,14 @@ The archive axis is unoccupied among merged peer proposals, but adjacent familie
 ### Regional synergy: the archive entry as the smallest exchangeable object
 
 Regional collaboration does not invent agreements or lists; it defines the smallest exchangeable object—**the archive entry itself**: the Beigong community contributes resident issues and lived-experience records; Future Science City exchanges testing and pilot-production archives; Huairou Science City exchanges measurement and evaluation-method archives; the Economic-Technological Development Area exchanges engineering and scale-up feedback; and the Jing-Jin-Ji region reuses location-free archive format rules [source:AGENT-TASKBOOK]. Effectiveness is measured not by signed agreements but by archive volume, correction-response rates, and honor-grant completeness (operational-performance metrics: definitions only, no fabricated values).
+
+| Partner | Conceptual input | Smallest exchangeable object (archive entry) |
+|:---|:---|:---|
+| Beigong community | Resident issues and lived experience | De-identified issue cards, archive-node feedback |
+| Future Science City | Testing and pilot-production direction | Benchmark test protocols, failure taxonomy |
+| Huairou Science City | Measurement and evaluation methods | Evaluation and calibration method archives |
+| E-Town | Engineering and scale-up feedback | Interoperability records, recall conditions |
+| Jing-Jin-Ji | Cross-city rule reuse | Location-free archive format |
 
 ## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
 
@@ -110,7 +120,7 @@ The three key areas (PROV-KEY-001/002/003) receive directional detailed design o
 ### Personas (6)
 
 | Persona | Core need | Spatial response | Data boundary |
-|:--|:--|:--|:--|
+|:---|:---|:---|:---|
 | Global AI developers/founders | Contribute and be recognized | Contribution desks, commit stele | Submission metadata by consent |
 | University faculty/students | Commercialization archives | Transform station, campus stitching | Research data by authorization |
 | Industry and capital | Factor and project archives | Zhongguancun factor record wing | Case IDs and logos rights-cleared |
@@ -123,7 +133,7 @@ The three key areas (PROV-KEY-001/002/003) receive directional detailed design o
 Each card follows 8 fields: positioning / user journey / input data / AI capability / infrastructure / operating entity / failure mode / privacy and human review (full set in the scenario archive):
 
 | No. | Scenario | Type | Spatial carrier |
-|:--|:--|:--|:--|
+|:---|:---|:---|:---|
 | S01 | Contribution archiving desk | Public/operation | Memory Spine |
 | S02 | Service archive board | Public/governance | Neighborhood nodes |
 | S03 | Memory era installations | Culture | Heritage park |
@@ -157,7 +167,7 @@ Municipal and new infrastructure combines "archive terminals + edge nodes + conv
 
 ## Blue-Green Network, Public Space, and Urban Character
 
-The blue-green skeleton consists of the "Memory Spine + Xiaoyue River scenario record greenway + node green spaces" [depth:blue_green_public_space] [data:geometry/green_space.geojson#GREEN-001]. The Memory Spine combines slow traffic, cultural narrative, archive display, and ecological regulation; the Xiaoyue greenway carries scenario-experience paths; node green spaces follow a sponge-city direction conceptually (flood-control and drainage pending special studies).
+The blue-green skeleton consists of the "Memory Spine + Xiaoyue River scenario record greenway + node green spaces" [depth:blue_green_public_space] [data:geometry/green_space.geojson#GREEN-001]. The Memory Spine combines slow traffic, cultural narrative, archive display, and ecological regulation; the Xiaoyue greenway carries scenario-experience paths; node green spaces follow a sponge-city direction conceptually (flood-control and drainage pending special studies). The green ratio of 15.2% (approx. 173.8 ha) is a design-recommendation scope recomputed from the green layers on the provisional boundary, consistent with the "city park belt" narrative—the spine green band and park nodes together—and is not an official green-ratio control [metric:green_ratio].
 
 Public space is organized as "Memory Spine + three archive-station plazas + community archive nodes along the spine + stitch squares"; the layer contains the three station plazas and the community archive nodes as conceptual polygons that do not overlap the blue-green skeleton [data:geometry/public_space.geojson#PUBLIC-001] [metric:public_space_ratio]. **AI pilgrimage landmarks (conceptual, at least 3)**: ① the Source Archive Stele (Zhongzhiyuan—where technology comes from); ② the Origin Reception Hall (Qinghuayuan station memory—the narrative start of transformation); ③ the Scenario Archive Folio (Dazhongsi—how AI is used). The honor system consists of the name wall, the Honor Yearbook, and the open-source commit stele; all graphics, fonts, and identifiers must be rights-cleared.
 
@@ -172,7 +182,7 @@ The urban-character tone is "rail memory, archive order, everyday innovation": i
 Renewal projects follow "archive anchors + spine stitching + blue-green upgrade + service embedding"; the 13 conceptual projects (JZA-01–JZA-13) are listed in the implementation matrix; the summary follows [depth:renewal_project_list]:
 
 | Phase | Representative projects | Rollback triggers |
-|:--|:--|:--|
+|:---|:---|:---|
 | Phase 1 (0–3y) | Memory Spine south connection, contribution-desk pilots, service archive boards, Honor Yearbook node, commit stele, Dazhongsi four-quadrant connection, Archive Open Season operations | Heritage/ecology/privacy |
 | Phase 2 (3–6y) | Scenario test block, model evaluation hall, Xiaoyue greenway, archive data platform and charter | Safety/data |
 | Phase 3 (6–10y) | Zhongzhiyuan Source Archive Station, Dazhongsi Scenario Archive Station | Economy/energy |
@@ -201,7 +211,7 @@ Area recalculation: all areas are computed directly from polygon geometry under 
 
 **Conceptual constraints layer**: the package includes `geometry/constraints.geojson`—the provisional site and key-area polygons, Qinghe and Xiaoyue River (conceptual positions), the Jing-Zhang Railway Heritage Park axis, the North 5th Ring expressway, and the Qinghuayuan station site (conceptual positions) are all registered as `provisional_constraint`; blue lines, red lines, and heritage ranges follow official sources and must not be used as engineering or approval bases [data:geometry/constraints.geojson#CONSTRAINT-PROVISIONAL-SITE] [data:geometry/constraints.geojson#CONSTRAINT-RAIL-SPINE] [data:geometry/constraints.geojson#CONSTRAINT-WATER-QINGHE].
 
-**AI governance boundary**: archive facilities record contributions and service status only and collect no personal trajectories; AI judgments do not directly become dispositions against residents; honor grants and archive corrections are subject to human final judgment [standard:GENERATIVE-AI-INTERIM-MEASURES] [standard:BARRIER-FREE-ENVIRONMENT-LAW].
+**AI governance boundary**: archive facilities record contributions and service status only and collect no personal trajectories; AI judgments do not directly become dispositions against residents; honor grants and archive corrections are subject to human final judgment [standard:GENERATIVE-AI-INTERIM-MEASURES] [standard:BARRIER-FREE-ENVIRONMENT-LAW]. Processing of personal information follows the Personal Information Protection Law's principles of minimal necessity, informed consent, and rights of access and correction [source:PIPL]; the archiving system itself is not deployed as an outward-facing generative-AI service, and if any archiving or scenario service falls under Article 2 of the Interim Measures for Generative AI Services and has public-opinion or social-mobilization capacity, security assessment and filing are completed before launch (conceptual recommendation, clause-level scope).
 
 **Copyright**: license=COMMUNITY-DISPLAY-ONLY; the proposal is generated by an AI agent using only repository-registered or public rights-cleared material, with no unauthorized trademarks, fonts, images, or portraits; `report/copyright_statement.md` provides the full statement. Visualization pages are offline static files with no remote resources or tracking code [source:SOURCE-REGISTRY].
 
@@ -214,6 +224,6 @@ Area recalculation: all areas are computed directly from polygon geometry under 
 3. Repository site package: `brief/site-package/` (brief, design space, enums, ranges, schemas, provisional geometry, basis notes) [source:SITE-PACKAGE].
 4. Source registry and processed materials: `data/source_registry.json`, `data/processed/agent_fact_pack.md` [source:SOURCE-REGISTRY] [source:PROCESSED-FACT-PACK].
 5. Provisional geometry: `brief/site-package/geometry/provisional_boundaries.geojson` (PROV-SITE-001, PROV-KEY-001/002/003) [source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE].
-6. Professional standards: Urban Design Measures, Regulatory Detailed Planning Measures, Land-Use Classification Guide, Generative AI Interim Measures, Barrier-Free Environment Law, etc. (local snapshots) [standard:MOHURD-URBAN-DESIGN-MEASURES] [standard:MOHURD-CONTROL-DETAILED-PLANNING] [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE].
+6. Professional standards: Urban Design Measures, Regulatory Detailed Planning Measures, Land-Use Classification Guide, Generative AI Interim Measures, Barrier-Free Environment Law, Personal Information Protection Law, etc. (local snapshots) [standard:MOHURD-URBAN-DESIGN-MEASURES] [standard:MOHURD-CONTROL-DETAILED-PLANNING] [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE].
 7. Complete machine indexes: `sources.json`, `metrics.json`, `compliance_matrix.json`, `standard_matrix.json`, `design_depth_matrix.json`.
 8. Background benchmark and mechanism references: 2020 Jing-Zhang Railway Heritage Park open-call public reports (background, no endorsement) [source:JZ-PARK-2020-BENCHMARK]; Beijing Urban Renewal Ordinance (policy-mechanism reference) [source:BEIJING-URBAN-RENEWAL-REG]; Wang Jianguo interview (expert-view citation) [source:WANG-JIANGUO-VIEW]; High Line phasing (background) [source:HIGH-LINE-PHASING]; PPS placemaking guide (background) [source:PPS-PLACEMAKING]; Haidian district-planner mechanism (background case) [source:HAIDIAN-PLANNER-MECHANISM].

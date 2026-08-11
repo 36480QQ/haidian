@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以三区十五分钟创新生活圈和可审计服务闭环，将 AI 研发验证、人才日常生活、公共反馈与企业服务转化连接为一条连续的京张公共创新网络。"
 tracks: ["enterprise-services-ecosystem", "ai-origin-community", "youth-friendly-public-space"]
 scenarios: ["enterprise-service-copilot", "ai-health-service-navigation", "ai-cultural-guide"]
-iteration: "v1.5"
+iteration: "v1.4"
 ---
 
 # 京张 AI 人才生活实验带
@@ -30,18 +30,7 @@ iteration: "v1.5"
 | G4 运营责任门 | 是否有人负责、有人维护、有人受理纠纷 | 公共反馈论坛与企业服务接口 | 责任角色、服务时间、投诉渠道、复盘记录 | 暂停运营并公开整改 |
 | G5 扩容复核门 | 是否值得从单点扩大到片区 | 大钟寺规模转化复核台 | 公共价值、权益、质量和运营四类证据汇总 | 保持小规模、回退或退出 |
 
-五道门不是审批替代品，而是面向概念试点的公共证据框架。
-
-### v1.5 增量：空间—服务—数据—治理四层协议
-
-本轮不改变“一轴、三圈、两翼、多点”的空间骨架，而是把原有服务闭环压缩为可被空间团队和运营团队共同检查的四层协议。**空间层**把代表性街道、反馈广场、首层柔性界面和服务节点作为最小单元；**服务层**把个性化需求感知、受控推荐、在地柔性生产 / 服务和质量追溯接到这些单元；**数据层**只保留目的限定、最小字段、可解释、可纠正、可删除和非数字等价入口；**治理层**以五道验收门决定服务扩大、保持、回退或退出。这里的“在地柔性生产 / 服务”只描述一种按需响应的城市服务方法，不公开任何配方、SKU、设备或内部经营细节。[depth:three_key_area_detailed_design] [metric:implementation_card_count] [metric:rights_safeguard_dimension_count]
-
-![空间—服务—数据—治理四层协议](assets/figures/service-protocol.png)
-
-![一条验收轨上的六阶段、五道门与三类服务旅程](assets/figures/service-journey-mechanism.png)
-
-图中四层均由本提交的 `spatial.json`、GeoJSON 属性和 `metrics.json` 派生；它是解释层，不替代官方边界、现状调查或法定控制。
-它要求 12 个场景全部提供人工等价入口、责任角色、纠错渠道和停止条件；任何一个场景都不得以“使用人数增加”单独证明成功。[metric:service_acceptance_gate_count] [metric:non_ai_equivalent_coverage_ratio] [metric:accountable_role_coverage_ratio]
+五道门不是审批替代品，而是面向概念试点的公共证据框架。它要求 12 个场景全部提供人工等价入口、责任角色、纠错渠道和停止条件；任何一个场景都不得以“使用人数增加”单独证明成功。[metric:service_acceptance_gate_count] [metric:non_ai_equivalent_coverage_ratio] [metric:accountable_role_coverage_ratio]
 
 ![总体结构与可审计服务闭环](assets/figures/site-overview.png)
 
@@ -140,29 +129,6 @@ iteration: "v1.5"
 定位是把通过验证的服务原型转译为可对接企业、城市商务和公共消费的服务模块，同时保留运营复核和公众退出权。[data:geometry/key_areas.geojson#PROV-KEY-003] 空间结构建议为“轨道接驳概念联系—企业服务接口台—柔性服务城市客厅—规模转化复核台—贡献展示界面”。SCN-08 至 SCN-10 不指定企业、合作名单或供应商，也不提出投资、招商、营收或政府承诺。[data:geometry/public_space.geojson#SCN-08] [data:geometry/public_space.geojson#SCN-10]
 
 ![大钟寺重点区详细设计](assets/figures/key-area-dazhongsi.png)
-
-
-
-### 三区空间实施卡（v1.5 增量）
-
-为避免把“可实施性”停留在流程图，本轮为每个重点区配置四类可检查的空间动作：代表性街道、反馈广场、首层界面和服务节点。每张卡都写明责任角色、所需前置资料、验收证据和停止条件；卡片是供专业团队深化的概念证据契约，不是建设项目或政府承诺。[data:spatial.json#area-card-zzy] [data:spatial.json#area-card-ori] [data:spatial.json#area-card-dzs] 实施卡数量与前置检查状态分别由 [metric:area_implementation_card_count] [metric:predeployment_field_check_completion_ratio] 记录。
-
-| 重点区 | 代表性街道 | 反馈广场 | 首层界面 | 服务节点 |
-| --- | --- | --- | --- | --- |
-| 众智园 | 连接研发工坊与质量门，公开测试路径 | 展示异常、责任链和人工接管记录 | 可逆工坊界面，有人窗口与柔性服务位 | 受控推荐与服务原型登记，自愿进入 / 退出 |
-| AI 原点社区 | 近校慢行与生活服务，静 / 动态分时 | 社区共议、无障碍反馈和公共复盘 | 学习、协作、生活服务可替换首层界面 | 人才需求感知，不建立默认个人画像 |
-| 大钟寺 | 站城接驳与企业服务目录，减少寻路成本 | 日常消费、休憩与公共体验复合广场 | 模块化服务大厅，人工等价接口可见 | 企业接口与规模转化复核，不自动扩容 |
-
-每张卡的最低验收包是：规则公开、责任角色可见、人工等价入口可用、异常可追溯、公众可纠正 / 退出。前置资料缺一项时，`predeployment_field_check_completion_ratio` 保持 `unknown`，不得用图面或使用量推断已落地。[metric:accountable_role_coverage_ratio] [metric:non_ai_equivalent_coverage_ratio]
-
-![三区空间实施卡](assets/figures/spatial-implementation-cards.png)
-
-![众智园空间组合与实施交接](assets/figures/detail-board-zhongzhiyuan.png)
-
-![AI 原点社区空间组合与实施交接](assets/figures/detail-board-origin.png)
-
-![大钟寺空间组合与实施交接](assets/figures/detail-board-dazhongsi.png)
-
 
 四象限步行连通、站城一体化、地下空间和交通组织均只提出问题框架，必须由轨道、交通、市政、消防、无障碍和权属专业资料深化。智能原生消费的重点不是炫技，而是透明推荐、质量追溯、服务可替换和纠纷可处理。
 
@@ -340,7 +306,7 @@ OSM 背景探测返回铁路站点和地铁出入口要素；公园查询超时�
 
 权威顺序为 GeoJSON、metrics、三类矩阵、manifest/sources/assumptions/self_check、proposal、图件、HTML、PDF。图件和网页是解释层，不能反向成为边界、面积或法定控制依据。[depth:metrics_recalculation]
 
-known 指标分为五类：第一类是提交几何复算，包括总体边界、四类用地、建筑基底、绿地、公共空间、中心线和三期 polygon；第二类是明确计数，包括 3 个重点区、12 个场景、3 个产业验证、8 类画像、4 个荣誉节点、6 个闭环阶段、5 道验收门和 5 个试点阶段；第三类是覆盖率，包括人工等价入口与责任角色覆盖；第四类是实施证据契约计数，包括 12 张空间实施卡、4 类空间界面和 7 项权利保障；第五类是公告约面积等背景事实。总体面积与重点区计数由 [metric:site_area_sqm] [metric:key_area_count] 记录，场景与验收门计数由 [metric:scenario_node_count] [metric:service_acceptance_gate_count] 记录。unknown 指标包括建筑总量、容积率、道路面积以及所有缺少官方条件的工程与法定数据。
+known 指标分为四类：第一类是提交几何复算，包括总体边界、四类用地、建筑基底、绿地、公共空间、中心线和三期 polygon；第二类是明确计数，包括 3 个重点区、12 个场景、3 个产业验证、8 类画像、4 个荣誉节点、6 个闭环阶段、5 道验收门和 5 个试点阶段；第三类是覆盖率，包括人工等价入口与责任角色覆盖；第四类是公告约面积等背景事实。总体面积与重点区计数由 [metric:site_area_sqm] [metric:key_area_count] 记录，场景与验收门计数由 [metric:scenario_node_count] [metric:service_acceptance_gate_count] 记录。unknown 指标包括建筑总量、容积率、道路面积以及所有缺少官方条件的工程与法定数据。
 
 合规矩阵逐条覆盖公告 1.3、1.4、1.5 和 agent.1-agent.6；标准矩阵覆盖 mandatory 标准；设计深度矩阵覆盖现状诊断、三层范围、总体结构、用地、强度待确认、体量风貌、拆改留、交通、市政、蓝绿、三区、项目、分期、指标与风险。[depth:risk_missing_data]
 

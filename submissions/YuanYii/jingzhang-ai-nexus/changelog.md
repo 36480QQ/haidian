@@ -17,6 +17,36 @@
 | **2.0** | v1.0.0–v1.2.0 | 首次提交 + 合规精细化 |
 | **1.0** | v0.x（~15 次） | 本地早期迭代：概念形成 / 数据搭建 |
 
+## v9.3 - 2026-08-11（P2 批深化补充）
+
+P2 批优化（O6/O7/O8，版本保持 v9.3）：
+- **O6 运营实施路线图**：proposal.md/en 新增「运营实施路线图（概念）」小节——JZ-01~06 × 概念责任主体 × 资金来源假设 × 三年里程碑表（第 1 年试点/第 2-3 年成型/第 4-5 年示范），全部 confidence=low 概念措辞，验收走 Proof-Mile 闭环
+- **O7 Logo VI 基础包**：visual/assets/logo-vi/ 新增主版/反白/单色 SVG+PNG（双轨 × 神经网络母题）+ VI 规范页（最小尺寸/安全空间/禁用规则/色彩字体 token）
+- **O8 官方数据重算脚本**：scripts/recalc_on_official_data.py 一键重算入口（官方 geojson → EPSG:4548 全指标重算 → metrics 更新 → 差异报告 → 哈希刷新指引）；dry-run 已验证
+- **视觉索引同步**：proposal.md/en 图件索引更新（场景卡总览图、Logo VI 包、PDF v9.3、比例尺/指北针/地名说明、重算脚本引用）
+- 回归：self-check 四门禁 PASS
+
+## v9.3 - 2026-08-11（PDF 数据同步补记）
+
+手动 PDF 原稿（Pages）数据同步（保持文档结构不变）：
+- **用地数值修正**：LU-001 312.0→311.9、LU-002 270.9→270.8、LU-003 309.2→309.4（zh+en 4 份 docx，共 44 处替换），与 land_use.geojson EPSG:4548 实测一致
+- **版本号**：全部页脚 v9.2 → v9.3（zh+en）
+- **场景卡总览图重绘**：对齐主稿 L1=8/L2=4/L3=1（06/07/11/13 四卡等级修正），image 逐卡验证
+- **metrics.json 新增 building_density**（0.158，保持「全部指标可回溯」声明成立）
+- **PDF 重新导出**：Pages AppleScript（export as PDF to 语法）导出 4 份规范命名 PDF 至 drawings/；旧命名文件归档
+- **checklist 同步**：current_pdf_version=v9.3
+- 回归：self-check 四门禁 PASS
+
+## v9.3 - 2026-08-11
+
+77 分评审后优化包（O2-O9，基于 Review Agent 丢分事实分析）：
+- **O4 指标扩充**：metrics.json 新增 greenway_length_km（22.71 km，top-3 绿地斑块并集周长骨架）与 tod_station_500m_cover 站点明细（五道口/清华东路西口/大钟寺三站 500m 覆盖分解），交通市政章同步双语量化描述
+- **O3 三区节点级设计深化**：众智园（国家级 AI 模型测试场 15ha/清河低碳界面 1.5km/安全治理沙盒集群 8ha）、原点社区（开源发布厅 5ha/近校转化街 800m/清华园印记公园 6ha）、大钟寺（TOD 核心 10ha/四象限连廊 600m/国际路演客厅 4ha），全部 confidence=low 概念级
+- **O2 图件规范化**：site-overview 叠加五道口/清华东路西口/大钟寺/清河/小月河地名标注；全部地图图件补 2km/1km 比例尺 + 指北针；去除裸经纬度轴
+- **O5 场景卡视觉化**：新增 13 大 AI 场景卡总览图（L1/L2/L3 准入色标 + AI 测试/公开展示 TRL 标识，中英双语），嵌入 proposal 与 visual
+- **manifest 结构修复**：manifest.json 自引用条目恢复为无 sha256 的 role=manifest 规范结构（消除自引用 hash 循环）
+- 回归：self-check 四门禁 PASS、官方评分脚本 8/8 pass
+
 ## v9.2 - 2026-08-11
 
 批判性分析修复包（14 项：8 硬伤 + 6 结构缺陷）：
@@ -34,6 +64,7 @@
 - **C5 图件重做**：key-areas.png / land-use-structure.png 重绘（三区名称标注、去除经纬度轴）；ecosystem-map.en.png / three-areas-two-wings.en.png 生成真正英文版，替换中文镜像
 - **C6 合规加固**：15% 抽成改为 10%-20% 区间建议；删除无归属的 open-pulse 引用
 - **版本号统一升级**：proposal.md / proposal.en.md / manifest.json / visual 中英 → v9.2
+- **PDF 全套重制（追加）**：A3 文册 10 页 / A0 展板 7 板，中英 4 份全部重制——13 张新场景卡、CVP 10%-20% 区间、MNR 用地分类、版本 v9.2、删除旧版无依据合规断言（GB 50137/500m 100%/三星绿建 100%）；每页多区块高密度排版，图件索引表同步更新
 
 ---
 
