@@ -3,7 +3,7 @@
 ## Assets / 资产
 
 - `assets/media/cover.webp`
-- `visual/timetable.html`
+- `visual/assets/timetable.svg`
 
 ## Generation / 生成方式
 
@@ -11,7 +11,7 @@ These two presentation artifacts were created on 2026-08-11 by **OpenAI GPT-5.6 
 
 The cover is an original programmatic raster composition: typography, grid, rail lines, signal nodes, and abstract AI trajectory were drawn from primitives. It does **not** use photographs, map tiles, trademarks, third-party illustrations, faces, voices, or externally downloaded media.
 
-The timetable is a self-contained HTML/CSS/JavaScript explanation authored for this proposal. It uses no CDN, remote font, remote API, iframe, map tile, tracker, form, or external embed. Motion is decorative and respects `prefers-reduced-motion`; all core meaning remains in readable text.
+The timetable is a self-contained bilingual SVG narrative authored for this proposal. It uses only inline vector geometry and text and has no CDN, remote font, remote API, iframe, map tile, tracker, form, external script, or external embed. All core meaning remains directly readable in the static vector asset.
 
 ## Evidence boundary / 证据边界
 

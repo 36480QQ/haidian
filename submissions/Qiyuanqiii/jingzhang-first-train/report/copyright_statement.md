@@ -2,7 +2,7 @@
 
 ## 生成主体 / Generating Agent
 
-本提交包的主体文字、几何数据、必交图件、PDF 与原有静态 HTML 由原声明智能体（Claude Code，底层模型 deepseek-v4-flash[1m]）依据公开或用户提供已清权资料生成。2026-08-11 的多模态增量由 OpenAI GPT-5.6 Sol in ChatGPT 生成，包括 `assets/media/cover.webp`、`visual/timetable.html`、权利说明和对应元数据更新。生成方法、来源与限制记录于 `sources.json`、`assumptions.json`、`proposal.md` 与 `assets/media/cover-rights.md`。本方案为开放共创概念建议，不构成审定结论。
+本提交包的主体文字、几何数据、必交图件、PDF 与原有静态 HTML 由原声明智能体（Claude Code，底层模型 deepseek-v4-flash[1m]）依据公开或用户提供已清权资料生成。2026-08-11 的多模态增量由 OpenAI GPT-5.6 Sol in ChatGPT 生成，包括 `assets/media/cover.webp`、`visual/assets/timetable.svg`、权利说明和对应元数据更新。生成方法、来源与限制记录于 `sources.json`、`assumptions.json`、`proposal.md` 与 `assets/media/cover-rights.md`。本方案为开放共创概念建议，不构成审定结论。
 
 ## 资料来源边界 / Source Boundaries
 
@@ -22,7 +22,7 @@
 | assets/figures/*.png | 图件 | 原 Agent 基于提交几何用 matplotlib 生成 | 无第三方版权素材 | 中英两套；未使用外部图片 |
 | visual/index.html / index.en.html | 可视化 | 原 Agent 生成，内嵌自绘 SVG | 无第三方素材 | 离线静态，无远程资源 |
 | assets/media/cover.webp | 自定义封面 | GPT-5.6 Sol + 本地程序化绘制 | 无第三方媒体素材 | 概念封面；非现场实景、非官方效果图 |
-| visual/timetable.html | 多模态/交互叙事 | GPT-5.6 Sol 生成单文件 HTML/CSS/JS | 无第三方素材 | 中英双语同页；离线；支持 reduced motion 与键盘 |
+| visual/assets/timetable.svg | 多模态/静态叙事图 | GPT-5.6 Sol 生成自包含 SVG | 无第三方素材 | 中英双语同图；离线；无远程资源 |
 | assets/media/cover-rights.md | 权利说明 | GPT-5.6 Sol | 原创文本 | 记录生成、权利、无障碍与证据边界 |
 | report/proposal.html / proposal.en.html | 渲染报告 | 由 proposal.md 本地渲染 | 无第三方素材 | 离线静态 |
 | drawings/a3-booklet.pdf / a0-boards.pdf | 图纸 | 原 Agent 用 matplotlib 生成 | 无第三方素材 | 中英两套 |
@@ -44,4 +44,4 @@
 
 ## 离线要求 / Offline Requirement
 
-`visual/index.html`、`visual/index.en.html` 与 `visual/timetable.html` 均不依赖远程字体、地图瓦片、网络 API、跟踪器、iframe 或外部媒体。`visual/timetable.html` 的动画仅作辅助表达，遵循 `prefers-reduced-motion`；核心内容无需动画即可阅读。
+`visual/index.html`、`visual/index.en.html` 与 `visual/assets/timetable.svg` 均不依赖远程字体、地图瓦片、网络 API、跟踪器、iframe 或外部媒体。新增时刻表为静态自包含 SVG，核心内容直接可读。
