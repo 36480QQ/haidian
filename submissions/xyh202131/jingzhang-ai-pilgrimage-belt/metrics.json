@@ -1170,7 +1170,7 @@
       "assumptions": ["Counts required contract fields, not measured lifecycle cost, repairability, or component performance."]
     },
     "maintenance_real_complaint_count": {
-      "status": "pending",
+      "status": "known",
       "value": 0,
       "unit": "count",
       "source_files": ["visual/assets/key-area-evidence-matrix.json"],
@@ -1180,7 +1180,7 @@
       "reason": "No verified complaint intake, consent, owner, or field record has been supplied."
     },
     "maintenance_real_work_order_count": {
-      "status": "pending",
+      "status": "known",
       "value": 0,
       "unit": "count",
       "source_files": ["visual/assets/key-area-evidence-matrix.json"],
@@ -1190,7 +1190,7 @@
       "reason": "No accountable owner has accepted a real work order."
     },
     "maintenance_confirmed_personnel_count": {
-      "status": "pending",
+      "status": "known",
       "value": 0,
       "unit": "count",
       "source_files": ["visual/assets/key-area-evidence-matrix.json"],
@@ -1200,7 +1200,7 @@
       "reason": "Maintenance workers, cleaners, staffed workers, curators, and co-testers are not confirmed personnel assignments."
     },
     "maintenance_real_budget_count": {
-      "status": "pending",
+      "status": "known",
       "value": 0,
       "unit": "count",
       "source_files": ["visual/assets/key-area-evidence-matrix.json"],
@@ -1230,7 +1230,7 @@
       "reason": "No accepted work order or verified time record exists."
     },
     "maintenance_real_repair_count": {
-      "status": "pending",
+      "status": "known",
       "value": 0,
       "unit": "count",
       "source_files": ["visual/assets/key-area-evidence-matrix.json"],
@@ -1240,7 +1240,7 @@
       "reason": "No inspection, cleaning, adjustment, repair, component replacement, or procurement decision has been verified."
     },
     "maintenance_independent_recheck_count": {
-      "status": "pending",
+      "status": "known",
       "value": 0,
       "unit": "count",
       "source_files": ["visual/assets/key-area-evidence-matrix.json"],
@@ -1250,7 +1250,7 @@
       "reason": "No repair or independent recheck evidence exists."
     },
     "maintenance_measured_effect_count": {
-      "status": "pending",
+      "status": "known",
       "value": 0,
       "unit": "count",
       "source_files": ["visual/assets/key-area-evidence-matrix.json"],
