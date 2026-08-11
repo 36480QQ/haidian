@@ -126,38 +126,40 @@
         "source_id": "KEY-AREA-SOURCE",
         "context_source_id": "DAZHONGSI-RENEWAL",
         "context_source_status": "official_page_withdrawn_or_deleted_as_of_2026-08-12",
-        "source_title": "仓库临时工作包络；历史公示已撤稿或删除，不据此复原边界或主体",
+        "source_title": "任务书大钟寺站位置线索与OSM L4具名站点用于方位校核；工作窗近似平移并保持经纬度跨度，投影面积变化约0.027%，调整至SITE-001临时范围内",
         "evidence_level": "L5",
         "spatial_precision": "diagrammatic",
         "position_status": "provisional",
         "construction_note": "NOT FOR CONSTRUCTION",
-        "area_sqm_calculated": 720454.219,
+        "area_sqm_calculated": 720262.718,
         "area_semantics": "provisional submission geometry for internal comparison only",
-        "usage_note": "用于三处重点区域的功能、运营和场景研究；不得作为法定边界或精确开发规模依据。"
+        "usage_note": "具名站点位于工作窗西侧约90米，仅用于大钟寺站周边空间研究和内部校核；不作为法定边界、站口、地块、权属或实施范围依据。",
+        "locator_source_id": "OSM-WORKING-DATA",
+        "locator_basis": "named_dazhongsi_station_context_plus_provisional_site_containment"
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.342,
-              39.944
+              116.3401,
+              39.9625
             ],
             [
-              116.355,
-              39.944
+              116.3531,
+              39.9625
             ],
             [
-              116.355,
-              39.94984
+              116.3531,
+              39.96834
             ],
             [
-              116.342,
-              39.94984
+              116.3401,
+              39.96834
             ],
             [
-              116.342,
-              39.944
+              116.3401,
+              39.9625
             ]
           ]
         ]
