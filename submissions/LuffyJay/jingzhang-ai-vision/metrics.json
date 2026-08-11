@@ -14,10 +14,11 @@
         "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
       ],
       "formula": "公告声明值，非临时边界计算值",
-      "confidence": "high",
+      "confidence": "medium",
       "assumption_ids": [
         "A-BOUNDARIES-001"
-      ]
+      ],
+      "confidence_note": "Announced area value quoted from official announcement; boundary geometry in this package is provisional_constraint (official_boundary=false, confidence=medium). Confidence aligned to medium pending official geometry."
     },
     "coordinated_research_area_sqm": {
       "name_zh": "统筹研究范围面积",
@@ -31,10 +32,11 @@
         "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
       ],
       "formula": "公告声明值",
-      "confidence": "high",
+      "confidence": "medium",
       "assumption_ids": [
         "A-BOUNDARIES-001"
-      ]
+      ],
+      "confidence_note": "Announced area value quoted from official announcement; boundary geometry in this package is provisional_constraint (official_boundary=false, confidence=medium). Confidence aligned to medium pending official geometry."
     },
     "key_area_total_sqm": {
       "name_zh": "重点区域总面积",
@@ -48,15 +50,16 @@
         "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
       ],
       "formula": "三区公告面积之和: 1921000 + 1043000 + 720000",
-      "confidence": "high",
+      "confidence": "medium",
       "assumption_ids": [
         "A-BOUNDARIES-001"
-      ]
+      ],
+      "confidence_note": "Announced area value quoted from official announcement; boundary geometry in this package is provisional_constraint (official_boundary=false, confidence=medium). Confidence aligned to medium pending official geometry."
     },
     "green_ratio": {
       "name_zh": "绿地率",
-      "status": "unknown",
-      "value": null,
+      "status": "known",
+      "value": 0.191423,
       "unit": "ratio",
       "source_files": [
         "geometry/green_space.geojson",
@@ -65,19 +68,18 @@
       "source_ids": [
         "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605"
       ],
-      "formula": "generated_green_area / site_area * 100, 其中 generated_green_area 从 green_space.geojson 图层计算，site_area 基于临时边界",
-      "confidence": "low",
+      "formula": "union(green_space) / overall_design_area in EPSG:4548; computed 2,184,673.756 / 11,412,825.386 sqm",
+      "confidence": "medium",
+      "confidence_note": "Computed from design layers on provisional boundary; recalibrate with official boundary.",
       "assumption_ids": [
         "A-BOUNDARIES-001",
         "A-METRICS-001"
-      ],
-      "usage_note": "基于临时边界生成的设计层估算，非精确测量值",
-      "reason": "Based on provisional boundaries; recalibration required with official data. Formerly estimated at conceptual level."
+      ]
     },
     "public_space_ratio": {
       "name_zh": "公共空间比例",
-      "status": "unknown",
-      "value": null,
+      "status": "known",
+      "value": 0.069353,
       "unit": "ratio",
       "source_files": [
         "geometry/public_space.geojson",
@@ -86,13 +88,13 @@
       "source_ids": [
         "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605"
       ],
-      "formula": "public_space_area / site_area * 100",
-      "confidence": "low",
+      "formula": "union(public_space) / overall_design_area in EPSG:4548; computed 791,518.894 / 11,412,825.386 sqm",
+      "confidence": "medium",
+      "confidence_note": "Computed from design layers on provisional boundary; recalibrate with official boundary.",
       "assumption_ids": [
         "A-BOUNDARIES-001",
         "A-METRICS-001"
-      ],
-      "reason": "Based on provisional boundaries; recalibration required with official data. Formerly estimated at conceptual level."
+      ]
     },
     "ai_scenario_nodes": {
       "name_zh": "AI场景节点数",

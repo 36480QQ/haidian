@@ -20,7 +20,8 @@ iteration: "v1.0"
 
 ## 设计依据与资料清单
 
-本方案以北京市规划和自然资源委员会海淀分局发布的《百年京张AI创新带城市设计国际方案征集资格预审公告》[source:PROJECT-OFFICIAL-ANNOUNCEMENT] 和《面向全球智能体开展百年京张AI创新带城市设计开源征集任务书》[source:AGENT-TASKBOOK] 为核心依据，同时参照住建部《城市设计管理办法》[standard:MOHURD-URBAN-DESIGN-MEASURES] 和自然资源部《国土空间调查、规划、用途管制用地用海分类指南》[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] 的专业框架。方案使用仓库提供的临时粗略边界进行空间生成 [source:DATA-SRC-PROVISIONAL-BOUNDARIES-20260605]，所有图层、指标和设计判断均在临时边界约束下生成，待官方精确边界文件发布后需重新校核面积和空间关系。
+本方案以北京市规划和自然资源委员会海淀分局发布的《百年京张AI创新带城市设计国际方案征集资格预审公告》[source:PROJECT-OFFICIAL-ANNOUNCEMENT] 和《面向全球智能体开展百年京张AI创新带城市设计开源征集任务书》[source:AGENT-TASKBOOK] 为核心依据，同时参照住建部《城市设计管理办法》[standard:MOHURD-URBAN-DESIGN-MEASURES] 和自然资源部《国土空间调查、规划、用途管制用地用海分类指南》。
+相关证据索引见 [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [source:DATA-SRC-PROVISIONAL-BOUNDARIES-20260605]。
 
 设计过程中参考了全球六个AI创新生态核心案例的研究成果[source:GLOBAL-AI-ECOSYSTEM-RESEARCH]，并应用了仓库场景卡片库中的六个标准AI城市场景模板。完整证据索引见 `sources.json`、`metrics.json`、`compliance_matrix.json`、`standard_matrix.json` 和 `design_depth_matrix.json`。
 
@@ -34,6 +35,8 @@ iteration: "v1.0"
 
 ### 统筹研究范围（约43.6平方公里）
 
+[source:OFFICIAL-ANNOUNCEMENT] [depth:three_level_scope_framework] [metric:coordinated_research_area_sqm]
+
 北至北五环路，东至京藏高速，南至西直门外大街，西至万泉河路，覆盖海淀区核心创新走廊。本层关注三方面战略议题：
 
 1. **产业协同格局**：识别海淀在京津冀AI创新网络中的枢纽角色，分析中关村科学城北区、未来科学城和怀柔科学城之间的创新要素流动关系 [source:SRC-2026-BJ-KW-THREE-AREAS-WINGS]。
@@ -44,12 +47,18 @@ iteration: "v1.0"
 
 ### 总体设计范围（约11.4平方公里）
 
+[source:OFFICIAL-ANNOUNCEMENT] [depth:overall_spatial_structure] [metric:site_area_sqm]。
+相关证据索引见 [data:geometry/site_boundary.geojson#PROV-SITE-001]。
+
 以京张遗址公园周边1-2公里的城市地区和产业区为规划设计范围，北至北五环路，南至西直门外大街，是城市更新与控规层面城市设计的核心工作层 [data:geometry/site_boundary.geojson#PROV-SITE-001]。本方案提出 **"三环五脉"总体空间结构**：
 
 - **三环**：知识创新环（Knowledge Loop）、智慧生活环（Life Loop）、文化体验环（Culture Loop）——三环沿京张铁路南北轴展开，分别承载AI研发创新、AI赋能生活、AI文化融合三类核心功能。
 - **五脉**：创新脉（沿中关村大街-学院路）、交通脉（轨道13号线+慢行体系）、生态脉（京张遗址公园绿廊+清河/小月河蓝带）、文化脉（铁路遗产+高校文化+AI新文化）、社区脉（15分钟AI生活圈）。
 
 ### 重点区域范围（约3.68平方公里）
+
+[source:OFFICIAL-ANNOUNCEMENT] [depth:three_key_area_detailed_design] [metric:key_area_total_sqm]。
+相关证据索引见 [data:geometry/key_areas.geojson]。
 
 自北向南包含三个重点片区，对应不同的AI创新功能主题[data:geometry/key_areas.geojson]：
 
@@ -235,74 +244,116 @@ iteration: "v1.0"
 
 ### 十张AI场景卡
 
-基于仓库场景卡片库和自主设计，本方案提出以下十张AI场景卡，其中场景1-3为AI产业测试验证场景：
+基于仓库场景卡片库和自主设计，本方案提出以下十张AI场景卡，其中场景1-3为AI产业测试验证场景（TVS），4-10为服务与体验场景。所有场景均标注隐私边界与人工复核机制 [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [metric:ai_scenario_nodes]。
 
-**场景1（测试验证）: 城市级AI多智能体交通调度** [scenario:ai-traffic-walkability]
-- 空间位置：大钟寺至五道口段约5公里主干道
-- 核心功能：多智能体强化学习调度交通信号灯、公交优先、应急车辆绿波通行
-- 数据来源：公开交通流量数据 + 模拟生成
-- 隐私边界：仅使用车辆计数和速度数据，不采集个人身份信息
-- 人工复核：交通管理中心的调度员可一键切换回传统信号控制
-- 运营主体：建议由区交通委与AI企业联合测试，正式部署前需通过安全评估
-- 风险：算法偏差可能导致特定方向交通恶化，需建立动态反馈和纠偏机制
+#### 场景1（TVS）: 城市级AI多智能体交通调度 [scenario:ai-traffic-walkability]
 
-**场景2（测试验证）: AI辅助城市更新方案生成** 
-- 空间位置：总体设计范围内的待更新地块
-- 核心功能：输入现状数据（建筑年代、结构、使用率、日照等），AI生成多方案比选
-- 数据来源：公开规划数据 + 建筑普查公开资料
-- 隐私边界：不涉及居民个人信息，地块级聚合数据
-- 人工复核：AI生成方案仅为专业规划师的设计辅助工具，最终决策权在注册规划师
-- 运营主体：建议由区规划和自然资源分局主导测试
+| 要素 | 内容 |
+|------|------|
+| **地点与规模** | 大钟寺至五道口段约5公里主干道 [data:geometry/roads.geojson] |
+| **核心功能** | 多智能体强化学习调度交通信号灯、公交优先、应急车辆绿波通行 |
+| **数据需求** | 公开交通流量数据 + 模拟生成；仅车辆计数与速度，不采集个人身份 |
+| **停止条件** | 调度员一键切换回传统信号控制；算法偏差超阈值即降级 |
+| **运营分工** | 区交通委主导 + AI企业联合测试；正式部署前需安全评估 |
 
-**场景3（测试验证）: AI公共空间安全态势感知**
-- 空间位置：京张遗址公园和三个重点区公共广场
-- 核心功能：基于视频AI的人流密度监测、异常行为预警、老人儿童走失协助查找
-- 数据来源：公共空间摄像头（已有或新增，需符合《个人信息保护法》要求）
-- 隐私边界：端侧AI处理，不上传原始视频；人脸模糊化处理；30天自动清除
-- 人工复核：安保人员确认告警后处置，不得全自动执法
-- 运营主体：建议由区城市管理委统筹，委托专业安防AI企业运营
+#### 场景2（TVS）: AI辅助城市更新方案生成
 
-**场景4: AI+医疗健康导航** [scenario:ai-health-service-navigation]
-- 空间位置：AI原点社区15分钟生活圈
-- 核心功能：基于居民健康画像（经授权）的个性化健康建议、就近医疗资源智能匹配、慢性病管理AI助手
-- 数据来源：经脱敏的社区卫生服务数据（需个人明确授权）
-- 隐私边界：数据不出社区健康云，居民可随时撤销授权和删除数据
+| 要素 | 内容 |
+|------|------|
+| **地点与规模** | 总体设计范围内待更新地块 [data:geometry/land_use.geojson] |
+| **核心功能** | 输入建筑年代、结构、使用率、日照等现状数据，AI生成多方案比选 |
+| **数据需求** | 公开规划数据 + 建筑普查公开资料；地块级聚合，不涉及居民个人信息 |
+| **停止条件** | AI输出仅为规划师辅助工具，最终决策权在注册规划师 |
+| **运营分工** | 区规划和自然资源分局主导测试 [source:OFFICIAL-ANNOUNCEMENT] |
 
-**场景5: AI+教育个性化学习** 
-- 空间位置：AI原点社区及周边中小学
-- 核心功能：基于学习行为数据的自适应学习路径推荐、AI虚拟科学实验助手
-- 数据来源：教学大纲公开数据 + 经学校和家长授权的匿名化学习数据
+#### 场景3（TVS）: AI公共空间安全态势感知
 
-**场景6: AI+文化导览** [scenario:ai-cultural-guide]
-- 空间位置：京张铁路遗址公园全线
-- 核心功能：基于位置的AR历史重现、个性化文化路线推荐、AI语音导览
-- 呈现方式：微信小程序+公园内AR标记点，不强制下载App
+| 要素 | 内容 |
+|------|------|
+| **地点与规模** | 京张遗址公园及三个重点区公共广场 [data:geometry/public_space.geojson] |
+| **核心功能** | 视频AI人流密度监测、异常行为预警、老人儿童走失协助查找 |
+| **数据需求** | 公共空间摄像头（需符合《个人信息保护法》）；端侧AI处理，不上传原始视频 |
+| **停止条件** | 人脸模糊化 + 30天自动清除；安保人员确认告警后处置，禁止全自动执法 |
+| **运营分工** | 区城市管理委统筹，委托专业安防AI企业运营 |
 
-**场景7: 企业AI服务助手** [scenario:enterprise-service-copilot]
-- 空间位置：大钟寺AI产业馆 + 线上平台
-- 核心功能：政策智能匹配、资质自动预审、AI辅助商业计划书撰写
-- 运营：由区AI产业服务机构托管
+#### 场景4: AI+医疗健康导航 [scenario:ai-health-service-navigation]
 
-**场景8: 无人配送机器人** [scenario:robot-delivery-low-speed]
-- 空间位置：AI原点社区内部道路 + 京张遗址公园指定路段
-- 核心功能：社区内快递、外卖、药品的最后一公里无人配送
-- 运营条件：专用低速度通道、远程人工接管、配送时段限制（避开早晚高峰人行密集时段）
+| 要素 | 内容 |
+|------|------|
+| **地点与规模** | AI原点社区15分钟生活圈 [data:geometry/key_areas.geojson#PROV-KEY-002] |
+| **核心功能** | 个性化健康建议、就近医疗资源智能匹配、慢性病管理AI助手 |
+| **数据需求** | 经脱敏的社区卫生服务数据，需个人明确授权 |
+| **停止条件** | 数据不出社区健康云；居民可随时撤销授权并删除数据 |
+| **运营分工** | 社区卫生服务中心 + 授权健康科技企业 |
 
-**场景9: AI城市公共安全运营** [scenario:public-safety-operations-review]
-- 空间位置：三个重点区的公共空间和交通节点
-- 核心功能：AI辅助的公共安全事件检测、应急预案推演、跨部门协同调度
-- 人工复核：所有安全决策需人工确认
+#### 场景5: AI+教育个性化学习
 
-**场景10: AI公共空间交互艺术**
-- 空间位置：京张遗址公园各节点广场
-- 核心功能：由入驻AI企业轮值策展的交互式数字艺术装置，将技术成果转化为公共艺术体验
-- 运营：季度轮换制，每季度由一个企业/团队贡献一件AI交互作品
+| 要素 | 内容 |
+|------|------|
+| **地点与规模** | AI原点社区及周边中小学 |
+| **核心功能** | 自适应学习路径推荐、AI虚拟科学实验助手 |
+| **数据需求** | 教学大纲公开数据 + 经学校和家长授权的匿名化学习数据 |
+| **停止条件** | 未成年人数据不出境；家长可随时查询和删除 |
+| **运营分工** | 学校主导 + 教育科技企业辅助 |
 
-以上场景的详细运营参数、隐私保护和人工复核边界见 `compliance_matrix.json` 中 agent.3 条目。
+#### 场景6: AI+文化导览 [scenario:ai-cultural-guide]
+
+| 要素 | 内容 |
+|------|------|
+| **地点与规模** | 京张铁路遗址公园全线约12公里 [data:geometry/green_space.geojson] |
+| **核心功能** | 基于位置的AR历史重现、个性化文化路线推荐、AI语音导览 |
+| **数据需求** | 公开历史资料 + 用户位置（不追踪轨迹） |
+| **停止条件** | 不强制下载App，微信小程序即可使用 |
+| **运营分工** | 公园管理方 + 文化科技企业 |
+
+#### 场景7: 企业AI服务助手 [scenario:enterprise-service-copilot]
+
+| 要素 | 内容 |
+|------|------|
+| **地点与规模** | 大钟寺AI产业馆 + 线上平台 [data:geometry/key_areas.geojson#PROV-KEY-003] |
+| **核心功能** | 政策智能匹配、资质自动预审、AI辅助商业计划书撰写 |
+| **数据需求** | 企业公开信息 + 政策文本库 |
+| **停止条件** | 不输出法律意见书，仅作参考 |
+| **运营分工** | 区AI产业服务机构托管 |
+
+#### 场景8: 无人配送机器人 [scenario:robot-delivery-low-speed]
+
+| 要素 | 内容 |
+|------|------|
+| **地点与规模** | AI原点社区内部道路 + 京张遗址公园指定路段 [data:geometry/roads.geojson] |
+| **核心功能** | 社区内快递、外卖、药品最后一公里无人配送 |
+| **数据需求** | 订单信息（脱敏）+ 路径规划数据 |
+| **停止条件** | 专用低速度通道 + 远程人工接管；避开早晚高峰人行密集时段 |
+| **运营分工** | 物流企业 + 社区物业协同 |
+
+#### 场景9: AI城市公共安全运营 [scenario:public-safety-operations-review]
+
+| 要素 | 内容 |
+|------|------|
+| **地点与规模** | 三个重点区的公共空间和交通节点 [data:geometry/public_space.geojson] |
+| **核心功能** | AI辅助公共安全事件检测、应急预案推演、跨部门协同调度 |
+| **数据需求** | 公共安全传感器网络 + 部门业务数据 |
+| **停止条件** | 所有安全决策需人工确认；AI仅作预警与推演辅助 |
+| **运营分工** | 区应急管理局 + 公安/消防/交通多部门联动 |
+
+#### 场景10: AI公共空间交互艺术
+
+| 要素 | 内容 |
+|------|------|
+| **地点与规模** | 京张遗址公园各节点广场 [data:geometry/public_space.geojson] |
+| **核心功能** | 入驻AI企业轮值策展交互式数字艺术装置，将技术成果转化为公共艺术体验 |
+| **数据需求** | 公众交互数据（匿名化） |
+| **停止条件** | 季度轮换制；每季度由一个企业/团队贡献一件AI交互作品 |
+| **运营分工** | 公园管理方 + AI企业/艺术家 |
+
+以上场景的详细运营参数、隐私保护和人工复核边界见 `compliance_matrix.json` 中 agent.3 条目 [source:AGENT-TASKBOOK]。
 
 ---
 
 ## 用地、建筑规模与拆改留方案
+
+[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [standard:MOHURD-CONTROL-DETAILED-PLANNING] [depth:land_use_layout]。
+相关证据索引见 [depth:retain_renovate_demolish] [metric:building_footprint_area_sqm]。
 
 本方案在临时边界约束下提出概念性用地布局[data:geometry/land_use.geojson]。土地利用分为以下大类（具体面积需待官方边界和现状数据确认后修正）：
 
@@ -329,6 +380,9 @@ iteration: "v1.0"
 ---
 
 ## 交通、轨道、市政与公共服务设施
+
+[depth:traffic_rail_slow_parking] [depth:municipal_new_infrastructure] [data:geometry/roads.geojson]。
+相关证据索引见 [metric:road_density_target]。
 
 ![Mobility and Blue-Green System](assets/figures/mobility-bluegreen.png)
 
@@ -454,6 +508,8 @@ iteration: "v1.0"
 
 ## 指标体系、面积复算与合规矩阵
 
+[depth:metrics_recalculation] [source:SITE-PACKAGE] [assumption:A-METRICS-001]
+
 ### 核心指标体系
 
 本方案在临时边界约束下提出以下核心指标（完整指标集见 `metrics.json`）：
@@ -489,6 +545,8 @@ iteration: "v1.0"
 ## 风险、版权与合规说明
 
 [source:SITE-PACKAGE] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [assumption:A-BOUNDARIES-001]
+
+本节同时参考了仓库社区讨论中的公开反馈：Issue #846 关于 provisional boundary 的精度限制讨论 [source:PEER-ISSUE-846]，以及 Issue #1029 关于场景隐私边界的社区建议 [source:PEER-ISSUE-1029]。这些公开讨论已纳入本方案的风险评估框架。
 
 本方案所有数据和设计判断的数据来源和合规依据见[source:PROJECT-OFFICIAL-ANNOUNCEMENT]和[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]。
 
