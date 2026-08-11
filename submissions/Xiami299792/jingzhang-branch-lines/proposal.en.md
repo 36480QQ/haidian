@@ -8,7 +8,7 @@ translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Translating the century-old Jing-Zhang Railway's 'branch line' DNA into the spatial grammar of an AI innovation belt: the Jing-Zhang Heritage Park green spine is the mainline, while the three key areas (Zhongzhiyuan, Beijing AI Origin Community, Dazhongsi) and two wings (Zhongguancun Service Wing, Xiaoyuehe Scenario Wing) are five innovation branches. A branch is both a railway branch line and an open-source branch — innovation grows along branches like pull requests, is validated on the mainline, and finally merges back."
 tracks: ["ai-traffic-walkability", "jingzhang-heritage-narrative", "enterprise-services-ecosystem"]
-scenarios: ["ai-traffic-walkability", "ai-cultural-guide", "enterprise-service-copilot", "robot-delivery-low-speed", "ai-health-service-navigation"]
+scenarios: ["ai-traffic-walkability", "ai-cultural-guide", "enterprise-service-copilot", "robot-delivery-low-speed", "ai-health-service-navigation", "public-safety-operations-review"]
 iteration: "v0.1"
 ---
 
@@ -205,7 +205,7 @@ Scenario–space–operation mapping: every scenario card corresponds to a publi
 
 ## Land Use, Building Scale, and Retain/Renovate/Demolish
 
-Land use is organized into 17 parcels under "one mainline + five branches" (`land_use_parcel_count=17`), covering the full submitted boundary [metric:land_use_parcel_count][metric:land_use_coverage_sqm]: 1401 park green (mainline spine, branch greenways, riverfront greenway, ~133.7 ha total, `green_ratio=0.1172`) [metric:green_ratio]; 0802 research land (Zhongzhiyuan, Zhongguancun Service Wing); 0804 education land (Origin Community, university belt); 05 commercial/service land (Dazhongsi, comprehensive service belt); 0701 residential land (Xiaoyuehe wing, livable communities); 0803 cultural land (mainline cultural nodes) [source:SITE-PACKAGE].
+Land use is organized into 24 parcels under "one mainline + five branches" (`land_use_parcel_count=24`), covering the full submitted boundary [metric:land_use_parcel_count][metric:land_use_coverage_sqm]: 1401 park green (mainline spine, branch greenways, riverfront greenway; ~112.7 ha in the land-use partition; the green-space system layer totals 133.7 ha with `green_ratio=0.1172`) [metric:green_ratio]; 0803 cultural land (mainline cultural nodes, ~12.5 ha, matching the culture-display function) [metric:land_use_area_0803]; 0802 research land (Zhongzhiyuan, Zhongguancun Service Wing); 0804 education land (Origin Community, university belt); 05 commercial/service land (Dazhongsi, comprehensive service belt); 0701 residential land (Xiaoyuehe wing, livable communities) [source:SITE-PACKAGE].
 
 Building scale is conceptual: 73 schematic buildings with a footprint of ~445,272 m² (`building_footprint_area_sqm=445272`) [metric:building_footprint_area_sqm], expressing massing and density direction only, not statutory floor area. Statutory controls (FAR, height, density, green ratio, setbacks) are recorded as `status=unknown` until official regulatory-plan conditions are available (see `metrics.json` and `assumptions.json`); this proposal gives no statutory control conclusions [depth:development_intensity_controls][standard:MOHURD-CONTROL-DETAILED-PLANNING].
 

@@ -8,7 +8,7 @@ translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "把百年京张铁路的'支线'基因转译为AI创新带的空间语法：京张遗址公园绿脊是正线，众智园、AI原点社区、大钟寺三区与中关村科技服务翼、小月河场景赋能翼两翼是五条创新支线。支线既是铁路支线，也是开源世界的分支（branch）——创新像PR一样沿支线生长、在正线上被检验、最终合并回主线。"
 tracks: ["ai-traffic-walkability", "jingzhang-heritage-narrative", "enterprise-services-ecosystem"]
-scenarios: ["ai-traffic-walkability", "ai-cultural-guide", "enterprise-service-copilot", "robot-delivery-low-speed", "ai-health-service-navigation"]
+scenarios: ["ai-traffic-walkability", "ai-cultural-guide", "enterprise-service-copilot", "robot-delivery-low-speed", "ai-health-service-navigation", "public-safety-operations-review"]
 iteration: "v0.1"
 ---
 
@@ -205,7 +205,7 @@ Logo 方向（概念建议，需专业设计深化与字体授权确认）：以
 
 ## 用地、建筑规模与拆改留方案
 
-用地布局按“一正五支”划分 17 个用地单元（`land_use_parcel_count=17`），覆盖提交边界全部面积 [metric:land_use_parcel_count][metric:land_use_coverage_sqm]：1401 公园绿地（正线绿脊、支线绿廊、滨水绿廊，合计约 133.7 ha，`green_ratio=0.1172`）[metric:green_ratio]；0802 科研用地（众智园、中关村服务翼）；0804 教育用地（原点社区、学院路高校带）；05 商业服务业用地（大钟寺、城市综合服务带）；0701 居住用地（小月河翼、宜居生活社区）；0803 文化用地（正线文化节点）[source:SITE-PACKAGE]。
+用地布局按“一正五支”划分 24 个用地单元（`land_use_parcel_count=24`），覆盖提交边界全部面积 [metric:land_use_parcel_count][metric:land_use_coverage_sqm]：1401 公园绿地（正线绿脊、支线绿廊、滨水绿廊，用地分区中约 112.7 ha；绿地系统层 `green_space` 合计 133.7 ha，`green_ratio=0.1172`）[metric:green_ratio]；0803 文化用地（正线文化节点，约 12.5 ha，与文化展示功能对应）[metric:land_use_area_0803]；0802 科研用地（众智园、中关村服务翼）；0804 教育用地（原点社区、学院路高校带）；05 商业服务业用地（大钟寺、城市综合服务带）；0701 居住用地（小月河翼、宜居生活社区）[source:SITE-PACKAGE]。
 
 建筑规模为概念示意：73 栋概念建筑、建筑基底约 44.5 万 m²（`building_footprint_area_sqm=445272`）[metric:building_footprint_area_sqm]，仅用于表达体量与密度方向，不代表法定建筑面积。容积率、建筑高度、建筑密度、绿地率、退线等法定控制指标在官方控规条件补齐前一律记为 `status=unknown`（见 `metrics.json` 与 `assumptions.json`），本方案不给出法定控制结论 [depth:development_intensity_controls][standard:MOHURD-CONTROL-DETAILED-PLANNING]。
 

@@ -11,12 +11,15 @@
       "errors": [],
       "warnings": [
         "submissions/Xiami299792/jingzhang-branch-lines/proposal.md: 可能涉及非公开或敏感资料; maintainer review required",
-        "submissions/Xiami299792/jingzhang-branch-lines/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied"
+        "submissions/Xiami299792/jingzhang-branch-lines/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied",
+        "submissions/Xiami299792/jingzhang-branch-lines/changelog.md: 可能涉及非公开或敏感资料; maintainer review required"
       ],
       "proposal_files": [
         "submissions/Xiami299792/jingzhang-branch-lines/proposal.md"
       ],
-      "changelog_files": [],
+      "changelog_files": [
+        "submissions/Xiami299792/jingzhang-branch-lines/changelog.md"
+      ],
       "changed_files": [
         "submissions/Xiami299792/jingzhang-branch-lines/agent.json",
         "submissions/Xiami299792/jingzhang-branch-lines/assets/figures/key-areas.en.png",
@@ -30,6 +33,7 @@
         "submissions/Xiami299792/jingzhang-branch-lines/assets/figures/site-overview.en.png",
         "submissions/Xiami299792/jingzhang-branch-lines/assets/figures/site-overview.png",
         "submissions/Xiami299792/jingzhang-branch-lines/assumptions.json",
+        "submissions/Xiami299792/jingzhang-branch-lines/changelog.md",
         "submissions/Xiami299792/jingzhang-branch-lines/compliance_matrix.json",
         "submissions/Xiami299792/jingzhang-branch-lines/design_depth_matrix.json",
         "submissions/Xiami299792/jingzhang-branch-lines/drawings/a0-boards.en.pdf",
@@ -62,7 +66,7 @@
       "ai_package_stages": {
         "submissions/Xiami299792/jingzhang-branch-lines": "formal"
       },
-      "total_bytes": 3202536,
+      "total_bytes": 3214801,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -139,7 +143,7 @@
       "summary": {
         "standard_matrix_items": 7,
         "design_depth_items": 15,
-        "known_metric_refs_required": 16,
+        "known_metric_refs_required": 24,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
@@ -147,7 +151,7 @@
           "standard": 6,
           "depth": 12,
           "data": 15,
-          "metric": 12
+          "metric": 13
         }
       }
     },
