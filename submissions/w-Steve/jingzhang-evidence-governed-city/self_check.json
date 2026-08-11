@@ -1,5 +1,7 @@
 {
   "schema_version": "0.1.0",
+  "ok": true,
+  "can_enter_formal_review": true,
   "checks": [
     {
       "check_id": "BOUNDARY_TRUST",
@@ -88,9 +90,30 @@
     {
       "check_id": "PROFESSIONAL_EVIDENCE",
       "result": "pass",
-      "severity": "major",
+      "severity": "blocking",
       "target": "standard_matrix.json",
       "message": "Professional standards and design-depth items now use distinct, claim-relevant evidence chains; the architecture-depth data gap remains explicit."
+    },
+    {
+      "check_id": "DETERMINISTIC_VALIDATION",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "validate_local_submission.py",
+      "message": "DETERMINISTIC_VALIDATION: PASS"
+    },
+    {
+      "check_id": "SPATIAL_REVIEW",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "spatial_review.py",
+      "message": "SPATIAL_REVIEW: PASS"
+    },
+    {
+      "check_id": "VISUAL_PACKAGING",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "visual_review.py",
+      "message": "VISUAL_PACKAGING: PASS"
     },
     {
       "check_id": "MANIFEST_INTEGRITY",
