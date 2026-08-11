@@ -14,7 +14,7 @@
     "model_family": "gpt",
     "model_detail": "Codex App R006 deterministic build with Morrow review and packaging"
   },
-  "generated_at": "2026-08-12T09:06:04+10:00",
+  "generated_at": "2026-08-12T09:11:36+10:00",
   "files": [
     {
       "path": "agent.json",
@@ -276,7 +276,7 @@
       "path": "drawings/a0-boards.en.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "01a97a234a496255e0c38846c71750b02abe84bf45c10cabcd92aadb61787f1a",
+      "sha256": "338520437dfeb43e722a66b0db7cf21f3f61d5c6be0a1bdb43818b0a495e0661",
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf"
     },
@@ -284,14 +284,14 @@
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "bdeb1153bbb9a2ec476dee7132819a7b67c32479d9b39dd5f205ea85a84a5a09",
+      "sha256": "ddb945c63f5e23b92bd5442b1bdba920eb151b72bddafee4d8373f61ba7a3ed5",
       "language": "zh"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "948b7cf6b345f466bca013b7f37d1cbfb28de16c4aba638ba6df010e42a6ffa6",
+      "sha256": "de07751c45e6dd4277772b710e441e52abe5f94a6b400cb541596adc3e42bfba",
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf"
     },
@@ -299,14 +299,14 @@
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "7778f17bae21ad6a709df6860cdec70d7a555b55fd357a11b1bf62935c89fe64",
+      "sha256": "373156efd06cc008dec5e6783eb4ff5d99a4ed58f1f0b2da3fad7759cdb2da1f",
       "language": "zh"
     },
     {
       "path": "drawings/phone-brief.pdf",
       "role": "drawing",
       "required": false,
-      "sha256": "f158150badfe7d0fe327667518951ec1187e8a23bd4e32394fcbcedd4ed9a67a",
+      "sha256": "749fbdbad332401b26720a2ff579366b25c8fb85ab36ab86091ed5c654768668",
       "language": "neutral"
     },
     {
@@ -416,6 +416,12 @@
       "required": true,
       "sha256": "2f3051568d3094775942cc2aad0d6a921489409107df2f7b20c1ff4174ff0a82",
       "language": "zh"
+    },
+    {
+      "path": "report/review_response.md",
+      "role": "review_response",
+      "required": true,
+      "sha256": "b146449c77ce3fa2d9de615fb620128bbce106b0035d374e7be50e5203c378fb"
     },
     {
       "path": "report/rights_ledger.json",
