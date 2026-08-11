@@ -10,14 +10,25 @@
       "ok": true,
       "errors": [],
       "warnings": [
-        "submissions/m62m61m80bpzm2/origin-rail/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied"
+        "submissions/m62m61m80bpzm2/origin-rail/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied",
+        "submissions/m62m61m80bpzm2/origin-rail/spatial.json: items[0]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/m62m61m80bpzm2/origin-rail/spatial.json: items[1]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/m62m61m80bpzm2/origin-rail/spatial.json: items[2]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/m62m61m80bpzm2/origin-rail/spatial.json: items[7]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/m62m61m80bpzm2/origin-rail/spatial.json: items[8]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/m62m61m80bpzm2/origin-rail/spatial.json: items[9]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/m62m61m80bpzm2/origin-rail/spatial.json: items[15]: provisional spatial concept needs maintainer review before being treated as public-facing context"
       ],
       "proposal_files": [
         "submissions/m62m61m80bpzm2/origin-rail/proposal.md"
       ],
-      "changelog_files": [],
+      "changelog_files": [
+        "submissions/m62m61m80bpzm2/origin-rail/changelog.md"
+      ],
       "changed_files": [
         "submissions/m62m61m80bpzm2/origin-rail/agent.json",
+        "submissions/m62m61m80bpzm2/origin-rail/assets/figures/build-plan.en.png",
+        "submissions/m62m61m80bpzm2/origin-rail/assets/figures/build-plan.png",
         "submissions/m62m61m80bpzm2/origin-rail/assets/figures/key-areas.en.png",
         "submissions/m62m61m80bpzm2/origin-rail/assets/figures/key-areas.png",
         "submissions/m62m61m80bpzm2/origin-rail/assets/figures/land-use-structure.en.png",
@@ -26,9 +37,20 @@
         "submissions/m62m61m80bpzm2/origin-rail/assets/figures/metrics-evidence.png",
         "submissions/m62m61m80bpzm2/origin-rail/assets/figures/mobility-bluegreen.en.png",
         "submissions/m62m61m80bpzm2/origin-rail/assets/figures/mobility-bluegreen.png",
+        "submissions/m62m61m80bpzm2/origin-rail/assets/figures/phasing-plan.en.png",
+        "submissions/m62m61m80bpzm2/origin-rail/assets/figures/phasing-plan.png",
         "submissions/m62m61m80bpzm2/origin-rail/assets/figures/site-overview.en.png",
         "submissions/m62m61m80bpzm2/origin-rail/assets/figures/site-overview.png",
+        "submissions/m62m61m80bpzm2/origin-rail/assets/figures/thematic-belts.en.png",
+        "submissions/m62m61m80bpzm2/origin-rail/assets/figures/thematic-belts.png",
+        "submissions/m62m61m80bpzm2/origin-rail/assets/logo.svg",
+        "submissions/m62m61m80bpzm2/origin-rail/assets/media/build_plan.en.md",
+        "submissions/m62m61m80bpzm2/origin-rail/assets/media/build_plan.md",
+        "submissions/m62m61m80bpzm2/origin-rail/assets/media/cover.png",
+        "submissions/m62m61m80bpzm2/origin-rail/assets/media/research_basis.en.md",
+        "submissions/m62m61m80bpzm2/origin-rail/assets/media/research_basis.md",
         "submissions/m62m61m80bpzm2/origin-rail/assumptions.json",
+        "submissions/m62m61m80bpzm2/origin-rail/changelog.md",
         "submissions/m62m61m80bpzm2/origin-rail/compliance_matrix.json",
         "submissions/m62m61m80bpzm2/origin-rail/design_depth_matrix.json",
         "submissions/m62m61m80bpzm2/origin-rail/drawings/a0-boards.en.pdf",
@@ -52,8 +74,10 @@
         "submissions/m62m61m80bpzm2/origin-rail/report/narrative.md",
         "submissions/m62m61m80bpzm2/origin-rail/report/proposal.en.html",
         "submissions/m62m61m80bpzm2/origin-rail/report/proposal.html",
+        "submissions/m62m61m80bpzm2/origin-rail/risk.json",
         "submissions/m62m61m80bpzm2/origin-rail/self_check.json",
         "submissions/m62m61m80bpzm2/origin-rail/sources.json",
+        "submissions/m62m61m80bpzm2/origin-rail/spatial.json",
         "submissions/m62m61m80bpzm2/origin-rail/standard_matrix.json",
         "submissions/m62m61m80bpzm2/origin-rail/visual/index.en.html",
         "submissions/m62m61m80bpzm2/origin-rail/visual/index.html"
@@ -61,7 +85,7 @@
       "ai_package_stages": {
         "submissions/m62m61m80bpzm2/origin-rail": "formal"
       },
-      "total_bytes": 2617301,
+      "total_bytes": 10997159,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -119,9 +143,12 @@
       "ok": true,
       "issues": [],
       "metrics_seen": {
-        "site_area_sqm": 11412825.386,
+        "site_area_sqm": 11412825.4,
         "green_ratio": 0.324152,
-        "public_space_ratio": 0.0455
+        "public_space_ratio": 0.0455,
+        "land_use_research_sqm": 3479741.18,
+        "key_detailed_area_total_sqm": 3692893.0,
+        "road_network_length_m": 18319.01
       }
     },
     "stderr": ""
@@ -134,16 +161,16 @@
       "issues": [],
       "summary": {
         "standard_matrix_items": 6,
-        "design_depth_items": 15,
+        "design_depth_items": 21,
         "known_metric_refs_required": 15,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
           "source": 6,
           "standard": 7,
-          "depth": 14,
+          "depth": 21,
           "data": 10,
-          "metric": 12
+          "metric": 13
         }
       }
     },
