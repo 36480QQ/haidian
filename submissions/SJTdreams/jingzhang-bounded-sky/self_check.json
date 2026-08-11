@@ -10,6 +10,7 @@
       "ok": true,
       "errors": [],
       "warnings": [
+        "submissions/SJTdreams/jingzhang-bounded-sky/proposal.md: 可能涉及非公开或敏感资料; maintainer review required",
         "submissions/SJTdreams/jingzhang-bounded-sky/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied",
         "submissions/SJTdreams/jingzhang-bounded-sky/spatial.json: items[0]: provisional spatial concept needs maintainer review before being treated as public-facing context",
         "submissions/SJTdreams/jingzhang-bounded-sky/spatial.json: items[1]: provisional spatial concept needs maintainer review before being treated as public-facing context",
@@ -98,7 +99,7 @@
       "ai_package_stages": {
         "submissions/SJTdreams/jingzhang-bounded-sky": "formal"
       },
-      "total_bytes": 5802705,
+      "total_bytes": 6204478,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -176,7 +177,7 @@
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 17,
+          "source": 23,
           "standard": 2,
           "depth": 10,
           "data": 22,

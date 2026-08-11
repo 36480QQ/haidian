@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "bae6020b9fe02179ac994ce030f0d419c5ce4b3445e3dedf78270a8d2819360a"
+      "sha256": "a9ff4900cbef94298082c01ff27c31d9759d6399ca2a605c48f8f81452d41b25"
     },
     {
       "path": "agent.json",
@@ -50,13 +50,13 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "7548a03781fd6cc5336c49996fefcea507019a1fa45af752b6c0fd713a65e526"
+      "sha256": "312f252444bc74458773851a3e04da81c561572ac4f27819904265eb4bf49dba"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "e2b1909b4ef182c0a3e486c9ab3b6edb38efcd848721aaa6f1d621c9bd5fa32f"
+      "sha256": "66921d791d59cc213a1298867d97785c072764f4a7293b230696d233dc203740"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "6a6b26ca35068cd064470bc5e4bd50d1ed6b9d15eb48800f42d31939ec0ac609"
+      "sha256": "daf41491d04c5e89ba4ce04e0b567d62df72f36aa286967762f2cf8ae54badc8"
     },
     {
       "path": "report/narrative.md",
@@ -100,14 +100,14 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "94058512cc0a35c18e9edcd7bdce5583d0fab4c587c50f95ef655ecc8ef96ca4"
+      "sha256": "3aaf85fa3418fd83414a6fe02c70a69f5d293be25709f8d9bcd993495876f965"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "f241957e85c57c08794deb8e59d0f079272be4edb53a207a4df2c89586919eb1"
+      "sha256": "bc58cb72ccb59d0ce7e63b2ef94ca1457e2122279873057efc7ec204c805ee23"
     },
     {
       "path": "visual/index.html",
@@ -316,7 +316,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "8dec38d790d48f1269edd20cf50f58386c64469aa25de6e993936797a19a799b"
+      "sha256": "f13d66a72acdb240c157556b8cf6781e130b850c8d1d3f29845ff474cfe9c3b0"
     },
     {
       "path": "report/proposal.en.html",
@@ -324,7 +324,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "c53189190b2c44ac1550da5f743ae4ddef6455f4f83570bd2fa906cd46412e59"
+      "sha256": "84e1b80ba239c672854574058a8a7c74949125406f614e279d97a1b3c98d3ba2"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -332,7 +332,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "06361c02bffb0ed9086e6610e75174af2b3b104cee6e97428102bc3023ffd6fd"
+      "sha256": "2a3cc7fab63fb3ee408f262142acd269d8a6bb889238d4c085cd1386d79b20b1"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -340,7 +340,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "401a96e9f7ad3d6f80ae855ee50c55e665358c64885fb7073d66a3328a5fc842"
+      "sha256": "c30ade4e737f68608308a0d85b597789b6d787a09cf9cc1f037c504a26a8af63"
     },
     {
       "path": "visual/index.en.html",
@@ -372,7 +372,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "eef85e3984aae172f0d99db7e12a7419d8edfe1ae13157418dfdaf2ee8bd10e9"
+      "sha256": "c1df64966068b6c0cee23faa28362e1476931e50773eb69fdbd14440c1665b07"
     },
     {
       "path": "visual/assets/airspace-budget.json",

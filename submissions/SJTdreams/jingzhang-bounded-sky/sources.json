@@ -156,6 +156,60 @@
       "limitations": "The document states that aircraft low-flight noise around airports is outside its application; UAS-specific acoustic assessment remains necessary."
     },
     {
+      "id": "BEIJING-MASTER-PLAN-2035",
+      "url": "https://www.beijing.gov.cn/gongkai/guihua/wngh/csztgh/201907/t20190701_100008.html",
+      "title_zh": "北京城市总体规划（2016年-2035年）",
+      "source_type": "official_public",
+      "published_at": "2017-09-29",
+      "usage": "Supports capital-city function, reduction-oriented development, resource carrying-capacity constraints, historic-cultural protection, people-centred governance, one-plan implementation, and monitoring/evaluation methodology.",
+      "limitations": "Citywide statutory strategy; it does not supply project-level geometry, construction permission, or low-altitude operating approval."
+    },
+    {
+      "id": "HAIDIAN-DISTRICT-PLAN-2035",
+      "url": "https://ghzrzyw.beijing.gov.cn/zhengwuxinxi/ghcg/fqgh/202002/t20200213_1630027.html",
+      "title_zh": "海淀分区规划（国土空间规划）（2017年-2035年）",
+      "source_type": "official_public",
+      "published_at": "2020-02-14",
+      "usage": "Supports Haidian's district spatial strategy, ecological and cultural structure, science-city role, public-service coordination, and implementation hierarchy.",
+      "limitations": "Public district-plan material; precise current project conditions and control indicators require official project data."
+    },
+    {
+      "id": "BEIJING-URBAN-RENEWAL-PLAN",
+      "url": "https://www.beijing.gov.cn/zhengce/zczt/zcwjhb/csgxzchb/sjzc/202205/t20220518_2715630.html",
+      "title_zh": "北京市城市更新专项规划（北京市十四五时期城市更新规划）",
+      "source_type": "official_public",
+      "published_at": "2022-05-18",
+      "usage": "Supports small-scale incremental renewal, strict control of large demolition and construction, project-library management, public participation, multi-party implementation, and full-life-cycle evaluation.",
+      "limitations": "Planning method and policy context only; specific renewal units require lawful project establishment and professional design."
+    },
+    {
+      "id": "SHENZHEN-LOW-ALTITUDE-INFRA-2026",
+      "url": "https://fgw.sz.gov.cn/gkmlpt/content/12/12305/post_12305044.html",
+      "title_zh": "深圳市低空基础设施高质量建设方案（2024-2026年）",
+      "source_type": "official_public",
+      "published_at": "2025-07-31",
+      "usage": "Benchmark for classifying take-off/landing, communications, navigation, surveillance, meteorology, computing, testing, safety-control, and shared municipal infrastructure, with named delivery responsibilities.",
+      "limitations": "Shenzhen's airspace, market, targets, and governance context cannot be copied to central Beijing; only the decomposition and delivery method are referenced."
+    },
+    {
+      "id": "SHENZHEN-VERTIPORT-LAYOUT-2035",
+      "url": "https://www.sz.gov.cn/cn/xxgk/zfxxgj/ghjh/csgh/zxgh/content/post_12470231.html",
+      "title_zh": "深圳市低空航空器起降设施布局规划（2026-2035年）",
+      "source_type": "official_public",
+      "published_at": "2025-10-30",
+      "usage": "Benchmark for separating facility planning from operating approval and for linking facility hierarchy with land, transport, emergency, energy, and information systems.",
+      "limitations": "No Shenzhen facility quantity, service radius, route, or commercial target is transferred into this proposal."
+    },
+    {
+      "id": "SHANGHAI-LOW-ALTITUDE-ACTION-2027",
+      "url": "https://www.shanghai.gov.cn/cmsres/e2/e2e47877f08a4b878fddd191068c26f7/14ef45d670de55fec17372bdfba5adae.pdf",
+      "title_zh": "上海市低空经济产业高质量发展行动方案（2024-2027年）",
+      "source_type": "official_public",
+      "published_at": "2024-07-25",
+      "usage": "Benchmark for task packages covering enterprise capability, airworthiness and testing, facility/air-network/route/service networks, application scenarios, and comprehensive safeguards with accountable agencies.",
+      "limitations": "Shanghai's industrial scale, suburban-to-central sequencing, routes, and passenger-service ambitions are not Beijing permissions or project targets."
+    },
+    {
       "id": "GLOBAL-CASE-SHORTLIST",
       "path": "brief/public-materials-plan.md",
       "source_type": "repository_background_index",
