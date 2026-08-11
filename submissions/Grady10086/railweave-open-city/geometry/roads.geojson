@@ -1,0 +1,134 @@
+{
+  "type": "FeatureCollection",
+  "name": "railweave_v2_audit_and_crosslink_network",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "ROAD-V2-001",
+      "properties": {
+        "id": "ROAD-V2-001",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "road_class": "greenway",
+        "name_zh": "京张创新协同轴连续性核查线",
+        "design_status": "conceptual_audit_and_connection_alignment",
+        "evidence_role_zh": "逐段核实现状建设、开放使用、断点衔接与无障碍条件",
+        "length_m_calculated": 9336.51,
+        "official_redline": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.34742477277507,
+            39.94070736898133
+          ],
+          [
+            116.34795416412457,
+            39.96960883618596
+          ],
+          [
+            116.34719672949161,
+            39.998502918319026
+          ],
+          [
+            116.34783163444745,
+            40.024777592480376
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-V2-002",
+      "properties": {
+        "id": "ROAD-V2-002",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "road_class": "cycleway",
+        "name_zh": "清河与众智园联动廊",
+        "design_status": "conceptual_audit_and_connection_alignment",
+        "evidence_role_zh": "衔接两河、园区与五环接口的步行和骑行核查廊道",
+        "length_m_calculated": 1075.84,
+        "official_redline": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.34180919443592,
+            40.00823900281271
+          ],
+          [
+            116.35435029788808,
+            40.00917222236165
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-V2-003",
+      "properties": {
+        "id": "ROAD-V2-003",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "road_class": "pedestrian",
+        "name_zh": "小月河与高校协同廊",
+        "design_status": "conceptual_audit_and_connection_alignment",
+        "evidence_role_zh": "衔接高校、原点载体、社区与遗址公园的十分钟步行廊道",
+        "length_m_calculated": 1157.854,
+        "official_redline": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.34026450341409,
+            39.98375235977496
+          ],
+          [
+            116.35368068138057,
+            39.985243016003785
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-V2-004",
+      "properties": {
+        "id": "ROAD-V2-004",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "road_class": "transit_connection",
+        "name_zh": "转河与大钟寺站城融合廊",
+        "design_status": "conceptual_audit_and_connection_alignment",
+        "evidence_role_zh": "衔接地铁站点、更新单元、社区与转河公共空间",
+        "length_m_calculated": 1294.718,
+        "official_redline": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.34022092128059,
+            39.95625274003328
+          ],
+          [
+            116.3553000155803,
+            39.95511536179269
+          ]
+        ]
+      }
+    }
+  ]
+}

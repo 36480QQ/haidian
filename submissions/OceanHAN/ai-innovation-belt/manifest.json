@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "ada1191ed42c6f36204068c9aa9ba54e29ec0b813bc8494453a890f561d51f0d"
+      "sha256": "664be9fc9779240df124b3645aa8cbfbead683444f05bcffd750c15544eb473a"
     },
     {
       "path": "agent.json",
@@ -38,7 +38,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "57accb38b63074b0d1524047a5c4909efb3eee1a378fb371076f7cbb23ffa953"
+      "sha256": "f5776ea3466cce4b54b56a4fb1f920d8aa386d112f0fb3a9fa2cf6a183c49558"
     },
     {
       "path": "assumptions.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "80b71cb78d2c1581fc679eb561959ac515bc8a3ff6f76c74dcc2c4e20d49b72f"
+      "sha256": "be9490e21723baa01fb3a4e2ab6fede873e89eaada58b869d55a0f11764dae5d"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "c74f8b7b06ea5c09777e28033ac0a4a6890d9fcd283f4b3261636be1f677de7e"
+      "sha256": "956072813a63254b940873644f139993ac7ec54c85b85eab48e1ac7d9deb99d9"
     },
     {
       "path": "report/narrative.md",
@@ -114,7 +114,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "8fb5f29a49979148d83e044cd61800f59e3066083971937122b758a434ae13df"
+      "sha256": "3372f8ccf4fb7398f2a51455260609f17751d0471cd4801fa12f4e86609cb22c"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "ac6e986bba2fcb127c1c718a8f034a048674d23340a8302264a6bfcedd58262e"
+      "sha256": "68ceb5748d18a9c00a5fbdb303ccc098dbf4ef65668a96a278c08e2c47d0e882"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "d7b1875ac8f2937f2a682a123cba04d0fb2ed720b82f535bf5b30cc0a1af2152"
+      "sha256": "5e1e852a827f999649aef4fcccb584568154b063126c1b9819791933abb6d5a3"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "b8f72d6012d562a154cec97a6448b4641e38ac5cf8fe4ac5a1c020ad186279c0"
+      "sha256": "3ec5eedaf9d8ecd6e565b1af44e8081e3e85f2823aa834fe988932926f89916d"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -290,8 +290,9 @@
     "self_checked": true,
     "known_blockers": [],
     "data_confidence": "medium (provisional boundary: all spatial metrics recalculated in EPSG:4548 from provisional geometry; official redline required for professional scoring)",
-    "last_validated_at": "2026-08-10T09:50:00Z",
-    "reviewer_feedback_addressed_zh": "评审 v1 意见处理：1) manifest.validation_claim.self_checked 已同步为 true 并记录 last_validated_at；2) 边界派生数据（site_area_sqm/site_area_ha/key_area_count/land_use_polygon_count/land_use_coverage_ratio）置信度统一从 high 降为 medium，data_confidence 同步为 medium（provisional 边界披露）。",
-    "reviewer_feedback_addressed_en": "Reviewer v1 addressed: 1) manifest.validation_claim.self_checked synced to true with last_validated_at; 2) boundary-derived metrics (site_area_sqm/site_area_ha/key_area_count/land_use_polygon_count/land_use_coverage_ratio) downgraded from high to medium confidence, data_confidence set to medium (provisional boundary disclosed)."
+    "last_validated_at": "2026-08-11T07:00:00Z",
+    "reviewer_feedback_addressed_zh": "v0.2 已处理实施可行性；v0.3：三区两翼结构化映射表、区域协同可签接口（北纬社区/未来科学城/怀柔科学城/经开区/京津冀）、主线合入验收协议五则、visual 新增实施路径与治理版块。",
+    "reviewer_feedback_addressed_en": "v0.2 addressed implementation feasibility; v0.3: structured three-areas-two-wings mapping table, regional signable interfaces (Beiwai/Future Science City/Huairou/E-Town/BTH), five-rule mainline merge acceptance protocol, new implementation & governance section in visual.",
+    "readiness_contract": "persisted-self-check-v1"
   }
 }

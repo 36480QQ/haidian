@@ -56,9 +56,26 @@ The three levels are not separate drawing sets; they implement one "mainline log
 
 ### Three Positionings, Five Functions, and the Three-Areas-Two-Wings Loop
 
-The three positionings (Century Jing-Zhang Culture Belt, Urban AI Life Experience Belt, AI Convergence Innovation Belt) map respectively to the heritage narrative layer of the mainline greenway, the life-experience layer of public spaces and scenario nodes, and the industry-convergence layer of the three nodes and two wings. The five functions map to five spatial roles: CI Yard (full-stack self-reliant innovation and governance display), Kernel (ecosystem incubation), Release (scenario monetization), Registry wing (professional services), and Staging wing (scenario testing) [source:AGENT-TASKBOOK].
+The structured mapping of the three positionings, five functions, and spatial roles (conceptual framework):
+
+| Taskbook frame | Mainline answer | Readable space/mechanism |
+| --- | --- | --- |
+| Century Jing-Zhang Culture Belt | "Self-built trunk line" re-read as a publicly mergeable mainline | Mainline greenway, Origin Plaza, three-act cultural tour |
+| Urban AI Life Experience Belt | Scenarios go live publicly as proposals; residents can review and roll back | Staging wing, Commit Corridor, Merge Review months |
+| AI Convergence Innovation Belt | Train-build-release pipeline linking three areas and two wings | CI Yard / Kernel / Release + two wings |
+| AI full-stack self-reliant innovation | Training, evaluation, standards, safety governance closed in one field | CI Yard training and evaluation grounds |
+| World-class AI ecosystem | Upstream incubation, service registration, scenario distribution loop | Kernel upstream center + Registry wing |
+| AI+ scenario empowerment paradigm | Every scenario passes the mainline merge acceptance protocol before launch | Twelve scenario cards + five-rule protocol |
+| Intelligent AI vibrant city | AI recedes to the background; mainline and nodes run independently | Slow-traffic priority, public-space component kit |
+| AI governance global voice | An executable "five-rule merge" protocol as governance method | Annual public review, rollback records, version archive |
 
 **Coordination loop**: upstream (Kernel: universities and open-source communities) produces outcomes → CI (Zhongzhiyuan) trains, evaluates, and forms standards → Release (Dazhongsi) publishes, distributes, and recycles data → Registry (Zhongguancun) provides capital and professional services → Staging (Xiaoyue River) gray-box tests in real urban scenarios → feedback returns to Kernel. The mainline greenway is the physical carrier of this loop, forming a "T-shaped" coordination of a north-south innovation chain and an east-west services chain.
+
+**Mapping the open-source loop to urban governance (conceptual)**: translate the open-source workflow into a renewal-governance workflow—**issue** (public problem/need proposals) → **PR** (renewal project plans submitted publicly) → **review** (public review: disclosure, comment collection, Merge Review months) → **merge** (approved plans join the implementation pipeline) → **release** (project activation and outcome publication) → **maintain** (long-term operation and iteration). This mapping makes "urban renewal delivered as Pull Requests" an operational public-participation and decision-traceability mechanism rather than a slogan; statutory procedures (disclosure, approval, filing) follow current planning and renewal regulations [source:AGENT-TASKBOOK] [standard:MOHURD-URBAN-DESIGN-MEASURES].
+
+### Regional Innovation Coordination (signable interfaces, conceptual)
+
+The proposal does not fabricate existing cooperation; it proposes five types of **signable interface** (conceptual, becoming projects only after the relevant parties confirm): exchange resident co-design methods and youth-talent service mechanisms with Beiwai community; exchange long-term basic research and compute-validation questions with Future Science City; exchange scientific instruments, measurement, and standards methods with Huairou Science City; exchange embodied intelligence, robotics, and safety-testing questions with Beijing E-Town; and discuss green power, compute, and cross-regional scenario coordination with Zhangjiakou and Beijing-Tianjin-Hebei partners. Each interface registers only four elements—input, public return, data boundary, and exit condition—without presupposing administrative relations or investment arrangements [source:AGENT-TASKBOOK].
 
 ### Six Global AI Ecosystem Cases
 
@@ -143,6 +160,14 @@ The three key areas are the three Merge nodes of the mainline, themed as trainin
 
 Each card's location, users, operating data, privacy boundary, human review, operator, and risk are recorded in the agent.3 entry of `compliance_matrix.json`. All scenarios are **conceptual suggestions or reference schemes for professional teams to deepen**—not confirmed government arrangements [source:AGENT-TASKBOOK]. AI scenarios follow data minimization, explainability, and human review, referencing generative-AI requirements [standard:GENERATIVE-AI-INTERIM-MEASURES].
 
+### Mainline Merge Acceptance Protocol (conceptual)
+
+Before any AI scenario or renewal project enters the city, it is suggested to pass the **five-rule mainline merge** acceptance: ①**Open proposal**—purpose, scope, data sources, and exit conditions submitted publicly; ②**Public review**—comments from residents, merchants, and universities collected via Merge Review months or disclosure periods, with adoption decisions traceable; ③**Minimal rollback**—a rollback mechanism is mandatory (time-limited, segment-limited, cohort-limited, or one-click suspension), with the first pilot kept minimal; ④**Explainable records**—operation logs, decision bases, and human-takeover records auditable and reproducible; ⑤**Archive on release**—version, responsible party, and contact channels archived at activation, forming the basis for public retrospectives. The five rules are implemented item by item in the "operation essentials" column of the scenario cards, giving professional, operational, and public teams a directly deepenable acceptance structure; statutory safety, approval, and data-compliance procedures still follow current regulations [standard:GENERATIVE-AI-INTERIM-MEASURES] [source:AGENT-TASKBOOK].
+
+### Public Interest and Public-Participation Mechanisms (conceptual)
+
+The proposal operationalizes public interest through three mechanism groups: **public review rights**—renewal projects flow publicly as issue→PR→review→merge, Merge Review months collect comments from residents, merchants, and universities, and review opinions and adoptions remain publicly traceable; **universal accessibility**—the mainline greenway follows the Barrier-Free Environment Law with continuous ramps, tactile paving, and rest points, AI wayfinding provides voice/tactile multimodal (PR-11), and scenario nodes include elderly-friendly facilities (aligned with the direction of GFBF 2020 No. 45) [standard:BARRIER-FREE-ENVIRONMENT-LAW]; **community co-stewardship**—daily operation of the Commit Corridor and node plazas involves local communities and volunteers, events are graded to avoid disturbance, and night-time noise and lighting follow community agreements. Resident data is used only in aggregate and never for commercial profiling (see privacy boundaries in the persona table) [source:AGENT-TASKBOOK].
+
 ## Land Use, Building Scale, and Retain/Renew/New Strategy
 
 Land-use zoning is in `geometry/land_use.geojson` (52 parcels, seamless, non-overlapping [metric:land_use_polygon_count] [metric:land_use_coverage_ratio]). Functional ratios: green 11.1%, research 22.3%, education 21.5%, commercial services 25.6%, residential and community services 19.6% [metric:green_ratio] (remaining shares in the education/commercial/residential metrics.json indicators). Conceptual building footprint ~8.3 ha with 15 massing blocks in the key areas [metric:building_footprint_area_sqm].
@@ -151,9 +176,11 @@ Retain/renew/new method: "mainline merge" grading—retain implemented heritage-
 
 ## Transport, Rail, Municipal, and Public-Service Facilities
 
-**Transport**: the mainline greenway (~8.7 km) is the north-south slow-traffic spine; five east-west stitching roads (~5.6 km) connect the wings across the mainline [metric:greenway_length_m] [metric:connector_road_length_m] [data:geometry/roads.geojson#ROAD-001]. Stitching roads are conceptual alignments, not redlines; class, cross-section, and redline width await a formal transport study [data:geometry/roads.geojson#ROAD-002]. Gap-stitching strategy: over/under crossings at ring-road nodes, activation of under-bridge space, continuous four-quadrant paving at Dazhongsi station [depth:traffic_rail_slow_parking].
+**Transport**: the mainline greenway (~8.7 km) is the north-south slow-traffic spine; five east-west stitching roads (~5.6 km) connect the wings across the mainline [metric:greenway_length_m] [metric:connector_road_length_m] [data:geometry/roads.geojson#ROAD-001]. Stitching roads are conceptual alignments, not redlines; class, cross-section, and redline width await a formal transport study [data:geometry/roads.geojson#ROAD-002].
 
-**Rail integration**: four-quadrant pedestrian connectivity at Dazhongsi station and near-campus access in Kernel are conceptual directions; the rail corridor alignment is shown in `geometry/constraints.geojson` as a concept, not an official redline [data:geometry/constraints.geojson#CONSTRAINTS-001].
+**Slow-traffic gap-stitching list (conceptual)**: four gap types along the mainline with stitching directions—①ring-road nodes (North 5th Ring, North 4th Ring): over/under crossings with accessibility elevators; ②under-bridge space (existing rail and road bridges): activated as continuous slow-traffic and activity space; ③intersection quadrants (Dazhongsi station, Qinghua East Road West Entrance, etc.): continuous paving and signal optimization; ④station-exit gaps (rail-to-mainline connections): station-city passages. Engineering conditions and redlines for each gap await a formal transport study [depth:traffic_rail_slow_parking].
+
+**Rail integration (conceptual)**: Dazhongsi station is suggested to stitch the station to the Release node via four-quadrant pedestrian connectivity (underground passage or continuous ground paving plus accessible routes), with ~8.3 ha of rail-integration service land [data:geometry/land_use.geojson#LU-K020]; the Kernel near-campus station is suggested to link campus and park slow traffic via a station-city passage. The rail corridor alignment is shown in `geometry/constraints.geojson` as a concept, not an official redline [data:geometry/constraints.geojson#CONSTRAINTS-001].
 
 **Municipal and new infrastructure**: edge-compute stations, distributed energy, and AI public-service nodes (PR-08) are conceptual prototypes; utility lines, drainage, power, gas, fire lanes, flood control, and sponge-city targets lack public data and are prerequisites for formal deepening [depth:municipal_new_infrastructure].
 
@@ -176,22 +203,34 @@ Retain/renew/new method: "mainline merge" grading—retain implemented heritage-
 
 ## Renewal Project List, Implementation Policy, and Phasing
 
-### Renewal Projects (8)
+### Renewal Projects (10)
 
-| ID | Project | Type | Key dependencies | Phase |
-| --- | --- | --- | --- | --- |
-| JZ-01 | Mainline greenway completion & gap stitching | Public space/transport | Road redlines, under-bridge space, traffic review | 1 |
-| JZ-02 | Origin Plaza (Qinghuayuan Station memorial) | Culture/public space | Heritage scope & control zones, station protection | 1 |
-| JZ-03 | CI Yard test green field & evaluation center | Industry/new infrastructure | Qinghe blue line, flood control, compute & safety boundaries | 1 |
-| JZ-04 | Kernel open-source center & transformation street | Renewal/industry | Campus boundaries, ownership, ground-floor uses | 2 |
-| JZ-05 | Merge Plaza & honor wall | Public space/culture | Public-space permits, sculpture & honor-system rights | 2 |
-| JZ-06 | Release Plaza & roadshow hall | Public space/industry | Rail integration, event safety, copyright clearance | 3 |
-| JZ-07 | Dazhongsi four-quadrant connectivity | Rail/slow traffic | Station, intersection engineering, utilities | 3 |
-| JZ-08 | Xiaoyue River Staging test corridor | Test/transport | Joint traffic mechanism, insurance, reversibility | 2 |
+Project types, lead parties, key indicators, and dependencies below are **conceptual suggestions** for professional teams and authorities to deepen—not confirmed government arrangements or investment commitments [source:AGENT-TASKBOOK].
 
-### Phasing
+| ID | Project | Type | Lead party (concept) | Key indicator (concept) | Key dependencies | Phase |
+| --- | --- | --- | --- | --- | --- | --- |
+| JZ-01 | Mainline greenway completion & gap stitching | Public space/transport | District coordination platform + sub-district offices | Greenway continuity, gaps stitched | Road redlines, under-bridge space, traffic review | 1 |
+| JZ-02 | Origin Plaza (Qinghuayuan Station memorial) | Culture/public space | Heritage authority + culture-tourism operator | 1 memorial node, tour support | Heritage scope & control zones, station protection | 1 |
+| JZ-03 | CI Yard test green field & evaluation center | Industry/new infrastructure | Park operator + compute provider | ≥2 test scenarios, evaluation items | Qinghe blue line, flood control, compute & safety boundaries | 1 |
+| JZ-04 | Kernel open-source center & transformation street | Renewal/industry | University transformation platform + street operator | Incubator floor area, transformation cases | Campus boundaries, ownership, ground-floor uses | 2 |
+| JZ-05 | Merge Plaza & honor wall | Public space/culture | Public-space operator + open-source community | Annual honor entries, visitors | Public-space permits, sculpture & honor-system rights | 2 |
+| JZ-06 | Release Plaza & roadshow hall | Public space/industry | Convention operator + industry alliance | Annual release events | Rail integration, event safety, copyright clearance | 3 |
+| JZ-07 | Dazhongsi four-quadrant connectivity | Rail/slow traffic | Rail construction unit + municipal agency | 4 connected quadrants, accessibility coverage | Station, intersection engineering, utilities | 3 |
+| JZ-08 | Xiaoyue River Staging test corridor | Test/transport | Joint traffic body + scenario enterprises | ≥3 test scenarios, 100% reversibility | Joint traffic mechanism, insurance, reversibility | 2 |
+| JZ-09 | Registry innovation-service registration center | Industry services | Tech-service alliance | Service catalog entries, enterprise reach | Data & compute compliance boundaries | 2 |
+| JZ-10 | Commit Corridor & developer promenade | Public space/culture | Community operator + developer community | Corridor length, annual contributions | Mainline land ownership & slow-traffic links | 2 |
 
-`geometry/phasing.geojson` expresses three conceptual phases: **Phase 1 "Mainline through"** (222.2 ha): mainline greenway, Origin Plaza, CI test-ground pilot [data:geometry/phasing.geojson#PHASE-001]; **Phase 2 "Kernel co-build"** (465.3 ha): Kernel center, Merge Plaza, Commit Corridor, stitching roads [data:geometry/phasing.geojson#PHASE-002]; **Phase 3 "City-wide release"** (453.8 ha): Release Plaza, data hall, annual operations [data:geometry/phasing.geojson#PHASE-003] [depth:phasing_implementation]. The 100-day solicitation cycle is strictly distinct from implementation phasing, which depends on ownership, funding, approvals, and engineering [depth:renewal_project_list].
+### Implementation Mechanisms (conceptual)
+
+**Coordination and operation**: a district-level urban-renewal coordination platform is suggested as the general coordinator, with specialized operators per project type (park, convention, community, open-source community organizations); each key area is suggested to host a "node operation community" of industry, public-space, and culture operators for routine scenario opening, events, and facility upkeep [source:AGENT-TASKBOOK].
+
+**Funding and mechanisms (conceptual directions)**: public-space and slow-traffic projects may draw on urban-renewal and public-space special support; industry nodes may explore "scenario-opening revenue recirculation" — enterprises apply for test scenarios as proposals, rights and duties fixed by service and data-compliance agreements, and a defined share of scenario revenue recirculates to public-space upkeep. All funding arrangements are conceptual directions pending authority and financial confirmation [depth:renewal_project_list].
+
+**Policy instruments (pending confirmation)**: whether instruments such as renewal-unit coordination, compatible/transitional use, and public-space activation permits apply must be confirmed under the official regulatory and renewal framework; this proposal makes no assumption.
+
+### Phasing and Conceptual Milestones
+
+`geometry/phasing.geojson` expresses three conceptual phases: **Phase 1 "Mainline through"** (222.2 ha): mainline greenway, Origin Plaza, CI test-ground pilot [data:geometry/phasing.geojson#PHASE-001]; **Phase 2 "Kernel co-build"** (465.3 ha): Kernel center, Merge Plaza, Commit Corridor, stitching roads [data:geometry/phasing.geojson#PHASE-002]; **Phase 3 "City-wide release"** (453.8 ha): Release Plaza, data hall, annual operations [data:geometry/phasing.geojson#PHASE-003] [depth:phasing_implementation]. A conceptual time frame (pending official confirmation): Phase 1 approx. 2026–2028 with lightweight facilities, operations, and scenario pilots; Phase 2 approx. 2028–2030 as regulatory and ownership conditions mature; Phase 3 post-2030 via station integration and the operations system. The 100-day solicitation cycle is strictly distinct from implementation phasing, which depends on ownership, funding, approvals, and engineering [depth:renewal_project_list].
 
 ### Global AI Event System and Long-Term Operations (agent.6)
 
@@ -199,7 +238,7 @@ All of the following are **conceptual suggestions**: **annual system**—Mainlin
 
 ## Indicator System, Area Recalculation, and Compliance Matrix
 
-Core indicators (full 25 in `metrics.json`): overall design area 1141.3 ha [metric:site_area_sqm], green space 126.2 ha / green ratio 11.1% [metric:green_ratio], public space 48.8 ha / 4.3% [metric:public_space_ratio], conceptual building footprint 8.3 ha [metric:building_footprint_area_sqm], mainline greenway 8.7 km, stitching roads 5.6 km, key areas 3 (192.9/104.3/72.0 ha) [metric:key_area_count], plus 12 scenario cards, 4 pilgrimage landmarks, 6 personas and 8 renewal projects (indicators in metrics.json). Every known indicator is reproducible from the package GeoJSON in EPSG:4548 [depth:metrics_recalculation]; unknown indicators (FAR, height) state reasons and prerequisites [metric:floor_area_ratio] [metric:building_height_m].
+Core indicators (full 25 in `metrics.json`): overall design area 1141.3 ha [metric:site_area_sqm], green space 126.2 ha / green ratio 11.1% [metric:green_ratio], public space 48.8 ha / 4.3% [metric:public_space_ratio], conceptual building footprint 8.3 ha [metric:building_footprint_area_sqm], mainline greenway 8.7 km, stitching roads 5.6 km, key areas 3 (192.9/104.3/72.0 ha) [metric:key_area_count], plus 12 scenario cards, 4 pilgrimage landmarks, 6 personas and 10 renewal projects (indicators in metrics.json). Every known indicator is reproducible from the package GeoJSON in EPSG:4548 [depth:metrics_recalculation]; unknown indicators (FAR, height) state reasons and prerequisites [metric:floor_area_ratio] [metric:building_height_m].
 
 ![Core metrics and evidence chain](assets/figures/metrics-evidence.png)
 

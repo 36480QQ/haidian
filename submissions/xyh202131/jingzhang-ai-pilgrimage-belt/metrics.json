@@ -1132,6 +1132,219 @@
       "assumptions": [
         "Official key-area geometry is unavailable."
       ]
+    },
+    "maintenance_urbanism_contract_count": {
+      "status": "known",
+      "value": 1,
+      "unit": "count",
+      "source_files": ["visual/assets/key-area-evidence-matrix.json"],
+      "formula": "count(maintenance_urbanism_contract)",
+      "confidence": "high",
+      "assumptions": ["Counts one documentation contract only; it is not an implemented maintenance system." ]
+    },
+    "maintenance_task_family_documented_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": ["proposal.md", "proposal.en.md", "visual/assets/key-area-evidence-matrix.json"],
+      "formula": "count(maintenance_urbanism_contract.task_families)",
+      "confidence": "high",
+      "assumptions": ["The five entries are user-goal task families, not new scenes or projects."]
+    },
+    "maintenance_scene_crosswalk_documented_count": {
+      "status": "known",
+      "value": 12,
+      "unit": "count",
+      "source_files": ["visual/assets/key-area-evidence-matrix.json", "visual/assets/implementation-handoff-matrix.json"],
+      "formula": "count(maintenance_urbanism_contract.scene_task_family_project_crosswalk)",
+      "confidence": "high",
+      "assumptions": ["The project links must equal the existing implementation-handoff scenario_crosswalk; documentation coverage is not field coverage."]
+    },
+    "maintenance_lifecycle_field_documented_count": {
+      "status": "known",
+      "value": 10,
+      "unit": "count",
+      "source_files": ["visual/assets/key-area-evidence-matrix.json"],
+      "formula": "count(maintenance_urbanism_contract.lifecycle_fields)",
+      "confidence": "high",
+      "assumptions": ["Counts required contract fields, not measured lifecycle cost, repairability, or component performance."]
+    },
+    "maintenance_real_complaint_count": {
+      "status": "known",
+      "value": 0,
+      "unit": "count",
+      "source_files": ["visual/assets/key-area-evidence-matrix.json"],
+      "formula": "count(verified_real_complaints_linked_to_maintenance_contract)",
+      "confidence": "unknown",
+      "assumptions": ["No collected real complaint is represented by the contract."],
+      "reason": "No verified complaint intake, consent, owner, or field record has been supplied."
+    },
+    "maintenance_real_work_order_count": {
+      "status": "known",
+      "value": 0,
+      "unit": "count",
+      "source_files": ["visual/assets/key-area-evidence-matrix.json"],
+      "formula": "count(accepted_real_work_orders)",
+      "confidence": "unknown",
+      "assumptions": ["Issue and work-order records are empty shells until responsibility acceptance."],
+      "reason": "No accountable owner has accepted a real work order."
+    },
+    "maintenance_confirmed_personnel_count": {
+      "status": "known",
+      "value": 0,
+      "unit": "count",
+      "source_files": ["visual/assets/key-area-evidence-matrix.json"],
+      "formula": "count(confirmed_real_maintenance_or_service_personnel)",
+      "confidence": "unknown",
+      "assumptions": ["Role types are visible in the concept journey but no person is confirmed."],
+      "reason": "Maintenance workers, cleaners, staffed workers, curators, and co-testers are not confirmed personnel assignments."
+    },
+    "maintenance_real_budget_count": {
+      "status": "known",
+      "value": 0,
+      "unit": "count",
+      "source_files": ["visual/assets/key-area-evidence-matrix.json"],
+      "formula": "count(verified_real_maintenance_budget_records)",
+      "confidence": "unknown",
+      "assumptions": ["Lifecycle cost is a required field, not a budget allocation."],
+      "reason": "No budget, procurement authorization, or cost record has been supplied."
+    },
+    "maintenance_planned_human_hours": {
+      "status": "unknown",
+      "value": null,
+      "unit": "hours",
+      "source_files": ["visual/assets/key-area-evidence-matrix.json"],
+      "formula": "sum(verified_planned_human_hours_per_accepted_work_order)",
+      "confidence": "unknown",
+      "assumptions": ["Planned and actual human-hour fields are templates only."],
+      "reason": "No accepted work order or verified plan exists."
+    },
+    "maintenance_actual_human_hours": {
+      "status": "unknown",
+      "value": null,
+      "unit": "hours",
+      "source_files": ["visual/assets/key-area-evidence-matrix.json"],
+      "formula": "sum(verified_actual_human_hours_per_accepted_work_order)",
+      "confidence": "unknown",
+      "assumptions": ["Planned and actual human-hour fields are templates only."],
+      "reason": "No accepted work order or verified time record exists."
+    },
+    "maintenance_real_repair_count": {
+      "status": "known",
+      "value": 0,
+      "unit": "count",
+      "source_files": ["visual/assets/key-area-evidence-matrix.json"],
+      "formula": "count(verified_completed_repairs)",
+      "confidence": "unknown",
+      "assumptions": ["Existing-facility-first is a decision sequence, not evidence of a repair."],
+      "reason": "No inspection, cleaning, adjustment, repair, component replacement, or procurement decision has been verified."
+    },
+    "maintenance_independent_recheck_count": {
+      "status": "known",
+      "value": 0,
+      "unit": "count",
+      "source_files": ["visual/assets/key-area-evidence-matrix.json"],
+      "formula": "count(verified_independent_rechecks)",
+      "confidence": "unknown",
+      "assumptions": ["Independent recheck is required before continue, not presumed complete."],
+      "reason": "No repair or independent recheck evidence exists."
+    },
+    "maintenance_measured_effect_count": {
+      "status": "known",
+      "value": 0,
+      "unit": "count",
+      "source_files": ["visual/assets/key-area-evidence-matrix.json"],
+      "formula": "count(verified_measured_maintenance_effects)",
+      "confidence": "unknown",
+      "assumptions": ["A documented decision rule does not establish an outcome."],
+      "reason": "No baseline, completed repair, independent recheck, or measured effect has been supplied."
+    },
+    "maintenance_real_approval_count": {
+      "status": "known",
+      "value": 0,
+      "unit": "count",
+      "source_files": ["visual/assets/key-area-evidence-matrix.json"],
+      "formula": "count(verified_real_maintenance_approvals)",
+      "confidence": "high",
+      "assumptions": ["A zero approval count prevents documentation coverage from being presented as approval."],
+      "reason": "No verified real approval is represented by the maintenance contract."
+    },
+    "maintenance_real_operation_count": {
+      "status": "known",
+      "value": 0,
+      "unit": "count",
+      "source_files": ["visual/assets/key-area-evidence-matrix.json"],
+      "formula": "count(verified_real_maintenance_operations)",
+      "confidence": "high",
+      "assumptions": ["A zero operation count prevents documentation coverage from being presented as operation."],
+      "reason": "No verified real operation is represented by the maintenance contract."
+    },
+    "non_ai_permanent_public_right_count": {
+      "status": "known",
+      "value": 7,
+      "unit": "count",
+      "source_files": ["visual/assets/non-ai-parity-contract.json"],
+      "formula": "count(permanent_public_rights)",
+      "confidence": "high",
+      "assumptions": ["Counts proposal-defined service-design rights, not enacted rights or operating services."]
+    },
+    "non_ai_place_service_contract_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": ["visual/assets/non-ai-parity-contract.json", "visual/assets/key-area-evidence-matrix.json"],
+      "formula": "count(place_service_contracts)",
+      "confidence": "high",
+      "assumptions": ["Counts conceptual contracts for the three existing provisional key areas; no new geometry is created."]
+    },
+    "non_ai_group_acceptance_contract_count": {
+      "status": "known",
+      "value": 4,
+      "unit": "count",
+      "source_files": ["visual/assets/non-ai-parity-contract.json"],
+      "formula": "count(group_acceptance)",
+      "confidence": "high",
+      "assumptions": ["Counts typed acceptance structures, not recruited participants or measured group results."]
+    },
+    "non_ai_confirmed_staff_count": {
+      "status": "known",
+      "value": 0,
+      "unit": "count",
+      "source_files": ["visual/assets/non-ai-parity-contract.json"],
+      "formula": "count(confirmed_real_staff_assignments)",
+      "confidence": "high",
+      "assumptions": ["Required role types are not confirmed personnel."],
+      "reason": "No accountable operator or staff assignment has been supplied."
+    },
+    "non_ai_observed_real_service_interaction_count": {
+      "status": "known",
+      "value": 0,
+      "unit": "count",
+      "source_files": ["visual/assets/non-ai-parity-contract.json"],
+      "formula": "count(consented_verified_real_service_interactions)",
+      "confidence": "high",
+      "assumptions": ["The T-02 synthetic replay is not a real service interaction."],
+      "reason": "No verified staffed, paper, oral, telephone, non-AI, or AI service interaction is represented."
+    },
+    "non_ai_known_group_result_count": {
+      "status": "known",
+      "value": 0,
+      "unit": "count",
+      "source_files": ["visual/assets/non-ai-parity-contract.json"],
+      "formula": "count(group_acceptance records with observed field result)",
+      "confidence": "high",
+      "assumptions": ["All four group-specific results remain unknown/not measured."],
+      "reason": "No consented group sample, field baseline, preregistered threshold, or executed comparison exists."
+    },
+    "non_ai_real_approval_or_operation_count": {
+      "status": "known",
+      "value": 0,
+      "unit": "count",
+      "source_files": ["visual/assets/non-ai-parity-contract.json"],
+      "formula": "count(verified_real_approvals) + count(verified_real_operations)",
+      "confidence": "high",
+      "assumptions": ["A concept service baseline cannot establish approval or operation."],
+      "reason": "No verified approval or operating evidence has been supplied."
     }
   }
 }

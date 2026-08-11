@@ -30,6 +30,30 @@
       "status": "pending_professional_confirmation",
       "statement": "Long-term operation and maintenance funding gaps for public AI infrastructure.",
       "impact": "Multi-agent investment models, open-source governance committee, and commercial lounge revenues are leveraged."
+    },
+    {
+      "id": "A-BUILDING-001",
+      "status": "pending_professional_confirmation",
+      "statement": "Building status classification (retain / renovate / demolish / new) cannot be determined without official building survey data including construction year, structural type, legal status, and current use condition.",
+      "impact": "All building footprints in geometry/buildings.geojson are marked status=unknown. Building density, demolition ratio, and retention ratio are concept-only estimates pending official survey data."
+    },
+    {
+      "id": "A-BOUNDARY-001",
+      "status": "ready_for_recalculation",
+      "statement": "All submitted boundaries and derived metrics are ready for one-click recalculation when official site boundary and key-area geometry are released.",
+      "impact": "Geometry layers and metrics are regenerable from the same pipeline; provisional values in this package will be replaced without changing design intent."
+    },
+    {
+      "id": "A-CLIMATE-001",
+      "status": "synthetic_estimate",
+      "statement": "Wind corridor cooling effect is estimated as a 0.8°C ~ 1.5°C range under peak summer load based on synthetic tabletop CFD reasoning and published ventilation-corridor methodology.",
+      "impact": "The range is a design-stage estimate pending on-site micro-meteorological stations and CFD validation; it must not be cited as a measured or approved performance figure."
+    },
+    {
+      "id": "A-CVP-001",
+      "status": "concept_proposal",
+      "statement": "The Civic Value Protocol revenue-sharing mechanism is positioned as a voluntary CSR charter under the Zhongguancun pilot sandbox framework, not a statutory obligation.",
+      "impact": "The 15% fund ratio and governance rules are concept suggestions for professional teams and authorities to deepen; no investment or legal commitment is implied."
     }
   ]
 }

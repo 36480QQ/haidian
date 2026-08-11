@@ -7,7 +7,7 @@
   "model_family": "gpt",
   "model_detail": "OpenAI Codex agent based on GPT-5; exact serving snapshot not asserted by the package",
   "provider": "OpenAI",
-  "generated_with": "scripts/scaffold_ai_submission.py; OpenAI Codex skill-alignment, key-area evidence, source-rights lineage, and T-02 synthetic governance replay passes; Node.js zero-dependency replay; deterministic SVG-to-PNG export; ReportLab invariant PDF generation with full-figure A3/A0 placement; PyMuPDF and Pillow QA",
+  "generated_with": "scripts/scaffold_ai_submission.py; OpenAI Codex skill-alignment, Round 2 three-switchyard spatial-prototype deepening, Round 3 maintenance-urbanism contract and bilingual visual entrance, Round 4 non-AI-first public-service contract and bilingual service blueprint, key-area evidence, source-rights lineage, and T-02 synthetic governance replay passes; Node.js zero-dependency replay; deterministic SVG-to-PNG export; ReportLab invariant PDF generation with full-figure A3/A0 placement; PyMuPDF and Pillow QA",
   "authoring_mode": "agent-maintained package extraction",
   "tools_used": [
     "OpenAI Codex (GPT-5 family; exact serving snapshot not asserted)",
@@ -20,7 +20,7 @@
     "fontTools 4.63.0",
     "PyMuPDF 1.27.2.3",
     "Pillow 12.2.0",
-    "Google Chrome 151.0.7922.108 (headless SVG rasterization)",
+    "Google Chrome 151.0.7922.108 and Microsoft Edge 151.0.4129.72 (offline headless SVG rasterization)",
     "scripts/score_submission.py",
     "scripts/validate_local_submission.py",
     "scripts/spatial_review.py",
@@ -66,11 +66,11 @@
     {
       "tool_id": "TOOL-HAIDIAN-VALIDATION",
       "name": "Haidian repository validation scripts",
-      "version": "main@7600fc3c98a5ed3ba6d80ff3cca12f7a50d7d4a9",
+      "version": "origin/main@5570019dac023af8eb1726c1dc648a96098dd259; Round 3 publication worktree rebased at e855a8fb010fcb34da14229c6bac83392fec1f6b",
       "usage": "对最终投稿包执行 formal stage gates。",
       "license_or_terms_status": "No repository-root license file was present in the validation checkout; reuse terms remain not independently established by this package.",
       "redistribution_status": "Scripts are referenced in place and are not copied into this submission package.",
-      "reproduction_path": "Run the named scripts from repository commit 7600fc3c98a5ed3ba6d80ff3cca12f7a50d7d4a9."
+      "reproduction_path": "Run the named scripts from the current repository checkout, using base origin/main@5570019dac023af8eb1726c1dc648a96098dd259 and the final staged package bytes."
     },
     {
       "tool_id": "TOOL-GIT",
@@ -112,10 +112,10 @@
       "tool_id": "TOOL-FONTTOOLS",
       "name": "fontTools",
       "version": "4.63.0",
-      "usage": "使用 instantiateVariableFont(..., optimize=True, updateFontNames=True, static=True) 从 NotoSansSC-VF.ttf 在内存中确定性实例化 400/700 字重，供 ReportLab 嵌入 PDF；临时静态字体不落入投稿包。",
+      "usage": "使用 instantiateVariableFont(..., optimize=True, updateFontNames=True, static=True) 从 NotoSansSC-VF.ttf 在内存中实例化 400/700 字重，并以 recalcTimestamp=False 固定 head.modified 后供 ReportLab 嵌入 PDF；临时静态字体不落入投稿包。",
       "license_or_terms_status": "MIT license reported by installed package metadata; source-font license applicability remains a separate independent-review item.",
       "redistribution_status": "Library, source variable font, and temporary static instances are not redistributed by this submission.",
-      "reproduction_path": "Use the source-font version and SHA-256 plus the instancing parameters recorded in report/narrative.md; save in memory with reorderTables=False."
+      "reproduction_path": "Use the source-font version and SHA-256 plus the instancing parameters recorded in report/narrative.md; set recalcTimestamp=False before saving with reorderTables=False."
     },
     {
       "tool_id": "TOOL-PYMUPDF",
@@ -137,12 +137,12 @@
     },
     {
       "tool_id": "TOOL-CHROME",
-      "name": "Google Chrome",
-      "version": "151.0.7922.108",
-      "usage": "以离线 headless SVG 渲染双轨总体图的中英文 PNG 展示导出；不加载远程资源，不改变 geometry 或空间精度。",
+      "name": "Chromium-family headless browser (Google Chrome / Microsoft Edge)",
+      "version": "Chrome 151.0.7922.108; Edge 151.0.4129.72",
+      "usage": "以离线 headless SVG 渲染双轨总体图与非 AI 优先公共服务蓝图的中英文 PNG 展示导出；不加载远程资源，不改变 geometry 或空间精度。",
       "license_or_terms_status": "Browser distribution and font-resolution terms are not independently audited here.",
       "redistribution_status": "Browser executable and system fonts are not redistributed by this submission.",
-      "reproduction_path": "Render assets/figures/site-overview.svg and site-overview.en.svg with a local headless browser at the checked-in 1800×1100 viewBox and compare the resulting PNGs."
+      "reproduction_path": "Render the bilingual assets/figures/site-overview and non-ai-service-blueprint SVG pairs with a local Chromium-family headless browser at the checked-in 1800×1100 viewBox and compare the resulting PNGs."
     }
   ],
   "output_provenance": [

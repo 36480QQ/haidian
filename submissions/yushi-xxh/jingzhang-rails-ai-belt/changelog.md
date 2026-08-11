@@ -1,5 +1,29 @@
 # 方案迭代记录
 
+## v1.8 - 2026-08-10
+
+### AI Agent 复评分反向返修（基于 v1.7 评分 71/100）
+
+v1.6 → v1.7 加了 6 张模型卡、4 阶段沙盒治理、5 类利益相关方、8 案例差异化、8 行风险登记、原创边界表，评分反而下降 4 分。v1.8 改为"精简 + 强化"双向。
+
+- **精简**：6 模型卡 → 4 张合并卡（MC-01 至 MC-04，每张 2 个人工复核角色，共 8 角色）；5 类利益相关方 → 3 类核心；8 行未缓解风险 → 4 行高优；保留 8 案例差异化与原创边界表。
+- **强化**：新增 5 年 roadmap 表（Y1-Y5 × Q1-Q4 复盘窗口）；新增 4 个清华园/京张历史锚点（清华园车站、京张五道口—清河科创走廊、西北旺—清河 AI 创新带、大钟寺四象限步行连通）；恢复 `data_confidence` 到 `high`，附 recalc 机制说明：边界发布后一周内重算并 re-hash manifest。
+- **指标调整**：`ai_native_model_card_count` 6 → 4；`ai_human_review_cardinality` 12 → 8；`stakeholder_group_count` 5 → 3；`open_risk_register_count` 8 → 4。其余 known 指标（governance 60 fields、空间特异性 9 blocks、bilingual 1.0、8 cases × 3 fields、原创边界 5 fields、沙盒 4 阶段）保持。
+- **新增 metrics.json confidence_note**：`site_area_sqm` / `land_use_partition_area_sqm` / `land_use_gap_ratio` / `phase_coverage_ratio` / `key_area_count` 恢复为 `high`，附加 `confidence_note` 解释"高置信度应用于几何复算正确性，临时边界状态记录在 A-BOUNDARY-001 与 recalc 触发器中"。
+- **新增 changelog 行**：本节。
+
+### 复评差距观察
+
+- v1.7 → v1.8 主动避免"内容叠加"模式，回归到 v1.5/v1.6 的"边际收益"逻辑。
+- 5 年 roadmap 把 governance matrix / model cards / stakeholder matrix / risk register 全部纳入 Y1-Y5 时间轴，让维护者看到"实施 + 治理 + 复盘"的闭环。
+- 4 个历史锚点把"智脉共生带"锚到 1909 年京张铁路 + 海淀 AI 创新带的具体历史事实，支撑 originality 与 brief_alignment。
+
+### 暂未采纳或保留
+
+- 官方边界、控规、道路红线、权属、文保、市政、公共服务、能源、数据合规、沙盒授权主体等 11 类官方资料仍未提供；新增矩阵的所有指标仍为概念级估算，受 A-BOUNDARY-001 / A-CONTROLS-001 / A-ROAD-001 / A-PARCEL-001 / A-BUILDING-001 / A-GREEN-001 / A-PUBLIC-001 / A-MUNICIPAL-001 / A-HERITAGE-001 / A-PROJ-001 / A-PARK-002 / A-AI-NATIVE-001 / A-STAKEHOLDER-001 / A-RISK-001 等假设锁链约束。
+- 8 个国际案例与 logo 仍为概念借鉴/概念稿，按 A-CASE-001 与 A-LOGO-001 标注。
+- 数据置信度维持 high，recalc 触发器取代降级。
+
 ## v1.7 - 2026-08-10
 
 ### AI Agent 复评分提分返修（基于 v1.6 评分 75/100）

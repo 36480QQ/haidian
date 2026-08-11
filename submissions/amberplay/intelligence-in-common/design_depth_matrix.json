@@ -415,7 +415,9 @@
       "metric_refs": [
         "key_area_count",
         "scenario_count",
-        "renewal_project_count"
+        "renewal_project_count",
+        "public_acceptance_prototype_count",
+        "public_acceptance_threshold_count"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
@@ -425,13 +427,14 @@
       "assumption_ids": [
         "A-BOUNDARY-001",
         "A-EXISTING-001",
-        "A-TRANSPORT-001"
+        "A-TRANSPORT-001",
+        "A-PROTOTYPE-001"
       ],
       "self_check_ids": [
         "KEY_AREAS_TRUST",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "众智园安全梯度、原点孔隙共享、大钟寺站城客厅形成三套可比较、可退出的空间原型。",
+      "evidence_summary_zh": "众智园安全梯度、原点孔隙共享、大钟寺100米公共验收街形成三套可比较、可退出的空间原型；大钟寺四道空间门达到人尺度详设表达。",
       "completion_scope": "concept_design_complete; official_data_gaps_remain_explicit"
     },
     {
@@ -491,7 +494,10 @@
         "phase_count",
         "phase_1_area_sqm",
         "phase_2_area_sqm",
-        "phase_3_area_sqm"
+        "phase_3_area_sqm",
+        "pilot_duration_days",
+        "pilot_redline_kpi_count",
+        "human_fallback_target_seconds"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
@@ -502,13 +508,14 @@
       ],
       "assumption_ids": [
         "A-BOUNDARY-001",
-        "A-OPERATIONS-001"
+        "A-OPERATIONS-001",
+        "A-PROTOTYPE-001"
       ],
       "self_check_ids": [
         "METRIC_RECALC",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "三期面积明确为审查辖区测算；G0-G4控制清权、专业审查、沙盒、试点及适配或退出。",
+      "evidence_summary_zh": "三期面积明确为审查辖区测算；首个动作细化为0-30、31-60、61-90天三段试点，六条红线、唯一责任人、L1/L2成本带和退出条款均可核验。",
       "completion_scope": "concept_design_complete; official_data_gaps_remain_explicit"
     },
     {
@@ -592,7 +599,8 @@
         "A-TRANSPORT-001",
         "A-HERITAGE-001",
         "A-MUNICIPAL-001",
-        "A-OPERATIONS-001"
+        "A-OPERATIONS-001",
+        "A-PROTOTYPE-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -600,7 +608,7 @@
         "PRIVACY_HUMAN_REVIEW",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "已将官方边界、现状、控规、交通、文保、市政、权属与运营缺口映射到复算动作和实施暂停条件。",
+      "evidence_summary_zh": "已将官方边界、现状、控规、交通、文保、市政、权属、运营和100米原型落位缺口映射到复算动作、专业复核和实施暂停条件。",
       "completion_scope": "concept_design_complete; official_data_gaps_remain_explicit"
     }
   ]
