@@ -2,7 +2,6 @@
 title: "京张·开源智轨带：城市级AI总线与智能体共治的城市设计建议"
 author_github: "qian-123456"
 language: "zh"
-translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以京张铁路遗址公园为城市级AI总线（OPENRAIL），将铁轨转译为数字轨道、车站转译为算力与社区复合节点、三处重点区转译为三个可进化的AI试验场，构建一带三核两翼多节点的开源智轨城市结构，服务百年京张文化带、都市AI生活体验带与AI融合创新带三大定位。"
 tracks: ["ai-origin-community", "jingzhang-heritage-narrative", "civic-agent-governance"]

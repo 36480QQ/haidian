@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "package_id": "openrail-ai-belt",
   "project_id": "centennial-jingzhang-ai-belt",
   "site_package_version": "0.1.0",
@@ -24,7 +24,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "32781e5c88c64b383d817b38d50518fbb778f5488aff985a681420692c7962c9"
+      "sha256": "f924f792b1121d9ea663c862d460ab34ef7bfd55e4ecb75ba3cc8175b2309fc0"
     },
     {
       "path": "agent.json",
@@ -54,7 +54,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "d72f952c3bb3e3fb401e73f19c53c6d1d85d34fd1f624d81c23d5916566535e8"
+      "sha256": "f79c8f86c08d51f393de5f832202932df93355a5e43e5473c93ed0ce37de6bd7"
     },
     {
       "path": "compliance_matrix.json",
@@ -215,6 +215,6 @@
     "self_checked": true,
     "known_blockers": [],
     "data_confidence": "low",
-    "note": "Local deterministic, spatial, visual and professional evidence checks were run after generation; provisional geometry remains non-approval input."
+    "readiness_contract": "persisted-self-check-v1"
   }
 }
