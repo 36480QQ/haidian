@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "3195eac3b733279231482b679dc979efab80d2d990a380e2af79c0b0bf60ec23"
+      "sha256": "21c8ed0d3d5039f290238ebb24ff3757d966404089b9adc8b9d1337d39b0fa7a"
     },
     {
       "path": "agent.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "80b71cb78d2c1581fc679eb561959ac515bc8a3ff6f76c74dcc2c4e20d49b72f"
+      "sha256": "efdfab670685d21b035c2b85074ac7197a843d867d315c453ace83d88f2d1d9f"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "cc6d8c35b9de9b407da89dfdf8ab3a542cf4f15d10cd7cd87d4fd1901557a6b2"
+      "sha256": "1bdb458448b212cbe50cf134e9d9358f1ea0492aa2b13e55ffc468ea44eb1333"
     },
     {
       "path": "report/narrative.md",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "4818f683422eae6efca298a3908121699c5132f189e63967fb97a45076021006"
+      "sha256": "e9346bfb2a0a14c7e291903fcc3327cfd029361612df4c85dbd4b116617555f0"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "32246bef2dbee4c810100fecc0fa85d19e592da6973f2c00045f15ac30d76961"
+      "sha256": "f00f39d3b011cf26babdccfa316b94a763e213ffa94b3babde4e9aa4de19e69d"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -387,8 +387,14 @@
     }
   ],
   "validation_claim": {
-    "self_checked": false,
-    "known_blockers": [],
-    "data_confidence": "high"
+    "self_checked": true,
+    "known_blockers": [
+      "Organizer must provide official SITE_BOUNDARY before precision-area confirmation.",
+      "Organizer must provide three official KEY_AREA polygons before professional scoring of detailed-design geometry."
+    ],
+    "data_confidence": "medium",
+    "validation_scope": "participant-controlled deterministic, spatial, visual, and professional evidence checks",
+    "fully_validated": false,
+    "professional_scoring_ready": false
   }
 }

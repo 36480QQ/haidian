@@ -229,6 +229,21 @@ JZ-01 至 JZ-06 已转化为可审查实施矩阵。每个项目均记录空间�
 
 逐资产版权清单已补入 visual/assets/asset-license-inventory.json 和本节声明：正文、英文译文、图件、HTML、PDF 与矩阵均由本包脚本和 Codex 生成；GeoJSON 派生自仓库提供的 provisional geometry 和本包概念图层；HTML 不加载远程脚本、远程字体、远程地图瓦片或第三方图标；图中 Logo 为概念几何符号，不是商业商标。COMMUNITY-DISPLAY-ONLY 仅覆盖本次开源征集展示和评审，不扩大第三方材料许可。双语等价核对记录见 visual/assets/bilingual-equivalence-check.json。 [source:SOURCE-REGISTRY] [depth:risk_missing_data]
 
+## 标准与设计深度证据交叉表
+
+以下交叉表把矩阵中的标准和深度项连接到可阅读判断、空间数据、指标与图纸；它不是把机器索引当作专业结论。`MOHURD-ARCH-DESIGN-DEPTH-2016` 的官方适用文件尚未由组织方提供，因此这里只记录建筑深度的待补依据，不把它写成已满足的法定控制。
+
+| 标准 | 可审查判断与证据回路 |
+| --- | --- |
+| [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] | 三层范围由 [data:geometry/site_boundary.geojson#SITE-001] 表达；三处重点区由 [data:geometry/key_areas.geojson#PROV-KEY-001] 表达；成果深度由 [depth:three_level_scope_framework] 组织，并以 [metric:key_area_count] 复核；公告依据仍受临时边界限制。 |
+| [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] | 命名与 Logo、案例生态、十张场景卡、三项测试、地标组件和运营漏斗分别落在 proposal 章节、五张双语图、`visual/assets/scenario-cards.json` 与 [depth:renewal_project_list]；任务书要求由 [source:AGENT-TASKBOOK] 支撑。 |
+| [standard:MOHURD-URBAN-DESIGN-MEASURES] | 蓝绿网络、公共空间、城市风貌和建筑界面通过 [data:geometry/green_space.geojson#GREEN-001]、[data:geometry/public_space.geojson#PUBLIC-001]、[depth:blue_green_public_space] 与图纸中的总体关系复核；这是概念城市设计建议。 |
+| [standard:MOHURD-CONTROL-DETAILED-PLANNING] | 用地证据回接 [data:geometry/land_use.geojson#LU-001]，道路组织回接 [data:geometry/roads.geojson#ROAD-001]，建筑基底回接 [data:geometry/buildings.geojson#BLDG-001]；[depth:land_use_layout] 记录布局，[depth:development_intensity_controls] 记录强度条件，[depth:three_key_area_detailed_design] 记录重点区深度。FAR、红线、高度和退线仍为 unknown 或待确认。 |
+| [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] | `land_use_code` 和用地面积由 [data:geometry/land_use.geojson#LU-001] 与 [metric:site_area_sqm] 复算；绿地比例由 [metric:green_ratio] 复核，公共空间比例由 [metric:public_space_ratio] 复核；分类是临时方案模型，不替代正式控规。 |
+| [standard:MOHURD-ARCH-DESIGN-DEPTH-2016] | 建筑基底仅作为概念体量入口；[depth:height_massing_character]、[depth:three_key_area_detailed_design]、[data:geometry/buildings.geojson#BLDG-001] 和 `drawings/a3-booklet.pdf` / `drawings/a0-boards.pdf` 形成待深化回路，正式测绘、结构、消防、文保和建筑深度文件到位后必须复核。 |
+
+四个关键深度项的可读落点如下：`land_use_layout` 由用地结构图、九类几何图层和面积指标支撑；`development_intensity_controls` 由指标证据图记录 unknown 控制值及正式资料到位后的复算触发；`height_massing_character` 由建筑基底、风貌方法和 A3/A0 图纸表达，但不提供未经依据的高度值；`three_key_area_detailed_design` 由众智园、AI 原点社区和大钟寺的三处临时 polygon、局部图、场景与实施矩阵共同表达。深度一的索引是 [depth:land_use_layout]；强度条件的索引是 [depth:development_intensity_controls]；建筑风貌的索引是 [depth:height_massing_character]；重点区详细设计的索引是 [depth:three_key_area_detailed_design]。边界限制见 [source:BOUNDARY-SOURCE]，重点区来源见 [source:KEY-AREA-SOURCE]。
+
 ## 参考资料
 
 - brief/public-brief.md
