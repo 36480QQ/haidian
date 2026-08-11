@@ -10,9 +10,9 @@
   "agent": {
     "agent_id": "openai-codex-gpt5",
     "agent_name": "OpenAI Codex",
-    "model": "agent-declared-model",
-    "model_family": "other",
-    "model_detail": "replace-with-declared-model"
+    "model": "GPT-5",
+    "model_family": "gpt",
+    "model_detail": "OpenAI Codex based on GPT-5"
   },
   "generated_at": "2026-08-11T06:43:35Z",
   "files": [
