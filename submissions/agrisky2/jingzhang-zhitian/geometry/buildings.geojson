@@ -1,0 +1,1410 @@
+{
+  "type": "FeatureCollection",
+  "name": "buildings",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "BLD-001",
+      "properties": {
+        "id": "BLD-001",
+        "layer": "BUILDING_FOOTPRINT",
+        "building_type": "AI_agritech_rd",
+        "height_concept_m": 36.0,
+        "floors_concept": 9,
+        "status": "proposed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34425999999999,
+              40.01505
+            ],
+            [
+              116.34638,
+              40.01505
+            ],
+            [
+              116.34638,
+              40.017675000000004
+            ],
+            [
+              116.34425999999999,
+              40.017675000000004
+            ],
+            [
+              116.34425999999999,
+              40.01505
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLD-002",
+      "properties": {
+        "id": "BLD-002",
+        "layer": "BUILDING_FOOTPRINT",
+        "building_type": "AI_agritech_rd",
+        "height_concept_m": 36.0,
+        "floors_concept": 9,
+        "status": "proposed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.347228,
+              40.01505
+            ],
+            [
+              116.349348,
+              40.01505
+            ],
+            [
+              116.349348,
+              40.017675000000004
+            ],
+            [
+              116.347228,
+              40.017675000000004
+            ],
+            [
+              116.347228,
+              40.01505
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLD-003",
+      "properties": {
+        "id": "BLD-003",
+        "layer": "BUILDING_FOOTPRINT",
+        "building_type": "AI_agritech_rd",
+        "height_concept_m": 36.0,
+        "floors_concept": 9,
+        "status": "proposed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.350196,
+              40.01505
+            ],
+            [
+              116.352316,
+              40.01505
+            ],
+            [
+              116.352316,
+              40.017675000000004
+            ],
+            [
+              116.350196,
+              40.017675000000004
+            ],
+            [
+              116.350196,
+              40.01505
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLD-004",
+      "properties": {
+        "id": "BLD-004",
+        "layer": "BUILDING_FOOTPRINT",
+        "building_type": "mix",
+        "height_concept_m": 53.99999999999999,
+        "floors_concept": 13,
+        "status": "proposed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34425999999999,
+              40.01925
+            ],
+            [
+              116.34638,
+              40.01925
+            ],
+            [
+              116.34638,
+              40.021875
+            ],
+            [
+              116.34425999999999,
+              40.021875
+            ],
+            [
+              116.34425999999999,
+              40.01925
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLD-005",
+      "properties": {
+        "id": "BLD-005",
+        "layer": "BUILDING_FOOTPRINT",
+        "building_type": "mix",
+        "height_concept_m": 53.99999999999999,
+        "floors_concept": 13,
+        "status": "proposed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.347228,
+              40.01925
+            ],
+            [
+              116.349348,
+              40.01925
+            ],
+            [
+              116.349348,
+              40.021875
+            ],
+            [
+              116.347228,
+              40.021875
+            ],
+            [
+              116.347228,
+              40.01925
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLD-006",
+      "properties": {
+        "id": "BLD-006",
+        "layer": "BUILDING_FOOTPRINT",
+        "building_type": "mix",
+        "height_concept_m": 53.99999999999999,
+        "floors_concept": 13,
+        "status": "proposed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.350196,
+              40.01925
+            ],
+            [
+              116.352316,
+              40.01925
+            ],
+            [
+              116.352316,
+              40.021875
+            ],
+            [
+              116.350196,
+              40.021875
+            ],
+            [
+              116.350196,
+              40.01925
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLD-007",
+      "properties": {
+        "id": "BLD-007",
+        "layer": "BUILDING_FOOTPRINT",
+        "building_type": "foodtech_commercial",
+        "height_concept_m": 48.0,
+        "floors_concept": 12,
+        "status": "proposed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34326,
+              39.98665
+            ],
+            [
+              116.34538,
+              39.98665
+            ],
+            [
+              116.34538,
+              39.988275
+            ],
+            [
+              116.34326,
+              39.988275
+            ],
+            [
+              116.34326,
+              39.98665
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLD-008",
+      "properties": {
+        "id": "BLD-008",
+        "layer": "BUILDING_FOOTPRINT",
+        "building_type": "foodtech_commercial",
+        "height_concept_m": 48.0,
+        "floors_concept": 12,
+        "status": "proposed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.346228,
+              39.98665
+            ],
+            [
+              116.348348,
+              39.98665
+            ],
+            [
+              116.348348,
+              39.988275
+            ],
+            [
+              116.346228,
+              39.988275
+            ],
+            [
+              116.346228,
+              39.98665
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLD-009",
+      "properties": {
+        "id": "BLD-009",
+        "layer": "BUILDING_FOOTPRINT",
+        "building_type": "foodtech_commercial",
+        "height_concept_m": 48.0,
+        "floors_concept": 12,
+        "status": "proposed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34919599999999,
+              39.98665
+            ],
+            [
+              116.351316,
+              39.98665
+            ],
+            [
+              116.351316,
+              39.988275
+            ],
+            [
+              116.34919599999999,
+              39.988275
+            ],
+            [
+              116.34919599999999,
+              39.98665
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLD-010",
+      "properties": {
+        "id": "BLD-010",
+        "layer": "BUILDING_FOOTPRINT",
+        "building_type": "mix",
+        "height_concept_m": 72.0,
+        "floors_concept": 18,
+        "status": "proposed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34326,
+              39.98925
+            ],
+            [
+              116.34538,
+              39.98925
+            ],
+            [
+              116.34538,
+              39.990875
+            ],
+            [
+              116.34326,
+              39.990875
+            ],
+            [
+              116.34326,
+              39.98925
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLD-011",
+      "properties": {
+        "id": "BLD-011",
+        "layer": "BUILDING_FOOTPRINT",
+        "building_type": "mix",
+        "height_concept_m": 72.0,
+        "floors_concept": 18,
+        "status": "proposed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.346228,
+              39.98925
+            ],
+            [
+              116.348348,
+              39.98925
+            ],
+            [
+              116.348348,
+              39.990875
+            ],
+            [
+              116.346228,
+              39.990875
+            ],
+            [
+              116.346228,
+              39.98925
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLD-012",
+      "properties": {
+        "id": "BLD-012",
+        "layer": "BUILDING_FOOTPRINT",
+        "building_type": "mix",
+        "height_concept_m": 72.0,
+        "floors_concept": 18,
+        "status": "proposed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34919599999999,
+              39.98925
+            ],
+            [
+              116.351316,
+              39.98925
+            ],
+            [
+              116.351316,
+              39.990875
+            ],
+            [
+              116.34919599999999,
+              39.990875
+            ],
+            [
+              116.34919599999999,
+              39.98925
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLD-013",
+      "properties": {
+        "id": "BLD-013",
+        "layer": "BUILDING_FOOTPRINT",
+        "building_type": "talent_residential",
+        "height_concept_m": 27.0,
+        "floors_concept": 6,
+        "status": "proposed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34326,
+              39.98397
+            ],
+            [
+              116.34538,
+              39.98397
+            ],
+            [
+              116.34538,
+              39.984395
+            ],
+            [
+              116.34326,
+              39.984395
+            ],
+            [
+              116.34326,
+              39.98397
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLD-014",
+      "properties": {
+        "id": "BLD-014",
+        "layer": "BUILDING_FOOTPRINT",
+        "building_type": "talent_residential",
+        "height_concept_m": 27.0,
+        "floors_concept": 6,
+        "status": "proposed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.346228,
+              39.98397
+            ],
+            [
+              116.348348,
+              39.98397
+            ],
+            [
+              116.348348,
+              39.984395
+            ],
+            [
+              116.346228,
+              39.984395
+            ],
+            [
+              116.346228,
+              39.98397
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLD-015",
+      "properties": {
+        "id": "BLD-015",
+        "layer": "BUILDING_FOOTPRINT",
+        "building_type": "talent_residential",
+        "height_concept_m": 27.0,
+        "floors_concept": 6,
+        "status": "proposed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34919599999999,
+              39.98397
+            ],
+            [
+              116.351316,
+              39.98397
+            ],
+            [
+              116.351316,
+              39.984395
+            ],
+            [
+              116.34919599999999,
+              39.984395
+            ],
+            [
+              116.34919599999999,
+              39.98397
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLD-016",
+      "properties": {
+        "id": "BLD-016",
+        "layer": "BUILDING_FOOTPRINT",
+        "building_type": "mix",
+        "height_concept_m": 40.49999999999999,
+        "floors_concept": 10,
+        "status": "proposed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34326,
+              39.98465
+            ],
+            [
+              116.34538,
+              39.98465
+            ],
+            [
+              116.34538,
+              39.985075
+            ],
+            [
+              116.34326,
+              39.985075
+            ],
+            [
+              116.34326,
+              39.98465
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLD-017",
+      "properties": {
+        "id": "BLD-017",
+        "layer": "BUILDING_FOOTPRINT",
+        "building_type": "mix",
+        "height_concept_m": 40.49999999999999,
+        "floors_concept": 10,
+        "status": "proposed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.346228,
+              39.98465
+            ],
+            [
+              116.348348,
+              39.98465
+            ],
+            [
+              116.348348,
+              39.985075
+            ],
+            [
+              116.346228,
+              39.985075
+            ],
+            [
+              116.346228,
+              39.98465
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLD-018",
+      "properties": {
+        "id": "BLD-018",
+        "layer": "BUILDING_FOOTPRINT",
+        "building_type": "mix",
+        "height_concept_m": 40.49999999999999,
+        "floors_concept": 10,
+        "status": "proposed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34919599999999,
+              39.98465
+            ],
+            [
+              116.351316,
+              39.98465
+            ],
+            [
+              116.351316,
+              39.985075
+            ],
+            [
+              116.34919599999999,
+              39.985075
+            ],
+            [
+              116.34919599999999,
+              39.98465
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLD-019",
+      "properties": {
+        "id": "BLD-019",
+        "layer": "BUILDING_FOOTPRINT",
+        "building_type": "food_experience",
+        "height_concept_m": 60.0,
+        "floors_concept": 15,
+        "status": "proposed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34346000000001,
+              39.9448
+            ],
+            [
+              116.34598000000001,
+              39.9448
+            ],
+            [
+              116.34598000000001,
+              39.94605
+            ],
+            [
+              116.34346000000001,
+              39.94605
+            ],
+            [
+              116.34346000000001,
+              39.9448
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLD-020",
+      "properties": {
+        "id": "BLD-020",
+        "layer": "BUILDING_FOOTPRINT",
+        "building_type": "food_experience",
+        "height_concept_m": 60.0,
+        "floors_concept": 15,
+        "status": "proposed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34698800000001,
+              39.9448
+            ],
+            [
+              116.34950800000001,
+              39.9448
+            ],
+            [
+              116.34950800000001,
+              39.94605
+            ],
+            [
+              116.34698800000001,
+              39.94605
+            ],
+            [
+              116.34698800000001,
+              39.9448
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLD-021",
+      "properties": {
+        "id": "BLD-021",
+        "layer": "BUILDING_FOOTPRINT",
+        "building_type": "food_experience",
+        "height_concept_m": 60.0,
+        "floors_concept": 15,
+        "status": "proposed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.350516,
+              39.9448
+            ],
+            [
+              116.353036,
+              39.9448
+            ],
+            [
+              116.353036,
+              39.94605
+            ],
+            [
+              116.350516,
+              39.94605
+            ],
+            [
+              116.350516,
+              39.9448
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLD-022",
+      "properties": {
+        "id": "BLD-022",
+        "layer": "BUILDING_FOOTPRINT",
+        "building_type": "mix",
+        "height_concept_m": 89.99999999999999,
+        "floors_concept": 22,
+        "status": "proposed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34346000000001,
+              39.9468
+            ],
+            [
+              116.34598000000001,
+              39.9468
+            ],
+            [
+              116.34598000000001,
+              39.94805
+            ],
+            [
+              116.34346000000001,
+              39.94805
+            ],
+            [
+              116.34346000000001,
+              39.9468
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLD-023",
+      "properties": {
+        "id": "BLD-023",
+        "layer": "BUILDING_FOOTPRINT",
+        "building_type": "mix",
+        "height_concept_m": 89.99999999999999,
+        "floors_concept": 22,
+        "status": "proposed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34698800000001,
+              39.9468
+            ],
+            [
+              116.34950800000001,
+              39.9468
+            ],
+            [
+              116.34950800000001,
+              39.94805
+            ],
+            [
+              116.34698800000001,
+              39.94805
+            ],
+            [
+              116.34698800000001,
+              39.9468
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLD-024",
+      "properties": {
+        "id": "BLD-024",
+        "layer": "BUILDING_FOOTPRINT",
+        "building_type": "mix",
+        "height_concept_m": 89.99999999999999,
+        "floors_concept": 22,
+        "status": "proposed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.350516,
+              39.9468
+            ],
+            [
+              116.353036,
+              39.9468
+            ],
+            [
+              116.353036,
+              39.94805
+            ],
+            [
+              116.350516,
+              39.94805
+            ],
+            [
+              116.350516,
+              39.9468
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLD-025",
+      "properties": {
+        "id": "BLD-025",
+        "layer": "BUILDING_FOOTPRINT",
+        "building_type": "tech_service",
+        "height_concept_m": 18.0,
+        "floors_concept": 4,
+        "status": "proposed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34103,
+              39.955600000000004
+            ],
+            [
+              116.34169,
+              39.955600000000004
+            ],
+            [
+              116.34169,
+              39.9696
+            ],
+            [
+              116.34103,
+              39.9696
+            ],
+            [
+              116.34103,
+              39.955600000000004
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLD-026",
+      "properties": {
+        "id": "BLD-026",
+        "layer": "BUILDING_FOOTPRINT",
+        "building_type": "tech_service",
+        "height_concept_m": 18.0,
+        "floors_concept": 4,
+        "status": "proposed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.341954,
+              39.955600000000004
+            ],
+            [
+              116.342614,
+              39.955600000000004
+            ],
+            [
+              116.342614,
+              39.9696
+            ],
+            [
+              116.341954,
+              39.9696
+            ],
+            [
+              116.341954,
+              39.955600000000004
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLD-027",
+      "properties": {
+        "id": "BLD-027",
+        "layer": "BUILDING_FOOTPRINT",
+        "building_type": "tech_service",
+        "height_concept_m": 18.0,
+        "floors_concept": 4,
+        "status": "proposed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.342878,
+              39.955600000000004
+            ],
+            [
+              116.343538,
+              39.955600000000004
+            ],
+            [
+              116.343538,
+              39.9696
+            ],
+            [
+              116.342878,
+              39.9696
+            ],
+            [
+              116.342878,
+              39.955600000000004
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLD-028",
+      "properties": {
+        "id": "BLD-028",
+        "layer": "BUILDING_FOOTPRINT",
+        "building_type": "mix",
+        "height_concept_m": 26.999999999999996,
+        "floors_concept": 6,
+        "status": "proposed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34103,
+              39.978
+            ],
+            [
+              116.34169,
+              39.978
+            ],
+            [
+              116.34169,
+              39.992000000000004
+            ],
+            [
+              116.34103,
+              39.992000000000004
+            ],
+            [
+              116.34103,
+              39.978
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLD-029",
+      "properties": {
+        "id": "BLD-029",
+        "layer": "BUILDING_FOOTPRINT",
+        "building_type": "mix",
+        "height_concept_m": 26.999999999999996,
+        "floors_concept": 6,
+        "status": "proposed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.341954,
+              39.978
+            ],
+            [
+              116.342614,
+              39.978
+            ],
+            [
+              116.342614,
+              39.992000000000004
+            ],
+            [
+              116.341954,
+              39.992000000000004
+            ],
+            [
+              116.341954,
+              39.978
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLD-030",
+      "properties": {
+        "id": "BLD-030",
+        "layer": "BUILDING_FOOTPRINT",
+        "building_type": "mix",
+        "height_concept_m": 26.999999999999996,
+        "floors_concept": 6,
+        "status": "proposed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.342878,
+              39.978
+            ],
+            [
+              116.343538,
+              39.978
+            ],
+            [
+              116.343538,
+              39.992000000000004
+            ],
+            [
+              116.342878,
+              39.992000000000004
+            ],
+            [
+              116.342878,
+              39.978
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLD-031",
+      "properties": {
+        "id": "BLD-031",
+        "layer": "BUILDING_FOOTPRINT",
+        "building_type": "scenario_mixed",
+        "height_concept_m": 18.0,
+        "floors_concept": 4,
+        "status": "proposed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34963,
+              39.945
+            ],
+            [
+              116.35089,
+              39.945
+            ],
+            [
+              116.35089,
+              39.9575
+            ],
+            [
+              116.34963,
+              39.9575
+            ],
+            [
+              116.34963,
+              39.945
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLD-032",
+      "properties": {
+        "id": "BLD-032",
+        "layer": "BUILDING_FOOTPRINT",
+        "building_type": "scenario_mixed",
+        "height_concept_m": 18.0,
+        "floors_concept": 4,
+        "status": "proposed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.351394,
+              39.945
+            ],
+            [
+              116.352654,
+              39.945
+            ],
+            [
+              116.352654,
+              39.9575
+            ],
+            [
+              116.351394,
+              39.9575
+            ],
+            [
+              116.351394,
+              39.945
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLD-033",
+      "properties": {
+        "id": "BLD-033",
+        "layer": "BUILDING_FOOTPRINT",
+        "building_type": "scenario_mixed",
+        "height_concept_m": 18.0,
+        "floors_concept": 4,
+        "status": "proposed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35315800000001,
+              39.945
+            ],
+            [
+              116.35441800000001,
+              39.945
+            ],
+            [
+              116.35441800000001,
+              39.9575
+            ],
+            [
+              116.35315800000001,
+              39.9575
+            ],
+            [
+              116.35315800000001,
+              39.945
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLD-034",
+      "properties": {
+        "id": "BLD-034",
+        "layer": "BUILDING_FOOTPRINT",
+        "building_type": "mix",
+        "height_concept_m": 26.999999999999996,
+        "floors_concept": 6,
+        "status": "proposed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34963,
+              39.965
+            ],
+            [
+              116.35089,
+              39.965
+            ],
+            [
+              116.35089,
+              39.977500000000006
+            ],
+            [
+              116.34963,
+              39.977500000000006
+            ],
+            [
+              116.34963,
+              39.965
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLD-035",
+      "properties": {
+        "id": "BLD-035",
+        "layer": "BUILDING_FOOTPRINT",
+        "building_type": "mix",
+        "height_concept_m": 26.999999999999996,
+        "floors_concept": 6,
+        "status": "proposed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.351394,
+              39.965
+            ],
+            [
+              116.352654,
+              39.965
+            ],
+            [
+              116.352654,
+              39.977500000000006
+            ],
+            [
+              116.351394,
+              39.977500000000006
+            ],
+            [
+              116.351394,
+              39.965
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLD-036",
+      "properties": {
+        "id": "BLD-036",
+        "layer": "BUILDING_FOOTPRINT",
+        "building_type": "mix",
+        "height_concept_m": 26.999999999999996,
+        "floors_concept": 6,
+        "status": "proposed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35315800000001,
+              39.965
+            ],
+            [
+              116.35441800000001,
+              39.965
+            ],
+            [
+              116.35441800000001,
+              39.977500000000006
+            ],
+            [
+              116.35315800000001,
+              39.977500000000006
+            ],
+            [
+              116.35315800000001,
+              39.965
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}
