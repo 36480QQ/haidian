@@ -1,6 +1,6 @@
 {
   "type": "FeatureCollection",
-  "name": "building_footprints_scaffold",
+  "name": "conceptual_support_building_placeholder",
   "features": [
     {
       "type": "Feature",
@@ -9,10 +9,13 @@
         "id": "BLDG-001",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
-        "confidence": "medium",
+        "confidence": "low",
         "geometry_role": "design_proposal",
         "building_type": "ai_r_and_d",
-        "name_zh": "AI研发示范建筑基底",
+        "name_zh": "室内译码试验支持空间概念占位",
+        "name_en": "Conceptual placeholder for indoor decoding-test support",
+        "design_note_zh": "仅为提交结构与空间关系表达，不代表现状建筑、拟建建筑、拆改留或建设规模。",
+        "design_note_en": "Submission-structure and spatial-relationship aid only; not an existing/proposed building, DRR decision or development quantum.",
         "area_sqm_declared": 310807.184
       },
       "geometry": {

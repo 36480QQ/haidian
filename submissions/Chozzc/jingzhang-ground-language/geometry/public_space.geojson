@@ -1,6 +1,6 @@
 {
   "type": "FeatureCollection",
-  "name": "public_space_scaffold",
+  "name": "ground_language_co_reading_public_space",
   "features": [
     {
       "type": "Feature",
@@ -11,7 +11,12 @@
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "name_zh": "公共活动界面",
+        "name_zh": "人机共读公共界面概念区",
+        "name_en": "Conceptual human-machine co-reading public interface",
+        "glyph_ids": ["G1", "G2", "G5", "G6"],
+        "scenario_ids": ["S3", "S5", "S6", "S10", "S12"],
+        "design_note_zh": "概念性公共空间叠加，不表示权属、现状开放状态或批准建设范围。",
+        "design_note_en": "Conceptual public-space overlay; it represents no ownership, existing public access or approved works.",
         "area_sqm_declared": 836345.643
       },
       "geometry": {
