@@ -24,6 +24,26 @@ In this report, prose carries only claim-adjacent evidence anchors; the complete
 
 ![Evidence chain and submission package diagram](assets/figures/site-overview.en.png)
 
+## Core Concept and Differentiation Mechanism
+
+### Concept: One Mainline, Five Branches
+
+Translating the century-old Jing-Zhang Railway's "branch line" DNA into the spatial grammar of an AI innovation belt: the **mainline** is the Jing-Zhang Heritage Park green spine (the main line of public validation and centennial culture), and the **five branches** are the three key areas (Zhongzhiyuan, AI Origin Community, Dazhongsi) and the two wings (Zhongguancun Service Wing, Xiaoyuehe Scenario Wing). A branch is both a railway branch line (the Jing-Zhang Railway extended its service area through branches such as the Jingmen branch from the start) and an open-source branch — innovation grows along branches like pull requests, is validated on the mainline, and finally merges back [source:SRC-JINGZHANG-RAILWAY-HISTORY] [source:AGENT-TASKBOOK].
+
+### Signature Mechanism: The PR Three-Cycle
+
+The proposal's differentiating mechanism is named the **PR Three-Cycle** — all three stages abbreviate to PR, isomorphic with this open call's own PR-based submission organization and providing verifiable checkpoints for AI automated review [source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]:
+
+1. **Public Review**: any AI service first "waits on stage" at a mainline public station — data boundaries, human-review arrangements, and exit conditions are all public, open to public and professional review [data:geometry/public_space.geojson#PUBLIC-001];
+2. **Pilot Run**: services that pass are piloted along the corresponding branch into campuses, communities, or commercial districts in restricted scope (restricted area, restricted hours, human-takeover fallback) [data:geometry/roads.geojson#ROAD-002];
+3. **Merge**: services that pass the pilot "merge" back into the mainline public knowledge base and diffuse city-wide; those that fail roll back with reasons published — echoing open-source merge and revert [depth:overall_spatial_structure].
+
+The PR Three-Cycle turns "how AI services enter the city" from a slogan into an auditable, reversible process, directly supporting the "global voice in AI governance" function [source:AGENT-TASKBOOK].
+
+### Implementation Path (Transferability)
+
+All spatial conclusions in this proposal are conceptual suggestions and do not replace statutory planning [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]; however, clear deepening interfaces are reserved for post-government-review implementation: mainline public stations map to planning and operation teams' landing nodes, the five branches map to implementation phases and project packages, the PR Three-Cycle maps to open scenario lists and human-review institutions, and metric recalculation is fully rerun by data teams once official boundaries publish [source:BOUNDARY-SOURCE] [depth:risk_missing_data].
+
 ## Three-Level Scope Framework
 
 The proposal follows the announcement's three-level scope [source:OFFICIAL-ANNOUNCEMENT] [depth:three_level_scope_framework]:
@@ -51,11 +71,36 @@ The proposal takes the taskbook's three positionings (Centennial Jing-Zhang Cult
 
 The synergy loop: the mainline pools public value and cultural identity; the five branches connect five innovation factors (R&D, talent, consumption, capital, life); AI services on the branches are validated, displayed, and human-reviewed at mainline public stations, then flow back to campuses, communities, and commercial districts — forming a "public validation → scenario diffusion → factor return" closed loop [depth:overall_spatial_structure].
 
+| Loop stage | Branch | Contribution | Return flow |
+|------------|--------|--------------|-------------|
+| R&D (make) | Compute Branch, Zhongzhiyuan | Models, compute, full-stack pilots | Results flow to Origin and Market |
+| Talent (nurture) | Origin Branch, Origin Community | Talent, open-source community, early-stage capital | Talent flows into enterprises and scenarios |
+| Market (use) | Market Branch, Dazhongsi | AI-native consumption and conversion | Demand and data feed back to R&D |
+| Capital and factors (pool) | Capital Branch, Zhongguancun wing | IP, capital, globally allocated factors | Factors injected into the three areas |
+| Life scenarios (test) | Life Branch, Xiaoyuehe wing | Everyday scenarios and public experience | Real demand returns for validation [source:SRC-2026-BJ-KW-THREE-AREAS-WINGS] |
+
+The loop aligns with public policy directions for building Beijing into an international science and technology innovation center, Zhongguancun into a world-leading science park, and Haidian's "1+X+1" modern industrial system, consistent with AI as the core industry and technology services [source:SRC-2026-HAIDIAN-1X1] [source:SRC-2026-BJ-KW-THREE-AREAS-WINGS].
+
 ### Naming System and Logo Direction (conceptual suggestion)
 
 The proposed primary name is **"京张支线带" (Jing-Zhang Branch Belt)**, in English **THE BRANCH LINES** (JZ·BRANCH for short). The naming has three layers: first, railway history — the Jing-Zhang Railway expanded its service area through branch lines from the start (e.g., the Mentougou branch), so branches are part of its "self-built pioneering" DNA; second, spatial structure — the three areas and two wings are exactly five branches off the mainline; third, the open-source metaphor — a branch is a git branch, and innovation grows on branches like pull requests and merges on the mainline, isomorphic with the organizational logic of this open call [source:AGENT-TASKBOOK].
 
 Logo direction (conceptual, to be deepened by professional design with font licensing confirmed): use a "mainline + five branches" track topology as the base form — one continuous mainline leading to five tapering branches, evoking both the herringbone railway and a code-branch diagram; a three-color system of "rail gray + Zhongguancun blue + heritage ochre" is suggested, corresponding to industrial heritage, technological innovation, and historical land. The naming, logo, and signage do not borrow any existing city, park, or enterprise identity [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
+
+**Branch codenames (conceptual)**: for professional deepening and international communication, the five branches use bilingual codenames — Zhongzhiyuan branch **Compute Branch** (compute and full-stack pilot), AI Origin Community branch **Origin Branch** (talent and ecosystem origin), Dazhongsi branch **Market Branch** (AI-native market outlet), Zhongguancun Technology Service Wing **Capital Branch** (IP and capital empowerment), and Xiaoyuehe Scenario Wing **Life Branch** (everyday scenarios). Codenames map one-to-one with the Chinese names and borrow no existing park names [depth:overall_spatial_structure].
+
+### Jing-Zhang Railway Historical Baseline (public background)
+
+The "self-built pioneering" DNA of the century-old Jing-Zhang Railway is the historical foundation of this concept; the facts below are public accounts subject to authoritative historical verification [source:SRC-JINGZHANG-RAILWAY-HISTORY]:
+
+| Time | Public fact | Significance for this proposal |
+|------|-------------|--------------------------------|
+| 1905–1909 | Zhan Tianyou directed construction; China's first trunk railway designed and built by Chinese | Origin of the self-innovation gene [source:SRC-JINGZHANG-RAILWAY-HISTORY] |
+| 1909 | Qinglongqiao herringbone switchback solved the Guanggou climb | Engineering ingenuity overcoming natural constraints — today's analogue is mechanism overcoming technical uncertainty |
+| 1906–1908 | Jingmen branch (Xizhimen–Mentougou) built for coal transport, one of the earliest branches | The railway's branch-based service expansion is the historical basis of this proposal's branch concept |
+| 2016 | Qinghuayuan station ceased passenger service to make way for the HSR tunnel | Functional transformation of the old line; beginning of heritage conversion [source:SRC-JINGZHANG-HERITAGE-PARK] |
+| 2019-12-30 | Jing-Zhang High-Speed Railway opened | The centennial line enters a new era [source:SRC-JINGZHANG-HSR] |
+| From 2019 | Jing-Zhang Railway Heritage Park built progressively | Material basis of the mainline public space and centennial culture display [source:SRC-JINGZHANG-HERITAGE-PARK] |
 
 ### Global AI Innovation Ecosystem Cases (5–8, readable summaries)
 
@@ -139,20 +184,20 @@ All three key areas use provisional polygons; the conclusions below are directio
 
 All scenarios below are conceptual suggestions with privacy, safety, and human-review boundaries marked; immature technologies are not described as fully deployable [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
 
-| # | Scenario | Spatial anchor | Users | Data/privacy boundary | Human review |
-|---|----------|----------------|-------|------------------------|--------------|
-| S01 | Mainline AI culture guide | Mainline stations 1–7 | Visitors/residents | Location and public culture data only; no biometrics | Content reviewed by culture/heritage professionals |
-| S02 | AI accessibility path assessment | Mainline slow-traffic spine | Elderly/disabled | Anonymized movement data | On-site human re-measurement [standard:BARRIER-FREE-ENVIRONMENT-LAW] |
-| S03 | Zhongzhiyuan model evaluation station | Zhongzhiyuan branch | R&D organizations | Auditable, revocable evaluation datasets | Expert review of results |
-| S04 | Compute service pavilion | Zhongzhiyuan branch | Developers | Publicly auditable usage and billing | Manual operator reconciliation |
-| S05 | Enterprise service copilot | Zhongguancun wing | Enterprises | Authorized public policy data only | Manual policy maintenance [source:SOURCE-REGISTRY] |
-| S06 | AI Origin open classroom | Origin Community branch | Faculty/students | Attributable, traceable class content | Teacher review |
-| S07 | Developer salon booking | Origin Community branch | Developers | Minimized booking data | Manual community handling |
-| S08 | Dazhongsi AI-native consumption street | Dazhongsi branch | Citizens/visitors | Localized, opt-out consumption data | Merchant and consumer-protection review |
-| S09 | Low-speed autonomous delivery | Dazhongsi–Xiaoyuehe wing | Residents/merchants | Restricted operating zone and speed | Remote takeover by safety staff |
-| S10 | Xiaoyuehe riverside AI life assistant | Xiaoyuehe wing | Residents | No camera tracking; public-address-level info only | Community staffed on duty |
-| S11 | AI health-service navigation | Xiaoyuehe wing/Origin | Elderly/chronic patients | Authorized health data processing | Medical professional review [scenario:ai-health-service-navigation] |
-| S12 | Public-safety operations review desk | Mainline stations | Public/operators | Published event-retention periods | Human review before action [scenario:public-safety-operations-review] |
+| # | Scenario | Spatial anchor | Users | Data/privacy boundary | Human review | Operator |
+|---|----------|----------------|-------|------------------------|--------------|----------|
+| S01 | Mainline AI culture guide | Mainline stations 1–7 [data:geometry/public_space.geojson#PUBLIC-001] | Visitors/residents | Location and public culture data only; no biometrics | Content reviewed by culture/heritage professionals | Park operator + culture authority |
+| S02 | AI accessibility path assessment | Mainline slow-traffic spine | Elderly/disabled | Anonymized movement data | On-site human re-measurement [standard:BARRIER-FREE-ENVIRONMENT-LAW] | Accessibility agency + community |
+| S03 | Zhongzhiyuan model evaluation station | Zhongzhiyuan branch | R&D organizations | Auditable, revocable evaluation datasets | Expert review of results | Park operator + evaluation agency |
+| S04 | Compute service pavilion | Zhongzhiyuan branch | Developers | Publicly auditable usage and billing | Manual operator reconciliation | Compute service provider |
+| S05 | Enterprise service copilot | Zhongguancun wing | Enterprises | Authorized public policy data only | Manual policy maintenance [source:SOURCE-REGISTRY] | Technology-service operator |
+| S06 | AI Origin open classroom | Origin Community branch | Faculty/students | Attributable, traceable class content | Teacher review | University + community college |
+| S07 | Developer salon booking | Origin Community branch | Developers | Minimized booking data | Manual community handling | Developer-community operator |
+| S08 | Dazhongsi AI-native consumption street | Dazhongsi branch | Citizens/visitors | Localized, opt-out consumption data | Merchant and consumer-protection review | Commercial operator + merchants |
+| S09 | Low-speed autonomous delivery | Dazhongsi–Xiaoyuehe wing | Residents/merchants | Restricted operating zone and speed | Remote takeover by safety staff | Delivery operator + transport authority |
+| S10 | Xiaoyuehe riverside AI life assistant | Xiaoyuehe wing | Residents | No camera tracking; public-address-level info only | Community staffed on duty | Subdistrict + community operator |
+| S11 | AI health-service navigation | Xiaoyuehe wing/Origin | Elderly/chronic patients | Authorized health data processing | Medical professional review [scenario:ai-health-service-navigation] | Health authority + medical institution |
+| S12 | Public-safety operations review desk | Mainline stations | Public/operators | Published event-retention periods | Human review before action [scenario:public-safety-operations-review] | Public security + emergency authority |
 
 **AI industry test/validation scenarios (3+)**: T01 Zhongzhiyuan full-stack pilot field (compute–model–application integration, campus-internal only); T02 mainline "stage first, launch later" trial belt (AI services undergo public trial at mainline stations and diffuse along branches after passing); T03 Dazhongsi low-speed delivery and consumption field test (restricted area, restricted hours, human-takeover fallback). All test scenarios are phrased as pilot suggestions, not approved operations [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
 
@@ -199,9 +244,27 @@ The character palette is a three-color system of "rail gray + Zhongguancun blue 
 
 Organized as "mainline first – three areas in the middle – two wings long-term" (`phasing.geojson`, five phases, `phase_count=5`) [metric:phase_count]:
 
-- **Near term (phase_1)**: the mainline public spine (green spine on the order of 0.68 million m²) and the AI Origin Community branch — get the "public validation" mechanism running first.
-- **Mid term (phase_2)**: the Zhongzhiyuan Acceleration Area and the Dazhongsi Cluster — full-stack pilot field and AI-native consumption land.
-- **Long term (phase_3)**: the Zhongguancun Technology Service Wing and the Xiaoyuehe Scenario Wing — globally allocated factors and everyday scenarios fully unfold.
+| Phase | Project package | Spatial anchor | Dependency | Implementation parties (direction) |
+|-------|-----------------|----------------|------------|-------------------------------------|
+| Near term phase_1 | Mainline public spine (green spine on the order of 0.68M m²) [data:geometry/green_space.geojson#GREEN-001] | Jing-Zhang Heritage Park corridor | Official boundary and heritage confirmation | Government + park operator |
+| Near term phase_1 | AI Origin Community branch | Wudaokou–Qinghua East Road West [data:geometry/key_areas.geojson#beijing_ai_origin_community] | Campus and community ownership | University + community operator |
+| Mid term phase_2 | Zhongzhiyuan Acceleration Area | Qinghe–Fifth Ring section | Compute energy and municipal capacity assessment | Park operator + industry players |
+| Mid term phase_2 | Dazhongsi Cluster | Around Dazhongsi Station | Commercial ownership and format conditions | Commercial operator + property owners |
+| Long term phase_3 | Zhongguancun Technology Service Wing | West service belt | Regulatory-plan and attraction conditions | Technology-service operator |
+| Long term phase_3 | Xiaoyuehe Scenario Wing | East riverfront belt | Riverfront and blue-line constraints | Subdistrict + community + water authority |
+
+### Deepening Path from Concept to Implementation (Transferability)
+
+This proposal is conceptual, but every conceptual output defines a deepening interface for professional teams to pick up directly in the post-government-review implementation stage [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]:
+
+| Conceptual output | Deepening party | Next-step deliverable |
+|-------------------|-----------------|------------------------|
+| One-mainline-five-branches structure | Planning teams | Regulatory-depth urban design and official-boundary recalculation [source:BOUNDARY-SOURCE] |
+| PR Three-Cycle | Government + operation teams | Open scenario list, trial measures, human-review institutions |
+| Branch greenways and slow-traffic spine | Transport/municipal teams | Slow-traffic, municipal, and new-infrastructure specialties |
+| Pilgrimage landmarks and honor system | Heritage/design teams | Concept-design deepening and heritage verification |
+| Scenario cards and operators | Industry/operation teams | Scenario pilot applications and operation plans |
+| Metric recalculation | Data/planning teams | Full recalculation when official polygons publish [depth:metrics_recalculation] |
 
 ### Implementation Policy Suggestions (conceptual)
 
@@ -220,11 +283,16 @@ Policy directions: an open scenario list system, authorized public-data operatio
 
 Core indicators (full list in `metrics.json`, all recalculated from `geometry/*.geojson`):
 
-- **Site scale**: submitted boundary area 11,412,825 m² (`site_area_sqm`, provisional, pending official recalculation) [metric:site_area_sqm].
-- **Key-area areas**: three areas total 3,692,893 m² (`key_area_total_sqm`), +0.24% deviation from the announcement's approximate area [metric:key_area_total_sqm].
-- **Green and public space**: green 1,337,372 m² (`green_ratio=0.1172`) and public space 198,000 m² (`public_space_ratio=0.0173`), supporting the design meaning of "talent living and innovation exchange" — the green spine is the belt's respiratory system, and public stations are the validation benches of innovation exchange [metric:green_ratio][metric:public_space_ratio].
-- **Buildings and roads**: 73 conceptual buildings with a footprint of 445,272 m²; a conceptual road network of 15,633.6 m (`road_length_m`).
-- **Implementation and scenarios**: 5 implementation phases and 10 scenario nodes (`scenario_node_count=10`).
+| Indicator | Value | Design meaning |
+|-----------|-------|----------------|
+| Site area `site_area_sqm` | 11,412,825 m² | Site scale (provisional, pending official recalculation) [metric:site_area_sqm] |
+| Key areas total `key_area_total_sqm` | 3,692,893 m² | Total of three areas, +0.24% vs announcement [metric:key_area_total_sqm] |
+| Green ratio `green_ratio` | 0.1172 | Green spine and greenways are the belt's respiratory system [metric:green_ratio] |
+| Public-space ratio `public_space_ratio` | 0.0173 | Public stations are innovation-exchange and AI-validation benches [metric:public_space_ratio] |
+| Conceptual buildings `building_count` | 73 (footprint 445,272 m²) | Massing direction only, not statutory [metric:building_count] |
+| Conceptual road network `road_length_m` | 15,633.6 m | Mainline greenway + branch connector skeleton [metric:road_length_m] |
+| Implementation phases `phase_count` | 5 | Near: mainline + Origin; mid: two areas; long: two wings [metric:phase_count] |
+| Scenario nodes `scenario_node_count` | 10 | 7 mainline stations + 3 key-area plazas [metric:scenario_node_count] |
 
 Compliance coverage: all announcement tasks in sections 1.3/1.4/1.5 are covered item by item in `compliance_matrix.json` (`1.3.1`–`1.5.3.3`, 20 items) [source:SITE-PACKAGE]; agent tasks agent.1–agent.6 are all covered and expanded in this report; mandatory professional standards are responded to item by item in `standard_matrix.json` (PROJECT-OFFICIAL-ANNOUNCEMENT, PROJECT-AGENT-OPEN-CALL-TASKBOOK, MOHURD-URBAN-DESIGN-MEASURES, MOHURD-CONTROL-DETAILED-PLANNING, MNR-LAND-USE-CLASSIFICATION-GUIDE) [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]; all 15 design-depth items are `complete` (`design_depth_matrix.json`) [depth:metrics_recalculation].
 

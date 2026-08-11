@@ -231,6 +231,64 @@
    "not_usable_for": [
     "official boundary"
    ]
+  },
+  {
+   "id": "SRC-JINGZHANG-RAILWAY-HISTORY",
+   "title": "京张铁路历史（1905-1909詹天佑主持、人字形展线、京门支线等公开历史记述）",
+   "publisher": "公开历史资料（百度百科词条，需权威史料复核）",
+   "published_date": null,
+   "url": "https://baike.baidu.com/item/京张铁路",
+   "authority_level": "background_only",
+   "topics": [
+    "jingzhang_history",
+    "heritage"
+   ],
+   "usable_for": [
+    "cultural narrative background",
+    "branch line historical basis"
+   ],
+   "not_usable_for": [
+    "statutory control",
+    "engineering feasibility"
+   ]
+  },
+  {
+   "id": "SRC-JINGZHANG-HERITAGE-PARK",
+   "title": "京张铁路遗址公园公开资料",
+   "publisher": "公开报道/百科词条（需权威资料复核）",
+   "published_date": null,
+   "url": "https://baike.baidu.com/item/京张铁路遗址公园",
+   "authority_level": "background_only",
+   "topics": [
+    "heritage_park",
+    "public_space"
+   ],
+   "usable_for": [
+    "park background",
+    "public space narrative"
+   ],
+   "not_usable_for": [
+    "official boundary",
+    "exact park redline"
+   ]
+  },
+  {
+   "id": "SRC-JINGZHANG-HSR",
+   "title": "京张高速铁路开通公开资料（2019-12-30）",
+   "publisher": "公开报道（需权威资料复核）",
+   "published_date": "2019-12-30",
+   "url": "https://baike.baidu.com/item/京张高速铁路",
+   "authority_level": "background_only",
+   "topics": [
+    "jingzhang_hsr",
+    "new_era"
+   ],
+   "usable_for": [
+    "new-era background narrative"
+   ],
+   "not_usable_for": [
+    "statutory control"
+   ]
   }
  ]
 }
