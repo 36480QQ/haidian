@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以七本成本账、一本公共回报账与可拒签的停算清账回执为城市设计 admission gate；所有空间动作均为临时约束条件下的概念建议。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v0.3"
+iteration: "v0.4"
 ---
 
 # 京张算清：AI 进入城市前，先把全成本与公共回报算清
@@ -27,6 +27,8 @@ iteration: "v0.3"
 “全成本账本”只有在能拒绝扩散时才是治理机制，而不是展示口号。方案因此为每个 AI 场景增加一张“停算清账回执”：授权记录、非 AI 对照、七类成本快照、公共回报阈值、具名人工责任、受影响群体复核、无障碍检查、申诉窗口、数据删除记录、退出预算责任和空间恢复计划必须同时可查；缺一项就停算、保留人工服务、冻结扩散并公开修复或退场责任。回执只能把场景送入专业复核，不能自行批准现场试点 [metric:closeout_receipt_case_count] [metric:closeout_receipt_stop_case_count] [depth:existing_conditions_diagnosis]。
 
 `simulation.json` 对 12 张场景卡运行 24 个离线合成 case：每张卡一条完整回执分支和一条缺证停算分支。24/24 的预期与实际判定一致，所有记录完成审计且不使用真实个人数据；这只证明判定规则可复算，不证明现场绩效、公众接受、工程可行性或审批状态 [metric:closeout_receipt_match_rate] [metric:audit_completeness] [data:simulation.json#full-cost-closeout-receipt-v1]。
+
+离线展板的“拒签台”把这条主张变成可操作的双语评审入口：评审者可选择完整回执或拿走任一记录，界面从 `visual/assets/closeout-review-data.js` 计算决定，并显示责任角色、受影响群体、空间后果、人工后备与修复/退场动作。键盘可完成选择与重算，`noscript` 提供同一规则的静态后备；运行 `node visual/assets/verify-closeout-review.js` 可验证结构化界面数据与 `simulation.json` 的 12 个缺证 fixture 一一对应。该界面不复制或替代现场证据 [data:simulation.json#full-cost-closeout-receipt-v1] [depth:risk_missing_data]。
 
 ## 三层范围工作框架
 
