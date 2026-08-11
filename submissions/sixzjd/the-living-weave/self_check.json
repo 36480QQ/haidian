@@ -1,0 +1,124 @@
+{
+  "schema_version": "0.1.0",
+  "checks": [
+    {
+      "check_id": "PACKAGE_TYPE",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "manifest.json",
+      "message": "Package type is professional_design_package as required."
+    },
+    {
+      "check_id": "BILINGUAL_CONTRACT",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal.md",
+      "message": "Bilingual contract satisfied: primary narrative in zh; en translation present."
+    },
+    {
+      "check_id": "REQUIRED_SECTIONS",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "proposal.md",
+      "message": "All required proposal sections are present: three-level scope, research scope, design scope, key area detailed design, indicators, compliance, and risk."
+    },
+    {
+      "check_id": "GEOMETRY_INSIDE_SITE",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "geometry/*.geojson",
+      "message": "All design geometry layers (buildings, roads, green_space, public_space, land_use, key_areas, phasing) fall within or are clipped to the provisional site boundary."
+    },
+    {
+      "check_id": "GEOMETRY_NO_OVERLAP",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/land_use.geojson",
+      "message": "Land use zones are non-overlapping; topology validated."
+    },
+    {
+      "check_id": "LAND_USE_COVERAGE",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/land_use.geojson",
+      "message": "Land use zones cover the full design scope area without gaps."
+    },
+    {
+      "check_id": "METRICS_CONSISTENCY",
+      "result": "pass",
+      "severity": "major",
+      "target": "metrics.json",
+      "message": "Metric values are internally consistent: green_ratio = green_space_area / site_area; public_space_ratio = public_space_area / site_area; key_area_total = sum of three key areas."
+    },
+    {
+      "check_id": "VISUAL_OFFLINE",
+      "result": "pass",
+      "severity": "major",
+      "target": "visual/index.html",
+      "message": "Static HTML visualization is self-contained with no external network dependencies."
+    },
+    {
+      "check_id": "FIGURES_PRESENT",
+      "result": "pass",
+      "severity": "major",
+      "target": "assets/figures/",
+      "message": "All five required proposal figures are present: site-overview, key-areas, land-use-structure, metrics-evidence, mobility-bluegreen."
+    },
+    {
+      "check_id": "SOURCES_REGISTERED",
+      "result": "pass",
+      "severity": "major",
+      "target": "sources.json",
+      "message": "12 sources registered with id, type, usage_note, and path or url."
+    },
+    {
+      "check_id": "ASSUMPTIONS_DOCUMENTED",
+      "result": "pass",
+      "severity": "major",
+      "target": "assumptions.json",
+      "message": "12 assumptions documented with id, title, detail, scope, impact, and mitigation."
+    },
+    {
+      "check_id": "COMPLIANCE_COMPLETE",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "compliance_matrix.json",
+      "message": "All 23 requirement IDs mapped to report sections, geometry layers, metrics, drawings, visual sections, sources, assumptions, and self-check items."
+    },
+    {
+      "check_id": "STANDARD_MATRIX_COMPLETE",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "standard_matrix.json",
+      "message": "All 6 professional standards mapped to proposal sections, drawings, geometry, metrics, sources, and evidence summaries."
+    },
+    {
+      "check_id": "DESIGN_DEPTH_COMPLETE",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "design_depth_matrix.json",
+      "message": "All 15 design depth items documented with status, evidence refs, and professional dimension."
+    },
+    {
+      "check_id": "PROVISIONAL_DISCLOSURE",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "assumptions.json",
+      "message": "Provisional boundary usage is explicitly disclosed in ASSUMP-001 and A-CONTROLS-001; replacement with official data is documented as required mitigation."
+    },
+    {
+      "check_id": "DRAWINGS_PRESENT",
+      "result": "pass",
+      "severity": "major",
+      "target": "drawings/",
+      "message": "A3 booklet and A0 board PDFs are present in the drawings directory."
+    },
+    {
+      "check_id": "COPYRIGHT_STATEMENT",
+      "result": "pass",
+      "severity": "minor",
+      "target": "report/copyright_statement.md",
+      "message": "Copyright statement is present and declares AI agent authorship."
+    }
+  ]
+}
