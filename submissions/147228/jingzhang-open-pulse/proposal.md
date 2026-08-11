@@ -7,12 +7,12 @@ summary: "以京张遗址公园为公共底板、三处重点区为创新节点�
 translation_file: "proposal.en.md"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
-iteration: "v4.2"
+iteration: "v4.3"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
 
-> **包版本说明：** 本包迭代为 v4.2；v3.3 仅指本包沿用的空间对象与图纸导出层。v4.2 在 v4.1 的取舍登记、人的承载闸门和流程筛查基础上，补齐正文中模型输出数字的来源回读与双语边界标记；不改变空间对象、面积指标、来源等级或实施边界。模型输出仍不是现状、预测、因果估计、现场绩效或官方评分。
+> **包版本说明：** 本包迭代为 v4.3；v3.3 仅指本包沿用的空间对象与图纸导出层。v4.3 在 v4.2 的来源回读和双语边界基础上，增加 9 个 GeoJSON 图层的空间谱系登记与确定性哈希检查；不改变空间对象、面积指标、来源等级或实施边界。模型输出仍不是现状、预测、因果估计、现场绩效或官方评分。
 
 # 京张开源脉冲：一条可验证的 AI 创新公共带
 
@@ -510,6 +510,24 @@ v1.5 在上一轮“低后悔”压力测试上扩展为 97 条原子证据记�
 ## v1.7 证据与交付层：从概念到可审阅成果
 
 本节把任务书覆盖、区域协同与生态图谱、身份系统、节点级空间动作、具身智能组件、场景运营责任、版权清权和双语审阅组织成一条证据与交付链：每个判断都绑定到一个可打开、可复算、可停止或可追责的位置。
+
+### 0. 空间图层版本与坐标基线
+
+本包将 9 个 GeoJSON 图层的文件路径、要素数、几何类型、图层值、几何角色和 SHA-256 写入 `visual/assets/spatial-lineage-register.json`。登记表与 `manifest.json`、原始几何文件相互校验，评审者可以先确认当前包实际交付了哪些空间对象，再阅读面积、长度和比例。当前结果如下：
+
+| 图层 | 要素数 | 几何类型 | 当前角色 | 使用边界 |
+| --- | ---: | --- | --- | --- |
+| `site_boundary.geojson` | 1 | Polygon | provisional_constraint | 临时总体范围，不作官方红线或精确评分面积 |
+| `key_areas.geojson` | 3 | Polygon | provisional_constraint | 三处重点区接口，不作官方重点区边界 |
+| `land_use.geojson` | 8 | Polygon | design_proposal | 临时设计分区，不作法定分区 |
+| `buildings.geojson` | 9 | Polygon | design_proposal | 概念建筑基底，不作既有建筑清查 |
+| `roads.geojson` | 4 | LineString | design_proposal | 概念道路与慢行网络，不作工程线位 |
+| `green_space.geojson` | 5 | Polygon | design_proposal | 概念连续绿地段，不作生态现状证明 |
+| `public_space.geojson` | 17 | Point / Polygon | design_proposal | 公共空间室与场景锚点，不作已开放设施 |
+| `phasing.geojson` | 3 | Polygon | design_proposal | 条件分期带，不作批准建设时序 |
+| `constraints.geojson` | 6 | LineString / Point | provisional_constraint | 待核专业输入，不作法规红线 |
+
+`EPSG:4548` 只作为 `metrics.json` 中投影长度或面积公式的声明；当前 GeoJSON 没有嵌入 CRS 成员，因此这里没有把公式引用写成坐标认证。运行 `node visual/assets/run-spatial-lineage-register.js --check` 会检查 9 个图层的覆盖、要素数、几何类型、角色、原始哈希和 manifest 哈希。官方边界或重点区 polygon 到位后，9 个图层、metrics、报告、图册和 HTML 必须一起重算；只替换一张图不算完成。[data:visual/assets/spatial-lineage-register.json] [data:visual/assets/run-spatial-lineage-register.js]
 
 ### 1. 任务书唯一索引与区域协同
 
