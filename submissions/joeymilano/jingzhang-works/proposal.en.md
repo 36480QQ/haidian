@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "A city-usability framework that organizes the Jing-Zhang corridor as three Works and two service chains. Every AI service must provide human takeover, a no-app equivalent, minimum-data rules, a responsible owner, stop conditions, and a public change record."
 tracks: ["ai-traffic-walkability", "ai-public-services", "enterprise-services-ecosystem"]
 scenarios: ["ai-traffic-walkability", "ai-health-service-navigation", "ai-cultural-guide", "enterprise-service-copilot", "robot-delivery-low-speed", "public-safety-operations-review"]
-iteration: "v1.0"
+iteration: "v1.1"
 ---
 
 # JING-ZHANG WORKS / 京张好用
@@ -48,6 +48,18 @@ The key-area scope develops prototypes that can be operated and reviewed. Each s
 
 The three levels share one evidence chain. Research defines tasks, overall design allocates space and service networks, key areas stage reversible prototypes, and operations feed results into the public change log. Missing professional conditions remain explicit in `assumptions.json`; the model does not fill them.[depth:three_level_scope_framework] (assumption A-CONTROLS-001)
 
+Each of the taskbook's three positions has a testable urban action. The Centennial Jing-Zhang Cultural Belt turns railway work orders, numbering, and maintenance records into public wayfinding. The Urban AI Life Experience Belt uses eight daily tasks to test no-app access and human takeover. The AI Convergent Innovation Belt sends four industry tests through controlled trials before street use. The five functions also map to a carrier, an accountable action, and release evidence.[source:V11-TASKBOOK-CROSSWALK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]
+
+| Five functions | Primary carrier | Testable action in this proposal |
+| --- | --- | --- |
+| Full-stack AI innovation | Zhongzhiyuan Prototype Works | Controlled tests, physical emergency stop, and failure review |
+| World-class AI ecosystem | AI Origin and Zhongguancun Technology Service Wing | Eight-resource order and problem-to-adoption flow |
+| AI+ scenario enablement | Xiaoyuehe Scenario Empowerment Wing | Eight public tasks and four industry tests |
+| AI-enabled active city | Dazhongsi Everyday Works | Complete journeys for commuting, rest, learning, and public service |
+| Global AI-governance voice | Shared protocol across all Works | Six-field release, public change, and retirement records |
+
+Regional collaboration moves anonymized task patterns, test protocols, and versioned service standards rather than personal records or confidential company data. Beiwei Community contributes community-service problems and review practice. Future Science City connects research prototypes and test methods. Huairou Science City connects science-facility applications with public understanding. Beijing E-Town connects manufacturing validation and scaling experience. The Beijing-Tianjin-Hebei network can receive portable bilingual service standards. These are proposed relationships; no participation, funding, or adoption commitment is claimed.[source:V11-REGIONAL-COLLABORATION]
+
 ![Three scopes, three Works, and two service chains](assets/figures/site-overview.en.png)
 
 ## Coordinated Research Area: Industry and Future City Research
@@ -55,6 +67,8 @@ The three levels share one evidence chain. Research defines tasks, overall desig
 “JING-ZHANG WORKS” is both a name and a public test. The mark combines two railway lines with an orange acceptance stamp. Parallel lines mean that AI and no-app routes must coexist. An opening in the stamp means a service can be paused and withdrawn. Warm white, coal black, signal orange, and cobalt blue borrow the practical character of railway work orders and public-service manuals. The graphics are original and use no corporate marks, portraits, or third-party imagery.(assumption A-BRAND-001) [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]
 
 The ecosystem follows four stages: problem, validation, adoption, and maintenance. Universities contribute methods; companies productize; Prototype Works provides isolated testing; the scenario wing provides real public tasks; the technology-service wing supports legal, IP, and finance needs; and public operators decide whether to adopt. Adoption never removes responsibility. Every service retains a named maintainer, a human route, and a public retirement record. Innovation density is measured through closed problems, takeover time, and recovery from failure rather than showroom count.[metric:service_chain_count] [depth:overall_spatial_structure]
+
+Eight resources share one adoption order. Land needs authorization and an exit condition. Space opens by time slot and safety boundary. Industry teams submit test articles without automatic release rights. Funding begins with S/M/L resource classes while accountable parties price later. Talent combines students, specialists, operators, and affected users. Compute favors offline, low-power, degradable service. Data uses minimum fields and expiry deletion. Scenarios begin with real tasks, and each industry test serves at least one public task. A resource without recorded authorization, quantity, term, and exit is not treated as secured.[source:V11-ECOSYSTEM-RESOURCE-MAP]
 
 Each case becomes a local rule. Punggol suggests shared infrastructure, but only the minimum public-task fields are shared here. Woven City suggests continuous feedback, but participants may leave anonymously. Kalasatama suggests short pilots, so the first cycle is ninety days. Magok puts industry tests beside daily barriers, so every technical test must serve a public task. Barcelona adds walking comfort and civic rights to spatial checks. Paris requires evaluation before scaling, so a pilot without public review cannot be copied to another site.[source:CASE-WOVEN-CITY] [source:CASE-BARCELONA] [source:CASE-PARIS-URBANLAB]
 
@@ -81,6 +95,8 @@ The three key areas use one usability protocol while performing different jobs. 
 **Dazhongsi Everyday Works.** AI is tested against commuting, commerce, rest, and cultural understanding. A Human Takeover Pavilion and quiet rest point form the service forecourt, with a Public Change Log outside the clear path of travel. Crowd guidance uses aggregate counts without face recognition or individual trajectories. Cultural explanations use traceable public sources and professional sign-off. Because the provisional key area may be displaced, every station-exit, quadrant, or road relationship remains unverified and the prototype stays movable.[source:REPO-ISSUE-1029] (assumption A-DAZHONGSI-001)
 
 All three begin with reversible components. Adaptive ground-floor work follows only after observed use; permanent construction enters study only with operating evidence, public feedback, and professional confirmation. A prototype with no named operator, continuous accessible route, or safe exit does not open.[metric:public_node_count] [depth:height_massing_character]
+
+The component library divides the prototypes into six tools that can be installed, checked, and removed separately. C01 Ask First Desk provides paper maps, staffed guidance, and issue intake. C02 Human Takeover Pavilion provides a visible marker, accessible counter, physical stop, and offline contact sheet. C03 Public Change Log shows task ID, owner, due date, result, and retirement. C04 Accessible Test Lane supports controlled equipment tests. C05 Task Journey Marker connects paper maps, numbered nodes, and takeover directions. C06 Quiet Rest Point records seating, shade, quiet, and access to human help. The display system is called the Works Record. It publishes only evidence-backed pass, revision due, and retired states; it does not award unsupported innovation honors.[source:V11-COMPONENT-LIBRARY]
 
 ![Three key areas and three public nodes](assets/figures/key-areas.en.png)
 
@@ -159,6 +175,12 @@ Years three to five may establish a corridor service standard. The six-field con
 | P1 90-day pilot | Three public nodes and three scenarios | Authorized site operator | Weekly issue orders, takeover log, no-app completion | Serious safety or privacy incident causes immediate suspension |
 | P2 adaptive renewal | Shared ground floor, shade, rest, repaired links | Planning, architecture, mobility, and operation team | Survey, ownership, fire review, and public review | Incomplete conditions return project to movable components |
 | P3 corridor standard | Three-Works service agreement and annual Works Week | Candidate multi-party governance group | Independent evaluation and public adopt-or-retire decision | Two failed cycles shrink or end the service |
+
+Five gates divide the ninety days. Weeks 0 to 2 complete the field baseline, signed roles, and risk register. Weeks 3 to 4 install Ask First, takeover marking, a paper route, and the change log, followed by staff drills. Weeks 5 to 8 run two public services and one industry test. Weeks 9 to 11 repair repeated barriers and replay failed tasks. Weeks 12 to 13 decide whether each component is adopted, revised, or retired. S-class resources cover signs, paper service, existing furniture, and staff time. M-class resources cover a movable pavilion, controlled test lane, temporary power, and specialist review. L-class resources are permanent works requiring formal project approval. This package states no unauthorized monetary amount.[source:V11-IMPLEMENTATION-PLAYBOOK]
+
+The RACI assigns site authorization to the owner or public-space operator, service release to the service owner, on-site takeover to named staff, and stopping or retirement to the safety lead or service owner. Planning, fire, accessibility, data protection, and professional reviewers join as required. Four design targets continue after release. Human takeover must remain visible. A serious safety or privacy event causes immediate suspension. Public information carries a source and expiry. Every published route passes a full no-app replay. These are pilot thresholds and have no measured achievement rate yet.[source:V11-IMPLEMENTATION-PLAYBOOK]
+
+The developer community works from public problem orders. A team selects one public task, submits a six-field contract and synthetic test article, and enters real-task review only after the controlled test. The adoption path runs through problem order, contract completion, field baseline, controlled pilot, independent replay, authorized adoption, maintenance review, and retirement or renewal. International visitors can read bilingual task cards and version records. What travels is the test method and service standard, not an unverified success claim.[source:V11-IMPLEMENTATION-PLAYBOOK]
 
 Policy recommendations are deliberately practical. Public-space access should include accountability and exit clauses. Procurement should require human bypass and data deletion. Performance reports should count failure and repair, not only footfall. Operators, funding, and events remain proposals for authorized bodies to decide.[depth:renewal_project_list] (assumption A-OPERATIONS-001)
 
