@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JingZhang Open Spine · Protocol Edition (v2)</title>
+<style>
+body{margin:0;font-family:"Microsoft YaHei",Segoe UI,Arial,sans-serif;background:#eef2f6;color:#0f172a}
+header{background:#0b1220;color:#fff;padding:24px} main{max-width:1200px;margin:auto;padding:16px}
+.sheet{background:#fff;border:1px solid #e2e8f0;border-radius:10px;margin-bottom:14px;padding:16px}
+.grid{display:grid;grid-template-columns:1.5fr .7fr;gap:14px}
+.metric{border:1px solid #e2e8f0;border-radius:8px;padding:10px;margin:6px 0} .metric span{color:#64748b;font-size:12px;display:block} .metric strong{font-size:20px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:10px} .card{border:1px solid #e2e8f0;border-top:4px solid #4f46e5;border-radius:8px;padding:10px}
+.sc{display:grid;grid-template-columns:repeat(4,1fr);gap:8px} .sc article{border:1px solid #e2e8f0;border-radius:8px;padding:8px;font-size:12px;min-height:90px}
+@media(max-width:900px){.grid,.cards,.sc{grid-template-columns:1fr}}
+</style></head><body>
+<header><div style="color:#86efac">OPEN PROTOCOL SPINE</div><h1>JingZhang Open Spine · Protocol Edition (v2)</h1>
+<p style="color:#cbd5e1">Offline board · GeoJSON projected map · provisional only · City API: interface/permission/rollback/audit</p></header>
+<main>
+<section class="sheet"><h2>总览地图 / Overview map</h2><div class="grid">
+<div><img src="assets/overview.svg" alt="map" style="width:100%;background:#0f172a;border-radius:8px"><p style="color:#64748b;font-size:13px">示意非测绘 · 4326/4548 · provisional 黄虚线</p></div>
+<aside><h3>核心指标</h3>
+<div class="metric"><span>site_area_sqm</span><strong data-metric="site_area_sqm" data-value="11412825.386">11412825.386</strong></div>
+<div class="metric"><span>green_ratio</span><strong data-metric="green_ratio" data-value="0.267228">0.267228</strong></div>
+<div class="metric"><span>public_space_ratio</span><strong data-metric="public_space_ratio" data-value="0.123652">0.123652</strong></div>
+<div class="metric"><span>building_footprint_area_sqm</span><strong data-metric="building_footprint_area_sqm" data-value="440855.459">440855.459</strong></div>
+<div class="card"><h3>自检状态</h3><p>四门 gate 需 PASS；provisional intake。</p></div>
+</aside></div></section>
+<section class="sheet"><h2>三层范围</h2><div class="cards">
+<article class="card"><h3>统筹 43.6</h3><p>生态与区域接口</p></article>
+<article class="card"><h3>总体 11.4</h3><p>更新与结构</p></article>
+<article class="card"><h3>重点区</h3><p>三核详设</p></article></div></section>
+<section class="sheet"><h2>用地分区 / 重点区域 / 建筑 / 更新项目</h2>
+<p>units=30 buildings=94 roads=31 projects=14</p>
+<div class="cards">
+<article class="card"><h3>验证核</h3><p>沙盒·清河·治理</p></article>
+<article class="card"><h3>开源核</h3><p>发布·转化·荣誉墙</p></article>
+<article class="card"><h3>体验核</h3><p>路演·四象限·数据</p></article></div></section>
+<section class="sheet"><h2>交通慢行 / 蓝绿公共空间</h2><p>分级廊道、断点修复、接驳口袋、可回退机器人试验段。</p></section>
+<section class="sheet"><h2>AI 场景 / 任务覆盖</h2><div class="sc">
+<article><b>01 发布厅</b><p>SCN-01</p></article><article><b>02 沙盒</b><p>测试验证</p></article>
+<article><b>03 慢行诊断</b><p>SCN-03</p></article><article><b>04 算力驿站</b><p>测试验证</p></article>
+<article><b>05 路演</b><p>SCN-05</p></article><article><b>06 转化街</b><p>SCN-06</p></article>
+<article><b>07 数据会客</b><p>测试验证</p></article><article><b>08 生活样板</b><p>SCN-08</p></article>
+<article><b>09 记忆线</b><p>SCN-09</p></article><article><b>10 活动周</b><p>SCN-10</p></article>
+<article><b>11 荣誉墙</b><p>SCN-11</p></article><article><b>12 论坛庭</b><p>SCN-12</p></article>
+</div></section>
+<section class="sheet"><h2>建筑</h2><p>概念建筑基底与街坊单元耦合，数量见 metrics building_count。</p></section>
+<section class="sheet"><h2>更新项目</h2><p>OS-01 至 OS-14 近中长期更新项目清单，含主体依赖 KPI 与回退。</p></section>
+<section class="sheet"><h2>来源</h2><p>sources.json / 公告 / 任务书 / source registry / provisional 边界说明。</p></section>
+<section class="sheet"><h2>假设</h2><p>assumptions.json：边界、控规、权属、市政、文保、活动、数据分级等待确认项。</p></section>
+</main></body></html>

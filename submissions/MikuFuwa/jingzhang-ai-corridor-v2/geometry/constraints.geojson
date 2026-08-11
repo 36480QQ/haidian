@@ -1,0 +1,325 @@
+{
+  "type": "FeatureCollection",
+  "name": "constraints_v2",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "CON-001",
+      "properties": {
+        "id": "CON-001",
+        "layer": "EXISTING_WATER",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "provisional_constraint",
+        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "equal_area_projection": "EPSG:4548",
+        "name_zh": "清河界面示意(待确认)",
+        "pending_confirmation": true,
+        "official_boundary": false,
+        "usage_note": "provisional schematic only; not official redline",
+        "area_sqm_declared": 336450.798
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3436,
+              40.01075
+            ],
+            [
+              116.3436,
+              40.022125
+            ],
+            [
+              116.34672,
+              40.022125
+            ],
+            [
+              116.34672,
+              40.01075
+            ],
+            [
+              116.3436,
+              40.01075
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CON-002",
+      "properties": {
+        "id": "CON-002",
+        "layer": "EXISTING_RAIL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "provisional_constraint",
+        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "equal_area_projection": "EPSG:4548",
+        "name_zh": "京张廊道敏感带示意(待确认)",
+        "pending_confirmation": true,
+        "official_boundary": false,
+        "usage_note": "provisional schematic only; not official redline",
+        "area_sqm_declared": 1631283.991
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.344068,
+              39.943375
+            ],
+            [
+              116.344068,
+              40.022125
+            ],
+            [
+              116.346252,
+              40.022125
+            ],
+            [
+              116.346252,
+              39.943375
+            ],
+            [
+              116.344068,
+              39.943375
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CON-003",
+      "properties": {
+        "id": "CON-003",
+        "layer": "EXISTING_PRIMARY_ROAD",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "provisional_constraint",
+        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "equal_area_projection": "EPSG:4548",
+        "name_zh": "北五环割裂影响示意(待确认)",
+        "pending_confirmation": true,
+        "official_boundary": false,
+        "usage_note": "provisional schematic only; not official redline",
+        "area_sqm_declared": 1005211.541
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3426146,
+              40.02475
+            ],
+            [
+              116.35452,
+              40.02475
+            ],
+            [
+              116.35452,
+              40.016
+            ],
+            [
+              116.3421878,
+              40.016
+            ],
+            [
+              116.3426146,
+              40.02475
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CON-004",
+      "properties": {
+        "id": "CON-004",
+        "layer": "EXISTING_PRIMARY_ROAD",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "provisional_constraint",
+        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "equal_area_projection": "EPSG:4548",
+        "name_zh": "南端干道割裂示意(待确认)",
+        "pending_confirmation": true,
+        "official_boundary": false,
+        "usage_note": "provisional schematic only; not official redline",
+        "area_sqm_declared": 317359.575
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34906,
+              39.943375
+            ],
+            [
+              116.34906,
+              39.9495
+            ],
+            [
+              116.35452,
+              39.9495
+            ],
+            [
+              116.35452,
+              39.943375
+            ],
+            [
+              116.34906,
+              39.943375
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CON-005",
+      "properties": {
+        "id": "CON-005",
+        "layer": "HERITAGE_PROTECTION",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "provisional_constraint",
+        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "equal_area_projection": "EPSG:4548",
+        "name_zh": "近校/遗产敏感叠加示意(待确认)",
+        "pending_confirmation": true,
+        "official_boundary": false,
+        "usage_note": "provisional schematic only; not official redline",
+        "area_sqm_declared": 644760.414
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35374,
+              39.9845
+            ],
+            [
+              116.35374,
+              39.969625
+            ],
+            [
+              116.34984,
+              39.969625
+            ],
+            [
+              116.34984,
+              39.987125
+            ],
+            [
+              116.35353,
+              39.987125
+            ],
+            [
+              116.35374,
+              39.9845
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CON-006",
+      "properties": {
+        "id": "CON-006",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "provisional_constraint",
+        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "equal_area_projection": "EPSG:4548",
+        "name_zh": "快速路/高压邻避示意(待确认)",
+        "pending_confirmation": true,
+        "official_boundary": false,
+        "usage_note": "provisional schematic only; not official redline",
+        "area_sqm_declared": 291383.577
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34126,
+              39.9565
+            ],
+            [
+              116.34126,
+              39.969625
+            ],
+            [
+              116.3436,
+              39.969625
+            ],
+            [
+              116.3436,
+              39.9565
+            ],
+            [
+              116.34126,
+              39.9565
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CON-007",
+      "properties": {
+        "id": "CON-007",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "provisional_constraint",
+        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "equal_area_projection": "EPSG:4548",
+        "name_zh": "缺控规强度待确认区",
+        "pending_confirmation": true,
+        "official_boundary": false,
+        "usage_note": "provisional schematic only; not official redline",
+        "area_sqm_declared": 129466.943
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34672,
+              39.978375
+            ],
+            [
+              116.34672,
+              39.987125
+            ],
+            [
+              116.34828,
+              39.987125
+            ],
+            [
+              116.34828,
+              39.978375
+            ],
+            [
+              116.34672,
+              39.978375
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

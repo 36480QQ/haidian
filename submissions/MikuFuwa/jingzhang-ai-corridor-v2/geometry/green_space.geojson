@@ -1,0 +1,397 @@
+{
+  "type": "FeatureCollection",
+  "name": "green_space_v2",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "GREEN-001",
+      "properties": {
+        "id": "GREEN-001",
+        "layer": "GREEN_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "equal_area_projection": "EPSG:4548",
+        "land_use_code": "1401",
+        "name_zh": "开源绿脊段-1",
+        "area_sqm_declared": 453348.685
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.344068,
+              39.960875
+            ],
+            [
+              116.346252,
+              39.960875
+            ],
+            [
+              116.346252,
+              39.939
+            ],
+            [
+              116.344068,
+              39.939
+            ],
+            [
+              116.344068,
+              39.960875
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "GREEN-002",
+      "properties": {
+        "id": "GREEN-002",
+        "layer": "GREEN_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "equal_area_projection": "EPSG:4548",
+        "land_use_code": "1401",
+        "name_zh": "开源绿脊段-2",
+        "area_sqm_declared": 453205.939
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.344068,
+              39.98275
+            ],
+            [
+              116.346252,
+              39.98275
+            ],
+            [
+              116.346252,
+              39.960875
+            ],
+            [
+              116.344068,
+              39.960875
+            ],
+            [
+              116.344068,
+              39.98275
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "GREEN-003",
+      "properties": {
+        "id": "GREEN-003",
+        "layer": "GREEN_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "equal_area_projection": "EPSG:4548",
+        "land_use_code": "1401",
+        "name_zh": "开源绿脊段-3",
+        "area_sqm_declared": 453063.126
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.344068,
+              40.004625
+            ],
+            [
+              116.346252,
+              40.004625
+            ],
+            [
+              116.346252,
+              39.98275
+            ],
+            [
+              116.344068,
+              39.98275
+            ],
+            [
+              116.344068,
+              40.004625
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "GREEN-004",
+      "properties": {
+        "id": "GREEN-004",
+        "layer": "GREEN_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "equal_area_projection": "EPSG:4548",
+        "land_use_code": "1401",
+        "name_zh": "开源绿脊段-4",
+        "area_sqm_declared": 452920.246
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.344068,
+              40.0265
+            ],
+            [
+              116.346252,
+              40.0265
+            ],
+            [
+              116.346252,
+              40.004625
+            ],
+            [
+              116.344068,
+              40.004625
+            ],
+            [
+              116.344068,
+              40.0265
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "GREEN-005",
+      "properties": {
+        "id": "GREEN-005",
+        "layer": "GREEN_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "equal_area_projection": "EPSG:4548",
+        "land_use_code": "1401",
+        "name_zh": "西侧口袋公园",
+        "area_sqm_declared": 155425.15
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.340948,
+              39.9495
+            ],
+            [
+              116.340948,
+              39.95825
+            ],
+            [
+              116.34282,
+              39.95825
+            ],
+            [
+              116.34282,
+              39.9495
+            ],
+            [
+              116.340948,
+              39.9495
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "GREEN-006",
+      "properties": {
+        "id": "GREEN-006",
+        "layer": "GREEN_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "equal_area_projection": "EPSG:4548",
+        "land_use_code": "1401",
+        "name_zh": "东侧校缘缓冲",
+        "area_sqm_declared": 207217.372
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.350932,
+              39.95475
+            ],
+            [
+              116.350932,
+              39.9635
+            ],
+            [
+              116.353428,
+              39.9635
+            ],
+            [
+              116.353428,
+              39.95475
+            ],
+            [
+              116.350932,
+              39.95475
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "GREEN-007",
+      "properties": {
+        "id": "GREEN-007",
+        "layer": "GREEN_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "equal_area_projection": "EPSG:4548",
+        "land_use_code": "1401",
+        "name_zh": "产业庭园",
+        "area_sqm_declared": 252423.818
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34828,
+              39.987125
+            ],
+            [
+              116.34828,
+              39.9985
+            ],
+            [
+              116.35062,
+              39.9985
+            ],
+            [
+              116.35062,
+              39.987125
+            ],
+            [
+              116.34828,
+              39.987125
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "GREEN-008",
+      "properties": {
+        "id": "GREEN-008",
+        "layer": "GREEN_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "equal_area_projection": "EPSG:4548",
+        "land_use_code": "1401",
+        "name_zh": "北端水岸示意",
+        "area_sqm_declared": 233980.93
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3417,
+              40.006
+            ],
+            [
+              116.3420598,
+              40.013375
+            ],
+            [
+              116.3436,
+              40.013375
+            ],
+            [
+              116.3436,
+              40.00025
+            ],
+            [
+              116.341329,
+              40.00025
+            ],
+            [
+              116.3417,
+              40.006
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "GREEN-009",
+      "properties": {
+        "id": "GREEN-009",
+        "layer": "GREEN_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "equal_area_projection": "EPSG:4548",
+        "land_use_code": "1401",
+        "name_zh": "门户绿化",
+        "area_sqm_declared": 388241.29
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34984,
+              40.004625
+            ],
+            [
+              116.34984,
+              40.01775
+            ],
+            [
+              116.35296,
+              40.01775
+            ],
+            [
+              116.35296,
+              40.004625
+            ],
+            [
+              116.34984,
+              40.004625
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}
