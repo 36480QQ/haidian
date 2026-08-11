@@ -302,7 +302,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "8dab96b24eee2e1773be405812fc9ba1b64a699842446cab778593135af85336"
+      "sha256": "ec1288feec5b01e4827d1a9eda22dde5d2abbfd0cbd72ad1468f5d274018e0b6"
     },
     {
       "path": "assets/identity/belt-logo-concept.svg",
@@ -732,6 +732,24 @@
       "language": "en",
       "translation_of": "assets/figures/professional-review-map-v21.png",
       "sha256": "b30e12341520efdf20b2f86946265de039a786d7d9b1925da0fc8007334458b7"
+    },
+    {
+      "path": "spatial.json",
+      "role": "audit_artifact",
+      "required": true,
+      "sha256": "348c781b057e01accc9363ce6dd2c829090f123b58ed847903c5c5c350f9ba01"
+    },
+    {
+      "path": "visual/assets/run-ai-era-spatial-integrity.js",
+      "role": "validation_script",
+      "required": false,
+      "sha256": "9d0cc4311efd20313574d85f606ab7b387fff884a9d026113e4571db8d230b34"
+    },
+    {
+      "path": "visual/assets/test-ai-era-spatial-integrity.js",
+      "role": "validation_script",
+      "required": false,
+      "sha256": "f1f41af70e879bd9e72e541f721a3a90dfdcf746260db81803b5aab636d8a348"
     }
   ],
   "validation_claim": {
