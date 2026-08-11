@@ -9,7 +9,7 @@ translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以人的时间权利组织三区两翼：用双时网连接公共前台、保护核心与受控后台，以自治交接缝明确责任、无AI替代和停止条件。"
 tracks: ["ai-public-services", "robotics-autonomous-mobility", "civic-agent-governance"]
-iteration: "v0.5"
+iteration: "v0.6"
 ---
 
 # 京张人间时 / HUMAN HOURS
@@ -26,7 +26,7 @@ iteration: "v0.5"
 
 ![证据状态、临时边界与提交包关系](assets/figures/site-overview.png)
 
-完成标准不是“看起来完整”，而是判断能回到来源，动作能回到空间对象，限制能回到假设与自检。`sources.json` 保存来源用途，`assumptions.json` 保存开放假设，六项公平指标以 unknown/null 进入 `metrics.json`；`METRIC-AVOIDABLE-TIME-BURDEN` 因正式 schema 不支持 `minutes_per_journey` 而继续留在模块 07 的阻断目录，不用 `none` 或 `ratio` 伪装。网页母版、五张双语主图及中英文 A3/A0 已同步为 v0.5 的城市图集信息层级；浏览器、PDF、双语和官方规则校验仍以机器检查与人工复核记录为准。本稿已由官方 finalizer 标记为 ready_for_review，并以当前候选文件重新完成本地自检；这不代表官方边界、建筑资料、运营条件或公平绩效已经获得证明。[source:SOURCE-REGISTRY] [metric:METRIC-EQUITY-BURDEN] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]
+完成标准不是“看起来完整”，而是判断能回到来源，动作能回到空间对象，限制能回到假设与自检。`sources.json` 保存来源用途，`assumptions.json` 保存开放假设，六项公平指标以 unknown/null 进入 `metrics.json`；`METRIC-AVOIDABLE-TIME-BURDEN` 因正式 schema 不支持 `minutes_per_journey` 而继续留在模块 07 的阻断目录，不用 `none` 或 `ratio` 伪装。网页母版、五张双语主图及中英文 A3/A0 正同步为 v0.6 的城市图集信息层级；浏览器、PDF、双语和官方规则校验仍以机器检查与人工复核记录为准。v0.6 是基于已通过 finalizer 的 v0.5 形成的本地审阅候选，尚未刷新 manifest、自检哈希或 ready_for_review 状态；这也不代表官方边界、建筑资料、运营条件或公平绩效已经获得证明。[source:SOURCE-REGISTRY] [metric:METRIC-EQUITY-BURDEN] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]
 
 ## 三层范围工作框架
 
@@ -58,6 +58,8 @@ agent.1 在本方案中负责“京张人间时 / HUMAN HOURS”的命名、非�
 
 当前 `buildings.geojson` 有意保持空集，因为没有清权后的现状建筑、权属、高度、结构与拆改留数据。方案只提出“公共前台—保护核心—受控后台”的建筑类型和剖面关系，不绘制虚构建筑基底，不计算容积率，不判断拆、改、留。道路中心线、绿地、公共空间和分期 polygon 仍是概念设计几何，其作用是验证叙事与图层是否一致，不是施工图。取得官方控制条件后，专业团队需补现状诊断、建筑普查、开发强度、城市设计控制线和市政承载复核。[data:geometry/roads.geojson#ROAD-001] [depth:development_intensity_controls] [standard:MOHURD-CONTROL-DETAILED-PLANNING]
 
+v0.6 把“接口先于连线”落实为六条接口证据账：AI 原点站口—社区、校园—园区，大钟寺站城四象限，众智园五环—清河，以及两条任务书服务翼。每条只回答四件事：当前有什么证据、还需哪个专业核验、什么情况下必须“待核不画”、哪些新资料会触发重绘。空间接口未核时不画连续线；服务翼主体、费用、容量、服务窗和退出未核时只画角色接口，不画机构落位或合作线路。[data:geometry/roads.geojson#ROAD-001] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [depth:overall_spatial_structure]
+
 ## 重点区域详细设计
 
 三处重点区不是三个相似的科技园，而是三种责任剖面。北京 AI 原点社区承担“生活、照护、恢复与研究接口”，候选地标“人间时站”把交接、人工服务、安静恢复和开源协作并置，但照护与恢复保持物理保护；大钟寺承担“公共开放、关闭、平等进入与公共最低包”，候选地标“有时门”让服务窗、无 AI 替代、无障碍和申诉在进入前可读；众智园承担“受控测试、维护、数据隔离与停止权”，候选地标“停机庭”让失败、停机、复位和重开成为可展示的城市制度。[data:geometry/constraints.geojson#NODE-HUMAN-HOURS-STATION] [data:geometry/constraints.geojson#NODE-TIMED-GATE] [data:geometry/constraints.geojson#NODE-STOP-COURT]
@@ -75,6 +77,8 @@ AI 原点的空间动作是把公共前台放在研究与社区生活之间，�
 ## AI 创新生态、人才画像与 AI+ 场景
 
 方案用两位合成人物贯穿五时段，但不把他们伪装成真实居民。第一位是初到海淀、共同育儿的 AI 研究人员；第二位是承担计划夜班、白天另有家庭照护责任的设施/机器人运维者。研究者检验照护交接、日间协作与恢复，运维者检验停机、带薪交班、夜班后恢复。两人都不补姓名、年龄、性别、来源地、住址、家庭分工、具体路线或分钟数。[source:SRC-005] [source:SRC-009] [assumption:ASM-005] 其余七类画像不是配角，而是独立否决者：居民、无薪照护者、一线服务人员、老年人、无障碍使用者、国际新来者及其他受影响群体可分别指出平均值掩盖的失败。[metric:METRIC-EQUITY-BURDEN]
+
+两位主角还共同执行“打开—使用—失效—重开”的四问责任审计：打开前问谁承诺开门，现场须显示状态、人工窗口和当班责任；使用中问谁支付等待与绕行，须留下等价无 AI 路径和岗位时间；失效时问谁接回责任并有权停止，须出现静态替代、人工接管与物理停止；重开前问谁签认带薪复位，须有失败记录、复核和重开证据。这是逐场景的责任检查，不是人物真实路线、访谈结论或新增空间轴线。[source:SRC-014] [metric:METRIC-HANDOFF-FAILURE]
 
 agent.3 形成十二张可独立阅读的场景卡：一次性交接凭证、夜班后保护恢复、无统一账户的多语服务、带薪模式切换试验、有时服务看板、不追踪个人的夜间返程信息、无障碍断链压力测试、无工牌公共时段、机器人安全停机台、设备日志与就业系统隔离、时间转嫁模拟器、城市作息公开审计。每卡可见使用者/岗位、主节点、时间带、无 AI 最低包、最小/禁止数据、人工接管、预算角色、停止条件和指标，而不只显示名称。其中 SC-06-04/07/09/10/11 是五项产业测试，分别检查带薪切换、无障碍断链、机器人停机、就业数据隔离和时间转嫁；SC-06-12 把失败、修正与重开纳入年度公开审计。测试未通过不得对公众开放或复制。[source:SRC-014] [source:SRC-016] [metric:METRIC-PROHIBITED-DATA-USE]
 
@@ -110,6 +114,8 @@ agent.3 形成十二张可独立阅读的场景卡：一次性交接凭证、夜
 交通策略优先保证“服务断开时仍能到达”，而不是承诺无缝全天候。`ROAD-001` 是有限时窗慢行与人工服务廊道的概念中心线：数字状态可提示开放、拥挤和无障碍中断，但静态地图、地面导向、电话/人工入口必须独立存在。大钟寺与清河公开站点、夜班公交及北京市慢行行动资料只作为现场核验入口；它们不提供本项目 OD、逐站接续、可靠性、夜间步行安全、市政容量或精确分钟，因此正文不把“附近有站”写成“可达”。[data:geometry/roads.geojson#ROAD-001] [source:SRC-030] [depth:traffic_rail_slow_parking]
 
 交通概念组织分四层且全部保持 provisional：轨道接驳层核验站口、换乘、服务窗和无障碍，不知站位、接续、班次或容量就不宣称可达；步行/骑行层核验四象限过街、校区—园区接口和清河绿廊，不知路线、坡度、照明或安全就不画实线；微循环层只定义人工接驳、关闭改道和带薪移动的责任，缺主体、班次、OD 或替班预算就不激活；静态交通层只提出分散非机动车停放与无障碍上下客候选模块，权属、容量、消防和冲突未核就不定点定量。四层不新增道路、不修改信号、不推定轨道接续。[standard:PROJECT-OFFICIAL-ANNOUNCEMENT]
+
+对仓库概念几何的 EPSG:4548 诊断显示：唯一的 `ROAD-001` 只与 1/3 个临时重点区 polygon 相交，众智园与大钟寺 2/3 均不相交。这个结果只说明当前投稿图层不足以证明三区走廊连续，更不能证明真实可达；方案因此保留两个“待核不画”缺口，不移动或补画线位来制造完整感。只有官方范围、连续路线审计与对应专业接口复核同时到位，才触发源几何、图纸和指标整体重绘。[data:geometry/roads.geojson#ROAD-001] [data:geometry/key_areas.geojson#PROV-KEY-001] [depth:traffic_rail_slow_parking]
 
 ![有限时窗慢行、蓝绿恢复与静态替代](assets/figures/mobility-bluegreen.png)
 
@@ -151,6 +157,19 @@ agent.3 形成十二张可独立阅读的场景卡：一次性交接凭证、夜
 ![指标门禁、证据状态与复算关系](assets/figures/metrics-evidence.png)
 
 测量坚持逐格而不是平均：每个场景 × 节点 × 时段 × 画像/岗位 × 能力/语言渠道分别输出 PASS、FAIL 或 UNKNOWN。任何一个班次休息失败、非自愿延时、无薪转嫁、禁止数据处理或无 AI 路径不等价，整体不得 PASS；覆盖不足是 UNKNOWN，不是零。`METRIC-AVOIDABLE-TIME-BURDEN` 仍保留分钟/旅程的逐格诊断定义，但正式 schema 不接受该单位，因此从正式 `metrics.json` 导出省略。这个缺口只有批准 schema 扩展或经用户确认的语义重定义才能解除。[metric:METRIC-UNPLANNED-EXTENSION] [metric:METRIC-NO-AI-EQUIVALENCE] [assumption:ASM-013]
+
+规划方法不再只写成章节，而是对应唯一主图、可读验收字段和重绘触发：
+
+| 方法 | 主要图件 | 人读验收字段 |
+|---|---|---|
+| 三层范围 + 官方 3×5 | 图 01 · A3 02/03 · A0-1 | 三区两翼、三定位、五功能可在 10 秒内定位；无第三翼或法定红线暗示 |
+| 双时网 + 四类概念用地 | 图 02 · A3 05 · A0-1 | 两个责任层、四类角色与 0802/1401/05/0702 对位可读；只作概念叠加 |
+| 三重点区条件式项目包 | 图 03 · A3 06 · A0-1 | 每区均有官方问题、核验序列、无 AI 最低包与停止条件 |
+| 接口证据 + 概念网络诊断 | 图 04 · A3 07 · A0-2 | 明示 1/3 相交、2/3 待核不画；不产生三区连通或可达宣称 |
+| 双主角四问 + 十二场景 | A3 04/08 · 网页场景卡 | 四个责任时刻落到空间证据；12 卡均含人、时、地、预算、数据、接管、停止与指标 |
+| 4+6 证据账本 + 实施闭环 | 图 05 · A3 09/10 · A0-2 | 四项可复算与六项未测量分栏；UNKNOWN≠0，任一 FAIL→全部 FAIL |
+
+官方范围、场景合同、指标或 schema 任一变化时，只重绘受影响行及其下游引用；不能靠修改文字让旧图继续“通过”。[standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [depth:metrics_recalculation] [source:SOURCE-REGISTRY]
 
 23 条任务合规、5 条强制标准和 15 项专业深度分别进入 `compliance_matrix.json`、`standard_matrix.json` 和 `design_depth_matrix.json`。矩阵每行只引用最相关的章节、图层、指标、图纸、来源、假设和自检，避免用一组通用证据掩盖缺口；外键另由 08 本地检查验证。边界、建筑、控制、运营、样本等未知可以作为明确数据缺口进入 ready_for_review，但禁止支撑精确面积、法定控制、已激活服务或实测绩效。最终 package_state 与 sha256 只由官方 finalizer 在全部双语成果完成后刷新。[standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [depth:metrics_recalculation] [source:SOURCE-REGISTRY]
 
