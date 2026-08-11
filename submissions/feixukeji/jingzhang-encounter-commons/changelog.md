@@ -2,6 +2,12 @@
 
 Change log / 变更记录
 
+## v1.6 - 2026-08-10
+
+- Rewrote the bilingual proposal, offline visual pages, and publication microcopy in shorter, more direct language while preserving every evidence tag, metric, stop condition, and machine-readable status.
+- Placed plain-language explanations before codes such as `pending/not_authorized`, `blocked`, and `performance_results=null` so reviewers can follow the argument without reading schema terminology first.
+- Replaced literal or bureaucratic phrasing in the route audit, spatial fixture, Encounter Ticket, pilot responsibilities, and handover sections; rebuilt all four bilingual PDFs as v1.6.
+
 ## v1.5 - 2026-08-10
 
 - Added a non-located representative interface dossier that separates underground high-speed rail, surface heritage public space, and current Line 13 context; only existing or formally approved crossings may enter the candidate set.

@@ -14,7 +14,7 @@
     "model_family": "gpt",
     "model_detail": "Codex agent based on GPT-5; text, code, geometry, diagrams, PDF layout, and deterministic validation were produced in one auditable workspace."
   },
-  "generated_at": "2026-08-11T00:11:07Z",
+  "generated_at": "2026-08-11T01:11:04Z",
   "files": [
     {
       "path": "manifest.json",
@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "883e7874e42863e10614a93b816bb378ec8817cce5db14fe02e2779fc49282f7"
+      "sha256": "702e514b58943471977675e0e32cd882931ac758086eb0dab15176d508971c42"
     },
     {
       "path": "agent.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "403999ee72009293b7bb6f1d0114a80fe71c9617b33c120d22eda21c4c8c3888"
+      "sha256": "9dbedf712a071f9c50cf4213109f87d64908d6900b25a580fb0046637c7c882e"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "0501f706406ea3d2fc037c656afa9f407ac146f5390f6731739f9c35aa5d5b2e"
+      "sha256": "306d8513cf0917acbfaa2c409e5da13938ec16a446ad1b04ebff5a871f5d08c6"
     },
     {
       "path": "report/narrative.md",
@@ -93,7 +93,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "39707a5afd8e75dab18f2f89f5781ebebedd2dffda6bd543b178b1eacef3b705"
+      "sha256": "8bd10c5632eb3a880f0317976d943a3d1a10246d2f1ef0c6d2dc878de39ac0d5"
     },
     {
       "path": "report/copyright_statement.md",
@@ -106,21 +106,21 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "45ade93f87338c2174ed3a921bf255d75adf9e9461ef7787d7bd08c1e952d033"
+      "sha256": "09bb075ac8c666b1e3d1f8ea49efa98fa6f48fe130747980d884402a44223dda"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "514b885adcf35119bf404670127a97f2bfac7319a7334b74a7973ebd407c05f5"
+      "sha256": "d88dd97498cc15f1e33a9e929409a20e244fa937729d39d12b29fb3ed4fb6274"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "e88f8d62bd9a823b96dd2dc21c1dfa2cc967044e3382b92a20635e2a637d12a9"
+      "sha256": "b2217192562f0e427d13399d8cf8c269f672f390565d407e53cfa8b337a09195"
     },
     {
       "path": "visual/assets/encounter-ticket.schema.json",
@@ -280,7 +280,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "e420849ebe6d1aa08971ae2a9a5ab96c88c509e2c990ebb84d167493c381c01c"
+      "sha256": "e9863e0ec0221db995dbc64f31a7e8b77b924d5e69051f9f7ab42095746c45a1"
     },
     {
       "path": "report/proposal.en.html",
@@ -288,7 +288,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "69cf0102b9bdd004d335abe9d6fc80259b41f641a63cf2fcba63cf16f860715b"
+      "sha256": "b3ead8dcf0cdf635c7e59bda7d0fcf97504695ac37069668eff9ce260d9ece5c"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -296,7 +296,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "a86711e28f8b895cc7f196db6ea30bea23c574601542898be8ee5663ead703cb"
+      "sha256": "00c10d9628adca4319df2e081f014df7d5f55b3dade8f52b8f86cc81b6364e5b"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -304,7 +304,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "06a7056f7b9fc7f66f9e1f41f1500aca2765cdfea55c578916e21a974c744aea"
+      "sha256": "d49c065f7dce6122d91d906da8333084e62d42ec6e5b490469bedd19c7cfd847"
     },
     {
       "path": "visual/index.en.html",
@@ -312,7 +312,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "f91591b71d36ce66a2a422476be3bda5b7d383f3b7e58493303e63d4771311da"
+      "sha256": "032ee638f4b63f93d7abf593275cdac67d3a4f54e704d9776b776ab59006abde"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -388,7 +388,7 @@
       "role": "visualization",
       "required": true,
       "language": "neutral",
-      "sha256": "2ccb1421fd1a3d45607704261dddf830d5c117c9b8ef19d2cdace3d915bc064f"
+      "sha256": "3db1c8a0907692055a0d46f8be6700daa69835be59950235f28c823b7890c5d2"
     },
     {
       "path": "visual/assets/run-encounter-ticket-validation.js",
@@ -402,7 +402,7 @@
       "role": "visualization",
       "required": true,
       "language": "neutral",
-      "sha256": "0a7e5157ba68ac9d839b1755e5e7996e6030a962ed276c3eba0627af5b2e9b18"
+      "sha256": "54fa7b27ccbd3e8b8db955689221de45aec4ac7973820203ec42d3b397ebe235"
     },
     {
       "path": "visual/assets/ordinary-person-journey.json",
