@@ -1,115 +1,119 @@
 {
   "type": "FeatureCollection",
-  "name": "jingzhang_index_slow_mobility",
+  "name": "urban_version_relationships",
   "features": [
     {
       "type": "Feature",
-      "id": "ROAD-01",
+      "id": "ROAD-BASELINE-01",
       "properties": {
-        "id": "ROAD-01",
+        "id": "ROAD-BASELINE-01",
         "layer": "ROAD_CENTERLINE",
         "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "road_class": "greenway",
-        "name_zh": "索引漫游慢行主线"
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            116.3442,
-            40.0225
-          ],
-          [
-            116.3461,
-            40.004
-          ],
-          [
-            116.3478,
-            39.982
-          ],
-          [
-            116.3494,
-            39.958
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "ROAD-02",
-      "properties": {
-        "id": "ROAD-02",
-        "layer": "ROAD_CENTERLINE",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "road_class": "cycleway",
-        "name_zh": "众智园低速骑行联系"
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            116.342,
-            40.007
-          ],
-          [
-            116.351,
-            40.007
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "ROAD-03",
-      "properties": {
-        "id": "ROAD-03",
-        "layer": "ROAD_CENTERLINE",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
+        "confidence": "low",
+        "geometry_role": "analysis_helper",
         "road_class": "pedestrian",
-        "name_zh": "问城院无障碍步行横向"
+        "name_zh": "京张公共基线关系线",
+        "name_en": "Jingzhang public-baseline relationship line",
+        "not_a_road_alignment": true
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            116.342,
-            39.985
+            116.3485,
+            40.01675
           ],
           [
-            116.351,
-            39.985
+            116.3475,
+            39.9885
+          ],
+          [
+            116.3485,
+            39.946920000000006
           ]
         ]
       }
     },
     {
       "type": "Feature",
-      "id": "ROAD-04",
+      "id": "ROAD-CROSSING-01",
       "properties": {
-        "id": "ROAD-04",
+        "id": "ROAD-CROSSING-01",
         "layer": "ROAD_CENTERLINE",
         "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "road_class": "transit_connection",
-        "name_zh": "回馈市公共交通接驳概念线"
+        "confidence": "low",
+        "geometry_role": "analysis_helper",
+        "road_class": "pedestrian",
+        "name_zh": "重点区 1 横向连接复核样带",
+        "name_en": "Key area 1 transverse-connection review transect",
+        "not_a_road_alignment": true
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            116.342,
-            39.966
+            116.346,
+            40.01675
           ],
           [
             116.351,
-            39.966
+            40.01675
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-CROSSING-02",
+      "properties": {
+        "id": "ROAD-CROSSING-02",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "analysis_helper",
+        "road_class": "pedestrian",
+        "name_zh": "重点区 2 横向连接复核样带",
+        "name_en": "Key area 2 transverse-connection review transect",
+        "not_a_road_alignment": true
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.345,
+            39.9885
+          ],
+          [
+            116.35,
+            39.9885
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-CROSSING-03",
+      "properties": {
+        "id": "ROAD-CROSSING-03",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "analysis_helper",
+        "road_class": "pedestrian",
+        "name_zh": "重点区 3 横向连接复核样带",
+        "name_en": "Key area 3 transverse-connection review transect",
+        "not_a_road_alignment": true
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.346,
+            39.946920000000006
+          ],
+          [
+            116.351,
+            39.946920000000006
           ]
         ]
       }

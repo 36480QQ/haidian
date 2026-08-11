@@ -12,7 +12,11 @@
       "geojson_layers": [
         "geometry/key_areas.geojson",
         "geometry/land_use.geojson",
-        "geometry/public_space.geojson"
+        "geometry/public_space.geojson",
+        "geometry/buildings.geojson",
+        "geometry/green_space.geojson",
+        "geometry/phasing.geojson",
+        "geometry/roads.geojson"
       ],
       "metrics": [
         "global_case_group_count",
@@ -20,7 +24,15 @@
         "land_use_05_area_sqm",
         "scenario_node_count",
         "industry_validation_scenario_count",
-        "protocol_interface_count"
+        "protocol_interface_count",
+        "flagship_first_use_procurement_count",
+        "flagship_implementation_plan_coverage_ratio",
+        "flagship_lifecycle_gate_coverage_ratio",
+        "flagship_market_diffusion_adoption_count",
+        "flagship_pilot_count",
+        "flagship_published_standard_output_count",
+        "flagship_scenario_bundle_coverage_ratio",
+        "flagship_verified_public_benefit_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -45,20 +57,55 @@
       "assumption_ids": [
         "A-KEYAREA-001",
         "A-OPERATIONS-001",
-        "A-METRICS-001"
+        "A-METRICS-001",
+        "A-FLAGSHIP-FP01",
+        "A-FLAGSHIP-FP02",
+        "A-FLAGSHIP-FP03",
+        "A-FLAGSHIP-FP04",
+        "A-FLAGSHIP-FP05"
       ],
       "self_check_ids": [
-        "CASE_PORTFOLIO_COUNT",
-        "SCENARIO_NODE_COUNT",
-        "INDUSTRY_TEST_COUNT",
-        "PROTOCOL_INTERFACE_COUNT"
+        "DETERMINISTIC_VALIDATION",
+        "PROFESSIONAL_EVIDENCE",
+        "SPATIAL_REVIEW",
+        "VISUAL_PACKAGING"
       ],
-      "evidence_summary_zh": "以六组国际机制比较、研发与产业服务用地、12个场景节点和七类公共接口共同证明生态体系；不把企业、投资或政策设想写成既成事实。",
+      "evidence_summary_zh": "以六组国际机制比较、研发与产业服务用地、12个场景节点和七类公共接口共同证明生态体系；不把企业、投资或政策设想写成既成事实；V0.7将12场景收束为五个概念旗舰试点，以技术突破、实景试验、首用采购、市场扩散和标准输出形成可停可审的转化链。",
       "geojson_feature_ids": [
         "SCENARIO-S01",
         "SCENARIO-S02",
         "SCENARIO-S03",
-        "SCENARIO-S04"
+        "SCENARIO-S04",
+        "BLDG-BUILD-001",
+        "BLDG-TEST-001",
+        "GREEN-BUILD-001",
+        "GREEN-LIVE-001",
+        "GREEN-TEST-001",
+        "LU-BUILD-01",
+        "LU-LIVE-02",
+        "LU-LIVE-04",
+        "LU-TEST-01",
+        "LU-TEST-02",
+        "LU-TEST-04",
+        "PUBLIC-BUILD-001",
+        "PUBLIC-BUILD-002",
+        "PUBLIC-LIVE-001",
+        "PUBLIC-LIVE-002",
+        "PUBLIC-TEST-001",
+        "PUBLIC-TEST-002",
+        "ROAD-BUILD-001",
+        "ROAD-INTERFACE-001",
+        "ROAD-LIVE-001",
+        "ROAD-SPINE-001",
+        "ROAD-TEST-001",
+        "SCENARIO-S05",
+        "SCENARIO-S06",
+        "SCENARIO-S07",
+        "SCENARIO-S08",
+        "SCENARIO-S09",
+        "SCENARIO-S10",
+        "SCENARIO-S11",
+        "SCENARIO-S12"
       ]
     },
     {
@@ -85,7 +132,9 @@
         "land_use_overlap_area_sqm",
         "green_ratio",
         "public_space_ratio",
-        "road_centerline_length_m"
+        "road_centerline_length_m",
+        "network_role_anchor_count",
+        "network_role_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -105,16 +154,24 @@
         "A-BOUNDARY-001",
         "A-CONTROLS-001",
         "A-TRANSPORT-001",
-        "A-METRICS-001"
+        "A-METRICS-001",
+        "A-SCENARIO-LOCATION-001"
       ],
       "self_check_ids": [
-        "BOUNDARY_PROVISIONAL_VALID",
-        "LAND_USE_FULL_COVERAGE",
-        "LAND_USE_NO_OVERLAP",
-        "ROAD_INSIDE_SITE",
-        "METRIC_RECALC_MATCH"
+        "DETERMINISTIC_VALIDATION",
+        "PROFESSIONAL_EVIDENCE",
+        "SPATIAL_REVIEW",
+        "VISUAL_PACKAGING"
       ],
-      "evidence_summary_zh": "用完整无缝的概念用地分区、慢行服务网络和蓝绿公共空间指标表达未来城市形态，边界与交通精度均保留临时性说明。"
+      "evidence_summary_zh": "用完整无缝的概念用地分区、慢行服务网络和蓝绿公共空间指标表达未来城市形态，边界与交通精度均保留临时性说明；六个唯一临时锚点使SOURCE、STACK、PROVE、LIVE_MARKET、ENABLE、COMMONS角色可定位、可复算，但不形成新法定分区。",
+      "geojson_feature_ids": [
+        "PUBLIC-BUILD-002",
+        "PUBLIC-LIVE-002",
+        "PUBLIC-TEST-001",
+        "SCENARIO-S07",
+        "SCENARIO-S08",
+        "SCENARIO-S09"
+      ]
     },
     {
       "requirement_id": "1.3.3",
@@ -136,7 +193,10 @@
         "slow_mobility_length_m",
         "scenario_node_count",
         "persona_count",
-        "landmark_count"
+        "landmark_count",
+        "human_journey_count",
+        "protocol_street_room_count",
+        "return_ticket_reference_coverage_ratio"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -154,15 +214,27 @@
       "assumption_ids": [
         "A-BOUNDARY-001",
         "A-KEYAREA-001",
-        "A-OPERATIONS-001"
+        "A-OPERATIONS-001",
+        "A-PROTOCOL-PROTOTYPE-001"
       ],
       "self_check_ids": [
-        "PERSONA_COUNT",
-        "SCENARIO_NODE_COUNT",
-        "BLUEGREEN_INSIDE_SITE",
-        "LANDMARK_COUNT"
+        "DETERMINISTIC_VALIDATION",
+        "PROFESSIONAL_EVIDENCE",
+        "SPATIAL_REVIEW",
+        "VISUAL_PACKAGING"
       ],
-      "evidence_summary_zh": "五类用户画像与可达公共空间、绿色网络、场景节点和三处地标共同回应工作—生活—社交—学习需求。"
+      "evidence_summary_zh": "五类用户画像与可达公共空间、绿色网络、场景节点和三处地标共同回应工作—生活—社交—学习需求；面向人才与居民的高品质城区目标由无手机服务、争议补救和维护退役三条概念旅程进行权利测试。",
+      "geojson_feature_ids": [
+        "JOURNEY-J01",
+        "JOURNEY-J02",
+        "JOURNEY-J03",
+        "RETURN-BUILD-001",
+        "RETURN-LIVE-001",
+        "RETURN-TEST-001",
+        "ROOM-BUILD-001",
+        "ROOM-LIVE-001",
+        "ROOM-TEST-001"
+      ]
     },
     {
       "requirement_id": "1.4.1",
@@ -197,8 +269,10 @@
         "A-METRICS-001"
       ],
       "self_check_ids": [
-        "BOUNDARY_PROVISIONAL_VALID",
-        "BOUNDARY_LIMITATION_DISCLOSED"
+        "DETERMINISTIC_VALIDATION",
+        "PROFESSIONAL_EVIDENCE",
+        "SPATIAL_REVIEW",
+        "VISUAL_PACKAGING"
       ],
       "evidence_summary_zh": "公告约43.6平方公里统筹研究范围仅作为战略研究尺度；提交GeoJSON只覆盖其中约11.4平方公里总体设计子范围，不伪造43.6平方公里边界。",
       "geojson_feature_ids": [
@@ -245,10 +319,10 @@
         "A-METRICS-001"
       ],
       "self_check_ids": [
-        "BOUNDARY_PROVISIONAL_VALID",
-        "LAND_USE_FULL_COVERAGE",
-        "PHASING_TOPOLOGY",
-        "METRIC_RECALC_MATCH"
+        "DETERMINISTIC_VALIDATION",
+        "PROFESSIONAL_EVIDENCE",
+        "SPATIAL_REVIEW",
+        "VISUAL_PACKAGING"
       ],
       "evidence_summary_zh": "总体设计范围以公告约值和临时SITE-001双重标示，用地与首轮介入分期完整覆盖同一临时边界。",
       "geojson_feature_ids": [
@@ -298,8 +372,10 @@
         "A-METRICS-001"
       ],
       "self_check_ids": [
-        "KEY_AREAS_PROVISIONAL_VALID",
-        "BOUNDARY_LIMITATION_DISCLOSED"
+        "DETERMINISTIC_VALIDATION",
+        "PROFESSIONAL_EVIDENCE",
+        "SPATIAL_REVIEW",
+        "VISUAL_PACKAGING"
       ],
       "evidence_summary_zh": "三处重点区数量和公告约面积完整登记；矩形几何只作片区级索引，不作为地块红线或精确面积结论。",
       "geojson_feature_ids": [
@@ -324,7 +400,9 @@
         "scenario_node_count",
         "industry_validation_scenario_count",
         "protocol_interface_count",
-        "land_use_0802_area_sqm"
+        "land_use_0802_area_sqm",
+        "network_role_anchor_count",
+        "network_role_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -345,14 +423,24 @@
         "A-KEYAREA-001",
         "A-SCENARIO-LOCATION-001",
         "A-INDUSTRY-DATA-001",
-        "A-OPERATIONS-001"
+        "A-OPERATIONS-001",
+        "A-METRICS-001"
       ],
       "self_check_ids": [
-        "CASE_PORTFOLIO_COUNT",
-        "INDUSTRY_TEST_COUNT",
-        "SCENARIO_PROTOCOL_INTERFACE_COVERAGE"
+        "DETERMINISTIC_VALIDATION",
+        "PROFESSIONAL_EVIDENCE",
+        "SPATIAL_REVIEW",
+        "VISUAL_PACKAGING"
       ],
-      "evidence_summary_zh": "以BUILD—TEST—LIVE—LEARN/UPDATE生命周期、产业验证节点和公共协议接口连接创新资源，避免仅用园区命名代替生态机制。"
+      "evidence_summary_zh": "以SOURCE—STACK—PROVE—LIVE & MARKET—ENABLE—COMMONS六节点网络连接创新资源，五旗舰提供实施入口，七接口仅作为次级可信运行层。北纬社区、未来科学城、怀柔科学城、经开区与京津冀仅登记为概念协作接口，不表示已确认合作或空间边界；network_role_count与network_role_anchor_count均从最终几何复算为6，支撑六节点生态关系而非合作或绩效宣称。",
+      "geojson_feature_ids": [
+        "PUBLIC-BUILD-002",
+        "PUBLIC-LIVE-002",
+        "PUBLIC-TEST-001",
+        "SCENARIO-S07",
+        "SCENARIO-S08",
+        "SCENARIO-S09"
+      ]
     },
     {
       "requirement_id": "1.5.1.2",
@@ -375,7 +463,10 @@
         "green_space_area_sqm",
         "public_space_area_sqm",
         "road_centerline_length_m",
-        "scenario_node_count"
+        "scenario_node_count",
+        "protocol_interface_entity_count",
+        "protocol_interface_entity_coverage_ratio",
+        "protocol_street_room_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -395,15 +486,28 @@
         "A-LANDUSE-001",
         "A-SCENARIO-LOCATION-001",
         "A-TRANSPORT-001",
-        "A-METRICS-001"
+        "A-METRICS-001",
+        "A-PROTOCOL-PROTOTYPE-001"
       ],
       "self_check_ids": [
-        "LAND_USE_FULL_COVERAGE",
-        "ROAD_INSIDE_SITE",
-        "BLUEGREEN_INSIDE_SITE",
-        "SCENARIO_SPATIAL_ASSIGNMENT_COVERAGE"
+        "DETERMINISTIC_VALIDATION",
+        "PROFESSIONAL_EVIDENCE",
+        "SPATIAL_REVIEW",
+        "VISUAL_PACKAGING"
       ],
-      "evidence_summary_zh": "把AI工作、生活、交通和公共服务落实为概念用地、慢行网络、公共空间与场景点位，同时声明其非审批方案属性。"
+      "evidence_summary_zh": "把AI工作、生活、交通和公共服务落实为概念用地、慢行网络、公共空间与场景点位，同时声明其非审批方案属性；未来城市形态研究保留三处可信运行街室与七类服务职责实体，均依附临时载体且次级服务于六节点网络，不是新增法定设施。",
+      "geojson_feature_ids": [
+        "INTERFACE-I1",
+        "INTERFACE-I2",
+        "INTERFACE-I3",
+        "INTERFACE-I4",
+        "INTERFACE-I5",
+        "INTERFACE-I6",
+        "INTERFACE-I7",
+        "ROOM-BUILD-001",
+        "ROOM-LIVE-001",
+        "ROOM-TEST-001"
+      ]
     },
     {
       "requirement_id": "1.5.2.1",
@@ -425,7 +529,9 @@
         "land_use_0804_area_sqm",
         "land_use_05_area_sqm",
         "scenario_node_count",
-        "industry_validation_scenario_count"
+        "industry_validation_scenario_count",
+        "network_role_anchor_count",
+        "network_role_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -445,14 +551,24 @@
         "A-LANDUSE-001",
         "A-INDUSTRY-DATA-001",
         "A-METRICS-001",
-        "A-OPERATIONS-001"
+        "A-OPERATIONS-001",
+        "A-SCENARIO-LOCATION-001"
       ],
       "self_check_ids": [
-        "LAND_USE_CODES_VALID",
-        "SCENARIO_NODE_COUNT",
-        "INDUSTRY_TEST_COUNT"
+        "DETERMINISTIC_VALIDATION",
+        "PROFESSIONAL_EVIDENCE",
+        "SPATIAL_REVIEW",
+        "VISUAL_PACKAGING"
       ],
-      "evidence_summary_zh": "科研、文化、教育和商业服务用地与12个场景节点形成产业—空间映射；面积仅用于概念方案内部复算。"
+      "evidence_summary_zh": "科研、文化、教育和商业服务用地与12个场景节点形成产业—空间映射；面积仅用于概念方案内部复算；六角色锚点把产业功能映射到现有载体；角色可跨片区协同，锚点不是边界、权属或建设许可。",
+      "geojson_feature_ids": [
+        "PUBLIC-BUILD-002",
+        "PUBLIC-LIVE-002",
+        "PUBLIC-TEST-001",
+        "SCENARIO-S07",
+        "SCENARIO-S08",
+        "SCENARIO-S09"
+      ]
     },
     {
       "requirement_id": "1.5.2.2",
@@ -466,7 +582,10 @@
       "geojson_layers": [
         "geometry/land_use.geojson",
         "geometry/buildings.geojson",
-        "geometry/phasing.geojson"
+        "geometry/phasing.geojson",
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson",
+        "geometry/roads.geojson"
       ],
       "metrics": [
         "land_use_coverage_ratio",
@@ -477,7 +596,15 @@
         "phase_count",
         "phase_1_area_sqm",
         "phase_2_area_sqm",
-        "phase_3_area_sqm"
+        "phase_3_area_sqm",
+        "flagship_first_use_procurement_count",
+        "flagship_implementation_plan_coverage_ratio",
+        "flagship_lifecycle_gate_coverage_ratio",
+        "flagship_market_diffusion_adoption_count",
+        "flagship_pilot_count",
+        "flagship_published_standard_output_count",
+        "flagship_scenario_bundle_coverage_ratio",
+        "flagship_verified_public_benefit_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -496,15 +623,56 @@
         "A-BOUNDARY-001",
         "A-EXISTING-001",
         "A-CONTROLS-001",
-        "A-OPERATIONS-001"
+        "A-OPERATIONS-001",
+        "A-FLAGSHIP-FP01",
+        "A-FLAGSHIP-FP02",
+        "A-FLAGSHIP-FP03",
+        "A-FLAGSHIP-FP04",
+        "A-FLAGSHIP-FP05"
       ],
       "self_check_ids": [
-        "BUILDING_CONCEPT_ONLY",
-        "BUILDING_LANDUSE_COMPATIBILITY",
-        "PHASING_TOPOLOGY",
-        "PHASING_STAGE_SEMANTICS"
+        "DETERMINISTIC_VALIDATION",
+        "PROFESSIONAL_EVIDENCE",
+        "SPATIAL_REVIEW",
+        "VISUAL_PACKAGING"
       ],
-      "evidence_summary_zh": "更新框架由完整用地分区、六个低置信度功能包络和三项依赖分期构成；不将包络解释为现状建筑或拆改留决定。"
+      "evidence_summary_zh": "更新框架由完整用地分区、六个低置信度功能包络和三项依赖分期构成；不将包络解释为现状建筑或拆改留决定；五试点均绑定现有JZ更新项目、PHASE依赖包及临时载体，同时明确资金、空间、数据与采购均未确认。",
+      "geojson_feature_ids": [
+        "BLDG-BUILD-001",
+        "BLDG-TEST-001",
+        "GREEN-BUILD-001",
+        "GREEN-LIVE-001",
+        "GREEN-TEST-001",
+        "LU-BUILD-01",
+        "LU-LIVE-02",
+        "LU-LIVE-04",
+        "LU-TEST-01",
+        "LU-TEST-02",
+        "LU-TEST-04",
+        "PUBLIC-BUILD-001",
+        "PUBLIC-BUILD-002",
+        "PUBLIC-LIVE-001",
+        "PUBLIC-LIVE-002",
+        "PUBLIC-TEST-001",
+        "PUBLIC-TEST-002",
+        "ROAD-BUILD-001",
+        "ROAD-INTERFACE-001",
+        "ROAD-LIVE-001",
+        "ROAD-SPINE-001",
+        "ROAD-TEST-001",
+        "SCENARIO-S01",
+        "SCENARIO-S02",
+        "SCENARIO-S03",
+        "SCENARIO-S04",
+        "SCENARIO-S05",
+        "SCENARIO-S06",
+        "SCENARIO-S07",
+        "SCENARIO-S08",
+        "SCENARIO-S09",
+        "SCENARIO-S10",
+        "SCENARIO-S11",
+        "SCENARIO-S12"
+      ]
     },
     {
       "requirement_id": "1.5.2.3",
@@ -546,9 +714,10 @@
         "A-OPERATIONS-001"
       ],
       "self_check_ids": [
-        "ROAD_INSIDE_SITE",
-        "CONTROL_METRICS_UNKNOWN",
-        "SCENARIO_SPATIAL_ASSIGNMENT_COVERAGE"
+        "DETERMINISTIC_VALIDATION",
+        "PROFESSIONAL_EVIDENCE",
+        "SPATIAL_REVIEW",
+        "VISUAL_PACKAGING"
       ],
       "evidence_summary_zh": "交通图层只表达慢行、接驳和服务关系；道路面积、市政容量和工程线位保持unknown，并由约束缺口说明兜底。"
     },
@@ -564,7 +733,10 @@
       "geojson_layers": [
         "geometry/green_space.geojson",
         "geometry/public_space.geojson",
-        "geometry/roads.geojson"
+        "geometry/roads.geojson",
+        "geometry/buildings.geojson",
+        "geometry/land_use.geojson",
+        "geometry/phasing.geojson"
       ],
       "metrics": [
         "green_space_area_sqm",
@@ -572,7 +744,15 @@
         "green_ratio",
         "public_space_ratio",
         "road_centerline_length_m",
-        "landmark_count"
+        "landmark_count",
+        "flagship_first_use_procurement_count",
+        "flagship_implementation_plan_coverage_ratio",
+        "flagship_lifecycle_gate_coverage_ratio",
+        "flagship_market_diffusion_adoption_count",
+        "flagship_pilot_count",
+        "flagship_published_standard_output_count",
+        "flagship_scenario_bundle_coverage_ratio",
+        "flagship_verified_public_benefit_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -591,15 +771,25 @@
       "assumption_ids": [
         "A-BOUNDARY-001",
         "A-HERITAGE-001",
-        "A-TRANSPORT-001"
+        "A-TRANSPORT-001",
+        "A-FLAGSHIP-FP05"
       ],
       "self_check_ids": [
-        "BLUEGREEN_INSIDE_SITE",
-        "ROAD_INSIDE_SITE",
-        "HERITAGE_LIMIT_DISCLOSED",
-        "LANDMARK_COUNT"
+        "DETERMINISTIC_VALIDATION",
+        "PROFESSIONAL_EVIDENCE",
+        "SPATIAL_REVIEW",
+        "VISUAL_PACKAGING"
       ],
-      "evidence_summary_zh": "连续绿地、公共空间、慢行关系和三处地标共同回应遗址公园活力带；文保控制线缺失仍作为专业前置条件。"
+      "evidence_summary_zh": "连续绿地、公共空间、慢行关系和三处地标共同回应遗址公园活力带；文保控制线缺失仍作为专业前置条件；FP05京张公共证据公园把活态遗产路线设为FP01至FP04的公开观察、解释、纠错和长期记忆层。",
+      "geojson_feature_ids": [
+        "GREEN-LIVE-001",
+        "LU-LIVE-02",
+        "PUBLIC-BUILD-002",
+        "PUBLIC-LIVE-001",
+        "PUBLIC-TEST-002",
+        "ROAD-SPINE-001",
+        "SCENARIO-S09"
+      ]
     },
     {
       "requirement_id": "1.5.2.5",
@@ -642,10 +832,10 @@
         "A-CONTROLS-001"
       ],
       "self_check_ids": [
-        "BUILDING_CONCEPT_ONLY",
-        "HERITAGE_LIMIT_DISCLOSED",
-        "CONTROL_METRICS_UNKNOWN",
-        "LANDMARK_COUNT"
+        "DETERMINISTIC_VALIDATION",
+        "PROFESSIONAL_EVIDENCE",
+        "SPATIAL_REVIEW",
+        "VISUAL_PACKAGING"
       ],
       "evidence_summary_zh": "风貌证据采用功能包络、公共空间和历史叙事，不给出缺少控规、文保及现状调查支撑的伪精确高度或建筑结论。"
     },
@@ -664,7 +854,9 @@
         "geometry/land_use.geojson",
         "geometry/buildings.geojson",
         "geometry/public_space.geojson",
-        "geometry/phasing.geojson"
+        "geometry/phasing.geojson",
+        "geometry/green_space.geojson",
+        "geometry/roads.geojson"
       ],
       "metrics": [
         "announced_key_detailed_design_area_sqm",
@@ -675,7 +867,21 @@
         "scenario_node_count",
         "concept_building_envelope_count",
         "phase_count",
-        "phase_coverage_ratio"
+        "phase_coverage_ratio",
+        "capacity_return_node_count",
+        "human_journey_count",
+        "protocol_interface_entity_count",
+        "protocol_interface_entity_coverage_ratio",
+        "protocol_street_room_count",
+        "return_ticket_reference_coverage_ratio",
+        "flagship_first_use_procurement_count",
+        "flagship_implementation_plan_coverage_ratio",
+        "flagship_lifecycle_gate_coverage_ratio",
+        "flagship_market_diffusion_adoption_count",
+        "flagship_pilot_count",
+        "flagship_published_standard_output_count",
+        "flagship_scenario_bundle_coverage_ratio",
+        "flagship_verified_public_benefit_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -695,19 +901,75 @@
         "A-KEYAREA-001",
         "A-EXISTING-001",
         "A-OPERATIONS-001",
-        "A-METRICS-001"
+        "A-METRICS-001",
+        "A-PROTOCOL-PROTOTYPE-001",
+        "A-FLAGSHIP-FP01",
+        "A-FLAGSHIP-FP02",
+        "A-FLAGSHIP-FP03",
+        "A-FLAGSHIP-FP04",
+        "A-FLAGSHIP-FP05"
       ],
       "self_check_ids": [
-        "KEY_AREAS_PROVISIONAL_VALID",
-        "SCENARIO_SPATIAL_ASSIGNMENT_COVERAGE",
-        "BUILDING_CONCEPT_ONLY",
-        "PHASING_TOPOLOGY"
+        "DETERMINISTIC_VALIDATION",
+        "PROFESSIONAL_EVIDENCE",
+        "SPATIAL_REVIEW",
+        "VISUAL_PACKAGING"
       ],
-      "evidence_summary_zh": "三处重点区均有定位、功能包络、场景节点、公共空间与分期证据；具体地块、拆改留和工程尺度仍待官方资料深化。",
+      "evidence_summary_zh": "三处重点区均有定位、功能包络、场景节点、公共空间与分期证据；具体地块、拆改留和工程尺度仍待官方资料深化；三片区详细设计各含街室、人物旅程和能力返还节点，全部保留临时边界、概念选址和非运营状态；五项均给出角色联合体、90日三门、1年指标和五门转化，但不声称运营主体、场地、预算或成果已经成立。",
       "geojson_feature_ids": [
         "PROV-KEY-001",
         "PROV-KEY-002",
-        "PROV-KEY-003"
+        "PROV-KEY-003",
+        "INTERFACE-I1",
+        "INTERFACE-I2",
+        "INTERFACE-I3",
+        "INTERFACE-I4",
+        "INTERFACE-I5",
+        "INTERFACE-I6",
+        "INTERFACE-I7",
+        "JOURNEY-J01",
+        "JOURNEY-J02",
+        "JOURNEY-J03",
+        "RETURN-BUILD-001",
+        "RETURN-LIVE-001",
+        "RETURN-TEST-001",
+        "ROOM-BUILD-001",
+        "ROOM-LIVE-001",
+        "ROOM-TEST-001",
+        "BLDG-BUILD-001",
+        "BLDG-TEST-001",
+        "GREEN-BUILD-001",
+        "GREEN-LIVE-001",
+        "GREEN-TEST-001",
+        "LU-BUILD-01",
+        "LU-LIVE-02",
+        "LU-LIVE-04",
+        "LU-TEST-01",
+        "LU-TEST-02",
+        "LU-TEST-04",
+        "PUBLIC-BUILD-001",
+        "PUBLIC-BUILD-002",
+        "PUBLIC-LIVE-001",
+        "PUBLIC-LIVE-002",
+        "PUBLIC-TEST-001",
+        "PUBLIC-TEST-002",
+        "ROAD-BUILD-001",
+        "ROAD-INTERFACE-001",
+        "ROAD-LIVE-001",
+        "ROAD-SPINE-001",
+        "ROAD-TEST-001",
+        "SCENARIO-S01",
+        "SCENARIO-S02",
+        "SCENARIO-S03",
+        "SCENARIO-S04",
+        "SCENARIO-S05",
+        "SCENARIO-S06",
+        "SCENARIO-S07",
+        "SCENARIO-S08",
+        "SCENARIO-S09",
+        "SCENARIO-S10",
+        "SCENARIO-S11",
+        "SCENARIO-S12"
       ]
     },
     {
@@ -724,7 +986,9 @@
         "geometry/land_use.geojson",
         "geometry/buildings.geojson",
         "geometry/public_space.geojson",
-        "geometry/green_space.geojson"
+        "geometry/green_space.geojson",
+        "geometry/phasing.geojson",
+        "geometry/roads.geojson"
       ],
       "metrics": [
         "zhongzhiyuan_announced_area_sqm",
@@ -733,7 +997,19 @@
         "land_use_0802_area_sqm",
         "industry_validation_scenario_count",
         "green_space_area_sqm",
-        "phase_2_area_sqm"
+        "phase_2_area_sqm",
+        "capacity_return_node_count",
+        "human_journey_count",
+        "protocol_interface_entity_count",
+        "protocol_street_room_count",
+        "flagship_first_use_procurement_count",
+        "flagship_implementation_plan_coverage_ratio",
+        "flagship_lifecycle_gate_coverage_ratio",
+        "flagship_market_diffusion_adoption_count",
+        "flagship_pilot_count",
+        "flagship_published_standard_output_count",
+        "flagship_scenario_bundle_coverage_ratio",
+        "flagship_verified_public_benefit_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -752,21 +1028,32 @@
       "assumption_ids": [
         "A-KEYAREA-001",
         "A-EXISTING-001",
-        "A-OPERATIONS-001"
+        "A-OPERATIONS-001",
+        "A-PROTOCOL-PROTOTYPE-001",
+        "A-FLAGSHIP-FP02"
       ],
       "self_check_ids": [
-        "KEY_AREAS_PROVISIONAL_VALID",
-        "INDUSTRY_TEST_COUNT",
-        "BUILDING_CONCEPT_ONLY",
-        "PHASING_STAGE_SEMANTICS"
+        "DETERMINISTIC_VALIDATION",
+        "PROFESSIONAL_EVIDENCE",
+        "SPATIAL_REVIEW",
+        "VISUAL_PACKAGING"
       ],
-      "evidence_summary_zh": "众智园以科研用地、三项产业测试验证、清河—京张绿脊和BUILD功能包络为主证据；点位和阶段仍是片区级概念。",
+      "evidence_summary_zh": "众智园以STACK/PROVE角色、科研用地、产业测试验证、清河—京张绿脊和FP02全栈开放试验庭为主证据；点位和阶段仍是片区级概念；众智园STACK/PROVE角色由FP02承接，制票室、I1/I3原型、维护人员暂停退役旅程和能力返还台仅提供次级可信运行闭环；FP02众智全栈开放试验庭以S01安全栈和S10可测算力能耗条件构成STACK开放测试包。",
       "geojson_feature_ids": [
         "PROV-KEY-001",
         "SCENARIO-S01",
         "SCENARIO-S02",
         "BLDG-BUILD-001",
-        "BLDG-BUILD-002"
+        "BLDG-BUILD-002",
+        "INTERFACE-I1",
+        "INTERFACE-I3",
+        "JOURNEY-J03",
+        "RETURN-BUILD-001",
+        "ROOM-BUILD-001",
+        "LU-BUILD-01",
+        "ROAD-INTERFACE-001",
+        "ROAD-SPINE-001",
+        "SCENARIO-S10"
       ]
     },
     {
@@ -782,7 +1069,10 @@
         "geometry/key_areas.geojson",
         "geometry/land_use.geojson",
         "geometry/buildings.geojson",
-        "geometry/public_space.geojson"
+        "geometry/public_space.geojson",
+        "geometry/green_space.geojson",
+        "geometry/phasing.geojson",
+        "geometry/roads.geojson"
       ],
       "metrics": [
         "ai_origin_announced_area_sqm",
@@ -791,7 +1081,19 @@
         "land_use_0804_area_sqm",
         "land_use_0702_area_sqm",
         "land_use_1403_area_sqm",
-        "phase_2_area_sqm"
+        "phase_2_area_sqm",
+        "capacity_return_node_count",
+        "human_journey_count",
+        "protocol_interface_entity_count",
+        "protocol_street_room_count",
+        "flagship_first_use_procurement_count",
+        "flagship_implementation_plan_coverage_ratio",
+        "flagship_lifecycle_gate_coverage_ratio",
+        "flagship_market_diffusion_adoption_count",
+        "flagship_pilot_count",
+        "flagship_published_standard_output_count",
+        "flagship_scenario_bundle_coverage_ratio",
+        "flagship_verified_public_benefit_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -811,21 +1113,47 @@
       "assumption_ids": [
         "A-KEYAREA-001",
         "A-EXISTING-001",
-        "A-OPERATIONS-001"
+        "A-OPERATIONS-001",
+        "A-PROTOCOL-PROTOTYPE-001",
+        "A-FLAGSHIP-FP01",
+        "A-FLAGSHIP-FP03"
       ],
       "self_check_ids": [
-        "KEY_AREAS_PROVISIONAL_VALID",
-        "PERSONA_COUNT",
-        "SCENARIO_PROTOCOL_INTERFACE_COVERAGE",
-        "PHASING_STAGE_SEMANTICS"
+        "DETERMINISTIC_VALIDATION",
+        "PROFESSIONAL_EVIDENCE",
+        "SPATIAL_REVIEW",
+        "VISUAL_PACKAGING"
       ],
-      "evidence_summary_zh": "原点社区以教育科研、社区服务、公民测试广场、协议零号站和人工复核服务包络回应近校成果转化与公众共创。",
+      "evidence_summary_zh": "原点社区以教育科研、社区服务、公民测试广场、协议零号站和人工复核服务包络回应近校成果转化与公众共创；AI原点社区以协议验票室、I2/I4/I5原型、无手机服务旅程及TEST能力返还台检验人工接管与可申诉性；FP01承担SOURCE+ENABLE首用入口，FP03以小月河场景共测网串联S02/S05/S06/S08的有人监督PROVE共测，不将跨片区四点误称单一路线。",
       "geojson_feature_ids": [
         "PROV-KEY-002",
         "SCENARIO-S03",
         "SCENARIO-S04",
         "BLDG-TEST-001",
-        "BLDG-TEST-002"
+        "BLDG-TEST-002",
+        "INTERFACE-I2",
+        "INTERFACE-I4",
+        "INTERFACE-I5",
+        "JOURNEY-J01",
+        "RETURN-TEST-001",
+        "ROOM-TEST-001",
+        "GREEN-BUILD-001",
+        "GREEN-TEST-001",
+        "LU-TEST-01",
+        "LU-TEST-02",
+        "LU-TEST-04",
+        "PUBLIC-BUILD-001",
+        "PUBLIC-TEST-001",
+        "PUBLIC-TEST-002",
+        "ROAD-BUILD-001",
+        "ROAD-INTERFACE-001",
+        "ROAD-SPINE-001",
+        "ROAD-TEST-001",
+        "SCENARIO-S02",
+        "SCENARIO-S05",
+        "SCENARIO-S06",
+        "SCENARIO-S07",
+        "SCENARIO-S08"
       ]
     },
     {
@@ -843,7 +1171,9 @@
         "geometry/land_use.geojson",
         "geometry/buildings.geojson",
         "geometry/public_space.geojson",
-        "geometry/roads.geojson"
+        "geometry/roads.geojson",
+        "geometry/green_space.geojson",
+        "geometry/phasing.geojson"
       ],
       "metrics": [
         "dazhongsi_announced_area_sqm",
@@ -853,7 +1183,19 @@
         "land_use_0803_area_sqm",
         "land_use_1401_area_sqm",
         "landmark_count",
-        "phase_3_area_sqm"
+        "phase_3_area_sqm",
+        "capacity_return_node_count",
+        "human_journey_count",
+        "protocol_interface_entity_count",
+        "protocol_street_room_count",
+        "flagship_first_use_procurement_count",
+        "flagship_implementation_plan_coverage_ratio",
+        "flagship_lifecycle_gate_coverage_ratio",
+        "flagship_market_diffusion_adoption_count",
+        "flagship_pilot_count",
+        "flagship_published_standard_output_count",
+        "flagship_scenario_bundle_coverage_ratio",
+        "flagship_verified_public_benefit_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -874,22 +1216,35 @@
         "A-KEYAREA-001",
         "A-EXISTING-001",
         "A-TRANSPORT-001",
-        "A-OPERATIONS-001"
+        "A-OPERATIONS-001",
+        "A-PROTOCOL-PROTOTYPE-001",
+        "A-FLAGSHIP-FP04"
       ],
       "self_check_ids": [
-        "KEY_AREAS_PROVISIONAL_VALID",
-        "LANDMARK_COUNT",
-        "ROAD_INSIDE_SITE",
-        "PHASING_STAGE_SEMANTICS"
+        "DETERMINISTIC_VALIDATION",
+        "PROFESSIONAL_EVIDENCE",
+        "SPATIAL_REVIEW",
+        "VISUAL_PACKAGING"
       ],
-      "evidence_summary_zh": "大钟寺以商业服务、文化展示、公共绿廊、城市客厅和LIVE场景回应智能原生消费与国际交往，站城工程仍待专业核验。",
+      "evidence_summary_zh": "大钟寺以LIVE & MARKET角色、商业服务、文化展示、公共绿廊、城市客厅和FP04日常市场回应智能原生消费与国际交往，站城工程仍待专业核验；大钟寺以协议回程室、I6/I7原型、小店AI争议补救旅程及LIVE能力返还台连接商业服务与公共记忆；FP04大钟寺AI日常市场将S11真实小店服务与S12公众议事合并为LIVE_MARKET消费与责任验证。",
       "geojson_feature_ids": [
         "PROV-KEY-003",
         "SCENARIO-S09",
         "SCENARIO-S11",
         "SCENARIO-S12",
         "BLDG-LIVE-001",
-        "BLDG-LIVE-002"
+        "BLDG-LIVE-002",
+        "INTERFACE-I6",
+        "INTERFACE-I7",
+        "JOURNEY-J02",
+        "RETURN-LIVE-001",
+        "ROOM-LIVE-001",
+        "GREEN-LIVE-001",
+        "LU-LIVE-02",
+        "LU-LIVE-04",
+        "PUBLIC-LIVE-001",
+        "PUBLIC-LIVE-002",
+        "ROAD-LIVE-001"
       ]
     },
     {
@@ -905,14 +1260,30 @@
         "geometry/key_areas.geojson",
         "geometry/land_use.geojson",
         "geometry/public_space.geojson",
-        "geometry/phasing.geojson"
+        "geometry/phasing.geojson",
+        "geometry/buildings.geojson",
+        "geometry/green_space.geojson",
+        "geometry/roads.geojson"
       ],
       "metrics": [
         "key_area_count",
         "protocol_interface_count",
         "landmark_count",
         "phase_count",
-        "phase_coverage_ratio"
+        "phase_coverage_ratio",
+        "protocol_interface_entity_count",
+        "protocol_interface_entity_coverage_ratio",
+        "protocol_street_room_count",
+        "flagship_first_use_procurement_count",
+        "flagship_implementation_plan_coverage_ratio",
+        "flagship_lifecycle_gate_coverage_ratio",
+        "flagship_market_diffusion_adoption_count",
+        "flagship_pilot_count",
+        "flagship_published_standard_output_count",
+        "flagship_scenario_bundle_coverage_ratio",
+        "flagship_verified_public_benefit_count",
+        "network_role_anchor_count",
+        "network_role_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -929,15 +1300,69 @@
       ],
       "assumption_ids": [
         "A-KEYAREA-001",
-        "A-OPERATIONS-001"
+        "A-OPERATIONS-001",
+        "A-PROTOCOL-PROTOTYPE-001",
+        "A-FLAGSHIP-FP01",
+        "A-FLAGSHIP-FP02",
+        "A-FLAGSHIP-FP03",
+        "A-FLAGSHIP-FP04",
+        "A-FLAGSHIP-FP05",
+        "A-METRICS-001",
+        "A-SCENARIO-LOCATION-001"
       ],
       "self_check_ids": [
-        "KEY_AREAS_PROVISIONAL_VALID",
-        "PROTOCOL_INTERFACE_COUNT",
-        "LANDMARK_COUNT",
-        "PHASING_TOPOLOGY"
+        "DETERMINISTIC_VALIDATION",
+        "PROFESSIONAL_EVIDENCE",
+        "SPATIAL_REVIEW",
+        "VISUAL_PACKAGING"
       ],
-      "evidence_summary_zh": "京张协议名称、BUILD—TEST—LIVE—LEARN/UPDATE结构、七类接口与三区两翼空间索引共同构成总体概念，而非另设法定分区。"
+      "evidence_summary_zh": "‘京张，再次开路’以六节点网络和五旗舰试点统筹三区两翼，AI City API、城市公约、人工接管与七接口仅构成次级可信运行层；北纬社区、未来科学城、怀柔科学城、经开区和京津冀均为概念协作接口，不表示已确认合作、项目或空间边界；三间街室和I1-I7实体节点作为次级可信运行证据，为六节点网络和五旗舰提供可核验但非官方的责任接口；SOURCE、STACK、PROVE、LIVE_MARKET、ENABLE、COMMONS六节点由六个唯一几何锚点组织，五旗舰负责实施转化，可信运行层保持次级支撑；六角色各有且仅有一个临时几何锚点；北纬社区、未来科学城、怀柔科学城、经开区和京津冀只作为概念协作接口。",
+      "geojson_feature_ids": [
+        "INTERFACE-I1",
+        "INTERFACE-I2",
+        "INTERFACE-I3",
+        "INTERFACE-I4",
+        "INTERFACE-I5",
+        "INTERFACE-I6",
+        "INTERFACE-I7",
+        "ROOM-BUILD-001",
+        "ROOM-LIVE-001",
+        "ROOM-TEST-001",
+        "BLDG-BUILD-001",
+        "BLDG-TEST-001",
+        "GREEN-BUILD-001",
+        "GREEN-LIVE-001",
+        "GREEN-TEST-001",
+        "LU-BUILD-01",
+        "LU-LIVE-02",
+        "LU-LIVE-04",
+        "LU-TEST-01",
+        "LU-TEST-02",
+        "LU-TEST-04",
+        "PUBLIC-BUILD-001",
+        "PUBLIC-BUILD-002",
+        "PUBLIC-LIVE-001",
+        "PUBLIC-LIVE-002",
+        "PUBLIC-TEST-001",
+        "PUBLIC-TEST-002",
+        "ROAD-BUILD-001",
+        "ROAD-INTERFACE-001",
+        "ROAD-LIVE-001",
+        "ROAD-SPINE-001",
+        "ROAD-TEST-001",
+        "SCENARIO-S01",
+        "SCENARIO-S02",
+        "SCENARIO-S03",
+        "SCENARIO-S04",
+        "SCENARIO-S05",
+        "SCENARIO-S06",
+        "SCENARIO-S07",
+        "SCENARIO-S08",
+        "SCENARIO-S09",
+        "SCENARIO-S10",
+        "SCENARIO-S11",
+        "SCENARIO-S12"
+      ]
     },
     {
       "requirement_id": "agent.2",
@@ -950,7 +1375,11 @@
       "geojson_layers": [
         "geometry/land_use.geojson",
         "geometry/public_space.geojson",
-        "geometry/key_areas.geojson"
+        "geometry/key_areas.geojson",
+        "geometry/buildings.geojson",
+        "geometry/green_space.geojson",
+        "geometry/phasing.geojson",
+        "geometry/roads.geojson"
       ],
       "metrics": [
         "global_case_group_count",
@@ -958,7 +1387,15 @@
         "land_use_05_area_sqm",
         "scenario_node_count",
         "industry_validation_scenario_count",
-        "protocol_interface_count"
+        "protocol_interface_count",
+        "flagship_first_use_procurement_count",
+        "flagship_implementation_plan_coverage_ratio",
+        "flagship_lifecycle_gate_coverage_ratio",
+        "flagship_market_diffusion_adoption_count",
+        "flagship_pilot_count",
+        "flagship_published_standard_output_count",
+        "flagship_scenario_bundle_coverage_ratio",
+        "flagship_verified_public_benefit_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -982,14 +1419,24 @@
       "assumption_ids": [
         "A-KEYAREA-001",
         "A-OPERATIONS-001",
-        "A-METRICS-001"
+        "A-METRICS-001",
+        "A-FLAGSHIP-FP02"
       ],
       "self_check_ids": [
-        "CASE_PORTFOLIO_COUNT",
-        "INDUSTRY_TEST_COUNT",
-        "SCENARIO_PROTOCOL_INTERFACE_COVERAGE"
+        "DETERMINISTIC_VALIDATION",
+        "PROFESSIONAL_EVIDENCE",
+        "SPATIAL_REVIEW",
+        "VISUAL_PACKAGING"
       ],
-      "evidence_summary_zh": "六组案例、科研与产业服务空间、三项验证场景和公共协议接口构成全栈生态证据；案例只转译机制，不复制境外绩效。"
+      "evidence_summary_zh": "六组案例、科研与产业服务空间、三项验证场景和公共协议接口构成全栈生态证据；案例只转译机制，不复制境外绩效；FP02把全栈安全、算力和能耗约束纳入同一开放试验庭，并以独立复核决定是否进入首用。",
+      "geojson_feature_ids": [
+        "BLDG-BUILD-001",
+        "LU-BUILD-01",
+        "ROAD-INTERFACE-001",
+        "ROAD-SPINE-001",
+        "SCENARIO-S01",
+        "SCENARIO-S10"
+      ]
     },
     {
       "requirement_id": "agent.3",
@@ -1004,7 +1451,9 @@
         "geometry/public_space.geojson",
         "geometry/roads.geojson",
         "geometry/green_space.geojson",
-        "geometry/phasing.geojson"
+        "geometry/phasing.geojson",
+        "geometry/buildings.geojson",
+        "geometry/land_use.geojson"
       ],
       "metrics": [
         "scenario_node_count",
@@ -1015,7 +1464,21 @@
         "scenario_phase_assignment_coverage_ratio",
         "protocol_interface_count",
         "public_space_ratio",
-        "green_ratio"
+        "green_ratio",
+        "capacity_return_node_count",
+        "human_journey_count",
+        "protocol_interface_entity_count",
+        "protocol_interface_entity_coverage_ratio",
+        "protocol_street_room_count",
+        "return_ticket_reference_coverage_ratio",
+        "flagship_first_use_procurement_count",
+        "flagship_implementation_plan_coverage_ratio",
+        "flagship_lifecycle_gate_coverage_ratio",
+        "flagship_market_diffusion_adoption_count",
+        "flagship_pilot_count",
+        "flagship_published_standard_output_count",
+        "flagship_scenario_bundle_coverage_ratio",
+        "flagship_verified_public_benefit_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -1038,17 +1501,20 @@
         "A-SCENARIO-LOCATION-001",
         "A-PHASING-001",
         "A-OPERATIONS-001",
-        "A-TRANSPORT-001"
+        "A-TRANSPORT-001",
+        "A-PROTOCOL-PROTOTYPE-001",
+        "A-FLAGSHIP-FP01",
+        "A-FLAGSHIP-FP02",
+        "A-FLAGSHIP-FP03",
+        "A-FLAGSHIP-FP04"
       ],
       "self_check_ids": [
-        "SCENARIO_NODE_COUNT",
-        "INDUSTRY_TEST_COUNT",
-        "PERSONA_COUNT",
-        "SCENARIO_SPATIAL_ASSIGNMENT_COVERAGE",
-        "SCENARIO_PHASE_ASSIGNMENT_COVERAGE",
-        "SCENARIO_HUMAN_AUTHORITY_INTERFACE_COVERAGE"
+        "DETERMINISTIC_VALIDATION",
+        "PROFESSIONAL_EVIDENCE",
+        "SPATIAL_REVIEW",
+        "VISUAL_PACKAGING"
       ],
-      "evidence_summary_zh": "12个场景点、3个产业验证场景、25个去重测试角色和I1—I7最低公共接口提供场景—空间—治理闭环。",
+      "evidence_summary_zh": "12个场景点、3个产业验证场景、25个去重测试角色和I1—I7最低公共接口提供场景—空间—治理闭环；可信运行层将12个应用场景与街室、接口、三条人物旅程及Return Ticket形成双向可解析关系，辅助节点不计入应用场景总数；FP01至FP04逐一覆盖S01-S08及S10-S12，S09由公共证据层承接，12场景无遗漏且无重复。",
       "geojson_feature_ids": [
         "SCENARIO-S01",
         "SCENARIO-S02",
@@ -1061,7 +1527,44 @@
         "SCENARIO-S09",
         "SCENARIO-S10",
         "SCENARIO-S11",
-        "SCENARIO-S12"
+        "SCENARIO-S12",
+        "INTERFACE-I1",
+        "INTERFACE-I2",
+        "INTERFACE-I3",
+        "INTERFACE-I4",
+        "INTERFACE-I5",
+        "INTERFACE-I6",
+        "INTERFACE-I7",
+        "JOURNEY-J01",
+        "JOURNEY-J02",
+        "JOURNEY-J03",
+        "RETURN-BUILD-001",
+        "RETURN-LIVE-001",
+        "RETURN-TEST-001",
+        "ROOM-BUILD-001",
+        "ROOM-LIVE-001",
+        "ROOM-TEST-001",
+        "BLDG-BUILD-001",
+        "BLDG-TEST-001",
+        "GREEN-BUILD-001",
+        "GREEN-LIVE-001",
+        "GREEN-TEST-001",
+        "LU-BUILD-01",
+        "LU-LIVE-02",
+        "LU-LIVE-04",
+        "LU-TEST-01",
+        "LU-TEST-02",
+        "LU-TEST-04",
+        "PUBLIC-BUILD-001",
+        "PUBLIC-LIVE-001",
+        "PUBLIC-LIVE-002",
+        "PUBLIC-TEST-001",
+        "PUBLIC-TEST-002",
+        "ROAD-BUILD-001",
+        "ROAD-INTERFACE-001",
+        "ROAD-LIVE-001",
+        "ROAD-SPINE-001",
+        "ROAD-TEST-001"
       ]
     },
     {
@@ -1083,7 +1586,11 @@
         "public_space_ratio",
         "green_space_area_sqm",
         "green_ratio",
-        "landmark_count"
+        "landmark_count",
+        "human_journey_count",
+        "protocol_interface_entity_count",
+        "protocol_interface_entity_coverage_ratio",
+        "protocol_street_room_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -1101,22 +1608,36 @@
       "assumption_ids": [
         "A-KEYAREA-001",
         "A-HERITAGE-001",
-        "A-EXISTING-001"
+        "A-EXISTING-001",
+        "A-PROTOCOL-PROTOTYPE-001"
       ],
       "self_check_ids": [
-        "BLUEGREEN_INSIDE_SITE",
-        "LANDMARK_COUNT",
-        "HERITAGE_LIMIT_DISCLOSED",
-        "BUILDING_LANDUSE_COMPATIBILITY"
+        "DETERMINISTIC_VALIDATION",
+        "PROFESSIONAL_EVIDENCE",
+        "SPATIAL_REVIEW",
+        "VISUAL_PACKAGING"
       ],
-      "evidence_summary_zh": "六处公共空间原型与三处地标连接协议解释、测试展示和贡献记忆；建筑方式、位置和文保关系仍待深化。",
+      "evidence_summary_zh": "六处公共空间原型与三处地标连接协议解释、测试展示和贡献记忆；建筑方式、位置和文保关系仍待深化；协议制票室、验票室和回程室作为既有公共空间的非加总子空间，并由三条概念人物旅程检验公共权利界面。",
       "geojson_feature_ids": [
         "PUBLIC-BUILD-001",
         "PUBLIC-TEST-001",
         "PUBLIC-LIVE-001",
         "SCENARIO-S02",
         "SCENARIO-S04",
-        "SCENARIO-S12"
+        "SCENARIO-S12",
+        "INTERFACE-I1",
+        "INTERFACE-I2",
+        "INTERFACE-I3",
+        "INTERFACE-I4",
+        "INTERFACE-I5",
+        "INTERFACE-I6",
+        "INTERFACE-I7",
+        "JOURNEY-J01",
+        "JOURNEY-J02",
+        "JOURNEY-J03",
+        "ROOM-BUILD-001",
+        "ROOM-LIVE-001",
+        "ROOM-TEST-001"
       ]
     },
     {
@@ -1130,13 +1651,25 @@
       ],
       "geojson_layers": [
         "geometry/public_space.geojson",
-        "geometry/green_space.geojson"
+        "geometry/green_space.geojson",
+        "geometry/buildings.geojson",
+        "geometry/land_use.geojson",
+        "geometry/phasing.geojson",
+        "geometry/roads.geojson"
       ],
       "metrics": [
         "landmark_count",
         "public_space_area_sqm",
         "green_space_area_sqm",
-        "scenario_node_count"
+        "scenario_node_count",
+        "flagship_first_use_procurement_count",
+        "flagship_implementation_plan_coverage_ratio",
+        "flagship_lifecycle_gate_coverage_ratio",
+        "flagship_market_diffusion_adoption_count",
+        "flagship_pilot_count",
+        "flagship_published_standard_output_count",
+        "flagship_scenario_bundle_coverage_ratio",
+        "flagship_verified_public_benefit_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -1155,18 +1688,25 @@
       ],
       "assumption_ids": [
         "A-HERITAGE-001",
-        "A-KEYAREA-001"
+        "A-KEYAREA-001",
+        "A-FLAGSHIP-FP05"
       ],
       "self_check_ids": [
-        "HERITAGE_LIMIT_DISCLOSED",
-        "LANDMARK_COUNT",
-        "SCENARIO_NODE_COUNT"
+        "DETERMINISTIC_VALIDATION",
+        "PROFESSIONAL_EVIDENCE",
+        "SPATIAL_REVIEW",
+        "VISUAL_PACKAGING"
       ],
-      "evidence_summary_zh": "铁路自主工程史、遗址公园公共性、协议版本记忆与三处地标形成文化叙事；设计命题与史料原句保持区分。",
+      "evidence_summary_zh": "铁路自主工程史、遗址公园公共性、协议版本记忆与三处地标形成文化叙事；设计命题与史料原句保持区分；FP05用权利清晰、可纠错、可无手机访问的证据路线连接京张遗产叙事与当代AI试验。",
       "geojson_feature_ids": [
         "SCENARIO-S09",
         "SCENARIO-S12",
-        "PUBLIC-LIVE-001"
+        "PUBLIC-LIVE-001",
+        "GREEN-LIVE-001",
+        "LU-LIVE-02",
+        "PUBLIC-BUILD-002",
+        "PUBLIC-TEST-002",
+        "ROAD-SPINE-001"
       ]
     },
     {
@@ -1180,7 +1720,11 @@
       ],
       "geojson_layers": [
         "geometry/phasing.geojson",
-        "geometry/public_space.geojson"
+        "geometry/public_space.geojson",
+        "geometry/buildings.geojson",
+        "geometry/green_space.geojson",
+        "geometry/land_use.geojson",
+        "geometry/roads.geojson"
       ],
       "metrics": [
         "phase_count",
@@ -1190,7 +1734,18 @@
         "phase_coverage_ratio",
         "scenario_node_count",
         "protocol_interface_count",
-        "renewal_project_count"
+        "renewal_project_count",
+        "capacity_return_node_count",
+        "human_journey_count",
+        "return_ticket_reference_coverage_ratio",
+        "flagship_first_use_procurement_count",
+        "flagship_implementation_plan_coverage_ratio",
+        "flagship_lifecycle_gate_coverage_ratio",
+        "flagship_market_diffusion_adoption_count",
+        "flagship_pilot_count",
+        "flagship_published_standard_output_count",
+        "flagship_scenario_bundle_coverage_ratio",
+        "flagship_verified_public_benefit_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -1210,20 +1765,65 @@
       "assumption_ids": [
         "A-PHASING-001",
         "A-OPERATIONS-001",
-        "A-BOUNDARY-001"
+        "A-BOUNDARY-001",
+        "A-PROTOCOL-PROTOTYPE-001",
+        "A-FLAGSHIP-FP01",
+        "A-FLAGSHIP-FP02",
+        "A-FLAGSHIP-FP03",
+        "A-FLAGSHIP-FP04",
+        "A-FLAGSHIP-FP05"
       ],
       "self_check_ids": [
-        "PHASING_TOPOLOGY",
-        "PHASING_STAGE_SEMANTICS",
-        "SCENARIO_PHASE_ASSIGNMENT_COVERAGE",
-        "PROTOCOL_INTERFACE_COUNT"
+        "DETERMINISTIC_VALIDATION",
+        "PROFESSIONAL_EVIDENCE",
+        "SPATIAL_REVIEW",
+        "VISUAL_PACKAGING"
       ],
-      "evidence_summary_zh": "季度开放、半年审查、年度大会和持续版本日志通过场景及分期空间承载；活动、预算、主体和时序均为概念机制。",
+      "evidence_summary_zh": "季度开放、半年审查、年度大会和持续版本日志通过场景及分期空间承载；活动、预算、主体和时序均为概念机制；三条旅程和三处能力返还台把长期运营的暂停、补救、退役及公共能力返还写成引用完整的概念登记，不声称已经兑现；每项试点以90日go/revise/stop记录进入一年评估，未验证采购、扩散、标准和公共收益继续保持unknown。",
       "geojson_feature_ids": [
         "PHASE-001",
         "PHASE-002",
         "PHASE-003",
-        "SCENARIO-S12"
+        "SCENARIO-S12",
+        "JOURNEY-J01",
+        "JOURNEY-J02",
+        "JOURNEY-J03",
+        "RETURN-BUILD-001",
+        "RETURN-LIVE-001",
+        "RETURN-TEST-001",
+        "BLDG-BUILD-001",
+        "BLDG-TEST-001",
+        "GREEN-BUILD-001",
+        "GREEN-LIVE-001",
+        "GREEN-TEST-001",
+        "LU-BUILD-01",
+        "LU-LIVE-02",
+        "LU-LIVE-04",
+        "LU-TEST-01",
+        "LU-TEST-02",
+        "LU-TEST-04",
+        "PUBLIC-BUILD-001",
+        "PUBLIC-BUILD-002",
+        "PUBLIC-LIVE-001",
+        "PUBLIC-LIVE-002",
+        "PUBLIC-TEST-001",
+        "PUBLIC-TEST-002",
+        "ROAD-BUILD-001",
+        "ROAD-INTERFACE-001",
+        "ROAD-LIVE-001",
+        "ROAD-SPINE-001",
+        "ROAD-TEST-001",
+        "SCENARIO-S01",
+        "SCENARIO-S02",
+        "SCENARIO-S03",
+        "SCENARIO-S04",
+        "SCENARIO-S05",
+        "SCENARIO-S06",
+        "SCENARIO-S07",
+        "SCENARIO-S08",
+        "SCENARIO-S09",
+        "SCENARIO-S10",
+        "SCENARIO-S11"
       ]
     }
   ]

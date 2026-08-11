@@ -13,7 +13,8 @@
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
-        "visual/assets/review-evidence-map.json"
+        "visual/assets/review-evidence-map.json",
+        "risk.json"
       ],
       "geometry_refs": [
         "geometry/site_boundary.geojson#SITE-001",
@@ -24,18 +25,23 @@
         "site_area_sqm",
         "floor_area_ratio",
         "average_building_height_m",
-        "demolition_area_sqm"
+        "demolition_area_sqm",
+        "listed_existing_park_open_hours_per_week"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
         "SITE-PACKAGE",
         "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK"
+        "PROCESSED-FACT-PACK",
+        "OFFICIAL-PARK-PLAN-2021",
+        "OFFICIAL-PARK-PHASE1-2023"
       ],
       "assumption_ids": [
         "A-BOUNDARY-001",
         "A-CONTROLS-001",
-        "A-BUILDING-001"
+        "A-BUILDING-001",
+        "A-EXISTING-PARK-001",
+        "A-OSM-DISCREPANCY-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -96,7 +102,8 @@
       ],
       "drawing_refs": [
         "drawings/a0-boards.pdf",
-        "visual/assets/first-168h.json"
+        "visual/assets/first-168h.json",
+        "visual/assets/station-prototypes.json"
       ],
       "geometry_refs": [
         "geometry/site_boundary.geojson#SITE-001",
@@ -109,7 +116,8 @@
         "time_ribbon_length_m",
         "crosslink_count",
         "temporal_zone_count",
-        "time_component_count"
+        "time_component_count",
+        "station_prototype_count"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
@@ -414,7 +422,9 @@
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf",
-        "visual/assets/scenario-cards.json"
+        "visual/assets/scenario-cards.json",
+        "visual/assets/station-prototypes.json",
+        "visual/assets/civic-timetable.json"
       ],
       "geometry_refs": [
         "geometry/key_areas.geojson#PROV-KEY-001",
@@ -426,17 +436,23 @@
         "key_area_count",
         "scenario_card_count",
         "landmark_count",
-        "renewal_project_count"
+        "renewal_project_count",
+        "station_prototype_count",
+        "scheduled_ai_service_contract_count"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
         "KEY-AREA-SOURCE",
-        "AGENT-TASKBOOK"
+        "AGENT-TASKBOOK",
+        "OFFICIAL-ZHONGZHI-RENEWAL-2026",
+        "OFFICIAL-AI-ORIGIN-2026",
+        "OFFICIAL-DAZHONGSI-RENEWAL-2026"
       ],
       "assumption_ids": [
         "A-BOUNDARY-001",
         "A-CONTROLS-001",
-        "A-AI-001"
+        "A-AI-001",
+        "A-LOCATOR-001"
       ],
       "self_check_ids": [
         "KEY_AREAS_TRUST",
@@ -497,7 +513,9 @@
         "drawings/a3-booklet.pdf",
         "visual/assets/first-168h.json",
         "visual/assets/implementation-gates.json",
-        "visual/assets/state-machine.json"
+        "visual/assets/state-machine.json",
+        "visual/assets/civic-timetable.json",
+        "visual/assets/timetable-tabletop-evidence.json"
       ],
       "geometry_refs": [
         "geometry/phasing.geojson#PHASE-01",
@@ -509,7 +527,10 @@
         "first_168h_stage_count",
         "schedule_state_count",
         "project_maturity_gate_count",
-        "scenario_admission_gate_count"
+        "scenario_admission_gate_count",
+        "tabletop_case_count",
+        "contract_stop_reset_coverage_ratio",
+        "field_service_success_ratio"
       ],
       "source_ids": [
         "AGENT-TASKBOOK",
@@ -518,7 +539,8 @@
       "assumption_ids": [
         "A-TIME-001",
         "A-CONTROLS-001",
-        "A-DELIVERY-001"
+        "A-DELIVERY-001",
+        "A-TABLETOP-001"
       ],
       "self_check_ids": [
         "VISUAL_STATIC",
@@ -538,7 +560,8 @@
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
-        "visual/assets/review-evidence-map.json"
+        "visual/assets/review-evidence-map.json",
+        "visual/assets/timetable-tabletop-evidence.json"
       ],
       "geometry_refs": [
         "geometry/site_boundary.geojson#SITE-001",
@@ -555,7 +578,11 @@
         "public_space_weekly_sqm_hours",
         "floor_area_ratio",
         "average_building_height_m",
-        "demolition_area_sqm"
+        "demolition_area_sqm",
+        "scheduled_ai_service_contract_count",
+        "tabletop_case_count",
+        "real_personal_data_used_in_tabletop",
+        "field_service_success_ratio"
       ],
       "source_ids": [
         "BOUNDARY-SOURCE",
@@ -565,7 +592,8 @@
       "assumption_ids": [
         "A-BOUNDARY-001",
         "A-TIME-001",
-        "A-BUILDING-001"
+        "A-BUILDING-001",
+        "A-TABLETOP-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -589,7 +617,9 @@
         "drawings/a3-booklet.pdf",
         "visual/assets/review-evidence-map.json",
         "visual/assets/implementation-gates.json",
-        "visual/assets/governance-raci.json"
+        "visual/assets/governance-raci.json",
+        "risk.json",
+        "visual/assets/civic-timetable.json"
       ],
       "geometry_refs": [
         "geometry/constraints.geojson#TC-01-WEEK-BOARD",
@@ -599,12 +629,14 @@
       "metric_refs": [
         "project_maturity_gate_count",
         "scenario_admission_gate_count",
-        "governance_role_count"
+        "governance_role_count",
+        "field_service_success_ratio"
       ],
       "source_ids": [
         "SOURCE-REGISTRY",
         "SITE-PACKAGE",
-        "AGENT-TASKBOOK"
+        "AGENT-TASKBOOK",
+        "OFFICIAL-PIPL"
       ],
       "assumption_ids": [
         "A-BOUNDARY-001",
@@ -612,7 +644,9 @@
         "A-BUILDING-001",
         "A-TIME-001",
         "A-AI-001",
-        "A-DELIVERY-001"
+        "A-DELIVERY-001",
+        "A-TABLETOP-001",
+        "A-OSM-DISCREPANCY-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",

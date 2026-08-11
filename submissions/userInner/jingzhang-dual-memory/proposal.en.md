@@ -4,6 +4,7 @@ author_github: "userInner"
 language: "en"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
+iteration: "v2.0"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "A human-directed AI urban corridor where public memory accumulates, personal data can expire, and the benefits of innovation are shared."
@@ -12,6 +13,16 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 ---
 
 # DOUBLE MEMORY JINGZHANG
+
+> **v2.0 thesis:** Urban design should deliver more than spatial images. Every public-AI component receives a “Memory Boundary Passport” stating its spatial envelope, accountable roles, permitted data, expiry period, human takeover, ordinary equivalent service, release evidence, and exit decision. The three key areas therefore become reviewable 180-day pilot contracts. Every result remains `design_target / not_run`; none is presented as field performance or a government commitment.
+
+| Review dimension | Material v2.0 advance | Verification entry |
+| --- | --- | --- |
+| Alignment and originality | “Public-memory spine + Memory Boundary Passport + forgetfulness budget” combines Jing-Zhang history, human autonomy, and space into a distinct method | this page; `memory-boundary-passports.json` |
+| AI-planning innovation | AI becomes a civic service constrained by D0–D4 data classes, deletion receipts, physical stops, and independent review | `forgetfulness-budget.json`; offline audit |
+| Feasibility | Three reversible prototypes now have dimensions, cost bands, RACI, permit dependencies, 0–180-day gates, and reinstatement rules | `implementation-contract.json` |
+| Public interest | Six personas are tested route by route; a weak group cannot be hidden by an average | `public-interest-route-tests.json` |
+| Risk and expression | Provisional, unknown, and not-run states stay explicit; the new section-perspective and passports connect space, operation, data, and rights | new perspective; manifest; self-check |
 
 ## Design Basis and Source List
 
@@ -81,6 +92,18 @@ The building layer contains 310,807.184 square metres of conceptual renewal foot
 
 One legible field language unifies the gradients: white dots mean free passage, blue pulses mean anonymous assistance, and amber frames mean an active trial. Green, yellow, and red states mean normal, restricted, and stopped.
 
+![Three-zone consent section-perspective: no-AI passage, anonymous assistance and controlled testing retain staffed control and a continuous bypass](assets/renders/05-consent-section-perspective-v2.png)
+
+v2.0 turns the abstract gradient into a 60 m × 14 m prototype envelope that can be recalibrated on site: a 4.0 m continuous no-AI walk, 2.5 m anonymous-assist strip, 5.0 m controlled test court, and 2.5 m planted safety buffer. These are functional tests rather than parcel controls; accessible clear width must never fall below 1.8 m. Sensors remain visible, the edge cabinet can be disconnected, the court has a physical emergency stop and staffed controller, and the public bypass never crosses the test area. Full construction, responsibility, data, and stop conditions are in `visual/assets/memory-boundary-passports.json`. [depth:traffic_rail_slow_parking]
+
+### Memory Boundary Passports and the forgetfulness budget
+
+Each passport answers eight questions: where, how large, who is responsible, what is recorded, how long it remains, how ordinary service continues, what stops the system, and what evidence supports retention, revision, or retirement. All three passports currently remain `hold`. They may enter `limited_release` only when responsibility, an ordinary equivalent route, data notice, emergency takeover, complaint/deletion channels, and an independent accessibility walk-through are evidenced.
+
+The forgetfulness budget defines D0–D4 data classes: ordinary anonymous use collects nothing; aggregate environment data lasts at most 90 days; voluntary service sessions 0–7 days; controlled test events 30 days; and rights-cleared public contributions follow an explicit archival term and remain withdrawable. Public memory may accumulate only with clear rights, while personal traces expire by default. Any undeclared field, failed expiry job, or unverifiable deletion receipt freezes collection and restores ordinary service. See `visual/assets/forgetfulness-budget.json`. [source:PIPL]
+
+![Memory Boundary Passport system: public memory remains correctable while personal data expires under a forgetfulness budget](assets/figures/memory-passport-system.en.png)
+
 ## Detailed Design of Key Areas
 
 ![Three human-directed urban laboratories](assets/figures/key-areas.en.png)
@@ -130,6 +153,8 @@ Twelve scenarios form service-data-human-fallback loops:
 
 Every scenario registers operator, user, data, retention, human fallback, stop condition, and post-trial evidence. Scenarios 03, 04, 05, 10, and 11 are auditable industrial test-and-validation cases. [source:PIPL] [source:CAC-AGENT-GOVERNANCE]
 
+v2.0 adds route tests rather than relying on persona descriptions. An older resident without a smartphone, wheelchair user, blind-cane or guide-dog user, parent with a child, night-shift service worker, and visitor with limited Chinese must each complete passage, comprehension, human takeover, and complaint tasks. Ordinary-route completion and human-takeover success must be 100%; critical-information comprehension at least 80%; no group may retain an unresolved critical issue. Failure means `HOLD`. These are release thresholds, not current performance; status is `not_run`. See `visual/assets/public-interest-route-tests.json`.
+
 Three pilgrimage landmarks are useful governance interfaces rather than monuments: the Shared Memory Platform at Qinghuayuan, the Public AI Register Tower at the AI Origin Community, and the Red-Light Trial Court at Zhongzhiyuan. Their value lies in public rules, not spectacle. [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]
 
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
@@ -156,6 +181,12 @@ The visual language combines the railway’s legible construction, Zhongguancun�
 
 ## Renewal Projects, Implementation Policy, and Phasing
 
+### Minimum 0–180-day delivery contract
+
+Delivery begins with facts and ordinary service, not AI procurement. Days 0–30 lock geometry, ownership, responsibility, and field baselines. Days 31–60 first deliver the accessible bypass, paper signs, staffed service, shade, seating, and drinking water. Days 61–90 may add reversible zones, edge cabinet, physical stop, and audit record. Days 91–120 permit no more than 20 staffed windows while logging positive, negative, near-miss, complaint, and deletion evidence. Days 121–180 end with an independent retain, revise, or retire decision.
+
+The concept cost band for three prototypes, baseline work, operation, and contingency is CNY 7.5–13.5 million. At least 30% of first-stage spending supports ordinary public service and accessibility; AI hardware remains below 25% before G3; 10% contingency is held until independent review. This compares implementation magnitude and is not an approved investment. Missing official geometry, ownership, heritage, fire, transport, utilities, tree/soil, data-impact, insurance, or maintenance evidence stops the relevant gate. Full RACI and reinstatement rules are in `visual/assets/implementation-contract.json`. [depth:phasing_implementation]
+
 | ID | Project | First action | Condition before expansion |
 | --- | --- | --- | --- |
 | DM-01 | Public-memory spine | Oral history, account-free signs, rest points | Heritage and field review |
@@ -178,6 +209,8 @@ Operation uses four ledgers: system registration, personal authorisation, public
 Known metrics come only from submitted geometry or countable schedules: provisional boundary area, three key areas, building footprints, green and public-space ratios, twelve scenarios, six personas, and eight renewal projects. FAR, height, road redlines, utility capacity, investment, and programme remain pending. metrics.json retains formulas and source files; compliance_matrix.json maps announcement and agent.1-agent.6 requirements to sections, layers, drawings, sources, and checks. [depth:metrics_recalculation]
 
 The four rights have reviewable targets: all public AI systems disclose purpose, operator, data, and complaint route; every essential public service retains a non-AI equivalent; high-risk trials provide physical stop, human handoff, and a public response target; and each trial publishes cost, beneficiaries, saved resources, and reinvestment direction. Without field baselines, these remain targets and measurement protocols rather than achieved performance.
+
+The package includes a dependency-free structure audit: `node visual/assets/run-memory-passport-audit.js`. Its current `PASS` result proves only that all three passports contain responsibility, data, ordinary equivalence, stop, evidence, and `hold` fields, and that six personas and five forgetfulness classes are structurally present. It does not prove construction, system safety, public acceptance, or permission.
 
 ## Risk, Copyright, and Compliance
 

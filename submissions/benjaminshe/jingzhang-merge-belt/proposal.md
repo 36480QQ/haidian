@@ -16,6 +16,8 @@ scenarios: ["ai-traffic-walkability", "ai-cultural-guide", "enterprise-service-c
 > 口号:**之字前行,开源致远**。之字,是用最少的资源克服最陡的坡;开源,是让每一条支流的贡献汇入主线、留下名字。
 > 本案核心判断:未来城市的先进性,不取决于铺了多少传感器,而取决于**多少条支流愿意并能够汇入主线**——合流必须是选择,不是强制;合流必须可评审、可驳回、可回滚,并且**保留完整可用的支流**(人工、离线、无账户路径)。
 
+**合流带体系（本方案命名概念）**：把铁路“单线闭塞、会车让行、支线并入、站台交汇”的运行纪律转译为城市 AI 治理与公共空间运营协议——主线代表公共、慢行优先的城市日常；支线代表可被评审、可被拒绝、可被回滚的 AI 试验。三层机制相互咬合：**空间层**（三区两翼合流回路与六处合流节点广场）、**时间层**（合流时隙表：晨市/学市/夜市 + 安静时窗 [metric:quiet_hours_per_day] 小时）、**治理层**（合流协议六步 + 合流令牌 + 回程预算 + 贡献者阶梯）。差异化主张一句话：**合流是选择而非强制，支流不降级，回程有预算**——不是把 AI 塞进城市，而是让城市对 AI 说“可以，但有条件；不行，也有出口”。
+
 ## 设计依据与资料清单
 
 本方案以北京市规划和自然资源委员会海淀分局 2026-05-09 发布的《百年京张AI创新带城市设计国际方案征集资格预审公告》为第一依据 [source:OFFICIAL-ANNOUNCEMENT]，以仓库 `brief/site-package/` 中经维护者登记的临时粗略边界、重点区域、枚举、指标和来源清单为机器可读依据 [source:SITE-PACKAGE]。生成前已读取 `design_brief.json`、`allowed_design_space.json`、`agent_taskbook.json`、`sources.json`、`ranges/planning_limits.json`、`schemas/` 与 `data/source_registry.json`，并依据 `data/processed/` 的 `project_scope_summary.csv`、`agent_task_requirements.csv`、`source_use_matrix.csv`、`missing_data_checklist.csv` 建立任务、范围、资料用途与缺口清单。所有设计判断均拆分为可追溯来源、可复算指标、可校验图层和可人工复核假设。
@@ -28,9 +30,24 @@ scenarios: ["ai-traffic-walkability", "ai-cultural-guide", "enterprise-service-c
 
 ![资料证据链与提交包关系图](assets/figures/site-overview.png)
 
+## 任务响应矩阵（公告与任务书逐条回应）
+
+下表把仓库任务书 6 项智能体任务逐条映射到本方案的章节与证据，供评审快速核验 [standard:PROJECT-OFFICIAL-ANNOUNCEMENT][standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]：
+
+| 任务条目 | 本方案回应 | 证据位置 |
+| --- | --- | --- |
+| agent.1 一带总体概念与功能统筹 | “合流带”命名体系、Logo 方向、三大定位/五大功能/三区两翼合流回路、总体结构图；不含容积率/高度/拆改留等结论 | 摘要与三层范围章、`assets/figures/site-overview.png`、compliance_matrix |
+| agent.2 AI 全栈自主创新体系与世界级 AI 创新生态 | 6 个全球生态案例（机制借鉴非形式照搬）、上游开源释放—维护者转化—发行分发生态图谱、八类要素机制 | “AI 创新生态、人才画像与 AI+ 场景”章、compliance_matrix |
+| agent.3 AI+ 场景赋能新范式与智能化活力城市 | 16 张场景卡（≥10）、3 个产业测试验证场景、6 类用户画像、场景-空间-运营映射、隐私与人工复核边界 | 场景卡表与 [data:geometry/constraints.geojson#SCENE-01]、画像表 |
+| agent.4 AI 公共空间、智能原生新业态与朝圣地标 | 京张遗址公园 AI 公共空间、东西缝合南北贯通、大钟寺智能原生消费、4 个朝圣地标、荣誉展示体系与组件库 | 蓝绿/公共空间章、朝圣地标清单、`assets/figures/mobility-bluegreen.png` |
+| agent.5 百年京张文化、中关村文化与 AI 新文化叙事 | 铁路文脉—中关村创新—AI 新文化三层叙事、导视与符号系统、国际传播文案 | 文化叙事章、公共空间章 |
+| agent.6 一带全球 AI 创新活动体系与长期运营 | 年度活动体系（月度日志/季度动作/年度合流日）、开发者社区运营、场景开放运营、国际传播与招引转化 | “更新项目清单、实施政策与分期计划”章、metrics |
+
+上表逐条回应公告与任务书，来源链 [source:AGENT-TASKBOOK][source:OFFICIAL-ANNOUNCEMENT] 与仓库任务书原文对齐。
+
 ## 三层范围工作框架
 
-三层范围采用"**流域—主线—合流节点**"的递进，而非把一张总图按比例放大 [depth:three_level_scope_framework]：
+三层范围采用"**流域—主线—合流节点**"的递进，而非把一张总图按比例放大 [depth:overall_spatial_structure][depth:three_level_scope_framework]：
 
 - **统筹研究范围（43.6 km²，流域层）**：回答 AI 产业链、人才链、公共服务链与文化传播链在海淀如何发源、分流、汇合；明确三区两翼的合流回路与要素机制。
 - **总体设计范围（11.4 km²，主线层）**：以京张遗址走廊为**主线 Mainline**，把合流关系落到用地、慢行、蓝绿、更新与公共服务骨架；东西向支流在此并入主线，20 个用地分区完整覆盖 [data:geometry/land_use.geojson#LU-001]。
@@ -237,9 +254,24 @@ scenarios: ["ai-traffic-walkability", "ai-cultural-guide", "enterprise-service-c
 
 复算顺序（[depth:metrics_recalculation]）：先验证 site 与 key area 的来源角色 → 投影至 EPSG:4548 → 检查用地完整覆盖与重叠 → 对绿地、公共空间、建筑取 union 后面积 → 对中心线求长度 → 结果回写 metrics 与 HTML data attributes。边界面积约 11,412,825 平方米，置信度 medium，不写成精确官方统计。
 
+**官方数据重算流水线（可实施性承诺）**：全部面积、比例与图层指标由仓库内确定性脚本从 GeoJSON 复算（见 metrics.json 的 source_files/formula 与复算口径）。官方 `SITE_BOUNDARY`/`KEY_AREA` polygon 或控规条件一经发布，由同一脚本链一次性重算 land use、buildings、roads、green space、public space、phasing 与全部面积指标并整体替换，不手工改单个文件；重算结果随下一迭代提交，重新通过四关自检与评审。因此“组织方数据缺口”不转化为方案的可实施性损失，而转化为一条可执行的更新流水线。
+
 合规链由 `compliance_matrix.json` 覆盖公告 1.3、1.4、1.5 与 agent.1–agent.6 全部必选任务，`standard_matrix.json` 覆盖六项专业标准响应，`design_depth_matrix.json` 覆盖十五个专业深度项。评审可从正文任一结论回到 geometry、metrics、sources、assumptions、自检、A3 文册、A0 展板与离线 HTML，避免"只能看图、无法复核"。
 
 ![核心指标复算与证据链图](assets/figures/metrics-evidence.png)
+
+## 公共利益与包容性
+
+本方案对六类群体显式说明受益机制与包容性措施 [source:AGENT-TASKBOOK]：
+
+- **居民**：日常服务不依赖数字设备（支流不降级、安静时窗、人工替代），更新项目提供公共回执与申诉渠道；合流节点保留普通支付与人工服务台；
+- **青年人才**：贡献者阶梯（游客→贡献者→维护者→核心维护者）与人才服务场景（SCENE-04）、开源工坊（SCENE-14）、校企转化客厅（SCENE-06）承接成长路径；
+- **企业**：测试验证场景（SCENE-02/15）提供受控试验空间，合流申请与四类公共回执保障过程可预期、结果可申诉；
+- **高校**：上游开源释放—原点社区转化链条（agent.2）承接源头创新，开源课堂共建（SCENE-14）支持课程与实训；
+- **游客**：京张记忆线路（SCENE-09）与 4 处朝圣地标、双语导视与无障碍支流（SCENE-11）保障可及性；
+- **弱势群体**：无障碍支流优先、人工客服兜底、公共空间免费开放，高影响服务（健康/法律/公共安全）不由模型单独决定。
+
+包容性底线：任何 AI 服务的加入不得使既有公共服务的可及性下降（“支流不降级”原则），并接受维护者与公众复核；受益与影响数据进入年度合流日志公开审计 [depth:public_space_quality]。
 
 ## 风险、版权与合规说明
 

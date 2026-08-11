@@ -14,7 +14,7 @@
     "model_family": "gpt",
     "model_detail": "GPT-5"
   },
-  "generated_at": "2026-08-10T01:58:40Z",
+  "generated_at": "2026-08-11T01:54:57Z",
   "files": [
     {
       "path": "manifest.json",
@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "fbb6d7e07aeee27e934d374dad4d0dbb962a4fbbb6bef9fe7ac2a28bd2fc657f"
+      "sha256": "5a52553fcd77abf07721a5ac84aaf8752bc0bfd1cc875ea3d80c97d913e8becf"
     },
     {
       "path": "agent.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "80b71cb78d2c1581fc679eb561959ac515bc8a3ff6f76c74dcc2c4e20d49b72f"
+      "sha256": "cee0b867b5e135cd42d8635f906b91ba3c361db830b76a0478c890e0aee59f9c"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "cd54da768643dd6be23e9c6e9aa0edab4dcd570fea32edf45d5c7841403814c1"
+      "sha256": "fdf655cec42f9dcef5219d3601cab18e971be841aae398d7b23b4e0f83d936eb"
     },
     {
       "path": "report/narrative.md",
@@ -93,28 +93,28 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "a0399c07c69e1c20bc8765dbf13fe3c6d794d6b63c23d2f3e3d2c02aacdaab8f"
+      "sha256": "02f8932298919fe808376517981ef7076f1d9842fbe177b7f8b246aa04e3e3a5"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "c3ad2e1f97596943088d3bcad0fbe4e28c52b59690af07b5a2b1f148d77a3c5a"
+      "sha256": "62136adcb0b7260dc996ab9d1da59c5925870b1d9024958598af7ac23089d572"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "d5960e8ee5d7c3565a184aabb129b0319bfa88de1060a0e7bde4693436682650"
+      "sha256": "ed720debef32ddf0fedfdd15caeb89960571d24bff277b32ab56cacf1fc3658a"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "f7aea5ea9cb19f3a42f2e6eefec83b318237c93f9b50e027c03a57cd31937bc4"
+      "sha256": "88a79bd39793c45b15f46b02ef68a48db249e755ed95329ac82ef381113913c5"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -157,6 +157,62 @@
       "required": true,
       "language": "zh",
       "sha256": "b10b55dc34bc511fa751718646d907a544a0fe069c6b43588b64f39f2bbd2097"
+    },
+    {
+      "path": "assets/reference/1909-jingzhang-freight-car-public-domain.jpg",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "neutral",
+      "sha256": "1a33ae4edbb9bedd3ee08c6909892cf607c39441e93cc08efdc32c76ff295f4a"
+    },
+    {
+      "path": "assets/reference/2016-qinghuayuan-platform-cc-by-sa-4.jpg",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "neutral",
+      "sha256": "ac18be8a4af722aca0bc3d3285f7886a12d8e1938deb95b7a5a3fb79427bdbcc"
+    },
+    {
+      "path": "assets/reference/2024-qinghuayuan-renovated-cc-by-sa-4.jpg",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "neutral",
+      "sha256": "92f6b7d8b21a903b24d1f6c9add16c10a3ced783304284300a481f3900048d7a"
+    },
+    {
+      "path": "assets/renders/00-belt-aerial.jpg",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "neutral",
+      "sha256": "1338cd37b798571781eb445182daa62cb5e76a6d00a559326e898b0936045ff6"
+    },
+    {
+      "path": "assets/renders/01-qinghuayuan-memory-platform.jpg",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "neutral",
+      "sha256": "bd1d573ee2c48a08a311fde94230dbf8535a3a3a3d6a58f3f70c3f585e39ccd9"
+    },
+    {
+      "path": "assets/renders/02-zhongzhiyuan-red-light-court.jpg",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "neutral",
+      "sha256": "106e15baca5a6c5829671221c50365659b67e8250dcf22ee3777c9f906832123"
+    },
+    {
+      "path": "assets/renders/03-ai-origin-provenance-clinic.jpg",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "neutral",
+      "sha256": "53d45f651178a021bcfa256356fb3c0691624582137a130adbb648a94a8f76f7"
+    },
+    {
+      "path": "assets/renders/04-dazhongsi-inclusive-plaza.jpg",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "neutral",
+      "sha256": "f4ec611eb6d6cc7c0b6624295df4d3255167f1409bb12d16170166747745d348"
     },
     {
       "path": "geometry/buildings.geojson",
@@ -218,7 +274,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "e447241f958d16bdf3b5cb3f4072973ee17f8c0209235b3edd7d7e8e107e7705"
+      "sha256": "11a2ca45b137d06fc59b04b75fa9ef0b74a91daf71ce7e3ac02fdbf5a6b0938b"
     },
     {
       "path": "report/proposal.en.html",
@@ -226,7 +282,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "d2750b00de8c706bd64dcfb0fd97fa12cce0d15ade241f790295940cd6f734c0"
+      "sha256": "724738a66d55860207b44627e28f5c186c703623b03c540bc3006c3df199ad5c"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -234,7 +290,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "e1aec0a16601eca6a4e14cddd97dbd733c4d089770480d3b46512526e783797b"
+      "sha256": "01c90508755cac719ae20fea7c219df59cf09d8123a165e42cfb1621635f6e05"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -242,7 +298,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "905629a2002c5d228fe017aaebbeb2e72c266062ef60adb03f4d6ed2e8fc2a02"
+      "sha256": "3b51b1010e3a9dd7161386662307c3a9ee23dff37211b6c825e1c0ee6e291628"
     },
     {
       "path": "visual/index.en.html",
@@ -250,7 +306,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "eeca4089c0cae8b54c45a81595dbd04df2c319c2bfbeb48c58faf02fc13a997c"
+      "sha256": "a9836ea26dae99dcde9f4b359ba48c2f3e225760de8fdbe2879acf44066885b1"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -299,11 +355,63 @@
       "language": "en",
       "translation_of": "assets/figures/site-overview.png",
       "sha256": "187bb1484965d7e7f8edc92870c2700e61ffe65495576c7b98042cea3bf29ebf"
+    },
+    {
+      "path": "assets/renders/05-consent-section-perspective-v2.png",
+      "role": "proposal_figure",
+      "required": true,
+      "sha256": "7d3a59bf0bd10cdba74714920dbc24114f252071707d106417cfdf6d4a3bb9a5"
+    },
+    {
+      "path": "assets/figures/memory-passport-system.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "zh",
+      "sha256": "b38270fecc5b5de7135f3da804118303b43a9aefb63003f0d5e1f1b2c9b7aea6"
+    },
+    {
+      "path": "assets/figures/memory-passport-system.en.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "en",
+      "translation_of": "assets/figures/memory-passport-system.png",
+      "sha256": "abfcaa3a36036d4dde2e5593e3e62b3beb02dcdafe8c8e1c67386e0a2a6ad8af"
+    },
+    {
+      "path": "visual/assets/memory-boundary-passports.json",
+      "role": "visualization",
+      "required": true,
+      "sha256": "a556b2680ba7f06fde767abdcd311c04f06900b3830a09d519874054ce9a79b0"
+    },
+    {
+      "path": "visual/assets/implementation-contract.json",
+      "role": "visualization",
+      "required": true,
+      "sha256": "96d378e549862711c91917163b867609f74bd6bbd075c4386e6a6e4f5f2fc213"
+    },
+    {
+      "path": "visual/assets/public-interest-route-tests.json",
+      "role": "visualization",
+      "required": true,
+      "sha256": "7e0eda31d117974592bd11050971281029aacf47ed866bac99a601a5fe2bbd3e"
+    },
+    {
+      "path": "visual/assets/forgetfulness-budget.json",
+      "role": "visualization",
+      "required": true,
+      "sha256": "2195f89a7f03b3de8646db16d42e0de8f93a19d23b1f620d7446f00394a61546"
+    },
+    {
+      "path": "visual/assets/run-memory-passport-audit.js",
+      "role": "visualization",
+      "required": true,
+      "sha256": "34ed4f712c80d8893a10a17a0e515c117f1a0507c71dffc459ab24b6214931a9"
     }
   ],
   "validation_claim": {
-    "self_checked": false,
+    "self_checked": true,
     "known_blockers": [],
-    "data_confidence": "high"
+    "data_confidence": "medium",
+    "readiness_contract": "persisted-self-check-v1"
   }
 }

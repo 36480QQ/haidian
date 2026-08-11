@@ -76,8 +76,71 @@
       "formula": "count(key_detailed_design_areas)",
       "confidence": "high",
       "assumptions": []
+    },
+    "simulation_task_count": {
+      "status": "known",
+      "value": 8,
+      "unit": "count",
+      "source_files": [
+        "simulation.json"
+      ],
+      "formula": "count(simulation.tasks)",
+      "confidence": "high",
+      "assumptions": [
+        "Fixed-input, offline, synthetic rehearsal only; not field evidence, approval progress, a government commitment, or a deployment claim."
+      ]
+    },
+    "simulation_success_rate": {
+      "status": "known",
+      "value": 0.75,
+      "unit": "ratio",
+      "source_files": [
+        "simulation.json"
+      ],
+      "formula": "count(outcome == 'success' or outcome ends with '_success') / count(tasks) = 6 / 8",
+      "confidence": "high",
+      "assumptions": [
+        "Success is derived only from the eight immutable synthetic fixtures; both recorded failures remain in the denominator and trigger explicit exits."
+      ]
+    },
+    "tool_schema_pass_rate": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": [
+        "simulation.json"
+      ],
+      "formula": "count(dispatch_schema_valid == true) / count(tasks) = 8 / 8",
+      "confidence": "high",
+      "assumptions": [
+        "Schema conformance describes the recorded tool-dispatch objects, not correctness or safety of a field service."
+      ]
+    },
+    "energy_budget_violations": {
+      "status": "known",
+      "value": 1,
+      "unit": "count",
+      "source_files": [
+        "simulation.json"
+      ],
+      "formula": "count(energy_used_kwh > energy_budget_kwh) = 1",
+      "confidence": "high",
+      "assumptions": [
+        "Energy values are fixed synthetic ledger fixtures for exercising the budget-comparison rule, not external power-meter readings, measured model energy, building-energy, or municipal-capacity measurements."
+      ]
+    },
+    "audit_completeness": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": [
+        "simulation.json"
+      ],
+      "formula": "count(audit_complete == true) / count(tasks) = 8 / 8",
+      "confidence": "high",
+      "assumptions": [
+        "Completeness means all eight synthetic rehearsal records contain the required audit fields; it is not independent assurance or official review."
+      ]
     }
-  },
-  "provenance_note_zh": "本提交采用 provisional 临时边界与概念级建筑/绿地/公共空间表达，所有 known 指标已按公式复算，但 confidence 整体下调以反映官方控制条件缺失；待 official polygon / 控规发布后重算。",
-  "provenance_note_en": "This submission uses a provisional boundary and concept-level building/green/public-space data. All 'known' metrics are recomputed per formulas, but confidence is globally downgraded to reflect missing official controls; recompute is mandatory after official polygon / regulatory release."
+  }
 }

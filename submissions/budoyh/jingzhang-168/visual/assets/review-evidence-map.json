@@ -1,5 +1,5 @@
 {
-  "protocol_version": "2.0.0",
+  "protocol_version": "3.0.0",
   "purpose": "Seven-dimension claim-to-artifact map; not a self-awarded score",
   "score_claim": null,
   "canonical_counts": {
@@ -13,6 +13,13 @@
     "scenario_gates": 8,
     "first_168h_stages": 9,
     "renewal_projects": 9,
+    "station_prototypes": 3,
+    "scheduled_service_contracts": 12,
+    "synthetic_tabletop_cases": 72,
+    "tabletop_stop_branches": 24,
+    "tabletop_reset_branches": 12,
+    "real_personal_data_used_in_tabletop": 0,
+    "field_performance": null,
     "key_area_scenario_distribution": {
       "PROV-KEY-001": 3,
       "PROV-KEY-002": 4,
@@ -24,74 +31,100 @@
       "id": "brief_alignment",
       "weight": 20,
       "evidence": [
+        "sources.json",
+        "visual/assets/station-prototypes.json",
+        "visual/assets/civic-timetable.json",
         "geometry/constraints.geojson#TZ-01-CITY-LOUNGE",
         "geometry/constraints.geojson#TZ-02-KNOWLEDGE-TRANSFER",
         "geometry/constraints.geojson#TZ-03-MODEL-VALIDATION",
         "visual/assets/first-168h.json"
       ],
       "check": [
-        "3/6/7/12 canonical IDs",
-        "no approval date asserted"
+        "existing open park and proposed AI service are not conflated",
+        "3/6/7/12 canonical spatial IDs",
+        "no approval, ownership, capacity or field result asserted"
       ]
     },
     {
       "id": "originality",
       "weight": 10,
       "evidence": [
+        "visual/assets/civic-timetable.json",
+        "visual/assets/station-prototypes.json",
         "visual/assets/spatial-components.json",
         "visual/assets/state-machine.json"
       ],
       "check": [
-        "single 168-hour concept controls space and governance"
+        "Layer 0 civic base cannot close while Layer 1 AI may stop",
+        "three station sections answer three different site conflicts",
+        "168-hour timetable controls space, responsibility, exit and restoration"
       ]
     },
     {
       "id": "ai_planning_innovation",
       "weight": 15,
       "evidence": [
+        "visual/assets/civic-timetable.json",
+        "visual/assets/timetable-tabletop-evidence.json",
         "visual/assets/jz168-week.schema.json",
         "visual/assets/example-week.json",
         "visual/assets/scenario-cards.json"
       ],
       "check": [
-        "12 full cards",
-        "AI never holds final authority"
+        "12 full service contracts",
+        "72 deterministic synthetic branches, 24 stop, 12 reset",
+        "zero real personal data and no external I/O",
+        "AI never holds final authority; field performance remains null"
       ]
     },
     {
       "id": "implementation_feasibility",
       "weight": 20,
       "evidence": [
+        "visual/assets/station-prototypes.json",
+        "visual/assets/civic-timetable.json",
+        "visual/assets/timetable-tabletop-evidence.json",
         "visual/assets/implementation-gates.json",
         "visual/assets/governance-raci.json",
         "visual/assets/renewal-projects.json",
-        "visual/assets/first-168h.json"
+        "visual/assets/first-168h.json",
+        "risk.json"
       ],
       "check": [
+        "retain—repair—reversible add for each station",
         "G0-G7",
         "C0-C7",
         "10 roles",
-        "9 continuous stages"
+        "9 continuous stages",
+        "funding, labor, insurance, authorization and professional sign-off remain gates"
       ]
     },
     {
       "id": "public_interest_inclusion",
       "weight": 10,
       "evidence": [
+        "visual/assets/civic-timetable.json",
+        "visual/assets/station-prototypes.json",
         "visual/assets/scenario-cards.json",
         "visual/assets/spatial-components.json",
         "geometry/constraints.geojson#TC-02-HUMAN-GATE",
         "geometry/constraints.geojson#TC-06-ACCESS-STOP"
       ],
       "check": [
-        "paper/phone/staffed route",
-        "affected and nonparticipant impacts"
+        "always-open civic base",
+        "paper/phone/staffed route for every service",
+        "affected and nonparticipant impacts",
+        "access, quiet and labor may stop AI service"
       ]
     },
     {
       "id": "risk_compliance",
       "weight": 10,
       "evidence": [
+        "risk.json",
+        "visual/assets/civic-timetable.json",
+        "visual/assets/timetable-tabletop-evidence.json",
+        "visual/assets/rights-ledger.json",
         "geometry/constraints.geojson",
         "visual/assets/state-machine.json",
         "visual/assets/implementation-gates.json"
@@ -99,7 +132,9 @@
       "check": [
         "provisional geometry",
         "fail-closed stop/restore",
-        "authority not claimed"
+        "authority and field performance not claimed",
+        "high risks remain visible rather than cosmetically reduced",
+        "GPT Image 2 views remain presentation-only"
       ]
     },
     {
@@ -108,12 +143,24 @@
       "evidence": [
         "proposal.md",
         "proposal.en.md",
+        "report/proposal.html",
+        "report/proposal.en.html",
+        "visual/index.html",
+        "visual/index.en.html",
+        "drawings/a3-booklet.pdf",
+        "drawings/a3-booklet.en.pdf",
+        "drawings/a0-boards.pdf",
+        "drawings/a0-boards.en.pdf",
+        "assets/figures/site-overview.png",
+        "assets/figures/metrics-evidence.png",
         "visual/assets/*.json",
         "manifest.json"
       ],
       "check": [
         "canonical cross-file ID closure",
-        "bilingual/render/manifest final audit"
+        "140/140 bilingual evidence-anchor multiset",
+        "12 stable visual locator codes",
+        "bilingual render and manifest final audit"
       ]
     }
   ],

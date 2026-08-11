@@ -1,6 +1,6 @@
 ---
-title: "Jingzhang 168: Give the Week Back to the City"
-summary: "An auditable 168-hour public timetable coordinates three time zones, six booking segments, seven spatial components, and twelve scenario nodes so that space, AI services, accountability, exit, and public value can be read and tested together."
+title: "Jingzhang 168: The Civic Timetable"
+summary: "The park stays open while AI arrives by timetable: an unclosable civic base, three urban-station prototypes, twelve stoppable services, and a reproducible 72-branch tabletop make space, responsibility, exit, and public value one civic contract."
 author_github: "budoyh"
 language: "en"
 proposal_format_version: "2"
@@ -8,22 +8,24 @@ translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 tracks: ["youth-friendly-public-space", "civic-agent-governance", "enterprise-services-ecosystem"]
 scenarios: ["ai-traffic-walkability", "robot-delivery-low-speed", "ai-cultural-guide", "public-safety-operations-review", "enterprise-service-copilot", "ai-health-service-navigation"]
-iteration: "v2.0"
+iteration: "v3.0"
 ---
 
-# Jingzhang 168: Give the Week Back to the City
+# Jingzhang 168: The Civic Timetable
 
-> **One-sentence proposal.** The historic Jingzhang railway used timetables to organize trains. Jingzhang 168 translates that temporal discipline into a public, bilingual, revocable, human-takeover-ready weekly timetable for the city. Success is not the number of AI deployments; it is the amount of safe, quiet, accessible, appealable public time actually delivered each week.
+> **One-sentence proposal.** The park stays open while AI arrives by timetable. A delayed service must be visible, a failed service must have a human conductor, and a suspended service must never block the civic path. Jingzhang's contemporary legacy is not railway-shaped decoration; it is measurement, timing, handover, delay explanation, and recovery made civic responsibility.
 
 ## Executive summary
 
-The spatial framework is “three time zones, six booking segments, seven time components, and twelve scenario nodes.” `TZ-03-MODEL-VALIDATION` hosts controlled model, data, and edge-device trials. `TZ-02-KNOWLEDGE-TRANSFER` connects universities, research, firms, and communities. `TZ-01-CITY-LOUNGE` turns interchange, culture, and daily services into a civic front door. The six segments from `BK-01-SOUTH-GATE` to `BK-06-TEST-YARD` are bookable operating sections rather than administrative boundaries. Seven components turn the weekly board, human gate, time bay, quiet edge, reset mark, access stop, and evidence clock into a legible design language. Twelve `SCN` nodes place scenario cards in reviewable locations.
+**The site conflict.** Jingzhang Railway Heritage Park is not a blank site waiting to be “AI-enabled.” Official sources state that planning began in 2019 for an approximately 9 km corridor; about 6 km of high-speed rail runs underground while the operating Line 13, complex interests, and nearly twenty universities and research institutes overlap. A first phase of about 2.5 km and 16.8 ha is already open. Beijing's park directory lists the existing heritage park as free, reservation-free, and open 24 hours [source:OFFICIAL-PARK-PLAN-2021] [source:OFFICIAL-PARK-PHASE1-2023] [source:OFFICIAL-PARK-DIRECTORY-2025]. The design therefore asks one hard question: **How can AI innovation be tested without converting a public park into a gated technology exhibition?**
 
-Space follows protocol. Each activity moves through `proposed → admitted → scheduled → active → paused → returned → audited → archived`. `visual/assets/jz168-week.schema.json` defines the record and `visual/assets/example-week.json` provides the first-week instance. The Timetable Operator schedules capacity; the Public Time Council governs fairness and quiet; the Scenario Admission and Safety Panel admits, pauses, and reviews trials. None may absorb the powers of another. Humans make consequential decisions, and non-AI access must be equivalent.
+**The spatial answer.** Layer 0 is an unclosable civic base: existing public paths, static bilingual maps, shade and seating, paper information, and human/telephone help remain available without an account, booking, network, or AI. Layer 1 contains scheduled AI services that may “arrive” only with a named human, non-AI equivalent, minimum-data contract, stop threshold, and restoration receipt. Three station prototypes turn the relationship into section: Zhongzhi Validation Yard is “public observation edge—scheduled test court—isolated back-of-house”; AI Origin Open Transfer Hall is “public front counter—translation workshop—controlled back room”; Dazhongsi Civic Terminal is “always-open ground—staffed counter—synthetic transaction sandbox” [data:visual/assets/station-prototypes.json].
 
-Implementation begins with a first week, not a distant promise. Nine continuous relative-time stages schedule paper publication, staffed counters, access/quiet walks, shadow mode, offline exercises, public co-review, restoration and audit across eight scenario nodes; every scene remains `proposed`, so this is not an approved opening calendar. Week 12 evidence may support only continue, narrow, or retire. Each of nine project packages has an accountable role, resource gate, SLO, stop threshold, restoration action, and evidence artifact. Statutory planning, ownership, fire, utility, heritage, and engineering conclusions remain unknown until competent evidence exists.
+**The operating answer.** Twelve services are no longer a generic AI+ list. They comprise three industrial validations in the north, four knowledge-transfer services in the middle, and five everyday civic services in the south. Every service names a platform, window, human conductor, prohibited data, non-AI equivalent, stop trigger, reset action, and expected receipt [data:visual/assets/civic-timetable.json]. The state machine remains `proposed → admitted → scheduled → active → paused → returned → audited → archived`, with one constitutional rule: **AI may stop; the civic base may not.**
 
-The brand is a public commitment rather than a neon technology image. Deep blue carries responsibility and railway memory; operating orange marks only an admitted public time; pause red is reserved for risk and exit. A seven-column by twenty-four-row grid forms “168.” Five core figures explain evidence, spatial grammar, key areas, mobility-blue-green systems, and metric gates. Each English `.en.png` sits in the same position as its Chinese primary and cannot change the design facts.
+**The executable answer.** `visual/assets/tabletop-runner.js --check` runs six synthetic branches for each of twelve contracts: nominal, missing human, missing non-AI path, prohibited data, blocked public path, and post-stop reset. The 72 cases include 24 stop branches and 12 reset branches [metric:tabletop_case_count] [data:visual/assets/timetable-tabletop-evidence.json]. The runner has no network or device I/O, uses no real personal data, and keeps `field_performance=null`. PASS proves contract and failure-path closure only, never field success [assumption:A-TABLETOP-001].
+
+**The first slice.** The first 168 hours still contain only paper publication, staffed counters, accessibility and quiet walks, shadow mode, offline exercises, public co-review, clearance, and audit. There is no permanent construction, production account, or road-right change. At week 12 an independent review may continue, narrow, or archive. A complete contract is not one in which technology always succeeds; it is one in which every failure can be seen, stopped, restored, and assigned a receipt.
 
 ![Overall concept, evidence boundary, and three-level scope](assets/figures/site-overview.en.png)
 
@@ -31,7 +33,7 @@ The brand is a public commitment rather than a neon technology image. Deep blue 
 
 ### Evidence hierarchy and limits
 
-The proposal uses four evidence levels. The official announcement and public task documents control scope but do not automatically supply survey-grade geometry [source:OFFICIAL-ANNOUNCEMENT] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]. The agent taskbook controls the six AI-agent tasks, ten principles, branding, scenarios, personas, and operations [source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]. The repository site package, registry, and provisional geometry create a reproducible design base [source:SITE-PACKAGE] [source:SOURCE-REGISTRY]. International cases are mechanism comparisons only, never statutory Beijing parameters.
+The proposal uses five evidence levels. The official announcement and public task documents control scope but do not automatically supply survey-grade geometry [source:OFFICIAL-ANNOUNCEMENT] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]. Beijing and Haidian authority pages provide current park, renewal, heritage, and AI-policy context without replacing project approval. The agent taskbook controls the six AI-agent tasks, ten principles, branding, scenarios, personas, and operations [source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]. The repository site package, registry, and provisional geometry create a reproducible design base [source:SITE-PACKAGE] [source:SOURCE-REGISTRY]. International cases compare mechanisms only, never Beijing statutory parameters.
 
 The repository public draft `brief/public-brief.md` only supplements development aspirations, priority directions, and public-data boundaries [source:PUBLIC-BRIEF-DRAFT]. Because its `published_at` remains TBD, this proposal treats it strictly as background and never as proof of an official boundary, statutory control, committed implementation, or government decision.
 
@@ -39,15 +41,17 @@ Urban-design reasoning follows the public frameworks for urban-design administra
 
 ### Usability register
 
-| Category | Usable in v2.0 | Must not be read as | Update trigger |
+| Category | Usable in v3.0 | Must not be read as | Update trigger |
 |---|---|---|---|
 | Task basis | Three scopes, six agent tasks, delivery depth | Government adoption or implementation promise | Official addendum |
 | Provisional boundaries | Topology, option comparison, recalculation workflow | Statutory line or ownership area | Official polygon |
 | Conceptual buildings | Shared-ground-floor and renewal tests | Existing-condition survey or demolition quantity | Building and title survey |
 | Case material | Temporal sharing, trials, and collaboration mechanisms | Imported institutions or intensity | Evidence of local mismatch |
 | Operating protocol | First-week pilot, audit fields, and exit | Established government operating arrangement | Co-design and legal review |
+| Existing park | Current 24-hour, free, no-reservation baseline | The entire provisional range is built or freely programmable | Operator, field, and official-data check |
+| Three renewal areas | Public renewal direction, coordinating context, and anchors | Exact parcel, title, or approved building action | Official drawings, project list, professional review |
 
-The overall geometry is provisional [data:geometry/site_boundary.geojson#SITE-001], as are the three key areas [data:geometry/key_areas.geojson#PROV-KEY-001]. `geometry/constraints.geojson` records only the reviewable three zones, six segments, twelve nodes and seven components; it does not fabricate official constraint lines [assumption:A-LOCATOR-001]. Missing statutory plan, title, utility, fire, heritage, ecology and accessibility evidence is registered in [assumption:A-CONTROLS-001] and treated as fail-closed at G0 fact baseline and G4 professional safety in `visual/assets/implementation-gates.json`.
+The overall geometry is provisional [data:geometry/site_boundary.geojson#SITE-001], as are the three key areas [data:geometry/key_areas.geojson#PROV-KEY-001]. The repository also records an approximately 412.5 m nearest-distance, zero-overlap background discrepancy between a public OSM park object and the provisional overall range. That discrepancy must be exposed, but it is not authority to replace or shift the boundary [assumption:A-OSM-DISCREPANCY-001]. `geometry/constraints.geojson` records operating locators only and does not fabricate official controls [assumption:A-LOCATOR-001]. Missing statutory plan, title, utility, fire, heritage, ecology and accessibility evidence remains fail-closed at G0 and G4 [assumption:A-CONTROLS-001].
 
 ### How claims are audited
 
@@ -79,7 +83,9 @@ Each level answers five questions: Who receives the public benefit? Is the spati
 
 ### Three positions, five functions, three zones and two wings
 
-The three positions are: a verifiable AI-autonomy corridor; an open trial belt that governs failure; and a future-city demonstrator that measures public time. Five functions are R&D validation, transfer, enterprise service, talent life, and public culture. Validation, transfer, and city lounge form three zones; an eastern wing connects academic and research networks, while a western wing connects communities and industrial space. Collaboration is a loop of issue ticket, booking, trial, human review, public retrospective, and renewed permission—not decorative arrows [source:AGENT-TASKBOOK].
+The three positions are: a verifiable AI-autonomy corridor; an open trial belt that governs failure; and a future-city demonstrator measured by public time and rights. Five functions are R&D validation, transfer, enterprise service, talent life, and public culture. Validation, transfer, and city lounge form three zones; an eastern wing connects academic and research networks, while a western wing connects communities and industrial space. Collaboration is a loop of public issue, minimum contract, human admission, synthetic tabletop, small field slice, stop/reset, and public retrospective—not decorative arrows [source:AGENT-TASKBOOK].
+
+This structure comes from the site rather than a generic innovation-district template. Public renewal information in the north names Zhongzhi Garden, Tencent Xuezhi Park, Dongsheng 604, and the Qinghe–Xiaoyue ecological connection. AI Origin is publicly described as an approximately 3 km² campus–park–street integration area. Dazhongsi renewal information emphasizes comprehensive renewal, public-commercial balance, and a phased project pipeline [source:OFFICIAL-ZHONGZHI-RENEWAL-2026] [source:OFFICIAL-AI-ORIGIN-2026] [source:OFFICIAL-DAZHONGSI-RENEWAL-2026]. These differences produce three station prototypes rather than one AI box with three labels.
 
 Regional interfaces remain light and auditable. Universities share public research questions and equipment vacancy, not student profiles. Hospitals connect only public navigation and human appointments, not diagnosis. Firms share compliance questions and trial windows, not trade secrets. Communities share complaints, quiet periods, and accessibility blockers, not resident scores. Haidian, Changping, and other corridor nodes may exchange calendars and public outputs, but the proposal does not claim an adopted inter-district policy.
 
@@ -95,25 +101,27 @@ Regional interfaces remain light and auditable. Universities share public resear
 | Paris-Saclay | Proof–maturity–transfer chain | G0–G7 evidence gates | No copied finance or governance [source:CASE-PARIS-SACLAY] |
 | Kendall Square | Public space connects innovation actors | Time Park and twelve nodes | Land value does not replace public value [source:CASE-KENDALL] |
 
+Four additional references stress-test the mechanism only. Singapore AI Verify shows why governance principles need testable records [source:CASE-AI-VERIFY]. The Dutch Algorithm Register and Helsinki AI Register show public-facing disclosure of purpose, responsibility, limitations, and contact [source:CASE-DUTCH-ALGORITHM-REGISTER] [source:CASE-HELSINKI-AI-REGISTER]. Seoul's Gyeongui Line Forest Park shows a rail corridor functioning as continuous everyday public space [source:CASE-SEOUL-GYEONGUI]. None supplies Beijing permission, scale, or performance values.
+
 ### Brand and cultural narrative
 
 “Jingzhang 168” means the 168 hours of a week, railway timetable discipline, and a redeemable civic schedule. A seven-by-twenty-four grid forms “168.” Deep blue is the accountability base, warm white is vacancy, operating orange is admitted opening, and pause red is risk or exit. The bilingual wordmark is “京张168 / JINGZHANG 168,” with “把一周还给城市 / GIVE THE WEEK BACK TO THE CITY.” It must not resemble a government, railway-operator, or corporate mark.
 
-The four-act narrative is operation, encounter, handover, and review. Railway history is not nostalgic scenery; it reminds a future city to keep time, assign responsibility, explain delay, and recover from failure. Voice, archive, and personal material require clearance. Without permission, only original abstract lines, dots, grids, and words are used. The same state colors govern spatial components, web pages, paper boards, and bilingual wayfinding.
+The four-act narrative is measure, run, hand over, and restore. National Museum material on Jingzhang engineering measurement reminds us that its legacy begins with rigor about terrain, error, and responsibility—not decorative zigzags [source:OFFICIAL-JINGZHANG-HISTORY]. Railway history is not nostalgic scenery: a timetable must explain delay, a signal must show suspension, a handover must be signed, and restoration must return space to civic use. Voice, archive, and personal material still require clearance.
 
 ## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
 
 ### Three time zones and six segments
 
-This is not static zoning but an operating mechanism and spatial system of base use, opening time, responsibility gates, and restoration receipts: zones organise public time, segments carry bookings, and components make stopping and return visible.
+The v3 primary structure is not three colors on a corridor; it is two layers of rights. Layer 0—the civic base—always takes priority: continuous public paths, static wayfinding, seating and shade, blue-green systems, paper information, and human/telephone help. Layer 1—the service timetable—may appear only temporarily: AI devices, event enclosures, data collection, and booking interfaces must clear on time and gain no permanent right-of-way. The three zones and six segments remain provisional operating locators, not the main concept. This **civic-timetable mechanism** binds the spatial system, service scenarios, stop modes, and restoration receipts into one auditable chain instead of adding another technology-park platform.
 
-| Time zone | Booking segments | Primary task | Main operating window | Exit condition |
+| Time zone | Booking segments | Primary task | Layer 0 that cannot close | Layer 1 exit condition |
 |---|---|---|---|---|
-| TZ-03-MODEL-VALIDATION | BK-05-TRANSFER-NORTH; BK-06-TEST-YARD | Ecology, synthetic data, red teaming, edge energy | Weekdays 09:00–18:00 | Sensitive data, heat, ecology, or safety breach |
-| TZ-02-KNOWLEDGE-TRANSFER | BK-03-TRANSFER-SOUTH; BK-04-ORIGIN-HUB | Open-source collaboration, night school, lab bank, enterprise service | Segmented 08:00–21:00 | Eligibility error, missing reviewer, quiet-edge breach |
-| TZ-01-CITY-LOUNGE | BK-01-SOUTH-GATE; BK-02-CIVIC-SEAM | Interchange, culture, accessibility, civic experience | Segmented 07:00–22:00 | Blocked passage, noise, child or labor risk |
+| TZ-03-MODEL-VALIDATION | BK-05-TRANSFER-NORTH; BK-06-TEST-YARD | Agent interoperability, red-team, edge-energy receipts | Ecological and public observation edges; ordinary walking | Data overreach, heat/noise spill, isolation failure, no duty human |
+| TZ-02-KNOWLEDGE-TRANSFER | BK-03-TRANSFER-SOUTH; BK-04-ORIGIN-HUB | Open-source/IP transfer, access audit, maintainer school, research translation | Campus–park public interface and no-account front counter | Professional overreach, unclear rights, access or quiet breach |
+| TZ-01-CITY-LOUNGE | BK-01-SOUTH-GATE; BK-02-CIVIC-SEAM | Four-quadrant audit, document navigation, heritage reading, quiet observatory, consumer sandbox | Public path, static map, seating, and help | Blockage, real-account request, automatic eligibility decision, heritage conflict |
 
-The time zones are operating zones, not statutory land-use changes. Twenty-four provisional parcels [data:geometry/land_use.geojson#LU-001] use “base use + opening protocol” labels, and a continuous slow-mobility and blue-green structure links six segments [depth:overall_spatial_structure]. Statutory compatibility, FAR, height, and capacity await planning and professional evidence [depth:development_intensity_controls].
+The time zones are operating locators, not statutory land-use changes. Twenty-four provisional parcels [data:geometry/land_use.geojson#LU-001] use “base use + civic base + service window” labels, and a continuous slow-mobility and blue-green structure links six segments [depth:overall_spatial_structure]. The official 168-hour park fact cannot be multiplied by the provisional `PUBLIC-168` geometry to manufacture a site-wide square-metre-hour total. The v2 97M display value is withdrawn; effective hours and `m²·h/week` remain unknown pending segment-level field evidence [metric:weekly_public_open_hours] [metric:public_space_weekly_sqm_hours].
 
 ### Seven legible time components
 
@@ -139,26 +147,26 @@ The action sequence is survey, retain, repair, performance upgrade, reversible a
 
 | ID | Node | Zone/segment | Main components | First purpose |
 |---|---|---|---|---|
-| SCN-01-SYNTHETIC-DATA-CLINIC | Synthetic Data Clinic | TZ-03-MODEL-VALIDATION / BK-06-TEST-YARD | TC-02+TC-07 | Licence and bias check |
-| SCN-02-MODEL-RED-TEAM | Model Red-Team Workshop | TZ-03-MODEL-VALIDATION / BK-06-TEST-YARD | TC-05+TC-07 | Isolated red-team trial |
-| SCN-03-ROBOT-WINDOW | Low-Speed Shared Segment | TZ-01-CITY-LOUNGE / BK-02-CIVIC-SEAM | TC-05+TC-06 | Controlled low-speed trial |
-| SCN-04-EDGE-ENERGY-SANDBOX | Edge Energy Sandbox | TZ-03-MODEL-VALIDATION / BK-05-TRANSFER-NORTH | TC-04+TC-05 | Power, heat, and noise test |
-| SCN-05-ENTERPRISE-COPILOT | Translation Desk | TZ-02-KNOWLEDGE-TRANSFER / BK-04-ORIGIN-HUB | TC-02+TC-07 | Public-policy navigation |
-| SCN-06-HEALTH-NAVIGATION | Health Navigation | TZ-01-CITY-LOUNGE / BK-01-SOUTH-GATE | TC-02+TC-06 | Wayfinding and human transfer |
-| SCN-07-ACCESSIBLE-WAYFINDING | Accessible Knowledge Interchange | TZ-02-KNOWLEDGE-TRANSFER / BK-03-TRANSFER-SOUTH | TC-02+TC-06 | Barrier verification and escort |
-| SCN-08-NIGHT-SCHOOL | Open-source Table and Night School | TZ-02-KNOWLEDGE-TRANSFER / BK-04-ORIGIN-HUB | TC-01+TC-03 | Time-shared learning |
-| SCN-09-LAB-TIME-BANK | Laboratory Time Bank | TZ-02-KNOWLEDGE-TRANSFER / BK-03-TRANSFER-SOUTH | TC-01+TC-02 | Equipment-vacancy booking |
-| SCN-10-HERITAGE-VOICE | Heritage Voice Station | TZ-01-CITY-LOUNGE / BK-02-CIVIC-SEAM | TC-01+TC-07 | Rights-cleared sound narrative |
-| SCN-11-QUIET-STREET | Quiet Street Station | TZ-01-CITY-LOUNGE / BK-02-CIVIC-SEAM | TC-04+TC-06 | Human inspection and mediation |
-| SCN-12-CITY-MODEL-ROOM | City Model Room and Departure Board | TZ-01-CITY-LOUNGE / BK-01-SOUTH-GATE | TC-01+TC-02+TC-07 | Version, limits, and appeal |
+| SCN-01 | Agent Interoperability Clinic | Zhongzhi / BK-06 | TC-02+TC-07 | Synthetic tool calls and handover failure |
+| SCN-02 | Red-Team Shed and Failure Archive | Zhongzhi / BK-06 | TC-05+TC-07 | Isolation, stop, and retrospective |
+| SCN-03 | Four-Quadrant Walking and Robot-Boundary Audit | Dazhongsi / BK-02 | TC-05+TC-06 | Crossing, cycle parking, wheelchair continuity, yielding, physical stop |
+| SCN-04 | Edge Energy and Compute Receipt Bench | Zhongzhi / BK-05 | TC-04+TC-05 | Power, heat, noise, and version receipt |
+| SCN-05 | Open-Source and IP Transfer Desk | AI Origin / BK-04 | TC-02+TC-07 | Source, licence, human professional transfer |
+| SCN-06 | Public-Service Document Navigator | Dazhongsi / BK-01 | TC-02+TC-06 | Explain public documents; never decide eligibility |
+| SCN-07 | Accessible Route Co-Audit | AI Origin / BK-03 | TC-02+TC-06 | User co-audit, barrier ticket, return walk |
+| SCN-08 | Open-Source Maintainer Night School | AI Origin / BK-04 | TC-01+TC-03 | Public issues, maintenance labor, no-account seat |
+| SCN-09 | Research-to-Civic-Service Translation Desk | AI Origin / BK-03 | TC-01+TC-02 | Problem–evidence–permission–minimum trial |
+| SCN-10 | Jingzhang Memory Co-Reading Station | Dazhongsi / BK-02 | TC-01+TC-07 | Cleared history, version, public correction |
+| SCN-11 | Night Quiet and Public-Path Observatory | Dazhongsi / BK-02 | TC-04+TC-06 | Light, noise, queue, and clearance |
+| SCN-12 | Consumer-Agent Permission Sandbox | Dazhongsi / BK-01 | TC-01+TC-02+TC-07 | Synthetic transaction, explicit confirmation, withdrawal |
 
 ### Three key-area mini-plans
 
-The Zhongzhiyuan “Model Validation Garden” occupies provisional area [data:geometry/key_areas.geojson#PROV-KEY-001]. SCN-01, SCN-02, and SCN-04 form an admission–test–review safety loop. Ground floors host synthetic-data and red-team services; outdoors accepts only low-disturbance devices. Quiet edges protect residential and ecological interfaces, while reset marks keep temporary installations removable. Ownership, fire, ecology, and existing-condition surveys precede scale or built-form decisions.
+Zhongzhi Validation Yard occupies provisional area [data:geometry/key_areas.geojson#PROV-KEY-001]. Its section runs from an always-open walking and observation edge, through a scheduled fenced synthetic-test court, to data-isolation and maintenance back-of-house. SCN-01, 02, and 04 test agent handover, red-team stop, and edge-energy receipts without production connections. The Qinghe–Xiaoyue ecological connection and renewal anchors come from official public context; parcel, title, and engineering conditions remain pending [source:OFFICIAL-ZHONGZHI-RENEWAL-2026].
 
-The AI Origin “Knowledge Interchange” occupies [data:geometry/key_areas.geojson#PROV-KEY-002]. SCN-05, SCN-07, SCN-08, and SCN-09 place translation, laboratory vacancy, night school, enterprise service, and accessible navigation along continuous shared ground floors. Daytime supports transfer, evenings serve students and communities, weekends welcome maintainers and families. Any eligibility, IP, health, or legal conclusion transfers to a human.
+AI Origin Open Transfer Hall occupies [data:geometry/key_areas.geojson#PROV-KEY-002]. Its section contains a no-account public front counter, a translation workshop, and a controlled IP/data back room. SCN-05, 07, 08, and 09 deliver open-source/IP transfer, accessible co-audit, maintainer school, and research translation. Any licence, professional opinion, or procurement conclusion transfers to a human. The public approximately 3 km² campus–park–street context does not establish that a particular building is available for alteration [source:OFFICIAL-AI-ORIGIN-2026].
 
-The Dazhongsi “Open City Lounge” occupies [data:geometry/key_areas.geojson#PROV-KEY-003]. SCN-03, SCN-06, SCN-10, SCN-11, and SCN-12 connect four station quadrants, heritage narrative, quiet streets, and the public board. Robots operate only in a controlled 11:00–15:00 window and gain no permanent right of way. Events end by 21:00 and light lowers after 22:00. Each mini-plan is checked for function, building, mobility, public space, scenario, risk, and restoration [depth:three_key_area_detailed_design].
+Dazhongsi Civic Terminal occupies [data:geometry/key_areas.geojson#PROV-KEY-003]. Layer 0 first protects four-quadrant ground access, static maps, seating, and help. Staffed counters and Jingzhang co-reading open only with humans present; the consumer agent runs only in a synthetic sandbox physically separated from real accounts and payments. SCN-03 first establishes walking/access baselines, then may rehearse low-speed empty-device yielding and physical stop only when authorized, staffed, and removable; SCN-06, 10, 11, and 12 cover document navigation, memory, quiet, and consumer permission. Public renewal direction supports a phased pipeline but not a premature bridge, tunnel, or demolition line [source:OFFICIAL-DAZHONGSI-RENEWAL-2026]. Complete sections and gates are in [data:visual/assets/station-prototypes.json] [depth:three_key_area_detailed_design].
 
 ![Three key areas, seven components, and twelve nodes](assets/figures/key-areas.en.png)
 
@@ -172,18 +180,18 @@ Six personas are design tests, not user labels [metric:persona_count]. Researche
 
 | ID | Subject/location | Affected and non-participant impact | Minimum data/non-AI equivalent | Human owner | KPI/SLO | Stop/restore | Evidence/review |
 |---|---|---|---|---|---|---|---|
-| SCN-01-SYNTHETIC-DATA-CLINIC【test】 | Data team/SCN-01 | Data subjects; no bystander collection | Licence summary and field table; paper checklist | Data officer | 100% licence record; two-day reply | Real sensitive data triggers isolation and deletion | Admission ticket; fortnightly |
-| SCN-02-MODEL-RED-TEAM【test】 | Model team/SCN-02 | Testers; no production user link | Isolated sample and version; manual script | Safety lead | Zero boundary calls; 15-minute takeover | Boundary breach or absent owner disconnects and rolls back | Incident sheet; after each run |
-| SCN-03-ROBOT-WINDOW【test】 | Logistics team/SCN-03 | Pedestrians, wheelchairs, riders, delivery workers | Segment occupancy and device state; hand cart | On-site safety marshal | 100% yielding; 60-second stop | Blockage or near miss stops and clears route | Right-of-way log; daily |
-| SCN-04-EDGE-ENERGY-SANDBOX【test】 | Device team/SCN-04 | Maintainers and neighbors | Power, temperature, quality; manual meter | Facilities engineer | Heat/noise within limit; 30-minute reduction | Overheat, noise complaint, or absent maintenance powers down | Energy sheet; weekly |
-| SCN-05-ENTERPRISE-COPILOT | Founder/SCN-05 | Clerks and offline users | Public clauses and issue type; paper directory | Reviewing clerk | 100% traceable citation; 10-minute transfer | Eligibility judgment, stale source, or no citation stops answer | Service ticket; monthly |
-| SCN-06-HEALTH-NAVIGATION | Resident/SCN-06 | Patients and carers; no health profiling | Public department, address, hours; phone/counter | Health navigator | Zero diagnosis; five-minute transfer | Diagnosis, substituted triage, or private input ends session | Navigation record; monthly |
-| SCN-07-ACCESSIBLE-WAYFINDING | Disabled visitor/SCN-07 | All pedestrians; no narrowed route | Barrier and route status; escort/paper map | Accessibility officer | Barrier checked in 30 minutes | Wrong route, stale construction, or failed help takes service offline | Barrier ticket; weekly |
-| SCN-08-NIGHT-SCHOOL | Learner/resident/SCN-08 | Neighbors, teachers, cleaners | Capacity and course; in-person signup | Course host | No-phone enrollment; 21:00 clear | Crowd, noise, or labor overtime pauses class | Aggregate attendance; each course |
-| SCN-09-LAB-TIME-BANK | Researcher/SCN-09 | Maintainers and waitlisted users | Vacancy, qualification, owner; manual booking book | Equipment manager | Conflict <2%; one-day confirmation | Unsigned maintenance, unclear qualification, or missing training locks slot | Booking ledger; weekly |
-| SCN-10-HERITAGE-VOICE | Public/SCN-10 | Narrators, residents, deaf visitors | Cleared audio and rights scope; text panel | Curator | 100% rights; 100% captions | Rights dispute or sound spill mutes and removes item | Rights sheet; quarterly |
-| SCN-11-QUIET-STREET | Resident/SCN-11 | Participants and night workers | Anonymous time complaint and field reading; human patrol | Community mediator | 20-minute response; no automatic punishment | Repeated complaints, false alert, or conflict transfers to in-person mediation | Action ticket; weekly |
-| SCN-12-CITY-MODEL-ROOM | Public/SCN-12 | Data contributors and affected people | Version, source, limitation; human explanation/paper map | Model librarian | 100% version plate; appeal accepted in two days | Unknown source, misleading display, or ownerless appeal removes version | Version card; monthly |
+| SCN-01【industry test】 | Engineers/Zhongzhi | Future users; no production link | Synthetic task and permission table; human interface check | DS+DHL+SASP | Zero tool overreach (target) | Credentials, overreach, or no human isolates and rolls back | Call summary+reset receipt |
+| SCN-02【industry test】 | Red team/Zhongzhi | Future users; payload contained | Isolated sample; fixed human test set | DHL+SASP+IE | Human stop available (target) | Isolation or stop failure disconnects and seals evidence | Incident+retrospective |
+| SCN-03【mobility test】 | Pedestrians/Dazhongsi | Riders, wheelchairs, carers | Anonymous barrier and device state; paper map/human/cart | AO+OPS+DHL | 100% yield, 60 s stop (target) | Narrowing, near miss, or stop failure removes device and restores route | Walk sheet+stop timestamp+photos |
+| SCN-04【industry test】 | Device team/Zhongzhi | Maintainers and neighbors | Aggregate power/heat/noise; manual meter | OPS+DHL+IE | No heat/noise breach (target) | Heat, noise, measurement, or fire uncertainty powers down | Compute receipt+exception |
+| SCN-05 | Teams/AI Origin | Small teams; no pay-to-prioritize | Public project/licence; paper checklist | PA+OPS+DHL | Traceable source (target) | Licence conflict or automated legal opinion stops answer | Issue+human transfer |
+| SCN-06 | Applicants/Dazhongsi | No-phone, non-Chinese, older visitors | Public guide; paper/phone/counter | OPS+DHL+PA | No eligibility decision | Stale version, eligibility output, or no transfer triggers static mode | Version+correction |
+| SCN-07 | Disabled users/AI Origin | All path users | Anonymous barrier; tactile/large-print map and escort | AO+NL+DHL | Barrier closure (target) | Broken route or absent help restores original path | Ticket+return walk |
+| SCN-08 | Maintainers/AI Origin | Neighbors, teachers, cleaners | Public issue; no-account seat | OPS+PTC+NL | Clear by 21:00 (target) | Rights, overtime, or absent host stops session | Course+clearance |
+| SCN-09 | Research/civic service/AI Origin | Community; no invented demand | Public result and issue; human interview | PA+IE+PTC | Complete boundary (target) | Mismatch or absent owner returns problem definition | Boundary+return ticket |
+| SCN-10 | Public/Dazhongsi | Narrators, residents, deaf visitors | Cleared history; paper timeline | OPS+NL+PA | 100% source/version (target) | Unknown source, synthetic testimony, or heritage conflict removes item | Source+correction |
+| SCN-11 | Residents/Dazhongsi | Night workers and passersby | Anonymous event; human patrol | NL+OPS+DHL | Civic path remains open | Light/noise, unanswered complaint, or absent maintenance clears event | Patrol+follow-up |
+| SCN-12 | Consumers/Dazhongsi | Low-digital users and small merchants | Synthetic product/budget; paper comparison | DHL+DS+PTC | Zero real transaction | Credential request, bypassed confirmation, or failed withdrawal clears state | Permission+withdrawal receipt |
 
 The four test scenarios [metric:test_scenario_count] begin in the smallest restorable space, and the total is checked by [metric:scenario_card_count]. `visual/assets/jz168-week.schema.json` and `visual/assets/example-week.json` carry the operating fields and example. They do not store faces, continuous trajectories, or participation scores.
 
@@ -246,7 +254,7 @@ Service points do not collect unrelated identity, health, occupation, emotion, o
 
 Jingzhang Time Park [data:geometry/green_space.geojson#GREEN-168] is an ecological spine and a physical weekly timetable. Provisional green area [metric:green_space_area_sqm] and ratio [metric:green_ratio] are design calculations, not statutory values. Tree canopy, runoff, shade, quiet edges, and transverse links organize six segments. Ecological recovery time takes priority over an AI experience.
 
-The public-time ribbon [data:geometry/public_space.geojson#PUBLIC-168] combines area [metric:public_space_area_sqm], opening hours [metric:weekly_public_open_hours], and `m²·h/week` [metric:public_space_weekly_sqm_hours]. Hours count as effective supply only when quiet, maintenance, accessibility, labor staffing, and complaint recovery are met. The metric therefore does not reward all-night opening.
+The public-time ribbon [data:geometry/public_space.geojson#PUBLIC-168] retains its provisional area calculation [metric:public_space_area_sqm], but no longer multiplies it by assumed opening hours. The official directory supports 168 hours per week for the listed existing heritage park [metric:listed_existing_park_open_hours_per_week], not every square metre of the provisional design range. Effective design-area hours and `m²·h/week` remain unknown until each segment verifies access, maintenance, quiet, labor staffing, and complaint recovery [metric:weekly_public_open_hours] [metric:public_space_weekly_sqm_hours].
 
 ### Landmarks without technology worship
 
@@ -304,11 +312,14 @@ Three phases map to [data:geometry/phasing.geojson#PHASE-01]. Near term delivers
 |---|---|---|---|---|
 | Geometry | Site, green, public, building area | EPSG:4548 union [metric:site_area_sqm] | Version-internal recalculation | Statutory area or title |
 | Structure | 3 key areas, 24 parcels, 6 seams, 12 scenarios, 9 projects | GeoJSON/register count [metric:key_area_count] | Completeness | Construction completion |
-| Operation | Open hours, `m²·h/week`, human takeover | Weekly record [metric:weekly_public_open_hours] | Delivery of public time | Public value by itself |
+| Operating contract | 12 services, human/non-AI/stop-reset coverage, 72 branches | Timetable and synthetic receipt [metric:scheduled_ai_service_contract_count] [metric:tabletop_case_count] | Contract and failure-path closure | Field performance or authorization |
+| Field operation | Effective opening, takeover, restoration, path continuity | Future field record [metric:weekly_public_open_hours] | Delivery of public time | Unknown is neither zero nor success |
 | Equity | No-phone completion, barrier events, complaint intake | Anonymous service ticket | Exclusion check | Personal profile or credit |
 | Safety | Boundary event, near miss, stop, restoration time | Incident/reset ticket | Pause/continue decision | Absolute technical safety |
 
-Geometry uses one boundary version, projection, and union-deduplication method. Parcels cover the site without internal overlap; green and public layers may overlap semantically but are unioned separately; footprints are unioned; line length is computed in projected coordinates [depth:metrics_recalculation]. The public weekly supply [metric:public_space_weekly_sqm_hours] counts only hours that satisfy opening, maintenance, quiet, accessibility, and human-service conditions.
+Geometry uses one boundary version, projection, and union-deduplication method. Parcels cover the site without internal overlap; green and public layers may overlap semantically but are unioned separately; footprints are unioned; line length is computed in projected coordinates [depth:metrics_recalculation]. v3 withdraws an unsupported weekly-supply headline. Any future calculation must aggregate versioned segment records for effective area, time, access continuity, maintenance, and labor.
+
+Contract metrics and performance metrics are separate. All 12 contracts contain registered human roles, a non-AI equivalent, and stop/reset fields [metric:contract_human_conductor_coverage_ratio] [metric:contract_non_ai_equivalent_coverage_ratio] [metric:contract_stop_reset_coverage_ratio]; that is a documentation coverage ratio of 1.0. Field service success [metric:field_service_success_ratio] remains unknown. Real personal data used by the tabletop is zero [metric:real_personal_data_used_in_tabletop], and the former cannot substitute for the latter.
 
 The structural contract checks three zones, six booking segments, and seven components [metric:temporal_zone_count] [metric:booking_segment_count] [metric:time_component_count]. State, governance and project-maturity gates are counted separately [metric:schedule_state_count] [metric:governance_role_count] [metric:project_maturity_gate_count]. Scenario-admission gates and first-week stages prevent gaps in the delivery chain [metric:scenario_admission_gate_count] [metric:first_168h_stage_count].
 
@@ -324,8 +335,8 @@ Outcome metrics remain unknown before real operation. Non-AI equivalence, human 
 |---|---|---|---|
 | Brief alignment | Three scopes, six agent tasks, nine projects | `compliance_matrix.json` | Is any official task missing? |
 | Originality | Public-time metric, seven components, state machine | Week schema and figure positions | Does one concept control space and operation? |
-| AI/planning innovation | Full scenario cards, separated powers, non-AI route | Protocol assets | Can AI be paused and appealed? |
-| Feasibility | First 168h, G/C gates, RACI, SLO | `example-week.json`, phasing | Can 12 weeks prove or stop it? |
+| AI/planning innovation | Always-open civic base, three station sections, twelve service contracts | Civic timetable, scenarios, governance | Is the public path open when AI stops? |
+| Feasibility | First 168h, 72-branch tabletop, G/C gates, RACI | Runner, receipt, phasing | Can 12 weeks test, stop, and restore? |
 | Public interest | Accessibility, labor, quiet, offline route | Equity and complaint records | Are non-participants protected? |
 | Risk/compliance | Unknown, minimum data, rights, restoration | Assumptions, constraints, copyright | Is any precision or authority fabricated? |
 | Expression | Isomorphic bilingual text, five figures, HTML, A3/A0 | Manifest and local validation | Can a person understand without JSON? |
@@ -336,11 +347,11 @@ Outcome metrics remain unknown before real operation. Non-AI equivalence, human 
 
 ## Risk, Copyright, and Compliance
 
-The first risk is mistaking provisional boundaries, conceptual footprints, or indicative nodes for an official plan. Every drawing must state “PROVISIONAL / NOT A STATUTORY BOUNDARY,” and areas are design-geometry calculations [source:BOUNDARY-SOURCE]. The second risk is AI overreach. Facial recognition, credit scoring, automated enforcement, diagnosis, unappealable decisions, and out-of-purpose reuse are prohibited. Minimum data, human review, physical stop, and non-AI equivalence are hard gates [assumption:A-AI-001].
+The first risk is treating an already open park as an AI test blank, or reading provisional boundaries, conceptual footprints, or a tabletop PASS as an official plan or field result. Every drawing must state “PROVISIONAL / NOT A STATUTORY BOUNDARY,” and areas are design-geometry calculations [source:BOUNDARY-SOURCE]. The OSM discrepancy is disclosed as a data risk and never used to repair the boundary [assumption:A-OSM-DISCREPANCY-001]. The second risk is AI overreach. Facial recognition, credit scoring, automated enforcement, diagnosis, unappealable decisions, and out-of-purpose reuse are prohibited. Minimum data, human review, physical stop, and non-AI equivalence are hard gates [assumption:A-AI-001].
 
-The third risk is shifting the burden of innovation to residents, disabled people, or workers. Every scenario records non-participant impact, clear-out time, staffing, stop threshold, and restoration. When labor is insufficient, opening is shortened; automation cannot conceal responsibility. The fourth risk is unsustainable operation. Long-term events, investment promotion, policy, budget, and regional collaboration are concepts subject to G5 and confirmed owners, not government arrangements.
+The third risk is shifting the burden of innovation to residents, disabled people, or workers. Layer 0 takes precedence over every booking and device; every scenario records non-participant impact, staffing, stop threshold, and restoration. The fourth risk is unsustainable operation. Long-term events, investment promotion, policy, budget, and regional collaboration remain concepts subject to G5 and confirmed owners. `risk.json` records eight dimensions, mitigations, and human reviewers; policy/data uncertainty, spatial dispute, and implementation complexity remain 5/5 high risks rather than being cosmetically “designed away.”
 
-The fifth risk concerns copyright and AI generation. The submission authors its text, protocols, GeoJSON transformation, and original geometric graphics. External cases are short factual summaries; their plans, images, logos, and long text are not copied. The five Chinese core figures and five English counterparts, both A3/A0 sets, and offline HTML are deterministically rendered from the package GeoJSON, metrics, assumptions, protocols, and matrices; generative imagery is not used as spatial, numerical, or engineering evidence. Four separate text-free concept images were generated through the built-in OpenAI GPT Image 2 channel, manually screened, and used only as `presentation only` atmosphere [assumption:A-IMAGEGEN-001]. Their model, date, prompt scope, reference relation, human edits, and prohibited uses are itemized in `visual/assets/rights-ledger.json` and `report/copyright_statement.md`.
+The fifth risk concerns copyright and AI generation. The submission authors its text, protocols, GeoJSON transformation, and original geometric graphics. External cases are short factual summaries; their plans, images, logos, and long text are not copied. The five Chinese core figures and five English counterparts, both A3/A0 sets, and offline HTML are deterministically rendered from the package GeoJSON, metrics, assumptions, protocols, and matrices; generative imagery is not used as spatial, numerical, or engineering evidence. Three site-specific, text-free concept images were generated on 2026-08-11 through the built-in OpenAI GPT Image 2 channel, manually screened, and used only as `presentation only` atmosphere [assumption:A-IMAGEGEN-001]. Their captioned Chinese and English triptychs are deterministic layouts. Model, date, full prompt record, reference relation, human edits, and prohibited uses are itemized in `visual/assets/rights-ledger.json` and `report/copyright_statement.md`.
 
 “Jingzhang 168” is a competition concept and implies no authorization by government, railway bodies, or organizers. The license is COMMUNITY-DISPLAY-ONLY. No third-party photo, map screenshot, portrait, corporate mark, or unclear font is embedded. Any later external asset requires checking permission, attribution, territory, term, sublicense, and model-training restrictions. Decorative generated text never becomes evidence; Chinese and English figures must agree with narrative and JSON.
 
@@ -373,5 +384,9 @@ Planning, architecture, structure, mobility, utilities, fire, ecology, heritage,
 12. This package's `sources.json`, `metrics.json`, three matrices, GeoJSON, weekly protocol, and copyright statement, which provide the complete machine index and version audit.
 
 13. Repository public task-brief draft `brief/public-brief.md`, used only for background aspirations and public-data boundaries [source:PUBLIC-BRIEF-DRAFT].
+
+14. Beijing planning, parks, heritage, and Haidian public pages for heritage-park planning, the current 24-hour listing, Qinghuayuan protection, and renewal context [source:OFFICIAL-PARK-PLAN-2021] [source:OFFICIAL-PARK-DIRECTORY-2025] [source:OFFICIAL-QINGHUAYUAN-HERITAGE].
+
+15. Beijing agentic-AI policy, personal-information protection, and Haidian renewal guidance, used only for governance boundaries and implementation gates [source:OFFICIAL-BEIJING-AGENTIC-AI-2026] [source:OFFICIAL-PIPL] [source:OFFICIAL-HAIDIAN-RENEWAL-GUIDE-2025].
 
 References support only adjacent judgments. A case shows that a mechanism has been used somewhere; it does not establish suitability for Jingzhang. A standard provides a review framework; it does not prove professional or administrative confirmation. If a source is withdrawn, updated, or found out of scope, its dependent judgment moves to `paused` until reviewed and either restored or archived.

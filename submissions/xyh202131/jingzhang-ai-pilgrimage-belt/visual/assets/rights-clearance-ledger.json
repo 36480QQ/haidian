@@ -2,8 +2,8 @@
   "schema_version": "1.0.0",
   "ledger_id": "RIGHTS-01",
   "title": "Jing-Zhang V2 file-level rights status ledger",
-  "as_of": "2026-08-10",
-  "scope": "All 68 files declared by this submission, including manifest.json, this ledger, the source-rights evidence schema/instance, the implementation handoff matrix, the submission-use rights matrix, and the three-file T-02 synthetic replay pack; 67 entries are non-manifest content files.",
+  "as_of": "2026-08-11",
+  "scope": "All 70 files declared by this submission, including manifest.json, this ledger, the source-rights evidence schema/instance, the implementation handoff matrix, the submission-use rights matrix, the twin-track editable figure pair, two bilingual key-area editable figure pairs, and the three-file T-02 synthetic replay pack; 69 entries are non-manifest content files.",
   "evidence_contract": {
     "source_rights_schema": "source-rights-evidence.schema.json",
     "source_rights_instance": "source-rights-evidence.json",
@@ -27,8 +27,8 @@
     "mixed_source_derivative_pending_independent_review": "The file combines package-authored material with repository or third-party source traces and remains pending independent review."
   },
   "file_coverage": {
-    "expected_manifest_entries": 68,
-    "expected_non_manifest_entries": 67,
+    "expected_manifest_entries": 70,
+    "expected_non_manifest_entries": 69,
     "coverage_rule": "Every manifest path appears in exactly one compatibility asset_group and exactly one asset_record. Path coverage and resolvable declared parent links do not equal an exhaustive dependency graph or legal clearance.",
     "asset_groups": [
       {
@@ -140,6 +140,7 @@
           "assets/figures/metrics-evidence.png",
           "assets/figures/mobility-bluegreen.png",
           "assets/figures/site-overview.png",
+          "assets/figures/site-overview.svg",
           "assets/figures/innovation-system.png",
           "assets/figures/implementation-roadmap.png",
           "assets/figures/key-areas.svg",
@@ -153,12 +154,13 @@
           "assets/figures/metrics-evidence.en.png",
           "assets/figures/mobility-bluegreen.en.png",
           "assets/figures/site-overview.en.png",
+          "assets/figures/site-overview.en.svg",
           "assets/figures/innovation-system.en.png",
           "assets/figures/implementation-roadmap.en.png"
         ],
         "limits": [
-          "No standalone source font file is shipped by the package. The four PDFs contain embedded NotoSansSC subset font programs; the A3 PDFs also reference unembedded Helvetica. HTML requests system font stacks, and the concrete fonts resolved while rasterizing the four checked-in SVG files to PNG were not recorded. These facts do not establish license or embedding compliance.",
-          "Editable package-authored SVG sources are declared for the bilingual key-areas and key-area-sections pairs. Editable sources exist for Markdown, HTML, JSON, and GeoJSON, but no separate editable vector or layout source is declared for every other PNG or PDF.",
+          "No standalone source font file is shipped by the package. The four PDFs contain embedded NotoSansSC subset font programs; the A3 PDFs also reference unembedded Helvetica. HTML requests system font stacks, and the concrete fonts resolved while rasterizing the six checked-in SVG files to PNG were not recorded. These facts do not establish license or embedding compliance.",
+          "Editable package-authored SVG sources are declared for the bilingual key-areas, key-area-sections, and site-overview pairs. Editable sources exist for Markdown, HTML, JSON, and GeoJSON, but no separate editable vector or layout source is declared for every other PNG or PDF.",
           "The conceptual JZ logo grammar has not received trademark or production-brand clearance."
         ]
       }
@@ -219,7 +221,7 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "d37fa67e4a1620629416c998a520e1d38007f914f8f48bab5fdcb60621852264",
+        "digest": "82876a009c032aade8bb4c25d6d83bbf4d3372c19a21d928f21d94735346f719",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -296,7 +298,7 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "db552ab850da2c37dc70ab8f7ab8a507947553c047322d79efc78d3345006181",
+        "digest": "179f2438875ce03af9200a382698beda1110dcfe5b4f3a311585dac25c10037a",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -407,7 +409,7 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "4a3f30ce71fd173298729b47e50cd91892625d6790851890c4af9ca9b6dff930",
+        "digest": "71c3050725f5152313d4d9edb48af9829bd2470f2a7e572ebbb82d625fabe036",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -528,7 +530,7 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "93c4e0e385b605ce56792462c154a2761d73b17153772e0e64eaf1c840483864",
+        "digest": "e995148148cfd0271deef6206f78a231bd6004bcb30b14609ce3d23802c66a60",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -575,7 +577,7 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "17d8e72e8771c5eacfda1024354d5a4abe2921a98d123713e80773a4703f0b05",
+        "digest": "76e9fae51ce7c1e56d21ceb0f3bc685852d73302c4c5a92b8935e5eafec438f5",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -743,7 +745,7 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "6277d5bef743830af46e2a8f94f8f0b485e98ba8c4633feb7ebb860a9e63ba42",
+        "digest": "d5fcbed12ea024d4568c77145eab4a5bae8323a74229d769c643e50062c75435",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -1170,7 +1172,7 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "36434af02dd72ec072e92898e9b22b76120cbd1e8d361f2dc9bf7cb88b42a61f",
+        "digest": "cf0644665d905e48df77328220942720785aa0f3ddb3ceeac1ca6f6dea6d8e0c",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -1224,7 +1226,7 @@
         "algorithm": null,
         "digest": null,
         "digest_status": "not_applicable",
-        "reason": "The ledger cannot carry a digest of itself without creating an unsatisfiable self-reference."
+        "reason": "The rights ledger cannot carry a digest of itself."
       },
       "source_lineage": {
         "source_ids": [
@@ -1398,7 +1400,7 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "7c25d4583671a0c9d6c4b92dfc0dca5f38cee70ad8fb6a37f988fcb1895c2e72",
+        "digest": "dc3ad591dd42f8c195ce1875966531d10a9449b1d8a6f3f12b653542424307e9",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -1490,7 +1492,7 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "f794ea6233c2be58168345c7363ed761875f2dddba06e60ef08aaf5bd152f707",
+        "digest": "aea4d4353ea6a8dca110eb1c32fe82ef008a593543a04b33dc8e54655a12a099",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -1538,7 +1540,7 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "935f7f6adbcf242e16ee066c36198470d4fcae8db3c75a5947fd5d3eb6b3b1be",
+        "digest": "9a6342689ecf2eb4ea2f68c04338468dea643753efcb114eacef2ccf4a778714",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -1589,7 +1591,7 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "3c9d26af21cff6af7eb023f51c34f72b39fb06ae17b9e82ff5740ec4f1169667",
+        "digest": "da5e47ff081f9cd135fc623c0ff939cffada851612ca4f1a6ae7b3cf9128bb39",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -1658,7 +1660,7 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "64291f10c05b33905ff97934eb58c6a491d7bcaedb0d2189d531e352a6837cd0",
+        "digest": "256aa29b0fb218f2a1354eb76c6e898a5b514cd327ad4cff2404426b5afc26a1",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -1723,7 +1725,7 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "8c9b246e975ae67e7368ea44c618e8715bcfa840de605c9435f1b4ec6b9583a5",
+        "digest": "bd4bf29aa61f209a77bf0f636356cac04e32a87465064b63a246bd4410b14c49",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -1792,7 +1794,7 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "7b271907c7bfcdb291d0b64355afa9645edfbb1c44ca3bc70859f40defcaccd6",
+        "digest": "8dd2808d7bf0597192d1889d1063cfe46698592bb60120e08c0403860248f924",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -1847,7 +1849,7 @@
       "origin_status": "package_authored_editable_source_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "ee97f9074d1bd0bfdad51ead0498e97678cec78ccbfa96de596dfdea6d872ea0",
+        "digest": "bc5eeae7ce8ba7bfe970a23e5be5b394605b52b2fe29bfe4a1f4d31c21cb8c71",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -1905,7 +1907,7 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "bcffb9bca5d26933e68b293e72f18a45f899c25905ef25867111406b33bf554f",
+        "digest": "02d7ffbcfa4658f5fcc2e4ef935714254fbad08cd249141a290f23facc4306db",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -1960,7 +1962,7 @@
       "origin_status": "package_authored_editable_source_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "424ee3054ac02ffcde61fd997fd3ee7bf2602a857e20400604dda126a3f39c10",
+        "digest": "2042192b356990e25600f5c1704125c8f0bd302fc01f09ca2f0669fa433ec994",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -2181,7 +2183,7 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "0010c6fbe094529aec3feb23358ec5a34abfd962f55f37341d621850d11ba8af",
+        "digest": "34d00898ac7b61735cfeed9ffc5d9aa99687cac174d6f12d88a11eb8f51a87f9",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -2760,7 +2762,7 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "5526b05547db7a9b2397530233b29f552bec0f2c22fcc30c777ec15df84a2629",
+        "digest": "7117001626dffa1f05e89c10e3ae837e316248c470e7d3bfeb28aa0ee2ee2467",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -2837,7 +2839,7 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "988ed2a5792cdb91aa218ee16b74dd72a6984276e4ec130996f512a435861f0f",
+        "digest": "7cd4a0ca22a6de95c64884a2bc0cb5d76f08b911665f7e08ea14d082aad067e4",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -2929,7 +2931,7 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "6d851b5218a2b9e2bb0967a7cd78c2a44cd4ebb9a2fabfd5cbe2a1626ff7eab2",
+        "digest": "0f625a5252b055b4314506512d190ee484ee956c382923c9b9d2e2467de405c5",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -2998,7 +3000,7 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "5fdf32d0991a2460847373406b30564bcd75414ddd6f4bdd21b62d9825cf37f8",
+        "digest": "fb0fa42920cf4057fd27c8d25d8a0bab1585edb91a1886c2bf44daffe9007aee",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -3067,7 +3069,7 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "2866a3d8b0eed5de7f1ddb9c65eac3c133b9eb9aca764b5ce2dbd8484ef28da3",
+        "digest": "cc56d5ccb8730d0dde63d6d9f950d3ba0f5e1819dfdb36020de0a574f556d958",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -3240,7 +3242,7 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "875e468f8dadd6f2f1599be1046363ae765f31df2aec8d0e197607b46ec9fe71",
+        "digest": "1dca0b3be6f8be121db7f0b9dece26e0696e765d94dfad50dd865b08a869df9f",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -3295,7 +3297,7 @@
       "origin_status": "package_authored_editable_source_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "1694275a6be880587a09d580ec987f2497d626480906893843dd062c6aa13d0a",
+        "digest": "08dc9845678cf3458f99eb7e56d022d8d7bd2ea47fb8ea0518da19f43e4d0f63",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -3353,7 +3355,7 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "bbd40510039cd1e271bf3273c2909291e1213557df355aee0db5433db9279ab6",
+        "digest": "7bd1fb45a7deefa9105e5f806a98124deb79fb4035e4ea0eae51309613b124ba",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -3408,7 +3410,7 @@
       "origin_status": "package_authored_editable_source_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "451a6f11eb300ae164ef7b47d6ac3711ac61c57c85bdd85406d8e1ed8bb3b134",
+        "digest": "f10bdce1343901ae6a8b61f3663f199f919b362d55772be4a9a17882ea45f435",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -3629,7 +3631,7 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "2f65e3302b647d2b3d09f34dcd9425b0eb4df83ff342f27e6d73d567e7d41626",
+        "digest": "039b81296427712806e0ffee130bb58def3ad775f98b2e99a6858677474f0a24",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -3988,6 +3990,112 @@
         "RIGHTS-OPEN-02"
       ],
       "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-069",
+      "path": "assets/figures/site-overview.svg",
+      "role": "proposal_figure_editable_source",
+      "language": "zh",
+      "asset_class": "generated_visual_source",
+      "origin_status": "package_authored_editable_source_pending_independent_review",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "9ce526753dae4acb0799cc1c516a2970ec10ce768ca542ff3851009edf3383eb",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [
+          "AGENT-TASKBOOK",
+          "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605"
+        ],
+        "parent_asset_refs": [
+          "proposal.md",
+          "visual/assets/key-area-evidence-matrix.json",
+          "assets/figures/site-overview.png"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX",
+        "TOOL-CHROME"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "package_authored_svg_editable_source",
+        "evidence_ref": "../../report/narrative.md#reproduction-commands",
+        "limitation": "The SVG is a conceptual relationship diagram, not an engineering drawing; font resolution and independent rights review remain pending."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-04"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-070",
+      "path": "assets/figures/site-overview.en.svg",
+      "role": "proposal_figure_editable_source",
+      "language": "en",
+      "asset_class": "generated_visual_source",
+      "origin_status": "package_authored_editable_source_pending_independent_review",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "48c75b7b5fde794c94e437211a81d26baffa35b617611dc05fd414f2393307d6",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [
+          "AGENT-TASKBOOK",
+          "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605"
+        ],
+        "parent_asset_refs": [
+          "proposal.en.md",
+          "visual/assets/key-area-evidence-matrix.json",
+          "assets/figures/site-overview.en.png"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX",
+        "TOOL-CHROME"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "package_authored_svg_editable_source",
+        "evidence_ref": "../../report/narrative.md#reproduction-commands",
+        "limitation": "The SVG is a conceptual relationship diagram, not an engineering drawing; font resolution and independent rights review remain pending."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-04"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
     }
   ],
   "third_party_and_tool_boundaries": [
@@ -4048,7 +4156,7 @@
     {
       "id": "RIGHTS-THIRD-07",
       "material": "Fonts resolved during SVG-to-PNG rasterization",
-      "scope": "The bilingual key-areas and key-area-sections SVG/PNG pairs.",
+      "scope": "The bilingual key-areas, key-area-sections, and site-overview SVG/PNG pairs.",
       "declared_svg_font_stack": "Arial, Microsoft YaHei, Noto Sans CJK SC",
       "status": "renderer_resolution_unrecorded",
       "limit": "The concrete font files selected by the renderer are unknown; checked-in pixels and editable SVG text do not by themselves prove font-license compliance."
@@ -4073,7 +4181,7 @@
     {
       "id": "RIGHTS-OPEN-04",
       "priority": "P1",
-      "item": "Complete the editable-source inventory. The bilingual key-areas and key-area-sections SVG pairs are included as package-authored editable sources, but complete editable vector or layout source coverage for the other PNG/PDF outputs remains unavailable."
+      "item": "Complete the editable-source inventory. The bilingual key-areas, key-area-sections, and site-overview SVG pairs are included as package-authored editable sources, but complete editable vector or layout source coverage for the other PNG/PDF outputs remains unavailable."
     },
     {
       "id": "RIGHTS-OPEN-05",
