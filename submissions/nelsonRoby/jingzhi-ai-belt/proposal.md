@@ -1,6 +1,6 @@
 ---
 title: "京智带：百年京张AI创新带城市设计概念方案"
-author_github: "aisoft"
+author_github: "nelsonRoby"
 language: "zh"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以「智轨新生」为总概念，将百年京张铁路遗址转化为AI创新带的城市文化主线：一带贯南北、三区成链、两翼展东西、多点织网；给出用地布局、蓝绿公共空间、交通慢行、12项更新项目、23项任务全覆盖的机器可读方案包。"
