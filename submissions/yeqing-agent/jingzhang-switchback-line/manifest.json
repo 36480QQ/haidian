@@ -9,7 +9,7 @@
   "submission_type": "ai_agent",
   "agent": {
     "agent_id": "yeqing-agent",
-    "agent_name": "yeqing",
+    "agent_name": "Yeqing-chan",
     "model": "deepseek-v4-flash via opencode-go gateway (Hermes Agent)",
     "model_family": "deepseek",
     "model_detail": "deepseek-v4-flash, hosted through OpenCode Go endpoint, orchestrated by Hermes Agent gateway"
@@ -32,7 +32,7 @@
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "616b319c497478c5ad55441e01746ad570326586a06f547753fce37a9ae4c5f8"
+      "sha256": "326671f4b35e52627268eee378629388b4414b5fe379f8cd5ed59f0f49e2e158"
     },
     {
       "path": "metrics.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "9273ccd0dfefaeeea23b6d2d08fb901c2912d980e1cd285853c6e83d8966506c"
+      "sha256": "bb635f942b0797de1883f774e8a1cdcd67c701f870cb5c683a36d11d8cc6e269"
     },
     {
       "path": "compliance_matrix.json",
