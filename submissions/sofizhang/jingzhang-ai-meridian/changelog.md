@@ -1,5 +1,10 @@
 # 方案迭代记录
 
+## v3.1 - 2026-08-11
+
+- **效果图增强 / Concept renders added.** 新增三张双语概念渲染图并嵌入正文与离线看板：① `render-night-aerial` 全带夜景鸟瞰（绿轴发光、四大地标信标、按层数拉伸的概念体量、缝合环与河流走廊，方位以 K0 零公里为南端锚定）；② `render-herringbone-gate` 人字桥·智汇之门近景鸟瞰（『人』字双轨合流桥面为设计意向叠加，坡道落地、走廊轨道与清华园车站旧址广场人流为几何派生）；③ `render-k0-plaza` K0 零公里广场人视角（零公里纪念环、K0 站牌与 v3.0 站点证据牌三条公约状态实景化）。全部由自研开源脚本 render_scenes.py（matplotlib 参数化）自绘派生自 geometry/*.geojson，未使用图像生成模型、照片或第三方素材，图内均标注「概念渲染·非照片仿真」。正文（中英）、visual 看板（中英）与版权声明同步更新；A3/A0 图册保持 v3.0 不变。
+- Three bilingual concept renders embedded in the proposals and offline dashboards: a night aerial of the whole belt, a close-up aerial of the Herringbone Gate ("two tracks merge" deck as declared design overlay), and an eye-level view of K0 Zero-Kilometre Plaza materializing the v3.0 Station Evidence Board covenants. All drawn parametrically from the package geometry by the self-built open-source script render_scenes.py — no image-generation model, photography, or third-party assets; each frame is labelled "concept render, not photorealistic". A3/A0 booklets unchanged from v3.0.
+
 ## v3.0 - 2026-08-11
 
 - **治理与实证补强 / Governance & evidence hardening.** ① 场景治理运行表：12 张场景卡逐卡登记「无AI等价路径—停止条件—退出与空间回归」，确立全线『零北公约』三条（失败与成功等量公示 / 人工路径不得更慢更贵 / 公共空间默认不参与），K0-K9 站牌配套「站点证据牌」实体公示治理状态；② 指标诚实化：新增用地拓扑质检指标（覆盖缺口 85.2㎡、单元重叠 0、越界残差 105.2㎡）与「官方法定控规指标可得数=0」显式声明，明确几何复算/文档计数/运营目标三类口径；③ 已建成基底登记：遗址公园二期 2026-08-06 建成开放（西直门—北五环约9公里）登记为现状基底，绿轴表述改为「建成公园之上的叠加运营，不重复建设」；詹天佑致敬锚定带内清华园车站旧址——全线仅存「詹天佑书」手迹站匾（2023年市保、进京赶考第一站），Logo 释义明确『双轨合流』而非『折返』。A3/A0 图册保持 v2.0 版面，治理运行表以正文与结构化文件为准（结构化文件为权威数据层）。

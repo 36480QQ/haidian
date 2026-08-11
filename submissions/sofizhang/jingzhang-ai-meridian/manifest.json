@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "f66c6a5d8968b0f3848bd4ddbbc67e63df9d88b92fede1f5da48e90f544bc5a0"
+      "sha256": "0378790fafaffb812dd863f562b613772a3d6b6483d9b025e73876ee4c934a96"
     },
     {
       "path": "agent.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "18f296d77efa8fbf3fe2cbb59880a1436bf3da51016132986059384dab6b2d6f"
+      "sha256": "a60a59420124459468913687390749f3ec7a713ef3aab867fb22dc1cb12e88c3"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "89d718207cffd47e18ae84847c0ec140d4cbaa81be83f83367512fa133a99be3"
+      "sha256": "0c6077b068e06cec07c74edf5b615a9d0d80bb3f3cf23ef69c3c8ba7c95a0d7b"
     },
     {
       "path": "report/narrative.md",
@@ -93,7 +93,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "5701b6b69fee324f79d553ce2b29c01c16bd1fe1395664a963e7c86f19a90bb6"
+      "sha256": "38d3f8c73843d9009bf65f3d83adcc6d4fac0baf449bb461b5b0de522d45f570"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -114,7 +114,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "a6d94f6c7f22d80bd882aee5cd30147028596deda4cec01aae6ffce91de7a82c"
+      "sha256": "3b79518173b0929639601682dda81976098c15489af6e1aee656769a909be753"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "8f0a65228fdcee9a68ec0b4a0b7b2edb8aac9ad90df3fbe0dae6b65cb62f6aec"
+      "sha256": "962d03b6ef01740a47590106d48d07e4305dbeae42908aab904ca0cae97d716a"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "e8579236a50f4fb63dce3e8b2d9064f7c5b11282d9d0c1eaa771a9471c3b8db2"
+      "sha256": "d11675f18959ad08f3b73017bef5fb37c205fe3a4321caf7d5949f95a124a836"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "0cb8d844568cde27c8353f6a5821536e507111ce29daa79c60006cb4e8e07625"
+      "sha256": "43d8978cb53c97661eb432f0d235dcf0baeb66b96b9a43a7dc5afe511a6c6cdc"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -284,6 +284,51 @@
       "language": "en",
       "translation_of": "assets/figures/site-overview.png",
       "sha256": "ef7429e9a5cecdb7c96e5c9262a28f4747e5df450c4fb56fb7704d449701b53d"
+    },
+    {
+      "path": "assets/figures/render-night-aerial.png",
+      "role": "professional_render",
+      "required": false,
+      "language": "zh",
+      "sha256": "341be02a04d29b23a8bf026ca4d67df0519df842f1837316c7c8d48c6ace4846"
+    },
+    {
+      "path": "assets/figures/render-herringbone-gate.png",
+      "role": "professional_render",
+      "required": false,
+      "language": "zh",
+      "sha256": "69482c4c45e8bdac8aa761d4b2748157bb16c8d22665e5bd44008299fe27c1a7"
+    },
+    {
+      "path": "assets/figures/render-k0-plaza.png",
+      "role": "professional_render",
+      "required": false,
+      "language": "zh",
+      "sha256": "1e0b364ef64b435f849eba4879cb423e8b724a86787f689b0bf93a62e644b153"
+    },
+    {
+      "path": "assets/figures/render-night-aerial.en.png",
+      "role": "professional_render",
+      "required": true,
+      "language": "en",
+      "translation_of": "assets/figures/render-night-aerial.png",
+      "sha256": "4703aac4a799811602c7dbd4bf71da3540bc1308a366bf75307575141462e8cc"
+    },
+    {
+      "path": "assets/figures/render-herringbone-gate.en.png",
+      "role": "professional_render",
+      "required": true,
+      "language": "en",
+      "translation_of": "assets/figures/render-herringbone-gate.png",
+      "sha256": "520f7c888a0ae7d614cee9c96ce6f33a370751af34582538ce26949e43c038a1"
+    },
+    {
+      "path": "assets/figures/render-k0-plaza.en.png",
+      "role": "professional_render",
+      "required": true,
+      "language": "en",
+      "translation_of": "assets/figures/render-k0-plaza.png",
+      "sha256": "09122e4b14d3b28ebd1f02efd181bd470e3634ddc992c986d34278068d6a3ba8"
     }
   ],
   "validation_claim": {
