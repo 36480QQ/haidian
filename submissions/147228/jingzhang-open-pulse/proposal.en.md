@@ -7,12 +7,12 @@ summary: "With Jing-Zhang Heritage Park as the public base and three key areas a
 translation_of: "proposal.md"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
-iteration: "v4.2"
+iteration: "v4.3"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
 
-> **Package version note:** This package is iteration v4.2; v3.3 names the retained spatial-object and drawing-export layer. v4.2 keeps the v4.1 trade-off register, human-capacity gates and process screening, then closes the provenance readback for model-output numbers visible in the bilingual proposal; it changes no spatial objects, area metrics, source classifications or implementation boundary. Model outputs remain neither current conditions, forecasts, causal estimates, field performance nor official scores.
+> **Package version note:** This package is iteration v4.3; v3.3 names the retained spatial-object and drawing-export layer. v4.3 keeps v4.2 provenance readback and bilingual boundaries, then adds a spatial-lineage register and deterministic hash check for nine GeoJSON layers; it changes no spatial objects, area metrics, source classifications or implementation boundary. Model outputs remain neither current conditions, forecasts, causal estimates, field performance nor official scores.
 
 # Jing-Zhang Open Pulse: A Verifiable AI Innovation Public Belt
 
@@ -429,6 +429,24 @@ The v1.6 time-series section is retained in the Chinese source document and its 
 ## v1.7 Evidence-to-Delivery Layer: From Concept to Reviewable Deliverables
 
 This section presents the package's evidence-to-delivery layer:
+
+### 0. Spatial layer version and coordinate baseline
+
+The package records the path, feature count, geometry type, layer value, geometry role and SHA-256 of all nine GeoJSON layers in `visual/assets/spatial-lineage-register.json`. The register is checked against `manifest.json` and the raw geometry files, so a reviewer can identify the delivered spatial objects before reading derived areas, lengths or ratios.
+
+| Layer | Features | Geometry | Current role | Boundary of use |
+| --- | ---: | --- | --- | --- |
+| `site_boundary.geojson` | 1 | Polygon | provisional_constraint | Working scope, not an official redline or precise scoring area |
+| `key_areas.geojson` | 3 | Polygon | provisional_constraint | Three-area interface, not an official key-area boundary |
+| `land_use.geojson` | 8 | Polygon | design_proposal | Provisional design partition, not statutory zoning |
+| `buildings.geojson` | 9 | Polygon | design_proposal | Conceptual footprints, not an existing-building survey |
+| `roads.geojson` | 4 | LineString | design_proposal | Conceptual roads and slow network, not engineering alignments |
+| `green_space.geojson` | 5 | Polygon | design_proposal | Conceptual connected segments, not ecological evidence |
+| `public_space.geojson` | 17 | Point / Polygon | design_proposal | Public rooms and scenario anchors, not deployed facilities |
+| `phasing.geojson` | 3 | Polygon | design_proposal | Conditional bands, not an approved construction schedule |
+| `constraints.geojson` | 6 | LineString / Point | provisional_constraint | Inputs awaiting professional confirmation, not legal controls |
+
+`EPSG:4548` is declared only in projected length/area formulas in `metrics.json`. The current GeoJSON files do not embed a CRS member, so the formula reference is not presented as coordinate certification. Run `node visual/assets/run-spatial-lineage-register.js --check` to verify layer coverage, feature counts, geometry types, roles, raw hashes and manifest hashes. When official boundary or key-area polygons arrive, regenerate all nine layers, metrics, reports, drawings and HTML together; replacing one file alone is incomplete. `[data:visual/assets/spatial-lineage-register.json]` `[data:visual/assets/run-spatial-lineage-register.js]`
 
 - `visual/assets/taskbook-crosswalk.json` gives every agent.1–agent.6 requirement one unique section, artifact and acceptance test.
 - `visual/assets/regional-ecosystem.json` and its figure turn regional cooperation into an eight-mechanism loop with explicit conceptual status.
