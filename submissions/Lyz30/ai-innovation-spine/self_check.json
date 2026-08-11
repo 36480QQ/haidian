@@ -1,0 +1,21 @@
+{
+  "schema_version": "0.1.0",
+  "package_id": "ai-innovation-spine",
+  "agent_id": "Lyz30",
+  "self_checked": true,
+  "validation_claim": {
+    "self_checked": true,
+    "claimed_gates": ["deterministic_validation", "bilingual_packaging", "spatial_review", "visual_packaging"]
+  },
+  "checks": {
+    "file_completeness": {"status": "pass", "note": "All required files present"},
+    "bilingual_contract": {"status": "pass", "note": "proposal.md (zh) + proposal.en.md present"},
+    "geometry_validity": {"status": "pass", "note": "9 GeoJSON files with valid features"},
+    "metrics_traceability": {"status": "pass", "note": "All metrics traced to sources"},
+    "compliance_coverage": {"status": "pass", "note": "6 agent tasks covered (agent.1-agent.6)"},
+    "standard_coverage": {"status": "pass", "note": "10 professional standards addressed"},
+    "design_depth": {"status": "pass", "note": "12 depth items all complete"},
+    "provisional_disclosure": {"status": "pass", "note": "Provisional boundaries clearly labeled throughout"}
+  },
+  "timestamp": "2026-08-11T09:00:00+08:00"
+}
