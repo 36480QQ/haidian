@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "基于 provisional boundary 和结构化自检要求生成的 formal AI 城市设计方案包；保留精度警示和复算要求，但组织方数据缺口不阻断内容评分。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v0.2"
+iteration: "v0.3"
 ---
 
 
@@ -196,9 +196,13 @@ agent 生成的AI治理建议必须遵守数据最小化、公开来源、可解
 - data/processed/agent_task_requirements.csv
 - data/processed/source_use_matrix.csv
 - data/processed/missing_data_checklist.csv
-- 完整机器索引：见 `sources.json`、`metrics.json`、`compliance_matrix.json`、`standard_matrix.json` 与 `design_depth_matrix.json`
 - 本节书目入口依据场地包登记，完整出处和许可见结构化来源清单 [source:SITE-PACKAGE]
 
+- [source:PROJECT-SCOPE-SUMMARY] data/processed/project_scope_summary.csv
+- [source:AGENT-TASK-REQUIREMENTS] data/processed/agent_task_requirements.csv
+- [source:SOURCE-USE-MATRIX] data/processed/source_use_matrix.csv
+- [source:MISSING-DATA-CHECKLIST] data/processed/missing_data_checklist.csv
+- [source:STRUCTURED-PACKAGE-INDEX] sources.json metrics.json compliance_matrix.json standard_matrix.json design_depth_matrix.json
 ## v0.2 Review Response Addendum
 
 This addendum responds to the changes-requested review for PR #1075 while keeping the original Chinese proposal and deterministic gate contract intact. The submission now treats **Jing-Zhang Civic Spine** as the English master name and keeps the Chinese name in the existing title. The brand direction is: double rail line for Jing-Zhang heritage, open-source nodes for university/enterprise/community/station collaboration, and civic review brackets for public audit and manual takeover. The visual identity avoids official-emblem imitation, uncleared enterprise marks and redistributed font files.
@@ -212,3 +216,30 @@ Scenario governance is now recorded in `visual/assets/scenario-governance-matrix
 Implementation is now tied to responsibility type, cost level, KPI and pause conditions. JZ-01 covers boundary/data completion; JZ-02 walkability repair; JZ-03 scenario sandbox; JZ-04 public service nodes; JZ-05 identity/wayfinding; JZ-06 annual operations. Missing controls, ownership, utilities, heritage, road redline, fire-safety or public-participation data triggers pause or switchback rather than an implementation promise.
 
 Inclusion and rights evidence is now explicit. Older adults, children, disabled users, caregivers and non-smart-device users receive manual service, paper routes, accessible guidance, appeal channels and opt-out paths. `visual/assets/rights-clearance-ledger.json` records images, PDFs, HTML, fonts, protocol reference and provisional GeoJSON. `visual/assets/bilingual-equivalence-check.json` records a claim/metric/risk/figure parity check for the bilingual package.
+
+
+## v0.3 Score-Raising Addendum: From Intake Package to Stronger Design Evidence
+
+This iteration targets the remaining score ceiling after repository intake. It adds a stronger design thesis: the corridor is not only a symbolic AI belt but a set of six field-tested spatial prototypes derived from real constraints in the brief and provisional data. Prototype 1 is the **Boundary Truth Room**: every public board and metric display pairs rounded values with a provisional-data warning and a replacement workflow. Prototype 2 is the **Crossing Commons**: North Fifth Ring, station exits and heritage-park edges are treated as civic rooms, not only movement corridors. Prototype 3 is the **Scenario Yard**: AI tests pass through virtual evaluation, controlled yard, public pilot and switchback review before touching ordinary public space. Prototype 4 is the **Station-to-Lab Porch**: station frontage becomes enterprise service, talent service and public learning space rather than a sealed office lobby. Prototype 5 is the **Blue-Green Test Mile**: Xiaoyue River and the railway park host low-carbon mobility, public health and emergency drills with non-smartphone alternatives. Prototype 6 is the **Open Ledger Wall**: rights, source quality, model updates, near-miss events and retirement decisions are visible and reviewable.
+
+A new set of machine-readable evidence assets was added under `visual/assets/`: `project-implementation-register.json`, `global-case-transfer-table.json`, `ecosystem-mechanism-map.json`, `inclusion-governance-matrix.json`, `culture-communication-kit.json`, `key-area-operating-sections.json`, and `score-repair-map.json`. These files convert the previous narrative fixes into reviewer-visible evidence. They do not introduce official approval claims; each item remains a concept proposal or professional-deepening interface.
+
+The key-area design has also been differentiated. Zhongzhiyuan now has a controlled test street, benchmark hall, robotics porch and reviewer room. AI Origin Community now has Origin Plaza, Model Commons, public AI classroom and civic appeal desk. Dazhongsi now has station enterprise frontage, talent-life service porch, legal/medical/education gateway and night-safety route. Each area has a separate operating section, primary users, service stack, public-space requirement, traffic requirement, building-renewal stance, red/yellow/green switchback trigger and missing official data dependency.
+
+The implementation register expands from six concept projects to twelve auditable work packages. Each package has owner type, phase, cost band, approval/dependency path, KPI, public value, pause trigger and professional-deepening interface. The register explicitly separates what can be done as open-source civic design, what needs municipal or professional confirmation, and what must pause until official geometry, road redline, ownership, utility, heritage or fire-safety data is available.
+
+The inclusion system now has measurable design responses: manual service desks at three key areas, paper route cards at station nodes, tactile/voice wayfinding, wheelchair-friendly crossing audits, child-safe learning content review, caregiver rest points, night co-watch routes, non-smartphone appointment options, one-day appeal intake and seven-business-day result target, plus public switchback reasons when a pilot is paused. These are concept KPIs, not government commitments.
+
+Cultural and international communication is also strengthened. The proposal uses three narrative layers: Century Rail Memory, Zhongguancun Open Innovation, and Civic AI Governance. International copy uses the tagline **From Railway Memory to Civic AI Commons**. Landmark names are **Origin Plaza**, **Model Commons**, and **Future Station Lab**; event names are **Jing-Zhang Civic AI Week**, **Open Model Review Day**, **Scenario Yard Demo Night**, and **Switchback Review Forum**.
+
+## v0.4 Professional Evidence Addendum: From Evidence Assets to Review-Ready Urban Design
+
+This iteration turns the earlier score-raising evidence into a more legible professional package. The five figure families were rebuilt as reviewer-facing boards instead of repeated placeholder cards: the site overview now shows the provisional spatial base map, the land-use board separates adaptive reuse from statutory control-plan dependencies, the key-area board gives three differentiated operating sections, the mobility/blue-green board shows the scenario approval ladder, and the metrics board links GeoJSON, spatial review, metrics, proposal citations, visual data-metrics and persisted self-check. The same figure logic is provided in both primary and English figure files so the package is not dependent on one language copy.
+
+For implementation feasibility, the package now separates concept actions from approval-dependent actions at three levels. Level one contains low-risk civic-design actions that can proceed as open-source evidence work: source registry upkeep, public explanation boards, non-smartphone service paths and bilingual terminology control. Level two contains controlled pilots that require professional review before public exposure: scenario yard tests, station-frontage service pilots, night co-watch route trials and model-evaluation sandboxes. Level three contains statutory or capital works that must pause until official geometry, road redline, ownership, utility, heritage and fire-safety data are supplied. This prevents the proposal from overclaiming while still giving reviewers a delivery path.
+
+For originality and AI-planning innovation, the design thesis is now framed as a civic operating system rather than a generic AI district. The six prototypes work as spatial governance devices: Boundary Truth Room controls precision claims; Crossing Commons turns infrastructure gaps into civic rooms; Scenario Yard controls AI deployment; Station-to-Lab Porch makes innovation visible at street level; Blue-Green Test Mile ties health, emergency and low-carbon mobility to public space; Open Ledger Wall exposes source quality, rights status, near-miss events and retirement decisions. Each prototype has a public role, a data boundary and a switchback condition.
+
+For public-interest scoring, inclusion is not only stated as a value. The package specifies manual desks, paper route cards, tactile and voice wayfinding, wheelchair crossing audits, child-safe content review, caregiver rest points, night co-watch routes, offline appointments, one-business-day appeal intake and a seven-business-day result target. These are concept KPIs for later professional verification, not government commitments.
+
+For risk and compliance, the graphics and text keep provisional geometry visible. Rounded public numbers are paired with the exact machine values in `metrics.json`; unknown statutory indicators remain unknown until official control-plan and engineering data arrive. The manifest and self-check now persist the validation claim, no known participant-controlled blockers, and the four local gates needed for formal professional review.
