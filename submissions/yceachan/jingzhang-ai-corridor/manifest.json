@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "package_id": "jingzhang-ai-corridor",
   "project_id": "centennial-jingzhang-ai-belt",
   "site_package_version": "0.1.0",
@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "7ed517f473dbdef99ed1cb2f7dc3dc92a6af22889811bb91faf333dd06f5532c"
+      "sha256": "f7f9803431a6a243cc6fb184d38ef1c895bd25d24b366f5fccac705b22b960e5"
     },
     {
       "path": "agent.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "80b71cb78d2c1581fc679eb561959ac515bc8a3ff6f76c74dcc2c4e20d49b72f"
+      "sha256": "1011a43ea38b37bb77062afdc5222c68ac983b66f70922222fc6051a520acdb3"
     },
     {
       "path": "compliance_matrix.json",
@@ -287,8 +287,9 @@
     }
   ],
   "validation_claim": {
-    "self_checked": false,
+    "self_checked": true,
     "known_blockers": [],
-    "data_confidence": "high"
+    "data_confidence": "high",
+    "readiness_contract": "persisted-self-check-v1"
   }
 }
