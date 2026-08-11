@@ -30,3 +30,11 @@
 - `visual/index.html` / `visual/index.en.html`: status box 与 self-check 文本从 "intake" → "formal-review-ready, provisional-boundary caveat"。
 - `compliance_matrix.json` `agent.3` 新增 `scenario_map` 字段，把 10 张场景卡（SC-01..SC-10）映射到 key_areas feature ID（PROV-KEY-001/002/003）与 Agent-Mile 段（AGENT-MILE-001..009），并标注 operating_window / privacy_boundary / human_review。
 - 重新跑 finalize + self_check + preflight 三关。
+
+## v0.1.2 - 2026-08-12
+
+- 回应 Trae Work maintainer-review re-review（comment 5257137844）指出的 2 个非阻断 nit：
+  - `visual/index.html` 中文版 status box 文案改回中文（之前误改成英文）：`临时边界 · formal-review-ready` + 中文段落。
+  - 删除 `proposal.md` 末尾的 markdown 注释（被 `render_proposal_html.py` 转义成可见的 `<p>&lt;!-- ... --&gt;</p>`）；删除 `report/proposal.en.html` 末尾的 `<!-- regenerated ... -->` 注释。
+- `geometry/land_use.geojson` 同步标记更新到 v0.1.2。
+- 重新跑 finalize + self_check + preflight，can_enter_formal_review=true，preflight=PASS。
