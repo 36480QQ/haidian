@@ -10,6 +10,7 @@
       "ok": true,
       "errors": [],
       "warnings": [
+        "submissions/kuwoo/jingzhang-quantum-belt/proposal.md: 可能涉及非公开或敏感资料; maintainer review required",
         "submissions/kuwoo/jingzhang-quantum-belt/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied"
       ],
       "proposal_files": [
@@ -65,7 +66,7 @@
       "ai_package_stages": {
         "submissions/kuwoo/jingzhang-quantum-belt": "formal"
       },
-      "total_bytes": 25817994,
+      "total_bytes": 25832335,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -127,7 +128,7 @@
         "key_area_count": 3.0,
         "green_ratio": 0.217597,
         "public_space_ratio": 0.034905,
-        "scenario_node_count": 12.0,
+        "scenario_node_count": 14.0,
         "test_scenario_count": 3.0,
         "landmark_count": 4.0,
         "renewal_project_count": 8.0
@@ -144,7 +145,7 @@
       "summary": {
         "standard_matrix_items": 6,
         "design_depth_items": 15,
-        "known_metric_refs_required": 11,
+        "known_metric_refs_required": 12,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {

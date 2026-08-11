@@ -351,7 +351,7 @@
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "name_zh": "量子安全政务通道 Quantum Secure Channel",
+        "name_zh": "量子安全产业通道 Quantum Secure Channel",
         "scenario_type": "test"
       },
       "geometry": {
@@ -559,6 +559,46 @@
         "coordinates": [
           116.349,
           39.947
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SCN-13",
+      "properties": {
+        "id": "SCN-13",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "量子安全金融通道 Quantum Secure Finance",
+        "scenario_type": "industry"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.345,
+          40.002
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SCN-14",
+      "properties": {
+        "id": "SCN-14",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "量子密钥检测认证中心 QKD Test & Certification",
+        "scenario_type": "industry"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3475,
+          40.011
         ]
       }
     }

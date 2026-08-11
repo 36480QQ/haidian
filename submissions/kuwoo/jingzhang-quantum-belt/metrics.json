@@ -110,7 +110,7 @@
     },
     "scenario_node_count": {
       "status": "known",
-      "value": 12,
+      "value": 14,
       "unit": "count",
       "source_files": [
         "geometry/public_space.geojson"
@@ -118,7 +118,7 @@
       "formula": "count(SCENARIO_NODE features)",
       "confidence": "high",
       "assumptions": [
-        "12 AI scenario cards each mapped to a scenario node."
+        "14 AI scenario cards each mapped to a scenario node."
       ]
     },
     "test_scenario_count": {
@@ -161,6 +161,20 @@
       "confidence": "high",
       "assumptions": [
         "JZ-01 to JZ-08 as listed in proposal.md."
+      ]
+    },
+    "quantum_secure_pilot_count": {
+      "status": "known",
+      "value": 4,
+      "unit": "count",
+      "source_files": [
+        "proposal.md",
+        "compliance_matrix.json"
+      ],
+      "formula": "count(quantum secure channel industry pilot directions)",
+      "confidence": "low",
+      "assumptions": [
+        "Conceptual pilot directions: finance, government/public data, energy, transport; subject to authority confirmation and technology maturity."
       ]
     }
   }
