@@ -264,4 +264,4 @@ Risk and data-gap inventory is cross-checked by [depth:risk_missing_data] [data:
 - Full machine index: see `sources.json`, `metrics.json`, `compliance_matrix.json`, `standard_matrix.json` and `design_depth_matrix.json`
 - The bibliography entry is based on the site-package registry; full attribution and licenses are in the structured source list [source:SITE-PACKAGE]
 
-<!-- build-rev-9 -->
+<!-- build-rev-10 -->
