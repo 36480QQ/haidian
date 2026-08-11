@@ -3,7 +3,7 @@ title: "Centennial Jing-Zhang AI Nexus Urban Design Proposal: Jing-Zhang Smart V
 proposal_slug: "jingzhang-ai-nexus"
 author_github: "YuanYii"
 language: "en"
-version: "9.2"
+version: "9.3"
 date: "2026-08-10"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
@@ -178,6 +178,16 @@ The key areas cover 368.4 ha in three districts, responding to [depth:three_key_
 - **AI scenarios**: concept-planning "02 Safety-Governance Sandbox" and "06 Qinghe Low-Carbon Innovation Waterfront" with low-carbon compute and standards workshops.
 - **References**: [data:geometry/key_areas.geojson#PROV-KEY-001], [depth:three_key_area_detailed_design].
 
+#### Node-Level Design (conceptual, confidence=low)
+
+The following node-level design concepts demonstrate the proposal's spatial refinement capability within each key area. All dimensions, layouts and parameters are conceptual (confidence=low) and shall be re-calibrated upon official data release:
+
+| Node | Concept Scale | Design Highlights |
+| --- | --- | --- |
+| National AI Model Test Ground | ~15 ha (concept) | Independent security perimeter + red/blue-team zones + open observation concourse; terraced buildings stepping down toward Qinghe for maximum water-frontage exposure |
+| Qinghe Low-Carbon Interface | ~1.5 km along Qinghe (concept) | Wetland treatment cascade + ecological boardwalk + AI environmental sensing nodes; 30–50 m waterfront building setback for public riverside belt |
+| Safety-Governance Sandbox Cluster | ~8 ha (concept) | Standards workshop + transparent model-evaluation lab + industry forum space; separated from test ground by a green buffer to reduce noise/light interference |
+
 ### 2. Beijing AI Origin Community (104.3 ha)
 
 > **Block Token role: "Zero-Kilometer Station"** — The origin point for open-source transfer and incubation; scenarios holding tokens undergo their final sandbox test here before entering public operation.
@@ -186,6 +196,14 @@ The key areas cover 368.4 ha in three districts, responding to [depth:three_key_
 - **AI scenarios**: concept-planning "01 Open-Source Launch Hall" and "07 Campus-adjacent Commercialization Street" as high-density 24-hour developer hubs.
 - **References**: [data:geometry/key_areas.geojson#PROV-KEY-002], [source:AGENT-TASKBOOK].
 
+#### Node-Level Design (conceptual, confidence=low)
+
+| Node | Concept Scale | Design Highlights |
+| --- | --- | --- |
+| Open-Source Launch Hall | ~5 ha (concept) | 360° digital wrap-around screen + 24h operation + live code-contribution visualization wall; adaptive reuse of existing industrial building, preserving structural character |
+| Campus Commercialization Street | ~800 m linear (concept) | Stitching the Qinghua East Road West campus-park gap; proof-of-concept labs, IP service windows and early-stage VC spaces along both sides; pedestrian-priority street |
+| Tsinghua-yuan AI Origin Memorial Park | ~6 ha (concept) | Low-disturbance design around the Tsinghua-yuan Station heritage site; AI smart sculpture + AR history corridor + preserved rail-track walking path |
+
 ### 3. Dazhongsi AI Industry Cluster (72.0 ha)
 
 > **Block Token role: "Marshalling Yard"** — Industrial elements are reassembled and exported here; upon token return, the block is automatically released for the next round of industry matching.
@@ -193,6 +211,14 @@ The key areas cover 368.4 ha in three districts, responding to [depth:three_key_
 - **Spatial moves**: TOD integration around Dazhongsi station; a four-quadrant elevated pedestrian link connecting commercial and headquarters uses.
 - **AI scenarios**: concept-planning "05 Dazhongsi International Demo Lounge" and "08 Data-Element & Digital-Asset Lounge" for international AI summits and product launches.
 - **References**: [data:geometry/key_areas.geojson#PROV-KEY-003], [metric:key_area_count].
+
+#### Node-Level Design (conceptual, confidence=low)
+
+| Node | Concept Scale | Design Highlights |
+| --- | --- | --- |
+| TOD Integration Core | ~10 ha (concept) | High-density development within 200 m of Dazhongsi station; concept FAR 3.5–4.5 (pending official regulatory-plan verification); three-level (underground–ground–elevated) interchange |
+| Four-Quadrant Elevated Link | ~600 m total length (concept) | Cruciform crossing connecting four quadrants of commercial and headquarters uses; ground level left open for bus and general traffic |
+| International Demo Lounge | ~4 ha (concept) | Simultaneous interpretation + media centre + product-launch space; connected to the Data-Element Lounge via a second-level link bridge; large-scale digital screen position reserved on façade |
 
 | Key district | Area (ha) | Positioning | Core spatial moves | Typical AI scenarios | Evidence |
 | --- | --- | --- | --- | --- | --- |
@@ -211,6 +237,8 @@ The proposal defines 6 typical personas and deploys 13 **experiential, demonstra
 4. **Residents**: park leisure, community services and low-disruption renewal; slow green loop and embedded smart community service points along the heritage park.
 5. **University faculty and students**: campus-adjacent commercialization and cross-campus exchange; campus-park stitching paths and commercialization stations on Qinghua East Road.
 6. **International visitors & academic guests**: Value high-profile conferences, roadshow experiences and international communication; the proposal provides international simultaneous-interpretation lounges and academic release centers at Dazhongsi and Origin Community.
+
+![13 AI scenario cards overview (L1/L2/L3 access-level color coding)](assets/figures/scenario-cards-overview.en.png)
 
 ### 13 AI scenario cards
 
@@ -295,7 +323,7 @@ Mobility and municipal planning follow [depth:traffic_rail_slow_parking] and [de
 
 ### 2. Slow traffic & green mobility
 - **Continuous slow greenway**: a continuous cycling and walking trunk along the Heritage Park crossing major intersections (alignment and length pending professional verification).
-- **Quantified scenarios (synthetic)**: scenario estimates based on provisional road network and green data — green-space 300m service coverage reaches 85.6% ([metric:green_300m_coverage]); the union of 500m service circles around the three rail stations covers 20.6% of the overall design area ([metric:tod_station_500m_cover]); the green spine is crossed by about 15 conceptual road features ([metric:greenway_gap_count]), serving as baselines for later field verification.
+- **Quantified scenarios (synthetic)**: scenario estimates based on provisional road network and green data — green-space 300m service coverage reaches 85.6% ([metric:green_300m_coverage]); greenway skeleton length ~22.71 km (top-3 green-patch union perimeter, [metric:greenway_length_km]); the green spine is crossed by about 15 conceptual road features ([metric:greenway_gap_count]); the union of 500m service circles around the three rail stations covers 20.6% of the overall design area ([metric:tod_station_500m_cover]), with per-station breakdown at [metric:tod_station_500m_cover.station_breakdown_500m_buffer]; all serving as baselines for later field verification.
 - **Autonomous micro-circulation**: concept-planning autonomous shuttle loops connecting stations, parks and communities.
 
 ### 3. Three test-scenario tiers and admission matrix
@@ -337,6 +365,18 @@ Following [depth:renewal_project_list] and [depth:phasing_implementation], the p
 | JZ-04 | Link system feasibility | TOD transfer inconvenient; passenger-flow simulation needed | Transit Co./DRC (suggested) | Over-limit review; composite costing | Daily link flow > baseline | Structural limits; drop elevated links | [data:geometry/public_space.geojson#PUBLIC-001] | claimed → synthetic-tested (flow-simulation slice) → field-pending; acceptance = measured link flow > baseline  Steps: (1) extract TSP path from public_space.geojson → (2) 1,000 Monte Carlo passenger-flow simulations → (3) daily flow = simulation median → (4) compare with baseline |
 | JZ-05 | Compute-center scenario | Compute gap; energy assessment and grid capacity needed | Industry/Environment Bureau (suggested) | Energy assessment; per-rack costing | PUE < 1.2 (baseline 1.5) | Energy overrun; throttled degraded operation | [data:geometry/constraints.geojson] | claimed → synthetic-tested (PUE energy slice) → field-pending; acceptance = measured PUE < 1.2  Steps: (1) rack power measurement → (2) PUE = total/IT energy → (3) 7-day continuous measurement average → (4) compare with baseline 1.5 |
 | JZ-06 | Smart component deployment | Lacks interactive wayfinding; weak-current survey needed | Urban Management/Culture Bureau (suggested) | Road-occupancy approval; per-point costing | Device uptime > 95% | Privacy dispute; disable sensing modules | [data:geometry/phasing.geojson#PHASE-001] | claimed → synthetic-tested (uptime baseline) → field-pending; acceptance = uptime>95% O&M register  Steps: (1) device online log extraction → (2) uptime = online/total hours → (3) monthly aggregation trimmed → (4) target >95% |
+
+### Implementation Roadmap (conceptual, for authority & operator deepening)
+
+The following roadmap links JZ-01–06 with conceptual responsible parties, funding assumptions and three-year milestones. All parties, amounts and nodes are conceptual (confidence=low); actual arrangements follow authority approval and formal plans:
+
+| Phase | Time window (concept) | Lead actions (JZ projects) | Conceptual responsible parties | Funding assumptions | Key deliverables |
+| --- | --- | --- | --- | --- | --- |
+| Year 1 · Pilot | 2026-2027 | JZ-01 slow-traffic gap stitching (demo segment) + JZ-06 smart wayfinding pilot | Planning/Transport Commission (JZ-01), Urban Mgmt/Culture Bureau (JZ-06) | Public finance primary + slow-mobility commercial node rent share | Gap register + connectivity baseline + first pilot evaluation report |
+| Years 2-3 · Shaping | 2027-2029 | JZ-02 Qinghe ecological experience + JZ-04 link system feasibility study | Water/Parks Bureau (JZ-02), Transit Co./DRC (JZ-04) | Ecological compensation + Civic Value Protocol + TOD commercial rent | Ecological monitoring baseline + link flow simulation report + project proposal |
+| Years 4-5 · Exemplar | 2029-2031 | JZ-03 industrial-building adaptive reuse + JZ-05 compute-center scenario study | DRC/University Office (JZ-03), Industry/Environment Bureau (JZ-05) | Rent income + industry fund + green bond (concept) | Occupancy baseline + PUE measured report + exemplar district acceptance |
+
+> All milestone acceptances follow the Proof-Mile loop: tabletop (synthetic-tested) → authority authorization (field-pending) → pilot operation (field-passed) → annual token audit (whitepaper). Any hard-stop condition triggers rollback per the exit table.
 
 ### Long-term operation & governance roadmap
 
@@ -463,18 +503,20 @@ Index of all visual assets, drawings and digital exhibits:
 
 | Asset | Path | Description |
 | --- | --- | --- |
-| Site Overview | assets/figures/site-overview.png | Overall design scope, key regions & three-tier spatial control |
+| Site Overview | assets/figures/site-overview.png | Overall scope, key regions & three-tier control (place names, 2km scale bar, compass) |
 | Land Use Structure | assets/figures/land-use-structure.png | Three scopes & spatial structure |
-| Three Key Areas | assets/figures/key-areas.png | Key areas index & design tasks |
+| Three Key Areas | assets/figures/key-areas.png | Key areas index & design tasks (1km scale bar, compass) |
 | Mobility & Blue-Green | assets/figures/mobility-bluegreen.png | Mobility & green-blue network |
 | Metrics Evidence | assets/figures/metrics-evidence.png | Metrics recalculation & sources |
+| Scenario Cards Overview | assets/figures/scenario-cards-overview.png | 13 scenario cards (L1/L2/L3 color coding + TRL) |
 | Logo Concept | assets/figures/logo.png | Steel rails x neural topology |
+| Logo VI Kit | visual/assets/logo-vi/ | Primary / reversed / mono SVG+PNG + spec sheet |
 | Proposal HTML | report/proposal.html | Offline rendered proposal |
 | Interactive Dashboard | visual/index.html | Overview, land use, mobility & scenarios |
-| A3 Booklet | drawings/a3-booklet.pdf | Full design booklet |
-| A0 Boards | drawings/a0-boards.pdf | Key exhibit boards (note: PDF internal version tag pending regeneration sync to v6.0) |
-| A3 Booklet (EN mirror) | drawings/a3-booklet.en.pdf | English edition of A3 booklet |
-| A0 Boards (EN mirror) | drawings/a0-boards.en.pdf | English edition of A0 boards |
+| A3 Booklet | drawings/a3-booklet.pdf | Full design booklet (v9.3) |
+| A0 Boards | drawings/a0-boards.pdf | Key exhibit boards (v9.3) |
+| A3 Booklet (EN mirror) | drawings/a3-booklet.en.pdf | English edition of A3 booklet (v9.3) |
+| A0 Boards (EN mirror) | drawings/a0-boards.en.pdf | English edition of A0 boards (v9.3) |
 
 ## References
 
