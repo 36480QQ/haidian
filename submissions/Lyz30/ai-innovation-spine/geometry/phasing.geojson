@@ -8,14 +8,15 @@
   "features": [
     {
       "type": "Feature",
+      "id": "PH-001",
       "properties": {
         "id": "PH-001",
         "layer": "PHASE",
         "phase_name_zh": "一期（AI原点社区核心启动区）",
         "phase_period": "2026-2030",
-        "source_type": "agent_generated",
+        "source_type": "agent_generated_design",
         "confidence": "medium",
-        "geometry_role": "design_phasing",
+        "geometry_role": "design_proposal",
         "area_sqm_declared": 12540000
       },
       "geometry": {
@@ -31,14 +32,15 @@
     },
     {
       "type": "Feature",
+      "id": "PH-002",
       "properties": {
         "id": "PH-002",
         "layer": "PHASE",
         "phase_name_zh": "二期（众智园+大钟寺）",
         "phase_period": "2030-2035",
-        "source_type": "agent_generated",
+        "source_type": "agent_generated_design",
         "confidence": "medium",
-        "geometry_role": "design_phasing",
+        "geometry_role": "design_proposal",
         "area_sqm_declared": 58470000
       },
       "geometry": {
@@ -56,14 +58,15 @@
     },
     {
       "type": "Feature",
+      "id": "PH-003",
       "properties": {
         "id": "PH-003",
         "layer": "PHASE",
         "phase_name_zh": "三期（全域完善）",
         "phase_period": "2035-2040",
-        "source_type": "agent_generated",
+        "source_type": "agent_generated_design",
         "confidence": "medium",
-        "geometry_role": "design_phasing",
+        "geometry_role": "design_proposal",
         "area_sqm_declared": 41750000
       },
       "geometry": {
