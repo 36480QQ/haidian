@@ -1,5 +1,11 @@
 # 方案迭代记录
 
+## v1.13 - 2026-08-12
+
+- Added an asset closeout-receipt ledger for eight mobility interfaces: metro, bus, protected cycling, accessibility, curb service, enterprise shuttle, logistics maintenance and the gated air experiment.
+- Added a deterministic schema/readout runner and paired SVG boards. The ledger keeps field receipts and closed receipts at zero, requires five restoration gates, and leaves every receipt at `not_run` until dated responsibility, action, verification and public-route recovery evidence exists.
+- Linked the receipt chain to M-10 complaint–maintenance closure while preserving the boundary between empty templates and real work orders, SLAs, resident outcomes or operating authorization.
+
 ## v1.12 - 2026-08-12
 
 - Added a bilingual AI mobility-service resource passport covering ten scenario cards and seven resource classes: compute/network, energy/fuel, physical devices, data/privacy, human review, supplier/maintenance, and failure/exit.

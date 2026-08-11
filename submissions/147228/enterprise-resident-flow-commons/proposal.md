@@ -233,6 +233,14 @@ iteration: "v2.0-population-scale-screen"
 
 ![AI 交通服务资源护照：七类资源、十张场景卡与五道 NO-GO 门](assets/figures/resource-passport-board.svg)
 
+### 交通资产闭合回执：让投诉—维修—复核可以关单
+
+资源护照回答“扩容需要承担什么负担”，资产闭合回执回答“出了问题谁把公共路线恢复回来”。账本为地铁站口、公交候车、受保护骑行链、连续无障碍路线、时段路缘、企业接驳、物流维护关口和空中实验地面闸门建立 8 条空回执模板。每条回执固定资产、服务窗口、触发条件、拟议责任角色、日期证据、维修/清场动作、无障碍回退、复核结果、公共路线恢复和关闭/撤回状态；当前现场回执数和关闭回执数均为 0 [data:visual/assets/asset-closeout-receipts.json] [data:visual/assets/asset-closeout-readout.json]。
+
+这份账本不把“已派单”写成“已修复”。责任角色仍是待确认接口，日期证据、维修结果、居民投诉、SLA 和运营授权均为空；没有责任与服务窗口、没有人工/无障碍替代、没有消防净空与公共路线恢复，回执就停在 `not_run`。运行器检查 8 条回执、11 个字段、5 道闭合门，并把 M-10 的处理链画成“发现—派单—维修/清场—无障碍复核—关闭或撤回”，为后续现场试点留下可直接回填的结构 [data:visual/assets/run-asset-closeout-receipts.js]。
+
+![交通资产闭合回执：8 类资产、5 道闭合门与恢复链](assets/figures/asset-closeout-board.svg)
+
 ## 指标体系、面积复算与合规矩阵
 
 ### 当前可回读的底盘

@@ -201,6 +201,14 @@ Five NO-GO gates run before efficiency comparison: no equivalent human or public
 
 ![AI mobility-service resource passport: seven resource classes, ten scenario cards and five NO-GO gates](assets/figures/resource-passport-board.en.svg)
 
+### Mobility asset closeout receipts: make complaint-to-maintenance closure operable
+
+The resource passport asks what burden an expansion carries; the closeout ledger asks who restores a public route after something goes wrong. It creates eight empty receipt templates for the metro interface, bus waiting interface, protected cycle link, continuous accessible route, managed curb, enterprise shuttle, logistics gate and air-experiment ground gate. Each receipt fixes the asset, service window, trigger, proposed responsibility role, dated evidence, repair or clearing action, accessible fallback, verification, public-route restoration and close/withdrawal state. Field receipts and closed receipts are both 0 [data:visual/assets/asset-closeout-receipts.json] [data:visual/assets/asset-closeout-readout.json].
+
+The ledger does not turn “assigned” into “repaired”. Responsibility roles remain proposed interfaces; dated evidence, repair results, resident complaints, SLA records and operating authorization remain empty. Without an owner and window, a human/accessibility alternative, fire clearance and public-route restoration, a receipt stays at `not_run`. The runner checks eight receipts, eleven schema fields and five closeout gates, then draws M-10 as detect → assign → repair/clear → access review → close or withdraw, leaving a structure that can be filled by a future field pilot [data:visual/assets/run-asset-closeout-receipts.js].
+
+![Mobility asset closeout receipts: eight assets, five gates and the restoration chain](assets/figures/asset-closeout-board.en.svg)
+
 ## Metrics, Area Recalculation, and Compliance Matrix
 
 ### Current readable base
