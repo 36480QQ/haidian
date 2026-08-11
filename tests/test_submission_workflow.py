@@ -26,7 +26,9 @@ from validate_submission import (  # noqa: E402
     REQUIRED_DESIGN_DEPTH_IDS,
     ValidationReport,
     is_empty_pdf,
+    media_signature_is_valid,
     validate_agent_disclosure,
+    validate_media_manifest_entries,
     validate_submission,
 )
 from github_pr_validation import (  # noqa: E402
@@ -44,6 +46,86 @@ from github_pr_validation import (  # noqa: E402
     validation_paths_for,
 )
 from validate_local_submission import discover_submission_files  # noqa: E402
+
+
+class MediaContractTests(unittest.TestCase):
+    def test_media_manifest_accepts_accessible_local_video_and_audio(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            proposal_dir = "submissions/alice/multimodal"
+            media = root / proposal_dir / "assets" / "media"
+            media.mkdir(parents=True)
+            (media / "walkthrough.mp4").write_bytes(b"\x00\x00\x00\x18ftypmp42demo")
+            (media / "soundscape.mp3").write_bytes(b"ID3demo")
+            (media / "poster.webp").write_bytes(b"RIFFdemoWEBP")
+            (media / "walkthrough.vtt").write_text("WEBVTT\n\n00:00.000 --> 00:01.000\n概念场景\n", encoding="utf-8")
+            (media / "walkthrough.md").write_text("# 视频文字稿\n\n这是概念视频的完整可访问文字说明。", encoding="utf-8")
+            (media / "soundscape.md").write_text("# 音乐说明\n\n这是无对白概念音乐的内容、时长与用途说明。", encoding="utf-8")
+            files = [
+                {
+                    "path": "assets/media/walkthrough.mp4", "role": "video",
+                    "title_zh": "步行体验", "title_en": "Walking experience",
+                    "description_zh": "概念体验短片", "description_en": "Concept experience film",
+                    "poster": "assets/media/poster.webp",
+                    "caption": "assets/media/walkthrough.vtt",
+                    "transcript": "assets/media/walkthrough.md",
+                },
+                {
+                    "path": "assets/media/soundscape.mp3", "role": "audio",
+                    "title_zh": "声音景观", "title_en": "Soundscape",
+                    "description_zh": "无对白概念音乐", "description_en": "Concept music without dialogue",
+                    "transcript": "assets/media/soundscape.md",
+                },
+                {"path": "assets/media/poster.webp", "role": "media_poster"},
+                {"path": "assets/media/walkthrough.vtt", "role": "caption_track"},
+                {"path": "assets/media/walkthrough.md", "role": "transcript"},
+                {"path": "assets/media/soundscape.md", "role": "transcript"},
+            ]
+            report = ValidationReport()
+            validate_media_manifest_entries(
+                report, root, proposal_dir, files, {item["path"] for item in files}
+            )
+            self.assertTrue(report.ok, report.errors)
+            self.assertTrue(media_signature_is_valid(media / "walkthrough.mp4"))
+            self.assertTrue(media_signature_is_valid(media / "soundscape.mp3"))
+
+    def test_media_manifest_rejects_missing_accessibility_and_spoofed_container(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            proposal_dir = "submissions/alice/multimodal"
+            media = root / proposal_dir / "assets" / "media"
+            media.mkdir(parents=True)
+            (media / "walkthrough.mp4").write_bytes(b"not-an-mp4")
+            files = [{
+                "path": "assets/media/walkthrough.mp4", "role": "video",
+                "title_zh": "步行体验", "title_en": "Walking experience",
+                "description_zh": "概念体验短片", "description_en": "Concept experience film",
+            }]
+            report = ValidationReport()
+            validate_media_manifest_entries(
+                report, root, proposal_dir, files, {item["path"] for item in files}
+            )
+            self.assertFalse(report.ok)
+            joined = "\n".join(report.errors)
+            self.assertIn("does not match its declared media container", joined)
+            self.assertIn("needs a manifest-listed poster", joined)
+            self.assertIn("needs a manifest-listed caption", joined)
+            self.assertIn("needs a manifest-listed transcript", joined)
+
+    def test_media_validator_never_reads_traversal_paths(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            outside = root / "outside.mp4"
+            outside.write_bytes(b"not-an-mp4")
+            report = ValidationReport()
+            validate_media_manifest_entries(
+                report,
+                root,
+                "submissions/alice/multimodal",
+                [{"path": "assets/media/../../../outside.mp4", "role": "video"}],
+                set(),
+            )
+            self.assertTrue(report.ok, report.errors)
 
 
 class _Response:
