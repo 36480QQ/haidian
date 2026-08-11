@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "The JING-ZHANG RUNNING DIAGRAM re-reads the dispatching wisdom born with the 1909 Jing-Zhang Railway as the spatio-temporal operating system of the AI Innovation Belt: one main running line (Jing-Zhang Heritage Park Vitality Belt), three hub stations (Zhongzhiyuan / AI Origin Community / Dazhongsi), two wing branches (Zhongguancun Technology-Service Wing, Xiaoyuehe Scenario-Empowerment Wing), ten service-call cards (AI scenarios) and an annual running diagram (event and operation system). All spatial proposals are concept suggestions generated from the repository's provisional boundary and must be fully recalculated when official geometry is released."
 tracks: ["ai-traffic-walkability", "jingzhang-heritage-narrative", "enterprise-services-ecosystem"]
 scenarios: ["ai-traffic-walkability", "ai-cultural-guide", "enterprise-service-copilot", "robot-delivery-low-speed"]
-iteration: "v1.0"
+iteration: "v1.1"
 ---
 
 # The Jing-Zhang Running Diagram — Re-reading a Century of Railway Dispatching Wisdom as the Spatio-temporal Operating System of the AI Innovation Belt
@@ -62,6 +62,7 @@ This proposal re-reads the three areas and two wings in running-diagram grammar:
 - **Primary name**: 京张运行图 (The Jing-Zhang Running Diagram, JZ-RD).
 - **Naming system**: the main line is the "R-Line"; the three hub stations are named "Engine Station (Zhongzhiyuan) / Origin Station (AI Origin Community) / Hub Station (Dazhongsi)"; the wings are the "East Wing·Zhongguancun Technology-Service Branch" and the "West Wing·Xiaoyuehe Scenario-Empowerment Branch"; AI scenarios are uniformly called "service-call cards"; the event and operation system is the "annual running diagram". All names are conceptual and do not involve unauthorized use of existing trademarks or names [source:AGENT-TASKBOOK] [depth:overall_spatial_structure].
 - **Logo direction**: "three-color signal lights + running-diagram polyline" — red/yellow/green dots form a signal (red = safety boundary, yellow = human review, green = open running), and a graduated polyline passes through the three lights (the polyline = a century of running traces; the three lights = the three hub stations); auxiliary graphics abstract station canopies and rail sleepers. The relationship between the logo and the signage system, and the rights-clearing status of fonts and icon materials, are registered in `assumptions.json` and the copyright statement [source:AGENT-TASKBOOK].
+- **Logo VI starter kit**: this package ships `assets/media/logo-vi.svg` (vector master, losslessly scalable) and `assets/media/logo-vi.png` (preview bitmap) for reviewers and downstream design teams; the VI specification page (minimum size, clear space, reverse and monochrome versions) is listed for the next brand-deepening step [depth:brand_identity]. The three signal-light colors also enter the signage system as "AI ethics tricolor": red = safety boundary, yellow = human review, green = open running.
 
 ### Global AI innovation ecosystem cases (agent.2, 5–8 cases)
 
@@ -127,6 +128,24 @@ All three key areas are designed at comprehensive-implementation-plan urban-desi
 - **AI scenarios**: robot delivery branch (B07), enterprise-service express (B06, Chapter 6).
 - **Implementation risk**: commercial renewal involves existing tenants and ownership; market feasibility and ownership data must be verified [depth:risk_missing_data].
 
+### Node-level design (9 nodes, conceptual)
+
+Below the district-level design, 9 node-level designs are added (3 per district, `confidence=low`, conceptual) so that professional teams can deepen them directly into single-building schemes in the next stage; every node maps to in-package geometry features, verifiable in `geometry/*.geojson` [depth:key_node_design] [metric:key_node_count].
+
+| Node | District | Core function | AI scenario | Geometry basis |
+| --- | --- | --- | --- | --- |
+| N-Z01 Engine Tower · Full-stack Innovation Loop Core | Zhongzhiyuan | Forecourt as the core of the "full-stack innovation loop"; the conceptual "Engine Tower" landmark hosts full-stack achievement display and the annual "Departure Season" main venue | B06 | [data:geometry/public_space.geojson#ST-03] |
+| N-Z02 Data Sandbox Test Ground | Zhongzhiyuan | Enclosed ground inside the test/validation cluster for T3 edge-compute and public-data sandbox testing | T3 | [data:geometry/land_use.geojson#LU-001] |
+| N-Z03 5th-Ring Ecological Green Wedge | Zhongzhiyuan | Junction of the ecological background along the 5th Ring Road and the main-line green belt; ecological observation and slow-mobility waystation | B09 | [data:geometry/land_use.geojson#LU-GREEN-BELT] |
+| N-O01 0 km Milestone Plaza | Origin Community | Forecourt with the "0 km Milestone" landmark and pitch steps; daily pitching and rotating governance forum venue | B02, B10 | [data:geometry/public_space.geojson#ST-02] |
+| N-O02 Founders' Living-Room Street | Origin Community | Street-front shops converted into "founders' living rooms + shared workstations + 24h open corner"; enterprise-service stop | B06 | [data:geometry/roads.geojson#RD-H3] |
+| N-O03 First-Train Connector Station | Origin Community | Wudaokou slow-traffic gap repair point; morning commuter interchange with "first train" timetable installation | B01 | [scenario:ai-traffic-walkability] |
+| N-D01 Signal-Light Plaza | Dazhongsi | Forecourt with the "Signal Light" landmark (red-yellow-green = AI ethics tricolor); governance-service rotation point | B10 | [data:geometry/public_space.geojson#ST-01] |
+| N-D02 AI-Native Consumption Street | Dazhongsi | Low-efficiency commercial space around TOD converted into an AI consumption experience street; delivery branch along the street | B07 | [data:geometry/roads.geojson#RD-H1] |
+| N-D03 Hub Complex · AI Exhibition Hall | Dazhongsi | New hub complex at the TOD core, with AI exhibition hall and enterprise-service counters | B06, B08 | [data:geometry/land_use.geojson#LU-003] |
+
+The deepening order of the 9 nodes follows the phasing: P1 first delivers the three forecourt nodes N-O01/N-D01/N-Z01 (combined with forecourt works), P2 completes the three industry and consumption nodes N-O02/N-D02/N-Z02, P3 finishes the three slow-mobility and ecological nodes N-O03/N-D03/N-Z03; every node must be re-verified by professional teams once existing-condition, ownership and official boundary data are available [depth:phasing_implementation].
+
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
 ### Ten service-call cards (AI scenario cards, agent.3)
@@ -147,6 +166,8 @@ AI scenarios are organized as "service calls": each scenario is a scheduled serv
 | B10 | City Forum·AI Governance Call | Rotating station forecourts | Citizens, developers, managers | Governance call (mapping in compliance_matrix) |
 
 The scenario-space-operation mapping, data sources, privacy boundaries, human review and operating bodies of every card are detailed in `compliance_matrix.json` and `visual/index.html`; this narrative does not duplicate the machine index [source:AGENT-TASKBOOK].
+
+The **admission-level and technology-readiness overview** of the ten cards is provided in `assets/media/scenario-card-overview.png` (zh and en versions): each card shows its admission level (L1 concept demo / L2 pilot / L3 regular operation) and a TRL technology-readiness scale, matching the table above card by card; the overview figure is also embedded in `report/proposal.html` and the A3/A0 drawings [depth:scenario_card_visualization].
 
 ### Three industry test/validation scenarios (agent.3)
 
@@ -226,6 +247,19 @@ The character keynote is "railway-industrial memory + contemporary technological
 | P3 Long term (2031–2035) | Periphery renewal quality upgrade; belt-wide character enhancement; routine operation of the annual running diagram | [data:geometry/phasing.geojson#PH-03] |
 
 Policy suggestions (conceptual): scenario-open licensing, low-rent industrial-space replacement, a public-space co-governance fund, developer-community co-building agreements, and a test-scenario safety-responsibility checklist [source:AGENT-TASKBOOK] [depth:phasing_implementation] [depth:renewal_project_list].
+
+### Implementation-operation matrix (project × responsible body × funding source × milestone)
+
+| ID | Project | Phase | Conceptual responsible body | Conceptual funding source | Milestone (conceptual) |
+| --- | --- | --- | --- | --- | --- |
+| JZ-01 | Forecourts and slow-path connection of the three hub stations | P1 | District-owned platform company + street co-governance committee | Government special funds + public-space co-governance fund | Three station forecourts completed and open by 2027 |
+| JZ-02 | Origin Community founder district renewal | P1 | State-owned stock renewal operation platform + university innovation alliance | Low-rent industrial-space replacement fund + private capital | First batch of about 50 teams settled by 2028 |
+| JZ-03 | Dazhongsi AI-native business pilot | P1 | Commercial operator + AI enterprise alliance | Market-based leasing + scenario-open licensing | Pilot street open by 2027 |
+| JZ-04 | Zhongzhiyuan test ground phase I | P2 | Test-ground operator + industry organizations | Public test fund + leading-enterprise co-building | In operation by 2030 |
+| JZ-05 | Xiaoyue River health stations and community parks | P2 | Street office + medical institutions + community organizations | Livelihood special funds | Completed by 2031 |
+| JZ-06 | Annual Running Diagram regular operation | P3 | Operation community (government + enterprises + communities + developers) | Event fund + sponsorship + ticketing | Branded operation by 2035 |
+
+All responsible bodies, funding sources and milestones above are conceptual suggestions only and do not constitute confirmed government arrangements, investment-promotion commitments or funding commitments [source:AGENT-TASKBOOK] [depth:phasing_implementation].
 
 ### The annual running diagram: global AI event system and long-term operation (agent.6)
 

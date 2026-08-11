@@ -278,5 +278,20 @@
       "assumptions": [],
       "reason": "官方绿地率控制缺失，登记为待补。"
     }
+  },
+  "key_node_count": {
+    "status": "known",
+    "value": 9,
+    "unit": "count",
+    "source_files": [
+      "geometry/land_use.geojson",
+      "geometry/public_space.geojson",
+      "geometry/roads.geojson"
+    ],
+    "formula": "count(planned node-level designs in proposal: 3 per key area x 3 key areas)",
+    "confidence": "low",
+    "assumptions": [
+      "9 处节点为概念级设计（confidence=low），位置对应包内几何要素；官方 polygon 发布后随区级设计一并重算。"
+    ]
   }
 }

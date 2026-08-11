@@ -1,5 +1,25 @@
 # 方案迭代记录
 
+## v1.1 - 2026-08-11
+
+### 改动摘要
+
+- **节点级设计（9 处，概念级）**：三处重点区各新增 3 处节点（N-Z01~03 / N-O01~03 / N-D01~03），以表格列明核心功能、AI 场景与几何依据，深化顺序与 P1—P3 分期衔接；`design_depth_matrix.json` 新增 `key_node_design` 条目，`metrics.json` 新增 `key_node_count=9`。
+- **运营实施矩阵**：新增 JZ-01~06「项目 × 概念责任主体 × 概念资金来源 × 里程碑」矩阵（双语），补充可实施性证据；全部标注为概念建议，不构成承诺。
+- **场景卡视觉化**：新增 `assets/media/scenario-card-overview.png`（中英两版，10 卡 × L1/L2/L3 准入色标 × TRL 刻度），与正文班次卡表格逐卡对应；`design_depth_matrix.json` 新增 `scenario_card_visualization`。
+- **Logo VI 基础包**：新增 `assets/media/logo-vi.svg`（矢量主版）与 `logo-vi.png`（预览位图）；`design_depth_matrix.json` 新增 `brand_identity`。
+- 双语 proposal、HTML 报告与 A3/A0 图纸同步更新；manifest.json 登记新增媒体文件。
+
+### 采纳反馈
+
+- 参考已合并高分方案与公开评审发现（图件规范化、节点级深化、场景视觉化、运营矩阵、Logo VI），本轮集中补齐五类表达与可实施性证据。
+
+### 暂未采纳或待复核事项
+
+- 官方精确边界与三处重点区 polygon（待发布后整链重算）。
+- 控规条件（容积率/高度/密度/绿地率/退线）缺失，指标登记为 unknown。
+- 节点级设计为 confidence=low 概念级，须在现状、权属与官方数据到位后由专业团队复核。
+
 ## v1.0 - 2026-08-11
 
 ### 改动摘要

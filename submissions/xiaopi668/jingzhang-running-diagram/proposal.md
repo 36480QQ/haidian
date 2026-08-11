@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以「京张运行图（THE JING-ZHANG RUNNING DIAGRAM）」为总体概念：把1909年京张铁路开通以来的百年调度智慧，重读为组织AI创新带的时空操作系统——一条主运行线（京张遗址公园活力带）、三座枢纽站（众智园/原点社区/大钟寺）、两翼支线（中关村科技服务翼、小月河场景赋能翼）、十张班次卡（AI场景）与年度运行图（活动与运营体系）。全部空间建议基于仓库登记的临时粗略边界生成，属概念建议，官方红线发布后整包重算。"
 tracks: ["ai-traffic-walkability", "jingzhang-heritage-narrative", "enterprise-services-ecosystem"]
 scenarios: ["ai-traffic-walkability", "ai-cultural-guide", "enterprise-service-copilot", "robot-delivery-low-speed"]
-iteration: "v1.0"
+iteration: "v1.1"
 ---
 
 # 京张运行图——把百年铁路调度智慧重读为AI创新带的时空操作系统
@@ -62,6 +62,7 @@ iteration: "v1.0"
 - **主名称**：京张运行图；**英文名称**：The Jing-Zhang Running Diagram（JZ-RD）。
 - **命名体系**：主运行线称「R-Line 运行线」，三座枢纽站分别命名为「引擎站（众智园）/ 始发站（原点社区）/ 枢纽站（大钟寺）」，两翼支线称「东翼·中关村科技服务支线」「西翼·小月河场景赋能支线」，AI 场景统一称「班次卡」，活动与运营体系称「年度运行图」。所有名称均为概念建议，不涉及商标与既有名称冲突的授权使用 [source:AGENT-TASKBOOK] [depth:overall_spatial_structure]。
 - **Logo 方向**：以「三色信号灯 + 运行图折线」为核心——红黄绿三色圆点构成信号灯（红=安全边界、黄=人工复核、绿=开放运行），一条带刻度的折线穿过三盏灯（折线=百年运行轨迹、三灯=三座枢纽站）；辅助图形为站台雨棚与轨道枕木的抽象线条。Logo 与导视系统的关系、字体与图标素材的清权状态登记在 `assumptions.json` 与版权声明中 [source:AGENT-TASKBOOK]。
+- **Logo VI 基础包**：本包随附 `assets/media/logo-vi.svg`（矢量主版，可无损缩放）与 `assets/media/logo-vi.png`（预览位图），供评审与后续设计团队直接取用；VI 规范页（最小尺寸、安全空间、反白与单色版本）列入下一步品牌深化清单 [depth:brand_identity]。三色信号灯同时作为「AI 伦理三色」进入导视系统：红=安全边界、黄=人工复核、绿=开放运行。
 
 ### 全球 AI 创新生态案例（agent.2，5—8 个）
 
@@ -127,6 +128,24 @@ iteration: "v1.0"
 - **AI 场景**：机器人配送支线（B07）、企业服务直通车（B06，见第六章）。
 - **实施风险**：商业更新涉及现状商户与权属，须以市场可行性与产权数据复核 [depth:risk_missing_data]。
 
+### 节点级设计（9 处节点，概念级）
+
+在区级设计之下补充 9 处节点级设计（每区 3 处，`confidence=low` 概念级），使方案可在下一阶段被专业团队直接深化为单体方案；节点位置均对应包内几何要素，可在 `geometry/*.geojson` 中复核 [depth:key_node_design] [metric:key_node_count]。
+
+| 节点 | 所在区域 | 核心功能 | AI 场景 | 几何依据 |
+| --- | --- | --- | --- | --- |
+| N-Z01 引擎塔·全栈创新环心 | 众智园 | 站前广场为核心组织"全栈创新环"，概念地标"引擎塔"承载全栈成果展示与年度「发车季」主会场 | B06 | [data:geometry/public_space.geojson#ST-03] |
+| N-Z02 数据沙盒测试场 | 众智园 | 测试验证片内独立围合场地，承载 T3 端侧算力与公共数据沙盒测试 | T3 | [data:geometry/land_use.geojson#LU-001] |
+| N-Z03 五环生态绿楔口 | 众智园 | 五环沿线生态本底与主运行线绿带交接点，设生态观测慢行驿站 | B09 | [data:geometry/land_use.geojson#LU-GREEN-BELT] |
+| N-O01 0 公里里程碑广场 | 原点社区 | 站前广场设"0 公里里程碑"地标与路演台阶，日常路演与治理议事轮值场地 | B02、B10 | [data:geometry/public_space.geojson#ST-02] |
+| N-O02 创业者客厅街 | 原点社区 | 临街底商改造为"创业者客厅+共享工位+24h 开放角"，企业服务停靠点 | B06 | [data:geometry/roads.geojson#RD-H3] |
+| N-O03 首班车接驳站 | 原点社区 | 五道口慢行断点修复点，晨间通勤接驳换乘站与"首班车"时刻牌装置 | B01 | [scenario:ai-traffic-walkability] |
+| N-D01 信号灯广场 | 大钟寺 | 站前广场设"信号灯"地标（红黄绿=AI 伦理三色），治理班次轮值点 | B10 | [data:geometry/public_space.geojson#ST-01] |
+| N-D02 智能原生消费街 | 大钟寺 | TOD 周边低效商业改造为 AI 消费体验街，配送支线沿街运行 | B07 | [data:geometry/roads.geojson#RD-H1] |
+| N-D03 枢纽综合体·AI 展示馆 | 大钟寺 | TOD 核心地块新建枢纽综合体，含 AI 展示馆与企业服务柜台 | B06、B08 | [data:geometry/land_use.geojson#LU-003] |
+
+9 处节点的深化顺序按分期推进：P1 先做 N-O01/N-D01/N-Z01 三处站前广场节点（与站前广场工程合一），P2 完成 N-O02/N-D02/N-Z02 三处产业与消费节点，P3 收尾 N-O03/N-D03/N-Z03 三处慢行与生态节点；每处节点均需在现状、权属与官方边界数据到位后由专业团队复核 [depth:phasing_implementation]。
+
 ## AI 创新生态、人才画像与 AI+ 场景
 
 ### 十张班次卡（AI 场景卡，agent.3）
@@ -147,6 +166,8 @@ iteration: "v1.0"
 | B10 | 城市议事厅·AI 治理班次 | 各站站前广场轮值 | 市民、开发者、管理者 | 治理类班次（场景-空间-运营映射见 compliance_matrix） |
 
 （注：`civic-agent-governance` 为治理类班次的内部编码，正文引用以 `scenarios/` 注册目录为准；每张班次卡的场景-空间-运营映射、数据来源、隐私边界、人工复核与运营主体详见 `compliance_matrix.json` 与 `visual/index.html`，不在此重复机器索引 [source:AGENT-TASKBOOK]。）
+
+十张班次卡的**准入分级与技术水平总览**见 `assets/media/scenario-card-overview.png`（含中英两版）：每卡标注准入等级（L1 概念演示 / L2 试点运行 / L3 常态运营）与 TRL 技术水平刻度，与上表逐卡对应；该总览图已同步嵌入 `report/proposal.html` 与 A3/A0 图纸 [depth:scenario_card_visualization]。
 
 ### 三个产业测试验证场景（agent.3）
 
@@ -226,6 +247,19 @@ iteration: "v1.0"
 | P3 远期（2031—2035） | 外围更新片提质、全带风貌提升与年度运行图常态化运营 | [data:geometry/phasing.geojson#PH-03] |
 
 政策建议（概念）：场景开放许可制度、低租金产业空间置换、公共空间共治基金、开发者社区共建协议、测试场景安全责任清单 [source:AGENT-TASKBOOK] [depth:phasing_implementation] [depth:renewal_project_list]。
+
+### 运营实施矩阵（项目 × 责任主体 × 资金来源 × 里程碑）
+
+| 编号 | 项目 | 分期 | 概念责任主体 | 概念资金来源 | 里程碑（概念） |
+| --- | --- | --- | --- | --- | --- |
+| JZ-01 | 三座枢纽站站前广场与慢行道贯通 | P1 | 区属平台公司 + 街道共治委员会 | 政府专项 + 公共空间共治基金 | 2027 年三站广场建成投用 |
+| JZ-02 | 原点社区创业者街区改造 | P1 | 国资存量改造运营平台 + 高校双创联盟 | 低租金产业空间置换基金 + 社会资本 | 2028 年首批约 50 家团队入驻 |
+| JZ-03 | 大钟寺智能原生业态试点 | P1 | 商业运营公司 + AI 企业联盟 | 市场化招商 + 场景开放许可 | 2027 年试点开街 |
+| JZ-04 | 众智园测试场一期 | P2 | 测试场运营主体 + 行业组织 | 公共测试基金 + 龙头企业共建 | 2030 年投运 |
+| JZ-05 | 小月河健康驿站与社区公园 | P2 | 街道 + 医疗机构 + 社区组织 | 民生专项资金 | 2031 年建成 |
+| JZ-06 | 年度运行图常态化运营 | P3 | 运营共同体（政府 + 企业 + 社区 + 开发者） | 活动基金 + 赞助 + 票务 | 2035 年品牌化运营 |
+
+以上责任主体、资金与里程碑均为概念建议，不构成已确定的政府安排、招商承诺或资金承诺 [source:AGENT-TASKBOOK] [depth:phasing_implementation]。
 
 ### 年度运行图：全球 AI 创新活动体系与长期运营（agent.6）
 
