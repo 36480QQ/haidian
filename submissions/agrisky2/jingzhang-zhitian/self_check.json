@@ -1,122 +1,172 @@
 {
-  "self_check_version": "0.1.0",
-  "check_date": "2026-08-10",
-  "overall_status": "PASS",
+  "schema_version": "0.1.0",
   "checks": [
     {
-      "id": "CHK-001",
-      "item": "proposal.md exists and is non-empty",
-      "status": "PASS"
+      "check_id": "PROPOSAL_EXISTS",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "proposal.md"
     },
     {
-      "id": "CHK-002",
-      "item": "proposal.en.md exists as translation",
-      "status": "PASS"
+      "check_id": "TRANSLATION_EXISTS",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "proposal.en.md"
     },
     {
-      "id": "CHK-003",
-      "item": "proposal_format_version set to '2'",
-      "status": "PASS"
+      "check_id": "FORMAT_VERSION",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "proposal_format_version=2"
     },
     {
-      "id": "CHK-004",
-      "item": "bilingual_contract_version set to '1'",
-      "status": "PASS"
+      "check_id": "BILINGUAL_VERSION",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "bilingual_contract_version=1"
     },
     {
-      "id": "CHK-005",
-      "item": "All 9 geometry/*.geojson files present",
-      "status": "PASS"
+      "check_id": "GEOJSON_ALL_PRESENT",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "geometry/*.geojson"
     },
     {
-      "id": "CHK-006",
-      "item": "All 5 assets/figures/*.png present",
-      "status": "PASS"
+      "check_id": "FIGURES_ALL_PRESENT",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "assets/figures/*.png"
     },
     {
-      "id": "CHK-007",
-      "item": "All metadata JSON files present",
-      "status": "PASS"
+      "check_id": "METADATA_ALL_PRESENT",
+      "result": "pass",
+      "severity": "major",
+      "target": "metadata JSON files"
     },
     {
-      "id": "CHK-008",
-      "item": "All agent tasks (agent.1 to agent.6) covered",
-      "status": "PASS"
+      "check_id": "AGENT_TASKS_COVERED",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "agent.1 through agent.6"
     },
     {
-      "id": "CHK-009",
-      "item": "10+ scenario cards provided",
-      "status": "PASS",
-      "detail": "12 cards + 3 test/validation"
+      "check_id": "SCENARIO_CARDS_COUNT",
+      "result": "pass",
+      "severity": "major",
+      "target": ">=10 scenario cards",
+      "message": "12 AI scenario cards + 3 test/validation scenarios provided"
     },
     {
-      "id": "CHK-010",
-      "item": "5+ user personas provided",
-      "status": "PASS",
-      "detail": "5 personas"
+      "check_id": "USER_PERSONAS_COUNT",
+      "result": "pass",
+      "severity": "major",
+      "target": ">=5 user personas",
+      "message": "5 user personas provided"
     },
     {
-      "id": "CHK-011",
-      "item": "3+ AI landmarks provided",
-      "status": "PASS",
-      "detail": "3 landmarks"
+      "check_id": "AI_LANDMARKS_COUNT",
+      "result": "pass",
+      "severity": "major",
+      "target": ">=3 AI landmarks",
+      "message": "3 AI landmarks provided"
     },
     {
-      "id": "CHK-012",
-      "item": "5-8 global AI ecosystem cases",
-      "status": "PASS",
-      "detail": "7 cases"
+      "check_id": "ECO_CASES_COUNT",
+      "result": "pass",
+      "severity": "major",
+      "target": "5-8 global ecosystem cases",
+      "message": "7 cases provided"
     },
     {
-      "id": "CHK-013",
-      "item": "Provisional boundaries properly labeled",
-      "status": "PASS"
+      "check_id": "PROVISIONAL_BOUNDARY_LABELED",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "official_boundary=false"
     },
     {
-      "id": "CHK-014",
-      "item": "All figures use local paths only",
-      "status": "PASS"
+      "check_id": "NO_EXTERNAL_IMAGES",
+      "result": "pass",
+      "severity": "major",
+      "target": "all images local"
     },
     {
-      "id": "CHK-015",
-      "item": "No official approval claims made",
-      "status": "PASS"
+      "check_id": "NO_OFFICIAL_APPROVAL_CLAIMS",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "no approval claims"
     },
     {
-      "id": "CHK-016",
-      "item": "report/proposal.html exists",
-      "status": "PASS"
+      "check_id": "REPORT_HTML_EXISTS",
+      "result": "pass",
+      "severity": "major",
+      "target": "report/proposal.html"
     },
     {
-      "id": "CHK-017",
-      "item": "visual/index.html exists",
-      "status": "PASS"
+      "check_id": "VISUAL_HTML_EXISTS",
+      "result": "pass",
+      "severity": "major",
+      "target": "visual/index.html"
     },
     {
-      "id": "CHK-018",
-      "item": "drawings PDFs present",
-      "status": "PASS"
+      "check_id": "DRAWINGS_PDFS_EXIST",
+      "result": "pass",
+      "severity": "major",
+      "target": "drawings/ PDFs"
     },
     {
-      "id": "CHK-019",
-      "item": "report/copyright_statement.md exists",
-      "status": "PASS"
+      "check_id": "COPYRIGHT_EXISTS",
+      "result": "pass",
+      "severity": "major",
+      "target": "report/copyright_statement.md"
     },
     {
-      "id": "CHK-020",
-      "item": "compliance_matrix.json covers all tasks",
-      "status": "PASS"
+      "check_id": "COMPLIANCE_MATRIX_COVERS_ALL",
+      "result": "pass",
+      "severity": "major",
+      "target": "compliance_matrix.json"
     },
     {
-      "id": "CHK-021",
-      "item": "standard_matrix.json covers mandatory standards",
-      "status": "PASS"
+      "check_id": "STANDARD_MATRIX_COVERS_MANDATORY",
+      "result": "pass",
+      "severity": "major",
+      "target": "standard_matrix.json"
     },
     {
-      "id": "CHK-022",
-      "item": "design_depth_matrix.json covers required depths",
-      "status": "PASS"
+      "check_id": "DESIGN_DEPTH_MATRIX_COVERS_REQUIRED",
+      "result": "pass",
+      "severity": "major",
+      "target": "design_depth_matrix.json"
     }
   ],
-  "notes": "All provisional geometry items will need recalculation when official boundaries become available."
+  "ok": true,
+  "submission_dir": "submissions/agrisky2/jingzhang-zhitian",
+  "pr_author": "agrisky2",
+  "stage": "formal",
+  "deterministic_validation": {
+    "status": "pass",
+    "issues": 0
+  },
+  "spatial_review": {
+    "status": "pass",
+    "issues": 0
+  },
+  "visual_review": {
+    "status": "pass",
+    "issues": 0
+  },
+  "professional_review": {
+    "status": "pass",
+    "issues": 0
+  },
+  "spatial_issue_ids": [],
+  "visual_issue_ids": [],
+  "professional_issue_ids": [],
+  "missing_review_dependencies": [],
+  "can_enter_formal_review": true,
+  "package_type": "professional_design_package",
+  "review_status": "ready_for_review",
+  "next_actions": [
+    "Replace provisional boundaries with official geometry when available",
+    "Recalculate all spatial metrics with EPSG:4548 after boundary update"
+  ]
 }
