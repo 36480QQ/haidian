@@ -1814,6 +1814,36 @@ class SubmissionWorkflowTests(unittest.TestCase):
             self.assertFalse(report.ok)
             self.assertIn("assets must use", "\n".join(report.errors))
 
+    def test_media_size_limits_distinguish_primary_media_from_sidecars(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            base = "submissions/alice/ai-urban-loop"
+            cases = [
+                ("video.mp4", 6 * 1024 * 1024, None),
+                ("audio.mp3", 6 * 1024 * 1024, None),
+                ("poster.webp", 6 * 1024 * 1024, "media sidecars and posters"),
+                ("oversize.mp4", 21 * 1024 * 1024, "video files must be"),
+            ]
+
+            for filename, size, expected_error in cases:
+                with self.subTest(filename=filename):
+                    rel = f"{base}/assets/media/{filename}"
+                    path = root / rel
+                    path.parent.mkdir(parents=True, exist_ok=True)
+                    with path.open("wb") as handle:
+                        handle.truncate(size)
+
+                    report = validate_submission(root, "alice", [rel])
+                    size_errors = [error for error in report.errors if "must be <=" in error]
+                    if expected_error is None:
+                        self.assertEqual([], size_errors)
+                    else:
+                        self.assertTrue(
+                            any(expected_error in error for error in size_errors),
+                            size_errors,
+                        )
+                    path.unlink()
+
     def test_proposal_must_embed_required_local_figures(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
