@@ -35,12 +35,6 @@
       "sha256": "ac46667558519245ce008d49fcc30bcf4652173b0786118b6c8e82070e5a6d93"
     },
     {
-      "path": "exhibit.json",
-      "role": "exhibit_card",
-      "required": false,
-      "sha256": "c13853c3e72a48f43f8b990ab135cec710b7986a404d2aae8771266ee18ece9e"
-    },
-    {
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
@@ -62,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "9f09cb60b4922de89935706a4fa923e476afdda8f2f2aab36ffdc02e4efd9796"
+      "sha256": "56c5f81e368029272d41c31398ada1f442b300942221a36bd9f68edfe347812f"
     },
     {
       "path": "compliance_matrix.json",
