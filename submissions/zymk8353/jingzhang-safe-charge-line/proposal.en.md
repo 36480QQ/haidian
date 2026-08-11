@@ -27,6 +27,8 @@ The revised Beijing Non-motor Vehicle Regulation places charging/swap constructi
 
 Exact official site and key-area polygons are still absent from the public package. The submitted geometry remains a low-confidence provisional working extent, never an official redline, parcel, road, equipment position or precise-area basis. Official geometry must trigger regeneration of all nine layers, metrics, ten bilingual figures, HTML and PDFs.[data:geometry/site_boundary.geojson#SITE-001] [source:BOUNDARY-SOURCE]
 
+Location verification note: reproducible community checks in repository Issue #1029 report that upstream provisional `PROV-KEY-003` is internally area/order-consistent but centred near Beijing North Station, about 2.26 km from Dazhongsi metro. This is not an official replacement boundary or permission to shift it. The package retains upstream geometry only as a placeholder; the Dazhongsi programme name comes from the brief, while any real station, community, parking or charge/swap site requires separate field and responsible-party verification. A canonical or official update triggers whole-package recalculation of layers, metrics, figures, PDFs and HTML.[source:ISSUE-1029] [assumption:A-BOUNDARY-001]
+
 ## Three-Level Scope Framework
 
 The coordinated area asks how reliability can become a shared AI-innovation capability. The overall design area asks how responsibility interfaces connect parking, slow mobility, public space and industry services. The three key areas divide controlled validation, public explanation and daily adoption. They are a chain from institution to space to a 90-day operating test, not three drawings at decreasing scales.[standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [depth:three_level_scope_framework]
