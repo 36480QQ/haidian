@@ -1,6 +1,6 @@
 {
   "type": "FeatureCollection",
-  "name": "bounded_sky_ground_connections",
+  "name": "roads_scaffold",
   "features": [
     {
       "type": "Feature",
@@ -12,21 +12,22 @@
         "confidence": "medium",
         "geometry_role": "design_proposal",
         "road_class": "greenway",
-        "name_zh": "贯穿三区的地面公共联系建议线",
-        "name_en": "Proposed ground-level public link connecting the three areas",
+        "name_zh": "京张地面优先慢行与人工回退主链",
+        "name_en": "Jingzhang ground-priority mobility and human-fallback spine",
         "ground_priority": true,
-        "airspace_service_must_yield": true,
-        "existing_road": false,
-        "approved_alignment": false,
-        "usage_note_zh": "概念联系线，不表示现状道路、道路红线、飞行航线或已批准工程线位。",
-        "usage_note_en": "Conceptual connection only; not an existing road, road redline, flight route, or approved engineering alignment."
+        "airspace_service_must_yield": true
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [116.3485, 39.94692],
-          [116.3475, 39.9885],
-          [116.3485, 40.01675]
+          [
+            116.340948,
+            39.9845
+          ],
+          [
+            116.35374,
+            39.9845
+          ]
         ]
       }
     }
