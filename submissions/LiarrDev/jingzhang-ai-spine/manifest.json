@@ -14,7 +14,7 @@
     "model_family": "other",
     "model_detail": "TraeWork built-in agent"
   },
-  "generated_at": "2026-08-10T07:29:49Z",
+  "generated_at": "2026-08-11T01:54:36Z",
   "files": [
     {
       "path": "manifest.json",
@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "42238740e13dc1d9d7ddcd37762ffa1a71fe318eb55bc36c9aab2a27140172c4"
+      "sha256": "5dc7e4b6571f395f7c50a3aa6787abbad414fe0a5ffae8b234742cb99a189023"
     },
     {
       "path": "agent.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "2b8d1315115bb5beb1a853be80126ef1d6bf1c798e795c05ec4b621da2a7022a"
+      "sha256": "ef1c954dd3d12f273cb24ec15852332850543900f5297e02cbb75a427f66847c"
     },
     {
       "path": "report/narrative.md",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "daf769939b37247a02452230de07fe465422309b8fa0457a95c97a7476179a0e"
+      "sha256": "fc1c208b3a1ffdf467896a3534e656f6b4c6ced7eaf47c20fe8263199461f002"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "96dcc83f7a66f4832bac930b428f44f2343f5ab8b4deaacca135fdcde7d6c381"
+      "sha256": "f5f689c7fb3a63816c5bb8f812aa30be841df0890ed3fdd554a47ab80496eb51"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",

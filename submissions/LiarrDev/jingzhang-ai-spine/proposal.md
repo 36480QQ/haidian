@@ -18,7 +18,7 @@ iteration: "v1.0"
 
 本方案以北京市规划和自然资源委员会海淀分局发布的资格预审公告为第一依据 [source:OFFICIAL-ANNOUNCEMENT]，以面向智能体的开源征集任务书为agent任务依据 [source:AGENT-TASKBOOK]，以仓库维护者登记的临时粗略边界为空间工作基础 [source:BOUNDARY-SOURCE]。方案同时引用住房和城乡建设部《城市设计管理办法》[standard:MOHURD-URBAN-DESIGN-MEASURES]、《控制性详细规划编制审批办法》[standard:MOHURD-CONTROL-DETAILED-PLANNING] 和自然资源部《用地用海分类指南》[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] 作为专业标准参照。
 
-当前仓库尚未取得官方精确红线。本方案使用 `brief/site-package/geometry/provisional_boundaries.geojson` 中的临时粗略边界 [data:geometry/site_boundary.geojson#SITE-001]，标注为 `provisional_constraint`、`official_boundary=false`。该临时边界仅用于AI方案生成、离线展示和本地自检，不得作为官方红线、审批依据或精确面积复算依据。组织方数据缺口不阻断内容评分；官方边界发布后，所有空间图层和指标需重新复算 [assumption:A-CONTROLS-001]。
+当前仓库尚未取得官方精确红线。本方案使用 `brief/site-package/geometry/provisional_boundaries.geojson` 中的临时粗略边界 [data:geometry/site_boundary.geojson#SITE-001]，标注为 `provisional_constraint`、`official_boundary=false`。该临时边界仅用于AI方案生成、离线展示和本地自检，不得作为官方红线、审批依据或精确面积复算依据。本方案可供概念性评审参考，官方边界数据及任何评分或录取决定尚待确认；官方边界发布后，所有空间图层和指标需重新复算 [assumption:A-CONTROLS-001]。
 
 本方案在关键判断后使用可校验引用格式，完整来源覆盖由 `sources.json` 负责，专业标准响应由 `standard_matrix.json` 管理，成果深度由 `design_depth_matrix.json` 约束，任务覆盖由 `compliance_matrix.json` 追踪。读者无需打开JSON即可理解方案设计逻辑。
 
