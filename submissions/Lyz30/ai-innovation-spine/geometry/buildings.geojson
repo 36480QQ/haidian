@@ -8,13 +8,14 @@
   "features": [
     {
       "type": "Feature",
+      "id": "BLD-001",
       "properties": {
         "id": "BLD-001",
         "layer": "BUILDING_FOOTPRINT",
         "name_zh": "AI孵化器A座",
         "building_type": "incubator",
         "floors_estimated": 12,
-        "source_type": "agent_generated",
+        "source_type": "agent_generated_design",
         "confidence": "low",
         "geometry_role": "design_proposal",
         "retain_status": "new"
@@ -32,13 +33,14 @@
     },
     {
       "type": "Feature",
+      "id": "BLD-002",
       "properties": {
         "id": "BLD-002",
         "layer": "BUILDING_FOOTPRINT",
         "name_zh": "AI孵化器B座",
         "building_type": "incubator",
         "floors_estimated": 12,
-        "source_type": "agent_generated",
+        "source_type": "agent_generated_design",
         "confidence": "low",
         "geometry_role": "design_proposal",
         "retain_status": "new"
@@ -56,13 +58,14 @@
     },
     {
       "type": "Feature",
+      "id": "BLD-003",
       "properties": {
         "id": "BLD-003",
         "layer": "BUILDING_FOOTPRINT",
         "name_zh": "众智园数据中心",
-        "building_type": "data_center",
+        "building_type": "ai_r_and_d",
         "floors_estimated": 4,
-        "source_type": "agent_generated",
+        "source_type": "agent_generated_design",
         "confidence": "low",
         "geometry_role": "design_proposal",
         "retain_status": "new"
@@ -80,13 +83,14 @@
     },
     {
       "type": "Feature",
+      "id": "BLD-004",
       "properties": {
         "id": "BLD-004",
         "layer": "BUILDING_FOOTPRINT",
         "name_zh": "研发楼A",
-        "building_type": "rd_office",
+        "building_type": "ai_r_and_d",
         "floors_estimated": 15,
-        "source_type": "agent_generated",
+        "source_type": "agent_generated_design",
         "confidence": "low",
         "geometry_role": "design_proposal",
         "retain_status": "new"
@@ -104,13 +108,14 @@
     },
     {
       "type": "Feature",
+      "id": "BLD-005",
       "properties": {
         "id": "BLD-005",
         "layer": "BUILDING_FOOTPRINT",
         "name_zh": "研发楼B",
-        "building_type": "rd_office",
+        "building_type": "ai_r_and_d",
         "floors_estimated": 15,
-        "source_type": "agent_generated",
+        "source_type": "agent_generated_design",
         "confidence": "low",
         "geometry_role": "design_proposal",
         "retain_status": "new"
@@ -128,13 +133,14 @@
     },
     {
       "type": "Feature",
+      "id": "BLD-006",
       "properties": {
         "id": "BLD-006",
         "layer": "BUILDING_FOOTPRINT",
         "name_zh": "AI体验馆",
-        "building_type": "exhibition",
+        "building_type": "cultural",
         "floors_estimated": 5,
-        "source_type": "agent_generated",
+        "source_type": "agent_generated_design",
         "confidence": "low",
         "geometry_role": "design_proposal",
         "retain_status": "new"
@@ -152,13 +158,14 @@
     },
     {
       "type": "Feature",
+      "id": "BLD-007",
       "properties": {
         "id": "BLD-007",
         "layer": "BUILDING_FOOTPRINT",
         "name_zh": "开源社区中心",
-        "building_type": "community_center",
+        "building_type": "community_service",
         "floors_estimated": 6,
-        "source_type": "agent_generated",
+        "source_type": "agent_generated_design",
         "confidence": "low",
         "geometry_role": "design_proposal",
         "retain_status": "new"
@@ -176,13 +183,14 @@
     },
     {
       "type": "Feature",
+      "id": "BLD-008",
       "properties": {
         "id": "BLD-008",
         "layer": "BUILDING_FOOTPRINT",
         "name_zh": "人才公寓1号楼",
-        "building_type": "residential",
+        "building_type": "talent_apartment",
         "floors_estimated": 18,
-        "source_type": "agent_generated",
+        "source_type": "agent_generated_design",
         "confidence": "low",
         "geometry_role": "design_proposal",
         "retain_status": "new"
@@ -200,13 +208,14 @@
     },
     {
       "type": "Feature",
+      "id": "BLD-009",
       "properties": {
         "id": "BLD-009",
         "layer": "BUILDING_FOOTPRINT",
         "name_zh": "人才公寓2号楼",
-        "building_type": "residential",
+        "building_type": "talent_apartment",
         "floors_estimated": 18,
-        "source_type": "agent_generated",
+        "source_type": "agent_generated_design",
         "confidence": "low",
         "geometry_role": "design_proposal",
         "retain_status": "new"
@@ -224,13 +233,14 @@
     },
     {
       "type": "Feature",
+      "id": "BLD-010",
       "properties": {
         "id": "BLD-010",
         "layer": "BUILDING_FOOTPRINT",
         "name_zh": "智慧孵化器",
         "building_type": "incubator",
         "floors_estimated": 10,
-        "source_type": "agent_generated",
+        "source_type": "agent_generated_design",
         "confidence": "low",
         "geometry_role": "design_proposal",
         "retain_status": "new"
@@ -248,13 +258,14 @@
     },
     {
       "type": "Feature",
+      "id": "BLD-011",
       "properties": {
         "id": "BLD-011",
         "layer": "BUILDING_FOOTPRINT",
         "name_zh": "AI产业大厦",
-        "building_type": "office_tower",
+        "building_type": "office",
         "floors_estimated": 25,
-        "source_type": "agent_generated",
+        "source_type": "agent_generated_design",
         "confidence": "low",
         "geometry_role": "design_proposal",
         "retain_status": "new"
@@ -272,13 +283,14 @@
     },
     {
       "type": "Feature",
+      "id": "BLD-012",
       "properties": {
         "id": "BLD-012",
         "layer": "BUILDING_FOOTPRINT",
         "name_zh": "大钟寺展示中心",
-        "building_type": "exhibition",
+        "building_type": "cultural",
         "floors_estimated": 4,
-        "source_type": "agent_generated",
+        "source_type": "agent_generated_design",
         "confidence": "low",
         "geometry_role": "design_proposal",
         "retain_status": "renovate"
@@ -296,13 +308,14 @@
     },
     {
       "type": "Feature",
+      "id": "BLD-013",
       "properties": {
         "id": "BLD-013",
         "layer": "BUILDING_FOOTPRINT",
         "name_zh": "数字艺术中心",
         "building_type": "cultural",
         "floors_estimated": 6,
-        "source_type": "agent_generated",
+        "source_type": "agent_generated_design",
         "confidence": "low",
         "geometry_role": "design_proposal",
         "retain_status": "new"
@@ -320,13 +333,14 @@
     },
     {
       "type": "Feature",
+      "id": "BLD-014",
       "properties": {
         "id": "BLD-014",
         "layer": "BUILDING_FOOTPRINT",
         "name_zh": "智能零售中心",
-        "building_type": "commercial",
+        "building_type": "retail",
         "floors_estimated": 8,
-        "source_type": "agent_generated",
+        "source_type": "agent_generated_design",
         "confidence": "low",
         "geometry_role": "design_proposal",
         "retain_status": "new"
@@ -344,13 +358,14 @@
     },
     {
       "type": "Feature",
+      "id": "BLD-015",
       "properties": {
         "id": "BLD-015",
         "layer": "BUILDING_FOOTPRINT",
         "name_zh": "科技商业综合体",
-        "building_type": "commercial_complex",
+        "building_type": "mixed_use",
         "floors_estimated": 12,
-        "source_type": "agent_generated",
+        "source_type": "agent_generated_design",
         "confidence": "low",
         "geometry_role": "design_proposal",
         "retain_status": "new"
