@@ -32,7 +32,7 @@ iteration: "v0.1"
 
 ## 总体设计范围城市更新与控规深度城市设计
 
-总体设计范围城市更新以「东西缝合、南北贯通」为核心策略：南北向以京张遗址公园—小月河沿线构建智脉绿廊主轴，串联三处重点区域；东西向以三条缝合廊道连接中关村科技服务翼与小月河场景赋能翼 [depth:overall_spatial_structure]。空间结构为「一廊三区两翼」：一廊即智脉绿廊，三区即众智园、AI原点社区、大钟寺，两翼即中关村科技服务翼与小月河场景赋能翼 [data:geometry/key_areas.geojson]。用地分区在总体设计范围内作无缝覆盖，按国土空间用地用海分类（节选）表达科研、商业服务、居住、文化、绿地与留白 [data:geometry/land_use.geojson]。城市更新遵循「保留为主、改造为辅、审慎新建」的拆改留逻辑，既有建筑与权属空间不得擅自改造 [depth:retain_renovate_demolish]。
+总体设计范围城市更新以「东西缝合、南北贯通」为核心策略：南北向以京张遗址公园—小月河沿线构建智脉绿廊主轴，串联三处重点区域；东西向以三条缝合廊道连接中关村科技服务翼与小月河场景赋能翼 [depth:overall_spatial_structure]。空间结构为「一廊三区两翼」：一廊即智脉绿廊，三区即众智园、AI原点社区、大钟寺，两翼即中关村科技服务翼与小月河场景赋能翼 [data:geometry/key_areas.geojson]。用地分区在总体设计范围内作无缝覆盖，按国土空间用地用海分类（节选）表达科研、商业服务、居住、文化、绿地与留白 [data:geometry/land_use.geojson]。城市更新遵循「保留为主、改造为辅、审慎新建」的拆改留逻辑，既有建筑与权属空间不得擅自改造 [depth:retain_renovate_demolish][depth:existing_conditions_diagnosis]。
 
 ![总览地图：三层范围与重点区域](assets/figures/site-overview.png)
 
@@ -48,7 +48,7 @@ AI 创新生态方面，提出 5–8 个全球案例参照（如 AI 超级集群
 
 ## 用地、建筑规模与拆改留方案
 
-用地分区在总体设计范围内无缝覆盖，科研、商业服务、居住、文化、道路、绿地与留白按区位与重点区域赋值 [data:geometry/land_use.geojson]。建筑规模以建筑基底面积表达，本方案建筑基底约 2.65 km²，为设计层示意；容积率、建筑高度、建筑密度等法定强度指标在公开资料中缺失，统一标注待官方数据补齐 [metric:building_footprint_area_sqm][metric:floor_area_ratio]。拆改留遵循「保留为主、改造为辅、审慎新建」：既有科研与产业载体以改造提升为主，新增 AI 载体优先利用留白与低效用地，既有居住与文保相关空间不得擅自拆改 [depth:retain_renovate_demolish]。
+用地分区在总体设计范围内无缝覆盖，科研、商业服务、居住、文化、道路、绿地与留白按区位与重点区域赋值 [data:geometry/land_use.geojson]。建筑规模以建筑基底面积表达，本方案建筑基底约 2.65 km²，为设计层示意；容积率、建筑高度、建筑密度等法定强度指标在公开资料中缺失，统一标注待官方数据补齐 [metric:building_footprint_area_sqm][metric:floor_area_ratio]。拆改留遵循「保留为主、改造为辅、审慎新建」：既有科研与产业载体以改造提升为主，新增 AI 载体优先利用留白与低效用地，既有居住与文保相关空间不得擅自拆改 [depth:retain_renovate_demolish][depth:development_intensity_controls]。
 
 ![用地分区结构](assets/figures/land-use-structure.png)
 
@@ -91,6 +91,7 @@ AI 创新生态方面，提出 5–8 个全球案例参照（如 AI 超级集群
 9. [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] 用地用海分类指南。
 10. [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] 项目官方公告。
 11. [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] 任务书。
+12. [standard:MOHURD-ARCH-DESIGN-DEPTH-2016] 建筑专业深度规定（待官方文件启用；资料缺口）。
 
 ## 品牌识别与命名体系（agent.1）
 

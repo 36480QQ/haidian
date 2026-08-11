@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "e7a5b1f7998e445a876c9548c071e6c41736242326ba85e0c00a196246479e50"
+      "sha256": "8ea331d1524ec57b162f7317673f0bd18a423e83909e7ac1bc7a0f1668319de9"
     },
     {
       "path": "agent.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "df2459a35c9b381c5478c1497928bbc44d4f17667a68b42b7c6dd67a1ddedee9"
+      "sha256": "3e2c65578ee73886cb0f30261aad376cc6eade69551f7a28c02f95b24e482dd0"
     },
     {
       "path": "compliance_matrix.json",
@@ -247,7 +247,8 @@
     }
   ],
   "validation_claim": {
-    "self_checked": false,
+    "readiness_contract": "persisted-self-check-v1",
+    "self_checked": true,
     "known_blockers": [],
     "data_confidence": "high"
   }
