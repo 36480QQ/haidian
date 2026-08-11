@@ -1,0 +1,69 @@
+{
+  "schema_version": "0.1.0",
+  "checks": [
+    {
+      "check_id": "BOUNDARY_TRUST",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/site_boundary.geojson",
+      "message": "Provisional boundary is conspicuously labelled; it is not an official red line and must be replaced before implementation-sensitive review."
+    },
+    {
+      "check_id": "KEY_AREAS_TRUST",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/key_areas.geojson",
+      "message": "All three focus-area geometries remain provisional and non-statutory."
+    },
+    {
+      "check_id": "BILINGUAL_PACKAGE",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "proposal.en.md",
+      "message": "Chinese and English proposal, report, visual, A0, A3 and core-figure paths are present."
+    },
+    {
+      "check_id": "R006_PRESENTATION",
+      "result": "pass",
+      "severity": "major",
+      "target": "drawings/a3-booklet.pdf",
+      "message": "R006 A0, A3, mobile and offline visual artifacts are present and implementation-gated."
+    },
+    {
+      "check_id": "PROFESSIONAL_EVIDENCE",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal.md",
+      "message": "Proposal references standards, depth items, geometry, metrics, sources and assumptions without upgrading evidence status."
+    },
+    {
+      "check_id": "OFFICIAL_PERSISTED_SELF_CHECK",
+      "result": "unknown",
+      "severity": "blocking",
+      "target": "manifest.json",
+      "message": "The current official --mark-self-checked replay must run for authenticated GitHub author Golden-Koi."
+    }
+  ],
+  "ok": false,
+  "submission_dir": "submissions/Golden-Koi/jingzhang-open-way-r006",
+  "pr_author": "Golden-Koi",
+  "stage": "formal",
+  "missing_review_dependencies": [
+    "X1 official spatial authority",
+    "X2 field journey and surrounding-interface evidence",
+    "X3 real-user and burden evidence",
+    "X4 operating, data and legal authority",
+    "X5 cost, procurement and exit proof",
+    "X6 independent professional and accessibility validation",
+    "current official persisted self-check replay"
+  ],
+  "can_enter_formal_review": false,
+  "package_type": "professional_design_package",
+  "review_status": "intake_ready_implementation_gated",
+  "next_actions": [
+    "Use the authenticated GitHub login Golden-Koi and matching submission directory.",
+    "Run the current official self-check with --mark-self-checked --json.",
+    "Run participant preflight and submit the resulting package by Pull Request.",
+    "Keep X1-X6 blocked until external evidence is supplied."
+  ]
+}
