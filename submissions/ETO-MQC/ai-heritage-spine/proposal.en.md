@@ -1,6 +1,6 @@
 ---
 title: "Smart Rail, New Pulse: The Jing-Zhang Ren-Line Century AI Innovation Belt Overall Urban Design"
-author_github: "ETO-MQC"
+author_github: "mqcin"
 language: "en"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
