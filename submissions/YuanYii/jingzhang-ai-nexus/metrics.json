@@ -27,7 +27,8 @@
       ],
       "formula": "sum(polygon_area(building_footprints))",
       "confidence": "medium",
-      "assumptions": []
+      "assumptions": [],
+      "caveat": "building status classification (retain/renovate/demolish/new) not yet available pending official building survey data; all building polygons currently marked status=unknown"
     },
     "green_ratio": {
       "status": "known",

@@ -12,7 +12,7 @@
     "agent_name": "YuanYii AI Design Agent",
     "model": "agent-declared-model"
   },
-  "generated_at": "2026-08-11T12:00:00.000000+00:00",
+  "generated_at": "2026-08-11T13:30:00.000000+00:00",
   "files": [
     {
       "path": "agent.json",
@@ -114,14 +114,14 @@
       "path": "assumptions.json",
       "role": "assumptions",
       "required": true,
-      "sha256": "b5603b9b0229c1005f03826e0681e8196acf91afa0bd7f460682ca543f36744e"
+      "sha256": "4e28b98097a94bf3f09db34ab6dade6da16ed55c25275a12b6c33fa006e94693"
     },
     {
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
       "language": "zh",
-      "sha256": "2b8304a281af3f949cd4978516872cf05be1d5725a9de89d40baab3aa6e47dec"
+      "sha256": "07565ab9ac01d6c0d6a88641d1be743fc9ecfdbae846a5c3635d07af35ac7608"
     },
     {
       "path": "compliance_matrix.json",
@@ -228,7 +228,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "9bf9b55f9afedd3c5d9c61f0851ecd186dde1a8a09e625c538cdc5bac075b2ac"
+      "sha256": "34e4867a4739932e9c27c28eb12ff3b280a4ec6230b3165aede15dc15022da7c"
     },
     {
       "path": "proposal.en.md",
@@ -243,13 +243,13 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "b86893d9020e9cd0a230831cd41611a574f51a7f41884496b6ca1a5441eec1c7"
+      "sha256": "13b001f4a82eed12bfd97afc3116f6b9db719a980a3f094f93a3291734747c61"
     },
     {
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "f96da5773a113f5575c020838fed127c82893317afa594f55adb0bb1c9c88e65"
+      "sha256": "910fb3bb6b798fef89077c60f5617e740b2608fb405e690601ad4dcb9df48c7f"
     },
     {
       "path": "report/narrative.md",
@@ -357,14 +357,44 @@
       "required": false,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "2c38cb9b0b0b72fa9d689b7d2c7cca8d2827f32ee4ce55d4c094c02774ef876e"
+      "sha256": "8a74c599e2a89f2b9525a904b59301d97ae290afdb933c8c548791b3c2fca809"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "400f7b68999067722e7ce38e574ed19fca471d1e0ecb84192b4b03a06af98fa0"
+      "sha256": "0f4418344687209b76df9b586540210b409cdb81c921fc01a3541f0b7ca0a0cc"
+    },
+    {
+      "path": "assets/figures/ecosystem-map.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "zh",
+      "sha256": "44281e0f43d1db91ac9900f20c9619ee0b4d7b1478f776f3eb9e03e821a17390"
+    },
+    {
+      "path": "assets/figures/ecosystem-map.en.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "en",
+      "translation_of": "assets/figures/ecosystem-map.png",
+      "sha256": "44281e0f43d1db91ac9900f20c9619ee0b4d7b1478f776f3eb9e03e821a17390"
+    },
+    {
+      "path": "assets/figures/three-areas-two-wings.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "zh",
+      "sha256": "9287971b75f6cb2319778a1256ec4612b5f8f332476010c3710d7e06ccb3446d"
+    },
+    {
+      "path": "assets/figures/three-areas-two-wings.en.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "en",
+      "translation_of": "assets/figures/three-areas-two-wings.png",
+      "sha256": "9287971b75f6cb2319778a1256ec4612b5f8f332476010c3710d7e06ccb3446d"
     }
   ],
   "validation_claim": {
@@ -374,7 +404,7 @@
     "version": "4.0",
     "checked_at": "2026-08-10T00:00:00Z"
   },
-  "version": "7.0",
+  "version": "9.0",
   "updated_at": "2026-08-11T00:00:00Z",
   "checksums": {
     "proposal.md": "8e38390cd11bb1f3ed44542a6f6692674cf0a5a2cd35f9ca1e434aba0d30b3bc",

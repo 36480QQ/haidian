@@ -30,6 +30,12 @@
       "status": "pending_professional_confirmation",
       "statement": "Long-term operation and maintenance funding gaps for public AI infrastructure.",
       "impact": "Multi-agent investment models, open-source governance committee, and commercial lounge revenues are leveraged."
+    },
+    {
+      "id": "A-BUILDING-001",
+      "status": "pending_professional_confirmation",
+      "statement": "Building status classification (retain / renovate / demolish / new) cannot be determined without official building survey data including construction year, structural type, legal status, and current use condition.",
+      "impact": "All building footprints in geometry/buildings.geojson are marked status=unknown. Building density, demolition ratio, and retention ratio are concept-only estimates pending official survey data."
     }
   ]
 }
