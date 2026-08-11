@@ -129,24 +129,24 @@ The inclusive supplementary personas include: visiting tourists (temporary servi
 
 ### AI Civic-Service Scenario Cards (12 Cards)
 
-The following scenario cards map to spatial locations, target users, usage contexts, required data, public value, risk points, and human-review mechanisms. AI is used only for service navigation and public information Q&A; it does not diagnose and does not approve [source:agent-taskbook] [standard:GENERATIVE-AI-INTERIM-MEASURES]:
+The following scenario cards map to target users, required data, public value, risk points, human review, and operating responsibility. AI is used only for service navigation and public information Q&A; it does not diagnose and does not approve [source:agent-taskbook] [standard:GENERATIVE-AI-INTERIM-MEASURES]:
 
-| ID | Scenario Name | Users | Spatial Location | Risk | Human Review |
-|------|----------|----------|----------|--------|----------|
-| SC-01 | One-Stop Government Service Guidance | All citizens | Origin Community hub | Outdated procedure information | Reviewed by government affairs staff |
-| SC-02 | AI Health Service Navigation | Residents / young people | Origin Community / Zhongzhiyuan | Medical advice overstepping boundaries | Reviewed by medical staff |
-| SC-03 | Chronic-Disease Health Follow-Up | Elderly residents | Community health centers | Erroneous health-data collection | Medical + data-security review |
-| SC-04 | AI Legal Consultation Navigation | Citizens / enterprises | Dazhongsi / Origin Community | Legal opinion overstepping boundaries | Reviewed by legal professionals |
-| SC-05 | Community Legal Aid Appointment | Disadvantaged groups | Origin Community | Deviation in rights-and-interests information | Reviewed by legal professionals |
-| SC-06 | Accessible Services for Disadvantaged Groups | Persons with disabilities | All service stations | Missing accessible facilities | Manual + data-security review |
-| SC-07 | One-Click Emergency Medical Navigation | All citizens | Whole district (testing and validation) | Boundaries of emergency-rescue responsibility | Reviewed by medical staff |
-| SC-08 | Multilingual New-Citizen Services | New citizens / foreign nationals | Whole district | Translation accuracy | Manual review |
-| SC-09 | Public-Service Satisfaction Analysis | Management departments | Service back end | Evaluation-data bias | Data-security review |
-| SC-10 | Service-Station Self-Service Terminals | All citizens | All stations (testing and validation) | Equipment operation and maintenance | Manual review |
-| SC-11 | Health-Risk Activity Reminders | Residents | Health parks | Excessive / insufficient reminders | Reviewed by medical staff |
-| SC-12 | Cross-District Service One-Code Pass | Cross-district citizens | Three-zone coordination | Data mutual-recognition risk | Data-security review |
+| ID | Scenario Name | Users | Required Data | Public Value | Risk | Human Review | Operating Responsibility |
+|------|----------|----------|----------|----------|--------|----------|----------|
+| SC-01 | One-Stop Government Service Guidance | All citizens | Public government-service catalog | Fewer trips, transparency | Outdated procedure information | Reviewed by government affairs staff | Subdistrict government center |
+| SC-02 | AI Health Service Navigation | Residents / young people | Public medical catalog + desensitized inquiries | Care navigation, fewer misdiagnoses | Medical advice overstepping boundaries | Reviewed by medical staff | Community health center |
+| SC-03 | Chronic-Disease Health Follow-Up | Elderly residents | Public health knowledge + desensitized records | Chronic-disease management, health literacy | Erroneous health-data collection | Medical + data-security review | Community health center |
+| SC-04 | AI Legal Consultation Navigation | Citizens / enterprises | Public legal database + desensitized inquiries | Legal accessibility, rights protection | Legal opinion overstepping boundaries | Reviewed by legal professionals | Legal aid center |
+| SC-05 | Community Legal Aid Appointment | Disadvantaged groups | Public aid resources | Rights of disadvantaged groups | Deviation in rights-and-interests information | Reviewed by legal professionals | Legal aid center |
+| SC-06 | Accessible Services for Disadvantaged Groups | Persons with disabilities | Public accessibility facility catalog | Accessibility reachability | Missing accessible facilities | Manual + data-security review | Disabled persons' federation / community |
+| SC-07 | One-Click Emergency Medical Navigation | All citizens | Public medical points + desensitized location | Emergency response, life safety | Boundaries of emergency-rescue responsibility | Reviewed by medical staff | 120 / community health center |
+| SC-08 | Multilingual New-Citizen Services | New citizens / foreign nationals | Public service info + multilingual | Integration convenience, information equity | Translation accuracy | Manual review | Subdistrict / community |
+| SC-09 | Public-Service Satisfaction Analysis | Management departments | Public evaluations + desensitized feedback | Service optimization, public participation | Evaluation-data bias | Data-security review | Management department |
+| SC-10 | Service-Station Self-Service Terminals | All citizens | Public service catalog | 7×24 service availability | Equipment operation and maintenance | Manual review | Operator |
+| SC-11 | Health-Risk Activity Reminders | Residents | Public health tips | Preventive health | Excessive / insufficient reminders | Reviewed by medical staff | Community health center |
+| SC-12 | Cross-District Service One-Code Pass | Cross-district citizens | Public service mutual-recognition catalog | Cross-district convenience, data interoperability | Data mutual-recognition risk | Data-security review | Cross-district coordination entity |
 
-Among these, SC-07 (One-Click Emergency Medical Navigation), SC-10 (Service-Station Self-Service Terminals), and SC-03 (Chronic-Disease Health Follow-Up) are AI testing-and-validation scenarios; their boundaries, operating entities, and risk controls must be stated, and they must not be described as approved for operation [standard:GENERATIVE-AI-INTERIM-MEASURES]. Testing-and-validation scenarios use only public, authorized, or manually curated data, and do not use personal health-privacy data [assumption:A-DATA-002].
+Among these, SC-07 (One-Click Emergency Medical Navigation), SC-10 (Service-Station Self-Service Terminals), and SC-03 (Chronic-Disease Health Follow-Up) are AI testing-and-validation scenarios; their boundaries, operating entities, and risk controls must be stated, and they must not be described as approved for operation [standard:GENERATIVE-AI-INTERIM-MEASURES]. Testing-and-validation scenarios use only public, authorized, or manually curated data, and do not use personal health-privacy data [assumption:A-DATA-002]. All operating responsibilities are conceptual suggestions requiring deepening by professional teams after operating entities, data licenses, and professional review are confirmed [assumption:A-CONTROLS-001].
 
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
