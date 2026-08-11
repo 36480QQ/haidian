@@ -15,7 +15,7 @@
       "formula": "polygon_area(submitted_site_boundary)",
       "confidence": "high",
       "assumptions": [
-        "Trusted official boundary is present in the site package."
+        "Boundary is derived from the public provisional_boundaries.geojson; NOT a trusted official boundary. Recalculation required once official polygon is released."
       ]
     },
     "building_footprint_area_sqm": {

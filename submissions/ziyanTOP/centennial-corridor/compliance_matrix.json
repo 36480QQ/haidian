@@ -1059,6 +1059,18 @@
         "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
+      ],
+      "scenario_map": [
+        {"scenario_id": "SC-01", "name_zh": "开源发布厅", "name_en": "Open-source release hall", "key_area_id": "PROV-KEY-001", "milestone_corridor_id": "AGENT-MILE-001", "operating_window": "year-round", "privacy_boundary": "public-release / no-pii", "human_review": "agent-piloted, human-curated"},
+        {"scenario_id": "SC-02", "name_zh": "安全治理沙盒", "name_en": "Safety-governance sandbox", "key_area_id": "PROV-KEY-002", "milestone_corridor_id": "AGENT-MILE-007", "operating_window": "year-round", "privacy_boundary": "red-team / no-pii / no-personal-data", "human_review": "expert-supervised"},
+        {"scenario_id": "SC-03", "name_zh": "端侧算力站", "name_en": "On-device compute station", "key_area_id": "PROV-KEY-001", "milestone_corridor_id": "AGENT-MILE-002", "operating_window": "year-round", "privacy_boundary": "edge-inference / consented", "human_review": "operator-supervised"},
+        {"scenario_id": "SC-04", "name_zh": "AI 慢行导航", "name_en": "AI slow-traffic navigation", "key_area_id": "PROV-KEY-001", "milestone_corridor_id": "AGENT-MILE-004", "operating_window": "year-round", "privacy_boundary": "no-face-capture / no-pii", "human_review": "no-personal-decision"},
+        {"scenario_id": "SC-05", "name_zh": "大钟寺国际路演沙龙", "name_en": "Dazhongsi international roadshow salon", "key_area_id": "PROV-KEY-003", "milestone_corridor_id": "AGENT-MILE-008", "operating_window": "quarterly events", "privacy_boundary": "venue-bounded / consented", "human_review": "operator-supervised"},
+        {"scenario_id": "SC-06", "name_zh": "清河低碳创新廊道", "name_en": "Qinghe low-carbon innovation corridor", "key_area_id": "PROV-KEY-002", "milestone_corridor_id": "AGENT-MILE-006", "operating_window": "year-round", "privacy_boundary": "environmental-data / public", "human_review": "operator-supervised"},
+        {"scenario_id": "SC-07", "name_zh": "近校成果转化街", "name_en": "Near-campus translation street", "key_area_id": "PROV-KEY-001", "milestone_corridor_id": "AGENT-MILE-005", "operating_window": "year-round", "privacy_boundary": "research-data / IP-protected", "human_review": "human-curated"},
+        {"scenario_id": "SC-08", "name_zh": "数据要素接待厅", "name_en": "Data-factor reception hall", "key_area_id": "PROV-KEY-003", "milestone_corridor_id": "AGENT-MILE-008", "operating_window": "year-round", "privacy_boundary": "authorised-only / auditable", "human_review": "compliance-supervised"},
+        {"scenario_id": "SC-09", "name_zh": "AI 生活服务示范街", "name_en": "AI life-service demonstration street", "key_area_id": "PROV-KEY-001", "milestone_corridor_id": "AGENT-MILE-004", "operating_window": "year-round", "privacy_boundary": "consented / opt-in", "human_review": "human-in-the-loop"},
+        {"scenario_id": "SC-10", "name_zh": "全球 AI 活动周路线", "name_en": "Global AI activity-week route", "key_area_id": "PROV-KEY-003", "milestone_corridor_id": "AGENT-MILE-009", "operating_window": "annual event", "privacy_boundary": "venue-bounded / consented", "human_review": "operator-supervised"}
       ]
     },
     {

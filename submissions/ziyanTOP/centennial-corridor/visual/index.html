@@ -94,9 +94,9 @@ footer { text-align: center; padding: 18px; color: var(--muted); font-size: 12px
       </div>
     </div>
     <aside class="status-box">
-      <strong>临时边界 · intake</strong>
-      <p>当前 geometry 基于 provisional_boundaries；official polygon 发布后必须重新运行 scaffold / self_check。</p>
-      <p>本页支持 intake 展示、讨论与返修，不作为正式专业评分图纸。</p>
+      <strong>Provisional boundary · formal-review-ready</strong>
+      <p>Current geometry is derived from provisional_boundaries; re-run scaffold / self-check once official polygons are released.</p>
+      <p>This page is part of a formal-review-ready package (package_state=ready_for_review); provisional boundary caveats remain visible.</p>
     </aside>
   </div>
 </header>
@@ -136,7 +136,7 @@ footer { text-align: center; padding: 18px; color: var(--muted); font-size: 12px
       </div>
       <div class="risk-card warn" style="margin-top:14px">
         <h3>自检状态</h3>
-        <p>BOUNDARY_TRUST / KEY_AREAS_TRUST / LAND_USE_TOPOLOGY / VISUAL_STATIC 当前均 PASS（intake）；official polygon 发布后必须重新跑 self_check。</p>
+        <p>BOUNDARY_TRUST / KEY_AREAS_TRUST / LAND_USE_TOPOLOGY / VISUAL_STATIC 当前均 PASS（formal-review-ready，provisional boundary 警示）；official polygon 发布后必须重新跑 self_check。</p>
       </div>
     </aside>
   </div>
@@ -357,3 +357,5 @@ footer { text-align: center; padding: 18px; color: var(--muted); font-size: 12px
 </footer>
 </body>
 </html>
+
+<!-- regenerated 2026-08-12T02:12:15.784831 -->

@@ -25,7 +25,7 @@ The package is organised in three levels [standard:PROJECT-OFFICIAL-ANNOUNCEMENT
 
 The three-level mapping is preserved in `compliance_matrix.json` so that announcement items 1.3, 1.4, 1.5 and agent.1–agent.6 each have section, layer, metric, drawing, and HTML evidence.
 
-![Site overview and Jing-Zhang railroad spine](assets/figures/site-overview.png)
+![Site overview and Jing-Zhang railroad spine](assets/figures/site-overview.en.png)
 
 ### Source-use boundaries
 
@@ -44,7 +44,7 @@ The three-level mapping is preserved in `compliance_matrix.json` so that announc
 
 The three layers are not isolated drawings. Research decisions drive industrial chain and city-form judgments; overall design translates those judgments into renewal projects, spatial structure, and infrastructure capacity; key-area design verifies parcel-level feasibility for land use, buildings, transport, public space, and AI application scenarios. No area, ratio, scale, or project count that cannot be recalculated from structured data may be written into a formal conclusion [depth:metrics_recalculation].
 
-![Three-level scope and spatial framework](assets/figures/land-use-structure.png)
+![Three-level scope and spatial framework](assets/figures/land-use-structure.en.png)
 
 ## Coordinated Research Area: Industry and Future City Research
 
@@ -109,7 +109,7 @@ Overall design supports transport, rail, municipal, and supporting facilities. T
 
 Detailed design of three key areas is mandatory [depth:three_key_area_detailed_design].
 
-![Three key areas index and design tasks](assets/figures/key-areas.png)
+![Three key areas index and design tasks](assets/figures/key-areas.en.png)
 
 ### Three Zhi-Mai Cores at a glance
 
@@ -170,7 +170,7 @@ The transport plan responds to announcement requirements for rail-station integr
 
 Road and slow-traffic layers stay within the submission boundary and cross-check against public space, green space, industry nodes, and key areas; where the submission boundary is provisional, transport conclusions are also discussion-only [data:geometry/roads.geojson#ROAD-001] [data:geometry/public_space.geojson#PUBLIC-001].
 
-![Transport, slow traffic, and blue-green public-space composite system](assets/figures/mobility-bluegreen.png)
+![Transport, slow traffic, and blue-green public-space composite system](assets/figures/mobility-bluegreen.en.png)
 
 Municipal and public service facilities cover AI industrial-service facilities, innovation-service platforms, talent-life-service facilities, new-type infrastructure, distributed energy, on-device compute, and traditional municipal infrastructure integration [depth:municipal_new_infrastructure]. The proposal states facility standards, spatial layout, service radius, operating mode, and phasing logic. Missing pipeline, energy, drainage, flood-control, and fire-protection data are listed as prerequisites for formal deepening.
 
@@ -199,7 +199,7 @@ The implementation plan forms an auditable renewal project list specifying locat
 
 The metric system covers at least overall design area, key-area area, green and public-space ratios, building footprint, renewal project count, AI scenario nodes, slow-traffic connectivity, industrial-space indicators, talent-service indicators, and self-check status [depth:metrics_recalculation]. All "known" metrics must be recalculable from GeoJSON or trusted sources; "unknown" metrics must carry reasons and prerequisites for formal submission.
 
-![Core metrics and evidence chain](assets/figures/metrics-evidence.png)
+![Core metrics and evidence chain](assets/figures/metrics-evidence.en.png)
 
 For formal deepening, the agent classifies every metric into three tiers:
 

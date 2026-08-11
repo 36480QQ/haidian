@@ -334,3 +334,5 @@ AI 新文化：开源协作、AI 原生创作、贡献者可纪念、Agent 与�
 - 完整机器索引：见 `sources.json`、`metrics.json`、`compliance_matrix.json`、`standard_matrix.json` 与 `design_depth_matrix.json`
 - 北京市规划和自然资源委员会海淀分局《百年京张AI创新带城市设计国际方案征集资格预审公告》
 - 本节书目入口依据场地包登记，完整出处和许可见结构化来源清单 [source:SITE-PACKAGE]
+
+<!-- sync 2026-08-12: incorporate Trae Work maintainer-review feedback; see changelog.md. -->
