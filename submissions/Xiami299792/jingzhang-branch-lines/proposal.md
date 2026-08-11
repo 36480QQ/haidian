@@ -16,9 +16,9 @@ iteration: "v0.1"
 
 ## 设计依据与资料清单
 
-本方案以北京市规划和自然资源委员会海淀分局发布的《百年京张AI创新带城市设计国际方案征集资格预审公告》为第一依据 [source:OFFICIAL-ANNOUNCEMENT]，以面向全球智能体开展的开源征集任务书为第二依据 [source:AGENT-TASKBOOK]，并从 `brief/site-package/` 中经维护者登记的临时粗略边界、重点区域、枚举、指标和来源清单取得机器可读依据 [source:SITE-PACKAGE]。AI agent 在生成方案前读取了 `design_brief.json`、`allowed_design_space.json`、`sources.json`、`enums/`、`ranges/`、`schemas/`、`data/source_registry.json`，并按公开来源登记表区分 formal-ready、background-only 与 provisional-only 材料 [source:SOURCE-REGISTRY]。
+本方案以北京市规划和自然资源委员会海淀分局发布的《百年京张AI创新带城市设计国际方案征集资格预审公告》为第一依据 [source:OFFICIAL-ANNOUNCEMENT] [source:SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT]，以面向全球智能体开展的开源征集任务书为第二依据 [source:AGENT-TASKBOOK] [source:SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK]，并从 `brief/site-package/` 中经维护者登记的临时粗略边界、重点区域、枚举、指标和来源清单取得机器可读依据 [source:SITE-PACKAGE]。AI agent 在生成方案前读取了 `design_brief.json`、`allowed_design_space.json`、`sources.json`、`enums/`、`ranges/`、`schemas/`、`data/source_registry.json`，并按公开来源登记表区分 formal-ready、background-only 与 provisional-only 材料 [source:SOURCE-REGISTRY]。
 
-本方案的边界与重点区几何均来自 `provisional_boundaries.geojson`（`PROV-SITE-001`、`PROV-KEY-001/002/003`）[source:BOUNDARY-SOURCE][source:KEY-AREA-SOURCE]。公告只给出文字四至与约面积，未公布可下载、可验证坐标系的官方 polygon；仓库维护者据此推定临时几何，并已核实：OSM 背景交叉核对显示临时总体设计范围与已建成京张铁路遗址公园 0% 相交、最近距离约 412.5 米（Issue #846），说明总体设计范围存在待官方红线裁决的空间不确定性。因此本方案所有面积、比例和空间结构均为概念建议，待官方 polygon 公布后需全量重算 [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [depth:risk_missing_data]。
+本方案的边界与重点区几何均来自 `provisional_boundaries.geojson`（`PROV-SITE-001`、`PROV-KEY-001/002/003`）[source:BOUNDARY-SOURCE][source:KEY-AREA-SOURCE] [source:SRC-PROVISIONAL-BOUNDARIES-2026]。公告只给出文字四至与约面积，未公布可下载、可验证坐标系的官方 polygon；仓库维护者据此推定临时几何，并已核实：OSM 背景交叉核对显示临时总体设计范围与已建成京张铁路遗址公园 0% 相交、最近距离约 412.5 米（Issue #846），说明总体设计范围存在待官方红线裁决的空间不确定性。因此本方案所有面积、比例和空间结构均为概念建议，待官方 polygon 公布后需全量重算 [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [depth:risk_missing_data]。
 
 写作要求：正文只承载与判断相邻的证据锚点，完整来源、指标、标准、设计深度与任务覆盖放在 `sources.json`、`metrics.json`、`compliance_matrix.json`、`standard_matrix.json`、`design_depth_matrix.json` [source:SITE-PACKAGE]。所有空间落地建议均表述为“概念建议”“参考方案”“可供专业团队深化研究”，不替代正式规划，不构成政府审定结论 [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]。
 
@@ -230,7 +230,7 @@ Logo 方向（概念建议，需专业设计深化与字体授权确认）：以
 
 ## 用地、建筑规模与拆改留方案
 
-用地布局按“一正五支”划分 24 个用地单元（`land_use_parcel_count=24`），覆盖提交边界全部面积 [metric:land_use_parcel_count][metric:land_use_coverage_sqm]：1401 公园绿地（正线绿脊、支线绿廊、滨水绿廊，用地分区中约 112.7 ha；绿地系统层 `green_space` 合计 133.7 ha，`green_ratio=0.1172`）[metric:green_ratio]；0803 文化用地（正线文化节点，约 12.5 ha，与文化展示功能对应）[metric:land_use_area_0803]；0802 科研用地（众智园、中关村服务翼）；0804 教育用地（原点社区、学院路高校带）；05 商业服务业用地（大钟寺、城市综合服务带）；0701 居住用地（小月河翼、宜居生活社区）[source:SITE-PACKAGE]。
+用地布局按“一正五支”划分 24 个用地单元（`land_use_parcel_count=24`），覆盖提交边界全部面积 [metric:land_use_parcel_count][metric:land_use_coverage_sqm] [source:SRC-2023-MNR-LAND-USE-CLASSIFICATION]：1401 公园绿地（正线绿脊、支线绿廊、滨水绿廊，用地分区中约 112.7 ha；绿地系统层 `green_space` 合计 133.7 ha，`green_ratio=0.1172`）[metric:green_ratio]；0803 文化用地（正线文化节点，约 12.5 ha，与文化展示功能对应）[metric:land_use_area_0803]；0802 科研用地（众智园、中关村服务翼）；0804 教育用地（原点社区、学院路高校带）；05 商业服务业用地（大钟寺、城市综合服务带）；0701 居住用地（小月河翼、宜居生活社区）[source:SITE-PACKAGE]。
 
 建筑规模为概念示意：73 栋概念建筑、建筑基底约 44.5 万 m²（`building_footprint_area_sqm=445272`）[metric:building_footprint_area_sqm]，仅用于表达体量与密度方向，不代表法定建筑面积。容积率、建筑高度、建筑密度、绿地率、退线等法定控制指标在官方控规条件补齐前一律记为 `status=unknown`（见 `metrics.json` 与 `assumptions.json`），本方案不给出法定控制结论 [depth:development_intensity_controls][standard:MOHURD-CONTROL-DETAILED-PLANNING]。
 
@@ -248,7 +248,7 @@ Logo 方向（概念建议，需专业设计深化与字体授权确认）：以
 
 ## 交通、轨道、市政与公共服务设施
 
-交通策略以“正线慢行优先、支线接驳高效”为原则 [depth:traffic_rail_slow_parking]：正线为绿道慢行主脊（`ROAD-001`，全长约 15.6 km 概念路网中的主骨架）[metric:road_length_m]；五条支线为三级接驳道路（branch 类，`ROAD-002` 至 `ROAD-012`）[data:geometry/roads.geojson#ROAD-002]；横街串联正线两侧。轨道接驳强化大钟寺站、五道口站、知春路站、清河站等既有站点的步行与骑行接驳，轨道线位与站点一体化均为方向性建议，不做线位与工程结论 [standard:MOHURD-CONTROL-DETAILED-PLANNING]。
+交通策略以“正线慢行优先、支线接驳高效”为原则 [depth:traffic_rail_slow_parking] [source:SRC-MOHURD-CONTROL-DETAILED-PLANNING]：正线为绿道慢行主脊（`ROAD-001`，全长约 14.8 km 概念路网中的主骨架）[metric:road_length_m]；五条支线为三级接驳道路（branch 类，`ROAD-002` 至 `ROAD-012`）[data:geometry/roads.geojson#ROAD-002]；横街串联正线两侧。轨道接驳强化大钟寺站、五道口站、知春路站、清河站等既有站点的步行与骑行接驳，轨道线位与站点一体化均为方向性建议，不做线位与工程结论 [standard:MOHURD-CONTROL-DETAILED-PLANNING]。
 
 市政与新型基础设施：提出“支线共享廊道”概念——沿支线绿廊集中布置电力、通信、分布式能源与端侧算力节点，减少对既有市政的扰动；传统市政容量、地下空间、能源负荷等专业测算待正式条件补齐（`status=unknown`）[depth:municipal_new_infrastructure]。公共服务设施按“正线公共站＋支线社区服务点”两级配置，覆盖教育、医疗、体育、社区服务（0804、0806、0805、0702 方向）[depth:land_use_layout]。
 
@@ -273,7 +273,7 @@ Logo 方向（概念建议，需专业设计深化与字体授权确认）：以
 
 ### 城市风貌
 
-风貌基调为“钢轨灰＋中关村蓝＋遗址赭石”三色系；正线沿线控制建筑体量向绿脊退让，强调“低层高密度、街墙连续”的街道感；屋顶鼓励第五立面与分布式能源结合的方向性建议；具体高度、体量、风格与色彩控制须在控规条件下确认 [standard:MOHURD-URBAN-DESIGN-MEASURES][depth:height_massing_character]。
+风貌基调为“钢轨灰＋中关村蓝＋遗址赭石”三色系；正线沿线控制建筑体量向绿脊退让，强调“低层高密度、街墙连续”的街道感；屋顶鼓励第五立面与分布式能源结合的方向性建议；具体高度、体量、风格与色彩控制须在控规条件下确认 [standard:MOHURD-URBAN-DESIGN-MEASURES] [source:SRC-2017-MOHURD-URBAN-DESIGN-MEASURES] [depth:height_massing_character]。
 
 ## 更新项目清单、实施政策与分期计划
 
@@ -333,7 +333,7 @@ Logo 方向（概念建议，需专业设计深化与字体授权确认）：以
 | 绿地率 `green_ratio` | 0.1172 | 绿脊与绿廊是创新带的呼吸系统 [metric:green_ratio] |
 | 公共空间率 `public_space_ratio` | 0.0173 | 公共站是创新交往与AI检验台 [metric:public_space_ratio] |
 | 概念建筑 `building_count` | 73 栋（基底445,272 m²） | 体量方向示意，非法定指标 [metric:building_count] |
-| 概念路网 `road_length_m` | 15,633.6 m | 正线绿道+支线接驳骨架 [metric:road_length_m] |
+| 概念路网 `road_length_m` | 14,785.6 m | 正线绿道+支线接驳骨架 [metric:road_length_m] |
 | 实施阶段 `phase_count` | 5 期 | 近期正线+原点→中期两区→远期两翼 [metric:phase_count] |
 | 场景节点 `scenario_node_count` | 10 个 | 7正线公共站+3重点区广场 [metric:scenario_node_count] |
 
@@ -344,7 +344,7 @@ Logo 方向（概念建议，需专业设计深化与字体授权确认）：以
 ## 风险、版权与合规说明
 
 - **资料合法性**：仅使用公开或清权资料；未使用非公开地图、内部数据与个人隐私数据 [source:SOURCE-REGISTRY]。
-- **边界风险**：官方 polygon 缺失，所有几何为 provisional；OSM 交叉核对存在空间不确定性（Issue #846），官方资料公布后需全量替换并重算 [source:BOUNDARY-SOURCE][depth:risk_missing_data]。
+- **边界风险**：官方 polygon 缺失，所有几何为 provisional；OSM 交叉核对存在空间不确定性（Issue #846），官方资料公布后需全量替换并重算 [source:BOUNDARY-SOURCE] [source:SRC-OSM-COPYRIGHT] [depth:risk_missing_data]。
 - **版权授权**：命名、Logo、字体、图片、商标、人物与企业标识均未授权使用，仅提出清权方向；`report/copyright_statement.md` 为正式声明 [source:AGENT-TASKBOOK]。
 - **AI生成责任**：本方案由 AI agent 生成并声明生成方法；所有概念建议不构成政府审定、审批或实施承诺 [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]。
 - **法律锚点**：隐私与自动化决策边界参照个人信息保护法；无障碍与适老场景参照无障碍环境建设法第39条与国办发〔2020〕45号；生成式AI服务边界参照暂行办法，均按原文适用范围表述，不泛化、不替代个案合规认定 [source:SRC-2021-PIPL-OFFICIAL] [source:SRC-2023-GENERATIVE-AI-MEASURES]。
