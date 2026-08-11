@@ -385,6 +385,22 @@ JZ-AIOS 规定任何场景依次经过 G0 概念/离线、G1 影子比对、G2 �
 
 ![维护型城市：问题壳、可见人工、既有设施优先、复核分流、重复故障侧线与普通基线恢复（概念合同；真实工单为 0）](assets/figures/implementation-roadmap.png)
 
+### AI 城市代谢：十二场景、七类资源、完整退出 / AI urban metabolism: twelve scenes, seven resources, complete exit
+
+本轮仍不新增场景、项目、几何或成熟度，而为既有 `SCENE-001`—`012` 建立十二本 G0 资源护照。每本护照同时登记算力、能源、设备与材料、数据、人工复核、供应商依赖、失败与退出成本七类资源，并把核算边界从服务器扩展到边缘与网络、公众或个人终端、传感/显示/固定件、人工与非 AI 基线，以及场所无障碍、安静和恢复。**七类字段齐全只表示设计覆盖，不表示节能、减碳、低成本、已采购或已运行** [data:visual/assets/urban-metabolism-ledger.json#resource_dimensions] [metric:urban_metabolism_scene_resource_passport_count]。
+
+| 重点区 | 四个既有场景 | 必须看见的代谢负担 | 退出先问什么 |
+|---|---|---|---|
+| 众智园 | `SCENE-001`—`004` | 移动设备与电池、边缘/网络、事故资料、人工接管、长期档案 | 设备怎样隔离、返修或回收；最小事故记录如何保留；连续绕行怎样恢复 |
+| 原点社区 | `SCENE-005`—`008` | 媒体与来源权利、共享设备、同意与撤回、保障/策展/共测人工、静音清场 | 资料怎样撤回删除；活动构件怎样清走；两院一街怎样先回到居民日常 |
+| 大钟寺 | `SCENE-009`—`012` | 路线与权威来源更新、传感/终端、敏感推断禁区、人工窗口、四向通勤 | 自动层怎样下线；资料怎样导出纠正；人工同任务服务和四向步行怎样保持 |
+
+任何强度或“更绿色”比较都必须先固定一个公众可理解的任务分母、普通非 AI 对照、纳入的完整系统组件、时间窗、完成/放弃口径及必要的群体拆分。当前有效项目分母为 0；能源、算力、人工分钟和设备寿命均为 `not_measured`，供应商、设备生命周期与责任接受为 `external_confirmation_required`，数据和权利为 `not_fully_cleared`。行业均值、设备铭牌、供应商材料、模拟值和传感器安装数量不得代替项目测量 [data:visual/assets/urban-metabolism-ledger.json#denominator_contract] [metric:urban_metabolism_measured_energy_scene_count] [metric:urban_metabolism_confirmed_vendor_scene_count] [assumption:A-URBAN-METABOLISM-014]。
+
+退出不是“关机”两个字，而是逐项决定：既有设施保留，现场维修/复用，异地再部署，供应商回收，合规回收处置，数据导出—删除—最小日志关闭，以及拆除线缆、固定件、标识、排队和临时设备后恢复普通场所与同任务人工/非 AI 服务。分母、来源、责任、供应商导出维修条款、组件去向、普通路径和独立复核任一未关闭即维持 `NO-GO / G0`；未来即使测试 `PASS`，也不等于部署授权、场地批准、采购批准、清权或环境收益 [data:visual/assets/urban-metabolism-ledger.json#public_decision_gate]。
+
+![京张 AI 城市代谢账本：完整系统边界、三地十二场景、七类资源、退出去向与显式未知（G0；实测能源/算力/人工分钟均为 0 个场景）](assets/figures/urban-metabolism-ledger.png)
+
 八个项目形成空间、协议和运营一一对应的更新包 [depth:renewal_project_list]：
 
 | 项目 | 主要内容与 Feature | 前置条件 | 建议责任组合 | 概念验收 |
