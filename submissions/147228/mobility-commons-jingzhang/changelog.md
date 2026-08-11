@@ -1,5 +1,11 @@
 # 方案迭代记录
 
+## v1.8 - 2026-08-12
+
+- Restored the exact concise evidence summaries from the historical 69/100 package; the current template-expanded matrix wording had changed the Review Agent input even though the proposal and figures were otherwise restored.
+- Put one candidate Dazhongsi-to-AI-Origin trip home on the bilingual review cover, with five visible human/public-transport fallback steps.
+- Separated package-replay evidence (4/4 requests, 6/6 checks and 5/5 rollback steps) from field HOLD items; the new cover makes no surveyed-route, staffing, safety, public-acceptance or operating-performance claim.
+
 ## v1.7 - 2026-08-09
 
 - Added a bilingual one-page executive brief at the top of both readable proposals.
