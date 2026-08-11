@@ -52,7 +52,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 建筑布局区分保留、更新与新建三类动作：众智园研发组团、大钟寺商务组团与原点社区孵化组团为新建或更新意向，遗址公园沿线现状社区以环境提升与公共服务嵌入为主 [data:geometry/buildings.geojson#BLDG-001] [depth:retain_renovate_demolish]。由于官方控规条件（容积率、建筑高度、建筑密度、绿地率、退线）尚未公开，本方案在 `metrics.json` 中将 `floor_area_ratio` 与 `building_density` 登记为 `unknown` 并注明「待正式数据补齐」，不在文本中给出伪精确的强度指标 [metric:floor_area_ratio] [standard:MOHURD-CONTROL-DETAILED-PLANNING]。
 
-空间结构上，方案强化「站城一体」：沿轨道站点组织 TOD 节点，大钟寺站、五道口与清华东路西口形成接驳与公共服务中心，南北向慢行主轴贯穿遗址公园并连接三处重点区 [data:geometry/roads.geojson#ROAD-E1] [depth:traffic_rail_slow_parking]。总体设计的综合承载以概念指标表达：科研用地约 3.74 平方公里、商业服务用地约 2.96 平方公里、居住用地约 1.66 平方公里，绿地与开敞空间比例约 21.6% [metric:land_use_research_sqm] [metric:green_ratio]。
+空间结构上，方案强化「站城一体」：沿轨道站点组织 TOD 节点，大钟寺站、五道口与清华东路西口形成接驳与公共服务中心，南北向慢行主轴贯穿遗址公园并连接三处重点区 [data:geometry/roads.geojson#ROAD-E1] [depth:traffic_rail_slow_parking]。总体设计的综合承载以概念指标表达：科研用地约 3.59 平方公里、商业服务用地约 3.42 平方公里、居住用地约 1.45 平方公里，绿地与开敞空间比例约 20.95% [metric:land_use_research_sqm] [metric:green_ratio]。
 
 ![用地结构概念图](assets/figures/land-use-structure.png)
 
@@ -101,7 +101,7 @@ AI 治理建议遵守数据最小化、公开来源、可解释与人工复核�
 
 ## 用地、建筑规模与拆改留方案
 
-用地布局采用 22 个概念地块，完整覆盖总体设计范围且无缝隙、无重叠 [data:geometry/land_use.geojson#LU-S-01] [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]。科研与教育用地约 3.74 平方公里，产业服务与商业用地约 2.96 平方公里，居住与社区服务用地约 1.66 平方公里，绿地与开敞空间约 2.39 平方公里，站前广场约 0.22 平方公里，门户道路与交通用地约 0.35 平方公里 [metric:land_use_research_sqm] [metric:land_use_commercial_sqm] [metric:land_use_residential_sqm]。
+用地布局采用 22 个概念地块，完整覆盖总体设计范围且无缝隙、无重叠 [data:geometry/land_use.geojson#LU-S-01] [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]。科研与教育用地约 3.59 平方公里，产业服务与商业用地约 3.42 平方公里，居住与社区服务用地约 1.45 平方公里，绿地与开敞空间约 2.39 平方公里，站前广场约 0.22 平方公里，门户道路与交通用地约 0.35 平方公里 [metric:land_use_research_sqm] [metric:land_use_commercial_sqm] [metric:land_use_residential_sqm]。
 
 建筑规模采用概念性表达：6 组建筑基底（研发中心、孵化器、人才公寓、企业总部、消费体验中心、实验室群、接驳中心）合计约 1.34 平方公里基底面积 [data:geometry/buildings.geojson#BLDG-001] [metric:building_footprint_area_sqm]。拆改留分类遵循「保留历史、更新社区、新建创新」原则：遗址公园与文保要素保留并活化，现状社区以环境提升与功能嵌入为主，创新组团按概念建议新建或更新；具体地块的拆改留结论须待正式现状调查与权属资料补齐 [depth:retain_renovate_demolish] [standard:MOHURD-CONTROL-DETAILED-PLANNING]。
 
@@ -144,7 +144,7 @@ AI 治理建议遵守数据最小化、公开来源、可解释与人工复核�
 
 ## 指标体系、面积复算与合规矩阵
 
-指标体系由可复算的空间指标与待补齐的管控指标构成 [depth:metrics_recalculation]：空间指标包括总体设计范围面积（约 11.41 平方公里）、三核面积（约 3.69 平方公里）、绿地比例（约 21.6%）、公共空间比例（约 17.3%）、建筑基底面积（约 1.34 平方公里）、概念路网长度（约 12.76 公里）与分期面积 [metric:site_area_sqm][metric:key_area_area_sqm][metric:green_ratio]；该指标：[metric:public_space_ratio]；管控指标（容积率、建筑密度、建筑高度、退线）因官方控规缺失登记为 `unknown`，正文以「待正式数据补齐」表述 [metric:floor_area_ratio]。所有数值均从 `geometry/*.geojson` 在 EPSG:4548 下复算，`area_sqm_declared` 与 `metrics.json` 保持一致 [standard:MOHURD-CONTROL-DETAILED-PLANNING]。
+指标体系由可复算的空间指标与待补齐的管控指标构成 [depth:metrics_recalculation]：空间指标包括总体设计范围面积（约 11.41 平方公里）、三核面积（约 3.69 平方公里）、绿地比例（约 20.95%）、公共空间比例（约 17.3%）、建筑基底面积（约 1.34 平方公里）、概念路网长度（约 12.76 公里）与分期面积 [metric:site_area_sqm][metric:key_area_area_sqm][metric:green_ratio]；该指标：[metric:public_space_ratio]；管控指标（容积率、建筑密度、建筑高度、退线）因官方控规缺失登记为 `unknown`，正文以「待正式数据补齐」表述 [metric:floor_area_ratio]。所有数值均从 `geometry/*.geojson` 在 EPSG:4548 下复算，`area_sqm_declared` 与 `metrics.json` 保持一致 [standard:MOHURD-CONTROL-DETAILED-PLANNING]。
 
 合规矩阵是任务响应性的主控文件：`compliance_matrix.json` 覆盖公告 1.3、1.4、1.5 全部任务与 agent.1—agent.6 全部任务，每项对应报告章节、图层、指标、图纸、HTML 页面、来源、假设与自检项 [source:AGENT-OPEN-CALL-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]。六项 agent 任务的具体落点：agent.1（总体概念、命名与 Logo）在本章与命名段落；agent.2（5—8 个全球案例与创新生态）在统筹研究章节与案例表；agent.3（不少于 10 张场景卡、3 个测试验证场景、5 类画像）在本章场景卡与画像段落；agent.4（AI 公共空间、3 个朝圣地标与荣誉展示）在蓝绿公共空间章节；agent.5（京张文化、中关村文化与 AI 新文化叙事）在风貌章节；agent.6（全球活动体系与长期运营）在实施章节 [depth:three_key_area_detailed_design] [depth:renewal_project_list]。
 
@@ -172,11 +172,11 @@ AI 治理建议遵守数据最小化、公开来源、可解释与人工复核�
 - brief/site-package/standards/standards.json
 - data/source_registry.json
 - 完整机器索引：`sources.json`、`metrics.json`、`compliance_matrix.json`、`standard_matrix.json`、`design_depth_matrix.json` 与 `geometry/*.geojson`
-> 更新：演示图件已采用 Typst + CeTZ 矢量渲染（v2），三处重点区含真实用地地块与边界。
+> 更新：演示图件已采用 Typst + CeTZ 矢量渲染（v2），三处重点区以概念地块绘制（临时约束边界，非官方红线，待正式数据后复算）。
 
-> 更新：演示图件与 A3/A0 图板已采用 Typst + CeTZ 矢量渲染（v3），PDF 为纯矢量输出，三处重点区含真实用地地块与边界。
+> 更新：演示图件与 A3/A0 图板已采用 Typst + CeTZ 矢量渲染（v3），PDF 为纯矢量输出，三处重点区以概念地块绘制（临时约束边界，非官方红线，待正式数据后复算）。
 
-> 更新（20260811070809）：演示图件与 A3/A0 图板已采用 Typst + CeTZ 矢量渲染（v3），PDF 为纯矢量输出，三处重点区含真实用地地块与边界。
+> 更新（20260811070809）：演示图件与 A3/A0 图板已采用 Typst + CeTZ 矢量渲染（v3），PDF 为纯矢量输出，三处重点区以概念地块绘制（临时约束边界，非官方红线，待正式数据后复算）。
 
 > 更新（202608110752）：图件采用 Typst+CeTZ 矢量渲染，场地横向展示（v4 横放紧凑版）。
 

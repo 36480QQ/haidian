@@ -23,7 +23,7 @@ Documentation usage boundaries follow the registration conclusions in `data/sour
 
 The proposal is not a precise survey of existing conditions but a conceptual, forward-looking, and scenario-driven deliverable oriented toward the solicitation objectives: it translates design intent into locatable functional zones, nodes, corridors, and scenarios, ensuring that every spatial recommendation is presented as a "conceptual recommendation, reference scheme, or content suitable for further study by professional teams" [source:AGENT-OPEN-CALL-TASKBOOK]. All spatial metrics can be recalculated from the submitted GeoJSON geometries under EPSG:4548 projection [metric:site_area_sqm], and may be recomputed using the same methodology once official boundaries are released.
 
-![Overall Scope and Evidence Chain Relationship Diagram](assets/figures/site-overview.png)
+![Overall Scope and Evidence Chain Relationship Diagram](assets/figures/site-overview.en.png)
 
 ## Three-Tier Scope Working Framework
 
@@ -53,9 +53,9 @@ The overall design scope uses the Jing-Zhang Heritage Park as the north-south sp
 
 Building layout distinguishes three intervention types: retain, renovate, and newly build. The Zhongzhiyuan R&D cluster, Dazhongsi commercial cluster, and Origin Community incubation cluster are designated for new construction or renovation; existing communities along the Heritage Park prioritize environmental upgrading and embedded public services [data:geometry/buildings.geojson#BLDG-001] [depth:retain_renovate_demolish]. Because official regulatory planning parameters (floor area ratio, building height, building density, green space ratio, setbacks) are not publicly available, this proposal registers `floor_area_ratio` and `building_density` as `unknown` in `metrics.json`, annotating "pending official data supplementation," and avoids pseudo-precise intensity indicators in the text [metric:floor_area_ratio] [standard:MOHURD-CONTROL-DETAILED-PLANNING].
 
-Spatially, the proposal reinforces Transit-Oriented Development (TOD): TOD nodes are organized around rail stations, with Dazhongsi Station, Wudaokou, and Tsinghua East Road West Intersection forming connectivity and public service centers; a north-south slow-mobility spine traverses the Heritage Park and links the three key areas [data:geometry/roads.geojson#ROAD-E1] [depth:traffic_rail_slow_parking]. The overall design’s carrying capacity is expressed through conceptual indicators: research land approximately 3.74 km², commercial service land approximately 2.96 km², residential land approximately 1.66 km², and green/open space ratio approximately 21.6% [metric:land_use_research_sqm] [metric:green_ratio].
+Spatially, the proposal reinforces Transit-Oriented Development (TOD): TOD nodes are organized around rail stations, with Dazhongsi Station, Wudaokou, and Tsinghua East Road West Intersection forming connectivity and public service centers; a north-south slow-mobility spine traverses the Heritage Park and links the three key areas [data:geometry/roads.geojson#ROAD-E1] [depth:traffic_rail_slow_parking]. The overall design’s carrying capacity is expressed through conceptual indicators: research land approximately 3.59 km², commercial service land approximately 3.42 km², residential land approximately 1.45 km², and green/open space ratio approximately 20.95% [metric:land_use_research_sqm] [metric:green_ratio].
 
-![Conceptual Land-Use Structure Diagram](assets/figures/land-use-structure.png)
+![Conceptual Land-Use Structure Diagram](assets/figures/land-use-structure.en.png)
 
 ## Key Area Detailed Design
 
@@ -67,7 +67,7 @@ The three key areas undergo detailed design following the principle of "distinct
 
 **Dazhongsi AI Industry Cluster** (approximately 0.72 km²) is positioned as an urban intelligent economy and international exchange district: centered on industrial agglomeration and intelligent consumption commercial land, supplemented with a station-front plaza, organizing four-quadrant pedestrian connectivity integrated with Dazhongsi Station [data:geometry/land_use.geojson#LU-DZ-01] [depth:three_key_area_detailed_design]. Spatial interventions include rail station integration, four-quadrant pedestrian connectivity, commercial service upgrades, and public environment renewal around key enterprises; AI scenarios include agent and intelligent terminal exhibitions, content consumption, data factor services, and international roadshows.
 
-![Key Areas Index and Design Tasks Diagram](assets/figures/key-areas.png)
+![Key Areas Index and Design Tasks Diagram](assets/figures/key-areas.en.png)
 
 | Key District | Design Positioning | Spatial Interventions | AI Industry & Operational Scenarios | Evidence Reference |
 | --- | --- | --- | --- | --- |
@@ -102,7 +102,7 @@ AI governance recommendations adhere to principles of data minimization, open so
 
 ## Land Use, Building Scale, and Retain/Renovate/Demolish Strategy
 
-Land-use layout employs 22 conceptual parcels, completely covering the overall design scope without gaps or overlaps [data:geometry/land_use.geojson#LU-S-01] [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]. Research and education land totals approximately 3.74 km²; industrial service and commercial land approximately 2.96 km²; residential and community service land approximately 1.66 km²; green and open space approximately 2.39 km²; station-front plazas approximately 0.22 km²; gateway roads and transportation land approximately 0.35 km² [metric:land_use_research_sqm] [metric:land_use_commercial_sqm] [metric:land_use_residential_sqm].
+Land-use layout employs 22 conceptual parcels, completely covering the overall design scope without gaps or overlaps [data:geometry/land_use.geojson#LU-S-01] [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]. Research and education land totals approximately 3.59 km²; industrial service and commercial land approximately 3.42 km²; residential and community service land approximately 1.45 km²; green and open space approximately 2.39 km²; station-front plazas approximately 0.22 km²; gateway roads and transportation land approximately 0.35 km² [metric:land_use_research_sqm] [metric:land_use_commercial_sqm] [metric:land_use_residential_sqm].
 
 Building scale is expressed conceptually: six building footprint groups (R&D centers, incubators, talent apartments, corporate headquarters, consumer experience centers, laboratory clusters, transit hubs) total approximately 1.34 km² of footprint area [data:geometry/buildings.geojson#BLDG-001] [metric:building_footprint_area_sqm]. The retain/renovate/demolish classification follows the principle of "retain heritage, upgrade communities, build innovation": Heritage Park and cultural conservation elements are retained and activated; existing communities focus on environmental upgrading and functional embedding; innovation clusters are newly built or renovated per conceptual recommendations; specific parcel-level retain/renovate/demolish conclusions await formal existing-condition surveys and tenure data supplementation [depth:retain_renovate_demolish] [standard:MOHURD-CONTROL-DETAILED-PLANNING].
 
@@ -116,7 +116,7 @@ Rail station integration is organized around Dazhongsi Station, Wudaokou, and Ts
 
 Municipal and next-generation infrastructure strategies: distributed energy, edge computing, and smart pole interfaces are reserved along the Heritage Park spine; AI public service points are co-located with community services [depth:municipal_new_infrastructure]. Pipelines, drainage, power, gas, fire protection, and sponge city indicators remain `unknown` in `metrics.json` pending official data, with reasons annotated [depth:risk_missing_data].
 
-![Integrated Mobility and Blue-Green Public Space System Diagram](assets/figures/mobility-bluegreen.png)
+![Integrated Mobility and Blue-Green Public Space System Diagram](assets/figures/mobility-bluegreen.en.png)
 
 ## Blue-Green Space, Public Space, and Urban Character
 
@@ -145,11 +145,11 @@ Implementation policy recommendations cover urban regeneration coordination, spa
 
 ## Metrics System, Area Recalculation, and Compliance Matrix
 
-The metrics system comprises recalculable spatial metrics and regulatory metrics pending supplementation [depth:metrics_recalculation]: spatial metrics include overall design scope area (approx. 11.41 km²), three-core area (approx. 3.69 km²), green space ratio (approx. 21.6%), public space ratio (approx. 17.3%), building footprint area (approx. 1.34 km²), conceptual road network length (approx. 12.76 km), and phasing areas [metric:site_area_sqm][metric:key_area_area_sqm][metric:green_ratio]；this metric：[metric:public_space_ratio]; regulatory metrics (floor area ratio, building density, building height, setbacks) are registered as `unknown` due to absence of official regulatory plans, and expressed in the text as "pending official data supplementation" [metric:floor_area_ratio]. All values are recalculated from `geometry/*.geojson` under EPSG:4548, consistent with `area_sqm_declared` and `metrics.json` [standard:MOHURD-CONTROL-DETAILED-PLANNING].
+The metrics system comprises recalculable spatial metrics and regulatory metrics pending supplementation [depth:metrics_recalculation]: spatial metrics include overall design scope area (approx. 11.41 km²), three-core area (approx. 3.69 km²), green space ratio (approx. 20.95%), public space ratio (approx. 17.3%), building footprint area (approx. 1.34 km²), conceptual road network length (approx. 12.76 km), and phasing areas [metric:site_area_sqm][metric:key_area_area_sqm][metric:green_ratio]；this metric：[metric:public_space_ratio]; regulatory metrics (floor area ratio, building density, building height, setbacks) are registered as `unknown` due to absence of official regulatory plans, and expressed in the text as "pending official data supplementation" [metric:floor_area_ratio]. All values are recalculated from `geometry/*.geojson` under EPSG:4548, consistent with `area_sqm_declared` and `metrics.json` [standard:MOHURD-CONTROL-DETAILED-PLANNING].
 
 The compliance matrix is the master file for task responsiveness: `compliance_matrix.json` covers all tasks under Announcement Sections 1.3, 1.4, 1.5 and all agent tasks agent.1–agent.6, each mapped to report chapters, layers, metrics, drawings, HTML pages, sources, assumptions, and self-check items [source:AGENT-OPEN-CALL-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]. Specific anchors for the six agent tasks: agent.1 (overall concept, naming, logo) in this chapter and naming paragraphs; agent.2 (5–8 global cases and innovation ecosystem) in the comprehensive research chapter and case table; agent.3 (≥10 scenario cards, 3 test/validation scenarios, 5 personas) in this chapter’s scenario card and persona sections; agent.4 (AI public spaces, 3 pilgrimage landmarks, honor displays) in the blue-green public space chapter; agent.5 (Jing-Zhang culture, Zhongguancun culture, AI new culture narratives) in the urban character chapter; agent.6 (global event system and long-term operations) in the implementation chapter [depth:three_key_area_detailed_design] [depth:renewal_project_list].
 
-![Core Metrics Recalculation and Evidence Chain Diagram](assets/figures/metrics-evidence.png)
+![Core Metrics Recalculation and Evidence Chain Diagram](assets/figures/metrics-evidence.en.png)
 
 ## Risks, Copyright, and Compliance Statements
 
