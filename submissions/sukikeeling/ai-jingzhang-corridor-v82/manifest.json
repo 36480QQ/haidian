@@ -111,7 +111,7 @@
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
-      "sha256": "01a20b2009b726496d7f10cb315e05516fa9564705af1b92e884e289a9c93242",
+      "sha256": "9c081cfafefd2b751e5d1d8246f15bacdd189f3119b18de45f7d52a0e084e2be",
       "language": "zh"
     },
     {
@@ -237,7 +237,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "4ebb77c08a6832a8fe37cbc69fe0db506f4f1e4b91126f394ceff581798b367e"
+      "sha256": "d09ceec5248c1a62ac73f0ff39501b864068174e7ba2c34c9e9fcf96f7a091b3"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -268,6 +268,18 @@
       "license": "COMMUNITY-DISPLAY-ONLY",
       "alt_text_zh": "深蓝背景上的人字形折返轨道与「人」字图形，折返点以红色标记",
       "alt_text_en": "Switchback rail line and Ren character on navy background; switchback node marked in red"
+    },
+    {
+      "path": "visual/assets/three/three.module.js",
+      "role": "visualization",
+      "required": false,
+      "sha256": "bbf5ed13fe4373f5bd38b14ea8e62e9f157327da5638edc6d3863e08b167c9c7"
+    },
+    {
+      "path": "visual/assets/three/OrbitControls.js",
+      "role": "visualization",
+      "required": false,
+      "sha256": "faabb4e8dfd9235ee4a9fd7c9a3d75f90f1689dbd4944bd6fd32117dacec5f93"
     }
   ],
   "validation_claim": {
