@@ -4,6 +4,7 @@
   "ok": true,
   "can_enter_formal_review": true,
   "review_status": "ready_for_review",
+  "readiness_contract": "persisted-self-check-v1",
   "checks": [
     {
       "check_id": "DETERMINISTIC_VALIDATION",

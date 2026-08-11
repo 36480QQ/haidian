@@ -331,7 +331,7 @@
       "path": "self_check.json",
       "role": "config",
       "required": true,
-      "sha256": "c65071501b09f6d96813b43dcc73a81b2dfc69acaa9f253400fe46a9b909435c"
+      "sha256": "713c9046a500fe29cc9ae4f214b3ae8252ec2915028fa02b647f2b0f5d261047"
     },
     {
       "path": "sources.json",
@@ -447,6 +447,7 @@
   ],
   "validation_claim": {
     "self_checked": true,
+    "readiness_contract": "persisted-self-check-v1",
     "known_blockers": [],
     "data_confidence": "medium",
     "note": "Self-check passed against provisional boundary; content scoring is not blocked by missing official geometry. Known unknown metrics (FAR, height, total floor area) are marked unknown and excluded from formal claims."
