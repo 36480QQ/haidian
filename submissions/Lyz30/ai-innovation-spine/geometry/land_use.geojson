@@ -8,15 +8,16 @@
   "features": [
     {
       "type": "Feature",
+      "id": "LU-001",
       "properties": {
         "id": "LU-001",
         "layer": "LAND_USE",
-        "land_use_code": "R03",
+        "land_use_code": "0702",
         "name_zh": "创新社区用地",
         "name_en": "Innovation Community Land",
-        "source_type": "agent_generated",
+        "source_type": "agent_generated_design",
         "confidence": "medium",
-        "geometry_role": "design_partition",
+        "geometry_role": "analysis_helper",
         "area_sqm_declared": 1199000
       },
       "geometry": {
@@ -32,15 +33,16 @@
     },
     {
       "type": "Feature",
+      "id": "LU-002",
       "properties": {
         "id": "LU-002",
         "layer": "LAND_USE",
-        "land_use_code": "G1",
+        "land_use_code": "1401",
         "name_zh": "遗址公园绿地（南段）",
         "name_en": "Heritage Park Green Belt (South)",
-        "source_type": "agent_generated",
+        "source_type": "agent_generated_design",
         "confidence": "medium",
-        "geometry_role": "design_partition",
+        "geometry_role": "analysis_helper",
         "area_sqm_declared": 1558000
       },
       "geometry": {
@@ -56,15 +58,16 @@
     },
     {
       "type": "Feature",
+      "id": "LU-003",
       "properties": {
         "id": "LU-003",
         "layer": "LAND_USE",
-        "land_use_code": "MX",
+        "land_use_code": "16",
         "name_zh": "混合功能用地（南）",
         "name_en": "Mixed-Use Land (South)",
-        "source_type": "agent_generated",
+        "source_type": "agent_generated_design",
         "confidence": "medium",
-        "geometry_role": "design_partition",
+        "geometry_role": "analysis_helper",
         "area_sqm_declared": 1877000
       },
       "geometry": {
@@ -80,15 +83,16 @@
     },
     {
       "type": "Feature",
+      "id": "LU-004",
       "properties": {
         "id": "LU-004",
         "layer": "LAND_USE",
-        "land_use_code": "R02",
+        "land_use_code": "0701",
         "name_zh": "产业融合用地（南）",
         "name_en": "Industry Integration Land (South)",
-        "source_type": "agent_generated",
+        "source_type": "agent_generated_design",
         "confidence": "medium",
-        "geometry_role": "design_partition",
+        "geometry_role": "analysis_helper",
         "area_sqm_declared": 1877000
       },
       "geometry": {
@@ -104,15 +108,16 @@
     },
     {
       "type": "Feature",
+      "id": "LU-005",
       "properties": {
         "id": "LU-005",
         "layer": "LAND_USE",
-        "land_use_code": "B1",
+        "land_use_code": "05",
         "name_zh": "商业服务用地",
         "name_en": "Commercial Service Land",
-        "source_type": "agent_generated",
+        "source_type": "agent_generated_design",
         "confidence": "medium",
-        "geometry_role": "design_partition",
+        "geometry_role": "analysis_helper",
         "area_sqm_declared": 1414000
       },
       "geometry": {
@@ -128,15 +133,16 @@
     },
     {
       "type": "Feature",
+      "id": "LU-006",
       "properties": {
         "id": "LU-006",
         "layer": "LAND_USE",
-        "land_use_code": "R02",
+        "land_use_code": "0701",
         "name_zh": "产业融合用地（中）",
         "name_en": "Industry Integration Land (Central)",
-        "source_type": "agent_generated",
+        "source_type": "agent_generated_design",
         "confidence": "medium",
-        "geometry_role": "design_partition",
+        "geometry_role": "analysis_helper",
         "area_sqm_declared": 1166000
       },
       "geometry": {
@@ -152,15 +158,16 @@
     },
     {
       "type": "Feature",
+      "id": "LU-007",
       "properties": {
         "id": "LU-007",
         "layer": "LAND_USE",
-        "land_use_code": "G1",
+        "land_use_code": "1401",
         "name_zh": "遗址公园绿地（中段）",
         "name_en": "Heritage Park Green Belt (Central)",
-        "source_type": "agent_generated",
+        "source_type": "agent_generated_design",
         "confidence": "medium",
-        "geometry_role": "design_partition",
+        "geometry_role": "analysis_helper",
         "area_sqm_declared": 1519000
       },
       "geometry": {
@@ -176,15 +183,16 @@
     },
     {
       "type": "Feature",
+      "id": "LU-008",
       "properties": {
         "id": "LU-008",
         "layer": "LAND_USE",
-        "land_use_code": "MX",
+        "land_use_code": "16",
         "name_zh": "混合功能用地（中）",
         "name_en": "Mixed-Use Land (Central)",
-        "source_type": "agent_generated",
+        "source_type": "agent_generated_design",
         "confidence": "medium",
-        "geometry_role": "design_partition",
+        "geometry_role": "analysis_helper",
         "area_sqm_declared": 2710000
       },
       "geometry": {
@@ -200,15 +208,16 @@
     },
     {
       "type": "Feature",
+      "id": "LU-009",
       "properties": {
         "id": "LU-009",
         "layer": "LAND_USE",
-        "land_use_code": "A3",
+        "land_use_code": "0802",
         "name_zh": "教育科研用地",
         "name_en": "Education and Research Land",
-        "source_type": "agent_generated",
+        "source_type": "agent_generated_design",
         "confidence": "medium",
-        "geometry_role": "design_partition",
+        "geometry_role": "analysis_helper",
         "area_sqm_declared": 196000
       },
       "geometry": {
@@ -223,15 +232,16 @@
     },
     {
       "type": "Feature",
+      "id": "LU-010",
       "properties": {
         "id": "LU-010",
         "layer": "LAND_USE",
-        "land_use_code": "R01",
+        "land_use_code": "0701",
         "name_zh": "研发办公用地（西）",
         "name_en": "R&D Office Land (West)",
-        "source_type": "agent_generated",
+        "source_type": "agent_generated_design",
         "confidence": "medium",
-        "geometry_role": "design_partition",
+        "geometry_role": "analysis_helper",
         "area_sqm_declared": 1244000
       },
       "geometry": {
@@ -247,15 +257,16 @@
     },
     {
       "type": "Feature",
+      "id": "LU-011",
       "properties": {
         "id": "LU-011",
         "layer": "LAND_USE",
-        "land_use_code": "R01",
+        "land_use_code": "0701",
         "name_zh": "研发办公用地（东）",
         "name_en": "R&D Office Land (East)",
-        "source_type": "agent_generated",
+        "source_type": "agent_generated_design",
         "confidence": "medium",
-        "geometry_role": "design_partition",
+        "geometry_role": "analysis_helper",
         "area_sqm_declared": 1244000
       },
       "geometry": {
@@ -271,15 +282,16 @@
     },
     {
       "type": "Feature",
+      "id": "LU-012",
       "properties": {
         "id": "LU-012",
         "layer": "LAND_USE",
-        "land_use_code": "G1",
+        "land_use_code": "1401",
         "name_zh": "遗址公园绿地（北段）",
         "name_en": "Heritage Park Green Belt (North)",
-        "source_type": "agent_generated",
+        "source_type": "agent_generated_design",
         "confidence": "medium",
-        "geometry_role": "design_partition",
+        "geometry_role": "analysis_helper",
         "area_sqm_declared": 1640000
       },
       "geometry": {
@@ -295,15 +307,16 @@
     },
     {
       "type": "Feature",
+      "id": "LU-013",
       "properties": {
         "id": "LU-013",
         "layer": "LAND_USE",
-        "land_use_code": "MX",
+        "land_use_code": "16",
         "name_zh": "混合功能用地（北）",
         "name_en": "Mixed-Use Land (North)",
-        "source_type": "agent_generated",
+        "source_type": "agent_generated_design",
         "confidence": "medium",
-        "geometry_role": "design_partition",
+        "geometry_role": "analysis_helper",
         "area_sqm_declared": 2865000
       },
       "geometry": {
