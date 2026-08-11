@@ -2,11 +2,48 @@
   "schema_version": "1.0.0",
   "audit_date": "2026-08-11",
   "audit_scope": {
-    "merged_submission_catalog_count": 507,
-    "pull_request_title_body_count": 1701,
+    "merged_submission_catalog_count": 542,
+    "pull_request_title_body_count": 1722,
     "non_pr_issue_count": 51,
     "repository_code_search": true,
-    "semantic_pull_request_search_count": 3
+    "semantic_pull_request_search_count": 10
+  },
+  "incremental_reaudit": {
+    "checked_at": "2026-08-11T15:47:45+08:00",
+    "upstream_commit": "35b4961513fe79e0ebba1368f68d3f17b5a5f52b",
+    "new_merged_proposals_since_worktree_base": 6,
+    "open_pull_requests_scanned": 438,
+    "same_core_matches": 0,
+    "exact_query_zero_results": [
+      "ground language",
+      "跨厂商 + 触觉",
+      "AprilTag",
+      "地面协议 + 机器人",
+      "触觉 + 机器人"
+    ],
+    "new_or_high_risk_candidates_reviewed": [
+      {
+        "submission": "fanhuadatu/jingzhang-public-ground",
+        "overlap": "Continuous accessible ground floor, public readability and public-service rooms.",
+        "material_difference": "Its ground is an accessible public-realm and ground-floor network; it defines no passive symbol grammar jointly read by people and multi-vendor robots."
+      },
+      {
+        "submission": "myouo/first-metre-city",
+        "overlap": "Ground materials, accessibility, robot inspection and reversible surface testing.",
+        "material_difference": "Its core is a surface/subsurface section, environmental sensing and Ground Passport; tactile navigation and robots are separate scenarios, not one shared six-word public grammar."
+      },
+      {
+        "submission": "lqqk7/every-sense-jingzhang",
+        "overlap": "Multisensory accessibility, tactile routes and predictable service-robot interaction.",
+        "material_difference": "Its core is service equivalence for different human bodies and senses; it does not define an open, passive, cross-vendor ground dictionary shared by humans and robots."
+      },
+      {
+        "submission": "KiYouJyo/century-base-100day-plugins",
+        "overlap": "Vendor-neutral interfaces, robot pilots, versioning and rollback.",
+        "material_difference": "Its core is a three-speed carrier and plugin lifecycle; the interface is architectural and operational rather than a shared visual-tactile-machine ground language."
+      }
+    ],
+    "result": "no_same_core_found"
   },
   "core_claim_zh": "一套置于公共地面的开放、被动、可触知语法，使行人、盲杖与轮椅使用者以及不同厂商机器人读取相同的空间状态，并要求机器遵守居民能理解的规则。",
   "core_claim_en": "An open, passive and tactile public-ground grammar lets pedestrians, blind-cane and wheelchair users, and robots from different vendors read the same spatial state, requiring machines to obey rules residents can understand.",
