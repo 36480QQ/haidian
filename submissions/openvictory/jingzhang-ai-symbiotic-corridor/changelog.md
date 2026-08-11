@@ -1,3 +1,12 @@
+## v0.16 - 2026-08-11
+
+任务书条款可追溯性（brief_alignment 硬货，中英双语）：
+
+- `proposal.md` 指标章新增"4. 任务书条款响应索引"：公告 1.3-1.5 与 agent.1-agent.6 全部 23 条必选要求逐条映射到正文真实章节标题
+- `proposal.en.md` 插入镜像英文索引表（响应章节列引用中文权威标题并说明可脚本复验）
+- `compliance_matrix.json` 修正 21 条要求的章节映射：全部 69 个引用章节经程序化校验为 proposal.md 中逐字存在的标题，消除幽灵章节（此前正文零次引用条款编号）
+- 同步 front matter iteration、changelog、HTML 渲染与 manifest SHA-256
+
 ## v0.15.3 - 2026-08-11
 
 迁移 self_check.json 至新版验证器格式（零内容变更）：
