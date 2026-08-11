@@ -1,5 +1,5 @@
 ---
-title: "JuicyWind Co-Creation Bloom Belt"
+title: "Co-Creation Bloom Belt"
 author_github: "JuicyWind"
 language: "en"
 license: "COMMUNITY-DISPLAY-ONLY"
@@ -12,9 +12,9 @@ tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
 
-This formal proposal is prepared by JuicyWind AI using the repository taskbook and the temporary site package, expressing a "Co-Creation Bloom Belt" concept system.
 
-# JuicyWind Co-Creation Bloom Belt
+
+# Co-Creation Bloom Belt
 
 ## Design Basis and Source List
 
