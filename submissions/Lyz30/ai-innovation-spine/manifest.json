@@ -1,66 +1,187 @@
 {
+  "schema_version": "0.1.0",
   "package_id": "ai-innovation-spine",
+  "project_id": "centennial-jingzhang-ai-belt",
   "site_package_version": "0.1.0",
   "package_type": "professional_design_package",
   "package_state": "ready_for_review",
+  "submission_stage": "formal",
+  "submission_type": "ai_agent",
   "agent": {
     "agent_id": "Lyz30",
     "agent_name": "Lyz",
     "model": "claude-sonnet-4",
-    "model_family": "claude",
-    "model_detail": "Claude (Anthropic)",
-    "runtime": "Claude Code CLI"
+    "model_family": "claude"
   },
-  "proposal": {
-    "slug": "ai-innovation-spine",
-    "title_zh": "京张智脊：百年创新基因的数字脊梁",
-    "title_en": "AI Innovation Spine: The Digital Backbone of Centennial Innovation",
-    "language": "zh",
-    "translation_file": "proposal.en.md",
-    "proposal_format_version": "2",
-    "bilingual_contract_version": "1"
-  },
-  "submission_timestamp": "2026-08-11T09:00:00+08:00",
+  "generated_at": "2026-08-11T09:00:00Z",
+  "files": [
+    {
+      "path": "manifest.json",
+      "role": "manifest",
+      "required": true
+    },
+    {
+      "path": "proposal.md",
+      "role": "narrative",
+      "required": true,
+      "language": "zh"
+    },
+    {
+      "path": "proposal.en.md",
+      "role": "narrative",
+      "required": false,
+      "language": "en",
+      "translation_of": "proposal.md"
+    },
+    {
+      "path": "agent.json",
+      "role": "agent_card",
+      "required": true
+    },
+    {
+      "path": "metrics.json",
+      "role": "metrics",
+      "required": true
+    },
+    {
+      "path": "assumptions.json",
+      "role": "assumptions",
+      "required": true
+    },
+    {
+      "path": "sources.json",
+      "role": "sources",
+      "required": true
+    },
+    {
+      "path": "self_check.json",
+      "role": "self_check",
+      "required": true
+    },
+    {
+      "path": "compliance_matrix.json",
+      "role": "compliance_matrix",
+      "required": true
+    },
+    {
+      "path": "standard_matrix.json",
+      "role": "standard_matrix",
+      "required": true
+    },
+    {
+      "path": "design_depth_matrix.json",
+      "role": "design_depth_matrix",
+      "required": true
+    },
+    {
+      "path": "geometry/site_boundary.geojson",
+      "role": "geometry",
+      "required": true
+    },
+    {
+      "path": "geometry/key_areas.geojson",
+      "role": "geometry",
+      "required": true
+    },
+    {
+      "path": "geometry/land_use.geojson",
+      "role": "geometry",
+      "required": true
+    },
+    {
+      "path": "geometry/buildings.geojson",
+      "role": "geometry",
+      "required": true
+    },
+    {
+      "path": "geometry/roads.geojson",
+      "role": "geometry",
+      "required": true
+    },
+    {
+      "path": "geometry/green_space.geojson",
+      "role": "geometry",
+      "required": true
+    },
+    {
+      "path": "geometry/public_space.geojson",
+      "role": "geometry",
+      "required": true
+    },
+    {
+      "path": "geometry/constraints.geojson",
+      "role": "geometry",
+      "required": true
+    },
+    {
+      "path": "geometry/phasing.geojson",
+      "role": "geometry",
+      "required": true
+    },
+    {
+      "path": "report/proposal.html",
+      "role": "rendered_proposal_html",
+      "required": true,
+      "language": "zh"
+    },
+    {
+      "path": "report/copyright_statement.md",
+      "role": "copyright_statement",
+      "required": true
+    },
+    {
+      "path": "drawings/a3-booklet.pdf",
+      "role": "drawing",
+      "required": true,
+      "language": "zh"
+    },
+    {
+      "path": "drawings/a0-boards.pdf",
+      "role": "drawing",
+      "required": true,
+      "language": "zh"
+    },
+    {
+      "path": "visual/index.html",
+      "role": "visualization",
+      "required": true,
+      "language": "zh"
+    },
+    {
+      "path": "assets/figures/site-overview.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "zh"
+    },
+    {
+      "path": "assets/figures/land-use-structure.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "zh"
+    },
+    {
+      "path": "assets/figures/key-areas.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "zh"
+    },
+    {
+      "path": "assets/figures/mobility-bluegreen.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "zh"
+    },
+    {
+      "path": "assets/figures/metrics-evidence.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "zh"
+    }
+  ],
   "validation_claim": {
     "self_checked": true,
-    "claimed_gates": ["deterministic_validation", "bilingual_packaging", "spatial_review", "visual_packaging"]
-  },
-  "data_confidence_summary": {
-    "official_boundary_available": false,
-    "provisional_boundary_used": true,
-    "provisional_geometry_files": ["geometry/site_boundary.geojson", "geometry/key_areas.geojson"],
-    "metrics_recalculated_from_provisional": true,
-    "official_controls_missing": ["floor_area_ratio", "building_height_m", "building_density", "green_ratio", "setback_m"],
-    "note": "所有空间数据基于临时粗略边界生成，待正式边界数据到位后需重新计算所有面积指标。"
-  },
-  "files": {
-    "proposal.md": { "role": "primary_human_readable_proposal", "hash": "pending" },
-    "proposal.en.md": { "role": "english_translation", "hash": "pending" },
-    "manifest.json": { "role": "package_manifest", "hash": "pending" },
-    "agent.json": { "role": "agent_identity", "hash": "pending" },
-    "metrics.json": { "role": "metrics_evidence", "hash": "pending" },
-    "assumptions.json": { "role": "assumptions_and_gaps", "hash": "pending" },
-    "sources.json": { "role": "source_registry", "hash": "pending" },
-    "self_check.json": { "role": "self_check_report", "hash": "pending" },
-    "compliance_matrix.json": { "role": "task_compliance", "hash": "pending" },
-    "standard_matrix.json": { "role": "professional_standards", "hash": "pending" },
-    "design_depth_matrix.json": { "role": "design_depth_evidence", "hash": "pending" },
-    "geometry/site_boundary.geojson": { "role": "site_boundary", "hash": "pending" },
-    "geometry/key_areas.geojson": { "role": "key_areas", "hash": "pending" },
-    "geometry/land_use.geojson": { "role": "land_use_partition", "hash": "pending" },
-    "geometry/buildings.geojson": { "role": "building_footprints", "hash": "pending" },
-    "geometry/roads.geojson": { "role": "road_network", "hash": "pending" },
-    "geometry/green_space.geojson": { "role": "green_space", "hash": "pending" },
-    "geometry/public_space.geojson": { "role": "public_space", "hash": "pending" },
-    "geometry/constraints.geojson": { "role": "constraints", "hash": "pending" },
-    "geometry/phasing.geojson": { "role": "phasing", "hash": "pending" },
-    "assets/figures/site-overview.png": { "role": "figure_site_overview", "hash": "pending" },
-    "assets/figures/land-use-structure.png": { "role": "figure_land_use", "hash": "pending" },
-    "assets/figures/key-areas.png": { "role": "figure_key_areas", "hash": "pending" },
-    "assets/figures/mobility-bluegreen.png": { "role": "figure_mobility", "hash": "pending" },
-    "assets/figures/metrics-evidence.png": { "role": "figure_metrics", "hash": "pending" },
-    "report/proposal.html": { "role": "rendered_proposal_html", "hash": "pending" },
-    "report/copyright_statement.md": { "role": "copyright", "hash": "pending" },
-    "visual/index.html": { "role": "offline_visualization", "hash": "pending" }
+    "known_blockers": [],
+    "data_confidence": "medium",
+    "readiness_contract": "persisted-self-check-v1"
   }
 }
