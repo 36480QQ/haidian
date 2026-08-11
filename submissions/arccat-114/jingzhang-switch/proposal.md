@@ -64,7 +64,7 @@ Logo 方向：以两条钢轨相切构成"道岔"符号——两段轨线从远�
 
 ### 3.3 全球 AI 创新生态案例
 
-本方案研究6个全球 AI 创新生态案例，均作为背景资料引用，经验仅作机制借鉴、不作承诺[source:SOURCE-REGISTRY]：
+产业语境有公开口径支撑：截至2025年12月31日，全国共748款生成式人工智能服务完成备案，北京备案大模型达212款、核心AI企业超2500家，2025年北京核心产业规模预计约4500亿元[source:BJ-AI-INDUSTRY-2026]——该口径为北京市全市数据，只作产业背景，本带的任务是给这片高度集聚的AI产业一条公共空间主轴，不作单位面积密度或地区排名判断[assumption:A-CONTROLS-003]。本方案研究6个全球 AI 创新生态案例，均作为背景资料引用，经验仅作机制借鉴、不作承诺[source:SOURCE-REGISTRY]：
 
 | 案例 | 关键机制 | 对一带的启示 |
 |------|---------|-------------|
@@ -89,7 +89,7 @@ Logo 方向：以两条钢轨相切构成"道岔"符号——两段轨线从远�
 
 ### 4.3 功能比例与创新指标体系
 
-概念功能比例（以提交边界计）：绿地与开敞空间约42%（绿廊为主体，含公园绿地与广场），科研用地约18%，居住用地约14%，商业服务业约6%，社区服务与配套约7%，教育用地约7%[metric:land_use_area_by_code]。创新指标体系建议沿"策源—加速—交会"三段设置：策源段考核论文转化、开源贡献、初创密度；加速段考核全栈企业数、算力利用率、治理机制数；交会段考核智能原生业态数、场景开放数、公众体验人次；全带考核 AI 朝圣地标到访与全球传播声量[depth:metrics_recalculation][metric:scenario_node_count]。法定控制指标（容积率、建筑高度、建筑密度、绿地率、退线）未在清权资料包中提供，统一登记为待正式数据补齐，本包不宣称任何法定控制值[source:MOHURD-CONTROL-DETAILED-PLANNING][metric:floor_area_ratio]。
+概念功能比例（以提交边界计）：绿地与开敞空间约42%（绿廊为主体，含公园绿地与广场），科研用地约18%，居住用地约14%，商业服务业约6%，社区服务与配套约7%，教育用地约7%[metric:land_use_area_by_code]。创新指标体系建议沿"策源—加速—交会"三段设置：策源段考核论文转化、开源贡献、初创密度；加速段考核全栈企业数、算力利用率、治理机制数；交会段考核智能原生业态数、场景开放数、公众体验人次；全带考核 AI 朝圣地标到访与全球传播声量[depth:metrics_recalculation][metric:scenario_node_count]。法定控制指标（容积率、建筑高度、建筑密度、绿地率、退线）未在清权资料包中提供，统一登记为待正式数据补齐，本包不宣称任何法定控制值[source:MOHURD-CONTROL-DETAILED-PLANNING][metric:floor_area_ratio]。公开信息可确认：京张铁路遗址公园沿线（人工智能创新街区重点地区）街区控制性详细规划草案已于2024年12月19日至2025年1月19日公示，规自委海淀分局2025年2月8日发布公示采信情况通告[source:HD00-1601-CONTROL-PLAN-NOTICE]——本方案与在编控规"同向而非同一"：主脊沿同一遗址公园展开，但本方案的命名、结构与范围是自身概念，控规法定图则获批公开后本包全部控制相关表述随之重算[assumption:A-CONTROLS-003]。
 
 ## 五、重点区域详细设计
 
@@ -97,7 +97,11 @@ Logo 方向：以两条钢轨相切构成"道岔"符号——两段轨线从远�
 
 ### 5.1 众智园AI自主创新加速区（加速轨道 ACCELERATION TRACK）
 
-定位：AI全栈自主创新体系与AI治理全球话语权承载区。空间结构：以"信号广场"为核（AI治理可视化地标），沿南北向形成"算力研发—模型训练—治理实验室—全栈加速器"的产业梯度[data:geometry/buildings.geojson#BLDG-004][depth:three_key_area_detailed_design]。建筑更新：以现状科研建筑改造为主，新建集中于加速器楼群，建筑基底为概念布局（约8公顷），标注低置信度[metric:building_footprint_area_sqm]。公共空间：信号广场（红黄绿三色铺装，AI治理可视化）、绿廊北段生态段。AI场景：信号灯治理可视化、隐私盾测试场（产业测试）、AI治理国际论坛会场。实施风险：现状权属复杂，须先做权属与建筑普查，再确定触媒地块[assumption:A-CONTROLS-003]。
+定位：AI全栈自主创新体系与AI治理全球话语权承载区。空间结构：以"信号广场"为核（AI治理可视化地标），沿南北向形成"算力研发—模型训练—治理实验室—全栈加速器"的产业梯度[data:geometry/buildings.geojson#BLDG-004][depth:three_key_area_detailed_design]。
+
+![加速轨道产业梯度剖面（概念研究）](assets/figures/gradient-section.png)
+
+建筑更新：以现状科研建筑改造为主，新建集中于加速器楼群，建筑基底为概念布局（约8公顷），标注低置信度[metric:building_footprint_area_sqm]。公共空间：信号广场（红黄绿三色铺装，AI治理可视化）、绿廊北段生态段。AI场景：信号灯治理可视化、隐私盾测试场（产业测试）、AI治理国际论坛会场。实施风险：现状权属复杂，须先做权属与建筑普查，再确定触媒地块[assumption:A-CONTROLS-003]。
 
 ### 5.2 北京AI原点社区（始发场 DEPARTURE YARD）
 
@@ -155,11 +159,15 @@ Logo 方向：以两条钢轨相切构成"道岔"符号——两段轨线从远�
 
 ![交通慢行与蓝绿公共空间复合系统图](assets/figures/mobility-bluegreen.png)
 
+![绿廊主轴标准断面（概念研究）](assets/figures/greenway-section.png)
+
+![站前广场断面（概念研究）](assets/figures/plaza-section.png)
+
 无障碍设计贯彻《无障碍环境建设法》，绿廊全段考虑轮椅与婴儿车通行[standard:BARRIER-FREE-ENVIRONMENT-LAW]。市政与新型基础设施：端侧算力节点沿绿廊布设（灯杆、站亭集成），分布式能源与智慧路灯结合，既有市政管线改造与公共空间更新同步实施，容量测算留待专业评估[depth:municipal_new_infrastructure][assumption:A-CONTROLS-003]。公共服务设施按"三场+岔心"配置：岔心游客服务中心、原点社区中心、大钟寺商务服务中心、众智园产业服务楼，形成15分钟创新服务圈[depth:municipal_new_infrastructure][data:geometry/buildings.geojson#BLDG-015]。
 
 ## 九、蓝绿空间、公共空间与城市风貌
 
-蓝绿空间以京张公园概念绿廊为骨架：三段式绿廊（南段活力绿廊、岔心中央公园、北段生态绿廊）共约456公顷[data:geometry/green_space.geojson#GREEN-001][metric:green_ratio]，与清河、小月河蓝绿系统衔接（小月河概念示意线见 constraints 图层，精确蓝线待官方数据）[data:geometry/constraints.geojson#CON-002]。公共空间体系为"1+3+N"：1处岔心换轨广场（全带公共体验核心）、3处站前广场（始发场、编组场、信号广场）[data:geometry/public_space.geojson#PUBLIC-002]、N处沿线口袋公园与慢行驿站[depth:blue_green_public_space]。
+蓝绿空间以京张公园概念绿廊为骨架：三段式绿廊（南段活力绿廊、岔心中央公园、北段生态绿廊）共约456公顷[data:geometry/green_space.geojson#GREEN-001][metric:green_ratio]，与清河、小月河蓝绿系统衔接（小月河概念示意线见 constraints 图层，精确蓝线待官方数据）[data:geometry/constraints.geojson#CON-002]。官方口径可作叙事锚点：京张铁路遗址公共空间改造提升工程（二期）已于2026年8月6日建成开放，串联西直门至北五环形成总长9公里的文化带状绿廊、总用地约53公顷，分南段社区活力段与北段自然休闲段，并建成"三道一绿"慢行系统[source:JZ-PARK-PHASE2-OPEN-2026]——本方案概念绿廊与该官方绿廊同向展开，本包概念主轴长度（约9.7公里，临时边界内几何复算）与官方全线口径（9公里）并存登记、不作同一值处理[metric:greenway_length_m]。公共空间体系为"1+3+N"：1处岔心换轨广场（全带公共体验核心）、3处站前广场（始发场、编组场、信号广场）[data:geometry/public_space.geojson#PUBLIC-002]、N处沿线口袋公园与慢行驿站[depth:blue_green_public_space]。
 
 **AI朝圣地标（4处）与荣誉展示体系**：①岔心·换轨纪念碑——两条钢轨在岔心交汇的纪念性构筑物，铭刻"1909换轨上坡，2026换轨转向"[data:geometry/public_space.geojson#PUBLIC-002]；②始发场·0公里桩——AI创业"发车"起点，对应京张铁路里程叙事[depth:three_key_area_detailed_design]；③编组场·数字钟塔——交会与时刻的数字化表达；④众智园·信号塔——AI治理可视化的天际线地标。荣誉展示体系沿绿廊设置"开发者荣耀墙"，对接征集活动公布的纪念机制，入选贡献者与方案可按程序铭刻，全部地标为概念建议、待专业团队深化[source:AGENT-TASKBOOK][depth:three_key_area_detailed_design]。
 
@@ -185,7 +193,7 @@ Logo 方向：以两条钢轨相切构成"道岔"符号——两段轨线从远�
 
 ## 十二、风险、版权与合规说明
 
-资料合法性：全部论据来自公开或清权来源，登记于 sources.json；京张铁路历史与全球案例为背景资料，不支撑规划控制结论[source:SOURCE-REGISTRY]。版权：Logo、命名与场景体系为本智能体原创概念，许可采用 CC-BY-4.0；未使用未授权字体、图片、商标、人物与企业标识[source:DESIGN-CONCEPT-SWITCH]。隐私：AI 场景不依赖非公开数据与个人隐私，产业测试场景限定于沙箱与脱敏数据[standard:GENERATIVE-AI-INTERIM-MEASURES]。AI 生成责任：本方案由 AI 智能体生成，几何与指标由确定性管道可复算，全部空间内容为概念建议[assumption:A-BOUNDARY-001]。官方边界与控规条件到位前，本包不主张任何法定效力；待补资料清单与复算触发条件见 assumptions.json 与版权声明[depth:risk_missing_data]。**版权与合规声明详见 `report/copyright_statement.md`。**
+资料合法性：全部论据来自公开或清权来源，登记于 sources.json；京张铁路历史与全球案例为背景资料，不支撑规划控制结论[source:SOURCE-REGISTRY]。版权：Logo、命名与场景体系为本智能体原创概念，许可采用 CC-BY-4.0；未使用未授权字体、图片、商标、人物与企业标识[source:DESIGN-CONCEPT-SWITCH]。隐私：AI 场景不依赖非公开数据与个人隐私，产业测试场景限定于沙箱与脱敏数据[standard:GENERATIVE-AI-INTERIM-MEASURES]。AI 生成责任：本方案由 AI 智能体生成，几何与指标由确定性管道可复算，全部空间内容为概念建议[assumption:A-BOUNDARY-001]。官方边界与控规条件到位前，本包不主张任何法定效力；待补资料清单与复算触发条件见 assumptions.json 与版权声明[depth:risk_missing_data]。**复算差异表承诺**：官方红线、控规图则或现状底数每到位一批，本包将按确定性管道整包重算，并以"差异表"形式在 changelog 中公开记录重算前后数值与受影响图层，确保任何面积、比例与位置变化可追溯[source:DESIGN-CONCEPT-SWITCH][depth:metrics_recalculation]。**版权与合规声明详见 `report/copyright_statement.md`。**
 
 ## 十三、参考资料
 

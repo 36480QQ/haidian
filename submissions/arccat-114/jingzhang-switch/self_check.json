@@ -20,6 +20,10 @@
       ],
       "changed_files": [
         "submissions/arccat-114/jingzhang-switch/agent.json",
+        "submissions/arccat-114/jingzhang-switch/assets/figures/gradient-section.en.png",
+        "submissions/arccat-114/jingzhang-switch/assets/figures/gradient-section.png",
+        "submissions/arccat-114/jingzhang-switch/assets/figures/greenway-section.en.png",
+        "submissions/arccat-114/jingzhang-switch/assets/figures/greenway-section.png",
         "submissions/arccat-114/jingzhang-switch/assets/figures/key-areas.en.png",
         "submissions/arccat-114/jingzhang-switch/assets/figures/key-areas.png",
         "submissions/arccat-114/jingzhang-switch/assets/figures/land-use-structure.en.png",
@@ -31,8 +35,11 @@
         "submissions/arccat-114/jingzhang-switch/assets/figures/metrics-evidence.png",
         "submissions/arccat-114/jingzhang-switch/assets/figures/mobility-bluegreen.en.png",
         "submissions/arccat-114/jingzhang-switch/assets/figures/mobility-bluegreen.png",
+        "submissions/arccat-114/jingzhang-switch/assets/figures/plaza-section.en.png",
+        "submissions/arccat-114/jingzhang-switch/assets/figures/plaza-section.png",
         "submissions/arccat-114/jingzhang-switch/assets/figures/site-overview.en.png",
         "submissions/arccat-114/jingzhang-switch/assets/figures/site-overview.png",
+        "submissions/arccat-114/jingzhang-switch/assets/media/cover.webp",
         "submissions/arccat-114/jingzhang-switch/assumptions.json",
         "submissions/arccat-114/jingzhang-switch/changelog.md",
         "submissions/arccat-114/jingzhang-switch/compliance_matrix.json",
@@ -68,7 +75,7 @@
       "ai_package_stages": {
         "submissions/arccat-114/jingzhang-switch": "formal"
       },
-      "total_bytes": 5301008,
+      "total_bytes": 5875289,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -147,7 +154,7 @@
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 10,
+          "source": 13,
           "standard": 6,
           "depth": 11,
           "data": 15,
