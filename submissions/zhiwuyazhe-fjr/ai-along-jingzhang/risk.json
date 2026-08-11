@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "summary": "最高风险是临时空间边界、清华园车站文保、公共AI数据治理和证据失效。项目必须逐项通过城市问题护照与G0至G4证据门，任何关键条件缺失都停在原状态。",
+  "summary": "最高风险是临时空间边界、清华园车站文保、公共AI数据治理、责任状态不可读和证据失效。项目须同时通过公共验收五问与G0至G4证据门；任一条件失效即降级、暂停或退出。",
   "dimensions": [
     {
       "id": "data_privacy", "label": "数据隐私", "score": 5,
@@ -175,11 +175,23 @@
       "assumption_ids": ["A-EVIDENCE-FRESHNESS-001"]
     },
     {
+      "id": "R-ACCEPTANCE-01",
+      "category": "公共验收表演化",
+      "severity": "high",
+      "risk_zh": "五问可能退化为宣传标签，服务状态、责任、人工路径、暂停动作和修订记录在现场不可读。",
+      "current_control_zh": "五问逐项连接空间界面、十二场景、G0至G4证据门和离线负例演练，任一问题失效即降级。",
+      "trigger_zh": "每次开放、版本更新、责任主体变更、投诉复盘和年度公开说明。",
+      "required_action_zh": "由不同使用者现场完成同任务检查，公开失败项、修订责任、复测日期和退役状态。",
+      "pause_threshold_zh": "状态或责任不可见、人工路径失效、无法暂停或修订不公开时，停止AI路径并保留日常服务。",
+      "owner_role_zh": "场景责任人、公众委员会与独立复测方",
+      "assumption_ids": ["A-OPERATIONS-001"]
+    },
+    {
       "id": "R-RIGHTS-01",
       "category": "知识产权与传播",
       "severity": "medium",
       "risk_zh": "外部案例、地图、网页图像、字体、品牌和AI生成资产可能存在授权或误认官方的问题。",
-      "current_control_zh": "仅使用可追溯文字与自行派生图件，不纳入网页图片、地图瓦片、第三方商标和受限字体。",
+      "current_control_zh": "仅使用可追溯文字、自行派生图件和已署名的OpenStreetMap标准地图快照；不纳入网页图片、第三方商标和受限字体。",
       "trigger_zh": "任何新增外部资产进入投稿包。",
       "required_action_zh": "登记发布者、许可、转换、署名和限制，并在不确定时移除。",
       "pause_threshold_zh": "权利状态不明、无法署名或可能造成官方批准误认时不得发布。",
