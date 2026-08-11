@@ -24,7 +24,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "8e0e655e7870f2ec544c7a6e653ec522c17b39e66f4368a938d33dba4ae77536"
+      "sha256": "ca32c1ff9f2474d8310dcf75f8ab520189ce8ec3c334428527e40707ed7eb160"
     },
     {
       "path": "agent.json",
@@ -79,7 +79,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "eedd3da3a51ca8e7aa57cb74b956093de05e8074a6d3147a7ccf809bce0056d4"
+      "sha256": "9d02cc7c59066eef8e5c357bd3af5f59f9677e53de68b81c8dbb17407cd15b09"
     },
     {
       "path": "report/narrative.md",
@@ -91,7 +91,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "e071023a54bd85b52c690fe60294c952c77deb0f8e39c16a2aae17495ddbae12"
+      "sha256": "d6a01b2e64cba34e26dc9258fbafcd26fc6e0a32ec0d09dc722da521565e64e4"
     },
     {
       "path": "report/copyright_statement.md",
@@ -118,7 +118,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "369a92241bdc65b102ab8d9ea102029ff0c8926a44e55bfba2050f7c795aa661"
+      "sha256": "68fbb730ae32798eccb0bd8be22308d906d91c522e0b7e5441abddca2752ca3f"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -229,7 +229,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "8b2468025f501575af8e709e475fc53b7e77c6d3ed887af0e797370f4ab33b39"
+      "sha256": "b4e281b8c287cabaeb0ece72b7a33b1518b9e6cddaf34402b3d738091f5d623e"
     },
     {
       "path": "report/proposal.en.html",
@@ -237,7 +237,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "ab399673defc8cade6a7be9d6abe1580f3d110543888b379e1980728e7ade073"
+      "sha256": "f91d3036b0fa2c79565a90e7fa9617bd21a8ad3a20dc628488af9fd9a28b338d"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -261,7 +261,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "d590f30e75bfcce44bb541c3066f5b9295d9a7e58336291cfc0b258bb2d3aaf5"
+      "sha256": "9a5c64a6a1c732758a0c1ee1444a573ae0f68222cf5355abc01c34c1c23d032c"
     },
     {
       "path": "visual/assets/accessibility-audit.json",
@@ -299,6 +299,20 @@
       "sha256": "fa64c4f9c7916416a04de57d1ae17354bf6c60a595aa12ab9656ed12fc4140c3"
     },
     {
+      "path": "visual/assets/public-interest-coverage-v26.json",
+      "role": "structured_evidence",
+      "required": false,
+      "language": "neutral",
+      "sha256": "e617ef326cd067793f8c5d4094df9cccc1bab914a26180d4f0e7527c4e0625bc"
+    },
+    {
+      "path": "visual/assets/run-public-interest-coverage-v26.js",
+      "role": "validation_script",
+      "required": false,
+      "language": "neutral",
+      "sha256": "232919f38443d8a31b0cc3f2ac6f1f740b2b26e111c54fee37ee2e20d6c518f2"
+    },
+    {
       "path": "visual/assets/release-gate-ledger.json",
       "role": "visualization",
       "required": false,
@@ -317,14 +331,14 @@
       "role": "visualization",
       "required": false,
       "language": "neutral",
-      "sha256": "57e956367650873cd4e3c8d98b7a97a6d6b926f4473cb780d93524a39f922ac0"
+      "sha256": "385a2b26ab2a57038db3b9a4da7025ce541cfeeb352fa22967c92f550604ac5f"
     },
     {
       "path": "visual/assets/human-city-reference-audit.json",
       "role": "visualization",
       "required": false,
       "language": "neutral",
-      "sha256": "b222195a8107b1742558fbffae4e0c019d3ab00f9048e0789ea304b01923a88e"
+      "sha256": "b47995b7aa02960f99a8463927a512a4e74dcad375d611a38c2022b974b01067"
     },
     {
       "path": "visual/assets/run-human-city-reference-audit.js",
@@ -537,7 +551,7 @@
       "role": "visualization",
       "required": false,
       "language": "neutral",
-      "sha256": "8dcd1a60b321bfd31932239db91fe174307ff9db1bb7e191934cf4376ca52861"
+      "sha256": "0ea15e5cfc75a2cf0507d8e4233444a76b2732df782841887481f25f9651c45e"
     },
     {
       "path": "visual/assets/run-reviewer-navigation-audit.js",
@@ -838,7 +852,7 @@
       "role": "structured_evidence",
       "required": true,
       "language": "neutral",
-      "sha256": "c63e535c21c6c3c2e342fe803fc580391549bca5976563bf412c84ffac8e412f"
+      "sha256": "b0566a3b3e060c6f933f68968d997170519deae5b1e5a60b983dea2329ee9e0e"
     },
     {
       "path": "visual/assets/brief-alignment-atlas-v19.json",

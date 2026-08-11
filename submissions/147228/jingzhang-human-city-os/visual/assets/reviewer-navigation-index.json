@@ -1,6 +1,6 @@
 {
   "schema_version": "0.2.0",
-  "package_iteration": "v2.4",
+  "package_iteration": "v2.6",
   "status": "offline_navigation_evidence_only",
   "not_a_score": true,
   "purpose_zh": "把仓库 formal scorecard 的七个工作流问题，以及任务书列出的十三项统一评审维度，分别连接到最短的包内证据路径、复核顺序和仍然不能被本包证明的边界；v2.4 增加差异化 requirement evidence_items、审阅差异化标签、假设优先级和政策基线边界；这是导航索引与路径完整性台账，不是评分器、分数承诺、官方评审结论或实施证明。",
@@ -100,6 +100,8 @@
       "question_en": "Do ordinary people, older people, low-digital-capability users, disabled users, and affected workers have equivalent access, refusal, and review paths?",
       "read_in_order": [
         "visual/assets/personas-and-fairness.json",
+        "visual/assets/public-interest-coverage-v26.json",
+        "visual/assets/run-public-interest-coverage-v26.js",
         "visual/assets/accessibility-audit.json",
         "visual/assets/human-city-ordinary-journey.json",
         "proposal.md"
@@ -250,10 +252,12 @@
       "evidence_paths": [
         "visual/assets/scenario-cards.json",
         "visual/assets/human-city-acceptance-atlas.json",
-        "assets/figures/human-city-acceptance-atlas.png"
+        "assets/figures/human-city-acceptance-atlas.png",
+        "visual/assets/public-interest-coverage-v26.json",
+        "visual/assets/run-public-interest-coverage-v26.js"
       ],
-      "evidence_summary_zh": "17 张场景卡与 6 类使用者、10 条代表性路径和三段发布门在同一图谱中可读；其中 16 个空间节点保持可回接。",
-      "evidence_summary_en": "Seventeen scenario cards, six personas, ten representative paths, and three release gates are legible in one atlas; sixteen spatial nodes remain resolvable.",
+      "evidence_summary_zh": "17 张场景卡、6 类基础使用者、3 类公共利益扩展、10 条代表性路径和三段发布门在同一证据链中可读；其中 16 个空间节点保持可回接。",
+      "evidence_summary_en": "Seventeen scenario cards, six base personas, three public-interest extensions, ten representative paths, and three release gates are legible in one evidence chain; sixteen spatial nodes remain resolvable.",
       "boundary_zh": "离线图谱的路径解析不等于真实体验、服务覆盖或公众接受。",
       "boundary_en": "Offline atlas path resolution is not real experience, service coverage, or public acceptance."
     },

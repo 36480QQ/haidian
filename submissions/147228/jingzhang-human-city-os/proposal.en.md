@@ -6,11 +6,23 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-iteration: "v2.5"
-summary: "A reversible urban release that treats human dignity as the foundation, machine-callable infrastructure as an added capability, and compute-energy, climate, and governance as hard constraints. v2.5 makes the east–west / north–south connector logic, public-space component library, contribution display, and developer–scenario–release conversion chain replayable. Provisional geometry, known metrics, and unknowns remain unchanged."
+iteration: "v2.6"
+summary: "A reversible urban release that treats human dignity as the foundation, machine-callable infrastructure as an added capability, and compute-energy, climate, and governance as hard constraints. v2.6 extends the six base personas with youth and early entrants, developers and researchers, and first-time or international visitors, making benefit, impact, human alternative, and stop conditions replayable. Provisional geometry, known metrics, and unknowns remain unchanged."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
+
+## v2.6 Public-interest coverage extension | Return three easily hidden groups to the scenes
+
+The existing `personas-and-fairness.json` registers six base personas. This iteration does not rewrite that contract. It adds three groups often hidden by an AI-centred narrative: youth, students and people entering the workforce; developers and researchers; and first-time or international visitors. Each returns through benefit, impact risk, spatial/scenario reference, human alternative, stop condition, and missing evidence, without turning a concept population into a demographic survey, service-coverage rate, or fairness outcome.[data:visual/assets/public-interest-coverage-v26.json] [data:visual/assets/run-public-interest-coverage-v26.js] [depth:risk_missing_data]
+
+| Public-interest extension | Visible benefit | Impact to prevent | Existing scenario and spatial return | If evidence is missing |
+| --- | --- | --- | --- | --- |
+| Youth, students, and people entering the workforce | Reskilling, staffed explanation, and withdrawable learning without automated eligibility scoring | Transition pressure, stigma, waiting time, and excess retention of learning data | `SC-A02` / `ROAD-A-SKILL` / `BLDG-A-02` | Stay at G0 and do not open automated routing without staffed advice, exit records, or job-quality evidence |
+| Developers and researchers | Least-privilege catalogue, public observer seat, and bounded experiments without platform scoring as entry | Vendor lock-in, unclear IP, test spillover, and accidental personal/civic-data access | `SC-B01` / `ZONE-B-API` / `BLDG-B-01` / `BLDG-D-01` | Freeze the experiment and return to the paper protocol when authorization, rights, logs, or takeover are unclear |
+| First-time and international visitors | Multilingual public information, staffed explanation, ordinary movement, and withdrawable service | Language barriers, wrong health/daily-life information, case-data collection, and cultural misreading | `SC-D03` / `BLDG-D-02` / `PUBLIC-D-GLOBAL` | Close the display and retain ordinary movement and staffed service when language, rights, or case authorization is incomplete |
+
+This is a coverage and evidence-gap register, not a demographic survey, accessibility certification, service outcome, employment result, or official score. Recompute it with personas, scenarios, geometry, metrics, figures, HTML, PDFs, and self-check after formal baselines, rights, and authorization arrive.[data:geometry/constraints.geojson#SC-A02] [data:geometry/constraints.geojson#SC-D03] [depth:risk_missing_data]
 
 ## v2.5 Public-space connectors and community conversion | Make agent.4 and agent.6 more than an event list
 
@@ -144,7 +156,7 @@ Three provisional key areas, a six-layer spatial operating system, four value ch
 
 | Value chain | Readable conceptual move | Package evidence | Data still required |
 | --- | --- | --- | --- |
-| A Human dignity | Resident retention and service repair, a skills-transition corridor, human/phone/paper access, no-screen green space and wellbeing support | `LU-H01`, `ROAD-A-SKILL`, six personas, seventeen scenario cards | Resident baseline, small-business and employment follow-up, accessibility walk-through and authorized operations records |
+| A Human dignity | Resident retention and service repair, a skills-transition corridor, human/phone/paper access, no-screen green space and wellbeing support | `LU-H01`, `ROAD-A-SKILL`, six base personas plus three public-interest extensions, seventeen scenario cards | Resident baseline, small-business and employment follow-up, accessibility walk-through and authorized operations records |
 | B Machine-ready | Urban API exchange, silicon right-of-way test field, layered low-altitude logistics, reversible components and a public digital-twin bench | `LU-B01`/`LU-B02`, `ROAD-B-SILICON`, interface prototypes | Traffic/aviation/safety sections, interface responsibility, professional models and field tests |
 | C Hard constraints | Compute-power and heat audit, floodway and sponge simulation, regulatory sandbox, public-data authorization and version release room | `SC-C01`—`SC-C05`, three release gates, five-stage startup protocol | Energy/heat network, hydrology, insurance/liability, data authorization and formal boundary |
 | D Spillover | OPC shared lab, standards spillover studio and international service room that turn R&D records into reusable protocols | `SC-D01`—`SC-D03`, three-area interfaces | Participants, IP permissions, cross-region cooperation and service verification |
@@ -332,7 +344,7 @@ This is a pre-authorization working contract. The package contains no site visit
 
 ## v0.6: Put “who can enter and who can stop” on one spatial page
 
-This iteration reorganizes the acceptance relationships already distributed across six persona records, seventeen scenario cards, three release gates, and provisional spatial anchors into Figure 09. The six persona paths start with existing residents/older people, workers at displacement risk, night AI workers, OPCs/small merchants, public-service staff, and disabled or low-digital users. Ten directly related scenarios are selected as legible paths, while all seventeen cards, sixteen geometry nodes, and all three release gates remain visible so that representative personas stay alongside the complete scenario registry. [data:geometry/constraints.geojson#SC-A01] [metric:scenario_node_count] [depth:municipal_new_infrastructure]
+This iteration reorganizes the acceptance relationships already distributed across six base persona records, three public-interest extensions, seventeen scenario cards, three release gates, and provisional spatial anchors into Figure 09. The six base persona paths start with existing residents/older people, workers at displacement risk, night AI workers, OPCs/small merchants, public-service staff, and disabled or low-digital users; the three extensions register benefit, impact, human alternative, and stop conditions in `public-interest-coverage-v26.json`. Ten directly related scenarios are selected as legible paths, while all seventeen cards, sixteen geometry nodes, and all three release gates remain visible so that representative personas stay alongside the complete scenario registry. [data:geometry/constraints.geojson#SC-A01] [metric:scenario_node_count] [depth:municipal_new_infrastructure]
 
 `visual/assets/human-city-acceptance-atlas.json` records only existing persona, scenario, and gate IDs. Its offline runner resolves 6/6 persona paths, 17/17 scenario cards, 10/10 representative links, 30/30 representative spatial references, 47/47 scenario spatial references, and 3/3 release gates; a fabricated persona anchor must fail. PASS proves only that the figure has not hidden the package's references and stop conditions. It does not prove real human coverage, staffed service, spatial access, field safety, permits, or social performance. [data:geometry/constraints.geojson#SC-C04] [data:geometry/phasing.geojson#PHASE-V10] [depth:risk_missing_data]
 
@@ -528,7 +540,7 @@ The AI Origin Community places workers at substitution risk, not only celebrated
 
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
-Six personas establish that the right to refuse AI is part of service quality. Long-term residents and older people need a human channel, familiar social networks, privacy, and low-disruption renewal. Workers at substitution risk need a verifiable route to a new job. AI researchers need safe night travel, twenty-four-hour basics, and screen-free recovery. OPCs and small teams need on-demand labs, compute, and compliance support. Public-service staff need explainable work orders and human review. International visitors need language, medical navigation, intellectual-property, compliance, and daily-life support. [source:HD-AI-TALENT-2026] [depth:municipal_new_infrastructure]
+Six base personas plus three public-interest extensions establish that the right to refuse AI is part of service quality. Long-term residents and older people need a human channel, familiar social networks, privacy, and low-disruption renewal. Workers at substitution risk need a verifiable route to a new job. AI researchers need safe night travel, twenty-four-hour basics, and screen-free recovery. OPCs and small teams need on-demand labs, compute, and compliance support. Public-service staff need explainable work orders and human review. Youth and early entrants need a non-automated learning and transition route; developers and researchers need least privilege and a rights register; international visitors need multilingual explanation, ordinary movement, and withdrawable service. The extension is not a demographic survey or outcome claim. [source:HD-AI-TALENT-2026] [data:visual/assets/public-interest-coverage-v26.json] [depth:municipal_new_infrastructure]
 
 | Persona | Non-negotiable right | Spatial/service response | Validation |
 | --- | --- | --- | --- |

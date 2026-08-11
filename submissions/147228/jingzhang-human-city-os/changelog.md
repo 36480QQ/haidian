@@ -2,6 +2,8 @@
 
 ## v2.6 - 2026-08-10
 
+- 新增 `public-interest-coverage-v26.json` 与确定性 runner，在既有 6 类基础 persona 外补充青年初入行者、开发者与研究者、首次到访者与国际访客；每类回接已有场景和 GeoJSON 锚点，并登记受益、影响风险、人工替代、停止条件与待补证据。
+- 中英文 proposal 明确 6 类基础 persona + 3 类公共利益扩展的关系；新增内容不改写人口、服务、就业、无障碍或官方评分结论。
 - 修复离线引用审计对 `depth:brief_alignment` 的错误阻断：该标识是 reviewer navigation 中明确登记的 formal 维度，不是设计深度矩阵中的行；审计现在只接受设计深度项或已登记 reviewer 维度，并新增未知 depth 负样本，避免放宽为任意字符串。
 - 刷新 `human-city-reference-audit.json` 与 manifest 哈希；当前中英文提案共 703 条包内引用、134 个唯一引用全部解析，仍不产生官方评分或现场绩效结论。
 

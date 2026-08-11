@@ -6,11 +6,23 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-iteration: "v2.5"
-summary: "以人的尊严为底座、以机器可调用为增量、以能源气候和治理为硬约束的可回滚城市版本；v2.5 把东西缝合/南北贯通、公共空间组件与公共贡献展示，以及开发者社群—场景开放—版本外溢转化链做成可回读证据。临时几何、已知指标与 unknown 均保持原值。"
+iteration: "v2.6"
+summary: "以人的尊严为底座、以机器可调用为增量、以能源气候和治理为硬约束的可回滚城市版本；v2.6 在既有六类 persona 之外，补充青年初入行者、开发者与研究者、首次到访者与国际访客三类公共利益覆盖，并把受益、影响、人工替代和停止条件做成可回读证据。临时几何、已知指标与 unknown 均保持原值。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
+
+## v2.6 公共利益覆盖扩展｜把三类容易被 AI 叙事遮住的人写回场景
+
+既有 `personas-and-fairness.json` 已登记六类基础 persona，本轮不改写原有契约，只补充三类在公共利益审阅中容易被漏看的群体：青年学生与初入行者、开发者与研究者、首次到访者与国际访客。每一类都沿“受益—影响风险—空间/场景—人工替代—停止条件—待补证据”回到既有包内要素，避免用概念人群冒充人口调查、服务覆盖率或公平结果。[data:visual/assets/public-interest-coverage-v26.json] [data:visual/assets/run-public-interest-coverage-v26.js] [depth:risk_missing_data]
+
+| 公共利益扩展 | 可见受益 | 需要防止的影响 | 既有场景与空间回接 | 资料不到位时 |
+| --- | --- | --- | --- | --- |
+| 青年学生与初入行者 | 不以自动评分筛选的技能再造、人工解释和可撤回学习入口 | 转型压力、污名化、等待时间和学习数据过度留存 | `SC-A02` / `ROAD-A-SKILL` / `BLDG-A-02` | 没有人工咨询、退出记录或岗位质量资料，停在 G0，不开放自动分流 |
+| 开发者与研究者 | 最小权限目录、公共观察席和受限实验，不把平台评分当入场资格 | 供应商锁定、知识产权不清、测试外溢和误接入个人/市政数据 | `SC-B01` / `ZONE-B-API` / `BLDG-B-01` / `BLDG-D-01` | 授权、权利、日志或人工接管不清，冻结实验，回到纸面协议 |
+| 首次到访者与国际访客 | 多语公共信息、人工解释、普通通行和可退出服务 | 语言障碍、错误医疗/生活信息、个案数据误收集和文化误读 | `SC-D03` / `BLDG-D-02` / `PUBLIC-D-GLOBAL` | 语言解释、权利清单或个案授权不完整，关闭展示，保留人工服务 |
+
+这是一份覆盖和资料缺口登记，不是人口调查、无障碍认证、服务绩效、就业结果或官方评分。正式基线、权利和授权资料到位后，须连同 persona、scenario、geometry、metrics、图件、HTML、PDF 和 self-check 一起重算。[data:geometry/constraints.geojson#SC-A02] [data:geometry/constraints.geojson#SC-D03] [depth:risk_missing_data]
 
 ## v2.5 公共空间连接与社群转化｜让 agent.4、agent.6 不停在活动清单
 
@@ -144,7 +156,7 @@ v2.1 的五段空间动作房间已能逐节点回放；v2.2 进一步把它们�
 
 | 价值链 | 现场可读的概念动作 | 当前包内证据 | 仍需补齐的资料 |
 | --- | --- | --- | --- |
-| A 人的尊严 | 原住民保留与社区服务织补、技能再造走廊、人工/电话/纸面入口、无屏绿地与身心健康补给 | `LU-H01`、`ROAD-A-SKILL`、6 类 persona、17 张场景卡 | 居民基线、商户与就业追踪、无障碍走读与授权运营记录 |
+| A 人的尊严 | 原住民保留与社区服务织补、技能再造走廊、人工/电话/纸面入口、无屏绿地与身心健康补给 | `LU-H01`、`ROAD-A-SKILL`、6 类基础 persona + 3 类公共利益扩展、17 张场景卡 | 居民基线、商户与就业追踪、无障碍走读与授权运营记录 |
 | B 机器可用 | 城市 API 交换站、硅基通行权测试场、低空物流分层、可逆构件库与数字孪生试验台 | `LU-B01`/`LU-B02`、`ROAD-B-SILICON`、人机接口原型 | 交通/航空/安全断面、接口责任主体、专业模型与现场测试 |
 | C 硬约束 | 算电余热审计、行洪与海绵模拟、监管沙盒事故复盘、公共数据授权样板间、版本发布室 | `SC-C01`—`SC-C05`、3 道发布门、5 阶段启动程序 | 能源与热网、蓝线水文、保险/责任、数据授权与正式边界 |
 | D 势能外溢 | OPC 共享实验室、标准外溢工作室、国际服务客厅，把研发记录转成可复用协议 | `SC-D01`—`SC-D03`、三区两翼接口 | 参与主体、知识产权许可、跨区协作与服务供给核验 |
@@ -320,7 +332,7 @@ v1.6 已经把抽象长条换成了真实提交几何，v1.7 继续处理阅读�
 
 ## v0.6：把“谁能进入、谁能停止”放到同一张空间图
 
-本轮把原已分散在 6 类用户画像、17 张场景卡、3 段发布门和临时空间锚点中的验收关系重组为图 09。六条人物路径分别从原住民/老人、被替代风险劳动者、夜班 AI 从业者、OPC/小商户、公共服务人员与行动不便/低数字能力使用者出发；图中选择其中 10 条直接关联场景作为可读路径，同时保留 17 张场景卡、16 个几何空间节点和全部 3 个发布门，让“代表性人物”始终与完整场景清单并列阅读。[data:geometry/constraints.geojson#SC-A01] [metric:scenario_node_count] [depth:municipal_new_infrastructure]
+本轮把原已分散在 6 类基础用户画像、3 类公共利益扩展、17 张场景卡、3 段发布门和临时空间锚点中的验收关系重组为图 09。六条基础人物路径分别从原住民/老人、被替代风险劳动者、夜班 AI 从业者、OPC/小商户、公共服务人员与行动不便/低数字能力使用者出发；三类扩展群体另以 `public-interest-coverage-v26.json` 登记受益、影响、人工替代和停止条件。图中选择其中 10 条直接关联场景作为可读路径，同时保留 17 张场景卡、16 个几何空间节点和全部 3 个发布门，让“代表性人物”始终与完整场景清单并列阅读。[data:geometry/constraints.geojson#SC-A01] [metric:scenario_node_count] [depth:municipal_new_infrastructure]
 
 `visual/assets/human-city-acceptance-atlas.json` 只登记已有 persona、场景与发布门 ID；离线 runner 再核验 6/6 人物路径、17/17 场景卡、10/10 代表性链接、30/30 代表性空间引用、47/47 场景空间引用和 3/3 发布门均能解析，并使“虚构人物锚点”负样本失败。这个 PASS 只说明本包的引用与停止条件没有被图面遮蔽，不证明真实人群覆盖、人工服务、空间可达、现场安全、许可或社会绩效。[data:geometry/constraints.geojson#SC-C04] [data:geometry/phasing.geojson#PHASE-V10] [depth:risk_missing_data]
 
@@ -516,7 +528,7 @@ AI 原点社区把被替代风险劳动者而非“明星人才”放入创新�
 
 ## AI 创新生态、人才画像与 AI+ 场景
 
-用户画像至少覆盖六类人，并把“可拒绝 AI”视为服务权利：老住户/老人需要人工通道、熟人网络与低扰动更新；被替代风险劳动者需要可验证的岗位转型；AI 研发者需要夜间交通、24 小时基础服务和无屏恢复空间；小团队/OPC 需要按需实验室、算力与合规支持；公共服务人员需要可解释工单和人工复核；国际访客需要语言、医疗导航、知识产权和生活服务。[source:HD-AI-TALENT-2026] [depth:municipal_new_infrastructure]
+用户画像以六类基础 persona 加三类公共利益扩展覆盖，并把“可拒绝 AI”视为服务权利：老住户/老人需要人工通道、熟人网络与低扰动更新；被替代风险劳动者需要可验证的岗位转型；AI 研发者需要夜间交通、24 小时基础服务和无屏恢复空间；小团队/OPC 需要按需实验室、算力与合规支持；公共服务人员需要可解释工单和人工复核；青年初入行者需要不被自动筛选的学习与转岗入口；开发者/研究者需要最小权限和权利清单；国际访客需要多语解释、普通通行和可撤回服务。扩展记录仍不是人口调查或结果证明。[source:HD-AI-TALENT-2026] [data:visual/assets/public-interest-coverage-v26.json] [depth:municipal_new_infrastructure]
 
 | 用户画像 | 不能被牺牲的权利 | 空间/服务响应 | 验证方式 |
 | --- | --- | --- | --- |
