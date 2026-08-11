@@ -660,13 +660,15 @@
       "verified_repairs": 0,
       "independent_rechecks": 0,
       "measured_effects": 0,
+      "real_approvals": 0,
+      "real_operations": 0,
       "procurement_decisions": 0,
       "status": "zero_or_unknown_pending_real_world_evidence"
     },
     "evidence_backlinks": {
       "human_zh": "proposal.md#维护型城市从日常问题到普通基线--maintenance-urbanism-from-everyday-issue-to-ordinary-baseline",
       "human_en": "proposal.en.md#maintenance-urbanism-from-everyday-issue-to-ordinary-baseline",
-      "metrics": ["metrics.json#maintenance_urbanism_contract_count", "metrics.json#maintenance_real_complaint_count", "metrics.json#maintenance_actual_human_hours"],
+      "metrics": ["metrics.json#maintenance_urbanism_contract_count", "metrics.json#maintenance_real_complaint_count", "metrics.json#maintenance_actual_human_hours", "metrics.json#maintenance_real_approval_count", "metrics.json#maintenance_real_operation_count"],
       "assumption": "assumptions.json#A-MAINTENANCE-URBANISM-012",
       "existing_mapping": "visual/assets/implementation-handoff-matrix.json#scenario_crosswalk",
       "existing_g0_guard": "visual/assets/implementation-handoff-matrix.json#authority_boundary"

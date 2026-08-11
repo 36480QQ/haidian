@@ -1258,6 +1258,26 @@
       "confidence": "unknown",
       "assumptions": ["A documented decision rule does not establish an outcome."],
       "reason": "No baseline, completed repair, independent recheck, or measured effect has been supplied."
+    },
+    "maintenance_real_approval_count": {
+      "status": "known",
+      "value": 0,
+      "unit": "count",
+      "source_files": ["visual/assets/key-area-evidence-matrix.json"],
+      "formula": "count(verified_real_maintenance_approvals)",
+      "confidence": "high",
+      "assumptions": ["A zero approval count prevents documentation coverage from being presented as approval."],
+      "reason": "No verified real approval is represented by the maintenance contract."
+    },
+    "maintenance_real_operation_count": {
+      "status": "known",
+      "value": 0,
+      "unit": "count",
+      "source_files": ["visual/assets/key-area-evidence-matrix.json"],
+      "formula": "count(verified_real_maintenance_operations)",
+      "confidence": "high",
+      "assumptions": ["A zero operation count prevents documentation coverage from being presented as operation."],
+      "reason": "No verified real operation is represented by the maintenance contract."
     }
   }
 }
