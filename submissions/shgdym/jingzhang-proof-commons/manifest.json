@@ -452,7 +452,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "f3ea08bb438016faec30347b8ac51aa28e4a45586ba1e7a844c88283a6c46cdd"
+      "sha256": "cb6707ac3021724c3d72485986c83a35ea30b9d4898d2253cf9aedb53104fb4c"
     },
     {
       "path": "sources.json",
@@ -496,7 +496,8 @@
     "provisional_geometry_warning": "site_boundary.geojson and key_areas.geojson are provisional constraints, not official redlines or approval-grade polygons.",
     "self_check_ok": true,
     "can_enter_formal_review": true,
-    "review_status": "formal-review-ready"
+    "review_status": "formal-review-ready",
+    "readiness_contract": "persisted-self-check-v1"
   },
   "data_confidence": "medium_provisional",
   "data_confidence_note": "Content is prepared for professional review; all boundary/key-area geometry and derived spatial ratios remain provisional and require full-chain recalculation when official polygons are supplied."
