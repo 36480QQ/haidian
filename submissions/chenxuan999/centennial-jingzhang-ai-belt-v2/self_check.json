@@ -40,7 +40,7 @@
     {
       "check_id": "PROFESSIONAL_EVIDENCE",
       "result": "pass",
-      "severity": "major",
+      "severity": "blocking",
       "target": "proposal.md + standard_matrix.json + design_depth_matrix.json + compliance_matrix.json",
       "message": "5 mandatory standards, 15 design-depth items, 23 task requirements, and 27 known metrics are covered; proposal text references every item."
     },
@@ -71,6 +71,29 @@
       "severity": "info",
       "target": "geometry/constraints.geojson + proposal.md",
       "message": "Jing-Zhang railway heritage (Tsinghuayuan station provisional callout) protected via constraints layer and dedicated strategy in proposal.md Section 9; no fabrication of official heritage control."
+    },
+    {
+      "check_id": "DETERMINISTIC_VALIDATION",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "self_check.json#DETERMINISTIC_VALIDATION",
+      "message": "DETERMINISTIC_VALIDATION passed during local self-check (persisted-self-check-v1)."
+    },
+    {
+      "check_id": "SPATIAL_REVIEW",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "self_check.json#SPATIAL_REVIEW",
+      "message": "SPATIAL_REVIEW passed during local self-check (persisted-self-check-v1)."
+    },
+    {
+      "check_id": "VISUAL_PACKAGING",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "self_check.json#VISUAL_PACKAGING",
+      "message": "VISUAL_PACKAGING passed during local self-check (persisted-self-check-v1)."
     }
-  ]
+  ],
+  "ok": true,
+  "can_enter_formal_review": true
 }
