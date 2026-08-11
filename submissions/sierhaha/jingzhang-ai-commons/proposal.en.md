@@ -6,7 +6,7 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "The Double-Helix Innovation Belt concept weaves a century of Jing-Zhang railway autonomy into a globally oriented AI innovation chain, forming two intertwined urban DNA strands along the Jing-Zhang Heritage Park corridor. All spatial outputs are generated from public or cleared data; before official polygons arrive, all figures are recalculated from provisional constraint ranges."
+summary: "The Double-Helix Innovation Belt concept weaves a century of Jing-Zhang railway autonomy into a globally oriented AI innovation chain, forming two intertwined urban DNA strands along the Jing-Zhang Heritage Park corridor. Each strand carries a verifiable Power Base-Pair - AI scenarios are paired one-to-one with energy supply units, using an electrical-engineering lens (PV-storage-charging, PUE, resilient self-healing) to turn AI governance into auditable urban infrastructure. All spatial outputs are generated from public or cleared data; before official polygons arrive, all figures are recalculated from provisional constraint ranges."
 tracks: ["jingzhang-heritage-narrative", "ai-origin-community", "enterprise-services-ecosystem"]
 scenarios: ["ai-cultural-guide", "enterprise-service-copilot", "ai-traffic-walkability"]
 ---
@@ -45,9 +45,15 @@ Future city form answers how AI changes work, life, social interaction, and publ
 
 Benchmarking global AI ecosystems, this proposal studies six case archetypes (concept-level references only, no investment or outcome commitments): the capital–talent–university loop of Silicon Valley; Tel Aviv's defense spillover and dense startup districts; King's Cross railway heritage renewal as a knowledge quarter in London; one-north's high-density R&D community in Singapore; the production–R&D–life mix of Nanshan, Shenzhen; and the corridor-style innovation organization of Hangzhou's West Sci-Tech Innovation Corridor [source:AGENT-TASKBOOK] [depth:three_level_scope_framework].
 
+**Regional collaboration mechanism (conceptual suggestion).** The coordinated research area is not an isolated district; the belt must connect to a wider innovation network to fulfil the "world-class" positioning. This proposal suggests a "three areas, two wings, five-direction collaboration" framework: the three key areas and the two wings (Zhongguancun Technology Service Wing and Xiaoyuehe Scenario Empowerment Wing) form an internal innovation loop; externally, the belt connects with Zhongguancun Science City (origin collaboration), Future Science City (energy and infrastructure experimentation), Huairou Science City (large-scale facilities and basic research), Beijing Economic-Technological Development Area (manufacturing and industrialization), and the Beijing-Tianjin-Hebei coordinated development (cross-regional compute-energy-scenario links). Specific mechanisms (enclave incubation, compute sharing, energy interchange, event linkage) are conceptual suggestions for professional teams and authorities to deepen [source:AGENT-TASKBOOK] [depth:three_level_scope_framework]. Regional collaboration also requires cross-jurisdiction energy infrastructure planning: the belt's distribution grid, storage, and charging networks should sit within Beijing's new power system and Beijing-Tianjin-Hebei electricity interchange layout, avoiding "island-style" block-level energy construction [source:POLICY-CARBON-PEAK] [depth:municipal_new_infrastructure].
+
 ## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
+![Double-helix spatial structure with energy strand E](assets/figures/spatial-structure.en.png)
+
 
 The overall design area requires regulatory-plan-level urban design depth. The proposal puts forward a "one belt, two strands, three nodes, two wings" structure: the **belt** is the Jing-Zhang Heritage Park vitality corridor, the main axis of history and public life; the **two strands** are the Heritage helix (park and cultural land sequence on the west) and the Innovation helix (R&D and industrial land sequence on the east), interlocking at the key-area nodes; the **three nodes** are the three key areas; the **two wings** are the Zhongguancun Technology Service Wing (global factor allocation) and the Xiaoyuehe Scenario Empowerment Wing (AI scenario delivery and city vitality) [source:OFFICIAL-ANNOUNCEMENT] [depth:land_use_layout].
+
+**Power Base-Pair mechanism (the proposal's distinctive mechanism, from an electrical-engineering perspective).** When the Jing-Zhang Railway was built, Zhan Tianyou insisted on the unified standard gauge (1435 mm), enabling the line to interconnect with the national network and avoid a "narrow-gauge island"; this century-old promise of "accepting constraints and leaving standards in space for later verification" provides a direct mechanism prototype for the AI era. Combining this historical spirit with electrical engineering, the proposal introduces the **Power Base-Pair** rule: every AI scenario node on the double helix must be paired with a locatable, verifiable energy supply unit, forming an "AI compute x energy supply" base pair. Any scenario joining the belt must first pass four auditable power calibrations: (1) **Energy-efficiency floor**: compute and facilities set thresholds on PUE (Power Usage Effectiveness) and energy per unit of compute; under-performing scenarios do not enter open operation; (2) **Green-power priority**: distributed PV, storage, and green-power trading take priority, with green-power share as an operational hard metric; (3) **Resilience and self-healing**: the distribution grid adopts microgrid and island-operation capability design, with measurable self-healing recovery time and supply availability; (4) **Opt-out**: AI services retain human channels and offline/off-grid alternatives, preventing "intelligence" from crowding out basic public services [source:AGENT-TASKBOOK] [depth:municipal_new_infrastructure]. This mechanism translates "global discourse power in AI governance" from a slogan into auditable urban power infrastructure, supported by the deepening attachments in `report/narrative.md` (12 scenario cards with data fields / failure thresholds / exit conditions), the technology_maturity dimension in `risk.json`, and the energy metrics in `metrics.json` [source:AGENT-TASKBOOK] [metric:ai_scenario_card_count].
 
 The land layout is expressed in 57 gap-free, overlap-free land units: research (0802), cultural (0803), and education (0804) land is organized along the two strands; park green (1401) and buffer green (1402) form the blue-green skeleton; commercial (05) concentrates at Dazhongsi and the south gateway; residential and community service (0701/0702) form living circles on both sides; and reserved land (16) in the northeast is held for future AI innovation space [data:geometry/land_use.geojson#LU-001] [metric:land_use_area_by_code] [depth:development_intensity_controls].
 
@@ -68,12 +74,26 @@ The three key areas are the three gene nodes of the double helix, carrying the d
 The key-area boundaries are provisional constraint ranges; the positioning and spatial moves are conceptual suggestions for professional teams to deepen, not statutory planning or demolition/renovation conclusions [depth:three_key_area_detailed_design].
 
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
+![12 AI scenario cards](assets/figures/scenario-cards.en.png)
+
 
 The AI innovation ecosystem is carried by four spatial types: R&D and testing space (Zhongzhiyuan), open-source origin space (Origin Community), trade and experience space (Dazhongsi), and AI service scenarios embedded in daily life (neighborhoods, parks, transport) [source:AGENT-TASKBOOK] [depth:three_key_area_detailed_design].
 
-The proposal defines five user personas: open-source developers, startup teams, visiting executives of leading enterprises, surrounding residents, and university faculty and students. Each persona maps to explicit spatial responses and self-check boundaries — for example, no personal behavior tracking, separate authorization for compute and data services, cleared enterprise logos and cases, no commercial profiling of residents, and authorized campus and research data [source:AGENT-TASKBOOK] [metric:persona_count].
+The proposal defines five user personas: open-source developers, startup teams, visiting executives of leading enterprises, surrounding residents, and university faculty and students. Each persona maps to explicit spatial responses and self-check boundaries - for example, no personal behavior tracking, separate authorization for compute and data services, cleared enterprise logos and cases, no commercial profiling of residents, and authorized campus and research data [source:AGENT-TASKBOOK] [metric:persona_count].
 
-The proposal forms no fewer than 10 AI scenario cards, all mapped to spatial nodes  [metric:scenario_node_count]:
+**Livelihood pain-point anchors (the driver of public-interest and inclusive design).** Every AI scenario must answer a concrete public need rather than being technology for technology's sake; safeguards for vulnerable groups are written into spatial responses and indicators:
+
+| Livelihood pain point | Corresponding scenario / spatial response | Safeguards for vulnerable groups |
+| --- | --- | --- |
+| Congested commutes (slow-mobility gaps along the line) | Scenario 05 Jing-Zhang Time Slow Line, JZ-01 slow-mobility gap stitching | Accessible wayfinding, continuous tactile paving/ramps |
+| Difficult healthcare/caregiving (communities and talent housing) | Scenario 09 AI Life-Services Model Street | Retained human service counters, AI services can be opted out |
+| Burdensome procedures (enterprise and talent services, financing) | Scenario 06 Dazhongsi AI Roadshow Lounge, Scenario 08 Near-Campus Translation Street | Offline service points + offline alternatives |
+| Digital exclusion (elderly, non-digital users) | Human channels and large-print wayfinding in Scenarios 09/11 | Human-channel availability rate, offline-alternative availability rate |
+| Merchant disruption from renewal | Transitional resettlement and business-continuity safeguards during urban renewal | Merchant retention rate, disturbance complaints during renewal |
+
+This anchor table is cross-referenced with the inclusion assessment (children, elderly, people with disabilities, low-income, non-digital users, existing merchants) in deepening attachment 4 of `report/narrative.md` and the equity_inclusion dimension of `risk.json` [depth:risk_missing_data].
+
+The proposal forms 12 AI scenario cards, all mapped to spatial nodes [metric:scenario_node_count] [metric:ai_scenario_card_count]:
 
 | Scenario card | Spatial carrier | Design note |
 | --- | --- | --- |
@@ -86,7 +106,9 @@ The proposal forms no fewer than 10 AI scenario cards, all mapped to spatial nod
 | 07 Qinghe Low-Carbon Innovation Corridor | Zhongzhiyuan riverfront  | Green space, stormwater, walking and cycling, and AI display as a public living room |
 | 08 Near-Campus Translation Street | Beijing AI Origin Community  | Incubation, display, legal, IP, and financing services for university results |
 | 09 AI Life-Services Model Street | Central community service band  | Brings health, education, legal, and life-service AI+ scenarios to operable small-block space |
-| 10 Global AI Pilgrimage Week Route | Belt-wide public space system  | A walkable, shareable experience route from heritage culture, open source, industry, to international roadshows |
+| 10 Global AI Pilgrimage Week Route | Belt-wide public space system | A walkable, shareable experience route from heritage culture, open source, industry, to international roadshows |
+| 11 PV-Storage-Charging Energy Station | Parking at the three key areas and station interchanges | Integrated distributed PV + storage + V2G charging as the public energy node of the Power Base-Pair, with PUE and green-power share visualized |
+| 12 Energy Digital Twin Station | Zhongzhiyuan energy dispatch center (suggested point) | Organizes generation, storage, charging, and carbon into a real-time auditable "energy data railway", supporting low-carbon compute and public science education |
 
 The proposal proposes three industry test/validation scenarios (each requiring separate approval before operation): the autonomous model safety-evaluation sandbox at Zhongzhiyuan, the AI transport pilot for slow mobility and low-speed shuttle in the Jing-Zhang Heritage Park, and an AI public-service pilot in the central community band. All scenarios follow data minimization, explainability, and human-review principles; no unauthorized personal profiling, and no presentation of test scenarios as approved operations [metric:test_scenario_count] [source:AGENT-TASKBOOK].
 
@@ -104,7 +126,22 @@ The transport plan uses the Jing-Zhang Heritage Park slow-mobility spine (about 
 
 Municipal and new infrastructure covers AI industry services, innovation platforms, talent life services, distributed energy, edge compute, and integration with traditional municipal systems [depth:municipal_new_infrastructure]. The Qinghe and Xiaoyuehe rivers are included in the blue-green system as blue-line constraints; pipeline, energy, drainage, flood, and fire engineering conditions are listed as prerequisites for formal deepening [data:geometry/constraints.geojson#CONSTRAINT-002] [data:geometry/constraints.geojson#CONSTRAINT-003].
 
+**Smart energy and the new-type power infrastructure (conceptual scheme from an electrical-engineering perspective).** Guided by the Power Base-Pair mechanism, the proposal organizes the belt's energy system into four components, all based on mature or pilot-stage technologies; formal calibration awaits professional deepening:
+
+| Component | Spatial anchor | Technical feasibility | Verifiable indicators (candidate) |
+| --- | --- | --- | --- |
+| Distributed PV | Roofs of new/reserved parcels, canopies and carports (no installations on the heritage park itself, respecting heritage and character constraints) [data:geometry/land_use.geojson#LU-001] | Mature: distributed PV and BIPV are widely deployed | Self-generation share, generation per unit area (kWh/m²·yr) |
+| Storage and microgrids | Zhongzhiyuan reserved parcel, Dazhongsi energy station, South Gateway compute center [data:geometry/buildings.geojson#BLDG-001] | Mature: electrochemical storage and microgrid projects are widely delivered | Storage capacity (MWh), island-operation duration, self-healing recovery time |
+| V2G smart charging | Parking at the three key areas and rail-station interchanges [data:geometry/public_space.geojson#PUBLIC-001] | Pilot-stage: vehicle-grid interaction is being piloted in demonstration cities | V2G participation rate, charge/discharge response time |
+| Energy digital twin | Zhongzhiyuan energy dispatch center (suggested point) [data:geometry/buildings.geojson#BLDG-001] | Medium maturity: digital twins are used in campus energy management | Data update frequency, forecast accuracy, real-time carbon visualization |
+
+This energy system directly supports edge compute and low-carbon compute scenarios: edge-compute stations use "PV-storage-charging integrated + low-PUE design" to reduce impact on the main grid, with PUE, green-power share, and energy per unit of compute as entry thresholds for open operation; the energy digital twin organizes the belt's generation, storage, charging, and carbon emissions into a real-time auditable "energy data railway", echoing the Jing-Zhang Railway's promise of "leaving standards in space for later verification" [source:POLICY-CARBON-PEAK] [depth:municipal_new_infrastructure]. All energy facility layouts must respect heritage protection, blue-line, flood, and character constraints; grid connection, power-market, and green-power-trading matters are listed as prerequisites for formal deepening, without constituting engineering feasibility or implementation commitments [depth:risk_missing_data].
+
 ## Blue-Green Network, Public Space, and Urban Character
+![Brand identity and logo direction](assets/figures/brand-identity.en.png)
+
+![Three AI pilgrimage landmarks](assets/figures/landmarks.en.png)
+
 
 The blue-green system uses the Jing-Zhang Heritage Park vitality corridor as its skeleton and coordinates the Qinghe and Xiaoyuehe rivers, park green, and plaza land into a north–south continuous, east–west connected slow-mobility and green space system [data:geometry/green_space.geojson#GREEN-001] [depth:blue_green_public_space]. Public space is carried by two plaza land units (South Gateway Plaza, Dazhongsi Station East Plaza) and park nodes for daily gathering and AI scenario experience [data:geometry/public_space.geojson#PUBLIC-001] [metric:public_space_ratio].
 
@@ -125,7 +162,17 @@ The implementation layer proposes a reviewable renewal project list with locatio
 | JZ-07 | Central AI life-services model street | Urban renewal/scenario operation | Community participation, ground-floor use, data governance boundaries  |
 | JZ-08 | Global AI event week public route | Operation/brand | Event approval, crowd safety, international communication compliance [data:geometry/phasing.geojson#PHASE-002] |
 
-Phasing is distinct from the call's submission cycle: the call sets the deadline for deliverables, while implementation phasing is the urban renewal path. The proposal is phased in three stages — Stage 1 (about 396 ha) first stitches the Heritage Park belt and the three key-area cores; Stage 2 (about 284 ha) advances whole-area renewal of the key areas; Stage 3 (about 462 ha) completes the full framework [data:geometry/phasing.geojson#PHASE-001] [metric:phasing_area_sqm] [depth:phasing_implementation]. Light facilities, operation activities, and service platforms may start early; no engineering feasibility or implementation commitments are made before official regulatory, municipal, transport, and ownership conditions are confirmed.
+Phasing is distinct from the call's submission cycle: the call sets the deadline for deliverables, while implementation phasing is the urban renewal path. The proposal is phased in three stages - Stage 1 (about 396 ha) first stitches the Heritage Park belt and the three key-area cores; Stage 2 (about 284 ha) advances whole-area renewal of the key areas; Stage 3 (about 462 ha) completes the full framework [data:geometry/phasing.geojson#PHASE-001] [metric:phasing_area_sqm] [depth:phasing_implementation]. Light facilities, operation activities, and service platforms may start early; no engineering feasibility or implementation commitments are made before official regulatory, municipal, transport, and ownership conditions are confirmed.
+
+**Development-intensity scenario assumptions (an implementation framework while official controls are missing).** Official FAR, height, and density are absent; rather than fabricating precise values, the proposal offers three scenarios for professional teams and authorities to benchmark: a low-intensity scenario (current FAR 1.0-1.5, dominated by retention and light renewal), a medium-intensity scenario (1.5-2.5, moderate increments at the three cores), and a high-intensity scenario (2.5-3.5, transit-oriented high density around rail stations). All three scenarios keep the blue-green and public-space ratios and the building-footprint layer unchanged, varying only floor counts and floor-area accounting; calibration follows official conditions once published, and no scenario is presented as an approved conclusion [depth:development_intensity_controls] [metric:floor_area_ratio].
+
+**Pilot projects: suggested actors, sequencing, and verifiable indicators.** To strengthen implementability, three Stage-1 pilots define suggested implementing actors and verifiable indicators (all conceptual, no commitments):
+
+| Pilot | Suggested implementing actor | Start conditions | Verifiable indicators (candidate) |
+| --- | --- | --- | --- |
+| Edge compute and PV-storage-charging station (JZ-05) | District SOE + grid utility + compute operator consortium | Grid-connection scheme and power-market rules clarified | PUE, green-power share, self-generation share, self-healing recovery time |
+| Heritage Park slow-mobility gap stitching (JZ-01) | District urban management/landscaping + community participation | Road redline, under-bridge space, traffic organization review | Slow-mobility connectivity, gaps eliminated, accessibility compliance rate |
+| Central AI life-services model street (JZ-07) | Subdistrict office + community commerce operator + tech service provider | Ground-floor use, data-governance boundaries, merchant participation agreement | Merchant retention rate, human-channel availability rate, resident satisfaction |
 
 ## Metrics, Area Recalculation, and Compliance Matrix
 

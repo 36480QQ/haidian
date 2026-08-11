@@ -48,6 +48,13 @@
       "status": "known",
       "statement": "The overall design area assigned by the maintainer's provisional boundary is 11,412,825.386 m² in EPSG:4548; the three key areas recompute to about 192.9 ha / 104.3 ha / 72.0 ha.",
       "impact": "Used as the internal consistency baseline; official values supersede after recalculation. Provisional boundaries remain labeled throughout."
+    },
+    {
+      "id": "A-PILOT-001",
+      "status": "pending_authorization",
+      "statement": "The three industry test scenarios T1/T2/T3 (SC-04/SC-05/SC-06) have no approved operator, data-collection authorization, or pilot window. Per-scenario admission and rollback records in visual/assets/scenario_test_records.json mark each admission field as frozen / not collected / pending confirmation until authorization is granted; thresholds are reference directions only.",
+      "impact": "The three test scenarios are proposals for piloting, not approved operations; opening requires operator authorization, privacy review, and a human-equivalent service channel. Objection-entry and deletion-proof processes are frozen until the responsible entity is confirmed.",
+      "recompute_trigger": "operator authorization, pilot window and baseline data release"
     }
   ]
 }

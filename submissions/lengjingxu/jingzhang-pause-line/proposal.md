@@ -23,6 +23,10 @@ scenarios: ["ai-traffic-walkability", "ai-cultural-guide", "ai-health-service-na
 
 ![总体概念：留白不是空白，而是可选择的城市节律](assets/figures/site-overview.png)
 
+![概念愿景：一条可停、可走、可转换强度的公共空间脊](assets/figures/concept-overview.jpg)
+
+*AI 生成概念愿景图，仅用于表达总体氛围与空间构件关系；不是场地真实航拍，也不构成红线、面积或指标依据、法定条件、工程可行性结论或实施承诺。*
+
 ## 三层范围工作框架
 
 统筹研究范围讨论创新生态与人才城区的共同规则；总体设计范围组织一条留白慢行主线、三座节律庭、六条东西转换横廊和十二个留白驿；三处重点区分别验证“发布前冷静验证—创造中共学留白—采用后公共复盘”的完整链条 [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [depth:three_level_scope_framework] [data:geometry/site_boundary.geojson#SITE-001]。
@@ -58,6 +62,18 @@ scenarios: ["ai-traffic-walkability", "ai-cultural-guide", "ai-health-service-na
 | 大钟寺“城市复盘庭” | 采用后复盘 | 站城等候空间、公众试用、投诉与退出窗口、文化活动 | 城市采用会、AI 服务复盘墙、夜间安静回家线 | 站点、道路、市政、商业和文保复核 |
 
 ![三座节律庭：验证、共学、复盘](assets/figures/key-areas.png)
+
+![概念愿景：众智园冷静验证庭，以低刺激公共空间容纳受控慢速测试](assets/figures/concept-zhongzhiyuan.jpg)
+
+*AI 生成概念愿景图，仅用于表达氛围、使用选择与构件关系；不构成红线、指标、法定条件、工程可行性结论或实施承诺。*
+
+![概念愿景：AI 原点共学留白庭，以开放工坊和安静边缘支持跨学科共学](assets/figures/concept-ai-origin.jpg)
+
+*AI 生成概念愿景图，仅用于表达氛围、使用选择与构件关系；不构成红线、指标、法定条件、工程可行性结论或实施承诺。*
+
+![概念愿景：大钟寺城市复盘庭，以面对面公共审议替代技术奇观](assets/figures/concept-dazhongsi.jpg)
+
+*AI 生成概念愿景图，仅用于表达氛围、使用选择与构件关系；不构成红线、指标、法定条件、工程可行性结论或实施承诺。*
 
 三处朝圣与荣誉节点为“百年等候厅”“原点留白庭”“大钟复盘台”。它们展示问题、试验条件、失败记录、人工负责人和当前状态，不把投稿写成入选，不把试验写成落地，也不把企业宣传替代公共贡献。
 
@@ -106,13 +122,103 @@ scenarios: ["ai-traffic-walkability", "ai-cultural-guide", "ai-health-service-na
 
 ![慢行、蓝绿与三种感官强度](assets/figures/mobility-bluegreen.png)
 
+
+## 公共生活计算、流量分配与人机共居专题
+
+除纪念性公共场馆外，本方案把“公共生活本身”作为可设计对象：谁在什么时段使用空间、流量如何被分配、机器人与人如何同路。设计只处理空间级聚合状态与可逆运营规则，不建立个人画像，也不替代交通工程、消防或机器人安全专业设计 [depth:municipal_new_infrastructure] [source:SOURCE-REGISTRY]。
+
+### 公共生活计算台
+
+留白驿与横廊只读取座位占用、慢行通过量、声环境区间和时段开闭状态，在边缘设备完成聚合后显示为点、带、色块式的纸板/低亮屏状态，供运维与公众复盘。不做情绪识别、人脸识别、轨迹还原或个体注意力推断 [depth:municipal_new_infrastructure]。
+
+![概念愿景：公共生活只计算空间级占用与流量状态](assets/figures/concept-public-life-computation.jpg)
+
+*AI 生成概念愿景图，仅用于表达低侵入监测与聚合状态展示的关系；画面中的纸板图不是真实数据图，也不构成流量指标、隐私合规或工程可行性结论。*
+
+### 节律流量分配
+
+南北主脊保留连续无障碍慢行；平行布置可切换的骑行、停驻、临时活动与低速机器人服务带。铺装纹理和色彩区分速度级，关键节点保留人工引导与可关闭断面。高峰时优先步行与轮椅通道，活动结束后恢复日常断面 [data:geometry/roads.geojson#ROAD-001] [metric:pause_spine_length_m]。
+
+![概念愿景：多路径慢行与可切换断面的流量分配](assets/figures/concept-flow-distribution.jpg)
+
+*AI 生成概念愿景图，仅用于表达多路径分工与人机让行关系；不构成道路红线、断面尺寸、通行能力或信号配时结论。*
+
+### 人机共居适配
+
+低速配送与服务机器人走侧向服务带与停靠口袋，进入人行优先区必须让行。交叉点设置可听/可见意图提示、安全缓冲与人工急停柱；维护舱、充电口和接管点对公众可见但与主要休息面分离。盲道、轮椅、儿童与宠物路径不被机器人占用 [depth:traffic_rail_slow_parking]。
+
+![概念愿景：机器人让行人类的可步入共居街道](assets/figures/concept-human-robot-coexistence.jpg)
+
+*AI 生成概念愿景图，仅用于表达人机共居构件与优先序；不是机器人产品选型、安全认证或运营许可。*
+
+前置条件：道路红线、无障碍与消防通道现场核查；机器人运营主体、保险与应急接管协议；空间级数据最小保存与公开复盘制度。本专题是概念建议，不是工程结论。
+
 ## 蓝绿空间、公共空间与城市风貌
 
 留白绿脊和三座节律庭构成公共空间主骨架。十二个留白驿按“安静 / 交流 / 活动”三种模式循环布置，每个驿都同时提供非数字导视、可坐可倚界面、轮椅与推车停靠、遮阴饮水和人工求助点；传感器只服务空间运维，不识别人 [data:geometry/green_space.geojson#GREEN-001] [data:geometry/public_space.geojson#PUBLIC-001] [depth:blue_green_public_space]。
 
+![概念愿景：同一空间从安静、交流到活动的三种可选强度](assets/figures/concept-sensory-modes.jpg)
+
+*AI 生成概念愿景图，仅用于表达运营氛围、人数变化与构件关系；不构成容量指标、法定条件、工程可行性结论或实施承诺。*
+
+![概念愿景：可复用的留白驿构件包](assets/figures/concept-component-kit.jpg)
+
+*AI 生成概念愿景图，仅用于表达座椅、遮阴、触觉导视、饮水、轮椅与推车伴随空间、人工求助点及雨水花园的关系；不是施工详图、规范图集或设备选型承诺。*
+
 绿地和公共空间面积来自各自图层的 union，比例只是本次概念方案读数，不是法定绿地率或公共空间指标 [metric:green_space_area_sqm] [metric:green_ratio] [metric:public_space_area_sqm]。
 
 城市风貌从铁路的“轨、站、等候、信号”提取语法：连续深蓝双线是公共承诺，暖铜短线记录历史，信号黄表示需要人工确认，苔绿节点表示可停驻的公共生活。建筑色彩、体量和高度待正式控制条件确认，本方案只提出地面界面和导视方向 [standard:MOHURD-URBAN-DESIGN-MEASURES] [metric:public_space_ratio]。
+
+![概念愿景：把铁路等候文化转译为面向未来的公共复盘空间](assets/figures/concept-heritage-future.jpg)
+
+*AI 生成概念愿景图，仅用于表达遗产氛围与当代公共讨论的关系；不是对任何具名车站或文保建筑的真实性复原，也不构成保护、改造或实施承诺。*
+
+
+## 雨洪排水、安全防护与适老化专题
+
+蓝绿公共空间同时承担排水、避险与全龄友好职责。历史极端降雨表明，下凹桥区与低洼通道在城市安全中具有系统性风险，本案只把其作为设计触发器，不宣称已满足任一设计暴雨重现期或排涝标准 [source:BEIJING-721-WEATHER] [source:BEIJING-2025-EXTREME-RAIN] [depth:blue_green_public_space]。
+
+### 蓝绿排水链
+
+铺装优先渗水与有组织汇流；浅沟、雨水花园、滞蓄口袋串联，并保留清晰溢流路径与维护通道。连续无障碍路线不得被积水“捷径”打断；下穿与低洼转换节点在正式市政底数到位前仅作为风险标记，不进入建设承诺 [data:geometry/green_space.geojson#GREEN-001] [data:geometry/constraints.geojson#CONSTRAINTS]。
+
+![概念愿景：渗透—滞蓄—溢流的蓝绿排水链](assets/figures/concept-drainage-resilience.jpg)
+
+*AI 生成概念愿景图，仅用于表达雨水组织与公共空间关系；不构成排水能力、设计暴雨、下穿深度或市政工程结论。*
+
+### 特殊安全防护
+
+活动时段与极端天气准备避险口袋：清晰逃生视线、人工求助/急救柜、低眩光路径灯、机器人手动急停、人工无线电/对讲接入点。特殊安全状态以人工确认优先，自动化只辅助聚合告警，不自动封禁个人路径 [depth:risk_missing_data]。
+
+![概念愿景：避险口袋与人工优先的特殊安全防护](assets/figures/concept-safety-protection.jpg)
+
+*AI 生成概念愿景图，仅用于表达避险与人工接管构件；不是消防、人防、应急预案或安保配置结论。*
+
+### 全龄友好与适老化
+
+慢行主线保持连续平整；座椅与扶手加密，饮水、遮阴、低眩光照明与人工服务点按驿站布置。轮椅、推车与助行器伴随空间是默认配置，而不是活动临时加建。适老化与无障碍是日常效率与尊严的基础条件 [standard:MOHURD-URBAN-DESIGN-MEASURES]。
+
+![概念愿景：全龄友好、可停可走的适老公共空间](assets/figures/concept-age-friendly.jpg)
+
+*AI 生成概念愿景图，仅用于表达适老构件与多年龄共处氛围；不构成无障碍验收、照护服务或医疗设施承诺。*
+
+## 夜生活、摊贩市集与可步入公共让渡专题
+
+夜生活不是围墙内消费综合体，而是可步入的公共让渡：夜市、小商贩摆摊带、文创市集和老城市记忆展售，与铁路遗产氛围、当代科技服务共存。空间边界保持开放，从周边街道可连续进入；高墙大院式封闭管理不作为本方案公共生活模型 [depth:blue_green_public_space] [depth:renewal_project_list]。
+
+### 可步入夜市与摊贩带
+
+在活动模式时段，选定横廊与驿站外缘释放可折叠摊位模组：餐饮、手作、旧物与城市记忆物件、文创。供电/供水服务柱、垃圾分类点、宽消防通道与紧急车道保持清空。摊位可日装夜收，避免永久侵占慢行主脊。
+
+### 尊严、效率与融合
+
+老人需要可坐可歇的尊严，商贩需要装卸与水电的效率，宠物需要可管理的伴随空间，机器人只在摊位后侧低速补货并让行。治理重点是许可透明、噪声与油烟边界、清扫复位和申诉通道，而不是把活力关进围墙。
+
+![概念愿景：开放夜市与摊贩市集的可步入公共让渡](assets/figures/concept-night-market-commons.jpg)
+
+*AI 生成概念愿景图，仅用于表达夜市氛围、开放边界与多主体共处；画面中的招牌与标线不是法定导视或审批成果，也不构成经营许可、消防验收或实施承诺。*
+
+前置条件：市集与夜间经营活动许可、消防与治安专业复核、噪声环评边界、摊贩权益与退出机制、清洁与垃圾收运合同。本专题是概念建议，供专业团队与社区共同深化。
 
 ## 更新项目清单、实施政策与分期计划
 
@@ -126,10 +232,18 @@ scenarios: ["ai-traffic-walkability", "ai-cultural-guide", "ai-health-service-na
 | P06 夜间安静回家线 | 慢行/照明 | 公开信息走查与临时导视 | 交通、照明、治安专业复核 |
 | P07 百年等候史 | 文化 | 授权口述、档案和可移动展陈 | 史实、版权、文保复核 |
 | P08 全球城市节律周 | 长期运营 | 小规模公共议程原型 | 审批、安全、国际传播与预算 |
+| P09 公共生活计算样段 | 数据/运维 | 空间级占用与流量聚合演示 | 隐私、最小保存、人工复盘 |
+| P10 蓝绿排水与避险走查 | 韧性/安全 | 渗滞溢路径与避险口袋现场标记 | 市政底数、消防应急专业复核 |
+| P11 全龄友好驿站升级 | 适老/无障碍 | 座椅扶手、低眩光与伴随空间样板 | 无障碍与养护标准复核 |
+| P12 可步入夜市与摊贩带 | 公共生活/市集 | 可折叠摊位、服务柱与消防清空演练 | 许可、噪声、消防与摊贩权益 |
 
 实施分为“先测节律、再缝合空间、后深化建设”三期。每期都以官方资料、权利影响、专业安全和公众复盘为放大闸门；三期面积只证明图层覆盖，不代表政府时序 [data:geometry/phasing.geojson#PHASE-001] [depth:renewal_project_list] [depth:phasing_implementation]。
 
 三期空间读数分别由 [metric:phase_1_area_sqm]、[metric:phase_2_area_sqm]、[metric:phase_3_area_sqm] 复核。年度运营建议采用“春季问题征集—夏季受控试验—秋季城市采用—冬季公开复盘”，但活动名称、日期、资金和主办方均未确定。
+
+![概念愿景：从清晨维护、日间共学、傍晚审议到夜间复位的可逆运营](assets/figures/concept-day-night.jpg)
+
+*AI 生成概念愿景图，仅用于表达时段变化、可逆布置与人工运营关系；不构成开放时间、活动排期、照明指标、安保结论或实施承诺。*
 
 ## 指标体系、面积复算与合规矩阵
 
@@ -155,3 +269,5 @@ scenarios: ["ai-traffic-walkability", "ai-cultural-guide", "ai-health-service-na
 - 临时边界与三处重点区 [source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE]
 - 外部案例仅作机制比较，受 `A-CASE-TRANSFER-001` 限制 [source:CASE-KENDALL] [source:CASE-ONE-NORTH] [source:CASE-KALASATAMA]
 - 公共空间与城市采用案例 [source:CASE-SUPERBLOCK] [source:CASE-NYC-POPS] [source:CASE-QUAYSIDE]
+- 北京极端降雨与城建风险触发器（背景事实，不构成场地工程指标） [source:BEIJING-721-WEATHER] [source:BEIJING-2025-EXTREME-RAIN] [source:BEIJING-2025-ROAD-DAMAGE]
+- AI 概念愿景图生图记录与限制 [source:AI-CONCEPT-VISUALIZATIONS]

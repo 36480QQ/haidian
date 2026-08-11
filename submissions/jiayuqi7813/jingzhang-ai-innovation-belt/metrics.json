@@ -283,6 +283,19 @@
       "confidence": "high",
       "assumptions": []
     },
+    "scenario_test_records_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/scenario_test_records.json"
+      ],
+      "formula": "record count for SC-04/SC-05/SC-06 in visual/assets/scenario_test_records.json",
+      "confidence": "high",
+      "assumptions": [
+        "A-PILOT-001"
+      ]
+    },
     "user_persona_count": {
       "status": "known",
       "value": 5,

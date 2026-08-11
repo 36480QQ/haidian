@@ -1,22 +1,22 @@
 ---
-title: "Jing-Zhang Common Veranda v0.2: An Accessible, Legible and Co-Maintained Civic Living Room"
+title: "Jing-Zhang Common Veranda v0.3: An Accessible, Legible and Co-Maintained Civic Living Room"
 author_github: "YoungCan-Wang"
 language: "en"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "Using real public context data, the proposal turns the Jing-Zhang rail heritage corridor into one civic spine, three key-area verandas, six east-west city gates and twelve accountable scenarios. A low-tech base, removable smart layer and staffed accountability interface allow innovation, learning and daily life to share one civic infrastructure."
+summary: "One spine, three verandas, six gates and twelve scenarios form the civic-space armature. A replayable 90-day Veranda Receipt, five regional interfaces, twelve work packages and a long-term operations ledger turn the urban-design vision into a system that can be tested, accepted, paused and exited."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v0.2"
+iteration: "v0.3"
 ---
 
-# Jing-Zhang Common Veranda v0.2
+# Jing-Zhang Common Veranda v0.3
 
 **JING-ZHANG COMMON VERANDA** is neither a street lined with AI exhibits nor a closed technology campus beside a historic railway. It treats the Jing-Zhang corridor as Haidian's civic veranda for the future: a place to walk, transfer, learn, work and meet, while also seeing what data an AI scenario uses, who is responsible, when it pauses and how a person can exit.
 
-Version 0.2 turns “one spine, three verandas, six gates and twelve scenarios” into a spatial system. One north-south civic spine links railway culture and daily services. Three key areas become test, learning and living verandas. Six east-west city gates stitch campuses, communities, universities and transit. Twelve scenario nodes share one access—explanation—human—exit protocol. Every move remains a Conceptual Recommendation for professional deepening and does not replace statutory planning or government approval.
+v0.3 retains one spine, three verandas, six gates and twelve scenarios, but shifts the emphasis from presentation completeness to implementation evidence. AI Origin receives a 90-day Veranda Receipt tabletop that is not authorized or run; five regional nodes define inputs, minimum outputs, owner types and exit gates; twelve work packages carry cost bands, dependencies, acceptance and stop conditions; and a daily-to-annual ledger decides whether scenarios continue, change or retire. Every move remains a Conceptual Recommendation, not statutory planning, institutional authorization or government approval.
 
 ![Overall urban design](assets/figures/site-overview.en.png)
 
@@ -25,7 +25,7 @@ Version 0.2 turns “one spine, three verandas, six gates and twelve scenarios�
 ### Evidence hierarchy
 
 1. **Task layer:** the official announcement defines the project, the 43.6 km² coordinated research scope, the approximate 11.4 km² overall design scope and the 368.4 ha key-area scope. The Agent taskbook defines six required tasks: identity, ecosystem, scenarios, landmarks, culture and operations. [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK]
-2. **Context layer:** v0.2 extracts public OpenStreetMap roads, rail, water, green space, amenities and key-area building footprints to improve spatial orientation. Completeness and accuracy are not equivalent to an official survey. [source:OSM-CONTEXT-20260810]
+2. **Context layer:** v0.3 extracts public OpenStreetMap roads, rail, water, green space, amenities and key-area building footprints to improve spatial orientation. Completeness and accuracy are not equivalent to an official survey. [source:OSM-CONTEXT-20260810]
 3. **Design layer:** the spine, six gates, civic nodes, green layer, program bands, building prototypes and twelve scenarios are Agent-generated Conceptual Recommendations. [data:geometry/roads.geojson#ROAD-001] [data:geometry/public_space.geojson#PUBLIC-001]
 4. **Presentation layer:** the three key-area perspectives are original AI-generated concept images. They communicate spatial character and user relationships; they are not site photographs or delivery commitments. [source:GEN-V02-CONCEPT-RENDERS]
 
@@ -40,6 +40,20 @@ The site and three key-area polygons remain repository-provisional. The submitte
 - **Transit versus the last kilometre:** rail and arterial access are strong, but walking, cycling and accessible connections from stations to campuses and communities need site-by-site verification.
 - **Heritage versus daily life:** rail, Zhongguancun and AI narratives are rich but lack one everyday shared carrier.
 - **Intelligence versus accountability:** AI scenarios are expanding, while clear human owners, explanation desks, pause conditions and appeal routes remain spatially absent. [depth:existing_conditions_diagnosis]
+
+### Translating Beijing and Haidian evidence into design moves
+
+v0.3 translates public policy into checkable constraints. Haidian's 15th Five-Year Plan frames the Jing-Zhang AI Innovation Belt, north-south AI cores, tangible benchmark scenarios, open ecosystems and safe controllability; the design therefore organizes test—transfer—adoption—public return rather than a display corridor. Haidian's innovation-scenario guidance asks for a host, a defined need, technical indicators, space/facilities, ethical safety and replicable outcomes; the flagship tabletop therefore locks responsibility and exit before technology operation. [source:HAIDIAN-15TH-FIVE-YEAR-PLAN-2026] [source:HAIDIAN-INNOVATION-SCENARIO-GUIDE-2025]
+
+The Beijing Urban Renewal Regulation becomes a rights-holder and co-governance gate. The Accessibility Law becomes continuous physical/information access, staffed equivalence and co-review with disabled and older users. Beijing sponge-city guidance supports visible rain gardens and maintenance, but is not used to invent a site runoff target. [source:BEIJING-URBAN-RENEWAL-REGULATION] [source:CHINA-ACCESSIBILITY-LAW-2023] [source:BEIJING-SPONGE-CITY-2017]
+
+### Existing delivery baseline and control-plan draft alignment
+
+The proposal does not begin from a blank site. Official public information records that an approximately 2.5 km first phase from Zhichun Road to Qinghua East Road opened in 2023, retaining rail and bridge memory while adding rainwater facilities, under-bridge activity and east-west stitching. v0.3 therefore treats it as an existing public asset: the six-gate audit, continuous accessibility, accountability interfaces and operations receipts are an overlay, not duplicate landscape construction. [source:JINGZHANG-PHASE1-OPEN-2023]
+
+The 2024 public-consultation draft for HD00-1601 and related blocks sets out “one belt, one axis, two centres and multiple nodes”: the Jing-Zhang innovation-exchange belt, Zhongguancun Avenue innovation axis, Dazhongsi and Wudaokou centres, and multiple nodes. One spine, three verandas, six gates and twelve scenarios form a civic-service and accountability layer over that structure; they do not replace it. Published 2035 population, land, floor-area, facility and transport figures belong only to the draft scope, are not copied into `metrics.json`, and are not used to reverse-engineer an official vector redline from an image. [source:JINGZHANG-CONTROL-PLAN-DRAFT-2024] [depth:public_plan_alignment]
+
+The official 2021 implementation interpretation already identified breaks, multiple rights holders and phased delivery, and described chief-planner/engineer and “urban partner” coordination. v0.3 translates these into work-package leads, professional acceptance, quarterly receipts and retirement decisions without claiming that any organization has accepted a role. The final approved text and reusable GIS/CAD remain unavailable, so every submission boundary, key area and area figure stays provisional. [source:JINGZHANG-PLAN-INTERPRETATION-2021]
 
 ## Three-Level Scope Framework
 
@@ -60,6 +74,14 @@ The ecosystem is not a recruitment list. It is a spatial and institutional loop 
 Six global cases provide transferable mechanisms rather than incomparable scale benchmarks. Modular trials at one-north, community benefit in Kendall Square and research adoption at MaRS support the test—benefit—adoption loop. [source:CASE-ONE-NORTH] [source:CASE-KENDALL] [source:CASE-MARS]
 
 Member networks in the Knowledge Quarter, responsible AI and open science at Mila, and rail-heritage reuse at STATION F support collaboration—accountability—adaptive reuse. [source:CASE-KQ] [source:CASE-MILA] [source:CASE-STATION-F]
+
+### Regional collaboration: five exit-ready interfaces
+
+![Regional interfaces](assets/figures/regional-interfaces.en.png)
+
+Regional collaboration is not a set of ownerless arrows. AI North-Latitude Community contributes incubation and evaluation questions; Future Science City contributes engineering validation questions; Huairou Science City contributes science-communication needs; Beijing E-Town contributes manufacturing and robotics adoption questions; and Beijing-Tianjin-Hebei nodes only receive a one-page transfer contract after a local host opts in. Each interface records a minimum output and a stop gate. [depth:regional_interface_contract]
+
+These are proposed interfaces, not confirmed partnerships. Without a consenting liaison they remain issue mappings only. Real data, facilities, trade secrets, product access or inter-regional replication always requires separate authorization. [source:AGENT-TASKBOOK] [source:HAIDIAN-15TH-FIVE-YEAR-PLAN-2026]
 
 ### Identity and culture
 
@@ -113,6 +135,14 @@ AI Origin turns boundaries between university, research campus, startup communit
 
 The six nodes are the release gate, public learning steps, research-to-civic table, accessible learning loop, rail rain garden and community review desk. Open hours, IP, minor protection, event noise and station access require joint professional and operational confirmation.
 
+### Flagship tabletop: the 90-day Veranda Receipt
+
+![90-day Veranda Receipt tabletop](assets/figures/veranda-receipt.en.png)
+
+Rather than deepening all twelve scenarios at once, v0.3 chooses one public-learning request at AI Origin. Five synthetic fixtures exercise source lookup, staffed explanation and an evidence receipt; a paper request, printed sources, in-person explanation and appeal remain available. Status is **tabletop only / not authorized / not run**. The evidence proves the G0—G6 sequence, four stop branches and five-step rollback structure; it does not prove site safety, model performance, acceptance, permission or endorsement. [depth:veranda_receipt_pilot]
+
+The gates cover mandate, place/access, minimum data, rights/provenance, human control, public notice/non-AI service, and receipt/appeal/exit. One positive control passes and four negatives stop at personal data, unresolved rights, missing steward and missing exit; 5/5 current machine outcomes match expectation. A real pilot must reassign every accountable role and obtain site and professional authorization. [metric:tabletop_expected_outcome_match_rate] [source:CAC-AI-CONTENT-LABEL-2025]
+
 ### 03 Dazhongsi: Everyday Civic Veranda
 
 Dazhongsi tests how AI enters ordinary city life. Transit arrival, commercial ground floors, community services and rail culture meet in an all-weather civic living room. Responsible retail, elder navigation and community appeals are staffed by default. The Centennial Civic Ledger Clock displays running, paused, complained-about and repaired scenarios—not only technical achievements.
@@ -155,6 +185,16 @@ The concept section combines rain garden, cycle/emergency access, shaded walk, c
 
 Three pilgrimage landmarks are the Responsibility Transformer at Zhongzhiyuan, Open-Source Commit Steps at AI Origin and Centennial Civic Ledger Clock at Dazhongsi. They record contribution, responsibility and repair rather than technological worship. Form remains subject to heritage, landscape, night-lighting and safety review.
 
+## Twelve Work Packages: Spatial Move to Responsible Hand-off
+
+![Twelve-work-package ledger](assets/figures/work-package-ledger.en.png)
+
+Each key area is divided into four work packages. `spatial.json` records a concept interface, lead-role type, S/M/L relative cost, survey/rights/professional dependencies, G0—G6 acceptance gates, maintenance window, stop condition and P1/P2/P3 window. Cost bands compare complexity only; they are not budgets. [depth:work_package_ledger]
+
+- **Zhongzhiyuan:** test intake, low-speed sandbox, red-team court and energy/safety kiosk; boundary breach, lost contact, non-reproducibility or missing takeover stops work.
+- **AI Origin:** open-source gate, 90-day receipt, public learning steps and accessible loop; unresolved rights, youth protection, continuous access or staffed service stops opening.
+- **Dazhongsi:** transit arrival room, responsible retail, elder navigator and civic ledger; high-impact matters go to people, while incomplete run/pause/complaint/repair evidence displays UNKNOWN. [source:HAIDIAN-AI-ELDER-ACTION-2026]
+
 ## Renewal Projects, Policy and Phasing
 
 ![Delivery and long-term operations](assets/figures/phasing-delivery.en.png)
@@ -162,6 +202,14 @@ Three pilgrimage landmarks are the Responsibility Transformer at Zhongzhiyuan, O
 Delivery has four steps. First, measure and complete the civic baseline of shade, ramps, seating, signs and lighting. Second, test six city gates, open hours and staffed service with movable components. Third, link test, learning and living verandas through scenario and operating ledgers. Fourth, enter professional deepening when the official base, controls, utilities, fire, heritage and engineering evidence arrive. [depth:phasing_implementation]
 
 Operating rhythms are daily service and care, monthly maintainer salons, quarterly open evaluation and an annual Open Veranda Week. Performance focuses on public open hours, accessibility issue closure, published test-result cards, complaint response, pause and repair records—not unverified industrial or visitor promises.
+
+### Long-term operations: who maintains, responds and retires
+
+![Long-term operations and open-brand governance](assets/figures/civic-operations.en.png)
+
+Operations are an opening condition. Daily checks cover access, notice, staffed fallback and incidents; monthly maintainer salons handle unresolved repairs and dissent; quarterly receipts publish run/pause/appeal/repair evidence and decide continue/revise/retire; annual Open Veranda Week also audits public assets, licences and brand use. [depth:operations_brand_ledger]
+
+No smart layer opens without an operations owner, maintenance/spares window, staffed equivalent, insurance and exit funding. If a quarter cannot publish owner, repair and exit evidence, the scenario defaults to PAUSED; two unresolved quarters trigger a retirement decision. The mark may be reused with attribution, but status colours, explicit AI-content labels and version records must stay. [source:BEIJING-URBAN-RENEWAL-REGULATION] [source:CAC-AI-CONTENT-LABEL-2025]
 
 ## Metrics, Recalculation and Compliance Matrix
 

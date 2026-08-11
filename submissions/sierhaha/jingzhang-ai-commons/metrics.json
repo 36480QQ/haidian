@@ -146,7 +146,7 @@
   },
   "road_length_m": {
    "status": "known",
-   "value": 38104.17,
+   "value": 38958.41,
    "unit": "m",
    "source_files": [
     "geometry/roads.geojson"
@@ -159,7 +159,7 @@
   },
   "road_count": {
    "status": "known",
-   "value": 11,
+   "value": 13,
    "unit": "count",
    "source_files": [
     "geometry/roads.geojson"
@@ -222,7 +222,7 @@
   },
   "scenario_node_count": {
    "status": "known",
-   "value": 10,
+   "value": 12,
    "unit": "count",
    "source_files": [
     "proposal.md"
@@ -230,12 +230,12 @@
    "formula": "count(scenario cards mapped to spatial nodes in proposal.md)",
    "confidence": "high",
    "assumptions": [
-    "Ten AI scenario cards; spatial nodes are described in proposal.md and visualized in figures."
+    "Twelve AI scenario cards; spatial nodes are described in proposal.md and visualized in figures."
    ]
   },
   "ai_scenario_card_count": {
    "status": "known",
-   "value": 10,
+   "value": 12,
    "unit": "count",
    "source_files": [
     "proposal.md"

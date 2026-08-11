@@ -156,6 +156,8 @@ iteration: "v1.0"
 
 3 个产业测试验证场景逐步开放：T1 智能体安全沙盒（众智园联合试车线）、T2 模型评测复算站（众智园模型车间）、T3 端侧算力与低碳融合验证（沿主脊新型基础设施节点）。
 
+T1/T2/T3 的逐场景准入与回退记录登记于 `visual/assets/scenario_test_records.json`（SC-04/SC-05/SC-06 各一条），每条以 `{status, value}` 覆盖四组字段：baseline、观察对象、样本与时间窗；成功条件与停止条件；人工等价路径与责任角色；复核周期、异议入口与删除证明 [data:visual/assets/scenario_test_records.json#SC-04] [data:visual/assets/scenario_test_records.json#SC-05] [data:visual/assets/scenario_test_records.json#SC-06]。未知字段一律标注为「授权前冻结 / 未采集 / 待责任主体确认 / 待确认」，不预设任何数值；离线检查器 `check_scenario_records.py` 验证字段不漏项、状态枚举合法且无编造数值（对应 `self_check.json` 的 `SCENARIO_RECORD_COMPLETENESS` 检查），使「可预约、可停用、可回退」成为逐卡可核查的合同而非一句总体原则。
+
 ![交通慢行与蓝绿公共空间复合系统图](assets/figures/mobility-bluegreen.png)
 
 ## 用地、建筑规模与拆改留方案
