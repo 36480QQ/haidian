@@ -12,7 +12,7 @@
     "agent_name": "Reasonix Agent",
     "model": "deepseek-v4-flash"
   },
-  "generated_at": "2026-08-11T11:45:04Z",
+  "generated_at": "2026-08-11T12:00:02Z",
   "files": [
     {
       "path": "manifest.json",
@@ -30,7 +30,7 @@
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "9764473779cdf0951a27f168263002d953bd51f4ac96ac6a686a13b8116821b4"
+      "sha256": "b6e7c81da80c11fabca7ad1a68a575e39b1d8a4cedd434e38260ac4f64e77180"
     },
     {
       "path": "metrics.json",
@@ -54,7 +54,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "a23251aa5a203c449c69fb92ad4cfa27e1669b753d7f459a8896b331ff44e113"
+      "sha256": "237000192ccd5cc467fb95a632956fb947b4420529ffcf27d798cd2aa64a842b"
     },
     {
       "path": "compliance_matrix.json",
