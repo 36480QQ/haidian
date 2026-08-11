@@ -20,7 +20,7 @@ iteration: "v0.1"
 
 需要特别说明的是：本项目官方 `SITE_BOUNDARY` 与三处 `KEY_AREA` 精确 polygon 尚未向社会公布（资格预审包为密码保护下载，截至检索未取得公开精确边界）。本方案因此使用维护者依据公告文字四至与约面积在 EPSG:4548 下推定并校核的**临时粗略边界（provisional constraint）** [source:DATA-SRC-PROVISIONAL-BOUNDARIES-20260605][source:BOUNDARY-SOURCE][source:KEY-AREA-SOURCE]。范围、任务、来源边界与缺失数据清单还可回溯到智能体可读事实包导航层 [source:PROCESSED-FACT-PACK]。该边界仅用于 AI 生成、展示与临时自检，**不得视为 official redline、审批依据或精确面积复算依据**；组织方数据缺口本身不阻断内容评分，但官方 polygon 发布后，site boundary、land use、roads、green/publ space、buildings、phasing 与全部面积/比例指标均须整包重算 [metric:site_area_sqm]。
 
-方案达到控制性详细规划与规划综合实施方案的城市设计深度参照 [standard:MOHURD-CONTROL-DETAILED-PLANNING] 与 [standard:MOHURD-URBAN-DESIGN-MEASURES]，用地分类遵循 [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]。机器人低速试点与公共服务分别遵循低速交通、无障碍与老年人友好相关法规的合规边界（完整标准清单见 `standard_matrix.json`）。上文这些标准、任务、来源、指标与设计深度的完整索引分别保存在 `standard_matrix.json`、`compliance_matrix.json`、`sources.json`、`metrics.json` 与 `design_depth_matrix.json`，正文只在关键判断处放置少量可校验引用，不做机器索引堆叠。
+方案参照控制性详细规划与规划综合实施方案的框架开展概念研究，采用 [standard:MOHURD-CONTROL-DETAILED-PLANNING] 与 [standard:MOHURD-URBAN-DESIGN-MEASURES] 的深度组织方法与专业标准作为参照，用地分类遵循 [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]；本方案为概念研究，不构成法定控规、实施成果或审批基准。机器人低速试点与公共服务分别遵循低速交通、无障碍与老年人友好相关法规的合规边界（完整标准清单见 `standard_matrix.json`）。上文这些标准、任务、来源、指标与设计深度的完整索引分别保存在 `standard_matrix.json`、`compliance_matrix.json`、`sources.json`、`metrics.json` 与 `design_depth_matrix.json`，正文只在关键判断处放置少量可校验引用，不做机器索引堆叠。
 
 ![资料证据链与提交包关系图](assets/figures/site-overview.png)
 
@@ -38,7 +38,7 @@ iteration: "v0.1"
 
 ### 总体概念：微循环智运 MICROLOOP
 
-本方案提出总体概念 **「微循环智运 MICROLOOP」**：把京张AI创新带组织为一张**低速机器人 + 无人接驳的末端微循环网络**。与干线轨道（如 EVO-RAIL 式主干）互补，本概念回答“干线之后最后一公里如何贯通”——园区内的配送、巡检、导览、清洁与无障碍随行机器人沿三处重点区环道运行，核心站点之间以低速自动驾驶接驳环贯通，形成「干线轨道 + 末端微循环」的双层流动 [data:geometry/roads.geojson#ROAD-RING-N]。
+本方案提出总体概念 **「微循环智运 MICROLOOP」**：把京张AI创新带组织为一张**低速机器人 + 无人接驳的末端微循环网络**。它作为干线轨道（大型城市轨道/接驳主轴）之外“最后一公里”的末端层，回答“干线之后末端如何贯通”——园区内的配送、巡检、导览、清洁与无障碍随行机器人沿三处重点区环道运行，核心站点之间以低速自动驾驶接驳环贯通，形成「干线 + 末端微循环」的双层流动 [data:geometry/roads.geojson#ROAD-RING-N]。
 
 - **环道（Loop）**＝三处重点区各设一条低速机器人环道，是末端服务的物理骨架 [data:geometry/roads.geojson#ROAD-RING-N]。
 - **机器人（Bot）**＝配送、巡检、导览、清洁、随行等低速终端，是环道上可调度、可复核的“信使”。

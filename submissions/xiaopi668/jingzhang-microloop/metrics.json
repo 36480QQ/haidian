@@ -82,7 +82,8 @@
       "formula": "sum(linestring_length(road_centerlines))",
       "confidence": "medium",
       "assumptions": [
-        "Concept spine/connector network; not road redline."
+        "Concept low-speed robot loop/connector network; not road redline.",
+        "Provisional geometry calibration value; recalculate when official geometry is supplied."
       ]
     },
     "phase_area_sqm": {
@@ -95,7 +96,8 @@
       "formula": "polygon_area(phasing_union)",
       "confidence": "medium",
       "assumptions": [
-        "Three-phase concept scope."
+        "Three-phase concept scope.",
+        "Provisional geometry calibration value; recalculate when official geometry is supplied."
       ]
     },
     "floor_area_ratio": {
