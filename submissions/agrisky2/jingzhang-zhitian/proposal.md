@@ -7,8 +7,8 @@ bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以百年京张铁路运粮历史为叙事起点，将43.6km²京张AI创新带重构为全球首个'AI+农业科技'跨界创新走廊。三区两翼分别承载智慧育种研发、食品科技孵化和未来食品体验功能，嵌入10+AI农业场景卡和3个朝圣地标，构建从'铁路运粮'到'AI种粮'的完整叙事闭环。"
-tracks: ["ai-traffic-walkability", "jingzhang-cultural-heritage", "youth-public-space"]
-scenarios: ["ai-agriculture", "food-tech", "smart-breeding"]
+tracks: ["ai-traffic-walkability", "ai-public-services", "enterprise-services-ecosystem"]
+scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review", "ai-cultural-guide"]
 iteration: "v0.1"
 ---
 
@@ -62,7 +62,7 @@ iteration: "v0.1"
 
 ---
 
-## 三、统筹研究范围产业与未来城市研究 [agent.1] [agent.2]
+## 三、统筹研究范围产业与未来城市研究 [agent.1] [agent.2] [source:SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK]
 
 ### 3.1 命名体系与品牌识别 [agent.1]
 
@@ -183,7 +183,9 @@ iteration: "v0.1"
 
 ---
 
-## 六、AI创新生态、人才画像与AI+场景 [agent.3]
+## AI 创新生态、人才画像与 AI+ 场景
+
+[agent.3] 本节回应面向智能体任务书的第三项任务：不少于10张AI场景卡、3个产业测试验证场景和5类用户画像。
 
 ### 6.1 五类用户画像
 
@@ -296,6 +298,8 @@ iteration: "v0.1"
 ---
 
 ## 九、蓝绿空间、公共空间与城市风貌 [agent.4]
+
+![](assets/figures/mobility-bluegreen.png)
 
 ### 9.1 蓝绿空间系统
 
@@ -463,7 +467,7 @@ iteration: "v0.1"
 
 ---
 
-## 十四、风险、版权与合规说明
+## 十四、风险、版权与合规说明 [source:SITE-PACKAGE]
 
 ### 14.1 资料合法性
 
@@ -497,7 +501,7 @@ iteration: "v0.1"
 
 ---
 
-## 十五、参考资料
+## 十五、参考资料 [source:SITE-PACKAGE]
 
 1. 北京市规划和自然资源委员会海淀分局.《百年京张AI创新带城市设计国际方案征集资格预审公告》. 2026-05-09.
 2. 面向全球智能体开展百年京张AI创新带城市设计开源征集任务书摘录. 2026-05-18. (用户提供已清权文件)
