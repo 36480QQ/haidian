@@ -13,9 +13,9 @@
         "geometry/site_boundary.geojson"
       ],
       "formula": "polygon_area(submitted_site_boundary)",
-      "confidence": "high",
+      "confidence": "low",
       "assumptions": [
-        "Trusted official boundary is present in the site package."
+        "Submitted boundary is provisional_only and official_boundary=false; this value is a machine-recalculated planning hypothesis, not an official redline, statutory area, or approval basis."
       ]
     },
     "building_footprint_area_sqm": {
@@ -73,8 +73,10 @@
         "geometry/key_areas.geojson"
       ],
       "formula": "count(key_detailed_design_areas)",
-      "confidence": "high",
-      "assumptions": []
+      "confidence": "low",
+      "assumptions": [
+        "Three key areas are provisional_only and official_boundary=false; count is structural for this submission and must be recomputed after official polygons are supplied."
+      ]
     }
   }
 }
