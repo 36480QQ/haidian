@@ -22,14 +22,14 @@
     {
       "check_id": "SPATIAL_REVIEW",
       "result": "pass",
-      "severity": "major",
+      "severity": "blocking",
       "target": "submissions/wswch/jingzhang-ai-innovation-corridor",
-      "message": "Spatial topology, coverage, and declared-area checks passed"
+      "message": "Spatial review passed (provisional boundary warnings are minor)"
     },
     {
       "check_id": "VISUAL_PACKAGING",
       "result": "pass",
-      "severity": "major",
+      "severity": "blocking",
       "target": "submissions/wswch/jingzhang-ai-innovation-corridor",
       "message": "Offline visualization present, compliant, and metrics registered"
     }
@@ -40,20 +40,41 @@
   },
   "spatial_review": {
     "ok": true,
-    "status": "passed",
-    "issues": []
+    "issues": [
+      {
+        "check_id": "KEY_AREA_PROVISIONAL",
+        "severity": "minor",
+        "target_file": "geometry/key_areas.geojson",
+        "message": "Key detailed-design area is provisional; do not use as official redline.",
+        "target_feature_id": "PROV-KEY-001"
+      },
+      {
+        "check_id": "KEY_AREA_PROVISIONAL",
+        "severity": "minor",
+        "target_file": "geometry/key_areas.geojson",
+        "message": "Key detailed-design area is provisional; do not use as official redline.",
+        "target_feature_id": "PROV-KEY-002"
+      },
+      {
+        "check_id": "KEY_AREA_PROVISIONAL",
+        "severity": "minor",
+        "target_file": "geometry/key_areas.geojson",
+        "message": "Key detailed-design area is provisional; do not use as official redline.",
+        "target_feature_id": "PROV-KEY-003"
+      }
+    ]
   },
   "visual_review": {
     "ok": true,
-    "status": "passed",
     "issues": []
   },
   "professional_review": {
     "ok": true,
-    "status": "passed",
     "issues": []
   },
-  "spatial_issue_ids": [],
+  "spatial_issue_ids": [
+    "KEY_AREA_PROVISIONAL"
+  ],
   "visual_issue_ids": [],
   "professional_issue_ids": [],
   "missing_review_dependencies": [],
