@@ -6,56 +6,177 @@
       "result": "unknown",
       "severity": "major",
       "target": "geometry/site_boundary.geojson",
-      "message": "Provisional boundary is present; replace with official redline before professional scoring."
+      "message": "The official SITE_BOUNDARY polygon is not supplied in the repository. The submitted boundary remains a provisional_constraint with official_boundary=false; official redline and precision-sensitive area claims remain pending and must be recalculated when official geometry is supplied.",
+      "suggested_fix": "Keep this result unknown and replace the provisional constraint with organizer-supplied official geometry before making official redline or precise-area claims."
     },
     {
       "check_id": "KEY_AREAS_TRUST",
       "result": "unknown",
       "severity": "major",
       "target": "geometry/key_areas.geojson",
-      "message": "Three required key areas are provisional; replace with official polygons before professional scoring."
+      "message": "The three official KEY_AREA polygons are not supplied in the repository. The submitted key areas remain provisional_constraint features with official_boundary=false; they are not official redlines or precise-area evidence.",
+      "suggested_fix": "Keep this result unknown and replace the three provisional polygons with organizer-supplied official key-area geometry before precise-area scoring."
     },
     {
       "check_id": "LAND_USE_TOPOLOGY",
       "result": "pass",
       "severity": "major",
       "target": "geometry/land_use.geojson",
-      "message": "Initial land-use polygons are derived from site boundary partitioning."
+      "message": "Land-use polygons cover the submitted provisional site boundary without material gaps or overlaps."
+    },
+    {
+      "check_id": "GEOMETRY_SCHEMA",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/*.geojson",
+      "message": "All nine GeoJSON layers satisfy the repository GeoJSON feature schema and required feature properties."
+    },
+    {
+      "check_id": "GEOMETRY_VALIDITY",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/*.geojson",
+      "message": "Spatial review found valid geometries, contained design layers, non-overlapping key areas, and no blocking topology defects."
+    },
+    {
+      "check_id": "METRICS_RECOMPUTATION",
+      "result": "pass",
+      "severity": "major",
+      "target": "metrics.json; geometry/*.geojson",
+      "message": "Spatially recomputed site, green-space, public-space, and footprint metrics match metrics.json within validator tolerance; provisional-boundary precision limits remain disclosed."
+    },
+    {
+      "check_id": "JSON_SCHEMA",
+      "result": "pass",
+      "severity": "major",
+      "target": "manifest.json; metrics.json; matrices; self_check.json",
+      "message": "Schema-backed package JSON files validate against the repository schemas."
+    },
+    {
+      "check_id": "PROPOSAL_REPORT_SYNC",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal.md; report/proposal.html",
+      "message": "Professional review confirms proposal evidence references and the offline rendered report are synchronized with the package data and required figures."
+    },
+    {
+      "check_id": "PROFESSIONAL_EVIDENCE",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal.md; standard_matrix.json; design_depth_matrix.json; metrics.json",
+      "message": "Professional evidence review passes: all required standard, design-depth, data, and known-metric references are present."
+    },
+    {
+      "check_id": "PROPOSAL_FIGURES",
+      "result": "pass",
+      "severity": "major",
+      "target": "assets/figures/*.png",
+      "message": "All five required PNG figures exist, are non-empty presentation artifacts, and are included in the final manifest hash inventory."
+    },
+    {
+      "check_id": "PDF_DRAWINGS",
+      "result": "pass",
+      "severity": "major",
+      "target": "drawings/a3-booklet.pdf; drawings/a0-boards.pdf",
+      "message": "Both required drawing PDFs are non-empty, parseable drawing deliverables with embedded pages."
+    },
+    {
+      "check_id": "ZERO_PAGE_DRAWINGS",
+      "result": "pass",
+      "severity": "major",
+      "target": "drawings/*.pdf",
+      "message": "Zero-page check passes: a3-booklet.pdf contains 7 pages and a0-boards.pdf contains 3 pages."
+    },
+    {
+      "check_id": "PLACEHOLDER_DRAWINGS",
+      "result": "pass",
+      "severity": "major",
+      "target": "drawings/*.pdf",
+      "message": "Placeholder drawing check passes; the final PDFs are not the scaffold zero-page placeholders."
+    },
+    {
+      "check_id": "SCAFFOLD_DRAFT_MARKER",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal.md",
+      "message": "No SCAFFOLD-DRAFT marker remains in the submitted proposal."
+    },
+    {
+      "check_id": "OLD_NAME_MARKERS",
+      "result": "pass",
+      "severity": "info",
+      "target": "manifest.json; proposal.md",
+      "message": "Final package ID, proposal slug, and proposal metadata use the submitted Jing-Zhang Urban Weave identity; no stale old-name marker remains in final package metadata."
+    },
+    {
+      "check_id": "PACKAGE_STATE",
+      "result": "pass",
+      "severity": "major",
+      "target": "manifest.json",
+      "message": "manifest.package_state is ready_for_review and the formal package is eligible for participant-controlled review gates."
+    },
+    {
+      "check_id": "MANIFEST_FILES",
+      "result": "pass",
+      "severity": "major",
+      "target": "manifest.json",
+      "message": "The manifest lists all 30 files currently present in the submission package, including every required package file."
+    },
+    {
+      "check_id": "MANIFEST_HASHES",
+      "result": "pass",
+      "severity": "major",
+      "target": "manifest.json",
+      "message": "All non-manifest file SHA-256 values match the final package bytes; manifest.json intentionally has no self-hash to avoid self-reference."
+    },
+    {
+      "check_id": "AGENT_METADATA",
+      "result": "pass",
+      "severity": "info",
+      "target": "manifest.json",
+      "message": "Agent ID, agent name, and model declaration are present and consistent with the final package author metadata."
     },
     {
       "check_id": "VISUAL_STATIC",
       "result": "pass",
       "severity": "info",
       "target": "visual/index.html",
-      "message": "Static HTML visualization is generated without external dependencies."
+      "message": "Static offline visualization passes without external resources or runtime dependencies."
     },
     {
-      "check_id": "SCAFFOLD_DRAFT_MARKER",
-      "result": "fail",
+      "check_id": "VISUAL_METRICS_SYNC",
+      "result": "pass",
       "severity": "major",
-      "target": "proposal.md",
-      "message": "SCAFFOLD-DRAFT marker remains; replace the generated scaffold with the participant's actual proposal before formal review."
+      "target": "visual/index.html; metrics.json",
+      "message": "Displayed site area, green ratio, and public-space ratio match metrics.json."
     },
     {
-      "check_id": "PLACEHOLDER_DRAWINGS",
-      "result": "fail",
+      "check_id": "DETERMINISTIC_VALIDATION",
+      "result": "pass",
       "severity": "major",
-      "target": "drawings/a0-boards.pdf; drawings/a3-booklet.pdf",
-      "message": "Both drawing PDFs are empty placeholder files with no pages; replace them with actual A0 and A3 drawings before formal review."
+      "target": "submission package",
+      "message": "validate_local_submission.py passes with no deterministic package errors."
     },
     {
-      "check_id": "PACKAGE_STATE_SCAFFOLD",
-      "result": "fail",
+      "check_id": "SPATIAL_REVIEW",
+      "result": "pass",
       "severity": "major",
-      "target": "manifest.json",
-      "message": "manifest.package_state is scaffold; the package is not reviewable until draft content and evidence are replaced and the state is finalized."
+      "target": "submission package",
+      "message": "spatial_review.py passes; the only findings are three allowed minor KEY_AREA_PROVISIONAL notices."
     },
     {
-      "check_id": "PROFESSIONAL_EVIDENCE",
-      "result": "fail",
+      "check_id": "VISUAL_REVIEW",
+      "result": "pass",
       "severity": "major",
-      "target": "proposal.md; manifest.json; drawings/",
-      "message": "Professional evidence is not reviewable in the scaffold baseline because the draft marker, scaffold package state, and placeholder drawings remain."
+      "target": "submission package",
+      "message": "visual_review.py passes with no issues."
+    },
+    {
+      "check_id": "SELF_CHECK_SCHEMA",
+      "result": "pass",
+      "severity": "major",
+      "target": "self_check.json",
+      "message": "self_check.json conforms to the repository self-check schema and contains no failed checks."
     }
   ]
 }

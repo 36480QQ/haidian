@@ -4,15 +4,16 @@
   "project_id": "centennial-jingzhang-ai-belt",
   "site_package_version": "0.1.0",
   "package_type": "professional_design_package",
-  "package_state": "scaffold",
+  "package_state": "ready_for_review",
   "submission_stage": "formal",
   "submission_type": "ai_agent",
   "agent": {
     "agent_id": "DAmin777",
     "agent_name": "iMUYU Urban Agent",
-    "model": "agent-declared-model"
+    "model": "GPT-5 Codex",
+    "task_role": "final_packaging_and_self_check"
   },
-  "generated_at": "2026-08-07T07:51:16Z",
+  "generated_at": "2026-08-11T20:07:26Z",
   "files": [
     {
       "path": "manifest.json",
@@ -23,7 +24,7 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "29e86787e018b7231eb7412ee910154cfe08289358432e4e68da4c7aa5363775"
+      "sha256": "06b15cf8329762e371b4f93e330425ab40fb1422683ea90a50f1ac5de56096ca"
     },
     {
       "path": "agent.json",
@@ -35,49 +36,49 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "f428db35c1e39e24853d1d9175264269ee2263ea6609208b99c67edd177482bb"
+      "sha256": "350141849eea7c77215afa9f1cf24b263859a71b53dcfbfccc5c623b08731cea"
     },
     {
       "path": "assumptions.json",
       "role": "assumptions",
       "required": true,
-      "sha256": "f9b5f67c3a6d397d9465f8aa88dfe4d42929dacdc1d77255b139268c0f27cf9d"
+      "sha256": "c356afa83c857cbd6bb8ee20c2b4442b13df119ba5878dfb926f9d84638af70b"
     },
     {
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "8a2849ee5f579d19db83c7cfc511c18acd2e22606b691bcd2c260d80c57063d1"
+      "sha256": "8c6c5aa25d50429ec8c294284018eba07b17a91c4414c578cdfc0fd93a61b0fb"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "e8bf8f831e44d6feefc0ca65bac5983aea4423370430c2f8a865057ebfc38684"
+      "sha256": "417e26fd5716e87f0f0730e01c655f80553866519d9daa306d461c803fc2bd04"
     },
     {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "32e7371cb690992198418385277d70021b50f1067680da9a49e93ad9e2cdd7f0"
+      "sha256": "26a18ea753e3ecc52ea09ec352a653329e05275ef7a9aa2a5859207bebbb940d"
     },
     {
       "path": "standard_matrix.json",
       "role": "standard_matrix",
       "required": true,
-      "sha256": "7764019cf2a11c30b4021c0b34ffe134fe6668ff6b8491a3c502e94a6088a77d"
+      "sha256": "7d1deeb85db87359aa72c193f33e9d448de8126a2f365dbecad8fb141ff55600"
     },
     {
       "path": "design_depth_matrix.json",
       "role": "design_depth_matrix",
       "required": true,
-      "sha256": "66aa68787443a68131504c281cf6848e876e04f16fa26daff7977930b32d65c2"
+      "sha256": "55660e547dc04f8ab1a52bd7ae1b942704b2f6028cdf08acf072c5efcb81c49a"
     },
     {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "ab2cb0875db59a23635a35873d2bb46e6e85d5337b5868ebb84b42f9d2cd1b98"
+      "sha256": "c70af47a0ffd820e5397dda5b904798ff4f3844db60e21910336c78814bb8176"
     },
     {
       "path": "report/narrative.md",
@@ -95,110 +96,108 @@
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "7856c8e9ef203bbcac0d98630035fd1ced46f1bdd446c940d6411e183f6073ec"
+      "sha256": "fa0e93243bee53e9418a2422f2483df30f1da19dd250d9e5d82919c62ebccbf8"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "7856c8e9ef203bbcac0d98630035fd1ced46f1bdd446c940d6411e183f6073ec"
+      "sha256": "ef27e012dcc9549a22475fed38070385454232c28d5633b777c124bcec9d5be5"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
-      "sha256": "8ea3877bd5e6ffb5cc23c44b6a6876da47cd3e8b8f83fe8d02509959976b21cd"
+      "sha256": "afab00d0d54628ea188e4954b917599393229b8cad5b2e71e809959ad44d29a5"
     },
     {
       "path": "assets/figures/key-areas.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "bc633a494d4b54208eae93f3a7d44440c82c3f469806a6444590a16821f1e50a"
+      "sha256": "c5910e9fd5fd7845d71a3787e8815de1b504be735269bfad9937e5488f0ce0b2"
     },
     {
       "path": "assets/figures/land-use-structure.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "f936a2fbe802da16be3e1937006ff7e6cf5de88d74da0923dfdb5e471ada8614"
+      "sha256": "07ea6b003df02caf8ddddef08673c4e1a47c37a2ca66dc6ccc66c3066d9eb208"
     },
     {
       "path": "assets/figures/metrics-evidence.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "135df0864ec556e6e65bd6198b656c179693d8cb866fda20df4d67a97310a184"
+      "sha256": "623326fe71f1ccf20992f9f2167effa92e8d15169429251ecfdc6d4b6cfb3b44"
     },
     {
       "path": "assets/figures/mobility-bluegreen.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "152eea29e05fec7a8e4515b9a08f851ef8759a783131d6f192e18690b4b44933"
+      "sha256": "d796c29e954bc26ecc1c75d24c39a93f17a4af9263be280fa5b0f51852bcc022"
     },
     {
       "path": "assets/figures/site-overview.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "da2caecd7954eb60363f8a9b7b12455ba1233f79c579f6bd45d04732b2c90f96"
+      "sha256": "4cb58d6063228db4ebd6027097b741bb1234f2659d380b6b7793fb68c62dea4d"
     },
     {
       "path": "geometry/buildings.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "4efba410b2e563d3422f1db8f2721cbc1aa69936ffc9c6c72210202fc42393cd"
+      "sha256": "902e24aa373e48144d7cf05dd4e0ea6e4446204a724531d781ff4be22f5d1393"
     },
     {
       "path": "geometry/constraints.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "e822816c881e9b63cb3ae325edd48e2da9db05888fc2fa5ba7f3a13160134a41"
+      "sha256": "0921ad02c4aba47bf37eddb281e64c8851cc5334d39d2163ee8f72872b195aeb"
     },
     {
       "path": "geometry/green_space.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "b4595487889023e417dc37a49861cc6627a8f82ff6c71df66a6aaa2916e61d25"
+      "sha256": "e304cbe96158138873115e7d23e7259d964b6086330dd3ecb298c16af202bd87"
     },
     {
       "path": "geometry/key_areas.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "97bdf7f3422e6eadf114650821d9db32d12803b141ebfe522393a3317a299715"
+      "sha256": "120320c1eba6180832d5c33d864f80dca8b7939acbce1f013957b21ff4a7510c"
     },
     {
       "path": "geometry/land_use.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "03766caee449c04fef27061a5b9f5be42c880c2e60bc606d7022f1b1585b0d2d"
+      "sha256": "ede10257788bd14f35ca1720625e45fb316d94315b7c6c942d1c6b6fb2fa941b"
     },
     {
       "path": "geometry/phasing.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "2bfcf703bb6eaf9dcccc3ac0c32274246f4ebe8ef6628e2bb35aab4db63b0640"
+      "sha256": "d316501da49e8bcd6c8a678f1459b8c743acdf5c3b90f1c2910bdc1c280297d9"
     },
     {
       "path": "geometry/public_space.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "010dea4510a13df8623c89801fff9204c10478275d31fb881b6c6d4ebe82bdd2"
+      "sha256": "1ba6dfcd790173022fd60cb433c8a6b0415e744950970d5abf5183f9cfd11b0d"
     },
     {
       "path": "geometry/roads.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "ed53d425d44a511af645e7aca041c1e6b21c072776a54cc98eda3a39c4385834"
+      "sha256": "90b64574511817df35eb8a2d3886f74e1eb4835c413d5bdcc030e832ad40f524"
     },
     {
       "path": "geometry/site_boundary.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "e94a92acb64c0677dfcefcf0f9774710dbe2fdcc766ceb36e5092a4ae0306f0a"
+      "sha256": "b710bb1f4d97b865bcfe51ba3bfde25bad097b376e2464457fe86feef3131dc0"
     }
   ],
   "validation_claim": {
-    "self_checked": false,
-    "known_blockers": [
-      "Generated scaffold is not a submission. Replace the draft marker, design content, figures, geometry, and placeholder drawings before setting package_state=ready_for_review."
-    ],
-    "data_confidence": "high"
+    "self_checked": true,
+    "known_blockers": [],
+    "data_confidence": "medium"
   }
 }
