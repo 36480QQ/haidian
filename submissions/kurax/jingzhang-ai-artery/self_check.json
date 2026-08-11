@@ -1,83 +1,204 @@
 {
- "schema_version": "0.1.0",
- "checks": [
-  {
-   "check_id": "BOUNDARY_TRUST",
-   "result": "pass",
-   "severity": "major",
-   "target": "geometry/site_boundary.geojson",
-   "detail_zh": "站点边界沿用登记的 PROV-SITE-001，geometry_role=provisional_constraint、official_boundary=false、boundary_precision=provisional_rough 三项属性完整保留；限制在 proposal.md 首章、assumptions.json（A-BOUNDARY-001）、sources.json 与 visual/index.html 一致声明。"
+  "ok": true,
+  "submission_dir": "submissions\\kurax\\jingzhang-ai-artery",
+  "pr_author": "kurax",
+  "stage": "formal",
+  "deterministic_validation": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "errors": [],
+      "warnings": [
+        "submissions/kurax/jingzhang-ai-artery/proposal.md: 可能涉及非公开或敏感资料; maintainer review required",
+        "submissions/kurax/jingzhang-ai-artery/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied"
+      ],
+      "proposal_files": [
+        "submissions/kurax/jingzhang-ai-artery/proposal.md"
+      ],
+      "changelog_files": [],
+      "changed_files": [
+        "submissions/kurax/jingzhang-ai-artery/agent.json",
+        "submissions/kurax/jingzhang-ai-artery/assets/figures/key-areas.en.png",
+        "submissions/kurax/jingzhang-ai-artery/assets/figures/key-areas.png",
+        "submissions/kurax/jingzhang-ai-artery/assets/figures/land-use-structure.en.png",
+        "submissions/kurax/jingzhang-ai-artery/assets/figures/land-use-structure.png",
+        "submissions/kurax/jingzhang-ai-artery/assets/figures/metrics-evidence.en.png",
+        "submissions/kurax/jingzhang-ai-artery/assets/figures/metrics-evidence.png",
+        "submissions/kurax/jingzhang-ai-artery/assets/figures/mobility-bluegreen.en.png",
+        "submissions/kurax/jingzhang-ai-artery/assets/figures/mobility-bluegreen.png",
+        "submissions/kurax/jingzhang-ai-artery/assets/figures/site-overview.en.png",
+        "submissions/kurax/jingzhang-ai-artery/assets/figures/site-overview.png",
+        "submissions/kurax/jingzhang-ai-artery/assumptions.json",
+        "submissions/kurax/jingzhang-ai-artery/compliance_matrix.json",
+        "submissions/kurax/jingzhang-ai-artery/design_depth_matrix.json",
+        "submissions/kurax/jingzhang-ai-artery/drawings/a0-boards.en.pdf",
+        "submissions/kurax/jingzhang-ai-artery/drawings/a0-boards.pdf",
+        "submissions/kurax/jingzhang-ai-artery/drawings/a3-booklet.en.pdf",
+        "submissions/kurax/jingzhang-ai-artery/drawings/a3-booklet.pdf",
+        "submissions/kurax/jingzhang-ai-artery/geometry/buildings.geojson",
+        "submissions/kurax/jingzhang-ai-artery/geometry/constraints.geojson",
+        "submissions/kurax/jingzhang-ai-artery/geometry/green_space.geojson",
+        "submissions/kurax/jingzhang-ai-artery/geometry/key_areas.geojson",
+        "submissions/kurax/jingzhang-ai-artery/geometry/land_use.geojson",
+        "submissions/kurax/jingzhang-ai-artery/geometry/phasing.geojson",
+        "submissions/kurax/jingzhang-ai-artery/geometry/public_space.geojson",
+        "submissions/kurax/jingzhang-ai-artery/geometry/roads.geojson",
+        "submissions/kurax/jingzhang-ai-artery/geometry/site_boundary.geojson",
+        "submissions/kurax/jingzhang-ai-artery/manifest.json",
+        "submissions/kurax/jingzhang-ai-artery/metrics.json",
+        "submissions/kurax/jingzhang-ai-artery/proposal.en.md",
+        "submissions/kurax/jingzhang-ai-artery/proposal.md",
+        "submissions/kurax/jingzhang-ai-artery/report/copyright_statement.md",
+        "submissions/kurax/jingzhang-ai-artery/report/narrative.md",
+        "submissions/kurax/jingzhang-ai-artery/report/proposal.en.html",
+        "submissions/kurax/jingzhang-ai-artery/report/proposal.html",
+        "submissions/kurax/jingzhang-ai-artery/self_check.json",
+        "submissions/kurax/jingzhang-ai-artery/sources.json",
+        "submissions/kurax/jingzhang-ai-artery/standard_matrix.json",
+        "submissions/kurax/jingzhang-ai-artery/visual/index.en.html",
+        "submissions/kurax/jingzhang-ai-artery/visual/index.html"
+      ],
+      "ai_package_stages": {
+        "submissions/kurax/jingzhang-ai-artery": "formal"
+      },
+      "total_bytes": 11517759,
+      "maintainer_bypass": false
+    },
+    "stderr": ""
   },
-  {
-   "check_id": "KEY_AREAS_TRUST",
-   "result": "pass",
-   "severity": "major",
-   "target": "geometry/key_areas.geojson",
-   "detail_zh": "三处重点区沿用 PROV-KEY-001/002/003 并保留 provisional 标注；复算合计 369.2 公顷与公告 368.4 公顷偏差 0.2%，已在正文与指标说明中披露。"
+  "spatial_review": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "stage": "formal",
+      "issues": [
+        {
+          "check_id": "KEY_AREA_PROVISIONAL",
+          "severity": "minor",
+          "target_file": "geometry/key_areas.geojson",
+          "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
+          "target_feature_id": "PROV-KEY-001",
+          "expected": null,
+          "actual": null
+        },
+        {
+          "check_id": "KEY_AREA_PROVISIONAL",
+          "severity": "minor",
+          "target_file": "geometry/key_areas.geojson",
+          "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
+          "target_feature_id": "PROV-KEY-002",
+          "expected": null,
+          "actual": null
+        },
+        {
+          "check_id": "KEY_AREA_PROVISIONAL",
+          "severity": "minor",
+          "target_file": "geometry/key_areas.geojson",
+          "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
+          "target_feature_id": "PROV-KEY-003",
+          "expected": null,
+          "actual": null
+        }
+      ],
+      "metrics": {
+        "site_area_sqm": 11412825.386,
+        "green_space_area_sqm": 2837991.379,
+        "public_space_area_sqm": 1580005.709,
+        "building_footprint_area_sqm": 1061378.564,
+        "green_ratio": 0.248667,
+        "public_space_ratio": 0.138441
+      }
+    },
+    "stderr": ""
   },
-  {
-   "check_id": "LAND_USE_TOPOLOGY",
-   "result": "pass",
-   "severity": "major",
-   "target": "geometry/land_use.geojson",
-   "detail_zh": "36 个用地要素覆盖站点全边界，相邻地块共享边界坐标；覆盖缺口 45.3 平方米（0.0004%，坐标舍入量级），重叠对数 0，无未标注空白。"
+  "visual_review": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "issues": [],
+      "metrics_seen": {
+        "site_area_sqm": 11412825.386,
+        "green_ratio": 0.248667,
+        "public_space_ratio": 0.138441,
+        "building_coverage_ratio": 0.092999,
+        "key_detailed_design_area_sqm": 3692893.01,
+        "road_network_length_m": 36051.23,
+        "ai_scenario_card_count": 12.0,
+        "persona_count": 5.0,
+        "pilgrimage_landmark_count": 3.0,
+        "ecosystem_case_count": 8.0,
+        "land_use_coverage_gap_sqm": 45.3
+      }
+    },
+    "stderr": ""
   },
-  {
-   "check_id": "VISUAL_STATIC",
-   "result": "pass",
-   "severity": "info",
-   "target": "visual/index.html",
-   "detail_zh": "电子展示页为离线静态 HTML，无 CDN、远程瓦片、外部脚本、外部字体、iframe、表单提交、API 调用与追踪代码；指标以 data-metric/data-value 标记与 metrics.json 对应。"
+  "professional_review": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "issues": [],
+      "summary": {
+        "standard_matrix_items": 9,
+        "design_depth_items": 15,
+        "known_metric_refs_required": 27,
+        "proposal_format_version": "2",
+        "evidence_contract": "section-anchors-plus-structured-audit",
+        "proposal_reference_counts": {
+          "source": 4,
+          "standard": 8,
+          "depth": 15,
+          "data": 33,
+          "metric": 5
+        }
+      }
+    },
+    "stderr": ""
   },
-  {
-   "check_id": "PROFESSIONAL_EVIDENCE",
-   "result": "pass",
-   "severity": "major",
-   "target": "proposal.md",
-   "detail_zh": "13 个实质章节均含直接相关证据引用（共 149 条），无连续超 3 条、无单段超 8 条；五张必需图片以本地 Markdown 引用嵌入；六项智能体任务在正文实际展开而非仅矩阵打勾。"
-  },
-  {
-   "check_id": "BILINGUAL_PAIRING",
-   "result": "pass",
-   "severity": "major",
-   "target": "proposal.en.md",
-   "detail_zh": "中文主稿声明 translation_file=proposal.en.md，英文稿声明 translation_of=proposal.md；两稿章节各 14 节一一对应、五张图片顺序一致、引用标记 149 条零差异；bilingual_contract_version=1 与 proposal_format_version=2 两稿齐备。"
-  },
-  {
-   "check_id": "METRICS_RECOMPUTED",
-   "result": "pass",
-   "severity": "major",
-   "target": "metrics.json",
-   "detail_zh": "全部已知指标由 geometry/*.geojson 在 EPSG:4548 下复算，逐项记录 status、value、unit、source_files、formula、confidence 与 assumptions；容积率、总建筑规模、建筑高度三项因缺控规条件标记为 unknown 并写入重算触发条件。"
-  },
-  {
-   "check_id": "OFFICIAL_CLAIM_BOUNDARY",
-   "result": "pass",
-   "severity": "major",
-   "target": "proposal.md",
-   "detail_zh": "不含官方批准、法定规划、审定指标或实施承诺表述；不给容积率、建筑高度、地块拆改留、道路线形、轨道线位、桥隧工程、市政管线、地下空间可行性、土地权属、投资测算与审批结论；空间建议统一表述为概念建议与参考方案。"
-  },
-  {
-   "check_id": "SOURCE_TIER_DISCIPLINE",
-   "result": "pass",
-   "severity": "major",
-   "target": "sources.json",
-   "detail_zh": "11 条来源逐条记录 usable_for_formal 与本次使用说明；provisional_only 的临时边界与 background_only 的适老化方案均按其等级使用，未升级为官方边界、法定管控或实施承诺。"
-  },
-  {
-   "check_id": "PRIVACY_HUMAN_REVIEW",
-   "result": "pass",
-   "severity": "major",
-   "target": "proposal.md",
-   "detail_zh": "12 张场景卡逐张写明运行数据、隐私边界、人工复核与风险；四条统一硬边界确立不采集身份与生物特征、按场景隔离数据、人工复核结论优先、保留非智能替代路径；无隐私侵害或无法人工复核的场景。"
-  },
-  {
-   "check_id": "PACKAGE_SUMMARY",
-   "result": "pass",
-   "severity": "info",
-   "target": "manifest.json",
-   "message": "Ten self-checks passed. Known limitation: the overall design area and the three key areas use a provisional_constraint boundary, so areas and ratios are provisional recalculations; floor area ratio, total floor area and building height are marked pending official data for want of official regulatory conditions. Organizer data gaps do not block content scoring.",
-   "detail_zh": "10 项自检全部通过。已知限制：总体设计范围与三处重点区使用 provisional_constraint 临时边界，面积与比例为临时复算值；容积率、总建筑规模与建筑高度因缺官方控规条件标记为待正式数据补齐。按公告与任务书约定，组织方数据缺口不阻断内容评分。"
-  }
- ]
+  "spatial_issue_ids": [
+    "KEY_AREA_PROVISIONAL",
+    "KEY_AREA_PROVISIONAL",
+    "KEY_AREA_PROVISIONAL"
+  ],
+  "visual_issue_ids": [],
+  "professional_issue_ids": [],
+  "missing_review_dependencies": [],
+  "can_enter_formal_review": true,
+  "package_type": "professional_design_package",
+  "review_status": "formal-review-ready",
+  "next_actions": [],
+  "schema_version": "0.1.0",
+  "checks": [
+    {
+      "check_id": "DETERMINISTIC_VALIDATION",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "validate_local_submission.py",
+      "message": "deterministic_validation: PASS"
+    },
+    {
+      "check_id": "SPATIAL_REVIEW",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "spatial_review.py",
+      "message": "spatial_review: PASS"
+    },
+    {
+      "check_id": "VISUAL_PACKAGING",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "visual_review.py",
+      "message": "visual_review: PASS"
+    },
+    {
+      "check_id": "PROFESSIONAL_EVIDENCE",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "professional_review.py",
+      "message": "professional_review: PASS"
+    }
+  ]
 }
