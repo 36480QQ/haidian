@@ -1,5 +1,15 @@
 # 方案迭代记录
 
+## R006.1 review repair — 2026-08-12
+
+- Reclassified the current package as `CONCEPT_RESEARCH_CANDIDATE`; retired all stale readiness, submission-state and legacy-revision labels.
+- Rebuilt all five Chinese thematic figures and all five English thematic figures as language-specific, topic-specific outputs.
+- Rebuilt Chinese/English HTML, A0 boards and A3 booklets so paired artifacts are no longer byte-identical.
+- Added six bilingual agent-deliverable workstreams: brand/masterplan; cases/ecosystem; scenarios/personas; public space/landmarks/components; cultural wayfinding; annual programme/developer conversion.
+- Added a 100-day task/role/dependency/ROM-cost/acceptance/stop-condition plan without representing it as an approved budget.
+- Added itemized rights and assurance registers. X1-X6 remain visibly `BLOCKED`; no field, user, authority, cost/exit or independent-review evidence was fabricated.
+- Rebuilt compliance, design-depth and standard matrices from a compact clean schema.
+
 ## v1.1.0 - 2026-08-11
 
 ### Gated design-volume submission upgrade

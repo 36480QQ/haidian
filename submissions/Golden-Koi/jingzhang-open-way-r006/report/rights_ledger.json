@@ -1,0 +1,144 @@
+{
+  "schema_version": "1.0.0",
+  "package_id": "jingzhang-open-way-r006",
+  "revision": "R006.1-review-fix",
+  "package_license": "COMMUNITY-DISPLAY-ONLY",
+  "public_reuse_granted": false,
+  "entries": [
+    {
+      "id": "RIGHT-IDENTITY-001",
+      "material": "Participant identity and submission authorship",
+      "creator_or_owner": "林漢杰 / GitHub Golden-Koi",
+      "source": "agent.json and Git commit history",
+      "license_or_basis": "Participant-authorised personal submission",
+      "attribution": "林漢杰 (GitHub: Golden-Koi)",
+      "transformation": "Packaged and revised with AI-assisted drafting and deterministic scripts",
+      "boundary": "Does not imply professional registration, official endorsement or legal personality for the AI tools"
+    },
+    {
+      "id": "RIGHT-AI-001",
+      "material": "AI-assisted text, diagrams and package assembly",
+      "creator_or_owner": "Participant-controlled output using OpenAI Codex with Morrow orchestration",
+      "source": "Local revision workflow and Git history",
+      "license_or_basis": "Participant submission use; no claim that tools are authors or independent reviewers",
+      "attribution": "AI-assisted; final participant responsibility remains with Golden-Koi",
+      "transformation": "Human-directed drafting, review repair, layout and deterministic export",
+      "boundary": "No external evidence, professional opinion or rights clearance is inferred from generation"
+    },
+    {
+      "id": "RIGHT-FONT-001",
+      "material": "Noto Sans CJK SC font used in locally generated raster/PDF outputs",
+      "creator_or_owner": "Google / Adobe contributors",
+      "source": "Locally installed NotoSansCJKsc-Regular.otf",
+      "license_or_basis": "SIL Open Font License 1.1",
+      "attribution": "Noto Sans CJK SC",
+      "transformation": "Embedded/subset or rasterised glyphs in package outputs",
+      "boundary": "Font licence remains applicable; no ownership is claimed"
+    },
+    {
+      "id": "RIGHT-FONT-002",
+      "material": "Helvetica-compatible Latin PDF text",
+      "creator_or_owner": "PDF viewer/base-font implementation",
+      "source": "ReportLab standard Type 1 font reference",
+      "license_or_basis": "Standard PDF base-font reference; not embedded as a third-party font file",
+      "attribution": "Helvetica",
+      "transformation": "Text layout only",
+      "boundary": "Used only where CJK embedding is not required"
+    },
+    {
+      "id": "RIGHT-FIGURE-001",
+      "material": "Five Chinese and five English thematic figures",
+      "creator_or_owner": "林漢杰 / Golden-Koi submission",
+      "source": "Provisional geometry, package claims register and deterministic local renderer",
+      "license_or_basis": "COMMUNITY-DISPLAY-ONLY",
+      "attribution": "JingZhang Open Way R006.1; concept diagram",
+      "transformation": "New diagrams rendered from package data; no stock imagery, icons or external basemap tiles",
+      "boundary": "Concept research only; not official mapping, survey or engineering output"
+    },
+    {
+      "id": "RIGHT-ICON-001",
+      "material": "Diagram symbols and simple geometric icons",
+      "creator_or_owner": "Generated in-package from primitive shapes",
+      "source": "Deterministic renderer",
+      "license_or_basis": "COMMUNITY-DISPLAY-ONLY",
+      "attribution": "JingZhang Open Way R006.1",
+      "transformation": "Circles, lines, rectangles and text only",
+      "boundary": "No third-party icon library is used"
+    },
+    {
+      "id": "RIGHT-MAP-001",
+      "material": "Provisional site and key-area geometry",
+      "creator_or_owner": "Haidian repository evidence-package maintainers / participant revisions",
+      "source": "geometry/*.geojson and SAFE-PROVISIONAL-GEOMETRY-20260605",
+      "license_or_basis": "Repository-maintained provisional geometry for intake testing and visualisation",
+      "attribution": "Provisional, non-official geometry",
+      "transformation": "Normalised, styled and labelled for concept diagrams",
+      "boundary": "No cadastral, statutory, survey, construction or property-right use"
+    },
+    {
+      "id": "RIGHT-OSM-001",
+      "material": "OpenStreetMap-derived contextual records retained in sources.json",
+      "creator_or_owner": "OpenStreetMap contributors",
+      "source": "OSM API snapshots and OSM-derived Valhalla route listed in sources.json",
+      "license_or_basis": "ODbL 1.0; source-specific service terms also apply",
+      "attribution": "© OpenStreetMap contributors",
+      "transformation": "Desk-study context and routing record; not used as raster tiles in rebuilt figures",
+      "boundary": "No accuracy, availability, official status or field validation is claimed"
+    },
+    {
+      "id": "RIGHT-OFFICIAL-001",
+      "material": "Official announcement and task excerpts",
+      "creator_or_owner": "北京市规划和自然资源委员会海淀分局 and respective publishers",
+      "source": "URLs and snapshots registered in sources.json",
+      "license_or_basis": "Limited quotation/reference for review; no broader reuse licence inferred",
+      "attribution": "Publisher, title, date and source URL in sources.json",
+      "transformation": "Summarised and cross-referenced; not republished as a substitute for the source",
+      "boundary": "Copyright remains with the publisher; verify before public distribution"
+    },
+    {
+      "id": "RIGHT-STANDARD-001",
+      "material": "Planning and design standard references",
+      "creator_or_owner": "Respective ministries and standard publishers",
+      "source": "Standard-reference entries in sources.json",
+      "license_or_basis": "Citation and limited review reference only",
+      "attribution": "Title and publisher/source record in sources.json",
+      "transformation": "Requirements indexed; full standard text is not redistributed",
+      "boundary": "Reference does not prove compliance or professional approval"
+    },
+    {
+      "id": "RIGHT-CODE-001",
+      "material": "Local deterministic rendering and validation glue",
+      "creator_or_owner": "Golden-Koi submission workflow",
+      "source": "Review-repair artifact and Git commit",
+      "license_or_basis": "Used to build this submission; repository licence governs any committed code",
+      "attribution": "Golden-Koi / Morrow review-repair workflow",
+      "transformation": "Generates images, HTML, PDFs, hashes and QA receipts",
+      "boundary": "Execution does not certify professional, accessibility or external evidence"
+    },
+    {
+      "id": "RIGHT-PHOTO-001",
+      "material": "Photography and identifiable people",
+      "creator_or_owner": "Not included",
+      "source": "N/A",
+      "license_or_basis": "N/A",
+      "attribution": "N/A",
+      "transformation": "No stock or field photographs used",
+      "boundary": "Future field media requires consent, privacy, retention and reuse records"
+    },
+    {
+      "id": "RIGHT-CASE-001",
+      "material": "Five named international case references",
+      "creator_or_owner": "Forum Virium Helsinki, JTC / Government of Singapore, and Waterfront Toronto",
+      "source": "Five CASE-REFERENCE entries in sources.json",
+      "license_or_basis": "Links and limited factual summaries for comparative review; no image, document or dataset redistribution",
+      "attribution": "Case name, publisher and direct official-source URL in the bilingual deliverables register",
+      "transformation": "Short mechanism-and-transfer-boundary summaries",
+      "boundary": "Cases are not proof of JingZhang feasibility, user demand, legal authority or transferable performance"
+    }
+  ],
+  "unresolved": [
+    "Independent legal review of COMMUNITY-DISPLAY-ONLY and all source-specific rights has not been performed.",
+    "Any future public exhibition, reuse or commercial use requires a fresh rights and privacy review.",
+    "Official-source quotation scope must be rechecked against the final public distribution context."
+  ]
+}
