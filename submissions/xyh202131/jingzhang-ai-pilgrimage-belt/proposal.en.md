@@ -345,6 +345,22 @@ All AI-generated text, images, audio, video, or virtual scenes carry both public
 
 This section places phases, pilots, participating parties, and measurable indicators within one implementation framework. Each project first states prerequisites and then a proposed responsibility combination and acceptance indicators. At every phase, monitoring, resident feedback, and professional assessment must determine whether to continue, correct, or exit.
 
+### Maintenance urbanism: from everyday issue to ordinary baseline
+
+This round adds no scene, project, or spatial object. It places the existing 12 `SCENE-001`—`012` records and eight `JZ-01`—`08` records into five **maintenance task families**: accessibility repair (`accessibility_repair`), climate-comfort upkeep (`climate_comfort_upkeep`), public-service continuity (`public_service_continuity`), heritage-authenticity correction (`heritage_authenticity_correction`), and small-business service support (`small_business_service_support`). These are user-goal maintenance classifications, not new scenes, project numbers, or committed services [data:visual/assets/key-area-evidence-matrix.json#maintenance_urbanism_contract].
+
+| Maintenance task family | Existing scenes → existing projects | Maintenance focus |
+|---|---|---|
+| Accessibility repair | `SCENE-008` → `JZ-01`/`JZ-02`; `SCENE-009` → `JZ-01`/`JZ-05`; `SCENE-010` → `JZ-01`/`JZ-02` | Everyday issues, accessibility co-testing, break-point repair, and the non-AI route |
+| Climate-comfort upkeep | `SCENE-001` → `JZ-03`; `SCENE-003` → `JZ-03`/`JZ-07`; `SCENE-007` → `JZ-04` | Upkeep of comfort, energy, and environmental conditions; sensors or equipment are not presented as outcomes |
+| Public-service continuity | `SCENE-004` → `JZ-07`/`JZ-08`; `SCENE-006` → `JZ-04`; `SCENE-012` → `JZ-05` | Published failures, staffed handoff, service restoration, and independent recheck |
+| Heritage-authenticity correction | `SCENE-002` → `JZ-02`/`JZ-03` | Curatorial recheck of sources, narratives, and correction records |
+| Small-business service support | `SCENE-005` → `JZ-04`/`JZ-06`; `SCENE-011` → `JZ-05` | Problem clinic, staffed service, and understandable support for small operators |
+
+The loop starts when an issue enters, but it must not be presented as a collected real complaint: every record is only a `pending` issue shell, followed by a work-order shell, responsibility acceptance, planned/actual human hours, existing-facility inspection, clean/adjust, repair, repairable-component replacement, independent recheck, and a continue/correct/stop decision. Procurement may be considered only after inspection, cleaning or adjustment, repair, and component replacement prove insufficient. Lifecycle cost, repairability, component availability, retirement, and return-to-ordinary-baseline fields remain explicit, while no budget, procurement, personnel, hours, repair, or effect is invented [metric:maintenance_real_complaint_count] [metric:maintenance_actual_human_hours].
+
+The human journey makes maintenance workers, cleaners, staffed service workers, curators, and accessibility co-testers visible. They may receive, decline, or transfer an issue; no real work order exists before responsibility is accepted. A failed independent recheck, repeated failure, missing safe staffed route, or inability to restore daily use triggers stop, removes the temporary layer, and returns to the ordinary baseline. The quarterly maintenance map is a blank template for reviewing task family, existing scene/project, failure type, and retirement decision; it cannot display real complaints, budgets, or performance. `maintenance_urbanism_contract` stores these fields, the 12-scene-to-existing-project mapping, and zero/unknown reality counters in auditable form [data:visual/assets/key-area-evidence-matrix.json#maintenance_urbanism_contract] [assumption:A-MAINTENANCE-URBANISM-012].
+
 Eight projects form a renewal package that maps space, protocols, and operations one to one [depth:renewal_project_list]:
 
 | Project | Main content and Feature | Prerequisites | Proposed responsibility combination | Conceptual acceptance |

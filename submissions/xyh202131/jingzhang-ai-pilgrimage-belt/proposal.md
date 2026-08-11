@@ -345,6 +345,22 @@ JZ-AIOS 规定任何场景依次经过 G0 概念/离线、G1 影子比对、G2 �
 
 本节把阶段、试点、参与主体和可衡量指标放在同一实施框架中：每个项目先写前置条件，再写责任组合和验收指标；任何阶段都必须根据监测、居民反馈和专业评估决定继续、修正或退出。
 
+### 维护型城市：从日常问题到普通基线 / Maintenance urbanism: from everyday issue to ordinary baseline
+
+本轮不新增场景、项目或空间对象，而把既有 12 个 `SCENE-001`—`012` 与八个 `JZ-01`—`08` 放入五类**维护任务族**：无障碍修复（`accessibility_repair`）、气候舒适维护（`climate_comfort_upkeep`）、公共服务连续性（`public_service_continuity`）、遗产真实性纠错（`heritage_authenticity_correction`）与小微企业服务支持（`small_business_service_support`）。这些是面向用户目标的维护分类，不是新场景、项目编号或已承诺服务 [data:visual/assets/key-area-evidence-matrix.json#maintenance_urbanism_contract]。
+
+| 维护任务族 | 既有场景 → 既有项目 | 维护焦点 |
+|---|---|---|
+| 无障碍修复 | `SCENE-008` → `JZ-01`/`JZ-02`；`SCENE-009` → `JZ-01`/`JZ-05`；`SCENE-010` → `JZ-01`/`JZ-02` | 日常问题、无障碍共同测试、断点修复与非 AI 路径 |
+| 气候舒适维护 | `SCENE-001` → `JZ-03`；`SCENE-003` → `JZ-03`/`JZ-07`；`SCENE-007` → `JZ-04` | 舒适、能耗与环境条件的维护，不把传感或设备当效果 |
+| 公共服务连续性 | `SCENE-004` → `JZ-07`/`JZ-08`；`SCENE-006` → `JZ-04`；`SCENE-012` → `JZ-05` | 失败公开、人工交接、服务恢复与独立复核 |
+| 遗产真实性纠错 | `SCENE-002` → `JZ-02`/`JZ-03` | 来源、叙事和更正记录的策展复核 |
+| 小微企业服务支持 | `SCENE-005` → `JZ-04`/`JZ-06`；`SCENE-011` → `JZ-05` | 问题门诊、人工服务和小微经营者可理解的支持 |
+
+闭环从“问题进入”开始，但不得把它写成已收集的现实投诉：每一条仅是 `pending` 的问题记录壳，随后依次为工单壳、责任接受、计划/实际人工工时、既有设施检查、清洁/调整、修复、可维修组件替换、独立复核，以及继续/纠正/停止。采购只能在既有设施已检查、清洁或调整、修复和组件替换均不足后才被讨论；全寿命成本、可维修性、部件可得性、退役和恢复普通基线字段必须保留，但预算、采购、人员、工时、修复与效果均不被虚构 [metric:maintenance_real_complaint_count] [metric:maintenance_actual_human_hours]。
+
+维护旅程必须让维修人员、保洁人员、有人值守服务人员、策展人员和无障碍共同测试者可见：他们可接收、拒绝或转交问题；责任未接受时不生成现实工单；独立复核失败、重复失败、无安全人工路径或无法恢复日常时进入停止，撤除临时层并回到普通基线。季度维护地图只是一张待填模板，用来按任务族、既有场景/项目、失败类型和退役决定复盘，不能显示现实投诉、预算或绩效。`maintenance_urbanism_contract` 以机器可审计形式保存上述字段、12 场景→既有项目映射与现实零/未知计数 [data:visual/assets/key-area-evidence-matrix.json#maintenance_urbanism_contract] [assumption:A-MAINTENANCE-URBANISM-012]。
+
 八个项目形成空间、协议和运营一一对应的更新包 [depth:renewal_project_list]：
 
 | 项目 | 主要内容与 Feature | 前置条件 | 建议责任组合 | 概念验收 |

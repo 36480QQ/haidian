@@ -4,6 +4,17 @@
 >
 > This log records traceable changes to this submission package only. It is not evidence of approval, implementation, field testing, rights clearance, or trusted CI. After any content change, regenerate the manifest from the final Git blobs and rely on repository validation attached to the final PR head.
 
+## v3.0 - 2026-08-11
+
+**Maintenance-urbanism human layer and machine contract / 维护型城市人读层与机器合同**
+
+- 新增五类按用户目标命名的维护任务族、12 个既有场景至既有 `JZ-01`—`08` 项目的双语交叉表，以及“问题壳—工单壳—责任接受—人工工时—既有设施优先—独立复核—继续/纠正/停止—退役—回到普通基线”闭环；任务族不是新场景或项目。
+- Added five user-goal maintenance task families, a bilingual crosswalk from the 12 existing scenes to existing `JZ-01`—`08` projects, and an issue-shell–work-order-shell–responsibility-acceptance–human-hours–existing-facility-first–independent-recheck–continue/correct/stop–retirement–ordinary-baseline loop. Task families are not new scenes or projects.
+- `maintenance_urbanism_contract` 记录双语标签、全量场景交叉映射、全寿命与可维修字段、季度维护地图模板、重复失败/退役规则、证据回链和零/未知现实计数；未改 geometry、SCENE/JZ/T 主编号或成熟度。
+- `maintenance_urbanism_contract` records bilingual labels, the full scene crosswalk, lifecycle and repairability fields, a quarterly maintenance-map template, repeated-failure/retirement rules, evidence backlinks, and zero/unknown reality counters. Geometry, primary SCENE/JZ/T IDs, and maturity are unchanged.
+- 现实投诉、工单、预算、确认人员、工时、修复、独立复核和效果未被声明为已发生：计数保持 0 或 unknown/pending；全部场景仍为 G0，权利仍为 `not_fully_cleared`。manifest、PDF、权利台账、自检和最终哈希留给 Task 3 从最终字节更新。
+- No real complaint, work order, budget, confirmed personnel, hours, repair, independent recheck, or effect is claimed: counts remain 0 or unknown/pending; all scenes remain G0 and rights remain `not_fully_cleared`. Manifest, PDFs, rights ledger, self-check, and final hashes remain for Task 3 to refresh from final bytes.
+
 ## v2.14 - 2026-08-11
 
 **Three differentiated switchyard prototypes / 三座差异化换轨场原型**
