@@ -6,7 +6,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: “以京张铁路遗址为南北文化脊柱、东西城市缝合线，构建自主创新·智缝带的 AI 城市设计方案。众智园承载国产全栈算力与模型底座，AI 原点社区聚拢开发者生态，大钟寺转化为智能原生商业，两翼支撑资本与场景，形成基础研究到产业资本的闭环。所有空间落地均为概念建议，待官方边界与控规发布后复算。”
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v0.1"
+iteration: "v0.2"
 ---
 
 # 京张·智缝带 JingZhang AI Stitch Belt
