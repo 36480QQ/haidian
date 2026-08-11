@@ -1,5 +1,29 @@
 # 方案迭代记录
 
+## v0.9 - 2026-08-11
+
+### 改动摘要
+
+- **回应对 PR #1611（v0.8，78/100）的评审反馈**：78 分的高权重维度已达到、但距离 90+ 还差一档。按评审 7 维权重（brief_alignment 20 / implementation_feasibility 20 / ai_planning_innovation 15 / originality 10 / public_interest_inclusion 10 / risk_compliance 10 / expression_completeness 15），v0.9 的策略是**一个强机制 + 全可见成果闭环**：不做散点铺陈，而是把 USR 的第三层——**用地信号兼容分区**——做成一个可命名、可辩护、可落地、可视觉化的完整机制，并同步补强任务书对照、公共利益台账与实施跃迁。
+- **信号兼容分区（Signal Compatibility Zoning，ai_planning_innovation / originality）**：USR 从两层（场景信号状态·运营层 / 节点信号装置·设施层）补上第三层——**用地信号兼容分区·控制层**。🟢绿态兼容区 3（智能体常态可达）/ 🟡黄态兼容区 3（人工交接/时段限定）/ 🔴红态兼容区 1（智能体禁止进入），写成城市设计导则的"智能体兼容度"条款方向（概念），由网关在入口按目标空间兼容状态鉴权——绿态直接进入、黄态转交接入场、红态拒绝并写入审计记录 [depth:signal_compatibility_zoning] [metric:green_compat_zone_count] [metric:yellow_compat_zone_count] [metric:red_compat_zone_count]。
+- **与"无 AI 等价"互为表里（risk_compliance / public_interest_inclusion）**：红态与黄态空间本就由人工等价路径完整覆盖，智能体从不是必需项；分区把 DCC 的义务条款（②可停止、③无 AI 等价）从运营建议变成**控规层的可执行约束方向**，让"智能体不进入"成为与"智能体可运行"同等可见的规划语言。
+- **公开任务书重点方向逐条对照（brief_alignment，权重 20%）**：新增 8 行对照表，把任务书发展愿景与 7 个重点方向逐一映射到概念载体/空间锚点/交付证据（每行带 [metric:]/[depth:] 引用），并显式落实"可学习、可进化"由信号生命周期与公共知识库回流保障。
+- **公共利益台账（public_interest_inclusion）**：在四条非排除性原则之后新增公共利益台账核验机制——月度台账审计逐月核对四项原则的证据（无 AI 等价路径/冻结权具名负责人/免费低门槛/无障碍代际），审计结论进公共知识库，缺位即进入红牌审查 [depth:public_interest_ledger]。
+- **试点—示范—推广跃迁（implementation_feasibility，权重 20%）**：实施分期从"时间推进"升级为"达标门槛跃迁"——试点（轻量可撤）→ 示范（达标放行）→ 推广（制度化），每级有触发条件/放行范围/退出回退条件；信号兼容分区作为近期试点的可移除装置之一（信号柱 + 兼容度条款）先行验证"分区鉴权—人工交接—红态拒绝"完整链路 [depth:pilot_demo_scale]。
+- **视觉闭环（expression_completeness）**：site-overview 三重点区按分区着色（众智园=黄态、原点社区/大钟寺=绿态）+ S-06 红态沙盒虚线框标注，图例新增"信号兼容分区"面板；metrics-evidence 信号面板新增分区计数（3/3/1）；concept-intro/a3-booklet 封面与 A0 首页 USR 带新增分区 chip 行；visual/index.html 新增"信号兼容分区"三卡区块——图件/PDF/HTML/正文四层一致。
+- **指标与矩阵**：metrics.json 新增 3 个 known 计数指标（green_compat_zone_count=3 / yellow_compat_zone_count=3 / red_compat_zone_count=1）；assumptions.json 新增 A-ZONING-001 / A-LEDGER-001 / A-PILOTDEMO-001；compliance_matrix agent.1–6 补齐三项假设与指标；design_depth_matrix 新增 signal_compatibility_zoning / pilot_demo_scale / public_interest_ledger 三项。
+- **合规红线**：全部新增为概念性机制建议与"智能体兼容度"条款方向（概念），无 FAR/高度/密度/拆除/投资/机构承诺，不构成政府实施安排；**几何文件字节稳定未改动**；跃迁条件与兼容区正式划分待控规与公开程序确定。
+
+### 采纳反馈（PR #1611 评审要点）
+
+- 采纳"高权重维度需再上台阶"：以 brief_alignment 逐条对照表 + implementation_feasibility 三跃迁门槛 + ai_planning_innovation 第三层分区机制，向三档"5 分"集中发力。
+- 采纳"论题需在全部可见成果上闭环"：分区机制同步落到图件/PDF/HTML/正文，避免 v0.7 的 expression_completeness 扣分重演。
+- 采纳"公共利益需有持续核验载体"：公共利益台账把四项原则从静态条款变为逐月审计、可进红牌审查的动态保障。
+
+### 暂未采纳或待复核事项
+
+- 与 v0.4–v0.8 一致：兼容区数量、跃迁阈值与信号柱形态为概念推进方向，正式分区与阈值由运营实施阶段以公开程序确定；红态沙盒为既有 S-06 安全治理沙盒的概念表述。
+
 ## v0.8 - 2026-08-11
 
 ### 改动摘要

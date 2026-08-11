@@ -980,7 +980,10 @@
         "signal_node_count",
         "stop_rights_count",
         "human_operator_count",
-        "no_ai_equivalent_count"
+        "no_ai_equivalent_count",
+        "green_compat_zone_count",
+        "yellow_compat_zone_count",
+        "red_compat_zone_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -1015,7 +1018,10 @@
         "A-LOGO-001",
         "A-PDFGEN-001",
         "A-CITIZEN-001",
-        "A-SIGNAL-001"
+        "A-SIGNAL-001",
+        "A-ZONING-001",
+        "A-LEDGER-001",
+        "A-PILOTDEMO-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -1050,7 +1056,10 @@
         "key_area_count",
         "global_case_count",
         "signal_node_count",
-        "human_operator_count"
+        "human_operator_count",
+        "green_compat_zone_count",
+        "yellow_compat_zone_count",
+        "red_compat_zone_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -1084,7 +1093,10 @@
         "A-SCEN-001",
         "A-PERSONA-001",
         "A-CITIZEN-001",
-        "A-SIGNAL-001"
+        "A-SIGNAL-001",
+        "A-ZONING-001",
+        "A-LEDGER-001",
+        "A-PILOTDEMO-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -1123,7 +1135,10 @@
         "persona_count",
         "signal_node_count",
         "no_ai_equivalent_count",
-        "human_operator_count"
+        "human_operator_count",
+        "green_compat_zone_count",
+        "yellow_compat_zone_count",
+        "red_compat_zone_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -1148,7 +1163,10 @@
         "A-SCEN-001",
         "A-PERSONA-001",
         "A-CITIZEN-001",
-        "A-SIGNAL-001"
+        "A-SIGNAL-001",
+        "A-ZONING-001",
+        "A-LEDGER-001",
+        "A-PILOTDEMO-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -1185,7 +1203,10 @@
         "landmark_count",
         "component_count",
         "stop_rights_count",
-        "no_ai_equivalent_count"
+        "no_ai_equivalent_count",
+        "green_compat_zone_count",
+        "yellow_compat_zone_count",
+        "red_compat_zone_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -1212,7 +1233,10 @@
         "A-GATEWAY-001",
         "A-HONORWALL-001",
         "A-CITIZEN-001",
-        "A-SIGNAL-001"
+        "A-SIGNAL-001",
+        "A-ZONING-001",
+        "A-LEDGER-001",
+        "A-PILOTDEMO-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -1246,7 +1270,10 @@
         "public_space_ratio",
         "key_area_count",
         "landmark_count",
-        "stop_rights_count"
+        "stop_rights_count",
+        "green_compat_zone_count",
+        "yellow_compat_zone_count",
+        "red_compat_zone_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -1273,7 +1300,10 @@
         "A-HONORWALL-001",
         "A-BLUEGREEN-001",
         "A-CITIZEN-001",
-        "A-SIGNAL-001"
+        "A-SIGNAL-001",
+        "A-ZONING-001",
+        "A-LEDGER-001",
+        "A-PILOTDEMO-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -1310,7 +1340,10 @@
         "public_space_ratio",
         "key_area_count",
         "signal_node_count",
-        "human_operator_count"
+        "human_operator_count",
+        "green_compat_zone_count",
+        "yellow_compat_zone_count",
+        "red_compat_zone_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -1345,7 +1378,10 @@
         "A-GATEWAY-001",
         "A-HONORWALL-001",
         "A-CITIZEN-001",
-        "A-SIGNAL-001"
+        "A-SIGNAL-001",
+        "A-ZONING-001",
+        "A-LEDGER-001",
+        "A-PILOTDEMO-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
