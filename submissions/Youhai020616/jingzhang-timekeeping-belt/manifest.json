@@ -14,7 +14,7 @@
   "model_family": "claude",
   "model_detail": "Anthropic Claude Opus 5 via Claude Code CLI"
  },
- "generated_at": "2026-08-10T12:53:32Z",
+ "generated_at": "2026-08-11T00:20:32Z",
  "files": [
   {
    "path": "manifest.json",
@@ -26,7 +26,7 @@
    "role": "narrative",
    "required": true,
    "language": "zh",
-   "sha256": "279b5fbf6d679e1b1487df303709e366e6db28368d162c15e5aadd713ba15fda"
+   "sha256": "2be37b2fe32cdf83c5dea7470d7164113695ab165213ae7ec664a5865c0faa1a"
   },
   {
    "path": "agent.json",
@@ -50,7 +50,7 @@
    "path": "sources.json",
    "role": "sources",
    "required": true,
-   "sha256": "1f961ae32d713cdc8a3a7fed0e46b1125996f49df2978ff91050a1ba91c2fefa"
+   "sha256": "0a640430edfd7e455b907a3b99882f9568739fdcf76db987ac9d957bbac23eef"
   },
   {
    "path": "self_check.json",
@@ -81,7 +81,7 @@
    "role": "rendered_proposal_html",
    "required": true,
    "language": "zh",
-   "sha256": "63726dbcaa4c0da172744d8ab482c5cfe93b44153be6eabebef670b3ad616e33"
+   "sha256": "a0d3aab36d65647650db1d85ec6a525711300366b692c372d6e8da138cc99e07"
   },
   {
    "path": "report/narrative.md",
@@ -100,21 +100,21 @@
    "role": "drawing",
    "required": true,
    "language": "zh",
-   "sha256": "2f1e5fa1ba68cc3587beabbcef79ed6de9698dd9ff2a37fb523332328291db22"
+   "sha256": "adbaa0d8409c8b39d04b39304b23feb67f72e47109c1935a40f59d5374ae9a0f"
   },
   {
    "path": "drawings/a0-boards.pdf",
    "role": "drawing",
    "required": true,
    "language": "zh",
-   "sha256": "0cf4c15906d3ecb27df149e1319458993c1dd9fc9f3b676ed38e93e1fa793237"
+   "sha256": "4720d3886ec9ef3076011cad223c9c83c5f6ccb6f6cd6dacfaad0fdacbed9313"
   },
   {
    "path": "visual/index.html",
    "role": "visualization",
    "required": true,
    "language": "zh",
-   "sha256": "8c0e0d9cba548a87bf55b8a3c4738cedbc6f24bed9b9bd8fecf7264fb930b0ed"
+   "sha256": "d736ea3f6c55e255a0c8eb54a232009813d37bb2fa91683d748b467fa5c2a86b"
   },
   {
    "path": "assets/figures/key-areas.png",
@@ -211,7 +211,7 @@
    "required": true,
    "language": "en",
    "translation_of": "proposal.md",
-   "sha256": "cd95e8fe353867286b4bc349ea1425521a721dd477c584db728c5b0d88148dfe"
+   "sha256": "f2f4b61133a94ce413ce2a599422d7f1b7a392b9ff65d11a8041429276ef4865"
   },
   {
    "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
    "required": true,
    "language": "en",
    "translation_of": "report/proposal.html",
-   "sha256": "4523bee501e8f562adf61114583ecab798886d4cb024bb11e87032eda3203585"
+   "sha256": "8a335bad6cd58bb731d4ea0f7e951af7fc70316d60c77a5bd9fbda673ac95948"
   },
   {
    "path": "drawings/a3-booklet.en.pdf",
@@ -227,7 +227,7 @@
    "required": true,
    "language": "en",
    "translation_of": "drawings/a3-booklet.pdf",
-   "sha256": "63ee362d0abac0bee4904851578184e9ed35d1461c467656d6b8ffbad0bd944a"
+   "sha256": "6793cedf9bf565f3e563b37035ca0f1664914592954253b8267fd1419f5b8b2c"
   },
   {
    "path": "drawings/a0-boards.en.pdf",
@@ -235,7 +235,7 @@
    "required": true,
    "language": "en",
    "translation_of": "drawings/a0-boards.pdf",
-   "sha256": "c901040e4429f64abd9a4cd2210de78647a73f97a94919ec945e12daabcf12f7"
+   "sha256": "8e7e8a5bac1e6b10ebf4681c5882b630f473a5a5fd939b4c2c16f66534331341"
   },
   {
    "path": "visual/index.en.html",
@@ -243,7 +243,7 @@
    "required": true,
    "language": "en",
    "translation_of": "visual/index.html",
-   "sha256": "1d2aaec1c7db3cb2fd9c805988d8d6be63db645fe2a116efff60ae453d14c2ae"
+   "sha256": "54fd5b5055ba8ea699355d65081f7bf35f3f30fea1f26286f43b34c223f7a1ac"
   },
   {
    "path": "assets/figures/key-areas.en.png",
@@ -326,6 +326,18 @@
    "role": "supporting",
    "required": false,
    "sha256": "d102d8f389d778978065fc5bc4c357ad43656f5b7d7dc1c44df6f1d9f3118c82"
+  },
+  {
+   "path": "assets/timekeeping-mark.svg",
+   "role": "proposal_figure",
+   "required": false,
+   "sha256": "988326b20d1a18a83f8ce3f4775396916d1c8c548ea0f363cdf7de5854045824"
+  },
+  {
+   "path": "visual/assets/asset-rights.json",
+   "role": "visualization",
+   "required": false,
+   "sha256": "d6abe1d293ca8e653625d6e6c8abe145a94ad5a06bf0100c5780aa4712e9896d"
   }
  ],
  "validation_claim": {
