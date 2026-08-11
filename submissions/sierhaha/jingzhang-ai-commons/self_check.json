@@ -1,145 +1,230 @@
 {
- "schema_version": "0.1.0",
- "pr_author": "sierhaha",
- "head_closure": true,
- "package_type": "professional_design_package",
- "review_status": "formal-review-ready",
- "can_enter_formal_review": true,
- "gates": {
-  "deterministic_validation": true,
-  "spatial_review": true,
-  "visual_review": true,
-  "professional_review": true
- },
- "blocking_failed_checks": false,
- "missing_review_dependencies": [],
- "spatial_issue_ids": [
-  "KEY_AREA_PROVISIONAL",
-  "KEY_AREA_PROVISIONAL",
-  "KEY_AREA_PROVISIONAL"
- ],
- "visual_issue_ids": [],
- "professional_issue_ids": [],
- "checks": [
-  {
-   "check_id": "BOUNDARY_TRUST",
-   "result": "pass",
-   "severity": "major",
-   "target": "geometry/site_boundary.geojson",
-   "message": "Provisional boundary is present; replace with official redline before professional scoring."
+  "ok": true,
+  "submission_dir": "submissions/sierhaha/jingzhang-ai-commons",
+  "pr_author": "sierhaha",
+  "stage": "formal",
+  "deterministic_validation": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "errors": [],
+      "warnings": [
+        "submissions/sierhaha/jingzhang-ai-commons/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied"
+      ],
+      "proposal_files": [
+        "submissions/sierhaha/jingzhang-ai-commons/proposal.md"
+      ],
+      "changelog_files": [
+        "submissions/sierhaha/jingzhang-ai-commons/changelog.md"
+      ],
+      "changed_files": [
+        "submissions/sierhaha/jingzhang-ai-commons/agent.json",
+        "submissions/sierhaha/jingzhang-ai-commons/assets/figures/brand-identity.en.png",
+        "submissions/sierhaha/jingzhang-ai-commons/assets/figures/brand-identity.png",
+        "submissions/sierhaha/jingzhang-ai-commons/assets/figures/key-areas.en.png",
+        "submissions/sierhaha/jingzhang-ai-commons/assets/figures/key-areas.png",
+        "submissions/sierhaha/jingzhang-ai-commons/assets/figures/land-use-structure.en.png",
+        "submissions/sierhaha/jingzhang-ai-commons/assets/figures/land-use-structure.png",
+        "submissions/sierhaha/jingzhang-ai-commons/assets/figures/landmarks.en.png",
+        "submissions/sierhaha/jingzhang-ai-commons/assets/figures/landmarks.png",
+        "submissions/sierhaha/jingzhang-ai-commons/assets/figures/metrics-evidence.en.png",
+        "submissions/sierhaha/jingzhang-ai-commons/assets/figures/metrics-evidence.png",
+        "submissions/sierhaha/jingzhang-ai-commons/assets/figures/mobility-bluegreen.en.png",
+        "submissions/sierhaha/jingzhang-ai-commons/assets/figures/mobility-bluegreen.png",
+        "submissions/sierhaha/jingzhang-ai-commons/assets/figures/render-aerial.en.png",
+        "submissions/sierhaha/jingzhang-ai-commons/assets/figures/render-aerial.png",
+        "submissions/sierhaha/jingzhang-ai-commons/assets/figures/render-dazhongsi.en.png",
+        "submissions/sierhaha/jingzhang-ai-commons/assets/figures/render-dazhongsi.png",
+        "submissions/sierhaha/jingzhang-ai-commons/assets/figures/render-energy-station.en.png",
+        "submissions/sierhaha/jingzhang-ai-commons/assets/figures/render-energy-station.png",
+        "submissions/sierhaha/jingzhang-ai-commons/assets/figures/render-origin-community.en.png",
+        "submissions/sierhaha/jingzhang-ai-commons/assets/figures/render-origin-community.png",
+        "submissions/sierhaha/jingzhang-ai-commons/assets/figures/render-park-corridor.en.png",
+        "submissions/sierhaha/jingzhang-ai-commons/assets/figures/render-park-corridor.png",
+        "submissions/sierhaha/jingzhang-ai-commons/assets/figures/render-zhongzhiyuan.en.png",
+        "submissions/sierhaha/jingzhang-ai-commons/assets/figures/render-zhongzhiyuan.png",
+        "submissions/sierhaha/jingzhang-ai-commons/assets/figures/scenario-cards.en.png",
+        "submissions/sierhaha/jingzhang-ai-commons/assets/figures/scenario-cards.png",
+        "submissions/sierhaha/jingzhang-ai-commons/assets/figures/site-overview.en.png",
+        "submissions/sierhaha/jingzhang-ai-commons/assets/figures/site-overview.png",
+        "submissions/sierhaha/jingzhang-ai-commons/assets/figures/spatial-structure.en.png",
+        "submissions/sierhaha/jingzhang-ai-commons/assets/figures/spatial-structure.png",
+        "submissions/sierhaha/jingzhang-ai-commons/assumptions.json",
+        "submissions/sierhaha/jingzhang-ai-commons/changelog.md",
+        "submissions/sierhaha/jingzhang-ai-commons/compliance_matrix.json",
+        "submissions/sierhaha/jingzhang-ai-commons/design_depth_matrix.json",
+        "submissions/sierhaha/jingzhang-ai-commons/drawings/a0-boards.en.pdf",
+        "submissions/sierhaha/jingzhang-ai-commons/drawings/a0-boards.pdf",
+        "submissions/sierhaha/jingzhang-ai-commons/drawings/a3-booklet.en.pdf",
+        "submissions/sierhaha/jingzhang-ai-commons/drawings/a3-booklet.pdf",
+        "submissions/sierhaha/jingzhang-ai-commons/geometry/buildings.geojson",
+        "submissions/sierhaha/jingzhang-ai-commons/geometry/constraints.geojson",
+        "submissions/sierhaha/jingzhang-ai-commons/geometry/green_space.geojson",
+        "submissions/sierhaha/jingzhang-ai-commons/geometry/key_areas.geojson",
+        "submissions/sierhaha/jingzhang-ai-commons/geometry/land_use.geojson",
+        "submissions/sierhaha/jingzhang-ai-commons/geometry/phasing.geojson",
+        "submissions/sierhaha/jingzhang-ai-commons/geometry/public_space.geojson",
+        "submissions/sierhaha/jingzhang-ai-commons/geometry/roads.geojson",
+        "submissions/sierhaha/jingzhang-ai-commons/geometry/site_boundary.geojson",
+        "submissions/sierhaha/jingzhang-ai-commons/manifest.json",
+        "submissions/sierhaha/jingzhang-ai-commons/metrics.json",
+        "submissions/sierhaha/jingzhang-ai-commons/proposal.en.md",
+        "submissions/sierhaha/jingzhang-ai-commons/proposal.md",
+        "submissions/sierhaha/jingzhang-ai-commons/report/copyright_statement.md",
+        "submissions/sierhaha/jingzhang-ai-commons/report/narrative.md",
+        "submissions/sierhaha/jingzhang-ai-commons/report/proposal.en.html",
+        "submissions/sierhaha/jingzhang-ai-commons/report/proposal.html",
+        "submissions/sierhaha/jingzhang-ai-commons/risk.json",
+        "submissions/sierhaha/jingzhang-ai-commons/self_check.json",
+        "submissions/sierhaha/jingzhang-ai-commons/sources.json",
+        "submissions/sierhaha/jingzhang-ai-commons/standard_matrix.json",
+        "submissions/sierhaha/jingzhang-ai-commons/visual/index.en.html",
+        "submissions/sierhaha/jingzhang-ai-commons/visual/index.html"
+      ],
+      "ai_package_stages": {
+        "submissions/sierhaha/jingzhang-ai-commons": "formal"
+      },
+      "total_bytes": 7416805,
+      "maintainer_bypass": false
+    },
+    "stderr": ""
   },
-  {
-   "check_id": "KEY_AREAS_TRUST",
-   "result": "pass",
-   "severity": "major",
-   "target": "geometry/key_areas.geojson",
-   "message": "Three required key areas are provisional; replace with official polygons before professional scoring."
+  "spatial_review": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "stage": "formal",
+      "issues": [
+        {
+          "check_id": "KEY_AREA_PROVISIONAL",
+          "severity": "minor",
+          "target_file": "geometry/key_areas.geojson",
+          "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
+          "target_feature_id": "PROV-KEY-001",
+          "expected": null,
+          "actual": null
+        },
+        {
+          "check_id": "KEY_AREA_PROVISIONAL",
+          "severity": "minor",
+          "target_file": "geometry/key_areas.geojson",
+          "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
+          "target_feature_id": "PROV-KEY-002",
+          "expected": null,
+          "actual": null
+        },
+        {
+          "check_id": "KEY_AREA_PROVISIONAL",
+          "severity": "minor",
+          "target_file": "geometry/key_areas.geojson",
+          "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
+          "target_feature_id": "PROV-KEY-003",
+          "expected": null,
+          "actual": null
+        }
+      ],
+      "metrics": {
+        "site_area_sqm": 11412825.386,
+        "green_space_area_sqm": 1751410.898,
+        "public_space_area_sqm": 369575.874,
+        "building_footprint_area_sqm": 656378.014,
+        "green_ratio": 0.15346,
+        "public_space_ratio": 0.032383
+      }
+    },
+    "stderr": ""
   },
-  {
-   "check_id": "LAND_USE_TOPOLOGY",
-   "result": "pass",
-   "severity": "major",
-   "target": "geometry/land_use.geojson",
-   "message": "Land-use polygons cover the submitted boundary without gaps or overlaps (57 units)."
+  "visual_review": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "issues": [],
+      "metrics_seen": {
+        "green_space_area_sqm": 1751410.89,
+        "green_ratio": 0.1535,
+        "public_space_area_sqm": 369575.87,
+        "public_space_ratio": 0.0324,
+        "site_area_sqm": 11412825.39,
+        "key_area_count": 3.0,
+        "building_count": 14.0,
+        "road_length_m": 40239.73,
+        "scenario_node_count": 12.0,
+        "persona_count": 5.0,
+        "test_scenario_count": 3.0,
+        "landmark_count": 3.0,
+        "case_study_count": 6.0,
+        "ai_scenario_card_count": 12.0
+      }
+    },
+    "stderr": ""
   },
-  {
-   "check_id": "VISUAL_STATIC",
-   "result": "pass",
-   "severity": "info",
-   "target": "visual/index.html",
-   "message": "Static HTML visualization is generated without external dependencies."
+  "professional_review": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "issues": [],
+      "summary": {
+        "standard_matrix_items": 6,
+        "design_depth_items": 15,
+        "known_metric_refs_required": 22,
+        "proposal_format_version": "2",
+        "evidence_contract": "section-anchors-plus-structured-audit",
+        "proposal_reference_counts": {
+          "source": 7,
+          "standard": 3,
+          "depth": 15,
+          "data": 19,
+          "metric": 14
+        }
+      }
+    },
+    "stderr": ""
   },
-  {
-   "check_id": "PROFESSIONAL_EVIDENCE",
-   "result": "pass",
-   "severity": "major",
-   "target": "proposal.md",
-   "message": "Proposal includes references to standards, design depth items, geometry, metrics, sources, and assumptions."
-  },
-  {
-   "check_id": "DETERMINISTIC_HASH_CLOSURE",
-   "result": "pass",
-   "severity": "blocking",
-   "target": "manifest.json",
-   "message": "Manifest sha256 entries match all package files on the exact head."
-  },
-  {
-   "check_id": "DETERMINISTIC_VALIDATION",
-   "result": "pass",
-   "severity": "blocking",
-   "target": "manifest.json",
-   "message": "Deterministic validation passed: schema, bilingual, geometry allowlist, metrics, sources, matrices, risk, changelog."
-  },
-  {
-   "check_id": "SPATIAL_TOPOLOGY",
-   "result": "pass",
-   "severity": "blocking",
-   "target": "geometry/*.geojson",
-   "message": "Spatial review passed: coverage and overlap checks on land-use units."
-  },
-  {
-   "check_id": "SPATIAL_GEOMETRY_VALIDITY",
-   "result": "pass",
-   "severity": "major",
-   "target": "geometry/*.geojson",
-   "message": "All GeoJSON geometries are valid; areas recalculated in EPSG:4548."
-  },
-  {
-   "check_id": "KEY_AREA_AREA_CONSISTENCY",
-   "result": "pass",
-   "severity": "major",
-   "target": "geometry/key_areas.geojson",
-   "message": "Key-area areas are consistent with metrics.json and proposal text."
-  },
-  {
-   "check_id": "VISUAL_OFFLINE",
-   "result": "pass",
-   "severity": "major",
-   "target": "visual/index.html",
-   "message": "Visual dashboard loads offline; all asset references are local."
-  },
-  {
-   "check_id": "VISUAL_FIGURE_CLOSURE",
-   "result": "pass",
-   "severity": "major",
-   "target": "assets/figures/*.png",
-   "message": "All required proposal figures are present, presentation-quality, and bilingual (9 figures x zh/en)."
-  },
-  {
-   "check_id": "VISUAL_REVIEW",
-   "result": "pass",
-   "severity": "blocking",
-   "target": "visual/index.html",
-   "message": "Visual review passed: required sections and data-metric markers present."
-  },
-  {
-   "check_id": "BILINGUAL_PARITY",
-   "result": "pass",
-   "severity": "major",
-   "target": "proposal.en.md",
-   "message": "Bilingual proposal contract holds; en mirrors zh sections with official translations."
-  },
-  {
-   "check_id": "RISK_COMPLIANCE",
-   "result": "pass",
-   "severity": "major",
-   "target": "risk.json",
-   "message": "risk.json uses allowed dimensions with score, note, mitigation; copyright statement documents fonts (Noto Sans CJK SC, OFL-1.1)."
-  },
-  {
-   "check_id": "QUANTIFIED_TARGETS",
-   "result": "pass",
-   "severity": "minor",
-   "target": "proposal.md",
-   "message": "Quantified candidate target list replaces vague wording (PUE/green-power/self-healing/accessibility etc.)."
-  },
-  {
-   "check_id": "SELF_CHECK_CLOSURE",
-   "result": "pass",
-   "severity": "blocking",
-   "target": "self_check.json",
-   "message": "Exact-head self-check closed: all four gates PASS; can_enter_formal_review=True"
-  }
- ],
- "next_actions": []
+  "spatial_issue_ids": [
+    "KEY_AREA_PROVISIONAL",
+    "KEY_AREA_PROVISIONAL",
+    "KEY_AREA_PROVISIONAL"
+  ],
+  "visual_issue_ids": [],
+  "professional_issue_ids": [],
+  "missing_review_dependencies": [],
+  "can_enter_formal_review": true,
+  "package_type": "professional_design_package",
+  "review_status": "formal-review-ready",
+  "next_actions": [],
+  "schema_version": "0.1.0",
+  "checks": [
+    {
+      "check_id": "DETERMINISTIC_VALIDATION",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "validate_local_submission.py",
+      "message": "deterministic_validation: PASS"
+    },
+    {
+      "check_id": "SPATIAL_REVIEW",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "spatial_review.py",
+      "message": "spatial_review: PASS"
+    },
+    {
+      "check_id": "VISUAL_PACKAGING",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "visual_review.py",
+      "message": "visual_review: PASS"
+    },
+    {
+      "check_id": "PROFESSIONAL_EVIDENCE",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "professional_review.py",
+      "message": "professional_review: PASS"
+    }
+  ]
 }
