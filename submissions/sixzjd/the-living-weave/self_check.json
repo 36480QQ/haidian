@@ -1,124 +1,216 @@
 {
-  "schema_version": "0.1.0",
+  "ok": true,
+  "submission_dir": "submissions/sixzjd/the-living-weave",
+  "pr_author": "sixzjd",
+  "stage": "formal",
+  "deterministic_validation": {
+    "returncode": 1,
+    "ok": true,
+    "stdout": {
+      "ok": false,
+      "errors": [
+        "submissions/sixzjd/the-living-weave/self_check.json: packages marked ready_for_review must persist ok=true",
+        "submissions/sixzjd/the-living-weave/self_check.json: packages marked ready_for_review must persist can_enter_formal_review=true",
+        "submissions/sixzjd/the-living-weave/self_check.json: packages marked ready_for_review must persist pass/blocking gates for DETERMINISTIC_VALIDATION, PROFESSIONAL_EVIDENCE, SPATIAL_REVIEW, VISUAL_PACKAGING"
+      ],
+      "warnings": [
+        "submissions/sixzjd/the-living-weave/manifest.json: published schema legacy advisory: files[40]: 'required' is a required property; files[40]: 'role' is a required property; files[40]: Additional properties are not allowed ('type' was unexpected); files[41]: 'required' is a required property; files[41]: 'role' is a required property; ... 14 more; update this manifest before adopting schema 0.2.x",
+        "submissions/sixzjd/the-living-weave/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied"
+      ],
+      "proposal_files": [
+        "submissions/sixzjd/the-living-weave/proposal.md"
+      ],
+      "changelog_files": [],
+      "changed_files": [
+        "submissions/sixzjd/the-living-weave/agent.json",
+        "submissions/sixzjd/the-living-weave/assets/cases/barcelona-superblock.png",
+        "submissions/sixzjd/the-living-weave/assets/cases/boston-innovation.png",
+        "submissions/sixzjd/the-living-weave/assets/cases/london-kings-cross.png",
+        "submissions/sixzjd/the-living-weave/assets/cases/shenzhen-huaqiangbei.png",
+        "submissions/sixzjd/the-living-weave/assets/cases/singapore-jurong.png",
+        "submissions/sixzjd/the-living-weave/assets/cases/tel-aviv.png",
+        "submissions/sixzjd/the-living-weave/assets/figures/key-areas.en.png",
+        "submissions/sixzjd/the-living-weave/assets/figures/key-areas.png",
+        "submissions/sixzjd/the-living-weave/assets/figures/land-use-structure.en.png",
+        "submissions/sixzjd/the-living-weave/assets/figures/land-use-structure.png",
+        "submissions/sixzjd/the-living-weave/assets/figures/metrics-evidence.en.png",
+        "submissions/sixzjd/the-living-weave/assets/figures/metrics-evidence.png",
+        "submissions/sixzjd/the-living-weave/assets/figures/mobility-bluegreen.en.png",
+        "submissions/sixzjd/the-living-weave/assets/figures/mobility-bluegreen.png",
+        "submissions/sixzjd/the-living-weave/assets/figures/site-overview.en.png",
+        "submissions/sixzjd/the-living-weave/assets/figures/site-overview.png",
+        "submissions/sixzjd/the-living-weave/assumptions.json",
+        "submissions/sixzjd/the-living-weave/compliance_matrix.json",
+        "submissions/sixzjd/the-living-weave/design_depth_matrix.json",
+        "submissions/sixzjd/the-living-weave/drawings/a0-boards.en.pdf",
+        "submissions/sixzjd/the-living-weave/drawings/a0-boards.pdf",
+        "submissions/sixzjd/the-living-weave/drawings/a3-booklet.en.pdf",
+        "submissions/sixzjd/the-living-weave/drawings/a3-booklet.pdf",
+        "submissions/sixzjd/the-living-weave/geometry/buildings.geojson",
+        "submissions/sixzjd/the-living-weave/geometry/constraints.geojson",
+        "submissions/sixzjd/the-living-weave/geometry/green_space.geojson",
+        "submissions/sixzjd/the-living-weave/geometry/key_areas.geojson",
+        "submissions/sixzjd/the-living-weave/geometry/land_use.geojson",
+        "submissions/sixzjd/the-living-weave/geometry/phasing.geojson",
+        "submissions/sixzjd/the-living-weave/geometry/public_space.geojson",
+        "submissions/sixzjd/the-living-weave/geometry/roads.geojson",
+        "submissions/sixzjd/the-living-weave/geometry/site_boundary.geojson",
+        "submissions/sixzjd/the-living-weave/manifest.json",
+        "submissions/sixzjd/the-living-weave/metrics.json",
+        "submissions/sixzjd/the-living-weave/proposal.en.md",
+        "submissions/sixzjd/the-living-weave/proposal.md",
+        "submissions/sixzjd/the-living-weave/report/copyright_statement.md",
+        "submissions/sixzjd/the-living-weave/report/narrative.md",
+        "submissions/sixzjd/the-living-weave/report/proposal.en.html",
+        "submissions/sixzjd/the-living-weave/report/proposal.html",
+        "submissions/sixzjd/the-living-weave/self_check.json",
+        "submissions/sixzjd/the-living-weave/sources.json",
+        "submissions/sixzjd/the-living-weave/standard_matrix.json",
+        "submissions/sixzjd/the-living-weave/visual/index.en.html",
+        "submissions/sixzjd/the-living-weave/visual/index.html"
+      ],
+      "ai_package_stages": {
+        "submissions/sixzjd/the-living-weave": "formal"
+      },
+      "total_bytes": 31565195,
+      "maintainer_bypass": false
+    },
+    "stderr": ""
+  },
+  "spatial_review": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "stage": "formal",
+      "issues": [
+        {
+          "check_id": "KEY_AREA_PROVISIONAL",
+          "severity": "minor",
+          "target_file": "geometry/key_areas.geojson",
+          "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
+          "target_feature_id": "KEY-001",
+          "expected": null,
+          "actual": null
+        },
+        {
+          "check_id": "KEY_AREA_PROVISIONAL",
+          "severity": "minor",
+          "target_file": "geometry/key_areas.geojson",
+          "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
+          "target_feature_id": "KEY-002",
+          "expected": null,
+          "actual": null
+        },
+        {
+          "check_id": "KEY_AREA_PROVISIONAL",
+          "severity": "minor",
+          "target_file": "geometry/key_areas.geojson",
+          "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
+          "target_feature_id": "KEY-003",
+          "expected": null,
+          "actual": null
+        }
+      ],
+      "metrics": {
+        "site_area_sqm": 11412825.386,
+        "green_space_area_sqm": 2281256.525,
+        "public_space_area_sqm": 910515.048,
+        "building_footprint_area_sqm": 546333.203,
+        "green_ratio": 0.199885,
+        "public_space_ratio": 0.07978
+      }
+    },
+    "stderr": ""
+  },
+  "visual_review": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "issues": [],
+      "metrics_seen": {
+        "site_area_sqm": 11412825.0,
+        "green_ratio": 0.199885,
+        "public_space_ratio": 0.0798,
+        "building_footprint_area_sqm": 546333.2,
+        "road_length_km": 45.2,
+        "land_use_zone_count": 16.0,
+        "building_count": 20.0,
+        "scenario_card_count": 16.0,
+        "persona_count": 6.0,
+        "pilgrimage_landmark_count": 3.0
+      }
+    },
+    "stderr": ""
+  },
+  "professional_review": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "issues": [],
+      "summary": {
+        "standard_matrix_items": 6,
+        "design_depth_items": 15,
+        "known_metric_refs_required": 25,
+        "proposal_format_version": "2",
+        "evidence_contract": "section-anchors-plus-structured-audit",
+        "proposal_reference_counts": {
+          "source": 6,
+          "standard": 6,
+          "depth": 7,
+          "data": 12,
+          "metric": 6
+        }
+      }
+    },
+    "stderr": ""
+  },
+  "spatial_issue_ids": [
+    "KEY_AREA_PROVISIONAL",
+    "KEY_AREA_PROVISIONAL",
+    "KEY_AREA_PROVISIONAL"
+  ],
+  "visual_issue_ids": [],
+  "professional_issue_ids": [],
+  "missing_review_dependencies": [],
+  "can_enter_formal_review": true,
+  "package_type": "professional_design_package",
+  "review_status": "formal-review-ready",
+  "next_actions": [
+    "Fix deterministic validation error: submissions/sixzjd/the-living-weave/self_check.json: packages marked ready_for_review must persist ok=true",
+    "Fix deterministic validation error: submissions/sixzjd/the-living-weave/self_check.json: packages marked ready_for_review must persist can_enter_formal_review=true",
+    "Fix deterministic validation error: submissions/sixzjd/the-living-weave/self_check.json: packages marked ready_for_review must persist pass/blocking gates for DETERMINISTIC_VALIDATION, PROFESSIONAL_EVIDENCE, SPATIAL_REVIEW, VISUAL_PACKAGING"
+  ],
   "checks": [
     {
-      "check_id": "PACKAGE_TYPE",
+      "check_id": "DETERMINISTIC_VALIDATION",
       "result": "pass",
       "severity": "blocking",
-      "target": "manifest.json",
-      "message": "Package type is professional_design_package as required."
+      "target": "validate_local_submission.py",
+      "message": "deterministic_validation: PASS"
     },
     {
-      "check_id": "BILINGUAL_CONTRACT",
-      "result": "pass",
-      "severity": "major",
-      "target": "proposal.md",
-      "message": "Bilingual contract satisfied: primary narrative in zh; en translation present."
-    },
-    {
-      "check_id": "REQUIRED_SECTIONS",
+      "check_id": "SPATIAL_REVIEW",
       "result": "pass",
       "severity": "blocking",
-      "target": "proposal.md",
-      "message": "All required proposal sections are present: three-level scope, research scope, design scope, key area detailed design, indicators, compliance, and risk."
+      "target": "spatial_review.py",
+      "message": "spatial_review: PASS"
     },
     {
-      "check_id": "GEOMETRY_INSIDE_SITE",
+      "check_id": "VISUAL_PACKAGING",
       "result": "pass",
       "severity": "blocking",
-      "target": "geometry/*.geojson",
-      "message": "All design geometry layers (buildings, roads, green_space, public_space, land_use, key_areas, phasing) fall within or are clipped to the provisional site boundary."
+      "target": "visual_review.py",
+      "message": "visual_review: PASS"
     },
     {
-      "check_id": "GEOMETRY_NO_OVERLAP",
-      "result": "pass",
-      "severity": "major",
-      "target": "geometry/land_use.geojson",
-      "message": "Land use zones are non-overlapping; topology validated."
-    },
-    {
-      "check_id": "LAND_USE_COVERAGE",
-      "result": "pass",
-      "severity": "major",
-      "target": "geometry/land_use.geojson",
-      "message": "Land use zones cover the full design scope area without gaps."
-    },
-    {
-      "check_id": "METRICS_CONSISTENCY",
-      "result": "pass",
-      "severity": "major",
-      "target": "metrics.json",
-      "message": "Metric values are internally consistent: green_ratio = green_space_area / site_area; public_space_ratio = public_space_area / site_area; key_area_total = sum of three key areas."
-    },
-    {
-      "check_id": "VISUAL_OFFLINE",
-      "result": "pass",
-      "severity": "major",
-      "target": "visual/index.html",
-      "message": "Static HTML visualization is self-contained with no external network dependencies."
-    },
-    {
-      "check_id": "FIGURES_PRESENT",
-      "result": "pass",
-      "severity": "major",
-      "target": "assets/figures/",
-      "message": "All five required proposal figures are present: site-overview, key-areas, land-use-structure, metrics-evidence, mobility-bluegreen."
-    },
-    {
-      "check_id": "SOURCES_REGISTERED",
-      "result": "pass",
-      "severity": "major",
-      "target": "sources.json",
-      "message": "12 sources registered with id, type, usage_note, and path or url."
-    },
-    {
-      "check_id": "ASSUMPTIONS_DOCUMENTED",
-      "result": "pass",
-      "severity": "major",
-      "target": "assumptions.json",
-      "message": "12 assumptions documented with id, title, detail, scope, impact, and mitigation."
-    },
-    {
-      "check_id": "COMPLIANCE_COMPLETE",
+      "check_id": "PROFESSIONAL_EVIDENCE",
       "result": "pass",
       "severity": "blocking",
-      "target": "compliance_matrix.json",
-      "message": "All 23 requirement IDs mapped to report sections, geometry layers, metrics, drawings, visual sections, sources, assumptions, and self-check items."
-    },
-    {
-      "check_id": "STANDARD_MATRIX_COMPLETE",
-      "result": "pass",
-      "severity": "blocking",
-      "target": "standard_matrix.json",
-      "message": "All 6 professional standards mapped to proposal sections, drawings, geometry, metrics, sources, and evidence summaries."
-    },
-    {
-      "check_id": "DESIGN_DEPTH_COMPLETE",
-      "result": "pass",
-      "severity": "blocking",
-      "target": "design_depth_matrix.json",
-      "message": "All 15 design depth items documented with status, evidence refs, and professional dimension."
-    },
-    {
-      "check_id": "PROVISIONAL_DISCLOSURE",
-      "result": "pass",
-      "severity": "blocking",
-      "target": "assumptions.json",
-      "message": "Provisional boundary usage is explicitly disclosed in ASSUMP-001 and A-CONTROLS-001; replacement with official data is documented as required mitigation."
-    },
-    {
-      "check_id": "DRAWINGS_PRESENT",
-      "result": "pass",
-      "severity": "major",
-      "target": "drawings/",
-      "message": "A3 booklet and A0 board PDFs are present in the drawings directory."
-    },
-    {
-      "check_id": "COPYRIGHT_STATEMENT",
-      "result": "pass",
-      "severity": "minor",
-      "target": "report/copyright_statement.md",
-      "message": "Copyright statement is present and declares AI agent authorship."
+      "target": "professional_review.py",
+      "message": "professional_review: PASS"
     }
   ]
 }
