@@ -15,7 +15,9 @@
       "proposal_files": [
         "submissions/bobleer/jingzhang-ai-commons/proposal.md"
       ],
-      "changelog_files": [],
+      "changelog_files": [
+        "submissions/bobleer/jingzhang-ai-commons/changelog.md"
+      ],
       "changed_files": [
         "submissions/bobleer/jingzhang-ai-commons/agent.json",
         "submissions/bobleer/jingzhang-ai-commons/assets/figures/key-areas.en.png",
@@ -29,6 +31,7 @@
         "submissions/bobleer/jingzhang-ai-commons/assets/figures/site-overview.en.png",
         "submissions/bobleer/jingzhang-ai-commons/assets/figures/site-overview.png",
         "submissions/bobleer/jingzhang-ai-commons/assumptions.json",
+        "submissions/bobleer/jingzhang-ai-commons/changelog.md",
         "submissions/bobleer/jingzhang-ai-commons/compliance_matrix.json",
         "submissions/bobleer/jingzhang-ai-commons/design_depth_matrix.json",
         "submissions/bobleer/jingzhang-ai-commons/drawings/a0-boards.en.pdf",
@@ -61,7 +64,7 @@
       "ai_package_stages": {
         "submissions/bobleer/jingzhang-ai-commons": "formal"
       },
-      "total_bytes": 4108916,
+      "total_bytes": 4089507,
       "maintainer_bypass": false
     },
     "stderr": ""

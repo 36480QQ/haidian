@@ -92,7 +92,7 @@ scenarios: ["ai-traffic-walkability", "ai-cultural-guide", "robot-delivery-low-s
 | 09 AI 导览与遗产讲解 | 智源脊全线 | 多语种京张铁路遗产导览，内容以公开史料为准 |
 | 10 全球AI活动周路线 | 一带三区公共空间系统 | 从遗产节点、开源社区到产业展示的可步行体验路线 |
 
-其中三个场景作为产业测试验证场景优先深化：低速机器人配送测试段（沿脊柱辅路划定测试时段与路段，呼应 `robot-delivery-low-speed` 场景登记）、AI 慢行导航试点（呼应 `ai-traffic-walkability`）、AI 遗产导览试点（呼应 `ai-cultural-guide`）。测试场景的运营主体、数据边界和安全预案须由实施方与主管部门另行确认。所有 AI 治理建议遵守数据最小化、公开来源、可解释和人工复核原则：城市智能体可辅助识别慢行断点、设施维护和活动安全风险，但不替代规划审批，不输出未经授权的个人画像 [metric:public_space_ratio]。
+其中三个场景作为产业测试验证场景优先深化：低速机器人配送测试段（沿脊柱辅路划定测试时段与路段，呼应 `robot-delivery-low-speed` 场景登记）、AI 慢行导航试点（呼应 `ai-traffic-walkability`）、AI 遗产导览试点（呼应 `ai-cultural-guide`）。测试场景的运营主体、数据边界和安全预案须由实施方与主管部门另行确认。所有 AI 治理建议遵守数据最小化、公开来源、可解释和人工复核原则：城市智能体可辅助识别慢行断点、设施维护和活动安全风险，但不替代规划审批，不输出未经授权的个人画像。
 
 ## 用地、建筑规模与拆改留方案
 
@@ -106,7 +106,7 @@ scenarios: ["ai-traffic-walkability", "ai-cultural-guide", "robot-delivery-low-s
 
 交通方案回应公告对轨道站点一体化、道路微循环和慢行系统的要求，专业深度由 [depth:traffic_rail_slow_parking] 约束。方案以智源脊遗址绿道为南北主轴 [data:geometry/roads.geojson#ROAD-001]，两侧布置慢行优先辅路，十一条横向街坊路缝合两侧街区；大钟寺站与五道口站方向各设一条轨道接驳慢行通道；三处重点片区内部各设一条步行环路。骑行道与绿道分离设置，减少快慢冲突。
 
-市政与公共服务设施覆盖 AI 产业服务设施、创新服务平台、人才生活服务与新型基础设施，深度由 [depth:municipal_new_infrastructure] 约束。端侧算力驿站、分布式能源与既有市政融合的内容均为概念建议；道路红线、管线、消防和市政条件缺失时，通过 `assumptions.json` 说明待补，不把策略写成审定条件 [data:geometry/constraints.geojson#CONSTRAINTS]。
+市政与公共服务设施覆盖 AI 产业服务设施、创新服务平台、人才生活服务与新型基础设施，深度由 [depth:municipal_new_infrastructure] 约束。端侧算力驿站、分布式能源与既有市政融合的内容均为概念建议；道路红线、管线、消防和市政条件缺失时，通过 `assumptions.json` 说明待补，不把策略写成审定条件 [data:geometry/constraints.geojson#CONS-001]。
 
 ![慢行交通与蓝绿网络](assets/figures/mobility-bluegreen.png)
 
@@ -130,7 +130,7 @@ scenarios: ["ai-traffic-walkability", "ai-cultural-guide", "robot-delivery-low-s
 | JZ-02 | 众智园开源广场与研发街坊更新 | 产业空间/城市更新 | 权属、控规条件、实施主体 | [data:geometry/buildings.geojson#BLDG-001] |
 | JZ-03 | AI 原点近校成果转化街 | 城市更新/产业服务 | 校区边界、权属、首层业态 | [data:geometry/land_use.geojson#LU-001] |
 | JZ-04 | 大钟寺站接驳与四象限步行连通 | 轨道一体化/慢行 | 轨道站点、交叉口、市政管线 | [data:geometry/public_space.geojson#PUBLIC-001] |
-| JZ-05 | 端侧算力驿站与公共服务节点 | 新基建/公共服务 | 能源、算力、安全和运营主体 | [data:geometry/constraints.geojson#CONSTRAINTS] |
+| JZ-05 | 端侧算力驿站与公共服务节点 | 新基建/公共服务 | 能源、算力、安全和运营主体 | [data:geometry/constraints.geojson#CONS-001] |
 | JZ-06 | 全球AI活动周公共路线运营 | 运营/品牌 | 公共空间许可、活动安全、版权清权 | [data:geometry/phasing.geojson#PHASE-001] |
 
 分期建议为三期：一期启动大钟寺—知春路段（脊柱南段、大钟寺片区与门户商业），二期拓展 AI 原点段（脊柱中段、原点社区与慢行缝合），三期完善众智园段（脊柱北段、众智园与战略留白管理）。轻量设施、运营活动和服务平台可先行启动；涉及控规、市政、交通和权属的内容须等待正式条件确认。
@@ -149,7 +149,7 @@ scenarios: ["ai-traffic-walkability", "ai-cultural-guide", "robot-delivery-low-s
 
 本方案按 v2 双语合同提交：中文主文件配 `proposal.en.md` 完整对照译文，A3 文册、A0 展板、HTML 展示与含文字图件均提供英文副本，译法优先参照 `docs/terminology-glossary.md` 的赛事推荐译法。所有图片、图纸、数据和代码资产的来源与授权状态在 `sources.json` 与 `report/copyright_statement.md` 中说明；HTML 页面不加载远程脚本、远程字体、iframe、表单或外部 API，不跟踪评审者行为。
 
-风险与缺资料清单由 [depth:risk_missing_data] 与约束图层共同校核 [data:geometry/constraints.geojson#CONSTRAINTS]。主要风险包括：临时范围与官方边界可能存在偏差，官方数据发布后须整体复算；控规、道路红线、权属、市政、消防与文保条件缺失，相关结论降级为待确认事项；AI 场景运营涉及数据合规与公共安全，须由实施方建立授权与人工复核机制 [source:SITE-PACKAGE]；年度活动与品牌运营存在版权与公共安全风险，须先清权后使用。
+风险与缺资料清单由 [depth:risk_missing_data] 与约束图层共同校核 [data:geometry/constraints.geojson#CONS-001]。主要风险包括：临时范围与官方边界可能存在偏差，官方数据发布后须整体复算；控规、道路红线、权属、市政、消防与文保条件缺失，相关结论降级为待确认事项；AI 场景运营涉及数据合规与公共安全，须由实施方建立授权与人工复核机制 [source:SITE-PACKAGE]；年度活动与品牌运营存在版权与公共安全风险，须先清权后使用。
 
 本方案不声称官方批准、审定控规、最终土地权属、最终建设规模或保证实施。AI agent 对事实、来源、版权、空间数据、指标和表达负责；维护者和专业评审可依据自检结果、空间复核和合规矩阵要求返修或拒绝。
 
