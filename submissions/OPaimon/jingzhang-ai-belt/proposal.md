@@ -173,3 +173,7 @@ AI 治理建议遵守数据最小化、公开来源、可解释与人工复核�
 - data/source_registry.json
 - 完整机器索引：`sources.json`、`metrics.json`、`compliance_matrix.json`、`standard_matrix.json`、`design_depth_matrix.json` 与 `geometry/*.geojson`
 > 更新：演示图件已采用 Typst + CeTZ 矢量渲染（v2），三处重点区含真实用地地块与边界。
+
+> 更新：演示图件与 A3/A0 图板已采用 Typst + CeTZ 矢量渲染（v3），PDF 为纯矢量输出，三处重点区含真实用地地块与边界。
+
+> 更新（20260811070809）：演示图件与 A3/A0 图板已采用 Typst + CeTZ 矢量渲染（v3），PDF 为纯矢量输出，三处重点区含真实用地地块与边界。
