@@ -363,6 +363,7 @@ class ValidationReport:
     ai_package_stages: dict[str, str] = field(default_factory=dict)
     total_bytes: int = 0
     maintainer_bypass: bool = False
+    strict_manifest_paths: set[str] = field(default_factory=set)
 
     def add_error(self, message: str) -> None:
         self.ok = False
@@ -1636,6 +1637,29 @@ def validate_manifest_file(report: ValidationReport, repo_root: Path, proposal_d
             report.add_warning(
                 f"{proposal_dir}/manifest.json: known_blockers present; submission may pass intake but cannot enter formal professional scoring until resolved"
             )
+    from manifest_schema import schema_errors
+
+    manifest_path = f"{proposal_dir}/manifest.json"
+    strict_schema = (
+        manifest_path in report.strict_manifest_paths
+        or str(data.get("schema_version", "")).startswith("0.2.")
+    )
+    if strict_schema and not str(data.get("schema_version", "")).startswith("0.2."):
+        report.add_error(
+            f"{manifest_path}: new manifests must adopt schema_version 0.2.x; "
+            "legacy 0.1.x packages remain advisory until their manifest is revised"
+        )
+    schema_issues = schema_errors(data)
+    if schema_issues:
+        mode = "blocking" if strict_schema else "legacy advisory"
+        detail = "; ".join(schema_issues[:5])
+        if len(schema_issues) > 5:
+            detail += f"; ... {len(schema_issues) - 5} more"
+        message = f"{manifest_path}: published schema {mode}: {detail}"
+        if strict_schema:
+            report.add_error(message)
+        else:
+            report.add_warning(message + "; update this manifest before adopting schema 0.2.x")
     return data, stage
 
 
@@ -2750,6 +2774,7 @@ def validate_submission(
     *,
     allow_pending_self_check: bool = False,
     required_readiness_contract_dirs: Iterable[str] = (),
+    strict_manifest_paths: Iterable[str] = (),
 ) -> ValidationReport:
     report = ValidationReport()
     repo_root = repo_root.resolve()
@@ -2760,6 +2785,9 @@ def validate_submission(
         str(proposal_dir).strip().rstrip("/")
         for proposal_dir in required_readiness_contract_dirs
         if str(proposal_dir).strip()
+    }
+    report.strict_manifest_paths = {
+        normalize_changed_path(path) for path in strict_manifest_paths
     }
 
     if not pr_author or not GITHUB_LOGIN_RE.match(pr_author):

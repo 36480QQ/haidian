@@ -1199,7 +1199,7 @@ def make_package(submission_dir: Path, repo_root: Path, stage: str, agent_id: st
     write_json(
         submission_dir / "manifest.json",
         {
-            "schema_version": "0.1.0",
+            "schema_version": "0.2.0",
             "package_id": slugify(submission_dir.name),
             "project_id": PROJECT_ID,
             "site_package_version": SITE_PACKAGE_VERSION,
