@@ -7,10 +7,12 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "A bilingual formal AI urban-design submission that turns the Centennial Jing-Zhang corridor into a public, auditable, and scenario-driven AI civic innovation belt while retaining provisional-boundary limitations."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v0.3"
+iteration: "v0.5"
 ---
 
 # Jing-Zhang Civic Spine: An AI Civic Innovation Corridor on a Century-Old Railway Heritage Axis
+
+> **v0.5 verifiable high-water evidence:** This revision adds two dependency-free local runners so the package is not just visually complete. `node visual/assets/run-civic-spine-claim-provenance.js --check` checks ten visible claims: core metrics, three key areas, 12 scenario cards, 12 delivery packages, six inclusion groups, eight global mechanism prompts, rights/bilingual evidence and four-gate self-check status. `node visual/assets/run-civic-spine-delivery-audit.js --check` checks 12 AI scenario cards, 12 implementation projects, three key-area operating sections and six inclusion response groups, then rejects four malformed negative fixtures. Both runners are `local_structural_audit` evidence only: they prove replayable traceability and stop conditions, not official redlines, field performance, AI model safety, publication, score or government endorsement.
 
 ## Design Basis and Source List
 
@@ -144,3 +146,12 @@ For originality and AI-planning innovation, the design thesis is now framed as a
 For public-interest scoring, inclusion is not only stated as a value. The package specifies manual desks, paper route cards, tactile and voice wayfinding, wheelchair crossing audits, child-safe content review, caregiver rest points, night co-watch routes, offline appointments, one-business-day appeal intake and a seven-business-day result target. These are concept KPIs for later professional verification, not government commitments.
 
 For risk and compliance, the graphics and text keep provisional geometry visible. Rounded public numbers are paired with the exact machine values in `metrics.json`; unknown statutory indicators remain unknown until official control-plan and engineering data arrive. The manifest and self-check now persist the validation claim, no known participant-controlled blockers, and the four local gates needed for formal professional review.
+
+
+## v0.5 Verification Addendum: Claim Provenance and Delivery Audit
+
+This iteration follows the repository high-scoring evidence pattern by adding package-local, dependency-free verification instead of only adding more narrative. `visual/assets/civic-spine-claim-provenance.json` records ten visible claims and the exact evidence each claim can and cannot support. Its runner, `node visual/assets/run-civic-spine-claim-provenance.js --check`, verifies metric values, visual display tokens, structured asset counts, required proposal anchors, four-gate self-check status and explicit limits. The current persisted audit passes `10/10` claims and records that it does not prove official redline, statutory indicators, field performance, gallery publication, Review Agent score or government endorsement.
+
+`visual/assets/civic-spine-delivery-audit.json` turns the implementation package into a replayable structural contract. Its runner checks `12/12` scenario cards, `12/12` implementation projects, `3/3` key-area operating sections and `6/6` inclusion groups. It also mutates four negative fixtures: removing human takeover, privacy/switchback, pause trigger or professional interface must fail the expected checks. This makes the delivery logic auditable: public pilots cannot advance without ordinary non-AI service, human takeover, appeal path, provisional-geometry warning, and professional review. The runner still remains concept evidence only; field accessibility, safety, traffic, environmental, commercial and AI-model performance must be verified by qualified professional teams after official geometry and site data are supplied.
+
+For reviewers, the new high-water evidence entry points are: `civic-spine-claim-provenance-audit.json`, `civic-spine-delivery-audit-result.json`, the two runner files, `project-implementation-register.json`, `scenario-governance-matrix.json`, `inclusion-governance-matrix.json`, `key-area-operating-sections.json`, `metrics.json`, `self_check.json`, and this v0.5 addendum. The design intent is unchanged: Jing-Zhang Civic Spine is a civic operating system for auditable AI urbanism, not a claim of approval or implementation.
