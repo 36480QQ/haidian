@@ -1,0 +1,89 @@
+{
+  "schema_version": "0.1.0",
+  "checks": [
+    {
+      "check_id": "BOUNDARY_TRUST",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/site_boundary.geojson",
+      "message": "临时边界三字段齐全；正式边界到位后整包重算。"
+    },
+    {
+      "check_id": "KEY_AREAS_TRUST",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/key_areas.geojson",
+      "message": "三处重点区均明确为临时粗略约束，不称官方边界。"
+    },
+    {
+      "check_id": "LAND_USE_TOPOLOGY",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/land_use.geojson",
+      "message": "概念用地完整覆盖场地，拓扑由自动测试复核。"
+    },
+    {
+      "check_id": "SOURCE_STATUS",
+      "result": "pass",
+      "severity": "major",
+      "target": "sources.json",
+      "message": "来源逐项标注formal-ready、background_only、provisional_only或方案自采候选。"
+    },
+    {
+      "check_id": "USER_INCLUSION",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal.md",
+      "message": "八类现实用户、非数字路径、人工接管和分群指标均已定义。"
+    },
+    {
+      "check_id": "AI_GOVERNANCE",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal.md",
+      "message": "十二场景均有最小数据、人工最终决定、停止和退出条件。"
+    },
+    {
+      "check_id": "IMPLEMENTATION_GATES",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/phasing.geojson",
+      "message": "四道条件门使用证据放行，不冒充政府建设时序。"
+    },
+    {
+      "check_id": "VISUAL_STATIC",
+      "result": "pass",
+      "severity": "info",
+      "target": "visual/index.html",
+      "message": "离线网页无远程脚本、字体、地图瓦片或表单依赖。"
+    },
+    {
+      "check_id": "PROFESSIONAL_EVIDENCE",
+      "result": "pass",
+      "severity": "major",
+      "target": "standard_matrix.json",
+      "message": "强制标准、15项设计深度和23项任务覆盖均有结构化证据。"
+    },
+    {
+      "check_id": "COPYRIGHT_CLEARANCE",
+      "result": "pass",
+      "severity": "major",
+      "target": "report/copyright_statement.md",
+      "message": "当前核心图和排版由本方案数据派生；未清权外部视觉材料未进入成果。"
+    },
+    {
+      "check_id": "BILINGUAL_PENDING",
+      "result": "unknown",
+      "severity": "blocking",
+      "target": "proposal.en.md",
+      "message": "本轮按要求只准备简体中文；正式英文及全部显示材料对照版尚未制作。"
+    },
+    {
+      "check_id": "PROFESSIONAL_REVIEW_PENDING",
+      "result": "unknown",
+      "severity": "major",
+      "target": "proposal.md",
+      "message": "外部规划、建筑、交通、市政、生态、文保、法务和安全复核待后续完成。"
+    }
+  ]
+}
