@@ -46,6 +46,24 @@ The five explicit states are `not_applicable`, `not_measured`, `external_confirm
 
 This round adds one structured ledger and a bilingual SVG/PNG figure pair, so the final manifest/file ledger should contain 79 paths and 78 non-manifest files; completed independent file-level rights audits remain 0. Both HTML reports were rebuilt from final Markdown. Two fresh Python processes produced byte-identical four-PDF sets. The Chinese/English A3 booklets have 13/16 pages, and both A0 sets have 10 pages. Full rendering of all 49 pages found 0 blank pages, 0 replacement glyphs, and 0 out-of-page objects. Current SHA-256 values are: Chinese A3 `6bb41b03900d9c42b6e0e1f88afc31c796669c6b40371c99cb3fcc8ed492396f`; English A3 `8916464c4bb3feda1af94bc3684f569e95cda0fae38aedfab33a22456755b77a`; Chinese A0 `dfa94776307117de43c8e6f20f0686694639ec73bf8c7bc0a4d85cee24d79029`; English A0 `9fac1efad90c3b3a0a444589cccfc34a78dd85bb45232a28b143381eca914b92`. This publication fixed point proves no field measurement, environmental performance, approval, G1 status, or rights clearance.
 
+## 第 6 轮反脆弱失败治理增量 / Round 6 antifragile failure-governance increment
+
+第 6 轮不重复既有失败侧线，而把六类失败、八类人工责任、场景护照—公共时刻表—证据矩阵三载体回写、运行/成熟度/授权/服务四轴、申诉影响决策、追加式版本、独立复测和主动退役接入既有 JZ-AIOS。暂停、复核、恢复、撤回和退役均要求同一事件三份回写；缺失或冲突时向最保守状态 fail-closed，成熟度与授权不因恢复普通使用自动变化。
+
+Round 6 does not duplicate the existing failure siding. It connects six failure classes, eight human role types, scene-passport–civic-timetable–evidence-matrix writeback, separate runtime/maturity/authorization/service axes, decision-changing appeals, append-only versions, independent retest, and active retirement to existing JZ-AIOS. Pause, review, recovery, withdrawal, and retirement require three writebacks for the same event. Missing or conflicting carriers fail closed to the conservative state; restoring ordinary use changes neither maturity nor authorization by itself.
+
+T-02 的 `STOP-STALE-SOURCE` 仅作为合成故事板：发现边界、停止、人工交接、三载体回写、追加纠正、独立复测、恢复或退役。回放继续 deterministic、无个人信息、无模型/API/现实服务调用和 fail-closed，不是现实事故、服务成绩或现场恢复。现实失败、确认停止权限、公开纠正、现实独立复测、退役和批准重启均为 0；停止到人工交接与普通使用恢复时间保持 unknown。
+
+T-02 `STOP-STALE-SOURCE` is used only as a synthetic storyboard: detect a limit, stop, staffed handoff, write three carriers, append a correction, independently retest, and restore or retire. The replay remains deterministic, PII-free, free of model/API/real-service calls, and fail-closed. It is not a real incident, service result, or field recovery. Real failures, confirmed stop authorities, public corrections, real independent retests, retirements, and approved restarts remain 0; stop-to-handoff and ordinary-use-recovery times remain unknown.
+
+常驻边界为：文件检查、合成回放、机器 PASS、独立复测或恢复验收只对明确对象、判断主体、证据、范围和限制有效，不授权试用、采购、建设、部署、成熟度升级、场地/专业批准、权利清除或现实成效。geometry、既有 SCENE/JZ/T 编号、G0 与 `not_fully_cleared` 均不变。
+
+The permanent boundary is: a file check, synthetic replay, machine PASS, independent retest, or restoration acceptance applies only to its named object, decision-maker, evidence, scope, and limitations. It authorizes no trial, procurement, construction, deployment, maturity advancement, site/professional approval, rights clearance, or real-world outcome. Geometry, existing SCENE/JZ/T IDs, G0, and `not_fully_cleared` remain unchanged.
+
+本轮新增一份结构化失败治理登记册与双语 SVG/PNG 图对，因此最终 manifest/逐文件台账为 84 个路径、83 个非 manifest 内容文件；独立逐文件清权完成数仍为 0。双语 HTML 从最终 Markdown 重生；四份 PDF 在两个新的 Python 进程中逐文件字节一致。中文/英文 A3 为 14/17 页，中英文 A0 各 11 页；全 53 页渲染检查得到空白页 0、替换字形 0、对象越界 0。当前 SHA-256：中文 A3 `b4511a418e7144f133d0e005264d7786688e7ee78fad36a89e33ca36bdd653c2`，英文 A3 `e32593612b01688fb85b5eaa6385ec5be9757781d7c7e195f9d3a01ecaadc5db`，中文 A0 `40d62076801177f8445768b96ce3888d2e76c98b7f4004249d0ab50b6ef22cc3`，英文 A0 `16fa45c69ce1445ae8c58759c0371128ffcccac49545bd0d2bc1deeea720c35f`。出版固定点不证明现实失败、恢复、复测、退役、授权、审批、G1 或清权。
+
+This round adds one structured failure-governance register and a bilingual SVG/PNG figure pair, so the final manifest/file ledger contains 84 paths and 83 non-manifest files; completed independent file-level rights audits remain 0. Both HTML reports were rebuilt from final Markdown. Two fresh Python processes produced byte-identical four-PDF sets. The Chinese/English A3 booklets have 14/17 pages, and both A0 sets have 11 pages. Full rendering of all 53 pages found 0 blank pages, 0 replacement glyphs, and 0 out-of-page objects. Current SHA-256 values are: Chinese A3 `b4511a418e7144f133d0e005264d7786688e7ee78fad36a89e33ca36bdd653c2`; English A3 `e32593612b01688fb85b5eaa6385ec5be9757781d7c7e195f9d3a01ecaadc5db`; Chinese A0 `40d62076801177f8445768b96ce3888d2e76c98b7f4004249d0ab50b6ef22cc3`; English A0 `16fa45c69ce1445ae8c58759c0371128ffcccac49545bd0d2bc1deeea720c35f`. This publication fixed point proves no real failure, recovery, retest, retirement, authorization, approval, G1 status, or rights clearance.
+
 ## 双轨前台增量 / Twin-track frontend increment
 
 本轮把“双轨京张”建立为前台空间总纲：连续日常轨承载普通公共生活，间歇验证轨只在自愿、公告、限域、有责任人的时段出现；原点社区、众智园、大钟寺分别作为共创、验证、发布换轨场；失败侧线承载停止、人工接管、绕行、申诉和恢复；入口、时段、状态、人工、来源、退出六类信号共同组成公共时刻表。人工站房、无屏节点和非 AI 完整路径不依赖注册、扫码或 AI。`visual/assets/key-area-evidence-matrix.json#twin_track_frontend_contract` 记录同一套双轨、三换轨场、四态、旅程和后台治理回链，并把所有现实运行结果保持为 0 或 unknown。主图 `site-overview` 的双语 PNG 与新增双语 SVG 可编辑源只表达关系，不改 geometry、不新增场景编号，也不把验证轨升级为连续占地或已建设施。
@@ -74,33 +92,35 @@ V2.11 performs a package-wide consistency and transferability audit without addi
 
 ## 本次增量状态 / Current increment status
 
-> 本节从 `main@6273ad9c…` 的第 4 轮工作区重新开始，不继承前一 PR 的任何 `[x]`、PDF 摘要、manifest 摘要或可信 check。完成本轮本地验证后才能逐项勾选，最终 PR head 的可信 `submission-validation` 才能关闭最后一项。
+> 本节从已合并第 5 轮的 `main@651f3cc4…` 重新开始，不继承前一 PR 的任何 `[x]`、PDF 摘要、manifest 摘要或可信 check。完成本轮本地验证后才能逐项勾选，最终 PR head 的可信 `submission-validation` 才能关闭最后一项。
 >
-> This section restarts from the Round 4 workspace at `main@6273ad9c…`. It inherits no `[x]`, PDF digest, manifest digest, or trusted check from the prior PR. Items may be checked only after this round’s local validation; only trusted `submission-validation` on the final PR head can close the last item.
+> This section restarts from `main@651f3cc4…`, where Round 5 is merged. It inherits no `[x]`, PDF digest, manifest digest, or trusted check from the prior PR. Items may be checked only after this round’s local validation; only trusted `submission-validation` on the final PR head can close the last item.
 
-- [x] 七项公共权利在中英文正文、visual、图件和机器合同中同序、同义且先于可选 AI 出现。
-- [x] 三处连续普通路径、纸面/口头入口、双入口人工交接、停止和恢复均可回查，且不是同一模板换标题。
-- [x] 四类群体分别记录未来分母、任务、证据字段、未知阈值和停止信号；总体平均不得掩盖排斥。
-- [x] 无账户、无扫码、非 AI 完整路径、无屏等候、撤回、申诉与纠正通过反例审计；志愿者不被写成稳定责任主体。
-- [x] geometry 与既有 SCENE/JZ/T 主编号未变；全部场景仍 G0，确认人员/现实交互/已知群体结果/批准/运营均为 0。
-- [x] 中英文 proposal、report、visual、SVG/PNG 与 A3/A0 同步，PDF 全页渲染无裁切、重叠、空白页或不可读字形。
-- [x] 74 条 manifest 路径与 74 条 rights ledger 记录严格等集；`not_fully_cleared`、0 独立逐文件审计和公共/专业复用 blocked 不变。
-- [x] strict 8/8、deterministic、spatial、visual、professional、self-check、T-02、双语结构和 participant preflight 全部通过。
+- [x] 六类失败、八类人工责任与暂停/复核/恢复/撤回/退役写入同一 G0 治理合同，没有建立第二套失败治理品牌。
+- [x] 场景护照、公共时刻表、证据矩阵对同一事件原子回写；缺失或冲突向最保守状态 fail-closed。
+- [x] 运行、成熟度、授权、服务四轴保持独立；恢复普通使用不自动升级成熟度或授权，`PASS != deployment authorization`。
+- [x] 申诉可以改变 go/no-go，纠正公开但不暴露个人；旧证据追加保留，独立复测与主动退役均有关闭条件。
+- [x] T-02 仅为无个人信息、无模型/API/现实服务调用的合成故事板；现实失败、停止权限、纠正、复测、退役和重启仍为 0 或 unknown。
+- [x] geometry 与既有 SCENE/JZ/T 主编号未变；全部场景仍 G0，审批、部署、运营与现实成效均未升级。
+- [x] 中英文 proposal、report、visual、SVG/PNG 与 A3/A0 同步，PDF 全页渲染无裁切、重叠、空白页、替代字形或越界对象。
+- [x] 84 条 manifest 路径、5 个兼容组与 84 条 rights ledger 记录严格等集；`not_fully_cleared`、0 独立逐文件审计和公共/专业复用 blocked 不变。
+- [x] strict、deterministic、spatial、visual、professional、self-check、T-02、双语结构和 participant preflight 全部通过。
 - [ ] 最终 PR head 的可信 `submission-validation` 为 `SUCCESS`。
 
-- [x] The seven public rights appear in the same order and meaning across both proposals, visual pages, figures, and the machine contract, before optional AI.
-- [x] Each place has a traceable ordinary path, paper/oral entry, dual-entry staffed handoff, stop, and recovery, without reusing one renamed template.
-- [x] Each of four groups has a future denominator, task, evidence fields, unknown threshold, and stop signals; no overall average hides exclusion.
-- [x] No-account, no-QR, complete non-AI, screen-free waiting, withdrawal, appeal, and correction pass counterexample review; volunteers are not stable duty bearers.
-- [x] Geometry and existing primary SCENE/JZ/T IDs are unchanged; every scene remains G0, and confirmed staff/real interactions/known group results/approvals/operations remain 0.
-- [x] Bilingual proposals, reports, visual pages, SVG/PNG pairs, and A3/A0 outputs are synchronized, with full-page PDF renders free of clipping, overlap, blank pages, or unreadable glyphs.
-- [x] The 74 manifest paths and 74 rights-ledger records are exact sets; `not_fully_cleared`, zero independent file-level audits, and blocked public/professional reuse remain unchanged.
-- [x] Strict 8/8, deterministic, spatial, visual, professional, self-check, T-02, bilingual structure, and participant preflight all pass.
+- [x] Six failure classes, eight human role types, and pause/review/recovery/withdrawal/retirement share one G0 governance contract without creating a second failure-governance brand.
+- [x] Scene passport, civic timetable, and evidence matrix atomically write the same event; missing or conflicting carriers fail closed to the conservative state.
+- [x] Runtime, maturity, authorization, and service axes remain separate; ordinary-use restoration does not advance maturity or authorization, and `PASS != deployment authorization`.
+- [x] Appeals can change go/no-go, corrections are public without exposing people, prior evidence stays append-only, and independent retest plus active retirement have closure conditions.
+- [x] T-02 is only a PII-free synthetic storyboard with no model/API/real-service call; real failures, stop authority, corrections, retests, retirements, and restarts remain 0 or unknown.
+- [x] Geometry and existing primary SCENE/JZ/T IDs are unchanged; every scene remains G0, with no approval, deployment, operation, or real-world outcome upgraded.
+- [x] Bilingual proposals, reports, visual pages, SVG/PNG pairs, and A3/A0 outputs are synchronized, with full-page PDF renders free of clipping, overlap, blank pages, replacement glyphs, or out-of-page objects.
+- [x] The 84 manifest paths, five compatibility groups, and 84 rights-ledger records are exact sets; `not_fully_cleared`, zero independent file-level audits, and blocked public/professional reuse remain unchanged.
+- [x] Strict, deterministic, spatial, visual, professional, self-check, T-02, bilingual structure, and participant preflight all pass.
 - [ ] Trusted `submission-validation` on the final PR head reports `SUCCESS`.
 
 ## 权利证据审计 / Rights-evidence audit
 
-审计以 `visual/assets/source-rights-evidence.schema.json`、`visual/assets/source-rights-evidence.json`、`visual/assets/submission-use-rights-matrix.json`、`visual/assets/rights-clearance-ledger.json`、`agent.json` 与 `manifest.json` 为一组，不把任一结构 PASS 解释为法律清权。最低语义断言为：29 条来源与证据记录一一对应；120 个 OSM way 与 element lineage 一一对应；manifest、5 个兼容组和 74 条逐文件记录路径严格等集；除 manifest 与 ledger 两个不可自引用项外，每条资产摘要与 manifest 相等；工具 ID 均能解析到 `agent.json`；`audit_records=[]`；公告 8.1 适用关系仍待确认；P0 01/02/03 仍 open；公共或专业复用仍 blocked。
+审计以 `visual/assets/source-rights-evidence.schema.json`、`visual/assets/source-rights-evidence.json`、`visual/assets/submission-use-rights-matrix.json`、`visual/assets/rights-clearance-ledger.json`、`agent.json` 与 `manifest.json` 为一组，不把任一结构 PASS 解释为法律清权。最低语义断言为：29 条来源与证据记录一一对应；120 个 OSM way 与 element lineage 一一对应；manifest、5 个兼容组和 84 条逐文件记录路径严格等集；除 manifest 与 ledger 两个不可自引用项外，每条资产摘要与 manifest 相等；工具 ID 均能解析到 `agent.json`；`audit_records=[]`；公告 8.1 适用关系仍待确认；P0 01/02/03 仍 open；公共或专业复用仍 blocked。
 
 The audit treats `visual/assets/source-rights-evidence.schema.json`, `visual/assets/source-rights-evidence.json`, `visual/assets/submission-use-rights-matrix.json`, `visual/assets/rights-clearance-ledger.json`, `agent.json`, and `manifest.json` as one contract. No structural PASS is interpreted as legal clearance. Minimum semantic assertions are: one evidence record per each of 29 sources; one element-lineage record per each of 120 OSM ways; strict path equality among the manifest, five compatibility groups, and the current 79 file-level records; digest equality for every asset except the two explicit self-reference cases (manifest and ledger); every tool ID resolves in `agent.json`; `audit_records=[]`; announcement clause 8.1 applicability remains pending confirmation; P0 01/02/03 stay open; and public or professional reuse stays blocked.
 
@@ -227,6 +247,21 @@ git diff --check
 ```
 
 ## 当前 PDF 固定点与历史重生记录 / Current PDF fixed point and historical regeneration record
+
+V6.0 在六类失败、三载体回写、四轴分离、申诉改判、追加式证据、独立复测与主动退役固定后重生四份出版物。中文/英文 A3 分别为 14/17 页，均为 A3 纵向；中英文 A0 各 11 页，均为 A0 横向，失败治理图为第 8 板。两个新的 Python 进程生成的四份 PDF 逐文件字节一致；PyMuPDF 对最终 53 页检查文本、页面对象边界、空白页与替代字形，四项异常计数均为 0；四份逐页联系表已视觉复查。该固定点只证明出版身份和版面检查，不证明现实失败、停止权限、恢复、复测、退役、审批、G1 授权或清权。
+
+V6.0 regenerated all four publications after fixing six failure classes, three-carrier writeback, four separate axes, decision-changing appeals, append-only evidence, independent retest, and active retirement. The Chinese/English A3 booklets contain 14/17 A3 portrait pages; both A0 sets contain 11 A0 landscape pages, with the failure-governance figure as board 8. Two fresh Python processes produced file-identical four-PDF sets. PyMuPDF checked text, page-object bounds, blank pages, and replacement glyphs across all 53 pages, with zero findings in every category; all four contact sheets were visually reviewed. This fixed point proves publication identity and layout QA only—not a real failure, confirmed stop authority, recovery, retest, retirement, approval, G1 authorization, or rights clearance.
+
+| PDF | Pages / format | SHA-256 |
+|---|---|---|
+| `drawings/a3-booklet.pdf` | 14 / A3 portrait | `b4511a418e7144f133d0e005264d7786688e7ee78fad36a89e33ca36bdd653c2` |
+| `drawings/a3-booklet.en.pdf` | 17 / A3 portrait | `e32593612b01688fb85b5eaa6385ec5be9757781d7c7e195f9d3a01ecaadc5db` |
+| `drawings/a0-boards.pdf` | 11 / A0 landscape | `40d62076801177f8445768b96ce3888d2e76c98b7f4004249d0ab50b6ef22cc3` |
+| `drawings/a0-boards.en.pdf` | 11 / A0 landscape | `16fa45c69ce1445ae8c58759c0371128ffcccac49545bd0d2bc1deeea720c35f` |
+
+本固定点的基线为 `origin/main@651f3cc430d3ca3f44414e7d3e3e5c9b373100fb`。临时逐页 QA 输出位于包外；新增图件以本地无头浏览器从包内 SVG 确定性导出 PNG。四份 PDF 与全部新增资产继续受总体 `not_fully_cleared` 权利门约束。
+
+The base for this fixed point is `origin/main@651f3cc430d3ca3f44414e7d3e3e5c9b373100fb`. Temporary page-QA outputs remain outside the package; the new PNG figures were deterministically exported from package-authored SVGs using a local headless browser. All four PDFs and every new asset remain governed by the package-wide `not_fully_cleared` rights gate.
 
 V4.0 在七项永久公共设计权利、同任务双路径、三处差异化服务接口、四类群体验收和双语 `non-ai-service-blueprint` 固定后重生四份出版物。中文/英文 A3 分别为 13/15 页，均为 297×420mm 纵向；中文/英文 A0 各 9 页，均为 1189×841mm 横向，新服务蓝图位于 A0 首板。PyMuPDF 对最终 46 页执行文本提取、页面尺寸、嵌入图像、空白页、替代字形和文本对象边界检查：A3 各含 10 个图像对象，A0 各含 9 个整板图像对象，空白页、替代字符和越界文本对象均为 0。四份最终 PDF 已重新渲染为逐页联系表并逐页视觉复查，未见裁切、重叠、错序或不可读字形。关闭字体时间戳重算并启用 ReportLab invariant 模式后，两个全新 Python 进程生成的四份 PDF 逐文件字节一致。该固定点只证明出版身份和版面检查，不证明现场服务、场地批准、无障碍合规、G1 授权或权利清除。
 

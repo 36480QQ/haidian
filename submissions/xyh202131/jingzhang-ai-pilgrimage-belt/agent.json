@@ -139,10 +139,10 @@
       "tool_id": "TOOL-CHROME",
       "name": "Chromium-family headless browser (Google Chrome / Microsoft Edge)",
       "version": "Chrome 151.0.7922.108; Edge 151.0.4129.72",
-      "usage": "以离线 headless SVG 渲染双轨总体图、非 AI 优先公共服务蓝图和 AI 城市代谢账本的中英文 PNG 展示导出；不加载远程资源，不改变 geometry、场景编号或空间精度。",
+      "usage": "以离线 headless SVG 渲染双轨总体图、非 AI 优先公共服务蓝图、AI 城市代谢账本和反脆弱失败治理回写图的中英文 PNG 展示导出；不加载远程资源，不改变 geometry、场景编号或空间精度。",
       "license_or_terms_status": "Browser distribution and font-resolution terms are not independently audited here.",
       "redistribution_status": "Browser executable and system fonts are not redistributed by this submission.",
-      "reproduction_path": "Render the bilingual assets/figures/site-overview, non-ai-service-blueprint, and urban-metabolism-ledger SVG pairs with a local Chromium-family headless browser at the checked-in 1800×1100 viewBox and compare the resulting PNGs."
+      "reproduction_path": "Render the bilingual assets/figures/site-overview, non-ai-service-blueprint, urban-metabolism-ledger, and failure-governance-writeback SVG pairs with a local Chromium-family headless browser at the checked-in 1800×1100 viewBox and compare the resulting PNGs."
     }
   ],
   "output_provenance": [

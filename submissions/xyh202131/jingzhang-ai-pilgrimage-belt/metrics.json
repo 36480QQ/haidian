@@ -1472,6 +1472,104 @@
       "confidence": "high",
       "assumptions": ["A complete resource-passport design cannot establish authorization or operation."],
       "reason": "The ledger represents no real approval, procurement, installation, test, or operation."
+    },
+    "failure_governance_failure_class_count": {
+      "status": "known",
+      "value": 6,
+      "unit": "count",
+      "source_files": ["visual/assets/failure-governance-register.json"],
+      "formula": "count(failure_classes)",
+      "confidence": "high",
+      "assumptions": ["Counts proposal-defined classification fields only; it is not a count of incidents or validated operating risks."]
+    },
+    "failure_governance_writeback_transition_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": ["visual/assets/failure-governance-register.json"],
+      "formula": "count(three_carrier_writeback_contract.transitions)",
+      "confidence": "high",
+      "assumptions": ["Counts design transitions for pause, review, recovery, withdrawal, and retirement, not executed state changes."]
+    },
+    "failure_governance_confirmed_stop_authority_count": {
+      "status": "known",
+      "value": 0,
+      "unit": "count",
+      "source_files": ["visual/assets/failure-governance-register.json", "visual/assets/pilot-readiness-register.json"],
+      "formula": "count(real role assignments with accepted immediate physical or procedural stop duty)",
+      "confidence": "high",
+      "assumptions": ["A required role type is not a confirmed person, organisation, legal duty, or staffed window."],
+      "reason": "No accountable operator or stop-authority assignment has been supplied."
+    },
+    "failure_governance_real_failure_event_count": {
+      "status": "known",
+      "value": 0,
+      "unit": "count",
+      "source_files": ["visual/assets/failure-governance-register.json", "visual/assets/t02-g0-g1-replay-result.json"],
+      "formula": "count(verified real failure or incident records)",
+      "confidence": "high",
+      "assumptions": ["The four T-02 declared stop events are PII-free synthetic governance cases and are excluded."],
+      "reason": "No real accident, service failure, rights event, complaint, or place-restoration failure is represented."
+    },
+    "failure_governance_real_public_correction_count": {
+      "status": "known",
+      "value": 0,
+      "unit": "count",
+      "source_files": ["visual/assets/failure-governance-register.json"],
+      "formula": "count(verified public correction receipts linked to an affected claim and preserved prior version)",
+      "confidence": "high",
+      "assumptions": ["A correction template or synthetic replay is not a published correction."],
+      "reason": "No operating service, confirmed custodian, appeal, or correction receipt exists."
+    },
+    "failure_governance_completed_real_independent_retest_count": {
+      "status": "known",
+      "value": 0,
+      "unit": "count",
+      "source_files": ["visual/assets/failure-governance-register.json", "visual/assets/pilot-readiness-register.json"],
+      "formula": "count(completed real retests by a confirmed reviewer independent of the delivery team)",
+      "confidence": "high",
+      "assumptions": ["A deterministic synthetic replay and a written retest protocol are not real independent retests."],
+      "reason": "No field or controlled real test, confirmed independent reviewer, locked evidence version, or signed result exists."
+    },
+    "failure_governance_completed_real_retirement_count": {
+      "status": "known",
+      "value": 0,
+      "unit": "count",
+      "source_files": ["visual/assets/failure-governance-register.json", "visual/assets/urban-metabolism-ledger.json"],
+      "formula": "count(completed retirement receipts closing component, data, service, same-task, and place destinations)",
+      "confidence": "high",
+      "assumptions": ["An exit route or retirement template is not an executed retirement."],
+      "reason": "No installed component, live data/service, accountable decision, restoration acceptance, or retirement receipt exists."
+    },
+    "failure_governance_stop_to_staffed_handoff_time": {
+      "status": "unknown",
+      "value": null,
+      "unit": "none",
+      "source_files": ["visual/assets/failure-governance-register.json"],
+      "formula": "future staffed_handoff_time - verified_stop_time for an approved bounded event",
+      "confidence": "unknown",
+      "assumptions": ["The unit, service window, start event, staffed availability rule, and denominator require preregistration."],
+      "reason": "No confirmed staff, operating window, real stop event, timestamp, or handoff record exists."
+    },
+    "failure_governance_ordinary_use_recovery_time": {
+      "status": "unknown",
+      "value": null,
+      "unit": "none",
+      "source_files": ["visual/assets/failure-governance-register.json", "visual/assets/key-area-evidence-matrix.json"],
+      "formula": "future independent ordinary-use restoration acceptance time - verified stop time",
+      "confidence": "unknown",
+      "assumptions": ["The affected ordinary task, place baseline, stop timestamp, restoration criteria, and independent acceptance require preregistration."],
+      "reason": "No real event, place baseline, restoration work, or independent acceptance exists."
+    },
+    "failure_governance_appeal_decision_change_count": {
+      "status": "known",
+      "value": 0,
+      "unit": "count",
+      "source_files": ["visual/assets/failure-governance-register.json"],
+      "formula": "count(verified appeals that produce hold, scope narrowing, correction, retest, withdrawal, or retirement)",
+      "confidence": "high",
+      "assumptions": ["The contract requires appeals to affect go/no-go, but does not claim an operating queue or outcome."],
+      "reason": "No real appeal, accountable decision owner, or correction/decision receipt exists."
     }
   }
 }
