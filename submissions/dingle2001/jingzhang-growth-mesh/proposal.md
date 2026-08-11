@@ -9,7 +9,6 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "高校与龙头企业是锚点，街区是孵化器，社群是基础设施：以一轴三核两翼把人才关系转化为项目，把项目转化为企业。"
 tracks: ["enterprise-services-ecosystem", "ai-origin-community", "civic-agent-governance"]
 scenarios: ["enterprise-service-copilot", "ai-traffic-walkability", "robot-delivery-low-speed", "public-safety-operations-review"]
-iteration: "v5.1-agent-attribution"
 ---
 
 # 京张生长网｜从园到城再到网的AI人才与企业共生社区

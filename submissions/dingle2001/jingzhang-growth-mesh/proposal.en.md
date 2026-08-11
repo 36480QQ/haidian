@@ -9,14 +9,13 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Universities and leading firms are anchors, the district is an incubator, and community is infrastructure: one axis, three cores and two wings convert talent relations into projects and projects into firms."
 tracks: ["enterprise-services-ecosystem", "ai-origin-community", "civic-agent-governance"]
 scenarios: ["enterprise-service-copilot", "ai-traffic-walkability", "robot-delivery-low-speed", "public-safety-operations-review"]
-iteration: "v5.1-agent-attribution"
 ---
 
 # JINGZHANG GROWTH MESH | An AI Talent and Enterprise Community from Park to City to Network
 
 > **Core proposition: universities and leading firms are anchors, the district is an incubator, and community is infrastructure.** Haidian does not lack innovation sources; it needs urban interfaces that turn talent relations into projects, projects into firms, and growing firms into the next round of shared capacity.
 
-## Design basis and source inventory
+## Design Basis and Source List
 
 The proposal combines the public brief, repository site package, professional references and reproducible provisional geometry with the author's original Mars Plan theories: park-city-network evolution, the five-stage growth loop and enterprise lifecycle observation. Local research supplies methods only; no internal Chaoyang market-regulation data is copied. Facts about Alibaba Beijing headquarters, incubation and creator communities are rechecked against public primary district sources.[source:OFFICIAL-ANNOUNCEMENT] [source:MARS-THEORY]
 
@@ -26,13 +25,13 @@ The SITE_BOUNDARY and three KEY_AREA polygons remain repository provisional cons
 
 ![Overall concept and three-level scope](assets/figures/site-overview.en.png)
 
-## Three-level scope framework
+## Three-Level Scope Framework
 
 The coordinated study area asks how Haidian's AI resources form a collaborative network; the overall design area asks how the heritage park becomes a continuous innovation-living district; the key areas ask how validation, incubation and commercialization become tangible spatial products. One evidence chain links strategy, space, operations and metrics.[standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [depth:three_level_scope_framework]
 
 Official polygons must replace provisional constraints before any statutory use. Land-use topology and all derived metrics must then be recalculated rather than retaining old values on a new base.[data:geometry/key_areas.geojson#PROV-KEY-001] [depth:metrics_recalculation]
 
-## Coordinated-area industry and future-city research
+## Coordinated Research Area: Industry and Future City Research
 
 The park supplied standardized production space; the city mixed work, life and services; the network enables knowledge, orders, talent and capital to move across nodes. AI is light-asset, mobile and weakly organized, so office supply alone cannot incubate firms. Shared compute and tests are the base, open scenarios the interface, communities the connector, and professional services and first orders the converter.[source:MARS-THEORY]
 
@@ -48,7 +47,7 @@ The park supplied standardized production space; the city mixed work, life and s
 
 Cases provide mechanism comparisons only; no media, foreign scale, investment or regulation is copied into Haidian.[source:CASE-KENDALL] [source:CASE-KQ] [source:CASE-ONENORTH]
 
-## Overall urban renewal and regulatory-plan-depth design
+## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
 
 The structure is one axis, three cores and two wings. The heritage park is the cultural, walking and innovation-display axis. Zhongzhiyuan validates, the AI Origin Community incubates, and Dazhongsi commercializes. The Zhongguancun wing makes policy, data, compute, IP, compliance and finance callable; the Xiaoyuehe wing turns mobility, environment, community and public-space questions into testable orders.[data:geometry/roads.geojson#ROAD-001] [depth:overall_spatial_structure]
 
@@ -64,7 +63,7 @@ The five stages release affordable reversible space, insert bounded real scenari
 
 Land-use polygons form a complete provisional partition. FAR, height, road redlines, total floor area and utility capacity remain pending official controls and surveys.[data:geometry/land_use.geojson#LU-001] [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [depth:development_intensity_controls]
 
-## Detailed design for the three key areas
+## Detailed Design of Key Areas
 
 Each key-area sheet combines a concept plan, A-A' section and operating thresholds. Sections follow the drawing logic of architectural drafting references through grids, datums, bay/overall dimension chains, cut/projected lineweights, intervention legends, egress and accessibility cues. Every dimension is a prototype control dimension and every sheet remains explicitly concept-stage/NTS/pending specialist verification—not a survey, approval or construction document.[standard:GBT-50001-2017] [standard:GBT-50104-2010] [source:STD-GBT-50103-2010]
 
@@ -88,7 +87,7 @@ A transit gateway, enterprise-service street, first-order hall, compliance clini
 
 ![Differentiated key-area strategies](assets/figures/key-areas.en.png)
 
-## AI ecosystem, personas and scenarios
+## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
 | # | Persona | Primary needs |
 |---|---|---|
@@ -119,13 +118,13 @@ Personas set thresholds, service entries, data boundaries and human fallback rat
 
 All industrial tests have bounded space, accountable operators, human release and review. Public services use minimum necessary data, clear notice, shutoff, appeal and offline alternatives.[metric:scenario_card_count] [metric:industry_test_scenario_count]
 
-## Land use, building scale and retain-renovate-demolish logic
+## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
 The proposal establishes a procedure rather than parcel conclusions: assess structure, fire, heritage, rights and adaptability; retain usable buildings; use reversible ground-floor and passage upgrades; return demolition and new construction to official controls and approvals. Prototypes include validation halls, open-source living rooms, short-stay units, open service streets and lightweight display frames.[data:geometry/buildings.geojson#BLDG-001] [depth:retain_renovate_demolish]
 
 Financial completeness does not mean inventing totals. The unit account treats space, equipment and professional services as separate revenue formulas; public space, infrastructure and inclusive services remain separate costs; equity returns never support basic debt service.[assumption:A-UNIT-ECONOMICS-007]
 
-## Mobility, rail, utilities and public facilities
+## Transport, Rail, Municipal Infrastructure, and Public Services
 
 The heritage axis carries walking, cycling, interpretation and public innovation; two wings provide lateral services; transit gateways use continuous ground floors, shelter, accessibility and short transfers. Robot tests never share unrestricted public lanes and require speed, time and area limits, remote takeover and incident review. Road geometry is conceptual.[data:geometry/roads.geojson#ROAD-004] [depth:traffic_rail_slow_parking]
 
@@ -133,13 +132,13 @@ Infrastructure is shared rather than duplicated: secure tests at Zhongzhiyuan, l
 
 ![Mobility, blue-green and scenario network](assets/figures/mobility-bluegreen.en.png)
 
-## Blue-green space, public realm and character
+## Blue-Green Network, Public Space, and Urban Character
 
 The park is the ecosystem's public living room. Lunch supports short meetings and walking; evenings support running, night school and lightning talks; weekends support science and scenario experience. Anonymous passage and free stay are protected. Accessibility for children, older and disabled users precedes showcase technology.[data:geometry/green_space.geojson#GREEN-001] [data:geometry/public_space.geojson#PUBLIC-001]
 
 The Open-Source Milestone records verified public contributions along the rail trace; the Origin Co-creation Hall and Global Developer Node Wall show cross-city cooperation with rights clearance; the Dazhongsi Enterprise Growth Rings record stages from validation to first order and community return. The identity uses technology blue, railway rust, growth green and warm gray without unauthorized corporate marks.[metric:landmark_count]
 
-## Project list, policy and phasing
+## Renewal Projects, Implementation Policy, and Phasing
 
 | ID | Project | Area | Users | Suggested operator | Dependencies | Near-term action | Risk |
 |---|---|---|---|---|---|---|---|
@@ -163,7 +162,7 @@ In 0-1 years, begin with rules and pilots: space/equipment catalogue, problem li
 
 The proposed operating platform combines a public or ownership base, professional space/community/business operations, and a council of universities, firms, advisers and residents. Market regulation, law, IP, data and safety enter before fit-out and scenario launch; complaints, service use, enterprise changes, project conversion and public feedback support continuous operational health checks. This is a reference mechanism, not an assigned government duty.
 
-## Metrics, recalculation and compliance
+## Metrics, Area Recalculation, and Compliance Matrix
 
 Geometry is recalculated by projecting EPSG:4326 to EPSG:4548. Site, green, public-space and footprint values are internal consistency evidence only.[metric:site_area_sqm] [metric:green_ratio] [metric:public_space_ratio]
 
@@ -171,7 +170,7 @@ NIS-Lite monitors active teams, projects, service calls, scenario orders and cap
 
 ![Geometry metrics, NIS/EHS and evidence chain](assets/figures/metrics-evidence.en.png)
 
-## Risk, copyright and compliance
+## Risk, Copyright, and Compliance
 
 Risks include mistaking provisional geometry, AI views or conceptual projects for official decisions; excessive sensing; replacing professional approval with AI; excluding startups through rent; and rights violations. Controls are visible qualification, structured provenance, minimum data, human review, reversible trials, exit gates and rights clearance.[assumption:A-CONTROLS-001] [assumption:A-AI-VISUAL-006]
 
