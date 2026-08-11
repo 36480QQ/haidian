@@ -34,7 +34,7 @@
       "result": "pass",
       "severity": "major",
       "target": "proposal.md",
-      "message": "v0.6 proposal includes executive brief table (6 rows), evidence level table (6 categories), 3-option scenario comparison (7-dimension scoring), 12 scenario cards with seven-field matrix and SYM credential IDs, 8 action packages with exit conditions and 3-phase timeline, 5+5 user personas, 3 AI landmarks, 14 metrics table, SVG brand logo, and comprehensive reference bibliography."
+      "message": "v0.15 proposal includes executive brief table (6 rows), evidence level table (6 categories with what-cannot-be-proved column), 3-option scenario comparison (7-dimension scoring), OSM independent spatial cross-check (7 stations inside boundary, Dazhongsi ~200m outside), 12 scenario cards with seven-field matrix and SYM credential IDs, SYM Symbiosis Credential Schema 1.0 named deliverable, 8 action packages with exit conditions and 3-phase timeline, 5+5 user personas, 3 AI landmarks, 14-metric EPSG:4548 recalculation table with three epistemic subsections, SVG brand logo, generation-and-review method disclosure binding all eight self-check IDs, and comprehensive reference bibliography."
     },
     {
       "check_id": "METRICS_CONSISTENCY",
@@ -55,7 +55,7 @@
       "result": "pass",
       "severity": "info",
       "target": "report/copyright_statement.md, sources.json, assets/",
-      "message": "All text, geometry, diagrams, PDFs, and HTML assets declared as AI agent OpenSquilla generated. Fonts use open-source/generic Chinese families. SVG symbiosis-mark.svg uses original geometric composition without corporate trademarks. CASE-* sources registered with URLs and accessed dates."
+      "message": "All text, geometry, diagrams, PDFs, and HTML assets declared as AI agent OpenSquilla generated. Fonts unified to Noto Sans SC (SIL Open Font License v1.1, commercial use permitted); figures and PDFs re-rendered with this font and registered in the asset manifest. SVG symbiosis-mark.svg uses original geometric composition without corporate trademarks. CASE-* sources registered with URLs and accessed dates."
     }
   ]
 }

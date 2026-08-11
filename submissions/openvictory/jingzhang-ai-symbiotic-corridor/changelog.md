@@ -1,3 +1,23 @@
+## v0.15.1 - 2026-08-11
+
+闭合双语合同完整性缺口（复审要求，单提交）：
+
+- `proposal.en.md` 补齐 Copyright and Generation Disclosure + References 全量双语段落（与中文 §4 + 参考资料逐条等义，含 `[self_check:COPYRIGHT_ASSET_REGISTRY]` 证据标记）
+- `self_check.json` PROFESSIONAL_EVIDENCE 版本描述更新为 v0.15 实际证据清单（消除陈旧 v0.6 引用），COPYRIGHT_ASSET_REGISTRY 消息同步 Noto Sans SC 字体登记事实
+- 重渲染 report/proposal.en.html 并同步 manifest SHA-256
+
+## v0.15 - 2026-08-10
+
+对标 96 分方案的证据绑定与认识论差距闭合（单提交一次推送）：
+
+- 新增"生成与复核方法"专节：同一 PROV-SITE-001 派生、EPSG:4326/4548 复算链、三类证据处理，逐条绑定 `[self_check:*]`
+- 全部 8 个自检 check ID（BOUNDARY_TRUST / KEY_AREAS_TRUST / LAND_USE_TOPOLOGY / VISUAL_STATIC / PROFESSIONAL_EVIDENCE / METRICS_CONSISTENCY / PRIVACY_HUMAN_REVIEW / COPYRIGHT_ASSET_REGISTRY）绑定进正文证据链
+- 指标章扩为三小节：复算方法与一致性 / 背景观察不冒充空间指标 / AI创新指数=框架非伪精确分数
+- 新增 SYM 共生凭证 Schema 1.0（9 字段具名可交付接口），中英提案与 A3/A0 同步
+- 风险矩阵编号修正（3/4→3）；新增 A-TRANSPORT-001 假设登记
+- 五组证据图全部从 GeoJSON 真渲染为中英双语独立版（修复 4 组字节级复制问题），A3/A0 双版 PDF 重建（27KB→620KB，真图版+指标+Schema）
+- 字体统一 Noto Sans SC (SIL OFL v1.1)，商用已清权
+
 ## v0.14.1 - 2026-08-10
 
 Metadata fix: add proposal_format_version=2 and bilingual_contract_version=1 to proposal.md and proposal.en.md front matter. Sync proposal.en.md iteration to v0.14.
