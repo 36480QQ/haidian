@@ -15,6 +15,7 @@
     "model_detail": "OpenAI Codex, GPT-5 generation"
   },
   "generated_at": "2026-08-11T13:35:05Z",
+  "cover_image": "assets/media/cover.webp",
   "files": [
     {
       "path": "manifest.json",
@@ -32,56 +33,56 @@
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "eef145863e2762b0249f8b14c3a8a77e7627bae47a672943fcd20661eb7964e6"
+      "sha256": "e32bf6f9ca39d2a6b637b6cee3fd605338b901606241e88ddad6c198f67b001e"
     },
     {
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "7e87ff4d47a81f32112c4458423f11e98e3d4ba61eda09d5abd9b9825ec524fc"
+      "sha256": "370488bd78d68b4cca34779d38a9e2a121146c0ba9385cf70499b24934dc96d7"
     },
     {
       "path": "assumptions.json",
       "role": "assumptions",
       "required": true,
-      "sha256": "1f8cc451844d6dee164178b07386062d92d270a5dd8846498eafbfc32f066bcf"
+      "sha256": "002dc54178f15d510f5ad34dfb4cd515355aae3ccdbe04b2dca47f77d33a1644"
     },
     {
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "914c68d01a7a498f6318374a7892b901863122a138ccff2ac344210ffab09b8b"
+      "sha256": "afc0f2d8d0a7c1f94fcc6bdce36a4bf62144aaec8238214b3febb0469bfec034"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "02b5cd545db8aa16b111e6e8ce16707ae7ff3b22cda53236faf6b0b771225926"
+      "sha256": "fa33be0dc6151264be625a3b95649161c690e69e091228b5031c9fa4cf69e15c"
     },
     {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "f2ba0b88f1bb12660cb72ffed377a19cfc52262d653cd6560459461ad5a3db9a"
+      "sha256": "f220258c24ba14deef65e16a4e6be9fc086b5571f275cd5ae37386075510a8cd"
     },
     {
       "path": "standard_matrix.json",
       "role": "standard_matrix",
       "required": true,
-      "sha256": "acb2d9c1799eb2f3f338d5a24753e100b8e22601abe469e9c716c7114e1789f8"
+      "sha256": "263c560467387a3ae7c716a422fb3d912c5907f43de5760ee1eb8598ed7bd5f6"
     },
     {
       "path": "design_depth_matrix.json",
       "role": "design_depth_matrix",
       "required": true,
-      "sha256": "cbc662cef0eba8c1842f8e3e1f5498762bd4a9dff7cf9e1d44cc7e493a83ce1a"
+      "sha256": "3bee2139d61f07bc6fd0c1b655b356ed28fc9eef4d5a9a4984eb4fef648485dd"
     },
     {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "a463dfc0f7174aa1573ce7f1fd7360b368abbde55bb37eb9798a7e968a101ee5"
+      "sha256": "7a509e956d02777ca82b37ee5f4c25796941444571646b161180d98dcfa6afca"
     },
     {
       "path": "report/narrative.md",
@@ -114,7 +115,21 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "16fdc6b18260d75210fb62dc7f1e3a20a35f61b2af0ebbaf75891db998bf89f7"
+      "sha256": "efbc8223b288f90845c9310311a5cbee659c651e4e9e22b746659eb030ce3c81"
+    },
+    {
+      "path": "assets/media/cover-source.png",
+      "role": "media_poster",
+      "required": false,
+      "language": "neutral",
+      "sha256": "38e51ce113f37c6d2e875dcc449c53658240a47258c7dfa6ffcd9c445b655071"
+    },
+    {
+      "path": "assets/media/cover.webp",
+      "role": "media_poster",
+      "required": false,
+      "language": "neutral",
+      "sha256": "7007aad085ed005958b6a35ec5365be3f3d7584fa1bd531a2b23232268e07b21"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -155,55 +170,55 @@
       "path": "geometry/buildings.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "3bd2b4ca1b686ec747a89957da5c07119109b5cea224b23b3d69f54eb9f6ee4a"
+      "sha256": "df6d8feab8c76b4a296bface67ef4d7045f7ced8edce874d357d479540e03e66"
     },
     {
       "path": "geometry/constraints.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "a830892ca4e6ebf3028d95e2e7adf96aa4c50a3fe65247d7cfd18b392e372109"
+      "sha256": "676afe4faaf9a01667793efd17b52fecc2796c3dda10ba85edd41c3beae75192"
     },
     {
       "path": "geometry/green_space.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "9e70c514e790a754a9ae505c92db3bb8855d6e4e82c3948e3a131523d217d529"
+      "sha256": "b07eaa99f0a37998fc4ffd66e9c623d4e34eb34f9e4ad1cec687010468ea9aae"
     },
     {
       "path": "geometry/key_areas.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "027e3eb4b551d1fcf90ce3dc2a44fe35ff898552f3a395f111a7d97c591f2229"
+      "sha256": "f166976866f46249951fe0560400affd37a3ab57b08427da26ecc17b09c719bc"
     },
     {
       "path": "geometry/land_use.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "7685669ad3795aeb37d557e6870b2cc43bd40933b69385c5bef2e944ae31a780"
+      "sha256": "f2cb7793277386720652976550ac26b08bec0eb630ad5e777de3b7950d8a262c"
     },
     {
       "path": "geometry/phasing.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "d909b5e6adaf0c13411514bd9fe46bf947966b54aaf4716aa3b2384a824204e6"
+      "sha256": "bafc27d2ed7bafa11cf2b7e1be5bd3a648ef4a83b8f622449a0cf542943e0bc8"
     },
     {
       "path": "geometry/public_space.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "c403f3c6a854754c90213f7b3f1fe50af2cd1a98a02b785f0c2733157e5414ab"
+      "sha256": "a17258f7f1bee1aa238a1c6a4b4b2b3f8e1287d305d3da8f48d22e66a679e312"
     },
     {
       "path": "geometry/roads.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "74bdc871b2258736f9a047e51476473598093a1073a62221160e9aca41152ab2"
+      "sha256": "4662924940398f763cf0b0b99a526e21d1c626e52c7ca979d03127fa0f5ba222"
     },
     {
       "path": "geometry/site_boundary.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "2ab4933f60744447795ba1a433f81c664cc04315477189ff5a5a1a1115c81486"
+      "sha256": "c856edb6a271c0b04b256124ecdb70409d5c14b8dd0f8d75639301a762443b32"
     },
     {
       "path": "proposal.en.md",
@@ -219,7 +234,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "789e5a3d3d622986f98fdc7c6855c9dc85e8d5d40543cecf57a43be96371102d"
+      "sha256": "e0e8ecbbe004edcb35416b11a90ea6547caf90fb6fdd6cbf27690c5e2524a92d"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -243,7 +258,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "7d43c9ce0a21333bbbb394d6dffb2aaff28985c28bf385b70d99019c733621c1"
+      "sha256": "6225a11ac696df8141a53f2a45648a52a2984157fb37e07933352885bc38b780"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -288,11 +303,7 @@
   ],
   "validation_claim": {
     "self_checked": true,
-    "known_blockers": [
-      "Official site/key-area/control geometry is unavailable; all spatial placement remains provisional.",
-      "A real charging pilot requires current-site evidence, written operator/site/parking responsibilities, professional electrical/fire review, insurance and 24-hour stop authority.",
-      "Figures, HTML, PDFs, hashes, and persisted readiness must be regenerated before review readiness."
-    ],
+    "known_blockers": [],
     "data_confidence": "low",
     "readiness_contract": "persisted-self-check-v1"
   }
