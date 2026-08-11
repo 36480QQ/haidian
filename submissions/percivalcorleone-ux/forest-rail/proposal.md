@@ -311,7 +311,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 | 隔离短驳 | 车载传感/急停状态 | 班次或停运 | 立即停运，步行优先 |
 | 节点开闭 | 天气/活动许可 | 试运行点开闭 | 纸面时段表 |
 
-治理边界（Quayside 教训）：最小数据、可审计、可申诉、可退出；不做人脸、不存个人画像 [source:CASE-AI-TORONTO-VECTOR]。
+治理边界（Quayside 教训）：最小数据、可审计、可申诉、可退出；不做人脸、不存个人画像 [source:CASE-TORONTO-QUAYSIDE]。
 
 ### 无障碍与包容性（行动不便者优先）
 

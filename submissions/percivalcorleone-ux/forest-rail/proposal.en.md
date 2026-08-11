@@ -270,7 +270,7 @@ Benchmarking Gardens by the Bay central-dashboard logic: sensing and rules feed 
 | Isolated shuttle | Vehicle sensing/E-stop state | Shift or halt | Immediate halt; walking priority |
 | Node open/close | Weather/event permit | Trial-point open/close | Printed hours table |
 
-Governance boundary (Quayside lesson): minimum data, auditable, appealable, exit-ready; no face ID, no personal profiles [source:CASE-AI-TORONTO-VECTOR].
+Governance boundary (Quayside lesson): minimum data, auditable, appealable, exit-ready; no face ID, no personal profiles [source:CASE-TORONTO-QUAYSIDE].
 
 ### Accessibility and inclusion
 Wheelchair: prefer flat; if slope ≤1:20 + handrail. Deaf/blind: tactile + low-glare lights; concept dedicated AV shuttle (tactile/voice/text/help). Low-digital / non-Chinese: no forced app; bilingual icons. Fair siting + appeal + human override.
