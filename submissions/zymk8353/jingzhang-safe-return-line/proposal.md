@@ -21,6 +21,8 @@ scenarios: ["ai-health-service-navigation", "public-safety-operations-review", "
 
 场地包尚无可引用的正式红线、控规、道路红线、权属、文保、蓝线和现状建筑全量数据。本包沿用维护者提供的临时粗略范围，明确标注 `provisional_constraint` 与 `official_boundary=false`，只用于生成、可视化和方法验证。[source:BOUNDARY-SOURCE] [data:geometry/site_boundary.geojson#SITE-001] 总体设计范围的几何复算值约 11.41 平方公里，仅说明提交图层内部自洽，不升级为法定面积或精确场地结论。[metric:site_area_sqm]
 
+区位核验补充：仓库 Issue #1029 的公开复算记录指出，上游 `PROV-KEY-003` 临时 polygon 的面积与南北顺序自洽，但质心约位于北京北站一带，距大钟寺站约 2.26 km。该记录不是官方边界，也不是自行平移的授权。本案保留上游几何只作占位；“大钟寺”任务叙事来自公告名称，所有真实站点、社区和归药服务候选必须另行现场与责任主体核验。官方或 canonical 几何更新后，整体重算图层、指标、图件、PDF 与 HTML。[source:ISSUE-1029] [assumption:A-BOUNDARY-001]
+
 新增资料全部来自公开或清权来源：北京市药品废弃物实施方案、海淀既往家庭药品回收公开信息、北下关与大钟寺公开页面，以及 AI Verify、OpenEPCIS、OpenLMIS、OpenBoxes、OpenDP、Timefold、澳大利亚 NatRUM、法国未使用药品责任体系等第一方资料。用途、访问时间、许可和限制见 `sources.json`。我们借鉴的是“事件模型、模块化物流、隐私保护、约束优化、公众投递与专业处置分离”等方法，不复制品牌、界面、图像或未经验证的成效数字。
 
 ![归药线总览：问题、责任链与三区两翼](assets/figures/site-overview.png)
