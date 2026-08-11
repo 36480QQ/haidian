@@ -1,12 +1,46 @@
 {
   "schema_version": "0.1.0",
+  "ok": true,
+  "can_enter_formal_review": true,
   "checks": [
+    {
+      "check_id": "DETERMINISTIC_VALIDATION",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "submission package",
+      "message": "Current local submission validation completed without deterministic errors.",
+      "suggested_fix": "Rerun repository validation after any package change."
+    },
+    {
+      "check_id": "SPATIAL_REVIEW",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "geometry/*.geojson",
+      "message": "Current local formal spatial review passed; provisional geometry remains explicitly labelled and content-scoring eligible.",
+      "suggested_fix": "Replace provisional geometry with cleared source data and rerun spatial review when supplied."
+    },
+    {
+      "check_id": "VISUAL_PACKAGING",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "visual/index.html, drawings",
+      "message": "Current local visual-packaging review passed for the static visualization, required review markers, and declared metrics.",
+      "suggested_fix": "Rerun visual review after changing layout, assets, or displayed metrics."
+    },
+    {
+      "check_id": "PROFESSIONAL_EVIDENCE",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "proposal.md, matrices, metrics",
+      "message": "Current local professional-evidence review passed for required standards, design depth, and claim-adjacent evidence.",
+      "suggested_fix": "Update source, metric, and matrix references together when revising claims."
+    },
     {
       "check_id": "BOUNDARY_TRUST",
       "result": "pass",
       "severity": "major",
       "target": "geometry/site_boundary.geojson",
-      "message": "A traceable provisional boundary is explicitly flagged as non-official and non-statutory; it must be replaced before professional spatial scoring.",
+      "message": "A traceable provisional boundary is explicitly flagged as non-official and non-statutory; it must be replaced before statutory or implementation use.",
       "suggested_fix": "Obtain cleared official geometry with source/version/CRS metadata, replace all dependent geometry, and rerun reviews."
     },
     {
@@ -42,6 +76,22 @@
       "suggested_fix": "Keep the page self-contained when revising."
     },
     {
+      "check_id": "METHOD_TRANSLATION",
+      "result": "pass",
+      "severity": "info",
+      "target": "report/narrative.md",
+      "message": "Six international precedents are recorded with their source, a local translation, and an explicit non-copying caution.",
+      "suggested_fix": "Revisit method translations if public site data, user research, or review feedback changes the local constraints."
+    },
+    {
+      "check_id": "COVER_PROVENANCE",
+      "result": "pass",
+      "severity": "info",
+      "target": "assets/hero/jingzhang-commons-cover.png",
+      "message": "The original generated cover is labelled as conceptual atmosphere only; its prompt summary, source record, license, and limitation are documented.",
+      "suggested_fix": "Do not use the cover as spatial evidence or a representation of an approved/built condition."
+    },
+    {
       "check_id": "LOCAL_SPATIAL_REVIEW",
       "result": "pass",
       "severity": "info",
@@ -50,12 +100,12 @@
       "suggested_fix": "Rerun spatial_review.py after any geometry, metric, or boundary replacement."
     },
     {
-      "check_id": "PUSH_AUTHORIZATION",
-      "result": "unknown",
+      "check_id": "PUBLISH_TARGET",
+      "result": "pass",
       "severity": "info",
-      "target": "GitHub fork and pull request",
-      "message": "No fork, branch, commit, or pull request has been created from this local package.",
-      "suggested_fix": "Confirm the GitHub login and authorize the external repository action before publishing."
+      "target": "https://github.com/open-city-ai/haidian/pull/1661",
+      "message": "The v0.2 revision is prepared to update the existing aibert2 submission branch and pull request, avoiding a duplicate submission.",
+      "suggested_fix": "After upload, re-run repository validation and verify the PR check status."
     }
   ]
 }

@@ -161,6 +161,33 @@
         "A-CULTURE-006"
       ]
     },
+    "global_method_case_count": {
+      "status": "known",
+      "value": 6,
+      "unit": "count",
+      "source_files": [
+        "proposal.md",
+        "report/narrative.md"
+      ],
+      "formula": "Count of documented international method precedents",
+      "confidence": "high",
+      "assumptions": [
+        "A-CASE-007"
+      ]
+    },
+    "annual_activity_cycle_count": {
+      "status": "known",
+      "value": 1,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "Count of proposed recurring annual public-return activity cycles",
+      "confidence": "high",
+      "assumptions": [
+        "A-OPERATIONS-004"
+      ]
+    },
     "official_controlled_floor_area_sqm": {
       "status": "unknown",
       "value": null,
