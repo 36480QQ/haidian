@@ -299,6 +299,46 @@
       "confidence": "high",
       "assumptions": []
     },
+    "public_acceptance_test_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": [
+        "proposal.md",
+        "proposal.en.md",
+        "visual/assets/public-acceptance-tabletop/contract.json"
+      ],
+      "formula": "count(visible, explainable, useful, stoppable, changeable acceptance conditions)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "key_area_interface_prototype_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "proposal.md",
+        "proposal.en.md",
+        "assets/figures/key-area-interfaces.png"
+      ],
+      "formula": "count(distinct public-interface prototypes for the three Key Areas)",
+      "confidence": "high",
+      "assumptions": [
+        "A-BOUNDARY-001"
+      ]
+    },
+    "public_acceptance_tabletop_negative_case_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/public-acceptance-tabletop/fixtures.negative.json"
+      ],
+      "formula": "count(synthetic negative fixtures in the offline tabletop rehearsal)",
+      "confidence": "high",
+      "assumptions": [],
+      "reason": "Content count only; the tabletop is not authorised and has not been run in the field."
+    },
     "regional_collaboration_interface_count": {
       "status": "known",
       "value": 5,
