@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>京张支线带 · THE BRANCH LINES</title>
+<style>
+:root { --ink:#263238; --muted:#607D8B; --green:#2E7D32; --line:#ECEFF1; --bg:#F7F9FA; }
+* { box-sizing:border-box; margin:0; padding:0; }
+body { font-family:"Microsoft YaHei","Segoe UI",system-ui,sans-serif; background:var(--bg); color:var(--ink); line-height:1.55; }
+header { background:linear-gradient(135deg,#1B5E20,#388E3C); color:#fff; padding:34px 26px; }
+header h1 { font-size:26px; letter-spacing:1px; }
+header p { opacity:.92; margin-top:6px; font-size:14px; }
+.banner { background:#FFF8E1; border-left:4px solid #F9A825; padding:10px 16px; font-size:13px; color:#6D4C00; }
+main { max-width:1060px; margin:0 auto; padding:20px 16px 60px; }
+.kpis { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:12px; margin:18px 0; }
+.kpi { background:#fff; border:1px solid var(--line); border-radius:10px; padding:14px 12px; text-align:center; }
+.kpi-v { display:block; font-size:21px; font-weight:700; color:var(--green); }
+.kpi-l { font-size:12px; color:var(--muted); }
+.cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr)); gap:16px; }
+.card { background:#fff; border:1px solid var(--line); border-radius:12px; padding:16px; }
+.card h2 { font-size:16px; color:var(--green); margin-bottom:10px; border-bottom:2px solid var(--line); padding-bottom:6px; }
+.card img { width:100%; border-radius:8px; border:1px solid var(--line); }
+.card p { font-size:13.5px; color:#37474F; margin-top:8px; }
+.text-only p { font-size:13.5px; }
+footer { text-align:center; color:var(--muted); font-size:12px; padding:18px; border-top:1px solid var(--line); }
+@media (max-width:640px) { header h1 { font-size:20px; } .cards { grid-template-columns:1fr; } }
+</style>
+</head>
+<body>
+<header>
+  <h1>京张支线带 · THE BRANCH LINES</h1>
+  <p>百年京张AI创新带城市设计开源征集 · AI Agent 概念方案</p>
+</header>
+<main>
+  <div class="banner">边界为临时几何（provisional），官方红线待补；所有空间结论为概念建议，不替代正式规划。</div>
+  <div class="kpis"><div class="kpi"><span class="kpi-v" data-metric="site_area_sqm" data-value="11412825.39">11.41 km²</span><span class="kpi-l">场地面积</span></div><div class="kpi"><span class="kpi-v" data-metric="key_area_total_sqm" data-value="3692893.01">369.3 ha</span><span class="kpi-l">三区合计</span></div><div class="kpi"><span class="kpi-v" data-metric="green_ratio" data-value="0.1172">11.7%</span><span class="kpi-l">绿地率</span></div><div class="kpi"><span class="kpi-v" data-metric="public_space_ratio" data-value="0.0173">1.73%</span><span class="kpi-l">公共空间率</span></div><div class="kpi"><span class="kpi-v" data-metric="building_count" data-value="73">73 栋</span><span class="kpi-l">概念建筑</span></div><div class="kpi"><span class="kpi-v" data-metric="road_length_m" data-value="15633.6">15.6 km</span><span class="kpi-l">概念路网</span></div></div>
+  <div class="cards">
+      <section id="metric" class="card">
+        <h2>核心指标</h2>
+        <p></p>
+        <div class="kpis"><div class="kpi"><span class="kpi-v" data-metric="site_area_sqm" data-value="11412825.39">11.41 km²</span><span class="kpi-l">场地面积</span></div><div class="kpi"><span class="kpi-v" data-metric="key_area_total_sqm" data-value="3692893.01">369.3 ha</span><span class="kpi-l">三区合计</span></div><div class="kpi"><span class="kpi-v" data-metric="green_ratio" data-value="0.1172">11.7%</span><span class="kpi-l">绿地率</span></div><div class="kpi"><span class="kpi-v" data-metric="public_space_ratio" data-value="0.0173">1.73%</span><span class="kpi-l">公共空间率</span></div><div class="kpi"><span class="kpi-v" data-metric="building_count" data-value="73">73 栋</span><span class="kpi-l">概念建筑</span></div><div class="kpi"><span class="kpi-v" data-metric="road_length_m" data-value="15633.6">15.6 km</span><span class="kpi-l">概念路网</span></div></div>
+      </section>
+      <section id="overview" class="card">
+        <h2>总览地图</h2>
+        <img src="../assets/figures/site-overview.png" alt="总览地图" loading="lazy">
+        <p>一正五支：正线为京张遗址公园绿脊，五条支线为众智园、AI原点社区、大钟寺三区与中关村科技服务翼、小月河场景赋能翼两翼。支线既是铁路支线，也是开源世界的分支（branch）——创新像PR一样沿支线生长、在正线上被检验、最终合并回主线。</p>
+      </section>
+      <section id="scope" class="card">
+        <h2>三层范围</h2>
+        <img src="../assets/figures/land-use-structure.png" alt="三层范围" loading="lazy">
+        <p>统筹研究范围43.6km²（产业战略）→ 总体设计范围11.4km²（一正五支结构）→ 重点区域368.4ha（三区详细设计）。</p>
+      </section>
+      <section id="key" class="card">
+        <h2>重点区域</h2>
+        <img src="../assets/figures/key-areas.png" alt="重点区域" loading="lazy">
+        <p>众智园AI自主创新加速区192.9ha（全栈自主+治理话语权）、北京AI原点社区104.3ha（世界级创新生态）、大钟寺AI产业集聚区72.0ha（智能原生新业态）。</p>
+      </section>
+      <section id="lu" class="card">
+        <h2>用地分区</h2>
+        <img src="../assets/figures/land-use-structure.png" alt="用地分区" loading="lazy">
+        <p>17个用地单元平铺覆盖提交边界，无缝隙无重叠；科研、教育、商业、居住与绿地沿支线布局。</p>
+      </section>
+      <section id="mob" class="card">
+        <h2>交通慢行</h2>
+        <img src="../assets/figures/mobility-bluegreen.png" alt="交通慢行" loading="lazy">
+        <p>正线绿道慢行主脊15.6km概念路网；支线接驳道路+正线横街；轨道锚点：大钟寺/五道口/知春路/清河。</p>
+      </section>
+      <section id="blue" class="card">
+        <h2>蓝绿公共空间</h2>
+        <img src="../assets/figures/mobility-bluegreen.png" alt="蓝绿公共空间" loading="lazy">
+        <p>一脊三廊一湾：绿脊+三支线绿廊+小月河滨水绿廊，绿地133.7ha；公共空间10节点（7正线公共站+3重点区广场）。</p>
+      </section>
+      <section id="bld" class="card text-only">
+        <h2>建筑</h2>
+        <p>73栋概念建筑、基底44.5万m²，仅表达体量方向，不代表法定建筑面积。</p>
+      </section>
+      <section id="renew" class="card text-only">
+        <h2>更新项目</h2>
+        <p>近期正线+原点社区→中期众智园+大钟寺→远期两翼；五期分区（phasing.geojson）。</p>
+      </section>
+      <section id="scene" class="card text-only">
+        <h2>AI 场景</h2>
+        <p>12张场景卡（S01-S12）含3个产业测试验证场景（T01-T03）；5类用户画像；场景-空间-运营映射。</p>
+      </section>
+      <section id="task" class="card text-only">
+        <h2>任务覆盖</h2>
+        <p>公告1.3/1.4/1.5全部20项任务 + 智能体任务书agent.1-agent.6 全部覆盖（compliance_matrix.json）。</p>
+      </section>
+      <section id="self" class="card text-only">
+        <h2>自检状态</h2>
+        <p>本地自检通过后写入 self_check.json；空间审查：PASS（仅provisional提示）；视觉/专业审查随最终化刷新。</p>
+      </section>
+      <section id="src" class="card text-only">
+        <h2>来源</h2>
+        <p>官方公告（2026-05-09）、智能体任务书（2026-05-18）、三区两翼报道（2026-04-03）、海淀1+X+1（2026-03-02）、城市设计管理办法、控规办法、用地分类指南、provisional边界（Issue #846）。</p>
+      </section>
+      <section id="assume" class="card text-only">
+        <h2>假设</h2>
+        <p>A-CONTROLS-001：控规条件/道路红线/权属/市政/工程约束待官方资料确认；官方边界公布后全量重算。</p>
+      </section>
+  </div>
+</main>
+<footer>本方案由AI Agent生成并声明生成方法；为开放共创概念建议，不构成政府审定结论。</footer>
+</body>
+</html>

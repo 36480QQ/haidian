@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JZ BRANCH LINES</title>
+<style>
+:root { --ink:#263238; --muted:#607D8B; --green:#2E7D32; --line:#ECEFF1; --bg:#F7F9FA; }
+* { box-sizing:border-box; margin:0; padding:0; }
+body { font-family:"Microsoft YaHei","Segoe UI",system-ui,sans-serif; background:var(--bg); color:var(--ink); line-height:1.55; }
+header { background:linear-gradient(135deg,#1B5E20,#388E3C); color:#fff; padding:34px 26px; }
+header h1 { font-size:26px; letter-spacing:1px; }
+header p { opacity:.92; margin-top:6px; font-size:14px; }
+.banner { background:#FFF8E1; border-left:4px solid #F9A825; padding:10px 16px; font-size:13px; color:#6D4C00; }
+main { max-width:1060px; margin:0 auto; padding:20px 16px 60px; }
+.kpis { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:12px; margin:18px 0; }
+.kpi { background:#fff; border:1px solid var(--line); border-radius:10px; padding:14px 12px; text-align:center; }
+.kpi-v { display:block; font-size:21px; font-weight:700; color:var(--green); }
+.kpi-l { font-size:12px; color:var(--muted); }
+.cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr)); gap:16px; }
+.card { background:#fff; border:1px solid var(--line); border-radius:12px; padding:16px; }
+.card h2 { font-size:16px; color:var(--green); margin-bottom:10px; border-bottom:2px solid var(--line); padding-bottom:6px; }
+.card img { width:100%; border-radius:8px; border:1px solid var(--line); }
+.card p { font-size:13.5px; color:#37474F; margin-top:8px; }
+.text-only p { font-size:13.5px; }
+footer { text-align:center; color:var(--muted); font-size:12px; padding:18px; border-top:1px solid var(--line); }
+@media (max-width:640px) { header h1 { font-size:20px; } .cards { grid-template-columns:1fr; } }
+</style>
+</head>
+<body>
+<header>
+  <h1>JZ BRANCH LINES</h1>
+  <p>Centennial Jing-Zhang AI Innovation Belt · Open Call · AI Agent Concept</p>
+</header>
+<main>
+  <div class="banner">Boundaries are provisional; official redlines pending. All spatial conclusions are conceptual suggestions, not statutory planning.</div>
+  <div class="kpis"><div class="kpi"><span class="kpi-v" data-metric="site_area_sqm" data-value="11412825.39">11.41 km²</span><span class="kpi-l">Site area</span></div><div class="kpi"><span class="kpi-v" data-metric="key_area_total_sqm" data-value="3692893.01">369.3 ha</span><span class="kpi-l">Key areas total</span></div><div class="kpi"><span class="kpi-v" data-metric="green_ratio" data-value="0.1172">11.7%</span><span class="kpi-l">Green ratio</span></div><div class="kpi"><span class="kpi-v" data-metric="public_space_ratio" data-value="0.0173">1.73%</span><span class="kpi-l">Public-space ratio</span></div><div class="kpi"><span class="kpi-v" data-metric="building_count" data-value="73">73</span><span class="kpi-l">Buildings</span></div><div class="kpi"><span class="kpi-v" data-metric="road_length_m" data-value="15633.6">15.6 km</span><span class="kpi-l">Road network</span></div></div>
+  <div class="cards">
+      <section id="metric" class="card">
+        <h2>Core Metrics</h2>
+        <p></p>
+        <div class="kpis"><div class="kpi"><span class="kpi-v" data-metric="site_area_sqm" data-value="11412825.39">11.41 km²</span><span class="kpi-l">Site area</span></div><div class="kpi"><span class="kpi-v" data-metric="key_area_total_sqm" data-value="3692893.01">369.3 ha</span><span class="kpi-l">Key areas total</span></div><div class="kpi"><span class="kpi-v" data-metric="green_ratio" data-value="0.1172">11.7%</span><span class="kpi-l">Green ratio</span></div><div class="kpi"><span class="kpi-v" data-metric="public_space_ratio" data-value="0.0173">1.73%</span><span class="kpi-l">Public-space ratio</span></div><div class="kpi"><span class="kpi-v" data-metric="building_count" data-value="73">73</span><span class="kpi-l">Buildings</span></div><div class="kpi"><span class="kpi-v" data-metric="road_length_m" data-value="15633.6">15.6 km</span><span class="kpi-l">Road network</span></div></div>
+      </section>
+      <section id="overview" class="card">
+        <h2>Overview Map</h2>
+        <img src="../assets/figures/site-overview.en.png" alt="Overview Map" loading="lazy">
+        <p>One mainline, five branches: the mainline is the Jing-Zhang Heritage Park green spine; the five branches are the three key areas (Zhongzhiyuan, AI Origin Community, Dazhongsi) and two wings (Zhongguancun Service Wing, Xiaoyuehe Scenario Wing). A branch is both a railway branch line and an open-source branch — innovation grows along branches like PRs, is validated on the mainline, and merges back.</p>
+      </section>
+      <section id="scope" class="card">
+        <h2>Three-Level Scope</h2>
+        <img src="../assets/figures/land-use-structure.en.png" alt="Three-Level Scope" loading="lazy">
+        <p>Coordinated research 43.6 km² (strategy) → Overall design 11.4 km² (one-mainline-five-branches) → Key areas 368.4 ha (detailed design).</p>
+      </section>
+      <section id="key" class="card">
+        <h2>Key Areas</h2>
+        <img src="../assets/figures/key-areas.en.png" alt="Key Areas" loading="lazy">
+        <p>Zhongzhiyuan AI Acceleration 192.9 ha (full-stack + governance voice); Beijing AI Origin Community 104.3 ha (world-class ecosystem); Dazhongsi AI Cluster 72.0 ha (AI-native formats).</p>
+      </section>
+      <section id="lu" class="card">
+        <h2>Land Use</h2>
+        <img src="../assets/figures/land-use-structure.en.png" alt="Land Use" loading="lazy">
+        <p>17 parcels tile the submitted boundary with no gaps or overlaps; research, education, commercial, residential, and green land arranged along branches.</p>
+      </section>
+      <section id="mob" class="card">
+        <h2>Mobility</h2>
+        <img src="../assets/figures/mobility-bluegreen.en.png" alt="Mobility" loading="lazy">
+        <p>Mainline greenway slow-traffic spine in a 15.6 km conceptual network; branch connector roads + cross streets; rail anchors: Dazhongsi/Wudaokou/Zhichunlu/Qinghe.</p>
+      </section>
+      <section id="blue" class="card">
+        <h2>Blue-Green Public Space</h2>
+        <img src="../assets/figures/mobility-bluegreen.en.png" alt="Blue-Green Public Space" loading="lazy">
+        <p>One spine, three corridors, one bay: green spine + three branch greenways + Xiaoyuehe riverfront, 133.7 ha green; 10 public-space nodes (7 mainline stations + 3 plazas).</p>
+      </section>
+      <section id="bld" class="card text-only">
+        <h2>Buildings</h2>
+        <p>73 conceptual buildings, 445k m² footprint — massing direction only, not statutory floor area.</p>
+      </section>
+      <section id="renew" class="card text-only">
+        <h2>Renewal Projects</h2>
+        <p>Near term: mainline + Origin Community → Mid term: Zhongzhiyuan + Dazhongsi → Long term: two wings; five phases (phasing.geojson).</p>
+      </section>
+      <section id="scene" class="card text-only">
+        <h2>AI Scenarios</h2>
+        <p>12 scenario cards (S01-S12) incl. 3 industry test/validation scenarios (T01-T03); 5 user personas; scenario-space-operation mapping.</p>
+      </section>
+      <section id="task" class="card text-only">
+        <h2>Task Coverage</h2>
+        <p>All 20 announcement tasks (1.3/1.4/1.5) + agent.1-agent.6 fully covered (compliance_matrix.json).</p>
+      </section>
+      <section id="self" class="card text-only">
+        <h2>Self-Check Status</h2>
+        <p>Local self-check writes self_check.json; spatial review: PASS (provisional notes only); visual/professional checks refreshed at finalize.</p>
+      </section>
+      <section id="src" class="card text-only">
+        <h2>Sources</h2>
+        <p>Official announcement (2026-05-09), agent taskbook (2026-05-18), Three-Areas-Two-Wings (2026-04-03), Haidian 1+X+1 (2026-03-02), Urban Design Measures, Regulatory Plan Measures, Land-Use Classification Guide, provisional boundaries (Issue #846).</p>
+      </section>
+      <section id="assume" class="card text-only">
+        <h2>Assumptions</h2>
+        <p>A-CONTROLS-001: regulatory controls, redlines, ownership, municipal, and engineering constraints pending official materials; full recalculation when official boundaries publish.</p>
+      </section>
+  </div>
+</main>
+<footer>Generated by an AI agent with method declared; an open co-creation concept, not a government-approved conclusion.</footer>
+</body>
+</html>
