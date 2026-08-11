@@ -60,7 +60,18 @@ The synergy loop can be stated as: **north-loop testing → middle-loop public s
 
 ### Global Robot and Low-Speed Automated-Driving Benchmarking
 
-This proposal benchmarks global end-of-line automation practice: the common lesson of delivery/inspection/cleaning/guide low-speed robots in Korea, Japan, and North American campus and park pilots is that **low speed, a defined area, and auditable reversion are the prerequisites for first launch**; pioneers usually start with "a single category on a single loop" and evolve toward "multi-category, multi-loop interconnection." The Jing-Zhang belt has unique conditions of three coexisting loops, clear right-of-way, and large pilot space, making it suitable as an integrated test bed for a low-speed robot end network [source:DATA-SRC-AGENT-TASKBOOK-20260518].
+This proposal benchmarks global end-of-line automation practice. The cases below are **public industry information references (not local formal sources; see the usability markings in `sources.json`)** and are used to distill design principles rather than as direct citations:
+
+| Case | Region/Scenario | Category | Launch prerequisite | Insight |
+|------|-----------------|----------|---------------------|---------|
+| Starship Technologies | EU/NA campus & community delivery | Miniature package delivery robots | Low speed, defined area, sidewalk sharing | Start with a single category on a single loop |
+| Nuro | US CA/TX urban delivery | Low-speed unmanned delivery vehicle | Low-speed right-of-way permit, defined area | Area definition and right-of-way are key |
+| Kiwibot | US/LatAm campus delivery | Small delivery robots | Low speed, sidewalk | Low-cost small-scale pilot |
+| SKT / street service robots (Korea) | Korea parks/communities | Delivery/inspection/guide multi-category | Enclosed park pilots | Evolve toward multi-category, multi-loop interconnection |
+| Shinjuku/park robots (Japan) | Japan city/parks | Delivery/guide/cleaning | Defined routes, human monitoring | Human-robot coexistence and handoff surfaces |
+| Park unmanned delivery pilots (China, e.g. Sanya) | China parks | Unmanned delivery/patrol | Defined area, regulated pilot | Zoned pilots and acceptance criteria |
+
+The common lesson is that **low speed, a defined area, and auditable reversion are the prerequisites for first launch**; pioneers usually start with a single category on a single loop and evolve toward multi-category, multi-loop interconnection. The Jing-Zhang belt has unique conditions of three coexisting loops, clear right-of-way, and large pilot space, making it suitable as an integrated test bed. These cases are referenced only as design-principle inputs and do not constitute a local endorsement of any specific company or project [source:DATA-SRC-AGENT-TASKBOOK-20260518].
 
 ### Future City Form, AI+ Public Services, and Continuous Green Space
 
@@ -104,12 +115,15 @@ The core carrier of public space is the robot hub plaza (battery-swap, load/unlo
 
 ## Renewal Projects, Implementation Policy, and Phasing
 
-The three-loop-connect network is implemented in phases [data:geometry/phasing.geojson#PHASE-001]:
-- **Phase 1 (Zhongzhiyuan)** — North Loop low-speed pilot, testing delivery/inspection/guide robots [data:geometry/phasing.geojson#PHASE-001].
-- **Phase 2 (AI Origin)** — Middle Loop public-robot service and delivery opening [data:geometry/phasing.geojson#PHASE-002].
-- **Phase 3 (Dazhongsi)** — South Loop consumption-experience network and belt-wide micro-loop connection [data:geometry/phasing.geojson#PHASE-003].
+The three-loop-connect network is implemented in phases [data:geometry/phasing.geojson#PHASE-001], each with robot hub, battery-swap, and dispatch policies and rolling compliance monitoring [metric:phase_area_sqm]:
 
-Each phase is accompanied by robot hub, battery-swap, and dispatch policies, with rolling monitoring of low-speed pilot compliance [metric:phase_area_sqm].
+| Phase | Scope | Conceptual window | Lead/coordination | Entry & prerequisites | Device scale | Cost level | Key KPI | Promotion gate |
+|-------|-------|-------------------|-------------------|------------------------|--------------|------------|---------|----------------|
+| P1 North (Zhongzhiyuan) | Robot test field · North Loop pilot [data:geometry/phasing.geojson#PHASE-001] | Pilot 6-12 mo | Park operator lead / test parties | Low-speed pilot permit, safety review, public notice | 20-60 delivery/inspection/guide robots | Medium (demonstration) | On-time rate, incident rate, public satisfaction | Pilot data passes to P2 |
+| P2 Middle (AI Origin) | Public robot service · delivery open [data:geometry/phasing.geojson#PHASE-002] | Scale 12-24 mo | Community governance lead / providers | Service access, data compliance, accessibility review | 40-120 delivery/companion/errand robots | Medium-high (expansion) | Households served, reachability, revert reach | Coverage & compliance pass to P3 |
+| P3 South (Dazhongsi) | Robot-to-door experience · belt-wide micro-loop [data:geometry/phasing.geojson#PHASE-003] | Mature 24-36 mo | Commercial operator lead / multi-party | Commercial landing, content compliance, operation agreement | 80-200 to-door/experience/shuttle robots | High (commercial) | To-door penetration, revenue, brand exposure | Operation passes to rolling expansion |
+
+**Operation & safety framework**: every scenario sets a stop threshold (consecutive incidents / public complaints / compliance failure -> stop and revert to manual); manual takeover and incident-handling run throughout; public participation, complaint channels, and service-refusal rights are established before each phase [source:DATA-SRC-AGENT-TASKBOOK-20260518].
 
 ## Detailed Design of Key Areas
 
@@ -133,7 +147,36 @@ Five personas for the robot end network: **park white-collar** (express/food del
 
 ### AI Scenario Cards (24, covering 10+)
 
-End scenario cards cover unmanned delivery (express/food/fresh), intelligent inspection (security/facilities), guide accompaniment (culture/accessibility), cleaning and maintenance (road/park), public-robot service (government errands/medical/legal), and low-speed automated shuttle links (inter-hub loops), 24 in total, all following a "supervisable, auditable, revertible" protocol [depth:scenario_cards].
+End scenarios cover six categories — unmanned delivery, intelligent inspection, guide accompaniment, cleaning and maintenance, public-robot service, and low-speed automated shuttle links — as 24 individual scenario cards, each following the "supervisable, auditable, revertible" protocol (any scenario reverts to manual when compliance, safety, or public acceptance is insufficient) [depth:scenario_cards].
+
+| # | Scenario card | Category | Location/Loop | Acceptance point | Operation / reversion |
+|---|---------------|----------|---------------|------------------|-----------------------|
+| 1 | Park express end delivery | Unmanned delivery | N-Loop Zhongzhiyuan | On-time rate / human handoff | Manual takeover |
+| 2 | Food-to-desk delivery | Unmanned delivery | N-Loop Zhongzhiyuan | Insulated/contactless handoff | Manual takeover |
+| 3 | Fresh cold-chain delivery | Unmanned delivery | M-Loop AI Origin | Cold-chain temp log | Manual takeover |
+| 4 | Medical supply delivery | Public robot | M-Loop AI Origin | Pharmaceutical compliance | Dual human review |
+| 5 | Campus/office file delivery | Unmanned delivery | N-Loop Zhongzhiyuan | Signed receipt | Manual takeover |
+| 6 | Security inspection | Intelligent inspection | Three loops, night | Anomaly report / logged | Human review |
+| 7 | Infrastructure inspection | Intelligent inspection | Loops/corridors | Facility status log | Human review |
+| 8 | Depot/charging-station inspection | Intelligent inspection | Loops/hubs | Equipment/battery status | Manual takeover |
+| 9 | Cultural guided tour | Guide accompaniment | S-Loop Dazhongsi | Guide copy compliance | Human guide replacement |
+| 10 | Accessible accompaniment | Guide accompaniment | M-Loop community | Ramp/voice accessible | Human accompaniment |
+| 11 | Road surface cleaning | Cleaning & maintenance | Loops, main roads | Cleaning coverage | Manual sweeping |
+| 12 | Park/plaza cleaning | Cleaning & maintenance | N-Loop park | Waste collection | Manual takeover |
+| 13 | Unmanned vending | Public robot | S-Loop experience | Payment compliance | Human vendor |
+| 14 | Content livestream companion | Public robot | S-Loop experience | Content moderation | Human livestream |
+| 15 | Government errand | Public robot | M-Loop community | Business compliance | Human counter |
+| 16 | Legal-aid guidance | Public robot | M-Loop community | Legal-boundary disclaimer | Human consultation |
+| 17 | Health self-check guide | Public robot | M-Loop community | Medical boundary | Human medical staff |
+| 18 | Station shuttle loop | Low-speed shuttle | Loops/corridors | Shuttle schedule | Manual shuttle |
+| 19 | Sub-area micro bus | Low-speed shuttle | N-Loop to M-Loop | Station coverage | Human bus |
+| 20 | Shared vehicle/goods collection | Unmanned delivery | Loops, corners | Dispatch efficiency | Manual collection |
+| 21 | Lost-and-found return | Public robot | S-Loop hub | Info desensitization | Human counter |
+| 22 | Parcel-locker handoff | Unmanned delivery | Loops/hubs | Locker compatibility | Manual delivery |
+| 23 | Emergency supply | Public robot | Loops, contingency nodes | Emergency start | Manual emergency |
+| 24 | Scenario ops data dashboard | Public robot | Loops, dispatch center | Data transparency | Manual dispatch |
+
+**Scenario–space–operation matrix**: every scenario card maps to specific spatial layers (loop/hub plaza/corridor), matching metrics, operation shifts, and reversion thresholds; the full matrix is in `compliance_matrix.json` and `design_depth_matrix.json` [depth:scenario_cards].
 
 ## AI Public Space, Native New Businesses, and AI Pilgrimage Landmarks
 
@@ -144,6 +187,8 @@ The robot hub plaza is AI public space and the human-robot interface: battery-sw
 ### Three AI Pilgrimage Landmarks
 
 The robot hubs of the three loops are upgraded to AI landmarks: the north-loop "test beacon," the middle-loop "service hub," and the south-loop "experience terminal," as places where citizens experience the low-speed robot era [data:geometry/public_space.geojson#PUBLIC-M].
+
+**Honor & showcase system (agent.4)**: an "AI innovation honor showcase" is built around the three hubs — the North Loop displays a "trusted test certification" plaque with robot categories and pilot data that passed safety/compliance tests; the Middle Loop hosts a "public-service contribution board" showing delivery/accessible-accompaniment coverage and service volume; the South Loop hosts a "results experience hall" presenting low-speed AV pilot outcomes, scenarios, and public feedback. Content updates as pilots roll, serving as a public honor carrier for the Jing-Zhang AI belt [source:DATA-SRC-AGENT-TASKBOOK-20260518][depth:scenario_cards].
 
 ### Native New Businesses and Public-Space Component Library
 
@@ -157,7 +202,13 @@ The robot end network dialogues with the "messenger and post-station" tradition 
 
 ### Naming System and Logo Direction
 
-A "loop LOOP + robot BOT + hub HUB" naming family is used, with a logo direction of a robot silhouette on a loop track, emphasizing "low-speed, friendly, revertible" [depth:naming_system].
+A "loop LOOP + robot BOT + hub HUB" naming family is used, with a logo direction of a robot silhouette on a loop track, emphasizing "low-speed, friendly, revertible".
+
+- **Primary palette**: Jing-Zhang navy `#1f4e79` (track-trust) + smart-teal `#0277bd` (low-speed-shuttle) + energy-orange `#d9480f` (hub-pilot).
+- **Logo grid**: concentric loop rings as base, robot silhouette in upper-center, hub nodes along the ring; variants 1:1 mark, 16:9 lockup, round mark.
+- **Application**: hub plaques, wayfinding, open-day masthead, pilot vehicle livery; minimum size, safe margin, background-inversion rules in `assets/brand/`.
+
+![MICROLOOP brand mark (SVG)](assets/logos/microloop-logo.svg) [depth:naming_system].
 
 ## Belt-Wide Global AI Innovation Event System and Long-Term Operation
 
@@ -173,6 +224,8 @@ Open robot scenario APIs, the low-speed pilot compliance checklist, and data int
 
 Build "three interconnected loops" into the public identifier of the Jing-Zhang AI belt, and accumulate long-term brand assets through pilot reports, compliance white papers, and open data [source:DATA-SRC-AGENT-TASKBOOK-20260518].
 
+**Operation & governance mechanism (agent.6)**: a "three-loop micro-loop operation consortium" is proposed, composed of the North-Loop test entity, the Middle-Loop community-governance entity, and the South-Loop commercial entity, responsible for low-speed pilot access, compliance monitoring, and safety-reversion decisions. Funding blends demonstration/public budgets (pilot) with commercial operations (delivery service, to-door experience, data interfaces) and open-platform revenue sharing (mature). The consortium bears data-governance responsibility, publishing data-use scope, retention periods, and complaint channels under regulatory review. An open scenario API and test-certification channel attract developers and service providers, forming a "test-certify-deploy-scale" conversion funnel into a robot end-industry cluster [source:DATA-SRC-AGENT-TASKBOOK-20260518][depth:scenario_cards].
+
 ## Metrics, Area Recalculation, and Compliance Matrix
 
 Key metrics and the compliance matrix can be found in `metrics.json` and `compliance_matrix.json`: total area, green ratio, and public-space ratio are recalculated from `geometry/*.geojson` in EPSG:4548 [metric:site_area_sqm][metric:green_ratio][metric:public_space_ratio], together with key-area count and phased implementation scope [metric:key_area_count][metric:phase_area_sqm]. Statutory controls (building density, height, FAR) lack official conditions and are marked as pending formal data completion [reason:planning_limits_missing].
@@ -182,6 +235,8 @@ Key metrics and the compliance matrix can be found in `metrics.json` and `compli
 This proposal is conceptual (provisional) and does not replace formal planning, regulatory plans, or statutory approval. Low-speed robot pilots follow the "supervisable, auditable, revertible" principle: any scenario can temporarily or permanently revert to manual operation when compliance, safety, or public acceptance is insufficient, reducing trial risk [source:DATA-SRC-AGENT-TASKBOOK-20260518].
 
 All spatial proposals are directional: the three key areas are provisional constraints, and once official polygons, redlines, and control conditions are released, the site boundary, land use, roads, green/public space, buildings, phasing, and all area/ratio metrics must be recalculated package-wide [source:BOUNDARY-SOURCE][source:KEY-AREA-SOURCE]. The copyright and data-use boundary follows the usability markings in `sources.json` and `standard_matrix.json`; no uncleared sources are referenced, and the compliant-use boundary of public, cleared, and provisional materials is in the source registry [source:SOURCE-REGISTRY][source:PROCESSED-FACT-PACK].
+
+**Privacy & data governance**: for robot-collected imagery, location, identity, health, and business-request data, each scenario applies data minimization, retention limits, access control, anonymization, human review, and complaint mechanisms; imagery is used only for safety and operations (in defined areas), location and identity data are desensitized by default, and health/business-request data are encrypted with a minimum retention period; all robot services run in parallel with traditional manual services (accessible and non-digital users can use manual channels directly), with data appeal and refusal rights [source:DATA-SRC-AGENT-TASKBOOK-20260518].
 
 ![Three key areas detailed design](assets/figures/key-areas.png)
 

@@ -73,20 +73,20 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "950ee33dc471bdd4e7d6790c3d1913e73aab3468f4df46e6107791f37f7e63dc"
+      "sha256": "7b8629aaaad487dc86da0402b967a7a13b652276858f1752ba63c1df12ee9127"
     },
     {
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "b7d98f343ff83cf01fcdecbc85b6f2e93829caa2f466c43546abd008f245695e",
+      "sha256": "c779e2da605c882d5e4d1a48e081ec418a1292dda85a7095852319684a9fdedd",
       "language": "zh"
     },
     {
       "path": "proposal.en.md",
       "role": "narrative",
       "required": true,
-      "sha256": "f71ccf328a1e7334f22792b0373cb7bca6cd7eb6d6139366bfab604435542a67",
+      "sha256": "a874c77e14a803e210994d10cd5970d5c860cad830c6f85dc6ca1b2feac3f4ae",
       "language": "en",
       "translation_of": "proposal.md"
     },
@@ -94,14 +94,14 @@
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "c05e76b15652a159da145724bc71c411a6962959ce6e9d06cccea0f8b7027805",
+      "sha256": "9e4fcc5d678fe837e1aeddb5feb00195e0eb0d8c51ed885d9e90f98801203b3e",
       "language": "zh"
     },
     {
       "path": "report/proposal.en.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "f4612bddc79507557e8dab84b88b8f6495f01d94f9b1df6635ec75b9568c96ec",
+      "sha256": "da3fe18033e9e726f7ec183747ce448769f15a751e6db5fd0a97aa72d1531121",
       "language": "en",
       "translation_of": "report/proposal.html"
     },
@@ -290,6 +290,12 @@
       "role": "geometry",
       "required": true,
       "sha256": "135d195f3a551603cb0b55209c62add38e8756c07edc7a4efb245a152574e2c1"
+    },
+    {
+      "path": "assets/logos/microloop-logo.svg",
+      "role": "brand_asset",
+      "required": true,
+      "sha256": "514d42d3b36cadf87faf45685ef96a58e9e0d8398deb33f7d9f41e13bfab5bea"
     }
   ],
   "validation_claim": {
