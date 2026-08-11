@@ -1,0 +1,15 @@
+{
+  "schema_version": "0.1.0",
+  "standards": [
+    {"standard_id": "STD-001", "title_zh": "城市总体规划", "category": "urban_planning", "proposal_response": "第二章总体空间结构 + 第八章土地利用", "evidence_refs": ["[data:geometry/land_use.geojson]", "[data:geometry/phasing.geojson]"], "status": "addressed"},
+    {"standard_id": "STD-002", "title_zh": "历史文化保护", "category": "heritage_conservation", "proposal_response": "第六章文化融合叙事", "evidence_refs": ["[data:geometry/constraints.geojson]", "[standard:cultural_heritage_integration]"], "status": "addressed"},
+    {"standard_id": "STD-003", "title_zh": "绿地系统规划", "category": "green_infrastructure", "proposal_response": "第五章AI公共空间 + 第九章交通", "evidence_refs": ["[data:geometry/green_space.geojson]"], "status": "addressed"},
+    {"standard_id": "STD-004", "title_zh": "交通规划", "category": "transport_planning", "proposal_response": "第九章交通与基础设施策略", "evidence_refs": ["[data:geometry/roads.geojson]"], "status": "addressed"},
+    {"standard_id": "STD-005", "title_zh": "市政基础设施", "category": "municipal_infrastructure", "proposal_response": "第九章交通与基础设施策略", "evidence_refs": ["[data:geometry/phasing.geojson]"], "status": "addressed"},
+    {"standard_id": "STD-006", "title_zh": "公共空间设计", "category": "public_space", "proposal_response": "第五章AI公共空间与朝圣地标", "evidence_refs": ["[data:geometry/public_space.geojson]", "[standard:public_space_design]"], "status": "addressed"},
+    {"standard_id": "STD-007", "title_zh": "产业生态规划", "category": "industrial_ecology", "proposal_response": "第三章AI创新生态设计", "evidence_refs": ["[data:geometry/land_use.geojson]", "[standard:industry_ecosystem_planning]"], "status": "addressed"},
+    {"standard_id": "STD-008", "title_zh": "城市更新", "category": "urban_renewal", "proposal_response": "第八章土地利用与建筑策略", "evidence_refs": ["[data:geometry/buildings.geojson]"], "status": "addressed"},
+    {"standard_id": "STD-009", "title_zh": "国际传播", "category": "international_communication", "proposal_response": "第六章文化融合叙事 + 第七章全球活动", "evidence_refs": ["[standard:city_branding]"], "status": "addressed"},
+    {"standard_id": "STD-010", "title_zh": "可持续发展", "category": "sustainability", "proposal_response": "第十章分期建设 + 第九章基础设施", "evidence_refs": ["[data:geometry/phasing.geojson]", "[data:geometry/green_space.geojson]"], "status": "addressed"}
+  ]
+}
