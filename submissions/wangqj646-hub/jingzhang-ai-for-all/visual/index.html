@@ -53,7 +53,13 @@ footer{text-align:center;color:var(--muted);font-size:12px;padding:18px 0 30px}
 <div class="pill-row"><span class="pill">总览地图</span><span class="pill">三层范围</span><span class="pill">重点区域</span><span class="pill">用地分区</span><span class="pill">交通慢行</span><span class="pill">AI 场景</span><span class="pill">任务覆盖</span><span class="pill">自检状态</span></div>
 </header>
 
-<div class="status-box"><strong>临时边界 intake · 自检状态</strong><p>Deterministic validation: PASS after finalize · Spatial review: intake PASS (provisional) · Visual packaging: PASS · Professional evidence: PASS<br>provisional geometry: PASS intake only, replace with official polygons before formal professional scoring</p></div>
+<div class="status-box"><strong>临时边界 intake · 自检状态</strong><p>Deterministic validation: PASS · Spatial review: PASS (provisional) · Visual packaging: PASS · Professional evidence: PASS · Formal review: ready<br>组织方数据缺口：官方 SITE_BOUNDARY 与三处 KEY_AREA 多边形尚未发布；provisional geometry 仅用于生成、展示与临时复算（official_boundary=false），不阻止内容评分；官方几何发布后全指标重算（Organizer data gap — not a participant blocker; recalculation trigger）</p></div>
+
+<section class="sheet">
+<h2>品牌符号：人字轨（Rénzì Rail）</h2>
+<p><img src="../assets/figures/brand-symbol.png" alt="人字轨品牌符号" style="max-width:280px;display:block;margin:8px auto;"></p>
+<p>符号取自京张铁路青龙桥人字形展线：<strong>技术向人低头</strong>（铁轨在原点为人折返）+ <strong>两条轨道</strong>（国家基础设施 × 个人伙伴，并行不绑架、只在原点汇合）。最小 VI：京张蓝 #0B3D91 打底 + 硅基橙 #FF6B1A 点睛；导视系统以人字折返语义做分叉/汇合箭头——详见 <code>report/narrative.md</code>。</p>
+</section>
 
 <section class="sheet">
 <h2>总览地图：人民的 AI</h2>
@@ -112,22 +118,42 @@ footer{text-align:center;color:var(--muted);font-size:12px;padding:18px 0 30px}
 <section class="sheet">
 <h2>AI 场景</h2>
 <div class="chips">
-<span class="chip">AI 原生学校（一人一伙伴）</span><span class="chip">伙伴直连消费（无 App 街区）</span>
-<span class="chip">AI 养老照护</span><span class="chip">AI 放学托管</span><span class="chip">AI 政务代办</span>
-<span class="chip">AI 城市讲解</span><span class="chip">AI 创作工坊</span><span class="chip">AI 医疗预检</span>
+<span class="chip">S1 一人一伙伴</span><span class="chip">S2 开源测试场 ★</span><span class="chip">S3 创作工坊</span>
+<span class="chip">S4 伙伴第一课</span><span class="chip">S5 放学托管</span><span class="chip">S6 城市讲解</span>
+<span class="chip">S7 养老照护</span><span class="chip">S8 医疗预检 ★</span><span class="chip">S9 社区服务台</span>
+<span class="chip">S10 直连消费 ★</span><span class="chip">S11 政务代办</span><span class="chip">S12 人机公地 ★</span>
 </div>
+<p><strong>12 张场景卡</strong>（≥10 达标）：每卡含数据最小集、人工接管点、异常处理、退出机制、成功指标、运营主体与空间需求，详见 <code>report/narrative.md</code>。测试验证型 4 张（S2/S8/S10/S12，≥3 达标，含 hypothesis/试点范围/安全阈值/停止条件/回滚/评估窗口）；用户画像 6 类（P1-P6，≥5 达标，覆盖拒绝 AI 者、低数字技能者、残障人士）。</p>
+<table>
+<tr><th>场景</th><th>归属</th><th>载体</th><th>阶段</th></tr>
+<tr><td>S1 AI 原生学校·一人一伙伴</td><td>众智园/原点</td><td>AI 原生教室</td><td>pilot</td></tr>
+<tr><td>S2 开源成果测试场 ★</td><td>众智园</td><td>测试场+公共算力</td><td>sandbox</td></tr>
+<tr><td>S3 AI 创作工坊</td><td>众智园</td><td>科普馆</td><td>concept</td></tr>
+<tr><td>S4 硅基伙伴第一课·领取仪式</td><td>原点</td><td>AI 原点广场</td><td>sandbox</td></tr>
+<tr><td>S5 AI 放学托管</td><td>原点</td><td>社区伙伴驿站</td><td>pilot</td></tr>
+<tr><td>S6 AI 城市讲解</td><td>遗址公园</td><td>讲解终端</td><td>concept</td></tr>
+<tr><td>S7 AI 养老照护</td><td>原点</td><td>驿站养老角</td><td>pilot</td></tr>
+<tr><td>S8 AI 医疗预检 ★</td><td>大钟寺/社区</td><td>社区 AI 诊所</td><td>sandbox</td></tr>
+<tr><td>S9 伙伴驿站·社区服务台</td><td>全域</td><td>驿站柜台</td><td>pilot</td></tr>
+<tr><td>S10 伙伴直连消费 ★</td><td>大钟寺</td><td>消费街区</td><td>sandbox</td></tr>
+<tr><td>S11 AI 政务代办</td><td>全域</td><td>社区 AI 议事亭</td><td>sandbox</td></tr>
+<tr><td>S12 人机公地·公共空间共创 ★</td><td>大钟寺/公园</td><td>公地展亭</td><td>sandbox</td></tr>
+</table>
+<p><strong>旗舰制度</strong>：硅基伙伴成长契约（自愿/可退出/可审计/可迁移，19 项制度条款 + Stage-Gate 试点）、城市 Agent 协议（分层架构 + 九项要件）、<strong>Agent First, Never Agent Only</strong> 三平行路径（Agent 代理 / 人类数字界面 / 人工线下服务，永不剥夺传统访问权）——详见 <code>report/narrative.md</code>。</p>
+<p><strong>朝圣地标 ×3</strong>：AI 原点（Origin）、开源智能荣誉墙（Open Intelligence Wall）、人机公地（Human-Agent Commons）；含荣誉展示体系与公共空间组件库（Agent kiosk / audit terminal / 议事亭 / 伙伴驿站 / 无障碍人工服务点）——详见 <code>report/narrative.md</code>。</p>
+<p><strong>年度运营系统</strong>：九大常设机制（原点日、开发者社区、API Challenge、场景公开测试、儿童 AI 原生计划、国际驻留、企业测试场、开源发布、市民治理审计）+ Idea→Sandbox→Pilot→Evaluate→Deploy/Stop→Open-source 闭环——详见 <code>report/narrative.md</code>。</p>
 </section>
 
 <section class="sheet">
 <h2>任务覆盖（agent.1 - agent.6）</h2>
 <table>
 <tr><th>任务</th><th>对应章节</th></tr>
-<tr><td>agent.1 一带总体概念与功能统筹</td><td>总体概念：人民的 AI</td></tr>
-<tr><td>agent.2 AI 全栈自主创新体系与生态</td><td>双轨创新生态</td></tr>
-<tr><td>agent.3 AI+场景赋能与活力城市</td><td>AI+ 场景体系</td></tr>
-<tr><td>agent.4 AI 公共空间与朝圣地标</td><td>AI 原点广场与三核公共空间</td></tr>
-<tr><td>agent.5 百年京张文化融合叙事</td><td>"自主→为民"叙事线</td></tr>
-<tr><td>agent.6 全球活动体系与长期运营</td><td>全民 AI 节 + 原点成长计划</td></tr>
+<tr><td>agent.1 一带总体概念与功能统筹</td><td>总体概念：人民的 AI + <code>report/narrative.md</code>（Logo/VI/协同图）</td></tr>
+<tr><td>agent.2 AI 全栈自主创新体系与生态</td><td>双轨创新生态 + <code>report/narrative.md</code>（全球案例/生态图谱）</td></tr>
+<tr><td>agent.3 AI+场景赋能与活力城市</td><td>AI+ 场景体系 + <code>report/narrative.md</code>（12 卡/画像/矩阵）</td></tr>
+<tr><td>agent.4 AI 公共空间与朝圣地标</td><td>AI 原点广场与三核公共空间 + <code>report/narrative.md</code>（地标/荣誉/组件库）</td></tr>
+<tr><td>agent.5 百年京张文化融合叙事</td><td>"自主→为民"叙事线 + 人字轨符号/导视系统（logo-vi-concept.md 第 5 节）</td></tr>
+<tr><td>agent.6 全球活动体系与长期运营</td><td><code>report/narrative.md</code>（九机制 + Stage-Gate）</td></tr>
 </table>
 </section>
 

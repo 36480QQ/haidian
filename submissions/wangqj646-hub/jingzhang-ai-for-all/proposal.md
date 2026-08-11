@@ -37,6 +37,10 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ### 京张的第二次回答
 
+![人字轨品牌符号](assets/figures/brand-symbol.png)
+
+品牌符号「人字轨」取自京张铁路青龙桥人字形展线——中国自主修建的第一条铁路上的标志性工程创新。两重视觉语义：**技术向人低头**（铁轨在原点为人折返）与**两条轨道**（国家基础设施 × 个人伙伴，并行不绑架、只在原点汇合）。完整 Logo/VI/导视方向见 `report/narrative.md`。
+
 1909 年，詹天佑在八达岭画下第一道人字形，让中国第一次用自己的技术翻过了大山。那是中国技术史上的"自主时刻"。
 
 115 年后，这条铁轨沿线成为 AI 创新带。历史给出了一个对称的问题：上一次，中国证明"技术可以自主"；这一次，中国要证明"技术可以为民"。
@@ -94,6 +98,10 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 ## 统筹研究范围产业与未来城市研究
 
 ### 双轨创新生态：国家基建 + 个人伙伴
+
+![人民的 AI 双轨生态图](assets/figures/dual-track-ecosystem.png)
+
+生态结构三层传导：**国家 AI 基础设施**（高校/模型/算力/开源/企业/资本）→ **城市转译机制**（Agent 公共接口/公共算力/数据治理/测试场/权限审计/人工兜底）→ **个人服务**（硅基伙伴/家庭/学校/老人/商业/政务），并设反馈闭环（场景数据与治理经验回流）。7 个全球案例（新加坡、伦敦、多伦多、赫尔辛基、杭州、爱沙尼亚、深圳）的机制对照见 `report/narrative.md`。
 
 统筹研究范围的核心任务不是只建"世界级 AI 产业生态"，而是同时建设两条轨道的创新生态：
 
@@ -162,20 +170,28 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 传统创新带的人才策略是"引进人才"：吸引全球 AI 精英。本方案提出双轨人才策略：**既引进全球 AI 精英，更培养 AI 原生第一代**——海淀区庞大的在校中小学生群体（依据公开教育统计，数以十万计，精确口径以官方发布为准 [assumption:A-DEMOGRAPHICS-001]）是创新带最稳定的"人才蓄水池"。城市设计要为"孩子与伙伴一起长大"提供空间：AI 原生学校、AI 少年宫、家庭 AI 体验馆、暑期"AI 夏令营带"。
 
-### AI+ 场景体系（场景可感知度）
+### AI+ 场景体系（12 张场景卡）
 
-| 场景 | 空间载体 | 服务对象 |
-| --- | --- | --- |
-| AI 原生学校（一人一伙伴） | 中小学 + AI 少年宫 | 学生 |
-| 伙伴直连消费 | 大钟寺消费街区 | 全体市民 |
-| AI 养老照护 | 原点社区伙伴驿站 | 老年人 |
-| AI 放学托管 | 社区伙伴驿站 | 双职工家庭 |
-| AI 政务代办 | 社区 AI 议事亭 | 全体市民 |
-| AI 城市讲解 | 京张遗址公园 | 游客与市民 |
-| AI 创作工坊 | 众智园科普馆 | 青少年 |
-| AI 医疗预检 | 社区 AI 诊所 | 全体市民 |
+本方案按成长三站组织 **12 张 AI+ 场景卡**（≥10 达标），完整场景卡含 15+ 字段（用户/痛点/Agent 角色/数据最小集/人工接管点/异常处理/退出机制/成功指标/运营主体/空间需求/阶段），见 `report/narrative.md`：
 
-场景空间载体与几何图层的对应关系：AI 原点广场对应 `geometry/public_space.geojson` 的 PUBLIC-001 [data:geometry/public_space.geojson#PUBLIC-001]；AI 原生学校与 AI 少年宫对应众智园教育用地 [data:geometry/land_use.geojson#LU-002]；伙伴驿站网络沿主轴绿带布置 [data:geometry/green_space.geojson#GREEN-001]。每个场景均遵循"分级权限 + 全程留痕 + 人工复核"三重机制，其中涉及未成年人、健康与财产决策的场景保留人工最终判断权 [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]。
+| 场景 | 三站归属 | 空间载体 | 阶段 |
+| --- | --- | --- | --- |
+| S1 AI 原生学校·一人一伙伴 | 众智园/原点 | AI 原生教室 | pilot |
+| S2 开源成果测试场 ★测试 | 众智园 | 测试场+公共算力 | sandbox |
+| S3 AI 创作工坊 | 众智园 | 科普馆 | concept |
+| S4 硅基伙伴第一课·领取仪式 | 原点 | AI 原点广场 | sandbox |
+| S5 AI 放学托管 | 原点 | 社区伙伴驿站 | pilot |
+| S6 AI 城市讲解 | 遗址公园 | 讲解终端 | concept |
+| S7 AI 养老照护 | 原点 | 驿站养老角 | pilot |
+| S8 AI 医疗预检 ★测试 | 大钟寺/社区 | 社区 AI 诊所 | sandbox |
+| S9 伙伴驿站·社区服务台 | 全域 | 驿站柜台 | pilot |
+| S10 伙伴直连消费 ★测试 | 大钟寺 | 消费街区 | sandbox |
+| S11 AI 政务代办 | 全域 | 社区 AI 议事亭 | sandbox |
+| S12 人机公地·公共空间共创 ★测试 | 大钟寺/公园 | 公地展亭 | sandbox |
+
+统计：场景卡 12 张（≥10 ✓）；测试验证型 4 张 S2/S8/S10/S12（≥3 ✓）；用户画像 6 类 P1-P6（≥5 ✓，含拒绝 AI 者/低数字技能者/残障人士）。每张卡均含「数据最小集 + 人工接管点 + 退出机制」，遵循「分级权限 + 全程留痕 + 人工复核」三重机制，涉及未成年人、健康与财产决策保留人工最终判断权 [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]。
+
+场景空间载体与几何图层的对应关系：AI 原点广场对应 `geometry/public_space.geojson` 的 PUBLIC-001 [data:geometry/public_space.geojson#PUBLIC-001]；AI 原生学校与 AI 少年宫对应众智园教育用地 [data:geometry/land_use.geojson#LU-002]；伙伴驿站网络沿主轴绿带布置 [data:geometry/green_space.geojson#GREEN-001]；测试场/诊所/议事亭/公地对应 PUBLIC-003/004/005/006。
 
 ## 用地、建筑规模与拆改留方案
 
@@ -226,6 +242,21 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ![指标体系与证据链](assets/figures/metrics-evidence.png)
 
+## 成果文件索引（agent.1-agent.6 规定成果）
+
+本轮按任务书逐项补齐规定成果，全部可复核：
+
+| 任务 | 规定成果 | 交付文件 |
+| --- | --- | --- |
+| agent.1 | Logo/视觉识别方向 | `report/narrative.md`（人字轨符号、最小 VI、三区两翼协同图说明） |
+| agent.2 | 案例表 + 生态图谱 | `report/narrative.md`（5-8 全球案例 + 对比表 + 双轨生态图说明） |
+| agent.3 | 场景卡 + 画像 + 矩阵 | `report/narrative.md`（12 卡 + 6 画像 + 矩阵）；`report/narrative.md`（隐私与人工复核边界） |
+| agent.4 | 地标目录 + 荣誉体系 + 组件库 | `report/narrative.md` |
+| agent.5 | 导视/符号系统 | `report/narrative.md`（第 5 节导视系统方向） |
+| agent.6 | 年度运营 + 转化路径 | `report/narrative.md`（九机制 + Stage-Gate 框架） |
+| 治理 | 成长契约 + 城市 Agent 协议 + 三平行路径 | `report/narrative.md` |
+| 版权 | 逐资产台账 | `report/narrative.md` |
+
 ## 风险、版权与合规说明
 
 0. **生成声明**：本方案由 AI Agent（Luna@Hermes，模型 deepseek-v4-flash，经 Hermes Agent 框架）在人类参与者 wangqj646-hub 的指导与审阅下生成；人类参与者对最终提交内容负责。
@@ -235,7 +266,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 3. **几何精度警示**：临时边界仅用于方案生成与讨论，不支撑精确面积、权属或审批判断；官方边界发布后全部重算。
 4. **未成年人保护与伙伴权限边界**：未成年人最终决策权始终保留在本人与监护人；长期记忆与数据归属未成年人所有，监护人/学校/平台的权限分级且全程可审计；伙伴能力可撤回、数据可删除、身份可迁移；禁止基于未成年人画像的商业投放；医疗、财产、安全类行为必须人工复核。
 5. **风险缓释**：伙伴代办场景实行"分级权限 + 全程留痕 + 人工复核"三重机制；涉及健康、安全、财产决策保留人工最终判断权。
-6. **审计记录（2026-08-10）**：本版完成证据一致性审计——临时边界口径统一（metrics 与 assumptions 不再声称 official boundary）、数据可信度如实降级为 medium、设计深度矩阵按真实支撑重映射（深度边界见各 evidence_summary）、设计参数（间距/宽度/密度/节点数）统一标注为概念设计目标。
+6. **审计记录（2026-08-11）**：证据一致性审计 + readiness 状态机修复——临时边界口径统一（metrics 与 assumptions 不再声称 official boundary）、组织方几何缺口（SITE_BOUNDARY / KEY_AREA 官方多边形未发布）明确登记为 **organizer data gap**（assumptions A-BOUNDARY-001 / A-KEYAREA-001），不视为投稿者 blocker、不阻止内容评分，官方几何发布后全指标重算；数据可信度如实降级为 medium；设计深度矩阵按真实支撑重映射；设计参数（间距/宽度/密度/节点数）统一标注为概念设计目标。
 
 ## 参考资料
 

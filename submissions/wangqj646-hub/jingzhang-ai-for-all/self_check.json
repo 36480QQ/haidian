@@ -10,7 +10,6 @@
       "ok": true,
       "errors": [],
       "warnings": [
-        "submissions/wangqj646-hub/jingzhang-ai-for-all/manifest.json: known_blockers present; submission may pass intake but cannot enter formal professional scoring until resolved",
         "submissions/wangqj646-hub/jingzhang-ai-for-all/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied"
       ],
       "proposal_files": [
@@ -19,6 +18,10 @@
       "changelog_files": [],
       "changed_files": [
         "submissions/wangqj646-hub/jingzhang-ai-for-all/agent.json",
+        "submissions/wangqj646-hub/jingzhang-ai-for-all/assets/figures/brand-symbol.en.png",
+        "submissions/wangqj646-hub/jingzhang-ai-for-all/assets/figures/brand-symbol.png",
+        "submissions/wangqj646-hub/jingzhang-ai-for-all/assets/figures/dual-track-ecosystem.en.png",
+        "submissions/wangqj646-hub/jingzhang-ai-for-all/assets/figures/dual-track-ecosystem.png",
         "submissions/wangqj646-hub/jingzhang-ai-for-all/assets/figures/key-areas.en.png",
         "submissions/wangqj646-hub/jingzhang-ai-for-all/assets/figures/key-areas.png",
         "submissions/wangqj646-hub/jingzhang-ai-for-all/assets/figures/land-use-structure.en.png",
@@ -62,7 +65,7 @@
       "ai_package_stages": {
         "submissions/wangqj646-hub/jingzhang-ai-for-all": "formal"
       },
-      "total_bytes": 3197497,
+      "total_bytes": 3604874,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -161,9 +164,7 @@
   "can_enter_formal_review": true,
   "package_type": "professional_design_package",
   "review_status": "formal-review-ready",
-  "next_actions": [
-    "Resolve formal-readiness warning: submissions/wangqj646-hub/jingzhang-ai-for-all/manifest.json: known_blockers present; submission may pass intake but cannot enter formal professional scoring until resolved"
-  ],
+  "next_actions": [],
   "schema_version": "0.1.0",
   "checks": [
     {

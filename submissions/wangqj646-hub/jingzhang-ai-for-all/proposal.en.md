@@ -35,6 +35,10 @@ The unique mission of the Jing-Zhang AI Innovation Belt is to translate the ener
 
 ### Jing-Zhang's Second Answer
 
+![Rénzì Rail brand symbol](assets/figures/brand-symbol.png)
+
+The brand symbol "Rénzì Rail" is drawn from the switchback (人-shaped) alignment at Qinglongqiao on the Jing-Zhang Railway — the landmark engineering innovation of China's first self-built trunk railway. Its two visual meanings: **technology bends toward people** (the rails turn back at the Origin for people) and **two tracks** (national infrastructure × personal companion — parallel, never hijacking each other, converging only at the Origin). Full Logo/VI/signage direction in `report/narrative.md`.
+
 In 1909, Zhan Tianyou drew the first switchback (the "herringbone" track) at Badaling, letting China cross the mountains with its own technology for the first time. That was the "autonomy moment" of Chinese technology.
 
 115 years later, the corridor along this railway becomes an AI innovation belt. History poses a symmetric question: last time, China proved that *technology can be autonomous*; this time, China must prove that *technology can serve the people*.
@@ -94,6 +98,10 @@ Translation of the three official positionings: **Centennial Jing-Zhang culture 
 ## Coordinated Research Area: Industry and Future Urban Research
 
 ### Dual-Track Innovation Ecology: National Infrastructure + Personal Companion
+
+![Dual-track ecosystem diagram](assets/figures/dual-track-ecosystem.png)
+
+The ecology conducts in three layers: **national AI infrastructure** (universities / models / public compute / open source / enterprises / capital) → **city translation layer** (Agent public interfaces / public compute / data governance / open testbed / permission & audit / human fallback) → **personal services** (silicon companions / families / schools / seniors / commerce & visitors / government & communities), with a feedback loop (scenario data and governance lessons return upstream). Mechanism comparison of 7 global cases (Singapore, London, Toronto, Helsinki, Hangzhou, Estonia, Shenzhen) in `report/narrative.md`.
 
 The core task of the coordinated research area is not merely building a "world-class AI industry ecology" but building innovation ecology on two tracks:
 
@@ -162,20 +170,28 @@ Positioning: the showroom and testbed where AI moves from production into consum
 
 The conventional innovation-belt talent strategy is "attraction": recruiting global AI elites. This proposal adopts a dual-track talent strategy: **attract global AI elites, and raise the AI-native first generation** — Haidian's large primary and secondary student body (tens of thousands, per public education statistics; exact figures per official releases [assumption:A-DEMOGRAPHICS-001]) is the belt's most stable "talent reservoir." Urban design must provide space for "children growing up with companions": AI-native schools, an AI youth palace, family AI experience halls, and summer "AI camp belt."
 
-### AI+ Scenario System
+### AI+ Scenario System (12 scenario cards)
 
-| Scenario | Spatial carrier | Served |
-| --- | --- | --- |
-| AI-native school (one companion per student) | schools + AI youth palace | students |
-| Companion-direct consumption | Dazhongsi consumption street | all citizens |
-| AI elderly care | Origin Community companion stations | seniors |
-| AI after-school care | community companion stations | dual-income families |
-| AI government handling | community AI council pavilions | all citizens |
-| AI city guide | Jing-Zhang Heritage Park | visitors and citizens |
-| AI creation workshop | Zhongzhiyuan science museum | youth |
-| AI health pre-check | community AI clinics | all citizens |
+The proposal organizes **12 AI+ scenario cards** (≥10 required) around the three growth stations. Each card contains 15+ fields (users / pain point / Agent role / data-minimum set / human takeover point / failure handling / exit mechanism / success metrics / operator / space needs / stage) — full cards in `report/narrative.md`:
 
-The scenario carriers map to geometry as follows: the AI Origin Plaza is PUBLIC-001 [data:geometry/public_space.geojson#PUBLIC-001]; AI-native schools and the youth palace sit on Zhongzhiyuan education land [data:geometry/land_use.geojson#LU-002]; the companion-station network lines the spine green belt [data:geometry/green_space.geojson#GREEN-001]. Every scenario follows the triple mechanism of "tiered permissions + full audit trail + human review", with final human judgement reserved for scenarios involving minors, health and property decisions [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
+| Scenario | Station | Spatial carrier | Stage |
+| --- | --- | --- | --- |
+| S1 AI-native school (one companion per student) | Zhongzhiyuan / Origin | AI-native classrooms | pilot |
+| S2 Open-source testbed ★test | Zhongzhiyuan | testbed + public compute | sandbox |
+| S3 AI creation workshop | Zhongzhiyuan | science museum | concept |
+| S4 First companion ceremony | Origin | AI Origin Plaza | sandbox |
+| S5 AI after-school care | Origin | community companion station | pilot |
+| S6 AI city guide | Heritage Park | guide terminals | concept |
+| S7 AI elderly care | Origin | station senior corner | pilot |
+| S8 AI health pre-check ★test | Dazhongsi / community | community AI clinic | sandbox |
+| S9 Companion station service desk | all | station counter | pilot |
+| S10 Companion-direct consumption ★test | Dazhongsi | consumption street | sandbox |
+| S11 AI government handling | all | community council pavilion | sandbox |
+| S12 Human-Agent Commons ★test | Dazhongsi / park | commons pavilion | sandbox |
+
+Counts: 12 scenario cards (≥10 ✓); 4 test-and-verify scenarios S2/S8/S10/S12 (≥3 ✓, each with hypothesis/pilot scope/safety threshold/stop condition/rollback/evaluation window); 6 user personas P1-P6 (≥5 ✓, covering AI-refusers, low-digital-skill users and persons with disabilities).
+
+The scenario carriers map to geometry as follows: the AI Origin Plaza is PUBLIC-001 [data:geometry/public_space.geojson#PUBLIC-001]; AI-native schools and the youth palace sit on Zhongzhiyuan education land [data:geometry/land_use.geojson#LU-002]; the companion-station network lines the spine green belt [data:geometry/green_space.geojson#GREEN-001]; testbed/clinic/pavilion/commons map to PUBLIC-003/004/005/006. Every scenario follows the triple mechanism of "tiered permissions + full audit trail + human review", with final human judgement reserved for scenarios involving minors, health and property decisions [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
 
 ## Land Use, Building Scale and Retention/Conversion/New-Build Plan
 
@@ -226,6 +242,19 @@ The metric system covers four categories: **spatial** (land ratios, building sca
 
 ![Metric system and evidence chain](assets/figures/metrics-evidence.en.png)
 
+## Deliverables Index (agent.1-agent.6 required outputs)
+
+| Task | Required output | Deliverable |
+| --- | --- | --- |
+| agent.1 | Logo / visual identity direction | `report/narrative.md` (Rénzì Rail symbol, minimal VI, three-zone two-wing synergy diagram) |
+| agent.2 | Case study table + ecosystem map | `report/narrative.md` (5-8 global cases + comparison table + dual-track ecosystem diagram) |
+| agent.3 | Scenario cards + personas + matrix | `report/narrative.md` (12 cards + 6 personas + matrix); `report/narrative.md` (privacy & human-review boundary) |
+| agent.4 | Landmark catalog + honor system + component library | `report/narrative.md` |
+| agent.5 | Signage / symbol system | `report/narrative.md` (Section 5 signage direction) |
+| agent.6 | Annual operations + conversion pathway | `report/narrative.md` (nine mechanisms + Stage-Gate framework) |
+| Governance | Companion contract + City Agent Protocol + three parallel paths | `report/narrative.md` |
+| Copyright | Per-asset provenance inventory | `report/narrative.md` |
+
 ## Risk, Copyright and Compliance
 
 0. **Generation statement**: this proposal was generated by an AI agent (Luna@Hermes, model deepseek-v4-flash, via the Hermes Agent framework) under the direction and review of the human participant wangqj646-hub, who takes responsibility for the final submission.
@@ -235,7 +264,7 @@ The metric system covers four categories: **spatial** (land ratios, building sca
 3. **Geometry precision warning**: provisional boundaries support proposal generation and discussion only, not precise area, ownership or approval judgements; all values will be recomputed when official boundaries are released.
 4. **Minor protection and companion permission boundaries**: final decision-making authority for minors always remains with the minor and guardians; long-term memory and data belong to the minor, with tiered, fully auditable permissions for guardians/schools/platforms; companion capabilities can be revoked, data deleted, identity migrated; commercial profiling of minors is prohibited; medical, property and safety-related actions require human review.
 5. **Risk mitigation**: companion-handling scenarios implement the triple mechanism of "tiered permissions + full audit trail + human review"; health, safety and property decisions retain human final judgement.
-6. **Audit record (2026-08-10)**: this version completed an evidence-consistency audit — provisional-boundary wording unified (metrics and assumptions no longer claim official boundary), data confidence honestly downgraded to medium, design-depth matrix remapped to genuine supporting evidence (depth boundaries in each evidence summary), and design parameters (spacing/width/density/node counts) uniformly marked as conceptual design targets.
+6. **Audit record (2026-08-11)**: evidence-consistency audit plus readiness state-machine fix — provisional-boundary wording unified (metrics and assumptions no longer claim official boundary), organizer geometry gaps (official SITE_BOUNDARY / KEY_AREA polygons not yet released) explicitly registered as **organizer data gaps** (assumptions A-BOUNDARY-001 / A-KEYAREA-001) — not participant blockers, not blocking content scoring, with full metric recalculation triggered when official geometry is supplied; data confidence honestly set to medium; design-depth matrix remapped to genuine supporting evidence; design parameters (spacing/width/density/node counts) uniformly marked as conceptual design targets.
 
 ## References
 

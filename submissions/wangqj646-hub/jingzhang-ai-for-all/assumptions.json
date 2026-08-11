@@ -18,6 +18,18 @@
    "status": "proposal_parameter",
    "statement": "Design parameters (e.g., AI council pavilion spacing, spine greenbelt width, branch road density, public compute node spacing) are conceptual design targets of this proposal, not statutory standards.",
    "impact": "Reviewers should treat these as proposal parameters subject to professional refinement."
+  },
+  {
+   "id": "A-BOUNDARY-001",
+   "status": "organizer_data_gap",
+   "statement": "The organizer has not yet released the official SITE_BOUNDARY polygon. The provisional boundary (DATA-SRC-PROVISIONAL-BOUNDARIES-20260605) is used only for generation, display and temporary recalculation; it is not an official redline or a precise-area basis.",
+   "impact": "This is an organizer data gap, not a participant blocker: it does not block content scoring. All area-based metrics must be recalculated when the official geometry is supplied."
+  },
+  {
+   "id": "A-KEYAREA-001",
+   "status": "organizer_data_gap",
+   "statement": "The organizer has not yet released official polygons for the three key areas (众智园 / AI原点社区 / 大钟寺). Current key-area geometry is provisional and marked official_boundary=false.",
+   "impact": "Organizer data gap, not a participant blocker: content scoring is not blocked. Key-area metrics must be recomputed against official polygons when released."
   }
  ]
 }

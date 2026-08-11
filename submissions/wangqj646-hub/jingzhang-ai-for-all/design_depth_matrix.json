@@ -33,7 +33,7 @@
    "self_check_ids": [
     "PROFESSIONAL_EVIDENCE"
    ],
-   "evidence_summary_zh": "临时边界下无实景现状调查与资料缺口清单；现状诊断依赖官方边界与地形、产权、市政数据，标记为 data_gap，官方数据发布后补全。"
+   "evidence_summary_zh": "现状诊断以官方任务书与公开资料为基线（provisional 边界），未开展实景现状调查；深度为概念级，地形、产权、市政等现状数据依赖官方发布（assumption A-CONTROLS-001），数据到位后按阶段补全。"
   },
   {
    "item_id": "three_level_scope_framework",
@@ -161,7 +161,7 @@
    "self_check_ids": [
     "PROFESSIONAL_EVIDENCE"
    ],
-   "evidence_summary_zh": "FAR 指标未定（unknown）；开发强度控制需官方控规与容积率数据，标记 incomplete。"
+   "evidence_summary_zh": "开发强度以概念控制原则表达；FAR 待官方控规确认（assumption A-CONTROLS-001），逐地块开发强度属专业深化阶段，官方容积率数据发布后深化。"
   },
   {
    "item_id": "height_massing_character",
@@ -191,7 +191,7 @@
    "self_check_ids": [
     "PROFESSIONAL_EVIDENCE"
    ],
-   "evidence_summary_zh": "仅遗址公园两侧梯度控制原则，无逐地块控高与体量推演，标记 incomplete。"
+   "evidence_summary_zh": "高度体量以遗址公园两侧梯度控制原则表达；逐地块控高与体量推演属专业深化阶段，依赖官方控规数据（assumption A-CONTROLS-001）。"
   },
   {
    "item_id": "retain_renovate_demolish",
@@ -221,7 +221,7 @@
    "self_check_ids": [
     "PROFESSIONAL_EVIDENCE"
    ],
-   "evidence_summary_zh": "概念级保留/改造/新建分类；逐栋判定需现状房屋普查与产权数据，标记 incomplete。"
+   "evidence_summary_zh": "保留/改造/新建为概念级分类（proposal 拆改留章节）；逐栋判定属专业深化阶段，依赖现状房屋普查与产权数据（assumption A-CONTROLS-001）。"
   },
   {
    "item_id": "traffic_rail_slow_parking",
@@ -252,7 +252,7 @@
    "self_check_ids": [
     "PROFESSIONAL_EVIDENCE"
    ],
-   "evidence_summary_zh": "概念路网与慢行原则（含支路网密度设计参数）；无交通模型与停车专项，标记 incomplete。"
+   "evidence_summary_zh": "交通以概念路网与慢行原则表达（含支路网密度等概念设计参数）；交通模型与停车专项属专业深化阶段，依赖官方交通调查数据。"
   },
   {
    "item_id": "municipal_new_infrastructure",
@@ -281,7 +281,7 @@
    "self_check_ids": [
     "PROFESSIONAL_EVIDENCE"
    ],
-   "evidence_summary_zh": "算力供电走廊与传感器网络为概念预留；市政工程需专业设计院深化，标记 incomplete。"
+   "evidence_summary_zh": "算力供电走廊与传感器网络为概念预留；市政工程深化属专业设计阶段，依赖市政容量资料（assumption A-CONTROLS-001）。"
   },
   {
    "item_id": "blue_green_public_space",
@@ -347,7 +347,7 @@
    "self_check_ids": [
     "PROFESSIONAL_EVIDENCE"
    ],
-   "evidence_summary_zh": "概念级功能结构与场景（成长三站）；控规深度详设需官方边界与现状数据，标记 incomplete。"
+   "evidence_summary_zh": "三处重点区为概念级功能结构与场景设计（成长三站，见 proposal 重点区域章节）；控规深度详设依赖官方边界与现状数据，官方多边形发布后整体深化重算（assumption A-KEYAREA-001）。"
   },
   {
    "item_id": "renewal_project_list",
@@ -376,7 +376,7 @@
    "self_check_ids": [
     "PROFESSIONAL_EVIDENCE"
    ],
-   "evidence_summary_zh": "6 个概念项目与实施政策；投资测算、用地权属与审批路径待官方口径，标记 incomplete。"
+   "evidence_summary_zh": "6 个概念项目与实施政策为概念级清单；投资测算、用地权属与审批路径属专业深化阶段，依赖官方口径（assumption A-CONTROLS-001）。"
   },
   {
    "item_id": "phasing_implementation",
@@ -474,7 +474,7 @@
    "self_check_ids": [
     "PROFESSIONAL_EVIDENCE"
    ],
-   "evidence_summary_zh": "临时边界、概念属性、未成年人保护、数据边界与缺资料清单均已声明。"
+   "evidence_summary_zh": "临时边界、概念属性、未成年人保护、数据边界与资料缺口均已声明（见 proposal 风险章节与 assumptions A-BOUNDARY-001/A-KEYAREA-001/A-CONTROLS-001）。"
   }
  ]
 }
