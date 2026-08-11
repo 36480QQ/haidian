@@ -1,40 +1,41 @@
 {
   "schema_version": "0.1.0",
+  "ok": true,
+  "submission_dir": "submissions/ovws/jingzhang-ai-spine",
+  "pr_author": "ovws",
+  "stage": "formal",
+  "can_enter_formal_review": true,
+  "package_type": "professional_design_package",
+  "review_status": "formal-review-ready",
+  "next_actions": [],
   "checks": [
     {
-      "check_id": "BOUNDARY_TRUST",
+      "check_id": "DETERMINISTIC_VALIDATION",
       "result": "pass",
-      "severity": "major",
-      "target": "geometry/site_boundary.geojson",
-      "message": "Provisional boundary is present; it is not an official redline or precise-area basis. Replace it with official geometry and recalculate the package before formal refinement; provisional geometry does not block content review."
+      "severity": "blocking",
+      "target": "validate_local_submission.py",
+      "message": "deterministic_validation: PASS"
     },
     {
-      "check_id": "KEY_AREAS_TRUST",
+      "check_id": "SPATIAL_REVIEW",
       "result": "pass",
-      "severity": "major",
-      "target": "geometry/key_areas.geojson",
-      "message": "Three required key areas are provisional; they are not official redlines or precise-area bases. Replace them with official polygons and recalculate the package before formal refinement; provisional geometry does not block content review."
+      "severity": "blocking",
+      "target": "spatial_review.py",
+      "message": "spatial_review: PASS"
     },
     {
-      "check_id": "LAND_USE_TOPOLOGY",
+      "check_id": "VISUAL_PACKAGING",
       "result": "pass",
-      "severity": "major",
-      "target": "geometry/land_use.geojson",
-      "message": "Initial land-use polygons are derived from site boundary partitioning."
-    },
-    {
-      "check_id": "VISUAL_STATIC",
-      "result": "pass",
-      "severity": "info",
-      "target": "visual/index.html",
-      "message": "Static HTML visualization is generated without external dependencies."
+      "severity": "blocking",
+      "target": "visual_review.py",
+      "message": "visual_review: PASS"
     },
     {
       "check_id": "PROFESSIONAL_EVIDENCE",
       "result": "pass",
-      "severity": "major",
-      "target": "proposal.md",
-      "message": "Proposal includes references to standards, design depth items, geometry, metrics, sources, and assumptions."
+      "severity": "blocking",
+      "target": "professional_review.py",
+      "message": "professional_review: PASS"
     }
   ]
 }
