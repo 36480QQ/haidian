@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "80b71cb78d2c1581fc679eb561959ac515bc8a3ff6f76c74dcc2c4e20d49b72f"
+      "sha256": "560efdee65ba8b875a8f9b367710cbb18d8009f31316be26138b5faa0f4b4b63"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "c16c35d405f64910d4b847bbf944cb55fde0cf5c6c54f7ae33b798e39614f1cc"
+      "sha256": "aea5d6d47ec0c9feff60f01473023ca20757419a101f44dd5c92c13b0eda7de0"
     },
     {
       "path": "report/narrative.md",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "59887a0bd06739ad3522fadde76dfd9654474c89f52cf30b0179bd295ba93621"
+      "sha256": "2042e2fb1be2661104550c6cddce33a8430f6e7eeb9d2ebea23c0e62823c3522"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -287,6 +287,7 @@
     }
   ],
   "validation_claim": {
+    "readiness_contract": "persisted-self-check-v1",
     "self_checked": true,
     "known_blockers": [],
     "data_confidence": "medium"
