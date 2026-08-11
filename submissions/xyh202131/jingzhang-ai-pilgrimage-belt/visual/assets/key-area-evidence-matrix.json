@@ -674,6 +674,63 @@
       "existing_g0_guard": "visual/assets/implementation-handoff-matrix.json#authority_boundary"
     }
   },
+  "urban_metabolism_contract": {
+    "contract_id": "JZ-URBAN-METABOLISM-05",
+    "status": "concept_only_g0_real_world_evidence_pending",
+    "purpose_zh": "把现有十二场景按三处空间原型回链到七类资源、完整系统边界、组件退出去向和公共 NO-GO 门；只增强资源可审计性，不改变空间、场景或成熟度。",
+    "purpose_en": "Backlink the twelve existing scenes in the three spatial prototypes to seven resources, a whole-system boundary, component exit destinations, and a public NO-GO gate. This strengthens resource auditability only and changes no space, scene, or maturity.",
+    "authoritative_ledger_ref": "visual/assets/urban-metabolism-ledger.json#JZ-URBAN-METABOLISM-V1",
+    "key_area_resource_crosswalk": [
+      {
+        "key_area_feature_id": "PROV-KEY-001",
+        "prototype": "VERIFY",
+        "scene_ids": ["SCENE-001", "SCENE-002", "SCENE-003", "SCENE-004"],
+        "visible_burdens": ["mobile_equipment_and_battery", "edge_network_and_display", "incident_data_and_archive", "safety_observer_and_takeover", "physical_isolation_and_accessible_bypass"],
+        "exit_focus": "equipment isolation, repair/return/recycling, minimum incident record, continuous bypass, and independent place restoration",
+        "current_evidence": "typed_design_fields_only_no_measurement_vendor_approval_or_operation"
+      },
+      {
+        "key_area_feature_id": "PROV-KEY-002",
+        "prototype": "CO-CREATE",
+        "scene_ids": ["SCENE-005", "SCENE-006", "SCENE-007", "SCENE-008"],
+        "visible_burdens": ["media_and_source_rights", "shared_devices_and_batteries", "consent_withdrawal_and_deletion", "safeguarding_curation_and_co_test_labour", "quiet_clearance_and_resident_daily_use"],
+        "exit_focus": "withdraw/delete records, remove event kit and temporary marks, restore two courts and the daily street before restart discussion",
+        "current_evidence": "typed_design_fields_only_no_measurement_vendor_approval_or_operation"
+      },
+      {
+        "key_area_feature_id": "PROV-KEY-003",
+        "prototype": "PUBLISH",
+        "scene_ids": ["SCENE-009", "SCENE-010", "SCENE-011", "SCENE-012"],
+        "visible_burdens": ["route_and_authoritative_source_maintenance", "sensors_terminals_network_and_print", "sensitive_inference_prohibition", "staffed_service_and_correction", "four_way_commute_and_quiet_rest"],
+        "exit_focus": "take automated output offline, export/correct/close records, retain same-task staffed service, remove kit, and retest all four movement arms",
+        "current_evidence": "typed_design_fields_only_no_measurement_vendor_approval_or_operation"
+      }
+    ],
+    "whole_system_rule": "Each future comparison must include server/cloud, edge, network, end device, sensing/display/fixings, staffed and non-AI baseline, human review/recovery, and place restoration unless a typed not_applicable reason is independently accepted.",
+    "typed_unknown_rule": "Use only not_applicable, not_measured, external_confirmation_required, not_yet_authorized, or not_fully_cleared with a reason and replacement evidence path; never silently omit a burden.",
+    "public_no_go_rule": "A valid denominator, evidence anchors, accepted responsibility, same-task non-AI baseline, vendor export/repair/exit terms, component destination, place restoration, and independent retest must all close before any future PASS discussion; PASS never grants deployment authorization.",
+    "drawing_refs": ["assets/figures/urban-metabolism-ledger.svg", "assets/figures/urban-metabolism-ledger.en.svg", "assets/figures/urban-metabolism-ledger.png", "assets/figures/urban-metabolism-ledger.en.png"],
+    "human_refs": ["proposal.md#ai-城市代谢十二场景七类资源完整退出--ai-urban-metabolism-twelve-scenes-seven-resources-complete-exit", "proposal.en.md#ai-urban-metabolism-twelve-scenes-seven-resources-complete-exit", "visual/index.html#metabolism", "visual/index.en.html#metabolism"],
+    "metrics_refs": ["metrics.json#urban_metabolism_scene_resource_passport_count", "metrics.json#urban_metabolism_design_field_coverage_ratio", "metrics.json#urban_metabolism_measured_energy_scene_count", "metrics.json#urban_metabolism_measured_compute_scene_count", "metrics.json#urban_metabolism_confirmed_equipment_lifecycle_scene_count", "metrics.json#urban_metabolism_measured_human_review_minutes_scene_count", "metrics.json#urban_metabolism_confirmed_vendor_scene_count", "metrics.json#urban_metabolism_real_approval_or_operation_count"],
+    "assumption_ref": "assumptions.json#A-URBAN-METABOLISM-014",
+    "global_guards": {
+      "geometry_changed": false,
+      "new_scene_or_project_ids_added": false,
+      "all_scenes_remain": "G0",
+      "valid_task_denominator_count": 0,
+      "field_measurement_count": 0,
+      "confirmed_vendor_count": 0,
+      "real_approval_or_operation_count": 0,
+      "rights_status": "not_fully_cleared"
+    },
+    "counterexample_audit": [
+      {"test": "Server or model compute is counted while network, end device, staff, or place recovery is omitted.", "design_result": "hard_fail", "current_field_result": "unknown_not_measured"},
+      {"test": "An industry average, nameplate, vendor claim, or simulation is labelled as a project measurement.", "design_result": "hard_fail", "current_field_result": "no_project_value_published"},
+      {"test": "A 100% field-coverage ratio is interpreted as environmental performance or readiness.", "design_result": "hard_fail", "current_field_result": "coverage_explicitly_design_only"},
+      {"test": "Equipment, data, service, or temporary-place components have no accountable exit destination.", "design_result": "hard_fail", "current_field_result": "destinations_required_not_executed"},
+      {"test": "A future resource PASS is treated as deployment, procurement, site, maturity, or rights authorization.", "design_result": "hard_fail", "current_field_result": "NO_GO_G0"}
+    ]
+  },
   "non_ai_first_public_city_contract": {
     "contract_id": "JZ-NON-AI-FIRST-04",
     "status": "concept_only_g0",
