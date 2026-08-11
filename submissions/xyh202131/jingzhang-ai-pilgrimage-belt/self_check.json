@@ -21,6 +21,10 @@
       ],
       "changed_files": [
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/agent.json",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/climate-resilience-corridor.en.png",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/climate-resilience-corridor.en.svg",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/climate-resilience-corridor.png",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/climate-resilience-corridor.svg",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/failure-governance-writeback.en.png",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/failure-governance-writeback.en.svg",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/failure-governance-writeback.png",
@@ -83,6 +87,7 @@
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/self_check.json",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/sources.json",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/standard_matrix.json",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/visual/assets/climate-resilience-contract.json",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/visual/assets/evidence-freshness-policy.json",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/visual/assets/failure-governance-register.json",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/visual/assets/g0-offline-enterprise-service-baseline.json",
@@ -108,7 +113,7 @@
       "ai_package_stages": {
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt": "formal"
       },
-      "total_bytes": 14395463,
+      "total_bytes": 15557111,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -193,15 +198,15 @@
       "summary": {
         "standard_matrix_items": 6,
         "design_depth_items": 15,
-        "known_metric_refs_required": 113,
+        "known_metric_refs_required": 119,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
           "source": 29,
           "standard": 6,
           "depth": 15,
-          "data": 47,
-          "metric": 73
+          "data": 50,
+          "metric": 80
         }
       }
     },

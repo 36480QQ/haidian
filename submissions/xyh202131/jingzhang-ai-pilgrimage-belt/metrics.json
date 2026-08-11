@@ -1570,6 +1570,86 @@
       "confidence": "high",
       "assumptions": ["The contract requires appeals to affect go/no-go, but does not claim an operating queue or outcome."],
       "reason": "No real appeal, accountable decision owner, or correction/decision receipt exists."
+    },
+    "climate_resilience_cohesive_work_package_count": {
+      "status": "known",
+      "value": 6,
+      "unit": "count",
+      "source_files": ["visual/assets/climate-resilience-contract.json"],
+      "formula": "count(cohesive_work_packages)",
+      "confidence": "high",
+      "assumptions": ["Counts proposal-defined G0 design packages only, not sites, facilities, approvals, activities, devices, operators, or measured climate results."],
+      "reason": "The count verifies one bounded documentation increment."
+    },
+    "climate_real_field_measurement_count": {
+      "status": "known",
+      "value": 0,
+      "unit": "count",
+      "source_files": ["visual/assets/climate-resilience-contract.json"],
+      "formula": "count(qualified dated project field measurements linked to typed anchors and approved denominators)",
+      "confidence": "high",
+      "assumptions": ["Concept geometry, ratios, diagrams, public background, simulations, and borrowed values are excluded."],
+      "reason": "No project microclimate, shade, rest, inspection, warning, stormwater, stop-time, or restoration measurement has been supplied."
+    },
+    "climate_continuous_shade_length": {
+      "status": "unknown",
+      "value": null,
+      "unit": "none",
+      "source_files": ["visual/assets/climate-resilience-contract.json"],
+      "formula": "future surveyed path length satisfying a preregistered same-date/time shade definition",
+      "confidence": "unknown",
+      "assumptions": ["Requires official or qualified path geometry, a dated solar or observation record, weather context, and a declared continuity rule."],
+      "reason": "Green-space area and conceptual shade/rest intent cannot establish continuous shade or thermal comfort."
+    },
+    "climate_reachable_rest_node_count": {
+      "status": "unknown",
+      "value": null,
+      "unit": "none",
+      "source_files": ["visual/assets/climate-resilience-contract.json"],
+      "formula": "future count of surveyed nodes passing group-specific approach, use, rest, and departure criteria",
+      "confidence": "unknown",
+      "assumptions": ["Requires qualified survey and consented accessibility co-testing for declared user groups."],
+      "reason": "A conceptual symbol does not prove a reachable or accessible rest node."
+    },
+    "climate_known_warning_performance_count": {
+      "status": "known",
+      "value": 0,
+      "unit": "count",
+      "source_files": ["visual/assets/climate-resilience-contract.json"],
+      "formula": "count(preregistered same-task warning comparisons with approved reference source, event denominator, human confirmation, and independent retest)",
+      "confidence": "high",
+      "assumptions": ["Prompt templates, design parity, static notices, and synthetic checks are excluded."],
+      "reason": "No real event set, threshold, false-positive or false-negative result, response time, or independent retest exists."
+    },
+    "climate_real_warning_event_count": {
+      "status": "known",
+      "value": 0,
+      "unit": "count",
+      "source_files": ["visual/assets/climate-resilience-contract.json"],
+      "formula": "count(real public climate-warning events delivered by an accountable future service)",
+      "confidence": "high",
+      "assumptions": ["The bilingual notice comparison is a design contract and not an operating alert."],
+      "reason": "No operating service, source owner, confirmer, approved threshold, public event, or outcome record exists."
+    },
+    "climate_installed_sensor_or_interface_count": {
+      "status": "known",
+      "value": 0,
+      "unit": "count",
+      "source_files": ["visual/assets/climate-resilience-contract.json"],
+      "formula": "count(verified installed climate sensors, mounts, powered interfaces, or assisted notice terminals)",
+      "confidence": "high",
+      "assumptions": ["A removable-edge concept drawing is not an installed component."],
+      "reason": "No device, vendor, site, procurement, installation, power, network, lifecycle, or accountable custodian is confirmed."
+    },
+    "climate_completed_place_restoration_receipt_count": {
+      "status": "known",
+      "value": 0,
+      "unit": "count",
+      "source_files": ["visual/assets/climate-resilience-contract.json", "visual/assets/failure-governance-register.json"],
+      "formula": "count(completed receipts closing component, fixing, power/network, data/service, sign/queue, surface, ordinary-path, maintenance-clear-zone, and independent acceptance destinations)",
+      "confidence": "high",
+      "assumptions": ["An exit checklist or conceptual removable component is not executed restoration."],
+      "reason": "No installed component, stop event, removal, repair, ordinary-place baseline, or independent acceptance exists."
     }
   }
 }
