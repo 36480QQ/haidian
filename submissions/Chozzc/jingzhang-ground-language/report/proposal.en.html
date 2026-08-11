@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JING-ZHANG GROUND LANGUAGE: A Public Ground Language Readable by People and Machines - proposal report</title>
+<style>
+:root {
+  --ink: #172033;
+  --muted: #667085;
+  --line: #d7dee8;
+  --paper: #ffffff;
+  --bg: #f4f7fa;
+  --accent: #245b8f;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.75;
+}
+main {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 42px 24px 72px;
+  background: var(--paper);
+  min-height: 100vh;
+  box-shadow: 0 0 0 1px rgba(23, 32, 51, 0.05);
+}
+.hero {
+  border-bottom: 3px solid var(--accent);
+  padding-bottom: 24px;
+  margin-bottom: 30px;
+}
+h1 { font-size: 34px; line-height: 1.22; margin: 0 0 10px; }
+h2 { font-size: 25px; margin: 34px 0 12px; border-top: 1px solid var(--line); padding-top: 24px; }
+h3 { font-size: 20px; margin: 26px 0 10px; }
+p, li { font-size: 16px; }
+blockquote {
+  margin: 18px 0;
+  padding: 12px 18px;
+  border-left: 4px solid var(--line);
+  color: var(--muted);
+  background: #f8fafc;
+}
+code {
+  background: #eef2f7;
+  color: #1d4f7a;
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+}
+.summary { color: var(--muted); font-size: 17px; }
+.translation-link a { color: var(--accent); font-weight: 700; }
+.proposal-table { margin: 20px 0 26px; overflow-x: auto; }
+.proposal-table table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 520px;
+  font-size: 15px;
+}
+.proposal-table th, .proposal-table td {
+  border: 1px solid var(--line);
+  padding: 9px 12px;
+  text-align: left;
+  vertical-align: top;
+  line-height: 1.6;
+}
+.proposal-table th { background: #eef2f7; color: var(--ink); font-weight: 700; }
+.proposal-table tbody tr:nth-child(even) { background: #fafcfe; }
+.proposal-table .align-center { text-align: center; }
+.proposal-table .align-right { text-align: right; }
+.proposal-figure {
+  margin: 22px 0 28px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+  background: #f8fafc;
+}
+.proposal-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.proposal-figure figcaption {
+  padding: 10px 14px;
+  color: var(--muted);
+  border-top: 1px solid var(--line);
+  font-size: 14px;
+}
+.evidence {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  margin: 0 0.12em;
+  border-bottom: 1px solid #8aa8c3;
+  color: #315f87;
+  font-size: 0.68em;
+  font-weight: 650;
+  line-height: 1.35;
+  vertical-align: super;
+}
+@media (max-width: 720px) {
+  main { padding: 26px 16px 52px; }
+  h1 { font-size: 26px; }
+  h2 { font-size: 21px; }
+}
+</style>
+</head>
+<body>
+<main>
+<section class="hero">
+<h1>JING-ZHANG GROUND LANGUAGE: A Public Ground Language Readable by People and Machines</h1>
+<p class="summary">Six open ground words let pedestrians, disabled users and robots from different vendors read the same public-space rules, while three areas and two wings form a reversible, testable and publicly governed urban validation chain.</p>
+<p class="translation-link"><a href="proposal.html">阅读中文版本</a></p>
+</section>
+<h1>JING-ZHANG GROUND LANGUAGE</h1>
+<blockquote><p>Make machines obey public-space rules that people can understand.</p></blockquote>
+<p>JING-ZHANG GROUND LANGUAGE is neither another urban screen nor a dedicated lane for one robot vendor. It is an open, passive, low-dependency language embedded in the public ground. Every state has visual, tactile and machine translations, allowing pedestrians, blind-cane and wheelchair users, maintainers and mobile robots from different vendors to share six meanings: LINE, YIELD, EDGE, BERTH, HELP and CHANGE. If machine reading fails, the machine stops and yields. A person without a phone or network can still complete the same journey.</p>
+<p>Its structure is “one line, three translations, three fields, two wings, six words and twelve scenarios.” The Jing-Zhang corridor becomes a learnable Ground Language Line. Zhongzhiyuan, Beijing AI Origin Community and Dazhongsi take responsibility for validation, co-reading and handover. The Zhongguancun Technology Services Wing and Xiaoyue River Scenario Enablement Wing connect standards, businesses, maintenance and community feedback. The first action is only a supervised, removable 100–200 metre pilot, not a corridor-wide construction project.<sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="OFFICIAL-ANNOUNCEMENT" title="Source: OFFICIAL-ANNOUNCEMENT">Source</sup> <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="AGENT-TASKBOOK" title="Source: AGENT-TASKBOOK">Source</sup> <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="pilot_segment_target_min_m" title="Metric: pilot_segment_target_min_m">Metric</sup> <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="pilot_segment_target_max_m" title="Metric: pilot_segment_target_max_m">Metric</sup></p>
+<figure class="proposal-figure"><img src="../assets/figures/site-overview.en.png" alt="Overall concept: one Ground Language Line connecting three fields and two wings"><figcaption>Overall concept: one Ground Language Line connecting three fields and two wings</figcaption></figure>
+<h2>1. Why a Ground Language</h2>
+<p>Public space now has a communication gap. People infer right of way from paving, kerbs, signs and other people; robots depend on vendor-specific maps, tags and cloud interfaces. As devices multiply, the city risks fragmenting into incompatible machine territories. Ground Language puts the interface back into public space and makes machine behaviour a rule residents can see and question.</p>
+<p>It never replaces statutory tactile paving, traffic markings or emergency systems. Existing accessibility and traffic rules always prevail. No new tactile word can reach a public pilot until blind, low-vision, wheelchair and neurodiverse users confirm through co-design that it creates no trip, slip, confusion or exclusion risk.<sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="CASE-MLIT-TACTILE-BLOCKS" title="Source: CASE-MLIT-TACTILE-BLOCKS">Source</sup> <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="CASE-UK-TACTILE-PAVING" title="Source: CASE-UK-TACTILE-PAVING">Source</sup> <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="CASE-MTA-STATION-LAB" title="Source: CASE-MTA-STATION-LAB">Source</sup> <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="GB-50763-2012" title="Standard: GB-50763-2012">Standard</sup></p>
+<p>The originality audit covered the merged submission catalogue, PR titles and bodies, non-PR issues, code search and semantic searches. The three closest proposals address accessibility codes, autonomous-vehicle kerb governance and turn-taking, respectively. None combines an open passive ground grammar, visual/tactile/machine translations, cross-vendor tests and public version governance as one core proposition. Because the repository remains live, this is an evidenced conclusion at the audit date, not a permanent exclusivity claim. An incremental audit is mandatory immediately before the PR; a same-core match stops publication and triggers repositioning.<sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="ORIGINALITY-AUDIT-20260811" title="Source: ORIGINALITY-AUDIT-20260811">Source</sup></p>
+<h2>2. Six Words: A Minimal but Complete Grammar</h2>
+<p>The six words express public-space states only. They carry no identity, payment, advertising or behavioural profile. The visual layer uses high-contrast edges and simple forms; the tactile layer uses surface differences validated through co-design; the machine layer uses an open code, geometry and checksum. If one layer is damaged, the other two remain legible. If the machine layer is uncertain, the device stops by default.</p>
+<div class="proposal-table"><table><thead><tr><th>Word</th><th>Human meaning</th><th>Spatial action</th><th>Minimum machine behaviour</th></tr></thead><tbody><tr><td>G1 LINE</td><td>continuous passage</td><td>show directional continuity</td><td>follow slowly and yield to people</td></tr><tr><td>G2 YIELD</td><td>let others go first</td><td>provide a waiting pocket at conflict points</td><td>slow, stop and confirm before moving</td></tr><tr><td>G3 EDGE</td><td>boundary not to cross</td><td>mark hazard or protected interfaces</td><td>never cross; stop if localisation is uncertain</td></tr><tr><td>G4 BERTH</td><td>short stop and handover</td><td>move dwell activity out of the through route</td><td>stop only in a vacant berth</td></tr><tr><td>G5 HELP</td><td>human help is available</td><td>provide a visible, reachable service point</td><td>request human takeover without identity data</td></tr><tr><td>G6 CHANGE</td><td>temporary change or diversion</td><td>disclose works, events or faults</td><td>use the on-site version; stop on conflict</td></tr></tbody></table></div>
+<figure class="proposal-figure"><img src="../assets/figures/land-use-structure.en.png" alt="The six words and their visual, tactile and machine translations"><figcaption>The six words and their visual, tactile and machine translations</figcaption></figure>
+<p>Open does not mean unmanaged. Every word has a version, material batch, installation record, maintainer, rollback condition and public change log. Vendors may implement their own readers but cannot redefine a word. AprilTag demonstrates the value of an open visual fiducial, while Open-RMF offers an open route to multi-fleet coordination. Ground Language differs by translating the machine interface into a public-space state that people can directly read and contest.<sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="CASE-APRILTAG" title="Source: CASE-APRILTAG">Source</sup> <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="CASE-OPEN-RMF" title="Source: CASE-OPEN-RMF">Source</sup></p>
+<h2>3. Three Fields and Two Wings</h2>
+<p><strong>F1 Zhongzhiyuan Translation Yard</strong> asks whether devices read correctly. It tests multiple vendors, rain, snow, dirt, occlusion, glare and default-stop behaviour, recording misreads, shutdowns and takeover—not merely recognition rate. <strong>F2 AI Origin Co-reading Commons</strong> asks whether people understand. Eight user groups revise form, tactility, explanations and non-digital routes in a near-campus public-service setting. <strong>F3 Dazhongsi Handover Field</strong> asks whether the system can enter real operations. Delivery, maintenance, events and public services rehearse berth handover, diversion, human help and version recall.<sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="AGENT-TASKBOOK" title="Source: AGENT-TASKBOOK">Source</sup> <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="key_area_count" title="Metric: key_area_count">Metric</sup> <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="testing_validation_scenario_count" title="Metric: testing_validation_scenario_count">Metric</sup></p>
+<p>The wings are not new administrative boundaries. The Zhongguancun Technology Services Wing connects standards, law, safety evaluation, supply chains and business adoption. The Xiaoyue River Scenario Enablement Wing connects communities, green space, maintenance and continuous walking feedback. All three key-area polygons are provisional repository geometry. An open issue reports that the provisional Dazhongsi centroid is about 2.26 kilometres from Dazhongsi Station and near Beijing North Railway Station. The proposal therefore claims only programme-level logic, not a station, intersection quadrant, parcel or engineering location.<sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="DATA-ISSUE-1029" title="Source: DATA-ISSUE-1029">Source</sup> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/key_areas.geojson#PROV-KEY-003" title="Spatial data: geometry/key_areas.geojson#PROV-KEY-003">Spatial data</sup></p>
+<figure class="proposal-figure"><img src="../assets/figures/key-areas.en.png" alt="Three fields, two wings and three validation responsibilities"><figcaption>Three fields, two wings and three validation responsibilities</figcaption></figure>
+<h2>4. Twelve Scenarios, Eight User Groups</h2>
+<p>The first three scenarios form an industrial validation chain: S1 multi-vendor co-reading, S2 weather and occlusion, and S3 mutual human-machine comprehension. Nine everyday scenarios follow: the final ten metres to a station, blind-cane co-reading, wheelchair and pram transitions, identity-free delivery handover, maintenance inspection, construction and emergency diversion, Jing-Zhang cultural decoding, an app-free market and public service, and community correction with version recall.<sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="scenario_count" title="Metric: scenario_count">Metric</sup></p>
+<p>Eight user groups govern release: independent blind or low-vision travellers; wheelchair or mobility-device users; older people without smartphones; children and carers; pedestrians and cyclists; public-space maintainers; delivery and handover workers; and robot developers and safety testers. Every scenario declares a non-digital route, data boundary, accountable human, stop threshold and recovery record. Robots gain no priority from efficiency. Children and disabled users are release gates, not edge cases.<sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="CASE-ITU-F921" title="Source: CASE-ITU-F921">Source</sup> <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="CASE-ISO-4448-1" title="Source: CASE-ISO-4448-1">Source</sup> <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="CASE-BOSTON-PDD" title="Source: CASE-BOSTON-PDD">Source</sup></p>
+<figure class="proposal-figure"><img src="../assets/figures/mobility-bluegreen.en.png" alt="Twelve scenarios, eight user groups and fail-safe relationships"><figcaption>Twelve scenarios, eight user groups and fail-safe relationships</figcaption></figure>
+<h2>5. Three Public Landmarks</h2>
+<p>Three tangible public works connect the language to Jing-Zhang culture. The <strong>Yield Marker</strong> makes “machines yield to people” the corridor’s opening promise. <strong>Ground Language Stone Zero</strong> displays the current six-word version, revision history and public test method. The <strong>Handover Bell</strong> creates a perceptible civic moment when a device transfers to human control or a major version changes. All three are conceptual, reversible surface or street-furniture installations. They do not attach to unverified railway heritage fabric or replace statutory signs.</p>
+<p>Unlike a one-way AI display, the landmarks make value choices visible: technology may change, but human priority, identity-free access, visible failure and accountable responsibility cannot be silently updated away. They also form an open curriculum for schools, developers and residents, extending the centennial Jing-Zhang story from transport-engineering heritage to a contemporary culture of collectively setting rules for machines.</p>
+<h2>6. A Reversible 100–200 Metre Pilot</h2>
+<p>The first phase does not cover the corridor. Subject to site permission, it selects one fully supervised 100–200 metre segment that avoids statutory tactile paving and verified heritage fabric. Phase 0 confirms official boundaries, ownership, transport, accessibility, heritage, utilities and maintenance. Phase 1 tests materials and recognition in a closed environment. Phase 2 allows a staffed public pilot. Phase 3 uses independent evaluation to expand, revise or remove it.<sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="implementation_delivery" title="Depth: implementation_delivery">Depth</sup> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/phasing.geojson#PHASE-001" title="Spatial data: geometry/phasing.geojson#PHASE-001">Spatial data</sup></p>
+<p>Release gates include user co-design; clear distinction from statutory tactile paving; acceptable slip and trip performance; independent reading by at least two vendors; default stop under occlusion or conflict; effective human takeover; a complete phone-free route; and published complaint and rollback procedures. Success is measured through misreads and near misses, takeover time, non-digital completion, user comprehension, maintenance closure time and public issue-resolution time—not installed area. The pilot collects no faces, device identities or continuous trajectories. Necessary event logs are minimised, briefly retained and publicly documented.</p>
+<figure class="proposal-figure"><img src="../assets/figures/metrics-evidence.en.png" alt="Pilot phases, release gates, governance roles and metrics"><figcaption>Pilot phases, release gates, governance roles and metrics</figcaption></figure>
+<h2>7. Professional Boundaries and Next Work</h2>
+<p>The overall boundary and three key areas use repository-maintained provisional rough geometry, not official redlines. Official road, building, parcel, heritage-protection, utility and transport surveys are absent. Land-use, road, green-space, public-space and phasing layers support conceptual organisation and structural review only. They cannot support retain-renovate-demolish decisions, FAR, quantities or approval. The building footprint is a low-confidence structural placeholder and FAR remains unknown.<sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="site_area_sqm" title="Metric: site_area_sqm">Metric</sup> <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="floor_area_ratio" title="Metric: floor_area_ratio">Metric</sup> <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="risk_missing_data" title="Depth: risk_missing_data">Depth</sup></p>
+<p>Before any field action, planning, transport, accessibility, materials, heritage, fire, utility, legal and operating teams must review the proposal with real users. Next tasks are to obtain official polygons and surveys; calibrate roads and pedestrian conflicts; test durability, drainage, snow, ice and cleaning; conduct tactile discrimination and cognition research; establish an open technical specification, vendor-neutral procurement, liability and version governance; and let an independent safety review decide whether a pilot may proceed.</p>
+<h2>8. Open Value</h2>
+<p>The innovation is not another QR code. It is a public covenant: rules obeyed by machines should also be visible, tangible, debatable and rejectable by people. Six words are small enough to test on a real segment. Three translations are open enough to resist vendor lock-in. Three fields and two wings are complete enough to connect research, co-design, operations and governance into Haidian’s innovation chain. If the test fails, the ground can be restored. If it succeeds, the city gains not a proprietary facility but a replicable, auditable and human-first layer of public AI infrastructure.</p>
+</main>
+</body>
+</html>
