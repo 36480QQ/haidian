@@ -29,7 +29,13 @@
       "id": "A-METRICS-001",
       "status": "recomputed",
       "statement": "全部面积与比例指标在 EPSG:4548 下从 geometry 复算；主题类计数以 proposal.md 正文口径为准。",
-      "impact": "指标可复现；组织方数据缺口不阻断内容评分。"
+      "impact": "计算可复现，但因输入边界和设计图层均为 provisional，所有几何派生数值仅为临时粗算、低置信度估计，非官方红线、法定指标或审批依据。"
+    },
+    {
+      "id": "A-STANDARDS-001",
+      "status": "pending_professional_confirmation",
+      "statement": "MOHURD-ARCH-DESIGN-DEPTH-2016 未列入当前 source_registry_summary 的 approved formal sources。",
+      "impact": "其仅用于内部设计深度对照；在取得权威版本与适用性核验前，不将其表述为已审查的正式来源。"
     },
     {
       "id": "A-OPS-001",

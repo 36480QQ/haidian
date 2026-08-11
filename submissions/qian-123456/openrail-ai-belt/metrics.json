@@ -7,106 +7,151 @@
   "metrics": {
     "site_area_sqm": {
       "status": "known",
-      "value": 11412825.385554,
+      "value": 11412825.4,
       "unit": "sqm",
       "source_files": [
         "geometry/site_boundary.geojson"
       ],
       "formula": "polygon_area(site_boundary.geojson)",
-      "confidence": "high",
-      "assumptions": []
+      "confidence": "low",
+      "assumptions": [
+        "A-BOUNDARY-001",
+        "A-GEOMETRY-001"
+      ],
+      "estimate_status": "provisional",
+      "rounding_rule": "rounded to 1 decimal place(s); provisional geometry estimate, not an approval basis"
     },
     "green_space_area_sqm": {
       "status": "known",
-      "value": 1846913.325225,
+      "value": 1846913.3,
       "unit": "sqm",
       "source_files": [
         "geometry/green_space.geojson"
       ],
       "formula": "sum(polygon_area(green_space.geojson))",
-      "confidence": "high",
-      "assumptions": []
+      "confidence": "low",
+      "assumptions": [
+        "A-BOUNDARY-001",
+        "A-GEOMETRY-001"
+      ],
+      "estimate_status": "provisional",
+      "rounding_rule": "rounded to 1 decimal place(s); provisional geometry estimate, not an approval basis"
     },
     "green_ratio": {
       "status": "known",
-      "value": 0.161828,
+      "value": 0.1618,
       "unit": "ratio",
       "source_files": [
         "geometry/green_space.geojson",
         "geometry/site_boundary.geojson"
       ],
       "formula": "green_space_area_sqm / site_area_sqm",
-      "confidence": "high",
-      "assumptions": []
+      "confidence": "low",
+      "assumptions": [
+        "A-BOUNDARY-001",
+        "A-GEOMETRY-001"
+      ],
+      "estimate_status": "provisional",
+      "rounding_rule": "rounded to 4 decimal place(s); provisional geometry estimate, not an approval basis"
     },
     "public_space_area_sqm": {
       "status": "known",
-      "value": 140510.705913,
+      "value": 140510.7,
       "unit": "sqm",
       "source_files": [
         "geometry/public_space.geojson"
       ],
       "formula": "sum(polygon_area(public_space.geojson))",
-      "confidence": "high",
-      "assumptions": []
+      "confidence": "low",
+      "assumptions": [
+        "A-BOUNDARY-001",
+        "A-GEOMETRY-001"
+      ],
+      "estimate_status": "provisional",
+      "rounding_rule": "rounded to 1 decimal place(s); provisional geometry estimate, not an approval basis"
     },
     "public_space_ratio": {
       "status": "known",
-      "value": 0.012312,
+      "value": 0.0123,
       "unit": "ratio",
       "source_files": [
         "geometry/public_space.geojson",
         "geometry/site_boundary.geojson"
       ],
       "formula": "public_space_area_sqm / site_area_sqm",
-      "confidence": "high",
-      "assumptions": []
+      "confidence": "low",
+      "assumptions": [
+        "A-BOUNDARY-001",
+        "A-GEOMETRY-001"
+      ],
+      "estimate_status": "provisional",
+      "rounding_rule": "rounded to 4 decimal place(s); provisional geometry estimate, not an approval basis"
     },
     "building_footprint_area_sqm": {
       "status": "known",
-      "value": 724341.560344,
+      "value": 724341.6,
       "unit": "sqm",
       "source_files": [
         "geometry/buildings.geojson"
       ],
       "formula": "sum(polygon_area(buildings.geojson))",
-      "confidence": "high",
-      "assumptions": []
+      "confidence": "low",
+      "assumptions": [
+        "A-BOUNDARY-001",
+        "A-GEOMETRY-001"
+      ],
+      "estimate_status": "provisional",
+      "rounding_rule": "rounded to 1 decimal place(s); provisional geometry estimate, not an approval basis"
     },
     "building_density": {
       "status": "known",
-      "value": 0.063467,
+      "value": 0.0635,
       "unit": "ratio",
       "source_files": [
         "geometry/buildings.geojson",
         "geometry/site_boundary.geojson"
       ],
       "formula": "building_footprint_area_sqm / site_area_sqm",
-      "confidence": "high",
-      "assumptions": []
+      "confidence": "low",
+      "assumptions": [
+        "A-BOUNDARY-001",
+        "A-GEOMETRY-001"
+      ],
+      "estimate_status": "provisional",
+      "rounding_rule": "rounded to 4 decimal place(s); provisional geometry estimate, not an approval basis"
     },
     "road_length_m": {
       "status": "known",
-      "value": 34207.64874,
+      "value": 34207.6,
       "unit": "m",
       "source_files": [
         "geometry/roads.geojson"
       ],
       "formula": "sum(line_length(roads.geojson))",
-      "confidence": "high",
-      "assumptions": []
+      "confidence": "low",
+      "assumptions": [
+        "A-BOUNDARY-001",
+        "A-GEOMETRY-001"
+      ],
+      "estimate_status": "provisional",
+      "rounding_rule": "rounded to 1 decimal place(s); provisional geometry estimate, not an approval basis"
     },
     "rail_corridor_length_m": {
       "status": "known",
-      "value": 9720.600795,
+      "value": 9720.6,
       "unit": "m",
       "source_files": [
         "geometry/roads.geojson",
         "geometry/constraints.geojson"
       ],
       "formula": "line_length(京张遗址公园活力带主轴)",
-      "confidence": "medium",
-      "assumptions": []
+      "confidence": "low",
+      "assumptions": [
+        "A-BOUNDARY-001",
+        "A-GEOMETRY-001"
+      ],
+      "estimate_status": "provisional",
+      "rounding_rule": "rounded to 1 decimal place(s); provisional geometry estimate, not an approval basis"
     },
     "land_use_polygon_count": {
       "status": "known",
@@ -116,85 +161,125 @@
         "geometry/land_use.geojson"
       ],
       "formula": "count(geometry/land_use.geojson)",
-      "confidence": "high",
-      "assumptions": []
+      "confidence": "low",
+      "assumptions": [
+        "A-BOUNDARY-001",
+        "A-GEOMETRY-001"
+      ],
+      "estimate_status": "provisional",
+      "rounding_rule": "rounded to 4 decimal place(s); provisional geometry estimate, not an approval basis"
     },
     "land_use_research_area_sqm": {
       "status": "known",
-      "value": 2488256.814,
+      "value": 2488256.8,
       "unit": "sqm",
       "source_files": [
         "geometry/land_use.geojson"
       ],
       "formula": "sum(area where land_use_code=0802)",
-      "confidence": "high",
-      "assumptions": []
+      "confidence": "low",
+      "assumptions": [
+        "A-BOUNDARY-001",
+        "A-GEOMETRY-001"
+      ],
+      "estimate_status": "provisional",
+      "rounding_rule": "rounded to 1 decimal place(s); provisional geometry estimate, not an approval basis"
     },
     "land_use_residential_area_sqm": {
       "status": "known",
-      "value": 2421137.869,
+      "value": 2421137.9,
       "unit": "sqm",
       "source_files": [
         "geometry/land_use.geojson"
       ],
       "formula": "sum(area where land_use_code=0701)",
-      "confidence": "high",
-      "assumptions": []
+      "confidence": "low",
+      "assumptions": [
+        "A-BOUNDARY-001",
+        "A-GEOMETRY-001"
+      ],
+      "estimate_status": "provisional",
+      "rounding_rule": "rounded to 1 decimal place(s); provisional geometry estimate, not an approval basis"
     },
     "land_use_commercial_area_sqm": {
       "status": "known",
-      "value": 1106369.302,
+      "value": 1106369.3,
       "unit": "sqm",
       "source_files": [
         "geometry/land_use.geojson"
       ],
       "formula": "sum(area where land_use_code=05)",
-      "confidence": "high",
-      "assumptions": []
+      "confidence": "low",
+      "assumptions": [
+        "A-BOUNDARY-001",
+        "A-GEOMETRY-001"
+      ],
+      "estimate_status": "provisional",
+      "rounding_rule": "rounded to 1 decimal place(s); provisional geometry estimate, not an approval basis"
     },
     "land_use_education_area_sqm": {
       "status": "known",
-      "value": 2243749.539,
+      "value": 2243749.5,
       "unit": "sqm",
       "source_files": [
         "geometry/land_use.geojson"
       ],
       "formula": "sum(area where land_use_code=0804)",
-      "confidence": "high",
-      "assumptions": []
+      "confidence": "low",
+      "assumptions": [
+        "A-BOUNDARY-001",
+        "A-GEOMETRY-001"
+      ],
+      "estimate_status": "provisional",
+      "rounding_rule": "rounded to 1 decimal place(s); provisional geometry estimate, not an approval basis"
     },
     "land_use_green_area_sqm": {
       "status": "known",
-      "value": 1846913.325,
+      "value": 1846913.3,
       "unit": "sqm",
       "source_files": [
         "geometry/land_use.geojson"
       ],
       "formula": "sum(area where land_use_code=1401)",
-      "confidence": "high",
-      "assumptions": []
+      "confidence": "low",
+      "assumptions": [
+        "A-BOUNDARY-001",
+        "A-GEOMETRY-001"
+      ],
+      "estimate_status": "provisional",
+      "rounding_rule": "rounded to 1 decimal place(s); provisional geometry estimate, not an approval basis"
     },
     "land_use_road_area_sqm": {
       "status": "known",
-      "value": 1162835.587,
+      "value": 1162835.6,
       "unit": "sqm",
       "source_files": [
         "geometry/land_use.geojson"
       ],
       "formula": "sum(area where land_use_code=1207)",
-      "confidence": "high",
-      "assumptions": []
+      "confidence": "low",
+      "assumptions": [
+        "A-BOUNDARY-001",
+        "A-GEOMETRY-001"
+      ],
+      "estimate_status": "provisional",
+      "rounding_rule": "rounded to 1 decimal place(s); provisional geometry estimate, not an approval basis"
     },
     "land_use_reserved_area_sqm": {
       "status": "known",
-      "value": 143581.386,
+      "value": 143581.4,
       "unit": "sqm",
       "source_files": [
         "geometry/land_use.geojson"
       ],
       "formula": "sum(area where land_use_code=16)",
-      "confidence": "high",
-      "assumptions": []
+      "confidence": "low",
+      "assumptions": [
+        "A-BOUNDARY-001",
+        "A-GEOMETRY-001"
+      ],
+      "estimate_status": "provisional",
+      "rounding_rule": "rounded to 1 decimal place(s); provisional geometry estimate, not an approval basis"
     },
     "key_area_count": {
       "status": "known",
@@ -204,41 +289,61 @@
         "geometry/key_areas.geojson"
       ],
       "formula": "count(geometry/key_areas.geojson)",
-      "confidence": "high",
-      "assumptions": []
+      "confidence": "low",
+      "assumptions": [
+        "A-BOUNDARY-001",
+        "A-GEOMETRY-001"
+      ],
+      "estimate_status": "provisional",
+      "rounding_rule": "rounded to 4 decimal place(s); provisional geometry estimate, not an approval basis"
     },
     "zhongzhiyuan_area_sqm": {
       "status": "known",
-      "value": 1929201.877,
+      "value": 1929201.9,
       "unit": "sqm",
       "source_files": [
         "geometry/key_areas.geojson"
       ],
       "formula": "polygon_area(PROV-KEY-001)",
-      "confidence": "high",
-      "assumptions": []
+      "confidence": "low",
+      "assumptions": [
+        "A-BOUNDARY-001",
+        "A-GEOMETRY-001"
+      ],
+      "estimate_status": "provisional",
+      "rounding_rule": "rounded to 1 decimal place(s); provisional geometry estimate, not an approval basis"
     },
     "ai_origin_community_area_sqm": {
       "status": "known",
-      "value": 1043236.909,
+      "value": 1043236.9,
       "unit": "sqm",
       "source_files": [
         "geometry/key_areas.geojson"
       ],
       "formula": "polygon_area(PROV-KEY-002)",
-      "confidence": "high",
-      "assumptions": []
+      "confidence": "low",
+      "assumptions": [
+        "A-BOUNDARY-001",
+        "A-GEOMETRY-001"
+      ],
+      "estimate_status": "provisional",
+      "rounding_rule": "rounded to 1 decimal place(s); provisional geometry estimate, not an approval basis"
     },
     "dazhongsi_area_sqm": {
       "status": "known",
-      "value": 720454.219,
+      "value": 720454.2,
       "unit": "sqm",
       "source_files": [
         "geometry/key_areas.geojson"
       ],
       "formula": "polygon_area(PROV-KEY-003)",
-      "confidence": "high",
-      "assumptions": []
+      "confidence": "low",
+      "assumptions": [
+        "A-BOUNDARY-001",
+        "A-GEOMETRY-001"
+      ],
+      "estimate_status": "provisional",
+      "rounding_rule": "rounded to 1 decimal place(s); provisional geometry estimate, not an approval basis"
     },
     "phasing_phase_count": {
       "status": "known",
@@ -248,41 +353,61 @@
         "geometry/phasing.geojson"
       ],
       "formula": "count(distinct phase_id in geometry/phasing.geojson)",
-      "confidence": "high",
-      "assumptions": []
+      "confidence": "low",
+      "assumptions": [
+        "A-BOUNDARY-001",
+        "A-GEOMETRY-001"
+      ],
+      "estimate_status": "provisional",
+      "rounding_rule": "rounded to 4 decimal place(s); provisional geometry estimate, not an approval basis"
     },
     "phasing_near_term_area_sqm": {
       "status": "known",
-      "value": 1226428.515,
+      "value": 1226428.5,
       "unit": "sqm",
       "source_files": [
         "geometry/phasing.geojson"
       ],
       "formula": "sum(area where phase_id=P1)",
-      "confidence": "high",
-      "assumptions": []
+      "confidence": "low",
+      "assumptions": [
+        "A-BOUNDARY-001",
+        "A-GEOMETRY-001"
+      ],
+      "estimate_status": "provisional",
+      "rounding_rule": "rounded to 1 decimal place(s); provisional geometry estimate, not an approval basis"
     },
     "phasing_mid_term_area_sqm": {
       "status": "known",
-      "value": 3770993.92,
+      "value": 3770993.9,
       "unit": "sqm",
       "source_files": [
         "geometry/phasing.geojson"
       ],
       "formula": "sum(area where phase_id=P2)",
-      "confidence": "high",
-      "assumptions": []
+      "confidence": "low",
+      "assumptions": [
+        "A-BOUNDARY-001",
+        "A-GEOMETRY-001"
+      ],
+      "estimate_status": "provisional",
+      "rounding_rule": "rounded to 1 decimal place(s); provisional geometry estimate, not an approval basis"
     },
     "phasing_long_term_area_sqm": {
       "status": "known",
-      "value": 4751831.126,
+      "value": 4751831.1,
       "unit": "sqm",
       "source_files": [
         "geometry/phasing.geojson"
       ],
       "formula": "sum(area where phase_id=P3)",
-      "confidence": "high",
-      "assumptions": []
+      "confidence": "low",
+      "assumptions": [
+        "A-BOUNDARY-001",
+        "A-GEOMETRY-001"
+      ],
+      "estimate_status": "provisional",
+      "rounding_rule": "rounded to 1 decimal place(s); provisional geometry estimate, not an approval basis"
     },
     "ai_scenario_card_count": {
       "status": "known",
@@ -295,7 +420,9 @@
       "confidence": "medium",
       "assumptions": [
         "统计口径以 proposal.md 正文为准"
-      ]
+      ],
+      "estimate_status": "declared_design_output",
+      "rounding_rule": "rounded to 0 decimal place(s); provisional geometry estimate, not an approval basis"
     },
     "ai_industry_test_scenario_count": {
       "status": "known",
@@ -308,11 +435,13 @@
       "confidence": "medium",
       "assumptions": [
         "统计口径以 proposal.md 正文为准"
-      ]
+      ],
+      "estimate_status": "declared_design_output",
+      "rounding_rule": "rounded to 0 decimal place(s); provisional geometry estimate, not an approval basis"
     },
     "user_persona_count": {
       "status": "known",
-      "value": 5.0,
+      "value": 6.0,
       "unit": "count",
       "source_files": [
         "proposal.md"
@@ -321,7 +450,9 @@
       "confidence": "medium",
       "assumptions": [
         "统计口径以 proposal.md 正文为准"
-      ]
+      ],
+      "estimate_status": "declared_design_output",
+      "rounding_rule": "rounded to 0 decimal place(s); provisional geometry estimate, not an approval basis"
     },
     "ai_landmark_count": {
       "status": "known",
@@ -334,7 +465,9 @@
       "confidence": "medium",
       "assumptions": [
         "统计口径以 proposal.md 正文为准"
-      ]
+      ],
+      "estimate_status": "declared_design_output",
+      "rounding_rule": "rounded to 0 decimal place(s); provisional geometry estimate, not an approval basis"
     },
     "renewal_project_count": {
       "status": "known",
@@ -347,7 +480,9 @@
       "confidence": "medium",
       "assumptions": [
         "统计口径以 proposal.md 正文为准"
-      ]
+      ],
+      "estimate_status": "declared_design_output",
+      "rounding_rule": "rounded to 0 decimal place(s); provisional geometry estimate, not an approval basis"
     },
     "international_case_study_count": {
       "status": "known",
@@ -360,7 +495,9 @@
       "confidence": "medium",
       "assumptions": [
         "统计口径以 proposal.md 正文为准"
-      ]
+      ],
+      "estimate_status": "declared_design_output",
+      "rounding_rule": "rounded to 0 decimal place(s); provisional geometry estimate, not an approval basis"
     },
     "floor_area_ratio": {
       "status": "unknown",

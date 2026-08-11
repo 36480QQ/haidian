@@ -6,35 +6,42 @@
       "result": "pass",
       "severity": "major",
       "target": "geometry/site_boundary.geojson",
-      "message": "Provisional boundary is present; replace with official redline before professional scoring."
+      "message": "Provisional boundary is present and visibly disclosed; replace with official redline before any formal planning conclusion."
     },
     {
       "check_id": "KEY_AREAS_TRUST",
       "result": "pass",
       "severity": "major",
       "target": "geometry/key_areas.geojson",
-      "message": "Three required key areas are provisional; replace with official polygons before professional scoring."
+      "message": "Three key areas are provisional and visibly disclosed; replace with official polygons before formal planning conclusions."
     },
     {
       "check_id": "LAND_USE_TOPOLOGY",
       "result": "pass",
       "severity": "major",
       "target": "geometry/land_use.geojson",
-      "message": "Initial land-use polygons are derived from site boundary partitioning."
+      "message": "Conceptual land-use polygons are generated from the provisional site boundary and checked for topology."
+    },
+    {
+      "check_id": "METRIC_PRECISION",
+      "result": "pass",
+      "severity": "major",
+      "target": "metrics.json",
+      "message": "EPSG:4548 metrics are reproducible, rounded, and marked low-confidence provisional estimates."
     },
     {
       "check_id": "VISUAL_STATIC",
       "result": "pass",
       "severity": "info",
       "target": "visual/index.html",
-      "message": "Static HTML visualization is generated without external dependencies."
+      "message": "Static HTML visualization is generated without external dependencies and includes independent evidence sections."
     },
     {
       "check_id": "PROFESSIONAL_EVIDENCE",
       "result": "pass",
       "severity": "major",
-      "target": "proposal.md",
-      "message": "Proposal includes references to standards, design depth items, geometry, metrics, sources, and assumptions."
+      "target": "report/copyright_statement.md",
+      "message": "Asset-level authorship, generation method, source clearance, software notices, and reuse restrictions are recorded."
     }
   ]
 }
