@@ -1,5 +1,37 @@
 # 方案迭代记录
 
+## v2.2 - 2026-08-12
+
+### 评审可见性、空间证据链与实施接续 / Review visibility, spatial evidence chains, and delivery handoff
+
+- 将网页首屏和 A3/A0 首页改为“空间—AI—实施—公共价值”执行摘要，使一轴三廊三核、双独立门、G0—G6、普通服务等价和退出机制在固定评审视野内直接可读。
+- 重绘三处重点区域固定图，将临时工作窗、外部空间接口、`AN-V21-*` 核查锚点、`SEC-V21-*` 变量剖面、`DC/PC-V21-*` 可逆组件、停止条件和责任验收置于同一证据链；不提高 L5 几何的证据等级。
+- 在 `metrics.json` 中增加 12/12 双门、人工复核、普通服务等价和退出回执覆盖，以及 3 份台账、7 级门控、8 项核查接续和 10 项成本取证等提交完整度指标；均明确不代表现场绩效。
+- 新增 `visual/assets/verification_handoff_register.json`，采用“角色占位—依法任命—书面接收”组织 8 项后续核查；新增 `visual/assets/cost_evidence_plan.json`，定义 10 类不填虚构金额的取价证据路径。
+- 取消 v2.1 中无外部依据的 10%—15% 退出准备金硬阈值，改为逐项核验退出事项、工程量、取价、责任、资金来源和恢复回执；在未取价、未批准前不设比例或金额。
+- 新增一名不注册账号、需要无障碍支持的访客在 AI 开启、关闭、故障接管和退出后的连续服务旅程，用于检验普通服务等价，不作为已发生的现场观察。
+- 以锁定日期的 OSM 矢量快照重绘空间工作总图、功能行动包络、交通蓝绿核查、三处重点区域总平和六条变量剖面，逐图保留数据日期、许可和非测绘边界；建筑轮廓只作方位线索，具名京张公园多边形只用于暴露范围错位。
+- 将 L5 临时工作范围与 L4 具名京张公园的资料错位登记为机器可复算冲突：`visual/assets/spatial_source_conflicts.json` 保留两类对象、完整输入多边形、2026-05-06 OSM 查询条件、EPSG:4547 测距方法、最近点和全精度复算值及非测绘限制；文字材料使用约 412.684 米并按整米显示为约 413 米。正式边界到位后按“边界—几何—指标—图纸—网页”统一重算。
+- 新增随包交付的 `visual/assets/source_registry.json` 与 `visual/assets/fact_index.json`，替换原先不存在的仓库路径；前者登记来源分级和用途边界，后者仅作事实导航，不新增权威性。
+- 依据任务书中的大钟寺具名站点线索和 L4 站点位置，近似平移大钟寺研究窗及其组件、锚点和 AA/BB 研究线，保持经纬度跨度，投影面积变化约 0.027%，并将全部对象控制在 `SITE-001` 临时范围内；具名站点约位于工作窗西侧 90 米，该调整仍不代表正式重点区边界、站口或工程定位。
+- 三处重点区研究性总平新增 L5 公共边界、Z1—Z4 干预分区、主辅到达、服务应急、入口与场景视点；六条 AA/BB 剖面分别表达建筑、公共路径、绿化缓冲、道路、轨道/水系方向、可逆构件、人体尺度和候选宽度带，均保留非实测、不按比例和待专业核验边界。
+- 新增 `ecosystem_operating_map.json`、`annual_operations_register.json`、`culture_storyline.json` 和 `s06_minimum_delivery_package.json`，分别将三核两翼八要素、五段年度运营、三章可行走文化叙事与 S06 三阶段交付写成可复核任务包；`compliance_matrix.json` 23 项均改为专属证据摘要、对象和验收条件。
+- 为 S06 登记两项 2026 年北京官方公开项目级取价样本及两项背景/拒用记录；样本不拆单价、不直接折算90日金额、不构成预算或指导价。众智园、大钟寺两条撤稿/删除页面不再承载任何具体范围、主体、项目或资金事实。
+
+- Reworked the web first screen and A3/A0 first pages as a spatial–AI–delivery–public-value executive summary, placing the one-axis/three-link/three-hub structure, dual gates, G0–G6, ordinary-service equivalence, and exit logic inside the fixed review view.
+- Redrew the fixed key-area figure as three place-based evidence chains connecting provisional windows, external spatial interfaces, `AN-V21-*` audit anchors, `SEC-V21-*` variable sections, `DC/PC-V21-*` reversible components, stop rules, and responsibility acceptance, without raising the evidence status of L5 geometry.
+- Added package-completeness metrics for 12/12 dual-gate, human-review, ordinary-service-equivalence, and exit-receipt coverage, plus three registers, seven stage gates, eight verification handoffs, and ten cost-evidence categories. None is presented as field performance.
+- Added `visual/assets/verification_handoff_register.json` with eight role-placeholder–lawful-appointment–written-receipt tasks, and `visual/assets/cost_evidence_plan.json` with ten evidence routes that do not invent prices.
+- Removed the unsupported 10–15% exit-reserve threshold introduced in v2.1. Exit resources are now itemised through verified scope, quantities, pricing, responsibility, funding and restoration receipts, with no percentage or amount prescribed before evidence and approval.
+- Added a continuous journey for a visitor who needs step-free support and does not create an account across AI-on, AI-off, failure takeover, and exit states. It tests ordinary-service equivalence and is not an observed field record.
+- Redrew the spatial working plan, programme envelopes, mobility and blue-green audit, three key-area plans, and six variable sections on date-locked OSM vector snapshots. Every relevant figure retains the data date, licence, and non-survey boundary; building footprints are orientation leads, and named Jing-Zhang park polygons are used only to expose an extent discrepancy.
+- Registered the displacement between the L5 provisional extent and L4 named Jing-Zhang park as a machine-reproducible conflict. `visual/assets/spatial_source_conflicts.json` retains both object classes, complete input polygons, the 2026-05-06 OSM query, EPSG:4547 measurement method, nearest points, the full-precision reproducible value, and non-survey limitations; narrative material uses approximately 412.684 m and displays approximately 413 m to the nearest metre. When the official boundary arrives, boundary, geometry, metrics, drawings, and web outputs will be recalculated as one package.
+- Added the in-package `visual/assets/source_registry.json` and `visual/assets/fact_index.json` to replace the previously missing repository paths. The former records evidence levels and use boundaries; the latter is a navigation aid and adds no authority.
+- Approximately translated the Dazhongsi study window, its components, anchor, and AA/BB study lines using the brief's named-station clue and the L4 station position. The longitude and latitude spans are retained, the projected area differs by about 0.027%, and every object remains within the provisional `SITE-001` extent. The named station lies about 90 m west of the window; the adjustment still does not establish an official key-area boundary, station entrance, or engineering location.
+- Added L5 public edges, Z1–Z4 intervention zones, primary/secondary arrival, service/emergency access, entrances, and a scenario viewpoint to each research plan. The six differentiated AA/BB sections now show buildings, public paths, green buffers, roads, rail/water direction, reversible elements, human scale, and candidate width bands, all explicitly non-survey, not to scale, and pending professional verification.
+- Added `ecosystem_operating_map.json`, `annual_operations_register.json`, `culture_storyline.json`, and `s06_minimum_delivery_package.json` as reviewable task packages for the three-hub/two-wing/eight-element system, five-part annual cycle, three-chapter walkable culture narrative, and three-stage S06 delivery. All 23 `compliance_matrix.json` rows now use requirement-specific summaries, objects, and acceptance conditions.
+- Registered two 2026 official Beijing project-level pricing references and two context/rejection records for S06. They are not split into unit rates, pro-rated into 90 days, or presented as a budget or guidance price. Withdrawn/deleted Zhongzhiyuan and Dazhongsi pages no longer carry any specific boundary, entity, project, or funding proposition.
+
 ## v2.1 - 2026-08-12
 
 ### 从专业方案包到可失败关闭的研究接口 / From professional package to a fail-closed research interface
@@ -23,12 +55,12 @@ Relative to v2.0, this revision does not change the package's status as an open-
 - 新增 `visual/assets/scenario_prototypes.json`，将 S01、S06 和 S11 深化为可供专业团队研究的端—边—平台—人工复核原型；原型不表示场地、数据、设备、预算、采购、运营主体或审批已经落实。
 - 新增 `visual/assets/implementation_register.json`，把 AI 原点需求协同室、众智园独立测试验证实验室和大钟寺首用转化与运营池写成带进入、验收、停止、退出和全寿命成本边界的概念项目登记。
 - S06 增加 0—30 日无 AI 基线、31—60 日封闭合成与影子验证、61—90 日有条件限量共测的时间切片；任何阶段均不自动扩展。
-- S06 增加 10%—15% 概念退出准备金控制带，覆盖接口停用、数据清理、导视校正、人工服务恢复、设备撤离、场地修复和独立退出复核。该范围不是报价、预算批复、采购条件、资金来源或拨款承诺。
+- S06 当时增加 10%—15% 概念退出准备金控制带；该无外部依据的固定比例已在 v2.2 取消并由逐项取证机制替代。
 
 - Added `visual/assets/scenario_prototypes.json`, developing S01, S06, and S11 as endpoint–edge–platform–human-review prototypes for further professional study. The prototypes do not indicate secured sites, data, equipment, budgets, procurement, operators, or approvals.
 - Added `visual/assets/implementation_register.json`, recording the AI Origin Demand Coordination Room, Zhongzhiyuan Independent Testing and Validation Laboratory, and Dazhongsi First-Use Conversion and Operations Pool as conceptual projects with admission, acceptance, stop, exit, and whole-life-cost boundaries.
 - Added an S06 time slice: a non-AI baseline on Days 0–30, closed synthetic and shadow validation on Days 31–60, and conditionally authorised limited co-testing on Days 61–90. No stage expands automatically.
-- Added a conceptual 10–15% exit-reserve control band for S06 covering interface shutdown, data clearance, sign correction, restoration of staffed service, equipment removal, site repair, and independent exit review. It is not a quotation, approved budget, procurement condition, funding source, or funding commitment.
+- v2.1 introduced a conceptual 10–15% exit-reserve band. v2.2 removes that unsupported fixed percentage and replaces it with itemised evidence and lawful authorisation.
 
 ### 3. RailWeave 织入契约与合成回归 / RailWeave weave contracts and synthetic regression
 
@@ -46,11 +78,11 @@ Relative to v2.0, this revision does not change the package's status as an open-
 
 - 新增众智园、AI 原点和大钟寺三张 AI 生成概念图的 WebP 提交版本，并以本地编排形成封面和中英文短视频材料；生成图只解释空间体验，不作为现状、场地、建筑、工程、投资或建成效果证据。
 - `report/copyright_statement.md` 逐字登记三次实际生成提示词，说明未向生成工具输入第三方受保护视觉素材，并记录 AI 生成性质、文件、衍生处理、禁止用途、OSM ODbL 和 CC BY 4.0 的适用边界。
-- 新增本中英文对应的评审叙事简报，集中说明 RailWeave、两套独立门、S06 90 日切片、10%—15% 概念退出准备金和 72 个合成分支的证据上限。
+- 新增本中英文对应的评审叙事简报，集中说明 RailWeave、两套独立门、S06 90 日切片、当时采用且已由 v2.2 取消的退出比例，以及 72 个合成分支的证据上限。
 
 - Added submitted WebP versions of three AI-generated concept images for Zhongzhiyuan, AI Origin, and Dazhongsi, with local composition into a cover and bilingual short-video materials. Generated imagery explains spatial experience only and is not evidence of current conditions, sites, buildings, engineering, investment, or built outcomes.
 - Updated `report/copyright_statement.md` with verbatim copies of the three actual generation prompts, confirmation that no third-party protected visual material was supplied to the generator, and records of synthetic status, files, derivation, prohibited uses, OSM ODbL, and the scope of CC BY 4.0.
-- Added corresponding Chinese and English review narrative briefs covering RailWeave, the two independent gates, the S06 90-day slice, the conceptual 10–15% exit reserve, and the evidence ceiling of the 72 synthetic branches.
+- Added corresponding Chinese and English review narrative briefs covering RailWeave, the two independent gates, the S06 90-day slice, the exit percentage used at that time and removed in v2.2, and the evidence ceiling of the 72 synthetic branches.
 
 ### 5. 仍未改变的边界 / Boundaries unchanged
 

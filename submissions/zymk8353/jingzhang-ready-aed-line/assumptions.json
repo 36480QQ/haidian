@@ -10,8 +10,8 @@
     {
       "id": "A-BOUNDARY-001",
       "status": "provisional",
-      "statement": "The site and three key-area polygons are rough repository geometry inferred from public descriptions and approximate areas.",
-      "impact": "Area and ratio calculations prove package consistency only and must be recalculated when official polygons are released."
+      "statement": "The site and three key-area polygons are rough repository geometry inferred from public descriptions and approximate areas. Reproducible community checks in repository Issue #1029 report that provisional PROV-KEY-003 is internally area/order-consistent but centred near Beijing North Station, about 2.26 km from Dazhongsi metro; this is not an official replacement boundary or permission to shift it.",
+      "impact": "The package keeps upstream geometry only as a placeholder and treats Dazhongsi as the programme name from the brief, not a verified map anchor. All real sites require separate verification; canonical or official geometry must trigger whole-package recalculation."
     },
     {
       "id": "A-CURRENT-SITE-001",
