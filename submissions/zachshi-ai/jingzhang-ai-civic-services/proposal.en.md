@@ -37,7 +37,7 @@ Within the overall design scope, this proposal constructs a civic-service spatia
 
 The key areas scope carries out refined civic-service-oriented design for the three key areas, each forming a complete sub-proposal of "service-function positioning + spatial structure + service facility layout + slow-mobility service network + AI service scenarios + implementation risks" [data:geometry/key_areas.geojson]. The AI Origin Community is developed as the core hub of one-stop government, health, and legal services [data:geometry/buildings.geojson#BLD-016].
 
-## Industry and Future City Research at the Coordinated Study Scope
+## Coordinated Research Area: Industry and Future City Research
 
 ### Overall Concept and Naming System
 
@@ -69,21 +69,25 @@ This proposal studies 7 domestic and international public-service digitalization
 
 This proposal constructs seven elements of the civic-service AI ecosystem: service entry (one-stop navigation), service catalog (manually curated), identity authentication (unified), data foundation (public/authorized data), AI engine (Q&A and navigation), human review (three categories of professionals: medical, legal, and data security), and feedback mechanism (satisfaction analysis). The seven elements are differentially configured across the three key areas [standard:GENERATIVE-AI-INTERIM-MEASURES].
 
-## Civic-Service Urban Design at the Overall Design Scope
+## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design (Civic-Service Oriented)
 
 ### Spatial Structure
 
 The spatial structure of the overall design scope is "one axis, three zones, and multiple stations." The one axis is the civic-service main axis transformed from the slow-mobility main axis of the Jingzhang Heritage Park, a public passage linking the three categories of services and the three key areas [data:geometry/roads.geojson#RD-009] [data:geometry/roads.geojson#RD-010] [data:geometry/roads.geojson#RD-011]. The three zones are the differentiated service functions of the three key areas. The multiple stations include 3 civic service hub plazas (PS-006/PS-007/PS-008) and 5 street-side citizen service stations (PS-009 through PS-013) [data:geometry/public_space.geojson].
 
+![AI Civic Service Spine overview](assets/figures/site-overview.png)
+
 ### Land-Use Layout
 
 The land-use layout continues the zoning framework of 10 land-use categories, densifying public service facility land within the key areas and adding service buildings such as civic service halls, community health service navigation centers, legal aid service centers, and subdistrict-office AI collaboration service buildings [data:geometry/land_use.geojson] [data:geometry/buildings.geojson#BLD-016]. Land-use classification codes correspond to the Territorial Spatial Land-Use and Sea-Use Classification Guide [source:mnr-land-use-classification].
+
+![Land-use structure and civic-service network](assets/figures/land-use-structure.png)
 
 ### Urban Regeneration Strategy
 
 The regeneration strategy adopts a "retain–renovate–new-build" classification. Retain the Jingzhang Railway historical remains and the surrounding mature communities; renovate existing commercial and public-service spaces into civic-service carriers; and newly build service facilities such as citizen service stations and health parks. All retain-renovate-demolish classifications are conceptual suggestions and must be further developed by a professional team after regulatory-plan conditions and ownership are confirmed [assumption:A-CONTROLS-001] [depth:retain_renovate_demolish].
 
-## Civic-Service Detailed Design of Key Areas
+## Detailed Design of Key Areas (Civic-Service Oriented)
 
 ### Zhongzhiyuan AI Independent Innovation Acceleration Area (approx. 192.1 ha): Talent Health Services Segment
 
@@ -109,7 +113,9 @@ The regeneration strategy adopts a "retain–renovate–new-build" classificatio
 
 **AI scenarios:** Deploy industrial scenarios such as AI + legal consultation navigation and AI + enterprise civic services, integrated with Dazhongsi's industry-clustering function. Legal consultation is limited to public legal-information navigation and does not constitute formal legal advice [standard:GENERATIVE-AI-INTERIM-MEASURES].
 
-## AI Civic-Service Scenarios and Personas
+![Civic-service functions of the three key areas](assets/figures/key-areas.png)
+
+## AI Innovation Ecosystem, Personas, and AI+ Scenarios (Civic-Service Cards and Personas)
 
 ### User Personas (5 Core Categories + 4 Inclusive Supplementary Categories)
 
@@ -142,17 +148,17 @@ The following scenario cards map to spatial locations, target users, usage conte
 
 Among these, SC-07 (One-Click Emergency Medical Navigation), SC-10 (Service-Station Self-Service Terminals), and SC-03 (Chronic-Disease Health Follow-Up) are AI testing-and-validation scenarios; their boundaries, operating entities, and risk controls must be stated, and they must not be described as approved for operation [standard:GENERATIVE-AI-INTERIM-MEASURES]. Testing-and-validation scenarios use only public, authorized, or manually curated data, and do not use personal health-privacy data [assumption:A-DATA-002].
 
-## Land Use, Building Scale, and Retain-Renovate-Demolish Plan
+## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
 ### Land Area Recalculation
 
-The proposal's land areas are recalculated based on the provisional rough boundary; the site area is approximately 11.41 km² [metric:site_area_sqm]. The green space area is approximately 3.11 km², with a green ratio of approximately 27.2% [metric:green_ratio] [metric:green_space_area_sqm]; the public space area is approximately 2.75 km², with a public-space ratio of approximately 24.1% (including the newly added civic-service plazas and stations) [metric:public_space_ratio] [metric:public_space_area_sqm]. All area indicators are conceptual estimates and must be recalculated once the official red line is published [assumption:A-CONTROLS-001] [depth:metrics_recalculation].
+The proposal's land areas are recalculated based on the provisional rough boundary; the site area is approximately 11.41 km² [metric:site_area_sqm]. The green space area is approximately 2.98 km², with a green ratio of approximately 26.1% [metric:green_ratio] [metric:green_space_area_sqm]; the public space area is approximately 2.56 km², with a public-space ratio of approximately 22.4% (including the newly added civic-service plazas and stations) [metric:public_space_ratio] [metric:public_space_area_sqm]. All area indicators are conceptual estimates and must be recalculated once the official red line is published [assumption:A-CONTROLS-001] [depth:metrics_recalculation].
 
 ### Building Scale
 
-The total building footprint area is approximately 655,000 m², with a building density of approximately 5.7% [metric:building_footprint_area_sqm] [metric:building_density]. Among these are 6 civic-service buildings (BLD-016 through BLD-021), including the civic service hall, health navigation center, legal aid center, and subdistrict-office service building [metric:civic_service_building_count]. Building heights and floor-area ratios are conceptual suggestions, pending confirmation of regulatory-plan conditions [metric:building_height_m].
+The total building footprint area is approximately 601,000 m², with a building density of approximately 5.3% [metric:building_footprint_area_sqm] [metric:building_density]. Among these are 6 civic-service buildings (BLD-016 through BLD-021), including the civic service hall, health navigation center, legal aid center, and subdistrict-office service building [metric:civic_service_building_count]. Building heights and floor-area ratios are conceptual suggestions, pending confirmation of regulatory-plan conditions [metric:building_height_m].
 
-## Mobility, Slow Traffic, and the Civic-Service Network
+## Transport, Rail, Municipal Infrastructure, and Public Services (Civic-Service Network)
 
 ### Civic-Service Main Axis and Slow-Mobility System
 
@@ -166,7 +172,7 @@ Relying on the rail transit stations along the Jingzhang corridor, citizen servi
 
 Deploy new infrastructure such as service-station self-service terminals, multilingual service screens, accessible service facilities, and health-monitoring kiosks (navigation only, no diagnosis). The data foundation uses only public/authorized data [assumption:A-DATA-002].
 
-## Blue-Green Space, Public Space, and Civic-Service Nodes
+## Blue-Green Network, Public Space, and Urban Character (Civic-Service Nodes)
 
 ### Jingzhang Heritage Park Vitality Belt
 
@@ -175,6 +181,8 @@ The Jingzhang Heritage Park is transformed along the main axis into a civic-serv
 ### Blue-Green Space System
 
 Continuing the blue-green space system, health trails and health-activity venues are set within the Jingzhang Health Park (GS-006), paired with the health-risk activity reminder scenario (SC-11) [data:geometry/green_space.geojson#GS-006].
+
+![Slow-mobility and blue-green network](assets/figures/mobility-bluegreen.png)
 
 ### AI Civic-Service Landmark Destinations (3)
 
@@ -206,7 +214,7 @@ The wayfinding system uses "service-station blue" as the primary color, distingu
 
 With "a Chinese approach to public-service digitalization" as the international communication theme, the proposal tells the story of how AI lowers the threshold of access to public services and promotes service equalization. International communication is a conceptual suggestion and is not exaggerated promotion [source:agent-taskbook].
 
-## Long-Term Operation and Global Communication
+## Renewal Projects, Implementation Policy, and Phasing (Long-Term Operation and Global Communication)
 
 ### Phased Implementation and Concept Project Packages
 
@@ -228,11 +236,27 @@ Three public experience routes are set up: the one-stop service experience route
 
 International communication uses the annual service events as nodes, paired with an English showcase page and international media narratives. Attraction-conversion pathways include attracting public-service enterprises to locate here through service scenarios, and lowering innovation costs through a service-data sandbox. All attraction, policy, and funding arrangements are conceptual suggestions and are not stated as confirmed government commitments or investment arrangements [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
 
-## Indicator System, Area Recalculation, and Compliance Matrix
+## Metrics, Area Recalculation, and Compliance Matrix
 
 ### Core Indicators
 
-Core indicators include: site area [metric:site_area_sqm], green ratio [metric:green_ratio], public-space ratio [metric:public_space_ratio], building density [metric:building_density], number of key areas [metric:key_area_count], number of civic service hubs [metric:service_hub_count], number of citizen service stations [metric:service_station_count], and number of civic-service buildings [metric:civic_service_building_count]. The indicators are linked with the compliance matrix, standards matrix, and design-depth matrix, forming a complete machine-auditable evidence chain [source:agent-taskbook].
+| Indicator | Value | Unit | Source |
+|-----------|-------|------|--------|
+| Overall design area | 11,412,825 | sqm | geometry/site_boundary.geojson |
+| Green space area | 2,983,029 | sqm | geometry/green_space.geojson |
+| Green ratio | 26.1% | ratio | recalculated |
+| Public space area | 2,559,341 | sqm | geometry/public_space.geojson |
+| Public-space ratio | 22.4% | ratio | recalculated |
+| Building footprint | 600,664 | sqm | geometry/buildings.geojson |
+| Building density | 5.3% | ratio | recalculated |
+| Key areas | 3 | count | geometry/key_areas.geojson |
+| Civic service hubs | 3 | count | geometry/public_space.geojson |
+| Citizen service stations | 5 | count | geometry/public_space.geojson |
+| Civic service buildings | 6 | count | geometry/buildings.geojson |
+
+All areas and ratios are recomputed in EPSG:4548 as dissolved unions from the GeoJSON [source:site-package]. The green ratio [metric:green_ratio] and public-space ratio [metric:public_space_ratio] reflect a citizen-service-oriented allocation of open space, while building density [metric:building_density] stays low. The civic service hubs [metric:service_hub_count] and stations [metric:service_station_count] form a 15-minute-accessible service network. The indicators interlock with the compliance, standard, and design-depth matrices into a machine-auditable evidence chain [source:agent-taskbook].
+
+![Core indicator recalculation and evidence chain](assets/figures/metrics-evidence.png)
 
 ## Risk, Copyright, and Compliance Statement
 
@@ -254,17 +278,15 @@ The proposal's text, geometry, and drawings were created by the designer, and al
 
 ## References
 
-1. Centennial Jingzhang AI Innovation Belt Urban Design Open-Source Call Announcement [source:official-announcement]
-2. Agent Taskbook agent_taskbook.json [source:agent-taskbook]
-3. Site Material Package brief/site-package [source:site-package]
-4. Provisional Boundaries provisional_boundaries.geojson [source:provisional-boundary]
-5. Estonia e-Residency / K-Health public materials [source:estonia-eresidency-khealth]
-6. Singapore HealthHub / Smart Nation public materials [source:singapore-healthhub]
-7. Hangzhou City Brain / Health Code public materials [source:hangzhou-city-brain]
-8. Shanghai "Suishenban" public materials [source:shanghai-suishenban]
-9. Beijing "Jingtong" / "Jiankangbao" public materials [source:beijing-jingtong-health]
-10. "Urban Design Management Measures," Ministry of Housing and Urban-Rural Development [source:mohurd-urban-design-measures]
-11. "Territorial Spatial Land-Use and Sea-Use Classification Guide," Ministry of Natural Resources [source:mnr-land-use-classification]
+The following are the principal public reference materials; the full machine index is governed by `sources.json` and the three matrix files. The core design basis is the official open-call announcement [source:official-announcement] and the agent taskbook [source:agent-taskbook]; site geometry is based on the provisional rough boundary [source:provisional-boundary]; digital public-service mechanisms reference public cases from China and abroad [source:estonia-eresidency-khealth] [source:beijing-jingtong-health]; professional standards reference MOHURD and MNR documents [source:mohurd-urban-design-measures] [source:mnr-land-use-classification]. Source usability is governed by `data/source_registry.json` [source:source-registry].
+
+1. Beijing Municipal Commission of Planning and Natural Resources Haidian Branch, "Centennial Jingzhang AI Innovation Belt Urban Design Open-Call Announcement"
+2. Excerpt of the agent taskbook for the open call (user-provided, cleared)
+3. Ministry of Housing and Urban-Rural Development, "Urban Design Management Measures"
+4. Ministry of Natural Resources, "Land-Use Classification Guide for Territorial Space"
+5. brief/site-package/ provisional rough boundary and key-area data
+6. data/source_registry.json public-source usability registry
+7. Public materials on digital public services from Estonia, Singapore, Hangzhou, Shanghai, and Beijing
 
 ---
 

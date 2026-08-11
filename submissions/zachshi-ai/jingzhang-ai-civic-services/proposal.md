@@ -68,21 +68,25 @@ iteration: "v1.0"
 
 本方案构建市民服务AI生态七要素：服务入口（一站式导航）、服务目录（人工整理）、身份认证（统一）、数据底座（公开/授权数据）、AI引擎（问答与导航）、人工复核（医疗/法律/数据安全三类专业人员）、反馈机制（满意度分析）。七要素在三个重点区域差异化配置 [standard:GENERATIVE-AI-INTERIM-MEASURES]。
 
-## 总体设计范围市民服务城市设计
+## 总体设计范围城市更新与控规深度城市设计（市民服务导向）
 
 ### 空间结构
 
 总体设计范围的空间结构为"一轴三区多站点"。一轴即京张遗址公园慢行主轴改造的市民服务主轴，是串联三类服务、三处重点区域的公共通道 [data:geometry/roads.geojson#RD-009] [data:geometry/roads.geojson#RD-010] [data:geometry/roads.geojson#RD-011]。三区即三处重点区域的差异化服务功能。多站点包括3个市民服务枢纽广场（PS-006/PS-007/PS-008）和5个沿街市民服务驿站（PS-009至PS-013）[data:geometry/public_space.geojson]。
 
+![AI市民服务脊梁总览图](assets/figures/site-overview.png)
+
 ### 用地布局
 
 用地布局延续10类用地的分区框架，在重点区域加密布置公共服务设施用地，新增市民服务馆、社区卫生服务导航中心、法律援助服务中心、街道办AI协同服务楼等服务建筑 [data:geometry/land_use.geojson] [data:geometry/buildings.geojson#BLD-016]。用地分类代码对应国土空间用地用海分类指南 [source:mnr-land-use-classification]。
+
+![用地结构与市民服务网络图](assets/figures/land-use-structure.png)
 
 ### 城市更新策略
 
 更新策略采用"保留-改造-新建"分类。保留京张铁路历史遗存及周边成熟社区；改造存量商业和公共服务空间为市民服务载体；新建市民服务驿站、健康公园等服务设施。所有拆改留分类均为概念建议，需在控规条件和权属确认后由专业团队深化 [assumption:A-CONTROLS-001] [depth:retain_renovate_demolish]。
 
-## 重点区域市民服务详细设计
+## 重点区域详细设计（市民服务导向）
 
 ### 众智园AI自主创新加速区（约192.1公顷）：人才健康服务段
 
@@ -108,7 +112,9 @@ iteration: "v1.0"
 
 **AI场景：** 布局AI+法律咨询导航、AI+企业市民服务等产业场景，与大钟寺产业集聚功能一体化。法律咨询仅作公共法律信息导航，不构成正式法律意见 [standard:GENERATIVE-AI-INTERIM-MEASURES]。
 
-## AI 市民服务场景与用户画像
+![三处重点区域市民服务功能图](assets/figures/key-areas.png)
+
+## AI 创新生态、人才画像与 AI+ 场景（市民服务场景卡与画像）
 
 ### 用户画像（5类核心 + 4类包容性补充）
 
@@ -145,13 +151,13 @@ iteration: "v1.0"
 
 ### 用地面积复算
 
-方案用地面积基于临时粗略边界复算，场地面积约11.41平方公里 [metric:site_area_sqm]。绿地面积约3.11平方公里，绿地率约27.2% [metric:green_ratio] [metric:green_space_area_sqm]；公共空间面积约2.75平方公里，公共空间率约24.1%（含新增市民服务广场与驿站）[metric:public_space_ratio] [metric:public_space_area_sqm]。所有面积指标为概念性估算，官方红线发布后须重算 [assumption:A-CONTROLS-001] [depth:metrics_recalculation]。
+方案用地面积基于临时粗略边界复算，场地面积约11.41平方公里 [metric:site_area_sqm]。绿地面积约2.98平方公里，绿地率约26.1% [metric:green_ratio] [metric:green_space_area_sqm]；公共空间面积约2.56平方公里，公共空间率约22.4%（含新增市民服务广场与驿站）[metric:public_space_ratio] [metric:public_space_area_sqm]。所有面积指标为概念性估算，官方红线发布后须重算 [assumption:A-CONTROLS-001] [depth:metrics_recalculation]。
 
 ### 建筑规模
 
-建筑总基底面积约65.5万平方米，建筑密度约5.7% [metric:building_footprint_area_sqm] [metric:building_density]。其中市民服务类建筑6栋（BLD-016至BLD-021），包括市民服务馆、健康导航中心、法律援助中心、街道办服务楼等 [metric:civic_service_building_count]。建筑高度与容积率为概念建议，待控规条件确认 [metric:building_height_m]。
+建筑总基底面积约60.1万平方米，建筑密度约5.3% [metric:building_footprint_area_sqm] [metric:building_density]。其中市民服务类建筑6栋（BLD-016至BLD-021），包括市民服务馆、健康导航中心、法律援助中心、街道办服务楼等 [metric:civic_service_building_count]。建筑高度与容积率为概念建议，待控规条件确认 [metric:building_height_m]。
 
-## 交通慢行与市民服务网络
+## 交通、轨道、市政与公共服务设施（市民服务网络）
 
 ### 市民服务主轴与慢行系统
 
@@ -165,7 +171,7 @@ iteration: "v1.0"
 
 配置服务驿站自助终端、多语言服务屏、无障碍服务设施、健康监测亭（仅导航不诊断）等新型基础设施。数据底座仅使用公开/授权数据 [assumption:A-DATA-002]。
 
-## 蓝绿空间、公共空间与市民服务节点
+## 蓝绿空间、公共空间与城市风貌（市民服务节点）
 
 ### 京张遗址公园活力带
 
@@ -174,6 +180,8 @@ iteration: "v1.0"
 ### 蓝绿空间体系
 
 延续蓝绿空间体系，在京张健康公园（GS-006）内设置健康步道、健康活动场地，配套健康风险活动提醒场景（SC-11）[data:geometry/green_space.geojson#GS-006]。
+
+![慢行系统与蓝绿空间图](assets/figures/mobility-bluegreen.png)
 
 ### AI市民服务朝圣地标（3个）
 
@@ -205,7 +213,7 @@ iteration: "v1.0"
 
 以"公共服务数字化的中国方案"为国际传播主题，讲述AI如何降低公共服务获取门槛、促进服务均等化的故事。国际传播为概念建议，不作夸大宣传 [source:agent-taskbook]。
 
-## 长期运营与全球传播
+## 更新项目清单、实施政策与分期计划（长期运营与全球传播）
 
 ### 分期实施与概念项目包
 
@@ -231,7 +239,23 @@ iteration: "v1.0"
 
 ### 核心指标
 
-核心指标包括：场地面积 [metric:site_area_sqm]、绿地率 [metric:green_ratio]、公共空间率 [metric:public_space_ratio]、建筑密度 [metric:building_density]、重点区域数 [metric:key_area_count]、市民服务枢纽数 [metric:service_hub_count]、市民服务驿站数 [metric:service_station_count]、市民服务建筑数 [metric:civic_service_building_count]。指标与合规矩阵、标准矩阵、设计深度矩阵联动，构成完整的机器可审计证据链 [source:agent-taskbook]。
+| 指标名称 | 数值 | 单位 | 来源 |
+|----------|------|------|------|
+| 总体设计范围面积 | 11,412,825 | sqm | geometry/site_boundary.geojson |
+| 绿地面积 | 2,983,029 | sqm | geometry/green_space.geojson |
+| 绿地率 | 26.1% | ratio | 复算 |
+| 公共空间面积 | 2,559,341 | sqm | geometry/public_space.geojson |
+| 公共空间率 | 22.4% | ratio | 复算 |
+| 建筑基底面积 | 600,664 | sqm | geometry/buildings.geojson |
+| 建筑密度 | 5.3% | ratio | 复算 |
+| 重点区域数量 | 3 | count | geometry/key_areas.geojson |
+| 市民服务枢纽数 | 3 | count | geometry/public_space.geojson |
+| 市民服务驿站数 | 5 | count | geometry/public_space.geojson |
+| 市民服务建筑数 | 6 | count | geometry/buildings.geojson |
+
+所有面积和比例均从GeoJSON在EPSG:4548下按并集复算得出 [source:site-package]。绿地率 [metric:green_ratio] 与公共空间率 [metric:public_space_ratio] 体现以市民服务为导向的开放空间配置，建筑密度 [metric:building_density] 保持低密度特征。市民服务枢纽 [metric:service_hub_count] 与驿站 [metric:service_station_count] 构成15分钟可达的服务网络。指标与合规矩阵、标准矩阵、设计深度矩阵联动，构成机器可审计证据链 [source:agent-taskbook]。
+
+![核心指标复算与证据链图](assets/figures/metrics-evidence.png)
 
 ## 风险、版权与合规说明
 
@@ -253,17 +277,15 @@ iteration: "v1.0"
 
 ## 参考资料
 
-1. 百年京张AI创新带城市设计开源征集公告 [source:official-announcement]
-2. 智能体任务书 agent_taskbook.json [source:agent-taskbook]
-3. 场地资料包 brief/site-package [source:site-package]
-4. 临时边界 provisional_boundaries.geojson [source:provisional-boundary]
-5. 爱沙尼亚 e-Residency / K-Health 公开资料 [source:estonia-eresidency-khealth]
-6. 新加坡 HealthHub / Smart Nation 公开资料 [source:singapore-healthhub]
-7. 杭州城市大脑·健康码 公开资料 [source:hangzhou-city-brain]
-8. 上海"随申办" 公开资料 [source:shanghai-suishenban]
-9. 北京"京通"/"健康宝" 公开资料 [source:beijing-jingtong-health]
-10. 《城市设计管理办法》住建部 [source:mohurd-urban-design-measures]
-11. 《国土空间用地用海分类指南》自然资源部 [source:mnr-land-use-classification]
+以下为主要公开参考材料，完整机器索引以 `sources.json` 和三个矩阵文件为准。核心设计依据为官方征集公告 [source:official-announcement] 与智能体任务书 [source:agent-taskbook]，场地几何基于临时粗略边界 [source:provisional-boundary]，数字化公共服务机制参考国内外公开案例 [source:estonia-eresidency-khealth] [source:beijing-jingtong-health]，专业规范参考住建部与自然资源部文件 [source:mohurd-urban-design-measures] [source:mnr-land-use-classification]。资料可用性以 `data/source_registry.json` 为准 [source:source-registry]。
+
+1. 北京市规划和自然资源委员会海淀分局，《百年京张AI创新带城市设计开源征集公告》
+2. 面向全球智能体开展百年京张AI创新带城市设计开源征集任务书摘录（用户提供清权）
+3. 住房和城乡建设部，《城市设计管理办法》
+4. 自然资源部，《国土空间调查、规划、用途管制用地用海分类指南》
+5. brief/site-package/ 临时粗略边界与重点区域数据
+6. data/source_registry.json 公开资料可用性登记
+7. 爱沙尼亚、新加坡、杭州、上海、北京等地数字化公共服务公开资料
 
 ---
 

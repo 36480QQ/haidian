@@ -711,12 +711,13 @@
         "id": "BLD-016",
         "layer": "BUILDING_FOOTPRINT",
         "name_zh": "AI市民服务示范馆",
-        "building_type": "civic_service_hub",
+        "building_type": "community_service",
         "parent_area_id": "beijing_ai_origin_community",
         "area_sqm_declared": 23900.07,
         "area_sqm_calculated": 23900.07,
         "height_conceptual_m": null,
-        "far_conceptual": null
+        "far_conceptual": null,
+        "service_category": "civic_service_hub"
       },
       "geometry": {
         "type": "Polygon",
@@ -757,12 +758,13 @@
         "id": "BLD-017",
         "layer": "BUILDING_FOOTPRINT",
         "name_zh": "社区卫生服务AI导航中心",
-        "building_type": "community_health",
+        "building_type": "community_service",
         "parent_area_id": "beijing_ai_origin_community",
         "area_sqm_declared": 18209.36,
         "area_sqm_calculated": 18209.36,
         "height_conceptual_m": null,
-        "far_conceptual": null
+        "far_conceptual": null,
+        "service_category": "community_health"
       },
       "geometry": {
         "type": "Polygon",
@@ -803,12 +805,13 @@
         "id": "BLD-018",
         "layer": "BUILDING_FOOTPRINT",
         "name_zh": "AI法律援助服务中心",
-        "building_type": "legal_aid",
+        "building_type": "community_service",
         "parent_area_id": "beijing_ai_origin_community",
         "area_sqm_declared": 13277.89,
         "area_sqm_calculated": 13277.89,
         "height_conceptual_m": null,
-        "far_conceptual": null
+        "far_conceptual": null,
+        "service_category": "legal_aid"
       },
       "geometry": {
         "type": "Polygon",
@@ -849,12 +852,13 @@
         "id": "BLD-019",
         "layer": "BUILDING_FOOTPRINT",
         "name_zh": "众智园人才健康体检中心",
-        "building_type": "community_health",
+        "building_type": "community_service",
         "parent_area_id": "zhongzhiyuan_ai_acceleration_area",
         "area_sqm_declared": 18202.14,
         "area_sqm_calculated": 18202.14,
         "height_conceptual_m": null,
-        "far_conceptual": null
+        "far_conceptual": null,
+        "service_category": "community_health"
       },
       "geometry": {
         "type": "Polygon",
@@ -895,12 +899,13 @@
         "id": "BLD-020",
         "layer": "BUILDING_FOOTPRINT",
         "name_zh": "大钟寺正义客厅·法律服务中心",
-        "building_type": "legal_aid",
+        "building_type": "community_service",
         "parent_area_id": "dazhongsi_ai_industry_cluster",
         "area_sqm_declared": 18220.11,
         "area_sqm_calculated": 18220.11,
         "height_conceptual_m": null,
-        "far_conceptual": null
+        "far_conceptual": null,
+        "service_category": "legal_aid"
       },
       "geometry": {
         "type": "Polygon",
@@ -941,12 +946,13 @@
         "id": "BLD-021",
         "layer": "BUILDING_FOOTPRINT",
         "name_zh": "街道办AI协同服务楼",
-        "building_type": "government_service",
+        "building_type": "community_service",
         "parent_area_id": "beijing_ai_origin_community",
         "area_sqm_declared": 13277.85,
         "area_sqm_calculated": 13277.85,
         "height_conceptual_m": null,
-        "far_conceptual": null
+        "far_conceptual": null,
+        "service_category": "government_service"
       },
       "geometry": {
         "type": "Polygon",

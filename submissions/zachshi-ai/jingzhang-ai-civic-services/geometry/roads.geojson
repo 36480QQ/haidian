@@ -245,8 +245,9 @@
         "id": "RD-009",
         "layer": "ROAD_CENTERLINE",
         "name_zh": "市民服务主轴·北段",
-        "road_class": "civic_service_spine",
-        "length_m_calculated": 1777.14
+        "road_class": "greenway",
+        "length_m_calculated": 1777.14,
+        "service_role": "civic_service_spine"
       },
       "geometry": {
         "type": "LineString",
@@ -277,8 +278,9 @@
         "id": "RD-010",
         "layer": "ROAD_CENTERLINE",
         "name_zh": "市民服务主轴·中段",
-        "road_class": "civic_service_spine",
-        "length_m_calculated": 3332.35
+        "road_class": "greenway",
+        "length_m_calculated": 3332.35,
+        "service_role": "civic_service_spine"
       },
       "geometry": {
         "type": "LineString",
@@ -313,8 +315,9 @@
         "id": "RD-011",
         "layer": "ROAD_CENTERLINE",
         "name_zh": "市民服务主轴·南段",
-        "road_class": "civic_service_spine",
-        "length_m_calculated": 3536.7
+        "road_class": "greenway",
+        "length_m_calculated": 3536.7,
+        "service_role": "civic_service_spine"
       },
       "geometry": {
         "type": "LineString",
@@ -349,8 +352,9 @@
         "id": "RD-012",
         "layer": "ROAD_CENTERLINE",
         "name_zh": "原点社区服务环线",
-        "road_class": "service_loop",
-        "length_m_calculated": 2921.12
+        "road_class": "pedestrian",
+        "length_m_calculated": 2921.12,
+        "service_role": "service_loop"
       },
       "geometry": {
         "type": "LineString",
@@ -389,8 +393,9 @@
         "id": "RD-013",
         "layer": "ROAD_CENTERLINE",
         "name_zh": "大钟寺法律服务连接道",
-        "road_class": "service_link",
-        "length_m_calculated": 598.25
+        "road_class": "pedestrian",
+        "length_m_calculated": 598.25,
+        "service_role": "service_link"
       },
       "geometry": {
         "type": "LineString",
