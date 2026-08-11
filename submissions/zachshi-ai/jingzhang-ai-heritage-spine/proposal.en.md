@@ -91,6 +91,22 @@ The following 6 global cases provide spatial and operational references for the 
 
 The above cases are background references (background_only), not directly serving as local planning conclusions; translation from cases to Jing-Zhang must be deepened by professional teams after regulatory and implementation conditions are confirmed.
 
+### AI Innovation Ecosystem Seven-Element Map
+
+The proposal decomposes the AI innovation ecosystem into seven verifiable elements, establishing an "element-space-mechanism" map [source:agent-taskbook]:
+
+| Element | Zhongzhiyuan Accel. | AI Origin Community | Dazhongsi Cluster | Two Wings Support |
+|---------|--------------------|--------------------|--------------------|-------------------|
+| Land | R&D land, incubation space | Talent apartments, shared offices | Industry towers, experience centers | Two wings provide supporting service space |
+| Industry | AI basic research, computing | Innovation ecosystem, scenario trials | Industrial transformation, commercial apps | Zhongguancun Wing: capital connections |
+| Funding | Government-guided funds + social capital | Venture investment + talent funds | Industrial investment + commercial loans | Zhongguancun Wing: IP & capital empowerment |
+| Talent | AI researchers, scientists | Entrepreneurs, developers | Product managers, operators | Two wings provide international talent services |
+| Computing | Distributed computing center | Edge computing nodes | Commercial computing services | Xiaoyuehe Wing: computing trials |
+| Data | Data compliance sandbox | Scenario data collection | Commercial data services | Two wings provide data compliance channels |
+| Scenarios | AI+research, computing scheduling | AI+education, health, living | AI+commerce, law, business | Xiaoyuehe Wing: public experience paths |
+
+The seven-element map is a conceptual organizational framework, not a statutory planning control or investment commitment; specific element configurations require deepening after regulatory conditions, ownership confirmation, and professional review [assumption:A-CONTROLS-001].
+
 ## Overall Design Area: Urban Renewal and Regulatory-Plan-Depth Urban Design
 
 ### Spatial Structure
@@ -162,24 +178,24 @@ Privacy boundaries, human review mechanisms, and appeal channels for all scenari
 
 ### AI Scenario Cards (12)
 
-The following scenario cards map to spatial locations, service targets, operational data, privacy boundaries, and operational mechanisms [source:agent-taskbook]:
+The following scenario cards map to spatial locations, service targets, operational data, privacy boundaries, and operational mechanisms [source:agent-taskbook]. Each card adds four columns—data legality, model role, KPI, and exit mechanism—turning scenarios from "concepts" into operable units that are "applicable, testable, and exitable" [depth:phasing_implementation]:
 
-| ID | Scenario Name | Spatial Location | Service Target | Privacy Boundary |
-|----|---------------|-----------------|----------------|-----------------|
-| SC-01 | AI Traffic Walkability Assessment | Jingzhang Heritage Park slow-mobility axis | Residents, students, tourists | Anonymized pedestrian flow data |
-| SC-02 | AI Health Service Navigation | AI Origin Community | Community residents | Manual review of diagnosis |
-| SC-03 | AI Education Assistant | AI Origin Community | Students, teachers | Desensitized learning data |
-| SC-04 | AI Enterprise Service Assistant | Zhongguancun Service Wing | Enterprises, entrepreneurs | Commercial data confidential |
-| SC-05 | AI Cultural Guide | Jingzhang Railway Memory Corridor | Tourists, visitors | No personal data collection |
-| SC-06 | Robot Low-Speed Delivery | Dazhongsi Industry Area | Enterprises, residents | Route data public |
-| SC-07 | AI Public Safety Review | Three-zone public spaces | City managers | Manual review of decisions |
-| SC-08 | AI Scenario Testing Platform | AI Scenario Testing Public Space | Entrepreneurs, researchers | Isolated test data |
-| SC-09 | AI Smart Consumption | Dazhongsi Experience Center | Consumers | Desensitized preferences |
-| SC-10 | AI Computing Scheduling | Zhongzhiyuan Computing Center | Researchers, enterprises | Usage data public |
-| SC-11 | AI Community Governance | AI Origin Community | Community residents | Transparent governance |
-| SC-12 | AI International Communication | Three-zone landmark nodes | International visitors | Manual content review |
+| ID | Scenario Name | Spatial Location | Service Target | Privacy Boundary | Data Legality | Model Role | KPI | Exit Mechanism |
+|----|---------------|-----------------|----------------|-----------------|--------------|-----------|-----|---------------|
+| SC-01 | AI Traffic Walkability Assessment | Jingzhang Heritage Park slow-mobility axis | Residents, students, tourists | Anonymized pedestrian flow data | Public transport data + desensitized flow | Slow-mobility break-point diagnosis | Break-point identification accuracy | Pause if manual review fails |
+| SC-02 | AI Health Service Navigation | AI Origin Community | Community residents | Manual review of diagnosis | Public medical catalog + desensitized inquiries | Service matching recommendation | Matching satisfaction | Exit if complaints exceed threshold |
+| SC-03 | AI Education Assistant | AI Origin Community | Students, teachers | Desensitized learning data | Public education resources + desensitized records | Personalized learning advice | Learning outcome improvement | Exit if guardian objects |
+| SC-04 | AI Enterprise Service Assistant | Zhongguancun Service Wing | Enterprises, entrepreneurs | Commercial data confidential | Public policies + voluntary enterprise declarations | Policy matching recommendation | Enterprise response rate | Stop if enterprise exits |
+| SC-05 | AI Cultural Guide | Jingzhang Railway Memory Corridor | Tourists, visitors | No personal data collection | Public cultural materials | Cultural narrative generation | Visitor dwell time | Remove if content review fails |
+| SC-06 | Robot Low-Speed Delivery | Dazhongsi Industry Area | Enterprises, residents | Route data public | Public road data + operation declarations | Path optimization | Delivery timeliness / accident rate | Suspend if safety review fails |
+| SC-07 | AI Public Safety Review | Three-zone public spaces | City managers | Manual review of decisions | Public incident data + desensitized video | Anomaly event identification | Identification accuracy / false-alarm rate | Downgrade if false alarms exceed threshold |
+| SC-08 | AI Scenario Testing Platform | AI Scenario Testing Public Space | Entrepreneurs, researchers | Isolated test data | Sandbox environment data | Scenario validation assessment | Test pass rate | Exit if admission fails |
+| SC-09 | AI Smart Consumption | Dazhongsi Experience Center | Consumers | Desensitized preferences | Public product data + desensitized records | Consumption recommendation | Repurchase rate / satisfaction | Exit if consumers complain |
+| SC-10 | AI Computing Scheduling | Zhongzhiyuan Computing Center | Researchers, enterprises | Usage data public | Public computing catalog + usage declarations | Computing resource matching | Utilization / wait time | Ban on misuse |
+| SC-11 | AI Community Governance | AI Origin Community | Community residents | Transparent governance | Public governance data + resident feedback | Governance advice generation | Resident participation rate | Pause if residents object |
+| SC-12 | AI International Communication | Three-zone landmark nodes | International visitors | Manual content review | Public communication data | Multilingual content generation | International exposure | Remove if content violates rules |
 
-Among these, SC-06, SC-08, and SC-10 are AI industry testing and verification scenarios [source:agent-taskbook].
+Among these, SC-06, SC-08, and SC-10 are AI industry testing and verification scenarios [source:agent-taskbook]. All KPIs are conceptual operational indicators requiring quantification by professional teams after operating entities, data licenses, and professional review are confirmed [assumption:A-CONTROLS-001].
 
 ## Land Use, Building Scale, and Renewal Strategy
 
