@@ -543,6 +543,72 @@
       "confidence": "unknown",
       "assumptions": [],
       "reason": "Rainfall criteria, drainage catchments, soil, utilities, and elevation are unavailable."
+    },
+    "implementation_card_count": {
+      "status": "known",
+      "value": 12,
+      "unit": "count",
+      "source_files": [
+        "spatial.json"
+      ],
+      "formula": "count(spatial.items where evidence_kind == implementation_card)",
+      "confidence": "high",
+      "assumptions": [
+        "Cards are evidence contracts, not proof of implementation."
+      ]
+    },
+    "area_implementation_card_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "spatial.json"
+      ],
+      "formula": "count(spatial.items where evidence_kind == area_implementation_card)",
+      "confidence": "high",
+      "assumptions": [
+        "Area cards are conceptual delivery handoffs, not proof of implementation."
+      ]
+    },
+    "spatial_detail_type_count": {
+      "status": "known",
+      "value": 4,
+      "unit": "count",
+      "source_files": [
+        "spatial.json"
+      ],
+      "formula": "count(distinct space_type in implementation cards)",
+      "confidence": "high",
+      "assumptions": [
+        "Types are conceptual spatial interfaces."
+      ]
+    },
+    "rights_safeguard_dimension_count": {
+      "status": "known",
+      "value": 7,
+      "unit": "count",
+      "source_files": [
+        "proposal.md",
+        "spatial.json"
+      ],
+      "formula": "count(public rights safeguards: consent, explanation, correction, deletion, staffed equivalent, accessibility, exit)",
+      "confidence": "high",
+      "assumptions": [
+        "Safeguards are requirements for a pilot, not measured outcomes."
+      ]
+    },
+    "predeployment_field_check_completion_ratio": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": [
+        "spatial.json",
+        "brief/site-package/missing-data.md"
+      ],
+      "formula": "completed_required_field_checks / required_field_checks",
+      "confidence": "unknown",
+      "assumptions": [],
+      "reason": "No field audit, ownership, access, fire, safety, or operator records are included in the cleared package."
     }
   }
 }

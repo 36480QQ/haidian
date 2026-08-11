@@ -24,6 +24,12 @@
         "submissions/ChrysFu/jingzhang-ai-talent-living-lab/assets/figures/building-renewal.png",
         "submissions/ChrysFu/jingzhang-ai-talent-living-lab/assets/figures/culture-operations.en.png",
         "submissions/ChrysFu/jingzhang-ai-talent-living-lab/assets/figures/culture-operations.png",
+        "submissions/ChrysFu/jingzhang-ai-talent-living-lab/assets/figures/detail-board-dazhongsi.en.png",
+        "submissions/ChrysFu/jingzhang-ai-talent-living-lab/assets/figures/detail-board-dazhongsi.png",
+        "submissions/ChrysFu/jingzhang-ai-talent-living-lab/assets/figures/detail-board-origin.en.png",
+        "submissions/ChrysFu/jingzhang-ai-talent-living-lab/assets/figures/detail-board-origin.png",
+        "submissions/ChrysFu/jingzhang-ai-talent-living-lab/assets/figures/detail-board-zhongzhiyuan.en.png",
+        "submissions/ChrysFu/jingzhang-ai-talent-living-lab/assets/figures/detail-board-zhongzhiyuan.png",
         "submissions/ChrysFu/jingzhang-ai-talent-living-lab/assets/figures/diagnosis-matrix.en.png",
         "submissions/ChrysFu/jingzhang-ai-talent-living-lab/assets/figures/diagnosis-matrix.png",
         "submissions/ChrysFu/jingzhang-ai-talent-living-lab/assets/figures/existing-conditions.en.png",
@@ -57,8 +63,14 @@
         "submissions/ChrysFu/jingzhang-ai-talent-living-lab/assets/figures/scenarios-personas.png",
         "submissions/ChrysFu/jingzhang-ai-talent-living-lab/assets/figures/service-catchments.en.png",
         "submissions/ChrysFu/jingzhang-ai-talent-living-lab/assets/figures/service-catchments.png",
+        "submissions/ChrysFu/jingzhang-ai-talent-living-lab/assets/figures/service-journey-mechanism.en.png",
+        "submissions/ChrysFu/jingzhang-ai-talent-living-lab/assets/figures/service-journey-mechanism.png",
+        "submissions/ChrysFu/jingzhang-ai-talent-living-lab/assets/figures/service-protocol.en.png",
+        "submissions/ChrysFu/jingzhang-ai-talent-living-lab/assets/figures/service-protocol.png",
         "submissions/ChrysFu/jingzhang-ai-talent-living-lab/assets/figures/site-overview.en.png",
         "submissions/ChrysFu/jingzhang-ai-talent-living-lab/assets/figures/site-overview.png",
+        "submissions/ChrysFu/jingzhang-ai-talent-living-lab/assets/figures/spatial-implementation-cards.en.png",
+        "submissions/ChrysFu/jingzhang-ai-talent-living-lab/assets/figures/spatial-implementation-cards.png",
         "submissions/ChrysFu/jingzhang-ai-talent-living-lab/assets/figures/strategy-comparison.en.png",
         "submissions/ChrysFu/jingzhang-ai-talent-living-lab/assets/figures/strategy-comparison.png",
         "submissions/ChrysFu/jingzhang-ai-talent-living-lab/assets/identity/living-lab-mark-v12.svg",
@@ -100,7 +112,7 @@
       "ai_package_stages": {
         "submissions/ChrysFu/jingzhang-ai-talent-living-lab": "formal"
       },
-      "total_bytes": 36715476,
+      "total_bytes": 39413284,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -166,6 +178,7 @@
         "persona_count": 8.0,
         "pilgrimage_honor_node_count": 4.0,
         "service_acceptance_gate_count": 5.0,
+        "implementation_card_count": 12.0,
         "pilot_stage_count": 5.0
       }
     },
@@ -180,15 +193,15 @@
       "summary": {
         "standard_matrix_items": 6,
         "design_depth_items": 15,
-        "known_metric_refs_required": 34,
+        "known_metric_refs_required": 38,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
           "source": 19,
           "standard": 6,
           "depth": 15,
-          "data": 21,
-          "metric": 35
+          "data": 24,
+          "metric": 39
         }
       }
     },

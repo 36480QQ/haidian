@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "A continuous Jing-Zhang public innovation network connecting AI R&D validation, everyday talent life, public feedback, and enterprise service adoption through three 15-minute circles and an auditable service loop."
 tracks: ["enterprise-services-ecosystem", "ai-origin-community", "youth-friendly-public-space"]
 scenarios: ["enterprise-service-copilot", "ai-health-service-navigation", "ai-cultural-guide"]
-iteration: "v1.4"
+iteration: "v1.5"
 ---
 
 # Jing-Zhang AI Talent Living Lab Belt
@@ -30,7 +30,18 @@ The public value of the Jing-Zhang Railway came not only from connection, but fr
 | G4 Operating-accountability gate | Is someone responsible for operation, maintenance, and disputes? | Feedback forum and enterprise interface | Accountable role, service hours, complaint route, retrospective | Pause and publish remediation |
 | G5 Scaling-review gate | Should a single-point pilot expand to a district? | Dazhongsi Scaled Adoption Review Desk | Consolidated public-value, rights, quality, and operating evidence | Hold, roll back, or exit |
 
-The gates are not substitutes for statutory approval. They form a public evidence framework for conceptual pilots. All 12 scenarios must provide a staffed equivalent, accountable role, correction route, and stop condition; usage growth alone never proves success. [metric:service_acceptance_gate_count] [metric:non_ai_equivalent_coverage_ratio] [metric:accountable_role_coverage_ratio]
+The gates are not substitutes for statutory approval. They form a public evidence framework for conceptual pilots.
+
+### v1.5 Increment: Four-layer space-service-data-governance protocol
+
+This update keeps the “one axis, three circles, two wings, many points” spatial structure. It makes the existing service loop jointly checkable by spatial and operating teams. The **space layer** uses representative streets, feedback plazas, flexible ground-floor interfaces and service nodes as minimum units; the **service layer** connects personalized demand sensing, bounded recommendation, local flexible making / service and quality trace; the **data layer** requires purpose limitation, minimal fields, explainability, correction, deletion and staffed equivalent access; the **governance layer** uses five gates to decide whether a service expands, holds, rolls back or exits. “Local flexible making / service” is only a generic demand-responsive service method; no formula, SKU, equipment or internal operating detail is disclosed. [depth:three_key_area_detailed_design] [metric:implementation_card_count] [metric:rights_safeguard_dimension_count]
+
+![Four-layer space-service-data-governance protocol](assets/figures/service-protocol.en.png)
+
+![Six stages, five gates and three journeys on one acceptance rail](assets/figures/service-journey-mechanism.en.png)
+
+The four layers are derived from `spatial.json`, GeoJSON attributes and `metrics.json`; this is an explanatory layer, not official boundary, existing-condition or statutory-control evidence.
+ All 12 scenarios must provide a staffed equivalent, accountable role, correction route, and stop condition; usage growth alone never proves success. [metric:service_acceptance_gate_count] [metric:non_ai_equivalent_coverage_ratio] [metric:accountable_role_coverage_ratio]
 
 ![Overall structure and auditable service loop](assets/figures/site-overview.en.png)
 
@@ -129,6 +140,29 @@ Public space supports quiet study, collaborative release, community services, ex
 This circle translates validated prototypes into modules that can interface with enterprises, urban business, and public consumption while retaining operational review and the public right to exit. [data:geometry/key_areas.geojson#PROV-KEY-003] The reference structure is “station-access concept link—enterprise service desk—flexible-service urban hall—scaled-adoption review desk—contribution display.” SCN-08 through SCN-10 do not name companies, partners, or suppliers, and make no investment, attraction, revenue, or government commitment. [data:geometry/public_space.geojson#SCN-08] [data:geometry/public_space.geojson#SCN-10]
 
 ![Dazhongsi key-area detailed design](assets/figures/key-area-dazhongsi.en.png)
+
+
+
+### Spatial implementation cards for three key areas (v1.5 increment)
+
+To make implementation readiness more than a flow diagram, this update assigns four checkable spatial actions to each key area: representative street, feedback plaza, ground-floor interface and service node. Every card names the accountable role, prerequisite data, acceptance evidence and stop condition. Cards are conceptual evidence contracts for professional teams, not construction projects or government commitments. [data:spatial.json#area-card-zzy] [data:spatial.json#area-card-ori] [data:spatial.json#area-card-dzs] Card count and prerequisite status are recorded by [metric:area_implementation_card_count] [metric:predeployment_field_check_completion_ratio].
+
+| Key area | Representative street | Feedback plaza | Ground-floor interface | Service node |
+| --- | --- | --- | --- | --- |
+| Zhongzhiyuan | Connect workshop and quality gate; expose test route | Display incidents, accountability and human take-over records | Reversible workshop frontage with staffed window and flexible bays | Bounded recommendation and prototype intake; voluntary entry / exit |
+| AI Origin Community | Near-campus walking and life services with quiet / active time modes | Community deliberation, accessible feedback and public review | Replaceable ground-floor interface for study, work and daily services | Talent-life demand sensing without default personal profiling |
+| Dazhongsi | Station-city connection and enterprise directory; reduce search friction | Mixed daily use, rest and public experience plaza | Modular service hall with a visible staffed equivalent | Enterprise interface and scale review; no automatic expansion |
+
+The minimum acceptance bundle for every card is public rules, a visible accountable role, staffed equivalent access, traceable incidents, and correction / exit. If prerequisite data is missing, `predeployment_field_check_completion_ratio` remains `unknown`; drawings or usage must not be used to infer delivery. [metric:accountable_role_coverage_ratio] [metric:non_ai_equivalent_coverage_ratio]
+
+![Spatial implementation cards for three key areas](assets/figures/spatial-implementation-cards.en.png)
+
+![Zhongzhiyuan spatial assembly and delivery handoff](assets/figures/detail-board-zhongzhiyuan.en.png)
+
+![AI Origin Community spatial assembly and delivery handoff](assets/figures/detail-board-origin.en.png)
+
+![Dazhongsi spatial assembly and delivery handoff](assets/figures/detail-board-dazhongsi.en.png)
+
 
 Four-quadrant pedestrian links, station integration, underground space, and traffic organization remain problem statements for rail, traffic, utilities, fire safety, accessibility, and ownership professionals. AI-native consumption is defined by transparent recommendations, quality traceability, replaceable services, and resolvable disputes rather than technological spectacle.
 
@@ -306,7 +340,7 @@ The annual reference cycle is “developer and open-source contribution season�
 
 The authority order is GeoJSON, metrics, three matrices, manifest/sources/assumptions/self-check, proposal, figures, HTML, and PDFs. Visual artifacts explain the evidence but cannot become the basis for boundaries, areas, or statutory controls. [depth:metrics_recalculation]
 
-Known metrics include submitted-geometry areas for the site, four land-use partitions, building footprints, green space, public space, centerlines, and three phase polygons; explicit counts for three key areas, 12 scenarios, three industry validations, eight personas, four honor nodes, six loop stages, five acceptance gates, and five pilot stages; coverage ratios for non-AI equivalents and accountable roles; and official approximate background facts. Site area and key-area count are recorded in [metric:site_area_sqm] [metric:key_area_count], while scenario and acceptance-gate counts are recorded in [metric:scenario_node_count] [metric:service_acceptance_gate_count]. Unknown metrics include total floor area, FAR, road area, and every statutory or engineering value without official conditions.
+Known metrics fall into five groups: submitted-geometry areas for the site, four land-use partitions, building footprints, green space, public space, centerlines, and three phase polygons; explicit counts for three key areas, 12 scenarios, three industry validations, eight personas, four honor nodes, six loop stages, five acceptance gates, and five pilot stages; coverage ratios for non-AI equivalents and accountable roles; implementation-evidence contract counts for 12 spatial cards, four interface types, and seven rights safeguards; and official approximate background facts. Site area and key-area count are recorded in [metric:site_area_sqm] [metric:key_area_count], while scenario and acceptance-gate counts are recorded in [metric:scenario_node_count] [metric:service_acceptance_gate_count]. Unknown metrics include total floor area, FAR, road area, and every statutory or engineering value without official conditions.
 
 The compliance matrix covers announcement sections 1.3, 1.4, and 1.5 and tasks agent.1-agent.6. The standard matrix covers every mandatory standard. The design-depth matrix covers diagnosis, scope, structure, land use, pending intensity, character, renewal method, mobility, municipal systems, blue-green space, three areas, project list, phasing, metrics, and risk. [depth:risk_missing_data]
 
