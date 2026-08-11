@@ -10,8 +10,10 @@
         "layer": "GREEN_SPACE",
         "name_zh": "京张铁路遗址公园(线性绿廊)",
         "green_type": "linear_park",
-        "source_type": "design_concept",
-        "area_sqm_approx": 350000
+        "source_type": "agent_generated_design",
+        "area_sqm_approx": 350000,
+        "confidence": "low",
+        "geometry_role": "design_proposal"
       },
       "geometry": {
         "type": "Polygon",
@@ -65,8 +67,10 @@
         "layer": "GREEN_SPACE",
         "name_zh": "清河滨水绿廊",
         "green_type": "waterfront",
-        "source_type": "design_concept",
-        "area_sqm_approx": 180000
+        "source_type": "agent_generated_design",
+        "area_sqm_approx": 180000,
+        "confidence": "low",
+        "geometry_role": "design_proposal"
       },
       "geometry": {
         "type": "Polygon",
@@ -104,8 +108,10 @@
         "layer": "GREEN_SPACE",
         "name_zh": "小月河生态廊道",
         "green_type": "waterfront",
-        "source_type": "design_concept",
-        "area_sqm_approx": 120000
+        "source_type": "agent_generated_design",
+        "area_sqm_approx": 120000,
+        "confidence": "low",
+        "geometry_role": "design_proposal"
       },
       "geometry": {
         "type": "Polygon",
@@ -143,8 +149,10 @@
         "layer": "GREEN_SPACE",
         "name_zh": "都市农业示范园",
         "green_type": "urban_farm",
-        "source_type": "design_concept",
-        "area_sqm_approx": 80000
+        "source_type": "agent_generated_design",
+        "area_sqm_approx": 80000,
+        "confidence": "low",
+        "geometry_role": "design_proposal"
       },
       "geometry": {
         "type": "Polygon",
