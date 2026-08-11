@@ -1,5 +1,26 @@
 # 方案迭代记录 / Changelog
 
+## v1.2 - 2026-08-11
+
+### 改动摘要 / Summary
+
+- 修复 CI 复核发现的持久化自检元数据矛盾：重新生成 self_check.json，使 next_actions 与 manifest（known_blockers 为空）及四个 blocking gate（全部 pass）的实际状态一致。
+- 确认 LF 规范化后所有 manifest hash 与 git blob 一致；CI trusted validation 与三个 gate 全部 PASS。
+
+### 采纳反馈 / Feedback adopted
+
+- 采纳 @anselasimov-web 复核意见：清理 self_check.json 中残留的 known_blockers 警告文本。
+
+### 暂未采纳或待复核事项 / Open items
+
+- 官方 polygon、控规指标、现状建筑与权属、文保线与道路红线、市政工程条件；补齐后重算全部指标与图纸。
+- proposal.md 与 changelog.md 的"可能涉及非公开或敏感资料"提示为 advisory，由维护者评审确认；已保留公开/清权来源记录与版权声明可核验。
+
+### 公开资料与合规说明 / Public data & compliance
+
+- 仅使用公告、任务书、公开标准快照与仓库提供/清权数据；不包含个人隐私、涉密资料、内部图件或未审定规划控制指标。
+- 所有空间落地建议表述为概念建议/参考方案，供专业团队深化研究。
+
 ## v1.1 - 2026-08-11
 
 ### 改动摘要 / Summary

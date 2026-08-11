@@ -11,7 +11,6 @@
       "errors": [],
       "warnings": [
         "submissions/bradeGithub/jingzhang-ai-innovation-belt/proposal.md: 可能涉及非公开或敏感资料; maintainer review required",
-        "submissions/bradeGithub/jingzhang-ai-innovation-belt/manifest.json: known_blockers present; submission may pass intake but cannot enter formal professional scoring until resolved",
         "submissions/bradeGithub/jingzhang-ai-innovation-belt/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied",
         "submissions/bradeGithub/jingzhang-ai-innovation-belt/changelog.md: 可能涉及非公开或敏感资料; maintainer review required"
       ],
@@ -68,7 +67,7 @@
       "ai_package_stages": {
         "submissions/bradeGithub/jingzhang-ai-innovation-belt": "formal"
       },
-      "total_bytes": 3369540,
+      "total_bytes": 3370424,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -169,9 +168,7 @@
   "can_enter_formal_review": true,
   "package_type": "professional_design_package",
   "review_status": "formal-review-ready",
-  "next_actions": [
-    "Resolve formal-readiness warning: submissions/bradeGithub/jingzhang-ai-innovation-belt/manifest.json: known_blockers present; submission may pass intake but cannot enter formal professional scoring until resolved"
-  ],
+  "next_actions": [],
   "schema_version": "0.1.0",
   "checks": [
     {
