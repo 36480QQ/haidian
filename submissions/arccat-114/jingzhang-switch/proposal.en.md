@@ -123,7 +123,9 @@ Positioning: interchange of native-AI business formats and urban consumption. Sp
 
 ### 6.2 AI Scenario Cards (12)
 
-All scenarios are governed by a rail-lexicon state machine — **green light to run, yellow light to slow (manual sampling), red light to pause (decommissionable)** — each card stating location, users, data boundaries, manual review, and operator [standard:GENERATIVE-AI-INTERIM-MEASURES]:
+All scenarios are governed by a rail-lexicon state machine — **green light to run, yellow light to slow (manual sampling), red light to pause (decommissionable)** — each card stating location, users, data boundaries, manual review, and operator [standard:GENERATIVE-AI-INTERIM-MEASURES]. The state machine is formalized as a machine-readable protocol (`visual/assets/switch-protocol.json`): transitions require human sign-off, red never goes directly to green, retirement is terminal, and a red-light withdrawal drill runs quarterly — the city opens interfaces to agents, while humans keep the interrupt right [depth:three_key_area_detailed_design].
+
+**Three public-interest principles** run through all scenarios: **service equivalence** (non-AI users receive equivalent human service), **vulnerable protection** (the elderly, children and disabled are not first-round test subjects), and **red-card review right** (affected-group representatives may initiate a red-light pause) [standard:GENERATIVE-AI-INTERIM-MEASURES][source:AGENT-TASKBOOK].
 
 | # | Scenario card | Location | Users | State machine |
 |---|---------------|----------|-------|---------------|
@@ -140,7 +142,7 @@ All scenarios are governed by a rail-lexicon state machine — **green light to 
 | 11 | **Tunnel Privacy-Shield test field** (industry test): federated learning and privacy-computing validation | Zhongzhiyuan | Enterprises/researchers | Red + independent audit |
 | 12 | Terminal AI Hall of Honour: developer honour display and pilgrimage landmark | Switch Heart/north greenway | Global developers | Green + selection mechanism |
 
-Scenarios 4, 5, and 11 are industry test/validation scenarios (three), meeting the taskbook requirement of at least three; scenarios 1, 7, and 12 carry pilgrimage and honour-display functions [source:AGENT-TASKBOOK][depth:three_key_area_detailed_design].
+Scenarios 4, 5, and 11 are industry test/validation scenarios (three), meeting the taskbook requirement of at least three; scenarios 1, 7, and 12 carry pilgrimage and honour-display functions [source:AGENT-TASKBOOK][depth:three_key_area_detailed_design]. Each industry test scenario carries an **eleven-field pilot card** (baseline, pilot window and sample, minimum success threshold, stop threshold, on-site responsible person, human equivalent service, data deletion proof, review period, beneficiary or risk-bearing group, resources and permits, appeal and accountability path); thresholds are frozen from measured baselines before pilots, and this package fabricates no values [source:DESIGN-CONCEPT-SWITCH][depth:phasing_implementation]: the Switchman's Hut manual-takeover test field takes "drill completed with zero manual-takeover incidents" as its minimum success criterion; the Marshalling data sandbox takes "de-identified compliance training passed independent audit"; the Tunnel Privacy-Shield test field takes "privacy-computing validation passed independent audit with no data leakage".
 
 ## 7. Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 

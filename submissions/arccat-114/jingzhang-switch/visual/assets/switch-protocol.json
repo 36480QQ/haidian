@@ -1,0 +1,122 @@
+{
+  "schema_version": "0.1.0",
+  "protocol_name_zh": "道岔联锁协议",
+  "protocol_name_en": "SWITCH Interlocking Protocol",
+  "purpose_zh": "把 AI 创新带全部场景的运行治理形式化为可执行状态机：绿灯通行、黄灯限速（人工抽查）、红灯暂停（人工接管、可退役）；状态迁移须人工签认；退役为终态。",
+  "purpose_en": "Formalizes the operating governance of all belt scenarios as an executable state machine: green to run, yellow to slow (manual sampling), red to pause (manual takeover, decommissionable); transitions require human sign-off; decommission is terminal.",
+  "governance_principles_zh": [
+    "服务等价：不使用 AI 者获得等价人工服务",
+    "弱势保护：老幼病障不作为首轮测试对象",
+    "红牌复核权：受影响群体代表可发起红牌暂停",
+    "数据最小化：场景不依赖非公开数据与个人隐私",
+    "人工终审：法定程序与公共决策由人完成"
+  ],
+  "governance_principles_en": [
+    "Service equivalence: non-AI users receive equivalent human service",
+    "Vulnerable protection: elderly, children, disabled are not first-round test subjects",
+    "Red-card review right: affected-group representatives may initiate red-light pause",
+    "Data minimization: scenarios do not rely on non-public data or personal privacy",
+    "Human final review: statutory procedures and public decisions remain human"
+  ],
+  "state_machine": {
+    "states": ["GREEN", "YELLOW", "RED", "RETIRED"],
+    "initial_state": "YELLOW",
+    "transitions": [
+      {
+        "from": "YELLOW",
+        "to": "GREEN",
+        "condition_zh": "试点期通过：达到最小成功阈值且通过人工复核",
+        "condition_en": "Pilot passed: minimum success threshold met and human review passed",
+        "signoff": "human"
+      },
+      {
+        "from": "GREEN",
+        "to": "YELLOW",
+        "condition_zh": "出现黄灯事项：异常指标、投诉或抽检不合格",
+        "condition_en": "Yellow event: abnormal metrics, complaints, or sampling failure",
+        "signoff": "human"
+      },
+      {
+        "from": "YELLOW",
+        "to": "RED",
+        "condition_zh": "红灯事项：安全事故、隐私侵害或受影响群体代表发起红牌",
+        "condition_en": "Red event: safety incident, privacy violation, or red-card initiated by affected-group representatives",
+        "signoff": "human"
+      },
+      {
+        "from": "GREEN",
+        "to": "RED",
+        "condition_zh": "红灯事项：同上，可直接跳转",
+        "condition_en": "Red event: same as above, direct transition allowed",
+        "signoff": "human"
+      },
+      {
+        "from": "RED",
+        "to": "YELLOW",
+        "condition_zh": "整改复核通过：红不得直转绿，须复核签认后转黄观察一期",
+        "condition_en": "Remediation review passed: red cannot go directly to green; must transition to yellow for one observation period after sign-off",
+        "signoff": "human"
+      },
+      {
+        "from": "RED",
+        "to": "RETIRED",
+        "condition_zh": "退役：评估后永久下线，记录公开留存",
+        "condition_en": "Retired: permanently decommissioned after evaluation; records remain public",
+        "signoff": "human"
+      },
+      {
+        "from": "ANY",
+        "to": "RETIRED",
+        "condition_zh": "任何状态可经人工评估直接退役",
+        "condition_en": "Any state may be retired directly after human evaluation",
+        "signoff": "human"
+      }
+    ],
+    "red_light_drill": {
+      "name_zh": "红牌撤回演练",
+      "name_en": "Red-Light Withdrawal Drill",
+      "frequency_zh": "首开行动含一次完整演练，此后每季度一次",
+      "frequency_en": "First-phase actions include one full drill; quarterly thereafter",
+      "runbook_zh": [
+        "发布演练预告与公众通知",
+        "任选一个运行中场景触发红牌",
+        "执行人工接管与数据冻结",
+        "公开失败记录与复盘报告",
+        "恢复或退役决策由人工签认"
+      ],
+      "runbook_en": [
+        "Publish drill notice and public notification",
+        "Trigger a red card on one running scenario",
+        "Execute manual takeover and data freeze",
+        "Publish failure records and review report",
+        "Recovery or retirement decision signed off by humans"
+      ]
+    }
+  },
+  "scenarios": [
+    {"id": "SW-01", "name_zh": "岔心·换轨艺术广场", "state": "YELLOW", "zone": "S1", "location_zh": "岔心广场", "manual_fallback_zh": "人工策展与静态艺术装置", "operator_zh": "公园运营方+艺术家"},
+    {"id": "SW-02", "name_zh": "信号灯·AI治理可视化", "state": "YELLOW", "zone": "S1", "location_zh": "众智园信号广场", "manual_fallback_zh": "公开数据板与人工解说", "operator_zh": "治理机构+社区"},
+    {"id": "SW-03", "name_zh": "时刻表·AI出行调度", "state": "YELLOW", "zone": "S1", "location_zh": "全带绿廊", "manual_fallback_zh": "人工预案与常规公交", "operator_zh": "交通部门+运营公司"},
+    {"id": "SW-04", "name_zh": "扳道房·人工接管测试场", "state": "YELLOW", "zone": "S3", "location_zh": "众智园实验室", "manual_fallback_zh": "红牌演练为核心，常规人工测试", "operator_zh": "测试机构+监管", "industry_test": true},
+    {"id": "SW-05", "name_zh": "编组场·企业数据沙箱", "state": "YELLOW", "zone": "S2", "location_zh": "大钟寺商务楼", "manual_fallback_zh": "线下合规咨询与人工审计", "operator_zh": "产业运营方+独立审计", "industry_test": true},
+    {"id": "SW-06", "name_zh": "始发场·创业发车仪式", "state": "YELLOW", "zone": "S2", "location_zh": "原点0公里广场", "manual_fallback_zh": "专家评审与线下路演", "operator_zh": "社区运营方+专家团"},
+    {"id": "SW-07", "name_zh": "里程桩·AI文化导览", "state": "YELLOW", "zone": "S1", "location_zh": "历史侧线/绿廊", "manual_fallback_zh": "实体展板与人工导览", "operator_zh": "文博机构+内容审核"},
+    {"id": "SW-08", "name_zh": "机车库·AI教育实验室", "state": "YELLOW", "zone": "S2", "location_zh": "原点社区", "manual_fallback_zh": "教师面授与纸质课程", "operator_zh": "教育机构+学校"},
+    {"id": "SW-09", "name_zh": "侧线·场景快闪", "state": "YELLOW", "zone": "S2", "location_zh": "西侧线", "manual_fallback_zh": "普通市集与人工零售", "operator_zh": "街道运营方+商户", "limited_permit": true},
+    {"id": "SW-10", "name_zh": "检票口·AI政务服务", "state": "YELLOW", "zone": "S2", "location_zh": "大钟寺/社区站", "manual_fallback_zh": "人工窗口全程可用", "operator_zh": "政务部门", "human_final_review": true},
+    {"id": "SW-11", "name_zh": "隧道·隐私盾测试场", "state": "YELLOW", "zone": "S3", "location_zh": "众智园", "manual_fallback_zh": "人工数据流程与线下验证", "operator_zh": "科研机构+独立审计", "industry_test": true},
+    {"id": "SW-12", "name_zh": "终点站·AI荣誉殿堂", "state": "YELLOW", "zone": "S1", "location_zh": "岔心/绿廊北段", "manual_fallback_zh": "实体荣誉墙与人工评选", "operator_zh": "运营机构+评选委员会"}
+  ],
+  "pilot_card_fields_zh": [
+    "基线（试点前冻结）", "试验时段与样本", "最小成功阈值", "停止阈值",
+    "现场责任人", "人工等价服务", "数据删除证明", "复盘周期",
+    "受益或担风险群体", "资源与许可", "申诉与问责路径"
+  ],
+  "pilot_card_fields_en": [
+    "Baseline (frozen before pilot)", "Pilot window and sample", "Minimum success threshold", "Stop threshold",
+    "On-site responsible person", "Human equivalent service", "Data deletion proof", "Review period",
+    "Beneficiary or risk-bearing group", "Resources and permits", "Appeal and accountability path"
+  ],
+  "status_note_zh": "全部场景当前状态为概念建议中的黄灯待试点，未授权运行；本协议为概念治理机制，供专业团队与运营主体深化，不构成合规认定或法定程序。",
+  "status_note_en": "All scenarios are conceptual yellow-light pending pilots, not authorized to run; this protocol is a conceptual governance mechanism for professional teams and operators, not a compliance determination or statutory procedure."
+}
