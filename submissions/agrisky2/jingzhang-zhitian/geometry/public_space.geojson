@@ -10,7 +10,9 @@
         "layer": "PUBLIC_SPACE",
         "name_zh": "开源广场/Agent贡献荣誉墙",
         "public_type": "plaza",
-        "source_type": "design_concept"
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal"
       },
       "geometry": {
         "type": "Polygon",
@@ -48,7 +50,9 @@
         "layer": "PUBLIC_SPACE",
         "name_zh": "AI+农业创新展示廊",
         "public_type": "exhibition_corridor",
-        "source_type": "design_concept"
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal"
       },
       "geometry": {
         "type": "Polygon",
@@ -86,7 +90,9 @@
         "layer": "PUBLIC_SPACE",
         "name_zh": "全球粮食安全论坛广场",
         "public_type": "forum_plaza",
-        "source_type": "design_concept"
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal"
       },
       "geometry": {
         "type": "Polygon",
@@ -124,7 +130,9 @@
         "layer": "PUBLIC_SPACE",
         "name_zh": "开发者散步道",
         "public_type": "promenade",
-        "source_type": "design_concept"
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal"
       },
       "geometry": {
         "type": "Polygon",
