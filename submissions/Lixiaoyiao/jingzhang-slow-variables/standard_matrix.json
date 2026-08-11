@@ -218,10 +218,10 @@
         "research_translation_land_ratio",
         "century_baseline_land_area_sqm",
         "century_baseline_land_ratio",
-        "replaceable_ai_production_land_area_sqm",
-        "replaceable_ai_production_land_ratio",
-        "lasting_life_support_land_area_sqm",
-        "lasting_life_support_land_ratio"
+        "conceptual_commercial_service_land_area_sqm",
+        "conceptual_commercial_service_land_ratio",
+        "conceptual_community_service_facility_land_area_sqm",
+        "conceptual_community_service_facility_land_ratio"
       ],
       "source_ids": [
         "SOURCE-REGISTRY",
@@ -237,7 +237,7 @@
         "VISUAL_PACKAGING",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "LU-001..004 使用仓库允许的 land_use_code 并逐类复算面积/比例，同时明确其为概念功能带而非法定地块用途。"
+      "evidence_summary_zh": "LU-001..004 使用仓库允许的 land_use_code 并逐类复算；其中 05 与 0702 仅作概念主导分类，设计主题不被包装为工业生产或完整混合用途。"
     },
     {
       "standard_id": "MOHURD-ARCH-DESIGN-DEPTH-2016",
