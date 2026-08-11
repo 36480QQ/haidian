@@ -1,0 +1,83 @@
+{
+  "schema_version": "0.1.0",
+  "sources": [
+    {
+      "source_id": "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+      "title_zh": "百年京张AI创新带城市设计国际方案征集资格预审公告",
+      "publisher": "北京市规划和自然资源委员会",
+      "source_url": "https://ghzrzyw.beijing.gov.cn/zhengwuxinxi/tzgg/hd/202605/t20260509_4643047.html",
+      "publication_date": "2026-05-09",
+      "retrieval_date": "2026-08-11",
+      "license": "public government announcement",
+      "spatial_coverage": "海淀区京张铁路遗址公园沿线",
+      "temporal_coverage": "2026",
+      "usable_for_formal": "yes",
+      "limitations": "公告仅含面积和四至描述，无精确边界文件"
+    },
+    {
+      "source_id": "SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK",
+      "title_zh": "百年京张AI创新带城市设计 Agent 开源征集任务书",
+      "publisher": "百年京张AI创新带城市设计组委会",
+      "source_url": "https://github.com/open-city-ai/haidian",
+      "publication_date": "2026-05-18",
+      "retrieval_date": "2026-08-11",
+      "license": "open call taskbook",
+      "spatial_coverage": "海淀区京张铁路遗址公园沿线全域",
+      "temporal_coverage": "2026",
+      "usable_for_formal": "yes",
+      "limitations": "任务书提供Agent工作框架与交付规范，不含控规指标"
+    },
+    {
+      "source_id": "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+      "title_zh": "临时粗略边界数据（AI Agent推演）",
+      "publisher": "Repository maintainer",
+      "source_url": "https://github.com/open-city-ai/haidian/blob/main/brief/site-package/geometry/provisional_boundaries.geojson",
+      "publication_date": "2026-06-05",
+      "retrieval_date": "2026-08-11",
+      "license": "agent-generated provisional data",
+      "spatial_coverage": "协同研究范围、总体设计范围、重点详细设计范围",
+      "temporal_coverage": "2026",
+      "usable_for_formal": "no",
+      "limitations": "基于公告四至文字描述的矩形近似，非精确测绘边界，待正式数据替代"
+    },
+    {
+      "source_id": "SRC-2026-BJ-KW-THREE-AREAS-WINGS",
+      "title_zh": "三区两翼空间结构研究资料",
+      "publisher": "海淀区规划和自然资源局",
+      "source_url": "N/A - referenced in taskbook",
+      "publication_date": "2026-04-01",
+      "retrieval_date": "2026-08-11",
+      "license": "government background material",
+      "spatial_coverage": "海淀北部、中部、南部三区及东西两翼",
+      "temporal_coverage": "2025-2026",
+      "usable_for_formal": "yes",
+      "limitations": "背景研究资料，非法定规划文件"
+    },
+    {
+      "source_id": "SRC-2026-HAIDIAN-1X1",
+      "title_zh": "海淀1x1创新生态计划资料",
+      "publisher": "海淀区科学技术和信息化局",
+      "source_url": "N/A - referenced in taskbook",
+      "publication_date": "2026-03-15",
+      "retrieval_date": "2026-08-11",
+      "license": "government background material",
+      "spatial_coverage": "海淀区全域创新节点",
+      "temporal_coverage": "2025-2026",
+      "usable_for_formal": "yes",
+      "limitations": "创新生态政策背景，不含空间管控指标"
+    },
+    {
+      "source_id": "SRC-AGENT-CASE-STUDY-2026",
+      "title_zh": "国际案例研究汇编（AI Agent生成）",
+      "publisher": "Agent Lyz30 (Claude, Anthropic)",
+      "source_url": "N/A - agent generated",
+      "publication_date": "2026-08-11",
+      "retrieval_date": "2026-08-11",
+      "license": "agent_generated_background",
+      "spatial_coverage": "全球6个创新走廊案例",
+      "temporal_coverage": "2020-2026",
+      "usable_for_formal": "no",
+      "limitations": "AI Agent基于公开资料整理，非实地调研，仅供设计策略参考"
+    }
+  ]
+}
