@@ -64,6 +64,11 @@
         padding: 9px 16px;
         text-decoration: none;
       }
+      nav a:focus-visible,
+      a:focus-visible {
+        outline: 3px solid var(--gold);
+        outline-offset: 3px;
+      }
       section {
         margin: 58px 0;
       }
@@ -164,7 +169,7 @@
     </header>
     <main>
       <nav>
-        <a href="#twin-track">双轨总纲</a><a href="#first-test">首测协议</a
+        <a href="#twin-track">双轨总纲</a><a href="#maintenance">维护闭环</a><a href="#first-test">首测协议</a
         ><a href="#baseline">现实基线</a><a href="#overview">总体结构</a
         ><a href="#system">后台 JZ-AIOS</a
         ><a href="#scope">三层范围</a><a href="#areas">重点区域</a
@@ -221,6 +226,37 @@
           结构化回链：<code>visual/assets/key-area-evidence-matrix.json#twin_track_frontend_contract</code>；该合同只记录概念空间关系、公众旅程、时段和成熟度护栏，不新增场景编号、几何或现场成绩。JZ-AIOS、G0—G3、T-02、证据门和权利台账继续在后续章节作为后台治理内核。
         </p>
       </section>
+      <section id="maintenance" aria-labelledby="maintenance-title">
+        <h2 id="maintenance-title">维护型城市：普通问题怎样回到普通日常</h2>
+        <div class="notice">
+          <strong>AI 不是进入条件：</strong>
+          居民可从普通、人工或非 AI 路径提出问题；图中“问题壳”和“工单壳”只是待填结构，不是已收集投诉或已派发工单。责任接受前不生成现实工单，独立复核后才能继续；重复故障、无安全人工路径或无法恢复日常时必须停止并进入退役复核。
+        </div>
+        <figure>
+          <img
+            src="../assets/figures/implementation-roadmap.png"
+            alt="维护型城市图：十二个既有场景进入五类任务族，沿维修缝线经过问题壳、责任、人工工时、修复和独立复核，再继续、修正、停止或退役并恢复日常；季度地图保持空白"
+          />
+          <figcaption>双语同构的概念维护图；Q1—Q4 保持空白，真实工单为 0，不填伪结果。</figcaption>
+        </figure>
+        <div class="grid">
+          <article class="card">
+            <b>先维护既有设施</b>
+            <p>顺序固定为检查 → 清洁/调整 → 维修 → 可维修部件替换 → 最后才讨论采购。图中没有预算数字、采购清单或已建设施。</p>
+          </article>
+          <article class="card">
+            <b>让人工劳动可见</b>
+            <p>维修、保洁、有人值守服务、策展和无障碍共同测试都进入责任与复核链；这些是所需角色类型，不代表人员已经确认。</p>
+          </article>
+          <article class="card">
+            <b>现实边界</b>
+            <p>真实投诉、工单、预算、人员、修复、复核、成效、批准和运营均为 0；计划与实际人工工时为 unknown。全部场景仍为 G0。</p>
+          </article>
+        </div>
+        <p>
+          机器可审计入口：<a href="assets/key-area-evidence-matrix.json#maintenance_urbanism_contract"><code>visual/assets/key-area-evidence-matrix.json#maintenance_urbanism_contract</code></a>。该合同只组织既有 12 个场景和八个项目，不新增场景、几何、成熟度、批准、人员或现实服务。
+        </p>
+      </section>
       <section id="review-path">
         <h2>命名与评审路径</h2>
         <p>
@@ -239,12 +275,6 @@
           是文档字段覆盖，不是测试成绩；已完成预注册、获批窗口、现场执行和已知结果均为
           0，全部节点仍为 G0。
         </div>
-        <figure>
-          <img
-            src="../assets/figures/implementation-roadmap.png"
-            alt="G1 预注册、停止恢复与独立复测路径"
-          />
-        </figure>
         <div class="grid">
           <article class="card">
             <b>T-03 · 空间与公共利益示例测试</b>

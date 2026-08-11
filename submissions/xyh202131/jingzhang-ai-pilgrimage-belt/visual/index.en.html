@@ -67,6 +67,11 @@
         color: var(--ink);
         text-decoration: none;
       }
+      nav a:focus-visible,
+      a:focus-visible {
+        outline: 3px solid var(--gold);
+        outline-offset: 3px;
+      }
       section {
         margin: 58px 0;
       }
@@ -194,7 +199,7 @@
     </header>
     <main>
       <nav>
-        <a href="#twin-track">Twin-track master plan</a><a href="#first-test">First test</a
+        <a href="#twin-track">Twin-track master plan</a><a href="#maintenance">Maintenance loop</a><a href="#first-test">First test</a
         ><a href="#baseline">Built baseline</a><a href="#overview">Overall structure</a
         ><a href="#system">Back-stage JZ-AIOS</a><a href="#scope">Three scopes</a
         ><a href="#areas">Key areas</a><a href="#scenario">AI scenarios</a
@@ -258,6 +263,37 @@
           Structured backlink: <code>visual/assets/key-area-evidence-matrix.json#twin_track_frontend_contract</code>. The contract records conceptual spatial relations, a public journey, time windows, and maturity guards only; it adds no scene ID, geometry, or field result. JZ-AIOS, G0–G3, T-02, evidence gates, and the rights ledger remain the back-stage governance kernel in the following sections.
         </p>
       </section>
+      <section id="maintenance" aria-labelledby="maintenance-title">
+        <h2 id="maintenance-title">Maintenance urbanism: how an ordinary issue returns to daily life</h2>
+        <div class="notice">
+          <strong>AI is not an entry condition:</strong>
+          residents may raise an issue through ordinary, staffed, or non-AI routes. The “issue shell” and “work-order shell” are blank structures, not collected complaints or dispatched work orders. No real work order exists before responsibility is accepted; continuation follows independent recheck. Repeated failure, no safe staffed route, or inability to restore daily use requires stopping and retirement review.
+        </div>
+        <figure>
+          <img
+            src="../assets/figures/implementation-roadmap.en.png"
+            alt="Maintenance-urbanism diagram: all twelve existing scenes enter five task families and follow a repair seam through issue shell, responsibility, human hours, repair, and independent recheck before continuing, correction, stopping, or retirement and return to daily life; the quarterly map stays blank"
+          />
+          <figcaption>The bilingual diagrams share one layout. Q1–Q4 remain blank; real work orders are 0 and no result is fabricated.</figcaption>
+        </figure>
+        <div class="grid">
+          <article class="card">
+            <b>Maintain existing facilities first</b>
+            <p>The order is inspect → clean/adjust → repair → replace a repairable component → discuss procurement last. The diagram shows no budget number, procurement list, or built facility.</p>
+          </article>
+          <article class="card">
+            <b>Keep human labour visible</b>
+            <p>Maintenance, cleaning, staffed service, curation, and accessibility co-testing enter the responsibility and recheck chain. These are required role types, not confirmed personnel.</p>
+          </article>
+          <article class="card">
+            <b>Reality boundary</b>
+            <p>Real complaints, work orders, budgets, people, repairs, rechecks, effects, approvals, and operations are all 0. Planned and actual human hours are unknown. Every scene remains G0.</p>
+          </article>
+        </div>
+        <p>
+          Machine-auditable entry: <a href="assets/key-area-evidence-matrix.json#maintenance_urbanism_contract"><code>visual/assets/key-area-evidence-matrix.json#maintenance_urbanism_contract</code></a>. The contract organises the existing 12 scenes and eight projects only; it adds no scene, geometry, maturity, approval, personnel, or real service.
+        </p>
+      </section>
       <section id="review-path">
         <h2>Naming and review path</h2>
         <p>
@@ -279,12 +315,6 @@
           not a test result. Completed preregistrations, approved windows, field
           executions, and known results all remain 0; every node remains at G0.
         </div>
-        <figure>
-          <img
-            src="../assets/figures/implementation-roadmap.en.png"
-            alt="G1 preregistration, stop, recovery, and independent-retest path"
-          />
-        </figure>
         <div class="grid">
           <article class="card">
             <b>T-03 · Spatial and public-benefit example test</b>
