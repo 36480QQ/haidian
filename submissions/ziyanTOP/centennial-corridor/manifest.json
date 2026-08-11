@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "4af3318c610e00ca85482c004eedb5ece2307ff0a19d67fe3dd048726a93fa56"
+      "sha256": "c0b2f1b28c86fdb27ed374bd6c524b38887317a1bb273f60d4de1ab1a4597ec3"
     },
     {
       "path": "agent.json",
@@ -56,13 +56,13 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "928b8538023e817473de1763026fb467e845f5c42647ed5a48acfba37e428845"
+      "sha256": "1aee7c47a8a63fb834e3a7df2b673bbd47b1b0200dff31f8f18c08304af774d2"
     },
     {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "3c9133c87bb8d6f3813194dc36339a564568b7f73f16d60703a059e1b46d7c73"
+      "sha256": "1fce403a2e5ff711777dac60ad89c7f5827262c15b9f1e1bd1de6a253770f81f"
     },
     {
       "path": "standard_matrix.json",
@@ -114,7 +114,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "0d15d7d5de616ad412083181d5c15b030b465e55db013517ffad798c41cdb5dd"
+      "sha256": "a6867ce1f8966cfc73766658d2f7431d644e375219e77a5fff085edebd07d910"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "2bb27dcbb5c8bd1a5b351392a36ecd2d62071a10104e91526851b0e1dd956859"
+      "sha256": "df06637238d49db72159d68d8f99dbe7adc1adb1fe3276146b5fcf3f2271bc8d"
     },
     {
       "path": "report/proposal.en.html",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "bc5cb6d460526c2242bc9198a22cc225c5499ad46dec3f21dfd105838ba75ce6"
+      "sha256": "d0a597d6b1cdc3c4d02c1512ff019a037f28701d26063c87e0192843abdad726"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -289,7 +289,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": true,
-      "sha256": "240a7e3a46b57b3720ef8cbf0c558185e839d45aa5136a33984df5472774ef2c"
+      "sha256": "3802139ae9fb13254ed9123d82e708901ca3e0e0328fa60502721a96cbe52230"
     }
   ],
   "validation_claim": {
