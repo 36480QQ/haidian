@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "package_id": "jingzhang-growth-mesh",
   "project_id": "centennial-jingzhang-ai-belt",
   "site_package_version": "0.1.0",
@@ -314,7 +314,7 @@
     },
     {
       "path": "changelog.md",
-      "role": "supporting_data",
+      "role": "changelog",
       "required": false,
       "sha256": "6e57fd1f05dfbae834802ff0c79f91920fa39c4d3b304dda2b2c7fd34661c380"
     },
