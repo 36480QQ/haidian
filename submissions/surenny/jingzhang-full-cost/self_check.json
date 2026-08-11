@@ -61,15 +61,17 @@
         "submissions/surenny/jingzhang-full-cost/standard_matrix.json",
         "submissions/surenny/jingzhang-full-cost/visual/assets/closeout-review-data.js",
         "submissions/surenny/jingzhang-full-cost/visual/assets/responsibility-transfer-data.js",
+        "submissions/surenny/jingzhang-full-cost/visual/assets/spatial-balance-data.js",
         "submissions/surenny/jingzhang-full-cost/visual/assets/verify-closeout-review.js",
         "submissions/surenny/jingzhang-full-cost/visual/assets/verify-responsibility-transfer.js",
+        "submissions/surenny/jingzhang-full-cost/visual/assets/verify-spatial-balance.js",
         "submissions/surenny/jingzhang-full-cost/visual/index.en.html",
         "submissions/surenny/jingzhang-full-cost/visual/index.html"
       ],
       "ai_package_stages": {
         "submissions/surenny/jingzhang-full-cost": "formal"
       },
-      "total_bytes": 1752164,
+      "total_bytes": 1782391,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -151,15 +153,15 @@
       "summary": {
         "standard_matrix_items": 6,
         "design_depth_items": 15,
-        "known_metric_refs_required": 16,
+        "known_metric_refs_required": 19,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
           "source": 5,
           "standard": 5,
           "depth": 12,
-          "data": 16,
-          "metric": 16
+          "data": 18,
+          "metric": 19
         }
       }
     },
