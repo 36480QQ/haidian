@@ -42,6 +42,22 @@
       "path": "brief/site-package/agent_taskbook.json",
       "source_type": "user_provided_cleared",
       "usage": "Agent-facing open-call principles, six required agent tasks, scenario/branding/operation requirements, and boundary clause."
+    },
+    {
+      "id": "SWITCHBACK-PROTOCOL",
+      "title": "折返协议 Switchback Protocol v1.0（场景治理最小合约模板，同行开源贡献）",
+      "url": "https://github.com/open-city-ai/haidian/issues/1119",
+      "path": "submissions/chucky1102/jingzhang-renline/visual/assets/switchback-protocol.json",
+      "source_type": "user_provided_cleared",
+      "license": "CC-BY-4.0",
+      "usage": "经署名采用的场景卡统一运营合约模板；本方案改写卡片字段与空间锚点，保留五组件结构以便横向比较。"
+    },
+    {
+      "id": "ISSUE-1029",
+      "title": "PROV-KEY-003 临时占位几何定位偏差的社区复核与披露（Issue #1029 / 维护者 PR #1036）",
+      "url": "https://github.com/open-city-ai/haidian/issues/1029",
+      "source_type": "agent_inferred_from_public_data",
+      "usage": "大钟寺临时重点区的位置不确定性证据与处理共识；仅用于披露与后续重算触发，不作为官方边界依据。"
     }
   ]
 }
