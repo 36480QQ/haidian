@@ -8,9 +8,19 @@
 
 AI 朝圣·铁轨新生带当前方案将百年京张定义为一条可审计的 AI 公共创新生产线。小月河场景赋能翼提出真实问题，AI 原点社区共创，众智园验证，大钟寺发布与服务，中关村科技服务翼提供建议性的合规与转化支持，公众反馈和失败证据回流下一年度。
 
-既有空间深化不另起一套规划，而是用差异化运行剖面解释三处重点区：众智园分开公众观察与低风险测试环，原点社区以连续日常街串联双院和可撤节点，大钟寺把四向步行、静音休憩和人工服务置于发布叠层之前。矩阵记录 3 组剖面、12 个 G0 概念状态的日常基线、让位顺序、还场动作与重启门。中英文主稿、HTML、视觉首页、A3/A0、八组双语 PNG 展示对与三组双语 SVG 可编辑源对仍为必交对照件。全部节点仍处于 G0；临时 geometry、字段覆盖、本地 PASS 与生成记录均不构成审批、现场结果或清权证明。
+第 2 轮不另起一套规划，而把三处重点区深化为不可机械复制的公共空间原型：众智园以平行验证庭、实体设备隔离和维护/急停边保护公众观察；原点社区以一街两院四节点、无屏共学和同意撤回保护居民日常；大钟寺以四向步行、一厅一台、来源纠错和人工同任务服务保护通勤。平面、关系剖面、首层界面、连续非 AI / 无障碍意图线、四步旅程、可拆构件、普通—验证—故障—恢复四态和场所恢复验收回链同一结构化合同。全部节点仍处于 G0；临时 geometry、字段覆盖、本地 PASS 与生成记录均不构成审批、现场结果或清权证明。
 
-The current Jing-Zhang proposal treats the corridor as an auditable public AI innovation production line. Its existing spatial deepening adds no competing plan; it uses area-specific operating sections instead. Zhongzhiyuan separates public observation from the low-risk test loop; Origin Community connects two courts and removable nodes to a continuous daily street; Dazhongsi protects four-way walking, quiet rest, and staffed service before release overlays. The matrix records the daily baseline, yield order, restoration action, and restart gate for three sections and twelve G0 concept states. Chinese and English narratives, HTML, visual homepages, A3/A0 outputs, eight bilingual PNG display pairs, and three bilingual SVG editable-source pairs remain required counterparts. Every node remains at G0; provisional geometry, field coverage, local PASS results, and generation records are not approval, field-performance, or rights-clearance evidence.
+Round 2 adds no competing plan. It deepens the three key areas into public-space prototypes that cannot be mechanically copied. Zhongzhiyuan protects public observation through a parallel proof court, physical equipment isolation, and a service/stop edge. Origin Community protects resident daily life through one street, two courts, four nodes, screen-free learning, and consent withdrawal. Dazhongsi protects commuting through four-way walking, one hall/one desk, source correction, and same-task staffed service. Plans, relationship sections, ground-floor interfaces, continuous non-AI/accessibility intent, four-step journeys, removable components, ordinary–proof–fault–recovery states, and place-restoration acceptance link to one structured contract. Every node remains G0; provisional geometry, field coverage, local PASS results, and generation records are not approval, field performance, or rights-clearance evidence.
+
+## 第 2 轮三座换轨场增量 / Round 2 three-switchyard increment
+
+本轮选择六个内聚工作包：众智园平行验证庭与设备隔离、原点社区一街两院四节点与无屏撤回、大钟寺四象限步行与一厅一台、三处连续非 AI / 无障碍意图线与人工交接、差异化可拆构件与夜间静音、四态与场所恢复验收及证据回链。`key-areas` 现在承担普通状态平面、首层公共界面和四步旅程，`key-area-sections` 承担三种关系剖面、四态和恢复门；两组均有中英文 SVG 可编辑源和 PNG 展示导出。`visual/assets/key-area-evidence-matrix.json#round2_spatial_deepening` 逐处记录唯一规划问题、连续路径、人工交接、可拆构件、不可复制组件、未知决策字段和恢复检查。
+
+Round 2 selects six cohesive work packages: Zhongzhiyuan’s parallel proof court and equipment isolation; Origin Community’s one street, two courts, four nodes, and screen-free withdrawal; Dazhongsi’s four-quadrant walk and one hall/one desk; continuous non-AI/accessibility intent and staffed handoff across all three; area-specific removable components and night-time quiet; and four states, place-restoration acceptance, and evidence backlinks. `key-areas` now carries ordinary-state plans, ground-floor public interfaces, and four-step journeys, while `key-area-sections` carries three relationship sections, four states, and recovery gates; both retain bilingual editable SVG and PNG display counterparts. `visual/assets/key-area-evidence-matrix.json#round2_spatial_deepening` records one planning question, continuous path, staffed handoff, removable components, non-copyable elements, unknown decision fields, and restoration checks for each place.
+
+反证边界保持显式：图中体量只是关系原型，不是现状建筑；大钟寺四向只表示待核到达关系，`PROV-KEY-003` 不构成车站、道路、铁路边界或首层锚点；绿色路径是无障碍设计意图，不是现场合格证明；恢复验收是未来责任角色的概念检查表，不是场地批准。geometry、场景编号和 metrics 均不因本轮图面深化而改变，所有现场依赖值保持 `unknown`，权利继续 `not_fully_cleared`。
+
+The counter-evidence boundary remains explicit: massing is a relationship prototype, not an existing-building record; Dazhongsi’s four directions are pending-verification arrival relations, and `PROV-KEY-003` is not a station, road, railway-boundary, or ground-floor anchor; the green route is accessibility design intent, not proof of field compliance; and restoration acceptance is a future accountable-role checklist, not site approval. Geometry, scene IDs, and metrics do not change because of this drawing refinement, all field-dependent values remain `unknown`, and rights remain `not_fully_cleared`.
 
 ## 双轨前台增量 / Twin-track frontend increment
 
@@ -40,38 +50,28 @@ V2.11 performs a package-wide consistency and transferability audit without addi
 
 ## 本次增量状态 / Current increment status
 
-> 本节只记录尚未产生可信 GitHub check 的当前增量。它不得继承下方 `e71ff206…` 历史快照的任何 `[x]`；最终 PR head 的可信 `submission-validation` 才能关闭最后一项。
+> 本节从 `main@f72d89db…` 的第 2 轮工作区重新开始，不继承前一 PR 的任何 `[x]`、PDF 摘要、manifest 摘要或可信 check。完成本轮本地验证后才能逐项勾选，最终 PR head 的可信 `submission-validation` 才能关闭最后一项。
 >
-> This section records the current increment before a trusted GitHub check exists. It inherits none of the `[x]` items in the historical `e71ff206…` snapshot below. Only trusted `submission-validation` on the final PR head can close the last item.
+> This section restarts from the Round 2 workspace at `main@f72d89db…`. It inherits no `[x]`, PDF digest, manifest digest, or trusted check from the prior PR. Items may be checked only after this round’s local validation; only trusted `submission-validation` on the final PR head can close the last item.
 
-- [x] 任务书三大定位、五大功能和六个智能体任务均可从正文、矩阵、图层与展示物回查；未新增重复的第四套总矩阵。
-- [x] `metrics.json` 包含 75 个 known 与 11 个 unknown 指标；新增两项只计数 3 组差异化剖面和 12 个 G0 概念状态，正式资料缺失的建筑密度、道路比例等保持 unknown。
-- [x] 29 条来源均补齐采集、时空、复用、转换和限制字段，并以 `rights_evidence_id` 回链 schema 化证据；日期、格式、摘要或条款缺失时保持显式 unknown，刷新审计完成数仍为 0。
-- [x] 中英文正文、离线报告、视觉首页、八组双语 PNG 展示对、三组双语 SVG 可编辑源对与 A3/A0 均为必交对照件；两版视觉首页具有同序 17 章节、16 个导航目标、8 个图件角色、14 个同键同值指标卡与 `[2,3,12,3,13]` 表格行合同，并同步 provisional、G0、字段覆盖不是结果和权利未清边界。
-- [x] 三处重点区证据交叉表只表示文档映射齐全；现场审计、责任主体确认、批准、测试执行和已知结果仍为 0。
-- [x] T-02 完成 1 次 G0 合成治理回放：10/10 决策精确匹配，4/4 个不同的声明停止事件精确映射各自恢复动作，13/13 负向变异控制按预期 fail-closed；实质回答、模型/API/现实服务调用、现场测试、审批、责任主体确认、现实独立复测和 G1 结果保持 0 或 unknown。
-- [x] 11 个既有项目/试点均已映射到 9 类现实关闭证据，共 99 个必需证据槽，并在双语正文压成七组可交接现实材料；当前 0 个关闭、99 个 open、11 个 NO-GO、0 个 G1 授权。任何一类未关闭或有效停止条件均覆盖先前许可，不把文档完整性误报为可开工状态。
-- [x] 12/12 个预注册场景已回指既有项目或试点、关闭记录、当前阶段和空间对象；99 个稳定材料 ID 均唯一、现实提交材料仍为 0，文档交叉引用不构成 G1 资格。
-- [x] manifest 已从当前最终文件字节刷新为 70 个包文件、69 个非 manifest SHA-256；权利台账的 5 个兼容组与 70 条逐文件记录具有同一路径集，除 manifest 与 ledger 的显式不可自引用项外，摘要逐项一致。
-- [x] 120/120 个 OSM 要素具有 `source_id`、`osm_way_id` 与署名；固定查询和快照摘要仍未知，`RIGHTS-OPEN-03` 保持 P0 open。
-- [x] 权利总体仍为 `not_fully_cleared`，独立逐文件清权审计完成数为 0；`RIGHTS-OPEN-01/02/03` 保持 P0 open，公共或专业复用继续 blocked。
-- [x] 公告 8.1 的七个子条款与七类使用场景已逐项登记并在双语正文可读展示；当前仅 1 类允许披露评审，2 类待确认，4 类阻断或待审计阻断；适用关系确认、投稿人对外展示书面同意和独立组件审计完成数仍均为 0。
-- [x] strict score、deterministic、spatial、visual、professional、self-check 与 participant preflight 已在最终 manifest 与 PDF 字节就位后全量通过；同时 `PUBLIC_OR_PROFESSIONAL_REUSE_RIGHTS` 仍为 `unknown/major`，`RIGHTS-OPEN-01/02/03` 是已写入 manifest 的发布阻断项，公共或专业复用仍 blocked，不能把结构 PASS 写成权利清除。
+- [x] 三处双语概念平面、关系剖面、首层界面、四步旅程与四态逐项对应，且不是同一构图换标题。
+- [x] 三处连续非 AI / 无障碍意图线、人工交接、停止、绕行、退出与恢复均可在人读图文和机器合同中回查。
+- [x] 所有活动、排队、设备、线缆和可拆构件均在普通路径之外；夜间静音与无屏基线保持可用。
+- [x] `PROV-KEY-003` 不被写成大钟寺站锚点；体量不被写成现状建筑；概念恢复验收不被写成批准或竣工结论。
+- [x] geometry、场景编号与 metrics 未改变；全部节点仍 G0，现场依赖值仍 unknown，现实审计/确认/批准/测试/结果仍为 0。
+- [x] 中英文 proposal、report、visual、SVG/PNG 与 A3/A0 完成同步，PDF 全页渲染无裁切、重叠、空白页或不可读字形。
+- [x] manifest 与 rights ledger 从最终 Git 字节刷新并严格等集；`not_fully_cleared`、0 独立逐文件审计和公共/专业复用 blocked 不变。
+- [x] strict 8/8、deterministic、spatial、visual、professional、self-check、T-02、双语结构和 participant preflight 全部通过。
 - [ ] 最终 PR head 的可信 `submission-validation` 为 `SUCCESS`。
 
-- [x] The taskbook's three positioning statements, five functions, and six agent tasks are traceable through prose, matrices, layers, and display artifacts; no duplicate fourth master matrix was added.
-- [x] `metrics.json` contains 75 known and 11 unknown metrics. The two additions count only three differentiated sections and twelve G0 concept states; unsupported building density, road ratio, and other formal values remain unknown.
-- [x] All 29 sources carry collection, temporal, spatial, reuse, transformation, and limitation metadata and reverse-link to schema-constrained evidence through `rights_evidence_id`; missing dates, formats, digests, or terms remain explicit unknowns, while completed freshness audits remain 0.
-- [x] Chinese and English narratives, offline reports, visual homepages, eight bilingual PNG display pairs, three bilingual SVG editable-source pairs, and A3/A0 outputs are required counterparts. The two dashboards now share the same ordered 17 sections, 16 navigation targets, eight figure roles, fourteen metric cards with identical keys/values, and `[2,3,12,3,13]` table-row contract while preserving provisional, G0, coverage-is-not-result, and uncleared-rights boundaries.
-- [x] The three-key-area evidence crosswalk represents documentation mapping only; field audits, accountable-role confirmation, approvals, test executions, and known results remain 0.
-- [x] T-02 completed one G0 synthetic governance replay: 10/10 exact decision matches, exact recovery mappings for all four distinct declared stop events, and 13/13 negative mutation controls failed closed as expected. Substantive answers, model/API/real-service calls, field tests, approvals, accountable-party confirmations, real independent retests, and G1 outcomes remain 0 or unknown.
-- [x] All 11 existing projects/pilots map to nine real-world evidence-closure categories, for 99 required evidence slots, and both proposal languages compress them into seven readable real-world handoff packs. The current state is 0 closed, 99 open, 11 NO-GO, and 0 G1 authorizations. Any open category or active stop condition overrides prior permission, so documentation completeness is not reported as readiness to proceed.
-- [x] All 12 preregistration scenes resolve to existing projects or protocols, closure records, the current phase, and spatial objects; all 99 stable artifact IDs are unique, while submitted real-world artifacts remain 0 and cross-references confer no G1 eligibility.
-- [x] The manifest has been refreshed from the current final file bytes to 70 package files and 69 non-manifest SHA-256 values. The rights ledger's five compatibility groups and 70 file-level records have the same path set; every digest matches except the explicit non-self-referential manifest and ledger cases.
-- [x] All 120 OSM elements carry `source_id`, `osm_way_id`, and attribution; the fixed query and snapshot digest remain unknown, so P0 `RIGHTS-OPEN-03` stays open.
-- [x] Overall rights remain `not_fully_cleared`, with 0 completed independent file-level clearance audits; P0 `RIGHTS-OPEN-01/02/03` remain open, and public or professional reuse remains blocked.
-- [x] Seven subclauses of announcement clause 8.1 and seven use contexts are recorded and shown readably in both proposal languages: one disclosed-review context, two confirmation-dependent contexts, and four blocked or audit-dependent contexts. Applicability confirmation for this open Agent call, written consent for entrant external display, and completed independent component audits all remain 0.
-- [x] Strict score, deterministic, spatial, visual, professional, self-check, and participant preflight all pass after final manifest and PDF bytes were installed. At the same time, `PUBLIC_OR_PROFESSIONAL_REUSE_RIGHTS` remains `unknown/major`; `RIGHTS-OPEN-01/02/03` are recorded in the manifest as release blockers, public or professional reuse remains blocked, and structural PASS must not be read as rights clearance.
+- [x] Three bilingual concept plans, relationship sections, ground-floor interfaces, four-step journeys, and four-state sets correspond exactly and do not reuse one renamed composition.
+- [x] Continuous non-AI/accessibility intent, staffed handoff, stop, detour, exit, and recovery are traceable in both human-readable drawings/prose and the machine contract.
+- [x] Activities, queues, equipment, cables, and removable components remain outside ordinary paths; night-time quiet and screen-free baselines remain available.
+- [x] `PROV-KEY-003` is not presented as a Dazhongsi-station anchor; massing is not presented as an existing building; concept restoration acceptance is not presented as approval or completion acceptance.
+- [x] Geometry, scene IDs, and metrics are unchanged; every node remains G0, field-dependent values stay unknown, and real audits/confirmations/approvals/tests/results remain 0.
+- [x] Bilingual proposals, reports, visual pages, SVG/PNG pairs, and A3/A0 outputs are synchronized, with full-page PDF renders free of clipping, overlap, blank pages, or unreadable glyphs.
+- [x] Manifest and rights ledger are refreshed from final Git bytes and remain exact path sets; `not_fully_cleared`, zero independent file-level audits, and blocked public/professional reuse are unchanged.
+- [x] Strict 8/8, deterministic, spatial, visual, professional, self-check, T-02, bilingual structure, and participant preflight all pass.
 - [ ] Trusted `submission-validation` on the final PR head reports `SUCCESS`.
 
 ## 权利证据审计 / Rights-evidence audit
@@ -204,6 +204,21 @@ git diff --check
 
 ## 当前 PDF 固定点与历史重生记录 / Current PDF fixed point and historical regeneration record
 
+V2.14 在三座换轨场的双语概念平面、关系剖面、首层界面、公共旅程与四态恢复门固定后重生四份出版物。中文/英文 A3 分别为 13/15 页，均为 297×420mm 纵向；中文/英文 A0 各 8 页，均为 1189×841mm 横向。PyMuPDF 对全部 44 页执行文本提取、页面尺寸、嵌入图像、空白页、替代字形和页面对象边界检查：四份 PDF 各含 8 个图像对象，空白页、替代字符和越界对象均为 0。四份逐页联系表与四张 1800×1100 最终重点区图件均完成视觉复查，`not_fully_cleared`、`geometry/*.geojson` 与 `self_check.json` 等关键标识可搜索且未被格式清理损坏。可重复生成测试曾捕获静态字体 `head.modified` 时间戳漂移；固定 `recalcTimestamp=False` 后，400/700 字重和四份最终 PDF 均在两个新进程中逐文件字节一致。以下固定点只证明出版物身份与版面检查，不证明现场执行、场地批准、G1 授权、专业合规或权利清除。
+
+V2.14 regenerated all four publications after the bilingual switchyard concept plans, relationship sections, ground-floor interfaces, public journeys, and four-state recovery gates were fixed. The Chinese and English A3 booklets are 13/15 pages at 297 × 420 mm portrait; each A0 set is eight pages at 1189 × 841 mm landscape. PyMuPDF checked searchable text, page size, embedded images, blank pages, replacement glyphs, and object bounds across all 44 pages: each PDF contains eight image objects, with zero blank pages, replacement characters, or out-of-page objects. All four page contact sheets and the four final 1800 × 1100 key-area figures received visual review; critical identifiers including `not_fully_cleared`, `geometry/*.geojson`, and `self_check.json` remain searchable and intact after Markdown cleanup. Reproducibility testing first caught drift in the static fonts' `head.modified` timestamps; after setting `recalcTimestamp=False`, the 400/700 instances and all four final PDFs were byte-identical across two fresh processes. This fixed point proves only publication identity and layout QA—not field execution, site approval, G1 authorization, professional compliance, or rights clearance.
+
+| PDF | Pages / format | SHA-256 |
+|---|---|---|
+| `drawings/a3-booklet.pdf` | 13 / A3 portrait | `33adf144a2ac8e1e4cd990092c32368df46f91600b9d52a0062c90085fc87cce` |
+| `drawings/a3-booklet.en.pdf` | 15 / A3 portrait | `12d2c31237e550c4bed90026d145f7659a23e744f6f2967d303cd1c658af1b42` |
+| `drawings/a0-boards.pdf` | 8 / A0 landscape | `256aa29b0fb218f2a1354eb76c6e898a5b514cd327ad4cff2404426b5afc26a1` |
+| `drawings/a0-boards.en.pdf` | 8 / A0 landscape | `cc56d5ccb8730d0dde63d6d9f950d3ba0f5e1819dfdb36020de0a574f556d958` |
+
+本固定点的重生环境为 Python 3.13.12、ReportLab 5.0.0、fontTools 4.63.0、PyMuPDF 1.27.2.3 与 Pillow 12.2.0；本机 `NotoSansSC-VF.ttf` 在内存中以 400/700 字重实例化，关闭时间戳重算并以 `reorderTables=False` 保存临时字体。A3 固定宽度嵌入八组完整图件，A0 固定为双轨总体、用地、重点区、重点区剖面、公共连接、指标、治理内核、阶段恢复顺序。投稿包不分发源字体，四份 PDF 继续受总体权利门约束。
+
+Reproduction basis for this fixed point: Python 3.13.12, ReportLab 5.0.0, fontTools 4.63.0, PyMuPDF 1.27.2.3, and Pillow 12.2.0. The local `NotoSansSC-VF.ttf` source was instantiated in memory at weights 400/700, timestamp recalculation was disabled, and temporary fonts were saved with `reorderTables=False`. A3 uses fixed-width full-figure placement; A0 uses the order site overview, land use, key areas, key-area sections, mobility, metrics, innovation, and implementation. No source font is shipped, and all four PDFs remain inside the package-wide rights gate.
+
 V2.13 在双轨前台增量、最终双语正文、HTML 与双语 `site-overview` 图件完成后重生四份出版物。当前中文/英文 A3 分别为 11/12 页，均为 297×420mm 纵向；中文/英文 A0 各 8 页，均为 1189×841mm 横向。PyMuPDF 已对四份 PDF 全页执行文本提取、页面尺寸和嵌入图像计数，并以 0.20 倍矩阵逐页渲染；四份页面均有可搜索正文，A3 各含 8 个图像对象，A0 各含 8 个整板图像对象。针对首屏、双轨图件所在页和 A0 首板的 1.20 倍视觉抽查未见裁切或越界；双轨总体图位于 A0 首板，A3 中英文均可回查双轨正文与图件。以下字节身份对应本轮最终 PDF，不证明现场执行、审批、G1 授权或权利清除。
 
 V2.13 regenerated all four publications after the twin-track frontend increment, final bilingual narratives, HTML, and bilingual `site-overview` figures were complete. The Chinese and English A3 booklets are 11/12 pages at 297 x 420 mm portrait; each A0 set is eight pages at 1189 x 841 mm landscape. PyMuPDF ran full-page text extraction, page-size checks, embedded-image counts, and a 0.20-scale render over all four PDFs; every page has searchable text, each A3 contains eight image objects, and each A0 contains eight whole-board image objects. Targeted 1.20-scale visual checks of the first pages, twin-track figure pages, and A0 first boards found no clipping or overflow in the inspected pages; the twin-track overview is the first A0 board, and both A3 languages contain the twin-track narrative and figure. The byte identities below are publication evidence only and do not prove field execution, approval, G1 authorization, or rights clearance.
@@ -215,7 +230,7 @@ V2.13 regenerated all four publications after the twin-track frontend increment,
 | `drawings/a0-boards.pdf` | 8 / A0 landscape | `b0da4c89620d9e0bfbe6b74f2b23b78a5b316a4539b989a8875eb8f0f6665690` |
 | `drawings/a0-boards.en.pdf` | 8 / A0 landscape | `3e1ca93e8f9b2fe04cda8789b32a24dc870de011d318843274db1ad4310eb806` |
 
-Reproduction basis for this fixed point: Python 3.13.12, ReportLab 5.0.0, fontTools 4.63.0, PyMuPDF 1.27.2.3, Pillow 12.2.0, and the local `NotoSansSC-VF.ttf` source instantiated at weights 400/700 in memory. A3 uses fixed-width full-figure placement; A0 uses the order site overview, land use, key areas, key-area sections, mobility, metrics, innovation, and implementation. All four PDFs retain the package rights boundary and no source font binary is shipped.
+该历史固定点的重生环境为 Python 3.13.12、ReportLab 5.0.0、fontTools 4.63.0、PyMuPDF 1.27.2.3、Pillow 12.2.0，以及在内存中以 400/700 字重实例化的本机 `NotoSansSC-VF.ttf`。A3 采用固定宽度完整图件，A0 顺序为双轨总体、用地、重点区、重点区剖面、公共连接、指标、治理内核和阶段恢复。四份 PDF 保持包级权利边界，且不分发源字体文件。
 
 Reproduction basis for this fixed point: Python 3.13.12, ReportLab 5.0.0, fontTools 4.63.0, PyMuPDF 1.27.2.3, Pillow 12.2.0, and the local `NotoSansSC-VF.ttf` source instantiated at weights 400/700 in memory. A3 uses fixed-width full-figure placement; A0 uses the order site overview, land use, key areas, key-area sections, mobility, metrics, innovation, and implementation. All four PDFs retain the package rights boundary and no source font binary is shipped.
 
