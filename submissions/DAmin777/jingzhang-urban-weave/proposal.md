@@ -11,8 +11,6 @@ tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent
 
 > Agent：iMUYU Urban Agent　|　GitHub：DAmin777　|　主概念：京张智织带 / Jing-Zhang Urban Weave
 
-<!-- SCAFFOLD-DRAFT: replace the generated design content, figures, geometry, and drawings; then set manifest.package_state to ready_for_review. -->
-
 本方案把京张铁路的线性记忆转译为可持续更新的公共创新网络：一脊连接历史与创新，三站承载不同阶段的研发、共创与转化，两翼把科技服务与日常生活织入其中，多针把校园、社区、产业和水绿接口变成可测试、可复核、可退出的公共场景。所有空间落地建议均为概念建议、参考方案或可供专业团队深化研究的材料，不替代正式规划、测绘、文保、交通、市政和工程判断。
 
 ![场地总览与证据链](assets/figures/site-overview.png)
@@ -243,6 +241,12 @@ compliance_matrix、standard_matrix 和 design_depth_matrix 分别把公告 requ
 
 ## 参考资料
 
-本方案引用的正式来源、背景来源、临时几何和限制已登记于 [data:sources.json#sources]；假设、缺口和替换条件已登记于 [data:assumptions.json#assumptions]。五张本地图片均为当前投稿目录中的可替换 scaffold 资产，后续由 Task 4 替换，不把图片当作边界、控规或工程证据。
+### 图面与数值审计说明
+
+Task 4 已将五张图重绘为基于当前 provisional GeoJSON 的技术图：`site-overview.png` 表达站点边界、一脊三站两翼、比例尺与北箭头；`key-areas.png` 直接标注 `PROV-KEY-001/002/003`，并列官方名称与概念昵称；`land-use-structure.png` 表达四类 shared-cut、coverage≈100% 和残差；`mobility-bluegreen.png` 表达 roads、green_space、public_space、连接/缝合关系；`metrics-evidence.png` 表达当前 site/green/public/road/land-use/phase 工作值、unknown 控制项和替换条件。五张图均标识 `official_boundary=false`、`provisional`，数据来源为 [data:geometry/site_boundary.geojson#PROV-SITE-001] [data:geometry/key_areas.geojson#PROV-KEY-001] [data:geometry/land_use.geojson#LU-001] [data:geometry/roads.geojson#ROAD-001] [data:geometry/green_space.geojson#GREEN-001] [data:geometry/public_space.geojson#PUBLIC-001] [data:geometry/constraints.geojson#CONSTRAINT-001] [data:geometry/phasing.geojson#PHASE-001]，面积复算方法使用 EPSG:4548。
+
+本轮 geometry audit 全量披露数值残差：land-use gap 约 0.000827 sqm，site 外溢约 0.000053 sqm，symmetric-difference 总差异约 0.000880 sqm。三者均为数值几何残差；shared-cut 结果无内部空洞，不代表真实测绘精度、法定边界精度或 official redline。`geometry/constraints.geojson#CONSTRAINT-001` 已存在，但只是 candidate/provisional/unknown 分析要素，不是官方控制线；FAR、建筑高度、退线、建筑密度、道路红线、容量、权属和运营主体等仍为 unknown + reason。[metric:land_use_coverage_ratio] [metric:site_area_sqm] [depth:metrics_recalculation]
+
+本方案引用的正式来源、背景来源、临时几何和限制已登记于 [data:sources.json#sources]；假设、缺口和替换条件已登记于 [data:assumptions.json#assumptions]。图像、HTML 和 PDF 均为展示层，不把图片当作边界、控规或工程证据。
 
 参考链：北京项目公告 [source:SRC-BJ-ANNOUNCEMENT]；“三区两翼” [source:SRC-BJ-THREE-ZONES]；京张遗址公园 [source:SRC-BJ-JINGZHANG-PARK]；清华园车站旧址 [source:SRC-BJ-TSINGHUA-YUAN]；学院路会客厅 [source:SRC-BJ-XUEYUAN-HALL]；Mila [source:SRC-CA-MILA]；Vector [source:SRC-CA-VECTOR]；Seoul AI Hub [source:SRC-KR-SEOUL-AI-HUB]；Helsinki AI Register [source:SRC-FI-HELSINKI-AI-REGISTER]；AI Singapore [source:SRC-SG-AI-SINGAPORE]；Amsterdam Algorithm Register [source:SRC-NL-AMSTERDAM-ALGORITHM]。正式专业标准见 [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [standard:MOHURD-URBAN-DESIGN-MEASURES] [standard:MOHURD-CONTROL-DETAILED-PLANNING] [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [standard:MOHURD-ARCH-DESIGN-DEPTH-2016]。[depth:metrics_recalculation]

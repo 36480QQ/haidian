@@ -26,7 +26,14 @@
         "A-PROVISIONAL-SITE-001",
         "A-OFFICIAL-POLYGON-MISSING-001"
       ],
-      "note": "官方边界未提供；当前使用 provisional boundary，数值仅用于方案推演"
+      "note": "官方边界未提供；当前使用 provisional boundary，数值仅用于方案推演",
+      "audit": {
+        "site_outside_residual_sqm": 0.000053,
+        "symmetric_difference_sqm": 0.00088,
+        "internal_holes_sqm": 0.0,
+        "residual_semantics": "numeric geometry residuals only; no internal holes; not survey-level exact or official redline",
+        "crs_for_recalculation": "EPSG:4548"
+      }
     },
     "land_use_total_area_sqm": {
       "status": "not_applicable",
@@ -52,13 +59,15 @@
         "A-OFFICIAL-POLYGON-MISSING-001",
         "A-PLANNING-CONTROLS-001"
       ],
-      "note": "官方边界未提供；当前使用 provisional boundary，数值仅用于方案推演；shared-cut 产生约 0.000827 sqm 边缘 residual，无内部空洞；不声称 survey-level exact。",
+      "note": "官方边界未提供；当前使用 provisional boundary，数值仅用于方案推演；shared-cut 产生约 0.000827 sqm land-use gap，site 外溢约 0.000053 sqm，symmetric-difference 约 0.000880 sqm；均为数值几何残差，无内部空洞，不声称 survey-level exact。",
       "status_note": "仅保留 provisional geometry QA 数值；未作为 proposal 中的正式指标引用。",
       "audit": {
         "method": "shared_cut_residual_difference",
         "edge_residual_sqm": 0.000827,
+        "site_outside_residual_sqm": 0.000053,
+        "symmetric_difference_sqm": 0.00088,
         "internal_holes_sqm": 0.0,
-        "coverage_statement": "coverage≈1.0; not survey-level exact",
+        "coverage_statement": "coverage≈1.0; residuals are numeric geometry signals only; not survey-level exact",
         "survey_level_exact": false,
         "crs_for_recalculation": "EPSG:4548"
       }
@@ -88,13 +97,15 @@
         "A-OFFICIAL-POLYGON-MISSING-001",
         "A-PLANNING-CONTROLS-001"
       ],
-      "note": "官方边界未提供；当前使用 provisional boundary，数值仅用于方案推演；coverage≈1.0，边缘 residual 约 0.000827 sqm，无内部空洞；不声称 survey-level exact。",
+      "note": "官方边界未提供；当前使用 provisional boundary，数值仅用于方案推演；coverage≈1.0；land-use gap 约 0.000827 sqm、site 外溢约 0.000053 sqm、symmetric-difference 约 0.000880 sqm 均为数值几何残差，无内部空洞，不声称 survey-level exact。",
       "status_note": "仅保留 provisional geometry QA 数值；未作为 proposal 中的正式指标引用。",
       "audit": {
         "method": "shared_cut_residual_difference",
         "edge_residual_sqm": 0.000827,
+        "site_outside_residual_sqm": 0.000053,
+        "symmetric_difference_sqm": 0.00088,
         "internal_holes_sqm": 0.0,
-        "coverage_statement": "coverage≈1.0; not survey-level exact",
+        "coverage_statement": "coverage≈1.0; residuals are numeric geometry signals only; not survey-level exact",
         "survey_level_exact": false,
         "crs_for_recalculation": "EPSG:4548"
       }
