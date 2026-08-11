@@ -91,11 +91,83 @@ Detailed design for the three key areas must reference [data:geometry/key_areas.
 
 The three key areas must appear in `geometry/key_areas.geojson`. If the repository has provided official polygons, they should be used as `official_constraint`; if official polygons are missing, `provisional_constraint` may be used temporarily, but the narrative, HTML, sources, assumptions, and self_check must state that they cannot serve as formal scoring or approval basis. `compliance_matrix.json` should cover announcement sections 1.5.3.1, 1.5.3.2, and 1.5.3.3 respectively. Design expression should include functional formats, building scale, building form, retain/renovate/demolish classification, public-space system, transport organization, slow-mobility connectivity, and implementation projects. The HTML page should allow switching between the three key areas, and the A3 booklet and A0 boards should include at least the key-area master plan, local detail drawings, and metric annotations.
 
-| Key area | Design positioning | Spatial moves | AI industry and operation scenarios | Evidence reference |
-| --- | --- | --- | --- | --- |
-| 众智园 AI Independent Innovation Acceleration Area | Garden-style full-stack independent innovation district | Strengthen the Qinghe River interface, industry exhibition, low-carbon innovation interaction, and external transport organization; use green space to host open testing and security-governance display | Independent model testing, standard-setting workshops, security governance showcase, low-carbon computing experience | [data:geometry/key_areas.geojson#PROV-KEY-001], [depth:three_key_area_detailed_design] |
-| Beijing AI Origin Community | University-adjacent achievement transformation and talent community | Organize slow-mobility stitching of campuses, parks, and neighborhoods; provide achievement release, talent services, residential living, and open-source collaboration space | Open-source community, achievement release, talent-zone services, university-adjacent incubation | [data:geometry/key_areas.geojson#PROV-KEY-002], [source:AGENT-TASKBOOK] |
-| 大钟寺 AI Industry Cluster | Urban smart economy and international exchange district | Focus on Dazhongsi Station TOD integration, four-quadrant pedestrian connectivity, commercial services, and public-environment renewal around key enterprises | Intelligent agent and smart terminal display, content consumption, data factors, and international roadshows | [data:geometry/key_areas.geojson#PROV-KEY-003], [metric:key_area_count] |
+### Zhongzhiyuan AI Acceleration Area (192.92 ha)
+
+**Design positioning**: Garden-style full-stack independent innovation district, anchored by national AI platforms, building the chip—framework—platform—application innovation chain.
+
+**Buildings & program mix**: ~80-100 buildings, with AI R&D office (60%), pilot laboratories (15%), industry exhibition & exchange (10%), and supporting commercial & services (15%). 2-3 signature R&D headquarters along the Qinghe River frontage, height 60-80m; inner blocks dominated by 4-6 story low-rise garden-style R&D buildings. Retain (~35%), renovate (~40%), new build (~25%).
+
+**Public space & blue-green system**: "Qinghe Innovation Corridor" — 1.5km continuous slow-mobility waterfront + industry exhibition nodes + ecological rain gardens. Core green axis extends south from Qinghe River, connecting the low-carbon innovation plaza, AI testing garden, and standards governance zone. Target green ratio ≥ 40%.
+
+**Transport & slow mobility**: Main vehicle entrances on the north and west arterials; internal slow-mobility priority shared streets. 2 transit/rail feeder points, internal slow-mobility coverage ≥ 90%. External connection via northern expressway to Shangdi, Xierqi tech parks.
+
+**AI scenarios**:
+- Independent model testing ground (west of core green axis, ~12,000 m²)
+- Standards & security governance workshop (central exhibition center)
+- Low-carbon computing experience pavilion (Qinghe River frontage)
+- Innovation achievement exhibition hall (main entrance plaza)
+
+**Implementation projects**:
+| Project | Scale | Phase | Dependencies |
+| --- | --- | --- | --- |
+| Qinghe Innovation Corridor | 1.5km | I 2026-2028 | River blue line, flood control |
+| Model testing ground | 12,000 m² | I 2026-2028 | Land use confirmation |
+| Low-carbon computing pavilion | 5,000 m² | II 2028-2030 | Energy & compute access |
+| Standards governance center | 8,000 m² | II 2028-2030 | Operator identification |
+
+Evidence: [data:geometry/key_areas.geojson#PROV-KEY-001], [data:geometry/buildings.geojson#BLDG-001], [depth:three_key_area_detailed_design]
+
+### Beijing AI Origin Community (104.32 ha)
+
+**Design positioning**: University-adjacent achievement transformation and talent community, building a "university sourcing—open-source collaboration—achievement transformation—talent services" closed loop.
+
+**Buildings & program mix**: ~40-50 buildings, with achievement incubation office (45%), talent housing (25%), open-source collaboration & exhibition (15%), and supporting services (15%). Low-rise 3-5 story buildings near the university edge; 6-8 story mixed-use along main roads with ground-floor retail. Retain (~50%), renovate (~30%), new build (~20%).
+
+**Public space & blue-green system**: "Origin Square" — the core public space at the community center, facing the open-source release hall and achievement exhibition center, capacity 500+ people. "Knowledge Sharing Corridor" — 800m along the campus-community boundary, connecting campus entrances, incubators, talent apartments, and community services. Target green ratio ≥ 35%, primarily pocket parks and linear green spaces.
+
+**Transport & slow mobility**: 3 campus-park slow-mobility connection corridors, achieving 15-min walking accessibility. Rail station TOD: shuttle bus and bike-sharing hub at the nearest station, community interior pedestrian-only. TOD mixed-use within 200m of the station, ground-floor public functions.
+
+**AI scenarios**:
+- Open-source community release hall (north of Origin Square, supporting live-streaming + in-person)
+- Achievement incubation gallery (along Knowledge Sharing Corridor)
+- Talent zone service center (community center, integrating talent policy, housing, and education services)
+- Nighttime collaboration space (24h, for open-source developers)
+
+**Implementation projects**:
+| Project | Scale | Phase | Dependencies |
+| --- | --- | --- | --- |
+| Origin Square & release hall | 3,000 m² | I 2026-2028 | Land consolidation, university coordination |
+| Knowledge Sharing Corridor | 800m | I 2026-2028 | Campus boundary, road right-of-way |
+| Campus-park slow-mobility corridors | 3 crossings | I 2026-2028 | University coordination, traffic review |
+| Talent apartment renovation | ~20,000 m² | II 2028-2030 | Property rights, residential standards |
+
+Evidence: [data:geometry/key_areas.geojson#PROV-KEY-002], [data:geometry/roads.geojson#ROAD-001], [source:AGENT-TASKBOOK]
+
+### Dazhongsi AI Industry Cluster (72.05 ha)
+
+**Design positioning**: Urban smart economy and international exchange district, with leading enterprises as the engine, creating a hub for intelligent agents, smart terminals, data factors, and content consumption.
+
+**Buildings & program mix**: ~30-40 buildings, with HQ offices (50%), agent & terminal exhibition (20%), commercial services & culture (20%), and data factor & digital asset services (10%). TOD high-density development within 200m of Dazhongsi Station, building height 80-100m; outer areas transition to 6-8 story mixed-use. Preserve the Dazhongsi heritage building and surrounding character area (~15%), renovate (~35%), new build (~50%).
+
+**Public space & blue-green system**: "Four-Quadrant Pedestrian Connectivity System" — centered on the rail station, connecting four quadrants via underground passages and ground-level greenways. Planned green space composite use: integrating street-side green buffers with commercial outdoor seating, cultural displays, and tech experience zones. Target green ratio ≥ 30%, emphasizing vertical greening and rooftop gardens in the high-density urban context.
+
+**Transport & slow mobility**: Dazhongsi Station TOD — station exits directly connect to underground levels of each block, achieving complete pedestrian-vehicle separation. Slow-mobility priority traffic signals and raised crosswalks at the four-quadrant intersection. 2 bike-sharing hubs and 1 taxi/ride-hailing drop-off zone.
+
+**AI scenarios**:
+- Intelligent agent interoperability test field (four-quadrant connection level, cross-vendor collaboration testing)
+- Data factor salon (SW quadrant, compliant data circulation and digital asset display)
+- International roadshow center (NE quadrant, for the global AI community)
+- AI+ consumer experience street (SE quadrant, featuring smart terminals and content consumption)
+
+**Implementation projects**:
+| Project | Scale | Phase | Dependencies |
+| --- | --- | --- | --- |
+| Dazhongsi Station TOD | 200m radius | I 2026-2028 | Rail station, property rights, traffic review |
+| Four-quadrant pedestrian system | 4 crossings | I 2026-2028 | Road right-of-way, underground utilities, municipal coordination |
+| Agent interoperability test field | 2,000 m² | II 2028-2030 | Operator, data security protocols |
+| International roadshow center | 5,000 m² | II 2028-2030 | Operator confirmed, brand rights clearance |
+
+Evidence: [data:geometry/key_areas.geojson#PROV-KEY-003], [data:geometry/public_space.geojson#PUBLIC-001], [metric:key_area_count]
 
 ## AI Innovation Ecosystem, Talent Profile, and AI+ Scenarios
 
@@ -129,7 +201,24 @@ AI governance recommendations generated by the agent must follow the principles 
 ### Agent Task Responses
 
 **Agent.1 — Naming and Brand Identity System**
-The proposal is named "京张智脉·光晕 / Jing-Zhang AI Heritage Halo." The visual identity system uses the "twin track" as the core symbol—two parallel lines representing history and the future, converging at the three "halo" nodes to form a "one belt, three cores" brand architecture. The naming system corresponds to the three major positioning statements of "Centennial Jing-Zhang Cultural Belt, Urban AI Lifestyle Experience Belt, and AI Integration Innovation Belt." The logo design suggests blending the "∞" (infinity symbol) with the form of railway tracks, symbolizing the infinite connection between history and the future.
+
+The proposal is named "京张智脉·光晕 / Jing-Zhang AI Heritage Halo." The visual identity system uses the "twin track" as the core symbol—two parallel lines representing history and the future, converging at the three "halo" nodes to form a "one belt, three cores" brand architecture. The naming system corresponds to the three major positioning statements of "Centennial Jing-Zhang Cultural Belt, Urban AI Lifestyle Experience Belt, and AI Integration Innovation Belt."
+
+**Logo Design (rendered)**: An actual logo file has been generated at `assets/logo.svg` (scalable vector) and `assets/logo.png` (bitmap preview). The logo blends the "∞" (infinity symbol) with the form of railway tracks. The dual-track lines represent the parallel evolution of history and the future. Three colored halo nodes correspond to the three key areas:
+
+| Element | Color | Meaning |
+| --- | --- | --- |
+| Main axis | #1a5276 Deep Blue | Centennial Jing-Zhang heritage |
+| Innovation Orange | #e07a5f | Zhongzhi Park · AI acceleration |
+| Talent Blue | #3b82c4 | AI Origin · Talent ecosystem |
+| Industry Green | #5fae6f | Dazhongsi · Industry cluster |
+
+**VI Application Guidelines**:
+- Brand typeface: Sans-serif (Chinese: Source Han Sans / WenQuanYi; English: Helvetica / Inter)
+- Core symbol: Twin-track ∞ mark, usable standalone or with text
+- Secondary graphics: Three parallel arcs (representing the "three belts"), halo diffusion rings (representing node radiation)
+- Wayfinding: ∞ symbol as the base element for signage, integrated into road signs, slow-mobility guides, building entry markers, and information kiosks
+- Color accessibility: Information conveyance does not rely on color alone
 
 **Agent.2 — AI Full-Stack Independent Innovation System and World-Class AI Innovation Ecosystem (5–8 AI Ecosystem Cases)**
 1. Independent large-model training and evaluation platform (Zhongzhi Park)
