@@ -35,7 +35,7 @@
     },
     "green_ratio": {
       "status": "known",
-      "value": 0.277,
+      "value": 0.284,
       "unit": "ratio",
       "source_files": [
         "geometry/green_space.geojson"
@@ -45,7 +45,7 @@
       "assumptions": [
         "A-BOUNDARY-001"
       ],
-      "note": "After spatial fix: heritage park (148 ha) + Qinghe (42 ha) + Xiaoyuehe + pocket parks = 316.8 ha. Includes rail corridor buffer green."
+      "note": "Geometry-computed via EPSG:4548. Heritage park (148 ha) + Qinghe (42 ha) + Xiaoyuehe + pocket parks + rail corridor buffer green = 323.6 ha."
     },
     "public_space_ratio": {
       "status": "known",
@@ -163,6 +163,5 @@
       ],
       "note": "Conceptual road network."
     }
-  },
-  "building_footprint_area_sqm": 396211.65
+  }
 }

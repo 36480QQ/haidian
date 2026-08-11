@@ -236,9 +236,9 @@ Annual events: Global AI Developer Conference, AI City Experience Week, Open Sou
 |--------|-------|------|
 | Site area | 11.4 km² | Provisional boundary |
 | Key areas | 3 | Zhongzhiyuan, Origin, Dazhongsi |
-| Green ratio | ~14% | Heritage Park + Qinghe + Xiaoyuehe |
-| Public space ratio | ~7.3% | Plazas, living rooms, event nodes |
-| Building footprint | ~310,000 m² | Conceptual layout |
+| Green ratio | ~28.4% | Heritage Park + Qinghe + Xiaoyuehe + rail corridor green |
+| Public space ratio | ~1.0% | Plazas, living rooms, event nodes |
+| Building footprint | ~232,400 m² | Geometry-computed via EPSG:4548 |
 | AI scenario cards | 12 | 4 industry-testing |
 | User personas | 5 | Developers, startups, enterprises, residents, academia |
 | AI landmarks | 3 | Monument, Light, Smart Ring |
