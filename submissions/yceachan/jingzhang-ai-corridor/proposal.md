@@ -22,6 +22,7 @@ iteration: "v0.3"
 
 方案的全部结构化证据（来源、假设、指标、几何、合规、标准、设计深度）保存在 `sources.json`、`assumptions.json`、`metrics.json`、`geometry/*.geojson` 与三个矩阵文件中；正文仅在关键判断处放置少量可校验引用，供人工评审从叙述进入证据 [source:SITE-PACKAGE]。
 
+
 ![资料证据链与提交包关系图](assets/figures/site-overview.png)
 
 ## 三层范围工作框架
