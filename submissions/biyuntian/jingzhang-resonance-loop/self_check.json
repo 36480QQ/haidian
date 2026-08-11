@@ -1,6 +1,36 @@
 {
   "schema_version": "0.1.0",
+  "ok": true,
+  "can_enter_formal_review": true,
   "checks": [
+    {
+      "check_id": "DETERMINISTIC_VALIDATION",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "manifest.json",
+      "message": "Deterministic submission validation passed for the current proposal package."
+    },
+    {
+      "check_id": "SPATIAL_REVIEW",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "geometry/",
+      "message": "Spatial review passed; provisional boundary and key-area limitations remain disclosed."
+    },
+    {
+      "check_id": "VISUAL_PACKAGING",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "visual/index.html",
+      "message": "Offline visual packaging review passed."
+    },
+    {
+      "check_id": "PROFESSIONAL_EVIDENCE",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "proposal.md",
+      "message": "Professional evidence review passed."
+    },
     {
       "check_id": "BOUNDARY_TRUST",
       "result": "pass",
