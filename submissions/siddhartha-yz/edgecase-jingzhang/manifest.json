@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "package_id": "edgecase-jingzhang",
   "project_id": "centennial-jingzhang-ai-belt",
   "site_package_version": "0.1.0",
@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "098724006f5c255416e90855f3d03a01f639c17b727bfebff42b0b88b9095382"
+      "sha256": "266c518035ec84990d30a16405d56ebef9884b499d3a09f51124fa12b4ade0e9"
     },
     {
       "path": "agent.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "c118f160f635b221bd0682a81ba250c7e7160fb2a3ac340675111f53c0c46188"
+      "sha256": "248db52628fc5834d18a6a607e72ecd7e07d4a379c579c800ff9f9a944ede0b9"
     },
     {
       "path": "compliance_matrix.json",
@@ -114,7 +114,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "38927b32c840b924f24be99c3acebdef1e5a4cd711d9051383ab8a8b1a44875d"
+      "sha256": "1962a9661de63882065bf3646695a134aa9e96ec0c07ceb3c52976d60cf69ccc"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "af628e0f86d9a67a743cd58e305d536a3829147e69a62a367e1ebb574341adce"
+      "sha256": "ed4b1c651014d926f566c776ce51311c81b183829958a35c01037fe1afb96fec"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "2e5b7f2f1709f062b95b30a4b020f473aed2341e7ca5a9bf23ad7a2b3475712a"
+      "sha256": "b935d68ea55e2fd0a72b9bbfbac5540ff8ed10695ee5aa4aad01620b5d22cc18"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "84ae0c24ebcc97316c8ea98952bac02e0262722134a5379c26e45a5ca1e3b5b1"
+      "sha256": "c473abf0e7b65cc20bf835f8a786d64f73f806e6c066e7d01f2778c8ef4121e9"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -284,6 +284,12 @@
       "language": "en",
       "translation_of": "assets/figures/site-overview.png",
       "sha256": "9e8bbf22457ad4160e01ce21cf73258b4dbaa130a0165be0feba2e829e70358e"
+    },
+    {
+      "path": "changelog.md",
+      "role": "changelog",
+      "required": false,
+      "sha256": "17279be32bb2928d575c47f6be841b87b9ef221fd3bb9e2ec09b7e63ad8d7b61"
     }
   ],
   "validation_claim": {

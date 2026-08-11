@@ -385,6 +385,22 @@ The human journey makes maintenance workers, cleaners, staffed service workers, 
 
 ![Maintenance urbanism: issue shells, visible human labour, existing-facility-first action, recheck decisions, repeated-failure siding, and restoration of the ordinary baseline (concept contract; real work orders: 0)](assets/figures/implementation-roadmap.en.png)
 
+### AI urban metabolism: twelve scenes, seven resources, complete exit
+
+This round still adds no scene, project, geometry, or maturity. It creates twelve G0 resource passports for the existing `SCENE-001`—`012`. Each passport records seven resources together: compute; energy; equipment and materials; data; human review; vendor dependency; and failure/exit cost. The boundary extends beyond the server to edge and network, public or personal end devices, sensing/display/fixings, staffed and non-AI baselines, and place accessibility, quiet, and restoration. **Complete fields prove design coverage only; they do not prove energy saving, carbon reduction, low cost, procurement, or operation** [data:visual/assets/urban-metabolism-ledger.json#resource_dimensions] [metric:urban_metabolism_scene_resource_passport_count].
+
+| Key area | Four existing scenes | Metabolic burdens that must remain visible | First exit questions |
+|---|---|---|---|
+| Zhongzhiyuan | `SCENE-001`—`004` | Mobile equipment and batteries, edge/network, incident material, human takeover, and long-lived archives | How are devices isolated, repaired, returned, or recycled; what minimum incident record remains; how is the continuous bypass restored? |
+| Origin Community | `SCENE-005`—`008` | Media/source rights, shared devices, consent and withdrawal, safeguarding/curation/co-testing labour, quiet clearance | How are records withdrawn or deleted; how does event kit leave; how do the two courts and daily street return first to resident use? |
+| Dazhongsi | `SCENE-009`—`012` | Route and authoritative-source updates, sensors/terminals, prohibited sensitive inference, staffed desk, four-way commuting | How does the automated layer go offline; how are records exported and corrected; how do same-task staffed service and four-way walking remain? |
+
+Any intensity or “greener” comparison first requires a public-readable task denominator, ordinary non-AI comparison, included whole-system components, time window, completion/abandonment rule, and group disaggregation where rights may differ. The current count of valid project denominators is 0. Energy, compute, human minutes, and equipment life are `not_measured`; vendor, equipment-lifecycle, and responsibility acceptance are `external_confirmation_required`; data and rights remain `not_fully_cleared`. Industry averages, nameplates, vendor material, simulation values, and sensor counts cannot substitute for project measurement [data:visual/assets/urban-metabolism-ledger.json#denominator_contract] [metric:urban_metabolism_measured_energy_scene_count] [metric:urban_metabolism_confirmed_vendor_scene_count] [assumption:A-URBAN-METABOLISM-014].
+
+Exit means more than “switch off.” Every component needs a destination: retain an existing facility; repair/reuse on site; redeploy elsewhere; return to supplier; compliant recycling or disposal; data export—deletion—minimum-log closure; and restoration of the ordinary place plus same-task staffed/non-AI service after cables, fixings, signs, queues, and temporary equipment leave. If denominator, source, responsibility, vendor export/repair terms, component destination, ordinary path, or independent retest is open, the decision remains `NO-GO / G0`. Even a future test `PASS` is not deployment authorization, site approval, procurement approval, rights clearance, or environmental benefit [data:visual/assets/urban-metabolism-ledger.json#public_decision_gate].
+
+![Jing-Zhang AI urban metabolism ledger: whole-system boundary, twelve scenes in three places, seven resources, exit destinations, and explicit unknowns (G0; measured energy/compute/human minutes = 0 scenes)](assets/figures/urban-metabolism-ledger.en.png)
+
 Eight projects form a renewal package that maps space, protocols, and operations one to one [depth:renewal_project_list]:
 
 | Project | Main content and Feature | Prerequisites | Proposed responsibility combination | Conceptual acceptance |

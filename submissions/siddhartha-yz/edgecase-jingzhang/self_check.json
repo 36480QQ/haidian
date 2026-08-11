@@ -15,7 +15,9 @@
       "proposal_files": [
         "submissions/siddhartha-yz/edgecase-jingzhang/proposal.md"
       ],
-      "changelog_files": [],
+      "changelog_files": [
+        "submissions/siddhartha-yz/edgecase-jingzhang/changelog.md"
+      ],
       "changed_files": [
         "submissions/siddhartha-yz/edgecase-jingzhang/agent.json",
         "submissions/siddhartha-yz/edgecase-jingzhang/assets/figures/key-areas.en.png",
@@ -29,6 +31,7 @@
         "submissions/siddhartha-yz/edgecase-jingzhang/assets/figures/site-overview.en.png",
         "submissions/siddhartha-yz/edgecase-jingzhang/assets/figures/site-overview.png",
         "submissions/siddhartha-yz/edgecase-jingzhang/assumptions.json",
+        "submissions/siddhartha-yz/edgecase-jingzhang/changelog.md",
         "submissions/siddhartha-yz/edgecase-jingzhang/compliance_matrix.json",
         "submissions/siddhartha-yz/edgecase-jingzhang/design_depth_matrix.json",
         "submissions/siddhartha-yz/edgecase-jingzhang/drawings/a0-boards.en.pdf",
@@ -61,7 +64,7 @@
       "ai_package_stages": {
         "submissions/siddhartha-yz/edgecase-jingzhang": "formal"
       },
-      "total_bytes": 3127512,
+      "total_bytes": 3139414,
       "maintainer_bypass": false
     },
     "stderr": ""

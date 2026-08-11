@@ -169,7 +169,7 @@
     </header>
     <main>
       <nav>
-        <a href="#twin-track">双轨总纲</a><a href="#non-ai-first">非 AI 优先</a><a href="#maintenance">维护闭环</a><a href="#first-test">首测协议</a
+        <a href="#twin-track">双轨总纲</a><a href="#non-ai-first">非 AI 优先</a><a href="#maintenance">维护闭环</a><a href="#metabolism">城市代谢</a><a href="#first-test">首测协议</a
         ><a href="#baseline">现实基线</a><a href="#overview">总体结构</a
         ><a href="#system">后台 JZ-AIOS</a
         ><a href="#scope">三层范围</a><a href="#areas">重点区域</a
@@ -278,6 +278,28 @@
         <p>
           机器可审计入口：<a href="assets/key-area-evidence-matrix.json#maintenance_urbanism_contract"><code>visual/assets/key-area-evidence-matrix.json#maintenance_urbanism_contract</code></a>。该合同只组织既有 12 个场景和八个项目，不新增场景、几何、成熟度、批准、人员或现实服务。
         </p>
+      </section>
+      <section id="metabolism" aria-labelledby="metabolism-title">
+        <h2 id="metabolism-title">AI 城市代谢账本：先看完整负担，再谈“更绿色”</h2>
+        <div class="notice">
+          <strong>字段覆盖不是环境成绩：</strong>
+          十二个既有 G0 场景都获得七类资源护照，但当前没有一个有效任务分母，也没有能源、算力、设备寿命或人工分钟实测。供应商、责任接受、采购和退出条款均未确认；行业均值、设备铭牌、模拟值和供应商材料不能冒充项目数据。
+        </div>
+        <figure>
+          <img src="../assets/figures/urban-metabolism-ledger.png" alt="京张 AI 城市代谢账本，显示七类完整系统资源、三处十二场景、退出去向、显式未知和公共 NO-GO 门" />
+          <figcaption>从云与边缘一直算到终端、人工、非 AI 基线和场所恢复；12/12 只表示字段存在，现实测量仍为 0。</figcaption>
+        </figure>
+        <div class="grid">
+          <article class="card"><b>七类资源一起看</b><p>算力、能源、设备材料、数据、人工复核、供应商依赖、失败退出成本必须在同一任务分母下解释；不能只报服务器或模型。</p></article>
+          <article class="card"><b>三处负担不复制</b><p>众智园突出设备/电池、事故记录和接管；原点社区突出同意撤回、共享设备、保障与清场；大钟寺突出路线/来源更新、人工台和四向通勤。</p></article>
+          <article class="card"><b>退出要有去向</b><p>保留、维修复用、异地部署、供应商回收、合规处置、数据与日志关闭、普通场所和同任务服务恢复，均需责任与证据。</p></article>
+          <article class="card"><b>显式未知不染绿</b><p><code>not_measured</code>、<code>external_confirmation_required</code> 等状态必须写明理由和替换证据；100% 字段覆盖不能解释成节能或可实施。</p></article>
+        </div>
+        <table>
+          <thead><tr><th>设计覆盖</th><th>现实证据</th><th>硬性 NO-GO</th><th>授权边界</th></tr></thead>
+          <tbody><tr><td>12 场景 · 7 资源 · 7 类退出去向</td><td>有效分母 0 · 实测能源 0 · 实测算力 0 · 人工分钟 0 · 供应商 0</td><td>只算服务器、借用均值、遗漏人工/还场、无导出维修退出、普通路径变弱</td><td>PASS 也不等于部署、场地、采购、成熟度、清权或环境收益</td></tr></tbody>
+        </table>
+        <p>机器可审计入口：<a href="assets/urban-metabolism-ledger.json"><code>visual/assets/urban-metabolism-ledger.json</code></a> 与 <a href="assets/key-area-evidence-matrix.json#urban_metabolism_contract"><code>key-area-evidence-matrix.json#urban_metabolism_contract</code></a>。geometry、现有场景编号、G0 与 <code>not_fully_cleared</code> 均不变。</p>
       </section>
       <section id="review-path">
         <h2>命名与评审路径</h2>
