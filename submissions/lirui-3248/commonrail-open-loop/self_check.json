@@ -1,0 +1,68 @@
+{
+  "schema_version": "0.1.0",
+  "checks": [
+    {
+      "check_id": "BOUNDARY_TRUST",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/site_boundary.geojson",
+      "message": "Maintainer provisional boundary is explicitly marked; no official-redline claim is made."
+    },
+    {
+      "check_id": "KEY_AREAS_TRUST",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/key_areas.geojson",
+      "message": "All three required key areas are present and explicitly provisional."
+    },
+    {
+      "check_id": "LAND_USE_TOPOLOGY",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/land_use.geojson",
+      "message": "Conceptual land-use polygons derive from a sequential difference partition of the submitted site."
+    },
+    {
+      "check_id": "METRICS_RECALCULATION",
+      "result": "pass",
+      "severity": "major",
+      "target": "metrics.json",
+      "message": "Known spatial metrics are calculated in EPSG:4548 from submitted geometry; statutory controls remain unknown."
+    },
+    {
+      "check_id": "VISUAL_STATIC",
+      "result": "pass",
+      "severity": "major",
+      "target": "visual/index.html",
+      "message": "Static bilingual HTML uses only local assets and contains no scripts, remote resources, forms, API calls or tracking."
+    },
+    {
+      "check_id": "BILINGUAL_CONTRACT",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal.en.md",
+      "message": "Chinese and English narrative, HTML, figures and PDFs use mapped localized filenames."
+    },
+    {
+      "check_id": "SCENARIO_SAFETY",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal.md",
+      "message": "Each AI scenario specifies minimum data, human review, non-digital fallback and stop or opt-out conditions."
+    },
+    {
+      "check_id": "PROFESSIONAL_EVIDENCE",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal.md",
+      "message": "Narrative claims reference sources, standards, depth items, geometry and metrics without dense marker dumps."
+    },
+    {
+      "check_id": "COPYRIGHT_ASSET_REGISTER",
+      "result": "pass",
+      "severity": "major",
+      "target": "report/copyright_statement.md",
+      "message": "All figures are generated from repository geometry and original vector drawing code; fonts and tools are recorded."
+    }
+  ]
+}
