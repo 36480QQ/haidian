@@ -367,6 +367,27 @@
       "usage": "Transit accessibility method reference covering schedule uncertainty, congestion, real-time information and alternative paths. It motivates a synthetic time-budget readout and supplies no Haidian coefficient or field result.",
       "url": "https://doi.org/10.1186/s44147-026-00887-x",
       "accessed_date": "2026-08-10"
+    },
+    {
+      "id": "ABIT-WEEKLY-ACTIVITY-2024",
+      "source_type": "academic_primary_open_access",
+      "usage": "Weekly activity-based modelling reference for activity patterns, timing, duration, destination and mode choice across mandatory and discretionary activities. Used to justify a seven-day aggregate design screen; no coefficients, survey shares or local effects are imported.",
+      "url": "https://doi.org/10.1016/j.trpro.2024.02.062",
+      "accessed_date": "2026-08-11"
+    },
+    {
+      "id": "SIMMOBILITY-MIT-OVERVIEW",
+      "source_type": "academic_research_project_primary",
+      "usage": "MIT SimMobility project overview for activity-based, multimodal and multiscale simulation spanning private traffic, transit, pedestrians and freight. Used as method context only; Singapore or other case-study calibration is not transferred to Haidian.",
+      "url": "https://mfc.mit.edu/simmobility/",
+      "accessed_date": "2026-08-11"
+    },
+    {
+      "id": "POLARIS-INTEGRATED-TRANSIT-2024",
+      "source_type": "academic_primary_preprint",
+      "usage": "Integrated agent-based transit framework reference covering activity generation, timing, mode choice, routing, transit, traffic, pedestrian and freight interactions. Used to motivate explicit cross-mode interactions and a 24-hour replay boundary; no local coefficients or case-study outcomes are imported.",
+      "url": "https://arxiv.org/abs/2408.05176",
+      "accessed_date": "2026-08-11"
     }
   ]
 }

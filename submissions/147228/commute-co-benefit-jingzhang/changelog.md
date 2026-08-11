@@ -293,3 +293,9 @@
 - Added group-level mode counts/shares, satisfaction proxies and accessibility-completion proxies to the population-scale runner and selected-policy readout.
 - Added bilingual `resident-vehicle-capacity-board.svg`: residents, carers/children, night workers and logistics/maintenance are visible alongside metro, bus, bicycle, accessible-path, car and enterprise-shuttle pressure.
 - Made the 1.00× declared capacity line, 1.35× candidate gate and 332,639 synthetic capacity-overflow person-trips explicit, so the board points to adding service and calibration rather than presenting pressure as solved.
+
+## v2.15 - 2026-08-11
+
+- Added `weekly-activity-screen.json` and `run-weekly-activity-screen.js --check`, which replay all 3,122,000 synthetic agents across seven synthetic days and retain only aggregate group, activity and mode counters.
+- Added bilingual `weekly-activity-board.svg` evidence showing weekday/weekend active-chain units, weekly mode composition, group totals and the aggregate-only boundary.
+- Added ABIT weekly activity, MIT SimMobility and POLARIS method references. Their coefficients and case-study results remain outside the Haidian model; weekday/weekend shares, night work, care windows, cross-boundary OD and service supply still require dated calibration evidence.

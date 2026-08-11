@@ -292,8 +292,24 @@ function updateVisualIndex(file, lang) {
   const css = '.evidence-chain{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap;background:#0B2738;color:#E6FFFA;border:1px solid #2A9D8F;border-radius:12px;padding:12px 14px;margin:10px 0 14px;font-size:12px}.evidence-chain strong{color:#66E3CA;white-space:nowrap}.evidence-chain span{color:#B6D3DC}';
   if (!html.includes('.evidence-chain{')) html = html.replace('</style></head>', `${css}</style></head>`);
   html = addCommuteCoBenefitSection(html, lang);
+  if (!html.includes('weekly-activity-board')) {
+    const weekly = readJson('visual/assets/weekly-activity-readout.json');
+    const weeklyTitle = zh ? '一周活动链。工作日和周末共享一份聚合账' : 'Weekly activity chain. Weekdays and weekends share one aggregate ledger';
+    const weeklyIntro = zh
+      ? `7 个合成日共处理 ${weekly.agent_days_processed.toLocaleString()} 个代理日，活动链设计单元 ${weekly.active_trip_count.toLocaleString()}；这不是活动日记、客流调查或运行绩效。`
+      : `Across seven synthetic days the screen processes ${weekly.agent_days_processed.toLocaleString()} agent-days and ${weekly.active_trip_count.toLocaleString()} active-chain design units; this is not an activity diary, demand survey or operating result.`;
+    const weeklyBoundary = zh
+      ? '工作日/周末比例、夜班与照护活动、跨边界 OD 和服务供给仍待有日期证据校准。'
+      : 'Weekday/weekend shares, night and care activities, cross-boundary OD and service supply remain calibration requirements.';
+    const weeklyImg = `../assets/figures/weekly-activity-board${suffix}.svg`;
+    const weeklyBlock = `<section id="20" class="evidence multimodal-board"><div class="section-head"><span class="section-no">21</span><h2>${weeklyTitle}</h2><span class="tag">${zh ? '合成总账' : 'SYNTHETIC LEDGER'}</span></div><p>${weeklyIntro}</p><p>${weeklyBoundary}</p><img src="${weeklyImg}" alt="${weeklyTitle}"><div class="micro">weekly-activity-screen.json · weekly-activity-readout.json · aggregate only · ${zh ? '现场数据待校准' : 'field data pending calibration'}</div></section>`;
+    html = html.replace('<section id="16"', `${weeklyBlock}<section id="16"`);
+  }
   if (!html.includes('href="#19"')) {
     html = html.replace('</nav>', `<a href="#19">${zh ? '活动链政策包' : 'Activity-chain policy'}</a></nav>`);
+  }
+  if (!html.includes('href="#20"')) {
+    html = html.replace('</nav>', `<a href="#20">${zh ? '一周活动链' : 'Weekly activity chain'}</a></nav>`);
   }
   fs.writeFileSync(target, html);
 }

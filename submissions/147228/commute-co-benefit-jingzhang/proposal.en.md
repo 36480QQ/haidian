@@ -330,6 +330,16 @@ Under the current synthetic inputs, the full-replay-selected O4 moves the compos
 
 ![Regional-scale integrated commute simulation: 3.122M synthetic population agents](assets/figures/regional-scale-commute-board.en.svg)
 
+### Weekly activity chain. Put weekdays and weekends on one ledger
+
+Morning and evening peaks show only one part of a day. The ABIT weekly activity model, the MIT SimMobility activity-based multimodal framework and the POLARIS integrated agent-based transit work all support keeping activity timing, mode choice, public transport, walking and freight interactions in one auditable chain [source:ABIT-WEEKLY-ACTIVITY-2024] [source:SIMMOBILITY-MIT-OVERVIEW] [source:POLARIS-INTEGRATED-TRANSIT-2024].
+
+This increment adds `visual/assets/weekly-activity-screen.json` and `node visual/assets/run-weekly-activity-screen.js --check`. Under the O4 capacity-balanced ground profile, the runner processes all 3,122,000 synthetic agents on each of seven synthetic days, for 21,854,000 agent-days. It publishes only aggregate day-type, group, activity, mode and vehicle-kilometre-proxy counters. Weekday active-chain units are about 2.896 million per day, while Saturday and Sunday are about 1.436 million. Carers and children retain care and school activities, logistics and maintenance retain the necessary service-vehicle boundary, and night workers retain night-work activity. Weekend mode adjustments remain a transparent sensitivity input.
+
+Under the declared inputs, the weekly active-chain total is 17,350,438. Mode counts are metro 5,203,936, bus 3,355,032, bicycle 2,389,151, walking/accessibility 3,783,047, car 1,636,991 and enterprise shuttle 982,281. The vehicle-kilometre proxy is 19,179,099.88. These are reproducible design units. They cannot replace weekly activity diaries, grouped intercept evidence, cross-boundary OD, dated service capacity or night-service records. Weekday and weekend activity shares and mode adjustments still require dated Haidian calibration evidence [data:visual/assets/weekly-activity-readout.json].
+
+![Weekly activity-chain ledger: weekdays, weekends, modes and groups in one aggregate readout](assets/figures/weekly-activity-board.en.svg)
+
 To keep group differences visible, the new group–mode–capacity board exposes the O4 proxy scores directly: resident workers 67.38, carers/children 67.24, night workers 66.35 and logistics/maintenance 57.21; grouped accessibility completion stays within the synthetic 92.87%–95.49% range. The right-hand ledger separates metro, bus, bicycle, accessible-path, car and enterprise-shuttle service pressure: 1.00× is the declared capacity line and 1.35× is the candidate gate. O4 still produces 332,639 synthetic capacity-overflow person-trips, so the board says “add service before expansion” and keeps the pressure visible. Car share falls from 26.3% in B0 to 9.6% in O4, while logistics/maintenance still retains 75.8% car share; resident commute optimization does not erase necessary service vehicles [metric:resident_daily_trip_access_index] [metric:accessible_route_completion_ratio] [metric:peak_curb_conflict_rate].
 
 ![Residents — vehicles — metro: group mode mix and capacity stress](assets/figures/resident-vehicle-capacity-board.en.svg)

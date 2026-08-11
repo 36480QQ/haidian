@@ -360,6 +360,16 @@ runner 实际循环处理全部 3,122,000 个合成代理，并只保留分组�
 
 ![区域人口规模通勤综合模拟。312.2 万合成人口代理](assets/figures/regional-scale-commute-board.svg)
 
+### 一周活动链。把工作日和周末放到同一张账
+
+早晚高峰只能看见一段路。ABIT 的一周活动模型、MIT SimMobility 的多尺度多方式框架和 POLARIS 的综合代理交通研究提醒我们把活动发生、时间选择、方式转换、公共交通、步行和货运放进同一条可复核的链里 [source:ABIT-WEEKLY-ACTIVITY-2024] [source:SIMMOBILITY-MIT-OVERVIEW] [source:POLARIS-INTEGRATED-TRANSIT-2024]。
+
+本轮新增 `visual/assets/weekly-activity-screen.json` 和 `node visual/assets/run-weekly-activity-screen.js --check`。runner 在 O4 容量平衡地面组合下逐日处理 3,122,000 个合成代理，连续回放 7 个合成日，共 21,854,000 个代理日；只发布日类型、群组、活动、方式和车辆公里代理的聚合计数。工作日活动链单元约 289.6 万，周六和周日约 143.6 万。照护者/儿童保留照护和上学活动，物流/维护保留服务车辆边界，夜班工作者保留夜间工作活动，周末方式调整只作为透明敏感性输入。
+
+在当前声明输入下，一周活动链单元为 17,350,438，方式计数为地铁 5,203,936、公交 3,355,032、自行车 2,389,151、步行/无障碍 3,783,047、汽车 1,636,991、企业接驳 982,281；车辆公里代理为 19,179,099.88。它们是可复算的设计单元，不能替代一周活动日记、分组拦访问卷、跨边界 OD、班次容量和夜间服务记录。工作日/周末活动比例及方式调整均待有日期的海淀证据校准 [data:visual/assets/weekly-activity-readout.json]。
+
+![一周活动链总账。工作日、周末、方式和群组共享同一份聚合读出](assets/figures/weekly-activity-board.svg)
+
 为了让群体代理分的差异不被总平均值遮住，新增群体、方式和运力证据板。O4 下居民工作者的综合出行压力代理分为 67.38，照护者和儿童为 67.24，夜班人员为 66.35，物流和维护为 57.21；无障碍完成代理按组保持在 92.87% 至 95.49% 的合成范围。右侧把地铁、公交、自行车、无障碍、汽车和企业接驳的服务单元负荷拆开，1.00× 是声明容量线，1.35× 是候选筛选闸门；O4 仍有 332,639 人次容量溢出代理，因此图板把“补班次/槽位、再谈扩展”列为下一步，容量压力保持可见。汽车方式份额从 B0 的 26.3% 降到 O4 的 9.6%，但物流和维护组仍有 75.8% 的汽车份额，居民通勤优化不能替代必要的服务车辆 [metric:resident_daily_trip_access_index] [metric:accessible_route_completion_ratio] [metric:peak_curb_conflict_rate]。
 
 ![居民、车辆与地铁。群体方式与运力压力](assets/figures/resident-vehicle-capacity-board.svg)
