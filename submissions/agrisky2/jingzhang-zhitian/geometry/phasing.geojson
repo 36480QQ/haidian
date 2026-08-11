@@ -11,7 +11,10 @@
         "phase": "near_term",
         "name_zh": "近期(2026-2028): 大钟寺未来食品体验区先导项目",
         "timeline": "2026-2028",
-        "priority": 1
+        "priority": 1,
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal"
       },
       "geometry": {
         "type": "Polygon",
@@ -50,7 +53,10 @@
         "phase": "mid_term",
         "name_zh": "中期(2028-2031): AI原点社区FoodTech孵化转化区",
         "timeline": "2028-2031",
-        "priority": 2
+        "priority": 2,
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal"
       },
       "geometry": {
         "type": "Polygon",
@@ -89,7 +95,10 @@
         "phase": "long_term",
         "name_zh": "远期(2031-2035): 众智园智慧育种研发区",
         "timeline": "2031-2035",
-        "priority": 3
+        "priority": 3,
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal"
       },
       "geometry": {
         "type": "Polygon",
