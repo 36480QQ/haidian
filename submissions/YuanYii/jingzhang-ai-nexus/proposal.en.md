@@ -3,7 +3,7 @@ title: "Centennial Jing-Zhang AI Nexus Urban Design Proposal: Jing-Zhang Smart V
 proposal_slug: "jingzhang-ai-nexus"
 author_github: "YuanYii"
 language: "en"
-version: "1.4.0"
+version: "6.0"
 date: "2026-08-10"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
@@ -62,6 +62,17 @@ This proposal uses the century-old **block-token / staff-and-ticket system** of 
 ### The Human Side of Block Token: Time Fairness and Interval Sharing
 
 The token "issue—hold—return" cycle inherently guarantees time fairness: no AI service may occupy a block indefinitely; once the token is returned, the block's spatial-use rights revert to the public domain. The proposal conceptually suggests layering an "interval sharing window" on top of this mechanism — residents, community organizations and local merchants may reserve block使用权 during the post-return window for community markets, public exhibitions or pop-up cultural events, achieving "time-division multiplexing of the same block between intelligence and humanity." This design extends the Block Token from a purely technical governance protocol into a human-centered urban framework that asks "Whose hours? Whose block?" — directly addressing the core Centennial Jing-Zhang proposition of "innovation cohabiting with daily life."
+
+### Block Token Scheduling Algorithm Outline
+
+The allocation, verification, and return of block tokens are driven by a conceptual four-stage scheduling algorithm (for professional teams to evolve in subsequent deepening):
+
+1. **Pre-qualification**: AI services applying for a token must submit a public purpose statement, minimal data commitment, human-takeover contact confirmation, and rollback sequence declaration. Services passing pre-qualification enter the waiting queue.
+2. **Block Assignment**: Based on the block's current occupancy state (occupied/free), service priority (public service > industrial testing > commercial operation), and historical return records, block tokens are automatically assigned. Conflicts are resolved via First-Come-First-Served (FCFS) with preemptive priority hybrid strategy.
+3. **In-operation Watch**: During token holding, the service continuously reports Proof-Mile verification metrics. When a hard-stop condition triggers, the 5-step rollback sequence (stop service → disconnect data flows → clear cache → return token → archive audit) is automatically activated without manual approval.
+4. **Return & Audit**: After the service departs the block, the token is returned and the block state is automatically released to free. Token return records are written to the immutable log on the Proof-Mile verification interface, serving as the primary data source for the annual token audit whitepaper.
+
+This algorithm is a conceptual design independent of any specific technology stack. Subsequent professional teams may convert it into deterministic execution scripts (referencing the open-pulse run-open-pulse-tabletop.js precedent).
 
 
 | Tier | Core design question | Proposal answer | Data anchor |
@@ -200,9 +211,8 @@ The proposal defines 6 typical personas and deploys 13 **experiential, demonstra
 4. **Residents**: park leisure, community services and low-disruption renewal; slow green loop and embedded smart community service points along the heritage park.
 5. **University faculty and students**: campus-adjacent commercialization and cross-campus exchange; campus-park stitching paths and commercialization stations on Qinghua East Road.
 6. **International visitors & academic guests**: Value high-profile conferences, roadshow experiences and international communication; the proposal provides international simultaneous-interpretation lounges and academic release centers at Dazhongsi and Origin Community.
-6. **International visitors and academic guests**: high-level conferences and global communication; international interpretation lounges and academic release centers at Dazhongsi and the Origin Community.
 
-### 12 AI scenario cards
+### 13 AI scenario cards
 
 | No. | Scenario card | Spatial carrier | Design description | AI Industry Testing Scenario |
 | --- | --- | --- | --- | --- |
@@ -216,10 +226,9 @@ The proposal defines 6 typical personas and deploys 13 **experiential, demonstra
 | 08 | Data-Element Lounge | Dazhongsi | Secure, auditable display and confirmation windows for compliant data and digital-asset trading | ☑ |
 | 09 | AI Lifestyle Sample Street | Community-commerce junctions | Smart healthcare, unmanned retail, AI community education and domestic service experiences | ☐ |
 | 10 | Global AI Week Route | Full blue-green public space | A walkable 5 km pilgrimage route linking heritage, open source, test fields and demo halls | ☐ |
-| 11 | Multi-species Eco-Sensing Node | Zhongzhiyun riverside | Concept proposal: deploy distributed environmental sensing network for water quality, bird calls, micro-climate data to support ecology and carbon sink research | ☑ |
+| 11 | Multi-species Eco-Sensing Node | Zhongzhiyuan riverside | Concept proposal: deploy distributed environmental sensing network for water quality, bird calls, micro-climate data to support ecology and carbon sink research | ☑ |
 | 12 | Non-Digital Alternative Service Station | Origin Community & Dazhongsi service nodes | Preserve physical braille signs, paper guides, human-staffed counters and one-button human call to ensure digital inclusion and accessibility | ☐ |
-| 11 | AI Community Smart Service Node | Community nodes in overall scope | Embedded smart healthcare, unmanned delivery and elderly assistive services | ☐ |
-| 12 | Edge Compute Charging Station | Heritage Park & transit hubs | Solar PV and battery storage backing edge compute and drone/robot charging | ☑ |
+| 13 | Time Fairness & Interval Sharing Card | Blocks along Jing-Zhang Heritage Park | During post-token-return "Interval Sharing Windows", residents, community organizations and local merchants may reserve block使用权 for community markets, public exhibitions, and pop-up cultural events; the Block Token scheduler guarantees time-division multiplexing of AI services and human activities within the same block | ☐ |
 
 ### 3 AI pilgrimage landmarks
 1. **Jing-Zhang AI Origin Coordinate Tower**: at the junction of the Heritage Park and Qinghua East Road, merging the original rail tracks with a fiber-optics compute tower — the intersection of Chinese industrial and digital civilization.
@@ -244,6 +253,7 @@ Each scenario card is completed with six responsibility clauses under the "verif
 | 10 Global AI Week Route | Pilgrimage and industry-experience linkage | Aggregated registration and traces | Human security contingency plan | Paper guides | Footage deletable | Crowd diversion over capacity |
 | 11 Multi-Species Sensing Node | Ecology protection and carbon-sink research | Environmental acoustic/water data | Ecologists validate | Manual quadrat surveys | Nodes removable | Calibration halt on data anomalies |
 | 12 Non-Digital Service Station | Digital inclusion and accessibility backstop | No data collection | Human attendants on site | The service itself is the non-digital alternative | N/A | Quarterly service-quality review |
+| 13 Time Fairness & Interval Sharing | Time-division multiplexing of blocks for community and cultural activities | AI services return token; block state recorded | Community organization manual booking review | Traditional community activity venues | Bookings cancelable | Semi-annual review of community participation rate and spatial-use fairness |
 
 
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
@@ -482,5 +492,5 @@ Conceptual proposal to establish the Civic Value Protocol:
 
 Conceptual proposal to establish the Wind Health Field system:
 
-- **Ventilation Corridor**: Utilizing the 9.5km green spine as a main N-S ventilation corridor, microclimate simulation estimates a 1.5°C reduction in summer urban heat island intensity.
+- **Ventilation Corridor**: Utilizing the 9.5km green spine as a main N-S ventilation corridor, microclimate simulation estimates a 1.5°C reduction in summer urban heat island intensity (synthetic tabletop estimate based on urban ventilation corridor cooling principles and published methodological frameworks; specific values subject to revision after CFD modeling and on-site microclimate monitoring).
 - **Algorithmic Regulation**: Integrating multi-modal sensors to dynamically regulate wetland misting and microclimate comfort.
