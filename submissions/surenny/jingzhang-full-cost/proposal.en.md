@@ -4,10 +4,10 @@ author_github: "surenny"
 language: "en"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "A bilingual professional design package that makes seven cost ledgers and one civic-return ledger an evidence gate before an AI scenario enters public space."
+summary: "A bilingual professional design package that makes seven cost ledgers, one civic-return ledger and a refuse-to-sign closeout receipt the evidence gate before an AI scenario enters public space."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v0.2"
+iteration: "v0.3"
 ---
 
 # COUNT THE FULL COST JING-ZHANG
@@ -19,6 +19,12 @@ This package uses the public Haidian planning announcement, the user-cleared age
 The design judgment is simple: before AI enters a city, space, energy and water, materials and equipment, data and compute, labor and maintenance, public attention, and public funds must sit beside a civic-return ledger on one walkable and reviewable public balance line. A missing local value is marked pending, with a steward, method, time window and stop condition; it is never filled with a generic global average [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [metric:eight_ledger_baseline] [depth:existing_conditions_diagnosis].
 
 ![Evidence chain and package](assets/figures/site-overview.en.png)
+
+## Core Concept | Closeout Receipt
+
+The full-cost ledger becomes a governance mechanism only when it can refuse expansion. Every AI scenario therefore produces a Closeout Receipt: authorization, a non-AI comparator, seven-cost snapshot, civic-return threshold, named human steward, affected-group review, accessibility check, appeal window, deletion record, exit-budget owner and physical-restoration plan must all be inspectable. One missing record stops accounting, preserves the staffed service, freezes expansion and publishes the repair-or-retire owner. A complete receipt permits professional review only; it never approves a field pilot [metric:closeout_receipt_case_count] [metric:closeout_receipt_stop_case_count] [depth:existing_conditions_diagnosis].
+
+`simulation.json` runs 24 offline synthetic cases across the twelve scenario cards: one complete-receipt branch and one missing-evidence stop branch per card. Expected and actual decisions match in 24/24 cases, all records are auditable, and no real personal data is used. This proves only that the rule is reproducible, not field performance, public acceptance, engineering feasibility or approval [metric:closeout_receipt_match_rate] [metric:audit_completeness] [data:simulation.json#full-cost-closeout-receipt-v1].
 
 ## Three-Level Scope Framework
 
@@ -79,6 +85,8 @@ The cards cover researchers, founders, enterprise adopters, public-service opera
 
 The case studies answer how to measure, who reviews and how to exit; they do not transplant another city's powers or metrics. Public attention records screens, noise, queues, consultation time and surveillance anxiety. If AI does not show a defensible civic return against the staffed comparator, the state remains measuring or revise and cannot scale [metric:industry_validation_scenario_count] [source:SOURCE-REGISTRY].
 
+Before any real test, the site maintainer, data/rights reviewer, accessibility co-reviewer and affected-group observer must jointly sign the receipt; any role can refuse and trigger the staffed route. Field performance remains pending data, and the tabletop audit's perfect decision match must not substitute for service quality or civic return [metric:field_pilot_performance] [depth:three_key_area_detailed_design].
+
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
 The land-use layout is a concept partition, not a planning permission. Its proportions are recomputed from the current provisional geometry in EPSG:4548 to compare space for innovation and everyday public life; they do not create a statutory FAR. Building properties record lifecycle action, but every retain, renovate or demolish decision waits for survey, ownership, heritage, structure, fire and full-cost comparison. Space records opportunity cost and restoration; public funds remain free of invented monetary totals [data:geometry/land_use.geojson#LU-002] [data:geometry/buildings.geojson#BLDG-003] [standard:MOHURD-CONTROL-DETAILED-PLANNING].
@@ -95,11 +103,15 @@ The blue-green spine joins railway memory, the Xiaoyuehe civic-return wing and a
 
 ## Renewal Projects, Implementation Policy, and Phasing
 
-JZ-01 through JZ-06 form an evidence-gated renewal list: repair the balance-line gaps, create the metering lab, open the co-creation lounge, run the procurement health check, install four public windows and host Full Cost Open Week. Phasing is not a promised construction calendar: phase one measures and tests; phase two compares and opens narrowly; phase three adopts, revises or restores after professional review. Each project needs a steward, permission, maintenance budget, deletion path and restoration responsibility [data:geometry/phasing.geojson#PHASE-001] [depth:phasing_implementation] [metric:eight_ledger_baseline].
+JZ-01 through JZ-06 form an evidence-gated renewal list: repair the balance-line gaps, create the metering lab, open the co-creation lounge, run the procurement health check, install four public windows and host Full Cost Open Week. Phasing is not a promised construction calendar. In stage one, universities, enterprises, communities and professional teams lock the problem, responsible roles and non-AI comparator in an offline tabletop audit. Stage two may begin a bounded single-site pilot only after permission, with residents and maintainers monitoring service time, appeal count, human takeover, seven costs and civic-return indicators. In stage three, affected groups and professional teams evaluate the receipt and choose adopt, revise or restore. Missing permission, maintenance budget, deletion evidence or restoration responsibility stops the process and retains staffed service [data:geometry/phasing.geojson#PHASE-001] [depth:phasing_implementation] [metric:eight_ledger_baseline].
 
 ## Metrics, Area Recalculation, and Compliance Matrix
 
-The current provisional site is about 11.41 km²; green and public-window ratios are recomputed from the same GeoJSON. Three key areas, twelve scenario cards and five industry validation cards are countable outputs [metric:site_area_sqm] [metric:green_ratio] [metric:public_space_ratio]. Spatial numbers support design comparison, not regulatory control. The eight-ledger baseline, FAR/height/density, energy, labor and civic-return baseline are explicit pending data in `assumptions.json` [metric:eight_ledger_baseline] [data:geometry/constraints.geojson#CONSTRAINT-001] [depth:metrics_recalculation].
+The current provisional site is about 11.41 km²; green and public-window ratios are recomputed from the same GeoJSON. Three key areas, twelve scenario cards and five industry validation cards are countable outputs [metric:site_area_sqm] [metric:green_ratio] [metric:public_space_ratio].
+
+The tabletop contains twelve complete receipts and twelve missing-evidence stops across 24 cases, with a 1.0 expected-decision match; these measure protocol coverage, not field outcomes [metric:closeout_receipt_case_count] [metric:closeout_receipt_stop_case_count] [metric:closeout_receipt_match_rate].
+
+Spatial numbers support design comparison, not regulatory control. The eight-ledger baseline, FAR/height/density, energy, labor, civic return and field performance are explicit pending data in `assumptions.json` [metric:eight_ledger_baseline] [metric:far_height_density] [metric:field_pilot_performance].
 
 ![Metrics and evidence status](assets/figures/metrics-evidence.en.png)
 
@@ -117,7 +129,7 @@ The four nodes are the Full-Cost Signal Box, Maintainers Ledger Table, Public Re
 
 ## Risk, Copyright, and Compliance
 
-Key risks are misreading provisional boundaries, missing controls, unverified ownership or heritage, missing energy/water/compute/labor baselines, data-rights ambiguity, burden transfer, vendor lock-in and unknown exit funds. Mitigation uses low-contrast provisional graphics, statused metrics, human review, non-AI comparison, stop conditions and the Restoration Bell. High risks require professional or public review; this proposal cannot self-approve them [data:geometry/constraints.geojson#CONSTRAINT-001] [depth:risk_missing_data] [source:BOUNDARY-SOURCE].
+Key risks are misreading provisional boundaries, missing controls, unverified ownership or heritage, missing energy/water/compute/labor baselines, data-rights ambiguity, burden transfer, vendor lock-in and unknown exit funds. Mitigation uses low-contrast provisional graphics, statused metrics, human review, a non-AI comparator, stop conditions, the Restoration Bell and a refuse-to-sign receipt; any refusal freezes expansion and keeps staffed service. Offline cases validate protocol branches only and cannot be presented as real performance, public consent or implementation evidence. High risks require professional and affected-group review; this proposal cannot self-approve them [data:geometry/constraints.geojson#CONSTRAINT-001] [depth:risk_missing_data] [source:BOUNDARY-SOURCE].
 
 The package contains repository public material, a user-cleared taskbook and original text, diagrams and code by this agent. It contains no corporate marks, portraits, unlicensed fonts or external images. The license is `COMMUNITY-DISPLAY-ONLY` for community display and review; provenance is documented in `report/copyright_statement.md`. The proposal claims no government approval, statutory plan, final area, engineering feasibility, investment, procurement or implementation result.
 

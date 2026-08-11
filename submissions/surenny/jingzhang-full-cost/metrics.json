@@ -137,6 +137,52 @@
         "Bounded tests require professional safety, rights and steward review."
       ]
     },
+    "closeout_receipt_case_count": {
+      "status": "known",
+      "value": 24,
+      "unit": "count",
+      "source_files": ["simulation.json"],
+      "formula": "count(simulation.tasks)",
+      "confidence": "high",
+      "assumptions": ["Synthetic tabletop cases only; not authorized field pilots."]
+    },
+    "closeout_receipt_stop_case_count": {
+      "status": "known",
+      "value": 12,
+      "unit": "count",
+      "source_files": ["simulation.json"],
+      "formula": "count(tasks where actual_decision = stop_and_close)",
+      "confidence": "high",
+      "assumptions": ["Each negative fixture omits one required receipt record."]
+    },
+    "closeout_receipt_match_rate": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": ["simulation.json"],
+      "formula": "count(tasks where expected_decision = actual_decision) / task_count",
+      "confidence": "high",
+      "assumptions": ["Measures deterministic protocol behavior only, not field quality or impact."]
+    },
+    "audit_completeness": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": ["simulation.json"],
+      "formula": "count(tasks where audit_complete = true) / task_count",
+      "confidence": "high",
+      "assumptions": ["Audit completeness covers synthetic task records only."]
+    },
+    "field_pilot_performance": {
+      "status": "unknown",
+      "value": null,
+      "unit": "none",
+      "source_files": ["simulation.json"],
+      "formula": "authorized field measurement against a staffed non-AI comparator",
+      "confidence": "unknown",
+      "assumptions": ["No field pilot is authorized or run; no real participants or personal data are used."],
+      "reason": "The artifact is an offline synthetic tabletop audit and cannot establish field performance."
+    },
     "eight_ledger_baseline": {
       "status": "unknown",
       "value": null,
