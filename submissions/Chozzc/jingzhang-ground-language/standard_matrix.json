@@ -34,16 +34,15 @@
         "key_area_count"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
         "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
         "OFFICIAL-ANNOUNCEMENT",
-        "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "AGENT-TASKBOOK"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-ACCESSIBILITY-001",
+        "A-ROBOT-SAFETY-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -51,7 +50,7 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本条标准响应通过 proposal.md 正文引用、A3/A0 图纸、GeoJSON 图层、metrics.json 指标和自检项共同证明。"
+      "evidence_summary_zh": "用三层范围、三区差异化任务、公共空间与运营机制回应公告；不越过概念建议边界。"
     },
     {
       "standard_id": "PROJECT-AGENT-OPEN-CALL-TASKBOOK",
@@ -86,16 +85,15 @@
         "key_area_count"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
         "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
         "OFFICIAL-ANNOUNCEMENT",
-        "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "AGENT-TASKBOOK"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-ACCESSIBILITY-001",
+        "A-ROBOT-SAFETY-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -103,7 +101,7 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本条标准响应通过 proposal.md 正文引用、A3/A0 图纸、GeoJSON 图层、metrics.json 指标和自检项共同证明。"
+      "evidence_summary_zh": "完整提供品牌、8案例、12场景、3测试、8人物、3地标、文化叙事、活动和长期治理。"
     },
     {
       "standard_id": "MOHURD-URBAN-DESIGN-MEASURES",
@@ -138,16 +136,15 @@
         "key_area_count"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
         "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
         "OFFICIAL-ANNOUNCEMENT",
-        "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "AGENT-TASKBOOK"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-ACCESSIBILITY-001",
+        "A-ROBOT-SAFETY-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -155,7 +152,7 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本条标准响应通过 proposal.md 正文引用、A3/A0 图纸、GeoJSON 图层、metrics.json 指标和自检项共同证明。"
+      "evidence_summary_zh": "公共空间组件统筹方向、尺度、维护、风貌与公众参与；未把设计建议伪装成批准要求。"
     },
     {
       "standard_id": "MOHURD-CONTROL-DETAILED-PLANNING",
@@ -190,16 +187,15 @@
         "key_area_count"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
         "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
         "OFFICIAL-ANNOUNCEMENT",
-        "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "AGENT-TASKBOOK"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-ACCESSIBILITY-001",
+        "A-ROBOT-SAFETY-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -207,7 +203,7 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本条标准响应通过 proposal.md 正文引用、A3/A0 图纸、GeoJSON 图层、metrics.json 指标和自检项共同证明。"
+      "evidence_summary_zh": "用地拓扑用于结构校验，同时把FAR、高度、道路、市政和权属列为待补官方条件。"
     },
     {
       "standard_id": "MNR-LAND-USE-CLASSIFICATION-GUIDE",
@@ -242,16 +238,15 @@
         "key_area_count"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
         "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
         "OFFICIAL-ANNOUNCEMENT",
-        "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "AGENT-TASKBOOK"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-ACCESSIBILITY-001",
+        "A-ROBOT-SAFETY-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -259,7 +254,7 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本条标准响应通过 proposal.md 正文引用、A3/A0 图纸、GeoJSON 图层、metrics.json 指标和自检项共同证明。"
+      "evidence_summary_zh": "land_use.geojson只使用项目允许的正式分类代码，并标注为概念分析而非用途批准。"
     },
     {
       "standard_id": "MOHURD-ARCH-DESIGN-DEPTH-2016",
@@ -294,16 +289,15 @@
         "key_area_count"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
         "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
         "OFFICIAL-ANNOUNCEMENT",
-        "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "AGENT-TASKBOOK"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-ACCESSIBILITY-001",
+        "A-ROBOT-SAFETY-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -311,7 +305,7 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本条标准响应通过 proposal.md 正文引用、A3/A0 图纸、GeoJSON 图层、metrics.json 指标和自检项共同证明。"
+      "evidence_summary_zh": "仓库未取得官方文件，保持data_gap；不以第三方镜像补权威，也不声称建筑专业深度。"
     }
   ]
 }

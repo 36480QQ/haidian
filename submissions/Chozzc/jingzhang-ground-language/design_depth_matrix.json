@@ -30,22 +30,24 @@
       ],
       "metric_refs": [
         "site_area_sqm",
-        "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "key_area_count"
+        "key_area_count",
+        "ground_language_glyph_count",
+        "scenario_count",
+        "pilot_segment_target_min_m",
+        "pilot_segment_target_max_m"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
+        "GROUND-LANGUAGE-CASE-STUDIES",
         "BOUNDARY-SOURCE",
         "KEY-AREA-SOURCE"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-ACCESSIBILITY-001",
+        "A-ROBOT-SAFETY-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -53,7 +55,7 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "以官方公告、事实包、缺资料清单和Issue #1029建立证据边界；明确缺官方红线、控规、现状建筑、道路断面和市政底数。"
     },
     {
       "item_id": "three_level_scope_framework",
@@ -84,22 +86,24 @@
       ],
       "metric_refs": [
         "site_area_sqm",
-        "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "key_area_count"
+        "key_area_count",
+        "ground_language_glyph_count",
+        "scenario_count",
+        "pilot_segment_target_min_m",
+        "pilot_segment_target_max_m"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
+        "GROUND-LANGUAGE-CASE-STUDIES",
         "BOUNDARY-SOURCE",
         "KEY-AREA-SOURCE"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-ACCESSIBILITY-001",
+        "A-ROBOT-SAFETY-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -107,7 +111,7 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "以统筹层开放生态、总体层地语主线、重点层三场验证回应三层范围；所有空间图明确使用临时几何。"
     },
     {
       "item_id": "overall_spatial_structure",
@@ -138,22 +142,24 @@
       ],
       "metric_refs": [
         "site_area_sqm",
-        "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "key_area_count"
+        "key_area_count",
+        "ground_language_glyph_count",
+        "scenario_count",
+        "pilot_segment_target_min_m",
+        "pilot_segment_target_max_m"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
+        "GROUND-LANGUAGE-CASE-STUDIES",
         "BOUNDARY-SOURCE",
         "KEY-AREA-SOURCE"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-ACCESSIBILITY-001",
+        "A-ROBOT-SAFETY-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -161,7 +167,7 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "形成一线、三场、两翼、六词和三地标的空间—机制结构，几何仅表达协同关系。"
     },
     {
       "item_id": "land_use_layout",
@@ -192,22 +198,24 @@
       ],
       "metric_refs": [
         "site_area_sqm",
-        "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "key_area_count"
+        "key_area_count",
+        "ground_language_glyph_count",
+        "scenario_count",
+        "pilot_segment_target_min_m",
+        "pilot_segment_target_max_m"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
+        "GROUND-LANGUAGE-CASE-STUDIES",
         "BOUNDARY-SOURCE",
         "KEY-AREA-SOURCE"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-ACCESSIBILITY-001",
+        "A-ROBOT-SAFETY-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -215,7 +223,7 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "四类合法代码形成完整拓扑分区，用于分析测试、共读、交接、支持关系，明确不是控规调整。"
     },
     {
       "item_id": "development_intensity_controls",
@@ -246,22 +254,24 @@
       ],
       "metric_refs": [
         "site_area_sqm",
-        "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "key_area_count"
+        "key_area_count",
+        "ground_language_glyph_count",
+        "scenario_count",
+        "pilot_segment_target_min_m",
+        "pilot_segment_target_max_m"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
+        "GROUND-LANGUAGE-CASE-STUDIES",
         "BOUNDARY-SOURCE",
         "KEY-AREA-SOURCE"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-ACCESSIBILITY-001",
+        "A-ROBOT-SAFETY-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -269,7 +279,7 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "缺官方控规，FAR、密度、高度和建设规模保持unknown；本方案只提出表面组件和运营试点。"
     },
     {
       "item_id": "height_massing_character",
@@ -300,22 +310,24 @@
       ],
       "metric_refs": [
         "site_area_sqm",
-        "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "key_area_count"
+        "key_area_count",
+        "ground_language_glyph_count",
+        "scenario_count",
+        "pilot_segment_target_min_m",
+        "pilot_segment_target_max_m"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
+        "GROUND-LANGUAGE-CASE-STUDIES",
         "BOUNDARY-SOURCE",
         "KEY-AREA-SOURCE"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-ACCESSIBILITY-001",
+        "A-ROBOT-SAFETY-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -323,7 +335,7 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "不提出建筑高度或体量；风貌深度集中于地面组件、色彩、材料和可逆地标，待建筑专业深化。"
     },
     {
       "item_id": "retain_renovate_demolish",
@@ -354,22 +366,24 @@
       ],
       "metric_refs": [
         "site_area_sqm",
-        "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "key_area_count"
+        "key_area_count",
+        "ground_language_glyph_count",
+        "scenario_count",
+        "pilot_segment_target_min_m",
+        "pilot_segment_target_max_m"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
+        "GROUND-LANGUAGE-CASE-STUDIES",
         "BOUNDARY-SOURCE",
         "KEY-AREA-SOURCE"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-ACCESSIBILITY-001",
+        "A-ROBOT-SAFETY-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -377,7 +391,7 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "不对任何建筑提出拆改留；唯一建筑图层是低置信度结构占位，并有明确非实施声明。"
     },
     {
       "item_id": "traffic_rail_slow_parking",
@@ -408,22 +422,24 @@
       ],
       "metric_refs": [
         "site_area_sqm",
-        "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "key_area_count"
+        "key_area_count",
+        "ground_language_glyph_count",
+        "scenario_count",
+        "pilot_segment_target_min_m",
+        "pilot_segment_target_max_m"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
+        "GROUND-LANGUAGE-CASE-STUDIES",
         "BOUNDARY-SOURCE",
         "KEY-AREA-SOURCE"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-ACCESSIBILITY-001",
+        "A-ROBOT-SAFETY-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -431,7 +447,7 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "地语主线、两翼和BERTH/YIELD表达慢行交接意图；缺红线断面时不形成工程线位或停车结论。"
     },
     {
       "item_id": "municipal_new_infrastructure",
@@ -462,22 +478,24 @@
       ],
       "metric_refs": [
         "site_area_sqm",
-        "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "key_area_count"
+        "key_area_count",
+        "ground_language_glyph_count",
+        "scenario_count",
+        "pilot_segment_target_min_m",
+        "pilot_segment_target_max_m"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
+        "GROUND-LANGUAGE-CASE-STUDIES",
         "BOUNDARY-SOURCE",
         "KEY-AREA-SOURCE"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-ACCESSIBILITY-001",
+        "A-ROBOT-SAFETY-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -485,7 +503,7 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "提出被动标记、可选固定音频、版本公开和维护巡检；材料、排水、供电、消防均列为专业门槛。"
     },
     {
       "item_id": "blue_green_public_space",
@@ -516,22 +534,24 @@
       ],
       "metric_refs": [
         "site_area_sqm",
-        "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "key_area_count"
+        "key_area_count",
+        "ground_language_glyph_count",
+        "scenario_count",
+        "pilot_segment_target_min_m",
+        "pilot_segment_target_max_m"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
+        "GROUND-LANGUAGE-CASE-STUDIES",
         "BOUNDARY-SOURCE",
         "KEY-AREA-SOURCE"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-ACCESSIBILITY-001",
+        "A-ROBOT-SAFETY-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -539,7 +559,7 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "以气候维护学习带测试雨水、落叶、低照度和磨损；不改变水系、绿地或文保控制。"
     },
     {
       "item_id": "three_key_area_detailed_design",
@@ -570,22 +590,24 @@
       ],
       "metric_refs": [
         "site_area_sqm",
-        "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "key_area_count"
+        "key_area_count",
+        "ground_language_glyph_count",
+        "scenario_count",
+        "pilot_segment_target_min_m",
+        "pilot_segment_target_max_m"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
+        "GROUND-LANGUAGE-CASE-STUDIES",
         "BOUNDARY-SOURCE",
         "KEY-AREA-SOURCE"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-ACCESSIBILITY-001",
+        "A-ROBOT-SAFETY-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -593,7 +615,7 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "众智园译码、AI原点共读、大钟寺交接分别有场景、人物、地标、风险和下一步；大钟寺位置疑点单列。"
     },
     {
       "item_id": "renewal_project_list",
@@ -624,22 +646,24 @@
       ],
       "metric_refs": [
         "site_area_sqm",
-        "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "key_area_count"
+        "key_area_count",
+        "ground_language_glyph_count",
+        "scenario_count",
+        "pilot_segment_target_min_m",
+        "pilot_segment_target_max_m"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
+        "GROUND-LANGUAGE-CASE-STUDIES",
         "BOUNDARY-SOURCE",
         "KEY-AREA-SOURCE"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-ACCESSIBILITY-001",
+        "A-ROBOT-SAFETY-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -647,7 +671,7 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "项目清单限定为词典v0、室内样件、可逆样段、三区验证和开放规范，均以门槛而非承诺时序组织。"
     },
     {
       "item_id": "phasing_implementation",
@@ -678,22 +702,24 @@
       ],
       "metric_refs": [
         "site_area_sqm",
-        "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "key_area_count"
+        "key_area_count",
+        "ground_language_glyph_count",
+        "scenario_count",
+        "pilot_segment_target_min_m",
+        "pilot_segment_target_max_m"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
+        "GROUND-LANGUAGE-CASE-STUDIES",
         "BOUNDARY-SOURCE",
         "KEY-AREA-SOURCE"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-ACCESSIBILITY-001",
+        "A-ROBOT-SAFETY-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -701,7 +727,7 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "四阶段以共读、安全、天气、维护、公众理解和回滚门槛推进，任何高风险误读可立即召回。"
     },
     {
       "item_id": "metrics_recalculation",
@@ -732,22 +758,24 @@
       ],
       "metric_refs": [
         "site_area_sqm",
-        "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "key_area_count"
+        "key_area_count",
+        "ground_language_glyph_count",
+        "scenario_count",
+        "pilot_segment_target_min_m",
+        "pilot_segment_target_max_m"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
+        "GROUND-LANGUAGE-CASE-STUDIES",
         "BOUNDARY-SOURCE",
         "KEY-AREA-SOURCE"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-ACCESSIBILITY-001",
+        "A-ROBOT-SAFETY-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -755,7 +783,7 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "EPSG:4548复算临时几何；设计系统计数与100—200米试点目标分开标注，不把目标写成现状。"
     },
     {
       "item_id": "risk_missing_data",
@@ -786,22 +814,24 @@
       ],
       "metric_refs": [
         "site_area_sqm",
-        "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "key_area_count"
+        "key_area_count",
+        "ground_language_glyph_count",
+        "scenario_count",
+        "pilot_segment_target_min_m",
+        "pilot_segment_target_max_m"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
+        "GROUND-LANGUAGE-CASE-STUDIES",
         "BOUNDARY-SOURCE",
         "KEY-AREA-SOURCE"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-ACCESSIBILITY-001",
+        "A-ROBOT-SAFETY-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -809,7 +839,7 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "assumptions.json逐项记录边界、控规、道路、权属、建筑、文保、市政、无障碍和机器人安全缺口。"
     }
   ]
 }
