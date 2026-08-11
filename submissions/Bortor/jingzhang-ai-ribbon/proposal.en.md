@@ -48,9 +48,13 @@ metrics, the five figures, HTML and PDF must all be redone.
 >    innovation belt, from importation to original creation.
 > 2. Spatial response: one spine, three cores, and two wings forming a renzi
 >    (人) pattern — the heritage park main spine runs through from north to
->    south; Zhongzhiyuan / the Origin Community / Dazhongsi form the cores
->    along the spine; Zhongguancun and the two wings deliver services and
->    scenarios.
+>    south (after the Phase 2 opening on 2026-08-06, the 9 km from Xizhimen
+>    to the North Fifth Ring Road is fully connected); Zhongzhiyuan / the
+>    Origin Community / Dazhongsi form the cores along the spine;
+>    Zhongguancun and the two wings deliver services and scenarios. The
+>    proposal organizes AI scenarios, nodes and operations on top of the
+>    already-built green corridor without duplicating infrastructure
+>    construction [source:ERQI-OPEN-2026].
 > 3. Naming system: the Renzi Belt (THE SWITCHBACK); the two strokes of the
 >    character 人 (renzi) = technology and humanity; their intersection = the
 >    AI origin.
@@ -83,7 +87,13 @@ is used to distinguish formal-ready, background-only and provisional-only
 material [source:SOURCE-REGISTRY]; the processed material pack
 `data/processed/agent_fact_pack.md` serves only as a reading navigation
 layer and does not constitute a new authoritative source
-[source:PROCESSED-FACT-PACK].
+[source:PROCESSED-FACT-PACK]. In August 2025, the Central Committee of the
+Communist Party of China and the State Council issued the Opinions on
+Promoting High-Quality Urban Development, establishing the top-level
+orientation of "improving quality and efficiency of existing stock, with
+urban renewal as an important lever"; this proposal's urban renewal and
+operation-mechanism recommendations are developed accordingly
+[standard:HIGH-QUALITY-DEVELOPMENT-2025].
 
 Per the usage boundaries of `data/source_registry.json`, this proposal uses
 only the official announcement, the rights-cleared taskbook, the
@@ -250,6 +260,21 @@ applicant, maintainer, reviewer, duration, exit conditions and
 public-knowledge output; no corporate lists, investment amounts, output
 values or policy commitments are fabricated [depth:phasing_implementation].
 
+Haidian's industrial fundamentals support this proposal's ecosystem
+judgment (official figures as of 2026-03): over 2,000 AI enterprises, 26
+unicorns, 130 registered foundational large models, and an AI core industry
+scale exceeding RMB 350 billion (about 30% of the national total), with
+representative enterprises and models such as Kimi, Zhipu GLM and Doubao
+all located within the innovation belt's radiation range
+[source:HAIDIAN-AI-DATA-2026]. Enterprises along the corridor account for
+more than 70% of Haidian's enterprise count, revenue scale and financing
+volume, and more than 80% of its talent — the industrial reality base for
+this proposal's "three cores anchored, two wings coordinated" approach;
+the innovation belt offers nearly ten million square meters of industrial
+space and about one million square meters of available renewal area,
+providing the spatial base for the renewal project list
+[source:HAIDIAN-AI-DATA-2026] [depth:renewal_project_list].
+
 ## 4. Overall Design Area: Urban Renewal and Urban Design at Regulatory-Detailed-Plan Depth
 
 The Overall Design Area is required to reach the urban design depth of a
@@ -260,12 +285,21 @@ Jing-Zhang Heritage Park (a composite cultural, slow-mobility and blue-green
 belt); the **three cores** are the three functional cores of Zhongzhiyuan,
 the AI Origin Community and Dazhongsi; and the **two wings** are the
 Zhongguancun Technology Service Wing on the west and the Xiaoyue River
-Scenario Empowerment Wing on the east. The main spine is not an isolated
-green line but the shared public living room and innovation corridor of the
-three cores; the two wings are not appended functional zones but a
-coordinated loop that injects Zhongguancun's factor-service capability and
-Xiaoyue River's scenario-experiment capability into the main spine
-[source:AGENT-TASKBOOK].
+Scenario Empowerment Wing on the east. The main spine is not an isolated newly drawn green line but an
+**already-built public foundation**: Phase 2 of the Jing-Zhang Railway
+Heritage Park was completed and opened on 2026-08-06, and the 9 km from
+Beijing North Station at Xizhimen to Jianting Bridge at the North Fifth
+Ring Road is fully connected (about 53 ha, serving about 70 communities
+and 450,000 residents along the corridor); the "three paths and one
+green" slow-mobility system (separate walking path, jogging path and
+cycleway) runs through without any break, and 9 city branch roads were
+opened with all closed fences removed [source:ERQI-OPEN-2026]. The
+proposal therefore shifts its design focus from "creating a green belt"
+to "organizing AI scenarios, nodes and operations on top of the
+already-built green corridor": the main spine serves as the shared public
+living room and innovation corridor of the three cores, and the two wings
+inject Zhongguancun's factor-service capability and Xiaoyue River's
+scenario-experiment capability into the main spine [source:AGENT-TASKBOOK].
 
 `geometry/land_use.geojson` fully covers the submitted boundary with 24
 zoning units, with no overlaps and no gaps: research land (0802, approx.
@@ -326,7 +360,13 @@ governance, industrial display and Qinghe culture: research land on the west
 hosts testing and validation facilities; the central green wedge (Qinghe
 Innovation Corridor) hosts a low-carbon green innovation-exchange
 environment; and reserve land (16) serves as flexible expansion space for
-the full-stack system [data:geometry/land_use.geojson#LU-001]. The Beijing
+the full-stack system [data:geometry/land_use.geojson#LU-001]. The
+nodes anchor to real facilities: in the park's northern section (Qinghua
+East Road to Jianting Bridge at the North Fifth Ring Road), Phase 2 has
+already built the "Jing-Zhang Ring" 1909 themed event plaza, a fishbone
+slow-mobility network and activated space under bridges; the Zhongzhiyuan
+scheme can overlay AI testing and governance-display scenarios on these
+already-built facilities [source:ERQI-OPEN-2026]. The Beijing
 AI Origin Community ([metric:ai_origin_key_area_sqm] m²; announcement value
 approx. 104.3 ha) proposes a detailed scheme around campus-adjacent
 innovation, achievement incubation and commercialization, the talent
@@ -341,7 +381,12 @@ data factors, digital assets and commercial services: commercial and
 services land on the west hosts intelligent-economy formats; the
 station-front plaza hosts Dazhongsi Station integration and four-quadrant
 pedestrian connectivity at the intersection; and cultural land on the east
-hosts the display of data factors and digital assets.
+hosts the display of data factors and digital assets. The park's southern
+section (Beijing North Station at Xizhimen to Dayuncun on Zhichun Road)
+has restored 2.4 km of the 1909 century-old original railway line and the
+Sidaokou historical node, which can serve as the cultural foundation of
+the "Switchback Mirror · AI Cultural Narrative Pavilion" and the
+intelligent commercial street [source:ERQI-OPEN-2026].
 
 The three key areas must appear in `geometry/key_areas.geojson`. They
 currently use `provisional_constraint`; the text, HTML, sources, assumptions
@@ -377,8 +422,8 @@ consumer life, sports and leisure, and international exchange
 | 03 Ascending Line · Zhongzhiyuan Test Field | Zhongzhiyuan | Translates standard-setting, safety evaluation and model red-teaming into visitable, bookable and overseeable display and collaboration nodes |
 | 04 Descending Line · Dazhongsi Intelligent Commercial Street | Dazhongsi AI Industry Cluster | An AI-native commercial interface for agent and intelligent-terminal display, content consumption and data-factor circulation |
 | 05 Track Gauge · AI Standards Workshop | Zhongzhiyuan | An open workshop for standard-setting, evaluation benchmarks and governance discussion, symbolizing the "standard gauge" of AI infrastructure |
-| 06 Qinglongqiao · Developer Promenade | Northern section of the heritage park main spine | A developer-themed trail along the green belt: milestones, contributor nameplates, code landscape installations |
-| 07 Switchback Mirror · AI Cultural Narrative Pavilion | Toward the former Qinghuayuan Station site | A comparative narrative of the centennial railway and AI culture: from the switchback alignment to the AI switchback [scenario:ai-cultural-guide] |
+| 06 Qinglongqiao · Developer Promenade | Northern section of the heritage park main spine | A developer-themed trail along the already-built green corridor (natural leisure section in the north): milestones, contributor nameplates, code landscape installations, linked with the "Jing-Zhang Ring" 1909 plaza [source:ERQI-OPEN-2026] |
+| 07 Switchback Mirror · AI Cultural Narrative Pavilion | Sidaokou historical node / toward the former Qinghuayuan Station site | The southern section's restored 2.4 km of 1909 century-old original railway line and the Sidaokou historical node, organizing a comparative narrative of the centennial railway and AI culture through landscapes such as steam locomotive heads and retro green passenger cars [scenario:ai-cultural-guide] [source:ERQI-OPEN-2026] |
 | 08 Xiaoyue River · Scenario Experiment Riverfront | Xiaoyue River Scenario Empowerment Wing | A time-limited pilot riverfront for low-speed robot delivery, unmanned inspection and AI-guided tours [scenario:robot-delivery-low-speed] |
 | 09 Zhongguancun · Technology Service Station | Zhongguancun Technology Service Wing | A one-stop service node for enterprise services, intellectual property, investment and financing, computing power and data compliance [scenario:enterprise-service-copilot] |
 | 10 Honor Wall · Contributor Memorial Gallery | Main spine of the heritage park | An honor system for open-source contributions: annual outstanding contributions, an agent contribution wall, updatable memorials |
@@ -548,15 +593,25 @@ conditions, implementation stage, risks and evaluation indicators
 phasing scope [data:geometry/phasing.geojson#PHASE-001]
 [depth:phasing_implementation].
 
-| No. | Project | Type | Main dependencies | Evidence references |
-| --- | --- | --- | --- | --- |
-| JZ-01 | Jing-Zhang Heritage Park slow-mobility gap stitching | Public space / transport | Road red lines, space under bridges, traffic organization review | [data:geometry/roads.geojson#ROAD-001] |
-| JZ-02 | Zhongzhiyuan Qinghe innovation interface | Blue-green space / industrial display | River blue lines, ecological and flood-control conditions | [data:geometry/green_space.geojson#GREEN-001] |
-| JZ-03 | Origin Community campus-adjacent commercialization street | Urban renewal / industrial services | Campus boundaries, ownership, ground-floor uses | [data:geometry/buildings.geojson#BLDG-001] |
-| JZ-04 | Dazhongsi Station four-quadrant pedestrian connectivity | Transit-station integration / slow mobility | Transit station, road intersections, municipal utility lines | [data:geometry/public_space.geojson#PUBLIC-001] |
-| JZ-05 | AI Origin Switchback Plaza | Public space / brand | Station integration, public-space permits | [data:geometry/public_space.geojson#PUBLIC-001] |
-| JZ-06 | Global AI Week public route | Operations / brand | Public-space permits, event safety, copyright clearance | [data:geometry/phasing.geojson#PHASE-001] |
-| JZ-07 | On-device computing station prototype | New infrastructure / public services | Energy, computing power, safety and operating entity | [data:geometry/constraints.geojson#CONSTRAINTS] |
+| No. | Project | Type | Main dependencies |
+| --- | --- | --- | --- |
+| JZ-00 | Green corridor completed base (Phase 2 opened 2026-08-06, 9 km through) | Existing base | Not new construction of this proposal; the proposal only overlays AI scenarios and operations |
+| JZ-01 | Jing-Zhang Heritage Park slow-mobility gap stitching | Public space / transport | Road red lines, space under bridges, traffic organization review |
+| JZ-02 | Zhongzhiyuan Qinghe innovation interface | Blue-green space / industrial display | River blue lines, ecological and flood-control conditions |
+| JZ-03 | Origin Community campus-adjacent commercialization street | Urban renewal / industrial services | Campus boundaries, ownership, ground-floor uses |
+| JZ-04 | Dazhongsi Station four-quadrant pedestrian connectivity | Transit-station integration / slow mobility | Transit station, road intersections, municipal utility lines |
+| JZ-05 | AI Origin Switchback Plaza | Public space / brand | Station integration, public-space permits |
+| JZ-06 | Jing-Zhang Ring AI Plaza (based on the 1909 themed event plaza built in Phase 2) | Public space / operations | Public-space operation permits, event safety |
+| JZ-07 | Sidaokou Digital Memory Node (based on the restored 1909 old-line rails and historical node) | Culture / brand | Cultural display operations, copyright clearance |
+| JZ-08 | Global AI Week public route | Operations / brand | Public-space permits, event safety, copyright clearance |
+| JZ-09 | On-device computing station prototype | New infrastructure / public services | Energy, computing power, safety and operating entity |
+
+Project evidence chain: transport and slow-mobility projects return to the
+road layer [data:geometry/roads.geojson#ROAD-001], public-space projects to
+the plaza layer [data:geometry/public_space.geojson#PUBLIC-001], and
+phasing and operations projects to the phasing layer
+[data:geometry/phasing.geojson#PHASE-001]; JZ-06/JZ-07 build on facilities
+completed in Phase 2, with the as-built basis in [source:ERQI-OPEN-2026].
 
 The phasing follows the logic of "ignition at the switchback point, north
 and south follow, the full line becomes a network" (a conceptual proposal):
@@ -598,6 +653,17 @@ municipal, transport and ownership conditions are confirmed
   law on barrier-free environment construction
   [standard:GENERATIVE-AI-INTERIM-MEASURES]
   [standard:BARRIER-FREE-ENVIRONMENT-LAW].
+- **Operational landing via Haidian's existing policy mechanisms**
+  (mechanism recommendation, not a commitment): model-call costs can be
+  covered by the Zhongguancun Science City **model coupon** policy (2026
+  application guidelines: no more than 2 domestic foundational-model
+  enterprises selected, each with a subsidy ceiling of RMB 50 million per
+  half year, and 50% subsidy on API calls by Haidian enterprise users)
+  [source:MODEL-COUPON-2026]; innovation services can be connected to
+  Haidian's "Skill" packages, OPC (one-person company) support and the
+  hundred-billion-yuan fund system, embedding the innovation belt's
+  developer and enterprise services into existing policy channels
+  [source:HAIDIAN-AI-DATA-2026].
 - **International communication and commercialization pathway**: the "From
   Switchback to AI" international narrative + the switchback festival's
   invitation-based global developer program → scenario testing → incubation
@@ -659,11 +725,19 @@ in the official boundary, key areas, regulatory plans, roads, plots,
 buildings, municipal facilities, heritage protection and public services
 all enter `assumptions.json`, the self-check and this risk section. The
 main risks include: provisional boundary precision (full-package
-recalculation after the official red lines are released), missing
-regulatory-plan indicators (floor area ratio / height / red lines pending),
-missing baseline data (demolish–renovate–retain pending ownership and
-building surveys), and the boundary of operational commitments (events and
-policies are all conceptual proposals). Any conclusion lacking official
+recalculation after the official red lines are released); missing
+regulatory-plan indicators (floor area ratio / height / red lines pending;
+some blocks along the park entered public display in 2024-12, and every
+item must be cross-checked once the formal regulatory-plan indicators are
+released); missing baseline data (demolish–renovate–retain pending
+ownership and building surveys, with the Phase 2 completed sections of the
+park treated as existing base rather than new construction of this
+proposal); the naming relationship between "Zhongzhiyuan" and the media
+expression "Xuebeiyuan" pending official confirmation
+[source:ERQI-OPEN-2026]; and the boundary of operational commitments
+(events and policies are all conceptual proposals, and policy references
+such as the model coupon serve only as mechanism-basis explanations and do
+not constitute subsidy commitments). Any conclusion lacking official
 regulatory-plan, road-red-line, ownership, municipal, fire-safety or
 heritage-protection conditions is downgraded to a pending-confirmation
 item.

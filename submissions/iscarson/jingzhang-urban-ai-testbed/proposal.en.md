@@ -6,7 +6,7 @@ translation_of: "proposal.md"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
 license: "COMMUNITY-DISPLAY-ONLY"
-iteration: "v0.2"
+iteration: "v0.3"
 summary: "The Jing-Zhang Urban AI Testbed is not a technology showcase. It is a spatial and operational framework for moving laboratory capabilities into real urban conditions, where affected users can require revision, bounded expansion, or exit. One ordinary-city spine, the organiser's Three Zones and Two Wings, three testbed types, eight cross-corridor interfaces, and twelve scenario cards support three flagships: an AI Learning Corridor, an Embodied AI Urban Lab, and an AI Health and Aging Lab. City Release V0.1—V2.0 governs evidence, permission, safety, human takeover, and public return."
 tracks: ["enterprise-services-ecosystem", "civic-agent-governance", "ai-traffic-walkability"]
 scenarios: ["enterprise-service-copilot", "public-safety-operations-review", "ai-traffic-walkability"]
@@ -18,6 +18,19 @@ scenarios: ["enterprise-service-copilot", "public-safety-operations-review", "ai
 **Implementation principle: City-in-the-Loop / 城市在环**
 
 This proposal does not line the Jing-Zhang corridor with more AI products. It asks a harder set of questions: when laboratory capability reaches a street, park, neighbourhood, or transport interface, who defines the problem, who can refuse, who takes over after a failure, and what remains for the city when the system is removed? The historic Jing-Zhang project subjected autonomous engineering capacity to real terrain and long-term operation. The corridor can now subject AI to the real city. “First mile” describes the institutional and spatial distance from research to a first bounded urban setting; it is neither a world-first claim nor an implementation promise.
+
+## One-Page Delivery Summary
+
+| Question | Proposal response | Verifiable delivery |
+| --- | --- | --- |
+| Urban positioning | The Centennial Jing-Zhang Cultural Belt, Urban AI Life Experience Belt, and AI Convergence Innovation Belt translate the vision of a global AI industry highland and a technology-and-culture destination | One spine, Three Zones, Two Wings, and a three-level scope framework |
+| Spatial strategy | An ordinary public-life spine comes first; eight transverse interfaces verify lawful crossings one by one; three testbeds operate only in bounded units | Five bilingual analytical figures, three key-area study windows, and rail verticality |
+| Innovation mechanism | `City-in-the-Loop` puts urban problem owners, ordinary users, and operators before the model; `City Release` governs observation, prototyping, temporary deployment, and replication | Twelve scenario cards, three pilot contracts, and V0.1—V2.0 gates |
+| Delivery organisation | Every trial carries A/R/C/I roles, an ordinary baseline, candidate acceptance gates, an operating receipt, appeal, stop, restoration, and public return | Eight renewal projects, five resource ledgers, and an annual operating loop |
+| Public interest | Six provisional personas identify exclusion; clear routes and human service remain available without a phone, an account, or active AI | Two-line journeys, Human Handoff Desks, and ordinary-service repairs |
+| Evidence boundary | Operating rail is checked by system and vertical position; provisional geometry supports calculation only; no partnership, effect, or statutory metric is invented | Source and assumption registers, compliance/standard/depth matrices, and stop rules |
+
+These are not six parallel concepts. They form one delivery chain: **task positioning → spatial interface → bounded trial → operating receipt → public judgement → revision, exit, or limited replication**. A project remains on paper whenever responsibility, evidence, or restoration is missing.
 
 ## Design Basis and Source List
 
@@ -37,6 +50,8 @@ The coordinated research area asks how innovation resources become urban capabil
 
 The proposal retains the organiser's “one axis, Three Zones and Two Wings.” The axis becomes the Jing-Zhang Heritage–Public Life Spine. Its first duties are walking, accessible movement, cycle connections, rest, shade, toilet and drinking-water information, heritage interpretation, and human service; it must still work when AI is off. The zones align with a Technology Testbed, Innovation Testbed, and Urban Life Testbed. The wings are capability and scenario relationships, not newly drawn development zones. The Zhongguancun Technology Service Wing brings research, evaluation, open-source practice, legal and finance support, and talent services. The Xiaoyue River Scenario Enablement Wing brings ecology, movement, neighbourhood life, and public-service problems.[depth:overall_spatial_structure]
 
+The three positionings are assigned to space and operation rather than left as slogans. The **Centennial Jing-Zhang Cultural Belt** connects railway heritage, public evidence, and AI-governance learning to the technology-and-culture destination function. The **Urban AI Life Experience Belt** connects an ordinary-service baseline and perceptible but removable AI+ scenarios to quality living and an intelligent active city. The **AI Convergence Innovation Belt** connects research, bounded testing, public receipts, and translation to the full-stack industry, innovation ecosystem, and international-exchange functions. The same public spine links all five functions, while each retains a place, operator, and gate to its next version.[source:AGENT-TASKBOOK]
+
 ![One spine, Three Zones, Two Wings, and three testbed types](assets/figures/land-use-structure.en.png)
 
 The eight transverse interfaces, JZ-01 to JZ-08, organise the next field walk and section studies. They are not eight confirmed projects. Each interface must first record legal crossings, the ordinary service baseline, opening status, and accountable operator. A conceptual relationship stops when it reaches an operating railway boundary; only an existing or formally approved bridge, underpass, street crossing, or station passage can establish an east-west connection.[data:geometry/roads.geojson#ROAD-001]
@@ -54,6 +69,10 @@ A world-class ecosystem is not measured by the density of company logos. The pro
 Global cases contribute mechanisms, not transplanted numbers. one-north suggests that research, everyday life, and public space must coexist. STATION F demonstrates programme orchestration. Mila places responsible reflection within a research cycle. Knowledge Quarter demonstrates a multi-institution urban knowledge network. Kendall Square demonstrates long-term ecosystem evolution. Public living-lab and bounded embodied-system testing practices supplement the real-world validation dimension. No external area, investment, firm count, or performance claim becomes a local fact.[source:CASE-ONE-NORTH] [source:CASE-MILA]
 
 The industry-space map runs from capability to interface, not from company to parcel. Zhongzhiyuan concentrates full-stack research, safety evaluation, equipment maintenance, and enclosed trials. Beijing AI Origin Community concentrates problem definition, public explanation, open collaboration, legal support, and translation to application. Dazhongsi tests whether products remain usable in commerce and everyday life, with visible human service and operating cost. The Technology Service Wing supports all three testbeds; the Scenario Wing exposes whether technology reduces or transfers urban burdens.[data:geometry/key_areas.geojson#PROV-KEY-001]
+
+Regional collaboration is organised as candidate interfaces with two-way tasks and no implied commitment. North Latitude Community may provide a public-problem interface among talent, universities, and incubation services. Future Science City may exchange methods for bounded validation between research outcomes and industry problems.[source:REGION-NORTH-LATITUDE] [source:REGION-FUTURE-SCIENCE-CITY]
+
+Huairou Science City may connect major-science outcomes, public science communication, and translation to urban settings. Beijing E-Town may connect robotics manufacturing validation, maintenance, and supply-chain problems. Beijing-Tianjin-Hebei collaboration concerns only test protocols and public receipts that remain reusable after local validation. These directions derive from published functions; they do not claim a partnership, site, resource, order, or budget. Both sides must confirm the problem owner, data authority, cost, intellectual property, and exit before any item enters the project register.[source:REGION-HUAIROU-SCIENCE-CITY] [source:REGION-BTH-ROBOTICS]
 
 The identity avoids another generic “technology” emblem. Its visual direction combines a line recalling the 1909 gauge, a line representing the contemporary city interface, and an open verification frame. The frame always retains a gap: the city can refuse, revise, or exit. Public-facing copy uses “The First Mile from Lab to City”; `Jing-Zhang Urban AI Testbed` remains the working institutional name and is not presented as an official designation or trademark claim.[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]
 
@@ -89,6 +108,8 @@ Six provisional personas are lenses for detecting exclusion, not simulated conse
 
 Twelve scenario cards belong to three flagships. Every card carries the same 17 fields: User, Problem, Ordinary Baseline, AI Capability, Physical Space, Data, Data Authority, Operator, Human Review, Privacy, Safety, Baseline Measure, KPI, Stop Condition, Exit Condition, Evidence, and Public Return. A card does not begin with capability; it first shows how the task remains possible without AI.[data:visual/assets/scenario_nodes.json#SC01] [metric:scenario_node_count]
 
+The three flagships connect AI to different planning domains. The Learning Corridor addresses interpretation and feedback across cultural heritage, public education, and urban governance. The Embodied Lab addresses right-of-way, emergency stopping, and maintenance across transport, public space, and industry testing. The Health and Aging Lab addresses community services, inclusive movement, and human handoff. AI is not a separate “smart infrastructure” layer here; land use, spatial boundaries, operating shifts, public rights, and exit cost jointly constrain it as an urban system.[depth:ai_ecosystem_industry_space]
+
 | Flagship | Scenario cards | Central test question |
 | --- | --- | --- |
 | AI Learning Corridor | City Problem Desk; No-Screen Explanation Walk; Reverse Lab; Failure and Revision Library | Can non-specialists understand, challenge, rewrite, and trace an AI project? |
@@ -96,6 +117,8 @@ Twelve scenario cards belong to three flagships. Every card carries the same 17 
 | AI Health and Aging Lab | No-Phone Service Finder; Rest-to-Service Route; Caregiver Handoff; Service Directory Audit | Can a service journey become more reliable without sensitive health data and while retaining a human alternative? |
 
 Three pilot contracts cover the learning, embodied, and health-and-aging flagships. Each contract names a problem owner, data owner, on-site operator, independent reviewer, and ultimately accountable person. Success concerns end-to-end task completion, burden on the most vulnerable user, takeover, and public return; average model accuracy cannot compensate for harm. Injury, identity disclosure, failed emergency stop, high-risk wrong direction, or a broken human responsibility chain returns the pilot to V0.1.[metric:test_scenario_count] [metric:pilot_contract_count]
+
+Candidate acceptance gates are registered before a test and are not presented as results. PC01 requires a named human owner for every sample, confirmation by the problem submitter that technical translation did not distort the issue, and zero urgent misclassification. PC02 requires every emergency-stop drill to succeed, no equipment intrusion into the ordinary path, and no additional detour for vulnerable users. PC03 requires a no-phone route and named human handoff for every sample, with no diagnosis or risk score. All three currently carry `field_status: not_authorized_not_run`, and measured results remain null. A receipt records version, site, period, accountable shift, baseline, exception, complaint, stop, deletion, and restoration. The public may appeal, the independent reviewer may require downgrade, and the accountable person cannot outsource judgement to the model.
 
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
@@ -127,6 +150,8 @@ The Xiaoyue River Scenario Enablement Wing puts ecology and ordinary use first. 
 
 Three component families create a restrained common character. An `Evidence Frame` shows fact, assumption, responsible party, and update date. A `Human Handoff Desk` provides help without login. A `Recovery Bay` allows malfunctioning equipment to withdraw without occupying movement space. Deep ink, oxidised red, mineral green, and verification orange are functional colours; glowing screens are not used to manufacture an “AI look.” Heritage interpretation cites date and source, and remains distinct from the overall identity.
 
+The cultural narrative follows three steps: evidence from railway engineering, inquiry from Zhongguancun innovation, and public verification through City Release. The year 1909 is not retro scenery; it recalls how long operation tests engineering. Contemporary AI must likewise face the real city, ordinary users, and maintenance cycles. International communication uses the translatable working line **“From railway proof to public AI proof: useful when offline, accountable when active.”** It explains the institution and is not an official slogan. Chinese and English materials retain the same facts, limits, and responsibilities; the English version does not amplify ambition.
+
 The three public landmarks are usable institutions rather than sculptures: the Origin Problem Desk, the City Takeover Gate, and the Centennial Failure Archive. They let the city formulate a problem, let a person take over, and preserve failure for future reuse. Their final provision and location remain subject to operator and site permission.[metric:public_landmark_count] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]
 
 ## Renewal Projects, Implementation Policy, and Phasing
@@ -137,11 +162,17 @@ City Release has four gates. V0.1 Observe confirms the problem, baseline, inform
 
 The policy toolkit is not a subsidy list. It consists of four standard documents: a one-page scenario brief; a site and data permission sheet; a failure and human-takeover record; and a public-return and exit checklist. Procurement or partnership evaluation counts restoration, human labour, energy, no-phone task completion, and burden on the most vulnerable user as total cost. A technology supplier cannot unilaterally decide whether a failure becomes public.
 
-Long-term operations form an annual loop. Spring repeats route and facility baselines. Summer examines thermal conditions and night service. Autumn holds an open City Release Review. Winter publishes maintenance, failure, stop, and deletion records. The programme is a design recommendation; dates, hosts, funding, and partners are not settled.[source:AGENT-TASKBOOK]
+The three pilot contracts use a candidate RACI. The urban problem owner or delegated public operator is accountable (A). On-site operation, facility maintenance, and human-takeover shifts are responsible (R). Railway, planning, accessibility, safety, privacy, and other relevant professionals are consulted (C). Nearby users, site managers, and recipients of the public archive receive comprehensible notice (I). Until real organisations confirm participation, only roles are registered; no institutional commitment is invented. Before V1.0, each trial requires site and data permission, an ordinary baseline, a duty roster, candidate acceptance gates, and a secured restoration item. It closes with a traceable City Release receipt.
+
+Five resource ledgers support delivery: the people ledger records responsibility and shifts; the space ledger records open boundaries, lawful movement, and restoration status; the equipment ledger records power, fire safety, maintenance, emergency stop, and removal; the data ledger records controller, minimum fields, retention, deletion, and appeal; and the public-value ledger records ordinary repairs, human hours, complaints, failures, and what remains. Translation follows **public problem intake → public-interest and professional review → paper/offline/enclosed prototype → bounded temporary trial → public receipt → adopt, revise, or stop → limited replication**. A showcase cannot jump directly to scaled deployment.
+
+Long-term operations form an annual loop. Spring repeats route and facility baselines. Summer examines thermal conditions and night service. Autumn holds an open City Release Review. Winter publishes maintenance, failure, stop, and deletion records. Recurring operating units include a staffed problem desk, accompanied accessibility walks, emergency-stop drills, service-directory audits, and failure-archive maintenance. The programme is a design recommendation; dates, hosts, funding, and partners are not settled.[source:AGENT-TASKBOOK]
 
 ## Metrics, Area Recalculation, and Compliance Matrix
 
 Metrics fall into three groups. Group A is recalculated from current GeoJSON: area and length. Group B counts structured assets, including 12 scenarios, six personas, three test contracts, and three landmarks. Group C is statutory planning or field performance and remains unknown. Groups A and B are auditable but are not automatically evidence of quality. AI cannot fill Group C.[metric:scenario_node_count] [depth:metrics_recalculation]
+
+Numerical fields in the pilot contracts are separated into candidate acceptance gates and measured results. The former enables refusal before a trial; the latter may be populated only after permission, baseline collection, and independent review. All measured results in this iteration are `null`. A single failed hard gate can therefore stop a test without being hidden by an aggregate average.
 
 ![Metrics, sources, unknowns, and City Release gates](assets/figures/metrics-evidence.en.png)
 
@@ -170,7 +201,8 @@ OpenAI Codex generated the text under user direction, cleared/public sources, an
 2. National Railway Administration, Beijing transport, and Haidian public material on the high-speed railway, Qinghuayuan Tunnel, heritage park, and rail relationships.[source:NRA-JINGZHANG-HSR]
 3. Repository site package, source registry, processed fact pack, and provisional geometry.[source:SITE-PACKAGE]
 4. Official or institutional public pages for one-north, STATION F, Mila, Knowledge Quarter, Kendall Square, and related mechanisms.[source:CASE-KENDALL-SQUARE]
-5. WHO age-friendly cities and UN-Habitat child public-space guidance, used only as general design lenses.[source:UNHABITAT-CHILD-PUBLIC-SPACE]
-6. OpenStreetMap contributors, ODbL 1.0, used only for cartographic orientation.[source:OSM-CONTEXT]
+5. Official public material on North Latitude Community, Future Science City, Huairou Science City, Beijing E-Town, and related Beijing-Tianjin-Hebei interfaces, used only to identify candidate collaboration directions.[source:REGION-BTH-ROBOTICS]
+6. WHO age-friendly cities and UN-Habitat child public-space guidance, used only as general design lenses.[source:UNHABITAT-CHILD-PUBLIC-SPACE]
+7. OpenStreetMap contributors, ODbL 1.0, used only for cartographic orientation.[source:OSM-CONTEXT]
 
 Complete URLs, access dates, uses, licences, and limits are recorded in `sources.json`. A structured citation opens an audit trail; it does not increase the authority of a source. Formal development requires coordinated work by planning, architecture, transport, railway, municipal, landscape, heritage, accessibility, safety, privacy, and operations professionals.
