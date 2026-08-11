@@ -4,17 +4,13 @@
   "pr_author": "sixzjd",
   "stage": "formal",
   "deterministic_validation": {
-    "returncode": 1,
+    "returncode": 0,
     "ok": true,
     "stdout": {
-      "ok": false,
-      "errors": [
-        "submissions/sixzjd/the-living-weave/self_check.json: packages marked ready_for_review must persist ok=true",
-        "submissions/sixzjd/the-living-weave/self_check.json: packages marked ready_for_review must persist can_enter_formal_review=true",
-        "submissions/sixzjd/the-living-weave/self_check.json: packages marked ready_for_review must persist pass/blocking gates for DETERMINISTIC_VALIDATION, PROFESSIONAL_EVIDENCE, SPATIAL_REVIEW, VISUAL_PACKAGING"
-      ],
+      "ok": true,
+      "errors": [],
       "warnings": [
-        "submissions/sixzjd/the-living-weave/manifest.json: published schema legacy advisory: files[40]: 'required' is a required property; files[40]: 'role' is a required property; files[40]: Additional properties are not allowed ('type' was unexpected); files[41]: 'required' is a required property; files[41]: 'role' is a required property; ... 14 more; update this manifest before adopting schema 0.2.x",
+        "submissions/sixzjd/the-living-weave/manifest.json: published schema legacy advisory: validation_claim: Additional properties are not allowed ('readiness_contract' was unexpected); update this manifest before adopting schema 0.2.x",
         "submissions/sixzjd/the-living-weave/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied"
       ],
       "proposal_files": [
@@ -72,7 +68,7 @@
       "ai_package_stages": {
         "submissions/sixzjd/the-living-weave": "formal"
       },
-      "total_bytes": 31565195,
+      "total_bytes": 31570501,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -178,11 +174,7 @@
   "can_enter_formal_review": true,
   "package_type": "professional_design_package",
   "review_status": "formal-review-ready",
-  "next_actions": [
-    "Fix deterministic validation error: submissions/sixzjd/the-living-weave/self_check.json: packages marked ready_for_review must persist ok=true",
-    "Fix deterministic validation error: submissions/sixzjd/the-living-weave/self_check.json: packages marked ready_for_review must persist can_enter_formal_review=true",
-    "Fix deterministic validation error: submissions/sixzjd/the-living-weave/self_check.json: packages marked ready_for_review must persist pass/blocking gates for DETERMINISTIC_VALIDATION, PROFESSIONAL_EVIDENCE, SPATIAL_REVIEW, VISUAL_PACKAGING"
-  ],
+  "next_actions": [],
   "checks": [
     {
       "check_id": "DETERMINISTIC_VALIDATION",

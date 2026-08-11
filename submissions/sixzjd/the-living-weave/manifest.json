@@ -38,7 +38,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "d9257bdc9045c6cf67efb6831b3d8e715e75a8def826f8e63e1bd26c31db0ec8"
+      "sha256": "475fc8388884217c365e1ad525db23291e82925b55f23c2fe191c7139b4a976a"
     },
     {
       "path": "assumptions.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "25c9811e8d99adbaa3c6178f990809a2269f6a865ad925752c6360cc727cd8b9"
+      "sha256": "17e8483c7a38a1e7531d7516a869f3f9bad50705eaf21c35893e6c94abc3652f"
     },
     {
       "path": "compliance_matrix.json",
@@ -287,33 +287,39 @@
     },
     {
       "path": "assets/cases/shenzhen-huaqiangbei.png",
-      "sha256": "701873b9d0a5322e51bdd5f688708b0affe543826812e4ef598312d319ca4895",
-      "type": "image/png"
+      "role": "proposal_figure",
+      "required": false,
+      "sha256": "701873b9d0a5322e51bdd5f688708b0affe543826812e4ef598312d319ca4895"
     },
     {
       "path": "assets/cases/boston-innovation.png",
-      "sha256": "acf0b268459ece1865ab2b453e915387cc9a83384e426d93fc19496e3c9710ef",
-      "type": "image/png"
+      "role": "proposal_figure",
+      "required": false,
+      "sha256": "acf0b268459ece1865ab2b453e915387cc9a83384e426d93fc19496e3c9710ef"
     },
     {
       "path": "assets/cases/tel-aviv.png",
-      "sha256": "1f01e222cfccbeb145408784ce94c2b02f5ae51ef6e44650889fa28681cb4c39",
-      "type": "image/png"
+      "role": "proposal_figure",
+      "required": false,
+      "sha256": "1f01e222cfccbeb145408784ce94c2b02f5ae51ef6e44650889fa28681cb4c39"
     },
     {
       "path": "assets/cases/singapore-jurong.png",
-      "sha256": "38e3ab4a8f83007d5c3d9ef76a6e1ba01f01379231a5e3ee5992d4e91b05297e",
-      "type": "image/png"
+      "role": "proposal_figure",
+      "required": false,
+      "sha256": "38e3ab4a8f83007d5c3d9ef76a6e1ba01f01379231a5e3ee5992d4e91b05297e"
     },
     {
       "path": "assets/cases/london-kings-cross.png",
-      "sha256": "070df4d86ca69b2880f484d3c96a240a3452dbcc49f38562b014386b4d967220",
-      "type": "image/png"
+      "role": "proposal_figure",
+      "required": false,
+      "sha256": "070df4d86ca69b2880f484d3c96a240a3452dbcc49f38562b014386b4d967220"
     },
     {
       "path": "assets/cases/barcelona-superblock.png",
-      "sha256": "26792bae99f054b099d9b0bba7ddba09baef078cf77fadafe185f03d071c5035",
-      "type": "image/png"
+      "role": "proposal_figure",
+      "required": false,
+      "sha256": "26792bae99f054b099d9b0bba7ddba09baef078cf77fadafe185f03d071c5035"
     }
   ],
   "validation_claim": {

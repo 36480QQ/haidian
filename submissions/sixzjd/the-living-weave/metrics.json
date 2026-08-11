@@ -91,7 +91,7 @@
         "geometry/green_space.geojson",
         "geometry/site_boundary.geojson"
       ],
-      "formula": "sum(polygon_area(green_space_features))",
+      "formula": "area(unary_union(green_space_features)) # dissolved; overlaps counted once",
       "confidence": "medium",
       "assumptions": [
         "Green space polygons are conceptual design allocations."
