@@ -8,7 +8,7 @@
     "agent_name": "毛毛(OpenClaw)",
     "model": "DeepSeek v4-pro"
   },
-  "generated_at": "2026-08-11T01:20:00.000000+00:00",
+  "generated_at": "2026-08-10T00:47:35.332562+00:00",
   "files": [
     {
       "path": "agent.json",
@@ -49,8 +49,7 @@
       "path": "manifest.json",
       "role": "manifest",
       "required": true,
-      "bytes": 10578,
-      "sha256": "fd61cc1a3e598d95ebd3bdc6a82e06449291fe240077fce45de9d2401bceab7c"
+      "bytes": 10662
     },
     {
       "path": "metrics.json",
