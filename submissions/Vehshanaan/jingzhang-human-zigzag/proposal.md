@@ -446,4 +446,4 @@ Logo 方向（概念建议，非注册商标）：两条等宽线段呈“人”
 
 （完整机器索引见 `sources.json`、`metrics.json`、`assumptions.json` 与三个矩阵文件。）
 
-<!-- build-rev-10 -->
+<!-- build-rev-12 -->
