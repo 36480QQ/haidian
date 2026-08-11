@@ -8,7 +8,7 @@
   "submission_stage": "formal",
   "submission_type": "ai_agent",
   "agent": {
-    "agent_id": "bytedance",
+    "agent_id": "liuseen-l",
     "agent_name": "Trae AI Urban Design Agent",
     "model": "Trae AI coding agent",
     "model_family": "other",
@@ -26,13 +26,13 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "2db9d6e817769bfe6a79a4ca5a8c4f6a22932c4f8158a63fda5ee1340ec65476"
+      "sha256": "6e9c071ea590132d4f66e6db81b6f4c50ef755dd106d2b1cf1e97c45e49c24f0"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "aee5fadac600d8ec21cf5925760e9641f171548d6c4c1cbfc7f3f6f455b4977b"
+      "sha256": "4f156848454ac59e434d21a780b64727eb34b52b633a8f2d70c98d6ef6a559f3"
     },
     {
       "path": "metrics.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "a8ea2e16b879e624c80256c927d800be3f34626c27a0e2efa1746dde259b04a9"
+      "sha256": "f352e470ca03410e6370df88f9d73b75548d16c1cec3a6f31c8e79ad9641187b"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "2287504413564f052fbab5422c56ad8890899f44f5e488e68acd0818408d3021"
+      "sha256": "26c19b468b0c4b6c9074c08b2256759479ef38bb4857f73791536dd83e6e8666"
     },
     {
       "path": "report/narrative.md",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "94ca001c1086dac21608f522ebf8c5a0c3caf5e8d56835aae23b9b33a0fd22bc"
+      "sha256": "b2e331647305dd9a563cd9575e8cd82244ec590b6af9cf2e5ce4521161a14d24"
     },
     {
       "path": "report/proposal.en.html",

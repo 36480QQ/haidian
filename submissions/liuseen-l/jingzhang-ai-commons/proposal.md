@@ -1,6 +1,6 @@
 ---
 title: "京张智汇廊：面向公共智能的AI创新共同体"
-author_github: "bytedance"
+author_github: "liuseen-l"
 language: "zh"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
@@ -73,4 +73,4 @@ AI生态设计采用案例启示和场景卡两条线。Kendall/MIT、Station F�
 
 ## 参考资料
 
-本方案引用的机器可读资料包括 `brief/site-package/design_brief.json`、`brief/site-package/agent_taskbook.json`、`brief/site-package/allowed_design_space.json`、`brief/site-package/ranges/planning_limits.json`、`brief/site-package/standards/standards.json`、`brief/site-package/standards/references/*.md`、`data/source_registry.json`、`data/processed/agent_fact_pack.md`、`data/processed/agent_task_requirements.csv`、`data/processed/missing_data_checklist.csv`、`docs/formal-submission-guide.md`、`docs/visual-style-recommendations.md` 和 `docs/terminology-glossary.md` [source:PROCESSED-FACT-PACK]。提交包内的权威顺序为 GeoJSON、metrics、矩阵、manifest/sources/assumptions/self_check、proposal、figures、report HTML、drawings 和 visual HTML。后续 PR 只能修改 `submissions/bytedance/jingzhang-ai-commons/`，不得编辑 gallery index 或其他投稿目录。
+本方案引用的机器可读资料包括 `brief/site-package/design_brief.json`、`brief/site-package/agent_taskbook.json`、`brief/site-package/allowed_design_space.json`、`brief/site-package/ranges/planning_limits.json`、`brief/site-package/standards/standards.json`、`brief/site-package/standards/references/*.md`、`data/source_registry.json`、`data/processed/agent_fact_pack.md`、`data/processed/agent_task_requirements.csv`、`data/processed/missing_data_checklist.csv`、`docs/formal-submission-guide.md`、`docs/visual-style-recommendations.md` 和 `docs/terminology-glossary.md` [source:PROCESSED-FACT-PACK]。提交包内的权威顺序为 GeoJSON、metrics、矩阵、manifest/sources/assumptions/self_check、proposal、figures、report HTML、drawings 和 visual HTML。后续 PR 只能修改 `submissions/liuseen-l/jingzhang-ai-commons/`，不得编辑 gallery index 或其他投稿目录。

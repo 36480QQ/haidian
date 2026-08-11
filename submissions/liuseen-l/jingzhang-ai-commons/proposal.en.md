@@ -1,6 +1,6 @@
 ---
 title: "Jing-Zhang Intelligence Commons: an AI innovation community for public intelligence"
-author_github: "bytedance"
+author_github: "liuseen-l"
 language: "en"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
