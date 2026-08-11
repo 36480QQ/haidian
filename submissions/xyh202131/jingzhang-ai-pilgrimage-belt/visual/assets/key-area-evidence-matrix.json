@@ -579,6 +579,101 @@
       "all_field_dependent_values_remain_unknown": true
     }
   },
+  "maintenance_urbanism_contract": {
+    "contract_id": "JZ-MAINTENANCE-URBANISM-V1",
+    "status": "concept_only_g0_real_world_evidence_pending",
+    "label_zh": "维护型城市：从日常问题到普通基线",
+    "label_en": "Maintenance urbanism: from everyday issue to ordinary baseline",
+    "purpose_zh": "在不新增场景、项目、几何或成熟度的前提下，把既有十二个场景和八个项目组织为可审计的维护任务、人工旅程、全寿命字段与停止/退役闭环。",
+    "purpose_en": "Without adding scenes, projects, geometry, or maturity, organise the existing twelve scenes and eight projects into auditable maintenance tasks, human journeys, lifecycle fields, and a stop/retirement loop.",
+    "global_guards": {
+      "new_scene_or_project_ids_added": false,
+      "geometry_changed": false,
+      "maturity_changed": false,
+      "all_scenes_remain": "G0",
+      "rule_zh": "维护任务族按用户目标命名，不是新场景、项目编号、批准、采购、人员确认或现实服务。",
+      "rule_en": "Maintenance task families are named for user goals; they are not new scenes, project numbers, approvals, procurement, confirmed personnel, or real services."
+    },
+    "task_families": [
+      {"key": "accessibility_repair", "label_zh": "无障碍修复", "label_en": "Accessibility repair", "user_goal_zh": "让既有日常路径、人工服务与共同测试可被识别、修复和复核。", "user_goal_en": "Make existing daily routes, staffed service, and co-testing identifiable, repairable, and recheckable."},
+      {"key": "climate_comfort_upkeep", "label_zh": "气候舒适维护", "label_en": "Climate-comfort upkeep", "user_goal_zh": "维护既有舒适、遮阴、安静、能耗与环境条件，不把设备当成效果。", "user_goal_en": "Maintain existing comfort, shade, quiet, energy, and environmental conditions without treating equipment as an outcome."},
+      {"key": "public_service_continuity", "label_zh": "公共服务连续性", "label_en": "Public-service continuity", "user_goal_zh": "让失败公开、人工交接、纠正和普通服务恢复可追溯。", "user_goal_en": "Keep published failure, staffed handoff, correction, and return of ordinary service traceable."},
+      {"key": "heritage_authenticity_correction", "label_zh": "遗产真实性纠错", "label_en": "Heritage-authenticity correction", "user_goal_zh": "让来源、叙事、标识与纠错接受策展和独立复核。", "user_goal_en": "Subject sources, narratives, labels, and corrections to curatorial and independent recheck."},
+      {"key": "small_business_service_support", "label_zh": "小微企业服务支持", "label_en": "Small-business service support", "user_goal_zh": "用可理解的人工与非 AI 路径支持小微经营者的问题进入、转交和恢复。", "user_goal_en": "Support small operators through understandable staffed and non-AI routes for issue entry, transfer, and recovery."}
+    ],
+    "scene_task_family_project_crosswalk": [
+      {"scene_id": "SCENE-001", "task_family": "small_business_service_support", "linked_jz_item_ids": ["JZ-03"], "handoff_crosswalk_ref": "visual/assets/implementation-handoff-matrix.json#scenario_crosswalk[SCENE-001]"},
+      {"scene_id": "SCENE-002", "task_family": "climate_comfort_upkeep", "linked_jz_item_ids": ["JZ-02", "JZ-03"], "handoff_crosswalk_ref": "visual/assets/implementation-handoff-matrix.json#scenario_crosswalk[SCENE-002]"},
+      {"scene_id": "SCENE-003", "task_family": "public_service_continuity", "linked_jz_item_ids": ["JZ-03", "JZ-07"], "handoff_crosswalk_ref": "visual/assets/implementation-handoff-matrix.json#scenario_crosswalk[SCENE-003]"},
+      {"scene_id": "SCENE-004", "task_family": "public_service_continuity", "linked_jz_item_ids": ["JZ-07", "JZ-08"], "handoff_crosswalk_ref": "visual/assets/implementation-handoff-matrix.json#scenario_crosswalk[SCENE-004]"},
+      {"scene_id": "SCENE-005", "task_family": "heritage_authenticity_correction", "linked_jz_item_ids": ["JZ-04", "JZ-06"], "handoff_crosswalk_ref": "visual/assets/implementation-handoff-matrix.json#scenario_crosswalk[SCENE-005]"},
+      {"scene_id": "SCENE-006", "task_family": "small_business_service_support", "linked_jz_item_ids": ["JZ-04"], "handoff_crosswalk_ref": "visual/assets/implementation-handoff-matrix.json#scenario_crosswalk[SCENE-006]"},
+      {"scene_id": "SCENE-007", "task_family": "public_service_continuity", "linked_jz_item_ids": ["JZ-04"], "handoff_crosswalk_ref": "visual/assets/implementation-handoff-matrix.json#scenario_crosswalk[SCENE-007]"},
+      {"scene_id": "SCENE-008", "task_family": "climate_comfort_upkeep", "linked_jz_item_ids": ["JZ-01", "JZ-02"], "handoff_crosswalk_ref": "visual/assets/implementation-handoff-matrix.json#scenario_crosswalk[SCENE-008]"},
+      {"scene_id": "SCENE-009", "task_family": "accessibility_repair", "linked_jz_item_ids": ["JZ-01", "JZ-05"], "handoff_crosswalk_ref": "visual/assets/implementation-handoff-matrix.json#scenario_crosswalk[SCENE-009]"},
+      {"scene_id": "SCENE-010", "task_family": "accessibility_repair", "linked_jz_item_ids": ["JZ-01", "JZ-02"], "handoff_crosswalk_ref": "visual/assets/implementation-handoff-matrix.json#scenario_crosswalk[SCENE-010]"},
+      {"scene_id": "SCENE-011", "task_family": "small_business_service_support", "linked_jz_item_ids": ["JZ-05"], "handoff_crosswalk_ref": "visual/assets/implementation-handoff-matrix.json#scenario_crosswalk[SCENE-011]"},
+      {"scene_id": "SCENE-012", "task_family": "public_service_continuity", "linked_jz_item_ids": ["JZ-05"], "handoff_crosswalk_ref": "visual/assets/implementation-handoff-matrix.json#scenario_crosswalk[SCENE-012]"}
+    ],
+    "closed_human_journey": [
+      {"order": 1, "key": "issue_shell", "label_zh": "问题进入壳", "label_en": "issue-entry shell", "reality_status": "pending_not_a_collected_complaint"},
+      {"order": 2, "key": "work_order_shell", "label_zh": "工单壳", "label_en": "work-order shell", "reality_status": "pending_no_real_work_order"},
+      {"order": 3, "key": "responsibility_acceptance", "label_zh": "责任接受", "label_en": "responsibility acceptance", "reality_status": "unknown_no_confirmed_role"},
+      {"order": 4, "key": "human_hours", "label_zh": "计划/实际人工工时", "label_en": "planned/actual human hours", "reality_status": "unknown_no_time_record"},
+      {"order": 5, "key": "existing_facility_first", "label_zh": "既有设施优先", "label_en": "existing-facility-first", "reality_status": "pending_no_inspection"},
+      {"order": 6, "key": "repair_and_component", "label_zh": "修复与可维修组件", "label_en": "repair and repairable component", "reality_status": "pending_no_verified_repair"},
+      {"order": 7, "key": "independent_recheck", "label_zh": "独立复核", "label_en": "independent recheck", "reality_status": "pending_no_recheck"},
+      {"order": 8, "key": "decision", "label_zh": "继续/纠正/停止", "label_en": "continue/correct/stop", "reality_status": "pending_no_decision"},
+      {"order": 9, "key": "retirement_baseline", "label_zh": "退役并回到普通基线", "label_en": "retirement and return to ordinary baseline", "reality_status": "pending_no_retirement_or_restoration"}
+    ],
+    "visible_human_roles": [
+      {"role_key": "maintenance_worker", "label_zh": "维修人员", "label_en": "maintenance worker", "concept_action": "inspect, repair, or decline/transfer pending a confirmed role"},
+      {"role_key": "cleaner", "label_zh": "保洁人员", "label_en": "cleaner", "concept_action": "inspect, clean/adjust, or flag a non-visible condition"},
+      {"role_key": "staffed_service_worker", "label_zh": "有人值守服务人员", "label_en": "staffed service worker", "concept_action": "receive, explain, provide non-AI service, or hand off"},
+      {"role_key": "curator", "label_zh": "策展人员", "label_en": "curator", "concept_action": "review source or heritage-authenticity correction"},
+      {"role_key": "accessibility_co_tester", "label_zh": "无障碍共同测试者", "label_en": "accessibility co-tester", "concept_action": "co-test and independently flag an accessibility gap without being treated as a data source"}
+    ],
+    "lifecycle_fields": [
+      "existing_facility_condition", "clean_or_adjust_option", "repair_option", "repairable_component_replacement_option", "procurement_last_resort_review", "planned_human_hours", "actual_human_hours", "lifecycle_cost", "repairability_and_component_availability", "retirement_and_ordinary_baseline_restoration"
+    ],
+    "existing_facility_first_sequence": ["inspect", "clean_or_adjust", "repair", "replace_repairable_component", "consider_procurement_last"],
+    "decision_rules": {
+      "continue": "only after independent recheck closes and ordinary/non-AI access is preserved; currently pending",
+      "correct": "if the recheck finds a remediable issue, return to an earlier lifecycle step without claiming completion",
+      "stop": "stop if a safe staffed/non-AI route is absent, an independent recheck fails, a rights/accessibility risk occurs, or ordinary baseline cannot be restored",
+      "repeated_failure": "record a repeated failure only after future verified records exist; repeated unresolved failure requires a retirement review",
+      "retirement": "remove temporary components, preserve ordinary access and staffed service, close only the minimum evidence record, and return to ordinary baseline; current status pending"
+    },
+    "quarterly_maintenance_map_template": {
+      "period": "YYYY-QN",
+      "required_columns": ["task_family", "existing_scene_id", "existing_jz_item_id", "issue_type", "human_role_type", "existing_facility_first_step", "independent_recheck_status", "decision", "repeated_failure_flag", "retirement_or_baseline_action"],
+      "real_record_count": 0,
+      "status": "template_only_pending_real_records"
+    },
+    "reality_counters": {
+      "real_complaints": 0,
+      "real_work_orders": 0,
+      "real_budgets": 0,
+      "confirmed_personnel": 0,
+      "planned_human_hours": "unknown",
+      "actual_human_hours": "unknown",
+      "verified_repairs": 0,
+      "independent_rechecks": 0,
+      "measured_effects": 0,
+      "real_approvals": 0,
+      "real_operations": 0,
+      "procurement_decisions": 0,
+      "status": "zero_or_unknown_pending_real_world_evidence"
+    },
+    "evidence_backlinks": {
+      "human_zh": "proposal.md#维护型城市从日常问题到普通基线--maintenance-urbanism-from-everyday-issue-to-ordinary-baseline",
+      "human_en": "proposal.en.md#maintenance-urbanism-from-everyday-issue-to-ordinary-baseline",
+      "metrics": ["metrics.json#maintenance_urbanism_contract_count", "metrics.json#maintenance_real_complaint_count", "metrics.json#maintenance_actual_human_hours", "metrics.json#maintenance_real_approval_count", "metrics.json#maintenance_real_operation_count"],
+      "assumption": "assumptions.json#A-MAINTENANCE-URBANISM-012",
+      "existing_mapping": "visual/assets/implementation-handoff-matrix.json#scenario_crosswalk",
+      "existing_g0_guard": "visual/assets/implementation-handoff-matrix.json#authority_boundary"
+    }
+  },
   "review_protocol": {
     "required_sequence": [
       "read the referenced provisional GeoJSON and source register",

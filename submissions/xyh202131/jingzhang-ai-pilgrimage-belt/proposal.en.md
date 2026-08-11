@@ -70,8 +70,6 @@ Before any G1/G2 pilot, one page must record the “non-AI current baseline → 
 | T-02 / SCENE-011 enterprise service | Staffed counter or traceable static guide using the same frozen question set | Sourced and correctly bounded answers / frozen questions | Stop on an unsourced conclusion, prohibited-data exposure, or unavailable human takeover | 10/10 synthetic decision replays exactly matched; real threshold, owner, site, and service unexecuted; G0 |
 | T-01 / SCENE-001 low-speed delivery | Staffed delivery or static route for the same task | Tasks with no collision, no boundary breach, and a working physical stop / approved controlled tasks | Stop on any collision, boundary breach, physical-stop failure, or broken takeover chain | Safety red lines fixed; efficiency threshold pending preregistration; unexecuted |
 
-![G1 first test: preregister, stop, recover, and independently retest](assets/figures/implementation-roadmap.en.png)
-
 ### Innovation Is Not a Slogan: A Falsifiable Register
 
 V2 closes another remaining gap: the proposal already introduces a proof line, a four-gate system, reversible public space, and public disclosure of failures, but “looking new” still does not prove that an innovation works. `visual/assets/innovation-register.json` binds six core innovations to their baseline shortcoming, novelty claim, falsifiable hypothesis, minimum evidence, pass threshold, failure signal, and exit action. INNOV-006 specifically tests whether the proposal creates a demonstrable and recoverable net increment over the opened park. A claim without a failure signal or exit action cannot be registered as a formal innovation, and operating results that do not yet exist remain `unknown` [data:visual/assets/innovation-register.json#INNOV-001] [data:visual/assets/innovation-register.json#INNOV-006]. Reviewers can therefore ask not only “what is new?” but also “what evidence would prove that it did not work?”
@@ -344,6 +342,24 @@ All AI-generated text, images, audio, video, or virtual scenes carry both public
 ## Renewal Projects, Implementation Policy, and Phasing
 
 This section places phases, pilots, participating parties, and measurable indicators within one implementation framework. Each project first states prerequisites and then a proposed responsibility combination and acceptance indicators. At every phase, monitoring, resident feedback, and professional assessment must determine whether to continue, correct, or exit.
+
+### Maintenance urbanism: from everyday issue to ordinary baseline
+
+This round adds no scene, project, or spatial object. It places the existing 12 `SCENE-001`—`012` records and eight `JZ-01`—`08` records into five **maintenance task families**: accessibility repair (`accessibility_repair`), climate-comfort upkeep (`climate_comfort_upkeep`), public-service continuity (`public_service_continuity`), heritage-authenticity correction (`heritage_authenticity_correction`), and small-business service support (`small_business_service_support`). These are user-goal maintenance classifications, not new scenes, project numbers, or committed services [data:visual/assets/key-area-evidence-matrix.json#maintenance_urbanism_contract].
+
+| Maintenance task family | Existing scenes → existing projects | Maintenance focus |
+|---|---|---|
+| Accessibility repair | `SCENE-009` → `JZ-01`/`JZ-05`; `SCENE-010` → `JZ-01`/`JZ-02` | Everyday issues, accessibility co-testing, break-point repair, and the non-AI route |
+| Climate-comfort upkeep | `SCENE-002` → `JZ-02`/`JZ-03`; `SCENE-008` → `JZ-01`/`JZ-02` | Upkeep of comfort, energy, and environmental conditions; sensors or equipment are not presented as outcomes |
+| Public-service continuity | `SCENE-003` → `JZ-03`/`JZ-07`; `SCENE-004` → `JZ-07`/`JZ-08`; `SCENE-007` → `JZ-04`; `SCENE-012` → `JZ-05` | Published failures, staffed handoff, service restoration, and independent recheck |
+| Heritage-authenticity correction | `SCENE-005` → `JZ-04`/`JZ-06` | Curatorial recheck of sources, narratives, and correction records |
+| Small-business service support | `SCENE-001` → `JZ-03`; `SCENE-006` → `JZ-04`; `SCENE-011` → `JZ-05` | Problem clinic, staffed service, and understandable support for small operators |
+
+The loop starts when an issue enters, but it must not be presented as a collected real complaint: every record is only a `pending` issue shell, followed by a work-order shell, responsibility acceptance, planned/actual human hours, existing-facility inspection, clean/adjust, repair, repairable-component replacement, independent recheck, and a continue/correct/stop decision. Procurement may be considered only after inspection, cleaning or adjustment, repair, and component replacement prove insufficient. Lifecycle cost, repairability, component availability, retirement, and return-to-ordinary-baseline fields remain explicit, while no budget, procurement, personnel, hours, repair, or effect is invented [metric:maintenance_real_complaint_count] [metric:maintenance_actual_human_hours].
+
+The human journey makes maintenance workers, cleaners, staffed service workers, curators, and accessibility co-testers visible. They may receive, decline, or transfer an issue; no real work order exists before responsibility is accepted. A failed independent recheck, repeated failure, missing safe staffed route, or inability to restore daily use triggers stop, removes the temporary layer, and returns to the ordinary baseline. The quarterly maintenance map is a blank template for reviewing task family, existing scene/project, failure type, and retirement decision; it cannot display real complaints, budgets, or performance. `maintenance_urbanism_contract` stores these fields, the 12-scene-to-existing-project mapping, and zero/unknown reality counters in auditable form [data:visual/assets/key-area-evidence-matrix.json#maintenance_urbanism_contract] [assumption:A-MAINTENANCE-URBANISM-012].
+
+![Maintenance urbanism: issue shells, visible human labour, existing-facility-first action, recheck decisions, repeated-failure siding, and restoration of the ordinary baseline (concept contract; real work orders: 0)](assets/figures/implementation-roadmap.en.png)
 
 Eight projects form a renewal package that maps space, protocols, and operations one to one [depth:renewal_project_list]:
 

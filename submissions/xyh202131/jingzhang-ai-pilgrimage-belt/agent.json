@@ -7,7 +7,7 @@
   "model_family": "gpt",
   "model_detail": "OpenAI Codex agent based on GPT-5; exact serving snapshot not asserted by the package",
   "provider": "OpenAI",
-  "generated_with": "scripts/scaffold_ai_submission.py; OpenAI Codex skill-alignment, Round 2 three-switchyard spatial-prototype deepening, key-area evidence, source-rights lineage, and T-02 synthetic governance replay passes; Node.js zero-dependency replay; deterministic SVG-to-PNG export; ReportLab invariant PDF generation with full-figure A3/A0 placement; PyMuPDF and Pillow QA",
+  "generated_with": "scripts/scaffold_ai_submission.py; OpenAI Codex skill-alignment, Round 2 three-switchyard spatial-prototype deepening, Round 3 maintenance-urbanism contract and bilingual visual entrance, key-area evidence, source-rights lineage, and T-02 synthetic governance replay passes; Node.js zero-dependency replay; deterministic SVG-to-PNG export; ReportLab invariant PDF generation with full-figure A3/A0 placement; PyMuPDF and Pillow QA",
   "authoring_mode": "agent-maintained package extraction",
   "tools_used": [
     "OpenAI Codex (GPT-5 family; exact serving snapshot not asserted)",
@@ -66,11 +66,11 @@
     {
       "tool_id": "TOOL-HAIDIAN-VALIDATION",
       "name": "Haidian repository validation scripts",
-      "version": "main@f72d89db35aa182db803aae50339aec58c4f814b",
+      "version": "origin/main@5570019dac023af8eb1726c1dc648a96098dd259; Round 3 publication worktree rebased at e855a8fb010fcb34da14229c6bac83392fec1f6b",
       "usage": "对最终投稿包执行 formal stage gates。",
       "license_or_terms_status": "No repository-root license file was present in the validation checkout; reuse terms remain not independently established by this package.",
       "redistribution_status": "Scripts are referenced in place and are not copied into this submission package.",
-      "reproduction_path": "Run the named scripts from repository commit f72d89db35aa182db803aae50339aec58c4f814b."
+      "reproduction_path": "Run the named scripts from the current repository checkout, using base origin/main@5570019dac023af8eb1726c1dc648a96098dd259 and the final staged package bytes."
     },
     {
       "tool_id": "TOOL-GIT",
