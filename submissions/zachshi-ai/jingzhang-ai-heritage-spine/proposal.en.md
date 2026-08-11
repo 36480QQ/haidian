@@ -67,16 +67,29 @@ The three orientations are: Centennial Jingzhang Cultural Belt, Urban AI Life Ex
 
 The core logic of the three-zone two-wing synergy loop: Zhongzhiyuan Acceleration Area is responsible for AI full-stack self-innovation and technology verification; AI Origin Community for innovation ecosystem cultivation and talent agglomeration; Dazhongsi Industry Cluster for industrial transformation and commercial application; Zhongguancun Service Wing for capital, IP, and internationalization factor allocation; Xiaoyuehe Scenario Wing for scenario testing and urban experience [source:agent-taskbook].
 
+### External Regional Synergy
+
+The proposal defines synergy interfaces with innovation nodes outside Haidian [source:agent-taskbook]:
+- **Beiwei Community**: AI Origin Community shares innovation-district experience with Beiwei Community, forming a north-south paired AI living experience node
+- **Future Science City (Changping)**: Zhongzhiyuan's AI basic research and Future Science City's energy/frontier technology form a "basic research - applied transformation" division
+- **Huairou Science City**: Computing infrastructure and Huairou's large-scale scientific facilities cross-synergize, forming a "computing + experimentation" complement
+- **Beijing Economic-Technological Development Area (Yizhuang)**: Dazhongsi's AI application transformation and Yizhuang's smart manufacturing form an "algorithm + hardware" industrial loop
+- **Beijing-Tianjin-Hebei**: Zhongguancun Service Wing's capital and IP resources radiate to Tianjin and Hebei, forming a regional AI industrial division network
+
+All synergies are conceptual suggestions requiring deepening after regional planning and policy coordination conditions are confirmed.
+
 ### Global AI Innovation Ecosystem Case Studies
 
 The following 6 global cases provide spatial and operational references for the proposal [source:agent-taskbook]:
 
-1. **Silicon Valley Sand Hill Road**: Venture capital agglomeration model, inspiring the capital empowerment mechanism of the Zhongguancun Service Wing
-2. **London King's Cross**: Railway heritage regeneration model, inspiring the vitality activation strategy of Jingzhang Heritage Park
-3. **Seoul DMC (Digital Media City)**: Digital content industry agglomeration, inspiring the business format organization of Dazhongsi Industry Area
-4. **Singapore One-North**: Industry-academia-research integrated park, inspiring the innovation ecosystem of Zhongzhiyuan Acceleration Area
-5. **Tokyo Shibuya**: AI+commercial experience, inspiring Dazhongsi smart consumption scenario design
-6. **Amsterdam Science Park**: Open innovation community, inspiring the shared space system of AI Origin Community
+1. **Silicon Valley Sand Hill Road**: Venture capital agglomeration model, inspiring the capital empowerment mechanism of the Zhongguancun Service Wing. Source: Brookings, *The Rise of Innovation Districts* (2014)
+2. **London King's Cross**: Railway heritage regeneration model, inspiring the vitality activation strategy of Jingzhang Heritage Park. Source: Argent LLP King's Cross regeneration public planning documents
+3. **Seoul DMC (Digital Media City)**: Digital content industry agglomeration, inspiring the business format organization of Dazhongsi Industry Area. Source: Seoul Metropolitan Government DMC official planning documents (2002)
+4. **Singapore One-North**: Industry-academia-research integrated park, inspiring the innovation ecosystem of Zhongzhiyuan Acceleration Area. Source: JTC Corporation One-North official planning
+5. **Tokyo Shibuya**: AI+commercial experience, inspiring Dazhongsi smart consumption scenario design. Source: Shibuya Ward urban planning public materials
+6. **Amsterdam Science Park**: Open innovation community, inspiring the shared space system of AI Origin Community. Source: Amsterdam Science Park official annual reports
+
+The above cases are background references (background_only), not directly serving as local planning conclusions; translation from cases to Jing-Zhang must be deepened by professional teams after regulatory and implementation conditions are confirmed.
 
 ## Overall Design Area: Urban Renewal and Regulatory-Plan-Depth Urban Design
 
@@ -86,7 +99,7 @@ The spatial structure of the overall design area is "One Spine, Three Zones, Two
 
 ### Land-Use Layout
 
-The proposal divides the overall design area into 10 land-use types, covering research, culture, education, residential, commercial, park green space, protective green space, plaza, and reserved land [data:geometry/land_use.geojson]. The core logic of the land-use layout is to use the Jingzhang Heritage Park green spine as the central axis [data:geometry/land_use.geojson#LU-004], with research, education, and residential functions on both sides, and commercial service functions concentrated in the south [depth:land_use_layout].
+The proposal divides the overall design area into 10 land-use categories (18 parcels), covering research, culture, education, residential, commercial, park green space, protective green space, plaza, and reserved land [data:geometry/land_use.geojson]. The core logic of the land-use layout is to use the Jingzhang Heritage Park green spine as the central axis [data:geometry/land_use.geojson#LU-004], with research, education, and residential functions on both sides, and commercial service functions concentrated in the south [depth:land_use_layout].
 
 Land-use areas are recalculated from the geometry files [metric:site_area_sqm]. Green space and public space together account for approximately 48.8%, reflecting a people-oriented, innovation-interaction-prioritized spatial allocation strategy [metric:green_ratio] [metric:public_space_ratio].
 
@@ -130,13 +143,22 @@ The renewal strategy adopts a "retain-renovate-new" classification. Historical J
 
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
-### User Personas (5 types)
+### User Personas (5 core + 4 inclusivity supplements)
 
+**Core personas:**
 1. **AI Researcher**: Needs computing power, data, and quiet research environment; active in Zhongzhiyuan Acceleration Area
 2. **AI Entrepreneur**: Needs incubation space, investment connections, and scenario testing; active in AI Origin Community
 3. **AI Engineer**: Needs commute convenience, technical exchange, and quality living; active across three zones
 4. **Community Resident**: Needs convenient services, safe environment, and public space; active in residential support areas
 5. **Visitor/Experiencer**: Needs perceivable AI experiences, cultural tours, and consumption scenarios; active in public spaces and commercial areas
+
+**Inclusivity supplement personas:**
+6. **Elderly Residents**: Need accessible slow-mobility, traditional service channels, and health monitoring; active in community public service facilities. AI scenarios must preserve human service and offline channels; digital skills must not be a prerequisite [source:agent-taskbook]
+7. **Children and Youth**: Need safe walking environments, educational resources, and public activity space; active around schools and parks. AI education scenarios require guardian consent and data minimization
+8. **People with Disabilities**: Need accessible continuous pathways, information accessibility, and assistive technology. All public spaces and AI scenarios must preserve non-AI alternative pathways and appeal channels [standard:BARRIER-FREE-ENVIRONMENT-LAW]
+9. **Low-Digital-Skill / Low-Income Residents**: Need affordable services, non-technical participation channels, and technology-exclusion protection. AI scenarios must provide offline human-service options and price protection mechanisms [source:agent-taskbook]
+
+Privacy boundaries, human review mechanisms, and appeal channels for all scenarios are detailed in the scenario card table. The proposal does not exclude any group from public space and basic services.
 
 ### AI Scenario Cards (12)
 
@@ -195,7 +217,7 @@ The Jingzhang Heritage Park green spine is the core public space of the proposal
 
 ### Blue-Green Space System
 
-Blue-green spaces include the Jingzhang Heritage Park core green belt, protective green space, pocket parks, and ecological buffer zones [data:geometry/green_space.geojson]. Total green space area is approximately 3.05 million m², with a green ratio of approximately 26.7% [metric:green_ratio].
+Blue-green spaces include the Jingzhang Heritage Park core green belt, protective green space, pocket parks, and ecological buffer zones [data:geometry/green_space.geojson]. Total green space area is approximately 2.93 million m², with a green ratio of approximately 25.6% [metric:green_ratio].
 
 ### AI Pilgrimage Landmarks (3)
 
@@ -229,13 +251,21 @@ The proposal uses "one railway, one century, one AI city" as its international c
 
 ## Renewal Project List, Implementation Policy, and Phasing Plan
 
-### Phased Implementation
+### Phased Implementation and Conceptual Project Packages
 
-The proposal is implemented in three phases [data:geometry/phasing.geojson]:
+The proposal is implemented in three phases, each composed of verifiable conceptual project packages [data:geometry/phasing.geojson]:
 
-- **Near-term (1-3 years)**: AI Origin Community core area construction, approx. 104.3 ha [data:geometry/phasing.geojson#PH-001]
-- **Mid-term (3-5 years)**: Dazhongsi Industry Area + Jingzhang Park core section, approx. 72.0 ha [data:geometry/phasing.geojson#PH-002]
-- **Long-term (5-10 years)**: Zhongzhiyuan Acceleration Area construction, approx. 192.1 ha [data:geometry/phasing.geojson#PH-003]
+| Phase | Conceptual Project Package | Prerequisites | Actor Type | Funding Type | Exit Condition |
+|-------|---------------------------|---------------|------------|--------------|----------------|
+| Near-term (1-3 yr) | AI Origin Community Innovation Center | Regulatory plan confirmed, ownership verified | Government-guided + enterprise | Fiscal + social capital | Center operational, 60% occupancy |
+| Near-term | Tsinghuayuan Memory Node + slow-mobility north section | Heritage protection scope confirmed | Government investment | Fiscal | Public space accepted and opened |
+| Near-term | AI scenario trial platform (3 test scenarios) | Data compliance sandbox ready | Enterprise-operated + government-regulated | Enterprise + special | Test scenarios pass safety review |
+| Mid-term (3-5 yr) | Dazhongsi AI Experience Center + industry towers | Land ownership confirmed, commercial conditions | Enterprise investment | Social capital | Industry towers 70% occupancy |
+| Mid-term | Jingzhang Park core section + blue-green system | Park land confirmed | Government investment | Fiscal | Park accepted and opened |
+| Long-term (5-10 yr) | Zhongzhiyuan computing center + R&D core | Computing plan approved, land adjustment | Government-guided + enterprise | Fiscal + social capital | Center operational, PUE meets standard |
+| Long-term | AI pilgrimage landmarks (3) | Heritage/aviation/landscape control confirmed | Government + sponsorship | Fiscal + social donation | Landmarks accepted into operation system |
+
+All are conceptual project packages, not confirmed implementation arrangements. All areas (104.3/72.0/192.1 ha) are derived from provisional boundaries and must be recalculated when official boundaries are published. Each package requires regulatory conditions, ownership confirmation, and professional review before deepening by professional teams [assumption:A-CONTROLS-001].
 
 ### Global AI Innovation Activity System
 
@@ -266,14 +296,14 @@ All activities, investment attraction, funding, and policy arrangements are conc
 | Metric Name | Value | Unit | Source |
 |-------------|-------|------|--------|
 | Overall Design Area | 11,412,825 | sqm | geometry/site_boundary.geojson |
-| Green Space Area | 3,049,402 | sqm | geometry/green_space.geojson |
-| Green Ratio | 26.7% | ratio | recalculated |
-| Public Space Area | 2,514,515 | sqm | geometry/public_space.geojson |
-| Public Space Ratio | 22.0% | ratio | recalculated |
+| Green Space Area | 2,926,123 | sqm | geometry/green_space.geojson |
+| Green Ratio | 25.6% | ratio | recalculated |
+| Public Space Area | 2,385,759 | sqm | geometry/public_space.geojson |
+| Public Space Ratio | 20.9% | ratio | recalculated |
 | Building Footprint Area | 550,111 | sqm | geometry/buildings.geojson |
 | Building Density | 4.8% | ratio | recalculated |
 | Key Area Count | 3 | count | geometry/key_areas.geojson |
-| Land-Use Zone Count | 10 | count | geometry/land_use.geojson |
+| Land-Use Zone Count | 18 | count | geometry/land_use.geojson |
 | Building Count | 15 | count | geometry/buildings.geojson |
 | Road Segment Count | 8 | count | geometry/roads.geojson |
 | Phase Count | 3 | count | geometry/phasing.geojson |
