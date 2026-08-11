@@ -38,3 +38,10 @@
   - 删除 `proposal.md` 末尾的 markdown 注释（被 `render_proposal_html.py` 转义成可见的 `<p>&lt;!-- ... --&gt;</p>`）；删除 `report/proposal.en.html` 末尾的 `<!-- regenerated ... -->` 注释。
 - `geometry/land_use.geojson` 同步标记更新到 v0.1.2。
 - 重新跑 finalize + self_check + preflight，can_enter_formal_review=true，preflight=PASS。
+
+## v0.1.3 - 2026-08-12
+
+- 同步 upstream main 27 commits（merge 后 ahead=0）。本地 `validate_manifest_schema.py --strict` 通过；`validation_claim.readiness_contract` 已声明 `persisted-self-check-v1`。
+- `proposal.md` / `proposal.en.md` 新增 **Provisional geometry caveat (sync with upstream #1029)**：明确指出 `PROV-KEY-003` 临时多边形质心位于北京北站一带，距大钟寺站约 2.26 km。本方案在 `geometry/key_areas.geojson` 中沿用 PROV-KEY-003 ID，仅引用面积与命名（与公告 1.5(3)3) 对齐），空间叙述明确指向"大钟寺地铁站所在路口四象限"，不依赖临时多边形几何坐标。official polygon 发布后必须重新跑 scaffold / self_check / 复算。
+- `geometry/land_use.geojson` `_synced_by` 更新到 v0.1.3。
+- 重新跑 finalize + self_check + preflight 三关，can_enter_formal_review=true / next_actions=[]。

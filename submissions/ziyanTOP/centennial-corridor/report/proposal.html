@@ -172,6 +172,7 @@ code {
 <h3>智脉三核一览</h3>
 <div class="proposal-table"><table><thead><tr><th>重点片区</th><th>设计定位</th><th>空间动作</th><th>AI 产业与运营场景</th><th>证据引用</th></tr></thead><tbody><tr><td><strong>原点核</strong>（北京 AI 原点社区，约 104.3 公顷）</td><td>近校型成果转化与人才社区</td><td>组织校区、园区、街区慢行缝合；补足成果发布、人才服务、居住生活和开源协作空间</td><td>开源发布厅、成果发布、人才特区服务、近校孵化</td><td><code>[data:geometry/key_areas.geojson#PROV-KEY-001]</code></td></tr><tr><td><strong>众智核</strong>（众智园 AI 自主创新加速区，约 192.1 公顷）</td><td>花园型全栈自主创新街区</td><td>强化清河界面、产业展示、低碳创新交往和对外交通组织；绿色空间承载开放测试与标准治理展示</td><td>自主模型测试、标准制定工作坊、安全治理展示、低碳算力体验</td><td><code>[data:geometry/key_areas.geojson#PROV-KEY-002]</code></td></tr><tr><td><strong>大钟核</strong>（大钟寺 AI 产业集聚区，约 72.0 公顷）</td><td>城市型智能经济与国际交往街区</td><td>围绕大钟寺站一体化、四象限步行连通、商业服务和重点企业公共环境更新</td><td>智能体与智能终端展示、内容消费、数据要素与国际路演</td><td><code>[data:geometry/key_areas.geojson#PROV-KEY-003]</code></td></tr></tbody></table></div>
 <p>三处重点区域的几何在 <code>geometry/key_areas.geojson</code> 中出现；若 official polygons 缺失，暂用 provisional polygons，正文、HTML、sources、assumptions 和 self_check 均说明它不能作为正式评分或审批依据。<code>compliance_matrix.json</code> 分别覆盖公告 1.5.3.1、1.5.3.2、1.5.3.3。</p>
+<blockquote><p><strong>Provisional geometry caveat (sync 2026-08-12 with upstream #1029)</strong>：<code>PROV-KEY-003</code> 的临时 polygon 质心据维护者报告位于北京北站一带，距大钟寺站约 2.26 km（详见 issue #1029）。本方案在 <code>geometry/key_areas.geojson</code> 中沿用 upstream 给出的 PROV-KEY-003 ID，仅引用其面积（约 72.0 公顷，与公告对齐）与命名（&quot;大钟寺 AI 产业聚集区&quot;，与公告 1.5(3)3) 对齐）；空间叙述明确指向&quot;大钟寺地铁站所在路口四象限&quot;，并不依赖临时多边形的几何坐标。official polygon 发布后必须重新跑 scaffold / self_check / 复算。</p></blockquote>
 <h2>AI 创新生态、人才画像与 AI+ 场景</h2>
 <p>方案建立面向 AI 人才和企业的空间需求画像，覆盖研发办公、开源协作、成果发布、企业服务、人才居住、社交学习、消费生活、运动休闲和国际交往 <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="ai_ecosystem_persona" title="深度：ai_ecosystem_persona">深度</sup>。AI+ 场景围绕公告提出的交通、服务、消费、医疗、教育、法律、生活服务等方向，形成产业发展场景和 AI 赋能城市功能场景。每个场景说明服务对象、空间位置、数据来源、隐私边界、人工复核机制和运营主体。</p>
 <h3>用户画像（不少于 5 类）</h3>
@@ -290,6 +291,6 @@ code {
 <li>北京市规划和自然资源委员会海淀分局《百年京张AI创新带城市设计国际方案征集资格预审公告》</li>
 <li>本节书目入口依据场地包登记，完整出处和许可见结构化来源清单 <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="SITE-PACKAGE" title="来源：SITE-PACKAGE">来源</sup></li>
 </ul>
-</main>
+<p hidden>v0.1.3 changelog 2026-08-12T02:49:19.021834</p></main>
 </body>
 </html>

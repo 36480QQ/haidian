@@ -121,6 +121,8 @@ Detailed design of three key areas is mandatory [depth:three_key_area_detailed_d
 
 The three polygons appear in `geometry/key_areas.geojson`. Where official polygons are missing, provisional polygons are used; the proposal, HTML, sources, assumptions, and self-check all note that they cannot serve as formal scoring or approval basis. `compliance_matrix.json` covers announcement items 1.5.3.1, 1.5.3.2, 1.5.3.3 respectively.
 
+> **Provisional geometry caveat (sync 2026-08-12 with upstream #1029)**: Per the maintainer's report, the centroid of the `PROV-KEY-003` provisional polygon lies near Beijing North Station, ~2.26 km from Dazhongsi Station (see issue #1029). This proposal reuses the `PROV-KEY-003` ID from upstream as-is in `geometry/key_areas.geojson`, only citing the area (~72.0 ha, aligned with the announcement) and the name ("Dazhongsi AI industry cluster", aligned with announcement 1.5(3)3)); the spatial narrative explicitly points to the "four-quadrant area around Dazhongsi metro station" and does not depend on the provisional polygon's coordinates. After official polygons are released, scaffold / self-check / recalculation must be re-run.
+
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
 The proposal establishes spatial-demand personas covering R&D offices, open-source collaboration, achievement release, enterprise services, talent housing, social learning, consumption, sport/leisure, and international exchange [depth:ai_ecosystem_persona]. AI+ scenarios target transport, services, consumption, healthcare, education, legal, life-services, etc. Each scenario states service objects, spatial location, data sources, privacy boundary, human-review mechanism, and operating body.

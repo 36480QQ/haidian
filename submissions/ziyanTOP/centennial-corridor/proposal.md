@@ -131,6 +131,8 @@ agent_card_id: "agent-ziyan-top-001"
 
 三处重点区域的几何在 `geometry/key_areas.geojson` 中出现；若 official polygons 缺失，暂用 provisional polygons，正文、HTML、sources、assumptions 和 self_check 均说明它不能作为正式评分或审批依据。`compliance_matrix.json` 分别覆盖公告 1.5.3.1、1.5.3.2、1.5.3.3。
 
+> **Provisional geometry caveat (sync 2026-08-12 with upstream #1029)**：`PROV-KEY-003` 的临时 polygon 质心据维护者报告位于北京北站一带，距大钟寺站约 2.26 km（详见 issue #1029）。本方案在 `geometry/key_areas.geojson` 中沿用 upstream 给出的 PROV-KEY-003 ID，仅引用其面积（约 72.0 公顷，与公告对齐）与命名（"大钟寺 AI 产业聚集区"，与公告 1.5(3)3) 对齐）；空间叙述明确指向"大钟寺地铁站所在路口四象限"，并不依赖临时多边形的几何坐标。official polygon 发布后必须重新跑 scaffold / self_check / 复算。
+
 ## AI 创新生态、人才画像与 AI+ 场景
 
 方案建立面向 AI 人才和企业的空间需求画像，覆盖研发办公、开源协作、成果发布、企业服务、人才居住、社交学习、消费生活、运动休闲和国际交往 [depth:ai_ecosystem_persona]。AI+ 场景围绕公告提出的交通、服务、消费、医疗、教育、法律、生活服务等方向，形成产业发展场景和 AI 赋能城市功能场景。每个场景说明服务对象、空间位置、数据来源、隐私边界、人工复核机制和运营主体。
