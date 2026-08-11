@@ -24,20 +24,20 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "9c593400b5f4758764bf16e924adeae10eeee4b0ca32a75748360e03c25273bc"
+      "sha256": "7f86f6e3af29fc0b96ea0bb7033c6e985fbebc3054c1bb11267a68d15d6db8b5"
     },
     {
       "path": "changelog.md",
       "role": "changelog",
       "required": true,
       "language": "zh",
-      "sha256": "d62b4f37c6e0d7ede8c0c67c9cbebc07140cffe1721e781fc23a39f69e7da526"
+      "sha256": "75db69d641881c38c39527fc152d59d7be08c6eeec24f63c2d8bfcec0905ddc0"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "8ffa8376b7177d1b12124d0a352ebf3c94b335f41de12bf461b1de9ada05de72"
+      "sha256": "d19b4d09caa163d35554d17dad7ddc778e7650ef7580e382bf8cf510aa0ddd7f"
     },
     {
       "path": "metrics.json",
@@ -55,19 +55,19 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "1095372814cb732488658b228647f7753ad4eed73206fa75ac08c26d7737f752"
+      "sha256": "5d40a6834b3641c12b6bc2cb76d314df2528356b50f13eb1a0b299c4c3e3cb18"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "9964419a2017968b4f6fc77c4f35a64f289b4eb89cda33281a97acebf45a3861"
+      "sha256": "3da6907b569bd9ec5bbc4891c52054d0dd581dd09563d1ed5c0888823c88e3ac"
     },
     {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "a7367720275d70b314a706aaf5fa3d5cdece0a5acae4b2a8f8a701d4857128a3"
+      "sha256": "53833ff9dcf52a41bd78561d839c1a3c21f8c8844876776bf20f37f670d1f16e"
     },
     {
       "path": "standard_matrix.json",
@@ -86,13 +86,13 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "cc4ed97e3b38ad64f433561b90e23003356908793d459a142575ea524ad5c9b0"
+      "sha256": "e54d386e664fb067d76b41eb6381ff347dd6b40216c7891b6cf016debf2c9470"
     },
     {
       "path": "report/narrative.md",
       "role": "narrative",
       "required": false,
-      "sha256": "0610f1cbfea2dbbbdf56c5c60253c00f99300c7b99a0fcd62c590adfe6bcc82c"
+      "sha256": "fb0c5f1f933eafc5053f879e6bc5f3ead69c402a3f7393ff393588b007433ff0"
     },
     {
       "path": "report/copyright_statement.md",
@@ -105,21 +105,21 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "d1ca740e5a47a1b561bfee3d1393b84e44df16adc46fc51cc2fe5ccaf10b3155"
+      "sha256": "ded6979c7017ccf3503bb46b980a332b2c6cedca7382b3bb40b8d946de15c9b1"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "02acb8210d39a5c33142bac2345bcdd41e1db0c1fe1d303a255605e4fef1526e"
+      "sha256": "db46e988af9190cd59a30e694734da763c24285d469c3bb89cab1464e88e5a4b"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "224f3cdb02739c247fba5e1c2b68708657b366dd6256890604437b94aaa59ee7"
+      "sha256": "40d0e7d7edef46cd99be605f5fc18c99cecf3600df3b46280a38bd74a394678c"
     },
     {
       "path": "visual/assets/jingzhang-civic-conversion-accountability-chain.schema.json",
@@ -154,7 +154,7 @@
       "role": "visualization",
       "required": true,
       "language": "neutral",
-      "sha256": "8ee7b9d3b37ec37c23408017cdcf95952d17dabaa00755f5328bf36fad99a921"
+      "sha256": "12471897b07e01d25df1341291d05e622bfbb93408238d742a6ab9a1ee8a386e"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -175,7 +175,7 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "75afb4b7a51dab5d4f0e7d843dd9832ec71723610adbfb2eaea716b4ea72a9fa"
+      "sha256": "3c1884786eb53fabe1e46aee3a397556b64100a62b139a22bf8977c7107d4293"
     },
     {
       "path": "assets/figures/mobility-bluegreen.png",
@@ -251,7 +251,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "e4311dd247ba80c06de5b3eda4569ca681cc6d0bb028675f515c96ab03c7f55b"
+      "sha256": "c83d8d8539be53e1c1d72b4914d4d54f2ab5f3189d6baaed6c674e3ec3643690"
     },
     {
       "path": "report/proposal.en.html",
@@ -259,7 +259,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "7ed1645b3078dfd0e2b27c873cf2f3b24f9d14bac2de3f048f95c197136f3b18"
+      "sha256": "5d6956d9aacdcd02ee6ceffdf928a2823330bd7ac38f62d6a0e64518d7019044"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -267,7 +267,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "9a464bfbf80e310b448a698d372f8790fb44fc473ca3e4abcb7297e706ae8de3"
+      "sha256": "711f2922ff38bec731e189559deaa15fef9fc7b49fce6536cdb76212483c4e56"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -275,7 +275,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "e1a8ebc228fcb3cfccbf97d7839ec29d97bc002e4993ec97653e68c1f9c00201"
+      "sha256": "851db300b6836eccd85fe611ecfd91fe382b452013889bf93cbf78bc8f3d8936"
     },
     {
       "path": "visual/index.en.html",
@@ -283,7 +283,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "46c28faecca86bdd77de23976957e3ca82236d3050bb1e3e4329c9de8dfb6f30"
+      "sha256": "d9a59cdebf4985c8b47b034af6249b487c4373eb60224e9ebca74daa32e24415"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -307,7 +307,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/metrics-evidence.png",
-      "sha256": "fe04b2ef005ec7483530d420bb3df40bf9b8d1567221f2b122cd971b4346c11a"
+      "sha256": "531a7f8405073038a4d82141f0daa50b9134b130b5d63bff9be400cc8d7dc8a3"
     },
     {
       "path": "assets/figures/mobility-bluegreen.en.png",
@@ -381,11 +381,63 @@
       "required": true,
       "language": "neutral",
       "sha256": "ab4ad6ac1b880b458fde613184143c445815a5ca244348bc421853057c503d5f"
+    },
+    {
+      "path": "assets/figures/ai-origin-prototype.png",
+      "role": "visualization",
+      "required": true,
+      "language": "zh",
+      "sha256": "ff0d353b2e515075a0b9bdc4d847f31b5fc291616a6424b3eea5715c7aa1612d"
+    },
+    {
+      "path": "assets/figures/ai-origin-prototype.en.png",
+      "role": "visualization",
+      "required": true,
+      "language": "en",
+      "translation_of": "assets/figures/ai-origin-prototype.png",
+      "sha256": "d139893f23d6add10daa4f9329b208c0142c3ca336c1c057bb713acbc2653084"
+    },
+    {
+      "path": "assets/figures/ai-spatial-stack.png",
+      "role": "visualization",
+      "required": true,
+      "language": "zh",
+      "sha256": "730a28ecb7b9aa882f23a93c8cd39d54aca537c233f212f6a24883147bc1fe5a"
+    },
+    {
+      "path": "assets/figures/ai-spatial-stack.en.png",
+      "role": "visualization",
+      "required": true,
+      "language": "en",
+      "translation_of": "assets/figures/ai-spatial-stack.png",
+      "sha256": "a183e3094fed95faaec5cb7342789898a8aab0cbc142cf903bf6c6919c9f74c4"
+    },
+    {
+      "path": "visual/assets/ai-origin-prototype-control.json",
+      "role": "structured_evidence",
+      "required": true,
+      "language": "neutral",
+      "sha256": "f837c37782e4f2e44ad101f08961ccd17210a74639415e40f5ffe8d17a43662d"
+    },
+    {
+      "path": "visual/assets/ai-spatial-performance-stack.json",
+      "role": "structured_evidence",
+      "required": true,
+      "language": "neutral",
+      "sha256": "b1b5216607b1a5c7b47d7db98f9717ce5ec141c6cedd31646a03adc091f70a14"
+    },
+    {
+      "path": "visual/assets/lived-culture-dual-ledger.json",
+      "role": "structured_evidence",
+      "required": true,
+      "language": "neutral",
+      "sha256": "d6997e5ecefdeb130548707ac791af00fb35c2ca00f03843b812897e4d28984e"
     }
   ],
   "validation_claim": {
-    "self_checked": false,
+    "self_checked": true,
     "known_blockers": [],
-    "data_confidence": "medium"
+    "data_confidence": "medium",
+    "readiness_contract": "persisted-self-check-v1"
   }
 }
