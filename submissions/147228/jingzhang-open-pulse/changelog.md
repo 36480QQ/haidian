@@ -4,6 +4,7 @@
 
 - 新增 `visual/assets/spatial-lineage-register.json`，逐项登记 9 个 GeoJSON 图层的要素数、几何类型、图层角色、临时边界状态和原始 SHA-256；新增 `run-spatial-lineage-register.js`，确定性校验图层覆盖、manifest 哈希、指标公式中的 EPSG:4548 声明与当前 GeoJSON 未嵌入 CRS 的事实。
 - 在中英文正文中增加空间图层版本与坐标基线表，明确公式中的 CRS 引用不等于坐标认证；官方边界到位后必须整体重算图层、指标、报告、图册与 HTML。
+- 将持久化 `self_check.json` 的临时边界警示与正文统一：临时几何仅支持结构化 intake 复核和人类阅读，不建立专业评分、正式接收、发布或合并资格；官方几何到位后重算并刷新 manifest 哈希。
 - 本轮不改变 GeoJSON、面积指标、来源分类、官方边界状态、现场结果或实施授权。
 
 ## v4.2 - 2026-08-10

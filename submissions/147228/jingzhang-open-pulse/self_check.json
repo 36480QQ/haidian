@@ -10,7 +10,7 @@
       "ok": true,
       "errors": [],
       "warnings": [
-        "submissions/147228/jingzhang-open-pulse/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied"
+        "submissions/147228/jingzhang-open-pulse/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Provisional geometry supports only structural/intake review and human reading; it does not establish professional-scoring, formal-acceptance, publication or merge eligibility. Recalculate when official geometry is supplied."
       ],
       "proposal_files": [
         "submissions/147228/jingzhang-open-pulse/proposal.md"
@@ -176,7 +176,7 @@
       "ai_package_stages": {
         "submissions/147228/jingzhang-open-pulse": "formal"
       },
-      "total_bytes": 14405885,
+      "total_bytes": 14419551,
       "maintainer_bypass": false
     },
     "stderr": ""
