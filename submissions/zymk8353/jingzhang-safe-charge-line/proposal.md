@@ -27,6 +27,8 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 当前官方精确总体边界与三处重点区域 polygon 仍未进入公开场地包。本提交沿用仓库 `provisional_boundaries.geojson`，所有临时边界均为低置信度工作范围，不是红线、地块、道路、设备位置或精确面积依据；官方数据发布后，九类图层、指标、十张双语图、HTML 与 PDF 必须整包再生。[data:geometry/site_boundary.geojson#SITE-001] [source:BOUNDARY-SOURCE]
 
+区位核验补充：仓库 Issue #1029 的公开复算记录指出，上游 `PROV-KEY-003` 临时 polygon 的面积与南北顺序自洽，但质心约位于北京北站一带，距大钟寺站约 2.26 km。该记录不是官方边界，也不是自行平移的授权。本案保留上游几何只作占位；“大钟寺”任务叙事来自公告名称，所有真实站点、社区、停车场和充换电设施候选必须另行现场与责任主体核验。官方或 canonical 几何更新后，整体重算图层、指标、图件、PDF 与 HTML。[source:ISSUE-1029] [assumption:A-BOUNDARY-001]
+
 ## 三层范围工作框架
 
 统筹研究范围回答“怎样把可靠性变成 AI 创新生态的共同能力”；总体设计范围回答“怎样让责任接口进入停车、慢行、公共空间和产业服务”；三处重点区域回答“验证、公众解释和日常采用分别在哪里发生”。这三层不是不同精度的同一总图，而是从制度、空间到 90 天运营的证据传导。[standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [depth:three_level_scope_framework]
