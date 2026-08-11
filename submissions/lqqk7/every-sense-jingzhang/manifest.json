@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "a9d5c841bceba1efc9e28455e8d1a6965b9de736f4bc5be85706160588b845b3"
+      "sha256": "03f391db9ac3ec9b3eae5333f21cbab4a7745f5b4abe0aee9146cec7f2bfdaa1"
     },
     {
       "path": "compliance_matrix.json",
@@ -120,7 +120,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "41e43121619e4ae64bb6d52bd897c4f397dd7aec6e4b360348114c8ae6c81794"
+      "sha256": "50929aa6d8622466513cc530220a1bbf29699ab8f20065b36aca57a0c489991d"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -249,7 +249,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "5465130f212ec6b7286ae467e5c234fa2d7d71db1570d83731e25b5b20280565"
+      "sha256": "437c139b39ac0f543583eef6c53131c07848d21e19b9595f04be199ee1cf975e"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -325,6 +325,86 @@
       "role": "changelog",
       "required": false,
       "sha256": "b1c181e7b9d07d1eaa241b1f893f1cfa18c518b724cc05f1ab668e465e75b52f"
+    },
+    {
+      "path": "assets/media/cover.webp",
+      "role": "media_poster",
+      "required": false,
+      "title_zh": "万感京张 方案封面",
+      "title_en": "Every Sense Jing-Zhang proposal cover",
+      "description_zh": "方案封面：以品牌的平行感知线与开放节点语法，把 AI 开启与 AI 关闭两条完全等价的服务线并列呈现，线上十个节点对应十个独立完成点，其中三个彩色开放节点标示三处重点区域。图内标注概念建议 / CONCEPT。",
+      "description_en": "Proposal cover: using the brand's parallel sensory lines and open-node grammar, it places the AI-ON and AI-OFF service lines side by side as exact equivalents, with ten nodes standing for the ten independent-completion points and three coloured open nodes marking the three key areas. Labelled 概念建议 / CONCEPT on the image.",
+      "sha256": "9862d1da39525e5e594b5bcc07f64db511feb829b92fe701321489cc31daec6e"
+    },
+    {
+      "path": "assets/media/audio-guide.m4a",
+      "role": "audio",
+      "required": false,
+      "title_zh": "万感京张 多感官导览（中文旁白）",
+      "title_en": "Every Sense Jing-Zhang multisensory audio guide (Chinese narration)",
+      "description_zh": "2 分 34 秒中文导览：城市智能的检验标准、AI 开启与关闭的服务等价、一条底线与三座实验院的空间骨架、三区两翼分工、十个独立完成点的评价意义，以及概念性质与边界声明。旁白由系统语音合成，无真人录音、无音乐、无实地录音。",
+      "description_en": "A 2-minute-34-second Chinese guide covering the test of urban intelligence, service equivalence between AI ON and AI OFF, the spatial framework of one accessible spine and three sensory labs, the roles of the three areas and two wings, the evaluative purpose of the ten independent-completion points, and the conceptual scope and limits. Fully synthetic speech: no human recording, no music, no field audio.",
+      "transcript": "assets/media/audio-guide.md",
+      "caption": "assets/media/audio-guide.vtt",
+      "sha256": "e996b0f90e9cdacfede0d1ca66b6d49b63dce6e1bd3230b05b6d4218eac66682"
+    },
+    {
+      "path": "assets/media/audio-guide.md",
+      "role": "transcript",
+      "required": false,
+      "title_zh": "多感官导览 旁白文字稿与权利记录",
+      "title_en": "Audio guide transcript and rights note",
+      "description_zh": "导览旁白全文（含时间码）、与 proposal.md 的来源对应表、生成工具与制作方法记录、合成声明与权利边界、已知限制。同时论证听/看/读三条通道承载相同内容，是方案 AI OFF 等价路径原则在自身交付物上的应用。",
+      "description_en": "Full narration text with time codes, a source mapping to proposal.md, the generation method and tooling record, the synthesis and rights statement, and known limitations. It also documents that listening, captions, and reading carry identical content, applying the proposal's own AI-OFF equivalence principle to its own deliverable.",
+      "sha256": "044b95a785e48158979e7ffc277721625d1752f0130776249c912051aa9c7128"
+    },
+    {
+      "path": "assets/media/audio-guide.vtt",
+      "role": "caption_track",
+      "required": false,
+      "title_zh": "多感官导览 中文字幕",
+      "title_en": "Audio guide Chinese captions",
+      "description_zh": "26 条 WebVTT 中文字幕，时间轴由逐句合成的实测长度精确累加得到，与音频严格同步，用词与文字稿完全一致。",
+      "description_en": "Twenty-six WebVTT Chinese caption cues. The timeline is derived from the measured length of each synthesised sentence, so it is exactly synchronised with the audio and identical in wording to the transcript.",
+      "sha256": "e458ef776b29b7d5144b51a7df2ddacabcb6cc0bd609c646f148ddf369a90cb4"
+    },
+    {
+      "path": "assets/media/cover.md",
+      "role": "transcript",
+      "required": false,
+      "title_zh": "方案封面 图像说明与权利记录",
+      "title_en": "Cover image description and rights note",
+      "description_zh": "封面的完整文字等价描述（可直接用作替代文本）、制作方法与工具记录（手写 HTML/SVG + 无头浏览器截图 + 无损 WebP，未使用图像生成模型、照片、地图或第三方素材）、权利与非效果图声明、已知限制。",
+      "description_en": "A full textual equivalent of the cover image (usable as alt text), the production method and tooling record (hand-coded HTML/SVG, headless-browser screenshot, lossless WebP; no image-generation model, photography, map data, or third-party assets), the rights and non-rendering statement, and known limitations.",
+      "sha256": "23595a1b403e9919cb0b6ec8c5810dffaa9268b969a17fe8348312a164aed47d"
+    },
+    {
+      "path": "visual/assets/scene.js",
+      "role": "visualization",
+      "required": false,
+      "language": "neutral",
+      "sha256": "2c7abf371b0c89b4fe63aa14c9f2a205d512b7f491d3389a8b269f5d42a321f1"
+    },
+    {
+      "path": "visual/assets/scene.css",
+      "role": "visualization",
+      "required": false,
+      "language": "neutral",
+      "sha256": "505af3db318b3326c0058c27fb99fb9040f18d67da775f22bbcbd23b1e3b7019"
+    },
+    {
+      "path": "visual/assets/scene-data.js",
+      "role": "visualization",
+      "required": false,
+      "language": "neutral",
+      "sha256": "cb0514ea14c65aaeac922fa5d38b2beb462055a2327e7ff7d2d7703c08609728"
+    },
+    {
+      "path": "visual/assets/scene-fallback.png",
+      "role": "visualization",
+      "required": false,
+      "language": "neutral",
+      "sha256": "970d4a28451abd575c63d3cce9c881e935b2ad59c5cefde063572a7ec1a8e438"
     }
   ],
   "validation_claim": {
@@ -332,5 +412,6 @@
     "known_blockers": [],
     "data_confidence": "medium",
     "readiness_contract": "persisted-self-check-v1"
-  }
+  },
+  "cover_image": "assets/media/cover.webp"
 }
