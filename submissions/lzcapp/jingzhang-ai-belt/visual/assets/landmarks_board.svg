@@ -1,181 +1,66 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 460" width="960" height="460" role="img" aria-label="Jing-Zhang AI Symbiosis Belt — three AI pilgrimage landmarks (concept visuals, redesigned)">
-  <title>京张智脉共生带 · 三处 AI 朝圣地标可识别视觉（概念稿 · 重设计）</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 420" width="960" height="420" role="img" aria-label="Jing-Zhang AI Symbiosis Belt — three AI pilgrimage landmarks (concept visuals)">
+  <title>京张智脉共生带 · 三处 AI 朝圣地标可识别视觉（概念稿）</title>
   <desc>LM-01 Open-Source Launch Lighthouse, LM-02 Rail Heritage AI Time Corridor, LM-03 Dazhongsi Smart-Economy Gate. Recognizable concept silhouettes; engineering and rights clearance required before implementation.</desc>
 
-  <!-- ====== header ====== -->
   <rect x="0" y="0" width="960" height="56" fill="#162033"/>
   <text x="28" y="28" font-family="sans-serif" font-size="19" font-weight="700" fill="#fff">三处 AI 朝圣地标 · 可识别视觉</text>
   <text x="28" y="46" font-family="sans-serif" font-size="11" fill="#9fd7c0">3 AI Pilgrimage Landmarks · recognizability board · CONCEPT 概念稿</text>
   <text x="932" y="34" font-family="sans-serif" font-size="11" fill="#7c8aa0" text-anchor="end">LM-01 / 02 / 03</text>
 
-  <!-- ====== defs ====== -->
-  <defs>
-    <linearGradient id="beam" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#f0a35e" stop-opacity="0.0"/>
-      <stop offset="0.5" stop-color="#f0a35e" stop-opacity="0.35"/>
-      <stop offset="1" stop-color="#f0a35e" stop-opacity="0.0"/>
-    </linearGradient>
-    <linearGradient id="corridor" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#1f8a9c"/>
-      <stop offset="1" stop-color="#2fae8f"/>
-    </linearGradient>
-    <linearGradient id="lightband" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#f0a35e" stop-opacity="0.6"/>
-      <stop offset="1" stop-color="#f5c4b3" stop-opacity="0.9"/>
-    </linearGradient>
-  </defs>
-
-  <!-- ====== LM-01 lighthouse ====== -->
-  <g transform="translate(28,72)">
-    <rect x="0" y="0" width="288" height="340" rx="10" fill="#f6f8fb" stroke="#d7dee8"/>
+  <!-- LM-01 lighthouse -->
+  <g transform="translate(28,76)">
+    <rect x="0" y="0" width="288" height="316" rx="10" fill="#f6f8fb" stroke="#d7dee8"/>
     <text x="16" y="26" font-family="sans-serif" font-size="13" font-weight="700" fill="#d9534f">LM-01 开源发布厅灯塔</text>
     <text x="16" y="44" font-family="sans-serif" font-size="10" fill="#667085">Open-Source Launch Lighthouse · 北京AI原点社区</text>
-
-    <!-- light beams (behind tower) -->
-    <path d="M120 118 L52 52 L188 52 Z" fill="url(#beam)"/>
-    <path d="M120 118 L52 52 L188 52 Z" fill="url(#beam)" transform="rotate(20 120 118)"/>
-
-    <!-- lantern room -->
-    <rect x="106" y="106" width="28" height="24" rx="4" fill="#162033"/>
-    <rect x="110" y="110" width="20" height="16" rx="2" fill="#f0a35e" opacity="0.9"/>
-    <circle cx="120" cy="118" r="6" fill="#f5c4b3"/>
-
-    <!-- pulse ring -->
-    <circle cx="120" cy="118" r="14" fill="none" stroke="#d9534f" stroke-width="2" opacity="0.6"/>
-    <circle cx="120" cy="118" r="20" fill="none" stroke="#d9534f" stroke-width="1" opacity="0.3"/>
-
-    <!-- tower body: tapered with horizontal bands -->
-    <path d="M120 130 L138 268 L102 268 Z" fill="#1f8a9c"/>
-    <path d="M120 130 L138 268 L102 268 Z" fill="#1f8a9c"/>
-    <!-- horizontal band stripes -->
-    <path d="M104 200 L136 200" stroke="#f6f8fb" stroke-width="3" opacity="0.4"/>
-    <path d="M106 170 L134 170" stroke="#f6f8fb" stroke-width="3" opacity="0.4"/>
-    <path d="M108 140 L132 140" stroke="#f6f8fb" stroke-width="3" opacity="0.4"/>
-    <path d="M110 230 L130 230" stroke="#f6f8fb" stroke-width="3" opacity="0.4"/>
-
-    <!-- stepped base platform -->
-    <rect x="84" y="268" width="72" height="14" rx="3" fill="#2fae8f"/>
-    <rect x="92" y="282" width="56" height="12" rx="3" fill="#d7dee8"/>
-    <rect x="100" y="294" width="40" height="10" rx="2" fill="#b8c4d0"/>
-
-    <!-- entrance -->
-    <rect x="110" y="268" width="20" height="14" rx="2" fill="#162033"/>
-
-    <!-- feature text -->
-    <text x="16" y="322" font-family="sans-serif" font-size="10" fill="#475467">可识别特征：顶部脉冲光 + 底层发布厅</text>
-    <text x="16" y="338" font-family="sans-serif" font-size="10" fill="#667085">低眩光、分时段调暗；无障碍入口</text>
+    <!-- tower -->
+    <path d="M120 110 L150 270 L90 270 Z" fill="#1f8a9c"/>
+    <rect x="104" y="86" width="32" height="26" rx="4" fill="#162033"/>
+    <circle cx="120" cy="74" r="12" fill="url(#lmg)"/>
+    <g stroke="#d9534f" stroke-width="3" opacity="0.8">
+      <line x1="120" y1="62" x2="120" y2="44"/><line x1="132" y1="74" x2="150" y2="74"/><line x1="108" y1="74" x2="90" y2="74"/>
+    </g>
+    <rect x="70" y="270" width="100" height="22" rx="4" fill="#2fae8f"/>
+    <text x="16" y="318" font-family="sans-serif" font-size="10" fill="#475467">可识别特征：顶部脉冲光 + 底层发布厅</text>
+    <text x="16" y="336" font-family="sans-serif" font-size="10" fill="#667085">低眩光、分时段调暗；无障碍入口</text>
   </g>
 
-  <!-- ====== LM-02 time corridor ====== -->
-  <g transform="translate(336,72)">
-    <rect x="0" y="0" width="288" height="340" rx="10" fill="#f6f8fb" stroke="#d7dee8"/>
+  <!-- LM-02 time corridor -->
+  <g transform="translate(336,76)">
+    <rect x="0" y="0" width="288" height="316" rx="10" fill="#f6f8fb" stroke="#d7dee8"/>
     <text x="16" y="26" font-family="sans-serif" font-size="13" font-weight="700" fill="#d9534f">LM-02 铁路遗址 AI 时光廊</text>
     <text x="16" y="44" font-family="sans-serif" font-size="10" fill="#667085">Rail Heritage AI Time Corridor · 遗址公园活力带</text>
-
-    <!-- support pillars -->
-    <g stroke="#162033" stroke-width="4" opacity="0.85">
-      <line x1="64" y1="196" x2="64" y2="236"/>
-      <line x1="104" y1="196" x2="104" y2="236"/>
-      <line x1="144" y1="196" x2="144" y2="236"/>
-      <line x1="184" y1="196" x2="184" y2="236"/>
-      <line x1="224" y1="196" x2="224" y2="236"/>
+    <!-- corridor -->
+    <rect x="40" y="120" width="208" height="36" rx="18" fill="url(#lmg)" opacity="0.45"/>
+    <line x1="48" y1="138" x2="240" y2="138" stroke="#1f8a9c" stroke-width="3" stroke-dasharray="10 8"/>
+    <g stroke="#162033" stroke-width="3">
+      <line x1="70" y1="156" x2="70" y2="186"/><line x1="110" y1="156" x2="110" y2="186"/>
+      <line x1="150" y1="156" x2="150" y2="186"/><line x1="190" y1="156" x2="190" y2="186"/>
     </g>
-    <!-- pillar bases -->
-    <g fill="#2fae8f">
-      <rect x="58" y="236" width="12" height="8" rx="2"/>
-      <rect x="98" y="236" width="12" height="8" rx="2"/>
-      <rect x="138" y="236" width="12" height="8" rx="2"/>
-      <rect x="178" y="236" width="12" height="8" rx="2"/>
-      <rect x="218" y="236" width="12" height="8" rx="2"/>
-    </g>
-
-    <!-- corridor body (elevated tube) -->
-    <rect x="40" y="148" width="208" height="48" rx="24" fill="url(#corridor)"/>
-    <!-- inner rail lines -->
-    <line x1="56" y1="172" x2="232" y2="172" stroke="#162033" stroke-width="2.5" opacity="0.5"/>
-    <line x1="56" y1="180" x2="232" y2="180" stroke="#162033" stroke-width="2.5" opacity="0.5"/>
-    <!-- sleeper marks -->
-    <g stroke="#162033" stroke-width="1.5" opacity="0.35">
-      <line x1="72" y1="168" x2="72" y2="184"/>
-      <line x1="96" y1="168" x2="96" y2="184"/>
-      <line x1="120" y1="168" x2="120" y2="184"/>
-      <line x1="144" y1="168" x2="144" y2="184"/>
-      <line x1="168" y1="168" x2="168" y2="184"/>
-      <line x1="192" y1="168" x2="192" y2="184"/>
-      <line x1="216" y1="168" x2="216" y2="184"/>
-    </g>
-
-    <!-- overhead light band -->
-    <rect x="52" y="136" width="184" height="10" rx="5" fill="url(#lightband)"/>
-    <rect x="52" y="136" width="184" height="10" rx="5" fill="none" stroke="#f0a35e" stroke-width="1" opacity="0.6"/>
-
-    <!-- heritage ↔ AI node (center) -->
-    <circle cx="144" cy="148" r="18" fill="#d9534f"/>
-    <circle cx="144" cy="148" r="24" fill="none" stroke="#d9534f" stroke-width="1.5" opacity="0.4"/>
-    <text x="52" y="152" font-family="sans-serif" font-size="10" font-weight="700" fill="#162033">百年京张</text>
-    <text x="216" y="152" font-family="sans-serif" font-size="10" font-weight="700" fill="#162033" text-anchor="end">AI 共生</text>
-    <line x1="76" y1="148" x2="126" y2="148" stroke="#d9534f" stroke-width="1.5" opacity="0.5"/>
-    <line x1="162" y1="148" x2="216" y2="148" stroke="#d9534f" stroke-width="1.5" opacity="0.5"/>
-
-    <!-- ground shadow -->
-    <ellipse cx="144" cy="248" rx="100" ry="6" fill="#d7dee8" opacity="0.5"/>
-
-    <!-- feature text -->
-    <text x="16" y="322" font-family="sans-serif" font-size="10" fill="#475467">可识别特征：线性光带 + 轨道枕木</text>
-    <text x="16" y="338" font-family="sans-serif" font-size="10" fill="#667085">触觉地图、夜间低能耗照明</text>
+    <circle cx="120" cy="90" r="16" fill="#d9534f"/>
+    <text x="44" y="90" font-family="sans-serif" font-size="11" font-weight="700" fill="#162033">百年京张</text>
+    <text x="160" y="90" font-family="sans-serif" font-size="11" font-weight="700" fill="#162033">AI 共生</text>
+    <text x="16" y="318" font-family="sans-serif" font-size="10" fill="#475467">可识别特征：线性光带 + 轨道枕木</text>
+    <text x="16" y="336" font-family="sans-serif" font-size="10" fill="#667085">触觉地图、夜间低能耗照明</text>
   </g>
 
-  <!-- ====== LM-03 smart-economy gate ====== -->
-  <g transform="translate(644,72)">
-    <rect x="0" y="0" width="288" height="340" rx="10" fill="#f6f8fb" stroke="#d7dee8"/>
+  <!-- LM-03 smart-economy gate -->
+  <g transform="translate(644,76)">
+    <rect x="0" y="0" width="288" height="316" rx="10" fill="#f6f8fb" stroke="#d7dee8"/>
     <text x="16" y="26" font-family="sans-serif" font-size="13" font-weight="700" fill="#d9534f">LM-03 大钟寺智能经济之门</text>
     <text x="16" y="44" font-family="sans-serif" font-size="10" fill="#667085">Dazhongsi Smart-Economy Gate · 大钟寺站四象限</text>
-
-    <!-- four-quadrant dots (background) -->
-    <g fill="#d7dee8" opacity="0.6">
-      <circle cx="60" cy="120" r="5"/>
-      <circle cx="228" cy="120" r="5"/>
-      <circle cx="60" cy="280" r="5"/>
-      <circle cx="228" cy="280" r="5"/>
-    </g>
-    <text x="60" y="110" font-family="sans-serif" font-size="8" fill="#667085" text-anchor="middle">西北</text>
-    <text x="228" y="110" font-family="sans-serif" font-size="8" fill="#667085" text-anchor="middle">东北</text>
-    <text x="60" y="298" font-family="sans-serif" font-size="8" fill="#667085" text-anchor="middle">西南</text>
-    <text x="228" y="298" font-family="sans-serif" font-size="8" fill="#667085" text-anchor="middle">东南</text>
-
-    <!-- gate pillars -->
-    <rect x="76" y="108" width="20" height="176" rx="4" fill="#1f8a9c"/>
-    <rect x="192" y="108" width="20" height="176" rx="4" fill="#1f8a9c"/>
-    <!-- pillar caps -->
-    <rect x="72" y="100" width="28" height="10" rx="3" fill="#162033"/>
-    <rect x="188" y="100" width="28" height="10" rx="3" fill="#162033"/>
-
-    <!-- top beam -->
-    <rect x="76" y="92" width="136" height="16" rx="4" fill="#1f8a9c"/>
-    <rect x="76" y="92" width="136" height="16" rx="4" fill="none" stroke="#162033" stroke-width="1.5"/>
-
-    <!-- central screen -->
-    <rect x="96" y="140" width="96" height="64" rx="6" fill="#162033"/>
-    <rect x="100" y="144" width="88" height="56" rx="4" fill="#2fae8f" opacity="0.75"/>
-    <!-- screen content lines -->
-    <line x1="108" y1="156" x2="180" y2="156" stroke="#162033" stroke-width="2" opacity="0.6"/>
-    <line x1="108" y1="164" x2="168" y2="164" stroke="#162033" stroke-width="2" opacity="0.4"/>
-    <line x1="108" y1="172" x2="176" y2="172" stroke="#162033" stroke-width="2" opacity="0.4"/>
-    <line x1="108" y1="180" x2="160" y2="180" stroke="#162033" stroke-width="2" opacity="0.3"/>
-
-    <!-- pulse node at gate center -->
-    <circle cx="144" cy="224" r="10" fill="#d9534f"/>
-    <circle cx="144" cy="224" r="16" fill="none" stroke="#d9534f" stroke-width="1.5" opacity="0.4"/>
-    <circle cx="144" cy="224" r="22" fill="none" stroke="#d9534f" stroke-width="1" opacity="0.2"/>
-
-    <!-- ground line -->
-    <line x1="56" y1="284" x2="232" y2="284" stroke="#d7dee8" stroke-width="2" opacity="0.6"/>
-
-    <!-- feature text -->
-    <text x="16" y="322" font-family="sans-serif" font-size="10" fill="#475467">可识别特征：站城门户 + 动态信息幕</text>
-    <text x="16" y="338" font-family="sans-serif" font-size="10" fill="#667085">四象限无障碍连通、可熄屏</text>
+    <!-- gate -->
+    <path d="M70 270 L70 130 Q120 86 170 130 L170 270" fill="none" stroke="#1f8a9c" stroke-width="8"/>
+    <rect x="96" y="150" width="48" height="30" rx="4" fill="#162033"/>
+    <rect x="100" y="154" width="40" height="22" rx="2" fill="#2fae8f" opacity="0.7"/>
+    <circle cx="120" cy="200" r="10" fill="#d9534f"/>
+    <text x="16" y="318" font-family="sans-serif" font-size="10" fill="#475467">可识别特征：站城门户 + 动态信息幕</text>
+    <text x="16" y="336" font-family="sans-serif" font-size="10" fill="#667085">四象限无障碍连通、可熄屏</text>
   </g>
 
-  <!-- ====== footer ====== -->
-  <text x="28" y="440" font-family="sans-serif" font-size="11" fill="#9aa6b6">地标为概念方向稿，非工程图；实施前需工程设计、文保与标识清权、无障碍专项审查。</text>
+  <defs>
+    <linearGradient id="lmg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1f8a9c"/><stop offset="1" stop-color="#5fc26b"/>
+    </linearGradient>
+  </defs>
+  <text x="28" y="412" font-family="sans-serif" font-size="11" fill="#9aa6b6">地标为概念方向稿，非工程图；实施前需工程设计、文保与标识清权、无障碍专项审查。</text>
 </svg>
