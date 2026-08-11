@@ -31,6 +31,18 @@ An ordinary person is not a flow point in a model. At each step—leaving, trans
 
 This table connects the design boards, curb ledger, M-09 fallback tabletop and P0/P1/P2 phasing to one acceptance entry point. PASS for four synthetic requests proves only that the state machine and rollback logic can be replayed; it does not prove real demand, accessibility performance, staffing, public acceptance or safety.
 
+## Accessible-service state contract
+
+The grouped simulation already keeps wheelchair users, carers, older residents and night-return users visible, but a route existing on a map does not establish that it is usable now. This increment adds a state contract for three reviewable routes using `UNKNOWN → AUDITED → READY`; an expired confirmation returns to `UNKNOWN`, while a critical obstacle, missing alternative or missing handoff moves the route to `CLOSED` and stops expansion.
+
+The three routes are rail stop to enterprise entrance, a human-equivalent community daily-service route, and a public-transport fallback for night return. `READY` requires a dated route audit, accountable-owner confirmation, a usable accessible alternative and a human handoff entry. A repair record moves only to `RECHECK`; inspection and owner confirmation are required before `READY` can return. AI may organise state conflicts and replay evidence, but it cannot repair, release or publish a usable state for an accountable role. All three routes are currently `UNKNOWN`; field audits, operating authorizations and formal performance results are 0, and air mobility is excluded from the accessible-service denominator.
+
+This is an offline structural replay. It does not establish elevator or ramp availability, field route continuity, staffing, night service or resident satisfaction [data:visual/assets/accessible-service-state-contract.json] [data:visual/assets/accessible-service-state-readout.json] [data:visual/assets/run-accessible-service-state-contract.js].
+
+![Accessible service state contract](assets/figures/accessible-service-state-board.en.svg)
+
+The board publishes states, gates and stop actions only. Field work must add segment-level route evidence, validity, owner, alternative, human handoff and recheck receipts before any `READY` state enters a public service directory.
+
 ## Design Basis and Source List
 
 The open-call requirements cover three spatial scales, three key areas, AI and mobility scenarios, an innovation ecosystem and reviewable drawings and data layers [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK]. The package uses the public provisional site package but replaces the narrative, road attributes, metrics, evidence register and visual boards with an enterprise–resident mobility focus. Both the site and key-area polygons declare `official_boundary=false` and `geometry_role=provisional_constraint` [data:geometry/site_boundary.geojson#SITE-001] [data:geometry/key_areas.geojson#PROV-KEY-001].

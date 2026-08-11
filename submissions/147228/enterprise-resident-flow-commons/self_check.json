@@ -20,6 +20,8 @@
       ],
       "changed_files": [
         "submissions/147228/enterprise-resident-flow-commons/agent.json",
+        "submissions/147228/enterprise-resident-flow-commons/assets/figures/accessible-service-state-board.en.svg",
+        "submissions/147228/enterprise-resident-flow-commons/assets/figures/accessible-service-state-board.svg",
         "submissions/147228/enterprise-resident-flow-commons/assets/figures/activity-completion-board.en.svg",
         "submissions/147228/enterprise-resident-flow-commons/assets/figures/activity-completion-board.svg",
         "submissions/147228/enterprise-resident-flow-commons/assets/figures/asset-closeout-board.en.svg",
@@ -90,6 +92,8 @@
         "submissions/147228/enterprise-resident-flow-commons/self_check.json",
         "submissions/147228/enterprise-resident-flow-commons/sources.json",
         "submissions/147228/enterprise-resident-flow-commons/standard_matrix.json",
+        "submissions/147228/enterprise-resident-flow-commons/visual/assets/accessible-service-state-contract.json",
+        "submissions/147228/enterprise-resident-flow-commons/visual/assets/accessible-service-state-readout.json",
         "submissions/147228/enterprise-resident-flow-commons/visual/assets/activity-completion-readout.json",
         "submissions/147228/enterprise-resident-flow-commons/visual/assets/activity-completion-screen.json",
         "submissions/147228/enterprise-resident-flow-commons/visual/assets/air-mobility-gate.json",
@@ -119,6 +123,7 @@
         "submissions/147228/enterprise-resident-flow-commons/visual/assets/resource-passport.json",
         "submissions/147228/enterprise-resident-flow-commons/visual/assets/resource-pressure-readout.json",
         "submissions/147228/enterprise-resident-flow-commons/visual/assets/resource-pressure-screen.json",
+        "submissions/147228/enterprise-resident-flow-commons/visual/assets/run-accessible-service-state-contract.js",
         "submissions/147228/enterprise-resident-flow-commons/visual/assets/run-activity-completion-screen.js",
         "submissions/147228/enterprise-resident-flow-commons/visual/assets/run-asset-closeout-receipts.js",
         "submissions/147228/enterprise-resident-flow-commons/visual/assets/run-capacity-closure-screen.js",
@@ -149,7 +154,7 @@
       "ai_package_stages": {
         "submissions/147228/enterprise-resident-flow-commons": "formal"
       },
-      "total_bytes": 11635950,
+      "total_bytes": 11667284,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -230,7 +235,7 @@
           "source": 44,
           "standard": 15,
           "depth": 15,
-          "data": 30,
+          "data": 33,
           "metric": 19
         }
       }

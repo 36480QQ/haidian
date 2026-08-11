@@ -31,6 +31,18 @@ iteration: "v2.0-population-scale-screen"
 
 这张表把设计图、路缘账本、M-09 回退桌演和 P0/P1/P2 分期接成同一个验收入口；4 条合成请求的 PASS 只证明状态机和回滚逻辑可重放，不证明真实客流、无障碍绩效、人员值守、公众接受或安全结果。
 
+## 无障碍服务状态契约
+
+分组模拟已经把轮椅、照护、老人和夜班返程列为独立群组，但“路线存在”还不等于“此刻可用”。本轮新增一张状态契约屏，把三条可复核路线统一成 `UNKNOWN → AUDITED → READY` 的证据链；确认过期自动回到 `UNKNOWN`，关键障碍、没有替代路线或无人接管时进入 `CLOSED` 并停止扩展。
+
+三条路线分别是轨道站到企业入口、社区日常服务和夜班返程回退。发布 `READY` 前必须有日期化路线审计、责任角色确认、可用的无障碍替代路线和人工交接入口。维修记录只能进入 `RECHECK`，复验和责任确认齐备后才能回到 `READY`。AI 只做状态冲突整理和回放，不维修、不放行，也不能替责任角色发布可用状态。当前三条路线均为 `UNKNOWN`，现场审计、运行授权和正式绩效均为 0，空中出行排除在无障碍分母之外。
+
+该屏是离线结构回放，不能证明电梯或坡道可用率、现场连续可达率、人员配置、夜间服务或居民满意度 [data:visual/assets/accessible-service-state-contract.json] [data:visual/assets/accessible-service-state-readout.json] [data:visual/assets/run-accessible-service-state-contract.js]。
+
+![无障碍服务状态契约](assets/figures/accessible-service-state-board.svg)
+
+图件只发布状态、闸门和停止动作；现场须补齐路线分段、有效期、责任、替代、人工交接与复验凭证，才能把任何 `READY` 状态写入公开服务目录。
+
 ## 设计依据与资料清单
 
 征集任务要求覆盖三层空间研究、三处重点区、AI+交通与产业生态，并交付可检查的图层、指标、图纸和视觉页 [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK]。

@@ -1,5 +1,11 @@
 # 方案迭代记录
 
+## v1.17 - 2026-08-12
+
+- Added a bilingual accessible-service state contract for three synthetic routes covering rail-to-enterprise access, a human-equivalent community route and a night-return fallback.
+- Added explicit expiry-to-`UNKNOWN`, owner confirmation, usable alternative, human handoff, repair and recheck transitions, plus a deterministic offline runner and paired SVG board.
+- Kept field audits, operating authorizations and formal performance at zero; AI cannot release `READY`, and air mobility stays outside the accessible-service denominator.
+
 ## v1.16 - 2026-08-12
 
 - Added a bilingual resource-denominator contract screen for metro, bus, severe weather, curb service and cross-boundary return.
