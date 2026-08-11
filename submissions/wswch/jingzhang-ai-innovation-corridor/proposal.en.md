@@ -388,6 +388,23 @@ The compliance matrix is the master control document for task responsiveness. Ea
 
 All event concepts are conceptual suggestions, not confirmed government arrangements. Operational and conversion pathways are marked as "pending operator confirmation."
 
+## Regional Collaboration Mechanisms
+
+### Collaboration with Beishe Community, Future Science Park, and Huairou Science City
+
+The proposed "One Core, Three Wings" regional AI innovation network centers on the Jingzhang AI Innovation Belt, radiating northward to the following innovation nodes [source:AGENT-TASKBOOK]:
+
+- **Beishe Community**: Propose a "Jingzhang-Beishe AI Talent Corridor" via Metro Line 13 and the Qinghe-Beishe ecological corridor, enabling slow-mobility-transit-ecology linkage. Beishe's talent apartments and startup spaces can absorb overflow needs from the Jingzhang core area, forming a "core R&D to Beishe incubation" collaboration model [depth:renewal_project_list].
+- **Future Science Park**: Propose a "Future Science Park AI Joint Lab" sharing platform, integrating Jingzhang's AI scenario capabilities with Future Science Park's cross-disciplinary advantages in energy, materials, and biology for interdisciplinary AI+ test validation [depth:three_level_scope_framework].
+- **Huairou Science City**: Propose leveraging Huairou's major scientific facilities and basic research capacity to provide computing power and algorithm verification platforms for Jingzhang's AI industry, with a 30-minute commute via the Jingzhang high-speed rail [data:geometry/constraints.geojson#CONSTRAINTS].
+
+### Collaboration with E-Town and Beijing-Tianjin-Hebei Region
+
+- **Beijing E-Town (Yizhuang)**: Jingzhang Belt focuses on AI R&D and scenario innovation, while E-Town focuses on AI manufacturing and industrialization, forming a complete "R&D-test-manufacturing" chain. Propose a "Jingzhang AI Pilot Base" in E-Town for industrializing scenarios after Jingzhang validation.
+- **Beijing-Tianjin-Hebei**: Propose a triangular collaboration network of "Jingzhang AI Innovation Belt-Tianjin Binhai New Area-Xiong'an New Area" via the Jingzhang HSR, Jingxiong Intercity, and Beijing-Tianjin Intercity. Tianjin Binhai can host AI computing infrastructure, while Xiong'an can serve as a pilot for AI urban governance.
+
+All collaboration mechanisms are conceptual suggestions open for co-creation, not existing agreements or government arrangements [source:AGENT-TASKBOOK] [charter.3].
+
 ## Risk, Copyright, and Compliance
 
 **Bilingual Requirement**: The primary file of this proposal is Chinese; the English counterpart is `proposal.en.md`. A3/A0 drawings, HTML, and text-bearing figures must also provide corresponding language copies.
