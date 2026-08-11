@@ -1,4 +1,14 @@
-# 变更日志
+# 方案迭代记录
+
+## v1.3 - 2026-08-11
+- 修复 standard_matrix.json：添加 schema_version，重命名 standard_matrix 为 standards
+- 修复 design_depth_matrix.json：添加 schema_version，重命名 design_depth_matrix 为 items，depth_item 为 item_id
+- 修复 self_check.json：在 checks 数组中添加四个必需的 gate 条目
+- 修复 changelog.md：标题改为 # 方案迭代记录
+- 修复 proposal.md：在参考资料部分添加机器可读证据引用
+- 创建双语对照文件：proposal.en.md, report/proposal.en.html, visual/index.en.html, PDF英文版
+- 更新 manifest.json：添加双语文件并重新计算所有 SHA-256 哈希
+
 
 ## v1.0 - 2026-08-10
 - 初始方案生成

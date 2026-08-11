@@ -1,7 +1,7 @@
 {
-  "design_depth_matrix": [
+  "schema_version": "0.1.0",
+  "items": [
     {
-      "depth_item": "site_analysis",
       "title_zh": "场地分析",
       "required_level": "regional",
       "achieved_level": "regional",
@@ -14,10 +14,10 @@
         "geojson/boundary.geojson",
         "geojson/transport_network.geojson"
       ],
-      "notes": "涵盖区位、交通、土地利用、历史文化四个维度。"
+      "notes": "涵盖区位、交通、土地利用、历史文化四个维度。",
+      "item_id": "site_analysis"
     },
     {
-      "depth_item": "concept_design",
       "title_zh": "概念设计",
       "required_level": "conceptual",
       "achieved_level": "conceptual",
@@ -27,10 +27,10 @@
         "3.3 AI创新带主题"
       ],
       "evidence_layers": [],
-      "notes": "提出'京张智脉'核心概念，融合铁路遗产与AI创新。"
+      "notes": "提出'京张智脉'核心概念，融合铁路遗产与AI创新。",
+      "item_id": "concept_design"
     },
     {
-      "depth_item": "land_use_layout",
       "title_zh": "用地布局",
       "required_level": "block_group",
       "achieved_level": "block_group",
@@ -41,10 +41,10 @@
       "evidence_layers": [
         "geojson/landuse.geojson"
       ],
-      "notes": "达到街区-组团级精度，受 ASM-005 限制未达地块级。"
+      "notes": "达到街区-组团级精度，受 ASM-005 限制未达地块级。",
+      "item_id": "land_use_layout"
     },
     {
-      "depth_item": "building_massing",
       "title_zh": "建筑体量",
       "required_level": "massing",
       "achieved_level": "massing",
@@ -53,10 +53,10 @@
         "5.5 风貌控制"
       ],
       "evidence_layers": [],
-      "notes": "提供建筑体量与天际线建议方案，限高依据 ASM-004 推定。"
+      "notes": "提供建筑体量与天际线建议方案，限高依据 ASM-004 推定。",
+      "item_id": "building_massing"
     },
     {
-      "depth_item": "transport_network",
       "title_zh": "交通网络",
       "required_level": "network",
       "achieved_level": "network",
@@ -66,10 +66,10 @@
       "evidence_layers": [
         "geojson/transport_network.geojson"
       ],
-      "notes": "包含轨道交通、公交、慢行系统三级网络。"
+      "notes": "包含轨道交通、公交、慢行系统三级网络。",
+      "item_id": "transport_network"
     },
     {
-      "depth_item": "green_blue_system",
       "title_zh": "绿蓝系统",
       "required_level": "network",
       "achieved_level": "network",
@@ -79,10 +79,10 @@
       "evidence_layers": [
         "geojson/green_blue_system.geojson"
       ],
-      "notes": "绿地率约25%，构建连续生态廊道。"
+      "notes": "绿地率约25%，构建连续生态廊道。",
+      "item_id": "green_blue_system"
     },
     {
-      "depth_item": "public_space",
       "title_zh": "公共空间",
       "required_level": "system",
       "achieved_level": "system",
@@ -92,10 +92,10 @@
       "evidence_layers": [
         "geojson/public_space.geojson"
       ],
-      "notes": "公共空间率约15%，覆盖广场、公园、街道三类。"
+      "notes": "公共空间率约15%，覆盖广场、公园、街道三类。",
+      "item_id": "public_space"
     },
     {
-      "depth_item": "phasing_plan",
       "title_zh": "分期计划",
       "required_level": "phased",
       "achieved_level": "phased",
@@ -104,10 +104,10 @@
         "6.2 实施时序"
       ],
       "evidence_layers": [],
-      "notes": "划分近期、中期、远期三阶段。"
+      "notes": "划分近期、中期、远期三阶段。",
+      "item_id": "phasing_plan"
     },
     {
-      "depth_item": "ai_scenario",
       "title_zh": "AI场景",
       "required_level": "scenario",
       "achieved_level": "scenario",
@@ -115,10 +115,10 @@
         "5.6 AI场景设计"
       ],
       "evidence_layers": [],
-      "notes": "设计12个AI场景，覆盖6类用户画像。"
+      "notes": "设计12个AI场景，覆盖6类用户画像。",
+      "item_id": "ai_scenario"
     },
     {
-      "depth_item": "cultural_narrative",
       "title_zh": "文化叙事",
       "required_level": "narrative",
       "achieved_level": "narrative",
@@ -128,10 +128,10 @@
         "3.3 AI创新带主题"
       ],
       "evidence_layers": [],
-      "notes": "以京张铁路百年历史为叙事主线，串联AI创新场景。"
+      "notes": "以京张铁路百年历史为叙事主线，串联AI创新场景。",
+      "item_id": "cultural_narrative"
     },
     {
-      "depth_item": "operations_plan",
       "title_zh": "运营计划",
       "required_level": "operational",
       "achieved_level": "operational",
@@ -140,7 +140,8 @@
         "6.4 治理机制"
       ],
       "evidence_layers": [],
-      "notes": "提出智慧运营平台与多方协同治理框架。"
+      "notes": "提出智慧运营平台与多方协同治理框架。",
+      "item_id": "operations_plan"
     }
   ]
 }

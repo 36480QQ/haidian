@@ -579,10 +579,14 @@ iteration: "v1.0"
 
 ## 参考资料
 
-1. 北京市规划和自然资源委员会海淀分局，《百年京张AI创新带城市设计国际方案征集资格预审公告》，2026年5月
-2. open-city-ai/haidian 仓库，《面向智能体任务书摘录》，2026年5月18日
-3. open-city-ai/haidian 仓库，《provisional_boundaries.geojson》，2026年6月5日
-4. 住房和城乡建设部，《城市设计管理办法》，2017年
+1. 北京市规划和自然资源委员会海淀分局，《百年京张AI创新带城市设计国际方案征集资格预审公告》，2026年5月 `[source:SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT]`
+2. open-city-ai/haidian 仓库，《面向智能体任务书摘录》，2026年5月18日 `[source:AGENT-TASKBOOK]`
+3. open-city-ai/haidian 仓库，《provisional_boundaries.geojson》，2026年6月5日 `[source:DATA-SRC-PROVISIONAL-BOUNDARIES-20260605]`
+4. 住房和城乡建设部，《城市设计管理办法》，2017年 `[standard:MOHURD-URBAN-DESIGN-MEASURES]`
+5. 中华人民共和国城乡规划法 `[standard:URBAN-PLANNING-LAW]`
+6. 绿色建筑评价标准(GB/T 50378) `[standard:GREEN-BUILDING-STANDARD]`
+7. 智慧城市系列标准与指南 `[standard:SMART-CITY-STANDARDS]`
+8. 新一代人工智能伦理规范 `[standard:AI-ETHICS-GUIDELINES]`
 5. 《中华人民共和国城乡规划法》，2019年修正
 6. 国家统计局，北京市海淀区相关公开统计数据
 7. OpenStreetMap贡献者，ODbL许可，https://www.openstreetmap.org

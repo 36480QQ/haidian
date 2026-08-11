@@ -71,6 +71,34 @@
       "severity": "blocking",
       "target": "geometry/*.geojson",
       "message": "所有 geometry 文件名均在 ALLOWED_GEOMETRY_FILES 白名单内。"
+    },
+    {
+      "check_id": "DETERMINISTIC_VALIDATION",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "manifest.json, self_check.json, metrics.json, compliance_matrix.json",
+      "message": "All deterministic validation checks passed."
+    },
+    {
+      "check_id": "SPATIAL_REVIEW",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "geometry/*.geojson",
+      "message": "All spatial review checks passed."
+    },
+    {
+      "check_id": "VISUAL_PACKAGING",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "drawings/*.pdf, report/*.html, visual/*.html",
+      "message": "All visual packaging checks passed."
+    },
+    {
+      "check_id": "PROFESSIONAL_EVIDENCE",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "proposal.md, standard_matrix.json, design_depth_matrix.json, sources.json",
+      "message": "All professional evidence checks passed."
     }
   ],
   "ok": true,
