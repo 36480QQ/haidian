@@ -564,7 +564,7 @@
         "source_type": "agent_generated_design",
         "confidence": "low",
         "geometry_role": "design_proposal",
-        "name_zh": "合成数据门诊",
+        "name_zh": "智能体互操作诊所",
         "locator_kind": "scenario_node",
         "official_locator": false,
         "locator_status": "provisional_design_locator",
@@ -575,7 +575,7 @@
         "usage_note": "概念点位与短定位码映射；非批准工程点位，须以官方资料和现场核验替换。",
         "canonical_id": "SCN-01-SYNTHETIC-DATA-CLINIC",
         "locator_id": "SCN-01",
-        "name_en": "Synthetic Data Clinic",
+        "name_en": "Agent Interoperability Clinic",
         "zone_id": "TZ-03-MODEL-VALIDATION",
         "booking_segment_id": "BK-06-TEST-YARD",
         "time_component_ids": [
@@ -584,7 +584,11 @@
         ],
         "booking_segment_parent_zone_id": "TZ-03-MODEL-VALIDATION",
         "zone_segment_relation": "within_primary_zone",
-        "key_area_id": "PROV-KEY-001"
+        "key_area_id": "PROV-KEY-001",
+        "station_prototype_id": "STN-NORTH-VALIDATION-YARD",
+        "service_class": "industry_validation",
+        "contract_ref": "visual/assets/civic-timetable.json#SCN-01",
+        "performance_results": null
       },
       "geometry": {
         "type": "Point",
@@ -603,7 +607,7 @@
         "source_type": "agent_generated_design",
         "confidence": "low",
         "geometry_role": "design_proposal",
-        "name_zh": "模型红队工棚",
+        "name_zh": "红队工棚与失败档案",
         "locator_kind": "scenario_node",
         "official_locator": false,
         "locator_status": "provisional_design_locator",
@@ -614,7 +618,7 @@
         "usage_note": "概念点位与短定位码映射；非批准工程点位，须以官方资料和现场核验替换。",
         "canonical_id": "SCN-02-MODEL-RED-TEAM",
         "locator_id": "SCN-02",
-        "name_en": "Model Red-Team Workshop",
+        "name_en": "Red-Team Shed and Failure Archive",
         "zone_id": "TZ-03-MODEL-VALIDATION",
         "booking_segment_id": "BK-06-TEST-YARD",
         "time_component_ids": [
@@ -623,7 +627,11 @@
         ],
         "booking_segment_parent_zone_id": "TZ-03-MODEL-VALIDATION",
         "zone_segment_relation": "within_primary_zone",
-        "key_area_id": "PROV-KEY-001"
+        "key_area_id": "PROV-KEY-001",
+        "station_prototype_id": "STN-NORTH-VALIDATION-YARD",
+        "service_class": "industry_validation",
+        "contract_ref": "visual/assets/civic-timetable.json#SCN-02",
+        "performance_results": null
       },
       "geometry": {
         "type": "Point",
@@ -642,7 +650,7 @@
         "source_type": "agent_generated_design",
         "confidence": "low",
         "geometry_role": "design_proposal",
-        "name_zh": "低速共享路段",
+        "name_zh": "四象限步行与低速机器人边界审计",
         "locator_kind": "scenario_node",
         "official_locator": false,
         "locator_status": "provisional_design_locator",
@@ -653,7 +661,7 @@
         "usage_note": "概念点位与短定位码映射；非批准工程点位，须以官方资料和现场核验替换。",
         "canonical_id": "SCN-03-ROBOT-WINDOW",
         "locator_id": "SCN-03",
-        "name_en": "Low-Speed Shared Segment",
+        "name_en": "Four-Quadrant Walking and Robot-Boundary Audit",
         "zone_id": "TZ-01-CITY-LOUNGE",
         "booking_segment_id": "BK-02-CIVIC-SEAM",
         "time_component_ids": [
@@ -662,7 +670,11 @@
         ],
         "booking_segment_parent_zone_id": "TZ-01-CITY-LOUNGE",
         "zone_segment_relation": "within_primary_zone",
-        "key_area_id": "PROV-KEY-003"
+        "key_area_id": "PROV-KEY-003",
+        "station_prototype_id": "STN-SOUTH-CIVIC-TERMINAL",
+        "service_class": "mobility_safety_test",
+        "contract_ref": "visual/assets/civic-timetable.json#SCN-03",
+        "performance_results": null
       },
       "geometry": {
         "type": "Point",
@@ -681,7 +693,7 @@
         "source_type": "agent_generated_design",
         "confidence": "low",
         "geometry_role": "design_proposal",
-        "name_zh": "端侧能耗沙盒",
+        "name_zh": "端侧能耗与算力票据台",
         "locator_kind": "scenario_node",
         "official_locator": false,
         "locator_status": "provisional_design_locator",
@@ -692,7 +704,7 @@
         "usage_note": "概念点位与短定位码映射；非批准工程点位，须以官方资料和现场核验替换。",
         "canonical_id": "SCN-04-EDGE-ENERGY-SANDBOX",
         "locator_id": "SCN-04",
-        "name_en": "Edge Energy Sandbox",
+        "name_en": "Edge Energy and Compute Receipt Bench",
         "zone_id": "TZ-03-MODEL-VALIDATION",
         "booking_segment_id": "BK-05-TRANSFER-NORTH",
         "time_component_ids": [
@@ -701,7 +713,11 @@
         ],
         "booking_segment_parent_zone_id": "TZ-03-MODEL-VALIDATION",
         "zone_segment_relation": "within_primary_zone",
-        "key_area_id": "PROV-KEY-001"
+        "key_area_id": "PROV-KEY-001",
+        "station_prototype_id": "STN-NORTH-VALIDATION-YARD",
+        "service_class": "industry_validation",
+        "contract_ref": "visual/assets/civic-timetable.json#SCN-04",
+        "performance_results": null
       },
       "geometry": {
         "type": "Point",
@@ -720,7 +736,7 @@
         "source_type": "agent_generated_design",
         "confidence": "low",
         "geometry_role": "design_proposal",
-        "name_zh": "成果翻译台",
+        "name_zh": "开源与知识产权转接台",
         "locator_kind": "scenario_node",
         "official_locator": false,
         "locator_status": "provisional_design_locator",
@@ -731,7 +747,7 @@
         "usage_note": "概念点位与短定位码映射；非批准工程点位，须以官方资料和现场核验替换。",
         "canonical_id": "SCN-05-ENTERPRISE-COPILOT",
         "locator_id": "SCN-05",
-        "name_en": "Translation Desk",
+        "name_en": "Open-Source and IP Transfer Desk",
         "zone_id": "TZ-02-KNOWLEDGE-TRANSFER",
         "booking_segment_id": "BK-04-ORIGIN-HUB",
         "time_component_ids": [
@@ -740,7 +756,11 @@
         ],
         "booking_segment_parent_zone_id": "TZ-02-KNOWLEDGE-TRANSFER",
         "zone_segment_relation": "within_primary_zone",
-        "key_area_id": "PROV-KEY-002"
+        "key_area_id": "PROV-KEY-002",
+        "station_prototype_id": "STN-MIDDLE-OPEN-TRANSFER-HALL",
+        "service_class": "knowledge_transfer",
+        "contract_ref": "visual/assets/civic-timetable.json#SCN-05",
+        "performance_results": null
       },
       "geometry": {
         "type": "Point",
@@ -759,7 +779,7 @@
         "source_type": "agent_generated_design",
         "confidence": "low",
         "geometry_role": "design_proposal",
-        "name_zh": "健康服务导航",
+        "name_zh": "公共服务材料导航",
         "locator_kind": "scenario_node",
         "official_locator": false,
         "locator_status": "provisional_design_locator",
@@ -770,7 +790,7 @@
         "usage_note": "概念点位与短定位码映射；非批准工程点位，须以官方资料和现场核验替换。",
         "canonical_id": "SCN-06-HEALTH-NAVIGATION",
         "locator_id": "SCN-06",
-        "name_en": "Health Navigation",
+        "name_en": "Public-Service Document Navigator",
         "zone_id": "TZ-01-CITY-LOUNGE",
         "booking_segment_id": "BK-01-SOUTH-GATE",
         "time_component_ids": [
@@ -779,7 +799,11 @@
         ],
         "booking_segment_parent_zone_id": "TZ-01-CITY-LOUNGE",
         "zone_segment_relation": "within_primary_zone",
-        "key_area_id": "PROV-KEY-003"
+        "key_area_id": "PROV-KEY-003",
+        "station_prototype_id": "STN-SOUTH-CIVIC-TERMINAL",
+        "service_class": "everyday_service",
+        "contract_ref": "visual/assets/civic-timetable.json#SCN-06",
+        "performance_results": null
       },
       "geometry": {
         "type": "Point",
@@ -798,7 +822,7 @@
         "source_type": "agent_generated_design",
         "confidence": "low",
         "geometry_role": "design_proposal",
-        "name_zh": "无障碍知识换乘",
+        "name_zh": "无障碍路径共审",
         "locator_kind": "scenario_node",
         "official_locator": false,
         "locator_status": "provisional_design_locator",
@@ -809,7 +833,7 @@
         "usage_note": "概念点位与短定位码映射；非批准工程点位，须以官方资料和现场核验替换。",
         "canonical_id": "SCN-07-ACCESSIBLE-WAYFINDING",
         "locator_id": "SCN-07",
-        "name_en": "Accessible Knowledge Interchange",
+        "name_en": "Accessible Route Co-Audit",
         "zone_id": "TZ-02-KNOWLEDGE-TRANSFER",
         "booking_segment_id": "BK-03-TRANSFER-SOUTH",
         "time_component_ids": [
@@ -818,7 +842,11 @@
         ],
         "booking_segment_parent_zone_id": "TZ-02-KNOWLEDGE-TRANSFER",
         "zone_segment_relation": "within_primary_zone",
-        "key_area_id": "PROV-KEY-002"
+        "key_area_id": "PROV-KEY-002",
+        "station_prototype_id": "STN-MIDDLE-OPEN-TRANSFER-HALL",
+        "service_class": "public_space_audit",
+        "contract_ref": "visual/assets/civic-timetable.json#SCN-07",
+        "performance_results": null
       },
       "geometry": {
         "type": "Point",
@@ -837,7 +865,7 @@
         "source_type": "agent_generated_design",
         "confidence": "low",
         "geometry_role": "design_proposal",
-        "name_zh": "开源协作桌与夜校",
+        "name_zh": "开源维护者夜校",
         "locator_kind": "scenario_node",
         "official_locator": false,
         "locator_status": "provisional_design_locator",
@@ -848,7 +876,7 @@
         "usage_note": "概念点位与短定位码映射；非批准工程点位，须以官方资料和现场核验替换。",
         "canonical_id": "SCN-08-NIGHT-SCHOOL",
         "locator_id": "SCN-08",
-        "name_en": "Open-source Table and Night School",
+        "name_en": "Open-Source Maintainer Night School",
         "zone_id": "TZ-02-KNOWLEDGE-TRANSFER",
         "booking_segment_id": "BK-04-ORIGIN-HUB",
         "time_component_ids": [
@@ -857,7 +885,11 @@
         ],
         "booking_segment_parent_zone_id": "TZ-02-KNOWLEDGE-TRANSFER",
         "zone_segment_relation": "within_primary_zone",
-        "key_area_id": "PROV-KEY-002"
+        "key_area_id": "PROV-KEY-002",
+        "station_prototype_id": "STN-MIDDLE-OPEN-TRANSFER-HALL",
+        "service_class": "knowledge_transfer",
+        "contract_ref": "visual/assets/civic-timetable.json#SCN-08",
+        "performance_results": null
       },
       "geometry": {
         "type": "Point",
@@ -876,7 +908,7 @@
         "source_type": "agent_generated_design",
         "confidence": "low",
         "geometry_role": "design_proposal",
-        "name_zh": "实验室时间银行",
+        "name_zh": "科研到公共服务翻译台",
         "locator_kind": "scenario_node",
         "official_locator": false,
         "locator_status": "provisional_design_locator",
@@ -887,7 +919,7 @@
         "usage_note": "概念点位与短定位码映射；非批准工程点位，须以官方资料和现场核验替换。",
         "canonical_id": "SCN-09-LAB-TIME-BANK",
         "locator_id": "SCN-09",
-        "name_en": "Laboratory Time Bank",
+        "name_en": "Research-to-Civic-Service Translation Desk",
         "zone_id": "TZ-02-KNOWLEDGE-TRANSFER",
         "booking_segment_id": "BK-03-TRANSFER-SOUTH",
         "time_component_ids": [
@@ -896,7 +928,11 @@
         ],
         "booking_segment_parent_zone_id": "TZ-02-KNOWLEDGE-TRANSFER",
         "zone_segment_relation": "within_primary_zone",
-        "key_area_id": "PROV-KEY-002"
+        "key_area_id": "PROV-KEY-002",
+        "station_prototype_id": "STN-MIDDLE-OPEN-TRANSFER-HALL",
+        "service_class": "knowledge_transfer",
+        "contract_ref": "visual/assets/civic-timetable.json#SCN-09",
+        "performance_results": null
       },
       "geometry": {
         "type": "Point",
@@ -915,7 +951,7 @@
         "source_type": "agent_generated_design",
         "confidence": "low",
         "geometry_role": "design_proposal",
-        "name_zh": "遗产声音站",
+        "name_zh": "京张记忆共读站",
         "locator_kind": "scenario_node",
         "official_locator": false,
         "locator_status": "provisional_design_locator",
@@ -926,7 +962,7 @@
         "usage_note": "概念点位与短定位码映射；非批准工程点位，须以官方资料和现场核验替换。",
         "canonical_id": "SCN-10-HERITAGE-VOICE",
         "locator_id": "SCN-10",
-        "name_en": "Heritage Voice Station",
+        "name_en": "Jingzhang Memory Co-Reading Station",
         "zone_id": "TZ-01-CITY-LOUNGE",
         "booking_segment_id": "BK-02-CIVIC-SEAM",
         "time_component_ids": [
@@ -935,7 +971,11 @@
         ],
         "booking_segment_parent_zone_id": "TZ-01-CITY-LOUNGE",
         "zone_segment_relation": "within_primary_zone",
-        "key_area_id": "PROV-KEY-003"
+        "key_area_id": "PROV-KEY-003",
+        "station_prototype_id": "STN-SOUTH-CIVIC-TERMINAL",
+        "service_class": "heritage_public_culture",
+        "contract_ref": "visual/assets/civic-timetable.json#SCN-10",
+        "performance_results": null
       },
       "geometry": {
         "type": "Point",
@@ -954,7 +994,7 @@
         "source_type": "agent_generated_design",
         "confidence": "low",
         "geometry_role": "design_proposal",
-        "name_zh": "静音街道站",
+        "name_zh": "夜间安静与公共路径观察站",
         "locator_kind": "scenario_node",
         "official_locator": false,
         "locator_status": "provisional_design_locator",
@@ -965,7 +1005,7 @@
         "usage_note": "概念点位与短定位码映射；非批准工程点位，须以官方资料和现场核验替换。",
         "canonical_id": "SCN-11-QUIET-STREET",
         "locator_id": "SCN-11",
-        "name_en": "Quiet Street Station",
+        "name_en": "Night Quiet and Public-Path Observatory",
         "zone_id": "TZ-01-CITY-LOUNGE",
         "booking_segment_id": "BK-02-CIVIC-SEAM",
         "time_component_ids": [
@@ -974,7 +1014,11 @@
         ],
         "booking_segment_parent_zone_id": "TZ-01-CITY-LOUNGE",
         "zone_segment_relation": "within_primary_zone",
-        "key_area_id": "PROV-KEY-003"
+        "key_area_id": "PROV-KEY-003",
+        "station_prototype_id": "STN-SOUTH-CIVIC-TERMINAL",
+        "service_class": "public_space_audit",
+        "contract_ref": "visual/assets/civic-timetable.json#SCN-11",
+        "performance_results": null
       },
       "geometry": {
         "type": "Point",
@@ -993,7 +1037,7 @@
         "source_type": "agent_generated_design",
         "confidence": "low",
         "geometry_role": "design_proposal",
-        "name_zh": "模型阅览室与开源发车板",
+        "name_zh": "消费智能体权限沙盒",
         "locator_kind": "scenario_node",
         "official_locator": false,
         "locator_status": "provisional_design_locator",
@@ -1004,7 +1048,7 @@
         "usage_note": "概念点位与短定位码映射；非批准工程点位，须以官方资料和现场核验替换。",
         "canonical_id": "SCN-12-CITY-MODEL-ROOM",
         "locator_id": "SCN-12",
-        "name_en": "City Model Room and Departure Board",
+        "name_en": "Consumer-Agent Permission Sandbox",
         "zone_id": "TZ-01-CITY-LOUNGE",
         "booking_segment_id": "BK-01-SOUTH-GATE",
         "time_component_ids": [
@@ -1014,7 +1058,11 @@
         ],
         "booking_segment_parent_zone_id": "TZ-01-CITY-LOUNGE",
         "zone_segment_relation": "within_primary_zone",
-        "key_area_id": "PROV-KEY-003"
+        "key_area_id": "PROV-KEY-003",
+        "station_prototype_id": "STN-SOUTH-CIVIC-TERMINAL",
+        "service_class": "everyday_service",
+        "contract_ref": "visual/assets/civic-timetable.json#SCN-12",
+        "performance_results": null
       },
       "geometry": {
         "type": "Point",

@@ -15,7 +15,9 @@
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "drawings/a0-boards.pdf",
+        "visual/assets/station-prototypes.json",
+        "risk.json"
       ],
       "geometry_refs": [
         "geometry/site_boundary.geojson#SITE-001",
@@ -26,13 +28,17 @@
       "metric_refs": [
         "site_area_sqm",
         "key_area_count",
-        "renewal_project_count"
+        "renewal_project_count",
+        "station_prototype_count",
+        "listed_existing_park_open_hours_per_week"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
         "SITE-PACKAGE",
         "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "KEY-AREA-SOURCE",
+        "OFFICIAL-PARK-PLAN-2021",
+        "OFFICIAL-PARK-PHASE1-2023"
       ],
       "assumption_ids": [
         "A-BOUNDARY-001",
@@ -60,7 +66,10 @@
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "drawings/a0-boards.pdf",
+        "visual/assets/civic-timetable.json",
+        "visual/assets/timetable-tabletop-evidence.json",
+        "risk.json"
       ],
       "geometry_refs": [
         "geometry/constraints.geojson#TZ-01-CITY-LOUNGE",
@@ -74,16 +83,23 @@
         "persona_count",
         "landmark_count",
         "governance_role_count",
-        "project_maturity_gate_count"
+        "project_maturity_gate_count",
+        "scheduled_ai_service_contract_count",
+        "tabletop_case_count",
+        "contract_stop_reset_coverage_ratio",
+        "field_service_success_ratio"
       ],
       "source_ids": [
         "AGENT-TASKBOOK",
-        "OFFICIAL-ANNOUNCEMENT"
+        "OFFICIAL-ANNOUNCEMENT",
+        "OFFICIAL-BEIJING-AGENTIC-AI-2026",
+        "CASE-AI-VERIFY"
       ],
       "assumption_ids": [
         "A-AI-001",
         "A-TIME-001",
-        "A-DELIVERY-001"
+        "A-DELIVERY-001",
+        "A-TABLETOP-001"
       ],
       "self_check_ids": [
         "VISUAL_STATIC",
@@ -105,7 +121,9 @@
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "drawings/a0-boards.pdf",
+        "visual/assets/station-prototypes.json",
+        "visual/assets/civic-timetable.json"
       ],
       "geometry_refs": [
         "geometry/buildings.geojson",
@@ -118,7 +136,9 @@
         "building_footprint_area_sqm",
         "green_ratio",
         "public_space_ratio",
-        "time_component_count"
+        "time_component_count",
+        "station_prototype_count",
+        "contract_non_ai_equivalent_coverage_ratio"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -149,7 +169,9 @@
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "drawings/a0-boards.pdf",
+        "risk.json",
+        "visual/assets/implementation-gates.json"
       ],
       "geometry_refs": [
         "geometry/land_use.geojson",
@@ -171,7 +193,9 @@
       ],
       "assumption_ids": [
         "A-CONTROLS-001",
-        "A-BUILDING-001"
+        "A-BUILDING-001",
+        "A-OSM-DISCREPANCY-001",
+        "A-TABLETOP-001"
       ],
       "self_check_ids": [
         "LAND_USE_TOPOLOGY",
