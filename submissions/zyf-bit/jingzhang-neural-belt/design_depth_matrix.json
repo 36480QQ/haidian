@@ -2,146 +2,184 @@
   "schema_version": "0.1.0",
   "items": [
     {
-      "title_zh": "场地分析",
+      "item_id": "existing_conditions_diagnosis",
+      "title_zh": "现状条件诊断",
       "required_level": "regional",
       "achieved_level": "regional",
-      "evidence_sections": [
-        "2.1 区位分析",
-        "2.2 交通条件",
-        "2.3 现状土地利用"
-      ],
-      "evidence_layers": [
-        "geojson/boundary.geojson",
-        "geojson/transport_network.geojson"
-      ],
-      "notes": "涵盖区位、交通、土地利用、历史文化四个维度。",
-      "item_id": "site_analysis"
+      "proposal_sections": ["2.1 区位分析", "2.2 交通条件", "2.3 现状土地利用", "2.5 京张铁路遗产"],
+      "drawing_refs": ["drawings/a3-booklet.pdf"],
+      "geometry_refs": ["geometry/site_boundary.geojson", "geometry/land_use.geojson", "geometry/roads.geojson"],
+      "metric_refs": ["site_area_sqm"],
+      "source_ids": ["SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT", "SRC-OSM"],
+      "notes": "涵盖区位、交通、土地利用、历史文化四个维度的现状分析。"
     },
     {
-      "title_zh": "概念设计",
+      "item_id": "three_level_scope_framework",
+      "title_zh": "三层范围工作框架",
+      "required_level": "regional",
+      "achieved_level": "regional",
+      "proposal_sections": ["2.1 统筹研究范围", "2.2 总体设计范围", "2.3 重点区域范围"],
+      "drawing_refs": ["drawings/a3-booklet.pdf"],
+      "geometry_refs": ["geometry/site_boundary.geojson", "geometry/key_areas.geojson"],
+      "metric_refs": ["site_area_sqm", "key_area_count"],
+      "source_ids": ["SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT", "SRC-BJ-THREE-AREAS-WINGS"],
+      "notes": "三层递进框架：统筹研究范围43.6平方公里、总体设计范围11.4平方公里、重点区域3.684平方公里。"
+    },
+    {
+      "item_id": "overall_spatial_structure",
+      "title_zh": "总体空间结构",
       "required_level": "conceptual",
       "achieved_level": "conceptual",
-      "evidence_sections": [
-        "3.1 设计理念",
-        "3.2 总体概念",
-        "3.3 AI创新带主题"
-      ],
-      "evidence_layers": [],
-      "notes": "提出'京张智脉'核心概念，融合铁路遗产与AI创新。",
-      "item_id": "concept_design"
+      "proposal_sections": ["3.4 总体空间结构"],
+      "drawing_refs": ["drawings/a3-booklet.pdf"],
+      "geometry_refs": ["geometry/site_boundary.geojson", "geometry/land_use.geojson"],
+      "metric_refs": ["site_area_sqm"],
+      "source_ids": ["SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT"],
+      "notes": "一轴三核两翼多节点的空间结构。"
     },
     {
+      "item_id": "land_use_layout",
       "title_zh": "用地布局",
       "required_level": "block_group",
       "achieved_level": "block_group",
-      "evidence_sections": [
-        "4.1 用地布局",
-        "4.2 功能分区"
-      ],
-      "evidence_layers": [
-        "geojson/landuse.geojson"
-      ],
-      "notes": "达到街区-组团级精度，受 ASM-005 限制未达地块级。",
-      "item_id": "land_use_layout"
+      "proposal_sections": ["4.1 用地布局", "4.2 功能分区"],
+      "drawing_refs": ["drawings/a3-booklet.pdf"],
+      "geometry_refs": ["geometry/land_use.geojson"],
+      "metric_refs": ["site_area_sqm", "green_ratio", "building_footprint_area_sqm"],
+      "source_ids": ["SRC-HAIDIAN-1X1"],
+      "notes": "达到街区-组团级精度，受ASM-005限制未达地块级。"
     },
     {
-      "title_zh": "建筑体量",
+      "item_id": "development_intensity_controls",
+      "title_zh": "开发强度控制",
+      "required_level": "block_group",
+      "achieved_level": "block_group",
+      "proposal_sections": ["4.1 用地布局", "5.4 建筑形态"],
+      "drawing_refs": ["drawings/a3-booklet.pdf"],
+      "geometry_refs": ["geometry/land_use.geojson", "geometry/buildings.geojson"],
+      "metric_refs": ["building_footprint_area_sqm", "floor_area_ratio"],
+      "source_ids": ["SRC-HAIDIAN-1X1"],
+      "notes": "概念建议按平均容积率2.0-3.0估算，具体以正式审批为准。"
+    },
+    {
+      "item_id": "height_massing_character",
+      "title_zh": "建筑高度体量与风貌",
       "required_level": "massing",
       "achieved_level": "massing",
-      "evidence_sections": [
-        "5.4 建筑形态",
-        "5.5 风貌控制"
-      ],
-      "evidence_layers": [],
-      "notes": "提供建筑体量与天际线建议方案，限高依据 ASM-004 推定。",
-      "item_id": "building_massing"
+      "proposal_sections": ["5.4 建筑形态", "5.5 风貌控制"],
+      "drawing_refs": ["drawings/a0-boards.pdf"],
+      "geometry_refs": ["geometry/buildings.geojson"],
+      "metric_refs": ["building_footprint_area_sqm"],
+      "source_ids": ["SRC-HAIDIAN-1X1"],
+      "notes": "建筑高度控制形成中间高、两侧低的空间形态。"
     },
     {
-      "title_zh": "交通网络",
+      "item_id": "retain_renovate_demolish",
+      "title_zh": "拆改留方案",
+      "required_level": "block_group",
+      "achieved_level": "block_group",
+      "proposal_sections": ["4.1 城市更新总体框架"],
+      "drawing_refs": ["drawings/a3-booklet.pdf"],
+      "geometry_refs": ["geometry/land_use.geojson", "geometry/buildings.geojson"],
+      "metric_refs": ["building_footprint_area_sqm"],
+      "source_ids": ["SRC-HAIDIAN-1X1"],
+      "notes": "保留-改造-拆除-新建四类分类策略。"
+    },
+    {
+      "item_id": "traffic_rail_slow_parking",
+      "title_zh": "交通轨道慢行与停车",
       "required_level": "network",
       "achieved_level": "network",
-      "evidence_sections": [
-        "5.1 交通系统"
-      ],
-      "evidence_layers": [
-        "geojson/transport_network.geojson"
-      ],
-      "notes": "包含轨道交通、公交、慢行系统三级网络。",
-      "item_id": "transport_network"
+      "proposal_sections": ["5.1 交通系统"],
+      "drawing_refs": ["drawings/a3-booklet.pdf"],
+      "geometry_refs": ["geometry/roads.geojson"],
+      "metric_refs": ["site_area_sqm"],
+      "source_ids": ["SRC-OSM", "SRC-HAIDIAN-1X1"],
+      "notes": "包含轨道交通、公交、慢行系统三级网络。"
     },
     {
-      "title_zh": "绿蓝系统",
+      "item_id": "municipal_new_infrastructure",
+      "title_zh": "市政与新型基础设施",
       "required_level": "network",
       "achieved_level": "network",
-      "evidence_sections": [
-        "5.2 绿蓝系统"
-      ],
-      "evidence_layers": [
-        "geojson/green_blue_system.geojson"
-      ],
-      "notes": "绿地率约25%，构建连续生态廊道。",
-      "item_id": "green_blue_system"
+      "proposal_sections": ["5.1 交通系统", "5.7 技术应用"],
+      "drawing_refs": ["drawings/a3-booklet.pdf"],
+      "geometry_refs": ["geometry/roads.geojson", "geometry/site_boundary.geojson"],
+      "metric_refs": ["site_area_sqm"],
+      "source_ids": ["SRC-AGENT-TASKBOOK"],
+      "notes": "分布式算力节点、5G/6G基站、智能感知设备与传统市政融合部署。"
     },
     {
-      "title_zh": "公共空间",
-      "required_level": "system",
-      "achieved_level": "system",
-      "evidence_sections": [
-        "5.3 公共空间体系"
-      ],
-      "evidence_layers": [
-        "geojson/public_space.geojson"
-      ],
-      "notes": "公共空间率约15%，覆盖广场、公园、街道三类。",
-      "item_id": "public_space"
+      "item_id": "blue_green_public_space",
+      "title_zh": "蓝绿空间与公共空间",
+      "required_level": "network",
+      "achieved_level": "network",
+      "proposal_sections": ["5.2 绿蓝系统", "5.3 公共空间体系"],
+      "drawing_refs": ["drawings/a3-booklet.pdf", "drawings/a0-boards.pdf"],
+      "geometry_refs": ["geometry/green_space.geojson", "geometry/public_space.geojson"],
+      "metric_refs": ["green_ratio", "public_space_ratio"],
+      "source_ids": ["SRC-HAIDIAN-1X1"],
+      "notes": "绿地率约25%，公共空间率约15%，构建连续生态廊道。"
     },
     {
-      "title_zh": "分期计划",
+      "item_id": "three_key_area_detailed_design",
+      "title_zh": "三处重点区域详细设计",
+      "required_level": "detailed",
+      "achieved_level": "detailed",
+      "proposal_sections": ["4.3 众智园", "4.4 AI原点社区", "4.5 大钟寺"],
+      "drawing_refs": ["drawings/a0-boards.pdf", "drawings/a3-booklet.pdf"],
+      "geometry_refs": ["geometry/key_areas.geojson"],
+      "metric_refs": ["key_area_count", "ai_landmark_count"],
+      "source_ids": ["SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT"],
+      "notes": "众智园(192.1公顷)、AI原点社区(104.3公顷)、大钟寺(72.0公顷)三处重点区域详细设计。"
+    },
+    {
+      "item_id": "renewal_project_list",
+      "title_zh": "更新项目清单",
+      "required_level": "block_group",
+      "achieved_level": "block_group",
+      "proposal_sections": ["6.1 分期策略", "6.2 实施时序"],
+      "drawing_refs": ["drawings/a3-booklet.pdf"],
+      "geometry_refs": ["geometry/phasing.geojson", "geometry/land_use.geojson"],
+      "metric_refs": ["site_area_sqm"],
+      "source_ids": ["SRC-HAIDIAN-1X1"],
+      "notes": "划分近期、中期、远期三阶段更新项目。"
+    },
+    {
+      "item_id": "phasing_implementation",
+      "title_zh": "分期实施计划",
       "required_level": "phased",
       "achieved_level": "phased",
-      "evidence_sections": [
-        "6.1 分期策略",
-        "6.2 实施时序"
-      ],
-      "evidence_layers": [],
-      "notes": "划分近期、中期、远期三阶段。",
-      "item_id": "phasing_plan"
+      "proposal_sections": ["6.1 分期策略", "6.2 实施时序"],
+      "drawing_refs": ["drawings/a3-booklet.pdf"],
+      "geometry_refs": ["geometry/phasing.geojson"],
+      "metric_refs": ["site_area_sqm"],
+      "source_ids": ["SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT"],
+      "notes": "近期(2026-2028)、中期(2028-2030)、远期(2030-2035)三阶段。"
     },
     {
-      "title_zh": "AI场景",
-      "required_level": "scenario",
-      "achieved_level": "scenario",
-      "evidence_sections": [
-        "5.6 AI场景设计"
-      ],
-      "evidence_layers": [],
-      "notes": "设计12个AI场景，覆盖6类用户画像。",
-      "item_id": "ai_scenario"
+      "item_id": "metrics_recalculation",
+      "title_zh": "指标体系与面积复算",
+      "required_level": "block_group",
+      "achieved_level": "block_group",
+      "proposal_sections": ["7.1 指标体系", "7.2 面积复算"],
+      "drawing_refs": ["drawings/a3-booklet.pdf"],
+      "geometry_refs": ["geometry/site_boundary.geojson", "geometry/land_use.geojson"],
+      "metric_refs": ["site_area_sqm", "green_ratio", "public_space_ratio", "building_footprint_area_sqm"],
+      "source_ids": ["SRC-PROVISIONAL-BOUNDARY", "SRC-HAIDIAN-1X1"],
+      "notes": "使用provisional boundary进行面积复算，替换official polygons后需重新复算。"
     },
     {
-      "title_zh": "文化叙事",
+      "item_id": "risk_missing_data",
+      "title_zh": "风险与缺失数据说明",
       "required_level": "narrative",
       "achieved_level": "narrative",
-      "evidence_sections": [
-        "2.5 京张铁路遗产",
-        "2.6 文化脉络",
-        "3.3 AI创新带主题"
-      ],
-      "evidence_layers": [],
-      "notes": "以京张铁路百年历史为叙事主线，串联AI创新场景。",
-      "item_id": "cultural_narrative"
-    },
-    {
-      "title_zh": "运营计划",
-      "required_level": "operational",
-      "achieved_level": "operational",
-      "evidence_sections": [
-        "6.3 运营策略",
-        "6.4 治理机制"
-      ],
-      "evidence_layers": [],
-      "notes": "提出智慧运营平台与多方协同治理框架。",
-      "item_id": "operations_plan"
+      "proposal_sections": ["8.1 风险评估", "8.2 缺失数据说明"],
+      "drawing_refs": ["drawings/a3-booklet.pdf"],
+      "geometry_refs": ["geometry/constraints.geojson"],
+      "metric_refs": ["site_area_sqm"],
+      "source_ids": ["SRC-AGENT-TASKBOOK", "SRC-PROVISIONAL-BOUNDARY"],
+      "notes": "识别数据隐私、实施复杂度、公众接受度等风险，声明provisional boundary数据缺口。"
     }
   ]
 }

@@ -2,91 +2,148 @@
   "schema_version": "0.1.0",
   "standards": [
     {
+      "standard_id": "PROJECT-OFFICIAL-ANNOUNCEMENT",
+      "standard_title": "百年京张AI创新带城市设计国际方案征集资格预审公告",
+      "requirement_zh": "本项目的三层范围、三处重点区域、设计任务、语言、设计深度和成果语境的主控依据。方案须遵循公告中的统筹研究范围(43.6平方公里)、总体设计范围(11.4平方公里)和重点区域范围(3.684平方公里)。",
+      "professional_dimension": "规划编制主控依据",
+      "mandatory": true,
+      "review_status": "addressed",
+      "proposal_sections": [
+        "2.1 区位分析",
+        "2.2 交通条件",
+        "3.4 总体空间结构",
+        "4.1 用地布局"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson"
+      ],
+      "metric_refs": [
+        "site_area_sqm",
+        "key_area_count"
+      ],
+      "source_ids": [
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT"
+      ]
+    },
+    {
+      "standard_id": "PROJECT-AGENT-OPEN-CALL-TASKBOOK",
+      "standard_title": "面向全球智能体开展百年京张AI创新带城市设计开源征集任务书摘录",
+      "requirement_zh": "补充面向智能体的十条共创原则、持续参与与协作循环、三大定位、五大功能、三区两翼、六项任务、统一评审维度和统一边界条款。方案须覆盖agent.1至agent.6全部六项智能体任务。",
+      "professional_dimension": "智能体征集任务覆盖",
+      "mandatory": true,
+      "review_status": "addressed",
+      "proposal_sections": [
+        "3.1 设计理念",
+        "3.2 总体概念",
+        "5.6 AI场景设计",
+        "6.3 运营策略"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/site_boundary.geojson"
+      ],
+      "metric_refs": [
+        "ai_scenario_count",
+        "user_persona_count",
+        "ai_landmark_count"
+      ],
+      "source_ids": [
+        "SRC-AGENT-TASKBOOK"
+      ]
+    },
+    {
       "standard_id": "MOHURD-URBAN-DESIGN-MEASURES",
       "standard_title": "城市设计管理办法",
-      "requirement_zh": "符合住建部《城市设计管理办法》关于总体城市设计与重点地区城市设计的编制要求。",
+      "requirement_zh": "城市设计应落实规划、指导建筑设计、塑造特色风貌，并统筹平面和立体空间、公共空间、建筑高度体量风格色彩等控制要求。方案须达到总体城市设计与重点地区城市设计的编制要求。",
       "professional_dimension": "城市设计编制规范",
       "mandatory": true,
       "review_status": "addressed",
       "proposal_sections": [
         "3.4 总体空间结构",
-        "4.3-4.5 重点地区设计"
+        "4.3-4.5 重点地区设计",
+        "5.4 建筑形态",
+        "5.5 风貌控制"
       ],
       "drawing_refs": [
-        "drawings/master_plan.png",
-        "drawings/key_area_axonometric.png"
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
       ],
       "geometry_refs": [
-        "geojson/key_areas.geojson",
-        "geojson/landuse.geojson"
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson"
+      ],
+      "metric_refs": [
+        "site_area_sqm",
+        "building_footprint_area_sqm"
+      ],
+      "source_ids": [
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT"
       ]
     },
     {
-      "standard_id": "URBAN-PLANNING-LAW",
-      "standard_title": "中华人民共和国城乡规划法",
-      "requirement_zh": "用地布局与空间结构符合城乡规划法关于规划编制与公共利益保障的要求。",
-      "professional_dimension": "规划法规合规",
+      "standard_id": "MOHURD-CONTROL-DETAILED-PLANNING",
+      "standard_title": "城市、镇控制性详细规划编制审批办法",
+      "requirement_zh": "控规是规划许可和实施管理依据，formal方案涉及用地、开发强度、道路、市政和实施管理时必须区分已知控制条件、设计建议和待确认事项。方案须达到控制性详细规划深度的城市设计。",
+      "professional_dimension": "控制性详细规划合规",
       "mandatory": true,
       "review_status": "addressed",
       "proposal_sections": [
         "4.1 用地布局",
-        "5.3 公共空间体系"
+        "4.2 功能分区",
+        "5.1 交通系统",
+        "6.1 分期策略"
       ],
       "drawing_refs": [
-        "drawings/master_plan.png"
+        "drawings/a3-booklet.pdf"
       ],
       "geometry_refs": [
-        "geojson/landuse.geojson",
-        "geojson/public_space.geojson"
+        "geometry/land_use.geojson",
+        "geometry/roads.geojson"
+      ],
+      "metric_refs": [
+        "site_area_sqm",
+        "green_ratio",
+        "public_space_ratio"
+      ],
+      "source_ids": [
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "SRC-HAIDIAN-1X1"
       ]
     },
     {
-      "standard_id": "GREEN-BUILDING-STANDARD",
-      "standard_title": "绿色建筑评价标准(GB/T 50378)",
-      "requirement_zh": "建筑与场地设计响应绿色建筑标准，提升绿地率与生态效益。",
-      "professional_dimension": "绿色生态",
+      "standard_id": "MNR-LAND-USE-CLASSIFICATION-GUIDE",
+      "standard_title": "国土空间调查、规划、用途管制用地用海分类指南",
+      "requirement_zh": "用地分类和指标表达应采用统一的国土空间用地用海分类逻辑，不得用自造分类替代可校验用地代码。方案用地布局须使用规范用地分类代码。",
+      "professional_dimension": "用地分类规范",
       "mandatory": true,
       "review_status": "addressed",
       "proposal_sections": [
-        "5.2 绿蓝系统",
-        "5.4 建筑形态"
+        "4.1 用地布局",
+        "4.2 功能分区"
       ],
       "drawing_refs": [
-        "drawings/green_blue_network.png"
+        "drawings/a3-booklet.pdf"
       ],
       "geometry_refs": [
-        "geojson/green_blue_system.geojson"
-      ]
-    },
-    {
-      "standard_id": "SMART-CITY-STANDARDS",
-      "standard_title": "智慧城市系列标准与指南",
-      "requirement_zh": "AI场景与智慧基础设施设计参考国家智慧城市标准体系。",
-      "professional_dimension": "智慧城市",
-      "mandatory": true,
-      "review_status": "addressed",
-      "proposal_sections": [
-        "5.6 AI场景设计",
-        "5.7 技术应用"
+        "geometry/land_use.geojson",
+        "geometry/site_boundary.geojson"
       ],
-      "drawing_refs": [],
-      "geometry_refs": [
-        "geojson/transport_network.geojson"
-      ]
-    },
-    {
-      "standard_id": "AI-ETHICS-GUIDELINES",
-      "standard_title": "新一代人工智能伦理规范",
-      "requirement_zh": "AI技术应用遵循公平、透明、可解释、隐私保护等伦理原则。",
-      "professional_dimension": "AI伦理",
-      "mandatory": true,
-      "review_status": "addressed",
-      "proposal_sections": [
-        "5.6 AI场景设计",
-        "附录H 风险评估"
+      "metric_refs": [
+        "site_area_sqm",
+        "building_footprint_area_sqm",
+        "green_ratio"
       ],
-      "drawing_refs": [],
-      "geometry_refs": []
+      "source_ids": [
+        "SRC-HAIDIAN-1X1",
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT"
+      ]
     }
   ]
 }
