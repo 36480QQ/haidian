@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ai-innovation-belt - proposal report</title>
+<title>京张智脉：百年京张AI创新带城市设计概念方案 - proposal report</title>
 <style>
 :root {
   --ink: #172033;
@@ -111,11 +111,10 @@ code {
 <body>
 <main>
 <section class="hero">
-<h1>ai-innovation-belt</h1>
-<p class="summary"></p>
-
+<h1>京张智脉：百年京张AI创新带城市设计概念方案</h1>
+<p class="summary">京张智脉：以百年铁路遗址为脊椎、以三大AI重点片区为节点、以两翼产业服务为支撑，提出11.4平方公里总体设计走廊内的城市更新、AI生态、公共空间与文化叙事概念方案。</p>
+<p class="translation-link"><a href="proposal.en.html">Read in English</a></p>
 </section>
-<p>﻿--- title: &quot;京张智脉：百年京张AI创新带城市设计概念方案&quot; author_github: &quot;throwing2008&quot; language: &quot;zh&quot; proposal_format_version: &quot;2&quot; bilingual_contract_version: &quot;1&quot; translation_file: &quot;proposal.en.md&quot; license: &quot;COMMUNITY-DISPLAY-ONLY&quot; summary: &quot;京张智脉：以百年铁路遗址为脊椎、以三大AI重点片区为节点、以两翼产业服务为支撑，提出11.4平方公里总体设计走廊内的城市更新、AI生态、公共空间与文化叙事概念方案。&quot; tracks: [&quot;ai-traffic-walkability&quot;, &quot;enterprise-services-ecosystem&quot;, &quot;civic-agent-governance&quot;] scenarios: [&quot;ai-traffic-walkability&quot;, &quot;enterprise-service-copilot&quot;, &quot;public-safety-operations-review&quot;] ---</p>
 <h1>京张智脉：百年京张AI创新带城市设计概念方案</h1>
 <h2>设计依据与资料清单</h2>
 <p>本 formal 方案以北京市规划和自然资源委员会海淀分局发布的《百年京张AI创新带城市设计国际方案征集资格预审公告》为第一依据，并以 <code>brief/site-package/</code> 中经维护者登记的临时粗略边界、重点区域、枚举、指标和来源清单为机器可读依据。AI agent 在生成方案前必须读取 <code>design_brief.json</code>、<code>allowed_design_space.json</code>、<code>sources.json</code>、<code>enums/</code>、<code>ranges/</code>、<code>schemas/</code>、<code>data/source_registry.json</code> 和 <code>data/processed/agent_fact_pack.md</code>，并用 <code>project_scope_summary.csv</code>、<code>agent_task_requirements.csv</code>、<code>source_use_matrix.csv</code>、<code>missing_data_checklist.csv</code> 建立任务、范围、资料用途和缺口清单。所有设计判断都要拆分为可追溯来源、可复算指标、可校验图层和可人工复核假设。公告要求方案达到控制性详细规划的城市设计深度和规划综合实施方案的城市设计深度，因此文本叙述不能替代 GeoJSON、指标表、A3 文册、A0 展板和 HTML 电子展示成果。</p>
@@ -185,7 +184,7 @@ code {
 <h2>风险、版权与合规说明</h2>
 <p><strong>要求双语言。</strong> 方案主文件可使用中文或英文，但必须通过 <code>proposal.en.md</code> 或 <code>proposal.zh.md</code> 提供完整对照译文；A3/A0、HTML 和含文字图件也必须提供对应语言副本，并优先使用 <code>docs/terminology-glossary.md</code> 的赛事推荐译法。v2 包缺少任一必需译稿、语言映射或有效文件时，finalize 与 CI 会阻断提交。所有图片、图纸、图标、数据和代码资产必须在 <code>sources.json</code> 或 <code>report/copyright_statement.md</code> 中说明来源、许可和授权状态。HTML 页面不得加载远程脚本、远程地图瓦片、远程字体、iframe、表单或外部 API，不得跟踪评审者行为。</p>
 <p>风险和缺资料清单由风险深度项、约束图层和场地包共同校核 <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="risk_missing_data" title="深度：risk_missing_data">深度</sup> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/constraints.geojson#CONSTRAINTS" title="空间数据：geometry/constraints.geojson#CONSTRAINTS">空间数据</sup> <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="SITE-PACKAGE" title="来源：SITE-PACKAGE">来源</sup>。<code>missing_data_checklist.csv</code> 中列出的 official boundary、key area、控规、道路、地块、建筑、市政、文保和公共服务缺口，必须进入 <code>assumptions.json</code>、自检和正文风险章节。任何缺少官方控规、道路红线、权属、市政、消防或文保条件的结论，都必须降级为待确认事项；完整专业核对保存在标准矩阵中。</p>
-<p>本方案不声称官方批准、审定控规、最终土地权属、最终建设规模或保证实施。所有AI场景设计遵守《生成式人工智能服务管理暂行办法》关于内容标识、训练数据合法性与个人信息保护的要求。公共空间与 AI 服务的无障碍局多按。中华人民共和国无障碍环境建设法要求建立连续无障碍通行与信息无障碍标识 <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="BARRIER-FREE-ENVIRONMENT-LAW" title="标准：BARRIER-FREE-ENVIRONMENT-LAW">标准</sup>。老年人智能技术应用居于山协助考虑，社区服务与医疗设施场景持续保留人工窗口与纸质凭证 <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="ELDERLY-SMART-TECH-PLAN-2020-45" title="标准：ELDERLY-SMART-TECH-PLAN-2020-45">标准</sup>。AI内容生成访龙《生成式人工智能服务管理暂行办法》 <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="GENERATIVE-AI-INTERIM-MEASURES" title="标准：GENERATIVE-AI-INTERIM-MEASURES">标准</sup>。设计文件深度画边按《建筑工程设计文件编制深度规定（2016年版）》：本方案属概念方案阶段，不进入方案、初步或施工图深度 <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="MOHURD-ARCH-DESIGN-DEPTH-2016" title="标准：MOHURD-ARCH-DESIGN-DEPTH-2016">标准</sup>。AI agent 对事实、来源、版权、空间数据、指标和表达负责；维护者和专业评审可依据自检结果、空间复核和合规矩阵要求返修或拒绝。</p>
+<p>本方案不声称官方批准、审定控规、最终土地权属、最终建设规模或保证实施。所有AI场景设计遵守《生成式人工智能服务管理暂行办法》关于内容标识、训练数据合法性与个人信息保护的要求。公共空间与 AI 服务按《中华人民共和国无障碍环境建设法》要求，建立连续无障碍通行系统与信息无障碍标识 <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="BARRIER-FREE-ENVIRONMENT-LAW" title="标准：BARRIER-FREE-ENVIRONMENT-LAW">标准</sup>。老年人运用智能技术困难按国办发〔2020〕45号文件要求处理：社区服务与医疗设施场景持续保留人工窗口与纸质凭证 <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="ELDERLY-SMART-TECH-PLAN-2020-45" title="标准：ELDERLY-SMART-TECH-PLAN-2020-45">标准</sup>。AI 内容生成遵循《生成式人工智能服务管理暂行办法》，生成内容需标识且保留人工复核 <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="GENERATIVE-AI-INTERIM-MEASURES" title="标准：GENERATIVE-AI-INTERIM-MEASURES">标准</sup>。设计文件深度边界按《建筑工程设计文件编制深度规定（2016年版）》：本方案属概念方案阶段，不进入方案、初步或施工图深度 <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="MOHURD-ARCH-DESIGN-DEPTH-2016" title="标准：MOHURD-ARCH-DESIGN-DEPTH-2016">标准</sup>。AI agent 对事实、来源、版权、空间数据、指标和表达负责；维护者和专业评审可依据自检结果、空间复核和合规矩阵要求返修或拒绝。</p>
 <h2>参考资料</h2>
 <ul>
 <li>brief/public-brief.md</li>

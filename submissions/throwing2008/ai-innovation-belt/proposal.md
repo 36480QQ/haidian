@@ -1,4 +1,4 @@
-﻿---
+---
 title: "京张智脉：百年京张AI创新带城市设计概念方案"
 author_github: "throwing2008"
 language: "zh"
@@ -176,7 +176,7 @@ agent 生成的AI治理建议必须遵守数据最小化、公开来源、可解
 
 风险和缺资料清单由风险深度项、约束图层和场地包共同校核 [depth:risk_missing_data] [data:geometry/constraints.geojson#CONSTRAINTS] [source:SITE-PACKAGE]。`missing_data_checklist.csv` 中列出的 official boundary、key area、控规、道路、地块、建筑、市政、文保和公共服务缺口，必须进入 `assumptions.json`、自检和正文风险章节。任何缺少官方控规、道路红线、权属、市政、消防或文保条件的结论，都必须降级为待确认事项；完整专业核对保存在标准矩阵中。
 
-本方案不声称官方批准、审定控规、最终土地权属、最终建设规模或保证实施。所有AI场景设计遵守《生成式人工智能服务管理暂行办法》关于内容标识、训练数据合法性与个人信息保护的要求。公共空间与 AI 服务的无障碍局多按。中华人民共和国无障碍环境建设法要求建立连续无障碍通行与信息无障碍标识 [standard:BARRIER-FREE-ENVIRONMENT-LAW]。老年人智能技术应用居于山协助考虑，社区服务与医疗设施场景持续保留人工窗口与纸质凭证 [standard:ELDERLY-SMART-TECH-PLAN-2020-45]。AI内容生成访龙《生成式人工智能服务管理暂行办法》 [standard:GENERATIVE-AI-INTERIM-MEASURES]。设计文件深度画边按《建筑工程设计文件编制深度规定（2016年版）》：本方案属概念方案阶段，不进入方案、初步或施工图深度 [standard:MOHURD-ARCH-DESIGN-DEPTH-2016]。AI agent 对事实、来源、版权、空间数据、指标和表达负责；维护者和专业评审可依据自检结果、空间复核和合规矩阵要求返修或拒绝。
+本方案不声称官方批准、审定控规、最终土地权属、最终建设规模或保证实施。所有AI场景设计遵守《生成式人工智能服务管理暂行办法》关于内容标识、训练数据合法性与个人信息保护的要求。公共空间与 AI 服务按《中华人民共和国无障碍环境建设法》要求，建立连续无障碍通行系统与信息无障碍标识 [standard:BARRIER-FREE-ENVIRONMENT-LAW]。老年人运用智能技术困难按国办发〔2020〕45号文件要求处理：社区服务与医疗设施场景持续保留人工窗口与纸质凭证 [standard:ELDERLY-SMART-TECH-PLAN-2020-45]。AI 内容生成遵循《生成式人工智能服务管理暂行办法》，生成内容需标识且保留人工复核 [standard:GENERATIVE-AI-INTERIM-MEASURES]。设计文件深度边界按《建筑工程设计文件编制深度规定（2016年版）》：本方案属概念方案阶段，不进入方案、初步或施工图深度 [standard:MOHURD-ARCH-DESIGN-DEPTH-2016]。AI agent 对事实、来源、版权、空间数据、指标和表达负责；维护者和专业评审可依据自检结果、空间复核和合规矩阵要求返修或拒绝。
 
 ## 参考资料
 
