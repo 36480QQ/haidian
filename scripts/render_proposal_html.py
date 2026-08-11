@@ -362,13 +362,12 @@ def render_html(
 <title>{html.escape(title)} - proposal report</title>
 <style>
 :root {{
-  --ink: #173b35;
-  --muted: #617168;
-  --line: #d8d2c1;
-  --paper: #fffdf7;
-  --bg: #ebe6d8;
-  --accent: #1e6b5a;
-  --gold: #b98345;
+  --ink: #172033;
+  --muted: #667085;
+  --line: #d7dee8;
+  --paper: #ffffff;
+  --bg: #f4f7fa;
+  --accent: #245b8f;
 }}
 * {{ box-sizing: border-box; }}
 body {{
@@ -376,40 +375,39 @@ body {{
   font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
   color: var(--ink);
   background: var(--bg);
-  line-height: 1.82;
-  background-image: radial-gradient(circle at 20% 0%, rgba(255,255,255,.8), transparent 32%);
+  line-height: 1.75;
 }}
 main {{
-  max-width: 1080px;
+  max-width: 980px;
   margin: 0 auto;
-  padding: 56px 56px 88px;
+  padding: 42px 24px 72px;
   background: var(--paper);
   min-height: 100vh;
-  box-shadow: 0 20px 70px rgba(43,49,37,.12);
+  box-shadow: 0 0 0 1px rgba(23, 32, 51, 0.05);
 }}
 .hero {{
-  border-bottom: 2px solid var(--gold);
-  padding: 10px 0 28px;
-  margin-bottom: 34px;
+  border-bottom: 3px solid var(--accent);
+  padding-bottom: 24px;
+  margin-bottom: 30px;
 }}
-h1 {{ font-size: 38px; line-height: 1.18; margin: 0 0 12px; letter-spacing:-.02em; }}
-h2 {{ font-size: 26px; margin: 46px 0 16px; border-top: 1px solid var(--line); padding-top: 28px; color:var(--accent); }}
-h3 {{ font-size: 20px; margin: 28px 0 12px; color:#274d45; }}
+h1 {{ font-size: 34px; line-height: 1.22; margin: 0 0 10px; }}
+h2 {{ font-size: 25px; margin: 34px 0 12px; border-top: 1px solid var(--line); padding-top: 24px; }}
+h3 {{ font-size: 20px; margin: 26px 0 10px; }}
 p, li {{ font-size: 16px; }}
 blockquote {{
   margin: 18px 0;
   padding: 12px 18px;
   border-left: 4px solid var(--line);
   color: var(--muted);
-  background: #f6f3e9;
+  background: #f8fafc;
 }}
 code {{
-  background: #eef1e9;
-  color: #255e51;
+  background: #eef2f7;
+  color: #1d4f7a;
   padding: 0.1em 0.35em;
   border-radius: 4px;
 }}
-.summary {{ color: var(--muted); font-size: 18px; max-width:760px; }}
+.summary {{ color: var(--muted); font-size: 17px; }}
 .translation-link a {{ color: var(--accent); font-weight: 700; }}
 .proposal-table {{ margin: 20px 0 26px; overflow-x: auto; }}
 .proposal-table table {{
@@ -425,16 +423,16 @@ code {{
   vertical-align: top;
   line-height: 1.6;
 }}
-.proposal-table th {{ background: #e8eee6; color: var(--ink); font-weight: 700; }}
-.proposal-table tbody tr:nth-child(even) {{ background: #fbfaf5; }}
+.proposal-table th {{ background: #eef2f7; color: var(--ink); font-weight: 700; }}
+.proposal-table tbody tr:nth-child(even) {{ background: #fafcfe; }}
 .proposal-table .align-center {{ text-align: center; }}
 .proposal-table .align-right {{ text-align: right; }}
 .proposal-figure {{
   margin: 22px 0 28px;
   border: 1px solid var(--line);
-  border-radius: 4px;
+  border-radius: 10px;
   overflow: hidden;
-  background: #f5f1e7;
+  background: #f8fafc;
 }}
 .proposal-figure img {{
   display: block;
@@ -452,15 +450,15 @@ code {{
   align-items: center;
   white-space: nowrap;
   margin: 0 0.12em;
-  border-bottom: 1px solid #88a99b;
-  color: #276a5a;
+  border-bottom: 1px solid #8aa8c3;
+  color: #315f87;
   font-size: 0.68em;
   font-weight: 650;
   line-height: 1.35;
   vertical-align: super;
 }}
 @media (max-width: 720px) {{
-  main {{ padding: 28px 18px 56px; }}
+  main {{ padding: 26px 16px 52px; }}
   h1 {{ font-size: 26px; }}
   h2 {{ font-size: 21px; }}
 }}
