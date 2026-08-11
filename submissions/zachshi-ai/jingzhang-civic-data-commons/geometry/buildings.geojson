@@ -1,6 +1,14 @@
 {
   "type": "FeatureCollection",
-  "name": "building_footprints_scaffold",
+  "name": "buildings",
+  "metadata": {
+    "coordinate_reference_system": "EPSG:4326",
+    "area_calculation_crs": "EPSG:4548",
+    "source": "Derived from provisional boundaries in brief/site-package/geometry/provisional_boundaries.geojson",
+    "boundary_status": "provisional_constraint",
+    "official_boundary": false,
+    "usage_note": "All geometries are derived from provisional boundaries. Do not use as official redline, approval basis, or precise area calculation basis."
+  },
   "features": [
     {
       "type": "Feature",
@@ -8,36 +16,700 @@
       "properties": {
         "id": "BLDG-001",
         "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
+        "source_type": "agent_inferred_from_public_data",
         "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "ai_r_and_d",
-        "name_zh": "AI研发示范建筑基底",
-        "area_sqm_declared": 310807.184
+        "geometry_role": "provisional_constraint",
+        "official_boundary": false,
+        "boundary_precision": "provisional_rough",
+        "building_type": "data_service_core",
+        "name_zh": "众智园数据工厂",
+        "parent_area_id": "zhongzhiyuan_ai_acceleration_area",
+        "height_conceptual_m": 240,
+        "far_conceptual": 18.0,
+        "area_sqm_declared": 37918.653,
+        "area_sqm_calculated": 37918.653
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.341572,
-              39.95475
+              116.3475,
+              40.019000000000005
             ],
             [
-              116.341572,
-              39.97225
+              116.3495,
+              40.019000000000005
             ],
             [
-              116.34344399999999,
-              39.97225
+              116.3495,
+              40.021
             ],
             [
-              116.34344399999999,
-              39.95475
+              116.3475,
+              40.021
             ],
             [
-              116.341572,
-              39.95475
+              116.3475,
+              40.019000000000005
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-002",
+      "properties": {
+        "id": "BLDG-002",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_inferred_from_public_data",
+        "confidence": "medium",
+        "geometry_role": "provisional_constraint",
+        "official_boundary": false,
+        "boundary_precision": "provisional_rough",
+        "building_type": "data_service_core",
+        "name_zh": "AI原点社区市民服务客厅",
+        "parent_area_id": "beijing_ai_origin_community",
+        "height_conceptual_m": 180,
+        "far_conceptual": 14.0,
+        "area_sqm_declared": 30727.405,
+        "area_sqm_calculated": 30727.405
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3466,
+              39.9891
+            ],
+            [
+              116.3484,
+              39.9891
+            ],
+            [
+              116.3484,
+              39.9909
+            ],
+            [
+              116.3466,
+              39.9909
+            ],
+            [
+              116.3466,
+              39.9891
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-003",
+      "properties": {
+        "id": "BLDG-003",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_inferred_from_public_data",
+        "confidence": "medium",
+        "geometry_role": "provisional_constraint",
+        "official_boundary": false,
+        "boundary_precision": "provisional_rough",
+        "building_type": "data_service_core",
+        "name_zh": "大钟寺企业数据服务港",
+        "parent_area_id": "dazhongsi_ai_industry_cluster",
+        "height_conceptual_m": 200,
+        "far_conceptual": 16.0,
+        "area_sqm_declared": 24293.476,
+        "area_sqm_calculated": 24293.476
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3477,
+              39.946200000000005
+            ],
+            [
+              116.3493,
+              39.946200000000005
+            ],
+            [
+              116.3493,
+              39.9478
+            ],
+            [
+              116.3477,
+              39.9478
+            ],
+            [
+              116.3477,
+              39.946200000000005
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-004",
+      "properties": {
+        "id": "BLDG-004",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_inferred_from_public_data",
+        "confidence": "medium",
+        "geometry_role": "provisional_constraint",
+        "official_boundary": false,
+        "boundary_precision": "provisional_rough",
+        "building_type": "co_creation_center",
+        "name_zh": "众智园开发者共创中心",
+        "parent_area_id": "zhongzhiyuan_ai_acceleration_area",
+        "height_conceptual_m": 120,
+        "far_conceptual": 10.0,
+        "area_sqm_declared": 25598.044,
+        "area_sqm_calculated": 25598.044
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3476,
+              40.011250000000004
+            ],
+            [
+              116.3494,
+              40.011250000000004
+            ],
+            [
+              116.3494,
+              40.01275
+            ],
+            [
+              116.3476,
+              40.01275
+            ],
+            [
+              116.3476,
+              40.011250000000004
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-005",
+      "properties": {
+        "id": "BLDG-005",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_inferred_from_public_data",
+        "confidence": "medium",
+        "geometry_role": "provisional_constraint",
+        "official_boundary": false,
+        "boundary_precision": "provisional_rough",
+        "building_type": "co_creation_center",
+        "name_zh": "众智园标准治理展示区",
+        "parent_area_id": "zhongzhiyuan_ai_acceleration_area",
+        "height_conceptual_m": 90,
+        "far_conceptual": 8.0,
+        "area_sqm_declared": 15928.821,
+        "area_sqm_calculated": 15928.821
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3478,
+              40.0064
+            ],
+            [
+              116.3492,
+              40.0064
+            ],
+            [
+              116.3492,
+              40.0076
+            ],
+            [
+              116.3478,
+              40.0076
+            ],
+            [
+              116.3478,
+              40.0064
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-006",
+      "properties": {
+        "id": "BLDG-006",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_inferred_from_public_data",
+        "confidence": "medium",
+        "geometry_role": "provisional_constraint",
+        "official_boundary": false,
+        "boundary_precision": "provisional_rough",
+        "building_type": "co_creation_center",
+        "name_zh": "AI原点社区开源发布厅",
+        "parent_area_id": "beijing_ai_origin_community",
+        "height_conceptual_m": 100,
+        "far_conceptual": 9.0,
+        "area_sqm_declared": 17071.518,
+        "area_sqm_calculated": 17071.518
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34675,
+              39.9864
+            ],
+            [
+              116.34825,
+              39.9864
+            ],
+            [
+              116.34825,
+              39.9876
+            ],
+            [
+              116.34675,
+              39.9876
+            ],
+            [
+              116.34675,
+              39.9864
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-007",
+      "properties": {
+        "id": "BLDG-007",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_inferred_from_public_data",
+        "confidence": "medium",
+        "geometry_role": "provisional_constraint",
+        "official_boundary": false,
+        "boundary_precision": "provisional_rough",
+        "building_type": "co_creation_center",
+        "name_zh": "AI原点社区共创成果展厅",
+        "parent_area_id": "beijing_ai_origin_community",
+        "height_conceptual_m": 80,
+        "far_conceptual": 7.0,
+        "area_sqm_declared": 13562.861,
+        "area_sqm_calculated": 13562.861
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34685,
+              39.98395
+            ],
+            [
+              116.34814999999999,
+              39.98395
+            ],
+            [
+              116.34814999999999,
+              39.985049999999994
+            ],
+            [
+              116.34685,
+              39.985049999999994
+            ],
+            [
+              116.34685,
+              39.98395
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-008",
+      "properties": {
+        "id": "BLDG-008",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_inferred_from_public_data",
+        "confidence": "medium",
+        "geometry_role": "provisional_constraint",
+        "official_boundary": false,
+        "boundary_precision": "provisional_rough",
+        "building_type": "co_creation_center",
+        "name_zh": "大钟寺国际路演客厅",
+        "parent_area_id": "dazhongsi_ai_industry_cluster",
+        "height_conceptual_m": 110,
+        "far_conceptual": 9.5,
+        "area_sqm_declared": 17081.336,
+        "area_sqm_calculated": 17081.336
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35125000000001,
+              39.946400000000004
+            ],
+            [
+              116.35275,
+              39.946400000000004
+            ],
+            [
+              116.35275,
+              39.9476
+            ],
+            [
+              116.35125000000001,
+              39.9476
+            ],
+            [
+              116.35125000000001,
+              39.946400000000004
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-009",
+      "properties": {
+        "id": "BLDG-009",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_inferred_from_public_data",
+        "confidence": "medium",
+        "geometry_role": "provisional_constraint",
+        "official_boundary": false,
+        "boundary_precision": "provisional_rough",
+        "building_type": "co_creation_center",
+        "name_zh": "大钟寺数据要素会客厅",
+        "parent_area_id": "dazhongsi_ai_industry_cluster",
+        "height_conceptual_m": 85,
+        "far_conceptual": 7.5,
+        "area_sqm_declared": 13570.602,
+        "area_sqm_calculated": 13570.602
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35135000000001,
+              39.944250000000004
+            ],
+            [
+              116.35265,
+              39.944250000000004
+            ],
+            [
+              116.35265,
+              39.94535
+            ],
+            [
+              116.35135000000001,
+              39.94535
+            ],
+            [
+              116.35135000000001,
+              39.944250000000004
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-010",
+      "properties": {
+        "id": "BLDG-010",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_inferred_from_public_data",
+        "confidence": "medium",
+        "geometry_role": "provisional_constraint",
+        "official_boundary": false,
+        "boundary_precision": "provisional_rough",
+        "building_type": "service_pod_station",
+        "name_zh": "服务舱站点群-清华东路西口",
+        "parent_area_id": "beijing_ai_origin_community",
+        "height_conceptual_m": 36,
+        "far_conceptual": 4.0,
+        "area_sqm_declared": 6068.737,
+        "area_sqm_calculated": 6068.737
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3466,
+              39.9996
+            ],
+            [
+              116.3474,
+              39.9996
+            ],
+            [
+              116.3474,
+              40.0004
+            ],
+            [
+              116.3466,
+              40.0004
+            ],
+            [
+              116.3466,
+              39.9996
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-011",
+      "properties": {
+        "id": "BLDG-011",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_inferred_from_public_data",
+        "confidence": "medium",
+        "geometry_role": "provisional_constraint",
+        "official_boundary": false,
+        "boundary_precision": "provisional_rough",
+        "building_type": "service_pod_station",
+        "name_zh": "服务舱站点群-学院路",
+        "parent_area_id": "beijing_ai_origin_community",
+        "height_conceptual_m": 36,
+        "far_conceptual": 4.0,
+        "area_sqm_declared": 6069.612,
+        "area_sqm_calculated": 6069.612
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3466,
+              39.9896
+            ],
+            [
+              116.3474,
+              39.9896
+            ],
+            [
+              116.3474,
+              39.9904
+            ],
+            [
+              116.3466,
+              39.9904
+            ],
+            [
+              116.3466,
+              39.9896
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-012",
+      "properties": {
+        "id": "BLDG-012",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_inferred_from_public_data",
+        "confidence": "medium",
+        "geometry_role": "provisional_constraint",
+        "official_boundary": false,
+        "boundary_precision": "provisional_rough",
+        "building_type": "service_pod_station",
+        "name_zh": "服务舱站点群-西土城",
+        "parent_area_id": "",
+        "height_conceptual_m": 36,
+        "far_conceptual": 4.0,
+        "area_sqm_declared": 6070.923,
+        "area_sqm_calculated": 6070.923
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3466,
+              39.9746
+            ],
+            [
+              116.3474,
+              39.9746
+            ],
+            [
+              116.3474,
+              39.9754
+            ],
+            [
+              116.3466,
+              39.9754
+            ],
+            [
+              116.3466,
+              39.9746
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-013",
+      "properties": {
+        "id": "BLDG-013",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_inferred_from_public_data",
+        "confidence": "medium",
+        "geometry_role": "provisional_constraint",
+        "official_boundary": false,
+        "boundary_precision": "provisional_rough",
+        "building_type": "service_pod_station",
+        "name_zh": "服务舱站点群-知春路",
+        "parent_area_id": "",
+        "height_conceptual_m": 36,
+        "far_conceptual": 4.0,
+        "area_sqm_declared": 6071.536,
+        "area_sqm_calculated": 6071.536
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3466,
+              39.967600000000004
+            ],
+            [
+              116.3474,
+              39.967600000000004
+            ],
+            [
+              116.3474,
+              39.9684
+            ],
+            [
+              116.3466,
+              39.9684
+            ],
+            [
+              116.3466,
+              39.967600000000004
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-014",
+      "properties": {
+        "id": "BLDG-014",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_inferred_from_public_data",
+        "confidence": "medium",
+        "geometry_role": "provisional_constraint",
+        "official_boundary": false,
+        "boundary_precision": "provisional_rough",
+        "building_type": "service_pod_station",
+        "name_zh": "服务舱站点群-大钟寺",
+        "parent_area_id": "dazhongsi_ai_industry_cluster",
+        "height_conceptual_m": 36,
+        "far_conceptual": 4.0,
+        "area_sqm_declared": 6073.238,
+        "area_sqm_calculated": 6073.238
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3481,
+              39.948100000000004
+            ],
+            [
+              116.3489,
+              39.948100000000004
+            ],
+            [
+              116.3489,
+              39.9489
+            ],
+            [
+              116.3481,
+              39.9489
+            ],
+            [
+              116.3481,
+              39.948100000000004
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-015",
+      "properties": {
+        "id": "BLDG-015",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_inferred_from_public_data",
+        "confidence": "medium",
+        "geometry_role": "provisional_constraint",
+        "official_boundary": false,
+        "boundary_precision": "provisional_rough",
+        "building_type": "service_pod_station",
+        "name_zh": "服务舱站点群-西直门",
+        "parent_area_id": "",
+        "height_conceptual_m": 36,
+        "far_conceptual": 4.0,
+        "area_sqm_declared": 6073.721,
+        "area_sqm_calculated": 6073.721
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3466,
+              39.9426
+            ],
+            [
+              116.3474,
+              39.9426
+            ],
+            [
+              116.3474,
+              39.9434
+            ],
+            [
+              116.3466,
+              39.9434
+            ],
+            [
+              116.3466,
+              39.9426
             ]
           ]
         ]

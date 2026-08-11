@@ -1,6 +1,14 @@
 {
   "type": "FeatureCollection",
-  "name": "green_space_scaffold",
+  "name": "green_space",
+  "metadata": {
+    "coordinate_reference_system": "EPSG:4326",
+    "area_calculation_crs": "EPSG:4548",
+    "source": "Derived from provisional boundaries in brief/site-package/geometry/provisional_boundaries.geojson",
+    "boundary_status": "provisional_constraint",
+    "official_boundary": false,
+    "usage_note": "All geometries are derived from provisional boundaries. Do not use as official redline, approval basis, or precise area calculation basis."
+  },
   "features": [
     {
       "type": "Feature",
@@ -8,36 +16,215 @@
       "properties": {
         "id": "GREEN-001",
         "layer": "GREEN_SPACE",
-        "source_type": "agent_generated_design",
+        "source_type": "agent_inferred_from_public_data",
         "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "land_use_code": "1401",
-        "name_zh": "连续公园绿地",
-        "area_sqm_declared": 1408600.768
+        "geometry_role": "provisional_constraint",
+        "official_boundary": false,
+        "boundary_precision": "provisional_rough",
+        "green_space_code": "park_green",
+        "name_zh": "京张遗址公园活力带-北段绿地",
+        "area_sqm_declared": 606716.439,
+        "area_sqm_calculated": 606716.439
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.34438,
-              39.953
+              116.343,
+              40.01
             ],
             [
-              116.34438,
-              40.012499999999996
+              116.347,
+              40.01
             ],
             [
-              116.346876,
-              40.012499999999996
+              116.347,
+              40.026
             ],
             [
-              116.346876,
-              39.953
+              116.343,
+              40.026
             ],
             [
-              116.34438,
-              39.953
+              116.343,
+              40.01
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "GREEN-002",
+      "properties": {
+        "id": "GREEN-002",
+        "layer": "GREEN_SPACE",
+        "source_type": "agent_inferred_from_public_data",
+        "confidence": "medium",
+        "geometry_role": "provisional_constraint",
+        "official_boundary": false,
+        "boundary_precision": "provisional_rough",
+        "green_space_code": "park_green",
+        "name_zh": "京张遗址公园活力带-中段绿地",
+        "area_sqm_declared": 455240.65,
+        "area_sqm_calculated": 455240.65
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34400000000001,
+              39.981
+            ],
+            [
+              116.348,
+              39.981
+            ],
+            [
+              116.348,
+              39.993
+            ],
+            [
+              116.34400000000001,
+              39.993
+            ],
+            [
+              116.34400000000001,
+              39.981
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "GREEN-003",
+      "properties": {
+        "id": "GREEN-003",
+        "layer": "GREEN_SPACE",
+        "source_type": "agent_inferred_from_public_data",
+        "confidence": "medium",
+        "geometry_role": "provisional_constraint",
+        "official_boundary": false,
+        "boundary_precision": "provisional_rough",
+        "green_space_code": "park_green",
+        "name_zh": "京张遗址公园活力带-南段绿地",
+        "area_sqm_declared": 170813.521,
+        "area_sqm_calculated": 170813.521
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3465,
+              39.944
+            ],
+            [
+              116.34949999999999,
+              39.944
+            ],
+            [
+              116.34949999999999,
+              39.95
+            ],
+            [
+              116.3465,
+              39.95
+            ],
+            [
+              116.3465,
+              39.944
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "GREEN-004",
+      "properties": {
+        "id": "GREEN-004",
+        "layer": "GREEN_SPACE",
+        "source_type": "agent_inferred_from_public_data",
+        "confidence": "medium",
+        "geometry_role": "provisional_constraint",
+        "official_boundary": false,
+        "boundary_precision": "provisional_rough",
+        "green_space_code": "riverside_green",
+        "name_zh": "小月河滨水绿带",
+        "area_sqm_declared": 474290.274,
+        "area_sqm_calculated": 474290.274
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35125000000001,
+              39.965
+            ],
+            [
+              116.35375,
+              39.965
+            ],
+            [
+              116.35375,
+              39.985
+            ],
+            [
+              116.35125000000001,
+              39.985
+            ],
+            [
+              116.35125000000001,
+              39.965
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "GREEN-005",
+      "properties": {
+        "id": "GREEN-005",
+        "layer": "GREEN_SPACE",
+        "source_type": "agent_inferred_from_public_data",
+        "confidence": "medium",
+        "geometry_role": "provisional_constraint",
+        "official_boundary": false,
+        "boundary_precision": "provisional_rough",
+        "green_space_code": "riverside_green",
+        "name_zh": "清河创新界面绿带",
+        "area_sqm_declared": 142186.858,
+        "area_sqm_calculated": 142186.858
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3425,
+              40.0225
+            ],
+            [
+              116.3475,
+              40.0225
+            ],
+            [
+              116.3475,
+              40.0255
+            ],
+            [
+              116.3425,
+              40.0255
+            ],
+            [
+              116.3425,
+              40.0225
             ]
           ]
         ]

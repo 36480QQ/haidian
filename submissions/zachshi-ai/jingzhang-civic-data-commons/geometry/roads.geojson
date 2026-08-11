@@ -1,29 +1,247 @@
 {
   "type": "FeatureCollection",
-  "name": "roads_scaffold",
+  "name": "roads",
+  "metadata": {
+    "coordinate_reference_system": "EPSG:4326",
+    "area_calculation_crs": "EPSG:4548",
+    "source": "Derived from provisional boundaries in brief/site-package/geometry/provisional_boundaries.geojson",
+    "boundary_status": "provisional_constraint",
+    "official_boundary": false,
+    "usage_note": "All geometries are derived from provisional boundaries. Do not use as official redline, approval basis, or precise area calculation basis."
+  },
   "features": [
+    {
+      "type": "Feature",
+      "id": "DATA-SPINE-001",
+      "properties": {
+        "id": "DATA-SPINE-001",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_inferred_from_public_data",
+        "confidence": "medium",
+        "geometry_role": "provisional_constraint",
+        "official_boundary": false,
+        "boundary_precision": "provisional_rough",
+        "road_class": "secondary",
+        "name_zh": "京张数据公共主轴",
+        "length_m_calculated": 8329.1
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.347,
+            39.943
+          ],
+          [
+            116.347,
+            39.99
+          ],
+          [
+            116.348,
+            40.018
+          ]
+        ]
+      }
+    },
     {
       "type": "Feature",
       "id": "ROAD-001",
       "properties": {
         "id": "ROAD-001",
         "layer": "ROAD_CENTERLINE",
-        "source_type": "agent_generated_design",
+        "source_type": "agent_inferred_from_public_data",
         "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "road_class": "greenway",
-        "name_zh": "慢行与创新服务廊道"
+        "geometry_role": "provisional_constraint",
+        "official_boundary": false,
+        "boundary_precision": "provisional_rough",
+        "road_class": "tertiary",
+        "name_zh": "北五环跨环路慢行联络线",
+        "length_m_calculated": 1195.2
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            116.340948,
-            39.9845
+            116.34,
+            40.02
           ],
           [
-            116.35374,
-            39.9845
+            116.354,
+            40.02
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-002",
+      "properties": {
+        "id": "ROAD-002",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_inferred_from_public_data",
+        "confidence": "medium",
+        "geometry_role": "provisional_constraint",
+        "official_boundary": false,
+        "boundary_precision": "provisional_rough",
+        "road_class": "tertiary",
+        "name_zh": "学院路慢行联络线",
+        "length_m_calculated": 1195.7
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.34,
+            39.99
+          ],
+          [
+            116.354,
+            39.99
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-003",
+      "properties": {
+        "id": "ROAD-003",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_inferred_from_public_data",
+        "confidence": "medium",
+        "geometry_role": "provisional_constraint",
+        "official_boundary": false,
+        "boundary_precision": "provisional_rough",
+        "road_class": "tertiary",
+        "name_zh": "知春路慢行联络线",
+        "length_m_calculated": 1196.1
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.34,
+            39.968
+          ],
+          [
+            116.354,
+            39.968
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-004",
+      "properties": {
+        "id": "ROAD-004",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_inferred_from_public_data",
+        "confidence": "medium",
+        "geometry_role": "provisional_constraint",
+        "official_boundary": false,
+        "boundary_precision": "provisional_rough",
+        "road_class": "tertiary",
+        "name_zh": "大钟寺站一体化联络线",
+        "length_m_calculated": 854.6
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.344,
+            39.947
+          ],
+          [
+            116.354,
+            39.947
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-005",
+      "properties": {
+        "id": "ROAD-005",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_inferred_from_public_data",
+        "confidence": "medium",
+        "geometry_role": "provisional_constraint",
+        "official_boundary": false,
+        "boundary_precision": "provisional_rough",
+        "road_class": "path",
+        "name_zh": "小月河滨水慢行线",
+        "length_m_calculated": 2220.8
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.3525,
+            39.965
+          ],
+          [
+            116.3525,
+            39.985
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-006",
+      "properties": {
+        "id": "ROAD-006",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_inferred_from_public_data",
+        "confidence": "medium",
+        "geometry_role": "provisional_constraint",
+        "official_boundary": false,
+        "boundary_precision": "provisional_rough",
+        "road_class": "tertiary",
+        "name_zh": "西直门外大街接驳线",
+        "length_m_calculated": 1111.1
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.341,
+            39.942
+          ],
+          [
+            116.354,
+            39.942
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-007",
+      "properties": {
+        "id": "ROAD-007",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_inferred_from_public_data",
+        "confidence": "medium",
+        "geometry_role": "provisional_constraint",
+        "official_boundary": false,
+        "boundary_precision": "provisional_rough",
+        "road_class": "tertiary",
+        "name_zh": "清华东路接驳线",
+        "length_m_calculated": 1110.2
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.341,
+            40.0
+          ],
+          [
+            116.354,
+            40.0
           ]
         ]
       }

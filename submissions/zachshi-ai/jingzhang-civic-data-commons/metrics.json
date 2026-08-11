@@ -7,63 +7,84 @@
   "metrics": {
     "site_area_sqm": {
       "status": "known",
-      "value": 11412825.386,
+      "value": 11412825.4,
       "unit": "sqm",
-      "source_files": ["geometry/site_boundary.geojson"],
+      "source_files": [
+        "geometry/site_boundary.geojson"
+      ],
       "formula": "polygon_area(submitted_site_boundary)",
       "confidence": "medium",
-      "assumptions": ["Provisional boundary derived from announcement text extents and area constraint; to be recalculated with official boundary."]
+      "assumptions": [
+        "Provisional boundary derived from announcement text extents and area constraint; to be recalculated with official boundary."
+      ]
     },
     "green_space_area_sqm": {
       "status": "known",
-      "value": 1408761.4,
+      "value": 1849247.7,
       "unit": "sqm",
-      "source_files": ["geometry/green_space.geojson", "geometry/site_boundary.geojson"],
+      "source_files": [
+        "geometry/green_space.geojson",
+        "geometry/site_boundary.geojson"
+      ],
       "formula": "sum(polygon_area(green_space_features))",
       "confidence": "medium",
       "assumptions": []
     },
     "green_ratio": {
       "status": "known",
-      "value": 0.123423,
+      "value": 0.162,
       "unit": "ratio",
-      "source_files": ["geometry/green_space.geojson", "geometry/site_boundary.geojson"],
+      "source_files": [
+        "geometry/green_space.geojson",
+        "geometry/site_boundary.geojson"
+      ],
       "formula": "green_space_area_sqm / site_area_sqm",
       "confidence": "medium",
       "assumptions": []
     },
     "public_space_area_sqm": {
       "status": "known",
-      "value": 836281.3,
+      "value": 349448.2,
       "unit": "sqm",
-      "source_files": ["geometry/public_space.geojson", "geometry/site_boundary.geojson"],
+      "source_files": [
+        "geometry/public_space.geojson",
+        "geometry/site_boundary.geojson"
+      ],
       "formula": "sum(polygon_area(public_space_features))",
       "confidence": "medium",
       "assumptions": []
     },
     "public_space_ratio": {
       "status": "known",
-      "value": 0.073281,
+      "value": 0.0306,
       "unit": "ratio",
-      "source_files": ["geometry/public_space.geojson", "geometry/site_boundary.geojson"],
+      "source_files": [
+        "geometry/public_space.geojson",
+        "geometry/site_boundary.geojson"
+      ],
       "formula": "public_space_area_sqm / site_area_sqm",
       "confidence": "medium",
       "assumptions": []
     },
     "building_footprint_area_sqm": {
       "status": "known",
-      "value": 310807.184,
+      "value": 232180.5,
       "unit": "sqm",
-      "source_files": ["geometry/buildings.geojson"],
+      "source_files": [
+        "geometry/buildings.geojson"
+      ],
       "formula": "sum(polygon_area(building_footprints))",
       "confidence": "medium",
       "assumptions": []
     },
     "building_density": {
       "status": "known",
-      "value": 0.027236,
+      "value": 0.0203,
       "unit": "ratio",
-      "source_files": ["geometry/buildings.geojson", "geometry/site_boundary.geojson"],
+      "source_files": [
+        "geometry/buildings.geojson",
+        "geometry/site_boundary.geojson"
+      ],
       "formula": "building_footprint_area_sqm / site_area_sqm",
       "confidence": "medium",
       "assumptions": []
@@ -72,7 +93,9 @@
       "status": "unknown",
       "value": null,
       "unit": "ratio",
-      "source_files": ["brief/site-package/ranges/planning_limits.json"],
+      "source_files": [
+        "brief/site-package/ranges/planning_limits.json"
+      ],
       "formula": "total_floor_area_sqm / official_site_area_sqm",
       "confidence": "unknown",
       "assumptions": [],
@@ -82,7 +105,9 @@
       "status": "unknown",
       "value": null,
       "unit": "m",
-      "source_files": ["brief/site-package/ranges/planning_limits.json"],
+      "source_files": [
+        "brief/site-package/ranges/planning_limits.json"
+      ],
       "formula": "official_height_controls",
       "confidence": "unknown",
       "assumptions": [],
@@ -92,7 +117,9 @@
       "status": "known",
       "value": 3,
       "unit": "count",
-      "source_files": ["geometry/key_areas.geojson"],
+      "source_files": [
+        "geometry/key_areas.geojson"
+      ],
       "formula": "count(key_detailed_design_areas)",
       "confidence": "high",
       "assumptions": []
@@ -101,7 +128,9 @@
       "status": "known",
       "value": 18,
       "unit": "count",
-      "source_files": ["geometry/land_use.geojson"],
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
       "formula": "count(land_use_zones)",
       "confidence": "high",
       "assumptions": []
@@ -110,7 +139,9 @@
       "status": "known",
       "value": 15,
       "unit": "count",
-      "source_files": ["geometry/buildings.geojson"],
+      "source_files": [
+        "geometry/buildings.geojson"
+      ],
       "formula": "count(building_footprints)",
       "confidence": "high",
       "assumptions": []
@@ -119,7 +150,9 @@
       "status": "known",
       "value": 8,
       "unit": "count",
-      "source_files": ["geometry/roads.geojson"],
+      "source_files": [
+        "geometry/roads.geojson"
+      ],
       "formula": "count(road_segments)",
       "confidence": "high",
       "assumptions": []
@@ -128,7 +161,9 @@
       "status": "known",
       "value": 3,
       "unit": "count",
-      "source_files": ["geometry/phasing.geojson"],
+      "source_files": [
+        "geometry/phasing.geojson"
+      ],
       "formula": "count(phasing_zones)",
       "confidence": "high",
       "assumptions": []
@@ -137,25 +172,36 @@
       "status": "known",
       "value": 12,
       "unit": "count",
-      "source_files": ["proposal.md"],
+      "source_files": [
+        "proposal.md"
+      ],
       "formula": "count(open_data_catalogue_entries)",
       "confidence": "low",
-      "assumptions": ["Conceptual recommendation for the open-data catalogue scale; to be calibrated with official open-data inventory."]
+      "assumptions": [
+        "Conceptual recommendation for the open-data catalogue scale; to be calibrated with official open-data inventory."
+      ]
     },
     "civic_service_pod_count": {
       "status": "known",
       "value": 13,
       "unit": "count",
-      "source_files": ["geometry/buildings.geojson", "geometry/public_space.geojson"],
+      "source_files": [
+        "geometry/buildings.geojson",
+        "geometry/public_space.geojson"
+      ],
       "formula": "count(ai_service_pod_nodes)",
       "confidence": "medium",
-      "assumptions": ["Conceptual pod count derived from station and community node distribution."]
+      "assumptions": [
+        "Conceptual pod count derived from station and community node distribution."
+      ]
     },
     "co_creation_spaces_count": {
       "status": "known",
       "value": 6,
       "unit": "count",
-      "source_files": ["geometry/buildings.geojson"],
+      "source_files": [
+        "geometry/buildings.geojson"
+      ],
       "formula": "count(co_creation_center_buildings)",
       "confidence": "medium",
       "assumptions": []
@@ -164,19 +210,28 @@
       "status": "known",
       "value": 48500,
       "unit": "sqm",
-      "source_files": ["geometry/buildings.geojson"],
+      "source_files": [
+        "geometry/buildings.geojson"
+      ],
       "formula": "sum(footprint_area of data_service_core + data_station + service_pod buildings)",
       "confidence": "low",
-      "assumptions": ["Conceptual building-area estimate; to be recalculated with official controls."]
+      "assumptions": [
+        "Conceptual building-area estimate; to be recalculated with official controls."
+      ]
     },
     "public_data_access_ratio": {
       "status": "known",
       "value": 0.82,
       "unit": "ratio",
-      "source_files": ["geometry/buildings.geojson", "geometry/site_boundary.geojson"],
+      "source_files": [
+        "geometry/buildings.geojson",
+        "geometry/site_boundary.geojson"
+      ],
       "formula": "area_within_500m_walk_of_data_station / site_area_sqm",
       "confidence": "low",
-      "assumptions": ["Conceptual walkability assessment assuming station distribution; to be calibrated with network analysis."]
+      "assumptions": [
+        "Conceptual walkability assessment assuming station distribution; to be calibrated with network analysis."
+      ]
     }
   }
 }

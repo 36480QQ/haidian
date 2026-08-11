@@ -79,7 +79,7 @@ The overall design area builds a "one spine, three hearts, many nodes" structure
 
 ### Land Use Layout
 
-Building on the announcement and current land-use classifications, the layout adds an "AI Service Zone" (AI_SERVICE_ZONE) land-use type to carry data commons cores, service pods, and co-creation centers. There are 18 land-use zones in the overall design area, of which 6 are AI service zones, 5 are green and plaza land, 3 are residential, 2 are industrial, and 2 are public-service facility land [data:geometry/land_use.geojson#LU-001]. The green ratio is about 25.6% and the public-space ratio about 20.9%; together nearly half the site is publicly accessible space [metric:green_ratio] [metric:public_space_ratio].
+Building on the announcement and current land-use classifications, the layout adds an "AI Service Zone" (AI_SERVICE_ZONE) land-use type to carry data commons cores, service pods, and co-creation centers. There are 18 land-use zones in the overall design area, of which 6 are AI service zones, 5 are green and plaza land, 3 are residential, 2 are industrial, and 2 are public-service facility land [data:geometry/land_use.geojson#LU-001]. The green ratio is about 16.2% and the public-space ratio about 3.1%; green and public space jointly carry the openly accessible functions of data stations and AI service pods [metric:green_ratio] [metric:public_space_ratio].
 
 ### Urban Renewal Strategy
 
@@ -138,7 +138,7 @@ SC-06, SC-08, and SC-11 are AI industry test/validation scenarios, each requirin
 
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
-Land-use classification follows public standards for territorial-spatial survey, planning, and use regulation; the added AI Service Zone type is a design recommendation subject to formal regulatory-plan confirmation [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]. The proposal places 15 conceptual buildings across the three key areas and along-line nodes, comprising 3 data-service core buildings, 6 co-creation centers / release halls, and 6 AI-service-pod station groups, with a total building footprint of approximately 311,000 sqm [data:geometry/buildings.geojson#BLDG-001] [metric:building_footprint_area_sqm].
+Land-use classification follows public standards for territorial-spatial survey, planning, and use regulation; the added AI Service Zone type is a design recommendation subject to formal regulatory-plan confirmation [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]. The proposal places 15 conceptual buildings across the three key areas and along-line nodes, comprising 3 data-service core buildings, 6 co-creation centers / release halls, and 6 AI-service-pod station groups, with a total building footprint of approximately 232,000 sqm [data:geometry/buildings.geojson#BLDG-001] [metric:building_footprint_area_sqm].
 
 **Regulatory-control disclaimer:** Floor-area ratio and building height are marked unknown because official regulatory controls are absent; no inferred value may be presented as an approved indicator [assumption:A-CONTROLS-001]. Building height, massing, interface, and character controls are governed by design-depth items; all values are at the conceptual-recommendation level [depth:height_massing_character]. When official controls are released, all scale and intensity metrics must be recalculated.
 
@@ -219,9 +219,9 @@ The proposal's metrics fall into three categories: spatial metrics (recalculable
 | Metric | Value | Unit | Note |
 | --- | --- | --- | --- |
 | Overall design area | 11,412,825 | sqm | Recalculated from provisional boundary; to be redone with official boundary [metric:site_area_sqm] |
-| Green ratio | 25.6% | ratio | Green area / site area [metric:green_ratio] |
-| Public-space ratio | 20.9% | ratio | Public-space area / site area [metric:public_space_ratio] |
-| Building footprint | 310,807 | sqm | Sum of footprints of 15 conceptual buildings [metric:building_footprint_area_sqm] |
+| Green ratio | 16.2% | ratio | Green area / site area [metric:green_ratio] |
+| Public-space ratio | 3.1% | ratio | Public-space area / site area [metric:public_space_ratio] |
+| Building footprint | 232,181 | sqm | Sum of footprints of 15 conceptual buildings [metric:building_footprint_area_sqm] |
 | Key area count | 3 | count | Three key areas [metric:key_area_count] |
 | Open datasets | 12 | count | Conceptual open-data catalogue size [metric:data_open_datasets_count] |
 | AI service pods | 13 | count | Service-pod nodes along the belt [metric:civic_service_pod_count] |
