@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "package_id": "jingzhang-ai-belt",
   "project_id": "centennial-jingzhang-ai-belt",
   "site_package_version": "0.1.0",
@@ -12,9 +12,9 @@
     "agent_name": "Alice-Thymefield",
     "model": "deepseek-v4-flash",
     "model_family": "deepseek",
-    "model_detail": "deepseek-v4-flash via Hermes Agent; geometry generated with shapely/pyproj, figures with matplotlib, PDFs with reportlab"
+    "model_detail": "deepseek-v4-flash via Hermes Agent; geometry generated with shapely/pyproj (metrics recomputed in EPSG:4548); figures and A3/A0 boards rendered with Typst 0.15.1 + CeTZ 0.3.3 (vector); initial figures with matplotlib 3.11.1; PDFs via Typst/reportlab 5.0.0"
   },
-  "generated_at": "2026-08-11T04:16:46Z",
+  "generated_at": "2026-08-11T18:00:00Z",
   "files": [
     {
       "path": "manifest.json",
@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "19048e6db54dbbeb80df7af7b4421160fb061b1094a237d9e4d0491e3ade8521"
+      "sha256": "ab36a9fb2187841a0221be552549713e35d9f380875db1c4a83a503a6f564fdd"
     },
     {
       "path": "agent.json",
@@ -50,38 +50,38 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "277f52ce872fad29938dfe266f8049d8250961b041a4bdd12169cf35e75f1079"
+      "sha256": "7dc49d9d130a0473effc676432bdb498983dd6d45f54f170a25c0ca91fb3af0c"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "dbc0c2e1b86434d7650ad1634906658bfb0b977e5232918fe69b8f91b1f3ac0b"
+      "sha256": "d5722ae361e0b41c905af73cff8cd7f4d3949b872381fa3603d08beeab88db2e"
     },
     {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "3408a9f28202f861235ef545067173285da51dfd1b7e27b7473329847b4ca493"
+      "sha256": "2dbd52143e027b4895fc9300d8d16faeb32332c69ecee4a337130900abbcd059"
     },
     {
       "path": "standard_matrix.json",
       "role": "standard_matrix",
       "required": true,
-      "sha256": "f16122ea863936c52f56b54773f08451dce4336c7da44d008b6a47bcb5901ba4"
+      "sha256": "97a7fb0314db342775d13b21f4208e0428f9b72fe60a64fc12a8f716475af460"
     },
     {
       "path": "design_depth_matrix.json",
       "role": "design_depth_matrix",
       "required": true,
-      "sha256": "dc2c62f1d1ab8d673bec8b5dc34fbc1e1cacf4ed04038193dc92b142f26df021"
+      "sha256": "a5a17375c338653f615f6d9cbc4ea4bb3eb478f538eb872181b41aa5474ca3c9"
     },
     {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "e5dcb4f99c44e7cad2bcefdf7cfe83b0b7a8d0503322479d584bf25e5ce810d5"
+      "sha256": "0288ac4d43c5df67573c0662e8875cf9e61df2462922e745d79d34b62027623d"
     },
     {
       "path": "report/narrative.md",
@@ -93,7 +93,8 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "ac8929a08516047380c241994c18f3ba107e198ab2ffdc74a24c7ee427b8a095"
+      "sha256": "26524ab252a681411fc247d156ba2bd10eba34a55f85092833ee0a63f44de204",
+      "language": "zh"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -211,7 +212,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "842fdd488d935dc5dc7e3c1a8e405569dc204404c0c9b3942dda17facb0cc882"
+      "sha256": "f8f442aa5a96f9b039f18dc39910df8aa410cdd9816a435e9e2a8a3e1a858bf4"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +220,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "b2f5f4f76310bfd42c283bcb397f94b58dc89cf43e47e793ccdb18dad05f920a"
+      "sha256": "211af2103b6f15b3e5395499edaee63763b2be1fac807151a45c501bc82082e3"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",

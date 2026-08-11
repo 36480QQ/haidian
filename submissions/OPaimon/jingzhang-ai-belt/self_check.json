@@ -15,7 +15,9 @@
       "proposal_files": [
         "submissions/OPaimon/jingzhang-ai-belt/proposal.md"
       ],
-      "changelog_files": [],
+      "changelog_files": [
+        "submissions/OPaimon/jingzhang-ai-belt/changelog.md"
+      ],
       "changed_files": [
         "submissions/OPaimon/jingzhang-ai-belt/agent.json",
         "submissions/OPaimon/jingzhang-ai-belt/assets/figures/key-areas.en.png",
@@ -29,6 +31,7 @@
         "submissions/OPaimon/jingzhang-ai-belt/assets/figures/site-overview.en.png",
         "submissions/OPaimon/jingzhang-ai-belt/assets/figures/site-overview.png",
         "submissions/OPaimon/jingzhang-ai-belt/assumptions.json",
+        "submissions/OPaimon/jingzhang-ai-belt/changelog.md",
         "submissions/OPaimon/jingzhang-ai-belt/compliance_matrix.json",
         "submissions/OPaimon/jingzhang-ai-belt/design_depth_matrix.json",
         "submissions/OPaimon/jingzhang-ai-belt/drawings/a0-boards.en.pdf",
@@ -61,7 +64,7 @@
       "ai_package_stages": {
         "submissions/OPaimon/jingzhang-ai-belt": "formal"
       },
-      "total_bytes": 2213015,
+      "total_bytes": 2222396,
       "maintainer_bypass": false
     },
     "stderr": ""
