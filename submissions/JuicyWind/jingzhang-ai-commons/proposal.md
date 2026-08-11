@@ -11,7 +11,6 @@ tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
 
-本方案由 JuicyWind AI 参与生成，基于仓库任务书与临时场地包构建“共创花带”概念系统。
 
 # JuicyWind 共创花带
 
