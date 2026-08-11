@@ -1,0 +1,17 @@
+{
+  "schema_version": "0.1.0",
+  "design_depth_items": [
+    {"depth_id": "DD-001", "title_zh": "总体空间结构", "required_depth": "complete", "status": "complete", "proposal_sections": ["第二章"], "evidence_refs": ["[data:geometry/key_areas.geojson]", "[data:geometry/site_boundary.geojson]"]},
+    {"depth_id": "DD-002", "title_zh": "三个关键区域精细化设计", "required_depth": "complete", "status": "complete", "proposal_sections": ["第二章 2.3节"], "evidence_refs": ["[data:geometry/key_areas.geojson#KEY-001]", "[data:geometry/key_areas.geojson#KEY-002]", "[data:geometry/key_areas.geojson#KEY-003]"]},
+    {"depth_id": "DD-003", "title_zh": "土地利用结构", "required_depth": "complete", "status": "complete", "proposal_sections": ["第八章"], "evidence_refs": ["[data:geometry/land_use.geojson]"]},
+    {"depth_id": "DD-004", "title_zh": "建筑更新策略", "required_depth": "complete", "status": "complete", "proposal_sections": ["第八章 8.2节"], "evidence_refs": ["[data:geometry/buildings.geojson]"]},
+    {"depth_id": "DD-005", "title_zh": "交通组织", "required_depth": "complete", "status": "complete", "proposal_sections": ["第九章"], "evidence_refs": ["[data:geometry/roads.geojson]"]},
+    {"depth_id": "DD-006", "title_zh": "绿地与公共空间", "required_depth": "complete", "status": "complete", "proposal_sections": ["第五章"], "evidence_refs": ["[data:geometry/green_space.geojson]", "[data:geometry/public_space.geojson]"]},
+    {"depth_id": "DD-007", "title_zh": "产业生态设计", "required_depth": "complete", "status": "complete", "proposal_sections": ["第三章"], "evidence_refs": ["[data:geometry/land_use.geojson]"]},
+    {"depth_id": "DD-008", "title_zh": "场景空间映射", "required_depth": "complete", "status": "complete", "proposal_sections": ["第四章"], "evidence_refs": ["[data:geometry/public_space.geojson]", "[data:geometry/roads.geojson]"]},
+    {"depth_id": "DD-009", "title_zh": "基础设施策略", "required_depth": "complete", "status": "complete", "proposal_sections": ["第九章 9.2节"], "evidence_refs": ["[data:geometry/phasing.geojson]"]},
+    {"depth_id": "DD-010", "title_zh": "文化叙事系统", "required_depth": "complete", "status": "complete", "proposal_sections": ["第六章"], "evidence_refs": ["[data:geometry/constraints.geojson]"]},
+    {"depth_id": "DD-011", "title_zh": "标志地标目录", "required_depth": "complete", "status": "complete", "proposal_sections": ["第五章 5.3节"], "evidence_refs": ["[data:geometry/public_space.geojson]"]},
+    {"depth_id": "DD-012", "title_zh": "开发者社区运营", "required_depth": "complete", "status": "complete", "proposal_sections": ["第七章 7.3节"], "evidence_refs": ["[data:geometry/phasing.geojson]"]}
+  ]
+}
