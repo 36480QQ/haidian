@@ -6,7 +6,7 @@ translation_file: "proposal.en.md"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "把百年京张从承载AI应用的线性走廊升级为一条可共创、可验证、可暂停、可复现、可向社会交付的AI公共创新生产线。"
+summary: "以连续日常轨和间歇验证轨组织百年京张的前台空间总纲，并以换轨场、失败侧线和公共时刻表把可共创、可验证、可暂停、可复现的 AI 公共创新生产线读给公众。"
 tracks:
   - ai-traffic-walkability
   - jingzhang-heritage-narrative
@@ -67,7 +67,7 @@ scenarios:
 | 首批最小测试包 | 同任务非 AI 对照 | 唯一主指标 | 不得协商的停止条件 | 当前状态 |
 |---|---|---|---|---|
 | T-03 / SCENE-009 无障碍路径 | 同起终点的人工服务、纸质或实体导视 | 各共同测试人群的任务成功数 / 已同意任务数 | 出现关键障碍、过期路径状态或非 AI 路径不可用即停止并恢复 | 阈值待现场预注册；未执行 |
-| T-02 / SCENE-011 企业服务 | 同一冻结问题集的人工窗口或可追溯静态指南 | 有来源且边界正确的回答数 / 冻结问题数 | 输出无来源结论、泄露禁采数据或人工接管不可用即停止 | 阈值待责任与专业复核；未执行 |
+| T-02 / SCENE-011 企业服务 | 同一冻结问题集的人工窗口或可追溯静态指南 | 有来源且边界正确的回答数 / 冻结问题数 | 输出无来源结论、泄露禁采数据或人工接管不可用即停止 | 合成决策回放 10/10 精确匹配；现实阈值、责任主体、场地与服务均未执行；G0 |
 | T-01 / SCENE-001 低速配送 | 相同任务的人工配送或静态路线 | 无碰撞、无越界且可急停的任务数 / 获批受控任务数 | 任一碰撞、越界、实体急停失败或接管链断裂即停止 | 安全红线固定；效率阈值待预注册；未执行 |
 
 ![G1 首测：预注册、停止、恢复与独立复测](assets/figures/implementation-roadmap.png)
@@ -79,8 +79,11 @@ V2 进一步补上一个仍然存在的缺口：方案已经提出验证线、�
 依据分为四级，各级只承担与其权威程度相称的作用：
 
 - 第一级是征集公告、智能体任务书和项目场地包，用于确认任务与提交边界 [source:DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509] [source:AGENT-TASKBOOK] [source:SITE-PACKAGE]。
+
 - 第二级是仓库资料登记、标准索引和处理导航，用于定位证据及其用途限制 [source:SOURCE-REGISTRY] [source:PROCESSED-FACT-PACK]。
+
 - 第三级是北京市关于原点社区、百年京张实景测试和“一核多点”创新街区的公开背景，只用于判断协同方向，不代表项目已批准或任何机构承诺参与 [source:BEIJING-AI-ORIGIN-2026] [source:BEIJING-AI-DISTRICTS-2026]。
+
 - 第四级是国家数据、AI 内容标识和“人工智能+”政策，与六个全球案例一起用于机制启发和治理边界 [source:NATIONAL-DATA-INFRA-2025] [source:AI-CONTENT-LABEL-2025] [source:AI-PLUS-2025]。
 
 ### 证据不是一次性快照：失效必须向下游传播
@@ -100,6 +103,24 @@ V2 进一步补上一个仍然存在的缺口：方案已经提出验证线、�
 ## 三层范围工作框架
 
 三层范围采用不同问题、不同精度、同一证据链。约 43.6 平方公里统筹研究范围回答产业、科研、城市问题和外部创新节点怎样协同；约 11.4 平方公里总体设计范围回答百年京张怎样组织公共空间、慢行、功能与场景；三处临时重点区回答“共创—验证—发布”三种状态站怎样形成街坊、建筑、公共界面和运行门。面积只表达任务层级，不能反推法定边界 [metric:site_area_sqm] [metric:key_area_total_sqm] [depth:three_level_scope_framework]。
+
+### 双轨京张：前台空间总纲 / Twin-track Jing-Zhang
+
+**核心概念。** 双轨京张把方案的前台空间语法明确为：**连续日常轨 / Continuous Civic Track**、**间歇验证轨 / Intermittent Proof Track**、**三座换轨场 / Three Switchyards**、**失败侧线 / Failure Siding** 和 **公共时刻表 / Civic Timetable**。日常轨是连续、开放、可独立完成普通任务的公共生活底盘；验证轨是自愿、公告、有责任人、有时段和可拆除的间歇叠层，绝不画成连续占地或已建设施。JZ-AIOS、G0—G3、证据门和权利边界不被替换，而是作为看不见但可追溯的后台治理内核 [data:visual/assets/key-area-evidence-matrix.json#twin_track_frontend_contract] [data:visual/assets/non-ai-parity-contract.json]。
+
+**总体空间解释。** 三座换轨场采用不同角色而不是复制同一类 AI 园区：原点社区把公共问题接入共创、共学和评议；众智园把问题转为离线、低风险、可停止的验证；大钟寺把通过、失败和修正变成公共发布与人工服务。三者的顺序是可读的任务接力，不是对临时几何的重新排序或新的选址承诺。连续日常轨贯穿入口、步行、通勤、休憩、办事和离开；验证轨只在换轨场之间以短段出现。每个换轨场旁都保留人工站房、无屏节点和非 AI 完整路径；失败侧线负责停止、人工解释、绕行、申诉和恢复，不让一次故障阻断普通生活。
+
+**六类城市信号与公共时刻表。** 入口、时段、状态、人工、来源、退出六类信号使用实体导视、纸面信息、口头说明、触觉/无障碍标识和可读版本共同表达。07:00—22:00 以日常为默认，22:00—07:00 静音、低照度、无屏优先；验证轨只能在公告和批准的限域时段出现；任意时段触发停止条件都进入“停止—人工接管—失败侧线—恢复日常”。公众无需注册、扫码或使用 AI，即可进入、询问、完成基本任务、离开或申诉 [data:visual/assets/key-area-evidence-matrix.json#twin_track_frontend_contract] [data:geometry/public_space.geojson#PUBLIC-004] [data:geometry/public_space.geojson#PUBLIC-009]。
+
+| 可读使用旅程 | 普通状态 | 进入验证 | 故障与恢复 |
+|---|---|---|---|
+| 1. 进入 | 从既有入口进入连续日常轨，步行、通勤、休憩或办事 | 不需要技术账户或设备 | 任何人可停下找人工、绕行或离开 |
+| 2. 判断 | 看入口、时段、状态、人工、来源、退出六类信号 | 只有自愿且公告的窗口可通过换轨场进入验证轨 | 停止信号把验证叠层隔离，不把故障变成日常阻断 |
+| 3. 完成任务 | 纸面、口头、实体导视和人工路径可独立完成同一基本任务 | 验证轨仍保留日常轨和非 AI 对照 | 修正来源、责任交接和独立复测未完成前保持 G0/退出 |
+
+**双轨典型剖面与四态。** 典型剖面按“人工站房—无屏节点—连续日常空间—间歇验证叠层—恢复花园”读图。四态是：①普通：日常轨开放、验证设备关闭；②验证：自愿进入公告时段，验证叠层限域且不占用日常通行；③故障：自动化停机，进入失败侧线并由人工接管；④恢复：完成纠错与独立复测后还原普通状态，否则保持 G0 或退出。图面只表达关系，不表达连续建设、准确位置、批准、运行结果或专业工程剖面 [data:visual/assets/key-area-evidence-matrix.json#twin_track_frontend_contract] [assumption:A-KEY-AREA-DETAIL-010]。
+
+![双轨京张总体图、典型剖面与四态 / Twin-track system, typical section, and four public states](assets/figures/site-overview.png)
 
 ### 唯一核心机制
 
@@ -125,8 +146,6 @@ V2 进一步补上一个仍然存在的缺口：方案已经提出验证线、�
 空间接口按南北概念顺序定义为：I01 大钟寺传播接口、I02 城市服务接口、I03 小月河体验接口、I04 高校共创接口、I05 众智验证接口、I06 清河生态校准接口；对应 `geometry/public_space.geojson` 的 `PUBLIC-004`—`PUBLIC-009`。面向人类的空间叙事只使用 I01—I06；G0—G3 只表示场景成熟度。既有 GeoJSON 的 `GATE-01`—`GATE-06` 是保留的机器兼容标识，不是空间阶段或人类编号。六个接口均是待现场复核的审计/服务类型，不是已选址的新建地标；每类接口要求同时核对公共空间、横向慢行、海绵缝合、非 AI 通道、静音时段和场景接力，并优先复用已建入口与服务设施 [data:geometry/public_space.geojson#PUBLIC-004] [data:visual/assets/site-grounding-register.json#SG-003] [metric:gateway_count]。
 
 Logo 方向采用两条不闭合轨线构成字母 **JZ**，中间的开放缺口形成“人工可介入的校验口”，六个短刻度对应六个空间接口。Logo 只使用几何线段和项目自有字标，不调用企业商标、人物肖像或受限字体。整体视觉为铁轨银、海淀蓝、开源绿、校验橙、钟声金；文化导视另用“里程—年份—来源”三行语法，避免把文化标识与整体 Logo 混为一套。
-
-![总体概念与证据边界](assets/figures/site-overview.png)
 
 ## 统筹研究范围产业与未来城市研究
 
@@ -175,31 +194,69 @@ Logo 方向采用两条不闭合轨线构成字母 **JZ**，中间的开放缺�
 | `PROV-KEY-002` 原点社区 | CO-CREATE；一街、两院、四节点 | `AI-ZONE-002`；`SCENE-005`—`008` | 场地与保障、权利与同意、非技术参与、撤回机制、独立复测包 | 临时范围、无合作承诺、未测试 |
 | `PROV-KEY-003` 大钟寺 | PUBLISH；四象限步行 + 一厅一台 | `AI-ZONE-003`；`SCENE-009`—`012` | 路线/服务权属、人工窗口、来源维护、同任务对照、独立复测包 | 临时范围、无批准服务点、未测试 |
 
+剖面不再把三处画成同一种园区模板：众智园以“公众观察边—低风险测试花园环—验证栈/维护边”分开公众日常与设备测试；原点社区以“连续日常街—问题共创院—公共评议院—四个可撤节点”保护居民通行和退出；大钟寺以“四向步行—钟轨会客厅—人工服务台—静音休憩”让发布活动服从通勤、无屏休憩和人工办事。每处都只使用普通—验证—故障—恢复一套权威运行四态，形成 3 组差异化剖面、共 12 个 G0 概念状态；当前验证态仅指预约、限域且不主张现场绩效的 G0 活动，未来任何获批限域共测仍是进入验证态前的成熟度门，不另算第五态。图与矩阵共同记录谁先让位、故障如何隔离、如何还场以及何时不得重启 [data:visual/assets/key-area-evidence-matrix.json] [metric:key_area_reversible_mode_count]。
+
 这份矩阵只增加可复核的设计映射，不把接口标识变成已选址地标，也不把公开桌面资料变成现状测绘、控规、权属或机构承诺 [data:visual/assets/key-area-evidence-matrix.json]。
+
+### 三种空间原型的共同读法
+
+本轮将现有两组图明确分工：`key-areas` 先画每处的**普通状态平面**，再叠加首层公共界面、人工交接、可拆构件和四步使用旅程；`key-area-sections` 再把同一对象转成差异化关系剖面、普通—验证—故障—恢复四态和场所恢复验收。绿线是始终连续的非 AI / 无障碍意图线，蓝色虚线是可停止、可拆除的服务叠层，灰色虚线与原型体量只表示未知关系。图件不提供比例尺、准确落位、建筑现状或工程断面；其中无障碍连续性、净宽、坡度、转弯、触觉与休息条件都必须由测绘和共同测试补证 [assumption:A-KEY-AREA-SPATIAL-011]。
+
+六个内聚工作包共同完成这次深化：众智园的平行验证庭与设备隔离；原点社区的一街两院四节点与无屏撤回；大钟寺的四象限步行与一厅一台；三处连续非 AI / 无障碍路径和人工交接；可拆构件与夜间静音；四态切换、场所恢复验收和结构化证据回链。它们共享证据语法但不共享平面骨架，且均只使用现有 `PROV-KEY-001`—`003`、`AI-ZONE-001`—`003` 和 `SCENE-001`—`012` [data:visual/assets/key-area-evidence-matrix.json#round2_spatial_deepening]。
+
+三个原型共同继承 22:00—07:00 静音门：不得安排测试、扩声或活动优先权，普通路径、无屏信息与人工求助仍可用；这一时段是概念运行约束，确切场地开放条件仍待现场和运营主体确认。
 
 ### 众智园：验证站 / VERIFY
 
 矛盾是自主技术需要真实问题和复合测试，但城市公共空间不能成为无边界试验场。结合海淀最新公开目标，众智园把 AI4S、AI 安全治理和规则互认作为建议验证主题，不据此宣称已有平台、伙伴或国际机制 [source:HAIDIAN-JZ-MIDTERM-2026]。空间采用“一园、一栈、两界面”：清河测试花园承载环境和低风险共测，可验证模型公共栈承载离线基准、安全与互操作检查，面向社区设置公众观察与申诉界面，后勤侧设置人工接管和设备维护。`AI-ZONE-001` 绑定低速配送、能耗、安全研判与失败档案四个节点 [data:geometry/constraints.geojson#AI-ZONE-001] [data:geometry/constraints.geojson#SCENE-001]。进入条件是来源、责任人、风险级、对照基线和实体急停齐全；任何碰撞、越界、未经授权数据处理或人工接管失效立即停止。验收不以“演示成功”计，而以复测包完整、失败可复现、人工接管可用和公共价值门通过计。
 
-**图面读法 / 尚缺资料。** 平面与剖面/模式图中的淡色虚线仅表示 `PROV-KEY-001` 临时概念范围；连续非 AI / 无障碍路径、人工交接、停止/恢复与可撤回服务叠层只说明相互关系，四种模式仍是 G0 假设状态。正式边界与场地条件、责任角色，以及消防、网络、数据和实体急停审查未补齐前，不得据图推断准确位置、尺度、批准、测试或结果 [data:visual/assets/key-area-evidence-matrix.json] [data:geometry/key_areas.geojson#PROV-KEY-001] [assumption:A-KEY-AREA-DETAIL-010]。
+**图面读法 / 尚缺资料。** 平面与剖面/模式图中的淡色虚线仅表示 `PROV-KEY-001` 临时概念范围；公众观察路径与低风险测试花园环分开，维护/急停边承担设备退出。生态日常、预约离线验证、故障隔离、场所恢复验收四态仍是 G0 假设；未来获批限域共测只是验证态的前置成熟度门，不是当前能力或另一运行态。正式边界与场地条件、责任角色，以及铁路、消防、网络、数据和实体急停审查未补齐前，不得据图推断准确位置、尺度、批准、测试或结果 [data:visual/assets/key-area-evidence-matrix.json] [data:geometry/key_areas.geojson#PROV-KEY-001] [assumption:A-KEY-AREA-DETAIL-010]。
+
+**场所旅程 / 首层交接。** 普通使用者先沿公众观察边完成通行与休憩；只有在读懂状态、时段和退出信号并自愿后，才从可见的人工交接点进入公告的离线验证。实体急停、越界、碰撞、设备噪声或人工接管失效时，验证庭立即隔离，普通路径保持开放。设备、围挡、线缆和临时标识撤除，路径表面、绿化、声光与人工说明完成恢复验收并闭合独立复测门后，才可讨论再次启用；当前恢复验收状态为 `unknown / 未执行`。实体隔离带、维护边和独立复测门属于众智园验证原型，不能机械复制到居民共创院或通勤发布场 [data:visual/assets/key-area-evidence-matrix.json#round2_spatial_deepening]。
 
 ### 北京 AI 原点社区：共创站 / CO-CREATE
 
 矛盾是高密度创新资源与居民日常、低成本创业和公共参与之间缺少稳定接口。公开材料把原点社区描述为约 3 平方公里范围、具有“十分钟创新圈”背景的科技社区；其中规模数字只作背景，不作本项目资源盘点、选址或合作证明 [source:HAIDIAN-AI-TRIAL-FIELD-2026]。空间采用“一街、两院、四节点”，并把五分钟日常生活支持单元嵌入十分钟创新背景和更广域的十五分钟公共服务规划框架：开源发布街连接高校与社区，共创院落承载问题拆解和团队匹配，公共评议院落承载居民共测、未成年人教育和无屏讨论。`AI-ZONE-002` 绑定可信文化导览、开源匹配、教育工坊和气候无障碍共测 [data:geometry/constraints.geojson#AI-ZONE-002] [data:geometry/constraints.geojson#SCENE-005]。进入条件是问题来自明确公共需求、参与者可撤回、推荐不用于录用评价；验收关注跨角色共创、撤回响应、非技术参与和不同人群任务成功差距。
 
-**图面读法 / 尚缺资料。** 平面与剖面/模式图把“一街、两院、四节点”读作连续非 AI / 无障碍路径上的可撤回服务叠层；日常默认、预约公共学习、未来获批限域 Beta 与静音/故障恢复仍只是 G0 假设，不表示社区、学校或场地方已参与。准确场地和开放时段、保障与责任角色、内容权利、同意/撤回及非技术参与条件未确认前，不得据图推断伙伴承诺、获批共测或学习成效 [data:visual/assets/key-area-evidence-matrix.json] [data:geometry/key_areas.geojson#PROV-KEY-002] [assumption:A-KEY-AREA-DETAIL-010]。
+**图面读法 / 尚缺资料。** 平面与剖面/模式图把“一街、两院、四节点”读作连续日常街上的可撤回参与叠层；社区日常、问题门诊/共学、故障撤回、静音/保障恢复四态仍只是 G0 假设，未来获批共创共测只是验证态的前置成熟度门，不表示社区、学校或场地方已参与。准确场地和开放时段、保障与责任角色、内容权利、同意/撤回及非技术参与条件未确认前，不得据图推断伙伴承诺、获批共测或学习成效 [data:visual/assets/key-area-evidence-matrix.json] [data:geometry/key_areas.geojson#PROV-KEY-002] [assumption:A-KEY-AREA-DETAIL-010]。
+
+**场所旅程 / 首层交接。** 居民无需账号、扫码或进入院落即可沿连续日常街通行和停留；无屏共学节点提供纸面说明与人工问询。选择参与者在进入问题院或评议院前取得可撤回同意，并可在任一节点退出；活动工具、座椅、遮棚和标识始终放在通行线之外。撤回、未成年人保障缺口、显著群体差距、扩声扰民或夜间静音失效时，采集与匹配立即停止，纸面与人工服务保留；恢复验收必须确认屏幕、扩声、采集和临时标识退出，两院与街道回到居民日常。双院协商关系、四个撤回节点和居民静音门只服务原点社区原型，不能改名后复制到另两处；当前安静时段兑现与恢复验收均为 `unknown / 未执行` [data:visual/assets/key-area-evidence-matrix.json#round2_spatial_deepening]。
 
 ### 大钟寺：发布站 / PUBLISH
 
 矛盾是站城流量、企业服务和消费展示容易把 AI 变成屏幕化营销，并挤压人工服务与安静空间。这里先承认已开放南段的社区、通勤与全龄活动基线，不把既有连通改善重复包装为本方案成果 [source:HAIDIAN-JZ-PHASE2-OPEN-2026]。空间采用“四象限步行 + 一厅一台”：四象限只表达待现场复核的连接方向；钟轨会客厅呈现通过、失败和修正的证据；城市服务台并置智能导航与人工窗口；发布界面设置无屏默认区和静音时段。海淀“十五五”公开文本提出到 2030 年成为全球人工智能创新策源地和产业高地，并要求高质量推进城市更新；这里仅把它作为区级方向，不由此推断大钟寺任何具体地块已纳入更新、权利已确定或实施已承诺 [source:HAIDIAN-15FYP-2026]。`AI-ZONE-003` 绑定无障碍路径、慢行提示、企业服务和健康导航 [data:geometry/constraints.geojson#AI-ZONE-003] [data:geometry/constraints.geojson#SCENE-009]。验收关注来源命中、过期提示、人工转接、投诉闭环和相对既有服务的增量，而不是活动人流或曝光量。
 
-**图面读法 / 尚缺资料。** 平面与剖面/模式图将“四象限步行 + 一厅一台”、连续非 AI / 无障碍路径与人工窗口画成待核关系，而非准确路线或获批服务点；任何 AI 叠层都须能暂停并恢复普通使用。准确路线、场所和服务权属、现状障碍与无障碍条件、来源维护和人工接管能力未确认前，不得据图推断部署、办事结果或现场绩效 [data:visual/assets/key-area-evidence-matrix.json] [data:geometry/key_areas.geojson#PROV-KEY-003] [assumption:A-KEY-AREA-DETAIL-010]。
+**图面读法 / 尚缺资料。** 平面与剖面/模式图将“四向步行 + 一厅一台 + 静音休憩”、实体导视与人工窗口画成待核关系，而非准确路线或获批服务点；通勤与休憩、预约证据发布、故障下线、来源/服务恢复四态要求任何 AI 叠层都能暂停并切回普通使用。未来获批服务试用只是验证态的前置成熟度门，不是当前能力或第五态。准确路线、场所和服务权属、现状障碍与无障碍条件、来源维护和人工接管能力未确认前，不得据图推断部署、办事结果或现场绩效 [data:visual/assets/key-area-evidence-matrix.json] [data:geometry/key_areas.geojson#PROV-KEY-003] [assumption:A-KEY-AREA-DETAIL-010]。
+
+**场所旅程 / 首层交接。** 通勤者先按实体导视沿四向路径通过，也可直接在人工服务台完成与智能服务相同的基本任务；证据发布是路径之外的自愿停留，不得形成排队或活动围挡。来源过期、答案冲突、人工转接失败或无障碍路径中断时，自动服务、屏幕、声音和灯光下线，人工窗口与普通路径继续。发布物料撤除、错误来源纠正、投诉交接和全量复测闭合后才可讨论恢复。四向通勤十字、来源台账与人工办事并置只属于发布原型；`PROV-KEY-003` 仍是按顺序和面积拟合的临时多边形，并不证明与大钟寺站、铁路边界、现状道路或任何建筑首层准确锚定 [data:visual/assets/key-area-evidence-matrix.json#round2_spatial_deepening]。
 
 三个朝圣地标被重新定义为同一知识旅程的三个章节：众智园“开源火种塔”记录可复验贡献，不展示个人排名；原点社区“算法里程碑”把京张工程史、中关村创新史与 AI 纠错史并排；大钟寺“钟轨会客厅”设置失败与修正档案。贡献者可选择实名、化名或匿名，荣誉只记录可验证的公共贡献，不与财富、流量、招聘或行政评价绑定。名称和形象均需完成版权、商标、肖像、史料和无障碍审查 [assumption:A-CULTURE-CONTENT-006]。
 
 ![三处状态站的空间深化](assets/figures/key-areas.png)
 
-![三处重点区的概念剖面与可逆模式切换](assets/figures/key-area-sections.png)
+![三处重点区的差异化概念剖面与可逆模式切换](assets/figures/key-area-sections.png)
+
+### 不能机械复制的组件与恢复门
+
+#### 众智园 VERIFY
+
+- **专属组件：** 平行验证庭、实体设备隔离带、维护/急停边、独立复测门。
+- **普通基线：** 公众观察边、非 AI 通行与人工申诉必须保留。
+- **恢复门：** 设备、围挡和线缆清零，表面、绿化与声光复核；当前状态 `unknown / 未执行`。
+
+#### 原点社区 CO-CREATE
+
+- **专属组件：** 一街两院的协商关系、四个撤回节点、无屏共学廊、居民静音门。
+- **普通基线：** 居民穿行、无屏停留、纸面与人工退出必须保留。
+- **恢复门：** 屏幕、扩声、采集与标识退出，同意撤回闭合；当前状态 `unknown / 未执行`。
+
+#### 大钟寺 PUBLISH
+
+- **专属组件：** 四向通勤十字、路径外证据会客厅、来源台账、人工办事并置。
+- **普通基线：** 四向通过、静音休憩、实体导视与人工同任务服务必须保留。
+- **恢复门：** 发布物料与声光退出，来源纠正、投诉交接和全量复测；当前状态 `unknown / 未执行`。
+
+上述“恢复验收”是未来责任角色使用的概念检查表，不是场地批准、竣工验收或现状合格证明。三个原型共同要求可拆、可停、可绕行，但任何构件只有在准确场地、权属、消防、铁路保护、市政、无障碍和运营责任完成专业核验后才可落位 [assumption:A-KEY-AREA-SPATIAL-011] [data:visual/assets/key-area-evidence-matrix.json#round2_spatial_deepening]。
 
 ## AI 创新生态、人才画像与 AI+ 场景
 
@@ -245,7 +302,7 @@ JZ-AIOS 规定任何场景依次经过 G0 概念/离线、G1 影子比对、G2 �
 ### 三项先行产业测试协议
 
 - T-01 机器人安全毕业协议：G0 数字与封闭场基线 → G1 影子任务 → 申请 G2。建议硬门为实体急停在受控测试中全部成功、零碰撞、零越界、人工接管链完整；任何一次安全红线触发停止、复盘和重新从低门开始。数值是设计验收建议，不是已测结果。
-- T-02 来源化企业服务协议：作为首个**离线可复现证据包**，它固定问题集、来源、更新时间、拒答和人工转接，以便他人按同一材料复核；这是一份概念级测试包，不是获批测试或现场结果。`visual/assets/g0-offline-enterprise-service-baseline.json` 将范围锁为五问：来源状态、开园背景、政策方向、临时边界拒答、正式办理人工转接；已完成回放、回答输出和现场测试均为 0。其 5/5 字段覆盖只是协议完整度，不是服务准确率 [data:visual/assets/g0-offline-enterprise-service-baseline.json] [metric:g0_offline_contract_coverage_ratio] [metric:completed_g0_offline_replay_count]。建议只有来源覆盖、过期提示和人工转接均达到预先公布阈值才进入限域服务；错误影响正式办事即暂停。
+- T-02 来源化企业服务协议：作为首个**离线可复现证据包**，它固定问题集、来源闭包、更新时间、拒答、停止恢复、人工转接和独立复测占位，以便他人按同一材料复核。零依赖 Node.js 22.x 回放器已对 10 个无个人信息的合成样例完成 1 次治理决策回放：10/10 与预期精确匹配，4/4 个不同的已声明停止事件均精确映射到各自恢复动作，13/13 负向变异控制对样例与冻结合同未知字段、枚举及回答模式漂移、完整来源闭包、禁采数据优先级、canonical RACI 闭包、现实服务授权和摘要计数篡改均按预期 fail-closed。该结果只证明 G0 合同的确定性与拒答优先级，不生成实质回答，也不调用模型、API 或现实服务；回答输出、模型调用、API 调用、现实服务交互、现场测试、已批准触发项、已确认责任主体、现实独立复测和 G1 结果均保持 0 或 unknown [data:visual/assets/g0-offline-enterprise-service-baseline.json] [data:visual/assets/t02-g0-g1-replay-result.json] [metric:completed_g0_offline_replay_count]。只有来源覆盖、过期提示、人工接管、审批、责任主体与独立现实复测均达到预先公布阈值后，才可申请进入限域服务；错误影响正式办事即暂停。
 - T-03 全民可达路径协议：作为空间与公共利益的**示例性测试**，由轮椅使用者、视障者、老年人、儿童照护者和普通步行者共同完成同一任务。任何关键断点未提供非 AI 替代路径即不毕业；它同样没有获批或现场结果，运行后才可继续比较群体间任务成功差距并公开改进。
 
 毕业采用“技术成熟度 × 公共价值成熟度 × 治理成熟度”三维立方体，任一维不合格都只能修正或退役。国家“人工智能+”文件强调开放共享、安全可控和全民共享成果，本方案把这些方向转成公共价值门，但不替代具体法律、审批与专业责任 [source:AI-PLUS-2025] [depth:municipal_new_infrastructure]。
@@ -303,6 +360,22 @@ JZ-AIOS 规定任何场景依次经过 G0 概念/离线、G1 影子比对、G2 �
 
 `visual/assets/pilot-readiness-register.json` 为 JZ-01—JZ-08 和 T-01—T-03 逐项补齐概念级 RACI、审批触发、禁止数据、事故与停机责任、社区共测、退出恢复、独立复测和 go/no-go 证据。这里的“覆盖”仅表示 8 个项目和 3 个试点都有字段，不表示责任主体已接受、审批已取得或试点已运行；当前状态统一保持 G0/`concept_only`，现场结果与恢复时间保持 `unknown` [data:visual/assets/pilot-readiness-register.json#JZ-01] [metric:pilot_readiness_protocol_coverage_ratio]。
 
+为让这些既有要求能够真正交接，`readiness-closure-contract.json` 把每项压成九类必须归档的关闭材料：责任接受、审批范围、场地/时段与日常基线、禁采数据控制、停机权限、恢复演练、社区共测、独立复测和最终 go/no-go 纪要。规则是“全部关闭才可讨论 G1，任一缺失即 NO-GO，任何停止条件优先于旧授权”；当前 11 项共 99 个材料槽全部开放，已关闭为 0，11 项决定均为 NO-GO。这个数字只说明现实证据尚未交付，不把模板完整误写成可实施成绩 [data:visual/assets/readiness-closure-contract.json#JZ-READINESS-CLOSURE-V1]。
+
+`implementation-handoff-matrix.json` 再把这 11 项与 12 个既有预注册场景逐一交叉：每项固定到当前 `PHASE-1`、空间对象、关闭记录和七组移交包，七组包完整覆盖九类关闭材料；每个场景至少回指一个既有项目或试点。当前 12/12 场景已完成“文档去向”映射，但 99 个稳定现实证据 ID 仍全部没有提交材料，获批项目、运行项目、现场测试、已知现实结果和 GO 决定仍均为 0。这项增强只减少专业团队接手时的解释损失，不提升实施成熟度 [data:visual/assets/implementation-handoff-matrix.json#JZ-IMPLEMENTATION-HANDOFF-V1]。
+
+专业团队接手时不需要重新解释 99 个槽，而是按七组既有移交包提交现实材料；一份材料可以同时进入复核包，但只有对应的九类关闭记录逐项完成后才能改变 NO-GO：
+
+| 移交包 | 必交现实材料 | 关闭对象 | 当前状态 |
+|---|---|---|---|
+| H01 责任与停机链 | 真实责任主体接受、运行责任接受、可联络停机链与轮班覆盖 | 责任接受 | 未提交 / NO-GO |
+| H02 审批与范围 | 审批台账、获批场地与时段、条件与到期日 | 审批范围 | 未提交 / NO-GO |
+| H03 场地与日常基线 | 有日期的现场调查、日常使用基线、同任务非 AI 对照 | 场地/时段基线 | 未提交 / NO-GO |
+| H04 数据与安全 | 禁采数据控制、最小数据清单、事件与留存程序 | 禁采数据控制 | 未提交 / NO-GO |
+| H05 停止与恢复 | 实体或程序停机测试、具名重启权限、恢复演练与验收记录 | 停机权限 + 恢复演练 | 未提交 / NO-GO |
+| H06 公共同权 | 社区共测、同任务非 AI 同权比较、申诉与退出记录 | 社区共测 | 未提交 / NO-GO |
+| H07 复测与决定 | 独立复测包、版本化发现台账、签署的 go/no-go 纪要 | 独立复测 + 最终决定 | 未提交 / NO-GO |
+
 分期采用“年份窗口 + 证据门”，年份从不自动赋予进入下一阶段的资格 [data:geometry/phasing.geojson#PHASE-1] [metric:phase_count] [depth:phasing_implementation]：
 
 | 窗口 | 状态 | 进入门 | 毕业门 | 回滚 |
@@ -320,36 +393,52 @@ JZ-AIOS 规定任何场景依次经过 G0 概念/离线、G1 影子比对、G2 �
 指标仍分七类，但按可读问题拆开呈现：
 
 - 场地与重点区规模：临时场地面积、重点区数量及总面积 [metric:site_area_sqm] [metric:key_area_count] [metric:key_area_total_sqm]。
+
 - 用地结构：用地单元数量和类别数量 [metric:land_use_unit_count] [metric:land_use_category_count]。
+
 - 建筑表达：体量原型数量、基底面积和总体表示比例 [metric:building_count] [metric:building_footprint_area_sqm] [metric:building_representation_ratio]。
+
 - 重点区体量：重点区原型数量和基底覆盖 [metric:key_area_building_count] [metric:key_area_building_footprint_ratio]。
+
 - 蓝绿系统：绿地面积、数量和比例 [metric:green_space_area_sqm] [metric:green_space_count] [metric:green_ratio]。
+
 - 公共空间：公共空间面积、节点数量和比例 [metric:public_space_area_sqm] [metric:public_space_node_count] [metric:public_space_ratio]。
+
 - 交通：设计路线数量和长度 [metric:design_road_count] [metric:design_road_length_m]。
 
 必需面积指标族不再只报“单元数量”，而按可复算对象补齐，同时保持概念设计边界：
 
 - 商业服务、居住与社区服务三类功能包络分别从用地图层复算；它们不是法定地块或供地规模 [metric:land_use_area_05_sqm] [metric:land_use_area_0701_sqm] [metric:land_use_area_0702_sqm]。
+
 - 研发、文化与教育科研三类功能包络同样只表达当前设计几何，不生成容积率或建设规模 [metric:land_use_area_0802_sqm] [metric:land_use_area_0803_sqm] [metric:land_use_area_0804_sqm]。
+
 - 绿地、广场/公共界面与弹性留白三类面积分别复算；其中 1403 功能包络不等于九处 `PUBLIC_SPACE` 直接干预范围 [metric:land_use_area_1401_sqm] [metric:land_use_area_1403_sqm] [metric:land_use_area_16_sqm]。
+
 - 三个年份窗口的面积来自 `geometry/phasing.geojson`，只表达证据门覆盖范围，不是批准建设边界或自动实施时序 [metric:phase_1_area_sqm] [metric:phase_2_area_sqm] [metric:phase_3_area_sqm]。
+
 - 三处重点区分别保留低置信的临时 polygon 复算面积；公告约面积与临时几何面积分栏保存，正式 polygon 面积仍为空 [metric:key_area_zhongzhiyuan_sqm] [metric:key_area_origin_community_sqm] [metric:key_area_dazhongsi_sqm]。
 
 AI 与公共价值指标同样按核验问题拆开：
 
 - 场景规模：服务场景、映射节点和服务区数量 [metric:scenario_count] [metric:mapped_scenario_node_count] [metric:ai_service_zone_count]。
+
 - 运行接口：I01—I06 空间接口、护照字段覆盖和人工兜底字段覆盖 [metric:gateway_count] [metric:scenario_passport_coverage_ratio] [metric:manual_fallback_coverage_ratio]。
+
 - 公共可达：非 AI 通道覆盖与无屏默认覆盖 [metric:non_ai_access_coverage_ratio] [metric:screen_free_public_node_ratio]。
+
 - 实施：三个阶段门 [metric:phase_count]。
+
 - 实地与交接准备：场地落地观察、八项目责任字段覆盖、三试点责任字段覆盖，以及仍为 0 的开园后现场审计 [metric:site_grounding_observation_count] [metric:pilot_readiness_project_coverage_ratio] [metric:completed_post_opening_field_audit_count]。
+
 - 首测文档：12 个场景均有预注册记录，必填字段覆盖率为 100% [metric:g1_preregistration_record_count] [metric:g1_preregistration_required_field_coverage_ratio]。
+
 - 首测现实证据：完成预注册和获批窗口均为 0 [metric:completed_g1_preregistration_count] [metric:approved_g1_test_window_count]；现场执行和已知独立复测结果也均为 0 [metric:g1_field_execution_count] [metric:known_g1_result_count]。
 
 这些指标只证明提交包中“设计了什么”，不证明现实运行效果。
 
 所有使用临时边界作分母的面积比例统一为 `low` 置信度；设计对象的数量和属性完整率可为 `high`；路线长度和体量面积为概念设计的 `medium` 或受边界影响的 `low`。容积率、总建面、建筑密度、平均高度、道路面积与道路比例、停车供给、实测恢复时间和单位有效服务能耗继续保持待正式资料或受控测试补齐，不以体量原型覆盖率或道路中心线代替 [metric:building_density] [metric:road_ratio]。证据链固定为“公开来源/明确假设 → GeoJSON → EPSG:4548 复算或属性计数 → `metrics.json` → 正文/图纸/HTML → 机器自检 → 人工专业判断” [depth:metrics_recalculation]。
 
-`compliance_matrix.json` 不再让 23 项任务共享同一证据组合：agent.1 指向品牌与三区两翼，agent.2 指向案例和产业状态机，agent.3 指向场景护照与测试协议，agent.4 指向九处公共空间、三地标和组件库，agent.5 指向可信叙事与生成内容标识，agent.6 指向四季运营与转化漏斗；公告任务也分别映射到对应章节、图层、指标、来源、假设和自检。`standard_matrix.json` 与 `design_depth_matrix.json` 同样按专业问题分配真实证据，不再使用批量复制总结。
+`compliance_matrix.json` 将 23 项任务分别指向对应正文、Feature、指标、来源、假设与检查；`standard_matrix.json` 和 `design_depth_matrix.json` 对专业要求采用同样的逐项证据分配，均不使用重复的泛化证据包。
 
 ![从字段覆盖到证据成熟度](assets/figures/metrics-evidence.png)
 
@@ -361,11 +450,23 @@ AI 与公共价值指标同样按核验问题拆开：
 - AI 与数据风险：偏差、幻觉、隐私泄露、越权自动化和供应商锁定通过最小数据、源端保留、日志、人工责任、复测、到期和退役控制；不得自动执法、诊断或替代正式审批。
 - 安全与韧性风险：机器人、车辆和设备测试只在授权范围；实体急停、现场安全员、离线人工和 L0/L1/L2 降级必须可用。能源和恢复指标未实测时保持未知。
 - 文化与历史风险：史实、人物、文物和工程资料需由官方/馆藏/清权来源复核；AI 生成内容显式与元数据标识，争议内容可纠错、下架和追溯 [assumption:A-CULTURE-CONTENT-006]。
-- 版权与品牌风险：本次提交的预期最终文件集合为 manifest 中 60 个路径（其中 59 个为非 manifest 内容文件）；覆盖完整性只在 manifest 与权利状态台账从最终 Git blobs 刷新并通过校验后成立。当前独立逐文件清权审计完成数为 0，总体状态为 `not_fully_cleared`。`COMMUNITY-DISPLAY-ONLY` 仍缺完整条款，OSM ODbL 义务、PDF 字体、生成工具条款以及 Logo/地标商标均需后续复核；重点区两组双语 SVG 已提供可编辑源，但其余输出源文件仍不完整，不能声称已经全部清权 [data:visual/assets/rights-clearance-ledger.json#RIGHTS-01] [data:visual/assets/rights-clearance-ledger.json#RIGHTS-GATE-02]。
+- 版权与品牌风险：本次提交的最终文件集合为 manifest 中 70 个路径（其中 69 个为非 manifest 内容文件）；70 条逐文件资产记录与 29 条来源证据记录只证明披露和链接闭合，覆盖完整性只在 manifest 与权利状态台账从最终 Git blobs 刷新并通过校验后成立。当前独立逐文件清权审计完成数为 0，总体状态为 `not_fully_cleared`。`submission-use-rights-matrix.json` 已逐条记录公告 8.1、仓库评审、主办方项目内使用、投稿人对外展示、跨项目复用和第三方组件的当前决策，但本包未证明正式公告条款与本次 GitHub 开源 Agent 征集具有完全相同的适用关系；`COMMUNITY-DISPLAY-ONLY` 完整条款、书面同意、OSM ODbL 义务、PDF 字体、Node.js 运行时与生成工具条款以及 Logo/地标商标仍待复核，不能声称已经全部清权 [data:visual/assets/rights-clearance-ledger.json#RIGHTS-01] [data:visual/assets/submission-use-rights-matrix.json#JZ-SUBMISSION-USE-RIGHTS-V1]。
 - 外部协同风险：未来科学城、怀柔科学城、经开区、其他创新街区和京津冀只作为可选复测角色，未经书面确认不得写成合作方、投资方或落地承诺 [assumption:A-EXTERNAL-COLLAB-005]。
 - 运营与公平风险：活动热度不能替代居民满意、可达、公平与投诉闭环；贡献荣誉不得用于流量排名、就业筛选或行政评价。
 - 工具与证据风险：机器检查只验证结构、拓扑、引用和一致性，不替代规划、建筑、交通、市政、景观、生态、消防、铁路、数据安全、无障碍、社区与法律专业判断 [depth:risk_missing_data]。
 - 公开报道与现场差异风险：本轮 Firecrawl 桌面研究只保存公开页面的来源、日期、摘要和内容摘要值，用于引用与设计判断；未进行现场踏勘、竣工图核验或设施运行审计。凡涉及准确位置、已建状态、使用强度和无障碍表现的判断，均须在进入 G1 前现场复核 [data:visual/assets/site-grounding-register.json#SG-001]。
+
+权利矩阵把“可在仓库内评审”与“可以公开或专业复用”严格分开；当前只有披露条件下的仓库评审可进行，其余用途不会因 PR、机器 PASS 或文件公开可见而自动放行：
+
+| 使用场景 | 当前决定 | 尚缺证据 |
+|---|---|---|
+| 仓库验证、Issue 与 PR 评审 | 仅限披露条件下评审 | 无新增许可；必须保留作者、工具、来源和临时边界 |
+| 主办方在本京张项目内使用或修改 | 待确认 | 条款适用关系、第三方授权审计 |
+| 主办方印刷、出版、展览或传播 | 待确认 | 条款适用关系、署名形式、发布审计 |
+| 投稿人对外媒体、出版或展览 | 阻断 | 书面同意、完整许可条款、独立逐文件审计 |
+| 在其他设计项目中复用 | 阻断 | 权威权利结论或新的项目授权 |
+| 翻译、衍生编辑或专业深化 | 阻断待范围确认 | 衍生/专业使用授权、完整可编辑源清单 |
+| OSM、字体、Logo、软件及生成资产发布 | 阻断待组件审计 | ODbL、字体嵌入、商标和工具输出条款审计 |
 
 当前全部 AI 场景处于 G0 概念状态，八个项目和四季活动均为建议，未获批准、未建设、未运行、无机构承诺。只有在法定审批、责任主体、专业审查、公众参与、资金运维和事故响应全部明确后，才可讨论进入更高运行门。
 

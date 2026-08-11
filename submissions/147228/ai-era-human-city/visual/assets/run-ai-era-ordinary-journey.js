@@ -36,7 +36,7 @@ const coversAll = (actual, expected) => expected.every((item) => actual.has(item
 const results = [];
 const result = (id, pass, observed, expected) => results.push({ id, pass, observed, expected });
 
-const routeReferencesResolve = routes.length === 2 && routes.every((route) => {
+const routeReferencesResolve = routes.length === 4 && routes.every((route) => {
   const card = scenarioById.get(route.scenario_id);
   return Boolean(card) &&
     routeIds.has(route.route_id) &&
@@ -45,12 +45,12 @@ const routeReferencesResolve = routes.length === 2 && routes.every((route) => {
     route.spatial_refs.every((id) => featureIds.has(id)) &&
     route.spatial_refs.every((id) => (card.spatial_refs || []).includes(id));
 });
-result('route_trace_references', routeReferencesResolve, routes.map((route) => route.route_id), 'two routes resolve to scenario cards, personas, phase features, and spatial features');
+result('route_trace_references', routeReferencesResolve, routes.map((route) => route.route_id), 'four routes resolve to scenario cards, personas, phase features, and spatial features');
 
-const fixtureReferencesResolve = fixtures.length === 4 && fixtures.every((fixture) => {
+const fixtureReferencesResolve = fixtures.length === 8 && fixtures.every((fixture) => {
   return routeIds.has(fixture.route_id) && fixture.input && fixture.expected_decision;
 });
-result('fixture_contract', fixtureReferencesResolve, fixtures.length, 4);
+result('fixture_contract', fixtureReferencesResolve, fixtures.length, 8);
 
 const acceptanceReferencesResolve = (contract.acceptance_checks || []).every((item) => item.id && item.check && item.fixture_ids.every((id) => fixtureIds.has(id)));
 result('acceptance_trace_references', acceptanceReferencesResolve, acceptanceIds.size, 'six unique acceptance checks with resolvable fixtures');
@@ -84,21 +84,18 @@ const negativeReplays = fixtures.filter((fixture) => fixture.fires_stop_if).map(
   result_status: contract.boundary.result_status,
   performance_results: contract.boundary.performance_results
 }));
-const negativeReplayPass = negativeReplays.length === 3 && negativeReplays.every((item) => item.expectation_matches);
-result('negative_replay_rejects', negativeReplayPass, negativeReplays, 'three bounded failures stop or return to G0 without performance');
+const negativeReplayPass = negativeReplays.length === 5 && negativeReplays.every((item) => item.expectation_matches);
+result('negative_replay_rejects', negativeReplayPass, negativeReplays, 'five bounded failures stop or return to G0 without performance');
 
-const controlFixture = fixtures.find((fixture) => !fixture.fires_stop_if);
-const controlReplay = controlFixture ? {
-  fixture_id: controlFixture.fixture_id,
-  trigger_input: controlFixture.input,
-  fires_stop_if: controlFixture.fires_stop_if,
-  expectation_matches: controlFixture.expected_decision === 'continue_ordinary_route',
-  decision_class: 'continue',
-  decision: controlFixture.expected_decision,
+const controlFixtures = fixtures.filter((fixture) => !fixture.fires_stop_if);
+const controlReplay = controlFixtures.length ? {
+  inputs: controlFixtures.map((fixture) => fixture.input),
+  decisions: controlFixtures.map((fixture) => fixture.expected_decision),
+  expectation_matches: controlFixtures.length === 3 && controlFixtures.every((fixture) => fixture.expected_decision.startsWith('continue_')),
   result_status: contract.boundary.result_status,
   performance_results: contract.boundary.performance_results
 } : null;
-result('control_replay_allows_ordinary_route', Boolean(controlReplay && controlReplay.expectation_matches), controlReplay, 'ordinary input continues the ordinary route');
+result('control_replay_allows_ordinary_route', Boolean(controlReplay && controlReplay.expectation_matches), controlReplay, 'three ordinary or human alternatives continue without performance claims');
 
 const boundaryPass = contract.boundary.result_status === 'not_run' &&
   contract.boundary.performance_results === null &&
@@ -119,12 +116,12 @@ console.log(JSON.stringify({
   environment: { network_calls: 0, external_systems: 'none', personal_data: 'none', state_changes: 'in-memory only' },
   checks: results,
   trace_coverage: {
-    routes: `${routes.length}/2`,
+    routes: `${routes.length}/4`,
     acceptance_checks: `${acceptanceIds.size}/${requiredAcceptanceIds.size}`,
     journey_steps: `${new Set(journeySteps.map((step) => step.id)).size}/${requiredJourneyStepIds.size}`,
     rollback_steps: `${new Set(rollbackSteps.map((step) => step.id)).size}/${requiredRollbackStepIds.size}`
   },
-  negative_replay: { replayed: `${negativeReplays.length}/3`, rejection_path_observed: negativeReplayPass, results: negativeReplays },
+  negative_replay: { replayed: `${negativeReplays.length}/5`, rejection_path_observed: negativeReplayPass, results: negativeReplays },
   control_replay: controlReplay,
   rollback: { steps_declared: rollbackSteps.length, steps_replayed: pass ? rollbackSteps.length : 0, result: pass ? 'pass' : 'fail' },
   result_status: contract.boundary.result_status,

@@ -4,6 +4,128 @@
 >
 > This log records traceable changes to this submission package only. It is not evidence of approval, implementation, field testing, rights clearance, or trusted CI. After any content change, regenerate the manifest from the final Git blobs and rely on repository validation attached to the final PR head.
 
+## v2.14 - 2026-08-11
+
+**Three differentiated switchyard prototypes / 三座差异化换轨场原型**
+
+- 选择六个内聚工作包，把众智园深化为“平行验证庭—设备隔离—人工接管—恢复验收”，把原点社区深化为“一街两院四节点—无屏共学—同意撤回—居民日常”，把大钟寺深化为“四象限步行—一厅一台—通勤连续—人工服务”，并以三处连续非 AI / 无障碍意图线、可拆构件、静音和四态证据合同贯通。
+- Selected six cohesive work packages: Zhongzhiyuan as parallel proof court–equipment isolation–staffed takeover–restoration acceptance; Origin Community as one street/two courts/four nodes–screen-free learning–consent withdrawal–resident daily use; Dazhongsi as four-quadrant walking–one hall/one desk–commute continuity–staffed service; plus continuous non-AI/accessibility intent, removable components, quiet mode, and one four-state evidence contract across all three.
+- 重构双语 `key-areas` 为普通状态优先的概念平面、首层公共界面和四步旅程，重构双语 `key-area-sections` 为三种关系剖面、普通—验证—故障—恢复四态与场所恢复门；每列只回答一个规划问题，并显式列出不可复制组件与未知资料。
+- Rebuilt bilingual `key-areas` as ordinary-first concept plans, ground-floor public interfaces, and four-step journeys, and rebuilt bilingual `key-area-sections` as three relationship sections, ordinary–proof–fault–recovery states, and place-restoration gates. Each column answers one planning question and exposes non-copyable components and missing evidence.
+- `key-area-evidence-matrix.json#round2_spatial_deepening` 新增逐处平面语法、首层界面、连续路径、人工交接、可拆构件、使用旅程、恢复检查、未知决策字段和反证自检；双语 proposal、report、visual 与设计深度矩阵回链同一合同。
+- `key-area-evidence-matrix.json#round2_spatial_deepening` adds area-specific plan grammar, ground-floor interfaces, continuous paths, staffed handoff, removable components, user journeys, restoration checks, unknown decision fields, and counter-evidence self-audit. Bilingual proposals, reports, visual pages, and the design-depth matrix backlink to the same contract.
+- 新增 `A-KEY-AREA-SPATIAL-011`，明确体量只是关系原型、大钟寺四向不是车站锚点、无障碍绿线不是现场合格证明、恢复验收不是批准。未改 geometry、场景编号或 metrics；全部场景仍为 G0，现实审计/责任确认/批准/测试/已知结果仍为 0，权利仍为 `not_fully_cleared`。
+- Added `A-KEY-AREA-SPATIAL-011`: massing is relational only, Dazhongsi directions are not a station anchor, the green accessibility line is not field-compliance evidence, and restoration acceptance is not approval. Geometry, scene IDs, and metrics are unchanged; every scene remains G0, real audits/role confirmations/approvals/tests/known results remain 0, and rights remain `not_fully_cleared`.
+
+## v2.13.1 - 2026-08-10
+
+**Rights release-gate correction / 权利发布门口径修复**
+
+- 根据 PR 评审，将 `PUBLIC_OR_PROFESSIONAL_REUSE_RIGHTS=unknown/major` 与 `RIGHTS-OPEN-01/02/03` 写入 `manifest.release_claim.known_blockers`，并把三项权利补全动作写入 `manifest.release_claim.next_actions`；结构审查的 `validation_claim.known_blockers` 保持为空，`release_claim.public_or_professional_reuse` 继续为 `blocked_pending_terms_and_audit`。
+- Following review feedback, `PUBLIC_OR_PROFESSIONAL_REUSE_RIGHTS=unknown/major` and `RIGHTS-OPEN-01/02/03` are now explicit `manifest.release_claim.known_blockers`, with three rights-closure actions in `manifest.release_claim.next_actions`; structural review keeps `validation_claim.known_blockers` empty, while `release_claim.public_or_professional_reuse` remains `blocked_pending_terms_and_audit`.
+- 双语验收叙事明确区分“结构/证据可审查”与“权利已清除”：仓库可以进行披露复核，但公共展示、专业深化和其他复用在完整条款、独立逐文件审计与 ODbL 判定完成前仍不可用；未改 geometry、metrics、G0 或任何场景编号。
+- The bilingual acceptance narrative now separates auditable structure/evidence from rights clearance: repository disclosure review may proceed, while public display, professional deepening, and other reuse remain unavailable until complete terms, independent file-level audit, and ODbL determination are complete. Geometry, metrics, G0 status, and scene IDs are unchanged.
+
+## v2.13 - 2026-08-10
+
+**Twin-track front-stage spatial master plan / 双轨前台空间总纲**
+
+- 将“双轨京张”建立为前台空间语法：连续日常轨、间歇验证轨、三座换轨场、失败侧线和公共时刻表；保留 JZ-AIOS、G0—G3、证据门和权利边界为后台治理内核。
+- Made Twin-track Jing-Zhang the front-stage spatial syntax: the continuous civic track, intermittent proof track, three switchyards, failure siding, and civic timetable, while retaining JZ-AIOS, G0–G3, evidence gates, and rights boundaries as the back-stage governance kernel.
+- 重构双语 `site-overview` PNG，并加入对应的双语可编辑 SVG 源；图面明确人工站房、无屏节点、非 AI 完整路径、普通—验证—故障—恢复四态和六类城市信号。验证轨以间歇、限域、可拆除叠层表达，不表示连续占地或已建设施。
+- Reworked the bilingual `site-overview` PNGs and added their bilingual editable SVG sources. The drawings make staffed stations, screen-free nodes, the complete non-AI path, four public states, and six city signals explicit. The proof track is intermittent, bounded, and removable; it is not a continuous footprint or an existing facility.
+- 双语主稿、叙事报告和离线 visual 首页增加核心概念、总体空间解释、可读使用旅程和结构化证据回链；`key-area-evidence-matrix.json#twin_track_frontend_contract` 只新增概念空间合同，不新增场景编号、geometry、伙伴、批准、现场测试或现实成绩。
+- Added the core concept, overall spatial explanation, readable public journey, and structured evidence backlink to both proposals, the narrative report, and the offline visual homepages. `key-area-evidence-matrix.json#twin_track_frontend_contract` adds a conceptual spatial contract only; no scene ID, geometry, partner, approval, field test, or real-world result is added.
+- 临时 geometry、全部场景 G0、字段覆盖不等于现场表现、权利状态 `not_fully_cleared`、非 AI 可用性和公众退出/人工接管边界保持不变；最终 manifest、权利台账、PDF 和全部验证必须从本轮最终字节重新生成。
+- Provisional geometry, all-scene G0 status, the distinction between field coverage and performance, `not_fully_cleared` rights, non-AI availability, and public exit/staffed-takeover boundaries remain unchanged. The final manifest, rights ledger, PDFs, and all validations must be regenerated from this round's final bytes.
+- 从最终双语正文和八组双语 PNG 重生四份 PDF：中文/英文 A3 为 11/12 页，双语 A0 各 8 页；四份均通过全页文本、页面尺寸、图像计数和 0.20 倍逐页渲染检查，双轨总体图置于 A0 首板。该出版 QA 仍不证明现场执行、审批、G1 授权或权利清除。
+- Regenerated all four PDFs from the final bilingual narratives and eight bilingual PNG pairs: the Chinese/English A3 booklets are 11/12 pages and both A0 sets are eight pages. All four passed full-page text, page-size, image-count, and 0.20-scale rendering checks, with the twin-track overview first in the A0 sequence. Publication QA does not prove field execution, approval, G1 authorization, or rights clearance.
+
+## v2.12 - 2026-08-10
+
+**Bilingual review parity and readable handoff / 双语评审等价与可读移交**
+
+- 对中英文离线视觉首页做结构级复核并修复“文件成对但内容层级不等价”：两版现统一为同序 16 个章节、15 个导航目标、8 个双语图件角色、14 个同键同值指标卡，以及 `[2,3,12,3,13]` 五组表格行合同；均无远程依赖。
+- Audited the Chinese and English offline dashboards structurally and repaired paired-but-unequal review content. Both now share the same ordered 16 sections, 15 navigation targets, eight bilingual figure roles, fourteen metric cards with identical keys and values, and `[2,3,12,3,13]` five-table row contract, with no remote dependency.
+- 将既有 99 个关闭槽压成 H01—H07 七组双语可读移交包，明确每组必须提交的现实材料、对应关闭类别和当前 `未提交 / NO-GO`；结构化 ID、九类关闭逻辑和 11 项决定均未改变。
+- Compressed the existing 99 closure slots into seven bilingual H01–H07 handoff packs that state required real-world material, closure objects, and current `not submitted / NO-GO` status. Structured IDs, the nine-category logic, and all eleven decisions are unchanged.
+- 把七类使用场景在双语正文中明确展示为 1 类披露评审、2 类待确认和 4 类阻断或待审计阻断，并在权利矩阵增加同一计数摘要；适用确认、书面同意和独立审计仍全部为 0。
+- Exposed the seven use contexts in both proposal languages as one disclosed-review context, two confirmation-dependent contexts, and four blocked or audit-dependent contexts, and added the same count summary to the rights matrix. Applicability confirmations, written consents, and independent audits all remain 0.
+- 增加 `BILINGUAL_VISUAL_PARITY` 为第 22 项包内检查，并清除一处把逐文件权利审计范围写死为旧数量的陈旧说明。未新增项目、场景、坐标、机构、批准、测试或现实成绩；geometry 与 metrics 保持不变。
+- Added `BILINGUAL_VISUAL_PARITY` as the twenty-second package check and removed one stale hard-coded file count from the file-level rights-audit dependency. No project, scene, coordinate, institution, approval, test, or real-world result is added; geometry and metrics remain unchanged.
+
+## v2.11 - 2026-08-10
+
+**Comprehensive handoff and rights-boundary closure / 全面移交与权利边界闭环**
+
+- 全包扫描 66 个既有文件后修正旧快照计数和矩阵—自检断链；新增两份结构化证据后，最终包为 68 个路径、67 个非 manifest 内容文件，逐文件台账与 manifest 必须严格等集。
+- After scanning all 66 existing files, corrected stale snapshot counts and a matrix-to-self-check break. With two structured evidence files added, the final package contains 68 paths and 67 non-manifest content files; the file ledger and manifest must remain exact sets.
+- 新增 `implementation-handoff-matrix.json`，把既有 8 个项目、3 个试点与 12 个预注册场景连接到当前阶段、空间对象、关闭记录、七组移交包和 99 个稳定材料 ID；现实提交材料、批准、运行、现场测试、已知结果与 GO 决定仍均为 0。
+- Added `implementation-handoff-matrix.json`, connecting the existing eight projects, three protocols, and twelve preregistration scenes to the current phase, spatial objects, closure records, seven handoff packs, and 99 stable artifact IDs. Submitted real-world artifacts, approvals, operations, field tests, known results, and GO decisions all remain 0.
+- 新增 `submission-use-rights-matrix.json`，逐条登记公告 8.1 与七类使用场景；仓库披露评审之外的主办方使用、投稿人对外展示、跨项目复用、翻译/专业深化和第三方组件发布均保留确认或阻断状态，不把公告文字、仓库可见性或机器 PASS 当作清权。
+- Added `submission-use-rights-matrix.json`, separating announcement clause 8.1 from seven use contexts. Organizer use, entrant external display, cross-project reuse, translation/professional deepening, and third-party-component release beyond disclosed repository review remain pending or blocked; announcement text, repository visibility, and machine PASS do not constitute clearance.
+- 为 11 项关闭记录补入 99 个唯一材料 ID 和显式空提交槽；同步双语正文、离线 HTML、展示页、版权声明、验收脚本与自检，并拆分高密度证据索引。未新增空间规划点、坐标、伙伴、批准或现实成绩，geometry 与 metrics 保持不变。
+- Added 99 unique artifact IDs and explicit empty submission slots to the 11 closure records; synchronized bilingual prose, offline HTML, display pages, the copyright statement, acceptance audit, and self-check, while splitting dense evidence indexes. No spatial concept, coordinate, partner, approval, or real-world result is added; geometry and metrics remain unchanged.
+
+## v2.10 - 2026-08-10
+
+**Readiness evidence closure / 可行性证据关闭合同**
+
+- 新增 `readiness-closure-contract.json`，不扩展 JZ-01—JZ-08 或 T-01—T-03 的内容，只把既有 RACI、审批、禁采数据、停机恢复、社区共测和独立复测要求统一为九类现实交付材料。
+- Added `readiness-closure-contract.json` without expanding JZ-01—JZ-08 or T-01—T-03. It normalizes the existing RACI, approval, prohibited-data, stop/recovery, community co-test, and independent-retest requirements into nine real-world handoff categories.
+- 固定“九类全部关闭才可讨论 G1、任一缺失即 NO-GO、停止条件优先于旧授权”的规则；11 项共 99 个关闭槽当前全部开放，已关闭 0，11 项决定均为 NO-GO，不把规范字段完整冒充现实可行性。
+- Fixed the rule that all nine categories must close before G1 can be considered, any missing category means NO-GO, and active stop conditions override prior authorization. All 99 slots across 11 items remain open, 0 are closed, and all 11 decisions remain NO-GO; specification completeness is not presented as real-world feasibility.
+- 同步双语正文、报告 HTML、离线展示、验收记录、A3、权利台账和 manifest；不新增规划点、场景、几何、伙伴、批准、现场测试或结果，`not_fully_cleared` 与临时边界保持不变。
+- Synchronized bilingual prose, report HTML, offline visuals, acceptance records, A3, the rights ledger, and manifest. No planning point, scene, geometry, partner, approval, field test, or result is added; `not_fully_cleared` and provisional geometry remain unchanged.
+
+## v2.9 - 2026-08-10
+
+**Existing key-area mode alignment / 既有重点区模式对齐**
+
+- 将 `key-areas` 平面图底部原先三列重复的通用四态，替换为 v2.8 已在剖面图、正文和 `key-area-evidence-matrix.json` 中确立的三组差异化名称与停止提示；空间结构、G1 前置、场景节点和几何均未改变。
+- Replaced the three repeated generic four-mode rows in the `key-areas` plans with the area-specific names and stop cues already established in v2.8 sections, prose, and `key-area-evidence-matrix.json`. Spatial structures, G1 prerequisites, scene nodes, and geometry are unchanged.
+- 同步中英文离线展示页的图像替代文字与四态对照说明，使平面、剖面、正文和机器矩阵使用同一术语；未新增规划点、指标、伙伴、批准、现场测试或运行结果。
+- Synchronized bilingual offline-page alt text and mode crosswalk copy so plans, sections, prose, and the machine matrix use one vocabulary. No planning concept, metric, partner, approval, field test, or operating result is added.
+- 继续保留临时边界、全部节点 G0、`not_fully_cleared`、0 现场审计、0 批准和 0 已知结果，并要求从最终包字节重新生成 PDF、权利台账和 manifest。
+- Provisional geometry, all-G0 status, `not_fully_cleared`, zero field audits, zero approvals, and zero known results remain. PDFs, the rights ledger, and manifest must be regenerated from the final package bytes.
+
+## v2.8 - 2026-08-10
+
+**Differentiated key-area operating sections / 差异化重点区运行剖面**
+
+- 重绘中英文重点区剖面，不再用同一骨架复刻三处重点区。众智园明确公众观察边、低风险测试花园环和维护/急停边；原点社区明确连续日常街、问题共创院、公共评议院和四个可撤节点；大钟寺明确四向步行、钟轨会客厅、人工服务台和静音休憩。
+- Redrew the bilingual key-area sections so the three areas no longer repeat one generic skeleton. Zhongzhiyuan separates public observation, the low-risk test-garden loop, and the service/physical-stop edge; Origin Community separates the daily street, problem court, public-review court, and four removable nodes; Dazhongsi separates four-way walking, the Bell-Rail Commons, staffed desk, and quiet rest.
+- 将每处的普通、验证、故障、恢复一套权威运行四态写入 `key-area-evidence-matrix.json`，共 3 组差异化剖面和 12 个 G0 概念状态；未来获批限域共测只作为进入验证态前的成熟度门，不另算运行态。每态记录日常基线、谁先让位、故障如何隔离、如何还场和重启门，不新增批准、现场测试、责任主体或运行成绩。
+- Added one authoritative ordinary–verification–fault–recovery operating sequence per area to `key-area-evidence-matrix.json`: three differentiated sections and twelve G0 concept states. Any future approved bounded co-test is only a maturity gate before verification, not another operating state. Each state records the protected baseline, what yields first, fault isolation, restoration, and the restart gate; no approval, field test, accountable owner, or operating result is added.
+- 同步双语主稿、指标、SVG/PNG、离线 HTML、A3/A0、manifest 与权利台账；临时边界、`not_fully_cleared`、0 现场核验和 0 已知结果边界保持不变。
+- Synchronized the bilingual proposals, metrics, SVG/PNG, offline HTML, A3/A0, manifest, and rights ledger. Provisional geometry, `not_fully_cleared`, zero field checks, and zero known results remain unchanged.
+
+## v2.7 - 2026-08-10
+
+**T-02 G0 synthetic governance replay / T-02 G0 合成治理回放**
+
+- 将既有 T-02 离线企业服务基线升级为严格机器合同，新增 10 个无个人信息合成夹具、零依赖 Node.js 22.x 回放器和确定性结果。默认与 `--check` 只读，只有显式 `--write` 写入结果；来源 ID 必须在冻结闭包内，未知字段、未知枚举和未知请求均 fail-closed。
+- Upgraded the existing T-02 offline enterprise-service baseline into a strict machine contract with 10 PII-free synthetic fixtures, a zero-dependency Node.js 22.x runner, and a deterministic result. Default and `--check` modes are read-only; only explicit `--write` writes the result. Source IDs must remain in the frozen closure, and unknown fields, enums, and requests fail closed.
+- 1 次合成治理回放取得 10/10 决策精确匹配；4/4 个不同的已声明停止事件均精确映射到各自恢复动作；13/13 负向变异控制覆盖样例/合同未知字段、枚举、合同回答模式漂移、来源闭包、禁采数据优先级、canonical RACI 闭包、现实服务授权与摘要计数篡改。该结果只证明 G0 合同逻辑可复放，不生成实质回答，也不调用模型、API 或现实服务。
+- One synthetic governance replay produced 10/10 exact decision matches. All four distinct declared stop events map to their exact recovery actions, and 13/13 negative mutation controls cover unknown fixture/contract fields, enums, answer-mode drift, source closure, prohibited-data precedence, canonical RACI closure, real-service authorization, and summary-count tampering. The result proves only replayable G0 contract logic; it produces no substantive answer and calls no model, API, or real service.
+- 回放证据同步至 G1-011、JZ-05/T-02、PARITY-002、假设、指标、矩阵、双语正文、离线 HTML、视觉首页、自检、agent 与权利披露。实质回答、模型/API/现实服务/现场交互、审批、已确认责任主体、现实独立复测、现实非 AI 同权与 G1 结果保持 0 或 unknown；当前门级仍为 G0，总体权利状态仍为 `not_fully_cleared`。
+- Synchronized the replay evidence across G1-011, JZ-05/T-02, PARITY-002, assumptions, metrics, matrices, bilingual prose, offline HTML, visual homepages, self-check, agent provenance, and rights disclosures. Substantive answers, model/API/real-service/field interactions, approvals, confirmed accountable parties, real independent retests, real non-AI parity, and G1 outcomes remain 0 or unknown. The gate stays G0 and overall rights remain `not_fully_cleared`.
+
+## v2.6 - 2026-08-10
+
+**Source–asset–rights evidence loop / 来源—资产—权利证据闭环**
+
+- 新增 `source-rights-evidence.schema.json` 与实例：29/29 条来源具有稳定反向指针，10 个仓库来源固定到审计 HEAD 的 Git object，4 个网页保留包外抓取摘要，15 个网页明确无内容摘要；缺失发布日期、原始格式或条款时保持 unknown，不以 URL 或文件名推断冒充核验。
+- Added a schema and instance for source-rights evidence: all 29 sources have stable reverse pointers; 10 repository sources are fixed to Git objects at the audited HEAD, four web sources retain external capture digests, and 15 web sources explicitly have no content digest. Missing dates, original formats, or terms stay unknown rather than being promoted from locator inference.
+- 仅对 `geometry/constraints.geojson` 的既有 120 个 OSM 要素补入 `source_id=OSM-CONTEXT`，不改坐标、图层、名称、way ID 或设计内容；element-level 记录保留署名，并明确固定查询与快照摘要缺失，`RIGHTS-OPEN-03` 继续为 P0 open。
+- Added `source_id=OSM-CONTEXT` to the existing 120 OSM features in `geometry/constraints.geojson` without changing coordinates, layers, names, way IDs, or design content. Element-level records retain attribution and disclose the missing fixed query and snapshot digest; `RIGHTS-OPEN-03` remains P0 open.
+- 保留原 5 个权利粗组作为兼容视图，并新增与最终 manifest 严格等集的 62 条逐文件记录，逐项串联来源、父资产、工具、嵌入组件、配方状态、审计状态、摘要与未决事项。manifest 和 ledger 两个不可自引用项使用 null + 原因，其余摘要必须等于最终 manifest。
+- Retained the five coarse rights groups as a compatibility view and added 62 file-level records equal to the final manifest path set, linking sources, parents, tools, embedded components, recipe state, review state, digests, and open items. Manifest and ledger use null plus explicit self-reference reasons; every other digest must equal the final manifest.
+- 补充稳定工具 ID 与输出映射；更正字体事实为“四份 PDF 内含 Noto 子集程序、A3 引用未嵌入 Helvetica、SVG 转 PNG 的实际解析字体未知”，不再把“未提供独立源字体文件”误写成“包内没有字体二进制”。
+- Added stable tool IDs and output mappings. Corrected the font facts to embedded Noto subset programs in all four PDFs, unembedded Helvetica references in A3, and unknown concrete font resolution during SVG-to-PNG rasterization; no longer conflates absence of a standalone source-font file with absence of embedded font programs.
+- 总体状态继续为 `not_fully_cleared`，独立逐文件清权审计完成数仍为 0，P0 `RIGHTS-OPEN-01/02/03` 全部 open，公共或专业复用继续 `blocked_pending_terms_and_audit`。任何 schema、路径覆盖或验证 PASS 只表示披露可审计，不表示许可已取得。
+- Overall status remains `not_fully_cleared`, completed independent file-level clearance audits remain 0, P0 `RIGHTS-OPEN-01/02/03` all remain open, and public or professional reuse remains `blocked_pending_terms_and_audit`. Schema, path coverage, or validation PASS proves auditability only, not permission.
+
 ## v2.5 - 2026-08-10
 
 **Key-area spatial-reading integration / 重点区空间读法整合**

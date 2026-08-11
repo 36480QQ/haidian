@@ -9,12 +9,22 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Taking the century-spanning isomorphism between Zhan Tianyou's switchback and backpropagation as the overall concept, the Jing-Zhang Railway Heritage Park is organised into a city-scale training loop of a Forward Track and a Return Track: one loop, two tracks, three stations and twelve crossings, with 12 AI scenario cards, 6 personas, 4 pilgrimage landmarks and the Ren Prize honour system, all generated on the provisional boundary and fully recomputable."
 tracks: ["jingzhang-heritage-narrative", "ai-origin-community", "ai-traffic-walkability"]
 scenarios: ["ai-traffic-walkability", "ai-cultural-guide", "robot-delivery-low-speed", "enterprise-service-copilot"]
-iteration: "v1.0"
+iteration: "v1.1"
 ---
 
 # The Ren Loop: An Urban Design Concept for the Centennial Jing-Zhang AI Innovation Belt
 
 In 1908, Zhan Tianyou used the "人"-shaped (Ren-shaped) switchback at Qinglongqiao to carry trains over the steep Guangou grade: move forward, reverse, move forward again — one switchback bought the height. More than a century later, deep learning trains models through backpropagation: signals propagate forward, errors fold back, and every return pass makes the network smarter. This proposal distils that century-spanning isomorphism into the overall concept: **the Centennial Jing-Zhang AI Innovation Belt is a city-scale training loop (The Ren Loop)** — scenarios generate data on the forward pass, and feedback returns as updates to models, policies and space. The city is not a showcase for AI; it is a training ground where AI and people iterate together. The character 人 (ren, "human") is read four ways in this proposal: human-first, railway switch, neural network node, and a converging upward arrow.
+
+
+One table states the loop's operating logic — who each segment hands over to, what urban value it produces, and the condition it must never cross [depth:overall_spatial_structure]:
+
+| Loop segment | Spatial carrier | Hand-over to | Urban value | Never-cross condition |
+| --- | --- | --- | --- | --- |
+| Forward - scenario operation | Forward Track & 12 crossings | Citizens & visitors | Perceivable daily service | Privacy boundary & opt-in |
+| Return - feedback collection | Scenario yards & city training log | Operators | Verifiable operating evidence | Anonymous aggregation, human review |
+| Switch - human gate | Governance venues at 3 stations | Human gate owners | Adopt / rectify / stop decisions | AI never replaces human decisions |
+| Forward again - update | Belt-wide space & policy | Professionals & government | Updates to space & mechanisms | Concepts never bypass approval |
 
 ## Design Basis and Source List
 
@@ -40,7 +50,7 @@ The provisional boundary's limits must be stressed: it is fitted from the announ
 
 *Fig 2 | Scope cascade and land-use structure. The land-use plan is a seamless, gap-free partition of the provisional boundary with shared cut lines.*
 
-## Coordinated Research Area: Industry and Future City Research
+## Coordinated Research Area: Industry and Future City Research (agent.1 / agent.2)
 
 **On the world-class AI ecosystem: an ecosystem is not a park, it is a loop.** Comparing global cases shows that successful innovation districts all close the circuit from research through translation and scenarios back to research, rather than running a one-way incubation pipeline. At the research level this proposal organises a "Ren-shaped synergy loop": innovation elements flow south-to-north along the Forward Track (culture, talent, everyday life) and fold back north-to-south along the Return Track (technology, scenarios, data feedback), switching direction at Origin Station; the Zhongguancun Technology Services Wing provides global allocation of factors and the Xiaoyue River Scenario Enablement Wing provides scenario-validation depth, so the "three zones and two wings" are not five parallel districts but five functional positions on one loop [source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [depth:overall_spatial_structure].
 
@@ -57,7 +67,22 @@ Six global AI ecosystem cases support this judgement, each distilled into one tr
 
 Case information comes from each project's public channels, registered in the source list with publisher and retrieval date; it serves as background reference only and constitutes no commitment or endorsement by any organisation [source:CASE-KINGS-CROSS] [source:CASE-STATION-F].
 
-**On future urban form: AI-era productivity needs shorter switchbacks, not bigger parks.** Model iteration cycles are measured in weeks, so the city must keep the places where code is written, tested and used within walking distance. Three form principles follow: research space strings along the Return Track rather than pooling into superblocks; test fields embed in public space rather than fencing themselves off; talent living mixes into retained communities rather than building a new town. The naming system and logo direction are given at this level as the belt's identity system: master brand name "The Ren Line (京张·人字线)"; naming hierarchy "Line - Station - Crossing - Yard"; a logo of two converging rail strokes forming 人 with an origin ring at the vertex, extensible into switch signs, milestones and signal colour bands; typography follows open-licensed Source Han Sans, with no use of any existing corporate or institutional marks [depth:height_massing_character]. The "Crossing" tier honours the toponymic origin of Wudaokou — the fifth level crossing of the Jing-Zhang Railway — making the naming system itself part of the heritage narrative.
+**On future urban form: AI-era productivity needs shorter switchbacks, not bigger parks.** Model iteration cycles are measured in weeks, so the city must keep the places where code is written, tested and used within walking distance. Three form principles follow: research space strings along the Return Track rather than pooling into superblocks; test fields embed in public space rather than fencing themselves off; talent living mixes into retained communities rather than building a new town. The naming system and logo direction are given at this level as the belt's identity system: master brand name "The Ren Loop (京张·人字回路)"; naming hierarchy "Line - Station - Crossing - Yard"; a logo of two converging rail strokes forming 人 with an origin ring at the vertex, extensible into switch signs, milestones and signal colour bands; typography follows open-licensed Source Han Sans, with no use of any existing corporate or institutional marks [depth:height_massing_character]. The "Crossing" tier honours the toponymic origin of Wudaokou — the fifth level crossing of the Jing-Zhang Railway — making the naming system itself part of the heritage narrative.
+
+
+### Five-Way Regional Synergy Interfaces
+
+Regional synergy pre-writes no partnership outcomes; it only defines publicly verifiable mechanism interfaces. Each states its input, minimum output and exit gate; if either side stops responding the interface simply closes, creating no mutual-recognition obligation [source:AGENT-TASKBOOK] [metric:regional_interface_count]:
+
+| Interface | Input (toward the belt) | Minimum output (from the belt) | Exit / no-recognition gate |
+| --- | --- | --- | --- |
+| Beiwei Community | Everyday-scenario demand lists | Scenario-card templates & three-state operating experience | Terminates on either side's written exit |
+| Future Science City | Frontier lab translation demand | Proving-ground test slots & Ren Receipt format | No uncleared data sharing |
+| Huairou Science City | Big-science compute collaboration leads | Governance roundtable agenda seats | No funding presumed |
+| Beijing E-Town | Mass-manufacturing & scenario scale-up capacity | Hand-over packages of accepted scenario cards | No hand-over below acceptance |
+| Beijing-Tianjin-Hebei | Green power, compute & hinterland scenarios | Ren Loop Week regional day & open proposal-library access | No cross-regional commitment |
+
+All five are conceptual mechanisms; the names refer only to innovation nodes in public planning context, claiming no existing partnership, authorization or funding.
 
 ## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
 
@@ -83,28 +108,44 @@ The three key areas are organised as "switchback stations", each forming a compl
 
 **Zhongzhiyuan Switchback Station (about 192.1 ha) — the northern switchback of full-stack independent innovation** [data:geometry/key_areas.geojson#KEY-001]. Positioned as the AI full-stack independent innovation acceleration area and the seat of governance discourse. The structure reaches the Fifth Ring protective green belt to the north and contains the "Zhongzhiyuan Proving Ground": a semi-public field for graded open testing of embodied AI and robots, with the Ren-ramped sunken Switchback Amphitheater as its launch and defence core; the Qinghe Sensing Waterfront carries environmental-AI testing and ecological restoration display; reserve land along the Fifth Ring holds twenty-year flexibility. The International AI Governance Roundtable takes its permanent seat here, giving "discourse power" an addressable venue. The risk is compatibility between test-field safety grading and neighbouring housing, managed by time-slot grading plus physical zoning.
 
-## AI Innovation Ecosystem, Personas, and AI+ Scenarios
+## AI Innovation Ecosystem, Personas, and AI+ Scenarios (agent.2 / agent.3)
 
 Ecosystem design starts from people. Six personas are mapped to daily routines and spatial supply: the full-stack researcher (models and systems; lab-to-Origin-Hall routine on the Return Track), the startup founder (teams under ten; low-cost space gradients), the Xueyuan Road student (the campus-dense corridor's students and faculty; school and internship routines), original and senior residents (retained communities; ageing-friendly services), the international visitor and AI pilgrim (landmark and event routines), and city operations and governance workers (cleaners, security staff, grid managers — the "hundred trades" of an AI city, with rest and up-skilling space) [source:AGENT-TASKBOOK] [depth:land_use_layout].
 
 Twelve AI scenario cards cover eight domains — mobility, culture, ecology, retail, governance, education, energy and elder care — of which three are industry test-and-validation scenarios (Proving Ground, Qinghe Waterfront, Smart Market). Each card records location, users, operating data, privacy boundary, human review, operator and risks [depth:municipal_new_infrastructure]:
 
-| Card | Scenario | Location | Users | Privacy boundary and human review |
-| --- | --- | --- | --- | --- |
-| S01 | Crossing Guardian - AI street crossing | Twelve crossings | Commuters, students, wheelchair and stroller users | Edge-side anonymous counts only, no face recognition; incidents handled after human confirmation |
-| S02 | Heritage Storyteller - multilingual guide | Forward Track | Visitors, study groups | User-triggered; no individual trajectories; content reviewed by heritage experts |
-| S03 | Origin Hall - space operations | Origin Station | Developers, startup teams | Voluntary membership; scheduling suggestions executed after human confirmation |
-| S04 | Zhongzhiyuan Proving Ground - embodied AI * | Switchback Station | Robotics and embodied-AI firms | Graded closed/semi-open testing; de-identified archives; pre-release ethics review |
-| S05 | Qinghe Sensing Waterfront - environmental AI * | Qinghe edge | Environmental-AI firms, researchers | Environmental sensor data only; model conclusions applied after human review |
-| S06 | Dazhongsi Smart Market - AI-native retail * | Gateway Station | Smart retail, service-robot firms | Anonymised footfall; merchants own transaction data; stop-on-complaint |
-| S07 | Model Hospital - public evals & red teaming | Origin Station | Model teams, regulators | Cleared eval sets; results signed by humans; sessions publicly auditable |
-| S08 | City Memory Commons - oral history | Crossing Museum & communities | Residents, volunteers | Consent-based collection; AI drafts confirmed by narrators |
-| S09 | School Route Guardian | Xueyuan Rd crossings | Pupils, parents | No individual identification; segment-level alerts only; opt-in |
-| S10 | Energy-Carbon Return - heat recovery dispatch | Belt-wide utilities | Building and campus operators | Building-level aggregates; dispatch under human attendance |
-| S11 | Silver Companion | Retained communities | Senior residents | Fully voluntary; emergency human takeover; family-authorised data |
-| S12 | Global Link - international events | Three stations + online | Global developers, media | Public content; translations checked by humans before release |
+| Card | Scenario | Location | Users | Privacy boundary and human review | Hard stop & non-AI fallback |
+| --- | --- | --- | --- | --- | --- |
+| S01 | Crossing Guardian - AI street crossing | Twelve crossings | Commuters, students, wheelchair and stroller users | Edge-side anonymous counts only, no face recognition; incidents handled after human confirmation | red-stop on any individual-identifiable data; fall back to normal signal timing + human guides |
+| S02 | Heritage Storyteller - multilingual guide | Forward Track | Visitors, study groups | User-triggered; no individual trajectories; content reviewed by heritage experts | unreviewed content goes offline; human guides remain |
+| S03 | Origin Hall - space operations | Origin Station | Developers, startup teams | Voluntary membership; scheduling suggestions executed after human confirmation | stops on data overreach; back to human front desk |
+| S04 | Zhongzhiyuan Proving Ground - embodied AI * | Switchback Station | Robotics and embodied-AI firms | Graded closed/semi-open testing; de-identified archives; pre-release ethics review | any human-safety incident clears the field; space reverts to public use |
+| S05 | Qinghe Sensing Waterfront - environmental AI * | Qinghe edge | Environmental-AI firms, researchers | Environmental sensor data only; model conclusions applied after human review | removal on crowd-monitoring overreach; conventional monitoring remains |
+| S06 | Dazhongsi Smart Market - AI-native retail * | Gateway Station | Smart retail, service-robot firms | Anonymised footfall; merchants own transaction data; stop-on-complaint | rectify on failed stop-on-complaint; back to conventional market |
+| S07 | Model Hospital - public evals & red teaming | Origin Station | Model teams, regulators | Cleared eval sets; results signed by humans; sessions publicly auditable | unsigned results withdrawn; expert review fallback |
+| S08 | City Memory Commons - oral history | Crossing Museum & communities | Residents, volunteers | Consent-based collection; AI drafts confirmed by narrators | unauthorized collection deleted; traditional editing |
+| S09 | School Route Guardian | Xueyuan Rd crossings | Pupils, parents | No individual identification; segment-level alerts only; opt-in | stops on individual identification; human school-guard posts |
+| S10 | Energy-Carbon Return - heat recovery dispatch | Belt-wide utilities | Building and campus operators | Building-level aggregates; dispatch under human attendance | stops on unattended dispatch; conventional heating |
+| S11 | Silver Companion | Retained communities | Senior residents | Fully voluntary; emergency human takeover; family-authorised data | rectify on default-on; human visits as backstop |
+| S12 | Global Link - international events | Three stations + online | Global developers, media | Public content; translations checked by humans before release | unproofed releases withdrawn; human translation backstop |
 
 Scenario operation uses a green-amber-red three-state mechanism: green runs open, amber tests with limits, red pauses for rectification; every scenario keeps a complete human-takeover path and exit mechanism. No scenario presumes non-public data, personal privacy or a designated vendor; immature technology is always labelled as testing and never described as fully deployable [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
+
+
+### Minimum Pilot Slice: the Ren Receipt (S01 Crossing Guardian Tabletop)
+
+To keep the twelve scenario cards from remaining on paper, the proposal converges on S01 Crossing Guardian as the single minimum pilot slice and turns it into a verifiable execution chain called the **Ren Receipt**: problem - site - data scope - authorization - human gate - test plan - evidence - adopt/reject - feedback - rollback, ten stages in all; any scenario landing on this belt must complete this full forward-plus-return pass [metric:receipt_stage_count] [depth:municipal_new_infrastructure]. The receipt schema, an example receipt, the twelve-card three-state gates and an offline verifier ship in the visual assets directory: the verifier is dependency-free, offline and deterministic — re-runs are byte-identical — and embeds three negative fixtures proving that malformed records are rejected with exact check identifiers [metric:tabletop_check_count] [metric:tabletop_negative_fixture_count].
+
+What the tabletop rehearsal proves and does not prove matter equally:
+
+| Proves | Does not prove |
+| --- | --- |
+| The ten-stage chain is structurally complete and consistent with the three-state gates | Any real-intersection efficiency or safety improvement (performance field is null) |
+| Control actions can only execute through the human gate, by design | Any authorization, funding or implementation arrangement from any authority |
+| Rollback fully defined (removal, data deletion, restoration) | Vendor, site engineering or power/communication feasibility |
+| Malformed records are rejected with exact check identifiers | Public acceptance (only participation & exit mechanisms are defined) |
+
+The authorization stage is honestly marked not-run: no application has been filed with any authority; the receipt is a format draft for future applications, for professional teams to deepen [depth:risk_missing_data].
 
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
@@ -128,7 +169,7 @@ Municipal and new infrastructure run as two layers: conventional utilities renew
 
 *Fig 4 | The two-track loop's mobility organisation and blue-green public space network.*
 
-## Blue-Green Network, Public Space, and Urban Character
+## Blue-Green Network, Public Space, and Urban Character (agent.4 / agent.5)
 
 The blue-green system is "one spine, one river, one belt": the Forward Track green spine runs about 9.7 km north-south as the physical body of the Heritage Park vitality belt; the Qinghe waterfront unfolds ecological restoration and a sensing shoreline at the north end; the Fifth-Ring protective green belt closes the northern edge [data:geometry/green_space.geojson#GS-SPINE-S2] [metric:green_ratio] [depth:blue_green_public_space]. Recomputed green ratio 16.0%, public-space ratio 7.0%, slow network about 23.6 km [metric:public_space_ratio].
 
@@ -136,7 +177,7 @@ The public-space system embodies the "Line - Station - Crossing - Yard" naming h
 
 Urban character continues Haidian's tone of "engineering rationality plus campus canopy": stepped low-to-mid-rise frontages flank the Heritage Park in brick red and warm grey echoing station-house memory; conceptual landmark massing is allowed at station cores; belt-wide signage is bilingual plus machine-readable — every sign carries an open-data interface so that humans and agents read the same city [standard:MOHURD-URBAN-DESIGN-MEASURES]. The cultural narrative runs "from steam to token: a trilogy of independent innovation" — the 1909 switchback (engineering autonomy), the 1980s Zhongguancun Electronics Street (market autonomy), and the 2020s large models and embodied AI (intelligence autonomy); the Forward Track carries the historical layer, the Return Track the contemporary layer, and the crossings are where they meet. The international line fits one sentence: Where a century-old switchback meets backpropagation.
 
-## Renewal Projects, Implementation Policy, and Phasing
+## Renewal Projects, Implementation Policy, and Phasing (agent.6)
 
 The renewal list holds 12 projects in three phases, spatially matching the phasing layer [data:geometry/phasing.geojson#PHASE-1] [depth:renewal_project_list]:
 
@@ -164,6 +205,8 @@ The annual event system is flagshipped by **Ren Loop Week** (model launch season
 All metrics are recomputed from the package geometry in EPSG:4548, with formulas and sources registered per item; the prose explains what each core metric means for the design [metric:site_area_sqm] [depth:metrics_recalculation]. The Overall Design Area recomputes to 11.41 km², a +0.11% deviation from the announced 11.4 km²; the three key areas recompute to 192.9 ha (Zhongzhiyuan), 104.3 ha (Origin) and 72.0 ha (Dazhongsi) [metric:key_area_zhongzhiyuan_area_sqm].
 
 The green ratio of 16.0% means every researcher and resident reaches the continuous green spine within a five-minute walk — green space is the Forward Track itself, not decorative quota; the public-space ratio of 7.0% supports encounter density — crossing and station plazas are containers for chance meetings, roadshows and fairs; the road share of 8.6% reflects the "densify, don't widen" micro-circulation strategy; footprint coverage of 18.5% with a reference FAR of 2.63 describes a medium-intensity, high-mix form [metric:green_ratio] [metric:public_space_ratio] [metric:road_ratio]. Official FAR, height, density and green-space controls and road redlines remain pending official data, registered explicitly as unknown with their completion sources [depth:development_intensity_controls].
+
+The governance layer adds recomputable structural metrics: the ten-stage Ren Receipt chain, fifteen tabletop checks with three negative fixtures, three-state gates and human-takeover paths for all twelve scenario cards, and the five regional interfaces — all registered in the metrics file and re-runnable by the offline verifier [metric:human_takeover_path_count] [metric:scenario_gate_state_count].
 
 Task coverage is machine-verifiable through three matrices: the compliance matrix covers all items of announcement sections 1.3, 1.4 and 1.5 plus agent.1-agent.6; the standard matrix covers all mandatory professional standards; all fifteen design-depth items are complete [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [depth:risk_missing_data].
 

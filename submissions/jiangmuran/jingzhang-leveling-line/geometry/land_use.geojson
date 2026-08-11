@@ -1,7 +1,276 @@
 {
  "type": "FeatureCollection",
  "name": "LAND_USE",
+ "derived_measures": {
+  "coordinates_crs": "urn:ogc:def:crs:OGC::CRS84",
+  "measurement_crs": "EPSG:4548",
+  "note": "Coordinates are CRS84 (WGS 84 lon/lat) as required by RFC 7946 section 4, which removed the GeoJSON crs member; every *_declared area and length property in this file was computed in EPSG:4548 (CGCS2000 / 3-degree Gauss-Kruger CM 117E)."
+ },
  "features": [
+  {
+   "type": "Feature",
+   "id": "LU-B01",
+   "properties": {
+    "id": "LU-B01",
+    "layer": "LAND_USE",
+    "source_type": "agent_generated_design",
+    "confidence": "medium",
+    "geometry_role": "design_proposal",
+    "official_boundary": false,
+    "name_zh": "文化用地（L1 水准原点标石与公共证据厅 基底地块）",
+    "name_en": "Cultural land (parcel under L1 origin benchmark stone and public evidence hall)",
+    "note_zh": "概念设计建议，基于临时边界生成；不替代法定规划，官方边界发布后须整体重算。",
+    "land_use_code": "0803",
+    "area_sqm_declared": 9424.0
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.34661731469359,
+       39.98781011986943
+      ],
+      [
+       116.34660312077327,
+       39.989178968848584
+      ],
+      [
+       116.34732900291007,
+       39.98918342008491
+      ],
+      [
+       116.34734318234437,
+       39.987814570901485
+      ],
+      [
+       116.34661731469359,
+       39.98781011986943
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "LU-B02",
+   "properties": {
+    "id": "LU-B02",
+    "layer": "LAND_USE",
+    "source_type": "agent_generated_design",
+    "confidence": "medium",
+    "geometry_role": "design_proposal",
+    "official_boundary": false,
+    "name_zh": "文化用地（L2 闭合差碑（公共读数墙） 基底地块）",
+    "name_en": "Cultural land (parcel under L2 closure stele (public reading wall))",
+    "note_zh": "概念设计建议，基于临时边界生成；不替代法定规划，官方边界发布后须整体重算。",
+    "land_use_code": "0803",
+    "area_sqm_declared": 5032.0
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.34988809791498,
+       40.01748593507627
+      ],
+      [
+       116.35028625713564,
+       40.017479707217944
+      ],
+      [
+       116.35025099514193,
+       40.01614711988651
+      ],
+      [
+       116.34985284366627,
+       40.016153347686945
+      ],
+      [
+       116.34988809791498,
+       40.01748593507627
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "LU-B03",
+   "properties": {
+    "id": "LU-B03",
+    "layer": "LAND_USE",
+    "source_type": "agent_generated_design",
+    "confidence": "medium",
+    "geometry_role": "design_proposal",
+    "official_boundary": false,
+    "name_zh": "文化用地（L3 归零点（年度归零仪式空间） 基底地块）",
+    "name_en": "Cultural land (parcel under L3 zeroing point (annual zeroing ceremony space))",
+    "note_zh": "概念设计建议，基于临时边界生成；不替代法定规划，官方边界发布后须整体重算。",
+    "land_use_code": "0803",
+    "area_sqm_declared": 6380.0
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.34679220627338,
+       39.947542321480014
+      ],
+      [
+       116.34730705223583,
+       39.94754209002825
+      ],
+      [
+       116.34730605619541,
+       39.94623622938936
+      ],
+      [
+       116.34679122002261,
+       39.94623646091568
+      ],
+      [
+       116.34679220627338,
+       39.947542321480014
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "LU-B04",
+   "properties": {
+    "id": "LU-B04",
+    "layer": "LAND_USE",
+    "source_type": "agent_generated_design",
+    "confidence": "medium",
+    "geometry_role": "design_proposal",
+    "official_boundary": false,
+    "name_zh": "科研用地（众智园标准测试场与限差议事厅 基底地块）",
+    "name_en": "Research land (parcel under Zhongzhiyuan standard test field and tolerance chamber)",
+    "note_zh": "概念设计建议，基于临时边界生成；不替代法定规划，官方边界发布后须整体重算。",
+    "land_use_code": "0802",
+    "area_sqm_declared": 28420.0
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.34722061812786,
+       40.01812475437549
+      ],
+      [
+       116.34836829452875,
+       40.01810800367216
+      ],
+      [
+       116.34830380513645,
+       40.015496783767176
+      ],
+      [
+       116.3471561724817,
+       40.01551353419003
+      ],
+      [
+       116.34722061812786,
+       40.01812475437549
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "LU-B05",
+   "properties": {
+    "id": "LU-B05",
+    "layer": "LAND_USE",
+    "source_type": "agent_generated_design",
+    "confidence": "medium",
+    "geometry_role": "design_proposal",
+    "official_boundary": false,
+    "name_zh": "商业服务业用地（大钟寺智能原生商务界面 基底地块）",
+    "name_en": "Commercial and business services land (parcel under Dazhongsi AI-native business frontage)",
+    "note_zh": "概念设计建议，基于临时边界生成；不替代法定规划，官方边界发布后须整体重算。",
+    "land_use_code": "05",
+    "area_sqm_declared": 25200.0
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.34866628262712,
+       39.948250711963446
+      ],
+      [
+       116.34964917993626,
+       39.948249643413405
+      ],
+      [
+       116.34964420172608,
+       39.94554786429665
+      ],
+      [
+       116.34866134308487,
+       39.94554893311578
+      ],
+      [
+       116.34866628262712,
+       39.948250711963446
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "LU-B06",
+   "properties": {
+    "id": "LU-B06",
+    "layer": "LAND_USE",
+    "source_type": "agent_generated_design",
+    "confidence": "medium",
+    "geometry_role": "design_proposal",
+    "official_boundary": false,
+    "name_zh": "城镇村道路用地（学院路轨道站一体化接驳设施 基底地块）",
+    "name_en": "Urban road land (parcel under Xueyuan Road station integrated interchange)",
+    "note_zh": "概念设计建议，基于临时边界生成；不替代法定规划，官方边界发布后须整体重算。",
+    "land_use_code": "1207",
+    "area_sqm_declared": 7820.0
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.34811828960149,
+       39.98077045864527
+      ],
+      [
+       116.34865623704711,
+       39.98078937186887
+      ],
+      [
+       116.3487470872592,
+       39.9792599671702
+      ],
+      [
+       116.34820915177096,
+       39.979241054459365
+      ],
+      [
+       116.34811828960149,
+       39.98077045864527
+      ]
+     ]
+    ]
+   }
+  },
   {
    "type": "Feature",
    "id": "LU-001",
@@ -13,18 +282,15 @@
     "geometry_role": "design_proposal",
     "official_boundary": false,
     "name_zh": "文化用地（公共证据厅与水准原点标石 L1）",
+    "name_en": "Cultural use (public evidence hall and origin benchmark stone L1)",
     "note_zh": "概念设计建议，基于临时边界生成；不替代法定规划，官方边界发布后须整体重算。",
     "land_use_code": "0803",
-    "area_sqm_declared": 61476.4
+    "area_sqm_declared": 52052.4
    },
    "geometry": {
     "type": "Polygon",
     "coordinates": [
      [
-      [
-       116.34913236133879,
-       39.98838559264231
-      ],
       [
        116.34910992113812,
        39.988263071315735
@@ -280,6 +546,32 @@
       [
        116.34913236133879,
        39.98838559264231
+      ],
+      [
+       116.34910992113812,
+       39.988263071315735
+      ]
+     ],
+     [
+      [
+       116.34661731469359,
+       39.98781011986943
+      ],
+      [
+       116.34734318234437,
+       39.987814570901485
+      ],
+      [
+       116.34732900291007,
+       39.98918342008491
+      ],
+      [
+       116.34660312077327,
+       39.989178968848584
+      ],
+      [
+       116.34661731469359,
+       39.98781011986943
       ]
      ]
     ]
@@ -296,9 +588,10 @@
     "geometry_role": "design_proposal",
     "official_boundary": false,
     "name_zh": "AI研发与科研用地（众智园一等水准点）",
+    "name_en": "AI R&D and research (Zhongzhiyuan first-order benchmark)",
     "note_zh": "概念设计建议，基于临时边界生成；不替代法定规划，官方边界发布后须整体重算。",
     "land_use_code": "0802",
-    "area_sqm_declared": 1929201.9
+    "area_sqm_declared": 1895749.9
    },
    "geometry": {
     "type": "Polygon",
@@ -324,6 +617,50 @@
        116.354,
        40.026
       ]
+     ],
+     [
+      [
+       116.35028625713564,
+       40.017479707217944
+      ],
+      [
+       116.34988809791498,
+       40.01748593507627
+      ],
+      [
+       116.34985284366627,
+       40.016153347686945
+      ],
+      [
+       116.35025099514193,
+       40.01614711988651
+      ],
+      [
+       116.35028625713564,
+       40.017479707217944
+      ]
+     ],
+     [
+      [
+       116.34830380513645,
+       40.015496783767176
+      ],
+      [
+       116.34836829452875,
+       40.01810800367216
+      ],
+      [
+       116.34722061812786,
+       40.01812475437549
+      ],
+      [
+       116.3471561724817,
+       40.01551353419003
+      ],
+      [
+       116.34830380513645,
+       40.015496783767176
+      ]
      ]
     ]
    }
@@ -339,6 +676,7 @@
     "geometry_role": "design_proposal",
     "official_boundary": false,
     "name_zh": "社区服务与人才配套用地（AI原点社区）",
+    "name_en": "Community services and talent support (AI Origin Community)",
     "note_zh": "概念设计建议，基于临时边界生成；不替代法定规划，官方边界发布后须整体重算。",
     "land_use_code": "0702",
     "area_sqm_declared": 981760.6
@@ -370,6 +708,30 @@
      ],
      [
       [
+       116.34877462207332,
+       39.98770729004137
+      ],
+      [
+       116.34886949671015,
+       39.98780720759943
+      ],
+      [
+       116.34895118274169,
+       39.9879137971391
+      ],
+      [
+       116.34901889344478,
+       39.98802603217277
+      ],
+      [
+       116.3490719766728,
+       39.98814283184001
+      ],
+      [
+       116.34910992113812,
+       39.988263071315735
+      ],
+      [
        116.34913236133879,
        39.98838559264231
       ],
@@ -604,30 +966,6 @@
       [
        116.34877462207332,
        39.98770729004137
-      ],
-      [
-       116.34886949671015,
-       39.98780720759943
-      ],
-      [
-       116.34895118274169,
-       39.9879137971391
-      ],
-      [
-       116.34901889344478,
-       39.98802603217277
-      ],
-      [
-       116.3490719766728,
-       39.98814283184001
-      ],
-      [
-       116.34910992113812,
-       39.988263071315735
-      ],
-      [
-       116.34913236133879,
-       39.98838559264231
       ]
      ]
     ]
@@ -644,9 +982,10 @@
     "geometry_role": "design_proposal",
     "official_boundary": false,
     "name_zh": "产业服务与商业服务用地（大钟寺高频读数点）",
+    "name_en": "Industry and commercial services (Dazhongsi high-frequency reading point)",
     "note_zh": "概念设计建议，基于临时边界生成；不替代法定规划，官方边界发布后须整体重算。",
     "land_use_code": "05",
-    "area_sqm_declared": 720454.2
+    "area_sqm_declared": 688874.2
    },
    "geometry": {
     "type": "Polygon",
@@ -672,6 +1011,50 @@
        116.35500000000002,
        39.94983999999999
       ]
+     ],
+     [
+      [
+       116.34964917993626,
+       39.948249643413405
+      ],
+      [
+       116.34866628262712,
+       39.948250711963446
+      ],
+      [
+       116.34866134308487,
+       39.94554893311578
+      ],
+      [
+       116.34964420172608,
+       39.94554786429665
+      ],
+      [
+       116.34964917993626,
+       39.948249643413405
+      ]
+     ],
+     [
+      [
+       116.34679220627338,
+       39.947542321480014
+      ],
+      [
+       116.34679122002261,
+       39.94623646091568
+      ],
+      [
+       116.34730605619541,
+       39.94623622938936
+      ],
+      [
+       116.34730705223583,
+       39.94754209002825
+      ],
+      [
+       116.34679220627338,
+       39.947542321480014
+      ]
      ]
     ]
    }
@@ -687,19 +1070,16 @@
     "geometry_role": "design_proposal",
     "official_boundary": false,
     "name_zh": "公园绿地与开敞空间（主脊绿廊）",
+    "name_en": "Park, green and open space (spine green corridor)",
     "note_zh": "概念设计建议，基于临时边界生成；不替代法定规划，官方边界发布后须整体重算。",
     "land_use_code": "1401",
-    "area_sqm_declared": 1400117.1
+    "area_sqm_declared": 1392297.1
    },
    "geometry": {
     "type": "MultiPolygon",
     "coordinates": [
      [
       [
-       [
-        116.34679628353948,
-        39.96003323716494
-       ],
        [
         116.34719441765014,
         39.96999168883853
@@ -747,6 +1127,32 @@
        [
         116.34679628353948,
         39.96003323716494
+       ],
+       [
+        116.34719441765014,
+        39.96999168883853
+       ]
+      ],
+      [
+       [
+        116.3487470872592,
+        39.9792599671702
+       ],
+       [
+        116.34865623704711,
+        39.98078937186887
+       ],
+       [
+        116.34811828960149,
+        39.98077045864527
+       ],
+       [
+        116.34820915177096,
+        39.979241054459365
+       ],
+       [
+        116.3487470872592,
+        39.9792599671702
        ]
       ]
      ],
@@ -976,6 +1382,7 @@
     "geometry_role": "design_proposal",
     "official_boundary": false,
     "name_zh": "本方案留白街区 01（现状城市建成区，待权属、控规与拆改留评估后细分）",
+    "name_en": "Block 01 left blank by this proposal (existing built-up area, to be subdivided after title, regulatory conditions and retain-renovate-demolish assessment)",
     "note_zh": "代码 16（留白用地）在此表示『本方案对该范围留白』，不是声称该范围在法定意义上已被划为留白用地。本方案不对其中任何具体地块给出用途变更或拆除结论；细分须待官方控规条件、权属与结构安全评估后进行。",
     "land_use_code": "16",
     "area_sqm_declared": 2283849.6,
@@ -1460,6 +1867,7 @@
     "geometry_role": "design_proposal",
     "official_boundary": false,
     "name_zh": "本方案留白街区 02（现状城市建成区，待权属、控规与拆改留评估后细分）",
+    "name_en": "Block 02 left blank by this proposal (existing built-up area, to be subdivided after title, regulatory conditions and retain-renovate-demolish assessment)",
     "note_zh": "代码 16（留白用地）在此表示『本方案对该范围留白』，不是声称该范围在法定意义上已被划为留白用地。本方案不对其中任何具体地块给出用途变更或拆除结论；细分须待官方控规条件、权属与结构安全评估后进行。",
     "land_use_code": "16",
     "area_sqm_declared": 782135.3,
@@ -1648,6 +2056,7 @@
     "geometry_role": "design_proposal",
     "official_boundary": false,
     "name_zh": "本方案留白街区 03（现状城市建成区，待权属、控规与拆改留评估后细分）",
+    "name_en": "Block 03 left blank by this proposal (existing built-up area, to be subdivided after title, regulatory conditions and retain-renovate-demolish assessment)",
     "note_zh": "代码 16（留白用地）在此表示『本方案对该范围留白』，不是声称该范围在法定意义上已被划为留白用地。本方案不对其中任何具体地块给出用途变更或拆除结论；细分须待官方控规条件、权属与结构安全评估后进行。",
     "land_use_code": "16",
     "area_sqm_declared": 617304.3,
@@ -1776,6 +2185,7 @@
     "geometry_role": "design_proposal",
     "official_boundary": false,
     "name_zh": "本方案留白街区 04（现状城市建成区，待权属、控规与拆改留评估后细分）",
+    "name_en": "Block 04 left blank by this proposal (existing built-up area, to be subdivided after title, regulatory conditions and retain-renovate-demolish assessment)",
     "note_zh": "代码 16（留白用地）在此表示『本方案对该范围留白』，不是声称该范围在法定意义上已被划为留白用地。本方案不对其中任何具体地块给出用途变更或拆除结论；细分须待官方控规条件、权属与结构安全评估后进行。",
     "land_use_code": "16",
     "area_sqm_declared": 604410.9,
@@ -1868,6 +2278,7 @@
     "geometry_role": "design_proposal",
     "official_boundary": false,
     "name_zh": "本方案留白街区 05（现状城市建成区，待权属、控规与拆改留评估后细分）",
+    "name_en": "Block 05 left blank by this proposal (existing built-up area, to be subdivided after title, regulatory conditions and retain-renovate-demolish assessment)",
     "note_zh": "代码 16（留白用地）在此表示『本方案对该范围留白』，不是声称该范围在法定意义上已被划为留白用地。本方案不对其中任何具体地块给出用途变更或拆除结论；细分须待官方控规条件、权属与结构安全评估后进行。",
     "land_use_code": "16",
     "area_sqm_declared": 557068.7,
@@ -1952,6 +2363,7 @@
     "geometry_role": "design_proposal",
     "official_boundary": false,
     "name_zh": "本方案留白街区 06（现状城市建成区，待权属、控规与拆改留评估后细分）",
+    "name_en": "Block 06 left blank by this proposal (existing built-up area, to be subdivided after title, regulatory conditions and retain-renovate-demolish assessment)",
     "note_zh": "代码 16（留白用地）在此表示『本方案对该范围留白』，不是声称该范围在法定意义上已被划为留白用地。本方案不对其中任何具体地块给出用途变更或拆除结论；细分须待官方控规条件、权属与结构安全评估后进行。",
     "land_use_code": "16",
     "area_sqm_declared": 457632.3,
@@ -2104,6 +2516,7 @@
     "geometry_role": "design_proposal",
     "official_boundary": false,
     "name_zh": "本方案留白街区 07（现状城市建成区，待权属、控规与拆改留评估后细分）",
+    "name_en": "Block 07 left blank by this proposal (existing built-up area, to be subdivided after title, regulatory conditions and retain-renovate-demolish assessment)",
     "note_zh": "代码 16（留白用地）在此表示『本方案对该范围留白』，不是声称该范围在法定意义上已被划为留白用地。本方案不对其中任何具体地块给出用途变更或拆除结论；细分须待官方控规条件、权属与结构安全评估后进行。",
     "land_use_code": "16",
     "area_sqm_declared": 350009.6,
@@ -2200,6 +2613,7 @@
     "geometry_role": "design_proposal",
     "official_boundary": false,
     "name_zh": "本方案留白街区 08（现状城市建成区，待权属、控规与拆改留评估后细分）",
+    "name_en": "Block 08 left blank by this proposal (existing built-up area, to be subdivided after title, regulatory conditions and retain-renovate-demolish assessment)",
     "note_zh": "代码 16（留白用地）在此表示『本方案对该范围留白』，不是声称该范围在法定意义上已被划为留白用地。本方案不对其中任何具体地块给出用途变更或拆除结论；细分须待官方控规条件、权属与结构安全评估后进行。",
     "land_use_code": "16",
     "area_sqm_declared": 320729.3,
@@ -2308,6 +2722,7 @@
     "geometry_role": "design_proposal",
     "official_boundary": false,
     "name_zh": "本方案留白街区 09（现状城市建成区，待权属、控规与拆改留评估后细分）",
+    "name_en": "Block 09 left blank by this proposal (existing built-up area, to be subdivided after title, regulatory conditions and retain-renovate-demolish assessment)",
     "note_zh": "代码 16（留白用地）在此表示『本方案对该范围留白』，不是声称该范围在法定意义上已被划为留白用地。本方案不对其中任何具体地块给出用途变更或拆除结论；细分须待官方控规条件、权属与结构安全评估后进行。",
     "land_use_code": "16",
     "area_sqm_declared": 246425.0,
@@ -2434,6 +2849,7 @@
     "geometry_role": "design_proposal",
     "official_boundary": false,
     "name_zh": "本方案留白街区 10（现状城市建成区，待权属、控规与拆改留评估后细分）",
+    "name_en": "Block 10 left blank by this proposal (existing built-up area, to be subdivided after title, regulatory conditions and retain-renovate-demolish assessment)",
     "note_zh": "代码 16（留白用地）在此表示『本方案对该范围留白』，不是声称该范围在法定意义上已被划为留白用地。本方案不对其中任何具体地块给出用途变更或拆除结论；细分须待官方控规条件、权属与结构安全评估后进行。",
     "land_use_code": "16",
     "area_sqm_declared": 87405.8,
@@ -2490,6 +2906,7 @@
     "geometry_role": "design_proposal",
     "official_boundary": false,
     "name_zh": "本方案留白街区 11（现状城市建成区，待权属、控规与拆改留评估后细分）",
+    "name_en": "Block 11 left blank by this proposal (existing built-up area, to be subdivided after title, regulatory conditions and retain-renovate-demolish assessment)",
     "note_zh": "代码 16（留白用地）在此表示『本方案对该范围留白』，不是声称该范围在法定意义上已被划为留白用地。本方案不对其中任何具体地块给出用途变更或拆除结论；细分须待官方控规条件、权属与结构安全评估后进行。",
     "land_use_code": "16",
     "area_sqm_declared": 12844.4,

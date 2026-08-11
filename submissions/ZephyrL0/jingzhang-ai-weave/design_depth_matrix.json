@@ -8,23 +8,20 @@
       "required": true,
       "status": "complete",
       "proposal_sections": [
-        "总体设计范围城市更新与控规深度城市设计",
-        "指标体系、面积复算与合规矩阵"
+        "设计依据与资料清单",
+        "总体设计范围城市更新与控规深度城市设计"
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "geometry_refs": [
-        "geometry/land_use.geojson",
+        "geometry/constraints.geojson",
         "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/phasing.geojson"
+        "geometry/key_areas.geojson"
       ],
       "metric_refs": [
-        "site_area_sqm",
-        "green_ratio",
-        "public_space_ratio"
+        "planning_unit_count"
       ],
       "source_ids": [
         "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT"
@@ -37,7 +34,7 @@
         "LAND_USE_TOPOLOGY",
         "BILINGUAL_DELIVERY"
       ],
-      "evidence_summary_zh": "本项以概念性空间图层、可复算指标、双语图文成果和待补资料边界共同表达，需在官方资料到位后由专业团队复核深化。"
+      "evidence_summary_zh": "v4以设计依据与资料清单为人类阅读入口，并由3个针对性空间图层和1项指标支撑；临时几何和待补专业资料仍在假设与风险门中披露。"
     },
     {
       "item_id": "three_level_scope_framework",
@@ -46,23 +43,21 @@
       "required": true,
       "status": "complete",
       "proposal_sections": [
-        "总体设计范围城市更新与控规深度城市设计",
-        "指标体系、面积复算与合规矩阵"
+        "三层范围工作框架",
+        "统筹研究范围产业与未来城市研究"
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "geometry_refs": [
-        "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/phasing.geojson"
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/roads.geojson"
       ],
       "metric_refs": [
         "site_area_sqm",
-        "green_ratio",
-        "public_space_ratio"
+        "key_area_count"
       ],
       "source_ids": [
         "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT"
@@ -75,7 +70,7 @@
         "LAND_USE_TOPOLOGY",
         "BILINGUAL_DELIVERY"
       ],
-      "evidence_summary_zh": "本项以概念性空间图层、可复算指标、双语图文成果和待补资料边界共同表达，需在官方资料到位后由专业团队复核深化。"
+      "evidence_summary_zh": "v4以三层范围工作框架为人类阅读入口，并由3个针对性空间图层和2项指标支撑；临时几何和待补专业资料仍在假设与风险门中披露。"
     },
     {
       "item_id": "overall_spatial_structure",
@@ -84,8 +79,8 @@
       "required": true,
       "status": "complete",
       "proposal_sections": [
-        "总体设计范围城市更新与控规深度城市设计",
-        "指标体系、面积复算与合规矩阵"
+        "三层范围工作框架",
+        "总体设计范围城市更新与控规深度城市设计"
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
@@ -93,14 +88,12 @@
       ],
       "geometry_refs": [
         "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
         "geometry/roads.geojson",
-        "geometry/phasing.geojson"
+        "geometry/public_space.geojson"
       ],
       "metric_refs": [
-        "site_area_sqm",
-        "green_ratio",
-        "public_space_ratio"
+        "planning_unit_count",
+        "cross_city_seam_count"
       ],
       "source_ids": [
         "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT"
@@ -113,7 +106,7 @@
         "LAND_USE_TOPOLOGY",
         "BILINGUAL_DELIVERY"
       ],
-      "evidence_summary_zh": "本项以概念性空间图层、可复算指标、双语图文成果和待补资料边界共同表达，需在官方资料到位后由专业团队复核深化。"
+      "evidence_summary_zh": "v4以三层范围工作框架为人类阅读入口，并由3个针对性空间图层和2项指标支撑；临时几何和待补专业资料仍在假设与风险门中披露。"
     },
     {
       "item_id": "land_use_layout",
@@ -122,23 +115,18 @@
       "required": true,
       "status": "complete",
       "proposal_sections": [
-        "总体设计范围城市更新与控规深度城市设计",
-        "指标体系、面积复算与合规矩阵"
+        "用地、建筑规模与拆改留方案"
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "geometry_refs": [
-        "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/phasing.geojson"
+        "geometry/land_use.geojson"
       ],
       "metric_refs": [
-        "site_area_sqm",
-        "green_ratio",
-        "public_space_ratio"
+        "planning_unit_count",
+        "site_area_sqm"
       ],
       "source_ids": [
         "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT"
@@ -151,7 +139,7 @@
         "LAND_USE_TOPOLOGY",
         "BILINGUAL_DELIVERY"
       ],
-      "evidence_summary_zh": "本项以概念性空间图层、可复算指标、双语图文成果和待补资料边界共同表达，需在官方资料到位后由专业团队复核深化。"
+      "evidence_summary_zh": "v4以用地、建筑规模与拆改留方案为人类阅读入口，并由1个针对性空间图层和2项指标支撑；临时几何和待补专业资料仍在假设与风险门中披露。"
     },
     {
       "item_id": "development_intensity_controls",
@@ -161,22 +149,19 @@
       "status": "complete",
       "proposal_sections": [
         "总体设计范围城市更新与控规深度城市设计",
-        "指标体系、面积复算与合规矩阵"
+        "用地、建筑规模与拆改留方案"
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "geometry_refs": [
-        "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/phasing.geojson"
+        "geometry/constraints.geojson",
+        "geometry/buildings.geojson"
       ],
       "metric_refs": [
-        "site_area_sqm",
-        "green_ratio",
-        "public_space_ratio"
+        "floor_area_ratio",
+        "building_density"
       ],
       "source_ids": [
         "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT"
@@ -189,7 +174,7 @@
         "LAND_USE_TOPOLOGY",
         "BILINGUAL_DELIVERY"
       ],
-      "evidence_summary_zh": "本项以概念性空间图层、可复算指标、双语图文成果和待补资料边界共同表达，需在官方资料到位后由专业团队复核深化。"
+      "evidence_summary_zh": "v4以总体设计范围城市更新与控规深度城市设计为人类阅读入口，并由2个针对性空间图层和2项指标支撑；临时几何和待补专业资料仍在假设与风险门中披露。"
     },
     {
       "item_id": "height_massing_character",
@@ -198,23 +183,19 @@
       "required": true,
       "status": "complete",
       "proposal_sections": [
-        "总体设计范围城市更新与控规深度城市设计",
-        "指标体系、面积复算与合规矩阵"
+        "用地、建筑规模与拆改留方案",
+        "蓝绿空间、公共空间与城市风貌"
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "geometry_refs": [
-        "geometry/land_use.geojson",
         "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/phasing.geojson"
+        "geometry/constraints.geojson"
       ],
       "metric_refs": [
-        "site_area_sqm",
-        "green_ratio",
-        "public_space_ratio"
+        "concept_building_interface_count"
       ],
       "source_ids": [
         "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT"
@@ -227,7 +208,7 @@
         "LAND_USE_TOPOLOGY",
         "BILINGUAL_DELIVERY"
       ],
-      "evidence_summary_zh": "本项以概念性空间图层、可复算指标、双语图文成果和待补资料边界共同表达，需在官方资料到位后由专业团队复核深化。"
+      "evidence_summary_zh": "v4以用地、建筑规模与拆改留方案为人类阅读入口，并由2个针对性空间图层和1项指标支撑；临时几何和待补专业资料仍在假设与风险门中披露。"
     },
     {
       "item_id": "retain_renovate_demolish",
@@ -236,23 +217,20 @@
       "required": true,
       "status": "complete",
       "proposal_sections": [
-        "总体设计范围城市更新与控规深度城市设计",
-        "指标体系、面积复算与合规矩阵"
+        "用地、建筑规模与拆改留方案",
+        "更新项目清单、实施政策与分期计划"
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "geometry_refs": [
-        "geometry/land_use.geojson",
         "geometry/buildings.geojson",
-        "geometry/roads.geojson",
         "geometry/phasing.geojson"
       ],
       "metric_refs": [
-        "site_area_sqm",
-        "green_ratio",
-        "public_space_ratio"
+        "concept_building_interface_count",
+        "renewal_work_package_count"
       ],
       "source_ids": [
         "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT"
@@ -265,7 +243,7 @@
         "LAND_USE_TOPOLOGY",
         "BILINGUAL_DELIVERY"
       ],
-      "evidence_summary_zh": "本项以概念性空间图层、可复算指标、双语图文成果和待补资料边界共同表达，需在官方资料到位后由专业团队复核深化。"
+      "evidence_summary_zh": "v4以用地、建筑规模与拆改留方案为人类阅读入口，并由2个针对性空间图层和2项指标支撑；临时几何和待补专业资料仍在假设与风险门中披露。"
     },
     {
       "item_id": "traffic_rail_slow_parking",
@@ -274,23 +252,19 @@
       "required": true,
       "status": "complete",
       "proposal_sections": [
-        "总体设计范围城市更新与控规深度城市设计",
-        "指标体系、面积复算与合规矩阵"
+        "交通、轨道、市政与公共服务设施"
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "geometry_refs": [
-        "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
         "geometry/roads.geojson",
-        "geometry/phasing.geojson"
+        "geometry/public_space.geojson"
       ],
       "metric_refs": [
-        "site_area_sqm",
-        "green_ratio",
-        "public_space_ratio"
+        "mobility_link_count",
+        "cross_city_seam_count"
       ],
       "source_ids": [
         "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT"
@@ -303,7 +277,7 @@
         "LAND_USE_TOPOLOGY",
         "BILINGUAL_DELIVERY"
       ],
-      "evidence_summary_zh": "本项以概念性空间图层、可复算指标、双语图文成果和待补资料边界共同表达，需在官方资料到位后由专业团队复核深化。"
+      "evidence_summary_zh": "v4以交通、轨道、市政与公共服务设施为人类阅读入口，并由2个针对性空间图层和2项指标支撑；临时几何和待补专业资料仍在假设与风险门中披露。"
     },
     {
       "item_id": "municipal_new_infrastructure",
@@ -312,23 +286,18 @@
       "required": true,
       "status": "complete",
       "proposal_sections": [
-        "总体设计范围城市更新与控规深度城市设计",
-        "指标体系、面积复算与合规矩阵"
+        "交通、轨道、市政与公共服务设施"
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "geometry_refs": [
-        "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
-        "geometry/roads.geojson",
+        "geometry/constraints.geojson",
         "geometry/phasing.geojson"
       ],
       "metric_refs": [
-        "site_area_sqm",
-        "green_ratio",
-        "public_space_ratio"
+        "renewal_work_package_count"
       ],
       "source_ids": [
         "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT"
@@ -341,7 +310,7 @@
         "LAND_USE_TOPOLOGY",
         "BILINGUAL_DELIVERY"
       ],
-      "evidence_summary_zh": "本项以概念性空间图层、可复算指标、双语图文成果和待补资料边界共同表达，需在官方资料到位后由专业团队复核深化。"
+      "evidence_summary_zh": "v4以交通、轨道、市政与公共服务设施为人类阅读入口，并由2个针对性空间图层和1项指标支撑；临时几何和待补专业资料仍在假设与风险门中披露。"
     },
     {
       "item_id": "blue_green_public_space",
@@ -350,23 +319,20 @@
       "required": true,
       "status": "complete",
       "proposal_sections": [
-        "总体设计范围城市更新与控规深度城市设计",
-        "指标体系、面积复算与合规矩阵"
+        "蓝绿空间、公共空间与城市风貌"
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "geometry_refs": [
-        "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/phasing.geojson"
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson"
       ],
       "metric_refs": [
-        "site_area_sqm",
         "green_ratio",
-        "public_space_ratio"
+        "public_space_ratio",
+        "green_network_component_count"
       ],
       "source_ids": [
         "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT"
@@ -379,7 +345,7 @@
         "LAND_USE_TOPOLOGY",
         "BILINGUAL_DELIVERY"
       ],
-      "evidence_summary_zh": "本项以概念性空间图层、可复算指标、双语图文成果和待补资料边界共同表达，需在官方资料到位后由专业团队复核深化。"
+      "evidence_summary_zh": "v4以蓝绿空间、公共空间与城市风貌为人类阅读入口，并由2个针对性空间图层和3项指标支撑；临时几何和待补专业资料仍在假设与风险门中披露。"
     },
     {
       "item_id": "three_key_area_detailed_design",
@@ -388,23 +354,20 @@
       "required": true,
       "status": "complete",
       "proposal_sections": [
-        "总体设计范围城市更新与控规深度城市设计",
-        "指标体系、面积复算与合规矩阵"
+        "重点区域详细设计"
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "geometry_refs": [
-        "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/phasing.geojson"
+        "geometry/key_areas.geojson",
+        "geometry/phasing.geojson",
+        "geometry/public_space.geojson"
       ],
       "metric_refs": [
-        "site_area_sqm",
-        "green_ratio",
-        "public_space_ratio"
+        "key_area_count",
+        "renewal_work_package_count"
       ],
       "source_ids": [
         "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT"
@@ -417,7 +380,7 @@
         "LAND_USE_TOPOLOGY",
         "BILINGUAL_DELIVERY"
       ],
-      "evidence_summary_zh": "本项以概念性空间图层、可复算指标、双语图文成果和待补资料边界共同表达，需在官方资料到位后由专业团队复核深化。"
+      "evidence_summary_zh": "v4以重点区域详细设计为人类阅读入口，并由3个针对性空间图层和2项指标支撑；临时几何和待补专业资料仍在假设与风险门中披露。"
     },
     {
       "item_id": "renewal_project_list",
@@ -426,23 +389,18 @@
       "required": true,
       "status": "complete",
       "proposal_sections": [
-        "总体设计范围城市更新与控规深度城市设计",
-        "指标体系、面积复算与合规矩阵"
+        "更新项目清单、实施政策与分期计划"
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "geometry_refs": [
-        "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/phasing.geojson"
+        "geometry/phasing.geojson",
+        "geometry/buildings.geojson"
       ],
       "metric_refs": [
-        "site_area_sqm",
-        "green_ratio",
-        "public_space_ratio"
+        "renewal_work_package_count"
       ],
       "source_ids": [
         "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT"
@@ -455,7 +413,7 @@
         "LAND_USE_TOPOLOGY",
         "BILINGUAL_DELIVERY"
       ],
-      "evidence_summary_zh": "本项以概念性空间图层、可复算指标、双语图文成果和待补资料边界共同表达，需在官方资料到位后由专业团队复核深化。"
+      "evidence_summary_zh": "v4以更新项目清单、实施政策与分期计划为人类阅读入口，并由2个针对性空间图层和1项指标支撑；临时几何和待补专业资料仍在假设与风险门中披露。"
     },
     {
       "item_id": "phasing_implementation",
@@ -464,23 +422,18 @@
       "required": true,
       "status": "complete",
       "proposal_sections": [
-        "总体设计范围城市更新与控规深度城市设计",
-        "指标体系、面积复算与合规矩阵"
+        "更新项目清单、实施政策与分期计划"
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "geometry_refs": [
-        "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/phasing.geojson"
+        "geometry/phasing.geojson",
+        "geometry/constraints.geojson"
       ],
       "metric_refs": [
-        "site_area_sqm",
-        "green_ratio",
-        "public_space_ratio"
+        "renewal_work_package_count"
       ],
       "source_ids": [
         "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT"
@@ -493,7 +446,7 @@
         "LAND_USE_TOPOLOGY",
         "BILINGUAL_DELIVERY"
       ],
-      "evidence_summary_zh": "本项以概念性空间图层、可复算指标、双语图文成果和待补资料边界共同表达，需在官方资料到位后由专业团队复核深化。"
+      "evidence_summary_zh": "v4以更新项目清单、实施政策与分期计划为人类阅读入口，并由2个针对性空间图层和1项指标支撑；临时几何和待补专业资料仍在假设与风险门中披露。"
     },
     {
       "item_id": "metrics_recalculation",
@@ -502,7 +455,6 @@
       "required": true,
       "status": "complete",
       "proposal_sections": [
-        "总体设计范围城市更新与控规深度城市设计",
         "指标体系、面积复算与合规矩阵"
       ],
       "drawing_refs": [
@@ -510,15 +462,16 @@
         "drawings/a0-boards.pdf"
       ],
       "geometry_refs": [
+        "geometry/site_boundary.geojson",
         "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/phasing.geojson"
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson"
       ],
       "metric_refs": [
         "site_area_sqm",
         "green_ratio",
-        "public_space_ratio"
+        "public_space_ratio",
+        "planning_unit_count"
       ],
       "source_ids": [
         "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT"
@@ -531,7 +484,7 @@
         "LAND_USE_TOPOLOGY",
         "BILINGUAL_DELIVERY"
       ],
-      "evidence_summary_zh": "本项以概念性空间图层、可复算指标、双语图文成果和待补资料边界共同表达，需在官方资料到位后由专业团队复核深化。"
+      "evidence_summary_zh": "v4以指标体系、面积复算与合规矩阵为人类阅读入口，并由4个针对性空间图层和4项指标支撑；临时几何和待补专业资料仍在假设与风险门中披露。"
     },
     {
       "item_id": "risk_missing_data",
@@ -540,23 +493,20 @@
       "required": true,
       "status": "complete",
       "proposal_sections": [
-        "总体设计范围城市更新与控规深度城市设计",
-        "指标体系、面积复算与合规矩阵"
+        "风险、版权与合规说明",
+        "设计依据与资料清单"
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "geometry_refs": [
-        "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/phasing.geojson"
+        "geometry/constraints.geojson",
+        "geometry/site_boundary.geojson"
       ],
       "metric_refs": [
-        "site_area_sqm",
-        "green_ratio",
-        "public_space_ratio"
+        "public_acceptance_rate",
+        "annual_operations_cost_cny"
       ],
       "source_ids": [
         "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT"
@@ -569,7 +519,7 @@
         "LAND_USE_TOPOLOGY",
         "BILINGUAL_DELIVERY"
       ],
-      "evidence_summary_zh": "本项以概念性空间图层、可复算指标、双语图文成果和待补资料边界共同表达，需在官方资料到位后由专业团队复核深化。"
+      "evidence_summary_zh": "v4以风险、版权与合规说明为人类阅读入口，并由2个针对性空间图层和2项指标支撑；临时几何和待补专业资料仍在假设与风险门中披露。"
     }
   ]
 }

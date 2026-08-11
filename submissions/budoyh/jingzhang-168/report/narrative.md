@@ -1,30 +1,31 @@
 ---
-title: "京张168 v2.0：评审阅读索引"
+title: "京张168 v3.0：评审阅读索引"
 author_github: "budoyh"
 language: "zh"
 license: "COMMUNITY-DISPLAY-ONLY"
 ---
 
-# 京张168 v2.0：评审阅读索引
+# 京张168 v3.0：评审阅读索引
 
-本文件是派生索引，不是第二份方案正文。完整中文正文见 `proposal.md`，结构等价英文正文见 `proposal.en.md`；二者与机器可读证据冲突时，以本包 JSON、GeoJSON、更高等级来源和后续专业复核为准。
+本文件是派生阅读索引，不是第二份方案正文。完整中文正文见 `proposal.md`，结构等价英文正文见 `proposal.en.md`；若展示层与机器可读资产冲突，以本包 JSON、GeoJSON、更高等级来源及后续人工专业复核为准。
 
 ## 三分钟阅读路径
 
-1. 先看 `assets/figures/site-overview.png`：一带、三时区、六预约区段、七时间构件、十二场景节点与三处重点区。
-2. 再看 `assets/figures/metrics-evidence.png`：8状态、G0–G7、C0–C7、首个168小时和明确留白的运行结果。
-3. 打开 `visual/index.html`：从总体证据进入三项公共权利、九项目与十二周退场路径。
-4. 审阅 `drawings/a3-booklet.pdf` 前三页和 `drawings/a0-boards.pdf` 前三板：概念、七维执行摘要、总体图与运行协议在固定评审视窗内闭合。
-5. 最后用 `compliance_matrix.json`、`standard_matrix.json`、`design_depth_matrix.json` 与 `visual/assets/review-evidence-map.json` 逐项追踪任务、标准、深度和七维证据。
+1. 先看 `assets/figures/site-overview.png`：现状约9公里走廊、已开放一期、临时三层范围与三座城市站被明确分层，OSM约412.5米背景差异只披露、不替代边界。
+2. 再看 `assets/figures/key-areas.png`：众智验证园、AI原点开放换乘厅与大钟寺城市公共终点站采用三种不同剖面，而不是复制同一“AI盒子”。
+3. 看 `assets/figures/metrics-evidence.png`：12项服务合同、72个合成分支、24个停止分支、12个复原分支和0真实个人数据；现场绩效仍为 `null`。
+4. 打开 `visual/index.html`：首屏说明“公共底盘不可关闭”，并以12个稳定定位码回指任务、空间、治理、实施、指标、风险与来源证据。
+5. 审阅双语 A3 前三页与 A0 前三板：当前事实、空间总图、Layer 0/1、三站原型和运行协议均进入固定评审视窗。
+6. 最后用 `compliance_matrix.json`、`standard_matrix.json`、`design_depth_matrix.json`、`visual/assets/civic-timetable.json`、`visual/assets/timetable-tabletop-evidence.json` 与 `risk.json` 逐项复核。
 
 ## 核心判断
 
-百年京张曾以运行图组织列车；京张168把这种时间纪律转译为公开、双语、可撤回、可人工接管的城市周运行图。方案不以部署多少AI为成功，而以公共空间在一周中能否安全、安静、无障碍、可申诉地兑现，以及每个时段能否按期归还来判断。
+京张铁路曾用运行图把工程、时间和责任组织成可执行系统。v3不再把“168”当活动口号，而把它做成城市公共时刻表：现状公共路径、静态信息、遮荫座椅、纸面/电话/人工求助构成不可关闭的 Layer 0；AI服务只作为按表到站、具名人工、最小数据、可停运、可复原的 Layer 1。
 
-`public_space_weekly_sqm_hours` 是“公共空间面积 × 目标开放小时”的设计供给指数，只用于比较方案，不是客流或成效。非AI等价覆盖、人工接管成功、按期归还、恢复耗时、无障碍阻断、未授权数据事件、维护劳动时数和利益—负担分布在执行前全部保持 `unknown`。
+三站承担不同现实矛盾：众智验证园把公共观察边、限时合成测试场与隔离后勤分开；AI原点开放换乘厅把无账号前台、成果翻译工坊与知识产权/数据后室分开；大钟寺城市公共终点站把全天首层、有人柜台和与真实账户/支付隔离的合成沙盒分开。
 
-所有范围、重点区、三时区、预约段、构件和场景坐标均为临时设计定位；不得解释为官方红线、权属、审批或施工放样。法定控规、现状建筑、道路、市政、消防、文保、生态、预算、容量、SLO和运营主体未确认前，方案只能进入桌面推演和有条件的专业交接。
+`visual/assets/tabletop-runner.js --check` 对12份合同各演练6类合成分支。PASS只证明字段与失败路径闭合，不证明任何现场运营、容量、安全、授权或公共价值结果。v2的 `97M m²·h/week` 头部值已撤回；官方公园名录中的24小时开放事实只适用于现状名录对象，不外推到整个临时总体范围。
 
 ## 图像与版权边界
 
-五张中英核心图与技术PDF由本包数据确定性生成。四张 GPT Image 2 概念体验图只作 `presentation only`，逐资产提示记录和禁止用途见 `visual/assets/rights-ledger.json`；版权与许可总说明见 `report/copyright_statement.md`。
+五张中英核心证据图、双语HTML和技术PDF由本包 GeoJSON/JSON 确定性生成。三张 2026-08-11 GPT Image 2 分站点概念图均为无文字 `presentation only` 体验层；大钟寺初稿出现的伪文字已通过定点编辑清除并复核。完整提示、原始输出标识、人工检查和禁止用途见 `visual/assets/rights-ledger.json`，许可总说明见 `report/copyright_statement.md`。

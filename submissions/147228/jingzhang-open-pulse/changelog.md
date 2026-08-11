@@ -1,12 +1,56 @@
 # 方案迭代记录
 
+## v4.3 - 2026-08-11
+
+- 新增 `visual/assets/spatial-lineage-register.json`，逐项登记 9 个 GeoJSON 图层的要素数、几何类型、图层角色、临时边界状态和原始 SHA-256；新增 `run-spatial-lineage-register.js`，确定性校验图层覆盖、manifest 哈希、指标公式中的 EPSG:4548 声明与当前 GeoJSON 未嵌入 CRS 的事实。
+- 在中英文正文中增加空间图层版本与坐标基线表，明确公式中的 CRS 引用不等于坐标认证；官方边界到位后必须整体重算图层、指标、报告、图册与 HTML。
+- 将持久化 `self_check.json` 的临时边界警示与正文统一：临时几何仅支持结构化 intake 复核和人类阅读，不建立专业评分、正式接收、发布或合并资格；官方几何到位后重算并刷新 manifest 哈希。
+- 本轮不改变 GeoJSON、面积指标、来源分类、官方边界状态、现场结果或实施授权。
+
+## v4.2 - 2026-08-10
+
+- 补齐 `claim-provenance.json` 对正文可见模型输出的回读，覆盖韧性筛查与创新摩擦筛查的 22 个指标记录；每条新增包内运行器、图件、双语指标标记与“模型输出，不是现场结果”的边界。
+- 运行器现在要求 22 条记录全部存在，并对模型输出记录检查中英文边界与可重放 JSON/JS 来源，避免把自我命名的 S2 数字读成已实现绩效。
+- 中英文提案、离线 HTML 与视觉首页统一标记 v4.2；不改变 GeoJSON、面积指标、来源分类、临时边界或实施授权状态。
+
+## v4.1 - 2026-08-10
+
+- 根据评审意见收紧临时几何的状态表述。中英文提案现在只把它用于结构化 intake 复核和人类阅读，并明确专业评分、正式接收、发布与合并仍须维护者依据可信数据和正式门禁决定；同步重渲染离线 HTML 和 manifest 哈希。
+- 增加六阶段 `innovation-friction-simulation` 筛查回放，并将 idea→首次迭代、跨域匹配和社会验证指标写回中英文正文与 `metrics.json`；固定种子、三角分布和 50,000 次抽样均可由包内 Node.js runner 重放。
+- 增加 `human-capacity-gates.json` 的六道“人的承载”闸门：可负担进入、照护连续、无账号可用、夜间劳动、知识寿命和社会验证回流；全部现场结果保持 `unknown`，未知不视为通过。
+- 同步双语 proposal、离线 HTML、manifest 和版权台账；不修改 GeoJSON、正式边界、已有空间面积、官方来源分类或实施承诺。
+
+## v4.0 - 2026-08-10
+
+- 新增 `public-interest-position-register.json`，将普通公共服务、技能连续、可解释 API、清凉安静、互惠参与、可维护资产、分组差异和可撤回扩散登记为八项明确作者立场；每项绑定受影响群体、空间锚点、场景、运维包、放行证据、普通等价服务和退出条件。
+- 新增 `run-open-pulse-public-interest-positions.js` 与 `public-interest-positions-audit.json`，确定性回读 8 项取舍、14 个场景链接、8 个运维链接、10 类群体覆盖及证据文件存在性；保持 `baseline=unknown` 与 `not_authorized_not_run`，不把登记升级为调查结果、社会共识、现场绩效或部署许可。
+- 新增中英文 `public-interest-positions` 评审图，并将图、结构化登记和 runner 链入双语 proposal 与离线 visual index；不改变 GeoJSON、面积指标、来源分类、官方边界或实施承诺。
+
+## v3.9 - 2026-08-10
+
+- 把人本缓冲、城市 API 最小字段、算电协同与版本化治理前置为三处重点区的可审阅空间合同；补齐原住民/老人、被替代风险劳动者、数字包容和夜间工作者的普通服务与回退路径。
+- 以 `human-first-buffer.json`、`city-api-energy-contract.json`、`claim-provenance.json` 和双语城市 API—算电治理图补足评审可见证据；所有保留率、就业、能源、热网、低空和测试许可仍保持 unknown/待专业团队深化。
+- 只新增证据入口与离线视觉表达，不改 GeoJSON、面积指标、来源分类、官方边界状态或实施承诺；空间建议仍为概念建议/参考方案。
+
+## v3.8 - 2026-08-10
+
+- 在中英文重点区域设计入口补充三处重点区的概念 FAR、公共界面层数、首层空间动作与首要专业证据，给现有空间定位增加可比较的体量入口。
+- 明确体量范围仅用于 provisional 条件下的城市设计比较，不修改 GeoJSON、指标、图板、地标、场景或实施边界。
+- 保留导视、公共服务台、骑行驿站、遮雨、无障碍和可移动设施优先的可逆更新路径，不新增道路红线、建筑增量、拆改或许可主张。
+
 ## v3.7 - 2026-08-10
 
 - Tightened the Open Pulse negative-fixture audit so each malformed contract must fail the exact expected check IDs, not merely produce any failure.
 - Regenerated `open-pulse-scenario-audit.json`; the change remains a local structural audit and adds no field, operational, legal or deployment claim.
 - Added mirrored Chinese/English visual-index links for the S02 tabletop contract, evidence receipt and runner, so the primary offline review surface exposes the v3.6 replay without changing its `not_authorized_not_run` / `not_run` boundary.
 
-## v3.6 - 2026-08-09
+## v3.7 — 2026-08-10
+
+- Removed all concept FAR/storey ranges from the public proposal and rendered reports; the package now expresses only public-interface, reversible-service and evidence relationships.
+- Kept development-control inputs, official boundary, ownership, fire, municipal and existing-condition data as unknown/pending inputs for professional-team refinement; no numeric development or height conclusion was added.
+- Re-rendered bilingual HTML and refreshed manifest hashes. Geometry, metrics, sources, assumptions and package scope are unchanged.
+
+## v3.6 — 2026-08-09
 
 - Added four deterministic negative replays, one per S02 fixture; the runner now verifies hold/stop/withdraw/delete-temporary-state decisions as `reject_or_stop` while retaining `not_run`, `performance_results=null`, and the no-authorization boundary.
 - Added an ordinary-route control replay and a contract-level `stop_trigger_states` set; the runner now checks both rejection and non-trigger continuation instead of accepting only hard-coded positive stop flags.

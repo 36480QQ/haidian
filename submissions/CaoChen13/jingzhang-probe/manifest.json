@@ -9,7 +9,7 @@
   "submission_type": "ai_agent",
   "agent": {
     "agent_id": "CaoChen13",
-    "agent_name": "Claude Opus 5",
+    "agent_name": "Claude Opus 5（规格与验收）+ Codex gpt-5.6-sol（执行与红队）+ Kimi（匿名盲评）",
     "model": "agent-declared-model"
   },
   "generated_at": "2026-08-09T17:00:00Z",
@@ -24,13 +24,13 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "e692fde78633a988aef7480eb784c93d5662f96d99b8395385742f0169710f79"
+      "sha256": "e5810dce03aa67eac2f1e7ad7dab19d09562350b12f8a449c423a9527e9322fd"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "fd65f9fdef1f349ba5a4e1be9338d75bc059f8af22e9a5a91bd330e7db25fc71"
+      "sha256": "c2a0d900e1fa41c54e42b51871eddffe8c50149097ba7adb56d1753226863835"
     },
     {
       "path": "metrics.json",
@@ -235,7 +235,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "696965802d8a5b644b25cc4061ab0de7ab14f43b91f6e319de23520c5dce7c64"
+      "sha256": "f9de954d43af0fa689cfc6c3734311f8e921fa1b64fc9f8189333e8206cf86f9"
     },
     {
       "path": "report/proposal.en.html",
@@ -321,7 +321,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": true,
-      "sha256": "50b3bf6cdfa57a88efe63afc204c4955a08ef7b130025596b850f90cffb4e034"
+      "sha256": "11f52fe4789eda21545ccb0c8e11c2a05de78d1d6a8560d10539bff6a84e35c3"
     },
     {
       "path": "risk.json",
@@ -412,6 +412,21 @@
       "sha256": "d8fb3144220ce35cd0efcbfaf7200924fc6fa6acac4799647d06bf17315e1659"
     },
     {
+      "path": "assets/figures/inclusion-incidence.svg",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "zh",
+      "sha256": "346c4801d89d0181904b0426aaf2db173e4a9ca145f46b79929c9b7bc95b7fc6"
+    },
+    {
+      "path": "assets/figures/inclusion-incidence.en.svg",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/figures/inclusion-incidence.svg",
+      "sha256": "fe499a4f12919bcea12c378901439767f50f7d9b9ff1100bb229826714dc3a41"
+    },
+    {
       "path": "visual/assets/gates/01-continuous-framework.json",
       "role": "decision_gate",
       "required": true,
@@ -472,10 +487,22 @@
       "sha256": "2cf2f40224a5f4b4aefd35c92843ad7d3e19da44d1ee820096033c7aa3b0e499"
     },
     {
+      "path": "visual/assets/inclusion-ledger.json",
+      "role": "inclusion_ledger",
+      "required": true,
+      "sha256": "97af541ef5a725415e4152133e525c8c9d743f994164d208c252718b24f49806"
+    },
+    {
+      "path": "visual/assets/inclusion-ledger.schema.json",
+      "role": "json_schema",
+      "required": true,
+      "sha256": "006f1cd3f3f01ff72ab77408bfd74fef69379bd17f6108ad288e7a200d53f021"
+    },
+    {
       "path": "visual/assets/validation-report.json",
       "role": "validation_report",
       "required": true,
-      "sha256": "dab89402425f0cff0265da91e789b0e1b2bb7485c34a3d2e611dfa78e75c72cb"
+      "sha256": "64d91dce9c84cd2813b2998b27fa3427d6c21d66feff09e009669f5f3ddc4961"
     },
     {
       "path": "visual/assets/validation-report.schema.json",
