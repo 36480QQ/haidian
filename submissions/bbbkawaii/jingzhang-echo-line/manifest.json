@@ -216,7 +216,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "80b71cb78d2c1581fc679eb561959ac515bc8a3ff6f76c74dcc2c4e20d49b72f"
+      "sha256": "96328781ba133ecd55fc278772823fb50f97c50598908928a2b1d15499a76115"
     },
     {
       "path": "sources.json",
@@ -247,9 +247,10 @@
     }
   ],
   "validation_claim": {
-    "self_checked": false,
+    "self_checked": true,
     "known_blockers": [],
     "data_confidence": "high",
-    "boundary_status": "provisional"
+    "boundary_status": "provisional",
+    "readiness_contract": "persisted-self-check-v1"
   }
 }
