@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JINGZHANG ORIGIN RAIL: From China&#x27;s First Rail to the World&#x27;s First Intelligent Agent - proposal report</title>
+<style>
+:root {
+  --ink: #172033;
+  --muted: #667085;
+  --line: #d7dee8;
+  --paper: #ffffff;
+  --bg: #f4f7fa;
+  --accent: #245b8f;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.75;
+}
+main {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 42px 24px 72px;
+  background: var(--paper);
+  min-height: 100vh;
+  box-shadow: 0 0 0 1px rgba(23, 32, 51, 0.05);
+}
+.hero {
+  border-bottom: 3px solid var(--accent);
+  padding-bottom: 24px;
+  margin-bottom: 30px;
+}
+h1 { font-size: 34px; line-height: 1.22; margin: 0 0 10px; }
+h2 { font-size: 25px; margin: 34px 0 12px; border-top: 1px solid var(--line); padding-top: 24px; }
+h3 { font-size: 20px; margin: 26px 0 10px; }
+p, li { font-size: 16px; }
+blockquote {
+  margin: 18px 0;
+  padding: 12px 18px;
+  border-left: 4px solid var(--line);
+  color: var(--muted);
+  background: #f8fafc;
+}
+code {
+  background: #eef2f7;
+  color: #1d4f7a;
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+}
+.summary { color: var(--muted); font-size: 17px; }
+.translation-link a { color: var(--accent); font-weight: 700; }
+.proposal-table { margin: 20px 0 26px; overflow-x: auto; }
+.proposal-table table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 520px;
+  font-size: 15px;
+}
+.proposal-table th, .proposal-table td {
+  border: 1px solid var(--line);
+  padding: 9px 12px;
+  text-align: left;
+  vertical-align: top;
+  line-height: 1.6;
+}
+.proposal-table th { background: #eef2f7; color: var(--ink); font-weight: 700; }
+.proposal-table tbody tr:nth-child(even) { background: #fafcfe; }
+.proposal-table .align-center { text-align: center; }
+.proposal-table .align-right { text-align: right; }
+.proposal-figure {
+  margin: 22px 0 28px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+  background: #f8fafc;
+}
+.proposal-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.proposal-figure figcaption {
+  padding: 10px 14px;
+  color: var(--muted);
+  border-top: 1px solid var(--line);
+  font-size: 14px;
+}
+.evidence {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  margin: 0 0.12em;
+  border-bottom: 1px solid #8aa8c3;
+  color: #315f87;
+  font-size: 0.68em;
+  font-weight: 650;
+  line-height: 1.35;
+  vertical-align: super;
+}
+@media (max-width: 720px) {
+  main { padding: 26px 16px 52px; }
+  h1 { font-size: 26px; }
+  h2 { font-size: 21px; }
+}
+</style>
+</head>
+<body>
+<main>
+<section class="hero">
+<h1>JINGZHANG ORIGIN RAIL: From China&#x27;s First Rail to the World&#x27;s First Intelligent Agent</h1>
+<p class="summary">Taking the Jing-Zhang Railway as China&#x27;s first independently engineered rail, this proposal lays that spirit down as an Origin Rail for the AI era—one track linking the Compute Origin, Talent Origin, and Scene Origin, with two wings connecting Zhongguancun services and scenario enablement into an experienceable, operable, evolvable AI innovation belt.</p>
+<p class="translation-link"><a href="proposal.html">阅读中文版本</a></p>
+</section>
+<h1>JINGZHANG ORIGIN RAIL: From China&#x27;s First Rail to the World&#x27;s First Intelligent Agent</h1>
+<h2>Design Basis and Source List</h2>
+<p>This proposal takes the Haidian Branch of the Beijing Municipal Commission of Planning and Natural Resources&#x27; &quot;Open Call for International Urban Design of the Centennial Jing-Zhang AI Innovation Belt—Prequalification Announcement&quot; as its primary authority, defining the three scope levels, three key areas, design tasks, and deliverable context <code>[standard:PROJECT-OFFICIAL-ANNOUNCEMENT]</code>. The open-call taskbook for global intelligent agents supplements this with the three positionings, five functions, three areas and two wings, and six required tasks <code>[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]</code>. Land-use classification, urban design, and regulatory-planning contexts follow the Ministry of Natural Resources&#x27; Land Use and Sea Use Classification Guide, MOHURD&#x27;s Urban Design Measures, and the Measures on the Preparation and Approval of Regulatory Detailed Planning <code>[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]</code> <code>[standard:MOHURD-URBAN-DESIGN-MEASURES]</code> <code>[standard:MOHURD-CONTROL-DETAILED-PLANNING]</code>.</p>
+<p>Because no official precise boundary polygon has been published, this proposal uses the maintainer-provided provisional boundaries in <code>brief/site-package/geometry/provisional_boundaries.geojson</code> as the basis for generation, display, and self-check <code>[source:BOUNDARY-SOURCE]</code>. Recomputed in EPSG:4548, the provisional areas deviate from the announced values by less than 0.5%, but they serve only as placeholders and must not be treated as an official redline or precise area basis; all layers and metrics must be recomputed when official data is released <code>[source:KEY-AREA-SOURCE]</code>. Geometry, metrics, and figures are all derived from the same GeoJSON set, so the evidence chain is reproducible.</p>
+<p>Complete sources, metrics, standards, design depth, and task coverage are kept in <code>sources.json</code>, <code>metrics.json</code>, <code>compliance_matrix.json</code>, <code>standard_matrix.json</code>, and <code>design_depth_matrix.json</code>; prose keeps only claim-adjacent evidence anchors <code>[source:SITE-PACKAGE]</code>.</p>
+<figure class="proposal-figure"><img src="../assets/figures/site-overview.en.png" alt="Evidence chain and submission package diagram"><figcaption>Evidence chain and submission package diagram</figcaption></figure>
+<h2>Three-Level Scope Framework</h2>
+<p>The proposal follows the announcement&#x27;s three scope levels: the <strong>coordinated research area</strong> of about 43.6 km² (north to North 5th Ring Road, east to Jingzang Expressway, south to Xizhimen Outer Street, west to Wanquanhe Road) guides industrial strategy, AI ecosystem, and future-city research without setting construction metrics <code>[source:OFFICIAL-ANNOUNCEMENT]</code>; the <strong>overall design area</strong> of about 11.4 km² covers the urban and industrial districts within 1–2 km of the Jing-Zhang Heritage Park and reaches urban-design depth at the regulatory-planning level; the <strong>key detailed-design area</strong> totals about 368.4 ha, comprising the Zhongzhiyuan AI Acceleration Area, the Beijing AI Origin Community, and the Dazhongsi AI Industry Cluster, each designed in detail <code>[metric:site_area_sqm]</code> <code>[metric:key_detailed_area_total_sqm]</code>.</p>
+<p>The three levels transfer through a &quot;strategy–structure–node&quot; cascade: the research level sets the overall spatial strategy of &quot;one track, three origins, two wings&quot;; the overall level resolves strategy into land use, public space, slow-traffic, and character structure <code>[data:geometry/land_use.geojson#LU-jingzhang_corridor]</code>; and the key-area level focuses on buildings, plazas, and scenarios. All layers derive from provisional boundaries; if official polygons replace them, all metrics and figures including area, green ratio, and public-space ratio must be recomputed and re-self-checked <code>[depth:three_scope_framework]</code>.</p>
+<figure class="proposal-figure"><img src="../assets/figures/land-use-structure.en.png" alt="Three-level scope and spatial working framework"><figcaption>Three-level scope and spatial working framework</figcaption></figure>
+<h2>Coordinated Research Area: Industry and Future City Research</h2>
+<h3>Belt Concept: JINGZHANG ORIGIN RAIL</h3>
+<p>This proposal names the belt <strong>京张初轨 / ORIGIN RAIL</strong>. The concept comes from the coincidence of two origins: a century ago, the Jing-Zhang Railway was the first mainline railway designed and built independently by Chinese engineers—an &quot;origin rail&quot; of national engineering autonomy; today, Haidian is building the AI Origin Community, where intelligent agents participate in real urban planning for the first time. Joining these two origins on one track yields the proposal&#x27;s core proposition—<strong>from China&#x27;s first rail to the world&#x27;s first intelligent agent</strong> <code>[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]</code> <code>[depth:naming_identity]</code>.</p>
+<p><strong>Naming system</strong> uses the &quot;Origin × Element&quot; two-tier structure:</p>
+<ul>
+<li>Belt brand: ORIGIN RAIL (symbol O·R).</li>
+<li>Three origin sub-brands: <strong>ORIGIN COMPUTE</strong> (Zhongzhiyuan), <strong>ORIGIN TALENT</strong> (AI Origin Community), <strong>ORIGIN SCENE</strong> (Dazhongsi), corresponding to AI&#x27;s compute, talent, and scenario origins.</li>
+<li>The unified logic of &quot;Origin + Element&quot; implies three origins growing on the same Origin Rail, echoing railway mileage while fitting the open-source spirit of starting from zero.</li>
+</ul>
+<p><strong>Logo and visual identity</strong>: the motif is a &quot;zero-kilometer milestone + rail-head section&quot;—a &quot;0&quot; pierced by a rail that extends into the horizon inside the zero, meaning everything starts at the origin. The palette uses &quot;steel-rail grey, signal red, data cyan&quot;: steel grey for heritage and rationality, signal red from the railway&#x27;s &quot;departure&quot; signal, and data cyan for AI and open source. The graphic system extends at 45° bevels and a 1:1.618 ratio, scalable to signage, events, digital interfaces, and public installations <code>[depth:logo_or_visual_identity]</code>.</p>
+<h3>Five Functions and the Three-Areas-Two-Wings Feedback Loop</h3>
+<p>Targeting the five functions—full-stack independent AI innovation, a world-class AI ecosystem, a new AI+ scenario-enablement paradigm, an intelligent vibrant AI city, and global voice in AI governance <code>[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]</code>—the proposal builds a design loop: <strong>Compute Origin supplies compute and foundation models → Talent Origin supplies talent and community → Scene Origin supplies scenarios and conversion → the two wings feed Zhongguancun&#x27;s capital and IP and Xiaoyuehe&#x27;s scenario trials back to the three origins</strong>, forming a closed &quot;factor–R&amp;D–incubation–conversion&quot; loop <code>[depth:ecosystem_cases]</code>. This matches the announced three-areas-two-wings framework and spatially maps to the &quot;one track, three origins, two wings, two corridors&quot; structure.</p>
+<h3>Global AI Ecosystem Cases (6)</h3>
+<div class="proposal-table"><table><thead><tr><th>Case</th><th>Location</th><th>Transferable lesson</th></tr></thead><tbody><tr><td>Kendall Square</td><td>Boston, USA</td><td>A ten-minute &quot;research–conversion&quot; circle of universities, hospitals, incubators, and metro exits, mapping the Talent Origin&#x27;s academy-industry integration</td></tr><tr><td>one-north</td><td>Singapore</td><td>Vertical mixed-use &quot;one park, many functions&quot; and greenway links, mapping mixed functions and boundary-free public space</td></tr><tr><td>King&#x27;s Cross</td><td>London, UK</td><td>Railway-heritage redevelopment into an innovation quarter where a steam-era station and startups coexist, directly mapping Jing-Zhang heritage activation</td></tr><tr><td>Future Sci-Tech City</td><td>Hangzhou, China</td><td>Anchor enterprise + policy trial + scenario opening as a triad, mapping the Zhongzhiyuan ecosystem organization</td></tr><tr><td>Nanshan District</td><td>Shenzhen, China</td><td>Patient capital linking tech services to hard-tech, mapping the Zhongguancun services wing&#x27;s capital mechanism</td></tr><tr><td>Digital Media City</td><td>Seoul, Korea</td><td>Media/content industry plus large-scale public event operations, mapping the Scene Origin&#x27;s event system and global communication</td></tr></tbody></table></div>
+<p>These cases are not copied directly but converted into spatial, operational, and scenario mechanisms: spatially, a continuous mixed belt of &quot;universities–parks–communities&quot; along the track; operationally, ecological-niche complementarity of &quot;anchor enterprise + open-source community + government trial&quot;; scenariowise, experienceable, demonstrable, and scalable AI public services implemented first <code>[source:AGENT-TASKBOOK]</code>.</p>
+<h2>Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design</h2>
+<h3>Spatial Structure: One Track, Three Origins, Two Wings, Two Corridors</h3>
+<p>The overall design structure is <strong>&quot;one track, three origins, two wings, two corridors&quot;</strong>: the <strong>track</strong> is the north–south &quot;Origin Rail&quot; cultural-green corridor along the Jing-Zhang Heritage Park, the public spine linking the three origins <code>[data:geometry/green_space.geojson#GS-00]</code>; the <strong>three origins</strong> are the compute, talent, and scene origins; the <strong>two wings</strong> are the western wing taking on Zhongguancun tech services and the eastern wing linking Xiaoyuehe scenario enablement; the <strong>two corridors</strong> are the blue-green slow-traffic corridors along Qinghe in the north and Xiaoyuehe in the south. Land use follows a &quot;track-first, corridor-green, two-wings-mixed&quot; logic <code>[data:geometry/land_use.geojson#LU-jingzhang_corridor]</code> <code>[data:geometry/land_use.geojson#LU-zhongzhiyuan_innovation]</code>.</p>
+<h3>Functional Structure and Renewal Framework</h3>
+<ul>
+<li><strong>Research land</strong> about 348 ha (31%), concentrated in Zhongzhiyuan and the western wing for basic research, foundation models, and independent innovation <code>[metric:land_use_research_sqm]</code>.</li>
+<li><strong>Commercial land</strong> about 288 ha (25%), concentrated in the AI Origin Community and Dazhongsi for mixed formats and scenario commerce <code>[metric:land_use_commercial_sqm]</code>.</li>
+<li><strong>Green and open space</strong> about 370 ha (32%), framed by the Origin Rail and supplemented by reserved-green additions into a continuous green network <code>[metric:green_space_area_sqm]</code>.</li>
+<li><strong>Education land</strong> about 42 ha, <strong>residential land</strong> about 30 ha, and <strong>reserved land</strong> about 64 ha support university synergy, talent housing, and green reservation <code>[metric:land_use_education_sqm]</code> <code>[metric:land_use_residential_sqm]</code>.</li>
+</ul>
+<p>Renewal follows an overall &quot;retain-first, renew-secondary, modest new-build&quot; framework: the corridors mainly target existing institutional compounds and communities through wall-opening, public-space weaving, and functional conversion; core start-up areas at the three origins allow conceptual new-build, but all massing, height, and retain/renovate/demolish judgments are labeled <strong>conceptual suggestions</strong> and are not stated as approved conclusions until regulatory conditions are provided <code>[standard:MOHURD-CONTROL-DETAILED-PLANNING]</code> <code>[depth:building_massing]</code>. All land-use areas are reproducible in <code>geometry/land_use.geojson</code> under EPSG:4548 <code>[depth:land_use_layout]</code>.</p>
+<h2>Detailed Design of Key Areas</h2>
+<h3>Origin Compute: Zhongzhiyuan AI Acceleration Area (about 192.1 ha)</h3>
+<p><strong>Positioning</strong>: full-stack independent AI innovation and open-compute origin. <strong>Structure</strong>: three groups—&quot;compute heart, open workshop, lake-bay living room&quot;—spread along the track, centered on the <strong>Compute Origin Plaza</strong>, surrounded by compute centers, foundation-model labs, and open-source model workshops <code>[data:geometry/key_areas.geojson#KEY-ZHONGZHIYUAN]</code>. <strong>Building renewal</strong>: existing industrial and research compounds mainly convert function and add floors; conceptual new-build at the start-up area favors AI R&amp;D, labs, and incubators, with about 33 ha of building footprint <code>[metric:land_use_research_sqm]</code>. <strong>Mobility</strong>: seamless &quot;track–building–plaza&quot; pedestrian links via the Qinghe corridor and transit. <strong>AI scenarios</strong>: compute reservation, open-source model deployment experiments, and agent training sandboxes. <strong>Risk</strong>: compute infrastructure demands high investment and power load requiring professional assessment; this proposal gives only conceptual direction <code>[standard:MOHURD-URBAN-DESIGN-MEASURES]</code>.</p>
+<h3>Origin Talent: Beijing AI Origin Community (about 104.3 ha)</h3>
+<p><strong>Positioning</strong>: the &quot;origin&quot; of AI talent and innovation community. <strong>Structure</strong>: based on the university district around Wudaokou, a compact &quot;block + lane&quot; neighborhood centered on the <strong>Talent Origin Plaza</strong>, mixing residential, commercial, cultural, and shared-office uses <code>[data:geometry/key_areas.geojson#KEY-ORIGIN]</code>. <strong>Building renewal</strong>: dominated by micro-renewal of existing communities and street-commerce activation; talent apartments, mixed-use, and cultural display are conceptual new-build directions. <strong>Mobility</strong>: repair slow-traffic gaps between the university district and transit, with a youth-friendly pedestrian street. <strong>AI scenarios</strong>: public AI education, young-developer residency, and community AI convenience stations. <strong>Risk</strong>: complex existing ownership requires extensive public participation; public-space weaving should go first <code>[standard:BARRIER-FREE-ENVIRONMENT-LAW]</code>.</p>
+<h3>Origin Scene: Dazhongsi AI Industry Cluster (about 72.0 ha)</h3>
+<p><strong>Positioning</strong>: intelligent-native new formats and scenario-conversion origin. <strong>Structure</strong>: centered on the <strong>Scene Origin Plaza</strong>, a &quot;consumption × business × trial&quot; mixed area anchored at Dazhongsi station, with underground links connecting the station and core blocks <code>[data:geometry/key_areas.geojson#KEY-DZS]</code>. <strong>Building renewal</strong>: dominated by commercial-complex renewal and office upgrading, featuring intelligent-native consumption, robot delivery, and autonomous shuttles <code>[metric:land_use_commercial_sqm]</code>. <strong>Mobility</strong>: transit-oriented development where bus and autonomous shuttle complement each other. <strong>AI scenarios</strong>: robot-delivery pilots, unmanned retail, and AI merchandising. <strong>Risk</strong>: station passenger flow and commercial mix must be balanced; unmanned operations require low-speed regulation and human review, all expressed as pilots <code>[standard:GENERATIVE-AI-INTERIM-MEASURES]</code>.</p>
+<p>The three origins together form a closed &quot;compute–talent–scene&quot; loop; their spatial placement comes from <code>geometry/key_areas.geojson</code> and is annotated with provisional precision limits in the figures <code>[depth:key_areas]</code>.</p>
+<figure class="proposal-figure"><img src="../assets/figures/key-areas.en.png" alt="Key area index and design tasks"><figcaption>Key area index and design tasks</figcaption></figure>
+<h2>AI Innovation Ecosystem, Personas, and AI+ Scenarios</h2>
+<h3>Five User Personas</h3>
+<div class="proposal-table"><table><thead><tr><th>Persona</th><th>Needs</th><th>Corresponding scenarios</th></tr></thead><tbody><tr><td>AI researcher</td><td>compute, data, peer exchange, quiet research</td><td>Origin Compute open workshop, open-source model display</td></tr><tr><td>Startup founder</td><td>incubation, capital, scenario validation, customers</td><td>Zhongguancun services wing, Scene Origin pilots</td></tr><tr><td>Student/developer</td><td>learning, internships, hackathons, low-barrier tools</td><td>Talent Origin youth block, developer walk</td></tr><tr><td>Commuter/resident</td><td>convenience, safety, accessibility, community services</td><td>AI traffic, AI health navigation, robot delivery</td></tr><tr><td>Tourist/senior</td><td>guides, age-friendly services, cultural experience</td><td>AI cultural guide, AI convenience services</td></tr></tbody></table></div>
+<h3>AI Scenario Cards (12)</h3>
+<div class="proposal-table"><table><thead><tr><th>ID</th><th>Scenario</th><th>Spatial anchor</th><th>Data/privacy boundary</th><th>Human review</th></tr></thead><tbody><tr><td>SC-01</td><td>AI cultural guide</td><td>Origin Rail</td><td>public heritage materials</td><td>script review</td></tr><tr><td>SC-02</td><td>AI traffic/walkability assessment</td><td>along the track</td><td>public road data/authorized feedback</td><td>signal joint-test review</td></tr><tr><td>SC-03</td><td>AI health service navigation</td><td>Talent Origin</td><td>de-identified data</td><td>medical gatekeeping</td></tr><tr><td>SC-04</td><td>Enterprise service Copilot</td><td>western services belt</td><td>enterprise-authorized data</td><td>compliance review</td></tr><tr><td>SC-05</td><td>Low-speed robot delivery</td><td>Dazhongsi pilot</td><td>no facial capture</td><td>operation monitoring</td></tr><tr><td>SC-06</td><td>Public-safety operations review</td><td>large events</td><td>cameras only in authorized zones</td><td>human review loop</td></tr><tr><td>SC-07</td><td>AI education open class</td><td>Talent Origin youth block</td><td>public education content</td><td>faculty review</td></tr><tr><td>SC-08</td><td>Open compute reservation</td><td>Zhongzhiyuan</td><td>account-based billing</td><td>platform review</td></tr><tr><td>SC-09</td><td>Agent training sandbox</td><td>Zhongzhiyuan</td><td>sandbox isolation</td><td>release review</td></tr><tr><td>SC-10</td><td>Autonomous shuttle demo</td><td>three-origin loop</td><td>de-identified location data</td><td>safety attendant</td></tr><tr><td>SC-11</td><td>AI merchandising and flow optimization</td><td>Dazhongsi commerce</td><td>aggregate statistics</td><td>merchant confirmation</td></tr><tr><td>SC-12</td><td>Accessible AI convenience station</td><td>public nodes</td><td>minimum necessary</td><td>age-friendly specialist review</td></tr></tbody></table></div>
+<p>SC-05, SC-08, and SC-10 are <strong>industry test/validation scenarios</strong>, expressed strictly as pilots, demos, or tests, and are not claimed as approved operations <code>[source:AGENT-TASKBOOK]</code> <code>[depth:test_scenarios]</code>. Each card&#x27;s users, operating data, privacy boundaries, operator, and risks are traceable in the standard scenario library and the proposal, following minimum-necessary-data and human-review principles <code>[standard:GENERATIVE-AI-INTERIM-MEASURES]</code>.</p>
+<h2>Land Use, Building Scale, and Retain-Renovate-Demolish Strategy</h2>
+<ul>
+<li><strong>Land scale</strong>: about 1,141 ha total, with research 348 ha, commercial 288 ha, green 370 ha, education 42 ha, residential 30 ha, and reserved 64 ha, all recomputed from <code>geometry/land_use.geojson</code> under EPSG:4548 <code>[metric:site_area_sqm]</code> <code>[depth:land_use_layout]</code>.</li>
+<li><strong>Building scale</strong>: the proposal gives a <strong>conceptual footprint</strong> of about 100 ha and 18 conceptual building groups as massing illustrations, explicitly not statutory controls; FAR, height, density, and approved green ratio are marked <code>status=unknown</code> pending official regulatory conditions and engineering data <code>[metric:building_footprint_area_sqm]</code> <code>[depth:building_massing]</code>.</li>
+<li><strong>Retain/reuse/demolish logic</strong>: retaining existing university compounds and community fabric, four strategies are proposed—&quot;open walls to green, convert function, weave renewal, start-up new-build&quot;—with parcel-level conclusions left to professional teams based on ownership and engineering conditions <code>[standard:MOHURD-CONTROL-DETAILED-PLANNING]</code>.</li>
+</ul>
+<h2>Transport, Rail, Municipal Infrastructure, and Public Services</h2>
+<ul>
+<li><strong>Road micro-circulation</strong>: while retaining existing arterials and expressways, conceptually densify secondary roads and branches by about 18.3 km, prioritizing east–west links between the three origins <code>[metric:road_network_length_m]</code> <code>[data:geometry/roads.geojson#RD-SPINE-01]</code>.</li>
+<li><strong>Transit-station integration</strong>: along the Origin Rail, propose &quot;track–slow-traffic–building&quot; integration at Zhongzhiyuan, Wudaokou/Qinghua East Road, and Dazhongsi transfer nodes as a conceptual suggestion.</li>
+<li><strong>Slow-traffic system</strong>: build the Origin Rail plus Qinghe/Xiaoyuehe corridors into a continuous slow-traffic network, repairing gaps at Xueyuan Road and Xitucheng Road and completing accessible routes <code>[standard:BARRIER-FREE-ENVIRONMENT-LAW]</code> <code>[data:geometry/green_space.geojson#GS-00]</code>.</li>
+<li><strong>Municipal and new infrastructure</strong>: explore heat recovery from compute centers, distributed energy, and edge-compute boxes along the track as conceptual directions; formal capacity needs professional assessment.</li>
+<li><strong>Public services</strong>: place innovation service desks, talent-housing amenities, community AI convenience stations, and accessible service points into a 15-minute innovation living circle <code>[depth:mobility_network]</code>.</li>
+</ul>
+<figure class="proposal-figure"><img src="../assets/figures/mobility-bluegreen.en.png" alt="Mobility and blue-green public-space composite system"><figcaption>Mobility and blue-green public-space composite system</figcaption></figure>
+<h2>Blue-Green Network, Public Space, and Urban Character</h2>
+<p>The <strong>Origin Rail</strong> is the blue-green spine: along the heritage park, three public-space components—the <strong>Developer Walk</strong>, the <strong>Open-Source Achievement Gallery</strong>, and the <strong>Agent Contribution Honor Wall</strong>—form a continuous open space that is walkable, displayable, and commemorative <code>[data:geometry/green_space.geojson#GS-00]</code> <code>[depth:landmark_system]</code>. The three <strong>origin plazas</strong> (Compute, Talent, Scene) act as public living rooms hosting events, exhibitions, and daily exchange <code>[metric:public_space_area_sqm]</code>.</p>
+<p><strong>AI pilgrimage landmarks (3)</strong>: 1. <strong>Jing-Zhang Zero-Kilometer Milestone</strong>—at the head of the Origin Rail, a &quot;0&quot;-shaped metal installation commemorating the origin of autonomous innovation and agent contributors, with the stele engraved yearly with outstanding contributions, echoing &quot;making this itself a MileStone.&quot; 2. <strong>Open-Source Achievement Gallery</strong>—along the Developer Walk, a permanent public exhibition dynamically showing global open-source projects and agent proposals. 3. <strong>Agent Contribution Honor Wall</strong>—combined with the Talent Origin Plaza, recording via stele and digital screens the first agents and contributors to participate in real urban design.</p>
+<p><strong>City character</strong>: the &quot;steel-rail grey, signal red, data cyan&quot; palette establishes overall coordination; building massing steps down toward the track, roofs encourage photovoltaics and terrace gardens; character control is conceptual guidance, with formal height/massing controls pending regulatory conditions <code>[standard:MOHURD-URBAN-DESIGN-MEASURES]</code> <code>[depth:blue_green_space]</code>.</p>
+<h2>Renewal Projects, Implementation Policy, and Phasing</h2>
+<p><strong>Near-term (2026–2028)</strong>: start the three origin plazas and the Zero-Kilometer Milestone, repair Origin Rail slow-traffic gaps, and launch AI guide plus three test-validation pilots <code>[data:geometry/phasing.geojson#PH-phase1]</code>. <strong>Mid-term (2028–2031)</strong>: advance the Open-Source Achievement Gallery, Developer Walk completion, Origin Compute open workshop, and robot-delivery pilot expansion <code>[data:geometry/phasing.geojson#PH-phase2]</code>. <strong>Long-term (2031+)</strong>: complete reserved-green additions, two-wing linkage, and the full slow-traffic network into a sustainable Origin Rail ecology <code>[data:geometry/phasing.geojson#PH-phase3]</code> <code>[depth:phasing_strategy]</code>.</p>
+<p><strong>Long-term operations: Origin Rail operation system</strong>—①Annual events: each September the <strong>Origin Rail Festival</strong>, including an open-source competition, agent achievement exhibition, developer hackathon, and public experience day; ②Brand and communication: unify event materials with the ORIGIN RAIL visual system via GitHub, open-source communities, and international developer media; ③Developer community: establish the &quot;Origin Rail Developer Alliance&quot; with contribution-credit points accumulating into a public knowledge base; ④Scenario-open operation: a closed &quot;open application–pilot–evaluation–scale-up&quot; loop inviting enterprises and research institutes; ⑤International outreach: use the world-first event of agents participating in real urban design as the narrative anchor to reach international developers and AI communities. All events, investment, funding, and policy arrangements are <strong>conceptual suggestions and deepening directions</strong>, not confirmed government arrangements <code>[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]</code> <code>[depth:operation_system]</code>.</p>
+<h2>Metrics, Area Recalculation, and Compliance Matrix</h2>
+<p>Core indicators and their meaning: <strong>green ratio 32.4%</strong> supports the public environment quality of &quot;youth-friendly + green reservation&quot; <code>[metric:green_ratio]</code>; <strong>public-space ratio 4.6%</strong> secures space for innovation exchange and events <code>[metric:public_space_ratio]</code>; <strong>research land 31%</strong> responds to the spatial support for full-stack AI innovation <code>[metric:land_use_research_sqm]</code>; <strong>three key areas totaling 369.3 ha</strong> fulfill the announced area constraint <code>[metric:key_detailed_area_total_sqm]</code>. All indicators are reproducible in <code>geometry/*.geojson</code> under EPSG:4548, with formulas and confidence in <code>metrics.json</code> <code>[depth:metrics_recalc]</code>. Building-control indicators (FAR, height, density, approved green ratio) are recorded as pending per the announcement and planning limits; see <code>status=unknown</code> items in <code>metrics.json</code>.</p>
+<p>Announcement tasks and agent.1–agent.6 are covered item by item in <code>compliance_matrix.json</code>; standard responses in <code>standard_matrix.json</code>; design depth in <code>design_depth_matrix.json</code>; the evidence chain is fully traceable <code>[source:SITE-PACKAGE]</code>.</p>
+<figure class="proposal-figure"><img src="../assets/figures/metrics-evidence.en.png" alt="Core metrics and evidence chain"><figcaption>Core metrics and evidence chain</figcaption></figure>
+<h2>Risk, Copyright, and Compliance Statement</h2>
+<p>This proposal uses only the official announcement, taskbook excerpts, public materials, and maintainer-provided provisional boundaries; no non-public planning drawings, internal indicators, or personal data are used. Citations and generated content register source, use, and restrictions in <code>sources.json</code> and <code>report/copyright_statement.md</code> <code>[source:SOURCE-REGISTRY]</code>. All spatial, operational, branding, and policy mechanisms are expressed as &quot;conceptual suggestions / reference schemes / material for professional teams to deepen,&quot; not as statutory planning, approval, or implementation commitments. AI-generated content is the author&#x27;s responsibility for facts and expression; judgments touching heritage, green space, blue lines, and traffic safety are raised for professional review. Full copyright and compliance statement is in <code>report/copyright_statement.md</code> <code>[depth:metrics_recalc]</code>.</p>
+<h2>References</h2>
+<p>The following is the list of public and cleared materials cited in this proposal; the full registry and source notes are in <code>sources.json</code> <code>[source:SITE-PACKAGE]</code>.</p>
+<p>1. Haidian Branch, Beijing Municipal Commission of Planning and Natural Resources, &quot;Prequalification Announcement for the International Open Call for Urban Design of the Centennial Jing-Zhang AI Innovation Belt&quot; (published 2026-05-09). 2. &quot;Taskbook Excerpt for the Open Call for Global Agents on the Centennial Jing-Zhang AI Innovation Belt&quot; (user-provided cleared material; repository keeps a structured excerpt). 3. Haidian Branch, Beijing Municipal Commission of Planning and Natural Resources: public materials on the Jing-Zhang Railway Heritage Park and its corridor. 4. Ministry of Natural Resources, &quot;Land Use and Sea Use Classification Guide for Territorial Spatial Survey, Planning, Use Control (Trial).&quot; 5. MOHURD, &quot;Urban Design Measures.&quot; 6. MOHURD, &quot;Measures on the Preparation and Approval of Regulatory Detailed Planning for Cities and Towns.&quot; 7. &quot;Law of the PRC on Building a Barrier-Free Environment.&quot; 8. &quot;Interim Measures for the Administration of Generative AI Services&quot; (Cyberspace Administration of China and six other departments). 9. Publicly released industry and population statistics of the National Bureau of Statistics and Haidian District. 10. Repository <code>brief/site-package/geometry/provisional_boundaries.geojson</code> and its <code>provisional_boundaries_basis.md</code> derivation notes. 11. open-city-ai/haidian repository <code>data/source_registry.json</code> public-source registry. 12. Public case materials on Kendall Square, one-north, King&#x27;s Cross, Hangzhou Future Sci-Tech City, and other innovation districts.</p>
+</main>
+</body>
+</html>
