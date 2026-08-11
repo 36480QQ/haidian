@@ -2,6 +2,17 @@
   "schema_version": "0.1.0",
   "sources": [
     {
+      "id": "ISSUE-1029",
+      "title": "Repository Issue #1029: provisional PROV-KEY-003 location cross-check",
+      "publisher": "open-city-ai/haidian community contributors",
+      "url": "https://github.com/open-city-ai/haidian/issues/1029",
+      "source_type": "repository_public_discussion",
+      "accessed_date": "2026-08-12",
+      "usage": "Disclose the reproducible mismatch between the provisional polygon and the Dazhongsi station name; no official or canonical geometry replacement is inferred.",
+      "license_summary": "Public GitHub discussion cited minimally with attribution.",
+      "limitations": "Community calculations, not an organizer-issued boundary or approval; the package must not self-shift geometry."
+    },
+    {
       "id": "SITE-PACKAGE",
       "path": "brief/site-package/",
       "source_type": "official_public",
