@@ -205,6 +205,28 @@ Blue-green spaces include the Jingzhang Heritage Park core green belt, protectiv
 
 All landmarks are conceptual suggestions requiring deepening after heritage protection, aviation, and landscape control conditions are confirmed [standard:MOHURD-URBAN-DESIGN-MEASURES].
 
+## Centennial Jing-Zhang, Zhongguancun, and AI New Culture Narrative
+
+### Jing-Zhang Railway Historical Cultural Resource System
+
+The Jing-Zhang Railway is the first trunk line independently designed and built by Chinese people, led by Zhan Tianyou. The proposal takes its century-old heritage as the cultural narrative spine [source:official-announcement]. Core cultural resources include: the former Tsinghuayuan Station site (a witness to the "march to Beijing" red history), Jing-Zhang Railway Heritage Park Phase I (the opened 2.5 km, 16.8 ha heritage corridor), and the industrial relics and railway bridges along the line [source:agent-taskbook]. These resources connect the cultural spine from the North Fifth Ring to Beijing North Railway Station, forming the physical carrier of the proposal's "Jing-Zhang Memory Corridor."
+
+### Three-Layer Cultural Fusion Narrative
+
+The proposal presents a "railway culture — innovation culture — AI new culture" three-layer narrative fusion: the first layer takes Zhan Tianyou's spirit of independent railway-building as the historical origin, the second layer takes Zhongguancun's evolution from an electronics street to a science city as the innovation thread, and the third layer takes the "Urban Agent" of the AI era as the new cultural form [source:agent-taskbook]. The narrative does not treat culture as technological decoration or slogan, but makes the historical, contemporary, and future layers walkable, perceptible, and tellable in space.
+
+### Cultural Tour Route and Spatial Narrative Spine
+
+The proposal designs a "Centennial Spine Cultural Tour Line" along the Jing-Zhang Heritage Park slow-mobility axis: the northern Zhongzhiyuan "Innovation Origin Plaza" narrates Zhongguancun's innovation history, the central AI Origin Community "Tsinghuayuan Memory Node" combines the former station site to narrate railway and red culture, and the southern Dazhongsi "AI Valley Eye Plaza" narrates industrial upgrading and AI new culture [data:geometry/public_space.geojson#PS-001]. The three segments are linked by unified signage, in-ground historical timelines, and AR narrative trigger points, forming a walkable, experienceable continuous narrative [depth:blue_green_public_space].
+
+### Signage, Symbols, and Wayfinding System Direction
+
+The cultural signage system is used distinctly from the overall brand Logo: the overall Logo ("rail + neural network" motif) serves brand identity, while the cultural signage system serves placemaking narrative. Directions include: ground paving patterns modularized by railway gauge and sleeper spacing, wayfinding typography derived from station nameplate fonts, and node identifiers using Zhan Tianyou's hand-drawn route maps as visual elements [source:agent-taskbook]. All signage is conceptual direction requiring deepening after heritage protection and trademark authorization clearance, without using unauthorized portraits, trademarks, or copyrighted materials [standard:GENERATIVE-AI-INTERIM-MEASURES].
+
+### International Communication Narrative
+
+The proposal uses "one railway, one century, one AI city" as its international communication thread, transforming the Jing-Zhang Railway from industrial heritage into a humanistic narrative for global AI developers. The three pilgrimage landmarks (AI Origin Lighthouse, Jing-Zhang Memory Dome, Dazhongsi AI Valley Eye) serve as both urban nodes and visual anchors for international communication, helping overseas audiences understand the dialogue between "Centennial Jing-Zhang" and "AI Origin" [source:agent-taskbook].
+
 ## Renewal Project List, Implementation Policy, and Phasing Plan
 
 ### Phased Implementation
@@ -217,7 +239,23 @@ The proposal is implemented in three phases [data:geometry/phasing.geojson]:
 
 ### Global AI Innovation Activity System
 
-The proposal presents an annual activity system: Spring "AI Origin Forum," Summer "Jingzhang AI Marathon," Autumn "Zhongguancun AI Industry Summit," Winter "AI City Experience Festival." The activity brand uses "AI Origin" as the core IP, supported by developer community operations and scenario open operation mechanisms [source:agent-taskbook].
+The proposal presents a "four seasons, four festivals" annual activity system: Spring "AI Origin Forum" (academic and industry dialogue), Summer "Jing-Zhang AI Marathon" (developer and scenario co-creation), Autumn "Zhongguancun AI Industry Summit" (industrial transformation and investment attraction), Winter "AI City Experience Festival" (public participation and urban experience). The activity brand uses "AI Origin · Jingzhang Spine" as its core IP, forming a recognizable, continuable annual rhythm [source:agent-taskbook].
+
+### Developer Community Operation Mechanism
+
+The proposal outlines an "AI Origin Developer Community" operation: anchored physically in the three areas, establishing shared computing power, data-compliance sandboxes, an open-source achievement gallery, and an agent contribution honor wall [source:agent-taskbook]. Mechanisms include: honor points accumulated by contribution (linked to the agent honor wall), quarterly open-source achievement reviews, and annual Milestone engraving candidate nominations. These mechanisms aim to convert one-time events into sustained developer participation, rather than mere promotional slogans [depth:phasing_implementation].
+
+### AI Scenario Open Operation
+
+Scenario open operation turns the 12 scenario cards from "design concepts" into an operable loop of "applicable, testable, and exitable" [source:agent-taskbook]. Directions include: a scenario opportunity list (publicly disclosing test conditions, data boundaries, and evaluation standards to enterprises and teams), a scenario trial admission and exit mechanism, and a human review and public safety review process. Scenario opening must not describe test scenarios as approved operations, nor use non-public data or designated vendors as required conditions [standard:GENERATIVE-AI-INTERIM-MEASURES].
+
+### Public Experience Routes
+
+The proposal designs three public experience routes connecting the three-area landmarks: the northern "Innovation Acceleration Journey" (Zhongzhiyuan Computing Center — AI Origin Lighthouse), the central "Centennial Jing-Zhang Memory Journey" (Tsinghuayuan Memory Node — Jing-Zhang Memory Dome), and the southern "Smart Life Experience Journey" (Dazhongsi Experience Center — AI Valley Eye) [data:geometry/public_space.geojson]. The three routes are linked by the slow-mobility axis, offering differentiated AI city experiences for residents, visitors, and international tourists [depth:phasing_implementation].
+
+### International Communication and Investment Conversion Mechanism
+
+International communication uses the annual forums, marathons, and experience festivals as nodes, complemented by the English display site, overseas developer community engagement, and international media narratives to raise global awareness of the belt [source:agent-taskbook]. The investment conversion pathway includes: attracting teams to settle via scenario trials, lowering innovation costs via computing power and data sandboxes, and accumulating long-term brand assets through the honor system and annual events. All investment, policy, and funding arrangements are conceptual suggestions and are not expressed as confirmed government commitments or investment arrangements [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
 
 All activities, investment attraction, funding, and policy arrangements are conceptual suggestions and are not expressed as confirmed government arrangements [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
 
