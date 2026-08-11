@@ -14,7 +14,7 @@
     "model_family": "gpt",
     "model_detail": "GPT-5"
   },
-  "generated_at": "2026-08-10T01:58:40Z",
+  "generated_at": "2026-08-11T01:54:57Z",
   "files": [
     {
       "path": "manifest.json",
@@ -302,8 +302,8 @@
     }
   ],
   "validation_claim": {
-    "self_checked": false,
+    "self_checked": true,
     "known_blockers": [],
-    "data_confidence": "high"
+    "data_confidence": "medium"
   }
 }
