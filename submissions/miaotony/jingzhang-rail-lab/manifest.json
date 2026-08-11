@@ -62,7 +62,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "5d131c3b84c7d0e7728865fdfd672c3fd5ec9cbdac06584c857897888934072a"
+      "sha256": "9f09cb60b4922de89935706a4fa923e476afdda8f2f2aab36ffdc02e4efd9796"
     },
     {
       "path": "compliance_matrix.json",
@@ -297,12 +297,12 @@
       "required": false,
       "title_zh": "京张通智·概念动画",
       "title_en": "JINGZHANG UTILITY · Concept Teaser",
-      "description_zh": "程序化渲染的12秒概念动画：从提交包 geometry 图层直接绘制场地展开、三厂站点亮与瓦特-token主脊脉冲，收于三项核心指标。概念演示，provisional 边界，非官方红线依据。",
-      "description_en": "A 12-second procedurally rendered concept teaser drawn directly from the package geometry layers: site unfolding, the three plant-station districts lighting up, watt-token pulses along the spine, closing on three core metrics. Concept demo on provisional boundary; not an official redline basis.",
+      "description_zh": "程序化渲染的24秒概念动画：镜头沿9公里带推轨横移展开场地，iDUCT主脊点亮与瓦特-token脉冲流动，三厂站逐个推近并附信息卡，收束于三项核心指标。全部画面从提交包geometry图层直接绘制。概念演示，provisional边界，非官方红线依据。",
+      "description_en": "A 24-second procedurally rendered concept teaser: a virtual camera tracks along the 9 km belt as the site unfolds, the iDUCT spine lights up with watt-token pulses, the three plant-station districts are visited with info cards, closing on three core metrics. Drawn directly from the package geometry layers. Concept demo on provisional boundary; not an official redline basis.",
       "poster": "assets/media/jingzhang-utility-poster.png",
       "caption": "assets/media/jingzhang-utility-teaser.vtt",
       "transcript": "assets/media/jingzhang-utility-teaser.md",
-      "sha256": "39558b9ad89535abdb6c845fb7d5e7e84032d971fdc358aa452165434dac3728"
+      "sha256": "429f483bc341549860e688ce9ca7159a10428fabb1aca22471cd086bf3779357"
     },
     {
       "path": "assets/media/jingzhang-utility-poster.png",
@@ -312,7 +312,7 @@
       "title_en": "JINGZHANG UTILITY · Gallery Cover",
       "description_zh": "概念动画三厂站帧，用作画廊封面与视频海报。",
       "description_en": "Key-area frame of the concept teaser, used as gallery cover and video poster.",
-      "sha256": "29ad07a8c7d7bf3da84bf96d2b8cc45a464813d571332382c41702b772b8f552"
+      "sha256": "1ba85a8da5ed503fd9b50570af14c2f768e4a57ba87e1e934234d3d4cf9fab4b"
     },
     {
       "path": "assets/media/jingzhang-utility-teaser.vtt",
@@ -322,7 +322,7 @@
       "title_en": "Concept Teaser Captions",
       "description_zh": "WebVTT 中英双语字幕。",
       "description_en": "WebVTT bilingual captions.",
-      "sha256": "dee944035b6490775b7300d58dd4737c7b8618493540f6457b80cbb385331212"
+      "sha256": "7fcadfaa356319589b85e3fd185975065cc0c79ae516c91258a6d49e07b86099"
     },
     {
       "path": "assets/media/jingzhang-utility-teaser.md",
@@ -332,7 +332,7 @@
       "title_en": "Concept Teaser Transcript",
       "description_zh": "视频分镜文稿、程序化生成方式说明与概念演示声明。",
       "description_en": "Transcript with shot breakdown, procedural-generation note, and concept-demo statement.",
-      "sha256": "9f5c16b1f183aeae43dab6661fac37a85b1ae5d2539c55db78ab1d1ca1f3c626"
+      "sha256": "25775232565399de0db477820de09aa17cce83757d1bf326d2703f3544aebda1"
     }
   ],
   "validation_claim": {
