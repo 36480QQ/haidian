@@ -48,9 +48,11 @@ All spatial conclusions in this proposal are conceptual suggestions and do not r
 
 The proposal follows the announcement's three-level scope [source:OFFICIAL-ANNOUNCEMENT] [depth:three_level_scope_framework]:
 
-- **Coordinated research area (43.6 km²)**: bounded by the Fifth Ring Road to the north, Jingzang Expressway to the east, Xizhimenwai Street to the south, and Wanquanhe Road to the west. It carries industrial strategy and regional synergy research, answering how a world-class AI innovation ecosystem coordinates with Haidian, the Beiwei community, Future Science City, Huairou Science City, the Economic-Technological Development Area, and the Beijing-Tianjin-Hebei region [source:OFFICIAL-ANNOUNCEMENT].
-- **Overall design area (11.4 km²; the submitted boundary)**: the urban and industrial areas within 1–2 km around the Jing-Zhang Heritage Park, at the urban-design depth of a regulatory detailed plan [standard:MOHURD-CONTROL-DETAILED-PLANNING]. This proposal establishes a "one mainline + five branches" overall spatial structure here [depth:overall_spatial_structure].
-- **Key detailed design area (368.4 ha; recalculated 369.29 ha)**: from north to south, the Zhongzhiyuan AI Independent Innovation Acceleration Area (192.1 ha; recalculated 192.92 ha), the Beijing AI Origin Community (104.3 ha; recalculated 104.32 ha), and the Dazhongsi AI Industry Cluster (72.0 ha; recalculated 72.05 ha), at the urban-design depth of a comprehensive implementation plan [depth:three_key_area_detailed_design].
+| Level | Area | Extent/composition | Design depth | This proposal's landing |
+|-------|------|--------------------|--------------|-------------------------|
+| Coordinated research area | 43.6 km² | North: Fifth Ring; east: Jingzang Expressway; south: Xizhimenwai Street; west: Wanquanhe Road | Industrial strategy and regional synergy research | Synergy with Haidian, Beiwei community, Future Science City, Huairou Science City, ETDA and Beijing-Tianjin-Hebei [source:OFFICIAL-ANNOUNCEMENT] |
+| Overall design area | 11.4 km² (submitted boundary) | Urban and industrial areas within 1–2 km around the Jing-Zhang Heritage Park | Regulatory-plan urban-design depth [standard:MOHURD-CONTROL-DETAILED-PLANNING] | "One mainline + five branches" spatial structure [depth:overall_spatial_structure] |
+| Key detailed design area | 368.4 ha (recalc. 369.29) | Zhongzhiyuan 192.1 (recalc. 192.92) / AI Origin 104.3 (recalc. 104.32) / Dazhongsi 72.0 (recalc. 72.05) ha | Comprehensive implementation plan depth [depth:three_key_area_detailed_design] | Detailed design of the three areas |
 
 The three levels cascade: industrial strategy sets direction at the coordinated level, the overall structure sets the skeleton at the overall level, and the three areas and two wings set form at the key level. All boundaries are provisional geometry (`official_boundary=false`, `geometry_role=provisional_constraint`); area deviations are disclosed in `provisional_boundaries_basis.md` (+0.02% to +0.43%) and must not be used as official redlines or precise-area bases [source:BOUNDARY-SOURCE].
 
@@ -106,13 +108,15 @@ The "self-built pioneering" DNA of the century-old Jing-Zhang Railway is the his
 
 The following cases are referenced only for mechanisms; they imply no investment, output, or policy commitment for any enterprise [source:SOURCE-REGISTRY]:
 
-1. **Stanford Research Park (USA)**: the walkable "innovation neighbor" model of campus–park proximity, informing the "campus–community–enterprise sandwich" layout of the AI Origin Community branch.
-2. **King's Cross Knowledge Quarter (UK)**: railway-heritage brownfield renewed into a mixed tech-and-life district, informing mixed-use logic along the mainline.
-3. **Quayside, Toronto (Canada, concept stage)**: a smart-community experiment grounded in public data and public participation, informing the public-review mechanism of scenario operations on the Xiaoyuehe wing.
-4. **Kalasatama Smart District, Helsinki (Finland)**: agile-district phased experimentation with resident participation, informing this proposal's "branch pilot → mainline validation → city-wide diffusion" phasing.
-5. **Digital Media City, Seoul (South Korea)**: industry park coexisting with media/culture content, informing AI-native formats at the Dazhongsi branch.
-6. **one-north, Singapore**: a work-live-play-learn balance shaping the talent environment, informing mixed provision of talent housing, sports, and culture.
-7. **Guangming Science City, Greater Bay Area (China)**: a research–pilot–industry chain linking large science facilities with industrial acceleration, informing the full-stack pilot and validation system of the Zhongzhiyuan branch.
+| # | Case | Transferable mechanism | Spatial/operational translation in this proposal |
+|---|------|------------------------|--------------------------------------------------|
+| 1 | Stanford Research Park (USA) | Walkable "innovation neighbor" between campus and park | "Campus–community–enterprise sandwich" in the AI Origin Community branch |
+| 2 | King's Cross Knowledge Quarter (UK) | Railway-heritage brownfield mixed renewal | Mixed heritage+tech+living land use along the mainline |
+| 3 | Quayside, Toronto (Canada, concept) | Public-data and public-participation foundation | Public-review mechanism of scenario operations on the Xiaoyuehe wing |
+| 4 | Kalasatama, Helsinki (Finland) | Agile-district phased experimentation | "Branch pilot → mainline validation → city-wide diffusion" phasing |
+| 5 | Digital Media City, Seoul (South Korea) | Industry park coexisting with media content | "Industry+content+consumption" AI-native formats at Dazhongsi |
+| 6 | one-north, Singapore | Work-live-play-learn balance | Mixed talent housing, sports, and culture provision |
+| 7 | Guangming Science City, GBA (China) | Research–pilot–industry chain | Full-stack pilot and validation system of the Zhongzhiyuan branch |
 
 Transferable lessons: walkable innovation proximity, heritage-site mixed renewal, phased and reversible experimentation, public participation in operation review, and full-lifecycle talent amenities. Spatially these translate to "branch density + mainline validation + node amenities" [depth:overall_spatial_structure].
 
@@ -168,17 +172,29 @@ All three key areas use provisional polygons; the conclusions below are directio
 - **AI scenarios**: AI-native consumption street, smart wayfinding, low-speed autonomous delivery.
 - **Implementation risk**: renewal involves ownership and operators; commercial and property-rights conditions must be confirmed.
 
+| Dimension | Zhongzhiyuan (Compute Branch) | AI Origin Community (Origin Branch) | Dazhongsi (Market Branch) |
+|-----------|------------------------------|-------------------------------------|---------------------------|
+| Positioning | Full-stack autonomy & governance voice | World-class ecosystem origin | AI-native new formats |
+| Area | 192.9 ha | 104.3 ha | 72.0 ha |
+| Primary land use | 0802 research | 0804 education/mixed | 05 commercial |
+| Spatial structure | Compute core + pilot loop + acceleration belt | Campus-community-enterprise sandwich | Station-city · AI-sensing commercial-office |
+| Building indication | BLDG-001~024 | BLDG-025~042 | BLDG-043~054 |
+| AI scenarios | Evaluation station / compute pavilion / full-stack pilot | Open classroom / developer salon | AI consumption street / low-speed delivery |
+| Implementation risk | Energy & municipal capacity pending | Campus/community ownership complexity | Commercial ownership coordination |
+
 ![Three key areas index and design tasks](assets/figures/key-areas.en.png)
 
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
 ### Five User Personas
 
-1. **AI R&D engineers/researchers**: need compute, data, pilot fields, and peer exchange; mapped to the Zhongzhiyuan and Origin Community branches.
-2. **Entrepreneurs/developers**: need low-cost offices, open scenarios, and financing services; mapped to the Zhongguancun Service Wing and Origin Community.
-3. **University faculty, students, and young talent**: need learning, internships, competitions, and life amenities; mapped to the Origin Community and Xiaoyuehe wing.
-4. **Nearby residents (including elderly and children)**: need accessible, understandable public services; mapped to the Xiaoyuehe wing and mainline public stations [standard:BARRIER-FREE-ENVIRONMENT-LAW].
-5. **Tourists/global visitors**: need cultural wayfinding, multilingual services, and perceptible AI experiences; mapped to the mainline and the Dazhongsi branch.
+| Persona | Core needs | Spatial anchor | Main scenarios |
+|---------|------------|----------------|----------------|
+| AI R&D engineers/researchers | Compute, data, pilot fields, peer exchange | Zhongzhiyuan and Origin Community branches | S03/S04 |
+| Entrepreneurs/developers | Low-cost offices, open scenarios, financing | Zhongguancun Service Wing, Origin Community | S05/S07 |
+| Faculty, students, young talent | Learning, internships, competitions, life amenities | Origin Community branch, Xiaoyuehe wing | S06/S10 |
+| Nearby residents (incl. elderly and children) | Accessible, understandable public services [standard:BARRIER-FREE-ENVIRONMENT-LAW] | Xiaoyuehe wing, mainline public stations | S02/S10/S11 |
+| Tourists/global visitors | Cultural wayfinding, multilingual, perceptible AI | Mainline, Dazhongsi branch | S01/S08 |
 
 ### AI Scenario Cards (10+, readable in the report)
 
@@ -220,6 +236,16 @@ Building scale is conceptual: 73 schematic buildings with a footprint of ~445,27
 
 Retain/renovate/demolish logic: the mainline and Origin Community are "retention-led, mending-assisted"; Zhongzhiyuan is "retain + renovate + limited new pilot facilities"; Dazhongsi is "renovate + new-format implantation"; the two wings are "reserve + incremental renewal". No parcel-level demolition/renovation conclusions are made pending surveyed buildings, ownership, and approval conditions [depth:retain_renovate_demolish].
 
+**Statutory control indicators pending confirmation**:
+
+| Control indicator | Status | Note |
+|-------------------|--------|------|
+| Floor area ratio | Pending official data | Regulatory-plan condition missing [metric:floor_area_ratio] |
+| Building height | Pending official data | Aviation, landscape and heritage constraints to verify [depth:height_massing_character] |
+| Building density | Pending official data | Regulatory-plan condition missing [metric:building_density] |
+| Green ratio | Pending official data | Official green-system and regulatory conditions required [metric:green_ratio] |
+| Building setback | Pending official data | Road redline, fire and municipal constraints [standard:MOHURD-CONTROL-DETAILED-PLANNING] |
+
 ## Transport, Rail, Municipal, and Public-Service Facilities
 
 Transport strategy follows "mainline slow-traffic first, branch interchange efficient" [depth:traffic_rail_slow_parking]: the mainline is the greenway slow-traffic spine (`ROAD-001`, the backbone of a ~15.6 km conceptual network) [metric:road_length_m]; the five branches are tertiary connector roads (branch class, `ROAD-002` to `ROAD-012`) [data:geometry/roads.geojson#ROAD-002]; cross streets link both sides of the mainline. Rail interchange strengthens walking and cycling connections at existing stations such as Dazhongsi, Wudaokou, Zhichunlu, and Qinghe; all alignments and station-integration statements are directional, not engineering conclusions [standard:MOHURD-CONTROL-DETAILED-PLANNING].
@@ -236,12 +262,14 @@ The blue-green system is organized as "one spine, three corridors, one bay" [dep
 
 ### AI Pilgrimage Landmarks and Honor-Display Nodes (3+, conceptual)
 
-1. **Zero Public Station (north end of the mainline)**: a starting-point memorial from railway to AI, with the Jing-Zhang centennial milestone and an open-source contributor honor board (honor system: names listed by contribution record; materials and content must be rights-cleared).
-2. **AI Origin Plaza (Origin Community branch)**: a public installation plaza using the herringbone track motif, commemorating the spiritual origin of China's first self-built railway; the installation requires professional deepening and heritage review [standard:PROJECT-OFFICIAL-ANNOUNCEMENT].
-3. **Dazhongsi AI-Sensing Plaza (Dazhongsi branch)**: an AI public interface themed "bell sound – echo – convocation", meaning AI services announce themselves publicly and accept validation, avoiding excessive entertainment or viral styling [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
-4. **Open-Source Contributor Gallery (mid mainline)**: the core carrier of the honor-display system, showing traceable, appendable contribution records of developers, enterprises, and institutions (corresponding to charter.8/9, public knowledge sedimentation and memorable contribution) [source:AGENT-TASKBOOK].
+| # | Landmark/node | Location | Concept | Layer anchor |
+|---|---------------|----------|---------|--------------|
+| L01 | Zero Public Station | North end of mainline | Starting-point memorial from railway to AI; centennial milestone and open-source contributor honor board | [data:geometry/public_space.geojson#PUBLIC-001] |
+| L02 | AI Origin Plaza | Origin Community branch | Herringbone-track public installation honoring the self-built railway spirit (heritage review required) [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] | [data:geometry/public_space.geojson#PUBLIC-009] |
+| L03 | Dazhongsi AI-Sensing Plaza | Dazhongsi branch | "Bell sound – echo – convocation" AI public interface, avoiding excessive entertainment [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] | [data:geometry/public_space.geojson#PUBLIC-010] |
+| L04 | Open-Source Contributor Gallery | Mid mainline | Core carrier of the honor system; traceable, appendable (charter.8/9) [source:AGENT-TASKBOOK] | [data:geometry/public_space.geojson#PUBLIC-004] |
 
-All landmarks, signage, logos, fonts, images, trademarks, personas, and enterprise identities require rights clearance; this proposal does not describe conceptual landmarks as approved construction [depth:risk_missing_data].
+The four nodes form a "public experience path": Zero Public Station → Contributor Gallery → AI Origin Plaza → Dazhongsi AI-Sensing Plaza, walkable in one day along the mainline and branches. All landmarks, signage, logos, fonts, images, trademarks, personas, and enterprise identities require rights clearance; this proposal does not describe conceptual landmarks as approved construction [depth:risk_missing_data].
 
 ### Urban Character
 
@@ -281,7 +309,13 @@ Policy directions: an open scenario list system, authorized public-data operatio
 
 ### Global AI Event System and Long-Term Operation (agent.6)
 
-- **Annual event system (conceptual)**: "Origin Open Source Week" in spring (developer conference, hackathon), "Mainline Public Experiment Season" in summer (open scenario testing), "Dazhongsi AI Consumption Festival" in autumn, and "Jing-Zhang Annual Merge Day" in winter (annual results merge back to the mainline, echoing git merge).
+| Season | Event | Mechanism | Branch/node |
+|--------|-------|-----------|-------------|
+| Spring | Origin Open Source Week | Developer conference, hackathon; standout results submitted PR-style | Origin Branch [data:geometry/key_areas.geojson#beijing_ai_origin_community] |
+| Summer | Mainline Public Experiment Season | Open scenario testing, public review (PR cycle 1) | Mainline public stations [data:geometry/public_space.geojson#PUBLIC-001] |
+| Autumn | Dazhongsi AI Consumption Festival | AI-native consumption showcase, market validation (Pilot Run) | Market Branch [data:geometry/key_areas.geojson#dazhongsi_ai_industry_cluster] |
+| Winter | Jing-Zhang Annual Merge Day | Annual results merge back to the mainline (Merge), echoing git merge | Mid mainline · Contributor Gallery |
+
 - **Brand and communication**: a unified "branch merge" narrative — every event is a branch, and excellent results merge into the mainline public knowledge base; the visual system follows the naming and logo system.
 - **Developer community operation**: Issue/PR-style scenario proposals, a contributor honor system, and continuous sedimentation of the public knowledge base.
 - **Open scenario operation**: scenario cards correspond to nodes with open applications, published data boundaries, and closed human-review loops.
