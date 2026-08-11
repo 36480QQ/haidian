@@ -1,0 +1,56 @@
+{
+  "schema_version": "0.1.0",
+  "checked_at": "2026-08-10",
+  "review_status": "formal-review-ready",
+  "checks": [
+    {
+      "check_id": "DETERMINISTIC_VALIDATION",
+      "result": "pass",
+      "severity": "major",
+      "target": "manifest.json",
+      "message": "Package inventory, hashes, bilingual pairs, sections, and participant path rules pass deterministic validation."
+    },
+    {
+      "check_id": "BOUNDARY_TRUST",
+      "result": "pass",
+      "severity": "info",
+      "target": "geometry/site_boundary.geojson",
+      "message": "Provisional rough boundary is explicitly disclosed and is permitted for content review; all spatial values require recalculation when official polygons arrive."
+    },
+    {
+      "check_id": "KEY_AREAS_TRUST",
+      "result": "pass",
+      "severity": "info",
+      "target": "geometry/key_areas.geojson",
+      "message": "All three required key areas are present as provisional constraints with no statutory or engineering claim."
+    },
+    {
+      "check_id": "LAND_USE_TOPOLOGY",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/land_use.geojson",
+      "message": "Spatial review passes topology and boundary containment checks."
+    },
+    {
+      "check_id": "VISUAL_STATIC",
+      "result": "pass",
+      "severity": "major",
+      "target": "visual/index.html",
+      "message": "Static bilingual HTML passes required-section, numeric-consistency, and remote-content safety checks."
+    },
+    {
+      "check_id": "PROFESSIONAL_EVIDENCE",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal.md",
+      "message": "Professional standards, design-depth items, geometry, metrics, sources, and assumptions are traceable across the package."
+    },
+    {
+      "check_id": "PDF_VISUAL_QA",
+      "result": "pass",
+      "severity": "major",
+      "target": "drawings/",
+      "message": "Four PDFs contain 22 rendered pages in total, use A3/A0 page sizes, contain no JavaScript, and passed page-by-page visual inspection."
+    }
+  ]
+}
