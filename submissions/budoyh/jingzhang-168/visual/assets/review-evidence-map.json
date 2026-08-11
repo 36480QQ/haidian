@@ -1,29 +1,35 @@
 {
-  "protocol_version": "3.0.0",
-  "purpose": "Seven-dimension claim-to-artifact map; not a self-awarded score",
+  "protocol_version": "4.0.0",
+  "purpose": "Seven-dimension claim-to-artifact map for reviewer navigation; not a self-awarded score",
   "score_claim": null,
   "canonical_counts": {
-    "temporal_zones": 3,
-    "booking_segments": 6,
-    "time_components": 7,
-    "scenario_nodes": 12,
-    "schedule_states": 8,
+    "scope_levels": 3,
+    "land_use_cells": 24,
+    "civic_baseline_spines": 1,
+    "dividend_yards": 3,
+    "unplugged_seams": 6,
+    "offline_ready_components": 7,
+    "scenario_contracts": 12,
+    "civic_dividend_contract_states": 4,
+    "operational_states": 8,
+    "personas": 8,
+    "landmarks": 4,
     "governance_roles": 10,
-    "project_gates": 8,
-    "scenario_gates": 8,
-    "first_168h_stages": 9,
+    "project_maturity_gates": 8,
+    "scenario_admission_gates": 8,
+    "first_twelve_week_stages": 9,
     "renewal_projects": 9,
-    "station_prototypes": 3,
-    "scheduled_service_contracts": 12,
-    "synthetic_tabletop_cases": 72,
-    "tabletop_stop_branches": 24,
-    "tabletop_reset_branches": 12,
+    "proposed_regional_interfaces": 5,
+    "synthetic_tabletop_cases": 84,
+    "blocked_tabletop_branches": 60,
+    "normal_review_branches": 12,
+    "blackout_bequest_branches": 12,
     "real_personal_data_used_in_tabletop": 0,
     "field_performance": null,
-    "key_area_scenario_distribution": {
-      "PROV-KEY-001": 3,
-      "PROV-KEY-002": 4,
-      "PROV-KEY-003": 5
+    "scenario_distribution": {
+      "DY-01-SAFETY-DIVIDEND": 4,
+      "DY-02-OPEN-DIVIDEND": 4,
+      "DY-03-EVERYDAY-DIVIDEND": 4
     }
   },
   "dimensions": [
@@ -31,90 +37,98 @@
       "id": "brief_alignment",
       "weight": 20,
       "evidence": [
+        "proposal.md",
         "sources.json",
-        "visual/assets/station-prototypes.json",
-        "visual/assets/civic-timetable.json",
-        "geometry/constraints.geojson#TZ-01-CITY-LOUNGE",
-        "geometry/constraints.geojson#TZ-02-KNOWLEDGE-TRANSFER",
-        "geometry/constraints.geojson#TZ-03-MODEL-VALIDATION",
-        "visual/assets/first-168h.json"
+        "geometry/site_boundary.geojson#SITE-001",
+        "geometry/land_use.geojson",
+        "geometry/constraints.geojson#DY-01-SAFETY-DIVIDEND",
+        "geometry/constraints.geojson#DY-02-OPEN-DIVIDEND",
+        "geometry/constraints.geojson#DY-03-EVERYDAY-DIVIDEND",
+        "visual/assets/dividend-yards.json",
+        "visual/assets/regional-interfaces.json"
       ],
       "check": [
-        "existing open park and proposed AI service are not conflated",
-        "3/6/7/12 canonical spatial IDs",
-        "no approval, ownership, capacity or field result asserted"
+        "three scope levels transmit one public-dividend claim rather than three unrelated plans",
+        "three brief roles become safety, open-maintenance and everyday-service outputs",
+        "five proposed regional interfaces share de-located methods rather than invented partnerships",
+        "official park facts, provisional design geometry and field results are never conflated"
       ]
     },
     {
       "id": "originality",
       "weight": 10,
       "evidence": [
-        "visual/assets/civic-timetable.json",
-        "visual/assets/station-prototypes.json",
+        "visual/assets/civic-dividend-contracts.json",
+        "visual/assets/dividend-yards.json",
+        "visual/assets/state-machine.json",
         "visual/assets/spatial-components.json",
-        "visual/assets/state-machine.json"
+        "assets/figures/key-areas.png"
       ],
       "check": [
-        "Layer 0 civic base cannot close while Layer 1 AI may stop",
-        "three station sections answer three different site conflicts",
-        "168-hour timetable controls space, responsibility, exit and restoration"
+        "AI OFF, CITY ON treats technological exit as a spatial design requirement",
+        "BASE, BOOST, BLACKOUT and BEQUEST connect ordinary service, bounded gain, physical unplug and residual civic asset",
+        "three yards produce different post-AI legacies rather than three copies of an AI showroom",
+        "the concept departs from v3 time-rights framing and does not copy peer brands or protocols"
       ]
     },
     {
       "id": "ai_planning_innovation",
       "weight": 15,
       "evidence": [
-        "visual/assets/civic-timetable.json",
-        "visual/assets/timetable-tabletop-evidence.json",
-        "visual/assets/jz168-week.schema.json",
-        "visual/assets/example-week.json",
-        "visual/assets/scenario-cards.json"
+        "visual/assets/civic-dividend-contracts.json",
+        "visual/assets/unplugged-test.schema.json",
+        "visual/assets/example-unplugged-test.json",
+        "visual/assets/unplugged-runner.js",
+        "visual/assets/unplugged-tabletop-evidence.json",
+        "visual/assets/scenario-cards.json",
+        "assets/figures/metrics-evidence.png"
       ],
       "check": [
-        "12 full service contracts",
-        "72 deterministic synthetic branches, 24 stop, 12 reset",
-        "zero real personal data and no external I/O",
-        "AI never holds final authority; field performance remains null"
+        "12 contracts each declare human authority, allowed and prohibited data, ordinary service, physical unplug, recovery evidence and a non-AI bequest",
+        "12 contracts by 7 synthetic branches produce 84 reproducible cases",
+        "60 incomplete or prohibited branches fail closed; 12 normal and 12 blackout branches enter separate human reviews",
+        "runner uses zero real personal-data cases and performs no network or device I/O",
+        "field performance remains null and machine PASS is not presented as field success"
       ]
     },
     {
       "id": "implementation_feasibility",
       "weight": 20,
       "evidence": [
-        "visual/assets/station-prototypes.json",
-        "visual/assets/civic-timetable.json",
-        "visual/assets/timetable-tabletop-evidence.json",
+        "visual/assets/first-12-weeks.json",
         "visual/assets/implementation-gates.json",
         "visual/assets/governance-raci.json",
         "visual/assets/renewal-projects.json",
-        "visual/assets/first-168h.json",
-        "risk.json"
+        "visual/assets/dividend-yards.json",
+        "risk.json",
+        "drawings/a0-boards.pdf"
       ],
       "check": [
-        "retain—repair—reversible add for each station",
-        "G0-G7",
-        "C0-C7",
-        "10 roles",
-        "9 continuous stages",
-        "funding, labor, insurance, authorization and professional sign-off remain gates"
+        "first slice starts with two weeks of non-AI baseline and ordinary full-scale prototypes before shadow or bounded AI",
+        "Week 8 is a physical City Unplug Day followed by maintenance, distribution and independent review",
+        "G0-G7 project maturity and C0-C7 scenario admission remain independent gates",
+        "10 roles separate public stewardship, safety, operations, maintenance and independent evaluation",
+        "9 projects identify accountable roles and unknown resources without claiming funding or approval"
       ]
     },
     {
       "id": "public_interest_inclusion",
       "weight": 10,
       "evidence": [
-        "visual/assets/civic-timetable.json",
-        "visual/assets/station-prototypes.json",
+        "visual/assets/civic-dividend-contracts.json",
         "visual/assets/scenario-cards.json",
         "visual/assets/spatial-components.json",
-        "geometry/constraints.geojson#TC-02-HUMAN-GATE",
-        "geometry/constraints.geojson#TC-06-ACCESS-STOP"
+        "geometry/constraints.geojson#OC-01-TACTILE-BASELINE",
+        "geometry/constraints.geojson#OC-02-HUMAN-DESK",
+        "geometry/constraints.geojson#OC-06-RED-UNPLUG-SWITCH",
+        "visual/assets/governance-raci.json"
       ],
       "check": [
-        "always-open civic base",
-        "paper/phone/staffed route for every service",
-        "affected and nonparticipant impacts",
-        "access, quiet and labor may stop AI service"
+        "ordinary routes and human, paper and telephone access precede AI activation",
+        "each scenario identifies a non-AI equivalent and a residual public asset",
+        "affected people and nonparticipants retain stop, appeal and ordinary-service rights",
+        "accessibility, quiet, labor, safety and data rights may stop service independently",
+        "benefit and burden distribution remains an open field measure rather than a claimed score"
       ]
     },
     {
@@ -122,19 +136,19 @@
       "weight": 10,
       "evidence": [
         "risk.json",
-        "visual/assets/civic-timetable.json",
-        "visual/assets/timetable-tabletop-evidence.json",
+        "assumptions.json",
+        "visual/assets/implementation-gates.json",
+        "visual/assets/unplugged-tabletop-evidence.json",
         "visual/assets/rights-ledger.json",
-        "geometry/constraints.geojson",
-        "visual/assets/state-machine.json",
-        "visual/assets/implementation-gates.json"
+        "report/copyright_statement.md",
+        "geometry/constraints.geojson"
       ],
       "check": [
-        "provisional geometry",
-        "fail-closed stop/restore",
-        "authority and field performance not claimed",
-        "high risks remain visible rather than cosmetically reduced",
-        "GPT Image 2 views remain presentation-only"
+        "provisional boundary, key areas and concept geometry are explicitly non-statutory",
+        "missing controls, ownership, fire, heritage, ecology, utilities and resources remain gates",
+        "prohibited data and missing human, baseline, unplug or bequest fields fail closed",
+        "no approval, partnership, procurement, capacity or field-performance claim is made",
+        "GPT Image 2 assets are text-free, individually disclosed and excluded from the evidence order"
       ]
     },
     {
@@ -152,66 +166,46 @@
         "drawings/a0-boards.pdf",
         "drawings/a0-boards.en.pdf",
         "assets/figures/site-overview.png",
+        "assets/figures/land-use-structure.png",
+        "assets/figures/key-areas.png",
+        "assets/figures/mobility-bluegreen.png",
         "assets/figures/metrics-evidence.png",
-        "visual/assets/*.json",
         "manifest.json"
       ],
       "check": [
-        "canonical cross-file ID closure",
-        "140/140 bilingual evidence-anchor multiset",
-        "12 stable visual locator codes",
-        "bilingual render and manifest final audit"
+        "bilingual proposals carry identical evidence-anchor multisets",
+        "five bilingual core figures independently cover overall, land-use, focus-area, mobility-blue-green and metric evidence",
+        "20-page A3 booklets and 7-board A0 sets are searchable, bilingual and lead with the core claim",
+        "offline HTML has 12 stable V4 locators, responsive interaction, reduced-motion handling, captions and no remote dependency",
+        "manifest language counterparts, neutral text-free media and all file digests are finalised after rendering"
       ]
     }
   ],
   "known_open_checks": [
-    "official geometry, statutory controls, ownership, utility, fire, ecology and accessibility inputs remain pending",
-    "named operator and role holders, field capacity, budget and professional sign-off remain pending",
+    "official geometry, statutory controls, ownership, existing-building survey, utility, fire, heritage, ecology and accessibility inputs remain pending",
+    "named role holders, authorised operator, field capacity, labour plan, budget, procurement, insurance and professional sign-off remain pending",
+    "all service, recovery, accessibility, maintenance and benefit-burden field metrics remain null until an authorised trial",
     "external review score remains variable"
   ],
   "spatial_contract": {
-    "booking_segment_source_lu_ids": {
-      "BK-01-SOUTH-GATE": "LU-002",
-      "BK-02-CIVIC-SEAM": "LU-001",
-      "BK-03-TRANSFER-SOUTH": "LU-013",
-      "BK-04-ORIGIN-HUB": "LU-014",
-      "BK-05-TRANSFER-NORTH": "LU-020",
-      "BK-06-TEST-YARD": "LU-021"
+    "yard_key_area_map": {
+      "DY-01-SAFETY-DIVIDEND": "PROV-KEY-001",
+      "DY-02-OPEN-DIVIDEND": "PROV-KEY-002",
+      "DY-03-EVERYDAY-DIVIDEND": "PROV-KEY-003"
     },
-    "booking_segment_key_area_map": {
-      "BK-01-SOUTH-GATE": "PROV-KEY-003",
-      "BK-02-CIVIC-SEAM": "PROV-KEY-003",
-      "BK-03-TRANSFER-SOUTH": "PROV-KEY-002",
-      "BK-04-ORIGIN-HUB": "PROV-KEY-002",
-      "BK-05-TRANSFER-NORTH": "PROV-KEY-001",
-      "BK-06-TEST-YARD": "PROV-KEY-001"
+    "seam_yard_map": {
+      "US-01-SOUTH-GATE": "DY-03-EVERYDAY-DIVIDEND",
+      "US-02-CIVIC-CROSSING": "DY-03-EVERYDAY-DIVIDEND",
+      "US-03-OPEN-SOUTH": "DY-02-OPEN-DIVIDEND",
+      "US-04-ORIGIN-WORKS": "DY-02-OPEN-DIVIDEND",
+      "US-05-SAFETY-SOUTH": "DY-01-SAFETY-DIVIDEND",
+      "US-06-TEST-YARD": "DY-01-SAFETY-DIVIDEND"
     },
-    "scenario_key_area_groups": {
-      "PROV-KEY-001": [
-        "SCN-01-SYNTHETIC-DATA-CLINIC",
-        "SCN-02-MODEL-RED-TEAM",
-        "SCN-04-EDGE-ENERGY-SANDBOX"
-      ],
-      "PROV-KEY-002": [
-        "SCN-05-ENTERPRISE-COPILOT",
-        "SCN-07-ACCESSIBLE-WAYFINDING",
-        "SCN-08-NIGHT-SCHOOL",
-        "SCN-09-LAB-TIME-BANK"
-      ],
-      "PROV-KEY-003": [
-        "SCN-03-ROBOT-WINDOW",
-        "SCN-06-HEALTH-NAVIGATION",
-        "SCN-10-HERITAGE-VOICE",
-        "SCN-11-QUIET-STREET",
-        "SCN-12-CITY-MODEL-ROOM"
-      ]
+    "scenario_yard_groups": {
+      "DY-01-SAFETY-DIVIDEND": ["SCN-01-EMBODIED-UNPLUG", "SCN-02-EDGE-OFFLINE", "SCN-03-FAILURE-LIBRARY", "SCN-04-RAIN-MANUAL-GAUGE"],
+      "DY-02-OPEN-DIVIDEND": ["SCN-05-OPEN-MAINTENANCE", "SCN-06-CIVIC-INTEROP", "SCN-07-BILINGUAL-LABEL", "SCN-08-YOUTH-REVERSE-MENTOR"],
+      "DY-03-EVERYDAY-DIVIDEND": ["SCN-09-ACCESSIBLE-DUAL-PATH", "SCN-10-STAFFED-TRIAGE", "SCN-11-HERITAGE-COMMONS", "SCN-12-CONSUMER-UNPLUG"]
     },
-    "validation": "Shapely unary_union with provisional-site clipping for TZ; all 28 geometries OGC valid and site-covered; BK-03 is site-clipped from LU-013; each scenario is the booking segment representative_point and is within source LU, booking segment and assigned key area.",
-    "zone_membership_counts": {
-      "TZ-01-CITY-LOUNGE": 9,
-      "TZ-02-KNOWLEDGE-TRANSFER": 9,
-      "TZ-03-MODEL-VALIDATION": 6
-    },
-    "zone_partition_validation": "Full land_use.temporal_zone grouping; OGC-valid in WGS84 and EPSG:4548; pairwise interiors disjoint; WGS84 native symmetric difference 1.3039055783443249e-16 deg2 (tolerance 1e-14); densified EPSG:4548 symmetric difference 0.0 m2 at 1e-5-degree segmentation (tolerance 1.0 m2). The transparent vertex-only chord diagnostic is 72.29491023613446 m2 (6.334532229647465e-6 of SITE) and is not claimed as zero."
+    "validation": "The 28 v4 constraint features are three provisional dividend-yard polygons, six unplugged-seam polygons, twelve scenario representative points and seven component locators. Official spatial_review must pass; the three source key-area polygons remain explicitly provisional and are not treated as official redlines or precise-area evidence."
   }
 }

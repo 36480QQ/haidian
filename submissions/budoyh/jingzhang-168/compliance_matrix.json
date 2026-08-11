@@ -21,37 +21,37 @@
         "test_scenario_count",
         "renewal_project_count",
         "governance_role_count",
-        "station_prototype_count",
-        "scheduled_ai_service_contract_count",
-        "tabletop_case_count"
+        "dividend_yard_prototype_count",
+        "scenario_dividend_contract_count",
+        "unplugged_tabletop_case_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "visual_sections": [
-        "V3-BASELINE-CONTEXT",
-        "V3-STATION-PROTOTYPES",
-        "V3-SERVICE-CONTRACTS"
+        "V4-AI-OFF-PROMISE",
+        "V4-THREE-DIVIDEND-YARDS",
+        "V4-TWELVE-DIVIDEND-CONTRACTS"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
-        "CASE-KNOWLEDGE-QUARTER",
-        "CASE-PARIS-SACLAY",
+        "CASE-BARCELONA-DECIDIM",
+        "CASE-SEOUL-OIL-TANK",
         "OFFICIAL-AI-TESTFIELD-2026",
         "OFFICIAL-BEIJING-AGENTIC-AI-2026",
-        "CASE-AI-VERIFY"
+        "CASE-NIST-AI-RMF"
       ],
       "assumption_ids": [
         "A-BOUNDARY-001",
         "A-CONTROLS-001"
       ],
       "self_check_ids": [
-        "KEY_AREAS_TRUST",
+        "SPATIAL_REVIEW",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "v3以三座差异化城市站承接海淀AI测试、转化与公共服务：12项服务合同均绑定空间、人工、数据、停止、复原与回执；72分支只证明合同闭合，不冒充现场成果。"
+      "evidence_summary_zh": "v4以三座差异化公共红利场承接海淀AI测试、转化与公共服务：12项服务合同均绑定空间、人工、数据、停止、复原与回执；84分支只证明合同闭合，不冒充现场成果。"
     },
     {
       "requirement_id": "1.3.2",
@@ -67,29 +67,27 @@
         "geometry/roads.geojson#ROAD-X01",
         "geometry/public_space.geojson",
         "geometry/green_space.geojson",
-        "geometry/constraints.geojson#TZ-01-CITY-LOUNGE"
+        "geometry/constraints.geojson#DY-03-EVERYDAY-DIVIDEND"
       ],
       "metrics": [
-        "time_ribbon_length_m",
+        "civic_baseline_spine_length_m",
         "crosslink_count",
-        "temporal_zone_count",
-        "time_component_count",
-        "listed_existing_park_open_hours_per_week",
-        "station_prototype_count"
+        "dividend_yard_count",
+        "offline_ready_component_count",
+        "dividend_yard_prototype_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "visual_sections": [
-        "V3-SPATIAL-SYSTEM",
-        "V3-STATION-PROTOTYPES",
-        "V3-FIRST-168H"
+        "V4-SPATIAL-DIVIDEND-SYSTEM",
+        "V4-THREE-DIVIDEND-YARDS",
+        "V4-FIRST-TWELVE-WEEKS"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
-        "CASE-ONE-NORTH",
         "CASE-PUNGGOL",
         "OFFICIAL-PARK-PLAN-2021",
         "OFFICIAL-PARK-PHASE1-2023"
@@ -97,16 +95,14 @@
       "assumption_ids": [
         "A-BOUNDARY-001",
         "A-CONTROLS-001",
-        "A-TIME-001",
         "A-EXISTING-PARK-001",
         "A-OSM-DISCREPANCY-001"
       ],
       "self_check_ids": [
-        "BOUNDARY_TRUST",
-        "LAND_USE_TOPOLOGY",
+        "SPATIAL_REVIEW",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "约9公里既有/在建公园走廊不是空白画布；空间体系由不可关闭的Layer 0、按表运行的Layer 1、三站六缝七构件构成，临时几何与官方现状严格分层。"
+      "evidence_summary_zh": "约9公里既有/在建公园走廊不是空白画布；空间体系由不可关闭的Layer 0、可插接、可拔除的Layer 1、三站六缝七构件构成，临时几何与官方现状严格分层。"
     },
     {
       "requirement_id": "1.3.3",
@@ -121,15 +117,14 @@
         "geometry/public_space.geojson",
         "geometry/green_space.geojson",
         "geometry/roads.geojson#ROAD-168",
-        "geometry/constraints.geojson#SCN-01-SYNTHETIC-DATA-CLINIC"
+        "geometry/constraints.geojson#SCN-01-EMBODIED-UNPLUG"
       ],
       "metrics": [
         "persona_count",
-        "weekly_public_open_hours",
-        "public_space_weekly_sqm_hours",
-        "scenario_card_count",
-        "contract_human_conductor_coverage_ratio",
+        "contract_bequest_coverage_ratio",
         "contract_non_ai_equivalent_coverage_ratio",
+        "scenario_card_count",
+        "contract_human_owner_coverage_ratio",
         "field_service_success_ratio"
       ],
       "drawings": [
@@ -137,25 +132,24 @@
         "drawings/a0-boards.pdf"
       ],
       "visual_sections": [
-        "V3-BASELINE-CONTEXT",
-        "V3-GOVERNANCE-RIGHTS",
-        "V3-METRIC-BOUNDARY"
+        "V4-AI-OFF-PROMISE",
+        "V4-PUBLIC-RIGHTS",
+        "V4-METRIC-BOUNDARY"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
-        "CASE-KALASATAMA",
+        "CASE-UNHABITAT-PEOPLE",
         "OFFICIAL-PARK-DIRECTORY-2025",
         "OFFICIAL-PIPL"
       ],
       "assumption_ids": [
-        "A-TIME-001",
+        "A-EXISTING-PARK-001",
         "A-AI-001",
-        "A-TABLETOP-001",
-        "A-EXISTING-PARK-001"
+        "A-TABLETOP-001"
       ],
       "self_check_ids": [
-        "VISUAL_STATIC",
+        "VISUAL_PACKAGING",
         "PROFESSIONAL_EVIDENCE"
       ],
       "evidence_summary_zh": "公共价值以无账号、无手机、断网时仍可通行和求助为底线；人工列车长与非AI等价覆盖可审计，现场效果与利益负担保持unknown。"
@@ -181,8 +175,8 @@
         "drawings/a0-boards.pdf"
       ],
       "visual_sections": [
-        "V3-BASELINE-CONTEXT",
-        "V3-SPATIAL-SYSTEM"
+        "V4-AI-OFF-PROMISE",
+        "V4-SPATIAL-DIVIDEND-SYSTEM"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
@@ -197,8 +191,7 @@
         "A-EXISTING-PARK-001"
       ],
       "self_check_ids": [
-        "BOUNDARY_TRUST",
-        "KEY_AREAS_TRUST"
+        "SPATIAL_REVIEW"
       ],
       "evidence_summary_zh": "研究层只处理产业网络、创新协同与未来城市机制；SITE-001仅作为总体设计范围的临时几何参照，不冒充43.6平方公里研究范围红线。"
     },
@@ -222,15 +215,15 @@
         "site_area_sqm",
         "green_ratio",
         "public_space_ratio",
-        "time_ribbon_length_m"
+        "civic_baseline_spine_length_m"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "visual_sections": [
-        "V3-SPATIAL-SYSTEM",
-        "V3-METRIC-BOUNDARY"
+        "V4-SPATIAL-DIVIDEND-SYSTEM",
+        "V4-METRIC-BOUNDARY"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
@@ -242,8 +235,7 @@
         "A-CONTROLS-001"
       ],
       "self_check_ids": [
-        "BOUNDARY_TRUST",
-        "LAND_USE_TOPOLOGY"
+        "SPATIAL_REVIEW"
       ],
       "evidence_summary_zh": "总体层以SITE-001内九组机器图层组织更新骨架，并公开面积公式、来源和临时边界限制；不将复算值写成法定规划指标。"
     },
@@ -259,22 +251,22 @@
         "geometry/key_areas.geojson#PROV-KEY-001",
         "geometry/key_areas.geojson#PROV-KEY-002",
         "geometry/key_areas.geojson#PROV-KEY-003",
-        "geometry/constraints.geojson#SCN-01-SYNTHETIC-DATA-CLINIC"
+        "geometry/constraints.geojson#SCN-01-EMBODIED-UNPLUG"
       ],
       "metrics": [
         "key_area_count",
         "scenario_card_count",
         "renewal_project_count",
-        "station_prototype_count",
-        "scheduled_ai_service_contract_count"
+        "dividend_yard_prototype_count",
+        "scenario_dividend_contract_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "visual_sections": [
-        "V3-STATION-PROTOTYPES",
-        "V3-SERVICE-CONTRACTS"
+        "V4-THREE-DIVIDEND-YARDS",
+        "V4-TWELVE-DIVIDEND-CONTRACTS"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
@@ -286,7 +278,7 @@
         "A-CONTROLS-001"
       ],
       "self_check_ids": [
-        "KEY_AREAS_TRUST",
+        "SPATIAL_REVIEW",
         "PROFESSIONAL_EVIDENCE"
       ],
       "evidence_summary_zh": "三处临时粗略片区分别绑定验证、知识换乘和公共门户责任，并以场景节点和更新项目深化；四至、权属与工程条件仍待专业确认。"
@@ -308,24 +300,24 @@
         "test_scenario_count",
         "persona_count",
         "governance_role_count",
-        "scheduled_ai_service_contract_count",
-        "contract_human_conductor_coverage_ratio"
+        "scenario_dividend_contract_count",
+        "contract_human_owner_coverage_ratio"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "visual_sections": [
-        "V3-BASELINE-CONTEXT",
-        "V3-SERVICE-CONTRACTS",
-        "V3-GOVERNANCE-RIGHTS"
+        "V4-AI-OFF-PROMISE",
+        "V4-TWELVE-DIVIDEND-CONTRACTS",
+        "V4-PUBLIC-RIGHTS"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
-        "CASE-MARINETERREIN",
-        "CASE-KNOWLEDGE-QUARTER",
-        "CASE-PARIS-SACLAY"
+        "CASE-AMSTERDAM-SENSING",
+        "CASE-BARCELONA-DECIDIM",
+        "CASE-SEOUL-OIL-TANK"
       ],
       "assumption_ids": [
         "A-CONTROLS-001"
@@ -345,38 +337,38 @@
         "AI 创新生态、人才画像与 AI+ 场景"
       ],
       "geojson_layers": [
-        "geometry/constraints.geojson#TZ-01-CITY-LOUNGE",
-        "geometry/constraints.geojson#BK-01-SOUTH-GATE",
+        "geometry/constraints.geojson#DY-03-EVERYDAY-DIVIDEND",
+        "geometry/constraints.geojson#US-01-SOUTH-GATE",
         "geometry/public_space.geojson",
         "geometry/roads.geojson#ROAD-168"
       ],
       "metrics": [
-        "temporal_zone_count",
-        "booking_segment_count",
-        "schedule_state_count",
-        "weekly_public_open_hours",
-        "listed_existing_park_open_hours_per_week"
+        "dividend_yard_count",
+        "unplugged_seam_count",
+        "dividend_state_count",
+        "contract_bequest_coverage_ratio",
+        "offline_ready_component_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "visual_sections": [
-        "V3-SPATIAL-SYSTEM",
-        "V3-FIRST-168H",
-        "V3-HERITAGE-PUBLIC-SPACE"
+        "V4-SPATIAL-DIVIDEND-SYSTEM",
+        "V4-FIRST-TWELVE-WEEKS",
+        "V4-HERITAGE-AFTERLIFE"
       ],
       "source_ids": [
         "AGENT-TASKBOOK",
-        "CASE-KALASATAMA",
+        "CASE-UNHABITAT-PEOPLE",
         "CASE-PUNGGOL"
       ],
       "assumption_ids": [
-        "A-TIME-001",
+        "A-EXISTING-PARK-001",
         "A-AI-001"
       ],
       "self_check_ids": [
-        "VISUAL_STATIC",
+        "VISUAL_PACKAGING",
         "PROFESSIONAL_EVIDENCE"
       ],
       "evidence_summary_zh": "未来形态被写成可审计的周协议：时区、预订段、状态机、人工接管和退出机制均可独立检查，AI仅作辅助。"
@@ -393,20 +385,20 @@
       "geojson_layers": [
         "geometry/land_use.geojson",
         "geometry/key_areas.geojson",
-        "geometry/constraints.geojson#TZ-02-KNOWLEDGE-TRANSFER"
+        "geometry/constraints.geojson#DY-02-OPEN-DIVIDEND"
       ],
       "metrics": [
         "land_use_parcel_count",
         "key_area_count",
-        "temporal_zone_count"
+        "dividend_yard_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "visual_sections": [
-        "V3-SPATIAL-SYSTEM",
-        "V3-STATION-PROTOTYPES"
+        "V4-SPATIAL-DIVIDEND-SYSTEM",
+        "V4-THREE-DIVIDEND-YARDS"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
@@ -418,8 +410,7 @@
         "A-CONTROLS-001"
       ],
       "self_check_ids": [
-        "LAND_USE_TOPOLOGY",
-        "KEY_AREAS_TRUST"
+        "SPATIAL_REVIEW"
       ],
       "evidence_summary_zh": "24个用地单元采用仓库允许的land_use_code，并把研发、转化、服务与公共体验映射到片区及时段；产业目标不等同招商承诺。"
     },
@@ -435,22 +426,22 @@
       "geojson_layers": [
         "geometry/buildings.geojson",
         "geometry/phasing.geojson",
-        "geometry/constraints.geojson#BK-01-SOUTH-GATE"
+        "geometry/constraints.geojson#US-01-SOUTH-GATE"
       ],
       "metrics": [
         "building_footprint_area_sqm",
         "renewal_project_count",
         "scenario_admission_gate_count",
-        "station_prototype_count"
+        "dividend_yard_prototype_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "visual_sections": [
-        "V3-STATION-PROTOTYPES",
-        "V3-IMPLEMENTATION-GATES",
-        "V3-RISK-REGISTER"
+        "V4-THREE-DIVIDEND-YARDS",
+        "V4-IMPLEMENTATION-GATES",
+        "V4-RISK-REGISTER"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
@@ -477,10 +468,10 @@
       "geojson_layers": [
         "geometry/roads.geojson#ROAD-168",
         "geometry/roads.geojson#ROAD-X01",
-        "geometry/constraints.geojson#TC-01-WEEK-BOARD"
+        "geometry/constraints.geojson#OC-01-TACTILE-BASELINE"
       ],
       "metrics": [
-        "time_ribbon_length_m",
+        "civic_baseline_spine_length_m",
         "crosslink_count",
         "project_maturity_gate_count"
       ],
@@ -489,9 +480,9 @@
         "drawings/a0-boards.pdf"
       ],
       "visual_sections": [
-        "V3-SPATIAL-SYSTEM",
-        "V3-IMPLEMENTATION-GATES",
-        "V3-HERITAGE-PUBLIC-SPACE"
+        "V4-SPATIAL-DIVIDEND-SYSTEM",
+        "V4-IMPLEMENTATION-GATES",
+        "V4-HERITAGE-AFTERLIFE"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
@@ -523,30 +514,30 @@
       "metrics": [
         "green_space_area_sqm",
         "public_space_area_sqm",
-        "public_space_weekly_sqm_hours",
-        "listed_existing_park_open_hours_per_week"
+        "contract_non_ai_equivalent_coverage_ratio",
+        "offline_ready_component_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "visual_sections": [
-        "V3-BASELINE-CONTEXT",
-        "V3-SPATIAL-SYSTEM",
-        "V3-HERITAGE-PUBLIC-SPACE"
+        "V4-AI-OFF-PROMISE",
+        "V4-SPATIAL-DIVIDEND-SYSTEM",
+        "V4-HERITAGE-AFTERLIFE"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
-        "CASE-KENDALL"
+        "CASE-UNHABITAT-PEOPLE"
       ],
       "assumption_ids": [
         "A-BOUNDARY-001",
-        "A-TIME-001",
+        "A-EXISTING-PARK-001",
         "A-CONTROLS-001"
       ],
       "self_check_ids": [
-        "BOUNDARY_TRUST",
+        "SPATIAL_REVIEW",
         "PROFESSIONAL_EVIDENCE"
       ],
       "evidence_summary_zh": "以连续公共空间和周开放协议组织遗址公园活力，活动必须服从文保、绿地、生态、安全和夜间静默审查。"
@@ -561,20 +552,20 @@
       ],
       "geojson_layers": [
         "geometry/buildings.geojson",
-        "geometry/constraints.geojson#BK-01-SOUTH-GATE",
+        "geometry/constraints.geojson#US-01-SOUTH-GATE",
         "geometry/public_space.geojson"
       ],
       "metrics": [
         "landmark_count",
-        "time_component_count"
+        "offline_ready_component_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "visual_sections": [
-        "V3-HERITAGE-PUBLIC-SPACE",
-        "V3-STATION-PROTOTYPES"
+        "V4-HERITAGE-AFTERLIFE",
+        "V4-THREE-DIVIDEND-YARDS"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
@@ -613,17 +604,17 @@
         "landmark_count",
         "scenario_card_count",
         "renewal_project_count",
-        "station_prototype_count",
-        "scheduled_ai_service_contract_count"
+        "dividend_yard_prototype_count",
+        "scenario_dividend_contract_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "visual_sections": [
-        "V3-STATION-PROTOTYPES",
-        "V3-SERVICE-CONTRACTS",
-        "V3-IMPLEMENTATION-GATES"
+        "V4-THREE-DIVIDEND-YARDS",
+        "V4-TWELVE-DIVIDEND-CONTRACTS",
+        "V4-IMPLEMENTATION-GATES"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
@@ -636,8 +627,7 @@
         "A-BUILDING-001"
       ],
       "self_check_ids": [
-        "KEY_AREAS_TRUST",
-        "LAND_USE_TOPOLOGY",
+        "SPATIAL_REVIEW",
         "PROFESSIONAL_EVIDENCE"
       ],
       "evidence_summary_zh": "三处重点区域均覆盖功能业态、建筑界面、公共空间、慢行、场景、项目和风险；法定规模、拆改留和工程可行性明确留待专业团队深化。"
@@ -653,34 +643,34 @@
       ],
       "geojson_layers": [
         "geometry/key_areas.geojson#PROV-KEY-001",
-        "geometry/constraints.geojson#SCN-01-SYNTHETIC-DATA-CLINIC",
+        "geometry/constraints.geojson#SCN-01-EMBODIED-UNPLUG",
         "geometry/phasing.geojson"
       ],
       "metrics": [
         "test_scenario_count",
         "project_maturity_gate_count",
         "renewal_project_count",
-        "tabletop_case_count",
+        "unplugged_tabletop_case_count",
         "real_personal_data_used_in_tabletop",
-        "contract_stop_reset_coverage_ratio"
+        "contract_unplug_recovery_coverage_ratio"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "visual_sections": [
-        "V3-STATION-PROTOTYPES",
-        "V3-SERVICE-CONTRACTS",
-        "V3-TABLETOP-RECEIPTS"
+        "V4-THREE-DIVIDEND-YARDS",
+        "V4-TWELVE-DIVIDEND-CONTRACTS",
+        "V4-UNPLUGGED-RECEIPTS"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
         "KEY-AREA-SOURCE",
         "AGENT-TASKBOOK",
-        "CASE-MARINETERREIN",
+        "CASE-AMSTERDAM-SENSING",
         "OFFICIAL-ZHONGZHI-RENEWAL-2026",
         "OFFICIAL-AI-TESTFIELD-2026",
-        "CASE-AI-VERIFY"
+        "CASE-NIST-AI-RMF"
       ],
       "assumption_ids": [
         "A-BOUNDARY-001",
@@ -690,7 +680,7 @@
         "A-LOCATOR-001"
       ],
       "self_check_ids": [
-        "KEY_AREAS_TRUST",
+        "SPATIAL_REVIEW",
         "PROFESSIONAL_EVIDENCE"
       ],
       "evidence_summary_zh": "众智验证园形成公共观察边—限时合成测试场—隔离后勤三层剖面；生产凭据、真实人员数据和自动重启均禁止，失败必须停机、隔离、复原并留回执。"
@@ -706,14 +696,14 @@
       ],
       "geojson_layers": [
         "geometry/key_areas.geojson#PROV-KEY-002",
-        "geometry/constraints.geojson#SCN-05-ENTERPRISE-COPILOT",
+        "geometry/constraints.geojson#SCN-05-OPEN-MAINTENANCE",
         "geometry/public_space.geojson"
       ],
       "metrics": [
         "persona_count",
-        "weekly_public_open_hours",
+        "contract_bequest_coverage_ratio",
         "governance_role_count",
-        "contract_human_conductor_coverage_ratio",
+        "contract_human_owner_coverage_ratio",
         "contract_non_ai_equivalent_coverage_ratio"
       ],
       "drawings": [
@@ -721,15 +711,15 @@
         "drawings/a0-boards.pdf"
       ],
       "visual_sections": [
-        "V3-STATION-PROTOTYPES",
-        "V3-SERVICE-CONTRACTS",
-        "V3-GOVERNANCE-RIGHTS"
+        "V4-THREE-DIVIDEND-YARDS",
+        "V4-TWELVE-DIVIDEND-CONTRACTS",
+        "V4-PUBLIC-RIGHTS"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
         "KEY-AREA-SOURCE",
         "AGENT-TASKBOOK",
-        "CASE-PARIS-SACLAY",
+        "CASE-SEOUL-OIL-TANK",
         "OFFICIAL-AI-ORIGIN-2026",
         "OFFICIAL-COLLEGE-ROAD-2026"
       ],
@@ -740,7 +730,7 @@
         "A-TABLETOP-001"
       ],
       "self_check_ids": [
-        "KEY_AREAS_TRUST",
+        "SPATIAL_REVIEW",
         "PROFESSIONAL_EVIDENCE"
       ],
       "evidence_summary_zh": "AI原点开放换乘厅形成无账号公共前台—成果翻译工坊—IP/数据受控后室；许可、专业意见和采购结论一律转人工。"
@@ -756,14 +746,14 @@
       ],
       "geojson_layers": [
         "geometry/key_areas.geojson#PROV-KEY-003",
-        "geometry/constraints.geojson#SCN-12-CITY-MODEL-ROOM",
+        "geometry/constraints.geojson#SCN-12-CONSUMER-UNPLUG",
         "geometry/roads.geojson#ROAD-168"
       ],
       "metrics": [
         "landmark_count",
-        "weekly_public_open_hours",
-        "schedule_state_count",
-        "listed_existing_park_open_hours_per_week",
+        "contract_bequest_coverage_ratio",
+        "dividend_state_count",
+        "offline_ready_component_count",
         "field_service_success_ratio"
       ],
       "drawings": [
@@ -771,28 +761,28 @@
         "drawings/a0-boards.pdf"
       ],
       "visual_sections": [
-        "V3-STATION-PROTOTYPES",
-        "V3-SERVICE-CONTRACTS",
-        "V3-HERITAGE-PUBLIC-SPACE"
+        "V4-THREE-DIVIDEND-YARDS",
+        "V4-TWELVE-DIVIDEND-CONTRACTS",
+        "V4-HERITAGE-AFTERLIFE"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
         "KEY-AREA-SOURCE",
         "AGENT-TASKBOOK",
-        "CASE-ONE-NORTH",
+        "CASE-PUNGGOL",
         "OFFICIAL-DAZHONGSI-RENEWAL-2026",
         "OFFICIAL-PARK-DIRECTORY-2025"
       ],
       "assumption_ids": [
         "A-BOUNDARY-001",
-        "A-TIME-001",
+        "A-EXISTING-PARK-001",
         "A-CONTROLS-001",
         "A-LOCATOR-001",
         "A-TABLETOP-001"
       ],
       "self_check_ids": [
-        "KEY_AREAS_TRUST",
-        "VISUAL_STATIC"
+        "SPATIAL_REVIEW",
+        "VISUAL_PACKAGING"
       ],
       "evidence_summary_zh": "大钟寺城市公共终点站先保护全天首层、四象限步行、静态地图和人工求助；消费智能体只在与真实账户和支付隔离的合成沙盒运行。"
     },
@@ -811,21 +801,20 @@
         "geometry/key_areas.geojson"
       ],
       "metrics": [
-        "time_ribbon_length_m",
+        "civic_baseline_spine_length_m",
         "crosslink_count",
-        "temporal_zone_count",
-        "time_component_count",
-        "station_prototype_count",
-        "listed_existing_park_open_hours_per_week"
+        "dividend_yard_count",
+        "offline_ready_component_count",
+        "dividend_yard_prototype_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "visual_sections": [
-        "V3-SPATIAL-SYSTEM",
-        "V3-STATION-PROTOTYPES",
-        "V3-FIRST-168H"
+        "V4-SPATIAL-DIVIDEND-SYSTEM",
+        "V4-THREE-DIVIDEND-YARDS",
+        "V4-FIRST-TWELVE-WEEKS"
       ],
       "source_ids": [
         "AGENT-TASKBOOK",
@@ -836,10 +825,10 @@
         "A-CONTROLS-001"
       ],
       "self_check_ids": [
-        "BOUNDARY_TRUST",
-        "VISUAL_STATIC"
+        "SPATIAL_REVIEW",
+        "VISUAL_PACKAGING"
       ],
-      "evidence_summary_zh": "同一空间语法由Layer 0/Layer 1、三站剖面和168小时时刻表共同表达；AI装置不是永久地标，按时到站、可停、可撤、可恢复。"
+      "evidence_summary_zh": "同一空间语法由Layer 0/Layer 1、三站剖面和168小时公共红利合同共同表达；AI装置不是永久地标，按时到站、可停、可撤、可恢复。"
     },
     {
       "requirement_id": "agent.2",
@@ -859,8 +848,8 @@
         "test_scenario_count",
         "governance_role_count",
         "renewal_project_count",
-        "scheduled_ai_service_contract_count",
-        "tabletop_case_count",
+        "scenario_dividend_contract_count",
+        "unplugged_tabletop_case_count",
         "real_personal_data_used_in_tabletop"
       ],
       "drawings": [
@@ -868,22 +857,20 @@
         "drawings/a0-boards.pdf"
       ],
       "visual_sections": [
-        "V3-STATION-PROTOTYPES",
-        "V3-SERVICE-CONTRACTS",
-        "V3-TABLETOP-RECEIPTS"
+        "V4-THREE-DIVIDEND-YARDS",
+        "V4-TWELVE-DIVIDEND-CONTRACTS",
+        "V4-UNPLUGGED-RECEIPTS"
       ],
       "source_ids": [
         "AGENT-TASKBOOK",
-        "CASE-KALASATAMA",
-        "CASE-MARINETERREIN",
-        "CASE-ONE-NORTH",
+        "CASE-UNHABITAT-PEOPLE",
+        "CASE-AMSTERDAM-SENSING",
         "CASE-PUNGGOL",
-        "CASE-KNOWLEDGE-QUARTER",
-        "CASE-PARIS-SACLAY",
-        "CASE-KENDALL",
+        "CASE-BARCELONA-DECIDIM",
+        "CASE-SEOUL-OIL-TANK",
         "OFFICIAL-AI-TESTFIELD-2026",
         "OFFICIAL-BEIJING-AGENTIC-AI-2026",
-        "CASE-AI-VERIFY"
+        "CASE-NIST-AI-RMF"
       ],
       "assumption_ids": [
         "A-CONTROLS-001",
@@ -891,10 +878,10 @@
         "A-TABLETOP-001"
       ],
       "self_check_ids": [
-        "KEY_AREAS_TRUST",
+        "SPATIAL_REVIEW",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "全栈创新被改写为可测试合同：互操作、红队、端侧能耗等场景以合成夹具演练72分支，0真实个人数据、无外部I/O、现场绩效为null。"
+      "evidence_summary_zh": "全栈创新被改写为可测试合同：互操作、红队、端侧能耗等场景以合成夹具演练84分支，0真实个人数据、无外部I/O、现场绩效为null。"
     },
     {
       "requirement_id": "agent.3",
@@ -905,20 +892,20 @@
         "风险、版权与合规说明"
       ],
       "geojson_layers": [
-        "geometry/constraints.geojson#SCN-01-SYNTHETIC-DATA-CLINIC",
-        "geometry/constraints.geojson#SCN-12-CITY-MODEL-ROOM",
-        "geometry/constraints.geojson#TZ-01-CITY-LOUNGE",
+        "geometry/constraints.geojson#SCN-01-EMBODIED-UNPLUG",
+        "geometry/constraints.geojson#SCN-12-CONSUMER-UNPLUG",
+        "geometry/constraints.geojson#DY-03-EVERYDAY-DIVIDEND",
         "geometry/public_space.geojson"
       ],
       "metrics": [
         "scenario_card_count",
         "test_scenario_count",
         "persona_count",
-        "schedule_state_count",
+        "dividend_state_count",
         "project_maturity_gate_count",
-        "contract_human_conductor_coverage_ratio",
+        "contract_human_owner_coverage_ratio",
         "contract_non_ai_equivalent_coverage_ratio",
-        "contract_stop_reset_coverage_ratio",
+        "contract_unplug_recovery_coverage_ratio",
         "field_service_success_ratio"
       ],
       "drawings": [
@@ -926,25 +913,24 @@
         "drawings/a0-boards.pdf"
       ],
       "visual_sections": [
-        "V3-SERVICE-CONTRACTS",
-        "V3-TABLETOP-RECEIPTS",
-        "V3-METRIC-BOUNDARY"
+        "V4-TWELVE-DIVIDEND-CONTRACTS",
+        "V4-UNPLUGGED-RECEIPTS",
+        "V4-METRIC-BOUNDARY"
       ],
       "source_ids": [
         "AGENT-TASKBOOK",
-        "CASE-MARINETERREIN",
+        "CASE-AMSTERDAM-SENSING",
         "OFFICIAL-PIPL",
-        "CASE-DUTCH-ALGORITHM-REGISTER",
-        "CASE-HELSINKI-AI-REGISTER"
+        "CASE-UK-ATRS"
       ],
       "assumption_ids": [
         "A-AI-001",
         "A-DELIVERY-001",
-        "A-TIME-001",
+        "A-EXISTING-PARK-001",
         "A-TABLETOP-001"
       ],
       "self_check_ids": [
-        "VISUAL_STATIC",
+        "VISUAL_PACKAGING",
         "PROFESSIONAL_EVIDENCE"
       ],
       "evidence_summary_zh": "12项AI+服务逐项具备人、非AI等价、禁入数据、停止/复原和回执；字段覆盖率与现场成功率分开，避免用自检PASS包装应用成效。"
@@ -961,14 +947,13 @@
         "geometry/public_space.geojson#PUBLIC-168",
         "geometry/green_space.geojson#GREEN-168",
         "geometry/roads.geojson#ROAD-X01",
-        "geometry/constraints.geojson#BK-01-SOUTH-GATE"
+        "geometry/constraints.geojson#US-01-SOUTH-GATE"
       ],
       "metrics": [
         "public_space_area_sqm",
         "landmark_count",
-        "time_component_count",
-        "weekly_public_open_hours",
-        "listed_existing_park_open_hours_per_week",
+        "offline_ready_component_count",
+        "contract_bequest_coverage_ratio",
         "contract_non_ai_equivalent_coverage_ratio"
       ],
       "drawings": [
@@ -976,24 +961,23 @@
         "drawings/a0-boards.pdf"
       ],
       "visual_sections": [
-        "V3-BASELINE-CONTEXT",
-        "V3-GOVERNANCE-RIGHTS",
-        "V3-HERITAGE-PUBLIC-SPACE"
+        "V4-AI-OFF-PROMISE",
+        "V4-PUBLIC-RIGHTS",
+        "V4-HERITAGE-AFTERLIFE"
       ],
       "source_ids": [
         "AGENT-TASKBOOK",
-        "CASE-KENDALL",
+        "CASE-UNHABITAT-PEOPLE",
         "OFFICIAL-PARK-DIRECTORY-2025",
         "OFFICIAL-COLLEGE-ROAD-2026",
-        "CASE-SEOUL-GYEONGUI"
+        "CASE-SEOUL-OIL-TANK"
       ],
       "assumption_ids": [
         "A-CONTROLS-001",
-        "A-TIME-001",
         "A-EXISTING-PARK-001"
       ],
       "self_check_ids": [
-        "LAND_USE_TOPOLOGY",
+        "SPATIAL_REVIEW",
         "PROFESSIONAL_EVIDENCE"
       ],
       "evidence_summary_zh": "全天公共底盘、纸面/电话/人工等价、无障碍与安静阈值保护非参与者；AI服务可停运，公共路径不可停运。"
@@ -1009,22 +993,22 @@
       ],
       "geojson_layers": [
         "geometry/roads.geojson#ROAD-168",
-        "geometry/constraints.geojson#BK-01-SOUTH-GATE",
+        "geometry/constraints.geojson#US-01-SOUTH-GATE",
         "geometry/public_space.geojson"
       ],
       "metrics": [
         "landmark_count",
-        "time_component_count",
-        "station_prototype_count"
+        "offline_ready_component_count",
+        "dividend_yard_prototype_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "visual_sections": [
-        "V3-HERITAGE-PUBLIC-SPACE",
-        "V3-SOURCE-RIGHTS",
-        "V3-STATION-PROTOTYPES"
+        "V4-HERITAGE-AFTERLIFE",
+        "V4-SOURCE-RIGHTS",
+        "V4-THREE-DIVIDEND-YARDS"
       ],
       "source_ids": [
         "AGENT-TASKBOOK",
@@ -1037,7 +1021,7 @@
         "A-IMAGEGEN-001"
       ],
       "self_check_ids": [
-        "VISUAL_STATIC",
+        "VISUAL_PACKAGING",
         "PROFESSIONAL_EVIDENCE"
       ],
       "evidence_summary_zh": "京张工程测量、清华园站保护和铁路公共空间转化只使用清权事实摘要；三张GPT Image 2图只作无文字体验层，不承担历史或空间证据。"
@@ -1053,19 +1037,19 @@
       ],
       "geojson_layers": [
         "geometry/phasing.geojson",
-        "geometry/constraints.geojson#TC-01-WEEK-BOARD",
-        "geometry/constraints.geojson#TZ-01-CITY-LOUNGE",
-        "geometry/constraints.geojson#SCN-01-SYNTHETIC-DATA-CLINIC"
+        "geometry/constraints.geojson#OC-01-TACTILE-BASELINE",
+        "geometry/constraints.geojson#DY-03-EVERYDAY-DIVIDEND",
+        "geometry/constraints.geojson#SCN-01-EMBODIED-UNPLUG"
       ],
       "metrics": [
-        "first_168h_stage_count",
+        "first_twelve_week_stage_count",
         "governance_role_count",
         "project_maturity_gate_count",
         "scenario_admission_gate_count",
-        "weekly_public_open_hours",
-        "scheduled_ai_service_contract_count",
-        "tabletop_case_count",
-        "contract_stop_reset_coverage_ratio",
+        "contract_bequest_coverage_ratio",
+        "scenario_dividend_contract_count",
+        "unplugged_tabletop_case_count",
+        "contract_unplug_recovery_coverage_ratio",
         "field_service_success_ratio"
       ],
       "drawings": [
@@ -1073,31 +1057,29 @@
         "drawings/a0-boards.pdf"
       ],
       "visual_sections": [
-        "V3-FIRST-168H",
-        "V3-GOVERNANCE-RIGHTS",
-        "V3-IMPLEMENTATION-GATES",
-        "V3-RISK-REGISTER"
+        "V4-FIRST-TWELVE-WEEKS",
+        "V4-PUBLIC-RIGHTS",
+        "V4-IMPLEMENTATION-GATES",
+        "V4-RISK-REGISTER"
       ],
       "source_ids": [
         "AGENT-TASKBOOK",
-        "CASE-KALASATAMA",
-        "CASE-KNOWLEDGE-QUARTER",
+        "CASE-UNHABITAT-PEOPLE",
+        "CASE-BARCELONA-DECIDIM",
         "OFFICIAL-PARK-DIRECTORY-2025",
-        "CASE-DUTCH-ALGORITHM-REGISTER",
-        "CASE-HELSINKI-AI-REGISTER"
+        "CASE-UK-ATRS"
       ],
       "assumption_ids": [
-        "A-TIME-001",
+        "A-EXISTING-PARK-001",
         "A-AI-001",
         "A-DELIVERY-001",
-        "A-TABLETOP-001",
-        "A-EXISTING-PARK-001"
+        "A-TABLETOP-001"
       ],
       "self_check_ids": [
-        "VISUAL_STATIC",
+        "VISUAL_PACKAGING",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "首个168小时从公开纸面运行图、人工柜台和走查开始，经过离线合成演练、共评、清场与审计；项目成熟度和场景准入双闸门均未越级。"
+      "evidence_summary_zh": "首12周调试从公开纸面运行图、人工柜台和走查开始，经过离线合成演练、共评、清场与审计；项目成熟度和场景准入双闸门均未越级。"
     }
   ]
 }

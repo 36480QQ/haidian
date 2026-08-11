@@ -1,12 +1,14 @@
 {
   "schema_version": "1.0.0",
-  "concept": "AI OFF, CITY ON",
-  "canonical_contract": {
-    "zh": "proposal.md",
-    "en": "proposal.en.md"
-  },
-  "scenario_count": 12,
-  "scenarios": [
+  "contract_name": "Civic Dividend Contract 0.4",
+  "states": [
+    "BASE",
+    "BOOST",
+    "BLACKOUT",
+    "BEQUEST"
+  ],
+  "rule": "No AI pilot advances unless its non-AI baseline and post-unplug civic bequest are both usable.",
+  "contracts": [
     {
       "id": "SCN-01-EMBODIED-UNPLUG",
       "short_id": "SCN-01",
