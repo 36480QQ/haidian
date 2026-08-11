@@ -83,6 +83,16 @@ The synergy loop: the mainline pools public value and cultural identity; the fiv
 
 The loop aligns with public policy directions for building Beijing into an international science and technology innovation center, Zhongguancun into a world-leading science park, and Haidian's "1+X+1" modern industrial system, consistent with AI as the core industry and technology services [source:SRC-2026-HAIDIAN-1X1] [source:SRC-2026-BJ-KW-THREE-AREAS-WINGS].
 
+**Regional synergy mechanism table**:
+
+| Partner | Mechanism | Branch landing in this proposal |
+|---------|-----------|----------------------------------|
+| Beiwei community | Talent and scenario exchange, community-level pilots | Life Branch, Xiaoyuehe Scenario Wing |
+| Future Science City | Basic research and original innovation supply | Compute Branch, Zhongzhiyuan full-stack pilots |
+| Huairou Science City | Large-facility and data-resource linkage | Compute Branch, compute and data nodes |
+| Economic-Technological Development Area | Manufacturing and scenario-landing continuation | Market Branch, Dazhongsi conversion outlet |
+| Beijing-Tianjin-Hebei | Factor flows, talent networks, industrial synergy | Capital Branch, Zhongguancun Service Wing [source:OFFICIAL-ANNOUNCEMENT] |
+
 ### Naming System and Logo Direction (conceptual suggestion)
 
 The proposed primary name is **"京张支线带" (Jing-Zhang Branch Belt)**, in English **THE BRANCH LINES** (JZ·BRANCH for short). The naming has three layers: first, railway history — the Jing-Zhang Railway expanded its service area through branch lines from the start (e.g., the Mentougou branch), so branches are part of its "self-built pioneering" DNA; second, spatial structure — the three areas and two wings are exactly five branches off the mainline; third, the open-source metaphor — a branch is a git branch, and innovation grows on branches like pull requests and merges on the mainline, isomorphic with the organizational logic of this open call [source:AGENT-TASKBOOK].
@@ -103,6 +113,18 @@ The "self-built pioneering" DNA of the century-old Jing-Zhang Railway is the his
 | 2016 | Qinghuayuan station ceased passenger service to make way for the HSR tunnel | Functional transformation of the old line; beginning of heritage conversion [source:SRC-JINGZHANG-HERITAGE-PARK] |
 | 2019-12-30 | Jing-Zhang High-Speed Railway opened | The centennial line enters a new era [source:SRC-JINGZHANG-HSR] |
 | From 2019 | Jing-Zhang Railway Heritage Park built progressively | Material basis of the mainline public space and centennial culture display [source:SRC-JINGZHANG-HERITAGE-PARK] |
+
+### Cultural Narrative: A Three-Chapter Timeline (agent.5)
+
+**Chapter 1 · The Self-Reliant Line (1905–1909)**: Zhan Tianyou directed construction of the Jing-Zhang Railway, China's first trunk railway designed and built by Chinese — this "self-reliant line" is the spiritual origin of autonomous innovation [source:SRC-JINGZHANG-RAILWAY-HISTORY].
+
+**Chapter 2 · The Entrepreneurial Road (1980s–)**: Zhongguancun grew from "Electronics Street" into China's Silicon Valley; innovation culture shifted from railway-building to entrepreneurship — entrepreneurial spirit and open-source collaboration form Zhongguancun's cultural DNA.
+
+**Chapter 3 · The Innovation Belt (AI Era)**: this proposal continues "self-built pioneering" as "self-built interfaces" — branches are the new switchbacks, the PR Three-Cycle is the new operating rule, and AI services enter the city in a verifiable, reversible way [source:AGENT-TASKBOOK].
+
+**Spatial culture system and signage direction**: the three chapters map to three cultural theme zones along the mainline (north · self-reliance / middle · entrepreneurship / south · innovation); the signage system uses the dual motifs of "track topology + PR symbols", consistent with the naming and logo system, subject to rights clearance and professional deepening [depth:overall_spatial_structure].
+
+**International communication narrative (agent.5/agent.6)**: the suggested English lead line is **"From the Herringbone Railway to the PR Three-Cycle — where Chinese self-innovation meets open source"**. Three key messages: ① the contemporary expression of a century of autonomous genes (railway → AI interfaces); ② branches are branches — everyone can submit, validate, and merge (open-source city); ③ AI services must pass "Public Review" before entering the city (governance voice). Communication assets are based on this proposal's figures and scenario cards, multilingual, without exaggerating status or presenting concepts as built [depth:risk_missing_data].
 
 ### Global AI Innovation Ecosystem Cases (5–8, readable summaries)
 
@@ -338,6 +360,22 @@ Core indicators (full list in `metrics.json`, all recalculated from `geometry/*.
 | Scenario nodes `scenario_node_count` | 10 | 7 mainline stations + 3 key-area plazas [metric:scenario_node_count] |
 
 Compliance coverage: all announcement tasks in sections 1.3/1.4/1.5 are covered item by item in `compliance_matrix.json` (`1.3.1`–`1.5.3.3`, 20 items) [source:SITE-PACKAGE]; agent tasks agent.1–agent.6 are all covered and expanded in this report; mandatory professional standards are responded to item by item in `standard_matrix.json` (PROJECT-OFFICIAL-ANNOUNCEMENT, PROJECT-AGENT-OPEN-CALL-TASKBOOK, MOHURD-URBAN-DESIGN-MEASURES, MOHURD-CONTROL-DETAILED-PLANNING, MNR-LAND-USE-CLASSIFICATION-GUIDE) [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]; all 15 design-depth items are `complete` (`design_depth_matrix.json`) [depth:metrics_recalculation].
+
+**Task response overview table**:
+
+| Task | Report section | Key evidence |
+|------|----------------|--------------|
+| Announcement 1.3.1–1.3.3 goals | Core Concept and Differentiation Mechanism | [source:OFFICIAL-ANNOUNCEMENT] |
+| Announcement 1.4.1–1.4.3 three-level scope | Three-Level Scope Framework | [data:geometry/site_boundary.geojson#SITE-001] |
+| Announcement 1.5.1 industry & future city | Coordinated Research Area | [metric:key_area_total_sqm] |
+| Announcement 1.5.2 overall design | Overall Design Area | [metric:land_use_coverage_sqm] |
+| Announcement 1.5.3 key areas | Key Area Detailed Design | [data:geometry/key_areas.geojson#zhongzhiyuan_ai_acceleration_area] |
+| agent.1 concept/naming/logo | Core Concept; Coordinated Research | [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] |
+| agent.2 ecosystem & cases | Coordinated Research (cases/ecosystem map) | [source:SOURCE-REGISTRY] |
+| agent.3 scenarios/personas | AI Innovation Ecosystem, Personas, and AI+ Scenarios | [metric:scenario_node_count] |
+| agent.4 public space/landmarks | Blue-Green Space, Public Space, Urban Character | [data:geometry/public_space.geojson#PUBLIC-001] |
+| agent.5 culture narrative | Coordinated Research (three-chapter timeline) | [source:SRC-JINGZHANG-RAILWAY-HISTORY] |
+| agent.6 events/operations | Renewal Project List, Policy and Phasing | [metric:phase_count] |
 
 ![Core metrics recalculation and evidence chain](assets/figures/metrics-evidence.en.png)
 

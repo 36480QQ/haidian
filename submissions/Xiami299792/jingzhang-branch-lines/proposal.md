@@ -83,6 +83,16 @@ PR 三循环把“AI 服务如何进入城市”从口号变成可审计、可�
 
 上述回路与北京建设国际科技创新中心、中关村世界领先科技园区以及海淀区“1+X+1”现代化产业体系的公开政策方向相衔接，AI作为核心产业与科技服务的定位一致 [source:SRC-2026-HAIDIAN-1X1] [source:SRC-2026-BJ-KW-THREE-AREAS-WINGS]。
 
+**区域协同机制表**：
+
+| 协同对象 | 协同机制 | 本方案支线落点 |
+|----------|----------|----------------|
+| 北纬社区 | 人才与场景互通、社区级试点联动 | Life Branch 小月河场景翼 |
+| 未来科学城 | 基础研究与原始创新供给 | Compute Branch 众智园全栈试验 |
+| 怀柔科学城 | 大科学装置与数据资源对接 | Compute Branch 算力与数据节点 |
+| 经开区 | 产业制造与场景落地接续 | Market Branch 大钟寺转化出口 |
+| 京津冀 | 要素流动、人才网络与产业协同 | Capital Branch 中关村服务翼 [source:OFFICIAL-ANNOUNCEMENT] |
+
 ### 命名体系与Logo方向（概念建议）
 
 主名称建议为**“京张支线带”**，英文名 **THE BRANCH LINES**（简称 JZ·BRANCH）。命名逻辑有三层：第一层是铁路史实——京张铁路自建成起就以支线扩展服务范围（门头沟支线等），支线是京张“自主开路”基因的一部分；第二层是空间结构——三区两翼恰好是沿主线的五条支线；第三层是开源隐喻——支线即 branch，创新像 Pull Request 一样在支线上生长、在正线合并，与本次开源征集的组织方式同构 [source:AGENT-TASKBOOK]。
@@ -103,6 +113,18 @@ Logo 方向（概念建议，需专业设计深化与字体授权确认）：以
 | 2016 | 清华园站停办客运，为京张高铁清华园隧道让路 | 老线功能转型，遗址化开端 [source:SRC-JINGZHANG-HERITAGE-PARK] |
 | 2019-12-30 | 京张高铁开通 | 百年京张进入新纪元 [source:SRC-JINGZHANG-HSR] |
 | 2019年起 | 京张铁路遗址公园逐步建设 | 正线公共空间与百年文化展示的物质基础 [source:SRC-JINGZHANG-HERITAGE-PARK] |
+
+### 文化叙事：三章时间线（agent.5）
+
+**第一章 争气路（1905—1909）**：詹天佑主持修建京张铁路，中国人自主修建第一条干线铁路——这条“争气路”是自主创新的精神原点 [source:SRC-JINGZHANG-RAILWAY-HISTORY]。
+
+**第二章 创业路（1980s—）**：中关村从“电子一条街”走向中国硅谷，创新文化从修路转向创业——创业精神与开源协作构成中关村文化基因。
+
+**第三章 创新带（AI 时代）**：本方案把“自主开路”续写为“自主开接口”——支线是新的“展线”，PR 三循环是新的“行车规则”，AI 服务以可检验、可回滚的方式进入城市 [source:AGENT-TASKBOOK]。
+
+**空间文化系统与导视方向**：三章时间线对应正线三段文化主题区（北段·争气/中段·创业/南段·创新），导视系统采用“轨道拓扑+PR 符号”双母题，与命名与 Logo 体系一致，均需清权与专业深化 [depth:overall_spatial_structure]。
+
+**国际传播叙事（agent.5/agent.6）**：英文主传播语建议为 **“From the Herringbone Railway to the PR Three-Cycle — where Chinese self-innovation meets open source”**。三条关键传播信息：①百年自主基因的当代表达（铁路→AI 接口）；②支线即分支，人人可提交、可检验、可合并（开源城市）；③AI 服务进城必须先过“公共检验”这一关（治理话语权）。传播素材以本方案图件与场景卡为底，多语同步，不夸大状态、不把概念说成已建 [depth:risk_missing_data]。
 
 ### 全球AI创新生态案例（5—8个，可读摘要）
 
@@ -339,11 +361,27 @@ Logo 方向（概念建议，需专业设计深化与字体授权确认）：以
 
 合规覆盖：公告 1.3/1.4/1.5 全部任务在 `compliance_matrix.json` 中逐项覆盖（`1.3.1`—`1.5.3.3`，共 20 项）[source:SITE-PACKAGE]；面向智能体任务书 agent.1—agent.6 全部覆盖并在正文展开；强制性专业标准在 `standard_matrix.json` 中逐项响应（PROJECT-OFFICIAL-ANNOUNCEMENT、PROJECT-AGENT-OPEN-CALL-TASKBOOK、MOHURD-URBAN-DESIGN-MEASURES、MOHURD-CONTROL-DETAILED-PLANNING、MNR-LAND-USE-CLASSIFICATION-GUIDE）[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]；15 项设计深度项全部 `complete`（`design_depth_matrix.json`）[depth:metrics_recalculation]。
 
+**任务响应一览表**：
+
+| 任务 | 正文章节 | 关键证据 |
+|------|----------|----------|
+| 公告 1.3.1—1.3.3 目标 | 核心概念与差异化机制 | [source:OFFICIAL-ANNOUNCEMENT] |
+| 公告 1.4.1—1.4.3 三层范围 | 三层范围工作框架 | [data:geometry/site_boundary.geojson#SITE-001] |
+| 公告 1.5.1 产业与未来城市 | 统筹研究范围产业与未来城市研究 | [metric:key_area_total_sqm] |
+| 公告 1.5.2 总体设计 | 总体设计范围城市更新与控规深度城市设计 | [metric:land_use_coverage_sqm] |
+| 公告 1.5.3 重点区域 | 重点区域详细设计 | [data:geometry/key_areas.geojson#zhongzhiyuan_ai_acceleration_area] |
+| agent.1 概念/命名/Logo | 核心概念与差异化机制；统筹研究 | [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] |
+| agent.2 生态与案例 | 统筹研究（全球案例/生态图谱） | [source:SOURCE-REGISTRY] |
+| agent.3 场景/画像 | AI 创新生态、人才画像与 AI+ 场景 | [metric:scenario_node_count] |
+| agent.4 公共空间/地标 | 蓝绿空间、公共空间与城市风貌 | [data:geometry/public_space.geojson#PUBLIC-001] |
+| agent.5 文化叙事 | 统筹研究（三章时间线） | [source:SRC-JINGZHANG-RAILWAY-HISTORY] |
+| agent.6 活动/运营 | 更新项目清单、实施政策与分期计划 | [metric:phase_count] |
+
 ![核心指标复算与证据链图](assets/figures/metrics-evidence.png)
 
 ## 风险、版权与合规说明
 
-- **资料合法性**：仅使用公开或清权资料；未使用非公开地图、内部数据与个人隐私数据 [source:SOURCE-REGISTRY]。
+- **资料合法性**：仅使用公开渠道可核验且已清权的资料；不含未授权、未发布或隐私性内容 [source:SOURCE-REGISTRY]。
 - **边界风险**：官方 polygon 缺失，所有几何为 provisional；OSM 交叉核对存在空间不确定性（Issue #846），官方资料公布后需全量替换并重算 [source:BOUNDARY-SOURCE] [source:SRC-OSM-COPYRIGHT] [depth:risk_missing_data]。
 - **版权授权**：命名、Logo、字体、图片、商标、人物与企业标识均未授权使用，仅提出清权方向；`report/copyright_statement.md` 为正式声明 [source:AGENT-TASKBOOK]。
 - **AI生成责任**：本方案由 AI agent 生成并声明生成方法；所有概念建议不构成政府审定、审批或实施承诺 [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]。
