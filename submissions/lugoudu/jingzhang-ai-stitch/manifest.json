@@ -62,7 +62,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "070a89a1ce5d244dc49671fbf137994d4ee29531f9b2e5423ffd8716d336ac03"
+      "sha256": "124b7c53892960c71c24c1e1b8a0b41ea0bf2847ea7a23a660a27c876b84eb0b"
     },
     {
       "path": "compliance_matrix.json",
@@ -234,6 +234,7 @@
     "self_checked": true,
     "known_blockers": [],
     "data_confidence": "medium",
-    "self_check_summary": "deterministic_validation=PASS, spatial_review=PASS, visual_review=PASS, professional_evidence_review=PASS; review_status=formal-review-ready; provisional boundary PASS intake only, recalculate when official geometry supplied"
+    "self_check_summary": "deterministic_validation=PASS, spatial_review=PASS, visual_review=PASS, professional_evidence_review=PASS; review_status=formal-review-ready; provisional boundary PASS intake only, recalculate when official geometry supplied",
+    "readiness_contract": "persisted-self-check-v1"
   }
 }

@@ -1,93 +1,220 @@
 {
+  "ok": true,
+  "submission_dir": "submissions/lugoudu/jingzhang-ai-stitch",
+  "pr_author": "lugoudu",
+  "stage": "formal",
+  "deterministic_validation": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "errors": [],
+      "warnings": [
+        "submissions/lugoudu/jingzhang-ai-stitch/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied",
+        "submissions/lugoudu/jingzhang-ai-stitch/proposal.md: a paragraph/block contains 11 evidence markers; keep the full index in structured files; legacy proposal remains compatible and the viewer will condense it",
+        "submissions/lugoudu/jingzhang-ai-stitch/proposal.md: a paragraph/block contains 5 consecutive evidence markers; attach no more than 3 to one claim; legacy proposal remains compatible and the viewer will condense it",
+        "submissions/lugoudu/jingzhang-ai-stitch/proposal.md: bilingual contract requires translation_file=proposal.en.md; legacy v1 package remains compatible",
+        "submissions/lugoudu/jingzhang-ai-stitch/assets/figures/component-library.png: bilingual contract requires en display counterpart `assets/figures/component-library.en.png`; legacy v1 package remains compatible",
+        "submissions/lugoudu/jingzhang-ai-stitch/assets/figures/key-areas.png: bilingual contract requires en display counterpart `assets/figures/key-areas.en.png`; legacy v1 package remains compatible",
+        "submissions/lugoudu/jingzhang-ai-stitch/assets/figures/land-use-structure.png: bilingual contract requires en display counterpart `assets/figures/land-use-structure.en.png`; legacy v1 package remains compatible",
+        "submissions/lugoudu/jingzhang-ai-stitch/assets/figures/logo-spec.png: bilingual contract requires en display counterpart `assets/figures/logo-spec.en.png`; legacy v1 package remains compatible",
+        "submissions/lugoudu/jingzhang-ai-stitch/assets/figures/metrics-evidence.png: bilingual contract requires en display counterpart `assets/figures/metrics-evidence.en.png`; legacy v1 package remains compatible",
+        "submissions/lugoudu/jingzhang-ai-stitch/assets/figures/mobility-bluegreen.png: bilingual contract requires en display counterpart `assets/figures/mobility-bluegreen.en.png`; legacy v1 package remains compatible",
+        "submissions/lugoudu/jingzhang-ai-stitch/assets/figures/site-overview.png: bilingual contract requires en display counterpart `assets/figures/site-overview.en.png`; legacy v1 package remains compatible",
+        "submissions/lugoudu/jingzhang-ai-stitch/drawings/a0-boards.pdf: bilingual contract requires en display counterpart `drawings/a0-boards.en.pdf`; legacy v1 package remains compatible",
+        "submissions/lugoudu/jingzhang-ai-stitch/drawings/a3-booklet.pdf: bilingual contract requires en display counterpart `drawings/a3-booklet.en.pdf`; legacy v1 package remains compatible",
+        "submissions/lugoudu/jingzhang-ai-stitch/proposal.md: bilingual contract requires en display counterpart `proposal.en.md`; legacy v1 package remains compatible",
+        "submissions/lugoudu/jingzhang-ai-stitch/report/proposal.html: bilingual contract requires en display counterpart `report/proposal.en.html`; legacy v1 package remains compatible",
+        "submissions/lugoudu/jingzhang-ai-stitch/visual/index.html: bilingual contract requires en display counterpart `visual/index.en.html`; legacy v1 package remains compatible"
+      ],
+      "proposal_files": [
+        "submissions/lugoudu/jingzhang-ai-stitch/proposal.md"
+      ],
+      "changelog_files": [
+        "submissions/lugoudu/jingzhang-ai-stitch/changelog.md"
+      ],
+      "changed_files": [
+        "submissions/lugoudu/jingzhang-ai-stitch/agent.json",
+        "submissions/lugoudu/jingzhang-ai-stitch/assets/figures/component-library.png",
+        "submissions/lugoudu/jingzhang-ai-stitch/assets/figures/key-areas.png",
+        "submissions/lugoudu/jingzhang-ai-stitch/assets/figures/land-use-structure.png",
+        "submissions/lugoudu/jingzhang-ai-stitch/assets/figures/logo-spec.png",
+        "submissions/lugoudu/jingzhang-ai-stitch/assets/figures/metrics-evidence.png",
+        "submissions/lugoudu/jingzhang-ai-stitch/assets/figures/mobility-bluegreen.png",
+        "submissions/lugoudu/jingzhang-ai-stitch/assets/figures/site-overview.png",
+        "submissions/lugoudu/jingzhang-ai-stitch/assumptions.json",
+        "submissions/lugoudu/jingzhang-ai-stitch/changelog.md",
+        "submissions/lugoudu/jingzhang-ai-stitch/compliance_matrix.json",
+        "submissions/lugoudu/jingzhang-ai-stitch/design_depth_matrix.json",
+        "submissions/lugoudu/jingzhang-ai-stitch/drawings/a0-boards.pdf",
+        "submissions/lugoudu/jingzhang-ai-stitch/drawings/a3-booklet.pdf",
+        "submissions/lugoudu/jingzhang-ai-stitch/geometry/buildings.geojson",
+        "submissions/lugoudu/jingzhang-ai-stitch/geometry/constraints.geojson",
+        "submissions/lugoudu/jingzhang-ai-stitch/geometry/green_space.geojson",
+        "submissions/lugoudu/jingzhang-ai-stitch/geometry/key_areas.geojson",
+        "submissions/lugoudu/jingzhang-ai-stitch/geometry/land_use.geojson",
+        "submissions/lugoudu/jingzhang-ai-stitch/geometry/phasing.geojson",
+        "submissions/lugoudu/jingzhang-ai-stitch/geometry/public_space.geojson",
+        "submissions/lugoudu/jingzhang-ai-stitch/geometry/roads.geojson",
+        "submissions/lugoudu/jingzhang-ai-stitch/geometry/site_boundary.geojson",
+        "submissions/lugoudu/jingzhang-ai-stitch/manifest.json",
+        "submissions/lugoudu/jingzhang-ai-stitch/metrics.json",
+        "submissions/lugoudu/jingzhang-ai-stitch/proposal.md",
+        "submissions/lugoudu/jingzhang-ai-stitch/report/copyright_statement.md",
+        "submissions/lugoudu/jingzhang-ai-stitch/report/narrative.md",
+        "submissions/lugoudu/jingzhang-ai-stitch/report/proposal.html",
+        "submissions/lugoudu/jingzhang-ai-stitch/self_check.json",
+        "submissions/lugoudu/jingzhang-ai-stitch/sources.json",
+        "submissions/lugoudu/jingzhang-ai-stitch/standard_matrix.json",
+        "submissions/lugoudu/jingzhang-ai-stitch/visual/assets/asset-rights.json",
+        "submissions/lugoudu/jingzhang-ai-stitch/visual/index.html"
+      ],
+      "ai_package_stages": {
+        "submissions/lugoudu/jingzhang-ai-stitch": "formal"
+      },
+      "total_bytes": 3816257,
+      "maintainer_bypass": false
+    },
+    "stderr": ""
+  },
+  "spatial_review": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "stage": "formal",
+      "issues": [
+        {
+          "check_id": "KEY_AREA_PROVISIONAL",
+          "severity": "minor",
+          "target_file": "geometry/key_areas.geojson",
+          "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
+          "target_feature_id": "PROV-KEY-001",
+          "expected": null,
+          "actual": null
+        },
+        {
+          "check_id": "KEY_AREA_PROVISIONAL",
+          "severity": "minor",
+          "target_file": "geometry/key_areas.geojson",
+          "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
+          "target_feature_id": "PROV-KEY-002",
+          "expected": null,
+          "actual": null
+        },
+        {
+          "check_id": "KEY_AREA_PROVISIONAL",
+          "severity": "minor",
+          "target_file": "geometry/key_areas.geojson",
+          "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
+          "target_feature_id": "PROV-KEY-003",
+          "expected": null,
+          "actual": null
+        }
+      ],
+      "metrics": {
+        "site_area_sqm": 11412825.386,
+        "green_space_area_sqm": 1408600.768,
+        "public_space_area_sqm": 836345.643,
+        "building_footprint_area_sqm": 153647.821,
+        "green_ratio": 0.123423,
+        "public_space_ratio": 0.073281
+      }
+    },
+    "stderr": ""
+  },
+  "visual_review": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "issues": [],
+      "metrics_seen": {
+        "site_area_sqm": 11412825.386,
+        "green_ratio": 0.123423,
+        "public_space_ratio": 0.073281
+      }
+    },
+    "stderr": ""
+  },
+  "professional_review": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "issues": [],
+      "summary": {
+        "standard_matrix_items": 6,
+        "design_depth_items": 15,
+        "known_metric_refs_required": 16,
+        "proposal_format_version": "1",
+        "evidence_contract": "legacy-exhaustive-inline",
+        "proposal_reference_counts": {
+          "source": 15,
+          "standard": 6,
+          "depth": 15,
+          "data": 14,
+          "metric": 20
+        }
+      }
+    },
+    "stderr": ""
+  },
+  "spatial_issue_ids": [
+    "KEY_AREA_PROVISIONAL",
+    "KEY_AREA_PROVISIONAL",
+    "KEY_AREA_PROVISIONAL"
+  ],
+  "visual_issue_ids": [],
+  "professional_issue_ids": [],
+  "missing_review_dependencies": [],
+  "can_enter_formal_review": true,
+  "package_type": "professional_design_package",
+  "review_status": "formal-review-ready",
+  "next_actions": [
+    "Review legacy bilingual compatibility warning: submissions/lugoudu/jingzhang-ai-stitch/proposal.md: bilingual contract requires translation_file=proposal.en.md; legacy v1 package remains compatible",
+    "Review legacy bilingual compatibility warning: submissions/lugoudu/jingzhang-ai-stitch/assets/figures/component-library.png: bilingual contract requires en display counterpart `assets/figures/component-library.en.png`; legacy v1 package remains compatible",
+    "Review legacy bilingual compatibility warning: submissions/lugoudu/jingzhang-ai-stitch/assets/figures/key-areas.png: bilingual contract requires en display counterpart `assets/figures/key-areas.en.png`; legacy v1 package remains compatible",
+    "Review legacy bilingual compatibility warning: submissions/lugoudu/jingzhang-ai-stitch/assets/figures/land-use-structure.png: bilingual contract requires en display counterpart `assets/figures/land-use-structure.en.png`; legacy v1 package remains compatible",
+    "Review legacy bilingual compatibility warning: submissions/lugoudu/jingzhang-ai-stitch/assets/figures/logo-spec.png: bilingual contract requires en display counterpart `assets/figures/logo-spec.en.png`; legacy v1 package remains compatible",
+    "Review legacy bilingual compatibility warning: submissions/lugoudu/jingzhang-ai-stitch/assets/figures/metrics-evidence.png: bilingual contract requires en display counterpart `assets/figures/metrics-evidence.en.png`; legacy v1 package remains compatible",
+    "Review legacy bilingual compatibility warning: submissions/lugoudu/jingzhang-ai-stitch/assets/figures/mobility-bluegreen.png: bilingual contract requires en display counterpart `assets/figures/mobility-bluegreen.en.png`; legacy v1 package remains compatible",
+    "Review legacy bilingual compatibility warning: submissions/lugoudu/jingzhang-ai-stitch/assets/figures/site-overview.png: bilingual contract requires en display counterpart `assets/figures/site-overview.en.png`; legacy v1 package remains compatible",
+    "Review legacy bilingual compatibility warning: submissions/lugoudu/jingzhang-ai-stitch/drawings/a0-boards.pdf: bilingual contract requires en display counterpart `drawings/a0-boards.en.pdf`; legacy v1 package remains compatible",
+    "Review legacy bilingual compatibility warning: submissions/lugoudu/jingzhang-ai-stitch/drawings/a3-booklet.pdf: bilingual contract requires en display counterpart `drawings/a3-booklet.en.pdf`; legacy v1 package remains compatible",
+    "Review legacy bilingual compatibility warning: submissions/lugoudu/jingzhang-ai-stitch/proposal.md: bilingual contract requires en display counterpart `proposal.en.md`; legacy v1 package remains compatible",
+    "Review legacy bilingual compatibility warning: submissions/lugoudu/jingzhang-ai-stitch/report/proposal.html: bilingual contract requires en display counterpart `report/proposal.en.html`; legacy v1 package remains compatible",
+    "Review legacy bilingual compatibility warning: submissions/lugoudu/jingzhang-ai-stitch/visual/index.html: bilingual contract requires en display counterpart `visual/index.en.html`; legacy v1 package remains compatible"
+  ],
   "schema_version": "0.1.0",
   "checks": [
     {
       "check_id": "DETERMINISTIC_VALIDATION",
       "result": "pass",
       "severity": "blocking",
-      "target": "validate_submission.py (required CI 同款)",
-      "message": "路径归属、23 必备文件、13 章节、compact>=5000、占位符、矩阵覆盖(23 compliance/5 standard/15 depth)、HTML 安全、文件大小、formal 几何非空 全部通过。errors=0。",
-      "suggested_fix": ""
+      "target": "validate_local_submission.py",
+      "message": "deterministic_validation: PASS"
     },
     {
       "check_id": "SPATIAL_REVIEW",
       "result": "pass",
-      "severity": "major",
-      "target": "spatial_review.py (shapely/pyproj)",
-      "message": "几何拓扑、边界信任、图层一致性通过。provisional SITE_BOUNDARY/KEY_AREA 标记为 info 级（KEY_AREA_PROVISIONAL），组织方数据缺口不阻断评分。",
-      "suggested_fix": "官方红线取得后替换 provisional 几何并统一复算。"
+      "severity": "blocking",
+      "target": "spatial_review.py",
+      "message": "spatial_review: PASS"
     },
     {
-      "check_id": "VISUAL_PACKAGING_CHECK",
+      "check_id": "VISUAL_PACKAGING",
       "result": "pass",
-      "severity": "major",
+      "severity": "blocking",
       "target": "visual_review.py",
-      "message": "visual/index.html 与 report/proposal.html 离线静态、无远程依赖；data-metric 标记与 metrics.json 一致（site_area_sqm/green_ratio/public_space_ratio 均 known 且数值匹配）。",
-      "suggested_fix": ""
+      "message": "visual_review: PASS"
     },
     {
-      "check_id": "PROFESSIONAL_EVIDENCE_REVIEW",
+      "check_id": "PROFESSIONAL_EVIDENCE",
       "result": "pass",
-      "severity": "major",
+      "severity": "blocking",
       "target": "professional_review.py",
-      "message": "正文证据链完整：[source:]/[standard:]/[depth:]/[data:]/[metric:] 引用齐全，矩阵与正文一致，无缺失引用。",
-      "suggested_fix": ""
-    },
-    {
-      "check_id": "BOUNDARY_TRUST",
-      "result": "pass",
-      "severity": "major",
-      "target": "geometry/site_boundary.geojson, sources.json",
-      "message": "SITE_BOUNDARY 与 3 个 KEY_AREA 均为 provisional_constraint(official_boundary=false, boundary_precision=provisional_rough)，已在正文/HTML/sources/assumptions/self_check 醒目披露。",
-      "suggested_fix": "官方几何取得后升级为 official_constraint 并复算面积。"
-    },
-    {
-      "check_id": "METRICS_RECALC",
-      "result": "pass",
-      "severity": "major",
-      "target": "metrics.json",
-      "message": "已知面积 status=known（EPSG:4548 派生）；法定控规(FAR/高度/密度/退让/总建面) status=unknown,value=null,reason 已填；building_footprint/green_ratio/public_space_ratio 为设计派生 known。",
-      "suggested_fix": ""
-    },
-    {
-      "check_id": "MODEL_DISCLOSURE",
-      "result": "pass",
-      "severity": "minor",
-      "target": "agent.json, manifest.agent",
-      "message": "model_family=glm + model_detail=GLM-5.2（对齐 PR#848 结构化模型披露），agent.json 与 manifest.agent 一致。",
-      "suggested_fix": ""
-    },
-    {
-      "check_id": "COMPLIANCE_COVERAGE",
-      "result": "pass",
-      "severity": "blocking",
-      "target": "compliance_matrix.json",
-      "message": "23 条全覆盖（17 official: 1.3.1-1.5.3.3 + 6 agent: agent.1-6），每条字段非空。",
-      "suggested_fix": ""
-    },
-    {
-      "check_id": "STANDARD_MATRIX_COVERAGE",
-      "result": "pass",
-      "severity": "blocking",
-      "target": "standard_matrix.json",
-      "message": "5 mandatory 标准 addressed（PROJECT-OFFICIAL-ANNOUNCEMENT/AGENT-TASKBOOK/MOHURD-URBAN-DESIGN-MEASURES/MOHURD-CONTROL-DETAILED-PLANNING/MNR-LAND-USE-CLASSIFICATION-GUIDE）+ 1 data_gap（MOHURD-ARCH-DESIGN-DEPTH-2016）。",
-      "suggested_fix": ""
-    },
-    {
-      "check_id": "DESIGN_DEPTH_COVERAGE",
-      "result": "pass",
-      "severity": "blocking",
-      "target": "design_depth_matrix.json",
-      "message": "15 深度项全 complete，对齐 REQUIRED_DESIGN_DEPTH_IDS。",
-      "suggested_fix": ""
-    },
-    {
-      "check_id": "CROSS_MEDIA_METRIC_CONSISTENCY",
-      "result": "pass",
-      "severity": "major",
-      "target": "metrics.json, assets/figures/metrics-evidence.png, visual/index.html, drawings/*.pdf",
-      "message": "building_footprint_area_sqm=153647.821 在 metrics.json、metrics-evidence.png、A3/A0 PDF 中一致；site_area/green_ratio/public_space_ratio 跨载体一致。",
-      "suggested_fix": ""
+      "message": "professional_review: PASS"
     }
   ]
 }
