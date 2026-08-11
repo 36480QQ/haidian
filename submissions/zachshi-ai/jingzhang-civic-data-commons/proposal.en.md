@@ -79,7 +79,7 @@ The overall design area builds a "one spine, three hearts, many nodes" structure
 
 ### Land Use Layout
 
-Building on the announcement and current land-use classifications, the layout flags parcels carrying data commons cores, service pods, and co-creation centers as "AI-service-function" land (a design recommendation subject to formal regulatory-plan confirmation). There are 18 land-use zones in the overall design area, of which 6 are AI R&D / commercial-service, 5 are green and plaza land, 1 is residential, 2 are public-service facility, and 4 are reserve/other [data:geometry/land_use.geojson#LU-001]. The green ratio is about 26.7% and the public-space ratio about 22.0%; green and public space jointly carry the openly accessible functions of data stations and AI service pods [metric:green_ratio] [metric:public_space_ratio].
+Building on the announcement and current land-use classifications, the layout flags parcels carrying data commons cores, service pods, and co-creation centers as "AI-service-function" land (a design recommendation subject to formal regulatory-plan confirmation). There are 18 land-use zones in the overall design area, of which 6 are AI R&D / commercial-service, 5 are green and plaza land, 1 is residential, 2 are public-service facility, and 4 are reserve/other [data:geometry/land_use.geojson#LU-001]. The green ratio is about 25.6% and the public-space ratio about 20.9%; green and public space jointly carry the openly accessible functions of data stations and AI service pods [metric:green_ratio] [metric:public_space_ratio].
 
 ### Urban Renewal Strategy
 
@@ -196,7 +196,7 @@ The proposal designs a "four-season citizen co-creation program": spring "Open D
 
 ### Open-Data Policy Roadmap
 
-It recommends establishing a tiered open-data catalogue (public / registered-use / restricted-use), with supporting data-security assessment, AI-service registration disclosure, and citizen feedback mechanisms. Policy recommendations must comply with current laws and regulations and must not claim government approval [standard:GENERATIVE-AI-INTERIM-MEASURES] [source:data-security-law].
+It recommends establishing a tiered open-data catalogue (public / registered-use / restricted-use), with supporting data-security assessment, AI-service registration disclosure, and citizen feedback mechanisms. Policy recommendations must comply with current laws and regulations and are conceptual only; they do not constitute government-approved conclusions or implementation commitments [standard:GENERATIVE-AI-INTERIM-MEASURES] [source:data-security-law].
 
 ### Developer Community Operation Mechanism
 
@@ -219,8 +219,8 @@ The proposal's metrics fall into three categories: spatial metrics (recalculable
 | Metric | Value | Unit | Note |
 | --- | --- | --- | --- |
 | Overall design area | 11,412,825 | sqm | Recalculated from provisional boundary; to be redone with official boundary [metric:site_area_sqm] |
-| Green ratio | 26.7% | ratio | Green area / site area [metric:green_ratio] |
-| Public-space ratio | 22.0% | ratio | Public-space area / site area [metric:public_space_ratio] |
+| Green ratio | 25.6% | ratio | Green area / site area [metric:green_ratio] |
+| Public-space ratio | 20.9% | ratio | Public-space area / site area [metric:public_space_ratio] |
 | Building footprint | 550,111 | sqm | Sum of footprints of 15 conceptual buildings [metric:building_footprint_area_sqm] |
 | Key area count | 3 | count | Three key areas [metric:key_area_count] |
 | Open datasets | 12 | count | Conceptual open-data catalogue size [metric:data_open_datasets_count] |

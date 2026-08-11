@@ -79,7 +79,7 @@ iteration: "v1.0"
 
 ### 用地布局
 
-用地布局在公告和现状用地分类基础上，把承载数据共用心、服务舱和共创中心的地块标注为"AI服务功能"用地（设计建议，须以正式控规确认为前提）。总体设计范围内用地共18个分区，其中AI研发创新与商业服务类6个、绿地与广场用地5个、居住用地1个、公共服务设施用地2个、留白及其他4个 [data:geometry/land_use.geojson#LU-001]。绿地率约26.7%，公共空间率约22.0%，绿地与公共空间共同承载数据驿站和AI服务舱的开放可达功能 [metric:green_ratio] [metric:public_space_ratio]。
+用地布局在公告和现状用地分类基础上，把承载数据共用心、服务舱和共创中心的地块标注为"AI服务功能"用地（设计建议，须以正式控规确认为前提）。总体设计范围内用地共18个分区，其中AI研发创新与商业服务类6个、绿地与广场用地5个、居住用地1个、公共服务设施用地2个、留白及其他4个 [data:geometry/land_use.geojson#LU-001]。绿地率约25.6%，公共空间率约20.9%，绿地与公共空间共同承载数据驿站和AI服务舱的开放可达功能 [metric:green_ratio] [metric:public_space_ratio]。
 
 ### 城市更新策略
 
@@ -196,7 +196,7 @@ iteration: "v1.0"
 
 ### 开放数据政策路线图
 
-建议建立分级分类的开放数据目录（公开/登记可用/受限可用），配套数据安全评估、AI服务登记公示和市民反馈机制。政策建议须遵循现行法律法规，不得声称已获政府批准 [standard:GENERATIVE-AI-INTERIM-MEASURES] [source:data-security-law]。
+建议建立分级分类的开放数据目录（公开/登记可用/受限可用），配套数据安全评估、AI服务登记公示和市民反馈机制。政策建议须遵循现行法律法规，仅作为概念建议，不构成政府审定结论或实施承诺 [standard:GENERATIVE-AI-INTERIM-MEASURES] [source:data-security-law]。
 
 ### 开发者社区运营机制
 
@@ -219,8 +219,8 @@ iteration: "v1.0"
 | 指标 | 数值 | 单位 | 说明 |
 | --- | --- | --- | --- |
 | 总体设计范围面积 | 11,412,825 | sqm | 临时边界复算，待官方边界重算 [metric:site_area_sqm] |
-| 绿地率 | 26.7% | ratio | 绿地面积/场地面积 [metric:green_ratio] |
-| 公共空间率 | 22.0% | ratio | 公共空间面积/场地面积 [metric:public_space_ratio] |
+| 绿地率 | 25.6% | ratio | 绿地面积/场地面积 [metric:green_ratio] |
+| 公共空间率 | 20.9% | ratio | 公共空间面积/场地面积 [metric:public_space_ratio] |
 | 建筑基底面积 | 550,111 | sqm | 15栋概念建筑基底之和 [metric:building_footprint_area_sqm] |
 | 重点区域数 | 3 | count | 三处重点区域 [metric:key_area_count] |
 | 开放数据集数 | 12 | count | 概念建议的开放数据目录规模 [metric:data_open_datasets_count] |
