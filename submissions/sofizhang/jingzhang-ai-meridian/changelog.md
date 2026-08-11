@@ -1,5 +1,10 @@
 # 方案迭代记录
 
+## v3.2 - 2026-08-11
+
+- **写实风格效果图 / Photoreal-style render added.** 新增第四张双语效果图 `render-axis-goldenhour`（零北绿轴·黄金时刻）：遗址公园贯通绿道人视角单点透视场景——双骑行道、轨道记忆带、K5 站牌与站点证据牌、人字桥·智汇之门远景、逆光树影与黄昏天光。与前三张的『夜间线路图』品牌不同，本张为仿照片质感的写实风格：由 render_scenes.py 参数化自绘（透视投影、大气透视、逆光长影）并经开源 Pillow 程序化后期（光晕/颗粒/暗角），全程未使用照片、外部影像或图像生成模型，图内如实标注生成方式。嵌入正文（中英）蓝绿空间章节与 visual 看板（中英）交通慢行区；版权声明第 3 条同步补充程序化后期说明。A3/A0 图册保持 v3.0 版面。
+- A fourth bilingual render, `render-axis-goldenhour` (The Green Axis at Golden Hour): a one-point-perspective, eye-level scene on the through-greenway atop the built relic park — twin cycle tracks, the rail-memory median, the K5 board with its Station Evidence Board, the Herringbone Gate in the distance, backlit long shadows and dusk light. Unlike the three night-brand renders it is photoreal-STYLE: drawn parametrically by render_scenes.py (perspective projection, aerial perspective, backlight) and finished with a procedural open-source Pillow post chain (bloom / grain / vignette) — still no photographs, external imagery or image-generation models, with the generation method stated inside the frame. Embedded in both proposals (blue-green chapter) and both dashboards (mobility section); copyright statement §3 updated accordingly. A3/A0 boards keep the v3.0 layout.
+
 ## v3.1 - 2026-08-11
 
 - **效果图增强 / Concept renders added.** 新增三张双语概念渲染图并嵌入正文与离线看板：① `render-night-aerial` 全带夜景鸟瞰（绿轴发光、四大地标信标、按层数拉伸的概念体量、缝合环与河流走廊，方位以 K0 零公里为南端锚定）；② `render-herringbone-gate` 人字桥·智汇之门近景鸟瞰（『人』字双轨合流桥面为设计意向叠加，坡道落地、走廊轨道与清华园车站旧址广场人流为几何派生）；③ `render-k0-plaza` K0 零公里广场人视角（零公里纪念环、K0 站牌与 v3.0 站点证据牌三条公约状态实景化）。全部由自研开源脚本 render_scenes.py（matplotlib 参数化）自绘派生自 geometry/*.geojson，未使用图像生成模型、照片或第三方素材，图内均标注「概念渲染·非照片仿真」。正文（中英）、visual 看板（中英）与版权声明同步更新；A3/A0 图册保持 v3.0 不变。
