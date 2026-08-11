@@ -43,9 +43,11 @@ This framework does not draw a new statutory boundary. It translates the competi
 
 ## Coordinated Research Area: Industry and Future City Research
 
+The Jing-Zhang Railway was China's first independently designed railway; its legacy is mastery of a complex system, not nostalgia. Today that gene maps onto three chains: full-stack independent innovation at Zhongzhiyuan, university transfer at AI Origin, and city adoption at Dazhongsi. Tsinghua, Beihang, BUPT and the Chinese Academy of Sciences are linked along 9.35 km, forming the world's only “laboratory-density corridor.” The Open Corridor converts physical distance between laboratories into collaboration density.
+
 ### Brand and visual identity
 
-The Chinese name is “京张开放之家” and the English name is “JINGZHANG OPEN HOUSE.” “House” signals entry, co-presence and long-term belonging; “open” makes it an institutional promise rather than a real-estate label. The logo combines three strokes: a doorway, the Jing-Zhang trajectory and an open port. The doorway stands for civic access, the line for historic movement and innovation transfer, and the node for each participant's contribution. Rail ink, signal coral, civic green, collaboration yellow and infrastructure blue represent history, action, public value, joint work and enabling systems [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
+The Chinese name is “京张开放之家” and the English name is “JINGZHANG OPEN HOUSE.” Its everyday codename is “OPEN DESK,” taken from the six-seat mission table. “House” signals entry, co-presence and long-term belonging; “open” makes it an institutional promise rather than a real-estate label. The logo combines three strokes: a doorway, the Jing-Zhang trajectory and an open port. The doorway stands for civic access, the line for historic movement and innovation transfer, and the node for each participant's contribution. Rail ink, signal coral, civic green, collaboration yellow and infrastructure blue represent history, action, public value, joint work and enabling systems. Signal coral comes from railway signal lamps and carries Jing-Zhang's history from physical to digital signals: it once directed movement; now it marks missions, validation and receipts [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
 
 ### Global cases are mechanisms, not forms to copy
 
@@ -66,6 +68,8 @@ The OECD framework treats attractiveness as more than a single economic indicato
 
 The master structure is **one corridor, three rooms, two wings and twelve ports**. A conceptual 9.35 km Open Corridor links seven program bands: city adoption and global launch in the south; talent services, open park and AI Origin co-creation in the centre; open learning and full-stack independent innovation in the north [metric:open_corridor_length_m] [data:geometry/land_use.geojson#LU-004]. Five transverse “Open Thresholds” reconnect adjacent communities and campuses, preventing innovation resources from circulating only inside the spine.
 
+One corridor and three rooms also change gear over time: at 8 a.m., angled light reaches the desks as coffee and wet-grass scents enter the thresholds; at 3 p.m., train hum, device cues, conversation and footsteps separate into near and far layers; at 8 p.m., office traffic recedes while mission tables, classes and walkers concentrate activity again on open ground floors and courtyards.
+
 Urban form begins with open ground floors, visible research, bookable courtyards, shared test streets and continuous accessible edges, rather than landmark towers. Prototype buildings use compact courtyards and adaptable ground floors so labs, studios, meetings, exhibitions and community services can change through the day. The 18 generated footprints express massing relationships only; they are not demolition or development approvals [data:geometry/buildings.geojson#BLDG-01-01] [depth:height_massing_character].
 
 Public space follows three clocks: weekday research and enterprise collaboration; evening learning, demonstrations and community events; weekend public experiments, cultural walks and family learning. AI can never be the only gateway. Every public scenario retains a staffed option, accessible route, non-digital alternative and explicit opt-out.
@@ -78,13 +82,19 @@ Public space follows three clocks: weekday research and enterprise collaboration
 
 The southern gateway moves prototypes toward city adoption. It includes the Arrival Exchange, AI City Gallery, Smart-native Market, Public Receipt Wall and an evening launch courtyard. Companies must communicate the user problem, operating boundary, accountable owner, failure exit and public benefit, not only model capability. Commercial vitality is tied to public legibility so Dazhongsi does not become a showroom alone [data:geometry/key_areas.geojson#PROV-KEY-003].
 
+In winter the cast-iron doorway feels cold; low light cuts across brick joints as the smells of coffee and rain-wet masonry linger under the threshold. Torn paper fibres remain on the Receipt Wall, while suitcase wheels and shoes leave shallow wear on the steps.
+
 ### 2. Beijing AI Origin Community: Co-creation Room
 
 This is the mission-assembly centre for universities, developers, residents and founders. Its core spaces are the Open-source Foundry, Resident Co-design Desk, Family Learning Yard, AI Origin Salon and bookable prototype courts. Every mission assembles six seats: technology, scenario operator, data/safety, resident/user, capital/legal/IP, and an accountable human lead [data:geometry/key_areas.geojson#PROV-KEY-002].
 
+OPEN DESK's oak surface keeps cup rings and pencil dents; skylight moves along its edge as paper and sawdust scents mix. The scrape of chairs stops before a vote, while handwritten notes preserve traces of working together.
+
 ### 3. Zhongzhiyuan: Autonomous Innovation Room
 
 The northern engine focuses on full-stack independence, standards validation and international technical collaboration. It includes the Compute and Data Match Desk, Standards and Safety Lab, trusted evaluation field and Global Release Hall. Success is measured by substitutability, auditability, critical-stack independence and real adoption, not model size alone [data:geometry/key_areas.geojson#PROV-KEY-001] [depth:three_key_area_detailed_design].
+
+Perforated metal and frosted glass filter laboratory light into the walkway, where equipment warmth meets the damp smell of a rain-wet drain. Wheel tracks, chalk marks and bent cable sleeves record each retest.
 
 All three rooms share a mission ID, entry gate and receipt format. A technology may pass safety and performance tests in Zhongzhiyuan, co-design with residents and operators at AI Origin, and enter public experience at Dazhongsi. A failed gate sends the project back or exits it; publicity cannot substitute for evidence.
 
@@ -117,6 +127,8 @@ All three rooms share a mission ID, entry gate and receipt format. A technology 
 | 10 | Compute and Data Match Desk | Match resources under compliant conditions | Cost, access, purpose and expiry are explicit | Purpose drift or access loss |
 | 11 | Forest Mobility Lab | Test walking, shuttle, shade and accessibility | Safety, time and comfort improve together | Threshold breach or blocked public passage |
 | 12 | Global Release Hall | Release outcomes that have passed city testing | Evidence, limits and public benefit published together | Launch event without an adopter |
+
+Three principal cards add touch and sound. **Arrival Exchange:** palms polish the brass rail, and suitcase wheels click over stone joints. **Resident Co-design Desk:** leaning rounds the oak edge, while chair-scrape stops before a vote. **Open Receipt Wall:** new sheets cover old edges, and a fingertip crossing staples raises a paper hiss.
 
 The twelve ports are encoded as `SCENARIO_NODE` features and can be counted from structured data [data:geometry/public_space.geojson#PORT-01] [metric:open_port_count]. They are conceptual proposals whose exact siting and entry rules require joint work by operators, local authorities, professional teams and the public.
 
