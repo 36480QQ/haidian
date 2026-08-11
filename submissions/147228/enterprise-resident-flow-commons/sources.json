@@ -297,6 +297,34 @@
       "usage": "Schedule-based transit assignment with explicit vehicle capacity, departure-time/stop/run choice, residual capacity and within-day queue formation; method boundary only, with no local coefficients or Haidian performance imported.",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0968090X11000337",
       "accessed_date": "2026-08-12"
+    },
+    {
+      "id": "DISRUPTION-MODE-SHIFT-2022",
+      "source_type": "academic_primary_preprint",
+      "usage": "Multimodal disruption and mode-shift method reference; supports early information and bounded rerouting logic, not a Haidian incident forecast or delay result.",
+      "url": "https://arxiv.org/abs/2210.06115",
+      "accessed_date": "2026-08-12"
+    },
+    {
+      "id": "ROBUST-TRANSIT-PATH-2022",
+      "source_type": "academic_primary_preprint",
+      "usage": "Robust transit path guidance under disruption and demand uncertainty; used to motivate explicit fallback and uncertainty gates, with no local demand or performance imported.",
+      "url": "https://arxiv.org/abs/2201.01437",
+      "accessed_date": "2026-08-12"
+    },
+    {
+      "id": "EQUITABLE-TRANSIT-UNCERTAINTY-2020",
+      "source_type": "academic_primary_preprint",
+      "usage": "Equitable transit network design under supply uncertainty; used to keep efficiency and worst-group equity as separate screening objectives, not as a local policy result.",
+      "url": "https://arxiv.org/abs/2005.02174",
+      "accessed_date": "2026-08-12"
+    },
+    {
+      "id": "BEIJING-URT-RESCHEDULE-2024",
+      "source_type": "academic_primary_preprint",
+      "usage": "Beijing urban-rail disruption rescheduling method reference; supports grouped departure-time and FIFO fallback design, not a Haidian timetable or observed delay claim.",
+      "url": "https://arxiv.org/abs/2407.03388",
+      "accessed_date": "2026-08-12"
     }
   ]
 }

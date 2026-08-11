@@ -1,5 +1,11 @@
 # 方案迭代记录
 
+## v1.15 - 2026-08-12
+
+- Added a bilingual service-continuity screen with two clocks: passenger notice/handoff/arrival and asset owner/repair/accessibility/public-route restoration.
+- Replayed 3,122,000 synthetic agents across five metro, bus, weather, curb and cross-boundary stress cases and three response policies; added aggregate readout, deterministic runner and paired SVG board.
+- Registered four primary disruption/robustness method sources. All outputs remain synthetic, air stays blocked, and dated local disruption, capacity, maintenance, accessibility and satisfaction evidence is still required.
+
 ## v1.14 - 2026-08-12
 
 - Added a bilingual and machine-readable disclosure for repository Issue #1029. The package now distinguishes the inherited PROV-KEY-003 area/order check from its unresolved station position.

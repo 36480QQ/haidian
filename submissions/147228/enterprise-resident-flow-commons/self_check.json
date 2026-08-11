@@ -52,6 +52,8 @@
         "submissions/147228/enterprise-resident-flow-commons/assets/figures/resource-pressure-board.svg",
         "submissions/147228/enterprise-resident-flow-commons/assets/figures/robustness-screen-board.en.svg",
         "submissions/147228/enterprise-resident-flow-commons/assets/figures/robustness-screen-board.svg",
+        "submissions/147228/enterprise-resident-flow-commons/assets/figures/service-continuity-board.en.svg",
+        "submissions/147228/enterprise-resident-flow-commons/assets/figures/service-continuity-board.svg",
         "submissions/147228/enterprise-resident-flow-commons/assets/figures/simulation-pareto.en.png",
         "submissions/147228/enterprise-resident-flow-commons/assets/figures/simulation-pareto.png",
         "submissions/147228/enterprise-resident-flow-commons/assets/figures/site-overview.en.png",
@@ -127,8 +129,11 @@
         "submissions/147228/enterprise-resident-flow-commons/visual/assets/run-regional-readout-audit.js",
         "submissions/147228/enterprise-resident-flow-commons/visual/assets/run-resource-passport.js",
         "submissions/147228/enterprise-resident-flow-commons/visual/assets/run-resource-pressure-screen.js",
+        "submissions/147228/enterprise-resident-flow-commons/visual/assets/run-service-continuity-screen.js",
         "submissions/147228/enterprise-resident-flow-commons/visual/assets/run-utility-welfare-screen.js",
         "submissions/147228/enterprise-resident-flow-commons/visual/assets/scenario-cards.json",
+        "submissions/147228/enterprise-resident-flow-commons/visual/assets/service-continuity-readout.json",
+        "submissions/147228/enterprise-resident-flow-commons/visual/assets/service-continuity-screen.json",
         "submissions/147228/enterprise-resident-flow-commons/visual/assets/service-levels.json",
         "submissions/147228/enterprise-resident-flow-commons/visual/assets/taskbook-crosswalk.json",
         "submissions/147228/enterprise-resident-flow-commons/visual/assets/utility-welfare-readout.json",
@@ -139,7 +144,7 @@
       "ai_package_stages": {
         "submissions/147228/enterprise-resident-flow-commons": "formal"
       },
-      "total_bytes": 11377702,
+      "total_bytes": 11562149,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -217,10 +222,10 @@
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 42,
+          "source": 44,
           "standard": 15,
           "depth": 15,
-          "data": 25,
+          "data": 27,
           "metric": 19
         }
       }

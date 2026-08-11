@@ -213,6 +213,16 @@ The ledger does not turn “assigned” into “repaired”. Responsibility role
 
 ![Mobility asset closeout receipts: eight assets, five gates and the restoration chain](assets/figures/asset-closeout-board.en.svg)
 
+### Service continuity: put notice, transfer and repair on two clocks
+
+The closeout ledger answers who restores a public route after failure. The service-continuity screen adds how long people wait, which group is exposed first and when an asset can reopen. It places a passenger-service clock (notice → disruption → human handoff → arrival) beside an asset-recovery clock (owner → repair → accessibility verification → public-route restoration), so a one-time average-efficiency figure cannot hide the slowest group during a disruption. Multimodal-disruption research supports early information and bounded mode shifts; robust-path research brings demand uncertainty into fallback choice. These papers constrain method design only; all package parameters remain declared synthetic inputs [source:DISRUPTION-MODE-SHIFT-2022] [source:ROBUST-TRANSIT-PATH-2022].
+
+The screen replays 3,122,000 synthetic agents across five stress cases (metro, bus, severe weather, curb service and cross-boundary return) and three response policies: P0 late notice, P1 early notice with bounded shifts and P2 human first. Selection checks full processing, accessible-route preservation, a closed air candidate and recovery gates before comparing continuity proxy, worst-group spread and recovery P50. The synthetic readout selects P2 in all five cases, with continuity proxies of about 98.8–99.4%, worst-group spreads of about 0.1–0.3 points and recovery P50 values of 96–192 minutes. These numbers show that the two clocks and grouped fallback can be recomputed; they are not resident satisfaction, incident recovery time or an operating promise [data:visual/assets/service-continuity-readout.json] [data:visual/assets/run-service-continuity-screen.js].
+
+Before a pilot, dated evidence is still required for disruption notices, alternate-mode acceptance, station/curb capacity, maintenance ownership, accessibility verification and public-route restoration. If notice is late, human takeover is absent or the slowest group worsens, the policy stops at investigation and public-transport fallback; air mobility remains outside the candidate set.
+
+![Service continuity two-clock board: five stress cases, three policies and the recovery chain](assets/figures/service-continuity-board.en.svg)
+
 ## Metrics, Area Recalculation, and Compliance Matrix
 
 ### Current readable base
