@@ -1,0 +1,928 @@
+{
+  "type": "FeatureCollection",
+  "name": "detail_dazhongsi",
+  "crs_note": "Coordinates stored as EPSG:4326 lon/lat. Areas recomputed via EPSG:4548.",
+  "equal_area_projection": "EPSG:4548",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "DET-dazhongsi_ai_industry_cluster-COURT",
+        "layer": "AI_SERVICE_ZONE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "crs_note": "EPSG:4326 storage",
+        "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
+        "name_zh": "大钟寺AI产业聚集区粗略范围-公共主庭",
+        "detail_type": "public_court",
+        "parent_key_area": "PROV-KEY-003",
+        "area_id": "dazhongsi_ai_industry_cluster",
+        "area_sqm_declared": 18862.864
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34927274066104,
+              39.946712944763924
+            ],
+            [
+              116.34919282032303,
+              39.94652000000001
+            ],
+            [
+              116.34906568542495,
+              39.94635431457505
+            ],
+            [
+              116.3489,
+              39.94622717967698
+            ],
+            [
+              116.34870705523609,
+              39.94614725933897
+            ],
+            [
+              116.3485,
+              39.94612000000001
+            ],
+            [
+              116.34829294476391,
+              39.94614725933897
+            ],
+            [
+              116.3481,
+              39.94622717967698
+            ],
+            [
+              116.34793431457506,
+              39.94635431457505
+            ],
+            [
+              116.34780717967698,
+              39.94652000000001
+            ],
+            [
+              116.34772725933897,
+              39.946712944763924
+            ],
+            [
+              116.3477,
+              39.946920000000006
+            ],
+            [
+              116.34772725933897,
+              39.94712705523609
+            ],
+            [
+              116.34780717967698,
+              39.947320000000005
+            ],
+            [
+              116.34793431457506,
+              39.94748568542496
+            ],
+            [
+              116.3481,
+              39.94761282032303
+            ],
+            [
+              116.34829294476391,
+              39.94769274066104
+            ],
+            [
+              116.3485,
+              39.947720000000004
+            ],
+            [
+              116.34870705523609,
+              39.94769274066104
+            ],
+            [
+              116.3489,
+              39.94761282032303
+            ],
+            [
+              116.34906568542495,
+              39.94748568542496
+            ],
+            [
+              116.34919282032303,
+              39.947320000000005
+            ],
+            [
+              116.34927274066104,
+              39.94712705523609
+            ],
+            [
+              116.3493,
+              39.946920000000006
+            ],
+            [
+              116.34927274066104,
+              39.946712944763924
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "DET-dazhongsi_ai_industry_cluster-ENTRY",
+        "layer": "AI_SERVICE_ZONE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "crs_note": "EPSG:4326 storage",
+        "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
+        "name_zh": "大钟寺AI产业聚集区粗略范围-主入口",
+        "detail_type": "main_entry",
+        "parent_key_area": "PROV-KEY-003",
+        "area_id": "dazhongsi_ai_industry_cluster",
+        "area_sqm_declared": 21637.119
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3475,
+              39.944
+            ],
+            [
+              116.3476,
+              39.9452
+            ],
+            [
+              116.3494,
+              39.9452
+            ],
+            [
+              116.3495,
+              39.944
+            ],
+            [
+              116.3475,
+              39.944
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "DET-dazhongsi_ai_industry_cluster-SEAM",
+        "layer": "AI_SERVICE_ZONE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "crs_note": "EPSG:4326 storage",
+        "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
+        "name_zh": "大钟寺AI产业聚集区粗略范围-横缝步行",
+        "detail_type": "cross_seam",
+        "parent_key_area": "PROV-KEY-003",
+        "area_id": "dazhongsi_ai_industry_cluster",
+        "area_sqm_declared": 37009.635
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.342,
+              39.94677000000001
+            ],
+            [
+              116.342,
+              39.947070000000004
+            ],
+            [
+              116.355,
+              39.947070000000004
+            ],
+            [
+              116.355,
+              39.94677000000001
+            ],
+            [
+              116.342,
+              39.94677000000001
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "DET-dazhongsi_ai_industry_cluster-SPINE",
+        "layer": "AI_SERVICE_ZONE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "crs_note": "EPSG:4326 storage",
+        "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
+        "name_zh": "大钟寺AI产业聚集区粗略范围-慢行脊段",
+        "detail_type": "spine_segment",
+        "parent_key_area": "PROV-KEY-003",
+        "area_id": "dazhongsi_ai_industry_cluster",
+        "area_sqm_declared": 27709.778
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34875,
+              39.944
+            ],
+            [
+              116.34825000000001,
+              39.944
+            ],
+            [
+              116.34825000000001,
+              39.94984
+            ],
+            [
+              116.34875,
+              39.94984
+            ],
+            [
+              116.34875,
+              39.944
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "DET-dazhongsi_ai_industry_cluster-BLDG-01",
+        "layer": "AI_SERVICE_ZONE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "crs_note": "EPSG:4326 storage",
+        "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
+        "building_type": "mixed_use",
+        "name_zh": "混合底商-44",
+        "name_en": "mixed_use-44",
+        "parent_land_use": "LU-019",
+        "form_logic": "R",
+        "concept_only": true,
+        "area_sqm_declared": 2315.547,
+        "detail_type": "building_pad",
+        "parent_key_area": "PROV-KEY-003",
+        "area_id": "dazhongsi_ai_industry_cluster"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34889573761178,
+              39.94645943522069
+            ],
+            [
+              116.3495147737586,
+              39.94645943522069
+            ],
+            [
+              116.3495147737586,
+              39.946065265332294
+            ],
+            [
+              116.34889573761178,
+              39.946065265332294
+            ],
+            [
+              116.34889573761178,
+              39.94645943522069
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "DET-dazhongsi_ai_industry_cluster-BLDG-02",
+        "layer": "AI_SERVICE_ZONE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "crs_note": "EPSG:4326 storage",
+        "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
+        "building_type": "education",
+        "name_zh": "教育转化-45",
+        "name_en": "education-45",
+        "parent_land_use": "LU-019",
+        "form_logic": "L",
+        "concept_only": true,
+        "area_sqm_declared": 15.929,
+        "detail_type": "building_pad",
+        "parent_key_area": "PROV-KEY-003",
+        "area_id": "dazhongsi_ai_industry_cluster"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35082614813032,
+              39.94981711472369
+            ],
+            [
+              116.3506857866861,
+              39.94984
+            ],
+            [
+              116.35083248970135,
+              39.94984
+            ],
+            [
+              116.35082614813032,
+              39.94981711472369
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "DET-dazhongsi_ai_industry_cluster-BLDG-03",
+        "layer": "AI_SERVICE_ZONE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "crs_note": "EPSG:4326 storage",
+        "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
+        "building_type": "retail",
+        "name_zh": "配套商业-46",
+        "name_en": "retail-46",
+        "parent_land_use": "LU-019",
+        "form_logic": "L",
+        "concept_only": true,
+        "area_sqm_declared": 875.625,
+        "detail_type": "building_pad",
+        "parent_key_area": "PROV-KEY-003",
+        "area_id": "dazhongsi_ai_industry_cluster"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35053664811952,
+              39.944426378948755
+            ],
+            [
+              116.35065566721002,
+              39.944426378948755
+            ],
+            [
+              116.35065566721002,
+              39.94426094719903
+            ],
+            [
+              116.35133163222508,
+              39.94426094719903
+            ],
+            [
+              116.35133163222508,
+              39.94416965147374
+            ],
+            [
+              116.35053664811952,
+              39.94416965147374
+            ],
+            [
+              116.35053664811952,
+              39.944426378948755
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "DET-dazhongsi_ai_industry_cluster-BLDG-04",
+        "layer": "AI_SERVICE_ZONE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "crs_note": "EPSG:4326 storage",
+        "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
+        "building_type": "community_service",
+        "name_zh": "社区服务-67",
+        "name_en": "community_service-67",
+        "parent_land_use": "LU-025",
+        "form_logic": "L",
+        "concept_only": true,
+        "area_sqm_declared": 1342.848,
+        "detail_type": "building_pad",
+        "parent_key_area": "PROV-KEY-003",
+        "area_id": "dazhongsi_ai_industry_cluster"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3543666160717,
+              39.94552496322264
+            ],
+            [
+              116.3543666160717,
+              39.94568183366861
+            ],
+            [
+              116.35456552828323,
+              39.94568183366861
+            ],
+            [
+              116.35456552828323,
+              39.946064315113226
+            ],
+            [
+              116.35477003487705,
+              39.946064315113226
+            ],
+            [
+              116.35477003487705,
+              39.94552496322264
+            ],
+            [
+              116.3543666160717,
+              39.94552496322264
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "DET-dazhongsi_ai_industry_cluster-BLDG-05",
+        "layer": "AI_SERVICE_ZONE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "crs_note": "EPSG:4326 storage",
+        "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
+        "building_type": "cultural",
+        "name_zh": "文化展示-68",
+        "name_en": "cultural-68",
+        "parent_land_use": "LU-025",
+        "form_logic": "R",
+        "concept_only": true,
+        "area_sqm_declared": 1754.202,
+        "detail_type": "building_pad",
+        "parent_key_area": "PROV-KEY-003",
+        "area_id": "dazhongsi_ai_industry_cluster"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35499417818721,
+              39.94449842675922
+            ],
+            [
+              116.35419952109714,
+              39.94458409426195
+            ],
+            [
+              116.35424216802326,
+              39.94481685998199
+            ],
+            [
+              116.355,
+              39.944735162387204
+            ],
+            [
+              116.355,
+              39.94453020204925
+            ],
+            [
+              116.35499417818721,
+              39.94449842675922
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "DET-dazhongsi_ai_industry_cluster-PUB-01",
+        "layer": "AI_SERVICE_ZONE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "crs_note": "EPSG:4326 storage",
+        "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
+        "name_zh": "站点口袋-南",
+        "public_space_type": "station_pocket",
+        "area_sqm_declared": 12475.918,
+        "detail_type": "public_prototype",
+        "parent_key_area": "PROV-KEY-003",
+        "area_id": "dazhongsi_ai_industry_cluster"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.346665,
+              39.947500000000005
+            ],
+            [
+              116.3467,
+              39.94655
+            ],
+            [
+              116.34530000000001,
+              39.9465
+            ],
+            [
+              116.345265,
+              39.947425
+            ],
+            [
+              116.346665,
+              39.947500000000005
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "DET-dazhongsi_ai_industry_cluster-SCN-11",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "crs_note": "EPSG:4326 storage",
+        "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
+        "name_zh": "智能体荣誉墙",
+        "name_en": "honor_wall",
+        "scenario_type": "honor_wall",
+        "host_structure": "beijing_ai_origin_community",
+        "place_geometry_id": "SCN-11",
+        "area_sqm_declared": 2372.411,
+        "detail_type": "scenario_anchor",
+        "parent_key_area": "PROV-KEY-003",
+        "area_id": "dazhongsi_ai_industry_cluster"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34573560399336,
+              39.94724394065447
+            ],
+            [
+              116.34623560399335,
+              39.94724394065447
+            ],
+            [
+              116.34623560399335,
+              39.946743940654464
+            ],
+            [
+              116.34573560399336,
+              39.946743940654464
+            ],
+            [
+              116.34573560399336,
+              39.94724394065447
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "DET-dazhongsi_ai_industry_cluster-RISK",
+        "layer": "AI_SERVICE_ZONE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "crs_note": "EPSG:4326 storage",
+        "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
+        "name_zh": "大钟寺AI产业聚集区粗略范围-风险/待确认叠加",
+        "detail_type": "risk_overlay",
+        "parent_key_area": "PROV-KEY-003",
+        "area_id": "dazhongsi_ai_industry_cluster",
+        "status": "pending_confirmation",
+        "area_sqm_declared": 24109.786
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35039566625402,
+              39.94583178457371
+            ],
+            [
+              116.35038270675237,
+              39.94574441871019
+            ],
+            [
+              116.35036124630217,
+              39.94565874379048
+            ],
+            [
+              116.35033149157927,
+              39.94557558491088
+            ],
+            [
+              116.35029372913792,
+              39.94549574293686
+            ],
+            [
+              116.35024832265108,
+              39.94541998679029
+            ],
+            [
+              116.35019570940803,
+              39.945349046044264
+            ],
+            [
+              116.35013639610307,
+              39.94528360389694
+            ],
+            [
+              116.35007095395575,
+              39.94522429059198
+            ],
+            [
+              116.35000001320972,
+              39.94517167734894
+            ],
+            [
+              116.34992425706315,
+              39.9451262708621
+            ],
+            [
+              116.34984441508914,
+              39.945088508420746
+            ],
+            [
+              116.34976125620953,
+              39.94505875369785
+            ],
+            [
+              116.34967558128982,
+              39.945037293247644
+            ],
+            [
+              116.34958821542631,
+              39.945024333746005
+            ],
+            [
+              116.3495,
+              39.94502000000001
+            ],
+            [
+              116.3494117845737,
+              39.945024333746005
+            ],
+            [
+              116.3493244187102,
+              39.945037293247644
+            ],
+            [
+              116.34923874379048,
+              39.94505875369785
+            ],
+            [
+              116.34915558491087,
+              39.945088508420746
+            ],
+            [
+              116.34907574293686,
+              39.9451262708621
+            ],
+            [
+              116.34899998679029,
+              39.94517167734894
+            ],
+            [
+              116.34892904604426,
+              39.94522429059198
+            ],
+            [
+              116.34886360389694,
+              39.94528360389694
+            ],
+            [
+              116.34880429059199,
+              39.945349046044264
+            ],
+            [
+              116.34875167734893,
+              39.94541998679029
+            ],
+            [
+              116.3487062708621,
+              39.94549574293686
+            ],
+            [
+              116.34866850842074,
+              39.94557558491088
+            ],
+            [
+              116.34863875369784,
+              39.94565874379048
+            ],
+            [
+              116.34861729324764,
+              39.94574441871019
+            ],
+            [
+              116.348604333746,
+              39.94583178457371
+            ],
+            [
+              116.3486,
+              39.94592000000001
+            ],
+            [
+              116.348604333746,
+              39.9460082154263
+            ],
+            [
+              116.34861729324764,
+              39.946095581289825
+            ],
+            [
+              116.34863875369784,
+              39.946181256209535
+            ],
+            [
+              116.34866850842074,
+              39.94626441508914
+            ],
+            [
+              116.3487062708621,
+              39.94634425706315
+            ],
+            [
+              116.34875167734893,
+              39.946420013209725
+            ],
+            [
+              116.34880429059199,
+              39.94649095395575
+            ],
+            [
+              116.34886360389694,
+              39.94655639610308
+            ],
+            [
+              116.34892904604426,
+              39.946615709408036
+            ],
+            [
+              116.34899998679029,
+              39.94666832265108
+            ],
+            [
+              116.34907574293686,
+              39.94671372913792
+            ],
+            [
+              116.34915558491087,
+              39.94675149157927
+            ],
+            [
+              116.34923874379048,
+              39.946781246302166
+            ],
+            [
+              116.3493244187102,
+              39.94680270675237
+            ],
+            [
+              116.3494117845737,
+              39.94681566625401
+            ],
+            [
+              116.3495,
+              39.94682000000001
+            ],
+            [
+              116.34958821542631,
+              39.94681566625401
+            ],
+            [
+              116.34967558128982,
+              39.94680270675237
+            ],
+            [
+              116.34976125620953,
+              39.946781246302166
+            ],
+            [
+              116.34984441508914,
+              39.94675149157927
+            ],
+            [
+              116.34992425706315,
+              39.94671372913792
+            ],
+            [
+              116.35000001320972,
+              39.94666832265108
+            ],
+            [
+              116.35007095395575,
+              39.946615709408036
+            ],
+            [
+              116.35013639610307,
+              39.94655639610308
+            ],
+            [
+              116.35019570940803,
+              39.94649095395575
+            ],
+            [
+              116.35024832265108,
+              39.946420013209725
+            ],
+            [
+              116.35029372913792,
+              39.94634425706315
+            ],
+            [
+              116.35033149157927,
+              39.94626441508914
+            ],
+            [
+              116.35036124630217,
+              39.946181256209535
+            ],
+            [
+              116.35038270675237,
+              39.946095581289825
+            ],
+            [
+              116.35039566625402,
+              39.9460082154263
+            ],
+            [
+              116.35040000000001,
+              39.94592000000001
+            ],
+            [
+              116.35039566625402,
+              39.94583178457371
+            ]
+          ]
+        ]
+      }
+    }
+  ],
+  "parent_area_id": "dazhongsi_ai_industry_cluster"
+}

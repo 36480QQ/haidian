@@ -59,14 +59,19 @@
         "submissions/MikuFuwa/jingzhang-ai-corridor-v2/self_check.json",
         "submissions/MikuFuwa/jingzhang-ai-corridor-v2/sources.json",
         "submissions/MikuFuwa/jingzhang-ai-corridor-v2/standard_matrix.json",
+        "submissions/MikuFuwa/jingzhang-ai-corridor-v2/visual/assets/detail_beijing_ai_origin.json",
+        "submissions/MikuFuwa/jingzhang-ai-corridor-v2/visual/assets/detail_dazhongsi.json",
+        "submissions/MikuFuwa/jingzhang-ai-corridor-v2/visual/assets/detail_zhongzhiyuan.json",
         "submissions/MikuFuwa/jingzhang-ai-corridor-v2/visual/assets/overview.svg",
+        "submissions/MikuFuwa/jingzhang-ai-corridor-v2/visual/assets/scenario_nodes.json",
+        "submissions/MikuFuwa/jingzhang-ai-corridor-v2/visual/assets/topology_check.json",
         "submissions/MikuFuwa/jingzhang-ai-corridor-v2/visual/index.en.html",
         "submissions/MikuFuwa/jingzhang-ai-corridor-v2/visual/index.html"
       ],
       "ai_package_stages": {
         "submissions/MikuFuwa/jingzhang-ai-corridor-v2": "formal"
       },
-      "total_bytes": 1017100,
+      "total_bytes": 5887453,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -108,11 +113,11 @@
       ],
       "metrics": {
         "site_area_sqm": 11412825.386,
-        "green_space_area_sqm": 3049825.9,
-        "public_space_area_sqm": 1411219.167,
-        "building_footprint_area_sqm": 440855.459,
-        "green_ratio": 0.267228,
-        "public_space_ratio": 0.123652
+        "green_space_area_sqm": 2550859.082,
+        "public_space_area_sqm": 1326256.8,
+        "building_footprint_area_sqm": 125571.357,
+        "green_ratio": 0.223508,
+        "public_space_ratio": 0.116208
       }
     },
     "stderr": ""
@@ -125,9 +130,12 @@
       "issues": [],
       "metrics_seen": {
         "site_area_sqm": 11412825.386,
-        "green_ratio": 0.267228,
-        "public_space_ratio": 0.123652,
-        "building_footprint_area_sqm": 440855.459
+        "green_ratio": 0.223508,
+        "public_space_ratio": 0.116208,
+        "building_count": 87.0,
+        "road_segment_count": 28.0,
+        "building_density": 0.011003,
+        "key_area_count": 3.0
       }
     },
     "stderr": ""
@@ -148,8 +156,8 @@
           "source": 6,
           "standard": 3,
           "depth": 15,
-          "data": 9,
-          "metric": 12
+          "data": 10,
+          "metric": 18
         }
       }
     },

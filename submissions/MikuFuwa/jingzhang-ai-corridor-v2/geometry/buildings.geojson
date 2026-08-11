@@ -1,4146 +1,4773 @@
 {
   "type": "FeatureCollection",
-  "name": "buildings_v2",
+  "name": "buildings",
+  "crs_note": "Coordinates stored as EPSG:4326 lon/lat. Areas recomputed via EPSG:4548.",
+  "equal_area_projection": "EPSG:4548",
   "features": [
     {
       "type": "Feature",
-      "id": "BLDG-001",
       "properties": {
         "id": "BLDG-001",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "lab",
-        "name_zh": "概念建筑基底-1",
+        "name_zh": "实验室组团-1",
+        "name_en": "lab-1",
         "parent_land_use": "LU-001",
-        "area_sqm_declared": 4193.661
+        "form_logic": "U",
+        "concept_only": true,
+        "area_sqm_declared": 1062.375
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3406484,
-              39.9419167
+              116.34093540242812,
+              39.947572014483534
             ],
             [
-              116.3406484,
-              39.943375
+              116.34160669712995,
+              39.947572014483534
             ],
             [
-              116.3409514,
-              39.943375
+              116.34160669712995,
+              39.947840658396046
             ],
             [
-              116.3409514,
-              39.9419167
+              116.3414750208681,
+              39.947840658396046
             ],
             [
-              116.3406484,
-              39.9419167
+              116.3414750208681,
+              39.9476730191188
+            ],
+            [
+              116.34106707868996,
+              39.9476730191188
+            ],
+            [
+              116.34106707868996,
+              39.947840658396046
+            ],
+            [
+              116.34093540242812,
+              39.947840658396046
+            ],
+            [
+              116.34093540242812,
+              39.947572014483534
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-001"
     },
     {
       "type": "Feature",
-      "id": "BLDG-002",
       "properties": {
         "id": "BLDG-002",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "incubator",
-        "name_zh": "概念建筑基底-2",
+        "name_zh": "孵化器-2",
+        "name_en": "incubator-2",
         "parent_land_use": "LU-001",
-        "area_sqm_declared": 4193.661
+        "form_logic": "L",
+        "concept_only": true,
+        "area_sqm_declared": 1008.791
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3411534,
-              39.9419167
+              116.3416380611263,
+              39.953077691337484
             ],
             [
-              116.3411534,
-              39.943375
+              116.34238480474896,
+              39.95295593828605
             ],
             [
-              116.3414564,
-              39.943375
+              116.34241289877959,
+              39.953057323203346
             ],
             [
-              116.3414564,
-              39.9419167
+              116.34179832717933,
+              39.953157526225354
             ],
             [
-              116.3411534,
-              39.9419167
+              116.34185285718127,
+              39.95335431250381
+            ],
+            [
+              116.34172068515886,
+              39.953375862533235
+            ],
+            [
+              116.3416380611263,
+              39.953077691337484
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-002"
     },
     {
       "type": "Feature",
-      "id": "BLDG-003",
       "properties": {
         "id": "BLDG-003",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "office",
-        "name_zh": "概念建筑基底-3",
+        "name_zh": "科创办公-3",
+        "name_en": "office-3",
         "parent_land_use": "LU-001",
-        "area_sqm_declared": 4193.66
+        "form_logic": "U",
+        "concept_only": true,
+        "area_sqm_declared": 1351.115
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3416585,
-              39.9419167
+              116.34059966716165,
+              39.94860469815721
             ],
             [
-              116.3416585,
-              39.943375
+              116.34134642500719,
+              39.94868520191231
             ],
             [
-              116.3419615,
-              39.943375
+              116.34129575330371,
+              39.948961766640885
             ],
             [
-              116.3419615,
-              39.9419167
+              116.3411377176714,
+              39.94894472970995
             ],
             [
-              116.3416585,
-              39.9419167
+              116.3411661789152,
+              39.948789389043924
+            ],
+            [
+              116.34073549233429,
+              39.9487429591507
+            ],
+            [
+              116.34070703109049,
+              39.94889829981672
+            ],
+            [
+              116.34054899545818,
+              39.948881262885784
+            ],
+            [
+              116.34059966716165,
+              39.94860469815721
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-003"
     },
     {
       "type": "Feature",
-      "id": "BLDG-004",
       "properties": {
         "id": "BLDG-004",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "mixed_use",
-        "name_zh": "概念建筑基底-4",
-        "parent_land_use": "LU-001",
-        "area_sqm_declared": 4193.441
+        "name_zh": "混合底商-4",
+        "name_en": "mixed_use-4",
+        "parent_land_use": "LU-002",
+        "form_logic": "L",
+        "concept_only": true,
+        "area_sqm_declared": 1033.574
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3406484,
-              39.9455625
+              116.34223367724415,
+              39.95603631277715
             ],
             [
-              116.3406484,
-              39.9470208
+              116.34284747949445,
+              39.95593623519405
             ],
             [
-              116.3409514,
-              39.9470208
+              116.34288603048158,
+              39.95607535687059
             ],
             [
-              116.3409514,
-              39.9455625
+              116.3424535963661,
+              39.956145863228464
             ],
             [
-              116.3406484,
-              39.9455625
+              116.34248236302912,
+              39.95624967552188
+            ],
+            [
+              116.3423009948943,
+              39.956279246747094
+            ],
+            [
+              116.34223367724415,
+              39.95603631277715
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-004"
     },
     {
       "type": "Feature",
-      "id": "BLDG-005",
       "properties": {
         "id": "BLDG-005",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "education",
-        "name_zh": "概念建筑基底-5",
+        "name_zh": "教育转化-5",
+        "name_en": "education-5",
         "parent_land_use": "LU-002",
-        "area_sqm_declared": 4865.46
+        "form_logic": "R",
+        "concept_only": true,
+        "area_sqm_declared": 2862.178
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3403,
-              39.9565
+              116.34075601776073,
+              39.95942623120399
             ],
             [
-              116.3403,
-              39.9579583
+              116.34090031868992,
+              39.95901313567831
             ],
             [
-              116.3406517,
-              39.9579583
+              116.34018314471746,
+              39.95886573116262
             ],
             [
-              116.3406517,
-              39.9565
+              116.34014515301702,
+              39.95897449138719
             ],
             [
-              116.3403,
-              39.9565
+              116.34013614374287,
+              39.95929882525662
+            ],
+            [
+              116.34075601776073,
+              39.95942623120399
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-005"
     },
     {
       "type": "Feature",
-      "id": "BLDG-006",
       "properties": {
         "id": "BLDG-006",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "retail",
-        "name_zh": "概念建筑基底-6",
+        "name_zh": "配套商业-6",
+        "name_en": "retail-6",
         "parent_land_use": "LU-002",
-        "area_sqm_declared": 4865.459
+        "form_logic": "L",
+        "concept_only": true,
+        "area_sqm_declared": 1072.763
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3408861,
-              39.9565
+              116.34160847503263,
+              39.95922217145827
             ],
             [
-              116.3408861,
-              39.9579583
+              116.34172534943579,
+              39.958887590847574
             ],
             [
-              116.3412377,
-              39.9579583
+              116.34192375445664,
+              39.958928370068705
             ],
             [
-              116.3412377,
-              39.9565
+              116.3418600425186,
+              39.95911076055426
             ],
             [
-              116.3408861,
-              39.9565
+              116.34211701575221,
+              39.959163577606326
+            ],
+            [
+              116.3420638532871,
+              39.95931576773147
+            ],
+            [
+              116.34160847503263,
+              39.95922217145827
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-006"
     },
     {
       "type": "Feature",
-      "id": "BLDG-007",
       "properties": {
         "id": "BLDG-007",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "community_service",
-        "name_zh": "概念建筑基底-7",
+        "name_zh": "社区服务-7",
+        "name_en": "community_service-7",
         "parent_land_use": "LU-002",
-        "area_sqm_declared": 4865.458
+        "form_logic": "R",
+        "concept_only": true,
+        "area_sqm_declared": 1185.88
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3414721,
-              39.9565
+              116.34159762598401,
+              39.95521719624755
             ],
             [
-              116.3414721,
-              39.9579583
+              116.34197203682182,
+              39.955156150313435
             ],
             [
-              116.3418237,
-              39.9579583
+              116.34206053686731,
+              39.95547552669307
             ],
             [
-              116.3418237,
-              39.9565
+              116.3416861260295,
+              39.95553657262719
             ],
             [
-              116.3414721,
-              39.9565
+              116.34159762598401,
+              39.95521719624755
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-007"
     },
     {
       "type": "Feature",
-      "id": "BLDG-008",
       "properties": {
         "id": "BLDG-008",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "cultural",
-        "name_zh": "概念建筑基底-8",
-        "parent_land_use": "LU-002",
-        "area_sqm_declared": 4865.204
+        "name_zh": "文化展示-8",
+        "name_en": "cultural-8",
+        "parent_land_use": "LU-003",
+        "form_logic": "R",
+        "concept_only": true,
+        "area_sqm_declared": 1102.726
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3403,
-              39.9601458
+              116.34046049914826,
+              39.97927597295097
             ],
             [
-              116.3403,
-              39.9616042
+              116.34041576101919,
+              39.97903179350416
             ],
             [
-              116.3406517,
-              39.9616042
+              116.33996326288887,
+              39.97908057477762
             ],
             [
-              116.3406517,
-              39.9601458
+              116.33997921660065,
+              39.979327857310246
             ],
             [
-              116.3403,
-              39.9601458
+              116.34046049914826,
+              39.97927597295097
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-008"
     },
     {
       "type": "Feature",
-      "id": "BLDG-009",
       "properties": {
         "id": "BLDG-009",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "talent_apartment",
-        "name_zh": "概念建筑基底-9",
+        "name_zh": "人才公寓-9",
+        "name_en": "talent_apartment-9",
         "parent_land_use": "LU-003",
-        "area_sqm_declared": 5179.491
+        "form_logic": "R",
+        "concept_only": true,
+        "area_sqm_declared": 1972.436
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3401368,
-              39.9710834
+              116.34137438054057,
+              39.98187520247007
             ],
             [
-              116.3401368,
-              39.9725417
+              116.34188067631001,
+              39.9819792640863
             ],
             [
-              116.3405112,
-              39.9725417
+              116.34174680915402,
+              39.982362490469406
             ],
             [
-              116.3405112,
-              39.9710834
+              116.34124051338458,
+              39.98225842885318
             ],
             [
-              116.3401368,
-              39.9710834
+              116.34137438054057,
+              39.98187520247007
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-009"
     },
     {
       "type": "Feature",
-      "id": "BLDG-010",
       "properties": {
         "id": "BLDG-010",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "ai_r_and_d",
-        "name_zh": "概念建筑基底-10",
+        "name_zh": "AI研发楼-10",
+        "name_en": "ai_r_and_d-10",
         "parent_land_use": "LU-003",
-        "area_sqm_declared": 5179.49
+        "form_logic": "U",
+        "concept_only": true,
+        "area_sqm_declared": 1442.776
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3407608,
-              39.9710834
+              116.34137063968653,
+              39.9786619628582
             ],
             [
-              116.3407608,
-              39.9725417
+              116.3415553927041,
+              39.97813306366581
             ],
             [
-              116.3411352,
-              39.9725417
+              116.34205065916203,
+              39.97823485836999
             ],
             [
-              116.3411352,
-              39.9710834
+              116.34201573183859,
+              39.97833484609092
             ],
             [
-              116.3407608,
-              39.9710834
+              116.34165081592631,
+              39.97825984301581
+            ],
+            [
+              116.34153591755563,
+              39.97858876676634
+            ],
+            [
+              116.3419008334679,
+              39.97866376984145
+            ],
+            [
+              116.34186590614446,
+              39.978763757562376
+            ],
+            [
+              116.34137063968653,
+              39.9786619628582
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-010"
     },
     {
       "type": "Feature",
-      "id": "BLDG-011",
       "properties": {
         "id": "BLDG-011",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "lab",
-        "name_zh": "概念建筑基底-11",
+        "name_zh": "实验室组团-11",
+        "name_en": "lab-11",
         "parent_land_use": "LU-003",
-        "area_sqm_declared": 5179.489
+        "form_logic": "L",
+        "concept_only": true,
+        "area_sqm_declared": 1076.192
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3413848,
-              39.9710834
+              116.34012334489613,
+              39.97446939642461
             ],
             [
-              116.3413848,
-              39.9725417
+              116.34029393483836,
+              39.97398104238383
             ],
             [
-              116.3417592,
-              39.9725417
+              116.34041596052252,
+              39.97400612296061
             ],
             [
-              116.3417592,
-              39.9710834
+              116.34027806726382,
+              39.97440087501458
             ],
             [
-              116.3413848,
-              39.9710834
+              116.34077228678183,
+              39.97450245453572
+            ],
+            [
+              116.3407395900983,
+              39.97459605652252
+            ],
+            [
+              116.34012334489613,
+              39.97446939642461
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-011"
     },
     {
       "type": "Feature",
-      "id": "BLDG-012",
       "properties": {
         "id": "BLDG-012",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "incubator",
-        "name_zh": "概念建筑基底-12",
-        "parent_land_use": "LU-003",
-        "area_sqm_declared": 5179.219
+        "name_zh": "孵化器-12",
+        "name_en": "incubator-12",
+        "parent_land_use": "LU-004",
+        "form_logic": "U",
+        "concept_only": true,
+        "area_sqm_declared": 1007.344
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3401368,
-              39.9747292
+              116.34128408137448,
+              39.98773671905997
             ],
             [
-              116.3401368,
-              39.9761875
+              116.34169118392059,
+              39.987820392974456
             ],
             [
-              116.3405112,
-              39.9761875
+              116.34159078485658,
+              39.98810780903171
             ],
             [
-              116.3405112,
-              39.9747292
+              116.3414394871726,
+              39.98807671202779
             ],
             [
-              116.3401368,
-              39.9747292
+              116.34149934614437,
+              39.98790535156913
+            ],
+            [
+              116.34139483896622,
+              39.98788387166248
+            ],
+            [
+              116.34133497999446,
+              39.98805523212114
+            ],
+            [
+              116.34118368231047,
+              39.98802413511722
+            ],
+            [
+              116.34128408137448,
+              39.98773671905997
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-012"
     },
     {
       "type": "Feature",
-      "id": "BLDG-013",
       "properties": {
         "id": "BLDG-013",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "office",
-        "name_zh": "概念建筑基底-13",
+        "name_zh": "科创办公-13",
+        "name_en": "office-13",
         "parent_land_use": "LU-004",
-        "area_sqm_declared": 4348.53
+        "form_logic": "L",
+        "concept_only": true,
+        "area_sqm_declared": 876.251
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3405668,
-              39.9856667
+              116.34099622473563,
+              39.98645304882391
             ],
             [
-              116.3405668,
-              39.987125
+              116.34109355744779,
+              39.98617441092379
             ],
             [
-              116.3408812,
-              39.987125
+              116.34125559751185,
+              39.986207715865234
             ],
             [
-              116.3408812,
-              39.9856667
+              116.34120168330399,
+              39.98636205803172
             ],
             [
-              116.3405668,
-              39.9856667
+              116.34153194733682,
+              39.98642993892489
+            ],
+            [
+              116.34148852883251,
+              39.986554234658534
+            ],
+            [
+              116.34099622473563,
+              39.98645304882391
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-013"
     },
     {
       "type": "Feature",
-      "id": "BLDG-014",
       "properties": {
         "id": "BLDG-014",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "mixed_use",
-        "name_zh": "概念建筑基底-14",
+        "name_zh": "混合底商-14",
+        "name_en": "mixed_use-14",
         "parent_land_use": "LU-004",
-        "area_sqm_declared": 4348.529
+        "form_logic": "U",
+        "concept_only": true,
+        "area_sqm_declared": 1327.777
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3410908,
-              39.9856667
+              116.340472257667,
+              39.98454288313715
             ],
             [
-              116.3410908,
-              39.987125
+              116.34052432803932,
+              39.98439381938583
             ],
             [
-              116.3414052,
-              39.987125
+              116.3406514174096,
+              39.98441994072848
             ],
             [
-              116.3414052,
-              39.9856667
+              116.34059934703728,
+              39.98456900447981
             ],
             [
-              116.3410908,
-              39.9856667
+              116.34079071327963,
+              39.98460833698399
+            ],
+            [
+              116.34089406008204,
+              39.98431248232866
+            ],
+            [
+              116.34038423822707,
+              39.984207695977645
+            ],
+            [
+              116.34030810597152,
+              39.98442564255851
+            ],
+            [
+              116.34031356556908,
+              39.98451026632068
+            ],
+            [
+              116.340472257667,
+              39.98454288313715
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-014"
     },
     {
       "type": "Feature",
-      "id": "BLDG-015",
       "properties": {
         "id": "BLDG-015",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "education",
-        "name_zh": "概念建筑基底-15",
-        "parent_land_use": "LU-004",
-        "area_sqm_declared": 4348.529
+        "name_zh": "教育转化-15",
+        "name_en": "education-15",
+        "parent_land_use": "LU-005",
+        "form_logic": "R",
+        "concept_only": true,
+        "area_sqm_declared": 886.582
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3416148,
-              39.9856667
+              116.34219741798437,
+              40.006799785404795
             ],
             [
-              116.3416148,
-              39.987125
+              116.34261758200573,
+              40.006886143912574
             ],
             [
-              116.3419292,
-              39.987125
+              116.34254504978351,
+              40.00709378454687
             ],
             [
-              116.3419292,
-              39.9856667
+              116.34212488576215,
+              40.00700742603909
             ],
             [
-              116.3416148,
-              39.9856667
+              116.34219741798437,
+              40.006799785404795
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-015"
     },
     {
       "type": "Feature",
-      "id": "BLDG-016",
       "properties": {
         "id": "BLDG-016",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "retail",
-        "name_zh": "概念建筑基底-16",
-        "parent_land_use": "LU-004",
-        "area_sqm_declared": 2914.78
+        "name_zh": "配套商业-16",
+        "name_en": "retail-16",
+        "parent_land_use": "LU-005",
+        "form_logic": "R",
+        "concept_only": true,
+        "area_sqm_declared": 1329.836
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3407175,
-              39.9907708
+              116.34193391067735,
+              40.00475546555075
             ],
             [
-              116.3408812,
-              39.9907708
+              116.34236404472148,
+              40.00484387324943
             ],
             [
-              116.3408812,
-              39.9893125
+              116.34225777423096,
+              40.00514809765317
             ],
             [
-              116.3406234,
-              39.9893125
+              116.34182764018684,
+              40.00505968995449
             ],
             [
-              116.3407175,
-              39.9907708
+              116.34193391067735,
+              40.00475546555075
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-016"
     },
     {
       "type": "Feature",
-      "id": "BLDG-017",
       "properties": {
         "id": "BLDG-017",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "community_service",
-        "name_zh": "概念建筑基底-17",
-        "parent_land_use": "LU-005",
-        "area_sqm_declared": 2622.829
+        "name_zh": "社区服务-17",
+        "name_en": "community_service-17",
+        "parent_land_use": "LU-006",
+        "form_logic": "L",
+        "concept_only": true,
+        "area_sqm_declared": 1489.187
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3414231,
-              40.0017083
+              116.34241684358568,
+              40.017082998241605
             ],
             [
-              116.3415775,
-              40.0017083
+              116.34247711589605,
+              40.016754033671376
             ],
             [
-              116.3415775,
-              40.00025
+              116.34281666709651,
+              40.01679063877281
             ],
             [
-              116.341376,
-              40.00025
+              116.34284595354295,
+              40.01663079417406
             ],
             [
-              116.341376,
-              40.0009772
+              116.3422980184482,
+              40.01657172437929
             ],
             [
-              116.3414231,
-              40.0017083
+              116.3422330035918,
+              40.016926573632006
+            ],
+            [
+              116.34223970252008,
+              40.01706390166157
+            ],
+            [
+              116.34241684358568,
+              40.017082998241605
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-017"
     },
     {
       "type": "Feature",
-      "id": "BLDG-018",
       "properties": {
         "id": "BLDG-018",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "cultural",
-        "name_zh": "概念建筑基底-18",
-        "parent_land_use": "LU-005",
-        "area_sqm_declared": 2786.309
+        "name_zh": "文化展示-18",
+        "name_en": "cultural-18",
+        "parent_land_use": "LU-006",
+        "form_logic": "L",
+        "concept_only": true,
+        "area_sqm_declared": 1169.25
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3417118,
-              40.00025
+              116.34251246111619,
+              40.020810177697136
             ],
             [
-              116.3417118,
-              40.0017083
+              116.34298762105989,
+              40.020810177697136
             ],
             [
-              116.3419133,
-              40.0017083
+              116.34298762105989,
+              40.020967484919844
             ],
             [
-              116.3419133,
-              40.00025
+              116.34271753712078,
+              40.020967484919844
             ],
             [
-              116.3417118,
-              40.00025
+              116.34271753712078,
+              40.02120446288932
+            ],
+            [
+              116.34251246111619,
+              40.02120446288932
+            ],
+            [
+              116.34251246111619,
+              40.020810177697136
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-018"
     },
     {
       "type": "Feature",
-      "id": "BLDG-019",
       "properties": {
         "id": "BLDG-019",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "talent_apartment",
-        "name_zh": "概念建筑基底-19",
-        "parent_land_use": "LU-005",
-        "area_sqm_declared": 2786.309
+        "name_zh": "人才公寓-19",
+        "name_en": "talent_apartment-19",
+        "parent_land_use": "LU-013",
+        "form_logic": "R",
+        "concept_only": true,
+        "area_sqm_declared": 1151.343
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3420476,
-              40.00025
+              116.34702665168402,
+              39.94312950850689
             ],
             [
-              116.3420476,
-              40.0017083
+              116.34748860394956,
+              39.9430797080364
             ],
             [
-              116.3422491,
-              40.0017083
+              116.34753578944708,
+              39.94333724515122
             ],
             [
-              116.3422491,
-              40.00025
+              116.34707383718154,
+              39.94338704562171
             ],
             [
-              116.3420476,
-              40.00025
+              116.34702665168402,
+              39.94312950850689
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-019"
     },
     {
       "type": "Feature",
-      "id": "BLDG-020",
       "properties": {
         "id": "BLDG-020",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "ai_r_and_d",
-        "name_zh": "概念建筑基底-20",
-        "parent_land_use": "LU-006",
-        "area_sqm_declared": 529.711
+        "name_zh": "AI研发楼-20",
+        "name_en": "ai_r_and_d-20",
+        "parent_land_use": "LU-013",
+        "form_logic": "L",
+        "concept_only": true,
+        "area_sqm_declared": 678.384
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.342202,
-              40.0162917
+              116.3480287419032,
+              39.95135358438501
             ],
             [
-              116.3422048,
-              40.0162917
+              116.34839388954181,
+              39.951294048772155
             ],
             [
-              116.3422048,
-              40.0148334
+              116.348423627419,
+              39.95140136595492
             ],
             [
-              116.3421309,
-              40.0148334
+              116.34819838549284,
+              39.9514380905964
             ],
             [
-              116.342202,
-              40.0162917
+              116.34825624858667,
+              39.95164690523957
+            ],
+            [
+              116.34811634287422,
+              39.951669716210944
+            ],
+            [
+              116.3480287419032,
+              39.95135358438501
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-020"
     },
     {
       "type": "Feature",
-      "id": "BLDG-021",
       "properties": {
         "id": "BLDG-021",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "lab",
-        "name_zh": "概念建筑基底-21",
-        "parent_land_use": "LU-006",
-        "area_sqm_declared": 1379.331
+        "name_zh": "实验室组团-21",
+        "name_en": "lab-21",
+        "parent_land_use": "LU-013",
+        "form_logic": "U",
+        "concept_only": true,
+        "area_sqm_declared": 1402.246
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3422713,
-              40.0148334
+              116.34609999884323,
+              39.950180394351534
             ],
             [
-              116.3422713,
-              40.0162917
+              116.34677735601238,
+              39.950069954436486
             ],
             [
-              116.342371,
-              40.0162917
+              116.346865460773,
+              39.95038790432365
             ],
             [
-              116.342371,
-              40.0148334
+              116.34671171673416,
+              39.95041297156936
             ],
             [
-              116.3422713,
-              40.0148334
+              116.34665629127781,
+              39.95021295380109
+            ],
+            [
+              116.34628642218634,
+              39.95027325922474
+            ],
+            [
+              116.34634184764269,
+              39.950473276992994
+            ],
+            [
+              116.34618810360385,
+              39.9504983442387
+            ],
+            [
+              116.34609999884323,
+              39.950180394351534
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-021"
     },
     {
       "type": "Feature",
-      "id": "BLDG-022",
       "properties": {
         "id": "BLDG-022",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "incubator",
-        "name_zh": "概念建筑基底-22",
-        "parent_land_use": "LU-006",
-        "area_sqm_declared": 1379.331
+        "name_zh": "孵化器-22",
+        "name_en": "incubator-22",
+        "parent_land_use": "LU-013",
+        "form_logic": "L",
+        "concept_only": true,
+        "area_sqm_declared": 709.46
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3424376,
-              40.0148334
+              116.3461172685529,
+              39.9401992452582
             ],
             [
-              116.3424376,
-              40.0162917
+              116.34645953300473,
+              39.94016234765642
             ],
             [
-              116.3425373,
-              40.0162917
+              116.34648303580434,
+              39.94029062527384
             ],
             [
-              116.3425373,
-              40.0148334
+              116.3463080024612,
+              39.940309494632196
             ],
             [
-              116.3424376,
-              40.0148334
+              116.34634021474564,
+              39.94048530837221
+            ],
+            [
+              116.34617298363695,
+              39.940503336615635
+            ],
+            [
+              116.3461172685529,
+              39.9401992452582
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-022"
     },
     {
       "type": "Feature",
-      "id": "BLDG-023",
       "properties": {
         "id": "BLDG-023",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "office",
-        "name_zh": "概念建筑基底-23",
-        "parent_land_use": "LU-013",
-        "area_sqm_declared": 5181.658
+        "name_zh": "科创办公-23",
+        "name_en": "office-23",
+        "parent_land_use": "LU-014",
+        "form_logic": "R",
+        "concept_only": true,
+        "area_sqm_declared": 1111.343
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3463768,
-              39.9419167
+              116.34708638069094,
+              39.95416746818172
             ],
             [
-              116.3463768,
-              39.943375
+              116.34751761636971,
+              39.95416746818172
             ],
             [
-              116.3467512,
-              39.943375
+              116.34751761636971,
+              39.95443906790679
             ],
             [
-              116.3467512,
-              39.9419167
+              116.34708638069094,
+              39.95443906790679
             ],
             [
-              116.3463768,
-              39.9419167
+              116.34708638069094,
+              39.95416746818172
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-023"
     },
     {
       "type": "Feature",
-      "id": "BLDG-024",
       "properties": {
         "id": "BLDG-024",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "mixed_use",
-        "name_zh": "概念建筑基底-24",
-        "parent_land_use": "LU-013",
-        "area_sqm_declared": 5181.657
+        "name_zh": "混合底商-24",
+        "name_en": "mixed_use-24",
+        "parent_land_use": "LU-014",
+        "form_logic": "U",
+        "concept_only": true,
+        "area_sqm_declared": 2121.354
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3470008,
-              39.9419167
+              116.34828992780207,
+              39.96638479767679
             ],
             [
-              116.3470008,
-              39.943375
+              116.34903577093677,
+              39.966304392531505
             ],
             [
-              116.3473752,
-              39.943375
+              116.34911529684771,
+              39.96673844271072
             ],
             [
-              116.3473752,
-              39.9419167
+              116.34892410664453,
+              39.9667590538491
             ],
             [
-              116.3470008,
-              39.9419167
+              116.34887145076432,
+              39.966471659539906
+            ],
+            [
+              116.34850798803599,
+              39.96651084240842
+            ],
+            [
+              116.3485606439162,
+              39.966798236717615
+            ],
+            [
+              116.34836945371302,
+              39.966818847856004
+            ],
+            [
+              116.34828992780207,
+              39.96638479767679
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-024"
     },
     {
       "type": "Feature",
-      "id": "BLDG-025",
       "properties": {
         "id": "BLDG-025",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "education",
-        "name_zh": "概念建筑基底-25",
-        "parent_land_use": "LU-013",
-        "area_sqm_declared": 5181.656
+        "name_zh": "教育转化-25",
+        "name_en": "education-25",
+        "parent_land_use": "LU-014",
+        "form_logic": "R",
+        "concept_only": true,
+        "area_sqm_declared": 3110.858
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3476248,
-              39.9419167
+              116.3488713784081,
+              39.9537817192128
             ],
             [
-              116.3476248,
-              39.943375
+              116.3488713784081,
+              39.95433592219371
             ],
             [
-              116.3479992,
-              39.943375
+              116.34827980898619,
+              39.95433592219371
             ],
             [
-              116.3479992,
-              39.9419167
+              116.34827980898619,
+              39.9537817192128
             ],
             [
-              116.3476248,
-              39.9419167
+              116.3488713784081,
+              39.9537817192128
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-025"
     },
     {
       "type": "Feature",
-      "id": "BLDG-026",
       "properties": {
         "id": "BLDG-026",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "retail",
-        "name_zh": "概念建筑基底-26",
-        "parent_land_use": "LU-013",
-        "area_sqm_declared": 5181.386
+        "name_zh": "配套商业-26",
+        "name_en": "retail-26",
+        "parent_land_use": "LU-014",
+        "form_logic": "R",
+        "concept_only": true,
+        "area_sqm_declared": 2107.335
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3463768,
-              39.9455625
+              116.34828257087143,
+              39.958220846162305
             ],
             [
-              116.3463768,
-              39.9470208
+              116.34875526257288,
+              39.95831800095877
             ],
             [
-              116.3467512,
-              39.9470208
+              116.34860212424176,
+              39.95875639563681
             ],
             [
-              116.3467512,
-              39.9455625
+              116.34812943254032,
+              39.95865924084035
             ],
             [
-              116.3463768,
-              39.9455625
+              116.34828257087143,
+              39.958220846162305
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-026"
     },
     {
       "type": "Feature",
-      "id": "BLDG-027",
       "properties": {
         "id": "BLDG-027",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "community_service",
-        "name_zh": "概念建筑基底-27",
-        "parent_land_use": "LU-014",
-        "area_sqm_declared": 5180.606
+        "name_zh": "社区服务-27",
+        "name_en": "community_service-27",
+        "parent_land_use": "LU-015",
+        "form_logic": "L",
+        "concept_only": true,
+        "area_sqm_declared": 860.33
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3463768,
-              39.9565
+              116.34687713247948,
+              39.97748766502137
             ],
             [
-              116.3463768,
-              39.9579583
+              116.34687713247948,
+              39.977782709519914
             ],
             [
-              116.3467512,
-              39.9579583
+              116.3467432931244,
+              39.977782709519914
             ],
             [
-              116.3467512,
-              39.9565
+              116.3467432931244,
+              39.97759032889605
             ],
             [
-              116.3463768,
-              39.9565
+              116.34624446799694,
+              39.97759032889605
+            ],
+            [
+              116.34624446799694,
+              39.97748766502137
+            ],
+            [
+              116.34687713247948,
+              39.97748766502137
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-027"
     },
     {
       "type": "Feature",
-      "id": "BLDG-028",
       "properties": {
         "id": "BLDG-028",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "cultural",
-        "name_zh": "概念建筑基底-28",
-        "parent_land_use": "LU-014",
-        "area_sqm_declared": 5180.605
+        "name_zh": "文化展示-28",
+        "name_en": "cultural-28",
+        "parent_land_use": "LU-015",
+        "form_logic": "R",
+        "concept_only": true,
+        "area_sqm_declared": 2518.579
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3470008,
-              39.9565
+              116.34860161370126,
+              39.97844853096651
             ],
             [
-              116.3470008,
-              39.9579583
+              116.34860161370126,
+              39.97886470544659
             ],
             [
-              116.3473752,
-              39.9579583
+              116.34796360242326,
+              39.97886470544659
             ],
             [
-              116.3473752,
-              39.9565
+              116.34796360242326,
+              39.97844853096651
             ],
             [
-              116.3470008,
-              39.9565
+              116.34860161370126,
+              39.97844853096651
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-028"
     },
     {
       "type": "Feature",
-      "id": "BLDG-029",
       "properties": {
         "id": "BLDG-029",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "talent_apartment",
-        "name_zh": "概念建筑基底-29",
-        "parent_land_use": "LU-014",
-        "area_sqm_declared": 5180.605
+        "name_zh": "人才公寓-29",
+        "name_en": "talent_apartment-29",
+        "parent_land_use": "LU-015",
+        "form_logic": "L",
+        "concept_only": true,
+        "area_sqm_declared": 1428.926
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3476248,
-              39.9565
+              116.34817596200809,
+              39.978007834131795
             ],
             [
-              116.3476248,
-              39.9579583
+              116.3489591234667,
+              39.978007834131795
             ],
             [
-              116.3479992,
-              39.9579583
+              116.3489591234667,
+              39.97814936700992
             ],
             [
-              116.3479992,
-              39.9565
+              116.34836047354331,
+              39.97814936700992
             ],
             [
-              116.3476248,
-              39.9565
+              116.34836047354331,
+              39.97836508274754
+            ],
+            [
+              116.34817596200809,
+              39.97836508274754
+            ],
+            [
+              116.34817596200809,
+              39.978007834131795
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-029"
     },
     {
       "type": "Feature",
-      "id": "BLDG-030",
       "properties": {
         "id": "BLDG-030",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "ai_r_and_d",
-        "name_zh": "概念建筑基底-30",
-        "parent_land_use": "LU-014",
-        "area_sqm_declared": 5180.334
+        "name_zh": "AI研发楼-30",
+        "name_en": "ai_r_and_d-30",
+        "parent_land_use": "LU-015",
+        "form_logic": "R",
+        "concept_only": true,
+        "area_sqm_declared": 2372.677
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3463768,
-              39.9601458
+              116.34790394831282,
+              39.97767663854113
             ],
             [
-              116.3463768,
-              39.9616042
+              116.34853218726242,
+              39.977744365441964
             ],
             [
-              116.3467512,
-              39.9616042
+              116.34846065012619,
+              39.97813481311413
             ],
             [
-              116.3467512,
-              39.9601458
+              116.34783241117658,
+              39.9780670862133
             ],
             [
-              116.3463768,
-              39.9601458
+              116.34790394831282,
+              39.97767663854113
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-030"
     },
     {
       "type": "Feature",
-      "id": "BLDG-031",
       "properties": {
         "id": "BLDG-031",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "lab",
-        "name_zh": "概念建筑基底-31",
-        "parent_land_use": "LU-015",
-        "area_sqm_declared": 5179.483
+        "name_zh": "实验室组团-31",
+        "name_en": "lab-31",
+        "parent_land_use": "LU-016",
+        "form_logic": "R",
+        "concept_only": true,
+        "area_sqm_declared": 2302.933
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3463768,
-              39.9710834
+              116.34886408248931,
+              39.98988652152458
             ],
             [
-              116.3463768,
-              39.9725417
+              116.34886408248931,
+              39.99040109889968
             ],
             [
-              116.3467512,
-              39.9725417
+              116.34839218166061,
+              39.99040109889968
             ],
             [
-              116.3467512,
-              39.9710834
+              116.34839218166061,
+              39.98988652152458
             ],
             [
-              116.3463768,
-              39.9710834
+              116.34886408248931,
+              39.98988652152458
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-031"
     },
     {
       "type": "Feature",
-      "id": "BLDG-032",
       "properties": {
         "id": "BLDG-032",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "incubator",
-        "name_zh": "概念建筑基底-32",
-        "parent_land_use": "LU-015",
-        "area_sqm_declared": 5179.482
+        "name_zh": "孵化器-32",
+        "name_en": "incubator-32",
+        "parent_land_use": "LU-016",
+        "form_logic": "L",
+        "concept_only": true,
+        "area_sqm_declared": 1174.76
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3470008,
-              39.9710834
+              116.34796510100448,
+              39.98830819445335
             ],
             [
-              116.3470008,
-              39.9725417
+              116.3485670135225,
+              39.98824330565676
             ],
             [
-              116.3473752,
-              39.9725417
+              116.34859418283912,
+              39.988391595020694
             ],
             [
-              116.3473752,
-              39.9710834
+              116.34818559005402,
+              39.98843564310631
             ],
             [
-              116.3470008,
-              39.9710834
+              116.34821611829749,
+              39.988602265398185
+            ],
+            [
+              116.34802279856457,
+              39.98862310610917
+            ],
+            [
+              116.34796510100448,
+              39.98830819445335
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-032"
     },
     {
       "type": "Feature",
-      "id": "BLDG-033",
       "properties": {
         "id": "BLDG-033",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "office",
-        "name_zh": "概念建筑基底-33",
-        "parent_land_use": "LU-015",
-        "area_sqm_declared": 5179.481
+        "name_zh": "科创办公-33",
+        "name_en": "office-33",
+        "parent_land_use": "LU-016",
+        "form_logic": "R",
+        "concept_only": true,
+        "area_sqm_declared": 2057.569
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3476248,
-              39.9710834
+              116.34720630022669,
+              39.98567560886325
             ],
             [
-              116.3476248,
-              39.9725417
+              116.34720630022669,
+              39.986093817744916
             ],
             [
-              116.3479992,
-              39.9725417
+              116.34668755448719,
+              39.986093817744916
             ],
             [
-              116.3479992,
-              39.9710834
+              116.34668755448719,
+              39.98567560886325
             ],
             [
-              116.3476248,
-              39.9710834
+              116.34720630022669,
+              39.98567560886325
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-033"
     },
     {
       "type": "Feature",
-      "id": "BLDG-034",
       "properties": {
         "id": "BLDG-034",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "mixed_use",
-        "name_zh": "概念建筑基底-34",
-        "parent_land_use": "LU-015",
-        "area_sqm_declared": 5179.211
+        "name_zh": "混合底商-34",
+        "name_en": "mixed_use-34",
+        "parent_land_use": "LU-016",
+        "form_logic": "R",
+        "concept_only": true,
+        "area_sqm_declared": 2124.201
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3463768,
-              39.9747292
+              116.34807539390032,
+              39.99641536769591
             ],
             [
-              116.3463768,
-              39.9761875
+              116.34865117331141,
+              39.996477439229515
             ],
             [
-              116.3467512,
-              39.9761875
+              116.34858127375064,
+              39.99685894906094
             ],
             [
-              116.3467512,
-              39.9747292
+              116.34800549433955,
+              39.99679687752734
             ],
             [
-              116.3463768,
-              39.9747292
+              116.34807539390032,
+              39.99641536769591
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-034"
     },
     {
       "type": "Feature",
-      "id": "BLDG-035",
       "properties": {
         "id": "BLDG-035",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "education",
-        "name_zh": "概念建筑基底-35",
-        "parent_land_use": "LU-016",
-        "area_sqm_declared": 5178.395
+        "name_zh": "教育转化-35",
+        "name_en": "education-35",
+        "parent_land_use": "LU-017",
+        "form_logic": "U",
+        "concept_only": true,
+        "area_sqm_declared": 716.893
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3463768,
-              39.9856667
+              116.3487205218071,
+              40.00849037850011
             ],
             [
-              116.3463768,
-              39.987125
+              116.34878469628312,
+              40.00830666389027
             ],
             [
-              116.3467512,
-              39.987125
+              116.34839795416998,
+              40.008227174762
             ],
             [
-              116.3467512,
-              39.9856667
+              116.34833377969396,
+              40.008410889371845
             ],
             [
-              116.3463768,
-              39.9856667
+              116.34851836075792,
+              40.00844882728285
+            ],
+            [
+              116.3487205218071,
+              40.00849037850011
+            ]
+          ],
+          [
+            [
+              116.34852836634407,
+              40.008420183926944
+            ],
+            [
+              116.3485459463293,
+              40.00842379723321
+            ],
+            [
+              116.34853594074313,
+              40.00845244058911
+            ],
+            [
+              116.34851836075792,
+              40.00844882728285
+            ],
+            [
+              116.34852836634407,
+              40.008420183926944
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-035"
     },
     {
       "type": "Feature",
-      "id": "BLDG-036",
       "properties": {
         "id": "BLDG-036",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "retail",
-        "name_zh": "概念建筑基底-36",
-        "parent_land_use": "LU-016",
-        "area_sqm_declared": 5178.394
+        "name_zh": "配套商业-36",
+        "name_en": "retail-36",
+        "parent_land_use": "LU-017",
+        "form_logic": "R",
+        "concept_only": true,
+        "area_sqm_declared": 1461.668
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3470008,
-              39.9856667
+              116.34758352936205,
+              40.00828898334055
             ],
             [
-              116.3470008,
-              39.987125
+              116.34813514258967,
+              40.00840235929086
             ],
             [
-              116.3473752,
-              39.987125
+              116.348044055846,
+              40.00866311662948
             ],
             [
-              116.3473752,
-              39.9856667
+              116.34749244261839,
+              40.008549740679165
             ],
             [
-              116.3470008,
-              39.9856667
+              116.34758352936205,
+              40.00828898334055
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-036"
     },
     {
       "type": "Feature",
-      "id": "BLDG-037",
       "properties": {
         "id": "BLDG-037",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "community_service",
-        "name_zh": "概念建筑基底-37",
-        "parent_land_use": "LU-016",
-        "area_sqm_declared": 5178.393
+        "name_zh": "社区服务-37",
+        "name_en": "community_service-37",
+        "parent_land_use": "LU-017",
+        "form_logic": "R",
+        "concept_only": true,
+        "area_sqm_declared": 1800.483
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3476248,
-              39.9856667
+              116.34592953537516,
+              40.007985556528006
             ],
             [
-              116.3476248,
-              39.987125
+              116.34636084330701,
+              40.00803205340557
             ],
             [
-              116.3479992,
-              39.987125
+              116.34628173739914,
+              40.00846381121985
             ],
             [
-              116.3479992,
-              39.9856667
+              116.34585042946729,
+              40.00841731434228
             ],
             [
-              116.3476248,
-              39.9856667
+              116.34592953537516,
+              40.007985556528006
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-037"
     },
     {
       "type": "Feature",
-      "id": "BLDG-038",
       "properties": {
         "id": "BLDG-038",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "cultural",
-        "name_zh": "概念建筑基底-38",
-        "parent_land_use": "LU-016",
-        "area_sqm_declared": 5178.123
+        "name_zh": "文化展示-38",
+        "name_en": "cultural-38",
+        "parent_land_use": "LU-017",
+        "form_logic": "R",
+        "concept_only": true,
+        "area_sqm_declared": 1251.244
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3463768,
-              39.9893125
+              116.34723562344745,
+              40.00526133824578
             ],
             [
-              116.3463768,
-              39.9907708
+              116.34762528555288,
+              40.0053033455215
             ],
             [
-              116.3467512,
-              39.9907708
+              116.34756443790154,
+              40.0056354502865
             ],
             [
-              116.3467512,
-              39.9893125
+              116.3471747757961,
+              40.00559344301078
             ],
             [
-              116.3463768,
-              39.9893125
+              116.34723562344745,
+              40.00526133824578
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-038"
     },
     {
       "type": "Feature",
-      "id": "BLDG-039",
       "properties": {
         "id": "BLDG-039",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "talent_apartment",
-        "name_zh": "概念建筑基底-39",
-        "parent_land_use": "LU-017",
-        "area_sqm_declared": 5177.342
+        "name_zh": "人才公寓-39",
+        "name_en": "talent_apartment-39",
+        "parent_land_use": "LU-018",
+        "form_logic": "L",
+        "concept_only": true,
+        "area_sqm_declared": 1341.184
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3463768,
-              40.00025
+              116.34766616931884,
+              40.016587799793314
             ],
             [
-              116.3463768,
-              40.0017083
+              116.34785479070207,
+              40.01604782648964
             ],
             [
-              116.3467512,
-              40.0017083
+              116.34800652811404,
+              40.01607901387315
             ],
             [
-              116.3467512,
-              40.00025
+              116.34785856464781,
+              40.016502594277
             ],
             [
-              116.3463768,
-              40.00025
+              116.34828867531826,
+              40.01659099717157
+            ],
+            [
+              116.34824801740126,
+              40.01670739007139
+            ],
+            [
+              116.34766616931884,
+              40.016587799793314
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-039"
     },
     {
       "type": "Feature",
-      "id": "BLDG-040",
       "properties": {
         "id": "BLDG-040",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "ai_r_and_d",
-        "name_zh": "概念建筑基底-40",
-        "parent_land_use": "LU-017",
-        "area_sqm_declared": 5177.341
+        "name_zh": "AI研发楼-40",
+        "name_en": "ai_r_and_d-40",
+        "parent_land_use": "LU-018",
+        "form_logic": "U",
+        "concept_only": true,
+        "area_sqm_declared": 941.521
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3470008,
-              40.00025
+              116.3463172289946,
+              40.01420010937708
             ],
             [
-              116.3470008,
-              40.0017083
+              116.34667322928365,
+              40.01416173099209
             ],
             [
-              116.3473752,
-              40.0017083
+              116.34672523086914,
+              40.01444555417919
             ],
             [
-              116.3473752,
-              40.00025
+              116.34655891953788,
+              40.014463483266596
             ],
             [
-              116.3470008,
-              40.00025
+              116.3465302914857,
+              40.01430723216517
+            ],
+            [
+              116.34650691385917,
+              40.01430975237535
+            ],
+            [
+              116.34653554191135,
+              40.01446600347677
+            ],
+            [
+              116.34636923058008,
+              40.014483932564175
+            ],
+            [
+              116.3463172289946,
+              40.01420010937708
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-040"
     },
     {
       "type": "Feature",
-      "id": "BLDG-041",
       "properties": {
         "id": "BLDG-041",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "lab",
-        "name_zh": "概念建筑基底-41",
-        "parent_land_use": "LU-017",
-        "area_sqm_declared": 5177.341
+        "name_zh": "实验室组团-41",
+        "name_en": "lab-41",
+        "parent_land_use": "LU-018",
+        "form_logic": "L",
+        "concept_only": true,
+        "area_sqm_declared": 681.895
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3476248,
-              40.00025
+              116.34726248334017,
+              40.015003387699124
             ],
             [
-              116.3476248,
-              40.0017083
+              116.34777748513447,
+              40.015003387699124
             ],
             [
-              116.3479992,
-              40.0017083
+              116.34777748513447,
+              40.01511849792569
             ],
             [
-              116.3479992,
-              40.00025
+              116.34741254857524,
+              40.01511849792569
             ],
             [
-              116.3476248,
-              40.00025
+              116.34741254857524,
+              40.015202764008485
+            ],
+            [
+              116.34726248334017,
+              40.015202764008485
+            ],
+            [
+              116.34726248334017,
+              40.015003387699124
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-041"
     },
     {
       "type": "Feature",
-      "id": "BLDG-042",
       "properties": {
         "id": "BLDG-042",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "incubator",
-        "name_zh": "概念建筑基底-42",
-        "parent_land_use": "LU-017",
-        "area_sqm_declared": 5177.07
+        "name_zh": "孵化器-42",
+        "name_en": "incubator-42",
+        "parent_land_use": "LU-018",
+        "form_logic": "L",
+        "concept_only": true,
+        "area_sqm_declared": 1250.656
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3463768,
-              40.0038958
+              116.34821479985266,
+              40.0242779599894
             ],
             [
-              116.3463768,
-              40.0053542
+              116.34839482945227,
+              40.02479333728122
             ],
             [
-              116.3467512,
-              40.0053542
+              116.34822711852236,
+              40.02482780778538
             ],
             [
-              116.3467512,
-              40.0038958
+              116.34809202693097,
+              40.024441076166454
             ],
             [
-              116.3463768,
-              40.0038958
+              116.34780700759784,
+              40.02449965767997
+            ],
+            [
+              116.3477620695896,
+              40.02437101200708
+            ],
+            [
+              116.34821479985266,
+              40.0242779599894
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-042"
     },
     {
       "type": "Feature",
-      "id": "BLDG-043",
       "properties": {
         "id": "BLDG-043",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "office",
-        "name_zh": "概念建筑基底-43",
-        "parent_land_use": "LU-018",
-        "area_sqm_declared": 5176.218
+        "name_zh": "科创办公-43",
+        "name_en": "office-43",
+        "parent_land_use": "LU-019",
+        "form_logic": "R",
+        "concept_only": true,
+        "area_sqm_declared": 1867.489
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3463768,
-              40.0148334
+              116.34958530100793,
+              39.942067752779735
             ],
             [
-              116.3463768,
-              40.0162917
+              116.35007853722804,
+              39.942067752779735
             ],
             [
-              116.3467512,
-              40.0162917
+              116.35007853722804,
+              39.942466707883995
             ],
             [
-              116.3467512,
-              40.0148334
+              116.34958530100793,
+              39.942466707883995
             ],
             [
-              116.3463768,
-              40.0148334
+              116.34958530100793,
+              39.942067752779735
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-043"
     },
     {
       "type": "Feature",
-      "id": "BLDG-044",
       "properties": {
         "id": "BLDG-044",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "mixed_use",
-        "name_zh": "概念建筑基底-44",
-        "parent_land_use": "LU-018",
-        "area_sqm_declared": 5176.217
+        "name_zh": "混合底商-44",
+        "name_en": "mixed_use-44",
+        "parent_land_use": "LU-019",
+        "form_logic": "R",
+        "concept_only": true,
+        "area_sqm_declared": 2315.547
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3470008,
-              40.0148334
+              116.34889573761178,
+              39.946065265332294
             ],
             [
-              116.3470008,
-              40.0162917
+              116.3495147737586,
+              39.946065265332294
             ],
             [
-              116.3473752,
-              40.0162917
+              116.3495147737586,
+              39.94645943522069
             ],
             [
-              116.3473752,
-              40.0148334
+              116.34889573761178,
+              39.94645943522069
             ],
             [
-              116.3470008,
-              40.0148334
+              116.34889573761178,
+              39.946065265332294
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-044"
     },
     {
       "type": "Feature",
-      "id": "BLDG-045",
       "properties": {
         "id": "BLDG-045",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "education",
-        "name_zh": "概念建筑基底-45",
-        "parent_land_use": "LU-018",
-        "area_sqm_declared": 5176.216
+        "name_zh": "教育转化-45",
+        "name_en": "education-45",
+        "parent_land_use": "LU-019",
+        "form_logic": "L",
+        "concept_only": true,
+        "area_sqm_declared": 874.054
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3476248,
-              40.0148334
+              116.35027913592789,
+              39.94990630250219
             ],
             [
-              116.3476248,
-              40.0162917
+              116.35082614813032,
+              39.94981711472369
             ],
             [
-              116.3479992,
-              40.0162917
+              116.35085151117708,
+              39.94990864414616
             ],
             [
-              116.3479992,
-              40.0148334
+              116.35042382272813,
+              39.94997837674533
             ],
             [
-              116.3476248,
-              40.0148334
+              116.35051221043575,
+              39.950297347723364
+            ],
+            [
+              116.35039288668229,
+              39.95031680290269
+            ],
+            [
+              116.35027913592789,
+              39.94990630250219
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-045"
     },
     {
       "type": "Feature",
-      "id": "BLDG-046",
       "properties": {
         "id": "BLDG-046",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "retail",
-        "name_zh": "概念建筑基底-46",
-        "parent_land_use": "LU-018",
-        "area_sqm_declared": 5175.946
+        "name_zh": "配套商业-46",
+        "name_en": "retail-46",
+        "parent_land_use": "LU-019",
+        "form_logic": "L",
+        "concept_only": true,
+        "area_sqm_declared": 875.625
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3463768,
-              40.0184792
+              116.35053664811952,
+              39.94416965147374
             ],
             [
-              116.3463768,
-              40.0199375
+              116.35133163222508,
+              39.94416965147374
             ],
             [
-              116.3467512,
-              40.0199375
+              116.35133163222508,
+              39.94426094719903
             ],
             [
-              116.3467512,
-              40.0184792
+              116.35065566721002,
+              39.94426094719903
             ],
             [
-              116.3463768,
-              40.0184792
+              116.35065566721002,
+              39.944426378948755
+            ],
+            [
+              116.35053664811952,
+              39.944426378948755
+            ],
+            [
+              116.35053664811952,
+              39.94416965147374
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-046"
     },
     {
       "type": "Feature",
-      "id": "BLDG-047",
       "properties": {
         "id": "BLDG-047",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "community_service",
-        "name_zh": "概念建筑基底-47",
-        "parent_land_use": "LU-019",
-        "area_sqm_declared": 5181.654
+        "name_zh": "社区服务-47",
+        "name_en": "community_service-47",
+        "parent_land_use": "LU-020",
+        "form_logic": "R",
+        "concept_only": true,
+        "area_sqm_declared": 2709.501
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3494968,
-              39.9419167
+              116.34938688814478,
+              39.95524179189343
             ],
             [
-              116.3494968,
-              39.943375
+              116.3500359388171,
+              39.95537519467111
             ],
             [
-              116.3498712,
-              39.943375
+              116.34989254828545,
+              39.9557856839686
             ],
             [
-              116.3498712,
-              39.9419167
+              116.34924349761313,
+              39.955652281190915
             ],
             [
-              116.3494968,
-              39.9419167
+              116.34938688814478,
+              39.95524179189343
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-047"
     },
     {
       "type": "Feature",
-      "id": "BLDG-048",
       "properties": {
         "id": "BLDG-048",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "cultural",
-        "name_zh": "概念建筑基底-48",
-        "parent_land_use": "LU-019",
-        "area_sqm_declared": 5181.653
+        "name_zh": "文化展示-48",
+        "name_en": "cultural-48",
+        "parent_land_use": "LU-020",
+        "form_logic": "L",
+        "concept_only": true,
+        "area_sqm_declared": 1076.837
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3501208,
-              39.9419167
+              116.35177063374596,
+              39.95908647784182
             ],
             [
-              116.3501208,
-              39.943375
+              116.35236867418398,
+              39.95920939621939
             ],
             [
-              116.3504952,
-              39.943375
+              116.35233247529875,
+              39.95931302408655
             ],
             [
-              116.3504952,
-              39.9419167
+              116.35186953093957,
+              39.959217872712294
             ],
             [
-              116.3501208,
-              39.9419167
+              116.35175597042699,
+              39.9595429665277
+            ],
+            [
+              116.35162087434816,
+              39.95951519952438
+            ],
+            [
+              116.35177063374596,
+              39.95908647784182
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-048"
     },
     {
       "type": "Feature",
-      "id": "BLDG-049",
       "properties": {
         "id": "BLDG-049",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "talent_apartment",
-        "name_zh": "概念建筑基底-49",
-        "parent_land_use": "LU-019",
-        "area_sqm_declared": 5181.653
+        "name_zh": "人才公寓-49",
+        "name_en": "talent_apartment-49",
+        "parent_land_use": "LU-020",
+        "form_logic": "L",
+        "concept_only": true,
+        "area_sqm_declared": 1084.263
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3507448,
-              39.9419167
+              116.35117608426704,
+              39.95802902109102
             ],
             [
-              116.3507448,
-              39.943375
+              116.35188200176592,
+              39.9581051220785
             ],
             [
-              116.3511192,
-              39.943375
+              116.35186011769774,
+              39.95822456470543
             ],
             [
-              116.3511192,
-              39.9419167
+              116.35130991343496,
+              39.958165250284445
             ],
             [
-              116.3507448,
-              39.9419167
+              116.35127726634919,
+              39.95834343715789
+            ],
+            [
+              116.35112155311309,
+              39.9583266505914
+            ],
+            [
+              116.35117608426704,
+              39.95802902109102
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-049"
     },
     {
       "type": "Feature",
-      "id": "BLDG-050",
       "properties": {
         "id": "BLDG-050",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "ai_r_and_d",
-        "name_zh": "概念建筑基底-50",
-        "parent_land_use": "LU-019",
-        "area_sqm_declared": 5181.382
+        "name_zh": "AI研发楼-50",
+        "name_en": "ai_r_and_d-50",
+        "parent_land_use": "LU-020",
+        "form_logic": "L",
+        "concept_only": true,
+        "area_sqm_declared": 708.38
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3494968,
-              39.9455625
+              116.34988771349987,
+              39.96053209392522
             ],
             [
-              116.3494968,
-              39.9470208
+              116.34998442810807,
+              39.960255225493796
             ],
             [
-              116.3498712,
-              39.9470208
+              116.35016015101357,
+              39.96029134274117
             ],
             [
-              116.3498712,
-              39.9455625
+              116.35011052121597,
+              39.96043341977034
             ],
             [
-              116.3494968,
-              39.9455625
+              116.35026638135093,
+              39.96046545451866
+            ],
+            [
+              116.35021929654032,
+              39.96060024592092
+            ],
+            [
+              116.34988771349987,
+              39.96053209392522
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-050"
     },
     {
       "type": "Feature",
-      "id": "BLDG-051",
       "properties": {
         "id": "BLDG-051",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "lab",
-        "name_zh": "概念建筑基底-51",
-        "parent_land_use": "LU-020",
-        "area_sqm_declared": 5180.602
+        "name_zh": "实验室组团-51",
+        "name_en": "lab-51",
+        "parent_land_use": "LU-021",
+        "form_logic": "R",
+        "concept_only": true,
+        "area_sqm_declared": 2799.804
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3494968,
-              39.9565
+              116.3503086738566,
+              39.9763143527745
             ],
             [
-              116.3494968,
-              39.9579583
+              116.3503086738566,
+              39.976941899679694
             ],
             [
-              116.3498712,
-              39.9579583
+              116.34983832815334,
+              39.976941899679694
             ],
             [
-              116.3498712,
-              39.9565
+              116.34983832815334,
+              39.9763143527745
             ],
             [
-              116.3494968,
-              39.9565
+              116.3503086738566,
+              39.9763143527745
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-051"
     },
     {
       "type": "Feature",
-      "id": "BLDG-052",
       "properties": {
         "id": "BLDG-052",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "incubator",
-        "name_zh": "概念建筑基底-52",
-        "parent_land_use": "LU-020",
-        "area_sqm_declared": 5180.602
+        "name_zh": "孵化器-52",
+        "name_en": "incubator-52",
+        "parent_land_use": "LU-021",
+        "form_logic": "L",
+        "concept_only": true,
+        "area_sqm_declared": 1052.782
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3501208,
-              39.9565
+              116.34973212255568,
+              39.97139036980517
             ],
             [
-              116.3501208,
-              39.9579583
+              116.35045345218595,
+              39.97127276038621
             ],
             [
-              116.3504952,
-              39.9579583
+              116.35048483019337,
+              39.97138599642307
             ],
             [
-              116.3504952,
-              39.9565
+              116.34991112248163,
+              39.97147953677938
             ],
             [
-              116.3501208,
-              39.9565
+              116.34995711453627,
+              39.971645511563004
+            ],
+            [
+              116.34980949261774,
+              39.97166958062565
+            ],
+            [
+              116.34973212255568,
+              39.97139036980517
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-052"
     },
     {
       "type": "Feature",
-      "id": "BLDG-053",
       "properties": {
         "id": "BLDG-053",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "office",
-        "name_zh": "概念建筑基底-53",
-        "parent_land_use": "LU-020",
-        "area_sqm_declared": 5180.601
+        "name_zh": "科创办公-53",
+        "name_en": "office-53",
+        "parent_land_use": "LU-021",
+        "form_logic": "R",
+        "concept_only": true,
+        "area_sqm_declared": 1303.134
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3507448,
-              39.9565
+              116.3495704114019,
+              39.97742397893912
             ],
             [
-              116.3507448,
-              39.9579583
+              116.3497113530255,
+              39.9770205002199
             ],
             [
-              116.3511192,
-              39.9579583
+              116.35002903732097,
+              39.97708579553389
             ],
             [
-              116.3511192,
-              39.9565
+              116.34988809569737,
+              39.97748927425311
             ],
             [
-              116.3507448,
-              39.9565
+              116.3495704114019,
+              39.97742397893912
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-053"
     },
     {
       "type": "Feature",
-      "id": "BLDG-054",
       "properties": {
         "id": "BLDG-054",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "mixed_use",
-        "name_zh": "概念建筑基底-54",
-        "parent_land_use": "LU-020",
-        "area_sqm_declared": 5180.331
+        "name_zh": "混合底商-54",
+        "name_en": "mixed_use-54",
+        "parent_land_use": "LU-021",
+        "form_logic": "R",
+        "concept_only": true,
+        "area_sqm_declared": 1327.914
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3494968,
-              39.9601458
+              116.35205856489875,
+              39.97495421359579
             ],
             [
-              116.3494968,
-              39.9616042
+              116.35215286441952,
+              39.97522416826844
             ],
             [
-              116.3498712,
-              39.9616042
+              116.351669033787,
+              39.97532361250763
             ],
             [
-              116.3498712,
-              39.9601458
+              116.35157473426624,
+              39.97505365783498
             ],
             [
-              116.3494968,
-              39.9601458
+              116.35205856489875,
+              39.97495421359579
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-054"
     },
     {
       "type": "Feature",
-      "id": "BLDG-055",
       "properties": {
         "id": "BLDG-055",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "education",
-        "name_zh": "概念建筑基底-55",
-        "parent_land_use": "LU-021",
-        "area_sqm_declared": 5179.479
+        "name_zh": "教育转化-55",
+        "name_en": "education-55",
+        "parent_land_use": "LU-022",
+        "form_logic": "R",
+        "concept_only": true,
+        "area_sqm_declared": 3497.811
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3494968,
-              39.9710834
+              116.34944003504317,
+              39.990580075176894
             ],
             [
-              116.3494968,
-              39.9725417
+              116.34963440544833,
+              39.99002364393877
             ],
             [
-              116.3498712,
-              39.9725417
+              116.35025284040988,
+              39.99015075410938
             ],
             [
-              116.3498712,
-              39.9710834
+              116.35005847000473,
+              39.9907071853475
             ],
             [
-              116.3494968,
-              39.9710834
+              116.34944003504317,
+              39.990580075176894
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-055"
     },
     {
       "type": "Feature",
-      "id": "BLDG-056",
       "properties": {
         "id": "BLDG-056",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "retail",
-        "name_zh": "概念建筑基底-56",
-        "parent_land_use": "LU-021",
-        "area_sqm_declared": 5179.478
+        "name_zh": "配套商业-56",
+        "name_en": "retail-56",
+        "parent_land_use": "LU-022",
+        "form_logic": "U",
+        "concept_only": true,
+        "area_sqm_declared": 709.903
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3501208,
-              39.9710834
+              116.35096129704542,
+              39.991614119063605
             ],
             [
-              116.3501208,
-              39.9725417
+              116.35140376479669,
+              39.99170506177359
             ],
             [
-              116.3504952,
-              39.9725417
+              116.35133644193566,
+              39.991897789379856
             ],
             [
-              116.3504952,
-              39.9710834
+              116.35120161591361,
+              39.99187007788272
             ],
             [
-              116.3501208,
-              39.9710834
+              116.35123281225091,
+              39.99178077099171
+            ],
+            [
+              116.35105999654374,
+              39.991745251275994
+            ],
+            [
+              116.35102880020644,
+              39.99183455816701
+            ],
+            [
+              116.35089397418439,
+              39.991806846669874
+            ],
+            [
+              116.35096129704542,
+              39.991614119063605
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-056"
     },
     {
       "type": "Feature",
-      "id": "BLDG-057",
       "properties": {
         "id": "BLDG-057",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "community_service",
-        "name_zh": "概念建筑基底-57",
-        "parent_land_use": "LU-021",
-        "area_sqm_declared": 5179.478
+        "name_zh": "社区服务-57",
+        "name_en": "community_service-57",
+        "parent_land_use": "LU-022",
+        "form_logic": "R",
+        "concept_only": true,
+        "area_sqm_declared": 923.339
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3507448,
-              39.9710834
+              116.35054390111537,
+              39.985205992657825
             ],
             [
-              116.3507448,
-              39.9725417
+              116.35063292490673,
+              39.98495114100793
             ],
             [
-              116.3511192,
-              39.9725417
+              116.35098933514968,
+              39.98502439586835
             ],
             [
-              116.3511192,
-              39.9710834
+              116.35090031135832,
+              39.98527924751824
             ],
             [
-              116.3507448,
-              39.9710834
+              116.35054390111537,
+              39.985205992657825
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-057"
     },
     {
       "type": "Feature",
-      "id": "BLDG-058",
       "properties": {
         "id": "BLDG-058",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "cultural",
-        "name_zh": "概念建筑基底-58",
-        "parent_land_use": "LU-021",
-        "area_sqm_declared": 5179.207
+        "name_zh": "文化展示-58",
+        "name_en": "cultural-58",
+        "parent_land_use": "LU-022",
+        "form_logic": "R",
+        "concept_only": true,
+        "area_sqm_declared": 963.379
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3494968,
-              39.9747292
+              116.34983940676881,
+              39.985568784262384
             ],
             [
-              116.3494968,
-              39.9761875
+              116.35021067119926,
+              39.98564509218162
             ],
             [
-              116.3498712,
-              39.9761875
+              116.35012150241005,
+              39.985900358922194
             ],
             [
-              116.3498712,
-              39.9747292
+              116.34975023797959,
+              39.98582405100296
             ],
             [
-              116.3494968,
-              39.9747292
+              116.34983940676881,
+              39.985568784262384
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-058"
     },
     {
       "type": "Feature",
-      "id": "BLDG-059",
       "properties": {
         "id": "BLDG-059",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "talent_apartment",
-        "name_zh": "概念建筑基底-59",
-        "parent_land_use": "LU-022",
-        "area_sqm_declared": 5178.391
+        "name_zh": "人才公寓-59",
+        "name_en": "talent_apartment-59",
+        "parent_land_use": "LU-023",
+        "form_logic": "L",
+        "concept_only": true,
+        "area_sqm_declared": 669.413
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3494968,
-              39.9856667
+              116.3518683469989,
+              40.004631772625274
             ],
             [
-              116.3494968,
-              39.987125
+              116.35221247823345,
+              40.00466887147438
             ],
             [
-              116.3498712,
-              39.987125
+              116.35219197701595,
+              40.004780766541415
             ],
             [
-              116.3498712,
-              39.9856667
+              116.35199371952376,
+              40.00475939351843
             ],
             [
-              116.3494968,
-              39.9856667
+              116.35195512726905,
+              40.00497002895635
+            ],
+            [
+              116.35180925352665,
+              40.00495430313023
+            ],
+            [
+              116.3518683469989,
+              40.004631772625274
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-059"
     },
     {
       "type": "Feature",
-      "id": "BLDG-060",
       "properties": {
         "id": "BLDG-060",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "ai_r_and_d",
-        "name_zh": "概念建筑基底-60",
-        "parent_land_use": "LU-022",
-        "area_sqm_declared": 5178.39
+        "name_zh": "AI研发楼-60",
+        "name_en": "ai_r_and_d-60",
+        "parent_land_use": "LU-023",
+        "form_logic": "R",
+        "concept_only": true,
+        "area_sqm_declared": 2457.071
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3501208,
-              39.9856667
+              116.34961036718762,
+              39.998551314794334
             ],
             [
-              116.3501208,
-              39.987125
+              116.35022170778198,
+              39.998551314794334
             ],
             [
-              116.3504952,
-              39.987125
+              116.35022170778198,
+              39.99897516133708
             ],
             [
-              116.3504952,
-              39.9856667
+              116.34961036718762,
+              39.99897516133708
             ],
             [
-              116.3501208,
-              39.9856667
+              116.34961036718762,
+              39.998551314794334
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-060"
     },
     {
       "type": "Feature",
-      "id": "BLDG-061",
       "properties": {
         "id": "BLDG-061",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "lab",
-        "name_zh": "概念建筑基底-61",
-        "parent_land_use": "LU-022",
-        "area_sqm_declared": 5178.39
+        "name_zh": "实验室组团-61",
+        "name_en": "lab-61",
+        "parent_land_use": "LU-023",
+        "form_logic": "R",
+        "concept_only": true,
+        "area_sqm_declared": 1716.577
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3507448,
-              39.9856667
+              116.35025953969553,
+              39.99845734865337
             ],
             [
-              116.3507448,
-              39.987125
+              116.35044115738268,
+              39.997937425085546
             ],
             [
-              116.3511192,
-              39.987125
+              116.35076600689017,
+              39.99800419310302
             ],
             [
-              116.3511192,
-              39.9856667
+              116.35058438920302,
+              39.99852411667084
             ],
             [
-              116.3507448,
-              39.9856667
+              116.35025953969553,
+              39.99845734865337
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-061"
     },
     {
       "type": "Feature",
-      "id": "BLDG-062",
       "properties": {
         "id": "BLDG-062",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "incubator",
-        "name_zh": "概念建筑基底-62",
-        "parent_land_use": "LU-022",
-        "area_sqm_declared": 5178.119
+        "name_zh": "孵化器-62",
+        "name_en": "incubator-62",
+        "parent_land_use": "LU-023",
+        "form_logic": "L",
+        "concept_only": true,
+        "area_sqm_declared": 1177.175
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3494968,
-              39.9893125
+              116.35182603718557,
+              40.003737374398064
             ],
             [
-              116.3494968,
-              39.9907708
+              116.3526247478903,
+              40.00382347889814
             ],
             [
-              116.3498712,
-              39.9907708
+              116.35260532920933,
+              40.00392946551128
             ],
             [
-              116.3498712,
-              39.9893125
+              116.35194478959927,
+              40.00385825645828
             ],
             [
-              116.3494968,
-              39.9893125
+              116.35189560328394,
+              40.00412671398023
+            ],
+            [
+              116.35175743218926,
+              40.004111818533154
+            ],
+            [
+              116.35182603718557,
+              40.003737374398064
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-062"
     },
     {
       "type": "Feature",
-      "id": "BLDG-063",
       "properties": {
         "id": "BLDG-063",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "office",
-        "name_zh": "概念建筑基底-63",
-        "parent_land_use": "LU-023",
-        "area_sqm_declared": 5177.338
+        "name_zh": "科创办公-63",
+        "name_en": "office-63",
+        "parent_land_use": "LU-024",
+        "form_logic": "U",
+        "concept_only": true,
+        "area_sqm_declared": 1858.598
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3494968,
-              40.00025
+              116.34965662642193,
+              40.01993754912914
             ],
             [
-              116.3494968,
-              40.0017083
+              116.35046464527065,
+              40.02002465708777
             ],
             [
-              116.3498712,
-              40.0017083
+              116.35038818234433,
+              40.02044198958326
             ],
             [
-              116.3498712,
-              40.00025
+              116.35022940101622,
+              40.020424872263064
             ],
             [
-              116.3494968,
-              40.00025
+              116.35028354868216,
+              40.02012933582944
+            ],
+            [
+              116.34979309248966,
+              40.020076462511206
+            ],
+            [
+              116.34973894482371,
+              40.02037199894483
+            ],
+            [
+              116.3495801634956,
+              40.020354881624634
+            ],
+            [
+              116.34965662642193,
+              40.01993754912914
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-063"
     },
     {
       "type": "Feature",
-      "id": "BLDG-064",
       "properties": {
         "id": "BLDG-064",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "mixed_use",
-        "name_zh": "概念建筑基底-64",
-        "parent_land_use": "LU-023",
-        "area_sqm_declared": 5177.338
+        "name_zh": "混合底商-64",
+        "name_en": "mixed_use-64",
+        "parent_land_use": "LU-024",
+        "form_logic": "L",
+        "concept_only": true,
+        "area_sqm_declared": 1098.499
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3501208,
-              40.00025
+              116.34954125454043,
+              40.023972379184315
             ],
             [
-              116.3501208,
-              40.0017083
+              116.35020137860579,
+              40.023864749046155
             ],
             [
-              116.3504952,
-              40.0017083
+              116.35023512559408,
+              40.023986534192
             ],
             [
-              116.3504952,
-              40.00025
+              116.349733768626,
+              40.0240682780983
             ],
             [
-              116.3501208,
-              40.00025
+              116.34978697294451,
+              40.02426028028918
+            ],
+            [
+              116.34962820584724,
+              40.024286166521044
+            ],
+            [
+              116.34954125454043,
+              40.023972379184315
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-064"
     },
     {
       "type": "Feature",
-      "id": "BLDG-065",
       "properties": {
         "id": "BLDG-065",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "education",
-        "name_zh": "概念建筑基底-65",
-        "parent_land_use": "LU-023",
-        "area_sqm_declared": 5177.337
+        "name_zh": "教育转化-65",
+        "name_en": "education-65",
+        "parent_land_use": "LU-024",
+        "form_logic": "L",
+        "concept_only": true,
+        "area_sqm_declared": 987.673
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3507448,
-              40.00025
+              116.34972499587097,
+              40.01785311524861
             ],
             [
-              116.3507448,
-              40.0017083
+              116.35018426490917,
+              40.01780360404174
             ],
             [
-              116.3511192,
-              40.0017083
+              116.35020597379312,
+              40.01792209051808
             ],
             [
-              116.3511192,
-              40.00025
+              116.34990117149044,
+              40.01795494953667
             ],
             [
-              116.3507448,
-              40.00025
+              116.34995780994642,
+              40.01826408063206
+            ],
+            [
+              116.34980334321088,
+              40.018280732820344
+            ],
+            [
+              116.34972499587097,
+              40.01785311524861
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-065"
     },
     {
       "type": "Feature",
-      "id": "BLDG-066",
       "properties": {
         "id": "BLDG-066",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "retail",
-        "name_zh": "概念建筑基底-66",
-        "parent_land_use": "LU-023",
-        "area_sqm_declared": 5177.066
+        "name_zh": "配套商业-66",
+        "name_en": "retail-66",
+        "parent_land_use": "LU-024",
+        "form_logic": "R",
+        "concept_only": true,
+        "area_sqm_declared": 2591.746
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3494968,
-              40.0038958
+              116.35143266779414,
+              40.01919759508645
             ],
             [
-              116.3494968,
-              40.0053542
+              116.35215632964594,
+              40.019079605409694
             ],
             [
-              116.3498712,
-              40.0053542
+              116.35225649314623,
+              40.01944107252443
             ],
             [
-              116.3498712,
-              40.0038958
+              116.35153283129443,
+              40.01955906220119
             ],
             [
-              116.3494968,
-              40.0038958
+              116.35143266779414,
+              40.01919759508645
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-066"
     },
     {
       "type": "Feature",
-      "id": "BLDG-067",
       "properties": {
         "id": "BLDG-067",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "community_service",
-        "name_zh": "概念建筑基底-67",
-        "parent_land_use": "LU-024",
-        "area_sqm_declared": 5176.214
+        "name_zh": "社区服务-67",
+        "name_en": "community_service-67",
+        "parent_land_use": "LU-025",
+        "form_logic": "L",
+        "concept_only": true,
+        "area_sqm_declared": 1342.848
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3494968,
-              40.0148334
+              116.35477003487705,
+              39.94552496322264
             ],
             [
-              116.3494968,
-              40.0162917
+              116.35477003487705,
+              39.946064315113226
             ],
             [
-              116.3498712,
-              40.0162917
+              116.35456552828323,
+              39.946064315113226
             ],
             [
-              116.3498712,
-              40.0148334
+              116.35456552828323,
+              39.94568183366861
             ],
             [
-              116.3494968,
-              40.0148334
+              116.3543666160717,
+              39.94568183366861
+            ],
+            [
+              116.3543666160717,
+              39.94552496322264
+            ],
+            [
+              116.35477003487705,
+              39.94552496322264
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-067"
     },
     {
       "type": "Feature",
-      "id": "BLDG-068",
       "properties": {
         "id": "BLDG-068",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "cultural",
-        "name_zh": "概念建筑基底-68",
-        "parent_land_use": "LU-024",
-        "area_sqm_declared": 5176.213
+        "name_zh": "文化展示-68",
+        "name_en": "cultural-68",
+        "parent_land_use": "LU-025",
+        "form_logic": "R",
+        "concept_only": true,
+        "area_sqm_declared": 1790.016
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3501208,
-              40.0148334
+              116.35419952109714,
+              39.94458409426195
             ],
             [
-              116.3501208,
-              40.0162917
+              116.35499417818721,
+              39.94449842675922
             ],
             [
-              116.3504952,
-              40.0162917
+              116.35503682511333,
+              39.94473119247926
             ],
             [
-              116.3504952,
-              40.0148334
+              116.35424216802326,
+              39.94481685998199
             ],
             [
-              116.3501208,
-              40.0148334
+              116.35419952109714,
+              39.94458409426195
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-068"
     },
     {
       "type": "Feature",
-      "id": "BLDG-069",
       "properties": {
         "id": "BLDG-069",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "talent_apartment",
-        "name_zh": "概念建筑基底-69",
-        "parent_land_use": "LU-024",
-        "area_sqm_declared": 5176.213
+        "name_zh": "人才公寓-69",
+        "name_en": "talent_apartment-69",
+        "parent_land_use": "LU-025",
+        "form_logic": "L",
+        "concept_only": true,
+        "area_sqm_declared": 864.022
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3507448,
-              40.0148334
+              116.35326622506508,
+              39.940559559598235
             ],
             [
-              116.3507448,
-              40.0162917
+              116.35403439372,
+              39.940642371532036
             ],
             [
-              116.3511192,
-              40.0162917
+              116.35401621557901,
+              39.94074158731294
             ],
             [
-              116.3511192,
-              40.0148334
+              116.35337739111814,
+              39.94067271924781
             ],
             [
-              116.3507448,
-              40.0148334
+              116.35335888703261,
+              39.94077371402479
+            ],
+            [
+              116.35322954283855,
+              39.940759770156134
+            ],
+            [
+              116.35326622506508,
+              39.940559559598235
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-069"
     },
     {
       "type": "Feature",
-      "id": "BLDG-070",
       "properties": {
         "id": "BLDG-070",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "ai_r_and_d",
-        "name_zh": "概念建筑基底-70",
-        "parent_land_use": "LU-024",
-        "area_sqm_declared": 5175.942
+        "name_zh": "AI研发楼-70",
+        "name_en": "ai_r_and_d-70",
+        "parent_land_use": "LU-025",
+        "form_logic": "R",
+        "concept_only": true,
+        "area_sqm_declared": 1496.042
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3494968,
-              40.0184792
+              116.35486936009514,
+              39.951155468188865
             ],
             [
-              116.3494968,
-              40.0199375
+              116.35486936009514,
+              39.95173613731149
             ],
             [
-              116.3498712,
-              40.0199375
+              116.35459784504309,
+              39.95173613731149
             ],
             [
-              116.3498712,
-              40.0184792
+              116.35459784504309,
+              39.951155468188865
             ],
             [
-              116.3494968,
-              40.0184792
+              116.35486936009514,
+              39.951155468188865
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-070"
     },
     {
       "type": "Feature",
-      "id": "BLDG-071",
       "properties": {
         "id": "BLDG-071",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "lab",
-        "name_zh": "概念建筑基底-71",
-        "parent_land_use": "LU-025",
-        "area_sqm_declared": 5181.65
+        "name_zh": "实验室组团-71",
+        "name_en": "lab-71",
+        "parent_land_use": "LU-026",
+        "form_logic": "R",
+        "concept_only": true,
+        "area_sqm_declared": 3247.205
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3526168,
-              39.9419167
+              116.35374763120437,
+              39.96665990712565
             ],
             [
-              116.3526168,
-              39.943375
+              116.35454887026818,
+              39.966746284193874
             ],
             [
-              116.3529912,
-              39.943375
+              116.3544721169307,
+              39.967165201745225
             ],
             [
-              116.3529912,
-              39.9419167
+              116.35367087786689,
+              39.967078824677
             ],
             [
-              116.3526168,
-              39.9419167
+              116.35374763120437,
+              39.96665990712565
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-071"
     },
     {
       "type": "Feature",
-      "id": "BLDG-072",
       "properties": {
         "id": "BLDG-072",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "incubator",
-        "name_zh": "概念建筑基底-72",
-        "parent_land_use": "LU-025",
-        "area_sqm_declared": 5181.65
+        "name_zh": "孵化器-72",
+        "name_en": "incubator-72",
+        "parent_land_use": "LU-026",
+        "form_logic": "U",
+        "concept_only": true,
+        "area_sqm_declared": 1108.502
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3532408,
-              39.9419167
+              116.35274050682388,
+              39.961322030967736
             ],
             [
-              116.3532408,
-              39.943375
+              116.35315049465378,
+              39.96127783249021
             ],
             [
-              116.3536152,
-              39.943375
+              116.35321226916835,
+              39.96161499604866
             ],
             [
-              116.3536152,
-              39.9419167
+              116.35306080820199,
+              39.96163132420191
             ],
             [
-              116.3532408,
-              39.9419167
+              116.35302032013804,
+              39.96141034149073
+            ],
+            [
+              116.35291325424087,
+              39.96142188366175
+            ],
+            [
+              116.35295374230482,
+              39.96164286637293
+            ],
+            [
+              116.35280228133846,
+              39.961659194526185
+            ],
+            [
+              116.35274050682388,
+              39.961322030967736
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-072"
     },
     {
       "type": "Feature",
-      "id": "BLDG-073",
       "properties": {
         "id": "BLDG-073",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "office",
-        "name_zh": "概念建筑基底-73",
-        "parent_land_use": "LU-025",
-        "area_sqm_declared": 5181.649
+        "name_zh": "科创办公-73",
+        "name_en": "office-73",
+        "parent_land_use": "LU-026",
+        "form_logic": "R",
+        "concept_only": true,
+        "area_sqm_declared": 2032.56
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3538648,
-              39.9419167
+              116.35400286310815,
+              39.96061660045979
             ],
             [
-              116.3538648,
-              39.943375
+              116.35462266639382,
+              39.96074399186921
             ],
             [
-              116.3542392,
-              39.943375
+              116.35451001592284,
+              39.96106648047544
             ],
             [
-              116.3542392,
-              39.9419167
+              116.35389021263717,
+              39.96093908906602
             ],
             [
-              116.3538648,
-              39.9419167
+              116.35400286310815,
+              39.96061660045979
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-073"
     },
     {
       "type": "Feature",
-      "id": "BLDG-074",
       "properties": {
         "id": "BLDG-074",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "mixed_use",
-        "name_zh": "概念建筑基底-74",
-        "parent_land_use": "LU-025",
-        "area_sqm_declared": 5181.379
+        "name_zh": "混合底商-74",
+        "name_en": "mixed_use-74",
+        "parent_land_use": "LU-026",
+        "form_logic": "L",
+        "concept_only": true,
+        "area_sqm_declared": 957.572
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3526168,
-              39.9455625
+              116.35231895323564,
+              39.954993968127184
             ],
             [
-              116.3526168,
-              39.9470208
+              116.35285882445841,
+              39.954935767653005
             ],
             [
-              116.3529912,
-              39.9470208
+              116.35288278422442,
+              39.955066539380184
             ],
             [
-              116.3529912,
-              39.9455625
+              116.35251339559527,
+              39.95510636108666
             ],
             [
-              116.3526168,
-              39.9455625
+              116.35254387887558,
+              39.955272737970965
+            ],
+            [
+              116.35237339628196,
+              39.95529111673866
+            ],
+            [
+              116.35231895323564,
+              39.954993968127184
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-074"
     },
     {
       "type": "Feature",
-      "id": "BLDG-075",
       "properties": {
         "id": "BLDG-075",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "education",
-        "name_zh": "概念建筑基底-75",
-        "parent_land_use": "LU-026",
-        "area_sqm_declared": 5180.599
+        "name_zh": "教育转化-75",
+        "name_en": "education-75",
+        "parent_land_use": "LU-027",
+        "form_logic": "R",
+        "concept_only": true,
+        "area_sqm_declared": 1604.541
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3526168,
-              39.9565
+              116.35301988376541,
+              39.9723477894659
             ],
             [
-              116.3526168,
-              39.9579583
+              116.3534827971741,
+              39.9723477894659
             ],
             [
-              116.3529912,
-              39.9579583
+              116.3534827971741,
+              39.97271318344326
             ],
             [
-              116.3529912,
-              39.9565
+              116.35301988376541,
+              39.97271318344326
             ],
             [
-              116.3526168,
-              39.9565
+              116.35301988376541,
+              39.9723477894659
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-075"
     },
     {
       "type": "Feature",
-      "id": "BLDG-076",
       "properties": {
         "id": "BLDG-076",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "retail",
-        "name_zh": "概念建筑基底-76",
-        "parent_land_use": "LU-026",
-        "area_sqm_declared": 5180.598
+        "name_zh": "配套商业-76",
+        "name_en": "retail-76",
+        "parent_land_use": "LU-027",
+        "form_logic": "R",
+        "concept_only": true,
+        "area_sqm_declared": 1789.25
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3532408,
-              39.9565
+              116.35398214800892,
+              39.969218585268365
             ],
             [
-              116.3532408,
-              39.9579583
+              116.35416577077419,
+              39.96869292169041
             ],
             [
-              116.3536152,
-              39.9579583
+              116.35450053502032,
+              39.96876172753595
             ],
             [
-              116.3536152,
-              39.9565
+              116.35431691225506,
+              39.9692873911139
             ],
             [
-              116.3532408,
-              39.9565
+              116.35398214800892,
+              39.969218585268365
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-076"
     },
     {
       "type": "Feature",
-      "id": "BLDG-077",
       "properties": {
         "id": "BLDG-077",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "community_service",
-        "name_zh": "概念建筑基底-77",
-        "parent_land_use": "LU-026",
-        "area_sqm_declared": 5180.597
+        "name_zh": "社区服务-77",
+        "name_en": "community_service-77",
+        "parent_land_use": "LU-027",
+        "form_logic": "R",
+        "concept_only": true,
+        "area_sqm_declared": 1486.827
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3538648,
-              39.9565
+              116.35324863694929,
+              39.976414780608444
             ],
             [
-              116.3538648,
-              39.9579583
+              116.35373248945737,
+              39.97646694202067
             ],
             [
-              116.3542392,
-              39.9579583
+              116.35367428481511,
+              39.97678462131663
             ],
             [
-              116.3542392,
-              39.9565
+              116.35319043230703,
+              39.976732459904404
             ],
             [
-              116.3538648,
-              39.9565
+              116.35324863694929,
+              39.976414780608444
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-077"
     },
     {
       "type": "Feature",
-      "id": "BLDG-078",
       "properties": {
         "id": "BLDG-078",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "cultural",
-        "name_zh": "概念建筑基底-78",
-        "parent_land_use": "LU-026",
-        "area_sqm_declared": 5180.327
+        "name_zh": "文化展示-78",
+        "name_en": "cultural-78",
+        "parent_land_use": "LU-028",
+        "form_logic": "L",
+        "concept_only": true,
+        "area_sqm_declared": 989.17
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3526168,
-              39.9601458
+              116.3533439033969,
+              39.996925605570894
             ],
             [
-              116.3526168,
-              39.9616042
+              116.3533439033969,
+              39.99747544964816
             ],
             [
-              116.3529912,
-              39.9616042
+              116.35317652339378,
+              39.99747544964816
             ],
             [
-              116.3529912,
-              39.9601458
+              116.35317652339378,
+              39.99705399740045
             ],
             [
-              116.3526168,
-              39.9601458
+              116.35308088295402,
+              39.99705399740045
+            ],
+            [
+              116.35308088295402,
+              39.996925605570894
+            ],
+            [
+              116.3533439033969,
+              39.996925605570894
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-078"
     },
     {
       "type": "Feature",
-      "id": "BLDG-079",
       "properties": {
         "id": "BLDG-079",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "talent_apartment",
-        "name_zh": "概念建筑基底-79",
-        "parent_land_use": "LU-027",
-        "area_sqm_declared": 4758.975
+        "name_zh": "人才公寓-79",
+        "name_en": "talent_apartment-79",
+        "parent_land_use": "LU-028",
+        "form_logic": "R",
+        "concept_only": true,
+        "area_sqm_declared": 965.016
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3525813,
-              39.9710834
+              116.35308544310028,
+              39.99234481350964
             ],
             [
-              116.3525813,
-              39.9725417
+              116.35318410452106,
+              39.99262725515233
             ],
             [
-              116.3529253,
-              39.9725417
+              116.35284795777737,
+              39.99269634514982
             ],
             [
-              116.3529253,
-              39.9710834
+              116.35274929635659,
+              39.99241390350713
             ],
             [
-              116.3525813,
-              39.9710834
+              116.35308544310028,
+              39.99234481350964
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-079"
     },
     {
       "type": "Feature",
-      "id": "BLDG-080",
       "properties": {
         "id": "BLDG-080",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "ai_r_and_d",
-        "name_zh": "概念建筑基底-80",
-        "parent_land_use": "LU-027",
-        "area_sqm_declared": 4758.975
+        "name_zh": "AI研发楼-80",
+        "name_en": "ai_r_and_d-80",
+        "parent_land_use": "LU-028",
+        "form_logic": "L",
+        "concept_only": true,
+        "area_sqm_declared": 969.486
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3531547,
-              39.9710834
+              116.35287410416362,
+              39.988191529470086
             ],
             [
-              116.3531547,
-              39.9725417
+              116.35305346584862,
+              39.988704994698395
             ],
             [
-              116.3534987,
-              39.9725417
+              116.35290280137148,
+              39.988735961556
             ],
             [
-              116.3534987,
-              39.9710834
+              116.35276381011145,
+              39.98833806621363
             ],
             [
-              116.3531547,
-              39.9710834
+              116.35260792966494,
+              39.98837010513669
+            ],
+            [
+              116.35256755923997,
+              39.98825453525075
+            ],
+            [
+              116.35287410416362,
+              39.988191529470086
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-080"
     },
     {
       "type": "Feature",
-      "id": "BLDG-081",
       "properties": {
         "id": "BLDG-081",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "lab",
-        "name_zh": "概念建筑基底-81",
-        "parent_land_use": "LU-027",
-        "area_sqm_declared": 4758.974
+        "name_zh": "实验室组团-81",
+        "name_en": "lab-81",
+        "parent_land_use": "LU-029",
+        "form_logic": "L",
+        "concept_only": true,
+        "area_sqm_declared": 981.865
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.353728,
-              39.9710834
+              116.3525301128216,
+              40.004472200301834
             ],
             [
-              116.353728,
-              39.9725417
+              116.35318295718949,
+              40.00436575708426
             ],
             [
-              116.354072,
-              39.9725417
+              116.35321596780727,
+              40.00448488483771
             ],
             [
-              116.354072,
-              39.9710834
+              116.35271842618577,
+              40.004566006669606
             ],
             [
-              116.353728,
-              39.9710834
+              116.35275643984653,
+              40.00470318925844
+            ],
+            [
+              116.35260113710015,
+              40.004728510644114
+            ],
+            [
+              116.3525301128216,
+              40.004472200301834
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-081"
     },
     {
       "type": "Feature",
-      "id": "BLDG-082",
       "properties": {
         "id": "BLDG-082",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "incubator",
-        "name_zh": "概念建筑基底-82",
-        "parent_land_use": "LU-027",
-        "area_sqm_declared": 4758.725
+        "name_zh": "孵化器-82",
+        "name_en": "incubator-82",
+        "parent_land_use": "LU-029",
+        "form_logic": "L",
+        "concept_only": true,
+        "area_sqm_declared": 1031.884
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3525813,
-              39.9747292
+              116.35280716003061,
+              40.002655450928316
             ],
             [
-              116.3525813,
-              39.9761875
+              116.35280716003061,
+              40.00324717964662
             ],
             [
-              116.3529253,
-              39.9761875
+              116.35268437749502,
+              40.00324717964662
             ],
             [
-              116.3529253,
-              39.9747292
+              116.35268437749502,
+              40.00274963347155
             ],
             [
-              116.3525813,
-              39.9747292
+              116.3523003174879,
+              40.00274963347155
+            ],
+            [
+              116.3523003174879,
+              40.002655450928316
+            ],
+            [
+              116.35280716003061,
+              40.002655450928316
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-082"
     },
     {
       "type": "Feature",
-      "id": "BLDG-083",
       "properties": {
         "id": "BLDG-083",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "office",
-        "name_zh": "概念建筑基底-83",
-        "parent_land_use": "LU-028",
-        "area_sqm_declared": 2821.557
+        "name_zh": "科创办公-83",
+        "name_en": "office-83",
+        "parent_land_use": "LU-029",
+        "form_logic": "L",
+        "concept_only": true,
+        "area_sqm_declared": 1241.518
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.352418,
-              39.9856667
+              116.35288752880385,
+              40.011340678504304
             ],
             [
-              116.352418,
-              39.987125
+              116.35305676986818,
+              40.01085618594541
             ],
             [
-              116.352622,
-              39.987125
+              116.35322392817592,
+              40.01089054286624
             ],
             [
-              116.352622,
-              39.9856667
+              116.35309947704515,
+              40.01124681365099
             ],
             [
-              116.352418,
-              39.9856667
+              116.35342072548836,
+              40.0113128415229
+            ],
+            [
+              116.35337593555481,
+              40.01144106329705
+            ],
+            [
+              116.35288752880385,
+              40.011340678504304
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-083"
     },
     {
       "type": "Feature",
-      "id": "BLDG-084",
       "properties": {
         "id": "BLDG-084",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "mixed_use",
-        "name_zh": "概念建筑基底-84",
-        "parent_land_use": "LU-028",
-        "area_sqm_declared": 2821.557
+        "name_zh": "混合底商-84",
+        "name_en": "mixed_use-84",
+        "parent_land_use": "LU-030",
+        "form_logic": "R",
+        "concept_only": true,
+        "area_sqm_declared": 1009.819
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.352758,
-              39.9856667
+              116.35424774758859,
+              40.01525840987703
             ],
             [
-              116.352758,
-              39.987125
+              116.35424774758859,
+              40.0154989300293
             ],
             [
-              116.352962,
-              39.987125
+              116.35469720164544,
+              40.0154989300293
             ],
             [
-              116.352962,
-              39.9856667
+              116.35468402245901,
+              40.01525840987703
             ],
             [
-              116.352758,
-              39.9856667
+              116.35424774758859,
+              40.01525840987703
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-084"
     },
     {
       "type": "Feature",
-      "id": "BLDG-085",
       "properties": {
         "id": "BLDG-085",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "education",
-        "name_zh": "概念建筑基底-85",
-        "parent_land_use": "LU-028",
-        "area_sqm_declared": 2821.557
+        "name_zh": "教育转化-85",
+        "name_en": "education-85",
+        "parent_land_use": "LU-030",
+        "form_logic": "U",
+        "concept_only": true,
+        "area_sqm_declared": 1084.402
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.353098,
-              39.9856667
+              116.35303684483478,
+              40.01453956455423
             ],
             [
-              116.353098,
-              39.987125
+              116.3533720612974,
+              40.01453956455423
             ],
             [
-              116.353302,
-              39.987125
+              116.3533720612974,
+              40.014928196826304
             ],
             [
-              116.353302,
-              39.9856667
+              116.35323266028031,
+              40.014928196826304
             ],
             [
-              116.353098,
-              39.9856667
+              116.35323266028031,
+              40.01464649460138
+            ],
+            [
+              116.35317624585186,
+              40.01464649460138
+            ],
+            [
+              116.35317624585186,
+              40.014928196826304
+            ],
+            [
+              116.35303684483478,
+              40.014928196826304
+            ],
+            [
+              116.35303684483478,
+              40.01453956455423
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-085"
     },
     {
       "type": "Feature",
-      "id": "BLDG-086",
       "properties": {
         "id": "BLDG-086",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "retail",
-        "name_zh": "概念建筑基底-86",
-        "parent_land_use": "LU-028",
-        "area_sqm_declared": 2821.409
+        "name_zh": "配套商业-86",
+        "name_en": "retail-86",
+        "parent_land_use": "LU-030",
+        "form_logic": "L",
+        "concept_only": true,
+        "area_sqm_declared": 1025.726
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.352418,
-              39.9893125
+              116.35335094990617,
+              40.02055182979409
             ],
             [
-              116.352418,
-              39.9907708
+              116.35368828676434,
+              40.02062116440202
             ],
             [
-              116.352622,
-              39.9907708
+              116.35363695382351,
+              40.02076811708133
             ],
             [
-              116.352622,
-              39.9893125
+              116.35349119410859,
+              40.02073815832514
             ],
             [
-              116.352418,
-              39.9893125
+              116.35339750324009,
+              40.021006370586775
+            ],
+            [
+              116.35320592609685,
+              40.02096699473503
+            ],
+            [
+              116.35335094990617,
+              40.02055182979409
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-086"
     },
     {
       "type": "Feature",
-      "id": "BLDG-087",
       "properties": {
         "id": "BLDG-087",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "building_type": "community_service",
-        "name_zh": "概念建筑基底-87",
-        "parent_land_use": "LU-029",
-        "area_sqm_declared": 3851.307
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.3525049,
-              40.00025
-            ],
-            [
-              116.3525049,
-              40.0017083
-            ],
-            [
-              116.3527834,
-              40.0017083
-            ],
-            [
-              116.3527834,
-              40.00025
-            ],
-            [
-              116.3525049,
-              40.00025
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-088",
-      "properties": {
-        "id": "BLDG-088",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
-        "equal_area_projection": "EPSG:4548",
-        "building_type": "cultural",
-        "name_zh": "概念建筑基底-88",
-        "parent_land_use": "LU-029",
-        "area_sqm_declared": 3851.306
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.3529691,
-              40.00025
-            ],
-            [
-              116.3529691,
-              40.0017083
-            ],
-            [
-              116.3532476,
-              40.0017083
-            ],
-            [
-              116.3532476,
-              40.00025
-            ],
-            [
-              116.3529691,
-              40.00025
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-089",
-      "properties": {
-        "id": "BLDG-089",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
-        "equal_area_projection": "EPSG:4548",
-        "building_type": "talent_apartment",
-        "name_zh": "概念建筑基底-89",
-        "parent_land_use": "LU-029",
-        "area_sqm_declared": 3851.306
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.3534333,
-              40.00025
-            ],
-            [
-              116.3534333,
-              40.0017083
-            ],
-            [
-              116.3537118,
-              40.0017083
-            ],
-            [
-              116.3537118,
-              40.00025
-            ],
-            [
-              116.3534333,
-              40.00025
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-090",
-      "properties": {
-        "id": "BLDG-090",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
-        "equal_area_projection": "EPSG:4548",
-        "building_type": "ai_r_and_d",
-        "name_zh": "概念建筑基底-90",
-        "parent_land_use": "LU-029",
-        "area_sqm_declared": 3851.104
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.3525049,
-              40.0038958
-            ],
-            [
-              116.3525049,
-              40.0053542
-            ],
-            [
-              116.3527834,
-              40.0053542
-            ],
-            [
-              116.3527834,
-              40.0038958
-            ],
-            [
-              116.3525049,
-              40.0038958
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-091",
-      "properties": {
-        "id": "BLDG-091",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
-        "equal_area_projection": "EPSG:4548",
-        "building_type": "lab",
-        "name_zh": "概念建筑基底-91",
+        "name_zh": "社区服务-87",
+        "name_en": "community_service-87",
         "parent_land_use": "LU-030",
-        "area_sqm_declared": 5176.21
+        "form_logic": "R",
+        "concept_only": true,
+        "area_sqm_declared": 2287.159
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3526168,
-              40.0148334
+              116.3534281623001,
+              40.01844454422924
             ],
             [
-              116.3526168,
-              40.0162917
+              116.35417282255088,
+              40.01844454422924
             ],
             [
-              116.3529912,
-              40.0162917
+              116.35417282255088,
+              40.01876853838516
             ],
             [
-              116.3529912,
-              40.0148334
+              116.3534281623001,
+              40.01876853838516
             ],
             [
-              116.3526168,
-              40.0148334
+              116.3534281623001,
+              40.01844454422924
             ]
           ]
         ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-092",
-      "properties": {
-        "id": "BLDG-092",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
-        "equal_area_projection": "EPSG:4548",
-        "building_type": "incubator",
-        "name_zh": "概念建筑基底-92",
-        "parent_land_use": "LU-030",
-        "area_sqm_declared": 5176.21
       },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.3532408,
-              40.0148334
-            ],
-            [
-              116.3532408,
-              40.0162917
-            ],
-            [
-              116.3536152,
-              40.0162917
-            ],
-            [
-              116.3536152,
-              40.0148334
-            ],
-            [
-              116.3532408,
-              40.0148334
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-093",
-      "properties": {
-        "id": "BLDG-093",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
-        "equal_area_projection": "EPSG:4548",
-        "building_type": "office",
-        "name_zh": "概念建筑基底-93",
-        "parent_land_use": "LU-030",
-        "area_sqm_declared": 5176.209
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.3538648,
-              40.0148334
-            ],
-            [
-              116.3538648,
-              40.0162917
-            ],
-            [
-              116.3542392,
-              40.0162917
-            ],
-            [
-              116.3542392,
-              40.0148334
-            ],
-            [
-              116.3538648,
-              40.0148334
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-094",
-      "properties": {
-        "id": "BLDG-094",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
-        "equal_area_projection": "EPSG:4548",
-        "building_type": "mixed_use",
-        "name_zh": "概念建筑基底-94",
-        "parent_land_use": "LU-030",
-        "area_sqm_declared": 5175.938
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.3526168,
-              40.0184792
-            ],
-            [
-              116.3526168,
-              40.0199375
-            ],
-            [
-              116.3529912,
-              40.0199375
-            ],
-            [
-              116.3529912,
-              40.0184792
-            ],
-            [
-              116.3526168,
-              40.0184792
-            ]
-          ]
-        ]
-      }
+      "id": "BLDG-087"
     }
   ]
 }

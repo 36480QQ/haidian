@@ -1,23 +1,22 @@
 # 方案迭代记录
 
-## v2.0 - 2026-08-11
+## v2.1 - 2026-08-11
 
 ### 改动摘要
 
-- 尖刀机制锁定为 **开源协议脊（Open Protocol Spine）**：接口 / 权限 / 回退 / 审计。
-- 几何加密：街坊级用地单元、60+ 概念建筑、分级道路段、多段绿/公空、constraints、scenario_nodes 与三区 detail。
-- 图面重做：五图互异主叙事、真 A0≥7 板 / A3 文册、离线 GeoJSON 投影总图、logo.svg。
-- 正文按诊断-机制-三区模板-场景对象-实施 KPI 重写；矩阵逐项独立证据摘要；confidence 与 provisional 对齐为 medium。
+- 消灭空壳 A0/A3：重做 ≥7 板 A0 与 10 页级 A3 图文 PDF（含真地图嵌入）。
+- 五张 figure 改为由 GeoJSON 投影的互异空间图（总览/用地/三区/慢行蓝绿/指标证据），不再使用暗色卡片模板。
+- 几何结构化：建筑 L/U/矩形混合基底；分级多段道路；加密绿/公空；constraints≥8；scenario_nodes 与三区 detail 资产（因 geometry 白名单，节点/详设 JSON 置于 `visual/assets/`）。
+- 离线 visual：内嵌 SVG 真总图，指标 data-metric 与 metrics.json 对齐。
+- 正文修复幽灵引用（eport/ssets/断 data 路径），中英等义加深；changelog 仅在落地后宣称完成项。
+- metrics 全量按 EPSG:4548 重算，confidence 与 provisional 对齐为 medium。
 
 ### 采纳反馈
 
-- 响应已合并 v1 的 formal intake 基础，按专家升级 Plan 执行 T1。
+- 对照 v2 评审硬伤清单与专家升级 Plan（T1）执行，不重复自夸未完成项。
 
 ### 暂未采纳或待复核事项
 
-- 官方红线/控规/权属/市政仍缺，强度指标保持 unknown。
-- T2 人类国际竞赛级红队需专业背景人类另排。
-
-### 公开资料与合规说明
-
-- 仅使用公开任务书、仓库 provisional 边界与已登记可公开资料；未引入隐私数据或未授权图件。
+- 官方红线 / 控规 / 权属 / 市政专项仍缺，FAR 等保持 unknown。
+- 仓库不允许在 `geometry/` 新增文件名，故 scenario_nodes 与 detail_* 以 visual/assets JSON 交付并在正文披露。
+- 人类专业红队（T2）未在本轮外部签字。

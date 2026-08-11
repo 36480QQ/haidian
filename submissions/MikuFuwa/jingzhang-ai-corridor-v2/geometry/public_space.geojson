@@ -1,594 +1,953 @@
 {
   "type": "FeatureCollection",
-  "name": "public_space_v2",
+  "name": "public_space",
+  "crs_note": "Coordinates stored as EPSG:4326 lon/lat. Areas recomputed via EPSG:4548.",
+  "equal_area_projection": "EPSG:4548",
   "features": [
     {
       "type": "Feature",
-      "id": "PUBLIC-001",
       "properties": {
         "id": "PUBLIC-001",
         "layer": "PUBLIC_SPACE",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "name_zh": "南门户广场",
-        "area_sqm_declared": 77718.387
+        "public_space_type": "gateway_plaza",
+        "area_sqm_declared": 136644.084
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.34438,
-              39.946
+              116.34998497321129,
+              39.94448824070992
             ],
             [
-              116.34438,
-              39.95125
+              116.3501144732113,
+              39.941676240709924
             ],
             [
-              116.34594,
-              39.95125
+              116.3449344732113,
+              39.94152824070993
             ],
             [
-              116.34594,
-              39.946
+              116.3448049732113,
+              39.94426624070993
             ],
             [
-              116.34438,
-              39.946
+              116.34998497321129,
+              39.94448824070992
             ]
           ]
         ]
-      }
+      },
+      "id": "PUBLIC-001"
     },
     {
       "type": "Feature",
-      "id": "PUBLIC-002",
       "properties": {
         "id": "PUBLIC-002",
         "layer": "PUBLIC_SPACE",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
-        "name_zh": "协议接口庭-中",
-        "area_sqm_declared": 77696.854
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
+        "name_zh": "协议接口庭-中南",
+        "public_space_type": "protocol_court",
+        "area_sqm_declared": 93914.416
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.34438,
-              39.96525
+              116.34945247895176,
+              39.96530221062119
             ],
             [
-              116.34438,
-              39.9705
+              116.34955422895175,
+              39.962841710621184
             ],
             [
-              116.34594,
-              39.9705
+              116.34548422895176,
+              39.96271221062118
             ],
             [
-              116.34594,
-              39.96525
+              116.34538247895176,
+              39.965107960621175
             ],
             [
-              116.34438,
-              39.96525
+              116.34945247895176,
+              39.96530221062119
             ]
           ]
         ]
-      }
+      },
+      "id": "PUBLIC-002"
     },
     {
       "type": "Feature",
-      "id": "PUBLIC-003",
       "properties": {
         "id": "PUBLIC-003",
         "layer": "PUBLIC_SPACE",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "name_zh": "开源发布外延",
-        "area_sqm_declared": 90617.198
+        "public_space_type": "release_forecourt",
+        "area_sqm_declared": 85358.3
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.34438,
-              39.987125
+              116.3492749808652,
+              39.98030221062119
             ],
             [
-              116.34438,
-              39.99325
+              116.34936748086521,
+              39.977841710621185
             ],
             [
-              116.34594,
-              39.99325
+              116.34566748086519,
+              39.977712210621185
             ],
             [
-              116.34594,
-              39.987125
+              116.3455749808652,
+              39.98010796062118
             ],
             [
-              116.34438,
-              39.987125
+              116.3492749808652,
+              39.98030221062119
             ]
           ]
         ]
-      }
+      },
+      "id": "PUBLIC-003"
     },
     {
       "type": "Feature",
-      "id": "PUBLIC-004",
       "properties": {
         "id": "PUBLIC-004",
         "layer": "PUBLIC_SPACE",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "name_zh": "验证庭外延",
-        "area_sqm_declared": 103531.815
+        "public_space_type": "verify_forecourt",
+        "area_sqm_declared": 85339.853
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.34438,
-              40.00725
+              116.3492749808652,
+              39.99530221062119
             ],
             [
-              116.34438,
-              40.01425
+              116.34936748086521,
+              39.992841710621185
             ],
             [
-              116.34594,
-              40.01425
+              116.34566748086519,
+              39.99271221062118
             ],
             [
-              116.34594,
-              40.00725
+              116.3455749808652,
+              39.995107960621176
             ],
             [
-              116.34438,
-              40.00725
+              116.3492749808652,
+              39.99530221062119
             ]
           ]
         ]
-      }
+      },
+      "id": "PUBLIC-004"
     },
     {
       "type": "Feature",
-      "id": "PUBLIC-005",
       "properties": {
         "id": "PUBLIC-005",
         "layer": "PUBLIC_SPACE",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
-        "name_zh": "产业服务广场",
-        "area_sqm_declared": 103607.483
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
+        "name_zh": "科研庭",
+        "public_space_type": "research_court",
+        "area_sqm_declared": 65857.369
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.347188,
-              39.9565
+              116.34559748277869,
+              39.97011618053244
             ],
             [
-              116.347188,
-              39.9635
+              116.34568073277869,
+              39.968007180532446
             ],
             [
-              116.348748,
-              39.9635
+              116.34235073277868,
+              39.96789618053245
             ],
             [
-              116.348748,
-              39.9565
+              116.34226748277868,
+              39.969949680532444
             ],
             [
-              116.347188,
-              39.9565
+              116.34559748277869,
+              39.97011618053244
             ]
           ]
         ]
-      }
+      },
+      "id": "PUBLIC-005"
     },
     {
       "type": "Feature",
-      "id": "PUBLIC-006",
       "properties": {
         "id": "PUBLIC-006",
         "layer": "PUBLIC_SPACE",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
-        "name_zh": "路演前场",
-        "area_sqm_declared": 90628.564
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
+        "name_zh": "产业服务广场",
+        "public_space_type": "service_plaza",
+        "area_sqm_declared": 65859.158
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.347188,
-              39.978375
+              116.3525974827787,
+              39.96811618053245
             ],
             [
-              116.347188,
-              39.9845
+              116.35268073277871,
+              39.96600718053245
             ],
             [
-              116.348748,
-              39.9845
+              116.3493507327787,
+              39.965896180532454
             ],
             [
-              116.348748,
-              39.978375
+              116.3492674827787,
+              39.96794968053245
             ],
             [
-              116.347188,
-              39.978375
+              116.3525974827787,
+              39.96811618053245
             ]
           ]
         ]
-      }
+      },
+      "id": "PUBLIC-006"
     },
     {
       "type": "Feature",
-      "id": "PUBLIC-007",
       "properties": {
         "id": "PUBLIC-007",
         "layer": "PUBLIC_SPACE",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
-        "name_zh": "数据会客前场",
-        "area_sqm_declared": 103542.199
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
+        "name_zh": "路演前场",
+        "public_space_type": "pitch_forecourt",
+        "area_sqm_declared": 85392.66
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.347188,
-              40.00025
+              116.35227498086523,
+              39.9523022106212
             ],
             [
-              116.347188,
-              40.00725
+              116.35236748086524,
+              39.949841710621186
             ],
             [
-              116.348748,
-              40.00725
+              116.34866748086522,
+              39.949712210621186
             ],
             [
-              116.348748,
-              40.00025
+              116.34857498086521,
+              39.952107960621184
             ],
             [
-              116.347188,
-              40.00025
+              116.35227498086523,
+              39.9523022106212
             ]
           ]
         ]
-      }
+      },
+      "id": "PUBLIC-007"
     },
     {
       "type": "Feature",
-      "id": "PUBLIC-008",
       "properties": {
         "id": "PUBLIC-008",
         "layer": "PUBLIC_SPACE",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
-        "name_zh": "科研庭",
-        "area_sqm_declared": 93223.354
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
+        "name_zh": "数据会客前场",
+        "public_space_type": "data_parlor_court",
+        "area_sqm_declared": 58549.916
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.34204,
-              39.974
+              116.35141998469217,
+              39.958116180532436
             ],
             [
-              116.34204,
-              39.981
+              116.35149398469217,
+              39.95600718053244
             ],
             [
-              116.343444,
-              39.981
+              116.34853398469218,
+              39.95589618053244
             ],
             [
-              116.343444,
-              39.974
+              116.34845998469218,
+              39.95794968053244
             ],
             [
-              116.34204,
-              39.974
+              116.35141998469217,
+              39.958116180532436
             ]
           ]
         ]
-      }
+      },
+      "id": "PUBLIC-008"
     },
     {
       "type": "Feature",
-      "id": "PUBLIC-009",
       "properties": {
         "id": "PUBLIC-009",
         "layer": "PUBLIC_SPACE",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "name_zh": "近校转化街口",
-        "area_sqm_declared": 108767.894
+        "public_space_type": "transfer_mouth",
+        "area_sqm_declared": 65845.872
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.35062,
-              39.969625
+              116.3530974827787,
+              39.982116180532444
             ],
             [
-              116.35062,
-              39.97575
+              116.3531807327787,
+              39.980007180532446
             ],
             [
-              116.352492,
-              39.97575
+              116.34985073277869,
+              39.97989618053245
             ],
             [
-              116.352492,
-              39.969625
+              116.34976748277869,
+              39.981949680532445
             ],
             [
-              116.35062,
-              39.969625
+              116.3530974827787,
+              39.982116180532444
             ]
           ]
         ]
-      }
+      },
+      "id": "PUBLIC-009"
     },
     {
       "type": "Feature",
-      "id": "PUBLIC-010",
       "properties": {
         "id": "PUBLIC-010",
         "layer": "PUBLIC_SPACE",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "name_zh": "人才服务院",
-        "area_sqm_declared": 108740.474
+        "public_space_type": "talent_court",
+        "area_sqm_declared": 48769.094
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.35062,
-              39.987125
+              116.35311998469214,
+              39.98993015044371
             ],
             [
-              116.35062,
-              39.99325
+              116.35319398469214,
+              39.9881726504437
             ],
             [
-              116.352492,
-              39.99325
+              116.35023398469215,
+              39.9880801504437
             ],
             [
-              116.352492,
-              39.987125
+              116.35015998469216,
+              39.98979140044371
             ],
             [
-              116.35062,
-              39.987125
+              116.35311998469214,
+              39.98993015044371
             ]
           ]
         ]
-      }
+      },
+      "id": "PUBLIC-010"
     },
     {
       "type": "Feature",
-      "id": "PUBLIC-011",
       "properties": {
         "id": "PUBLIC-011",
         "layer": "PUBLIC_SPACE",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "name_zh": "站点口袋-南",
-        "area_sqm_declared": 101028.716
+        "public_space_type": "station_pocket",
+        "area_sqm_declared": 42698.831
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.34828,
-              39.9495
+              116.34724248660565,
+              39.94793015044371
             ],
             [
-              116.34828,
-              39.95475
+              116.34730723660564,
+              39.94617265044371
             ],
             [
-              116.350308,
-              39.95475
+              116.34471723660566,
+              39.946080150443706
             ],
             [
-              116.350308,
-              39.9495
+              116.34465248660564,
+              39.94779140044371
             ],
             [
-              116.34828,
-              39.9495
+              116.34724248660565,
+              39.94793015044371
             ]
           ]
         ]
-      }
+      },
+      "id": "PUBLIC-011"
     },
     {
       "type": "Feature",
-      "id": "PUBLIC-012",
       "properties": {
         "id": "PUBLIC-012",
         "layer": "PUBLIC_SPACE",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "name_zh": "站点口袋-北",
-        "area_sqm_declared": 134584.436
+        "public_space_type": "station_pocket",
+        "area_sqm_declared": 42656.071
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.34828,
-              40.01075
+              116.34994248660564,
+              40.017430150443715
             ],
             [
-              116.34828,
-              40.01775
+              116.35000723660563,
+              40.015672650443705
             ],
             [
-              116.350308,
-              40.01775
+              116.34741723660565,
+              40.015580150443704
             ],
             [
-              116.350308,
-              40.01075
+              116.34735248660563,
+              40.01729140044371
             ],
             [
-              116.34828,
-              40.01075
+              116.34994248660564,
+              40.017430150443715
             ]
           ]
         ]
-      }
+      },
+      "id": "PUBLIC-012"
     },
     {
       "type": "Feature",
-      "id": "PUBLIC-013",
       "properties": {
         "id": "PUBLIC-013",
         "layer": "PUBLIC_SPACE",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "name_zh": "社区活动场",
-        "area_sqm_declared": 82842.207
+        "public_space_type": "community_yard",
+        "area_sqm_declared": 48770.594
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.34282,
-              39.99325
+              116.34491998469218,
+              39.98793015044372
             ],
             [
-              116.34282,
-              40.00025
+              116.34499398469218,
+              39.986172650443706
             ],
             [
-              116.344068,
-              40.00025
+              116.34203398469218,
+              39.986080150443705
             ],
             [
-              116.344068,
-              39.99325
+              116.34195998469218,
+              39.98779140044371
             ],
             [
-              116.34282,
-              39.99325
+              116.34491998469218,
+              39.98793015044372
             ]
           ]
         ]
-      }
+      },
+      "id": "PUBLIC-013"
     },
     {
       "type": "Feature",
-      "id": "PUBLIC-014",
       "properties": {
         "id": "PUBLIC-014",
         "layer": "PUBLIC_SPACE",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "name_zh": "生活服务小广场",
-        "area_sqm_declared": 134689.588
+        "public_space_type": "life_plaza",
+        "area_sqm_declared": 42666.804
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3514,
-              39.9565
+              116.35324248660565,
+              39.99993015044372
             ],
             [
-              116.3514,
-              39.9635
+              116.35330723660564,
+              39.998172650443706
             ],
             [
-              116.353428,
-              39.9635
+              116.35071723660566,
+              39.998080150443705
             ],
             [
-              116.353428,
-              39.9565
+              116.35065248660564,
+              39.99979140044371
             ],
             [
-              116.3514,
-              39.9565
+              116.35324248660565,
+              39.99993015044372
             ]
           ]
         ]
-      }
+      },
+      "id": "PUBLIC-014"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "PUBLIC-015",
+        "layer": "PUBLIC_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "crs_note": "EPSG:4326 storage",
+        "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
+        "name_zh": "治理论坛庭",
+        "public_space_type": "governance_court",
+        "area_sqm_declared": 65824.14
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34709748277872,
+              40.00511618053244
+            ],
+            [
+              116.34718073277872,
+              40.00300718053244
+            ],
+            [
+              116.34385073277872,
+              40.002896180532446
+            ],
+            [
+              116.34376748277872,
+              40.00494968053244
+            ],
+            [
+              116.34709748277872,
+              40.00511618053244
+            ]
+          ]
+        ]
+      },
+      "id": "PUBLIC-015"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "PUBLIC-016",
+        "layer": "PUBLIC_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "crs_note": "EPSG:4326 storage",
+        "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
+        "name_zh": "荣誉墙前场",
+        "public_space_type": "honor_forecourt",
+        "area_sqm_declared": 29268.645
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34956498851915,
+              39.97274412035497
+            ],
+            [
+              116.34962048851916,
+              39.97133812035497
+            ],
+            [
+              116.34740048851914,
+              39.971264120354974
+            ],
+            [
+              116.34734498851915,
+              39.97263312035497
+            ],
+            [
+              116.34956498851915,
+              39.97274412035497
+            ]
+          ]
+        ]
+      },
+      "id": "PUBLIC-016"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "PUBLIC-017",
+        "layer": "PUBLIC_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "crs_note": "EPSG:4326 storage",
+        "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
+        "name_zh": "脊上协议总线庭-南",
+        "public_space_type": "protocol_court",
+        "area_sqm_declared": 71479.604
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34561,
+              39.96199
+            ],
+            [
+              116.34921,
+              39.9621
+            ],
+            [
+              116.3493,
+              39.96001
+            ],
+            [
+              116.3457,
+              39.9599
+            ],
+            [
+              116.34561,
+              39.96199
+            ]
+          ]
+        ]
+      },
+      "id": "PUBLIC-017"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "PUBLIC-018",
+        "layer": "PUBLIC_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "crs_note": "EPSG:4326 storage",
+        "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
+        "name_zh": "脊上协议总线庭-中",
+        "public_space_type": "protocol_court",
+        "area_sqm_declared": 61357.238
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.345715,
+              39.9779
+            ],
+            [
+              116.349115,
+              39.977999999999994
+            ],
+            [
+              116.3492,
+              39.976099999999995
+            ],
+            [
+              116.3458,
+              39.976
+            ],
+            [
+              116.345715,
+              39.9779
+            ]
+          ]
+        ]
+      },
+      "id": "PUBLIC-018"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "PUBLIC-019",
+        "layer": "PUBLIC_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "crs_note": "EPSG:4326 storage",
+        "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
+        "name_zh": "脊上协议总线庭-北",
+        "public_space_type": "protocol_court",
+        "area_sqm_declared": 57736.341
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34582,
+              39.9919
+            ],
+            [
+              116.34902,
+              39.992
+            ],
+            [
+              116.34909999999999,
+              39.9901
+            ],
+            [
+              116.3459,
+              39.99
+            ],
+            [
+              116.34582,
+              39.9919
+            ]
+          ]
+        ]
+      },
+      "id": "PUBLIC-019"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "PUBLIC-020",
+        "layer": "PUBLIC_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "crs_note": "EPSG:4326 storage",
+        "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
+        "name_zh": "西翼社区公空",
+        "public_space_type": "protocol_court",
+        "area_sqm_declared": 38981.604
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34324,
+              39.97481
+            ],
+            [
+              116.34564,
+              39.9749
+            ],
+            [
+              116.3457,
+              39.973189999999995
+            ],
+            [
+              116.3433,
+              39.973099999999995
+            ],
+            [
+              116.34324,
+              39.97481
+            ]
+          ]
+        ]
+      },
+      "id": "PUBLIC-020"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "PUBLIC-021",
+        "layer": "PUBLIC_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "crs_note": "EPSG:4326 storage",
+        "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
+        "name_zh": "东翼服务公空",
+        "public_space_type": "protocol_court",
+        "area_sqm_declared": 38980.984
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34974,
+              39.97581
+            ],
+            [
+              116.35214,
+              39.9759
+            ],
+            [
+              116.3522,
+              39.97419
+            ],
+            [
+              116.3498,
+              39.9741
+            ],
+            [
+              116.34974,
+              39.97581
+            ]
+          ]
+        ]
+      },
+      "id": "PUBLIC-021"
     }
   ]
 }

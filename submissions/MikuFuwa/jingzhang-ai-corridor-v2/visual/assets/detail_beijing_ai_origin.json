@@ -1,0 +1,1246 @@
+{
+  "type": "FeatureCollection",
+  "name": "detail_beijing_ai_origin",
+  "crs_note": "Coordinates stored as EPSG:4326 lon/lat. Areas recomputed via EPSG:4548.",
+  "equal_area_projection": "EPSG:4548",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "DET-beijing_ai_origin_community-COURT",
+        "layer": "AI_SERVICE_ZONE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "crs_note": "EPSG:4326 storage",
+        "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
+        "name_zh": "北京AI原点社区粗略范围-公共主庭",
+        "detail_type": "public_court",
+        "parent_key_area": "PROV-KEY-002",
+        "area_id": "beijing_ai_origin_community",
+        "area_sqm_declared": 18851.578
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34827274066103,
+              39.98829294476392
+            ],
+            [
+              116.34819282032302,
+              39.9881
+            ],
+            [
+              116.34806568542494,
+              39.98793431457505
+            ],
+            [
+              116.3479,
+              39.98780717967698
+            ],
+            [
+              116.34770705523609,
+              39.98772725933897
+            ],
+            [
+              116.3475,
+              39.987700000000004
+            ],
+            [
+              116.34729294476391,
+              39.98772725933897
+            ],
+            [
+              116.3471,
+              39.98780717967698
+            ],
+            [
+              116.34693431457505,
+              39.98793431457505
+            ],
+            [
+              116.34680717967697,
+              39.9881
+            ],
+            [
+              116.34672725933896,
+              39.98829294476392
+            ],
+            [
+              116.3467,
+              39.9885
+            ],
+            [
+              116.34672725933896,
+              39.988707055236084
+            ],
+            [
+              116.34680717967697,
+              39.9889
+            ],
+            [
+              116.34693431457505,
+              39.989065685424954
+            ],
+            [
+              116.3471,
+              39.98919282032303
+            ],
+            [
+              116.34729294476391,
+              39.989272740661036
+            ],
+            [
+              116.3475,
+              39.9893
+            ],
+            [
+              116.34770705523609,
+              39.989272740661036
+            ],
+            [
+              116.3479,
+              39.98919282032303
+            ],
+            [
+              116.34806568542494,
+              39.989065685424954
+            ],
+            [
+              116.34819282032302,
+              39.9889
+            ],
+            [
+              116.34827274066103,
+              39.988707055236084
+            ],
+            [
+              116.3483,
+              39.9885
+            ],
+            [
+              116.34827274066103,
+              39.98829294476392
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "DET-beijing_ai_origin_community-ENTRY",
+        "layer": "AI_SERVICE_ZONE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "crs_note": "EPSG:4326 storage",
+        "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
+        "name_zh": "北京AI原点社区粗略范围-主入口",
+        "detail_type": "main_entry",
+        "parent_key_area": "PROV-KEY-002",
+        "area_id": "beijing_ai_origin_community",
+        "area_sqm_declared": 21624.822
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34649999999999,
+              39.9835
+            ],
+            [
+              116.3466,
+              39.9847
+            ],
+            [
+              116.3484,
+              39.9847
+            ],
+            [
+              116.3485,
+              39.9835
+            ],
+            [
+              116.34649999999999,
+              39.9835
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "DET-beijing_ai_origin_community-SEAM",
+        "layer": "AI_SERVICE_ZONE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "crs_note": "EPSG:4326 storage",
+        "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
+        "name_zh": "北京AI原点社区粗略范围-横缝步行",
+        "detail_type": "cross_seam",
+        "parent_key_area": "PROV-KEY-002",
+        "area_id": "beijing_ai_origin_community",
+        "area_sqm_declared": 31297.107
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.342,
+              39.988350000000004
+            ],
+            [
+              116.342,
+              39.98865
+            ],
+            [
+              116.353,
+              39.98865
+            ],
+            [
+              116.353,
+              39.988350000000004
+            ],
+            [
+              116.342,
+              39.988350000000004
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "DET-beijing_ai_origin_community-SPINE",
+        "layer": "AI_SERVICE_ZONE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "crs_note": "EPSG:4326 storage",
+        "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
+        "name_zh": "北京AI原点社区粗略范围-慢行脊段",
+        "detail_type": "spine_segment",
+        "parent_key_area": "PROV-KEY-002",
+        "area_id": "beijing_ai_origin_community",
+        "area_sqm_declared": 47419.859
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34774999999999,
+              39.9835
+            ],
+            [
+              116.34725,
+              39.9835
+            ],
+            [
+              116.34725,
+              39.9935
+            ],
+            [
+              116.34774999999999,
+              39.9935
+            ],
+            [
+              116.34774999999999,
+              39.9835
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "DET-beijing_ai_origin_community-BLDG-01",
+        "layer": "AI_SERVICE_ZONE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "crs_note": "EPSG:4326 storage",
+        "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
+        "building_type": "lab",
+        "name_zh": "实验室组团-31",
+        "name_en": "lab-31",
+        "parent_land_use": "LU-016",
+        "form_logic": "R",
+        "concept_only": true,
+        "area_sqm_declared": 2302.933,
+        "detail_type": "building_pad",
+        "parent_key_area": "PROV-KEY-002",
+        "area_id": "beijing_ai_origin_community"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34839218166061,
+              39.98988652152458
+            ],
+            [
+              116.34839218166061,
+              39.99040109889968
+            ],
+            [
+              116.34886408248931,
+              39.99040109889968
+            ],
+            [
+              116.34886408248931,
+              39.98988652152458
+            ],
+            [
+              116.34839218166061,
+              39.98988652152458
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "DET-beijing_ai_origin_community-BLDG-02",
+        "layer": "AI_SERVICE_ZONE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "crs_note": "EPSG:4326 storage",
+        "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
+        "building_type": "incubator",
+        "name_zh": "孵化器-32",
+        "name_en": "incubator-32",
+        "parent_land_use": "LU-016",
+        "form_logic": "L",
+        "concept_only": true,
+        "area_sqm_declared": 1174.76,
+        "detail_type": "building_pad",
+        "parent_key_area": "PROV-KEY-002",
+        "area_id": "beijing_ai_origin_community"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34802279856457,
+              39.98862310610917
+            ],
+            [
+              116.34821611829749,
+              39.988602265398185
+            ],
+            [
+              116.34818559005402,
+              39.98843564310631
+            ],
+            [
+              116.34859418283912,
+              39.988391595020694
+            ],
+            [
+              116.3485670135225,
+              39.98824330565676
+            ],
+            [
+              116.34796510100448,
+              39.98830819445335
+            ],
+            [
+              116.34802279856457,
+              39.98862310610917
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "DET-beijing_ai_origin_community-BLDG-03",
+        "layer": "AI_SERVICE_ZONE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "crs_note": "EPSG:4326 storage",
+        "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
+        "building_type": "office",
+        "name_zh": "科创办公-33",
+        "name_en": "office-33",
+        "parent_land_use": "LU-016",
+        "form_logic": "R",
+        "concept_only": true,
+        "area_sqm_declared": 2057.569,
+        "detail_type": "building_pad",
+        "parent_key_area": "PROV-KEY-002",
+        "area_id": "beijing_ai_origin_community"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34668755448719,
+              39.98567560886325
+            ],
+            [
+              116.34668755448719,
+              39.986093817744916
+            ],
+            [
+              116.34720630022669,
+              39.986093817744916
+            ],
+            [
+              116.34720630022669,
+              39.98567560886325
+            ],
+            [
+              116.34668755448719,
+              39.98567560886325
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "DET-beijing_ai_origin_community-BLDG-04",
+        "layer": "AI_SERVICE_ZONE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "crs_note": "EPSG:4326 storage",
+        "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
+        "building_type": "education",
+        "name_zh": "教育转化-55",
+        "name_en": "education-55",
+        "parent_land_use": "LU-022",
+        "form_logic": "R",
+        "concept_only": true,
+        "area_sqm_declared": 3497.811,
+        "detail_type": "building_pad",
+        "parent_key_area": "PROV-KEY-002",
+        "area_id": "beijing_ai_origin_community"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35005847000473,
+              39.9907071853475
+            ],
+            [
+              116.35025284040988,
+              39.99015075410938
+            ],
+            [
+              116.34963440544833,
+              39.99002364393877
+            ],
+            [
+              116.34944003504317,
+              39.990580075176894
+            ],
+            [
+              116.35005847000473,
+              39.9907071853475
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "DET-beijing_ai_origin_community-BLDG-05",
+        "layer": "AI_SERVICE_ZONE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "crs_note": "EPSG:4326 storage",
+        "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
+        "building_type": "retail",
+        "name_zh": "配套商业-56",
+        "name_en": "retail-56",
+        "parent_land_use": "LU-022",
+        "form_logic": "U",
+        "concept_only": true,
+        "area_sqm_declared": 709.903,
+        "detail_type": "building_pad",
+        "parent_key_area": "PROV-KEY-002",
+        "area_id": "beijing_ai_origin_community"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35089397418439,
+              39.991806846669874
+            ],
+            [
+              116.35102880020644,
+              39.99183455816701
+            ],
+            [
+              116.35105999654374,
+              39.991745251275994
+            ],
+            [
+              116.35123281225091,
+              39.99178077099171
+            ],
+            [
+              116.35120161591361,
+              39.99187007788272
+            ],
+            [
+              116.35133644193566,
+              39.991897789379856
+            ],
+            [
+              116.35140376479669,
+              39.99170506177359
+            ],
+            [
+              116.35096129704542,
+              39.991614119063605
+            ],
+            [
+              116.35089397418439,
+              39.991806846669874
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "DET-beijing_ai_origin_community-BLDG-06",
+        "layer": "AI_SERVICE_ZONE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "crs_note": "EPSG:4326 storage",
+        "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
+        "building_type": "community_service",
+        "name_zh": "社区服务-57",
+        "name_en": "community_service-57",
+        "parent_land_use": "LU-022",
+        "form_logic": "R",
+        "concept_only": true,
+        "area_sqm_declared": 923.339,
+        "detail_type": "building_pad",
+        "parent_key_area": "PROV-KEY-002",
+        "area_id": "beijing_ai_origin_community"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35090031135832,
+              39.98527924751824
+            ],
+            [
+              116.35098933514968,
+              39.98502439586835
+            ],
+            [
+              116.35063292490673,
+              39.98495114100793
+            ],
+            [
+              116.35054390111537,
+              39.985205992657825
+            ],
+            [
+              116.35090031135832,
+              39.98527924751824
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "DET-beijing_ai_origin_community-BLDG-07",
+        "layer": "AI_SERVICE_ZONE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "crs_note": "EPSG:4326 storage",
+        "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
+        "building_type": "cultural",
+        "name_zh": "文化展示-58",
+        "name_en": "cultural-58",
+        "parent_land_use": "LU-022",
+        "form_logic": "R",
+        "concept_only": true,
+        "area_sqm_declared": 963.379,
+        "detail_type": "building_pad",
+        "parent_key_area": "PROV-KEY-002",
+        "area_id": "beijing_ai_origin_community"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34975023797959,
+              39.98582405100296
+            ],
+            [
+              116.35012150241005,
+              39.985900358922194
+            ],
+            [
+              116.35021067119926,
+              39.98564509218162
+            ],
+            [
+              116.34983940676881,
+              39.985568784262384
+            ],
+            [
+              116.34975023797959,
+              39.98582405100296
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "DET-beijing_ai_origin_community-BLDG-08",
+        "layer": "AI_SERVICE_ZONE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "crs_note": "EPSG:4326 storage",
+        "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
+        "building_type": "talent_apartment",
+        "name_zh": "人才公寓-79",
+        "name_en": "talent_apartment-79",
+        "parent_land_use": "LU-028",
+        "form_logic": "R",
+        "concept_only": true,
+        "area_sqm_declared": 578.105,
+        "detail_type": "building_pad",
+        "parent_key_area": "PROV-KEY-002",
+        "area_id": "beijing_ai_origin_community"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35274929635659,
+              39.99241390350713
+            ],
+            [
+              116.35284795777737,
+              39.99269634514982
+            ],
+            [
+              116.353,
+              39.992665095116976
+            ],
+            [
+              116.353,
+              39.99236237507671
+            ],
+            [
+              116.35274929635659,
+              39.99241390350713
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "DET-beijing_ai_origin_community-BLDG-09",
+        "layer": "AI_SERVICE_ZONE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "crs_note": "EPSG:4326 storage",
+        "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
+        "building_type": "ai_r_and_d",
+        "name_zh": "AI研发楼-80",
+        "name_en": "ai_r_and_d-80",
+        "parent_land_use": "LU-028",
+        "form_logic": "L",
+        "concept_only": true,
+        "area_sqm_declared": 927.895,
+        "detail_type": "building_pad",
+        "parent_key_area": "PROV-KEY-002",
+        "area_id": "beijing_ai_origin_community"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35287410416362,
+              39.988191529470086
+            ],
+            [
+              116.35256755923997,
+              39.98825453525075
+            ],
+            [
+              116.35260792966494,
+              39.98837010513669
+            ],
+            [
+              116.35276381011145,
+              39.98833806621363
+            ],
+            [
+              116.35290280137148,
+              39.988735961556
+            ],
+            [
+              116.353,
+              39.98871598381376
+            ],
+            [
+              116.353,
+              39.98855193606622
+            ],
+            [
+              116.35287410416362,
+              39.988191529470086
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "DET-beijing_ai_origin_community-PUB-01",
+        "layer": "AI_SERVICE_ZONE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "crs_note": "EPSG:4326 storage",
+        "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
+        "name_zh": "验证庭外延",
+        "public_space_type": "verify_forecourt",
+        "area_sqm_declared": 3133.8,
+        "detail_type": "public_prototype",
+        "parent_key_area": "PROV-KEY-002",
+        "area_id": "beijing_ai_origin_community"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3485,
+              39.99337
+            ],
+            [
+              116.34649999999999,
+              39.9933
+            ],
+            [
+              116.34649227799227,
+              39.9935
+            ],
+            [
+              116.34849511278196,
+              39.9935
+            ],
+            [
+              116.3485,
+              39.99337
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "DET-beijing_ai_origin_community-PUB-02",
+        "layer": "AI_SERVICE_ZONE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "crs_note": "EPSG:4326 storage",
+        "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
+        "name_zh": "人才服务院",
+        "public_space_type": "talent_court",
+        "area_sqm_declared": 14249.553,
+        "detail_type": "public_prototype",
+        "parent_key_area": "PROV-KEY-002",
+        "area_id": "beijing_ai_origin_community"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35246,
+              39.9895
+            ],
+            [
+              116.35249999999999,
+              39.98855
+            ],
+            [
+              116.3509,
+              39.988499999999995
+            ],
+            [
+              116.35086,
+              39.989425
+            ],
+            [
+              116.35246,
+              39.9895
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "DET-beijing_ai_origin_community-PUB-03",
+        "layer": "AI_SERVICE_ZONE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "crs_note": "EPSG:4326 storage",
+        "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
+        "name_zh": "社区活动场",
+        "public_space_type": "community_yard",
+        "area_sqm_declared": 14249.991,
+        "detail_type": "public_prototype",
+        "parent_key_area": "PROV-KEY-002",
+        "area_id": "beijing_ai_origin_community"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34425999999999,
+              39.987500000000004
+            ],
+            [
+              116.34429999999999,
+              39.98655
+            ],
+            [
+              116.3427,
+              39.9865
+            ],
+            [
+              116.34266,
+              39.987425
+            ],
+            [
+              116.34425999999999,
+              39.987500000000004
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "DET-beijing_ai_origin_community-SCN-10",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "crs_note": "EPSG:4326 storage",
+        "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
+        "name_zh": "全球AI活动周枢纽",
+        "name_en": "festival_hub",
+        "scenario_type": "festival_hub",
+        "host_structure": "dazhongsi_ai_industry_cluster",
+        "place_geometry_id": "SCN-10",
+        "area_sqm_declared": 2370.974,
+        "detail_type": "scenario_anchor",
+        "parent_key_area": "PROV-KEY-002",
+        "area_id": "beijing_ai_origin_community"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.351433547421,
+              39.98924394065446
+            ],
+            [
+              116.35193354742098,
+              39.98924394065446
+            ],
+            [
+              116.35193354742098,
+              39.98874394065446
+            ],
+            [
+              116.351433547421,
+              39.98874394065446
+            ],
+            [
+              116.351433547421,
+              39.98924394065446
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "DET-beijing_ai_origin_community-RISK",
+        "layer": "AI_SERVICE_ZONE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "crs_note": "EPSG:4326 storage",
+        "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
+        "name_zh": "北京AI原点社区粗略范围-风险/待确认叠加",
+        "detail_type": "risk_overlay",
+        "parent_key_area": "PROV-KEY-002",
+        "area_id": "beijing_ai_origin_community",
+        "status": "pending_confirmation",
+        "area_sqm_declared": 24095.361
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34939566625401,
+              39.98741178457371
+            ],
+            [
+              116.34938270675237,
+              39.98732441871019
+            ],
+            [
+              116.34936124630217,
+              39.98723874379048
+            ],
+            [
+              116.34933149157926,
+              39.98715558491087
+            ],
+            [
+              116.34929372913791,
+              39.98707574293686
+            ],
+            [
+              116.34924832265108,
+              39.98699998679029
+            ],
+            [
+              116.34919570940802,
+              39.98692904604426
+            ],
+            [
+              116.34913639610306,
+              39.986863603896936
+            ],
+            [
+              116.34907095395575,
+              39.98680429059198
+            ],
+            [
+              116.34900001320972,
+              39.986751677348934
+            ],
+            [
+              116.34892425706315,
+              39.98670627086209
+            ],
+            [
+              116.34884441508913,
+              39.98666850842074
+            ],
+            [
+              116.34876125620953,
+              39.98663875369785
+            ],
+            [
+              116.34867558128981,
+              39.98661729324764
+            ],
+            [
+              116.3485882154263,
+              39.986604333746
+            ],
+            [
+              116.3485,
+              39.9866
+            ],
+            [
+              116.3484117845737,
+              39.986604333746
+            ],
+            [
+              116.34832441871019,
+              39.98661729324764
+            ],
+            [
+              116.34823874379047,
+              39.98663875369785
+            ],
+            [
+              116.34815558491087,
+              39.98666850842074
+            ],
+            [
+              116.34807574293686,
+              39.98670627086209
+            ],
+            [
+              116.34799998679028,
+              39.986751677348934
+            ],
+            [
+              116.34792904604426,
+              39.98680429059198
+            ],
+            [
+              116.34786360389694,
+              39.986863603896936
+            ],
+            [
+              116.34780429059198,
+              39.98692904604426
+            ],
+            [
+              116.34775167734892,
+              39.98699998679029
+            ],
+            [
+              116.34770627086209,
+              39.98707574293686
+            ],
+            [
+              116.34766850842074,
+              39.98715558491087
+            ],
+            [
+              116.34763875369784,
+              39.98723874379048
+            ],
+            [
+              116.34761729324764,
+              39.98732441871019
+            ],
+            [
+              116.34760433374599,
+              39.98741178457371
+            ],
+            [
+              116.3476,
+              39.987500000000004
+            ],
+            [
+              116.34760433374599,
+              39.9875882154263
+            ],
+            [
+              116.34761729324764,
+              39.98767558128982
+            ],
+            [
+              116.34763875369784,
+              39.98776125620953
+            ],
+            [
+              116.34766850842074,
+              39.987844415089135
+            ],
+            [
+              116.34770627086209,
+              39.98792425706315
+            ],
+            [
+              116.34775167734892,
+              39.98800001320972
+            ],
+            [
+              116.34780429059198,
+              39.98807095395575
+            ],
+            [
+              116.34786360389694,
+              39.98813639610307
+            ],
+            [
+              116.34792904604426,
+              39.98819570940803
+            ],
+            [
+              116.34799998679028,
+              39.988248322651074
+            ],
+            [
+              116.34807574293686,
+              39.988293729137915
+            ],
+            [
+              116.34815558491087,
+              39.98833149157927
+            ],
+            [
+              116.34823874379047,
+              39.98836124630216
+            ],
+            [
+              116.34832441871019,
+              39.98838270675237
+            ],
+            [
+              116.3484117845737,
+              39.98839566625401
+            ],
+            [
+              116.3485,
+              39.988400000000006
+            ],
+            [
+              116.3485882154263,
+              39.98839566625401
+            ],
+            [
+              116.34867558128981,
+              39.98838270675237
+            ],
+            [
+              116.34876125620953,
+              39.98836124630216
+            ],
+            [
+              116.34884441508913,
+              39.98833149157927
+            ],
+            [
+              116.34892425706315,
+              39.988293729137915
+            ],
+            [
+              116.34900001320972,
+              39.988248322651074
+            ],
+            [
+              116.34907095395575,
+              39.98819570940803
+            ],
+            [
+              116.34913639610306,
+              39.98813639610307
+            ],
+            [
+              116.34919570940802,
+              39.98807095395575
+            ],
+            [
+              116.34924832265108,
+              39.98800001320972
+            ],
+            [
+              116.34929372913791,
+              39.98792425706315
+            ],
+            [
+              116.34933149157926,
+              39.987844415089135
+            ],
+            [
+              116.34936124630217,
+              39.98776125620953
+            ],
+            [
+              116.34938270675237,
+              39.98767558128982
+            ],
+            [
+              116.34939566625401,
+              39.9875882154263
+            ],
+            [
+              116.3494,
+              39.987500000000004
+            ],
+            [
+              116.34939566625401,
+              39.98741178457371
+            ]
+          ]
+        ]
+      }
+    }
+  ],
+  "parent_area_id": "beijing_ai_origin_community"
+}

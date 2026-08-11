@@ -1,6 +1,8 @@
 {
   "type": "FeatureCollection",
-  "name": "site_boundary_v2",
+  "name": "site_boundary",
+  "crs_note": "Coordinates stored as EPSG:4326 lon/lat. Areas recomputed via EPSG:4548.",
+  "equal_area_projection": "EPSG:4548",
   "features": [
     {
       "type": "Feature",
@@ -14,7 +16,7 @@
         "scope_id": "overall_design_area",
         "name_zh": "总体设计范围粗略替代边界",
         "official_boundary": false,
-        "boundary_precision": "provisional_rough",
+        "boundary_precision": "provisional",
         "source_id": "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
         "derived_from_source_ids": [
           "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
@@ -24,7 +26,7 @@
         "area_sqm_declared": 11412825.386,
         "area_sqm_calculated": 11412825.386,
         "usage_note": "仅用于 AI agent 生成、展示和临时自检；不得作为 official redline、审批依据或精确面积复算依据。",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548"
       },
       "geometry": {

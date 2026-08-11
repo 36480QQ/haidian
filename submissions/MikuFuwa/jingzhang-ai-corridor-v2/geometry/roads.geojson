@@ -1,898 +1,1152 @@
 {
   "type": "FeatureCollection",
-  "name": "roads_v2",
+  "name": "roads",
+  "crs_note": "Coordinates stored as EPSG:4326 lon/lat. Areas recomputed via EPSG:4548.",
+  "equal_area_projection": "EPSG:4548",
   "features": [
     {
       "type": "Feature",
-      "id": "ROAD-001",
       "properties": {
         "id": "ROAD-001",
         "layer": "ROAD_CENTERLINE",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "road_class": "greenway",
-        "name_zh": "开源慢行脊段-1"
+        "name_zh": "开源绿脊慢行段-1",
+        "name_en": "greenway"
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            116.345004,
-            39.94075
+            116.3475,
+            39.939
           ],
           [
-            116.34516,
-            39.9462917
+            116.3476311123077,
+            39.94386111111111
           ],
           [
-            116.345004,
-            39.9518333
+            116.34774313042966,
+            39.94872222222222
+          ],
+          [
+            116.34781974091017,
+            39.953583333333334
           ]
         ]
-      }
+      },
+      "id": "ROAD-001"
     },
     {
       "type": "Feature",
-      "id": "ROAD-002",
       "properties": {
         "id": "ROAD-002",
         "layer": "ROAD_CENTERLINE",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "road_class": "greenway",
-        "name_zh": "开源慢行脊段-2"
+        "name_zh": "开源绿脊慢行段-2",
+        "name_en": "greenway"
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            116.345004,
-            39.9553333
+            116.34781974091017,
+            39.953583333333334
           ],
           [
-            116.34516,
-            39.960875
+            116.34784978678945,
+            39.958444444444446
           ],
           [
-            116.345004,
-            39.9664167
+            116.34782889241727,
+            39.96330555555556
+          ],
+          [
+            116.34776010068892,
+            39.96816666666667
           ]
         ]
-      }
+      },
+      "id": "ROAD-002"
     },
     {
       "type": "Feature",
-      "id": "ROAD-003",
       "properties": {
         "id": "ROAD-003",
         "layer": "ROAD_CENTERLINE",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "road_class": "greenway",
-        "name_zh": "开源慢行脊段-3"
+        "name_zh": "开源绿脊慢行段-3",
+        "name_en": "greenway"
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            116.345004,
-            39.9699167
+            116.34776010068892,
+            39.96816666666667
           ],
           [
-            116.34516,
-            39.9754583
+            116.34765342990137,
+            39.97302777777778
           ],
           [
-            116.345004,
-            39.981
+            116.3475244147658,
+            39.97788888888889
+          ],
+          [
+            116.34739184405197,
+            39.982749999999996
           ]
         ]
-      }
+      },
+      "id": "ROAD-003"
     },
     {
       "type": "Feature",
-      "id": "ROAD-004",
       "properties": {
         "id": "ROAD-004",
         "layer": "ROAD_CENTERLINE",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "road_class": "greenway",
-        "name_zh": "开源慢行脊段-4"
+        "name_zh": "开源绿脊慢行段-4",
+        "name_en": "greenway"
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            116.345004,
-            39.9845
+            116.34739184405197,
+            39.982749999999996
           ],
           [
-            116.34516,
-            39.9900417
+            116.34727502433661,
+            39.98761111111111
           ],
           [
-            116.345004,
-            39.9955833
+            116.3471909683425,
+            39.99247222222222
+          ],
+          [
+            116.34715191733662,
+            39.99733333333333
           ]
         ]
-      }
+      },
+      "id": "ROAD-004"
     },
     {
       "type": "Feature",
-      "id": "ROAD-005",
       "properties": {
         "id": "ROAD-005",
         "layer": "ROAD_CENTERLINE",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "road_class": "greenway",
-        "name_zh": "开源慢行脊段-5"
+        "name_zh": "开源绿脊慢行段-5",
+        "name_en": "greenway"
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            116.345004,
-            39.9990833
+            116.34715191733662,
+            39.99733333333333
           ],
           [
-            116.34516,
-            40.004625
+            116.34716355840642,
+            40.00219444444444
           ],
           [
-            116.345004,
-            40.0101667
+            116.34722419623624,
+            40.00705555555555
+          ],
+          [
+            116.347325,
+            40.011916666666664
           ]
         ]
-      }
+      },
+      "id": "ROAD-005"
     },
     {
       "type": "Feature",
-      "id": "ROAD-006",
       "properties": {
         "id": "ROAD-006",
         "layer": "ROAD_CENTERLINE",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "road_class": "greenway",
-        "name_zh": "开源慢行脊段-6"
+        "name_zh": "开源绿脊慢行段-6",
+        "name_en": "greenway"
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            116.345004,
-            40.0136667
+            116.347325,
+            40.011916666666664
           ],
           [
-            116.34516,
-            40.0192083
+            116.34745128941466,
+            40.016777777777776
           ],
           [
-            116.345004,
-            40.02475
+            116.34758467266346,
+            40.02163888888889
+          ],
+          [
+            116.34770572483829,
+            40.0265
           ]
         ]
-      }
+      },
+      "id": "ROAD-006"
     },
     {
       "type": "Feature",
-      "id": "ROAD-007",
       "properties": {
         "id": "ROAD-007",
         "layer": "ROAD_CENTERLINE",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "road_class": "secondary",
-        "name_zh": "东西缝合次干-1"
+        "name_zh": "东西缝合-1",
+        "name_en": "secondary"
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            116.34048,
-            39.952125
+            116.34040723409092,
+            39.949539572726955
           ],
           [
-            116.35452,
-            39.953
+            116.34192857142857,
+            39.949624697960374
+          ],
+          [
+            116.34415714285714,
+            39.94969498558244
+          ],
+          [
+            116.34638571428572,
+            39.94968019377358
+          ],
+          [
+            116.34861428571428,
+            39.94958677674782
+          ],
+          [
+            116.35084285714285,
+            39.94945549581321
+          ],
+          [
+            116.35307142857143,
+            39.949343633703506
+          ],
+          [
+            116.3553,
+            39.9493
           ]
         ]
-      }
+      },
+      "id": "ROAD-007"
     },
     {
       "type": "Feature",
-      "id": "ROAD-008",
       "properties": {
         "id": "ROAD-008",
         "layer": "ROAD_CENTERLINE",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
-        "road_class": "secondary",
-        "name_zh": "东西缝合次干-2"
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
+        "road_class": "branch",
+        "name_zh": "东西缝合-2",
+        "name_en": "branch"
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            116.34048,
-            39.96525
+            116.34001464936728,
+            39.963672622777885
           ],
           [
-            116.35452,
-            39.966125
+            116.34192857142857,
+            39.96369895229702
+          ],
+          [
+            116.34415714285714,
+            39.963642800141685
+          ],
+          [
+            116.34638571428572,
+            39.96352433899592
+          ],
+          [
+            116.34861428571428,
+            39.96339525784483
+          ],
+          [
+            116.35084285714285,
+            39.96331187957517
+          ],
+          [
+            116.35307142857143,
+            39.963310585213925
+          ],
+          [
+            116.3553,
+            39.96339193953882
           ]
         ]
-      }
+      },
+      "id": "ROAD-008"
     },
     {
       "type": "Feature",
-      "id": "ROAD-009",
       "properties": {
         "id": "ROAD-009",
         "layer": "ROAD_CENTERLINE",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "road_class": "secondary",
-        "name_zh": "东西缝合次干-3"
+        "name_zh": "东西缝合-3",
+        "name_en": "secondary"
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            116.34048,
-            39.978375
+            116.33992886810556,
+            39.97854745563627
           ],
           [
-            116.3541618,
-            39.9792277
+            116.34192857142857,
+            39.97846529080931
+          ],
+          [
+            116.34415714285714,
+            39.97833432490923
+          ],
+          [
+            116.34638571428572,
+            39.97822110705766
+          ],
+          [
+            116.34861428571428,
+            39.97817503839626
+          ],
+          [
+            116.35084285714285,
+            39.97821622038817
+          ],
+          [
+            116.35307142857143,
+            39.97832668380513
+          ],
+          [
+            116.35422840189588,
+            39.97839497630159
           ]
         ]
-      }
+      },
+      "id": "ROAD-009"
     },
     {
       "type": "Feature",
-      "id": "ROAD-010",
       "properties": {
         "id": "ROAD-010",
         "layer": "ROAD_CENTERLINE",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
-        "road_class": "secondary",
-        "name_zh": "东西缝合次干-4"
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
+        "road_class": "branch",
+        "name_zh": "东西缝合-4",
+        "name_en": "branch"
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            116.3407657,
-            39.9915178
+            116.3408748321914,
+            39.993209898966846
           ],
           [
-            116.3534264,
-            39.9923068
+            116.34192857142857,
+            39.99314861636791
+          ],
+          [
+            116.34415714285714,
+            39.99306324616764
+          ],
+          [
+            116.34638571428572,
+            39.99305936358086
+          ],
+          [
+            116.34861428571428,
+            39.99313866272399
+          ],
+          [
+            116.35084285714285,
+            39.99326654244402
+          ],
+          [
+            116.35307142857143,
+            39.99338720408307
+          ],
+          [
+            116.35348622024172,
+            39.993398519411414
           ]
         ]
-      }
+      },
+      "id": "ROAD-010"
     },
     {
       "type": "Feature",
-      "id": "ROAD-011",
       "properties": {
         "id": "ROAD-011",
         "layer": "ROAD_CENTERLINE",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "road_class": "secondary",
-        "name_zh": "东西缝合次干-5"
+        "name_zh": "东西缝合-5",
+        "name_en": "secondary"
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            116.3416159,
-            40.0046958
+            116.3417514150183,
+            40.007054007875034
           ],
           [
-            116.354148,
-            40.0054768
+            116.34192857142857,
+            40.0070501535703
+          ],
+          [
+            116.34415714285714,
+            40.00708886803827
+          ],
+          [
+            116.34638571428572,
+            40.007197890348664
+          ],
+          [
+            116.34861428571428,
+            40.00732965002983
+          ],
+          [
+            116.35084285714285,
+            40.00742665545313
+          ],
+          [
+            116.35307142857143,
+            40.00744657955979
+          ],
+          [
+            116.35425406216811,
+            40.007411634567866
           ]
         ]
-      }
+      },
+      "id": "ROAD-011"
     },
     {
       "type": "Feature",
-      "id": "ROAD-012",
       "properties": {
         "id": "ROAD-012",
         "layer": "ROAD_CENTERLINE",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "road_class": "branch",
-        "name_zh": "支路微循环-1"
+        "name_zh": "东西缝合-6",
+        "name_en": "branch"
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            116.341572,
-            39.94775
+            116.3422685284467,
+            40.01765483315734
           ],
           [
-            116.341572,
-            40.004016
+            116.34415714285714,
+            40.01776263389141
+          ],
+          [
+            116.34638571428572,
+            40.017884326489586
+          ],
+          [
+            116.34861428571428,
+            40.01794740746556
+          ],
+          [
+            116.35084285714285,
+            40.01792435225332
+          ],
+          [
+            116.35307142857143,
+            40.017825220695805
+          ],
+          [
+            116.35481899986058,
+            40.017721747455674
           ]
         ]
-      }
+      },
+      "id": "ROAD-012"
     },
     {
       "type": "Feature",
-      "id": "ROAD-013",
       "properties": {
         "id": "ROAD-013",
         "layer": "ROAD_CENTERLINE",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
-        "road_class": "branch",
-        "name_zh": "支路微循环-2"
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
+        "road_class": "local_access",
+        "name_zh": "重点区环路-1",
+        "name_en": "local_access"
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            116.343756,
-            39.94775
+            116.34934,
+            40.01675
           ],
           [
-            116.343756,
-            40.01775
+            116.3490939696962,
+            40.01759852813743
+          ],
+          [
+            116.3485,
+            40.01795
+          ],
+          [
+            116.3479060303038,
+            40.01759852813743
+          ],
+          [
+            116.34766,
+            40.01675
+          ],
+          [
+            116.3479060303038,
+            40.01590147186258
+          ],
+          [
+            116.3485,
+            40.015550000000005
+          ],
+          [
+            116.3490939696962,
+            40.01590147186258
+          ],
+          [
+            116.34934,
+            40.01675
           ]
         ]
-      }
+      },
+      "id": "ROAD-013"
     },
     {
       "type": "Feature",
-      "id": "ROAD-014",
       "properties": {
         "id": "ROAD-014",
         "layer": "ROAD_CENTERLINE",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
-        "road_class": "branch",
-        "name_zh": "支路微循环-3"
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
+        "road_class": "pedestrian",
+        "name_zh": "重点区横缝步行-1",
+        "name_en": "pedestrian"
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            116.34594,
-            39.94775
+            116.3473,
+            40.01675
           ],
           [
-            116.34594,
-            40.01775
+            116.3497,
+            40.01675
           ]
         ]
-      }
+      },
+      "id": "ROAD-014"
     },
     {
       "type": "Feature",
-      "id": "ROAD-015",
       "properties": {
         "id": "ROAD-015",
         "layer": "ROAD_CENTERLINE",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
-        "road_class": "branch",
-        "name_zh": "支路微循环-4"
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
+        "road_class": "cycleway",
+        "name_zh": "重点区骑行接驳-1",
+        "name_en": "cycleway"
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            116.348124,
-            39.94775
+            116.3485,
+            40.015550000000005
           ],
           [
-            116.348124,
-            40.01775
+            116.3485,
+            40.01795
           ]
         ]
-      }
+      },
+      "id": "ROAD-015"
     },
     {
       "type": "Feature",
-      "id": "ROAD-016",
       "properties": {
         "id": "ROAD-016",
         "layer": "ROAD_CENTERLINE",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
-        "road_class": "branch",
-        "name_zh": "支路微循环-5"
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
+        "road_class": "local_access",
+        "name_zh": "重点区环路-2",
+        "name_en": "local_access"
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            116.350308,
-            39.94775
+            116.34834,
+            39.9885
           ],
           [
-            116.350308,
-            40.01775
+            116.3480939696962,
+            39.98934852813743
+          ],
+          [
+            116.3475,
+            39.9897
+          ],
+          [
+            116.3469060303038,
+            39.98934852813743
+          ],
+          [
+            116.34666,
+            39.9885
+          ],
+          [
+            116.3469060303038,
+            39.98765147186258
+          ],
+          [
+            116.3475,
+            39.987300000000005
+          ],
+          [
+            116.3480939696962,
+            39.98765147186258
+          ],
+          [
+            116.34834,
+            39.9885
           ]
         ]
-      }
+      },
+      "id": "ROAD-016"
     },
     {
       "type": "Feature",
-      "id": "ROAD-017",
       "properties": {
         "id": "ROAD-017",
         "layer": "ROAD_CENTERLINE",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
-        "road_class": "branch",
-        "name_zh": "支路微循环-6"
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
+        "road_class": "pedestrian",
+        "name_zh": "重点区横缝步行-2",
+        "name_en": "pedestrian"
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            116.352492,
-            39.94775
+            116.3463,
+            39.9885
           ],
           [
-            116.352492,
-            40.01775
+            116.3487,
+            39.9885
           ]
         ]
-      }
+      },
+      "id": "ROAD-017"
     },
     {
       "type": "Feature",
-      "id": "ROAD-018",
       "properties": {
         "id": "ROAD-018",
         "layer": "ROAD_CENTERLINE",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
-        "road_class": "pedestrian",
-        "name_zh": "步行通道-1"
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
+        "road_class": "cycleway",
+        "name_zh": "重点区骑行接驳-2",
+        "name_en": "cycleway"
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            116.34282,
-            39.95825
+            116.3475,
+            39.987300000000005
           ],
           [
-            116.34828,
-            39.95825
+            116.3475,
+            39.9897
           ]
         ]
-      }
+      },
+      "id": "ROAD-018"
     },
     {
       "type": "Feature",
-      "id": "ROAD-019",
       "properties": {
         "id": "ROAD-019",
         "layer": "ROAD_CENTERLINE",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
-        "road_class": "pedestrian",
-        "name_zh": "步行通道-2"
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
+        "road_class": "local_access",
+        "name_zh": "重点区环路-3",
+        "name_en": "local_access"
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            116.34282,
-            39.974
+            116.34934,
+            39.946920000000006
           ],
           [
-            116.34828,
-            39.974
+            116.3490939696962,
+            39.94776852813743
+          ],
+          [
+            116.3485,
+            39.94812
+          ],
+          [
+            116.3479060303038,
+            39.94776852813743
+          ],
+          [
+            116.34766,
+            39.946920000000006
+          ],
+          [
+            116.3479060303038,
+            39.94607147186258
+          ],
+          [
+            116.3485,
+            39.94572000000001
+          ],
+          [
+            116.3490939696962,
+            39.94607147186258
+          ],
+          [
+            116.34934,
+            39.946920000000006
           ]
         ]
-      }
+      },
+      "id": "ROAD-019"
     },
     {
       "type": "Feature",
-      "id": "ROAD-020",
       "properties": {
         "id": "ROAD-020",
         "layer": "ROAD_CENTERLINE",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
         "road_class": "pedestrian",
-        "name_zh": "步行通道-3"
+        "name_zh": "重点区横缝步行-3",
+        "name_en": "pedestrian"
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            116.34282,
-            39.98975
+            116.3473,
+            39.946920000000006
           ],
           [
-            116.34828,
-            39.98975
+            116.3497,
+            39.946920000000006
           ]
         ]
-      }
+      },
+      "id": "ROAD-020"
     },
     {
       "type": "Feature",
-      "id": "ROAD-021",
       "properties": {
         "id": "ROAD-021",
         "layer": "ROAD_CENTERLINE",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
-        "road_class": "pedestrian",
-        "name_zh": "步行通道-4"
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
+        "road_class": "cycleway",
+        "name_zh": "重点区骑行接驳-3",
+        "name_en": "cycleway"
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            116.34282,
-            40.0055
+            116.3485,
+            39.94572000000001
           ],
           [
-            116.34828,
-            40.0055
+            116.3485,
+            39.94812
           ]
         ]
-      }
+      },
+      "id": "ROAD-021"
     },
     {
       "type": "Feature",
-      "id": "ROAD-022",
       "properties": {
         "id": "ROAD-022",
         "layer": "ROAD_CENTERLINE",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
-        "road_class": "cycleway",
-        "name_zh": "自行车廊-1"
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
+        "road_class": "transit_connection",
+        "name_zh": "西侧公交接驳示意",
+        "name_en": "transit_connection"
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            116.3436,
-            39.96525
+            116.3407,
+            39.939
           ],
           [
-            116.35062,
-            39.96575
+            116.34102288401253,
+            39.995504702194204
           ]
         ]
-      }
+      },
+      "id": "ROAD-022"
     },
     {
       "type": "Feature",
-      "id": "ROAD-023",
       "properties": {
         "id": "ROAD-023",
         "layer": "ROAD_CENTERLINE",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
-        "road_class": "cycleway",
-        "name_zh": "自行车廊-2"
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
+        "road_class": "transit_connection",
+        "name_zh": "东侧轨道接驳示意",
+        "name_en": "transit_connection"
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            116.3436,
-            39.98275
+            116.3543,
+            39.939
           ],
           [
-            116.35062,
-            39.98325
+            116.3542094117647,
+            39.978632352941226
           ]
         ]
-      }
+      },
+      "id": "ROAD-023"
     },
     {
       "type": "Feature",
-      "id": "ROAD-024",
       "properties": {
         "id": "ROAD-024",
         "layer": "ROAD_CENTERLINE",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
-        "road_class": "cycleway",
-        "name_zh": "自行车廊-3"
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
+        "road_class": "transit_connection",
+        "name_zh": "东侧轨道接驳示意",
+        "name_en": "transit_connection"
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            116.3436,
-            40.00025
+            116.35414805266045,
+            40.005476961053176
           ],
           [
-            116.35062,
-            40.00075
+            116.3541,
+            40.0265
           ]
         ]
-      }
+      },
+      "id": "ROAD-024"
     },
     {
       "type": "Feature",
-      "id": "ROAD-025",
       "properties": {
         "id": "ROAD-025",
         "layer": "ROAD_CENTERLINE",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
-        "road_class": "transit_connection",
-        "name_zh": "众智园接驳"
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
+        "road_class": "pedestrian",
+        "name_zh": "南门户慢行横带",
+        "name_en": "pedestrian"
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            116.34594,
-            40.004625
+            116.3455,
+            39.941
           ],
           [
-            116.354052,
-            40.004625
+            116.34949999999999,
+            39.941
           ]
         ]
-      }
+      },
+      "id": "ROAD-025"
     },
     {
       "type": "Feature",
-      "id": "ROAD-026",
       "properties": {
         "id": "ROAD-026",
         "layer": "ROAD_CENTERLINE",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
-        "road_class": "transit_connection",
-        "name_zh": "原点接驳"
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
+        "road_class": "branch",
+        "name_zh": "北端清河界面接驳",
+        "name_en": "branch"
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            116.34594,
-            39.98275
+            116.346,
+            40.0235
           ],
           [
-            116.35388,
-            39.98275
+            116.34949999999999,
+            40.024499999999996
           ]
         ]
-      }
+      },
+      "id": "ROAD-026"
     },
     {
       "type": "Feature",
-      "id": "ROAD-027",
       "properties": {
         "id": "ROAD-027",
         "layer": "ROAD_CENTERLINE",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
-        "road_class": "transit_connection",
-        "name_zh": "大钟寺接驳"
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
+        "road_class": "greenway",
+        "name_zh": "机器人可回退试验段-南",
+        "name_en": "greenway"
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            116.34594,
-            39.960875
+            116.34729999999999,
+            39.949
           ],
           [
-            116.354052,
-            39.960875
+            116.3476,
+            39.969
+          ],
+          [
+            116.3474,
+            39.989
           ]
         ]
-      }
+      },
+      "id": "ROAD-027"
     },
     {
       "type": "Feature",
-      "id": "ROAD-028",
       "properties": {
         "id": "ROAD-028",
         "layer": "ROAD_CENTERLINE",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
+        "crs_note": "EPSG:4326 storage",
         "equal_area_projection": "EPSG:4548",
-        "road_class": "local_access",
-        "name_zh": "地块出入-1"
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
+        "road_class": "greenway",
+        "name_zh": "机器人可回退试验段-中",
+        "name_en": "greenway"
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            116.342508,
-            39.974
+            116.3477,
+            39.994
           ],
           [
-            116.343756,
-            39.974
+            116.34734999999999,
+            40.009
           ]
         ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "ROAD-029",
-      "properties": {
-        "id": "ROAD-029",
-        "layer": "ROAD_CENTERLINE",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
-        "equal_area_projection": "EPSG:4548",
-        "road_class": "local_access",
-        "name_zh": "地块出入-2"
       },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            116.345316,
-            39.978375
-          ],
-          [
-            116.346564,
-            39.978375
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "ROAD-030",
-      "properties": {
-        "id": "ROAD-030",
-        "layer": "ROAD_CENTERLINE",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
-        "equal_area_projection": "EPSG:4548",
-        "road_class": "local_access",
-        "name_zh": "地块出入-3"
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            116.348124,
-            39.974
-          ],
-          [
-            116.349372,
-            39.974
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "ROAD-031",
-      "properties": {
-        "id": "ROAD-031",
-        "layer": "ROAD_CENTERLINE",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "crs_note": "coordinates_EPSG_4326_area_via_EPSG_4548",
-        "equal_area_projection": "EPSG:4548",
-        "road_class": "local_access",
-        "name_zh": "地块出入-4"
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            116.350932,
-            39.978375
-          ],
-          [
-            116.35218,
-            39.978375
-          ]
-        ]
-      }
+      "id": "ROAD-028"
     }
   ]
 }

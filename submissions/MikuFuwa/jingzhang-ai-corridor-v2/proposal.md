@@ -1,22 +1,22 @@
 ---
-title: "京张智脊·开源协议脊（v2）"
+title: "京张智脊·开源协议脊（v2.1）"
 author_github: "MikuFuwa"
 language: "zh"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "v2 以开源协议脊（Open Protocol Spine）把京张公共主脊做成可版本化城市 API：接口/权限/回退/审计；几何加密、三区详设模板、真图板与离线总图，全部基于 provisional 边界的概念建议。"
+summary: "v2.1 以开源协议脊（Open Protocol Spine）把京张公共主脊做成可版本化城市 API：接口/权限/回退/审计；结构化几何、三区 detail 资产、真地图五图、真 A0/A3 与离线投影总图，全部基于 provisional 边界的概念建议。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review", "robot-delivery-low-speed"]
-iteration: "v2.0"
+iteration: "v2.1"
 ---
 
-# 京张智脊·开源协议脊（v2）
+# 京张智脊·开源协议脊（v2.1）
 
 ## 设计依据与资料清单
 
-本 formal v2 包以海淀分局资格预审公告与仓库 `brief/site-package` 为机器可读依据 [source:OFFICIAL-ANNOUNCEMENT] [source:SITE-PACKAGE]。agent 任务来自开源征集任务书 [source:AGENT-TASKBOOK]。资料用途边界以登记表区分 formal / background / provisional [source:SOURCE-REGISTRY]。
+本 formal 包以海淀分局资格预审公告与仓库 `brief/site-package` 为机器可读依据 [source:OFFICIAL-ANNOUNCEMENT] [source:SITE-PACKAGE]。agent 任务来自开源征集任务书 [source:AGENT-TASKBOOK]。资料用途边界以登记表区分 formal / background / provisional [source:SOURCE-REGISTRY]。
 
 坐标与面积路径必须分开表述：GeoJSON **存储**为 EPSG:4326；面积与比例一律经 **EPSG:4548** 投影复算，并写入要素 `crs_note` / `equal_area_projection` 字段 [depth:metrics_recalculation]。当前边界为 provisional，不得作为 official redline 或精确审批面积 [source:BOUNDARY-SOURCE]。边界要素见 [data:geometry/site_boundary.geojson#SITE-001]。
 
@@ -28,7 +28,7 @@ iteration: "v2.0"
 2. P02 大钟寺站城四象限步行弱 → OS-05  
 3. P03 近校转化界面“看得见进不去” → OS-04  
 4. P04 众智园测试干扰日常 → OS-02/SCN-02 回退规则  
-5. P05 产业服务与中关村翼接驳不足 → 区域接口  
+5. P05 产业服务与中关村翼接驳不足 → 区域接口动作  
 6. P06 小月河翼生活化不足 → SCN-08  
 7. P07 算力设施邻避与能耗未知 → A-ENERGY-001  
 8. P08 文保/遗产与强度未知 → A-HERITAGE-001  
@@ -45,9 +45,9 @@ iteration: "v2.0"
 | --- | --- | --- |
 | 统筹研究 ~43.6 km² | 生态、三区两翼、区域接口 | 区域协同一节 + 案例机制 |
 | 总体设计 ~11.4 km² | 更新框架、交通市政、风貌 | site 边界复算 [metric:site_area_sqm]=11412825.386 m² |
-| 重点区域 ~368.4 ha | 三区详设 | key_areas + detail_* [metric:key_area_count] |
+| 重点区域 ~368.4 ha | 三区详设 | key_areas + visual/assets/detail_* [metric:key_area_count] |
 
-总体结构仍是 **一脊三核双翼十二节点**，但内核升级为 **开源协议脊**：公共空间=可版本化城市 API [depth:overall_spatial_structure] [depth:three_level_scope_framework]。节点与 `scenario 节点已在正文与 visual 中表达` 绑定。
+总体结构仍是 **一脊三核双翼十二节点**，内核升级为 **开源协议脊**：公共空间=可版本化城市 API [depth:overall_spatial_structure] [depth:three_level_scope_framework]。十二节点与 [data:visual/assets/scenario_nodes.json#SCN-01] 及场景卡 ID 绑定（额外节点资产因仓库 geometry 白名单限制，存放于 `visual/assets/`，主图层仍在 geometry 可检文件中）。
 
 ![三层范围与用地单元](assets/figures/land-use-structure.png)
 
@@ -65,14 +65,14 @@ iteration: "v2.0"
 
 ### 尖刀机制：开源协议脊
 
-详见 `正文机制专节与机制说明书摘要`。四字段强制：
+四字段强制贯穿结构、场景、治理与运营：
 
 - **接口 Interface**：12 场景节点 = API endpoints  
 - **权限 Permission**：公开 / 聚合 / 授权 / 禁止 四级数据  
 - **回退 Rollback**：试验可暂停、装置可撤离  
 - **审计 Audit**：荣誉墙可更正 + 治理论坛庭听证  
 
-命名：中文「京张智脊」；英文「JingZhang Open Spine」；机制名「Open Protocol Spine / 开源协议脊」。Logo 方向见 `assets/brand/logo.svg`。
+命名：中文「京张智脊」；英文「JingZhang Open Spine」；机制名「Open Protocol Spine / 开源协议脊」。Logo 见 `assets/brand/logo.svg`。最小可行试点建议在原点发布厅（SCN-01）或众智园沙盒庭（SCN-02），失败则下线活动或停测，不把“智慧家具”一次性锁死在街道上。
 
 ### 案例：3 深 + 3 浅
 
@@ -83,7 +83,7 @@ iteration: "v2.0"
 机制：站城一体资产运营。空间装置：大钟寺四象限口袋。治理：公共空间时段分区。移植条件：轨道站点一体化研究。不移植：单一业主大地块模式。
 
 **深 3 · 新加坡 one-north**  
-机制：研发—生活混合与测试走廊。空间装置：众智园花园型沙盒。治理：可预约测试许可。移植条件：验证核有平台主体。不移植：热带 tropic 气候景观模板。
+机制：研发—生活混合与测试走廊。空间装置：众智园花园型沙盒。治理：可预约测试许可。移植条件：验证核有平台主体。不移植：热带气候景观模板。
 
 浅案例：深圳南山（产城密度）、东京虎之门（垂直公共庭）、上海张江（国家平台集聚）——分别提示服务翼密度、立体公共庭、平台型验证空间。
 
@@ -93,13 +93,13 @@ iteration: "v2.0"
 
 总体设计按控规深度 **方法** 组织，但缺官方控规时，容积率/高度/退线/道路红线一律 unknown [standard:MOHURD-CONTROL-DETAILED-PLANNING] [depth:development_intensity_controls]。
 
-用地已加密为 **30** 个街坊/功能单元，覆盖提交边界 [data:geometry/land_use.geojson#LU-001] [metric:land_use_unit_count] [depth:land_use_layout]。绿脊单元居中，两侧依次为科研、产业服务、教育转化、生活配套，并穿插文化/广场单元，避免“五条色带应付”。
+用地已加密为 **30** 个街坊/功能单元，覆盖提交边界 [data:geometry/land_use.geojson#LU-001] [metric:land_use_unit_count] [depth:land_use_layout]。绿脊单元居中，两侧依次为科研、产业服务、教育转化、生活配套，并穿插文化/广场单元。
 
-建筑概念基底 **94** 个，分类型布置于可建设单元 [metric:building_count] [data:geometry/buildings.geojson#BLDG-001]。道路分级段 **31** 条 [metric:road_segment_count]。更新策略“先接口后体量”：先缝合慢行与协议节点，再进入需权属条件的深层更新。
+建筑概念基底 **87** 个，采用 L / U / 矩形混合与轻微旋转，分类型布置于可建设单元，避免纯网格小矩形刷数 [metric:building_count] [data:geometry/buildings.geojson#BLDG-001]。道路分级段 **28** 条 [metric:road_segment_count] [data:geometry/roads.geojson#ROAD-001]。更新策略“先接口后体量”：先缝合慢行与协议节点，再进入需权属条件的深层更新。
 
 ## 重点区域详细设计
 
-三处 KEY_AREA 仍为 provisional，结论为方向性概念建议 [depth:three_key_area_detailed_design] [data:geometry/key_areas.geojson#PROV-KEY-001]。
+三处 KEY_AREA 仍为 provisional，结论为方向性概念建议 [depth:three_key_area_detailed_design] [data:geometry/key_areas.geojson#PROV-KEY-001]。详设几何资产见 `visual/assets/detail_zhongzhiyuan.json`、`detail_beijing_ai_origin.json`、`detail_dazhongsi.json`（含主入口、慢行脊段、横缝、公共庭、建筑基底、场景锚点、风险叠加）。
 
 ![三重点区差异](assets/figures/key-areas.png)
 
@@ -107,7 +107,7 @@ iteration: "v2.0"
 
 - **定位**：全栈自主、标准治理、安全测评主机。  
 - **问题链**：展示/测试可能干扰日常（P04）；北端对外交通割裂（P01/P05）。  
-- **结构**：清河界面验证水岸 + 安全治理沙盒庭 + 横缝步行；见 `重点区详设图层（已并入主 geometry 逻辑）`。  
+- **结构**：清河界面验证水岸 + 安全治理沙盒庭 + 横缝步行；detail 资产绑定 parent_key_area。  
 - **公空与慢行**：验证庭外延 PUBLIC 节点与绿脊北段连接。  
 - **形态原则**：花园型低干扰界面，夜景以可解释信号而非广告屏为主。  
 - **拆改留方法**：优先保留可复用结构，改造首层为可预约测试界面，新建集中在已明确可更新单元（类型学，非地块终审） [depth:retain_renovate_demolish]。  
@@ -119,7 +119,7 @@ iteration: "v2.0"
 
 - **定位**：近校转化、开源发布、人才服务主机。  
 - **问题链**：看得见进不去（P03）；活动与日常冲突（P10）。  
-- **结构**：发布厅—转化街—荣誉墙串联；`重点区详设图层（已并入主 geometry 逻辑）`。  
+- **结构**：发布厅—转化街—荣誉墙串联。  
 - **公空与慢行**：校缘缓冲与站点接驳口袋。  
 - **形态原则**：低干扰、夜间协作友好，避免过度商业化占道。  
 - **拆改留方法**：积极改造沿街界面，谨慎触碰权属不清地块。  
@@ -131,7 +131,7 @@ iteration: "v2.0"
 
 - **定位**：智能经济、国际交往、站城一体主机。  
 - **问题链**：四象限步行弱（P02）；数据与商业伦理（P07）。  
-- **结构**：站城四象限口袋 + 路演厅 + 数据会客厅；`重点区详设图层（已并入主 geometry 逻辑）`。  
+- **结构**：站城四象限口袋 + 路演厅 + 数据会客厅。  
 - **公空与慢行**：路口四向连通与南门户广场。  
 - **形态原则**：城市型界面，标识克制，服务到访与转化。  
 - **拆改留方法**：公共界面优先，企业周边环境微更新。  
@@ -171,24 +171,23 @@ iteration: "v2.0"
 | SCN-11 | 智能体荣誉墙 | SCN-11 | 朝圣 | 内容更正 | 更正时限 |
 | SCN-12 | 治理论坛庭 | SCN-12 | 治理 | 休会 | 听证纪要公开 |
 
-非目标：不做个人画像营销、不替代审批、不采集敏感轨迹 [metric:ai_scenario_card_count] [data:scenario 节点已在正文与 visual 中表达#SCN-01]。
+非目标：不做个人画像营销、不替代审批、不采集敏感轨迹 [metric:ai_scenario_card_count]。节点几何见 visual/assets/scenario_nodes.json。
 
 ## 用地、建筑规模与拆改留方案
 
-用地设计意图是把“五条色带应付”升级为可讨论的街坊/功能单元，使更新项目能够落到可识别的单元边界上，而不是只在总平面上涂色。geometry/land_use.geojson 现为街坊级拓扑分区，目标覆盖提交边界且互不重叠；拓扑检查结果见 ssets/docs/topology_check.json [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [depth:land_use_layout]。
+用地设计意图是把“五条色带应付”升级为可讨论的街坊/功能单元，使更新项目能够落到可识别的单元边界上 [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [depth:land_use_layout]。topology 自检摘要见 `visual/assets/topology_check.json`。
 
-单元逻辑沿东西向组织：科研创新单元（0802）— 开源绿脊与公园（1401/1403）— 产业服务与文化展示（05/0803）— 近校教育转化（0804）— 社区生活配套（0702）。绿脊居中保证公共主接口不被产业面吞没；生活与教育单元靠东侧近校与日常服务。单元面积由 EPSG:4548 复算并写入 metrics 的 land_use_* 项。
+单元逻辑：科研创新（0802）— 开源绿脊与公园（1401/1403）— 产业服务与文化展示（05/0803）— 近校教育转化（0804）— 社区生活配套（0702）。单元面积由 EPSG:4548 复算并写入 metrics 的 land_use_* 项。
 
-建筑概念基底分布在可建设类单元内，避免落入纯绿地单元；基底合计与概念密度见 [metric:building_footprint_area_sqm] 与 [metric:building_density]，它们是结构逻辑后的后验结果，不等于法定建筑密度或审批建设规模 [data:geometry/buildings.geojson#BLDG-001]。容积率 [metric:floor_area_ratio] 在公开包缺控规时保持 unknown，并在 assumptions 中给出复算路径 [depth:development_intensity_controls]。
+建筑概念基底分布在可建设类单元内；基底合计 [metric:building_footprint_area_sqm]=125571.357 m²，概念密度 [metric:building_density]=0.011003，是结构逻辑后的后验结果，不等于法定建筑密度 [data:geometry/buildings.geojson#BLDG-001]。容积率 [metric:floor_area_ratio] 保持 unknown [depth:development_intensity_controls]。
 
 拆改留只提供类型学方法：优先保留可复用结构与文脉界面，改造积极沿街首层为协议接口与服务界面，新建集中在已明确可更新单元；缺少权属与工程条件时不做地块级拆除结论 [depth:retain_renovate_demolish]。
 
 风貌原则：工业遗产克制材料 + 中关村开放协作气质 + 可解释信号界面；夜景以状态可读为主，拒绝广告屏化。建筑高度、退线与街墙分区原则待官方控规确认，不得写成审定控制值 [depth:height_massing_character]。
 
-
 ## 交通、轨道、市政与公共服务设施
 
-设计意图：把被快速路与封闭界面切断的线性公园，转译为可日常使用的协议慢行总线，并用东西缝合把高校—社区—产业重新接上。道路图层现为 **31** 段分级概念线，不宣称红线 [data:geometry/roads.geojson#ROAD-001] [depth:traffic_rail_slow_parking] [metric:road_segment_count]。
+设计意图：把被快速路与封闭界面切断的线性公园，转译为可日常使用的协议慢行总线，并用东西缝合把高校—社区—产业重新接上。道路图层现为 **28** 段分级概念线，不宣称红线 [data:geometry/roads.geojson#ROAD-001] [depth:traffic_rail_slow_parking] [metric:road_segment_count]。
 
 轨道接口：大钟寺四象限口袋、近校站点缓冲、北五环跨线断点识别优先于新建快速通道。机器人/低速配送仅允许在可回退试验段，必须让行行人与无障碍路径；冲突规则写入场景 non_goal。
 
@@ -198,7 +197,7 @@ iteration: "v2.0"
 
 ## 蓝绿空间、公共空间与城市风貌
 
-蓝绿网络由绿脊分段、口袋公园、校缘缓冲与水岸示意组成 [metric:green_ratio]=0.267228 [data:geometry/green_space.geojson#GREEN-001] [depth:blue_green_public_space]。公共空间网络支持接口庭、发布外延、路演前场与站点口袋 [metric:public_space_ratio]=0.123652 [data:geometry/public_space.geojson#PUBLIC-001] [standard:MOHURD-URBAN-DESIGN-MEASURES]。
+蓝绿网络由绿脊分段、口袋公园、校缘缓冲与水岸示意组成 [metric:green_ratio]=0.223508（绿地面积 [metric:green_space_area_sqm]=2550859.082 m²）[data:geometry/green_space.geojson#GREEN-001] [depth:blue_green_public_space]。公共空间网络支持接口庭、发布外延、路演前场与站点口袋 [metric:public_space_ratio]=0.116208（公空面积 [metric:public_space_area_sqm]=1326256.8 m²）[data:geometry/public_space.geojson#PUBLIC-001] [standard:MOHURD-URBAN-DESIGN-MEASURES]。
 
 ### 三处朝圣地标
 
@@ -236,9 +235,9 @@ iteration: "v2.0"
 ## 指标体系、面积复算与合规矩阵
 
 - 边界面积 [metric:site_area_sqm]=11412825.386 m²（medium，provisional）  
-- 绿地/公共 [metric:green_ratio]=0.267228 / [metric:public_space_ratio]=0.123652  
-- 建筑基底 [metric:building_footprint_area_sqm]=440855.459  
-- 单元/建筑/道路计数见 metrics  
+- 绿地/公共 [metric:green_ratio]=0.223508 / [metric:public_space_ratio]=0.116208  
+- 建筑基底 [metric:building_footprint_area_sqm]=125571.357；概念建筑 [metric:building_count]=87；道路段 [metric:road_segment_count]=28；用地单元 [metric:land_use_unit_count]=30  
+- 三重点区面积 [metric:zhongzhiyuan_area_sqm] / [metric:beijing_ai_origin_area_sqm] / [metric:dazhongsi_area_sqm]；合计 [metric:key_detailed_design_area_sqm]  
 - FAR 等法定量 unknown  
 
 矩阵：`compliance_matrix.json` 覆盖 1.3–1.5 与 agent.1–6；`design_depth_matrix.json` 15 项独立证据摘要；`standard_matrix.json` 响应本地标准库 [depth:metrics_recalculation]。
@@ -247,25 +246,22 @@ iteration: "v2.0"
 
 ## 风险、版权与合规说明
 
-主要风险包括：provisional 边界精度不足、权属不清、市政消防与能源条件缺失、文保范围待确认、活动夜间扰民、数据隐私越界、机器人与行人冲突 [depth:risk_missing_data]。约束示意见 [data:geometry/constraints.geojson#CON-001]，对应 assumptions 中 A-BOUNDARY 至 A-WING 十二条，每条都有 resolution_path。
+主要风险包括：provisional 边界精度不足、权属不清、市政消防与能源条件缺失、文保范围待确认、活动夜间扰民、数据隐私越界、机器人与行人冲突 [depth:risk_missing_data]。约束示意见 [data:geometry/constraints.geojson#CON-001]，对应 assumptions 中多条假设，每条都有 resolution_path。
 
-数据分级强制为公开 / 聚合 / 授权 / 禁止四级；场景卡必须声明最小化采集、人工复核与回退。版权、字体与工具链披露见 
-eport/copyright_statement.md 与 sources.json。双语契约已配对 proposal/HTML/PDF/图件。
+数据分级强制为公开 / 聚合 / 授权 / 禁止四级；场景卡必须声明最小化采集、人工复核与回退。版权、字体与工具链披露见 `report/copyright_statement.md` 与 sources.json。双语契约已配对 proposal/HTML/PDF/图件。
 
-本方案全部空间、运营与政策内容均为概念建议或参考方案，可供专业团队深化，不构成法定规划、审批结论、投资承诺或政府已定安排。红队自检见包外工作日志与正文风险条款闭环。
+展板与文册：`drawings/a0-boards.pdf`（≥7 板真图文）、`drawings/a3-booklet.pdf`（完整文册）；离线总图 `visual/index.html` 内嵌由 GeoJSON 投影的 SVG。
 
+本方案全部空间、运营与政策内容均为概念建议或参考方案，可供专业团队深化，不构成法定规划、审批结论、投资承诺或政府已定安排。
 
 ## 参考资料
 
 本方案依据公开任务书与仓库结构化资料编制，完整出处见 sources.json。
 
-
 - brief/public-brief.md、design_brief.json、agent_taskbook.json  
 - data/source_registry.json、agent_fact_pack.md  
 - provisional_boundaries.geojson  
 - standards/references 本地快照  
-- 正文机制专节与机制说明书摘要、topology_check.json、redteam_checklist.md  
-- 完整机器索引见 sources/metrics/matrices [source:SITE-PACKAGE]
-
+- visual/assets/scenario_nodes.json、detail_*.json、topology_check.json  
 - docs/formal-submission-guide.md 与 docs/terminology-glossary.md  
-- metrics.json / compliance_matrix.json / standard_matrix.json / design_depth_matrix.json  
+- metrics.json / compliance_matrix.json / standard_matrix.json / design_depth_matrix.json [source:SITE-PACKAGE]

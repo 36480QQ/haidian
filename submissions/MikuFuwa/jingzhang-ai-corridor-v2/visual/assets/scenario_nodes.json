@@ -1,0 +1,572 @@
+{
+  "type": "FeatureCollection",
+  "name": "scenario_nodes",
+  "crs_note": "Coordinates stored as EPSG:4326 lon/lat. Areas recomputed via EPSG:4548.",
+  "equal_area_projection": "EPSG:4548",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SCN-01",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "crs_note": "EPSG:4326 storage",
+        "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
+        "name_zh": "开源发布厅",
+        "name_en": "release_hall",
+        "scenario_type": "release_hall",
+        "host_structure": "beijing_ai_origin_community",
+        "place_geometry_id": "SCN-01",
+        "area_sqm_declared": 2372.547
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3472212079867,
+              39.94324030504714
+            ],
+            [
+              116.3477212079867,
+              39.94324030504714
+            ],
+            [
+              116.3477212079867,
+              39.94274030504714
+            ],
+            [
+              116.3472212079867,
+              39.94274030504714
+            ],
+            [
+              116.3472212079867,
+              39.94324030504714
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SCN-02",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "crs_note": "EPSG:4326 storage",
+        "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
+        "name_zh": "安全治理沙盒",
+        "name_en": "safety_sandbox",
+        "scenario_type": "safety_sandbox",
+        "host_structure": "zhongzhiyuan_ai_acceleration_area",
+        "place_geometry_id": "SCN-02",
+        "area_sqm_declared": 2371.83
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34722737770382,
+              39.96424151691625
+            ],
+            [
+              116.3477273777038,
+              39.96424151691625
+            ],
+            [
+              116.3477273777038,
+              39.96374151691625
+            ],
+            [
+              116.34722737770382,
+              39.96374151691625
+            ],
+            [
+              116.34722737770382,
+              39.96424151691625
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SCN-03",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "crs_note": "EPSG:4326 storage",
+        "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
+        "name_zh": "慢行断点诊断",
+        "name_en": "mobility_diagnose",
+        "scenario_type": "mobility_diagnose",
+        "host_structure": "spine",
+        "place_geometry_id": "SCN-03",
+        "area_sqm_declared": 2371.318
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34722943427623,
+              39.97924151691625
+            ],
+            [
+              116.34772943427622,
+              39.97924151691625
+            ],
+            [
+              116.34772943427622,
+              39.978741516916244
+            ],
+            [
+              116.34722943427623,
+              39.978741516916244
+            ],
+            [
+              116.34722943427623,
+              39.97924151691625
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SCN-04",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "crs_note": "EPSG:4326 storage",
+        "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
+        "name_zh": "端侧算力驿站",
+        "name_en": "edge_compute",
+        "scenario_type": "edge_compute",
+        "host_structure": "zhongzhiyuan_ai_acceleration_area",
+        "place_geometry_id": "SCN-04",
+        "area_sqm_declared": 2370.805
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34722943427623,
+              39.994241516916254
+            ],
+            [
+              116.34772943427622,
+              39.994241516916254
+            ],
+            [
+              116.34772943427622,
+              39.99374151691625
+            ],
+            [
+              116.34722943427623,
+              39.99374151691625
+            ],
+            [
+              116.34722943427623,
+              39.994241516916254
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SCN-05",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "crs_note": "EPSG:4326 storage",
+        "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
+        "name_zh": "国际路演客厅",
+        "name_en": "pitch_hall",
+        "scenario_type": "pitch_hall",
+        "host_structure": "dazhongsi_ai_industry_cluster",
+        "place_geometry_id": "SCN-05",
+        "area_sqm_declared": 2371.661
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3437314908486,
+              39.96924272878536
+            ],
+            [
+              116.34423149084859,
+              39.96924272878536
+            ],
+            [
+              116.34423149084859,
+              39.96874272878536
+            ],
+            [
+              116.3437314908486,
+              39.96874272878536
+            ],
+            [
+              116.3437314908486,
+              39.96924272878536
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SCN-06",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "crs_note": "EPSG:4326 storage",
+        "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
+        "name_zh": "近校转化街",
+        "name_en": "transfer_street",
+        "scenario_type": "transfer_street",
+        "host_structure": "beijing_ai_origin_community",
+        "place_geometry_id": "SCN-06",
+        "area_sqm_declared": 2371.726
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35073149084859,
+              39.96724272878535
+            ],
+            [
+              116.35123149084858,
+              39.96724272878535
+            ],
+            [
+              116.35123149084858,
+              39.96674272878535
+            ],
+            [
+              116.35073149084859,
+              39.96674272878535
+            ],
+            [
+              116.35073149084859,
+              39.96724272878535
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SCN-07",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "crs_note": "EPSG:4326 storage",
+        "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
+        "name_zh": "数据要素会客厅",
+        "name_en": "data_parlor",
+        "scenario_type": "data_parlor",
+        "host_structure": "dazhongsi_ai_industry_cluster",
+        "place_geometry_id": "SCN-07",
+        "area_sqm_declared": 2372.272
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3502294342762,
+              39.95124151691625
+            ],
+            [
+              116.35072943427619,
+              39.95124151691625
+            ],
+            [
+              116.35072943427619,
+              39.950741516916246
+            ],
+            [
+              116.3502294342762,
+              39.950741516916246
+            ],
+            [
+              116.3502294342762,
+              39.95124151691625
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SCN-08",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "crs_note": "EPSG:4326 storage",
+        "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
+        "name_zh": "生活服务样板街",
+        "name_en": "life_street",
+        "scenario_type": "life_street",
+        "host_structure": "east_wing",
+        "place_geometry_id": "SCN-08",
+        "area_sqm_declared": 2372.068
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34973354742097,
+              39.95724272878537
+            ],
+            [
+              116.35023354742096,
+              39.95724272878537
+            ],
+            [
+              116.35023354742096,
+              39.956742728785365
+            ],
+            [
+              116.34973354742097,
+              39.956742728785365
+            ],
+            [
+              116.34973354742097,
+              39.95724272878537
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SCN-09",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "crs_note": "EPSG:4326 storage",
+        "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
+        "name_zh": "京张记忆线路",
+        "name_en": "memory_route",
+        "scenario_type": "memory_route",
+        "host_structure": "spine",
+        "place_geometry_id": "SCN-09",
+        "area_sqm_declared": 2371.247
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3512314908486,
+              39.98124272878536
+            ],
+            [
+              116.3517314908486,
+              39.98124272878536
+            ],
+            [
+              116.3517314908486,
+              39.98074272878536
+            ],
+            [
+              116.3512314908486,
+              39.98074272878536
+            ],
+            [
+              116.3512314908486,
+              39.98124272878536
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SCN-10",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "crs_note": "EPSG:4326 storage",
+        "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
+        "name_zh": "全球AI活动周枢纽",
+        "name_en": "festival_hub",
+        "scenario_type": "festival_hub",
+        "host_structure": "dazhongsi_ai_industry_cluster",
+        "place_geometry_id": "SCN-10",
+        "area_sqm_declared": 2370.974
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.351433547421,
+              39.98924394065446
+            ],
+            [
+              116.35193354742098,
+              39.98924394065446
+            ],
+            [
+              116.35193354742098,
+              39.98874394065446
+            ],
+            [
+              116.351433547421,
+              39.98874394065446
+            ],
+            [
+              116.351433547421,
+              39.98924394065446
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SCN-11",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "crs_note": "EPSG:4326 storage",
+        "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
+        "name_zh": "智能体荣誉墙",
+        "name_en": "honor_wall",
+        "scenario_type": "honor_wall",
+        "host_structure": "beijing_ai_origin_community",
+        "place_geometry_id": "SCN-11",
+        "area_sqm_declared": 2372.411
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34573560399336,
+              39.94724394065447
+            ],
+            [
+              116.34623560399335,
+              39.94724394065447
+            ],
+            [
+              116.34623560399335,
+              39.946743940654464
+            ],
+            [
+              116.34573560399336,
+              39.946743940654464
+            ],
+            [
+              116.34573560399336,
+              39.94724394065447
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SCN-12",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "crs_note": "EPSG:4326 storage",
+        "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
+        "name_zh": "治理论坛庭",
+        "name_en": "governance_forum",
+        "scenario_type": "governance_forum",
+        "host_structure": "zhongzhiyuan_ai_acceleration_area",
+        "place_geometry_id": "SCN-12",
+        "area_sqm_declared": 2370.036
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34843560399335,
+              40.016743940654464
+            ],
+            [
+              116.34893560399334,
+              40.016743940654464
+            ],
+            [
+              116.34893560399334,
+              40.01624394065446
+            ],
+            [
+              116.34843560399335,
+              40.01624394065446
+            ],
+            [
+              116.34843560399335,
+              40.016743940654464
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}
