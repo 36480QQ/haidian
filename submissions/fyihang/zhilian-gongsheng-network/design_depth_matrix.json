@@ -8,14 +8,11 @@
       "required": true,
       "status": "complete",
       "proposal_sections": [
-        "三层范围工作框架",
-        "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计",
-        "风险、版权与合规说明"
+        "总体结构与区域协同"
       ],
       "drawing_refs": [
-        "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "drawings/a3-booklet.pdf#page-1",
+        "drawings/a0-boards.pdf#page-1"
       ],
       "geometry_refs": [
         "geometry/site_boundary.geojson",
@@ -53,7 +50,10 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "唯一证据定位：总体结构与区域协同；对应图册页、方案章节和结构化图层共同校核。",
+      "visual_sections": [
+        "总体结构与区域协同"
+      ]
     },
     {
       "item_id": "three_level_scope_framework",
@@ -62,14 +62,11 @@
       "required": true,
       "status": "complete",
       "proposal_sections": [
-        "三层范围工作框架",
-        "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计",
-        "风险、版权与合规说明"
+        "案例转译与生态图谱"
       ],
       "drawing_refs": [
-        "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "drawings/a3-booklet.pdf#page-2",
+        "drawings/a0-boards.pdf#page-2"
       ],
       "geometry_refs": [
         "geometry/site_boundary.geojson",
@@ -107,7 +104,10 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "唯一证据定位：案例转译与生态图谱；对应图册页、方案章节和结构化图层共同校核。",
+      "visual_sections": [
+        "案例转译与生态图谱"
+      ]
     },
     {
       "item_id": "overall_spatial_structure",
@@ -116,14 +116,11 @@
       "required": true,
       "status": "complete",
       "proposal_sections": [
-        "三层范围工作框架",
-        "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计",
-        "风险、版权与合规说明"
+        "三套测试协议"
       ],
       "drawing_refs": [
-        "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "drawings/a3-booklet.pdf#page-3",
+        "drawings/a0-boards.pdf#page-3"
       ],
       "geometry_refs": [
         "geometry/site_boundary.geojson",
@@ -161,7 +158,10 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "唯一证据定位：三套测试协议；对应图册页、方案章节和结构化图层共同校核。",
+      "visual_sections": [
+        "三套测试协议"
+      ]
     },
     {
       "item_id": "land_use_layout",
@@ -170,14 +170,11 @@
       "required": true,
       "status": "complete",
       "proposal_sections": [
-        "三层范围工作框架",
-        "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计",
-        "风险、版权与合规说明"
+        "三处重点区概念总平"
       ],
       "drawing_refs": [
-        "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "drawings/a3-booklet.pdf#page-4",
+        "drawings/a0-boards.pdf#page-4"
       ],
       "geometry_refs": [
         "geometry/site_boundary.geojson",
@@ -215,7 +212,10 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "唯一证据定位：三处重点区概念总平；对应图册页、方案章节和结构化图层共同校核。",
+      "visual_sections": [
+        "三处重点区概念总平"
+      ]
     },
     {
       "item_id": "development_intensity_controls",
@@ -224,14 +224,11 @@
       "required": true,
       "status": "complete",
       "proposal_sections": [
-        "三层范围工作框架",
-        "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计",
-        "风险、版权与合规说明"
+        "JZ-01—JZ-06实施责任表"
       ],
       "drawing_refs": [
-        "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "drawings/a3-booklet.pdf#page-5",
+        "drawings/a0-boards.pdf#page-5"
       ],
       "geometry_refs": [
         "geometry/site_boundary.geojson",
@@ -269,7 +266,10 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "唯一证据定位：JZ-01—JZ-06实施责任表；对应图册页、方案章节和结构化图层共同校核。",
+      "visual_sections": [
+        "JZ-01—JZ-06实施责任表"
+      ]
     },
     {
       "item_id": "height_massing_character",
@@ -278,14 +278,11 @@
       "required": true,
       "status": "complete",
       "proposal_sections": [
-        "三层范围工作框架",
-        "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计",
-        "风险、版权与合规说明"
+        "地标、VI与年度运营"
       ],
       "drawing_refs": [
-        "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "drawings/a3-booklet.pdf#page-1",
+        "drawings/a0-boards.pdf#page-1"
       ],
       "geometry_refs": [
         "geometry/site_boundary.geojson",
@@ -323,7 +320,10 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "唯一证据定位：地标、VI与年度运营；对应图册页、方案章节和结构化图层共同校核。",
+      "visual_sections": [
+        "地标、VI与年度运营"
+      ]
     },
     {
       "item_id": "retain_renovate_demolish",
@@ -332,14 +332,11 @@
       "required": true,
       "status": "complete",
       "proposal_sections": [
-        "三层范围工作框架",
-        "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计",
-        "风险、版权与合规说明"
+        "边界与指标复算"
       ],
       "drawing_refs": [
-        "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "drawings/a3-booklet.pdf#page-2",
+        "drawings/a0-boards.pdf#page-2"
       ],
       "geometry_refs": [
         "geometry/site_boundary.geojson",
@@ -377,7 +374,10 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "唯一证据定位：边界与指标复算；对应图册页、方案章节和结构化图层共同校核。",
+      "visual_sections": [
+        "边界与指标复算"
+      ]
     },
     {
       "item_id": "traffic_rail_slow_parking",
@@ -386,14 +386,11 @@
       "required": true,
       "status": "complete",
       "proposal_sections": [
-        "三层范围工作框架",
-        "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计",
-        "风险、版权与合规说明"
+        "总体结构与区域协同"
       ],
       "drawing_refs": [
-        "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "drawings/a3-booklet.pdf#page-3",
+        "drawings/a0-boards.pdf#page-3"
       ],
       "geometry_refs": [
         "geometry/site_boundary.geojson",
@@ -431,7 +428,10 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "唯一证据定位：总体结构与区域协同；对应图册页、方案章节和结构化图层共同校核。",
+      "visual_sections": [
+        "总体结构与区域协同"
+      ]
     },
     {
       "item_id": "municipal_new_infrastructure",
@@ -440,14 +440,11 @@
       "required": true,
       "status": "complete",
       "proposal_sections": [
-        "三层范围工作框架",
-        "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计",
-        "风险、版权与合规说明"
+        "案例转译与生态图谱"
       ],
       "drawing_refs": [
-        "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "drawings/a3-booklet.pdf#page-4",
+        "drawings/a0-boards.pdf#page-4"
       ],
       "geometry_refs": [
         "geometry/site_boundary.geojson",
@@ -485,7 +482,10 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "唯一证据定位：案例转译与生态图谱；对应图册页、方案章节和结构化图层共同校核。",
+      "visual_sections": [
+        "案例转译与生态图谱"
+      ]
     },
     {
       "item_id": "blue_green_public_space",
@@ -494,14 +494,11 @@
       "required": true,
       "status": "complete",
       "proposal_sections": [
-        "三层范围工作框架",
-        "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计",
-        "风险、版权与合规说明"
+        "三套测试协议"
       ],
       "drawing_refs": [
-        "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "drawings/a3-booklet.pdf#page-5",
+        "drawings/a0-boards.pdf#page-5"
       ],
       "geometry_refs": [
         "geometry/site_boundary.geojson",
@@ -539,7 +536,10 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "唯一证据定位：三套测试协议；对应图册页、方案章节和结构化图层共同校核。",
+      "visual_sections": [
+        "三套测试协议"
+      ]
     },
     {
       "item_id": "three_key_area_detailed_design",
@@ -548,14 +548,11 @@
       "required": true,
       "status": "complete",
       "proposal_sections": [
-        "三层范围工作框架",
-        "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计",
-        "风险、版权与合规说明"
+        "三处重点区概念总平"
       ],
       "drawing_refs": [
-        "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "drawings/a3-booklet.pdf#page-1",
+        "drawings/a0-boards.pdf#page-1"
       ],
       "geometry_refs": [
         "geometry/site_boundary.geojson",
@@ -593,7 +590,10 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "唯一证据定位：三处重点区概念总平；对应图册页、方案章节和结构化图层共同校核。",
+      "visual_sections": [
+        "三处重点区概念总平"
+      ]
     },
     {
       "item_id": "renewal_project_list",
@@ -602,14 +602,11 @@
       "required": true,
       "status": "complete",
       "proposal_sections": [
-        "三层范围工作框架",
-        "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计",
-        "风险、版权与合规说明"
+        "JZ-01—JZ-06实施责任表"
       ],
       "drawing_refs": [
-        "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "drawings/a3-booklet.pdf#page-2",
+        "drawings/a0-boards.pdf#page-2"
       ],
       "geometry_refs": [
         "geometry/site_boundary.geojson",
@@ -647,7 +644,10 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "唯一证据定位：JZ-01—JZ-06实施责任表；对应图册页、方案章节和结构化图层共同校核。",
+      "visual_sections": [
+        "JZ-01—JZ-06实施责任表"
+      ]
     },
     {
       "item_id": "phasing_implementation",
@@ -656,14 +656,11 @@
       "required": true,
       "status": "complete",
       "proposal_sections": [
-        "三层范围工作框架",
-        "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计",
-        "风险、版权与合规说明"
+        "地标、VI与年度运营"
       ],
       "drawing_refs": [
-        "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "drawings/a3-booklet.pdf#page-3",
+        "drawings/a0-boards.pdf#page-3"
       ],
       "geometry_refs": [
         "geometry/site_boundary.geojson",
@@ -701,7 +698,10 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "唯一证据定位：地标、VI与年度运营；对应图册页、方案章节和结构化图层共同校核。",
+      "visual_sections": [
+        "地标、VI与年度运营"
+      ]
     },
     {
       "item_id": "metrics_recalculation",
@@ -710,14 +710,11 @@
       "required": true,
       "status": "complete",
       "proposal_sections": [
-        "三层范围工作框架",
-        "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计",
-        "风险、版权与合规说明"
+        "边界与指标复算"
       ],
       "drawing_refs": [
-        "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "drawings/a3-booklet.pdf#page-4",
+        "drawings/a0-boards.pdf#page-4"
       ],
       "geometry_refs": [
         "geometry/site_boundary.geojson",
@@ -755,7 +752,10 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "唯一证据定位：边界与指标复算；对应图册页、方案章节和结构化图层共同校核。",
+      "visual_sections": [
+        "边界与指标复算"
+      ]
     },
     {
       "item_id": "risk_missing_data",
@@ -764,14 +764,11 @@
       "required": true,
       "status": "complete",
       "proposal_sections": [
-        "三层范围工作框架",
-        "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计",
-        "风险、版权与合规说明"
+        "总体结构与区域协同"
       ],
       "drawing_refs": [
-        "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "drawings/a3-booklet.pdf#page-5",
+        "drawings/a0-boards.pdf#page-5"
       ],
       "geometry_refs": [
         "geometry/site_boundary.geojson",
@@ -809,7 +806,10 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "唯一证据定位：总体结构与区域协同；对应图册页、方案章节和结构化图层共同校核。",
+      "visual_sections": [
+        "总体结构与区域协同"
+      ]
     }
   ]
 }

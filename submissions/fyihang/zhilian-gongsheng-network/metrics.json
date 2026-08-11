@@ -7,51 +7,56 @@
   "metrics": {
     "site_area_sqm": {
       "status": "known",
-      "value": 11412825.386,
+      "value": 11400000.0,
       "unit": "sqm",
       "source_files": [
         "geometry/site_boundary.geojson"
       ],
       "formula": "polygon_area(submitted_site_boundary)",
-      "confidence": "high",
+      "confidence": "low",
       "assumptions": [
-        "Trusted official boundary is present in the site package."
-      ]
+        "Submitted boundary is provisional_only and supports intake visualization only.",
+        "Recalculate from official overall-design polygon before area-based decisions."
+      ],
+      "reason": "Provisional geometry derivation; not an official area."
     },
     "building_footprint_area_sqm": {
       "status": "known",
-      "value": 310807.184,
+      "value": 310800.0,
       "unit": "sqm",
       "source_files": [
         "geometry/buildings.geojson"
       ],
       "formula": "sum(polygon_area(building_footprints))",
-      "confidence": "medium",
-      "assumptions": []
+      "confidence": "low",
+      "assumptions": ["Derived from provisional geometry; not for statutory or scoring use."],
+      "reason": "Official boundary and building-survey basis are unavailable."
     },
     "green_ratio": {
       "status": "known",
-      "value": 0.123423,
+      "value": 0.123,
       "unit": "ratio",
       "source_files": [
         "geometry/green_space.geojson",
         "geometry/site_boundary.geojson"
       ],
       "formula": "green_space_area_sqm / site_area_sqm",
-      "confidence": "medium",
-      "assumptions": []
+      "confidence": "low",
+      "assumptions": ["Estimated ratio derived from the provisional boundary."],
+      "reason": "Official boundary required for a valid ratio denominator is unavailable."
     },
     "public_space_ratio": {
       "status": "known",
-      "value": 0.073281,
+      "value": 0.073,
       "unit": "ratio",
       "source_files": [
         "geometry/public_space.geojson",
         "geometry/site_boundary.geojson"
       ],
       "formula": "public_space_area_sqm / site_area_sqm",
-      "confidence": "medium",
-      "assumptions": []
+      "confidence": "low",
+      "assumptions": ["Estimated ratio derived from the provisional boundary."],
+      "reason": "Official boundary required for a valid ratio denominator is unavailable."
     },
     "floor_area_ratio": {
       "status": "unknown",
