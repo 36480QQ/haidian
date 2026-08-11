@@ -1,0 +1,61 @@
+{
+  "schema_version": "0.1.0",
+  "checks": [
+    {
+      "check_id": "BOUNDARY_TRUST",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/site_boundary.geojson",
+      "message": "Repository provisional boundary is preserved and explicitly marked non-official."
+    },
+    {
+      "check_id": "KEY_AREAS_TRUST",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/key_areas.geojson",
+      "message": "All three key areas retain provisional status and taskbook IDs."
+    },
+    {
+      "check_id": "LAND_USE_TOPOLOGY",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/land_use.geojson",
+      "message": "EPSG:4548 tests confirm full coverage and no material overlap."
+    },
+    {
+      "check_id": "METRICS_RECALCULATION",
+      "result": "pass",
+      "severity": "major",
+      "target": "metrics.json",
+      "message": "Known spatial metrics are recomputed from submitted GeoJSON."
+    },
+    {
+      "check_id": "BILINGUAL_CONTRACT",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "proposal.en.md",
+      "message": "Complete Chinese and English companions exist for every required display artifact."
+    },
+    {
+      "check_id": "VISUAL_STATIC",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "visual/index.html",
+      "message": "Both visual and report HTML pairs are offline, static and locally referenced."
+    },
+    {
+      "check_id": "COPYRIGHT_TRACE",
+      "result": "pass",
+      "severity": "major",
+      "target": "report/copyright_statement.md",
+      "message": "Copyright, source provenance and excluded third-party media are documented."
+    },
+    {
+      "check_id": "SCOPE_ONLY",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "submissions/MatrixWeaver-Git/jingzhang-pilot-line/",
+      "message": "All participant changes are confined to the declared proposal directory."
+    }
+  ]
+}
