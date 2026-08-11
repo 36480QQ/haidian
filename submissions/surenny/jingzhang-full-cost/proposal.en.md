@@ -7,7 +7,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "A bilingual professional design package that makes seven cost ledgers, one civic-return ledger and a refuse-to-sign closeout receipt the evidence gate before an AI scenario enters public space."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v0.5"
+iteration: "v0.6"
 ---
 
 # COUNT THE FULL COST JING-ZHANG
@@ -31,6 +31,10 @@ The offline board's Refusal Desk turns the claim into an operable bilingual revi
 The Responsibility Transfer Yard asks who actually receives each cost when a pilot ends, operations change hands, or a system exits. Space, energy/water, materials/equipment, data/compute, labor/maintenance, public attention, and public funding each have a RACI receiving interface. Every interface names the originator; responsible, accountable, receiving, consulted, and informed roles; an equivalent non-AI route; affected groups; a provisional spatial consequence; a denominator that retains failures and withdrawals; and acceptance, refusal, and recovery evidence. Roles are auditable functions, not personal names. Without receiver acceptance, liability stays with the originator and cannot move to maintainers, residents, small businesses, or a future public budget [metric:responsibility_handoff_count] [depth:phasing_implementation] [data:visual/assets/responsibility-transfer-data.js#seven-cost-burden-handover-v1].
 
 `verify-responsibility-transfer.js` first checks the seven complete contracts and their GeoJSON anchors, then runs seven negative fixtures. They respectively remove the receiving role, non-AI equivalent, spatial consequence, failed-case denominator, stop evidence, recovery evidence, and affected-group observer; every fixture must be rejected. This proves only that the interface can refuse burden transfer, not that roles have been appointed, budgets funded, or a field handover completed [metric:responsibility_handoff_negative_fixture_count] [metric:responsibility_handoff_fixture_match_rate] [depth:risk_missing_data].
+
+The Spatial Balance Sheet compresses the same claim into one readable decision at the `PUBLIC-003` Public Return Table. The ordinary staffed baseline, AI candidate, and exit state each allocate twelve **relative layout cells**; none is a metre, square metre, capacity, or observed footfall. A candidate may not reduce continuous passage, staffed service, quiet rest, or maintenance access, and added protected-use cells must exceed reversible AI trial cells. This tabletop candidate exchanges one trial cell for two added protected-use cells, leaving a relative net dividend of one cell; its exit clears the trial cell while retaining added passage and rest. The calculation is a co-review hypothesis, not an official dimension, accessibility finding, field outcome, or implementation permission [metric:spatial_balance_state_count] [data:visual/assets/spatial-balance-data.js#public-return-table-spatial-balance-v1] [data:geometry/public_space.geojson#PUBLIC-003].
+
+`verify-spatial-balance.js` checks equal state totals, the provisional GeoJSON anchor, non-decreasing protected uses, a dividend strictly larger than the trial footprint, zero trial cells at exit, a human go/revise/exit gate, and the relative-unit boundary. Six negative fixtures separately break passage, dividend, exit, human review, anchor, or unit claims; every fixture must be rejected. Wheelchair users, older adults, caregivers, small merchants, staffed-service workers, and site maintainers are prospective authorized co-review groups only. No personal data is recorded, and offline validity never substitutes for their actual agreement [metric:spatial_balance_negative_fixture_count] [metric:spatial_balance_fixture_match_rate] [depth:three_key_area_detailed_design].
 
 ## Three-Level Scope Framework
 
@@ -118,6 +122,8 @@ The current provisional site is about 11.41 km²; green and public-window ratios
 The tabletop contains twelve complete receipts and twelve missing-evidence stops across 24 cases, with a 1.0 expected-decision match; these measure protocol coverage, not field outcomes [metric:closeout_receipt_case_count] [metric:closeout_receipt_stop_case_count] [metric:closeout_receipt_match_rate].
 
 Each of the seven cost classes has one responsibility-transfer interface and one missing-field negative fixture; the local verifier rejects 7/7. This 1.0 is a protocol fixture match, not field completion of staffing, funding, service, or spatial restoration [metric:responsibility_handoff_count] [metric:responsibility_handoff_negative_fixture_count] [metric:responsibility_handoff_fixture_match_rate].
+
+The Spatial Balance Sheet has before, candidate, and exit states plus six missing-field or broken-rule fixtures; the local verifier must reject 6/6. Its twelve cells are same-denominator relative layout units and cannot be converted into field area or occupancy. The dividend tests only the candidate's internal allocation logic [metric:spatial_balance_state_count] [metric:spatial_balance_negative_fixture_count] [metric:spatial_balance_fixture_match_rate].
 
 Spatial numbers support design comparison, not regulatory control. The eight-ledger baseline, FAR/height/density, energy, labor, civic return and field performance are explicit pending data in `assumptions.json` [metric:eight_ledger_baseline] [metric:far_height_density] [metric:field_pilot_performance].
 
