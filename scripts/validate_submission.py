@@ -2939,11 +2939,16 @@ def validate_submission(
             and size > MAX_AUDIO_BYTES
         ):
             report.add_error(f"{path}: audio files must be <= {MAX_AUDIO_BYTES} bytes")
-        elif is_under_media(parts) and size > MAX_ASSET_BYTES:
+        elif (
+            is_under_media(parts)
+            and Path(path).suffix.lower() not in ALLOWED_VIDEO_EXTENSIONS
+            and Path(path).suffix.lower() not in ALLOWED_AUDIO_EXTENSIONS
+            and size > MAX_ASSET_BYTES
+        ):
             report.add_error(
                 f"{path}: media sidecars and posters must be <= {MAX_ASSET_BYTES} bytes"
             )
-        elif is_under_assets(parts) and size > MAX_ASSET_BYTES:
+        elif is_under_assets(parts) and not is_under_media(parts) and size > MAX_ASSET_BYTES:
             report.add_error(f"{path}: assets must be <= {MAX_ASSET_BYTES} bytes")
         if is_under_drawings(parts) and size > MAX_DRAWING_BYTES:
             report.add_error(f"{path}: drawings must be <= {MAX_DRAWING_BYTES} bytes")
