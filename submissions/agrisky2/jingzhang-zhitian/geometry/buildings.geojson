@@ -8,10 +8,13 @@
       "properties": {
         "id": "BLD-001",
         "layer": "BUILDING_FOOTPRINT",
-        "building_type": "AI_agritech_rd",
+        "building_type": "ai_r_and_d",
         "height_concept_m": 36.0,
         "floors_concept": 9,
-        "status": "proposed"
+        "status": "proposed",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal"
       },
       "geometry": {
         "type": "Polygon",
@@ -47,10 +50,13 @@
       "properties": {
         "id": "BLD-002",
         "layer": "BUILDING_FOOTPRINT",
-        "building_type": "AI_agritech_rd",
+        "building_type": "ai_r_and_d",
         "height_concept_m": 36.0,
         "floors_concept": 9,
-        "status": "proposed"
+        "status": "proposed",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal"
       },
       "geometry": {
         "type": "Polygon",
@@ -86,10 +92,13 @@
       "properties": {
         "id": "BLD-003",
         "layer": "BUILDING_FOOTPRINT",
-        "building_type": "AI_agritech_rd",
+        "building_type": "ai_r_and_d",
         "height_concept_m": 36.0,
         "floors_concept": 9,
-        "status": "proposed"
+        "status": "proposed",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal"
       },
       "geometry": {
         "type": "Polygon",
@@ -125,10 +134,13 @@
       "properties": {
         "id": "BLD-004",
         "layer": "BUILDING_FOOTPRINT",
-        "building_type": "mix",
+        "building_type": "mixed_use",
         "height_concept_m": 53.99999999999999,
         "floors_concept": 13,
-        "status": "proposed"
+        "status": "proposed",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal"
       },
       "geometry": {
         "type": "Polygon",
@@ -164,10 +176,13 @@
       "properties": {
         "id": "BLD-005",
         "layer": "BUILDING_FOOTPRINT",
-        "building_type": "mix",
+        "building_type": "mixed_use",
         "height_concept_m": 53.99999999999999,
         "floors_concept": 13,
-        "status": "proposed"
+        "status": "proposed",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal"
       },
       "geometry": {
         "type": "Polygon",
@@ -203,10 +218,13 @@
       "properties": {
         "id": "BLD-006",
         "layer": "BUILDING_FOOTPRINT",
-        "building_type": "mix",
+        "building_type": "mixed_use",
         "height_concept_m": 53.99999999999999,
         "floors_concept": 13,
-        "status": "proposed"
+        "status": "proposed",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal"
       },
       "geometry": {
         "type": "Polygon",
@@ -242,10 +260,13 @@
       "properties": {
         "id": "BLD-007",
         "layer": "BUILDING_FOOTPRINT",
-        "building_type": "foodtech_commercial",
+        "building_type": "retail",
         "height_concept_m": 48.0,
         "floors_concept": 12,
-        "status": "proposed"
+        "status": "proposed",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal"
       },
       "geometry": {
         "type": "Polygon",
@@ -281,10 +302,13 @@
       "properties": {
         "id": "BLD-008",
         "layer": "BUILDING_FOOTPRINT",
-        "building_type": "foodtech_commercial",
+        "building_type": "retail",
         "height_concept_m": 48.0,
         "floors_concept": 12,
-        "status": "proposed"
+        "status": "proposed",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal"
       },
       "geometry": {
         "type": "Polygon",
@@ -320,10 +344,13 @@
       "properties": {
         "id": "BLD-009",
         "layer": "BUILDING_FOOTPRINT",
-        "building_type": "foodtech_commercial",
+        "building_type": "retail",
         "height_concept_m": 48.0,
         "floors_concept": 12,
-        "status": "proposed"
+        "status": "proposed",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal"
       },
       "geometry": {
         "type": "Polygon",
@@ -359,10 +386,13 @@
       "properties": {
         "id": "BLD-010",
         "layer": "BUILDING_FOOTPRINT",
-        "building_type": "mix",
+        "building_type": "mixed_use",
         "height_concept_m": 72.0,
         "floors_concept": 18,
-        "status": "proposed"
+        "status": "proposed",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal"
       },
       "geometry": {
         "type": "Polygon",
@@ -398,10 +428,13 @@
       "properties": {
         "id": "BLD-011",
         "layer": "BUILDING_FOOTPRINT",
-        "building_type": "mix",
+        "building_type": "mixed_use",
         "height_concept_m": 72.0,
         "floors_concept": 18,
-        "status": "proposed"
+        "status": "proposed",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal"
       },
       "geometry": {
         "type": "Polygon",
@@ -437,10 +470,13 @@
       "properties": {
         "id": "BLD-012",
         "layer": "BUILDING_FOOTPRINT",
-        "building_type": "mix",
+        "building_type": "mixed_use",
         "height_concept_m": 72.0,
         "floors_concept": 18,
-        "status": "proposed"
+        "status": "proposed",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal"
       },
       "geometry": {
         "type": "Polygon",
@@ -476,10 +512,13 @@
       "properties": {
         "id": "BLD-013",
         "layer": "BUILDING_FOOTPRINT",
-        "building_type": "talent_residential",
+        "building_type": "talent_apartment",
         "height_concept_m": 27.0,
         "floors_concept": 6,
-        "status": "proposed"
+        "status": "proposed",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal"
       },
       "geometry": {
         "type": "Polygon",
@@ -515,10 +554,13 @@
       "properties": {
         "id": "BLD-014",
         "layer": "BUILDING_FOOTPRINT",
-        "building_type": "talent_residential",
+        "building_type": "talent_apartment",
         "height_concept_m": 27.0,
         "floors_concept": 6,
-        "status": "proposed"
+        "status": "proposed",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal"
       },
       "geometry": {
         "type": "Polygon",
@@ -554,10 +596,13 @@
       "properties": {
         "id": "BLD-015",
         "layer": "BUILDING_FOOTPRINT",
-        "building_type": "talent_residential",
+        "building_type": "talent_apartment",
         "height_concept_m": 27.0,
         "floors_concept": 6,
-        "status": "proposed"
+        "status": "proposed",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal"
       },
       "geometry": {
         "type": "Polygon",
@@ -593,10 +638,13 @@
       "properties": {
         "id": "BLD-016",
         "layer": "BUILDING_FOOTPRINT",
-        "building_type": "mix",
+        "building_type": "mixed_use",
         "height_concept_m": 40.49999999999999,
         "floors_concept": 10,
-        "status": "proposed"
+        "status": "proposed",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal"
       },
       "geometry": {
         "type": "Polygon",
@@ -632,10 +680,13 @@
       "properties": {
         "id": "BLD-017",
         "layer": "BUILDING_FOOTPRINT",
-        "building_type": "mix",
+        "building_type": "mixed_use",
         "height_concept_m": 40.49999999999999,
         "floors_concept": 10,
-        "status": "proposed"
+        "status": "proposed",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal"
       },
       "geometry": {
         "type": "Polygon",
@@ -671,10 +722,13 @@
       "properties": {
         "id": "BLD-018",
         "layer": "BUILDING_FOOTPRINT",
-        "building_type": "mix",
+        "building_type": "mixed_use",
         "height_concept_m": 40.49999999999999,
         "floors_concept": 10,
-        "status": "proposed"
+        "status": "proposed",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal"
       },
       "geometry": {
         "type": "Polygon",
@@ -710,10 +764,13 @@
       "properties": {
         "id": "BLD-019",
         "layer": "BUILDING_FOOTPRINT",
-        "building_type": "food_experience",
+        "building_type": "cultural",
         "height_concept_m": 60.0,
         "floors_concept": 15,
-        "status": "proposed"
+        "status": "proposed",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal"
       },
       "geometry": {
         "type": "Polygon",
@@ -749,10 +806,13 @@
       "properties": {
         "id": "BLD-020",
         "layer": "BUILDING_FOOTPRINT",
-        "building_type": "food_experience",
+        "building_type": "cultural",
         "height_concept_m": 60.0,
         "floors_concept": 15,
-        "status": "proposed"
+        "status": "proposed",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal"
       },
       "geometry": {
         "type": "Polygon",
@@ -788,10 +848,13 @@
       "properties": {
         "id": "BLD-021",
         "layer": "BUILDING_FOOTPRINT",
-        "building_type": "food_experience",
+        "building_type": "cultural",
         "height_concept_m": 60.0,
         "floors_concept": 15,
-        "status": "proposed"
+        "status": "proposed",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal"
       },
       "geometry": {
         "type": "Polygon",
@@ -827,10 +890,13 @@
       "properties": {
         "id": "BLD-022",
         "layer": "BUILDING_FOOTPRINT",
-        "building_type": "mix",
+        "building_type": "mixed_use",
         "height_concept_m": 89.99999999999999,
         "floors_concept": 22,
-        "status": "proposed"
+        "status": "proposed",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal"
       },
       "geometry": {
         "type": "Polygon",
@@ -866,10 +932,13 @@
       "properties": {
         "id": "BLD-023",
         "layer": "BUILDING_FOOTPRINT",
-        "building_type": "mix",
+        "building_type": "mixed_use",
         "height_concept_m": 89.99999999999999,
         "floors_concept": 22,
-        "status": "proposed"
+        "status": "proposed",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal"
       },
       "geometry": {
         "type": "Polygon",
@@ -905,10 +974,13 @@
       "properties": {
         "id": "BLD-024",
         "layer": "BUILDING_FOOTPRINT",
-        "building_type": "mix",
+        "building_type": "mixed_use",
         "height_concept_m": 89.99999999999999,
         "floors_concept": 22,
-        "status": "proposed"
+        "status": "proposed",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal"
       },
       "geometry": {
         "type": "Polygon",
@@ -944,10 +1016,13 @@
       "properties": {
         "id": "BLD-025",
         "layer": "BUILDING_FOOTPRINT",
-        "building_type": "tech_service",
+        "building_type": "community_service",
         "height_concept_m": 18.0,
         "floors_concept": 4,
-        "status": "proposed"
+        "status": "proposed",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal"
       },
       "geometry": {
         "type": "Polygon",
@@ -983,10 +1058,13 @@
       "properties": {
         "id": "BLD-026",
         "layer": "BUILDING_FOOTPRINT",
-        "building_type": "tech_service",
+        "building_type": "community_service",
         "height_concept_m": 18.0,
         "floors_concept": 4,
-        "status": "proposed"
+        "status": "proposed",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal"
       },
       "geometry": {
         "type": "Polygon",
@@ -1022,10 +1100,13 @@
       "properties": {
         "id": "BLD-027",
         "layer": "BUILDING_FOOTPRINT",
-        "building_type": "tech_service",
+        "building_type": "community_service",
         "height_concept_m": 18.0,
         "floors_concept": 4,
-        "status": "proposed"
+        "status": "proposed",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal"
       },
       "geometry": {
         "type": "Polygon",
@@ -1061,10 +1142,13 @@
       "properties": {
         "id": "BLD-028",
         "layer": "BUILDING_FOOTPRINT",
-        "building_type": "mix",
+        "building_type": "mixed_use",
         "height_concept_m": 26.999999999999996,
         "floors_concept": 6,
-        "status": "proposed"
+        "status": "proposed",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal"
       },
       "geometry": {
         "type": "Polygon",
@@ -1100,10 +1184,13 @@
       "properties": {
         "id": "BLD-029",
         "layer": "BUILDING_FOOTPRINT",
-        "building_type": "mix",
+        "building_type": "mixed_use",
         "height_concept_m": 26.999999999999996,
         "floors_concept": 6,
-        "status": "proposed"
+        "status": "proposed",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal"
       },
       "geometry": {
         "type": "Polygon",
@@ -1139,10 +1226,13 @@
       "properties": {
         "id": "BLD-030",
         "layer": "BUILDING_FOOTPRINT",
-        "building_type": "mix",
+        "building_type": "mixed_use",
         "height_concept_m": 26.999999999999996,
         "floors_concept": 6,
-        "status": "proposed"
+        "status": "proposed",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal"
       },
       "geometry": {
         "type": "Polygon",
@@ -1178,10 +1268,13 @@
       "properties": {
         "id": "BLD-031",
         "layer": "BUILDING_FOOTPRINT",
-        "building_type": "scenario_mixed",
+        "building_type": "mixed_use",
         "height_concept_m": 18.0,
         "floors_concept": 4,
-        "status": "proposed"
+        "status": "proposed",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal"
       },
       "geometry": {
         "type": "Polygon",
@@ -1217,10 +1310,13 @@
       "properties": {
         "id": "BLD-032",
         "layer": "BUILDING_FOOTPRINT",
-        "building_type": "scenario_mixed",
+        "building_type": "mixed_use",
         "height_concept_m": 18.0,
         "floors_concept": 4,
-        "status": "proposed"
+        "status": "proposed",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal"
       },
       "geometry": {
         "type": "Polygon",
@@ -1256,10 +1352,13 @@
       "properties": {
         "id": "BLD-033",
         "layer": "BUILDING_FOOTPRINT",
-        "building_type": "scenario_mixed",
+        "building_type": "mixed_use",
         "height_concept_m": 18.0,
         "floors_concept": 4,
-        "status": "proposed"
+        "status": "proposed",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal"
       },
       "geometry": {
         "type": "Polygon",
@@ -1295,10 +1394,13 @@
       "properties": {
         "id": "BLD-034",
         "layer": "BUILDING_FOOTPRINT",
-        "building_type": "mix",
+        "building_type": "mixed_use",
         "height_concept_m": 26.999999999999996,
         "floors_concept": 6,
-        "status": "proposed"
+        "status": "proposed",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal"
       },
       "geometry": {
         "type": "Polygon",
@@ -1334,10 +1436,13 @@
       "properties": {
         "id": "BLD-035",
         "layer": "BUILDING_FOOTPRINT",
-        "building_type": "mix",
+        "building_type": "mixed_use",
         "height_concept_m": 26.999999999999996,
         "floors_concept": 6,
-        "status": "proposed"
+        "status": "proposed",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal"
       },
       "geometry": {
         "type": "Polygon",
@@ -1373,10 +1478,13 @@
       "properties": {
         "id": "BLD-036",
         "layer": "BUILDING_FOOTPRINT",
-        "building_type": "mix",
+        "building_type": "mixed_use",
         "height_concept_m": 26.999999999999996,
         "floors_concept": 6,
-        "status": "proposed"
+        "status": "proposed",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal"
       },
       "geometry": {
         "type": "Polygon",
