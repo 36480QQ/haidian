@@ -1,6 +1,6 @@
 ---
 title: "京张智脉·光晕 / Jing-Zhang AI Heritage Halo"
-author_github: "default"
+author_github: "565431hzhang"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
 language: "en"
@@ -392,3 +392,4 @@ Multi-phase operation strategy for the three key areas:
 - data/processed/missing_data_checklist.csv
 - Complete machine index: see `sources.json`, `metrics.json`, `compliance_matrix.json`, `standard_matrix.json`, and `design_depth_matrix.json`
 - This section's bibliography entry is based on the site package registration; full provenance and licenses are in the structured source list [source:SITE-PACKAGE]
+\* Concept phasing is a research assumption, subject to adjustment upon official regulatory plan, transit, funding, and property rights confirmation. Does not constitute an implementation commitment.

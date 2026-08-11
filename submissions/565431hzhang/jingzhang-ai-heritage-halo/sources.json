@@ -42,6 +42,28 @@
       "path": "brief/site-package/agent_taskbook.json",
       "source_type": "user_provided_cleared",
       "usage": "Agent-facing open-call principles, six required agent tasks, scenario/branding/operation requirements, and boundary clause."
+    },
+    {
+      "id": "OSM-2025-12",
+      "type": "open-spatial-data",
+      "title": "OpenStreetMap vector data",
+      "version": "2025-12 snapshot",
+      "url": "https://www.openstreetmap.org/",
+      "license": "ODbL 1.0",
+      "attribution": "(c) OpenStreetMap contributors",
+      "usage": "road/rail alignment reference for provisional geometry tracing",
+      "provisional_only": true
+    },
+    {
+      "id": "SENTINEL-2-2025-2026",
+      "type": "satellite-imagery",
+      "title": "Sentinel-2 satellite imagery",
+      "version": "2025-2026",
+      "url": "https://dataspace.copernicus.eu/",
+      "license": "CC BY-SA 3.0 IGO (ESA Copernicus)",
+      "attribution": "ESA Copernicus Sentinel data 2025-2026",
+      "usage": "visual reference for provisional geometry tracing (not embedded)",
+      "provisional_only": true
     }
   ]
 }
