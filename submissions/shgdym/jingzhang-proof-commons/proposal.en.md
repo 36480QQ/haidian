@@ -23,6 +23,10 @@ The structure is one line, three stations, two wings, ten stitches, twelve scene
 
 ![Overall structure, three scales and six verification gates](assets/figures/site-overview.en.png)
 
+The rail civic spine, east-west stitches, adaptive building interfaces, blue-green walking loop and three station anchors in the aerial each point back to `roads.geojson`, `buildings.geojson`, `green_space.geojson` and `public_space.geojson`. The image explains intent rather than replacing plan evidence; concept layers, metrics and the station atlas remain authoritative for spatial review. [data:geometry/roads.geojson#ROAD-SPINE] [depth:overall_spatial_structure]
+
+![Crosswalk between the overall aerial and five spatial moves](assets/figures/aerial-design-key.en.png)
+
 ## Design Basis and Source List
 
 The official announcement establishes tasks, textual scopes, approximate areas, and three key areas. The agent taskbook establishes three positions, five functions, the three-zone/two-wing structure, and agent.1-agent.6. Local standard snapshots constrain planning language. The overall and key-area geometries remain `provisional_constraint`; derived areas serve package consistency only. When official polygons arrive, all GeoJSON, metrics, drawings, bilingual HTML, A3/A0 files, and narrative numbers must be rebuilt as one chain. [source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE]
@@ -99,6 +103,10 @@ Dazhongsi combines a transit arrival hall, intelligent-device trial street, data
 
 ![Three key-area plans, scene locations and dependencies](assets/figures/key-areas.en.png)
 
+The station atlas aligns plan, civic section, operating programme and failed restoration on one review surface. Zhongzhi uses a staffed controlled loop to protect the public route; AI Origin uses a continuous ground floor and public problem table to connect release, collaboration and rights disclosure; Dazhongsi uses an arrival cross and circular hall to separate trial, appeal and non-AI service. These are not one generic grid with different labels, and civic space must remain useful after equipment exits. [data:geometry/buildings.geojson#BLDG-101] [data:geometry/public_space.geojson#LANDMARK-01] [depth:three_key_area_detailed_design]
+
+![Aligned plans, sections, operations and restoration for three stations](assets/figures/station-design-atlas.en.png)
+
 ## Transport, Rail, Municipal Infrastructure, and Public Services
 
 One north-south civic verification spine, ten east-west stitches, and two wing service routes form the concept network. Walking and cycling lead on the spine. Embodied devices operate only within key areas, limited times, low speeds, and staffed takeover routes. Each stitch needs field review of traffic, accessibility, underpass conditions, and ownership. `ROAD-SPINE` and `ROAD-X01`-`ROAD-X10` are concept centrelines, not rail or road redlines. [data:geometry/roads.geojson#ROAD-SPINE] [metric:east_west_stitch_count]
@@ -112,6 +120,10 @@ Three sections make boundaries explicit. The everyday green section retains walk
 Urban character comes from rail traces, rain planting, durable paving, reversible structures, and active ground floors rather than screens or device clutter. Everyday green space remains complete for shade, rest, children, older adults, and accessible movement after equipment leaves. Controlled test areas use boundaries, speed, noise, light, and physical stops; urban-trial areas protect choice with staff and a non-AI route. Heat, storm, lighting failure, or accessibility interruption closes technical operation while keeping safe passage. Official greenline, water, flood, tree, and sponge-city evidence triggers ecological and engineering review and full ratio recalculation. [standard:MOHURD-URBAN-DESIGN-MEASURES] [data:geometry/green_space.geojson#GREEN-001] [data:geometry/public_space.geojson#PUBLIC-SPINE]
 
 ![Mobility, east-west stitches and three public sections](assets/figures/mobility-bluegreen.en.png)
+
+The three east-west stitch sections share one public route that cannot be interrupted, while the controlled event layer can close independently after an incident, extreme weather, accessibility failure or permit lapse. Field accessibility audit, non-AI equivalent service, night-safety review, human-takeover drill and failed restoration form the continuity acceptance chain. Technical functions do not open while any link remains unresolved. [standard:MOHURD-URBAN-DESIGN-MEASURES] [data:geometry/roads.geojson#ROAD-X01] [metric:east_west_stitch_count]
+
+![Three stitch sections and the accessible continuity acceptance chain](assets/figures/sections-accessibility.en.png)
 
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
@@ -142,6 +154,10 @@ Three removable, low-glare, non-advertising landmarks are the Rail Evidence Gate
 
 ![Identity, landmarks and component catalogue](assets/figures/brand-landmarks.en.png)
 
+The executable VI standard fixes mark construction, minimum clearspace, minimum digital size, five functional colours, type hierarchy and three levels of public information. Every application shows scene status, rights information and staffed/non-AI action entry together. Mimicking an official seal, implying enterprise endorsement, permanent advertising and hiding pause or exit status are prohibited. Identity therefore becomes a consistent public interface for responsibility and choice rather than decoration. [source:AGENT-TASKBOOK] [metric:public_component_count]
+
+![Construction, colour, type, information hierarchy and misuse rules](assets/figures/identity-guidelines.en.png)
+
 ### Inclusion: equal service without an application
 
 Eight personas include developers, startups, university users, enterprise visitors, residents, operators, children and caregivers, and older, disabled, and non-digital users. A continuous accessible route, concept rest nodes within 400 metres, tactile and high-contrast information, low-glare night light, paper and staffed service, and use without face recognition or a smartphone are entry conditions. Distances and locations require field audit after official geometry.
@@ -170,6 +186,14 @@ Gate one, evidence and low-impact prototypes, permits only research, audits, gui
 The annual cycle is Source and Open Week in spring, Controlled City Trial season in summer, Global Evidence Forum in autumn, and Public Evaluation and Archive month in winter. The developer community maintains a public roadmap; residents and target users define problems; professionals retain legal, safety, and stop authority; AI organises records, flags conflict, and tracks versions.
 
 ![Projects, resources, annual operations and readiness gates](assets/figures/implementation-roadmap.en.png)
+
+### Professional handoff package: moving from concept to the next gate
+
+Before any project enters a controlled pilot it must produce ten signable handoff items: official-data difference report, key-area existing-condition base, candidate operator responsibility charter, scene register, safety case, data-and-rights impact check, field accessibility audit, lifecycle resource brief, failed-restoration plan, and a continue/revise/stop gate decision. If legal ownership, professional approval, public notice, human takeover, non-digital service, data expiry or restoration resources are missing, the project remains in research status.
+
+The handoff package does not invent authorisation. This submission supplies fields, candidate roles, acceptance evidence and failed actions; organisation names, signatures, budgets, insurance, field measurements and approvals remain pending. A professional team can sign off JZ-01 through JZ-12 without reverse-engineering tasks from narrative prose. [depth:phasing_implementation] [metric:renewal_project_count]
+
+![Responsibility, resources, acceptance, stop and restoration dashboard](assets/figures/delivery-dashboard.en.png)
 
 ## Metrics, Area Recalculation, and Compliance Matrix
 

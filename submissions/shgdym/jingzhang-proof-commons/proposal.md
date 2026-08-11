@@ -22,6 +22,10 @@ iteration: "v2.0"
 
 ![总体结构、三层范围与六道验证门](assets/figures/site-overview.png)
 
+鸟瞰图中的铁路公共脊、东西缝合、适应性建筑界面、蓝绿慢行环和三站锚点分别回指 `roads.geojson`、`buildings.geojson`、`green_space.geojson` 与 `public_space.geojson`。它只负责说明空间意图，不替代总平证据；每项判断仍以概念图层、指标和三站详细图谱为准。[data:geometry/roads.geojson#ROAD-SPINE] [depth:overall_spatial_structure]
+
+![总体鸟瞰与五类空间动作的图层对照](assets/figures/aerial-design-key.png)
+
 ## 设计依据与资料清单
 
 官方公告用于确认任务、三层范围文字描述、约面积和三处重点区域；智能体任务书用于确认三大定位、五大功能、三区两翼和 agent.1—agent.6；本地标准快照用于约束城市设计、控规和用地分类语言。当前总体边界与三处重点区均为 `provisional_constraint`，派生面积只用于包内一致性检查。正式 polygon 发布后，GeoJSON、指标、图纸、双语 HTML、A3/A0 与正文数值必须整链重建。[source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE]
@@ -98,6 +102,10 @@ AI原点形成“成果披露前台—开源协作首层—人才生活庭院—
 
 ![三处重点区概念总平、场景布点与实施依赖](assets/figures/key-areas.png)
 
+三站详细图谱把平面、公共剖面、运营程序和失败复原放在同一审查面上。众智园以有人值守的封闭测试环保护公众路径；AI原点以贯通首层和公共问题桌连接发布、协作与权利披露；大钟寺以到达十字和环形客厅分开试用、申诉与非AI服务。三种原型不是同一网格换名字，且都要求设备退出后公共空间继续成立。[data:geometry/buildings.geojson#BLDG-101] [data:geometry/public_space.geojson#LANDMARK-01] [depth:three_key_area_detailed_design]
+
+![三站平面、剖面、运营与复原对齐图谱](assets/figures/station-design-atlas.png)
+
 ## 交通、轨道、市政与公共服务设施
 
 一条南北公共验证慢行主轴、十条东西缝合通道和两条双翼服务路线构成概念网络。主轴优先步行与骑行；具身设备只在重点区限定时段、限定速度和有人工接管的路径内测试；缝合通道必须先完成现场交通、无障碍、桥下空间和产权核查。`ROAD-SPINE` 与 `ROAD-X01`—`ROAD-X10` 是概念中心线，不是道路红线或铁路设施。[data:geometry/roads.geojson#ROAD-SPINE] [metric:east_west_stitch_count]
@@ -111,6 +119,10 @@ AI原点形成“成果披露前台—开源协作首层—人才生活庭院—
 空间风貌不依赖发光屏幕或设备堆叠，而由铁路轨迹、雨洪种植、耐久铺装、可逆构架和连续首层形成识别。日常绿脉在设备撤离后仍须完整满足遮阴、停留、儿童与老年人通行；受控试场以围界、速度、声光和急停条件保护公众；城市试用区以有人服务和无AI路线保护选择权。绿色空间按生态、日常和测试三种使用状态排班，高温、暴雨、照明故障或无障碍中断时关闭技术功能但保留安全通行。正式绿线、水务、防洪、树木和海绵城市资料到位后，须重算绿地与公共空间并进行生态和工程专项复核。[standard:MOHURD-URBAN-DESIGN-MEASURES] [data:geometry/green_space.geojson#GREEN-001] [data:geometry/public_space.geojson#PUBLIC-SPINE]
 
 ![交通慢行、东西缝合与三类公共剖面](assets/figures/mobility-bluegreen.png)
+
+三类东西缝合剖面共享一条不可中断的公众路径，但受控活动层可按事故、天气、无障碍故障或许可状态单独关闭。现场无障碍审计、非AI等价服务、夜间安全、人工接管演练和失败复原构成连续性验收链；任一环节未闭合时，不开放相应技术功能。[standard:MOHURD-URBAN-DESIGN-MEASURES] [data:geometry/roads.geojson#ROAD-X01] [metric:east_west_stitch_count]
+
+![三类缝合剖面与无障碍连续性验收链](assets/figures/sections-accessibility.png)
 
 ## AI 创新生态、人才画像与 AI+ 场景
 
@@ -141,6 +153,10 @@ AI原点形成“成果披露前台—开源协作首层—人才生活庭院—
 
 ![标志系统、三处地标与公共组件目录](assets/figures/brand-landmarks.png)
 
+VI执行规范固定了标志构造、最小净空、最小数字尺寸、五种功能色、字体层级和三层公共信息。任何应用必须同时显示场景状态、权利信息和人工/非AI行动入口；禁止徽章化、企业背书、永久广告和隐藏暂停或退出状态。这样，品牌不是装饰，而是公众识别责任与选择权的统一界面。[source:AGENT-TASKBOOK] [metric:public_component_count]
+
+![开放识别系统的构造、色彩、字体、信息层级与禁用规则](assets/figures/identity-guidelines.png)
+
 ### 包容性：没有应用程序也能获得同等服务
 
 八类画像覆盖开发者、初创团队、高校师生、企业访客、周边居民、城市运营者、儿童照护者、老人及残障与非数字用户。连续无障碍路线、每400米以内概念休息节点、触觉和高对比信息、低眩光夜间照明、纸质和人工服务、无需人脸或智能手机的使用方式，是所有场景的进入条件。实际距离和设施位置须在正式边界与现场审计后复核。
@@ -169,6 +185,14 @@ AI原点形成“成果披露前台—开源协作首层—人才生活庭院—
 年度节奏为春季来源与开源周、夏季受控试场季、秋季全球证据论坛、冬季公众评估与归档月。开发者社区维护开放路线图，居民和目标用户参与问题定义，专业团队保留安全、法律和停止权；AI只承担资料整理、冲突提示和版本追踪。
 
 ![实施项目、资源级别、年度运营与三道准备门](assets/figures/implementation-roadmap.png)
+
+### 专业移交包：从概念成果进入下一道门
+
+每个项目进入受控试点前必须形成十项可签注移交件：正式资料差异报告、重点区现状底图、候选运营主体责任书、场景登记卡、安全论证、数据与权利影响检查、无障碍现场审计、全生命周期资源简报、失败复原方案、继续/修改/停止的门槛决定。缺少责任法人、专业批准、公众告知、人工接管、非数字服务、数据到期或复原资源中的任何一项，项目只能保留在研究状态。
+
+移交件不虚构授权：当前包只给出字段、责任角色、验收证据和失败动作，组织名称、签字、预算、保险、现场测量和批准状态保持待补。专业团队接手后可按 JZ-01—JZ-12 逐项签注，而不必从叙事文本重新拆解任务。[depth:phasing_implementation] [metric:renewal_project_count]
+
+![十二项目责任、资源、验收、停用与复原仪表板](assets/figures/delivery-dashboard.png)
 
 ## 指标体系、面积复算与合规矩阵
 

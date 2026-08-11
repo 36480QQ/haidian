@@ -912,6 +912,9 @@
       "drawings": [
         "assets/figures/site-overview.png",
         "assets/figures/brand-landmarks.png",
+        "assets/figures/aerial-design-key.png",
+        "assets/figures/identity-guidelines.png",
+        "assets/figures/regional-ecosystem.png",
         "drawings/a0-boards.pdf"
       ],
       "visual_sections": [
@@ -966,7 +969,8 @@
       ],
       "drawings": [
         "assets/figures/cases-mechanism.png",
-        "assets/figures/regional-ecosystem.png"
+        "assets/figures/regional-ecosystem.png",
+        "assets/figures/delivery-dashboard.png"
       ],
       "visual_sections": [
         "总览地图",
@@ -998,7 +1002,7 @@
       "title_zh": "场景卡、测试验证和画像",
       "mandatory": true,
       "report_sections": [
-        "十二张AI场景运营卡",
+        "AI 创新生态、人才画像与 AI+ 场景",
         "包容性：没有应用程序也能获得同等服务"
       ],
       "source_ids": [
@@ -1014,7 +1018,9 @@
         "persona_count"
       ],
       "drawings": [
-        "assets/figures/scenario-operations.png"
+        "assets/figures/scenario-operations.png",
+        "assets/figures/station-design-atlas.png",
+        "assets/figures/sections-accessibility.png"
       ],
       "visual_sections": [
         "总览地图",
@@ -1063,7 +1069,10 @@
       ],
       "drawings": [
         "assets/figures/key-areas.png",
-        "assets/figures/brand-landmarks.png"
+        "assets/figures/brand-landmarks.png",
+        "assets/figures/station-design-atlas.png",
+        "assets/figures/identity-guidelines.png",
+        "assets/figures/station-experiences.png"
       ],
       "visual_sections": [
         "总览地图",
@@ -1112,7 +1121,9 @@
         "green_ratio"
       ],
       "drawings": [
-        "assets/figures/mobility-bluegreen.png"
+        "assets/figures/mobility-bluegreen.png",
+        "assets/figures/aerial-design-key.png",
+        "assets/figures/sections-accessibility.png"
       ],
       "visual_sections": [
         "总览地图",
@@ -1144,8 +1155,10 @@
       "title_zh": "活动体系和长期运营",
       "mandatory": true,
       "report_sections": [
-        "十二项实施项目与三道准备门",
-        "风险、指标与复算"
+        "更新项目清单、实施政策与分期计划",
+        "专业移交包：从概念成果进入下一道门",
+        "指标体系、面积复算与合规矩阵",
+        "风险、版权与合规说明"
       ],
       "source_ids": [
         "AGENT-TASKBOOK"
@@ -1159,7 +1172,9 @@
         "phase_count"
       ],
       "drawings": [
-        "assets/figures/implementation-roadmap.png"
+        "assets/figures/implementation-roadmap.png",
+        "assets/figures/delivery-dashboard.png",
+        "drawings/a0-boards.pdf"
       ],
       "visual_sections": [
         "总览地图",
