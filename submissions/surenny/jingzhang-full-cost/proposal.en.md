@@ -7,7 +7,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "A bilingual professional design package that makes seven cost ledgers, one civic-return ledger and a refuse-to-sign closeout receipt the evidence gate before an AI scenario enters public space."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v0.3"
+iteration: "v0.4"
 ---
 
 # COUNT THE FULL COST JING-ZHANG
@@ -25,6 +25,8 @@ The design judgment is simple: before AI enters a city, space, energy and water,
 The full-cost ledger becomes a governance mechanism only when it can refuse expansion. Every AI scenario therefore produces a Closeout Receipt: authorization, a non-AI comparator, seven-cost snapshot, civic-return threshold, named human steward, affected-group review, accessibility check, appeal window, deletion record, exit-budget owner and physical-restoration plan must all be inspectable. One missing record stops accounting, preserves the staffed service, freezes expansion and publishes the repair-or-retire owner. A complete receipt permits professional review only; it never approves a field pilot [metric:closeout_receipt_case_count] [metric:closeout_receipt_stop_case_count] [depth:existing_conditions_diagnosis].
 
 `simulation.json` runs 24 offline synthetic cases across the twelve scenario cards: one complete-receipt branch and one missing-evidence stop branch per card. Expected and actual decisions match in 24/24 cases, all records are auditable, and no real personal data is used. This proves only that the rule is reproducible, not field performance, public acceptance, engineering feasibility or approval [metric:closeout_receipt_match_rate] [metric:audit_completeness] [data:simulation.json#full-cost-closeout-receipt-v1].
+
+The offline board's Refusal Desk turns the claim into an operable bilingual review entry. A reviewer selects the complete receipt or removes any record; the interface calculates from `visual/assets/closeout-review-data.js` and exposes the responsible role, affected people, spatial consequence, staffed fallback, and repair or retirement action. Selection and recalculation work by keyboard, while `noscript` gives the same rule as a static fallback. Running `node visual/assets/verify-closeout-review.js` verifies that the structured interface data maps one-to-one to the twelve missing-evidence fixtures in `simulation.json`. The interface neither copies nor replaces field evidence [data:simulation.json#full-cost-closeout-receipt-v1] [depth:risk_missing_data].
 
 ## Three-Level Scope Framework
 
