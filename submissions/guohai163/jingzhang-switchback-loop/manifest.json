@@ -179,7 +179,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "77a7880613edc135c278bc3eacca3315afad602cf8a62e523a6d2d3706d42c83"
+      "sha256": "3612649b6f17ae921ee4a872924fb1d9ed8a3058b635b97b9fa3feba4036773a"
     },
     {
       "path": "sources.json",
@@ -202,10 +202,11 @@
     }
   ],
   "validation_claim": {
+    "readiness_contract": "persisted-self-check-v1",
     "self_checked": true,
     "known_blockers": [],
     "data_confidence": "medium",
-    "self_check_tooling": "report/proposal.html rendered with the repository script scripts/render_proposal_html.py; deterministic package validation, trusted spatial review and professional evidence review were reproduced with dependency-free equivalents because shapely/pyproj were unavailable in the generating environment; visual packaging was checked with the repository scripts/visual_review.py logic. Maintainers should re-run the official self_check_submission.py.",
+    "self_check_tooling": "Persisted replay of scripts/self_check_submission.py --pr-author guohai163 (deterministic validation, spatial review with shapely+pyproj in EPSG:4548, visual packaging, professional evidence): Result PASS, review_status formal-review-ready, can_enter_formal_review YES. report/proposal.html was rendered with scripts/render_proposal_html.py.",
     "recompute_on_official_geometry": [
       "geometry/site_boundary.geojson",
       "geometry/key_areas.geojson",
