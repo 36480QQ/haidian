@@ -3,7 +3,7 @@
   "ledger_id": "RIGHTS-01",
   "title": "Jing-Zhang V2 file-level rights status ledger",
   "as_of": "2026-08-11",
-  "scope": "All 79 files declared by this submission, including manifest.json, this ledger, the source-rights evidence schema/instance, the implementation handoff matrix, the submission-use rights matrix, the twin-track, non-AI-first, urban-metabolism, and two key-area bilingual editable figure pairs, plus the three-file T-02 synthetic replay pack; 78 entries are non-manifest content files.",
+  "scope": "All 89 files declared by this submission, including manifest.json, this ledger, the source-rights evidence schema/instance, the implementation handoff matrix, the submission-use rights matrix, the twin-track, non-AI-first, urban-metabolism, failure-governance, climate-resilience, and two key-area bilingual editable figure pairs, plus the three-file T-02 synthetic replay pack; 88 entries are non-manifest content files.",
   "evidence_contract": {
     "source_rights_schema": "source-rights-evidence.schema.json",
     "source_rights_instance": "source-rights-evidence.json",
@@ -27,8 +27,8 @@
     "mixed_source_derivative_pending_independent_review": "The file combines package-authored material with repository or third-party source traces and remains pending independent review."
   },
   "file_coverage": {
-    "expected_manifest_entries": 84,
-    "expected_non_manifest_entries": 83,
+    "expected_manifest_entries": 89,
+    "expected_non_manifest_entries": 88,
     "coverage_rule": "Every manifest path appears in exactly one compatibility asset_group and exactly one asset_record. Path coverage and resolvable declared parent links do not equal an exhaustive dependency graph or legal clearance.",
     "asset_groups": [
       {
@@ -50,6 +50,7 @@
           "visual/assets/non-ai-parity-contract.json",
           "visual/assets/urban-metabolism-ledger.json",
           "visual/assets/failure-governance-register.json",
+          "visual/assets/climate-resilience-contract.json",
           "visual/assets/evidence-freshness-policy.json",
           "visual/assets/site-grounding-register.json",
           "visual/assets/pilot-readiness-register.json",
@@ -129,7 +130,7 @@
         "id": "RIGHTS-GROUP-05",
         "name": "Generated visual and publication outputs",
         "rights_status": "generated_derivative_pending_embedded_asset_audit",
-        "origin_basis": "Figures, PDFs, and offline HTML generated for this package from the bilingual narrative, structured evidence, and conceptual geometry. Six bilingual SVG pairs—key areas, key-area sections, twin-track overview, non-AI service blueprint, urban-metabolism ledger, and failure-governance writeback—are package-authored editable sources pending independent rights review; their paired PNG files are deterministic display exports.",
+        "origin_basis": "Figures, PDFs, and offline HTML generated for this package from the bilingual narrative, structured evidence, and conceptual geometry. Seven bilingual SVG pairs—key areas, key-area sections, twin-track overview, non-AI service blueprint, urban-metabolism ledger, failure-governance writeback, and climate-resilience corridor—are package-authored editable sources pending independent rights review; their paired PNG files are deterministic display exports.",
         "paths": [
           "drawings/a3-booklet.pdf",
           "drawings/a0-boards.pdf",
@@ -169,11 +170,15 @@
           "assets/figures/failure-governance-writeback.svg",
           "assets/figures/failure-governance-writeback.en.png",
           "assets/figures/failure-governance-writeback.en.svg",
+          "assets/figures/climate-resilience-corridor.png",
+          "assets/figures/climate-resilience-corridor.svg",
+          "assets/figures/climate-resilience-corridor.en.png",
+          "assets/figures/climate-resilience-corridor.en.svg",
           "assets/figures/innovation-system.en.png",
           "assets/figures/implementation-roadmap.en.png"
         ],
         "limits": [
-          "No standalone source font file is shipped by the package. The four PDFs contain embedded NotoSansSC subset font programs; the A3 PDFs also reference unembedded Helvetica. HTML requests system font stacks, and the concrete fonts resolved while rasterizing the twelve checked-in SVG files to PNG were not recorded. These facts do not establish license or embedding compliance.",
+          "No standalone source font file is shipped by the package. The four PDFs contain embedded NotoSansSC subset font programs; the A3 PDFs also reference unembedded Helvetica. HTML requests system font stacks, and the concrete fonts resolved while rasterizing the fourteen checked-in SVG files to PNG were not recorded. These facts do not establish license or embedding compliance.",
           "Editable package-authored SVG sources are declared for the bilingual key-areas, key-area-sections, site-overview, and non-ai-service-blueprint pairs. Editable sources exist for Markdown, HTML, JSON, and GeoJSON, but no separate editable vector or layout source is declared for every other PNG or PDF.",
           "The conceptual JZ logo grammar has not received trademark or production-brand clearance."
         ]
@@ -235,7 +240,7 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "d181c97607c7698249d54424fdb4ae571aa1152e7a0e7c27c1623e31fd23bef3",
+        "digest": "387c4a8651180050aa2cfa31e403e2c710dad797f8b058c42b70aaf55a6f523d",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -312,7 +317,7 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "eeb827d6180dbf8f595123e03442dec0a92ba67148007e281ea2a1416d32fedd",
+        "digest": "f45f5fc68d436b111bd98483592fe4d8701c67bc35c4e6e3b8c57cdc97b7ec8e",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -357,7 +362,7 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "1dd0f51876be28bf824b1692207764deec0e331c82bb0cda28fad1b07f4270bb",
+        "digest": "6219c3308b599eebd66b9b204fbe273c3497bee3922b7bf6921bab3b19862223",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -423,7 +428,7 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "2e8ef6b30c64e3eb0add54ff702bb7c01f11ed1e6eabd26c388359fe3d066e73",
+        "digest": "d24bbd47ee001ef80c052d9a9003b19ef2d26ffc827b50d8a8863fcc65328789",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -544,7 +549,7 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "48b31ba2de5dfb44ff52158257ee76b3cb7081dd16649ad586788ea719647cc9",
+        "digest": "0d8f3ec8da18367e24e6f94d990a083444d9dcd03d12a5af3a268fdb07eebb06",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -591,7 +596,7 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "a7f5a925c02a025cf2f7aa53e712edd40e7814c4c7037faf4a90c3eebbbb8be2",
+        "digest": "88b3d5a8194fdeafa8537cc85798043ace7bdc8976afa0b763781c0143ba9535",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -1186,7 +1191,7 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "f2d8234b90bd375114efa4c635124112f6eedc51f6ab6ff6e9ad7ef0261393d1",
+        "digest": "440561b33b58c99e168c7e9b83eb7401c4562c86e7946fabc4a579e6e553de12",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -1414,7 +1419,7 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "a0478ec0c9e42cf41acf121581409dde0fd8a443e948e7bbccd0686d2ceeebed",
+        "digest": "b1fc3ba3b89608ad813280defa079dc04b623d6d2510107d8f042fb451f2c1a8",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -1506,7 +1511,7 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "e035f7fe5f7c72006e8aa77a5f642dead217d3f41c6338856866c8171ad70352",
+        "digest": "37443eab4ef1026f30e8f16e3a9690c254c080efd2920d2a5becf615f7891839",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -1554,7 +1559,7 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "41860e9e7bebf6c3d2093d23969f427e99a50ee406c5360ae09b6e53a99bfb44",
+        "digest": "5f3e425b318a5ede3addb672fbf249eee196ed604cd69a0af1a279120665aafc",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -1605,7 +1610,7 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "b4511a418e7144f133d0e005264d7786688e7ee78fad36a89e33ca36bdd653c2",
+        "digest": "ccda6705564dd44e4e3ab859ebdceec38448f89ea05364becfe299d2127324f4",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -1674,7 +1679,7 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "40d62076801177f8445768b96ce3888d2e76c98b7f4004249d0ab50b6ef22cc3",
+        "digest": "25b02b20a485b45019896fc51ace2c28e6704a4c501926a58ed2b368bd1bd9f3",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -1739,7 +1744,7 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "7ede1ff43fd0bfae4fbf3c59f5d5fa45728bbcaa5b978896d92c3b80a7f712de",
+        "digest": "71a4f98fa8302d2b58d1d700cb0a61a91b19249ed3d0d879ddb92dbe0179f93e",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -2776,7 +2781,7 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "5c89d2e20585843a25dcd1f593ecd5775a3e209b169871d69e7e88a4809af5d8",
+        "digest": "5a5974af056cc5e4d4d86242898520bc0db94f545e7ffa60c1d61c55b947b64c",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -2853,7 +2858,7 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "365fb00c2051b667fff6f0fdc81421e9613efee4e105ec2ee07ccdaee98df207",
+        "digest": "1a068b2d7ff2eabd32015cfd3d6ed3cffe7e47aaa476813ac7c6cf27501c38f4",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -2945,7 +2950,7 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "476dc1fd9605a827be764501c4a1004924d8e7937fe620c5386c9039163aa828",
+        "digest": "fe26dfe24f2ac8bf2dc34ab593bf803eb35d79e489cc788bb16bd9805dd28f67",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -3014,7 +3019,7 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "e32593612b01688fb85b5eaa6385ec5be9757781d7c7e195f9d3a01ecaadc5db",
+        "digest": "c24cbf055b835e02f3e7f92fe276dd53a76ab180221ac5ecade78a687f6f73a7",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -3083,7 +3088,7 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "16fa45c69ce1445ae8c58759c0371128ffcccac49545bd0d2bc1deeea720c35f",
+        "digest": "f3cf28899551041cfc6efa745cbc99230f32f3f7b7b3a76dcbba48d4789335c3",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -4826,6 +4831,271 @@
         "status": "package_authored_svg_editable_source",
         "evidence_ref": "../../report/narrative.md#第-6-轮反脆弱失败治理增量--round-6-antifragile-failure-governance-increment",
         "limitation": "The SVG is a conceptual failure-governance and three-carrier writeback diagram, not a real incident record, operating authorization, field recovery, or retirement approval; font resolution and independent rights review remain pending."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-04"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-085",
+      "path": "visual/assets/climate-resilience-contract.json",
+      "role": "public_interest_evidence",
+      "language": null,
+      "asset_class": "structured_evidence_contract",
+      "origin_status": "self_declared_origin_pending_independent_review",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "96b991fec855f645a27a324e2bf608148f1b3152b17c147dfabf0af37a93647e",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 must be computed from the final staged Git blob and equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [
+          "AGENT-TASKBOOK"
+        ],
+        "parent_asset_refs": [
+          "proposal.md",
+          "proposal.en.md",
+          "metrics.json",
+          "assumptions.json",
+          "visual/assets/key-area-evidence-matrix.json",
+          "visual/assets/non-ai-parity-contract.json",
+          "visual/assets/urban-metabolism-ledger.json",
+          "visual/assets/failure-governance-register.json"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX",
+        "TOOL-PYTHON"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "structured_editable_source",
+        "evidence_ref": "../../report/narrative.md#第-7-轮气候韧性增量--round-7-climate-resilience-increment",
+        "limitation": "The contract records G0 spatial relationships, same-task prompting, typed future field anchors, stop/exit, and explicit unknowns. It is not a field survey, thermal or hydraulic result, activity approval, installed system, operating service, or rights clearance."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-05"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-086",
+      "path": "assets/figures/climate-resilience-corridor.png",
+      "role": "proposal_figure",
+      "language": "zh",
+      "asset_class": "raster_figure",
+      "origin_status": "generated_derivative_pending_embedded_asset_audit",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "3593c54f71173ec44a30af15ab57cabc08f1b3479fdea61fc8a22f03b10311a4",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 must be computed from the final staged Git blob and equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [
+          "AGENT-TASKBOOK"
+        ],
+        "parent_asset_refs": [
+          "proposal.md",
+          "visual/assets/climate-resilience-contract.json",
+          "visual/assets/key-area-evidence-matrix.json",
+          "assets/figures/climate-resilience-corridor.svg"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX",
+        "TOOL-CHROME"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "deterministic_export_from_package_authored_svg",
+        "evidence_ref": "../../assets/figures/climate-resilience-corridor.svg",
+        "limitation": "Displayed pixels explain a G0 concept relationship only; renderer-resolved font files and independent rights review remain pending."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-04"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-087",
+      "path": "assets/figures/climate-resilience-corridor.en.png",
+      "role": "proposal_figure",
+      "language": "en",
+      "asset_class": "raster_figure",
+      "origin_status": "generated_derivative_pending_embedded_asset_audit",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "d7e0367511f1896739ad81991dcc335ac7678a4fb04e9f2f4e3fd6f33cfe9aad",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 must be computed from the final staged Git blob and equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [
+          "AGENT-TASKBOOK"
+        ],
+        "parent_asset_refs": [
+          "proposal.en.md",
+          "visual/assets/climate-resilience-contract.json",
+          "visual/assets/key-area-evidence-matrix.json",
+          "assets/figures/climate-resilience-corridor.en.svg"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX",
+        "TOOL-CHROME"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "deterministic_export_from_package_authored_svg",
+        "evidence_ref": "../../assets/figures/climate-resilience-corridor.en.svg",
+        "limitation": "Displayed pixels explain a G0 concept relationship only; renderer-resolved font files and independent rights review remain pending."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-04"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-088",
+      "path": "assets/figures/climate-resilience-corridor.svg",
+      "role": "proposal_figure_editable_source",
+      "language": "zh",
+      "asset_class": "generated_visual_source",
+      "origin_status": "package_authored_editable_source_pending_independent_review",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "8b61dfa5c44cef7929c111109a615d6886115bbbd9eaa01ef677774a26a40505",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 must be computed from the final staged Git blob and equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [
+          "AGENT-TASKBOOK"
+        ],
+        "parent_asset_refs": [
+          "proposal.md",
+          "visual/assets/climate-resilience-contract.json",
+          "visual/assets/key-area-evidence-matrix.json"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "package_authored_svg_editable_source",
+        "evidence_ref": "../../report/narrative.md#第-7-轮气候韧性增量--round-7-climate-resilience-increment",
+        "limitation": "The SVG is a conceptual climate relationship and future-measurement diagram, not an exact site, built facility, thermal or hydraulic result, activity approval, or operating service; font resolution and independent rights review remain pending."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-04"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-089",
+      "path": "assets/figures/climate-resilience-corridor.en.svg",
+      "role": "proposal_figure_editable_source",
+      "language": "en",
+      "asset_class": "generated_visual_source",
+      "origin_status": "package_authored_editable_source_pending_independent_review",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "dbf40aa6cfae31a78d55bbc160dcf9dd4c4d6e58ed363bb8ca5386740b63208b",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 must be computed from the final staged Git blob and equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [
+          "AGENT-TASKBOOK"
+        ],
+        "parent_asset_refs": [
+          "proposal.en.md",
+          "visual/assets/climate-resilience-contract.json",
+          "visual/assets/key-area-evidence-matrix.json"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "package_authored_svg_editable_source",
+        "evidence_ref": "../../report/narrative.md#第-7-轮气候韧性增量--round-7-climate-resilience-increment",
+        "limitation": "The SVG is a conceptual climate relationship and future-measurement diagram, not an exact site, built facility, thermal or hydraulic result, activity approval, or operating service; font resolution and independent rights review remain pending."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
