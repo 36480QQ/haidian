@@ -1,3 +1,12 @@
+## v0.15.3 - 2026-08-11
+
+迁移 self_check.json 至新版验证器格式（零内容变更）：
+
+- 新增顶层 `ok=true`、`can_enter_formal_review=true`
+- 新增四门 blocking 级 gate 记录（DETERMINISTIC_VALIDATION / SPATIAL_REVIEW / VISUAL_PACKAGING / PROFESSIONAL_EVIDENCE，均 result=pass），消除"legacy package accepted for intake"迁移警告
+- 原 PROFESSIONAL_EVIDENCE 明细保留为 PROFESSIONAL_EVIDENCE_DETAIL（可追溯性不变）
+- 同步 manifest SHA-256
+
 ## v0.15.2 - 2026-08-11
 
 清除确定性验证的软性警告（零语义变更）：
