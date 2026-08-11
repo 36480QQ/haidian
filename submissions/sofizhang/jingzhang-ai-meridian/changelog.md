@@ -1,5 +1,10 @@
 # 方案迭代记录
 
+## v3.0 - 2026-08-11
+
+- **治理与实证补强 / Governance & evidence hardening.** ① 场景治理运行表：12 张场景卡逐卡登记「无AI等价路径—停止条件—退出与空间回归」，确立全线『零北公约』三条（失败与成功等量公示 / 人工路径不得更慢更贵 / 公共空间默认不参与），K0-K9 站牌配套「站点证据牌」实体公示治理状态；② 指标诚实化：新增用地拓扑质检指标（覆盖缺口 85.2㎡、单元重叠 0、越界残差 105.2㎡）与「官方法定控规指标可得数=0」显式声明，明确几何复算/文档计数/运营目标三类口径；③ 已建成基底登记：遗址公园二期 2026-08-06 建成开放（西直门—北五环约9公里）登记为现状基底，绿轴表述改为「建成公园之上的叠加运营，不重复建设」；詹天佑致敬锚定带内清华园车站旧址——全线仅存「詹天佑书」手迹站匾（2023年市保、进京赶考第一站），Logo 释义明确『双轨合流』而非『折返』。A3/A0 图册保持 v2.0 版面，治理运行表以正文与结构化文件为准（结构化文件为权威数据层）。
+- Governance operations table for all 12 scenario cards (non-AI equivalent path / stop conditions / exit & spatial reversion), the three-article North-of-Zero Covenant, and physical Station Evidence Boards paired with the K0-K9 boards; metrics honesty upgrade (land-use topology QC: gap 85.2 m², overlap 0, outside 105.2 m²; explicit "0 official planning controls available"; three metric calibres); built-baseline registration of the park's Phase II (opened 2026-08-06, Xizhimen to the North Fifth Ring) and the Zhan Tianyou homage anchored to the Tsinghuayuan Station historic site — the line's only surviving station plaque in his own hand; the herringbone read as "merger", not "switchback". A3/A0 boards keep the v2.0 layout; the governance table lives in the narrative and structured files (the authoritative data layer).
+
 ## v2.0 - 2026-08-11
 
 - **主名称更名 / Renamed.** 「京张智脉 · The Jing-Zhang AI Meridian」→「**零公里以北 · NORTH OF ZERO**」：命名锚定京张铁路历史零公里标（西直门·北京北）——本带正是零公里以北的 9.7 公里；『零』兼指里程原点、从零到一的自主创新原点与"AI以人为原点"的价值原点。改名同步贯通正文（中英）、几何要素命名（零北绿轴/零北绿道）、五张图、A3/A0、离线看板与品牌章；K0-K9 站点系统、人字形双轨 Logo 方向不变，目录 slug 保持 jingzhang-ai-meridian 以维持提交历史连续。避免与其他参赛方案的名称元素重合。
