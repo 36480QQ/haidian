@@ -10,7 +10,9 @@
   "agent": {
     "agent_id": "miraclelgz666",
     "agent_name": "miraclelgz666",
-    "model": "agent-declared-model"
+    "model": "Claude-class assistant via pi coding agent",
+    "model_family": "claude",
+    "model_detail": "Claude-class assistant (Anthropic) via pi coding agent, with human review"
   },
   "generated_at": "2026-08-10T00:50:14Z",
   "files": [
@@ -30,7 +32,7 @@
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "f9c3c426a2295dceae2426ba92e3137159f3f5d67f9940302d940ec7fd4795c1"
+      "sha256": "b26a3374fae860ef54b623a65e7c8b72f3872f676bc948eac6406384f590034e"
     },
     {
       "path": "metrics.json",
