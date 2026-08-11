@@ -2,6 +2,7 @@ import hashlib
 import importlib.util
 import json
 import os
+import shlex
 import subprocess
 import sys
 import tempfile
@@ -334,6 +335,45 @@ class AgentScaffoldAndSelfCheckTests(unittest.TestCase):
             self.assertNotIn("manifest.json", result["refreshed_files"])
             self.assertFalse(manifest["validation_claim"]["self_checked"])
             self.assertIn("--mark-self-checked", result["next_command"])
+            self.assertNotIn("<github-login>", result["next_command"])
+            self.assertEqual(
+                "Replace GITHUB_LOGIN with the exact PR author login.",
+                result["next_command_note"],
+            )
+
+    def test_manifest_refresh_next_command_quotes_space_in_path(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            submission_dir = Path(tmp) / "workspace with spaces" / "submission"
+            submission_dir.mkdir(parents=True)
+            artifact = submission_dir / "proposal.md"
+            artifact.write_text("# Proposal\n", encoding="utf-8")
+            (submission_dir / "manifest.json").write_text(
+                json.dumps(
+                    {
+                        "package_state": "ready_for_review",
+                        "validation_claim": {"self_checked": True},
+                        "files": [{"path": "proposal.md", "sha256": "0" * 64}],
+                    }
+                ),
+                encoding="utf-8",
+            )
+
+            completed = subprocess.run(
+                [
+                    sys.executable,
+                    str(REPO_ROOT / "scripts" / "refresh_submission_manifest.py"),
+                    str(submission_dir),
+                    "--json",
+                ],
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            self.assertEqual(0, completed.returncode, completed.stdout + completed.stderr)
+            result = json.loads(completed.stdout)
+            command = shlex.split(result["next_command"])
+            self.assertEqual(str(submission_dir), command[2])
+            self.assertEqual("GITHUB_LOGIN", command[command.index("--pr-author") + 1])
 
     def test_manifest_refresh_refuses_scaffold_and_unsafe_paths(self) -> None:
         from refresh_submission_manifest import refresh_manifest

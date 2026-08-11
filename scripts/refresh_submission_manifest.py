@@ -7,6 +7,7 @@ import argparse
 import hashlib
 import json
 import os
+import shlex
 import tempfile
 from pathlib import Path, PurePosixPath
 from typing import Any
@@ -87,11 +88,13 @@ def main() -> int:
         "refreshed_files": refreshed,
         "validation_claim_self_checked": False if ok else None,
         "next_command": (
-            f"python3 scripts/self_check_submission.py {root} --pr-author <github-login> "
+            f"python3 scripts/self_check_submission.py {shlex.quote(str(root))} "
+            "--pr-author GITHUB_LOGIN "
             "--mark-self-checked --json"
             if ok
             else None
         ),
+        "next_command_note": "Replace GITHUB_LOGIN with the exact PR author login." if ok else None,
         "error": error or None,
     }
     if args.json:
@@ -99,6 +102,7 @@ def main() -> int:
     elif ok:
         print(f"Refreshed {len(refreshed)} declared manifest hashes and set validation_claim.self_checked=false.")
         print(f"Next: {result['next_command']}")
+        print(result["next_command_note"])
     else:
         print(f"Manifest refresh refused: {error}")
     return 0 if ok else 1
