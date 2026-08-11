@@ -17,11 +17,11 @@ iteration: "v1.0"
 
 ## Design Basis and Source Inventory
 
-This proposal is primarily based on the "Centennial Jingzhang AI Innovation Belt Urban Design International Open Call Prequalification Announcement" published by the Haidian Branch of the Beijing Municipal Planning and Natural Resources Commission [source:OFFICIAL-ANNOUNCEMENT], supplemented by the agent-facing taskbook excerpt [source:AGENT-TASKBOOK]. The proposal references the provisional boundaries, key areas, enumerations, metrics, and source inventories registered in `brief/site-package/` as machine-readable evidence [source:SITE-PACKAGE].
+This proposal is primarily based on the "Centennial Jingzhang AI Innovation Belt Urban Design International Open Call Prequalification Announcement" published by the Haidian Branch of the Beijing Municipal Planning and Natural Resources Commission [source:official-announcement], supplemented by the agent-facing taskbook excerpt [source:agent-taskbook]. The proposal references the provisional boundaries, key areas, enumerations, metrics, and source inventories registered in `brief/site-package/` as machine-readable evidence [source:site-package].
 
 The site extends from the North Fifth Ring Road in the north to the Beijing-Zhangjiakou Expressway in the east, Xizhimen Outer Street in the south, and Wanquanhe Road in the west. The coordinated research area covers approximately 43.6 km², the overall design area approximately 11.4 km², and the key detailed design area approximately 368.4 hectares. The three key areas from north to south are the Zhongzhiyuan AI Self-Innovation Acceleration Area (approx. 192.1 ha), Beijing AI Origin Community (approx. 104.3 ha), and Dazhongsi AI Industry Cluster (approx. 72.0 ha) [data:geometry/site_boundary.geojson#SITE-001] [data:geometry/key_areas.geojson#zhongzhiyuan_ai_acceleration_area].
 
-**Provisional Boundary Statement:** The site boundaries used in this proposal are provisional rough boundaries (provisional boundary), derived from the announcement's textual descriptions and area constraints [source:BOUNDARY-SOURCE]. These boundaries must not be used as official redlines, approval bases, or precise area calculation bases. When official precise boundaries are published, all layer areas and metrics must be recalculated.
+**Provisional Boundary Statement:** The site boundaries used in this proposal are provisional rough boundaries (provisional boundary), derived from the announcement's textual descriptions and area constraints [source:provisional-boundary]. These boundaries must not be used as official redlines, approval bases, or precise area calculation bases. When official precise boundaries are published, all layer areas and metrics must be recalculated.
 
 All spatial recommendations are conceptual suggestions, reference schemes, or materials for professional teams to deepen—they do not replace formal planning and do not constitute government-approved conclusions [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
 
@@ -31,7 +31,7 @@ All spatial recommendations are conceptual suggestions, reference schemes, or ma
 
 ### Coordinated Research Area (approx. 43.6 km²)
 
-The coordinated research area covers the Jingzhang Railway corridor and surrounding areas in Haidian District. The work objective is to study the industrial synergy, regional linkage, and future urban forms of a world-class AI innovation ecosystem. This level focuses on strategic research, industry mapping, and innovation network analysis, without involving specific spatial design [source:OFFICIAL-ANNOUNCEMENT].
+The coordinated research area covers the Jingzhang Railway corridor and surrounding areas in Haidian District. The work objective is to study the industrial synergy, regional linkage, and future urban forms of a world-class AI innovation ecosystem. This level focuses on strategic research, industry mapping, and innovation network analysis, without involving specific spatial design [source:official-announcement].
 
 ### Overall Design Area (approx. 11.4 km²)
 
@@ -55,7 +55,7 @@ The key detailed design area conducts refined design for the three key areas. Th
 
 ### Overall Concept and Naming System
 
-The proposal introduces "AI Origin · Jingzhang Spine" as the overall concept name. "AI Origin" echoes the core positioning of the Beijing AI Origin Community, symbolizing the origin of urban innovation in the AI era; "Jingzhang Spine" echoes the historical and cultural spine of the century-old Jingzhang Railway, symbolizing an urban axis connecting past and future [source:AGENT-TASKBOOK].
+The proposal introduces "AI Origin · Jingzhang Spine" as the overall concept name. "AI Origin" echoes the core positioning of the Beijing AI Origin Community, symbolizing the origin of urban innovation in the AI era; "Jingzhang Spine" echoes the historical and cultural spine of the century-old Jingzhang Railway, symbolizing an urban axis connecting past and future [source:agent-taskbook].
 
 The naming system includes: the main name "AI Origin · Jingzhang Spine"; the three zones named "Zhongzhi Acceleration," "Origin Community," and "Dazhongsi AI Valley"; the two wings named "Zhongguancun Service Wing" and "Xiaoyuehe Scenario Wing."
 
@@ -63,13 +63,13 @@ The logo direction uses the Jingzhang Railway track gauge as a visual motif, fus
 
 ### Three Orientations, Five Functions, and Three-Zone Two-Wing Synergy
 
-The three orientations are: Centennial Jingzhang Cultural Belt, Urban AI Life Experience Belt, and AI Convergence Innovation Belt [source:AGENT-TASKBOOK]. The five functions are: AI Full-Stack Self-Innovation System, World-Class AI Innovation Ecosystem, AI+ Scenario Empowerment New Paradigm, Intelligent AI Vitality City, and AI Governance Global Voice.
+The three orientations are: Centennial Jingzhang Cultural Belt, Urban AI Life Experience Belt, and AI Convergence Innovation Belt [source:agent-taskbook]. The five functions are: AI Full-Stack Self-Innovation System, World-Class AI Innovation Ecosystem, AI+ Scenario Empowerment New Paradigm, Intelligent AI Vitality City, and AI Governance Global Voice.
 
-The core logic of the three-zone two-wing synergy loop: Zhongzhiyuan Acceleration Area is responsible for AI full-stack self-innovation and technology verification; AI Origin Community for innovation ecosystem cultivation and talent agglomeration; Dazhongsi Industry Cluster for industrial transformation and commercial application; Zhongguancun Service Wing for capital, IP, and internationalization factor allocation; Xiaoyuehe Scenario Wing for scenario testing and urban experience [source:AGENT-TASKBOOK].
+The core logic of the three-zone two-wing synergy loop: Zhongzhiyuan Acceleration Area is responsible for AI full-stack self-innovation and technology verification; AI Origin Community for innovation ecosystem cultivation and talent agglomeration; Dazhongsi Industry Cluster for industrial transformation and commercial application; Zhongguancun Service Wing for capital, IP, and internationalization factor allocation; Xiaoyuehe Scenario Wing for scenario testing and urban experience [source:agent-taskbook].
 
 ### Global AI Innovation Ecosystem Case Studies
 
-The following 6 global cases provide spatial and operational references for the proposal [source:AGENT-TASKBOOK]:
+The following 6 global cases provide spatial and operational references for the proposal [source:agent-taskbook]:
 
 1. **Silicon Valley Sand Hill Road**: Venture capital agglomeration model, inspiring the capital empowerment mechanism of the Zhongguancun Service Wing
 2. **London King's Cross**: Railway heritage regeneration model, inspiring the vitality activation strategy of Jingzhang Heritage Park
@@ -140,7 +140,7 @@ The renewal strategy adopts a "retain-renovate-new" classification. Historical J
 
 ### AI Scenario Cards (12)
 
-The following scenario cards map to spatial locations, service targets, operational data, privacy boundaries, and operational mechanisms [source:AGENT-TASKBOOK]:
+The following scenario cards map to spatial locations, service targets, operational data, privacy boundaries, and operational mechanisms [source:agent-taskbook]:
 
 | ID | Scenario Name | Spatial Location | Service Target | Privacy Boundary |
 |----|---------------|-----------------|----------------|-----------------|
@@ -157,7 +157,7 @@ The following scenario cards map to spatial locations, service targets, operatio
 | SC-11 | AI Community Governance | AI Origin Community | Community residents | Transparent governance |
 | SC-12 | AI International Communication | Three-zone landmark nodes | International visitors | Manual content review |
 
-Among these, SC-06, SC-08, and SC-10 are AI industry testing and verification scenarios [source:AGENT-TASKBOOK].
+Among these, SC-06, SC-08, and SC-10 are AI industry testing and verification scenarios [source:agent-taskbook].
 
 ## Land Use, Building Scale, and Renewal Strategy
 
@@ -191,7 +191,7 @@ The proposal proposes a distributed AI computing network, with an AI computing i
 
 ### Jingzhang Heritage Park Vitality Belt
 
-The Jingzhang Heritage Park green spine is the core public space of the proposal [data:geometry/green_space.geojson#GS-001] [data:geometry/land_use.geojson#LU-004]. The proposal presents an "east-west stitching, north-south connection" strategy: east-west direction stitches urban functions on both sides of the railway through slow-mobility connections; north-south direction connects the three zones through the main axis [source:AGENT-TASKBOOK].
+The Jingzhang Heritage Park green spine is the core public space of the proposal [data:geometry/green_space.geojson#GS-001] [data:geometry/land_use.geojson#LU-004]. The proposal presents an "east-west stitching, north-south connection" strategy: east-west direction stitches urban functions on both sides of the railway through slow-mobility connections; north-south direction connects the three zones through the main axis [source:agent-taskbook].
 
 ### Blue-Green Space System
 
@@ -217,7 +217,7 @@ The proposal is implemented in three phases [data:geometry/phasing.geojson]:
 
 ### Global AI Innovation Activity System
 
-The proposal presents an annual activity system: Spring "AI Origin Forum," Summer "Jingzhang AI Marathon," Autumn "Zhongguancun AI Industry Summit," Winter "AI City Experience Festival." The activity brand uses "AI Origin" as the core IP, supported by developer community operations and scenario open operation mechanisms [source:AGENT-TASKBOOK].
+The proposal presents an annual activity system: Spring "AI Origin Forum," Summer "Jingzhang AI Marathon," Autumn "Zhongguancun AI Industry Summit," Winter "AI City Experience Festival." The activity brand uses "AI Origin" as the core IP, supported by developer community operations and scenario open operation mechanisms [source:agent-taskbook].
 
 All activities, investment attraction, funding, and policy arrangements are conceptual suggestions and are not expressed as confirmed government arrangements [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
 
@@ -240,7 +240,7 @@ All activities, investment attraction, funding, and policy arrangements are conc
 | Road Segment Count | 8 | count | geometry/roads.geojson |
 | Phase Count | 3 | count | geometry/phasing.geojson |
 
-All areas and ratios are recalculated from GeoJSON in EPSG:4548 [source:SITE-PACKAGE]. The green ratio [metric:green_ratio] and public space ratio [metric:public_space_ratio] reflect the people-oriented spatial allocation strategy. Building density [metric:building_density] indicates a low-density innovation community. Floor area ratio, building height, and other regulatory indicators are recorded as unknown due to missing official regulatory conditions [assumption:A-CONTROLS-001]. The three key areas [metric:key_area_count] correspond to the announcement requirements.
+All areas and ratios are recalculated from GeoJSON in EPSG:4548 [source:site-package]. The green ratio [metric:green_ratio] and public space ratio [metric:public_space_ratio] reflect the people-oriented spatial allocation strategy. Building density [metric:building_density] indicates a low-density innovation community. Floor area ratio, building height, and other regulatory indicators are recorded as unknown due to missing official regulatory conditions [assumption:A-CONTROLS-001]. The three key areas [metric:key_area_count] correspond to the announcement requirements.
 
 ![Core Metrics Recalculation and Evidence Chain](assets/figures/metrics-evidence.en.png)
 
@@ -248,11 +248,11 @@ All areas and ratios are recalculated from GeoJSON in EPSG:4548 [source:SITE-PAC
 
 ### Data Legality
 
-All materials in this proposal come from public sources or user-provided and rights-cleared materials [source:SITE-PACKAGE] [source:SOURCE-REGISTRY]. No non-public planning documents, non-public spatial data, internal regulatory indicators, or personal privacy information were used [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
+All materials in this proposal come from public sources or user-provided and rights-cleared materials [source:site-package] [source:source-registry]. No non-public planning documents, non-public spatial data, internal regulatory indicators, or personal privacy information were used [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
 
 ### Provisional Boundary Limitations
 
-The site boundaries used in this proposal are provisional rough boundaries and must not be used as official redlines, approval bases, or precise area calculation bases [source:BOUNDARY-SOURCE]. When official precise boundaries are published, all layer areas and metrics must be recalculated.
+The site boundaries used in this proposal are provisional rough boundaries and must not be used as official redlines, approval bases, or precise area calculation bases [source:provisional-boundary]. When official precise boundaries are published, all layer areas and metrics must be recalculated.
 
 ### AI Generation Responsibility
 
@@ -264,7 +264,7 @@ Detailed copyright statement is in `report/copyright_statement.md`.
 
 ## References
 
-The following references are the primary public materials that influenced the design decisions in this proposal. The complete machine-readable index is in `sources.json` and the three matrix files. The core design basis comes from the official announcement [source:OFFICIAL-ANNOUNCEMENT], which defines the project's three-level scope, three key areas, and the main design task requirements. The agent-facing taskbook [source:AGENT-TASKBOOK] provides six mandatory tasks, ten co-creation principles, and the continuous participation and collaboration mechanism. The site boundary data comes from provisional rough boundaries [source:BOUNDARY-SOURCE], derived by maintainers from the announcement's textual descriptions and area constraints, and must not be used as an official redline or precise area basis. Urban design depth references the Ministry of Housing and Urban-Rural Development's "Urban Design Management Measures" [standard:MOHURD-URBAN-DESIGN-MEASURES], regulatory planning depth references the "Regulatory Detailed Planning Compilation and Approval Measures" [standard:MOHURD-CONTROL-DETAILED-PLANNING], and land-use classification references the Ministry of Natural Resources' classification guide [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]. AI-generated content follows the "Generative AI Service Management Interim Measures" [standard:GENERATIVE-AI-INTERIM-MEASURES]. The authority, timeliness, and review status of all materials are based on `data/source_registry.json` [source:SOURCE-REGISTRY]. When official precise boundaries and regulatory conditions are published, all layer areas and metrics must be recalculated, and statutory control indicators must be supplemented [assumption:A-CONTROLS-001].
+The following references are the primary public materials that influenced the design decisions in this proposal. The complete machine-readable index is in `sources.json` and the three matrix files. The core design basis comes from the official announcement [source:official-announcement], which defines the project's three-level scope, three key areas, and the main design task requirements. The agent-facing taskbook [source:agent-taskbook] provides six mandatory tasks, ten co-creation principles, and the continuous participation and collaboration mechanism. The site boundary data comes from provisional rough boundaries [source:provisional-boundary], derived by maintainers from the announcement's textual descriptions and area constraints, and must not be used as an official redline or precise area basis. Urban design depth references the Ministry of Housing and Urban-Rural Development's "Urban Design Management Measures" [standard:MOHURD-URBAN-DESIGN-MEASURES], regulatory planning depth references the "Regulatory Detailed Planning Compilation and Approval Measures" [standard:MOHURD-CONTROL-DETAILED-PLANNING], and land-use classification references the Ministry of Natural Resources' classification guide [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]. AI-generated content follows the "Generative AI Service Management Interim Measures" [standard:GENERATIVE-AI-INTERIM-MEASURES]. The authority, timeliness, and review status of all materials are based on `data/source_registry.json` [source:source-registry]. When official precise boundaries and regulatory conditions are published, all layer areas and metrics must be recalculated, and statutory control indicators must be supplemented [assumption:A-CONTROLS-001].
 
 1. Haidian Branch, Beijing Municipal Planning and Natural Resources Commission, "Centennial Jingzhang AI Innovation Belt Urban Design International Open Call Prequalification Announcement," May 9, 2026
 2. Agent-facing open call taskbook excerpt (user-provided, cleared)
