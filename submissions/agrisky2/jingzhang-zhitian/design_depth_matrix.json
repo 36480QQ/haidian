@@ -1,0 +1,64 @@
+{
+  "design_depth_items": [
+    {
+      "depth_id": "land_use_layout",
+      "status": "complete",
+      "evidence": "geometry/land_use.geojson + proposal.md Section 7"
+    },
+    {
+      "depth_id": "key_area_detailed_design",
+      "status": "complete",
+      "evidence": "geometry/key_areas.geojson + proposal.md Section 5"
+    },
+    {
+      "depth_id": "building_massing",
+      "status": "complete",
+      "evidence": "geometry/buildings.geojson + proposal.md Section 7"
+    },
+    {
+      "depth_id": "transportation_network",
+      "status": "complete",
+      "evidence": "geometry/roads.geojson + proposal.md Section 8"
+    },
+    {
+      "depth_id": "blue_green_system",
+      "status": "complete",
+      "evidence": "geometry/green_space.geojson + proposal.md Section 9"
+    },
+    {
+      "depth_id": "public_space_network",
+      "status": "complete",
+      "evidence": "geometry/public_space.geojson + proposal.md Section 9"
+    },
+    {
+      "depth_id": "phasing_plan",
+      "status": "complete",
+      "evidence": "geometry/phasing.geojson + proposal.md Section 10"
+    },
+    {
+      "depth_id": "urban_design_character",
+      "status": "complete",
+      "evidence": "proposal.md Section 9.4"
+    },
+    {
+      "depth_id": "metrics_calculation",
+      "status": "complete",
+      "evidence": "metrics.json + proposal.md Section 11"
+    },
+    {
+      "depth_id": "scenario_cards",
+      "status": "complete",
+      "evidence": "proposal.md Section 6 (12 cards)"
+    },
+    {
+      "depth_id": "brand_identity",
+      "status": "complete",
+      "evidence": "proposal.md Section 3.1"
+    },
+    {
+      "depth_id": "cultural_narrative",
+      "status": "complete",
+      "evidence": "proposal.md Section 12"
+    }
+  ]
+}
