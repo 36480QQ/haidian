@@ -32,18 +32,33 @@
     {
       "check_id": "PROFESSIONAL_EVIDENCE",
       "result": "pass",
-      "severity": "major",
-      "target": "proposal.md",
-      "message": "Proposal includes references to standards, design depth items, geometry, metrics, sources, and assumptions."
+      "severity": "blocking",
+      "target": "submission package",
+      "message": "persisted PROFESSIONAL_EVIDENCE gate: pass"
+    },
+    {
+      "check_id": "DETERMINISTIC_VALIDATION",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "submission package",
+      "message": "persisted DETERMINISTIC_VALIDATION gate: pass"
+    },
+    {
+      "check_id": "SPATIAL_REVIEW",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "submission package",
+      "message": "persisted SPATIAL_REVIEW gate: pass"
+    },
+    {
+      "check_id": "VISUAL_PACKAGING",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "submission package",
+      "message": "persisted VISUAL_PACKAGING gate: pass"
     }
   ],
   "ok": true,
   "can_enter_formal_review": true,
-  "review_status": "formal-review-ready",
-  "gates": {
-    "DETERMINISTIC_VALIDATION": "pass",
-    "PROFESSIONAL_EVIDENCE": "pass",
-    "SPATIAL_REVIEW": "pass",
-    "VISUAL_PACKAGING": "pass"
-  }
+  "review_status": "formal-review-ready"
 }
