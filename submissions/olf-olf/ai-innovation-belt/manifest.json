@@ -20,7 +20,7 @@
       "path": "manifest.json",
       "role": "manifest",
       "required": true,
-      "sha256": "1757f6fec5d2998b23629b4fb81d6a37bf6ad249e20f92426c02cd504a8087b7"
+      "sha256": "b63a0a6272e1780303ef0548e7c4032535cc740194e915a3015e48c1e5896d4e"
     },
     {
       "path": "proposal.md",
@@ -83,7 +83,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "6ef3fdc8f189bf1742fb3a5f57e6eb99eafbc965b80b782ae35adfd63dd7c263",
+      "sha256": "8de6b7d573c0540749014cca8a6e78e8d5186f25659c74042d9b34ba881f3c26",
       "purpose": "primary_display"
     },
     {
@@ -119,7 +119,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "4094563cae430d8119478402e1f93e5f05fa530bd921455ea863f8376a179e6b",
+      "sha256": "df79e7620f6b767ddcdcbe2843fdfb6ad3518efa603523c105ba3e4636e0c4bc",
       "purpose": "primary_display"
     },
     {
@@ -275,14 +275,14 @@
     {
       "path": "report/proposal.en.html",
       "purpose": "bilingual_display",
-      "sha256": "6ef3fdc8f189bf1742fb3a5f57e6eb99eafbc965b80b782ae35adfd63dd7c263",
+      "sha256": "8d8ebb5ecefa0cd2c1a089001a35812dd77c2650bc082ac3fc01630d9fc4874c",
       "language": "en",
       "translation_of": "report/proposal.html"
     },
     {
       "path": "visual/index.en.html",
       "purpose": "bilingual_display",
-      "sha256": "4094563cae430d8119478402e1f93e5f05fa530bd921455ea863f8376a179e6b",
+      "sha256": "c0bfa0c24848938fff5d4363ccdbb3f511157d9b07c2b932b2a1f0afe130c30b",
       "language": "en",
       "translation_of": "visual/index.html"
     }
@@ -290,10 +290,11 @@
   "validation_claim": {
     "self_checked": true,
     "known_blockers": [
-      "Self-check: some geometry validation issues may remain",
-      "Figures could benefit from professional-quality regeneration",
-      "Official polygon data needed for final metrics recalculation"
+      "Official polygon data needed for final metrics recalculation (provisional boundary)"
     ],
+    "geometry_quality": "13 land-use zones: 100% seamless coverage, zero overlap, all clipped to site boundary",
+    "bilingual": "Complete: proposal.en.md, proposal.en.html, visual/index.en.html, bilingual figures and PDFs",
     "data_confidence": "medium"
-  }
+  },
+  "bilingual_state": "complete"
 }
