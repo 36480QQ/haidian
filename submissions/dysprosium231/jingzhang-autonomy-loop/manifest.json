@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "8c84d3de3812f40a0930743869a6879229032380076fc134850529fb5e52cbff"
+      "sha256": "132bed6180a55a25c78870d1884e2a7295e9e5490e62f4cda721c73cb543efe2"
     },
     {
       "path": "agent.json",
@@ -38,7 +38,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "a19d0bf6739606a4f0538d6b22ef39ba5cdfb0e208395ec4ffb7ad80e3c9e009"
+      "sha256": "c30cc53aea0438c46d31fc20f6062b9de442bddd1d2b84350b698843280d2755"
     },
     {
       "path": "assumptions.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "d35649fe4ec2164bdf0375fe96f8559c0c24c3e0dc6f6411fae8b7e9826f659d"
+      "sha256": "e875ce8d20aee77e75fb69c8988d24b1347bfac4de0ac04e8cdb3647b37834ab"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "26767ffb33d0e4b3f52dd9fcd883f32119f7427fdd7f5003ae798939205fb6a5"
+      "sha256": "3eb5d6c6e1369d3e8f387dbb0de6fd94b71157fc68bd9e8f86a9de1f7a75c5bf"
     },
     {
       "path": "report/narrative.md",
@@ -100,14 +100,14 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "19169f64a8dd993f763152f3f824fb96c0c15e19e3a46e108478a134eec40306"
+      "sha256": "046095ea76f28f1699366732a22670ff901fe9c7ed696fbb300db7fb6b97a388"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "41476216772790ab1f4d32a948c86fe2c1dd8128b9ba798d92d772a9e1bb58be"
+      "sha256": "8052d0991b284cb67a156c45a53e343d97ee99c7b492be05ac859453b459ac77"
     },
     {
       "path": "visual/index.html",
@@ -155,7 +155,7 @@
       "path": "geometry/buildings.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "8d9a64753ca4a146db56ce928c801b3f4afc6c923ead6d5ad3c2ad97fd3b91a7"
+      "sha256": "9412246084522bd0734c936a0919f3ed526a089c05f68dd1370b4bea8312ed18"
     },
     {
       "path": "geometry/constraints.geojson",
@@ -173,7 +173,7 @@
       "path": "geometry/key_areas.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "6a1b929e8df46744870bef4fbf2b39782951134e6a73bb011e7140765b73e058"
+      "sha256": "e858ac7bff7a39136558894e74df062286214bdc13ce085dbd07cc72a07b673f"
     },
     {
       "path": "geometry/land_use.geojson",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "e7022f0fbe3a7ae530ef405dd79219a32691434f3e981924701c789a2d9fe56e"
+      "sha256": "2e1962b0799e28ccf55460cec0070b1db100656159f7dcd99d0c7d3d4817c45d"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "a3c1f9a29fd5d655932b040b2c6cccc9f6510cdd87b3dbb30f81d1e782fc6124"
+      "sha256": "a1a53359f8451b0d267a5020f08506a6165fb003e29aef56d39103c2a28762a6"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -227,7 +227,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "4a497ff72042f7311852f236f755a26fc4774baf9085c3fe96494bb2262d8ca3"
+      "sha256": "fd184a4edae6ee8ae4fe8543e9075963bdd7b24a58f639b003822fc659185140"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -235,7 +235,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "b405e0025402fc644b6040b1300f1dee2949ee36090f332fea57b7cf6e583c9b"
+      "sha256": "9303df0b6fcf4d394c92f478714fbd656d39a03f03ebd69f72aef7947f3b09d4"
     },
     {
       "path": "visual/index.en.html",
@@ -290,6 +290,7 @@
     "self_checked": true,
     "known_blockers": [],
     "data_confidence": "medium",
-    "data_confidence_note_zh": "空间指标复算置信度高，但底图为临时约束范围，官方边界发布后必须整体重算；容积率、建筑高度等管控指标缺失，保持待正式数据补齐。"
+    "data_confidence_note_zh": "空间指标复算置信度高，但底图为临时约束范围，官方边界发布后必须整体重算；容积率、建筑高度等管控指标缺失，保持待正式数据补齐。",
+    "readiness_contract": "persisted-self-check-v1"
   }
 }

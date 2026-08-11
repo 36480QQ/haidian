@@ -1,89 +1,203 @@
 {
+  "ok": true,
+  "submission_dir": "submissions\\dysprosium231\\jingzhang-autonomy-loop",
+  "pr_author": "dysprosium231",
+  "stage": "formal",
+  "deterministic_validation": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "errors": [],
+      "warnings": [
+        "submissions/dysprosium231/jingzhang-autonomy-loop/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied"
+      ],
+      "proposal_files": [
+        "submissions/dysprosium231/jingzhang-autonomy-loop/proposal.md"
+      ],
+      "changelog_files": [
+        "submissions/dysprosium231/jingzhang-autonomy-loop/changelog.md"
+      ],
+      "changed_files": [
+        "submissions/dysprosium231/jingzhang-autonomy-loop/agent.json",
+        "submissions/dysprosium231/jingzhang-autonomy-loop/assets/figures/key-areas.en.png",
+        "submissions/dysprosium231/jingzhang-autonomy-loop/assets/figures/key-areas.png",
+        "submissions/dysprosium231/jingzhang-autonomy-loop/assets/figures/land-use-structure.en.png",
+        "submissions/dysprosium231/jingzhang-autonomy-loop/assets/figures/land-use-structure.png",
+        "submissions/dysprosium231/jingzhang-autonomy-loop/assets/figures/metrics-evidence.en.png",
+        "submissions/dysprosium231/jingzhang-autonomy-loop/assets/figures/metrics-evidence.png",
+        "submissions/dysprosium231/jingzhang-autonomy-loop/assets/figures/mobility-bluegreen.en.png",
+        "submissions/dysprosium231/jingzhang-autonomy-loop/assets/figures/mobility-bluegreen.png",
+        "submissions/dysprosium231/jingzhang-autonomy-loop/assets/figures/site-overview.en.png",
+        "submissions/dysprosium231/jingzhang-autonomy-loop/assets/figures/site-overview.png",
+        "submissions/dysprosium231/jingzhang-autonomy-loop/assumptions.json",
+        "submissions/dysprosium231/jingzhang-autonomy-loop/changelog.md",
+        "submissions/dysprosium231/jingzhang-autonomy-loop/compliance_matrix.json",
+        "submissions/dysprosium231/jingzhang-autonomy-loop/design_depth_matrix.json",
+        "submissions/dysprosium231/jingzhang-autonomy-loop/drawings/a0-boards.en.pdf",
+        "submissions/dysprosium231/jingzhang-autonomy-loop/drawings/a0-boards.pdf",
+        "submissions/dysprosium231/jingzhang-autonomy-loop/drawings/a3-booklet.en.pdf",
+        "submissions/dysprosium231/jingzhang-autonomy-loop/drawings/a3-booklet.pdf",
+        "submissions/dysprosium231/jingzhang-autonomy-loop/geometry/buildings.geojson",
+        "submissions/dysprosium231/jingzhang-autonomy-loop/geometry/constraints.geojson",
+        "submissions/dysprosium231/jingzhang-autonomy-loop/geometry/green_space.geojson",
+        "submissions/dysprosium231/jingzhang-autonomy-loop/geometry/key_areas.geojson",
+        "submissions/dysprosium231/jingzhang-autonomy-loop/geometry/land_use.geojson",
+        "submissions/dysprosium231/jingzhang-autonomy-loop/geometry/phasing.geojson",
+        "submissions/dysprosium231/jingzhang-autonomy-loop/geometry/public_space.geojson",
+        "submissions/dysprosium231/jingzhang-autonomy-loop/geometry/roads.geojson",
+        "submissions/dysprosium231/jingzhang-autonomy-loop/geometry/site_boundary.geojson",
+        "submissions/dysprosium231/jingzhang-autonomy-loop/manifest.json",
+        "submissions/dysprosium231/jingzhang-autonomy-loop/metrics.json",
+        "submissions/dysprosium231/jingzhang-autonomy-loop/proposal.en.md",
+        "submissions/dysprosium231/jingzhang-autonomy-loop/proposal.md",
+        "submissions/dysprosium231/jingzhang-autonomy-loop/report/copyright_statement.md",
+        "submissions/dysprosium231/jingzhang-autonomy-loop/report/narrative.md",
+        "submissions/dysprosium231/jingzhang-autonomy-loop/report/proposal.en.html",
+        "submissions/dysprosium231/jingzhang-autonomy-loop/report/proposal.html",
+        "submissions/dysprosium231/jingzhang-autonomy-loop/self_check.json",
+        "submissions/dysprosium231/jingzhang-autonomy-loop/sources.json",
+        "submissions/dysprosium231/jingzhang-autonomy-loop/standard_matrix.json",
+        "submissions/dysprosium231/jingzhang-autonomy-loop/visual/index.en.html",
+        "submissions/dysprosium231/jingzhang-autonomy-loop/visual/index.html"
+      ],
+      "ai_package_stages": {
+        "submissions/dysprosium231/jingzhang-autonomy-loop": "formal"
+      },
+      "total_bytes": 11367655,
+      "maintainer_bypass": false
+    },
+    "stderr": ""
+  },
+  "spatial_review": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "stage": "formal",
+      "issues": [
+        {
+          "check_id": "KEY_AREA_PROVISIONAL",
+          "severity": "minor",
+          "target_file": "geometry/key_areas.geojson",
+          "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
+          "target_feature_id": "PROV-KEY-001",
+          "expected": null,
+          "actual": null
+        },
+        {
+          "check_id": "KEY_AREA_PROVISIONAL",
+          "severity": "minor",
+          "target_file": "geometry/key_areas.geojson",
+          "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
+          "target_feature_id": "PROV-KEY-002",
+          "expected": null,
+          "actual": null
+        },
+        {
+          "check_id": "KEY_AREA_PROVISIONAL",
+          "severity": "minor",
+          "target_file": "geometry/key_areas.geojson",
+          "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
+          "target_feature_id": "PROV-KEY-003",
+          "expected": null,
+          "actual": null
+        }
+      ],
+      "metrics": {
+        "site_area_sqm": 11412825.386,
+        "green_space_area_sqm": 1689811.818,
+        "public_space_area_sqm": 465643.198,
+        "building_footprint_area_sqm": 627176.361,
+        "green_ratio": 0.148063,
+        "public_space_ratio": 0.0408
+      }
+    },
+    "stderr": ""
+  },
+  "visual_review": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "issues": [],
+      "metrics_seen": {
+        "site_area_sqm": 11412825.386,
+        "green_ratio": 0.148063,
+        "public_space_ratio": 0.0408,
+        "building_density": 0.054954,
+        "slow_mobility_spine_length_m": 9720.685,
+        "key_detailed_design_area_sqm": 3692893.007,
+        "land_use_polygon_count": 30.0,
+        "east_west_stitch_count": 6.0
+      }
+    },
+    "stderr": ""
+  },
+  "professional_review": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "issues": [],
+      "summary": {
+        "standard_matrix_items": 6,
+        "design_depth_items": 15,
+        "known_metric_refs_required": 45,
+        "proposal_format_version": "2",
+        "evidence_contract": "section-anchors-plus-structured-audit",
+        "proposal_reference_counts": {
+          "source": 19,
+          "standard": 6,
+          "depth": 15,
+          "data": 21,
+          "metric": 50
+        }
+      }
+    },
+    "stderr": ""
+  },
+  "spatial_issue_ids": [
+    "KEY_AREA_PROVISIONAL",
+    "KEY_AREA_PROVISIONAL",
+    "KEY_AREA_PROVISIONAL"
+  ],
+  "visual_issue_ids": [],
+  "professional_issue_ids": [],
+  "missing_review_dependencies": [],
+  "can_enter_formal_review": true,
+  "package_type": "professional_design_package",
+  "review_status": "formal-review-ready",
+  "next_actions": [],
   "schema_version": "0.1.0",
   "checks": [
     {
-      "check_id": "BOUNDARY_TRUST",
-      "result": "pass",
-      "severity": "major",
-      "target": "geometry/site_boundary.geojson",
-      "message": "提交边界为 provisional_constraint、official_boundary=false，并在正文、可视化、来源与假设中同步标注；官方红线发布后必须整体重算。"
-    },
-    {
-      "check_id": "KEY_AREAS_TRUST",
-      "result": "pass",
-      "severity": "major",
-      "target": "geometry/key_areas.geojson",
-      "message": "三处重点区均为临时约束范围，面积与公告口径一致但边界走向为粗略化结果，不得作为地块或道路红线。"
-    },
-    {
-      "check_id": "LAND_USE_TOPOLOGY",
+      "check_id": "DETERMINISTIC_VALIDATION",
       "result": "pass",
       "severity": "blocking",
-      "target": "geometry/land_use.geojson",
-      "message": "30 个用地面完整覆盖提交边界，生成时缺口 0 平方米、重叠 0 平方米。"
+      "target": "validate_local_submission.py",
+      "message": "deterministic_validation: PASS"
     },
     {
-      "check_id": "METRIC_RECOMPUTE",
-      "result": "pass",
-      "severity": "major",
-      "target": "metrics.json",
-      "message": "全部 known 空间指标由 EPSG:4548 复算得到，与 spatial_review.py 的独立复算一致。"
-    },
-    {
-      "check_id": "CONTROL_INDICATORS_UNKNOWN",
-      "result": "pass",
-      "severity": "minor",
-      "target": "metrics.json",
-      "message": "容积率、建筑高度、绿地率控制、退线与道路用地比例保持 unknown，未用推测值冒充审定指标。"
-    },
-    {
-      "check_id": "TASK_COVERAGE",
+      "check_id": "SPATIAL_REVIEW",
       "result": "pass",
       "severity": "blocking",
-      "target": "compliance_matrix.json",
-      "message": "公告 1.3/1.4/1.5 与 agent.1-agent.6 全部任务在矩阵与正文中均有响应。"
+      "target": "spatial_review.py",
+      "message": "spatial_review: PASS"
     },
     {
-      "check_id": "SCENARIO_COUNTS",
-      "result": "pass",
-      "severity": "major",
-      "target": "proposal.md",
-      "message": "场景卡 12 张（含产业测试验证 4 个）、用户画像 6 类、朝圣地标与荣誉展示节点 3 处，均达到任务书下限。"
-    },
-    {
-      "check_id": "BILINGUAL_PACKAGE",
+      "check_id": "VISUAL_PACKAGING",
       "result": "pass",
       "severity": "blocking",
-      "target": "proposal.en.md",
-      "message": "中文主稿与英文对照稿章节、指标、图位一一对应；报告 HTML、可视化 HTML、A3/A0 与含文字图件均提供英文副本。"
+      "target": "visual_review.py",
+      "message": "visual_review: PASS"
     },
     {
-      "check_id": "VISUAL_STATIC",
+      "check_id": "PROFESSIONAL_EVIDENCE",
       "result": "pass",
       "severity": "blocking",
-      "target": "visual/index.html",
-      "message": "离线静态页面，无远程脚本、地图瓦片、外部字体、iframe、表单与埋点。"
-    },
-    {
-      "check_id": "COPYRIGHT_CLEAN",
-      "result": "pass",
-      "severity": "blocking",
-      "target": "report/copyright_statement.md",
-      "message": "全部图件由本包 GeoJSON 与 metrics 程序化绘制，未使用第三方图片、商标、字体文件、肖像或论文图像。"
-    },
-    {
-      "check_id": "NO_APPROVAL_CLAIM",
-      "result": "pass",
-      "severity": "blocking",
-      "target": "proposal.md",
-      "message": "全部空间落地建议均表述为概念建议、参考方案或可供专业团队深化研究，未出现审批、投资或实施承诺表述。"
-    },
-    {
-      "check_id": "EXTERNAL_CASE_SCOPE",
-      "result": "pass",
-      "severity": "minor",
-      "target": "sources.json",
-      "message": "六个国际案例标注 usable_for_formal=no，仅作定性机制参照。"
+      "target": "professional_review.py",
+      "message": "professional_review: PASS"
     }
   ]
 }

@@ -321,6 +321,51 @@
         "A-BUILDING-001"
       ]
     },
+    "building_type_variety_count": {
+      "status": "known",
+      "value": 13,
+      "unit": "count",
+      "source_files": [
+        "geometry/buildings.geojson"
+      ],
+      "formula": "count(distinct building_type)",
+      "confidence": "low",
+      "assumptions": [
+        "A-BOUNDARY-001",
+        "A-BUILDING-001"
+      ],
+      "note_zh": "建筑功能类型取自场地包 building_types 枚举，用于区分研发、孵化、人才居住与社区服务的空间供给。"
+    },
+    "ai_research_building_count": {
+      "status": "known",
+      "value": 65,
+      "unit": "count",
+      "source_files": [
+        "geometry/buildings.geojson"
+      ],
+      "formula": "count(buildings where building_type in [ai_r_and_d, lab, incubator])",
+      "confidence": "low",
+      "assumptions": [
+        "A-BOUNDARY-001",
+        "A-BUILDING-001"
+      ],
+      "note_zh": "承担研发、中试与孵化的基底数量，用于核对科研用地上的空间供给是否成立。"
+    },
+    "talent_housing_building_count": {
+      "status": "known",
+      "value": 34,
+      "unit": "count",
+      "source_files": [
+        "geometry/buildings.geojson"
+      ],
+      "formula": "count(buildings where building_type in [talent_apartment, residential])",
+      "confidence": "low",
+      "assumptions": [
+        "A-BOUNDARY-001",
+        "A-BUILDING-001"
+      ],
+      "note_zh": "人才公寓与居住基底数量，用于检验“研发与人才住房同步供给”的判断。"
+    },
     "phase_count": {
       "status": "known",
       "value": 3,
