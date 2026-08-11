@@ -9,6 +9,7 @@
 :root{--rail-dark:#1a1e23;--rail-grey:#3d444d;--copper:#b87333;--copper-light:#d4956b;--signal:#2d7a3a;--cream:#f5f0e8;--paper:#faf8f4;--white:#fff;--ink:#1a1e23;--muted:#6b7280;--border:#d1c9b8;--blueprint:#1e3a5f;--shadow:0 4px 12px rgba(26,30,35,.1);--radius:10px}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 body{font-family:Arial,"Helvetica Neue",sans-serif;background:var(--cream);color:var(--ink);line-height:1.65;-webkit-font-smoothing:antialiased}
 a{color:inherit}.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
 .topbar{background:var(--rail-dark);color:var(--cream);border-bottom:3px solid var(--copper);padding:10px 0;font:700 13px/1.4 "Courier New",monospace}

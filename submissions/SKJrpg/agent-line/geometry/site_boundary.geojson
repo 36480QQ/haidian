@@ -1,6 +1,8 @@
 {
   "type": "FeatureCollection",
-  "name": "site_boundary_scaffold",
+  "name": "site_boundary_provisional",
+  "geojson_exchange_crs": "EPSG:4326",
+  "area_calculation_crs": "EPSG:4548",
   "features": [
     {
       "type": "Feature",
