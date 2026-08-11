@@ -89,7 +89,7 @@
       "value": 6,
       "unit": "count",
       "source_files": [
-        "assets/data/ground-language.json"
+        "visual/assets/data/ground-language.json"
       ],
       "formula": "count(glyphs)",
       "confidence": "high",
@@ -102,7 +102,7 @@
       "value": 12,
       "unit": "count",
       "source_files": [
-        "assets/data/scenarios.json"
+        "visual/assets/data/scenarios.json"
       ],
       "formula": "count(scenarios)",
       "confidence": "high",
@@ -115,7 +115,7 @@
       "value": 3,
       "unit": "count",
       "source_files": [
-        "assets/data/scenarios.json"
+        "visual/assets/data/scenarios.json"
       ],
       "formula": "count(scenarios where kind = testing_and_validation)",
       "confidence": "high",
@@ -128,7 +128,7 @@
       "value": 100,
       "unit": "m",
       "source_files": [
-        "assets/data/operations.json"
+        "visual/assets/data/operations.json"
       ],
       "formula": "conceptual lower bound selected for reversible pilot planning",
       "confidence": "medium",
@@ -142,7 +142,7 @@
       "value": 200,
       "unit": "m",
       "source_files": [
-        "assets/data/operations.json"
+        "visual/assets/data/operations.json"
       ],
       "formula": "conceptual upper bound selected to keep the first public pilot reversible and supervised",
       "confidence": "medium",
