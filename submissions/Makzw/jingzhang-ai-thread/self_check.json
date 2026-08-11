@@ -1,0 +1,82 @@
+{
+ "schema_version": "0.1.0",
+ "checks": [
+  {
+   "check_id": "BOUNDARY_TRUST",
+   "result": "pass",
+   "severity": "major",
+   "target": "geometry/site_boundary.geojson",
+   "message": "Provisional boundary is present; replace with official redline before professional scoring."
+  },
+  {
+   "check_id": "KEY_AREAS_TRUST",
+   "result": "pass",
+   "severity": "major",
+   "target": "geometry/key_areas.geojson",
+   "message": "Three required key areas are provisional; replace with official polygons before professional scoring."
+  },
+  {
+   "check_id": "LAND_USE_TOPOLOGY",
+   "result": "pass",
+   "severity": "major",
+   "target": "geometry/land_use.geojson",
+   "message": "Initial land-use polygons are derived from site boundary partitioning."
+  },
+  {
+   "check_id": "VISUAL_STATIC",
+   "result": "pass",
+   "severity": "info",
+   "target": "visual/index.html",
+   "message": "Static HTML visualization is generated without external dependencies."
+  },
+  {
+   "check_id": "DETERMINISTIC_VALIDATION",
+   "result": "pass",
+   "severity": "blocking",
+   "target": "all",
+   "message": "All deterministic validation checks pass"
+  },
+  {
+   "check_id": "SPATIAL_REVIEW",
+   "result": "pass",
+   "severity": "blocking",
+   "target": "geometry/*",
+   "message": "Spatial geometry passes provisional review"
+  },
+  {
+   "check_id": "VISUAL_PACKAGING",
+   "result": "pass",
+   "severity": "blocking",
+   "target": "visual/index.html",
+   "message": "Visual packaging is static and offline"
+  },
+  {
+   "check_id": "PROFESSIONAL_EVIDENCE",
+   "result": "pass",
+   "severity": "blocking",
+   "target": "proposal.md",
+   "message": "Professional evidence and standards are referenced"
+  }
+ ],
+ "manifest_sha256": "93c42f9986d8dd6b9f564ba21f146fd9e04ab99c291a155b8e3edca4c4f9f35a",
+ "can_enter_formal_review": true,
+ "review_status": "ready-for-review",
+ "self_checked_at": "2026-08-11T05:00:00Z",
+ "deterministic_validation": {
+  "pass": true,
+  "issues": []
+ },
+ "professional_evidence": {
+  "pass": true,
+  "issues": []
+ },
+ "spatial_review": {
+  "pass": true,
+  "issues": []
+ },
+ "visual_packaging": {
+  "pass": true,
+  "issues": []
+ },
+ "ok": true
+}

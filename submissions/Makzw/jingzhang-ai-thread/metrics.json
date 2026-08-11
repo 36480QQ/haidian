@@ -1,0 +1,223 @@
+{
+ "schema_version": "0.1.0",
+ "generated_at": "2026-08-11",
+ "units": {
+  "length": "m",
+  "area": "sqm",
+  "ratio": "ratio"
+ },
+ "design_concept_zh": "智脉京张 - 沿京张铁路三层主题带 + 中关村/小月河两翼",
+ "area_calculation_crs": "EPSG:4548",
+ "metrics": {
+  "total_site_area": {
+   "status": "known",
+   "value": 1141.2825,
+   "unit": "ha",
+   "source_files": [
+    "geometry/site_boundary.geojson"
+   ],
+   "formula": "polygon_area(SITE-BOUNDARY-001) / 10000  (computed in EPSG:4548)",
+   "confidence": "high",
+   "assumptions": [
+    "Site boundary is provisional rough (DATA-SRC-PROVISIONAL-BOUNDARIES-20260605)."
+   ]
+  },
+  "total_site_area_sqm": {
+   "status": "known",
+   "value": 11412825.3856,
+   "unit": "sqm",
+   "source_files": [
+    "geometry/site_boundary.geojson"
+   ],
+   "formula": "polygon_area(SITE-BOUNDARY-001)  (computed in EPSG:4548)",
+   "confidence": "high",
+   "assumptions": [
+    "Site boundary is provisional rough."
+   ]
+  },
+  "key_areas_total_area": {
+   "status": "known",
+   "value": 369.2893,
+   "unit": "ha",
+   "source_files": [
+    "geometry/key_areas.geojson"
+   ],
+   "formula": "sum(polygon_area(key_area)) / 10000  (computed in EPSG:4548)",
+   "confidence": "high",
+   "assumptions": [
+    "Key areas are provisional rectangles, not official boundaries."
+   ]
+  },
+  "land_use_breakdown": {
+   "status": "known",
+   "value": 20,
+   "unit": "sqm+ha+ratio",
+   "source_files": [
+    "geometry/land_use.geojson",
+    "geometry/site_boundary.geojson"
+   ],
+   "formula": "sum(polygon_area(group_by(land_use_code))) and ratio = area / total_site_area",
+   "confidence": "medium",
+   "assumptions": [
+    "Land-use polygons are designed partitions (not statutory); they tile the SITE polygon with shared edges.",
+    "Coverage: 20 land-use polygons covering all of PROV-SITE-001."
+   ]
+  },
+  "green_space_ratio": {
+   "status": "known",
+   "value": 0.1211,
+   "unit": "ratio",
+   "source_files": [
+    "geometry/green_space.geojson",
+    "geometry/site_boundary.geojson"
+   ],
+   "formula": "sum(polygon_area(GREEN_SPACE)) / total_site_area",
+   "confidence": "medium",
+   "assumptions": [
+    "Green-space polygons are designed overlay, may overlap with land-use green polygons (LU-002/003/013/018)."
+   ],
+   "note": "Includes railway green corridor + 3 central parks + community gardens + buffer greens."
+  },
+  "public_space_ratio": {
+   "status": "known",
+   "value": 0.016682,
+   "unit": "ratio",
+   "source_files": [
+    "geometry/public_space.geojson",
+    "geometry/site_boundary.geojson"
+   ],
+   "formula": "public_area/site_area",
+   "confidence": "medium",
+   "assumptions": []
+  },
+  "road_network_length": {
+   "status": "known",
+   "value": 80.106,
+   "unit": "km",
+   "source_files": [
+    "geometry/roads.geojson"
+   ],
+   "formula": "sum(line_length(roads)) / 1000  (computed in EPSG:4548)",
+   "confidence": "medium",
+   "assumptions": [
+    "Centerlines are designed, not red-line geometries."
+   ]
+  },
+  "green_network_length": {
+   "status": "known",
+   "value": 20.645,
+   "unit": "km",
+   "source_files": [
+    "geometry/roads.geojson"
+   ],
+   "formula": "sum(line_length(roads where road_type=慢行绿道|greenway)) / 1000  (computed in EPSG:4548)",
+   "confidence": "medium",
+   "assumptions": [
+    "Only slow-traffic greenways counted; railway green corridor counted under green_space."
+   ]
+  },
+  "building_footprint_total": {
+   "status": "known",
+   "value": 92.21,
+   "unit": "ha",
+   "source_files": [
+    "geometry/buildings.geojson"
+   ],
+   "formula": "sum(polygon_area(BUILDING_FOOTPRINT)) / 10000  (computed in EPSG:4548)",
+   "confidence": "medium",
+   "assumptions": [
+    "32 illustrative footprints, not full block-by-block coverage."
+   ]
+  },
+  "floor_area_ratio_estimate": {
+   "status": "known",
+   "value": 0.9001,
+   "unit": "ratio",
+   "source_files": [
+    "geometry/buildings.geojson",
+    "geometry/site_boundary.geojson"
+   ],
+   "formula": "sum(footprint_area * floor_count) / total_site_area",
+   "confidence": "medium",
+   "assumptions": [
+    "GFA estimated from illustrative 32 buildings × floor counts; not statutory FAR."
+   ]
+  },
+  "population_estimate": {
+   "status": "known",
+   "value": 341555,
+   "unit": "persons",
+   "source_files": [
+    "geometry/buildings.geojson"
+   ],
+   "formula": "0.55*GFA/25 (productive) + 0.45*GFA/40 (residential)",
+   "confidence": "low",
+   "assumptions": [
+    "Productive density 1 employee / 25 sqm GFA",
+    "Residential density 1 resident / 40 sqm GFA",
+    "55/45 productive/residential GFA split"
+   ]
+  },
+  "phasing_area_breakdown": {
+   "status": "known",
+   "value": 3,
+   "unit": "sqm+ha+ratio",
+   "source_files": [
+    "geometry/phasing.geojson",
+    "geometry/site_boundary.geojson"
+   ],
+   "formula": "sum(polygon_area(phase)) and ratio = area / total_site_area",
+   "confidence": "medium",
+   "assumptions": [
+    "Three phases overlap visually; sum may exceed 100% by design — phases are concurrent workfronts, not exclusive."
+   ]
+  },
+  "key_area_count": {
+   "status": "known",
+   "value": 3,
+   "unit": "count",
+   "source_files": [
+    "geometry/key_areas.geojson"
+   ],
+   "formula": "count(features where layer=KEY_AREA)",
+   "confidence": "high",
+   "assumptions": []
+  },
+  "feature_counts": {
+   "status": "known",
+   "value": 97,
+   "unit": "count",
+   "source_files": [
+    "geometry/*.geojson"
+   ],
+   "formula": "count(features)",
+   "confidence": "high",
+   "assumptions": []
+  },
+  "site_area_sqm": {
+   "status": "known",
+   "value": 11412825.386,
+   "unit": "sqm",
+   "source_files": [
+    "geometry/site_boundary.geojson"
+   ],
+   "formula": "polygon_area(site_boundary, EPSG:4548)",
+   "confidence": "high",
+   "assumptions": [
+    "provisional boundary"
+   ]
+  },
+  "green_ratio": {
+   "status": "known",
+   "value": 0.121079,
+   "unit": "ratio",
+   "source_files": [
+    "geometry/green_space.geojson",
+    "geometry/site_boundary.geojson"
+   ],
+   "formula": "green_area/site_area",
+   "confidence": "medium",
+   "assumptions": []
+  }
+ }
+}
