@@ -2,6 +2,34 @@
   "schema_version": "0.1.0",
   "checks": [
     {
+      "check_id": "DETERMINISTIC_VALIDATION",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "submissions/irisquirrel/jingzhang-civic-rhythm",
+      "message": "Submission package passes deterministic structure and integrity checks after migration to the current manifest contract."
+    },
+    {
+      "check_id": "SPATIAL_REVIEW",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "submissions/irisquirrel/jingzhang-civic-rhythm",
+      "message": "Spatial review completed; provisional geometry remains explicitly disclosed."
+    },
+    {
+      "check_id": "VISUAL_PACKAGING",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "submissions/irisquirrel/jingzhang-civic-rhythm",
+      "message": "Required visual package is present and reviewable."
+    },
+    {
+      "check_id": "PROFESSIONAL_EVIDENCE",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "proposal.md",
+      "message": "Proposal includes standards, design-depth, geometry, metrics, sources and assumptions evidence."
+    },
+    {
       "check_id": "BOUNDARY_TRUST",
       "result": "pass",
       "severity": "major",
@@ -30,18 +58,14 @@
       "message": "Static HTML visualization is generated without external dependencies."
     },
     {
-      "check_id": "PROFESSIONAL_EVIDENCE",
-      "result": "pass",
-      "severity": "major",
-      "target": "proposal.md",
-      "message": "Proposal includes references to standards, design depth items, geometry, metrics, sources, and assumptions."
-    },
-    {
       "check_id": "RHYTHM_TRACEABILITY",
       "result": "pass",
       "severity": "major",
       "target": "proposal.md",
       "message": "Five time protocols, three differentiated anchors and the heritage spine are traced across narrative, figures, visual, phasing and geometry properties."
     }
-  ]
+  ],
+  "ok": true,
+  "can_enter_formal_review": true,
+  "review_status": "formal-review-ready"
 }
