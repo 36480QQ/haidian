@@ -824,6 +824,53 @@
       {"test": "Documentation completeness cannot issue a field PASS or maturity upgrade.", "design_result": "pass", "field_result": "no_go_g0"}
     ]
   },
+  "antifragile_failure_governance_contract": {
+    "contract_id": "JZ-AIOS-FAILURE-GOVERNANCE-06",
+    "status": "concept_only_g0",
+    "authoritative_register_ref": "visual/assets/failure-governance-register.json#JZ-AIOS-FAILURE-GOVERNANCE-06",
+    "selected_work_packages": [
+      "failure_classification_and_stop_authority",
+      "three_carrier_state_writeback",
+      "appeal_changes_decision",
+      "independent_retest_and_append_only_versions",
+      "active_retirement_and_ordinary_use_restoration"
+    ],
+    "existing_carrier_refs": {
+      "scene_passport": "visual/assets/pilot-readiness-register.json#records",
+      "civic_timetable": "visual/assets/key-area-evidence-matrix.json#twin_track_frontend_contract.civic_timetable",
+      "evidence_matrix": "visual/assets/key-area-evidence-matrix.json#antifragile_failure_governance_contract"
+    },
+    "writeback_rule_zh": "暂停、复核、恢复、撤回和退役必须准备三载体同事件回写；缺失或冲突时向最保守的运行、授权和服务组合 fail-closed，成熟度不自动变化。",
+    "writeback_rule_en": "Pause, review, recovery, withdrawal, and retirement must prepare same-event writebacks across all three carriers. Missing or conflicting entries fail closed to the most conservative runtime, authorization, and service combination, without automatic maturity change.",
+    "four_axis_order": ["runtime_state", "maturity_gate", "authorization_state", "service_state"],
+    "append_only_evidence": true,
+    "appeal_must_affect_go_no_go": true,
+    "public_failure_disclosure_excludes_personal_or_sensitive_data": true,
+    "public_shame_or_failure_ranking_allowed": false,
+    "restart_requires": ["accountable decision role", "correction appended without overwriting prior evidence", "ordinary and non-AI path restored", "affected failure condition independently retested", "three carriers consistent", "authorization scope separately confirmed"],
+    "retirement_requires": ["service and authorization state closed", "component and data destinations", "ordinary place and same-task service restoration", "unresolved liabilities", "independent acceptance or explicit open gap"],
+    "permanent_authorization_boundary": "file check, synthetic replay, machine PASS, independent retest, or restoration acceptance does not authorize trial, procurement, construction, deployment, maturity advancement, site/professional approval, rights clearance, or a real-world outcome claim",
+    "drawing_refs": [
+      "assets/figures/failure-governance-writeback.svg",
+      "assets/figures/failure-governance-writeback.en.svg",
+      "assets/figures/failure-governance-writeback.png",
+      "assets/figures/failure-governance-writeback.en.png"
+    ],
+    "global_guards": {
+      "geometry_changed": false,
+      "new_scene_project_or_protocol_ids_added": false,
+      "all_scenes_remain": "G0",
+      "real_failure_event_count": 0,
+      "confirmed_stop_authority_count": 0,
+      "real_public_correction_count": 0,
+      "completed_real_independent_retest_count": 0,
+      "completed_real_retirement_count": 0,
+      "approved_restart_count": 0,
+      "t02_replay_is_real_incident_or_field_recovery": false,
+      "public_entry_requires_account_qr_or_ai": false,
+      "rights_status": "not_fully_cleared"
+    }
+  },
   "review_protocol": {
     "required_sequence": [
       "read the referenced provisional GeoJSON and source register",

@@ -401,6 +401,26 @@ JZ-AIOS 规定任何场景依次经过 G0 概念/离线、G1 影子比对、G2 �
 
 ![京张 AI 城市代谢账本：完整系统边界、三地十二场景、七类资源、退出去向与显式未知（G0；实测能源/算力/人工分钟均为 0 个场景）](assets/figures/urban-metabolism-ledger.png)
 
+### 反脆弱失败治理：停止要能回写，恢复不能冒充授权
+
+现有方案已经有失败侧线、普通—验证—故障—恢复四态、公共时刻表、场景护照和 T-02 合成回放；本轮不重复画另一条侧线，也不另造治理品牌，而是在既有 JZ-AIOS 内补上最关键的闭环：同一次暂停、复核、恢复、撤回或退役，必须同时准备**场景护照—公共时刻表—证据矩阵**三份原子回写。任一载体缺失、版本不一致或状态相互矛盾时，公众界面显示更保守的组合，普通/非 AI 路径优先，禁止重启；运行态、成熟度、授权态和服务态始终分开，恢复普通使用不会自动把 G0 升级，也不会产生部署授权 [data:visual/assets/failure-governance-register.json#three_carrier_writeback_contract] [data:visual/assets/key-area-evidence-matrix.json#antifragile_failure_governance_contract] [assumption:A-ANTIFRAGILE-GOVERNANCE-015]。
+
+失败先按六类进入同一语法：安全与无障碍、权利/同意与禁采、来源/版本与可复现、服务与人工交接、证据与决策、场所恢复与退出。前两类立即硬停；来源和版本冻结输出并保留旧证据；人工路径缺失时停止自动化、保留同任务人工/非 AI 服务或给出安全拒绝；分母、证据或申诉未进入决策时暂停 go/no-go；构件、数据、服务或场所没有可负责的去向时维持停止或主动退役。公共记录只公开受影响任务、失败类、当前状态、纠正、证据版本、普通绕行和角色类型，不公开申诉人身份、敏感叙述或原始个人数据，也不做失败羞辱榜 [metric:failure_governance_failure_class_count] [metric:failure_governance_real_failure_event_count]。
+
+| 载体 | 暂停时必须写什么 | 恢复或退役时必须写什么 | 缺失时的公众状态 |
+|---|---|---|---|
+| 场景护照 | 四轴状态、失败类、停止权限角色、前一版本、证据/申诉引用 | 新版本、独立复测、到期/撤回/退役、未解决责任 | `failure_stop / G0 / not_authorized` |
+| 公共时刻表 | 公众运行态、普通/非 AI 路径、人工联系、开始时间、下次更新 | 普通使用恢复、可用服务、来源版本、绕行/退出 | 自动化不可用；普通路径或安全拒绝先行 |
+| 证据矩阵 | 哪一条主张被暂停或缩小、证据锚点、范围与限制 | 追加纠正、保留旧证据、复测结果、go/no-go 及“不授权什么” | 主张保持暂停，禁止用旧 PASS 重启 |
+
+可读使用旅程以 T-02 的 `STOP-STALE-SOURCE` 为合成示例：① 合成请求命中过期来源，不生成实质回答；② 冻结输出，保留纸面来源页与人工路径；③ 交给“来源包保管角色”，但角色目前仍待确认；④ 为同一事件准备三载体回写；⑤ 追加纠正版本并保留旧版本；⑥ 由独立复测角色按锁定条件完整重放，现实复测完成数仍为 0；⑦ 证据未闭合则继续停止或退役，闭合也只恢复普通使用。T-02 仍是 deterministic、无个人信息、无模型/API/现实服务调用、fail-closed 的合成治理回放，不是现实事故、服务成绩或现场恢复 [data:visual/assets/t02-g0-g1-replay-result.json#STOP-STALE-SOURCE] [metric:failure_governance_completed_real_independent_retest_count]。
+
+公众可口头、纸面或经未来真实存在的人工窗口提出停止或申诉，无需账户、扫码或 AI；决策回执必须说明暂停、缩小范围、更正、复测、撤回、退役或“有理由不改变”中的一种影响。新证据采用追加式版本：新记录通过 `supersedes / superseded_by` 链接旧记录，旧证据仍可寻址，不能被版本更新覆盖。重复硬失败、没有责任明确的停止权限、普通/非 AI 路径无法恢复、权利事件无法闭合、独立复测不能复现主张或退出没有去向时，主动退役成为合法的 NO-GO 结果；退役回执逐项关闭服务与授权、组件去向、数据/日志、同任务服务、场所恢复、未解决责任和独立验收 [metric:failure_governance_appeal_decision_change_count] [metric:failure_governance_completed_real_retirement_count]。
+
+**常驻授权边界：文件检查、合成回放、机器 PASS、独立复测或恢复验收，只对明确对象、判断主体、证据、有效范围和限制成立；均不授权试用、采购、建设、部署、成熟度升级、场地批准、专业批准、权利清除或现实成效主张。** 当前现实失败事件、确认停止权限、公开纠正、现实独立复测、主动退役和批准重启均为 0；停止到人工交接时间、普通使用恢复时间为 unknown，而不是空白或虚构数字 [metric:failure_governance_confirmed_stop_authority_count] [metric:failure_governance_stop_to_staffed_handoff_time] [metric:failure_governance_ordinary_use_recovery_time]。
+
+![反脆弱失败治理：六类失败、停止恢复故事板、三载体原子回写、四轴分离、申诉和主动退役（G0 概念合同；现实事件为 0）](assets/figures/failure-governance-writeback.png)
+
 八个项目形成空间、协议和运营一一对应的更新包 [depth:renewal_project_list]：
 
 | 项目 | 主要内容与 Feature | 前置条件 | 建议责任组合 | 概念验收 |
@@ -506,7 +526,7 @@ AI 与公共价值指标同样按核验问题拆开：
 - AI 与数据风险：偏差、幻觉、隐私泄露、越权自动化和供应商锁定通过最小数据、源端保留、日志、人工责任、复测、到期和退役控制；不得自动执法、诊断或替代正式审批。
 - 安全与韧性风险：机器人、车辆和设备测试只在授权范围；实体急停、现场安全员、离线人工和 L0/L1/L2 降级必须可用。能源和恢复指标未实测时保持未知。
 - 文化与历史风险：史实、人物、文物和工程资料需由官方/馆藏/清权来源复核；AI 生成内容显式与元数据标识，争议内容可纠错、下架和追溯 [assumption:A-CULTURE-CONTENT-006]。
-- 版权与品牌风险：本次提交的最终文件集合为 manifest 中 74 个路径（其中 73 个为非 manifest 内容文件）；74 条逐文件资产记录与 29 条来源证据记录只证明披露和链接闭合，覆盖完整性只在 manifest 与权利状态台账从最终 Git blobs 刷新并通过校验后成立。当前独立逐文件清权审计完成数为 0，总体状态为 `not_fully_cleared`。`submission-use-rights-matrix.json` 已逐条记录公告 8.1、仓库评审、主办方项目内使用、投稿人对外展示、跨项目复用和第三方组件的当前决策，但本包未证明正式公告条款与本次 GitHub 开源 Agent 征集具有完全相同的适用关系；`COMMUNITY-DISPLAY-ONLY` 完整条款、书面同意、OSM ODbL 义务、PDF 字体、Node.js 运行时与生成工具条款以及 Logo/地标商标仍待复核，不能声称已经全部清权 [data:visual/assets/rights-clearance-ledger.json#RIGHTS-01] [data:visual/assets/submission-use-rights-matrix.json#JZ-SUBMISSION-USE-RIGHTS-V1]。
+- 版权与品牌风险：本次提交的最终文件集合为 manifest 中 84 个路径（其中 83 个为非 manifest 内容文件）；84 条逐文件资产记录与 29 条来源证据记录只证明披露和链接闭合，覆盖完整性只在 manifest 与权利状态台账从最终 Git blobs 刷新并通过校验后成立。当前独立逐文件清权审计完成数为 0，总体状态为 `not_fully_cleared`。`submission-use-rights-matrix.json` 已逐条记录公告 8.1、仓库评审、主办方项目内使用、投稿人对外展示、跨项目复用和第三方组件的当前决策，但本包未证明正式公告条款与本次 GitHub 开源 Agent 征集具有完全相同的适用关系；`COMMUNITY-DISPLAY-ONLY` 完整条款、书面同意、OSM ODbL 义务、PDF 字体、Node.js 运行时与生成工具条款以及 Logo/地标商标仍待复核，不能声称已经全部清权 [data:visual/assets/rights-clearance-ledger.json#RIGHTS-01] [data:visual/assets/submission-use-rights-matrix.json#JZ-SUBMISSION-USE-RIGHTS-V1]。
 - 外部协同风险：未来科学城、怀柔科学城、经开区、其他创新街区和京津冀只作为可选复测角色，未经书面确认不得写成合作方、投资方或落地承诺 [assumption:A-EXTERNAL-COLLAB-005]。
 - 运营与公平风险：活动热度不能替代居民满意、可达、公平与投诉闭环；贡献荣誉不得用于流量排名、就业筛选或行政评价。
 - 工具与证据风险：机器检查只验证结构、拓扑、引用和一致性，不替代规划、建筑、交通、市政、景观、生态、消防、铁路、数据安全、无障碍、社区与法律专业判断 [depth:risk_missing_data]。
