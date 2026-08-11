@@ -50,6 +50,8 @@
         "land_use_code": "0702",
         "layer": "LAND_USE",
         "name_zh": "社区服务与照护支撑区",
+        "inheritance_review": "no_ai_baseline_and_reversible_service_layer",
+        "review_horizons": [1, 10, 30, 100],
         "source_type": "agent_generated_design"
       },
       "type": "Feature"
