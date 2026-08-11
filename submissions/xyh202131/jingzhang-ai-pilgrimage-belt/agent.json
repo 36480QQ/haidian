@@ -7,7 +7,7 @@
   "model_family": "gpt",
   "model_detail": "OpenAI Codex agent based on GPT-5; exact serving snapshot not asserted by the package",
   "provider": "OpenAI",
-  "generated_with": "scripts/scaffold_ai_submission.py; OpenAI Codex skill-alignment, Round 2 three-switchyard spatial-prototype deepening, Round 3 maintenance-urbanism contract, Round 4 non-AI-first public-service contract, and Round 5 whole-system AI urban-metabolism ledger with twelve scene passports, seven resource dimensions, typed unknowns, component exit destinations, and bilingual visual entrance; key-area evidence, source-rights lineage, and T-02 synthetic governance replay passes; Node.js zero-dependency replay; deterministic SVG-to-PNG export; ReportLab invariant PDF generation with full-figure A3/A0 placement; PyMuPDF and Pillow QA",
+  "generated_with": "scripts/scaffold_ai_submission.py; skill-aligned serial deepening through Round 7: three switchyard spatial prototypes, maintenance urbanism, non-AI-first public service, whole-system urban metabolism, antifragile failure writeback, and a climate-resilience proof corridor joining ordinary blue-green service, shade/rest intent, stormwater and ecological-maintenance clear zones, manual inspection, same-task prompting, vulnerable-group journey, typed field anchors, and removable service exit; key-area evidence, source-rights lineage, and T-02 synthetic governance replay passes; Node.js zero-dependency replay; deterministic SVG-to-PNG export; ReportLab invariant PDF generation with full-figure A3/A0 placement; PyMuPDF and Pillow QA",
   "authoring_mode": "agent-maintained package extraction",
   "tools_used": [
     "OpenAI Codex (GPT-5 family; exact serving snapshot not asserted)",
@@ -66,11 +66,11 @@
     {
       "tool_id": "TOOL-HAIDIAN-VALIDATION",
       "name": "Haidian repository validation scripts",
-      "version": "origin/main@8a28abeb8fc59d6a5ea5c7eb130e0868d9f2fca0; Round 5 branch created from the merged Round 4 head",
+      "version": "origin/main@cf2637407fc7747d4316987a0248830028532d68; Round 7 branch rebased after Round 6 merge 2f6dfc5309fae9e0fbebbbbeca6b55844474ae0f remained an ancestor of latest main",
       "usage": "对最终投稿包执行 formal stage gates。",
       "license_or_terms_status": "No repository-root license file was present in the validation checkout; reuse terms remain not independently established by this package.",
       "redistribution_status": "Scripts are referenced in place and are not copied into this submission package.",
-      "reproduction_path": "Run the named scripts from the current repository checkout, using base origin/main@8a28abeb8fc59d6a5ea5c7eb130e0868d9f2fca0 and the final staged package bytes."
+      "reproduction_path": "Run the named scripts from the current repository checkout, using base origin/main@cf2637407fc7747d4316987a0248830028532d68 and the final staged package bytes."
     },
     {
       "tool_id": "TOOL-GIT",
@@ -103,10 +103,10 @@
       "tool_id": "TOOL-REPORTLAB",
       "name": "ReportLab",
       "version": "5.0.0",
-      "usage": "以 invariant=1、固定元数据、固定输入顺序和页压缩，从包内中英文正文及十组 PNG 图件生成确定性 A3/A0 PDF；A3 以固定宽度嵌入完整图件，A0 按非 AI 服务、双轨总体、重点区、剖面、治理内核、维护代谢、用地公共连接与指标顺序保留十张整板总览；嵌入由 NotoSansSC-VF.ttf 内存实例化的 NotoSansSC-Regular / NotoSansSC-Bold 子集。生成记录不证明内容权利、环境绩效或现实执行。",
+      "usage": "以 invariant=1、固定元数据、固定输入顺序和页压缩，从包内中英文正文及十二组 PNG 图件生成确定性 A3/A0 PDF；A3 以固定宽度嵌入完整图件，A0 按非 AI 服务、双轨总体、重点区、剖面、治理内核、维护代谢、气候韧性、用地公共连接与指标顺序保留十二张整板总览；嵌入由 NotoSansSC-VF.ttf 内存实例化的 NotoSansSC-Regular / NotoSansSC-Bold 子集。生成记录不证明内容权利、环境绩效或现实执行。",
       "license_or_terms_status": "BSD license reported by installed package metadata. The NotoSansSC-VF.ttf source name table declares SIL OFL 1.1, version 2.04;241114210130;non-release, source SHA-256 763146584cf0710223441356b4395e279021b0806c196614377a7a0174ae074a; embedding compliance remains pending independent review.",
       "redistribution_status": "Library not redistributed; generated PDFs remain within the package-wide rights gate.",
-      "reproduction_path": "Use the final bilingual Markdown and ten paired 1800 x 1100 PNG figures with canvas invariant=1; place each full figure at the fixed A3 width and place the same ten figures on A0 pages in the recorded order. No source font binary is shipped."
+      "reproduction_path": "Use the final bilingual Markdown and twelve paired 1800 x 1100 PNG figures with canvas invariant=1; place each full figure at the fixed A3 width and place the same twelve figures on A0 pages in the recorded order. No source font binary is shipped."
     },
     {
       "tool_id": "TOOL-FONTTOOLS",
@@ -139,10 +139,10 @@
       "tool_id": "TOOL-CHROME",
       "name": "Chromium-family headless browser (Google Chrome / Microsoft Edge)",
       "version": "Chrome 151.0.7922.108; Edge 151.0.4129.72",
-      "usage": "以离线 headless SVG 渲染双轨总体图、非 AI 优先公共服务蓝图和 AI 城市代谢账本的中英文 PNG 展示导出；不加载远程资源，不改变 geometry、场景编号或空间精度。",
+      "usage": "以离线 headless SVG 渲染双轨总体图、非 AI 优先公共服务蓝图、AI 城市代谢账本、反脆弱失败治理回写图和气候韧性验证走廊的中英文 PNG 展示导出；不加载远程资源，不改变 geometry、场景编号或空间精度。",
       "license_or_terms_status": "Browser distribution and font-resolution terms are not independently audited here.",
       "redistribution_status": "Browser executable and system fonts are not redistributed by this submission.",
-      "reproduction_path": "Render the bilingual assets/figures/site-overview, non-ai-service-blueprint, and urban-metabolism-ledger SVG pairs with a local Chromium-family headless browser at the checked-in 1800×1100 viewBox and compare the resulting PNGs."
+      "reproduction_path": "Render the bilingual assets/figures/site-overview, non-ai-service-blueprint, urban-metabolism-ledger, failure-governance-writeback, and climate-resilience-corridor SVG pairs with a local Chromium-family headless browser at the checked-in 1800×1100 viewBox and compare the resulting PNGs."
     }
   ],
   "output_provenance": [

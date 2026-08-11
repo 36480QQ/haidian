@@ -15,9 +15,23 @@
       "proposal_files": [
         "submissions/Grady10086/railweave-open-city/proposal.md"
       ],
-      "changelog_files": [],
+      "changelog_files": [
+        "submissions/Grady10086/railweave-open-city/changelog.md"
+      ],
       "changed_files": [
         "submissions/Grady10086/railweave-open-city/agent.json",
+        "submissions/Grady10086/railweave-open-city/assets/figures/ai-origin-detail.en.png",
+        "submissions/Grady10086/railweave-open-city/assets/figures/ai-origin-detail.png",
+        "submissions/Grady10086/railweave-open-city/assets/figures/ai-service-blueprints.en.png",
+        "submissions/Grady10086/railweave-open-city/assets/figures/ai-service-blueprints.png",
+        "submissions/Grady10086/railweave-open-city/assets/figures/dazhongsi-detail.en.png",
+        "submissions/Grady10086/railweave-open-city/assets/figures/dazhongsi-detail.png",
+        "submissions/Grady10086/railweave-open-city/assets/figures/evidence-gap-atlas.en.png",
+        "submissions/Grady10086/railweave-open-city/assets/figures/evidence-gap-atlas.png",
+        "submissions/Grady10086/railweave-open-city/assets/figures/identity-landmarks.en.png",
+        "submissions/Grady10086/railweave-open-city/assets/figures/identity-landmarks.png",
+        "submissions/Grady10086/railweave-open-city/assets/figures/implementation-ledger.en.png",
+        "submissions/Grady10086/railweave-open-city/assets/figures/implementation-ledger.png",
         "submissions/Grady10086/railweave-open-city/assets/figures/key-areas.en.png",
         "submissions/Grady10086/railweave-open-city/assets/figures/key-areas.png",
         "submissions/Grady10086/railweave-open-city/assets/figures/land-use-structure.en.png",
@@ -26,9 +40,28 @@
         "submissions/Grady10086/railweave-open-city/assets/figures/metrics-evidence.png",
         "submissions/Grady10086/railweave-open-city/assets/figures/mobility-bluegreen.en.png",
         "submissions/Grady10086/railweave-open-city/assets/figures/mobility-bluegreen.png",
+        "submissions/Grady10086/railweave-open-city/assets/figures/overall-design-plan.en.png",
+        "submissions/Grady10086/railweave-open-city/assets/figures/overall-design-plan.png",
+        "submissions/Grady10086/railweave-open-city/assets/figures/public-value-governance.en.png",
+        "submissions/Grady10086/railweave-open-city/assets/figures/public-value-governance.png",
+        "submissions/Grady10086/railweave-open-city/assets/figures/section-family.en.png",
+        "submissions/Grady10086/railweave-open-city/assets/figures/section-family.png",
         "submissions/Grady10086/railweave-open-city/assets/figures/site-overview.en.png",
         "submissions/Grady10086/railweave-open-city/assets/figures/site-overview.png",
+        "submissions/Grady10086/railweave-open-city/assets/figures/zhongzhiyuan-detail.en.png",
+        "submissions/Grady10086/railweave-open-city/assets/figures/zhongzhiyuan-detail.png",
+        "submissions/Grady10086/railweave-open-city/assets/media/ai-origin-concept.webp",
+        "submissions/Grady10086/railweave-open-city/assets/media/cover.webp",
+        "submissions/Grady10086/railweave-open-city/assets/media/dazhongsi-concept.webp",
+        "submissions/Grady10086/railweave-open-city/assets/media/railweave-overview-en.md",
+        "submissions/Grady10086/railweave-open-city/assets/media/railweave-overview-en.vtt",
+        "submissions/Grady10086/railweave-open-city/assets/media/railweave-overview.en.mp4",
+        "submissions/Grady10086/railweave-open-city/assets/media/railweave-overview.md",
+        "submissions/Grady10086/railweave-open-city/assets/media/railweave-overview.mp4",
+        "submissions/Grady10086/railweave-open-city/assets/media/railweave-overview.vtt",
+        "submissions/Grady10086/railweave-open-city/assets/media/zhongzhiyuan-concept.webp",
         "submissions/Grady10086/railweave-open-city/assumptions.json",
+        "submissions/Grady10086/railweave-open-city/changelog.md",
         "submissions/Grady10086/railweave-open-city/compliance_matrix.json",
         "submissions/Grady10086/railweave-open-city/design_depth_matrix.json",
         "submissions/Grady10086/railweave-open-city/drawings/a0-boards.en.pdf",
@@ -55,13 +88,19 @@
         "submissions/Grady10086/railweave-open-city/self_check.json",
         "submissions/Grady10086/railweave-open-city/sources.json",
         "submissions/Grady10086/railweave-open-city/standard_matrix.json",
+        "submissions/Grady10086/railweave-open-city/visual/assets/implementation_register.json",
+        "submissions/Grady10086/railweave-open-city/visual/assets/railweave_runner.js",
+        "submissions/Grady10086/railweave-open-city/visual/assets/receipt.json",
+        "submissions/Grady10086/railweave-open-city/visual/assets/scenario_prototypes.json",
+        "submissions/Grady10086/railweave-open-city/visual/assets/synthetic_cases.json",
+        "submissions/Grady10086/railweave-open-city/visual/assets/weave_contracts.json",
         "submissions/Grady10086/railweave-open-city/visual/index.en.html",
         "submissions/Grady10086/railweave-open-city/visual/index.html"
       ],
       "ai_package_stages": {
         "submissions/Grady10086/railweave-open-city": "formal"
       },
-      "total_bytes": 5401921,
+      "total_bytes": 36030827,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -135,14 +174,14 @@
       "summary": {
         "standard_matrix_items": 6,
         "design_depth_items": 15,
-        "known_metric_refs_required": 8,
+        "known_metric_refs_required": 16,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
           "source": 29,
           "standard": 6,
-          "depth": 15,
-          "data": 18,
+          "depth": 14,
+          "data": 24,
           "metric": 10
         }
       }

@@ -173,6 +173,33 @@
       "confidence": "high",
       "assumptions": ["Audit completeness covers synthetic task records only."]
     },
+    "responsibility_handoff_count": {
+      "status": "known",
+      "value": 7,
+      "unit": "count",
+      "source_files": ["visual/assets/responsibility-transfer-data.js"],
+      "formula": "count(RESPONSIBILITY_TRANSFER_MODEL.handoffs)",
+      "confidence": "high",
+      "assumptions": ["Counts protocol interfaces only; roles, baselines, budgets and acceptance remain unknown until authorized field confirmation."]
+    },
+    "responsibility_handoff_negative_fixture_count": {
+      "status": "known",
+      "value": 7,
+      "unit": "count",
+      "source_files": ["visual/assets/responsibility-transfer-data.js"],
+      "formula": "count(RESPONSIBILITY_TRANSFER_MODEL.negativeFixtures)",
+      "confidence": "high",
+      "assumptions": ["Each fixture removes one distinct critical interface field from one cost class."]
+    },
+    "responsibility_handoff_fixture_match_rate": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": ["visual/assets/responsibility-transfer-data.js", "visual/assets/verify-responsibility-transfer.js"],
+      "formula": "count(negative fixtures rejected with expected error) / responsibility_handoff_negative_fixture_count",
+      "confidence": "high",
+      "assumptions": ["Measures deterministic protocol behavior only, not field acceptance, public benefit, or recovery performance."]
+    },
     "field_pilot_performance": {
       "status": "unknown",
       "value": null,

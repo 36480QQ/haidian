@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Reframes Jingzhang as verification infrastructure for public low-altitude services under Beijing's 2026 UAS controls: city-based digital governance and public review, compliant off-site flight verification, and individually authorized mission windows."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "robot-delivery-low-speed", "public-safety-operations-review"]
-iteration: "v2.2"
+iteration: "v2.1"
 ---
 
 # BOUNDED SKY: A Low-Altitude Public Protocol for Centennial Jingzhang
@@ -38,12 +38,6 @@ Published Haidian practice supports a narrower demand set: high-rise fire govern
 
 The overall boundary and all three key-area polygons are provisional repository geometry. They support topology, visualization, and repeatable calculations only; they are not official redlines, cadastral evidence, precise area, or an aviation plan [data:geometry/site_boundary.geojson#SITE-001]. Official polygons, buildings, sensitive receptors, weather, acoustics, communication, and authorization data must trigger a full regeneration of geometry, metrics, simulation, figures, HTML, and PDFs.
 
-### How to Read the Maps: Three Kinds of Lines Must Not Be Confused
-
-This edition places the repository's city information on maps without inventing a precise base map that the repository does not contain. The grey outline represents the announced 43.6 km2 coordinated study scope; the black dashed outline represents the 11.4 km2 overall design scope; and the three colored areas represent Zhongzhiyuan, AI Origin Community, and Dazhongsi from north to south. All polygons are repository-maintained provisional geometry inferred from textual extents, north-south order, and announced areas. Names including the North Fifth Ring Road, G6 Expressway, Xizhimen Outer Street, Wanquanhe Road, Qinghe, Wudaokou, Qinghuadongluxikou, and Dazhongsi Station come from the official brief and are shown only to explain city relationships. They are not precise road redlines, station boundaries, or parcel locations [source:OFFICIAL-ANNOUNCEMENT] [source:BOUNDARY-SOURCE].
-
-The yellow north-south line and the three east-west lines are design proposals. The first represents a ground-level link for walking, cycling, human public service, and emergency fallback along Jingzhang Heritage Park. The others identify east-west crossings and walking connections that require field survey in each focus area. They are not existing roads, road redlines, or flight routes. Because the repository currently lacks formal GIS for roads, buildings, parcels, heritage controls, and public facilities, this edition lowers graphic precision rather than using a decorative base map to imply certainty. When formal data arrives, the whole package must follow boundary replacement, existing-condition survey, constraint overlay, design recut, metric recalculation, and public review [data:geometry/roads.geojson#ROAD-001] [depth:mobility_municipal_public_service].
-
 ![Overall concept, evidence boundary, and public airspace protocol](assets/figures/site-overview.en.png)
 
 ## Three-Level Scope Framework
@@ -54,7 +48,7 @@ The five public budgets are safety risk, quiet/ecology, privacy/data, energy/car
 
 The spatial shorthand is one ground line, three rooms, one field, five ledgers, and two wings. The ground line protects continuous public life in the heritage park. Zhongzhiyuan hosts safety compilation, AI Origin hosts public review, Dazhongsi hosts mission diagnosis, and a separately compliant field hosts aircraft verification. The east wing links research review; the west wing links communities and public services [data:geometry/key_areas.geojson#PROV-KEY-001].
 
-![Four conceptual spatial roles within the overall design area](assets/figures/land-use-structure.en.png)
+![Three scopes, three chambers, and five airspace budgets](assets/figures/land-use-structure.en.png)
 
 ## Coordinated Research Area: Industry and Future City Research
 

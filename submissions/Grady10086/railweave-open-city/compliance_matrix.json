@@ -31,11 +31,11 @@
         "geometry/phasing.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
+        "provisional_working_extent_area_sqm",
         "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "road_length_m",
+        "conceptual_blue_green_network_envelope_ratio",
+        "conceptual_action_envelope_ratio",
+        "conceptual_audit_alignment_length_m",
         "key_area_count",
         "flagship_project_count",
         "crosslink_count",
@@ -76,7 +76,7 @@
         "VISUAL_STATIC",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "v2.0依据“一轴三廊三核”总体结构、三项重点示范项目、五级资料与成果表达管理、项目全周期实施台账以及可复核图层和指标测算，对本项要求形成阶段性响应；官方依据、局部实施资料与规划设计建议已分类表述并明确适用边界。",
+      "evidence_summary_zh": "v2.1依据“一轴三廊三核”总体结构、三项重点示范项目、五级资料与成果表达管理、项目全周期实施台账以及可复核图层和指标测算，对本项要求形成阶段性响应；官方依据、局部实施资料与规划设计建议已分类表述并明确适用边界。",
       "response_type": "formal_package_response_with_evidence_ceiling",
       "evidence_level": "mixed_L1_to_L5",
       "spatial_scope": "official_text_scope_plus_provisional_working_geometry",
@@ -87,7 +87,38 @@
         "parcel/ownership",
         "field/building/traffic/utility surveys"
       ],
-      "visual_disclaimer_required": true
+      "visual_disclaimer_required": true,
+      "v2_1_evidence_refs": [
+        "visual/assets/weave_contracts.json#/contracts",
+        "visual/assets/scenario_prototypes.json#/prototypes/0",
+        "visual/assets/implementation_register.json#/project_registers",
+        "assets/figures/ai-service-blueprints.png",
+        "assets/figures/overall-design-plan.png"
+      ],
+      "responsibility_roles": {
+        "accountable": [
+          "DO"
+        ],
+        "responsible": [
+          "TO",
+          "CM"
+        ],
+        "consulted": [
+          "IE",
+          "IV",
+          "DC",
+          "PF",
+          "PO"
+        ]
+      },
+      "acceptance_conditions_zh": [
+        "正文、矩阵、几何、指标和图件使用一致的对象ID和证据等级。",
+        "责任角色、当前状态和阻断输入明确。",
+        "所有空间与实施表述保持概念建议和依法确定边界。"
+      ],
+      "current_status_v2_1": "conceptual_submission_response_with_traceable_evidence; statutory_and_implementation_authority_pending",
+      "current_status_zh": "v2.1已形成投稿深度的结构化响应和可追溯证据；正式规划、专项审查、现场勘测、权利核验及实施授权仍待法定和专业程序。",
+      "authority_boundary_zh": "本条目为概念建议和机器可读证据索引；责任单位、场地、资金、采购、法定指标、工程条件及实施授权均待核验并依法确定。"
     },
     {
       "requirement_id": "1.3.2",
@@ -119,11 +150,11 @@
         "geometry/phasing.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
+        "provisional_working_extent_area_sqm",
         "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "road_length_m",
+        "conceptual_blue_green_network_envelope_ratio",
+        "conceptual_action_envelope_ratio",
+        "conceptual_audit_alignment_length_m",
         "key_area_count",
         "flagship_project_count",
         "crosslink_count",
@@ -164,7 +195,7 @@
         "VISUAL_STATIC",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "v2.0依据“一轴三廊三核”总体结构、三项重点示范项目、五级资料与成果表达管理、项目全周期实施台账以及可复核图层和指标测算，对本项要求形成阶段性响应；官方依据、局部实施资料与规划设计建议已分类表述并明确适用边界。",
+      "evidence_summary_zh": "v2.1依据“一轴三廊三核”总体结构、三项重点示范项目、五级资料与成果表达管理、项目全周期实施台账以及可复核图层和指标测算，对本项要求形成阶段性响应；官方依据、局部实施资料与规划设计建议已分类表述并明确适用边界。",
       "response_type": "formal_package_response_with_evidence_ceiling",
       "evidence_level": "mixed_L1_to_L5",
       "spatial_scope": "official_text_scope_plus_provisional_working_geometry",
@@ -175,7 +206,39 @@
         "parcel/ownership",
         "field/building/traffic/utility surveys"
       ],
-      "visual_disclaimer_required": true
+      "visual_disclaimer_required": true,
+      "v2_1_evidence_refs": [
+        "visual/assets/scenario_prototypes.json#/prototypes",
+        "visual/assets/weave_contracts.json#/contracts",
+        "geometry/public_space.geojson",
+        "geometry/roads.geojson",
+        "assets/figures/ai-service-blueprints.png",
+        "assets/figures/section-family.png"
+      ],
+      "responsibility_roles": {
+        "accountable": [
+          "DO"
+        ],
+        "responsible": [
+          "TO",
+          "CM"
+        ],
+        "consulted": [
+          "IE",
+          "IV",
+          "DC",
+          "PF",
+          "PO"
+        ]
+      },
+      "acceptance_conditions_zh": [
+        "原型具有端、边、平台和人工复核架构。",
+        "数据控制、非AI替代、失败模式和停止条件可追溯。",
+        "至少一项受控测试在依法确定主体和场地后完成独立复核。"
+      ],
+      "current_status_v2_1": "conceptual_submission_response_with_traceable_evidence; statutory_and_implementation_authority_pending",
+      "current_status_zh": "v2.1已形成投稿深度的结构化响应和可追溯证据；正式规划、专项审查、现场勘测、权利核验及实施授权仍待法定和专业程序。",
+      "authority_boundary_zh": "本条目为概念建议和机器可读证据索引；责任单位、场地、资金、采购、法定指标、工程条件及实施授权均待核验并依法确定。"
     },
     {
       "requirement_id": "1.3.3",
@@ -207,11 +270,11 @@
         "geometry/phasing.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
+        "provisional_working_extent_area_sqm",
         "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "road_length_m",
+        "conceptual_blue_green_network_envelope_ratio",
+        "conceptual_action_envelope_ratio",
+        "conceptual_audit_alignment_length_m",
         "key_area_count",
         "flagship_project_count",
         "crosslink_count",
@@ -252,7 +315,7 @@
         "VISUAL_STATIC",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "v2.0依据“一轴三廊三核”总体结构、三项重点示范项目、五级资料与成果表达管理、项目全周期实施台账以及可复核图层和指标测算，对本项要求形成阶段性响应；官方依据、局部实施资料与规划设计建议已分类表述并明确适用边界。",
+      "evidence_summary_zh": "v2.1依据“一轴三廊三核”总体结构、三项重点示范项目、五级资料与成果表达管理、项目全周期实施台账以及可复核图层和指标测算，对本项要求形成阶段性响应；官方依据、局部实施资料与规划设计建议已分类表述并明确适用边界。",
       "response_type": "formal_package_response_with_evidence_ceiling",
       "evidence_level": "mixed_L1_to_L5",
       "spatial_scope": "official_text_scope_plus_provisional_working_geometry",
@@ -263,7 +326,39 @@
         "parcel/ownership",
         "field/building/traffic/utility surveys"
       ],
-      "visual_disclaimer_required": true
+      "visual_disclaimer_required": true,
+      "v2_1_evidence_refs": [
+        "visual/assets/implementation_register.json#/public_participation_loop",
+        "visual/assets/implementation_register.json#/kpi_matrix",
+        "visual/assets/scenario_prototypes.json#/prototypes/1",
+        "visual/assets/weave_contracts.json#/contracts/5",
+        "geometry/public_space.geojson",
+        "assets/figures/public-value-governance.png"
+      ],
+      "responsibility_roles": {
+        "accountable": [
+          "CM"
+        ],
+        "responsible": [
+          "IE",
+          "DO"
+        ],
+        "consulted": [
+          "TO",
+          "IV",
+          "DC",
+          "PF",
+          "PO"
+        ]
+      },
+      "acceptance_conditions_zh": [
+        "正文、矩阵、几何、指标和图件使用一致的对象ID和证据等级。",
+        "责任角色、当前状态和阻断输入明确。",
+        "所有空间与实施表述保持概念建议和依法确定边界。"
+      ],
+      "current_status_v2_1": "conceptual_submission_response_with_traceable_evidence; statutory_and_implementation_authority_pending",
+      "current_status_zh": "v2.1已形成投稿深度的结构化响应和可追溯证据；正式规划、专项审查、现场勘测、权利核验及实施授权仍待法定和专业程序。",
+      "authority_boundary_zh": "本条目为概念建议和机器可读证据索引；责任单位、场地、资金、采购、法定指标、工程条件及实施授权均待核验并依法确定。"
     },
     {
       "requirement_id": "1.4.1",
@@ -295,11 +390,11 @@
         "geometry/phasing.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
+        "provisional_working_extent_area_sqm",
         "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "road_length_m",
+        "conceptual_blue_green_network_envelope_ratio",
+        "conceptual_action_envelope_ratio",
+        "conceptual_audit_alignment_length_m",
         "key_area_count",
         "flagship_project_count",
         "crosslink_count",
@@ -340,7 +435,7 @@
         "VISUAL_STATIC",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "v2.0依据“一轴三廊三核”总体结构、三项重点示范项目、五级资料与成果表达管理、项目全周期实施台账以及可复核图层和指标测算，对本项要求形成阶段性响应；官方依据、局部实施资料与规划设计建议已分类表述并明确适用边界。",
+      "evidence_summary_zh": "v2.1依据“一轴三廊三核”总体结构、三项重点示范项目、五级资料与成果表达管理、项目全周期实施台账以及可复核图层和指标测算，对本项要求形成阶段性响应；官方依据、局部实施资料与规划设计建议已分类表述并明确适用边界。",
       "response_type": "formal_package_response_with_evidence_ceiling",
       "evidence_level": "mixed_L1_to_L5",
       "spatial_scope": "official_text_scope_plus_provisional_working_geometry",
@@ -351,7 +446,37 @@
         "parcel/ownership",
         "field/building/traffic/utility surveys"
       ],
-      "visual_disclaimer_required": true
+      "visual_disclaimer_required": true,
+      "v2_1_evidence_refs": [
+        "visual/assets/weave_contracts.json#/gate_independence",
+        "geometry/roads.geojson",
+        "assets/figures/overall-design-plan.png",
+        "assets/figures/evidence-gap-atlas.png"
+      ],
+      "responsibility_roles": {
+        "accountable": [
+          "CM"
+        ],
+        "responsible": [
+          "IE",
+          "DO"
+        ],
+        "consulted": [
+          "TO",
+          "IV",
+          "DC",
+          "PF",
+          "PO"
+        ]
+      },
+      "acceptance_conditions_zh": [
+        "正文、矩阵、几何、指标和图件使用一致的对象ID和证据等级。",
+        "责任角色、当前状态和阻断输入明确。",
+        "所有空间与实施表述保持概念建议和依法确定边界。"
+      ],
+      "current_status_v2_1": "conceptual_submission_response_with_traceable_evidence; statutory_and_implementation_authority_pending",
+      "current_status_zh": "v2.1已形成投稿深度的结构化响应和可追溯证据；正式规划、专项审查、现场勘测、权利核验及实施授权仍待法定和专业程序。",
+      "authority_boundary_zh": "本条目为概念建议和机器可读证据索引；责任单位、场地、资金、采购、法定指标、工程条件及实施授权均待核验并依法确定。"
     },
     {
       "requirement_id": "1.4.2",
@@ -383,11 +508,11 @@
         "geometry/phasing.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
+        "provisional_working_extent_area_sqm",
         "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "road_length_m",
+        "conceptual_blue_green_network_envelope_ratio",
+        "conceptual_action_envelope_ratio",
+        "conceptual_audit_alignment_length_m",
         "key_area_count",
         "flagship_project_count",
         "crosslink_count",
@@ -428,7 +553,7 @@
         "VISUAL_STATIC",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "v2.0依据“一轴三廊三核”总体结构、三项重点示范项目、五级资料与成果表达管理、项目全周期实施台账以及可复核图层和指标测算，对本项要求形成阶段性响应；官方依据、局部实施资料与规划设计建议已分类表述并明确适用边界。",
+      "evidence_summary_zh": "v2.1依据“一轴三廊三核”总体结构、三项重点示范项目、五级资料与成果表达管理、项目全周期实施台账以及可复核图层和指标测算，对本项要求形成阶段性响应；官方依据、局部实施资料与规划设计建议已分类表述并明确适用边界。",
       "response_type": "formal_package_response_with_evidence_ceiling",
       "evidence_level": "mixed_L1_to_L5",
       "spatial_scope": "official_text_scope_plus_provisional_working_geometry",
@@ -439,7 +564,38 @@
         "parcel/ownership",
         "field/building/traffic/utility surveys"
       ],
-      "visual_disclaimer_required": true
+      "visual_disclaimer_required": true,
+      "v2_1_evidence_refs": [
+        "geometry/public_space.geojson",
+        "geometry/phasing.geojson",
+        "geometry/roads.geojson",
+        "assets/figures/overall-design-plan.png",
+        "assets/figures/section-family.png"
+      ],
+      "responsibility_roles": {
+        "accountable": [
+          "IE"
+        ],
+        "responsible": [
+          "CM",
+          "TO"
+        ],
+        "consulted": [
+          "DO",
+          "IV",
+          "DC",
+          "PF",
+          "PO"
+        ]
+      },
+      "acceptance_conditions_zh": [
+        "正文、矩阵、几何、指标和图件使用一致的对象ID和证据等级。",
+        "责任角色、当前状态和阻断输入明确。",
+        "所有空间与实施表述保持概念建议和依法确定边界。"
+      ],
+      "current_status_v2_1": "conceptual_submission_response_with_traceable_evidence; statutory_and_implementation_authority_pending",
+      "current_status_zh": "v2.1已形成投稿深度的结构化响应和可追溯证据；正式规划、专项审查、现场勘测、权利核验及实施授权仍待法定和专业程序。",
+      "authority_boundary_zh": "本条目为概念建议和机器可读证据索引；责任单位、场地、资金、采购、法定指标、工程条件及实施授权均待核验并依法确定。"
     },
     {
       "requirement_id": "1.4.3",
@@ -471,11 +627,11 @@
         "geometry/phasing.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
+        "provisional_working_extent_area_sqm",
         "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "road_length_m",
+        "conceptual_blue_green_network_envelope_ratio",
+        "conceptual_action_envelope_ratio",
+        "conceptual_audit_alignment_length_m",
         "key_area_count",
         "flagship_project_count",
         "crosslink_count",
@@ -516,7 +672,7 @@
         "VISUAL_STATIC",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "v2.0依据“一轴三廊三核”总体结构、三项重点示范项目、五级资料与成果表达管理、项目全周期实施台账以及可复核图层和指标测算，对本项要求形成阶段性响应；官方依据、局部实施资料与规划设计建议已分类表述并明确适用边界。",
+      "evidence_summary_zh": "v2.1依据“一轴三廊三核”总体结构、三项重点示范项目、五级资料与成果表达管理、项目全周期实施台账以及可复核图层和指标测算，对本项要求形成阶段性响应；官方依据、局部实施资料与规划设计建议已分类表述并明确适用边界。",
       "response_type": "formal_package_response_with_evidence_ceiling",
       "evidence_level": "mixed_L1_to_L5",
       "spatial_scope": "official_text_scope_plus_provisional_working_geometry",
@@ -527,7 +683,39 @@
         "parcel/ownership",
         "field/building/traffic/utility surveys"
       ],
-      "visual_disclaimer_required": true
+      "visual_disclaimer_required": true,
+      "v2_1_evidence_refs": [
+        "visual/assets/implementation_register.json#/project_registers",
+        "geometry/public_space.geojson",
+        "geometry/roads.geojson",
+        "assets/figures/zhongzhiyuan-detail.png",
+        "assets/figures/ai-origin-detail.png",
+        "assets/figures/dazhongsi-detail.png"
+      ],
+      "responsibility_roles": {
+        "accountable": [
+          "IE"
+        ],
+        "responsible": [
+          "CM",
+          "TO"
+        ],
+        "consulted": [
+          "DO",
+          "IV",
+          "DC",
+          "PF",
+          "PO"
+        ]
+      },
+      "acceptance_conditions_zh": [
+        "完成重点片区场地、权利和现状核验。",
+        "项目台账、空间组件、责任角色、验收与停止条件相互对应。",
+        "图件明确概念边界，不替代控规、工程设计或审批结论。"
+      ],
+      "current_status_v2_1": "conceptual_submission_response_with_traceable_evidence; statutory_and_implementation_authority_pending",
+      "current_status_zh": "v2.1已形成投稿深度的结构化响应和可追溯证据；正式规划、专项审查、现场勘测、权利核验及实施授权仍待法定和专业程序。",
+      "authority_boundary_zh": "本条目为概念建议和机器可读证据索引；责任单位、场地、资金、采购、法定指标、工程条件及实施授权均待核验并依法确定。"
     },
     {
       "requirement_id": "1.5.1.1",
@@ -559,11 +747,11 @@
         "geometry/phasing.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
+        "provisional_working_extent_area_sqm",
         "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "road_length_m",
+        "conceptual_blue_green_network_envelope_ratio",
+        "conceptual_action_envelope_ratio",
+        "conceptual_audit_alignment_length_m",
         "key_area_count",
         "flagship_project_count",
         "crosslink_count",
@@ -604,7 +792,7 @@
         "VISUAL_STATIC",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "v2.0依据“一轴三廊三核”总体结构、三项重点示范项目、五级资料与成果表达管理、项目全周期实施台账以及可复核图层和指标测算，对本项要求形成阶段性响应；官方依据、局部实施资料与规划设计建议已分类表述并明确适用边界。",
+      "evidence_summary_zh": "v2.1依据“一轴三廊三核”总体结构、三项重点示范项目、五级资料与成果表达管理、项目全周期实施台账以及可复核图层和指标测算，对本项要求形成阶段性响应；官方依据、局部实施资料与规划设计建议已分类表述并明确适用边界。",
       "response_type": "formal_package_response_with_evidence_ceiling",
       "evidence_level": "mixed_L1_to_L5",
       "spatial_scope": "official_text_scope_plus_provisional_working_geometry",
@@ -615,7 +803,38 @@
         "parcel/ownership",
         "field/building/traffic/utility surveys"
       ],
-      "visual_disclaimer_required": true
+      "visual_disclaimer_required": true,
+      "v2_1_evidence_refs": [
+        "visual/assets/weave_contracts.json#/contracts",
+        "visual/assets/scenario_prototypes.json#/prototypes/0",
+        "visual/assets/implementation_register.json#/project_registers",
+        "assets/figures/ai-service-blueprints.png",
+        "assets/figures/overall-design-plan.png"
+      ],
+      "responsibility_roles": {
+        "accountable": [
+          "DO"
+        ],
+        "responsible": [
+          "TO",
+          "CM"
+        ],
+        "consulted": [
+          "IE",
+          "IV",
+          "DC",
+          "PF",
+          "PO"
+        ]
+      },
+      "acceptance_conditions_zh": [
+        "正文、矩阵、几何、指标和图件使用一致的对象ID和证据等级。",
+        "责任角色、当前状态和阻断输入明确。",
+        "所有空间与实施表述保持概念建议和依法确定边界。"
+      ],
+      "current_status_v2_1": "conceptual_submission_response_with_traceable_evidence; statutory_and_implementation_authority_pending",
+      "current_status_zh": "v2.1已形成投稿深度的结构化响应和可追溯证据；正式规划、专项审查、现场勘测、权利核验及实施授权仍待法定和专业程序。",
+      "authority_boundary_zh": "本条目为概念建议和机器可读证据索引；责任单位、场地、资金、采购、法定指标、工程条件及实施授权均待核验并依法确定。"
     },
     {
       "requirement_id": "1.5.1.2",
@@ -647,11 +866,11 @@
         "geometry/phasing.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
+        "provisional_working_extent_area_sqm",
         "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "road_length_m",
+        "conceptual_blue_green_network_envelope_ratio",
+        "conceptual_action_envelope_ratio",
+        "conceptual_audit_alignment_length_m",
         "key_area_count",
         "flagship_project_count",
         "crosslink_count",
@@ -692,7 +911,7 @@
         "VISUAL_STATIC",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "v2.0依据“一轴三廊三核”总体结构、三项重点示范项目、五级资料与成果表达管理、项目全周期实施台账以及可复核图层和指标测算，对本项要求形成阶段性响应；官方依据、局部实施资料与规划设计建议已分类表述并明确适用边界。",
+      "evidence_summary_zh": "v2.1依据“一轴三廊三核”总体结构、三项重点示范项目、五级资料与成果表达管理、项目全周期实施台账以及可复核图层和指标测算，对本项要求形成阶段性响应；官方依据、局部实施资料与规划设计建议已分类表述并明确适用边界。",
       "response_type": "formal_package_response_with_evidence_ceiling",
       "evidence_level": "mixed_L1_to_L5",
       "spatial_scope": "official_text_scope_plus_provisional_working_geometry",
@@ -703,7 +922,39 @@
         "parcel/ownership",
         "field/building/traffic/utility surveys"
       ],
-      "visual_disclaimer_required": true
+      "visual_disclaimer_required": true,
+      "v2_1_evidence_refs": [
+        "visual/assets/scenario_prototypes.json#/prototypes",
+        "visual/assets/weave_contracts.json#/contracts",
+        "geometry/public_space.geojson",
+        "geometry/roads.geojson",
+        "assets/figures/ai-service-blueprints.png",
+        "assets/figures/section-family.png"
+      ],
+      "responsibility_roles": {
+        "accountable": [
+          "DO"
+        ],
+        "responsible": [
+          "TO",
+          "CM"
+        ],
+        "consulted": [
+          "IE",
+          "IV",
+          "DC",
+          "PF",
+          "PO"
+        ]
+      },
+      "acceptance_conditions_zh": [
+        "原型具有端、边、平台和人工复核架构。",
+        "数据控制、非AI替代、失败模式和停止条件可追溯。",
+        "至少一项受控测试在依法确定主体和场地后完成独立复核。"
+      ],
+      "current_status_v2_1": "conceptual_submission_response_with_traceable_evidence; statutory_and_implementation_authority_pending",
+      "current_status_zh": "v2.1已形成投稿深度的结构化响应和可追溯证据；正式规划、专项审查、现场勘测、权利核验及实施授权仍待法定和专业程序。",
+      "authority_boundary_zh": "本条目为概念建议和机器可读证据索引；责任单位、场地、资金、采购、法定指标、工程条件及实施授权均待核验并依法确定。"
     },
     {
       "requirement_id": "1.5.2.1",
@@ -735,11 +986,11 @@
         "geometry/phasing.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
+        "provisional_working_extent_area_sqm",
         "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "road_length_m",
+        "conceptual_blue_green_network_envelope_ratio",
+        "conceptual_action_envelope_ratio",
+        "conceptual_audit_alignment_length_m",
         "key_area_count",
         "flagship_project_count",
         "crosslink_count",
@@ -780,7 +1031,7 @@
         "VISUAL_STATIC",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "v2.0依据“一轴三廊三核”总体结构、三项重点示范项目、五级资料与成果表达管理、项目全周期实施台账以及可复核图层和指标测算，对本项要求形成阶段性响应；官方依据、局部实施资料与规划设计建议已分类表述并明确适用边界。",
+      "evidence_summary_zh": "v2.1依据“一轴三廊三核”总体结构、三项重点示范项目、五级资料与成果表达管理、项目全周期实施台账以及可复核图层和指标测算，对本项要求形成阶段性响应；官方依据、局部实施资料与规划设计建议已分类表述并明确适用边界。",
       "response_type": "formal_package_response_with_evidence_ceiling",
       "evidence_level": "mixed_L1_to_L5",
       "spatial_scope": "official_text_scope_plus_provisional_working_geometry",
@@ -791,7 +1042,37 @@
         "parcel/ownership",
         "field/building/traffic/utility surveys"
       ],
-      "visual_disclaimer_required": true
+      "visual_disclaimer_required": true,
+      "v2_1_evidence_refs": [
+        "visual/assets/implementation_register.json#/project_registers",
+        "visual/assets/weave_contracts.json#/contracts",
+        "geometry/public_space.geojson",
+        "assets/figures/overall-design-plan.png"
+      ],
+      "responsibility_roles": {
+        "accountable": [
+          "IE"
+        ],
+        "responsible": [
+          "CM",
+          "TO"
+        ],
+        "consulted": [
+          "DO",
+          "IV",
+          "DC",
+          "PF",
+          "PO"
+        ]
+      },
+      "acceptance_conditions_zh": [
+        "正文、矩阵、几何、指标和图件使用一致的对象ID和证据等级。",
+        "责任角色、当前状态和阻断输入明确。",
+        "所有空间与实施表述保持概念建议和依法确定边界。"
+      ],
+      "current_status_v2_1": "conceptual_submission_response_with_traceable_evidence; statutory_and_implementation_authority_pending",
+      "current_status_zh": "v2.1已形成投稿深度的结构化响应和可追溯证据；正式规划、专项审查、现场勘测、权利核验及实施授权仍待法定和专业程序。",
+      "authority_boundary_zh": "本条目为概念建议和机器可读证据索引；责任单位、场地、资金、采购、法定指标、工程条件及实施授权均待核验并依法确定。"
     },
     {
       "requirement_id": "1.5.2.2",
@@ -823,11 +1104,11 @@
         "geometry/phasing.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
+        "provisional_working_extent_area_sqm",
         "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "road_length_m",
+        "conceptual_blue_green_network_envelope_ratio",
+        "conceptual_action_envelope_ratio",
+        "conceptual_audit_alignment_length_m",
         "key_area_count",
         "flagship_project_count",
         "crosslink_count",
@@ -868,7 +1149,7 @@
         "VISUAL_STATIC",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "v2.0依据“一轴三廊三核”总体结构、三项重点示范项目、五级资料与成果表达管理、项目全周期实施台账以及可复核图层和指标测算，对本项要求形成阶段性响应；官方依据、局部实施资料与规划设计建议已分类表述并明确适用边界。",
+      "evidence_summary_zh": "v2.1依据“一轴三廊三核”总体结构、三项重点示范项目、五级资料与成果表达管理、项目全周期实施台账以及可复核图层和指标测算，对本项要求形成阶段性响应；官方依据、局部实施资料与规划设计建议已分类表述并明确适用边界。",
       "response_type": "formal_package_response_with_evidence_ceiling",
       "evidence_level": "mixed_L1_to_L5",
       "spatial_scope": "official_text_scope_plus_provisional_working_geometry",
@@ -879,7 +1160,37 @@
         "parcel/ownership",
         "field/building/traffic/utility surveys"
       ],
-      "visual_disclaimer_required": true
+      "visual_disclaimer_required": true,
+      "v2_1_evidence_refs": [
+        "visual/assets/implementation_register.json#/stage_gates",
+        "visual/assets/implementation_register.json#/project_registers",
+        "geometry/phasing.geojson",
+        "assets/figures/implementation-ledger.png"
+      ],
+      "responsibility_roles": {
+        "accountable": [
+          "IE"
+        ],
+        "responsible": [
+          "CM",
+          "TO"
+        ],
+        "consulted": [
+          "DO",
+          "IV",
+          "DC",
+          "PF",
+          "PO"
+        ]
+      },
+      "acceptance_conditions_zh": [
+        "三项目台账、七级门控、RACI、五年成本口径和KPI完整。",
+        "资金仅按依法确认来源计入，测试不替代采购。",
+        "续期、整改、暂停和退出均有责任和记录。"
+      ],
+      "current_status_v2_1": "conceptual_submission_response_with_traceable_evidence; statutory_and_implementation_authority_pending",
+      "current_status_zh": "v2.1已形成投稿深度的结构化响应和可追溯证据；正式规划、专项审查、现场勘测、权利核验及实施授权仍待法定和专业程序。",
+      "authority_boundary_zh": "本条目为概念建议和机器可读证据索引；责任单位、场地、资金、采购、法定指标、工程条件及实施授权均待核验并依法确定。"
     },
     {
       "requirement_id": "1.5.2.3",
@@ -911,11 +1222,11 @@
         "geometry/phasing.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
+        "provisional_working_extent_area_sqm",
         "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "road_length_m",
+        "conceptual_blue_green_network_envelope_ratio",
+        "conceptual_action_envelope_ratio",
+        "conceptual_audit_alignment_length_m",
         "key_area_count",
         "flagship_project_count",
         "crosslink_count",
@@ -956,7 +1267,7 @@
         "VISUAL_STATIC",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "v2.0依据“一轴三廊三核”总体结构、三项重点示范项目、五级资料与成果表达管理、项目全周期实施台账以及可复核图层和指标测算，对本项要求形成阶段性响应；官方依据、局部实施资料与规划设计建议已分类表述并明确适用边界。",
+      "evidence_summary_zh": "v2.1依据“一轴三廊三核”总体结构、三项重点示范项目、五级资料与成果表达管理、项目全周期实施台账以及可复核图层和指标测算，对本项要求形成阶段性响应；官方依据、局部实施资料与规划设计建议已分类表述并明确适用边界。",
       "response_type": "formal_package_response_with_evidence_ceiling",
       "evidence_level": "mixed_L1_to_L5",
       "spatial_scope": "official_text_scope_plus_provisional_working_geometry",
@@ -967,7 +1278,38 @@
         "parcel/ownership",
         "field/building/traffic/utility surveys"
       ],
-      "visual_disclaimer_required": true
+      "visual_disclaimer_required": true,
+      "v2_1_evidence_refs": [
+        "geometry/roads.geojson",
+        "geometry/public_space.geojson",
+        "geometry/roads.geojson",
+        "assets/figures/mobility-bluegreen.png",
+        "assets/figures/section-family.png"
+      ],
+      "responsibility_roles": {
+        "accountable": [
+          "IE"
+        ],
+        "responsible": [
+          "CM",
+          "TO"
+        ],
+        "consulted": [
+          "DO",
+          "IV",
+          "DC",
+          "PF",
+          "PO"
+        ]
+      },
+      "acceptance_conditions_zh": [
+        "新增几何和图件与公开底图、待核验边界和概念动作分层表达。",
+        "现场、无障碍、交通、生态及文保条件进入阻断清单。",
+        "基本公共服务保留人工或非数字等价路径。"
+      ],
+      "current_status_v2_1": "conceptual_submission_response_with_traceable_evidence; statutory_and_implementation_authority_pending",
+      "current_status_zh": "v2.1已形成投稿深度的结构化响应和可追溯证据；正式规划、专项审查、现场勘测、权利核验及实施授权仍待法定和专业程序。",
+      "authority_boundary_zh": "本条目为概念建议和机器可读证据索引；责任单位、场地、资金、采购、法定指标、工程条件及实施授权均待核验并依法确定。"
     },
     {
       "requirement_id": "1.5.2.4",
@@ -999,11 +1341,11 @@
         "geometry/phasing.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
+        "provisional_working_extent_area_sqm",
         "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "road_length_m",
+        "conceptual_blue_green_network_envelope_ratio",
+        "conceptual_action_envelope_ratio",
+        "conceptual_audit_alignment_length_m",
         "key_area_count",
         "flagship_project_count",
         "crosslink_count",
@@ -1044,7 +1386,7 @@
         "VISUAL_STATIC",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "v2.0依据“一轴三廊三核”总体结构、三项重点示范项目、五级资料与成果表达管理、项目全周期实施台账以及可复核图层和指标测算，对本项要求形成阶段性响应；官方依据、局部实施资料与规划设计建议已分类表述并明确适用边界。",
+      "evidence_summary_zh": "v2.1依据“一轴三廊三核”总体结构、三项重点示范项目、五级资料与成果表达管理、项目全周期实施台账以及可复核图层和指标测算，对本项要求形成阶段性响应；官方依据、局部实施资料与规划设计建议已分类表述并明确适用边界。",
       "response_type": "formal_package_response_with_evidence_ceiling",
       "evidence_level": "mixed_L1_to_L5",
       "spatial_scope": "official_text_scope_plus_provisional_working_geometry",
@@ -1055,7 +1397,38 @@
         "parcel/ownership",
         "field/building/traffic/utility surveys"
       ],
-      "visual_disclaimer_required": true
+      "visual_disclaimer_required": true,
+      "v2_1_evidence_refs": [
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson",
+        "geometry/public_space.geojson",
+        "assets/figures/mobility-bluegreen.png",
+        "assets/figures/identity-landmarks.png"
+      ],
+      "responsibility_roles": {
+        "accountable": [
+          "IE"
+        ],
+        "responsible": [
+          "CM",
+          "TO"
+        ],
+        "consulted": [
+          "DO",
+          "IV",
+          "DC",
+          "PF",
+          "PO"
+        ]
+      },
+      "acceptance_conditions_zh": [
+        "新增几何和图件与公开底图、待核验边界和概念动作分层表达。",
+        "现场、无障碍、交通、生态及文保条件进入阻断清单。",
+        "基本公共服务保留人工或非数字等价路径。"
+      ],
+      "current_status_v2_1": "conceptual_submission_response_with_traceable_evidence; statutory_and_implementation_authority_pending",
+      "current_status_zh": "v2.1已形成投稿深度的结构化响应和可追溯证据；正式规划、专项审查、现场勘测、权利核验及实施授权仍待法定和专业程序。",
+      "authority_boundary_zh": "本条目为概念建议和机器可读证据索引；责任单位、场地、资金、采购、法定指标、工程条件及实施授权均待核验并依法确定。"
     },
     {
       "requirement_id": "1.5.2.5",
@@ -1087,11 +1460,11 @@
         "geometry/phasing.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
+        "provisional_working_extent_area_sqm",
         "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "road_length_m",
+        "conceptual_blue_green_network_envelope_ratio",
+        "conceptual_action_envelope_ratio",
+        "conceptual_audit_alignment_length_m",
         "key_area_count",
         "flagship_project_count",
         "crosslink_count",
@@ -1132,7 +1505,7 @@
         "VISUAL_STATIC",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "v2.0依据“一轴三廊三核”总体结构、三项重点示范项目、五级资料与成果表达管理、项目全周期实施台账以及可复核图层和指标测算，对本项要求形成阶段性响应；官方依据、局部实施资料与规划设计建议已分类表述并明确适用边界。",
+      "evidence_summary_zh": "v2.1依据“一轴三廊三核”总体结构、三项重点示范项目、五级资料与成果表达管理、项目全周期实施台账以及可复核图层和指标测算，对本项要求形成阶段性响应；官方依据、局部实施资料与规划设计建议已分类表述并明确适用边界。",
       "response_type": "formal_package_response_with_evidence_ceiling",
       "evidence_level": "mixed_L1_to_L5",
       "spatial_scope": "official_text_scope_plus_provisional_working_geometry",
@@ -1143,7 +1516,37 @@
         "parcel/ownership",
         "field/building/traffic/utility surveys"
       ],
-      "visual_disclaimer_required": true
+      "visual_disclaimer_required": true,
+      "v2_1_evidence_refs": [
+        "geometry/roads.geojson",
+        "geometry/public_space.geojson",
+        "assets/figures/section-family.png",
+        "assets/figures/identity-landmarks.png"
+      ],
+      "responsibility_roles": {
+        "accountable": [
+          "IE"
+        ],
+        "responsible": [
+          "CM",
+          "TO"
+        ],
+        "consulted": [
+          "DO",
+          "IV",
+          "DC",
+          "PF",
+          "PO"
+        ]
+      },
+      "acceptance_conditions_zh": [
+        "正文、矩阵、几何、指标和图件使用一致的对象ID和证据等级。",
+        "责任角色、当前状态和阻断输入明确。",
+        "所有空间与实施表述保持概念建议和依法确定边界。"
+      ],
+      "current_status_v2_1": "conceptual_submission_response_with_traceable_evidence; statutory_and_implementation_authority_pending",
+      "current_status_zh": "v2.1已形成投稿深度的结构化响应和可追溯证据；正式规划、专项审查、现场勘测、权利核验及实施授权仍待法定和专业程序。",
+      "authority_boundary_zh": "本条目为概念建议和机器可读证据索引；责任单位、场地、资金、采购、法定指标、工程条件及实施授权均待核验并依法确定。"
     },
     {
       "requirement_id": "1.5.3.required",
@@ -1175,11 +1578,11 @@
         "geometry/phasing.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
+        "provisional_working_extent_area_sqm",
         "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "road_length_m",
+        "conceptual_blue_green_network_envelope_ratio",
+        "conceptual_action_envelope_ratio",
+        "conceptual_audit_alignment_length_m",
         "key_area_count",
         "flagship_project_count",
         "crosslink_count",
@@ -1220,7 +1623,7 @@
         "VISUAL_STATIC",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "v2.0依据“一轴三廊三核”总体结构、三项重点示范项目、五级资料与成果表达管理、项目全周期实施台账以及可复核图层和指标测算，对本项要求形成阶段性响应；官方依据、局部实施资料与规划设计建议已分类表述并明确适用边界。",
+      "evidence_summary_zh": "v2.1依据“一轴三廊三核”总体结构、三项重点示范项目、五级资料与成果表达管理、项目全周期实施台账以及可复核图层和指标测算，对本项要求形成阶段性响应；官方依据、局部实施资料与规划设计建议已分类表述并明确适用边界。",
       "response_type": "formal_package_response_with_evidence_ceiling",
       "evidence_level": "mixed_L1_to_L5",
       "spatial_scope": "official_text_scope_plus_provisional_working_geometry",
@@ -1231,7 +1634,39 @@
         "parcel/ownership",
         "field/building/traffic/utility surveys"
       ],
-      "visual_disclaimer_required": true
+      "visual_disclaimer_required": true,
+      "v2_1_evidence_refs": [
+        "visual/assets/implementation_register.json#/project_registers",
+        "geometry/public_space.geojson",
+        "geometry/roads.geojson",
+        "assets/figures/zhongzhiyuan-detail.png",
+        "assets/figures/ai-origin-detail.png",
+        "assets/figures/dazhongsi-detail.png"
+      ],
+      "responsibility_roles": {
+        "accountable": [
+          "IE"
+        ],
+        "responsible": [
+          "CM",
+          "TO"
+        ],
+        "consulted": [
+          "DO",
+          "IV",
+          "DC",
+          "PF",
+          "PO"
+        ]
+      },
+      "acceptance_conditions_zh": [
+        "完成重点片区场地、权利和现状核验。",
+        "项目台账、空间组件、责任角色、验收与停止条件相互对应。",
+        "图件明确概念边界，不替代控规、工程设计或审批结论。"
+      ],
+      "current_status_v2_1": "conceptual_submission_response_with_traceable_evidence; statutory_and_implementation_authority_pending",
+      "current_status_zh": "v2.1已形成投稿深度的结构化响应和可追溯证据；正式规划、专项审查、现场勘测、权利核验及实施授权仍待法定和专业程序。",
+      "authority_boundary_zh": "本条目为概念建议和机器可读证据索引；责任单位、场地、资金、采购、法定指标、工程条件及实施授权均待核验并依法确定。"
     },
     {
       "requirement_id": "1.5.3.1",
@@ -1263,11 +1698,11 @@
         "geometry/phasing.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
+        "provisional_working_extent_area_sqm",
         "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "road_length_m",
+        "conceptual_blue_green_network_envelope_ratio",
+        "conceptual_action_envelope_ratio",
+        "conceptual_audit_alignment_length_m",
         "key_area_count",
         "flagship_project_count",
         "crosslink_count",
@@ -1308,7 +1743,7 @@
         "VISUAL_STATIC",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "v2.0依据“一轴三廊三核”总体结构、三项重点示范项目、五级资料与成果表达管理、项目全周期实施台账以及可复核图层和指标测算，对本项要求形成阶段性响应；官方依据、局部实施资料与规划设计建议已分类表述并明确适用边界。",
+      "evidence_summary_zh": "v2.1依据“一轴三廊三核”总体结构、三项重点示范项目、五级资料与成果表达管理、项目全周期实施台账以及可复核图层和指标测算，对本项要求形成阶段性响应；官方依据、局部实施资料与规划设计建议已分类表述并明确适用边界。",
       "response_type": "formal_package_response_with_evidence_ceiling",
       "evidence_level": "mixed_L1_to_L5",
       "spatial_scope": "official_text_scope_plus_provisional_working_geometry",
@@ -1319,7 +1754,39 @@
         "parcel/ownership",
         "field/building/traffic/utility surveys"
       ],
-      "visual_disclaimer_required": true
+      "visual_disclaimer_required": true,
+      "v2_1_evidence_refs": [
+        "visual/assets/implementation_register.json#/project_registers/1",
+        "visual/assets/scenario_prototypes.json#/prototypes/0",
+        "visual/assets/weave_contracts.json#/contracts/0",
+        "geometry/public_space.geojson",
+        "assets/figures/zhongzhiyuan-detail.png",
+        "assets/media/zhongzhiyuan-concept.webp"
+      ],
+      "responsibility_roles": {
+        "accountable": [
+          "IE"
+        ],
+        "responsible": [
+          "CM",
+          "TO"
+        ],
+        "consulted": [
+          "DO",
+          "IV",
+          "DC",
+          "PF",
+          "PO"
+        ]
+      },
+      "acceptance_conditions_zh": [
+        "完成重点片区场地、权利和现状核验。",
+        "项目台账、空间组件、责任角色、验收与停止条件相互对应。",
+        "图件明确概念边界，不替代控规、工程设计或审批结论。"
+      ],
+      "current_status_v2_1": "conceptual_submission_response_with_traceable_evidence; statutory_and_implementation_authority_pending",
+      "current_status_zh": "v2.1已形成投稿深度的结构化响应和可追溯证据；正式规划、专项审查、现场勘测、权利核验及实施授权仍待法定和专业程序。",
+      "authority_boundary_zh": "本条目为概念建议和机器可读证据索引；责任单位、场地、资金、采购、法定指标、工程条件及实施授权均待核验并依法确定。"
     },
     {
       "requirement_id": "1.5.3.2",
@@ -1351,11 +1818,11 @@
         "geometry/phasing.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
+        "provisional_working_extent_area_sqm",
         "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "road_length_m",
+        "conceptual_blue_green_network_envelope_ratio",
+        "conceptual_action_envelope_ratio",
+        "conceptual_audit_alignment_length_m",
         "key_area_count",
         "flagship_project_count",
         "crosslink_count",
@@ -1396,7 +1863,7 @@
         "VISUAL_STATIC",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "v2.0依据“一轴三廊三核”总体结构、三项重点示范项目、五级资料与成果表达管理、项目全周期实施台账以及可复核图层和指标测算，对本项要求形成阶段性响应；官方依据、局部实施资料与规划设计建议已分类表述并明确适用边界。",
+      "evidence_summary_zh": "v2.1依据“一轴三廊三核”总体结构、三项重点示范项目、五级资料与成果表达管理、项目全周期实施台账以及可复核图层和指标测算，对本项要求形成阶段性响应；官方依据、局部实施资料与规划设计建议已分类表述并明确适用边界。",
       "response_type": "formal_package_response_with_evidence_ceiling",
       "evidence_level": "mixed_L1_to_L5",
       "spatial_scope": "official_text_scope_plus_provisional_working_geometry",
@@ -1407,7 +1874,39 @@
         "parcel/ownership",
         "field/building/traffic/utility surveys"
       ],
-      "visual_disclaimer_required": true
+      "visual_disclaimer_required": true,
+      "v2_1_evidence_refs": [
+        "visual/assets/implementation_register.json#/project_registers/0",
+        "visual/assets/scenario_prototypes.json#/prototypes/1",
+        "visual/assets/weave_contracts.json#/contracts/5",
+        "geometry/public_space.geojson",
+        "assets/figures/ai-origin-detail.png",
+        "assets/media/ai-origin-concept.webp"
+      ],
+      "responsibility_roles": {
+        "accountable": [
+          "IE"
+        ],
+        "responsible": [
+          "CM",
+          "TO"
+        ],
+        "consulted": [
+          "DO",
+          "IV",
+          "DC",
+          "PF",
+          "PO"
+        ]
+      },
+      "acceptance_conditions_zh": [
+        "完成重点片区场地、权利和现状核验。",
+        "项目台账、空间组件、责任角色、验收与停止条件相互对应。",
+        "图件明确概念边界，不替代控规、工程设计或审批结论。"
+      ],
+      "current_status_v2_1": "conceptual_submission_response_with_traceable_evidence; statutory_and_implementation_authority_pending",
+      "current_status_zh": "v2.1已形成投稿深度的结构化响应和可追溯证据；正式规划、专项审查、现场勘测、权利核验及实施授权仍待法定和专业程序。",
+      "authority_boundary_zh": "本条目为概念建议和机器可读证据索引；责任单位、场地、资金、采购、法定指标、工程条件及实施授权均待核验并依法确定。"
     },
     {
       "requirement_id": "1.5.3.3",
@@ -1439,11 +1938,11 @@
         "geometry/phasing.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
+        "provisional_working_extent_area_sqm",
         "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "road_length_m",
+        "conceptual_blue_green_network_envelope_ratio",
+        "conceptual_action_envelope_ratio",
+        "conceptual_audit_alignment_length_m",
         "key_area_count",
         "flagship_project_count",
         "crosslink_count",
@@ -1484,7 +1983,7 @@
         "VISUAL_STATIC",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "v2.0依据“一轴三廊三核”总体结构、三项重点示范项目、五级资料与成果表达管理、项目全周期实施台账以及可复核图层和指标测算，对本项要求形成阶段性响应；官方依据、局部实施资料与规划设计建议已分类表述并明确适用边界。",
+      "evidence_summary_zh": "v2.1依据“一轴三廊三核”总体结构、三项重点示范项目、五级资料与成果表达管理、项目全周期实施台账以及可复核图层和指标测算，对本项要求形成阶段性响应；官方依据、局部实施资料与规划设计建议已分类表述并明确适用边界。",
       "response_type": "formal_package_response_with_evidence_ceiling",
       "evidence_level": "mixed_L1_to_L5",
       "spatial_scope": "official_text_scope_plus_provisional_working_geometry",
@@ -1495,7 +1994,39 @@
         "parcel/ownership",
         "field/building/traffic/utility surveys"
       ],
-      "visual_disclaimer_required": true
+      "visual_disclaimer_required": true,
+      "v2_1_evidence_refs": [
+        "visual/assets/implementation_register.json#/project_registers/2",
+        "visual/assets/scenario_prototypes.json#/prototypes/2",
+        "visual/assets/weave_contracts.json#/contracts/10",
+        "geometry/phasing.geojson",
+        "assets/figures/dazhongsi-detail.png",
+        "assets/media/dazhongsi-concept.webp"
+      ],
+      "responsibility_roles": {
+        "accountable": [
+          "IE"
+        ],
+        "responsible": [
+          "CM",
+          "TO"
+        ],
+        "consulted": [
+          "DO",
+          "IV",
+          "DC",
+          "PF",
+          "PO"
+        ]
+      },
+      "acceptance_conditions_zh": [
+        "完成重点片区场地、权利和现状核验。",
+        "项目台账、空间组件、责任角色、验收与停止条件相互对应。",
+        "图件明确概念边界，不替代控规、工程设计或审批结论。"
+      ],
+      "current_status_v2_1": "conceptual_submission_response_with_traceable_evidence; statutory_and_implementation_authority_pending",
+      "current_status_zh": "v2.1已形成投稿深度的结构化响应和可追溯证据；正式规划、专项审查、现场勘测、权利核验及实施授权仍待法定和专业程序。",
+      "authority_boundary_zh": "本条目为概念建议和机器可读证据索引；责任单位、场地、资金、采购、法定指标、工程条件及实施授权均待核验并依法确定。"
     },
     {
       "requirement_id": "agent.1",
@@ -1527,11 +2058,11 @@
         "geometry/phasing.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
+        "provisional_working_extent_area_sqm",
         "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "road_length_m",
+        "conceptual_blue_green_network_envelope_ratio",
+        "conceptual_action_envelope_ratio",
+        "conceptual_audit_alignment_length_m",
         "key_area_count",
         "flagship_project_count",
         "crosslink_count",
@@ -1572,7 +2103,7 @@
         "VISUAL_STATIC",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "v2.0依据“一轴三廊三核”总体结构、三项重点示范项目、五级资料与成果表达管理、项目全周期实施台账以及可复核图层和指标测算，对本项要求形成阶段性响应；官方依据、局部实施资料与规划设计建议已分类表述并明确适用边界。",
+      "evidence_summary_zh": "v2.1依据“一轴三廊三核”总体结构、三项重点示范项目、五级资料与成果表达管理、项目全周期实施台账以及可复核图层和指标测算，对本项要求形成阶段性响应；官方依据、局部实施资料与规划设计建议已分类表述并明确适用边界。",
       "response_type": "formal_package_response_with_evidence_ceiling",
       "evidence_level": "mixed_L1_to_L5",
       "spatial_scope": "official_text_scope_plus_provisional_working_geometry",
@@ -1583,7 +2114,37 @@
         "parcel/ownership",
         "field/building/traffic/utility surveys"
       ],
-      "visual_disclaimer_required": true
+      "visual_disclaimer_required": true,
+      "v2_1_evidence_refs": [
+        "visual/assets/weave_contracts.json#/gate_independence",
+        "geometry/public_space.geojson",
+        "assets/figures/overall-design-plan.png",
+        "assets/figures/identity-landmarks.png"
+      ],
+      "responsibility_roles": {
+        "accountable": [
+          "CM"
+        ],
+        "responsible": [
+          "IE",
+          "DO"
+        ],
+        "consulted": [
+          "TO",
+          "IV",
+          "DC",
+          "PF",
+          "PO"
+        ]
+      },
+      "acceptance_conditions_zh": [
+        "正文、矩阵、几何、指标和图件使用一致的对象ID和证据等级。",
+        "责任角色、当前状态和阻断输入明确。",
+        "所有空间与实施表述保持概念建议和依法确定边界。"
+      ],
+      "current_status_v2_1": "conceptual_submission_response_with_traceable_evidence; statutory_and_implementation_authority_pending",
+      "current_status_zh": "v2.1已形成投稿深度的结构化响应和可追溯证据；正式规划、专项审查、现场勘测、权利核验及实施授权仍待法定和专业程序。",
+      "authority_boundary_zh": "本条目为概念建议和机器可读证据索引；责任单位、场地、资金、采购、法定指标、工程条件及实施授权均待核验并依法确定。"
     },
     {
       "requirement_id": "agent.2",
@@ -1615,11 +2176,11 @@
         "geometry/phasing.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
+        "provisional_working_extent_area_sqm",
         "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "road_length_m",
+        "conceptual_blue_green_network_envelope_ratio",
+        "conceptual_action_envelope_ratio",
+        "conceptual_audit_alignment_length_m",
         "key_area_count",
         "flagship_project_count",
         "crosslink_count",
@@ -1660,7 +2221,7 @@
         "VISUAL_STATIC",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "v2.0依据“一轴三廊三核”总体结构、三项重点示范项目、五级资料与成果表达管理、项目全周期实施台账以及可复核图层和指标测算，对本项要求形成阶段性响应；官方依据、局部实施资料与规划设计建议已分类表述并明确适用边界。",
+      "evidence_summary_zh": "v2.1依据“一轴三廊三核”总体结构、三项重点示范项目、五级资料与成果表达管理、项目全周期实施台账以及可复核图层和指标测算，对本项要求形成阶段性响应；官方依据、局部实施资料与规划设计建议已分类表述并明确适用边界。",
       "response_type": "formal_package_response_with_evidence_ceiling",
       "evidence_level": "mixed_L1_to_L5",
       "spatial_scope": "official_text_scope_plus_provisional_working_geometry",
@@ -1671,7 +2232,38 @@
         "parcel/ownership",
         "field/building/traffic/utility surveys"
       ],
-      "visual_disclaimer_required": true
+      "visual_disclaimer_required": true,
+      "v2_1_evidence_refs": [
+        "visual/assets/weave_contracts.json#/contracts",
+        "visual/assets/scenario_prototypes.json#/prototypes/0",
+        "visual/assets/implementation_register.json#/project_registers",
+        "assets/figures/ai-service-blueprints.png",
+        "assets/figures/overall-design-plan.png"
+      ],
+      "responsibility_roles": {
+        "accountable": [
+          "DO"
+        ],
+        "responsible": [
+          "TO",
+          "CM"
+        ],
+        "consulted": [
+          "IE",
+          "IV",
+          "DC",
+          "PF",
+          "PO"
+        ]
+      },
+      "acceptance_conditions_zh": [
+        "正文、矩阵、几何、指标和图件使用一致的对象ID和证据等级。",
+        "责任角色、当前状态和阻断输入明确。",
+        "所有空间与实施表述保持概念建议和依法确定边界。"
+      ],
+      "current_status_v2_1": "conceptual_submission_response_with_traceable_evidence; statutory_and_implementation_authority_pending",
+      "current_status_zh": "v2.1已形成投稿深度的结构化响应和可追溯证据；正式规划、专项审查、现场勘测、权利核验及实施授权仍待法定和专业程序。",
+      "authority_boundary_zh": "本条目为概念建议和机器可读证据索引；责任单位、场地、资金、采购、法定指标、工程条件及实施授权均待核验并依法确定。"
     },
     {
       "requirement_id": "agent.3",
@@ -1703,11 +2295,11 @@
         "geometry/phasing.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
+        "provisional_working_extent_area_sqm",
         "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "road_length_m",
+        "conceptual_blue_green_network_envelope_ratio",
+        "conceptual_action_envelope_ratio",
+        "conceptual_audit_alignment_length_m",
         "key_area_count",
         "flagship_project_count",
         "crosslink_count",
@@ -1748,7 +2340,7 @@
         "VISUAL_STATIC",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "v2.0依据“一轴三廊三核”总体结构、三项重点示范项目、五级资料与成果表达管理、项目全周期实施台账以及可复核图层和指标测算，对本项要求形成阶段性响应；官方依据、局部实施资料与规划设计建议已分类表述并明确适用边界。",
+      "evidence_summary_zh": "v2.1依据“一轴三廊三核”总体结构、三项重点示范项目、五级资料与成果表达管理、项目全周期实施台账以及可复核图层和指标测算，对本项要求形成阶段性响应；官方依据、局部实施资料与规划设计建议已分类表述并明确适用边界。",
       "response_type": "formal_package_response_with_evidence_ceiling",
       "evidence_level": "mixed_L1_to_L5",
       "spatial_scope": "official_text_scope_plus_provisional_working_geometry",
@@ -1759,7 +2351,39 @@
         "parcel/ownership",
         "field/building/traffic/utility surveys"
       ],
-      "visual_disclaimer_required": true
+      "visual_disclaimer_required": true,
+      "v2_1_evidence_refs": [
+        "visual/assets/scenario_prototypes.json#/prototypes",
+        "visual/assets/weave_contracts.json#/contracts",
+        "geometry/public_space.geojson",
+        "geometry/roads.geojson",
+        "assets/figures/ai-service-blueprints.png",
+        "assets/figures/section-family.png"
+      ],
+      "responsibility_roles": {
+        "accountable": [
+          "DO"
+        ],
+        "responsible": [
+          "TO",
+          "CM"
+        ],
+        "consulted": [
+          "IE",
+          "IV",
+          "DC",
+          "PF",
+          "PO"
+        ]
+      },
+      "acceptance_conditions_zh": [
+        "原型具有端、边、平台和人工复核架构。",
+        "数据控制、非AI替代、失败模式和停止条件可追溯。",
+        "至少一项受控测试在依法确定主体和场地后完成独立复核。"
+      ],
+      "current_status_v2_1": "conceptual_submission_response_with_traceable_evidence; statutory_and_implementation_authority_pending",
+      "current_status_zh": "v2.1已形成投稿深度的结构化响应和可追溯证据；正式规划、专项审查、现场勘测、权利核验及实施授权仍待法定和专业程序。",
+      "authority_boundary_zh": "本条目为概念建议和机器可读证据索引；责任单位、场地、资金、采购、法定指标、工程条件及实施授权均待核验并依法确定。"
     },
     {
       "requirement_id": "agent.4",
@@ -1791,11 +2415,11 @@
         "geometry/phasing.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
+        "provisional_working_extent_area_sqm",
         "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "road_length_m",
+        "conceptual_blue_green_network_envelope_ratio",
+        "conceptual_action_envelope_ratio",
+        "conceptual_audit_alignment_length_m",
         "key_area_count",
         "flagship_project_count",
         "crosslink_count",
@@ -1836,7 +2460,7 @@
         "VISUAL_STATIC",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "v2.0依据“一轴三廊三核”总体结构、三项重点示范项目、五级资料与成果表达管理、项目全周期实施台账以及可复核图层和指标测算，对本项要求形成阶段性响应；官方依据、局部实施资料与规划设计建议已分类表述并明确适用边界。",
+      "evidence_summary_zh": "v2.1依据“一轴三廊三核”总体结构、三项重点示范项目、五级资料与成果表达管理、项目全周期实施台账以及可复核图层和指标测算，对本项要求形成阶段性响应；官方依据、局部实施资料与规划设计建议已分类表述并明确适用边界。",
       "response_type": "formal_package_response_with_evidence_ceiling",
       "evidence_level": "mixed_L1_to_L5",
       "spatial_scope": "official_text_scope_plus_provisional_working_geometry",
@@ -1847,7 +2471,38 @@
         "parcel/ownership",
         "field/building/traffic/utility surveys"
       ],
-      "visual_disclaimer_required": true
+      "visual_disclaimer_required": true,
+      "v2_1_evidence_refs": [
+        "visual/assets/scenario_prototypes.json#/prototypes/1",
+        "geometry/public_space.geojson",
+        "geometry/public_space.geojson",
+        "assets/figures/identity-landmarks.png",
+        "assets/figures/public-value-governance.png"
+      ],
+      "responsibility_roles": {
+        "accountable": [
+          "IE"
+        ],
+        "responsible": [
+          "CM",
+          "TO"
+        ],
+        "consulted": [
+          "DO",
+          "IV",
+          "DC",
+          "PF",
+          "PO"
+        ]
+      },
+      "acceptance_conditions_zh": [
+        "新增几何和图件与公开底图、待核验边界和概念动作分层表达。",
+        "现场、无障碍、交通、生态及文保条件进入阻断清单。",
+        "基本公共服务保留人工或非数字等价路径。"
+      ],
+      "current_status_v2_1": "conceptual_submission_response_with_traceable_evidence; statutory_and_implementation_authority_pending",
+      "current_status_zh": "v2.1已形成投稿深度的结构化响应和可追溯证据；正式规划、专项审查、现场勘测、权利核验及实施授权仍待法定和专业程序。",
+      "authority_boundary_zh": "本条目为概念建议和机器可读证据索引；责任单位、场地、资金、采购、法定指标、工程条件及实施授权均待核验并依法确定。"
     },
     {
       "requirement_id": "agent.5",
@@ -1879,11 +2534,11 @@
         "geometry/phasing.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
+        "provisional_working_extent_area_sqm",
         "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "road_length_m",
+        "conceptual_blue_green_network_envelope_ratio",
+        "conceptual_action_envelope_ratio",
+        "conceptual_audit_alignment_length_m",
         "key_area_count",
         "flagship_project_count",
         "crosslink_count",
@@ -1924,7 +2579,7 @@
         "VISUAL_STATIC",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "v2.0依据“一轴三廊三核”总体结构、三项重点示范项目、五级资料与成果表达管理、项目全周期实施台账以及可复核图层和指标测算，对本项要求形成阶段性响应；官方依据、局部实施资料与规划设计建议已分类表述并明确适用边界。",
+      "evidence_summary_zh": "v2.1依据“一轴三廊三核”总体结构、三项重点示范项目、五级资料与成果表达管理、项目全周期实施台账以及可复核图层和指标测算，对本项要求形成阶段性响应；官方依据、局部实施资料与规划设计建议已分类表述并明确适用边界。",
       "response_type": "formal_package_response_with_evidence_ceiling",
       "evidence_level": "mixed_L1_to_L5",
       "spatial_scope": "official_text_scope_plus_provisional_working_geometry",
@@ -1935,7 +2590,37 @@
         "parcel/ownership",
         "field/building/traffic/utility surveys"
       ],
-      "visual_disclaimer_required": true
+      "visual_disclaimer_required": true,
+      "v2_1_evidence_refs": [
+        "visual/assets/weave_contracts.json#/contracts/7",
+        "geometry/roads.geojson",
+        "assets/figures/identity-landmarks.png",
+        "assets/figures/section-family.png"
+      ],
+      "responsibility_roles": {
+        "accountable": [
+          "CM"
+        ],
+        "responsible": [
+          "IE",
+          "DO"
+        ],
+        "consulted": [
+          "TO",
+          "IV",
+          "DC",
+          "PF",
+          "PO"
+        ]
+      },
+      "acceptance_conditions_zh": [
+        "正文、矩阵、几何、指标和图件使用一致的对象ID和证据等级。",
+        "责任角色、当前状态和阻断输入明确。",
+        "所有空间与实施表述保持概念建议和依法确定边界。"
+      ],
+      "current_status_v2_1": "conceptual_submission_response_with_traceable_evidence; statutory_and_implementation_authority_pending",
+      "current_status_zh": "v2.1已形成投稿深度的结构化响应和可追溯证据；正式规划、专项审查、现场勘测、权利核验及实施授权仍待法定和专业程序。",
+      "authority_boundary_zh": "本条目为概念建议和机器可读证据索引；责任单位、场地、资金、采购、法定指标、工程条件及实施授权均待核验并依法确定。"
     },
     {
       "requirement_id": "agent.6",
@@ -1967,11 +2652,11 @@
         "geometry/phasing.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
+        "provisional_working_extent_area_sqm",
         "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "road_length_m",
+        "conceptual_blue_green_network_envelope_ratio",
+        "conceptual_action_envelope_ratio",
+        "conceptual_audit_alignment_length_m",
         "key_area_count",
         "flagship_project_count",
         "crosslink_count",
@@ -2012,7 +2697,7 @@
         "VISUAL_STATIC",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "v2.0依据“一轴三廊三核”总体结构、三项重点示范项目、五级资料与成果表达管理、项目全周期实施台账以及可复核图层和指标测算，对本项要求形成阶段性响应；官方依据、局部实施资料与规划设计建议已分类表述并明确适用边界。",
+      "evidence_summary_zh": "v2.1依据“一轴三廊三核”总体结构、三项重点示范项目、五级资料与成果表达管理、项目全周期实施台账以及可复核图层和指标测算，对本项要求形成阶段性响应；官方依据、局部实施资料与规划设计建议已分类表述并明确适用边界。",
       "response_type": "formal_package_response_with_evidence_ceiling",
       "evidence_level": "mixed_L1_to_L5",
       "spatial_scope": "official_text_scope_plus_provisional_working_geometry",
@@ -2023,7 +2708,39 @@
         "parcel/ownership",
         "field/building/traffic/utility surveys"
       ],
-      "visual_disclaimer_required": true
+      "visual_disclaimer_required": true,
+      "v2_1_evidence_refs": [
+        "visual/assets/implementation_register.json#/five_year_cost_model",
+        "visual/assets/implementation_register.json#/kpi_matrix",
+        "visual/assets/scenario_prototypes.json#/prototypes/2",
+        "visual/assets/weave_contracts.json#/contracts/9",
+        "visual/assets/weave_contracts.json#/contracts/10",
+        "assets/figures/implementation-ledger.png"
+      ],
+      "responsibility_roles": {
+        "accountable": [
+          "CM"
+        ],
+        "responsible": [
+          "IE",
+          "DO",
+          "TO"
+        ],
+        "consulted": [
+          "IV",
+          "DC",
+          "PF",
+          "PO"
+        ]
+      },
+      "acceptance_conditions_zh": [
+        "三项目台账、七级门控、RACI、五年成本口径和KPI完整。",
+        "资金仅按依法确认来源计入，测试不替代采购。",
+        "续期、整改、暂停和退出均有责任和记录。"
+      ],
+      "current_status_v2_1": "conceptual_submission_response_with_traceable_evidence; statutory_and_implementation_authority_pending",
+      "current_status_zh": "v2.1已形成投稿深度的结构化响应和可追溯证据；正式规划、专项审查、现场勘测、权利核验及实施授权仍待法定和专业程序。",
+      "authority_boundary_zh": "本条目为概念建议和机器可读证据索引；责任单位、场地、资金、采购、法定指标、工程条件及实施授权均待核验并依法确定。"
     }
   ]
 }
