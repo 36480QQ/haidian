@@ -21,6 +21,8 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 This proposal reads the official announcement, cleared agent taskbook, registered public sources and local professional snapshots as separate evidence classes. It uses provisional geometry only for generation and intake review. The official site and key-area polygons, statutory controls, existing-building survey and engineering conditions remain pending. [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [depth:existing_conditions_diagnosis]
 
+Repository [Issue #1029](https://github.com/open-city-ai/haidian/issues/1029) demonstrates that `PROV-KEY-003` is an order-and-area placeholder near Beijing North Railway Station, not a station-anchored Dazhongsi boundary [source:ISSUE-1029]. This proposal does not move the shared provisional geometry and does not use it as location evidence for the Dazhongsi four-quadrant walking task.
+
 ## Three-level scope framework
 
 The 43.6 km² coordinated research area frames ecosystem and future-city questions; the 11.4 km² overall design area carries the spatial and renewal structure; the three key areas test detailed delivery. The Living Transect links these levels without inventing a new redline. [data:geometry/site_boundary.geojson#SITE-001] [depth:three_level_scope_framework] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]
@@ -38,6 +40,8 @@ The plan adds reversible public layers over the submitted land-use partition: ha
 ## Detailed design for three key areas
 
 Zhongzhiyuan tests whether full-stack AI can remain within compute, heat and water budgets. AI Origin tests whether innovation improves ordinary daily life through a seed library, edible learning street and human-service fallback. Dazhongsi tests whether market-facing AI remains publicly accountable through provenance, rain-garden and appeal interfaces. All three polygons are provisional constraints. [data:geometry/key_areas.geojson#PROV-KEY-001] [data:geometry/key_areas.geojson#PROV-KEY-002] [depth:three_key_area_detailed_design]
+
+The Dazhongsi station-integration response is therefore a non-georeferenced conceptual task until official key-area and station-anchor data arrive. No alignment, walking distance or engineering feasibility is inferred from `PROV-KEY-003` [source:ISSUE-1029].
 
 ![Detailed design for three key areas](assets/figures/key-areas.en.png)
 
@@ -72,6 +76,8 @@ Known site, green, public-space, building-footprint and key-area metrics are rec
 ## Living Transect ledgers
 
 The habitat ledger records observation method, season, reviewer and intervention boundary. The water ledger records catchment, retention, overflow and maintenance. The food ledger records seed source, steward, safety, harvest and compost. The AI ledger records purpose, minimal data, accountable steward, human takeover, appeal and exit recovery. Missing stewardship or stop conditions keeps a scenario in display or closed testing. [standard:GENERATIVE-AI-INTERIM-MEASURES] [depth:risk_missing_data]
+
+These ledgers are survey and governance protocols, not claimed baseline datasets. Site biodiversity, catchment and runoff modelling, community-food need and safety assessment, and compute-energy/waste-heat/water metering remain pending. No ecological gain, runoff reduction, food yield or resource saving is claimed before dated, scoped and reviewable field baselines exist.
 
 ## Risk, copyright and legal boundary
 

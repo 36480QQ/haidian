@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "455775c23188efafc4e067bb032036541e4de05551a6d6c82cb7f7432eeb39a6"
+      "sha256": "4276d14d92adf97bda7e9402c5aac32c2816080d8fabcb01fb7babec313ee92c"
     },
     {
       "path": "agent.json",
@@ -38,25 +38,25 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "f428db35c1e39e24853d1d9175264269ee2263ea6609208b99c67edd177482bb"
+      "sha256": "7c2a5a9ef6fb01ac9dcb87ed9ca52a90cbc1630c3a85153ba1ba369c141a0273"
     },
     {
       "path": "assumptions.json",
       "role": "assumptions",
       "required": true,
-      "sha256": "f9b5f67c3a6d397d9465f8aa88dfe4d42929dacdc1d77255b139268c0f27cf9d"
+      "sha256": "1577bbee4b3b4698aa4cf55aca86c73ae8afffc2f8e93014ac561af3129a2424"
     },
     {
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "8a2849ee5f579d19db83c7cfc511c18acd2e22606b691bcd2c260d80c57063d1"
+      "sha256": "67ec3a15af0e07b03a4cfb0ae5a832c22856af91c11d2c6a0d92ca85a42ba51a"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "956a6aa09b4e66abc77ad3af266599718900128507164bad1f2bdf6f52de7b27"
+      "sha256": "bda239f18d943c3fd3f1f0efe51b7e8ec181e831f4138a198f9cff2639d189be"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "1a72e999e06228121c447c99d03d1aac86f24015f5709cd1e1ee3efa9b592b5e"
+      "sha256": "7e990c9060c32f76ac467fffa0b8ce302d9a433d694416e15d955141b9176600"
     },
     {
       "path": "report/narrative.md",
@@ -191,7 +191,7 @@
       "path": "geometry/public_space.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "85e33282fd20081fe787ed20bd40b275ec9d4d632a281fe652e667e4caad6f48"
+      "sha256": "336ff41533f2247fec6fdabf6440c46ee40f6dbb13de7250670da4496c547042"
     },
     {
       "path": "geometry/roads.geojson",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "86d23350ca58ccd3fddc37c6e814cf29a0b0361ad5ad7d3eed7f70ef6701a1c5"
+      "sha256": "379fd8ccdce827c12e62d21d54967a21bbd40f66f1a61c8ff7479888abe2b17a"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "b2a9da09a930ad02b69c8f0c67a87383df1a9b4eb2422506fce1e3912acb9689"
+      "sha256": "c2afee121ecb511588186ab163aab75b6583eee2c94591e9987fee1ab5eda764"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -289,7 +289,7 @@
   "validation_claim": {
     "self_checked": true,
     "known_blockers": [],
-    "data_confidence": "high",
+    "data_confidence": "low",
     "readiness_contract": "persisted-self-check-v1"
   },
   "proposal_title": "京张共生样带：让 AI 创新与城市生境共同接受检验"
