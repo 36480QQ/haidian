@@ -150,6 +150,30 @@
       "path": "assets/figures/",
       "source_type": "agent_generated",
       "usage": "Five bilingual evidence boards engineered from metrics.json + package claims; not third-party basemaps; see report/copyright_statement.md."
+    },
+    {
+      "id": "FOREST-RAIL-MARK",
+      "path": "assets/forest-rail-mark.svg",
+      "source_type": "agent_generated",
+      "usage": "Minimal identification mark: rust twin rails + three canopy-green station nodes; clearance rules in agent.5."
+    },
+    {
+      "id": "FOREST-RAIL-TABLETOP",
+      "path": "visual/assets/desk-tabletop-evidence.json",
+      "source_type": "agent_generated",
+      "usage": "Desktop tabletop rehearsal evidence for shared-desk min-seat open/close logic; reproducible via run_desk_tabletop.js."
+    },
+    {
+      "id": "FOREST-RAIL-OPS-MATRIX",
+      "path": "visual/assets/operations-matrix.json",
+      "source_type": "agent_generated",
+      "usage": "Desk pilot governance gates G0–G6 and accountability roles; concept calibration only, not assigned duties."
+    },
+    {
+      "id": "FOREST-RAIL-AV-GATES",
+      "path": "visual/assets/av-safety-gates.json",
+      "source_type": "agent_generated",
+      "usage": "Concept AV safety state machine and hard rules; NOT_AUTHORIZED — not a deployed system or certification."
     }
   ]
 }

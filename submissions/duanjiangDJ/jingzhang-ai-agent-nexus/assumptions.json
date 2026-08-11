@@ -78,6 +78,24 @@
       "category": "design_assumption",
       "status": "conceptual",
       "summary_zh": "城市信号制度（USR）将 1909 年京张铁路信号语言升级为治理 AI 智能体行为的通用语言（绿/黄/红三态），为概念设计建议，不含具体设备、频率或投资承诺；机制可供专业团队深化研究。"
+    },
+    {
+      "id": "A-ZONING-001",
+      "category": "design_assumption",
+      "status": "conceptual",
+      "summary_zh": "信号兼容分区将三态语言写进用地控制：绿态兼容区 3（智能体常态可达）、黄态兼容区 3（人工交接/时段限定）、红态兼容区 1（智能体禁止进入）；为“智能体兼容度”条款方向（概念），正式条款待控规与公开程序确定，由网关在入口按目标空间的兼容状态鉴权。"
+    },
+    {
+      "id": "A-LEDGER-001",
+      "category": "design_assumption",
+      "status": "conceptual",
+      "summary_zh": "公共利益台账为概念核验机制：信号生命周期的月度台账审计在核对信号与行为入账的同时逐月核对四项非排斥原则的证据，审计结论进入公共知识库，缺位即进入红牌审查。"
+    },
+    {
+      "id": "A-PILOTDEMO-001",
+      "category": "design_assumption",
+      "status": "conceptual",
+      "summary_zh": "试点—示范—推广三跃迁为达标门槛模型（概念阈值）：试点（轻量可撤）→ 示范（达标放行）→ 推广（制度化）；跃迁条件为概念建议，正式阈值由运营实施阶段以公开程序确定，不构成政府实施安排或投资承诺。"
     }
   ]
 }

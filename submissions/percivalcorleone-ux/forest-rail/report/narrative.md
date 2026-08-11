@@ -2,15 +2,15 @@
 
 ## Bilingual equivalence checklist (2026-08-10)
 
-Checked after engineered figure rebuild from locked `metrics.json`.
+Checked after engineered figure rebuild from locked `metrics.json` and three-station upgrade.
 
 | Pair | Map / claim | Metrics | Date footer | Nodes | Result |
 |------|-------------|---------|-------------|-------|--------|
-| site-overview ↔ .en | Same spine + 3 nodes | site≈11.41 km²; keys=3 | 2026-08 · provisional | Zhongzhiyuan / Origin / Dazhongsi | PASS |
+| site-overview ↔ .en | Same spine + 3 nodes | site≈11.41 km²; keys=3; nodes=3 | 2026-08 · provisional | Zhongzhiyuan / Origin / Dazhongsi | PASS |
 | land-use-structure ↔ .en | Same nested tiers | 43.6 / 11.4 / 368.4 | 2026-08 | Same three nodes | PASS |
-| key-areas ↔ .en | Three distinct columns | PROV-KEY-001/002/003 | 2026-08 | Not all “Qinghe Station” | PASS |
+| key-areas ↔ .en | Three equal-depth columns | PROV-KEY-001/002/003 | 2026-08 | Distinct nodes | PASS |
 | mobility-bluegreen ↔ .en | Four bands dual-rail | Schematic only | 2026-08 | Accessibility aligned | PASS |
-| metrics-evidence ↔ .en | Same table keys | site 11,412,825.386; green_derived 1,408,605.148; public_derived 836,343.257; FAR unknown | 2026-08 | Matches metrics.json | PASS |
+| metrics-evidence ↔ .en | Same table keys | site + green/public derived + FAR unknown + min seats / tests / gates | 2026-08 | Matches metrics.json | PASS |
 
 Rule: regenerate **both** zh and en from the same locked table.
 
@@ -28,9 +28,13 @@ Rule: regenerate **both** zh and en from the same locked table.
 | PR-08 | power | Seats / lights / edge nodes | grid / property | mid | peak load + min-seat backup | ops | pending |
 | PR-09 | network | Offline terminal + human override | ops + IT | mid | offline failover drill | ops | pending |
 | PR-10 | plants | Canopy survival | landscape | mid | 3-year survival TBD after soil survey | landscape | pending |
-| PR-11 | desks | Min supply + cleaning | park ops | low-mid | daily min seats; complaint SLA | ops | pending |
-| PR-12 | av_safety | Isolated AI rail safety case | safety assessor | high | E-stop/yield/stop docs; concept only | safety | concept_only |
+| PR-11 | desks | Min supply + cleaning | park ops | low-mid | daily min seats [metric:min_open_seats_count]; complaint SLA | ops | pending |
+| PR-12 | av_safety | Isolated AI rail safety case + insurance + incident response | safety assessor | high | E-stop/yield docs; Gate NOT AUTHORIZED until signed | safety | concept_only |
 | PR-13 | privacy | No face ID; appeal path | governance | low | DPIA-lite + review log | governance | pending |
-| PR-14 | fair_siting | Low-demand min daily radius | ops + governance | low | audit vs footfall-chase | ops | pending |
+| PR-14 | fair_siting | Low-demand min daily radius | ops + governance | low | weekly audit vs footfall-chase | ops | pending |
+| PR-15 | lights | Glare limit + night walk audit | ops + accessibility | low-mid | no decorative-rail lighting; fault=dim/off | ops | pending |
+| PR-16 | daily_goods | Vendor admission + food hygiene + stock liability | ops + market | mid | unbranded trial rules; upgrade needs human review | ops | pending |
+| PR-17 | cyber | Terminal hardening + sensor isolation | IT + ops | mid | breach → isolate sensors | ops | pending |
+| PR-18 | accountability | Named A-role for desk/AV pilots | district ops | unknown | G2 unassigned ⇒ no limited trial | governance | blocked_unassigned |
 
 Machine-readable twin of this table may be regenerated; authoritative human-readable form is this file + `proposal.md`.

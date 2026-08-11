@@ -205,6 +205,45 @@
       "assumptions": [
         "Digital Citizen Compact clause 2: each AI scenario has one named accountable human operator."
       ]
+    },
+    "green_compat_zone_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count from proposal narrative (design constant, non-geometry)",
+      "confidence": "high",
+      "assumptions": [
+        "Signal Compatibility Zoning: green zones where agents normally operate (open segment of the Heritage Park, Origin Community living room and release-hall plaza, Dazhongsi industry and commerce blocks)."
+      ]
+    },
+    "yellow_compat_zone_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count from proposal narrative (design constant, non-geometry)",
+      "confidence": "high",
+      "assumptions": [
+        "Signal Compatibility Zoning: amber zones requiring human handover or time-window restriction (Zhongzhi Park controlled test segment, Dazhongsi station tracks and interchange hall, campus/hospital interfaces)."
+      ]
+    },
+    "red_compat_zone_count": {
+      "status": "known",
+      "value": 1,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count from proposal narrative (design constant, non-geometry)",
+      "confidence": "high",
+      "assumptions": [
+        "Signal Compatibility Zoning: red zone agents may not enter (security-governance sandbox for red-team evaluation and data isolation)."
+      ]
     }
   }
 }
