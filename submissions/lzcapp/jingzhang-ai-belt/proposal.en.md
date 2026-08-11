@@ -40,6 +40,20 @@ Honest statement: this figure specification is a methodological suggestion, not 
 
 **Core originality (AI-native)**: A district agent operating loop — sense, model, scenario-generate, human-review, controlled-deploy, evaluate — is the shared base for space and governance, not a smart-city label pasted on a traditional plan; every AI scenario has a privacy boundary and human-review gate (see `visual/assets/scenarios.json`).
 
+### Differentiation: Why Jing-Zhang Is Not Just Another "Smart City Park"
+
+Global AI innovation districts have mature paradigms — Kendall Square's university-sourcing, 22@Barcelona's industrial renewal, Shenzhen Nanshan's anchor-led growth, Station F's community operations. This proposal's differentiation lies not in repeating these models, but in answering a question none of them fully address: **when AI is deeply embedded in urban space, how do we simultaneously guarantee innovation vitality and public trust?**
+
+Three governance artifacts constitute this proposal's unique contribution:
+
+1. **Jingzhang Relay Receipt** — every scenario opening, public-participation event or spatial intervention generates a machine-readable receipt recording the minimal dataset, human reviewer, appeal/rollback status and recalculation prerequisites. This is not a technical document but the **machine-readability of governance commitment** — reviewers, residents and enterprises can independently verify the compliance status of every AI intervention. Referencing PR #426 concept origin and PR #918 v0.2 exemplar as prior art, this proposal is an independent derivative design.
+
+2. **Retain-Renovate-Demolish Five Gates** — no fabricated conclusions; five sequential gates (existing-condition verification → compliance & heritage → public interest → reversibility & recalculation → human & community confirmation) filter every decision, with any failure degrading the item to to-be-confirmed. This transforms "uncertainty" from a defect into an **auditable design decision**, a methodological departure from Kendall Square's "build-then-adjust" or 22@Barcelona's "top-down renewal."
+
+3. **Cost Five-Accounts** — personnel / space / equipment / data / public-value costs are registered separately, with amounts labeled as concept-stage rough ranges and explicitly disclaimed from government organizational commitments. This expands Feasibility from the single dimension of "is there money" to the multi-dimensional judgment of "the nature and boundary of money," preventing concept proposals from being misread as financial commitments.
+
+Together these three artifacts define the essential difference between "AI symbiosis" and "AI park": **a park maximizes efficiency; symbiosis sustains trust**. Jing-Zhang's unique resources — a century of railway heritage + university clusters + Zhongguancun innovation ecology + Dazhongsi commercial hub — provide an irreplaceable testbed for this "trust-first AI urbanization."
+
 **Status & boundary (must distinguish)**: This proposal is **repository-intake only** — not gallery publication, award selection, implementation approval or government endorsement. All spatial placements use a provisional boundary and are concept suggestions, to be recomputed once official redlines and regulatory plans are released.
 
 ## Review-Dimension Self-Check
