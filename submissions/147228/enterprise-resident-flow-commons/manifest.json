@@ -293,7 +293,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": true,
-      "sha256": "40a910d2745dc666dca51672454bf73cb86ae731f21147e6590172d68d8a7338"
+      "sha256": "56da897553b6d6e3d5f41d2db746bd65cb590282caa66ccdc141e164a992f8c7"
     },
     {
       "path": "compliance_matrix.json",
@@ -408,14 +408,14 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "1ed9304182ea327879b52265c8ddf08a6df36c4d3d5be8f6c18a0cf21de8e18e"
+      "sha256": "27692f672dc1ffd7f685bfc3e707a4e167a825f94ce05beec406d46413c997fd"
     },
     {
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "08e9b8de0c403944abb8675ee9e13acb16dd7de51f2060a2ad513050ec2080b9"
+      "sha256": "699112d2800606622c7842141c01e9711daea97e58b058a81accd6980ede0396"
     },
     {
       "path": "report/copyright_statement.md",
@@ -435,26 +435,26 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "6a1393d0edec03e34db2ae97b6d8bc8015edb14c12c1bca97fde19a8236fa086"
+      "sha256": "b642701e53494f32e3761bce72b7bc178ff5005b0bd44fef7e078b2ae3a6e3ad"
     },
     {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "81a9dfa7dba148ac96cf5a7b6edfdfaab36537ad11bf612ed226482a88caf929"
+      "sha256": "ae67aa96b5c3ddc821254f3578a39453937a947ca1ed21ec1502ec58e6aa1f6e"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "4f656773b80b3e5611ff26587f497eefe777e34c7abc6af520120901e97644ad"
+      "sha256": "6e706f103a1ab30176c8576d3b054788197873dd76bd0d35880815879f7e26b1"
     },
     {
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "c2cb994fdace43c31618a37029a44c5431b754f34b1764ca572b524f4a479824"
+      "sha256": "583702026a3a0be400ccc5c0943732fed458f0e081beaa2e7255b91c7bdcd0b9"
     },
     {
       "path": "standard_matrix.json",
@@ -714,14 +714,14 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "2c4835dfc04a392fac08ce0cde39c59578edf2863c8701bb1fdc3e29efbe76da"
+      "sha256": "5dc2796ad837470ac5bf3edac84dde6edaa8510a90944f1c23dec7815f7d5888"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "003da7d33efc73e43b714b81c9edff9eee781dba88f8b7a2fa18140ae103cfd6"
+      "sha256": "ca68bb7faf93e5464855b2d070fb39234e65e76e2b6210b4f68ca2f1a8d9f803"
     },
     {
       "path": "assets/figures/resource-passport-board.en.svg",
@@ -1025,7 +1025,7 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "f11f6ad5869f037105d315a11a3a4ca30c91aaf33b727071f5198c600650c209"
+      "sha256": "5d22fe7b30c47197fc0cf7a6aa1897fc5d8a18ed1aac56376cb8ccd25489ca07"
     },
     {
       "path": "assets/figures/dynamic-preference-board.en.svg",
@@ -1033,25 +1033,25 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/dynamic-preference-board.svg",
-      "sha256": "99a9204933e7218336506f83b85d6cdb6e8c6926f9934be960d5d86b22eafbff"
+      "sha256": "bd2d0d00c5a136dbb12fed849f2f537754fd8fbe15f46a3fded5a8e315173d59"
     },
     {
       "path": "visual/assets/dynamic-preference-screen.json",
       "role": "evidence_data",
       "required": true,
-      "sha256": "2d670d4194681c5088c4a0861cb5aa55b570cb8f054c247e3a725fd0e90ad86f"
+      "sha256": "c9e8be667b71e0f8a7885bf702d355f6e4d150bf353629d4b406e521643cb313"
     },
     {
       "path": "visual/assets/dynamic-preference-readout.json",
       "role": "evidence_data",
       "required": true,
-      "sha256": "a3362869e346d54f1f4489530a17381833aa712d919d2c08d4bc82bfae9447da"
+      "sha256": "6376948c08121b60ad49a005e4ac22b266930b748644ece068a2c306fe7e64df"
     },
     {
       "path": "visual/assets/run-dynamic-preference-screen.js",
       "role": "verification_script",
       "required": true,
-      "sha256": "ee8eae17cbd0304751f816fbb1698d80cae40b79b3f63df7d846f3e8cd586ce8"
+      "sha256": "34fac98577d8d73981eddf2000c7274373d1e76ed716ae6e5349a63eef109f60"
     }
   ]
 }
