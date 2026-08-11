@@ -19,8 +19,7 @@
     {
       "path": "manifest.json",
       "role": "manifest",
-      "required": true,
-      "sha256": "b63a0a6272e1780303ef0548e7c4032535cc740194e915a3015e48c1e5896d4e"
+      "required": true
     },
     {
       "path": "proposal.md",
@@ -40,7 +39,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "64fad6d2968d12bd2fb5388ae3ee951a9abfa9196231ab2c77f1eda2f2f52769"
+      "sha256": "4120eb408323e7356706c95865c867d9e8a595934c9ae2bd49e9c50c2f284a1b"
     },
     {
       "path": "assumptions.json",
@@ -58,7 +57,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "deb72dcc57856292b2935fba873e9240d2a488074997f0e9756943f1730862cb"
+      "sha256": "3603dcd78266f8be49871393436dcaf178c63f49fcfa13841ca73b09888261e2"
     },
     {
       "path": "compliance_matrix.json",
@@ -178,7 +177,7 @@
       "path": "geometry/green_space.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "bf13ad30056f38bcdd21c05d72a3b652d890919e76c5128e7b311f9ad8195b18"
+      "sha256": "853cd122227163cdc2c4e6ed6e2d7d890cf122a1f219fa302a4a36cb7a1cdf0b"
     },
     {
       "path": "geometry/key_areas.geojson",
@@ -190,7 +189,7 @@
       "path": "geometry/land_use.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "7e453a1010c26d615b2a88b4dd27c30fce5b87646f4758d9012ac71276826080"
+      "sha256": "42860e14630ddb0272de1a147c65b8fe75e6b0fce994f83a41d96eb9f8fff3fa"
     },
     {
       "path": "geometry/phasing.geojson",
@@ -202,7 +201,7 @@
       "path": "geometry/public_space.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "423d9d5a89a6b36c6f56efc1bad4935e8be5936ad1b3d70bc76460a5c59bad78"
+      "sha256": "e35279f0ebf2b4032b80eeb36af48d1a8b952fb0b9540ce61dbd61178186ef41"
     },
     {
       "path": "geometry/roads.geojson",
@@ -289,6 +288,7 @@
   ],
   "validation_claim": {
     "self_checked": true,
+    "readiness_contract": "persisted-self-check-v1",
     "known_blockers": [
       "Official polygon data needed for final metrics recalculation (provisional boundary)"
     ],

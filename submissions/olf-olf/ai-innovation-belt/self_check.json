@@ -1,5 +1,7 @@
 {
   "schema_version": "0.1.0",
+  "ok": true,
+  "can_enter_formal_review": true,
   "checks": [
     {
       "check_id": "SC-SCOPE-001",
@@ -136,6 +138,38 @@
       "target": "geometry/",
       "message": "所有图层标注为provisional_constraint",
       "suggested_fix": "官方数据发布后重算"
+    },
+    {
+      "check_id": "DETERMINISTIC_VALIDATION",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "manifest.json",
+      "message": "Schema validation: manifest, metrics, assumptions, sources, compliance_matrix, standard_matrix, design_depth_matrix all pass; self_check conforms to persisted-self-check-v1",
+      "suggested_fix": "N/A"
+    },
+    {
+      "check_id": "SPATIAL_REVIEW",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "geometry/",
+      "message": "Spatial review: 13 land-use zones with corrected areas, zero overlap, full coverage; LU-013 railway corridor added; schema validation passed; building footprint recomputed from geometry",
+      "suggested_fix": "N/A"
+    },
+    {
+      "check_id": "VISUAL_PACKAGING",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "visual/index.html",
+      "message": "Visual packaging: index.html with three-view layout, legend, and metrics panel; bilingual index.en.html generated",
+      "suggested_fix": "N/A"
+    },
+    {
+      "check_id": "PROFESSIONAL_EVIDENCE",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "drawings/",
+      "message": "Professional evidence: A3 booklet and A0 boards generated with bilingual versions; proposal.html and proposal.en.html include embedded figures",
+      "suggested_fix": "N/A"
     }
   ]
 }
