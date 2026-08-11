@@ -193,6 +193,14 @@ Reviewers can run `node visual/assets/run-regional-commute-simulation.js`, `node
 
 The scale readout is explicitly two-part: synthetic agents and hypothetical trip legs are separate audit outputs [metric:synthetic_agent_count] [metric:synthetic_trip_legs_screened].
 
+### AI mobility-service resource passport: account for burden before scale
+
+The population replay answers how grouped travellers choose modes and where the declared network queues. The resource passport adds the service ledger beside that replay. Ten scenario cards check seven resource classes: compute and network, energy and fuel, physical devices, data and privacy, human review, supplier and maintenance, and failure and exit. Each class has a control and a dated evidence request. Real measurements remain 0, approved operating scenarios remain 0 and the status stays `unknown`. Enterprise shuttles, night returns, loading reservations and accessible routes therefore face the same accountability surface [data:visual/assets/resource-passport.json] [data:visual/assets/resource-passport-readout.json].
+
+Five NO-GO gates run before efficiency comparison: no equivalent human or public-transport path; personal continuous traces required; no maintenance exit for a device or supplier; harm to fire access, accessibility or a quiet interface; or failure, removal and public-route restoration left unregistered. The passport does not estimate local electricity, carbon, procurement quantities, staffing performance or public acceptance. Those fields require dated metering, responsibility records, maintenance logs and participation evidence. The offline runner checks seven resource classes, ten cards, five gates and the blocked air candidate, while the board shows the auditable chain from grouped demand to choice, human/transit fallback, review and withdrawal [data:visual/assets/run-resource-passport.js].
+
+![AI mobility-service resource passport: seven resource classes, ten scenario cards and five NO-GO gates](assets/figures/resource-passport-board.en.svg)
+
 ## Metrics, Area Recalculation, and Compliance Matrix
 
 ### Current readable base

@@ -1,5 +1,11 @@
 # 方案迭代记录
 
+## v1.12 - 2026-08-12
+
+- Added a bilingual AI mobility-service resource passport covering ten scenario cards and seven resource classes: compute/network, energy/fuel, physical devices, data/privacy, human review, supplier/maintenance, and failure/exit.
+- Added a deterministic readout and paired SVG boards. All local measurements and operation approvals remain zero/unknown; five NO-GO gates keep missing human fallback, privacy, maintenance exit, public-route safety or restoration evidence from entering expansion.
+- Kept the passport separate from the population-scale transport choice and resource-pressure screens; it does not estimate local energy, emissions, procurement, staffing performance or public acceptance.
+
 ## v1.11 - 2026-08-12
 
 - Downgraded the provisional site-area metric confidence from `high` to `low`. The value remains a transparent working-area calculation, but its source is explicitly provisional geometry and must not be read as an official area or scoring basis.
