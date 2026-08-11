@@ -1,0 +1,50 @@
+{
+  "standards_covered": [
+    {
+      "standard_id": "PROJECT-OFFICIAL-ANNOUNCEMENT",
+      "mandatory": true,
+      "status": "COMPLETE",
+      "evidence": "proposal.md sections referencing scope, tasks, and depth requirements"
+    },
+    {
+      "standard_id": "PROJECT-AGENT-OPEN-CALL-TASKBOOK",
+      "mandatory": true,
+      "status": "COMPLETE",
+      "evidence": "All 6 agent tasks covered in compliance_matrix"
+    },
+    {
+      "standard_id": "MOHURD-URBAN-DESIGN-MEASURES",
+      "mandatory": true,
+      "status": "COMPLETE",
+      "evidence": "proposal.md urban design, public space, and city character sections"
+    },
+    {
+      "standard_id": "MOHURD-CONTROL-DETAILED-PLANNING",
+      "mandatory": true,
+      "status": "COMPLETE",
+      "evidence": "Known vs pending control distinction throughout"
+    },
+    {
+      "standard_id": "MNR-LAND-USE-CLASSIFICATION-GUIDE",
+      "mandatory": true,
+      "status": "COMPLETE",
+      "evidence": "land_use.geojson uses standard codes"
+    },
+    {
+      "standard_id": "GENERATIVE-AI-INTERIM-MEASURES",
+      "mandatory": false,
+      "status": "REFERENCED",
+      "evidence": "AI governance boundaries noted in risk section"
+    },
+    {
+      "standard_id": "BARRIER-FREE-ENVIRONMENT-LAW",
+      "mandatory": false,
+      "status": "REFERENCED"
+    },
+    {
+      "standard_id": "ELDERLY-SMART-TECH-PLAN-2020-45",
+      "mandatory": false,
+      "status": "BACKGROUND"
+    }
+  ]
+}
