@@ -88,11 +88,20 @@
         "submissions/Grady10086/railweave-open-city/self_check.json",
         "submissions/Grady10086/railweave-open-city/sources.json",
         "submissions/Grady10086/railweave-open-city/standard_matrix.json",
+        "submissions/Grady10086/railweave-open-city/visual/assets/annual_operations_register.json",
+        "submissions/Grady10086/railweave-open-city/visual/assets/cost_evidence_plan.json",
+        "submissions/Grady10086/railweave-open-city/visual/assets/culture_storyline.json",
+        "submissions/Grady10086/railweave-open-city/visual/assets/ecosystem_operating_map.json",
+        "submissions/Grady10086/railweave-open-city/visual/assets/fact_index.json",
         "submissions/Grady10086/railweave-open-city/visual/assets/implementation_register.json",
         "submissions/Grady10086/railweave-open-city/visual/assets/railweave_runner.js",
         "submissions/Grady10086/railweave-open-city/visual/assets/receipt.json",
+        "submissions/Grady10086/railweave-open-city/visual/assets/s06_minimum_delivery_package.json",
         "submissions/Grady10086/railweave-open-city/visual/assets/scenario_prototypes.json",
+        "submissions/Grady10086/railweave-open-city/visual/assets/source_registry.json",
+        "submissions/Grady10086/railweave-open-city/visual/assets/spatial_source_conflicts.json",
         "submissions/Grady10086/railweave-open-city/visual/assets/synthetic_cases.json",
+        "submissions/Grady10086/railweave-open-city/visual/assets/verification_handoff_register.json",
         "submissions/Grady10086/railweave-open-city/visual/assets/weave_contracts.json",
         "submissions/Grady10086/railweave-open-city/visual/index.en.html",
         "submissions/Grady10086/railweave-open-city/visual/index.html"
@@ -100,7 +109,7 @@
       "ai_package_stages": {
         "submissions/Grady10086/railweave-open-city": "formal"
       },
-      "total_bytes": 36030827,
+      "total_bytes": 40698705,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -143,10 +152,10 @@
       "metrics": {
         "site_area_sqm": 11412825.386,
         "green_space_area_sqm": 3171511.654,
-        "public_space_area_sqm": 61582.993,
+        "public_space_area_sqm": 61576.969,
         "building_footprint_area_sqm": 0.0,
         "green_ratio": 0.27789,
-        "public_space_ratio": 0.005396
+        "public_space_ratio": 0.005395
       }
     },
     "stderr": ""
@@ -174,15 +183,15 @@
       "summary": {
         "standard_matrix_items": 6,
         "design_depth_items": 15,
-        "known_metric_refs_required": 16,
+        "known_metric_refs_required": 24,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 29,
+          "source": 34,
           "standard": 6,
           "depth": 14,
-          "data": 24,
-          "metric": 10
+          "data": 25,
+          "metric": 18
         }
       }
     },

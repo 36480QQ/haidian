@@ -271,8 +271,14 @@ function validateContracts(checks, document) {
   }
   const reserve = s06.exit_reserve;
   checks.require(isObject(reserve), "S06 exit_reserve missing");
-  checks.require(reserve.minimum_percent === 10, "S06 exit reserve minimum must be 10%");
-  checks.require(reserve.maximum_percent === 15, "S06 exit reserve maximum must be 15%");
+  checks.require(
+    reserve.percentage_status === "not_prescribed" && reserve.amount_status === "unpriced_unapproved",
+    "S06 exit resources must remain unpriced, unapproved and without a prescribed percentage",
+  );
+  checks.require(
+    isNonempty(reserve.sufficiency_standard_zh) && isNonempty(reserve.required_evidence),
+    "S06 exit resource sufficiency standard or evidence list missing",
+  );
   checks.require(isNonempty(reserve.covered_items), "S06 exit reserve covered items missing");
   checks.require(
     (reserve.boundary_zh || "").includes("不是报价"),
@@ -494,7 +500,8 @@ function runSuite(contractsPath, casesPath, receiptPath) {
     s06_90_day_slice: {
       present: true,
       segments: ["days_0_30", "days_31_60", "days_61_90"],
-      exit_reserve_percent_range: [10, 15],
+      exit_resource_standard: "verified_itemised_resources_sufficient_for_restoration",
+      exit_resource_amount_status: "unpriced_unapproved",
       status: "conceptual_pre_registration_not_an_approved_schedule",
     },
     case_results: results,

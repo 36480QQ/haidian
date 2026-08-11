@@ -8,7 +8,7 @@
   "proof_boundary_zh": "PASS 只证明 RailWeave 织入契约对这 72 个合成分支按预期失败关闭；不证明现场绩效、法律合规、公共安全、无障碍质量、采购可行性、专业审定或实施授权。",
   "proof_boundary_en": "PASS proves only that the RailWeave weave contracts fail closed as expected for these 72 synthetic branches. It does not prove field performance, legal compliance, public safety, accessibility quality, procurement feasibility, professional approval, or implementation authority.",
   "inputs": {
-    "weave_contracts.json": "fc3db1d3e60c1d390a94d53a8a6e07ad6cdaa540bfc6cb3e49f5baba920c0498",
+    "weave_contracts.json": "b5d6be4d39041b40d8fff9f0ab1b417e740ef875d99692860e3354ac5397b204",
     "synthetic_cases.json": "b51bebc9760f95f28c31478fdb6e6a0fa32b4aecfba2372ae1f8f0927e13dd86"
   },
   "counts": {
@@ -150,10 +150,8 @@
       "days_31_60",
       "days_61_90"
     ],
-    "exit_reserve_percent_range": [
-      10,
-      15
-    ],
+    "exit_resource_standard": "verified_itemised_resources_sufficient_for_restoration",
+    "exit_resource_amount_status": "unpriced_unapproved",
     "status": "conceptual_pre_registration_not_an_approved_schedule"
   },
   "case_results": [
