@@ -7,7 +7,7 @@
   "model_family": "gpt",
   "model_detail": "OpenAI Codex agent based on GPT-5; exact serving snapshot not asserted by the package",
   "provider": "OpenAI",
-  "generated_with": "scripts/scaffold_ai_submission.py; OpenAI Codex skill-alignment, key-area evidence, source-rights lineage, and T-02 synthetic governance replay passes; Node.js zero-dependency replay; deterministic SVG-to-PNG export; ReportLab invariant PDF generation with full-figure A3/A0 placement; PyMuPDF and Pillow QA",
+  "generated_with": "scripts/scaffold_ai_submission.py; OpenAI Codex skill-alignment, Round 2 three-switchyard spatial-prototype deepening, key-area evidence, source-rights lineage, and T-02 synthetic governance replay passes; Node.js zero-dependency replay; deterministic SVG-to-PNG export; ReportLab invariant PDF generation with full-figure A3/A0 placement; PyMuPDF and Pillow QA",
   "authoring_mode": "agent-maintained package extraction",
   "tools_used": [
     "OpenAI Codex (GPT-5 family; exact serving snapshot not asserted)",
@@ -66,11 +66,11 @@
     {
       "tool_id": "TOOL-HAIDIAN-VALIDATION",
       "name": "Haidian repository validation scripts",
-      "version": "main@7600fc3c98a5ed3ba6d80ff3cca12f7a50d7d4a9",
+      "version": "main@f72d89db35aa182db803aae50339aec58c4f814b",
       "usage": "对最终投稿包执行 formal stage gates。",
       "license_or_terms_status": "No repository-root license file was present in the validation checkout; reuse terms remain not independently established by this package.",
       "redistribution_status": "Scripts are referenced in place and are not copied into this submission package.",
-      "reproduction_path": "Run the named scripts from repository commit 7600fc3c98a5ed3ba6d80ff3cca12f7a50d7d4a9."
+      "reproduction_path": "Run the named scripts from repository commit f72d89db35aa182db803aae50339aec58c4f814b."
     },
     {
       "tool_id": "TOOL-GIT",
@@ -112,10 +112,10 @@
       "tool_id": "TOOL-FONTTOOLS",
       "name": "fontTools",
       "version": "4.63.0",
-      "usage": "使用 instantiateVariableFont(..., optimize=True, updateFontNames=True, static=True) 从 NotoSansSC-VF.ttf 在内存中确定性实例化 400/700 字重，供 ReportLab 嵌入 PDF；临时静态字体不落入投稿包。",
+      "usage": "使用 instantiateVariableFont(..., optimize=True, updateFontNames=True, static=True) 从 NotoSansSC-VF.ttf 在内存中实例化 400/700 字重，并以 recalcTimestamp=False 固定 head.modified 后供 ReportLab 嵌入 PDF；临时静态字体不落入投稿包。",
       "license_or_terms_status": "MIT license reported by installed package metadata; source-font license applicability remains a separate independent-review item.",
       "redistribution_status": "Library, source variable font, and temporary static instances are not redistributed by this submission.",
-      "reproduction_path": "Use the source-font version and SHA-256 plus the instancing parameters recorded in report/narrative.md; save in memory with reorderTables=False."
+      "reproduction_path": "Use the source-font version and SHA-256 plus the instancing parameters recorded in report/narrative.md; set recalcTimestamp=False before saving with reorderTables=False."
     },
     {
       "tool_id": "TOOL-PYMUPDF",
