@@ -27,8 +27,8 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "30446ff02a435c80d4bbc3a5b393a7a2087ba7236ede947d30745e6a1214eaea",
-      "bytes": 44060
+      "sha256": "039d3e12e30948deda35779f039e44309db47a90cccabd4c742a313ace79ab3b",
+      "bytes": 47528
     },
     {
       "path": "agent.json",
@@ -55,14 +55,14 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "4d7697b4030ce22ab8da16c84ac7c8b35ddf4dff22aed4c2ee634356ffa82e62",
-      "bytes": 4794
+      "sha256": "c0bc565567e7e402460360c2a7bfce611b0778f80205c339593179cdcf8f46b5",
+      "bytes": 5105
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "0ed07bdf49f98bf61685cdb26fb676a57c9028a6b460d543159e3ac83da5ecfd",
+      "sha256": "1694ac8097d65f06d398c4bdf45694e5fa98f45774064207d7461f775993a42f",
       "bytes": 9996
     },
     {
@@ -91,8 +91,8 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "4ff2b309504e6f72d7c41907d748834372f9b9e50c678ad579ac8d5f84d2d925",
-      "bytes": 60888
+      "sha256": "8cd33a8e64f638ac7bf6cfeb916bb210fd62f2a0ce8fcd32617942d5ec1ae507",
+      "bytes": 67046
     },
     {
       "path": "report/narrative.md",
@@ -129,8 +129,8 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "bd7f0613e78e8a6f3569be31fae178193abc97a23b77c0f3d78b9ec6b9df8346",
-      "bytes": 6247
+      "sha256": "b08a36e904653f9ab01517aa80b5ecce15fff3274c43153edb9c83707de67196",
+      "bytes": 7132
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -241,8 +241,8 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "397ede9e8d3de34297f608a6d5f96105e99e4fce167510b4fa4519292d5fdd68",
-      "bytes": 25808
+      "sha256": "40c9a826d8fbf9b57e46ee9afda77f066230104a30c3b40b05cdcc9c0988e408",
+      "bytes": 28282
     },
     {
       "path": "report/proposal.en.html",
@@ -250,8 +250,8 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "6338fcc2228b6b6e733f6675e22d7948761e844566b9a5f83a8c7fc257fcecdf",
-      "bytes": 31161
+      "sha256": "96c81750b772521bdd27acde37cd6af782abc1e84b1fcd5fb1ce14b691f4c329",
+      "bytes": 33697
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -277,8 +277,8 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "a1edda1dffe3f5146e134667f272b2c6936d829a2d7c1afcd335c46e4d3f9a25",
-      "bytes": 5958
+      "sha256": "1eea2ae8399a8d8078cb423fe740e5c208967256fa26461617535bcfab8e301b",
+      "bytes": 7172
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -329,8 +329,8 @@
       "path": "changelog.md",
       "role": "review_response_evidence",
       "required": false,
-      "sha256": "9a5316230538ab7c80226b1233cd34476f7f48cace16d0d1456d21c2fc749636",
-      "bytes": 1255
+      "sha256": "53f2105f6d55c3d0220e011a5ef5097e518e722b014971dbdec92382171c6ab3",
+      "bytes": 1762
     },
     {
       "path": "visual/assets/scenario-governance-matrix.json",
@@ -427,7 +427,7 @@
       "path": "visual/assets/civic-spine-claim-provenance-audit.json",
       "role": "local_audit_evidence",
       "required": true,
-      "sha256": "272d3ff6357d724ccdeafa7c42b97ade512bc2bce2b71ec1c80942b1161abd86",
+      "sha256": "fb19fe72a6a69715c02fd9b8b97ca2ecc5efcace7369a0773ca66a4c52405ebd",
       "bytes": 13152
     },
     {
@@ -465,6 +465,6 @@
     "data_confidence": "medium_provisional_geometry",
     "readiness_contract": "persisted-self-check-v1"
   },
-  "iteration": "v0.5",
-  "last_participant_update": "2026-08-11T12:30:00Z"
+  "iteration": "v0.6",
+  "last_participant_update": "2026-08-11T13:50:00Z"
 }

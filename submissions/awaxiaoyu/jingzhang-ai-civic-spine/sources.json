@@ -8,6 +8,12 @@
       "usage": "Project brief, enums, allowed design space, ranges, and schemas."
     },
     {
+      "id": "PUBLIC-BRIEF",
+      "path": "brief/public-brief.md",
+      "source_type": "official_public_brief",
+      "usage": "Public-facing brief narrative used only as a readable entry point; controlling requirements remain in the official announcement, site package and agent taskbook."
+    },
+    {
       "id": "SOURCE-REGISTRY",
       "path": "data/source_registry.json",
       "source_type": "repository_public_registry",

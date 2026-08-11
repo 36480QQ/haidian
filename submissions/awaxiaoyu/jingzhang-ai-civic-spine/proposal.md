@@ -9,12 +9,26 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "基于 provisional boundary 和结构化自检要求生成的 formal AI 城市设计方案包；保留精度警示和复算要求，但组织方数据缺口不阻断内容评分。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v0.5"
+iteration: "v0.6"
 ---
 
 
 # 京张智脊：百年铁路遗产上的 AI 公民创新走廊
 
+
+### v0.6 One-Page Scoring Evidence Table / Reviewer Quick Map
+
+| AI Review Dimension | v0.6 direct repair | Visible evidence entry | Cannot prove |
+| --- | --- | --- | --- |
+| Brief alignment | agent.1-agent.6, three scope levels, three key areas, and the three-area/two-wing loop are compressed into ten visible claims linked to proposal, metrics, GeoJSON, visual pages, and self-check | `civic-spine-claim-provenance-audit.json`; `compliance_matrix.json`; `taskbook-delivery-checklist.json` | official selection or implementation authorization |
+| Originality | Jing-Zhang Civic Spine is framed as a civic operating system with claim provenance and delivery audit, not only a naming concept | `civic-spine-claim-provenance.json`; `score-repair-map.json`; six spatial prototypes | organizer adoption |
+| AI planning innovation | Every AI scenario card requires data minimization, assistive algorithm role, failure modes, human takeover, switchback, and privacy boundary | `run-civic-spine-delivery-audit.js --check`; 12/12 scenario cards PASS | AI model safety or real deployment performance |
+| Implementation feasibility | 12 work packages include phase, cost, owner type, approval dependency, KPI, public value, pause trigger, and professional interface; four malformed fixtures are rejected | `project-implementation-register.json`; `civic-spine-delivery-audit-result.json` | funding, ownership, fire-safety, utility, or construction approval |
+| Public interest and inclusion | Six user groups keep manual, paper, non-smartphone, appeal, or night-safety pathways; removing human takeover fails the audit | `inclusion-governance-matrix.json`; negative fixture `NEG-SCENARIO-NO-HUMAN-TAKEOVER` | field accessibility compliance or achieved SLA |
+| Risk compliance | Core metrics, boundary, cases, rights, bilingual evidence, and four gates all carry cannot-support limits; provisional warnings remain visible | `civic-spine-claim-provenance-audit.json`; `sources.json`; `self_check.json` | official redline, FAR, height, or government endorsement |
+| Expression completeness | CN/EN proposal, report HTML, visual HTML, manifest, sources, and persisted audits expose the same v0.6 high-water evidence | `proposal.md` / `proposal.en.md`; `report/proposal.html`; `visual/index.html` | gallery publication or final score |
+
+> **v0.6 verifiable high-water evidence:** This revision adds two dependency-free local runners so the package is not just visually complete. `node visual/assets/run-civic-spine-claim-provenance.js --check` checks ten visible claims: core metrics, three key areas, 12 scenario cards, 12 delivery packages, six inclusion groups, eight global mechanism prompts, rights/bilingual evidence, and four-gate self-check status. `node visual/assets/run-civic-spine-delivery-audit.js --check` checks 12 AI scenario cards, 12 implementation projects, three key-area operating sections, and six inclusion response groups, then rejects four malformed negative fixtures. Both runners are `local_structural_audit` evidence only: they prove replayable traceability and stop conditions, not official redlines, field performance, AI model safety, publication, score, or government endorsement.
 
 本方案的核心主张是把京张铁路遗产公园从线性纪念空间升级为“AI 公民创新走廊”：以遗产轨迹作为公共记忆骨架，以三处重点区承载研发、验证、发布、生活与治理场景，以连续慢行和蓝绿公共空间把高校、企业、社区、轨道站点和公共服务串联为可运营的城市创新界面 [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]。方案不把 AI 简化为标识或展陈，而是把“数据可审计、场景可复核、运营可迭代”作为城市设计的空间约束：每一类 AI 服务节点都必须落到图层、指标、责任主体、隐私边界和人工复核机制中 [depth:municipal_new_infrastructure]。
 

@@ -1,4 +1,10 @@
 # 方案迭代记录
+## v0.6 - 2026-08-11
+
+- Added a bilingual one-page scoring evidence table directly under the proposal title so Review Agent can see seven-dimension repairs before the long narrative.
+- Added a visible v0.6 scoring-evidence map to both visual HTML pages, linking claim provenance, delivery audit, self-check, metrics and GeoJSON.
+- Re-rendered Chinese and English report HTML and refreshed manifest hashes while preserving provisional-boundary warnings and non-endorsement limits.
+
 
 ## v0.3 - 2026-08-10
 
