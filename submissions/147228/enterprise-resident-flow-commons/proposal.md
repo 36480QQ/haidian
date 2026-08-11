@@ -293,13 +293,15 @@ iteration: "v2.0-population-scale-screen"
 
 现有全人口回放先回答网络能否承受；新增屏再回答不同群体在早到岗、日间服务、晚高峰回程和夜班回家时，哪些偏好变化会改变选择。它将八类群体、四个时段、四个政策候选展开成 32 个合成决定单元，使用时间、等待、可靠性、无障碍、舒适度和成本六项声明式权重。这个结构参考滚动时域多方式规划、按需多方式交通公平和多方式服务质量研究；论文用于方法边界，不提供海淀参数或居民满意度 [source:DYNAMIC-PREFERENCE-MULTIMODAL-2025] [source:ODMTS-TRANSIT-EQUITY-2024] [source:MULTIMODAL-SERVICE-QUALITY-2024]。
 
-屏查把“未经筛选的满意度最高”和“硬门后可选的满意度最高”分开。区域回放原始代理分数最高的是 O3 慢行优先，数值为 66.78，但方式负荷和接驳护栏未过。O4 容量平衡的动态偏好代理为 71.13，最弱群体 P10 为 70.06，且通过公共交通、容量、无障碍、外来汽车流入和空中闭锁硬门，因此成为当前合成筛查中的最高可选候选。这两个数值都不是居民问卷；它们只说明硬门先于满意度排序，物流与人员服务仍然可以放在同一张复核表上 [data:visual/assets/dynamic-preference-readout.json] [data:visual/assets/run-dynamic-preference-screen.js]。
+首末端被单独列为可达性条件，步行和骑行还保留舒适度与环境偏好的变化。残障乘客首末端经验研究和脆弱道路使用者动态路径研究支持把站口到街区的连续性、舒适度和环境偏好单独记录；它们只限定方法，不提供海淀参数或居民满意度 [source:DISABLED-FIRST-LAST-MILE-2024] [source:MODYPER-VULNERABLE-ROAD-USER-2025]。
 
-图中右侧把每类群体在四个时段的可选政策并排展开。地铁和公交继续是骨干；自行车、步行/无障碍、汽车、企业接驳和物流作为地面候选进入相同选择表；空中候选保持 0 个代理。O3 的较高原始代理分数不能掩盖容量失败，O4 也不能绕过分组调查、15 分钟 OD、可靠性记录、无障碍走查或居民和企业复核 [data:visual/assets/dynamic-preference-screen.json] [source:PEOPLE-PARCELS-ABM-2026]。
+屏查把“未经筛选的满意度最高”和“硬门后可选的满意度最高”分开。区域回放原始代理分数最高的是 O3 慢行优先，数值为 66.78，但方式负荷、接驳份额和首末端完成率均未过。O4 容量平衡的动态偏好代理为 71.13，最弱群体 P10 为 70.06，首末端完成率代理为 92.1%，且通过公共交通、容量、无障碍、外来汽车流入和空中闭锁硬门，因此成为当前合成筛查中的最高可选候选。这些数值都不是居民问卷；它们只说明硬门先于满意度排序，物流与人员服务仍然可以放在同一张复核表上 [data:visual/assets/dynamic-preference-readout.json] [data:visual/assets/run-dynamic-preference-screen.js]。
+
+图中右侧把每类群体在四个时段的可选政策并排展开。地铁和公交继续是骨干；自行车、步行/无障碍、汽车、企业接驳和物流作为地面候选进入相同选择表；空中候选保持 0 个代理。首末端完成率单独检查站口到街区、街区到工作地或家庭的连续路径，避免把“有一班车”当成“人能完成整段行程”。O3 的较高原始代理分数不能掩盖容量和首末端失败，O4 也不能绕过分组调查、15 分钟 OD、可靠性记录、无障碍走查或居民和企业复核 [data:visual/assets/dynamic-preference-screen.json] [source:PEOPLE-PARCELS-ABM-2026] [source:DISABLED-FIRST-LAST-MILE-2024]。
 
 ![动态偏好与满意度复核：八类群体、四个时段和硬门后候选](assets/figures/dynamic-preference-board.svg)
 
-评审者可运行 `node visual/assets/run-dynamic-preference-screen.js --check`，复核 13/13 项结构检查、8 类群体、4 个时段、32 个决定单元和 0 个空中代理。这个 PASS 只证明声明式偏好、持久回放字段、硬门顺序和图件可以离线重放，不代表满意度、公众接受、运营许可或 Review Agent 分数。
+评审者可运行 `node visual/assets/run-dynamic-preference-screen.js --check`，复核 14/14 项结构检查、8 类群体、4 个时段、32 个决定单元、首末端字段和 0 个空中代理。这个 PASS 只证明声明式偏好、持久回放字段、硬门顺序和图件可以离线重放，不代表满意度、公众接受、运营许可或 Review Agent 分数。
 
 ### AI 交通服务资源护照：把扩容前的负担逐项摊开
 

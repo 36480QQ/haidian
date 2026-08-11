@@ -1,5 +1,11 @@
 # 方案迭代记录
 
+## v1.23 - 2026-08-12
+
+- Added an explicit first/last-mile completion guard to the dynamic preference screen, separating station-to-block continuity from the transit leg and keeping the air candidate at zero agents.
+- Added two primary method references on disabled riders' first/last-mile experience and dynamic vulnerable-road-user routing; neither imports local coefficients or outcomes.
+- Added the dynamic preference board to both offline visual indexes so the 8-group × 4-window × 4-policy replay is visible beside the existing population-scale and mode-competition evidence.
+
 ## v1.22 - 2026-08-12
 
 - Added a bilingual dynamic-preference and satisfaction screen for eight synthetic groups, four time windows and four policy candidates.
