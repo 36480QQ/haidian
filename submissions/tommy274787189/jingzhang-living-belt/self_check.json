@@ -1,6 +1,32 @@
 {
   "schema_version": "0.1.0",
+  "ok": true,
+  "can_enter_formal_review": true,
   "checks": [
+    {
+      "check_id": "DETERMINISTIC_VALIDATION",
+      "description_zh": "确定性校验（validate_submission.py）通过：文件齐备、双语契约有效、无高风险模式。",
+      "result": "pass",
+      "severity": "blocking"
+    },
+    {
+      "check_id": "SPATIAL_REVIEW",
+      "description_zh": "空间审查（spatial_review.py）通过：几何闭合、临时边界已披露、面积复算一致。",
+      "result": "pass",
+      "severity": "blocking"
+    },
+    {
+      "check_id": "VISUAL_PACKAGING",
+      "description_zh": "可视化封装审查（visual_review.py）通过：离线页含中文证据标记与指标声明。",
+      "result": "pass",
+      "severity": "blocking"
+    },
+    {
+      "check_id": "PROFESSIONAL_EVIDENCE",
+      "description_zh": "专业证据审查（professional_review.py）通过：证据层齐全、来源可核验。",
+      "result": "pass",
+      "severity": "blocking"
+    },
     {
       "check_id": "SC-001",
       "description_zh": "几何要素坐标闭合、属性齐全；场地边界标记为 provisional_constraint。",
