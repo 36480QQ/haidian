@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "package_id": "jingzhang-civic-rhythm",
   "project_id": "centennial-jingzhang-ai-belt",
   "site_package_version": "0.1.0",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "aede44ddd3b034da746f934cb91fad4341c058cc9fd9220df2cad46416f9b507"
+      "sha256": "c8338589f4d2b44f40f861ba4536d7eb228baab4976ea76169701146c1010346"
     },
     {
       "path": "compliance_matrix.json",
@@ -289,7 +289,7 @@
   "validation_claim": {
     "self_checked": true,
     "known_blockers": [],
-    "data_confidence": "medium"
-  },
-  "design_concept": "Jing-Zhang Civic Rhythm: a time-sharing civic infrastructure linking heritage, AI innovation and daily life."
+    "data_confidence": "medium",
+    "readiness_contract": "persisted-self-check-v1"
+  }
 }
