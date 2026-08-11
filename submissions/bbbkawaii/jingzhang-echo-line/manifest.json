@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "package_id": "jingzhang-echo-line",
   "project_id": "centennial-jingzhang-ai-belt",
   "site_package_version": "0.1.0",
@@ -16,11 +16,6 @@
   },
   "generated_at": "2026-08-10T16:10:03Z",
   "files": [
-    {
-      "path": "manifest.json",
-      "role": "manifest",
-      "required": true
-    },
     {
       "path": "agent.json",
       "role": "agent_card",
@@ -82,11 +77,11 @@
     },
     {
       "path": "drawings/a0-boards.en.pdf",
-      "role": "asset",
+      "role": "drawing",
       "required": true,
-      "sha256": "3e0a548d3ba588a8f9c05a280fb1b98d3d9f8862fd522017deb1724fdbc2d44d",
       "language": "en",
-      "translation_of": "drawings/a0-boards.pdf"
+      "translation_of": "drawings/a0-boards.pdf",
+      "sha256": "3e0a548d3ba588a8f9c05a280fb1b98d3d9f8862fd522017deb1724fdbc2d44d"
     },
     {
       "path": "drawings/a0-boards.pdf",
@@ -97,11 +92,11 @@
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
-      "role": "asset",
+      "role": "drawing",
       "required": true,
-      "sha256": "f56faa5e09ce8be0eadad4f59578eb95bea73e421121887e926222a6d4ee4324",
       "language": "en",
-      "translation_of": "drawings/a3-booklet.pdf"
+      "translation_of": "drawings/a3-booklet.pdf",
+      "sha256": "f56faa5e09ce8be0eadad4f59578eb95bea73e421121887e926222a6d4ee4324"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -165,6 +160,11 @@
       "sha256": "66b8ab3db46dca00224c0662890a69c1bc0244902aa3390574f1ec20bc4348ff"
     },
     {
+      "path": "manifest.json",
+      "role": "manifest",
+      "required": true
+    },
+    {
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
@@ -174,9 +174,9 @@
       "path": "proposal.en.md",
       "role": "narrative",
       "required": true,
-      "sha256": "987ed814d1293afa92f5706aaed7a8383d1e199a86be6b96a8b323249be17894",
       "language": "en",
-      "translation_of": "proposal.md"
+      "translation_of": "proposal.md",
+      "sha256": "987ed814d1293afa92f5706aaed7a8383d1e199a86be6b96a8b323249be17894"
     },
     {
       "path": "proposal.md",
@@ -199,11 +199,11 @@
     },
     {
       "path": "report/proposal.en.html",
-      "role": "asset",
+      "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "774e424a19269a49a111e0f2e9f784b79a40be5205aa4a95a4017e304598f037",
       "language": "en",
-      "translation_of": "report/proposal.html"
+      "translation_of": "report/proposal.html",
+      "sha256": "774e424a19269a49a111e0f2e9f784b79a40be5205aa4a95a4017e304598f037"
     },
     {
       "path": "report/proposal.html",
@@ -232,11 +232,11 @@
     },
     {
       "path": "visual/index.en.html",
-      "role": "asset",
+      "role": "visualization",
       "required": true,
-      "sha256": "fdf9c55e2b5800c3c0ff721c2d2f064d42030f814861cc50fb4acd9a16d41178",
       "language": "en",
-      "translation_of": "visual/index.html"
+      "translation_of": "visual/index.html",
+      "sha256": "fdf9c55e2b5800c3c0ff721c2d2f064d42030f814861cc50fb4acd9a16d41178"
     },
     {
       "path": "visual/index.html",
