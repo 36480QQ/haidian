@@ -37,6 +37,35 @@ The five functions form a synergy loop across the three areas and two wings: Zho
 
 Five to eight publicly verifiable global AI innovation ecosystem cases are used as methodological references, from which the proposal derives an innovation-chain model of "university ideation, open-source collaboration, enterprise conversion, public experience, international communication" and maps it onto land, space, talent, compute, data and scenario mechanisms [depth:land_use_layout]. Case citations and industrial statements are limited to public information; no company lists, investment amounts, output values or fiscal commitments are fabricated [depth:risk_missing_data].
 
+**Global AI innovation ecosystem cases (methodological references; transfer conditions are concept suggestions)**:
+
+| Case region | Core mechanism (public knowledge) | Transfer condition to the Belt (concept) |
+| --- | --- | --- |
+| Silicon Valley, USA | University ideation, venture capital, acquisition loop | University-to-inn handover mechanism |
+| Kendall Square, Boston, USA | MIT-adjacent conversion, life-science + AI cluster | AI Origin Community campus-linked conversion |
+| Shenzhen, China | Hardware supply chain and rapid prototyping | Zhongzhiyuan full-stack and standards co-creation |
+| Singapore | Scenario opening and regulatory-sandbox testing | Xiaoyuehe scenario test corridor |
+| Tel Aviv, Israel | Defence-to-civilian technology conversion | Dual-use conversion inn interface (research hypothesis) |
+| Zurich, Switzerland | ETH talent density and stable R&D environment | Talent-zone living ring internationalisation |
+| Hangzhou, China | Platform economy and scenario data | Dazhongsi AI-native consumption and data window |
+| Zhongguancun, Beijing | Local universities and tech services | Zhongguancun service wing for IP and capital |
+
+Cases are for method extraction only; facts and transfer conditions are separated, and transfer conditions are concept suggestions for professional deepening [source:AGENT-TASKBOOK] [depth:existing_conditions_diagnosis].
+
+**Regional synergy interface table** (with Beiwei Community, Future Science City, Huairou Science City, the Economic-Technological Development Area and the Beijing-Tianjin-Hebei region; unverified relationships are research hypotheses):
+
+| Partner | Synergy direction (concept) | Interface carrier (concept) | Evidence status |
+| --- | --- | --- | --- |
+| Beiwei Community | Talent and community-life complementarity | Inn living ring, greenway | Research hypothesis |
+| Future Science City | Large-science-facility and compute linkage | Compute-sharing interface, data corridor | Research hypothesis |
+| Huairou Science City | Basic research to application | Launch inn, pilot interface | Research hypothesis |
+| Beijing ETDA | Smart manufacturing and scenario verification | Test corridor, enterprise inn | Research hypothesis |
+| Beijing-Tianjin-Hebei | Industrial chain division and factor flows | Jing-Zhang rail corridor, event system | Research hypothesis |
+
+Regional synergy is expressed as interfaces, not new redlines; no administrative-boundary or ownership judgement is made; formal synergy requires confirmation by the organisers and professional teams [source:AGENT-TASKBOOK].
+
+Brand and international communication: the English brand semantics build on "Inn = service desk, supply station, living room"; a suggested English tagline is "Rails to Intelligence" (concept). Cross-cultural communication testing (Chinese, English and further languages) is proposed as follow-up deepening; no language test is claimed at this stage [depth:height_massing_character].
+
 ## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
 
 The overall design area requires regulatory-plan-level urban design depth. The proposal develops an urban renewal spatial structure and a low-efficiency land identification method, expressed through land-use, building, road, green, public-space and phasing layers [data:geometry/land_use.geojson] [data:geometry/buildings.geojson]; the road network is in [data:geometry/roads.geojson] and depth constraints in [depth:development_intensity_controls]. The land-use structure is R&D-led (about 29.2% concept share) with commercial, residential, cultural and blue-green land interwoven, all coded under the national classification guide [metric:land_use_research_ratio] [metric:land_use_commercial_ratio] [metric:land_use_residential_ratio].
@@ -59,6 +88,18 @@ The three key areas are mandatory and are designed to detailed depth [depth:thre
 
 The three inns are linked by the heritage park AI greenway [data:geometry/roads.geojson#ROAD-008] and connected by AI inn plaza public-space nodes [data:geometry/public_space.geojson#PUB-001]. Functions, buildings, transport, public space and implementation projects are expressed at concept depth; retain-renovate-demolish and engineering conclusions are left to professional teams and statutory procedures [depth:renewal_project_list].
 
+**AI pilgrimage landmark catalogue** (three or more; concept suggestions respecting heritage, green, blue-line and traffic-safety constraints, avoiding over-entertainment):
+
+| Landmark | Location (concept) | Function and narrative | Constraint note |
+| --- | --- | --- | --- |
+| Origin Bell Tower | AI Origin campus node | Launch events, bell ceremony, open-source landmark | Height and character pending regulatory confirmation |
+| Full-Stack Gallery | Zhongzhiyuan inn cluster | Technology display, compute dashboard, governance window | Building scale for professional deepening |
+| Jing-Zhang AI Salon | Dazhongsi four quadrants | International exchange, consumption, rail heritage narrative | Station integration pending engineering assessment |
+
+**Honour display system**: Jing-Zhang AI contributor name wall (inn plazas, public contribution records), achievement monument (named commemoration of key outcomes), developer honour board (annual selection; concept). The honour system is separate from the Belt-wide Logo system to avoid confusing cultural signage with brand identity [source:AGENT-TASKBOOK] [depth:three_key_area_detailed_design].
+
+**Public-space component library** (concept components for professional deepening): inn information kiosk, accessible seating units, smart information screens (with Braille and voice), shared shading canopy, planting modules, mobile exhibition units, drinking water and emergency facilities; the library follows a unified module and accessibility standard and supports phased implementation [depth:blue_green_public_space] [standard:MOHURD-URBAN-DESIGN-MEASURES].
+
 ![Three key areas (provisional)](assets/figures/key-areas.png)
 
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
@@ -68,6 +109,25 @@ The ecosystem map organises "inn, factor, loop": every inn provides factor suppl
 Five persona types are defined: university researchers and students (campus-adjacent experimentation and open source); AI founders and developers (incubation, compute, scenario testing); leading and smart-device enterprises (industrial chain and data elements); residents and visitors (public experience, consumption and culture); and international visitors and media (landmarks and international communication) [depth:existing_conditions_diagnosis].
 
 Ten or more AI scenario cards are proposed, including inn plaza AI guidance, a full-stack gallery live-compute dashboard, human-machine pair programming in open-source workshops, Origin Bell Tower launch live-streaming, unmanned retail and digital-collectible experiences on the AI-native consumption street, smart guidance along the heritage park greenway, unmanned shuttle pilots in the Xiaoyuehe test corridor, an AI-governance sandbox for public deliberation, an online developer community space and an international digital inn. At least three AI industry test-and-verification scenarios (unmanned shuttle, visual inspection, multi-agent dispatch) are presented as test scenarios, not approved operations, with explicit privacy and human-review boundaries [source:AGENT-TASKBOOK] [depth:risk_missing_data].
+
+**AI+ scenario-space-operation matrix** (input data, model capability, human review, failure fallback, operator and KPIs per scenario; all concept suggestions):
+
+| Scenario | Space (concept) | Input data | Model capability | Human review | Failure fallback | Operator (suggested) | KPI (suggested) |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Inn plaza AI guidance | Three inn plazas | Public map and events | Multimodal QA | Manual info maintenance | Human service desk | Inn operator | Answer accuracy, transfer rate |
+| Gallery compute dashboard | Zhongzhiyuan gallery | Public compute stats | Time-series visualisation | Data-source audit | Static board | Zhongzhiyuan operator | Refresh latency, correctness |
+| Open-source co-creation | AI Origin workshop | Public repo data | Pair-programming aid | Code review | Offline local tools | Developer council | Merge requests, review pass rate |
+| Bell Tower launch stream | Origin Bell Tower | Authorised event content | Transcription and captions | Content pre-approval | Recorded replay | Brand team | Reach, compliance rate |
+| AI-native consumption street | Dazhongsi inn | Public product info | Recommendation | Merchant review | Human checkout | Commercial operator | Conversion, complaint rate |
+| Heritage park smart guide | Park greenway | Public heritage info | Voice and AR guide | Expert review | Paper map | Park administration | Coverage, satisfaction |
+| Test corridor shuttle | Xiaoyuehe wing | Licensed test data | Autonomous dispatch | Safety attendant | Human takeover | Test operator | Intervention rate, zero incidents |
+| Governance sandbox | Inn deliberation hall | Anonymised policy data | Policy simulation | Facilitator | Offline deliberation | Governance committee | Participation, adoption rate |
+| Online developer space | Virtual inns | Public dev data | Collaboration tools | Community admins | Mailing list | Developer council | Active devs, retention |
+| International digital inn | Belt-wide online | Public media assets | Multilingual generation | Translation and release approval | Manual posting | Brand team | International reach, citations |
+
+Human review and failure fallback are mandatory safety boundaries for every scenario; privacy and data-minimisation apply to all, and any personal-data scenario must provide appeal and correction channels [source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
+
+Inclusiveness and accessibility: beyond the five personas, elderly residents, children and carers, persons with disabilities, low-digital-skill residents and night workers are added; every public AI service provides account-free, smartphone-free and human-staffed fallback paths, and public space provides continuous accessible routes, information-accessibility signage and accessible toilets [source:BARRIER-FREE-LAW] [depth:municipal_new_infrastructure]. Participatory review and appeal-correction mechanisms (collection, time-boxed reply, public correction log) are fixed procedures of inn operation [depth:risk_missing_data].
 
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
@@ -95,11 +155,36 @@ The concept renewal project list is organised in three phases—inn pilot, skele
 
 Implementation policy suggestions include scenario-open operation, developer-community co-construction, an honour display system and a "concept-to-professional-deepening" handover mechanism [source:AGENT-TASKBOOK]; all policy mechanisms are stated as suggestions, not confirmed arrangements [depth:risk_missing_data]. All phase polygons lie within the overall design boundary [data:geometry/phasing.geojson].
 
+**Phasing implementation element table** (concept: baseline, dependencies, roles, resources, approval prerequisites, acceptance and exit):
+
+| Phase | Baseline (to survey) | Dependencies | Roles (suggested) | Resource categories | Approval prerequisites | Pilot acceptance | Exit mechanism |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 2026-2028 inn pilot | People flow, ownership, facilities survey | Pilot project initiation | Organisers + inn operator | Fiscal and social capital | Planning and land-use permits | 6-month inn operation review | Convert to public space if unmet |
+| 2028-2031 skeleton network | Phase-1 evaluation data | Greenway completion, station integration | Professional teams + operators | Special funds + enterprise co-build | Regulatory and engineering approval | Greenway completion, transfer efficiency | Phase performance review |
+| 2031-2035 belt-wide inns | Phase-2 operation data | Belt-wide inn network | Multi-party governance | Diversified funding | Statutory planning procedure | Belt-wide evaluation + international KPIs | Continuous review and adjustment |
+
+All elements are concept suggestions for professional deepening; no investment, ownership or approval judgement is made [depth:phasing_implementation] [depth:risk_missing_data].
+
+**Annual event and operation mechanism table** (concept; not confirmed government arrangements):
+
+| Block | Mechanism suggestion | Carrier (concept) |
+| --- | --- | --- |
+| Annual calendar | Spring AI Origin release week, summer developer co-creation marathon, autumn Jing-Zhang AI Innovation Week, winter governance and outcome review | Three inns and online space |
+| Developer community governance | Community council, contributor tiers, code of conduct and arbitration | Open-source workshop |
+| Scenario-open review | Entry review (data minimisation, human review, safe stop) | Governance committee |
+| Public-space maintenance | Funding categories (fiscal, enterprise co-build, social donation) and inspection routines | Inn operator |
+| Brand asset management | Logo/tagline usage rules, visual asset management, derivative licensing flow | Brand team |
+| International conversion | Reach to visit/research to enterprise/talent funnel | International digital inn |
+
+Every funnel stage is a concept suggestion; no output volumes or government funding commitments are promised [source:AGENT-TASKBOOK] [depth:renewal_project_list].
+
 ## Metrics, Area Recalculation, and Compliance Matrix
 
 The metrics and evidence chain: all area metrics are recomputed from submitted geometry under EPSG:4548 [metric:site_area_sqm] [metric:green_ratio]; the public-space share is in [metric:public_space_ratio], and the recalculation method in [depth:metrics_recalculation]; count metrics derive from layer feature counts [metric:building_count] [metric:road_count] [metric:key_area_count]; length metrics derive from road centerlines [metric:road_length_m]. Statutory indicators such as FAR and building height remain `unknown` with a stated reason until official regulatory-plan conditions are published; no inferred values are presented as approved ones [depth:development_intensity_controls].
 
 The compliance matrix maps all 23 required tasks from announcement clauses 1.3-1.5 and agent.1-agent.6; the standard matrix covers the six mandatory standards; the design-depth matrix covers the fifteen formal depth items [depth:three_key_area_detailed_design]. Once official polygons are published, the site boundary, key areas, land use, roads, green space, public space, buildings, phasing and all precision-sensitive metrics must be recomputed and re-checked [depth:metrics_recalculation].
+
+**In-place provisional-boundary labelling**: all area, ratio and count metrics in this package are recomputed from the organisers' provisional rough boundary (`provisional_constraint`) and are for conceptual discussion and display only; the relevant figures (site-overview, key-areas, metrics-evidence, etc.) carry in-place "provisional / recomputed from provisional boundary" notes. When official boundary and key-area polygons are published, all layers and metrics must be recalculated through the same pipeline and re-checked; provisional geometry is never described as precise or statutory data [depth:metrics_recalculation] [depth:risk_missing_data].
 
 ![Key metrics evidence](assets/figures/metrics-evidence.png)
 
@@ -107,7 +192,7 @@ The compliance matrix maps all 23 required tasks from announcement clauses 1.3-1
 
 Key risks and mitigations: (1) boundary risk—the provisional boundary must be replaced and metrics recalculated when official polygons arrive [depth:risk_missing_data]; (2) data risk—some scenarios and events are conceptual and not confirmed arrangements; (3) compliance risk—no non-public data, personal privacy or unauthorised material is used, and no statutory planning, engineering or ownership conclusion is drawn [source:AGENT-TASKBOOK]. Assumptions, sources and the copyright statement are stored in `assumptions.json`, `sources.json` and `report/copyright_statement.md` [depth:existing_conditions_diagnosis].
 
-This proposal is generated by an AI agent (xiaopi668) under the open-call framework, follows the ten co-creation principles, and enters the public knowledge base for further deepening; all spatial recommendations are concept suggestions, and final judgement belongs to humans and professional teams [source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
+This proposal is generated by an AI agent (xiaopi668) under the open-call framework and follows the ten co-creation principles; the licence text is `COMMUNITY-DISPLAY-ONLY`, meaning this package is submitted for community display and open co-creation review, and any further deepening, reuse or republication must retain source attribution and follow repository and organiser policy—the concrete reuse scope between this statement and the public-knowledge deepening intent is governed by the licence text and repository policy [source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]. All spatial recommendations are concept suggestions, and final judgement belongs to humans and professional teams [depth:risk_missing_data].
 
 ## References
 
