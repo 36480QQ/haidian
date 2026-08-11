@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "03f391db9ac3ec9b3eae5333f21cbab4a7745f5b4abe0aee9146cec7f2bfdaa1"
+      "sha256": "9024f7c2c6bee50b8d5230925d71753031b1f7e88905ded341b1dd754dc39f6d"
     },
     {
       "path": "compliance_matrix.json",
@@ -334,7 +334,7 @@
       "title_en": "Every Sense Jing-Zhang proposal cover",
       "description_zh": "方案封面：以品牌的平行感知线与开放节点语法，把 AI 开启与 AI 关闭两条完全等价的服务线并列呈现，线上十个节点对应十个独立完成点，其中三个彩色开放节点标示三处重点区域。图内标注概念建议 / CONCEPT。",
       "description_en": "Proposal cover: using the brand's parallel sensory lines and open-node grammar, it places the AI-ON and AI-OFF service lines side by side as exact equivalents, with ten nodes standing for the ten independent-completion points and three coloured open nodes marking the three key areas. Labelled 概念建议 / CONCEPT on the image.",
-      "sha256": "9862d1da39525e5e594b5bcc07f64db511feb829b92fe701321489cc31daec6e"
+      "sha256": "623dbc2fe151e1ed999ae4e81812a5bf4249028fe7b751f8272ed7c71578837d"
     },
     {
       "path": "assets/media/audio-guide.m4a",
@@ -405,6 +405,49 @@
       "required": false,
       "language": "neutral",
       "sha256": "970d4a28451abd575c63d3cce9c881e935b2ad59c5cefde063572a7ec1a8e438"
+    },
+    {
+      "path": "assets/media/journey.mp4",
+      "role": "video",
+      "required": false,
+      "title_zh": "万感京张 多模态短片（中文旁白 · 中英双语标注）",
+      "title_en": "Every Sense Jing-Zhang multimodal short film (Chinese narration, bilingual on-screen labels)",
+      "description_zh": "63 秒短片，七个镜头：片头主题、总体结构与三处重点区、骨架与等价服务网络、三处重点区的人尺度运行合同、第 16 章交互场景的逐帧实录、品牌语法与文化底线、片尾边界声明。交互段实录连续呈现「播放引导流光」与「切换 AI 关闭」两次真实操作，切换前后十个独立完成节点的位置与可达性、以及服务可达性读数 10 / 10、2、3 / 3 完全不变。中文合成旁白，画面关键标注中英双语，中文字幕既烧录在画面上也提供外挂 WebVTT。无真人录音、无音乐、无实拍、无第三方素材、无生成式影像。",
+      "description_en": "A 63-second film in seven shots: title, overall structure and the three key areas, the framework and equivalent service network, the human-scale operating contracts of the three key areas, a frame-accurate capture of the chapter-16 interactive scene, the brand grammar and cultural baseline, and the closing scope statement. The captured sequence performs two real interactions — play the guidance flow, then switch to AI OFF — after which the ten independent-completion nodes and the service readout of 10 / 10, 2 and 3 / 3 remain unchanged. Synthetic Chinese narration, bilingual on-screen labels, Chinese captions both burnt in and supplied as WebVTT. No human recording, no music, no live-action footage, no third-party assets, no generative imagery.",
+      "poster": "assets/media/journey-poster.webp",
+      "caption": "assets/media/journey.vtt",
+      "transcript": "assets/media/journey.md",
+      "sha256": "9bc4cb314e7655b65c428d240542e17c0e6dd6e56a86db07078bc8eaeadbafeb"
+    },
+    {
+      "path": "assets/media/journey-poster.webp",
+      "role": "media_poster",
+      "required": false,
+      "title_zh": "多模态短片 片头代表帧",
+      "title_en": "Multimodal short film poster frame",
+      "description_zh": "短片片头帧：深青底上的品牌图形、标题「万感京张 / EVERY SENSE JING-ZHANG」、副题「每一种身体都能独立使用的 AI 城市 / An AI city that every kind of body can use independently」与「概念建议 / CONCEPT ONLY」标记，用作视频未播放时的静止封面。1920×1080 无损 WebP，取自成片第 4.3 秒并移除烧录字幕。",
+      "description_en": "Poster frame of the film: on a deep-teal ground, the brand mark, the title 万感京张 / EVERY SENSE JING-ZHANG, the subtitle 每一种身体都能独立使用的 AI 城市 / An AI city that every kind of body can use independently, and the 概念建议 / CONCEPT ONLY tag. Used as the still cover before playback. 1920×1080 lossless WebP, taken from second 4.3 of the film with the burnt-in caption removed.",
+      "sha256": "8113fb6e8b856fce75dc359714fa464edbfe002110eea90460392174c8b9a153"
+    },
+    {
+      "path": "assets/media/journey.vtt",
+      "role": "caption_track",
+      "required": false,
+      "title_zh": "多模态短片 中文字幕",
+      "title_en": "Multimodal short film Chinese captions",
+      "description_zh": "11 条 WebVTT 中文字幕，时间轴由逐句合成样本的实测长度与显式静音间隔精确累加得到，与旁白严格同步；用词与画面烧录字幕、`journey.md` 文字稿完全一致。",
+      "description_en": "Eleven WebVTT Chinese caption cues. The timeline is derived by exact accumulation of the measured length of each synthesised sentence and the explicit silence gaps, so it is strictly synchronised with the narration; the wording is identical to the burnt-in captions and to the transcript in journey.md.",
+      "sha256": "d090544e87392b10ae38c499444d0a17a1af48dd845f570f288417e0c5de47df"
+    },
+    {
+      "path": "assets/media/journey.md",
+      "role": "transcript",
+      "required": false,
+      "title_zh": "多模态短片 分镜、旁白文字稿与权利记录",
+      "title_en": "Multimodal short film storyboard, transcript and rights note",
+      "description_zh": "七个镜头的分镜与画面文字（中英）对照、旁白全文（含时间码）、与 proposal.md 的来源对应表、画面渲染与交互场景逐帧录制的方法记录、语音合成与权利声明、已知限制。同时论证看／听／读三条通道承载相同内容，是方案 AI ON = AI OFF 等价路径原则在自身交付物上的应用。",
+      "description_en": "A shot-by-shot storyboard with bilingual on-screen text, the full narration with time codes, a source mapping to proposal.md, the production record for frame rendering and for the frame-accurate capture of the interactive scene, the synthesis and rights statement, and known limitations. It also documents that watching, listening and reading carry identical content, applying the proposal's own AI ON = AI OFF equivalence principle to its own deliverable.",
+      "sha256": "b0acea0941dca250a60db99fc2d1dece5b8ca792ce4db54566349cb158bedb94"
     }
   ],
   "validation_claim": {
