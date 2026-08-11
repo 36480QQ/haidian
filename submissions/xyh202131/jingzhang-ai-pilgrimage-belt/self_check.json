@@ -38,6 +38,10 @@
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/metrics-evidence.png",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/mobility-bluegreen.en.png",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/mobility-bluegreen.png",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/non-ai-service-blueprint.en.png",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/non-ai-service-blueprint.en.svg",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/non-ai-service-blueprint.png",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/non-ai-service-blueprint.svg",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/site-overview.en.png",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/site-overview.en.svg",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/site-overview.png",
@@ -93,7 +97,7 @@
       "ai_package_stages": {
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt": "formal"
       },
-      "total_bytes": 10056524,
+      "total_bytes": 11067737,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -178,15 +182,15 @@
       "summary": {
         "standard_matrix_items": 6,
         "design_depth_items": 15,
-        "known_metric_refs_required": 88,
+        "known_metric_refs_required": 95,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
           "source": 29,
           "standard": 6,
           "depth": 15,
-          "data": 40,
-          "metric": 60
+          "data": 41,
+          "metric": 62
         }
       }
     },
