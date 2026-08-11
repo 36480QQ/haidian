@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以七本成本账、一本公共回报账与可拒签的停算清账回执为城市设计 admission gate；所有空间动作均为临时约束条件下的概念建议。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v0.4"
+iteration: "v0.5"
 ---
 
 # 京张算清：AI 进入城市前，先把全成本与公共回报算清
@@ -29,6 +29,10 @@ iteration: "v0.4"
 `simulation.json` 对 12 张场景卡运行 24 个离线合成 case：每张卡一条完整回执分支和一条缺证停算分支。24/24 的预期与实际判定一致，所有记录完成审计且不使用真实个人数据；这只证明判定规则可复算，不证明现场绩效、公众接受、工程可行性或审批状态 [metric:closeout_receipt_match_rate] [metric:audit_completeness] [data:simulation.json#full-cost-closeout-receipt-v1]。
 
 离线展板的“拒签台”把这条主张变成可操作的双语评审入口：评审者可选择完整回执或拿走任一记录，界面从 `visual/assets/closeout-review-data.js` 计算决定，并显示责任角色、受影响群体、空间后果、人工后备与修复/退场动作。键盘可完成选择与重算，`noscript` 提供同一规则的静态后备；运行 `node visual/assets/verify-closeout-review.js` 可验证结构化界面数据与 `simulation.json` 的 12 个缺证 fixture 一一对应。该界面不复制或替代现场证据 [data:simulation.json#full-cost-closeout-receipt-v1] [depth:risk_missing_data]。
+
+“责任移交场”进一步追问：七类成本在试点结束、运营换手或退出时，究竟由谁接住。空间、能水、材料设备、数据算力、劳动维护、公众注意和公共资金各有一个 RACI 接收接口；必须同时写明发起方、负责/问责/接收/共评/知会角色、普通非 AI 等价路径、受影响群体、临时空间后果、失败与撤回仍计入的分母，以及接收、拒收和恢复证据。接收角色只写可审计岗位，不收集个人姓名；接收未签认时，成本继续归发起方，不得转嫁给维护者、居民、商户或未来公共预算 [metric:responsibility_handoff_count] [depth:phasing_implementation] [data:visual/assets/responsibility-transfer-data.js#seven-cost-burden-handover-v1]。
+
+`verify-responsibility-transfer.js` 先检查七项完整合约与 GeoJSON 锚点，再运行七个负例：分别删去接收角色、非 AI 等价路径、空间后果、失败分母、停算证据、恢复证据和受影响群体观察员；七个负例必须全部被拒绝。该结果只证明接口能拒绝责任转嫁，不证明岗位已任命、预算已落实或现场移交已发生 [metric:responsibility_handoff_negative_fixture_count] [metric:responsibility_handoff_fixture_match_rate] [depth:risk_missing_data]。
 
 ## 三层范围工作框架
 
@@ -114,6 +118,8 @@ iteration: "v0.4"
 当前提交范围约 11.41 平方公里，绿地与公共窗口比例由同一 GeoJSON 复算；三处重点区、12 张场景卡和 5 个行业验证场景是可数的设计输出 [metric:site_area_sqm] [metric:green_ratio] [metric:public_space_ratio]。
 
 24 个离线 case 中有 12 个完整回执、12 个缺证停算，预期判定一致率为 1.0；这些是协议覆盖指标，不是现场成效 [metric:closeout_receipt_case_count] [metric:closeout_receipt_stop_case_count] [metric:closeout_receipt_match_rate]。
+
+七类成本各有一个责任移交接口和一个缺字段负例；7/7 负例被本地验证器拒绝。这个 1.0 是协议负例命中率，不是责任主体、资金、服务或空间恢复的现场完成率 [metric:responsibility_handoff_count] [metric:responsibility_handoff_negative_fixture_count] [metric:responsibility_handoff_fixture_match_rate]。
 
 空间指标只支持设计比较，不能替代控规。八本账基线、FAR/高度/密度、能源水、劳动、公共回报和现场表现均明确为待补数据，`assumptions.json` 记录责任人、方法和重算触发器 [metric:eight_ledger_baseline] [metric:far_height_density] [metric:field_pilot_performance]。
 

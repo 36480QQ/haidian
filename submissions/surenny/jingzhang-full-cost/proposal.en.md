@@ -7,7 +7,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "A bilingual professional design package that makes seven cost ledgers, one civic-return ledger and a refuse-to-sign closeout receipt the evidence gate before an AI scenario enters public space."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v0.4"
+iteration: "v0.5"
 ---
 
 # COUNT THE FULL COST JING-ZHANG
@@ -27,6 +27,10 @@ The full-cost ledger becomes a governance mechanism only when it can refuse expa
 `simulation.json` runs 24 offline synthetic cases across the twelve scenario cards: one complete-receipt branch and one missing-evidence stop branch per card. Expected and actual decisions match in 24/24 cases, all records are auditable, and no real personal data is used. This proves only that the rule is reproducible, not field performance, public acceptance, engineering feasibility or approval [metric:closeout_receipt_match_rate] [metric:audit_completeness] [data:simulation.json#full-cost-closeout-receipt-v1].
 
 The offline board's Refusal Desk turns the claim into an operable bilingual review entry. A reviewer selects the complete receipt or removes any record; the interface calculates from `visual/assets/closeout-review-data.js` and exposes the responsible role, affected people, spatial consequence, staffed fallback, and repair or retirement action. Selection and recalculation work by keyboard, while `noscript` gives the same rule as a static fallback. Running `node visual/assets/verify-closeout-review.js` verifies that the structured interface data maps one-to-one to the twelve missing-evidence fixtures in `simulation.json`. The interface neither copies nor replaces field evidence [data:simulation.json#full-cost-closeout-receipt-v1] [depth:risk_missing_data].
+
+The Responsibility Transfer Yard asks who actually receives each cost when a pilot ends, operations change hands, or a system exits. Space, energy/water, materials/equipment, data/compute, labor/maintenance, public attention, and public funding each have a RACI receiving interface. Every interface names the originator; responsible, accountable, receiving, consulted, and informed roles; an equivalent non-AI route; affected groups; a provisional spatial consequence; a denominator that retains failures and withdrawals; and acceptance, refusal, and recovery evidence. Roles are auditable functions, not personal names. Without receiver acceptance, liability stays with the originator and cannot move to maintainers, residents, small businesses, or a future public budget [metric:responsibility_handoff_count] [depth:phasing_implementation] [data:visual/assets/responsibility-transfer-data.js#seven-cost-burden-handover-v1].
+
+`verify-responsibility-transfer.js` first checks the seven complete contracts and their GeoJSON anchors, then runs seven negative fixtures. They respectively remove the receiving role, non-AI equivalent, spatial consequence, failed-case denominator, stop evidence, recovery evidence, and affected-group observer; every fixture must be rejected. This proves only that the interface can refuse burden transfer, not that roles have been appointed, budgets funded, or a field handover completed [metric:responsibility_handoff_negative_fixture_count] [metric:responsibility_handoff_fixture_match_rate] [depth:risk_missing_data].
 
 ## Three-Level Scope Framework
 
@@ -112,6 +116,8 @@ JZ-01 through JZ-06 form an evidence-gated renewal list: repair the balance-line
 The current provisional site is about 11.41 km²; green and public-window ratios are recomputed from the same GeoJSON. Three key areas, twelve scenario cards and five industry validation cards are countable outputs [metric:site_area_sqm] [metric:green_ratio] [metric:public_space_ratio].
 
 The tabletop contains twelve complete receipts and twelve missing-evidence stops across 24 cases, with a 1.0 expected-decision match; these measure protocol coverage, not field outcomes [metric:closeout_receipt_case_count] [metric:closeout_receipt_stop_case_count] [metric:closeout_receipt_match_rate].
+
+Each of the seven cost classes has one responsibility-transfer interface and one missing-field negative fixture; the local verifier rejects 7/7. This 1.0 is a protocol fixture match, not field completion of staffing, funding, service, or spatial restoration [metric:responsibility_handoff_count] [metric:responsibility_handoff_negative_fixture_count] [metric:responsibility_handoff_fixture_match_rate].
 
 Spatial numbers support design comparison, not regulatory control. The eight-ledger baseline, FAR/height/density, energy, labor, civic return and field performance are explicit pending data in `assumptions.json` [metric:eight_ledger_baseline] [metric:far_height_density] [metric:field_pilot_performance].
 
