@@ -614,6 +614,19 @@ Implementation uses three city releases instead of a single completion date. Rel
 
 Before a suggested project enters its next gate, it leaves a synthetic human-city handoff receipt. H0 hands a problem from community observation to data and spatial review; H1 confirms an equivalent human entrance; H2 checks minimum fields and revocation; H3 reviews energy, climate, mobility, and safety evidence; H4 performs independent replay and opens an objection window; H5 records version differences and exit. The three cases are synthetic fixtures and the roles are abstract suggestions. They make who takes over, what permits acceptance, when to stop, and how to return to the previous gate queryable without presenting a suggested role as a real operator. [data:visual/assets/human-city-receipt.json] [data:visual/assets/implementation-operation-matrix.json]
 
+### v2.7 bounded public-service tabletop contract | Make “human takes over first” rejectable
+
+The existing handoff receipt answers how one human-first service can be replayed. This revision adds four spatially anchored tabletop contracts for the human channel, city-API authorization, incident replay, and multilingual public service. Each card keeps the user, space, proposed role, permission, minimum data, human alternative, missing baseline, acceptance, privacy, and stop/recovery action on one line. Roles remain pending-authorization placeholders; field_location=null; no real system is connected. [data:visual/assets/human-city-public-service-tabletop-v1.json] [depth:phasing_implementation]
+
+| Contract card | Spatial anchor | Acceptable synthetic action | If evidence is missing or scope is exceeded |
+| --- | --- | --- | --- |
+| HC-T01 Human channel and intergenerational learning | PUBLIC-A-INCLUSION | Submit a question without scanning, receive human explanation and an expected receipt | Return to paper/telephone when the human route is unavailable or exclusionary |
+| HC-T02 City-API authorization desk | SC-B01 | Explain purpose, permission, minimum fields, and revocation | Freeze the call on excess permission, purpose drift, or missing logs |
+| HC-T03 Regulatory-sandbox incident replay desk | SC-C03 | Record who stops, who reviews, how to appeal, and when recovery may be considered | Keep the human-safe state when accountability or human stop is missing |
+| HC-T04 Multilingual public-service living room | PUBLIC-D-GLOBAL | Provide bilingual-reviewed public information and human routing | Retain paper information when bilingual terms or service scope is unclear |
+
+The four positive fixtures must satisfy consent, human handoff, permission scope, minimum data, appeal, bilingual review, and a low-impact action. Eight negative fixtures reject missing consent, human entry, minimum data, permission, appeal, low-impact boundaries, bilingual review, or a spatial anchor. run-human-city-public-service-tabletop-v1.js --check replays 4/4 positive and 8/8 negative fixtures offline and writes an expected receipt. PASS proves only that the contract is rejectable and replayable; it does not prove service performance, staffing, permits, accessibility outcomes, incident safety, public outcomes, or an official score. [data:visual/assets/run-human-city-public-service-tabletop-v1.js] [data:visual/assets/human-city-public-service-tabletop-v1-evidence.json] [depth:risk_missing_data]
+
 | Project | Release | Prerequisite | Stop or rollback condition |
 | --- | --- | --- | --- |
 | Community-retention baseline and return protocol | v0.1 | Resident consent, eligibility, and privacy rules | Do not publish a rate if a credible baseline cannot be formed |

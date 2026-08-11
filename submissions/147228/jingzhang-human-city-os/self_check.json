@@ -135,6 +135,8 @@
         "submissions/147228/jingzhang-human-city-os/visual/assets/human-city-mainline.json",
         "submissions/147228/jingzhang-human-city-os/visual/assets/human-city-ordinary-journey-evidence.json",
         "submissions/147228/jingzhang-human-city-os/visual/assets/human-city-ordinary-journey.json",
+        "submissions/147228/jingzhang-human-city-os/visual/assets/human-city-public-service-tabletop-v1-evidence.json",
+        "submissions/147228/jingzhang-human-city-os/visual/assets/human-city-public-service-tabletop-v1.json",
         "submissions/147228/jingzhang-human-city-os/visual/assets/human-city-receipt-evidence.json",
         "submissions/147228/jingzhang-human-city-os/visual/assets/human-city-receipt.json",
         "submissions/147228/jingzhang-human-city-os/visual/assets/human-city-reference-audit.json",
@@ -159,6 +161,7 @@
         "submissions/147228/jingzhang-human-city-os/visual/assets/reviewer-navigation-index.json",
         "submissions/147228/jingzhang-human-city-os/visual/assets/rights-clearance-ledger.json",
         "submissions/147228/jingzhang-human-city-os/visual/assets/run-human-city-ordinary-journey.js",
+        "submissions/147228/jingzhang-human-city-os/visual/assets/run-human-city-public-service-tabletop-v1.js",
         "submissions/147228/jingzhang-human-city-os/visual/assets/run-human-city-receipt.js",
         "submissions/147228/jingzhang-human-city-os/visual/assets/run-human-city-reference-audit.js",
         "submissions/147228/jingzhang-human-city-os/visual/assets/run-parametric-tradeoff-study.js",
@@ -179,7 +182,7 @@
       "ai_package_stages": {
         "submissions/147228/jingzhang-human-city-os": "formal"
       },
-      "total_bytes": 40854575,
+      "total_bytes": 40891747,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -262,7 +265,7 @@
           "source": 18,
           "standard": 5,
           "depth": 16,
-          "data": 68,
+          "data": 71,
           "metric": 23
         }
       }
