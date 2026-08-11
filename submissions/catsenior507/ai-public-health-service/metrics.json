@@ -2,7 +2,7 @@
   "schema_version": "0.1.0",
   "project_id": "centennial-jingzhang-ai-belt",
   "proposal_slug": "ai-public-health-service",
-  "units": "length=m and area=sqm",
+  "units": {"length": "m", "area": "sqm"},
   "metric_calculation_crs": "EPSG:4548",
   "metric_calculation_note": "All area values are provisional calculations based on brief/site-package/geometry/provisional_boundaries.geojson. Recalculate when official precise polygons are available.",
   "metrics": {

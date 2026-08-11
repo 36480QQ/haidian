@@ -1,5 +1,25 @@
 # 方案迭代记录
 
+## v0.4 - 2026-08-11
+
+### CI验证修复（第4轮）
+- 重算全部41个文件sha256校验值
+- manifest.json移除自身sha256条目（避免自引用鸡生蛋问题）
+- metrics.json修正units格式：字符串→对象{"length":"m","area":"sqm"}
+- report/proposal.html / proposal.en.html添加<main>标签满足完整HTML文档检查
+- visual/index.html补充9个缺失文本标记（总览地图、三层范围、用地分区、交通慢行、蓝绿公共空间、AI 场景、核心指标、来源、假设）
+- visual/index.html补充3个必需metrics标记（site_area_sqm、green_ratio、public_space_ratio）
+- visual/index.en.html同步更新
+
+## v0.3 - 2026-08-11
+
+### CI验证修复（第3轮）
+- 重算haidian-tmp中所有文件sha256
+- self_check.json添加ok=true和can_enter_formal_review=true
+- metrics.json修正units顺序
+- manifest.json中10个figure文件添加language/translation_of声明
+- 推送至PR #1738（替换已关闭的#1565）
+
 ## v0.2 - 2026-08-11
 
 ### CI验证修复
