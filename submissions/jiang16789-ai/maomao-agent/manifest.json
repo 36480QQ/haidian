@@ -49,7 +49,8 @@
       "path": "manifest.json",
       "role": "manifest",
       "required": true,
-      "bytes": 10662
+      "bytes": 10681,
+      "sha256": "06fc5d99302890dfe8640a37afb414b3311767403c8091e4c609cf5c5aa00635"
     },
     {
       "path": "metrics.json",
@@ -69,7 +70,7 @@
       "path": "self_check.json",
       "role": "asset",
       "required": false,
-      "bytes": 2389,
+      "bytes": 14138,
       "sha256": "24828b2ff6d00aec7f080c2fbef074ab24984bb498a83fbd6180b89b0080ae5f"
     },
     {
