@@ -11,9 +11,16 @@
     {
       "id": "A-KEY-001",
       "status": "pending_official_boundary",
-      "statement": "Key-area polygons and centroids are provisional; the Dazhongsi location has an open independent-check concern.",
-      "impact": "Courts and detailed-area diagrams may move and must not be read as precise station or parcel interfaces.",
+      "statement": "Key-area polygons and centroids are provisional. The Dazhongsi placeholder was relocated to the station vicinity after an OSM and later official textual-extent cross-check, while remaining area-fitted rather than official.",
+      "impact": "Courts and detailed-area diagrams may still move and must not be read as precise station, parcel or road-redline interfaces.",
       "trigger": "Receipt of official key-area polygons and access survey."
+    },
+    {
+      "id": "A-MAP-001",
+      "status": "public_context_only",
+      "statement": "The offline map context is an OpenStreetMap/Overpass extract dated 2026-08-11, not a surveyed or statutory base map.",
+      "impact": "Roads, rail, water, parks, stations and campuses support orientation and design discussion only; they do not establish official redlines, parcels, blue lines or buildability.",
+      "trigger": "Receipt of cleared official base drawings and professional field verification."
     },
     {
       "id": "A-CONTROLS-001",

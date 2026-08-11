@@ -13,7 +13,14 @@
       "result": "pass",
       "severity": "major",
       "target": "geometry/key_areas.geojson",
-      "message": "Three required key areas are present and explicitly labelled provisional; Dazhongsi precision is not claimed."
+      "message": "Three required key areas are present and explicitly labelled provisional; the Dazhongsi placeholder was map-cross-checked and relocated without claiming official precision."
+    },
+    {
+      "check_id": "MAP_CONTEXT_PROVENANCE",
+      "result": "pass",
+      "severity": "major",
+      "target": "visual/assets/osm-context.json",
+      "message": "The offline OSM context preserves query, bbox, retrieval date, raw hash, ODbL attribution and a prohibition on official-boundary or planning-control use."
     },
     {
       "check_id": "LAND_USE_TOPOLOGY",

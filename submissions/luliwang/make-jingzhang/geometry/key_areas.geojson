@@ -1,6 +1,6 @@
 {
   "type": "FeatureCollection",
-  "name": "key_areas_official",
+  "name": "key_areas_provisional_map_checked",
   "features": [
     {
       "type": "Feature",
@@ -128,7 +128,8 @@
         ],
         "source_title": "依据公告重点片区名称、南北顺序、公告约面积和临时 SITE_BOUNDARY 形成的临时粗略范围",
         "derivation_method": "按公告自北向南第三处、大钟寺AI产业聚集区、约72.0公顷及大钟寺站相关任务线索，在临时总体设计范围内粗略定位并校核面积；公告未给出四至，矩形边不得解释为地块或道路红线。",
-        "usage_note": "仅用于 AI agent 生成、展示和临时自检；不得作为 official key-area polygon、审批依据或精确面积复算依据。"
+        "usage_note": "仅用于 AI agent 生成、展示和临时自检；不得作为 official key-area polygon、审批依据或精确面积复算依据。",
+        "map_crosscheck_note": "Relocated north to the Dazhongsi station vicinity after 2026-08-11 OSM context cross-check; geometry remains provisional and area-fitted, not an official polygon or surveyed alignment."
       },
       "geometry": {
         "type": "Polygon",
@@ -136,23 +137,23 @@
           [
             [
               116.342,
-              39.944
+              39.96238
             ],
             [
               116.355,
-              39.944
+              39.96238
             ],
             [
               116.355,
-              39.94984
+              39.96822
             ],
             [
               116.342,
-              39.94984
+              39.96822
             ],
             [
               116.342,
-              39.944
+              39.96238
             ]
           ]
         ]

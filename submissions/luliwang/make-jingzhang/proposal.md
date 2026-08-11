@@ -27,7 +27,9 @@ scenarios: ["robot-delivery-low-speed", "ai-traffic-walkability", "enterprise-se
 
 ![总体概念、三处造物场与临时边界说明](assets/figures/site-overview.png)
 
-图面、离线网页与 PDF 全部由本包 GeoJSON、指标和文字生成，没有使用商业地图截图、未清权照片或外部字体文件。图中的淡灰虚线只表示临时约束；高亮内容表达设计关系，不表达官方红线、现实建筑或工程线位。[depth:existing_conditions_diagnosis]
+图面、离线网页与 PDF 全部由本包 GeoJSON、指标和文字生成，没有使用商业地图截图、未清权照片或外部字体文件。现状背景采用 2026-08-11 通过 Overpass 固定查询取得的 OpenStreetMap 道路、轨道、水系、公园、站点和高校数据；查询、范围、抓取日期、原始响应哈希与 ODbL 署名保存在 `visual/assets/osm-context.json`，聚合道路、轨道和水系同步进入 `geometry/constraints.geojson`。[source:OSM-CONTEXT-20260811] OSM 只帮助把设计放回真实城市网络，不生成官方边界、道路红线、蓝线、地块或可建性结论。图中的淡灰虚线只表示临时约束；高亮内容表达设计关系，不表达官方红线或工程线位。[depth:existing_conditions_diagnosis]
+
+地图交叉核对发现，原大钟寺重点区占位约在 39.946°N，明显偏离公开地图中的大钟寺站，也不符合 2026 年 7 月官方城市更新公示所述“北至北四环、南至转河”的位置关系。因此，本次把约 72 公顷的临时面积拟合区及其南部概念节点北移到大钟寺站周边；该修正用于排除明显错位，不把后续更新片区文字四至等同于本次征集的 official key-area polygon。[source:DAZHONGSI-UPDATE-SCOPE-20260713] 正式边界到位后仍须整包重算。
 
 ## 三层范围工作框架
 
