@@ -9,8 +9,15 @@
         "id": "PUBLIC-V2-001",
         "layer": "PUBLIC_SPACE",
         "source_type": "agent_generated_design",
+        "evidence_level": "L5",
         "confidence": "medium",
         "geometry_role": "design_proposal",
+        "official_boundary": false,
+        "spatial_precision": "diagrammatic",
+        "position_status": "conceptual",
+        "construction_note": "NOT FOR CONSTRUCTION",
+        "metric_inclusion": true,
+        "metric_semantics": "conceptual_internal_only_not_statutory_surveyed_built_open_or_construction_quantity",
         "name_zh": "开放验证示范园",
         "program_zh": "开展技术验证、风险评估与成果展示",
         "area_sqm_declared": 22661.563,
@@ -291,8 +298,15 @@
         "id": "PUBLIC-V2-002",
         "layer": "PUBLIC_SPACE",
         "source_type": "agent_generated_design",
+        "evidence_level": "L5",
         "confidence": "medium",
         "geometry_role": "design_proposal",
+        "official_boundary": false,
+        "spatial_precision": "diagrammatic",
+        "position_status": "conceptual",
+        "construction_note": "NOT FOR CONSTRUCTION",
+        "metric_inclusion": true,
+        "metric_semantics": "conceptual_internal_only_not_statutory_surveyed_built_open_or_construction_quantity",
         "name_zh": "开放协同创新街区",
         "program_zh": "组织需求征集、概念验证与人才服务",
         "area_sqm_declared": 16259.867,
@@ -573,8 +587,15 @@
         "id": "PUBLIC-V2-003",
         "layer": "PUBLIC_SPACE",
         "source_type": "agent_generated_design",
+        "evidence_level": "L5",
         "confidence": "medium",
         "geometry_role": "design_proposal",
+        "official_boundary": false,
+        "spatial_precision": "diagrammatic",
+        "position_status": "conceptual",
+        "construction_note": "NOT FOR CONSTRUCTION",
+        "metric_inclusion": true,
+        "metric_semantics": "conceptual_internal_only_not_statutory_surveyed_built_open_or_construction_quantity",
         "name_zh": "首用场景转化中心",
         "program_zh": "推动场景开放、成果转化与应用评估",
         "area_sqm_declared": 22661.563,
@@ -847,6 +868,568 @@
           ]
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "AN-V21-001",
+        "layer": "SCENARIO_NODE",
+        "name_zh": "南端调查路线起点",
+        "node_type": "audit_route_terminal",
+        "source_type": "agent_generated_design",
+        "source_ref": "ROAD-V2-001",
+        "evidence_level": "L5",
+        "confidence": "low",
+        "geometry_role": "analysis_helper",
+        "official_station_entrance": false,
+        "station_name": "unknown",
+        "accessibility_status": "unknown",
+        "step_free_status": "unknown",
+        "ramp_status": "unknown",
+        "lift_status": "unknown",
+        "tactile_paving_status": "unknown",
+        "crossing_status": "unknown",
+        "clear_width_m": "unknown",
+        "slope_pct": "unknown",
+        "survey_date": "unknown",
+        "official_boundary": false,
+        "spatial_precision": "diagrammatic",
+        "position_status": "conceptual",
+        "construction_note": "NOT FOR CONSTRUCTION",
+        "metric_inclusion": false,
+        "schema_note": "Merged into a canonical repository geometry file; retains L5 diagrammatic evidence ceiling."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.347424772775,
+          39.940707368981
+        ]
+      },
+      "id": "AN-V21-001"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "AN-V21-002",
+        "layer": "SCENARIO_NODE",
+        "name_zh": "南北轴—转河方向概念核查点",
+        "node_type": "conceptual_crosslink_interface",
+        "source_type": "agent_generated_design",
+        "source_ref": "ROAD-V2-001|ROAD-V2-004",
+        "evidence_level": "L5",
+        "confidence": "low",
+        "geometry_role": "analysis_helper",
+        "official_station_entrance": false,
+        "station_name": "unknown",
+        "accessibility_status": "unknown",
+        "step_free_status": "unknown",
+        "ramp_status": "unknown",
+        "lift_status": "unknown",
+        "tactile_paving_status": "unknown",
+        "crossing_status": "unknown",
+        "clear_width_m": "unknown",
+        "slope_pct": "unknown",
+        "survey_date": "unknown",
+        "official_boundary": false,
+        "spatial_precision": "diagrammatic",
+        "position_status": "conceptual",
+        "construction_note": "NOT FOR CONSTRUCTION",
+        "metric_inclusion": false,
+        "schema_note": "Merged into a canonical repository geometry file; retains L5 diagrammatic evidence ceiling."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.347699156264,
+          39.955688925694
+        ]
+      },
+      "id": "AN-V21-002"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "AN-V21-003",
+        "layer": "SCENARIO_NODE",
+        "name_zh": "大钟寺重点区无障碍核查锚点",
+        "node_type": "core_access_audit_anchor",
+        "source_type": "agent_generated_design",
+        "source_ref": "KEY-V2-003",
+        "evidence_level": "L5",
+        "confidence": "low",
+        "geometry_role": "analysis_helper",
+        "official_station_entrance": false,
+        "station_name": "unknown",
+        "accessibility_status": "unknown",
+        "step_free_status": "unknown",
+        "ramp_status": "unknown",
+        "lift_status": "unknown",
+        "tactile_paving_status": "unknown",
+        "crossing_status": "unknown",
+        "clear_width_m": "unknown",
+        "slope_pct": "unknown",
+        "survey_date": "unknown",
+        "official_boundary": false,
+        "spatial_precision": "diagrammatic",
+        "position_status": "conceptual",
+        "construction_note": "NOT FOR CONSTRUCTION",
+        "metric_inclusion": false,
+        "schema_note": "Merged into a canonical repository geometry file; retains L5 diagrammatic evidence ceiling."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.34849999672,
+          39.946920141572
+        ]
+      },
+      "id": "AN-V21-003"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "AN-V21-004",
+        "layer": "SCENARIO_NODE",
+        "name_zh": "南北轴—小月河方向概念核查点",
+        "node_type": "conceptual_crosslink_interface",
+        "source_type": "agent_generated_design",
+        "source_ref": "ROAD-V2-001|ROAD-V2-003",
+        "evidence_level": "L5",
+        "confidence": "low",
+        "geometry_role": "analysis_helper",
+        "official_station_entrance": false,
+        "station_name": "unknown",
+        "accessibility_status": "unknown",
+        "step_free_status": "unknown",
+        "ramp_status": "unknown",
+        "lift_status": "unknown",
+        "tactile_paving_status": "unknown",
+        "crossing_status": "unknown",
+        "clear_width_m": "unknown",
+        "slope_pct": "unknown",
+        "survey_date": "unknown",
+        "official_boundary": false,
+        "spatial_precision": "diagrammatic",
+        "position_status": "conceptual",
+        "construction_note": "NOT FOR CONSTRUCTION",
+        "metric_inclusion": false,
+        "schema_note": "Merged into a canonical repository geometry file; retains L5 diagrammatic evidence ceiling."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.347562243221,
+          39.984563403729
+        ]
+      },
+      "id": "AN-V21-004"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "AN-V21-005",
+        "layer": "SCENARIO_NODE",
+        "name_zh": "AI原点重点区无障碍核查锚点",
+        "node_type": "core_access_audit_anchor",
+        "source_type": "agent_generated_design",
+        "source_ref": "KEY-V2-002",
+        "evidence_level": "L5",
+        "confidence": "low",
+        "geometry_role": "analysis_helper",
+        "official_station_entrance": false,
+        "station_name": "unknown",
+        "accessibility_status": "unknown",
+        "step_free_status": "unknown",
+        "ramp_status": "unknown",
+        "lift_status": "unknown",
+        "tactile_paving_status": "unknown",
+        "crossing_status": "unknown",
+        "clear_width_m": "unknown",
+        "slope_pct": "unknown",
+        "survey_date": "unknown",
+        "official_boundary": false,
+        "spatial_precision": "diagrammatic",
+        "position_status": "conceptual",
+        "construction_note": "NOT FOR CONSTRUCTION",
+        "metric_inclusion": false,
+        "schema_note": "Merged into a canonical repository geometry file; retains L5 diagrammatic evidence ceiling."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.347499999522,
+          39.988500011129
+        ]
+      },
+      "id": "AN-V21-005"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "AN-V21-006",
+        "layer": "SCENARIO_NODE",
+        "name_zh": "南北轴—清河方向概念核查点",
+        "node_type": "conceptual_crosslink_interface",
+        "source_type": "agent_generated_design",
+        "source_ref": "ROAD-V2-001|ROAD-V2-002",
+        "evidence_level": "L5",
+        "confidence": "low",
+        "geometry_role": "analysis_helper",
+        "official_station_entrance": false,
+        "station_name": "unknown",
+        "accessibility_status": "unknown",
+        "step_free_status": "unknown",
+        "ramp_status": "unknown",
+        "lift_status": "unknown",
+        "tactile_paving_status": "unknown",
+        "crossing_status": "unknown",
+        "clear_width_m": "unknown",
+        "slope_pct": "unknown",
+        "survey_date": "unknown",
+        "official_boundary": false,
+        "spatial_precision": "diagrammatic",
+        "position_status": "conceptual",
+        "construction_note": "NOT FOR CONSTRUCTION",
+        "metric_inclusion": false,
+        "schema_note": "Merged into a canonical repository geometry file; retains L5 diagrammatic evidence ceiling."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.347442084512,
+          40.008658333238
+        ]
+      },
+      "id": "AN-V21-006"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "AN-V21-007",
+        "layer": "SCENARIO_NODE",
+        "name_zh": "众智园重点区无障碍核查锚点",
+        "node_type": "core_access_audit_anchor",
+        "source_type": "agent_generated_design",
+        "source_ref": "KEY-V2-001",
+        "evidence_level": "L5",
+        "confidence": "low",
+        "geometry_role": "analysis_helper",
+        "official_station_entrance": false,
+        "station_name": "unknown",
+        "accessibility_status": "unknown",
+        "step_free_status": "unknown",
+        "ramp_status": "unknown",
+        "lift_status": "unknown",
+        "tactile_paving_status": "unknown",
+        "crossing_status": "unknown",
+        "clear_width_m": "unknown",
+        "slope_pct": "unknown",
+        "survey_date": "unknown",
+        "official_boundary": false,
+        "spatial_precision": "diagrammatic",
+        "position_status": "conceptual",
+        "construction_note": "NOT FOR CONSTRUCTION",
+        "metric_inclusion": false,
+        "schema_note": "Merged into a canonical repository geometry file; retains L5 diagrammatic evidence ceiling."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.348500005511,
+          40.016749721556
+        ]
+      },
+      "id": "AN-V21-007"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "AN-V21-008",
+        "layer": "SCENARIO_NODE",
+        "name_zh": "北端调查路线终点",
+        "node_type": "audit_route_terminal",
+        "source_type": "agent_generated_design",
+        "source_ref": "ROAD-V2-001",
+        "evidence_level": "L5",
+        "confidence": "low",
+        "geometry_role": "analysis_helper",
+        "official_station_entrance": false,
+        "station_name": "unknown",
+        "accessibility_status": "unknown",
+        "step_free_status": "unknown",
+        "ramp_status": "unknown",
+        "lift_status": "unknown",
+        "tactile_paving_status": "unknown",
+        "crossing_status": "unknown",
+        "clear_width_m": "unknown",
+        "slope_pct": "unknown",
+        "survey_date": "unknown",
+        "official_boundary": false,
+        "spatial_precision": "diagrammatic",
+        "position_status": "conceptual",
+        "construction_note": "NOT FOR CONSTRUCTION",
+        "metric_inclusion": false,
+        "schema_note": "Merged into a canonical repository geometry file; retains L5 diagrammatic evidence ceiling."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.347831634447,
+          40.02477759248
+        ]
+      },
+      "id": "AN-V21-008"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "DC-V21-ZY-001",
+        "layer": "SCENARIO_NODE",
+        "name_zh": "可信验证与室内复现空间",
+        "component_type": "validation_space",
+        "parent_key_area_id": "KEY-V2-001",
+        "source_type": "agent_generated_design",
+        "evidence_level": "L5",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "official_building_footprint": false,
+        "location_flexibility": "relocatable_within_provisional_study_window",
+        "site_control_status": "unknown",
+        "ownership_status": "unknown",
+        "building_survey_status": "unknown",
+        "structure_status": "unknown",
+        "fire_safety_status": "unknown",
+        "heritage_review_status": "unknown",
+        "utility_capacity_status": "unknown",
+        "operator_status": "unknown",
+        "budget_status": "unknown",
+        "area_sqm": "unknown",
+        "building_height_m": "unknown",
+        "official_boundary": false,
+        "spatial_precision": "diagrammatic",
+        "position_status": "conceptual",
+        "construction_note": "NOT FOR CONSTRUCTION",
+        "metric_inclusion": false,
+        "schema_note": "Merged into a canonical repository geometry file; retains L5 diagrammatic evidence ceiling."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.347442874072,
+          40.017058986009
+        ]
+      },
+      "id": "DC-V21-ZY-001"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "DC-V21-ZY-002",
+        "layer": "SCENARIO_NODE",
+        "name_zh": "公众观察与安全评估接口",
+        "component_type": "public_observation_and_review",
+        "parent_key_area_id": "KEY-V2-001",
+        "source_type": "agent_generated_design",
+        "evidence_level": "L5",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "official_building_footprint": false,
+        "location_flexibility": "relocatable_within_provisional_study_window",
+        "site_control_status": "unknown",
+        "ownership_status": "unknown",
+        "building_survey_status": "unknown",
+        "structure_status": "unknown",
+        "fire_safety_status": "unknown",
+        "heritage_review_status": "unknown",
+        "utility_capacity_status": "unknown",
+        "operator_status": "unknown",
+        "budget_status": "unknown",
+        "area_sqm": "unknown",
+        "building_height_m": "unknown",
+        "official_boundary": false,
+        "spatial_precision": "diagrammatic",
+        "position_status": "conceptual",
+        "construction_note": "NOT FOR CONSTRUCTION",
+        "metric_inclusion": false,
+        "schema_note": "Merged into a canonical repository geometry file; retains L5 diagrammatic evidence ceiling."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.349557127517,
+          40.016440447366
+        ]
+      },
+      "id": "DC-V21-ZY-002"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "DC-V21-AI-001",
+        "layer": "SCENARIO_NODE",
+        "name_zh": "创新需求与成果转化服务室",
+        "component_type": "innovation_transfer_service",
+        "parent_key_area_id": "KEY-V2-002",
+        "source_type": "agent_generated_design",
+        "evidence_level": "L5",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "official_building_footprint": false,
+        "location_flexibility": "relocatable_within_provisional_study_window",
+        "site_control_status": "unknown",
+        "ownership_status": "unknown",
+        "building_survey_status": "unknown",
+        "structure_status": "unknown",
+        "fire_safety_status": "unknown",
+        "heritage_review_status": "unknown",
+        "utility_capacity_status": "unknown",
+        "operator_status": "unknown",
+        "budget_status": "unknown",
+        "area_sqm": "unknown",
+        "building_height_m": "unknown",
+        "official_boundary": false,
+        "spatial_precision": "diagrammatic",
+        "position_status": "conceptual",
+        "construction_note": "NOT FOR CONSTRUCTION",
+        "metric_inclusion": false,
+        "schema_note": "Merged into a canonical repository geometry file; retains L5 diagrammatic evidence ceiling."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.346443301044,
+          39.988809271426
+        ]
+      },
+      "id": "DC-V21-AI-001"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "DC-V21-AI-002",
+        "layer": "SCENARIO_NODE",
+        "name_zh": "人才与社区综合服务点",
+        "component_type": "talent_and_community_service",
+        "parent_key_area_id": "KEY-V2-002",
+        "source_type": "agent_generated_design",
+        "evidence_level": "L5",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "official_building_footprint": false,
+        "location_flexibility": "relocatable_within_provisional_study_window",
+        "site_control_status": "unknown",
+        "ownership_status": "unknown",
+        "building_survey_status": "unknown",
+        "structure_status": "unknown",
+        "fire_safety_status": "unknown",
+        "heritage_review_status": "unknown",
+        "utility_capacity_status": "unknown",
+        "operator_status": "unknown",
+        "budget_status": "unknown",
+        "area_sqm": "unknown",
+        "building_height_m": "unknown",
+        "official_boundary": false,
+        "spatial_precision": "diagrammatic",
+        "position_status": "conceptual",
+        "construction_note": "NOT FOR CONSTRUCTION",
+        "metric_inclusion": false,
+        "schema_note": "Merged into a canonical repository geometry file; retains L5 diagrammatic evidence ceiling."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.34855668858,
+          39.988190741104
+        ]
+      },
+      "id": "DC-V21-AI-002"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "DC-V21-DZS-001",
+        "layer": "SCENARIO_NODE",
+        "name_zh": "首用场景需求与采购服务厅",
+        "component_type": "scenario_demand_and_procurement",
+        "parent_key_area_id": "KEY-V2-003",
+        "source_type": "agent_generated_design",
+        "evidence_level": "L5",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "official_building_footprint": false,
+        "location_flexibility": "relocatable_within_provisional_study_window",
+        "site_control_status": "unknown",
+        "ownership_status": "unknown",
+        "building_survey_status": "unknown",
+        "structure_status": "unknown",
+        "fire_safety_status": "unknown",
+        "heritage_review_status": "unknown",
+        "utility_capacity_status": "unknown",
+        "operator_status": "unknown",
+        "budget_status": "unknown",
+        "area_sqm": "unknown",
+        "building_height_m": "unknown",
+        "official_boundary": false,
+        "spatial_precision": "diagrammatic",
+        "position_status": "conceptual",
+        "construction_note": "NOT FOR CONSTRUCTION",
+        "metric_inclusion": false,
+        "schema_note": "Merged into a canonical repository geometry file; retains L5 diagrammatic evidence ceiling."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.347443945224,
+          39.947229418381
+        ]
+      },
+      "id": "DC-V21-DZS-001"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "DC-V21-DZS-002",
+        "layer": "SCENARIO_NODE",
+        "name_zh": "轨道城市成果应用服务接口",
+        "component_type": "transit_city_application_service",
+        "parent_key_area_id": "KEY-V2-003",
+        "source_type": "agent_generated_design",
+        "evidence_level": "L5",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "official_building_footprint": false,
+        "location_flexibility": "relocatable_within_provisional_study_window",
+        "site_control_status": "unknown",
+        "ownership_status": "unknown",
+        "building_survey_status": "unknown",
+        "structure_status": "unknown",
+        "fire_safety_status": "unknown",
+        "heritage_review_status": "unknown",
+        "utility_capacity_status": "unknown",
+        "operator_status": "unknown",
+        "budget_status": "unknown",
+        "area_sqm": "unknown",
+        "building_height_m": "unknown",
+        "official_boundary": false,
+        "spatial_precision": "diagrammatic",
+        "position_status": "conceptual",
+        "construction_note": "NOT FOR CONSTRUCTION",
+        "metric_inclusion": false,
+        "schema_note": "Merged into a canonical repository geometry file; retains L5 diagrammatic evidence ceiling."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.349556038815,
+          39.94661085505
+        ]
+      },
+      "id": "DC-V21-DZS-002"
     }
+  ],
+  "v2_1_embedded_feature_groups": [
+    "accessibility_nodes.geojson",
+    "design_components.geojson"
   ]
 }
