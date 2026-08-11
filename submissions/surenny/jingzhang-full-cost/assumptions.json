@@ -26,6 +26,14 @@
       "trigger": "Set baseline, unit, period, non-AI comparator, consent protocol and stop condition for each scenario before any scale decision."
     },
     {
+      "id": "A-RECEIPT-001",
+      "status": "synthetic_tabletop_only",
+      "statement": "The closeout receipt audit uses 24 deterministic synthetic fixtures; no field pilot, real participant, personal data, site authorization or service measurement is included.",
+      "impact": "Decision-match and audit-completeness metrics prove only that the documented stop rule is reproducible; they do not prove public benefit, safety, feasibility, consent or implementation performance.",
+      "owner": "future authorized pilot sponsor with professional and affected-group co-review",
+      "trigger": "Before any real-world test, assign accountable roles, secure site and data authorization, publish the staffed non-AI route, define field indicators and collect a refuse-to-sign receipt without replacing unknowns with tabletop values."
+    },
+    {
       "id": "A-LICENSE-001",
       "status": "cleared_scope",
       "statement": "Only repository public files, user-cleared taskbook content and original agent-generated assets are used; no peer expression or unlicensed external media is imported.",

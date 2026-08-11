@@ -56,6 +56,7 @@
         "submissions/surenny/jingzhang-full-cost/report/proposal.en.html",
         "submissions/surenny/jingzhang-full-cost/report/proposal.html",
         "submissions/surenny/jingzhang-full-cost/self_check.json",
+        "submissions/surenny/jingzhang-full-cost/simulation.json",
         "submissions/surenny/jingzhang-full-cost/sources.json",
         "submissions/surenny/jingzhang-full-cost/standard_matrix.json",
         "submissions/surenny/jingzhang-full-cost/visual/index.en.html",
@@ -64,7 +65,7 @@
       "ai_package_stages": {
         "submissions/surenny/jingzhang-full-cost": "formal"
       },
-      "total_bytes": 1645437,
+      "total_bytes": 1681406,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -125,7 +126,11 @@
         "site_area_sqm": 11412825.386,
         "green_ratio": 0.132494,
         "public_space_ratio": 0.053527,
-        "key_area_count": 3.0
+        "key_area_count": 3.0,
+        "closeout_receipt_case_count": 24.0,
+        "closeout_receipt_stop_case_count": 12.0,
+        "closeout_receipt_match_rate": 1.0,
+        "audit_completeness": 1.0
       }
     },
     "stderr": ""
@@ -139,15 +144,15 @@
       "summary": {
         "standard_matrix_items": 6,
         "design_depth_items": 15,
-        "known_metric_refs_required": 9,
+        "known_metric_refs_required": 13,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
           "source": 5,
           "standard": 5,
-          "depth": 13,
-          "data": 14,
-          "metric": 8
+          "depth": 12,
+          "data": 15,
+          "metric": 13
         }
       }
     },

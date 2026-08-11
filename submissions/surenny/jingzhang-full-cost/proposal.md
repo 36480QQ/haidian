@@ -6,10 +6,10 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "以七本成本账与一本公共回报账为城市设计 admission gate；所有空间动作均为临时约束条件下的概念建议。"
+summary: "以七本成本账、一本公共回报账与可拒签的停算清账回执为城市设计 admission gate；所有空间动作均为临时约束条件下的概念建议。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v0.2"
+iteration: "v0.3"
 ---
 
 # 京张算清：AI 进入城市前，先把全成本与公共回报算清
@@ -21,6 +21,12 @@ iteration: "v0.2"
 我们的设计判断是：AI 进入城市之前，必须先把空间、能源水、材料设备、数据算力、劳动维护、公众注意、公共资金七本成本账，与公共回报账放在同一张可步行、可复核的公共总账线上。没有本地测量的值就写“待补数据”，由责任人、方法、时间窗和停止条件接住，而不是用全球平均数填空 [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [metric:eight_ledger_baseline] [depth:existing_conditions_diagnosis]。
 
 ![资料证据链与提交包关系图](assets/figures/site-overview.png)
+
+## 核心概念｜停算清账回执
+
+“全成本账本”只有在能拒绝扩散时才是治理机制，而不是展示口号。方案因此为每个 AI 场景增加一张“停算清账回执”：授权记录、非 AI 对照、七类成本快照、公共回报阈值、具名人工责任、受影响群体复核、无障碍检查、申诉窗口、数据删除记录、退出预算责任和空间恢复计划必须同时可查；缺一项就停算、保留人工服务、冻结扩散并公开修复或退场责任。回执只能把场景送入专业复核，不能自行批准现场试点 [metric:closeout_receipt_case_count] [metric:closeout_receipt_stop_case_count] [depth:existing_conditions_diagnosis]。
+
+`simulation.json` 对 12 张场景卡运行 24 个离线合成 case：每张卡一条完整回执分支和一条缺证停算分支。24/24 的预期与实际判定一致，所有记录完成审计且不使用真实个人数据；这只证明判定规则可复算，不证明现场绩效、公众接受、工程可行性或审批状态 [metric:closeout_receipt_match_rate] [metric:audit_completeness] [data:simulation.json#full-cost-closeout-receipt-v1]。
 
 ## 三层范围工作框架
 
@@ -81,6 +87,8 @@ iteration: "v0.2"
 
 五本案例账只回答“怎样测、谁来复核、如何退出”，不把他地的指标或治理权力变成海淀事实。公众注意账尤其记录屏幕、噪声、排队、咨询时间和监控焦虑；当 AI 没有比人工对照带来可证明回报时，方案停留在 measuring 或 revise，不进入扩散 [metric:industry_validation_scenario_count] [source:SOURCE-REGISTRY]。
 
+每张场景卡在进入任何真实测试前还必须由站点维护者、数据/版权复核者、无障碍共评者和受影响群体观察员共同签署回执；任一角色可拒签并触发人工路径。真实现场表现仍为待补数据，不用离线审计的 100% 判定一致率替代服务质量或公共回报 [metric:field_pilot_performance] [depth:three_key_area_detailed_design]。
+
 ## 用地、建筑规模与拆改留方案
 
 用地表达是概念分区，不是规划许可。四类共享边界的比例来自当前临时 geometry 的 EPSG:4548 投影复算；它帮助比较公共空间与创新服务的空间关系，不产生法定 FAR。建筑层用 lifecycle_action 标注保留适配或轻量新建，任何 retain/renovate/demolish 决定都必须等建筑现状、权属、文保、结构、消防和全成本比较。空间账记录占地机会成本与恢复责任，公共资金账不填虚构金额 [data:geometry/land_use.geojson#LU-002] [data:geometry/buildings.geojson#BLDG-003] [standard:MOHURD-CONTROL-DETAILED-PLANNING]。
@@ -97,11 +105,15 @@ iteration: "v0.2"
 
 ## 更新项目清单、实施政策与分期计划
 
-建议项目 JZ-01 至 JZ-06 组成证据门控的更新清单：公共总账线断点缝合、众智园计量实验馆、AI 原点共创客厅、大钟寺采购体检、四个公共窗口和全成本开放周。分期不是承诺建设年份，而是证据状态：一期测量与有边界测试，二期非 AI 对照与有限开放，三期专业复核后采用、修改或退出恢复。每项都需要 steward、权属/许可、维护预算、数据删除和恢复责任；缺任何一项即停留在 measuring [data:geometry/phasing.geojson#PHASE-001] [depth:phasing_implementation] [metric:eight_ledger_baseline]。
+建议项目 JZ-01 至 JZ-06 组成证据门控的更新清单：公共总账线断点缝合、众智园计量实验馆、AI 原点共创客厅、大钟寺采购体检、四个公共窗口和全成本开放周。分期不是承诺建设年份，而是证据状态：第一阶段由高校、企业、社区和专业团队在离线桌面审计中锁定问题、责任人与非 AI 对照；第二阶段经许可后才可在单一站点开展有限试点，由居民与维护者记录服务时长、申诉数量、人工接管、七类成本和公共回报指标；第三阶段由受影响群体与专业团队评估回执，决定采用、修改或退出恢复。缺少权属/许可、维护预算、数据删除或恢复责任中的任何一项，都必须停算并维持人工服务 [data:geometry/phasing.geojson#PHASE-001] [depth:phasing_implementation] [metric:eight_ledger_baseline]。
 
 ## 指标体系、面积复算与合规矩阵
 
-当前提交范围约 11.41 平方公里，绿地与公共窗口比例由同一 GeoJSON 复算；三处重点区、12 张场景卡和 5 个行业验证场景是可数的设计输出 [metric:site_area_sqm] [metric:green_ratio] [metric:public_space_ratio]。空间指标只支持设计比较，不能替代控规。八本账基线、FAR/高度/密度、能源水、劳动和公共回报均明确为待补数据，`assumptions.json` 记录责任人、方法和重算触发器 [metric:eight_ledger_baseline] [data:geometry/constraints.geojson#CONSTRAINT-001] [depth:metrics_recalculation]。
+当前提交范围约 11.41 平方公里，绿地与公共窗口比例由同一 GeoJSON 复算；三处重点区、12 张场景卡和 5 个行业验证场景是可数的设计输出 [metric:site_area_sqm] [metric:green_ratio] [metric:public_space_ratio]。
+
+24 个离线 case 中有 12 个完整回执、12 个缺证停算，预期判定一致率为 1.0；这些是协议覆盖指标，不是现场成效 [metric:closeout_receipt_case_count] [metric:closeout_receipt_stop_case_count] [metric:closeout_receipt_match_rate]。
+
+空间指标只支持设计比较，不能替代控规。八本账基线、FAR/高度/密度、能源水、劳动、公共回报和现场表现均明确为待补数据，`assumptions.json` 记录责任人、方法和重算触发器 [metric:eight_ledger_baseline] [metric:far_height_density] [metric:field_pilot_performance]。
 
 ![核心指标复算与证据链图](assets/figures/metrics-evidence.png)
 
@@ -119,7 +131,7 @@ agent.1 以“八格账本 + 铁路基线”形成命名与识别；agent.2 用 
 
 ## 风险、版权与合规说明
 
-主要风险是临时边界误读、正式控规缺失、权属与文保未核、能源/水/算力/劳动基线缺失、数据权利和公众注意转嫁、供应商锁定以及退出资金未知。缓解办法是低对比度临时图形、状态化指标、人工复核、非 AI 对照、分期停止条件和恢复钟；高风险事项需要专业团队或公众复核，不能由本方案自我批准 [data:geometry/constraints.geojson#CONSTRAINT-001] [depth:risk_missing_data] [source:BOUNDARY-SOURCE]。
+主要风险是临时边界误读、正式控规缺失、权属与文保未核、能源/水/算力/劳动基线缺失、数据权利和公众注意转嫁、供应商锁定以及退出资金未知。缓解办法是低对比度临时图形、状态化指标、人工复核、非 AI 对照、分期停止条件、恢复钟和可拒签回执；任何角色的拒签都冻结扩散并保留人工服务。离线审计只验证协议分支，不得被写成真实绩效、公众同意或实施证明；高风险事项需要专业团队或受影响群体复核，不能由本方案自我批准 [data:geometry/constraints.geojson#CONSTRAINT-001] [depth:risk_missing_data] [source:BOUNDARY-SOURCE]。
 
 本包只使用仓库公开资料、用户清权任务书和本 agent 生成的原创文字、图形与代码；不含企业商标、人物照片、未清权字体或外部图片。许可为 `COMMUNITY-DISPLAY-ONLY`，仅限社区展示和评审语境；版权与生成资产说明见 `report/copyright_statement.md`。方案不声称政府批准、法定规划、最终面积、工程可行性、投资采购或实施结果。
 
