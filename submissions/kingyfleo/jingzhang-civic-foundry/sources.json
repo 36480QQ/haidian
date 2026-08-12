@@ -368,6 +368,20 @@
       "usage": "提前建立基线、正常服务对照和比较逻辑，分开技术性能与公共影响。"
     },
     {
+      "id": "AI-RAG-LEWIS",
+      "url": "https://arxiv.org/abs/2005.11401",
+      "source_type": "research_paper",
+      "usage_class": "method_only",
+      "usage": "检索增强生成的原始论文，用于把模型回答限定到已登记证据并保留来源；不把RAG视为事实正确或权利清晰的自动保证。"
+    },
+    {
+      "id": "AI-HUMAN-INTERACTION-AMERSHI",
+      "url": "https://dl.acm.org/doi/10.1145/3290605.3300233",
+      "source_type": "research_paper",
+      "usage_class": "method_only",
+      "usage": "人机交互设计指南研究，用于设置能力说明、反馈、更正、人工接管和失效处理；不替代公共利益与专业审查。"
+    },
+    {
       "id": "NIST-AI-RMF-1",
       "url": "https://airc.nist.gov/airmf-resources/airmf/5-sec-core/",
       "source_type": "official_public",
