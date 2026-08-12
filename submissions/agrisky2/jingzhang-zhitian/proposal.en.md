@@ -199,7 +199,7 @@ East Wing — Xiaoyuehe Scenario Wing → AI+Scenario Testing + Vitality Display
 
 ## AI Innovation Ecosystem, Talent Portraits, and AI+ Scenarios
 
-[agent.3] This section responds to the third agent task: no fewer than 10 AI scenario cards, 3 industry test-verification scenarios, and 5 user portraits.
+[agent.3] This section responds to the third agent task: no fewer than 10 AI scenario cards, 3 industry test-verification scenarios, and 5 user portraits (task-book baseline). This proposal actually delivers 12 scenario cards, 3 test scenarios, and 8 user portraits (3 inclusive portraits added beyond the 5-category baseline, see 6.1).
 
 ### 6.1 User Portraits: From Innovators to All Community Segments
 
