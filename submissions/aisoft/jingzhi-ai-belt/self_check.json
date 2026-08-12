@@ -56,38 +56,6 @@
       "result": "pass",
       "severity": "blocking",
       "detail_zh": "package_state=ready_for_review，manifest 哈希与全部文件一致，两套图纸为非空 PDF"
-    },
-    {
-      "check_id": "DETERMINISTIC_VALIDATION",
-      "name_zh": "确定性校验（validate_submission）",
-      "result": "pass",
-      "severity": "blocking",
-      "detail_zh": "文件、正文、矩阵、几何、指标与风险扫描全部通过。"
-    },
-    {
-      "check_id": "SPATIAL_REVIEW",
-      "name_zh": "空间复核（spatial_review）",
-      "result": "pass",
-      "severity": "blocking",
-      "detail_zh": "用地全覆盖、要素互不重叠、建筑/绿地/公共空间均在边界内（重点区为 provisional 提示，不影响阻断）。"
-    },
-    {
-      "check_id": "VISUAL_PACKAGING",
-      "name_zh": "可视化与静态安全（visual_review）",
-      "result": "pass",
-      "severity": "blocking",
-      "detail_zh": "visual/index.html 含全部必需标记，核心指标 data-metric 与 metrics.json 一致，无远程/活动内容。"
-    },
-    {
-      "check_id": "PROFESSIONAL_EVIDENCE",
-      "name_zh": "专业证据链（professional_review）",
-      "result": "pass",
-      "severity": "blocking",
-      "detail_zh": "标准覆盖 5/5，正文引用覆盖全部来源/指标/标准/深度项/几何文件。"
     }
-  ],
-  "ok": true,
-  "can_enter_formal_review": true,
-  "package_type": "professional_design_package",
-  "review_status": "formal-review-ready"
+  ]
 }

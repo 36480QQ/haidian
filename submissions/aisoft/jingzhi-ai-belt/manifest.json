@@ -24,13 +24,13 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "f37ce033e5c92b1912b256e1cfc7ea130fcce0773168492b5880085039acfebe"
+      "sha256": "dd36e2b7f9c8e58bf4dbc1b1b2e367bffbc2b396ee10ffc9464e5d8bb2e67cb0"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "7e59439f31c0d0038420554e20c7b53d7b985536d4939a2b68d0563f98fc875a"
+      "sha256": "509f078e1b8766c50363edf0f95fbb62f88bbf47279cc436c5d656fa8a23fdf1"
     },
     {
       "path": "metrics.json",
@@ -54,7 +54,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "7af609cf1b08935f5f72ee45f366379899dee4a4d660c1b8e39ea868acdcdf71"
+      "sha256": "8f3802d18ed8069dee552989716fee4c979d3f4c887727b88cd573a74d4bf64f"
     },
     {
       "path": "compliance_matrix.json",
@@ -196,9 +196,8 @@
     }
   ],
   "validation_claim": {
-    "self_checked": true,
+    "self_checked": false,
     "known_blockers": [],
-    "data_confidence": "high",
-    "readiness_contract": "persisted-self-check-v1"
+    "data_confidence": "high"
   }
 }
