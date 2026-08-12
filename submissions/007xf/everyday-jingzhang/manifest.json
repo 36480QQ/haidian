@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "package_id": "everyday-jingzhang",
   "project_id": "centennial-jingzhang-ai-belt",
   "site_package_version": "0.1.0",
@@ -323,7 +323,8 @@
     },
     {
       "path": "risk.json",
-      "role": "risk_and_implementation_readiness",
+      "role": "other",
+      "role_detail": "risk_and_implementation_readiness",
       "required": true,
       "sha256": "508597b2d2b2751f45751b1588eecfe89813e7dc6e80398b4278b0275c5aadc3"
     }
