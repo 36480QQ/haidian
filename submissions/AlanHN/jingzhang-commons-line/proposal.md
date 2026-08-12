@@ -18,7 +18,11 @@ iteration: "v1.1-review-ready"
 
 ## 设计依据与资料清单
 
-本方案先读取任务书、资料可用性登记、专业标准本地快照、枚举、规划限值、Schema 和缺资料清单，再生成空间数据。公告用于确认项目名称、三层范围、约面积和任务，不用于推导精确 polygon；任务书用于六项智能体任务与统一边界条款；临时边界只用于生成、展示和自检。[source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [source:SITE-PACKAGE] [source:SOURCE-REGISTRY] [source:PROCESSED-FACT-PACK] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [depth:existing_conditions_diagnosis]
+本方案先读取任务书、资料可用性登记、专业标准本地快照、枚举、规划限值、Schema 和缺资料清单，再生成空间数据。公告用于确认项目名称、三层范围、约面积和任务。[source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [source:SITE-PACKAGE]
+
+资料可用性、处理事实包和临时边界的使用范围另有登记：公告不用于推导精确 polygon，临时边界只用于生成、展示和自检。[source:SOURCE-REGISTRY] [source:PROCESSED-FACT-PACK] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]
+
+任务书用于六项智能体任务与统一边界条款，缺资料清单控制精度敏感结论。[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [depth:existing_conditions_diagnosis]
 
 专业表达分别依据《城市设计管理办法》《城市、镇控制性详细规划编制审批办法》和国土空间用地分类指南的本地快照；建筑工程设计文件深度规定当前缺官方文件，只登记为数据缺口，不作为权威依据。[standard:MOHURD-URBAN-DESIGN-MEASURES] [standard:MOHURD-CONTROL-DETAILED-PLANNING] [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [standard:MOHURD-ARCH-DESIGN-DEPTH-2016]
 
@@ -89,7 +93,11 @@ Logo 使用规则：深海军蓝表示历史与责任，青色表示开放接口
 
 用地分区按优先叠加算法构造：先锁定连续公园主脉、公共节点和缝合通道，再分配研发、教育、居住、服务与文化功能，最后把剩余空间明确为弹性留白。所有相邻边共享坐标，分区并集等于提交边界，无缝无叠；这只证明方案拓扑完整，不表示法定用地已调整。[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [data:geometry/land_use.geojson#LU-001] [depth:land_use_layout] [metric:land_use_partition_area_sqm]
 
-更新方法采用“先诊断、再微改、后增量”的门槛：能保留则以节能、首层开放和功能适配为先；无法满足安全、使用和公共界面的建筑才进入改造比较；拆除与新建必须等待现状测绘、权属、文保、结构和控规证据。图中的 12 个建筑包络只是空间容量与界面原型，不是现状建筑判定。[data:geometry/buildings.geojson#BLDG-001] [depth:retain_renovate_demolish] [depth:development_intensity_controls] [metric:building_footprint_area_sqm] [metric:building_coverage_ratio] [metric:floor_area_ratio] [metric:building_height_m] [metric:total_floor_area_sqm]
+更新方法采用“先诊断、再微改、后增量”的门槛：能保留则以节能、首层开放和功能适配为先；无法满足安全、使用和公共界面的建筑才进入改造比较；拆除与新建必须等待现状测绘、权属、文保、结构和控规证据。[data:geometry/buildings.geojson#BLDG-001] [depth:retain_renovate_demolish] [depth:development_intensity_controls]
+
+图中的 12 个建筑包络只是空间容量与界面原型，不是现状建筑判定；基底、覆盖、容积率、高度和总建筑面积均按当前证据状态标记。[metric:building_footprint_area_sqm] [metric:building_coverage_ratio] [metric:floor_area_ratio]
+
+建筑高度与总建筑面积继续保持 unknown，待官方控规和现状调查到位后复算。[metric:building_height_m] [metric:total_floor_area_sqm]
 
 ## 重点区域详细设计
 
@@ -244,7 +252,9 @@ Logo 使用规则：深海军蓝表示历史与责任，青色表示开放接口
 | 中期：网络缝合 | 开源会合台、AI原点贡献站、校城协作花园 | 权属、校城协作、道路与无障碍复核 | 形成跨主体服务闭环而非一次活动 |
 | 长期：条件深化 | 众智治理庭、清河低碳观测、端侧算力驿站 | 官方边界、控规、蓝绿线、市政和安全资料 | 经专业评估后小规模验证再扩展 |
 
-[data:geometry/phasing.geojson#PHASE-001] [metric:renewal_project_count] [metric:phasing_project_area_sqm] [depth:renewal_project_list] [depth:phasing_implementation]
+[data:geometry/phasing.geojson#PHASE-001] [metric:renewal_project_count] [metric:phasing_project_area_sqm]
+
+项目依赖关系和实施深度由分期项目清单与实施深度项共同约束。[depth:renewal_project_list] [depth:phasing_implementation]
 
 政策建议包括四个可逆机制：场景许可证注明数据、责任和期限；公共价值保证书写明非数字入口和社区收益；建筑先用权先于新建量，鼓励短租共享验证空间；每个项目采用版本化证据包，变更时重算指标并公开差异。以上均为参考机制，不构成已确定政策或财政承诺。
 
@@ -256,9 +266,15 @@ Logo 使用规则：深海军蓝表示历史与责任，青色表示开放接口
 
 ![指标、来源、图层与决策的证据链](assets/figures/metrics-evidence.png)
 
-提交边界复算为约 1141.3 ha，与公告“约 11.4 平方公里”同量级，但因边界为临时推定，不把差值解释为精确偏差。用地并集面积与边界一致，说明拓扑闭合。建筑基底 53.8 ha、概念覆盖比 4.7%；绿地 12.1%、公共空间 0.7%；这些都是本设计包络的可复算值，不是法定控制。[metric:site_area_sqm] [metric:land_use_partition_area_sqm] [metric:building_footprint_area_sqm] [metric:building_coverage_ratio] [metric:green_space_area_sqm] [metric:green_ratio] [metric:public_space_area_sqm] [metric:public_space_ratio]
+提交边界复算为约 1141.3 ha，与公告“约 11.4 平方公里”同量级，但因边界为临时推定，不把差值解释为精确偏差。用地并集面积与边界一致，说明拓扑闭合。[metric:site_area_sqm] [metric:land_use_partition_area_sqm] [metric:building_footprint_area_sqm]
 
-网络长度、场景和项目数量分别来自道路、公共空间和分期图层；三处重点区数量来自任务书要求。[metric:walking_cycling_network_length_m] [metric:key_area_count] [metric:scenario_node_count] [metric:renewal_project_count] [metric:phasing_project_area_sqm] [depth:metrics_recalculation]
+建筑基底 53.8 ha、概念覆盖比 4.7%；这些是设计包络的可复算值，不是法定控制。[metric:building_coverage_ratio] [metric:green_space_area_sqm] [metric:green_ratio]
+
+公共空间约 0.7%；绿地和公共空间比值同样不替代批准控制。[metric:public_space_area_sqm] [metric:public_space_ratio]
+
+网络长度、场景和项目数量分别来自道路、公共空间和分期图层。[metric:walking_cycling_network_length_m] [metric:key_area_count] [metric:scenario_node_count]
+
+项目数量与面积来自分期图层，三处重点区数量来自任务书要求。[metric:renewal_project_count] [metric:phasing_project_area_sqm] [depth:metrics_recalculation]
 
 容积率、建筑高度和总建筑面积保持 unknown，直到官方控规、现状调查和专业条件到位。[metric:floor_area_ratio] [metric:building_height_m] [metric:total_floor_area_sqm] [standard:MOHURD-CONTROL-DETAILED-PLANNING]
 
