@@ -79,6 +79,18 @@ Conceptual building interfaces are not an existing-building inventory. Courtyard
 
 ![Seven-band, two-wing spatial ledger](assets/figures/land-use-structure.en.png)
 
+The fourteen cells are independent design decisions, not repeated names applied to coloured zones. Each record stores a spatial move, proposed operating role, acceptance evidence, stop condition and restoration action. Full fields are in `visual/assets/review-evidence.json#spatial_ledgers`. This allows each spatial ledger to be signed off independently instead of using overall area and generic ratios as substitutes for delivery evidence.
+
+| Ledger | Lead function | Primary spatial move | Acceptance before opening | Civic use retained after failure |
+| --- | --- | --- | --- | --- |
+| 01W / 01E South Gateway | Railway provenance / equivalent arrival | Verification desk, staffed window, tactile map | 100% source traceability; offline service available | Arrival, walking and rest |
+| 02W / 02E Dazhongsi | Device trial / transit and consumption | Separate trial, appeal and non-AI service | Four rights channels complete; resident route uninterrupted | Ordinary retail and staffed service |
+| 03W / 03E Jimeng | Professional service / community feedback | Compliance front desk and civic problem table | Responsibility and deadlines complete; dissent traceable | Ordinary office and offline deliberation |
+| 04W / 04E Campus Link | Research translation / talent life | Open ground floor and quiet courts | Licence and retest complete; night boundary passes | Learning, living and non-commercial stay |
+| 05W / 05E AI Origin | Open interoperability / civic collaboration | Release desk, continuous ground floor and two stitches | Reproducibility, licence and public access pass | Collaboration, exhibition and ordinary courts |
+| 06W / 06E North Segment | Edge facilities / Xiaoyue ecology | Degradable loads and accessible green route | Energy, noise and route breaks recorded | Logistics and safe passage |
+| 07W / 07E Zhongzhi | Model assurance / embodied test | Staffed test loop, separate public route and restoration belt | Legal operator, safety approval, stop and restoration drills pass | Ordinary courts and open green space |
+
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
 Fourteen concept land-use cells express functional relationships rather than statutory controls. Sixty building interfaces compare adaptive retention, ground-floor retrofit, and reversible light additions; they are not an existing-building survey, demolition decision, floor-area schedule, or development intensity. FAR, height, gross floor area, and ownership remain `unknown` until official controls and existing-condition evidence trigger a rebuild. [data:geometry/land_use.geojson#LU-01-W] [data:geometry/buildings.geojson#BLDG-101] [metric:conceptual_building_interface_count]
@@ -108,6 +120,14 @@ Dazhongsi combines a transit arrival hall, intelligent-device trial street, data
 The station atlas aligns plan, civic section, operating programme and failed restoration on one review surface. Zhongzhi uses a staffed controlled loop to protect the public route; AI Origin uses a continuous ground floor and public problem table to connect release, collaboration and rights disclosure; Dazhongsi uses an arrival cross and circular hall to separate trial, appeal and non-AI service. These are not one generic grid with different labels, and civic space must remain useful after equipment exits. [data:geometry/buildings.geojson#BLDG-101] [data:geometry/public_space.geojson#LANDMARK-01] [depth:three_key_area_detailed_design]
 
 ![Aligned plans, sections, operations and restoration for three stations](assets/figures/station-design-atlas.en.png)
+
+The three key areas use distinct first-stage delivery packages instead of waiting for every engineering condition before acting. Full fields are in `visual/assets/review-evidence.json#station_delivery_packages`.
+
+| Key area | Unresolved condition | First stage only | Proposed acceptance | Does not yet enter |
+| --- | --- | --- | --- | --- |
+| Zhongzhi | Test/public boundary, energy, noise and demobilisation are unverified | Boundary signs, takeover points, removable enclosure and restoration drill | No uncontrolled path crossing; physical stop and restoration drill pass | Permanent test facilities and utility connection |
+| AI Origin | Release, public access, night work and residential quiet lack one interface | Release desk, civic problem table and two stitch markers | Rights ticket complete; public and resident routes uninterrupted | Permanent ground-floor works and additions |
+| Dazhongsi | Transit arrival, trial, retail and rights service require separation | Temporary trial, staffed desk and surface wayfinding | Notice, staff, appeal and non-AI entries operate together | Permanent station-city and vertical works |
 
 ## Transport, Rail, Municipal Infrastructure, and Public Services
 
@@ -147,6 +167,15 @@ The three east-west stitch sections share one public route that cannot be interr
 Every scene uses the same RACI floor: an operator is accountable, a professional group approves, users and communities are consulted, and the public is informed. AI is never the accountable actor. Resources use S (existing space and staff), M (removable components and specialist service), and L (engineering or long-term operation requiring a separate case). SC-01-SC-04 are industrial test and validation scenes. [metric:scenario_card_count] [metric:industry_validation_scenario_count]
 
 ![Twelve scenes, accountability and stop logic](assets/figures/scenario-operations.en.png)
+
+Resources follow a four-plus-eight strategy: four flagship scenes receive design development while eight remain registered reserves. Each flagship adds 90-day and 180-day gates. Full RACI, data expiry and restoration duties are in `visual/assets/review-evidence.json#flagship_scenarios`.
+
+| Flagship scene | 90-day gate | 180-day gate | Immediate stop | Everyday state after restoration |
+| --- | --- | --- | --- | --- |
+| Model red-team and controlled robotics test | Three boundary, stop, demobilisation and public-route drills | Independent reproducibility; monthly takeover and complaint reporting | Boundary breach, collision, unauthorised data or takeover failure | Ordinary court and open green space |
+| Open release and enterprise translation | Complete licence, retest, version and withdrawal tickets | Traceable research-prototype-enterprise retest chain | Unclear rights, two failed retests or lock-in risk | Collaboration, learning and ordinary exhibition |
+| Public AI trial and appeal | Test notice comprehension, non-AI service and appeal access | Report cohort gaps, complaints and withdrawal execution | Identity tracking, absent staff or broken non-AI route | Ordinary retail, rest and staffed service |
+| Accessible mobility and ecological stewardship | Register route breaks, alternatives and manual inspection | Quarterly access, night, false-alert and closure reporting | Route break, extreme weather or unverified ecological risk | Paper and staffed navigation with safe passage |
 
 ### Identity, three landmarks and eight components
 

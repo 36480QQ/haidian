@@ -1,5 +1,13 @@
 # 方案迭代记录
 
+## v2.3 - 2026-08-12
+
+- Added `visual/assets/review-evidence.json` as a single auditable source for fourteen spatial ledgers, four flagship scenes, three key-area delivery packages and five proposed regional interfaces.
+- Deepened both narratives with independent cell sign-off, station-specific first-stage limits, 90/180-day operating gates, immediate-stop conditions and ordinary-use restoration.
+- Rebuilt land-use, key-area, regional-interface and scenario-operation figures as bilingual light technical-editorial plates with explicit evidence boundaries.
+- Reduced the bilingual A3 booklets to seventeen non-repeating evidence pages and consolidated the A0 set into four full boards ordered by strategy, spatial design, operations and delivery.
+- Rewrote compliance, design-depth and standard mappings so each requirement cites its own sections, figures, layers, metrics, assumptions and trusted gates instead of a shared generic evidence bundle.
+
 ## v2.2 - 2026-08-12
 
 - Fixed the complete Simplified Chinese rendering chain: all technical PNGs now pin the SC face in the Noto TTC collection, and both HTML outputs embed SC webfont subsets.
