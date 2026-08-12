@@ -68,6 +68,8 @@
         "submissions/147228/enterprise-resident-flow-commons/assets/figures/service-continuity-board.svg",
         "submissions/147228/enterprise-resident-flow-commons/assets/figures/simulation-pareto.en.png",
         "submissions/147228/enterprise-resident-flow-commons/assets/figures/simulation-pareto.png",
+        "submissions/147228/enterprise-resident-flow-commons/assets/figures/site-overview-review.en.svg",
+        "submissions/147228/enterprise-resident-flow-commons/assets/figures/site-overview-review.svg",
         "submissions/147228/enterprise-resident-flow-commons/assets/figures/site-overview.en.png",
         "submissions/147228/enterprise-resident-flow-commons/assets/figures/site-overview.png",
         "submissions/147228/enterprise-resident-flow-commons/assets/figures/spatial-mobility-atlas-board.en.svg",
@@ -114,6 +116,8 @@
         "submissions/147228/enterprise-resident-flow-commons/visual/assets/demand-ledger.json",
         "submissions/147228/enterprise-resident-flow-commons/visual/assets/dynamic-preference-readout.json",
         "submissions/147228/enterprise-resident-flow-commons/visual/assets/dynamic-preference-screen.json",
+        "submissions/147228/enterprise-resident-flow-commons/visual/assets/enterprise-resident-reciprocity-contract.json",
+        "submissions/147228/enterprise-resident-flow-commons/visual/assets/enterprise-resident-reciprocity-readout.json",
         "submissions/147228/enterprise-resident-flow-commons/visual/assets/evidence-ledger.json",
         "submissions/147228/enterprise-resident-flow-commons/visual/assets/external-commute-ledger.json",
         "submissions/147228/enterprise-resident-flow-commons/visual/assets/implementation-operation-contract.json",
@@ -141,6 +145,7 @@
         "submissions/147228/enterprise-resident-flow-commons/visual/assets/resource-passport.json",
         "submissions/147228/enterprise-resident-flow-commons/visual/assets/resource-pressure-readout.json",
         "submissions/147228/enterprise-resident-flow-commons/visual/assets/resource-pressure-screen.json",
+        "submissions/147228/enterprise-resident-flow-commons/visual/assets/review-cover-readout.json",
         "submissions/147228/enterprise-resident-flow-commons/visual/assets/run-accessible-service-state-contract.js",
         "submissions/147228/enterprise-resident-flow-commons/visual/assets/run-activity-completion-screen.js",
         "submissions/147228/enterprise-resident-flow-commons/visual/assets/run-asset-closeout-receipts.js",
@@ -148,6 +153,8 @@
         "submissions/147228/enterprise-resident-flow-commons/visual/assets/run-distributional-accessibility-board.js",
         "submissions/147228/enterprise-resident-flow-commons/visual/assets/run-distributional-equity-board.js",
         "submissions/147228/enterprise-resident-flow-commons/visual/assets/run-dynamic-preference-screen.js",
+        "submissions/147228/enterprise-resident-flow-commons/visual/assets/run-enterprise-resident-reciprocity.js",
+        "submissions/147228/enterprise-resident-flow-commons/visual/assets/run-enterprise-review-index.js",
         "submissions/147228/enterprise-resident-flow-commons/visual/assets/run-metrics-schema-audit.js",
         "submissions/147228/enterprise-resident-flow-commons/visual/assets/run-mobility-failure-governance.js",
         "submissions/147228/enterprise-resident-flow-commons/visual/assets/run-mobility-responsibility-transfer.js",
@@ -179,7 +186,7 @@
       "ai_package_stages": {
         "submissions/147228/enterprise-resident-flow-commons": "formal"
       },
-      "total_bytes": 12014370,
+      "total_bytes": 16398515,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -260,7 +267,7 @@
           "source": 54,
           "standard": 15,
           "depth": 15,
-          "data": 49,
+          "data": 52,
           "metric": 19
         }
       }

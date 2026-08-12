@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>京张流线公地：企业—居民全域通勤公平优化器 - proposal report</title>
+<title>京张流线公地：企业—居民互惠通勤操作系统 - proposal report</title>
 <style>
 :root {
   --ink: #172033;
@@ -111,13 +111,16 @@ code {
 <body>
 <main>
 <section class="hero">
-<h1>京张流线公地：企业—居民全域通勤公平优化器</h1>
-<p class="summary">把地铁、公交、自行车、步行/无障碍、汽车与停车装卸纳入同一张可审计的时段路缘账本，并把企业—居民对外通勤、人员动线和综合仿真接上；未来空中出行只作为受审批、可撤回、地面接驳优先的实验接口，三处重点区以五道硬门逐步验证。</p>
+<h1>京张流线公地：企业—居民互惠通勤操作系统</h1>
+<p class="summary">把企业获得的到岗、接驳和路缘窗口，与居民必须保住的日常到达、无障碍、人工入口、失败分母和申诉暂停权放进同一张互惠发布门；轨道公交仍是骨干，空中出行仍是受审批、可撤回、地面接驳优先的实验接口。</p>
 <p class="translation-link"><a href="proposal.en.html">Read in English</a></p>
 </section>
-<h1>京张流线公地：企业—居民全域通勤公平优化器</h1>
 <blockquote><p><strong>一句话判断</strong>：京张带下一步要把企业到岗与装卸、居民上学就医与回家、轨道换乘、路缘停车和维护投诉放进同一个可复算的交通操作系统，让每一项 AI 优化先证明没有挤掉最慢的人。</p></blockquote>
 <p>本方案是一份独立的新投稿包，第一名项目 <code>zhongzhiyuan-autonomy-commons</code> 不在本目录中修改。方案提出“<strong>一张时段路缘账本、两侧需求台账、三类接驳、四项服务水平、五道验证门</strong>”：企业侧登记到岗、班车、货运和充电需求；居民侧登记不含个人轨迹的日常服务需求；空间侧用地铁—公交—自行车—步行/无障碍—汽车的多方式接驳链和可逆路缘窗口消化峰值，同时把跨边界对外通勤纳入 OD；未来空中出行仅保留一个有审批前置条件的实验接口。全部空间仍属于概念设计，官方边界、路权、交通量、权属和现场体验到位后才能复算，不把开放数据筛查写成现状容量。</p>
+<h2>首屏评审入口：先看两边是不是同时兑现</h2>
+<p>这不是另一个交通方式优化器。<code>mobility-commons-jingzhang</code> 处理方式与网络运营，<code>commute-co-benefit-jingzhang</code> 处理需求、容量和失败政策；本包只追问一件事：<strong>企业得到一个到岗、接驳或路缘窗口时，居民具体得到什么，谁负责把它兑现，哪一种失败可以当场叫停。</strong> 因此，企业侧节省不能单独发布，必须和居民日常到达、无障碍路线、人工等价入口、失败与撤回分母、最慢群体不变差以及申诉暂停权一起验收。</p>
+<figure class="proposal-figure"><img src="../assets/figures/site-overview.png" alt="企业—居民互惠发布门"><figcaption>企业—居民互惠发布门</figcaption></figure>
+<p>首屏把早高峰、午间路缘、雨雪与夜间返程、故障维护与退出四个冲突窗口接到同一套六项发布条件。当前只能报告 <code>G0 包内回放 PASS</code>：4/4 合成请求保留回退、6/6 检查和 5/5 回滚动作可重放；<code>G1 现场发布</code> 仍为 <code>HOLD</code>，因为现场路线审计、责任接受、锁定分母和运行授权都是 0。四个负例会在缺少居民回报、人工/公共交通等价路径、最慢群体保护或申诉暂停权时阻断发布 <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="visual/assets/enterprise-resident-reciprocity-contract.json" title="空间数据：visual/assets/enterprise-resident-reciprocity-contract.json">空间数据</sup> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="visual/assets/enterprise-resident-reciprocity-readout.json" title="空间数据：visual/assets/enterprise-resident-reciprocity-readout.json">空间数据</sup> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="visual/assets/run-enterprise-resident-reciprocity.js" title="空间数据：visual/assets/run-enterprise-resident-reciprocity.js">空间数据</sup>。</p>
 <h2>一页执行摘要：先验收一条到站—到家链，再谈共享接驳扩展</h2>
 <p>普通人要在出门、换乘、受阻、求助和回家每一步都保有可理解的选择。第一个可逆试点只验收一条最小链：<strong>选择公共/无障碍或人工路径 → 请求一项交通服务 → 在断网、雨雪、路缘冲突或错过衔接时触发人工/轨道公交接管 → 对不安全或不可达状态冻结预约并退出 → 由独立复核者回放证据后决定修复、扩展或撤回</strong>。当前 M-09 只在本地、无网络、无个人数据的合成桌面演练中复演 4 条请求，<code>performance_results=null</code>、<code>operational_status=not_authorized_not_run</code>，不承担现实运营承诺。</p>
 <div class="proposal-table"><table><thead><tr><th>步骤</th><th>普通人看到的空间/服务</th><th>必须留存的证据</th><th>失效即闭环的动作</th></tr></thead><tbody><tr><td>1. 选择</td><td>站口导向、连续步行/轮椅路线、人工/电话/纸面入口与共享接驳候选并列展示</td><td>选择方式、服务窗口、无障碍需求类别和版本号；不留连续个人轨迹</td><td>数字入口不可用时保留人工等价路径；没有等价路径就不开放</td></tr><tr><td>2. 请求</td><td>公共交通换乘、班车/小巴候选、路缘装卸或社区日常服务台</td><td>请求 ID、服务对象分组、起止时间窗、责任人和替代路线</td><td>权属、责任人、容量或同意边界未知时只登记、不预约</td></tr><tr><td>3. 接管</td><td>错过衔接、断网、雨雪、无障碍受阻或路缘冲突后，现场人员指向轨道/公交或人工路线</td><td>触发事件、接管人、到达/转交时间、清场动作和投诉入口</td><td>冻结自动预约，优先人工/公共交通；无人可接管时停止服务</td></tr><tr><td>4. 退出</td><td>消息牌、人工窗口和纸面/电话申诉让人能改道、回家或取消</td><td>取消原因、替代路线、未解决项和 <code>not_authorized_not_run</code> 状态</td><td>消防、无障碍、隐私或安全硬门失败时不扩容、不写成达标</td></tr><tr><td>5. 复核</td><td>独立复核者回放一条到站—到家链，比较是否继续、修复或撤回</td><td>原始最小日志、分组结果、投诉关闭证据、版本和复核意见</td><td>证据缺失或最慢群体变差时回到 P0 调查与人工服务</td></tr></tbody></table></div>

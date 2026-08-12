@@ -2,20 +2,28 @@
 proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_of: "proposal.md"
-title: "Jing-Zhang Flow Commons: An Equitable Optimizer for Enterprise–Resident Mobility"
+title: "Jing-Zhang Flow Commons: An Enterprise–Resident Reciprocity Operating System"
 author_github: "147228"
 language: "en"
-iteration: "v2.0-population-scale-screen"
+iteration: "v2.1-reciprocity-review-surface"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "A time-windowed curb ledger brings metro, bus, bicycle, walking/accessibility, cars, parking and loading into one auditable system, while external commuting, people flow and multimodal simulation remain explicit; future air mobility is only a conditional, reversible, ground-first experiment."
+summary: "One reciprocity gate binds enterprise arrival, feeder and curb windows to resident daily access, accessibility, human entry, failure denominators and the right of an appeal to pause release; rail and bus remain the backbone, while air stays conditional, reversible and ground-first."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 ---
 
-# Jing-Zhang Mobility Commons: An Enterprise–Resident Mobility Operating System
+# Jing-Zhang Flow Commons: An Enterprise–Resident Reciprocity Operating System
 
 > **Core proposition:** the next move for the Jing-Zhang corridor is not another speculative road. It is a public mobility operating system that lets enterprises manage arrival, shuttle, freight and charging demand while residents retain continuous walking, accessible and human-service routes.
 
 This is a new independent submission package. It does not modify the existing first-place project. The proposal uses one time-windowed curb ledger, two aggregated demand registers, three connection types, four service levels and five verification gates. Enterprise data is submitted as grouped time windows, not personal traces. Resident needs cover school, care, health, daily shopping, night return and accessibility. Metro and bus remain the structural backbone; bicycle and walking/accessibility provide the first/last mile; cars are managed for necessary trips, parking, loading, charging and emergency access; shared shuttles and AI recommendations are reversible feeder services. External commuting is kept in the OD boundary, and future air mobility is only a conditional experiment. All geometry remains provisional until official boundaries, right-of-way, traffic counts, ownership and field audits are available.
+
+## First-Screen Review Entry: Both Sides Must Be Delivered Together
+
+This is not another mode optimizer. `mobility-commons-jingzhang` addresses mode and network operations, while `commute-co-benefit-jingzhang` addresses demand, capacity and failure policy. This package asks one narrower question: **when an enterprise receives an arrival, feeder or curb window, what does a resident receive, who is accountable for delivering it, and which failure stops release?** An enterprise saving therefore cannot be published alone. It must be accepted together with resident daily access, an accessible route, an equivalent human entry, failed and withdrawn requests in the denominator, protection for the slowest group, and the right of an aggregate appeal to pause release.
+
+![Enterprise–resident reciprocity gate](assets/figures/site-overview.en.png)
+
+The first screen binds four conflict windows—AM peak, midday curb, weather and night return, and failure/repair/exit—to the same six release conditions. The current claim is limited to `G0 PACKAGE REPLAY PASS`: 4/4 synthetic requests retain fallback, 6/6 checks and 5/5 rollback actions replay. `G1 FIELD RELEASE` remains `HOLD` because dated route audits, accepted responsibility transfers, locked denominators and operating authorizations are all zero. Four negative fixtures block release when the resident return, human/public equivalent, slowest-group protection or appeal pause is missing [data:visual/assets/enterprise-resident-reciprocity-contract.json] [data:visual/assets/enterprise-resident-reciprocity-readout.json] [data:visual/assets/run-enterprise-resident-reciprocity.js].
 
 ## One-Page Executive Brief: Accept One Door-to-Door Chain Before Expanding Shared Feeders
 

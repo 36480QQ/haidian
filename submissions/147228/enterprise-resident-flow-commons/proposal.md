@@ -1,21 +1,29 @@
 ---
 proposal_format_version: "2"
 bilingual_contract_version: "1"
-title: "京张流线公地：企业—居民全域通勤公平优化器"
+title: "京张流线公地：企业—居民互惠通勤操作系统"
 author_github: "147228"
 language: "zh"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "把地铁、公交、自行车、步行/无障碍、汽车与停车装卸纳入同一张可审计的时段路缘账本，并把企业—居民对外通勤、人员动线和综合仿真接上；未来空中出行只作为受审批、可撤回、地面接驳优先的实验接口，三处重点区以五道硬门逐步验证。"
+summary: "把企业获得的到岗、接驳和路缘窗口，与居民必须保住的日常到达、无障碍、人工入口、失败分母和申诉暂停权放进同一张互惠发布门；轨道公交仍是骨干，空中出行仍是受审批、可撤回、地面接驳优先的实验接口。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
-iteration: "v2.0-population-scale-screen"
+iteration: "v2.1-reciprocity-review-surface"
 ---
 
-# 京张流线公地：企业—居民全域通勤公平优化器
+# 京张流线公地：企业—居民互惠通勤操作系统
 
 > **一句话判断**：京张带下一步要把企业到岗与装卸、居民上学就医与回家、轨道换乘、路缘停车和维护投诉放进同一个可复算的交通操作系统，让每一项 AI 优化先证明没有挤掉最慢的人。
 
 本方案是一份独立的新投稿包，第一名项目 `zhongzhiyuan-autonomy-commons` 不在本目录中修改。方案提出“**一张时段路缘账本、两侧需求台账、三类接驳、四项服务水平、五道验证门**”：企业侧登记到岗、班车、货运和充电需求；居民侧登记不含个人轨迹的日常服务需求；空间侧用地铁—公交—自行车—步行/无障碍—汽车的多方式接驳链和可逆路缘窗口消化峰值，同时把跨边界对外通勤纳入 OD；未来空中出行仅保留一个有审批前置条件的实验接口。全部空间仍属于概念设计，官方边界、路权、交通量、权属和现场体验到位后才能复算，不把开放数据筛查写成现状容量。
+
+## 首屏评审入口：先看两边是不是同时兑现
+
+这不是另一个交通方式优化器。`mobility-commons-jingzhang` 处理方式与网络运营，`commute-co-benefit-jingzhang` 处理需求、容量和失败政策；本包只追问一件事：**企业得到一个到岗、接驳或路缘窗口时，居民具体得到什么，谁负责把它兑现，哪一种失败可以当场叫停。** 因此，企业侧节省不能单独发布，必须和居民日常到达、无障碍路线、人工等价入口、失败与撤回分母、最慢群体不变差以及申诉暂停权一起验收。
+
+![企业—居民互惠发布门](assets/figures/site-overview.png)
+
+首屏把早高峰、午间路缘、雨雪与夜间返程、故障维护与退出四个冲突窗口接到同一套六项发布条件。当前只能报告 `G0 包内回放 PASS`：4/4 合成请求保留回退、6/6 检查和 5/5 回滚动作可重放；`G1 现场发布` 仍为 `HOLD`，因为现场路线审计、责任接受、锁定分母和运行授权都是 0。四个负例会在缺少居民回报、人工/公共交通等价路径、最慢群体保护或申诉暂停权时阻断发布 [data:visual/assets/enterprise-resident-reciprocity-contract.json] [data:visual/assets/enterprise-resident-reciprocity-readout.json] [data:visual/assets/run-enterprise-resident-reciprocity.js]。
 
 ## 一页执行摘要：先验收一条到站—到家链，再谈共享接驳扩展
 
