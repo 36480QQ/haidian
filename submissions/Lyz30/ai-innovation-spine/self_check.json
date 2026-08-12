@@ -46,9 +46,30 @@
     {
       "check_id": "PROFESSIONAL_EVIDENCE",
       "result": "pass",
-      "severity": "major",
+      "severity": "blocking",
       "target": "proposal.md",
       "message": "方案对标准、深度项、图层、指标、来源与假设建立了逐条可回溯的证据链；控规缺数值处采用有口径无数值纪律并登记假设。"
+    },
+    {
+      "check_id": "DETERMINISTIC_VALIDATION",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "manifest.json",
+      "message": "确定性校验全部通过：manifest 文件清单与 sha256 一致，必填文件齐全，proposal data/standard/depth/source/metric 引用闭环，geometry schema 合法。"
+    },
+    {
+      "check_id": "SPATIAL_REVIEW",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "geometry",
+      "message": "空间审查通过：site_boundary 仅含总体设计范围，land_use 完整覆盖且无重叠，key_areas 使用官方 area_id，全部 geometry 面积与投影复算一致。"
+    },
+    {
+      "check_id": "VISUAL_PACKAGING",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "visual/index.html",
+      "message": "静态可视化安全合规：章节标记齐全，声明的 metric 均已在 metrics.json 注册且数值一致，无远程资源与活动内容。"
     },
     {
       "check_id": "PRIVACY_COMPLIANCE",
