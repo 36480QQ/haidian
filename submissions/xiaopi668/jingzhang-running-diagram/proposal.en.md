@@ -187,6 +187,16 @@ The **admission-level and technology-readiness overview** of the ten cards is pr
 2. **T2 AI traffic-signal dispatching experiment segment** (around Wudaokou): simulation-first, phased live pilots of AI signal timing with human review and one-key rollback, verifying efficiency and safety boundaries.
 3. **T3 Edge-compute and data-sandbox test ground** (Zhongzhiyuan): a compliant test environment for edge models and public-data sandboxes; data stays inside the sandbox and results are human-reviewed [source:AGENT-TASKBOOK].
 
+**Pilot admission gates (v1.3 addition, conceptual mechanism)**: all three test scenarios are managed by four-stage gates — admission / human takeover / stop conditions / evaluation metrics — to keep them supervised, reviewable and exitable [depth:traffic_rail_slow_parking] [depth:municipal_new_infrastructure]:
+
+| Pilot | Admission conditions | Human-takeover trigger | Stop conditions | Evaluation metrics (quarterly review) |
+| --- | --- | --- | --- | --- |
+| T1 Robot delivery corridor | Semi-enclosed corridor operation; speed ≤6 km/h; fixed time windows; operator on site; safety liability insurance | Pedestrian conflict, avoidance failure or device anomaly → one-key on-site takeover | Accident rate above baseline, concentrated public complaints, or unmet evaluation → suspend and review | Delivery success rate, accident rate, public satisfaction, traffic-interference index |
+| T2 AI signal dispatching segment | Simulation pass rate not below the baseline of existing plans; isolated testing; 7×24 human review desk | Abnormal timing, queue overflow or safety event → roll back to normal timing plan | Throughput below baseline or safety event → stop the experiment | Average delay change, queue length, safety-event count, explainability audit |
+| T3 Edge-compute & data sandbox | Data-tier whitelist; sandbox isolation; human review of results; compliance review upfront | Data-escape attempt or unauthorized access → automatic block and alert | Data breach or compliance event → immediate stop and escalation | Tests completed, compliance events, results converted |
+
+All gate conditions are conceptual; actual values and responsible bodies are to be confirmed upon approval of the pilot implementation plans; no pilot may be presented as operating before approval [source:AGENT-TASKBOOK].
+
 ### Five user personas (agent.3)
 
 - **P1 AI founder** (start-up team lead): needs low-cost space, capital connections, test scenarios and recruiting; mainly active in the Origin Community and Zhongzhiyuan.
