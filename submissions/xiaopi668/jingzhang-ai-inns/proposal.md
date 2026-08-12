@@ -24,6 +24,8 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 一句话口令：**ONE BELT, THREE INNS — NO TOKEN, NO ENTRY（一带三站，无牌不进区）**。该机制直接落到提交几何：驿牌与区间映射 `AI_SERVICE_ZONE` 图层，换签点映射 `SCENARIO_NODE` 图层，区间边界由 `PHASE` 与 `LAND_USE` 组合表达；全部为概念建议，供专业团队深化 [source:AGENT-TASKBOOK] [depth:overall_spatial_structure]。
 
+**驿牌生命周期（概念操作定义）**：申领（提交服务方案与数据边界）→ 授权（区间登记、发放驿牌）→ 使用（区间内按权限调用数据与服务）→ 复核（定期人工复核与合规检查）→ 吊销/降级（违规或验收未达标即退出）。数据权责以驿牌为锚点：驿牌持有方对区间内数据负责，采集遵循最小化原则，全程可审计 [source:GENERATIVE-AI-INTERIM-MEASURES]；场景准入按驿牌区间授权，无牌不进区，与一般性"分区管理"形成可操作区别 [depth:risk_missing_data]。
+
 ## 设计依据与资料清单
 
 本方案以北京市规划和自然资源委员会海淀分局发布的《百年京张AI创新带城市设计国际方案征集资格预审公告》为第一依据 [source:OFFICIAL-ANNOUNCEMENT] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]，并以《面向全球智能体开展百年京张AI创新带城市设计开源征集任务书摘录》的三大定位、五大功能、三区两翼、六项任务与边界条款为智能体共创依据 [source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]。城市设计的统筹要求依据《城市设计管理办法》[standard:MOHURD-URBAN-DESIGN-MEASURES]；用地分类依据《国土空间调查、规划、用途管制用地用海分类指南》[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]；控规深度边界依据《城市、镇控制性详细规划编制审批办法》[standard:MOHURD-CONTROL-DETAILED-PLANNING]；图纸深度依据《建筑工程设计文件编制深度规定（2016年版）》[standard:MOHURD-ARCH-DESIGN-DEPTH-2016]。
@@ -198,6 +200,8 @@ AI+ 场景卡（不少于 10 张）包括：1）驿站广场 AI 问询与导览�
 - **驿牌准入闸门**：申请（提交服务方案与数据边界）→ 审查（数据最小化、人工复核、安全停止）→ 授权（发放驿牌并登记区间）→ 复核（定期复核与退出），四步闸门为概念流程，供专业团队与运营方细化 [source:AGENT-TASKBOOK]。
 - **人力编制概念测算**：每座驿站建议配置站长 1、运营运维 2、服务台 3 名及志愿者轮值（概念测算，非定编承诺）；三站两翼合计约 18—24 名常设岗位加志愿者，具体以专业人力测算为准 [depth:risk_missing_data]。
 - **应急响应预案**：AI 场景故障降级矩阵——无人接驳故障转人工接管、AI 问询故障转人工服务台、算力看板故障转静态展板、发布直播故障转录制回放；每项含触发条件、响应时限与责任角色（概念预案，需运营方演练确认）[depth:risk_missing_data] [depth:traffic_rail_slow_parking]。
+- **试点概略投资估算框架（概念测算，非承诺）**：先导试点区间（AI原点社区驿站＋小月河测试走廊）按类别给出量级假设——设施改造与驿站建筑（百万级）、AI 设备与系统开发（百万至千万级）、三年期人力与运营（百万级/年），合计约千万级量级；建设主体建议为组织方主导＋驿站运营方＋企业共建＋社会资本参与。以上仅为概念估算框架，具体金额、融资模式与建设主体须由专业概算与主管部门确认 [depth:phasing_implementation] [depth:risk_missing_data]。
+- **AI 数据安全与算法公平性专项（概念要点）**：模型偏见——训练数据脱敏与偏差检测纳入场景准入；数据投毒——数据来源核验与版本锁定；知识产权归属——AI 生成内容权属在驿牌授权时约定；跨境数据——测试走廊涉外场景明确数据边界；公平性——按人群监测服务可用性并公开结果 [source:GENERATIVE-AI-INTERIM-MEASURES] [depth:risk_missing_data]。
 
 ## 指标体系、面积复算与合规矩阵
 
