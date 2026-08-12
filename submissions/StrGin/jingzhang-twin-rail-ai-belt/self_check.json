@@ -1,0 +1,91 @@
+{
+  "schema_version": "0.1.0",
+  "iteration": "v0.3",
+  "checked_at": "2026-08-13T01:14:00+08:00",
+  "checks": [
+    {
+      "check_id": "BOUNDARY_TRUST",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/site_boundary.geojson",
+      "message": "Provisional boundary is present; replace with official redline before professional scoring."
+    },
+    {
+      "check_id": "KEY_AREAS_TRUST",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/key_areas.geojson",
+      "message": "Three required key areas are provisional; areas confirmed by EPSG:4548 recalculation (192.9/104.3/72.0 ha; sum 369.3 ha vs nominal 368.4 ha +0.24%)."
+    },
+    {
+      "check_id": "LAND_USE_TOPOLOGY",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/land_use.geojson",
+      "message": "15 land-use polygons cover site_boundary without gaps/overlaps; encoding whitelist (1401/0802/0601/0901/0701/0702) verified."
+    },
+    {
+      "check_id": "METRIC_GREEN_RATIO_RECALC",
+      "result": "pass",
+      "severity": "major",
+      "target": "metrics.json",
+      "message": "green_ratio recalculated via EPSG:4548 = 0.192099 (19.21%); previous 0.1984 retired as legacy estimate."
+    },
+    {
+      "check_id": "EVIDENCE_CONTRACT_MISSING_DATA",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal.md,proposal.en.md,design_depth_matrix.json,report/proposal.html,report/proposal.en.html",
+      "message": "All [source:MISSING-DATA] tags replaced with [assumption:A-REGULATORY-PENDING-001]; standard_matrix merged duplicate MNR entries; sources.json registers DATA-SRC-PUBLIC-CASE-LITERATURE."
+    },
+    {
+      "check_id": "ASSET_RIGHTS_LEDGER",
+      "result": "pass",
+      "severity": "major",
+      "target": "report/copyright_statement.md",
+      "message": "9-asset rights ledger present with per-asset license/attribution; rendering font Noto Sans SC under SIL OFL 1.1."
+    },
+    {
+      "check_id": "BILINGUAL_PAIR",
+      "result": "pass",
+      "severity": "major",
+      "target": "visual/index.html,visual/index.en.html",
+      "message": "SVG node labels localised; duplicate 'Three-Level Scope Three-Level Scope' header fixed; font-family prefers Noto Sans SC."
+    },
+    {
+      "check_id": "FIGURE_DIVERSIFICATION",
+      "result": "pass",
+      "severity": "major",
+      "target": "assets/figures/",
+      "message": "5 theme figures now layer-distinct (not just title-swap); 3 key-area node-detail figures added (zh+en = 6 new PNGs)."
+    },
+    {
+      "check_id": "PDF_NOTO_FONT",
+      "result": "pass",
+      "severity": "major",
+      "target": "drawings/a3-booklet.pdf,drawings/a3-booklet.en.pdf,drawings/a0-boards.pdf,drawings/a0-boards.en.pdf",
+      "message": "All PDFs regenerated with Noto Sans SC; A3 booklet extended to 11 pages including node-detail sheets."
+    },
+    {
+      "check_id": "MANIFEST_HASH_RECALC",
+      "result": "pass",
+      "severity": "major",
+      "target": "manifest.json",
+      "message": "47 file entries (41 original + 6 new node-detail PNGs); sha256 values recomputed; iteration=v0.3."
+    },
+    {
+      "check_id": "VISUAL_STATIC",
+      "result": "pass",
+      "severity": "info",
+      "target": "visual/index.html",
+      "message": "Static HTML visualization is generated without external dependencies."
+    },
+    {
+      "check_id": "PROFESSIONAL_EVIDENCE",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal.md",
+      "message": "Proposal includes references to standards, design depth items, geometry, metrics, sources, and assumptions; scenario card matrix enhanced with operating entity and data scope columns."
+    }
+  ]
+}
