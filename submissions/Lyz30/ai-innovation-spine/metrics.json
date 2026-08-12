@@ -20,7 +20,7 @@
     },
     "building_footprint_area_sqm": {
       "status": "known",
-      "value": 58245.632,
+      "value": 91818.575,
       "unit": "sqm",
       "source_files": [
         "geometry/buildings.geojson"
@@ -33,7 +33,7 @@
     },
     "green_space_area_sqm": {
       "status": "known",
-      "value": 1778616.443,
+      "value": 1792941.975,
       "unit": "sqm",
       "source_files": [
         "geometry/green_space.geojson"
@@ -46,7 +46,7 @@
     },
     "public_space_area_sqm": {
       "status": "known",
-      "value": 628073.744,
+      "value": 243772.189,
       "unit": "sqm",
       "source_files": [
         "geometry/public_space.geojson"
@@ -59,7 +59,7 @@
     },
     "green_ratio": {
       "status": "known",
-      "value": 0.155844,
+      "value": 0.157099,
       "unit": "ratio",
       "source_files": [
         "geometry/green_space.geojson",
@@ -73,7 +73,7 @@
     },
     "public_space_ratio": {
       "status": "known",
-      "value": 0.055032,
+      "value": 0.021359,
       "unit": "ratio",
       "source_files": [
         "geometry/public_space.geojson",
