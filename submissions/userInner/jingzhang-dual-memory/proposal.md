@@ -25,7 +25,9 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 | 风险与表达 | 总图与控制账本把 known、design_target、unknown、HOLD 分层显示，避免图面精度掩盖证据缺口 | 第 1、3—5 张展板、空间审计脚本 |
 | 国际传播与长期运营 | “24 小时公共创新线”把五个日常时段、年度公开复盘与区域协作接口合并为一张可执行的运营图谱 | `24h-public-innovation-line.json`、v5 概念主视觉 |
 
-![24 小时公共创新线：铁路遗产、蓝绿系统和三个公共节点在蓝调时刻连续工作（AI 生成概念体验图，非现状或审批效果）](assets/media/cover-v5.webp)
+![24 小时公共创新线：铁路遗产、蓝绿系统、普通公共路线和围合试验庭连续工作的轴测概念体验（AI 生成，非现状或审批效果）](assets/media/cover-v5-professional.webp)
+
+![24 小时运营—空间联动展板：五个时段分别登记普通服务、可选 AI、责任主体、放行条件与证据状态](assets/boards/board-08.jpg)
 
 ![证明里程空间图谱：总体带—日常路线—同意剖面—实施合同](assets/boards/board-01.jpg)
 

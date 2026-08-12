@@ -25,7 +25,9 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 | Risk and expression | The atlas and control ledger separate known facts, design targets, unknown controls, and HOLD decisions | boards 01 and 03–05; spatial audit |
 | International communication and long-term operation | The 24-Hour Civic Innovation Line combines five daily windows, an annual public-review cycle and regional exchange interfaces | `24h-public-innovation-line.json`; v5 concept cover |
 
-![24-Hour Civic Innovation Line: railway heritage, blue-green systems and three civic nodes work continuously at blue hour (AI-generated concept experience, not existing-condition or approval evidence)](assets/media/cover-v5.webp)
+![24-Hour Civic Innovation Line: an axonometric concept experience linking railway heritage, blue-green systems, ordinary public routes and a bounded trial court (AI-generated, not existing-condition or approval evidence)](assets/media/cover-v5-professional.webp)
+
+![24-hour operations-space board: each of five windows records ordinary service, optional AI, accountable owner, release condition and evidence state](assets/boards/board-08.en.jpg)
 
 ![Proof Mile spatial atlas: belt—daily route—consent section—implementation contract](assets/boards/board-01.en.jpg)
 
