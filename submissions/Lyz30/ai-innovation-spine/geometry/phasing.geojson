@@ -3,7 +3,9 @@
   "name": "phasing",
   "crs": {
     "type": "name",
-    "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" }
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
   },
   "features": [
     {
@@ -17,17 +19,34 @@
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "area_sqm_declared": 12540000
+        "area_sqm_declared": 3663677.009
       },
       "geometry": {
         "type": "Polygon",
-        "coordinates": [[
-          [116.3407, 39.939],
-          [116.3553, 39.939],
-          [116.3553, 39.965],
-          [116.3402, 39.965],
-          [116.3407, 39.939]
-        ]]
+        "coordinates": [
+          [
+            [
+              116.3407,
+              39.939
+            ],
+            [
+              116.3553,
+              39.939
+            ],
+            [
+              116.3553,
+              39.965
+            ],
+            [
+              116.3402,
+              39.965
+            ],
+            [
+              116.3407,
+              39.939
+            ]
+          ]
+        ]
       }
     },
     {
@@ -41,19 +60,42 @@
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "area_sqm_declared": 58470000
+        "area_sqm_declared": 7411525.074
       },
       "geometry": {
         "type": "Polygon",
-        "coordinates": [[
-          [116.3402, 39.965],
-          [116.3553, 39.965],
-          [116.3533, 39.99],
-          [116.3553, 40.0265],
-          [116.3427, 40.0265],
-          [116.3415, 39.99],
-          [116.3402, 39.965]
-        ]]
+        "coordinates": [
+          [
+            [
+              116.3402,
+              39.965
+            ],
+            [
+              116.3553,
+              39.965
+            ],
+            [
+              116.3533,
+              39.99
+            ],
+            [
+              116.3553,
+              40.0265
+            ],
+            [
+              116.3427,
+              40.0265
+            ],
+            [
+              116.3415,
+              39.99
+            ],
+            [
+              116.3402,
+              39.965
+            ]
+          ]
+        ]
       }
     },
     {
@@ -67,17 +109,34 @@
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "area_sqm_declared": 41750000
+        "area_sqm_declared": 4221975.106
       },
       "geometry": {
         "type": "Polygon",
-        "coordinates": [[
-          [116.3415, 39.99],
-          [116.3427, 40.0265],
-          [116.3553, 40.0265],
-          [116.3533, 39.99],
-          [116.3415, 39.99]
-        ]]
+        "coordinates": [
+          [
+            [
+              116.3415,
+              39.99
+            ],
+            [
+              116.3427,
+              40.0265
+            ],
+            [
+              116.3553,
+              40.0265
+            ],
+            [
+              116.3533,
+              39.99
+            ],
+            [
+              116.3415,
+              39.99
+            ]
+          ]
+        ]
       }
     }
   ]
