@@ -9,14 +9,40 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Before AI enters the street, it must pass public acceptance: one Public Acceptance Passport governs a Safety Acceptance Garden, Rights & Contribution Arcade, and 100-metre Public Acceptance Street, while an exit-ready pilot and zero-network runner turn twelve scenarios into testable civic contracts."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v3.0"
+iteration: "v3.1"
 ---
 
 # Intelligence in Common: The Jing-Zhang Open Intelligence Commons
 
 **Before AI enters the street, it must pass public acceptance.** This is the proposal's shortest and most testable civic claim. The Centennial Jing-Zhang AI Innovation Belt does not need an AI showcase visible only during festivals. It needs an urban public protocol that operates year-round, welcomes everyone, allows every technology to be questioned, and lets failure exit. The proposal reads the Jing-Zhang Railway Heritage Park as a memory and public-intelligence spine. Zhongzhiyuan, the Beijing AI Origin Community, and Dazhongsi become three distinct urban laboratories for safety governance, open-source translation, and AI-Native everyday life. The Zhongguancun Technology Services Wing and Xiaoyue River Scenario Enablement Wing connect capital, legal services, compute, data, and real urban problems.
 
-Version 3.0 extends public acceptance from one street into a **Public Acceptance Passport** shared by all three key areas. Zhongzhiyuan's Safety Acceptance Garden proves that testing is observable and physically stoppable. The AI Origin Community's Rights & Contribution Arcade proves that provenance is traceable and a contribution can be withdrawn. Dazhongsi's 100-metre Public Acceptance Street proves that daily services retain a staffed path, appeal, and rollback. Each of twelve passports becomes eligible for time-limited public acceptance only when four conditions interlock—purpose visible, accountable owner named, human takeover rehearsed, and exit rehearsed—and every red line passes. This is an original civic metaphor derived from the Jing-Zhang culture of connection; it is not a description of real railway signalling engineering. Every move remains a Conceptual Recommendation, a reference scheme, or material for professional teams to deepen. Nothing replaces statutory planning or constitutes a government-approved conclusion.
+Version 3.1 compresses this protocol into an internationally legible urban identity: **NO PASS, NO AI**. PASS is the proposal's shorthand for Public Acceptance & Safe-Street Standard and its four non-compensable admission conditions: **P / Purpose visible**, **A / Accountable owner**, **S / Staffed handover**, and **S / Stop-safe restoration**. Zhongzhiyuan's Safety Acceptance Garden proves that a trial can stop. The AI Origin Community's Rights & Contribution Arcade proves that a contribution can be withdrawn. Dazhongsi's 100-metre Public Acceptance Street proves that everyday service can be handed back to people. If one PASS condition fails, AI does not activate and the place returns to its ordinary no-AI garden, arcade, or staffed street baseline. PASS is an original concept protocol, not a statutory standard, government certification, or real railway signalling system.
+
+## One-Page Jury Conclusion: From an Existing Park to an Acceptable AI City
+
+**Do not rebuild the park. Do not copy a campus. Do not let technology display substitute for city-making.** The Beijing Municipal Commission of Planning and Natural Resources describes the Jing-Zhang Railway Heritage Park as an approximately nine-kilometre corridor serving nine subdistricts and towns. Its operative railway, Line 13, urban roads, fragmented cross-connections, multiple ownerships, and phased implementation are the real planning condition [source:OFFICIAL-JZ-PARK-PLAN-2021]. The Beijing Gardening and Greening Bureau confirms that a 2.5-kilometre, 16.8-hectare first phase is already open, conserving railway remains while stitching east-west movement and connecting universities and research institutions [source:OFFICIAL-JZ-PARK-PHASE1-2023]. The starting point is therefore an existing public realm whose civic value must not be eroded by AI, not a blank masterplan inside a rough provisional boundary.
+
+Urban space and AI operate in sequence. **Layer one is the permanent ordinary-city baseline:** railway memory, continuous walking and cycling, three east-west stitches, blue-green sponge space, universal access, and visible staffed service. **Layer two is a time-limited AI plug-in:** it may occupy only a reversible service band that never blocks basic movement and always has a named owner, physical stop, appeal, and expiry date. Remove every AI device and the street must still work. That is the minimum meaning of an AI-Native city.
+
+The three key areas are deliberately non-interchangeable. Zhongzhiyuan sequences public garden, interpretation porch, controlled test loop, and logistics to manage safety gradients. The AI Origin Community sequences campus and park pores, Open Outputs Street, shared ground floors, and everyday lanes to connect open-source translation with daily life. Dazhongsi sequences station-city foyer, four-quadrant ground stitching, the 100-metre acceptance street, and an international living room to serve high everyday footfall. They share PASS, but their plans, sections, people flows, logistics, and failure-recovery baselines are different.
+
+### Strategy Test: Why Not a Showcase Belt or Three Isolated Test Yards?
+
+| Strategy | Everyday public value | Site fit | Failure recovery | Tri-area synergy | Transferability | Decision |
+|---|---:|---:|---:|---:|---:|---|
+| A Technology showcase belt | 2 | 3 | 2 | 2 | 2 | Festival visibility risks reducing citizens to spectators |
+| B Three isolated test yards | 1 | 2 | 3 | 1 | 2 | Professional control severs the public spine and everyday life |
+| **C PASS public-acceptance city** | **5** | **5** | **5** | **5** | **5** | **The ordinary city is permanent; AI is time-limited; admission evidence travels** |
+
+Scores from 1–5 are qualitative design-team rankings for option selection, not measured performance, jury scoring, or government conclusions. Strategy C wins because it answers both “how does public space improve?” and “how does the city continue when AI fails?”
+
+### Identity, Regional Interfaces, and International Communication
+
+The identity is an operating instrument rather than a detached logo. A railway-ticket/passport-shaped admission card carries four P-A-S-S cells: teal means the ordinary-city baseline is intact, orange means a time-limited trial, and red **NO PASS** means stop and restore. Every sign, desk, and scenario card provides Chinese and English text, pictograms, and a paper/staffed route. A phone, account, or face can never gate basic access.
+
+Jing-Zhang exports interfaces rather than a masterplan: a public-acceptance problem card toward Huairou Science City; an emergency-stop, human-handover, and exit evidence pack toward Beijing E-Town; talent, research, and prototype co-acceptance interfaces toward Future Science City and Beiwei Community; and privacy-preserving PASS scenario packs toward Beijing-Tianjin-Hebei. These are proposed collaboration interfaces, not claims that any counterpart has joined.
+
+The international message is one sentence: **NO PASS, NO AI — the city works before, during and after AI.** By walking notice, staffed service, co-testing, appeal, and restoration within one hundred metres, a visitor can understand Jing-Zhang's contribution without first learning Chinese planning vocabulary: not the district with the most AI devices, but a city experiment that gives the public admission, interruption, and restoration rights over AI.
 
 ## Design Basis and Source List
 
@@ -104,7 +130,7 @@ Its value is not another AI photo spot but a city-scale use-before-deploy rule: 
 
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
-Six personas test the spatial system. Open-source researchers need persistent collaboration and contribution records. Startup teams need low-threshold trials, legal support, and customer entry points. Industry engineers need cross-team integration and safety evaluation. University students and faculty need translation pathways and walkable third places. Nearby residents - especially older people, children, and disabled people - need low-disturbance, explainable, appealable services. Public operators need clear accountability, audit, and exit mechanisms. These are needs-based hypotheses derived from the taskbook, not personal tracking data [metric:persona_count].
+Eight personas test the spatial system. Open-source researchers need persistent collaboration and contribution records. Startup teams need low-threshold trials, legal support, and customer entry points. Industry engineers need cross-team integration and safety evaluation. University students and faculty need translation pathways and walkable third places. Nearby residents—especially older people, children, and disabled people—need low-disturbance, explainable, appealable services. Public operators need clear accountability, audit, and exit mechanisms. International talent needs bilingual service, paper fallback, and traceable appeal. Frontline park cleaners, security staff, and maintenance workers need freedom from black-box scheduling and continuous tracking, plus physical authority to stop equipment. These are needs-based hypotheses derived from the taskbook, not personal tracking data [metric:persona_count].
 
 All twelve scenario cards map to [data:geometry/public_space.geojson#PUBLIC-001] and follow data minimization, purpose limitation, no default personal identification, human final review for high-impact decisions, appeal, and exit:
 
