@@ -10,11 +10,11 @@
   "agent": {
     "agent_id": "lqqk7",
     "agent_name": "柱子 / Zhuzi",
-    "model": "OpenAI GPT-5.6 Sol via Codex",
-    "model_family": "gpt",
-    "model_detail": "OpenAI GPT-5.6 Sol via Codex desktop; research subtasks reviewed from GPT-5.6 Terra agents"
+    "model": "Claude Fable 5 via Claude Code",
+    "model_family": "claude",
+    "model_detail": "v1.0 scaffolded and authored with OpenAI GPT-5.6 Sol via Codex; v2.0-v5.2 iterations authored with Anthropic Claude Fable 5 via Claude Code with Claude Opus subagents; audio narration synthesized with MiniMax speech-2.8-hd (disclosed in assets/media transcripts)"
   },
-  "generated_at": "2026-08-10T04:10:01Z",
+  "generated_at": "2026-08-12T11:56:14Z",
   "files": [
     {
       "path": "manifest.json",
@@ -26,13 +26,13 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "975098578104ff16e8a86870af9eb8c14ff2fbb2c2c70cc1c819d85034311a7b"
+      "sha256": "efeea94102cfba8e494f23f270cfde1c2d5b1197ac7128adf4e586c013312ef7"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "18ced3ef1954a2493a369732e5483b4293174293a623c167d15bbb2574ed9878"
+      "sha256": "255e439bcf114c43f757c245befac0d8706f2b939b8b87e56cb5cbceb4f4ffbb"
     },
     {
       "path": "metrics.json",
@@ -56,13 +56,13 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "4bce59ef00f829a5c37e9a9b7cbaf4433430be5e74f81b65033b99e2060f2669"
+      "sha256": "bfcc1a8d64b16334b092091c4e6c03c1d3bbe91516cbb1f70e5a4159348eeedb"
     },
     {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "06c99203c736184387ab429075befccb2c9ccf78961a963166c9c2b0e5b121a5"
+      "sha256": "d787325d1e2c5bf63a7a0529b60818e292607ea032504de08a2fe9d3c8108dc6"
     },
     {
       "path": "standard_matrix.json",
@@ -88,13 +88,13 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "5a77e41324f29ca62531b123ec58f9e213b14fed1c0dce69d72ba188eda5c484"
+      "sha256": "b8648b97b026c384a46b751c07864eb7e398afef6bc33f5d60ad9728f9695539"
     },
     {
       "path": "report/narrative.md",
       "role": "narrative",
       "required": false,
-      "sha256": "24a2775a3292ce4474ccb98b7c82202bc7c31fa0b74f5934247d0583dabc577f"
+      "sha256": "1c57abbf7f5957a440f0ecb27d25d2cb974d74241bbc3823f80ce0858f88cdf2"
     },
     {
       "path": "report/copyright_statement.md",
@@ -107,21 +107,21 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "9bd040be395841d466878f9eb1bf9cb585cc1e8967978c2d8b05fbfb33f90b04"
+      "sha256": "059129eecd2abe9c6d427f7d30ea5ddde0380776db20b964381c1041c8fcb0ef"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "804f9988a77d4f790f0bdb4f6ba245e25eb0ec71a7dbab8ef6a578dbfdb71b6a"
+      "sha256": "e58f772e75ca678dbb3f394641537e19a7350e2b3034c1ef6182fa2548aa82bc"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "560af8e53e2a021e150136b04f0c7371c091bb134cc56280b4d77c48201d49cf"
+      "sha256": "d82e73ecee0e804626b957291148b32acbd7443219eb283da427642d60bf6576"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -218,7 +218,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "590b25af6120ec55a428ddafb1943d61e190b4622426d5724dba3d2fa2de453f"
+      "sha256": "678474769d3675e666d48901e386df5e5089c49ce2e2b55ee104760851d4f275"
     },
     {
       "path": "report/proposal.en.html",
@@ -226,7 +226,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "35a9e431cd7c3d706ac3d7f59459e398af8dfe4d3380be8a41c8cdb7dfd54bb2"
+      "sha256": "9ccdb28a9346bc211ac8fd9cd066cb4d2b29e2e993bc164113c274261396e07e"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -234,7 +234,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "1541e4d0e3bfb0d9d70b74a258a14116d8e0fe64e9ef5754aac7eaf2c65bbb68"
+      "sha256": "1ddee6839b89699fd594f7958e0ac4796f520e581f102cc728a801a4b8c2eafc"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -242,7 +242,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "9f1b08993216592fe845048ce6e0dd1503f3d63be832e4b3998587b6fd0bdfc4"
+      "sha256": "39613eead76a2bd5c622ba09c6d3ae1ac886a5266e2b475dee023da994da49b0"
     },
     {
       "path": "visual/index.en.html",
@@ -250,7 +250,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "3cbd6a78959a160a69cbd999de9c10040f9cc859432cc530c9d378c9ff2eaeb0"
+      "sha256": "92b4ffb99caf122ad4270ba6cd9075d566864b0f102b715e37781384c240ae81"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -311,7 +311,7 @@
       "role": "proposal_figure",
       "required": false,
       "language": "zh",
-      "sha256": "8e54aa74e30e99bdb6e8e27c8f50e853643a5995dbd0f2e162987ad45a354c91"
+      "sha256": "cacea99c3e933df930807e82d7867f69009bcda3a7e0c67459dc93d164f80052"
     },
     {
       "path": "assets/figures/brand-system.en.png",
@@ -319,13 +319,13 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/brand-system.png",
-      "sha256": "4f33da5323c44a2bc37f6963b33389e4b5dd78621448a8eb035f4930dec5172d"
+      "sha256": "6cc5ba51fc5e4628a379ab1f096281c19e3b9fa4940990e7cbbaf3da794d682b"
     },
     {
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "8c0611f354a14fee1d005f05ceb25d6ebe44271098d79c7cba3622fa42c3a3d6"
+      "sha256": "35ef962f4feeba003655c6d7dfe3116886902ff92acdb02b47e57ac66a161df7"
     },
     {
       "path": "assets/media/cover.webp",
@@ -357,7 +357,7 @@
       "title_en": "Audio guide transcript and rights note",
       "description_zh": "导览旁白全文（含时间码）、与 proposal.md 的来源对应表、生成工具与制作方法记录、合成声明与权利边界、已知限制。同时论证听/看/读三条通道承载相同内容，是方案 AI OFF 等价路径原则在自身交付物上的应用。",
       "description_en": "Full narration text with time codes, a source mapping to proposal.md, the generation method and tooling record, the synthesis and rights statement, and known limitations. It also documents that listening, captions, and reading carry identical content, applying the proposal's own AI-OFF equivalence principle to its own deliverable.",
-      "sha256": "6ce3390e2fb34323b57e0abbea9b6717c08cc093e745660f890cdf3cc1117824"
+      "sha256": "9a67033022d54490bb9088c8cd9e0510b1cfa41a7732db51adafa5a5003431db"
     },
     {
       "path": "assets/media/audio-guide.vtt",
@@ -448,16 +448,16 @@
       "title_en": "Multimodal short film storyboard, transcript and rights note",
       "description_zh": "七个镜头的分镜与画面文字（中英）对照、旁白全文（含时间码）、与 proposal.md 的来源对应表、画面渲染与交互场景逐帧录制的方法记录、语音合成与权利声明、已知限制。同时论证看／听／读三条通道承载相同内容，是方案 AI ON = AI OFF 等价路径原则在自身交付物上的应用。",
       "description_en": "A shot-by-shot storyboard with bilingual on-screen text, the full narration with time codes, a source mapping to proposal.md, the production record for frame rendering and for the frame-accurate capture of the interactive scene, the synthesis and rights statement, and known limitations. It also documents that watching, listening and reading carry identical content, applying the proposal's own AI ON = AI OFF equivalence principle to its own deliverable.",
-      "sha256": "79cbbf0f8e0d3eb9e1834e7fb068dfecc3111d885bc5d8d5ba384fb260d0f79c"
+      "sha256": "d27f1e05351381cc441ca0a100b70a9316508c11a9a982a17765960e27710c16"
     },
     {
       "path": "visual/assets/seb-spec.json",
       "role": "sources",
       "required": false,
       "language": "neutral",
-      "title_zh": "服务等价基准 SEB v0.1 机器可读规范",
-      "title_en": "Service Equivalence Baseline (SEB) v0.1 machine-readable spec",
-      "sha256": "c7af6cf52b1f53d34e3c0c48d39b4dee525d9ff135e39f86313301c006ae757b"
+      "title_zh": "服务等价基准 SEB v0.2 机器可读规范",
+      "title_en": "Service Equivalence Baseline (SEB) v0.2 machine-readable spec",
+      "sha256": "f131dbe80e37beca317375d9a9cb86eab72f2297977bd1195955c4b15d5350ea"
     },
     {
       "path": "visual/assets/seb-tabletop-run.js",
@@ -466,25 +466,25 @@
       "language": "neutral",
       "title_zh": "SEB 桌面配对推演校验器(方法学演示)",
       "title_en": "SEB tabletop pairing validator (methodology demonstration)",
-      "sha256": "59412e6a8864fe0a86f87600fd2f7310f97cec5ae9a9a95453bc49b6ef83bdd7"
+      "sha256": "6da2b508d7def1f4cb9b8a50c039e9b4e7cbd613be443590825a7701d4529691"
     },
     {
       "path": "visual/assets/seb-tabletop-fixtures.json",
       "role": "sources",
       "required": false,
       "language": "neutral",
-      "title_zh": "SEB 桌面推演正反样例十条",
-      "title_en": "SEB tabletop fixtures, four positive and six negative",
-      "sha256": "bfb93772e4e2f6ac21141f38a60cf938bcfd4547dbc0139661f5acb228f0cea9"
+      "title_zh": "SEB 桌面推演正反样例十二条",
+      "title_en": "SEB tabletop fixtures, five positive and seven negative",
+      "sha256": "38ab51c275e71af27c574880c87a6f98ed5d8f8506ee44ed6d321b6acc01078a"
     },
     {
       "path": "visual/assets/seb-change-receipt-sample.json",
       "role": "sources",
       "required": false,
       "language": "neutral",
-      "title_zh": "变更回执格式与演示回执",
-      "title_en": "Change-receipt schema and demonstration receipt",
-      "sha256": "3bf2dde1e2dae28d0d17e3f3a0ac592e03efd00b5de208eb90ceaac378ba3a87"
+      "title_zh": "变更回执格式与两条回执",
+      "title_en": "Change-receipt schema and two receipts",
+      "sha256": "9ba55925d42f3d9b6fbc44b0361c7b420e38813f7f089cea39e68af9e89aad5a"
     },
     {
       "path": "visual/assets/scene-fallback.en.png",
