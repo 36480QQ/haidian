@@ -620,10 +620,11 @@
       "requirement_id": "agent.1",
       "mandatory": true,
       "report_sections": [
-        "设计依据与资料清单"
+        "统筹研究范围产业与未来城市研究"
       ],
       "geojson_layers": [
-        "SITE_BOUNDARY"
+        "SITE_BOUNDARY",
+        "LAND_USE"
       ],
       "metrics": [
         "site_area_sqm"
@@ -635,9 +636,7 @@
       "visual_sections": [
         "overview-map",
         "land-use",
-        "key-areas",
-        "mobility-bluegreen",
-        "metrics-evidence"
+        "brand-vi"
       ],
       "source_ids": [
         "SRC-OFFICIAL-ANNOUNCEMENT",
@@ -650,16 +649,17 @@
       "self_check_ids": [
         "SC-001",
         "SC-002"
-      ]
+      ],
+      "evidence_note": "一带总体概念『京彩生活带』命名体系（一带-三片-多点）、Logo『铁轨+生活折线』方向与VI四类基础应用，见 agent.1 专章"
     },
     {
       "requirement_id": "agent.2",
       "mandatory": true,
       "report_sections": [
-        "AI 创新生态、人才画像与 AI+ 场景"
+        "总体设计范围城市更新与控规深度城市设计"
       ],
       "geojson_layers": [
-        "SITE_BOUNDARY"
+        "LAND_USE"
       ],
       "metrics": [
         "site_area_sqm"
@@ -669,14 +669,9 @@
         "drawings/a0-boards.pdf"
       ],
       "visual_sections": [
-        "overview-map",
-        "land-use",
-        "key-areas",
-        "mobility-bluegreen",
-        "metrics-evidence"
+        "ecosystem-cases"
       ],
       "source_ids": [
-        "SRC-OFFICIAL-ANNOUNCEMENT",
         "SRC-AGENT-OPEN-CALL-TASKBOOK"
       ],
       "assumption_ids": [
@@ -686,19 +681,55 @@
       "self_check_ids": [
         "SC-001",
         "SC-002"
-      ]
+      ],
+      "evidence_note": "5-8个全球AI创新生态公开案例、五条可转化经验与『众智园全栈自主体系』八类要素机制，见 agent.2 专章"
     },
     {
       "requirement_id": "agent.3",
       "mandatory": true,
       "report_sections": [
-        "指标体系、面积复算与合规矩阵"
+        "AI 创新生态、人才画像与 AI+ 场景"
       ],
       "geojson_layers": [
-        "SITE_BOUNDARY"
+        "SITE_BOUNDARY",
+        "PUBLIC_SPACE"
       ],
       "metrics": [
-        "site_area_sqm",
+        "public_space_ratio"
+      ],
+      "drawings": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "visual_sections": [
+        "scenario-cards"
+      ],
+      "source_ids": [
+        "SRC-AGENT-OPEN-CALL-TASKBOOK",
+        "SRC-QINGHE-FIELDNOTES"
+      ],
+      "assumption_ids": [
+        "ASM-PROVISIONAL-BOUNDARY",
+        "ASM-AI-GENERATED-DESIGN"
+      ],
+      "self_check_ids": [
+        "SC-001",
+        "SC-002"
+      ],
+      "evidence_note": "五类用户画像、10张AI场景卡（数据最小化-人工复核-退出机制）、3个测试验证场景与场景-空间-运营矩阵，见 agent.3 专章"
+    },
+    {
+      "requirement_id": "agent.4",
+      "mandatory": true,
+      "report_sections": [
+        "蓝绿空间、公共空间与城市风貌"
+      ],
+      "geojson_layers": [
+        "PUBLIC_SPACE",
+        "GREEN_SPACE"
+      ],
+      "metrics": [
+        "public_space_area_sqm",
         "green_ratio"
       ],
       "drawings": [
@@ -706,14 +737,10 @@
         "drawings/a0-boards.pdf"
       ],
       "visual_sections": [
-        "overview-map",
-        "land-use",
-        "key-areas",
-        "mobility-bluegreen",
-        "metrics-evidence"
+        "public-space",
+        "landmarks"
       ],
       "source_ids": [
-        "SRC-OFFICIAL-ANNOUNCEMENT",
         "SRC-AGENT-OPEN-CALL-TASKBOOK"
       ],
       "assumption_ids": [
@@ -723,52 +750,17 @@
       "self_check_ids": [
         "SC-001",
         "SC-002"
-      ]
-    },
-    {
-      "requirement_id": "agent.4",
-      "mandatory": true,
-      "report_sections": [
-        "风险、版权与合规说明"
       ],
-      "geojson_layers": [
-        "SITE_BOUNDARY"
-      ],
-      "metrics": [
-        "site_area_sqm"
-      ],
-      "drawings": [
-        "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
-      ],
-      "visual_sections": [
-        "overview-map",
-        "land-use",
-        "key-areas",
-        "mobility-bluegreen",
-        "metrics-evidence"
-      ],
-      "source_ids": [
-        "SRC-OFFICIAL-ANNOUNCEMENT",
-        "SRC-AGENT-OPEN-CALL-TASKBOOK"
-      ],
-      "assumption_ids": [
-        "ASM-PROVISIONAL-BOUNDARY",
-        "ASM-AI-GENERATED-DESIGN"
-      ],
-      "self_check_ids": [
-        "SC-001",
-        "SC-002"
-      ]
+      "evidence_note": "『AI公共空间三件套』（开发者散步道/贡献荣誉墙/AI原点广场）、朝圣三节点与公共空间组件库，见 agent.4 专章"
     },
     {
       "requirement_id": "agent.5",
       "mandatory": true,
       "report_sections": [
-        "三层范围工作框架"
+        "重点区域详细设计"
       ],
       "geojson_layers": [
-        "SITE_BOUNDARY"
+        "ROADS"
       ],
       "metrics": [
         "site_area_sqm"
@@ -778,15 +770,10 @@
         "drawings/a0-boards.pdf"
       ],
       "visual_sections": [
-        "overview-map",
-        "land-use",
-        "key-areas",
-        "mobility-bluegreen",
-        "metrics-evidence"
+        "culture-narrative"
       ],
       "source_ids": [
-        "SRC-OFFICIAL-ANNOUNCEMENT",
-        "SRC-AGENT-OPEN-CALL-TASKBOOK"
+        "SRC-JINGZHANG-HERITAGE"
       ],
       "assumption_ids": [
         "ASM-PROVISIONAL-BOUNDARY",
@@ -795,33 +782,29 @@
       "self_check_ids": [
         "SC-001",
         "SC-002"
-      ]
+      ],
+      "evidence_note": "百年京张-中关村-AI新文化三线叙事、『自强之路』文化步道与LIVE WELL WITH AI国际传播叙事，见 agent.5 专章"
     },
     {
       "requirement_id": "agent.6",
       "mandatory": true,
       "report_sections": [
-        "重点区域详细设计"
+        "更新项目清单、实施政策与分期计划"
       ],
       "geojson_layers": [
-        "KEY_AREA"
+        "PHASING"
       ],
       "metrics": [
-        "key_area_dazhongsi_sqm"
+        "site_area_sqm"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "visual_sections": [
-        "overview-map",
-        "land-use",
-        "key-areas",
-        "mobility-bluegreen",
-        "metrics-evidence"
+        "annual-events"
       ],
       "source_ids": [
-        "SRC-OFFICIAL-ANNOUNCEMENT",
         "SRC-AGENT-OPEN-CALL-TASKBOOK"
       ],
       "assumption_ids": [
@@ -831,7 +814,8 @@
       "self_check_ids": [
         "SC-001",
         "SC-002"
-      ]
+      ],
+      "evidence_note": "『一带一年四季』年度活动体系、品牌IP、开发者社区与场景开放运营机制、国际传播招引转化路径，见 agent.6 专章"
     }
   ]
 }
