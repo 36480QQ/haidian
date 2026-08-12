@@ -42,7 +42,7 @@
         "references": 16,
         "reviewer_can_read_whole": 12,
         "reviewer_sees_as_image": 0,
-        "reviewer_sees_first_3_pages": 2,
+        "reviewer_sees_first_page_only": 2,
         "reviewer_cannot_open": 2
       }
     },
@@ -84,7 +84,7 @@
         "references": 13,
         "reviewer_can_read_whole": 10,
         "reviewer_sees_as_image": 0,
-        "reviewer_sees_first_3_pages": 2,
+        "reviewer_sees_first_page_only": 2,
         "reviewer_cannot_open": 1
       }
     },
@@ -127,7 +127,7 @@
         "references": 14,
         "reviewer_can_read_whole": 10,
         "reviewer_sees_as_image": 0,
-        "reviewer_sees_first_3_pages": 2,
+        "reviewer_sees_first_page_only": 2,
         "reviewer_cannot_open": 2
       }
     },
@@ -169,7 +169,7 @@
         "references": 13,
         "reviewer_can_read_whole": 10,
         "reviewer_sees_as_image": 0,
-        "reviewer_sees_first_3_pages": 2,
+        "reviewer_sees_first_page_only": 2,
         "reviewer_cannot_open": 1
       }
     },
@@ -211,7 +211,7 @@
         "references": 13,
         "reviewer_can_read_whole": 10,
         "reviewer_sees_as_image": 0,
-        "reviewer_sees_first_3_pages": 2,
+        "reviewer_sees_first_page_only": 2,
         "reviewer_cannot_open": 1
       }
     },
@@ -249,7 +249,7 @@
         "references": 9,
         "reviewer_can_read_whole": 6,
         "reviewer_sees_as_image": 0,
-        "reviewer_sees_first_3_pages": 2,
+        "reviewer_sees_first_page_only": 2,
         "reviewer_cannot_open": 1
       }
     }
@@ -258,7 +258,7 @@
     "references": 78,
     "reviewer_can_read_whole": 58,
     "reviewer_sees_as_image": 0,
-    "reviewer_sees_first_3_pages": 12,
+    "reviewer_sees_first_page_only": 12,
     "reviewer_cannot_open": 8,
     "note_zh": "评审模型整份收到九个文件，不含 `geometry/` 与 `visual/assets/`（见 `scripts/review_submission.py::build_review_input`）。本表逐条标出它能打开多少、打不开多少——**这不是免责，是让评审知道哪一行的证据它可以自己核，哪一行只能听我说**。数字由构建算出，管线若开始多送文件，它们会自己变。"
   }
