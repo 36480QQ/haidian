@@ -15,7 +15,9 @@
       "proposal_files": [
         "submissions/Tavre/jingzhang-consent-line/proposal.md"
       ],
-      "changelog_files": [],
+      "changelog_files": [
+        "submissions/Tavre/jingzhang-consent-line/changelog.md"
+      ],
       "changed_files": [
         "submissions/Tavre/jingzhang-consent-line/agent.json",
         "submissions/Tavre/jingzhang-consent-line/assets/figures/key-areas.en.png",
@@ -30,6 +32,7 @@
         "submissions/Tavre/jingzhang-consent-line/assets/figures/site-overview.png",
         "submissions/Tavre/jingzhang-consent-line/assets/media/cover.webp",
         "submissions/Tavre/jingzhang-consent-line/assumptions.json",
+        "submissions/Tavre/jingzhang-consent-line/changelog.md",
         "submissions/Tavre/jingzhang-consent-line/compliance_matrix.json",
         "submissions/Tavre/jingzhang-consent-line/design_depth_matrix.json",
         "submissions/Tavre/jingzhang-consent-line/drawings/a0-boards.en.pdf",
@@ -62,7 +65,7 @@
       "ai_package_stages": {
         "submissions/Tavre/jingzhang-consent-line": "formal"
       },
-      "total_bytes": 11709072,
+      "total_bytes": 13089444,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -106,7 +109,7 @@
         "site_area_sqm": 11412825.386,
         "green_space_area_sqm": 1408600.768,
         "public_space_area_sqm": 836345.643,
-        "building_footprint_area_sqm": 310807.184,
+        "building_footprint_area_sqm": 170722.562,
         "green_ratio": 0.123423,
         "public_space_ratio": 0.073281
       }
@@ -134,17 +137,17 @@
       "ok": true,
       "issues": [],
       "summary": {
-        "standard_matrix_items": 6,
+        "standard_matrix_items": 9,
         "design_depth_items": 15,
-        "known_metric_refs_required": 5,
+        "known_metric_refs_required": 16,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 5,
-          "standard": 5,
-          "depth": 15,
-          "data": 11,
-          "metric": 5
+          "source": 11,
+          "standard": 6,
+          "depth": 12,
+          "data": 9,
+          "metric": 8
         }
       }
     },
