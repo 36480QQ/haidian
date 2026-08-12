@@ -222,7 +222,7 @@ Logo 以"∞"（无限符号）与铁路轨道的形态融合，双轨线分别�
 | 产业绿 | #5fae6f | 大钟寺 · 产业集聚 |
 
 **VI 应用规范**：
-- 品牌字体：无衬线体（中文：思源黑体/文泉驿微米黑；英文：Helvetica/Inter）
+- 品牌字体：无衬线体（中文：文泉驿微米黑 WenQuanYi Micro Hei；英文/图件：DejaVu Sans）
 - 核心符号：双轨 ∞ 标志，可单独使用或与文字组合
 - 辅助图形：三条平行弧线（代表"三带"）、光晕扩散圆环（代表节点辐射）
 - 导视系统：以"∞"符号为导视标识基础元素，嵌入道路指示牌、慢行导览图、建筑入口标识和信息亭
@@ -331,11 +331,11 @@ Logo 以"∞"（无限符号）与铁路轨道的形态融合，双轨线分别�
 | 资产类型 | 文件/路径 | 来源 | 许可状态 | 备注 |
 | --- | --- | --- | --- | --- |
 | 空间几何 | `geometry/*.geojson` | 生成式 AI 基于公开卫星影像与 OpenStreetMap 推导 | AI 生成，不含第三方版权数据 | 标记为 provisional，待官方替换 |
-| 图件（PNG） | `assets/figures/*.png` | 本方案生成 | 方案自有，CC BY-NC 4.0 | 双语版本独立生成 |
-| 展板（PDF） | `drawings/a0-boards*.pdf` | 本方案生成 | 方案自有，CC BY-NC 4.0 | 含中英双语 |
-| 手册（PDF） | `drawings/a3-booklet*.pdf` | 本方案生成 | 方案自有，CC BY-NC 4.0 | 含中英双语 |
-| 品牌标识 | `assets/logo.*` | 本方案设计 | 方案自有，CC BY-NC 4.0 | 可用于非商业引用 |
-| 文字提案 | `proposal.md` / `proposal.en.md` | 本方案撰写 | 方案自有，CC BY-NC 4.0 | 引用外部数据见 sources.json |
+| 图件（PNG） | `assets/figures/*.png` | 本方案生成 | COMMUNITY-DISPLAY-ONLY | 双语版本独立生成 |
+| 展板（PDF） | `drawings/a0-boards*.pdf` | 本方案生成 | COMMUNITY-DISPLAY-ONLY | 含中英双语 |
+| 手册（PDF） | `drawings/a3-booklet*.pdf` | 本方案生成 | COMMUNITY-DISPLAY-ONLY | 含中英双语 |
+| 品牌标识 | `assets/logo.*` | 本方案设计 | COMMUNITY-DISPLAY-ONLY | 不可用于商业用途 |
+| 文字提案 | `proposal.md` / `proposal.en.md` | 本方案撰写 | COMMUNITY-DISPLAY-ONLY | 引用外部数据见 sources.json |
 | 指标数据 | `metrics.json` | 几何复算 + 发布任务书 | 可复算，无独立版权 | 原始数据来源 SITE-PACKAGE |
 | 视觉展示 | `visual/*` | 本方案生成 | 方案自有 | 纯静态 HTML，无外部依赖 |
 | 来源登记 | `sources.json` | 收集自公开来源 | 引用来源的各自许可 | 见各条目许可字段 |

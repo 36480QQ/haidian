@@ -214,7 +214,7 @@ The proposal is named "京张智脉·光晕 / Jing-Zhang AI Heritage Halo." The 
 | Industry Green | #5fae6f | Dazhongsi · Industry cluster |
 
 **VI Application Guidelines**:
-- Brand typeface: Sans-serif (Chinese: Source Han Sans / WenQuanYi; English: Helvetica / Inter)
+- Brand typeface: Sans-serif (Chinese: WenQuanYi Micro Hei; English/figures: DejaVu Sans)
 - Core symbol: Twin-track ∞ mark, usable standalone or with text
 - Secondary graphics: Three parallel arcs (representing the "three belts"), halo diffusion rings (representing node radiation)
 - Wayfinding: ∞ symbol as the base element for signage, integrated into road signs, slow-mobility guides, building entry markers, and information kiosks
@@ -322,12 +322,12 @@ This proposal does not claim official approval, approved regulatory plan, final 
 
 | Asset | Path | Source | License | Notes |
 | --- | --- | --- | --- | --- |
-| Spatial Geometry | `geometry/*.geojson` | AI-generated from public satellite imagery & OSM | CC BY-NC 4.0 | Provisional, subject to official replacement |
-| Figures (PNG) | `assets/figures/*.png` | Self-generated | CC BY-NC 4.0 | Bilingual versions independently generated |
-| Boards (PDF) | `drawings/a0-boards*.pdf` | Self-generated | CC BY-NC 4.0 | Chinese & English |
-| Booklet (PDF) | `drawings/a3-booklet*.pdf` | Self-generated | CC BY-NC 4.0 | Chinese & English |
-| Brand Logo | `assets/logo.*` | Self-designed | CC BY-NC 4.0 | Free for non-commercial reference |
-| Proposal Text | `proposal.md` / `proposal.en.md` | Self-written | CC BY-NC 4.0 | External data sources in sources.json |
+| Spatial Geometry | `geometry/*.geojson` | Derived from public satellite imagery & OSM | COMMUNITY-DISPLAY-ONLY | Provisional, subject to official replacement |
+| Figures (PNG) | `assets/figures/*.png` | Self-generated | COMMUNITY-DISPLAY-ONLY | Bilingual versions independently generated |
+| Boards (PDF) | `drawings/a0-boards*.pdf` | Self-generated | COMMUNITY-DISPLAY-ONLY | Chinese & English |
+| Booklet (PDF) | `drawings/a3-booklet*.pdf` | Self-generated | COMMUNITY-DISPLAY-ONLY | Chinese & English |
+| Brand Logo | `assets/logo.*` | Self-designed | COMMUNITY-DISPLAY-ONLY | Not for commercial use |
+| Proposal Text | `proposal.md` / `proposal.en.md` | Self-written | COMMUNITY-DISPLAY-ONLY | External data sources in sources.json |
 | Metrics Data | `metrics.json` | Geometry recomputation + brief | No independent copyright | Original data from SITE-PACKAGE |
 | Visualization | `visual/*` | Self-generated | Self-owned | Static HTML, no external deps |
 | Source Registry | `sources.json` | Collected from public sources | Per-entry license | See individual license fields |
