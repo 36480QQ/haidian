@@ -1,3 +1,8 @@
+## v1.14 - 2026-08-12（证据纪律机器可读化轮）
+
+- sources.json 证据纪律升级：25 条来源全部补齐权威等级（official_public 15 / background 5 / maintainer_curated 2 / user_provided_cleared 1 / provisional 1 / agent_generated 1）、用途边界（used_for_zh 用于正文哪里）、反向边界（not_usable_for_zh 不能支撑什么结论），9 条与组织方来源注册表（data/source_registry.json）建立 registry_source_id 关联——每条来源的"能做什么/不能做什么"机器可读可审计。
+- 核心图修复：核心指标证据图（metrics-evidence）用地类别标签左侧裁切修复（中英双语），全部标签完整可读。
+
 ## v1.13 - 2026-08-12（规则同步与治理台账轮）
 
 - 规则同步：manifest 升级 schema 0.2.0（54 项文件登记全覆盖双语标题/描述元数据，网站工作台直接展示；自定义封面维持登记），并按新发布的多模态表达要求补"表达与可访问性"说明：本地离线交互页、无 CDN/远程依赖、图片与交互均带文字替代、不自动播放、媒体仅作解释层不冒充现场证据。
