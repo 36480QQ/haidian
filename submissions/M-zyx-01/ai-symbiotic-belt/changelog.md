@@ -1,5 +1,28 @@
 # 方案迭代记录
 
+## v0.1.9 - 2026-08-12（PR #1412 第三轮 AI 评审修复：P0 可读性与指标一致性）
+
+### 修复内容（评审"必须完成的下一步"P0 项）
+- **英文图件方框缺字**：5 张 en PNG 全面 ASCII 化（²→sqm、·→-、—→-、→→-> 等），消除 arial 缺字导致的方框；zh 图保持微软雅黑
+- **A3/A0 PDF 重做**（render_pdf_v2.py）：此前 A0 首屏用地环图为旧七类口径（28/18/15/12/16/8）且版本号 v0.1.1/v0.1.3——已全部重做为**六类口径**（36.1/20.4/18.0/12.4/10.3/2.9）+ 版本 v0.1.7，嵌入 v0.1.8 新图
+- 中英图件与 metrics.json 单一指标源一致（自动一致性校验保留）
+
+### 验证
+- node --test 28/28 通过
+- 官方 validate_local_submission Result: PASS
+
+## v0.1.8 - 2026-08-12（PR #1412 第二轮 AI 评审修复：表达完整度）
+
+- 5 对图件重做（render_figures_v2.py）：land_use 六类口径（0802 36% / 05 20% / 14 18% / 07 13% / 08 10% / 1207 3%，shapely 实算）；site-overview.en 蓝卡补值；key-areas 去空白彩条；metrics-evidence 移除 can_enter_formal_review=true 误导（改参与者自检）；en 图信息量对齐
+- 版本标识统一 v0.1.7（proposal×2 + report HTML×2 + visual HTML×2）；UTF-8 无 BOM
+- 修复 PowerShell 误写 BOM/破坏中文：从 git 恢复 6 文件并用 edit_file 安全重改（教训：文本修改禁用 PowerShell Get-Content/Set-Content 管道）
+
+## v0.1.7 - 2026-08-12（CI 真实失败修复：manifest 迁移 schema 0.2.0）
+
+- 官方校验器更新后新增 manifest 强制 schema 0.2.x（strict fail closed）——schema_version 0.1.0 → 0.2.0；proposal.en.md role translation → other + role_detail=proposal_translation（0.2 enum 无 translation）
+- 官方 self_check_submission.py --mark-self-checked 迁移：can_enter_formal_review=true、review_status=formal-review-ready、readiness_contract=persisted-self-check-v1
+- 官方最新脚本位于 upstream-check/scripts/（含 strict manifest 0.2.x 校验）
+
 ## v0.1.3 - 2026-08-09
 
 ### 几何数据对齐官方 provisional（重要）
@@ -178,8 +201,7 @@
 ### 待完成事项
 - [ ] 获取官方精确 polygon 并替换所有 provisional geometry
 - [ ] 基于正式数据运行面积复算和指标重新校验
-- [x] 生成专业品质的五张核心图件（site-overview/land-use/key-areas/mobility/metrics）——v0.1.8 完成
-- [x] 生成 A3 booklet 和 A0 boards 的专业 PDF——v0.1.3 完成（PIL 生成）
+- [x] 生成专业品质的五张核心图件（site-overview/land-use/key-areas/mobility/metrics）——v0.1.8 完成- [x] 生成 A3 booklet 和 A0 boards 的专业 PDF——v0.1.3 完成（PIL 生成）
 - [x] 运行 render_proposal_html.py 生成稳定的 proposal.html——手写静态版完成
 - [x] 运行 finalize_submission.py 设置 package_state=ready_for_review 并刷新 manifest hashes——v0.1.7 完成（self_check_submission --mark-self-checked）
 - [x] 运行 self_check_submission.py 进行完整自检——v0.1.7 完成（can_enter_formal_review=true）
