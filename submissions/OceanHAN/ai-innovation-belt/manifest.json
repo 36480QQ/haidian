@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "a5599f1bc2f350859a301e7bba5770e9c96fade1507b7e552583d25092229a96"
+      "sha256": "52d1c5891935fffff719053404182158e6e2b2677311b7dbd3fe21c1d3813ca2"
     },
     {
       "path": "agent.json",
@@ -38,13 +38,13 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "f5776ea3466cce4b54b56a4fb1f920d8aa386d112f0fb3a9fa2cf6a183c49558"
+      "sha256": "36cb53b868ab741474f9b3643fb36679694eaf5e9028e2ef58259c4515ce04b5"
     },
     {
       "path": "assumptions.json",
       "role": "assumptions",
       "required": true,
-      "sha256": "0765cb6db5979d61ed758d76af6302a245774470dd8a7fb702da2629af86ba15"
+      "sha256": "cabb16cf26782afe6671ebc8b6e5c8270d87165a67d9078de2e51a3a47ff764f"
     },
     {
       "path": "sources.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "80b71cb78d2c1581fc679eb561959ac515bc8a3ff6f76c74dcc2c4e20d49b72f"
+      "sha256": "be9490e21723baa01fb3a4e2ab6fede873e89eaada58b869d55a0f11764dae5d"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "a2e30c230d34a7066378e3431036b5080a48350cd1e390421f609bd9fc5ee368"
+      "sha256": "956072813a63254b940873644f139993ac7ec54c85b85eab48e1ac7d9deb99d9"
     },
     {
       "path": "report/narrative.md",
@@ -114,7 +114,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "5af9e872f7973fe7a3ec664006ff8a4cded7348fc2097570d14724ebb777ecf8"
+      "sha256": "3372f8ccf4fb7398f2a51455260609f17751d0471cd4801fa12f4e86609cb22c"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "ba3e76aa20c3f3af7c02809afde7ba0151a62ec3a9f3858ba3403440ae64bc85"
+      "sha256": "45bb839ed58cee7271c54e357a2175a196e50c5aeed3187bc2a05c8d12b14f80"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "eba30f4cad881df561b60c805c4dc9a87f33595ff1ce3543fb30b20104c8cfed"
+      "sha256": "5e1e852a827f999649aef4fcccb584568154b063126c1b9819791933abb6d5a3"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -243,7 +243,19 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "c722c52bf2fb8066ddc588ceea33d23248562afc573bf8ece0e407798d2998d6"
+      "sha256": "3ec5eedaf9d8ecd6e565b1af44e8081e3e85f2823aa834fe988932926f89916d"
+    },
+    {
+      "path": "visual/assets/mainline-tabletop.json",
+      "role": "evidence_data",
+      "required": false,
+      "sha256": "6413638deb58f41d0761e552a126288ce17d32e2c175b26126cff7c1db982eec"
+    },
+    {
+      "path": "visual/assets/rights-ledger.json",
+      "role": "evidence_data",
+      "required": false,
+      "sha256": "59ae8745efbacb989d3002c93f301b2d3d90a96403b2c891f8b734e0b170c4d3"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -290,8 +302,9 @@
     "self_checked": true,
     "known_blockers": [],
     "data_confidence": "medium (provisional boundary: all spatial metrics recalculated in EPSG:4548 from provisional geometry; official redline required for professional scoring)",
-    "last_validated_at": "2026-08-10T11:20:00Z",
-    "reviewer_feedback_addressed_zh": "评审 v1 处理：self_checked 同步、边界派生指标置信度降为 medium。v0.2 强化：更新项目 8→10 项并补充实施主体/关键指标列；新增实施机制（统筹主体、资金模式、政策工具待确认）与分期概念里程碑；轨道站点一体化与慢行断点缝合清单细化；开源循环到城市治理机制映射；新增公共利益与公众参与机制小节。",
-    "reviewer_feedback_addressed_en": "Reviewer v1 addressed (self_checked, confidence downgrade). v0.2 strengthening: renewal projects 8→10 with lead parties and key indicators; implementation mechanisms (coordination, funding directions, pending policy instruments) and conceptual phasing milestones; detailed station-integration and slow-traffic gap-stitching list; open-source loop to governance mapping; new public-interest and participation mechanisms section."
+    "last_validated_at": "2026-08-11T07:00:00Z",
+    "reviewer_feedback_addressed_zh": "v0.2 已处理实施可行性；v0.3：三区两翼结构化映射表、区域协同可签接口（北纬社区/未来科学城/怀柔科学城/经开区/京津冀）、主线合入验收协议五则、visual 新增实施路径与治理版块。",
+    "reviewer_feedback_addressed_en": "v0.2 addressed implementation feasibility; v0.3: structured three-areas-two-wings mapping table, regional signable interfaces (Beiwai/Future Science City/Huairou/E-Town/BTH), five-rule mainline merge acceptance protocol, new implementation & governance section in visual.",
+    "readiness_contract": "persisted-self-check-v1"
   }
 }

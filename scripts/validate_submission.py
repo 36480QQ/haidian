@@ -363,6 +363,7 @@ class ValidationReport:
     ai_package_stages: dict[str, str] = field(default_factory=dict)
     total_bytes: int = 0
     maintainer_bypass: bool = False
+    strict_manifest_paths: set[str] = field(default_factory=set)
 
     def add_error(self, message: str) -> None:
         self.ok = False
@@ -992,6 +993,10 @@ def load_string_enums(repo_root: Path, relative_path: str) -> dict[str, set[str]
     }
 
 
+def allowed_values_hint(values: set[str]) -> str:
+    return ", ".join(sorted(values))
+
+
 def load_required_standard_ids(repo_root: Path) -> set[str]:
     standards_path = policy_file(repo_root, "brief/site-package/standards/standards.json")
     if not standards_path.exists():
@@ -1194,28 +1199,49 @@ def validate_geojson_file(
                 report.add_error(f"{feature_label}: missing property `{key}`")
         layer = properties.get("layer")
         if allowed_layers and layer and layer not in allowed_layers:
-            report.add_error(f"{feature_label}: unknown layer `{layer}`")
+            report.add_error(
+                f"{feature_label}: unknown layer `{layer}`; allowed: "
+                f"{allowed_values_hint(allowed_layers)}"
+            )
         source_type = properties.get("source_type")
         allowed_source_types = source_enums.get("source_types", set())
         if allowed_source_types and source_type and source_type not in allowed_source_types:
-            report.add_error(f"{feature_label}: unknown source_type `{source_type}`")
+            report.add_error(
+                f"{feature_label}: unknown source_type `{source_type}`; allowed: "
+                f"{allowed_values_hint(allowed_source_types)}"
+            )
         confidence = properties.get("confidence")
         allowed_confidence = source_enums.get("confidence_levels", set())
         if allowed_confidence and confidence and confidence not in allowed_confidence:
-            report.add_error(f"{feature_label}: unknown confidence `{confidence}`")
+            report.add_error(
+                f"{feature_label}: unknown confidence `{confidence}`; allowed: "
+                f"{allowed_values_hint(allowed_confidence)}"
+            )
         geometry_role = properties.get("geometry_role")
         allowed_roles = source_enums.get("geometry_roles", set())
         if allowed_roles and geometry_role and geometry_role not in allowed_roles:
-            report.add_error(f"{feature_label}: unknown geometry_role `{geometry_role}`")
+            report.add_error(
+                f"{feature_label}: unknown geometry_role `{geometry_role}`; allowed: "
+                f"{allowed_values_hint(allowed_roles)}"
+            )
         land_use_code = properties.get("land_use_code")
         if land_use_codes and land_use_code and str(land_use_code) not in land_use_codes:
-            report.add_error(f"{feature_label}: unknown land_use_code `{land_use_code}`")
+            report.add_error(
+                f"{feature_label}: unknown land_use_code `{land_use_code}`; allowed: "
+                f"{allowed_values_hint(land_use_codes)}"
+            )
         road_class = properties.get("road_class")
         if road_classes and road_class and str(road_class) not in road_classes:
-            report.add_error(f"{feature_label}: unknown road_class `{road_class}`")
+            report.add_error(
+                f"{feature_label}: unknown road_class `{road_class}`; allowed: "
+                f"{allowed_values_hint(road_classes)}"
+            )
         building_type = properties.get("building_type")
         if building_types and building_type and str(building_type) not in building_types:
-            report.add_error(f"{feature_label}: unknown building_type `{building_type}`")
+            report.add_error(
+                f"{feature_label}: unknown building_type `{building_type}`; allowed: "
+                f"{allowed_values_hint(building_types)}"
+            )
         if not isinstance(geometry, dict):
             report.add_error(f"{feature_label}: geometry must be an object")
         elif not geometry_coordinates_are_valid(geometry):
@@ -1585,6 +1611,10 @@ def validate_manifest_file(report: ValidationReport, repo_root: Path, proposal_d
                     report.add_error(message)
                 else:
                     report.add_warning(message + " (legacy package compatibility)")
+            elif declared_digest and safe_path == "manifest.json":
+                report.add_error(
+                    f"{proposal_dir}/manifest.json: manifest.json must not declare sha256; remove the field"
+                )
             elif declared_digest:
                 actual_digest = hashlib.sha256(listed_file.read_bytes()).hexdigest()
                 if declared_digest != actual_digest:
@@ -1636,6 +1666,29 @@ def validate_manifest_file(report: ValidationReport, repo_root: Path, proposal_d
             report.add_warning(
                 f"{proposal_dir}/manifest.json: known_blockers present; submission may pass intake but cannot enter formal professional scoring until resolved"
             )
+    from manifest_schema import schema_errors
+
+    manifest_path = f"{proposal_dir}/manifest.json"
+    strict_schema = (
+        manifest_path in report.strict_manifest_paths
+        or str(data.get("schema_version", "")).startswith("0.2.")
+    )
+    if strict_schema and not str(data.get("schema_version", "")).startswith("0.2."):
+        report.add_error(
+            f"{manifest_path}: new manifests must adopt schema_version 0.2.x; "
+            "legacy 0.1.x packages remain advisory until their manifest is revised"
+        )
+    schema_issues = schema_errors(data)
+    if schema_issues:
+        mode = "blocking" if strict_schema else "legacy advisory"
+        detail = "; ".join(schema_issues[:5])
+        if len(schema_issues) > 5:
+            detail += f"; ... {len(schema_issues) - 5} more"
+        message = f"{manifest_path}: published schema {mode}: {detail}"
+        if strict_schema:
+            report.add_error(message)
+        else:
+            report.add_warning(message + "; update this manifest before adopting schema 0.2.x")
     return data, stage
 
 
@@ -2750,6 +2803,7 @@ def validate_submission(
     *,
     allow_pending_self_check: bool = False,
     required_readiness_contract_dirs: Iterable[str] = (),
+    strict_manifest_paths: Iterable[str] = (),
 ) -> ValidationReport:
     report = ValidationReport()
     repo_root = repo_root.resolve()
@@ -2760,6 +2814,9 @@ def validate_submission(
         str(proposal_dir).strip().rstrip("/")
         for proposal_dir in required_readiness_contract_dirs
         if str(proposal_dir).strip()
+    }
+    report.strict_manifest_paths = {
+        normalize_changed_path(path) for path in strict_manifest_paths
     }
 
     if not pr_author or not GITHUB_LOGIN_RE.match(pr_author):
@@ -2939,11 +2996,16 @@ def validate_submission(
             and size > MAX_AUDIO_BYTES
         ):
             report.add_error(f"{path}: audio files must be <= {MAX_AUDIO_BYTES} bytes")
-        elif is_under_media(parts) and size > MAX_ASSET_BYTES:
+        elif (
+            is_under_media(parts)
+            and Path(path).suffix.lower() not in ALLOWED_VIDEO_EXTENSIONS
+            and Path(path).suffix.lower() not in ALLOWED_AUDIO_EXTENSIONS
+            and size > MAX_ASSET_BYTES
+        ):
             report.add_error(
                 f"{path}: media sidecars and posters must be <= {MAX_ASSET_BYTES} bytes"
             )
-        elif is_under_assets(parts) and size > MAX_ASSET_BYTES:
+        elif is_under_assets(parts) and not is_under_media(parts) and size > MAX_ASSET_BYTES:
             report.add_error(f"{path}: assets must be <= {MAX_ASSET_BYTES} bytes")
         if is_under_drawings(parts) and size > MAX_DRAWING_BYTES:
             report.add_error(f"{path}: drawings must be <= {MAX_DRAWING_BYTES} bytes")

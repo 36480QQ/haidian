@@ -7,8 +7,8 @@ bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以小月河蓝绿水系为场景赋能主轴，把 AI 场景从展示橱窗变成日常生活基础设施：一水一脊三场两翼的空间骨架，12 张可运行场景卡、4 个测试验证场景、6 类用户画像与 3 处 AI 朝圣地标，全部基于 provisional 边界生成并保留复算接口。"
-tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
-scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
+tracks: ["youth-friendly-public-space", "ai-public-services", "ai-traffic-walkability"]
+scenarios: ["ai-traffic-walkability", "ai-health-service-navigation", "public-safety-operations-review"]
 iteration: "v0.1"
 ---
 
