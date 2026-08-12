@@ -443,6 +443,9 @@ Public participation is designed as an auditable four-stage closed loop (structu
 
 
 
+
+**Operationalized public-comment channel (early-stage, live)**: the four-stage mechanism is instantiated in a real Issue — **#955 "Centennial Jing-Zhang AI Innovation Belt · Smart-Corridor Urban Design Proposal — Public Comment Channel"** — where multi-round structured comments from maintainers and participants have been answered in the adopt / partially-adopt / reject tri-state, forming a traceable comment-response ledger [source:LZCAPP-PUBLIC-COMMENT-955]. This is an early, self-initiated public-engagement channel, not a formal statutory consultation or field study; real user research and human accessibility review remain required before implementation, and it must not be presented as verified inclusivity [source:LZCAPP-PUBLIC-COMMENT-955].
+
 > Honest disclaimer: the four-stage mechanism and continuous accessibility path are design reasoning, not field-study conclusions; no real public participation or disability walkthrough has occurred — real user research and human accessibility review are required before implementation, and it must not be presented as "verified inclusivity".
 
 
