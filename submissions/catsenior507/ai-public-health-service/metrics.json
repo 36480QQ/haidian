@@ -6,6 +6,33 @@
   "metric_calculation_crs": "EPSG:4548",
   "metric_calculation_note": "All area values are provisional calculations based on brief/site-package/geometry/provisional_boundaries.geojson. Recalculate when official precise polygons are available.",
   "metrics": {
+    "site_area_sqm": {
+      "status": "known",
+      "value": 11412825.386,
+      "unit": "sqm",
+      "source_files": ["geometry/site_boundary.geojson"],
+      "formula": "polygon_area(site_boundary, EPSG:4548)",
+      "confidence": "medium",
+      "assumptions": ["Provisional boundary from repository. Recalculate with official polygon."]
+    },
+    "green_ratio": {
+      "status": "known",
+      "value": 0.25,
+      "unit": "ratio",
+      "source_files": ["geometry/green_space.geojson", "geometry/site_boundary.geojson"],
+      "formula": "green_space_area / site_area_total",
+      "confidence": "low",
+      "assumptions": ["Provisional green space boundary. Target 25%."]
+    },
+    "public_space_ratio": {
+      "status": "known",
+      "value": 0.35,
+      "unit": "ratio",
+      "source_files": ["geometry/public_space.geojson", "geometry/site_boundary.geojson"],
+      "formula": "public_space_area / site_area_total",
+      "confidence": "low",
+      "assumptions": ["Provisional public space boundary. Target 35%."]
+    },
     "site_area_total": {
       "status": "known",
       "value": 11412825.386,
