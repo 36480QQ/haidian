@@ -256,6 +256,18 @@ Logo 方向采用两条不闭合轨线构成字母 **JZ**，中间的开放缺�
 
 上述“恢复验收”是未来责任角色使用的概念检查表，不是场地批准、竣工验收或现状合格证明。三个原型共同要求可拆、可停、可绕行，但任何构件只有在准确场地、权属、消防、铁路保护、市政、无障碍和运营责任完成专业核验后才可落位 [assumption:A-KEY-AREA-SPATIAL-011] [data:visual/assets/key-area-evidence-matrix.json#round2_spatial_deepening]。
 
+### 普通生活空间场景册：先看人怎样使用，再看系统怎样叠加
+
+这张三联图不是给既有高密度系统图再加一层气氛，而是把同一条公共权利翻译成人尺度：**一个人先能走、能停、能问、能退出、能完成基本任务；AI 只在旁侧、可选、可停的叠层中出现。** 左幅众智园把普通旁路与平行验证庭分开；中幅原点社区让一条无屏居民街串联两院；右幅大钟寺把通勤主轴与安静人工服务放在活动旁侧。三幅均不要求账户、扫码、屏幕、网络或 AI，也不把验证、桌椅、平台、排队或线缆放进连续日常路径 [data:visual/assets/ordinary-life-media-register.json] [data:visual/assets/non-ai-parity-contract.json]。
+
+![普通生活空间场景册：众智园平行验证庭、原点社区无屏日常街与大钟寺通勤旁侧人工服务；概念可视化，不是现场证据](assets/media/ordinary-life-scenes.webp)
+
+[阅读中英文长描述、生成方法与权利限制](assets/media/ordinary-life-scenes.md)。图像由 OpenAI 图像生成工具于 2026-08-13 依据本包自编提示生成，未输入现场照片、地图截图、私人图像、可识别人物、Logo 或第三方视觉。选定输出只转换为 WebP，检查时不含 EXIF/GPS；人物均为不可识别的合成角色。该披露不构成模型输出条款审计或再利用许可，权利状态继续为 `not_fully_cleared` [source:SOURCE-ORDINARY-LIFE-MEDIA-R12]。
+
+**普通—验证—故障—恢复。** 普通态先保持实体导向、连续无障碍意图、无屏停留和人工说明；验证态只允许未来经公布、获准、限时且有人负责的路径外可拆叠层，图中并不证明这些条件已经成立；故障态立即停止叠层、隔离设备、人工解释并保留绕行；恢复态先撤除叠层并恢复地面、绿化、静音与通行，独立复核没有闭合就保持 G0、继续停止或退役。三处共用这一顺序，但分别通过设备隔离、同意撤回和来源纠错实现，不能机械复制 [data:visual/assets/ordinary-life-media-register.json#four_state_reading] [data:visual/assets/key-area-evidence-matrix.json#round2_spatial_deepening]。
+
+**图中能看见的权利，不等于现场已经具备。** 轮椅、老人、儿童、照护者和通勤者的出现只用于检验空间关系是否易懂，不代表真实参与、同意或调研样本；触觉导向、无台阶连续、净宽、坡度、转弯、休息、消防、铁路保护、市政和人工服务能力仍需测绘、共测和专业责任确认。当前真实照片、确认视点、现场观察、获批构件、运营交互、无障碍结果和恢复结果均为 0；图像不能推出位置、比例、尺寸、材料、班次、建设、运行或审批结论 [assumption:A-KEY-AREA-SPATIAL-011] [data:visual/assets/implementation-handoff-matrix.json]。
+
 ## AI 创新生态、人才画像与 AI+ 场景
 
 ### 七类共测画像

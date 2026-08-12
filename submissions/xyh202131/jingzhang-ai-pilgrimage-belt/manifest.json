@@ -17,6 +17,7 @@
     "tools_used": [
       "OpenAI Codex (GPT-5 family; exact serving snapshot not asserted)",
       "Python 3.13.12",
+      "Node.js 22.22.3",
       "Git 2.54.0",
       "GitHub CLI 2.95.0",
       "Firecrawl CLI 1.19.30",
@@ -24,13 +25,16 @@
       "fontTools 4.63.0",
       "PyMuPDF 1.27.2.3",
       "Pillow 12.2.0",
+      "Google Chrome 151.0.7922.108 and Microsoft Edge 151.0.4129.72 (offline headless SVG rasterization)",
       "scripts/score_submission.py",
       "scripts/validate_local_submission.py",
       "scripts/spatial_review.py",
       "scripts/visual_review.py",
       "scripts/professional_review.py",
       "scripts/self_check_submission.py",
-      "scripts/participant_preflight.py"
+      "scripts/participant_preflight.py",
+      "OpenAI built-in image generation (exact serving snapshot not asserted)",
+      "Pillow 12.2.0 WebP conversion and metadata inspection"
     ]
   },
   "generated_at": "2026-08-12T00:00:00Z",
@@ -46,13 +50,13 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "c4d84f9c0a63f922ed77a0935be7b8aac0a31bec59475bb1aa6933fe0cb47213"
+      "sha256": "df0a6713beab20fd75f2bbcb52f053b84cd5ff072476db7888cca52b91cbc24b"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "999d6b907854d18cd1d6b935a2d38737b3499d86280c46526dd6b6ea085f4b22"
+      "sha256": "4c1aa871b3ec073ab2f4895684461c25b3abce73776cacf3e8299c98b0db2659"
     },
     {
       "path": "metrics.json",
@@ -70,25 +74,25 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "a6a4462babf974b6e7608b6f81ddbf02e8b97e042a6dcf326b924c4ec4445765"
+      "sha256": "fbd6d97513e9f605e9632ad9e39233410a17ff23af01b118bebfd4aa19964e08"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "15d129267ca12c6109f9e272a8eee7115b94f93b3ddfa11b2f1aafce8c22319b"
+      "sha256": "4b6ff408e308002066a32a2b68f40b2247a6c6c25fcf34fb18b25feb4f5faf9c"
     },
     {
       "path": "changelog.md",
       "role": "changelog",
       "required": true,
-      "sha256": "e56086fe75e64a6ead9d4e235960d924d2616973c00e302649c9882fc7577ba1"
+      "sha256": "b63715b9587f1bc8183f79b629b4cc3c2c0f3e54ff5129f1ad68eae975816e30"
     },
     {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "f6ac8108a2b5dbfcdca77188aa272f1df71292c6390884c3c3253e81e03df325"
+      "sha256": "8276c97d01c63773a6d2fb5fdf027fa860e3d0e4bf99cb6f02f7a46032b2eaa9"
     },
     {
       "path": "standard_matrix.json",
@@ -118,7 +122,7 @@
       "path": "visual/assets/evidence-freshness-policy.json",
       "role": "source_governance_evidence",
       "required": true,
-      "sha256": "34134424d8ffc58207f40dd0274a29e0ae46189c6630fbcd8a2747e6047f67de"
+      "sha256": "92403864f721a2a85a3ea97973bd2d6bdfb4e9ff3ad2a9780fb4b6221a90b875"
     },
     {
       "path": "visual/assets/site-grounding-register.json",
@@ -172,7 +176,7 @@
       "path": "visual/assets/t02-g0-g1-replay-result.json",
       "role": "synthetic_governance_replay_result",
       "required": true,
-      "sha256": "1bb768db5f9e9522f7f5b88cf94c62e3ddb978e42edc18bdb532674b8c5e54c3"
+      "sha256": "5697b0f134862283a278418c4084cce834fd2938b636ee3320e5eedd050f49c3"
     },
     {
       "path": "visual/assets/key-area-evidence-matrix.json",
@@ -184,7 +188,7 @@
       "path": "visual/assets/rights-clearance-ledger.json",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "bd4746b7e7ff1639956a62e6a9bf62a00fa73f247b2cfb9402a642b54878e421"
+      "sha256": "5024d6e593c76e8546113a6fc5cdf94a628b721d3fb46b455722c1583e2d1f5e"
     },
     {
       "path": "visual/assets/source-rights-evidence.schema.json",
@@ -196,7 +200,7 @@
       "path": "visual/assets/source-rights-evidence.json",
       "role": "source_rights_evidence",
       "required": true,
-      "sha256": "a4d53c8bb128067ede94892ba224f3c7e5eb18aa811da5cc2290b08f61470fcb"
+      "sha256": "a8f8c6254bb3dfa01757ece81dac2a53bdc3304bdae221c0771567c9ff0d52e1"
     },
     {
       "path": "visual/assets/submission-use-rights-matrix.json",
@@ -209,40 +213,40 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "b24d43e5312e9e30de6139c8ca2888a730e7f3c807a70545c37b41b5a4035a23"
+      "sha256": "a06b77c7bf7ffe81333ba5fce71c817aa41912f9e989c7f694297514b6306ae9"
     },
     {
       "path": "report/narrative.md",
       "role": "narrative",
       "required": false,
-      "sha256": "a0c84950b72bde4191da099a04720e362e574432b0b4fdc572db26ef74600e9f"
+      "sha256": "8d96d3a7c9070c9da26256f0d6255557b540dcc82cc21712f3e041184ca3eda3"
     },
     {
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "1f35ac4359d458c1841bf48f6bc43eebf5aa23256841361c6d94c438c4051750"
+      "sha256": "7aa3e13e30fab2f76f1246141db89ce2c9bd9cdc96e953a65fcfa6a90b352ec9"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "8f5835af07cf0e1640728cb5860b4cff91b6238304c00994385ad4484b779029"
+      "sha256": "6ea3fe812ab02fac3390f1fd7d5699ff92d3f64c945cbb9eb72d95f1a622be86"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "4dd45f6c8a34acd80f30db9361560ea95689eef2bfe2fc6feae3bba8103824ad"
+      "sha256": "d15aa4a4ed2b4a4d9a9c1047b7e85eb0807eec4a7bfd62529a793149ad43f3cf"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "722352f2e93e01664b92f397ebfda6c658e51f504924c3d189d106a45111055e"
+      "sha256": "3dd120d58324b7be3ed27fb56125e88cc58fdcd87f5cb9737601271e50ccfcc8"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -381,7 +385,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "1e31b1e1938544ef8978012900c8b8126b47184dfbf8fb5f96dc2d362e590ccd"
+      "sha256": "ff9f3227a2baa9ffe4249518fcd10ab94362766e8cbda5121b1e1fab5a8e09a8"
     },
     {
       "path": "report/proposal.en.html",
@@ -389,7 +393,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "c85d8f6029d61de85d302072b40a6e37be0bf684c7d647edd4d17c4c918fcdf8"
+      "sha256": "d18be893e61730a5d0361a26a44d85a31a5463bbf5f0cb6082697aeb7636a2da"
     },
     {
       "path": "visual/index.en.html",
@@ -397,7 +401,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "7eaefc42b0bbc611134578e4191d23b9c9de30d532fe804fea4406dfefa2d31f"
+      "sha256": "9386814061adbdb10b1b86fed549fe94c7c15044f29d2862f842837108553033"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -405,7 +409,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "7c6c9e63da74c65bc650ffc388d25aef322d2c265107a78435825c873ff2fc6a"
+      "sha256": "ee4f5a69d105af65ed9a79c731c920453d55a4021c8c3d7b51da3595fa1706af"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -413,7 +417,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "4222709be163478b9bc5e0d1025d068c9bd50ef30b5c364e5d7da9387f139acd"
+      "sha256": "ca1304e2df189ac9b29ddc9d2b9e2717ca93bf5159b9138fc223d99d049fb8e4"
     },
     {
       "path": "assets/figures/implementation-roadmap.en.png",
@@ -778,6 +782,29 @@
       "language": "en",
       "translation_of": "assets/figures/review-professional-handoff.svg",
       "sha256": "8bfc30193251e57e4d98e667cb547ab2e3c4b8a87441acc87462f11c8623ca2f"
+    },
+    {
+      "path": "visual/assets/ordinary-life-media-register.json",
+      "role": "public_interest_evidence",
+      "required": true,
+      "sha256": "2b5391ba9c54c962325061c47c9a5d9832ada81aa4d9b148c808cfe6af95d672"
+    },
+    {
+      "path": "assets/media/ordinary-life-scenes.webp",
+      "role": "media_poster",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "普通生活空间场景册",
+      "title_en": "Ordinary-Life Spatial Scenes",
+      "description_zh": "三处差异化原型的人尺度合成概念图；普通路径先成立，AI 只作旁侧可选叠层。",
+      "description_en": "A synthetic human-scale concept triptych for three differentiated prototypes; ordinary paths work first and AI remains an optional side overlay.",
+      "sha256": "dca1e2af1584a15be9f5f483f5e8218f63a3235dcd198f8f8216f999fe8d263c"
+    },
+    {
+      "path": "assets/media/ordinary-life-scenes.md",
+      "role": "transcript",
+      "required": false,
+      "sha256": "3c1c92086741b198b400525a3824801f6fd015aeb799f6f40b36a713070366dc"
     }
   ],
   "validation_claim": {

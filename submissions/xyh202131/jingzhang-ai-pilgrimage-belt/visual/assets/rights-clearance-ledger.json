@@ -27,8 +27,8 @@
     "mixed_source_derivative_pending_independent_review": "The file combines package-authored material with repository or third-party source traces and remains pending independent review."
   },
   "file_coverage": {
-    "expected_manifest_entries": 108,
-    "expected_non_manifest_entries": 107,
+    "expected_manifest_entries": 111,
+    "expected_non_manifest_entries": 110,
     "coverage_rule": "Every manifest path appears in exactly one compatibility asset_group and exactly one asset_record. Path coverage and resolvable declared parent links do not equal an exhaustive dependency graph or legal clearance.",
     "asset_groups": [
       {
@@ -70,7 +70,8 @@
           "report/narrative.md",
           "visual/assets/century-time-museum-contract.json",
           "visual/assets/mission-economy-contract.json",
-          "visual/assets/civic-operations-contract.json"
+          "visual/assets/civic-operations-contract.json",
+          "visual/assets/ordinary-life-media-register.json"
         ],
         "limits": [
           "Repository source status is relied on but not independently re-licensed here.",
@@ -89,7 +90,8 @@
           "proposal.en.md",
           "report/proposal.html",
           "report/proposal.en.html",
-          "report/copyright_statement.md"
+          "report/copyright_statement.md",
+          "assets/media/ordinary-life-scenes.md"
         ],
         "limits": [
           "The COMMUNITY-DISPLAY-ONLY front-matter label is not a complete license grant because its full terms are not included in this package.",
@@ -194,7 +196,8 @@
           "assets/figures/review-professional-handoff.png",
           "assets/figures/review-professional-handoff.svg",
           "assets/figures/review-professional-handoff.en.png",
-          "assets/figures/review-professional-handoff.en.svg"
+          "assets/figures/review-professional-handoff.en.svg",
+          "assets/media/ordinary-life-scenes.webp"
         ],
         "limits": [
           "No standalone source font file is shipped by the package. The four PDFs contain embedded NotoSansSC subset font programs; the A3 PDFs also reference unembedded Helvetica. HTML requests system font stacks, and the concrete fonts resolved while rasterizing the twenty-two checked-in SVG files to PNG were not recorded. These facts do not establish license or embedding compliance.",
@@ -203,8 +206,8 @@
         ]
       }
     ],
-    "expected_manifest_file_count": 108,
-    "expected_non_manifest_content_file_count": 107
+    "expected_manifest_file_count": 111,
+    "expected_non_manifest_content_file_count": 110
   },
   "asset_records": [
     {
@@ -261,7 +264,7 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "c4d84f9c0a63f922ed77a0935be7b8aac0a31bec59475bb1aa6933fe0cb47213",
+        "digest": "df0a6713beab20fd75f2bbcb52f053b84cd5ff072476db7888cca52b91cbc24b",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -338,7 +341,7 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "999d6b907854d18cd1d6b935a2d38737b3499d86280c46526dd6b6ea085f4b22",
+        "digest": "4c1aa871b3ec073ab2f4895684461c25b3abce73776cacf3e8299c98b0db2659",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -494,7 +497,7 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "a6a4462babf974b6e7608b6f81ddbf02e8b97e042a6dcf326b924c4ec4445765",
+        "digest": "fbd6d97513e9f605e9632ad9e39233410a17ff23af01b118bebfd4aa19964e08",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -570,7 +573,7 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "15d129267ca12c6109f9e272a8eee7115b94f93b3ddfa11b2f1aafce8c22319b",
+        "digest": "4b6ff408e308002066a32a2b68f40b2247a6c6c25fcf34fb18b25feb4f5faf9c",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -617,7 +620,7 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "e56086fe75e64a6ead9d4e235960d924d2616973c00e302649c9882fc7577ba1",
+        "digest": "b63715b9587f1bc8183f79b629b4cc3c2c0f3e54ff5129f1ad68eae975816e30",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -662,7 +665,7 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "f6ac8108a2b5dbfcdca77188aa272f1df71292c6390884c3c3253e81e03df325",
+        "digest": "8276c97d01c63773a6d2fb5fdf027fa860e3d0e4bf99cb6f02f7a46032b2eaa9",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -943,7 +946,7 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "34134424d8ffc58207f40dd0274a29e0ae46189c6630fbcd8a2747e6047f67de",
+        "digest": "92403864f721a2a85a3ea97973bd2d6bdfb4e9ff3ad2a9780fb4b6221a90b875",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -1360,7 +1363,7 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "a4d53c8bb128067ede94892ba224f3c7e5eb18aa811da5cc2290b08f61470fcb",
+        "digest": "a8f8c6254bb3dfa01757ece81dac2a53bdc3304bdae221c0771567c9ff0d52e1",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -1452,7 +1455,7 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "b24d43e5312e9e30de6139c8ca2888a730e7f3c807a70545c37b41b5a4035a23",
+        "digest": "a06b77c7bf7ffe81333ba5fce71c817aa41912f9e989c7f694297514b6306ae9",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -1544,7 +1547,7 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "a0c84950b72bde4191da099a04720e362e574432b0b4fdc572db26ef74600e9f",
+        "digest": "8d96d3a7c9070c9da26256f0d6255557b540dcc82cc21712f3e041184ca3eda3",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -1592,7 +1595,7 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "1f35ac4359d458c1841bf48f6bc43eebf5aa23256841361c6d94c438c4051750",
+        "digest": "7aa3e13e30fab2f76f1246141db89ce2c9bd9cdc96e953a65fcfa6a90b352ec9",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -1643,7 +1646,7 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "8f5835af07cf0e1640728cb5860b4cff91b6238304c00994385ad4484b779029",
+        "digest": "6ea3fe812ab02fac3390f1fd7d5699ff92d3f64c945cbb9eb72d95f1a622be86",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -1712,7 +1715,7 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "4dd45f6c8a34acd80f30db9361560ea95689eef2bfe2fc6feae3bba8103824ad",
+        "digest": "d15aa4a4ed2b4a4d9a9c1047b7e85eb0807eec4a7bfd62529a793149ad43f3cf",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -1777,7 +1780,7 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "722352f2e93e01664b92f397ebfda6c658e51f504924c3d189d106a45111055e",
+        "digest": "3dd120d58324b7be3ed27fb56125e88cc58fdcd87f5cb9737601271e50ccfcc8",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -2814,7 +2817,7 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "1e31b1e1938544ef8978012900c8b8126b47184dfbf8fb5f96dc2d362e590ccd",
+        "digest": "ff9f3227a2baa9ffe4249518fcd10ab94362766e8cbda5121b1e1fab5a8e09a8",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -2891,7 +2894,7 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "c85d8f6029d61de85d302072b40a6e37be0bf684c7d647edd4d17c4c918fcdf8",
+        "digest": "d18be893e61730a5d0361a26a44d85a31a5463bbf5f0cb6082697aeb7636a2da",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -2983,7 +2986,7 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "7eaefc42b0bbc611134578e4191d23b9c9de30d532fe804fea4406dfefa2d31f",
+        "digest": "9386814061adbdb10b1b86fed549fe94c7c15044f29d2862f842837108553033",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -3052,7 +3055,7 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "7c6c9e63da74c65bc650ffc388d25aef322d2c265107a78435825c873ff2fc6a",
+        "digest": "ee4f5a69d105af65ed9a79c731c920453d55a4021c8c3d7b51da3595fa1706af",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -3121,7 +3124,7 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "4222709be163478b9bc5e0d1025d068c9bd50ef30b5c364e5d7da9387f139acd",
+        "digest": "ca1304e2df189ac9b29ddc9d2b9e2717ca93bf5159b9138fc223d99d049fb8e4",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -3844,7 +3847,7 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "1bb768db5f9e9522f7f5b88cf94c62e3ddb978e42edc18bdb532674b8c5e54c3",
+        "digest": "5697b0f134862283a278418c4084cce834fd2938b636ee3320e5eedd050f49c3",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -6113,6 +6116,159 @@
         "RIGHTS-OPEN-04"
       ],
       "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-109",
+      "path": "visual/assets/ordinary-life-media-register.json",
+      "role": "public_interest_evidence",
+      "language": null,
+      "asset_class": "structured_concept_media_register",
+      "origin_status": "package_authored_structured_source_pending_independent_review",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "2b5391ba9c54c962325061c47c9a5d9832ada81aa4d9b148c808cfe6af95d672",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [
+          "SOURCE-JZ-ORDINARY-LIFE-MEDIA-REGISTER-R12"
+        ],
+        "parent_asset_refs": [
+          "proposal.md",
+          "proposal.en.md",
+          "assets/media/ordinary-life-scenes.md"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX",
+        "TOOL-PYTHON"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "structured_editable_source",
+        "evidence_ref": "../../assets/media/ordinary-life-scenes.md",
+        "limitation": "G0 interpretation register only; complete fields prove no site condition, approval, maturity or rights clearance."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-04"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-110",
+      "path": "assets/media/ordinary-life-scenes.webp",
+      "role": "media_poster",
+      "language": "neutral",
+      "asset_class": "generated_raster_media",
+      "origin_status": "ai_generated_visual_pending_output_terms_and_independent_review",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "dca1e2af1584a15be9f5f483f5e8218f63a3235dcd198f8f8216f999fe8d263c",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [
+          "SOURCE-ORDINARY-LIFE-MEDIA-R12"
+        ],
+        "parent_asset_refs": [
+          "visual/assets/ordinary-life-media-register.json",
+          "assets/media/ordinary-life-scenes.md"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-OPENAI-IMAGEGEN",
+        "TOOL-PILLOW"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "generated_then_lossless_composition_preserving_format_conversion",
+        "evidence_ref": "../../assets/media/ordinary-life-scenes.md",
+        "limitation": "Synthetic conceptual pixels only; not a site photograph, approved design, field evidence, reusable licence or rights clearance."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-04"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-111",
+      "path": "assets/media/ordinary-life-scenes.md",
+      "role": "transcript",
+      "language": null,
+      "asset_class": "bilingual_accessibility_and_rights_note",
+      "origin_status": "package_authored_text_pending_independent_review",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "3c1c92086741b198b400525a3824801f6fd015aeb799f6f40b36a713070366dc",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [
+          "SOURCE-ORDINARY-LIFE-MEDIA-R12"
+        ],
+        "parent_asset_refs": [
+          "assets/media/ordinary-life-scenes.webp",
+          "visual/assets/ordinary-life-media-register.json"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "human_readable_editable_source",
+        "evidence_ref": "../../assets/media/ordinary-life-scenes.md",
+        "limitation": "Bilingual accessibility and provenance note only; no independent image-rights, model-output-terms or professional audit is recorded."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-04"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
     }
   ],
   "third_party_and_tool_boundaries": [
@@ -6177,6 +6333,16 @@
       "declared_svg_font_stack": "Arial, Microsoft YaHei, Noto Sans CJK SC",
       "status": "renderer_resolution_unrecorded",
       "limit": "The concrete font files selected by the renderer are unknown; checked-in pixels and editable SVG text do not by themselves prove font-license compliance."
+    },
+    {
+      "id": "RIGHTS-THIRD-08",
+      "material": "OpenAI built-in image generation and generated Round 12 concept pixels",
+      "scope": [
+        "assets/media/ordinary-life-scenes.webp"
+      ],
+      "current_use": "One package-authored text prompt generated a text-free conceptual triptych; no external image input was supplied, and Pillow only converted the selected raster to WebP without compositional editing.",
+      "status": "tool_and_output_terms_not_independently_audited",
+      "limit": "Exact serving snapshot, complete output terms, architectural validity, accessibility, model bias, and public/professional reuse rights are not asserted; repository review only and package-wide not_fully_cleared status remain."
     }
   ],
   "unresolved_items": [
