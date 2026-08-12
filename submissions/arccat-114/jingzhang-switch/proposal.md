@@ -9,7 +9,7 @@ license: "CC-BY-4.0"
 summary: "把京张铁路遗址走廊读作城市的'道岔'：詹天佑一百年前用'人'字形展线换轨上坡，今天AI创新带在同一片场地上换轨转向——科研换轨产业、实验室换轨城市、文化换轨体验。方案以'一岔三场两翼'组织空间：岔心（京张公园换轨枢纽）、始发场（AI原点社区）、加速轨道（众智园）、编组场（大钟寺）、东侧线（中关村科技服务翼）、西侧线（小月河场景赋能翼）；以铁路语汇治理12个AI场景（信号灯红牌暂停、扳道房人工接管、联锁协议可退役）；4处AI朝圣地标对接纪念机制。概念方案，基于临时边界，供专业团队深化。"
 tracks: ["jingzhang-heritage-narrative", "ai-origin-community", "ai-traffic-walkability"]
 scenarios: ["ai-cultural-guide", "ai-traffic-walkability", "enterprise-service-copilot", "robot-delivery-low-speed"]
-iteration: "v1.0"
+iteration: "v1.17"
 ---
 
 # 道岔·SWITCH——百年京张AI创新带城市设计方案
@@ -22,7 +22,7 @@ iteration: "v1.0"
 
 空间结构由此展开为**一岔、三场、两翼**：**岔心**（京张遗址公园中段的换轨枢纽，全带公共体验核心）；**始发场**（北京AI原点社区，0公里桩，策源与开源转化）；**加速轨道**（众智园AI自主创新加速区，全栈创新与AI治理）；**编组场**（大钟寺AI产业集聚区，智能原生业态与交会编组）；**东侧线**（中关村科技服务翼，要素全球化配置与资本赋能）；**西侧线**（小月河场景赋能翼，AI场景与活力城市）。9公里主脊同时是一部"换轨叙事"：南起编组场是交会，中段岔心是换轨，北抵加速轨道是加速——场景密度、公共界面与地标序列都沿这条"钢轨"组织[depth:overall_spatial_structure][data:geometry/land_use.geojson#LU-001]。
 
-方案速览：一，这是一片已建成的城区，本方案不重新规划这座城市，只为它接通断裂的公共界面，并在触媒点上示范更新的做法[depth:retain_renovate_demolish]；二，道岔符号双关历史与未来，命名、Logo、导视共用一套"钢轨—道岔"语汇[depth:overall_spatial_structure]；三，12个AI场景由铁路语汇状态机统一治理，红牌暂停、人工接管、可退役[depth:three_key_area_detailed_design]；四，26个用地单元、约9.7公里绿廊主轴与18项指标由确定性管道生成，官方数据到位即可整包重算[metric:site_area_sqm]；五，首开行动含一次完整的"红牌撤回"演练，4处朝圣地标对接征集活动公布的纪念机制[source:AGENT-TASKBOOK]。**统一声明：本方案为AI生成的开放共创建议，基于临时粗略边界，全部空间内容均为概念建议、参考方案，供专业团队深化研究，不构成政府审定结论；官方红线与控规条件到位后，全部面积、比例与位置关系须整体重算。本声明覆盖全文。**[source:PROVISIONAL-BOUNDARIES][depth:risk_missing_data]
+方案速览：一，这是一片已建成的城区，本方案不重新规划这座城市，只为它接通断裂的公共界面，并在触媒点上示范更新的做法[depth:retain_renovate_demolish]；二，道岔符号双关历史与未来，命名、Logo、导视共用一套"钢轨—道岔"语汇[depth:overall_spatial_structure]；三，12个AI场景由铁路语汇状态机统一治理，红牌暂停、人工接管、可退役[depth:three_key_area_detailed_design]；四，26个用地单元、约9.7公里绿廊主轴与41项指标由确定性管道生成，官方数据到位即可整包重算[metric:site_area_sqm]；五，首开行动含一次完整的"红牌撤回"演练，4处朝圣地标对接征集活动公布的纪念机制[source:AGENT-TASKBOOK]。**统一声明：本方案为AI生成的开放共创建议，基于临时粗略边界，全部空间内容均为概念建议、参考方案，供专业团队深化研究，不构成政府审定结论；官方红线与控规条件到位后，全部面积、比例与位置关系须整体重算。本声明覆盖全文。**[source:PROVISIONAL-BOUNDARIES][depth:risk_missing_data]
 
 ### 证据边界台账（四态）
 
@@ -33,7 +33,7 @@ iteration: "v1.0"
 | 三层范围文字四至与约面积（43.6/11.4/368.4 公顷） | ✅ 已验证 | 公告原文[source:OFFICIAL-ANNOUNCEMENT] |
 | 三处重点区名称与约面积（192.1/104.3/72.0 公顷） | ✅ 已验证 | 公告原文[source:OFFICIAL-ANNOUNCEMENT] |
 | 控规草案空间结构"一带一轴两心多点" | ✅ 已验证 | 官方"一张图读懂"读本[source:HD00-1601-DRAFT-GUIDE] |
-| 京张公园二期开放（9 公里/约53公顷） | ✅ 已验证 | 官方公开报道（2026-08-06）[source:JZ-PARK-PHASE2-OPEN-2026] |
+| 京张公园二期配套工程规模（530900㎡）与竣工字段 | ✅ 已验证 | 官方业绩公示原件（2026-08-05）[source:JZ-PARK-PHASE2-RECORD-2026]；配套项目口径，不等于整体竣工验收 |
 | 京张公园一期开放（约2.5公里） | ✅ 已验证 | 官方公开报道（2023-06）[source:JZ-PARK-PHASE1] |
 | 北京 AI 产业口径（2500企业/212模型/4500亿） | ✅ 已验证 | 官方口径（全市）[source:BJ-AI-INDUSTRY-2026] |
 | 总体设计范围精确多边形 | ⏳ 待官方 | 临时粗略边界复算 11,412,825 m²，与公告约 11.4 km² 差 **0.1125%**——如实披露[metric:provisional_site_area_difference_ratio][assumption:A-BOUNDARY-001] |
@@ -158,7 +158,7 @@ C（道岔）为主方案。比选的输家不被丢弃、被降级使用：A �
 
 ### 4.2 城市更新总体框架
 
-本方案坚持"已建成城区"的现实约束：现状建筑基底约占提交范围的17%以内（概念建筑基底约28公顷，仅为三处重点区的示意楼群），更新策略不是推倒重来，而是**接通公共界面、注入AI触媒**——在岔心、站前、绿廊断点等位置植入约15处触媒项目，以公共空间与场景体验带动渐进更新[depth:retain_renovate_demolish][metric:building_footprint_area_sqm]。拆改留逻辑：现状保留为主体，改造集中于沿绿廊的界面建筑，拆除与新建仅出现在岔心周边与三处重点区的触媒地块，且全部标注为概念建议，不作为地块级结论[assumption:A-CONTROLS-003]。
+本方案坚持"已建成城区"的现实约束：现状建筑底数待官方普查，本包仅以三处重点区的概念示意楼群表达更新对象（概念建筑基底约28公顷），更新策略不是推倒重来，而是**接通公共界面、注入AI触媒**——在岔心、站前、绿廊断点等位置植入12项更新项目（见第十章），以公共空间与场景体验带动渐进更新[depth:retain_renovate_demolish][metric:building_footprint_area_sqm]。拆改留逻辑：现状保留为主体，改造集中于沿绿廊的界面建筑，拆除与新建仅出现在岔心周边与三处重点区的触媒地块，且全部标注为概念建议，不作为地块级结论[assumption:A-CONTROLS-003]。
 
 ### 4.3 功能比例与创新指标体系
 
@@ -236,13 +236,13 @@ C（道岔）为主方案。比选的输家不被丢弃、被降级使用：A �
 
 ## 七、用地、建筑规模与拆改留方案
 
-用地布局以绿廊为轴、两翼展开：提交边界内共26个概念用地单元，完整覆盖边界、无缝隙无重叠[data:geometry/land_use.geojson#LU-001][depth:land_use_layout]。绿地与开敞空间约480公顷（含公园绿地约456公顷、广场约44公顷）构成绿廊主体；科研用地约203公顷集中于众智园与原点；居住用地约161公顷分布于生活段；商业服务业约67公顷集中于大钟寺与岔心东侧[depth:land_use_layout]。建筑基底概念布局约28公顷，集中于三处重点区，全部标注为低置信度概念设计量，不等于法定规模[metric:building_footprint_area_sqm][assumption:A-CONTROLS-003]。拆改留以"保留为主、界面改造、触媒新建"为原则，不作出地块级结论[depth:retain_renovate_demolish]。
+用地布局以绿廊为轴、两翼展开：提交边界内共26个概念用地单元，完整覆盖边界、无缝隙无重叠[data:geometry/land_use.geojson#LU-001][depth:land_use_layout]。公园绿地约480公顷、广场约44公顷构成绿廊主体（合计开敞约525公顷）；科研用地约203公顷集中于众智园与原点；居住用地约161公顷分布于生活段；商业服务业约67公顷集中于大钟寺与岔心东侧[depth:land_use_layout]。建筑基底概念布局约28公顷，集中于三处重点区，全部标注为低置信度概念设计量，不等于法定规模[metric:building_footprint_area_sqm][assumption:A-CONTROLS-003]。拆改留以"保留为主、界面改造、触媒新建"为原则，不作出地块级结论[depth:retain_renovate_demolish]。
 
 该原则有明确政策依据：《北京市城市更新条例》确立"留改拆"并举、以保留利用提升为主[source:BJ-RENEWAL-REGULATION]；住建部《防止大拆大建通知》（建科〔2021〕63号）要求拆除建筑面积不大于现状总建筑面积的20%、拆建比不大于2[source:MOHURD-63-NO-MASS-DEMOLITION]。本方案概念建筑基底约占提交范围2.5%，远低于20%红线，与政策方向同向[metric:building_footprint_area_sqm]。拆改留执行**决策门**：具体建筑进入深化后依次判断历史与公共价值、结构与消防可行性、全生命周期影响、使用者安置与参与、控规与权属合规，然后才进入"保留修缮/功能改造/局部替换/依法更新"四类；当前包不在图上标注任何拆除对象——把缺资料伪装成果断设计，正是本方案反对的那种"未对时的确定感"[source:MOHURD-63-NO-MASS-DEMOLITION][depth:retain_renovate_demolish]。容积率、建筑高度等法定控制值待正式控规数据补齐后复算[metric:floor_area_ratio][source:MOHURD-CONTROL-DETAILED-PLANNING]。
 
 ## 八、交通、轨道、市政与公共服务设施
 
-交通骨架以"一主轴、六支路"组织：绿廊主轴慢行道约6公里（全带9.7公里概念骨架中的核心段）贯通南北[data:geometry/roads.geojson#ROAD-001][metric:greenway_length_m]，六条横向联通支路衔接东西两翼与轨道站点[data:geometry/roads.geojson#ROAD-002]，站点接驳按"轨道+慢行+低速接驳"组织，活动日由"时刻表"场景统一调度。
+交通骨架以"一主轴、六支路"组织：绿廊主轴慢行道沿场地中轴贯通南北（概念骨架约9.7公里）[data:geometry/roads.geojson#ROAD-001][metric:greenway_length_m]，六条横向联通支路衔接东西两翼与轨道站点[data:geometry/roads.geojson#ROAD-002]，站点接驳按"轨道+慢行+低速接驳"组织，活动日由"时刻表"场景统一调度。
 
 ![交通慢行与蓝绿公共空间复合系统图](assets/figures/mobility-bluegreen.png)
 
@@ -267,7 +267,7 @@ C（道岔）为主方案。比选的输家不被丢弃、被降级使用：A �
 
 ## 九、蓝绿空间、公共空间与城市风貌
 
-蓝绿空间以京张公园概念绿廊为骨架：三段式绿廊（南段活力绿廊、岔心中央公园、北段生态绿廊）共约456公顷[data:geometry/green_space.geojson#GREEN-001][metric:green_ratio]，与清河、小月河蓝绿系统衔接（小月河概念示意线见 constraints 图层，精确蓝线待官方数据）[data:geometry/constraints.geojson#CON-002]。官方口径可作叙事锚点：京张铁路遗址公共空间改造提升工程（二期）已于2026年8月6日建成开放，串联西直门至北五环形成总长9公里的文化带状绿廊、总用地约53公顷，分南段社区活力段与北段自然休闲段，并建成"三道一绿"慢行系统[source:JZ-PARK-PHASE2-OPEN-2026]——本方案概念绿廊与该官方绿廊同向展开，本包概念主轴长度（约9.7公里，临时边界内几何复算）与官方全线口径（9公里）并存登记、不作同一值处理[metric:greenway_length_m]。
+蓝绿空间以京张公园概念绿廊为骨架：三段式绿廊（南段活力绿廊、岔心中央公园、北段生态绿廊）共约480公顷[data:geometry/green_space.geojson#GREEN-001][metric:green_ratio]，与清河、小月河蓝绿系统衔接（小月河概念示意线见 constraints 图层，精确蓝线待官方数据）[data:geometry/constraints.geojson#CON-002]。官方口径可作叙事锚点：京张铁路遗址公共空间改造提升工程（二期）已于2026年8月6日建成开放，串联西直门至北五环形成总长9公里的文化带状绿廊、总用地约53公顷，分南段社区活力段与北段自然休闲段，并建成"三道一绿"慢行系统[source:JZ-PARK-PHASE2-OPEN-2026]——本方案概念绿廊与该官方绿廊同向展开，本包概念主轴长度（约9.7公里，临时边界内几何复算）与官方全线口径（9公里）并存登记、不作同一值处理[metric:greenway_length_m]。
 
 公园建设历程同样印证"轻量介入"策略：一期（知春路至清华东路段，约2.5公里）于2023年6月开放，保留老铁轨、原址复刻火车转盘与货运联络线铁轨，贯彻"最小干预原则"[source:JZ-PARK-PHASE1]——本方案的绿廊节点激活与组件植入延续这一原则[source:JZ-PARK-PHASE1]。公共空间体系为"1+3+N"：1处岔心换轨广场（全带公共体验核心）、3处站前广场（始发场、编组场、信号广场）[data:geometry/public_space.geojson#PUBLIC-002]、N处沿线口袋公园与慢行驿站[depth:blue_green_public_space]。
 
