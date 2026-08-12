@@ -225,6 +225,76 @@
         "BUILDINGS_TOPOLOGY"
       ],
       "evidence_summary_zh": "建筑方案以留结构、改首层、补无障碍的适应性改造基底表达，新增采用可拆卸小体量，深度符合方案阶段规定。"
+    },
+    {
+      "standard_id": "GENERATIVE-AI-INTERIM-MEASURES",
+      "requirement_zh": "《生成式人工智能服务管理暂行办法》（国家互联网信息办公室等七部门令第15号，2023-07-13）：城市AI场景的最小数据、可选择、可申诉、人工终审、日志留痕与独立评测要求与该办法合规方向对齐；方案不构成适用结论。",
+      "professional_dimension": "合规接口",
+      "mandatory": false,
+      "review_status": "addressed",
+      "proposal_sections": [
+        "设计依据与资料清单",
+        "折返治理协议（本方案核心制度）",
+        "指标体系、面积复算与合规矩阵"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/public_space.geojson"
+      ],
+      "metric_refs": [
+        "public_issue_closure_rate",
+        "appeal_resolution_time_hours",
+        "independent_ai_evaluation_coverage",
+        "human_override_rate"
+      ],
+      "source_ids": [
+        "GENAI-INTERIM-MEASURES-2023"
+      ],
+      "notes_zh": "来源见仓库 data/source_registry.json；URL https://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm",
+      "assumption_ids": [
+        "ASM-001"
+      ],
+      "self_check_ids": [
+        "BOUNDARY_TRUST",
+        "VISUAL_STATIC"
+      ],
+      "evidence_summary_zh": "折返治理协议的最小数据、可选择、可申诉、人工终审、日志留痕与独立评测要求与该办法的合规方向对齐；回授门与三态状态机在「折返治理协议」章节程序化，四项评测口径指标登记于 metrics.json（基线缺失项标 unknown 不推填）。"
+    },
+    {
+      "standard_id": "BARRIER-FREE-ENVIRONMENT-LAW",
+      "requirement_zh": "《中华人民共和国无障碍环境建设法》（2023-06-28）：无障碍参与与替代通道（线下、纸质、人工辅助、无障碍席）对齐该法；具体场地改造以专项设计为准。",
+      "professional_dimension": "合规接口",
+      "mandatory": false,
+      "review_status": "addressed",
+      "proposal_sections": [
+        "AI 创新生态、人才画像与 AI+ 场景",
+        "公共参与机制",
+        "风险、版权与合规说明"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/public_space.geojson"
+      ],
+      "metric_refs": [
+        "public_issue_closure_rate",
+        "appeal_resolution_time_hours"
+      ],
+      "source_ids": [
+        "BARRIER-FREE-LAW-2023"
+      ],
+      "notes_zh": "来源见仓库 data/source_registry.json；URL https://www.gov.cn/yaowen/liebiao/202306/content_6888910.htm",
+      "assumption_ids": [
+        "ASM-001"
+      ],
+      "self_check_ids": [
+        "BOUNDARY_TRUST",
+        "VISUAL_STATIC"
+      ],
+      "evidence_summary_zh": "无障碍路径助手场景卡（01）绑定可达路线覆盖与纠错时长指标；公共参与机制提供线下、纸质、人工辅助与无障碍席；折返议事厅设静音室与无障碍席位，对齐无障碍环境建设法的可达与参与要求。"
     }
   ]
 }

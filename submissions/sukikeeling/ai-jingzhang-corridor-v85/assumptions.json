@@ -55,6 +55,17 @@
       "description_zh": "年度治理按四季节奏（春耕问题开源/夏耘红队挑战/秋收城市AI周/冬藏复盘存证）执行",
       "impact": "若年度节奏调整需同步更新 Q1-Q4 指标",
       "confidence": "medium"
+    },
+    {
+      "id": "A-STAT-ANCHOR-001",
+      "description_zh": "产业事实锚点（AI企业2000+/核心产业3500亿/大模型130款等）取自市科委2026-04-03发布与海淀区2026年政府工作报告，作为背景锚点，不构成方案指标基线或规划控制依据",
+      "impact": "统计口径更新或官方修正时同步刷新引用；这些数值不进入 metrics.json 的 declared 指标",
+      "confidence": "high",
+      "source_ids": [
+        "HD-AI-CORRIDOR-FACTS-2026",
+        "HD-GOV-WORK-REPORT-2026",
+        "HD-AI-FIFTEENTH-FIVE-YEAR-2026"
+      ]
     }
   ]
 }
