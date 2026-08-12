@@ -4,6 +4,34 @@
 >
 > This log records traceable changes to this submission package only. It is not evidence of approval, implementation, field testing, rights clearance, or trusted CI. After any content change, regenerate the manifest from the final Git blobs and rely on repository validation attached to the final PR head.
 
+## v9.1 - 2026-08-12
+
+**Rounds 7–9 cross-round closure / 第 7—9 轮跨轮闭环**
+
+- 审计确认第 7 轮 G0、失败门、非 AI 连续路径与临时边界未被后两轮破坏；修补集中于第 8—9 轮新增内容未完整进入出版、来源权利证据和逐文件覆盖的问题，不新增场景、项目、几何、边界、伙伴、采购、审批、现场结果或成熟度。
+- Audit confirmed that Round 7 G0 status, failure gates, continuous non-AI paths, and provisional boundaries remain intact. The repair is limited to Round 8–9 material missing from publication, source-rights evidence, and file-level coverage; it adds no scene, project, geometry, boundary, partner, procurement, approval, field result, or maturity.
+- 修正双语视觉首页嵌套导航；重排两张英文图的标题、状态条、卡片、恢复链和页脚，并删除可见的内部证据 token；中文图同步删除内部 token。双语正文与离线 HTML 现在直接嵌入百年时间与公共任务经济图件。
+- Corrected malformed nested bilingual navigation; repaired title, status-bar, card, recovery-flow, and footer layout in the two English figures and removed visible internal evidence tokens, with matching token cleanup in Chinese. Bilingual Markdown and offline HTML now embed both century-time and mission-economy figures directly.
+- manifest/逐文件权利台账从 89/88 扩为 99/98，新增 10 个第 8—9 轮合同与图件记录；来源权利证据从 29 扩为 35，与 `sources.json` 一一对应。删除未经证明的 CC 许可与“可展览”表述，总体仍为 `not_fully_cleared`，独立逐文件审计 0，公共或专业复用继续阻断。
+- Expanded manifest/file-level rights coverage from 89/88 to 99/98 with ten Round 8–9 contract/figure records. Source-rights evidence expands from 29 to 35 and is one-to-one with `sources.json`. Unsupported CC-license and exhibition-use statements are removed; overall rights remain `not_fully_cleared`, independent file-level audits remain 0, and public/professional reuse remains blocked.
+- 四份 PDF 从最终双语内容确定性重生：中文/英文 A3 为 58/62 页，每种语言 14 组图件各拆 3 个带 30px 重叠的 620×892 细节裁片；中英文 A0 各 14 张整板。两个新进程逐文件一致，148 页 QA 的空白页、替换字形和越界文本块均为 0；摘要见 `report/narrative.md`。
+- Deterministically regenerated all four PDFs from final bilingual content: Chinese/English A3 contain 58/62 pages with 14 figure sets per language, each split into three 620×892 detail crops with 30px overlap; both A0 sets contain 14 whole boards. Two fresh processes are file-identical, and all 148 pages return 0 blank pages, replacement glyphs, or out-of-page text blocks; hashes are recorded in `report/narrative.md`.
+
+## v9.0 - 2026-08-12
+
+**Mission Economy: 问题驱动的产业与人才转化 / Mission Economy: Problem-Led Industry and Talent Translation**
+
+- 选择四个相互依赖的产业与人才机制工作包，把公共任务发布、问题质量门、小团队公平准入、离线原型、独立复测门、结果回流与退出退役组织为同一 G0 机制合同；不以虚构企业名单、投资额或招商承诺证明产业价值，验证通过不等于采购或部署授权；不重做公共权利、证据类型、失败治理或文化合同底座。
+- Selected four mutually dependent industry-and-talent mechanism work packages, organizing public-task publication, problem-quality gate, fair small-team entry, offline prototyping, independent-retest gate, result reflow, and exit/retirement into one G0 mechanism contract; industry value is not proven by invented enterprise lists, investment amounts, or attraction promises, and passing a test is not a procurement or deployment authorization; does not rebuild public-rights, evidence-type, failure-governance, or cultural-contract foundations.
+- 新增 `mission-economy-contract.json`（JZ-MISSION-ECONOMY-G0-V1）：公共任务生命周期七步、准入与退出（无账号门槛、同任务人工/非 AI 路径、退出不进人才排名）、采购与知识产权边界（原型≠采购≠部署、逐级独立书面授权、IP not_cleared）、公共收益回流（不依赖投资额、反馈仅作下一轮输入）、四轴分离、十项决定指标全部 unknown 或 0、八组风险预演、reality counters 全 0。
+- Added `mission-economy-contract.json` (JZ-MISSION-ECONOMY-G0-V1): seven-step public-task lifecycle, entry and exit (no account barrier, manual/non-AI paths for the same task, exit records excluded from hiring ranking), procurement and IP boundary (prototype≠procurement≠deployment, separate written authorization per level, IP not_cleared), public-benefit reflow (independent of investment amounts, feedback only feeds the next round), four-axis separation, ten decision metrics all unknown or 0, eight risk rehearsals, all reality counters 0.
+- 新增双语产业—公共价值状态图 `industry-public-value-state.{svg,png}`，A 公共任务生命周期/B 四轴分离/C 授权阶梯/D 公共收益回流，图面通过 QA（修正英文版卡片标题与正文溢出）。
+- Added bilingual industry–public value state figure pair `industry-public-value-state.{svg,png}`, A public-task lifecycle / B four-axis separation / C authorization ladder / D public-benefit reflow; figure QA passed (fixed English card-title and body overflow).
+- 为十项决定指标定义状态/分母/证明上限；没有现实数据时保持 unknown 或 0，不得用字段覆盖率、概念数量或机器 PASS 冒充现实成效：公共任务可验证度、小团队参与比例、独立复测覆盖、任务退出率、专业服务可达性、公共收益交付状态、高校课程真实参与状态、知识产权争议数、失败项目公开率、机构书面确认状态。
+- Defined state/denominator/proof limits for ten decision metrics; without real data remain unknown or 0; field coverage, concept counts, or machine PASS cannot be presented as real-world outcomes: public-task verifiability rate, small-team participation ratio, independent-retest coverage, task exit rate, professional-service accessibility, public-benefit delivery status, university-course real participation, IP dispute count, failed-project publication rate, institution written-confirmation status.
+- 外部机构、企业、高校和服务商均为建议角色或待确认角色，0 个书面确认；责任主体（发布、准入、复测、停止、恢复）均为角色待确认。geometry、既有 SCENE/JZ/T 编号、八个项目、全部 G0、临时边界和 `not_fully_cleared` 均不变；现实任务、小团队、复测、退出事件、采购与部署全部为 0。
+- External institutions, enterprises, universities, and service providers remain suggested or pending-confirmation roles with 0 written confirmations; responsible roles (publication, entry, retest, stop, recovery) remain roles-to-be-confirmed. Geometry, existing SCENE/JZ/T IDs, eight projects, all G0 status, provisional boundaries, and `not_fully_cleared` remain unchanged; real tasks, small teams, retests, exit events, procurement, and deployment are all 0.
+
 ## v8.0 - 2026-08-12
 
 **Century-Time Museum: 可核验·可纠错·无屏可达的城市时间教育线 / The Century-Time Museum: A Verifiable, Correctable, Screen-free Time Education Line**

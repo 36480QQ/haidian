@@ -2,8 +2,8 @@
   "schema_version": "1.0.0",
   "ledger_id": "RIGHTS-01",
   "title": "Jing-Zhang V2 file-level rights status ledger",
-  "as_of": "2026-08-11",
-  "scope": "All 89 files declared by this submission, including manifest.json, this ledger, the source-rights evidence schema/instance, the implementation handoff matrix, the submission-use rights matrix, the twin-track, non-AI-first, urban-metabolism, failure-governance, climate-resilience, and two key-area bilingual editable figure pairs, plus the three-file T-02 synthetic replay pack; 88 entries are non-manifest content files.",
+  "as_of": "2026-08-12",
+  "scope": "All 99 files declared by this submission, including manifest.json, the complete source-rights and file-rights evidence chain, the Round 7 climate-resilience contract and figures, the Round 8 century-time museum contract and figures, the Round 9 mission-economy contract and figures, and the four synchronized publications; 98 entries are non-manifest content files.",
   "evidence_contract": {
     "source_rights_schema": "source-rights-evidence.schema.json",
     "source_rights_instance": "source-rights-evidence.json",
@@ -27,8 +27,8 @@
     "mixed_source_derivative_pending_independent_review": "The file combines package-authored material with repository or third-party source traces and remains pending independent review."
   },
   "file_coverage": {
-    "expected_manifest_entries": 89,
-    "expected_non_manifest_entries": 88,
+    "expected_manifest_entries": 99,
+    "expected_non_manifest_entries": 98,
     "coverage_rule": "Every manifest path appears in exactly one compatibility asset_group and exactly one asset_record. Path coverage and resolvable declared parent links do not equal an exhaustive dependency graph or legal clearance.",
     "asset_groups": [
       {
@@ -67,7 +67,9 @@
           "visual/assets/run_t02_g0_g1_replay.js",
           "visual/assets/t02-g0-g1-replay-result.json",
           "changelog.md",
-          "report/narrative.md"
+          "report/narrative.md",
+          "visual/assets/century-time-museum-contract.json",
+          "visual/assets/mission-economy-contract.json"
         ],
         "limits": [
           "Repository source status is relied on but not independently re-licensed here.",
@@ -130,7 +132,7 @@
         "id": "RIGHTS-GROUP-05",
         "name": "Generated visual and publication outputs",
         "rights_status": "generated_derivative_pending_embedded_asset_audit",
-        "origin_basis": "Figures, PDFs, and offline HTML generated for this package from the bilingual narrative, structured evidence, and conceptual geometry. Seven bilingual SVG pairs—key areas, key-area sections, twin-track overview, non-AI service blueprint, urban-metabolism ledger, failure-governance writeback, and climate-resilience corridor—are package-authored editable sources pending independent rights review; their paired PNG files are deterministic display exports.",
+        "origin_basis": "Figures, PDFs, and offline HTML generated for this package from the bilingual narrative, structured evidence, and conceptual geometry. Nine bilingual SVG pairs—key areas, key-area sections, twin-track overview, non-AI service blueprint, urban-metabolism ledger, failure-governance writeback, climate-resilience corridor, century timeline, and industry/public-value state—are package-authored editable sources pending independent rights review; their paired PNG files are deterministic display exports.",
         "paths": [
           "drawings/a3-booklet.pdf",
           "drawings/a0-boards.pdf",
@@ -175,15 +177,25 @@
           "assets/figures/climate-resilience-corridor.en.png",
           "assets/figures/climate-resilience-corridor.en.svg",
           "assets/figures/innovation-system.en.png",
-          "assets/figures/implementation-roadmap.en.png"
+          "assets/figures/implementation-roadmap.en.png",
+          "assets/figures/century-timeline.png",
+          "assets/figures/century-timeline.svg",
+          "assets/figures/century-timeline.en.png",
+          "assets/figures/century-timeline.en.svg",
+          "assets/figures/industry-public-value-state.png",
+          "assets/figures/industry-public-value-state.svg",
+          "assets/figures/industry-public-value-state.en.png",
+          "assets/figures/industry-public-value-state.en.svg"
         ],
         "limits": [
-          "No standalone source font file is shipped by the package. The four PDFs contain embedded NotoSansSC subset font programs; the A3 PDFs also reference unembedded Helvetica. HTML requests system font stacks, and the concrete fonts resolved while rasterizing the fourteen checked-in SVG files to PNG were not recorded. These facts do not establish license or embedding compliance.",
+          "No standalone source font file is shipped by the package. The four PDFs contain embedded NotoSansSC subset font programs; the A3 PDFs also reference unembedded Helvetica. HTML requests system font stacks, and the concrete fonts resolved while rasterizing the eighteen checked-in SVG files to PNG were not recorded. These facts do not establish license or embedding compliance.",
           "Editable package-authored SVG sources are declared for the bilingual key-areas, key-area-sections, site-overview, and non-ai-service-blueprint pairs. Editable sources exist for Markdown, HTML, JSON, and GeoJSON, but no separate editable vector or layout source is declared for every other PNG or PDF.",
           "The conceptual JZ logo grammar has not received trademark or production-brand clearance."
         ]
       }
-    ]
+    ],
+    "expected_manifest_file_count": 99,
+    "expected_non_manifest_content_file_count": 98
   },
   "asset_records": [
     {
@@ -240,7 +252,7 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "387c4a8651180050aa2cfa31e403e2c710dad797f8b058c42b70aaf55a6f523d",
+        "digest": "41637d3a5db8cce89443b0afbc74f934674680e73123099eeeceed5ef6a7c5ef",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -317,7 +329,7 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "f45f5fc68d436b111bd98483592fe4d8701c67bc35c4e6e3b8c57cdc97b7ec8e",
+        "digest": "fa384faa5a6114e8570e29ec6b3339710a5befa3d2103be03bed00bf51bf2989",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -362,7 +374,7 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "6219c3308b599eebd66b9b204fbe273c3497bee3922b7bf6921bab3b19862223",
+        "digest": "26793828f69cd3b7ae38a80b8700e891b67b0d55a9c34bd0b558e655c994217a",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -473,7 +485,7 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "c37cbcb5be4e551940f55932c0684181b2a17d7156600201278ef426c8e54f38",
+        "digest": "881fb0a388ab2d0745ffa83b5a633d133cfe83e1fbd026d68a4b288de55007a9",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -549,7 +561,7 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "0d8f3ec8da18367e24e6f94d990a083444d9dcd03d12a5af3a268fdb07eebb06",
+        "digest": "5ac9f9dd3cec10d2feedcb9af44b9bbea10dbca313e342bc776cf5850c481ea3",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -596,7 +608,7 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "88b3d5a8194fdeafa8537cc85798043ace7bdc8976afa0b763781c0143ba9535",
+        "digest": "bc34d92a305632a7641bc68724122b8fc447e53576f580e05d1bc14b0c2357ea",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -922,7 +934,7 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "499fc8c80193a0518cf9f123f3cad4dc0a75a696bdf9e18ebd0e1e841594a7f2",
+        "digest": "976ddadf02926eabff6fc379f8ed2f0fb383acd8ce68d9de7fe6dae5307786a3",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -1339,7 +1351,7 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "6ac63d974623c7f64eb4923e12ca9bb5245497b9adcd80c391842e671d4baa29",
+        "digest": "a791d3f4440edff2f752a4d2264d5b0b51b712f5a9f9150d3df500e6a55498c1",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -1419,7 +1431,7 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "b1fc3ba3b89608ad813280defa079dc04b623d6d2510107d8f042fb451f2c1a8",
+        "digest": "1a1daff9af4fedbb63dfff7d7f221f71a5bc8bd1f435a353c01027fbc7a9349f",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -1511,7 +1523,7 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "37443eab4ef1026f30e8f16e3a9690c254c080efd2920d2a5becf615f7891839",
+        "digest": "06e689305ead421bb5d262cc810d5e4e611b033d1b35e7956c65e4d87e6db855",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -1559,7 +1571,7 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "5f3e425b318a5ede3addb672fbf249eee196ed604cd69a0af1a279120665aafc",
+        "digest": "5c8177909724613ebc5a3fcf4bb272a1e8af70cd04a157a7a7387061977c1d78",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -1610,7 +1622,7 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "ccda6705564dd44e4e3ab859ebdceec38448f89ea05364becfe299d2127324f4",
+        "digest": "628a5c3441a57d5cf50ef058511262c21b967140bd01f5953ca644e38a4d1d63",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -1679,7 +1691,7 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "25b02b20a485b45019896fc51ace2c28e6704a4c501926a58ed2b368bd1bd9f3",
+        "digest": "2d663fabf42adcf0d63b363341037476de6b1952d8a0b64ba7fd4ffefa9021b9",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -1744,7 +1756,7 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "71a4f98fa8302d2b58d1d700cb0a61a91b19249ed3d0d879ddb92dbe0179f93e",
+        "digest": "848dc2844a4417bab7e5a13ee21a99c581ac526c18d39518bb74822ea3b56b6e",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -2781,7 +2793,7 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "5a5974af056cc5e4d4d86242898520bc0db94f545e7ffa60c1d61c55b947b64c",
+        "digest": "d69b03e2b5c6793fe6478555a8a6cdc305da3e97955febf000c8a44ebf92dde1",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -2858,7 +2870,7 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "1a068b2d7ff2eabd32015cfd3d6ed3cffe7e47aaa476813ac7c6cf27501c38f4",
+        "digest": "24f941fe2e9e452a7cc5754e6f9b9c39817d9dd76e8409be77b194464c62ef03",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -2950,7 +2962,7 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "fe26dfe24f2ac8bf2dc34ab593bf803eb35d79e489cc788bb16bd9805dd28f67",
+        "digest": "a91d2a4d06b90ea3d30f1f6a58a7b998bc16c92c0da8932b62b2bc9811cc46bd",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -3019,7 +3031,7 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "c24cbf055b835e02f3e7f92fe276dd53a76ab180221ac5ecade78a687f6f73a7",
+        "digest": "6b8d2b774c843f6719f0cc80ad0d3d3c0622b924da6957f349bfc8a7b31a1ad8",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -3088,7 +3100,7 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "f3cf28899551041cfc6efa745cbc99230f32f3f7b7b3a76dcbba48d4789335c3",
+        "digest": "565c93d8d233801835cc79a227f5f2ed8354a3d7ab79f1921ed840925c68a8a0",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -3811,7 +3823,7 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "98eddae08249bdfb4ce77850c675e6af046df6e1833b9c959a41f75306e3c410",
+        "digest": "5d1d55c622a5fe8355a9e5d8613010239f803046d9daed5c07ee6a4b48c43c07",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -5096,6 +5108,514 @@
         "status": "package_authored_svg_editable_source",
         "evidence_ref": "../../report/narrative.md#第-7-轮气候韧性增量--round-7-climate-resilience-increment",
         "limitation": "The SVG is a conceptual climate relationship and future-measurement diagram, not an exact site, built facility, thermal or hydraulic result, activity approval, or operating service; font resolution and independent rights review remain pending."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-04"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-090",
+      "path": "visual/assets/century-time-museum-contract.json",
+      "role": "public_interest_evidence",
+      "language": null,
+      "asset_class": "structured_evidence_contract",
+      "origin_status": "self_declared_origin_pending_independent_review",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "4328e6bddab7f4b9beaa18a3ca6876e64c578db7781ae6cba046973dcb7c3e39",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 must be computed from the final staged Git blob and equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [
+          "SOURCE-JZ-TIME-MUSEUM-G0-V1"
+        ],
+        "parent_asset_refs": [
+          "proposal.md",
+          "proposal.en.md",
+          "sources.json"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX",
+        "TOOL-PYTHON"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "structured_editable_source",
+        "evidence_ref": "../../report/narrative.md#第-7—9-轮跨轮闭环修补--rounds-7–9-cross-round-closure-repair",
+        "limitation": "G0 cultural-evidence and correction contract only; not an archive, collected oral history, approval, or operation."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-04"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-091",
+      "path": "assets/figures/century-timeline.png",
+      "role": "proposal_figure",
+      "language": "zh",
+      "asset_class": "raster_figure",
+      "origin_status": "generated_derivative_pending_embedded_asset_audit",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "17a1ca12c5d386073c2ea9229561e78622ddb2c8876ab7e3249902e83f32da60",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 must be computed from the final staged Git blob and equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [
+          "SOURCE-CENTURY-TIMELINE-Figure"
+        ],
+        "parent_asset_refs": [
+          "assets/figures/century-timeline.svg",
+          "visual/assets/century-time-museum-contract.json"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX",
+        "TOOL-CHROME"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "deterministic_export_from_package_authored_svg",
+        "evidence_ref": "../../report/narrative.md#第-7—9-轮跨轮闭环修补--rounds-7–9-cross-round-closure-repair",
+        "limitation": "G0 teaching diagram only; renderer fonts and independent rights review remain pending."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-04"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-092",
+      "path": "assets/figures/century-timeline.svg",
+      "role": "proposal_figure_editable_source",
+      "language": "zh",
+      "asset_class": "generated_visual_source",
+      "origin_status": "package_authored_editable_source_pending_independent_review",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "1e00ee8dd552fc29a503c33c333c0afbfc40548deca5a3e3e967cb2c39a8443e",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 must be computed from the final staged Git blob and equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [
+          "SOURCE-CENTURY-TIMELINE-Figure"
+        ],
+        "parent_asset_refs": [
+          "proposal.md",
+          "visual/assets/century-time-museum-contract.json"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "package_authored_svg_editable_source",
+        "evidence_ref": "../../report/narrative.md#第-7—9-轮跨轮闭环修补--rounds-7–9-cross-round-closure-repair",
+        "limitation": "G0 teaching diagram only; not official chronology, archive access, or operating exhibit."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-04"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-093",
+      "path": "assets/figures/century-timeline.en.png",
+      "role": "proposal_figure",
+      "language": "en",
+      "asset_class": "raster_figure",
+      "origin_status": "generated_derivative_pending_embedded_asset_audit",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "75c4d7a7ea96043877f34303668099ed2a97222ee3d9f18a5426304bcdfac060",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 must be computed from the final staged Git blob and equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [
+          "SOURCE-CENTURY-TIMELINE-Figure"
+        ],
+        "parent_asset_refs": [
+          "assets/figures/century-timeline.en.svg",
+          "visual/assets/century-time-museum-contract.json"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX",
+        "TOOL-CHROME"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "deterministic_export_from_package_authored_svg",
+        "evidence_ref": "../../report/narrative.md#第-7—9-轮跨轮闭环修补--rounds-7–9-cross-round-closure-repair",
+        "limitation": "G0 teaching diagram only; renderer fonts and independent rights review remain pending."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-04"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-094",
+      "path": "assets/figures/century-timeline.en.svg",
+      "role": "proposal_figure_editable_source",
+      "language": "en",
+      "asset_class": "generated_visual_source",
+      "origin_status": "package_authored_editable_source_pending_independent_review",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "fbee9ce671421b52f57f61ac12a698be22a491cccc790c5e20aebb5596b427c4",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 must be computed from the final staged Git blob and equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [
+          "SOURCE-CENTURY-TIMELINE-Figure"
+        ],
+        "parent_asset_refs": [
+          "proposal.en.md",
+          "visual/assets/century-time-museum-contract.json"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "package_authored_svg_editable_source",
+        "evidence_ref": "../../report/narrative.md#第-7—9-轮跨轮闭环修补--rounds-7–9-cross-round-closure-repair",
+        "limitation": "G0 teaching diagram only; not official chronology, archive access, or operating exhibit."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-04"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-095",
+      "path": "visual/assets/mission-economy-contract.json",
+      "role": "public_interest_evidence",
+      "language": null,
+      "asset_class": "structured_evidence_contract",
+      "origin_status": "self_declared_origin_pending_independent_review",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "79a8ccce3d39e8ecded77e624ceab1f8fb5410a0a99c47930c55e181de9f02b6",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 must be computed from the final staged Git blob and equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [
+          "SOURCE-JZ-MISSION-ECONOMY-G0-V1"
+        ],
+        "parent_asset_refs": [
+          "proposal.md",
+          "proposal.en.md",
+          "sources.json"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX",
+        "TOOL-PYTHON"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "structured_editable_source",
+        "evidence_ref": "../../report/narrative.md#第-7—9-轮跨轮闭环修补--rounds-7–9-cross-round-closure-repair",
+        "limitation": "G0 mission-economy mechanism only; not a task, partner, procurement, investment, authorization, or operation."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-04"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-096",
+      "path": "assets/figures/industry-public-value-state.png",
+      "role": "proposal_figure",
+      "language": "zh",
+      "asset_class": "raster_figure",
+      "origin_status": "generated_derivative_pending_embedded_asset_audit",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "b386d3ab267c7b6f814aec4703281f5ef669ccce2c63dcfcba789569f087e54f",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 must be computed from the final staged Git blob and equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [
+          "SOURCE-INDUSTRY-PUBLIC-VALUE-FIGURE"
+        ],
+        "parent_asset_refs": [
+          "assets/figures/industry-public-value-state.svg",
+          "visual/assets/mission-economy-contract.json"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX",
+        "TOOL-CHROME"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "deterministic_export_from_package_authored_svg",
+        "evidence_ref": "../../report/narrative.md#第-7—9-轮跨轮闭环修补--rounds-7–9-cross-round-closure-repair",
+        "limitation": "G0 mechanism diagram only; no real task, authorization, procurement, partner, result, or operation is shown."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-04"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-097",
+      "path": "assets/figures/industry-public-value-state.svg",
+      "role": "proposal_figure_editable_source",
+      "language": "zh",
+      "asset_class": "generated_visual_source",
+      "origin_status": "package_authored_editable_source_pending_independent_review",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "f8c1ed96d2457e0adc266603b2245ef61413822dc1ecf5d0063cda68765b9925",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 must be computed from the final staged Git blob and equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [
+          "SOURCE-INDUSTRY-PUBLIC-VALUE-FIGURE"
+        ],
+        "parent_asset_refs": [
+          "proposal.md",
+          "visual/assets/mission-economy-contract.json"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "package_authored_svg_editable_source",
+        "evidence_ref": "../../report/narrative.md#第-7—9-轮跨轮闭环修补--rounds-7–9-cross-round-closure-repair",
+        "limitation": "G0 mechanism diagram only; not an approved industrial policy, procurement path, partner list, or operating result."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-04"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-098",
+      "path": "assets/figures/industry-public-value-state.en.png",
+      "role": "proposal_figure",
+      "language": "en",
+      "asset_class": "raster_figure",
+      "origin_status": "generated_derivative_pending_embedded_asset_audit",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "ac43a62a1eaa6bedc34d110bea3b9d644e4475f41075fb0c73ea59761eb5a1ac",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 must be computed from the final staged Git blob and equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [
+          "SOURCE-INDUSTRY-PUBLIC-VALUE-FIGURE"
+        ],
+        "parent_asset_refs": [
+          "assets/figures/industry-public-value-state.en.svg",
+          "visual/assets/mission-economy-contract.json"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX",
+        "TOOL-CHROME"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "deterministic_export_from_package_authored_svg",
+        "evidence_ref": "../../report/narrative.md#第-7—9-轮跨轮闭环修补--rounds-7–9-cross-round-closure-repair",
+        "limitation": "G0 mechanism diagram only; no real task, authorization, procurement, partner, result, or operation is shown."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-04"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-099",
+      "path": "assets/figures/industry-public-value-state.en.svg",
+      "role": "proposal_figure_editable_source",
+      "language": "en",
+      "asset_class": "generated_visual_source",
+      "origin_status": "package_authored_editable_source_pending_independent_review",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "4c1ff2b9f8d31e59b694c2287c857fa1487d58facb66d74124c4eb9b8fe5c022",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 must be computed from the final staged Git blob and equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [
+          "SOURCE-INDUSTRY-PUBLIC-VALUE-FIGURE"
+        ],
+        "parent_asset_refs": [
+          "proposal.en.md",
+          "visual/assets/mission-economy-contract.json"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "package_authored_svg_editable_source",
+        "evidence_ref": "../../report/narrative.md#第-7—9-轮跨轮闭环修补--rounds-7–9-cross-round-closure-repair",
+        "limitation": "G0 mechanism diagram only; not an approved industrial policy, procurement path, partner list, or operating result."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",

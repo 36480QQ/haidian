@@ -148,7 +148,7 @@ code {
 <li>第四级是国家数据、AI 内容标识和“人工智能+”政策，与六个全球案例一起用于机制启发和治理边界 <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="NATIONAL-DATA-INFRA-2025" title="来源：NATIONAL-DATA-INFRA-2025">来源</sup> <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="AI-CONTENT-LABEL-2025" title="来源：AI-CONTENT-LABEL-2025">来源</sup> <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="AI-PLUS-2025" title="来源：AI-PLUS-2025">来源</sup>。</li>
 </ul>
 <h3>证据不是一次性快照：失效必须向下游传播</h3>
-<p><code>sources.json</code> 已记录 29 条来源及访问日期，但同一天访问不等于内容永久有效，也不能发现修订、替代、失联或临时边界被正式资料取代。新增 <code>visual/assets/evidence-freshness-policy.json</code>，把来源分成项目资料、临时空间数据、城市背景、政策标准和案例参考五类，规定复核触发点、建议最长未核时间、责任角色和失效动作；来源变为 <code>review_due</code>、<code>superseded</code> 或 <code>unavailable</code> 时，受影响主张、矩阵项和场景门级必须同步降级或冻结。当前只确认已有访问日期，尚未形成带内容摘要的刷新审计，因此完成刷新审计数保持为 0，临时空间数据无论多新也仍然只是 <code>provisional_only</code> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="visual/assets/evidence-freshness-policy.json#FRESH-01" title="空间数据：visual/assets/evidence-freshness-policy.json#FRESH-01">空间数据</sup> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="visual/assets/evidence-freshness-policy.json#FRESH-02" title="空间数据：visual/assets/evidence-freshness-policy.json#FRESH-02">空间数据</sup>。</p>
+<p><code>sources.json</code> 已记录 35 条来源及访问日期，但同一天访问不等于内容永久有效，也不能发现修订、替代、失联或临时边界被正式资料取代。<code>visual/assets/evidence-freshness-policy.json</code> 把来源分成项目资料、临时空间数据、城市背景、政策标准、案例参考和第 8—9 轮包内概念材料六类，规定复核触发点、建议最长未核时间、责任角色和失效动作；来源变为 <code>review_due</code>、<code>superseded</code> 或 <code>unavailable</code> 时，受影响主张、矩阵项和场景门级必须同步降级或冻结。当前只确认已有访问日期，尚未形成带内容摘要的刷新审计，因此完成刷新审计数保持为 0，临时空间数据无论多新也仍然只是 <code>provisional_only</code> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="visual/assets/evidence-freshness-policy.json#FRESH-01" title="空间数据：visual/assets/evidence-freshness-policy.json#FRESH-01">空间数据</sup> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="visual/assets/evidence-freshness-policy.json#FRESH-02" title="空间数据：visual/assets/evidence-freshness-policy.json#FRESH-02">空间数据</sup> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="visual/assets/evidence-freshness-policy.json#FRESH-06" title="空间数据：visual/assets/evidence-freshness-policy.json#FRESH-06">空间数据</sup>。</p>
 <p>专业响应按问题拆分，而不是把标准编号堆在一个结论后：</p>
 <ul>
 <li>项目任务与智能体任务由征集公告和任务书约束 <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="PROJECT-OFFICIAL-ANNOUNCEMENT" title="标准：PROJECT-OFFICIAL-ANNOUNCEMENT">标准</sup> <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="PROJECT-AGENT-OPEN-CALL-TASKBOOK" title="标准：PROJECT-AGENT-OPEN-CALL-TASKBOOK">标准</sup>。</li>
@@ -389,7 +389,7 @@ code {
 <li>AI 与数据风险：偏差、幻觉、隐私泄露、越权自动化和供应商锁定通过最小数据、源端保留、日志、人工责任、复测、到期和退役控制；不得自动执法、诊断或替代正式审批。</li>
 <li>安全与韧性风险：机器人、车辆和设备测试只在授权范围；实体急停、现场安全员、离线人工和 L0/L1/L2 降级必须可用。能源和恢复指标未实测时保持未知。</li>
 <li>文化与历史风险：史实、人物、文物和工程资料需由官方/馆藏/清权来源复核；AI 生成内容显式与元数据标识，争议内容可纠错、下架和追溯 [assumption:A-CULTURE-CONTENT-006]。</li>
-<li>版权与品牌风险：本次提交的最终文件集合为 manifest 中 89 个路径（其中 88 个为非 manifest 内容文件）；89 条逐文件资产记录与 29 条来源证据记录只证明披露和链接闭合，覆盖完整性只在 manifest 与权利状态台账从最终 Git blobs 刷新并通过校验后成立。当前独立逐文件清权审计完成数为 0，总体状态为 <code>not_fully_cleared</code>。<code>submission-use-rights-matrix.json</code> 已逐条记录公告 8.1、仓库评审、主办方项目内使用、投稿人对外展示、跨项目复用和第三方组件的当前决策，但本包未证明正式公告条款与本次 GitHub 开源 Agent 征集具有完全相同的适用关系；<code>COMMUNITY-DISPLAY-ONLY</code> 完整条款、书面同意、OSM ODbL 义务、PDF 字体、Node.js 运行时与生成工具条款以及 Logo/地标商标仍待复核，不能声称已经全部清权 <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="visual/assets/rights-clearance-ledger.json#RIGHTS-01" title="空间数据：visual/assets/rights-clearance-ledger.json#RIGHTS-01">空间数据</sup> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="visual/assets/submission-use-rights-matrix.json#JZ-SUBMISSION-USE-RIGHTS-V1" title="空间数据：visual/assets/submission-use-rights-matrix.json#JZ-SUBMISSION-USE-RIGHTS-V1">空间数据</sup>。</li>
+<li>版权与品牌风险：本次提交的最终文件集合为 manifest 中 99 个路径（其中 98 个为非 manifest 内容文件）；99 条逐文件资产记录与 35 条来源证据记录只证明披露和链接闭合，覆盖完整性只在 manifest 与权利状态台账从最终 Git blobs 刷新并通过校验后成立。当前独立逐文件清权审计完成数为 0，总体状态为 <code>not_fully_cleared</code>。<code>submission-use-rights-matrix.json</code> 已逐条记录公告 8.1、仓库评审、主办方项目内使用、投稿人对外展示、跨项目复用和第三方组件的当前决策，但本包未证明正式公告条款与本次 GitHub 开源 Agent 征集具有完全相同的适用关系；<code>COMMUNITY-DISPLAY-ONLY</code> 完整条款、书面同意、OSM ODbL 义务、PDF 字体、Node.js 运行时与生成工具条款以及 Logo/地标商标仍待复核，不能声称已经全部清权 <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="visual/assets/rights-clearance-ledger.json#RIGHTS-01" title="空间数据：visual/assets/rights-clearance-ledger.json#RIGHTS-01">空间数据</sup> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="visual/assets/submission-use-rights-matrix.json#JZ-SUBMISSION-USE-RIGHTS-V1" title="空间数据：visual/assets/submission-use-rights-matrix.json#JZ-SUBMISSION-USE-RIGHTS-V1">空间数据</sup>。</li>
 <li>外部协同风险：未来科学城、怀柔科学城、经开区、其他创新街区和京津冀只作为可选复测角色，未经书面确认不得写成合作方、投资方或落地承诺 [assumption:A-EXTERNAL-COLLAB-005]。</li>
 <li>运营与公平风险：活动热度不能替代居民满意、可达、公平与投诉闭环；贡献荣誉不得用于流量排名、就业筛选或行政评价。</li>
 <li>工具与证据风险：机器检查只验证结构、拓扑、引用和一致性，不替代规划、建筑、交通、市政、景观、生态、消防、铁路、数据安全、无障碍、社区与法律专业判断 <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="risk_missing_data" title="深度：risk_missing_data">深度</sup>。</li>
@@ -425,8 +425,40 @@ code {
 </ul>
 <h3>图件交付</h3>
 <p><code>century-timeline.{svg,png}</code> 双语时间图谱通过图面 QA，A 双轨对照图谱 / B 来源等级表 / C 争议纠错流程，全部标注 G0 概念状态与 provisional geometry 边界。</p>
+<figure class="proposal-figure"><img src="../assets/figures/century-timeline.png" alt="百年时间博物馆：双轨时间图谱、类型化来源、争议纠错与无屏节点链（G0 概念；馆藏、口述史、实测与责任确认均为 0）"><figcaption>百年时间博物馆：双轨时间图谱、类型化来源、争议纠错与无屏节点链（G0 概念；馆藏、口述史、实测与责任确认均为 0）</figcaption></figure>
 <h3>继承与冻结</h3>
 <p>geometry、既有 SCENE/JZ/T 编号、八个项目、全部 G0、临时边界和 <code>not_fully_cleared</code> 均不变。官方馆藏、明确责任主体、独立复测、批准或运行结果仍为 0。</p>
+<p>[back to top](#ai-朝圣铁轨新生带)</p>
+<h2>公共任务经济：问题驱动的产业与人才转化</h2>
+<blockquote><p>本节为第 9 轮（JZ-FUTURE-08）新增的产业与人才机制增量，继承前序公共权利、证据类型、失败回写与百年时间博物馆合同；不另造&quot;验证票据&quot;品牌，不虚构企业、投资、采购或合作。</p></blockquote>
+<h3>战略命题</h3>
+<p>不以虚构企业名单、投资额或招商承诺证明产业价值，而以真实公共问题、可复测任务、专业服务、独立复测和退出机制组织产业与人才转化。<strong>验证通过不等于采购或部署授权</strong>：文件检查、技术测试、证据门、有限试用、采购和常态部署分别记录范围、责任、有效期和不可推出事项。</p>
+<h3>机制合同与四轴分离</h3>
+<p>本轮新增 <code>mission-economy-contract.json</code>（JZ-MISSION-ECONOMY-G0-V1），组织以下内容：</p>
+<ul>
+<li><strong>公共任务生命周期</strong>：问题发布 → 问题质量门 → 小团队公平准入 → 离线原型 → 独立复测门 → 结果回流 → 退出或退役；任何一步失败即 fail-closed，停止/退出不阻断普通公共路径与人工服务</li>
+<li><strong>准入与退出</strong>：无账号门槛、不要求预付合规成本、同一任务存在人工或非 AI 路径；小团队与大机构同池竞争；退出记录不进入招聘或人才排名</li>
+<li><strong>采购与知识产权边界</strong>：原型采购 ≠ 采购授权 ≠ 部署授权；原型、有限试用、采购、常态部署逐级独立书面授权；知识产权边界保持 not_cleared，不写成已解决</li>
+<li><strong>公共收益回流</strong>：任务结果、失败归档与独立复测结论以可理解形式回到沿线普通使用者，不依赖投资额；反馈只作下一轮问题输入</li>
+<li><strong>四轴分离</strong>：运行状态（普通/验证/故障/恢复）、成熟度（G0–G3）、授权范围、服务状态分列，一个状态字段不得同时表示测试、授权、采购与部署</li>
+</ul>
+<h3>指标与验收</h3>
+<p>十项决定指标全部保持 unknown 或 0，禁止用字段覆盖率、概念数量或机器 PASS 冒充现实成效：</p>
+<div class="proposal-table"><table><thead><tr><th>指标</th><th>设计期状态</th><th>分母</th><th>证明上限</th></tr></thead><tbody><tr><td>公共任务可验证度</td><td>unknown</td><td>同任务同人群同时段</td><td>现场观察 + 独立复测</td></tr><tr><td>小团队参与比例</td><td>unknown</td><td>同任务同人群同时段</td><td>现场观察 + 责任记录</td></tr><tr><td>独立复测覆盖</td><td>unknown</td><td>通过证据门的任务总数</td><td>独立复测记录</td></tr><tr><td>任务退出率</td><td>0</td><td>进入准入队列的任务总数</td><td>退出事件记录</td></tr><tr><td>专业服务可达性</td><td>unknown</td><td>需要专业服务的使用者数</td><td>现场或受控测试</td></tr><tr><td>公共收益交付状态</td><td>unknown</td><td>结果回流主张总数</td><td>交付责任记录</td></tr><tr><td>高校课程真实参与状态</td><td>unknown（0 书面确认）</td><td>宣称参与的高校课程数</td><td>书面确认文件</td></tr><tr><td>知识产权争议数</td><td>0</td><td>任务与原型条目总数</td><td>争议处理记录</td></tr><tr><td>失败项目公开率</td><td>unknown</td><td>已退出或退役任务数</td><td>责任角色确认</td></tr><tr><td>机构书面确认状态</td><td>0</td><td>被引用外部机构总数</td><td>书面确认文件</td></tr></tbody></table></div>
+<h3>三处重点区的差异化表达</h3>
+<div class="proposal-table"><table><thead><tr><th>重点区</th><th>原型角色</th><th>公共任务经济表达</th></tr></thead><tbody><tr><td>众智园 VERIFY</td><td>平行验证庭</td><td>独立复测门与设备隔离区承载任务验证，不部署常态服务</td></tr><tr><td>原点社区 CO-CREATE</td><td>一街两院四节点</td><td>公共收益回流板承载无屏反馈，不收集多余个人信息</td></tr><tr><td>大钟寺 PUBLISH</td><td>四象限步行 + 一厅一台</td><td>一厅作为任务发布与人工服务节点，非 AI 强制入口</td></tr></tbody></table></div>
+<h3>风险预演与停止恢复</h3>
+<ul>
+<li><strong>R01 任务被大企业垄断</strong>：发现后立即 fail-closed，活动热度与已投入成本不能覆盖停止条件；恢复普通路径与人工服务后再讨论修订</li>
+<li><strong>R02 公共问题沦为招商包装</strong>：不美化图件掩盖问题；停止后核对空间或服务损伤，记录责任角色与需外部确认的材料</li>
+<li><strong>R05 知识产权边界不清</strong>：停止使用未清权资产，恢复普通路径；独立逐文件审计（当前 0）完成前不写为已解决</li>
+<li><strong>R08 外部机构被写成已承诺</strong>：撤回未确认表述；0 个书面确认前，企业、高校、服务商一律为建议角色或待确认角色</li>
+</ul>
+<h3>图件交付</h3>
+<p><code>industry-public-value-state.{svg,png}</code> 双语产业—公共价值状态图通过图面 QA：A 公共任务生命周期 / B 四轴分离 / C 授权阶梯 / D 公共收益回流，全部标注 G0 概念状态、外部机构 0 书面确认与 provisional geometry 边界。</p>
+<figure class="proposal-figure"><img src="../assets/figures/industry-public-value-state.png" alt="公共任务经济：问题质量门、四轴分离、授权阶梯与公共收益回流（G0 概念；任务、复测、采购、部署与书面确认均为 0）"><figcaption>公共任务经济：问题质量门、四轴分离、授权阶梯与公共收益回流（G0 概念；任务、复测、采购、部署与书面确认均为 0）</figcaption></figure>
+<h3>继承与冻结</h3>
+<p>geometry、既有 SCENE/JZ/T 编号、八个项目、全部 G0、临时边界和 <code>not_fully_cleared</code> 均不变。责任主体（发布、准入、复测、停止、恢复）均为角色待确认；现实任务、小团队、复测、退出事件和书面确认全部为 0。</p>
 <p>[back to top](#ai-朝圣铁轨新生带)</p>
 <h2>参考资料</h2>
 <p>项目主依据：<sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509" title="来源：DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509">来源</sup> 北京市规划自然资源委征集公告；<sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="AGENT-TASKBOOK" title="来源：AGENT-TASKBOOK">来源</sup> 仓库智能体任务书；<sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="SITE-PACKAGE" title="来源：SITE-PACKAGE">来源</sup> 场地包；<sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="SOURCE-REGISTRY" title="来源：SOURCE-REGISTRY">来源</sup> 资料登记；<sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="PROCESSED-FACT-PACK" title="来源：PROCESSED-FACT-PACK">来源</sup> 处理导航。临时空间依据为 <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="DATA-SRC-PROVISIONAL-BOUNDARIES-20260605" title="来源：DATA-SRC-PROVISIONAL-BOUNDARIES-20260605">来源</sup>，仅用于生成、展示和非正式复核。</p>
