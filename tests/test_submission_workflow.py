@@ -32,6 +32,7 @@ from validate_submission import (  # noqa: E402
     validate_submission,
 )
 from github_pr_validation import (  # noqa: E402
+    authorized_legacy_submission_dirs,
     base_requires_persisted_readiness,
     COMMENT_MARKER,
     GitHubClient,
@@ -948,6 +949,58 @@ class ManifestHydrationTests(unittest.TestCase):
                 "alice",
             )
         )
+        self.assertTrue(
+            is_review_queue_candidate(
+                ["submissions/legacy/design/proposal.md"],
+                "current",
+                {"submissions/legacy/design"},
+            )
+        )
+        self.assertFalse(
+            is_review_queue_candidate(
+                ["submissions/legacy/other/proposal.md"],
+                "current",
+                {"submissions/legacy/design"},
+            )
+        )
+
+    def test_owner_alias_requires_stable_user_id_current_login_and_exact_package(self) -> None:
+        expected = {
+            "submissions/zymk8353/jingzhang-safe-return-line",
+            "submissions/zymk8353/jingzhang-safe-charge-line",
+            "submissions/zymk8353/jingzhang-ready-aed-line",
+            "submissions/zymk8353/jingzhang-level-access-line",
+        }
+        self.assertEqual(
+            expected,
+            authorized_legacy_submission_dirs(REPO_ROOT, 51290995, "zyaoii"),
+        )
+        self.assertEqual(set(), authorized_legacy_submission_dirs(REPO_ROOT, 7, "zyaoii"))
+        self.assertEqual(
+            set(), authorized_legacy_submission_dirs(REPO_ROOT, 51290995, "attacker")
+        )
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            policy = root / "data" / "participant_owner_aliases.json"
+            policy.parent.mkdir()
+            policy.write_text(
+                json.dumps(
+                    {
+                        "aliases": [
+                            {
+                                "github_user_id": 51290995,
+                                "current_login": "zyaoii",
+                                "legacy_login": "legacy",
+                                "legacy_submission_dirs": ["submissions/other/package"],
+                            }
+                        ]
+                    }
+                ),
+                encoding="utf-8",
+            )
+            self.assertEqual(
+                set(), authorized_legacy_submission_dirs(root, 51290995, "zyaoii")
+            )
         self.assertFalse(
             is_review_queue_candidate(
                 [
@@ -1818,6 +1871,29 @@ class SubmissionWorkflowTests(unittest.TestCase):
             report = validate_submission(root, "alice", [rel])
             self.assertFalse(report.ok)
             self.assertIn("must exactly match", "\n".join(report.errors))
+
+    def test_verified_rename_alias_can_only_maintain_listed_legacy_package(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            base = "submissions/legacy/known-package"
+            changed = self.write_minimal_ai_package(root, base)
+            proposal = root / base / "proposal.md"
+            proposal.write_text(
+                proposal.read_text(encoding="utf-8").replace(
+                    'author_github: "alice"', 'author_github: "legacy"'
+                ),
+                encoding="utf-8",
+            )
+            allowed = validate_submission(
+                root,
+                "current",
+                changed,
+                authorized_legacy_submission_dirs={base},
+            )
+            denied = validate_submission(root, "current", changed)
+
+        self.assertNotIn("must exactly match", "\n".join(allowed.errors))
+        self.assertIn("must exactly match", "\n".join(denied.errors))
 
     def test_submission_owner_casing_must_match_github_login(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:

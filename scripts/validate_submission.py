@@ -2472,6 +2472,7 @@ def validate_proposal_file(
     proposal_path: str,
     pr_author: str,
     path_author: str,
+    legacy_owner_authorized: bool = False,
 ) -> None:
     full_path = repo_root / proposal_path
     try:
@@ -2491,7 +2492,12 @@ def validate_proposal_file(
             report.add_error(f"{proposal_path}: missing front matter field `{key}`")
 
     author = metadata.get("author_github", "")
-    if author and author.lower() != pr_author.lower() and not report.maintainer_bypass:
+    if (
+        author
+        and author.lower() != pr_author.lower()
+        and not report.maintainer_bypass
+        and not legacy_owner_authorized
+    ):
         report.add_error(
             f"{proposal_path}: author_github `{author}` must match PR author `{pr_author}`"
         )
@@ -2794,6 +2800,7 @@ def validate_submission(
     allow_pending_self_check: bool = False,
     required_readiness_contract_dirs: Iterable[str] = (),
     strict_manifest_paths: Iterable[str] = (),
+    authorized_legacy_submission_dirs: Iterable[str] = (),
 ) -> ValidationReport:
     report = ValidationReport()
     repo_root = repo_root.resolve()
@@ -2807,6 +2814,10 @@ def validate_submission(
     }
     report.strict_manifest_paths = {
         normalize_changed_path(path) for path in strict_manifest_paths
+    }
+    authorized_legacy_dirs = {
+        normalize_changed_path(path).rstrip("/")
+        for path in authorized_legacy_submission_dirs
     }
 
     if not pr_author or not GITHUB_LOGIN_RE.match(pr_author):
@@ -2866,7 +2877,8 @@ def validate_submission(
                     f"{path}: participant PRs may only change submissions/{pr_author}/"
                 )
                 continue
-            if parts[1] != pr_author:
+            proposal_dir = "/".join(parts[:3]) if len(parts) >= 3 else ""
+            if parts[1] != pr_author and proposal_dir not in authorized_legacy_dirs:
                 report.add_error(
                     f"{path}: submission directory `{parts[1]}` must exactly match "
                     f"GitHub PR author `{pr_author}`, including letter case"
@@ -3050,7 +3062,15 @@ def validate_submission(
         if not (repo_root / proposal_path).exists():
             continue
         path_author = proposal_path.split("/")[1]
-        validate_proposal_file(report, repo_root, proposal_path, pr_author, path_author)
+        proposal_dir = str(PurePosixPath(proposal_path).parent)
+        validate_proposal_file(
+            report,
+            repo_root,
+            proposal_path,
+            pr_author,
+            path_author,
+            proposal_dir in authorized_legacy_dirs,
+        )
 
     for proposal_dir in sorted(ai_package_dirs):
         if proposal_dir in unsafe_submission_dirs:
