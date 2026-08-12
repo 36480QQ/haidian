@@ -2097,6 +2097,36 @@
           ]
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "id": "CUT-002-BB",
+      "properties": {
+        "id": "CUT-002-BB",
+        "kind": "section_cut",
+        "label": "B-B"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.34288,
+            39.9885
+          ],
+          [
+            116.35212,
+            39.9885
+          ]
+        ]
+      }
     }
-  ]
+  ],
+  "section": {
+    "id": "CUT-002-BB",
+    "label": "B-B",
+    "name_zh": "原点开源核典型断面",
+    "theme": "campus_convert_street",
+    "note_zh": "近校界面 | 转化街 | 发布庭 | 人才服务 | 慢行",
+    "levels_note": "relative schematic only; not survey elevations"
+  }
 }

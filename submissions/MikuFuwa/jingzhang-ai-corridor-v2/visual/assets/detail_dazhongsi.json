@@ -1845,6 +1845,36 @@
           ]
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "id": "CUT-003-CC",
+      "properties": {
+        "id": "CUT-003-CC",
+        "kind": "section_cut",
+        "label": "C-C"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.34304,
+            39.946946280000006
+          ],
+          [
+            116.35396,
+            39.946893720000006
+          ]
+        ]
+      }
     }
-  ]
+  ],
+  "section": {
+    "id": "CUT-003-CC",
+    "label": "C-C",
+    "name_zh": "大钟寺体验核典型断面",
+    "theme": "station_city_pocket",
+    "note_zh": "站城接驳 | 口袋广场 | 路演界面 | 零售混合 | 慢行",
+    "levels_note": "relative schematic only; not survey elevations"
+  }
 }

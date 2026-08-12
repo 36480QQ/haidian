@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>京张智脊·开源协议脊（v2.3） - proposal report</title>
+<title>京张智脊·开源协议脊（v2.4） - proposal report</title>
 <style>
 :root {
   --ink: #172033;
@@ -111,11 +111,11 @@ code {
 <body>
 <main>
 <section class="hero">
-<h1>京张智脊·开源协议脊（v2.3）</h1>
-<p class="summary">v2.3 形态关：街坊拼贴用地（非通长彩带）、三核簇群建筑、命名慢行断点、五图/A0/A3 真重渲且哈希验收；Open Protocol Spine 机制保持；provisional + FAR unknown + medium。</p>
+<h1>京张智脊·开源协议脊（v2.4）</h1>
+<p class="summary">v2.4 形态关：街坊拼贴（v2.4 二次碎化）用地（非通长彩带）、三核簇群建筑、命名慢行断点、五图/A0/A3 真重渲且哈希验收；Open Protocol Spine 机制保持；provisional + FAR unknown + medium。</p>
 <p class="translation-link"><a href="proposal.en.html">Read in English</a></p>
 </section>
-<h1>京张智脊·开源协议脊（v2.3）</h1>
+<h1>京张智脊·开源协议脊（v2.4）</h1>
 <h2>设计依据与资料清单</h2>
 <p>本 formal 包以海淀分局资格预审公告与仓库 <code>brief/site-package</code> 为机器可读依据 <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="OFFICIAL-ANNOUNCEMENT" title="来源：OFFICIAL-ANNOUNCEMENT">来源</sup> <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="SITE-PACKAGE" title="来源：SITE-PACKAGE">来源</sup>。agent 任务来自开源征集任务书 <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="AGENT-TASKBOOK" title="来源：AGENT-TASKBOOK">来源</sup>。资料用途边界以登记表区分 formal / background / provisional <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="SOURCE-REGISTRY" title="来源：SOURCE-REGISTRY">来源</sup>。</p>
 <p>坐标与面积路径必须分开表述：GeoJSON <strong>存储</strong>为 EPSG:4326；面积与比例一律经 <strong>EPSG:4548</strong> 投影复算，并写入要素 <code>crs_note</code> / <code>equal_area_projection</code> 字段 <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="metrics_recalculation" title="深度：metrics_recalculation">深度</sup>。当前边界为 provisional，不得作为 official redline 或精确审批面积 <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="BOUNDARY-SOURCE" title="来源：BOUNDARY-SOURCE">来源</sup>。边界要素见 <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/site_boundary.geojson#SITE-001" title="空间数据：geometry/site_boundary.geojson#SITE-001">空间数据</sup>。</p>
@@ -250,6 +250,10 @@ code {
 <li>docs/formal-submission-guide.md 与 docs/terminology-glossary.md</li>
 <li>metrics.json / compliance_matrix.json / standard_matrix.json / design_depth_matrix.json <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="SITE-PACKAGE" title="来源：SITE-PACKAGE">来源</sup></li>
 </ul>
+<h3>三区典型断面（v2.4）</h3>
+<p>三重点区均给出<strong>平面剖切线 + 相对标高断面</strong>，互指见 <code>assets/figures/key-areas.png</code>、<code>assets/figures/key-area-sections.png</code> 与 <code>visual/assets/section_cuts.json</code>：</p>
+<div class="proposal-table"><table><thead><tr><th>区</th><th>剖切</th><th>断面主题（左→右）</th><th>抓手</th></tr></thead><tbody><tr><td>众智园·验证核</td><td>A-A</td><td>研发界面 | 生活缓冲 | 测试沙盒 | 绿脊 | 积极首层</td><td>隔离带厚度与可回退试验</td></tr><tr><td>原点·开源核</td><td>B-B</td><td>近校界面 | 转化街 | 发布庭 | 人才服务 | 慢行</td><td>校园—城市转化缝合</td></tr><tr><td>大钟寺·体验核</td><td>C-C</td><td>站城接驳 | 口袋广场 | 路演界面 | 零售混合 | 慢行</td><td>站城进深优先于新建快速通道</td></tr></tbody></table></div>
+<p>断面为<strong>相对标高示意</strong>，非测绘绝对高程；不得解读为审批竖向控制。</p>
 </main>
 </body>
 </html>

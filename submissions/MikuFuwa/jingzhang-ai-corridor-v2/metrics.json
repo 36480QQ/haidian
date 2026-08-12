@@ -14,9 +14,7 @@
       ],
       "formula": "polygon_area(site)",
       "confidence": "medium",
-      "assumptions": [
-        "provisional boundary"
-      ]
+      "assumptions": []
     },
     "building_footprint_area_sqm": {
       "status": "known",
@@ -27,9 +25,7 @@
       ],
       "formula": "area(unary_union(buildings))",
       "confidence": "medium",
-      "assumptions": [
-        "concept footprints"
-      ]
+      "assumptions": []
     },
     "green_space_area_sqm": {
       "status": "known",
@@ -125,7 +121,7 @@
     },
     "land_use_unit_count": {
       "status": "known",
-      "value": 50,
+      "value": 100,
       "unit": "count",
       "source_files": [
         "geometry/land_use.geojson"
@@ -202,7 +198,7 @@
     },
     "land_use_05_area_sqm": {
       "status": "known",
-      "value": 1965674.102,
+      "value": 1965675.135,
       "unit": "sqm",
       "source_files": [
         "geometry/land_use.geojson"
@@ -213,7 +209,7 @@
     },
     "land_use_0702_area_sqm": {
       "status": "known",
-      "value": 785519.326,
+      "value": 784711.455,
       "unit": "sqm",
       "source_files": [
         "geometry/land_use.geojson"
@@ -224,7 +220,7 @@
     },
     "land_use_0802_area_sqm": {
       "status": "known",
-      "value": 3062356.674,
+      "value": 3124992.335,
       "unit": "sqm",
       "source_files": [
         "geometry/land_use.geojson"
@@ -235,7 +231,7 @@
     },
     "land_use_0803_area_sqm": {
       "status": "known",
-      "value": 1446538.814,
+      "value": 1446538.909,
       "unit": "sqm",
       "source_files": [
         "geometry/land_use.geojson"
@@ -246,7 +242,7 @@
     },
     "land_use_0804_area_sqm": {
       "status": "known",
-      "value": 661119.805,
+      "value": 661119.334,
       "unit": "sqm",
       "source_files": [
         "geometry/land_use.geojson"
@@ -257,7 +253,7 @@
     },
     "land_use_1401_area_sqm": {
       "status": "known",
-      "value": 2522353.157,
+      "value": 2572126.356,
       "unit": "sqm",
       "source_files": [
         "geometry/land_use.geojson"
@@ -268,7 +264,7 @@
     },
     "land_use_1403_area_sqm": {
       "status": "known",
-      "value": 969280.917,
+      "value": 857680.324,
       "unit": "sqm",
       "source_files": [
         "geometry/land_use.geojson"

@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>JingZhang Open Spine · Protocol Edition (v2.3) - proposal report</title>
+<title>JingZhang Open Spine · Protocol Edition (v2.4) - proposal report</title>
 <style>
 :root {
   --ink: #172033;
@@ -111,11 +111,11 @@ code {
 <body>
 <main>
 <section class="hero">
-<h1>JingZhang Open Spine · Protocol Edition (v2.3)</h1>
-<p class="summary">v2.3 morphology pass: mosaic land-use blocks (not vertical color bands), core-clustered buildings, named mobility breaks, figures/A0/A3 re-rendered with hash veto; Open Protocol Spine retained; provisional + FAR unknown + medium.</p>
+<h1>JingZhang Open Spine · Protocol Edition (v2.4)</h1>
+<p class="summary">v2.4 morphology pass: mosaic land-use blocks (not vertical color bands), core-clustered buildings, named mobility breaks, figures/A0/A3 re-rendered with hash veto; Open Protocol Spine retained; provisional + FAR unknown + medium.</p>
 <p class="translation-link"><a href="proposal.html">阅读中文版本</a></p>
 </section>
-<h1>JingZhang Open Spine · Protocol Edition (v2.3)</h1>
+<h1>JingZhang Open Spine · Protocol Edition (v2.4)</h1>
 <h2>Design Basis and Source List</h2>
 <p>This formal package is based on the Haidian pre-qualification announcement and the machine-readable site package <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="OFFICIAL-ANNOUNCEMENT" title="Source: OFFICIAL-ANNOUNCEMENT">Source</sup> <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="SITE-PACKAGE" title="Source: SITE-PACKAGE">Source</sup>. Agent tasks follow the open-call taskbook <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="AGENT-TASKBOOK" title="Source: AGENT-TASKBOOK">Source</sup>. Source fitness follows the registry <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="SOURCE-REGISTRY" title="Source: SOURCE-REGISTRY">Source</sup>.</p>
 <p>Coordinates are stored in EPSG:4326; areas are recomputed via EPSG:4548, recorded in <code>crs_note</code> / <code>equal_area_projection</code> <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="metrics_recalculation" title="Depth: metrics_recalculation">Depth</sup>. Boundaries are provisional, not official redlines <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="BOUNDARY-SOURCE" title="Source: BOUNDARY-SOURCE">Source</sup> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/site_boundary.geojson#SITE-001" title="Spatial data: geometry/site_boundary.geojson#SITE-001">Spatial data</sup>.</p>
@@ -196,6 +196,10 @@ code {
 <li>visual/assets scenario/detail/topology assets</li>
 <li>machine indexes in sources/metrics/matrices <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="SITE-PACKAGE" title="Source: SITE-PACKAGE">Source</sup></li>
 </ul>
+<h3>Key-area typical sections (v2.4)</h3>
+<p>Each key area has a <strong>plan cut line + relative-level section</strong>, cross-referenced in <code>assets/figures/key-areas.png</code>, <code>assets/figures/key-area-sections.png</code>, and <code>visual/assets/section_cuts.json</code>:</p>
+<div class="proposal-table"><table><thead><tr><th>Area</th><th>Cut</th><th>Section theme (L→R)</th><th>Move</th></tr></thead><tbody><tr><td>Zhongzhiyuan verification core</td><td>A-A</td><td>R&amp;D frontage | living buffer | test sandbox | green spine | active edge</td><td>Isolation depth + rollback pilots</td></tr><tr><td>Origin open-source core</td><td>B-B</td><td>Campus edge | conversion street | launch court | talent services | slow mobility</td><td>Campus–city conversion seam</td></tr><tr><td>Dazhongsi experience core</td><td>C-C</td><td>Station link | pocket plaza | pitch frontage | retail mix | slow mobility</td><td>Station-city depth over new express links</td></tr></tbody></table></div>
+<p>Sections are <strong>relative schematics</strong>, not surveyed elevations; not regulatory vertical controls.</p>
 </main>
 </body>
 </html>

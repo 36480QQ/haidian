@@ -1,18 +1,18 @@
 ---
-title: "京张智脊·开源协议脊（v2.3）"
+title: "京张智脊·开源协议脊（v2.4）"
 author_github: "MikuFuwa"
 language: "zh"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "v2.3 形态关：街坊拼贴用地（非通长彩带）、三核簇群建筑、命名慢行断点、五图/A0/A3 真重渲且哈希验收；Open Protocol Spine 机制保持；provisional + FAR unknown + medium。"
+summary: "v2.4 形态关：街坊拼贴（v2.4 二次碎化）用地（非通长彩带）、三核簇群建筑、命名慢行断点、五图/A0/A3 真重渲且哈希验收；Open Protocol Spine 机制保持；provisional + FAR unknown + medium。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review", "robot-delivery-low-speed"]
-iteration: "v2.3"
+iteration: "v2.4"
 ---
 
-# 京张智脊·开源协议脊（v2.3）
+# 京张智脊·开源协议脊（v2.4）
 
 ## 设计依据与资料清单
 
@@ -277,3 +277,16 @@ OS 表在原有主体/依赖/空间 id/KPI/回退基础上，补齐 **enablers�
 - visual/assets/scenario_nodes.json、detail_*.json、topology_check.json  
 - docs/formal-submission-guide.md 与 docs/terminology-glossary.md  
 - metrics.json / compliance_matrix.json / standard_matrix.json / design_depth_matrix.json [source:SITE-PACKAGE]
+
+### 三区典型断面（v2.4）
+
+三重点区均给出**平面剖切线 + 相对标高断面**，互指见 `assets/figures/key-areas.png`、`assets/figures/key-area-sections.png` 与 `visual/assets/section_cuts.json`：
+
+| 区 | 剖切 | 断面主题（左→右） | 抓手 |
+| --- | --- | --- | --- |
+| 众智园·验证核 | A-A | 研发界面 \| 生活缓冲 \| 测试沙盒 \| 绿脊 \| 积极首层 | 隔离带厚度与可回退试验 |
+| 原点·开源核 | B-B | 近校界面 \| 转化街 \| 发布庭 \| 人才服务 \| 慢行 | 校园—城市转化缝合 |
+| 大钟寺·体验核 | C-C | 站城接驳 \| 口袋广场 \| 路演界面 \| 零售混合 \| 慢行 | 站城进深优先于新建快速通道 |
+
+断面为**相对标高示意**，非测绘绝对高程；不得解读为审批竖向控制。
+

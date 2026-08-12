@@ -13,7 +13,8 @@
       "drawing_refs": [
         "drawings/a0-boards.pdf",
         "assets/figures/mobility-bluegreen.png",
-        "drawings/a3-booklet.pdf"
+        "drawings/a3-booklet.pdf",
+        "assets/figures/land-use-structure.png"
       ],
       "geometry_refs": [
         "geometry/constraints.geojson",
@@ -54,7 +55,10 @@
         "drawings/a0-boards.pdf",
         "drawings/a3-booklet.pdf",
         "assets/figures/site-overview.png",
-        "assets/figures/land-use-structure.png"
+        "assets/figures/land-use-structure.png",
+        "assets/figures/key-areas.png",
+        "assets/figures/key-area-sections.png",
+        "visual/assets/section_cuts.json"
       ],
       "geometry_refs": [
         "geometry/site_boundary.geojson",
@@ -261,7 +265,10 @@
         "drawings/a0-boards.pdf",
         "drawings/a3-booklet.pdf",
         "assets/figures/site-overview.png",
-        "assets/figures/land-use-structure.png"
+        "assets/figures/land-use-structure.png",
+        "assets/figures/key-areas.png",
+        "assets/figures/key-area-sections.png",
+        "visual/assets/section_cuts.json"
       ],
       "geometry_refs": [
         "geometry/buildings.geojson",
@@ -425,7 +432,10 @@
       "drawing_refs": [
         "drawings/a0-boards.pdf",
         "assets/figures/key-areas.png",
-        "drawings/a3-booklet.pdf"
+        "drawings/a3-booklet.pdf",
+        "assets/figures/key-area-sections.png",
+        "visual/assets/section_cuts.json",
+        "assets/figures/land-use-structure.png"
       ],
       "geometry_refs": [
         "geometry/key_areas.geojson",
@@ -550,7 +560,8 @@
       "drawing_refs": [
         "assets/figures/metrics-evidence.png",
         "drawings/a0-boards.pdf",
-        "drawings/a3-booklet.pdf"
+        "drawings/a3-booklet.pdf",
+        "assets/figures/land-use-structure.png"
       ],
       "geometry_refs": [
         "geometry/site_boundary.geojson",

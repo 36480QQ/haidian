@@ -1,18 +1,18 @@
 ---
-title: "JingZhang Open Spine · Protocol Edition (v2.3)"
+title: "JingZhang Open Spine · Protocol Edition (v2.4)"
 author_github: "MikuFuwa"
 language: "en"
 translation_of: "proposal.md"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "v2.3 morphology pass: mosaic land-use blocks (not vertical color bands), core-clustered buildings, named mobility breaks, figures/A0/A3 re-rendered with hash veto; Open Protocol Spine retained; provisional + FAR unknown + medium."
+summary: "v2.4 morphology pass: mosaic land-use blocks (not vertical color bands), core-clustered buildings, named mobility breaks, figures/A0/A3 re-rendered with hash veto; Open Protocol Spine retained; provisional + FAR unknown + medium."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review", "robot-delivery-low-speed"]
-iteration: "v2.3"
+iteration: "v2.4"
 ---
 
-# JingZhang Open Spine · Protocol Edition (v2.3)
+# JingZhang Open Spine · Protocol Edition (v2.4)
 
 ## Design Basis and Source List
 
@@ -175,3 +175,16 @@ Risks: provisional precision, ownership, utilities, heritage, event noise, priva
 - local standards references  
 - visual/assets scenario/detail/topology assets  
 - machine indexes in sources/metrics/matrices [source:SITE-PACKAGE]
+
+### Key-area typical sections (v2.4)
+
+Each key area has a **plan cut line + relative-level section**, cross-referenced in `assets/figures/key-areas.png`, `assets/figures/key-area-sections.png`, and `visual/assets/section_cuts.json`:
+
+| Area | Cut | Section theme (L→R) | Move |
+| --- | --- | --- | --- |
+| Zhongzhiyuan verification core | A-A | R&D frontage \| living buffer \| test sandbox \| green spine \| active edge | Isolation depth + rollback pilots |
+| Origin open-source core | B-B | Campus edge \| conversion street \| launch court \| talent services \| slow mobility | Campus–city conversion seam |
+| Dazhongsi experience core | C-C | Station link \| pocket plaza \| pitch frontage \| retail mix \| slow mobility | Station-city depth over new express links |
+
+Sections are **relative schematics**, not surveyed elevations; not regulatory vertical controls.
+
