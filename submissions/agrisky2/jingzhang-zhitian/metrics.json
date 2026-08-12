@@ -113,12 +113,12 @@
     },
     "user_personas_count": {
       "status": "known",
-      "value": 5,
+      "value": 8,
       "unit": "count",
       "source_files": [
         "proposal.md"
       ],
-      "formula": "manual count of personas",
+      "formula": "manual count of personas in proposal (expanded from 5 to 8 with inclusion personas)",
       "confidence": "high",
       "assumptions": []
     },
@@ -261,6 +261,48 @@
       "assumptions": [
         "Design concept green space"
       ]
+    },
+    "accessibility_coverage_ratio": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "accessible_path_length / total_path_length",
+      "confidence": "low",
+      "assumptions": [
+        "Concept target: 100% in key areas; requires professional accessibility audit"
+      ],
+      "reason": "Concept target defined in proposal.md §8.4 inclusion indicators; value pending operational plan and survey data"
+    },
+    "community_farming_participants_annual": {
+      "status": "unknown",
+      "value": null,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "annual registered community farming participants",
+      "confidence": "low",
+      "assumptions": [
+        "Concept target: >=2000; requires operational plan"
+      ],
+      "reason": "Concept target defined in proposal.md §8.4 inclusion indicators; value pending operational plan and survey data"
+    },
+    "k12_education_visits_annual": {
+      "status": "unknown",
+      "value": null,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "annual K-12 student visits to science education sites",
+      "confidence": "low",
+      "assumptions": [
+        "Concept target: >=10000; requires education partnership"
+      ],
+      "reason": "Concept target defined in proposal.md §8.4 inclusion indicators; value pending operational plan and survey data"
     }
   }
 }
