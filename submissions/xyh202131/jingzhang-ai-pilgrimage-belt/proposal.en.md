@@ -565,6 +565,67 @@ The rights matrix strictly separates “reviewable inside the repository” from
 | Release of OSM, fonts, logo, software, or generated assets | Blocked pending component audit | ODbL, font-embedding, trademark, and tool-output terms audit |
 
 All current AI scenarios are in G0 conceptual status. The eight projects and four-season events are proposals: they are not approved, built, or operating, and no organization has committed to them. Entry to a higher operating gate may be discussed only after statutory approval, responsible entities, professional review, public participation, funding and operations, and incident response are all defined.
+## The Century-Time Museum: A Verifiable, Correctable, Screen-free Time Education Line
+
+> This section is the Round 8 (JZ-FUTURE-07) cultural-narrative increment, inheriting prior public-rights, evidence-type, and failure-writeback contracts; no new governance brand or duplicate failure siding.
+
+### Strategic Proposition
+
+Juxtapose the Jing-Zhang railway's survey, standards, signals, maintenance, and public memory with AI's training, validation, failure, correction, and retirement as a city time-education line that does not worship technology.
+
+The core of this proposition is not an exhibition but a **correctable time-education line**—every historical fact, every archive, every generated content carries a source grade and allowable use; any disputed content has a clear flow of stop, takedown, correct, retain version, recover; all nodes require no account, QR code, screen, or AI.
+
+### Cultural Content Source and Rights Boundary
+
+This round adds `century-time-museum-contract.json` (JZ-TIME-MUSEUM-G0-V1), organizing:
+
+- **Century timeline**: five historical objects (1905–1909 survey & construction, 1909 full-line opening, 2019 Beijing–Zhangjiakou HSR, 2023+ heritage park phased opening, annual evidence update mechanism), each annotated with source grade, allowable use, and unknowns
+- **Source-grade table**: seven typed evidence anchors — official_archive / in_package_source / public_reporting / public_reporting_pending_archive / osm_background / generated_content / oral_history_pending
+- **Oral-history consent template**: pre-collection contract state; consent can be withdrawn at any time, content removed from public side after withdrawal, version retained for internal minimum audit only
+- **Five-step dispute-correction flow**: stop → takedown → correct → retain version → recover; independent review + public notice required before recovery, otherwise stay down or retire actively
+- **Screen-free node chain**: origin sign → atlas sign → evidence wall; no account, QR code, screen, or AI required
+
+### Metrics and Acceptance
+
+Ten cultural metrics remain unknown or 0; field coverage must not be passed off as real-world achievement:
+
+| Metric | Design Status | Denominator | Proof Limit |
+|---|---|---|---|
+| Source verifiability rate | unknown | Same-task, same-group, same-period | Field observation + independent retest |
+| Uncleared content count | unknown | Same-task, same-group, same-period | Independent file-level audit |
+| Generated-content label coverage | unknown | Total generated-content items | Manual check + sampling audit |
+| Dispute-handling time | unknown | No real dispute events | Process log + timestamp |
+| Oral-history consent rate | 0 (template only) | Total oral-history items collected | Consent record + withdrawal record |
+| Multilingual concept consistency | unknown | Total concept pairs | Bilingual comparison + professional review |
+| Screenless tour completion rate | unknown | Screenless-path users | Field or controlled test |
+| Child comprehension (pending) | unknown | School-age user sample | Educator assessment |
+| Annual retired-content count | 0 | Annual review cycle | Retirement list + receipt |
+| Independent historical review status | unknown | Required reviewers | Independent reviewer signature |
+
+### Differentiated Expression Across Three Key Areas
+
+| Key Area | Prototype Role | Time-Museum Expression |
+|---|---|---|
+| Zhongzhiyuan VERIFY | Parallel verification court | Equipment isolation belt + visible manual handoff window in source-grade display |
+| Origin Community CO-CREATE | One street, two courtyards, four nodes | Screen-free co-learning node carrying multilingual station sign and oral-history consent display |
+| Dazhongsi PUBLISH | Four-quadrant walking + one hall, one platform | One hall as staffed service and information-correction node, not an AI-mandatory entry |
+
+### Risk Preview and Stop/Recover
+
+- **R01 History metaphor passed as fact**: Immediate fail-closed upon discovery; switch to staffed or ordinary use; stop-to-recover requires independent review
+- **R02 Using uncleared images/text**: Remove temporary equipment, restore ordinary paths, notify affected persons, minimize event-evidence retention
+- **R03 Generated content disguised as archival material**: Generated content must carry visible label; removable anytime; after takedown, version retained, not auto-deleted
+
+### Figure Delivery
+
+`century-timeline.{svg,png}` bilingual time figure passed figure QA: A twin-track atlas / B source-grade table / C dispute-correction flow, all annotated G0 conceptual status and provisional geometry boundary.
+
+### Inheritance and Freeze
+
+Geometry, existing SCENE/JZ/T IDs, eight projects, all G0 status, provisional boundaries, and `not_fully_cleared` remain unchanged. Official archives, confirmed accountable operators, independent retests, approval, or operating results remain 0.
+
+[back to top](#ai-pilgrimage-belt)
+
 
 ## References
 
