@@ -536,6 +536,46 @@
       "assumptions": [
         "仅已公布的部分地块条件，不覆盖全部地块，不构成整带强度结论。"
       ]
+    },
+    "building_count_existing": {
+      "status": "known",
+      "value": 1286,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/osm-buildings.json"
+      ],
+      "formula": "count(OSM building features within submitted site boundary, representative-point containment)",
+      "confidence": "medium",
+      "assumptions": [
+        "OSM 概念级量测，非测绘成果；数量与面积随 OSM 数据更新而变化，仅作现状建成密度量级参照。"
+      ]
+    },
+    "building_footprint_existing_sqm": {
+      "status": "known",
+      "value": 1960316,
+      "unit": "sqm",
+      "source_files": [
+        "visual/assets/osm-buildings.json"
+      ],
+      "formula": "sum(polygon_area(OSM building features within submitted site boundary, EPSG:4548))",
+      "confidence": "medium",
+      "assumptions": [
+        "OSM 概念级量测，非测绘成果；不构成现状测绘或权属底数。"
+      ]
+    },
+    "building_coverage_ratio": {
+      "status": "known",
+      "value": 0.1718,
+      "unit": "ratio",
+      "source_files": [
+        "visual/assets/osm-buildings.json",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "building_footprint_existing_sqm / site_area_sqm",
+      "confidence": "medium",
+      "assumptions": [
+        "OSM 概念级量测，非测绘成果；覆盖率仅作量级参照。"
+      ]
     }
   }
 }

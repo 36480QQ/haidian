@@ -73,6 +73,7 @@
         "submissions/arccat-114/jingzhang-switch/standard_matrix.json",
         "submissions/arccat-114/jingzhang-switch/visual/assets/governance-ledger.json",
         "submissions/arccat-114/jingzhang-switch/visual/assets/official-records.json",
+        "submissions/arccat-114/jingzhang-switch/visual/assets/osm-buildings.json",
         "submissions/arccat-114/jingzhang-switch/visual/assets/switch-protocol.json",
         "submissions/arccat-114/jingzhang-switch/visual/assets/verify_switch_protocol.js",
         "submissions/arccat-114/jingzhang-switch/visual/index.en.html",
@@ -81,7 +82,7 @@
       "ai_package_stages": {
         "submissions/arccat-114/jingzhang-switch": "formal"
       },
-      "total_bytes": 6415447,
+      "total_bytes": 6687924,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -156,15 +157,15 @@
       "summary": {
         "standard_matrix_items": 9,
         "design_depth_items": 15,
-        "known_metric_refs_required": 40,
+        "known_metric_refs_required": 43,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 27,
+          "source": 28,
           "standard": 6,
           "depth": 13,
           "data": 21,
-          "metric": 12
+          "metric": 15
         }
       }
     },

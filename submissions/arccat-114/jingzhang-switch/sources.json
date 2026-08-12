@@ -429,6 +429,18 @@
       "usage": "文保单位建设控制地带管理规定（Ⅰ类非建设地带等分级规则）。",
       "used_for_zh": "觉生寺（大钟寺）Ⅰ类建控地带为非建设地带（只准绿化与消防通道）的规章依据。",
       "not_usable_for_zh": "规章给出分级规则，具体界线以文物部门公布的图纸为准。"
+    },
+    {
+      "id": "OSM-EXISTING-BUILDINGS",
+      "title": "OpenStreetMap 现状建筑轮廓（Overpass 提取，ODbL 1.0）",
+      "publisher": "OpenStreetMap 贡献者",
+      "url": "https://www.openstreetmap.org/copyright",
+      "source_type": "open_data_license",
+      "authority_level": "open_data_license",
+      "usable_for_formal": "background_only",
+      "usage": "现状建筑轮廓概念量测（提交边界内 1286 处、基底约 196 公顷、覆盖率约 17.2%）。",
+      "used_for_zh": "现状建成密度量级参照与'占满而未建足'推断的基础。",
+      "not_usable_for_zh": "非测绘成果，不能判定空置、权属与可开发容量；不构成现状底数。"
     }
   ]
 }

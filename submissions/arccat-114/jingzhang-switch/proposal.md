@@ -158,7 +158,7 @@ C（道岔）为主方案。比选的输家不被丢弃、被降级使用：A �
 
 ### 4.2 城市更新总体框架
 
-本方案坚持"已建成城区"的现实约束：现状建筑底数待官方普查，本包仅以三处重点区的概念示意楼群表达更新对象（概念建筑基底约28公顷），更新策略不是推倒重来，而是**接通公共界面、注入AI触媒**——在岔心、站前、绿廊断点等位置植入12项更新项目（见第十章），以公共空间与场景体验带动渐进更新[depth:retain_renovate_demolish][metric:building_footprint_area_sqm]。拆改留逻辑：现状保留为主体，改造集中于沿绿廊的界面建筑，拆除与新建仅出现在岔心周边与三处重点区的触媒地块，且全部标注为概念建议，不作为地块级结论[assumption:A-CONTROLS-003]。
+本方案坚持"已建成城区"的现实约束：现状建筑基底覆盖率按 OSM 概念量测约 17.2%（见第七章），概念更新基底约 28 公顷、仅为三处重点区的示意楼群，更新策略不是推倒重来，而是**接通公共界面、注入AI触媒**——在岔心、站前、绿廊断点等位置植入12项更新项目（见第十章），以公共空间与场景体验带动渐进更新[depth:retain_renovate_demolish][metric:building_footprint_area_sqm]。拆改留逻辑：现状保留为主体，改造集中于沿绿廊的界面建筑，拆除与新建仅出现在岔心周边与三处重点区的触媒地块，且全部标注为概念建议，不作为地块级结论[assumption:A-CONTROLS-003]。
 
 ### 4.3 功能比例与创新指标体系
 
@@ -239,6 +239,8 @@ C（道岔）为主方案。比选的输家不被丢弃、被降级使用：A �
 用地布局以绿廊为轴、两翼展开：提交边界内共26个概念用地单元，完整覆盖边界、无缝隙无重叠[data:geometry/land_use.geojson#LU-001][depth:land_use_layout]。公园绿地约480公顷、广场约44公顷构成绿廊主体（合计开敞约525公顷）；科研用地约203公顷集中于众智园与原点；居住用地约161公顷分布于生活段；商业服务业约67公顷集中于大钟寺与岔心东侧[depth:land_use_layout]。建筑基底概念布局约28公顷，集中于三处重点区，全部标注为低置信度概念设计量，不等于法定规模[metric:building_footprint_area_sqm][assumption:A-CONTROLS-003]。拆改留以"保留为主、界面改造、触媒新建"为原则，不作出地块级结论[depth:retain_renovate_demolish]。
 
 该原则有明确政策依据：《北京市城市更新条例》确立"留改拆"并举、以保留利用提升为主[source:BJ-RENEWAL-REGULATION]；住建部《防止大拆大建通知》（建科〔2021〕63号）要求拆除建筑面积不大于现状总建筑面积的20%、拆建比不大于2[source:MOHURD-63-NO-MASS-DEMOLITION]。本方案概念建筑基底约占提交范围2.5%，远低于20%红线，与政策方向同向[metric:building_footprint_area_sqm]。拆改留执行**决策门**：具体建筑进入深化后依次判断历史与公共价值、结构与消防可行性、全生命周期影响、使用者安置与参与、控规与权属合规，然后才进入"保留修缮/功能改造/局部替换/依法更新"四类；当前包不在图上标注任何拆除对象——把缺资料伪装成果断设计，正是本方案反对的那种"未对时的确定感"[source:MOHURD-63-NO-MASS-DEMOLITION][depth:retain_renovate_demolish]。容积率、建筑高度等法定控制值待正式控规数据补齐后复算[metric:floor_area_ratio][source:MOHURD-CONTROL-DETAILED-PLANNING]。
+
+**现状建成底数（OSM 概念量测）**：按 OpenStreetMap 公开建筑轮廓的量级参照，提交边界内基底不小于 400 平方米的建筑约 1,286 处，基底合计约 196 公顷，覆盖率约 17.2%[metric:building_count_existing][metric:building_footprint_existing_sqm][metric:building_coverage_ratio]。建筑轮廓数据来源为 OpenStreetMap 公开数据（ODbL 1.0）[source:OSM-EXISTING-BUILDINGS]。这个数字的意义不在"多"，而在"是什么样的多"：对建成区而言 17.2% 的基底覆盖率并不高，正是高校校园与大院式用地的形态特征——本包据此推断为"占满而未建足"；但建筑轮廓不能判定土地空置、权属状态与可开发容量，该推断待官方现状调查与权属底数核验[assumption:A-CONTROLS-003]。
 
 ## 八、交通、轨道、市政与公共服务设施
 
