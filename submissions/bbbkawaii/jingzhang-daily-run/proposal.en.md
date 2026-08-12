@@ -16,7 +16,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ## Design Basis and Source List
 
-This package uses the official prequalification notice for three-level scope, three key areas and design tasks [source:OFFICIAL-ANNOUNCEMENT]. The agent open-call taskbook supplies three positionings, five functions, three-areas/two-wings and agent.1–agent.6 [source:AGENT-TASKBOOK]. Machine-readable inputs live in `brief/site-package/` and the source registry [source:SITE-PACKAGE].
+This package uses the official prequalification notice for three-level scope, three key areas and design tasks [source:OFFICIAL-ANNOUNCEMENT]. The agent open-call taskbook supplies three positionings, five functions, three-areas/two-wings and agent.1–agent.6 [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]. Machine-readable inputs live in `brief/site-package/` and the source registry [source:SITE-PACKAGE].
 
 Official SITE_BOUNDARY and KEY_AREA polygons are missing, so provisional boundaries are used [source:BOUNDARY-SOURCE]. Submitted boundaries are `provisional_constraint` with `official_boundary=false` [data:geometry/site_boundary.geojson#SITE-001]. Organizer data gaps do not block content scoring; recalculate after official polygons [metric:site_area_sqm].
 
@@ -34,6 +34,8 @@ Research (~43.6 km²), overall design (~11.4 km²) and key areas (~368.4 ha) cas
 
 ## Coordinated Research Area: Industry and Future City Research
 
+Regionally, the Daily Run is an everyday interface to a wider Beijing–Tianjin–Hebei network: northward links toward northern communities and the Future Science City, northeast interfaces for Huairou science spillover, southeast rail/service links toward the Economic-Technological Development Area, and inter-city exchanges via talent days, open-source launch days and night demos. Concept interfaces only, not statutory cross-jurisdiction plans.
+
 For agent.1, the concept is **THE DAILY RUN / 京张日课**: the belt is first a one-day public timetable people can actually complete, not only a showcase corridor. Naming: 京张日课 / THE DAILY RUN; Daily Station, Daily Loop, Timetable Protocol. Visual identity: timetable ticks plus a sunrise–sunset arc in rail grey, commute orange and Zhongguancun blue [source:AGENT-TASKBOOK].
 
 For agent.2, transferable mechanisms include campus–park–street daily circuits, open-source work rhythms, timed scenario access, talent living loops and night-economy demos. All are references, not commitments. The future-city claim is that AI productivity must embed in commute, learning, meals, care and night life to retain people [depth:metrics_recalculation].
@@ -44,7 +46,7 @@ For agent.2, transferable mechanisms include campus–park–street daily circui
 
 Regulatory-plan urban design depth [standard:MOHURD-CONTROL-DETAILED-PLANNING]. Renewal strategy: find daypart breaks, insert timed interfaces, stitch slow mobility, reserve audit nodes [depth:land_use_layout]. Land use places R&D and education on the spine, green belt in the middle, services around Dazhongsi, living to the east, plus reserves [data:geometry/land_use.geojson#LU-001].
 
-Buildings prioritize retain/renovate; FAR and height remain unknown pending controls [data:geometry/buildings.geojson#BLDG-001]. Mobility uses a greenway daily spine, east–west peak connectors and station shuttles [metric:building_footprint_area_sqm]. Missing redlines and utilities are listed in assumptions [source:SITE-PACKAGE].
+Buildings prioritize retain/renovate; FAR and height remain unknown pending controls [depth:development_intensity_controls] [depth:development_intensity_controls] [data:geometry/buildings.geojson#BLDG-001]. Mobility uses a greenway daily spine, east–west peak connectors and station shuttles. Missing redlines and utilities are listed in assumptions.
 
 ## Detailed Design of Key Areas
 
@@ -74,11 +76,15 @@ Municipal and public-service strategy covers AI industry services, innovation pl
 
 ## Blue-Green Network, Public Space, and Urban Character
 
+Height, massing and character are zone-level guidance only while statutory height rules are missing; exact values await confirmation [depth:height_massing_character].
+
 For agent.4 and agent.5, the heritage park is the all-day public daily spine coordinating Qinghe, Xiaoyuehe, campuses and neighborhoods [depth:blue_green_public_space]. The green belt supports morning runs, midday stays, evening family use and low-disturbance night walking [data:geometry/green_space.geojson#GREEN-001]. Ratios are recomputed from layers [metric:green_ratio].
 
 Public space emphasizes accessible stay spaces for small daily classes rather than decorative greenery only [metric:public_space_ratio]. Character fuses railway, Zhongguancun and AI cultures with ≥3 pilgrimage landmarks—**Daily Clock Tower, Verification Hall, Night Class Plaza**—plus contribution walls and a daily component library [source:AGENT-TASKBOOK]. Brands require clearance; guidance distinguishes statutory controls, design advice and pending conditions.
 
 ## Renewal Projects, Implementation Policy, and Phasing
+
+Phasing moves from daily pilots to station-city connectivity to full timetable operations; stages depend on ownership, utilities and controls and are not committed government calendars [depth:phasing_implementation].
 
 For agent.6, six packages DR-01..DR-06 cover slow-mobility stitching, verification interface, transfer street, peak experience connectivity, edge-compute living nodes and global open-day routes [metric:renewal_project_count]. Three phases: daily pilot, station-city daily update, full timetable operations [data:geometry/phasing.geojson#PHASE-001]. Operations are concept schedules, not committed programs [metric:phase_count].
 

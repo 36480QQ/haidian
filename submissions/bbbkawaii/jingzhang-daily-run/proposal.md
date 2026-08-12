@@ -16,7 +16,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ## 设计依据与资料清单
 
-本方案以《百年京张AI创新带城市设计国际方案征集》公告确定的三层范围、三处重点区域与设计任务为第一依据 [source:OFFICIAL-ANNOUNCEMENT]。智能体开源征集任务书规定的三项定位、五大功能、三区两翼与 agent.1–agent.6 为任务依据 [source:AGENT-TASKBOOK]。机器可读依据来自 `brief/site-package/` 中的 brief、枚举、区间、schemas 与 `data/source_registry.json` [source:SITE-PACKAGE]。
+本方案以《百年京张AI创新带城市设计国际方案征集》公告确定的三层范围、三处重点区域与设计任务为第一依据 [source:OFFICIAL-ANNOUNCEMENT]。智能体开源征集任务书规定的三项定位、五大功能、三区两翼与 agent.1–agent.6 为任务依据 [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]。机器可读依据来自 `brief/site-package/` 中的 brief、枚举、区间、schemas 与 `data/source_registry.json` [source:SITE-PACKAGE]。
 
 由于官方 `SITE_BOUNDARY` 与三处 `KEY_AREA` polygon 尚未发布，本包使用 provisional boundaries 生成临时边界 [source:BOUNDARY-SOURCE]。提交包边界标注 `provisional_constraint`、`official_boundary=false` [data:geometry/site_boundary.geojson#SITE-001]。只能用于方案生成、自检、可视化与讨论，不得作为 official redline 或精确面积依据；组织方数据缺口不阻断内容评分，正式 polygon 发布后整包重算 [metric:site_area_sqm]。
 
@@ -34,6 +34,8 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ## 统筹研究范围产业与未来城市研究
 
+区域协同上，日课线作为中关村科学城与京津冀网络的日常接口：向北衔接北纬社区与未来科学城的科研—转化通勤，向东北预留怀柔科学城基础研究交流时段，向东南通过轨道服务翼连接经开区测试与制造场景，城际层面以人才日课、开源发布日与路演夜课组织要素交换。均为概念接口建议，不构成跨行政区法定规划承诺。
+
 对应 agent.1，总体概念为 **「京张日课 / THE DAILY RUN」**：不把创新带首先写成展示带或地标带，而写成一条普通人与 AI 人才能够在一天内完成的公共时刻表。中文主名「京张日课」，英文名 "THE DAILY RUN"；命名体系含「日课站 Daily Station」「日课环 Daily Loop」「时刻表协议 Timetable Protocol」。Logo 方向：铁路时刻表竖排刻度与日出—日落弧线的结合，配色为铁路灰、通勤橙与中关村蓝 [source:AGENT-TASKBOOK]。
 
 对应 agent.2，对标全球案例提炼可转化机制：校区—园区—街区一日动线（肯德尔广场）、开源社区工作节奏（开发者周会/发布日）、场景开放时段管理（新加坡纬壹）、人才生活一日闭环（杭州未来科技城）、国际路演与夜间经济结合（特拉维夫）。均为参考机制，不构成实施承诺。未来城市判断是：AI 生产力只有嵌进通勤、学习、用餐、照料与夜间活动，才能成为可长期留下的城区，而不是会展周末的临时人潮 [depth:metrics_recalculation]。
@@ -41,6 +43,8 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 ![三层范围与用地结构图](assets/figures/land-use-structure.png)
 
 ## 总体设计范围城市更新与控规深度城市设计
+
+总体设计回应《城市设计管理办法》对公共空间、界面与风貌的引导，以及建筑设计深度规定对方案深度递进的要求 [standard:MOHURD-URBAN-DESIGN-MEASURES]。重点片区详细设计按建筑设计深度相关要求组织功能、交通、公共空间与实施证据 [standard:MOHURD-ARCH-DESIGN-DEPTH-2016]。开发强度与高度体量在官方控规未到前列为待确认并同步写入 assumptions/metrics [depth:development_intensity_controls]。
 
 总体设计要求达到控制性详细规划的城市设计深度 [standard:MOHURD-CONTROL-DETAILED-PLANNING]。更新策略是「按日课识别断点—补时段接口—缝合慢行—预留复核节点」：把沿线低效界面改造成可在不同时段承担不同日课的复合界面 [depth:land_use_layout]。用地上，研创与教育沿主轴组织，绿带居中，商业服务与文化交往围绕大钟寺，居住与社区服务在东侧，并保留弹性预留 [data:geometry/land_use.geojson#LU-001]。
 
@@ -76,11 +80,15 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ## 蓝绿空间、公共空间与城市风貌
 
+建筑高度、体量与风貌控制在缺少法定控高时仅给分区引导：验证日课站低干扰体量、转化日课站近校尺度、体验日课站站城界面适度复合；具体高度待官方确认后复算 [depth:height_massing_character]。
+
 对应 agent.4 与 agent.5，蓝绿空间以京张遗址公园为全天公共日课骨架，统筹清河、小月河、高校与社区，形成南北贯通、东西连通的步道与骑行系统 [depth:blue_green_public_space]。绿带承担晨跑、午间停留、傍晚家庭活动与夜间低干扰慢行 [data:geometry/green_space.geojson#GREEN-001]。绿地与公共空间比例由图层复算 [metric:green_ratio]。
 
 公共空间强调可进入、可停留、可办小型日课活动的界面，而不是装饰性绿化 [metric:public_space_ratio]。风貌融合京张铁路文化、中关村创新文化与 AI 新文化，提出不少于 3 个 AI 朝圣地标——**日课钟楼、验证讲堂、夜课广场**——以及贡献墙与日课组件库方向 [source:AGENT-TASKBOOK]。品牌与标识需清权；风貌分清法定管控、设计建议与待确认条件。
 
 ## 更新项目清单、实施政策与分期计划
+
+分期实施计划明确：一期日课试点与慢行接口，二期站城日课连通，三期全域时刻表运营；各期依赖权属、市政与控规，未获正式依据前不写成已排定政府时序 [depth:phasing_implementation]。
 
 对应 agent.6，六项更新包 [metric:renewal_project_count]：DR-01 慢行日课断点缝合、DR-02 众智园验证日课界面、DR-03 原点转化日课街、DR-04 大钟寺高峰体验连通、DR-05 端侧算力与生活服务节点、DR-06 全球AI开放日公共路线 [source:OFFICIAL-ANNOUNCEMENT]。三期：一期日课试点、二期站城日课更新、三期全域时刻表运营框架 [data:geometry/phasing.geojson#PHASE-001]。活动与运营说明责任边界与风险，不写成已确定政府安排。
 
