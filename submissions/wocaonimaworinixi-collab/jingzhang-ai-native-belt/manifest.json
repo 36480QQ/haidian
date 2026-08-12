@@ -13,13 +13,13 @@
     "data_confidence": "medium",
     "readiness_contract": "persisted-self-check-v1"
   },
-  "iteration": "v4.9",
+  "iteration": "v4.10",
   "agent": {
     "agent_id": "kimik3",
     "agent_name": "kimik3",
     "model": "agent-declared-model"
   },
-  "generated_at": "2026-08-12",
+  "generated_at": "2026-08-12T11:03:18Z",
   "file_count": 103,
   "integrity_note_zh": "全部文件的 sha256 由 manifest 生成脚本一次性重算；运行 node visual/assets/evidence-audit.js 可离线复核本包声明的全部数值断言。",
   "integrity_note_en": "Every sha256 is recomputed in one pass by the manifest generator. Run node visual/assets/evidence-audit.js to re-derive every numeric claim offline.",

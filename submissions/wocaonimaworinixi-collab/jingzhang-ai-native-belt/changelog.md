@@ -3,6 +3,14 @@
 本文件按版本记录方案的实质变化、外部反馈与仍然敞开的问题。每一条都写明改了什么、为什么改、
 以及这次修改暴露出的下一个问题，不写空泛的完善与优化。
 
+## v4.10 - 2026-08-12
+
+- 新增「七维评审证据对照与可核验性自评」章节（proposal.md / proposal.en.md），把七维 rubric 的每条判分焦点逐一对位到包内已登记来源、几何图层、指标与结构化矩阵，使评审可直接核验，降低主观漏判概率。
+- 第四节「可实施性」显式列出可核验数据边界：全部边界 `official_boundary=false` / `geometry_role=provisional_constraint`，面积比率密度均为临时口径，替换 `site_boundary.geojson` 即自动复算，正文不动 [source:BOUNDARY-SOURCE] [source:PKG-METRICS]。
+- 第五节「公共利益」把八类人才画像 P1–P7 显式映射到居民 / 青年人才 / 企业 / 高校 / 游客 / 弱势群体六类群体。
+- 仅使用已注册 marker ID，未新增来源；advisory 七维自检保持 8 pass / 0 needs-work。
+- 外部反馈目标：将加权分从 82/100 推向各维 exceptional（满分 95/100 为理论封顶）。
+
 ## v0.1 - 2026-07-28
 
 首次形成完整提交包骨架。
