@@ -4,7 +4,7 @@ author_github: "userInner"
 language: "zh"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
-iteration: "v4.0"
+iteration: "v5.0"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以百年京张、中关村创新史和面向2030的人机自主权为主线，建设一条公共记忆可积累、个人数据可退出、创新收益可共享的AI城市廊道。"
@@ -14,15 +14,20 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 # 京张双记 / DOUBLE MEMORY JINGZHANG
 
-> **v4.0 核心判断：** 城市设计必须同时经得起空间阅读与证据追问。新版以细颗粒街区肌理、京张公共创新脊、六组东西缝合、三处重点区日常小总平和连续公共界面剖面，承载“总体带—日常路线—同意剖面—实施合同”这条证明里程；所有法定控制仍保持 `unknown`，现场结果仍为 `not_field_tested / HOLD`。
+> **v5.0 核心判断：** 一条创新带不仅要在总平上成立，还要在清晨、工作日、午间、公开试验和夜间归途中持续服务普通人。新版把“总体带—日常路线—同意剖面—实施合同”进一步组织为“24 小时公共创新线”：普通服务始终先行，AI 只在可见、可选、可停止的时空单元中出现；所有法定控制仍待正式数据补齐，现场结果仍为 `not_field_tested / HOLD`。
 
-| 评审维度 | v4.0 的实质深化 | 核验入口 |
+| 评审维度 | v5.0 的实质深化 | 核验入口 |
 | --- | --- | --- |
 | 任务契合与原创性 | “证明里程”把公共记忆脊、日常路线、记忆边界护照和实施闸门组织成一条可追读的方法 | `proof-mile-spatial-atlas.json` |
 | AI 与规划创新 | AI 不再是设备清单，而是受 D0—D4 数据等级、删除回执、物理停止和独立复核约束的城市服务 | `forgetfulness-budget.json`、离线审计脚本 |
 | 实施可行性 | 建筑界面按“保留—轻改—可逆植入—法定控制明确后才新建”排序，并与 0—180 天闸门对接 | `building-interface-kit.json`、`implementation-contract.json` |
 | 公共利益 | 三个重点区分别形成无需账号、保留普通等价服务的日常路线，由六类人物逐路线测试 | `key-area-daily-routes.json` |
 | 风险与表达 | 总图与控制账本把 known、design_target、unknown、HOLD 分层显示，避免图面精度掩盖证据缺口 | 第 1、3—5 张展板、空间审计脚本 |
+| 国际传播与长期运营 | “24 小时公共创新线”把五个日常时段、年度公开复盘与区域协作接口合并为一张可执行的运营图谱 | `24h-public-innovation-line.json`、v5 概念主视觉 |
+
+![24 小时公共创新线：铁路遗产、蓝绿系统、普通公共路线和围合试验庭连续工作的轴测概念体验（AI 生成，非现状或审批效果）](assets/media/cover-v5-professional.webp)
+
+![24 小时运营—空间联动展板：五个时段分别登记普通服务、可选 AI、责任主体、放行条件与证据状态](assets/boards/board-08.jpg)
 
 ![证明里程空间图谱：总体带—日常路线—同意剖面—实施合同](assets/boards/board-01.jpg)
 
@@ -213,7 +218,9 @@ v2.0 增加六类人物路线测试，而不是只做需求画像：无智能手
 
 2026—2028 年以现场基线、登记册和可逆试验为主；2028—2030 年只扩展通过安全、公平、可达和居民接受度审查的组件；2030 年后输出开放标准并保持年度复审、召回与退役机制。[data:geometry/phasing.geojson#PHASE-001] [source:HAIDIAN-FIVE-YEAR-PLAN] [depth:phasing_implementation]
 
-运营采用“四本账”：系统登记账、个人授权账、公共收益账、失败退役账。年度活动由社区议题征集、测试开放日、国际标准工作坊和公开复盘组成；不把尚未确定的活动写成政府承诺。[depth:renewal_project_list]
+运营采用“四本账”：系统登记账、个人授权账、公共收益账、失败退役账。v5.0 进一步用五个时段检验空间与服务是否真正连续：06:00 清晨通勤与养护、09:00 知识交换与企业服务、12:00 社区共餐与午间公园、18:00 公开试验与失败复盘、22:00 夜间归途与系统归零。每一时段均登记普通服务、可选 AI、运营责任和放行条件，完整记录见 `visual/assets/24h-public-innovation-line.json`；这些时段是运营设计目标，并非已批准排期或已部署服务。[depth:renewal_project_list]
+
+年度循环由社区议题征集、可逆原型周、失败与召回复盘、国际开放标准工作坊构成，并为北纬社区、未来科学城、怀柔科学城、经开区和京津冀创新网络预留交换接口。协同只共享公开方法、可复用评测协议和去标识化结果，不汇聚个人轨迹或把外部合作写成既成政府安排。[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]
 
 ## 指标体系、面积复算与合规矩阵
 

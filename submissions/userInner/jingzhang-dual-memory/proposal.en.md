@@ -4,7 +4,7 @@ author_github: "userInner"
 language: "en"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
-iteration: "v4.0"
+iteration: "v5.0"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "A human-directed AI urban corridor where public memory accumulates, personal data can expire, and the benefits of innovation are shared."
@@ -14,15 +14,20 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 # DOUBLE MEMORY JINGZHANG
 
-> **v4.0 thesis:** Urban design must survive both spatial reading and evidence review. A fine-grained urban fabric, Jing-Zhang civic spine, six cross-stitches, three key-area daily plans, and one continuous public-edge section now carry the Proof Mile from belt to route, consent section, and implementation contract. Statutory controls remain `unknown`; field results remain `not_field_tested / HOLD`.
+> **v5.0 thesis:** An innovation belt must work not only as a plan, but through early commute, the working day, midday life, open trials and the night journey home. The Proof Mile now becomes a 24-Hour Civic Innovation Line: ordinary service always comes first, while AI appears only in visible, optional and stoppable time-space units. Statutory controls remain pending official data; field results remain `not_field_tested / HOLD`.
 
-| Review dimension | Material v4.0 advance | Verification entry |
+| Review dimension | Material v5.0 advance | Verification entry |
 | --- | --- | --- |
 | Alignment and originality | The Proof Mile connects the public-memory spine, daily routes, passports, and implementation gates into one legible method | `proof-mile-spatial-atlas.json` |
 | AI-planning innovation | AI becomes a civic service constrained by D0–D4 data classes, deletion receipts, physical stops, and independent review | `forgetfulness-budget.json`; offline audit |
 | Feasibility | Building edges follow “retain—light retrofit—reversible insert—new build only after statutory controls,” linked to 0–180-day gates | `building-interface-kit.json`; `implementation-contract.json` |
 | Public interest | Each key area has an account-free daily route with an ordinary equivalent, tested separately by six personas | `key-area-daily-routes.json` |
 | Risk and expression | The atlas and control ledger separate known facts, design targets, unknown controls, and HOLD decisions | boards 01 and 03–05; spatial audit |
+| International communication and long-term operation | The 24-Hour Civic Innovation Line combines five daily windows, an annual public-review cycle and regional exchange interfaces | `24h-public-innovation-line.json`; v5 concept cover |
+
+![24-Hour Civic Innovation Line: an axonometric concept experience linking railway heritage, blue-green systems, ordinary public routes and a bounded trial court (AI-generated, not existing-condition or approval evidence)](assets/media/cover-v5-professional.webp)
+
+![24-hour operations-space board: each of five windows records ordinary service, optional AI, accountable owner, release condition and evidence state](assets/boards/board-08.en.jpg)
 
 ![Proof Mile spatial atlas: belt—daily route—consent section—implementation contract](assets/boards/board-01.en.jpg)
 
@@ -208,7 +213,9 @@ The concept cost band for three prototypes, baseline work, operation, and contin
 
 From 2026 to 2028, the priority is field baselines, registers, and reversible trials. From 2028 to 2030, only components that pass safety, equity, accessibility, and resident-acceptance review expand. After 2030, open standards can be exported while annual review, recall, and retirement remain mandatory. [data:geometry/phasing.geojson#PHASE-001] [source:HAIDIAN-FIVE-YEAR-PLAN] [depth:phasing_implementation]
 
-Operation uses four ledgers: system registration, personal authorisation, public benefit, and failure-retirement. Annual programmes combine community issue calls, open test days, international standards workshops, and public retrospectives. Undetermined events are not presented as government commitments. [depth:renewal_project_list]
+Operation uses four ledgers: system registration, personal authorisation, public benefit, and failure-retirement. v5.0 tests spatial and service continuity through five windows: 06:00 early commute and stewardship, 09:00 knowledge exchange and enterprise service, 12:00 community lunch and midday park, 18:00 open trials and failure review, and 22:00 night return and system reset. Every window records ordinary service, optional AI, accountable operation and a release condition in `visual/assets/24h-public-innovation-line.json`. These are operational design targets, not an approved programme or deployed service. [depth:renewal_project_list]
+
+The annual cycle combines a community problem call, reversible prototype week, failure-and-recall review, and an international open-standard workshop. Exchange interfaces are reserved for North Latitude Community, Future Science City, Huairou Science City, Beijing E-Town and the wider Jing-Jin-Ji innovation network. Collaboration shares public methods, reusable evaluation protocols and de-identified findings; it does not pool personal trajectories or claim a confirmed government arrangement. [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]
 
 ## Metrics, Area Recalculation, and Compliance Matrix
 
