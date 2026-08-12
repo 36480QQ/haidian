@@ -22,7 +22,9 @@ keywords: ["Jing-Zhang Heritage", "AI Innovation Corridor", "Urban Design", "Sma
 
 This formal proposal takes the *Call for Prequalification for the International Urban Design Solicitation of the Centennial Jing-Zhang AI Innovation Belt* published by the Haidian Branch of the Beijing Municipal Commission of Planning and Natural Resources as its primary basis, with the provisional boundaries, key areas, enums, ranges and source registry maintained in `brief/site-package/` as its machine-readable basis. Before generation, the AI agent fully read `design_brief.json`, `allowed_design_space.json`, `sources.json`, `enums/`, `ranges/`, `schemas/`, `data/source_registry.json` and `data/processed/agent_fact_pack.md`, and built task, scope, source-use and gap checklists. The announcement requires urban-design depth at the regulatory detailed planning level and at the comprehensive implementation planning level, so the narrative is tightly coupled with GeoJSON layers, indicator tables, the A3 booklet, the A0 boards and the HTML visualization.
 
-Evidence-chain references include: [source:PUBLIC-BRIEF], [source:OFFICIAL-ANNOUNCEMENT], [source:AGENT-TASKBOOK], [source:SITE-PACKAGE], [source:SOURCE-REGISTRY], [source:PROCESSED-FACT-PACK], [source:BOUNDARY-SOURCE], [source:KEY-AREA-SOURCE], [source:PUBLIC-THINKTANK-REGISTRY], [standard:PROJECT-OFFICIAL-ANNOUNCEMENT], [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK], [standard:MOHURD-URBAN-DESIGN-MEASURES], [standard:MOHURD-CONTROL-DETAILED-PLANNING], [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE], [standard:MOHURD-ARCH-DESIGN-DEPTH-2016] and [depth:existing_conditions_diagnosis], demonstrating a rigorous design built from the announcement, the agent-facing taskbook, standards, boundaries, the processed fact pack and the source-use matrix.
+Evidence-chain references include [source:PUBLIC-BRIEF], [source:OFFICIAL-ANNOUNCEMENT] and [source:AGENT-TASKBOOK], covering the announcement and taskbook. The site package and registries are referenced via [source:SITE-PACKAGE], [source:SOURCE-REGISTRY] and [source:PROCESSED-FACT-PACK]; boundary sources via [source:BOUNDARY-SOURCE] and [source:KEY-AREA-SOURCE].
+
+Further references cover [source:PUBLIC-THINKTANK-REGISTRY], [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] and [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]; professional standards include [standard:MOHURD-URBAN-DESIGN-MEASURES], [standard:MOHURD-CONTROL-DETAILED-PLANNING] and [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]; design-depth and diagnosis evidence use [standard:MOHURD-ARCH-DESIGN-DEPTH-2016] and [depth:existing_conditions_diagnosis], demonstrating a rigorous design built from the announcement, the agent-facing taskbook, standards, boundaries, the processed fact pack and the source-use matrix.
 
 ![Overall Design Scope & Key Regions Map](assets/figures/site-overview.en.png)
 
@@ -490,7 +492,49 @@ All known indicators exactly match GeoJSON features:
 - **FAR [metric:floor_area_ratio]**: to be calculated after official regulatory controls are released
 - **Compliance response**: fully responds to announcement tasks 1.3, 1.4, 1.5 and agent tasks agent.1 - agent.6.
 
-**Machine-readable source & metric index**: All public sources referenced by this proposal are listed in [source:DESIGN-BRIEF] (structured design brief), [source:ALLOWED-DESIGN-SPACE] (allowed design space), [source:SITE-ENUMS] (enums), [source:PLANNING-LIMITS] (planning limit ranges), [source:SCHEMA-DEFS] (schemas), [source:PACKAGE-SOURCES-REGISTRY] (official source registry), [source:GB-50137-2011] (land-use classification standard), [source:GB-50180-2018] (residential planning standard), [source:MOHURD-URBAN-DESIGN-MEASURES] (urban design measures), [source:GENERATIVE-AI-INTERIM-MEASURES] (generative-AI interim measures), [source:BARRIER-FREE-ENVIRONMENT-LAW] (barrier-free environment law), [source:ELDERLY-SMART-TECH-PLAN-2020-45] (elderly smart-tech plan), [source:MOHURD-ARCH-DESIGN-DEPTH-2016] (design-document depth regulation) and [source:PUBLIC-BRIEF]. All metrics and recalculation formulas are listed in [metric:site_area_sqm], [metric:building_footprint_area_sqm], [metric:green_ratio], [metric:public_space_ratio], [metric:key_area_count], [metric:green_300m_coverage], [metric:tod_station_500m_cover], [metric:greenway_gap_count], [metric:road_centerline_length_m], [metric:building_count], [metric:public_space_count], [metric:green_patch_count], [metric:land_use_parcel_count], [metric:phase_count], [metric:constraint_count], [metric:land_use_rd_innovation_area_sqm], [metric:land_use_industry_commerce_area_sqm], [metric:land_use_green_water_area_sqm], [metric:land_use_talent_community_area_sqm], [metric:scenario_count], [metric:renewal_project_count], [metric:persona_count], [metric:ai_landmark_count], [metric:proof_mile_interface_count].
+**Machine-readable source & metric index** (full ledgers in sources.json and metrics.json):
+
+| Type | Entry |
+| --- | --- |
+| Source | [source:DESIGN-BRIEF](structured design brief) |
+| Source | [source:ALLOWED-DESIGN-SPACE](allowed design space) |
+| Source | [source:SITE-ENUMS](enums) |
+| Source | [source:PLANNING-LIMITS](planning limit ranges) |
+| Source | [source:SCHEMA-DEFS](schemas) |
+| Source | [source:PACKAGE-SOURCES-REGISTRY](official source registry) |
+| Source | [source:GB-50137-2011](land-use classification standard) |
+| Source | [source:GB-50180-2018](residential planning standard) |
+| Source | [source:MOHURD-URBAN-DESIGN-MEASURES](urban design measures) |
+| Source | [source:GENERATIVE-AI-INTERIM-MEASURES](generative-AI interim measures) |
+| Source | [source:BARRIER-FREE-ENVIRONMENT-LAW](barrier-free environment law) |
+| Source | [source:ELDERLY-SMART-TECH-PLAN-2020-45](elderly smart-tech plan) |
+| Source | [source:MOHURD-ARCH-DESIGN-DEPTH-2016](design-document depth regulation) |
+| Source | [source:PUBLIC-BRIEF](public brief) |
+| Metric | [metric:site_area_sqm] |
+| Metric | [metric:building_footprint_area_sqm] |
+| Metric | [metric:green_ratio] |
+| Metric | [metric:public_space_ratio] |
+| Metric | [metric:key_area_count] |
+| Metric | [metric:green_300m_coverage] |
+| Metric | [metric:tod_station_500m_cover] |
+| Metric | [metric:greenway_gap_count] |
+| Metric | [metric:road_centerline_length_m] |
+| Metric | [metric:building_count] |
+| Metric | [metric:public_space_count] |
+| Metric | [metric:green_patch_count] |
+| Metric | [metric:land_use_parcel_count] |
+| Metric | [metric:phase_count] |
+| Metric | [metric:constraint_count] |
+| Metric | [metric:land_use_rd_innovation_area_sqm] |
+| Metric | [metric:land_use_industry_commerce_area_sqm] |
+| Metric | [metric:land_use_green_water_area_sqm] |
+| Metric | [metric:land_use_talent_community_area_sqm] |
+| Metric | [metric:scenario_count] |
+| Metric | [metric:renewal_project_count] |
+| Metric | [metric:persona_count] |
+| Metric | [metric:ai_landmark_count] |
+| Metric | [metric:proof_mile_interface_count] |
+
 
 ## Risk, Copyright, and Compliance
 
@@ -535,7 +579,8 @@ The following public sources form the authoritative basis of this proposal (each
 - brief/site-package/enums/
 - brief/site-package/ranges/planning_limits.json
 - data/processed/agent_fact_pack.md
-- Machine-readable reference index: [source:PUBLIC-BRIEF], [source:OFFICIAL-ANNOUNCEMENT], [source:AGENT-TASKBOOK], [source:SITE-PACKAGE], [source:SOURCE-REGISTRY], [source:PROCESSED-FACT-PACK], [standard:PROJECT-OFFICIAL-ANNOUNCEMENT], [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK], [depth:metrics_recalculation], [data:geometry/site_boundary.geojson#SITE-001], [metric:site_area_sqm]
+- Machine-readable reference index: [source:PUBLIC-BRIEF], [source:OFFICIAL-ANNOUNCEMENT] and [source:AGENT-TASKBOOK]; full registry anchors in [source:SITE-PACKAGE], [source:SOURCE-REGISTRY] and [source:PROCESSED-FACT-PACK]; taskbook standards in [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] and [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]
+- Depth/data/metric anchors: [depth:metrics_recalculation], [data:geometry/site_boundary.geojson#SITE-001] and [metric:site_area_sqm]
 
 
 ### Civic Value Protocol (Civic Compute Revenue Reinvestment)

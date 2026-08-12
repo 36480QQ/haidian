@@ -652,7 +652,49 @@ Logo 概念方案由"双轨 + 节点网络"构成:两条钢轨象征百年京张
 
 无障碍与适老政策参照 [standard:BARRIER-FREE-ENVIRONMENT-LAW](第 39 条边界) 与 [standard:ELDERLY-SMART-TECH-PLAN-2020-45];指标复算口径见 [depth:metrics_recalculation],建筑密度待官方可建设用地数据确认后复算([metric:building_density] 当前为 unknown)。
 
-**来源与指标机器索引**:本方案引用的全部公开来源见 [source:DESIGN-BRIEF](结构化设计概要)、[source:ALLOWED-DESIGN-SPACE](许可设计空间)、[source:SITE-ENUMS](枚举)、[source:PLANNING-LIMITS](规划限值范围)、[source:SCHEMA-DEFS](模式定义)、[source:PACKAGE-SOURCES-REGISTRY](官方来源登记)、[source:GB-50137-2011](城市用地分类标准)、[source:GB-50180-2018](居住区设计标准)、[source:MOHURD-URBAN-DESIGN-MEASURES](城市设计管理办法)、[source:GENERATIVE-AI-INTERIM-MEASURES](生成式AI暂行办法)、[source:BARRIER-FREE-ENVIRONMENT-LAW](无障碍环境建设法)、[source:ELDERLY-SMART-TECH-PLAN-2020-45](适老技术实施方案)、[source:MOHURD-ARCH-DESIGN-DEPTH-2016](设计深度规定) 与 [source:PUBLIC-BRIEF] 等。全部指标与复算公式见 [metric:site_area_sqm]、[metric:building_footprint_area_sqm]、[metric:green_ratio]、[metric:public_space_ratio]、[metric:key_area_count]、[metric:green_300m_coverage]、[metric:tod_station_500m_cover]、[metric:greenway_gap_count]、[metric:road_centerline_length_m]、[metric:building_count]、[metric:public_space_count]、[metric:green_patch_count]、[metric:land_use_parcel_count]、[metric:phase_count]、[metric:constraint_count]、[metric:land_use_rd_innovation_area_sqm]、[metric:land_use_industry_commerce_area_sqm]、[metric:land_use_green_water_area_sqm]、[metric:land_use_talent_community_area_sqm]、[metric:scenario_count]、[metric:renewal_project_count]、[metric:persona_count]、[metric:ai_landmark_count]、[metric:proof_mile_interface_count]。
+**来源与指标机器索引**（完整台账见 sources.json 与 metrics.json）：
+
+| 类型 | 索引项 |
+| --- | --- |
+| 来源 | [source:DESIGN-BRIEF](结构化设计概要) |
+| 来源 | [source:ALLOWED-DESIGN-SPACE](许可设计空间) |
+| 来源 | [source:SITE-ENUMS](枚举) |
+| 来源 | [source:PLANNING-LIMITS](规划限值范围) |
+| 来源 | [source:SCHEMA-DEFS](模式定义) |
+| 来源 | [source:PACKAGE-SOURCES-REGISTRY](官方来源登记) |
+| 来源 | [source:GB-50137-2011](城市用地分类标准) |
+| 来源 | [source:GB-50180-2018](居住区设计标准) |
+| 来源 | [source:MOHURD-URBAN-DESIGN-MEASURES](城市设计管理办法) |
+| 来源 | [source:GENERATIVE-AI-INTERIM-MEASURES](生成式AI暂行办法) |
+| 来源 | [source:BARRIER-FREE-ENVIRONMENT-LAW](无障碍环境建设法) |
+| 来源 | [source:ELDERLY-SMART-TECH-PLAN-2020-45](适老技术实施方案) |
+| 来源 | [source:MOHURD-ARCH-DESIGN-DEPTH-2016](设计深度规定) |
+| 来源 | [source:PUBLIC-BRIEF](公开任务书) |
+| 指标 | [metric:site_area_sqm] |
+| 指标 | [metric:building_footprint_area_sqm] |
+| 指标 | [metric:green_ratio] |
+| 指标 | [metric:public_space_ratio] |
+| 指标 | [metric:key_area_count] |
+| 指标 | [metric:green_300m_coverage] |
+| 指标 | [metric:tod_station_500m_cover] |
+| 指标 | [metric:greenway_gap_count] |
+| 指标 | [metric:road_centerline_length_m] |
+| 指标 | [metric:building_count] |
+| 指标 | [metric:public_space_count] |
+| 指标 | [metric:green_patch_count] |
+| 指标 | [metric:land_use_parcel_count] |
+| 指标 | [metric:phase_count] |
+| 指标 | [metric:constraint_count] |
+| 指标 | [metric:land_use_rd_innovation_area_sqm] |
+| 指标 | [metric:land_use_industry_commerce_area_sqm] |
+| 指标 | [metric:land_use_green_water_area_sqm] |
+| 指标 | [metric:land_use_talent_community_area_sqm] |
+| 指标 | [metric:scenario_count] |
+| 指标 | [metric:renewal_project_count] |
+| 指标 | [metric:persona_count] |
+| 指标 | [metric:ai_landmark_count] |
+| 指标 | [metric:proof_mile_interface_count] |
+
 
 ## 风险、版权与合规说明
 
