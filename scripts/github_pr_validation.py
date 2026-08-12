@@ -105,6 +105,12 @@ def _is_download_not_found(error: Exception, path: str) -> bool:
     )
 
 
+def _is_comment_patch_forbidden(error: RuntimeError) -> bool:
+    """Allow fork validation to publish a fresh comment when PATCH is forbidden."""
+    message = str(error)
+    return message.startswith("GitHub API PATCH ") and " failed with HTTP 403:" in message
+
+
 class GitHubClient:
     def __init__(self, token: str, repository: str) -> None:
         self.token = token
@@ -218,11 +224,25 @@ class GitHubClient:
         comments = self.paginate(f"/repos/{self.repository}/issues/{issue_number}/comments?per_page=100")
         for comment in comments:
             if COMMENT_MARKER in comment.get("body", ""):
-                self.request(
-                    "PATCH",
-                    f"/repos/{self.repository}/issues/comments/{comment['id']}",
-                    {"body": body},
-                )
+                try:
+                    self.request(
+                        "PATCH",
+                        f"/repos/{self.repository}/issues/comments/{comment['id']}",
+                        {"body": body},
+                    )
+                except RuntimeError as exc:
+                    if not _is_comment_patch_forbidden(exc):
+                        raise
+                    # A pull_request_target token may create a new comment but
+                    # cannot edit a bot-owned comment on a fork PR. Avoid a
+                    # duplicate when the fallback body is already present.
+                    if comment.get("body") == body:
+                        return
+                    self.request(
+                        "POST",
+                        f"/repos/{self.repository}/issues/{issue_number}/comments",
+                        {"body": body},
+                    )
                 return
         self.request("POST", f"/repos/{self.repository}/issues/{issue_number}/comments", {"body": body})
 

@@ -9,7 +9,7 @@ import io
 import re
 import urllib.error
 from pathlib import Path
-from unittest.mock import MagicMock, patch
+from unittest.mock import MagicMock, call, patch
 
 import jsonschema
 
@@ -33,6 +33,7 @@ from validate_submission import (  # noqa: E402
 )
 from github_pr_validation import (  # noqa: E402
     base_requires_persisted_readiness,
+    COMMENT_MARKER,
     GitHubClient,
     MAX_DOWNLOAD_BYTES,
     _is_retryable_http_error,
@@ -208,6 +209,49 @@ class GitHubApiResilienceTests(unittest.TestCase):
                 client.request("POST", "/test", {"body": "comment"})
         self.assertEqual(1, urlopen.call_count)
         sleep.assert_not_called()
+
+    def test_comment_patch_forbidden_falls_back_to_new_comment(self) -> None:
+        client = GitHubClient("token", "open-city-ai/haidian")
+        existing = {"id": 42, "body": f"{COMMENT_MARKER}\nold result"}
+        patch_error = RuntimeError(
+            "GitHub API PATCH https://api.github.com/repos/open-city-ai/haidian/issues/comments/42 "
+            "failed with HTTP 403: Must have admin rights to Repository."
+        )
+        with patch.object(client, "paginate", return_value=[existing]), patch.object(
+            client,
+            "request",
+            side_effect=[patch_error, ({"id": 43}, {})],
+        ) as request:
+            client.upsert_comment(1955, f"{COMMENT_MARKER}\nnew result")
+        self.assertEqual(
+            [
+                call(
+                    "PATCH",
+                    "/repos/open-city-ai/haidian/issues/comments/42",
+                    {"body": f"{COMMENT_MARKER}\nnew result"},
+                ),
+                call(
+                    "POST",
+                    "/repos/open-city-ai/haidian/issues/1955/comments",
+                    {"body": f"{COMMENT_MARKER}\nnew result"},
+                ),
+            ],
+            request.call_args_list,
+        )
+
+    def test_comment_patch_non_permission_failure_is_not_hidden(self) -> None:
+        client = GitHubClient("token", "open-city-ai/haidian")
+        existing = {"id": 42, "body": f"{COMMENT_MARKER}\nold result"}
+        error = RuntimeError(
+            "GitHub API PATCH https://api.github.com/repos/open-city-ai/haidian/issues/comments/42 "
+            "failed with HTTP 500: server error"
+        )
+        with patch.object(client, "paginate", return_value=[existing]), patch.object(
+            client, "request", side_effect=error
+        ) as request:
+            with self.assertRaisesRegex(RuntimeError, "HTTP 500: server error"):
+                client.upsert_comment(1955, f"{COMMENT_MARKER}\nnew result")
+        request.assert_called_once()
 
     def test_download_404_retries_then_succeeds(self) -> None:
         client = GitHubClient("token", "open-city-ai/haidian")
