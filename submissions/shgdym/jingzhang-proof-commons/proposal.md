@@ -1,5 +1,5 @@
 ---
-title: "京张X JINGZHANG X：让AI先验证，让城市再决定"
+title: "X京张 X JINGZHANG：让每一个AI先经过公开交叉验证"
 author_github: "shgdym"
 language: "zh"
 translation_file: "proposal.en.md"
@@ -12,13 +12,13 @@ scenarios: ["public-safety-operations-review", "robot-delivery-low-speed", "ai-t
 iteration: "v2.0"
 ---
 
-# 京张X JINGZHANG X
+# X京张 X JINGZHANG
 
 ## 统筹研究范围产业与未来城市研究
 
-“京张X”把百年铁路、城市生活与可问责AI汇聚在同一条公共创新带。`X`不是装饰性的未知符号，而是三重交汇：铁路遗产与城市更新交汇、AI研发与公共生活交汇、技术试验与人工终决交汇。每项技术必须依次通过六道门：**来源登记、限定试验、公众知情、人工接管、独立复核、退出复原**。这六道门既是治理流程，也是沿京张遗址公园组织空间的设计语法。它不新增铁路或道路红线，也不把技术测试包装成政府采购、认证或实施承诺。[source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK]
+“X京张”在AI进入城市前设置一个公开的交叉验证点。`X = Crossing + Checkpoint`：每一个X，都是AI能力与公众权利发生交叉验证的地方。全线只执行一条可记忆的运行链：**TEST（众智园）→ RELEASE（AI原点）→ USE（大钟寺）→ RETURN（停止、复原并返回测试）**；三站分别签发 Test Receipt、Release Ticket 和 Public Verdict，并汇入同一份机器可读 X Receipt。它不新增铁路或道路红线，也不把桌面演练、技术测试包装成政府采购、认证、真实试点或实施承诺。[source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [metric:x_checkpoint_count]
 
-本方案采用“一线、三站、双翼、十缝、十四账本、十二场景、三道实施门”的结构：一条公共验证慢行主轴；众智园、AI原点、大钟寺三座差异化验证站；中关村科技服务翼和小月河场景赋能翼；十条东西缝合通道；十四个可复算空间账本；十二个可停止的AI场景；三道按证据成熟度推进的实施门。所有设计图层来自同一临时范围并可复算，但不得被理解为官方红线、现状测绘、权属判断或审定控规。[data:geometry/site_boundary.geojson#SITE-001] [depth:overall_spatial_structure]
+第一阅读层只有一个X、三座X站、一份X票据和 TEST—RELEASE—USE—RETURN 四步闭环。双翼十缝、十四空间账本、十二场景和三道实施门下沉为专业审查层，用于回答空间如何复算、责任如何签注、失败如何退出。所有设计图层来自同一临时范围并可复算，但不得被理解为官方红线、现状测绘、权属判断或审定控规。[data:geometry/site_boundary.geojson#SITE-001] [depth:overall_spatial_structure] [metric:machine_readable_x_receipt_protocol_count]
 
 ![总体结构、三层范围与六道验证门](assets/figures/framework-overview.png)
 
@@ -146,6 +146,12 @@ AI原点形成“成果披露前台—开源协作首层—人才生活庭院—
 
 ![三类缝合剖面与无障碍连续性验收链](assets/figures/sections-accessibility.png)
 
+### agent.5 百年 X京张文化导览线：1909—2026—2126
+
+文化导览不是零散的二维码，而是一条沿 `ROAD-SPINE` 串联六站、三种时间视角的连续公共路线。南门户“工程起点”解释1909年的自主建造；大钟寺X站把铁路到达转译为当代公众使用权；蓟门缝合站展示铁路如何重新连接社区；AI原点X站公开2026年的版本、许可与发布责任；小月河站把基础设施记忆与气候适应并读；众智园X站让参观者讨论2126年的城市技术应如何被检验和退出。六站均提供现场牌、纸质折页、触觉摘要和人工讲解，AI只可从已清权语料中检索与组织内容，不得生成未经核证的史实。[data:visual/assets/x-cultural-route.json] [metric:cultural_route_stop_count] [metric:cultural_narrative_era_count]
+
+每条内容发布前记录来源、权利、版本和文史复核人；无法追溯的内容不进入导览，存在争议的内容并列展示证据状态。导览服务的目标是静态替代可用率100%、已发布内容来源可追溯率100%，但现场连续性、站点位置和无障碍条件必须待正式边界与实地审计后确认。这让AI增强检索而不替代城市记忆的人工判断。
+
 ## AI 创新生态、人才画像与 AI+ 场景
 
 | 场景 | 类型与锚点 | 主责/协作 | 数据边界 | 人工接管与响应时限 | 衡量指标、停止与复原 |
@@ -162,6 +168,14 @@ AI原点形成“成果披露前台—开源协作首层—人才生活庭院—
 | SC-10 低碳设施维护站 | 城市治理·绿脉 | 园林市政运营方 / 环境工程师 | 设施编号、环境状态，不采个人数据 | 人员决定工单，紧急故障30分钟响应 | 误报率与闭环时间；连续误派即回退人工巡检 |
 | SC-11 夜间安全共治站 | 公共服务·AI原点 | 公共空间运营方 / 社区、安保 | 非识别式热力与人工报告 | 报警必经人员确认，现场事件即时响应 | 误报和投诉率；形成身份追踪或眩光扰民即撤除 |
 | SC-12 全球开放协作周 | 运营·全线 | 年度委员会 / 场地、版权、无障碍团队 | 活动计划、授权报名和聚合反馈 | 每场有人主持，投诉2小时内回应 | 国际合作任务与问题关闭率；许可、安全或权利缺口即取消相关单元 |
+
+### SC-03 英雄场景：一台机器人如何被城市退回
+
+SC-03不再停留在“具身智能”标签，而采用可执行的 X Receipt 协议。拟议技术栈限定为低速地理围栏机器人、激光雷达/深度感知、里程计与局部地图、独立围栏监测、最小风险停车、物理与值守远程急停；感知只识别人、轮椅等通行类别，不做人脸识别，不保留图像，不允许系统自行扩大运行边界。机器测试区、观察缓冲区和永久公众通道三层分离，任何失败只关闭前两层，公众通道保持开放。[data:visual/assets/x-receipt.schema.json] [data:visual/assets/example-sc03-x-receipt.json]
+
+本次提交实际运行了一次**合成桌面演练**，不是现场试点：09:00进入众智园TEST；09:17模拟“儿童/老人意外穿越”工况；09:17:05触发人工急停并判定RETURN；系统冻结事件记录、撤出设备、复原普通院落，再返回TEST。普通行人、轮椅优先、意外穿越、网络/规划器不可用四类固定工况均按预期执行，协议检查结果为 `4/4 fixtures`、`8/8 checks`；真实试点仍因场地、运营主体、设备参数、保险和批准缺失而保持 `BLOCKED`。[data:visual/assets/sc03-tabletop-evidence.json] [metric:sc03_tabletop_rehearsal_count] [metric:sc03_synthetic_fixture_count]
+
+![X运行闭环、SC-03合成演练与真实试点阻断项](assets/figures/x-lifecycle.png)
 
 每个场景采用同一责任底线：运营主体承担主责，专业复核组负责批准，使用者和社区参与咨询，公众获得充分告知；AI不得成为责任主体。资源分为S级（既有空间与人员）、M级（可拆组件与专项服务）、L级（工程或长期运营，须另行论证）三级。12个场景中SC-01—SC-04为产业测试验证场景。[metric:scenario_card_count] [metric:industry_validation_scenario_count]
 
@@ -186,7 +200,7 @@ AI原点形成“成果披露前台—开源协作首层—人才生活庭院—
 
 VI执行规范固定了标志构造、最小净空、最小数字尺寸、五种功能色、字体层级和三层公共信息。任何应用必须同时显示场景状态、权利信息和人工/非AI行动入口；禁止徽章化、企业背书、永久广告和隐藏暂停或退出状态。这样，品牌不是装饰，而是公众识别责任与选择权的统一界面。[source:AGENT-TASKBOOK] [metric:public_component_count]
 
-![京张X识别系统的构造、色彩、字体、信息层级与禁用规则](assets/figures/identity-guidelines.png)
+![X京张识别系统的构造、色彩、字体、信息层级与禁用规则](assets/figures/identity-guidelines.png)
 
 ### 包容性：没有应用程序也能获得同等服务
 
@@ -213,7 +227,9 @@ VI执行规范固定了标志构造、最小净空、最小数字尺寸、五种
 
 第一道门“证据补齐与低扰动原型”只做资料、审计、导览和可拆组件；第二道门“三站受控验证”要求责任主体、场地、安全、数据和公众复核全部明确；第三道门“评估后制度化转化”由独立评估决定是否进入规划、工程、采购或长期运营。试点不是采购，展示不是认证，参加活动不是永久数据授权。[data:geometry/phasing.geojson#PHASE-001] [metric:renewal_project_count]
 
-年度节奏为春季来源与开源周、夏季受控试场季、秋季全球证据论坛、冬季公众评估与归档月。开发者社区维护开放路线图，居民和目标用户参与问题定义，专业团队保留安全、法律和停止权；AI只承担资料整理、冲突提示和版本追踪。
+年度运营按四季形成可取消的闭环，而不是活动清单：春季 ISSUE 由社区秘书处发布问题与权利边界；夏季 TEST 由场地运营方输出测试票据；秋季 RELEASE + USE 由发布与公众服务团队输出发布票和公众裁决；冬季 RETURN + REVIEW 由独立复核组公布继续、修改、停止决定。每季分别检查问题回应率、工况完成率、权利票据完整率、投诉关闭率和复原完成率，责任、产物、KPI与一票取消条件固化在机器可读运营文件中。[data:visual/assets/x-operations-cycle.json] [metric:annual_operating_season_count]
+
+运营节奏为每周公开问题分诊、每月场景状态登记、每季度公开复核、每年形成一份继续/修改/停止公共决定册。开发者社区维护开放路线图，居民和目标用户参与问题定义，专业团队保留安全、法律和停止权；AI只承担资料整理、冲突提示和版本追踪。任何场景必须依次经过公开问题、受控测试、权利复核、限定公众使用和继续/返回决定；缺少法人、场地许可、权利票据、人工接管、非AI等价服务或复原资源时，该季单元取消，不顺延为默认批准。[metric:annual_public_decision_register_count]
 
 ![实施项目、资源级别、年度运营与三道准备门](assets/figures/implementation-roadmap.png)
 
