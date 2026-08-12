@@ -129,7 +129,9 @@ Because the current boundary is provisional, the above derivation is a direction
 | Life Gauge | 0702 Residential and community services | 2.33 km² | 20.4% | Talent housing, community facilities |
 | Infrastructure Gauge | 1207 Transport and municipal facilities | 1.49 km² | 13.0% | Roads, rail, compute, energy |
 
-The full numeric index of per-belt areas and shares lives in `metrics.json`: `land_use_area_{code}_sqm` and `land_use_ratio_{code}` — `[metric:land_use_area_0802_sqm]` `[metric:land_use_ratio_0802]` `[metric:land_use_area_1401_sqm]` `[metric:land_use_ratio_1401]` `[metric:land_use_area_05_sqm]` `[metric:land_use_ratio_05]` `[metric:land_use_area_0702_sqm]` `[metric:land_use_ratio_0702]` `[metric:land_use_area_1207_sqm]` `[metric:land_use_ratio_1207]`; land-use codes follow the Territorial-Space Land-Use and Sea-Use Classification Guide `[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]`.
+The full numeric index of per-belt areas and shares lives in `metrics.json` (`land_use_area_{code}_sqm` and `land_use_ratio_{code}` series); land-use codes follow the Territorial-Space Land-Use and Sea-Use Classification Guide `[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]`. Innovation 0802: `[metric:land_use_area_0802_sqm]` `[metric:land_use_ratio_0802]`; Green 1401: `[metric:land_use_area_1401_sqm]` `[metric:land_use_ratio_1401]`.
+
+Industry 05: `[metric:land_use_area_05_sqm]` `[metric:land_use_ratio_05]`; Life 0702: `[metric:land_use_area_0702_sqm]` `[metric:land_use_ratio_0702]`; Infrastructure 1207: `[metric:land_use_area_1207_sqm]` `[metric:land_use_ratio_1207]`.
 
 The land-use division is encoded in full in `geometry/land_use.geojson` `[data:geometry/land_use.geojson#LU-0802-A1]` — **5 gauge belts refined into 17 named sub-blocks** `[metric:land_use_count]` whose union equals the site boundary, with no overlap and no holes (self-check has verified that both the overlap and gap between any pair are 0). Each sub-block carries `parcel_id` / `name_zh` / `name_en` / `sub_function_zh` / `sub_function_en` / `parent_gauge` fields; land-use codes follow the Territorial-Space Land-Use and Sea-Use Classification Guide `[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]`, and the union of all sub-blocks sharing one `land_use_code` equals the original belt area (per-code metrics unchanged). The existing-conditions diagnosis and data-gap analysis `[depth:existing_conditions_diagnosis]` show that public materials supply only the provisional boundary — existing building survey, property rights and municipal capacity are missing — so this proposal encodes the provisional constraint layer in `geometry/constraints.geojson` `[data:geometry/constraints.geojson#CON-001]`.
 
@@ -552,12 +554,44 @@ NG-6 brings the 14 scenario cards (S1–S14) into a unified service-contract fra
 - **Recruitment & translation channels**: talent (developer community → entrepreneurship), enterprise (benchmark testing → settlement), developer (contribution → honour → cooperation).
 - **Long-term maintenance responsibility**: each project clearly defines its operating entity and maintenance cycle (see table above); no fabricated operating budgets.
 
+### Implementation timeline and responsibility matrix (agent.6 long-term-operations refinement)
+
+The P1-P6 project portfolio, the SC-04 pilot and the 17 sub-blocks are placed on a **three-year rolling timeline** (conceptual, pending entity and budget confirmation) `[depth:phasing_implementation]` `[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]`:
+
+| Phase | Timeframe (concept) | Milestone | Lead entity (concept) | Precondition Gate | Stop condition |
+|---|---|---|---|---|---|
+| **T0 Pre-study** | Year 0-1 | Official redline supplied, control-plan conditions set, existing-conditions survey and property-rights verification | Government planning authority | G0 Topic | If redline / control plan still missing → remain provisional |
+| **T1 Green-belt connection** | Year 1-2 | Central green belt (GRN-B1) + three green rings (GRN-B2) connected | Landscape + cultural-relics department | G1 Site | Cultural-relics conflict → adjust alignment |
+| **T2 SC-04 pilot** | Year 1-3 | SC-04 Relay Receipt G0-G4 passed; 4 synthetic tickets tested | Compute Alliance (concept) + governance consortium | G2-G4 Data/Permissions/Human Gates | Any Gate lacking evidence → stay in sandbox |
+| **T3 Base Gauge launch** | Year 2-4 | Zhongzhiyuan benchmark field (INNO-A3) + shared compute centre (INNO-A2) built | Park + enterprise alliance | G5 Limited trial (after SC-04 passes) | Sub-target rate → degrade pilot |
+| **T4 Life Gauge rollout** | Year 3-5 | AI Origin Community convenience nodes (LIFE-D2) + slow-mobility spine connected | Community + health / education institutions | G0-G4 + resident-participation baseline | Privacy violation → suspend + rectify |
+| **T5 Industry Gauge deepening** | Year 4-7 | Dazhongsi industrial renewal (IND-C1/C2) + two-wing switchback synergy | Owner + enterprise + synergy park | G5 + commercial-willingness confirmation | Market under-target → postpone |
+
+Responsibility matrix (RACI, conceptual) — each key item tagged R (Responsible) / A (Accountable) / C (Consulted) / I (Informed) `[assumption:A-IMPLEMENTATION-001]`:
+
+| Item | Government | Enterprise alliance | Community institution | Public | AI agent (observer) |
+|---|---|---|---|---|---|
+| Redline and control-plan confirmation | R/A | C | I | I | I |
+| SC-04 pilot advancement | A | R | C | C | I (auditable observation) |
+| Scenario opening and rollback | A | R | C | C | I (evidence-chain logging) |
+| Equity-ledger review | A | C | R | C | I (data-collection assistance) |
+| Resilience-state annual drill | A | R | R | C | I (degradation logging) |
+
+The timeline and responsibility matrix are **conceptual suggestions** — all timeframes, lead entities and RACI assignments are pending confirmation of official entities, budgets and approvals `[assumption:A-IMPLEMENTATION-001]` `[assumption:A-OPERATIONS-001]`.
+
 ## Indicator system, area recomputation and compliance matrix
 
-Core indicators are recomputed from `geometry/*.geojson` under EPSG:4548 (CGCS2000 / 3-degree zone CM 117E) `[depth:metrics_recalculation]`:
+Core indicators are recomputed from `geometry/*.geojson` under EPSG:4548 (CGCS2000 / 3-degree zone CM 117E) `[depth:metrics_recalculation]`. Grouped by metric family:
 
-- Land-use area `[metric:site_area_sqm]`, green ratio `[metric:green_ratio]`, public-space ratio `[metric:public_space_ratio]`, building density `[metric:building_density]`, key-area count `[metric:key_area_count]`, key-area total `[metric:key_area_total_sqm]`, road network `[metric:road_centerline_length_m]`, scenario-node count `[metric:scenario_node_count]`, three-phase area `[metric:phasing_area_near_sqm]` `[metric:phasing_area_mid_sqm]` `[metric:phasing_area_far_sqm]`.
-- Statutory control-plan items (FAR / height / total floor area) are `unknown`, with reasons attached `[metric:floor_area_ratio]`.
+- **Scope and density**: land-use area `[metric:site_area_sqm]`, green ratio `[metric:green_ratio]`, public-space ratio `[metric:public_space_ratio]`, building density `[metric:building_density]`.
+
+- **Key areas**: key-area count `[metric:key_area_count]`, key-area total `[metric:key_area_total_sqm]`.
+
+- **Transport and scenarios**: road network `[metric:road_centerline_length_m]`, scenario-node count `[metric:scenario_node_count]`.
+
+- **Phasing**: near-term `[metric:phasing_area_near_sqm]`, mid-term `[metric:phasing_area_mid_sqm]`, far-term `[metric:phasing_area_far_sqm]`.
+
+- **Statutory control-plan items** (FAR / height / total floor area) are `unknown`, with reasons attached `[metric:floor_area_ratio]`.
 
 Coverage: `compliance_matrix.json` covers all 17 announcement items (1.3.1–1.5.3.3) + 6 agent tasks (agent.1–agent.6), totalling 23 items; `standard_matrix.json` covers 5 mandatory professional standards; all required-depth items in `design_depth_matrix.json` are complete.
 
