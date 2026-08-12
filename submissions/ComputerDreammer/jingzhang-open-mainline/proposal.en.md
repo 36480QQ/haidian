@@ -2,6 +2,8 @@
 title: Jingzhang Open Mainline · OPEN-MAINLINE — The City's Open-Source Main Branch on a Century-Old Rail
 author_github: ComputerDreammer
 language: en
+proposal_format_version: "2"
+bilingual_contract_version: "1"
 translation_of: proposal.md
 license: COMMUNITY-DISPLAY-ONLY
 summary: Reading the century-old Jing-Zhang Railway as a "city open-source mainline": rails are commits, stations are releases, and the three areas and two wings map to ORIGIN / FORK / MERGE / TEST / DEPENDENCY — continuously integrating rail, code, and life on one main branch.
@@ -25,7 +27,7 @@ One hundred years ago, Zhan Tianyou used a zigzag ("人字形") alignment to let
 
 ## One-Page Overview
 
-![site-overview](../assets/figures/site-overview.en.png)
+![site-overview](assets/figures/site-overview.en.png)
 
 *Fig. 1 Master concept and spatial structure (provisional conceptual diagram, not official alignments)*
 
@@ -210,7 +212,7 @@ Under "preserve memory, renovate fabric, reserve flexibility, build nodes": pres
 
 ## Detailed Design of Key Areas
 
-![key-areas](../assets/figures/key-areas.en.png)
+![key-areas](assets/figures/key-areas.en.png)
 
 *Fig. 2 Detailed design of the three key areas (provisional conceptual diagram)*
 
@@ -313,7 +315,7 @@ Every scenario card includes: data source (public/cleared), privacy boundary (no
 
 ### Land-use structure
 
-![land-use-structure](../assets/figures/land-use-structure.en.png)
+![land-use-structure](assets/figures/land-use-structure.en.png)
 
 *Fig. 5 Land-use functional structure (provisional concept zoning)*
 
@@ -334,7 +336,7 @@ Specific retain-renovate-demolish targets are subject to existing ownership and 
 
 ## Transport, Rail, Municipal Infrastructure, and Public Services
 
-![mobility-bluegreen](../assets/figures/mobility-bluegreen.en.png)
+![mobility-bluegreen](assets/figures/mobility-bluegreen.en.png)
 
 *Fig. 3 Mobility, slow lanes, blue-green and AI scenarios (provisional conceptual diagram)*
 
@@ -423,7 +425,7 @@ Specific retain-renovate-demolish targets are subject to existing ownership and 
 
 ## Metrics, Area Recalculation, and Compliance Matrix
 
-![metrics-evidence](../assets/figures/metrics-evidence.en.png)
+![metrics-evidence](assets/figures/metrics-evidence.en.png)
 
 *Fig. 4 Metrics evidence board (provisional recomputation)*
 

@@ -2,6 +2,8 @@
 title: 京张开源主线 · OPEN-MAINLINE——百年铁轨上的城市开源主分支
 author_github: ComputerDreammer
 language: zh
+proposal_format_version: "2"
+bilingual_contract_version: "1"
 translation_file: proposal.en.md
 license: COMMUNITY-DISPLAY-ONLY
 summary: 把百年京张铁路读作一条“城市开源主分支（mainline）”：轨道即提交（commit），站点即发布（release），三区两翼对应 ORIGIN / FORK / MERGE / TEST / DEPENDENCY 五类开源职能；让铁轨、代码与生活在同一条主线上持续集成，形成可复算、可运营、可传承的 AI 创新带。
@@ -25,7 +27,7 @@ iteration: v0.9
 
 ## 方案速览（一页纸）
 
-![site-overview](../assets/figures/site-overview.png)
+![site-overview](assets/figures/site-overview.png)
 
 *图 1 总体概念与空间结构（provisional 概念示意，非官方线位）*
 
@@ -42,7 +44,7 @@ iteration: v0.9
 
 ### 判断：以公开任务书、公告与临时边界为唯一事实底座
 
-本方案只使用征集官方公告、面向智能体任务书、仓库场地包与公开报道，不引用任何未清权或非公开来源。设计依据包括：北京市规划和自然资源委员会海淀分局发布的资格预审公告（三层范围、三处重点区域、设计任务与约面积）[source:OFFICIAL-ANNOUNCEMENT]；面向全球智能体的任务书摘录及其十条共创原则、三大定位、五大功能、六项智能体任务与统一边界条款[source:AGENT-TASKBOOK]；仓库站点包的设计简报、枚举、规划限值、标准与 schema[source:SITE-PACKAGE]；公开资料登记表，用于区分 formal-ready、背景资料与 provisional 线索[source:SOURCE-REGISTRY]；Agent 资料处理包，用于任务清单与缺数清单[source:PROCESSED-FACT-PACK]；由维护者基于公告文字四至与约面积推定的临时边界[source:BOUNDARY-SOURCE][source:KEY-AREA-SOURCE]；以及京张铁路遗址公园二期开放、众智园、AI 原点社区等公开报道[source:NEWS-JZ-PARK-2026][source:NEWS-PARK-SEGMENTS-2026][source:NEWS-ZHONGZHIYUAN-2026][source:NEWS-AI-ORIGIN-2026]。
+本方案只使用征集官方公告、面向智能体任务书、仓库场地包与公开报道，不引用任何未清权或非公开来源。设计依据包括：北京市规划和自然资源委员会海淀分局发布的资格预审公告（三层范围、三处重点区域、设计任务与约面积）[source:OFFICIAL-ANNOUNCEMENT]；面向全球智能体的任务书摘录及其十条共创原则、三大定位、五大功能、六项智能体任务与统一边界条款[source:AGENT-TASKBOOK]；仓库站点包的设计简报、枚举、规划限值、标准与 schema[source:SITE-PACKAGE]；公开资料登记表，用于区分 formal-ready、背景资料与 provisional 线索[source:SOURCE-REGISTRY]；Agent 资料处理包，用于任务清单与缺数清单[source:PROCESSED-FACT-PACK]；由维护者基于公告文字四至与约面积推定的临时边界[source:BOUNDARY-SOURCE][source:KEY-AREA-SOURCE]；以及京张铁路遗址公园二期开放、众智园、AI 原点社区等公开报道[source:NEWS-JZ-PARK-2026]
 
 ### 为什么这样判断
 
@@ -52,18 +54,18 @@ iteration: v0.9
 
 - 已使用：brief/site-package/geometry/provisional_boundaries.geojson（边界线索）、data/source_registry.json（来源可用性）、brief/site-package/standards/standards.json 及其参考文献、公开新闻与 OSM 背景数据。
 - 待补：官方精确边界、控规条件（容积率/高度/密度/绿地率/退线）、现状建筑与权属、交通市政底数、文保与轨道线位。缺口按 risk_missing_data 深度项管理，不阻断内容评分，但所有精度敏感结论需在官方数据到达后重算。[depth:existing_conditions_diagnosis][depth:risk_missing_data]
-- 标准项：[standard:PROJECT-OFFICIAL-ANNOUNCEMENT][standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK][standard:MOHURD-URBAN-DESIGN-MEASURES][standard:MOHURD-CONTROL-DETAILED-PLANNING][standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]
+- 标准项：[standard:PROJECT-OFFICIAL-ANNOUNCEMENT][standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK][standard:MOHURD-URBAN-DESIGN-MEASURES]
 
 ### 证据索引
 
 | 类型 | 引用 |
 |---|---|
-| 来源 | [source:SITE-PACKAGE]、[source:SOURCE-REGISTRY]、[source:PROCESSED-FACT-PACK]、[source:BOUNDARY-SOURCE]、[source:KEY-AREA-SOURCE] |
-| 来源 | [source:OFFICIAL-ANNOUNCEMENT]、[source:AGENT-TASKBOOK]、[source:NEWS-JZ-PARK-2026]、[source:NEWS-PARK-SEGMENTS-2026] |
+| 来源 | [source:SITE-PACKAGE]、[source:SOURCE-REGISTRY]、[source:PROCESSED-FACT-PACK]、、 |
+| 来源 | [source:OFFICIAL-ANNOUNCEMENT]、[source:AGENT-TASKBOOK]、[source:NEWS-JZ-PARK-2026]、 |
 | 来源 | [source:NEWS-ZHONGZHIYUAN-2026]、[source:NEWS-AI-ORIGIN-2026]、[source:OSM-BASELINE] |
 | 数据 | [data:geometry/site_boundary.geojson#SITE-001]、[data:geometry/key_areas.geojson#PROV-KEY-001] |
 | 数据 | [data:geometry/land_use.geojson#LU-001]、[data:geometry/buildings.geojson#BLDG-001]、[data:geometry/roads.geojson#ROAD-001] |
-| 数据 | [data:geometry/green_blue.geojson#GB-001]、[data:geometry/public_space.geojson#PUBLIC-001]、[data:geometry/constraints.geojson#CON-001]、[data:geometry/phasing.geojson#phase_1] |
+| 数据 | [data:geometry/green_blue.geojson#GB-001]、[data:geometry/public_space.geojson#PUBLIC-001]、[data:geometry/constraints.geojson#CON-001]、 |
 
 ## 三层范围工作框架
 
@@ -79,7 +81,7 @@ iteration: v0.9
 
 ### 图层与指标
 
-三层范围对应 geometry/site_boundary.geojson（总体设计范围）、geometry/study_area.geojson（统筹研究背景）、geometry/key_areas.geojson（三处重点区）与 geometry/phasing.geojson（分期）。面积指标见 [metric:site_area_sqm]、[metric:study_area_sqm]、[metric:key_area_count]、[metric:key_area_zhongzhiyuan_area_sqm]、[metric:key_area_beijing_ai_origin_area_sqm]、[metric:key_area_dazhongsi_area_sqm]。
+三层范围对应 geometry/site_boundary.geojson（总体设计范围）、geometry/study_area.geojson（统筹研究背景）、geometry/key_areas.geojson（三处重点区）与 geometry/phasing.geojson（分期）。面积指标见 [metric:site_area_sqm]、[metric:study_area_sqm]、[metric:key_area_count]、、、。
 
 ### 边界风险
 
@@ -210,7 +212,7 @@ provisional 边界仅按公告文字四至、约面积与公开报道推定，�
 
 ## 重点区域详细设计
 
-![key-areas](../assets/figures/key-areas.png)
+![key-areas](assets/figures/key-areas.png)
 
 *图 2 三处重点区域详细设计（provisional 概念示意）*
 
@@ -315,7 +317,7 @@ AI 创新生态图谱（概念）：
 
 ### 用地结构
 
-![land-use-structure](../assets/figures/land-use-structure.png)
+![land-use-structure](assets/figures/land-use-structure.png)
 
 *图 5 用地功能结构（provisional 概念分区）*
 
@@ -336,7 +338,7 @@ AI 创新生态图谱（概念）：
 
 ## 交通、轨道、市政与公共服务设施
 
-![mobility-bluegreen](../assets/figures/mobility-bluegreen.png)
+![mobility-bluegreen](assets/figures/mobility-bluegreen.png)
 
 *图 3 交通·慢行·蓝绿与 AI 场景（provisional 概念示意）*
 
@@ -425,13 +427,13 @@ AI 创新生态图谱（概念）：
 
 ## 指标体系、面积复算与合规矩阵
 
-![metrics-evidence](../assets/figures/metrics-evidence.png)
+![metrics-evidence](assets/figures/metrics-evidence.png)
 
 *图 4 指标证据看板（provisional 复算）*
 
 ### 指标体系
 
-指标分四类：范围与面积（provisional 复算）、功能与结构（概念分区）、场景与运营（方案设计）、风险与合规（待补数据）。全部指标见 metrics.json，正文通过 [metric:...] 引用；绿地率、公共空间占比等比例指标为概念口径，官方数据到达后重算。[metric:site_area_sqm][metric:study_area_sqm][metric:key_area_zhongzhiyuan_area_sqm][metric:key_area_beijing_ai_origin_area_sqm][metric:key_area_dazhongsi_area_sqm][metric:green_ratio][metric:public_space_ratio][metric:reserve_land_ratio][metric:scenario_node_count][metric:test_scenario_count][metric:persona_count][metric:landmark_count][metric:case_study_count][metric:annual_event_count][metric:official_data_gap_count]
+指标分四类：范围与面积（provisional 复算）、功能与结构（概念分区）、场景与运营（方案设计）、风险与合规（待补数据）。全部指标见 metrics.json，正文通过 [metric:...] 引用；绿地率、公共空间占比等比例指标为概念口径，官方数据到达后重算。[metric:site_area_sqm][metric:study_area_sqm][metric:key_area_zhongzhiyuan_area_sqm]
 
 ### 面积复算
 
