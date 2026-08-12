@@ -13,6 +13,18 @@ scenarios: ["ai-cultural-guide", "enterprise-service-copilot", "ai-traffic-walka
 
 # 双螺旋创新带｜百年京张AI创新带城市设计方案
 
+## 一页执行摘要（Executive Brief）
+
+**概念一句话**：以百年京张铁路的自主创新史为底，把文化螺旋 H链与创新螺旋 I链编织成城市 DNA，并为每个 AI 场景配一组可复核的"电力碱基对"——AI 算力 × 能源供给，用电气工程视角把 AI 治理落成可核验的城市电力基础设施。
+
+**空间结构**：一带（京张遗址公园活力带）双链（文化螺旋 × 创新螺旋）三节点（众智园 192ha / AI原点社区 104ha / 大钟寺 72ha）两翼（中关村科技服务翼 × 小月河场景赋能翼）；总体设计 11.4km²，边界为临时约束，官方红线发布后复算 [metric:site_area_sqm] [metric:key_area_area_sqm]。
+
+**独有机制**：电力碱基对四项校准（能效底线 PUE ≤1.25 / 绿电优先 ≥80% / 韧性自愈 ≤5min / 可退出 人工通道100%），12 张场景卡全部映射空间节点 [metric:ai_scenario_card_count]；JZ-05 光储充驿站最小试点以随包脚本 `visual/assets/run_jz05_pilot.js --check` 可复现桌面预演（十段执行链、七道 Gate、六项验收条件，证据 JSON 见 `visual/assets/jz05-pilot-evidence.json`）[metric:jz05_acceptance_criterion_count]。
+
+**关键数字**：57 个无缝隙用地单元、14 栋示意建筑、15 条道路、6 张概念渲染图、13 个更新项目、24+ 项可复算指标 [metric:land_use_unit_count] [metric:road_length_m]。
+
+**边界声明**：全部空间成果基于公开与清权资料生成；官方红线/控规/试点数据未发布前，面积类指标为 provisional 复算、管控指标为 unknown、试点候选值为候选口径；本方案为概念建议，不构成审定结论 [depth:risk_missing_data]。
+
 ## 设计依据与资料清单
 
 本方案以北京市规划和自然资源委员会海淀分局发布的《百年京张AI创新带城市设计国际方案征集资格预审公告》为第一依据，并以 `brief/site-package/` 中登记的临时粗略边界、重点区域、枚举、指标和来源清单为机器可读依据 [source:OFFICIAL-ANNOUNCEMENT] [source:SITE-PACKAGE]。面向智能体的开源征集任务书（agent.1–agent.6）是本次方案六项任务的直接来源 [source:AGENT-TASKBOOK]。
@@ -103,6 +115,8 @@ AI 创新生态由四类空间共同承载：研发测试空间（众智园）�
 
 该锚点表与 `report/narrative.md` 深化附件四的包容性评估（儿童、老年人、残障、低收入、非数字用户、既有商户）及 `risk.json` 的 equity_inclusion 维度交叉印证 [depth:risk_missing_data]。
 
+**场景共同协议（六字段）。** 所有 12 张场景卡共用六字段协议：**服务对象**（谁受益）、**最小必要数据**（数据最小化，不默认全域采集）、**空间边界**（落位在哪、与场地约束的关系）、**人工复核者**（谁对结果负责）、**退出与申诉方式**（如何退出/离线替代）、**评估与停止条件**（何时降级或关闭）。任何场景不得把未成熟技术写成全面可用，不得将供应商锁定为必要条件；未达标的场景按电力碱基对校准降级或退出。完整 12×6 矩阵见 `report/narrative.md` 附件八 [source:AGENT-TASKBOOK] [depth:risk_missing_data]。
+
 方案形成 12 张 AI 场景卡，全部映射到空间节点 [metric:scenario_node_count] [metric:ai_scenario_card_count]：
 
 | 场景卡 | 空间载体 | 设计说明 |
@@ -127,6 +141,17 @@ AI 创新生态由四类空间共同承载：研发测试空间（众智园）�
 用地方案依据《国土空间调查、规划、用途管制用地用海分类指南》的项目子集表达，57 个用地单元完整覆盖提交边界、无缝隙无重叠 [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [data:geometry/land_use.geojson#LU-001]。双链用地结构在指标上表现为：科研用地约 255.1 公顷、教育用地约 97.3 公顷、文化用地约 49.5 公顷沿双链分布；公园与防护绿地约 175.1 公顷构成蓝绿骨架；商业服务业用地约 132.2 公顷集中于南部门户与大钟寺 [metric:land_use_area_by_code] [metric:green_ratio]。
 
 建筑方案区分保留、改造、更新、新建与预留五类，给出 14 栋示意建筑基底，含清华园车站文化馆（保留）、人才公寓（新建）与两处能源站（众智园光储充能源站 BLDG-015、大钟寺区域能源站 BLDG-016，位于大钟寺站西南侧）等 [data:geometry/buildings.geojson#BLDG-001] [depth:retain_renovate_demolish]。拆改留结论依赖权属、工程条件与审批，本方案只提出方法与待校准清单，不编造具体拆改留结论 [depth:development_intensity_controls]。建筑面积、容积率与高度控制在正式控规条件补齐前列为待确认 [metric:total_floor_area_sqm] [metric:floor_area_ratio]。
+
+**拆改留决策树（概念建议，正式结论待权属与工程复核）。** 每个既有建筑按四层判断归类：
+
+| 判断层级 | 问题 | 结果流向 |
+| --- | --- | --- |
+| L1 文保与历史价值 | 是否文保/历史建筑、是否在遗址带保护范围？ | 是 → **保留**（如清华园站 BLDG-005）；否 → L2 |
+| L2 结构与工程质量 | 结构安全与工程质量等级？ | 危旧不可修 → **拆除重建**；可修 → **保留/改造**；需鉴定 → **待复核** |
+| L3 功能适配度 | 现状功能是否适配 AI 创新带定位？ | 适配 → **保留+活化**；部分适配 → **改造**；不适配 → **更新/重建** |
+| L4 权属与审批 | 权属、控规、审批条件是否明确？ | 明确 → 按 L1-L3 结论执行；未明确 → **列为待确认清单**，不预判 |
+
+决策树保证：任何未取得权属/工程/审批证据的既有建筑都不进入"拆除"预判；"保留"优先于"改造"、"改造"优先于"重建"，与低/中/高开发强度情景保持一致 [depth:retain_renovate_demolish] [depth:development_intensity_controls]。
 
 ## 交通、轨道、市政与公共服务设施
 

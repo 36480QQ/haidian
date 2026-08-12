@@ -11,9 +11,21 @@ tracks: ["jingzhang-heritage-narrative", "ai-origin-community", "enterprise-serv
 scenarios: ["ai-cultural-guide", "enterprise-service-copilot", "ai-traffic-walkability"]
 ---
 
-# Double-Helix Innovation Belt｜Centennial Jing-Zhang AI Innovation Belt Urban Design Proposal
+# Double-Helix Innovation Belt｜Centennial Jing-Zhang AI Innovation Belt Urban Design
 
-## Design Basis and Source List
+## One-Page Executive Brief
+
+**Concept in one sentence**: Building on the century-old autonomy of the Jing-Zhang Railway, the proposal weaves the Heritage helix H and the Innovation helix I into urban DNA, pairing every AI scenario with a verifiable Power Base-Pair - AI compute x energy supply - turning AI governance into auditable urban power infrastructure from an electrical-engineering perspective.
+
+**Spatial structure**: One belt (Jing-Zhang Heritage Park vitality corridor), two strands (Heritage helix x Innovation helix), three nodes (Zhongzhiyuan 192ha / AI Origin Community 104ha / Dazhongsi 72ha), two wings (Zhongguancun Technology Service Wing x Xiaoyuehe Scenario Empowerment Wing); overall design 11.4km² with provisional boundaries to be recalculated when official redlines are published [metric:site_area_sqm] [metric:key_area_area_sqm].
+
+**Distinctive mechanism**: Power Base-Pair with four calibrations (efficiency floor PUE <= 1.25 / green power >= 80% / resilience self-healing <= 5min / opt-out human channel 100%); 12 AI scenario cards all mapped to spatial nodes [metric:ai_scenario_card_count]; the JZ-05 PV-Storage-Charging minimal pilot is reproducible via the in-package script `visual/assets/run_jz05_pilot.js --check` (10-stage execution chain, seven gates, six acceptance criteria; evidence JSON in `visual/assets/jz05-pilot-evidence.json`) [metric:jz05_acceptance_criterion_count].
+
+**Key figures**: 57 gap-free land units, 14 indicative buildings, 15 roads, 6 concept renders, 13 renewal projects, 24+ reproducible metrics [metric:land_use_unit_count] [metric:road_length_m].
+
+**Boundary statement**: All spatial outputs are generated from public or cleared data; until official redlines, regulatory controls, and pilot data are published, area metrics are provisional recalculations, control metrics are unknown, and pilot candidate values are candidate baselines; this proposal is conceptual and does not constitute an approved conclusion [depth:risk_missing_data].
+
+## Design Basis and Source Inventory
 
 This proposal takes the Qualification Prequalification Announcement of the Centennial Jing-Zhang AI Innovation Belt International Urban Design Open Call, issued by the Haidian Branch of the Beijing Municipal Commission of Planning and Natural Resources, as its primary basis, and the registered provisional boundaries, key areas, enums, ranges, and source lists in `brief/site-package/` as its machine-readable basis [source:OFFICIAL-ANNOUNCEMENT] [source:SITE-PACKAGE]. The agent-facing open-call taskbook (agent.1–agent.6) is the direct source of the six required tasks of this proposal [source:AGENT-TASKBOOK].
 
@@ -103,6 +115,8 @@ The proposal defines five user personas: open-source developers, startup teams, 
 
 This anchor table is cross-referenced with the inclusion assessment (children, elderly, people with disabilities, low-income, non-digital users, existing merchants) in deepening attachment 4 of `report/narrative.md` and the equity_inclusion dimension of `risk.json` [depth:risk_missing_data].
 
+**Shared scenario protocol (six fields).** All 12 scenario cards share a six-field protocol: **service recipient** (who benefits), **minimum necessary data** (data minimization, no default area-wide collection), **spatial boundary** (where it lands and its relation to site constraints), **human reviewer** (who is accountable for results), **exit and appeal** (how to opt out / offline alternative), and **evaluation and stop conditions** (when to downgrade or close). No scenario presents immature technology as fully available, and no scenario makes a vendor lock-in a necessary condition; under-performing scenarios are downgraded or exited under Power Base-Pair calibration. The full 12x6 matrix is in `report/narrative.md` attachment 8 [source:AGENT-TASKBOOK] [depth:risk_missing_data].
+
 The proposal forms 12 AI scenario cards, all mapped to spatial nodes [metric:scenario_node_count] [metric:ai_scenario_card_count]:
 
 | Scenario card | Spatial carrier | Design note |
@@ -127,6 +141,17 @@ The proposal proposes three industry test/validation scenarios (each requiring s
 The land plan follows the project subset of the Land Use Classification Guide for Territorial Spatial Survey, Planning, and Use Control; 57 land units fully cover the submitted boundary without gaps or overlaps [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [data:geometry/land_use.geojson#LU-001]. In metrics, the dual-strand land structure shows: research land of about 255.1 ha, education land of about 97.3 ha, and cultural land of about 49.5 ha along the two strands; park and buffer green of about 175.1 ha as the blue-green skeleton; and commercial land of about 132.2 ha concentrated at the south gateway and Dazhongsi [metric:land_use_area_by_code] [metric:green_ratio].
 
 The building plan distinguishes retain, renovate, renew, new-build, and reserved categories, and provides 14 indicative building footprints, including the Qinghuayuan Station Cultural Hall (retained), talent apartments (new), and two energy stations (Zhongzhiyuan PV-Storage-Charging Energy Station BLDG-015, Dazhongsi District Energy Station BLDG-016, southwest of Dazhongsi Station) [data:geometry/buildings.geojson#BLDG-001] [depth:retain_renovate_demolish]. Demolition/renovation conclusions depend on ownership, engineering conditions, and approval; this proposal offers methods and a calibration checklist only, without fabricating specific retain/renovate/demolish conclusions [depth:development_intensity_controls]. Floor area, FAR, and height controls are listed as pending until official regulatory conditions are confirmed [metric:total_floor_area_sqm] [metric:floor_area_ratio].
+
+**Retain/renovate/demolish decision tree (conceptual; formal conclusions await ownership and engineering review).** Each existing building is classified through four decision levels:
+
+| Level | Question | Flow |
+| --- | --- | --- |
+| L1 Heritage and historical value | Is it a heritage/historic building or inside the heritage-belt protection scope? | Yes -> **Retain** (e.g., Qinghuayuan Station BLDG-005); No -> L2 |
+| L2 Structure and engineering quality | Structural safety and engineering grade? | Unsafe beyond repair -> **Demolish and rebuild**; repairable -> **Retain/renovate**; needs appraisal -> **Pending review** |
+| L3 Functional fit | Does the current function fit the AI innovation belt positioning? | Fits -> **Retain + activate**; partial -> **Renovate**; no fit -> **Renew/rebuild** |
+| L4 Ownership and approval | Are ownership, regulatory, and approval conditions clear? | Clear -> execute per L1-L3; unclear -> **listed as pending confirmation**, no presumption |
+
+The tree guarantees: no existing building lacking ownership/engineering/approval evidence enters a "demolish" presumption; "retain" precedes "renovate" and "renovate" precedes "rebuild", consistent with the low/medium/high development-intensity scenarios [depth:retain_renovate_demolish] [depth:development_intensity_controls].
 
 ## Transport, Rail, Municipal Infrastructure, and Public Services
 
