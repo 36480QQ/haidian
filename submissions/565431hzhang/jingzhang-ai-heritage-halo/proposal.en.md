@@ -183,18 +183,18 @@ AI scenarios must be grounded in spatial and governance boundaries: public-space
 | Local resident | Commute, leisure, community services, low-disruption renewal | Jing-Zhang Heritage Park slow-mobility loop, embedded community services, nighttime lighting and activity zoning | Resident profiles not used for commercial recommendations |
 | University faculty and students | Achievement transformation, cross-campus collaboration, daily slow mobility | Campus–park slow-mobility stitching, achievement transformation station, AI education experience points | Campus data and research output require authorization |
 
-| Scenario card | Spatial carrier | Design description |
-| --- | --- | --- |
-| 01 Open-Source Release Hall | Beijing AI Origin Community | Facing universities, open-source communities, and startup teams, providing achievement release, code contribution display, and small-scale roadshow space |
-| 02 Security Governance Sandbox | Zhongzhi Park | Translate standard-setting, security evaluation, and model red-teaming into visitable, bookable, and auditable display and collaboration nodes |
-| 03 Edge Compute Hub | Nodes within overall design scope | Combined with public services, enterprise services, and low-carbon energy strategy, as a prototype for new infrastructure to be deepened |
-| 04 AI Slow-Mobility Navigation | Jing-Zhang Heritage Park vitality corridor | Use explainable signage and low-intrusion sensing to help identify slow-mobility gaps, congestion nodes, and accessibility needs |
-| 05 Dazhongsi International Roadshow Lounge | Dazhongsi AI Industry Cluster | Serving display, negotiation, media release, and international exchange for intelligent agent, smart terminal, and content-consumption enterprises |
-| 06 Qinghe Low-Carbon Innovation Corridor | Zhongzhi Park along the Qinghe River | Combine green space, stormwater, walking/cycling, and AI display as the park's public living room |
-| 07 University-Adjacent Achievement Transformation Street | Beijing AI Origin Community | Serving university achievement transformation, organizing incubation, display, legal, IP, and investment/financing services |
-| 08 Data Factor Salon | Dazhongsi area | On the premise of compliance, authorization, and auditability, display the urban service interface for data-factor and digital-asset circulation |
-| 09 AI Lifestyle Service Model Street | Intersection of community and commerce | Place AI+ scenarios in healthcare, education, law, and lifestyle services into operable small-scale block spaces |
-| 10 Global AI Activity Week Route | Belt-wide public-space system | Form a walkable, shareable experiential route from heritage culture, open-source community, industry display, to international roadshow |
+| Scenario card | Spatial carrier | User group | Design description | Data source | Human review | Suggested operator | Suggested KPI |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 01 Open-Source Release Hall | Beijing AI Origin Community | University students, developers | Achievement release, code contribution display, and small-scale roadshow space | Public repo data + submitter authorization | Code review + content audit | Community co-governance committee | Monthly events, contribution count, exhibiting teams |
+| 02 Security Governance Sandbox | Zhongzhi Park | Enterprises, standards bodies | Translate standard-setting, security evaluation, and model red-teaming into visitable, bookable, auditable nodes | Public test output + participant self-report | Independent security audit + multi-party review | Standards governance consortium | Test tasks, pass rate, standards drafts |
+| 03 Edge Compute Hub | Nodes within overall design scope | Startups, residents | Combined with public services, enterprise services, and low-carbon energy strategy | Anonymized aggregated usage statistics | Privacy impact assessment (quarterly) | Municipal + operator partnership | Usage count, avg response time |
+| 04 AI Slow-Mobility Navigation | Jing-Zhang Heritage Park vitality corridor | All pedestrians | Explainable signage and low-intrusion sensing for mobility gaps, congestion, and accessibility needs | Anonymous sensor data (no personal tracking) | Accessibility walkthrough + user feedback mechanism | Public space operator | Slow-mobility connectivity rate, user satisfaction |
+| 05 Dazhongsi International Roadshow Lounge | Dazhongsi AI Industry Cluster | Enterprise visitors, investors | Display, negotiation, media release, and international exchange | Enterprise self-report + public info | Content compliance review | Market-operated platform | Annual events, attending enterprises, conversion rate |
+| 06 Qinghe Low-Carbon Innovation Corridor | Zhongzhi Park along Qinghe River | Residents, employees | Green space, stormwater, walking/cycling, and AI display as park public living room | Environmental sensors (temperature, humidity, water quality, usage) | Data not used for personal profiling | Zhongzhi Park operator | Usage count, estimated carbon reduction |
+| 07 University-Adjacent Achievement Transformation Street | Beijing AI Origin Community | University students, entrepreneurs | Incubation, display, legal, IP, and investment/financing services | Authorized disclosure + public data | Ethics review + IP audit | University-partnered operator | Transformed projects, funding amount |
+| 08 Data Factor Salon | Dazhongsi area | Enterprises, data providers | Compliance, authorization, auditable data-factor and digital-asset circulation | Only compliant data + auditable logs | Independent data compliance audit | Third-party data governance body | Transaction volume, compliance rate |
+| 09 AI Lifestyle Service Model Street | Community–commerce intersections | Residents, community staff | AI+ healthcare, education, legal, lifestyle services in operable small-scale blocks | User-authorized data + public service data | Manual approval + service team code | Community + commercial joint operator | Service coverage, user feedback |
+| 10 Global AI Activity Week Route | Belt-wide public-space system | Global participants, local residents | Walkable, shareable experiential route from heritage to international roadshow | Public venue info + participant self-report | Event safety review + cultural content audit | Event organizing committee | Participation, media coverage |
 
 AI governance recommendations generated by the agent must follow the principles of data minimization, open-source attribution, explainability, and manual review. Urban intelligent agents can assist in identifying slow-mobility gaps, public-space heatmaps, facility maintenance, enterprise service needs, and activity safety risks, but they cannot replace planning approvals, output unauthorized personal profiles, or claim to have obtained official implementation commitments. All AI scenario nodes should be entered into the structured layers or compliance matrix to allow reviewers to see their relationship with industry, space, and public interest.
 
@@ -221,6 +221,23 @@ The proposal is named "京张智脉·光晕 / Jing-Zhang AI Heritage Halo." The 
 - Color accessibility: Information conveyance does not rely on color alone
 
 **Agent.2 — AI Full-Stack Independent Innovation System and World-Class AI Innovation Ecosystem (5–8 AI Ecosystem Cases)**
+
+**Global AI Innovation Ecosystem Cases (research reference, not a commitment):** The following internationally reported AI innovation ecosystem cases are used to extract "institution–space–industry–governance" synergy mechanisms as transferable references for this project's conceptual proposal. Specific transferability must be verified case-by-case against local conditions; these are not templates to be copied.
+
+| # | Case | Location | Core Mechanism | Inspiration for Jing-Zhang | Source |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Toronto Waterfront Quayside (Sidewalk Labs concept) | Toronto, Canada | Digital twin + sensors + modular blocks, public data governance and privacy assessment (terminated, but left public data governance and benefit-sharing discussion) | Digital infrastructure must be co-designed with public data governance to avoid technology-first prioritization | [source:GLOBAL-CASE-TORONTO] |
+| 2 | Punggol Digital District | Singapore | Smart industrial park + university + community integration, AI/robotics industry + open digital platform synergy | Industry–academia–residence–research integration can inform the Origin Community collaboration model | [source:GLOBAL-CASE-PUNGGOL] |
+| 3 | Station F (incl. AI programs) | Paris, France | Single landmark aggregating incubators, accelerators, and corporate open innovation, AI projects matched with industry capital | International roadshow hub can borrow the "corporate–startup–capital" open-space model | [source:GLOBAL-CASE-STATIONF] |
+| 4 | Here East / Queen Elizabeth Olympic Park | London, UK | Heritage venue conversion to digital creative and AI cluster, shared facilities among universities, enterprises, and community | Rail/industrial heritage reuse + digital creative cluster aligns with Jing-Zhang heritage renewal path | [source:GLOBAL-CASE-HEREEAST] |
+| 5 | Smart Kalasatama | Helsinki, Finland | Open-data + AI urban living lab for residents, "time saved" as KPI | Public scenario open program and data minimization can reference the "living lab" methodology | [source:GLOBAL-CASE-KALASATAMA] |
+| 6 | Shenzhen AI ecosystem | Shenzhen, China | Full-chain hardware–software–application synergy, government funds + leading enterprises driving SMEs | Full-stack independent innovation + government fund portfolio can serve as reference for Zhongzhi Park mechanism | [source:GLOBAL-CASE-SHENZHEN] |
+| 7 | Seoul Digital Media City (DMC) | Seoul, South Korea | Dedicated plot + infrastructure integrated planning, digital content and AI enterprise cluster, cultural facilities driving public activity | "Cultural landmark + industry cluster + public activity" combination supports Dazhongsi international communication vision | [source:GLOBAL-CASE-SEOUL-DMC] |
+| 8 | Tel Aviv–Be'er Sheva AI corridor | Israel | University–military R&D–startup–enterprise AI R&D corridor, talent and test-scenario linkage | Transit-anchored "R&D–test–commercialization" corridor concept supports the Jing-Zhang "one-belt three-core" structure | [source:GLOBAL-CASE-IL-AICORRIDOR] |
+
+> The above case information comes from public reports and academic reviews and serves as research reference only. It does not indicate that the project has established cooperation or obtained authorization from the above entities. Transferability, quantitative indicators, and localization conditions must be verified case-by-case during the detailed design phase.
+
+**Proposed AI Ecosystem Facilities (local transformation of the 5–8 AI ecosystem case requirement, conceptual proposal):**
 1. Independent large-model training and evaluation platform (Zhongzhi Park)
 2. AI security governance and standard-setting workshop (Zhongzhi Park)
 3. Open-source community collaboration space (AI Origin Community)
@@ -236,10 +253,29 @@ The 10 scenario cards are listed in the "AI+ Scenarios" chapter table. The 3 ind
 2. AI Origin Community Open-Source Code Collaboration Platform — cross-institutional code contribution and joint testing
 3. Dazhongsi Intelligent Agent Interoperability Test Field — cross-vendor agent collaboration testing in an urban environment
 
-**Agent.4 — AI Public Space, AI-Native New Formats, and Pilgrimage Landmarks (3 AI Pilgrimage Landmarks)**
-1. **清华园 Station · AI Origin Monument**: Establish an AI origin monument at the historic Qinghuayuan Station of the Jing-Zhang Railway, marking "the first kilometer of AI moving from the lab to the city."
+**Agent.4 — AI Public Space, AI-Native New Formats, and Pilgrimage Landmarks (3 Pilgrimage Landmarks + Public Space Component Library + Honor Display System)**
+
+**3 AI Pilgrimage Landmarks:**
+1. **Qinghuayuan Station · AI Origin Monument**: Establish an AI origin monument at the historic Qinghuayuan Station of the Jing-Zhang Railway, marking "the first kilometer of AI moving from the lab to the city."
 2. **Zhongzhi Park · Full-Stack Innovation Lighthouse**: Set up an interactive AI innovation display lighthouse in the core area of Zhongzhi Park, showcasing independent innovation achievements in real time.
 3. **Dazhongsi · Digital Bell Tower**: Combine the historical bell of Dazhongsi with AI-generated sound art to create a sound landmark where "every chime is a dialogue between history and the future."
+
+**Public Space Component Library (conceptual design suggestions, to be verified during detailed design):**
+| Component | Type | Applicable Location | Description |
+| --- | --- | --- | --- |
+| Smart Wayfinding Kiosk | Information device | Heritage park entrances, transit station exits | Slow-mobility navigation, scenario activity info, multilingual service; design consistent with Jing-Zhang Railway elements |
+| Code Display Column | Public art | Zhongzhi Park, Origin Community, Dazhongsi | Transparent cylinder displaying open-source code snippets; QR code links to full repository |
+| Data Flow Speed-Read Screen | Digital interface | Zhongzhi Park, Dazhongsi | Real-time anonymized public data flow (energy efficiency, usage heatmap, event count); no personal data displayed |
+| Slow-Mobility Charging Post | Service facility | Heritage park trail | Integrated phone charging, Wi-Fi, environmental sensor; "smart sleeper" form factor |
+| Community Notice Board | Information device | Community–commerce intersections | Non-digital service guarantee: paper-readable board + manual updates, no smart device dependency |
+| Waterfront Rest Node | Spatial node | Qinghe and Xiaoyuehe banks | Combined stormwater management, ecological display, AI environmental interpretation, and seating |
+
+**Honor Display System (conceptual design suggestions, subject to implementation plan):**
+- **Public Data Contributor Honor Wall**: Physical honor wall in Zhongzhi Park core area, rotating display of individuals/organizations contributing to public datasets and AI scenario open programs (with authorization)
+- **Open-Source Contributor Digital Display**: Digital screen in Origin Community open-source hall, showing open-source community code contributor leaderboard (from public repos, no personal privacy)
+- **AI Governance Pioneer Board**: Exhibition area in Dazhongsi International Roadshow Hall, recording exemplary contributions to AI safety governance, standard-setting, and ethical review (with contributor authorization)
+- **Annual AI Innovation Award**: Proposed for presentation during the annual Jing-Zhang AI Innovation Week, recognizing outstanding projects in AI urban applications, scenario openness, and public interest protection
+- **Operating Principles**: All content requires authorization; no personal sensitive information; annual refresh; content reviewed by community governance committee
 
 **Agent.5 — Integrated Narrative of Centennial Jing-Zhang Culture, Zhongguancun Culture, and AI New Culture**
 Three-layer cultural integration narrative:
@@ -247,13 +283,29 @@ Three-layer cultural integration narrative:
 - **Middle Layer (Zhongguancun Spirit)**: From "Electronics Street" to AI innovation source—stories of intellectuals and entrepreneurs.
 - **Top Layer (AI New Culture)**: Open source, sharing, human–machine collaboration, global AI community—a city civilization for the future.
 
-**Agent.6 — Global AI Innovation Activity System and Long-Term Operations**
-- Annual events: Jing-Zhang AI Innovation Week (spring), Global AI Open Day (autumn).
-- Community operations: Monthly open-source developer meetups, quarterly AI scenario roadshows.
-- Pilgrimage route: "AI Pilgrimage Path" walking route connecting the three pilgrimage landmarks.
-- Long-term mechanisms: AI scenario open program, public data contributor honor wall, AI governance dialogue platform.
+**International Communication Narrative (conceptual copy, for campaign and brand development):**
+- **English brand line**: "From Iron Rails to Intelligent Trails — The Centennial Belt of AI Innovation"
+- **Chinese brand line**: "京张智脉，光晕未来" (Jing-Zhang Heritage Halo — where rail memory meets the AI future)
+- **Three communication themes**: ① "China's First AI Innovation Belt on a Century Rail"; ② "Where Heritage Meets Algorithm"; ③ "Open, Verified, Human-Centered AI"
+- **International communication vehicles**: Global AI Open Day (autumn), international roadshow hall, multilingual wayfinding and scenario guides, multilingual AI Pilgrimage Path experience routes, open-source project international collaboration page
+- **Authenticity principle**: All communication content must be based on verifiable public facts and authorized outcomes; no overstatement of implementation commitments; conceptual proposals must not be presented as completed facts
 
-> All Agent task content above consists of conceptual suggestions and reference schemes, compiled from the announcement and site materials for professional teams to further study, verify, and adjust during the detailed design phase. They do not constitute confirmed government activities or implementation arrangements.
+## Three-Zone/Two-Wing Synergy and Regional Collaboration Framework (conceptual framework)
+
+**Three-zone/two-wing synergy loop (conceptual framework, pending industrial planning and spatial conditions):**
+- **Core zone (three cores)**: Zhongzhi Park (full-stack innovation), AI Origin Community (achievement transformation), Dazhongsi (intelligent economy), connected by the Jing-Zhang Heritage Park vitality belt, forming an "R&D–validation–display" industrial closed loop
+- **West wing (Zhongguancun Science & Technology Service Wing)**: extends south along Zhongguancun Avenue connecting the Zhongguancun Science City core, focusing on fintech, IP, standards/testing, and AI governance services; specific spatial nodes pending formal regulatory plan
+- **East wing (Xiaoyuehe Scenario Empowerment Wing)**: extends north along the Xiaoyuehe ecological corridor connecting university and research clusters, deploying AI open scenario labs, public data marketplaces, and community AI experience stations; specific sites pending Xiaoyuehe waterfront survey and regulatory plan
+- **Synergy mechanism**: the three cores are physically connected by the Jing-Zhang Heritage Park slow-mobility system, while the east/west wings form a "service–scenario" loop through industrial complementarity and data sharing; the specific operating architecture, responsible entities, and KPIs must be jointly determined during the detailed design phase
+
+**Regional collaboration framework (conceptual directions, pending formal agreements):**
+- **Beiwu Community**: AI hardware and compute collaboration with Shangdi Information Industry Base; Zhongzhi Park focuses on software and algorithms while Beiwu focuses on chips and compute infrastructure
+- **Future Science City**: joint frontier AI research and talent training; Origin Community serves as the front-end for achievement transformation
+- **Huairou Science City**: AI + scientific computing cross-research leveraging large-scale scientific facilities
+- **Yizhuang (ETDZ)**: connect autonomous driving and smart manufacturing AI scenario testing needs; Dazhongsi test field can host city-level AI scenario validation for ETDZ enterprises
+- **Beijing-Tianjin-Hebei collaboration**: conceptual direction to explore "R&D in Beijing, manufacturing in Tianjin-Hebei" AI industrial division model, requires dedicated industrial policy and spatial planning; not an implementation plan
+
+> The above regional collaboration framework comprises conceptual directions based on public planning materials and industrial trend analysis, not confirmed cooperation or policy commitments. Specific mechanisms, partners, and implementation paths must be confirmed case-by-case during the detailed design phase.
 
 ## Land Use, Building Scale, and Retain/Renovate/Demolish Scheme
 
