@@ -130,7 +130,7 @@ The five personas map to five space-and-service demands, linked to scenario card
 
 ### Ten AI Scenario Cards
 
-Every scenario card fills a six-item duty table: service hours, data boundary, accountable person, non-digital alternative, shutdown threshold, recovery and maintenance.[source:AGENT-TASKBOOK] [standard:GENERATIVE-AI-INTERIM-MEASURES] [metric:scenario_card_count]
+Every scenario card fills a ten-item duty table: service hours, input data, model role, maturity, human-takeover trigger, responsible party, public-interest KPIs, spatial/facility requirements, non-digital alternative, and recovery and maintenance; the three industry-test scenarios (Cards 1-3) additionally list admission conditions.[source:AGENT-TASKBOOK] [standard:GENERATIVE-AI-INTERIM-MEASURES] [metric:scenario_card_count]
 
 | # | Scenario | Location | Type | Served |
 | --- | --- | --- | --- | --- |
@@ -147,18 +147,160 @@ Every scenario card fills a six-item duty table: service hours, data boundary, a
 
 All three industry-test scenarios (1-3) set a "shutdown threshold": precision degradation, environmental excursion, abnormal complaints, or equipment faults trigger automatic degradation, isolation, or offline; test hours are separated from public hours and the public is not included in tests by default.[source:AGENT-TASKBOOK] [standard:GENERATIVE-AI-INTERIM-MEASURES] [metric:industry_test_scenario_count]
 
-**Six-item duty table template** (fully filled for scenario card 1, "Open model evaluation field"):
+**Ten-item duty table template**: seven items are implementability elements - input data, model role, maturity, human-takeover trigger, responsible party, public-interest KPIs, and spatial/facility requirements - alongside service hours, non-digital alternatives, and recovery and maintenance from the duty discipline; maturity maps to the three-phase implementation (phase 1 trusted service, phase 2 controlled trials, phase 3 sustainable operations). The three industry-test scenarios add admission conditions, forming pilot gates (admission - human takeover - stop - evaluation).[source:AGENT-TASKBOOK] [standard:GENERATIVE-AI-INTERIM-MEASURES] [metric:scenario_card_count]
+
+#### Scenario Card 1: Open Model Evaluation Field (Zhongzhi Garden - industry test)
 
 | Duty item | Content |
 | --- | --- |
 | Service hours | Weekdays 10:00-18:00 evaluation field open; nights reserved for scheduled controlled evaluations |
-| Data boundary | Only submitter-declared public model information is displayed; evaluation data retained 90 days, deletable |
-| Accountable person | On-duty evaluator + escalation contact + 30-minute response deadline |
+| Input data | Benchmarks and model weights (submitter-declared public parts only), evaluation logs, site sensor state; non-public inputs are not retained |
+| Model role | Deterministic benchmark scoring and report generation; no scoring or ranking decisions |
+| Maturity | P2 pilot (phase 2, Zhongzhi Garden); the toolchain already runs in open-source communities, site integration is pilot-level |
+| Human-takeover trigger | Precision anomaly, evaluation-environment excursion, abnormal complaint, or equipment fault triggers automatic degradation and on-duty human review |
+| Responsible party | Zhongzhi Garden operator (concept) on-duty evaluator + escalation contact; pilot launch needs operator review |
+| Public-interest KPIs | Public evaluation hours/month, public evaluation results/month, 7-day complaint closure rate target 100% |
+| Spatial/facility requirements | Public evaluation plaza, evaluation stations, shared boundary with Card 2 test ring, open-source protocol market |
 | Non-digital alternative | Manual registration desk, paper benchmark brochure, phone consultation |
-| Shutdown threshold | Precision anomaly, evaluation-environment excursion, abnormal complaint, or equipment fault triggers shutdown |
 | Recovery and maintenance | Work order, version, cause, and human review records before recovery |
+| Admission conditions | Submitter confirms the data-boundary agreement; equipment self-check passes before entry (pilot gate) |
 
-The remaining nine cards follow the same template, detailed at the operation stage; the main text does not expand each one.[source:AGENT-TASKBOOK] [standard:GENERATIVE-AI-INTERIM-MEASURES]
+#### Scenario Card 2: Low-Speed Robot Delivery Test Ring (Zhongzhi Garden - industry test)
+
+| Duty item | Content |
+| --- | --- |
+| Service hours | Test hours separated from public hours (e.g. 09:00-11:00, 14:00-16:00); no runs during public hours |
+| Input data | Test-ring real-time sensors (pedestrians/obstacles), weather data, test delivery orders, low-speed localization (GPS+LiDAR); no public identity data collected |
+| Model role | Low-speed path planning and obstacle avoidance inside the isolated ring (speed cap 5 km/h); no open-right-of-way coverage |
+| Maturity | P2 pilot (phase 2, Zhongzhi Garden); ring is trial-level, commercial delivery is out of scope |
+| Human-takeover trigger | Pedestrian intrusion, sensor loss, speed excursion, or gale/snow-rain weather alert triggers emergency stop and remote human takeover |
+| Responsible party | Test-ring operator + on-site safety officer; the public is not included in tests by default |
+| Public-interest KPIs | Public intrusion incidents during test hours (target 0), safety-event response time, safety drills/month |
+| Spatial/facility requirements | Isolated low-speed robot test ring, charging and maintenance points, fencing and warning signage |
+| Non-digital alternative | Manual delivery and pickup points retained during public hours |
+| Recovery and maintenance | Stop-cause records, recovery after re-inspection; test data retained 90 days, deletable |
+| Admission conditions | Low-speed self-check, on-site safety officer present, weather window satisfied before start (pilot gate) |
+
+#### Scenario Card 3: Autonomous Shuttle Demo Line (corridor - Dazhongsi - industry test)
+
+| Duty item | Content |
+| --- | --- |
+| Service hours | Demo hours (e.g. 07:30-09:30, 17:00-19:00) + booked experience hours; regular transit covers the rest |
+| Input data | OSM existing road network, real-time station ridership, weather, vehicle telemetry; no route commitment until rail/transport special data is confirmed |
+| Model role | Fixed-route lane keeping, obstacle avoidance, speed control (demo level); no open-right-of-way full scenarios |
+| Maturity | P3 demo (phase 3, Dazhongsi and southern wings); depends on rail/transport special data, listed as pending confirmation |
+| Human-takeover trigger | On-board safety officer takeover; excursion/fault/abnormal ridership stops the service |
+| Responsible party | Demo-line operator + on-board safety officer; operating permit needs transport special review (approval gate) |
+| Public-interest KPIs | Demo on-time rate, monthly ridership, safety incidents (target 0) |
+| Spatial/facility requirements | Shuttle stops (north end Zhongzhi Garden, south end Dazhongsi), roadside perception nodes, depot (pending confirmation) |
+| Non-digital alternative | Regular bus and walking alternatives retained |
+| Recovery and maintenance | Stop-cause records, recovery after re-inspection |
+| Admission conditions | Certified on-board safety officer, minimum road-test mileage, transport special review passed before demo (pilot gate) |
+
+#### Scenario Card 4: AI+ Health Service Navigation (XiaoYue River Wing - life service)
+
+| Duty item | Content |
+| --- | --- |
+| Service hours | 09:00-18:00 counter service; navigation interface open 24h, night staffing reduced |
+| Input data | Public health-resource directory (including the public distribution of 239 community health centers), map data; no personal health data collected |
+| Model role | Information navigation (retrieval, ranking, route recommendation); no diagnosis, medication advice, or referral decisions |
+| Maturity | P1 first (phase 1, Origin Community and heritage core); information service, no medical decisions |
+| Human-takeover trigger | User requests human help, navigation result doubtful, or emergency situations route to human/120 |
+| Responsible party | XiaoYue River community service operator + social workers; medical information accuracy follows the health authority's public statements |
+| Public-interest KPIs | Navigation accuracy (spot-checked against the public directory), elderly usage/month, human referral response time |
+| Spatial/facility requirements | XiaoYue River wing service counter, accessible facilities, direct-dial phone zone |
+| Non-digital alternative | Paper guidance, human counter, phone consultation |
+| Recovery and maintenance | Resource directory update and correction process |
+
+#### Scenario Card 5: AI+ Adaptive Classroom (College District - education)
+
+| Duty item | Content |
+| --- | --- |
+| Service hours | After-school hours in term time (e.g. 16:00-18:00); does not replace regular classes |
+| Input data | Textbooks and public educational resources (cleared), anonymized exercise responses; minimal student personal data |
+| Model role | Exercise difficulty adaptation and learning-progress reports; assists teachers, does not replace teacher judgment |
+| Maturity | P2 pilot; needs education-authority pilot permit and parental consent process |
+| Human-takeover trigger | Learning anomaly, teacher/parent request, or data-security incident triggers stop and human intervention |
+| Responsible party | Pilot school + education operator; pilot launch needs education-authority permit (approval gate) |
+| Public-interest KPIs | Pilot-class participation rate, teacher satisfaction, data-minimization audit pass |
+| Spatial/facility requirements | College District education space, adaptive classroom equipment room |
+| Non-digital alternative | Traditional classroom and paper exercises retained |
+| Recovery and maintenance | Data retention and deletion rules, stop and re-inspection |
+
+#### Scenario Card 6: AI+ Community Elderly Companion (Origin Community - community service)
+
+| Duty item | Content |
+| --- | --- |
+| Service hours | 09:00-20:00 companion service; 24-hour emergency call channel |
+| Input data | Public community service resources, user-authorized time preferences; no health/medical data, no medical judgment |
+| Model role | Companion dialogue, schedule reminders, emergency recognition routed to human; no automation of medical/legal/administrative decisions |
+| Maturity | P1 first (phase 1, Origin Community); elder-friendly usability validation |
+| Human-takeover trigger | Emotional/health anomaly, explicit user request, or device fault routes to human (social worker/family/120) |
+| Responsible party | Origin Community operator + on-duty social workers; privacy and minimal-collection statement |
+| Public-interest KPIs | Elderly people living alone covered, service satisfaction, emergency referral success rate |
+| Spatial/facility requirements | Origin Community service point, elder-friendly facilities, non-digital counter |
+| Non-digital alternative | Human companionship, phone, home visits |
+| Recovery and maintenance | Anomaly records, review, re-inspection |
+
+#### Scenario Card 7: AI+ Civic Service Counter (Zhongguancun Wing - public service)
+
+| Duty item | Content |
+| --- | --- |
+| Service hours | In sync with the civic hall (e.g. 09:00-17:00) |
+| Input data | Public service guides and document checklists; no personal data beyond what the service requires |
+| Model role | Document prompts, process guidance, document pre-check; does not replace approval decisions |
+| Maturity | P1 first (phase 1); information-prompt level |
+| Human-takeover trigger | Doubtful documents, user request, or administrative decisions route to human windows |
+| Responsible party | Civic service operator + window staff; approval decisions are made by administrative authorities |
+| Public-interest KPIs | One-pass document rate, average service time, human window response |
+| Spatial/facility requirements | Zhongguancun wing civic counter, queue system, accessible facilities |
+| Non-digital alternative | Human windows, phone, paper materials |
+| Recovery and maintenance | Service guide updates, complaint closure |
+
+#### Scenario Card 8: Compute Promenade Cultural Guide (Heritage Park Belt - culture and tourism)
+
+| Duty item | Content |
+| --- | --- |
+| Service hours | Park opening hours |
+| Input data | Public cultural sources (1909 Jing-Zhang railway history, primary sources pending registration), landmark locations |
+| Model role | Guide content generation and audio narration based on verified sources; no new historical claims |
+| Maturity | P1 first (phase 1, heritage core); content-guide level |
+| Human-takeover trigger | Doubtful content, visitor complaints, or facility faults route to human guides and maintenance |
+| Responsible party | Park operator + docents; source review required for historical content |
+| Public-interest KPIs | Guide usage, source-verified accuracy rate, accessible-guide coverage |
+| Spatial/facility requirements | Promenade guide nodes, QR codes/beacons, accessible ramps |
+| Non-digital alternative | Human guided tours, guide brochures |
+| Recovery and maintenance | Content updates, source re-review |
+
+#### Scenario Card 9: Contribution Honor Wall + Achievement Gallery (Origin Community - cultural landmark)
+
+| Duty item | Content |
+| --- | --- |
+| Service hours | Open-day and regular display hours |
+| Input data | Contributor lists (after rights clearance), public open-source achievement information; no un-cleared personal/enterprise marks displayed |
+| Model role | No AI decisions; digital honor wall renders content only |
+| Maturity | P1 permanent (phase 1, Origin Community); content and clearance depend on human process |
+| Human-takeover trigger | List disputes or incomplete clearance means no display |
+| Responsible party | Origin Community operator + clearance review process |
+| Public-interest KPIs | Annual updates, clearance completion rate, public visits |
+| Spatial/facility requirements | Honor wall and gallery space (Origin Community), optional digital screens |
+| Non-digital alternative | Stone inscriptions, physical display boards |
+| Recovery and maintenance | List update process |
+
+#### Scenario Card 10: Compute Belt Open Day - Developer Community (Dazhongsi - event operation)
+
+| Duty item | Content |
+| --- | --- |
+| Service hours | Annual Compute Belt Open Day + monthly developer events |
+| Input data | Public event information, authorized registration data; no personal sensitive information |
+| Model role | Optional agenda recommendation; no automatic decisions |
+| Maturity | P3 operation (phase 3, Dazhongsi); event-operation level |
+| Human-takeover trigger | Event safety incidents or content disputes route to human handling |
+| Responsible party | Dazhongsi operator + event organizing committee; event filing is the approval gate |
+| Public-interest KPIs | Event attendance, developer-community activity, safety incidents (target 0) |
+| Spatial/facility requirements | Compute open-market plaza, developer community space, accessible and evacuation routes |
+| Non-digital alternative | On-site registration, paper schedules |
+| Recovery and maintenance | Event review, annual improvements |
 
 Accessibility and elder-friendly requirements run through all scenarios: public interfaces keep no-login human service paths and continuous accessible design, in line with the barrier-free environment law and the convenience requirements for elderly smart-technology use; no AI service introduction may come at the cost of accessibility for vulnerable groups.[standard:BARRIER-FREE-ENVIRONMENT-LAW] [standard:ELDERLY-SMART-TECH-PLAN-2020-45]
 

@@ -999,7 +999,198 @@
       ],
       "status": "covered",
       "coverage_status": "covered",
-      "evidence_summary_zh": "AI+场景：10 场景卡（含 3 产业测试）+ 5 类用户画像"
+      "evidence_summary_zh": "AI+场景：10 场景卡（含 3 产业测试）十项值守表全量填写（输入数据/模型作用/成熟度/人工接管触发/责任主体/公共利益KPI/空间设施需求/服务时段/非数字替代/恢复维护），逐场景运营映射见 scenario_operation_mapping",
+      "scenario_operation_mapping": [
+        {
+          "scenario_id": "SC-01",
+          "scenario_zh": "开源模型评测开放场",
+          "location": "众智园",
+          "type": "industry_test",
+          "maturity": "P2_pilot",
+          "responsible_party_zh": "众智园运营主体/当班评测员",
+          "phase": "P2",
+          "public_interest_kpis": [
+            "evaluation_hours_per_month",
+            "public_results_per_month",
+            "complaint_closure_rate_7d"
+          ],
+          "spatial_facilities": [
+            "公共评测广场",
+            "评测台",
+            "隔离试验环(共享)",
+            "开源协议市"
+          ]
+        },
+        {
+          "scenario_id": "SC-02",
+          "scenario_zh": "低速机器人配送试验环",
+          "location": "众智园",
+          "type": "industry_test",
+          "maturity": "P2_pilot",
+          "responsible_party_zh": "试验环运营方/现场安全员",
+          "phase": "P2",
+          "public_interest_kpis": [
+            "public_intrusion_incidents",
+            "safety_response_time",
+            "safety_drills_per_month"
+          ],
+          "spatial_facilities": [
+            "低速隔离试验环",
+            "充电检修点",
+            "围栏警示标识"
+          ]
+        },
+        {
+          "scenario_id": "SC-03",
+          "scenario_zh": "自动驾驶接驳示范线",
+          "location": "走廊—大钟寺",
+          "type": "industry_test",
+          "maturity": "P3_demo",
+          "responsible_party_zh": "示范线运营主体/随车安全员",
+          "phase": "P3",
+          "public_interest_kpis": [
+            "demo_on_time_rate",
+            "monthly_ridership",
+            "safety_incidents"
+          ],
+          "spatial_facilities": [
+            "接驳站点(北/南端)",
+            "路侧感知节点",
+            "停保场(待确认)"
+          ]
+        },
+        {
+          "scenario_id": "SC-04",
+          "scenario_zh": "AI+健康服务导航",
+          "location": "小月河翼",
+          "type": "life_service",
+          "maturity": "P1_first",
+          "responsible_party_zh": "社区服务运营方/社工",
+          "phase": "P1",
+          "public_interest_kpis": [
+            "navigation_accuracy",
+            "elderly_usage_per_month",
+            "human_referral_response"
+          ],
+          "spatial_facilities": [
+            "服务柜台",
+            "无障碍设施",
+            "电话直拨区"
+          ]
+        },
+        {
+          "scenario_id": "SC-05",
+          "scenario_zh": "AI+教育自适应课堂",
+          "location": "学院区",
+          "type": "education",
+          "maturity": "P2_pilot",
+          "responsible_party_zh": "试点学校/教育运营方",
+          "phase": "P2",
+          "public_interest_kpis": [
+            "pilot_class_participation",
+            "teacher_satisfaction",
+            "data_minimization_audit"
+          ],
+          "spatial_facilities": [
+            "教育空间",
+            "自适应课堂设备间"
+          ]
+        },
+        {
+          "scenario_id": "SC-06",
+          "scenario_zh": "AI+社区养老陪伴",
+          "location": "原点社区",
+          "type": "community_service",
+          "maturity": "P1_first",
+          "responsible_party_zh": "原点社区运营方/社工值班",
+          "phase": "P1",
+          "public_interest_kpis": [
+            "elderly_alone_covered",
+            "service_satisfaction",
+            "emergency_referral_success"
+          ],
+          "spatial_facilities": [
+            "社区服务点",
+            "适老设施",
+            "非数字柜台"
+          ]
+        },
+        {
+          "scenario_id": "SC-07",
+          "scenario_zh": "AI+政务服务柜台",
+          "location": "中关村翼",
+          "type": "public_service",
+          "maturity": "P1_first",
+          "responsible_party_zh": "政务运营方/窗口人员",
+          "phase": "P1",
+          "public_interest_kpis": [
+            "one_pass_document_rate",
+            "average_service_time",
+            "window_response"
+          ],
+          "spatial_facilities": [
+            "政务柜台",
+            "叫号系统",
+            "无障碍设施"
+          ]
+        },
+        {
+          "scenario_id": "SC-08",
+          "scenario_zh": "算力散步道文化导览",
+          "location": "遗址公园带",
+          "type": "culture_tourism",
+          "maturity": "P1_first",
+          "responsible_party_zh": "公园运营方/讲解员",
+          "phase": "P1",
+          "public_interest_kpis": [
+            "guide_usage",
+            "source_verified_accuracy",
+            "accessible_guide_coverage"
+          ],
+          "spatial_facilities": [
+            "导览节点",
+            "二维码/信标",
+            "无障碍坡道"
+          ]
+        },
+        {
+          "scenario_id": "SC-09",
+          "scenario_zh": "贡献荣誉墙+成果展示廊",
+          "location": "原点社区",
+          "type": "cultural_landmark",
+          "maturity": "P1_permanent",
+          "responsible_party_zh": "原点社区运营方/清权审核",
+          "phase": "P1",
+          "public_interest_kpis": [
+            "annual_updates",
+            "clearance_completion_rate",
+            "public_visits"
+          ],
+          "spatial_facilities": [
+            "荣誉墙/展示廊",
+            "数字屏(可选)"
+          ]
+        },
+        {
+          "scenario_id": "SC-10",
+          "scenario_zh": "算带开放日·开发者社区",
+          "location": "大钟寺",
+          "type": "event_operation",
+          "maturity": "P3_operation",
+          "responsible_party_zh": "大钟寺运营主体/活动组委会",
+          "phase": "P3",
+          "public_interest_kpis": [
+            "event_attendance",
+            "developer_activity",
+            "safety_incidents"
+          ],
+          "spatial_facilities": [
+            "算力开放市场广场",
+            "开发者社区空间",
+            "无障碍疏散通道"
+          ]
+        }
+      ]
     },
     {
       "requirement_id": "agent.4",
