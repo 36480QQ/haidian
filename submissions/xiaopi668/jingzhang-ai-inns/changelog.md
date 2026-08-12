@@ -1,5 +1,15 @@
 # 方案迭代记录
 
+## v0.3 - 2026-08-12
+
+- 按高分实战经验优化（v0.2 合并后迭代，新 PR）：
+  - 强化核心机制：新增「驿牌授权 Inn-Token Authorisation」执行摘要（京张铁路路签闭塞制度→AI 驿牌授权，口令 ONE BELT, THREE INNS — NO TOKEN, NO ENTRY），映射 AI_SERVICE_ZONE/SCENARIO_NODE 图层。
+  - 证据链扩容：metrics 15→30 项 known（补充用地/重点区/分期/数量/绿道指标，全部几何复算）、assumptions 5→15、sources 15→29（含 8 案例 + 京张铁路历史等背景来源）、standard_matrix 6→9（补生成式AI办法、无障碍法、老年人方案）。
+  - 新增 risk.json（模板 schema 8 维）。
+  - 可实施性具体物：先导试点区间、3 个可独立暂停项目包、驿牌准入四步闸门、人力编制概念测算、应急响应预案。
+  - 展示资产：assets/media/cover.webp（manifest 声明 cover_image）、visual/assets/rights-ledger.json（机读权利台账）。
+- 本地四门自检与推送预检全部 PASS。
+
 ## v0.2 - 2026-08-11
 
 - 回应 PR #1756 AI 评审（request-changes，七维 55/100）：

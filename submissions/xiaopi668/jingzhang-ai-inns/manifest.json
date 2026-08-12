@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "981b9a5703fb747087ebb6821e48ba32d51742cefc15675a24601c92fcde9a4b"
+      "sha256": "b067a898bd2ec9fc402efdec22f71f6b10ef9d2ca8bd8c43a76f90b27716e93d"
     },
     {
       "path": "agent.json",
@@ -38,25 +38,25 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "1c2007f7a012b3052754d2dd70142e4168e734336f86f64755b418e9de9afe72"
+      "sha256": "9d9650559e59b165abeaa07384306a15f28aa00bab9391f6618e3a66d4700ba1"
     },
     {
       "path": "assumptions.json",
       "role": "assumptions",
       "required": true,
-      "sha256": "b417465d36a34ccdc2adfb3a5f699a1f2b355a21ac2a065a5970dfb18d5d400d"
+      "sha256": "95670587bc23a412a2d5217f14fee333dbada12d53d3e3f047f5bcc195f7cd86"
     },
     {
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "d8de7f1b323c0ce03e74a6d9b2b66cefbc2b39589ae1f8439aae9f6d9a12ef65"
+      "sha256": "d6f1195a26694440ca54e6a68b4bb3bba15ef57b75fce94e392b7a3df8992d32"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "11be231847768692c23af82f2469b56a81d0f3707a0130eb65b6b557af1a07be"
+      "sha256": "f7432aab12bb194efa3c83b727e317721510feaf359a94a94a5a5e70a5279be3"
     },
     {
       "path": "compliance_matrix.json",
@@ -68,7 +68,7 @@
       "path": "standard_matrix.json",
       "role": "standard_matrix",
       "required": true,
-      "sha256": "f16122ea863936c52f56b54773f08451dce4336c7da44d008b6a47bcb5901ba4"
+      "sha256": "6395806d3bc6fc4251df7ebd798979259d0cc9249ab4f34c620afafbecaa7b7e"
     },
     {
       "path": "design_depth_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "07d08e069c66f4f1dffa48163160c3116fb791c07023e83ad328f8dc06a683a9"
+      "sha256": "7a231bb2b5b0d47c1c43da3d9dbb03a6f6093c14fe69b1db7b6b18e37d7bb53a"
     },
     {
       "path": "report/narrative.md",
@@ -114,7 +114,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "6371ee7eed5a92559b18ec20430b8400742247ea15984df4ef4755657cd10286"
+      "sha256": "3da973f54db86397d652689551f66914f2d8de2e0a5fa9659b272b08ef9cd39d"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "d2a4d5daab00580693cd5b2beb62ced9a75d8825d907f052506af04b47257b40"
+      "sha256": "ace70b2e4f58fe18dc74552e7b24ae793671013e20c8f73aa0ca73af6e7aadbd"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "f33ef458f0c2a20e2b6155fcd318618e3e92818366c84ce2687d517b232d0fdf"
+      "sha256": "b4a57d97c1f5b6cd3df9bb78ed0f7853cdc3d00e1806605ce54f9d421a788a5e"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "284dae3f53bcf75ce787e662b3824cdeced9f215adb3328cc963c8ccb92db40b"
+      "sha256": "8035a7482a65cb2845fdc74ae4761058c7d48415e718e1d43b619ecf83aa0a18"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -284,6 +284,24 @@
       "language": "en",
       "translation_of": "assets/figures/site-overview.png",
       "sha256": "be309e831219a409aff75c75584cd8d3e9fb546a64eaf51c5d2d06a7976a0550"
+    },
+    {
+      "path": "risk.json",
+      "role": "risk",
+      "required": false,
+      "sha256": "1b1fc77d7573b35ac99d27b80cb853dd56461cbd0e8361e5c7229ca6e7ec4ab0"
+    },
+    {
+      "path": "assets/media/cover.webp",
+      "role": "media_poster",
+      "required": false,
+      "sha256": "ef48b2a4504c74ea0a6670d0654215194b395a7a1682b33d1cfc7aaaec692faa"
+    },
+    {
+      "path": "visual/assets/rights-ledger.json",
+      "role": "rights_ledger",
+      "required": false,
+      "sha256": "9a5a027ccbac3f1aa8bebb35b6da0767334dfb95bb182bbcc6669e851de01e49"
     }
   ],
   "validation_claim": {
@@ -291,5 +309,6 @@
     "known_blockers": [],
     "data_confidence": "high",
     "readiness_contract": "persisted-self-check-v1"
-  }
+  },
+  "cover_image": "assets/media/cover.webp"
 }
