@@ -7,13 +7,20 @@ bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "A railway evidence line, four care ribs, three distinct stack yards and Civic Stack Passports connect AI innovation to human handover, environmental cycles and measurable public benefit; every spatial conclusion remains limited by provisional geometry."
-iteration: "v1.2"
+iteration: "v1.3"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 ---
 
 # Jing-Zhang Civic Stack
 
 > Make every layer of intelligence visible, handover-ready, retireable, and beneficial to everyday life.
+
+![Jing-Zhang Civic Stack mark: a diamond split by a continuous Jing-Zhang Belt void](assets/identity/jingzhang-civic-stack-mark.svg)
+
+## Name and Mark
+
+“Jing-Zhang” carries the public memory of the Centennial Jing-Zhang Railway into the present Haidian innovation-belt task; “Civic Stack” binds innovation return, care and public review into one spatial responsibility. A deep-navy diamond is split from top to bottom by a void abstracted from the submission’s provisional narrow, turning Jing-Zhang Belt geometry. The open void signals a continuous evidence line, while the two halves pair innovation with everyday city life. The void is an identity abstraction, not an official boundary replica. The mark is an original proposal—not an official mark, approval or endorsement of any organizer, government, railway operator, park or partner. The full lock-up and reduced diamond support drawings, web pages, wayfinding and material labels. [depth:identity_system]
+
 ## Design Basis and Source List
 
 ![Civic Stack evidence chain and five interoperable city layers](assets/figures/site-overview.en.png)

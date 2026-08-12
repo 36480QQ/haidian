@@ -1,5 +1,11 @@
 # 方案迭代记录
 
+## v1.3 - 2026-08-12
+
+- Added an original diamond identity mark with a top-to-bottom void abstracted from the submission's provisional Jing-Zhang Belt geometry; the primary mark stays monochrome and keeps circuit semantics in the wider application system.
+- Synchronized the mark and identity explanation across bilingual narrative, offline visual, figures, and the shared A3/A0 drawing sequence.
+- Re-rendered and rechecked all bilingual deliverables after the identity update; the mark is explicitly a proposal identity, not an official boundary or endorsement.
+
 ## v1.2 - 2026-08-12
 
 - Rebuilt the bilingual A3 and A0 drawing sets from one shared page source so page order, content, legends and captions remain aligned at both sizes.
