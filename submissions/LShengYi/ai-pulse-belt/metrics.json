@@ -7,7 +7,7 @@
   "metrics": {
     "site_area_sqm": {
       "status": "known",
-      "value": 11412825.385,
+      "value": 11412825.386,
       "unit": "sqm",
       "source_files": [
         "geometry/site_boundary.geojson"
@@ -21,12 +21,12 @@
     },
     "building_footprint_area_sqm": {
       "status": "known",
-      "value": 1167566.893,
+      "value": 1103163.864,
       "unit": "sqm",
       "source_files": [
         "geometry/buildings.geojson"
       ],
-      "formula": "sum(polygon_area(building_footprints))",
+      "formula": "unary_union(polygon_area(building_footprints)); sum equals union (footprints do not overlap)",
       "confidence": "medium",
       "assumptions": [
         "Building footprints are concept proposals (design_proposal), not statutory permits."
@@ -34,7 +34,7 @@
     },
     "green_ratio": {
       "status": "known",
-      "value": 0.249594,
+      "value": 0.249581,
       "unit": "ratio",
       "source_files": [
         "geometry/green_space.geojson",
@@ -48,7 +48,7 @@
     },
     "public_space_ratio": {
       "status": "known",
-      "value": 0.005434,
+      "value": 0.005187,
       "unit": "ratio",
       "source_files": [
         "geometry/public_space.geojson",
@@ -84,6 +84,42 @@
       "assumptions": [
         "Key areas are provisional constraints, not official."
       ]
+    },
+    "ai_innovation_index": {
+      "status": "unknown",
+      "value": null,
+      "unit": "index",
+      "source_files": [
+        "brief/site-package/ranges/planning_limits.json"
+      ],
+      "formula": "composite(talent_density, ai_r_d_intensity, ai_output_value_per_capita); weights pending official indicator framework",
+      "confidence": "unknown",
+      "assumptions": [],
+      "reason": "Official indicator framework absent from public site package; proposal declares the indicator as a required planning metric (announcement 1.5.2.1) and will compute it once official statistics are released."
+    },
+    "talent_density": {
+      "status": "unknown",
+      "value": null,
+      "unit": "none",
+      "source_files": [
+        "brief/site-package/ranges/planning_limits.json"
+      ],
+      "formula": "ai_related_employment_persons / official_site_area_sqm",
+      "confidence": "unknown",
+      "assumptions": [],
+      "reason": "Official employment statistics absent; indicator declared per announcement 1.5.2.1, computable after data release."
+    },
+    "ai_output_value": {
+      "status": "unknown",
+      "value": null,
+      "unit": "none",
+      "source_files": [
+        "brief/site-package/ranges/planning_limits.json"
+      ],
+      "formula": "sum(ai_enterprise_output_cny) over overall design area, per official statistical caliber",
+      "confidence": "unknown",
+      "assumptions": [],
+      "reason": "Official economic statistics absent; indicator declared per announcement 1.5.2.1, computable after data release."
     }
   }
 }

@@ -10,12 +10,26 @@
       "ok": true,
       "errors": [],
       "warnings": [
-        "submissions/LShengYi/ai-pulse-belt/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied"
+        "submissions/LShengYi/ai-pulse-belt/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied",
+        "submissions/LShengYi/ai-pulse-belt/changelog.md: 可能涉及非公开或敏感资料; maintainer review required",
+        "submissions/LShengYi/ai-pulse-belt/spatial.json: items[0]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/LShengYi/ai-pulse-belt/spatial.json: items[1]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/LShengYi/ai-pulse-belt/spatial.json: items[2]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/LShengYi/ai-pulse-belt/spatial.json: items[4]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/LShengYi/ai-pulse-belt/spatial.json: items[5]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/LShengYi/ai-pulse-belt/spatial.json: items[6]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/LShengYi/ai-pulse-belt/spatial.json: items[11]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/LShengYi/ai-pulse-belt/spatial.json: items[12]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/LShengYi/ai-pulse-belt/spatial.json: items[13]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/LShengYi/ai-pulse-belt/spatial.json: items[16]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/LShengYi/ai-pulse-belt/spatial.json: items[17]: provisional spatial concept needs maintainer review before being treated as public-facing context"
       ],
       "proposal_files": [
         "submissions/LShengYi/ai-pulse-belt/proposal.md"
       ],
-      "changelog_files": [],
+      "changelog_files": [
+        "submissions/LShengYi/ai-pulse-belt/changelog.md"
+      ],
       "changed_files": [
         "submissions/LShengYi/ai-pulse-belt/agent.json",
         "submissions/LShengYi/ai-pulse-belt/assets/figures/key-areas.en.png",
@@ -29,6 +43,7 @@
         "submissions/LShengYi/ai-pulse-belt/assets/figures/site-overview.en.png",
         "submissions/LShengYi/ai-pulse-belt/assets/figures/site-overview.png",
         "submissions/LShengYi/ai-pulse-belt/assumptions.json",
+        "submissions/LShengYi/ai-pulse-belt/changelog.md",
         "submissions/LShengYi/ai-pulse-belt/compliance_matrix.json",
         "submissions/LShengYi/ai-pulse-belt/design_depth_matrix.json",
         "submissions/LShengYi/ai-pulse-belt/drawings/a0-boards.en.pdf",
@@ -52,8 +67,10 @@
         "submissions/LShengYi/ai-pulse-belt/report/narrative.md",
         "submissions/LShengYi/ai-pulse-belt/report/proposal.en.html",
         "submissions/LShengYi/ai-pulse-belt/report/proposal.html",
+        "submissions/LShengYi/ai-pulse-belt/risk.json",
         "submissions/LShengYi/ai-pulse-belt/self_check.json",
         "submissions/LShengYi/ai-pulse-belt/sources.json",
+        "submissions/LShengYi/ai-pulse-belt/spatial.json",
         "submissions/LShengYi/ai-pulse-belt/standard_matrix.json",
         "submissions/LShengYi/ai-pulse-belt/visual/index.en.html",
         "submissions/LShengYi/ai-pulse-belt/visual/index.html"
@@ -61,7 +78,7 @@
       "ai_package_stages": {
         "submissions/LShengYi/ai-pulse-belt": "formal"
       },
-      "total_bytes": 9884103,
+      "total_bytes": 9954036,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -102,12 +119,12 @@
         }
       ],
       "metrics": {
-        "site_area_sqm": 11412825.385,
-        "green_space_area_sqm": 2848570.394,
-        "public_space_area_sqm": 62012.0,
-        "building_footprint_area_sqm": 1167566.893,
-        "green_ratio": 0.249594,
-        "public_space_ratio": 0.005434
+        "site_area_sqm": 11412825.386,
+        "green_space_area_sqm": 2848418.683,
+        "public_space_area_sqm": 59201.753,
+        "building_footprint_area_sqm": 1103163.864,
+        "green_ratio": 0.249581,
+        "public_space_ratio": 0.005187
       }
     },
     "stderr": ""
@@ -119,9 +136,9 @@
       "ok": true,
       "issues": [],
       "metrics_seen": {
-        "site_area_sqm": 11412825.385,
-        "green_ratio": 0.249594,
-        "public_space_ratio": 0.005434
+        "site_area_sqm": 11412825.386,
+        "green_ratio": 0.249581,
+        "public_space_ratio": 0.005187
       }
     },
     "stderr": ""
@@ -133,17 +150,17 @@
       "ok": true,
       "issues": [],
       "summary": {
-        "standard_matrix_items": 6,
+        "standard_matrix_items": 9,
         "design_depth_items": 15,
         "known_metric_refs_required": 5,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
           "source": 7,
-          "standard": 6,
+          "standard": 9,
           "depth": 15,
           "data": 20,
-          "metric": 6
+          "metric": 9
         }
       }
     },
