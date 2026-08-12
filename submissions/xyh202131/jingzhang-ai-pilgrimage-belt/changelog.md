@@ -4,6 +4,19 @@
 >
 > This log records traceable changes to this submission package only. It is not evidence of approval, implementation, field testing, rights clearance, or trusted CI. After any content change, regenerate the manifest from the final Git blobs and rely on repository validation attached to the final PR head.
 
+## v11.0 - 2026-08-12
+
+**Review synthesis and professional handoff / 评审收束与专业深化交接**
+
+- 不再新增品牌、场景、季节、项目或治理合同；把十轮成果收束为“一概念、三原型、一内核”的四步评审入口，并把任务书 agent.1—agent.6 各绑定到一个核心评审问题、现有证据、专业接手动作和禁止推断。
+- Added no brand, scene, season, project, or governance contract. The ten-round package now converges into a four-step “one concept, three prototypes, one kernel” review entry, with each taskbook duty agent.1–agent.6 bound to one core review question, current evidence, professional next action, and prohibited inference.
+- 深化既有 `implementation-handoff-matrix.json`，新增 D01—D08 八类现实资料替换登记、七专业接手矩阵和“冻结—替换—复算—复核—必要时退役”变更控制；正式资料冲突时先保护普通公共权利、停止验证叠层，不得修改官方或锁定图层迁就方案。
+- Deepened the existing `implementation-handoff-matrix.json` with D01–D08 real-input replacement records, a seven-discipline handoff matrix, and freeze–replace–recalculate–verify–retire change control. When authoritative evidence conflicts, ordinary public rights prevail and the proof overlay stops; official or locked layers must never be altered to preserve the proposal.
+- 新增双语 `review-professional-handoff.{svg,png}`，在一张评审面上组织六项任务、八类资料和七专业 NO-GO 停止线；双语正文、离线 visual、报告、合规回链及四份出版物同步纳入该入口。
+- Added bilingual `review-professional-handoff.{svg,png}` to organize six duties, eight input replacements and a seven-discipline NO-GO stop line on one review surface; synchronized the bilingual proposals, offline visual, report, compliance backlinks and four publications.
+- 当前权威替换材料、专业责任接受、99 槽现实材料、批准、现场测试和 GO 决定均为 0。12 场景、8 项目、3 重点区、geometry、metrics、全部 G0、临时边界和 `not_fully_cleared` 均保持不变；文件、机器或 PR 通过不构成任何现实授权。
+- Authoritative replacement inputs, accepted professional duties, real artifacts across 99 slots, approvals, field tests and GO decisions all remain 0. Twelve scenes, eight projects, three key areas, geometry, metrics, all-G0 status, provisional boundaries and `not_fully_cleared` remain unchanged; no file, machine or PR PASS creates real-world authorization.
+
 ## v10.0 - 2026-08-12
 
 **Long-term civic operations and ten-round audit / 长期公共共同体运营与十轮总审计**
