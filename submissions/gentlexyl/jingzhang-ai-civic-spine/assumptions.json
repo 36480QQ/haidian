@@ -28,8 +28,26 @@
     {
       "id": "A-OPS-001",
       "status": "conceptual",
-      "statement": "Open Week calendar and KPI are conceptual operating suggestions.",
-      "impact": "No government event commitment."
+      "statement": "Open Week calendar, 开源共创 workflow, and KPI are conceptual operating suggestions.",
+      "impact": "No government event or budget commitment."
+    },
+    {
+      "id": "A-CASE-001",
+      "status": "background_only",
+      "statement": "International cases in sources.json (CASE-*) are background method references only.",
+      "impact": "Must not be used as official redlines, FAR/height evidence, or investment claims."
+    },
+    {
+      "id": "A-PRIVACY-001",
+      "status": "conceptual_policy",
+      "statement": "Scenario cards assume no biometric tracking and no cross-scene personal profiling; human review is mandatory for safety/service decisions.",
+      "impact": "Any deployment without lawful authorization or human takeover must pause or revert."
+    },
+    {
+      "id": "A-ACTORS-001",
+      "status": "conceptual",
+      "statement": "Listed participating actor types (community, university, enterprise operators, street coordination teams) are suggested categories, not designated legal entities.",
+      "impact": "Actual operators require future multi-party agreements and permits."
     }
   ]
 }

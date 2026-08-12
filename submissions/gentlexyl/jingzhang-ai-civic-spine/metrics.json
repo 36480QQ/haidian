@@ -162,6 +162,60 @@
       "assumptions": [
         "provisional partition strips"
       ]
+    },
+    "scenario_card_count": {
+      "status": "known",
+      "value": 12,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count(scenario_cards_in_proposal)",
+      "confidence": "high",
+      "assumptions": [
+        "narrative count aligned with agent.3 requirement"
+      ]
+    },
+    "industrial_validation_scenario_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count(industrial_validation_scenario_cards)",
+      "confidence": "high",
+      "assumptions": [
+        "cards 02, 07, 11"
+      ]
+    },
+    "pilgrimage_landmark_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "proposal.md",
+        "geometry/public_space.geojson"
+      ],
+      "formula": "count(ai_pilgrimage_landmarks)",
+      "confidence": "high",
+      "assumptions": [
+        "conceptual honor wall, open-source gallery, memory station"
+      ]
+    },
+    "renewal_project_count": {
+      "status": "known",
+      "value": 7,
+      "unit": "count",
+      "source_files": [
+        "proposal.md",
+        "geometry/phasing.geojson"
+      ],
+      "formula": "count(renewal_projects_JZ_01_to_07)",
+      "confidence": "high",
+      "assumptions": [
+        "conceptual project list"
+      ]
     }
   }
 }
