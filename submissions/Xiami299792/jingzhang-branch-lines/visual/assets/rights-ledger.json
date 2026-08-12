@@ -58,11 +58,13 @@
     },
     {
       "path": "assets/media/cover.webp",
-      "generation_method": "AI image generation from a participant-authored prompt (user-provided asset, 2026-08-12); converted to WebP locally without modification",
+      "generation_method": "AI image generation with Doubao AI (豆包, 2026-08-12) from a participant-authored poster prompt; converted to WebP locally without modification",
       "ai_generated": true,
       "text_free": false,
       "text_review": "Poster is a conceptual presentation graphic; any rendered text is AI-generated and not authoritative; it does not replace GeoJSON/JSON evidence.",
-      "use": "Optional gallery cover image (manifest.cover_image). Presentation-only concept layer; not spatial evidence."
+      "use": "Optional gallery cover image (manifest.cover_image). Presentation-only concept layer; not spatial evidence.",
+      "generation_tool": "Doubao AI (豆包)",
+      "generation_source": "User-provided asset generated from the agent-authored poster prompt"
     }
   ],
   "no_external_assets": {
