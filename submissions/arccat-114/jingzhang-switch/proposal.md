@@ -73,9 +73,15 @@ iteration: "v1.0"
 
 ## 一、设计依据与资料清单
 
-本方案的任务边界来自征集公告与面向全球智能体的开源征集任务书：公告界定三层范围、三处重点区与成果深度，任务书界定六项智能体任务、三大定位与十条共创原则[source:OFFICIAL-ANNOUNCEMENT][source:AGENT-TASKBOOK]。专业判断依据五部国家层面规范与政策：城市设计统筹遵循《城市设计管理办法》，"已知—待定"边界遵循《城市、镇控制性详细规划编制审批办法》，用地编码采用《国土空间调查、规划、用途管制用地用海分类指南》，AI 场景合规遵循《生成式人工智能服务管理暂行办法》，公共空间无障碍遵循《无障碍环境建设法》[standard:MOHURD-URBAN-DESIGN-MEASURES][standard:MOHURD-CONTROL-DETAILED-PLANNING][standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]；AI 场景合规遵循《生成式人工智能服务管理暂行办法》，公共空间无障碍遵循《无障碍环境建设法》[standard:GENERATIVE-AI-INTERIM-MEASURES][standard:BARRIER-FREE-ENVIRONMENT-LAW]。建筑设计深度规定正式文本尚未入库，本包如实登记为资料缺口，不宣称满足建筑设计深度[standard:MOHURD-ARCH-DESIGN-DEPTH-2016]。
+本方案的任务边界来自征集公告与面向全球智能体的开源征集任务书：公告界定三层范围、三处重点区与成果深度，任务书界定六项智能体任务、三大定位与十条共创原则[source:OFFICIAL-ANNOUNCEMENT][source:AGENT-TASKBOOK]。专业判断依据五部国家层面规范与政策：城市设计统筹遵循《城市设计管理办法》，"已知—待定"边界遵循《城市、镇控制性详细规划编制审批办法》，用地编码采用《国土空间调查、规划、用途管制用地用海分类指南》[standard:MOHURD-URBAN-DESIGN-MEASURES][standard:MOHURD-CONTROL-DETAILED-PLANNING][standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]；AI 场景合规遵循《生成式人工智能服务管理暂行办法》，公共空间无障碍遵循《无障碍环境建设法》[standard:GENERATIVE-AI-INTERIM-MEASURES][standard:BARRIER-FREE-ENVIRONMENT-LAW]。建筑设计深度规定正式文本尚未入库，本包如实登记为资料缺口，不宣称满足建筑设计深度[standard:MOHURD-ARCH-DESIGN-DEPTH-2016]。
 
-资料分三类管理，这条纪律贯穿全文：**正式论据只取自登记表批准的来源**；三区两翼、海淀产业体系等公开政策属于背景资料，承担语境与产业叙事，不支撑红线或承诺性结论[source:THREE-AREAS-WINGS][source:HAIDIAN-1X1]；京张铁路历史资料与临时边界只用于叙事与概念生成，明确标注为背景与临时约束[source:JZ-HERRINGBONE-PAPER][source:PROVISIONAL-BOUNDARIES]。完整机器索引以 `sources.json`、`assumptions.json` 与三份矩阵文件为准，本正文只保留直接相关的证据锚点[depth:risk_missing_data]。
+**控规进程的官方原件（2026）**：据《海淀区2026年政府工作报告》，京张铁路遗址公园沿线街区控规**已通过技术审查**、正推进获批实施[source:HD-GOV-REPORT-2026]；控规草案于2024年12月19日起公示，官方"一张图读懂"读本载明"**一带一轴，两心多点**"空间结构——"沿京张铁路遗址公园形成创新交往带"[source:HD00-1601-DRAFT-EXHIBITION][source:HD00-1601-DRAFT-GUIDE]；2025年2月规自委发布草案公示意见采信通告[source:HD00-1601-CONTROL-NOTICE]。本方案的"一岔三场两翼"与草案同向而非同一：主脊沿同一遗址公园展开，岔心对应"一带"中枢，三场中的大钟寺编组场与原点始发场对应"两心"所在片区；"道岔"命名、信号灯治理与东/西侧线为本方案自有结构，历史侧线在官方结构中没有对应物，主脊北端延至北五环[source:HD00-1601-DRAFT-GUIDE][depth:overall_spatial_structure]。
+
+**公园建设进程的官方原件（2026）**：京张遗址公园二期配套项目，市园林绿化局2026年7月14日政务公开记录完工[source:JZ-PARK-COMPLETION-2026]；北京市公共资源交易服务平台2026年8月5日业绩公示载明该配套项目（监理）工程规模**530900平方米**、竣工字段为"是"[source:JZ-PARK-PHASE2-RECORD-2026]——两处记录的记录对象均为二期配套项目，本包据此读作二期规模口径，不据此断言二期整体通过竣工验收，具体完工日期以主管部门公布为准。
+
+**产业底数的官方口径（2026）**：海淀区备案大模型累计122款、全市占比近60%，依托AI原点社区、AI北纬社区与京张铁路遗址公园创新带打造人工智能创新街区（2026政府工作报告口径）[source:HD-GOV-REPORT-2026]；北京备案模型达212款（2026北京两会口径）[source:BJ-AI-MODELS-2026]——两个口径并列存录、不作归一，均无面积分母，本包不作单位面积密度或地区排名判断[source:BJ-AI-INDUSTRY-2026]。
+
+资料分三类管理，这条纪律贯穿全文：**正式论据只取自登记表批准的来源**；三区两翼、海淀产业体系等公开政策属于背景资料，承担语境与产业叙事，不支撑红线或承诺性结论[source:THREE-AREAS-WINGS][source:HAIDIAN-1X1]；京张铁路历史资料与临时边界只用于叙事与概念生成，明确标注为背景与临时约束[source:JZ-HERRINGBONE-PAPER][source:PROVISIONAL-BOUNDARIES]。每条来源的权威等级、用于正文何处、不能支撑什么结论，逐条登记于 `sources.json`（机器可读、可审计）[source:SOURCE-REGISTRY][depth:risk_missing_data]。
 
 ## 二、三层范围工作框架
 
