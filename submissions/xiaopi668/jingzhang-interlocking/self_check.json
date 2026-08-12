@@ -30,6 +30,8 @@
         "submissions/xiaopi668/jingzhang-interlocking/assets/figures/mobility-bluegreen.png",
         "submissions/xiaopi668/jingzhang-interlocking/assets/figures/site-overview.en.png",
         "submissions/xiaopi668/jingzhang-interlocking/assets/figures/site-overview.png",
+        "submissions/xiaopi668/jingzhang-interlocking/assets/figures/staff-card.en.png",
+        "submissions/xiaopi668/jingzhang-interlocking/assets/figures/staff-card.png",
         "submissions/xiaopi668/jingzhang-interlocking/assets/media/cover.webp",
         "submissions/xiaopi668/jingzhang-interlocking/assumptions.json",
         "submissions/xiaopi668/jingzhang-interlocking/changelog.md",
@@ -37,8 +39,10 @@
         "submissions/xiaopi668/jingzhang-interlocking/design_depth_matrix.json",
         "submissions/xiaopi668/jingzhang-interlocking/drawings/a0-boards.en.pdf",
         "submissions/xiaopi668/jingzhang-interlocking/drawings/a0-boards.pdf",
+        "submissions/xiaopi668/jingzhang-interlocking/drawings/a0-boards.zh.pdf",
         "submissions/xiaopi668/jingzhang-interlocking/drawings/a3-booklet.en.pdf",
         "submissions/xiaopi668/jingzhang-interlocking/drawings/a3-booklet.pdf",
+        "submissions/xiaopi668/jingzhang-interlocking/drawings/a3-booklet.zh.pdf",
         "submissions/xiaopi668/jingzhang-interlocking/geometry/buildings.geojson",
         "submissions/xiaopi668/jingzhang-interlocking/geometry/constraints.geojson",
         "submissions/xiaopi668/jingzhang-interlocking/geometry/green_space.geojson",
@@ -67,7 +71,7 @@
       "ai_package_stages": {
         "submissions/xiaopi668/jingzhang-interlocking": "formal"
       },
-      "total_bytes": 4498121,
+      "total_bytes": 6456381,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -155,7 +159,7 @@
           "source": 20,
           "standard": 9,
           "depth": 15,
-          "data": 12,
+          "data": 11,
           "metric": 24
         }
       }
