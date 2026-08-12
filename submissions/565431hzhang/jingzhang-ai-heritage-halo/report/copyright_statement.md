@@ -8,7 +8,7 @@ The per-asset details below are for informational purposes and do not override t
 
 | Asset | Path(s) | Source / Derivation | License / Status | Notes |
 | --- | --- | --- | --- | --- |
-| **Spatial geometry** | `geometry/*.geojson` | Derived from provisional competition boundary (SITE-PACKAGE) + public satellite imagery (Sentinel-2, 10m resolution, 2025-2026, ESA Copernicus, CC BY-SA 3.0 IGO) + OpenStreetMap vector data (2025-12 snapshot, ODbL 1.0). OSM attribution: © OpenStreetMap contributors. | COMMUNITY-DISPLAY-ONLY; provisional | Provisional geometry; does not embed third-party copyright data; OSM ODbL requires attribution (provided above). Satellite imagery used only as visual reference for geometry tracing, not as embedded data. |
+| **Spatial geometry** | `geometry/*.geojson` | Derived from provisional competition boundary (SITE-PACKAGE) + public satellite imagery (Sentinel-2, 10m resolution, 2025-2026, ESA Copernicus, CC BY-SA 3.0 IGO) + OpenStreetMap vector data (2025-12 snapshot, ODbL 1.0). OSM attribution: © OpenStreetMap contributors. | COMMUNITY-DISPLAY-ONLY; provisional | Derived data (tracing) based on OSM/Sentinel-2 references under ODbL 1.0 / CC BY-SA 3.0 IGO; attribution provided above. Not an official red line; recalculate when official geometry is supplied. |
 | **Site figures (CN)** | `assets/figures/*.png` | Self-generated via matplotlib 3.8 from geometry data, using plot-generated fonts (DejaVu Sans, Bitstream Vera, licensed under Bitstream Vera Fonts Copyright). | COMMUNITY-DISPLAY-ONLY | Self-authored; no third-party images or icons embedded. |
 | **Site figures (EN)** | `assets/figures/*.en.png` | Independently generated English renderings via matplotlib from geometry data. | COMMUNITY-DISPLAY-ONLY | Self-authored; not a copy of CN versions. |
 | **A0 boards** | `drawings/a0-boards.pdf` / `.en.pdf` | Self-generated layout via matplotlib, font: DejaVu Sans (embedded subset). | COMMUNITY-DISPLAY-ONLY | Bilingual; no embedded remote assets. |
@@ -26,7 +26,7 @@ The per-asset details below are for informational purposes and do not override t
 ## Licensing Notes
 
 - **COMMUNITY-DISPLAY-ONLY**: This submission is provided for display and peer review within the Haidian competition community. No broader reuse, redistribution, or commercial use is permitted without explicit permission.
-- **Provisional geometry** is explicitly marked in `geometry/*.geojson` properties (`source_type`, `confidence`, `official_boundary`) and must be replaced with official polygons before professional scoring.
+- **Provisional geometry** is explicitly marked in `geometry/*.geojson` properties (`source_type`, `confidence`, `official_boundary`). Provisional geometry does not block content scoring; recalculate boundaries when official polygons are supplied.
 - No remote fonts, maps, tiles, scripts, iframes, forms, or external APIs are loaded by any HTML artifact.
 - No personal data of reviewers or residents is collected or tracked.
 - All third-party data provenance is declared in `sources.json` with per-source license fields.
@@ -36,6 +36,7 @@ The per-asset details below are for informational purposes and do not override t
 | Font | Used In | License | Status |
 | --- | --- | --- | --- |
 | DejaVu Sans (system) | matplotlib figures, PDFs | Bitstream Vera Fonts Copyright (free, open-source) | Subset embedded in PDFs; no additional license required |
+| WenQuanYi Micro Hei / WenQuanYi Zen Hei (system) | matplotlib figures (Chinese labels) | GPLv2 with font exception (free, open-source) | Used in rasterized PNG figures (not embedded); no font embedding / redistribution in PDF |
 | No commercial or proprietary fonts are used in any submission artifact. | | | |
 
 ## Logo Generation
