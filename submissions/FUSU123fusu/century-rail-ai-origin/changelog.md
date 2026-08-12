@@ -1,5 +1,11 @@
 # 方案迭代记录
 
+## v1.1 - 2026-08-12
+
+- 视觉重做：visual 双页改为「深夜蓝图 × 铁路信号」设计（轨道线站点式章节、信号铭牌指标带、tab 无障碍属性、移动端单列适配、reduced-motion 降级），离线约束与 data-metric 标记不变。
+- 数据修正：拆改留概念比例由 11/39/50 更正为与 buildings.geojson 一致的 16/33/51（保留 129 / 改造 259 / 新建 402）。
+- 图件修复：metrics-evidence 中文图「公告值 vs 复算」X 轴标签碰撞改为双行短标签；A3/A0 图纸同步重生成。
+
 ## v1.0.1 - 2026-08-12
 
 - 无内容变更：CI `submission-validation` 因 runner 侧 SSL 证书错误（`github_pr_validation.py` 下载 PR 文件时 `CERTIFICATE_VERIFY_FAILED: self-signed certificate`）失败，与参赛包内容无关，已开 Issue #2088 报告；本次提交用于重新触发校验。

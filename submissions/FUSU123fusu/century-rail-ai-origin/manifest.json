@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "f3eb0e8af8b6b067195902b9c5567f2996b68b771697d26c0ac99a4a847cef43"
+      "sha256": "eed2d18a1423c217fe4c3c56b8efb324094f6ebfbb0eb034d33a094103f0a7c9"
     },
     {
       "path": "agent.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "b8c89df5d86328f599df20a65c65aa83bd5384088cb45010a09269740ad30342"
+      "sha256": "3ef7ccd71fef79a5510e781f9633cf375b3562e5f685adb818fb85b703ff3543"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "d7392a4a9bc48a4d09c9ac5e29bf846d28d467c4460c9edf80ab3d5bd2cc4dce"
+      "sha256": "bc70edd2552d1f9bdfc8e036a714c08893346dce06582bbfdb00cc4446a45379"
     },
     {
       "path": "report/narrative.md",
@@ -100,21 +100,21 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "031b9685408d18f5e6dc3aa7c61ddaf50c699deb662a0d7da7477941abe219bb"
+      "sha256": "9525b2be1f897d6de62eb3a9e47b8c21e38652580afdbf9bf679fd2980a71bdb"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "33bc48e6c9385ce757168dd2ca57a081ddc929784ae6ebe852e81f380aefdb5e"
+      "sha256": "55ecef8f1c12a365d067fb957638b01c2b962d635a72a93c10e268857c5ef4f8"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "3c3f0cb98a354b5a885d837a5e931c4a0cbf82d908adbcf118d81f604bf4c474"
+      "sha256": "f4e922b4d58c274f1ad9b5513c248614198dc34c795201fd6e80249ba5519d3d"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -135,7 +135,7 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "3f4a72bbf354b3a123b6f15245e98eaa595b3e15fb654646a776456c3819f471"
+      "sha256": "08d2108dc84c710e794a669d868b596798790e44ddda97640cf3b9f61a0f02c0"
     },
     {
       "path": "assets/figures/mobility-bluegreen.png",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "0218e8e346f65c5945b503a946dd262079acdc2f3961bc24faee96d37be3b601"
+      "sha256": "7b06dcdf5812bda1cefc408db29c6f98ba74f3a901d70dcc95b03e785ac3a84f"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "759188e527a883a612a782a357c0da25846ef31a84d36bb1b3b439ed48f6f479"
+      "sha256": "110b54b1f25718f938847b3df06b830eb606bdc2cf784b2fc134ce2544fca25d"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -227,7 +227,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "50c25b09b18e0a3da489f1e5449695ebc2f791980e651afc2981df531529e842"
+      "sha256": "7f7bc8df125e024798f34d8c541d6ae3b2eae6e3b6636aa68f069b2441b639cc"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -235,7 +235,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "985d7ffef4d6021e3336438eedc8756819b45530b689363c7354ff7a6bb370ec"
+      "sha256": "c2711f9d662644612f3a3b8068931688f38571094e660299ad4bd18935d03b6a"
     },
     {
       "path": "visual/index.en.html",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "b49bb74795b4a481204243bc3ef9a3615c92ce9f393170021119f8020507a669"
+      "sha256": "0c5db43a3b5e90703a96b9f17dc665b4a83838c07b2c8e06ae14a15bc9bdfdce"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -289,7 +289,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "4dc8283b55484ded70f353fa002c0be741b606faee7596fd3d505420d61df02b"
+      "sha256": "c32c93870adfe0b3db3c7a486d6eb1495547fd9f11bffd91bba982a6cbdf80be"
     }
   ],
   "validation_claim": {
