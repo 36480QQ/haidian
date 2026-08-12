@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "package_id": "jingzhang-branch-lines",
   "project_id": "centennial-jingzhang-ai-belt",
   "site_package_version": "0.1.0",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "42abaeeb7aa754b9ee5d0da2b9f0603e291ba8598877df1a3b9f0ac9a1f27724"
+      "sha256": "842a37e4c63970d87f767baa561a62381cb8bdaf4d8be1c6a30d0e0c04d40ae2"
     },
     {
       "path": "compliance_matrix.json",
