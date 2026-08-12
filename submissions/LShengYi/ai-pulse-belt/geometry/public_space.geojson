@@ -240,6 +240,246 @@
      ]
     ]
    }
+  },
+  {
+   "type": "Feature",
+   "id": "PUBLIC-007",
+   "properties": {
+    "name_zh": "五道口站导视节点",
+    "public_type": "status_light_node",
+    "id": "PUBLIC-007",
+    "layer": "PUBLIC_SPACE",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.34738529123597,
+       39.976007281681674
+      ],
+      [
+       116.34738340662447,
+       39.976205405996836
+      ],
+      [
+       116.34712588297585,
+       39.97620395578885
+      ],
+      [
+       116.34712776833088,
+       39.97600583148381
+      ],
+      [
+       116.34738529123597,
+       39.976007281681674
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "PUBLIC-008",
+   "properties": {
+    "name_zh": "清华东路西口站导视节点",
+    "public_type": "status_light_node",
+    "id": "PUBLIC-008",
+    "layer": "PUBLIC_SPACE",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.34424193224945,
+       39.9986849503512
+      ],
+      [
+       116.34424003704058,
+       39.99888307376444
+      ],
+      [
+       116.34398242838662,
+       39.99888161589092
+      ],
+      [
+       116.3439843243399,
+       39.99868349248785
+      ],
+      [
+       116.34424193224945,
+       39.9986849503512
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "PUBLIC-009",
+   "properties": {
+    "name_zh": "西土城站导视节点",
+    "public_type": "status_light_node",
+    "id": "PUBLIC-009",
+    "layer": "PUBLIC_SPACE",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.3500027629339,
+       39.94684204234191
+      ],
+      [
+       116.3500008878175,
+       39.94704016776001
+      ],
+      [
+       116.34974347342408,
+       39.947038724237025
+      ],
+      [
+       116.34974534928294,
+       39.94684059882901
+      ],
+      [
+       116.3500027629339,
+       39.94684204234191
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "PUBLIC-010",
+   "properties": {
+    "name_zh": "知春路站导视节点",
+    "public_type": "status_light_node",
+    "id": "PUBLIC-010",
+    "layer": "PUBLIC_SPACE",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.34763697610323,
+       39.94953060688423
+      ],
+      [
+       116.34763509398317,
+       39.94972873211695
+      ],
+      [
+       116.34737766963363,
+       39.94972728326077
+      ],
+      [
+       116.34737955249625,
+       39.949529158038125
+      ],
+      [
+       116.34763697610323,
+       39.94953060688423
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "PUBLIC-011",
+   "properties": {
+    "name_zh": "绿廊南段导视节点",
+    "public_type": "status_light_node",
+    "id": "PUBLIC-011",
+    "layer": "PUBLIC_SPACE",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.3486005437424,
+       39.95774064401422
+      ],
+      [
+       116.34859883475549,
+       39.957920757641155
+      ],
+      [
+       116.34836478465245,
+       39.95791944224548
+      ],
+      [
+       116.34836649425328,
+       39.9577393286269
+      ],
+      [
+       116.3486005437424,
+       39.95774064401422
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "PUBLIC-012",
+   "properties": {
+    "name_zh": "绿廊北段导视节点",
+    "public_type": "status_light_node",
+    "id": "PUBLIC-012",
+    "layer": "PUBLIC_SPACE",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.34805288215011,
+       40.01537671498506
+      ],
+      [
+       116.34805116823404,
+       40.015556826795915
+      ],
+      [
+       116.34781692138698,
+       40.015555508727566
+      ],
+      [
+       116.34781863591877,
+       40.01537539692506
+      ],
+      [
+       116.34805288215011,
+       40.01537671498506
+      ]
+     ]
+    ]
+   }
   }
  ],
  "name": "AI Pulse Belt public space (concept)"
