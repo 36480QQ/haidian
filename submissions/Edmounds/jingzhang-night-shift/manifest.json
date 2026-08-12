@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "058156864a6767ff679c2e1b637041220d0355424815f8313e5d43658ee91c2f"
+      "sha256": "a92405af0b1b160229bf542346c1020a9204d1790b30628d31c5ca1889d90380"
     },
     {
       "path": "compliance_matrix.json",
@@ -391,13 +391,13 @@
       "path": "visual/assets/run_night_protocol_tabletop.js",
       "role": "deterministic_replay_script",
       "required": false,
-      "sha256": "776748f850d90ae2549deabb3051e058274eeaf2ac9ef955e1d10742807b66c3"
+      "sha256": "1076758edeb3ff28b63a15ee5845243290067fe6901f580ecc8fffa02ce2f532"
     },
     {
       "path": "visual/assets/night_protocol_evidence.json",
       "role": "replay_evidence",
       "required": false,
-      "sha256": "7c283c607e69dea3b346b91d5eb3d80f9261b9b041514feee4c843af38d9bcb4"
+      "sha256": "3c6468248bc4e11e40c14439af576682ae6c90c08375369a269f206265b458fe"
     }
   ],
   "validation_claim": {

@@ -62,8 +62,8 @@
     },
     {
       "id": "time_bands_cover_24h",
-      "description_zh": "四个时间带无缝覆盖 24 小时",
-      "description_en": "The four daily bands cover 24 hours without gaps",
+      "description_zh": "四个时间带无缝且不重叠地覆盖 24 小时",
+      "description_en": "The four daily bands cover 24 hours with no gaps and no overlaps",
       "pass": true
     },
     {

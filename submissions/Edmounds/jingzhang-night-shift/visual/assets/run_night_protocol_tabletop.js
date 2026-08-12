@@ -2,10 +2,12 @@
 /*
  * 京张夜班 v3 · 六态协议桌面演练 / Jingzhang Night Shift v3 tabletop replay.
  *
- * 用法 / Usage:
- *   node run_night_protocol_tabletop.js           打印全部检查结果 / print all checks
- *   node run_night_protocol_tabletop.js --write   写入 night_protocol_evidence.json / write evidence
- *   node run_night_protocol_tabletop.js --check   与已提交证据逐字节比对 / byte-compare with committed evidence
+ * 用法（示例自提案包根目录；脚本按自身位置解析路径，任何工作目录均可执行）
+ * Usage (shown from the package root; paths resolve against the script itself,
+ * so it runs from any working directory):
+ *   node visual/assets/run_night_protocol_tabletop.js           打印全部检查结果 / print all checks
+ *   node visual/assets/run_night_protocol_tabletop.js --write   写入证据 / write night_protocol_evidence.json
+ *   node visual/assets/run_night_protocol_tabletop.js --check   与已提交证据逐字节比对 / byte-compare with committed evidence
  *
  * 纯 Node 内置模块，无网络、无外部依赖，输出确定性可复演。
  * Pure built-in Node modules; offline, dependency-free, deterministic.
@@ -119,17 +121,20 @@ function runChecks() {
     const [h, m] = hhmm.split(":").map(Number);
     return h * 60 + m;
   };
-  let coverage = 0;
+  // Mark every minute of the day: rejects gaps AND overlaps, which a simple
+  // duration sum would miss when they cancel each other out.
+  const minuteCover = new Array(24 * 60).fill(0);
   for (const b of bands) {
     const start = toMinutes(b.start);
     const end = toMinutes(b.end);
-    coverage += end > start ? end - start : 24 * 60 - start + end;
+    const span = end > start ? end - start : 24 * 60 - start + end;
+    for (let i = 0; i < span; i += 1) minuteCover[(start + i) % (24 * 60)] += 1;
   }
   add(
     "time_bands_cover_24h",
-    "四个时间带无缝覆盖 24 小时",
-    "The four daily bands cover 24 hours without gaps",
-    bands.length === 4 && coverage === 24 * 60
+    "四个时间带无缝且不重叠地覆盖 24 小时",
+    "The four daily bands cover 24 hours with no gaps and no overlaps",
+    bands.length === 4 && minuteCover.every((c) => c === 1)
   );
 
   const scenarioNodes = (constraints.features || []).filter((f) => f.properties && f.properties.layer === "SCENARIO_NODE");
