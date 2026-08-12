@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "package_id": "jingzhang-ai-civic-spine",
   "project_id": "centennial-jingzhang-ai-belt",
   "site_package_version": "0.1.0",
@@ -53,7 +53,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "80b71cb78d2c1581fc679eb561959ac515bc8a3ff6f76c74dcc2c4e20d49b72f"
+      "sha256": "dd7601ec45d9865d2e1b971a5d467632b2b986539ca2a6f3449ee4a866b8d4ba"
     },
     {
       "path": "compliance_matrix.json",
@@ -237,26 +237,30 @@
     },
     {
       "path": "visual/assets/key-area-node-plans.json",
-      "role": "visual_asset",
+      "role": "other",
       "required": false,
-      "sha256": "40accc6b0492edd809643e6ae8bd5ca9127fc0246b395ca5871d01d8f3d64b05"
+      "sha256": "40accc6b0492edd809643e6ae8bd5ca9127fc0246b395ca5871d01d8f3d64b05",
+      "role_detail": "visual_asset"
     },
     {
       "path": "visual/assets/scenario-operation-matrix.json",
-      "role": "visual_asset",
+      "role": "other",
       "required": false,
-      "sha256": "d8bea80f553b794dfd10ad6dc4f2dd8dcdb2bf447ac72f9eabf2ccd37477b7bf"
+      "sha256": "d8bea80f553b794dfd10ad6dc4f2dd8dcdb2bf447ac72f9eabf2ccd37477b7bf",
+      "role_detail": "visual_asset"
     },
     {
       "path": "visual/assets/public-interest-audit.json",
-      "role": "visual_asset",
+      "role": "other",
       "required": false,
-      "sha256": "5cb6e96cfb5105fd242067f149024408af8d9ace22ed6f876930bf895fdec6ee"
+      "sha256": "5cb6e96cfb5105fd242067f149024408af8d9ace22ed6f876930bf895fdec6ee",
+      "role_detail": "visual_asset"
     }
   ],
   "validation_claim": {
-    "self_checked": false,
+    "self_checked": true,
     "known_blockers": [],
-    "data_confidence": "high"
+    "data_confidence": "high",
+    "readiness_contract": "persisted-self-check-v1"
   }
 }
