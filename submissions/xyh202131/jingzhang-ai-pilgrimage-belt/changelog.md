@@ -4,6 +4,19 @@
 >
 > This log records traceable changes to this submission package only. It is not evidence of approval, implementation, field testing, rights clearance, or trusted CI. After any content change, regenerate the manifest from the final Git blobs and rely on repository validation attached to the final PR head.
 
+## v13.0 - 2026-08-13
+
+**Reversible assemblies and restoration / 可逆构件与恢复装配册**
+
+- 新增三处不可机械复制的双语装配关系图与结构化登记：众智园为平行旁路—隔离—实体停止—恢复检查，原点为一街两院四个逐个撤回的无屏节点，大钟寺为四向通勤十字与旁侧来源纠错厅/双入口人工台。
+- Added three non-copyable bilingual assembly relations and a structured register: Zhongzhiyuan parallel bypass/isolation/physical-stop/recovery check; Origin one street, two courts and four individually withdrawable screen-free nodes; Dazhongsi four-way commute cross with off-route source-correction hall and dual-entry staffed desk.
+- 六阶段覆盖安装前、开放前、普通、停止隔离、拆除退场与恢复验收，逐项回链 D01—D08 和 H01—H07；专业团队可修改、拒绝或删除概念。
+- Six stages cover before-install, pre-opening, ordinary use, stop/isolate, remove/exit, and restore/accept, with D01–D08 and H01–H07 backlinks; professionals may revise, reject or delete the concept.
+- 类型、尺寸、材料、连接、专项核验、准确位置、安装方法和恢复时长均保持 unknown；现实安装、批准详图、责任接受、现场检查、拆除和恢复验收均为 0。
+- Type, dimension, material, connection, specialist clearance, exact location, installation method and restoration duration remain unknown; real installations, approved details, accepted duties, inspections, removals and restoration acceptances remain 0.
+- 12 场景、8 项目、3 重点区、99 槽、geometry、metrics、全部 G0、临时边界和 `not_fully_cleared` 不变；图件、PR 或合并不构成工程、场地或实施批准。
+- Twelve scenes, eight projects, three key areas, 99 slots, geometry, metrics, all-G0 status, provisional boundaries and `not_fully_cleared` remain unchanged; drawings, PR review or merge create no engineering, site or implementation approval.
+
 ## v12.0 - 2026-08-13
 
 **Ordinary-life spatial scenes / 普通生活空间场景册**

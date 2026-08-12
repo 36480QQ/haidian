@@ -34,7 +34,9 @@
       "scripts/self_check_submission.py",
       "scripts/participant_preflight.py",
       "OpenAI built-in image generation (exact serving snapshot not asserted)",
-      "Pillow 12.2.0 WebP conversion and metadata inspection"
+      "Pillow 12.2.0 WebP conversion and metadata inspection",
+      "Python 3 package-authored SVG and structured-register generation",
+      "Google Chrome headless deterministic SVG rasterization"
     ]
   },
   "generated_at": "2026-08-12T00:00:00Z",
@@ -50,13 +52,13 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "df0a6713beab20fd75f2bbcb52f053b84cd5ff072476db7888cca52b91cbc24b"
+      "sha256": "0e7c8dd57720d906272de83a74878660793a436eeabd7f43b4380194eb846661"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "4c1aa871b3ec073ab2f4895684461c25b3abce73776cacf3e8299c98b0db2659"
+      "sha256": "9d282e2e150400afacde2dc0ee1e17749412d4bfc1d19f216a2c24aa012f8ebf"
     },
     {
       "path": "metrics.json",
@@ -74,7 +76,7 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "fbd6d97513e9f605e9632ad9e39233410a17ff23af01b118bebfd4aa19964e08"
+      "sha256": "47cf0903f1eb157e319fad7214e870a4613b179619d05706fc754fed4c11e651"
     },
     {
       "path": "self_check.json",
@@ -86,13 +88,13 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": true,
-      "sha256": "b63715b9587f1bc8183f79b629b4cc3c2c0f3e54ff5129f1ad68eae975816e30"
+      "sha256": "a04e0d677d3ddbfebfd64266383ace0ca625fb5f75d839a53777d09ddbeb2df6"
     },
     {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "8276c97d01c63773a6d2fb5fdf027fa860e3d0e4bf99cb6f02f7a46032b2eaa9"
+      "sha256": "ea4386e0ed18842698421764ffbab6d2a5142da497e1627a4a404d6a702298b6"
     },
     {
       "path": "standard_matrix.json",
@@ -122,7 +124,7 @@
       "path": "visual/assets/evidence-freshness-policy.json",
       "role": "source_governance_evidence",
       "required": true,
-      "sha256": "92403864f721a2a85a3ea97973bd2d6bdfb4e9ff3ad2a9780fb4b6221a90b875"
+      "sha256": "fbd2dcf066e43b9071e30fc9bdd66845477122a51a2e806e02bb52e7577c8bb2"
     },
     {
       "path": "visual/assets/site-grounding-register.json",
@@ -146,7 +148,7 @@
       "path": "visual/assets/implementation-handoff-matrix.json",
       "role": "implementation_handoff_evidence",
       "required": true,
-      "sha256": "9e5c493289467c53486d49878410ceb9e8e6e84778f977450f2932d8c8ef5230"
+      "sha256": "8853c79f2e2de8dea7a38f64d2ca10bc23616570d8ee9b19a422bce30d2a014d"
     },
     {
       "path": "visual/assets/g1-preregistration-register.json",
@@ -176,19 +178,19 @@
       "path": "visual/assets/t02-g0-g1-replay-result.json",
       "role": "synthetic_governance_replay_result",
       "required": true,
-      "sha256": "5697b0f134862283a278418c4084cce834fd2938b636ee3320e5eedd050f49c3"
+      "sha256": "20ec2f2d3f7e3dced99980052bbc6c8c2fd28e2f0fbf5a580078c98aef5d8ec6"
     },
     {
       "path": "visual/assets/key-area-evidence-matrix.json",
       "role": "spatial_evidence_matrix",
       "required": true,
-      "sha256": "71c7f7ecf598a5effa11f60c8ada14a4eec71ee9d203091864159258c0b007f3"
+      "sha256": "59ea1a0fb593b94285ad7a71b83a87a793da9acf2101e06134f772b487a438df"
     },
     {
       "path": "visual/assets/rights-clearance-ledger.json",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "5024d6e593c76e8546113a6fc5cdf94a628b721d3fb46b455722c1583e2d1f5e"
+      "sha256": "59aa535d239a94e9b9f82694d2caccee94d8f47c85cde06555d81642e2f72acd"
     },
     {
       "path": "visual/assets/source-rights-evidence.schema.json",
@@ -200,7 +202,7 @@
       "path": "visual/assets/source-rights-evidence.json",
       "role": "source_rights_evidence",
       "required": true,
-      "sha256": "a8f8c6254bb3dfa01757ece81dac2a53bdc3304bdae221c0771567c9ff0d52e1"
+      "sha256": "5806c7c60887961f8cb8c8ce46a388b36469ab4820648c18b214547c825e4cb1"
     },
     {
       "path": "visual/assets/submission-use-rights-matrix.json",
@@ -213,40 +215,40 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "a06b77c7bf7ffe81333ba5fce71c817aa41912f9e989c7f694297514b6306ae9"
+      "sha256": "bbd93b8fc9a243f8555a7eb090fce06a13ee97c6ef29aa574f79c1bf74775f70"
     },
     {
       "path": "report/narrative.md",
       "role": "narrative",
       "required": false,
-      "sha256": "8d96d3a7c9070c9da26256f0d6255557b540dcc82cc21712f3e041184ca3eda3"
+      "sha256": "67d347d9cbf12af2bf52e9547c364a45eb2579f4ca7d5006f012506b1569c659"
     },
     {
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "7aa3e13e30fab2f76f1246141db89ce2c9bd9cdc96e953a65fcfa6a90b352ec9"
+      "sha256": "7b1746e4a6fd0538a8d39f07b1b08ae0b327fbcf50792796891d9fa5db62dec5"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "6ea3fe812ab02fac3390f1fd7d5699ff92d3f64c945cbb9eb72d95f1a622be86"
+      "sha256": "3cf25dcfe45dee439ca0e61fa86d9e396e666e7d1f9a9e8c29db6258595f8a4d"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "d15aa4a4ed2b4a4d9a9c1047b7e85eb0807eec4a7bfd62529a793149ad43f3cf"
+      "sha256": "7341059234cbdd50fcd4e4824854b804c8bbbcd08f3f4293137290e566ce85ca"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "3dd120d58324b7be3ed27fb56125e88cc58fdcd87f5cb9737601271e50ccfcc8"
+      "sha256": "21a3979a6e09af6f01279eaae5c316f2a172b5c998b452e73c32b52c2189834c"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -385,7 +387,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "ff9f3227a2baa9ffe4249518fcd10ab94362766e8cbda5121b1e1fab5a8e09a8"
+      "sha256": "f17582d5a4a5ecd9f3c7b5f4ebdb905bbe337e677dcffe25184e6363d2834c40"
     },
     {
       "path": "report/proposal.en.html",
@@ -393,7 +395,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "d18be893e61730a5d0361a26a44d85a31a5463bbf5f0cb6082697aeb7636a2da"
+      "sha256": "a9163baa9f4b5a3b40c94957070f7b32e66999ccf2ab3a3880c4f781f4631fb3"
     },
     {
       "path": "visual/index.en.html",
@@ -401,7 +403,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "9386814061adbdb10b1b86fed549fe94c7c15044f29d2862f842837108553033"
+      "sha256": "ffacad0528a7758b59e9060f01b7f90a93efd11574edfd4d75abd648eeb66d2e"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -409,7 +411,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "ee4f5a69d105af65ed9a79c731c920453d55a4021c8c3d7b51da3595fa1706af"
+      "sha256": "3fd68167ca0e411854bbae41edf4f742c04558e9375d1678a684a32faf32db91"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -417,7 +419,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "ca1304e2df189ac9b29ddc9d2b9e2717ca93bf5159b9138fc223d99d049fb8e4"
+      "sha256": "7045ea6a8247a17f22209ebd2c1098b44baada21c44ef896daaee2f67c44621d"
     },
     {
       "path": "assets/figures/implementation-roadmap.en.png",
@@ -805,6 +807,42 @@
       "role": "transcript",
       "required": false,
       "sha256": "3c1c92086741b198b400525a3824801f6fd015aeb799f6f40b36a713070366dc"
+    },
+    {
+      "path": "visual/assets/reversible-component-restoration-register.json",
+      "role": "public_interest_evidence",
+      "required": true,
+      "sha256": "959921be956a71008b7b65a9cf2aed79da6e0b5e96c4d36c27d2290c7deadef0"
+    },
+    {
+      "path": "assets/figures/reversible-components.svg",
+      "role": "diagram",
+      "required": true,
+      "sha256": "d8c7eb54d9c5e99fd4c3fd2b6fab08c88e955b8caea59cf487cc21c861c13863",
+      "language": "zh"
+    },
+    {
+      "path": "assets/figures/reversible-components.png",
+      "role": "render",
+      "required": false,
+      "sha256": "6c8f9a72a97749422bee9333bdb5565756b96faab922ba93198872407ace885d",
+      "language": "zh"
+    },
+    {
+      "path": "assets/figures/reversible-components.en.svg",
+      "role": "diagram",
+      "required": true,
+      "sha256": "a03c1ee66ba8e7e311f9e24fb173e4feace8ea3f69fd895520433fd100529f95",
+      "language": "en",
+      "translation_of": "assets/figures/reversible-components.svg"
+    },
+    {
+      "path": "assets/figures/reversible-components.en.png",
+      "role": "render",
+      "required": false,
+      "sha256": "cb67f0b7eb0567ea1e1eb1af89d5e297452d3bac1d7481db8299a6f03c240bc6",
+      "language": "en",
+      "translation_of": "assets/figures/reversible-components.png"
     }
   ],
   "validation_claim": {

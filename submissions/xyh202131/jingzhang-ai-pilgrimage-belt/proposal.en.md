@@ -873,3 +873,33 @@ Governance and method context also includes [source:NATIONAL-DATA-INFRA-2025], t
 The global comparison set includes [source:CASE-KENDALL], [source:CASE-ONE-NORTH], and [source:CASE-22AT]. The same set also includes [source:CASE-KINGS-CROSS], [source:CASE-STATION-F], and [source:CASE-MARS]. Existing directional context is [source:OSM-CONTEXT]. Its ODbL data is used only to identify roads, railways, and waterways and cannot serve as an official boundary or engineering basis.
 
 Generation method: the spatial design is derived from the public provisional boundary, project enumerations, OSM context, and deterministic scripts. Areas and lengths are recalculated in EPSG:4548. Scenario passports, service zones, public-space modes, and phase gates are recorded as GeoJSON attributes. PNG, A3/A0, and offline HTML are explanatory layers, while `geometry/*.geojson`, `metrics.json`, the three matrices, and `self_check.json` are the evidence layer. `COMMUNITY-DISPLAY-ONLY` is recorded only as the current license label because its complete terms are not included. File-level status, unresolved items, and use limitations are stated in `visual/assets/rights-clearance-ledger.json` and `report/copyright_statement.md`.
+
+
+## Three reversible assembly and restoration packs
+
+> This Round 13 professional-handoff increment adds no scene, project, key area, geometry, boundary, maturity or governance brand. It only turns the three existing prototypes into typed relations that can be blocked before installation, checked before opening, kept secondary during ordinary use, stopped and isolated on failure, inventoried on exit, and independently accepted after restoration. The drawing is not an engineering detail, existing building, approved location, procurement list or completed acceptance. [data:visual/assets/reversible-component-restoration-register.json]
+
+![Three reversible assembly and restoration packs](assets/figures/reversible-components.en.png)
+
+### One six-stage grammar, not one copied composition
+
+| Stage | Public-space action | Real evidence that must close | Current decision |
+|---|---|---|---|
+| Before-install evidence | Survey ordinary routes, daily interfaces and restoration baseline before locating anything | D01-D03 + H01-H03 | 0 artifacts; NO-GO |
+| Pre-opening check | Read continuous ordinary/non-AI route, screen-free information, staffed status and stop method together | D04-D07 + H04-H06 | 0 checks; stay closed |
+| Ordinary use | Optional overlay is off by default; resident, commute, observation and quiet use do not yield to events | Real ordinary-day baseline | unknown; not operation |
+| Stop and isolate | Stop the applicable automation/capture/amplification/display layer and retain the same manual task or safe refusal | H05 stop chain and failure writeback | 0 events; no automatic restart |
+| Remove and exit | Record components, fixings, cables, signs, queues and data/log/account destinations | D06-D08 + destination receipt | 0 removals; no silent transfer |
+| Restore and accept | Restore ordinary route, surface/planting, quiet, screen-free information and same-task service before independent retest | H06-H07 + restoration receipt | 0 completions; professionals may reject/delete |
+
+### Three journeys and non-copyable components
+
+**Zhongzhiyuan.** A visitor arrives on the continuous observation bypass; the proof court, isolation edge and equipment stay beside it. Even under future authorization, opening requires measured bypass, physical stop and staffed takeover. Boundary breach, collision risk, nuisance or unavailable takeover stops and isolates the proof layer without deleting the bypass. Exit inventories equipment, edge, fixings, cables and service traces; path, surface, planting, sound/light and same-task service need independent acceptance before retest. Its equipment-isolation / physical-status / staffed-takeover / recovery-checkpoint chain cannot become resident deliberation courts or a commuter publication hall.
+
+**Origin Community.** Residents first receive one complete daily street; two courts and four screen-free nodes sit beside it and withdraw individually. Paper or staffed learning, refusal, withdrawal and correction require no account, QR code or AI. Withdrawal, safeguarding gaps, group disparity, nuisance or quiet failure stops matching, capture and amplification while the street and paper task remain. Exit closes consent-record destinations and removes kits, signs, capture, screens and temporary fixings before courts and street return to residents. Its resident-priority / screen-free learning / consent-withdrawal / quiet-edge sequence cannot be transplanted into equipment testing or peak commuting.
+
+**Dazhongsi.** Four commute arms and a clear centre work first; the source-correction hall and dual-entry staffed desk occupy an off-route bay. A source challenge, stale version, rights concern, queue spill or peak-path intrusion withdraws the publication layer while keeping the prior version addressable; staffed service is shown only when genuinely confirmed. Exit removes display, sound/light, queue and service overlays, restoring four-way movement, quiet rest and the source-version trail. Its peak continuity / source correction / dual-entry staffed service / off-route quiet relation cannot become a proof court or community courts.
+
+### Typed unknowns and professional veto
+
+For every component, `TYPE / DIMENSION / MATERIAL / CONNECTION / SPECIALIST CLEARANCE / EXACT LOCATION / INSTALLATION METHOD / RESTORATION DURATION` remain `null / unknown`. D01-D08 govern real boundary, survey, control, accessibility co-test, peak transport, specialist constraints, duties and rights; H01-H07 govern authority, approval scope, baseline, data/safety, stop/recovery, public parity and independent retest. When professional evidence conflicts, ordinary public rights prevail and the proof overlay stops. Professionals may revise, reject or delete a component concept; official evidence must never be altered to preserve the drawing. Installations, approved details, accepted duties, inspections, real removals and restoration acceptances remain 0. All objects remain G0, provisional and `not_fully_cleared`.

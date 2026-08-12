@@ -134,7 +134,7 @@
     },
     {
       "class_id": "FRESH-06",
-      "name": "第 8—12 轮包内概念合同、图件、媒体与叙事",
+      "name": "第 8—13 轮包内概念合同、图件、媒体与叙事",
       "source_ids": [
         "SOURCE-JZ-TIME-MUSEUM-G0-V1",
         "SOURCE-CENTURY-TIMELINE-Figure",
@@ -150,7 +150,9 @@
         "SOURCE-REVIEW-HANDOFF-PROPOSAL",
         "SOURCE-JZ-ORDINARY-LIFE-MEDIA-REGISTER-R12",
         "SOURCE-ORDINARY-LIFE-MEDIA-R12",
-        "SOURCE-ORDINARY-LIFE-PROPOSAL-R12"
+        "SOURCE-ORDINARY-LIFE-PROPOSAL-R12",
+        "SOURCE-JZ-REVERSIBLE-REGISTER-R13",
+        "SOURCE-JZ-REVERSIBLE-FIGURE-R13"
       ],
       "proposed_max_unchecked_days": 30,
       "review_triggers": [
@@ -182,8 +184,8 @@
     "完成替代来源复核后才解除阻断"
   ],
   "summary": {
-    "registered_source_count": 44,
-    "sources_assigned_to_freshness_class": 44,
+    "registered_source_count": 46,
+    "sources_assigned_to_freshness_class": 46,
     "freshness_class_count": 6,
     "required_refresh_record_field_count": 10,
     "current_completed_refresh_audits": 0
