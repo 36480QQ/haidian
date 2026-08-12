@@ -16,7 +16,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ## 设计依据与资料清单
 
-本方案以《百年京张AI创新带城市设计国际方案征集》公告三层范围、三处重点区域与设计任务为第一依据 [source:OFFICIAL-ANNOUNCEMENT]，并以智能体开源征集任务书的三项定位、五大功能、三区两翼与 agent.1–agent.6 为任务依据 [source:AGENT-TASKBOOK]。机器可读依据来自 `brief/site-package/` 的 `design_brief.json`、`allowed_design_space.json`、`sources.json`、`enums/`、`ranges/planning_limits.json`、`schemas/` 与 `data/source_registry.json` [source:SITE-PACKAGE]。导航层为 `data/processed/agent_fact_pack.md`。
+本方案以《百年京张AI创新带城市设计国际方案征集》公告三层范围、三处重点区域与设计任务为第一依据 [source:OFFICIAL-ANNOUNCEMENT]，并以智能体开源征集任务书的三项定位、五大功能、三区两翼与 agent.1–agent.6 为任务依据 [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]。机器可读依据来自 `brief/site-package/` 的 `design_brief.json`、`allowed_design_space.json`、`sources.json`、`enums/`、`ranges/planning_limits.json`、`schemas/` 与 `data/source_registry.json` [source:SITE-PACKAGE]。导航层为 `data/processed/agent_fact_pack.md`。
 
 由于官方 `SITE_BOUNDARY` 与三处 `KEY_AREA` polygon 尚未发布，本包使用 `brief/site-package/geometry/provisional_boundaries.geojson` 生成临时边界 [source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE]。`geometry/site_boundary.geojson` 与 `geometry/key_areas.geojson` 均标注 `provisional_constraint`、`official_boundary=false` [data:geometry/site_boundary.geojson#SITE-001]，仅用于方案生成、自检、可视化与讨论，不得作为 official redline、审批依据或精确面积依据；组织方数据缺口不阻断内容评分，正式 polygon 发布后整包重算。面积与比例由提交几何在 EPSG:4548 下复算。
 
@@ -33,6 +33,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 | 重点区域 | 368.4 ha | 三片详细设计 | 三座回声站台分别承担验证/开源/体验 [data:geometry/key_areas.geojson#PROV-KEY-002] |
 
 ## 统筹研究范围产业与未来城市研究
+区域协同上，方案把回响线视为中关村科学城与更大京津冀创新网络的接口：向北通过清河—北五环方向衔接北纬社区与未来科学城的科研转化需求，向东北预留与怀柔科学城基础研究外溢的交流接口，向东南通过轨道与产业服务翼连接经开区制造与测试场景，向城际层面则以人才、标准、开源成果与路演活动作为京津冀协同的“下行公共回声”要素。上述协同均为概念接口建议，不构成跨行政区的法定规划承诺。
 
 对应 agent.1，总体概念为 **「京张回响线 / THE ECHO LINE」**：把京张遗址公园读作一条可双向运行的公共创新生产线——上行班次承载模型、算力、场景与企业服务部署；下行班次强制带回可复核的公共回声：慢行修复、开源成果、技能培训、文化叙事与可审计日志 [source:AGENT-TASKBOOK] [depth:overall_spatial_structure]。中文主名「京张回响线」，英文名 "THE ECHO LINE"；命名体系含「回声站台 / Echo Station」「回声环 / Echo Loop」「回响协议 / Echo Protocol」。Logo 方向：铁路声波与回声波形同构的双向箭头，配色为铁路灰、回声青与中关村红 [source:AGENT-TASKBOOK]。
 
@@ -43,6 +44,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 ![三层范围与用地结构图](assets/figures/land-use-structure.png)
 
 ## 总体设计范围城市更新与控规深度城市设计
+总体设计同时回应《城市设计管理办法》对公共空间、界面与风貌的引导要求，以及建筑设计深度规定对方案表达与深度递进的要求 [standard:MOHURD-URBAN-DESIGN-MEASURES]。重点片区详细设计按建筑设计深度相关规定组织功能、交通、公共空间与实施证据，避免只有口号没有可复核图层 [standard:MOHURD-ARCH-DESIGN-DEPTH-2016]。开发强度与高度体量在官方控规未到前一律列为待确认，并在正文、assumptions 与 metrics 中同步披露前置条件 [depth:development_intensity_controls]。
 
 总体设计要求达到控制性详细规划的城市设计深度 [standard:MOHURD-CONTROL-DETAILED-PLANNING] [depth:land_use_layout]。更新策略为「识别断点—植入回声接口—缝合慢行—预留复核节点」：AI 研发与教育科研用地沿主轴集聚，京张绿带居中贯通，产业服务与文化交往围绕大钟寺，品质居住与社区服务布置于东侧 [data:geometry/land_use.geojson#LU-001]。建筑以保留改造为主、新建为辅，强度与高度在官方控规发布前为 unknown。
 
@@ -80,12 +82,16 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ## 蓝绿空间、公共空间与城市风貌
 
+建筑高度、体量与风貌控制在缺少法定控高与风貌导则时，仅给出分区引导：众智园以低干扰验证街区体量为主，原点社区近校尺度与慢行界面优先，大钟寺站城一体适度提高公共界面复合度；具体高度与面宽比待官方条件确认后复算 [depth:height_massing_character]。
+
 对应 agent.4 与 agent.5，蓝绿空间以京张遗址公园活力带为骨架，统筹清河、小月河、高校与社区出行需求，提出南北贯通、东西连通的步道、骑行道与绿色空间体系 [depth:blue_green_public_space]。京张遗址公园活力绿带居中贯通，形成文化记忆与日常慢行的“回声主廊” [data:geometry/green_space.geojson#GREEN-001]。清河滨水防护绿地承载生态缓冲与低碳创新交往，公共活动界面与大钟寺站四象限广场组织日常交往与活动 [metric:green_ratio]。
 
 公共空间比例与节点由 `public_space` 图层复算，强调可进入、可停留、可举办小型路演与开源发布的界面，而不是只做装饰性绿化 [metric:public_space_ratio]。城市风貌融合京张铁路历史文化、中关村创新文化与 AI 新文化，利用清华园火车站等文化资源提出城市基调、体量与公共艺术引导。方案提出不少于 3 个 AI 朝圣地标——回声灯塔、评测方舟、智音回声广场——以及贡献墙、荣誉展示与公共空间组件库方向 [source:AGENT-TASKBOOK]。品牌、字体与企业标识均需清权来源；风貌控制分清官方管控、设计建议与待确认条件，禁止把概念风貌写成法定控高或法定立面要求。
 
 
 ## 更新项目清单、实施政策与分期计划
+
+分期实施计划明确近中远期动作：一期完成慢行断点与验证/开源日课试点接口，二期推进站城一体与体验回声连通，三期进入全域回响协议运营与品牌活动闭环；各期依赖权属、市政与控规条件，未获正式依据前不得写成已排定的政府实施时序 [depth:phasing_implementation]。
 
 对应 agent.6，六项更新包 [metric:renewal_project_count]：EL-01 慢行断点回声缝合、EL-02 众智园验证回声界面、EL-03 原点开源回声街、EL-04 大钟寺四象限回声连通、EL-05 端侧算力回声节点、EL-06 全球AI回声周路线 [source:OFFICIAL-ANNOUNCEMENT] [depth:renewal_project_list]。三期：一期回声试点，二期站城回声更新，三期全域治理与品牌运营。活动与运营说明责任边界与风险，不写成已确定安排。
 

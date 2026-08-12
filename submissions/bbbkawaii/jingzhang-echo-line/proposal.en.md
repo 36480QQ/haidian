@@ -16,7 +16,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ## Design Basis and Source List
 
-This package uses the official prequalification notice for three-level scope, three key areas and design tasks [source:OFFICIAL-ANNOUNCEMENT], and the agent open-call taskbook for three positionings, five functions, three-areas/two-wings and agent.1–agent.6 [source:AGENT-TASKBOOK]. Machine-readable inputs live in `brief/site-package/` [source:SITE-PACKAGE] with navigation via `data/processed/agent_fact_pack.md`.
+This package uses the official prequalification notice for three-level scope, three key areas and design tasks [source:OFFICIAL-ANNOUNCEMENT], and the agent open-call taskbook for three positionings, five functions, three-areas/two-wings and agent.1–agent.6 [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]. Machine-readable inputs live in `brief/site-package/` [source:SITE-PACKAGE] with navigation via `data/processed/agent_fact_pack.md`.
 
 Official SITE_BOUNDARY and KEY_AREA polygons are missing, so provisional geometry from `provisional_boundaries.geojson` is used [source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE]. Submitted boundaries are `provisional_constraint` with `official_boundary=false` [data:geometry/site_boundary.geojson#SITE-001]. Organizer data gaps do not block content scoring; recalculate after official polygons. Areas are recomputed in EPSG:4548.
 
@@ -34,6 +34,8 @@ Research (~43.6 km²), overall design (~11.4 km²) and key areas (~368.4 ha) cas
 
 ## Coordinated Research Area: Industry and Future City Research
 
+Regionally, the Echo Line is framed as an interface to a wider Beijing–Tianjin–Hebei innovation network: northward links toward northern communities and the Future Science City for research transfer, northeast interfaces for Huairou science spillover, southeast connections via rail and the service wing toward the Economic-Technological Development Area, and inter-city exchanges of talent, standards, open-source artifacts and demos. These are concept interfaces, not statutory cross-jurisdiction plans.
+
 For agent.1, the concept is **THE ECHO LINE**: the heritage park is a two-way public innovation line—upstream runs deploy models and services; downstream runs must return public echoes: slow-mobility repair, open-source artifacts, skills, culture and audit logs [source:AGENT-TASKBOOK] [depth:overall_spatial_structure]. Naming: 京张回响线 / THE ECHO LINE; Echo Station, Echo Loop, Echo Protocol. Visual identity: dual arrow of rail soundwave + echo waveform in rail grey, echo teal and Zhongguancun red.
 
 For agent.2, six transferable mechanisms from global cases [source:AGENT-TASKBOOK]: campus–park–street stack; open-source + safety evaluation; scenario openness with data minimization; energy–compute–model corridor as a mechanism reference only; talent + transfer services; international demo/dev-festival branding. All are concept references, not commitments. Future-city form requires explainable, pauseable, rollbackable governance alongside productivity [depth:metrics_recalculation].
@@ -41,6 +43,8 @@ For agent.2, six transferable mechanisms from global cases [source:AGENT-TASKBOO
 ![Land-use structure figure](assets/figures/land-use-structure.png)
 
 ## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
+
+Overall design also responds to national urban-design management guidance on public space, frontage and character, and to architectural design-depth rules on progressive evidence [standard:MOHURD-URBAN-DESIGN-MEASURES]. Key-area detailing follows architectural design-depth expectations for program, mobility, public space and implementation evidence [standard:MOHURD-ARCH-DESIGN-DEPTH-2016]. Floor-area intensity and height remain pending until official controls arrive and are disclosed as such [depth:development_intensity_controls].
 
 Regulatory-plan urban design depth [standard:MOHURD-CONTROL-DETAILED-PLANNING] [depth:land_use_layout]: identify breaks, insert echo interfaces, stitch slow mobility, reserve audit nodes. Land-use partitions cover the submitted boundary [data:geometry/land_use.geojson#LU-001]. Building footprints are concept-level; FAR/height remain unknown pending controls. Mobility uses greenway spine, east–west connectors and station shuttles.
 
@@ -74,12 +78,16 @@ Municipal and public-service strategy covers AI industry services, innovation pl
 
 ## Blue-Green Network, Public Space, and Urban Character
 
+Height, massing and character controls are only zone-level guidance while statutory height rules are missing: quieter verification fabric at Zhongzhiyuan, campus-scale frontages at Origin, and higher interface mix at Dazhongsi; exact heights await official confirmation [depth:height_massing_character].
+
 For agent.4 and agent.5, blue-green structure uses the Jingzhang heritage park as the spine and coordinates Qinghe, Xiaoyuehe, campuses and neighborhoods into a north–south continuous, east–west connected walking/cycling green network [depth:blue_green_public_space]. The heritage green belt forms the “echo corridor” for memory and everyday mobility [data:geometry/green_space.geojson#GREEN-001]. Qinghe protective greens buffer ecology and low-carbon exchange, while public interfaces and the Dazhongsi four-quadrant plaza host daily activity [metric:green_ratio].
 
 Public-space ratios and nodes are recomputed from the public-space layer, emphasizing accessible stay spaces for small demos and open-source launches rather than decorative greenery only [metric:public_space_ratio]. Urban character fuses Jingzhang railway culture, Zhongguancun innovation culture and AI culture. At least three pilgrimage landmarks—Echo Beacon, Evaluation Ark and Intelligent Sound Echo Plaza—plus contribution walls and a public-space component library direction are proposed [source:AGENT-TASKBOOK]. Brands, fonts and corporate marks require cleared rights; character guidance distinguishes statutory controls, design advice and pending conditions and never claims legal height or facade mandates.
 
 
 ## Renewal Projects, Implementation Policy, and Phasing
+
+Phasing is staged as pilot interfaces, station-city connectivity, then full Echo Protocol operations; each stage depends on ownership, utilities and controls and is not a committed government calendar [depth:phasing_implementation].
 
 For agent.6, six packages EL-01..EL-06 [metric:renewal_project_count] [source:OFFICIAL-ANNOUNCEMENT] [depth:renewal_project_list] and three phases. Operations are concept schedules, not committed government programs.
 
