@@ -1,13 +1,13 @@
 {
   "type": "FeatureCollection",
-  "name": "constraints",
+  "name": "REGULATORY_CONTROL",
   "features": [
     {
       "type": "Feature",
       "id": "CST-001",
       "properties": {
         "id": "CST-001",
-        "layer": "constraints",
+        "layer": "REGULATORY_CONTROL",
         "name_zh": "京张铁路遗址保护廊道",
         "constraint_type": "heritage_protection",
         "source_type": "agent_inferred_from_public_data",
@@ -48,7 +48,7 @@
       "id": "CST-002",
       "properties": {
         "id": "CST-002",
-        "layer": "constraints",
+        "layer": "REGULATORY_CONTROL",
         "name_zh": "清河蓝线及生态缓冲区",
         "constraint_type": "water_protection",
         "source_type": "agent_inferred_from_public_data",
