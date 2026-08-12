@@ -1,0 +1,236 @@
+{
+  "spec_id": "service-equivalence-baseline",
+  "spec_name_en": "Service Equivalence Baseline",
+  "spec_name_zh": "服务等价基准",
+  "abbreviation": "SEB",
+  "version": "0.1.0",
+  "status": "draft_concept_recommendation",
+  "license": {
+    "recommended_spdx_id": "CC-BY-SA-4.0",
+    "recommended_name": "Creative Commons Attribution-ShareAlike 4.0 International",
+    "rationale_zh": "相同方式共享要求任何城市改进判据后以同样条件公开，与本包空间数据所依托的 ODbL 生态在改进回流一点上取向一致。",
+    "rationale_en": "Share-alike requires any city that improves the criteria to publish the improvement on the same terms, matching the return-of-improvement stance of the ODbL ecosystem this package's spatial data depends on.",
+    "status": "recommended_not_yet_granted",
+    "note_zh": "许可的最终确定待授权主体确认；本文件不代表任何机构发布该基准。",
+    "note_en": "The final licence choice awaits confirmation by an authorised body; this file publishes the baseline on behalf of no institution."
+  },
+  "provenance": {
+    "authored_by": "submission lqqk7/every-sense-jingzhang, agent-generated design proposal",
+    "authored_on": "2026-08-12",
+    "derived_from": [
+      "geometry/constraints.geojson",
+      "metrics.json",
+      "risk.json",
+      "proposal.md 第「服务等价基准 SEB v0.1」章"
+    ],
+    "evidence_class": "concept_only",
+    "hosting_body": "to_be_confirmed",
+    "publication_channel": "to_be_confirmed",
+    "adoption_claim": "none",
+    "disclaimer_zh": "本规范是概念建议，不构成合规结论、认证资格或专业符合性评价，也不代表任何机构已采用。",
+    "disclaimer_en": "This specification is a conceptual recommendation. It is no compliance conclusion, certification, or professional conformity assessment, and represents adoption by no institution."
+  },
+  "components": [
+    {
+      "component_id": "node_schema",
+      "name_zh": "节点 schema",
+      "name_en": "Node schema",
+      "machine_readable_location": "geometry/constraints.geojson",
+      "required_fields": [
+        {
+          "field": "ai_off_path",
+          "name_zh": "AI 关闭后的等价路径",
+          "name_en": "Equivalent route once AI is off",
+          "type": "string",
+          "required": true,
+          "constraint_zh": "不得填写仍依赖同一系统的路径，例如引导至线上办理。",
+          "constraint_en": "Must not name a route that still depends on the same system, such as directing the user to the online service."
+        },
+        {
+          "field": "human_handoff",
+          "name_zh": "人工接管角色",
+          "name_en": "Human takeover role",
+          "type": "string",
+          "required": true,
+          "constraint_zh": "须写明可被找到的角色，不得只写机构名称。",
+          "constraint_en": "Must name a findable role, not only an organisation."
+        },
+        {
+          "field": "gate_id",
+          "name_zh": "当前所处闸门",
+          "name_en": "Current gate",
+          "type": "enum",
+          "required": true,
+          "allowed_values": ["G0", "G1", "G2", "G3"]
+        },
+        {
+          "field": "operating_mode",
+          "name_zh": "运行方式",
+          "name_en": "Operating mode",
+          "type": "string",
+          "required": true
+        },
+        {
+          "field": "responsible_role",
+          "name_zh": "责任专业",
+          "name_en": "Accountable discipline",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "supporting_fields": ["id", "scenario_id", "scenario_card_id", "key_area_id"],
+      "validity_rule_zh": "缺任一必填字段的点位不得计入服务覆盖。",
+      "validity_rule_en": "A node missing any required field may not be counted towards service coverage."
+    },
+    {
+      "component_id": "scoring_definitions",
+      "name_zh": "评分口径",
+      "name_en": "Scoring definitions",
+      "machine_readable_location": "metrics.json",
+      "metric_group_count": 7,
+      "metric_field_count": 8,
+      "grouping_note_zh": "正文按七项口径陈述，其中人工接管一项同时包含成功率与响应耗时两个字段，因此字段数为八。",
+      "grouping_note_en": "The prose states seven definitions; the human-handover definition carries two fields, success rate and response time, so the field count is eight.",
+      "denominator_integrity_rule_zh": "分母不得删除失败样本：撤回、技术故障与非完成原因必须与完成数一并报告，删除任何一类即视为该次测量作废。",
+      "denominator_integrity_rule_en": "No failed sample may be dropped from a denominator: withdrawals, technical faults, and non-completion reasons must be reported alongside completions, and removing any of them voids that measurement.",
+      "metrics": [
+        {
+          "metric_id": "independent_task_completion_rate",
+          "numerator_zh": "在合理便利下无陪同独立完成的任务数",
+          "denominator_zh": "有效任务数，含撤回、技术故障与非完成原因"
+        },
+        {
+          "metric_id": "multichannel_information_coverage",
+          "numerator_zh": "具备两种等价通道的审计点数",
+          "denominator_zh": "全部审计点数"
+        },
+        {
+          "metric_id": "ai_off_service_equivalence_gap",
+          "numerator_zh": "AI 开启完成率减去 AI 关闭完成率",
+          "denominator_zh": "同一参与者、同一任务的成对测试样本"
+        },
+        {
+          "metric_id": "forced_abandonment_rate",
+          "numerator_zh": "因障碍中止的任务数",
+          "denominator_zh": "有效尝试数"
+        },
+        {
+          "metric_id": "human_handover_success_rate",
+          "numerator_zh": "成功接管数",
+          "denominator_zh": "有效接管触发数"
+        },
+        {
+          "metric_id": "human_handover_response_time_seconds",
+          "numerator_zh": "触发至人工确认的秒数",
+          "denominator_zh": "按次记录，不取平均掩盖长尾"
+        },
+        {
+          "metric_id": "sensory_load_exceedance_point_count",
+          "numerator_zh": "参与式审计确认的超限或无恢复点数量",
+          "denominator_zh": "按路线分段计数，不折算比例"
+        },
+        {
+          "metric_id": "co_design_role_coverage_ratio",
+          "numerator_zh": "已有自愿贡献记录的协议角色组数",
+          "denominator_zh": "协议规定的全部角色组数，须含沿线居民、小微商户、照护者与带儿童出行者、青年人才等直接受影响但非使用者的角色组"
+        }
+      ]
+    },
+    {
+      "component_id": "level_definitions",
+      "name_zh": "等级定义",
+      "name_en": "Level definitions",
+      "machine_readable_location": "proposal.md 第「更新项目清单、实施政策与分期计划」章的开放机制表",
+      "applicable_unit_zh": "场景 × 点位",
+      "applicable_unit_en": "one scenario at one node",
+      "aggregation_rule_zh": "工作包的对外层级取其全部点位中的最低者。",
+      "aggregation_rule_en": "A work package reports the lowest level among all its nodes.",
+      "downgrade_allowed": true,
+      "levels": [
+        {
+          "level_id": "L0",
+          "name_zh": "资料与许可",
+          "name_en": "Evidence and permission",
+          "gate": "before G0"
+        },
+        {
+          "level_id": "L1",
+          "name_zh": "可逆原型",
+          "name_en": "Reversible prototype",
+          "gate": "G1"
+        },
+        {
+          "level_id": "L2",
+          "name_zh": "封闭成对测试",
+          "name_en": "Closed paired testing",
+          "gate": "G2"
+        },
+        {
+          "level_id": "L3",
+          "name_zh": "限定开放",
+          "name_en": "Bounded opening",
+          "gate": "after G3"
+        },
+        {
+          "level_id": "L4",
+          "name_zh": "采用与常态运行",
+          "name_en": "Adoption and continuous operation",
+          "gate": "post-G3 operation"
+        }
+      ],
+      "level_binding_fields": [
+        "entry_condition",
+        "stop_condition",
+        "recovery_evidence",
+        "accountable_operator"
+      ]
+    },
+    {
+      "component_id": "decision_rules",
+      "name_zh": "判定规则",
+      "name_en": "Decision rules",
+      "machine_readable_location": "risk.json",
+      "rule_zh": "停止条件触发即停止，不以限期整改替代停止；恢复须提交证据而不是承诺。",
+      "rule_en": "A triggered stop condition stops the work; a corrective-action deadline is not a substitute for stopping, and resumption requires evidence rather than a promise.",
+      "risk_entries": [
+        { "risk_id": "R-01", "label_zh": "数据隐私" },
+        { "risk_id": "R-02", "label_zh": "实施复杂度" },
+        { "risk_id": "R-03", "label_zh": "公众接受度" },
+        { "risk_id": "R-04", "label_zh": "运维成本" },
+        { "risk_id": "R-05", "label_zh": "政策不确定性" },
+        { "risk_id": "R-06", "label_zh": "空间争议" },
+        { "risk_id": "R-07", "label_zh": "技术成熟度" },
+        { "risk_id": "R-08", "label_zh": "公平与包容性" }
+      ]
+    }
+  ],
+  "version_governance": {
+    "change_requirements": [
+      "每次变更必须同时提交失败样本登记",
+      "每次变更必须同时提交受影响指标的复算说明"
+    ],
+    "rejection_rule_zh": "只改条文不交证据的修订不予合并。",
+    "rejection_rule_en": "A revision that edits wording without submitting evidence is not merged.",
+    "version_increment_rule_zh": "版本号仅在判据本身变化时递增，措辞与译文修订不递增。",
+    "version_increment_rule_en": "The version number rises only when the criteria themselves change, not for wording or translation fixes."
+  },
+  "reuse_examples": [
+    {
+      "context_zh": "中关村 AI 北纬社区的初创团队",
+      "takes": ["node_schema", "decision_rules"],
+      "outcome_zh": "为早期产品做一次 AI 关闭后仍可用的自测，不需要等待平台或授权。"
+    },
+    {
+      "context_zh": "未来科学城的能源与医药专业设备界面",
+      "takes": ["scoring_definitions"],
+      "subset": ["multichannel_information_coverage", "human_handover_response_time_seconds"],
+      "outcome_zh": "把专业设备只给专业人员用的默认前提放到可测量的位置上。"
+    },
+    {
+      "context_zh": "任意城市的政务大厅",
+      "takes": ["level_definitions"],
+      "subset": ["L0", "L1", "L2"],
+      "outcome_zh": "在不改造任何空间的前提下完成一轮成对测试，得到本厅的服务等价差读数。"
+    }
+  ]
+}

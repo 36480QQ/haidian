@@ -2,6 +2,7 @@
 
 **关联媒体：** `assets/media/audio-guide.m4a`（音频，AAC-LC，单声道 32 kHz / 64 kbps，时长 2 分 34 秒）
 **同源字幕：** `assets/media/audio-guide.vtt`（UTF-8 WebVTT，26 条字幕，时间轴由实测合成结果生成）
+**英文字幕轨：** `assets/media/audio-guide-en.vtt`（UTF-8 WebVTT，26 条字幕，时间轴与 `audio-guide.vtt` 同源，文本为同一旁白的英文翻译；无英文配音）/ **English caption track:** `assets/media/audio-guide-en.vtt` (UTF-8 WebVTT, 26 cues, cue timing identical to `audio-guide.vtt`, text translated from the same narration; no English voice-over).
 **内容语言：** 简体中文
 **性质：** 概念建议性质的方案陈述，非官方发布、非审批结论、非实景记录
 

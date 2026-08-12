@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "package_id": "every-sense-jingzhang",
   "project_id": "centennial-jingzhang-ai-belt",
   "site_package_version": "0.1.0",
@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "3d7667bfcac1fca11eec6172d77fccadadc2aa6de34dc6ddbe52b42f61b0b8b1"
+      "sha256": "975098578104ff16e8a86870af9eb8c14ff2fbb2c2c70cc1c819d85034311a7b"
     },
     {
       "path": "agent.json",
@@ -38,7 +38,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "1673eb7b7bc7836ab2fcd4fa21765011d549fc5019bf73e0ae2affa78b7018ea"
+      "sha256": "12ad6b92bb0cec4a8b6e494e865e4e1319346a6808b1f6edc505dbaa16199ad0"
     },
     {
       "path": "assumptions.json",
@@ -56,19 +56,19 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "3842453edbf21f0c16a13985557e51d6f51a5f178fb3beac5bf509b9a3e1c890"
+      "sha256": "4bce59ef00f829a5c37e9a9b7cbaf4433430be5e74f81b65033b99e2060f2669"
     },
     {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "473f3de43aa7793312ea7b394e83eaeea40767e53723c3a955ca5ec642e2e7b2"
+      "sha256": "06c99203c736184387ab429075befccb2c9ccf78961a963166c9c2b0e5b121a5"
     },
     {
       "path": "standard_matrix.json",
       "role": "standard_matrix",
       "required": true,
-      "sha256": "c3b3eb8b469039ef58892fce933314bce2a733b82526150ecd3f111f73ddfe55"
+      "sha256": "426fb122382b986f8ba6fa3de1f5d0681054e8670593508fef96f16066e68f60"
     },
     {
       "path": "design_depth_matrix.json",
@@ -78,16 +78,17 @@
     },
     {
       "path": "risk.json",
-      "role": "risk",
+      "role": "other",
       "required": false,
-      "sha256": "11aa0d0c6eb1777d809e763e3ce4880aa17401fe4954dc653fbfb077ce7567ff"
+      "sha256": "c8a457b0f34866d55d0ebfb4d5e93a25fe796087c6c0ae63b2748d509f020ef7",
+      "role_detail": "risk_register"
     },
     {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "94e1cdad7a5ce88e8bf46b8f3184eb01a86b0dc270ffbc96b0c5f5a44e9a9294"
+      "sha256": "5a77e41324f29ca62531b123ec58f9e213b14fed1c0dce69d72ba188eda5c484"
     },
     {
       "path": "report/narrative.md",
@@ -106,21 +107,21 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "293c977f7ae73a4c20465d803684ad1ca8a91f1c5bb8f7224c2df05e40fc0072"
+      "sha256": "9bd040be395841d466878f9eb1bf9cb585cc1e8967978c2d8b05fbfb33f90b04"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "eb808e08db874d1a5f5f5be0af2afd563c9ff290a2bad29da43aaa0a22f52efa"
+      "sha256": "804f9988a77d4f790f0bdb4f6ba245e25eb0ec71a7dbab8ef6a578dbfdb71b6a"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "250b9a7e4f4ce9d1ee70e81e9c32607c60288b379047b28388c3a6cd1e2fd5a2"
+      "sha256": "560af8e53e2a021e150136b04f0c7371c091bb134cc56280b4d77c48201d49cf"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -141,21 +142,21 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "f2e99c68d392a3735d1eccc57b2611570385448b7d3cc903412338f31e7ebc13"
+      "sha256": "68fb3a983d2bdabdcbe3c35f5dcffde25ac0b6bcf0df656b5223dd2ffcb9a824"
     },
     {
       "path": "assets/figures/mobility-bluegreen.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "5b8c47c98ebf5033d9af7bea067dc72f86326e9596a4885aaed85fd6e9e6cdc0"
+      "sha256": "1c974183fabe53bf136b3a096fe7cc6a51f43f3fafc2efa62a932f0db2ed1ead"
     },
     {
       "path": "assets/figures/site-overview.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "bb5b4ce69df59ca9698d6740785564d9bc3914c443cfbdb9be69d0e2dc910e5d"
+      "sha256": "8a1b901f5a6f601a12495f668f808d5f30cc3695cedc002c300cbb91e4974216"
     },
     {
       "path": "geometry/buildings.geojson",
@@ -217,7 +218,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "97d439e3b740b3d29f8349ab75bbeff0aac5edafbea146716ea9d5ccbc1d3db6"
+      "sha256": "590b25af6120ec55a428ddafb1943d61e190b4622426d5724dba3d2fa2de453f"
     },
     {
       "path": "report/proposal.en.html",
@@ -225,7 +226,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "d2913e109f9e7fbaa5ed2e3554a7c2299b77b4b148122e7183af39f1fc50cf4e"
+      "sha256": "35a9e431cd7c3d706ac3d7f59459e398af8dfe4d3380be8a41c8cdb7dfd54bb2"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -233,7 +234,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "ddbae4416dc88d9ca97f17f2f46dc5f04d61905ce06fa98c1a1df8c3ec4b4d64"
+      "sha256": "1541e4d0e3bfb0d9d70b74a258a14116d8e0fe64e9ef5754aac7eaf2c65bbb68"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -241,7 +242,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "eab42a1e36bd8b800a65f82164f30ce7ea52e841f8160800071d11990da61388"
+      "sha256": "9f1b08993216592fe845048ce6e0dd1503f3d63be832e4b3998587b6fd0bdfc4"
     },
     {
       "path": "visual/index.en.html",
@@ -249,7 +250,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "45988adacccf776316a7f03312370144557610afe5a8bc932e34efcf21788ee7"
+      "sha256": "3cbd6a78959a160a69cbd999de9c10040f9cc859432cc530c9d378c9ff2eaeb0"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -273,7 +274,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/metrics-evidence.png",
-      "sha256": "216a1e957ea30c50527b74f84f23af14d75471100d206114f772d67769642adc"
+      "sha256": "bc88a824c42d2ebfa6adac8b745093c6b310ffd59bb9c517f6a63e9e5a04410b"
     },
     {
       "path": "assets/figures/mobility-bluegreen.en.png",
@@ -281,7 +282,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/mobility-bluegreen.png",
-      "sha256": "5da2b6d7fe3e4227c02b8dd025ddb7ed9b87e1c696e98426d4124dec168e2201"
+      "sha256": "7d36de307b21bd0cfc2de820c9dbe5637b91b260d23e3380e19344ee8c8c873a"
     },
     {
       "path": "assets/figures/site-overview.en.png",
@@ -289,7 +290,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/site-overview.png",
-      "sha256": "2c96ed2f642b9cbcb422153430c54690f6285b66c23377f1a0f6e70104f9359e"
+      "sha256": "f9ef1117cf935dcdecb047d50436c7e836b828fb1cab2fb590c9a97414cf1936"
     },
     {
       "path": "visual/assets/osm-context/provenance.json",
@@ -310,21 +311,21 @@
       "role": "proposal_figure",
       "required": false,
       "language": "zh",
-      "sha256": "916352493d3ead231a3cad6aab1fe1c1e40d9382f46393628658c0f81ecea27f"
+      "sha256": "8e54aa74e30e99bdb6e8e27c8f50e853643a5995dbd0f2e162987ad45a354c91"
     },
     {
       "path": "assets/figures/brand-system.en.png",
       "role": "proposal_figure",
-      "required": true,
+      "required": false,
       "language": "en",
       "translation_of": "assets/figures/brand-system.png",
-      "sha256": "3750a13ae41d1aeead11a15caa48704550cd3fdf07844794c45f4c2ae79062dd"
+      "sha256": "4f33da5323c44a2bc37f6963b33389e4b5dd78621448a8eb035f4930dec5172d"
     },
     {
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "d590c6292cfd9a816c49bc3f50a1c62c20c7d34530be940a16dee75faa2e3e6e"
+      "sha256": "8c0611f354a14fee1d005f05ceb25d6ebe44271098d79c7cba3622fa42c3a3d6"
     },
     {
       "path": "assets/media/cover.webp",
@@ -356,7 +357,7 @@
       "title_en": "Audio guide transcript and rights note",
       "description_zh": "导览旁白全文（含时间码）、与 proposal.md 的来源对应表、生成工具与制作方法记录、合成声明与权利边界、已知限制。同时论证听/看/读三条通道承载相同内容，是方案 AI OFF 等价路径原则在自身交付物上的应用。",
       "description_en": "Full narration text with time codes, a source mapping to proposal.md, the generation method and tooling record, the synthesis and rights statement, and known limitations. It also documents that listening, captions, and reading carry identical content, applying the proposal's own AI-OFF equivalence principle to its own deliverable.",
-      "sha256": "044b95a785e48158979e7ffc277721625d1752f0130776249c912051aa9c7128"
+      "sha256": "6ce3390e2fb34323b57e0abbea9b6717c08cc093e745660f890cdf3cc1117824"
     },
     {
       "path": "assets/media/audio-guide.vtt",
@@ -403,7 +404,7 @@
       "path": "visual/assets/scene-fallback.png",
       "role": "visualization",
       "required": false,
-      "language": "neutral",
+      "language": "zh",
       "sha256": "970d4a28451abd575c63d3cce9c881e935b2ad59c5cefde063572a7ec1a8e438"
     },
     {
@@ -447,7 +448,71 @@
       "title_en": "Multimodal short film storyboard, transcript and rights note",
       "description_zh": "七个镜头的分镜与画面文字（中英）对照、旁白全文（含时间码）、与 proposal.md 的来源对应表、画面渲染与交互场景逐帧录制的方法记录、语音合成与权利声明、已知限制。同时论证看／听／读三条通道承载相同内容，是方案 AI ON = AI OFF 等价路径原则在自身交付物上的应用。",
       "description_en": "A shot-by-shot storyboard with bilingual on-screen text, the full narration with time codes, a source mapping to proposal.md, the production record for frame rendering and for the frame-accurate capture of the interactive scene, the synthesis and rights statement, and known limitations. It also documents that watching, listening and reading carry identical content, applying the proposal's own AI ON = AI OFF equivalence principle to its own deliverable.",
-      "sha256": "b0acea0941dca250a60db99fc2d1dece5b8ca792ce4db54566349cb158bedb94"
+      "sha256": "79cbbf0f8e0d3eb9e1834e7fb068dfecc3111d885bc5d8d5ba384fb260d0f79c"
+    },
+    {
+      "path": "visual/assets/seb-spec.json",
+      "role": "sources",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "服务等价基准 SEB v0.1 机器可读规范",
+      "title_en": "Service Equivalence Baseline (SEB) v0.1 machine-readable spec",
+      "sha256": "c7af6cf52b1f53d34e3c0c48d39b4dee525d9ff135e39f86313301c006ae757b"
+    },
+    {
+      "path": "visual/assets/seb-tabletop-run.js",
+      "role": "visualization",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "SEB 桌面配对推演校验器(方法学演示)",
+      "title_en": "SEB tabletop pairing validator (methodology demonstration)",
+      "sha256": "59412e6a8864fe0a86f87600fd2f7310f97cec5ae9a9a95453bc49b6ef83bdd7"
+    },
+    {
+      "path": "visual/assets/seb-tabletop-fixtures.json",
+      "role": "sources",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "SEB 桌面推演正反样例十条",
+      "title_en": "SEB tabletop fixtures, four positive and six negative",
+      "sha256": "bfb93772e4e2f6ac21141f38a60cf938bcfd4547dbc0139661f5acb228f0cea9"
+    },
+    {
+      "path": "visual/assets/seb-change-receipt-sample.json",
+      "role": "sources",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "变更回执格式与演示回执",
+      "title_en": "Change-receipt schema and demonstration receipt",
+      "sha256": "3bf2dde1e2dae28d0d17e3f3a0ac592e03efd00b5de208eb90ceaac378ba3a87"
+    },
+    {
+      "path": "visual/assets/scene-fallback.en.png",
+      "role": "visualization",
+      "required": false,
+      "language": "en",
+      "translation_of": "visual/assets/scene-fallback.png",
+      "sha256": "9c453b60df166ab743d2597e835a51a5f657c4da66b3b2bedfc48897546d95d0"
+    },
+    {
+      "path": "assets/media/journey-en.vtt",
+      "role": "caption_track",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/media/journey.vtt",
+      "title_zh": "旅程短片英文字幕轨",
+      "title_en": "English caption track for the journey film",
+      "sha256": "591f319eb06c1f47d29034a944cc5681515ff30b54758ad5fa88a6146809d4b5"
+    },
+    {
+      "path": "assets/media/audio-guide-en.vtt",
+      "role": "caption_track",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/media/audio-guide.vtt",
+      "title_zh": "多感官导览英文字幕轨",
+      "title_en": "English caption track for the audio guide",
+      "sha256": "f2f7f4935970874b2ade364768a213f724dc3597c9e0c5cac8c87383b7e83b3e"
     }
   ],
   "validation_claim": {
