@@ -128,6 +128,24 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 本试点包的“成功”不是预设招商、效率或客流数字，而是完成五项可审计问题：服务能否在不扫码条件下获得、人工升级是否可用、交接是否及时、无障碍路线是否持续可用、问题是否得到可追溯处理。正式扩展前仍须补齐官方边界与专项条件，并由专业团队与参与者共同判断。
 
+### G1 现场核验清单（本地工作版）
+
+90 天试点进入任何安装或开放前，现场必须逐项完成范围与授权、消防与人身安全、无障碍连续路线、用电与设备隔离、当班责任与付费、告示/数据/申诉、撤场与事件预案七类核验。每一项均须对应可核验的证据、责任角色和“通过/暂停”结论；任何缺项或不通过即不安装、不开放。G1 只确认是否可以开始一个可逆试点，不替代审批、设计、消防、产权、劳动或无障碍专项结论 [standard:BARRIER-FREE-ENVIRONMENT-LAW] [metric:g1_verification_domain_count]。
+
+![众智园维护院 G1 现场核验清单](assets/figures/zhongzhiyuan-g1-checklist.png)
+
+### 付费共创工作坊包（本地工作版）
+
+共创不是无偿访谈。以维护技师、保洁/物业、AI 研发、无障碍/照护使用者、资产/运营五类角色为基本席位，通过边界与付费说明、共同走读、问题卡片、组件试摆、排序与交接五步，产出服务时段愿望单、人工协助与无障碍路线图、五组件清单、停用条件、G1 证据责任表和公开版纪要。具体报酬、工时归属、个人信息与录音规则在活动前书面确认；没有确认便不招募、不记录 [source:AGENT-TASKBOOK] [metric:codesign_participant_role_count]。
+
+![众智园维护院付费共创工作坊包](assets/figures/zhongzhiyuan-codesign-workshop.png)
+
+### 当班记录模板（本地工作版）
+
+当班表只记录启用条件、服务可达、人工交接、路线修复、问题/申诉、收班撤除与下一次复核，按角色和去标识事件汇总；不写入姓名、个人绩效、情绪、精确位置或生产性工单。每班都必须勾选人工入口、无扫码服务、连续无障碍路线、设备隔离和可撤场条件；出现任一停用红线即在表内标记暂停/撤场并进入独立复核 [standard:GENERATIVE-AI-INTERIM-MEASURES] [metric:shift_log_record_category_count]。
+
+![众智园维护院当班记录模板](assets/figures/zhongzhiyuan-shift-log.png)
+
 ## AI 创新生态、人才画像与 AI+ 场景
 
 八类画像把技术岗位与城市运行岗位放在同一张需求表中：

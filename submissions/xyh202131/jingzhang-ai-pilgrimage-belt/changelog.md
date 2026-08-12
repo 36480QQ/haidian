@@ -4,6 +4,23 @@
 >
 > This log records traceable changes to this submission package only. It is not evidence of approval, implementation, field testing, rights clearance, or trusted CI. After any content change, regenerate the manifest from the final Git blobs and rely on repository validation attached to the final PR head.
 
+## v10.0 - 2026-08-12
+
+**Long-term civic operations and ten-round audit / 长期公共共同体运营与十轮总审计**
+
+- 以 `JZ-FUTURE-09` 完成串行第 10 轮，不重造第 3—9 轮的维护、权利、资源、失败、气候、文化和任务经济机制；新增一份 G0 运营集成合同，把全年普通日、无活动日、四个条件季节、同一居民任务的昼／夜／故障／恢复四窗、八类角色、三载体回写、失败公开和年度保持／修正／扩展／退役纳入同一公共运营协议。
+- Completed serial Round 10 under plan ID `JZ-FUTURE-09` without reinventing the Round 3–9 maintenance, rights, resource, failure, climate, cultural, or mission-economy mechanisms. One G0 integration contract now joins year-round ordinary/no-event days, four conditional seasons, one resident task across day/night/failure/recovery, eight role types, three-carrier writeback, failure disclosure, and annual keep/correct/expand/retire decisions.
+- 把既有 `07:00–22:00` 与 `22:00–07:00` 明确降回“继承的 G0 设计窗口”：不是现实开放时间、排班、夜班、噪声或照度承诺。问题季、开源季、城市 Beta 季和 Proof Week 均为 `not_scheduled`；活动、班次、预算、伙伴和确认运营成绩为 0 或 unknown，普通非 AI／无屏／无账户路径不得被活动占用。
+- Explicitly bounded the inherited `07:00–22:00` and `22:00–07:00` entries as G0 design windows—not real opening hours, rosters, night shifts, noise or lighting promises. Question Season, Open-source Season, Urban Beta Season and Proof Week remain `not_scheduled`; events, shifts, budgets, partners and confirmed operating results remain 0 or unknown, and activities may not occupy the ordinary non-AI/screen-free/no-account path.
+- 新增双语 `year-round-civic-operations.{svg,png}`，同构表达全年底板、四窗旅程、角色责任、场景护照—公共时刻表—证据矩阵回写、年度失败披露与去留决定；国际远程复测只有改善本地公共决定、无障碍、维护、安全或普通服务时才计公共收益，传播热度不计。
+- Added the bilingual, isomorphic `year-round-civic-operations.{svg,png}` figure pair for the all-year base, four-window journey, role duties, scenario-passport/public-timetable/evidence-matrix writeback, annual failure disclosure and disposition. International remote retest counts only when it improves local public decisions, access, maintenance, safety, or ordinary service; publicity does not count.
+- 十项运营决定指标全部保持 typed `unknown` / `null`，现实事故、活动、排班、预算、伙伴、投诉数据、国际复测、年度决定与退役回执均保持 0；结构化合同、总体证据矩阵、假设、指标、来源权利和逐文件权利台账形成可复核回链，但不把字段覆盖率写成运营绩效。
+- All ten operating-decision metrics remain typed `unknown` / `null`; real incidents, events, rosters, budgets, partners, complaint data, international retests, annual decisions and retirement receipts remain 0. The structured contract, master evidence matrix, assumptions, metrics, source-rights records and file-level rights ledger form an auditable chain without turning field coverage into operating performance.
+- 十轮一致性审计确认：前台总纲仍是“双轨京张”，后台内核仍是 JZ-AIOS + G0—G3 + 证据门 + 权利边界；众智园／原点社区／大钟寺仍为验证庭／居民共学街院／通勤发布服务三种不可互换原型；12 场景、8 项目、3 重点区、geometry、临时边界、全部 G0 和 `not_fully_cleared` 均未改变。后续只值得在新现场证据与明确授权下做收敛验证；应停止继续增加品牌、季节、场景、无证据指标或成熟度叙事。
+- The ten-round consistency audit confirms that Twin-track Jing-Zhang remains the front-stage master plan and JZ-AIOS + G0–G3 + evidence gates + rights boundaries remain the backstage kernel. Zhongzhiyuan, Origin Community and Dazhongsi remain non-interchangeable proof-court, resident-learning street/courts, and commuter publication/service prototypes. Twelve scenes, eight projects, three key areas, geometry, provisional boundaries, all-G0 status and `not_fully_cleared` remain unchanged. Further work is worthwhile only as evidence-led convergence under explicit authorization; adding brands, seasons, scenes, unsupported metrics or maturity narratives should stop.
+- 双语 Markdown/离线 HTML 与四份 PDF 同步更新；A3 中英文为 63/67 页，A0 中英文各 15 张整板。全部 PDF 为单一正确页面尺寸、无空白页、无替换字形、无越界文本块；新增运营图的中英文封面、A0 整板和 A3 细节裁片均完成视觉抽查。
+- Synchronized bilingual Markdown/offline HTML and all four PDFs. Chinese/English A3 contain 63/67 pages; both A0 sets contain 15 whole boards. Every PDF has one correct page size, zero blank pages, replacement glyphs or out-of-page text blocks; the bilingual cover, A0 board and A3 detail crops for the new operations figure were visually inspected.
+
 ## v9.1 - 2026-08-12
 
 **Rounds 7–9 cross-round closure / 第 7—9 轮跨轮闭环**
