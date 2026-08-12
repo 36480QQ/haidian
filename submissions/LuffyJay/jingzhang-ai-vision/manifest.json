@@ -293,7 +293,6 @@
       "All area-based metrics require recalculation after official boundary publication."
     ],
     "data_confidence": "medium",
-    "self_check_command": "python3 scripts/self_check_submission.py submissions/LuffyJay/jingzhang-ai-vision --pr-author LuffyJay",
     "readiness_contract": "persisted-self-check-v1"
   }
 }
