@@ -73,6 +73,45 @@ The package records calculable areas, green/public-space ratios, building footpr
 
 ![Metrics and evidence loop](assets/figures/metrics-evidence.en.png)
 
+## Design Upgrade: Resonance Protocol and Three Operable Prototypes
+
+The **Resonance Protocol** organizes a public-responsibility chain from spatial prototype to long-term operation. It asks every AI service to be understandable, voluntary, capable of human takeover and open to public review before it moves from a one-off demonstration to routine use along the corridor [source:AGENT-TASKBOOK] [standard:GENERATIVE-AI-INTERIM-MEASURES]. It is not an administrative approval process.
+
+| Resonance segment | Spatial prototype | Primary users | Question to test first | Non-digital alternative | Minimum public evidence |
+| --- | --- | --- | --- | --- | --- |
+| Zhongzhiyuan trusted-test segment | Trusted Compute Garden, observatory and shared test court | developers, start-ups, park staff | Is the service safe, explainable and transferable to a human? | in-person advice, printed notice, manual booking | test scope, incident response, responsible role, withdrawal record |
+| AI Origin open-source conversion segment | Open-Source Front Desk, contribution gallery and campus-edge lounge | students, contributors, conversion teams | Can a result be understood and joined fairly? | no-login wayfinding, offline release, staffed counter | consent status, attribution, feedback digest, revision log |
+| Dazhongsi urban-use segment | Human–AI Co-walking Street, station-city lounge and evening stage | residents, merchants, visitors | Does a service improve daily life without excluding non-users of AI? | staffed inquiry, manual assistance, static wayfinding | accessibility check, complaint route, service hours, pause condition |
+
+The segments are not a one-way industrial pipeline. Any service can return to an earlier segment for revision or stop after public feedback. This translates the railway’s idea of connection into a repeatable public-value check rather than a one-direction technology showcase. Exact locations, dimensions, building actions and engineering conditions remain subject to official boundaries, ownership, transport, municipal, fire and heritage review [data:geometry/key_areas.geojson#PROV-KEY-001] [data:geometry/key_areas.geojson#PROV-KEY-002] [data:geometry/key_areas.geojson#PROV-KEY-003].
+
+| Prototype | Everyday use | Spatial action | Responsibility and stop condition | Low-risk first test |
+| --- | --- | --- | --- | --- |
+| RP-01 Trusted Compute Garden | Daytime test explanation and low-carbon compute display; an evening public question-and-human-answer session | movable shade, seating, information counter and reversible exhibition in existing open space | pause and publish a correction when safety, misleading communication, energy or complaint thresholds are breached | booked workshops, temporary wayfinding and anonymous feedback; no personal profiling |
+| RP-02 Open-Source Front Desk | campus-edge advice by day; release, IP inquiry and developer walk meeting point in the evening | a visible, walk-in and no-login public front desk across ground-floor edge, promenade and gallery | no display without consent, attribution and a withdrawal path; pause where rights or maintenance responsibility are unclear | offline project cards, human explanation and small open days |
+| RP-03 Human–AI Co-walking Street | accessible transfer and walking information at commute peaks; merchant service, cultural interpretation and small talks at night | repair crossing, shade, seating, lighting and static wayfinding before adding explainable digital prompts | revert to human and static systems for crowding, misleading information, accessibility failure or privacy dispute | time-limited test at one corner and one station exit; no road-engineering promise |
+
+The machine-readable version is `visual/assets/resonance-protocol.json`. It contains only conceptual operating fields and no personal, real-time or engineering-control data.
+
+The crosswalk from the three positionings and five functions to local actions is `visual/assets/taskbook-resonance-crosswalk.json`; representative key-area concept windows are recorded in `spatial.json`; eight implementation risks and their required human review are in `risk.json`. These files add reviewable evidence and do not create statutory controls or delivery commitments.
+
+### Six First-Use Scenario Cards
+
+The design now turns AI+ education, health, commerce, energy, walking and park maintenance into six reviewable cards in `visual/assets/scenario-persona-matrix.json`. Each card identifies a person and everyday task, spatial anchor, non-AI baseline, accountable role, public evidence and stop condition. They are conceptual service patterns, not authorised service listings.
+
+| Scenario | Everyday task and place | Non-AI baseline | Stop condition |
+| --- | --- | --- | --- |
+| AI+ education | students and conversion teams at the AI Origin front desk | physical wayfinding, printed timetable and staffed counter | unclear content rights, blocked passage or no human explanation |
+| AI+ health | older people and carers finding accessible service routes | staffed navigation, printed directory and accessible map | mistaken medical advice, inaccessible route or unavailable human service |
+| AI+ commerce | residents, merchants and commuters at Dazhongsi | static wayfinding, staffed inquiry and ordinary merchant service | public wayfinding is obscured, crowding or privacy concern |
+| AI+ energy | compute-literacy at Zhongzhiyuan | physical notice, human explanation and offline board | unsafe condition or misleading presentation as live official data |
+| AI+ walking | continuous accessible route in the heritage park | physical map, ground cues and staffed inquiry | directions conflict with site conditions or block ordinary access |
+| AI+ park maintenance | reporting lighting, water, trees and facilities | phone/on-site reporting, paper form and human inspection | no staffed route, exposed contact details or compromised safety response |
+
+### Six Delivery Gates
+
+Four public-experience gates govern each service encounter; six delivery gates govern whether a proposal can advance from desktop study to a time-limited pilot or a wider conceptual discussion. `visual/assets/implementation-gates.json` records G0 site/data prerequisites, G1 public value, G2 rights and access, G3 safety and human takeover, G4 operating responsibility and G5 expansion review. A failed gate requires revision, a small-scale hold or exit; visibility or usage alone never proves public value.
+
 ## Risk, Copyright, and Compliance
 
 This is an AI-assisted conceptual design package. It does not assert official boundaries, statutory controls, government commitments, personal-data access or construction approval. Generated visuals are clearly presented as concept diagrams. All implementation requires professional planning, legal, heritage, accessibility, privacy, safety and technical review.
