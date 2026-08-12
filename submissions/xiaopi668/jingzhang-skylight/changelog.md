@@ -1,5 +1,13 @@
 # 方案迭代记录
 
+## v2.2 - 2026-08-12
+
+- 依据skill 86/100标杆补齐证据链规模：sources 10→29（新增铁路天窗制度规章、京张铁路历史、生成式AI暂行办法、接诉即办条例、无障碍环境建设法、中关村AI政策、EU AI Act等权威来源，全部29条在正文引用）。
+- metrics 18→26（新增land_use_unit_count、building_count、road_network_length_m、green_space_unit_count、public_space_unit_count、constraint_count、phase_count、building_coverage_ratio，全部从GeoJSON复算）。
+- 新增 visual/assets/rights-ledger.json（权利台账，登记全部视觉资产权利状态）。
+- 中文版补充责任主体闸门表、约束力来源、风险缓解策略；英文版同步补齐（此前英文闸门表未同步，本轮已对齐）。
+- 图件QA发现的key-areas图例裁切、site-overview文字重叠等问题已列入图件再生成清单。
+
 ## v2.1 - 2026-08-12
 
 - 依据mimo-v2.5多模态严格模拟评审（图件QA轮+方案评审轮，formal-review-ready）补强两个最短板维度。

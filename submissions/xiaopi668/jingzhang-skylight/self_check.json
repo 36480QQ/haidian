@@ -59,13 +59,14 @@
         "submissions/xiaopi668/jingzhang-skylight/self_check.json",
         "submissions/xiaopi668/jingzhang-skylight/sources.json",
         "submissions/xiaopi668/jingzhang-skylight/standard_matrix.json",
+        "submissions/xiaopi668/jingzhang-skylight/visual/assets/rights-ledger.json",
         "submissions/xiaopi668/jingzhang-skylight/visual/index.en.html",
         "submissions/xiaopi668/jingzhang-skylight/visual/index.html"
       ],
       "ai_package_stages": {
         "submissions/xiaopi668/jingzhang-skylight": "formal"
       },
-      "total_bytes": 6413958,
+      "total_bytes": 6450982,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -140,11 +141,11 @@
       "summary": {
         "standard_matrix_items": 9,
         "design_depth_items": 15,
-        "known_metric_refs_required": 17,
+        "known_metric_refs_required": 25,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 10,
+          "source": 29,
           "standard": 7,
           "depth": 7,
           "data": 22,
