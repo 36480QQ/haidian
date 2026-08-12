@@ -56,25 +56,25 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "89318c754f95f1b1232ae24c5e3677e8faf6937b26b89c9ce2672951bf17e5fa"
+      "sha256": "543c7b38201fa05722aae0a797b591db8445ea615e91bfef6956bcf62e3c8327"
     },
     {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "cad76288339ac2bd0ff023b594fc1ac3de3cd8b6c53d28e89a833abaaf5941fb"
+      "sha256": "6593e425d6b24ca2d9c7329985ed8e845294ba438b24351ec6e4a905dc0ad363"
     },
     {
       "path": "standard_matrix.json",
       "role": "standard_matrix",
       "required": true,
-      "sha256": "a5eb0659bd841e69af983176aeba2c33499ded08c14ce3233409e4897b293589"
+      "sha256": "6e0bc86418ce5b2866e22bdd0446a0b959c9976e5b99f5323f1a7fc46fc017dd"
     },
     {
       "path": "design_depth_matrix.json",
       "role": "design_depth_matrix",
       "required": true,
-      "sha256": "5a76d858eebee5f1dd47934f452405a0628ab37de30be3f708b34849fac94978"
+      "sha256": "e273b4f0c717616539700570985e10af6ffc627eb62185c40090b163b086d1a7"
     },
     {
       "path": "report/proposal.html",
@@ -295,7 +295,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "9f25a2da672fdadd54bcc7c9c2525badf8f2faa13d36037659510cc0d643e70c"
+      "sha256": "7d21a31da6ff8e8345e4a19b0d71bfc69f6dbdc78c65078c2ef0abd989a8b9d4"
     },
     {
       "path": "assets/branding/logo-construction.png",

@@ -1,5 +1,12 @@
 # 方案迭代记录
 
+## v1.2-2 - 2026-08-12
+
+审查遗留补齐（assumptions 证据链挂接）。
+
+- **5 条 assumption 挂接矩阵链路**：A-BUILDING-004/A-BUILDINGS-001（概念建筑体量）→ compliance 1.4.2 + depth retain_renovate_demolish/height_massing_character + standard MOHURD-ARCH-DESIGN-DEPTH-2016；A-DATA-005（轨道/市政待确认）→ compliance 1.5.2.3 + depth traffic_rail_slow_parking/municipal_new_infrastructure/risk_missing_data + standard MOHURD-CONTROL-DETAILED-PLANNING；A-ECONOMIC-003（经济指标推导）→ compliance 1.5.1.1 + depth metrics_recalculation；A-ZHONGZHI-002（众智命名推断）→ compliance 1.5.3.1 + depth overall_spatial_structure
+- **校验**：self-check 四门 PASS → preflight PASS
+
 ## v1.2-1 - 2026-08-12
 
 全面审查修复（standard 引用闭环缺口）。
