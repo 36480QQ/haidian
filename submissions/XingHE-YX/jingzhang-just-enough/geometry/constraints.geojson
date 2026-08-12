@@ -1,10 +1,9 @@
 {
   "type": "FeatureCollection",
-  "name": "constraints_scaffold",
+  "name": "official_constraints_unavailable",
   "features": [],
   "data_gap": {
     "status": "official_constraint_geometry_unavailable",
-    "declared_by": "scripts/scaffold_ai_submission.py",
     "assumption_ids": [
       "A-CONTROLS-001"
     ],
@@ -16,7 +15,7 @@
       "EXISTING_RAIL",
       "EXISTING_WATER"
     ],
-    "note_zh": "本图层刻意保持空集合。控规控制线、文物保护范围与建设控制地带、道路红线、权属地块、轨道与蓝线均属锁定图层，公开场地包中目前没有可引用的官方几何来源。缺口按 assumption A-CONTROLS-001 登记；取得官方或已清权几何前，不得以推定线条冒充 official_constraint，空集合优于编造。",
-    "note_en": "This layer is intentionally an empty set. Regulatory control lines, heritage protection and construction-control zones, road redlines, cadastral parcels, rail and blue lines are locked layers with no citable official geometry in the public site package. The gap is registered as assumption A-CONTROLS-001; until official or cleared geometry is available, inferred lines must not be presented as an official_constraint - an empty set is preferred over fabrication."
+    "note_zh": "公开场地包不含可引用的控规线、文保线、道路红线、权属、现状铁路或蓝线几何，因此本图层主动留空；空集合优于伪造法定线。",
+    "note_en": "The public site package contains no citable regulatory, heritage, road-redline, cadastral, existing-rail, or blue-line geometry, so this layer is intentionally empty; an empty set is preferable to fabricated statutory lines."
   }
 }

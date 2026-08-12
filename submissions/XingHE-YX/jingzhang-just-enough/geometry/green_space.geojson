@@ -1,43 +1,44 @@
 {
   "type": "FeatureCollection",
-  "name": "green_space_scaffold",
+  "name": "near_intelligence_green_spine",
   "features": [
     {
       "type": "Feature",
-      "id": "GREEN-001",
+      "id": "GREEN-01",
       "properties": {
-        "id": "GREEN-001",
+        "id": "GREEN-01",
         "layer": "GREEN_SPACE",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
         "land_use_code": "1401",
-        "name_zh": "连续公园绿地",
-        "area_sqm_declared": 1408600.768
+        "name_zh": "京张近智公共绿脊",
+        "name_en": "Jing-Zhang near-intelligence public green spine",
+        "area_sqm_declared": 2330405.572
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.34438,
-              39.953
+              116.343756,
+              39.939
             ],
             [
-              116.34438,
-              40.012499999999996
+              116.343756,
+              40.0265
             ],
             [
-              116.346876,
-              40.012499999999996
+              116.346564,
+              40.0265
             ],
             [
-              116.346876,
-              39.953
+              116.346564,
+              39.939
             ],
             [
-              116.34438,
-              39.953
+              116.343756,
+              39.939
             ]
           ]
         ]
