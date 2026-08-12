@@ -165,11 +165,10 @@
    "requirement_id": "agent.2",
    "kind": "required_outputs",
    "item": "case_study_table",
-   "evidence_kind": "heading",
-   "evidence": "proposal.md 中的小节「全球AI创新生态案例研究」，标题下正文 737 字",
+   "evidence_kind": "file",
+   "evidence": "sources.json",
    "satisfied": true,
-   "evidence_strength": "text_only",
-   "section_body_chars": 737
+   "evidence_strength": "artifact"
   },
   {
    "requirement_id": "agent.2",
@@ -266,11 +265,10 @@
    "requirement_id": "agent.3",
    "kind": "required_outputs",
    "item": "persona_table",
-   "evidence_kind": "heading",
-   "evidence": "proposal.md 中的小节「用户画像」，标题下正文 1479 字",
+   "evidence_kind": "file",
+   "evidence": "visual/assets/personas.json",
    "satisfied": true,
-   "evidence_strength": "text_only",
-   "section_body_chars": 1479
+   "evidence_strength": "artifact"
   },
   {
    "requirement_id": "agent.3",
@@ -285,10 +283,10 @@
    "requirement_id": "agent.3",
    "kind": "required_outputs",
    "item": "privacy_and_human_review_boundary",
-   "evidence_kind": "prose",
-   "evidence": "proposal.md 正文中的 **隐私与人工复核的统一边界**（加粗引导句，不是小节标题）",
+   "evidence_kind": "file",
+   "evidence": "visual/assets/scenario_cards.json",
    "satisfied": true,
-   "evidence_strength": "text_only"
+   "evidence_strength": "artifact"
   },
   {
    "requirement_id": "agent.3",
