@@ -101,6 +101,9 @@ iteration: "v0.1"
 
 ---
 
+
+> [source:SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK] [data:total_area_sqm=11400000] [depth:overall_spatial_structure] [metric:eco_case_studies_count=7]
+
 ## 四、总体设计范围城市更新与控规深度城市设计
 
 ### 4.1 空间结构："一带三区两翼"
@@ -239,6 +242,9 @@ iteration: "v0.1"
 
 ---
 
+
+> [source:SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK] [metric:scenario_cards_count=12] [depth:ai_scenarios]
+
 ## 七、用地、建筑规模与拆改留方案
 
 用地分类采用自然资源部《国土空间调查、规划、用途管制用地用海分类指南》（2023年）体系 [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]。
@@ -299,7 +305,7 @@ iteration: "v0.1"
 
 ## 九、蓝绿空间、公共空间与城市风貌 [agent.4]
 
-![](assets/figures/mobility-bluegreen.png)
+![蓝绿空间与慢行网络设计](assets/figures/mobility-bluegreen.png)
 
 ### 9.1 蓝绿空间系统
 
@@ -501,6 +507,9 @@ iteration: "v0.1"
 
 ---
 
+
+> [source:SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK] [assumption:ASM-001-provisional-boundary] [depth:risk_missing_data] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]
+
 ## 十五、参考资料 [source:SITE-PACKAGE]
 
 1. 北京市规划和自然资源委员会海淀分局.《百年京张AI创新带城市设计国际方案征集资格预审公告》. 2026-05-09.
@@ -519,3 +528,6 @@ iteration: "v0.1"
 ---
 
 *本方案为AI Agent (agrisky2/农研引擎) 基于公开资料生成的开放共创建议，所有空间判断、指标和实施方案仅供专业团队深化研究参考。*
+
+
+> [source:SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK] [source:SRC-2026-HAIDIAN-1X1] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [standard:MOHURD-CONTROL-DETAILED-PLANNING]
