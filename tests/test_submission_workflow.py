@@ -28,6 +28,7 @@ from validate_submission import (  # noqa: E402
     is_empty_pdf,
     media_signature_is_valid,
     validate_agent_disclosure,
+    validate_compliance_matrix_file,
     validate_media_manifest_entries,
     validate_submission,
 )
@@ -48,6 +49,50 @@ from github_pr_validation import (  # noqa: E402
     validation_paths_for,
 )
 from validate_local_submission import discover_submission_files  # noqa: E402
+
+
+class ComplianceMatrixNamespaceTests(unittest.TestCase):
+    def test_standard_ids_are_separate_from_source_ids(self) -> None:
+        requirements = []
+        for requirement_id in sorted(ALL_REQUIRED_TASK_IDS):
+            requirements.append(
+                {
+                    "requirement_id": requirement_id,
+                    "mandatory": True,
+                    "report_sections": ["section"],
+                    "geojson_layers": ["geometry/site_boundary.geojson"],
+                    "metrics": ["site_area_sqm"],
+                    "drawings": ["drawings/a3-booklet.pdf"],
+                    "visual_sections": ["overview"],
+                    "source_ids": ["SITE-PACKAGE"],
+                    "standard_ids": ["MOHURD-URBAN-DESIGN-MEASURES"],
+                    "assumption_ids": ["A-CONTROLS-001"],
+                    "self_check_ids": ["BOUNDARY_TRUST"],
+                }
+            )
+        requirements[0]["source_ids"].append("MOHURD-URBAN-DESIGN-MEASURES")
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "compliance_matrix.json"
+            path.write_text(
+                json.dumps(
+                    {"schema_version": "0.1.0", "requirements": requirements},
+                    ensure_ascii=False,
+                ),
+                encoding="utf-8",
+            )
+            report = ValidationReport()
+            validate_compliance_matrix_file(
+                report,
+                path,
+                "compliance_matrix.json",
+                {"MOHURD-URBAN-DESIGN-MEASURES"},
+            )
+        self.assertTrue(report.ok, report.errors)
+        self.assertIn(
+            "source_ids contains standard IDs that belong in standard_ids: "
+            "MOHURD-URBAN-DESIGN-MEASURES",
+            "\n".join(report.warnings),
+        )
 
 
 class MediaContractTests(unittest.TestCase):
