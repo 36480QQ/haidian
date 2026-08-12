@@ -1,6 +1,6 @@
 {
   "schema_version": "0.2.0",
-  "package_id": "ai-jingzhang-corridor-v82",
+  "package_id": "ai-jingzhang-corridor-v83",
   "project_id": "centennial-jingzhang-ai-belt",
   "site_package_version": "0.1.0",
   "package_type": "professional_design_package",
@@ -111,7 +111,7 @@
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
-      "sha256": "9c081cfafefd2b751e5d1d8246f15bacdd189f3119b18de45f7d52a0e084e2be",
+      "sha256": "22139a78df3a3a1c5e8fa2f7bedea7dd67e1b2a717f33e6a3d657cfab0efb34b",
       "language": "zh"
     },
     {
@@ -239,7 +239,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "d09ceec5248c1a62ac73f0ff39501b864068174e7ba2c34c9e9fcf96f7a091b3",
+      "sha256": "1b39b115ba992e0d35ea41c13eb5f3bb0b3b62abdf0770625b78c446f79cc1be",
       "role_detail": "visual_translation"
     },
     {
@@ -259,18 +259,6 @@
       "translation_of": "drawings/a0-boards.pdf",
       "sha256": "fd685dc658c0c444f0bfe432627ff8b886a44f080f594f972adda8211abdb0f4",
       "role_detail": "drawing_translation"
-    },
-    {
-      "path": "visual/assets/three/three.module.js",
-      "role": "visualization",
-      "required": false,
-      "sha256": "bbf5ed13fe4373f5bd38b14ea8e62e9f157327da5638edc6d3863e08b167c9c7"
-    },
-    {
-      "path": "visual/assets/three/OrbitControls.js",
-      "role": "visualization",
-      "required": false,
-      "sha256": "faabb4e8dfd9235ee4a9fd7c9a3d75f90f1689dbd4944bd6fd32117dacec5f93"
     },
     {
       "path": "assets/media/cover-image.png",
