@@ -1,5 +1,44 @@
 # 方案迭代记录
 
+> 编号说明：`proposal.md` frontmatter 中的 `iteration` 表示 PR/CI 迭代轮次（自 PR 创建以来经 CI 验证的轮次数，当前为 6）；本文件的 vX.Y 表示内容版本（内容演进版本号）。两者是两套编号：一次内容更新可能经过多轮 CI 验证后才合入。
+
+## v8.1 - 2026-08-12
+
+### 改动摘要
+
+- 数字一致性修复（第 9 轮逐文件审计）：
+  - A3/A0 图纸说明文字"概念建筑 93 栋"修正为"84 栋"（与 `buildings.geojson` 图层一致）；
+  - 智脉大道引用统一改为 ROAD-008（ROAD-010 为京张智脉绿廊绿道），正文 3 处与 `spatial.json` 1 处修复；
+  - "1.5.2.1" 表述全部清除（公告中不存在该写法）：`metrics.json` 3 处 reason 与生成脚本 4 处改为 1.5(2)1；
+  - 三重点区面积偏差逐区披露（ASSUME-002：众智园 +0.43%、原点社区 +0.02%、大钟寺 +0.06%，合计 +0.24%）；
+  - land_use 差集表述由"<1 m2"改为实测"约 30 m2（0.0003%，EPSG:4326 六位小数量化舍入）"，图注同步；
+  - 指标口径说明重写（public_space_ratio 按 16 个公共空间节点＝6 广场＋6 导视＋3 测试＋1 健康导引，约 5.9 ha、0.52%）；
+  - 图号重排：生态图谱由图 6 改为图 2，其余图 2–5 顺延为图 3–6，A3/A0 页序与正文引用一致。
+- 结构化登记修复：`sources.json` 补立法机关与文号（北京市无人机规章、工信部联装〔2021〕97号）并新增《无障碍环境建设法》与 AREA-CROSSCHECK 两条目；`standard_matrix` 悬空引用闭环；`simulation.json` 修复 released 与 P2 独立复测 pending 冲突；`assumptions.json` 新增 ASSUME-005（概念区间假设集合：1+X+1 比例、800–1200 万 m2 规模、拆改留分档、投资矩阵、P1 资金组合、转化漏斗目标）与 ASSUME-006（翼方位，官方发布后按 P4 更新）。
+- 评审细则逐维补强（7 维 rubric + taskbook 13 维补充维度）：
+  - 任务书相关性：三大定位五大功能映射表（8 行，官方措辞）、"1+X+1" 表重写为 8 行（X1–X5 按海淀公开产业口径＋"＋1"非 X 类＋AI+ 垂直方向）、现状与在建项目统筹段（公告 1.5(3)）、众智园国家人工智能平台定位（公告 1.5(3)1））、大钟寺数字资产流通研究课题与绿地复合利用、原点社区对外交通纳入 JZ-07 前置调查（公告 1.5(3)2））、北影方位修正（西土城路 4 号）；
+  - 可实施性：P1 近期资金组合概念区间（财政引导 40–60%／场景收益 15–30%／开源公益基金 10–20%／社会资本 0–20%）、智脉大道概念红线宽度区间（约 26–30 m，待交通专项与控规确认；正文与 `roads.geojson` ROAD-008 属性同步）、命名体系分级表（7 行，回应 agent.1）、科技服务翼专项机制段；
+  - 表达完整度：`copyright_statement.md` 图数 5→6 并补充公告 IP 条款（8.1）衔接披露与图件 alt-text 声明、13 维自评表章节号与功能匹配度行修正、东翼生态体验环概念（小月河翼公共体验路径）。
+- 术语与双语对齐（按 `docs/terminology-glossary.md` 推荐译法批量统一，共 60+ 处）：concept suggestion→conceptual recommendation、three-district two-wing→Three Zones and Two Wings、urban form→Urban Character（仅城市风貌语境，未来城市形态不受影响）、Blue-Green Network→Blue-Green Space、Box meeting pavilion→Smart Box、pulse-era carrier→pulse-transformed carrier、Tsinghua-East-Road-West→Tsinghua East Road West Exit；北影活动四步管理补"续办/退役"；《京张铁路工程纪略》补"（1915 年刊印）"。
+- 能力与工具说明：agent 为 claude 族模型（anthropic-claude-fable-5，GA 档），具备多模态输入与工具调用能力，文本/代码为主通道；图纸与可视化全部由确定性脚本管线（matplotlib/reportlab/HTML 生成器）产出并字节级可复现。图像生成等不支持的能力自动回退（capability_fallback）为脚本管线，不声称 agent 直接生成图纸文件。
+- 成果表达：全部 6 图（zh/en）与 A3/A0 图纸（zh/en）重生成，REV 标识 v8.1（五路审计闭环）；`roads.geojson` 新增 ROAD-008 red_line_note 属性（概念红线宽度约 26–30 m 区间）；`green_space.geojson` 东翼防护绿带登记 east_wing_loop=concept（东翼生态体验环的数据落点）；离线可视化 HTML 版本标识由残留的 v7.0 修正为 v8.1（此前未随版本同步），与图件/图纸一致；三重点区表众智园行补国家级人工智能集聚区定位（与正文小方案一致）；报告 HTML 与离线可视化 HTML 重生成。
+
+### 协作记录
+
+- 第 9 轮以 5 路并行审计推进（评审细则／双语契约／结构化 JSON／数字一致性／视觉与打包），每路审计发现均在本版本逐项闭环；重跑 gen_01→05＋render＋finalize 后，四道自检门与参与预检全部 PASS（formal-review-ready）。
+
+### 采纳反馈
+
+- 评审细则 7 维与 taskbook 13 维补充评审维度、术语表推荐译法、数值与图层一致性、公告条款号与引用错位等全部反馈。
+
+### 暂未采纳或待复核事项
+
+- 概念比例区间、投资量级、P1 资金组合、拆改留分档与三区面积偏差均待官方现状调查、控规与统计数据发布后按 P4 复盘复核；翼方位（ASSUME-006）、红线宽度区间、对外交通深化待官方条件确认。
+
+### 公开资料与合规说明
+
+- 同 v8.0；本轮新增引用均为公开法规/标准/试点文件并登记 `sources.json`；无新增未授权或未公开资料。
+
 ## v8.0 - 2026-08-12
 
 ### 改动摘要
