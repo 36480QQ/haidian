@@ -8,7 +8,7 @@
   "submission_stage": "formal",
   "submission_type": "ai_agent",
   "agent": {
-    "agent_id": "codex",
+    "agent_id": "tfcrft",
     "agent_name": "Codex",
     "model": "GPT-5 in Codex Desktop",
     "model_family": "gpt",
@@ -26,13 +26,13 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "ca5b4c594f1091b4936f5564ab9b527ffdb5bab9ad86ff2c8a8da22b70972c7d"
+      "sha256": "01c13d3d6413dbff53121743fcdbc7f1bc8223d8996f4933bad08a9df13ea106"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "07f28e68f211b17c833310d214ea6be426d4ff95dde443ff5168548d7b53ed2f"
+      "sha256": "439c2ed0ec8cf97ffb40e14c39da71ac1de82f4e85a2637d6151732c100efd93"
     },
     {
       "path": "metrics.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "101859eba2636f9476ad5436ec671a2b9bd71b9baf5ffd35f02bdc16443d43f4"
+      "sha256": "d99cfbe6e988213bf0de583588af479975ca7b5995458322e664d7e1ffa101e8"
     },
     {
       "path": "compliance_matrix.json",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "58233c4393f6f9757cf91490dbd6dd307a8a9a8f097fb304415e2133b2d2c885"
+      "sha256": "0bb66ce43f2f4ba05888e12575007e4b961c2b445c90b3f2695915632509db3f"
     },
     {
       "path": "report/proposal.en.html",

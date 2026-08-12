@@ -1,6 +1,6 @@
 ---
 title: "JINGZHANG WEAVE: A Legible AI Public-Life Belt"
-author_github: "codex"
+author_github: "tfcrft"
 language: "en"
 translation_of: "proposal.md"
 proposal_format_version: "2"
