@@ -73,7 +73,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Microsoft Ya
     </div>
     <div class="card-body">
       <img src="../assets/figures/land-use-structure.png" alt="Land Use Structure" loading="lazy">
-      <p style="font-size:0.8em;color:var(--grey);margin-top:8px;">用地分区：科创产业、都市农业、商业服务、生态居住与基础设施（概念）。交通慢行：依托京张铁路遗址绿廊与滨水蓝道构建慢行网络。蓝绿公共空间：绿地率 25.98%，公共空间率 3.08%（概念）。</p>
+      <p style="font-size:0.8em;color:var(--grey);margin-top:8px;">用地分区：科创产业、都市农业、商业服务、生态居住与基础设施（概念）。交通慢行：依托京张铁路遗址绿廊与滨水蓝道构建慢行网络。蓝绿公共空间：绿地率 25.98%（复算）/ 28.5%（概念目标），公共空间率 3.08%（复算）/ 8.2%（概念目标）。</p>
     </div>
   </div>
 
@@ -98,20 +98,24 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Microsoft Ya
           <div class="label">朝圣地标</div>
         </div>
         <div class="metric-box" style="background:var(--green-light);" data-metric="green_ratio" data-value="0.259847">
-          <div class="number" style="color:var(--green-dark);">26.0%</div>
-          <div class="label">绿地率(概念)</div>
+          <div class="number" style="color:var(--green-dark);">25.98%</div>
+          <div class="label">绿地率(复算)</div>
+          <div class="data-metric">green_ratio = 0.259847 (目标: 28.5%)</div>
         </div>
-        <div class="metric-box" style="background:var(--blue-light);">
+        <div class="metric-box" style="background:var(--blue-light);" data-metric="eco_case_studies_count" data-value="7">
           <div class="number" style="color:var(--blue-dark);">7</div>
           <div class="label">全球案例</div>
+          <div class="data-metric">eco_case_studies_count = 7</div>
         </div>
-        <div class="metric-box" style="background:var(--orange-light);">
-          <div class="number" style="color:var(--orange);">5</div>
+        <div class="metric-box" style="background:var(--orange-light);" data-metric="user_personas_count" data-value="8">
+          <div class="number" style="color:var(--orange);">8</div>
           <div class="label">用户画像</div>
+          <div class="data-metric">user_personas_count = 8 (包容性扩展)</div>
         </div>
-        <div class="metric-box" style="background:var(--orange-light);" data-metric="public_space_ratio" data-value="0.030757">
-          <div class="number" style="color:var(--orange);">3.08%</div>
-          <div class="label">公共空间率(概念)</div>
+        <div class="metric-box" style="background:var(--green-light);" data-metric="public_space_ratio" data-value="0.030757">
+          <div class="number" style="color:var(--green-dark);">3.08%</div>
+          <div class="label">公共空间率(复算)</div>
+          <div class="data-metric">public_space_ratio = 0.030757 (目标: 8.2%)</div>
         </div>
       </div>
     </div>
@@ -128,9 +132,9 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Microsoft Ya
         <span class="tag green">AI分子育种</span><span class="tag green">作物表型组学</span>
         <span class="tag blue">农业机器人</span><span class="tag orange">数字孪生农田</span>
       </div>
-      <div class="stat-row"><span>建筑规模(概念)</span><span class="stat-value">50-80万m²</span></div>
-      <div class="stat-row"><span>容积率(概念)</span><span class="stat-value">0.8-1.5</span></div>
-      <div class="stat-row"><span>限高(概念)</span><span class="stat-value">45m</span></div>
+      <div class="stat-row"><span>建筑规模</span><span class="stat-value">待控规确定（变量）</span></div>
+      <div class="stat-row"><span>容积率</span><span class="stat-value">待控规确定</span></div>
+      <div class="stat-row"><span>限高</span><span class="stat-value">待控规确定</span></div>
     </div>
   </div>
 
@@ -144,9 +148,9 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Microsoft Ya
         <span class="tag blue">食品AI加速器</span><span class="tag blue">精准营养</span>
         <span class="tag green">细胞培养蛋白</span><span class="tag orange">人才社区</span>
       </div>
-      <div class="stat-row"><span>建筑规模(概念)</span><span class="stat-value">60-100万m²</span></div>
-      <div class="stat-row"><span>容积率(概念)</span><span class="stat-value">1.5-2.5</span></div>
-      <div class="stat-row"><span>限高(概念)</span><span class="stat-value">60-80m</span></div>
+      <div class="stat-row"><span>建筑规模</span><span class="stat-value">待控规确定（变量）</span></div>
+      <div class="stat-row"><span>容积率</span><span class="stat-value">待控规确定</span></div>
+      <div class="stat-row"><span>限高</span><span class="stat-value">待控规确定</span></div>
     </div>
   </div>
 
@@ -161,9 +165,9 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Microsoft Ya
         <span class="tag blue">食品数据平台</span>
       </div>
       <div class="stat-row"><span>更新项目(存量提升)</span><span class="stat-value">大钟寺食品体验区</span></div>
-      <div class="stat-row"><span>建筑规模(概念)</span><span class="stat-value">40-60万m²</span></div>
-      <div class="stat-row"><span>容积率(概念)</span><span class="stat-value">2.0-3.0</span></div>
-      <div class="stat-row"><span>限高(概念)</span><span class="stat-value">100m</span></div>
+      <div class="stat-row"><span>建筑规模</span><span class="stat-value">待控规确定（变量）</span></div>
+      <div class="stat-row"><span>容积率</span><span class="stat-value">待控规确定</span></div>
+      <div class="stat-row"><span>限高</span><span class="stat-value">待控规确定</span></div>
     </div>
   </div>
 
@@ -179,7 +183,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Microsoft Ya
           <li>agent.1: 命名体系 + Logo方向</li>
           <li>agent.2: 7个全球AI生态案例</li>
           <li>agent.3: 12张场景卡 + 3验证场景</li>
-          <li>agent.3: 5类用户画像</li>
+          <li>agent.3: 8类用户画像（含包容性画像）</li>
           <li>agent.4: 3个AI朝圣地标</li>
           <li>agent.5: "三生万物"文化叙事</li>
           <li>agent.6: 四季活动+社区运营</li>
