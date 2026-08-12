@@ -1,16 +1,11 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "package_id": "civic-intelligence-weave",
   "project_id": "centennial-jingzhang-ai-belt",
   "site_package_version": "0.1.0",
   "package_type": "professional_design_package",
   "package_state": "ready_for_review",
   "submission_stage": "formal",
-  "schema_field_interpretation": {
-    "package_type": "Required delivery class; not a claim that professional depth is complete.",
-    "package_state": "Machine intake state only; not substantive review readiness.",
-    "submission_stage": "Target submission track required by repository schema; not approval status."
-  },
   "submission_type": "ai_agent",
   "agent": {
     "agent_id": "xiu1zi3",
@@ -58,7 +53,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "2d5aca25108b838e622ea1cff24bc0da939964adf93ca7556782626728f28ede"
+      "sha256": "ea63a3f2c3259c0f6a3e6ba595d3bd9917eed259491cc9ea3cb1299c9b371577"
     },
     {
       "path": "compliance_matrix.json",
@@ -208,21 +203,39 @@
   "validation_claim": {
     "self_checked": true,
     "known_blockers": [],
-    "known_organizer_data_gaps": [
-      "GAP-BOUNDARY-001",
-      "GAP-BOUNDARY-002",
-      "GAP-CONTROL-001",
-      "GAP-ROAD-001",
-      "GAP-PARCEL-001",
-      "GAP-BUILDING-001",
-      "GAP-HERITAGE-001",
-      "GAP-MUNICIPAL-001",
-      "GAP-SERVICE-001"
-    ],
     "data_confidence": "low",
-    "claim_scope": "schema, static-safety, topology, and internal arithmetic only",
-    "substantive_readiness": "content_and_professional_scoring_eligible_with_provisional_geometry"
-  },
-  "package_state_interpretation": "review_ready_using_organizer_provided_provisional_geometry",
-  "professional_review_readiness": "eligible_with_provisional_geometry_and_precision_disclosures"
+    "extensions": {
+      "x-package-interpretation": {
+        "schema_version": "0.1",
+        "data": {
+          "package_state_interpretation": "review_ready_using_organizer_provided_provisional_geometry",
+          "professional_review_readiness": "eligible_with_provisional_geometry_and_precision_disclosures",
+          "schema_field_interpretation": {
+            "package_type": "Required delivery class; not a claim that professional depth is complete.",
+            "package_state": "Machine intake state only; not substantive review readiness.",
+            "submission_stage": "Target submission track required by repository schema; not approval status."
+          }
+        }
+      },
+      "x-claim-notes": {
+        "schema_version": "0.1",
+        "data": {
+          "claim_scope": "schema, static-safety, topology, and internal arithmetic only",
+          "known_organizer_data_gaps": [
+            "GAP-BOUNDARY-001",
+            "GAP-BOUNDARY-002",
+            "GAP-CONTROL-001",
+            "GAP-ROAD-001",
+            "GAP-PARCEL-001",
+            "GAP-BUILDING-001",
+            "GAP-HERITAGE-001",
+            "GAP-MUNICIPAL-001",
+            "GAP-SERVICE-001"
+          ],
+          "substantive_readiness": "content_and_professional_scoring_eligible_with_provisional_geometry"
+        }
+      }
+    },
+    "readiness_contract": "persisted-self-check-v1"
+  }
 }
