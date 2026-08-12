@@ -1200,6 +1200,80 @@
         "No field test, approval or GO decision"
       ],
       "license": "No complete reusable license terms are retained in the package; repository review only pending maintainer terms and independent rights audit"
+    },
+    {
+      "id": "SOURCE-JZ-ORDINARY-LIFE-MEDIA-REGISTER-R12",
+      "rights_evidence_id": "SRC-RIGHTS-JZ-ORDINARY-LIFE-MEDIA-REGISTER-R12",
+      "title": "普通生活空间场景结构化媒体登记：三原型、四态与零现实结果边界",
+      "publisher": "xyh202131",
+      "path": "visual/assets/ordinary-life-media-register.json",
+      "source_type": "in_package_concept_media_register",
+      "accessed_date": "2026-08-13",
+      "authority_level": "submission_author",
+      "collection_method": "Round 12 package-authored structured register derived from the existing three prototypes and public-rights contracts",
+      "allowable_uses": [
+        "Repository review",
+        "Peer assessment",
+        "Internal package consistency checks"
+      ],
+      "restrictions": [
+        "G0 conceptual interpretation only; not spatial, operational, accessibility, approval or field evidence",
+        "Cannot create a location, dimension, component, shift, operating result or maturity upgrade"
+      ],
+      "known_gaps": [
+        "Real photographs, confirmed viewpoints, field observations, approved components and operational interactions remain 0",
+        "Independent professional and rights review remains pending"
+      ],
+      "license": "No complete reusable license terms are retained in the package; repository review only pending maintainer terms and independent rights audit"
+    },
+    {
+      "id": "SOURCE-ORDINARY-LIFE-MEDIA-R12",
+      "rights_evidence_id": "SRC-RIGHTS-ORDINARY-LIFE-MEDIA-R12",
+      "title": "普通生活空间场景册：无文字三联概念图与双语无障碍说明",
+      "publisher": "xyh202131",
+      "path": "assets/media/ordinary-life-scenes.webp",
+      "source_type": "generated_concept_visualization",
+      "accessed_date": "2026-08-13",
+      "authority_level": "submission_author",
+      "collection_method": "Generated with OpenAI built-in image generation from a package-authored text prompt, then converted locally to WebP with Pillow without compositional editing",
+      "allowable_uses": [
+        "Repository review",
+        "Peer assessment",
+        "Internal package consistency checks"
+      ],
+      "restrictions": [
+        "Concept visualization only; not a site photograph, confirmed viewpoint, approved design, product selection or operating record",
+        "Public or professional reuse remains blocked pending complete model/output terms and independent rights audit"
+      ],
+      "known_gaps": [
+        "Exact model serving snapshot and complete output terms are not asserted",
+        "No independent image-rights, accessibility, architectural or professional review"
+      ],
+      "license": "No public or professional reuse licence is asserted; repository review only pending complete terms and independent audit"
+    },
+    {
+      "id": "SOURCE-ORDINARY-LIFE-PROPOSAL-R12",
+      "rights_evidence_id": "SRC-RIGHTS-ORDINARY-LIFE-PROPOSAL-R12",
+      "title": "普通生活空间场景册：先看人怎样使用，再看系统怎样叠加（双语概念章节）",
+      "publisher": "xyh202131",
+      "path": "proposal.md#ordinary-life-spatial-scenes",
+      "source_type": "conceptual_proposal",
+      "accessed_date": "2026-08-13",
+      "authority_level": "submission_author",
+      "collection_method": "Round 12 bilingual interpretation authored from the existing three-switchyard, non-AI parity, failure/recovery, and professional-handoff evidence",
+      "allowable_uses": [
+        "Repository review",
+        "Peer assessment",
+        "Internal package consistency checks"
+      ],
+      "restrictions": [
+        "Conceptual only; not field research, resident consent, professional opinion, approval or implementation evidence",
+        "Cannot upgrade any scene beyond G0 or alter provisional geometry"
+      ],
+      "known_gaps": [
+        "No field survey, confirmed viewpoint, approved component, operating result or restoration result"
+      ],
+      "license": "No complete reusable license terms are retained in the package; repository review only pending maintainer terms and independent rights audit"
     }
   ]
 }

@@ -75,6 +75,8 @@
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/year-round-civic-operations.en.svg",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/year-round-civic-operations.png",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/year-round-civic-operations.svg",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/media/ordinary-life-scenes.md",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/media/ordinary-life-scenes.webp",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assumptions.json",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/changelog.md",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/compliance_matrix.json",
@@ -115,6 +117,7 @@
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/visual/assets/key-area-evidence-matrix.json",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/visual/assets/mission-economy-contract.json",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/visual/assets/non-ai-parity-contract.json",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/visual/assets/ordinary-life-media-register.json",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/visual/assets/pilot-readiness-register.json",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/visual/assets/readiness-closure-contract.json",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/visual/assets/rights-clearance-ledger.json",
@@ -132,7 +135,7 @@
       "ai_package_stages": {
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt": "formal"
       },
-      "total_bytes": 21055291,
+      "total_bytes": 38220963,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -221,10 +224,10 @@
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 29,
+          "source": 30,
           "standard": 6,
           "depth": 15,
-          "data": 60,
+          "data": 63,
           "metric": 80
         }
       }

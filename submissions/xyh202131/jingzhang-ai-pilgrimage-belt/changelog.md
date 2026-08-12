@@ -4,6 +4,19 @@
 >
 > This log records traceable changes to this submission package only. It is not evidence of approval, implementation, field testing, rights clearance, or trusted CI. After any content change, regenerate the manifest from the final Git blobs and rely on repository validation attached to the final PR head.
 
+## v12.0 - 2026-08-13
+
+**Ordinary-life spatial scenes / 普通生活空间场景册**
+
+- 新增一张无文字、合成人尺度三联概念图：众智园普通旁路与平行验证庭、原点社区无屏居民街与两院、大钟寺连续通勤与旁侧人工服务。它把“先完成普通任务、AI 只作可选旁侧叠层”画进空间，不新增 Logo、场景、项目、几何或治理合同。
+- Added one text-free synthetic human-scale triptych: Zhongzhiyuan ordinary bypass beside a parallel proof court, Origin Community screen-free resident street and two courts, and Dazhongsi continuous commuting beside staffed service. It spatializes “complete the ordinary task first; AI is only an optional side overlay” without adding a logo, scene, project, geometry, or governance contract.
+- 新增双语长描述与 `ordinary-life-media-register.json`，逐处登记普通路径、可选验证、人工交接、故障绕行、恢复提示、禁止推断和普通—验证—故障—恢复四态；真实照片、确认视点、现场观察、获批构件、运营交互、无障碍结果与恢复结果均保持 0。
+- Added a bilingual long description and `ordinary-life-media-register.json`, recording each ordinary path, optional proof layer, staffed handoff, fault bypass, restoration cue, prohibited inference, and ordinary–proof–fault–recovery reading. Real photographs, confirmed viewpoints, field observations, approved components, operational interactions, accessibility results, and restoration results remain 0.
+- 双语正文、离线 visual、报告、四份出版物、来源/权利证据、manifest 和逐文件台账同步纳入该人类阅读入口。图像由 OpenAI 图像生成工具从本包自编文本提示生成，未输入外部图像；权利状态继续为 `not_fully_cleared`，公共或专业复用继续阻断。
+- Synchronized the bilingual proposals, offline visual, reports, four publications, source/rights evidence, manifest, and file-level ledger with this human-reading entry. The OpenAI image-generation tool used a package-authored text prompt and no external image input; rights remain `not_fully_cleared`, with public or professional reuse still blocked.
+- 12 场景、8 项目、3 重点区、geometry、metrics、99 个现实关闭槽、全部 G0 与临时边界保持不变；概念图、文件 PASS、PR 审查或合并均不构成现实位置、无障碍合规、获批设计、建设、运营或成熟度升级。
+- Twelve scenes, eight projects, three key areas, geometry, metrics, 99 real-world closure slots, all-G0 status, and provisional boundaries remain unchanged. A concept image, file PASS, PR review, or merge creates no real location, accessibility compliance, approved design, construction, operation, or maturity advancement.
+
 ## v11.0 - 2026-08-12
 
 **Review synthesis and professional handoff / 评审收束与专业深化交接**
