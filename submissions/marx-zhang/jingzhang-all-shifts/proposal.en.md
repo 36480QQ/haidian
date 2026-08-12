@@ -100,6 +100,30 @@ The following generative images translate the proposal text into conceptual atmo
 
 ![Dazhongsi Exchange Yard concept](assets/media/dazhongsi-concept.webp)
 
+## Phase 3: Zhongzhiyuan Maintenance Yard 90-Day Reversible Pilot Package
+
+Zhongzhiyuan is the first prototype for “R&D meets maintenance”; it is **not a confirmed project, site, investment or construction scheme**. The official call asks this area to deepen the AI full-stack ecosystem, standards and safety governance, green-space scenarios, Qinghe culture and a garden-style innovation district. Exact parcels, title, buildings, fire, transport and utilities remain unavailable in public materials. This package therefore proposes only a removable, auditable, pausable 90-day method; it asserts no building or development quantity [source:OFFICIAL-ANNOUNCEMENT] [data:geometry/key_areas.geojson#PROV-KEY-001].
+
+### Five reversible spatial components
+
+After G1 site verification, five movable components temporarily organize a public ground floor: a staffed threshold, non-production maintenance bench, paid learning table, handover-and-appeal desk and recovery garden. They make maintenance visible, human help reachable, learning accessible and exit possible. They do not connect to production systems, collect personal performance data or imply permanent alteration. If title, fire, accessibility or safety conditions fail, components are not installed or are removed [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
+
+![Zhongzhiyuan 90-day pilot spatial kit](assets/figures/zhongzhiyuan-pilot-space.en.png)
+
+### 90-day rhythm and four-shift template
+
+Days 01–14 are paid co-design: maintenance technicians, cleaning/property workers, researchers, access users and operations representatives define activation hours, kit, staffed handover and appeal path. Days 15–30 cover only site, duty, fire, accessibility, power and removal checks. Only on days 31–75 may booked and public sessions run non-production maintenance demonstrations, paid learning and staffed handover. Days 76–90 use independent review to scale, revise or stop. The 06–10, 10–18, 18–24 and 00–06 templates activate only where paid staffing and safety checks are complete; without staff or conditions, the service does not open [metric:pilot_day_count] [metric:pilot_gate_count].
+
+![Zhongzhiyuan 90-day pilot rhythm](assets/figures/zhongzhiyuan-pilot-schedule.en.png)
+
+### A shift log is not worker scoring
+
+The pilot records only service access, completed staffed handovers, accessible-route closure, resolved problems and appeal closure. Logs use time windows, de-identified events and public monthly summaries. Personal performance, emotion, precise traces and production work orders are prohibited. Every activation needs staffed, no-scan access. Personal scoring, emotion recognition, covert tracking, automated punishment, production-system connection, missing staffed access or unrepaired access blockage immediately pauses and removes the pilot for independent review [source:AGENT-TASKBOOK] [standard:GENERATIVE-AI-INTERIM-MEASURES].
+
+![Zhongzhiyuan pilot audit and shutdown lines](assets/figures/zhongzhiyuan-pilot-audit.en.png)
+
+Pilot “success” is not a pre-set investment, efficiency or footfall number. It is evidence for five auditable questions: can service be used without a scan; is human escalation available; is handover timely; does the accessible route remain usable; and are problems handled traceably? Official geometry and specialist conditions remain required before any expansion, with final judgment by professional teams and participants.
+
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
 | Persona | Core needs |

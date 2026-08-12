@@ -174,6 +174,45 @@
       "assumptions": [
         "Concept implementation list; owners, funding and approvals pending."
       ]
+    },
+    "pilot_day_count": {
+      "status": "known",
+      "value": 90,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "specified_duration_days(zhongzhiyuan_reversible_pilot)",
+      "confidence": "high",
+      "assumptions": [
+        "A conceptual pilot duration, not a confirmed implementation schedule."
+      ]
+    },
+    "pilot_gate_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count(G0,G1,G2,G3,G4)",
+      "confidence": "high",
+      "assumptions": [
+        "Gates are a proposal governance framework, not an authority approval protocol."
+      ]
+    },
+    "pilot_component_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count(movable_pilot_components)",
+      "confidence": "high",
+      "assumptions": [
+        "Components are conceptual, movable and conditional on G1 verification."
+      ]
     }
   }
 }
