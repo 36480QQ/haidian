@@ -15,7 +15,7 @@ iteration: v0.2
 
 **Provisional-boundary statement:** This package uses the repository’s public provisional geometry as a concept constraint. It is not a statutory redline, ownership boundary, engineering boundary, or approval basis. Replace it and rerun area, drawing, and compliance checks when official material becomes available.
 
-![Jing-Zhang Commons concept atmosphere: track trace, shade, rain garden, and civic-reading interface; original generated visual, not a built condition.](assets/hero/jingzhang-commons-cover.png)
+![Jing-Zhang Commons concept atmosphere: track trace, shade, rain garden, and civic-reading interface; original generated visual, not a built condition.](assets/jingzhang-commons-cover.png)
 
 ## Design Basis and Source List
 
