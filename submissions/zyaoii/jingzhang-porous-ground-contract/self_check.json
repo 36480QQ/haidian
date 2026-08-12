@@ -66,7 +66,7 @@
       "ai_package_stages": {
         "submissions/zyaoii/jingzhang-porous-ground-contract": "formal"
       },
-      "total_bytes": 23966137,
+      "total_bytes": 24159714,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -108,11 +108,11 @@
       ],
       "metrics": {
         "site_area_sqm": 11412825.386,
-        "green_space_area_sqm": 364338.518,
-        "public_space_area_sqm": 32586.455,
-        "building_footprint_area_sqm": 19350.0,
-        "green_ratio": 0.031924,
-        "public_space_ratio": 0.002855
+        "green_space_area_sqm": 159933.8,
+        "public_space_area_sqm": 13537.817,
+        "building_footprint_area_sqm": 17186.61,
+        "green_ratio": 0.014014,
+        "public_space_ratio": 0.001186
       }
     },
     "stderr": ""
@@ -125,8 +125,9 @@
       "issues": [],
       "metrics_seen": {
         "site_area_sqm": 11412825.386,
-        "green_ratio": 0.031924,
-        "public_space_ratio": 0.002855
+        "green_ratio": 0.014014,
+        "public_space_ratio": 0.001186,
+        "building_footprint_area_sqm": 17186.61
       }
     },
     "stderr": ""
@@ -140,7 +141,7 @@
       "summary": {
         "standard_matrix_items": 11,
         "design_depth_items": 15,
-        "known_metric_refs_required": 33,
+        "known_metric_refs_required": 54,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
@@ -148,7 +149,7 @@
           "standard": 6,
           "depth": 13,
           "data": 16,
-          "metric": 25
+          "metric": 31
         }
       }
     },

@@ -6,7 +6,7 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "Open the ground, not a direct noise path: three former-rail-corridor section types establish a passive-first, AI-removable and restorable multi-physics porosity contract."
+summary: "Open the ground, not a direct noise path: two located concepts—S1 one-way hand-off and S2 two-axis crossing—plus one unanchored T3 type establish a passive-first, AI-removable and restorable multi-physics porosity contract."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
@@ -15,13 +15,13 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 > **OPEN THE GROUND, NOT A DIRECT NOISE PATH.** Draw the source, path and human receiver surface before deciding where to open, turn, shade and dwell. Sensors only verify; AI only compares design-time alternatives. With power, network and model off, the path, shade, staggered porosity and quiet side must still work.
 
-**Honest current status:** `C-S` is a formal-v2 concept-spatial candidate; machine gates and independent blind review must read the exact packet records and cannot be replaced by this status sentence. `C-I` is `HOLD`. There is no real transect, written authority, E3 site baseline or E4 mock-up/restoration evidence. The package claims no validation, implementation, annual effect, health outcome, statutory compliance or government commitment. Repository geometry is provisional; `PROV-KEY-003` is not reliably anchored to real Dazhongsi station-city conditions.
+**Honest current status:** `C-S` is a formal-v2 concept-spatial candidate; machine gates and independent blind review must read the exact packet records and cannot be replaced by this status sentence. `C-I` is `HOLD`. There is no real transect, written authority, E3 site baseline or E4 mock-up/restoration evidence. The package claims no validation, implementation, annual effect, health outcome, statutory compliance or government commitment. S1/S2 are E0 design-parameter envelopes on provisional carriers and are `NOT_MEASURED`; `PROV-KEY-003` is not reliably anchored to real Dazhongsi station-city conditions, so T3 has no ROAD/GREEN/PUBLIC/BUILDING feature.[metric:located_prototype_count] [metric:mapped_t3_design_feature_count]
 
 **Five falsifiable clauses:** (1) Opening too little can retain heat or limit exchange; an opening too straight creates a direct path that transmits noise to an occupied receiver. (2) `B0 / B1 / P / A`: B0 is read-only baseline, B1 is the manual rule baseline, P is the drawable parameter family, and A is design-time AI search; held-out ablation that is unstable or does not outperform B1 removes the AI. (3) `PROV-KEY-003` is an unanchored rough provisional polygon, not a real Dazhongsi site. (4) E0 is concept, E1 provisional material, E2 public method, E3 authorised field baseline, and E4 reversible mock-up plus restoration evidence; current E3/E4 do not exist and `C-I HOLD`. (5) AI has no authority to approve openings, construction, state transitions, safety release, or restoration. With zero power or power failure, network failure and model removal, the path, shade, staggered porosity and quiet side remain in service.[metric:e3_site_evidence_count] [metric:e4_implementation_evidence_count]
 
 ## Design Basis and Source List
 
-The proposal answers the official three levels, three areas/two wings and agent.1—agent.6 through one non-portable spatial proposition. Along the former-rail innovation corridor, the northern R&D/test edge, central campus-neighbourhood passage and southern arrival interface each need opening without transmitting noise directly to people. If replacing Jing-Zhang and the three areas leaves the causal sequence unchanged, the design has failed.[source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [source:SITE-PACKAGE]
+The proposal answers the official three levels, three areas/two wings and agent.1—agent.6 through one non-portable proposition. Northern S1 uses one directional controlled-backstage → signed-evidence-gate → public-frontstage hand-off. Central S2 uses two non-collinear paths, one shared court, unlike occupied edges and a separate quiet learning strip. Southern T3 remains an unanchored adoption/exit type only. If replacing Jing-Zhang and the three areas leaves this causal structure unchanged, the design has failed.[source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [source:SITE-PACKAGE]
 
 The overall and key-area geometries are rough provisional carriers. `SITE-001` is not an official redline; the rectangles are not parcels, roads or engineering boundaries; Dazhongsi supports a named type study only, not station-exit, quadrant, distance or capacity claims.[source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE] [data:geometry/key_areas.geojson#PROV-KEY-003]
 
@@ -36,14 +36,14 @@ The package also registers a public ODbL OSM background snapshot with `3,653` fe
 | Level | Irreplaceable question | Delivery | Forbidden inference |
 | --- | --- | --- | --- |
 | 43.6 km² coordinated study | Which expertise, tools, regional context and wings support a reproducible method? | Source-path-receiver framework, versioned B1 rules, professional review and transfer gate | No parcel plan or official ventilation corridor |
-| 11.4 km² overall design | How can the former-rail corridor open without direct transmission? | Causal learning spine, three sections, shaded path, quiet sides and evidence nodes | Not a real rail/road/access route |
-| 368.4 ha key areas | How do three conflicts become non-interchangeable prototypes? | Source-public, passage-dwell and arrival-quiet-side types | No real condition from rough rectangles |
+| 11.4 km² overall design | How can the former-rail corridor open without direct transmission? | Learning spine for two located concepts, three unlike S1/S2 paths, shade and quiet sides; no T3 mapping | Not a real rail/road/access route |
+| 368.4 ha key areas | How do three conflicts become non-interchangeable contracts? | S1 one-way hand-off, S2 two-axis shared court and unanchored T3 adoption/exit type | No real condition or T3 siting from rough rectangles |
 
 The levels are not scale copies. The coordinated level governs method and transfer eligibility; the overall level governs the contract network; each key area attempts to falsify it through a reviewable section.[depth:three_level_scope_framework] [depth:overall_spatial_structure] [data:geometry/roads.geojson#ROAD-PGC-01]
 
 The taskbook's three positions and five functions are not eight extra slogans; the same contract makes each reviewable. The Centennial Jing-Zhang Cultural Belt admits railway engineering history, public dimensions and maintenance records only after source registration and review as curatorial input. The Metropolitan AI Life Experience Belt requires phone-free and zero-power shaded passage and quiet sides. The AI-Integrated Innovation Belt runs north constraints → central comparison/translation → southern authorised adoption or exit. The full-stack function is `B0→B1→P→A→ablate/delete`; the world-class ecosystem function is six cases/eight elements with apply—allocate—record—exit gates; the AI+ paradigm is 12 stoppable scenario cards; the active AI city begins with passive form and human operation; global AI-governance voice is only a bilingual, replayable Open Section Protocol that publishes negative results, not a government position or international standard.[source:AGENT-TASKBOOK]
 
-![Overall design plan thesis, three scope levels and three porous-ground prototypes](assets/figures/site-overview.en.png)
+![Overall design thesis, three scope levels, two located concepts and one unanchored type](assets/figures/site-overview.en.png)
 
 ## Coordinated Research Area: Industry and Future City Research
 
@@ -97,11 +97,11 @@ The identity is an offset bracket/turn, not a wind arrow, sensor or luminous gre
 
 ## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
 
-The minimum spatial service atom is a continuous, zero-power-legible, accessible shaded passage between two authorised controls; a title/fire-checked air path; a quiet dwell surface not directly aimed at a source; and test/control, duty, stop and restore evidence. It is not a sensor pole or environmental score.[data:geometry/green_space.geojson#GREEN-PGC-01] [data:geometry/public_space.geojson#PUBLIC-PGC-01] [metric:passive_service_required_ratio]
+The minimum spatial service atom is a continuous, zero-power-legible, accessible shaded passage between two authorised controls; a title/fire-checked air path; a quiet dwell surface not directly aimed at a source; and test/control, duty, stop and restore evidence. It is not a sensor pole or environmental score.[data:geometry/green_space.geojson#GREEN-PGC-01] [data:geometry/public_space.geojson#PUBLIC-PGC-03] [metric:passive_service_required_ratio]
 
 Every opening passes six no-harm dimensions: air exchange, heat exposure, noise, accessibility, fire/evacuation and maintenance. Improvement in one cannot offset harm in another; averages cannot hide midday, heatwave, source-full-load, event-release or night envelopes. GB/T 37529 and QX/T 437 show that climate/ventilation claims require data and analysis; this proposal declares no official ventilation corridor.[standard:CMA-GBT37529-2019] [source:CMA-QXT437-2018]
 
-Five land polygons provide complete package topology only; six building footprints diagram source and receiver interfaces. Retain/renovate/demolish remains `UNKNOWN`. Canonical geometry triggers full regeneration of nine layers, metrics, figures, PDFs and HTML.[data:geometry/land_use.geojson#LU-PGC-01] [data:geometry/buildings.geojson#BLDG-PGC-01] [metric:land_use_partition_ratio]
+Five land polygons provide complete package topology only. Four building footprints belong to S1/S2: S1 has a long narrow source interface plus a small evidence gate; S2 has one long and one short-deep occupied edge. Retain/renovate/demolish remains `UNKNOWN`, and T3 has no mapped building. Canonical geometry triggers full regeneration of nine layers, metrics, figures, PDFs and HTML.[data:geometry/land_use.geojson#LU-PGC-01] [data:geometry/buildings.geojson#BLDG-PGC-03] [metric:building_footprint_area_difference_ratio]
 
 ![Overall structure, porous-ground contract and non-statutory programme study](assets/figures/land-use-structure.en.png)
 
@@ -109,19 +109,19 @@ Five land polygons provide complete package topology only; six building footprin
 
 ### A Northern Zhongzhiyuan: source to public
 
-Real equipment, activity, heat/emission sources and operating boundaries are unknown. The grammar is source-side control first, staggered porosity, continuous shaded public walk and a quiet review pocket, with test points separated from the public route. Zhongzhiyuan remains a non-interchangeable type prototype, not the priority real evidence segment. Phase I Section C is a separate authorisation lead and cannot retroactively anchor Zhongzhiyuan's temporary rectangle as a real site.[data:geometry/roads.geojson#ROAD-PGC-04] [data:geometry/public_space.geojson#PUBLIC-PGC-03]
+Real equipment, activity, heat/emission sources and operating boundaries are unknown. S1 draws one directional research hand-off only: the long narrow `BLDG-PGC-05` controlled backstage feeds the `BLDG-PGC-06` signed evidence gate, then the narrower `PUBLIC-PGC-03` shaded public walk continuously enters the small terminal `PUBLIC-PGC-06` quiet review pocket. There is no symmetric court or second crossing. Every dimension is `E0_DESIGN_ENVELOPE / NOT_MEASURED`. Open display must not be treated as ventilation; temporary components must not occupy accessible routes or egress paths. Phase I Section C remains a separate authorisation lead and cannot retroactively anchor Zhongzhiyuan's temporary rectangle as a real site.[data:geometry/roads.geojson#ROAD-PGC-04] [data:geometry/public_space.geojson#PUBLIC-PGC-03] [metric:s1_primary_transect_length_m]
 
 ### B Central AI Origin: passage to dwell
 
-The ground stays permeable in multiple directions, but openings are offset; a shared shaded court turns the path; the learning edge sits on the quiet side; night and day do not depend on screens or access apps. A straight acoustic tube, re-sealing for quiet, or paywalled shade is failure. Title, schedule and campus/community authority remain `UNKNOWN`.[data:geometry/roads.geojson#ROAD-PGC-03] [data:geometry/public_space.geojson#PUBLIC-PGC-02]
+S2 uses `ROAD-PGC-03` and new `ROAD-PGC-05` as two non-collinear paths crossing inside one offset shared shaded court. A long learning edge and short-deep everyday-service edge are unlike, while `PUBLIC-PGC-05` is a separate quiet learning strip. Its topology, dimensions, public area and building area do not reuse S1. A straight acoustic tube, re-sealing for quiet, or paywalled shade is failure. Every dimension remains `E0_DESIGN_ENVELOPE / NOT_MEASURED`; title, schedule and campus/community authority remain `UNKNOWN`.[data:geometry/roads.geojson#ROAD-PGC-03] [data:geometry/roads.geojson#ROAD-PGC-05] [data:geometry/public_space.geojson#PUBLIC-PGC-02]
 
 ### C Southern Dazhongsi type: arrival to quiet side
 
-Only a type—outer arrival edge, covered threshold, turning buffer court and quiet inner side—is drawn. `PROV-KEY-003` is unanchored, so `PHASE-PGC-01` stays NO-GO until canonical geometry, transport/source evidence, title and management authority exist.[data:geometry/phasing.geojson#PHASE-PGC-01] [metric:dazhongsi_geometry_anchor]
+Only an adoption/exit type—outer arrival edge, covered threshold, turning buffer court and quiet inner side—remains. It produces no ROAD, GREEN, PUBLIC or BUILDING feature. `PROV-KEY-003` is unanchored, so `PHASE-PGC-01` stays NO-GO until canonical geometry, transport/source evidence, title and management authority exist.[data:geometry/phasing.geojson#PHASE-PGC-01] [metric:mapped_t3_design_feature_count] [metric:dazhongsi_geometry_anchor]
 
-The three types are not copied nodes: the north controls source-public exposure, the middle holds passage and dwell together, and the south grades a strong arrival source into a quiet side. If all three collapse to trees, pavilions and sensors, the proposal stops.[depth:three_key_area_detailed_design]
+The structure is fixed as **two located concepts plus one unanchored type**: S1 is a directional backstage hand-off, S2 is a two-axis crossing with shared court, and T3 exists only in type/adoption-exit logic. If S1/S2 converge in length, area, topology or building arrangement, or T3 is smuggled back as a southern site, the proposal stops.[depth:three_key_area_detailed_design] [metric:primary_transect_length_difference_ratio] [metric:mapped_public_area_difference_ratio]
 
-![Plans, sections and distinct failure modes for the three key-area types](assets/figures/key-areas.en.png)
+![Plans, sections and failure modes for two located concepts and one unanchored type](assets/figures/key-areas.en.png)
 
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
@@ -153,21 +153,21 @@ Six personas describe spatial failure burdens only; no person or health status i
 
 The authoritative 12-card, six-persona and three-industry-test structure is in `simulation.json`.[metric:scenario_card_count] [metric:industry_test_count]
 
-Three pilgrimage nodes expose AI limits rather than celebrate an algorithm: Zhongzhiyuan’s Opening Ledger displays B1, AI alternatives, rejection and uncertainty; AI Origin’s Turn Court makes passage and quiet side physically legible; the Dazhongsi-type Restore Table records stopping, restoration and asset destination and remains unanchored.[data:geometry/public_space.geojson#PUBLIC-PGC-06] [metric:pilgrimage_node_count]
+Two located pilgrimage/honour nodes plus one unanchored type component expose AI limits rather than celebrate an algorithm. S1's Opening Ledger and S2's Turn Court are the two located concepts on provisional carriers. T3's Restore Table remains an unanchored type for publishing stop, restoration and asset destination; it has no PUBLIC_SPACE feature.[data:geometry/public_space.geojson#PUBLIC-PGC-06] [metric:pilgrimage_node_count] [metric:type_only_prototype_count]
 
-The honour system is not a celebrity wall. It publishes only verifiable contribution units: rule versions, replay records, rejected options, negative results, repair duty and restoration receipt; people or institutions appear only with permission. The component library has five reversible obligation types—offset gate, continuous shade, quiet-side edge, evidence window and mechanical PARK/clear-down piece. Each carries clear-width, fire/access, maintenance, removal and return fields and cannot be procured from a concept drawing. Nodes, contribution units and obligation components answer agent.4 without trading publicness for consumption or screens.[source:AGENT-TASKBOOK]
+The honour system is not a celebrity wall. It publishes only verifiable contribution units: rule versions, replay records, rejected options, negative results, repair duty and restoration receipt; people or institutions appear only with permission. The component library has five reversible obligation types—offset gate, continuous shade, quiet-side edge, evidence window and mechanical PARK/clear-down piece. Each carries clear-width, fire/access, maintenance, removal and return fields and cannot be procured from a concept drawing. The two located nodes plus one unanchored type component, contribution units and obligation components answer agent.4 without trading publicness for consumption or screens.[source:AGENT-TASKBOOK]
 
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
-The land-use map is a non-statutory programme-study partition; complete coverage serves topology and narrative only. Building features express source/receiver morphology, not current or planned buildings. FAR, height, density, current area, title and each retain/renovate/demolish decision remain `UNKNOWN`. The building-environment code is a deepening interface, not an outdoor compliance claim.[standard:MOHURD-GB55016-2021] [metric:floor_area_ratio]
+The land-use map is a non-statutory programme-study partition; complete coverage serves topology and narrative only. Building features are only four S1/S2 E0 interfaces, not current or planned buildings; T3 has no building feature. FAR, height, density, current area, title and each retain/renovate/demolish decision remain `UNKNOWN`. The building-environment code is a deepening interface, not an outdoor compliance claim.[standard:MOHURD-GB55016-2021] [metric:floor_area_ratio]
 
 A future professional team must build the asset register from surveys, title/lease, fire, structure, MEP, heritage and operations. Each opening needs its own structural, enclosure, fire and source review; this diagram produces no construction quantity.[depth:height_massing_character] [depth:retain_renovate_demolish]
 
 ## Transport, Rail, Municipal Infrastructure, and Public Services
 
-`ROAD-PGC-01` is a north-middle-south causal learning spine, not rail, road, station connection or accessible route. The three turning transects are drawable parameters, not proof of terrain, slope, right-of-way, fire or traffic safety. Transport, rail, parking, municipal, energy and digital infrastructure await professional data.[data:geometry/roads.geojson#ROAD-PGC-01] [depth:traffic_rail_slow_parking] [depth:municipal_new_infrastructure]
+`ROAD-PGC-01` links only the provisional S1/S2 concept carriers; it is not rail, road, station connection or accessible route. `ROAD-PGC-04` is S1's single directional primary path; `ROAD-PGC-03/05` are S2's two non-collinear crossing paths; T3 has no road feature. These three paths are E0 drawable parameters, not proof of terrain, slope, right-of-way, fire, traffic safety or field length.[data:geometry/roads.geojson#ROAD-PGC-01] [data:geometry/roads.geojson#ROAD-PGC-05] [depth:traffic_rail_slow_parking]
 
-Environmental instruments and local compute serve co-location, design comparison and evidence archiving only. They never open/close space, control building/equipment, issue health advice or statutory findings. Paper notices, ordinary maintenance, route, shade and quiet side survive power/network failure.
+Environmental instruments and local compute serve co-location, design comparison and evidence archiving only. They never open/close space, control building/equipment, issue health advice or statutory findings. Paper notices, ordinary maintenance, route, shade and quiet side survive power/network failure.[depth:municipal_new_infrastructure]
 
 ![Ablation and deletion logic from B0 and B1 to passive parameters and AI alternatives](assets/figures/mobility-bluegreen.en.png)
 
@@ -276,7 +276,7 @@ Exit assets include B1 rules, model/dependency manifest or deletion record, reje
 
 ## Metrics, Area Recalculation, and Compliance Matrix
 
-Known package facts are six mechanism cases/30 first-party sources, eight ecosystem elements, three taskbook names, 12 scenarios, six personas, three industry tests, three conceptual landmarks, 12 RACI seat definitions, N1–N10, WP00–09, a 90-day protocol and three provisional context constraints.[metric:global_case_study_count] [metric:ecosystem_element_count]
+Known package facts are six mechanism cases/30 first-party sources, eight ecosystem elements, three taskbook names, two located concepts plus one unanchored type, 12 scenarios, six personas, three industry tests, two located concept landmarks plus one type component, 12 RACI seat definitions, N1–N10, WP00–09, a 90-day protocol and three provisional context constraints.[metric:global_case_study_count] [metric:located_prototype_count] [metric:type_only_prototype_count]
 
 The OSM snapshot contains 3,653 features, E3=0 and E4=0. These and the concept geometry's own topology/area are package-content facts, not ecosystem outcomes, appointments, performance or release.[metric:osm_context_feature_count] [metric:e3_site_evidence_count] [metric:e4_implementation_evidence_count]
 

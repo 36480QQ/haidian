@@ -667,10 +667,14 @@
         "geometry/key_areas.geojson",
         "geometry/roads.geojson",
         "geometry/public_space.geojson",
+        "geometry/buildings.geojson",
         "geometry/constraints.geojson"
       ],
       "metrics": [
-        "passive_service_required_ratio",
+        "s1_zone_road_count",
+        "s1_primary_transect_length_m",
+        "s1_mapped_public_area_sqm",
+        "s1_building_footprint_area_sqm",
         "e3_site_evidence_count"
       ],
       "drawings": [
@@ -690,13 +694,16 @@
       "assumption_ids": [
         "A-SOURCE-001",
         "A-OWNERSHIP-001",
+        "A-CONTROLS-001",
         "A-GLOBAL-CASES-001"
       ],
       "self_check_ids": [
         "AGENT2_ECOSYSTEM",
+        "PROTOTYPE_PARAMETER_STATUS",
+        "SPATIAL_PROTOTYPE_DISTINCTNESS",
         "NO_FAKE_PERFORMANCE"
       ],
-      "evidence_summary_zh": "众智园承担发明并约束：受控后台—证据界面—公共路径；真实设备、源、运营边界和授权仍UNKNOWN。"
+      "evidence_summary_zh": "S1众智园承担发明并约束：一条长窄受控后台—签署证据门—窄幅公共步道—小型静侧复核袋的单向交接；尺寸为E0/NOT_MEASURED，真实源、运营和授权仍UNKNOWN。"
     },
     {
       "requirement_id": "1.5.3.2",
@@ -710,11 +717,15 @@
         "geometry/key_areas.geojson",
         "geometry/roads.geojson",
         "geometry/public_space.geojson",
+        "geometry/buildings.geojson",
         "geometry/constraints.geojson"
       ],
       "metrics": [
-        "persona_count",
-        "public_space_ratio",
+        "s2_zone_road_count",
+        "s2_road_non_collinearity",
+        "s2_primary_transect_length_m",
+        "s2_mapped_public_area_sqm",
+        "s2_building_footprint_area_sqm",
         "e3_site_evidence_count"
       ],
       "drawings": [
@@ -738,9 +749,11 @@
       ],
       "self_check_ids": [
         "AGENT2_ECOSYSTEM",
+        "PROTOTYPE_PARAMETER_STATUS",
+        "SPATIAL_PROTOTYPE_DISTINCTNESS",
         "GEOMETRY_TRUST"
       ],
-      "evidence_summary_zh": "AI原点承担翻译并比较：连续穿行、弯折停留和前台/后台分层；校地/社区权属、时段与责任仍UNKNOWN。"
+      "evidence_summary_zh": "S2 AI原点承担翻译并比较：两条非共线路径在共享庭交叉，两种不等占用边加独立静侧学习带；尺寸为E0/NOT_MEASURED，校地/社区权属、时段与责任仍UNKNOWN。"
     },
     {
       "requirement_id": "1.5.3.3",
@@ -756,6 +769,8 @@
         "geometry/constraints.geojson"
       ],
       "metrics": [
+        "type_only_prototype_count",
+        "mapped_t3_design_feature_count",
         "dazhongsi_geometry_anchor",
         "e3_site_evidence_count",
         "e4_implementation_evidence_count"
@@ -780,10 +795,11 @@
       ],
       "self_check_ids": [
         "DAZHONGSI_ANCHOR",
+        "T3_TYPE_ONLY_MAPPING",
         "CONSTRAINT_BLOCKERS",
         "NO_FAKE_PERFORMANCE"
       ],
-      "evidence_summary_zh": "大钟寺只保留采用/退出和换乘—静侧类型；PROV-KEY-003未锚定，不能下推站口、象限、容量或工程量。"
+      "evidence_summary_zh": "T3大钟寺只保留采用/退出和换乘—静侧类型；四个设计图层落图为零，PROV-KEY-003未锚定，不能下推站口、象限、容量或工程量。"
     },
     {
       "requirement_id": "agent.1",
@@ -802,8 +818,10 @@
       ],
       "metrics": [
         "key_area_count",
-        "contract_spine_length_m",
-        "passive_service_required_ratio",
+        "located_prototype_count",
+        "type_only_prototype_count",
+        "mapped_t3_design_feature_count",
+        "primary_transect_length_difference_ratio",
         "nearest_neighbor_difference_count"
       ],
       "drawings": [
@@ -836,10 +854,12 @@
       "self_check_ids": [
         "BOUNDARY_TRUST",
         "DAZHONGSI_ANCHOR",
+        "T3_TYPE_ONLY_MAPPING",
+        "SPATIAL_PROTOTYPE_DISTINCTNESS",
         "NON_AI_BASELINE",
         "NEAREST_NEIGHBOR_DIFFERENCE"
       ],
-      "evidence_summary_zh": "以北发明并约束—中翻译并比较—南采用或退出构成一带功能回路；七个指定近邻逐一用claim/机制/空间后果/证据/退出差异排重，总体脊与三原型仍为概念。"
+      "evidence_summary_zh": "一带功能回路固定为2个落位概念+1个未锚定类型：S1单向交接、S2双轴交叉、T3采用/退出类型且四设计层零落图；七个指定近邻逐一排重。"
     },
     {
       "requirement_id": "agent.2",
@@ -950,6 +970,9 @@
       ],
       "metrics": [
         "pilgrimage_node_count",
+        "located_prototype_count",
+        "type_only_prototype_count",
+        "mapped_t3_design_feature_count",
         "public_space_ratio",
         "passive_service_required_ratio"
       ],
@@ -968,14 +991,17 @@
       ],
       "assumption_ids": [
         "A-CONTROLS-001",
+        "A-DAZHONGSI-ANCHOR-001",
         "A-PERFORMANCE-001"
       ],
       "self_check_ids": [
         "GEOMETRY_TRUST",
+        "T3_TYPE_ONLY_MAPPING",
+        "PROTOTYPE_PARAMETER_STATUS",
         "NON_AI_BASELINE",
         "NO_FAKE_PERFORMANCE"
       ],
-      "evidence_summary_zh": "三个节点公开B1/AI淘汰/复原边界；公共空间保持零电、非消费与无障碍，但位置、比例和效果仅为概念。"
+      "evidence_summary_zh": "S1/S2两个落位概念节点公开B1/AI淘汰边界，T3复原签收台只保留未锚定类型；公共空间保持零电、非消费与无障碍，位置、比例和效果均未测量。"
     },
     {
       "requirement_id": "agent.5",

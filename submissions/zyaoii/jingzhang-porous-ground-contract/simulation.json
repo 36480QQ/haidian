@@ -294,27 +294,57 @@
     "prototypes": [
       {
         "id": "PR-NORTH",
+        "prototype_id": "S1",
         "area": "zhongzhiyuan",
-        "chain_zh": "源—公众",
-        "chain_en": "source to public",
-        "passive_form": "source-side control + staggered porosity + shaded public walk + quiet review pocket",
-        "known_status": "hypothesis; real source and operator UNKNOWN"
+        "mapping_status": "LOCATED_CONCEPT_ON_PROVISIONAL_CARRIER",
+        "mapped_feature_ids": [
+          "ROAD-PGC-04",
+          "GREEN-PGC-04",
+          "PUBLIC-PGC-03",
+          "PUBLIC-PGC-06",
+          "BLDG-PGC-05",
+          "BLDG-PGC-06"
+        ],
+        "chain_zh": "单向后台—证据门—公共前台",
+        "chain_en": "one-way backstage to evidence gate to public frontstage",
+        "passive_form": "long narrow source interface + signed evidence gate + one primary path + narrower shaded public walk + small quiet review pocket",
+        "parameter_status": "E0_DESIGN_ENVELOPE",
+        "field_measurement_status": "NOT_MEASURED",
+        "known_status": "hypothesis on a provisional carrier; real source, dimensions, operator and authority UNKNOWN"
       },
       {
         "id": "PR-MIDDLE",
+        "prototype_id": "S2",
         "area": "ai_origin",
-        "chain_zh": "穿行—停留",
-        "chain_en": "passage to dwell",
-        "passive_form": "multi-directional passage + dog-leg shared court + quiet learning edge",
-        "known_status": "hypothesis; title, schedule and community authority UNKNOWN"
+        "mapping_status": "LOCATED_CONCEPT_ON_PROVISIONAL_CARRIER",
+        "mapped_feature_ids": [
+          "ROAD-PGC-03",
+          "ROAD-PGC-05",
+          "GREEN-PGC-03",
+          "PUBLIC-PGC-02",
+          "PUBLIC-PGC-05",
+          "BLDG-PGC-03",
+          "BLDG-PGC-04"
+        ],
+        "chain_zh": "双轴穿行—共享庭—静侧学习",
+        "chain_en": "two-axis crossing to shared court and quiet learning side",
+        "passive_form": "two non-collinear paths + offset shared shaded court + two unlike occupied edges + separate quiet learning strip",
+        "parameter_status": "E0_DESIGN_ENVELOPE",
+        "field_measurement_status": "NOT_MEASURED",
+        "known_status": "hypothesis on a provisional carrier; title, dimensions, schedule and community authority UNKNOWN"
       },
       {
         "id": "PR-SOUTH",
+        "prototype_id": "T3",
         "area": "dazhongsi_type",
-        "chain_zh": "换乘—静侧",
-        "chain_en": "arrival to quiet side",
-        "passive_form": "outer arrival edge + covered threshold + turn court + quiet inner side",
-        "known_status": "type only; PROV-KEY-003 UNANCHORED"
+        "mapping_status": "TYPE_ONLY_UNANCHORED",
+        "mapped_feature_ids": [],
+        "chain_zh": "采用/退出类型：换乘—静侧",
+        "chain_en": "adoption/exit type: arrival to quiet side",
+        "passive_form": "type-only outer arrival edge + covered threshold + turn court + quiet inner side",
+        "parameter_status": "E0_TYPE_ENVELOPE",
+        "field_measurement_status": "NOT_MEASURED",
+        "known_status": "type only; PROV-KEY-003 UNANCHORED; no ROAD/GREEN/PUBLIC/BUILDING feature"
       }
     ],
     "two_wings": [
@@ -829,10 +859,12 @@
       "three_area_sequence": [
         {
           "area": "zhongzhiyuan",
+          "prototype_id": "S1",
+          "mapping_status": "LOCATED_CONCEPT_ON_PROVISIONAL_CARRIER",
           "verb_zh": "发明并约束",
           "verb_en": "INVENT / CONTAIN",
           "role": "full-stack R&D source and controlled backstage",
-          "spatial_contract": "source-side control -> controlled lab/backstage -> staggered evidence interface -> shaded public path -> quiet review pocket",
+          "spatial_contract": "long narrow source interface -> signed evidence gate -> one-way shaded public walk -> small quiet review pocket",
           "outgoing_assets": [
             "versioned B1",
             "reviewed model/code manifest",
@@ -840,14 +872,16 @@
             "resource ledger",
             "failure/risk note"
           ],
-          "current_gate": "real source, operating boundary and authority UNKNOWN"
+          "current_gate": "real source, dimensions, operating boundary and authority UNKNOWN"
         },
         {
           "area": "ai_origin",
+          "prototype_id": "S2",
+          "mapping_status": "LOCATED_CONCEPT_ON_PROVISIONAL_CARRIER",
           "verb_zh": "翻译并比较",
           "verb_en": "TRANSLATE / COMPARE",
           "role": "near-campus public evidence and conversion layer",
-          "spatial_contract": "continuous passage -> turn/shade court -> quiet learning side -> visible B1/A comparison -> human gate",
+          "spatial_contract": "two non-collinear passage axes -> offset shared shaded court -> unlike occupied edges -> separate quiet learning strip -> human gate",
           "outgoing_assets": [
             "human-readable evidence",
             "replay protocol",
@@ -855,21 +889,23 @@
             "IP/open-source boundary",
             "public objection"
           ],
-          "current_gate": "campus/community/title/opening authority UNKNOWN"
+          "current_gate": "campus/community/title/dimensions/opening authority UNKNOWN"
         },
         {
           "area": "dazhongsi_type",
+          "prototype_id": "T3",
+          "mapping_status": "TYPE_ONLY_UNANCHORED",
           "verb_zh": "采用或退出",
           "verb_en": "ADOPT / EXIT",
-          "role": "AI-native adoption/operation interface",
-          "spatial_contract": "arrival path -> non-blocking evidence interface -> authorised short use -> operation/complaint review -> expand, revise or RESTORED",
+          "role": "type-only AI-native adoption/operation frame",
+          "spatial_contract": "type diagram only: arrival -> evidence interface -> authorised short use -> operation/complaint review -> expand, revise or RESTORED",
           "outgoing_assets": [
             "adoption condition",
             "operation/maintenance burden",
             "complaint evidence",
             "stop and asset destination"
           ],
-          "current_gate": "PROV-KEY-003 UNANCHORED; NO-GO"
+          "current_gate": "PROV-KEY-003 UNANCHORED; zero mapped ROAD/GREEN/PUBLIC/BUILDING features; NO-GO"
         }
       ],
       "two_wing_services": [
@@ -1793,27 +1829,36 @@
     "pilgrimage_nodes": [
       {
         "id": "PL-01",
+        "prototype_id": "S1",
+        "feature_id": "PUBLIC-PGC-06",
         "name_zh": "开口账本",
         "name_en": "The Opening Ledger",
         "area": "zhongzhiyuan",
+        "mapping_status": "LOCATED_CONCEPT_ON_PROVISIONAL_CARRIER",
         "content": "B1, AI alternatives, rejected solutions, uncertainty and public no-harm contract",
-        "site_status": "conceptual"
+        "site_status": "conceptual; NOT_MEASURED"
       },
       {
         "id": "PL-02",
+        "prototype_id": "S2",
+        "feature_id": "PUBLIC-PGC-05",
         "name_zh": "弯折庭",
         "name_en": "The Turn Court",
         "area": "ai_origin",
-        "content": "full-scale legible dog-leg relation between passage and quiet learning side",
-        "site_status": "conceptual"
+        "mapping_status": "LOCATED_CONCEPT_ON_PROVISIONAL_CARRIER",
+        "content": "legible offset-crossing relation between a shared court and separate quiet learning strip",
+        "site_status": "conceptual; NOT_MEASURED"
       },
       {
         "id": "PL-03",
+        "prototype_id": "T3",
+        "feature_id": null,
         "name_zh": "复原签收台",
         "name_en": "The Restore Table",
         "area": "dazhongsi_type",
-        "content": "public record of stop, restoration and asset exit; type location only",
-        "site_status": "UNANCHORED"
+        "mapping_status": "TYPE_ONLY_UNANCHORED",
+        "content": "public record type for stop, restoration and asset exit; no mapped PUBLIC_SPACE feature",
+        "site_status": "UNANCHORED_TYPE_ONLY"
       }
     ],
     "culture_and_operation": [

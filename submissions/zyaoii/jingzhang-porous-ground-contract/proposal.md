@@ -6,7 +6,7 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "让地面打开，不让噪声直送到人：以京张北部源—公众、中部穿行—停留、南部换乘—静侧三种断面，建立被动形态优先、AI可删除、失败可恢复的多物理首层孔隙合同。"
+summary: "让地面打开，不让噪声直送到人：用北部S1单向交接与中部S2双轴交叉两个落位概念，加一个南部未锚定T3类型，建立被动形态优先、AI可删除、失败可恢复的多物理首层孔隙合同。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
@@ -15,13 +15,13 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 > **让地面打开，不让噪声直送到人。** 先画源、传播路径与人的接收面，再决定哪里开、怎样折、何处遮荫、哪一侧可停留。传感器只验证，AI只在设计期比较候选；关掉电、网和模型，路、荫、错位孔隙与静侧仍必须成立。
 
-**当前诚实状态：** `C-S` 是 formal v2 概念空间合同候选；机器门和独立盲审必须读取本包的确切记录，不能由状态文字代替。`C-I` 为 `HOLD`。本包没有真实断面、书面授权、E3现场基线或E4样段/恢复证据，不声称“已验证、已落地、全年改善、健康收益、法定达标或政府承诺”。仓库临时几何只支撑概念自洽；尤其 `PROV-KEY-003` 未可靠锚定大钟寺站城关系。
+**当前诚实状态：** `C-S` 是 formal v2 概念空间合同候选；机器门和独立盲审必须读取本包的确切记录，不能由状态文字代替。`C-I` 为 `HOLD`。本包没有真实断面、书面授权、E3现场基线或E4样段/恢复证据，不声称“已验证、已落地、全年改善、健康收益、法定达标或政府承诺”。仓库临时几何只支撑概念自洽：S1/S2是临时载体上的E0设计参数包络，均为`NOT_MEASURED`；`PROV-KEY-003` 未可靠锚定大钟寺站城关系，T3因此没有任何ROAD/GREEN/PUBLIC/BUILDING落图。[metric:located_prototype_count] [metric:mapped_t3_design_feature_count]
 
 **五条可证伪合同：** ① 开口太少会积热或限制空气交换；开口太直会把噪声沿直达路径传到人的停留接收面。② `B0 / B1 / P / A`：B0是只读基线，B1是人工规则基线，P是可画参数族，A是设计期AI搜索；留出消融不稳定或不优于B1，就删除AI。③ `PROV-KEY-003` 是未锚定的临时粗略 polygon，不是大钟寺真实点位。④ E0是概念，E1是临时资料，E2是公开方法，E3是授权现场基线，E4是可逆样段与恢复证据；当前E3/E4不存在，`C-I HOLD`。⑤ AI无权批准开口、施工、状态迁移、安全放行或恢复；零电或断电、断网、模型退出后，路径、遮荫、错位孔隙与静侧仍继续服务。[metric:e3_site_evidence_count] [metric:e4_implementation_evidence_count]
 
 ## 设计依据与资料清单
 
-本案响应官方三层范围、三区两翼和 agent.1—agent.6，但只提出一个不可移植的空间命题：京张原铁路创新走廊从北部研发/试验边缘，经中部近校日常穿行，到南部站城到达界面，连续面对“需要打开”与“不能直送噪声”的不同冲突。替换城市和三区名称后因果链若仍不变，方案即失败。[source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [source:SITE-PACKAGE]
+本案响应官方三层范围、三区两翼和 agent.1—agent.6，但只提出一个不可移植的空间命题：北部S1用单向“受控后台→签署证据门→公共前台”处理研发边界；中部S2用两条非共线路径、共享庭、异形占用边和独立静侧学习带处理日常交叉；南部T3只保留未锚定的采用/退出类型。替换城市和三区名称后因果链若仍不变，方案即失败。[source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [source:SITE-PACKAGE]
 
 总体与三处重点区均使用仓库粗略 provisional geometry。`SITE-001` 不是 official redline；三处矩形不是地块、道路或工程边界；大钟寺仅保留任务书名称和类型研究，不能下推站口、象限、距离与容量。[source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE] [data:geometry/key_areas.geojson#PROV-KEY-003]
 
@@ -36,14 +36,14 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 | 层级 | 不可替代的问题 | 本案交付 | 禁止下推 |
 | --- | --- | --- | --- |
 | 43.6 km²统筹研究 | 哪些专业、工具、区域背景与两翼能支持可复核方法 | 源—路径—接收者证据框架、版本化B1规则、专业复核与转移门 | 不画地块，不宣称官方通风廊道 |
-| 11.4 km²总体设计 | 原铁路走廊的连续界面如何“开而不直送” | 一条因果学习脊、三类断面、阴影路径、静侧与证据节点 | 不把概念脊当真实铁路/道路/无障碍路线 |
-| 368.4 ha重点区 | 三种冲突怎样形成不可互换的空间原型 | 众智园源—公众、AI原点穿行—停留、大钟寺类型换乘—静侧 | 不从粗略矩形推断真实条件 |
+| 11.4 km²总体设计 | 原铁路走廊的连续界面如何“开而不直送” | S1/S2两处落位概念的学习脊、三条不同路径、阴影与静侧；T3不落图 | 不把概念脊/路径当真实铁路、道路或无障碍路线 |
+| 368.4 ha重点区 | 三种冲突怎样形成不可互换的合同 | S1单向交接、S2双轴共享庭、T3未锚定采用/退出类型 | 不从粗略矩形推断真实条件或给T3选址 |
 
 三层不是一张图的缩放。统筹层管理方法和转移资格；总体层管理空间合同网络；重点区用一张可验收断面反证合同。[depth:three_level_scope_framework] [depth:overall_spatial_structure] [data:geometry/roads.geojson#ROAD-PGC-01]
 
 任务书三大定位与五大功能不另起八个口号，而被同一合同逐项验收：百年京张文化带以真实铁路工程史、公开尺度和长期维护为策展输入；都市AI生活体验带以零手机、零电也可用的阴影通路与静侧为公共底线；AI融合创新带以北部提出约束—中部比较翻译—南部授权采用/退出为生产链。AI全栈自主创新体系由 `B0→B1→P→A→消融/删除` 实现；世界级AI创新生态由六案与八要素的申请—配给—留痕—退出实现；AI+场景赋能新范式由12张可停止场景卡实现；智能化AI活力城市由被动形态和人工运营先行实现；AI治理全球话语权只提出双语、可复演、公开负结果的“开放断面协议”，不声称代表政府或形成国际标准。[source:AGENT-TASKBOOK]
 
-![京张会呼吸总体设计总平命题、三层范围与三类首层孔隙原型](assets/figures/site-overview.png)
+![京张会呼吸总体设计总平命题、三层范围、两处落位概念与一个未锚定类型](assets/figures/site-overview.png)
 
 ## 统筹研究范围产业与未来城市研究
 
@@ -97,11 +97,11 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ## 总体设计范围城市更新与控规深度城市设计
 
-最小空间服务原子是：两个经授权控制点之间，一条零电可识别、连续无障碍的阴影通路，一个经权属/消防核验的空气路径，一个不被声源直线瞄准的静侧停留面，以及测试/对照、责任、停止与恢复证据。不是测量柱，也不是环境分数。[data:geometry/green_space.geojson#GREEN-PGC-01] [data:geometry/public_space.geojson#PUBLIC-PGC-01] [metric:passive_service_required_ratio]
+最小空间服务原子是：两个经授权控制点之间，一条零电可识别、连续无障碍的阴影通路，一个经权属/消防核验的空气路径，一个不被声源直线瞄准的静侧停留面，以及测试/对照、责任、停止与恢复证据。不是测量柱，也不是环境分数。[data:geometry/green_space.geojson#GREEN-PGC-01] [data:geometry/public_space.geojson#PUBLIC-PGC-03] [metric:passive_service_required_ratio]
 
 所有开口先过六项no-harm：空气交换、热暴露、噪声、无障碍、消防疏散、维护。改善一项而伤害任一项即淘汰；平均值不能掩盖中午、热浪、源满负荷、活动散场和夜间等最差包络。GB/T 37529与QX/T 437只用于说明气候/通风判断需要资料与分析，本案不认定官方通风廊道。[standard:CMA-GBT37529-2019] [source:CMA-QXT437-2018]
 
-五个用地 polygon 只完成包内完整覆盖，名称说明研究问题而非法定用途；六个建筑 footprint 只画源侧/接收侧关系，拆改留均为 `UNKNOWN`。取得 canonical geometry 后九图层、指标、图件、PDF和HTML必须整体重算。[data:geometry/land_use.geojson#LU-PGC-01] [data:geometry/buildings.geojson#BLDG-PGC-01] [metric:land_use_partition_ratio]
+五个用地 polygon 只完成包内完整覆盖，名称说明研究问题而非法定用途；四个建筑 footprint 只属于S1/S2：S1为长窄源界面+小证据门，S2为长边+短深边两种不等占用界面。它们的拆改留均为 `UNKNOWN`，T3没有建筑落图。取得 canonical geometry 后九图层、指标、图件、PDF和HTML必须整体重算。[data:geometry/land_use.geojson#LU-PGC-01] [data:geometry/buildings.geojson#BLDG-PGC-03] [metric:building_footprint_area_difference_ratio]
 
 ![总体结构、首层孔隙合同与非statutory功能研究覆盖](assets/figures/land-use-structure.png)
 
@@ -109,19 +109,19 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ### A 北部众智园：源—公众
 
-真实设备、活动、热/排放和运营边界均未知。空间语法是“源侧控制优先—错位孔隙—连续公共阴影廊—静侧复核袋”，测试点与公众路径分离。禁止把开放展示等同于通风，禁止让临时构件占用无障碍/疏散。众智园本轮只保留不可互换的类型原型，不作为优先真实样段；一期C段是另行申请授权的证据候选，也不能反向把众智园临时矩形锚定为真实点位。[data:geometry/roads.geojson#ROAD-PGC-04] [data:geometry/public_space.geojson#PUBLIC-PGC-03]
+真实设备、活动、热/排放和运营边界均未知。S1只画一条单向研究交接：`BLDG-PGC-05`长窄受控后台先到`BLDG-PGC-06`签署证据门，再进入较窄的`PUBLIC-PGC-03`遮荫公共步道，并连续接入终点小型`PUBLIC-PGC-06`静侧复核袋；没有对称庭，也没有第二条穿越路径。所有尺寸均是`E0_DESIGN_ENVELOPE / NOT_MEASURED`。开放展示不等于通风；临时构件不得占用无障碍路线或疏散路径。一期C段仍是另行申请授权的证据候选，不能反向把众智园临时矩形锚定为真实点位。[data:geometry/roads.geojson#ROAD-PGC-04] [data:geometry/public_space.geojson#PUBLIC-PGC-03] [metric:s1_primary_transect_length_m]
 
 ### B 中部AI原点：穿行—停留
 
-地面层需多方向穿透，但开口错位；共享庭提供遮荫和转折，安静学习面退到静侧，日夜不依赖屏幕或门禁。为了“通透”做成声学直筒、为了“安静”重新封闭地面、让遮荫成为消费门槛，均判失败。真实校地/社区权属、开放时段和日程仍为 `UNKNOWN`。[data:geometry/roads.geojson#ROAD-PGC-03] [data:geometry/public_space.geojson#PUBLIC-PGC-02]
+S2由`ROAD-PGC-03`与新增`ROAD-PGC-05`两条非共线路径在偏置共享遮荫庭相交；长条学习边与短深日常服务边形态不同，`PUBLIC-PGC-05`静侧学习带与庭院分开。它的拓扑、尺度、公共空间和建筑面积均不得复用S1。为了“通透”做成声学直筒、为了“安静”重新封闭地面、让遮荫成为消费门槛，均判失败；所有尺寸仍是`E0_DESIGN_ENVELOPE / NOT_MEASURED`，真实校地/社区权属、开放时段和日程为`UNKNOWN`。[data:geometry/roads.geojson#ROAD-PGC-03] [data:geometry/roads.geojson#ROAD-PGC-05] [data:geometry/public_space.geojson#PUBLIC-PGC-02]
 
 ### C 南部大钟寺类型：换乘—静侧
 
-只画“外缘到达面—有盖门槛—折转缓冲庭—安静内侧”类型，不落真实站口。当前 `PROV-KEY-003` 未锚定，故 `PHASE-PGC-01` 为NO-GO；canonical geometry、交通/声源、权属和管理主体缺一不可。[data:geometry/phasing.geojson#PHASE-PGC-01] [metric:dazhongsi_geometry_anchor]
+只保留“外缘到达面—有盖门槛—折转缓冲庭—安静内侧”的采用/退出类型，不落真实站口，也不生成ROAD、GREEN、PUBLIC或BUILDING feature。当前 `PROV-KEY-003` 未锚定，故 `PHASE-PGC-01` 为NO-GO；canonical geometry、交通/声源、权属和管理主体缺一不可。[data:geometry/phasing.geojson#PHASE-PGC-01] [metric:mapped_t3_design_feature_count] [metric:dazhongsi_geometry_anchor]
 
-三处不是同一节点复制：北部先管源与公众边界，中部同时保障穿行和停留，南部构造强到达源到静侧的梯度。三区若最终都变成树阵、凉亭和传感器，本案应停止。[depth:three_key_area_detailed_design]
+结构固定为**2个落位概念+1个未锚定类型**：S1是一条单向后台交接，S2是双轴交叉与共享庭，T3只在类型/采用退出逻辑中存在。若两处落位概念的长度、面积、拓扑或建筑排布趋同，或T3被偷换成南部点位，本案应停止。[depth:three_key_area_detailed_design] [metric:primary_transect_length_difference_ratio] [metric:mapped_public_area_difference_ratio]
 
-![众智园、AI原点与大钟寺类型的总平剖面和不同失败模式](assets/figures/key-areas.png)
+![S1、S2两处落位概念与T3未锚定类型的平面剖面和不同失败模式](assets/figures/key-areas.png)
 
 ## AI 创新生态、人才画像与 AI+ 场景
 
@@ -153,21 +153,21 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 12张卡、6类画像和3个产业测试的权威结构在 `simulation.json`；这里给人读，不把矩阵当正文。[metric:scenario_card_count] [metric:industry_test_count]
 
-三个朝圣节点不是纪念算法，而是公开AI边界：众智园“开口账本”展示B1、AI候选、淘汰理由与不确定性；AI原点“弯折庭”让人直接读懂通路和静侧；大钟寺类型“复原签收台”公开停止、恢复与资产去向，位置仍未锚定。[data:geometry/public_space.geojson#PUBLIC-PGC-06] [metric:pilgrimage_node_count]
+两处落位朝圣/荣誉节点加一个未锚定类型组件不是纪念算法，而是公开AI边界：S1“开口账本”与S2“弯折庭”是临时载体上的两个落位概念；T3“复原签收台”只是一项公开停止、恢复与资产去向的未锚定类型，没有PUBLIC_SPACE feature。[data:geometry/public_space.geojson#PUBLIC-PGC-06] [metric:pilgrimage_node_count] [metric:type_only_prototype_count]
 
-荣誉展示不做名人墙：只展示可核验贡献单元——公开规则版本、复演记录、被淘汰方案、负结果、修复人与复原签收；个人/机构名称只在授权后发布。公共组件库也只含五种可逆义务件：错位门、连续阴影、静侧边缘、证据窗、机械PARK/清场件；每件绑定净宽、消防/无障碍、维护、拆除和归还字段，不能从概念图直接采购。三节点+荣誉单元+组件义务共同响应agent.4，不以消费或屏幕换取公共性。[source:AGENT-TASKBOOK]
+荣誉展示不做名人墙：只展示可核验贡献单元——公开规则版本、复演记录、被淘汰方案、负结果、修复人与复原签收；个人/机构名称只在授权后发布。公共组件库也只含五种可逆义务件：错位门、连续阴影、静侧边缘、证据窗、机械PARK/清场件；每件绑定净宽、消防/无障碍、维护、拆除和归还字段，不能从概念图直接采购。两处落位节点+一个未锚定类型组件、荣誉单元与组件义务共同响应agent.4，不以消费或屏幕换取公共性。[source:AGENT-TASKBOOK]
 
 ## 用地、建筑规模与拆改留方案
 
-用地图是非statutory功能研究分区，完整覆盖只为拓扑和空间叙事；建筑图只表达三类断面的源侧/接收侧质量，不代表现状或拟建。FAR、高度、密度、现状面积、产权与每一栋拆改留保持 `UNKNOWN`。建筑环境规范只作为专业深化接口，不把室内标准直接当室外达标结论。[standard:MOHURD-GB55016-2021] [metric:floor_area_ratio]
+用地图是非statutory功能研究分区，完整覆盖只为拓扑和空间叙事；建筑图只有四个S1/S2 E0界面，不代表现状或拟建，T3没有建筑feature。FAR、高度、密度、现状面积、产权与每一栋拆改留保持 `UNKNOWN`。建筑环境规范只作为专业深化接口，不把室内标准直接当室外达标结论。[standard:MOHURD-GB55016-2021] [metric:floor_area_ratio]
 
 未来专业团队应以真实建筑测绘、权属/租约、消防、结构、机电、文保和运营调查建立 retain/renovate/demolish 台账；任何孔隙都需单独核查结构、围护、消防和噪声源，不能从本图自动出施工量。[depth:height_massing_character] [depth:retain_renovate_demolish]
 
 ## 交通、轨道、市政与公共服务设施
 
-`ROAD-PGC-01` 只是北—中—南因果学习脊，不是铁路、道路、站口接驳或无障碍路线。三条弯折 transect 是可画参数，不证明地形、坡度、路权、消防或交通安全。真实交通、轨道、停车、市政、能源与新基建在获取资料后由专业团队深化。[data:geometry/roads.geojson#ROAD-PGC-01] [depth:traffic_rail_slow_parking] [depth:municipal_new_infrastructure]
+`ROAD-PGC-01`只连接S1/S2两个临时概念载体，不是铁路、道路、站口接驳或无障碍路线。`ROAD-PGC-04`是一条S1单向主路径；`ROAD-PGC-03/05`是两条S2非共线交叉路径；T3没有道路feature。这三条路径只是E0可画参数，不证明地形、坡度、路权、消防、交通安全或现场长度。[data:geometry/roads.geojson#ROAD-PGC-01] [data:geometry/roads.geojson#ROAD-PGC-05] [depth:traffic_rail_slow_parking]
 
-环境仪器与本地计算只能服务共址校准、设计比较和证据归档；它们不能实时开合空间、控制建筑/设备、发布健康建议或法定环境结论。断电/断网时纸面告示、普通维护、路线、阴影和静侧不丢失。
+环境仪器与本地计算只能服务共址校准、设计比较和证据归档；它们不能实时开合空间、控制建筑/设备、发布健康建议或法定环境结论。断电/断网时纸面告示、普通维护、路线、阴影和静侧不丢失。[depth:municipal_new_infrastructure]
 
 ![B0、B1、被动参数与AI候选的消融和删除关系](assets/figures/mobility-bluegreen.png)
 
@@ -276,7 +276,7 @@ AI永不触发状态迁移。立即停止包括：通路/疏散受阻、构件�
 
 ## 指标体系、面积复算与合规矩阵
 
-包内可知的是：6个机制案例/30条一手来源、8个生态要素、三处任务书名称、12场景、6画像、3产业测试、3概念地标、12个RACI席位定义、N1—N10、WP00—09、90日协议和3个provisional context constraints。[metric:global_case_study_count] [metric:ecosystem_element_count]
+包内可知的是：6个机制案例/30条一手来源、8个生态要素、三处任务书名称、2个落位概念+1个未锚定类型、12场景、6画像、3产业测试、2个落位概念地标+1个类型组件、12个RACI席位定义、N1—N10、WP00—09、90日协议和3个provisional context constraints。[metric:global_case_study_count] [metric:located_prototype_count] [metric:type_only_prototype_count]
 
 OSM快照含3653要素，E3=0、E4=0；这些与概念几何自身拓扑/面积都是包内容事实，不是生态成效、任命、性能或放行。[metric:osm_context_feature_count] [metric:e3_site_evidence_count] [metric:e4_implementation_evidence_count]
 
