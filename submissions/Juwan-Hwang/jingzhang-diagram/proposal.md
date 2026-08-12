@@ -113,7 +113,7 @@ scenarios:
 
 ### 折返单元——空间即协议
 
-从"一条步道"到"一套空间操作系统"：既有方案的人字折返步道是正确的空间判断，本方案把它升级为可设计、可治理、可运营的单元化系统。**折返单元（Switchback Unit）= 一次东西穿越 + 一个折返节点 + 一个闭塞区间**。四个属性在同一单元上叠合：空间单元（一段折返步道 + 两侧街区穿越 + 折返点道岔节点公共空间）；治理单元（一个闭塞区间，同一时刻同一单元只放行一个高影响 AI 场景试验）；叙事单元（一段公里标，每个单元对应一个"原点时刻"）；运营单元（一张路票，场景授权、期限、责任人与退出方案全部公开可查）[data:geometry/land_use.geojson#LU-001] [depth:overall_spatial_structure]。
+从"一条步道"到"一套空间操作系统"：既有方案的人字折返步道是正确的空间判断，本方案把它升级为可设计、可治理、可运营的单元化系统。**折返单元（Switchback Unit）= 一次东西穿越 + 一个折返节点 + 一个闭塞区间**。四个属性在同一单元上叠合：空间单元（一段折返步道 + 两侧街区穿越 + 折返点道岔节点公共空间）；治理单元（一个闭塞区间，同一时刻同一单元只放行一个高影响 AI 场景试验）；叙事单元（一段公里标，每个单元对应一个"原点时刻"）；运营单元（一张路票，场景授权、期限、责任人与退出方案全部公开可查）[data:geometry/land_use.geojson#LU-001A] [depth:overall_spatial_structure]。
 
 ### 节点类型学与三层时空断面
 
@@ -129,7 +129,7 @@ scenarios:
 
 ## 重点区域详细设计
 
-三区不是三个园区，而是一列创新列车的三个作业段——用铁路设施类型学定义空间角色 [source:OFFICIAL-ANNOUNCEMENT] [data:geometry/key_areas.geojson#PROV-KEY-001] [depth:three_key_area_detailed_design]。
+三区不是三个园区，而是一列创新列车的三个作业段——用铁路设施类型学定义空间角色 [source:OFFICIAL-ANNOUNCEMENT] [data:geometry/key_areas.geojson#PROV-KEY-001] [depth:three_key_area_detailed_design]。三区数量与定位见 `compliance_matrix.json` 逐条映射 [metric:key_area_count]。
 
 ### 众智园 AI 自主创新加速区（192.1 ha）——"试车线"：安全地跑出问题
 
@@ -223,7 +223,7 @@ AI 研究者（算力、场景、同行 → 试车线测试场、原点礼堂发
 
 ### 用地布局与建筑规模
 
-用地表达采用可校验用地分类，9 个用地图斑无缝平铺覆盖 ODA 内部（三处重点区按功能分带细分、遗址公园绿脊与两翼界面保持完整）[data:geometry/land_use.geojson#LU-002A] [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [depth:land_use_layout]。建筑高度体量给出概念建议（北高南低、站点周边高、公园界面低），明确标注为待官方控规确认，不虚构容积率/高度/密度。建筑拆改留分类使用 retain_renovate_demolish 字段表达——10 个更新项目载体逐一标注保留（清华园站旧址）、改造（成府路旧楼、电子卖场等）或可逆新建（治理沙盒组团），保留 heritage 肌理、改造潜力建筑、拆除需评估，明确标注为概念建议，不替代法定判断 [data:geometry/buildings.geojson#BLDG-001]。
+用地表达采用可校验用地分类，9 个用地图斑无缝平铺覆盖 ODA 内部（三处重点区按功能分带细分、遗址公园绿脊与两翼界面保持完整）[data:geometry/land_use.geojson#LU-002A] [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [depth:land_use_layout]。建筑高度体量给出概念建议（北高南低、站点周边高、公园界面低），明确标注为待官方控规确认，不虚构容积率/高度/密度 [depth:height_massing_character] [standard:MOHURD-ARCH-DESIGN-DEPTH-2016]。建筑拆改留分类使用 retain_renovate_demolish 字段表达——10 个更新项目载体逐一标注保留（清华园站旧址）、改造（成府路旧楼、电子卖场等）或可逆新建（治理沙盒组团），保留 heritage 肌理、改造潜力建筑、拆除需评估，明确标注为概念建议，不替代法定判断 [data:geometry/buildings.geojson#BLDG-001] [metric:building_footprint_area_sqm]。
 
 ## 交通、轨道、市政与公共服务设施
 
@@ -235,7 +235,7 @@ AI 研究者（算力、场景、同行 → 试车线测试场、原点礼堂发
 
 ### 蓝绿系统
 
-遗址公园（线）× 清河（蓝）× 小月河（廊）× 折返节点公园群（点）；元大都土城等周边历史绿地以慢行串联（概念），不作绿地指标结论 [depth:blue_green_public_space] [data:geometry/green_space.geojson] [data:geometry/public_space.geojson]。
+遗址公园（线）× 清河（蓝）× 小月河（廊）× 折返节点公园群（点）；元大都土城等周边历史绿地以慢行串联（概念），不作绿地指标结论 [depth:blue_green_public_space] [data:geometry/green_space.geojson] [metric:green_ratio]。公共空间要素见组件库与场景卡章节 [data:geometry/public_space.geojson] [metric:public_space_ratio]。
 
 ### 公共空间组件库（全部开源图纸）
 
@@ -324,7 +324,7 @@ AI Urban Performance Index：Innovation Loop Latency / 场景可达性 / 实验�
 
 ### 空间指标纪律
 
-正式打包阶段进入 `metrics.json`（status/value/unit/source_files/formula/confidence/assumptions 全字段）[metric:site_area_sqm] [depth:metrics_recalculation] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]；基于临时边界的面积类指标一律标注 `provisional`，官方数据到位后无条件按 EPSG:4548 复算；容积率、建筑高度、密度列为 unknown / pending_control，不以推测值冒充审定指标。合规矩阵在 `compliance_matrix.json` 逐条映射公告 1.3/1.4/1.5 与 agent.1-agent.6 必选任务。
+正式打包阶段进入 `metrics.json`（status/value/unit/source_files/formula/confidence/assumptions 全字段）[metric:site_area_sqm] [metric:floor_area_ratio] [depth:metrics_recalculation]；开发强度因官方控规未取得而列为 unknown / pending_control [depth:development_intensity_controls] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]。基于临时边界的面积类指标一律标注 `provisional`，官方数据到位后无条件按 EPSG:4548 复算；容积率、建筑高度、密度列为 unknown / pending_control，不以推测值冒充审定指标。合规矩阵在 `compliance_matrix.json` 逐条映射公告 1.3/1.4/1.5 与 agent.1-agent.6 必选任务。
 
 ![指标证据与复算纪律图](assets/figures/metrics-evidence.png)
 

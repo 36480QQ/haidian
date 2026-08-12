@@ -209,6 +209,44 @@
      ]
     ]
    }
+  },
+  {
+   "type": "Feature",
+   "id": "ROAD-009",
+   "properties": {
+    "id": "ROAD-009",
+    "layer": "ROAD_CENTERLINE",
+    "source_type": "agent_generated_design",
+    "confidence": "medium",
+    "geometry_role": "design_proposal",
+    "name_zh": "大钟寺站四象限步行环（概念）",
+    "road_class": "greenway"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      116.3462,
+      39.94512
+     ],
+     [
+      116.3508,
+      39.94512
+     ],
+     [
+      116.3508,
+      39.94872000000001
+     ],
+     [
+      116.3462,
+      39.94872000000001
+     ],
+     [
+      116.3462,
+      39.94512
+     ]
+    ]
+   }
   }
  ]
 }

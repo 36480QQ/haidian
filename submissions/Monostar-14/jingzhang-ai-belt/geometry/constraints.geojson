@@ -88,6 +88,28 @@
   },
   {
    "type": "Feature",
+   "id": "CONS-004",
+   "properties": {
+    "id": "CONS-004",
+    "layer": "HERITAGE_PROTECTION",
+    "source_type": "agent_inferred_from_public_data",
+    "confidence": "low",
+    "geometry_role": "provisional_constraint",
+    "name_zh": "大钟寺站-觉生寺文保协调分析锚点（概念参考）",
+    "official_boundary": false,
+    "boundary_precision": "provisional_rough",
+    "usage_note": "锚点取自大钟寺AI产业集聚区临时边界质心，不代表地铁站或文保单位精确位置；法定文保范围（紫线）与建设控制地带以官方数据为准。"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     116.3485,
+     39.946920000000006
+    ]
+   }
+  },
+  {
+   "type": "Feature",
    "id": "PROV-KEY-001",
    "properties": {
     "id": "PROV-KEY-001",
