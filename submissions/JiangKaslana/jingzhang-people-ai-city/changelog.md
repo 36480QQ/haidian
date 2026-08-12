@@ -1,5 +1,22 @@
 # Changelog
 
+## v0.2 — 2026-08-12
+
+- Expanded the bilingual proposal from a values/governance skeleton into a competition-ready narrative structure.
+- Added six bounded global case translations: Punggol Digital District, Kalasatama agile pilots, Helsinki AI Register, Decidim/Barcelona, Seoul AI Hub and Toronto Quayside as a governance counterexample.
+- Added an eight-factor people-first AI innovation ecosystem linking research, talent, compute, data, capital, industry, space and scenarios to explicit public-interest constraints.
+- Completed the required three AI pilgrimage landmarks without inflating the red architecture system:
+  - Civic Engineering Hall / 人民工程馆 — the only large red civic landmark;
+  - Open-Source Origin Square / 开源原点广场 — non-red open-source civic landmark;
+  - Civic Intelligence Arcade / 公共智能廊 — non-red transparency/public-good interface landmark.
+- Kept the People's AI Service Station as a small replicable red civic anchor rather than misclassifying it as a pilgrimage monument.
+- Upgraded all 12 scenario concepts into a public-service contract matrix with explicit non-AI equivalents and human-control/stop rules.
+- Added three flagship validation protocols: controlled low-speed robot pilot, accessible/older-person navigation co-test, and a belt-wide Civic AI Register / transparency / human-takeover platform.
+- Added the **Public Receipt** mechanism so pilots leave an understandable public record of what was tested, what failed, what changed and why a system continued or stopped.
+- Added four long-term operating brands: Civic AI Open Class, Jing-Zhang Open Source Week, Civic AI Test Day and Centennial Engineering & Future City Forum.
+- Added structured metrics for 6 global cases, 3 landmarks, 4 program brands and a 10-field proposed Civic AI Register card.
+- Synchronized the Chinese and English proposal structure and iteration to v0.2.
+
 ## v0.1 — 2026-08-12
 
 - Established the core proposition **“AI向前，人民在先 / AI Advances, People First.”**
@@ -11,4 +28,3 @@
 - Added 12 preliminary AI scenarios, 3 flagship validation directions and 9 acceptance user groups, including service workers and people without smartphones/accounts or who decline AI.
 - Added the **ordinary-service-first** pilot sequence: BASELINE → AI PILOT → HUMAN REVIEW → PUBLIC RECEIPT → SCALE / REVISE / STOP.
 - Registered initial official/public sources and claim-boundary assumptions.
-- Next: complete bilingual equivalence, structured metrics, compliance/standards/depth matrices, provisional concept geometry, figures, visual HTML and A3/A0 review package.
