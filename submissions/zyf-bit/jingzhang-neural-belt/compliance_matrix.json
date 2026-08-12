@@ -23,9 +23,9 @@
         "visual/index.html"
       ],
       "source_ids": [
-        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
         "SRC-OSM",
-        "SRC-BJ-THREE-AREAS-WINGS"
+        "DATA-SRC-BJ-THREE-AREAS-WINGS"
       ],
       "assumption_ids": [
         "ASM-001",
@@ -60,7 +60,7 @@
         "visual/index.html"
       ],
       "source_ids": [
-        "SRC-HAIDIAN-1X1",
+        "DATA-SRC-HAIDIAN-1X1-BASEMAP",
         "SRC-OSM"
       ],
       "assumption_ids": [
@@ -92,8 +92,8 @@
         "visual/index.html"
       ],
       "source_ids": [
-        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
-        "SRC-BJ-THREE-AREAS-WINGS"
+        "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
+        "DATA-SRC-BJ-THREE-AREAS-WINGS"
       ],
       "assumption_ids": [
         "ASM-001"
@@ -123,7 +123,7 @@
         "visual/index.html"
       ],
       "source_ids": [
-        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT"
+        "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
       ],
       "assumption_ids": [
         "ASM-001"
@@ -153,7 +153,7 @@
         "visual/index.html"
       ],
       "source_ids": [
-        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT"
+        "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
       ],
       "assumption_ids": [
         "ASM-001"
@@ -183,7 +183,7 @@
         "visual/index.html"
       ],
       "source_ids": [
-        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT"
+        "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
       ],
       "assumption_ids": [
         "ASM-001"
@@ -217,7 +217,7 @@
         "visual/index.html"
       ],
       "source_ids": [
-        "SRC-HAIDIAN-1X1"
+        "DATA-SRC-HAIDIAN-1X1-BASEMAP"
       ],
       "assumption_ids": [
         "ASM-005",
@@ -251,7 +251,7 @@
         "visual/index.html"
       ],
       "source_ids": [
-        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT"
+        "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
       ],
       "assumption_ids": [
         "ASM-001"
@@ -282,7 +282,7 @@
       ],
       "source_ids": [
         "SRC-OSM",
-        "SRC-HAIDIAN-1X1"
+        "DATA-SRC-HAIDIAN-1X1-BASEMAP"
       ],
       "assumption_ids": [
         "ASM-001"
@@ -311,7 +311,7 @@
         "visual/index.html"
       ],
       "source_ids": [
-        "SRC-HAIDIAN-1X1"
+        "DATA-SRC-HAIDIAN-1X1-BASEMAP"
       ],
       "assumption_ids": [
         "ASM-006"
@@ -340,7 +340,7 @@
         "visual/index.html"
       ],
       "source_ids": [
-        "SRC-HAIDIAN-1X1"
+        "DATA-SRC-HAIDIAN-1X1-BASEMAP"
       ],
       "assumption_ids": [
         "ASM-006"
@@ -371,7 +371,7 @@
         "visual/index.html"
       ],
       "source_ids": [
-        "SRC-HAIDIAN-1X1"
+        "DATA-SRC-HAIDIAN-1X1-BASEMAP"
       ],
       "assumption_ids": [
         "ASM-003",
@@ -404,7 +404,7 @@
         "visual/index.html"
       ],
       "source_ids": [
-        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT"
+        "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
       ],
       "assumption_ids": [
         "ASM-001"
@@ -433,7 +433,7 @@
         "visual/index.html"
       ],
       "source_ids": [
-        "SRC-AGENT-TASKBOOK"
+        "DATA-SRC-AGENT-TASKBOOK-20260518"
       ],
       "assumption_ids": [
         "ASM-001"
@@ -465,7 +465,7 @@
         "visual/index.html"
       ],
       "source_ids": [
-        "SRC-AGENT-TASKBOOK"
+        "DATA-SRC-AGENT-TASKBOOK-20260518"
       ],
       "assumption_ids": [
         "ASM-001"
@@ -500,7 +500,7 @@
         "visual/index.html"
       ],
       "source_ids": [
-        "SRC-AGENT-TASKBOOK"
+        "DATA-SRC-AGENT-TASKBOOK-20260518"
       ],
       "assumption_ids": [
         "ASM-001"
@@ -539,8 +539,8 @@
         "visual/index.html"
       ],
       "source_ids": [
-        "SRC-PROVISIONAL-BOUNDARY",
-        "SRC-HAIDIAN-1X1",
+        "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+        "DATA-SRC-HAIDIAN-1X1-BASEMAP",
         "SRC-OSM"
       ],
       "assumption_ids": [
@@ -554,10 +554,10 @@
     },
     {
       "requirement_id": "agent.1",
-      "title_zh": "智能体身份与能力说明",
+      "title_zh": "总体概念与命名体系",
       "mandatory": true,
       "report_sections": [
-        "附录D 智能体信息"
+        "3.1 总体概念与命名体系"
       ],
       "geojson_layers": [
         "geometry/site_boundary.geojson"
@@ -572,7 +572,7 @@
         "visual/index.html"
       ],
       "source_ids": [
-        "SRC-AGENT-TASKBOOK"
+        "DATA-SRC-AGENT-TASKBOOK-20260518"
       ],
       "assumption_ids": [
         "ASM-001"
@@ -583,10 +583,10 @@
     },
     {
       "requirement_id": "agent.2",
-      "title_zh": "数据来源与溯源",
+      "title_zh": "全球AI创新生态案例研究",
       "mandatory": true,
       "report_sections": [
-        "附录E 数据来源"
+        "3.2 全球AI创新生态案例"
       ],
       "geojson_layers": [
         "geometry/site_boundary.geojson"
@@ -601,12 +601,12 @@
         "visual/index.html"
       ],
       "source_ids": [
-        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
-        "SRC-AGENT-TASKBOOK",
-        "SRC-PROVISIONAL-BOUNDARY",
-        "SRC-HAIDIAN-1X1",
-        "SRC-BJ-THREE-AREAS-WINGS",
-        "SRC-NBS-STATS",
+        "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
+        "DATA-SRC-AGENT-TASKBOOK-20260518",
+        "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+        "DATA-SRC-HAIDIAN-1X1-BASEMAP",
+        "DATA-SRC-BJ-THREE-AREAS-WINGS",
+        "DATA-SRC-NBS-STATISTICS",
         "SRC-OSM"
       ],
       "assumption_ids": [
@@ -618,10 +618,11 @@
     },
     {
       "requirement_id": "agent.3",
-      "title_zh": "假设与限制声明",
+      "title_zh": "AI场景卡与用户画像设计",
       "mandatory": true,
       "report_sections": [
-        "附录F 假设与限制"
+        "6.1 AI场景卡",
+        "6.2 用户画像"
       ],
       "geojson_layers": [
         "geometry/site_boundary.geojson"
@@ -636,7 +637,7 @@
         "visual/index.html"
       ],
       "source_ids": [
-        "SRC-AGENT-TASKBOOK"
+        "DATA-SRC-AGENT-TASKBOOK-20260518"
       ],
       "assumption_ids": [
         "ASM-001",
@@ -652,10 +653,10 @@
     },
     {
       "requirement_id": "agent.4",
-      "title_zh": "自检报告",
+      "title_zh": "AI朝圣地标设计",
       "mandatory": true,
       "report_sections": [
-        "附录G 自检报告"
+        "6.3 AI朝圣地标"
       ],
       "geojson_layers": [
         "geometry/site_boundary.geojson"
@@ -670,7 +671,7 @@
         "visual/index.html"
       ],
       "source_ids": [
-        "SRC-AGENT-TASKBOOK"
+        "DATA-SRC-AGENT-TASKBOOK-20260518"
       ],
       "assumption_ids": [
         "ASM-001"
@@ -690,10 +691,10 @@
     },
     {
       "requirement_id": "agent.5",
-      "title_zh": "风险评估",
+      "title_zh": "文化叙事与品牌IP",
       "mandatory": true,
       "report_sections": [
-        "附录H 风险评估"
+        "7.1 文化叙事"
       ],
       "geojson_layers": [
         "geometry/site_boundary.geojson"
@@ -708,7 +709,7 @@
         "visual/index.html"
       ],
       "source_ids": [
-        "SRC-AGENT-TASKBOOK"
+        "DATA-SRC-AGENT-TASKBOOK-20260518"
       ],
       "assumption_ids": [
         "ASM-001"
@@ -719,10 +720,11 @@
     },
     {
       "requirement_id": "agent.6",
-      "title_zh": "展览配置",
+      "title_zh": "年度活动体系与运营机制",
       "mandatory": true,
       "report_sections": [
-        "附录I 展览配置"
+        "7.2 年度活动体系",
+        "7.3 运营机制"
       ],
       "geojson_layers": [
         "geometry/site_boundary.geojson"
@@ -737,7 +739,7 @@
         "visual/index.html"
       ],
       "source_ids": [
-        "SRC-AGENT-TASKBOOK"
+        "DATA-SRC-AGENT-TASKBOOK-20260518"
       ],
       "assumption_ids": [
         "ASM-001"

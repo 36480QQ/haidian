@@ -1,17 +1,17 @@
 {
   "sources": [
     {
-      "source_id": "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+      "source_id": "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
       "source_title": "百年京张AI创新带城市设计开源征集预公告",
-      "publisher": "北京市规划和自然资源委员会 / 海淀区人民政府",
+      "publisher": "北京市规划和自然资源委员会海淀分局",
       "url": "https://ghzrzyw.beijing.gov.cn/",
-      "date": "2026-07",
+      "date": "2026-05",
       "license": "public_announcement",
       "usage_note": "征集任务书与评审要求的权威来源，定义场地范围、提交要求与评分维度。",
       "authority_level": "official"
     },
     {
-      "source_id": "SRC-AGENT-TASKBOOK",
+      "source_id": "DATA-SRC-AGENT-TASKBOOK-20260518",
       "source_title": "智能体任务书(TraeWork Agent Taskbook)",
       "publisher": "征集组委会",
       "url": "",
@@ -21,7 +21,7 @@
       "authority_level": "official"
     },
     {
-      "source_id": "SRC-PROVISIONAL-BOUNDARY",
+      "source_id": "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
       "source_title": "临时场地边界(基于公开信息推定)",
       "publisher": "TraeWork Agent",
       "url": "",
@@ -31,17 +31,17 @@
       "authority_level": "derived"
     },
     {
-      "source_id": "SRC-HAIDIAN-1X1",
+      "source_id": "DATA-SRC-HAIDIAN-1X1-BASEMAP",
       "source_title": "海淀区1:1000基础地理数据(公开摘要)",
       "publisher": "北京市规划和自然资源委员会海淀分局",
       "url": "",
       "date": "2024",
       "license": "public_summary",
-      "usage_note": "用于现状土地利用、道路网络与绿地系统的参考分析。",
+      "usage_note": "用于现状土地利用、道路网络与绿地系统的参考分析。 注意：本数据源不在已批准的数据来源注册表中，仅可作为背景参考使用，不作为合规数据来源。",
       "authority_level": "official"
     },
     {
-      "source_id": "SRC-BJ-THREE-AREAS-WINGS",
+      "source_id": "DATA-SRC-BJ-THREE-AREAS-WINGS",
       "source_title": "北京'三区三翼'空间发展策略公开资料",
       "publisher": "北京市人民政府",
       "url": "https://www.beijing.gov.cn/",
@@ -51,7 +51,7 @@
       "authority_level": "official"
     },
     {
-      "source_id": "SRC-NBS-STATS",
+      "source_id": "DATA-SRC-NBS-STATISTICS",
       "source_title": "国家统计局公开统计数据",
       "publisher": "国家统计局",
       "url": "https://www.stats.gov.cn/",

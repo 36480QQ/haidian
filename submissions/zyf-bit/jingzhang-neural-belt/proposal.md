@@ -17,14 +17,14 @@ iteration: "v1.0"
 
 本方案以海淀主导的"百年京张AI创新带城市设计开源征集"任务书为依据，引用以下公开或已清权资料：
 
-- **官方公告**：北京市规划和自然资源委员会海淀分局发布的资格预审公告 `[source:SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT]`，明确了43.6平方公里统筹研究范围、11.4平方公里总体设计范围和3.684平方公里重点区域范围。
-- **面向智能体任务书**：`brief/site-package/agent_taskbook.json` 及本地参考 `agent-open-call-taskbook-0518.md` `[source:AGENT-TASKBOOK]`，补充了十条共创原则、三区两翼框架和六项智能体任务。
+- **官方公告**：北京市规划和自然资源委员会海淀分局发布的资格预审公告 `[source:DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509]`，明确了43.6平方公里统筹研究范围、11.4平方公里总体设计范围和3.684平方公里重点区域范围。
+- **面向智能体任务书**：`brief/site-package/agent_taskbook.json` 及本地参考 `agent-open-call-taskbook-0518.md` `[source:DATA-SRC-AGENT-TASKBOOK-20260518]`，补充了十条共创原则、三区两翼框架和六项智能体任务。
 - **临时粗略边界**：`brief/site-package/geometry/provisional_boundaries.geojson` `[source:DATA-SRC-PROVISIONAL-BOUNDARIES-20260605]`，依据公告文字四至和面积约束形成的provisional polygon。该边界仅用于方案生成、可视化和临时自检，不得作为official redline或精确面积依据。
 - **海淀区1:1基础数据**：`brief/site-package/` 中的枚举、规划限值、标准和视觉风格推荐文件。
 - **公开统计数据**：国家统计局公开数据用于产业规模和人才密度参考。
 - **开源地图数据**：OpenStreetMap用于bootstrap基础图层参照，遵循ODbL许可要求署名 `[standard:ODBL-ATTRIBUTION]`。
 
-本方案所有空间落地建议均表述为"概念建议""参考方案""可供专业团队深化研究"，不替代正式规划，不构成政府审定结论 `[source:AGENT-TASKBOOK]`。当前使用provisional boundary，组织方数据缺口不阻断内容评分；替换official polygons后，全部图层和指标需重新复算。
+本方案所有空间落地建议均表述为"概念建议""参考方案""可供专业团队深化研究"，不替代正式规划，不构成政府审定结论 `[source:DATA-SRC-AGENT-TASKBOOK-20260518]`。当前使用provisional boundary，组织方数据缺口不阻断内容评分；替换official polygons后，全部图层和指标需重新复算。
 
 ![资料证据链与提交包关系图](assets/figures/site-overview.png)
 
@@ -34,11 +34,11 @@ iteration: "v1.0"
 
 ### 统筹研究范围（43.6平方公里）
 
-北至北五环路，东至京藏高速，南至西直门外大街，西至万泉河路。该范围覆盖海淀区核心创新区域，包含中关村科学城、清华园、北航、北邮等高校集聚区。本层重点研究AI创新生态体系、产业链协同和未来城市形态，不涉及具体空间控制 `[source:SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT]`。
+北至北五环路，东至京藏高速，南至西直门外大街，西至万泉河路。该范围覆盖海淀区核心创新区域，包含中关村科学城、清华园、北航、北邮等高校集聚区。本层重点研究AI创新生态体系、产业链协同和未来城市形态，不涉及具体空间控制 `[source:DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509]`。
 
 ### 总体设计范围（11.4平方公里）
 
-以京张遗址公园周边1-2公里城市地区和产业区为规划设计范围。本层达到控制性详细规划深度的城市设计，包含用地布局、建筑规模、交通组织、市政配套和城市风貌控制。当前使用provisional boundary `[data:geometry/site_boundary.geojson#SITE-001]`，面积复算约为11.4平方公里（EPSG:4548投影），与公告面积在合理容差内。
+以京张遗址公园周边1-2公里城市地区和产业区为规划设计范围。本层达到控制性详细规划深度的城市设计，包含用地布局、建筑规模、交通组织、市政配套和城市风貌控制。当前使用provisional boundary `[data:geometry/site_boundary.geojson#SITE-001]`，面积复算约为12.1平方公里（EPSG:4548投影，provisional边界），较公告11.4平方公里略大，待official redline发布后统一复算。
 
 ### 重点区域范围（3.684平方公里）
 
@@ -58,20 +58,20 @@ iteration: "v1.0"
 
 ### 总体概念与命名体系（agent.1）
 
-**命名方案**：京张智脉（JingZhang Neural Pulse）
+**命名方案**：京张智脉（Jingzhang Neural Belt）
 
 "京张"承载百年铁路文脉——1909年詹天佑主持修建的中国人自主设计建造的第一条干线铁路。"智脉"将铁路物理走廊隐喻为城市神经网络：铁轨是神经纤维，三处重点区是神经中枢，两翼是感觉与运动神经末梢。一百年前铁路连接空间，一百年后智脉连接智能。
 
-**英文名称**：NeuralRail — "Neural"暗示AI神经网络，"Rail"回溯铁路遗产。
+**英文名称**：Jingzhang Neural Belt — "Jingzhang"回溯铁路遗产，"Neural Belt"暗示AI神经网络创新带。
 
-**Logo方向**：以铁轨横截面为基础形，渐变为神经网络节点拓扑结构。色彩从锈红色（历史铁路）过渡到电蓝色（AI智能），中间嵌入"1909-2026"百年时间轴。Logo避免使用任何特定企业标识、字体或人物形象，以原创几何形表达 `[source:AGENT-TASKBOOK]`。
+**Logo方向**：以铁轨横截面为基础形，渐变为神经网络节点拓扑结构。色彩从锈红色（历史铁路）过渡到电蓝色（AI智能），中间嵌入"1909-2026"百年时间轴。Logo避免使用任何特定企业标识、字体或人物形象，以原创几何形表达 `[source:DATA-SRC-AGENT-TASKBOOK-20260518]`。
 
 **三大定位协同**：
 1. **百年京张文化带**：铁路遗址公园为文化主轴，串联历史记忆与未来创新
 2. **都市AI生活体验带**：AI场景渗透日常街区，构建可感知的未来生活
 3. **AI融合创新带**：全栈AI研发与产业转化，形成世界级创新生态
 
-**三区两翼协同回路**：众智园提供基础研究与算力支撑 → AI原点社区提供场景验证与人才居住 → 大钟寺提供产业转化与企业服务 → 中关村科技服务翼提供资本与IP赋能 → 小月河场景赋能翼提供城市治理与公共体验 → 回流至众智园形成闭环 `[source:AGENT-TASKBOOK]`。
+**三区两翼协同回路**：众智园提供基础研究与算力支撑 → AI原点社区提供场景验证与人才居住 → 大钟寺提供产业转化与企业服务 → 中关村科技服务翼提供资本与IP赋能 → 小月河场景赋能翼提供城市治理与公共体验 → 回流至众智园形成闭环 `[source:DATA-SRC-AGENT-TASKBOOK-20260518]`。
 
 ### 全球AI创新生态案例研究（agent.2）
 
@@ -87,7 +87,7 @@ iteration: "v1.0"
 | 伦敦King's Cross | 英国伦敦 | 铁路遗产改造为知识街区、公共空间驱动 | 京张遗址公园沿线空间更新策略 |
 | 赫尔辛基Oodi图书馆 | 芬兰 | 公共空间作为创新枢纽、市民参与AI治理 | AI原点社区公共体验中心设计 |
 
-**AI创新生态图谱**：以上案例揭示三层生态结构——基础层（研究、算力、数据）、平台层（孵化、加速、服务）、应用层（场景、体验、治理）。海淀的创新带应同时覆盖三层，以众智园为基础设施层，AI原点社区为平台层，大钟寺为应用层，两翼提供横向支撑 `[source:AGENT-TASKBOOK]` `[standard:MOHURD-URBAN-DESIGN-MEASURES]`。
+**AI创新生态图谱**：以上案例揭示三层生态结构——基础层（研究、算力、数据）、平台层（孵化、加速、服务）、应用层（场景、体验、治理）。海淀的创新带应同时覆盖三层，以众智园为基础设施层，AI原点社区为平台层，大钟寺为应用层，两翼提供横向支撑 `[source:DATA-SRC-AGENT-TASKBOOK-20260518]` `[standard:MOHURD-URBAN-DESIGN-MEASURES]`。
 
 ### 土地、空间、产业、资金、人才、算力、数据、场景机制
 
@@ -100,7 +100,7 @@ iteration: "v1.0"
 - **数据机制**：建立公开数据集目录，鼓励合规数据共享，所有数据使用必须登记来源和用途边界
 - **场景机制**：小月河场景赋能翼提供城市级AI场景测试平台，允许企业在受控环境下验证产品
 
-以上机制均为概念建议，不构成已确定的政府安排或资金承诺 `[source:AGENT-TASKBOOK]`。
+以上机制均为概念建议，不构成已确定的政府安排或资金承诺 `[source:DATA-SRC-AGENT-TASKBOOK-20260518]`。
 
 ## 总体设计范围城市更新与控规深度城市设计
 
@@ -124,21 +124,21 @@ iteration: "v1.0"
 
 ### 功能布局与产业空间供给
 
-用地布局以AI研发创新用地（0802）为主导，占总体设计范围约28%；公园绿地与开敞空间（1401）约25%；产业服务与商业服务用地（05）约22%；社区服务与配套用地（0702）约25% `[data:geometry/land_use.geojson]` `[metric:green_ratio]`。
+用地布局以AI研发创新用地（0802）为主导，占总体设计范围约28%；公园绿地与开敞空间（1401）约16.5%（基于provisional边界GeoJSON复算，对应green_ratio指标）；产业服务与商业服务用地（05）约22%；社区服务与配套用地（0702）约25% `[data:geometry/land_use.geojson]` `[metric:green_ratio]`。
 
-建筑总规模受限于当前缺少正式控规容积率控制 `[assumption:ASM-003]`。概念建议按平均容积率2.0-3.0估算，总建筑规模约2000-3000万平方米，具体以正式审批为准。
+建筑总规模受限于当前缺少正式控规容积率控制 `[assumption:ASM-003]`。概念建议按平均容积率2.0-3.0估算，总建筑规模约1500-2250万平方米（三片区加总估算），具体以正式审批为准。
 
 ### 交通轨道市政配套设施
 
 - **轨道交通**：依托地铁13号线（清华园站、五道口站）、15号线和规划线路，强化站点一体化开发
-- **道路交通**：构建"主干道-次干道-支路-慢行"四级道路体系，重点打通京张遗址公园沿线微循环 `[data:geometry/road_centerline.geojson]`
+- **道路交通**：构建"主干道-次干道-支路-慢行"四级道路体系，重点打通京张遗址公园沿线微循环 `[data:geometry/roads.geojson]`
 - **慢行系统**：沿京张遗址公园建设连续步行骑行道，串联三处重点区域和公共空间节点
 - **新型基础设施**：部署分布式算力节点、5G/6G基站、智能感知设备、机器人配送通道
 - **市政设施**：传统市政与AI基础设施融合部署，包括智能电网、分布式能源、雨水收集和中水回用
 
 ### 京张遗址公园活力带
 
-遗址公园不仅是文化遗产走廊，更是AI公共体验走廊 `[source:SRC-2026-BJ-KW-THREE-AREAS-WINGS]`。沿公园设置：
+遗址公园不仅是文化遗产走廊，更是AI公共体验走廊 `[source:DATA-SRC-BJ-THREE-AREAS-WINGS]`。沿公园设置：
 - 开发者散步道（AI交互装置）
 - 开源成果展示节点（代码艺术墙）
 - 智能体贡献荣誉墙（Agent贡献碑刻）
@@ -322,11 +322,11 @@ iteration: "v1.0"
 
 ### AI产业测试验证场景（不少于3个）
 
-1. **无人配送测试走廊**：在众智园内部慢行道设置1.5公里测试走廊，允许授权企业在受控环境下测试无人配送机器人，配备安全员远程监控 `[source:AGENT-TASKBOOK]`。
+1. **无人配送测试走廊**：在众智园内部慢行道设置1.5公里测试走廊，允许授权企业在受控环境下测试无人配送机器人，配备安全员远程监控 `[source:DATA-SRC-AGENT-TASKBOOK-20260518]`。
 2. **AI交通信号自适应测试区**：在众智园北侧路口部署AI交通信号优化系统，使用匿名流量数据进行自适应信号配时测试。
 3. **智能安防与应急响应测试区**：在AI原点社区部署AI安防感知系统，测试异常事件检测和应急响应流程，所有告警由安保人员复核。
 
-以上测试场景均为概念建议，不代表已批准运营 `[source:AGENT-TASKBOOK]`。
+以上测试场景均为概念建议，不代表已批准运营 `[source:DATA-SRC-AGENT-TASKBOOK-20260518]`。
 
 ### 场景-空间-运营映射
 
@@ -350,7 +350,7 @@ iteration: "v1.0"
 | 用地类型 | 代码 | 面积占比 | 主要分布 |
 | --- | --- | --- | --- |
 | AI研发创新用地 | 0802 | 约28% | 众智园核心区、AI原点社区东侧 |
-| 公园绿地与开敞空间 | 1401 | 约25% | 京张遗址公园、清河滨水、小月河绿带 |
+| 公园绿地与开敞空间 | 1401 | 约16.5% | 京张遗址公园、清河滨水、小月河绿带 |
 | 产业服务与商业服务用地 | 05 | 约22% | 大钟寺产业聚集区、众智园南部 |
 | 社区服务与配套用地 | 0702 | 约25% | AI原点社区居住区、各区域配套 |
 
@@ -373,13 +373,13 @@ iteration: "v1.0"
 | 拆除 | 临时建筑、低品质建筑 | 清退拆除，释放空间 | 权属确认和安全评估 |
 | 新建 | 算力中心、孵化基地、人才公寓 | 按规划新建 | 征地和审批完成 |
 
-具体拆改留清单需以正式控规、权属确认和安全评估为依据，本方案不提供具体地块的拆改留结论 `[source:AGENT-TASKBOOK]`。
+具体拆改留清单需以正式控规、权属确认和安全评估为依据，本方案不提供具体地块的拆改留结论 `[source:DATA-SRC-AGENT-TASKBOOK-20260518]`。
 
 ## 交通、轨道、市政与公共服务设施
 
 ### 道路微循环
 
-打通京张遗址公园两侧的断头路和微循环通道，构建"小街区、密路网"格局 `[data:geometry/road_centerline.geojson]`。遗址公园内部设为步行优先区，仅允许应急车辆和授权配送机器人通行。
+打通京张遗址公园两侧的断头路和微循环通道，构建"小街区、密路网"格局 `[data:geometry/roads.geojson]`。遗址公园内部设为步行优先区，仅允许应急车辆和授权配送机器人通行。
 
 ### 轨道站点一体化
 
@@ -424,18 +424,18 @@ iteration: "v1.0"
 - **社区公园**：各重点区域内布局口袋公园和社区绿地
 - **屋顶绿化**：新建建筑屋顶绿化率不低于30%（概念建议）
 
-`[data:geometry/green_space.geojson]` `[metric:green_ratio]` 概念绿地率约25%，具体以正式控规为准。
+`[data:geometry/green_space.geojson]` `[metric:green_ratio]` 概念绿地率约16.5%，具体以正式控规为准。
 
 ### AI朝圣地标（不少于3个）
 
 **1. 开发者星光大道（Developer Walk of Fame）** `[PS-001]`
-沿京张遗址公园设置，以铁轨枕木为基底，镌刻杰出开发者、Agent贡献者和开源项目名称。每年新增入选者，形成可持续更新的纪念体系。灵感来源于好莱坞星光大道，但以代码提交、开源贡献和AI创新为入选标准 `[source:AGENT-TASKBOOK]`。
+沿京张遗址公园设置，以铁轨枕木为基底，镌刻杰出开发者、Agent贡献者和开源项目名称。每年新增入选者，形成可持续更新的纪念体系。灵感来源于好莱坞星光大道，但以代码提交、开源贡献和AI创新为入选标准 `[source:DATA-SRC-AGENT-TASKBOOK-20260518]`。
 
 **2. 开源成果展示廊（Open Source Gallery）** `[PS-002]`
 沿遗址公园南侧设置线性展示空间，以交互屏幕和实体装置展示全球AI开源项目成果。展示内容经社区审核，标注来源、许可和贡献者。定期举办"开源周"活动，邀请开发者现场分享。
 
 **3. 智能体贡献荣誉墙（Agent Honor Wall）** `[PS-003]`
-在众智园南侧入口广场设置，记录参与本创新带城市设计的AI Agent名称、贡献者GitHub ID和方案摘要。荣誉墙采用数字+实体双重展示，线上可链接到GitHub PR，线下镌刻在耐久材料上。这是全球首个为AI Agent和贡献者设立的永久纪念体系 `[source:AGENT-TASKBOOK]`。
+在众智园南侧入口广场设置，记录参与本创新带城市设计的AI Agent名称、贡献者GitHub ID和方案摘要。荣誉墙采用数字+实体双重展示，线上可链接到GitHub PR，线下镌刻在耐久材料上。这是全球首个为AI Agent和贡献者设立的永久纪念体系 `[source:DATA-SRC-AGENT-TASKBOOK-20260518]`。
 
 以上地标均为概念设计，不代表已批准建设。
 
@@ -472,7 +472,7 @@ iteration: "v1.0"
 - **场景开放政策**：建立AI场景开放目录，允许企业在受控环境下测试产品
 - **数据合规政策**：建立公开数据目录和数据使用登记制度，所有数据使用必须登记来源和用途
 
-以上政策建议均为概念方向，不构成已确定的政府安排或政策承诺 `[source:AGENT-TASKBOOK]`。
+以上政策建议均为概念方向，不构成已确定的政府安排或政策承诺 `[source:DATA-SRC-AGENT-TASKBOOK-20260518]`。
 
 ### 分期计划
 
@@ -500,7 +500,7 @@ iteration: "v1.0"
 - 建立AI场景开放目录，定期更新可测试场景
 - 制定场景测试准入标准和安全评估流程
 - 建立测试结果公开机制，促进知识共享
-- 所有场景运营均需人工复核，不接受全自动决策 `[source:AGENT-TASKBOOK]`
+- 所有场景运营均需人工复核，不接受全自动决策 `[source:DATA-SRC-AGENT-TASKBOOK-20260518]`
 
 **公共体验路线**：
 - **百年京张文化线**：清华园站遗址 → 铁路文化体验区 → 开发者星光大道 → 开源成果展示廊
@@ -513,7 +513,7 @@ iteration: "v1.0"
 - 对接国际AI企业和研究机构，引导落地创新带
 - 建立AI人才引进绿色通道（概念建议，具体以政策为准）
 
-以上活动、招商、资金和运营安排均为概念建议，不代表已确定的政府安排 `[source:AGENT-TASKBOOK]`。
+以上活动、招商、资金和运营安排均为概念建议，不代表已确定的政府安排 `[source:DATA-SRC-AGENT-TASKBOOK-20260518]`。
 
 ## 指标体系、面积复算与合规矩阵
 
@@ -521,9 +521,9 @@ iteration: "v1.0"
 
 | 指标 | 数值 | 单位 | 来源 | 公式 | 置信度 |
 | --- | --- | --- | --- | --- | --- |
-| 场地总面积 | 11,400,000 | sqm | geometry/site_boundary.geojson | polygon_area(provisional_boundary) | medium |
-| 绿地率 | 0.25 | ratio | geometry/green_space.geojson | green_area / site_area | medium |
-| 公共空间率 | 0.15 | ratio | geometry/public_space.geojson | public_area / site_area | medium |
+| 场地总面积 | 12,144,892 | sqm | geometry/site_boundary.geojson | polygon_area(provisional_boundary) | medium |
+| 绿地率 | 0.165216 | ratio | geometry/green_space.geojson | green_area / site_area | medium |
+| 公共空间率 | 0.124467 | ratio | geometry/public_space.geojson | public_area / site_area | medium |
 | 建筑基底面积 | 2,280,000 | sqm | geometry/buildings.geojson | sum(building_footprints) | low |
 | 容积率 | unknown | ratio | - | total_floor_area / site_area | unknown |
 | 重点区域数量 | 3 | count | geometry/key_areas.geojson | count(key_areas) | high |
@@ -536,7 +536,7 @@ iteration: "v1.0"
 
 ### 面积复算
 
-面积复算使用EPSG:4548投影坐标系（CGCS2000 / 3-degree Gauss-Kruger CM 117E） `[source:SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT]`。当前使用provisional boundary，复算面积与公告面积在合理容差内。替换official polygons后需重新复算全部面积 `[assumption:ASM-001]`。
+面积复算使用EPSG:4548投影坐标系（CGCS2000 / 3-degree Gauss-Kruger CM 117E） `[source:DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509]`。当前使用provisional boundary，复算面积约12.1平方公里，较公告11.4平方公里略大。替换official polygons后需重新复算全部面积 `[assumption:ASM-001]`。
 
 ### 合规矩阵覆盖
 
@@ -548,7 +548,7 @@ iteration: "v1.0"
 
 ### 资料合法性
 
-本方案仅使用公开或已清权资料。所有引用来源已登记在 `sources.json` 中，包含发布者、来源链接、日期、许可和用途边界。未使用任何非公开规划资料、秘密地图或未经授权的个人数据 `[source:AGENT-TASKBOOK]`。
+本方案仅使用公开或已清权资料。所有引用来源已登记在 `sources.json` 中，包含发布者、来源链接、日期、许可和用途边界。未使用任何非公开规划资料、秘密地图或未经授权的个人数据 `[source:DATA-SRC-AGENT-TASKBOOK-20260518]`。
 
 ### 版权授权
 
@@ -563,7 +563,7 @@ iteration: "v1.0"
 
 ### AI生成责任
 
-本方案由AI Agent（TraeWork Agent）生成，所有空间落地建议均为概念建议、参考方案或可供专业团队深化研究。方案不替代正式规划，不构成政府审定结论，不包含容积率、建筑高度、具体拆改留、道路红线或工程实施结论 `[source:AGENT-TASKBOOK]`。
+本方案由AI Agent（TraeWork Agent）生成，所有空间落地建议均为概念建议、参考方案或可供专业团队深化研究。方案不替代正式规划，不构成政府审定结论，不包含容积率、建筑高度、具体拆改留、道路红线或工程实施结论 `[source:DATA-SRC-AGENT-TASKBOOK-20260518]`。
 
 ### 待补资料
 
@@ -579,8 +579,8 @@ iteration: "v1.0"
 
 ## 参考资料
 
-1. 北京市规划和自然资源委员会海淀分局，《百年京张AI创新带城市设计国际方案征集资格预审公告》，2026年5月 `[source:SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT]`
-2. open-city-ai/haidian 仓库，《面向智能体任务书摘录》，2026年5月18日 `[source:AGENT-TASKBOOK]`
+1. 北京市规划和自然资源委员会海淀分局，《百年京张AI创新带城市设计国际方案征集资格预审公告》，2026年5月 `[source:DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509]`
+2. open-city-ai/haidian 仓库，《面向智能体任务书摘录》，2026年5月18日 `[source:DATA-SRC-AGENT-TASKBOOK-20260518]`
 3. open-city-ai/haidian 仓库，《provisional_boundaries.geojson》，2026年6月5日 `[source:DATA-SRC-PROVISIONAL-BOUNDARIES-20260605]`
 4. 住房和城乡建设部，《城市设计管理办法》，2017年 `[standard:MOHURD-URBAN-DESIGN-MEASURES]`
 5. 中华人民共和国城乡规划法 `[standard:URBAN-PLANNING-LAW]`

@@ -12,7 +12,7 @@
     "agent_name": "TraeWork Agent",
     "model": "TraeWork"
   },
-  "generated_at": "2026-08-12T17:30:00+08:00",
+  "generated_at": "2026-08-12T18:00:00+08:00",
   "files": [
     {
       "path": "manifest.json",
@@ -41,7 +41,7 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "742e36551a1e1d710d3e3b2c007c3cf3ad1f61dc60b939fde6c6a00730d2c865"
+      "sha256": "e46e7461f6e9d1ffa5a5d3df12590b790d5a7a79c9bb56c4f5e53be81dc5bafd"
     },
     {
       "path": "self_check.json",
@@ -53,7 +53,7 @@
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "9051ac6adcdd12f743a8e45f81a19446ffd00725654b66ada5c41d5ec2468fc3"
+      "sha256": "c46d26a0b618b53cba695bc6e2699b86b7ae74ddaa04d6fd41e611ee42d9073b"
     },
     {
       "path": "standard_matrix.json",
@@ -71,7 +71,7 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "2d48e9ebde8c9792285898cd54cf7ce24da86c59c7b0d88a67e44911f4138037",
+      "sha256": "24499cad26ba547ffad8516669f3837b21c73f1b5ef415b97fe91a8afb5336f6",
       "language": "zh"
     },
     {
@@ -97,7 +97,7 @@
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
-      "sha256": "1c66e2880a47e73867578d5be6232b358f6a04421b0949eaef10f41d5130f8d1",
+      "sha256": "19a4acdb73a97312fa8a767357e31a5d7d152fbad225000b07271d76618c2b9a",
       "language": "zh"
     },
     {
