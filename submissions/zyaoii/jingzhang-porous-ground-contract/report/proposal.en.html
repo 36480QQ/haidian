@@ -111,8 +111,10 @@ code {
 @media (max-width: 720px) {
   html, body { max-width: 100%; overflow-x: hidden; }
   main { width: 100%; max-width: 100%; overflow-x: hidden; }
-  p, li, blockquote, a, code { overflow-wrap: anywhere; word-break: break-word; }
-  .proposal-table { display: block; width: 100%; max-width: 100%; overflow-x: auto; }
+  h1, h2, h3, p, li, blockquote, a { hyphens: none; overflow-wrap: normal; word-break: normal; }
+  code, a[href^="http"] { hyphens: none; overflow-wrap: anywhere; word-break: break-word; }
+  .proposal-table { display: block; position: relative; width: 100%; max-width: 100%; overflow-x: auto; }
+  .proposal-table::before { content: "↔ 左右滑动查看全部列 / SWIPE FOR ALL COLUMNS"; display: block; position: sticky; left: 0; width: max-content; margin: 0 0 .55rem; padding: .35rem .55rem; color: #7d3d35; background: #fff3cf; border-left: 4px solid #b64f45; font: 700 .72rem/1.35 Arial,"Microsoft YaHei",sans-serif; letter-spacing: .02em; }
 }
 </style>
 </head>
