@@ -19,11 +19,13 @@ iteration: "v2.0"
 
 Jingzhang Ledger Line translates the railway's culture of engineering proof into a civic procedure for AI entering real urban settings. Every technology passes six gates: **source registration, bounded trial, informed public use, human takeover, independent review, and restorative exit**. The gates are both an operating protocol and a spatial language along the railway heritage park. They do not create a rail or road redline and do not turn testing into procurement, certification, or an implementation promise. [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK]
 
-The structure is one line, three stations, two wings, ten stitches, twelve scenes, and three readiness gates. One civic slow-mobility verification spine links differentiated stations at Zhongzhi Park, AI Origin, and Dazhongsi; two wings connect professional services and everyday-life feedback; ten east-west stitches repair access; twelve AI scenes can be stopped; three gates advance only when evidence matures. Every layer is derived from the same provisional envelope and is recomputable, but none is an official boundary, survey, ownership judgment, or approved regulatory plan. [data:geometry/site_boundary.geojson#SITE-001] [depth:overall_spatial_structure]
+The structure is one line, three stations, two wings, ten stitches, fourteen spatial ledgers, twelve scenes, and three delivery gates. One civic slow-mobility verification spine links differentiated stations at Zhongzhi Park, AI Origin, and Dazhongsi; two wings connect professional services and everyday-life feedback; ten east-west stitches repair access; fourteen ledger cells make spatial claims recomputable; twelve AI scenes can be stopped; and three gates advance only when evidence matures. Every layer is derived from the same provisional envelope and is recomputable, but none is an official boundary, survey, ownership judgment, or approved regulatory plan. [data:geometry/site_boundary.geojson#SITE-001] [depth:overall_spatial_structure]
 
-![Overall structure, three scales and six verification gates](assets/figures/site-overview.en.png)
+![Overall structure, three scales and six verification gates](assets/figures/framework-overview.en.png)
 
 The rail civic spine, east-west stitches, adaptive building interfaces, blue-green walking loop and three station anchors in the aerial each point back to `roads.geojson`, `buildings.geojson`, `green_space.geojson` and `public_space.geojson`. The image explains intent rather than replacing plan evidence; concept layers, metrics and the station atlas remain authoritative for spatial review. [data:geometry/roads.geojson#ROAD-SPINE] [depth:overall_spatial_structure]
+
+![Overall aerial concept for the Jingzhang civic verification corridor](assets/figures/site-overview.png)
 
 ![Crosswalk between the overall aerial and five spatial moves](assets/figures/aerial-design-key.en.png)
 
