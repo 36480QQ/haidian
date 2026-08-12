@@ -71,7 +71,7 @@ python3 contrib/tools-metrics-scan.py --repo $D --out-dir contrib \
 
 - `snapshot`：仓库、SHA、日期、包数（目录/含 metrics/含 manifest 三个口径交叉核对）、条目总数、解析失败数。
 - `root_structure`：根容器形状与 schema_version 分布。
-- `field_coverage`：各必填字段缺失计数与占比。
+- `field_coverage`：各必填字段缺失计数与占比。**口径注**：`field_coverage.<field>.missing_count` 只统计「键不存在」（`REQUIRED_FIELDS` 中缺失的键，见 `scan()` 的 `missing_req`），与 `outlier_counts_only.unit_missing`（键不存在 + 显式 JSON null + 非字符串类型）是两种度量，两者不可直接互读。
 - `entry_validity`：有效条目占比 + 问题分类（不点名）。
 - `distributions`：status 全分布；unit / confidence 按「声明枚举 + 其他聚合」双段呈现（schema 枚举见 `brief/site-package/schemas/metrics.schema.json`）。
 - `packages`：每包指标数 min/median/max/mean。
