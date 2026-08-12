@@ -29,7 +29,9 @@
     "scripts/self_check_submission.py",
     "scripts/participant_preflight.py",
     "OpenAI built-in image generation (exact serving snapshot not asserted)",
-    "Pillow 12.2.0 WebP conversion and metadata inspection"
+    "Pillow 12.2.0 WebP conversion and metadata inspection",
+    "Python 3 package-authored SVG and structured-register generation",
+    "Google Chrome headless deterministic SVG rasterization"
   ],
   "tool_evidence_contract": {
     "stable_id_rule": "Every toolchain entry has one unique TOOL-* identifier referenced by the file-level asset ledger or output_provenance; a provenance reference does not constitute an independent rights review.",

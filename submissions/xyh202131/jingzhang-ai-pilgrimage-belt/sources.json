@@ -1274,6 +1274,50 @@
         "No field survey, confirmed viewpoint, approved component, operating result or restoration result"
       ],
       "license": "No complete reusable license terms are retained in the package; repository review only pending maintainer terms and independent rights audit"
+    },
+    {
+      "id": "SOURCE-JZ-REVERSIBLE-REGISTER-R13",
+      "rights_evidence_id": "SRC-RIGHTS-JZ-REVERSIBLE-REGISTER-R13",
+      "title": "三处可逆构件与恢复装配结构化登记",
+      "publisher": "xyh202131",
+      "path": "visual/assets/reversible-component-restoration-register.json",
+      "source_type": "in_package_concept_register",
+      "accessed_date": "2026-08-13",
+      "authority_level": "submission_author",
+      "collection_method": "Round 13 package-authored synthesis of existing key-area, readiness and professional-handoff contracts",
+      "allowable_uses": [
+        "Repository review",
+        "Internal package consistency checks"
+      ],
+      "restrictions": [
+        "Concept types only; not engineering, approval, installation or restoration evidence"
+      ],
+      "known_gaps": [
+        "All location, dimension, material, connection, specialist and real acceptance evidence remains unknown or 0"
+      ],
+      "license": "Repository review only pending complete terms and independent rights audit"
+    },
+    {
+      "id": "SOURCE-JZ-REVERSIBLE-FIGURE-R13",
+      "rights_evidence_id": "SRC-RIGHTS-JZ-REVERSIBLE-FIGURE-R13",
+      "title": "三处可逆构件与恢复装配双语关系图",
+      "publisher": "xyh202131",
+      "path": "assets/figures/reversible-components.svg",
+      "source_type": "package_authored_concept_figure",
+      "accessed_date": "2026-08-13",
+      "authority_level": "submission_author",
+      "collection_method": "Deterministic package-authored SVG generated from the structured Round 13 register and rasterized with local Chrome",
+      "allowable_uses": [
+        "Repository review",
+        "Internal package consistency checks"
+      ],
+      "restrictions": [
+        "Not to scale; not engineering, site, component or acceptance evidence"
+      ],
+      "known_gaps": [
+        "No professional or independent file-level rights audit"
+      ],
+      "license": "Repository review only pending complete terms and independent rights audit"
     }
   ]
 }

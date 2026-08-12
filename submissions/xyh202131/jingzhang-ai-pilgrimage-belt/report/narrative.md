@@ -632,3 +632,10 @@ git diff --check
 若 `origin` 指向只读公共仓库，对可写 fork 另行执行 `git push --dry-run fork HEAD:<branch>`。
 
 If `origin` is the read-only canonical repository, separately run `git push --dry-run fork HEAD:<branch>` against the writable fork.
+
+## 第 13 轮增量 / Round 13 increment
+
+- 新增三处可逆构件与恢复装配册、六阶段生命周期和 D01—D08 / H01—H07 回链；三处构图不可机械复制。
+- Added three non-copyable reversible assembly/restoration packs, a six-stage lifecycle, and D01–D08 / H01–H07 backlinks.
+- 类型、尺寸、材料、连接、专项核验、位置、安装方法和恢复时长均为 unknown；现实安装、批准、责任、检查、拆除与验收均为 0。
+- Type, dimension, material, connection, specialist clearance, location, installation method and restoration duration remain unknown; real installation, approval, duty, inspection, removal and acceptance counts remain 0.

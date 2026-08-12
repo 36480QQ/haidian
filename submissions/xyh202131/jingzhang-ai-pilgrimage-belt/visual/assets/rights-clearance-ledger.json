@@ -27,8 +27,8 @@
     "mixed_source_derivative_pending_independent_review": "The file combines package-authored material with repository or third-party source traces and remains pending independent review."
   },
   "file_coverage": {
-    "expected_manifest_entries": 111,
-    "expected_non_manifest_entries": 110,
+    "expected_manifest_entries": 116,
+    "expected_non_manifest_entries": 115,
     "coverage_rule": "Every manifest path appears in exactly one compatibility asset_group and exactly one asset_record. Path coverage and resolvable declared parent links do not equal an exhaustive dependency graph or legal clearance.",
     "asset_groups": [
       {
@@ -71,7 +71,8 @@
           "visual/assets/century-time-museum-contract.json",
           "visual/assets/mission-economy-contract.json",
           "visual/assets/civic-operations-contract.json",
-          "visual/assets/ordinary-life-media-register.json"
+          "visual/assets/ordinary-life-media-register.json",
+          "visual/assets/reversible-component-restoration-register.json"
         ],
         "limits": [
           "Repository source status is relied on but not independently re-licensed here.",
@@ -105,7 +106,11 @@
         "origin_basis": "Derived from the repository provisional boundary package; not an official survey, redline, or approved key-area geometry.",
         "paths": [
           "geometry/site_boundary.geojson",
-          "geometry/key_areas.geojson"
+          "geometry/key_areas.geojson",
+          "assets/figures/reversible-components.svg",
+          "assets/figures/reversible-components.png",
+          "assets/figures/reversible-components.en.svg",
+          "assets/figures/reversible-components.en.png"
         ],
         "limits": [
           "May support conceptual generation, display, and intake checks only.",
@@ -206,8 +211,8 @@
         ]
       }
     ],
-    "expected_manifest_file_count": 111,
-    "expected_non_manifest_content_file_count": 110
+    "expected_manifest_file_count": 116,
+    "expected_non_manifest_content_file_count": 115
   },
   "asset_records": [
     {
@@ -264,9 +269,9 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "df0a6713beab20fd75f2bbcb52f053b84cd5ff072476db7888cca52b91cbc24b",
+        "digest": "0e7c8dd57720d906272de83a74878660793a436eeabd7f43b4380194eb846661",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [
@@ -341,9 +346,9 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "4c1aa871b3ec073ab2f4895684461c25b3abce73776cacf3e8299c98b0db2659",
+        "digest": "9d282e2e150400afacde2dc0ee1e17749412d4bfc1d19f216a2c24aa012f8ebf",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [],
@@ -388,7 +393,7 @@
         "algorithm": "sha256",
         "digest": "bbafe42b45e97885682bb12fa62d30ec264353b6700388df040965a651f972cb",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [],
@@ -454,7 +459,7 @@
         "algorithm": "sha256",
         "digest": "9a569042284f5e1c924c724ff96fdb30d8d454baea17967203e546343316a53e",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [],
@@ -497,9 +502,9 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "fbd6d97513e9f605e9632ad9e39233410a17ff23af01b118bebfd4aa19964e08",
+        "digest": "47cf0903f1eb157e319fad7214e870a4613b179619d05706fc754fed4c11e651",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [
@@ -575,7 +580,7 @@
         "algorithm": "sha256",
         "digest": "4b6ff408e308002066a32a2b68f40b2247a6c6c25fcf34fb18b25feb4f5faf9c",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [],
@@ -620,9 +625,9 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "b63715b9587f1bc8183f79b629b4cc3c2c0f3e54ff5129f1ad68eae975816e30",
+        "digest": "a04e0d677d3ddbfebfd64266383ace0ca625fb5f75d839a53777d09ddbeb2df6",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [],
@@ -665,9 +670,9 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "8276c97d01c63773a6d2fb5fdf027fa860e3d0e4bf99cb6f02f7a46032b2eaa9",
+        "digest": "ea4386e0ed18842698421764ffbab6d2a5142da497e1627a4a404d6a702298b6",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [
@@ -731,7 +736,7 @@
         "algorithm": "sha256",
         "digest": "7f782b7846a9aaccdd23c799439ea0d4afab3f3af76efcdaf0eb489817d1292c",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [
@@ -790,7 +795,7 @@
         "algorithm": "sha256",
         "digest": "d5fcbed12ea024d4568c77145eab4a5bae8323a74229d769c643e50062c75435",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [
@@ -858,7 +863,7 @@
         "algorithm": "sha256",
         "digest": "d22289c28259d7c41032f6616dc19780f77fded934d14682ac22e0cfe40d892b",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [],
@@ -903,7 +908,7 @@
         "algorithm": "sha256",
         "digest": "34d5f2d30a787d1ca745b00d89d51f1449fad674323ba5065abe6943f9a4dd60",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [],
@@ -946,9 +951,9 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "92403864f721a2a85a3ea97973bd2d6bdfb4e9ff3ad2a9780fb4b6221a90b875",
+        "digest": "fbd2dcf066e43b9071e30fc9bdd66845477122a51a2e806e02bb52e7577c8bb2",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [
@@ -1024,7 +1029,7 @@
         "algorithm": "sha256",
         "digest": "276cf2ed1687d854f7d6b35fb85fe0581561fec9452e08d5b86cc24fc444a4bd",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [
@@ -1075,7 +1080,7 @@
         "algorithm": "sha256",
         "digest": "6ee035de7c0595c7e744e70186e9355585ab85cec66c4bd48684ecec10aabdfb",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [],
@@ -1120,7 +1125,7 @@
         "algorithm": "sha256",
         "digest": "599d3ae718553604084129462fee2da31b94037711b7071595389b36f8dd9947",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [],
@@ -1165,7 +1170,7 @@
         "algorithm": "sha256",
         "digest": "e8cad36ccc1cf2b53fc56231b66ba16174a7d946b7e577e62dbcdc4e153718a1",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [
@@ -1215,9 +1220,9 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "71c7f7ecf598a5effa11f60c8ada14a4eec71ee9d203091864159258c0b007f3",
+        "digest": "59ea1a0fb593b94285ad7a71b83a87a793da9acf2101e06134f772b487a438df",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [
@@ -1317,7 +1322,7 @@
         "algorithm": "sha256",
         "digest": "dd7812b4156aae837484efc7ebebb1be5d239ea092251a4e5dec6ddc17c7033b",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [
@@ -1363,9 +1368,9 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "a8f8c6254bb3dfa01757ece81dac2a53bdc3304bdae221c0771567c9ff0d52e1",
+        "digest": "5806c7c60887961f8cb8c8ce46a388b36469ab4820648c18b214547c825e4cb1",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [
@@ -1455,9 +1460,9 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "a06b77c7bf7ffe81333ba5fce71c817aa41912f9e989c7f694297514b6306ae9",
+        "digest": "bbd93b8fc9a243f8555a7eb090fce06a13ee97c6ef29aa574f79c1bf74775f70",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [
@@ -1547,9 +1552,9 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "8d96d3a7c9070c9da26256f0d6255557b540dcc82cc21712f3e041184ca3eda3",
+        "digest": "67d347d9cbf12af2bf52e9547c364a45eb2579f4ca7d5006f012506b1569c659",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [],
@@ -1595,9 +1600,9 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "7aa3e13e30fab2f76f1246141db89ce2c9bd9cdc96e953a65fcfa6a90b352ec9",
+        "digest": "7b1746e4a6fd0538a8d39f07b1b08ae0b327fbcf50792796891d9fa5db62dec5",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [],
@@ -1646,9 +1651,9 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "6ea3fe812ab02fac3390f1fd7d5699ff92d3f64c945cbb9eb72d95f1a622be86",
+        "digest": "3cf25dcfe45dee439ca0e61fa86d9e396e666e7d1f9a9e8c29db6258595f8a4d",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [],
@@ -1715,9 +1720,9 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "d15aa4a4ed2b4a4d9a9c1047b7e85eb0807eec4a7bfd62529a793149ad43f3cf",
+        "digest": "7341059234cbdd50fcd4e4824854b804c8bbbcd08f3f4293137290e566ce85ca",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [],
@@ -1780,9 +1785,9 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "3dd120d58324b7be3ed27fb56125e88cc58fdcd87f5cb9737601271e50ccfcc8",
+        "digest": "21a3979a6e09af6f01279eaae5c316f2a172b5c998b452e73c32b52c2189834c",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [],
@@ -1851,7 +1856,7 @@
         "algorithm": "sha256",
         "digest": "8dd2808d7bf0597192d1889d1063cfe46698592bb60120e08c0403860248f924",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [],
@@ -1906,7 +1911,7 @@
         "algorithm": "sha256",
         "digest": "bc5eeae7ce8ba7bfe970a23e5be5b394605b52b2fe29bfe4a1f4d31c21cb8c71",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [],
@@ -1964,7 +1969,7 @@
         "algorithm": "sha256",
         "digest": "02d7ffbcfa4658f5fcc2e4ef935714254fbad08cd249141a290f23facc4306db",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [],
@@ -2019,7 +2024,7 @@
         "algorithm": "sha256",
         "digest": "2042192b356990e25600f5c1704125c8f0bd302fc01f09ca2f0669fa433ec994",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [],
@@ -2077,7 +2082,7 @@
         "algorithm": "sha256",
         "digest": "2a52b5d837c356675db2a7a2c96694502ee3cdd49716b95528cbb3fc75516113",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [],
@@ -2130,7 +2135,7 @@
         "algorithm": "sha256",
         "digest": "ccb51b2df7bed8902c183520614be39b9c7469b0212c246aa8b12c4156989f40",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [],
@@ -2183,7 +2188,7 @@
         "algorithm": "sha256",
         "digest": "7340e66264c4721c0f214c0c5c1ed7bff16b9becfba8761d00096484d6288488",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [],
@@ -2240,7 +2245,7 @@
         "algorithm": "sha256",
         "digest": "34d00898ac7b61735cfeed9ffc5d9aa99687cac174d6f12d88a11eb8f51a87f9",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [],
@@ -2297,7 +2302,7 @@
         "algorithm": "sha256",
         "digest": "b70f1738d98fcb003f42b153019d84e35b374238417c0dc02e4132ad9b6f22ea",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [],
@@ -2342,7 +2347,7 @@
         "algorithm": "sha256",
         "digest": "d631f0698742199a3dd4d1dd492d4a87f1a617d526ace9ff2ed35e5e09190004",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [
@@ -2390,7 +2395,7 @@
         "algorithm": "sha256",
         "digest": "a47fcc55b4b7316933557232c896c7dec3e6db5d532d4e9c95d93b6c7f42df1d",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [],
@@ -2435,7 +2440,7 @@
         "algorithm": "sha256",
         "digest": "4259a94603465b1acace447860a5f00f3b5db2aa30fb6b5316b1aae5ef163d5c",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [
@@ -2483,7 +2488,7 @@
         "algorithm": "sha256",
         "digest": "050d721c06b3c7992d7b62c989e5ad6e10db7de16d8c7ba88e4274306a5b6057",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [],
@@ -2528,7 +2533,7 @@
         "algorithm": "sha256",
         "digest": "a08a0be4cfec3448efc354d9271abc04e1aca41d7b25786b6c768cff6f8a7776",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [],
@@ -2573,7 +2578,7 @@
         "algorithm": "sha256",
         "digest": "bef762e118e328bd24a9e8cc2db228403b494e9292aece81ed54dd09837ece43",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [],
@@ -2618,7 +2623,7 @@
         "algorithm": "sha256",
         "digest": "264fc1787ece25d3f10fdc5c56c2147dc2f5904f3cd4e7e21e76699bec18add3",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [],
@@ -2663,7 +2668,7 @@
         "algorithm": "sha256",
         "digest": "63f797eee66eceaf429724023319c3f76c61dad39f505fae4c16da5338daf28d",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [
@@ -2711,7 +2716,7 @@
         "algorithm": "sha256",
         "digest": "bef5a556d265652fff31652fdb620879cec9f0f037c8d75e545dfeae83f215dc",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [],
@@ -2764,7 +2769,7 @@
         "algorithm": "sha256",
         "digest": "d72d6267e7fc40366c4f718eee808836224c569feefc0e27d7208344ebd410a0",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [],
@@ -2817,9 +2822,9 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "ff9f3227a2baa9ffe4249518fcd10ab94362766e8cbda5121b1e1fab5a8e09a8",
+        "digest": "f17582d5a4a5ecd9f3c7b5f4ebdb905bbe337e677dcffe25184e6363d2834c40",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [
@@ -2894,9 +2899,9 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "d18be893e61730a5d0361a26a44d85a31a5463bbf5f0cb6082697aeb7636a2da",
+        "digest": "a9163baa9f4b5a3b40c94957070f7b32e66999ccf2ab3a3880c4f781f4631fb3",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [
@@ -2986,9 +2991,9 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "9386814061adbdb10b1b86fed549fe94c7c15044f29d2862f842837108553033",
+        "digest": "ffacad0528a7758b59e9060f01b7f90a93efd11574edfd4d75abd648eeb66d2e",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [],
@@ -3055,9 +3060,9 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "ee4f5a69d105af65ed9a79c731c920453d55a4021c8c3d7b51da3595fa1706af",
+        "digest": "3fd68167ca0e411854bbae41edf4f742c04558e9375d1678a684a32faf32db91",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [],
@@ -3124,9 +3129,9 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "ca1304e2df189ac9b29ddc9d2b9e2717ca93bf5159b9138fc223d99d049fb8e4",
+        "digest": "7045ea6a8247a17f22209ebd2c1098b44baada21c44ef896daaee2f67c44621d",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [],
@@ -3191,7 +3196,7 @@
         "algorithm": "sha256",
         "digest": "1c654032c0a12bff020024fd2f89a0da9ece64ffd7efb87274b2ccbc8d9bccb5",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [],
@@ -3246,7 +3251,7 @@
         "algorithm": "sha256",
         "digest": "44382fe1894cf5ee8129299c0b9031ef85d3f9b887ba05a940da6c4732defe14",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [],
@@ -3299,7 +3304,7 @@
         "algorithm": "sha256",
         "digest": "1dca0b3be6f8be121db7f0b9dece26e0696e765d94dfad50dd865b08a869df9f",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [],
@@ -3354,7 +3359,7 @@
         "algorithm": "sha256",
         "digest": "08dc9845678cf3458f99eb7e56d022d8d7bd2ea47fb8ea0518da19f43e4d0f63",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [],
@@ -3412,7 +3417,7 @@
         "algorithm": "sha256",
         "digest": "7bd1fb45a7deefa9105e5f806a98124deb79fb4035e4ea0eae51309613b124ba",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [],
@@ -3467,7 +3472,7 @@
         "algorithm": "sha256",
         "digest": "f10bdce1343901ae6a8b61f3663f199f919b362d55772be4a9a17882ea45f435",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [],
@@ -3525,7 +3530,7 @@
         "algorithm": "sha256",
         "digest": "e9bbc952e98c322b88c79036c0ee3cd1890a08edaad0534f0165a35bf6399e65",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [],
@@ -3578,7 +3583,7 @@
         "algorithm": "sha256",
         "digest": "0dcc22e1440454473d89dacffdb5690bcc3a6a0835c5d2bf80ed5e198430f657",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [],
@@ -3631,7 +3636,7 @@
         "algorithm": "sha256",
         "digest": "7017708628623a6380ec3dbbe05fca89ecb70bf2fce7bacee5f7408b2b6aa2a1",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [],
@@ -3688,7 +3693,7 @@
         "algorithm": "sha256",
         "digest": "039b81296427712806e0ffee130bb58def3ad775f98b2e99a6858677474f0a24",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [],
@@ -3745,7 +3750,7 @@
         "algorithm": "sha256",
         "digest": "d5b3dc95f9f9f7589fe445850da25e0a20c7fe50c064fd4f6d4896841cd5196c",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [
@@ -3799,7 +3804,7 @@
         "algorithm": "sha256",
         "digest": "1e8f9d03327c48939406124429c115761dde302c7234acb3683c7f5b3f00f459",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [],
@@ -3847,9 +3852,9 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "5697b0f134862283a278418c4084cce834fd2938b636ee3320e5eedd050f49c3",
+        "digest": "20ec2f2d3f7e3dced99980052bbc6c8c2fd28e2f0fbf5a580078c98aef5d8ec6",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [
@@ -3907,7 +3912,7 @@
         "algorithm": "sha256",
         "digest": "d4508718f534331edaf69200ee01b78b3539ed5c650cd7824c02e10916cfbc4b",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [],
@@ -3952,9 +3957,9 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "9e5c493289467c53486d49878410ceb9e8e6e84778f977450f2932d8c8ef5230",
+        "digest": "8853c79f2e2de8dea7a38f64d2ca10bc23616570d8ee9b19a422bce30d2a014d",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [],
@@ -4006,7 +4011,7 @@
         "algorithm": "sha256",
         "digest": "52e4ea93bab5dc07f6a27265638ac0c2e0bb634ecf2b0841a8af24b8e8dee792",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [
@@ -4057,7 +4062,7 @@
         "algorithm": "sha256",
         "digest": "9ce526753dae4acb0799cc1c516a2970ec10ce768ca542ff3851009edf3383eb",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [
@@ -4110,7 +4115,7 @@
         "algorithm": "sha256",
         "digest": "48c75b7b5fde794c94e437211a81d26baffa35b617611dc05fd414f2393307d6",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [
@@ -4163,7 +4168,7 @@
         "algorithm": "sha256",
         "digest": "bd8e3ee1534177c54418648d6025dcc6d71b1079a77fd8df8bc8f7c05a2d0938",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [
@@ -4216,7 +4221,7 @@
         "algorithm": "sha256",
         "digest": "8212dd6e8eb01624ac5c0f4885814befe1bf7f1788d4450a8ff6b0aa9d67aa61",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [
@@ -4269,7 +4274,7 @@
         "algorithm": "sha256",
         "digest": "90bd01284a951e72bbc4c90e1efe6f7d21472ab71c771d9d6f08fca17a87d738",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [
@@ -4320,7 +4325,7 @@
         "algorithm": "sha256",
         "digest": "6133d288355ddf733549547b283bc6adb2a67c3e0e8aa2f8eb07fc29f4e091c6",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [
@@ -4371,7 +4376,7 @@
         "algorithm": "sha256",
         "digest": "577c58019cd454fe068a259d5c070294975900fe24066f9d7a07de7d12d9e1fe",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [
@@ -4426,7 +4431,7 @@
         "algorithm": "sha256",
         "digest": "e552ca7e36a3353b2852a0e15b76586799bcfaa9074086fea3cfb3bd4095cfee",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [
@@ -4479,7 +4484,7 @@
         "algorithm": "sha256",
         "digest": "8800b01a794cd89149d32b507c1098d263f29baa8ebcab68aaa770d1e59aed91",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [
@@ -4532,7 +4537,7 @@
         "algorithm": "sha256",
         "digest": "908bc13a903e400653690697937051334ce9dffe6afc6341b45de4465df64c7d",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [
@@ -4583,7 +4588,7 @@
         "algorithm": "sha256",
         "digest": "c85ff5708e90f664c8cdd30c4bb2555d7a316672a684b838cf843f02d59ec424",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [
@@ -4634,7 +4639,7 @@
         "algorithm": "sha256",
         "digest": "a30e97e82bc7831efcffbd318ef8821c92cbb0d8faec7af0b28313b9be905d1f",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [
@@ -4689,7 +4694,7 @@
         "algorithm": "sha256",
         "digest": "ba1c4144ffa1845b07ff810c96d2de63d716b6ad79f15a1c8a39dd63d4064bb3",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [
@@ -4742,7 +4747,7 @@
         "algorithm": "sha256",
         "digest": "8b726625a1e34058717c0680eb2594fa5c9447c4db97b67396a79d07a9cd919f",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [
@@ -4795,7 +4800,7 @@
         "algorithm": "sha256",
         "digest": "485bde379d1dbd8ff1badf5249f29818dad7a458fec38811601359173450e28c",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [
@@ -4846,7 +4851,7 @@
         "algorithm": "sha256",
         "digest": "61627e037d457bb51c760f93c0342af1a085a670e94727ff04d33eff201ba4a4",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [
@@ -4897,7 +4902,7 @@
         "algorithm": "sha256",
         "digest": "96b991fec855f645a27a324e2bf608148f1b3152b17c147dfabf0af37a93647e",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [
@@ -4954,7 +4959,7 @@
         "algorithm": "sha256",
         "digest": "3593c54f71173ec44a30af15ab57cabc08f1b3479fdea61fc8a22f03b10311a4",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [
@@ -5007,7 +5012,7 @@
         "algorithm": "sha256",
         "digest": "d7e0367511f1896739ad81991dcc335ac7678a4fb04e9f2f4e3fd6f33cfe9aad",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [
@@ -5060,7 +5065,7 @@
         "algorithm": "sha256",
         "digest": "8b61dfa5c44cef7929c111109a615d6886115bbbd9eaa01ef677774a26a40505",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [
@@ -5111,7 +5116,7 @@
         "algorithm": "sha256",
         "digest": "dbf40aa6cfae31a78d55bbc160dcf9dd4c4d6e58ed363bb8ca5386740b63208b",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [
@@ -5162,7 +5167,7 @@
         "algorithm": "sha256",
         "digest": "4328e6bddab7f4b9beaa18a3ca6876e64c578db7781ae6cba046973dcb7c3e39",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [
@@ -5214,7 +5219,7 @@
         "algorithm": "sha256",
         "digest": "17a1ca12c5d386073c2ea9229561e78622ddb2c8876ab7e3249902e83f32da60",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [
@@ -5265,7 +5270,7 @@
         "algorithm": "sha256",
         "digest": "1e00ee8dd552fc29a503c33c333c0afbfc40548deca5a3e3e967cb2c39a8443e",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [
@@ -5315,7 +5320,7 @@
         "algorithm": "sha256",
         "digest": "75c4d7a7ea96043877f34303668099ed2a97222ee3d9f18a5426304bcdfac060",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [
@@ -5366,7 +5371,7 @@
         "algorithm": "sha256",
         "digest": "fbee9ce671421b52f57f61ac12a698be22a491cccc790c5e20aebb5596b427c4",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [
@@ -5416,7 +5421,7 @@
         "algorithm": "sha256",
         "digest": "79a8ccce3d39e8ecded77e624ceab1f8fb5410a0a99c47930c55e181de9f02b6",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [
@@ -5468,7 +5473,7 @@
         "algorithm": "sha256",
         "digest": "b386d3ab267c7b6f814aec4703281f5ef669ccce2c63dcfcba789569f087e54f",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [
@@ -5519,7 +5524,7 @@
         "algorithm": "sha256",
         "digest": "f8c1ed96d2457e0adc266603b2245ef61413822dc1ecf5d0063cda68765b9925",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [
@@ -5569,7 +5574,7 @@
         "algorithm": "sha256",
         "digest": "ac43a62a1eaa6bedc34d110bea3b9d644e4475f41075fb0c73ea59761eb5a1ac",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [
@@ -5620,7 +5625,7 @@
         "algorithm": "sha256",
         "digest": "4c1ff2b9f8d31e59b694c2287c857fa1487d58facb66d74124c4eb9b8fe5c022",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [
@@ -5670,7 +5675,7 @@
         "algorithm": "sha256",
         "digest": "b62ea0108b68bf15877383c5ea8d05d210d090a3e3e0bb69f45060ab89d7101a",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [
@@ -5724,7 +5729,7 @@
         "algorithm": "sha256",
         "digest": "f905a7363f6da93ece07f317eec492deeb7bd7e529a16ec5b397563cdcf63912",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [
@@ -5775,7 +5780,7 @@
         "algorithm": "sha256",
         "digest": "e32552f88828c8105c1409c7004dd972e25f9f9e2d8093e996aaedc17ae92a65",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [
@@ -5825,7 +5830,7 @@
         "algorithm": "sha256",
         "digest": "a7d24000224a423fab1e552ad27177c6ef08b2da0a600694bed222e01cf6375b",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [
@@ -5876,7 +5881,7 @@
         "algorithm": "sha256",
         "digest": "3a40b115197ff740e5a455ff4972449955bf43ffa7557f1d664191c2ec9fa6d0",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [
@@ -5926,7 +5931,7 @@
         "algorithm": "sha256",
         "digest": "21b218ede029483b1a06ee3b9b0f1293aec623a0e92d55e357b71094d6c70522",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [
@@ -5977,7 +5982,7 @@
         "algorithm": "sha256",
         "digest": "44d9b5a265f4e67654dc191e9c266bcaba31b653c640113833284b77efbafeac",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [
@@ -6027,7 +6032,7 @@
         "algorithm": "sha256",
         "digest": "7e4b84c69503130b6076cdf3f8c34101de02674977a0b3ef5fd7ef30ce74ed3f",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [
@@ -6078,7 +6083,7 @@
         "algorithm": "sha256",
         "digest": "8bfc30193251e57e4d98e667cb547ab2e3c4b8a87441acc87462f11c8623ca2f",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [
@@ -6128,7 +6133,7 @@
         "algorithm": "sha256",
         "digest": "2b5391ba9c54c962325061c47c9a5d9832ada81aa4d9b148c808cfe6af95d672",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [
@@ -6180,7 +6185,7 @@
         "algorithm": "sha256",
         "digest": "dca1e2af1584a15be9f5f483f5e8218f63a3235dcd198f8f8216f999fe8d263c",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [
@@ -6231,7 +6236,7 @@
         "algorithm": "sha256",
         "digest": "3c1c92086741b198b400525a3824801f6fd015aeb799f6f40b36a713070366dc",
         "digest_status": "matches_final_manifest",
-        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
       },
       "source_lineage": {
         "source_ids": [
@@ -6251,6 +6256,257 @@
         "status": "human_readable_editable_source",
         "evidence_ref": "../../assets/media/ordinary-life-scenes.md",
         "limitation": "Bilingual accessibility and provenance note only; no independent image-rights, model-output-terms or professional audit is recorded."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-04"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-112",
+      "path": "visual/assets/reversible-component-restoration-register.json",
+      "role": "public_interest_evidence",
+      "language": null,
+      "asset_class": "structured_concept_register",
+      "origin_status": "package_authored_pending_independent_review",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "959921be956a71008b7b65a9cf2aed79da6e0b5e96c4d36c27d2290c7deadef0",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
+      },
+      "source_lineage": {
+        "source_ids": [
+          "SOURCE-JZ-REVERSIBLE-REGISTER-R13"
+        ],
+        "parent_asset_refs": [
+          "visual/assets/key-area-evidence-matrix.json",
+          "visual/assets/implementation-handoff-matrix.json"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX",
+        "TOOL-PYTHON"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "deterministic_package_authored_source",
+        "evidence_ref": "../../visual/assets/reversible-component-restoration-register.json",
+        "limitation": "Concept relation only; no engineering, site, approval, installation, acceptance or rights-clearance result."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-04"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-113",
+      "path": "assets/figures/reversible-components.svg",
+      "role": "diagram",
+      "language": "zh-CN",
+      "asset_class": "editable_vector_concept_diagram",
+      "origin_status": "package_authored_pending_independent_review",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "d8c7eb54d9c5e99fd4c3fd2b6fab08c88e955b8caea59cf487cc21c861c13863",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
+      },
+      "source_lineage": {
+        "source_ids": [
+          "SOURCE-JZ-REVERSIBLE-FIGURE-R13"
+        ],
+        "parent_asset_refs": [
+          "visual/assets/reversible-component-restoration-register.json"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX",
+        "TOOL-PYTHON"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "deterministic_package_authored_source",
+        "evidence_ref": "../../visual/assets/reversible-component-restoration-register.json",
+        "limitation": "Concept relation only; no engineering, site, approval, installation, acceptance or rights-clearance result."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-04"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-114",
+      "path": "assets/figures/reversible-components.png",
+      "role": "render",
+      "language": "zh-CN",
+      "asset_class": "deterministic_raster_derivative",
+      "origin_status": "package_authored_pending_independent_review",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "6c8f9a72a97749422bee9333bdb5565756b96faab922ba93198872407ace885d",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
+      },
+      "source_lineage": {
+        "source_ids": [
+          "SOURCE-JZ-REVERSIBLE-FIGURE-R13"
+        ],
+        "parent_asset_refs": [
+          "visual/assets/reversible-component-restoration-register.json"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-PYTHON",
+        "TOOL-CHROMIUM"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "deterministic_package_authored_source",
+        "evidence_ref": "../../visual/assets/reversible-component-restoration-register.json",
+        "limitation": "Concept relation only; no engineering, site, approval, installation, acceptance or rights-clearance result."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-04"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-115",
+      "path": "assets/figures/reversible-components.en.svg",
+      "role": "diagram",
+      "language": "en",
+      "asset_class": "editable_vector_concept_diagram",
+      "origin_status": "package_authored_pending_independent_review",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "a03c1ee66ba8e7e311f9e24fb173e4feace8ea3f69fd895520433fd100529f95",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
+      },
+      "source_lineage": {
+        "source_ids": [
+          "SOURCE-JZ-REVERSIBLE-FIGURE-R13"
+        ],
+        "parent_asset_refs": [
+          "visual/assets/reversible-component-restoration-register.json"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX",
+        "TOOL-PYTHON"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "deterministic_package_authored_source",
+        "evidence_ref": "../../visual/assets/reversible-component-restoration-register.json",
+        "limitation": "Concept relation only; no engineering, site, approval, installation, acceptance or rights-clearance result."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-04"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-116",
+      "path": "assets/figures/reversible-components.en.png",
+      "role": "render",
+      "language": "en",
+      "asset_class": "deterministic_raster_derivative",
+      "origin_status": "package_authored_pending_independent_review",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "cb67f0b7eb0567ea1e1eb1af89d5e297452d3bac1d7481db8299a6f03c240bc6",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 is computed from final file bytes and must equal manifest.json."
+      },
+      "source_lineage": {
+        "source_ids": [
+          "SOURCE-JZ-REVERSIBLE-FIGURE-R13"
+        ],
+        "parent_asset_refs": [
+          "visual/assets/reversible-component-restoration-register.json"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-PYTHON",
+        "TOOL-CHROMIUM"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "deterministic_package_authored_source",
+        "evidence_ref": "../../visual/assets/reversible-component-restoration-register.json",
+        "limitation": "Concept relation only; no engineering, site, approval, installation, acceptance or rights-clearance result."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
