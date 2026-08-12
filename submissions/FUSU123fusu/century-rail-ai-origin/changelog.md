@@ -1,5 +1,9 @@
 # 方案迭代记录
 
+## v1.0.1 - 2026-08-12
+
+- 无内容变更：CI `submission-validation` 因 runner 侧 SSL 证书错误（`github_pr_validation.py` 下载 PR 文件时 `CERTIFICATE_VERIFY_FAILED: self-signed certificate`）失败，与参赛包内容无关，已开 Issue #2088 报告；本次提交用于重新触发校验。
+
 ## v1.0 - 2026-08-12
 
 - 首次正式提交：完成「原点·智轨 ORIGIN LINE」概念方案全流程产物。
