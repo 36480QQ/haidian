@@ -92,7 +92,7 @@ For agent.6, six packages DR-01..DR-06 cover slow-mobility stitching, verificati
 
 ## Metrics, Area Recalculation, and Compliance Matrix
 
-Recomputable metrics and unknown controls are listed in `metrics.json` [metric:site_area_sqm]. Compliance covers notice 1.3–1.5 and agent.1–agent.6 [source:OFFICIAL-ANNOUNCEMENT]. Six standards and fifteen depth items are complete [standard:MOHURD-URBAN-DESIGN-MEASURES].
+Recomputable metrics and unknown controls are listed in `metrics.json` [metric:site_area_sqm]. Compliance covers notice 1.3–1.5 and agent.1–agent.6 [source:OFFICIAL-ANNOUNCEMENT]. Six standards and fifteen depth items are complete [standard:MOHURD-URBAN-DESIGN-MEASURES]. Key-area detailing follows architectural design-depth expectations [standard:MOHURD-ARCH-DESIGN-DEPTH-2016].
 
 ## Risk, Copyright, and Compliance
 
