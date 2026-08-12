@@ -124,6 +124,24 @@ The pilot records only service access, completed staffed handovers, accessible-r
 
 Pilot “success” is not a pre-set investment, efficiency or footfall number. It is evidence for five auditable questions: can service be used without a scan; is human escalation available; is handover timely; does the accessible route remain usable; and are problems handled traceably? Official geometry and specialist conditions remain required before any expansion, with final judgment by professional teams and participants.
 
+### G1 site-verification checklist (local working edition)
+
+Before any installation or opening within the 90-day pilot, seven domains must be checked on site: scope and authorisation; fire and personal safety; a continuous accessible route; power and equipment isolation; duty and paid participation; notices/data/appeal; and removal/incident readiness. Each domain needs verifiable evidence, an accountable role and a pass/hold decision. Any missing or failed item means no installation and no opening. G1 only asks whether a reversible pilot may begin; it never substitutes for approvals or specialist conclusions on design, fire, title, labor or accessibility [standard:BARRIER-FREE-ENVIRONMENT-LAW] [metric:g1_verification_domain_count].
+
+![Zhongzhiyuan G1 site-verification checklist](assets/figures/zhongzhiyuan-g1-checklist.en.png)
+
+### Paid co-design workshop kit (local working edition)
+
+Co-design is not unpaid interviewing. Maintenance technicians, cleaning/property workers, AI R&D, access/care users and asset/operations form five baseline role types. A five-step session—boundary and payment, a shared walk, issue cards, kit arrangement, and prioritisation/handover—produces requested service windows, an access-and-staffed-help map, a five-component kit, stop conditions, a G1 evidence-owner sheet and a public note. Payment, work-time status, personal-data handling and recording rules must be agreed in writing before the session; without agreement there is no recruitment or recording [source:AGENT-TASKBOOK] [metric:codesign_participant_role_count].
+
+![Zhongzhiyuan paid co-design workshop kit](assets/figures/zhongzhiyuan-codesign-workshop.en.png)
+
+### Shift-log template (local working edition)
+
+The shift form records only activation conditions, service access, staffed handover, route repair, issue/appeal handling, closing/removal and next review, aggregated by role and de-identified event. It never records names, personal performance, emotion, precise location or production work orders. Each shift checks staffed access, no-scan service, continuous accessibility, equipment isolation and removability; any shutdown line is marked as pause/remove and receives independent review [standard:GENERATIVE-AI-INTERIM-MEASURES] [metric:shift_log_record_category_count].
+
+![Zhongzhiyuan shift-log template](assets/figures/zhongzhiyuan-shift-log.en.png)
+
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
 | Persona | Core needs |
