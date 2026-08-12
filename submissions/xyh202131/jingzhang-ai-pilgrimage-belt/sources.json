@@ -1318,6 +1318,28 @@
         "No professional or independent file-level rights audit"
       ],
       "license": "Repository review only pending complete terms and independent rights audit"
+    },
+    {
+      "id": "SOURCE-JZ-REVIEW-WALK-R14",
+      "rights_evidence_id": "SRC-RIGHTS-JZ-REVIEW-WALK-R14",
+      "title": "第14轮双语可访问离线评审漫游与路由合同",
+      "publisher": "xyh202131",
+      "path": "visual/assets/review-walkthrough.json",
+      "source_type": "package_authored_review_route",
+      "accessed_date": "2026-08-13",
+      "authority_level": "submission_author",
+      "collection_method": "Package-authored synthesis of existing Round 1–13 evidence and boundaries into semantic HTML, CSS, dependency-free JavaScript and JSON",
+      "allowable_uses": [
+        "Repository review",
+        "Internal package consistency checks"
+      ],
+      "restrictions": [
+        "Presentation only; not evidence, accessibility certification, approval, operation or reuse licence"
+      ],
+      "known_gaps": [
+        "No independent accessibility audit or file-level rights clearance"
+      ],
+      "license": "Repository review only pending complete terms and independent rights audit"
     }
   ]
 }

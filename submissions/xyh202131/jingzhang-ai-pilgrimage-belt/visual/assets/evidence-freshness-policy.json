@@ -196,5 +196,13 @@
     "content_digests_recorded": 4,
     "digest_scope_note": "The four digests identify local Firecrawl capture bytes for the new desktop sources; they are not publisher signatures and do not constitute completed freshness audits.",
     "operating_or_approval_claim_supported": false
+  },
+  "round_14_review_route": {
+    "artifact": "review-walkthrough.json",
+    "freshness": "regenerate_on_any_referenced_contract_or_asset_change",
+    "live_data": false,
+    "remote_requests": 0,
+    "maturity_effect": "none",
+    "accessibility_certification": "not_claimed"
   }
 }
