@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "package_id": "jingzhang-commons-spine",
   "project_id": "centennial-jingzhang-ai-belt",
   "site_package_version": "0.1.0",
@@ -53,7 +53,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "80b71cb78d2c1581fc679eb561959ac515bc8a3ff6f76c74dcc2c4e20d49b72f"
+      "sha256": "8eb3c5352fc5bee0406826616675b92cece459916cc5098814c4048c2681b102"
     },
     {
       "path": "compliance_matrix.json",
@@ -219,8 +219,9 @@
     }
   ],
   "validation_claim": {
-    "self_checked": false,
+    "self_checked": true,
     "known_blockers": [],
-    "data_confidence": "high"
+    "data_confidence": "high",
+    "readiness_contract": "persisted-self-check-v1"
   }
 }
