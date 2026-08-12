@@ -192,6 +192,28 @@
       "usage": "Reference for master-plan notation and the relationship between plan, section and site-level evidence.",
       "license_note": "The official standards-system listing is cited; no standard text or figures are reproduced.",
       "limitation": "Used as a drawing-expression reference only; current provisional geometry is not a statutory survey base."
+    },
+    {
+      "id": "RIGHTS-OPENAI-OUTPUT",
+      "title": "OpenAI Services Agreement — Customer Content",
+      "publisher": "OpenAI",
+      "url": "https://openai.com/policies/services-agreement/",
+      "accessed_date": "2026-08-12",
+      "source_type": "official_service_terms",
+      "usage": "Rights-basis record for the five AI-generated concept-view groups.",
+      "license_note": "As between customer and provider and to the extent permitted by law, the agreement assigns provider rights in output to the customer.",
+      "limitation": "Outputs may not be unique; the contributor remains responsible for inputs, third-party rights, accuracy and appropriate use."
+    },
+    {
+      "id": "RIGHTS-MICROSOFT-FONT-EMBEDDING",
+      "title": "Font redistribution FAQ for Windows — document embedding",
+      "publisher": "Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/typography/fonts/font-faq",
+      "accessed_date": "2026-08-12",
+      "source_type": "official_license_guidance",
+      "usage": "Rights-basis record for document embedding of Windows-supplied fonts in finished PDFs.",
+      "license_note": "Microsoft identifies document font embedding as a permitted special case when applications follow font embedding flags and restrictions.",
+      "limitation": "No standalone font files are redistributed; recipients must not extract or separately redistribute embedded font data."
     }
   ]
 }
