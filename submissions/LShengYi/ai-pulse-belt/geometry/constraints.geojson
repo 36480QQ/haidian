@@ -1,0 +1,86 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "id": "CONSTRAINTS",
+   "properties": {
+    "name_zh": "京张智脉绿廊保护控制带（概念）",
+    "constraint_type": "concept_greenway",
+    "id": "CONSTRAINTS",
+    "layer": "REGULATORY_CONTROL",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "analysis_helper"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       150.2587541740437,
+       3.356636121577413
+      ],
+      [
+       157.47183423797733,
+       32.53974668040944
+      ],
+      [
+       116.34431535590703,
+       40.02650513420261
+      ],
+      [
+       116.49598896846182,
+       4.017801089156809
+      ],
+      [
+       150.2587541740437,
+       3.356636121577413
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "HERITAGE-01",
+   "properties": {
+    "name_zh": "清华园火车站遗址节点（概念）",
+    "constraint_type": "heritage_node_concept",
+    "id": "HERITAGE-01",
+    "layer": "HERITAGE_PROTECTION",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "analysis_helper"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     116.34491800532707,
+     39.98798051398808
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "HERITAGE-02",
+   "properties": {
+    "name_zh": "众智园全栈创新展示节点（概念）",
+    "constraint_type": "heritage_node_concept",
+    "id": "HERITAGE-02",
+    "layer": "HERITAGE_PROTECTION",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "analysis_helper"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     116.34763926627173,
+     40.00961049798231
+    ]
+   }
+  }
+ ],
+ "name": "AI Pulse Belt constraints"
+}

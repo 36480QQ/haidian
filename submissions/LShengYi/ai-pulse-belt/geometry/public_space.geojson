@@ -1,0 +1,246 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "id": "PUBLIC-001",
+   "properties": {
+    "name_zh": "大钟寺站前广场",
+    "public_type": "plaza",
+    "id": "PUBLIC-001",
+    "layer": "PUBLIC_SPACE",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.34800956617191,
+       39.94602930014159
+      ],
+      [
+       116.3479993069711,
+       39.94710998388065
+      ],
+      [
+       116.34659522781935,
+       39.94710207892437
+      ],
+      [
+       116.34660550910948,
+       39.946021395486234
+      ],
+      [
+       116.34800956617191,
+       39.94602930014159
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "PUBLIC-002",
+   "properties": {
+    "name_zh": "原点发布广场",
+    "public_type": "plaza",
+    "id": "PUBLIC-002",
+    "layer": "PUBLIC_SPACE",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.34985228597911,
+       39.98620707375082
+      ],
+      [
+       116.34984374871327,
+       39.98710763761676
+      ],
+      [
+       116.34867300019734,
+       39.987101064517766
+      ],
+      [
+       116.34868155283375,
+       39.986200500860285
+      ],
+      [
+       116.34985228597911,
+       39.98620707375082
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "PUBLIC-003",
+   "properties": {
+    "name_zh": "众智园门户广场",
+    "public_type": "plaza",
+    "id": "PUBLIC-003",
+    "layer": "PUBLIC_SPACE",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.34995080720977,
+       40.01903483537293
+      ],
+      [
+       116.34994140670524,
+       40.02002545000887
+      ],
+      [
+       116.34865296471457,
+       40.0200182151211
+      ],
+      [
+       116.34866238384808,
+       40.01902760073749
+      ],
+      [
+       116.34995080720977,
+       40.01903483537293
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "PUBLIC-004",
+   "properties": {
+    "name_zh": "五道口生活广场",
+    "public_type": "plaza",
+    "id": "PUBLIC-004",
+    "layer": "PUBLIC_SPACE",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.34884225453118,
+       39.97543908297622
+      ],
+      [
+       116.34883456200522,
+       39.976249591809584
+      ],
+      [
+       116.34778105530481,
+       39.976243668706985
+      ],
+      [
+       116.34778876027421,
+       39.975433160042705
+      ],
+      [
+       116.34884225453118,
+       39.97543908297622
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "PUBLIC-005",
+   "properties": {
+    "name_zh": "清华东路西口广场",
+    "public_type": "plaza",
+    "id": "PUBLIC-005",
+    "layer": "PUBLIC_SPACE",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.34469248869787,
+       39.99932693165993
+      ],
+      [
+       116.3446856015178,
+       40.000047380387365
+      ],
+      [
+       116.34374882687264,
+       40.0000420797586
+      ],
+      [
+       116.34375572389627,
+       39.99932163116564
+      ],
+      [
+       116.34469248869787,
+       39.99932693165993
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "PUBLIC-006",
+   "properties": {
+    "name_zh": "南部社区广场",
+    "public_type": "plaza",
+    "id": "PUBLIC-006",
+    "layer": "PUBLIC_SPACE",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.34905318295047,
+       39.940856608882214
+      ],
+      [
+       116.34904720915665,
+       39.94148700844984
+      ],
+      [
+       116.34822822979261,
+       39.94148240722961
+      ],
+      [
+       116.3482342111009,
+       39.94085200776416
+      ],
+      [
+       116.34905318295047,
+       39.940856608882214
+      ]
+     ]
+    ]
+   }
+  }
+ ],
+ "name": "AI Pulse Belt public space (concept)"
+}

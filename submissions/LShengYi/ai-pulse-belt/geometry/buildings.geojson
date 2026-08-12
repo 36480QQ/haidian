@@ -1,0 +1,4005 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "id": "BLDG-001",
+   "properties": {
+    "name_zh": "建筑001",
+    "building_type": "ai_r_and_d",
+    "block_ref": "LU-015",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-001",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.35293023998054,
+       40.0189917856489
+      ],
+      [
+       116.3528916269792,
+       40.02307920657477
+      ],
+      [
+       116.35181292394702,
+       40.02307317774825
+      ],
+      [
+       116.35185160130364,
+       40.01898575768998
+      ],
+      [
+       116.35293023998054,
+       40.0189917856489
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-002",
+   "properties": {
+    "name_zh": "建筑002",
+    "building_type": "ai_r_and_d",
+    "block_ref": "LU-015",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-002",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.35285857477271,
+       40.019089103754716
+      ],
+      [
+       116.3528270931603,
+       40.02242130631168
+      ],
+      [
+       116.35187907786681,
+       40.02241600792109
+      ],
+      [
+       116.35191060558739,
+       40.01908380598573
+      ],
+      [
+       116.35285857477271,
+       40.019089103754716
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-003",
+   "properties": {
+    "name_zh": "建筑003",
+    "building_type": "ai_r_and_d",
+    "block_ref": "LU-015",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-003",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.35271951171771,
+       40.01821136679128
+      ],
+      [
+       116.35268577294887,
+       40.02178180312336
+      ],
+      [
+       116.35179460339461,
+       40.021776821590436
+      ],
+      [
+       116.35182838860433,
+       40.018206385884575
+      ],
+      [
+       116.35271951171771,
+       40.01821136679128
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-004",
+   "properties": {
+    "name_zh": "建筑004",
+    "building_type": "ai_r_and_d",
+    "block_ref": "LU-017",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-004",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.35016959974958,
+       40.017907823717074
+      ],
+      [
+       116.35012659793598,
+       40.022440611482445
+      ],
+      [
+       116.34960064915018,
+       40.02243766069147
+      ],
+      [
+       116.34964368575957,
+       40.01790487339701
+      ],
+      [
+       116.35016959974958,
+       40.017907823717074
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-005",
+   "properties": {
+    "name_zh": "建筑005",
+    "building_type": "ai_r_and_d",
+    "block_ref": "LU-017",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-005",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.35003552822296,
+       40.018530994655144
+      ],
+      [
+       116.3499937464081,
+       40.02293419149104
+      ],
+      [
+       116.34949516223206,
+       40.0229313937058
+      ],
+      [
+       116.34953697608995,
+       40.01852819730363
+      ],
+      [
+       116.35003552822296,
+       40.018530994655144
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-006",
+   "properties": {
+    "name_zh": "建筑006",
+    "building_type": "ai_r_and_d",
+    "block_ref": "LU-019",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-006",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.34824367892573,
+       40.01820929258985
+      ],
+      [
+       116.348204433771,
+       40.02233386669096
+      ],
+      [
+       116.34790243130197,
+       40.02233216761479
+      ],
+      [
+       116.34794169463741,
+       40.01820759376042
+      ],
+      [
+       116.34824367892573,
+       40.01820929258985
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-007",
+   "properties": {
+    "name_zh": "建筑007",
+    "building_type": "ai_r_and_d",
+    "block_ref": "LU-019",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-007",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.34813571914549,
+       40.01908350254743
+      ],
+      [
+       116.34810593687345,
+       40.02221301216445
+      ],
+      [
+       116.3478331294918,
+       40.02221147714442
+      ],
+      [
+       116.3478629242251,
+       40.019081967696536
+      ],
+      [
+       116.34813571914549,
+       40.01908350254743
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-008",
+   "properties": {
+    "name_zh": "建筑008",
+    "building_type": "cultural",
+    "block_ref": "LU-023",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-008",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.35298230647324,
+       40.01117870284695
+      ],
+      [
+       116.35294539010766,
+       40.01508794242076
+      ],
+      [
+       116.35177694433366,
+       40.01508141242938
+      ],
+      [
+       116.35181392735116,
+       40.01117217375436
+      ],
+      [
+       116.35298230647324,
+       40.01117870284695
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-009",
+   "properties": {
+    "name_zh": "建筑009",
+    "building_type": "cultural",
+    "block_ref": "LU-023",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-009",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.35289513632607,
+       40.01106040288781
+      ],
+      [
+       116.35287237612194,
+       40.0134703590628
+      ],
+      [
+       116.3519441033886,
+       40.01346517173323
+      ],
+      [
+       116.35196689623558,
+       40.0110552159984
+      ],
+      [
+       116.35289513632607,
+       40.01106040288781
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-010",
+   "properties": {
+    "name_zh": "建筑010",
+    "building_type": "cultural",
+    "block_ref": "LU-023",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-010",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.352990183204,
+       40.010780935468624
+      ],
+      [
+       116.35295561394454,
+       40.01444174859979
+      ],
+      [
+       116.35216349890992,
+       40.014437323148684
+      ],
+      [
+       116.35219811048202,
+       40.01077651058793
+      ],
+      [
+       116.352990183204,
+       40.010780935468624
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-011",
+   "properties": {
+    "name_zh": "建筑011",
+    "building_type": "ai_r_and_d",
+    "block_ref": "LU-025",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-011",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.35004995672124,
+       40.01084930040119
+      ],
+      [
+       116.35001926866454,
+       40.01408442622411
+      ],
+      [
+       116.34956244540767,
+       40.01408186309801
+      ],
+      [
+       116.349593155029,
+       40.01084673756706
+      ],
+      [
+       116.35004995672124,
+       40.01084930040119
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-012",
+   "properties": {
+    "name_zh": "建筑012",
+    "building_type": "ai_r_and_d",
+    "block_ref": "LU-025",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-012",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.35010121623162,
+       40.011264209618076
+      ],
+      [
+       116.35007316137981,
+       40.01422195399087
+      ],
+      [
+       116.34963825720259,
+       40.01421951408888
+      ],
+      [
+       116.34966633082429,
+       40.01126176997018
+      ],
+      [
+       116.35010121623162,
+       40.011264209618076
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-013",
+   "properties": {
+    "name_zh": "建筑013",
+    "building_type": "ai_r_and_d",
+    "block_ref": "LU-027",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-013",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.34822660328753,
+       40.01112645172269
+      ],
+      [
+       116.34819850482333,
+       40.01408028784352
+      ],
+      [
+       116.3480588492009,
+       40.014079502265936
+      ],
+      [
+       116.34808695368446,
+       40.01112566622681
+      ],
+      [
+       116.34822660328753,
+       40.01112645172269
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-014",
+   "properties": {
+    "name_zh": "建筑014",
+    "building_type": "ai_r_and_d",
+    "block_ref": "LU-027",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-014",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.34822483562333,
+       40.01069307387218
+      ],
+      [
+       116.34819426866675,
+       40.01390642883028
+      ],
+      [
+       116.34806112321968,
+       40.01390567987277
+      ],
+      [
+       116.34809169641916,
+       40.01069232499941
+      ],
+      [
+       116.34822483562333,
+       40.01069307387218
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-015",
+   "properties": {
+    "name_zh": "建筑015",
+    "building_type": "office",
+    "block_ref": "LU-029",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-015",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.35347710703347,
+       40.00103289101739
+      ],
+      [
+       116.35343308447311,
+       40.00569980029278
+      ],
+      [
+       116.35216223700758,
+       40.005692703206705
+      ],
+      [
+       116.35220634608092,
+       40.00102579509753
+      ],
+      [
+       116.35347710703347,
+       40.00103289101739
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-016",
+   "properties": {
+    "name_zh": "建筑016",
+    "building_type": "office",
+    "block_ref": "LU-029",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-016",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.35327036566267,
+       40.002134622493294
+      ],
+      [
+       116.35322959248501,
+       40.006455545299694
+      ],
+      [
+       116.35223878880802,
+       40.00645001155869
+      ],
+      [
+       116.35227962443653,
+       40.002129089594206
+      ],
+      [
+       116.35327036566267,
+       40.002134622493294
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-017",
+   "properties": {
+    "name_zh": "建筑017",
+    "building_type": "office",
+    "block_ref": "LU-029",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-017",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.3534906425282,
+       40.00131126332241
+      ],
+      [
+       116.35345428266737,
+       40.0051659573641
+      ],
+      [
+       116.35210457841126,
+       40.005158419711854
+      ],
+      [
+       116.35214101416261,
+       40.00130372669323
+      ],
+      [
+       116.3534906425282,
+       40.00131126332241
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-018",
+   "properties": {
+    "name_zh": "建筑018",
+    "building_type": "ai_r_and_d",
+    "block_ref": "LU-046",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-018",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.35031949377708,
+       39.99132089402656
+      ],
+      [
+       116.35028345415536,
+       39.99512434281709
+      ],
+      [
+       116.34990123313304,
+       39.99512219950597
+      ],
+      [
+       116.3499372939528,
+       39.99131875100251
+      ],
+      [
+       116.35031949377708,
+       39.99132089402656
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-019",
+   "properties": {
+    "name_zh": "建筑019",
+    "building_type": "ai_r_and_d",
+    "block_ref": "LU-046",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-019",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.35027789777035,
+       39.990648264525774
+      ],
+      [
+       116.35022789479122,
+       39.99592493249484
+      ],
+      [
+       116.34985108970697,
+       39.99592281937163
+      ],
+      [
+       116.349901121678,
+       39.99064615179519
+      ],
+      [
+       116.35027789777035,
+       39.990648264525774
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-020",
+   "properties": {
+    "name_zh": "建筑020",
+    "building_type": "ai_r_and_d",
+    "block_ref": "LU-048",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-020",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.34855267029857,
+       39.99223787773101
+      ],
+      [
+       116.34851704024453,
+       39.995987786279095
+      ],
+      [
+       116.34813200565944,
+       39.99598562130612
+      ],
+      [
+       116.34816765676764,
+       39.9922357130439
+      ],
+      [
+       116.34855267029857,
+       39.99223787773101
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-021",
+   "properties": {
+    "name_zh": "建筑021",
+    "building_type": "ai_r_and_d",
+    "block_ref": "LU-048",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-021",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.34860966204778,
+       39.99118482187432
+      ],
+      [
+       116.34856217426687,
+       39.99618317274205
+      ],
+      [
+       116.3481174780288,
+       39.996180672359216
+      ],
+      [
+       116.3481649982211,
+       39.99118232193156
+      ],
+      [
+       116.34860966204778,
+       39.99118482187432
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-022",
+   "properties": {
+    "name_zh": "建筑022",
+    "building_type": "education",
+    "block_ref": "LU-050",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-022",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.34392974914569,
+       39.99099288137284
+      ],
+      [
+       116.34388746476394,
+       39.99541188967249
+      ],
+      [
+       116.34311151228486,
+       39.99540749435429
+      ],
+      [
+       116.34315384666556,
+       39.99098848673858
+      ],
+      [
+       116.34392974914569,
+       39.99099288137284
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-023",
+   "properties": {
+    "name_zh": "建筑023",
+    "building_type": "education",
+    "block_ref": "LU-050",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-023",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.34380991089449,
+       39.99144520355916
+      ],
+      [
+       116.34376285962419,
+       39.996361345991694
+      ],
+      [
+       116.34309418849774,
+       39.996357557928576
+      ],
+      [
+       116.34314128770241,
+       39.99144141615179
+      ],
+      [
+       116.34380991089449,
+       39.99144520355916
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-024",
+   "properties": {
+    "name_zh": "建筑024",
+    "building_type": "education",
+    "block_ref": "LU-050",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-024",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.34378920652699,
+       39.991765679628436
+      ],
+      [
+       116.34374820161995,
+       39.99604995288634
+      ],
+      [
+       116.34301500078689,
+       39.996045798969405
+      ],
+      [
+       116.34305605149889,
+       39.99176152633819
+      ],
+      [
+       116.34378920652699,
+       39.991765679628436
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-025",
+   "properties": {
+    "name_zh": "建筑025",
+    "building_type": "education",
+    "block_ref": "LU-052",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-025",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.34160005857639,
+       39.984477750040114
+      ],
+      [
+       116.34152773588971,
+       39.992010378206444
+      ],
+      [
+       116.34110066771767,
+       39.992007951111134
+      ],
+      [
+       116.34117303730271,
+       39.98447532358858
+      ],
+      [
+       116.34160005857639,
+       39.984477750040114
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-026",
+   "properties": {
+    "name_zh": "建筑026",
+    "building_type": "education",
+    "block_ref": "LU-052",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-026",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.34146960602513,
+       39.98690696894073
+      ],
+      [
+       116.34138928726163,
+       39.99526985889521
+      ],
+      [
+       116.34104961739153,
+       39.995267928182386
+      ],
+      [
+       116.34112997757109,
+       39.98690503879642
+      ],
+      [
+       116.34146960602513,
+       39.98690696894073
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-027",
+   "properties": {
+    "name_zh": "建筑027",
+    "building_type": "education",
+    "block_ref": "LU-052",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-027",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.3416261588724,
+       39.98538235433716
+      ],
+      [
+       116.34153996956975,
+       39.99435897486459
+      ],
+      [
+       116.3410439164828,
+       39.99435615558189
+      ],
+      [
+       116.341130170705,
+       39.98537953594557
+      ],
+      [
+       116.3416261588724,
+       39.98538235433716
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-028",
+   "properties": {
+    "name_zh": "建筑028",
+    "building_type": "ai_r_and_d",
+    "block_ref": "LU-053",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-028",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.35327285928311,
+       39.97905269420486
+      ],
+      [
+       116.35317529666878,
+       39.989398824370646
+      ],
+      [
+       116.35204094382757,
+       39.98939248831165
+      ],
+      [
+       116.35213867751077,
+       39.97904636045412
+      ],
+      [
+       116.35327285928311,
+       39.97905269420486
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-029",
+   "properties": {
+    "name_zh": "建筑029",
+    "building_type": "ai_r_and_d",
+    "block_ref": "LU-053",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-029",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.35337193500719,
+       39.979438179989536
+      ],
+      [
+       116.35325174844347,
+       39.99218450174665
+      ],
+      [
+       116.3521872939125,
+       39.99217855703574
+      ],
+      [
+       116.35230767825234,
+       39.97943223794656
+      ],
+      [
+       116.35337193500719,
+       39.979438179989536
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-030",
+   "properties": {
+    "name_zh": "建筑030",
+    "building_type": "ai_r_and_d",
+    "block_ref": "LU-053",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-030",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.35345112972581,
+       39.978265980455724
+      ],
+      [
+       116.35336982861132,
+       39.98689063375658
+      ],
+      [
+       116.35227719652279,
+       39.986884532857026
+      ],
+      [
+       116.35235863499102,
+       39.978259881408995
+      ],
+      [
+       116.35345112972581,
+       39.978265980455724
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-031",
+   "properties": {
+    "name_zh": "建筑031",
+    "building_type": "cultural",
+    "block_ref": "LU-055",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-031",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.35035949637458,
+       39.98448277214576
+      ],
+      [
+       116.35033696748826,
+       39.986861172439944
+      ],
+      [
+       116.35004540022692,
+       39.9868595378018
+      ],
+      [
+       116.35006793922243,
+       39.98448113764451
+      ],
+      [
+       116.35035949637458,
+       39.98448277214576
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-032",
+   "properties": {
+    "name_zh": "建筑032",
+    "building_type": "cultural",
+    "block_ref": "LU-055",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-032",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.35030711771948,
+       39.984021515600496
+      ],
+      [
+       116.35027889623845,
+       39.98700065340798
+      ],
+      [
+       116.3500141140461,
+       39.986999168833904
+      ],
+      [
+       116.35004234702636,
+       39.98402003118216
+      ],
+      [
+       116.35030711771948,
+       39.984021515600496
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-033",
+   "properties": {
+    "name_zh": "建筑033",
+    "building_type": "cultural",
+    "block_ref": "LU-057",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-033",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.3485451126009,
+       39.984428427665776
+      ],
+      [
+       116.34852100971453,
+       39.98696590417312
+      ],
+      [
+       116.34827298731588,
+       39.986964509823665
+      ],
+      [
+       116.34829709937681,
+       39.984427033440916
+      ],
+      [
+       116.3485451126009,
+       39.984428427665776
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-034",
+   "properties": {
+    "name_zh": "建筑034",
+    "building_type": "cultural",
+    "block_ref": "LU-057",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-034",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.34852872293872,
+       39.984122172217916
+      ],
+      [
+       116.3485066812066,
+       39.986442636365275
+      ],
+      [
+       116.34820055340832,
+       39.986440915245744
+      ],
+      [
+       116.34822260549576,
+       39.98412045123901
+      ],
+      [
+       116.34852872293872,
+       39.984122172217916
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-035",
+   "properties": {
+    "name_zh": "建筑035",
+    "building_type": "community_service",
+    "block_ref": "LU-059",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-035",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.34390194485715,
+       39.98366998668434
+      ],
+      [
+       116.3438782563651,
+       39.986146257272125
+      ],
+      [
+       116.3432754476942,
+       39.986142843306425
+      ],
+      [
+       116.34329915794612,
+       39.98366657301637
+      ],
+      [
+       116.34390194485715,
+       39.98366998668434
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-036",
+   "properties": {
+    "name_zh": "建筑036",
+    "building_type": "community_service",
+    "block_ref": "LU-059",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-036",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.34388079804451,
+       39.98346732395215
+      ],
+      [
+       116.34385283720187,
+       39.9863900977738
+      ],
+      [
+       116.34312766589166,
+       39.986385990267735
+      ],
+      [
+       116.34315565763113,
+       39.98346321686886
+      ],
+      [
+       116.34388079804451,
+       39.98346732395215
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-037",
+   "properties": {
+    "name_zh": "建筑037",
+    "building_type": "mixed_use",
+    "block_ref": "LU-063",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-037",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.35052472156099,
+       39.976221661522445
+      ],
+      [
+       116.35049031321674,
+       39.97985606720356
+      ],
+      [
+       116.35003083085108,
+       39.97985349155325
+      ],
+      [
+       116.35006526353264,
+       39.97621908620179
+      ],
+      [
+       116.35052472156099,
+       39.976221661522445
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-038",
+   "properties": {
+    "name_zh": "建筑038",
+    "building_type": "mixed_use",
+    "block_ref": "LU-063",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-038",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.35043195978224,
+       39.976730563152806
+      ],
+      [
+       116.35039537602148,
+       39.98059410473779
+      ],
+      [
+       116.34991670006417,
+       39.980591421053134
+      ],
+      [
+       116.34995331077788,
+       39.976727879833305
+      ],
+      [
+       116.35043195978224,
+       39.976730563152806
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-039",
+   "properties": {
+    "name_zh": "建筑039",
+    "building_type": "mixed_use",
+    "block_ref": "LU-065",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-039",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.34859314586792,
+       39.9759796421271
+      ],
+      [
+       116.34855943389006,
+       39.97952997197639
+      ],
+      [
+       116.34832884039928,
+       39.979528675762175
+      ],
+      [
+       116.34836256430826,
+       39.97597834607497
+      ],
+      [
+       116.34859314586792,
+       39.9759796421271
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-040",
+   "properties": {
+    "name_zh": "建筑040",
+    "building_type": "mixed_use",
+    "block_ref": "LU-065",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-040",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.34851850691592,
+       39.97754152227986
+      ],
+      [
+       116.34849500930088,
+       39.98001578655388
+      ],
+      [
+       116.34834410405941,
+       39.98001493824947
+      ],
+      [
+       116.34836760711617,
+       39.97754067404936
+      ],
+      [
+       116.34851850691592,
+       39.97754152227986
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-041",
+   "properties": {
+    "name_zh": "建筑041",
+    "building_type": "residential",
+    "block_ref": "LU-067",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-041",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.3437030871804,
+       39.97641661410204
+      ],
+      [
+       116.34366797313282,
+       39.98008697683233
+      ],
+      [
+       116.34323096139465,
+       39.9800845014568
+      ],
+      [
+       116.34326609881846,
+       39.97641413904647
+      ],
+      [
+       116.3437030871804,
+       39.97641661410204
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-042",
+   "properties": {
+    "name_zh": "建筑042",
+    "building_type": "residential",
+    "block_ref": "LU-067",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-042",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.34396707829418,
+       39.97678649902948
+      ],
+      [
+       116.3439293473176,
+       39.980731909323325
+      ],
+      [
+       116.3433631494817,
+       39.980728703144834
+      ],
+      [
+       116.34340091301492,
+       39.97678329329647
+      ],
+      [
+       116.34396707829418,
+       39.97678649902948
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-043",
+   "properties": {
+    "name_zh": "建筑043",
+    "building_type": "residential",
+    "block_ref": "LU-069",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-043",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.3415849810195,
+       39.976613783975985
+      ],
+      [
+       116.34155224321594,
+       39.98002475412729
+      ],
+      [
+       116.3411420877479,
+       39.98002242343541
+      ],
+      [
+       116.34117484594063,
+       39.976611453564075
+      ],
+      [
+       116.3415849810195,
+       39.976613783975985
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-044",
+   "properties": {
+    "name_zh": "建筑044",
+    "building_type": "residential",
+    "block_ref": "LU-069",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-044",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.34152705510071,
+       39.976645690216536
+      ],
+      [
+       116.34149301979599,
+       39.980191519747635
+      ],
+      [
+       116.34123235722075,
+       39.98019003857648
+      ],
+      [
+       116.34126640599557,
+       39.97664420923035
+      ],
+      [
+       116.34152705510071,
+       39.976645690216536
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-045",
+   "properties": {
+    "name_zh": "建筑045",
+    "building_type": "ai_r_and_d",
+    "block_ref": "LU-082",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-045",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.35354618871978,
+       39.95796843592057
+      ],
+      [
+       116.35345742798805,
+       39.967392423865114
+      ],
+      [
+       116.3522702493173,
+       39.967385796245765
+      ],
+      [
+       116.35235917300335,
+       39.957961810500784
+      ],
+      [
+       116.35354618871978,
+       39.95796843592057
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-046",
+   "properties": {
+    "name_zh": "建筑046",
+    "building_type": "ai_r_and_d",
+    "block_ref": "LU-082",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-046",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.3534373397786,
+       39.95827625140887
+      ],
+      [
+       116.35334989183475,
+       39.967559224779926
+      ],
+      [
+       116.35238402831622,
+       39.96755383270917
+      ],
+      [
+       116.35247160685371,
+       39.958270861100864
+      ],
+      [
+       116.3534373397786,
+       39.95827625140887
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-047",
+   "properties": {
+    "name_zh": "建筑047",
+    "building_type": "ai_r_and_d",
+    "block_ref": "LU-082",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-047",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.35344205066245,
+       39.96037753296992
+      ],
+      [
+       116.35335356366232,
+       39.96977014716685
+      ],
+      [
+       116.35236230835699,
+       39.96976461319128
+      ],
+      [
+       116.35245093097724,
+       39.960372000824826
+      ],
+      [
+       116.35344205066245,
+       39.96037753296992
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-048",
+   "properties": {
+    "name_zh": "建筑048",
+    "building_type": "residential",
+    "block_ref": "LU-084",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-048",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.35070683658093,
+       39.96011641536448
+      ],
+      [
+       116.350628486118,
+       39.96839833810008
+      ],
+      [
+       116.35013704526563,
+       39.968395584014694
+      ],
+      [
+       116.35021545501358,
+       39.960113662082364
+      ],
+      [
+       116.35070683658093,
+       39.96011641536448
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-049",
+   "properties": {
+    "name_zh": "建筑049",
+    "building_type": "residential",
+    "block_ref": "LU-084",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-049",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.35067736585205,
+       39.96005933660414
+      ],
+      [
+       116.35058417892297,
+       39.969908712419894
+      ],
+      [
+       116.35009421809133,
+       39.969905966419304
+      ],
+      [
+       116.35018747531453,
+       39.960056591556025
+      ],
+      [
+       116.35067736585205,
+       39.96005933660414
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-050",
+   "properties": {
+    "name_zh": "建筑050",
+    "building_type": "residential",
+    "block_ref": "LU-084",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-050",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.35048370823003,
+       39.95805629012017
+      ],
+      [
+       116.3503809513026,
+       39.96891442569425
+      ],
+      [
+       116.35006495716206,
+       39.968912654389136
+      ],
+      [
+       116.35016776406496,
+       39.958054519492364
+      ],
+      [
+       116.35048370823003,
+       39.95805629012017
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-051",
+   "properties": {
+    "name_zh": "建筑051",
+    "building_type": "residential",
+    "block_ref": "LU-086",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-051",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.34875671620003,
+       39.958811595289404
+      ],
+      [
+       116.34867241561899,
+       39.96769605928972
+      ],
+      [
+       116.34846833910078,
+       39.96769491243766
+      ],
+      [
+       116.34855266609068,
+       39.958810448796164
+      ],
+      [
+       116.34875671620003,
+       39.958811595289404
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-052",
+   "properties": {
+    "name_zh": "建筑052",
+    "building_type": "residential",
+    "block_ref": "LU-086",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-052",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.34881280907732,
+       39.95920319506442
+      ],
+      [
+       116.34871116649592,
+       39.96991562041003
+      ],
+      [
+       116.34847821019332,
+       39.969914311292975
+      ],
+      [
+       116.3485798891245,
+       39.95920188644121
+      ],
+      [
+       116.34881280907732,
+       39.95920319506442
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-053",
+   "properties": {
+    "name_zh": "建筑053",
+    "building_type": "residential",
+    "block_ref": "LU-086",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-053",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.3487191306032,
+       39.95829349900122
+      ],
+      [
+       116.34865387703088,
+       39.96517066883577
+      ],
+      [
+       116.34845107799521,
+       39.96516952914897
+      ],
+      [
+       116.34851635188097,
+       39.95829235959046
+      ],
+      [
+       116.3487191306032,
+       39.95829349900122
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-054",
+   "properties": {
+    "name_zh": "建筑054",
+    "building_type": "residential",
+    "block_ref": "LU-088",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-054",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.3439633407539,
+       39.95886109740744
+      ],
+      [
+       116.34388772938385,
+       39.96677175306418
+      ],
+      [
+       116.34322295045995,
+       39.9667679884535
+      ],
+      [
+       116.34329863842672,
+       39.95885733384556
+      ],
+      [
+       116.3439633407539,
+       39.95886109740744
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-055",
+   "properties": {
+    "name_zh": "建筑055",
+    "building_type": "residential",
+    "block_ref": "LU-088",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-055",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.34410568140403,
+       39.95849176450222
+      ],
+      [
+       116.34400175072724,
+       39.96936695323277
+      ],
+      [
+       116.3432663826162,
+       39.96936278931275
+      ],
+      [
+       116.34337042977795,
+       39.95848760217688
+      ],
+      [
+       116.34410568140403,
+       39.95849176450222
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-056",
+   "properties": {
+    "name_zh": "建筑056",
+    "building_type": "residential",
+    "block_ref": "LU-088",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-056",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.3439507322351,
+       39.96124468940224
+      ],
+      [
+       116.34387639994976,
+       39.96902074137894
+      ],
+      [
+       116.3433382090053,
+       39.96901769382944
+      ],
+      [
+       116.34341260225163,
+       39.961241642687305
+      ],
+      [
+       116.3439507322351,
+       39.96124468940224
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-057",
+   "properties": {
+    "name_zh": "建筑057",
+    "building_type": "residential",
+    "block_ref": "LU-090",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-057",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.34174883929671,
+       39.95888201683789
+      ],
+      [
+       116.3416753750711,
+       39.966542215405084
+      ],
+      [
+       116.34127227749009,
+       39.9665399254474
+      ],
+      [
+       116.34134578669052,
+       39.95887972749797
+      ],
+      [
+       116.34174883929671,
+       39.95888201683789
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-058",
+   "properties": {
+    "name_zh": "建筑058",
+    "building_type": "residential",
+    "block_ref": "LU-090",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-058",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.34180123526943,
+       39.95732511823519
+      ],
+      [
+       116.34169719772291,
+       39.968173829026114
+      ],
+      [
+       116.3413362695111,
+       39.96817177874173
+      ],
+      [
+       116.34144036408833,
+       39.9573230687341
+      ],
+      [
+       116.34180123526943,
+       39.95732511823519
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-059",
+   "properties": {
+    "name_zh": "建筑059",
+    "building_type": "residential",
+    "block_ref": "LU-090",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-059",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.34176413424275,
+       39.957950647019835
+      ],
+      [
+       116.34169506815145,
+       39.965152735775376
+      ],
+      [
+       116.34125559365147,
+       39.96515023919079
+      ],
+      [
+       116.34132470584214,
+       39.95794815106849
+      ],
+      [
+       116.34176413424275,
+       39.957950647019835
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-060",
+   "properties": {
+    "name_zh": "建筑060",
+    "building_type": "ai_r_and_d",
+    "block_ref": "LU-095",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-060",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.35351739621076,
+       39.95230355120483
+      ],
+      [
+       116.35349859818787,
+       39.954300077612366
+      ],
+      [
+       116.35249491053823,
+       39.95429447595918
+      ],
+      [
+       116.35251373773994,
+       39.95229794994559
+      ],
+      [
+       116.35351739621076,
+       39.95230355120483
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-061",
+   "properties": {
+    "name_zh": "建筑061",
+    "building_type": "ai_r_and_d",
+    "block_ref": "LU-095",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-061",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.35361705259733,
+       39.95277993599322
+      ],
+      [
+       116.35360283283248,
+       39.95429043411618
+      ],
+      [
+       116.35253243048271,
+       39.9542844607783
+      ],
+      [
+       116.3525466737908,
+       39.95277396297314
+      ],
+      [
+       116.35361705259733,
+       39.95277993599322
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-062",
+   "properties": {
+    "name_zh": "建筑062",
+    "building_type": "mixed_use",
+    "block_ref": "LU-097",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-062",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.35069548117545,
+       39.95263655284535
+      ],
+      [
+       116.35067882469495,
+       39.954397927716975
+      ],
+      [
+       116.35027377797826,
+       39.95439565831357
+      ],
+      [
+       116.35029044484727,
+       39.95263428358273
+      ],
+      [
+       116.35069548117545,
+       39.95263655284535
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-063",
+   "properties": {
+    "name_zh": "建筑063",
+    "building_type": "mixed_use",
+    "block_ref": "LU-097",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-063",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.3507924091624,
+       39.95244664971293
+      ],
+      [
+       116.35077703797116,
+       39.95407236816153
+      ],
+      [
+       116.35025969028312,
+       39.954069469749605
+      ],
+      [
+       116.35027507372115,
+       39.95244375146697
+      ],
+      [
+       116.3507924091624,
+       39.95244664971293
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-064",
+   "properties": {
+    "name_zh": "建筑064",
+    "building_type": "mixed_use",
+    "block_ref": "LU-099",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-064",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.34884547010384,
+       39.95268111518423
+      ],
+      [
+       116.34883270273288,
+       39.95402740362115
+      ],
+      [
+       116.34845610626364,
+       39.9540252876726
+      ],
+      [
+       116.34846888101723,
+       39.952678999336015
+      ],
+      [
+       116.34884547010384,
+       39.95268111518423
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-065",
+   "properties": {
+    "name_zh": "建筑065",
+    "building_type": "community_service",
+    "block_ref": "LU-101",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-065",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.34426368286435,
+       39.95210002197473
+      ],
+      [
+       116.34424880108935,
+       39.953658327478465
+      ],
+      [
+       116.34345765039753,
+       39.95365384962148
+      ],
+      [
+       116.34347255012393,
+       39.95209554436354
+      ],
+      [
+       116.34426368286435,
+       39.95210002197473
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-066",
+   "properties": {
+    "name_zh": "建筑066",
+    "building_type": "community_service",
+    "block_ref": "LU-101",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-066",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.34393744437469,
+       39.952234601708476
+      ],
+      [
+       116.34392374143547,
+       39.95366875258149
+      ],
+      [
+       116.34333038015356,
+       39.95366539304067
+      ],
+      [
+       116.34334409548369,
+       39.95223124233736
+      ],
+      [
+       116.34393744437469,
+       39.952234601708476
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-067",
+   "properties": {
+    "name_zh": "建筑067",
+    "building_type": "community_service",
+    "block_ref": "LU-103",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-067",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.34183136175504,
+       39.952446587604506
+      ],
+      [
+       116.34181315826729,
+       39.95434563290339
+      ],
+      [
+       116.34140811050497,
+       39.95434333251585
+      ],
+      [
+       116.3414263251932,
+       39.952444287370845
+      ],
+      [
+       116.34183136175504,
+       39.952446587604506
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-068",
+   "properties": {
+    "name_zh": "建筑068",
+    "building_type": "community_service",
+    "block_ref": "LU-103",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-068",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.34183198293378,
+       39.95237944922352
+      ],
+      [
+       116.34181832984525,
+       39.95380380420674
+      ],
+      [
+       116.34143495881318,
+       39.95380162698799
+      ],
+      [
+       116.34144861985283,
+       39.952377272114
+      ],
+      [
+       116.34183198293378,
+       39.95237944922352
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-069",
+   "properties": {
+    "name_zh": "建筑069",
+    "building_type": "ai_r_and_d",
+    "block_ref": "LU-119",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-069",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.35345133862482,
+       39.94678890702609
+      ],
+      [
+       116.35343456990161,
+       39.94857007977278
+      ],
+      [
+       116.35258170757326,
+       39.94856532013672
+      ],
+      [
+       116.35259849841178,
+       39.94678414768867
+      ],
+      [
+       116.35345133862482,
+       39.94678890702609
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-070",
+   "properties": {
+    "name_zh": "建筑070",
+    "building_type": "ai_r_and_d",
+    "block_ref": "LU-119",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-070",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.35355926165597,
+       39.94677994653959
+      ],
+      [
+       116.3535334323968,
+       39.949523921584294
+      ],
+      [
+       116.35274723386945,
+       39.949519534855185
+      ],
+      [
+       116.35277309453546,
+       39.946775560234485
+      ],
+      [
+       116.35355926165597,
+       39.94677994653959
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-071",
+   "properties": {
+    "name_zh": "建筑071",
+    "building_type": "mixed_use",
+    "block_ref": "LU-121",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-071",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.35087728203611,
+       39.94682883755344
+      ],
+      [
+       116.35086078259462,
+       39.948574455985835
+      ],
+      [
+       116.35036027435038,
+       39.948571652407935
+      ],
+      [
+       116.35037678651133,
+       39.94682603414794
+      ],
+      [
+       116.35087728203611,
+       39.94682883755344
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-072",
+   "properties": {
+    "name_zh": "建筑072",
+    "building_type": "mixed_use",
+    "block_ref": "LU-121",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-072",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.35073500557739,
+       39.9468820531622
+      ],
+      [
+       116.35071600271473,
+       39.94889207241166
+      ],
+      [
+       116.35018214331704,
+       39.94888908126919
+      ],
+      [
+       116.3502011618017,
+       39.9468790622315
+      ],
+      [
+       116.35073500557739,
+       39.9468820531622
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-073",
+   "properties": {
+    "name_zh": "建筑073",
+    "building_type": "mixed_use",
+    "block_ref": "LU-123",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-073",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.3488614757454,
+       39.94667023518288
+      ],
+      [
+       116.3488416862384,
+       39.94875744968368
+      ],
+      [
+       116.34862949378095,
+       39.94875625766233
+      ],
+      [
+       116.34864928973562,
+       39.946669043249166
+      ],
+      [
+       116.3488614757454,
+       39.94667023518288
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-074",
+   "properties": {
+    "name_zh": "建筑074",
+    "building_type": "mixed_use",
+    "block_ref": "LU-123",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-074",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.34889264079287,
+       39.94724679211047
+      ],
+      [
+       116.34887236569021,
+       39.94938527851255
+      ],
+      [
+       116.3486242503059,
+       39.949383884710926
+      ],
+      [
+       116.34864453313314,
+       39.94724539841384
+      ],
+      [
+       116.34889264079287,
+       39.94724679211047
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-075",
+   "properties": {
+    "name_zh": "建筑075",
+    "building_type": "community_service",
+    "block_ref": "LU-125",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-075",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.34409588181116,
+       39.947159590819595
+      ],
+      [
+       116.34407512459326,
+       39.949332920000145
+      ],
+      [
+       116.34361320071102,
+       39.94933030557649
+      ],
+      [
+       116.34363397254427,
+       39.94715697659608
+      ],
+      [
+       116.34409588181116,
+       39.947159590819595
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-076",
+   "properties": {
+    "name_zh": "建筑076",
+    "building_type": "community_service",
+    "block_ref": "LU-125",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-076",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.34419127922628,
+       39.94655604562167
+      ],
+      [
+       116.34417006441528,
+       39.94877765402117
+      ],
+      [
+       116.34369191380942,
+       39.94877494812387
+      ],
+      [
+       116.34371314408494,
+       39.946553339936116
+      ],
+      [
+       116.34419127922628,
+       39.94655604562167
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-077",
+   "properties": {
+    "name_zh": "建筑077",
+    "building_type": "community_service",
+    "block_ref": "LU-127",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-077",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.34183228074724,
+       39.94719504653048
+      ],
+      [
+       116.34181452288364,
+       39.94904795374095
+      ],
+      [
+       116.34140505734098,
+       39.94904562833567
+      ],
+      [
+       116.34142282625001,
+       39.947192721276984
+      ],
+      [
+       116.34183228074724,
+       39.94719504653048
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-078",
+   "properties": {
+    "name_zh": "建筑078",
+    "building_type": "community_service",
+    "block_ref": "LU-127",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-078",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.3419278935833,
+       39.94658482133812
+      ],
+      [
+       116.34191088220607,
+       39.948360137895776
+      ],
+      [
+       116.34135173697884,
+       39.94835696255828
+      ],
+      [
+       116.34136876280725,
+       39.94658164619919
+      ],
+      [
+       116.3419278935833,
+       39.94658482133812
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-079",
+   "properties": {
+    "name_zh": "建筑079",
+    "building_type": "ai_r_and_d",
+    "block_ref": "LU-131",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-079",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.35343859017489,
+       39.94198419009733
+      ],
+      [
+       116.35342342758506,
+       39.94359500986739
+      ],
+      [
+       116.35252842673012,
+       39.94359001496861
+      ],
+      [
+       116.35254361030468,
+       39.941979195481984
+      ],
+      [
+       116.35343859017489,
+       39.94198419009733
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-080",
+   "properties": {
+    "name_zh": "建筑080",
+    "building_type": "ai_r_and_d",
+    "block_ref": "LU-131",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-080",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.35365568501015,
+       39.94218000266365
+      ],
+      [
+       116.3536387419817,
+       39.94398055343913
+      ],
+      [
+       116.35262304376332,
+       39.9439748862864
+      ],
+      [
+       116.35264001341169,
+       39.94217433587036
+      ],
+      [
+       116.35365568501015,
+       39.94218000266365
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-081",
+   "properties": {
+    "name_zh": "建筑081",
+    "building_type": "mixed_use",
+    "block_ref": "LU-133",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-081",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.35092598377923,
+       39.94177159067431
+      ],
+      [
+       116.35090447634913,
+       39.944047597391055
+      ],
+      [
+       116.350304013039,
+       39.944044233979106
+      ],
+      [
+       116.35032554036174,
+       39.941768227532016
+      ],
+      [
+       116.35092598377923,
+       39.94177159067431
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-082",
+   "properties": {
+    "name_zh": "建筑082",
+    "building_type": "mixed_use",
+    "block_ref": "LU-133",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-082",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.3508370817252,
+       39.94182568934477
+      ],
+      [
+       116.35081574279695,
+       39.944083551887594
+      ],
+      [
+       116.35028367396046,
+       39.94408057132683
+      ],
+      [
+       116.35030503037504,
+       39.94182270902108
+      ],
+      [
+       116.3508370817252,
+       39.94182568934477
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-083",
+   "properties": {
+    "name_zh": "建筑083",
+    "building_type": "mixed_use",
+    "block_ref": "LU-135",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-083",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.34895234372854,
+       39.94204913576473
+      ],
+      [
+       116.34893059742667,
+       39.9443434202838
+      ],
+      [
+       116.34862505194776,
+       39.94434170399616
+      ],
+      [
+       116.34864680845337,
+       39.942047419615776
+      ],
+      [
+       116.34895234372854,
+       39.94204913576473
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-084",
+   "properties": {
+    "name_zh": "建筑084",
+    "building_type": "mixed_use",
+    "block_ref": "LU-137",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-084",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.3441747648756,
+       39.94195218171113
+      ],
+      [
+       116.34415403664015,
+       39.944123139676314
+      ],
+      [
+       116.34371434464302,
+       39.94412065150261
+      ],
+      [
+       116.34373508677265,
+       39.94194969372771
+      ],
+      [
+       116.3441747648756,
+       39.94195218171113
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-085",
+   "properties": {
+    "name_zh": "建筑085",
+    "building_type": "mixed_use",
+    "block_ref": "LU-137",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-085",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.3442428856945,
+       39.94194386332181
+      ],
+      [
+       116.3442268346417,
+       39.94362515545423
+      ],
+      [
+       116.3436940406498,
+       39.94362214055531
+      ],
+      [
+       116.34371010474126,
+       39.94194084860147
+      ],
+      [
+       116.3442428856945,
+       39.94194386332181
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-086",
+   "properties": {
+    "name_zh": "建筑086",
+    "building_type": "mixed_use",
+    "block_ref": "LU-139",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-086",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.34195343563684,
+       39.94231972155846
+      ],
+      [
+       116.34193914250187,
+       39.94381165571829
+      ],
+      [
+       116.34139059377662,
+       39.94380854080274
+      ],
+      [
+       116.34140489882401,
+       39.942316606806614
+      ],
+      [
+       116.34195343563684,
+       39.94231972155846
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-087",
+   "properties": {
+    "name_zh": "建筑087",
+    "building_type": "mixed_use",
+    "block_ref": "LU-139",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-087",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.34205361684307,
+       39.9420554885017
+      ],
+      [
+       116.3420347140835,
+       39.944028875866216
+      ],
+      [
+       116.34154207993208,
+       39.94402607898091
+      ],
+      [
+       116.34156099684212,
+       39.942052691810844
+      ],
+      [
+       116.34205361684307,
+       39.9420554885017
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-088",
+   "properties": {
+    "name_zh": "建筑088",
+    "building_type": "community_service",
+    "block_ref": "LU-141",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-088",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.3538039665681,
+       39.94021794529806
+      ],
+      [
+       116.35380112771882,
+       39.94051973398122
+      ],
+      [
+       116.3526688812799,
+       39.94051341769079
+      ],
+      [
+       116.35267172510247,
+       39.940211629074774
+      ],
+      [
+       116.3538039665681,
+       39.94021794529806
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-089",
+   "properties": {
+    "name_zh": "建筑089",
+    "building_type": "education",
+    "block_ref": "LU-143",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-089",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.35071599515278,
+       39.94036433931155
+      ],
+      [
+       116.35071373779198,
+       39.9406031696092
+      ],
+      [
+       116.3504047357217,
+       39.94060143869343
+      ],
+      [
+       116.3504069941566,
+       39.94036260841033
+      ],
+      [
+       116.35071599515278,
+       39.94036433931155
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-090",
+   "properties": {
+    "name_zh": "建筑090",
+    "building_type": "education",
+    "block_ref": "LU-145",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-090",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.34895178840667,
+       39.94034927444401
+      ],
+      [
+       116.34894953277521,
+       39.94058727516981
+      ],
+      [
+       116.34866056504559,
+       39.9405856521066
+      ],
+      [
+       116.34866282167805,
+       39.94034765139441
+      ],
+      [
+       116.34895178840667,
+       39.94034927444401
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-091",
+   "properties": {
+    "name_zh": "建筑091",
+    "building_type": "education",
+    "block_ref": "LU-147",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-091",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.34419736796903,
+       39.94025640750252
+      ],
+      [
+       116.34419376416503,
+       39.94063390226993
+      ],
+      [
+       116.34366447840287,
+       39.94063090713467
+      ],
+      [
+       116.34366808511489,
+       39.94025341240708
+      ],
+      [
+       116.34419736796903,
+       39.94025640750252
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-092",
+   "properties": {
+    "name_zh": "建筑092",
+    "building_type": "education",
+    "block_ref": "LU-149",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-092",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.34197578464727,
+       39.94025194355979
+      ],
+      [
+       116.34197282730526,
+       39.94056067673241
+      ],
+      [
+       116.34147510271599,
+       39.940557850729896
+      ],
+      [
+       116.3414780622945,
+       39.94024911758802
+      ],
+      [
+       116.34197578464727,
+       39.94025194355979
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "BLDG-093",
+   "properties": {
+    "name_zh": "建筑093",
+    "building_type": "community_service",
+    "block_ref": "LU-150",
+    "status": "design_proposal",
+    "retain_renovate_new": "new",
+    "id": "BLDG-093",
+    "layer": "BUILDING_FOOTPRINT",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.35388367053102,
+       39.939379270653944
+      ],
+      [
+       116.35388323345063,
+       39.93942574264307
+      ],
+      [
+       116.35272398451416,
+       39.939419276447204
+      ],
+      [
+       116.35272442237863,
+       39.939372804468675
+      ],
+      [
+       116.35388367053102,
+       39.939379270653944
+      ]
+     ]
+    ]
+   }
+  }
+ ],
+ "name": "AI Pulse Belt building footprints (concept)"
+}

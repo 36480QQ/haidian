@@ -1,0 +1,360 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "id": "ROAD-001",
+   "properties": {
+    "name_zh": "北五环",
+    "road_class": "expressway",
+    "road_name_en": "北五环",
+    "id": "ROAD-001",
+    "layer": "ROAD_CENTERLINE",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      116.34266991439694,
+      40.02588340018932
+     ],
+     [
+      116.35527007878233,
+      40.0259541909979
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "ROAD-002",
+   "properties": {
+    "name_zh": "清华东路",
+    "road_class": "secondary",
+    "road_name_en": "清华东路",
+    "id": "ROAD-002",
+    "layer": "ROAD_CENTERLINE",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      116.341302972545,
+      39.99984808259667
+     ],
+     [
+      116.3538433028417,
+      39.99991867735271
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "ROAD-003",
+   "properties": {
+    "name_zh": "成府路",
+    "road_class": "branch",
+    "road_name_en": "成府路",
+    "id": "ROAD-003",
+    "layer": "ROAD_CENTERLINE",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      116.33970504273205,
+      39.97489205603881
+     ],
+     [
+      116.35450215866436,
+      39.974975402544544
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "ROAD-004",
+   "properties": {
+    "name_zh": "知春路",
+    "road_class": "arterial",
+    "road_name_en": "知春路",
+    "id": "ROAD-004",
+    "layer": "ROAD_CENTERLINE",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      116.34036099137708,
+      39.95120961405651
+     ],
+     [
+      116.35530001648334,
+      39.95129365407697
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "ROAD-005",
+   "properties": {
+    "name_zh": "荷清路/大钟寺东路",
+    "road_class": "secondary",
+    "id": "ROAD-005",
+    "layer": "ROAD_CENTERLINE",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      116.34053827109537,
+      39.94482544955709
+     ],
+     [
+      116.34017717774218,
+      39.98239854780366
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "ROAD-006",
+   "properties": {
+    "name_zh": "智脉二街",
+    "road_class": "branch",
+    "id": "ROAD-006",
+    "layer": "ROAD_CENTERLINE",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      116.342682626781,
+      39.939000107886194
+     ],
+     [
+      116.34198447690073,
+      40.01183285808867
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "ROAD-007",
+   "properties": {
+    "name_zh": "智脉三街",
+    "road_class": "branch",
+    "id": "ROAD-007",
+    "layer": "ROAD_CENTERLINE",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      116.34958556922535,
+      39.939000218984106
+     ],
+     [
+      116.348755328076,
+      40.026500171005004
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "ROAD-008",
+   "properties": {
+    "name_zh": "智脉大道",
+    "road_class": "branch",
+    "id": "ROAD-008",
+    "layer": "ROAD_CENTERLINE",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      116.35156285376839,
+      39.939000175083
+     ],
+     [
+      116.35073513650717,
+      40.02650015827651
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "ROAD-009",
+   "properties": {
+    "name_zh": "学院路/西土城路",
+    "road_class": "arterial",
+    "id": "ROAD-009",
+    "layer": "ROAD_CENTERLINE",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "MultiLineString",
+    "coordinates": [
+     [
+      [
+       116.35473937988218,
+       39.93900003394519
+      ],
+      [
+       116.35438770800103,
+       39.97640611829475
+      ]
+     ],
+     [
+      [
+       116.35411891569137,
+       40.00494936721749
+      ],
+      [
+       116.35391571727467,
+       40.026500066991765
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "ROAD-010",
+   "properties": {
+    "name_zh": "京张智脉绿廊绿道",
+    "road_class": "greenway",
+    "id": "ROAD-010",
+    "layer": "ROAD_CENTERLINE",
+    "source_type": "agent_generated_design",
+    "confidence": "medium",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      116.34667275219172,
+      39.938951919623086
+     ],
+     [
+      116.34583820302709,
+      40.02651374112958
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "ROAD-011",
+   "properties": {
+    "name_zh": "大钟寺站接驳",
+    "road_class": "transit_connection",
+    "id": "ROAD-011",
+    "layer": "ROAD_CENTERLINE",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      116.34996796257876,
+      39.949282521178716
+     ],
+     [
+      116.35137208724937,
+      39.949290385643245
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "ROAD-012",
+   "properties": {
+    "name_zh": "五道口站接驳",
+    "road_class": "transit_connection",
+    "id": "ROAD-012",
+    "layer": "ROAD_CENTERLINE",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      116.34843029444475,
+      39.988000311952945
+     ],
+     [
+      116.34983521106321,
+      39.98800820134085
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "ROAD-013",
+   "properties": {
+    "name_zh": "众智园接驳",
+    "road_class": "transit_connection",
+    "id": "ROAD-013",
+    "layer": "ROAD_CENTERLINE",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      116.35046465406737,
+      40.020433657041856
+     ],
+     [
+      116.35187023620038,
+      40.02044152703007
+     ]
+    ]
+   }
+  }
+ ],
+ "name": "AI Pulse Belt road network (concept)"
+}
