@@ -1,0 +1,47 @@
+{
+  "schema_version": "0.1.0",
+  "checks": [
+    {
+      "check_id": "BOUNDARY_TRUST",
+      "result": "unknown",
+      "severity": "major",
+      "target": "geometry/site_boundary.geojson",
+      "message": "Official site boundary is absent. The provisional polygon is correctly labelled but cannot pass a trust check."
+    },
+    {
+      "check_id": "KEY_AREAS_TRUST",
+      "result": "unknown",
+      "severity": "major",
+      "target": "geometry/key_areas.geojson",
+      "message": "Three required areas are represented, but their polygons are provisional and not professionally trustworthy."
+    },
+    {
+      "check_id": "LAND_USE_TOPOLOGY",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/land_use.geojson",
+      "message": "Submitted scaffold partitions the provisional polygon without overlap; this is topology only, not planning quality."
+    },
+    {
+      "check_id": "VISUAL_STATIC",
+      "result": "pass",
+      "severity": "info",
+      "target": "visual/index.html",
+      "message": "Static HTML visualization is generated without external dependencies."
+    },
+    {
+      "check_id": "PROFESSIONAL_EVIDENCE",
+      "result": "pass",
+      "severity": "info",
+      "target": "proposal.md",
+      "message": "Organizer data gaps are disclosed and do not block content scoring; provisional geometry is used within the published rules."
+    },
+    {
+      "check_id": "SUBSTANTIVE_READINESS",
+      "result": "pass",
+      "severity": "info",
+      "target": "manifest.json",
+      "message": "Eligible for content and professional scoring with organizer-provided provisional geometry; no statutory or engineering authority is claimed."
+    }
+  ]
+}
