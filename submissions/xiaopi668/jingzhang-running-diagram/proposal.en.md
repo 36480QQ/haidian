@@ -214,6 +214,13 @@ All scenarios and personas follow privacy and human-review boundaries: no "smart
 - **Resident participation**: the B10 Civic Forum rotates quarterly among the three stations; major renewal projects require a prior consultative procedure via the street co-governance committee and resident forums (conceptual mechanism);
 - **Public-interest KPIs (suggested)**: barrier-free slow-path coverage rate, parallel-traditional-service rate, population within 500 m of community public space, and resident-forum participation count enter the annual Running Diagram review metrics (conceptual scope, not statutory).
 
+**Public right to know and participation safeguards (v1.3 addition, the public side of the Punctuality Protocol)**: the Punctuality Protocol is extended from an industry mechanism into public rights [depth:overall_spatial_structure] [source:AGENT-TASKBOOK]:
+
+- **Right to know — the open Running Diagram**: the Running Diagram body (scenario list, data dictionary, evaluation metrics, service times and lines) is released as open source; any citizen can query who dispatches each "innovation train", until when it runs, and how it exits; the annual Running Diagram draft is published for public comment no less than 30 days before the spring Departure Season (conceptual scope) [source:AGENT-TASKBOOK];
+- **Right to participate — three discussion channels**: ① B10 City Forum rotates among the three stations quarterly with publicly solicited agendas and published decisions; ② the annual Running Diagram has a "public comment window" (draft—feedback—revision—release); ③ renewal projects touching public space (platform walkways, station forecourts, community parks) require prior resident deliberation through the street co-governance committee (conceptual mechanism, linking to the v1.1 inclusive design) [depth:renewal_project_list];
+- **Co-governance fund transparency**: the co-governance fund's budget and final accounts are published annually under joint oversight by resident representatives and the developer community; the fund prioritizes senior, children and barrier-free use windows (conceptual) [depth:phasing_implementation];
+- **Exitable and appealable**: citizens may appeal or request withdrawal from any service call; the operator must reply within a published time limit and retain records (conceptual scope) [standard:GENERATIVE-AI-INTERIM-MEASURES].
+
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
 ### Land-use layout
