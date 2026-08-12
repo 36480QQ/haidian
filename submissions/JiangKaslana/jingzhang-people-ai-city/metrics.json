@@ -81,6 +81,15 @@
       "confidence": "high",
       "assumptions": []
     },
+    "global_case_count": {
+      "status": "known",
+      "value": 6,
+      "unit": "count",
+      "source_files": ["risk.json", "sources.json"],
+      "formula": "count(global_case_translations)",
+      "confidence": "high",
+      "assumptions": ["Cases are mechanism references only; foreign scale, performance, legal rules and budgets are not imported."]
+    },
     "civic_ai_right_count": {
       "status": "known",
       "value": 5,
@@ -94,10 +103,19 @@
       "status": "known",
       "value": 2,
       "unit": "count",
-      "source_files": ["proposal.md"],
+      "source_files": ["proposal.md", "risk.json"],
       "formula": "count(red_civic_anchor_types)",
       "confidence": "high",
       "assumptions": ["Exact siting remains conceptual pending heritage, ownership and engineering evidence."]
+    },
+    "ai_landmark_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": ["risk.json", "proposal.md"],
+      "formula": "count(pilgrimage_landmarks)",
+      "confidence": "high",
+      "assumptions": ["Landmarks are programme/design identities; exact siting and dimensions remain conceptual."]
     },
     "human_fallback_required_scenario_count": {
       "status": "known",
