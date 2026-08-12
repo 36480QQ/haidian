@@ -55,6 +55,14 @@ The primary name "Jing-Zhang Compute Belt" takes the triple meaning of "compute"
 
 Sub-brand system: **Compute Hub** (three key areas), **Compute Corridor** (heritage park vitality belt), **Compute Walk** (cultural guide greenway), **Compute Belt Open Day** (annual event), **Open-Source Achievement Gallery** and **Agent Contribution Honor Wall** (public display system). The Logo direction combines "herringbone line x data bus": the upper part is Zhan Tianyou's herringbone track deformation, the lower part parallel data buses, forming a negative-space of the character "值" (on-duty/value); deep navy blue (auditable infrastructure), amber (on-duty/active), signal green (safe available), coral red (needs takeover/shutdown) form the palette.[source:AGENT-TASKBOOK] [depth:overall_spatial_structure]
 
+VI specification (construction/mono/min-size/typography/application shown in the figures below): the logo mark uses a 6a x 6a construction grid (a = 4 mm, safe area 8a x 8a) with the herringbone and data bus split 1:1 vertically; the slope concept cites the historical 33 per-mille Qinglongqiao zigzag (the graphic is a symbolic deformation, not a surveyed slope); a mono positive version serves print and reverse-on-dark, and a negative version dark media; minimum sizes are 32 px on web and 8 mm in print, below which use the wordmark or the simplified mark (herringbone only); typography pairs Noto Sans SC (SIL OFL) for Chinese with Inter (OFL) for Latin at three levels (title/body/label); application samples cover a business card, wayfinding sign, Open Day banner, and web header.[source:AGENT-TASKBOOK] [depth:overall_spatial_structure]
+
+![Logo construction](assets/branding/logo-construction.png)
+
+![Mono version and min size](assets/branding/logo-mono.png)
+
+![Brand applications](assets/branding/brand-application.png)
+
 ### Three Areas and Two Wings: The Innovation Chain in Space
 
 The three areas and two wings are not five parallel parks but the spatial mapping of five innovation-chain stages:[source:AGENT-TASKBOOK] [data:geometry/key_areas.geojson#PROV-KEY-001]

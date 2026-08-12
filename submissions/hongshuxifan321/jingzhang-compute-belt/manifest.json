@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "7ebefa6b8d5bb6aa4d1a5e2b1a6585a196f6cff5bd60a770d83c7a745bd9f1c4"
+      "sha256": "a4c16bb7c71b2ffb23642feb89e92d2b0b7a0430d360ef78e449fc9cbe9df9df"
     },
     {
       "path": "agent.json",
@@ -56,13 +56,13 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "bbf4b0df5f3763ac99f70e751b3cc819764e9c4b81ab6026c207e9fa5b5ae7c6"
+      "sha256": "1584595b51221be23a262728a2fcc9a02db5b8873d518a05ed7eed9dcd845119"
     },
     {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "a98a92b37a0c0143b77be82f84dc370b4d0fd18c55ecfaef1ea0af254ab9cebe"
+      "sha256": "93fb6f9f88d2c7d84477d123bfae36308573fdafa6119cf35aa476d641c5dbab"
     },
     {
       "path": "standard_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "8e4068f95340b9b1e6010d5bd0d67f5f5728d8071fb5a59942d70623494bbb92"
+      "sha256": "8f85b118bf684e95b357ba0ab5a16e0a6dab0eaef110ceb8c43c8be08c7bef7f"
     },
     {
       "path": "report/narrative.md",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "9c22f6fe02cdb1cdd883cae613842fb6b07bb4ae65a6cfde152cbb09c1ea9d8a"
+      "sha256": "628b0fe78cf66a8fd26cd901328d9ef513d1f946c3816beb5fffc9149ea509f1"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "1ba2d00fa84a48744d9942ee1fedd663b5b4449868951a07bb9cdddf682002e5"
+      "sha256": "cccbfd4fa8a7c47f49b9d8a867430f5a03b390b539fc6c8ca401f22df38161d2"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -295,7 +295,25 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "f2d015bbaa28127b60eb67c954dc33b681736f211118b90f6159d8ed324043bf"
+      "sha256": "7d97bef69185c12db1dde151f049835d08dc36227fba0f360cb7705f0349c35e"
+    },
+    {
+      "path": "assets/branding/logo-construction.png",
+      "role": "visualization",
+      "required": false,
+      "sha256": "0de2c7678bdebeb8516f880f33ff3d5a84007fef5024a72b26c39313cbf1a783"
+    },
+    {
+      "path": "assets/branding/logo-mono.png",
+      "role": "visualization",
+      "required": false,
+      "sha256": "d778c96537715c7bd2b6a51cdc50e6ed95759d971b3601952fcd031eae82e633"
+    },
+    {
+      "path": "assets/branding/brand-application.png",
+      "role": "visualization",
+      "required": false,
+      "sha256": "c63ff11c335ca58eb646dfeef98b377b1c3a0df6484a6ee5c004c0de15de3480"
     }
   ],
   "validation_claim": {

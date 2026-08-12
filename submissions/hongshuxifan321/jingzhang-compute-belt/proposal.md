@@ -54,6 +54,14 @@ iteration: "v1"
 
 子品牌体系：**算带枢纽**（三重点区）、**算带走廊**（遗址公园活力带）、**算力散步道**（文化导览绿道）、**算带开放日**（年度活动）、**开源成果展示廊**与**智能体贡献荣誉墙**（公共展示体系）。Logo 方向为「人字展线 × 数据总线」双意象：上部为詹天佑人字展线变形，下部为并行数据总线，形成「值」字负形；深海军蓝（可审计基础设施）、琥珀（当班/活跃）、信号绿（安全可用）、珊瑚红（需接管/停用）构成主色。[source:AGENT-TASKBOOK] [depth:overall_spatial_structure]
 
+VI 规范（构图/单色/最小尺寸/字体/应用样例见图）：标志构图采用 6a×6a 标准网格（a=4mm，安全区 8a×8a），人字展线与数据总线上下 1:1 分割；展线坡度概念引用青龙桥展线 33‰ 史实（图形为象征变形，非实测坡度）；单色正形用于印刷与深底反白，负形用于深色媒介；最小使用尺寸为网页 32px、印刷 8mm，低于此限改用字标或简化形（仅人字展线）；字体方案为中文思源黑体（Noto Sans SC，SIL OFL 开源许可）配西文 Inter（OFL），层级为标题/正文/标注三级；应用样例覆盖名片、导视、开放日横幅与网页头图。[source:AGENT-TASKBOOK] [depth:overall_spatial_structure]
+
+![标志构图规范](assets/branding/logo-construction.png)
+
+![单色版与最小尺寸](assets/branding/logo-mono.png)
+
+![应用样例：名片、导视、开放日横幅与网页头图](assets/branding/brand-application.png)
+
 ### 三区两翼：创新链的空间展开
 
 三区两翼不是五个并列园区，而是创新链五段的空间映射：[source:AGENT-TASKBOOK] [data:geometry/key_areas.geojson#PROV-KEY-001]

@@ -1,5 +1,17 @@
 # 方案迭代记录
 
+## v1.1-4 - 2026-08-12
+
+品牌 VI 体系（评审「原创性」维度点名缺失：Logo 构图/比例/单色版/最小尺寸/字体/应用样例）。
+
+- **新增 assets/branding/ 三图**（build_branding.py 生成，脚本 git exclude，图内中英双语标注；qwen-vl-max 目视审查通过）：
+  - `logo-construction.png`：标志构图规范——6a×6a 标准网格（a=4mm，安全区 8a×8a）、人字展线与数据总线 1:1 分割、展线坡度 33‰（青龙桥史实，象征变形）、「值」字负形标注、主色 #22304E
+  - `logo-mono.png`：单色正形/深底负形 + 最小尺寸标尺（web ≥32px ｜ 印刷 ≥8mm）
+  - `brand-application.png`：应用样例拼版——名片/导视牌/开放日横幅/网页头图，含字级标注
+- **字体方案**：中文思源黑体（Noto Sans SC，SIL OFL）+ 西文 Inter（OFL），三级字级（标题/正文/标注）
+- **proposal.md/en.md**：命名体系小节补 VI 规范段 + 三图嵌入；compliance_matrix agent.1 evidence 更新；manifest 登记 3 个 visualization 文件
+- **校验**：self-check 四门 PASS → preflight PASS
+
 ## v1.1-3 - 2026-08-12
 
 visual 视觉对齐（图新视觉 #22304E 系）。
