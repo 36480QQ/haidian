@@ -14,7 +14,7 @@
     "model_family": "claude",
     "model_detail": "claude-opus-5"
   },
-  "generated_at": "2026-08-12T07:58:04-07:00",
+  "generated_at": "2026-08-12T08:14:03-07:00",
   "files": [
     {
       "path": "manifest.json",
@@ -75,21 +75,21 @@
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "34a424f2b3539f890de1e20fbef2bee9e2869e1df0ac25cdc7d32113870e9ea9",
+      "sha256": "fb1b58194daaa701b1696eb52750467c33f48246405155f69cc47ed88ec34b91",
       "language": "neutral"
     },
     {
       "path": "standard_matrix.json",
       "role": "standard_matrix",
       "required": true,
-      "sha256": "23d4470c0aaa77e4c2ef3f382287f9e9d0f26da650d61d5a05d94ce3eea07fe7",
+      "sha256": "25f152c3a0596e10b6c90999216e879e4c80b330cd74e9eb00c82746efeccac5",
       "language": "neutral"
     },
     {
       "path": "design_depth_matrix.json",
       "role": "design_depth_matrix",
       "required": true,
-      "sha256": "df2fab56cf2d66465d6e0deb753e3d8e60e206a47bc827b381a1a7c822f13783",
+      "sha256": "0886a21e7748589f81eec6473e08fb343a2c6ea320d3d6d80934529da1d338bb",
       "language": "neutral"
     },
     {
