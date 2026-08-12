@@ -1,6 +1,6 @@
 ---
 title: "THE DIGNITY SUPPLY LINE: Period-Care Reliability Infrastructure for an AI-Native City"
-author_github: "zymk8353"
+author_github: "zyaoii"
 language: "en"
 proposal_format_version: "2"
 bilingual_contract_version: "1"

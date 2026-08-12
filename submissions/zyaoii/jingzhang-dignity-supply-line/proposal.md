@@ -1,6 +1,6 @@
 ---
 title: "京张有备：AI 原生城市的经期尊严补给基础设施"
-author_github: "zymk8353"
+author_github: "zyaoii"
 language: "zh"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
