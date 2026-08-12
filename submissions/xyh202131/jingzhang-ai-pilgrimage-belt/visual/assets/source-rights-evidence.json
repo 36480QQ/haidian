@@ -8,7 +8,7 @@
     "disclosure_effect": "audit_ready_not_cleared"
   },
   "coverage": {
-    "source_record_count": 38,
+    "source_record_count": 41,
     "osm_element_count": 120,
     "completed_independent_file_level_clearance_audits": 0,
     "asset_ledger_ref": "rights-clearance-ledger.json#asset_records"
@@ -1340,7 +1340,7 @@
       "integrity": {
         "method": "git_object",
         "algorithm": "sha1",
-        "digest": "acea6ac7b49e477749b1666f7ec5c91a85d04282",
+        "digest": "1ab60915f77d072fa67c23ed335d1b47d9ca7c56",
         "digest_scope": "Git blob object for exact package file bytes at proposal.md in the Round 7–9 closure candidate.",
         "artifact_in_submission": true,
         "limitation": "The digest fixes the package-authored object only; it does not establish external authority, reusable licensing, professional approval, or rights clearance."
@@ -1466,7 +1466,7 @@
       "integrity": {
         "method": "git_object",
         "algorithm": "sha1",
-        "digest": "acea6ac7b49e477749b1666f7ec5c91a85d04282",
+        "digest": "1ab60915f77d072fa67c23ed335d1b47d9ca7c56",
         "digest_scope": "Git blob object for exact package file bytes at proposal.md in the Round 7–9 closure candidate.",
         "artifact_in_submission": true,
         "limitation": "The digest fixes the package-authored object only; it does not establish external authority, reusable licensing, professional approval, or rights clearance."
@@ -1592,10 +1592,136 @@
       "integrity": {
         "method": "git_object",
         "algorithm": "sha1",
-        "digest": "2b48d4e6d403bbbab36a551a54c4527b604c322d",
+        "digest": "1ab60915f77d072fa67c23ed335d1b47d9ca7c56",
         "digest_scope": "Git blob object for exact package file bytes at proposal.md in the Round 10 candidate.",
         "artifact_in_submission": true,
         "limitation": "The digest fixes the package-authored object only; it establishes no real operation, external authority, reusable license, professional approval, partner, staffing, budget, result, or rights clearance."
+      },
+      "rights_basis": {
+        "declared_basis": "package_author_statement_for_repository_review_only; complete terms and independent file-level audit unavailable",
+        "terms_locator": null,
+        "evidence_state": "source_record_statement_only",
+        "independent_review_status": "not_started",
+        "package_use_mode": "repository_input"
+      },
+      "downstream_asset_ref": "rights-clearance-ledger.json#asset_records",
+      "unresolved_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02"
+      ]
+    },
+    {
+      "evidence_id": "SRC-RIGHTS-JZ-REVIEW-HANDOFF-V1",
+      "source_id": "SOURCE-JZ-REVIEW-HANDOFF-V1",
+      "source_record_ref": "../../sources.json#SOURCE-JZ-REVIEW-HANDOFF-V1",
+      "publisher": "xyh202131",
+      "locator": {
+        "kind": "repository_path",
+        "value": "visual/assets/implementation-handoff-matrix.json"
+      },
+      "published_or_obtained": {
+        "status": "recorded",
+        "value": "2026-08-12",
+        "basis": "Package-authored repository object recorded for the Round 11 review synthesis and professional handoff; this is not an external publication, professional opinion or acceptance date."
+      },
+      "accessed_date": "2026-08-12",
+      "original_format": {
+        "status": "observed_from_repository_object",
+        "label": "JSON review and professional-handoff matrix",
+        "media_type": "application/json",
+        "basis": "The format was observed directly from the package repository object."
+      },
+      "integrity": {
+        "method": "git_object",
+        "algorithm": "sha1",
+        "digest": "2c2e169b34a6df4f5ea8ff86d00def7d3281f32d",
+        "digest_scope": "Git blob object for exact package file bytes at visual/assets/implementation-handoff-matrix.json in the Round 11 candidate.",
+        "artifact_in_submission": true,
+        "limitation": "The digest fixes the package-authored object only; it establishes no authoritative replacement material, professional acceptance, approval, field test, GO decision, implementation result, reusable license or rights clearance."
+      },
+      "rights_basis": {
+        "declared_basis": "package_author_statement_for_repository_review_only; complete terms and independent file-level audit unavailable",
+        "terms_locator": null,
+        "evidence_state": "source_record_statement_only",
+        "independent_review_status": "not_started",
+        "package_use_mode": "repository_input"
+      },
+      "downstream_asset_ref": "rights-clearance-ledger.json#asset_records",
+      "unresolved_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02"
+      ]
+    },
+    {
+      "evidence_id": "SRC-RIGHTS-REVIEW-PROFESSIONAL-HANDOFF-FIG",
+      "source_id": "SOURCE-REVIEW-PROFESSIONAL-HANDOFF-FIGURE",
+      "source_record_ref": "../../sources.json#SOURCE-REVIEW-PROFESSIONAL-HANDOFF-FIGURE",
+      "publisher": "xyh202131",
+      "locator": {
+        "kind": "repository_path",
+        "value": "assets/figures/review-professional-handoff.svg"
+      },
+      "published_or_obtained": {
+        "status": "recorded",
+        "value": "2026-08-12",
+        "basis": "Package-authored repository object recorded for the Round 11 review synthesis and professional handoff; this is not an external publication, professional opinion or acceptance date."
+      },
+      "accessed_date": "2026-08-12",
+      "original_format": {
+        "status": "observed_from_repository_object",
+        "label": "SVG editable figure source",
+        "media_type": "image/svg+xml",
+        "basis": "The format was observed directly from the package repository object."
+      },
+      "integrity": {
+        "method": "git_object",
+        "algorithm": "sha1",
+        "digest": "9579ab4b992f568710ef47adc05275d22f1fae9f",
+        "digest_scope": "Git blob object for exact package file bytes at assets/figures/review-professional-handoff.svg in the Round 11 candidate.",
+        "artifact_in_submission": true,
+        "limitation": "The digest fixes the package-authored object only; it establishes no authoritative replacement material, professional acceptance, approval, field test, GO decision, implementation result, reusable license or rights clearance."
+      },
+      "rights_basis": {
+        "declared_basis": "package_author_statement_for_repository_review_only; complete terms and independent file-level audit unavailable",
+        "terms_locator": null,
+        "evidence_state": "source_record_statement_only",
+        "independent_review_status": "not_started",
+        "package_use_mode": "repository_input"
+      },
+      "downstream_asset_ref": "rights-clearance-ledger.json#asset_records",
+      "unresolved_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02"
+      ]
+    },
+    {
+      "evidence_id": "SRC-RIGHTS-REVIEW-HANDOFF-PROPOSAL",
+      "source_id": "SOURCE-REVIEW-HANDOFF-PROPOSAL",
+      "source_record_ref": "../../sources.json#SOURCE-REVIEW-HANDOFF-PROPOSAL",
+      "publisher": "xyh202131",
+      "locator": {
+        "kind": "repository_path",
+        "value": "proposal.md#review-synthesis-professional-handoff"
+      },
+      "published_or_obtained": {
+        "status": "recorded",
+        "value": "2026-08-12",
+        "basis": "Package-authored repository object recorded for the Round 11 review synthesis and professional handoff; this is not an external publication, professional opinion or acceptance date."
+      },
+      "accessed_date": "2026-08-12",
+      "original_format": {
+        "status": "observed_from_repository_object",
+        "label": "Markdown proposal narrative",
+        "media_type": "text/markdown",
+        "basis": "The format was observed directly from the package repository object."
+      },
+      "integrity": {
+        "method": "git_object",
+        "algorithm": "sha1",
+        "digest": "1ab60915f77d072fa67c23ed335d1b47d9ca7c56",
+        "digest_scope": "Git blob object for exact package file bytes at proposal.md in the Round 11 candidate.",
+        "artifact_in_submission": true,
+        "limitation": "The digest fixes the package-authored object only; it establishes no authoritative replacement material, professional acceptance, approval, field test, GO decision, implementation result, reusable license or rights clearance."
       },
       "rights_basis": {
         "declared_basis": "package_author_statement_for_repository_review_only; complete terms and independent file-level audit unavailable",

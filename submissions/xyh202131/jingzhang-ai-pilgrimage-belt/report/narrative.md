@@ -185,6 +185,36 @@ The bilingual `year-round-civic-operations.{svg,png}` pair uses the same 1800×1
 
 This publication fixed point proves only that the current in-package bytes and layout are reviewable. It proves no event, opening, roster, staff, budget, partner, complaint, incident, recovery duration, annual decision, operating result, approval, G1 status or rights clearance.
 
+## 第 11 轮评审收束与专业深化交接 / Round 11 review synthesis and professional handoff
+
+### 串行门与工作包 / Serial gate and work package
+
+第 11 轮只在第 10 轮 PR #2101 合并并进入最新 `main`、同一投稿包无开放竞争 PR、GitHub 与 Git 身份均为 `xyh202131` 后开始。工作包只深化既有 `implementation-handoff-matrix.json`，增加双语评审/交接总图和对应正文入口；不修改 geometry、metrics、12 个场景、8 个项目、3 个重点区、G0、临时边界或 `not_fully_cleared`。
+
+Round 11 began only after Round 10 PR #2101 merged into the latest `main`, no open PR competed for the same package, and both GitHub and Git identities were verified as `xyh202131`. The work package deepens only the existing `implementation-handoff-matrix.json`, adding a bilingual review/handoff figure and corresponding reading entry. It changes no geometry, metrics, twelve scenes, eight projects, three key areas, G0 status, provisional boundary, or `not_fully_cleared` rights state.
+
+### 评审收束 / Review synthesis
+
+评审顺序固定为四问：普通生活是否先于验证成立；三处是否不可互换；后台是否能停止、回写和退场；哪些内容冻结、哪些必须被现实资料替换。一个前台概念是“双轨京张”，三处原型分别是众智园平行验证庭、原点社区一街两院四节点、大钟寺四象限步行与一厅一台，一个后台内核是 JZ-AIOS + G0—G3 + 证据门 + 权利边界。六项 Agent 任务各绑定一个评审问题、现有证据、专业接手动作和禁止推断，完整覆盖仍由 `compliance_matrix.json` 承担。
+
+The review order is fixed to four questions: does ordinary life work before proof; are the three places non-interchangeable; can the back-stage system stop, write back and exit; and what is frozen versus replaced by real evidence. The single front-stage concept is Twin-track Jing-Zhang; the prototypes are Zhongzhiyuan's parallel proof court, Origin Community's one street/two courts/four nodes, and Dazhongsi's four-quadrant walking plus one hall/one desk; the single back-stage kernel is JZ-AIOS + G0–G3 + evidence gates + rights boundaries. Each of the six Agent duties now binds one review question, current evidence, professional next action and prohibited inference, while `compliance_matrix.json` remains the exhaustive coverage ledger.
+
+### 官方资料替换与七专业停止线 / Authoritative-data replacement and seven-discipline stop line
+
+八类替换包 D01—D08 分别覆盖官方几何、现状测绘、控规权属、无障碍/同任务共测、交通高峰、专项约束、责任运营和权利复用。每份新材料必须带来源、版本、日期、空间/时间范围与使用权限，并触发“冻结—替换—复算—复核—必要时退役”的完整下游更新。规划城市设计、景观/无障碍、交通、建筑/公共界面、专项安全、数据/AI/权利、运营/社区七类专业只对其证据范围负责；概念图、绿线、OSM、体量原型、完整模板、合成 PASS 和活动日历均不能代替相应专业判断。
+
+Eight replacement packs D01–D08 cover official geometry, existing-condition survey, controls/title, accessibility and same-task co-test, peak movement, specialist constraints, responsibility/operation, and rights/reuse. Every new input must retain source, version, date, spatial/temporal scope and use permission, triggering a full downstream sequence of freeze, replace, recalculate, verify and—when required—retire. Seven disciplines—planning/urban design, landscape/accessibility, transport, architecture/public interface, specialist safety, data/AI/rights, and operations/community—judge only within their evidence scope. Concept diagrams, green lines, OSM, massing prototypes, complete templates, synthetic PASS, and event calendars cannot replace those judgements.
+
+当前权威替换材料 0、专业责任接受 0、99 槽提交 0、批准 0、现场测试 0、GO 0。任一重大缺口继续 NO-GO；先保护普通公共权利、停止受影响验证叠层，再修正或退役。`review-professional-handoff.{svg,png}` 双语总图只是一张 G0 评审与专业交接索引，不是现实资料、专业意见、责任接受、审批或实施结果。
+
+Current authoritative replacement inputs are 0; accepted professional duties 0; submitted artifacts across 99 slots 0; approvals 0; field tests 0; GO decisions 0. Any material gap remains NO-GO: protect ordinary public rights first, stop the affected proof overlay, then revise or retire. The bilingual `review-professional-handoff.{svg,png}` is only a G0 review and professional-handoff index, not real evidence, professional opinion, accepted duty, approval, or implementation result.
+
+### 第 11 轮出版固定点 / Round 11 publication fixed point
+
+最终投稿包为 108 个 manifest 路径、107 个非 manifest 内容文件、41 条来源和 108 条逐文件权利记录；独立逐文件清权仍为 0。双语 HTML 从最终 Markdown 重生，新增双语评审交接图作为中英文 A0 首板和 A3 封面。两个新的 Python 进程所得四份 PDF 逐文件字节一致：中文/英文 A3 为 67/71 页，中英文 A0 各 16 页，共 170 页；全页检查得到空白页 0、替换字形 0。SHA-256：中文 A3 `8f5835af07cf0e1640728cb5860b4cff91b6238304c00994385ad4484b779029`，英文 A3 `7c6c9e63da74c65bc650ffc388d25aef322d2c265107a78435825c873ff2fc6a`，中文 A0 `4dd45f6c8a34acd80f30db9361560ea95689eef2bfe2fc6feae3bba8103824ad`，英文 A0 `4222709be163478b9bc5e0d1025d068c9bd50ef30b5c364e5d7da9387f139acd`。该固定点只证明包内字节、版式和交接索引可复核，不证明现实资料、专业接受、审批、现场测试、GO、实施或清权。
+
+The final package contains 108 manifest paths, 107 non-manifest content files, 41 sources, and 108 file-level rights records; completed independent file-level rights audits remain 0. Both HTML reports were rebuilt from final Markdown, and the new bilingual review/handoff figure is the first A0 board and A3 cover in each language. Two fresh Python processes produced byte-identical files: the Chinese/English A3 booklets contain 67/71 pages, both A0 sets contain 16 pages, and all four PDFs total 170 pages; full-page checks found 0 blank pages and 0 replacement glyphs. SHA-256: Chinese A3 `8f5835af07cf0e1640728cb5860b4cff91b6238304c00994385ad4484b779029`; English A3 `7c6c9e63da74c65bc650ffc388d25aef322d2c265107a78435825c873ff2fc6a`; Chinese A0 `4dd45f6c8a34acd80f30db9361560ea95689eef2bfe2fc6feae3bba8103824ad`; English A0 `4222709be163478b9bc5e0d1025d068c9bd50ef30b5c364e5d7da9387f139acd`. This fixed point proves only reviewable in-package bytes, layout, and handoff indexing—not real evidence, professional acceptance, approval, field testing, GO, implementation, or rights clearance.
+
 ## 双轨前台增量 / Twin-track frontend increment
 
 本轮把“双轨京张”建立为前台空间总纲：连续日常轨承载普通公共生活，间歇验证轨只在自愿、公告、限域、有责任人的时段出现；原点社区、众智园、大钟寺分别作为共创、验证、发布换轨场；失败侧线承载停止、人工接管、绕行、申诉和恢复；入口、时段、状态、人工、来源、退出六类信号共同组成公共时刻表。人工站房、无屏节点和非 AI 完整路径不依赖注册、扫码或 AI。`visual/assets/key-area-evidence-matrix.json#twin_track_frontend_contract` 记录同一套双轨、三换轨场、四态、旅程和后台治理回链，并把所有现实运行结果保持为 0 或 unknown。主图 `site-overview` 的双语 PNG 与新增双语 SVG 可编辑源只表达关系，不改 geometry、不新增场景编号，也不把验证轨升级为连续占地或已建设施。
