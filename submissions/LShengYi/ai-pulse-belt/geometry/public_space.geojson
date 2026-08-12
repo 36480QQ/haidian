@@ -600,6 +600,46 @@
      ]
     ]
    }
+  },
+  {
+   "type": "Feature",
+   "id": "PUBLIC-016",
+   "properties": {
+    "name_zh": "大钟寺站前健康服务导行节点",
+    "public_type": "health_service_navigation_node",
+    "id": "PUBLIC-016",
+    "layer": "PUBLIC_SPACE",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.34872987291031,
+       39.94780756590238
+      ],
+      [
+       116.34872765244629,
+       39.9480417140247
+      ],
+      [
+       116.3484234310785,
+       39.94804000460529
+      ],
+      [
+       116.34842565257956,
+       39.94780585649707
+      ],
+      [
+       116.34872987291031,
+       39.94780756590238
+      ]
+     ]
+    ]
+   }
   }
  ],
  "name": "AI Pulse Belt public space (concept)"

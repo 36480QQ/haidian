@@ -8,7 +8,7 @@ translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以「智脉一带 · AI Pulse Belt」为总体意象的 formal AI 城市设计方案包：京张铁路百年'铁脉'转译为 AI 时代'数字智脉'，一带三核、双翼多点；全部几何基于官方临时边界生成并披露面积偏差，指标可复算、图层可校验、双语全对齐。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
-scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "robot-delivery-low-speed", "ai-cultural-guide", "public-safety-operations-review"]
+scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "robot-delivery-low-speed", "ai-cultural-guide", "public-safety-operations-review", "ai-health-service-navigation"]
 ---
 
 # 智脉一带 · AI Pulse Belt —— 百年京张AI创新带城市设计概念方案
@@ -24,7 +24,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "robot-deliv
 
 `data/processed/agent_fact_pack.md` 是本方案的阅读导航层，不是新的权威来源 [source:PROCESSED-FACT-PACK]。事实判断均回到已登记原始材料；完整来源关系由 `sources.json` 保存。
 
-本方案在官方 `SITE_BOUNDARY` 与三处 `KEY_AREA` 尚未取得时，使用 `brief/site-package/geometry/provisional_boundaries.geojson` 生成 formal 包：`geometry/site_boundary.geojson` 与 `geometry/key_areas.geojson` 均标注为 `provisional_constraint`、不声明 `official_boundary=true`，只能用于方案生成、自检、可视化和设计讨论。实测总体设计区面积 11.413 km2，与官方预公告值 11.4 km2 偏差 0.11%，已在 `assumptions.json`（ASSUME-002）披露 [data:geometry/site_boundary.geojson#PROV-SITE-001] [metric:site_area_sqm]。三处重点区数量由独立图层核对 [data:geometry/key_areas.geojson#PROV-KEY-001] [metric:key_area_count]。组织方数据缺口不阻断内容评分；官方 polygons 发布后需重算 site boundary、key areas、land use、roads、green space、public space、buildings、phasing 与 metrics。
+本方案在官方 `SITE_BOUNDARY` 与三处 `KEY_AREA` 尚未取得时，使用 `brief/site-package/geometry/provisional_boundaries.geojson` 生成 formal 包 [source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE]：`geometry/site_boundary.geojson` 与 `geometry/key_areas.geojson` 均标注为 `provisional_constraint`、不声明 `official_boundary=true`，只能用于方案生成、自检、可视化和设计讨论。实测总体设计区面积 11.413 km2，与官方预公告值 11.4 km2 偏差 0.11%，已在 `assumptions.json`（ASSUME-002）披露 [data:geometry/site_boundary.geojson#PROV-SITE-001] [metric:site_area_sqm]。三处重点区数量由独立图层核对 [data:geometry/key_areas.geojson#PROV-KEY-001] [metric:key_area_count]。组织方数据缺口不阻断内容评分；官方 polygons 发布后需重算 site boundary、key areas、land use、roads、green space、public space、buildings、phasing 与 metrics。
 
 ## 三层范围工作框架
 
@@ -46,7 +46,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "robot-deliv
 
 统筹研究范围的核心任务是构建世界级 AI 创新生态体系。方案梳理海淀高校院所、头部企业、算力算法数据要素、孵化平台与科技服务资源，提出"高校策源—开源协作—企业转化—公共体验—国际传播"五环创新链的空间协同框架，并回应任务书"五大功能"与"三区两翼"协同要求 [source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]。
 
-**生态图谱（概念建议）**：参照全球 AI 创新区成功经验，提炼六类空间机制：**土地供给**（留白弹性用地 16 类承载未来业态）、**空间组织**（庭院式研发街区）、**产业服务**（算力/数据/合规/投融资一站式）、**资金机制**（场景开放与政府采购引导）、**人才服务**（人才特区与青年公寓）、**数据场景**（开放测试场与测评体系）。六个参考案例的机制转译与边界如下：
+**生态图谱（概念建议）**：参照全球 AI 创新区成功经验，提炼六类空间机制：**土地供给**（留白弹性用地，用地代码 16、共 4 处，承载未来业态）、**空间组织**（庭院式研发街区）、**产业服务**（算力/数据/合规/投融资一站式）、**资金机制**（场景开放与政府采购引导）、**人才服务**（人才特区与青年公寓）、**数据场景**（开放测试场与测评体系）。六个参考案例的机制转译与边界如下：
 
 | 案例 | 可转化机制 | 京张应用 | 不可照搬条件 |
 | --- | --- | --- | --- |
@@ -71,19 +71,19 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "robot-deliv
 
 **区域协同接口（概念建议）**：统筹研究范围以五类接口衔接更大创新网络；现阶段无已确认的跨区协议，接口仅表达可协商方向 [source:AGENT-TASKBOOK]：
 
-| 接口 | 京张可提出需求 | 可接回成果 | 保留边界 |
+| 接口 | 协同问题 | 建议互动形式 | 边界与前提 |
 | --- | --- | --- | --- |
-| 北纬社区 | 社区服务与使用障碍问题 | 不同社区条件下的复测意见 | 不虚构共同运营或居民授权 |
-| 未来科学城 | 前沿技术的城市使用问题 | 专家复核方法与研发反馈 | 不把研究结论写成可部署产品 |
-| 怀柔科学城 | 科学设施成果的城市转译需求 | 跨学科验证建议与测量方法 | 不触及非公开科研与设施数据 |
-| 北京经开区 | 机器人与智能制造真实工况问题 | 生产环境复测记录与安全要求 | 不虚构企业、订单或产线合作 |
-| 京津冀城市网络 | 可跨城比较的公共服务问题 | 异地复测、差异说明与失败记录 | 不用单点结果替代跨城验证 |
+| 北纬社区 | 社区级 AI 服务在不同住区条件下的适用性差异 | 跨社区对照复测、问题清单互换 | 以公开议题为限，不虚构共同运营或居民授权 |
+| 未来科学城 | 前沿技术从实验室到城市场景的落地验证路径 | 专家复核方法互借、研发反馈回环 | 研究成果不作产品化承诺，不提前发布未审结论 |
+| 怀柔科学城 | 大科学设施成果向城市生活服务的转译需求 | 跨学科验证建议、测量方法交流 | 不触及非公开科研与设施数据 |
+| 北京经开区 | 机器人与智能制造的真实工况与安全要求 | 生产环境复测记录、安全要求互认 | 不虚构企业、订单或产线合作 |
+| 京津冀城市网络 | 可跨城比较的公共服务问题与差异归因 | 异地复测、差异说明与失败记录公开 | 单点结果不替代跨城验证 |
 
 未来城市形态研究回答人工智能如何改变工作、生活、社交、学习、交通与公共服务：以"数字智脉"为空间线索，把 AI 交通系统、连续绿色空间、创新服务设施与国际化生活工作氛围落实为可定位的功能区、节点、廊道与场景 [depth:overall_spatial_structure] [standard:MOHURD-URBAN-DESIGN-MEASURES]。全球 AI 创新活动、开发者社区、开放场景与朝圣路线均表述为"概念建议/参考方案"，不写为已确定的政府活动或实施安排。
 
 ## 总体设计范围城市更新与控规深度城市设计
 
-总体设计范围（实测 11.413 km2）要求达到控制性详细规划的城市设计深度。本方案提出以**中央智脉绿廊**为脊的总体结构 [data:geometry/land_use.geojson#LU-001]：沿绿廊东西两侧组织用地，形成**四个分区带**——众智园科研带（北）、原点社区产城融合带、大钟寺商业科研带、南部更新带，并预留南端留白弹性用地承载未来 AI 业态（16 留白用地 4 处）[depth:land_use_layout] [depth:development_intensity_controls]。
+总体设计范围（实测 11.413 km2）要求达到控制性详细规划的城市设计深度 [standard:MOHURD-CONTROL-DETAILED-PLANNING]。本方案提出以**中央智脉绿廊**为脊的总体结构 [data:geometry/land_use.geojson#LU-001]：沿绿廊东西两侧组织用地，形成**四个分区带**——众智园科研带（北）、原点社区产城融合带、大钟寺商业科研带、南部更新带，并预留南端留白弹性用地承载未来 AI 业态（16 留白用地 4 处）[depth:land_use_layout] [depth:development_intensity_controls]。
 
 **道路网络（概念建议）**：以"两横两纵"为骨架——横向北五环（快速路）、清华东路（次干路）、成府路（支路）、知春路（主干路）；纵向学院路/西土城路（主干路）、荷清路/大钟寺东路（次干路）；并新增设计道路**智脉大道**、智脉二街、智脉三街组织地块微循环，中央绿廊内设连续绿道 [data:geometry/roads.geojson#ROAD-001] [data:geometry/roads.geojson#ROAD-010]。
 
@@ -111,30 +111,32 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "robot-deliv
 
 **5 类用户画像**：
 
-| 用户画像 | 典型需求 | 空间响应 | 自检边界 |
-| --- | --- | --- | --- |
-| 初创工程师 | 低成本办公、算力入口、产品试验场 | 众智园共享测试场、端侧算力服务点、标准治理咨询 | 算力和数据服务需另行授权 |
-| 科研人员 | 跨机构协作、成果转化、学术交流 | 原点发布厅、科研院落、清华东路教育带 | 校园数据和科研成果需授权 |
-| 家庭周末客 | 亲子休闲、运动、文化体验 | 中央绿廊、口袋公园、体育测试场、钟韵文化体验 | 不采集个人行为轨迹，活动数据只做聚合统计 |
-| 银发游客 | 无障碍导行、慢速休闲、文化讲解 | 无障碍 AI 导行站、智脉艺术铁轨休憩带 | 健康类数据不用于商业推荐 |
-| 开发者社区运营者 | 活动组织、代码协作、社区声誉 | 开发者露天工位代码墙、发布广场、智盒会议亭 | 公共活动数据匿名聚合 |
+| 用户画像 | 典型需求 | 空间响应 | 不能忽略的风险 | 自检边界 |
+| --- | --- | --- | --- | --- |
+| 初创工程师 | 低成本办公、算力入口、产品试验场 | 众智园共享测试场、端侧算力服务点、标准治理咨询 | 算力与数据服务依赖单一供应商 | 算力和数据服务需另行授权；保留公共测试场与标准入口防锁定 |
+| 科研人员 | 跨机构协作、成果转化、学术交流 | 原点发布厅、科研院落、清华东路教育带 | 成果转化窗口期短、依赖一次性政策 | 校园数据和科研成果需授权；以常态院落交流支撑，不绑定单一政策 |
+| 家庭周末客 | 亲子休闲、运动、文化体验 | 中央绿廊、口袋公园、体育测试场、钟韵文化体验 | 高峰人流承载与影像隐私顾虑 | 不采集个人行为轨迹，活动数据只做聚合统计；高峰分流 |
+| 银发游客 | 无障碍导行、慢速休闲、文化讲解 | 无障碍 AI 导行站、智脉艺术铁轨休憩带 | 数字化门槛造成数字排斥 | 健康类数据不用于商业推荐；保留人工导览/电话预约等非 AI 替代通道 |
+| 开发者社区运营者 | 活动组织、代码协作、社区声誉 | 开发者露天工位代码墙、发布广场、智盒会议亭 | 活动运营依赖补贴，补贴退坡即停摆 | 公共活动数据匿名聚合；按"立项—试办—评估—续办/退役"管理 |
 
 **12 张场景卡（概念建议）**：
 
-| 场景卡 | 空间载体与设计说明 | 数据与人工边界 | KPI 与退出条件 |
-| --- | --- | --- | --- |
-| 01 铁轨巡检AR孪生 | 中央绿廊铁轨段：AR 叠加百年影像与 AI 孪生巡检演示 | 仅聚合点位热度，不采集个人影像 | AR 史实准确率≥98%；史实投诉未修复即下线 |
-| 02 无人接驳巴士走廊 | 智脉大道沿线：园区—轨道站无人接驳示范线（概念）[scenario:ai-traffic-walkability] | 行程数据仅用于调度，留存期后匿名化 | 准点率≥85%；事故即停线转人工 |
-| 03 AI 骑行教练站 | 绿廊绿道节点：骑行数据可视化与 AI 运动指导 | 骑行数据仅本人可见、可一键删除 | 设备故障 24h 内修复；隐私投诉即暂停 |
-| 04 钟韵元宇宙 | 大钟寺站前：钟声文化数字孪生与互动展演 | 不采集个人行为轨迹 | 内容投诉响应≤48h；文保冲突即撤除 |
-| 05 智盒会议亭 | 各研发街块节点：自助会议、直播与远程协作微型空间 | 音视频内容由使用者自持，平台不留存 | 爽约率过高即调整容量；投诉即停用 |
-| 06 无人机配送驿站 | 众智园南块：低空物流接驳试验驿站（概念）[scenario:robot-delivery-low-speed] | 不采集人脸；配送记录 30 天删除 | 安全隐患零容忍；空域审批未过不开通 |
-| 07 AI 园艺师口袋公园 | 各住区街角：植物养护 AI 协作与社区认养 | 仅记录植物养护与认养数据 | 认养参与率≥30%；扰民投诉即调整 |
-| 08 无障碍 AI 导行站 | 轨道站与绿廊节点：语音/触觉多模态无障碍导航 | 不保存个人轨迹，现场可核验 | 人工替代率 100%；现场不符即停用 |
-| 09 赛事数据可视化墙 | 体育测试场周边：智能体育赛事实时数据大屏 | 仅聚合展示，不识别个人 | 数据口径标注时间；预警人工研判 |
-| 10 建筑能耗 AI 调控楼 | 众智园科研带：分布式能源与 AI 能耗调控示范（概念） | 能耗数据按楼栋聚合，不涉及户内 | 调控失误即时人工接管；连续失误停用 |
-| 11 AI 咖啡机器人驿站 | 商业街与研发街角：机器臂咖啡体验与开发者社交 | 订单数据最小化，支付走标准渠道 | 机械故障即停；投诉响应≤24h |
-| 12 开发者露天工位代码墙 | 原点发布广场周边：开源贡献墙、露天工位与演示区 | 公开贡献数据匿名聚合 | 内容审核人工终审；争议即下架 |
+| 场景卡 | 空间载体与设计说明 | 数据与人工边界 | 运营主体 | KPI 与退出条件 |
+| --- | --- | --- | --- | --- |
+| 01 铁轨巡检AR孪生 | 中央绿廊铁轨段：AR 叠加百年影像与 AI 孪生巡检演示 | 仅聚合点位热度，不采集个人影像 | 轨道遗产管理方+区测试办 | AR 史实准确率≥98%；史实投诉未修复即下线 |
+| 02 无人接驳巴士走廊 | 智脉大道沿线：园区—轨道站无人接驳示范线（概念）[scenario:ai-traffic-walkability] | 行程数据仅用于调度，留存期后匿名化 | 公交集团+区测试办 | 准点率≥85%；事故即停线转人工 |
+| 03 AI 骑行教练站 | 绿廊绿道节点：骑行数据可视化与 AI 运动指导 | 骑行数据仅本人可见、可一键删除 | 属地街道+绿廊运营 | 设备故障 24h 内修复；隐私投诉即暂停 |
+| 04 钟韵元宇宙 | 大钟寺站前：钟声文化数字孪生与互动展演 [scenario:ai-cultural-guide] | 不采集个人行为轨迹 | 大钟寺文化机构+属地 | 内容投诉响应≤48h；文保冲突即撤除 |
+| 05 智盒会议亭 | 各研发街块节点：自助会议、直播与远程协作微型空间 | 音视频内容由使用者自持，平台不留存 | 园区运营平台 | 爽约率过高即调整容量；投诉即停用 |
+| 06 无人机配送驿站 | 众智园南块：低空物流接驳试验驿站（概念）[scenario:robot-delivery-low-speed] | 不采集人脸；配送记录 30 天删除 | 配送企业+空域监管 | 安全隐患零容忍；空域审批未过不开通 |
+| 07 AI 园艺师口袋公园 | 各住区街角：植物养护 AI 协作与社区认养 | 仅记录植物养护与认养数据 | 社区居委会+街道 | 认养参与率≥30%；扰民投诉即调整 |
+| 08 无障碍 AI 导行站 | 轨道站与绿廊节点：语音/触觉多模态无障碍导航 [scenario:ai-health-service-navigation] | 不保存个人轨迹，现场可核验 | 残联+运营方 | 人工替代率 100%；现场不符即停用 |
+| 09 赛事数据可视化墙 | 体育测试场周边：智能体育赛事实时数据大屏 | 仅聚合展示，不识别个人 | 体育机构+赛事运营 | 数据口径标注时间；预警人工研判 |
+| 10 建筑能耗 AI 调控楼 | 众智园科研带：分布式能源与 AI 能耗调控示范（概念） | 能耗数据按楼栋聚合，不涉及户内 | 能源企业+园区物业 | 调控失误即时人工接管；连续失误停用 |
+| 11 AI 咖啡机器人驿站 | 商业街与研发街角：机器臂咖啡体验与开发者社交 | 订单数据最小化，支付走标准渠道 | 商业运营方 | 机械故障即停；投诉响应≤24h |
+| 12 开发者露天工位代码墙 | 原点发布广场周边：开源贡献墙、露天工位与演示区 | 公开贡献数据匿名聚合 | 开源社区+属地运营 | 内容审核人工终审；争议即下架 |
+
+场景卡按八要素结构展开：**服务对象、空间载体、用户旅程、输入数据、AI 能力、基础设施、运营主体、失败降级**。以 01 铁轨巡检 AR 孪生为例：旅程为游客扫码→AR 叠加百年影像→点位热度聚合展示；输入数据为公开影像与巡检点位（无个人影像）；AI 能力为图像配准与史实比对；基础设施为沿线识别桩与导视屏；失败降级为识别失败即提示并转人工核验。其余场景卡在详细设计阶段按同一结构展开。
 
 **3 个产业测试验证场景（概念建议）**：每个场景均在 `geometry/public_space.geojson` 落位测试节点，按智脉脉冲协议 P2 受控测试运行：
 
@@ -144,11 +146,15 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "robot-deliv
 | 低空配送航线验证 | 众智园—大钟寺概念航线 [data:geometry/public_space.geojson#PUBLIC-014] | 无人机配送（场景卡 06）[scenario:robot-delivery-low-speed] | 遵守空域与安全法规；不采集人脸 | 空域审批未过不开通；安全隐患零容忍 |
 | 多模态导视测评场 | 绿廊全线 [data:geometry/public_space.geojson#PUBLIC-015] | 无障碍导行多模态测评（场景卡 08） | 不保存个人轨迹，现场可核验 | 现场核验不符即停用 |
 
-**公共安全类 AI 应用仅做运营评审研究，不替代人工复核** [scenario:public-safety-operations-review]。
+**公共安全类 AI 应用仅做运营评审研究，不替代人工复核** [scenario:public-safety-operations-review]。**健康服务类应用**（挂号陪诊提示、急救点位导引、慢病管理信息提示等）仅做信息提示，不做出医疗决策，数据不落盘 [scenario:ai-health-service-navigation] [data:geometry/public_space.geojson#PUBLIC-016]。
 
-**3 个 AI 朝圣地标（概念建议）**：**AI 原点之钟**（大钟寺站前广场，钟韵文化与 AI 起源意象）、**AI 之光塔**（众智园门户广场，光艺术 + 模型推理实时可视）、**智脉艺术铁轨**（中央绿廊北段，废弃铁轨艺术化改造 + 数字投影）。朝圣路线"**百年轨道，智慧脉动**"与 10 号场景卡"全球 AI 活动周路线"联动 [data:geometry/public_space.geojson#PUBLIC-001] [data:geometry/green_space.geojson#GREEN-001]。相关公共空间与绿地指标在 `metrics.json` 中均为 known 状态、可直接复算 [metric:public_space_ratio] [metric:green_ratio]。
+**3 个 AI 朝圣地标（概念建议）**：**AI 原点之钟**（大钟寺站前广场，钟韵文化与 AI 起源意象）、**AI 之光塔**（众智园门户广场，光艺术 + 模型推理实时可视）、**智脉艺术铁轨**（中央绿廊北段，废弃铁轨艺术化改造 + 数字投影）。朝圣路线"**百年轨道，智慧脉动**"与 10 号场景卡"全球 AI 活动周路线"联动 [data:geometry/public_space.geojson#PUBLIC-001] [data:geometry/green_space.geojson#GREEN-001]。
+
+**荣誉展示体系（概念建议）**：开发者贡献墙（场景卡 12 代码墙）、协创者名录屏与年度智脉奖构成递进式荣誉阶梯，与脉冲协议 P4 复盘公开联动；荣誉数据仅聚合公开贡献，不做个人评分。相关公共空间与绿地指标在 `metrics.json` 中均为 known 状态、可直接复算 [metric:public_space_ratio] [metric:green_ratio]。
 
 AI 治理建议遵守数据最小化、公开来源、可解释与人工复核原则：城市智能体可辅助识别慢行断点、公共空间热力、设施维护、企业服务需求与活动安全风险，但不替代规划审批、不输出未经授权的个人画像、不声称获得官方实施承诺。所有场景节点均进入结构化图层或合规矩阵。
+
+**公共利益与包容性设计（概念建议）**：以无障碍（GB 50763）、适老与数字化平权为底线——非 AI 替代通道（人工导览、电话预约、线下人工服务）始终保留；涉及公共利益与个人数据的应用进行隐私影响评估（PIA）；运营与开发主体的利益冲突通过协议披露与公众委员会申诉机制处理；夜间工作者、低收入群体与非数字用户的使用需求在详细设计阶段逐项复核。
 
 ### 智脉脉冲协议（运行机制）
 
@@ -161,13 +167,15 @@ AI 治理建议遵守数据最小化、公开来源、可解释与人工复核�
 | P3 发布 | 公开运行，导视状态灯可视化：稳定波形=正常运行、脉冲闪烁=测试中、平线=已停用 | 运行边界失效即降级回 P2 | 停止服务并恢复场地 |
 | P4 复盘 | 数据回检、公众反馈与失败记录公开，决定继续、调整或退役 | 未复盘不续期 | 退役并完成数据与场地恢复 |
 
+**统一回滚触发器（五类）**：任一 AI 服务出现下列情形即按协议降级或停用——**安全类**（实体或线上安全事件，事故即停）、**隐私类**（数据越界或投诉成立）、**文保类**（与文物风貌冲突即撤除）、**生态类**（扰民、噪声或公共空间占用争议）、**经济类**（运营不可持续且无替代资金来源）。触发器清单与各场景卡退出条件一一对应，纳入 P4 复盘公开记录。
+
 12 张场景卡、3 个产业测试场景、年度活动与 AI 朝圣地标均按此协议定义运行边界；协议是方案运行机制建议，不替代规划审批、行业监管与法定评估。
 
 ## 用地、建筑规模与拆改留方案
 
 用地方案依据国土空间调查、规划、用途管制分类等公开标准表达，形成完整、闭合、无缝的用地分区 [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [data:geometry/land_use.geojson#LU-001]。13 类用地中科研 0802 为主导（14 地块），商业 05（10）、住宅 0701（6）、教育 0804（6）、医疗 0806（6）、文化 0803（3）、体育 0805（1）、社区服务 0702（1）、公园绿地 1401（12）、防护绿地 1402（9）、广场 1403（2）、道路 1207（81）、留白 16（4），合计 155 地块无缝覆盖 [depth:land_use_layout]。
 
-建筑方案区分保留、改造、更新、新建与待确认对象：由于缺少现状建筑、权属、控规与工程条件，本方案只提供**方法框架与待校准清单**，不编造拆改留结论 [depth:retain_renovate_demolish] [depth:height_massing_character]。`geometry/buildings.geojson` 的 93 栋概念建筑全部标注 `status=design_proposal`、`confidence=low`，仅表达体量组织意图 [data:geometry/buildings.geojson#BLDG-001] [metric:building_footprint_area_sqm]。总建筑规模、容积率、建筑高度、建筑密度等指标在官方条件缺失时统一为 `status=unknown`（见 `metrics.json` 的 floor_area_ratio，reason 已说明待补条件与复算路径）。
+建筑方案区分保留、改造、更新、新建与待确认对象：由于缺少现状建筑、权属、控规与工程条件，本方案只提供**方法框架与待校准清单**，不编造拆改留结论 [depth:retain_renovate_demolish] [depth:height_massing_character] [standard:MOHURD-ARCH-DESIGN-DEPTH-2016]。`geometry/buildings.geojson` 的 93 栋概念建筑全部标注 `status=design_proposal`、`confidence=low`，仅表达体量组织意图 [data:geometry/buildings.geojson#BLDG-001] [metric:building_footprint_area_sqm]。总建筑规模、容积率、建筑高度、建筑密度等指标在官方条件缺失时统一为 `status=unknown`（见 [metric:floor_area_ratio]，reason 已说明待补条件与复算路径）。
 
 ## 交通、轨道、市政与公共服务设施
 
@@ -178,15 +186,19 @@ AI 治理建议遵守数据最小化、公开来源、可解释与人工复核�
 - **慢行断点**：概念提出北五环跨环慢行节点与绿廊南北两端景观节点（详见图 04 与 `constraints.geojson`）[data:geometry/constraints.geojson#CONSTRAINTS]；
 - 停车与非机动车停放以"轨道 + 接驳 + 慢行"为优先序，具体规模待交通专项与控规条件确认。
 
-市政与公共服务设施覆盖 AI 产业服务设施（算力、数据、合规、投融资服务点）、人才生活服务设施、新型基础设施（端侧算力驿站、分布式能源节点，场景卡 10）与传统市政设施融合 [depth:municipal_new_infrastructure]。管线、能源、排水、防洪、消防等工程资料缺失时列为正式深化前置条件，通过 `assumptions.json` 说明待补，不写成审定条件。
+市政与公共服务设施覆盖 AI 产业服务设施（算力、数据、合规、投融资一站式服务点，企业服务智能体融入 [scenario:enterprise-service-copilot]）、人才生活服务设施、新型基础设施（端侧算力驿站、分布式能源节点，场景卡 10）与传统市政设施融合 [depth:municipal_new_infrastructure]。管线、能源、排水、防洪、消防等工程资料缺失时列为正式深化前置条件，通过 `assumptions.json` 说明待补，不写成审定条件。
 
 ## 蓝绿空间、公共空间与城市风貌
 
-**蓝绿空间（概念建议）**：以中央智脉绿廊为脊（260 m 宽、贯通南北、总面积约 284.9 ha、绿地率 25.0%）[data:geometry/green_space.geojson#GREEN-001] [metric:green_ratio]，西侧防护绿带呼应小月河场景赋能翼，东侧沿学院路设防护绿带，各街区植入口袋公园与广场节点 [data:geometry/public_space.geojson#PUBLIC-001] [depth:blue_green_public_space]。6 处广场（大钟寺站前、原点发布、众智园门户、五道口生活、清华东路西口、南部社区）构成公共空间骨架 [data:geometry/public_space.geojson#PUBLIC-001]。
+**蓝绿空间（概念建议）**：以中央智脉绿廊为脊（260 m 宽、贯通南北、总面积约 284.9 ha、绿地率 25.0%）[data:geometry/green_space.geojson#GREEN-001] [metric:green_ratio]，西侧防护绿带呼应小月河场景赋能翼，东侧沿学院路设防护绿带，各街区植入口袋公园与广场节点 [data:geometry/public_space.geojson#PUBLIC-001] [depth:blue_green_public_space]。6 处广场（大钟寺站前、原点发布、众智园门户、五道口生活、清华东路西口、南部社区）构成公共空间骨架。
+
+**公共空间组件库（6 类，概念建议）**：广场（节点聚合）、口袋公园（住区嵌入）、导视节点（波形状态灯语言）、活动草坪（绿廊分段）、水景旱喷（站前广场）、智慧城市家具（充电/座椅/信息屏）——组件复用保证公共空间可识别、可维护、可批量实施。
 
 ![交通骨架与蓝绿系统概念图（概念建议）](assets/figures/mobility-bluegreen.png)
 
 **城市风貌（概念建议）**：融合京张铁路历史文化、中关村创新文化与 AI 创新文化三线叙事 [depth:overall_spatial_structure] [standard:MOHURD-URBAN-DESIGN-MEASURES]：清华园火车站遗址节点与智脉艺术铁轨承载铁路记忆；AI 原点之钟、AI 之光塔承载 AI 文化；导视符号系统以"铁轨—波形"母题统一——公共导视采用"波形状态灯"语言：稳定波形=正常运行、脉冲闪烁=测试中、平线=已停用，与智脉脉冲协议联动，市民无需阅读说明即可识别 AI 服务运行状态。风貌控制区分官方管控、设计建议与待确认条件，严禁在无文保或控规依据时给出伪精确控制线。所有品牌、字体、图像、肖像与企业标识均需清权来源（见 `report/copyright_statement.md`）。
+
+**视觉识别（VI）规范（概念建议）**：Logo 以"脉"字与铁轨—波形母题为核心，规定最小使用尺寸（屏显 ≥24 px、印刷 ≥10 mm）、安全区（不小于 1/4 字高留白）、黑白与反白版本、标准色 #4A5560（京张铁灰）与 #0FA3B1（AI 青）及辅助色；字体授权清单与图元文件见 `report/copyright_statement.md`。VI 图元及导视系统落地前须经官方审批，本规范为概念建议。
 
 ## 更新项目清单、实施政策与分期计划
 
@@ -207,11 +219,24 @@ AI 治理建议遵守数据最小化、公开来源、可解释与人工复核�
 | JZ-11 | 无障碍 AI 导行系统 | 公共服务/无障碍 | 标准与数据授权梳理 | 无障碍设施标准复核 | 残联+运营方 [data:geometry/constraints.geojson#CONSTRAINTS] |
 | JZ-12 | 全球 AI 活动周公共路线 | 运营/品牌 | 活动许可与版权清权 | 公共空间许可与安全预案 | 联合运营机构 [data:geometry/phasing.geojson#PHASE-001] |
 
+**协议挂接（概念建议）**：12 个项目按智脉脉冲协议归入三类——**P1 申报类**（JZ-04/07/08/11，先完成申报要件）、**P2 测试类**（JZ-06/09/10/12，受控试点后发布）、**P3 发布类**（JZ-01/02/03/05，公共空间与基础设施先行，运行后纳入 P4 复盘）。各项目"放行证据"列即其首道审批门，未通过不得进入下一节拍。
+
 **实施分期（概念建议）**（`geometry/phasing.geojson`，[depth:renewal_project_list] [depth:phasing_implementation]）：**P1 近期（2026–2030）**——三重点区先行：众智园、原点社区核心带、大钟寺核心带（[data:geometry/phasing.geojson#PHASE-001]）；**P2 中期（2030–2035）**——绿廊全线贯通 + 大钟寺北块与南部北块（[data:geometry/phasing.geojson#PHASE-002]）；**P3 远期（2035–2040）**——南部更新带与留白弹性用地（[data:geometry/phasing.geojson#PHASE-003]）。**征集周期（100 天）与实施分期严格区分**：前者是提交成果时间要求，后者是城市更新推进路径。近期可先以轻量设施、运营活动与服务平台启动（场景卡、朝圣地标、导行系统），远期内容等待正式控规、市政、交通与权属条件确认。年度活动体系（开发者大会、场景开放日、国际 AI 周）说明运营对象、频率、责任边界与转化路径，不写宣传口号 [source:AGENT-TASKBOOK]。
+
+**运营治理结构（概念建议）**：建议以"一个秘书处、三个片区站、两个专业翼、一个公众委员会"组织日常运营——秘书处负责脉冲协议与台账管理，片区站对接三重点区，专业翼分别负责产业服务与公益服务，公众委员会对活动与场景行使知情、建议与申诉权。资金来源按"财政引导（可公开申请）—场景服务收益—开源与公益基金"三源组合；活动按"立项—试办—评估—续办/退役"四步管理，评估不通过即停止并公开原因。
 
 ## 指标体系、面积复算与合规矩阵
 
-指标体系（`metrics.json`）含 6 项：总体设计范围面积（site_area_sqm，实测 11,412,825.4 m2，官方 11,400,000 m2，偏差 0.11%）、建筑基底面积（building_footprint_area_sqm，约 116.8 ha）、绿地率（green_ratio，25.0%）、公共空间比例（public_space_ratio）、重点区数量（key_area_count，3）与容积率（floor_area_ratio，`status=unknown`，官方 FAR 控制缺失）。所有 known 指标均可从 GeoJSON 复算 [metric:site_area_sqm] [data:geometry/green_space.geojson#GREEN-001] [depth:metrics_recalculation]。
+指标体系（`metrics.json`）含 6 项：总体设计范围面积（site_area_sqm，实测 11,412,825.4 m2，官方 11,400,000 m2，偏差 0.11%）、建筑基底面积（building_footprint_area_sqm，约 116.8 ha）、绿地率（green_ratio，25.0%）、公共空间比例（public_space_ratio，约 6.2 ha）、重点区数量（key_area_count，3）与容积率（floor_area_ratio，`status=unknown`，官方 FAR 控制缺失）。所有 known 指标均可从 GeoJSON 复算 [metric:site_area_sqm] [data:geometry/green_space.geojson#GREEN-001] [depth:metrics_recalculation]。
+
+| 指标 | 当前值 | 置信度 | 用途 |
+| --- | --- | --- | --- |
+| 总体设计范围面积 | 11,412,825.4 m2 | 高（实测复算） | 全部空间比例的分母 |
+| 建筑基底面积 | 约 116.8 ha | 中（概念体量） | 建筑规模量级参考 |
+| 绿地率 | 25.0% | 中（provisional 边界） | 蓝绿系统绩效 |
+| 公共空间比例 | 约 6.2 ha（0.54%） | 中（provisional 边界） | 公共空间系统绩效 |
+| 重点区数量 | 3 | 高（图层核对） | 详细设计范围确认 |
+| 容积率 | unknown | 待官方条件 | 不进入任何结论 |
 
 ![核心指标与证据图（概念建议）](assets/figures/metrics-evidence.png)
 
@@ -223,7 +248,13 @@ AI 治理建议遵守数据最小化、公开来源、可解释与人工复核�
 
 **双语要求**：本方案中文主文件与英文对照译稿 `proposal.en.md` 完整对齐（bilingual_contract_version 1）；A3/A0 图纸、HTML 与含文字图件均提供双语表达，优先使用 `docs/terminology-glossary.md` 推荐译法。所有图片、图纸、图标、数据与代码资产在 `sources.json` 与 `report/copyright_statement.md` 中说明来源、许可与授权状态；HTML 页面不加载远程脚本、远程地图瓦片、远程字体、iframe、表单或外部 API，不跟踪评审者行为。
 
-**风险与缺资料清单**：official boundary、key area、控规、道路红线、地块权属、建筑现状、市政管线、文保与公共服务缺口均进入 `assumptions.json`（ASSUME-001/002/003）与本节；任何缺少官方控规、道路红线、权属、市政、消防或文保条件的结论均降级为待确认事项 [depth:risk_missing_data] [data:geometry/constraints.geojson#CONSTRAINTS] [source:SITE-PACKAGE]。
+**风险与缺资料清单**：official boundary、key area、控规、道路红线、地块权属、建筑现状、市政管线、文保与公共服务缺口均进入 `assumptions.json`（ASSUME-001/002、A-CONTROLS-001、ASSUME-004）与本节；任何缺少官方控规、道路红线、权属、市政、消防或文保条件的结论均降级为待确认事项 [depth:risk_missing_data] [data:geometry/constraints.geojson#CONSTRAINTS] [source:SITE-PACKAGE]。
+
+**证据失效级联降级**：若本方案引用的任何来源（`sources.json` 登记条目或官方数据）被撤回、失效或修正，对应主张、指标、图件与合规矩阵条目同步降级为待确认，并重算受影响几何与指标；降级记录进入变更记录与脉冲协议 P4 复盘。
+
+**文保专项（概念建议）**：清华园车站遗址与沿线历史构件一律低干预处理，AI 展示装置全部站外可撤回、不依附文物构件、不改变遗址结构；大钟寺周边设计以风貌协调为底线，与文保单位的冲突处理以撤回方案为默认路径。
+
+**术语一致性**：核心概念（智脉一带、一带三核、脉冲协议等）的中英文译法以 `docs/terminology-glossary.md` 为准，中英两文件逐段对齐（bilingual_contract_version 1），A3/A0 图纸与 HTML 采用同一术语体系。
 
 本方案不声称官方批准、审定控规、最终土地权属、最终建设规模或保证实施。AI agent 对事实、来源、版权、空间数据、指标与表达负责；维护者和专业评审可依据自检结果、空间复核与合规矩阵要求返修或拒绝。
 

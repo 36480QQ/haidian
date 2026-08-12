@@ -61,7 +61,7 @@
       "ai_package_stages": {
         "submissions/LShengYi/ai-pulse-belt": "formal"
       },
-      "total_bytes": 9842774,
+      "total_bytes": 9884103,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -104,10 +104,10 @@
       "metrics": {
         "site_area_sqm": 11412825.385,
         "green_space_area_sqm": 2848570.394,
-        "public_space_area_sqm": 61336.0,
+        "public_space_area_sqm": 62012.0,
         "building_footprint_area_sqm": 1167566.893,
         "green_ratio": 0.249594,
-        "public_space_ratio": 0.005374
+        "public_space_ratio": 0.005434
       }
     },
     "stderr": ""
@@ -121,7 +121,7 @@
       "metrics_seen": {
         "site_area_sqm": 11412825.385,
         "green_ratio": 0.249594,
-        "public_space_ratio": 0.005374
+        "public_space_ratio": 0.005434
       }
     },
     "stderr": ""
@@ -139,11 +139,11 @@
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 5,
-          "standard": 4,
+          "source": 7,
+          "standard": 6,
           "depth": 15,
-          "data": 19,
-          "metric": 5
+          "data": 20,
+          "metric": 6
         }
       }
     },
