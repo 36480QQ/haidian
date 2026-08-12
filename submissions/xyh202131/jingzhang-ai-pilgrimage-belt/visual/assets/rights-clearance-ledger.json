@@ -3,7 +3,7 @@
   "ledger_id": "RIGHTS-01",
   "title": "Jing-Zhang V2 file-level rights status ledger",
   "as_of": "2026-08-12",
-  "scope": "All 104 files declared by this submission, including manifest.json, the complete source-rights and file-rights evidence chain, the Round 7 climate-resilience contract and figures, the Round 8 century-time museum contract and figures, the Round 9 mission-economy contract and figures, the Round 10 civic-operations integration contract and figures, and the four synchronized publications; 103 entries are non-manifest content files.",
+  "scope": "All 108 files declared by this submission, including manifest.json, the complete source-rights and file-rights evidence chain, the merged Round 7–10 contracts and figures, the Round 11 review-synthesis/professional-handoff index and bilingual figure pair, and the four synchronized publications; 107 entries are non-manifest content files.",
   "evidence_contract": {
     "source_rights_schema": "source-rights-evidence.schema.json",
     "source_rights_instance": "source-rights-evidence.json",
@@ -27,8 +27,8 @@
     "mixed_source_derivative_pending_independent_review": "The file combines package-authored material with repository or third-party source traces and remains pending independent review."
   },
   "file_coverage": {
-    "expected_manifest_entries": 104,
-    "expected_non_manifest_entries": 103,
+    "expected_manifest_entries": 108,
+    "expected_non_manifest_entries": 107,
     "coverage_rule": "Every manifest path appears in exactly one compatibility asset_group and exactly one asset_record. Path coverage and resolvable declared parent links do not equal an exhaustive dependency graph or legal clearance.",
     "asset_groups": [
       {
@@ -133,7 +133,7 @@
         "id": "RIGHTS-GROUP-05",
         "name": "Generated visual and publication outputs",
         "rights_status": "generated_derivative_pending_embedded_asset_audit",
-        "origin_basis": "Figures, PDFs, and offline HTML generated for this package from the bilingual narrative, structured evidence, and conceptual geometry. Ten bilingual SVG pairs—key areas, key-area sections, twin-track overview, non-AI service blueprint, urban-metabolism ledger, failure-governance writeback, climate-resilience corridor, century timeline, industry/public-value state, and year-round civic operations—are package-authored editable sources pending independent rights review; their paired PNG files are deterministic display exports.",
+        "origin_basis": "Figures, PDFs, and offline HTML generated for this package from the bilingual narrative, structured evidence, and conceptual geometry. Eleven bilingual SVG pairs—key areas, key-area sections, twin-track overview, non-AI service blueprint, urban-metabolism ledger, failure-governance writeback, climate-resilience corridor, century timeline, industry/public-value state, year-round civic operations, and review/professional handoff—are package-authored editable sources pending independent rights review; their paired PNG files are deterministic display exports.",
         "paths": [
           "drawings/a3-booklet.pdf",
           "drawings/a0-boards.pdf",
@@ -190,17 +190,21 @@
           "assets/figures/year-round-civic-operations.png",
           "assets/figures/year-round-civic-operations.svg",
           "assets/figures/year-round-civic-operations.en.png",
-          "assets/figures/year-round-civic-operations.en.svg"
+          "assets/figures/year-round-civic-operations.en.svg",
+          "assets/figures/review-professional-handoff.png",
+          "assets/figures/review-professional-handoff.svg",
+          "assets/figures/review-professional-handoff.en.png",
+          "assets/figures/review-professional-handoff.en.svg"
         ],
         "limits": [
-          "No standalone source font file is shipped by the package. The four PDFs contain embedded NotoSansSC subset font programs; the A3 PDFs also reference unembedded Helvetica. HTML requests system font stacks, and the concrete fonts resolved while rasterizing the twenty checked-in SVG files to PNG were not recorded. These facts do not establish license or embedding compliance.",
-          "Editable package-authored SVG sources are declared for the bilingual key-areas, key-area-sections, site-overview, non-ai-service-blueprint, urban-metabolism-ledger, failure-governance-writeback, climate-resilience-corridor, century-timeline, industry-public-value-state, and year-round-civic-operations pairs. Editable sources exist for Markdown, HTML, JSON, and GeoJSON, but no separate editable vector or layout source is declared for every other PNG or PDF.",
+          "No standalone source font file is shipped by the package. The four PDFs contain embedded NotoSansSC subset font programs; the A3 PDFs also reference unembedded Helvetica. HTML requests system font stacks, and the concrete fonts resolved while rasterizing the twenty-two checked-in SVG files to PNG were not recorded. These facts do not establish license or embedding compliance.",
+          "Editable package-authored SVG sources are declared for the bilingual key-areas, key-area-sections, site-overview, non-ai-service-blueprint, urban-metabolism-ledger, failure-governance-writeback, climate-resilience-corridor, century-timeline, industry-public-value-state, year-round-civic-operations, and review-professional-handoff pairs. Editable sources exist for Markdown, HTML, JSON, and GeoJSON, but no separate editable vector or layout source is declared for every other PNG or PDF.",
           "The conceptual JZ logo grammar has not received trademark or production-brand clearance."
         ]
       }
     ],
-    "expected_manifest_file_count": 104,
-    "expected_non_manifest_content_file_count": 103
+    "expected_manifest_file_count": 108,
+    "expected_non_manifest_content_file_count": 107
   },
   "asset_records": [
     {
@@ -257,7 +261,7 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "f51ea67f139b5baa6ded45200c98c604bf0eee5c4408d53f914a09365b8591d8",
+        "digest": "c4d84f9c0a63f922ed77a0935be7b8aac0a31bec59475bb1aa6933fe0cb47213",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -334,7 +338,7 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "61927c9a81d51d96acb1c7d3f9c25b32095d207c87b8ae74300656a3f1405057",
+        "digest": "999d6b907854d18cd1d6b935a2d38737b3499d86280c46526dd6b6ea085f4b22",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -490,7 +494,7 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "a35b19c88707cb240c6c293f7d7d27145925ca131154f9d6d93f34816737b902",
+        "digest": "a6a4462babf974b6e7608b6f81ddbf02e8b97e042a6dcf326b924c4ec4445765",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -566,7 +570,7 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "48abf5ccf85b84085ee74a12b83fc27691023bf0da1e58f1232ea40c9f75b156",
+        "digest": "15d129267ca12c6109f9e272a8eee7115b94f93b3ddfa11b2f1aafce8c22319b",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -613,7 +617,7 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "331cc3158d4ed0db123b52866ac486dd8ac683986fa407a25fd85ee05e27c2f3",
+        "digest": "e56086fe75e64a6ead9d4e235960d924d2616973c00e302649c9882fc7577ba1",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -658,7 +662,7 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "6f9eed18216a1275078c02bea990b288867a37ab0a9d0d4da05dfef99e3caf7d",
+        "digest": "f6ac8108a2b5dbfcdca77188aa272f1df71292c6390884c3c3253e81e03df325",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -939,7 +943,7 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "d471ec24907a0d41b798a03c1a9c7061314589cda7befff51d341fb89bd6ca1f",
+        "digest": "34134424d8ffc58207f40dd0274a29e0ae46189c6630fbcd8a2747e6047f67de",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -1356,7 +1360,7 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "f0cd20b589c00b0bc3e759b37cab4feb41322045d48c0346544e1b296b822fc7",
+        "digest": "a4d53c8bb128067ede94892ba224f3c7e5eb18aa811da5cc2290b08f61470fcb",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -1399,7 +1403,10 @@
           "SOURCE-MISSION-ECONOMY-PROPOSAL",
           "SOURCE-JZ-CIVIC-OPERATIONS-G0-V1",
           "SOURCE-YEAR-ROUND-CIVIC-OPERATIONS-FIGURE",
-          "SOURCE-CIVIC-OPERATIONS-PROPOSAL"
+          "SOURCE-CIVIC-OPERATIONS-PROPOSAL",
+          "SOURCE-JZ-REVIEW-HANDOFF-V1",
+          "SOURCE-REVIEW-PROFESSIONAL-HANDOFF-FIGURE",
+          "SOURCE-REVIEW-HANDOFF-PROPOSAL"
         ],
         "parent_asset_refs": [
           "sources.json",
@@ -1445,7 +1452,7 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "15e5d9bf1dab131dbba7388878cd1a2981812c652072b2c1a2d34c85013a9e21",
+        "digest": "b24d43e5312e9e30de6139c8ca2888a730e7f3c807a70545c37b41b5a4035a23",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -1537,7 +1544,7 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "cb83a723f11c5794bb45bdd7093ee4cb4af07163124269e7ef8e0b2f685bf5d0",
+        "digest": "a0c84950b72bde4191da099a04720e362e574432b0b4fdc572db26ef74600e9f",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -1585,7 +1592,7 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "477be170b562f0b36260388e2f6daa2a5551276606141adb2a8718e25c4332de",
+        "digest": "1f35ac4359d458c1841bf48f6bc43eebf5aa23256841361c6d94c438c4051750",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -1636,7 +1643,7 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "e707883c9663945910d3496905461367e78a5fe40283b46423802b164cec59a1",
+        "digest": "8f5835af07cf0e1640728cb5860b4cff91b6238304c00994385ad4484b779029",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -1705,7 +1712,7 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "16754aff1b6fd81a2db3fdc40b42ab76c93a2cd2fd6c3c61cc65cdc031e7a6f9",
+        "digest": "4dd45f6c8a34acd80f30db9361560ea95689eef2bfe2fc6feae3bba8103824ad",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -1770,7 +1777,7 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "dfa2cdc9bcfdc3b828317fc0f68630434a05b73a2e5c59e93ea14cb742804283",
+        "digest": "722352f2e93e01664b92f397ebfda6c658e51f504924c3d189d106a45111055e",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -2807,7 +2814,7 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "caa905b71dd5c65d433944c323c1416dcc00ace4f48ef2d1df031ff8303c9d6d",
+        "digest": "1e31b1e1938544ef8978012900c8b8126b47184dfbf8fb5f96dc2d362e590ccd",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -2884,7 +2891,7 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "5611b16e0a105e9c45d80319311824c6b5e0c716134f7f261d1897a7f2f41596",
+        "digest": "c85d8f6029d61de85d302072b40a6e37be0bf684c7d647edd4d17c4c918fcdf8",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -2976,7 +2983,7 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "b5bdec720ce7a532d6966408a6143bb502d624d7f2b45eea068e0b8da9cb0ad8",
+        "digest": "7eaefc42b0bbc611134578e4191d23b9c9de30d532fe804fea4406dfefa2d31f",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -3045,7 +3052,7 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "5f4f4abc6867e1419347a38b4c86dc246bb02881fe248aca7161796d11acce18",
+        "digest": "7c6c9e63da74c65bc650ffc388d25aef322d2c265107a78435825c873ff2fc6a",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -3114,7 +3121,7 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "ff7f7a57eed59d2ae0edbff2fceea7257c25ee1a4f7d1d74fb77ee44e4f40b82",
+        "digest": "4222709be163478b9bc5e0d1025d068c9bd50ef30b5c364e5d7da9387f139acd",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -3837,7 +3844,7 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "083e83299393d2a71460c2970c56763094e3a57165f9726459aea667371bf750",
+        "digest": "1bb768db5f9e9522f7f5b88cf94c62e3ddb978e42edc18bdb532674b8c5e54c3",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -3942,7 +3949,7 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "4efbcb750dab3e5c4062bbe8bffb1a17a6010afed973091e537480cbd37a00b1",
+        "digest": "9e5c493289467c53486d49878410ceb9e8e6e84778f977450f2932d8c8ef5230",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -5886,6 +5893,208 @@
         "status": "package_authored_svg_editable_source",
         "evidence_ref": "../../report/narrative.md#第-10-轮长期公共运营集成与十轮审计--round-10-long-term-civic-operations-integration-and-ten-round-audit",
         "limitation": "G0 operations relationship diagram only; not an approved calendar, roster, operating plan, event or performance record."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-04"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-105",
+      "path": "assets/figures/review-professional-handoff.png",
+      "role": "proposal_figure",
+      "language": "zh",
+      "asset_class": "raster_figure",
+      "origin_status": "generated_derivative_pending_embedded_asset_audit",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "21b218ede029483b1a06ee3b9b0f1293aec623a0e92d55e357b71094d6c70522",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [
+          "SOURCE-REVIEW-PROFESSIONAL-HANDOFF-FIGURE"
+        ],
+        "parent_asset_refs": [
+          "assets/figures/review-professional-handoff.svg",
+          "visual/assets/implementation-handoff-matrix.json"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX",
+        "TOOL-CHROME"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "deterministic_export_from_package_authored_svg",
+        "evidence_ref": "../../report/narrative.md#第-11-轮评审收束与专业深化交接--round-11-review-synthesis-and-professional-handoff",
+        "limitation": "G0 review index only; renderer fonts and independent rights review remain pending, and no authoritative input, professional acceptance, approval, field test, GO decision or implementation result is shown."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-04"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-106",
+      "path": "assets/figures/review-professional-handoff.svg",
+      "role": "proposal_figure_editable_source",
+      "language": "zh",
+      "asset_class": "generated_visual_source",
+      "origin_status": "package_authored_editable_source_pending_independent_review",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "44d9b5a265f4e67654dc191e9c266bcaba31b653c640113833284b77efbafeac",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [
+          "SOURCE-REVIEW-PROFESSIONAL-HANDOFF-FIGURE"
+        ],
+        "parent_asset_refs": [
+          "proposal.md",
+          "visual/assets/implementation-handoff-matrix.json"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "package_authored_svg_editable_source",
+        "evidence_ref": "../../report/narrative.md#第-11-轮评审收束与专业深化交接--round-11-review-synthesis-and-professional-handoff",
+        "limitation": "G0 review and handoff relationship diagram only; not authoritative data, professional opinion, accepted duty, approval or implementation evidence."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-04"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-107",
+      "path": "assets/figures/review-professional-handoff.en.png",
+      "role": "proposal_figure",
+      "language": "en",
+      "asset_class": "raster_figure",
+      "origin_status": "generated_derivative_pending_embedded_asset_audit",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "7e4b84c69503130b6076cdf3f8c34101de02674977a0b3ef5fd7ef30ce74ed3f",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [
+          "SOURCE-REVIEW-PROFESSIONAL-HANDOFF-FIGURE"
+        ],
+        "parent_asset_refs": [
+          "assets/figures/review-professional-handoff.en.svg",
+          "visual/assets/implementation-handoff-matrix.json"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX",
+        "TOOL-CHROME"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "deterministic_export_from_package_authored_svg",
+        "evidence_ref": "../../report/narrative.md#第-11-轮评审收束与专业深化交接--round-11-review-synthesis-and-professional-handoff",
+        "limitation": "G0 review index only; renderer fonts and independent rights review remain pending, and no authoritative input, professional acceptance, approval, field test, GO decision or implementation result is shown."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-04"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-108",
+      "path": "assets/figures/review-professional-handoff.en.svg",
+      "role": "proposal_figure_editable_source",
+      "language": "en",
+      "asset_class": "generated_visual_source",
+      "origin_status": "package_authored_editable_source_pending_independent_review",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "8bfc30193251e57e4d98e667cb547ab2e3c4b8a87441acc87462f11c8623ca2f",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [
+          "SOURCE-REVIEW-PROFESSIONAL-HANDOFF-FIGURE"
+        ],
+        "parent_asset_refs": [
+          "proposal.en.md",
+          "visual/assets/implementation-handoff-matrix.json"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "package_authored_svg_editable_source",
+        "evidence_ref": "../../report/narrative.md#第-11-轮评审收束与专业深化交接--round-11-review-synthesis-and-professional-handoff",
+        "limitation": "G0 review and handoff relationship diagram only; not authoritative data, professional opinion, accepted duty, approval or implementation evidence."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
