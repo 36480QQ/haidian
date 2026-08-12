@@ -1,5 +1,13 @@
 # 方案迭代记录
 
+## v1.1-3 - 2026-08-12
+
+visual 视觉对齐（图新视觉 #22304E 系）。
+
+- **visual/index.html + index.en.html 色板对齐**（build_visual.py 生成，脚本 git exclude）：`--navy` #1B2A4A → #22304E（图 INK 墨蓝主文字）、`--green` #3FA66B → #3E8E63（图 GREEN_D）、`--coral` #E05B4B → #A93F35（图 CORAL）、阴影 rgba(27,42,74) → rgba(34,48,78)；`--amber` #E8A33D 与图一致未动
+- **生成器可复现验证**：重跑 build_visual.py 后 diff 仅颜色 6 处/页，无内容漂移
+- **校验**：self-check 四门 PASS → preflight PASS
+
 ## v1.1-2 - 2026-08-12
 
 区域协同补强（评审「任务书相关性」维度缺口，任务书 agent.1「区域创新协同关系」）。
