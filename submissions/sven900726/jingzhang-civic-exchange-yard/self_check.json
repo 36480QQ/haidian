@@ -15,7 +15,9 @@
       "proposal_files": [
         "submissions/sven900726/jingzhang-civic-exchange-yard/proposal.md"
       ],
-      "changelog_files": [],
+      "changelog_files": [
+        "submissions/sven900726/jingzhang-civic-exchange-yard/changelog.md"
+      ],
       "changed_files": [
         "submissions/sven900726/jingzhang-civic-exchange-yard/agent.json",
         "submissions/sven900726/jingzhang-civic-exchange-yard/assets/figures/key-areas.en.png",
@@ -29,6 +31,7 @@
         "submissions/sven900726/jingzhang-civic-exchange-yard/assets/figures/site-overview.en.png",
         "submissions/sven900726/jingzhang-civic-exchange-yard/assets/figures/site-overview.png",
         "submissions/sven900726/jingzhang-civic-exchange-yard/assumptions.json",
+        "submissions/sven900726/jingzhang-civic-exchange-yard/changelog.md",
         "submissions/sven900726/jingzhang-civic-exchange-yard/compliance_matrix.json",
         "submissions/sven900726/jingzhang-civic-exchange-yard/design_depth_matrix.json",
         "submissions/sven900726/jingzhang-civic-exchange-yard/drawings/a0-boards.en.pdf",
@@ -55,13 +58,14 @@
         "submissions/sven900726/jingzhang-civic-exchange-yard/self_check.json",
         "submissions/sven900726/jingzhang-civic-exchange-yard/sources.json",
         "submissions/sven900726/jingzhang-civic-exchange-yard/standard_matrix.json",
+        "submissions/sven900726/jingzhang-civic-exchange-yard/visual/assets/light_experience_protocol.json",
         "submissions/sven900726/jingzhang-civic-exchange-yard/visual/index.en.html",
         "submissions/sven900726/jingzhang-civic-exchange-yard/visual/index.html"
       ],
       "ai_package_stages": {
         "submissions/sven900726/jingzhang-civic-exchange-yard": "formal"
       },
-      "total_bytes": 4165093,
+      "total_bytes": 4304233,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -122,9 +126,10 @@
         "site_area_sqm": 11412825.386,
         "key_area_count": 3.0,
         "green_ratio": 0.123423,
-        "public_space_ratio": 0.073281,
         "exchange_touchpoint_count": 12.0,
-        "exchange_spur_count": 3.0
+        "light_experience_scenario_count": 4.0,
+        "experience_right_count": 6.0,
+        "public_space_ratio": 0.073281
       }
     },
     "stderr": ""
@@ -138,7 +143,7 @@
       "summary": {
         "standard_matrix_items": 6,
         "design_depth_items": 15,
-        "known_metric_refs_required": 8,
+        "known_metric_refs_required": 10,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
@@ -146,7 +151,7 @@
           "standard": 5,
           "depth": 15,
           "data": 11,
-          "metric": 5
+          "metric": 7
         }
       }
     },

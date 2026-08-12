@@ -121,6 +121,34 @@
       "assumptions": [
         "Spurs are conceptual connectors pending transport review."
       ]
+    },
+    "light_experience_scenario_count": {
+      "status": "known",
+      "value": 4,
+      "unit": "count",
+      "source_files": [
+        "proposal.md",
+        "visual/assets/light_experience_protocol.json"
+      ],
+      "formula": "count(scenario_cards where group=light_experience)",
+      "confidence": "high",
+      "assumptions": [
+        "This is a design-coverage count, not observed use or operating performance."
+      ]
+    },
+    "experience_right_count": {
+      "status": "known",
+      "value": 6,
+      "unit": "count",
+      "source_files": [
+        "proposal.md",
+        "visual/assets/light_experience_protocol.json"
+      ],
+      "formula": "count(experience_rights)",
+      "confidence": "high",
+      "assumptions": [
+        "The rights are conceptual governance requirements pending legal and operator review."
+      ]
     }
   }
 }
