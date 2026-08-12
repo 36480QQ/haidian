@@ -11,7 +11,7 @@ This submission package (proposal text, geometry, metrics, drawings, HTML, figur
 - 竞赛官方公告与场地包（`brief/site-package/`、`data/source_registry.json`）：以仓库登记用途为准，仅用于本方案创作。
 - 北京量子信息科学研究院官网公开信息（https://www.baqis.ac.cn/，访问日期 2026-08-11）：公开网页信息引用，来源已登记于 `sources.json`（BAQIS-2026）。
 - 全球创新生态案例：公开报道层面的模式归纳，仅作背景参考（`sources.json` CASE-QUANTUM-ECOSYSTEMS，background_only）。
-- 本方案未使用非公开规划资料、未授权图片、字体、商标、人物肖像或受版权保护材料。
+- 本方案未使用未经公开披露的规划资料、未授权图片、字体、商标、人物肖像或受版权保护材料。
 
 ## 资产清单 / Asset Inventory
 

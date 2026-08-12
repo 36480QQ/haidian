@@ -110,7 +110,7 @@
     },
     "scenario_node_count": {
       "status": "known",
-      "value": 17,
+      "value": 23,
       "unit": "count",
       "source_files": [
         "geometry/public_space.geojson"
@@ -118,7 +118,7 @@
       "formula": "count(SCENARIO_NODE features)",
       "confidence": "high",
       "assumptions": [
-        "17 scenario nodes: 14 scenario cards + 3 along-line QKD nodes."
+        "23 scenario nodes: 17 previous cards + quantum security lab + 4 QKD relay nodes + industry service center."
       ]
     },
     "test_scenario_count": {
@@ -179,15 +179,42 @@
     },
     "qkd_node_count": {
       "status": "known",
-      "value": 3,
+      "value": 7,
       "unit": "count",
       "source_files": [
         "geometry/public_space.geojson"
       ],
-      "formula": "count(QKD along-line nodes)",
+      "formula": "count(QKD hub + relay nodes)",
       "confidence": "low",
       "assumptions": [
-        "Conceptual QKD nodes along the Jing-Zhang corridor (north Qianghuayuan direction, central Wudaokou direction, south Dazhongsi station); spacing and relay engineering require professional confirmation."
+        "Conceptual QKD network skeleton: 3 hub nodes (north Qinghuayuan direction, central Wudaokou direction, south Dazhongsi station) + 4 relay nodes (Qinghe bridge, Zhichun road, Jimen bridge, Xizhimen direction); spacing, relay, and engineering require professional confirmation."
+      ]
+    },
+    "quantum_security_lab_count": {
+      "status": "known",
+      "value": 1,
+      "unit": "count",
+      "source_files": [
+        "proposal.md",
+        "compliance_matrix.json"
+      ],
+      "formula": "count(quantum security laboratory cluster)",
+      "confidence": "medium",
+      "assumptions": [
+        "One laboratory cluster in the Superposition Yard: testing/certification, security exercises, and standardization workshop (conceptual)."
+      ]
+    },
+    "quantum_job_family_count": {
+      "status": "known",
+      "value": 6,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count(quantum security job family types proposed)",
+      "confidence": "medium",
+      "assumptions": [
+        "Six conceptual job families: quantum network engineer, key management engineer, quantum security SOC analyst, testing/certification engineer, science education specialist, industry service staff."
       ]
     }
   }

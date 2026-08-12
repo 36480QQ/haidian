@@ -56,6 +56,12 @@
       "source_type": "background_only",
       "usage": "Publicly reported model-level summaries of innovation ecosystems (Hefei quantum industry cluster, IBM Quantum Network, Kendall Square, Station F, one-north, Shenzhen Hetao, Zhangjiang AI Island). Mechanism-level references only; not formal evidence for any enterprise, investment, or policy claim.",
       "notes": "All case summaries in proposal.md are framed as 'mechanisms for professional teams to deepen'; no specific enterprise facts are asserted without a verified source."
+    },
+    {
+      "id": "QKD-NETWORK-TECHNOLOGY",
+      "source_type": "background_only",
+      "usage": "Public technical background on QKD network topology: node-link structure, transmission distance limits, trusted relay / quantum relay concepts, backbone-relay-access layering. Used only to justify the conceptual network skeleton design; no specific deployed-network claims are made.",
+      "notes": "No external URL verified during this session; the relay concepts are treated as general technical background and the proposal marks all network deployments as conceptual suggestions awaiting professional confirmation."
     }
   ]
 }
