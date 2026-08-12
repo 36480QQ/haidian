@@ -216,6 +216,33 @@
       "assumptions": [
         "conceptual project list"
       ]
+    },
+    "open_cocreation_contract_count": {
+      "status": "known",
+      "value": 12,
+      "unit": "count",
+      "source_files": [
+        "proposal.md",
+        "visual/assets/scenario-operation-matrix.json"
+      ],
+      "formula": "count(scenario_minimum_operating_contracts)",
+      "confidence": "high",
+      "assumptions": [
+        "conceptual SLA draft aligned with 12 scenario cards"
+      ]
+    },
+    "open_cocreation_gate_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count(G0_to_G4_pilot_gates)",
+      "confidence": "high",
+      "assumptions": [
+        "conceptual exit/entry gates, not statutory permits"
+      ]
     }
   }
 }

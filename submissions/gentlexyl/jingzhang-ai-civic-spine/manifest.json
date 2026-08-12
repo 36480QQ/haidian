@@ -23,7 +23,7 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "ae9c717bec0f9038611d4045bd14a3b7cac56b838ef2792ca0984076f090665b"
+      "sha256": "5c8ef54f107317953dcc6f80007c14b5ab864d5c91da781fb076565085d44d2a"
     },
     {
       "path": "agent.json",
@@ -35,13 +35,13 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "b72f4d586c81774f211f5e5039c146093868ecc9612a2674d78c83b21b41c1aa"
+      "sha256": "452b68b61c4bbdc845b9081acfb5f881dfc5e6a6236facdf7f691f448fd78683"
     },
     {
       "path": "assumptions.json",
       "role": "assumptions",
       "required": true,
-      "sha256": "fa0490a67184662b076aa473b9f56240a35aa1b9516769f3b312c3a3d29c6cdd"
+      "sha256": "feeb224e6defb5a03c6a7efe1c94b62248cf43da8631a68f4d9444b51a6552a3"
     },
     {
       "path": "sources.json",
@@ -77,13 +77,13 @@
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "e5664c8d9eea9afcab0bfd8d08e75fc956794fff9489038d928ce7659a719a46"
+      "sha256": "6dc29ca767cd0f4a5df477868d324dbc6c5968bf6a61de37ff91dcc4edf353c9"
     },
     {
       "path": "report/narrative.md",
       "role": "narrative",
       "required": false,
-      "sha256": "93896c25a2cd248fa74fdbd01d7fd3abb2901a3a6bdc6b29e9218be92da812d6"
+      "sha256": "12c648617c25836448e8bb1f545135fd72d4dcde6e4859a75d4cbf40d27e8991"
     },
     {
       "path": "report/copyright_statement.md",
@@ -107,7 +107,7 @@
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
-      "sha256": "53bfbac3f68f96a56dee58752f6ae200639f8cc8a08162fd82ff979e2d34d859"
+      "sha256": "ae831b73ed615b9783608514caf7796837a8655f7f28cf86257ebd3189d30a5c"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -234,6 +234,24 @@
       "role": "figure",
       "required": false,
       "sha256": "c269393a8aef0e6c72d69521446c013c757029356e756a78c30b358147160b47"
+    },
+    {
+      "path": "visual/assets/key-area-node-plans.json",
+      "role": "visual_asset",
+      "required": false,
+      "sha256": "40accc6b0492edd809643e6ae8bd5ca9127fc0246b395ca5871d01d8f3d64b05"
+    },
+    {
+      "path": "visual/assets/scenario-operation-matrix.json",
+      "role": "visual_asset",
+      "required": false,
+      "sha256": "d8bea80f553b794dfd10ad6dc4f2dd8dcdb2bf447ac72f9eabf2ccd37477b7bf"
+    },
+    {
+      "path": "visual/assets/public-interest-audit.json",
+      "role": "visual_asset",
+      "required": false,
+      "sha256": "5cb6e96cfb5105fd242067f149024408af8d9ace22ed6f876930bf895fdec6ee"
     }
   ],
   "validation_claim": {
