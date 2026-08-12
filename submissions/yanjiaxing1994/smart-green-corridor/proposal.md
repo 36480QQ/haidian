@@ -19,7 +19,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 **方案完整性声明**：本方案提交包覆盖全部13项 agent_taskbook 评审维度（`brief/site-package/agent_taskbook.json`），含目标契合度、功能匹配度、品牌识别度、区域协同性、规划创新性、产业支撑度、场景可感知度、空间明确性、可转化性、表达完整性、公开合规性、国际传播力和长期运营价值 [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]。方案实施可行性由RACI责任矩阵（11方×3阶段，§7.6）、成本估算框架（19项×3期汇总5,250-9,080万元，§7.7）、关键工程结构可行性论证（6项，§7.5）和19项更新项目分期计划（§7.1-7.3）共同支撑 [depth:implementation_feasibility] [depth:phasing_implementation]。方案风险合规由DPIA隐私影响评估Checklist（10张AI场景卡全覆盖，§5.5末）、来源证据分类台账（sources.json，13条已登记来源含7项正式来源+2项provisional+1项待补充授权）和版权资产清单（report/copyright_statement.md，11类资产逐项清权）共同保障 [depth:risk_compliance] [depth:data_protection]。
 
-证据引用：[source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [depth:existing_conditions_diagnosis] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]
+证据引用：[source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [depth:existing_conditions_diagnosis]，并对照 [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] 组织。
 
 [source:DATA-SRC-PROVISIONAL-BOUNDARIES-20260605]
 
