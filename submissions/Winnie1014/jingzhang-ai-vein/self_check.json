@@ -61,7 +61,7 @@
       "ai_package_stages": {
         "submissions/Winnie1014/jingzhang-ai-vein": "formal"
       },
-      "total_bytes": 2116725,
+      "total_bytes": 3780848,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -121,7 +121,16 @@
       "metrics_seen": {
         "site_area_sqm": 11412825.386,
         "green_ratio": 0.123423,
-        "public_space_ratio": 0.073281
+        "public_space_ratio": 0.073281,
+        "building_coverage_ratio": 0.027233,
+        "land_use_zone_count": 4.0,
+        "key_area_count": 3.0,
+        "renewal_project_count": 6.0,
+        "scenario_card_count": 12.0,
+        "testing_validation_scenario_count": 3.0,
+        "persona_count": 6.0,
+        "pilgrimage_landmark_count": 3.0,
+        "global_case_study_count": 6.0
       }
     },
     "stderr": ""
@@ -133,17 +142,17 @@
       "ok": true,
       "issues": [],
       "summary": {
-        "standard_matrix_items": 6,
+        "standard_matrix_items": 8,
         "design_depth_items": 15,
-        "known_metric_refs_required": 5,
+        "known_metric_refs_required": 23,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 5,
-          "standard": 5,
+          "source": 17,
+          "standard": 7,
           "depth": 15,
-          "data": 11,
-          "metric": 5
+          "data": 14,
+          "metric": 26
         }
       }
     },
