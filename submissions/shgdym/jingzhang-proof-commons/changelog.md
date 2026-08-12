@@ -1,5 +1,11 @@
 # 方案迭代记录
 
+## v2.4 - 2026-08-12
+
+- 主品牌统一为“京张X / JINGZHANG X”，以三重交汇解释 X：铁路遗产与城市更新、AI研发与公共生活、技术试验与人工终决。
+- 原六道验证门、十四空间账本和三站实施体系保留为品牌下的专业方法，不改变空间数据、临时边界属性或实施承诺边界。
+- 同步更新中英文正文、HTML、技术图件及 A3/A0 输出。
+
 ## v2.3 - 2026-08-12
 
 - Added `visual/assets/review-evidence.json` as a single auditable source for fourteen spatial ledgers, four flagship scenes, three key-area delivery packages and five proposed regional interfaces.

@@ -1,5 +1,5 @@
 ---
-title: "JINGZHANG LEDGER LINE: A Civic AI Belt That Can Be Verified, Taken Over, and Restored"
+title: "JINGZHANG X: Test AI Before the City Decides"
 author_github: "shgdym"
 language: "en"
 translation_file: "proposal.md"
@@ -13,11 +13,11 @@ scenarios: ["public-safety-operations-review", "robot-delivery-low-speed", "ai-t
 iteration: "v2.0"
 ---
 
-# JINGZHANG LEDGER LINE
+# JINGZHANG X
 
 ## Coordinated Research Area: Industry and Future City Research
 
-Jingzhang Ledger Line translates the railway's culture of engineering proof into a civic procedure for AI entering real urban settings. Every technology passes six gates: **source registration, bounded trial, informed public use, human takeover, independent review, and restorative exit**. The gates are both an operating protocol and a spatial language along the railway heritage park. They do not create a rail or road redline and do not turn testing into procurement, certification, or an implementation promise. [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK]
+JINGZHANG X brings a century of rail heritage, everyday civic life and accountable AI onto one public innovation corridor. The `X` is not a decorative unknown: it marks three crossings, where rail heritage meets urban renewal, AI research meets public life, and technical trials meet human final judgment. Every technology passes six gates: **source registration, bounded trial, informed public use, human takeover, independent review, and restorative exit**. The gates are both an operating protocol and a spatial language along the railway heritage park. They do not create a rail or road redline and do not turn testing into procurement, certification, or an implementation promise. [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK]
 
 The structure is one line, three stations, two wings, ten stitches, fourteen spatial ledgers, twelve scenes, and three delivery gates. One civic slow-mobility verification spine links differentiated stations at Zhongzhi Park, AI Origin, and Dazhongsi; two wings connect professional services and everyday-life feedback; ten east-west stitches repair access; fourteen ledger cells make spatial claims recomputable; twelve AI scenes can be stopped; and three gates advance only when evidence matures. Every layer is derived from the same provisional envelope and is recomputable, but none is an official boundary, survey, ownership judgment, or approved regulatory plan. [data:geometry/site_boundary.geojson#SITE-001] [depth:overall_spatial_structure]
 
@@ -179,7 +179,7 @@ Resources follow a four-plus-eight strategy: four flagship scenes receive design
 
 ### Identity, three landmarks and eight components
 
-The original mark combines two tracks and an open node: the heritage track gives direction, the evidence track records versions, and the unclosed node permits challenge, revision, and exit. Colours are ledger blue, civic green, human-judgment gold, warning coral, and night ink. The mark must not imply endorsement beside enterprise logos or enter uncleared merchandise and permanent signage.
+The original mark combines two crossing tracks, a human-review node and an open extension path. Blue and green tracks form a clear `X` for the three crossings of heritage and renewal, research and public life, and trial and human judgment. The central node makes consequential decisions reviewable by people; the unclosed gold path allows revision, extension or exit. Colours are evidence blue, civic green, human-judgment gold, warning coral, and night ink. The mark must not imply endorsement beside enterprise logos or enter uncleared merchandise and permanent signage.
 
 Three removable, low-glare, non-advertising landmarks are the Rail Evidence Gate at Zhongzhi, Open Contribution Ring at AI Origin, and Urban Trial Beacon at Dazhongsi. Eight components are source sign, test sign, staffed desk, offline service panel, movable seat, low-glare light, rain-garden sensor plinth, and tactile map. The contribution wall records verifiable public contributions, failures, and exits; it does not create a personal prestige ranking. [metric:pilgrimage_landmark_count] [metric:public_component_count]
 
@@ -187,7 +187,7 @@ Three removable, low-glare, non-advertising landmarks are the Rail Evidence Gate
 
 The executable VI standard fixes mark construction, minimum clearspace, minimum digital size, five functional colours, type hierarchy and three levels of public information. Every application shows scene status, rights information and staffed/non-AI action entry together. Mimicking an official seal, implying enterprise endorsement, permanent advertising and hiding pause or exit status are prohibited. Identity therefore becomes a consistent public interface for responsibility and choice rather than decoration. [source:AGENT-TASKBOOK] [metric:public_component_count]
 
-![Construction, colour, type, information hierarchy and misuse rules](assets/figures/identity-guidelines.en.png)
+![JINGZHANG X construction, colour, type, information hierarchy and misuse rules](assets/figures/identity-guidelines.en.png)
 
 ### Inclusion: equal service without an application
 
