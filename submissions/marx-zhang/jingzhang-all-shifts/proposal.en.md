@@ -142,6 +142,26 @@ The shift form records only activation conditions, service access, staffed hando
 
 ![Zhongzhiyuan shift-log template](assets/figures/zhongzhiyuan-shift-log.en.png)
 
+## Phase 3 Deepening: Three Areas × Daily Action Scripts
+
+These daily scripts place the three Shift Yards within four parts of one day: 06–10 arrival and morning handover; 10–18 shared work, learning and care; 18–24 late meals, exchange and community service; and 00–06 recovery, emergency and safe departure. They are not confirmed rosters, footfall forecasts, field surveys or implementation authorisation. They organize existing personas, scenario cards and spatial prototypes as a conceptual workflow: how someone arrives, gets a service, hands over in space and turns to a person [metric:daily_script_area_count] [metric:daily_script_shift_count].
+
+![Three Shift Yards 24-hour daily-script overview](assets/figures/daily-script-overview.en.png)
+
+The Zhongzhiyuan Maintenance Yard lets maintenance technicians, researchers and staffed support hand over in a public ground floor: morning separates equipment arrival from walking; daytime shares the maintenance bench and learning table; evening uses a staffed desk for help and appeal; night checks removable components and restores the garden. AI only handles authorised equipment state or document support; it never records personal performance [source:AGENT-TASKBOOK].
+
+![Zhongzhiyuan Maintenance Yard daily action script](assets/figures/zhongzhiyuan-daily-script.en.png)
+
+AI Origin Handover Yard puts learners, caregivers and low-digital-literacy users in one service chain: visual, audio and staffed guidance support near-campus arrival; learning tables, rest seating and a service desk connect by day; no-scan meals, appeal and quiet recovery remain through the evening. AI offers only explainable orientation or service assistance; it never replaces care judgment or infers identity or emotion [standard:BARRIER-FREE-ENVIRONMENT-LAW].
+
+![AI Origin Handover Yard daily action script](assets/figures/ai-origin-daily-script.en.png)
+
+Dazhongsi Exchange Yard organizes transfers, short rests and safe departure for couriers, small-shop operators and night workers: morning separates transfer, delivery and walking; daytime opens the Shift Table and small-shop interface; evening combines sheltered exchange, late meals and a walking route; night retains staffed help and appeal referral. AI only publishes aggregate orientation or assists shop operations with owner-controlled data; it never tracks personal routes, automatically punishes or blocks users [standard:GENERATIVE-AI-INTERIM-MEASURES].
+
+![Dazhongsi Exchange Yard daily action script](assets/figures/dazhongsi-daily-script.en.png)
+
+At every yard and hour, staffed access, no-scan service, a continuous accessible route and public duty information stay online. Missing staffed access, blocked accessibility, covert tracking, personal scoring, automated punishment or production-system connection means pause and do not open. The scripts do not substitute for real site, fire, title, labor or professional-verification conclusions.
+
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
 | Persona | Core needs |
