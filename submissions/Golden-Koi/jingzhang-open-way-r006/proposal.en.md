@@ -7,7 +7,7 @@ translation_of: "proposal.md"
 bilingual_contract_version: "1"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "One civic spine, three forms of open ground, two collaboration wings and a 100-day evidence route translate AI innovation into understandable, human-takeover-ready and reversible urban life."
-iteration: "v0.6.2-local-rescue"
+iteration: "v0.6.2"
 ---
 
 # JingZhang Open Way | The Open Ground
@@ -287,7 +287,7 @@ This is an AI-agent open-call entry, not a professional-firm prequalification fi
 
 Text, diagrams, identity primitives and layout are participant-authored with disclosed AI assistance. The conceptual illustration prompt, hash, purpose and non-evidence boundary are recorded in the rights ledger. Case studies use brief factual/method summaries linked to primary publishers; no protected plan, photograph or long quotation is copied. OpenStreetMap, where referenced, remains desk context under ODbL attribution. The offline page loads no remote media, script, font or tracker. [source:OSM-NUMERIC-20260809] [standard:MOHURD-URBAN-DESIGN-MEASURES]
 
-Hard stops include calling provisional geometry official; inventing firms, partnerships, investment, user support or field facts; face recognition, social scoring, forced profiling or digital-only service; no takeover, appeal, export, deletion or recovery; automatic expansion from demonstration; and pushing or publishing this local rescue before user approval. [source:INTERNAL-CANDIDATE-RECORD-ARTIFACT-R006] [depth:risk_missing_data]
+Hard stops include calling provisional geometry official; inventing firms, partnerships, investment, user support or field facts; face recognition, social scoring, forced profiling or digital-only service; no takeover, appeal, export, deletion or recovery; automatic expansion from demonstration; and any republication, redistribution or separate submission without participant authorization. This version is participant-authorized and submitted as the formal AI-entry review candidate. [source:INTERNAL-CANDIDATE-RECORD-ARTIFACT-R006] [depth:risk_missing_data]
 
 ## References
 

@@ -7,7 +7,7 @@ translation_file: "proposal.en.md"
 bilingual_contract_version: "1"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以一条公共服务脊、三种开放地面、两翼协同和100天证据路线，把AI创新转译为可理解、可接管、可退出的城市日常。"
-iteration: "v0.6.2-local-rescue"
+iteration: "v0.6.2"
 ---
 
 # 京张开放之路｜开放地面
@@ -291,7 +291,7 @@ iteration: "v0.6.2-local-rescue"
 
 版权方面，文字、图表、图形母题和排版由参赛者与所披露 AI 工具共同生成；概念插画的提示、文件 hash、用途和非证据边界记录在权利台账。国外案例只作简短事实与方法转译，并链接原发布者；不复制受版权保护的图纸、摄影或长段文本。OpenStreetMap 如被引用，只作桌面语境并保留 ODbL 归属；本地页面不加载远程媒体、脚本、字体或追踪。[source:OSM-NUMERIC-20260809] [standard:MOHURD-URBAN-DESIGN-MEASURES]
 
-硬停止包括：把暂定边界称为官方；虚构企业、合作、投资、用户支持或现场事实；使用人脸识别、社会评分、强制画像或数字唯一通道；没有人工接管、申诉、导出、删除和恢复；以示范自动扩张；未获用户确认就推送或发布。本地救援稿在用户批准前不得更新现有 PR。[source:INTERNAL-CANDIDATE-RECORD-ARTIFACT-R006] [depth:risk_missing_data]
+硬停止包括：把暂定边界称为官方；虚构企业、合作、投资、用户支持或现场事实；使用人脸识别、社会评分、强制画像或数字唯一通道；没有人工接管、申诉、导出、删除和恢复；以示范自动扩张；以及未经参与者授权再次发布、转载或另行提交。本版本已获参与者授权并作为正式 AI 智能体参赛评审候选提交。[source:INTERNAL-CANDIDATE-RECORD-ARTIFACT-R006] [depth:risk_missing_data]
 
 ## 参考资料
 

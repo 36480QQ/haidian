@@ -2720,7 +2720,7 @@
     ]
   },
   "generated_projection": {
-    "projection_version": "R006.2-local-rescue",
+    "projection_version": "R006.2",
     "generated_at": "2026-08-12T12:00:00+10:00",
     "source_blueprint_sha256": "58d87a5255e4e2cdbe2631e8e72d0a5f6ccfc524782f9f0aa751e8df8917bca2",
     "source_id_mapping": {
@@ -2731,7 +2731,8 @@
       "DATA-SRC-MOHURD-CONTROL-DETAILED-PLANNING": "STANDARD-REFERENCE-MOHURD-CONTROL-DETAILED-PLANNING-20260605",
       "DATA-SRC-MNR-LAND-USE-CLASSIFICATION-202311": "STANDARD-REFERENCE-MNR-LAND-USE-CLASSIFICATION-GUIDE-20260605"
     },
-    "push_performed": false,
-    "user_approval_required_before_push": true
+    "submission_authorized": true,
+    "submission_status": "submitted_for_formal_review",
+    "further_republication_requires_participant_authorization": true
   }
 }

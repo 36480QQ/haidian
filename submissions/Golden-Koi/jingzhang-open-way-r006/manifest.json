@@ -12,7 +12,7 @@
     "agent_name": "Codex App + Morrow",
     "model": "OpenAI Codex (GPT family) with Morrow orchestration",
     "model_family": "gpt",
-    "model_detail": "Codex App local rescue R006.2; deterministic content, graphic and validation loop; user approval required before any push"
+    "model_detail": "Codex App R006.2 formal AI-entry review candidate; deterministic content, graphic and validation loop; participant-authorized and submitted for formal review"
   },
   "generated_at": "2026-08-12T12:00:00+10:00",
   "files": [
@@ -20,7 +20,7 @@
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "07eaf8acaee59fdbbc73f4ea4a6d2c43515e3a1d19fdea27e7a295ea6fe198ff"
+      "sha256": "adff3cd49ed39cd2999a143136558db7cbadaecf52e2723c84f0c984ddbfffb4"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -249,7 +249,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "c7689ba39350441f365ec0e0ebb13012d14f63f48f1ebc42150a142f02f6b8cc",
+      "sha256": "014e8edaec1cc78acc0334361c6d405333e2ff3c458e19dc1c33e1e1d6c7f57e",
       "language": "zh"
     },
     {
@@ -268,7 +268,7 @@
       "path": "drawings/a0-boards.en.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "94d2b418cafa203a21a398c94012286cd5c29dc4dc7506da34eb5b79d44f893b",
+      "sha256": "b5b035f7de035eef0475268382436bc1b89768c6133a3e7e2e347f65024d0db7",
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf"
     },
@@ -276,14 +276,14 @@
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "d2862b44110b9277b3642c9af18907eac64eec4f835b5d8919179bde5363f18e",
+      "sha256": "ff374a3f0257e61c692698cc797c832949c4ad4309554d3e89532b7b39a3adaf",
       "language": "zh"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "386e7f08c57b6ed7f6d66f3e72ce36ebd19254f038fbde0edfa4cbdf2a4ec5e1",
+      "sha256": "2ac1373d7c0ca63adc9f8817ee836eedaf0aebb42dfcfce8608445151177c7ee",
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf"
     },
@@ -291,14 +291,14 @@
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "465be8d11440ed479123a26b93841d347a49319e2e57d9490626bcb0b6b2e7c1",
+      "sha256": "b66db4dec45b045a53de6f8c0ebbdaef9f1e66ef59c425e4106938c1d7738bc5",
       "language": "zh"
     },
     {
       "path": "drawings/phone-brief.pdf",
       "role": "drawing",
       "required": false,
-      "sha256": "12f824e2e356c992fc73020d81cb162b74a72a2d61e2bfcaa4c4f99cda25b4cf",
+      "sha256": "70abbfaccbec7474969d3f2bfeae28d63bae11e8e01f31ae9813a2cbc1d7d733",
       "language": "neutral"
     },
     {
@@ -370,7 +370,7 @@
       "path": "proposal.en.md",
       "role": "narrative",
       "required": true,
-      "sha256": "614738c1b8db2741f452326bdccabfefcc30817e7c4f94c6fa5ab2bf57ddf40f",
+      "sha256": "78592f758558d2c0e9fe444735039211264710f70ff6b96412de4a9f8f570708",
       "language": "en",
       "translation_of": "proposal.md"
     },
@@ -378,7 +378,7 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "046802146b8873a72381401c4d412afff28c956988f12de2603c03c1f92c0350",
+      "sha256": "2271b683faf8efe763f272eeeb71dbba3671933289d2859d763a989bdfd280c9",
       "language": "zh"
     },
     {
@@ -392,14 +392,14 @@
       "path": "report/narrative.md",
       "role": "narrative",
       "required": true,
-      "sha256": "dd990b4f7fede359d9178db3c598cf5e06e4e9bba5f398787a123b0b5599d1f1",
+      "sha256": "e9aa54cc09f35851eb9f7ea7ef8ae514ced60520b828ee09a660fb774caa90f1",
       "language": "neutral"
     },
     {
       "path": "report/proposal.en.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "2786fbcf135c05f580dc7e9e918841f265c5f9ca44e6e9a915c69b64a5085d76",
+      "sha256": "f9a104576b3f2034d0c250c314f87b95f49e60ab7a24e4d95a207870fde9cb78",
       "language": "en",
       "translation_of": "report/proposal.html"
     },
@@ -407,20 +407,20 @@
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "7a2ca98aca6e46bc103713a6e73ff1140babdc003d2f9bf924036dd88c0377c0",
+      "sha256": "0370dc412dfd55baf585ff01b91bcaa520dcf5a5490804c9cbb36ee0cffc35cd",
       "language": "zh"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "f5669671750a0509627e471e98497147db12b7f675a29efc281fd368ae4e14cb"
+      "sha256": "3516853874baaf7597fa818e1d3d274ea925560f7d393098bd0395a225e25f98"
     },
     {
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "ca00f4f6ad6e49cea3afa9f20cad1e67a10d6321b58b9ef9f7c01871ae60d6ec"
+      "sha256": "0f598a71c7b5830dce79a77ce6f8b2b82d95a8dee3734b2c908944705218db5d"
     },
     {
       "path": "standard_matrix.json",
@@ -433,7 +433,7 @@
       "role": "evidence_data",
       "required": true,
       "language": "neutral",
-      "sha256": "8e136c3fc8646e2dfc252c80c06cbe47e48c31c1fe06d943eaa8c5772ccf6457"
+      "sha256": "b54716eb828a38e18a98497c5b1f7b720f6b754d5367aca94efa0330990ece3c"
     },
     {
       "path": "visual/assets/rights_ledger.json",
@@ -446,7 +446,7 @@
       "path": "visual/index.en.html",
       "role": "visualization",
       "required": true,
-      "sha256": "3c194fed32cbe3619f133b1445d47e326be8df808e8c8d638c6415d08e505549",
+      "sha256": "233a0638b08695d3889c4b85e72deec377afb5f2c22449dec2591de25d3360b0",
       "language": "en",
       "translation_of": "visual/index.html"
     },
@@ -454,7 +454,7 @@
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
-      "sha256": "6f435353627cbf5db05221541a3c313954e88a5c6de5559147d803334a80396f",
+      "sha256": "befb4f19929da340ef537587a564f8555268893e21474140a53fcad41a252de2",
       "language": "zh"
     }
   ],

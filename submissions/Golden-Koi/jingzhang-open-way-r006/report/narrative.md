@@ -673,11 +673,11 @@ Wayfinding runs from belt identity, zone/wing role and cultural chapter to direc
 
 Dates, venues, hosts, budgets, partners and government support are all U. GO only seeks next-stage approval and never auto-implements.
 
-# 本地审查与保证登记 / Local Assurance Register
+# 提交审查与保证登记 / Submission Assurance Register
 
 本文件记录参赛者可控制的保证，不把自检提升为专业、现场或法定证明。
 
-| 范围 | 本地验收 | 外部边界 |
+| 范围 | 提交包验收 | 外部边界 |
 |---|---|---|
 | 内容闭合 | agent.1–agent.6 数量、ID、来源和投影一致 | 内容完整不等于实施批准 |
 | 图面 | 五组中英核心图、A3/A0、网页全页视觉复核 | A0 实印两米测试仍为 X6 |
@@ -685,6 +685,6 @@ Dates, venues, hosts, budgets, partners and government support are all U. GO onl
 | PDF | 严格重开、字体嵌入、Unicode 抽取、全页栅格审阅 | PDF/UA 与真实 AT 仍为 UNKNOWN/X6 |
 | 空间 | 仓库空间复算与拓扑门通过 | official_boundary=false；X1/X2 未通过 |
 | 权利 | 参与者生成资产台账、AI 概念插画提示与 hash | 外部机构/合作/许可不得推定 |
-| 发布 | 本地候选可供用户审阅 | 未经用户确认不 push、不更新 PR、不发布 |
+| 提交与发布 | 已获参与者授权并作为正式 AI 智能体参赛评审候选提交 | 未经参与者授权不得再次发布、转载或另行提交 |
 
 最终状态只由当前字节的官方脚本、自检和独立红队共同给出；历史 PASS 不可复用。已知外部门 X1–X6 继续 BLOCKED，但它们不应被误写为仓库包装失败。
