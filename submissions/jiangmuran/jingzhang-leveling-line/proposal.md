@@ -776,7 +776,7 @@ Logo 方向取自水准点标石的实物形态与水准仪的读数十字丝，
 
 **先说清楚哪些不是本方案的增量。** 逐份核读本次征集这两条赛道的全部方案后可以确认，<!-- BASELINE6:BEGIN -->
 
-以下六项已成为事实标准，括号内为 678 份语料中的实测份数：场景级停用与退出条件（407）、无AI等价路径（300）、现场安全员（287）、远程与物理急停（149）、限速（81）、事件日志（55）。最薄的一项也有 55 份，最厚的 407 份。**这是下界**——换了说法的方案不会被关键词计入。本方案全部采纳这六项并写入下方场景卡，但**不把它们当作创新陈述**——它们是准入底线。把底线当卖点，说明没有读过这个场。
+以下六项已成为事实标准，括号内为 678 份语料中的实测份数：场景级停用与退出条件（407）、无AI等价路径（300）、现场安全员（289）、远程与物理急停（149）、限速（81）、事件日志（56）。最薄的一项也有 56 份，最厚的 407 份。**这是下界**——换了说法的方案不会被关键词计入。本方案全部采纳这六项并写入下方场景卡，但**不把它们当作创新陈述**——它们是准入底线。把底线当卖点，说明没有读过这个场。
 
 <!-- BASELINE6:END -->
 
@@ -1433,7 +1433,7 @@ node visual/assets/verify.js
 
 仓库的 `validate_submission.py` 内建 `validate_simulation_consistency`，会把 `simulation.json` 的任务记录与 `metrics.json` 中的 `simulation_success_rate`、`tool_schema_pass_rate`、`energy_budget_violations`、`audit_completeness` 交叉复算。<!-- SIMJSON:BEGIN -->
 
-全场 678 份中有 **15 份**提交了它——名单在随包的 `visual/assets/field_extras.json` 的 `simulation_json.keys` 里，逐条可查。本方案不交，理由必须写出来，否则这只是一处空缺。
+全场 678 份中有 **16 份**提交了它——名单在随包的 `visual/assets/field_extras.json` 的 `simulation_json.keys` 里，逐条可查。本方案不交，理由必须写出来，否则这只是一处空缺。
 
 <!-- SIMJSON:END -->
 
@@ -1636,5 +1636,9 @@ node visual/assets/verify.js
 10. `changelog.md` —— **含本方案自查发现并修正的错误记录**；
 11. `agent.json` —— 生成方法完整披露，`model` 字段非占位符；
 12. A3 与 A0 PDF —— 420×297 mm 与 841×1189 mm，字体已子集嵌入，可用 `pypdf` 核验 `DescendantFonts` 下 `FontFile3` 存在（中日韩字体走这条；拉丁面 DejaVuSans-Bold 是简单 `/TrueType`，子集嵌在 `FontFile2`，因此只查 `FontFile3` 会漏看它——它同样已子集嵌入）。
+
+**先说清楚这份清单是给谁的。** 仓库的 `scripts/review_submission.py` 只把九个文件整份交给评审模型——`proposal.md`、`manifest.json`、`metrics.json`、`assumptions.json`、`sources.json`、`self_check.json` 与三份矩阵——外加五张固定 PNG、两份 PDF 的前三页（图像）和两张首屏截图。它**不读** `geometry/`、`visual/assets/`、`risk.json`、`changelog.md` 与 `agent.json`。
+
+因此上面 12 项里，**AI 评审能按字面执行的是 0 项**：其余各项指名的文件不在它收到的东西里。**拿到仓库的人可以逐项跑完，给本方案打分的模型一项也跑不了。**这句话写在这里，是因为不写就等于在整份清单的尺度上重犯本包两次提交前记下的那条勘误：向一个无法核验的对象发出核验邀请。清单本身不缩水——它对人类评审、对赛后复核、对任何下载了仓库的人都成立。
 
 <!-- CHECKLIST:END -->

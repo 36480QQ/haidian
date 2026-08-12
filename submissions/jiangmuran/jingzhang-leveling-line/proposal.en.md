@@ -762,7 +762,7 @@ This rule turns governance into a spatial design problem, which is why it belong
 
 **First, what is not this proposal's increment.** Reading every proposal in these two tracks confirms that <!-- BASELINE6:BEGIN -->
 
-These six are now de facto standard. The figures in brackets are measured counts across the 678-proposal corpus: scenario-level suspension and exit conditions (407); a non-AI equivalent path (300); an on-site safety officer (287); remote and physical e-stop (149); speed limits (81); event logs (55). The thinnest is at 55, the thickest at 407. **These are lower bounds** — a proposal that words a provision differently is not matched. This proposal adopts all six and writes them into the scenario cards below, but **does not state them as innovation**: they are the floor for entry. Selling the floor as a feature shows you have not read the field.
+These six are now de facto standard. The figures in brackets are measured counts across the 678-proposal corpus: scenario-level suspension and exit conditions (407); a non-AI equivalent path (300); an on-site safety officer (289); remote and physical e-stop (149); speed limits (81); event logs (56). The thinnest is at 56, the thickest at 407. **These are lower bounds** — a proposal that words a provision differently is not matched. This proposal adopts all six and writes them into the scenario cards below, but **does not state them as innovation**: they are the floor for entry. Selling the floor as a feature shows you have not read the field.
 
 <!-- BASELINE6:END -->
 
@@ -1328,7 +1328,7 @@ All 63 answered. Recomputing the floors rather than declaring them means that if
 
 The repository's `validate_submission.py` carries `validate_simulation_consistency`, which cross-checks a `simulation.json`'s task records against `simulation_success_rate`, `tool_schema_pass_rate`, `energy_budget_violations` and `audit_completeness` in `metrics.json`. <!-- SIMJSON:BEGIN -->
 
-**15 of 678** submissions ship one; the roster is in `simulation_json.keys` in the shipped `visual/assets/field_extras.json`, checkable entry by entry. This proposal does not, and the reason has to be written down — otherwise it is simply an absence.
+**16 of 678** submissions ship one; the roster is in `simulation_json.keys` in the shipped `visual/assets/field_extras.json`, checkable entry by entry. This proposal does not, and the reason has to be written down — otherwise it is simply an absence.
 
 <!-- SIMJSON:END -->
 
@@ -1525,5 +1525,9 @@ Every item can be completed independently:
 10. `changelog.md` — **including the errors this proposal found in itself and corrected**
 11. `agent.json` — full disclosure of the generation method; the `model` field is not a placeholder
 12. A3 and A0 PDFs — 420×297 mm and 841×1189 mm, fonts subset-embedded, verifiable with `pypdf` by checking for `FontFile3` under `DescendantFonts` (that is where the CJK faces live; the Latin face DejaVuSans-Bold is a simple `/TrueType` subset-embedded under `FontFile2`, so a check for `FontFile3` alone will not see it)
+
+**Who this list is for.** The repository's `scripts/review_submission.py` hands the reviewing model nine files whole — `proposal.md`, `manifest.json`, `metrics.json`, `assumptions.json`, `sources.json`, `self_check.json` and the three matrices — plus five fixed PNGs, pages 1-3 of the two PDFs as images, and two screenshots. It does **not** read `geometry/`, `visual/assets/`, `risk.json`, `changelog.md` or `agent.json`.
+
+So of the 12 items above, **0 can be executed literally by the AI reviewer**; the rest name files it was not given. **Anyone with the repository can run every one of them; the model that scores this submission can run none.** That is stated here because not stating it would repeat, at the scale of a whole checklist, the erratum this package logged two commits ago about `analysis/`: an invitation to verify, addressed to someone who cannot. The list itself is not reduced — it holds for a human reviewer, for post-award scrutiny, and for anyone who clones the repository.
 
 <!-- CHECKLIST:END -->
