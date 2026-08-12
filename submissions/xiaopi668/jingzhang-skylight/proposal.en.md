@@ -306,6 +306,12 @@ On governance and operations risks:
 - Incident liability and insurance: each scenario operator bears primary responsibility for its AI service; public-liability insurance is suggested for the pilot; the Skylight management office leads incident reporting, review, and corrective tracking [risk:technology_maturity].
 - Risk registry: eight risk categories - data privacy, implementation complexity, public acceptance, operations cost, policy uncertainty, spatial dispute, technology maturity, and equity/inclusion - are registered in `risk.json` with mitigation and human-review arrangements [risk.json].
 
+For the high-impact risks flagged in review, additional mitigation strategies are bound to the core mechanism:
+
+- **Policy uncertainty**: the Skylight Protocol follows "mechanism first, statutory status pending" - implement the autonomously executable parts (park-entry agreements, public disclosure, complaint loop) first, then apply for formal licensing and local regulation based on pilot data; the C0-C7 gate names and order are designed as replaceable interfaces that can align with existing authority review processes without presupposing approval conclusions.
+- **Technology immaturity (AI takeover reliability)**: a tiered verification path applies - high-risk scenarios (e.g., traffic) must pass simulated-fault drills (monthly) plus hardware-in-the-loop bench tests (quarterly) at the Test Window before entering C5 trial; scenarios failing takeover drills remain at C3 pilot and do not advance to C6 go-live. Scenarios below technology-maturity level 2 (lab-validated) may not apply for red risk grade [assumption:A-WINDOW-002].
+- **Public acceptance (complaint loop)**: hotline and offline-desk complaint data are aggregated quarterly and disclosed at "Commons Window" review sessions by category (downtime dissatisfaction / service defects / unclear information); high-frequency issues feed back into protocol amendments - for example, if "inconvenient downtime" complaints exceed 30%, the scenario's window schedule is adjusted. Complaint-amendment-republication forms a closed loop, traceable in maintenance logs.
+
 ## References
 
 1. Qualification Pre-Announcement of the International Open Call for Urban Design of the Centennial Jing-Zhang AI Innovation Belt (Haidian Branch, Beijing Municipal Commission of Planning and Natural Resources, 2026-05-09)
