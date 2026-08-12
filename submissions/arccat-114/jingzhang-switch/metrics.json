@@ -483,6 +483,20 @@
    "assumptions": [
     "概念设计量：按三处重点区概念楼群平均2层估算，不等于法定规模；控规条件到位后重算。"
    ]
+  },
+  "provisional_site_area_difference_ratio": {
+   "status": "known",
+   "value": 0.001125,
+   "unit": "ratio",
+   "source_files": [
+    "geometry/site_boundary.geojson",
+    "sources.json"
+   ],
+   "formula": "abs(site_area_sqm - 11400000) / 11400000 = abs(11412825.386-11400000)/11400000",
+   "confidence": "high",
+   "assumptions": [
+    "公告文字约11.4平方公里口径；临时边界与公告面积的差异率，如实披露的对己不利证据。"
+   ]
   }
  }
 }
