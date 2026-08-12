@@ -86,6 +86,16 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "ai-cultural
 
 三处片区的空间落位均基于粗略替代范围，精确边界待官方发布后复核；片区内的功能、建筑与交通建议均为概念方案，供专业团队深化研究，不构成法定规划或实施结论 [source:BOUNDARY-SOURCE]。
 
+### 三处核心场景概念表达
+
+下列场景图把三处重点区域的空间策略转译为人的日常体验：众智园强调铁路工业遗存、研发协作与公共绿谷的共生；北京 AI 原点社区强调开源活动、社区服务和青少年共创；大钟寺强调轨道门户、智能商业与城市会客厅。图像由 OpenAI 图像生成工具制作，仅表达空间氛围与使用愿景，不作为现状照片、法定边界、面积指标或工程可行性证据；权威依据仍为本包 GeoJSON、指标文件与来源登记。[depth:three_key_area_detailed_design]
+
+![众智园“全栈之谷”概念场景](assets/media/scene-zhongzhiyuan.jpg)
+
+![北京 AI 原点社区“开源街坊”概念场景](assets/media/scene-ai-origin-community.jpg)
+
+![大钟寺“智能商都”概念场景](assets/media/scene-dazhongsi.jpg)
+
 ## AI 创新生态、人才画像与 AI+ 场景
 
 AI 创新生态的空间载体是“要素—空间—运营”的对应关系：土地与空间提供研发、孵化、展示与居住的梯度供给；资金与算力通过科技服务翼与端侧算力驿站触达；数据与场景通过“场景开放日”机制合规开放；人才通过人才特区服务与 15 分钟生活圈留存 [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]。生态图谱与机制细表见 `compliance_matrix.json` 与 HTML 展示页。

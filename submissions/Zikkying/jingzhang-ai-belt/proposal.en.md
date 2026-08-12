@@ -85,6 +85,16 @@ The three key areas receive characterful detailed designs, each organized at imp
 
 All three districts are located on provisional extents and must be re-checked against official polygons; all functional, building and transport proposals are conceptual material for professional teams, not statutory planning or implementation conclusions [source:BOUNDARY-SOURCE].
 
+### Concept Scenes for the Three Cores
+
+The following scenes translate the spatial strategies into everyday experience: Zhongzhiyuan combines railway-industrial heritage, research collaboration and a public green valley; the Beijing AI Origin Community combines open-source events, community services and youth co-creation; Dazhongsi combines a transit gateway, intelligent commerce and a civic living room. The images were made with the OpenAI image-generation tool and communicate atmosphere and use vision only. They are not photographs of existing conditions and do not evidence statutory boundaries, area metrics or engineering feasibility; the GeoJSON, metrics and registered sources remain authoritative.[depth:three_key_area_detailed_design]
+
+![Concept scene: Zhongzhiyuan Full-Stack Valley](assets/media/scene-zhongzhiyuan.jpg)
+
+![Concept scene: Beijing AI Origin Community Open-Source Neighborhood](assets/media/scene-ai-origin-community.jpg)
+
+![Concept scene: Dazhongsi Intelligent Commerce Hub](assets/media/scene-dazhongsi.jpg)
+
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
 The ecosystem's spatial carrier is a factor–space–operation correspondence: land and space provide a gradient of R&D, incubation, display and housing supply; capital and compute arrive through the technology-service wing and edge-compute hubs; data and scenarios open compliantly through Scenario Open Days; talent stays through talent-zone services and 15-minute living circles [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]. The ecosystem map and mechanism tables are registered in `compliance_matrix.json` and the HTML presentation.
