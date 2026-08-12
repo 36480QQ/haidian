@@ -348,7 +348,7 @@ VI 规范（构图/单色/最小尺寸/字体/应用样例见图）：标志构�
 
 ## 用地、建筑规模与拆改留方案
 
-用地布局覆盖九个拼合分区（科研 0802、教育科研 0802、产业商业 05、居住 0701、绿地 1401、留白 16），各分区面积均可从 `geometry/land_use.geojson` 复算。概念建筑体块共 11 栋（基底约 109.9 万平方米，均为概念示意，非现状或批准建筑）。[data:geometry/land_use.geojson] [data:geometry/buildings.geojson] [metric:building_footprint_area_sqm]；此外，[depth:land_use_layout]
+用地布局覆盖九个拼合分区（科研 0802、教育科研 0802、产业商业 05、居住 0701、绿地 1401、留白 16），各分区面积均可从 `geometry/land_use.geojson` 复算。概念建筑体块共 11 栋（基底约 109.9 万平方米，均为概念示意，非现状或批准建筑）。[data:geometry/land_use.geojson] [data:geometry/buildings.geojson] [metric:building_footprint_area_sqm]；此外，[depth:land_use_layout]。概念体量按建筑专业设计深度规定（官方文件到位前作为深化提醒）生成。[standard:MOHURD-ARCH-DESIGN-DEPTH-2016]
 
 控规指标（容积率、建筑高度、建筑密度、退线）全部为 `status=unknown`：组织方尚未公布控规条件，任何数值都将是编造；待正式控制条件到位后，本方案的概念体量可按公式复算校准。[metric:floor_area_ratio] [metric:building_height_m] [depth:development_intensity_controls]
 
@@ -398,6 +398,7 @@ VI 规范（构图/单色/最小尺寸/字体/应用样例见图）：标志构�
 
 ## 风险、版权与合规说明
 
+- **专业标准遵循**：本方案的设计深度、控规表述与用地分类分别遵循城市设计管理办法、控制性详细规划编制审批办法与国土空间用地用海分类指南；控规条件缺失期间所有相关指标保持 `unknown`，不伪造法定控制值。[standard:MOHURD-URBAN-DESIGN-MEASURES] [standard:MOHURD-CONTROL-DETAILED-PLANNING] [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]
 - **资料边界**：仅使用公开或清权资料；未使用非公开规划图件、内部指标或个人隐私信息。[source:SOURCE-REGISTRY]
 - **临时边界**：全部几何为 provisional_rough，不得作为红线、控规、审批或工程依据；官方数据到位后需重算。[source:BOUNDARY-PROVISIONAL]
 - **概念属性**：所有空间落地建议为概念建议、参考方案或供专业团队深化材料；不构成政府审定结论或实施承诺。
@@ -425,3 +426,5 @@ VI 规范（构图/单色/最小尺寸/字体/应用样例见图）：标志构�
 16. 北京市档案馆：《京张路工撮影》（1909 年京张铁路官方影像档案，178 张）。[source:JHZ-ARCHIVES]
 17. 人民网文化频道：《历史上的今天：1909年9月24日 京张铁路通车》，2014-09-24。[source:JHZ-PEOPLE-1909]
 18. 中国新闻网：《百年京张的历史跨越》，2019-09-23。[source:JHZ-CHINANEWS]
+19. 《中华人民共和国无障碍环境建设法》，2023-09-01 施行。[standard:BARRIER-FREE-ENVIRONMENT-LAW]
+20. 国务院办公厅：《关于切实解决老年人运用智能技术困难的实施方案》（国办发〔2020〕45 号），2020。[standard:ELDERLY-SMART-TECH-PLAN-2020-45]

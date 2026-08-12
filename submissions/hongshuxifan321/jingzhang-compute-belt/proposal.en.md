@@ -349,7 +349,7 @@ Accessibility and elder-friendly requirements run through all scenarios: public 
 
 ## Land Use, Building Scale, and Retain/Renovate/Demolish/New
 
-The land-use layout covers nine tiled zones (research 0802, education-research 0802, industry-commerce 05, residential 0701, green 1401, reserved 16); every zone area is recomputable from `geometry/land_use.geojson`. Concept building envelopes total 11 (footprint ~1.099 million m², all conceptual illustrations, not existing or approved buildings).[data:geometry/land_use.geojson] [data:geometry/buildings.geojson] [metric:building_footprint_area_sqm]; additionally, [depth:land_use_layout]
+The land-use layout covers nine tiled zones (research 0802, education-research 0802, industry-commerce 05, residential 0701, green 1401, reserved 16); every zone area is recomputable from `geometry/land_use.geojson`. Concept building envelopes total 11 (footprint ~1.099 million m², all conceptual illustrations, not existing or approved buildings).[data:geometry/land_use.geojson] [data:geometry/buildings.geojson] [metric:building_footprint_area_sqm]; additionally, [depth:land_use_layout]. Concept envelopes follow the architectural design-depth regulation (a deepening reminder until the official document is available).[standard:MOHURD-ARCH-DESIGN-DEPTH-2016]
 
 Regulatory-plan metrics (FAR, height, density, setback) are all `status=unknown`: the organizer has not published regulatory-plan conditions, so any number would be fabricated; once official controls arrive, the concept volumes can be recalibrated by formula.[metric:floor_area_ratio] [metric:building_height_m] [depth:development_intensity_controls]
 
@@ -399,6 +399,7 @@ Full sources, formulas, confidence, and assumptions live in `metrics.json`; task
 
 ## Risks, Copyright, and Compliance
 
+- **Professional standards**: design depth, regulatory-plan language, and land-use classification follow the Urban Design Measures, the Regulatory Detailed Plan Compilation and Approval Measures, and the Territorial Spatial Land Use and Sea Classification Guide respectively; while control conditions are missing, all related indicators stay `unknown` and no statutory control values are fabricated.[standard:MOHURD-URBAN-DESIGN-MEASURES] [standard:MOHURD-CONTROL-DETAILED-PLANNING] [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]
 - **Data boundary**: only public or cleared materials are used; no non-public planning maps, internal indicators, or personal privacy information.[source:SOURCE-REGISTRY]
 - **Provisional boundary**: all geometry is provisional_rough - not for redlines, regulatory controls, approvals, or engineering basis; recomputation is required when official data arrive.[source:BOUNDARY-PROVISIONAL]
 - **Concept status**: all spatial landing suggestions are conceptual suggestions, reference schemes, or material for professional teams to deepen; they do not constitute government-approved conclusions or implementation commitments.
@@ -426,3 +427,5 @@ Full sources, formulas, confidence, and assumptions live in `metrics.json`; task
 16. Beijing Municipal Archives: "Jing-Zhang Luguang Sheying" (1909 official photo archive of the Jing-Zhang Railway, 178 photos).[source:JHZ-ARCHIVES]
 17. People's Daily Online (Culture): "On This Day: Jing-Zhang Railway Opened to Traffic on 1909-09-24", 2014-09-24.[source:JHZ-PEOPLE-1909]
 18. China News Service: "A Century-Long Leap of the Jing-Zhang Railway", 2019-09-23.[source:JHZ-CHINANEWS]
+19. "Law of the People's Republic of China on the Construction of a Barrier-Free Environment", effective 2023-09-01.[standard:BARRIER-FREE-ENVIRONMENT-LAW]
+20. General Office of the State Council: "Implementation Plan on Properly Solving Difficulties of the Elderly in Using Intelligent Technology" (Guobanfa [2020] No. 45), 2020.[standard:ELDERLY-SMART-TECH-PLAN-2020-45]

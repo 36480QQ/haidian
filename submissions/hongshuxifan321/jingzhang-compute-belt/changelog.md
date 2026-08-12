@@ -1,5 +1,13 @@
 # 方案迭代记录
 
+## v1.2-1 - 2026-08-12
+
+全面审查修复（standard 引用闭环缺口）。
+
+- **standard_matrix 补 3 条**：BARRIER-FREE-ENVIRONMENT-LAW（无障碍环境建设法）、ELDERLY-SMART-TECH-PLAN-2020-45（国办发〔2020〕45 号）、GENERATIVE-AI-INTERIM-MEASURES（生成式 AI 办法）——正文 [standard:] 引用的法规此前未登记矩阵（v1 遗留）
+- **proposal 双语**：合规章节补「专业标准遵循」段（城市设计管理办法/控规办法/用地分类指南 3 标记）；用地节补建筑设计深度规定标记；参考资料 19-20 补无障碍法+适老方案
+- **校验**：self-check 四门 PASS → preflight PASS
+
 ## v1.1-5 - 2026-08-12
 
 文化叙事来源补强（评审「数据缺口」维度：1909 历史叙事缺可核查一级来源）。

@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "dba91ede926e482c3e80af41c248c382617f0b60ab32165b5efa01644435d53f"
+      "sha256": "93acbe56a5de678d9f137e9a8b076ca2abb332338d39704f3114ad632b714891"
     },
     {
       "path": "agent.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "51e16b64f69fa19caa8f488bdc80b711b824627a94f878ddc36ec02efa3eeb72"
+      "sha256": "89318c754f95f1b1232ae24c5e3677e8faf6937b26b89c9ce2672951bf17e5fa"
     },
     {
       "path": "compliance_matrix.json",
@@ -68,7 +68,7 @@
       "path": "standard_matrix.json",
       "role": "standard_matrix",
       "required": true,
-      "sha256": "f16122ea863936c52f56b54773f08451dce4336c7da44d008b6a47bcb5901ba4"
+      "sha256": "a5eb0659bd841e69af983176aeba2c33499ded08c14ce3233409e4897b293589"
     },
     {
       "path": "design_depth_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "d3066604679c4bdf7fbca3f5855a93b6b478b2f11f02443cb7f6eceac69a31bb"
+      "sha256": "1e735b95466732d9211cd420eb53fa8bf9eb56208a233c40e7c5ecc4025162fa"
     },
     {
       "path": "report/narrative.md",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "971ed39f74aac0548cda354a99babf79c3bff0fa8c8d7d19a491b652dba7cc89"
+      "sha256": "d8c75cdaaffba563c7701ea71deaa73ee0d71d30d33981c8886921786dfe651a"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "dea4a0cf03c2d8ac57d46c5aeaca91e1deb8721013bdf2028857823c732652fa"
+      "sha256": "1698fc13fa48e644290d546c923235db0a9a5b4ddba3671e5b2611b3c053e837"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -295,7 +295,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "1f2fd30119ad92b8887c7879099311bde9769b0fad43ff41ca0adf3a47fc86fc"
+      "sha256": "9f25a2da672fdadd54bcc7c9c2525badf8f2faa13d36037659510cc0d643e70c"
     },
     {
       "path": "assets/branding/logo-construction.png",
