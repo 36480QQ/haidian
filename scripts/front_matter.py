@@ -11,14 +11,25 @@ def _block_value(lines: list[str], style: str) -> str:
         value = "\n".join(values)
     else:
         parts: list[str] = []
+        previous = ""
+        blank_count = 0
         for line in values:
-            if not parts:
-                parts.append(line)
-            elif line and parts[-1]:
-                parts[-1] += " " + line
-            else:
-                parts.append(line)
-        value = "\n".join(parts)
+            if not line:
+                blank_count += 1
+                continue
+            if parts:
+                if blank_count:
+                    separator = "\n" * blank_count
+                elif previous.startswith(" ") or line.startswith(" "):
+                    separator = "\n"
+                else:
+                    separator = " "
+                parts.append(separator)
+            parts.append(line)
+            previous = line
+            blank_count = 0
+        value = "".join(parts)
+    value = value.rstrip("\n")
     return value if style.endswith("-") else value + "\n"
 
 
