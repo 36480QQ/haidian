@@ -4,6 +4,19 @@
 >
 > This log records traceable changes to this submission package only. It is not evidence of approval, implementation, field testing, rights clearance, or trusted CI. After any content change, regenerate the manifest from the final Git blobs and rely on repository validation attached to the final PR head.
 
+## v9.1 - 2026-08-12
+
+**Rounds 7–9 cross-round closure / 第 7—9 轮跨轮闭环**
+
+- 审计确认第 7 轮 G0、失败门、非 AI 连续路径与临时边界未被后两轮破坏；修补集中于第 8—9 轮新增内容未完整进入出版、来源权利证据和逐文件覆盖的问题，不新增场景、项目、几何、边界、伙伴、采购、审批、现场结果或成熟度。
+- Audit confirmed that Round 7 G0 status, failure gates, continuous non-AI paths, and provisional boundaries remain intact. The repair is limited to Round 8–9 material missing from publication, source-rights evidence, and file-level coverage; it adds no scene, project, geometry, boundary, partner, procurement, approval, field result, or maturity.
+- 修正双语视觉首页嵌套导航；重排两张英文图的标题、状态条、卡片、恢复链和页脚，并删除可见的内部证据 token；中文图同步删除内部 token。双语正文与离线 HTML 现在直接嵌入百年时间与公共任务经济图件。
+- Corrected malformed nested bilingual navigation; repaired title, status-bar, card, recovery-flow, and footer layout in the two English figures and removed visible internal evidence tokens, with matching token cleanup in Chinese. Bilingual Markdown and offline HTML now embed both century-time and mission-economy figures directly.
+- manifest/逐文件权利台账从 89/88 扩为 99/98，新增 10 个第 8—9 轮合同与图件记录；来源权利证据从 29 扩为 35，与 `sources.json` 一一对应。删除未经证明的 CC 许可与“可展览”表述，总体仍为 `not_fully_cleared`，独立逐文件审计 0，公共或专业复用继续阻断。
+- Expanded manifest/file-level rights coverage from 89/88 to 99/98 with ten Round 8–9 contract/figure records. Source-rights evidence expands from 29 to 35 and is one-to-one with `sources.json`. Unsupported CC-license and exhibition-use statements are removed; overall rights remain `not_fully_cleared`, independent file-level audits remain 0, and public/professional reuse remains blocked.
+- 四份 PDF 从最终双语内容确定性重生：中文/英文 A3 为 58/62 页，每种语言 14 组图件各拆 3 个带 30px 重叠的 620×892 细节裁片；中英文 A0 各 14 张整板。两个新进程逐文件一致，148 页 QA 的空白页、替换字形和越界文本块均为 0；摘要见 `report/narrative.md`。
+- Deterministically regenerated all four PDFs from final bilingual content: Chinese/English A3 contain 58/62 pages with 14 figure sets per language, each split into three 620×892 detail crops with 30px overlap; both A0 sets contain 14 whole boards. Two fresh processes are file-identical, and all 148 pages return 0 blank pages, replacement glyphs, or out-of-page text blocks; hashes are recorded in `report/narrative.md`.
+
 ## v9.0 - 2026-08-12
 
 **Mission Economy: 问题驱动的产业与人才转化 / Mission Economy: Problem-Led Industry and Talent Translation**

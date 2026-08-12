@@ -4,18 +4,20 @@
   <rect width="1800" height="1100" fill="#f5f3e9"/>
   <style>
     text{font-family:'Noto Sans','Arial',sans-serif;fill:#162c2b}
-    .h1{font-size:44px;font-weight:700}.h2{font-size:27px;font-weight:700}.h3{font-size:20px;font-weight:700}.body{font-size:17px}.small{font-size:14px}.white{fill:#fff}.muted{fill:#556866}
+    .h1{font-size:40px;font-weight:700}.h2{font-size:24px;font-weight:700}.h3{font-size:19px;font-weight:700}.body{font-size:16px}.small{font-size:13px}.foot{font-size:12px}.white{fill:#fff}.muted{fill:#556866}
     .line{stroke:#173d39;stroke-width:6;fill:none}.thin{stroke:#52736c;stroke-width:2;fill:none}.dash{stroke:#286f86;stroke-width:5;stroke-dasharray:14 12;fill:none}
   </style>
-  <text x="70" y="72" class="h1">Industry–Public Value State Map</text>
-  <text x="70" y="108" class="h2">Problem-led industry and talent translation: passing a test is not a procurement or deployment authorization</text>
-  <rect x="1250" y="44" width="480" height="78" rx="16" fill="#173d39"/>
-  <text x="1275" y="76" class="h3 white">G0 · Conceptual mechanism · Provisional boundary</text>
-  <text x="1275" y="103" class="body white">Tasks 0 · Teams 0 · Retests 0 · Confirmations 0</text>
+  <text x="70" y="65" class="h1">Industry–Public Value State Map</text>
+  <text x="70" y="100" class="h2">Problem-led industry and talent translation</text>
+  <text x="70" y="128" class="h2">Passing a test is not procurement or deployment authorization</text>
+  <rect x="1240" y="38" width="490" height="90" rx="16" fill="#173d39"/>
+  <text x="1265" y="72" class="h3 white">G0 · conceptual · provisional</text>
+  <text x="1265" y="100" class="small white">mechanism only · tasks 0 · teams 0</text>
+  <text x="1265" y="119" class="small white">retests 0 · written confirmations 0</text>
 
   <!-- A Public-task lifecycle -->
   <rect x="60" y="150" width="1680" height="250" rx="26" fill="#fff" stroke="#b9c7ba" stroke-width="2"/>
-  <text x="90" y="192" class="h2">A  Public-task lifecycle ｜ problem-quality gate first; any step fails fail-closed</text>
+  <text x="90" y="192" class="h2">A  Public-task lifecycle | problem-quality gate first; any step fails fail-closed</text>
   <g>
     <rect x="90" y="220" width="205" height="130" rx="16" fill="#f1e6c7" stroke="#8a7338" stroke-width="2"/>
     <text x="110" y="252" class="h3">① Publication</text>
@@ -62,7 +64,7 @@
 
   <!-- B Four-axis separation -->
   <rect x="60" y="420" width="1680" height="220" rx="26" fill="#fff" stroke="#b9c7ba" stroke-width="2"/>
-  <text x="90" y="462" class="h2">B  Four-axis separation ｜ one field cannot mean test, authorization, procurement, deployment</text>
+  <text x="90" y="462" class="h2">B  Four-axis separation | one field cannot mean test, authorization, procurement and deployment</text>
   <g>
     <rect x="90" y="485" width="385" height="120" rx="16" fill="#f1e6c7" stroke="#8a7338" stroke-width="2"/>
     <text x="110" y="517" class="h3">Runtime state</text>
@@ -84,7 +86,7 @@
 
   <!-- C Authorization ladder -->
   <rect x="60" y="660" width="1680" height="190" rx="26" fill="#fff" stroke="#b9c7ba" stroke-width="2"/>
-  <text x="90" y="702" class="h2">C  Authorization ladder ｜ prototype → limited trial → procurement → deployment, each separately authorized</text>
+  <text x="90" y="702" class="h2">C  Authorization ladder | prototype → limited trial → procurement → deployment; each separately authorized</text>
   <g>
     <rect x="90" y="725" width="370" height="95" rx="16" fill="#dfe9d5" stroke="#577c55" stroke-width="2"/>
     <text x="110" y="757" class="h3">Prototype procurement</text>
@@ -109,7 +111,7 @@
 
   <!-- D Public-benefit reflow -->
   <rect x="60" y="870" width="1680" height="190" rx="26" fill="#fff" stroke="#b9c7ba" stroke-width="2"/>
-  <text x="90" y="912" class="h2">D  Public-benefit reflow ｜ independent of investment amounts, back to ordinary corridor users</text>
+  <text x="90" y="912" class="h2">D  Public-benefit reflow | independent of investment amounts; back to ordinary corridor users</text>
   <g>
     <rect x="90" y="935" width="470" height="95" rx="16" fill="#dfe9d5" stroke="#577c55" stroke-width="2"/>
     <text x="110" y="967" class="h3">Task results + failure archives</text>
@@ -127,6 +129,5 @@
     <text x="1170" y="1013" class="small" fill="#8a7338">Feedback only feeds the next problem definition</text>
   </g>
 
-  <text x="70" y="1080" class="small muted">Legend: ▲ public fact ◆ public reporting ● in-package source ◎ mechanism contract (not yet occurred) ｜ non-AI and manual paths continuous throughout</text>
-  <text x="70" y="1098" class="small muted">after stop, restore ordinary state before revision ｜ sources and assumptions: proposal.md and sources.json</text>
+  <text x="70" y="1084" class="foot muted">Legend: ▲ public fact ◆ public reporting ● in-package source ◎ mechanism contract (not occurred) | non-AI and manual paths stay continuous | restore ordinary state before revision</text>
 </svg>
