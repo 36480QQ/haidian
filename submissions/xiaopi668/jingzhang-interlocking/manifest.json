@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "f75bedba998007805342a7418a7f2efe71e5c6aaa8684f6708bdd0325469e4e0"
+      "sha256": "112ef0e90e49c16eaa6eeed3a7e05d06ade36543cc589f3a81f9b7f472ef0ef9"
     },
     {
       "path": "compliance_matrix.json",
@@ -149,7 +149,7 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "c1d15abc2d14164073913730e199049497e0d5100f1f1bbb22de1fd4adb530e7"
+      "sha256": "a2c29c5d215fd849bed85c4a4b61fb71c629f346105d8d6fd320d47b34364ba5"
     },
     {
       "path": "geometry/buildings.geojson",
@@ -227,7 +227,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "b7898bc7abf9c5ef8d1919b04f92cb6ea528ec3368faaea4b390a9701f43dc6a"
+      "sha256": "a458605600f8b4dc1e7a2e3ad9d1587e0189242ef9ef9aa3c47cdaae877f2b59"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -235,7 +235,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "c2748fd4a3520dec0f24bd629bf4a3f7390cea9823f3e28314d0b074182d57eb"
+      "sha256": "95588ab44e142558afe0b2b2a3ab725fd3987d28e92daf3043d2ed32e54d620d"
     },
     {
       "path": "visual/index.en.html",
@@ -251,7 +251,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/key-areas.png",
-      "sha256": "ed7e9d6eac41b296092060d3182f62d873830cf3f8a961ac5bb85db0aa0e7a56"
+      "sha256": "10c93edb9f4dddb13a31b533c743e3beeb6b905c85ea8223524cf7974384ef52"
     },
     {
       "path": "assets/figures/land-use-structure.en.png",
@@ -283,7 +283,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/site-overview.png",
-      "sha256": "ea2d572024debcea6eb069315d563c7e8049dc456fd811d8bf1f20f42ee112e8"
+      "sha256": "00e6b348001eacfb0d8182b6d014d891e6e19e49bb976b976a4e544b59e10e8c"
     }
   ],
   "validation_claim": {
