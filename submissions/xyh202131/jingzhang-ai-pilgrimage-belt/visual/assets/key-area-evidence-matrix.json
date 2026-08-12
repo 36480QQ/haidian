@@ -1,9 +1,9 @@
 {
   "schema_version": "0.3.0",
   "matrix_id": "JZ-KEY-AREA-EVIDENCE-V3",
-  "as_of": "2026-08-11",
+  "as_of": "2026-08-12",
   "status": "concept_only_provisional",
-  "purpose": "Make the three key-area proposals reviewable from provisional geometry through differentiated plan, relationship section, ground-floor interface, continuous non-AI/accessibility intent, staffed handoff, removable components, four states, place-restoration acceptance, scenario passports, and evidence still required before G1.",
+  "purpose": "Make the three key-area proposals reviewable from provisional geometry through differentiated plan, relationship section, ground-floor interface, continuous non-AI/accessibility intent, staffed handoff, removable components, four states, place-restoration acceptance, scenario passports, year-round ordinary-use operations, and evidence still required before G1.",
   "authority_boundary": {
     "official_geometry_count": 0,
     "approved_site_count": 0,
@@ -317,10 +317,47 @@
       {"signal_id": "SIGNAL-EXIT", "name_zh": "退出信号", "name_en": "Exit signal", "public_question": "如何停止、绕行和恢复？", "public_question_en": "How do I stop, detour, and recover?", "interface_refs": ["I03", "I05", "I06"]}
     ],
     "civic_timetable": [
-      {"slot_id": "TIMETABLE-ORDINARY", "state": "ordinary", "window": "07:00–22:00 default", "rule_zh": "连续日常轨开放；人工、无屏和非 AI 路径可用。", "rule_en": "The daily track is open; staffed, screen-free, and non-AI paths remain available."},
-      {"slot_id": "TIMETABLE-QUIET", "state": "ordinary_quiet", "window": "22:00–07:00", "rule_zh": "静音、低照度、无屏优先；不以活动或验证占用普通生活。", "rule_en": "Quiet, low-light, screen-free use takes priority; ordinary life is not displaced by events or proof."},
-      {"slot_id": "TIMETABLE-PROOF", "state": "verification", "window": "announced and bounded windows only", "rule_zh": "验证轨只在公告、批准和有责任人的时段出现，不形成连续占地。", "rule_en": "The proof track appears only in announced, approved, accountable windows and never becomes a continuous occupied strip."},
-      {"slot_id": "TIMETABLE-RECOVERY", "state": "failure_recovery", "window": "any time a stop condition is declared", "rule_zh": "停止→人工解释→失败侧线→恢复日常；公众无需等待系统或注册。", "rule_en": "Stop → staffed explanation → failure siding → return to daily use; the public need not wait for a system or register."}
+      {
+        "slot_id": "TIMETABLE-ORDINARY",
+        "state": "ordinary",
+        "window": "07:00–22:00 inherited G0 planning default",
+        "window_status": "concept_window_not_confirmed_opening_hours_or_shift",
+        "confirmed_real_window": "unknown",
+        "confirmed_staffed_presence": "unknown",
+        "rule_zh": "按概念设计，连续日常轨、无屏信息和非 AI 同任务保持优先；是否现实开放、何时有人、由谁负责均待确认。",
+        "rule_en": "By design, the continuous daily track, screen-free information, and the same non-AI task remain first; real opening, staffed presence, and duty ownership remain unconfirmed."
+      },
+      {
+        "slot_id": "TIMETABLE-QUIET",
+        "state": "ordinary_quiet",
+        "window": "22:00–07:00 inherited G0 quiet/screen-free planning window",
+        "window_status": "concept_window_not_confirmed_opening_hours_night_shift_noise_or_lighting_level",
+        "confirmed_real_window": "unknown",
+        "confirmed_staffed_presence": "unknown",
+        "rule_zh": "静音、无屏和居民日常优先；不以活动或验证占用普通生活，也不据此虚构夜班、噪声或照度。",
+        "rule_en": "Quiet, screen-free, resident-priority use is the design rule; events or proof do not displace ordinary life, and no night shift, noise, or lighting level is inferred."
+      },
+      {
+        "slot_id": "TIMETABLE-PROOF",
+        "state": "verification",
+        "window": "future announced, approved, accountable and bounded windows only",
+        "window_status": "conditional_not_scheduled_not_authorized",
+        "scheduled_window_count": 0,
+        "confirmed_staffed_presence": "unknown",
+        "rule_zh": "验证轨只可在未来完成公告、批准和责任确认的限域时段出现，不形成连续占地；当前排期和授权均为 0。",
+        "rule_en": "The proof track may appear only in a future announced, approved, accountable bounded window and never as a continuous occupied strip; current schedules and approvals are 0."
+      },
+      {
+        "slot_id": "TIMETABLE-RECOVERY",
+        "state": "failure_recovery",
+        "window": "conditional whenever a future real stop condition is declared",
+        "window_status": "g0_recovery_protocol_no_real_incident_or_duration_claim",
+        "real_incident_count": 0,
+        "known_recovery_duration": "unknown",
+        "confirmed_staffed_presence": "unknown",
+        "rule_zh": "概念顺序为停止→如实显示人工状态→失败侧线→先恢复日常；公众无需等待系统或注册，且不得由此推出真实事故、班次或恢复时长。",
+        "rule_en": "The concept sequence is stop → truthful human-status display → failure siding → ordinary use first; the public need not wait for a system or register, and no real incident, shift, or recovery duration is inferred."
+      }
     ],
     "typical_section": {
       "section_rule": "daily track is continuous; proof overlay is intermittent; staffed station, screen-free node, and recovery garden are distinct spatial roles",
@@ -945,6 +982,66 @@
       "rights_status": "not_fully_cleared"
     },
     "authorization_boundary": "This contract and its visual checks explain G0 relationships only and authorize no site, survey, thermal, hydrological, ecological, activity, procurement, installation, construction, operation, deployment, maturity, professional, rights, or outcome claim."
+  },
+  "long_term_civic_operations_contract": {
+    "contract_id": "JZ-CIVIC-OPERATIONS-G0-V1",
+    "status": "concept_only_g0_calendar_roster_budget_partner_complaint_and_results_unconfirmed",
+    "authoritative_register_ref": "visual/assets/civic-operations-contract.json#JZ-CIVIC-OPERATIONS-G0-V1",
+    "plan_id": "JZ-FUTURE-09",
+    "serial_round": 10,
+    "selected_work_packages": [
+      "annual ordinary-use calendar and no-event field",
+      "same-task day-night-failure-recovery journey",
+      "quiet, screen-free and resident-priority time covenant",
+      "operating roles, incident duty and maintenance-retirement responsibility types",
+      "three-carrier operational writeback",
+      "annual failure disclosure, international-retest boundary and keep/correct/expand/retire decision"
+    ],
+    "calendar_rule": "ordinary civic use is the year-round default; Problem Season, Open-source Season, City Beta Season and Proof Week remain conditional, unscheduled overlays that must not displace ordinary routes, quiet/screen-free use, maintenance or complaint access",
+    "inherited_quiet_window_interpretation": "22:00-07:00 is retained only as an earlier G0 planning covenant, not a confirmed opening time, shift, noise threshold, lighting level or operator commitment",
+    "same_task_journey": {
+      "person_type": "corridor resident",
+      "task": "walk through, read service status, submit or follow a neighbourhood question, and leave",
+      "windows": ["day ordinary", "night or low-staff ordinary quiet", "failure stop", "recovery"],
+      "constant_rights": ["account-free and QR-free entry", "complete non-AI path", "continuous accessibility intent pending evidence", "truthful staffed-state notice", "withdrawal", "appeal", "screen-free and quiet option"]
+    },
+    "existing_carrier_refs": {
+      "scene_passport": "visual/assets/pilot-readiness-register.json#records",
+      "civic_timetable": "visual/assets/key-area-evidence-matrix.json#twin_track_frontend_contract.civic_timetable",
+      "evidence_matrix": "visual/assets/key-area-evidence-matrix.json#long_term_civic_operations_contract"
+    },
+    "writeback_events": ["programme admission", "programme pause", "staffed-state change", "complaint hold", "failure stop", "correction", "recovery", "withdrawal", "retirement", "annual decision"],
+    "key_area_differentiation": {
+      "KAE-001": "VERIFY protects the observation edge, equipment isolation, staffed takeover type and independent place-restoration acceptance",
+      "KAE-002": "CO-CREATE protects resident daily life, one street/two courts, screen-free learning, consent withdrawal and quiet priority",
+      "KAE-003": "PUBLISH protects four-direction commuting, one hall/one staffed desk, source correction, quiet rest and ordinary service continuity"
+    },
+    "annual_decision_options": ["keep", "correct", "expand only with independent real evidence and separate authorization", "retire"],
+    "global_guards": {
+      "geometry_changed": false,
+      "new_scene_or_project_ids_added": false,
+      "existing_scene_count": 12,
+      "existing_project_count": 8,
+      "all_scenes_remain": "G0",
+      "confirmed_event_dates": 0,
+      "confirmed_role_assignments": 0,
+      "confirmed_shifts": 0,
+      "confirmed_budgets": 0,
+      "confirmed_international_partners": 0,
+      "real_complaints": 0,
+      "real_annual_reviews": 0,
+      "real_retirements": 0,
+      "known_operating_results": 0,
+      "public_entry_requires_account_qr_screen_or_ai": false,
+      "rights_status": "not_fully_cleared"
+    },
+    "drawing_refs": [
+      "assets/figures/year-round-civic-operations.svg",
+      "assets/figures/year-round-civic-operations.en.svg",
+      "assets/figures/year-round-civic-operations.png",
+      "assets/figures/year-round-civic-operations.en.png"
+    ],
+    "authorization_boundary": "The operations calendar is a G0 planning and audit contract, not a confirmed roster, event, budget, partner, complaint service, operating result, site approval, public trial, procurement or deployment authorization."
   },
   "review_protocol": {
     "required_sequence": [
