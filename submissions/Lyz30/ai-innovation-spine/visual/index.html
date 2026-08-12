@@ -81,20 +81,41 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sa
 
 <div class="container">
 
+  <!-- 可视化章节图鉴 -->
+  <div class="section">
+    <h2>🗺️ 可视化章节图鉴 / Visualization Sections</h2>
+    <div class="scenario-grid">
+      <div class="scenario-card"><span class="num">①</span> 总览地图 / Site Overview</div>
+      <div class="scenario-card"><span class="num">②</span> 三层范围 / Three Scope Levels</div>
+      <div class="scenario-card"><span class="num">③</span> 重点区域 / Key Areas</div>
+      <div class="scenario-card"><span class="num">④</span> 用地分区 / Land Use</div>
+      <div class="scenario-card"><span class="num">⑤</span> 交通慢行 / Mobility</div>
+      <div class="scenario-card"><span class="num">⑥</span> 蓝绿公共空间 / Blue-Green Space</div>
+      <div class="scenario-card"><span class="num">⑦</span> 建筑 / Buildings</div>
+      <div class="scenario-card"><span class="num">⑧</span> 更新项目 / Renewal</div>
+      <div class="scenario-card"><span class="num">⑨</span> AI 场景 / AI Scenarios</div>
+      <div class="scenario-card"><span class="num">⑩</span> 核心指标 / Core Metrics</div>
+      <div class="scenario-card"><span class="num">⑪</span> 任务覆盖 / Task Coverage</div>
+      <div class="scenario-card"><span class="num">⑫</span> 自检状态 / Self-Check</div>
+      <div class="scenario-card"><span class="num">⑬</span> 来源 / Sources</div>
+      <div class="scenario-card"><span class="num">⑭</span> 假设 / Assumptions</div>
+    </div>
+  </div>
+
   <!-- 范围与面积 -->
   <div class="section">
     <h2>📐 三层范围 / Three Scope Levels</h2>
     <div class="grid grid-3">
       <div class="card">
-        <div class="metric" data-metric="site_area_coordinated_research" data-value="43600000">43.6 km²</div>
-        <div class="metric-label">统筹研究范围 / Coordinated Research Area</div>
-      </div>
-      <div class="card">
-        <div class="metric" data-metric="site_area_overall_design" data-value="11400000">11.4 km²</div>
+        <div class="metric" data-metric="site_area_sqm" data-value="11412825.386">11.4 km²</div>
         <div class="metric-label">总体设计范围 / Overall Design Area</div>
       </div>
       <div class="card">
-        <div class="metric" data-metric="site_area_key_detailed_design" data-value="3684000">3.68 km²</div>
+        <div class="metric">43.6 km²</div>
+        <div class="metric-label">统筹研究范围 / Coordinated Research Area</div>
+      </div>
+      <div class="card">
+        <div class="metric">3.68 km²</div>
         <div class="metric-label">重点设计区域 / Key Detailed Design Area</div>
       </div>
     </div>
@@ -144,12 +165,14 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sa
     <div class="grid grid-3">
       <div class="card">
         <h3>已知指标</h3>
+        <div class="scope-item"><span>绿地率</span><strong data-metric="green_ratio" data-value="0.157099">15.7%</strong></div>
+        <div class="scope-item"><span>公共空间占比</span><strong data-metric="public_space_ratio" data-value="0.021359">2.1%</strong></div>
         <div class="scope-item"><span>脊梁长度</span><strong>9 km</strong></div>
         <div class="scope-item"><span>关键区域数</span><strong>3</strong></div>
-        <div class="scope-item"><span>地标节点数</span><strong data-metric="landmark_count" data-value="4">4</strong></div>
-        <div class="scope-item"><span>场景卡数</span><strong data-metric="scenario_card_count" data-value="12">12</strong></div>
-        <div class="scope-item"><span>测试场景数</span><strong data-metric="test_scenario_count" data-value="3">3</strong></div>
-        <div class="scope-item"><span>用户画像数</span><strong data-metric="user_persona_count" data-value="5">5</strong></div>
+        <div class="scope-item"><span>地标节点数</span><strong>4</strong></div>
+        <div class="scope-item"><span>场景卡数</span><strong>12</strong></div>
+        <div class="scope-item"><span>测试场景数</span><strong>3</strong></div>
+        <div class="scope-item"><span>用户画像数</span><strong>5</strong></div>
         <div class="scope-item"><span>用地类型数</span><strong>9</strong></div>
         <div class="scope-item"><span>年度活动数</span><strong>5</strong></div>
       </div>
@@ -158,13 +181,12 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sa
         <div class="scope-item"><span>容积率</span><span class="status-badge status-provisional">待正式数据</span></div>
         <div class="scope-item"><span>建筑高度</span><span class="status-badge status-provisional">待正式数据</span></div>
         <div class="scope-item"><span>建筑密度</span><span class="status-badge status-provisional">待正式数据</span></div>
-        <div class="scope-item"><span>绿地率</span><span class="status-badge status-provisional">待正式数据</span></div>
         <div class="scope-item"><span>退线距离</span><span class="status-badge status-provisional">待正式数据</span></div>
       </div>
       <div class="card">
         <h3>生态要素</h3>
-        <div class="scope-item"><span>全球案例</span><strong data-metric="global_case_count" data-value="6">6</strong></div>
-        <div class="scope-item"><span>创新要素</span><strong data-metric="ecosystem_factor_count" data-value="8">8</strong></div>
+        <div class="scope-item"><span>全球案例</span><strong>6</strong></div>
+        <div class="scope-item"><span>创新要素</span><strong>8</strong></div>
         <div class="scope-item"><span>分期建设</span><strong>3 期</strong></div>
         <div class="scope-item"><span>功能层级</span><strong>5 层</strong></div>
       </div>
