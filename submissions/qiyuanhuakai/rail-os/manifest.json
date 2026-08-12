@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "package_id": "rail-os",
   "project_id": "centennial-jingzhang-ai-belt",
   "site_package_version": "0.1.0",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "0dfd7136398073ed7351a1952c71df3532de5f7485ff4de53701ea291368e698"
+      "sha256": "57972b46836a89dcf73bb6480f69994767befba307872b198fd8c9995aaa4f67"
     },
     {
       "path": "compliance_matrix.json",
