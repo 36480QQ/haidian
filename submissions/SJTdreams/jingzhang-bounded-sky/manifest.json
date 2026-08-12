@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "66921d791d59cc213a1298867d97785c072764f4a7293b230696d233dc203740"
+      "sha256": "0714ac9a3ab65392da9951dd4b4e7290f1163db6fb26ea3bb58dca42d317781d"
     },
     {
       "path": "compliance_matrix.json",
@@ -467,6 +467,81 @@
       "role": "task_output",
       "required": false,
       "sha256": "fc8ec5d20243fdb7053a351953eb68e8a12cacb7a31bc2911fd2b32c4d27c018"
+    },
+    {
+      "path": "assets/attachments/spatial-evidence-atlas-v2.2/site-overview.png",
+      "role": "supplemental_figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "ae55c3b2b140c276eae12aa9c1250cd1d651ba32999883b5955ef8a2e173a85c"
+    },
+    {
+      "path": "assets/attachments/spatial-evidence-atlas-v2.2/site-overview.en.png",
+      "role": "supplemental_figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/attachments/spatial-evidence-atlas-v2.2/site-overview.png",
+      "sha256": "5bfbeee964fc1cc384e27a0ccab952fd25fc3355be24fe5c20509fdce26a46c5"
+    },
+    {
+      "path": "assets/attachments/spatial-evidence-atlas-v2.2/land-use-structure.png",
+      "role": "supplemental_figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "0cd422bff4e3d30a6e7bb88fd0743900782315fea3205db5057b07520694953f"
+    },
+    {
+      "path": "assets/attachments/spatial-evidence-atlas-v2.2/land-use-structure.en.png",
+      "role": "supplemental_figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/attachments/spatial-evidence-atlas-v2.2/land-use-structure.png",
+      "sha256": "e37ce1b7e7c277527e0d1a4c9faef96ed558c828d1690f538b38d83cee710c25"
+    },
+    {
+      "path": "assets/attachments/spatial-evidence-atlas-v2.2/key-areas.png",
+      "role": "supplemental_figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "c4e995d590ef76e6dc81334f45356145f53c8b256062defa1a5ad7bce2a94a81"
+    },
+    {
+      "path": "assets/attachments/spatial-evidence-atlas-v2.2/key-areas.en.png",
+      "role": "supplemental_figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/attachments/spatial-evidence-atlas-v2.2/key-areas.png",
+      "sha256": "dfde0deaaaf8ccc709ea4e794f159b0aecbf880dc98052a37a1ce8869e5275a2"
+    },
+    {
+      "path": "assets/attachments/spatial-evidence-atlas-v2.2/mobility-bluegreen.png",
+      "role": "supplemental_figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "0e28e69a50baf9221bb0a4e8b9fc1441a807ef508eb150b126a3d25e7eb029bd"
+    },
+    {
+      "path": "assets/attachments/spatial-evidence-atlas-v2.2/mobility-bluegreen.en.png",
+      "role": "supplemental_figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/attachments/spatial-evidence-atlas-v2.2/mobility-bluegreen.png",
+      "sha256": "0a9a0fc420c7cc59206d8d55d92add6c52162b69c298759296ca706d0087cbcc"
+    },
+    {
+      "path": "assets/attachments/spatial-evidence-atlas-v2.2/metrics-evidence.png",
+      "role": "supplemental_figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "d241ff04b436689687847eb8d6c1b4c96dca20fa659dcd2ea74168e3b4027887"
+    },
+    {
+      "path": "assets/attachments/spatial-evidence-atlas-v2.2/metrics-evidence.en.png",
+      "role": "supplemental_figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/attachments/spatial-evidence-atlas-v2.2/metrics-evidence.png",
+      "sha256": "21e2c2c77939bab0c426d0487262056881c7d45d72cded62201bd329b7677100"
     }
   ],
   "validation_claim": {
