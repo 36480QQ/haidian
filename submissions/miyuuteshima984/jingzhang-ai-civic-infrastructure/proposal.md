@@ -52,6 +52,8 @@ iteration: "v0.5"
 
 这些案例不支撑京张的法定边界、高度或强度，只支撑组织与运营方法。[source:CASE-AISG-100E] [source:CASE-SEOUL-AI-HUB] [source:CASE-PUNGGOL]
 
+![全球 AI 创新生态案例对照：机制—京张转译—不复制边界](assets/figures/case-study-comparison.svg)
+
 本方案的 C7 城市完整度合同包括：**居 HOME、学 LEARN、护 CARE、行 MOVE、绿 GREEN、工 WORK、交 COMMON LIFE**。每个更新动作都要说明改善哪项能力、是否挤压另一项能力、谁承担非 AI 基线。**AI 不是第八项用地**，而是跨七项能力的可选增强层。[metric:city_completeness_dimension_count]
 
 ### 三大定位—五大功能—三区两翼协同闭环
@@ -157,6 +159,8 @@ v0.5 增加七类可复制公共空间组件：C7 方向柱、遮阴停留岛、
 `geometry/phasing.geojson` 将近期、中期、长期表示为概念研究范围，而不是政府已经确定的开工时间表。每一阶段都设置“数据到位—重新核对—再扩大”的前置条件；若 official polygon 或关键约束变化，分期边界、用地、指标、图件和 PDF 同步重算。[data:geometry/phasing.geojson#PHASE-001] [depth:phasing_implementation]
 
 运营层建议每年进行 C7 城市完整度公开走查、开发者开放周、受控机器人测试开放日、社区公共服务评议和京张技术史展。公开的不应只有“新增了什么 AI”，也应包括“哪项普通城市能力仍有缺口、哪些试点被停止或回退”。
+
+![三个公共荣誉节点、年度活动节奏与研究—测试—采用—长期服务转化路径](assets/figures/landmarks-events-conversion.svg)
 
 v0.5 将实施进一步工程化为“项目—空间—建议角色—前置条件—启动/停止阈值—维护责任—验收 KPI”。AI 层必须能独立停机；真实组织主体、预算、合同、活动与跨机构安排必须由现实责任方另行确认。
 

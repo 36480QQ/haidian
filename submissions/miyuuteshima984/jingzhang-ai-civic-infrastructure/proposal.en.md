@@ -52,6 +52,8 @@ Six international cases contribute mechanisms rather than scale. Vector Institut
 
 These cases do not support statutory Jing-Zhang boundaries, heights or development intensity; they support organisational and operating choices only. [source:CASE-AISG-100E] [source:CASE-SEOUL-AI-HUB] [source:CASE-PUNGGOL]
 
+![Global AI innovation ecosystem comparison: mechanism—Jing-Zhang translation—non-copy boundary](assets/figures/case-study-comparison.en.svg)
+
 The C7 City Completeness Contract is **HOME, LEARN, CARE, MOVE, GREEN, WORK and COMMON LIFE**. Every renewal move states which capability it improves, whether it weakens another, and who maintains a non-AI baseline. **AI is not an eighth land-use category**; it is an optional enhancement layer across the seven capabilities. [metric:city_completeness_dimension_count]
 
 ### Three Positionings—Five Functions—Three Areas and Two Wings Coordination Loop
@@ -157,6 +159,8 @@ Implementation does not follow “build a landmark first, repair ordinary life l
 `geometry/phasing.geojson` expresses near-, mid- and long-term conceptual study ranges, not a government construction timetable. Every stage has a “data arrives - recheck - then expand” prerequisite. If official polygons or key constraints change, phasing, land use, metrics, figures and PDFs are recalculated together. [data:geometry/phasing.geojson#PHASE-001] [depth:phasing_implementation]
 
 Long-term operation can include a public C7 walk-through, developer open week, controlled robotics open day, community public-service review and Jing-Zhang technology-history exhibition. Annual reporting should not only announce “what new AI was deployed”; it should also state which ordinary urban capability remains incomplete and which pilots were stopped, rolled back or redesigned.
+
+![Three public honor nodes, annual event rhythm, and the research—test—adoption—long-term-service conversion pathway](assets/figures/landmarks-events-conversion.en.svg)
 
 v0.5 further engineers implementation as **project—space—proposed role—prerequisite—start/stop threshold—maintenance responsibility—acceptance KPI**. The AI layer must be independently stoppable; real organizations, budgets, contracts, events and cross-institution arrangements require separate confirmation by real responsible parties.
 

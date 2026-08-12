@@ -41,6 +41,13 @@ Text-bearing figures have separate Chinese and English counterparts under the bi
 | GeoJSON | `geometry/*.geojson` | Conceptual geometry authored/generated for this submission from repository-permitted provisional constraints | Repository provisional boundary inputs are referenced, not claimed as participant-owned official data | Usage constrained by repository/public-source status | Provisional geometry cannot be reused as an official redline or precise-area source |
 | Text / JSON / matrices | `proposal*.md`, `*.json`, `report/*.md` | Participant/AI-assisted original drafting using cited repository/public sources | Short factual references only; no copied proprietary diagrams or long-form copyrighted text | Package license applies to original expression; external facts retain source terms | All authority claims must remain traceable to `sources.json` / repository standards |
 
+### v0.5 additional visual-asset ledger
+
+| Asset group | Paths | Author / generation method | Third-party material embedded | Rights / status |
+| --- | --- | --- | --- | --- |
+| Global case comparison | `assets/figures/case-study-comparison.svg`, `.en.svg` | Original comparison diagram from six first-party factual references in `sources.json` | None; no case logo, image, map, video or proprietary diagram embedded | Submission-original layout; factual-reference-only source use |
+| Public landmarks, events and conversion | `assets/figures/landmarks-events-conversion.svg`, `.en.svg` | Original concept diagram from this submission's public-space, scenario and operating logic | None | Submission-original; concept names are not official awards, organizer brands or commitments |
+
 ## Fonts, icons, code, and toolchain
 
 The v0.5 SVG assets use generic CSS `font-family: sans-serif` and do not redistribute font files. No downloaded icon font, commercial typeface, third-party icon pack or proprietary design-system asset is embedded. Symbols in the C7/VI and component diagrams are original geometric primitives authored in SVG.
