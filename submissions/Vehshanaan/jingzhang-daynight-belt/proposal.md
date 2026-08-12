@@ -264,4 +264,4 @@ AI 城市形态的一个关键判断是：城市不再按"办公时段"运转，
 - 完整机器索引：见 `sources.json`、`metrics.json`、`compliance_matrix.json`、`standard_matrix.json` 与 `design_depth_matrix.json`
 - 本节书目入口依据场地包登记，完整出处和许可见结构化来源清单 [source:SITE-PACKAGE]
 
-<!-- build-rev-11 -->
+<!-- build-rev-12 -->
