@@ -12,10 +12,10 @@
       "source_files": [
         "geometry/site_boundary.geojson"
       ],
-      "formula": "polygon_area(submitted_site_boundary)",
-      "confidence": "high",
+      "formula": "polygon_area(submitted_site_boundary, EPSG:4548)",
+      "confidence": "medium",
       "assumptions": [
-        "Trusted official boundary is present in the site package."
+        "Boundary is provisional (official_boundary=false, boundary_precision=provisional_rough). Area is computed from maintainer-defined provisional polygon for intake only; must be recalculated when official geometry is supplied."
       ]
     },
     "building_footprint_area_sqm": {
