@@ -350,7 +350,11 @@
       "visual_sections": [
         "用地分区结构"
       ],
-      "source_ids": [],
+      "source_ids": [
+        "SITE-PACKAGE",
+        "ECOSYSTEM-MAP",
+        "BOUNDARY-SOURCE"
+      ],
       "assumption_ids": [
         "A-CONTROLS-001"
       ],
