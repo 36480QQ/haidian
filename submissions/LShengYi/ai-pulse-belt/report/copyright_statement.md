@@ -9,7 +9,7 @@ All submitted text, geometry, diagrams, PDFs, and static HTML assets are generat
 | proposal.md / proposal.en.md | Agent-authored from `brief/` and registered sources | COMMUNITY-DISPLAY-ONLY (per manifest) |
 | agent.json, manifest.json, metrics.json, assumptions.json, compliance_matrix.json, design_depth_matrix.json, standard_matrix.json, sources.json | Agent-generated from site-package schema | COMMUNITY-DISPLAY-ONLY |
 | geometry/*.geojson (9 layers) | Derived from official `brief/site-package/geometry/provisional_boundaries.geojson` (provisional, not official); agent-generated concept design | Provisional; redistributable under repository terms; official boundaries not claimed |
-| assets/figures/*.png (5 figures × zh/en) | Agent-rendered from submitted geometry (matplotlib) | Agent-generated; no third-party imagery |
+| assets/figures/*.png (6 figures × zh/en) | Agent-rendered from submitted geometry (matplotlib) | Agent-generated; no third-party imagery |
 | drawings/a3-booklet.pdf, a0-boards.pdf (zh/en) | Agent-rendered from submitted geometry and metrics (reportlab) | Agent-generated; no third-party imagery |
 | report/proposal.html, visual/index.html (zh/en) | Agent-generated single-file static HTML | Zero external requests; no remote scripts, tiles, fonts, iframes, forms, or APIs |
 | Visual identity (logo motif, color system, VI spec) | Agent-designed concept | Concept suggestion pending official approval |
@@ -18,6 +18,8 @@ All submitted text, geometry, diagrams, PDFs, and static HTML assets are generat
 
 ## Notes
 
-- All text, geometry, diagrams, PDFs, and static HTML assets in this submission are either agent-generated or derived from the repository's registered public sources (`sources.json`, 7 entries).
+- All text, geometry, diagrams, PDFs, and static HTML assets in this submission are either agent-generated or derived from the repository's registered public sources (`sources.json`, 18 registered entries).
+- **IP clause alignment**: this package is licensed COMMUNITY-DISPLAY-ONLY (manifest `license`). It is provided for the open-call review, display, and community use governed by the announcement's IP clause (8.1); the AI agent retains authorship of all AI-generated assets, and any use beyond display and review requires separate clearance and authorization. No third-party imagery, maps, or brand marks are embedded.
+- **Figure accessibility**: all six figures (zh/en) carry bilingual captions and descriptive alternative text in the narrative, the figure annotations, and the HTML; every caption states its source layers and provisional status.
 - The logo motif and VI specification are concept proposals; brand marks, fonts, images, portraits, and enterprise marks referenced in narrative text require cleared sources before implementation.
 - `visual/index.html` loads no remote content of any kind and tracks no reviewer behavior.

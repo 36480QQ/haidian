@@ -263,6 +263,186 @@
       "evidence_summary_zh": "land_use.geojson 155 地块 13 类用地均取官方 land_use_codes 枚举（含留白 16、公园绿地 1401、防护绿地 1402），无缝覆盖已由 validate_cover 校验。"
     },
     {
+      "standard_id": "UNMANNED-AIRCRAFT-REGULATIONS",
+      "requirement_zh": "无人驾驶航空器飞行管理暂行条例要求无人机飞行遵循实名登记、适航与空域管理要求；本方案无人机配送驿站（卡 06）与低空配送航线验证以空域审批为放行门（JZ-09），不采集人脸，安全隐患零容忍。",
+      "professional_dimension": "低空飞行合规",
+      "mandatory": false,
+      "review_status": "addressed",
+      "proposal_sections": [
+        "AI 创新生态、人才画像与 AI+ 场景",
+        "更新项目清单、实施政策与分期计划"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/public_space.geojson",
+        "geometry/constraints.geojson"
+      ],
+      "metric_refs": [
+        "public_space_ratio"
+      ],
+      "source_ids": [
+        "UNMANNED-AIRCRAFT-REGULATIONS",
+        "BEIJING-UAS-MEASURES"
+      ],
+      "assumption_ids": [
+        "A-CONTROLS-001"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION",
+        "SPATIAL_REVIEW",
+        "VISUAL_PACKAGING",
+        "PROFESSIONAL_EVIDENCE"
+      ],
+      "evidence_summary_zh": "卡 06 与低空配送航线验证挂接无人机条例及北京市规章，空域审批为 JZ-09 放行门，场景技术依据表逐项披露。"
+    },
+    {
+      "standard_id": "BEIJING-UAS-MEASURES",
+      "requirement_zh": "北京市无人驾驶航空器管理若干规定对北京市域无人机飞行活动提出地方管理要求；本方案低空配送航线验证按北京市空域管理规定申报，未获审批不开通。",
+      "professional_dimension": "低空飞行合规",
+      "mandatory": false,
+      "review_status": "addressed",
+      "proposal_sections": [
+        "AI 创新生态、人才画像与 AI+ 场景",
+        "更新项目清单、实施政策与分期计划"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/public_space.geojson",
+        "geometry/constraints.geojson"
+      ],
+      "metric_refs": [
+        "public_space_ratio"
+      ],
+      "source_ids": [
+        "BEIJING-UAS-MEASURES",
+        "UNMANNED-AIRCRAFT-REGULATIONS"
+      ],
+      "assumption_ids": [
+        "A-CONTROLS-001"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION",
+        "SPATIAL_REVIEW",
+        "VISUAL_PACKAGING",
+        "PROFESSIONAL_EVIDENCE"
+      ],
+      "evidence_summary_zh": "低空配送航线验证的 KPI 与退出条件（空域审批未过不开通）与北京市无人机规章的申报边界一致。"
+    },
+    {
+      "standard_id": "ICV-ROAD-TEST-REGULATIONS",
+      "requirement_zh": "智能网联汽车道路测试与示范应用管理规范（试行）对智能网联汽车路测备案、安全员与事故报告提出要求；本方案无人接驳巴士走廊（卡 02）与车路协同测试段以路测备案为放行门（JZ-06）。",
+      "professional_dimension": "智能网联交通合规",
+      "mandatory": false,
+      "review_status": "addressed",
+      "proposal_sections": [
+        "AI 创新生态、人才画像与 AI+ 场景",
+        "更新项目清单、实施政策与分期计划"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/public_space.geojson",
+        "geometry/roads.geojson"
+      ],
+      "metric_refs": [
+        "public_space_ratio"
+      ],
+      "source_ids": [
+        "ICV-ROAD-TEST-REGULATIONS",
+        "V2X-CLOUD-INTEGRATION-PILOT"
+      ],
+      "assumption_ids": [
+        "A-CONTROLS-001"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION",
+        "SPATIAL_REVIEW",
+        "VISUAL_PACKAGING",
+        "PROFESSIONAL_EVIDENCE"
+      ],
+      "evidence_summary_zh": "卡 02 无人接驳与车路协同测试段以路测备案与安全预案为放行证据，事故即停线转人工与规范的事故报告要求一致。"
+    },
+    {
+      "standard_id": "V2X-CLOUD-INTEGRATION-PILOT",
+      "requirement_zh": "工信部等五部门组织的智能网联汽车\"车路云一体化\"应用试点为车路云协同测试提供政策条件；本方案车路协同开放测试段按试点申报条件界定范围，不自行扩大测试边界。",
+      "professional_dimension": "车路云协同试点",
+      "mandatory": false,
+      "review_status": "addressed",
+      "proposal_sections": [
+        "AI 创新生态、人才画像与 AI+ 场景",
+        "更新项目清单、实施政策与分期计划"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/public_space.geojson",
+        "geometry/roads.geojson"
+      ],
+      "metric_refs": [
+        "public_space_ratio"
+      ],
+      "source_ids": [
+        "V2X-CLOUD-INTEGRATION-PILOT",
+        "ICV-ROAD-TEST-REGULATIONS"
+      ],
+      "assumption_ids": [
+        "A-CONTROLS-001"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION",
+        "SPATIAL_REVIEW",
+        "VISUAL_PACKAGING",
+        "PROFESSIONAL_EVIDENCE"
+      ],
+      "evidence_summary_zh": "车路协同测试段的放行门（路测备案与安全预案）以试点政策条件为边界并在场景技术依据表中披露。"
+    },
+    {
+      "standard_id": "BARRIER-FREE-DESIGN-CODE",
+      "requirement_zh": "无障碍设计规范 GB 50763-2012 对无障碍设施设计提出技术标准；本方案无障碍 AI 导行站（卡 08）与多模态导视测评场以 GB 50763 复核为放行证据（JZ-11），人工替代率 100% 与现场可核验。",
+      "professional_dimension": "无障碍设计标准",
+      "mandatory": false,
+      "review_status": "addressed",
+      "proposal_sections": [
+        "AI 创新生态、人才画像与 AI+ 场景",
+        "更新项目清单、实施政策与分期计划"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/public_space.geojson",
+        "geometry/constraints.geojson"
+      ],
+      "metric_refs": [
+        "public_space_ratio"
+      ],
+      "source_ids": [
+        "BARRIER-FREE-DESIGN-CODE",
+        "BARRIER-FREE-ENVIRONMENT-LAW"
+      ],
+      "assumption_ids": [
+        "A-CONTROLS-001"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION",
+        "SPATIAL_REVIEW",
+        "VISUAL_PACKAGING",
+        "PROFESSIONAL_EVIDENCE"
+      ],
+      "evidence_summary_zh": "卡 08 与多模态导视测评场将 GB 50763 复核纳入 JZ-11 放行证据，与无障碍环境建设法衔接。"
+    },
+    {
       "standard_id": "MOHURD-ARCH-DESIGN-DEPTH-2016",
       "requirement_zh": "建筑工程设计文件编制深度规定（2016年版）待取得官方建筑条件后启用；当前仅作为缺资料清单和深化提醒。",
       "professional_dimension": "建筑深度",
