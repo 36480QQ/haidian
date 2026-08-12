@@ -758,7 +758,7 @@ This rule turns governance into a spatial design problem, which is why it belong
 
 **First, what is not this proposal's increment.** Reading every proposal in these two tracks confirms that <!-- BASELINE6:BEGIN -->
 
-These six are now de facto standard. The figures in brackets are measured counts across the 678-proposal corpus: scenario-level suspension and exit conditions (405); a non-AI equivalent path (298); an on-site safety officer (287); remote and physical e-stop (149); speed limits (80); event logs (54). The thinnest is at 54, the thickest at 405. **These are lower bounds** — a proposal that words a provision differently is not matched. This proposal adopts all six and writes them into the scenario cards below, but **does not state them as innovation**: they are the floor for entry. Selling the floor as a feature shows you have not read the field.
+These six are now de facto standard. The figures in brackets are measured counts across the 678-proposal corpus: scenario-level suspension and exit conditions (406); a non-AI equivalent path (299); an on-site safety officer (287); remote and physical e-stop (149); speed limits (81); event logs (55). The thinnest is at 55, the thickest at 406. **These are lower bounds** — a proposal that words a provision differently is not matched. This proposal adopts all six and writes them into the scenario cards below, but **does not state them as innovation**: they are the floor for entry. Selling the floor as a feature shows you have not read the field.
 
 <!-- BASELINE6:END -->
 
