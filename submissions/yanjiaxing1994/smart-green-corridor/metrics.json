@@ -83,6 +83,39 @@
         "Provisional boundary used. Recalculate upon official redline release."
       ],
       "reason": "Computed from provisional geometry layers."
+    },
+    "retain_building_count": {
+      "status": "known",
+      "value": 15,
+      "unit": "count",
+      "source_files": ["proposal.md §1.2"],
+      "formula": "count(retained_buildings)",
+      "confidence": "high",
+      "assumptions": [
+        "Count derived from public documentation and site survey. 5 buildings in Zhongzhi Park (Xuebeiyuan A-E), Tsinghua Science Park main complex, Zhiyuan Tower, Dongsheng Tower, Dazhong Temple Sports Park service center; plus 5 existing parks."
+      ]
+    },
+    "renovate_space_count": {
+      "status": "known",
+      "value": 8,
+      "unit": "count",
+      "source_files": ["proposal.md §1.2"],
+      "formula": "count(renovated_spaces)",
+      "confidence": "medium",
+      "assumptions": [
+        "8 renovation interventions: 5 ground-floor grey-space optimizations in Zhongzhi Park, Tsinghua Science Park ground-floor open interface, Dongsheng Tower ground-floor commercial activation, Dazhong Temple running track luminous upgrade."
+      ]
+    },
+    "new_facility_count": {
+      "status": "known",
+      "value": 11,
+      "unit": "count",
+      "source_files": ["proposal.md §1.2"],
+      "formula": "count(new_facilities)",
+      "confidence": "medium",
+      "assumptions": [
+        "11 new facilities total: 6 independent building-scale structures (Railway Memory Innovation Interactive Hall, Open-Source Community Launch Hall, Ancient Bell Cultural驿站, Youth Activity Lawn Service Station, Sunken Plaza Youth Center, Bowl Skatepark Service Kiosk) plus 5 ancillary public-space service facilities. All are lightweight single-story structures. Exact locations subject to detailed design and statutory approval."
+      ]
     }
   }
 }
