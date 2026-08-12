@@ -1,6 +1,6 @@
 {
   "ok": true,
-  "submission_dir": "submissions\\xyh202131\\jingzhang-ai-pilgrimage-belt",
+  "submission_dir": "submissions/xyh202131/jingzhang-ai-pilgrimage-belt",
   "pr_author": "xyh202131",
   "stage": "formal",
   "deterministic_validation": {
@@ -21,6 +21,10 @@
       ],
       "changed_files": [
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/agent.json",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/century-timeline.en.png",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/century-timeline.en.svg",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/century-timeline.png",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/century-timeline.svg",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/climate-resilience-corridor.en.png",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/climate-resilience-corridor.en.svg",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/climate-resilience-corridor.png",
@@ -87,6 +91,7 @@
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/self_check.json",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/sources.json",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/standard_matrix.json",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/visual/assets/century-time-museum-contract.json",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/visual/assets/climate-resilience-contract.json",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/visual/assets/evidence-freshness-policy.json",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/visual/assets/failure-governance-register.json",
@@ -113,7 +118,7 @@
       "ai_package_stages": {
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt": "formal"
       },
-      "total_bytes": 15557111,
+      "total_bytes": 17057710,
       "maintainer_bypass": false
     },
     "stderr": ""

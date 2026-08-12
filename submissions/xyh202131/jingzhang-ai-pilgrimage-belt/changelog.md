@@ -4,6 +4,21 @@
 >
 > This log records traceable changes to this submission package only. It is not evidence of approval, implementation, field testing, rights clearance, or trusted CI. After any content change, regenerate the manifest from the final Git blobs and rely on repository validation attached to the final PR head.
 
+## v8.0 - 2026-08-12
+
+**Century-Time Museum: 可核验·可纠错·无屏可达的城市时间教育线 / The Century-Time Museum: A Verifiable, Correctable, Screen-free Time Education Line**
+
+- 选择十个相互依赖的文化内容工作包，把京张铁路勘测、通车、高铁、遗址公园与 AI 训练、验证、失败、纠错、退役并置为一条不崇拜技术的城市时间教育线；不重做公共权利、证据类型或失败治理底座。
+- Selected ten mutually dependent cultural-content work packages, juxtaposing Jing-Zhang railway survey, opening, HSR, heritage park with AI training, validation, failure, correction, and retirement as a city time-education line that does not worship technology; does not rebuild public-rights, evidence-type, or failure-governance foundations.
+- 新增 `century-time-museum-contract.json`（JZ-TIME-MUSEUM-G0-V1）：五史实对象、七级来源等级表、口述史同意模板（采集前）、争议纠错五步流（停/下架/纠错/版本保留/恢复）、无屏节点链（起点站牌→对照图谱牌→证据更新墙）、全部指标 unknown 或 0、reality counters 全 0。
+- Added `century-time-museum-contract.json` (JZ-TIME-MUSEUM-G0-V1): five historical objects, seven-grade source-grade table, oral-history consent template (pre-collection), five-step dispute-correction flow (stop/takedown/correct/retain-recover), screen-free node chain (origin→atlas→evidence wall), all metrics unknown or 0, all reality counters 0.
+- 新增双语百年时间图谱 `century-timeline.{svg,png}`，A 双轨对照图谱（铁路年代×AI 门级）/B 来源等级表（七级锚点）/C 争议纠错流程（五步+无屏链），图面通过 QA（修正英文图 C 区卡片宽度不足导致的文字裁切）。
+- Added bilingual century-timeline figure pair `century-timeline.{svg,png}`, A twin-track atlas (railway chronology × AI gates) / B source-grade table (seven anchors) / C dispute-correction flow (five steps + screen-free chain); figure QA passed (fixed English version C-section text overflow from insufficient card width).
+- 为十项文化指标定义状态/分母/证明上限；没有现场数据时保持 unknown 或设计字段覆盖，不得用字段覆盖率冒充现实成效：史实来源可核验率、未清权内容数量、生成内容标识覆盖、争议处理时间、口述史有效同意率、多语言概念一致性、无屏完成导览率、儿童理解度待测、年度退役内容数、独立史实复核状态。
+- Defined state/denominator/proof limits for ten cultural metrics; without field data remain unknown or design-field coverage, cannot use field coverage as real-world outcome proxy: source verifiability rate, uncleared content count, generated-content label coverage, dispute-handling time, oral-history consent rate, multilingual concept consistency, screenless tour completion rate, child comprehension (pending), annual retired-content count, independent historical retest status.
+- geometry、既有 SCENE/JZ/T 编号、八个项目、全部 G0、临时边界和 `not_fully_cleared` 均不变。官方馆藏、明确责任主体、独立复测、批准或运行结果仍为 0；图件不声称馆藏、精确档案位置、已运营展览或工程结论。
+- Geometry, existing SCENE/JZ/T IDs, eight projects, all G0 status, provisional boundaries, and `not_fully_cleared` remain unchanged. Official archives, confirmed accountable operators, independent retests, approval, or operating results remain 0; figures do not claim existing archives, exact archive locations, operational exhibitions, or engineering conclusions.
+
 ## v7.0 - 2026-08-12
 
 **Climate-resilience proof corridor / 气候韧性验证走廊**
