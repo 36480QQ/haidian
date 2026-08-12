@@ -190,8 +190,8 @@
       "path": "compliance_matrix.json",
       "role": "config",
       "required": true,
-      "sha256": "a9fcb50c78860e743c8426786038df9dd6be40ee2eb82bfc172d81f99a7f583d",
-      "size": 23543
+      "sha256": "6f8b91fbaaf698a0ccad529dcd02e32f69abd959b9be2d0212ec098aad3916cf",
+      "size": 23407
     },
     {
       "path": "design_depth_matrix.json",
@@ -304,16 +304,16 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "ff550d9b3ec1fe026e49fd0675769baabda119d8acb9ed349d63b04b58a532af",
-      "size": 73547
+      "sha256": "ba264e7f50be0425645274793dadc956efc40b9989d2545b00f65ac1817d1191",
+      "size": 75124
     },
     {
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "5670109f8dc41d553af6f62b7cc0c90b2a2525fa48280556eb6d85ff7c9caee8",
-      "size": 77011
+      "sha256": "f0e5a10573aef6bfb13869e7c9db6324d63f7d35354406c5f9cf9e7076f5d37f",
+      "size": 78583
     },
     {
       "path": "report/copyright_statement.md",
@@ -355,8 +355,8 @@
       "path": "sources.json",
       "role": "config",
       "required": true,
-      "sha256": "093ef95272c6686d221d9c305f8a058476253e59c110ed0afe1372582c6a9a39",
-      "size": 14418
+      "sha256": "f0c3a3ed3160f375c79378c67dae1e76ad1f2d1e92219c921c54e6e2c2db3d4c",
+      "size": 17362
     },
     {
       "path": "standard_matrix.json",
@@ -455,14 +455,16 @@
       "required": false,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "f8b98ec163434505508e261c125d5b256bdf13762386b48d92de4c29a4241514"
+      "sha256": "0e606e329525f431dee1f1d1398fa9dbd2e446a185aed400534f46eb4291a1ef",
+      "size": 24473
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "c1c0e495fb3c2c70832bc48fdf24da75adcb1a3d522f5019b13bfe9874806176"
+      "sha256": "8fac0f076c9b9e86415b13af581081115ff9f4fb39c99803e334c83c554010b5",
+      "size": 22443
     }
   ],
   "validation_claim": {
