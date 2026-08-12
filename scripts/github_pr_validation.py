@@ -105,6 +105,12 @@ def _is_download_not_found(error: Exception, path: str) -> bool:
     )
 
 
+def _is_comment_patch_forbidden(error: RuntimeError) -> bool:
+    """Allow fork validation to publish a fresh comment when PATCH is forbidden."""
+    message = str(error)
+    return message.startswith("GitHub API PATCH ") and " failed with HTTP 403:" in message
+
+
 class GitHubClient:
     def __init__(self, token: str, repository: str) -> None:
         self.token = token
@@ -216,14 +222,29 @@ class GitHubClient:
 
     def upsert_comment(self, issue_number: int, body: str) -> None:
         comments = self.paginate(f"/repos/{self.repository}/issues/{issue_number}/comments?per_page=100")
-        for comment in comments:
-            if COMMENT_MARKER in comment.get("body", ""):
+        marker_comments = [
+            comment for comment in comments if COMMENT_MARKER in comment.get("body", "")
+        ]
+        # A forbidden PATCH can leave the old marker beside a newly-created
+        # fallback marker. Check the complete marker set before attempting
+        # another mutation, so repeated workflow runs remain idempotent.
+        if any(comment.get("body") == body for comment in marker_comments):
+            return
+        for comment in marker_comments:
+            try:
                 self.request(
                     "PATCH",
                     f"/repos/{self.repository}/issues/comments/{comment['id']}",
                     {"body": body},
                 )
                 return
+            except RuntimeError as exc:
+                if not _is_comment_patch_forbidden(exc):
+                    raise
+                # A pull_request_target token may create a new comment but
+                # cannot edit a bot-owned comment on a fork PR. Try another
+                # marker first; POST only after every marker is uneditable.
+                continue
         self.request("POST", f"/repos/{self.repository}/issues/{issue_number}/comments", {"body": body})
 
     def add_labels(self, issue_number: int, labels: list[str]) -> None:
