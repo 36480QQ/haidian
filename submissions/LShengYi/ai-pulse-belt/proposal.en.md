@@ -14,7 +14,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "robot-deliv
 
 # AI Pulse Belt — Concept Design for the Centennial Jing-Zhang AI Innovation Belt
 
-**One-page executive summary (concept proposal)**: this proposal's core claim is "AI Pulse Belt (智脉一带)" — turning the centennial Jing-Zhang "iron pulse" into the "digital pulse" of the AI era. Three levels respond to announcement clause 1.4: coordinated research area 43.6 km², overall design area 11.413 km² (vs official 11.4, 0.11% deviation disclosed), and three key areas totaling 368.4 ha; the "one belt, three cores, two wings, multiple points" structure implements the five tasks of announcement 1.5(2); 12 scenario cards, 3 industry test scenarios, 5 persona profiles, and 3 AI pilgrimage landmarks form an experienceable, operable, and governable AI-city picture; the **Pulse Protocol** (P1 declare—P2 test—P3 release—P4 review) defines declaration, testing, release, and retirement boundaries for every public AI service; 155 parcels in 13 land-use classes, 84 conceptual buildings, and 9 geometry layers are all recomputable, with provisional boundaries and data gaps disclosed item by item [metric:site_area_sqm] [metric:key_area_count]. All content is concept suggestion; once official boundaries, control conditions, and surveys are released, everything is recomputed under P4. Deliverables: bilingual narrative, A3 booklet, A0 boards, offline interactive HTML, and structured metrics/compliance/risk registries.
+**One-page executive summary (concept proposal)**: this proposal's core claim is "AI Pulse Belt (智脉一带)" — turning the centennial Jing-Zhang "iron pulse" into the "digital pulse" of the AI era. Three levels respond to announcement clause 1.4: coordinated research area 43.6 km², overall design area 11.413 km² (vs official 11.4, 0.11% deviation disclosed), and three key areas totaling 368.4 ha; the "one belt, three cores, two wings, multiple points" structure implements the five tasks of announcement 1.5(2); 12 scenario cards, 3 industry test scenarios, 7 persona profiles, and 3 AI pilgrimage landmarks form an experienceable, operable, and governable AI-city picture; the **Pulse Protocol** (P1 declare—P2 test—P3 release—P4 review) defines declaration, testing, release, and retirement boundaries for every public AI service; 155 parcels in 13 land-use classes, 84 conceptual buildings, and 9 geometry layers are all recomputable, with provisional boundaries and data gaps disclosed item by item [metric:site_area_sqm] [metric:key_area_count]. All content is concept suggestion; once official boundaries, control conditions, and surveys are released, everything is recomputed under P4. Deliverables: bilingual narrative, A3 booklet, A0 boards, offline interactive HTML, and structured metrics/compliance/risk registries.
 
 ## Design Basis and Source List
 
@@ -33,7 +33,7 @@ Since the official `SITE_BOUNDARY` and the three `KEY_AREA` polygons are not yet
 
 The proposal organizes work in the three scopes defined by the announcement: the **coordinated research scope** of 43.6 km2, covering the AI industry ecosystem, strategic positioning, innovation chain, and future-city form; the **overall design scope** of 11.4 km2, producing the urban-renewal framework, industrial spatial layout, transport-utility support, and urban-form control; and the **key-area scope** of 368.4 ha across three detailed-design areas, specifying functions, spatial moves, public-space connectivity, and transport organization. The three scopes are mapped one-to-one in `compliance_matrix.json`, guaranteeing that mandatory tasks 1.3, 1.4, 1.5 and agent.1–agent.6 each carry sections, layers, metrics, drawings, and HTML evidence [depth:three_level_scope_framework] [depth:overall_spatial_structure] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT].
 
-The overall concept is the **"AI Pulse Belt" (智脉一带)**: carrying forward the century-old "iron pulse" of the Jing-Zhang Railway as memory and linear spatial skeleton, and shaping an AI-era "digital pulse belt." The north-south central greenway corridor forms the "belt" (corresponding to task 1.5(2)4, the "Jing-Zhang Ruins Park vitality belt": the central Pulse greenway is the pulse-era carrier of the vitality belt within the overall design scope, and the Qinghuayuan Station site and the heritage components along the corridor all sit within it); the three key areas — Zhongzhizui (Zhongguancun AI Acceleration Area), the Beijing AI Origin Community, and Dazhongsi — form the "three cores"; the Xiaoyue River scenario-enabling wing (west blue-green interface) and the Zhongguancun technology-service wing (east industry-service interface) form the "two wings"; AI scenario nodes and the slow-traffic network form the "multiple nodes" — an "**one belt, three cores, two wings, multiple nodes**" spatial structure. The logo motif is the character "脉" (pulse) morphing from railway rails into an oscilloscope waveform, in Jing-Zhang iron grey (#4A5560) and AI cyan (#0FA3B1), with the slogan "**A Century of Tracks, a Pulse of Intelligence**."
+The overall concept is the **"AI Pulse Belt" (智脉一带)**: carrying forward the century-old "iron pulse" of the Jing-Zhang Railway as memory and linear spatial skeleton, and shaping an AI-era "digital pulse belt." The north-south central greenway corridor forms the "belt" (corresponding to task 1.5(2)4, the "Jing-Zhang Ruins Park vitality belt": the central Pulse greenway is the pulse-era carrier of the vitality belt within the overall design scope, and the Qinghuayuan Station site and the heritage components along the corridor all sit within it); the three key areas — Zhongzhizui (Zhongguancun AI Acceleration Area), the Beijing AI Origin Community, and Dazhongsi — form the "three cores"; the Zhongguancun technology-service wing (west industry-service interface) and the Xiaoyue River scenario-enabling wing (east blue-green interface) form the "two wings" (orientation per `brief/public-materials-plan.md`); AI scenario nodes and the slow-traffic network form the "multiple nodes" — an "**one belt, three cores, two wings, multiple nodes**" spatial structure. The logo motif is the character "脉" (pulse) morphing from railway rails into an oscilloscope waveform, in Jing-Zhang iron grey (#4A5560) and AI cyan (#0FA3B1), with the slogan "**A Century of Tracks, a Pulse of Intelligence**."
 
 | Scope | Design question | Answer | Data anchor |
 | --- | --- | --- | --- |
@@ -43,7 +43,7 @@ The overall concept is the **"AI Pulse Belt" (智脉一带)**: carrying forward 
 
 The three scopes are not disconnected drawings: the research scope sets industry-chain and city-form judgments, the overall design scope implements them as renewal projects and spatial structure, and the key-area design verifies implementability at parcel, building, transport, public-space, and AI-scenario level [source:PROCESSED-FACT-PACK]. Any area, ratio, scale, or project count that cannot be recomputed from structured data is not written into formal conclusions.
 
-![Concept map of the overall design area and coordinated research scope](assets/figures/site-overview.en.png)
+![Figure 1 Concept map of the overall design area and coordinated research scope (concept suggestion; source: geometry/site_boundary.geojson and geometry/key_areas.geojson, provisional)](assets/figures/site-overview.en.png)
 
 ## Coordinated Research Area: Industry and Future City Research
 
@@ -62,6 +62,8 @@ The core task of the coordinated research scope is to build a world-class AI inn
 
 All global-case conclusions are concept references for professional deepening, not confirmed government arrangements.
 
+![Figure 6 AI innovation ecosystem map (concept; drawn by agent from public sources and global AI-district practice; not official)](assets/figures/ecosystem-map.en.png)
+
 **Three-district two-wing industrial layout (concept suggestion)**:
 
 | District | Industry focus | Spatial anchor |
@@ -69,8 +71,8 @@ All global-case conclusions are concept references for professional deepening, n
 | Zhongzhizui AI Acceleration Area | Foundation-model training, full-stack independent innovation, standards, safety governance | Northern R&D belt, standards culture hall, sports test field [data:geometry/land_use.geojson#LU-001] |
 | Beijing AI Origin Community | Campus-proximate incubation, open-source system, talent zone, results publishing | Origin release hall, Tsinghua-East-Road education belt, Wudaokou mixed-use belt [data:geometry/land_use.geojson#LU-001] |
 | Dazhongsi AI Industry Cluster | Agents, smart terminals, content consumption, data factors | Zhichun-Road commercial belt, data-factor tower, station-front commerce [data:geometry/land_use.geojson#LU-001] |
-| Xiaoyue River enabling wing (west) | Scenario trials, ecology experience | Western protective green with test segments [data:geometry/green_space.geojson#GREEN-001] |
-| Zhongguancun service wing (east) | Tech services, international exchange; hosts the six support mechanisms — land, capital, talent, computing, data, scenarios | Research and service platforms and industry-service facilities along Xueyuan Road [data:geometry/land_use.geojson#LU-001] |
+| Xiaoyue River enabling wing (east) | Scenario trials, ecology experience | Protective green with test segments [data:geometry/green_space.geojson#GREEN-001] |
+| Zhongguancun service wing (west) | Tech services, international exchange; hosts the six support mechanisms — land, capital, talent, computing, data, scenarios | Research and service platforms and industry-service facilities along Xueyuan Road [data:geometry/land_use.geojson#LU-001] |
 
 **Regional collaboration interfaces (concept suggestion)**: the coordinated research scope links the wider innovation network through five interfaces; no cross-district agreement is confirmed at this stage, and the interfaces express negotiable directions only [source:AGENT-TASKBOOK]:
 
@@ -81,6 +83,18 @@ All global-case conclusions are concept references for professional deepening, n
 | Huairou Science City | Translating large-science-facility outputs into urban life services | Interdisciplinary validation suggestions, measurement-method exchange | No access to non-public research or facility data |
 | Beijing E-Town | Real-world conditions and safety requirements of robotics and smart manufacturing | Production-environment re-test records, mutual recognition of safety requirements | No fabricated enterprises, orders, or production-line cooperation |
 | Jing-Jin-Ji city network | Cross-city comparable public-service problems and difference attribution | Off-site re-tests, difference notes, published failure records | Single-site results never replace cross-city validation |
+| Haidian "two zones, one belt" industrial belt | Announcement 1.5(1) requires linking development with the "two zones, one belt" | Mutual recognition of industrial-factor-corridor function mapping | Limited to the officially published "two zones, one belt" layout; no fabricated cross-district agreements |
+
+**Alignment with the Haidian "1+X+1" industrial system (concept suggestion)**: announcement 1.5(2) requires proposing "AI+" convergence directions with other leading industries under Haidian's "1+X+1" industrial system and stating the functional proportions of various industries and their spatial organization patterns [source:OFFICIAL-ANNOUNCEMENT]. This proposal maps functions under a "1 (AI) + X (leading industries) + 1 (technology & life services)" structure (table below); functional proportions are expressed as concept ranges (research 0802 ~18–28%, commercial 05 ~6–12%, residential 0701 ~4–8%, culture/education/sports/medical combined ~6–10%, roads ~28–35%, green ~25–30%, reserve 16 ~2–5%), with an overall building-scale concept range of 8–12 million m2 (massing order including retained stock; caliber to be rechecked). All ranges are hypotheses pending review (see ASSUME-005), enter no approval conclusion, and are recomputed under beat P4 once official controls and statistics release.
+
+| "1+X+1" component | District "AI+" convergence direction | Spatial anchor | Concept functional-proportion range (pending) |
+| --- | --- | --- | --- |
+| "1": AI | Foundation-model training, agents, edge computing, data factors | Zhongzhizui R&D belt, Dazhongsi data-factor tower, reserve land | Research 0802 ~18–28% |
+| X1: Software & information services | Open-source collaboration, base software, industry models | Origin release hall, Xueyuan Road platforms | Commercial 05 ~6–12% |
+| X2: Healthcare | Health-information hints, elder-friendly medical navigation | Medical 0806 land, barrier-free AI wayfinding | Residential 0701 ~4–8% |
+| X3: Education & culture | AI science classroom, Bell-chime metaverse, North Film Academy arts linkage | Education 0804, culture 0803 land | Culture/education/sports/medical combined ~6–10% |
+| X4: Smart terminals & content consumption | Terminal showcases, content consumption, international roadshows | Dazhongsi station-city commercial belt | Blended into commercial & research land |
+| X5: Technology & life services | Enterprise-service agents, talent services, life services | Wudaokou mixed-use belt, commercial street nodes | Blended into commercial & residential land |
 
 The future-city form study answers how AI changes work, life, social interaction, learning, transport, and public services, using the "digital pulse belt" as spatial thread to locate AI transport systems, continuous green space, innovation service facilities, and an international living-working atmosphere into identifiable districts, nodes, corridors, and scenarios [depth:overall_spatial_structure] [standard:MOHURD-URBAN-DESIGN-MEASURES]. Global AI activities, developer communities, open scenarios, and pilgrimage routes are phrased as "concept suggestions / reference proposals," never as confirmed government events or implementation arrangements.
 
@@ -108,7 +122,7 @@ The overall design scope (measured 11.413 km2) requires control-detailed-plannin
 
 **Land use (concept suggestion)**: `geometry/land_use.geojson` contains 155 parcels across 13 land-use classes, completely and seamlessly covering the design boundary (difference <1 m2, verified by `validate_cover`) [data:geometry/land_use.geojson#LU-001]. Research land (0802) dominates, supported by commercial (05), residential (0701), cultural (0803), and educational (0804) uses; the central corridor (1401 park green) is about 260 m wide, running north-south [data:geometry/green_space.geojson#GREEN-001]. `geometry/buildings.geojson` expresses 84 conceptual building footprints (design_proposal attribute, non-overlapping, not statutory permits) [data:geometry/buildings.geojson#BLDG-001] [metric:building_footprint_area_sqm]. **Content involving building heights, development intensity, road red lines, setbacks, roof form, massing, and facility standards is treated as "pending confirmation of official control conditions" until official controls are released — agent-estimated values are never presented as approved indicators.**
 
-![Conceptual land-use structure of the overall design area](assets/figures/land-use-structure.en.png)
+![Figure 2 Conceptual land-use structure of the overall design area (concept suggestion; source: geometry/land_use.geojson, provisional)](assets/figures/land-use-structure.en.png)
 
 ## Detailed Design of Key Areas
 
@@ -126,15 +140,15 @@ The three key areas reach integrated-implementation-plan design depth [depth:thr
 - **Beijing AI Origin Community (104.3 ha)**: positioned as a near-campus translation and talent community; structure of "education-band stitching + Origin Release Hall + Wudaokou commercial-living belt"; spatial moves include stitching campus and park along Tsinghua East Road, the Origin Release Hall, embedded community services, and open-air developer workstations (card 12); AI scenarios are open-source community, results release, talent-zone services, and near-campus incubation; implementation targets P3 public operation and regular P4 reviews, carried by renewal projects JZ-03/JZ-04; risks center on campus data authorization and translation windows, with rollback trigger R-02 [data:geometry/key_areas.geojson#PROV-KEY-002].
 - **Dazhongsi AI Industry Cluster Area (72.0 ha)**: positioned as a station-city integrated intelligent-economy block; structure of "pre-station four-quadrant walking ring + Zhichun Road commercial belt + data-elements tower"; spatial moves include four-quadrant pedestrian connectivity at the Dazhongsi station plaza, station-city commercial integration, Zhongyun cultural performance (card 04), and multimodal wayfinding evaluation (card 08); AI scenarios are agent and intelligent-terminal showcases, content consumption, data elements, and international roadshows; implementation links the station-city renewal project JZ-12 with the Global AI Week; risks center on heritage conflict and station-city coordination, with rollback trigger R-03 [data:geometry/key_areas.geojson#PROV-KEY-003].
 
-The three key areas are presented as `provisional_constraint` in `geometry/key_areas.geojson`; the narrative, HTML, sources, assumptions, and self_check all state they cannot serve as formal scoring or approval basis. `compliance_matrix.json` covers announcement clauses 1.5.3.1, 1.5.3.2, 1.5.3.3. The design expression includes functions, conceptual buildings, public-space systems, transport organization, and implementation projects; the A3 booklet and A0 boards include key-area master plans, detail maps, and metric notes, and the HTML page allows toggling among the three key areas.
+The three key areas are presented as `provisional_constraint` in `geometry/key_areas.geojson`; the narrative, HTML, sources, assumptions, and self_check all state they cannot serve as formal scoring or approval basis. `compliance_matrix.json` covers the three key-area mandatory items of announcement 1.5(3)1)2)3). The design expression includes functions, conceptual buildings, public-space systems, transport organization, and implementation projects; the A3 booklet and A0 boards include key-area master plans, detail maps, and metric notes, and the HTML page allows toggling among the three key areas.
 
-![Key-area detailed design concepts (concept suggestion)](assets/figures/key-areas.en.png)
+![Figure 3 Key-area detailed design concepts (concept suggestion; source: geometry/key_areas.geojson and geometry/public_space.geojson, provisional)](assets/figures/key-areas.en.png)
 
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
 The proposal builds spatial-need profiles for AI talent and enterprises, and a two-track scenario system of "industry development scenarios + AI-enabled urban-function scenarios." Every scenario states its spatial carrier, data and human boundary, operating body, and exit condition; the eight-element structure (service users, spatial carrier, user journey, input data, AI capability, infrastructure, operating body, failure degradation) makes every scenario locatable, operable, and governable [source:AGENT-TASKBOOK].
 
-**5 user profiles**:
+**7 user profiles**:
 
 | Profile | Typical needs | Spatial response | Risk that cannot be ignored | Self-check boundary |
 | --- | --- | --- | --- | --- |
@@ -142,7 +156,11 @@ The proposal builds spatial-need profiles for AI talent and enterprises, and a t
 | Researchers | Cross-institution collaboration, transformation, academic exchange | Origin release hall, R&D courtyards, Tsinghua-East-Road education belt | Short transformation windows, dependence on one-off policies | Campus data and research results require authorization; support routine courtyard exchange, not single-policy dependence |
 | Family weekend visitors | Leisure, sports, cultural experience | Central greenway, pocket parks, sports test field, bell-culture experience | Peak crowd capacity and image-privacy concerns | No personal behavior tracking; aggregated activity statistics only; peak-hour diversion |
 | Senior tourists | Barrier-free wayfinding, slow leisure, cultural explanation | Barrier-free AI wayfinding stations, Pulse-Rail art rest belt | Digital divide causing digital exclusion | Health data never used for commercial recommendations; keep non-AI channels (guided tours, phone booking) |
+| Children and parent-child families | Science outreach, safe play, co-learning | Museum-style rail classroom (AI science nodes), child-friendly pocket parks, sports test field | Minor-data protection | No personal data collection from minors; parental supervision or school-organized accompaniment |
+| Community residents and merchants | Everyday service convenience, business gains, renewal-rights protection | Wudaokou commercial-living belt, community-service 0702 land, southern renewal band (JZ-08) | Conflicts of interest in renewal and scenario operations | Exit and appeal rights over AI scenarios; renewal relocation/compensation perspective rechecked at detailed-design stage |
 | Developer-community operators | Event organizing, code collaboration, community reputation | Open-air developer workspace code wall, release plaza, Box meeting pavilions | Subsidy-dependent events stall when subsidies end | Public activity data anonymized and aggregated; manage events by "launch—trial—evaluate—continue/retire" |
+
+**Child-friendly and all-age-friendly (concept suggestion)**: along the Pulse-Rail Art Track, a "museum-style rail classroom" concept — AI science display nodes, parent-child activity grounds, and a youth maker corner form a child-friendly sequence; the public-space component library adds child-friendly components (low-position wayfinding, children's washing facilities, caregiver seating, safety lighting) and the wayfinding system adds child-friendly graphic symbols; scenarios involving minors never collect personal data, and activities require parental supervision or school accompaniment.
 
 **12 scenario cards (concept suggestion)**:
 
@@ -161,7 +179,28 @@ The proposal builds spatial-need profiles for AI talent and enterprises, and a t
 | 11 AI coffee robot station | Commercial and R&D corners: robotic-arm coffee experience and developer social hub | Minimal order data; standard payment channels | Commercial operator | Mechanical faults stop it; complaints answered ≤24h |
 | 12 Open-air developer workspace code wall | Origin release plaza vicinity: open-source contribution wall, open-air workstations, demo zone | Public contribution data anonymized-aggregated | Open-source community + district operator | Human final review of content; disputes take it down |
 
-Scenario cards unfold through an eight-element structure: **service users, spatial carrier, user journey, input data, AI capability, infrastructure, operating body, failure degradation**. Card 01 (rail-inspection AR twin) as example: the journey is scan-to-view — AR overlays century-old imagery, then footfall heat aggregation display; input data are public imagery and inspection points (no personal imagery); AI capability is image registration and historical-fact comparison; infrastructure is recognition posts and wayfinding screens along the segment; failure degradation is an on-screen hint and manual verification when recognition fails. The remaining cards unfold under the same structure at detailed-design stage.
+Scenario cards unfold through an eight-element structure: **service users, spatial carrier, user journey, input data, AI capability, infrastructure, operating body, failure degradation**. Card 01 (rail-inspection AR twin) as example: the journey is scan-to-view — AR overlays century-old imagery, then footfall heat aggregation display; input data are public imagery and inspection points (no personal imagery); AI capability is image registration and historical-fact comparison; infrastructure is recognition posts and wayfinding screens along the segment; failure degradation is an on-screen hint and manual verification when recognition fails. Cross-type representative cards unfold below (the remaining cards unfold under the same structure at detailed-design stage):
+
+- **Card 02 Autonomous shuttle corridor (eight elements)**: service users are park commuters and rail-transfer passengers; spatial carrier is the concept feeder line on Pulse-Belt Avenue [data:geometry/roads.geojson#ROAD-010]; journey is booking→waiting→riding→transfer; input data are vehicle states and aggregated stop-flow data (no personal trajectories); AI capability is route planning, dispatch, and safety monitoring; infrastructure is roadside units, signal priority, and physical emergency stops; operating body is the bus group + district test office; failure degradation is any accident stopping the line and returning to manual buses (maps to the safety-class rollback trigger).
+- **Card 04 Bell-chime metaverse (eight elements)**: service users are cultural visitors and the developer community; spatial carrier is the Dazhongsi station-forecourt plaza [data:geometry/public_space.geojson#PUBLIC-001]; journey is scan→bell interaction→cultural content accumulation; input data are public heritage imagery and content materials; AI capability is digital twin, voice interaction, and content generation; infrastructure is station-front projection and audio equipment; operating body is the Dazhongsi cultural institution + district; failure degradation is content complaints answered within 48h and removal on heritage conflict (maps to the heritage-class rollback trigger).
+- **Card 12 Open-air developer workspace code wall (eight elements)**: service users are developers and the open-source community; spatial carrier is around the Origin release plaza [data:geometry/public_space.geojson#PUBLIC-002]; journey is registration→contribution→wall display→honor accumulation; input data are public open-source contribution data (anonymized-aggregated); AI capability is contribution statistics, content-review assistance, and trend display; infrastructure is open-air workstations, screens, and power; operating body is the open-source community + district operator; failure degradation is human final review of content disputes, taken down on dispute.
+
+**Experiencability, displayability, and replicability assessment (concept suggestion)** (answering the review dimension "whether an experienceable, displayable, and replicable AI city-scenario set is formed"):
+
+| Card | Experiencability | Displayability | Replicability |
+| --- | --- | --- | --- |
+| 01 Rail-inspection AR twin | Scan-and-use, no booking | Live demo along the public greenway | Content asset replicable to other cultural segments |
+| 02 Autonomous shuttle corridor | Real ride experience at station transfer | Displayed along Pulse-Belt Avenue | Feeder-operating model replicable to parks |
+| 03 AI cycling coach station | Real-time guidance while riding | Greenway-node data visualization | Standardized equipment, batch deployment |
+| 04 Bell-chime metaverse | Interactive station-front performance | Big-screen + AR dual-mode display | Bell-chime IP content reusable under license |
+| 05 Box meeting pavilion | Self-service scan-to-use | Live display in R&D blocks | Modular product, replicable |
+| 06 Drone delivery station | Booked experience in pilot area | Display in airspace demo zone | Low-altitude logistics model pending pilot validation |
+| 07 AI-gardener pocket park | Community adoption participation | Displayed at residential corners | Adoption mechanism replicable to other neighborhoods |
+| 08 Barrier-free AI wayfinding | Voice/tactile multimodal use | Displayed at stations and greenway nodes | Barrier-free service norms promotable |
+| 09 Event-data visualization wall | Live viewing at events | Big screens around sports grounds | Event-data service replicable |
+| 10 AI energy-management building | In-building smart-control experience | Energy-consumption visualization | Energy-saving model promotable to existing stock |
+| 11 AI coffee robot station | Instant consumption on commercial streets | Robotic-arm live demo | Commercial operating model replicable |
+| 12 Open-air developer workspace code wall | Contributions go live instantly | Displayed at release plaza | Open-source event model replicable to parks |
 
 **3 industrial test-and-verification scenarios (concept suggestion)**: each scenario anchors a test node in `geometry/public_space.geojson` and operates under Pulse Protocol beat P2 (controlled pilot):
 
@@ -171,6 +210,18 @@ Scenario cards unfold through an eight-element structure: **service users, spati
 | Low-altitude delivery route verification | Concept Zhongzhizui–Dazhongsi route [data:geometry/public_space.geojson#PUBLIC-014] | Drone delivery (card 06) [scenario:robot-delivery-low-speed] | Subject to airspace and safety regulations; no facial capture | No operation without airspace approval; zero tolerance for safety hazards |
 | Multimodal wayfinding evaluation ground | Central greenway node [data:geometry/public_space.geojson#PUBLIC-015] | Multimodal evaluation of barrier-free wayfinding (card 08) | No personal trajectory storage; on-site verifiable | On-site mismatch stops it |
 
+**Scenario technical basis (concept suggestion)**: the AI deployment path of scenario cards and test scenarios is anchored to public technical standards, regulations, and pilots, keeping the technical path verifiable [standard:UNMANNED-AIRCRAFT-REGULATIONS] [standard:ICV-ROAD-TEST-REGULATIONS] [standard:BARRIER-FREE-DESIGN-CODE]:
+
+| Scenario / test | Public reference basis | Constraint on this proposal's expression |
+| --- | --- | --- |
+| Card 02 shuttle corridor + open vehicle-road-coordination test segment | "Administrative Measures for Road Testing and Demonstration Application of Intelligent Connected Vehicles (Trial)" (2021); Beijing high-level autonomous-driving demo zone (Yizhuang) public practice | Road-test filing is the JZ-06 release gate; vehicle-state and road-condition data used for testing only |
+| Vehicle-road-cloud integration test segment | "Vehicle-Road-Cloud Integration" application pilot by five ministries (2024; pilot conditions per competent authority release) | Test segment applied under pilot conditions; no self-expanded testing scope |
+| Card 06 drone delivery station + low-altitude delivery route verification | "Interim Regulations on the Flight Management of Unmanned Aircraft" (effective 2024-01-01); "Beijing Municipal Provisions on the Administration of Unmanned Aircraft" (effective 2024-06-01) | Airspace approval is the JZ-09 release gate; no facial capture; zero tolerance for safety hazards |
+| Card 08 barrier-free AI wayfinding + multimodal evaluation ground | Barrier-Free Environment Construction Law; "Code for Accessibility Design" GB 50763-2012 | Wayfinding facilities rechecked against GB 50763 as the JZ-11 release evidence; 100% human-alternative rate |
+| Content-class cards 01/04/12 | "Interim Measures for the Management of Generative AI Services" (effective 2023-08-15) | Human final review of content; complaint-response deadlines (48h/24h); generative-content labeling |
+
+**Five-domain coverage of the announcement's optional "self-selected-zone scenario design" (concept suggestion)**: the announcement's optional scenario-design scope lists the five domains of AI+ software & information services / healthcare / education / legal services / life services; this proposal maps them conceptually as follows: AI+ software & information services (card 05 Box meeting pavilion, card 12 code wall), AI+ healthcare (health-service information-hint nodes, card 08 barrier-free wayfinding), AI+ education (museum-style rail classroom AI science nodes), AI+ legal services (concept enterprise-service agent compliance-consultation point, integrated into card 05), AI+ life services (card 11 coffee robot, card 03 cycling coach, card 07 gardener). Self-selected scenarios are optional per the announcement; this proposal expresses them at the priority of a mandatory-response item without expanding the design scope.
+
 **Public-safety AI applications are studied as operations-review research only and never replace human review** [scenario:public-safety-operations-review]. **Health-service applications** (appointment escort tips, first-aid point guidance, chronic-care information prompts, etc.) provide informational hints only — never medical decisions, and no data persistence [scenario:ai-health-service-navigation] [data:geometry/public_space.geojson#PUBLIC-016].
 
 **3 AI pilgrimage landmarks (concept suggestion)**: the **Bell of AI Origins** (Dazhongsi station-forecourt plaza; bell culture meets AI-origin imagery), the **Tower of AI Light** (Zhongzhizui gateway plaza; light art with real-time model-inference visualization), and the **Pulse-Rail Art Track** (northern central greenway; artistic reuse of disused rails with digital projection). The pilgrimage route "A Century of Tracks, a Pulse of Intelligence" links to the "Global AI Week public route" (renewal project JZ-12) [data:geometry/public_space.geojson#PUBLIC-001] [data:geometry/green_space.geojson#GREEN-001]. The related public-space and green metrics are `known` in `metrics.json` and directly recomputable [metric:public_space_ratio] [metric:green_ratio].
@@ -179,9 +230,53 @@ Scenario cards unfold through an eight-element structure: **service users, spati
 
 **Annual event system and community operations (concept suggestion)**: a "one theme per season" annual rhythm — **Developer Conference** (open-source and standards governance, contribution-wall release), **Scenario Open Day** (public access to controlled tests of scenario cards, linked to beat P2), **Global AI Week** (pilgrimage route and multilingual international roadshows, linked to renewal project JZ-12), and **Annual Pulse Awards & review meeting** (linked to P4 review and the honor ladder). Community operations manage all events by "initiate—pilot—evaluate—continue or retire," with public event data aggregated anonymously and deleted on retention expiry; the attraction-conversion path is "scenario exposure → test contract → incubation entry → policy payoff," linked to the Wudaokou commercial-living belt, the Origin Release Hall, and reserve flexible land [source:AGENT-TASKBOOK] [depth:renewal_project_list] [data:geometry/land_use.geojson#LU-001].
 
+**Attraction-conversion funnel (concept suggestion; quantified targets are concept ranges pending recheck)**: the conversion mechanism is assessable and reviewable [source:AGENT-TASKBOOK]:
+
+| Stage | Action | Quantified target (concept range) | Responsible party |
+| --- | --- | --- | --- |
+| Scenario exposure | Scenario Open Day / Global AI Week scenario experience | 120–200 thousand scenario visits per year | Joint operating body |
+| Test contract | Intent agreements for test scenarios | 30–60 contracts per year | District test office + industry-service wing |
+| Incubation entry | Entry and incubation in Origin Community / Zhongzhizui | 40–80 incubated entries per year | Industry-service wing + park platform |
+| Policy payoff | Talent / computing / data-factor policy delivery | 20–40 payoffs per year | Policy window + three-source funding |
+
+**Event brand-IP derivation rules (concept suggestion)**: the annual event system accumulates the "Pulse" brand IP — ① brand elements (logo, slogan, status-light language) require clearance and official approval before use; ② derived revenue from event IP (merchandise, digital content) is booked under the "scenario revenue" channel and flows back to public-welfare services; ③ IP licensing never includes government-endorsement phrasing.
+
+**3 landmark operation cards (concept suggestion)**: pilgrimage landmarks with operating models, event linkage, and revenue-exit boundaries [source:AGENT-TASKBOOK]:
+
+| Landmark | Operating model | Annual-event linkage | Revenue & exit |
+| --- | --- | --- | --- |
+| Bell of AI Origins | Dazhongsi cultural institution + district joint operation | Bell-chime performances, Global AI Week | Scenario revenue + content licensing; removed on heritage conflict |
+| Tower of AI Light | Park-platform operation | Release ceremonies, light-art season | Cleared advertisement revenue; downgraded on excessive energy use |
+| Pulse-Rail Art Track | Greenway operation + artist residencies | Rail classroom, art-projection season | Public-welfare fund + content co-creation; low-intervention principle |
+
+**International communication copy (concept suggestion, for review and communication-team deepening)**:
+
+- **30-second pitch**: A century of iron rail becomes the digital pulse of AI — the AI Pulse Belt turns Beijing's first railway into a living laboratory where 12 public AI services declare, test, release, and review their own operation; three cores, two wings, one green spine; a century of tracks, a pulse of intelligence.
+- **Slogan in English**: "A Century of Tracks, a Pulse of Intelligence" (short-media alternative: "One Belt, One Pulse").
+- **Social-media templates ×3**: ① launch post — "The railway that built China's industrial age now runs on pulses of intelligence. #AIPulseBelt"; ② event post — "Scenario Open Day: 12 AI services, 4 protocol beats, 0 personal data. Try the pulse. #BeijingJingZhang"; ③ recruiting post — "We're co-creating a barrier-free AI city with disabled, elder, and youth communities. Join the committee. #AccessibleAI".
+- **Audience tiering table**:
+
+| Audience | Channel & vehicle | Key messages |
+| --- | --- | --- |
+| International developers | GitHub, tech media | Open-source collaboration, code wall, Pulse Protocol |
+| International planning bodies | A3 booklet, A0 boards, bilingual proposal | Three-level scope, phased implementation, metric recomputation |
+| Overseas tourists | Multilingual wayfinding and AR scenarios | Century-old railway, AI pilgrimage route |
+| Academia and media | Academic conferences, feature articles | Data minimization, public failure records, governance mechanisms |
+
+All copy is concept material; actual publication requires official approval and copyright clearance [source:AGENT-TASKBOOK].
+
 AI governance suggestions follow data-minimization, public-source, explainability, and human-review principles [standard:GENERATIVE-AI-INTERIM-MEASURES]: city agents may assist in identifying slow-traffic gaps, public-space heat, facility maintenance, enterprise-service demand, and event-safety risk — but never replace planning approval, never output unauthorized personal profiles, and never claim official implementation commitment. All scenario nodes enter the structured layers or compliance matrix.
 
-**Public interest and inclusive design (concept suggestion)**: accessibility [standard:BARRIER-FREE-ENVIRONMENT-LAW] [standard:ELDERLY-SMART-TECH-PLAN-2020-45], age-friendliness, and digital equity are baseline — non-AI alternative channels (guided tours, phone booking, in-person services) always remain; applications touching public interest or personal data undergo privacy impact assessment (PIA); conflicts of interest between operators and developers are handled through protocol disclosure and the public committee's appeal mechanism; the needs of night workers, low-income groups, and non-digital users are item-by-item rechecked at detailed-design stage.
+**Public interest and inclusive design (concept suggestion)**: accessibility [standard:BARRIER-FREE-ENVIRONMENT-LAW] [standard:ELDERLY-SMART-TECH-PLAN-2020-45], age-friendliness, and digital equity are baseline — non-AI alternative channels (guided tours, phone booking, in-person services) always remain; applications touching public interest or personal data undergo privacy impact assessment (PIA); conflicts of interest between operators and developers are handled through protocol disclosure and the public committee's appeal mechanism; the needs of vulnerable groups are item-by-item rechecked and mapped at detailed-design stage per the list below:
+
+| Group | Item to recheck | Prepared action in this proposal |
+| --- | --- | --- |
+| Night workers | Night lighting, night-delivery hours and noise control, night-market operating hours | Public-space component library adds night-lighting and noise-monitoring components (concept) |
+| Low-income groups | Free/universal-access channels, public Wi-Fi and basic information-service coverage | Cards 05/11 set universal-access hours; three-source funding reserves public-welfare allocation |
+| Non-digital users | Manual-window distribution, phone booking, paper-information reachability | Non-AI alternative-channel distribution mapped at detailed-design stage |
+| Minors | Child-friendly facilities and data protection | No minor data collection; child-friendly components per the public-space component library |
+
+**Public committee composition (concept suggestion)**: the public committee comprises residents, merchants, disabled representatives, senior representatives, guardians of minors, experts/scholars, and operator representatives, with vulnerable-group seats no less than one third; the committee holds the right to be informed, to advise, and to appeal on activities and scenarios, and hearings are mandatory at the P1 declaration and P4 review beats.
 
 ### Pulse Protocol (operating mechanism)
 
@@ -208,14 +303,24 @@ The land-use plan follows public land-use survey, planning, and regulation class
 
 The building plan distinguishes retained, renovated, renewed, new, and to-be-confirmed objects: because existing buildings, ownership, control plans, and engineering conditions are absent, the proposal provides only a **method framework and to-be-calibrated checklist, without fabricating retain-renovate-demolish conclusions** [depth:retain_renovate_demolish] [depth:height_massing_character] [standard:MOHURD-ARCH-DESIGN-DEPTH-2016]. All 84 conceptual buildings in `geometry/buildings.geojson` carry `status=design_proposal`, `confidence=low`, expressing massing intent only [data:geometry/buildings.geojson#BLDG-001] [metric:building_footprint_area_sqm]. Total building scale, FAR, height, and density are uniformly `status=unknown` pending official conditions (see [metric:floor_area_ratio], whose `reason` states the missing conditions and recomputation path).
 
+**Key-area retain-renovate-demolish tiering hypothesis (concept suggestion; pending official existing-condition survey and control-plan recheck)**: to answer announcement 1.5(3)'s mandatory requirement of "clear retain-renovate-demolish classification" for key areas, tiering-ratio hypothesis ranges are given from public materials — they constitute no demolition, retention, or relocation conclusion:
+
+| Key area | Retain (range) | Renovate (range) | Renew/demolish-rebuild (range) | Recheck basis |
+| --- | --- | --- | --- | --- |
+| Zhongzhizui | 35–50% | 25–40% | 10–30% | Public park information as base; recheck after official survey |
+| Beijing AI Origin Community | 30–45% | 30–45% | 15–35% | Wudaokou commercial-living belt is highly mixed; ownership survey needed |
+| Dazhongsi | 25–40% | 30–45% | 20–40% | High station-city renewal intensity; control-plan and heritage recheck needed |
+
+The tiering hypothesis is anchored to the `phasing.geojson` three-phase boundaries and `land_use.geojson` parcels, all marked pending recheck, and managed under `assumptions.json` (A-CONTROLS-001, ASSUME-005).
+
 ## Transport, Rail, Municipal Infrastructure, and Public Services
 
 The transport plan responds to the announcement's requirements on station integration, road micro-circulation, slow-traffic gaps, external access, parking, non-motorized parking, and green transport [depth:traffic_rail_slow_parking] [data:geometry/roads.geojson#ROAD-001] [data:geometry/public_space.geojson#PUBLIC-001]:
 
-- **External access (concept)**: fast connection to the central city and surrounding areas via North 5th Ring Road (expressway), Zhichun Road (arterial), and Xueyuan Road/Xitucheng Road (arterial), aligning with the 5th-Ring regional integration construction to propose external-access improvement directions; specific ramps, cross-sections, and traffic-model deepening await transport-special-study conditions (the Zhongzhizui area prioritizes external-access improvement per announcement 1.5.3.1);
+- **External access (concept)**: fast connection to the central city and surrounding areas via North 5th Ring Road (expressway), Zhichun Road (arterial), and Xueyuan Road/Xitucheng Road (arterial), aligning with the 5th-Ring regional integration construction to propose external-access improvement directions; specific ramps, cross-sections, and traffic-model deepening await transport-special-study conditions (the Zhongzhizui area prioritizes external-access improvement per announcement 1.5(3)1));
 - **Rail connection (concept)**: anchored on Dazhongsi, Wudaokou, Zhichun Road, Xitucheng, and Tsinghua-East-Road-West stations, with 3 concept connector lines (ROAD-011/012/013) and an autonomous shuttle corridor (card 02) [scenario:ai-traffic-walkability];
 - **Micro-circulation**: Pulse-Belt Avenue (28 m concept red line), Pulse-2nd/3rd Streets organize block-level loops; slow-traffic greenway runs the full greenway [data:geometry/roads.geojson#ROAD-010];
-- **Slow-traffic gaps**: concept north-5th-Ring crossing node and greenway north/south landscape nodes (see Figure 04 and `constraints.geojson`) [data:geometry/constraints.geojson#CONSTRAINTS];
+- **Slow-traffic gaps**: concept north-5th-Ring crossing node and greenway north/south landscape nodes (see Figure 4 and `constraints.geojson`) [data:geometry/constraints.geojson#CONSTRAINTS];
 - Parking and non-motorized parking follow a "rail + shuttle + slow traffic" priority; scale to be confirmed by transport special studies and control conditions.
 
 Utilities and public services cover AI industry services (one-stop computing/data/compliance/investment service points, with the enterprise-service copilot integrated [scenario:enterprise-service-copilot]), talent-living services, new infrastructure (edge-computing stations, distributed-energy nodes, card 10), and traditional utility integration [depth:municipal_new_infrastructure]. Missing pipeline, energy, drainage, flood-control, and fire-engineering data are listed as prerequisites for formal deepening, stated in `assumptions.json` (A-CONTROLS-001) rather than written as approved conditions.
@@ -226,11 +331,46 @@ Utilities and public services cover AI industry services (one-stop computing/dat
 
 **Public-space component library (6 classes, concept suggestion)**: plazas (node aggregation), pocket parks (residential embedding), wayfinding nodes (waveform status-light language), event lawns (greenway segments), water features (station-forecourt fountains), and smart street furniture (charging/seats/information screens) — component reuse keeps public space recognizable, maintainable, and batch-implementable.
 
-![Mobility network and blue-green system concept (concept suggestion)](assets/figures/mobility-bluegreen.en.png)
+![Figure 4 Mobility network and blue-green system concept (concept suggestion; source: geometry/roads.geojson and geometry/green_space.geojson, provisional)](assets/figures/mobility-bluegreen.en.png)
 
 **Urban form (concept suggestion)**: a three-line narrative merging Jing-Zhang railway heritage, Zhongguancun innovation culture, and AI culture [depth:overall_spatial_structure] [standard:MOHURD-URBAN-DESIGN-MEASURES]: the Qinghuayuan Railway-Station heritage node and Pulse-Rail Art Track carry the rail memory; the Bell of AI Origins and Tower of AI Light carry AI culture; a wayfinding symbol system unifies the "rail—waveform" motif — public wayfinding uses a "waveform status-light" language: steady waveform=operating, pulsing=testing, flat line=decommissioned, linked to the Pulse Protocol so citizens can read an AI service's operating state without any instructions. Form control distinguishes official regulation, design suggestion, and to-be-confirmed conditions; pseudo-precise control lines are strictly avoided without heritage or control-plan basis. All brands, fonts, images, portraits, and enterprise marks require cleared sources (see `report/copyright_statement.md`).
 
+**North Film Academy and other arts resources (concept suggestion)**: announcement 1.5(2)5, the urban-form task, names "North Film Academy and other arts resources" [source:OFFICIAL-ANNOUNCEMENT]. Beijing Film Academy (BFA) lies along Xitucheng Road, adjacent to the southern edge of the overall design area; this proposal positions BFA as a neighboring arts-resource node for urban form and cultural narrative (concept): ① co-creation of digital-projection content for the Pulse-Rail Art Track (open call for artist and student works, used only after copyright clearance); ② a content-cooperation direction for the Bell-chime Metaverse audiovisual work (led by the Dazhongsi cultural institution; no fabricated cooperation agreements); ③ film roadshows and screenings as optional programs under the annual "Scenario Open Day" (managed by the four-step "proposal—trial—review" process). All of the above are expressed as open cooperation directions, never as fabricated arrangements.
+
+**Three-line cultural narrative and wayfinding system (concept suggestion)**: cultural-resource inventory and expression vehicles [source:JZ-RAILWAY-CULTURE] [source:AGENT-TASKBOOK]:
+
+| Narrative line | Core resources | Expression vehicles |
+| --- | --- | --- |
+| Jing-Zhang railway heritage | Qinghuayuan station ruins, Jing-Zhang Ruins Park vitality belt, public archives such as Zhan Tianyou's *Records of the Jing-Zhang Railway Works* (1915) [source:JZ-RAILWAY-CULTURE] | Pulse-Rail Art Track, AR twin (card 01), flat-line archive wall |
+| Zhongguancun innovation culture | Zhongguancun Science City, Xueyuan Road university belt, open-source communities | Origin release hall, developer code wall (card 12) |
+| AI new culture | Bell of AI Origins, Tower of AI Light, Pulse Protocol status lights | Three-state waveform wayfinding, honor ladder, annual Pulse Award |
+
+The north-south narrative sequence (concept): the north segment (Zhongzhizui) presents AI future culture (training and testing, standards governance, low-carbon compute), the middle segment (greenway and Origin Community) presents innovation transition (campus-near incubation, open-source collaboration, art rail), and the south segment (Dazhongsi) presents the convergence of century-old memory and the intelligent economy (bell-chime culture, station-city commerce, data factors). The wayfinding system has three tiers: **L1 city level** (district-entry markers, three-core direction, via greenway-entry markers and station-front wayfinding), **L2 block level** (scenario nodes and pilgrimage landmarks, via waveform status-light wayfinding nodes), **L3 site level** (barrier-free navigation and facility guidance, via barrier-free AI wayfinding stations and furniture-style markers). **Declaration separating cultural marks from the overall logo**: the Jing-Zhang, Zhongguancun and other cultural lines are expressed through wayfinding and graphics; no heritage-unit name or historic-institution mark enters the brand logo. The logo uses only the original "脉—rail—waveform" motif, avoiding cultural appropriation and licensing disputes [source:AGENT-TASKBOOK].
+
 **Visual identity (VI) specification (concept suggestion)**: the logo centers on the "脉" character with the rail—waveform motif, specifying minimum usage sizes (screen ≥24 px, print ≥10 mm), safety zone (no less than 1/4 character-height clearance), black-and-white and reversed versions, standard colors #4A5560 (Jing-Zhang iron grey) and #0FA3B1 (AI cyan) plus auxiliary tones; the font-license list and vector files are in `report/copyright_statement.md`. VI elements and the wayfinding system require official approval before implementation; this specification is a concept suggestion.
+
+**Brand extension and recognition argument (concept suggestion)**: to answer the review dimension "whether the naming, logo, and visual system have recognition, extensibility, and international communication power", the argument proceeds along symbol semantics, differentiation, and derived applications:
+
+| Symbol | Semantics | Extension rule |
+| --- | --- | --- |
+| "脉" character + rail→waveform motif | Iron pulse→digital pulse translation; Chinese glyph carries native recognition | Motif reusable standalone for wayfinding, icons, seals, digital-twin watermarks |
+| Jing-Zhang iron grey #4A5560 | Railway history and structural order | Structural lines, typography, layout system |
+| AI cyan #0FA3B1 | AI vitality and operating state | AI functions, status lights, interactive elements |
+| Three-state waveform status-light language | Visualized service operating state (steady/pulse/flat) | Replicable to all scenario wayfinding and HTML interactions |
+
+| Comparison dimension | Structural/cultural naming (common among peers) | AI Pulse Belt's difference and recognition source |
+| --- | --- | --- |
+| Name-mechanism relation | Names mostly describe spatial structure | The name is the operating mechanism: the four-beat Pulse Protocol is isomorphic with "Pulse", executable and verifiable |
+| Visual language | Mostly static logos | Waveform status-light language ties visuals to real-time operating state |
+| Extensibility | Case-dependent | The motif/dual-color/three-state-waveform trio covers print, wayfinding, and digital interfaces |
+
+| Derived application | Example | Boundary |
+| --- | --- | --- |
+| Scenario-card icons | 12 scenario cards share the waveform-motif icon family | Only after icon copyright clearance |
+| Event visuals | Visual system for the annual event system (developer conference, etc.) | Requires official approval; no government-endorsement phrasing |
+| Wayfinding system | Three-state waveform wayfinding nodes (L1/L2/L3) | Requires official approval and accessibility-standard re-check |
+
+Brand-element (logo, slogan, status-light language) clearance registration is in `report/copyright_statement.md`; the VI specification is a concept suggestion requiring official approval before implementation.
 
 ## Renewal Projects, Implementation Policy, and Phasing
 
@@ -265,9 +405,38 @@ Renewal project list (concept suggestion, 12 items):
 
 **Operating governance structure (concept suggestion)**: daily operations organized as "one secretariat, three district stations, two professional wings, one public committee" — the secretariat manages the Pulse Protocol and registers; the district stations interface the three key areas; the professional wings cover industry services and public-interest services; the public committee holds knowledge, suggestion, and appeal rights over events and scenarios. Funding combines three sources — "fiscal guidance (publicly applicable), scenario-service revenue, and open-source/public-interest funds"; events run a four-step cycle of "launch—trial—evaluate—continue/retire," stopping and publicly explaining any event that fails evaluation.
 
+**Investment-magnitude matrix (concept suggestion; magnitudes and channels are hypotheses pending recheck, see ASSUME-005)**: the 12 renewal projects' investment-magnitude ranges and three-source funding channels below constitute no budget or investment commitment:
+
+| Project | Type | Investment magnitude (concept range) | Funding channel |
+| --- | --- | --- | --- |
+| JZ-01 Central Pulse-Belt greenway connection | Public space/blue-green | 30–80 million CNY | Fiscal guidance + public-interest fund |
+| JZ-02 North-5th-Ring slow-traffic crossing | Transport/slow traffic | 50–150 million CNY | Fiscal guidance |
+| JZ-03 Zhongzhizui gateway plaza & Tower of AI Light | Public space/landmark | 20–60 million CNY | Fiscal guidance + scenario revenue |
+| JZ-04 Origin release hall & code wall | Industry service/culture | 10–30 million CNY | Open-source fund + scenario revenue |
+| JZ-05 Dazhongsi four-quadrant pedestrian connection | Station integration/slow traffic | 10–30 million CNY | Transit operator + fiscal guidance |
+| JZ-06 Pulse-Belt Avenue autonomous shuttle demo | Transport/new infra | 50–100 million CNY | Scenario revenue + fiscal guidance |
+| JZ-07 Tsinghua-East-Road education-belt stitching | Renewal/education | 20–50 million CNY | Fiscal guidance + university co-construction |
+| JZ-08 Southern renewal band upgrade | Renewal/residential | 80–200 million CNY | Fiscal guidance + social capital (policy payoff) |
+| JZ-09 Low-altitude delivery route verification | New infra/industry test | 30–60 million CNY | Enterprise investment + regulator pilot funding |
+| JZ-10 Edge-computing & energy-control demo building | New infra/utilities | 50–120 million CNY | Energy enterprise + park |
+| JZ-11 Barrier-free AI wayfinding system | Public service/accessibility | 10–30 million CNY | Public-interest fund + fiscal guidance |
+| JZ-12 Global AI Week public route | Operations/brand | 5–15 million CNY/year | Scenario revenue + cleared sponsorship |
+
+All magnitudes are concept ranges (total ~360–860 million CNY, P1 near-term priorities first), managed under `assumptions.json` (ASSUME-005), and recalibrated at P4 review once official investment plans release.
+
+**Public-participation timeline (concept suggestion)**: public and stakeholder participation is institutionalized by node:
+
+| Stage | Participation mechanism | Node requirement |
+| --- | --- | --- |
+| Plan deepening | Plan public display, comment collection | 30-day comment period after key-area concept release |
+| P1 declaration | Public committee pre-review | Pre-review within 15 days of scenario-card P1 declaration |
+| P2 testing | Controlled opening, on-site feedback | Public feedback opened after 60 days of testing |
+| P3 release | Status-light visualization, complaint channels | Operating-boundary changes update status lights within 24h |
+| P4 review | Published failure records, continuation hearings | No fewer than 1 annual public review meeting |
+
 ## Metrics, Area Recalculation, and Compliance Matrix
 
-The indicator system (`metrics.json`) has 9 metrics: overall-design area (site_area_sqm, measured 11,412,825.4 m2 vs official 11,400,000 m2, 0.11% deviation), building footprint area (building_footprint_area_sqm, ~110.3 ha), green ratio (green_ratio, 25.0%), public-space ratio (public_space_ratio, ~5.9 ha), key-area count (key_area_count, 3), floor-area ratio (floor_area_ratio, `status=unknown`, official FAR controls absent), and the announcement 1.5.2.1 planning indicators — AI innovation index (ai_innovation_index), talent density (talent_density), and AI output value (ai_output_value), all `status=unknown` pending official statistics and recomputable from the registered formulas once released. All known metrics are recomputable from GeoJSON [metric:site_area_sqm] [data:geometry/green_space.geojson#GREEN-001] [depth:metrics_recalculation].
+The indicator system (`metrics.json`) has 9 metrics: overall-design area (site_area_sqm, measured 11,412,825.4 m2 vs official 11,400,000 m2, 0.11% deviation), building footprint area (building_footprint_area_sqm, ~110.3 ha), green ratio (green_ratio, 25.0%), public-space ratio (public_space_ratio, ~5.9 ha), key-area count (key_area_count, 3), floor-area ratio (floor_area_ratio, `status=unknown`, official FAR controls absent), and the announcement 1.5(2) planning-indicator system — AI innovation index (ai_innovation_index), talent density (talent_density), and AI output value (ai_output_value), all `status=unknown` pending official statistics and recomputable from the registered formulas once released. All known metrics are recomputable from GeoJSON [metric:site_area_sqm] [data:geometry/green_space.geojson#GREEN-001] [depth:metrics_recalculation].
 
 | Metric | Current value | Confidence | Use |
 | --- | --- | --- | --- |
@@ -277,35 +446,37 @@ The indicator system (`metrics.json`) has 9 metrics: overall-design area (site_a
 | Public-space ratio | ~5.9 ha (0.52%) | Medium (provisional boundary) | Public-space system performance |
 | Key-area count | 3 | High (layer verification) | Detailed-design scope confirmation |
 | Floor-area ratio | unknown | Pending official conditions | Enters no conclusion |
-| AI innovation index | unknown | Pending official statistics | Announcement 1.5.2.1 planning indicator (formula registered) |
-| Talent density | unknown | Pending official statistics | Announcement 1.5.2.1 planning indicator (formula registered) |
-| AI output value | unknown | Pending official statistics | Announcement 1.5.2.1 planning indicator (formula registered) |
+| AI innovation index | unknown | Pending official statistics | Announcement 1.5(2) planning indicator (formula registered) |
+| Talent density | unknown | Pending official statistics | Announcement 1.5(2) planning indicator (formula registered) |
+| AI output value | unknown | Pending official statistics | Announcement 1.5(2) planning indicator (formula registered) |
 
-![Key metrics and evidence (concept suggestion)](assets/figures/metrics-evidence.en.png)
+Caliber note: public_space_ratio counts only the six plaza nodes (~5.9 ha, 0.52%), excluding the central greenway and street slow-traffic spaces; under a compound caliber of "plazas + greenway + slow-traffic paths" the estimate is ~18–22% (concept range; caliber definition and recomputation path in metrics.json). This proposal uses the narrow caliber in metrics and figures, labeled in the confidence column.
 
-Metrics are managed in three classes: ① spatial metrics recomputable from submitted geometry (areas, ratios, phasing areas); ② control metrics requiring official control plans (FAR, height, density, setbacks, red lines — currently `unknown`); ③ performance metrics requiring operational data calibration (AI innovation index, talent density, AI output value — formulas and data sources registered per announcement 1.5.2.1, status `unknown` pending official statistics [metric:ai_innovation_index] [metric:talent_density] [metric:ai_output_value]). The three classes enter `metrics.json`, `assumptions.json`, and `compliance_matrix.json` respectively, avoiding operational visions masquerading as approved planning conditions [standard:PROJECT-OFFICIAL-ANNOUNCEMENT].
+![Figure 5 Key metrics and evidence (concept suggestion; source: recomputed from geometry/*.geojson in EPSG:4548)](assets/figures/metrics-evidence.en.png)
+
+Metrics are managed in three classes: ① spatial metrics recomputable from submitted geometry (areas, ratios, phasing areas); ② control metrics requiring official control plans (FAR, height, density, setbacks, red lines — currently `unknown`); ③ performance metrics requiring operational data calibration (AI innovation index, talent density, AI output value — formulas and data sources registered per announcement 1.5(2), status `unknown` pending official statistics [metric:ai_innovation_index] [metric:talent_density] [metric:ai_output_value]). The three classes enter `metrics.json`, `assumptions.json`, and `compliance_matrix.json` respectively, avoiding operational visions masquerading as approved planning conditions [standard:PROJECT-OFFICIAL-ANNOUNCEMENT].
 
 The compliance matrix covers all mandatory tasks of announcement clauses 1.3, 1.4, 1.5 and agent.1–agent.6: agent.1 naming system and identity (this chapter and Chapter 3), agent.2 global cases and ecosystem map (Chapter 3), agent.3 scenario cards/test scenarios/profiles (Chapter 6), agent.4 pilgrimage landmarks and honor displays (Chapter 6), agent.5 cultural narrative and wayfinding (Chapter 9), agent.6 event system and community operations (Chapter 10). Results of `scripts/spatial_review.py` and `scripts/visual_review.py` serve as formal self-check evidence.
 
-**Standard applicability boundary**: of the nine standard responses in `standard_matrix.json`, eight are addressed and one (Architectural Design Document Compilation Depth Provisions, 2016 edition) is a data_gap to be activated once official building conditions are available; any standard response constrains only this proposal's own expression and evidence approach — it never substitutes for official approval or statutory review procedures [standard:MOHURD-CONTROL-DETAILED-PLANNING] [standard:GENERATIVE-AI-INTERIM-MEASURES].
+**Standard applicability boundary**: of the fourteen standard responses in `standard_matrix.json`, thirteen are addressed and one (Architectural Design Document Compilation Depth Provisions, 2016 edition) is a data_gap to be activated once official building conditions are available; beyond the nine planning/governance regulations, five technical standards were added (unmanned-aircraft regulations, Beijing municipal UAS rules, intelligent-connected-vehicle road-test norms, vehicle-road-cloud integration pilot, barrier-free design code GB 50763), keeping scenario technical paths verifiable [standard:UNMANNED-AIRCRAFT-REGULATIONS] [standard:ICV-ROAD-TEST-REGULATIONS] [standard:BARRIER-FREE-DESIGN-CODE]; any standard response constrains only this proposal's own expression and evidence approach — it never substitutes for official approval or statutory review procedures [standard:MOHURD-CONTROL-DETAILED-PLANNING] [standard:GENERATIVE-AI-INTERIM-MEASURES].
 
 **13-dimension self-assessment against the agent taskbook (concept suggestion)**: self-assessment on the taskbook's supplemental review dimensions (self-assessment states the proposal's own position for professional review to verify):
 
-| Review dimension | This proposal's response | Self rating |
-| --- | --- | --- |
-| Goal alignment | Ecosystem map, innovation chain, and pilgrimage landmarks serve the global AI-industry-highland and pilgrimage goals (Chapters 3 and 6) | Strong |
-| Function match | Three positionings, five functions, and three-district two-wing layout mapped one-to-one into compliance_matrix.json | Strong |
-| Brand recognition | AI Pulse Belt naming system, logo concept (rails morphing into waveform), bilingual visual system | Medium |
-| Regional synergy | Five regional synergy interfaces (Beiwei Community/Future Science City/Huairou Science City/E-Town/Beijing-Tianjin-Hebei) | Strong |
-| Planning innovation | Pulse Protocol operating mechanism, reserve flexible land, control-condition boundary declaration | Strong |
-| Industry support | Six spatial mechanisms plus compute, data, and scenario open-testing systems | Strong |
-| Scenario perceptibility | 12 scenario cards, 3 test scenarios, 3 pilgrimage landmarks — all locatable and displayable | Strong |
-| Spatial clarity | All scenarios located in nodes, corridors, or areas of the 9 geometry layers | Strong |
-| Transferability | Protocol-based operating boundaries, lead parties, release evidence, and P4 review mechanism | Strong |
-| Expression completeness | Bilingual narrative, 5 figures, A3 booklet, A0 boards, offline HTML, structured registries | Strong |
-| Public compliance | Public sources only, provisional disclosure, rights clearance, HTML zero external requests | Strong |
-| International reach | AI Pulse Belt English naming, mechanism transfer from international cases, bilingual deliverables | Medium |
-| Long-term operation value | Annual event system, honor ladder, three-source funding, governance structure | Strong |
+| Review dimension | Evidence pointer | This proposal's response | Self rating | Pending item |
+| --- | --- | --- | --- | --- |
+| Goal alignment | Chapters 3 and 6; compliance_matrix.json 1.3.x | Ecosystem map, innovation chain, and pilgrimage landmarks serve the global AI-industry-highland and pilgrimage goals | Strong | Recomputed metrics after official statistics release |
+| Function match | compliance_matrix.json 1.3/1.5 | Three positionings, five functions, three-district two-wing layout mapped one-to-one; "1+X+1" industrial-system mapping table | Strong | Item-by-item check against official industry catalog |
+| Brand recognition | Chapter 2 naming, Chapter 9 VI and brand-extension 3 tables | AI Pulse Belt naming system, logo semiotics, differentiation comparison and derived-application argument | Medium | VI elements require official approval for implementation |
+| Regional synergy | Chapter 3 five interfaces + two-zones-one-belt row | Six interface classes: Beiwei Community/Future Science City/Huairou Science City/E-Town/Beijing-Tianjin-Hebei/two zones one belt | Strong | Cross-district agreements pending official confirmation |
+| Planning innovation | Chapter 6 Pulse Protocol, Chapter 4 reserve registration | Pulse Protocol operating mechanism, reserve flexible land, control-condition boundary declaration | Strong | Activated once control conditions release |
+| Industry support | Chapter 3 six mechanisms + 1+X+1 table | Six spatial mechanisms with compute, data, and scenario open-testing systems | Strong | Computing supply pending industry landing |
+| Scenario perceptibility | Chapter 6 three-property assessment matrix and expansion cards | 12 scenario cards, 3 test scenarios, 3 pilgrimage landmarks — all experienceable, displayable, replicable | Strong | Deepen eight elements at detailed-design stage |
+| Spatial clarity | References to the 9 geometry layers | All scenarios located in nodes, corridors, or areas of the geometry layers | Strong | Recomputed after official geometry release |
+| Transferability | Chapter 12 investment matrix + timeline tables | Protocol-based operating boundaries, lead parties, release evidence, investment magnitudes, participation timeline | Strong | Investment plan pending official confirmation |
+| Expression completeness | Deliverables checklist | Bilingual narrative, 6 figures (incl. ecosystem map), A3 booklet, A0 boards, offline HTML, structured registries | Strong | — |
+| Public compliance | sources.json, copyright_statement.md | Public sources only, provisional disclosure, rights clearance, HTML zero external requests | Strong | Newly cited standard entries now carry document numbers |
+| International reach | Chapter 6 international communication copy | AI Pulse Belt English naming, 30s pitch, social templates, audience tiering | Medium | Actual publication requires official approval |
+| Long-term operation value | Chapter 6 funnel table + brand IP + landmark operation cards | Annual event system, conversion funnel, honor ladder, three-source funding, governance structure | Strong | Operating data calibrated annually |
 
 ## Risk, Copyright, and Compliance
 
@@ -335,6 +506,6 @@ This proposal does not claim official approval, approved control plans, final la
 - data/source_registry.json
 - data/processed/agent_fact_pack.md
 - Peer reference: open-city-ai/haidian merged cases "Ren-Zhi Belt" (PR #1701) and "The Living Rail" (PR #925), used for mechanism-transfer boundaries and expression-depth comparison [source:PEER-REFERENCE]
-- Standard boundary: nine standard responses and the data_gap note in `standard_matrix.json`
+- Standard boundary: fourteen standard responses in `standard_matrix.json` (nine planning/governance regulations + five technical standards) and the data_gap note
 - Full machine index: see `sources.json`, `metrics.json`, `compliance_matrix.json`, `standard_matrix.json`, and `design_depth_matrix.json`
 - Bibliography entry follows the site package registry; full provenance and licenses are in the structured source list [source:SITE-PACKAGE]
