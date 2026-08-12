@@ -239,6 +239,49 @@ class GitHubApiResilienceTests(unittest.TestCase):
             request.call_args_list,
         )
 
+    def test_comment_fallback_is_idempotent_when_identical_marker_exists(self) -> None:
+        client = GitHubClient("token", "open-city-ai/haidian")
+        body = f"{COMMENT_MARKER}\nnew result"
+        comments = [
+            {"id": 42, "body": f"{COMMENT_MARKER}\nold result"},
+            {"id": 43, "body": body},
+        ]
+        with patch.object(client, "paginate", return_value=comments), patch.object(
+            client, "request"
+        ) as request:
+            client.upsert_comment(1955, body)
+        request.assert_not_called()
+
+    def test_comment_patch_forbidden_tries_next_marker_before_posting(self) -> None:
+        client = GitHubClient("token", "open-city-ai/haidian")
+        first = {"id": 42, "body": f"{COMMENT_MARKER}\nold result"}
+        second = {"id": 43, "body": f"{COMMENT_MARKER}\nolder result"}
+        patch_error = RuntimeError(
+            "GitHub API PATCH https://api.github.com/repos/open-city-ai/haidian/issues/comments/42 "
+            "failed with HTTP 403: Must have admin rights to Repository."
+        )
+        with patch.object(client, "paginate", return_value=[first, second]), patch.object(
+            client,
+            "request",
+            side_effect=[patch_error, ({"id": 43}, {})],
+        ) as request:
+            client.upsert_comment(1955, f"{COMMENT_MARKER}\nnew result")
+        self.assertEqual(
+            [
+                call(
+                    "PATCH",
+                    "/repos/open-city-ai/haidian/issues/comments/42",
+                    {"body": f"{COMMENT_MARKER}\nnew result"},
+                ),
+                call(
+                    "PATCH",
+                    "/repos/open-city-ai/haidian/issues/comments/43",
+                    {"body": f"{COMMENT_MARKER}\nnew result"},
+                ),
+            ],
+            request.call_args_list,
+        )
+
     def test_comment_patch_non_permission_failure_is_not_hidden(self) -> None:
         client = GitHubClient("token", "open-city-ai/haidian")
         existing = {"id": 42, "body": f"{COMMENT_MARKER}\nold result"}
