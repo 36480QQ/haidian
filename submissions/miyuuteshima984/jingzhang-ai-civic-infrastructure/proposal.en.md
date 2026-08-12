@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Uses City Completeness as the spatial review method for the Centennial Jing-Zhang AI Innovation Belt: seven ordinary-city capabilities—HOME, LEARN, CARE, MOVE, GREEN, WORK and COMMON LIFE—form a durable everyday base first, while AI enters research, community, mobility and commerce as an optional enhancement layer. The structure is one public green spine, six completeness segments, six east-west stitching links and three key areas; Shuangfen Fortress remains only a community-name easter egg inside AI Origin Community."
 tracks: ["ai-origin-community", "ai-public-services", "ai-traffic-walkability"]
 scenarios: ["ai-traffic-walkability", "robot-delivery-low-speed", "enterprise-service-copilot", "ai-cultural-guide", "ai-health-service-navigation"]
-iteration: "v0.5"
+iteration: "v0.6"
 ---
 
 # JING-ZHANG CITY COMPLETENESS
@@ -98,7 +98,9 @@ Public exchange space accompanies all three tasks: an open exchange yard in Zhon
 
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
-Five design personas are used: long-term residents and families; students and researchers; founders and company employees; international developers and visiting scholars; and service workers, commuters and visitors. They are tests of whether the design excludes ordinary life, not demographic statistics. [metric:persona_count]
+v0.6 expands the former five grouped personas into nine explicit design-test groups: long-term residents/families; older residents; disabled, mobility-limited or sensory-limited users; children/caregivers; students/researchers; founders/company employees; service workers/commuters; visitors/international users; and people with no smartphone, no account or a deliberate opt-out from digital services. These are used to test benefit, burden, exclusion risk and human fallback, not to claim demographic statistics. [metric:persona_count]
+
+![Nine-persona benefit—burden—non-AI equivalent—appeal matrix](assets/figures/inclusion-burden-matrix.en.svg)
 
 Ten AI+ scenarios answer the same questions: who uses it, where, what real problem exists, what AI does, what the non-AI baseline is, who is accountable, how a human takes over on failure, and how success is evaluated. They are: controlled low-speed robotics in Zhongzhiyuan; shared research equipment and compute; university-result-to-city-problem translation; an accessibility assistant in Shuangfen Fortress; voluntary home-robot tests; community shared-space scheduling; multilingual Jing-Zhang heritage interpretation; complex-transfer and walking assistance; time-limited AI-native retail pilots; and a C7 completeness audit assistant. [metric:ai_scenario_count] [metric:non_ai_baseline_coverage_ratio]
 
@@ -107,6 +109,10 @@ v0.5 expands those ten items from a one-line list into complete scenario cards. 
 ![Ten AI+ scenario cards: problem—enhancement—baseline—exit—acceptance](assets/figures/ai-scenario-cards.en.svg)
 
 SCN-01, SCN-05 and SCN-09 provide technology, living-environment and market validation respectively, following “small scope, stoppable, reviewable, then consider expansion”. [metric:industry_test_scenario_count] Three public honour/pilgrimage nodes—Open Test Yard, City Commons Hall and Jing-Zhang Civic Station—must have real public functions before image-making value. [metric:pilgrimage_landmark_count]
+
+v0.6 then selects three **flagship pilot protocols** from the ten scenarios so a reviewer can see how a pilot starts, stops and leaves an evidence receipt: controlled low-speed robotics in Zhongzhiyuan, accessibility/care navigation in AI Origin, and transfer/multilingual guidance in Dazhongsi. Each specifies a non-AI baseline, concept quantity basis, prerequisite evidence gates, a test window, KPI direction, stop threshold, exit receipt and accountability structure. Real permits, contracts, insurance, currency budgets and field performance remain UNKNOWN until verified. [metric:flagship_pilot_count]
+
+![Three flagship pilot protocols: precondition—test—receipt—GO/REVISE/STOP](assets/figures/flagship-pilot-protocols.en.svg)
 
 All scenarios share a governance floor: basic circulation and services work without an app; non-participation does not remove community rights; high-risk decisions escalate to humans; and basic urban functions survive when a model, device, account or platform is withdrawn. This is both technological robustness and public-space equity.
 
@@ -166,6 +172,10 @@ v0.5 further engineers implementation as **project—space—proposed role—pre
 
 ![Implementation and long-term operations matrix](assets/figures/implementation-operations-matrix.en.svg)
 
+v0.6 adds **resource quantity basis + RACI + maintenance cadence + prerequisite evidence gates**. Each flagship pilot states concept equipment/interface quantity, A/R/C/I responsibility types, daily/weekly/monthly maintenance rhythms, and pre-start checks for permits, safety, insurance, staffed fallback and data governance; all use a shared `PRECONDITION → TEST → RECEIPT → GO/REVISE/STOP` chain. S/M are concept resource bands, not currency budgets; final FTE, procurement, insurance, contracts and named institutions remain pending real-world confirmation.
+
+![Implementation resource, RACI, maintenance cadence and prerequisite gates](assets/figures/implementation-resource-raci.en.svg)
+
 ## Metrics, Area Recalculation, and Compliance Matrix
 
 Metrics are separated into announced approximate values, conceptual design quantities recalculated from submitted geometry, and statutory/engineering quantities that remain unknown because formal data are missing. Every known metric records formula, source file, confidence and assumptions. Every provisional derived value is recalculated when official polygons become available. [depth:metrics_recalculation]
@@ -202,6 +212,7 @@ Metrics are separated into announced approximate values, conceptual design quant
 | Persona count | [metric:persona_count] |
 | AI+ scenario count | [metric:ai_scenario_count] |
 | Industry test-scenario count | [metric:industry_test_scenario_count] |
+| v0.6 flagship pilot-protocol count | [metric:flagship_pilot_count] |
 | Public honour/pilgrimage node count | [metric:pilgrimage_landmark_count] |
 | Non-AI baseline coverage | [metric:non_ai_baseline_coverage_ratio] |
 
@@ -210,6 +221,12 @@ All nine spatial evidence layers remain traceable: site and key areas are provis
 The empty constraints layer is itself an auditable data gap. Official heritage, road, municipal or other constraints must add features and trigger package-wide review when they arrive. [data:geometry/constraints.geojson#metadata] [metric:constraints_feature_count]
 
 ![City Completeness metrics and evidence gaps](assets/figures/metrics-evidence.en.png)
+
+v0.6 stops hiding new evidence at the end of supplemental files. A **review evidence dashboard** moves core metrics, three flagship pilots, nine user groups, implementation gates and claim boundaries into the first viewport of the offline visual; a **reviewer evidence index** maps all seven public rubric dimensions and agent.1–agent.6 directly to proposal, figure, JSON, GeoJSON and rights/source evidence. Neither is a self-score, and neither turns a machine gate PASS into field or statutory validity.
+
+![v0.6 review evidence dashboard](assets/figures/review-evidence-dashboard.en.svg)
+
+![Seven-dimension rubric and agent.1–agent.6 reviewer evidence index](assets/figures/reviewer-evidence-index.en.svg)
 
 ## Risk, Copyright, and Compliance
 
@@ -221,7 +238,7 @@ v0.5 moves privacy principles down to scenario-level data flows. Location/route,
 
 The empty `constraints.geojson` is an active disclosure and does not mean “there are no constraints”. Statutory FAR, height and road area remain unknown; schema sanity bounds or conceptual models are not used to fill them. Figures use locally generated graphics and public/cleared material without commercial map tiles, remote fonts, unlicensed imagery or third-party trademarks. [data:geometry/constraints.geojson#metadata]
 
-AI assisted public-source research, peer scanning, structured writing, GeoJSON, figures, HTML/PDF and validation work. The participant remains responsible for the conceptual direction, the Shuangfen Fortress naming easter egg and the final public submission. `report/copyright_statement.md` now contains a v0.5 per-asset rights and generation ledger covering core PNGs, new SVGs, HTML, PDFs, GeoJSON, font/icon/code status and AI participation. The six international cases in `sources.json` now record access date, intended use, reuse status, limitations, collection and transformation notes. Any real implementation still requires statutory planning, professional design, public participation and competent-authority procedures that this package cannot replace.
+AI assisted public-source research, peer scanning, structured writing, GeoJSON, figures, HTML/PDF and validation work. The participant remains responsible for the conceptual direction, the Shuangfen Fortress naming easter egg and the final public submission. `report/copyright_statement.md` now contains a v0.5/v0.6 per-asset rights and generation ledger covering core PNGs, all new SVGs, HTML, PDFs, GeoJSON, font/icon/code status and AI participation. The v0.6 flagship-pilot, inclusion/burden, RACI, reviewer-index and above-fold dashboard assets are submission-original/AI-assisted SVGs with no embedded third-party logos, images, maps or font files. The six international cases in `sources.json` retain access date, intended use, reuse status, limitations, collection and transformation notes. Any real implementation still requires statutory planning, professional design, public participation and competent-authority procedures that this package cannot replace.
 
 ## References
 

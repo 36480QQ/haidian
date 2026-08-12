@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以城市完整度作为百年京张AI创新带的空间审查方法：居、学、护、行、绿、工、交七项普通城市能力先形成长期可用的日常底盘，AI作为可选增强层进入科研、社区、交通和商业。总体形成一条公共绿脊、六段完整度片区、六条东西缝合联系与三处重点区；爽粉堡垒仅作为AI原点社区中的社区命名彩蛋。"
 tracks: ["ai-origin-community", "ai-public-services", "ai-traffic-walkability"]
 scenarios: ["ai-traffic-walkability", "robot-delivery-low-speed", "enterprise-service-copilot", "ai-cultural-guide", "ai-health-service-navigation"]
-iteration: "v0.5"
+iteration: "v0.6"
 ---
 
 # 京张城市完整度 / JING-ZHANG CITY COMPLETENESS
@@ -98,7 +98,9 @@ v0.5 将任务书规定的结构从文字登记升级为显性设计闭环：**�
 
 ## AI 创新生态、人才画像与 AI+ 场景
 
-五类设计画像分别是：长期居民与家庭；学生与科研人员；创业者与企业员工；国际开发者与访问学者；服务劳动者、通勤者与访客。这些画像用于检验空间是否排斥普通生活，不是人口统计结论。[metric:persona_count]
+v0.6 将原先 5 类合并画像拆解为 9 类显性设计测试人群：长期居民与家庭、老年居民、残障/行动或感知受限使用者、儿童与照护者、学生与科研人员、创业者与企业员工、服务劳动者与通勤者、访客与国际使用者，以及无智能手机/无账号/主动退出数字服务的使用者。这些画像用于检验受益、负担、排斥风险和人工兜底，不是人口统计结论。[metric:persona_count]
+
+![九类人群的受益—负担—非 AI 等价路径—申诉矩阵](assets/figures/inclusion-burden-matrix.svg)
 
 十个 AI+ 场景全部回答“谁、在哪里、现实问题、AI 做什么、非 AI 基线、责任主体、失败如何人工接管、如何评估”：①众智园低速机器人受控测试；②科研设备与算力共享；③高校成果—城市问题转译；④爽粉堡垒社区无障碍助手；⑤家庭机器人自愿测试；⑥社区共享空间调度；⑦京张遗产多语导览；⑧复杂换乘与步行辅助；⑨AI 原生商业限期试营；⑩C7 城市完整度巡检助手。[metric:ai_scenario_count] [metric:non_ai_baseline_coverage_ratio]
 
@@ -107,6 +109,10 @@ v0.5 把这十项从一句清单展开成完整场景卡：每张同时给出地
 ![10 张 AI+ 场景卡：问题—增强—基线—退出—验收](assets/figures/ai-scenario-cards.svg)
 
 其中 SCN-01、SCN-05、SCN-09 分别承担技术、生活环境与市场三类验证，强调“先小范围、可停止、可复盘，再讨论扩大”。[metric:industry_test_scenario_count] 三个公共荣誉/朝圣节点为 Open Test Yard、City Commons Hall 与 Jing-Zhang Civic Station，它们必须先有真实公共功能，不能仅靠造型成为地标。[metric:pilgrimage_landmark_count]
+
+v0.6 再从十个场景中抽出三个**旗舰试点协议**，让评审看到“怎样开始、怎样停、怎样留下收据”：众智园低速机器人受控测试、AI 原点无障碍/照护导航、大钟寺换乘/多语导览。三项都明确 non-AI baseline、概念数量基础、前置证据门、测试时间窗、KPI 方向、停止阈值、退出收据与责任结构；真实许可、合同、保险、货币预算和现场绩效在未验证前保持 UNKNOWN。[metric:flagship_pilot_count]
+
+![三个旗舰试点协议：前置条件—测试—收据—GO/REVISE/STOP](assets/figures/flagship-pilot-protocols.svg)
 
 场景治理遵守同一底线：不用 App 仍能通行与获得基本服务；不参加测试不会失去社区权益；高风险判断转人工；设备或模型退出后，基本城市功能仍在。这既是技术鲁棒性，也是公共空间的公平性要求。
 
@@ -166,6 +172,10 @@ v0.5 将实施进一步工程化为“项目—空间—建议角色—前置条
 
 ![实施与长期运营矩阵](assets/figures/implementation-operations-matrix.svg)
 
+v0.6 在此基础上增加**资源数量基础 + RACI + 维护频率 + 启动证据门**。三个旗舰试点分别给出概念设备/界面数量级、A/R/C/I 责任类型、日/周/月维护节奏，以及许可、安全、保险、人工值守和数据治理等启动前核验项；统一形成 `PRECONDITION → TEST → RECEIPT → GO/REVISE/STOP` 决策链。这里的 S/M 仅是概念资源等级，不是货币预算；最终 FTE、采购、保险、合同和具名主体仍待现实责任方确认。
+
+![实施资源、RACI、维护频率与启动证据门](assets/figures/implementation-resource-raci.svg)
+
 ## 指标体系、面积复算与合规矩阵
 
 本轮指标分三种：公告约值、由提交 geometry 复算的概念设计量、因正式资料缺失而保持 unknown 的法定/工程量。所有 known metric 都保存公式、来源文件、置信度和假设；所有 provisional 派生值在 official polygon 到位后统一重算。[depth:metrics_recalculation]
@@ -202,6 +212,7 @@ v0.5 将实施进一步工程化为“项目—空间—建议角色—前置条
 | 设计画像数量 | [metric:persona_count] |
 | AI+ 场景数量 | [metric:ai_scenario_count] |
 | 产业测试场景数量 | [metric:industry_test_scenario_count] |
+| v0.6 旗舰试点协议数量 | [metric:flagship_pilot_count] |
 | 公共荣誉/朝圣节点数量 | [metric:pilgrimage_landmark_count] |
 | 非 AI 基线覆盖率 | [metric:non_ai_baseline_coverage_ratio] |
 
@@ -210,6 +221,12 @@ v0.5 将实施进一步工程化为“项目—空间—建议角色—前置条
 空约束层本身是一个可审查的数据缺口：正式文保、道路、市政等约束到位后必须新增 features，并触发全包复核。[data:geometry/constraints.geojson#metadata] [metric:constraints_feature_count]
 
 ![城市完整度指标与资料缺口](assets/figures/metrics-evidence.png)
+
+v0.6 不把新增证据继续藏在附件末端，而新增“评审证据总表”和“评审证据索引”：前者把核心指标、三个旗舰试点、9 类人群、实施证据门和主张边界推到离线 visual 首屏；后者把七项公开 rubric 与 agent.1–agent.6 一跳映射到 proposal、图件、JSON、GeoJSON 和权利/来源证据。两者都不是自评分，也不把机器 gate PASS 解释为现场或法定有效性。
+
+![v0.6 评审证据总表](assets/figures/review-evidence-dashboard.svg)
+
+![七维 rubric 与 agent.1–agent.6 评审证据索引](assets/figures/reviewer-evidence-index.svg)
 
 ## 风险、版权与合规说明
 
@@ -221,7 +238,7 @@ v0.5 把隐私原则下沉到场景级数据流：位置/路径、健康/照护�
 
 当前 `constraints.geojson` 的空集是主动披露，不表示“没有约束”。法定 FAR、高度和道路面积保持 unknown，不用 schema sanity range 或概念模型去填补。图件使用本地生成图形和公开/清权资料，不嵌入商业地图瓦片、远程字体、未经许可图片或第三方商标。[data:geometry/constraints.geojson#metadata]
 
-版权与生成责任方面：AI 参与公开资料研究、同类方案扫描、结构化写作、GeoJSON、图件、HTML/PDF 与校验；提交者对概念方向、爽粉堡垒命名彩蛋及最终公开提交承担判断责任。`report/copyright_statement.md` 已在 v0.5 增加逐资产权利与生成台账，覆盖核心 PNG、新增 SVG、HTML、PDF、GeoJSON、字体/图标/代码状态及 AI 参与方式；六个国际案例在 `sources.json` 中补齐了访问日期、用途、复用状态、限制、采集和转换说明。后续任何真实实施仍需法定规划、专业设计、公众参与和主管部门程序，不能由本包替代。
+版权与生成责任方面：AI 参与公开资料研究、同类方案扫描、结构化写作、GeoJSON、图件、HTML/PDF 与校验；提交者对概念方向、爽粉堡垒命名彩蛋及最终公开提交承担判断责任。`report/copyright_statement.md` 已扩展为 v0.5/v0.6 逐资产权利与生成台账，覆盖核心 PNG、全部新增 SVG、HTML、PDF、GeoJSON、字体/图标/代码状态及 AI 参与方式；v0.6 的旗舰试点、包容矩阵、RACI、证据索引和首屏总表均为本方案原创/AI 辅助 SVG，不嵌入第三方 Logo、图片、地图或字体文件。六个国际案例在 `sources.json` 中保留访问日期、用途、复用状态、限制、采集和转换说明。后续任何真实实施仍需法定规划、专业设计、公众参与和主管部门程序，不能由本包替代。
 
 ## 参考资料
 
