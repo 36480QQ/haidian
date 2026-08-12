@@ -69,13 +69,14 @@
         "submissions/arccat-114/jingzhang-switch/sources.json",
         "submissions/arccat-114/jingzhang-switch/standard_matrix.json",
         "submissions/arccat-114/jingzhang-switch/visual/assets/switch-protocol.json",
+        "submissions/arccat-114/jingzhang-switch/visual/assets/verify_switch_protocol.js",
         "submissions/arccat-114/jingzhang-switch/visual/index.en.html",
         "submissions/arccat-114/jingzhang-switch/visual/index.html"
       ],
       "ai_package_stages": {
         "submissions/arccat-114/jingzhang-switch": "formal"
       },
-      "total_bytes": 5936729,
+      "total_bytes": 5956221,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -158,7 +159,7 @@
           "standard": 6,
           "depth": 11,
           "data": 19,
-          "metric": 8
+          "metric": 9
         }
       }
     },

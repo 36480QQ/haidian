@@ -26,6 +26,19 @@ iteration: "v1.0"
 
 ![总体概念与空间证据图](assets/figures/site-overview.png)
 
+## 评审问答速览
+
+| 评审会问 | 本方案的回答 | 可核验的东西 |
+|---------|-------------|-------------|
+| 核心命题是什么 | 京张走廊是城市的"道岔"：1909 换轨上坡、2026 换轨转向——科研→产业、实验室→城市、文化→体验；治理上"城市对智能体开放接口，人对智能体保留中断权" | 一岔三场两翼空间结构 [data:geometry/land_use.geojson#LU-001] |
+| 治理机制能否被第三方检验 | 能。道岔联锁协议形式化信号灯状态机：绿灯通行/黄灯限速/红灯暂停可退役，迁移须人工签认、红不得直转绿、退役为终态、季度红牌演练 | 机器可读协议 `visual/assets/switch-protocol.json` + 验证脚本 |
+| 空间上做了什么 | 一条约9.7公里绿廊主轴纵贯，三场（始发场/加速轨道/编组场）对应三处重点区，两翼（东侧线/西侧线）承接中关村服务与小月河场景；26 个概念用地单元无缝覆盖 | 九类 GeoJSON，用地覆盖无缝隙无重叠 [metric:land_use_total_area_sqm] |
+| 三条服务底线凭什么可执行 | 不凭设计者善意，凭现行法规与政策：城市更新"留改拆"并举（条例）、防大拆大建 20% 红线（建科〔2021〕63号）、AI 场景合规（生成式 AI 暂行办法） | 三个法规级来源 [source:BJ-RENEWAL-REGULATION][source:MOHURD-63-NO-MASS-DEMOLITION] |
+| 公共价值落在谁身上 | 不使用 AI 者获得等价人工服务；受影响群体代表可发起红牌暂停；朝圣路线与开发者荣誉展示面向全球开发者 | 公共利益三原则 + 4 处朝圣地标 [source:AGENT-TASKBOOK] |
+| 近期能做什么 | 首开行动"零号行动·换轨典礼"：100 米示范段+红牌撤回演练+3 个首批试点场景（申请—审查—试点—评估闭环） | 首开行动清单 [depth:phasing_implementation] |
+| 刻意不给什么 | 容积率、建筑高度、密度、退线、道路红线、拆改留结论、工程线位、投资测算——统一登记待正式数据补齐 | metrics.json 相应指标状态 [metric:floor_area_ratio] |
+| 方法的边界在哪 | 全部空间内容为概念建议，官方边界与控规到位后整包重算并公开差异表；临时边界精度限制如实披露 | 假设登记与复算承诺 [assumption:A-BOUNDARY-001] |
+
 ## 一、设计依据与资料清单
 
 本方案的任务边界来自征集公告与面向全球智能体的开源征集任务书：公告界定三层范围、三处重点区与成果深度，任务书界定六项智能体任务、三大定位与十条共创原则[source:OFFICIAL-ANNOUNCEMENT][source:AGENT-TASKBOOK]。专业判断依据五部国家层面规范与政策：城市设计统筹遵循《城市设计管理办法》，"已知—待定"边界遵循《城市、镇控制性详细规划编制审批办法》，用地编码采用《国土空间调查、规划、用途管制用地用海分类指南》，AI 场景合规遵循《生成式人工智能服务管理暂行办法》，公共空间无障碍遵循《无障碍环境建设法》[standard:MOHURD-URBAN-DESIGN-MEASURES][standard:MOHURD-CONTROL-DETAILED-PLANNING][standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]；AI 场景合规遵循《生成式人工智能服务管理暂行办法》，公共空间无障碍遵循《无障碍环境建设法》[standard:GENERATIVE-AI-INTERIM-MEASURES][standard:BARRIER-FREE-ENVIRONMENT-LAW]。建筑设计深度规定正式文本尚未入库，本包如实登记为资料缺口，不宣称满足建筑设计深度[standard:MOHURD-ARCH-DESIGN-DEPTH-2016]。
@@ -130,7 +143,7 @@ Logo 方向：以两条钢轨相切构成"道岔"符号——两段轨线从远�
 
 全部场景采用铁路语汇状态机治理：**绿灯通行、黄灯限速（人工抽查）、红灯暂停（可退役）**，每张卡标注空间位置、服务对象、数据边界、人工复核与运营主体[standard:GENERATIVE-AI-INTERIM-MEASURES]。状态机已形式化为机器可读协议（`visual/assets/switch-protocol.json`）：迁移须人工签认、红不得直转绿、退役为终态、每季度一次红牌撤回演练——城市对智能体开放的是接口，人对智能体保留的是中断权[depth:three_key_area_detailed_design]。
 
-**公共利益三原则**贯穿全部场景：**服务等价**（不使用 AI 者获得等价人工服务）、**弱势保护**（老幼病障不作为首轮测试对象）、**红牌复核权**（受影响群体代表可发起红牌暂停）[standard:GENERATIVE-AI-INTERIM-MEASURES][source:AGENT-TASKBOOK]。
+**公共利益三原则**贯穿全部场景：**服务等价**（不使用 AI 者获得等价人工服务）、**弱势保护**（老幼病障不作为首轮测试对象）、**红牌复核权**（受影响群体代表可发起红牌暂停）[standard:GENERATIVE-AI-INTERIM-MEASURES][source:AGENT-TASKBOOK]。协议可被第三方检验：`node visual/assets/verify_switch_protocol.js` 对协议做 10 项确定性检查（状态机合法性/迁移规则/红不直转绿/场景卡字段/责任矩阵等），当前全部通过[source:DESIGN-CONCEPT-SWITCH][depth:three_key_area_detailed_design]。
 
 | # | 场景卡 | 空间落位 | 服务对象 | 状态机 |
 |---|--------|---------|---------|--------|
