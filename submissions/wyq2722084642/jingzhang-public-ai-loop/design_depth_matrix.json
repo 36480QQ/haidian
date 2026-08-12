@@ -33,7 +33,11 @@
         "building_footprint_area_sqm",
         "green_ratio",
         "public_space_ratio",
-        "key_area_count"
+        "key_area_count",
+        "haidian_national_key_labs_2025",
+        "haidian_registered_large_models_2025",
+        "jingzhang_park_phase1_length_m",
+        "jingzhang_park_phase1_area_sqm"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -42,10 +46,25 @@
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
         "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "KEY-AREA-SOURCE",
+        "HD-STATS-2025",
+        "CASE-PUNGGOL-DIGITAL-DISTRICT",
+        "CASE-BARCELONA-22AT",
+        "CASE-AMSTERDAM-NIEUWE-MEER",
+        "CASE-KENDALL-VOLPE-2026",
+        "CASE-PARIS-SACLAY-GIF-2026",
+        "JZ-PARK-PHASE1",
+        "JZ-CONTROL-DRAFT-RESPONSE",
+        "QINGHUAYUAN-HERITAGE-CONTROLS-2026",
+        "BEIJING-GREENWAY-GUIDE-2025",
+        "BEIJING-SLOW-MOBILITY-2024"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-CONTEXT-007",
+        "A-RIGHTS-008",
+        "A-HERITAGE-005",
+        "A-CONTROL-PLAN-006"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -53,7 +72,7 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "正文、双语提案、图纸、GeoJSON、官方来源、指标、假设与自检共同支撑；官方事实、比较案例、设计建议和待确认项分开记录。"
     },
     {
       "item_id": "three_level_scope_framework",
@@ -87,7 +106,9 @@
         "building_footprint_area_sqm",
         "green_ratio",
         "public_space_ratio",
-        "key_area_count"
+        "key_area_count",
+        "haidian_national_key_labs_2025",
+        "haidian_registered_large_models_2025"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -96,10 +117,18 @@
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
         "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "KEY-AREA-SOURCE",
+        "HD-STATS-2025",
+        "CASE-PUNGGOL-DIGITAL-DISTRICT",
+        "CASE-BARCELONA-22AT",
+        "CASE-AMSTERDAM-NIEUWE-MEER",
+        "CASE-KENDALL-VOLPE-2026",
+        "CASE-PARIS-SACLAY-GIF-2026"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-CONTEXT-007",
+        "A-RIGHTS-008"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -107,7 +136,7 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "正文、双语提案、图纸、GeoJSON、官方来源、指标、假设与自检共同支撑；官方事实、比较案例、设计建议和待确认项分开记录。"
     },
     {
       "item_id": "overall_spatial_structure",
@@ -141,7 +170,11 @@
         "building_footprint_area_sqm",
         "green_ratio",
         "public_space_ratio",
-        "key_area_count"
+        "key_area_count",
+        "haidian_national_key_labs_2025",
+        "haidian_registered_large_models_2025",
+        "jingzhang_park_phase1_length_m",
+        "jingzhang_park_phase1_area_sqm"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -150,10 +183,25 @@
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
         "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "KEY-AREA-SOURCE",
+        "HD-STATS-2025",
+        "CASE-PUNGGOL-DIGITAL-DISTRICT",
+        "CASE-BARCELONA-22AT",
+        "CASE-AMSTERDAM-NIEUWE-MEER",
+        "CASE-KENDALL-VOLPE-2026",
+        "CASE-PARIS-SACLAY-GIF-2026",
+        "JZ-PARK-PHASE1",
+        "JZ-CONTROL-DRAFT-RESPONSE",
+        "QINGHUAYUAN-HERITAGE-CONTROLS-2026",
+        "BEIJING-GREENWAY-GUIDE-2025",
+        "BEIJING-SLOW-MOBILITY-2024"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-CONTEXT-007",
+        "A-RIGHTS-008",
+        "A-HERITAGE-005",
+        "A-CONTROL-PLAN-006"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -161,7 +209,7 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "正文、双语提案、图纸、GeoJSON、官方来源、指标、假设与自检共同支撑；官方事实、比较案例、设计建议和待确认项分开记录。"
     },
     {
       "item_id": "land_use_layout",
@@ -215,7 +263,7 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "正文、双语提案、图纸、GeoJSON、官方来源、指标、假设与自检共同支撑；官方事实、比较案例、设计建议和待确认项分开记录。"
     },
     {
       "item_id": "development_intensity_controls",
@@ -269,7 +317,7 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "正文、双语提案、图纸、GeoJSON、官方来源、指标、假设与自检共同支撑；官方事实、比较案例、设计建议和待确认项分开记录。"
     },
     {
       "item_id": "height_massing_character",
@@ -323,7 +371,7 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "正文、双语提案、图纸、GeoJSON、官方来源、指标、假设与自检共同支撑；官方事实、比较案例、设计建议和待确认项分开记录。"
     },
     {
       "item_id": "retain_renovate_demolish",
@@ -377,7 +425,7 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "正文、双语提案、图纸、GeoJSON、官方来源、指标、假设与自检共同支撑；官方事实、比较案例、设计建议和待确认项分开记录。"
     },
     {
       "item_id": "traffic_rail_slow_parking",
@@ -411,7 +459,9 @@
         "building_footprint_area_sqm",
         "green_ratio",
         "public_space_ratio",
-        "key_area_count"
+        "key_area_count",
+        "jingzhang_park_phase1_length_m",
+        "jingzhang_park_phase1_area_sqm"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -420,10 +470,17 @@
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
         "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "KEY-AREA-SOURCE",
+        "JZ-PARK-PHASE1",
+        "JZ-CONTROL-DRAFT-RESPONSE",
+        "QINGHUAYUAN-HERITAGE-CONTROLS-2026",
+        "BEIJING-GREENWAY-GUIDE-2025",
+        "BEIJING-SLOW-MOBILITY-2024"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-HERITAGE-005",
+        "A-CONTROL-PLAN-006"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -431,7 +488,7 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "正文、双语提案、图纸、GeoJSON、官方来源、指标、假设与自检共同支撑；官方事实、比较案例、设计建议和待确认项分开记录。"
     },
     {
       "item_id": "municipal_new_infrastructure",
@@ -485,7 +542,7 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "正文、双语提案、图纸、GeoJSON、官方来源、指标、假设与自检共同支撑；官方事实、比较案例、设计建议和待确认项分开记录。"
     },
     {
       "item_id": "blue_green_public_space",
@@ -519,7 +576,9 @@
         "building_footprint_area_sqm",
         "green_ratio",
         "public_space_ratio",
-        "key_area_count"
+        "key_area_count",
+        "jingzhang_park_phase1_length_m",
+        "jingzhang_park_phase1_area_sqm"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -528,10 +587,17 @@
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
         "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "KEY-AREA-SOURCE",
+        "JZ-PARK-PHASE1",
+        "JZ-CONTROL-DRAFT-RESPONSE",
+        "QINGHUAYUAN-HERITAGE-CONTROLS-2026",
+        "BEIJING-GREENWAY-GUIDE-2025",
+        "BEIJING-SLOW-MOBILITY-2024"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-HERITAGE-005",
+        "A-CONTROL-PLAN-006"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -539,7 +605,7 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "正文、双语提案、图纸、GeoJSON、官方来源、指标、假设与自检共同支撑；官方事实、比较案例、设计建议和待确认项分开记录。"
     },
     {
       "item_id": "three_key_area_detailed_design",
@@ -573,7 +639,12 @@
         "building_footprint_area_sqm",
         "green_ratio",
         "public_space_ratio",
-        "key_area_count"
+        "key_area_count",
+        "haidian_national_key_labs_2025",
+        "haidian_registered_large_models_2025",
+        "jingzhang_park_phase1_length_m",
+        "jingzhang_park_phase1_area_sqm",
+        "ai_origin_high_frequency_talent_services_2026"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -582,10 +653,26 @@
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
         "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "KEY-AREA-SOURCE",
+        "HD-STATS-2025",
+        "CASE-PUNGGOL-DIGITAL-DISTRICT",
+        "CASE-BARCELONA-22AT",
+        "CASE-AMSTERDAM-NIEUWE-MEER",
+        "CASE-KENDALL-VOLPE-2026",
+        "CASE-PARIS-SACLAY-GIF-2026",
+        "JZ-PARK-PHASE1",
+        "JZ-CONTROL-DRAFT-RESPONSE",
+        "QINGHUAYUAN-HERITAGE-CONTROLS-2026",
+        "BEIJING-GREENWAY-GUIDE-2025",
+        "BEIJING-SLOW-MOBILITY-2024",
+        "AI-ORIGIN-TALENT-SERVICE-2026"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-CONTEXT-007",
+        "A-RIGHTS-008",
+        "A-HERITAGE-005",
+        "A-CONTROL-PLAN-006"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -593,7 +680,7 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "正文、双语提案、图纸、GeoJSON、官方来源、指标、假设与自检共同支撑；官方事实、比较案例、设计建议和待确认项分开记录。"
     },
     {
       "item_id": "renewal_project_list",
@@ -627,7 +714,11 @@
         "building_footprint_area_sqm",
         "green_ratio",
         "public_space_ratio",
-        "key_area_count"
+        "key_area_count",
+        "haidian_national_key_labs_2025",
+        "haidian_registered_large_models_2025",
+        "jingzhang_park_phase1_length_m",
+        "jingzhang_park_phase1_area_sqm"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -636,10 +727,25 @@
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
         "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "KEY-AREA-SOURCE",
+        "HD-STATS-2025",
+        "CASE-PUNGGOL-DIGITAL-DISTRICT",
+        "CASE-BARCELONA-22AT",
+        "CASE-AMSTERDAM-NIEUWE-MEER",
+        "CASE-KENDALL-VOLPE-2026",
+        "CASE-PARIS-SACLAY-GIF-2026",
+        "JZ-PARK-PHASE1",
+        "JZ-CONTROL-DRAFT-RESPONSE",
+        "QINGHUAYUAN-HERITAGE-CONTROLS-2026",
+        "BEIJING-GREENWAY-GUIDE-2025",
+        "BEIJING-SLOW-MOBILITY-2024"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-CONTEXT-007",
+        "A-RIGHTS-008",
+        "A-HERITAGE-005",
+        "A-CONTROL-PLAN-006"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -647,7 +753,7 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "正文、双语提案、图纸、GeoJSON、官方来源、指标、假设与自检共同支撑；官方事实、比较案例、设计建议和待确认项分开记录。"
     },
     {
       "item_id": "phasing_implementation",
@@ -681,7 +787,11 @@
         "building_footprint_area_sqm",
         "green_ratio",
         "public_space_ratio",
-        "key_area_count"
+        "key_area_count",
+        "haidian_national_key_labs_2025",
+        "haidian_registered_large_models_2025",
+        "jingzhang_park_phase1_length_m",
+        "jingzhang_park_phase1_area_sqm"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -690,10 +800,25 @@
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
         "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "KEY-AREA-SOURCE",
+        "HD-STATS-2025",
+        "CASE-PUNGGOL-DIGITAL-DISTRICT",
+        "CASE-BARCELONA-22AT",
+        "CASE-AMSTERDAM-NIEUWE-MEER",
+        "CASE-KENDALL-VOLPE-2026",
+        "CASE-PARIS-SACLAY-GIF-2026",
+        "JZ-PARK-PHASE1",
+        "JZ-CONTROL-DRAFT-RESPONSE",
+        "QINGHUAYUAN-HERITAGE-CONTROLS-2026",
+        "BEIJING-GREENWAY-GUIDE-2025",
+        "BEIJING-SLOW-MOBILITY-2024"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-CONTEXT-007",
+        "A-RIGHTS-008",
+        "A-HERITAGE-005",
+        "A-CONTROL-PLAN-006"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -701,7 +826,7 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "正文、双语提案、图纸、GeoJSON、官方来源、指标、假设与自检共同支撑；官方事实、比较案例、设计建议和待确认项分开记录。"
     },
     {
       "item_id": "metrics_recalculation",
@@ -735,7 +860,9 @@
         "building_footprint_area_sqm",
         "green_ratio",
         "public_space_ratio",
-        "key_area_count"
+        "key_area_count",
+        "haidian_national_key_labs_2025",
+        "haidian_registered_large_models_2025"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -744,10 +871,18 @@
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
         "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "KEY-AREA-SOURCE",
+        "HD-STATS-2025",
+        "CASE-PUNGGOL-DIGITAL-DISTRICT",
+        "CASE-BARCELONA-22AT",
+        "CASE-AMSTERDAM-NIEUWE-MEER",
+        "CASE-KENDALL-VOLPE-2026",
+        "CASE-PARIS-SACLAY-GIF-2026"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-CONTEXT-007",
+        "A-RIGHTS-008"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -755,7 +890,7 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "正文、双语提案、图纸、GeoJSON、官方来源、指标、假设与自检共同支撑；官方事实、比较案例、设计建议和待确认项分开记录。"
     },
     {
       "item_id": "risk_missing_data",
@@ -789,7 +924,11 @@
         "building_footprint_area_sqm",
         "green_ratio",
         "public_space_ratio",
-        "key_area_count"
+        "key_area_count",
+        "haidian_national_key_labs_2025",
+        "haidian_registered_large_models_2025",
+        "jingzhang_park_phase1_length_m",
+        "jingzhang_park_phase1_area_sqm"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -798,10 +937,25 @@
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
         "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "KEY-AREA-SOURCE",
+        "HD-STATS-2025",
+        "CASE-PUNGGOL-DIGITAL-DISTRICT",
+        "CASE-BARCELONA-22AT",
+        "CASE-AMSTERDAM-NIEUWE-MEER",
+        "CASE-KENDALL-VOLPE-2026",
+        "CASE-PARIS-SACLAY-GIF-2026",
+        "JZ-PARK-PHASE1",
+        "JZ-CONTROL-DRAFT-RESPONSE",
+        "QINGHUAYUAN-HERITAGE-CONTROLS-2026",
+        "BEIJING-GREENWAY-GUIDE-2025",
+        "BEIJING-SLOW-MOBILITY-2024"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-CONTEXT-007",
+        "A-RIGHTS-008",
+        "A-HERITAGE-005",
+        "A-CONTROL-PLAN-006"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -809,7 +963,7 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "正文、双语提案、图纸、GeoJSON、官方来源、指标、假设与自检共同支撑；官方事实、比较案例、设计建议和待确认项分开记录。"
     }
   ]
 }

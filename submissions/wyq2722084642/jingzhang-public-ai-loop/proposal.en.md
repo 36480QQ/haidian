@@ -6,161 +6,172 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
----
-
----
-title: "Jing-Zhang Civic Loop: an AI innovation belt for everyday public services"
-author_github: "wyq2722084642"
-language: "zh"
-proposal_format_version: "2"
-bilingual_contract_version: "1"
-translation_file: "proposal.en.md"
-license: "COMMUNITY-DISPLAY-ONLY"
-summary: "把百年铁路的自主建造精神转译为可进入、可退出、可复核的AI公共服务回路。"
+summary: "Translate the self-built spirit of the century-old railway into an AI civic-service loop that people can enter, leave and challenge."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
 
 # Jing-Zhang Civic Loop: an AI innovation belt for everyday public services
 
-## 0. 一句话判断
+## 0. One-sentence proposition
 
-本方案不把 AI 当成城市的装饰性“智能层”，而把它组织成一条可被普通人使用的公共服务回路：先保证连续通行、人工说明、无账户替代、退出和申诉，再叠加可解释的 AI 辅助。京张遗址公园是公共脊，众智园、北京 AI 原点社区、大钟寺 AI 产业集聚区是三个差异化节点；三核之间由蓝绿慢行和公共服务换乘串联。[source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [depth:overall_spatial_structure]
+This proposal does not treat AI as a decorative “smart layer.” It organises AI as an everyday civic-service loop: continuous passage, human explanation, a no-account alternative, exit and appeal come first; explainable AI assistance comes second. Jing-Zhang Railway Heritage Park is the civic spine. Zhongzhiyuan, Beijing AI Origin Community and the Dazhongsi AI cluster are three differentiated nodes connected by blue-green walking, cycling and public-service transfers. [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [depth:overall_spatial_structure]
 
-这是概念建议与参考方案，不是法定规划、政府审定、建设许可、招商承诺、采购方案或运营授权。公开资料没有提供正式 SITE_BOUNDARY 与 KEY_AREA 多边形，本包使用临时约束范围；正式数据到位后，所有几何、指标、图纸和网页必须整体重算。[data:geometry/site_boundary.geojson#SITE-001] [data:geometry/key_areas.geojson#PROV-KEY-001] [metric:site_area_sqm]
+This is a concept and reference scheme. It is not a statutory plan, government approval, construction permit, investment commitment, procurement plan or operating authorisation. The public package does not contain official SITE_BOUNDARY or KEY_AREA polygons, so all submitted geometry is provisional and must be replaced and recalculated when official data arrives. [data:geometry/site_boundary.geojson#SITE-001] [data:geometry/key_areas.geojson#PROV-KEY-001] [metric:site_area_sqm]
 
-![京张共生回路：三核一带](assets/figures/site-overview.png)
+![Jing-Zhang Civic Loop: one spine and three nodes](assets/figures/site-overview.en.png)
 
-## 1. 设计依据、资料边界与三层范围
+## 1. Evidence base, limits and scope
 
-方案依据项目公告、智能体任务书、公开来源登记、站点资料包、临时边界和专业标准快照编制。正式可用的事实只来自已登记的公开或清权材料；临时几何只用于方案生成、空间讨论和自检，不用于法定红线、精确面积或控规结论。[source:SITE-PACKAGE] [source:SOURCE-REGISTRY] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]
+Facts, inferences, design recommendations and items awaiting professional confirmation are kept separate. Registered official facts enter `sources.json` and `metrics.json`; design judgements remain in the narrative and matrices; missing statutory boundaries, ownership, utilities, heritage GIS and delivery responsibility remain in `assumptions.json`. Provisional geometry supports concept comparison and package checks only. [source:SITE-PACKAGE] [source:SOURCE-REGISTRY]
 
-三层范围采用同一套“公共服务回路”方法：
+### 1.1 New official facts and their design consequences
 
-| 层级 | 公开资料中的尺度 | 本方案的空间判断 | 需要补齐的证据 |
+| Evidence type | Verified fact | Design response | Explicit non-inference |
 | --- | --- | --- | --- |
-| 统筹研究范围 | 约 43.6 km² | 用高校、企业、算力、人才、文化和公共服务建立创新网络 | 正式研究边界、现状产业与交通底数 |
-| 总体设计范围 | 约 11.4 km² | 以京张遗址公园为公共脊，组织城市更新、产业服务、蓝绿慢行和新型基础设施 | 正式规划边界、权属、市政和道路资料 |
-| 重点区域 | 约 368.4 ha，三处重点区 | 三核分别承担安全测试、开放协作、产业展示 | 三处正式 polygon、文保与控规条件 |
+| District statistics | At end-2025 Haidian reported 3.111 million residents, 92 national key laboratories and 123 registered large models; the bulletin marks 2025 figures as preliminary. [source:HD-STATS-2025] | Make services legible to residents, researchers, founders and mobile talent, with universal and human-assisted access. | Do not allocate district totals to the provisional site or use them to forecast users, floor area or returns. [metric:haidian_resident_population_2025] |
+| Existing park | Phase I of Jing-Zhang Railway Heritage Park, from Qinghua East Road to Zhichun Road, was reported as 2.5 km and 16.8 ha, with heritage retention, functional stitching and public-space goals. [source:JZ-PARK-PHASE1] | Plug into and repair an existing civic spine; audit breaks, entrances, rest points and service gaps before adding technology. | Do not combine Phase I area with the provisional proposal area or label unopened segments as complete. [metric:jingzhang_park_phase1_length_m] |
+| Planning procedure | A street-level regulatory-plan draft was displayed from December 2024 to January 2025. The response notice records revised or still-to-be-detailed road-junction treatment. [source:JZ-CONTROL-DRAFT-RESPONSE] | Treat major crossings as connectivity problems with alternative interfaces, not approved bridges, tunnels or redlines. | Do not treat the consultation response as the approved plan or reverse-engineer legal boundaries from webpage text. [assumption:A-CONTROL-PLAN-006] |
+| Existing service | AI Origin Community has a mobile talent-service station covering 17 high-frequency items, digital Q&A and human service officers. [source:AI-ORIGIN-TALENT-SERVICE-2026] | Extend the existing service with no-account access, quiet waiting, paper guidance, referral and failure review rather than duplicate it. | Do not claim the 17 services as proposal outputs or assume capacity, hours or system access. [metric:ai_origin_high_frequency_talent_services_2026] |
+| Heritage control | The Beijing Municipal Cultural Heritage Bureau publishes protected and construction-control zones for the former Qinghuayuan Station, including restrictions on unrelated new construction. [source:QINGHUAYUAN-HERITAGE-CONTROLS-2026] | Turn the “First Railway” landmark into a movable, low-impact interpretation route; fix no new site near the station before official heritage GIS screening. | Do not digitise textual offsets as an authoritative polygon or propose excavation, fixed equipment or structures. [assumption:A-HERITAGE-005] |
+| Walking and greenways | Beijing’s programmes emphasise continuous walking/cycling rights, accessibility, shade and water-road-green integration. [source:BEIJING-SLOW-MOBILITY-2024] [source:BEIJING-GREENWAY-GUIDE-2025] | Audit six essentials first: network breaks, crossings, shade, tactile-paving conflict, stopping places and non-AI wayfinding. | Do not present citywide guidance as an approved site project or substitute it for professional road, landscape or accessibility design. |
 
-![用地与公共服务结构](assets/figures/land-use-structure.png)
+Where an official webpage shows no explicit open-reuse licence, this package uses short factual paraphrases and links only. It copies no source photograph, map, logo or interface asset. [assumption:A-RIGHTS-008]
 
-## 2. 总体概念、命名体系与视觉识别
+### 1.2 Three connected scales
 
-主名称为“京张共生回路”，英文为 “Jing-Zhang Civic Loop”。“京张”保留铁路、工程和跨区域连接的记忆；“共生”强调人、社区、企业、专业团队与智能体共同校正；“回路”强调服务必须有入口、替代路径、人工接力、停止和反馈，而不是单向推送。
+| Scale | Publicly described magnitude | Spatial judgement in this proposal | Evidence still required |
+| --- | --- | --- | --- |
+| Coordinated study area | about 43.6 km² | Link universities, firms, compute, talent, culture and civic services as an innovation network | official study boundary and current industry/transport base data |
+| Overall urban-design area | about 11.4 km² | Use the heritage park as a civic spine for renewal, industry services and blue-green mobility | official boundary, ownership, utilities and road data |
+| Key areas | about 368.4 ha across three areas | Differentiate safe testing, open collaboration and industry-facing service | three official polygons plus heritage and statutory controls |
 
-建议形成三层命名：
+![Land use and civic-service structure](assets/figures/land-use-structure.en.png)
 
-- 品牌层：京张共生回路 / Jing-Zhang Civic Loop；
-- 空间层：一条京张公共脊、三核、两翼、多点场景；
-- 服务层：开源发布厅、可信测试沙盒、公共服务换乘、数据治理展厅、AI 慢行导览等概念节点。
+## 2. Overall concept, naming and identity
 
-Logo 方向是“一条可回到原点的折线 + 三个开放节点”：折线引用铁路线路和回路，三个节点以不同颜色区分测试、协作、展示；不使用第三方字体、企业标识、人物肖像或未经授权的铁路图像。视觉基调采用深蓝、青绿、暖橙和纸白，表达工程理性、公共性和历史连续性。[source:AGENT-TASKBOOK]
+“Jing-Zhang” keeps the memory of railway engineering and regional connection. “Civic” centres public value. “Loop” requires every service to have an entrance, alternative path, human handoff, stop condition and feedback route. The spatial identity is one civic spine, three nodes, two collaborative wings and multiple small scenarios. The visual identity is a line that can return to its origin and three open nodes, using deep blue, cyan-green, warm orange and paper white. It uses no third-party logo, portrait or unauthorised railway imagery. [source:AGENT-TASKBOOK]
 
-三大定位是“百年京张文化带、都市 AI 生活体验带、AI 融合创新带”；五大功能是“AI 全栈自主创新体系、世界级 AI 创新生态、AI+ 场景赋能新范式、智能化 AI 活力城市、AI 治理全球话语权”。三区两翼协同为：北京 AI 原点社区负责开放协作，众智园负责自主创新与治理测试，大钟寺负责产业展示与服务接口；中关村科技服务翼提供高校、资本、知识产权、专业服务的连接，小月河场景赋能翼把实验转成日常公共体验。[depth:three_level_scope_framework] [data:geometry/key_areas.geojson#PROV-KEY-002]
+The three positionings are a century-old Jing-Zhang cultural belt, an urban AI living-experience belt and an AI-integrated innovation belt. The five functions are full-stack independent innovation, a global AI ecosystem, AI+ scenario enablement, an AI-enabled liveable city and globally relevant AI governance. AI Origin Community leads open collaboration; Zhongzhiyuan leads independent innovation and controlled testing; Dazhongsi provides industry-facing service and public explanation; the two wings connect science services and Xiaoyue River everyday scenarios.
 
-## 3. 统筹研究范围：AI 创新生态与未来城市
+## 3. Coordinated study: innovation ecosystem and future city
 
-生态不按企业名单或投资额做未经核实的排名，而按“能力要素—空间载体—公共回报”组织：高校与研究、开源协作、算力与数据、产品和产业服务、人才生活、公共场景、国际传播。可参考的全球生态类型包括研究型园区、开发者社区、产业测试区、城市服务实验室、数字公共基础设施、创客与教育网络；本方案不把案例中的制度、企业或资金直接移植为海淀事实。[source:AGENT-TASKBOOK] [standard:MOHURD-URBAN-DESIGN-MEASURES]
+The ecosystem is organised by capability, spatial carrier and public return—not by unverified rankings, company lists or investment claims. Its elements are research, open-source collaboration, compute and data, product and industry services, daily talent life, civic scenarios and international exchange. [standard:MOHURD-URBAN-DESIGN-MEASURES]
 
-总体结构是“1 条公共脊 + 3 个创新核 + 2 条协同翼 + 10 类可复用场景”。空间上，把公共服务节点布置在轨道接驳、遗产公园、社区日常路径和产业展示接口的交汇处；运营上，用同一套证据卡片记录服务对象、数据边界、人工替代、停止条件和复核责任。
+### 3.1 Five global cases: transferable method and non-transferable context
 
-## 4. 总体设计范围：城市更新、用地、建筑和市政
+| Official case | Transferable method | Application here | Not imported |
+| --- | --- | --- | --- |
+| Punggol Digital District, Singapore | Co-locate academia, industry and community with an open digital test platform. [source:CASE-PUNGGOL-DIGITAL-DISTRICT] | Zhongzhiyuan testing requires authorisation, isolation, purpose limits and a stop path. | Sensor scale, platform governance, finance and operations. |
+| Barcelona 22@ | Embed innovation, creative production, care and urban technology in a lived-in district. [source:CASE-BARCELONA-22AT] | Dazhongsi ground floors combine industry explanation with public service and accessible space. | Barcelona planning instruments, land economics, brands and quotas. |
+| Amsterdam Nieuwe Meer | Combine transit, housing, work, services, knowledge institutions and digital infrastructure. [source:CASE-AMSTERDAM-NIEUWE-MEER] | Connect the three nodes by transit and walking, and treat daily services as innovation infrastructure. | Amsterdam’s local programme ratios and controls. |
+| Cambridge Kendall Square / Volpe | Plan research, housing, community facilities, pedestrian links and open space together after engagement. [source:CASE-KENDALL-VOLPE-2026] | Make public space and community benefit preconditions for every test project. | Approved quantities, real-estate agreements and funding. |
+| Paris-Saclay Gif-sur-Yvette | Combine research and education with housing, neighbourhood services, parks, public space and district infrastructure. [source:CASE-PARIS-SACLAY-GIF-2026] | Test each key area for research, daily life, public realm and infrastructure together. | French statutory procedures, transit schedules and delivery institutions. |
 
-### 4.1 用地与更新逻辑
+Across the cases, innovation must be usable in everyday life; testing needs governance and exit; public space, mobility and community services should be designed with research facilities. The cases do not prove equivalent institutions, budgets, data or delivery capacity in Haidian.
 
-用地结构是“公共服务与创新共享、蓝绿慢行与社区生活、产业服务与展示、保留/更新协作节点”的组合，而不是新增一个封闭园区。`land_use.geojson` 覆盖提交的临时边界，采用可校验用地分类表达；其面积、比例和分类仅是设计层复算，不替代法定规划。[data:geometry/land_use.geojson#LU-001] [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [depth:land_use_layout]
+The proposed structure is one civic spine + three innovation nodes + two collaborative wings + ten reusable scenarios. Every service uses an evidence card recording user, purpose, data boundary, non-AI alternative, stop condition and review owner.
 
-建筑采用“保留优先、改造可逆、新建谨慎、拆除待核”的分类：有历史、社区或公共服务价值的建筑优先保留并改善首层可达性；改造建议先做轻量、可撤回的公共界面；新建只作为待专业团队深化的容量选项；没有权属、结构、文保和控规资料时，不作具体拆除或高度结论。[data:geometry/buildings.geojson#BLDG-001] [depth:retain_renovate_demolish]
+## 4. Overall urban design: renewal, land, buildings and infrastructure
 
-容积率、总建筑面积、建筑高度、退线、道路红线、停车配建和工程管线均标为待正式数据补齐。城市设计深度用于说明空间关系、风貌导则和复核路径，不把概念指标写成已批准控制条件。[metric:floor_area_ratio] [standard:MOHURD-CONTROL-DETAILED-PLANNING] [depth:development_intensity_controls]
+The 1–2 km urban scale is treated as a civic-service loop, not as isolated AI compounds. Land use, buildings, roads, green space, public space and phasing layers show spatial relationships. FAR, height, setbacks, redlines, ownership and utilities remain unknown. [metric:floor_area_ratio]
 
-### 4.2 交通、轨道、慢行和蓝绿公共空间
+### 4.1 Land use and retain/renovate/demolish logic
 
-交通策略是“连续通行优先”：围绕轨道接驳、京张遗址公园跨环路节点、社区入口、产业服务节点形成步行和骑行的连续网络；AI 导航只提供可解释的建议，不替代标识、人工询问和无障碍通行。停车、消防和市政管线待正式资料核验。[data:geometry/roads.geojson#ROAD-001] [depth:traffic_rail_slow_parking]
+The land-use concept combines civic innovation, blue-green mobility, community life, industry service and retain/renew nodes. It does not create another closed campus. Buildings follow “retain first, reversible retrofit, cautious new build, demolition pending evidence.” No demolition or height conclusion is made without title, structure, heritage and statutory data. [data:geometry/land_use.geojson#LU-001] [data:geometry/buildings.geojson#BLDG-001]
 
-蓝绿系统把遗产公园、小月河、社区公共空间和产业开放界面连成复合环；设置遮阴、休息、夜间照明、低刺激导视和人工服务点。公共空间不是“屏幕广场”，而是可停留、可观察、可不使用 AI 的日常场所。[data:geometry/green_space.geojson#GREEN-001] [data:geometry/public_space.geojson#PUBLIC-001] [depth:blue_green_public_space]
+### 4.2 Mobility and blue-green public space
 
-![连续通行的蓝绿慢行系统](assets/figures/mobility-bluegreen.png)
+Continuous passage comes first. Rail transfers, ring-road crossings, community entrances and industry-service nodes form a walking and cycling network. The first audit covers breaks, crossings, shade, tactile-paving conflict, stopping places and non-AI wayfinding. AI navigation may explain options but never replaces signs, human help or accessible passage. [source:BEIJING-SLOW-MOBILITY-2024] [data:geometry/roads.geojson#ROAD-001]
 
-### 4.3 市政与新型基础设施
+The heritage park, Xiaoyue River, community open spaces and industry edges form a connected blue-green loop with shade, seating, quiet wayfinding and staffed help points. Water-road-green continuity is a review criterion. The public realm is not a “screen plaza”; it remains useful without AI. [source:BEIJING-GREENWAY-GUIDE-2025] [data:geometry/green_space.geojson#GREEN-001] [data:geometry/public_space.geojson#PUBLIC-001]
 
-提出“端侧优先、分级算力、公共接口、可断网运行”的参考原则：对低风险导览和公共信息采用本地缓存与端侧能力；对需要数据交换的服务建立最小化、可审计接口；不在未授权场地部署摄像、语音采集或生产系统接入。能源、消防、通信、排水、算力和机房条件均需专业核验。[depth:municipal_new_infrastructure]
+![Continuous blue-green mobility](assets/figures/mobility-bluegreen.en.png)
 
-## 5. 三处重点区域详细设计
+### 4.3 Municipal and digital infrastructure
 
-![三处重点区：差异化节点](assets/figures/key-areas.png)
+The reference principle is edge-first, tiered compute, auditable public interfaces and graceful offline operation. Low-risk information uses local cache; any data exchange is purpose-limited and logged. No camera, voice collection or production-system link is proposed without site authority. Energy, fire, communications, drainage, compute and plant rooms require professional verification. [depth:municipal_new_infrastructure]
 
-### 5.1 众智园 AI 自主创新加速区：先测再扩
+## 5. Three key areas
 
-概念角色是可信测试与端侧算力的“安全沙盒”。空间建议包括可预约的测试房、低干扰展示廊、设备维护与人工服务台、面向高校和初创团队的共享验证空间。所有测试都要有授权、时间范围、数据清单、故障停止和人工复核；不承诺算力供给、招商、投资或政府采购。[data:geometry/key_areas.geojson#PROV-KEY-001] [depth:three_key_area_detailed_design]
+![Three differentiated key areas](assets/figures/key-areas.en.png)
 
-### 5.2 北京 AI 原点社区：让普通人能参与
+### 5.1 Zhongzhiyuan: test before scaling
 
-概念角色是开源发布、居民反馈和跨代协作的“公共客厅”。建议配置开源发布厅、无账户公共终端、人工解释台、社区工作坊、安静空间和可撤回的试用点。居民可以不使用 AI，或要求人工说明；任何原型都应先说明用途、数据和退出方式，不以个人行为轨迹做商业推荐。[data:geometry/key_areas.geojson#PROV-KEY-002] [depth:three_key_area_detailed_design]
+Zhongzhiyuan is a controlled sandbox for trustworthy testing and edge compute: bookable test rooms, low-disturbance explanation space, maintenance and human help, and shared validation for university and start-up teams. Every test needs authority, time limits, a data list, stop conditions and human review. No compute supply, investment, tenant or procurement commitment is implied. [data:geometry/key_areas.geojson#PROV-KEY-001]
 
-### 5.3 大钟寺 AI 产业集聚区：把产业展示变成公共接口
+### 5.2 Beijing AI Origin Community: participation in ordinary life
 
-概念角色是产业服务、数据治理展示和国际交流的“接口”。建议以可审计案例展廊、企业服务前台、人才会客厅和公共交通接驳空间形成首层开放界面；企业案例、商标、产品、数据和国际合作均须逐项清权，不写成已入驻企业或招商结果。[data:geometry/key_areas.geojson#PROV-KEY-003] [depth:three_key_area_detailed_design]
+The Origin Community is a civic living room for open-source release, resident feedback and intergenerational collaboration. Since a talent-service station already covers 17 high-frequency items with digital and human support, the proposal extends rather than duplicates it: no-account terminals, paper guidance, quiet waiting, complex-case referral, workshops and reversible trials. People may decline AI or request human explanation. [source:AI-ORIGIN-TALENT-SERVICE-2026] [data:geometry/key_areas.geojson#PROV-KEY-002]
 
-## 6. AI+ 场景卡、用户画像与产业验证
+### 5.3 Dazhongsi: industry display as a public interface
 
-### 6.1 十张场景卡
+Dazhongsi is an interface for industry service, explainable data governance and international exchange. Auditable case galleries, an enterprise-service desk, a talent meeting place and transit-linked public space create an open ground floor. Every company case, brand, product, dataset and partnership requires rights clearance; none is presented as a confirmed tenant or investment outcome. [data:geometry/key_areas.geojson#PROV-KEY-003]
 
-1. **开源发布厅**：发布代码、模型说明和失败复盘；不采集身份轨迹。
-2. **可信测试沙盒**：展示测试协议、红队结果和暂停条件；不连接生产系统。
-3. **端侧算力驿站**：提供低风险本地推理体验；断网仍可使用普通信息服务。
-4. **AI 慢行导览**：提供多语言、低刺激路线建议；保留纸质图和人工问路。
-5. **遗产口述工作坊**：由授权参与者提供故事；不把合成声音当作历史原声。
-6. **清河低碳创新廊**：解释雨洪、遮阴、骑行和能源关系；不虚构环境绩效。
-7. **成果转化驿站**：连接高校成果与专业服务；不承诺融资、专利或转化结果。
-8. **数据要素会客厅**：展示授权、用途和审计链；不展示个人或敏感数据。
-9. **社区服务样板街**：把生活服务做成可人工办理的小尺度接口；不强制扫码。
-10. **全球 AI 公共路线**：以开放活动和公共展陈串联三核；活动日期与参与者待确认。
+## 6. AI+ scenario cards, user profiles and validation
 
-### 6.2 五类用户画像
+### 6.1 Ten scenario cards
 
-开源开发者需要发布、协作和可复现实验；初创团队需要低成本测试、人工合规咨询和端侧算力入口；周边居民需要通勤、休闲、社区服务和不使用 AI 的选择；高校师生需要成果转化、跨校协作和安静学习空间；头部企业与国际访客需要可审计展示、轨道接驳、人工接待和公共规则说明。画像是设计工具，不是对真实人口的统计结论。[depth:overall_spatial_structure]
+1. **Open-source release hall** — publish code, model notes and failure reviews; collect no identity trail.
+2. **Trustworthy test sandbox** — show protocol, red-team result and stop condition; connect to no production system.
+3. **Edge-compute station** — offer low-risk local inference; retain ordinary information when offline.
+4. **AI slow-mobility guide** — offer multilingual, low-stimulation routes; retain paper maps and human directions.
+5. **Heritage oral-history workshop** — use authorised contributions; never label synthetic voices as archival originals.
+6. **Qinghe low-carbon learning corridor** — explain drainage, shade, cycling and energy; make no invented performance claim.
+7. **Research-transfer station** — connect university work with professional help; promise no patent, finance or transfer outcome.
+8. **Data-governance living room** — explain consent, purpose and audit; display no personal or sensitive data.
+9. **Community service sample street** — keep life services small-scale and human-processable; require no QR code.
+10. **Global AI civic route** — link the three nodes with public programmes; dates and participants remain unconfirmed.
 
-### 6.3 三个产业测试/验证场景
+### 6.2 Five user profiles
 
-- **T1 公共服务可达性测试**：在原点社区比较 AI 导览、纸质导视和人工说明三条路径，记录完成任务所需的匿名汇总，不记录个体轨迹；任一群体无法完成即暂停。
-- **T2 端侧模型与低碳运行测试**：在众智园比较本地运行、延迟、能耗和故障恢复，结果只作为概念验证；不形成部署许可或性能承诺。
-- **T3 数据授权与产业展示测试**：在大钟寺用清权的合成数据演示授权链、撤回和审计；不展示真实个人信息，不将演示结果写成合规认证。
+Open-source developers need reproducible collaboration; start-ups need low-cost testing and human compliance help; residents need mobility, leisure and a non-AI option; university communities need transfer and quiet learning; established firms and international visitors need auditable display, transit access, human reception and clear public rules. These profiles are design tools, not population findings.
 
-## 7. AI 公共空间、朝圣地标与文化叙事
+### 6.3 Three industry tests
 
-三个 AI 朝圣地标是概念性公共节点：**“第一条路”京张开工记忆门**，讲自主建造与公共工程；**“共同校正”原点代码墙**，展示经授权的开源贡献和失败复盘；**“可回到原点”共生环广场**，把三核、蓝绿线和年度公共活动汇成可步行路线。地标不是纪念设施批复或企业荣誉墙，具体形式须经文保、风貌、公共艺术和权利审查。[source:AGENT-TASKBOOK] [depth:blue_green_public_space]
+- **T1 civic-service accessibility:** compare AI guidance, paper signs and human explanation using anonymous aggregates; pause if any group cannot complete the task.
+- **T2 edge model and low-carbon operation:** compare local operation, delay, energy and recovery as a proof of concept only.
+- **T3 data authorisation and industry display:** use cleared synthetic data to demonstrate permission, withdrawal and audit; never imply compliance certification.
 
-文化叙事采用“詹天佑的自主建造—中关村的开放创新—AI 时代的公共共创”三段式，不把历史人物、铁路设施、企业和社区故事做未经授权的再现。所有展陈内容应能被普通人理解，并允许不观看、不扫码、不提供数据。
+## 7. AI public space, pilgrimage landmarks and culture
 
-## 8. 全球活动体系、社区运营与分期
+The three conceptual landmarks are the **First Railway memory route**, using movable low-impact interpretation; the **Collective Correction code wall**, displaying authorised open-source contributions and failure reviews; and the **Return-to-Origin civic-loop square**, connecting the nodes and annual programmes. The former Qinghuayuan Station has published heritage-control requirements but no official GIS in this package, so no new structure, fixed equipment or excavation is sited near it before heritage overlay and authority review. [source:QINGHUAYUAN-HERITAGE-CONTROLS-2026] [assumption:A-HERITAGE-005]
 
-建议形成四类长期活动：季度“问题季”公开真实公共问题；季度“开源季”发布可复用工具和失败记录；年度“城市 Beta 季”进行经授权的低风险体验；年度“Proof Week”展示证据链而非广告。无活动日、普通日、静音时段和故障状态同样被设计，公共服务不能只在节庆时存在。
+The cultural narrative moves from Zhan Tianyou and independent railway engineering, through Zhongguancun’s open innovation, to public co-creation in the AI era. It does not recreate people, companies, voices or community stories without rights. Every exhibit can be understood without scanning, registration or data provision.
 
-分期采用“先公开、后测试、再深化”：
+## 8. Projects, governance, activities and phasing
 
-- **P0 资料与授权**：补齐正式边界、重点区、权属、文保、交通、市政和运营责任；不满足条件不进入现场。
-- **P1 轻量公共体验**：先做纸质导视、人工服务、可撤回的展陈和开放讨论，验证连续通行与可理解性。
-- **P2 受控验证**：由专业团队和权利主体确认后，在三核分别开展 T1-T3，设置暂停、申诉、退出和事故复盘。
-- **P3 深化与退役**：只有在证据充分且公共价值明确时，才研究长期空间与基础设施；无法证明价值的功能保留公共知识并退役。
+Reference work packages are: JZ-01 repair mobility breaks; JZ-02 Zhongzhiyuan–Qinghe innovation edge; JZ-03 Origin Community research-transfer street; JZ-04 Dazhongsi four-quadrant connections; JZ-05 civic-service and edge-compute nodes; JZ-06 global AI civic route. These are review packages, not approved projects.
 
-`phasing.geojson` 只表达参考顺序，不构成时间、预算、责任主体或实施承诺。[data:geometry/phasing.geojson#PHASE-001] [depth:phasing_implementation]
+Long-term programmes include quarterly Problem Season, quarterly Open-source Season, annual City Beta Season and annual Proof Week. Ordinary days, quiet periods and failure states are designed as carefully as festivals.
 
-## 9. 指标、面积复算、标准响应与合规
+- **P0 evidence and authority:** obtain official boundaries, ownership, heritage, transport, utilities and operating responsibility.
+- **P1 lightweight civic experience:** paper wayfinding, human help, reversible exhibits and open discussion.
+- **P2 controlled validation:** run T1–T3 only after professional and rights-holder approval, with pause, appeal and incident review.
+- **P3 deepen or retire:** retain long-term infrastructure only when evidence shows public value; otherwise preserve learning and retire the function.
 
-当前提交范围复算面积约 11,412,825 平方米；绿地比例约 12.34%，公共空间比例约 7.33%，重点区数量为 3。这些数值来自临时设计层，只能说明包内几何关系，不能代替法定规划指标；容积率等控制指标保持“待正式数据补齐”。所有已知指标、公式、来源文件、置信度和假设均在 `metrics.json`，专业标准逐条映射在 `standard_matrix.json`，深度项在 `design_depth_matrix.json`。[metric:green_ratio] [metric:public_space_ratio] [depth:metrics_recalculation]
+`phasing.geojson` expresses sequence only, not dates, budget, owner or commitment. [data:geometry/phasing.geojson#PHASE-001]
 
-本包的合规矩阵覆盖公告 1.3、1.4、1.5 及 `agent.1`—`agent.6`：命名与总体结构、AI 生态、场景卡和用户画像、公共空间与地标、文化叙事、全球活动与长期运营均有正文、图层、指标或图纸落点。标准响应区分公告要求、城市设计管理、控规深度、用地分类和资料缺口；建筑工程设计深度文件当前仅作待补资料，不伪装成正式依据。[source:AGENT-TASKBOOK] [standard:MOHURD-ARCH-DESIGN-DEPTH-2016] [depth:risk_missing_data]
+## 9. Metrics, recalculation and compliance
 
-![指标—证据—复核闭环](assets/figures/metrics-evidence.png)
+Within the provisional geometry, the submitted area recalculates to about 11,412,825 m²; green-space ratio is about 12.34%; public-space ratio is about 7.33%; and there are three key areas. These values describe only package geometry and are not statutory planning indicators. [metric:green_ratio] [metric:public_space_ratio]
 
-## 10. 风险、版权、法律边界与下一步
+Six official context metrics are recorded separately: Haidian population, national key laboratories and registered large models; Phase I park length and area; and high-frequency talent-service items at Origin Community. They explain the need for mixed public service, real testing and connection to existing services. They do not size land, buildings, users or performance. [metric:haidian_national_key_labs_2025] [metric:jingzhang_park_phase1_area_sqm] [metric:ai_origin_high_frequency_talent_services_2026] [assumption:A-CONTEXT-007]
 
-最大风险是临时边界和基础资料不足导致的精度误读；其次是把概念 AI 场景误认为已部署服务，把生成图像误认为现状或建成效果，把企业或活动建议误认为承诺。处理方式是低对比显示临时范围、明确“待正式数据补齐”、保存可重算公式、保留人工和非 AI 路径，并要求专业团队核验道路、管线、权属、文保、消防、无障碍、数据安全和运营责任。[data:geometry/constraints.geojson#CONSTRAINTS] [depth:risk_missing_data]
+`metrics.json` records status, value, unit, formula, source files, confidence and assumptions. The compliance, standard and design-depth matrices connect announcement requirements to report sections, layers, metrics, drawings and review checks. Replacing official boundaries requires coordinated updates to geometry, metrics, figures, PDFs, HTML, matrices and manifest hashes. [depth:metrics_recalculation]
 
-本包不使用个人数据、私密地图、未经授权的企业标识、人物肖像、声音、音乐或第三方图片。图件、HTML、GeoJSON 和 PDF 为本次投稿的概念表达；它们不代表政府、规划机构、企业或居民的正式意见。下一步是建立 fork、运行完整自检、提交只包含本方案目录的 PR，并根据维护者与专业团队反馈迭代；任何现实落地都必须重新取得正式资料、专业判断、权利授权和法定审批。
+![Metric-evidence-review loop](assets/figures/metrics-evidence.en.png)
 
-## 11. 提交状态
+## 10. Risk, copyright and next actions
 
-本地包目标为 `package_type=professional_design_package`、`package_state=ready_for_review`、`proposal_format_version=2`、`bilingual_contract_version=1`。正式自检前不宣称通过；GitHub PR 合并也不等于专业批准、公共服务上线或工程实施。[source:SITE-PACKAGE]
+The largest risk is precision theatre caused by provisional boundaries and missing base data. Other risks are treating concept services as deployed, generated figures as existing conditions, and proposed partners or programmes as commitments. Mitigation is explicit provisional styling, recalculable formulas, human and non-AI paths, stop/appeal/retirement rules, and professional review of roads, utilities, title, heritage, fire, accessibility, data security and operations. [data:geometry/constraints.geojson#CONSTRAINTS]
+
+This package uses no personal data, private map, unauthorised corporate mark, portrait, voice, music or third-party image. Its figures, HTML, GeoJSON and PDFs are proposal artefacts and do not represent official positions.
+
+## References
+
+Primary local evidence comes from official Haidian/Beijing statistics, landscape, planning, transport, heritage and human-resources pages. Comparative cases come from official Singapore, Barcelona, Amsterdam, Cambridge and Paris-Saclay project pages. Complete titles, dates, retrieval dates, use and rights limits are recorded in `sources.json`. [source:HD-STATS-2025] [source:JZ-PARK-PHASE1] [source:QINGHUAYUAN-HERITAGE-CONTROLS-2026]
+
+## 11. Submission status
+
+The target remains `package_type=professional_design_package`, `package_state=ready_for_review`, `proposal_format_version=2` and `bilingual_contract_version=1`. A merged GitHub PR would not constitute professional approval, service launch or implementation authorisation. [source:SITE-PACKAGE]

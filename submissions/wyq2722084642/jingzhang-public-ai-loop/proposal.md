@@ -27,6 +27,21 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 方案依据项目公告、智能体任务书、公开来源登记、站点资料包、临时边界和专业标准快照编制。正式可用的事实只来自已登记的公开或清权材料；临时几何只用于方案生成、空间讨论和自检，不用于法定红线、精确面积或控规结论。[source:SITE-PACKAGE] [source:SOURCE-REGISTRY] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]
 
+### 1.1 新增官方事实与设计响应
+
+本轮新增资料不是“背景堆叠”，而是形成六条可追溯的设计约束：
+
+| 类型 | 可核验事实 | 本方案据此作出的判断 | 明确不作的推断 |
+| --- | --- | --- | --- |
+| 区级统计 | 2025 年末海淀区常住人口 311.1 万人；全国重点实验室 92 家；备案上线大模型 123 款，公报注明 2025 年数据为初步数。[source:HD-STATS-2025] | 公共服务节点应同时服务居民、研究者、创业团队和流动人才，并以通用、可解释、可人工办理为默认。 | 不把全区总量按比例分摊到临时边界，不据此预测客流、建筑规模或项目收益。[metric:haidian_resident_population_2025] |
+| 已建公园 | 京张铁路遗址公园一期位于清华东路至知春路，官方报道长度 2.5 公里、面积 16.8 公顷，并以遗迹保护、功能织补、东西缝合和公共服务为目标。[source:JZ-PARK-PHASE1] | “公共脊”不是新造一条科技景观轴，而是接入并补强既有公共空间，优先找断点、入口、休息和人工服务缺口。 | 不把一期面积与临时方案面积合并，不把未建区段写成已开放。[metric:jingzhang_park_phase1_length_m] |
+| 控规程序 | 2024 年 12 月至 2025 年 1 月曾公示沿线街区控规草案；采信通告显示北三环—四道口路等立交表达被调整或仍需下一阶段深化。[source:JZ-CONTROL-DRAFT-RESPONSE] | 环路和主干路交叉点只做“连通性问题清单”和多方案接口，不画成已经批准的桥隧或道路红线。 | 不把公示采信通告当作已批控规，不从网页文字反推法定边界。[assumption:A-CONTROL-PLAN-006] |
+| 既有服务 | AI 原点社区已落地人才服务流动站，官方披露 5 类 17 项高频事项、智能问答与市区镇三级人工帮办。[source:AI-ORIGIN-TALENT-SERVICE-2026] | 原点社区的设计从“再造一个服务大厅”改为扩展既有服务：补充无账户入口、安静等候、纸质说明、转介与服务失败复盘。 | 不重复宣称 17 项服务为本方案成果，不假设其容量、开放时间或系统接口。[metric:ai_origin_high_frequency_talent_services_2026] |
+| 文物保护 | 北京市文物局公布了清华园车站旧址保护范围及Ⅰ类、Ⅴ类建设控制地带，部分地带禁止新建或仅允许与保护展示相关的建设。[source:QINGHUAYUAN-HERITAGE-CONTROLS-2026] | “第一条路”地标改为可移动、低干预的解释路线；正式文保 GIS 到位前不确定站房附近的新建落位。 | 不把网页中的文字距离自行数字化为官方 polygon，不提出开挖、固定设备或构筑物。[assumption:A-HERITAGE-005] |
+| 慢行绿道 | 北京市慢行行动强调连续路权、无障碍、林荫和水—路—绿融合；绿道指南服务于已批绿道专项规划的实施。[source:BEIJING-SLOW-MOBILITY-2024] [source:BEIJING-GREENWAY-GUIDE-2025] | 首期审计对象从“布置智能设施”调整为断点、过街、遮阴、盲道冲突、停留点和非 AI 导视六项。 | 不把市级年度任务或指南写成本站点获批工程，不替代道路、园林和无障碍专业设计。 |
+
+结构化证据中，事实写入 `sources.json` 和 `metrics.json`；设计判断留在正文和矩阵；文保 GIS、法定控规、权属及实施责任等待确认项写入 `assumptions.json`。网页未显示明确开放复用许可时，本包只作短句转述与链接引用，不复制图片、地图、logo 或界面素材。[assumption:A-RIGHTS-008]
+
 ## 三层范围工作框架
 
 三层范围不是三张互不相干的图，而是从产业网络到城市空间、再到重点片区的同一条证据链：统筹研究范围提出创新生态与文化叙事，总体设计范围把判断落到公共脊、蓝绿系统、交通和更新项目，重点区域用三核差异化设计验证服务接口。临时范围只支持概念比选，不支持法定面积、红线或实施结论；正式边界变化时，三层范围、用地分区、指标和图纸必须联动复算。[source:OFFICIAL-ANNOUNCEMENT] [depth:three_level_scope_framework] [data:geometry/key_areas.geojson#PROV-KEY-001]
@@ -59,6 +74,18 @@ Logo 方向是“一条可回到原点的折线 + 三个开放节点”：折线
 
 生态不按企业名单或投资额做未经核实的排名，而按“能力要素—空间载体—公共回报”组织：高校与研究、开源协作、算力与数据、产品和产业服务、人才生活、公共场景、国际传播。可参考的全球生态类型包括研究型园区、开发者社区、产业测试区、城市服务实验室、数字公共基础设施、创客与教育网络；本方案不把案例中的制度、企业或资金直接移植为海淀事实。[source:AGENT-TASKBOOK] [standard:MOHURD-URBAN-DESIGN-MEASURES]
 
+### 3.1 五个全球案例的“可借鉴/不可移植”矩阵
+
+| 官方案例 | 可借鉴的方法 | 对本方案的落点 | 不可直接移植 |
+| --- | --- | --- | --- |
+| 新加坡 Punggol Digital District | 高校、产业、社区和开放数字平台共同构成测试环境。[source:CASE-PUNGGOL-DIGITAL-DISTRICT] | 众智园只在授权、隔离和可停机条件下提供测试；数据接口先列用途、权限和退出。 | 传感器规模、平台治理、投资和运营体系。 |
+| Barcelona 22@ | 在存量城市中把创新、创意、照护、公共设施与日常经济并置。[source:CASE-BARCELONA-22AT] | 大钟寺首层界面不能只有企业展厅，要并置社区可进入的服务与公共空间。 | 巴塞罗那规划工具、土地经济、项目品牌与产业配额。 |
+| Amsterdam Nieuwe Meer | 公共交通、居住、工作、服务、知识机构与数字基础设施形成混合创新区。[source:CASE-AMSTERDAM-NIEUWE-MEER] | 三核之间用公共交通和慢行连接，并把生活服务作为创新生态的基本设施。 | 50/40/10 等当地功能比例及建筑控制。 |
+| Cambridge Kendall Square / Volpe | 通过公众参与把科研创新、住房、社区中心、步行联系与开放空间共同规划。[source:CASE-KENDALL-VOLPE-2026] | 把公共空间和社区收益写进每个测试项目的进入条件，而非技术上线后的附加项。 | 已批规模、地产安排、资金和社区收益协议。 |
+| Paris-Saclay Gif-sur-Yvette | 高校科研与住房、邻里服务、公园、公共空间和区域能源系统共同组织。[source:CASE-PARIS-SACLAY-GIF-2026] | 以“研究—生活—公共空间—基础设施”四项齐备检查重点区，而非只看企业密度。 | 法国法定程序、轨道时序和公共开发机构模式。 |
+
+五案共同支持三条方法：创新空间必须可被日常生活使用；测试必须有明确治理与退出；公共空间、交通和社区服务应与研发设施同步设计。它们只构成比较研究，不证明海淀已经具备相同制度、预算、数据或交付能力。
+
 总体结构是“1 条公共脊 + 3 个创新核 + 2 条协同翼 + 10 类可复用场景”。空间上，把公共服务节点布置在轨道接驳、遗产公园、社区日常路径和产业展示接口的交汇处；运营上，用同一套证据卡片记录服务对象、数据边界、人工替代、停止条件和复核责任。
 
 ## 4. 总体设计范围城市更新与控规深度城市设计
@@ -79,9 +106,11 @@ Logo 方向是“一条可回到原点的折线 + 三个开放节点”：折线
 
 ### 4.2 交通、轨道、慢行和蓝绿公共空间
 
-交通策略是“连续通行优先”：围绕轨道接驳、京张遗址公园跨环路节点、社区入口、产业服务节点形成步行和骑行的连续网络；AI 导航只提供可解释的建议，不替代标识、人工询问和无障碍通行。停车、消防和市政管线待正式资料核验。[data:geometry/roads.geojson#ROAD-001] [depth:traffic_rail_slow_parking]
+交通策略是“连续通行优先”：围绕轨道接驳、京张遗址公园跨环路节点、社区入口、产业服务节点形成步行和骑行的连续网络；AI 导航只提供可解释的建议，不替代标识、人工询问和无障碍通行。首期采用“断点—过街—遮阴—盲道冲突—停留—非 AI 导视”六项步行审计，先检查连续路权与行动不便者体验，再讨论智能设施。停车、消防和市政管线待正式资料核验。[source:BEIJING-SLOW-MOBILITY-2024] [data:geometry/roads.geojson#ROAD-001] [depth:traffic_rail_slow_parking]
 
-蓝绿系统把遗产公园、小月河、社区公共空间和产业开放界面连成复合环；设置遮阴、休息、夜间照明、低刺激导视和人工服务点。公共空间不是“屏幕广场”，而是可停留、可观察、可不使用 AI 的日常场所。[data:geometry/green_space.geojson#GREEN-001] [data:geometry/public_space.geojson#PUBLIC-001] [depth:blue_green_public_space]
+蓝绿系统把遗产公园、小月河、社区公共空间和产业开放界面连成复合环；设置遮阴、休息、夜间照明、低刺激导视和人工服务点，并把水—路—绿连通性作为方案复核项。[source:BEIJING-GREENWAY-GUIDE-2025] [data:geometry/green_space.geojson#GREEN-001] [data:geometry/public_space.geojson#PUBLIC-001]
+
+公共空间不是“屏幕广场”，而是可停留、可观察、可不使用 AI 的日常场所。[depth:blue_green_public_space]
 
 ![连续通行的蓝绿慢行系统](assets/figures/mobility-bluegreen.png)
 
@@ -103,7 +132,7 @@ Logo 方向是“一条可回到原点的折线 + 三个开放节点”：折线
 
 ### 5.2 北京 AI 原点社区：让普通人能参与
 
-概念角色是开源发布、居民反馈和跨代协作的“公共客厅”。建议配置开源发布厅、无账户公共终端、人工解释台、社区工作坊、安静空间和可撤回的试用点。居民可以不使用 AI，或要求人工说明；任何原型都应先说明用途、数据和退出方式，不以个人行为轨迹做商业推荐。[data:geometry/key_areas.geojson#PROV-KEY-002] [depth:three_key_area_detailed_design]
+概念角色是开源发布、居民反馈和跨代协作的“公共客厅”。鉴于原点社区已有覆盖 17 项高频事项、数字问答和人工帮办的人才服务流动站，本方案不另造重复窗口，而建议在既有服务周边补充无账户公共终端、纸质说明、安静等候、复杂事项人工转介、社区工作坊和可撤回的试用点。居民可以不使用 AI，或要求人工说明；任何原型都应先说明用途、数据和退出方式，不以个人行为轨迹做商业推荐。[source:AI-ORIGIN-TALENT-SERVICE-2026] [data:geometry/key_areas.geojson#PROV-KEY-002] [depth:three_key_area_detailed_design]
 
 ### 5.3 大钟寺 AI 产业集聚区：把产业展示变成公共接口
 
@@ -140,7 +169,7 @@ AI 生态的空间目标不是制造全自动城市，而是让研究、开源�
 
 ## 7. AI 公共空间、朝圣地标与文化叙事
 
-三个 AI 朝圣地标是概念性公共节点：**“第一条路”京张开工记忆门**，讲自主建造与公共工程；**“共同校正”原点代码墙**，展示经授权的开源贡献和失败复盘；**“可回到原点”共生环广场**，把三核、蓝绿线和年度公共活动汇成可步行路线。地标不是纪念设施批复或企业荣誉墙，具体形式须经文保、风貌、公共艺术和权利审查。[source:AGENT-TASKBOOK] [depth:blue_green_public_space]
+三个 AI 朝圣地标是概念性公共节点：**“第一条路”京张记忆路线**以可移动、低干预标识讲自主建造与公共工程；**“共同校正”原点代码墙**展示经授权的开源贡献和失败复盘；**“可回到原点”共生环广场**把三核、蓝绿线和年度公共活动汇成可步行路线。清华园车站旧址已有正式文字版保护范围和建设控制要求，但本包缺少官方 GIS，因此“第一条路”不确定站房附近的新建构筑物、设备或开挖位置，必须先做文保范围叠合与主管部门审查。三个地标都不是纪念设施批复或企业荣誉墙。[source:QINGHUAYUAN-HERITAGE-CONTROLS-2026] [assumption:A-HERITAGE-005] [depth:blue_green_public_space]
 
 文化叙事采用“詹天佑的自主建造—中关村的开放创新—AI 时代的公共共创”三段式，不把历史人物、铁路设施、企业和社区故事做未经授权的再现。所有展陈内容应能被普通人理解，并允许不观看、不扫码、不提供数据。
 
@@ -171,6 +200,8 @@ AI 生态的空间目标不是制造全自动城市，而是让研究、开源�
 
 当前提交范围复算面积约 11,412,825 平方米；绿地比例约 12.34%，公共空间比例约 7.33%，重点区数量为 3。这些数值来自临时设计层，只能说明包内几何关系，不能代替法定规划指标；容积率等控制指标保持“待正式数据补齐”。所有已知指标、公式、来源文件、置信度和假设均在 `metrics.json`，专业标准逐条映射在 `standard_matrix.json`，深度项在 `design_depth_matrix.json`。[metric:green_ratio] [metric:public_space_ratio] [depth:metrics_recalculation]
 
+另有六项“官方背景指标”单独登记：海淀全区常住人口、全国重点实验室和备案上线大模型数量，京张公园一期长度与面积，以及原点社区高频人才服务事项数。它们只回答“为什么需要复合公共服务、真实测试和既有服务衔接”，不参与本方案用地、容量、客流和绩效计算。[metric:haidian_national_key_labs_2025] [metric:jingzhang_park_phase1_area_sqm] [metric:ai_origin_high_frequency_talent_services_2026] [assumption:A-CONTEXT-007]
+
 本包的合规矩阵覆盖公告 1.3、1.4、1.5 及 `agent.1`—`agent.6`：命名与总体结构、AI 生态、场景卡和用户画像、公共空间与地标、文化叙事、全球活动与长期运营均有正文、图层、指标或图纸落点。标准响应区分公告要求、城市设计管理、控规深度、用地分类和资料缺口；建筑工程设计深度文件当前仅作待补资料，不伪装成正式依据。[source:AGENT-TASKBOOK] [standard:MOHURD-ARCH-DESIGN-DEPTH-2016] [depth:risk_missing_data]
 
 ![指标—证据—复核闭环](assets/figures/metrics-evidence.png)
@@ -192,6 +223,7 @@ AI 生态的空间目标不是制造全自动城市，而是让研究、开源�
 - `brief/site-package/design_brief.json`、`agent_taskbook.json`、`allowed_design_space.json`、`sources.json`、`geometry/provisional_boundaries.geojson`。
 - `data/source_registry.json` 与本包 `sources.json`、`assumptions.json`、`metrics.json`。
 - `docs/formal-submission-guide.md`、`skills/urban-design-ai-submission/SKILL.md` 及专业标准快照。
+- 北京市/海淀区统计、园林绿化、规划自然资源、交通、文物、人社部门官方页面，以及新加坡、巴塞罗那、阿姆斯特丹、剑桥和巴黎萨克雷官方项目页面；完整发布日期、检索日期、用途、许可边界和不可迁移条件见 `sources.json`。[source:HD-STATS-2025] [source:JZ-PARK-PHASE1] [source:QINGHUAYUAN-HERITAGE-CONTROLS-2026]
 
 ## 11. 提交状态
 
