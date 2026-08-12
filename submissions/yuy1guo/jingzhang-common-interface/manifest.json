@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "package_id": "jingzhang-common-interface",
   "project_id": "centennial-jingzhang-ai-belt",
   "site_package_version": "0.1.0",
@@ -32,19 +32,19 @@
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "a83f6eee85bd57edb70eac330e53ca8b3712f66707beecdd9caf65721d1c6227"
+      "sha256": "e853203af1b54d9865f9e0608740386383789638dd43ae63a7a0f8457c902219"
     },
     {
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "a90587468bd5ac3330fd933f6cfefab3b97f3c03d4a0a2ebbdb537ab94f4052a"
+      "sha256": "ae6bb887ca104da5d19c3a2e253c7a68102e1f8c3c87a76067240c24cb873a66"
     },
     {
       "path": "assumptions.json",
       "role": "assumptions",
       "required": true,
-      "sha256": "6cda1a15adf47a2744de5497e420abfe7bab93f1cfde5a4c5501cd496d5a1863"
+      "sha256": "ba1fe2a4d76429a0fde4938e059cd8bc79a5998462119a2a1b9e12fde2604397"
     },
     {
       "path": "sources.json",
@@ -56,32 +56,32 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "889a2abfa7fb1473c3d819d147bfa20816edcf307998e33a7973a5735ac6c0ae"
+      "sha256": "2fb29cd2ca35a8f54c37724b93c3b165db151414cfaa0fe0855c653018524d95"
     },
     {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "32e7371cb690992198418385277d70021b50f1067680da9a49e93ad9e2cdd7f0"
+      "sha256": "3408a9f28202f861235ef545067173285da51dfd1b7e27b7473329847b4ca493"
     },
     {
       "path": "standard_matrix.json",
       "role": "standard_matrix",
       "required": true,
-      "sha256": "7764019cf2a11c30b4021c0b34ffe134fe6668ff6b8491a3c502e94a6088a77d"
+      "sha256": "f16122ea863936c52f56b54773f08451dce4336c7da44d008b6a47bcb5901ba4"
     },
     {
       "path": "design_depth_matrix.json",
       "role": "design_depth_matrix",
       "required": true,
-      "sha256": "66aa68787443a68131504c281cf6848e876e04f16fa26daff7977930b32d65c2"
+      "sha256": "dc2c62f1d1ab8d673bec8b5dc34fbc1e1cacf4ed04038193dc92b142f26df021"
     },
     {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "ab9197a9828c375c13a05f5c7c911a3eb66283bf76f3b7de834ecdd766ce4235"
+      "sha256": "a1ac1e53cf1d9dce9cd6a17c28f4ed560081eeb545c67957f511253cc5a2b0e8"
     },
     {
       "path": "report/narrative.md",
@@ -114,7 +114,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "6934db438ea6e351ec39c6334c9c632bceba837b81801bb11ec5987724e6de2d"
+      "sha256": "de18c5f83e7b6502ef70b8f8dbd13adae2c9fcd50927491ea8182dad0d5bdb18"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -155,55 +155,55 @@
       "path": "geometry/buildings.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "05d681645fda7b462435e7e175cfd74b2a63e4b48af46ed483800d91e0db1e57"
+      "sha256": "8d4f5d0b94fa151f57dca3605004ab2fb37edfceea2d07c2d3ffb0dfdf021e88"
     },
     {
       "path": "geometry/constraints.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "d77fe09fc50d64730f8d62d56d56c3e3df324870385a61127cd6e1b90e3a34b1"
+      "sha256": "d56d70d056ac01793f87153332923ab6bffd1199ce3eedde4a3f9339c8ac4ab6"
     },
     {
       "path": "geometry/green_space.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "c97965d5d6de583cad9bbf95d1822643676e548eee7251741356c4ac4470ffa3"
+      "sha256": "38be8315ba755218ced6cc94ce5054399935c32a5b98b2230b2b8b7a7866dd5f"
     },
     {
       "path": "geometry/key_areas.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "4e9a755731c6746d1126482024e2f4c6c3b11203cf9190a2f5fd3e6acc0c95bb"
+      "sha256": "121f9c1174678d7d4a11c4bad6fa1541060f278840b85322a4fe2e90dcc4be6f"
     },
     {
       "path": "geometry/land_use.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "c826a29dfe3016cce1adb2afa983fe582ae2d682242eac18896d993755bcbfbd"
+      "sha256": "cbb97846956b62d22394cb5109d1e07f83c37ea7be77d7defd6e17580a9047e2"
     },
     {
       "path": "geometry/phasing.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "c702b71e6eb66e34fa4a0611eb53bbe78b841cd177fc31c1363ce270915d5c83"
+      "sha256": "fcb07657ad752b0d9c288471cfb9e7ab7e5de73cc426ef527a61d5253c9ed84d"
     },
     {
       "path": "geometry/public_space.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "6764dd1f4f0c1364aa0cdca61d19cd9acd0b0fbf68e3fc74fa69913478e403f3"
+      "sha256": "26a0a88a4a2ccf7e9a7f66dc54946a39a7786f5bac0846c939acbc0a1f696931"
     },
     {
       "path": "geometry/roads.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "18f3618c5c87c0042789cb753a62739bf0a058c4f23bcd96a1c3110f3ba0b120"
+      "sha256": "cfd1d64380ac3f6d234510cf3572605a1f09b9d65d5a93f2d4e836744484b89d"
     },
     {
       "path": "geometry/site_boundary.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "4839158c9a7e4044a94904b4fc912b3d48c83a48fb11726b5d67db5ecd3fd0f9"
+      "sha256": "66b8ab3db46dca00224c0662890a69c1bc0244902aa3390574f1ec20bc4348ff"
     },
     {
       "path": "proposal.en.md",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "5557698a057acf632f6cb5d180a32b83dd0dcd11b8208d07426336676f31619a"
+      "sha256": "e4d52eace7d0d8ea6a9061fa47f5d42e456066f70a2b40071f53e52996601020"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "ef83639a2da9d2019ebe52822f88d7930e79aa81057ee194900290968a0017a7"
+      "sha256": "8b3ff10b5161828c62ab53fda50241c43771b25cb3f52cfe63834d5ab7369dd5"
     },
     {
       "path": "assets/figures/key-areas.en.png",
