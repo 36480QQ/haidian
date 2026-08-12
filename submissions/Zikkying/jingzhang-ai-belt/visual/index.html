@@ -51,7 +51,7 @@
       background:
         radial-gradient(circle at 82% 15%, rgba(21, 154, 136, .34), transparent 27%),
         linear-gradient(135deg, #07182c 0%, var(--brand) 64%, #0d5b61 100%);
-      padding: 30px 0 48px;
+      padding: 24px 0 30px;
     }
     .hero::after {
       content: "";
@@ -80,8 +80,8 @@
       display: grid;
       grid-template-columns: minmax(0, 1.35fr) minmax(280px, .65fr);
       align-items: center;
-      gap: 54px;
-      padding-top: 46px;
+      gap: 38px;
+      padding-top: 24px;
     }
     h1 { margin: 0; font-size: clamp(38px, 6vw, 74px); line-height: 1.08; letter-spacing: -.035em; }
     .en-title { margin-top: 14px; font-size: clamp(16px, 2vw, 23px); letter-spacing: .06em; color: #b9ece4; }
@@ -91,6 +91,14 @@
     .brand-panel { background: rgba(255, 255, 255, .97); border-radius: 22px; padding: 18px; box-shadow: 0 24px 70px rgba(0,0,0,.25); }
     .brand-panel img { display: block; width: 100%; border-radius: 14px; }
     .brand-note { margin: 12px 4px 0; color: #536476; font-size: 12px; }
+    .review-scene-ribbon { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-top: 20px; }
+    .review-scene { position: relative; height: 164px; margin: 0; overflow: hidden; border: 1px solid rgba(255,255,255,.2); border-radius: 16px; background: #07182c; box-shadow: 0 14px 30px rgba(0,0,0,.18); }
+    .review-scene img { display: block; width: 100%; height: 100%; object-fit: cover; }
+    .review-scene::after { content: ""; position: absolute; inset: 36% 0 0; background: linear-gradient(transparent, rgba(3,14,27,.88)); }
+    .review-scene figcaption { position: absolute; z-index: 1; left: 14px; right: 14px; bottom: 10px; color: #fff; }
+    .review-scene strong, .review-scene span { display: block; }
+    .review-scene strong { font-size: 15px; }
+    .review-scene span { margin-top: 1px; color: rgba(255,255,255,.76); font-size: 10px; }
     nav { position: sticky; top: 0; z-index: 10; background: rgba(245,243,237,.96); border-bottom: 1px solid rgba(18,58,99,.12); backdrop-filter: blur(12px); }
     nav .wrap { display: flex; gap: 6px; overflow-x: auto; padding-top: 10px; padding-bottom: 10px; }
     nav a { flex: 0 0 auto; padding: 6px 10px; border-radius: 8px; text-decoration: none; color: var(--brand); font-size: 13px; font-weight: 700; }
@@ -98,6 +106,25 @@
     main { overflow: hidden; }
     section { padding: 72px 0; }
     section:nth-child(even) { background: rgba(255, 255, 255, .58); }
+    .review-snapshot { padding: 32px 0 36px; background: linear-gradient(180deg, #eef3f2 0%, #f5f3ed 100%); }
+    .review-snapshot-shell { padding: 22px; border: 1px solid #cfdadd; border-radius: 22px; background: rgba(255,255,255,.92); box-shadow: 0 16px 44px rgba(10,34,61,.08); }
+    .review-snapshot-head { display: flex; align-items: end; justify-content: space-between; gap: 28px; margin-bottom: 15px; }
+    .review-snapshot-head h2 { font-size: 30px; }
+    .review-snapshot-head p { max-width: 620px; color: var(--muted); font-size: 13px; }
+    .review-proof-grid { display: grid; grid-template-columns: 1.08fr .92fr; gap: 12px; }
+    .review-proof-panel { padding: 13px; border: 1px solid #d3dde1; border-radius: 14px; background: #fff; }
+    .review-panel-label { display: block; color: var(--teal); font-size: 11px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+    .review-spatial-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 9px; margin-top: 8px; }
+    .review-spatial-grid figure { margin: 0; overflow: hidden; border: 1px solid #dbe2e5; border-radius: 10px; background: var(--navy); }
+    .review-spatial-grid img { display: block; width: 100%; height: 176px; object-fit: contain; }
+    .review-spatial-grid figcaption { padding: 5px 8px; color: #5b6974; background: #fff; font-size: 10px; }
+    .review-proof-stack { display: grid; gap: 12px; }
+    .review-rubric-strip { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 9px; }
+    .review-rubric-item { padding: 5px 7px; border-radius: 7px; color: #24465e; background: #e6efef; font-size: 10px; font-weight: 700; }
+    .review-gate-strip { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 6px; margin-top: 9px; }
+    .review-gate { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 8px; border-radius: 8px; background: #e8f4ee; color: #245b48; font-size: 10px; }
+    .review-gate b { color: #176c50; font-size: 9px; letter-spacing: .04em; }
+    .review-boundary { margin-top: 12px; padding: 8px 10px; border: 1px solid #e5c78f; border-radius: 9px; color: #74501c; background: #fff7e8; font-size: 10px; font-weight: 750; }
     .section-head { display: grid; grid-template-columns: minmax(0, 1fr) minmax(250px, 420px); gap: 30px; align-items: end; margin-bottom: 30px; }
     .kicker { display: block; margin-bottom: 8px; color: var(--teal); font-size: 12px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; }
     h2 { margin: 0; color: var(--navy); font-size: clamp(28px, 4vw, 44px); line-height: 1.16; letter-spacing: -.025em; }
@@ -175,6 +202,7 @@
       .g3, .g4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .hero-figure img { height: 560px; }
       .process { grid-template-columns: repeat(2, 1fr); }
+      .review-proof-grid { grid-template-columns: 1fr; }
     }
     @media (max-width: 640px) {
       .wrap { width: min(100% - 26px, 1180px); }
@@ -182,6 +210,10 @@
       .g2, .g3, .g4, .process { grid-template-columns: 1fr; }
       .hero { padding-top: 20px; }
       .hero-grid { gap: 28px; padding-top: 32px; }
+      .review-scene-ribbon { grid-template-columns: 1fr; }
+      .review-scene { height: 210px; }
+      .review-snapshot-head { align-items: start; flex-direction: column; gap: 8px; }
+      .review-spatial-grid { grid-template-columns: 1fr; }
       .hero-figure img, .figure-card img { height: auto; max-height: 640px; }
       .figure-copy { padding: 22px; }
       .footer-row { flex-direction: column; }
@@ -214,6 +246,11 @@
           <p class="brand-note">双线代表轨距记忆与开放数据流，人字折线汇聚于“AI 原点”。标志不是运营铁路标识；线形仅作为历史工程精神转向开源智能的抽象视觉语言。</p>
         </aside>
       </div>
+      <div class="review-scene-ribbon" aria-label="三处高端商务科技场景">
+        <figure class="review-scene"><img src="../assets/media/scene-zhongzhiyuan.jpg" alt="众智园研发总部高级商务科技场景"><figcaption><strong>众智园</strong><span>研发总部 · 全栈之谷</span></figcaption></figure>
+        <figure class="review-scene"><img src="../assets/media/scene-ai-origin-community.jpg" alt="北京 AI 原点社区国际协作高级商务科技场景"><figcaption><strong>北京 AI 原点社区</strong><span>国际协作 · 开源街坊</span></figcaption></figure>
+        <figure class="review-scene"><img src="../assets/media/scene-dazhongsi.jpg" alt="大钟寺发布投资高级商务科技场景"><figcaption><strong>大钟寺</strong><span>发布投资 · 智能商都</span></figcaption></figure>
+      </div>
     </div>
   </header>
 
@@ -233,6 +270,38 @@
   </nav>
 
   <main id="main">
+    <section id="review-snapshot" class="review-snapshot">
+      <div class="wrap review-snapshot-shell">
+        <div class="review-snapshot-head">
+          <div><span class="kicker">FIRST-VIEWPORT EVIDENCE</span><h2>执行摘要与评审证据</h2></div>
+          <p>一轴三核、双环多点；10+3 个有边界场景；六层 AI 全栈；G0—G4 可撤回实施门。首屏只陈述包内证据与本地门禁，官方评审属于外部状态。</p>
+        </div>
+        <div class="review-proof-grid">
+          <div class="review-proof-panel">
+            <span class="review-panel-label">SPATIAL EVIDENCE · 总平 / 空间证据</span>
+            <div class="review-spatial-grid">
+              <figure><img src="../assets/figures/site-overview.png" alt="京张智源带总平智轴与三核结构"><figcaption>总平智轴 · 一轴三核双环多点</figcaption></figure>
+              <figure><img src="../assets/figures/key-areas.png" alt="众智园、北京 AI 原点社区和大钟寺三核空间策略"><figcaption>三核空间 · 差异化策略与共同底盘</figcaption></figure>
+            </div>
+          </div>
+          <div class="review-proof-stack">
+            <div class="review-proof-panel">
+              <span class="review-panel-label">SEVEN-DIMENSION EVIDENCE · 七维证据</span>
+              <div class="review-rubric-strip">
+                <span class="review-rubric-item">任务书相关性</span><span class="review-rubric-item">原创性</span><span class="review-rubric-item">AI 与规划创新</span><span class="review-rubric-item">可实施性</span><span class="review-rubric-item">公共利益与包容</span><span class="review-rubric-item">风险与合规</span><span class="review-rubric-item">表达完整度</span>
+              </div>
+            </div>
+            <div class="review-proof-panel">
+              <span class="review-panel-label">FOUR LOCAL GATES · 本地四门</span>
+              <div class="review-gate-strip">
+                <div class="review-gate"><span>确定性</span><b>LOCAL PASS</b></div><div class="review-gate"><span>空间</span><b>LOCAL PASS</b></div><div class="review-gate"><span>视觉</span><b>LOCAL PASS</b></div><div class="review-gate"><span>专业证据</span><b>LOCAL PASS</b></div>
+              </div>
+              <div class="review-boundary">LOCAL GATES PASS · 官方评审由仓库外部流程决定 · 概念建议 · 粗略替代边界</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section id="overview">
       <div class="wrap">
         <div class="section-head">

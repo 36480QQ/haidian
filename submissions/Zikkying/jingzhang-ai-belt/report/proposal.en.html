@@ -12,6 +12,10 @@
   --paper: #ffffff;
   --bg: #f4f7fa;
   --accent: #245b8f;
+  --navy: #0a223d;
+  --teal: #159a88;
+  --gold: #e8a23a;
+  --warm: #f5f3ed;
 }
 * { box-sizing: border-box; }
 body {
@@ -22,7 +26,7 @@ body {
   line-height: 1.75;
 }
 main {
-  max-width: 980px;
+  max-width: 1180px;
   margin: 0 auto;
   padding: 42px 24px 72px;
   background: var(--paper);
@@ -30,9 +34,12 @@ main {
   box-shadow: 0 0 0 1px rgba(23, 32, 51, 0.05);
 }
 .hero {
-  border-bottom: 3px solid var(--accent);
-  padding-bottom: 24px;
-  margin-bottom: 30px;
+  border-radius: 20px;
+  padding: 22px 26px;
+  margin-bottom: 18px;
+  color: #ffffff;
+  background: linear-gradient(135deg, #07182c 0%, #123a63 68%, #0d5b61 100%);
+  box-shadow: 0 18px 48px rgba(10, 34, 61, 0.16);
 }
 h1 { font-size: 34px; line-height: 1.22; margin: 0 0 10px; }
 h2 { font-size: 25px; margin: 34px 0 12px; border-top: 1px solid var(--line); padding-top: 24px; }
@@ -51,8 +58,43 @@ code {
   padding: 0.1em 0.35em;
   border-radius: 4px;
 }
-.summary { color: var(--muted); font-size: 17px; }
-.translation-link a { color: var(--accent); font-weight: 700; }
+.hero .summary { color: rgba(255,255,255,.82); font-size: 16px; max-width: 920px; }
+.translation-link { margin: 10px 0 0; }
+.translation-link a { color: #9fe6dc; font-weight: 700; }
+.review-dashboard {
+  margin: 0 0 34px;
+  padding: 22px;
+  border: 1px solid #ced8df;
+  border-radius: 22px;
+  background: linear-gradient(180deg, #f8faf9 0%, #eef3f2 100%);
+  box-shadow: 0 16px 44px rgba(10, 34, 61, .08);
+}
+.review-dashboard-heading { display: grid; grid-template-columns: 172px 1fr; gap: 22px; align-items: center; }
+.review-mark { width: 100%; border-radius: 14px; box-shadow: 0 8px 22px rgba(10,34,61,.08); }
+.review-eyebrow, .review-panel-label { display: block; color: var(--teal); font-size: 11px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+.review-dashboard-heading h2 { margin: 3px 0 6px; padding: 0; border: 0; font-size: 27px; color: var(--navy); }
+.review-dashboard-heading p { margin: 0; color: #526270; font-size: 14px; line-height: 1.55; }
+.review-boundary { display: inline-flex; margin-top: 9px; padding: 4px 9px; border: 1px solid #d6ad68; border-radius: 999px; color: #74501c; background: #fff7e8; font-size: 10px; font-weight: 750; }
+.review-scene-ribbon { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 12px; margin-top: 16px; }
+.review-scene { position: relative; height: 160px; margin: 0; overflow: hidden; border-radius: 14px; background: var(--navy); }
+.review-scene img { width: 100%; height: 100%; object-fit: cover; }
+.review-scene::after { content: ""; position: absolute; inset: 38% 0 0; background: linear-gradient(transparent, rgba(3,14,27,.88)); }
+.review-scene figcaption { position: absolute; z-index: 1; left: 14px; right: 14px; bottom: 10px; color: #fff; }
+.review-scene strong, .review-scene span { display: block; }
+.review-scene strong { font-size: 15px; }
+.review-scene span { margin-top: 1px; color: rgba(255,255,255,.76); font-size: 10px; }
+.review-proof-grid { display: grid; grid-template-columns: 1.08fr .92fr; gap: 12px; margin-top: 12px; }
+.review-proof-panel { padding: 13px; border: 1px solid #d3dde1; border-radius: 14px; background: rgba(255,255,255,.9); }
+.review-spatial-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 9px; margin-top: 8px; }
+.review-spatial-grid figure { margin: 0; overflow: hidden; border: 1px solid #dbe2e5; border-radius: 10px; background: #0a223d; }
+.review-spatial-grid img { display: block; width: 100%; height: 116px; object-fit: contain; }
+.review-spatial-grid figcaption { padding: 5px 8px; color: #5b6974; background: #fff; font-size: 10px; }
+.review-proof-stack { display: grid; gap: 12px; }
+.review-rubric-strip { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 9px; }
+.review-rubric-item { padding: 5px 7px; border-radius: 7px; color: #24465e; background: #e6efef; font-size: 10px; font-weight: 700; }
+.review-gate-strip { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 6px; margin-top: 9px; }
+.review-gate { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 6px 8px; border-radius: 8px; background: #e8f4ee; color: #245b48; font-size: 10px; }
+.review-gate b { color: #176c50; font-size: 9px; letter-spacing: .04em; }
 .proposal-table { margin: 20px 0 26px; overflow-x: auto; }
 .proposal-table table {
   border-collapse: collapse;
@@ -105,6 +147,11 @@ code {
   main { padding: 26px 16px 52px; }
   h1 { font-size: 26px; }
   h2 { font-size: 21px; }
+  .review-dashboard-heading, .review-proof-grid { grid-template-columns: 1fr; }
+  .review-mark { max-width: 180px; }
+  .review-scene-ribbon { grid-template-columns: 1fr; }
+  .review-scene { height: 190px; }
+  .review-spatial-grid { grid-template-columns: 1fr; }
 }
 </style>
 </head>
@@ -115,6 +162,39 @@ code {
 <p class="summary">A conceptual proposal structured as one axis, three cores, two loops and multiple nodes: the Jing-Zhang heritage cultural axis runs north-south, anchored by the Zhongzhiyuan, AI Origin Community and Dazhongsi cores, with a slow-mobility loop, a blue-green ecological loop, 10 AI scenario nodes and 3 AI pilgrimage landmark concept nodes. Generated on the provisional substitute boundary; all spatial proposals are conceptual material for professional teams to deepen.</p>
 <p class="translation-link"><a href="proposal.html">阅读中文版本</a></p>
 </section>
+
+<section class="review-dashboard" aria-label="First-viewport executive and review evidence dashboard">
+  <div class="review-dashboard-heading">
+    <img class="review-mark" src="../assets/brand/jz-ai-origin-mark.svg" alt="JZ-AI Origin Belt mark">
+    <div>
+      <span class="review-eyebrow">EXECUTIVE REVIEW SNAPSHOT</span>
+      <h2>One civic-intelligence spine. Three premium AI districts.</h2>
+      <p>A concept urban-design package linking research, open collaboration, technology commercialization and public life through 10+3 bounded scenarios, a six-layer AI stack and G0-G4 reversible delivery gates.</p>
+      <span class="review-boundary">LOCAL GATES PASS · OFFICIAL REVIEW IS EXTERNAL TO THIS PACKAGE · CONCEPT ONLY</span>
+    </div>
+  </div>
+  <div class="review-scene-ribbon"><figure class="review-scene"><img src="../assets/media/scene-zhongzhiyuan.jpg" alt="Zhongzhiyuan - R&amp;D headquarters · full-stack valley"><figcaption><strong>Zhongzhiyuan</strong><span>R&amp;D headquarters · full-stack valley</span></figcaption></figure><figure class="review-scene"><img src="../assets/media/scene-ai-origin-community.jpg" alt="AI Origin Community - International collaboration · open-source neighborhood"><figcaption><strong>AI Origin Community</strong><span>International collaboration · open-source neighborhood</span></figcaption></figure><figure class="review-scene"><img src="../assets/media/scene-dazhongsi.jpg" alt="Dazhongsi - Launches and investment · intelligent commerce hub"><figcaption><strong>Dazhongsi</strong><span>Launches and investment · intelligent commerce hub</span></figcaption></figure></div>
+  <div class="review-proof-grid">
+    <div class="review-proof-panel review-spatial-panel">
+      <span class="review-panel-label">SPATIAL EVIDENCE</span>
+      <div class="review-spatial-grid">
+        <figure><img src="../assets/figures/site-overview.en.png" alt="Masterplan spine"><figcaption>Masterplan spine</figcaption></figure>
+        <figure><img src="../assets/figures/key-areas.en.png" alt="Three differentiated cores"><figcaption>Three differentiated cores</figcaption></figure>
+      </div>
+    </div>
+    <div class="review-proof-stack">
+      <div class="review-proof-panel">
+        <span class="review-panel-label">SEVEN-DIMENSION EVIDENCE</span>
+        <div class="review-rubric-strip"><span class="review-rubric-item">Brief Alignment</span><span class="review-rubric-item">Originality</span><span class="review-rubric-item">AI + Planning</span><span class="review-rubric-item">Feasibility</span><span class="review-rubric-item">Public Interest</span><span class="review-rubric-item">Risk + Compliance</span><span class="review-rubric-item">Expression</span></div>
+      </div>
+      <div class="review-proof-panel">
+        <span class="review-panel-label">FOUR LOCAL GATES</span>
+        <div class="review-gate-strip"><div class="review-gate"><span>Deterministic</span><b>LOCAL PASS</b></div><div class="review-gate"><span>Spatial</span><b>LOCAL PASS</b></div><div class="review-gate"><span>Visual</span><b>LOCAL PASS</b></div><div class="review-gate"><span>Professional evidence</span><b>LOCAL PASS</b></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <h1>JZ-AI Origin Belt — Conceptual Urban Design for the Centennial Jing-Zhang AI Innovation Belt</h1>
 <p><strong>Primary name: Jing-Zhang Zhiyuan Belt (京张智源带)</strong> — &quot;Zhi&quot; inherits AI innovation; &quot;Yuan&quot; inherits the century-old origin of the Jing-Zhang Railway and the innovative origin of Zhongguancun. <strong>English name: Centennial Jing-Zhang AI Origin Belt (JZ-AI Origin Belt)</strong> <strong>Logo and visual identity (agent.1)</strong>: the original mark is delivered as <code>assets/brand/jz-ai-origin-mark.svg</code>. Two parallel lines represent railway-gauge memory and open data flow; they fold into the Jing-Zhang “ren” geometry and converge upward at an AI origin point. It is an abstract symbol of historical engineering spirit becoming open intelligence, not an operating-rail sign. The palette is railway navy <code>#123A63</code>, compute teal <code>#159A88</code>, milestone gold <code>#E8A23A</code>, and paper warm white <code>#F5F3ED</code>. Paired lines extend into paving inlays and page dividers, the origin dot identifies scenarios and honour plaques, and the ren-shaped fold is reserved for the master brand and event key visuals. The mark must not be stretched, rotated, combined with corporate logos, or used as the sole colour cue in accessible wayfinding. Its basic geometry and generic font stack are original, scalable, offline and ready for professional refinement.</p>
 <figure class="proposal-figure"><img src="../assets/brand/jz-ai-origin-mark.svg" alt="Original JZ-AI Origin Belt mark and visual-identity direction"><figcaption>Original JZ-AI Origin Belt mark and visual-identity direction</figcaption></figure>

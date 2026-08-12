@@ -12,6 +12,10 @@
   --paper: #ffffff;
   --bg: #f4f7fa;
   --accent: #245b8f;
+  --navy: #0a223d;
+  --teal: #159a88;
+  --gold: #e8a23a;
+  --warm: #f5f3ed;
 }
 * { box-sizing: border-box; }
 body {
@@ -22,7 +26,7 @@ body {
   line-height: 1.75;
 }
 main {
-  max-width: 980px;
+  max-width: 1180px;
   margin: 0 auto;
   padding: 42px 24px 72px;
   background: var(--paper);
@@ -30,9 +34,12 @@ main {
   box-shadow: 0 0 0 1px rgba(23, 32, 51, 0.05);
 }
 .hero {
-  border-bottom: 3px solid var(--accent);
-  padding-bottom: 24px;
-  margin-bottom: 30px;
+  border-radius: 20px;
+  padding: 22px 26px;
+  margin-bottom: 18px;
+  color: #ffffff;
+  background: linear-gradient(135deg, #07182c 0%, #123a63 68%, #0d5b61 100%);
+  box-shadow: 0 18px 48px rgba(10, 34, 61, 0.16);
 }
 h1 { font-size: 34px; line-height: 1.22; margin: 0 0 10px; }
 h2 { font-size: 25px; margin: 34px 0 12px; border-top: 1px solid var(--line); padding-top: 24px; }
@@ -51,8 +58,43 @@ code {
   padding: 0.1em 0.35em;
   border-radius: 4px;
 }
-.summary { color: var(--muted); font-size: 17px; }
-.translation-link a { color: var(--accent); font-weight: 700; }
+.hero .summary { color: rgba(255,255,255,.82); font-size: 16px; max-width: 920px; }
+.translation-link { margin: 10px 0 0; }
+.translation-link a { color: #9fe6dc; font-weight: 700; }
+.review-dashboard {
+  margin: 0 0 34px;
+  padding: 22px;
+  border: 1px solid #ced8df;
+  border-radius: 22px;
+  background: linear-gradient(180deg, #f8faf9 0%, #eef3f2 100%);
+  box-shadow: 0 16px 44px rgba(10, 34, 61, .08);
+}
+.review-dashboard-heading { display: grid; grid-template-columns: 172px 1fr; gap: 22px; align-items: center; }
+.review-mark { width: 100%; border-radius: 14px; box-shadow: 0 8px 22px rgba(10,34,61,.08); }
+.review-eyebrow, .review-panel-label { display: block; color: var(--teal); font-size: 11px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+.review-dashboard-heading h2 { margin: 3px 0 6px; padding: 0; border: 0; font-size: 27px; color: var(--navy); }
+.review-dashboard-heading p { margin: 0; color: #526270; font-size: 14px; line-height: 1.55; }
+.review-boundary { display: inline-flex; margin-top: 9px; padding: 4px 9px; border: 1px solid #d6ad68; border-radius: 999px; color: #74501c; background: #fff7e8; font-size: 10px; font-weight: 750; }
+.review-scene-ribbon { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 12px; margin-top: 16px; }
+.review-scene { position: relative; height: 160px; margin: 0; overflow: hidden; border-radius: 14px; background: var(--navy); }
+.review-scene img { width: 100%; height: 100%; object-fit: cover; }
+.review-scene::after { content: ""; position: absolute; inset: 38% 0 0; background: linear-gradient(transparent, rgba(3,14,27,.88)); }
+.review-scene figcaption { position: absolute; z-index: 1; left: 14px; right: 14px; bottom: 10px; color: #fff; }
+.review-scene strong, .review-scene span { display: block; }
+.review-scene strong { font-size: 15px; }
+.review-scene span { margin-top: 1px; color: rgba(255,255,255,.76); font-size: 10px; }
+.review-proof-grid { display: grid; grid-template-columns: 1.08fr .92fr; gap: 12px; margin-top: 12px; }
+.review-proof-panel { padding: 13px; border: 1px solid #d3dde1; border-radius: 14px; background: rgba(255,255,255,.9); }
+.review-spatial-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 9px; margin-top: 8px; }
+.review-spatial-grid figure { margin: 0; overflow: hidden; border: 1px solid #dbe2e5; border-radius: 10px; background: #0a223d; }
+.review-spatial-grid img { display: block; width: 100%; height: 116px; object-fit: contain; }
+.review-spatial-grid figcaption { padding: 5px 8px; color: #5b6974; background: #fff; font-size: 10px; }
+.review-proof-stack { display: grid; gap: 12px; }
+.review-rubric-strip { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 9px; }
+.review-rubric-item { padding: 5px 7px; border-radius: 7px; color: #24465e; background: #e6efef; font-size: 10px; font-weight: 700; }
+.review-gate-strip { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 6px; margin-top: 9px; }
+.review-gate { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 6px 8px; border-radius: 8px; background: #e8f4ee; color: #245b48; font-size: 10px; }
+.review-gate b { color: #176c50; font-size: 9px; letter-spacing: .04em; }
 .proposal-table { margin: 20px 0 26px; overflow-x: auto; }
 .proposal-table table {
   border-collapse: collapse;
@@ -105,6 +147,11 @@ code {
   main { padding: 26px 16px 52px; }
   h1 { font-size: 26px; }
   h2 { font-size: 21px; }
+  .review-dashboard-heading, .review-proof-grid { grid-template-columns: 1fr; }
+  .review-mark { max-width: 180px; }
+  .review-scene-ribbon { grid-template-columns: 1fr; }
+  .review-scene { height: 190px; }
+  .review-spatial-grid { grid-template-columns: 1fr; }
 }
 </style>
 </head>
@@ -115,6 +162,39 @@ code {
 <p class="summary">以“一轴三核、双环多点”为空间骨架的百年京张AI创新带概念方案：京张遗址文化智轴南北贯通，众智园、北京AI原点社区、大钟寺三核锚定，慢行活力环与蓝绿生态环复合，10 个 AI 场景节点与 3 处朝圣地标概念节点沿线布局。方案基于场地包粗略替代边界生成，全部空间建议为概念方案，供专业团队深化研究。</p>
 <p class="translation-link"><a href="proposal.en.html">Read in English</a></p>
 </section>
+
+<section class="review-dashboard" aria-label="首屏执行摘要与评审证据驾驶舱">
+  <div class="review-dashboard-heading">
+    <img class="review-mark" src="../assets/brand/jz-ai-origin-mark.svg" alt="JZ-AI Origin Belt mark">
+    <div>
+      <span class="review-eyebrow">EXECUTIVE REVIEW SNAPSHOT · 首屏评审摘要</span>
+      <h2>一条城市公共智轴，三处高端 AI 创新城区</h2>
+      <p>以 10+3 个有边界场景、六层 AI 全栈和 G0—G4 可撤回实施门，把科研策源、开源协作、成果转化与公共生活组织成可核验的城市设计概念方案。</p>
+      <span class="review-boundary">LOCAL GATES PASS · 官方评审由仓库外部流程决定 · 概念建议</span>
+    </div>
+  </div>
+  <div class="review-scene-ribbon"><figure class="review-scene"><img src="../assets/media/scene-zhongzhiyuan.jpg" alt="众智园 - 研发总部 · 全栈之谷"><figcaption><strong>众智园</strong><span>研发总部 · 全栈之谷</span></figcaption></figure><figure class="review-scene"><img src="../assets/media/scene-ai-origin-community.jpg" alt="北京 AI 原点社区 - 国际协作 · 开源街坊"><figcaption><strong>北京 AI 原点社区</strong><span>国际协作 · 开源街坊</span></figcaption></figure><figure class="review-scene"><img src="../assets/media/scene-dazhongsi.jpg" alt="大钟寺 - 发布投资 · 智能商都"><figcaption><strong>大钟寺</strong><span>发布投资 · 智能商都</span></figcaption></figure></div>
+  <div class="review-proof-grid">
+    <div class="review-proof-panel review-spatial-panel">
+      <span class="review-panel-label">SPATIAL EVIDENCE · 空间证据</span>
+      <div class="review-spatial-grid">
+        <figure><img src="../assets/figures/site-overview.png" alt="总平智轴"><figcaption>总平智轴</figcaption></figure>
+        <figure><img src="../assets/figures/key-areas.png" alt="三核差异化策略"><figcaption>三核差异化策略</figcaption></figure>
+      </div>
+    </div>
+    <div class="review-proof-stack">
+      <div class="review-proof-panel">
+        <span class="review-panel-label">SEVEN-DIMENSION EVIDENCE · 七维证据</span>
+        <div class="review-rubric-strip"><span class="review-rubric-item">任务书相关性</span><span class="review-rubric-item">原创性</span><span class="review-rubric-item">AI 与规划创新</span><span class="review-rubric-item">可实施性</span><span class="review-rubric-item">公共利益与包容</span><span class="review-rubric-item">风险与合规</span><span class="review-rubric-item">表达完整度</span></div>
+      </div>
+      <div class="review-proof-panel">
+        <span class="review-panel-label">FOUR LOCAL GATES · 本地四门</span>
+        <div class="review-gate-strip"><div class="review-gate"><span>确定性</span><b>LOCAL PASS</b></div><div class="review-gate"><span>空间</span><b>LOCAL PASS</b></div><div class="review-gate"><span>视觉</span><b>LOCAL PASS</b></div><div class="review-gate"><span>专业证据</span><b>LOCAL PASS</b></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <h1>京张智源带——百年京张AI创新带城市设计概念方案</h1>
 <p><strong>主名称：京张智源带</strong>（“智”承 AI 创新，“源”承京张铁路百年之源与中关村创新之源） <strong>英文名称：Centennial Jing-Zhang AI Origin Belt（简称 JZ-AI Origin Belt）</strong> <strong>Logo 与视觉识别系统（agent.1）</strong>：原创标志见 <code>assets/brand/jz-ai-origin-mark.svg</code>。两条平行线分别代表铁路轨距记忆与开放数据流，在中心折成京张“人”字形并向上汇聚为“AI 原点”；这不是运营铁路标识，而是从历史工程精神通向开源智能的抽象符号。主色为铁路黛蓝 <code>#123A63</code>、算力青绿 <code>#159A88</code>，原点使用里程金 <code>#E8A23A</code>，底色为纸张暖白 <code>#F5F3ED</code>。双线延展为铺装嵌条与页面分隔，圆点用于场景编号与荣誉铭牌，人字折线只用于整体品牌和活动主视觉；不得拉伸、旋转、添加企业 Logo，或在无障碍导视中仅靠颜色传意。SVG 采用基础几何和通用字体栈原创构成，可缩放、离线显示并供专业团队深化。</p>
 <figure class="proposal-figure"><img src="../assets/brand/jz-ai-origin-mark.svg" alt="京张智源带原创标志与视觉识别方向"><figcaption>京张智源带原创标志与视觉识别方向</figcaption></figure>
