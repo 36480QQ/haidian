@@ -3215,11 +3215,44 @@ class SubmissionWorkflowTests(unittest.TestCase):
             self.update_json(
                 root,
                 f"{base}/design_depth_matrix.json",
-                lambda data: data["items"][0].update({"status": "data_gap"}),
+                lambda data: data["items"][0].update({"status": "incomplete"}),
             )
             report = validate_submission(root, "alice", changed)
             self.assertFalse(report.ok)
             self.assertIn("formal design depth item status must be complete", "\n".join(report.errors))
+
+    def test_data_gap_design_depth_is_accepted_with_machine_readable_limiter(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            base = "submissions/alice/ai-urban-loop"
+            changed = self.write_minimal_ai_package(root, base)
+            self.update_json(
+                root,
+                f"{base}/design_depth_matrix.json",
+                lambda data: data["items"][0].update(
+                    {"status": "data_gap", "limited_by": ["site_area_sqm"]}
+                ),
+            )
+            report = validate_submission(root, "alice", changed)
+
+        self.assertTrue(report.ok, report.errors)
+
+    def test_data_gap_design_depth_requires_known_limiter(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            base = "submissions/alice/ai-urban-loop"
+            changed = self.write_minimal_ai_package(root, base)
+            self.update_json(
+                root,
+                f"{base}/design_depth_matrix.json",
+                lambda data: data["items"][0].update(
+                    {"status": "data_gap", "limited_by": ["unregistered-control"]}
+                ),
+            )
+            report = validate_submission(root, "alice", changed)
+
+        self.assertFalse(report.ok)
+        self.assertIn("limited_by must reference metrics.json or sources.json IDs", "\n".join(report.errors))
 
     def test_proposal_missing_evidence_references_fails(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:

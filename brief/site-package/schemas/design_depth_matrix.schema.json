@@ -33,6 +33,22 @@
           "evidence_summary_zh"
         ],
         "additionalProperties": true,
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "status": {
+                  "const": "data_gap"
+                }
+              }
+            },
+            "then": {
+              "required": [
+                "limited_by"
+              ]
+            }
+          }
+        ],
         "properties": {
           "item_id": {
             "type": "string",
@@ -55,6 +71,10 @@
               "incomplete",
               "data_gap"
             ]
+          },
+          "limited_by": {
+            "$ref": "#/$defs/nonEmptyStringArray",
+            "uniqueItems": true
           },
           "proposal_sections": {
             "$ref": "#/$defs/nonEmptyStringArray"
