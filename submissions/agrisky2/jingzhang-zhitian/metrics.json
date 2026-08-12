@@ -63,26 +63,27 @@
     },
     "green_space_ratio": {
       "status": "known",
-      "value": 0.285,
+      "value": 0.259847,
       "unit": "ratio",
       "source_files": [
         "geometry/green_space.geojson",
         "geometry/site_boundary.geojson"
       ],
-      "formula": "sum(green_space_area_sqm) / site_total_area_sqm",
+      "formula": "green_space_area / site_area",
       "confidence": "low",
       "assumptions": [
-        "Design concept green space; actual ratio depends on regulatory plan"
+        "Design concept green space"
       ]
     },
     "public_space_ratio": {
       "status": "known",
-      "value": 0.082,
+      "value": 0.030757,
       "unit": "ratio",
       "source_files": [
-        "geometry/public_space.geojson"
+        "geometry/public_space.geojson",
+        "geometry/site_boundary.geojson"
       ],
-      "formula": "sum(public_space_area) / site_total_area",
+      "formula": "public_space_area / site_area",
       "confidence": "low",
       "assumptions": [
         "Design concept only"
@@ -194,6 +195,72 @@
         "FAR values are concept suggestions only"
       ],
       "reason": "Actual GFA depends on regulatory plan conditions not yet available"
+    },
+    "site_area_sqm": {
+      "status": "known",
+      "value": 11412825.386,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "EPSG:4548 area of overall_design_area polygon",
+      "confidence": "low",
+      "assumptions": [
+        "Provisional boundary used; official polygon not yet available"
+      ]
+    },
+    "green_space_area_sqm": {
+      "status": "known",
+      "value": 2965586.395,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/green_space.geojson"
+      ],
+      "formula": "sum of green space polygon areas (EPSG:4548)",
+      "confidence": "low",
+      "assumptions": [
+        "Design concept green space; actual ratio depends on regulatory plan"
+      ]
+    },
+    "public_space_area_sqm": {
+      "status": "known",
+      "value": 351028.707,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/public_space.geojson"
+      ],
+      "formula": "sum of public space polygon areas (EPSG:4548)",
+      "confidence": "low",
+      "assumptions": [
+        "Design concept only"
+      ]
+    },
+    "building_footprint_area_sqm": {
+      "status": "known",
+      "value": 2118385.755,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/buildings.geojson"
+      ],
+      "formula": "sum of building footprint polygon areas (EPSG:4548)",
+      "confidence": "low",
+      "assumptions": [
+        "Conceptual massing only"
+      ]
+    },
+    "green_ratio": {
+      "status": "known",
+      "value": 0.259847,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/green_space.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "green_space_area / site_area",
+      "confidence": "low",
+      "assumptions": [
+        "Design concept green space"
+      ]
     }
   }
 }
