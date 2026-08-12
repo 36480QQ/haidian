@@ -69,6 +69,21 @@ Three key areas are mandatory; this proposal deepens them as "three hubs" to com
 
 ![Key areas index and design task map](assets/figures/key-areas.en.png)
 
+## Global AI Innovation District Case Comparison and Mechanism Reference
+
+To demonstrate how the KM-0 "university breeding - open-source collaboration - enterprise conversion - public experience - international communication" innovation chain and the three-core / two-wing spatial structure compares internationally, this proposal draws mechanism-level comparisons with six publicly verifiable urban AI innovation districts. Comparisons are concept-level mechanism references only; all area, positioning, and facility statements are background context and do not fabricate enterprises, investment amounts, output values, or fiscal commitments, nor do they constitute local approval basis [source:AGENT-TASKBOOK].
+
+| Case | Public positioning (background) | Transferable mechanism | Implication for KM-0 |
+| --- | --- | --- | --- |
+| Singapore Jurong Lake District | Government-announced smart urban regeneration district emphasizing self-contained living-working-recreation | Green corridor linkage, public-space-first phased rolling development | Use public space and slow-traffic priority as the first intervention linking Dazhongsi and the ruins park |
+| Boston Kendall Square (USA) | Publicly described as "the most innovative square mile on earth", university-enterprise proximity | Campus-district close collaboration, cluster of conversion buildings | Supports the university-industry distance argument for the origin community "near-campus conversion street" |
+| London Tech City / Shoreditch (UK) | Government-supported digital industry cluster driven by urban regeneration | Adaptive reuse of stock buildings into maker spaces, community-enterprise symbiosis | Supports the retain-renovate-rebuild logic for low-efficiency space along the rail corridor |
+| Shanghai Zhangjiang Science City (China) | Publicly planned as a comprehensive science city | Large-scale facilities, R&D agglomeration, mixed supporting functions | Supports functional mixing of the Zhongzhiyuan "full-stack autonomous innovation block" |
+| Hangzhou Yunqi Town (China) | Publicly promoted as a cloud-computing and digital industry town | Convention-industry-community linkage, annual developer conference branding | Supports the global AI activity week and developer community operation mechanism |
+| Shenzhen Bay, Nanshan (China) | Publicly reported as coexisting high-tech industry and waterfront public space | High-intensity industry zone co-located with waterfront public open space | Supports the blue-green public space overlay on the Qingshui riverfront beside dense industry |
+
+All cases serve as "mechanism and spatial pattern" concept references and involve no undisclosed data. The KM-0 naming, milestone system, and event system remain conceptual proposals; any adoption must be verified by professional teams against local ownership, planning controls, and investment conditions during formal development [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
+
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
 The proposal builds spatial demand profiles for AI talent and enterprises covering R&D offices, OSS collaboration, launches, enterprise services, talent housing, social learning, consumption, sports and international exchange [source:AGENT-TASKBOOK]. AI+ scenarios follow the announced directions of transport, services, consumption, medical care, education, law and daily life; each scenario states its served audience, spatial location, data sources, privacy boundary, human-review mechanism and operating entity [depth:ai_scenario_governance].
@@ -83,6 +98,25 @@ The proposal builds spatial demand profiles for AI talent and enterprises coveri
 
 The proposal provides at least 10 AI scenario cards [depth:ai_scenario_cards]: 01 OSS Launch Hall (Origin), 02 Safety Sandbox (Zhongzhiyuan), 03 Edge-Compute Station (two wings), 04 AI Slow-Traffic Navigation (whole ridge), 05 Dazhongsi International Roadshow Living Room, 06 Qinghe Low-Carbon Innovation Corridor, 07 Campus Incubator Street, 08 Data-Elements Salon, 09 AI Daily-Life Service Block, 10 Global AI Activity Week Route [data:geometry/public_space.geojson#PUBLIC-KM-00]. At least 3 industry test-and-verification scenarios are included: the open test field (Zhongzhiyuan, dual-track real roadside equipment and simulation), the OSS verification field (Origin, public code contribution and model evaluation), and the international roadshow verification field (Dazhongsi, agent and terminal product launches with interoperability checks). AI governance follows data minimization, open sources, explainability and human review: city agents assist in identifying slow-traffic gaps, public-space heat, facility maintenance, enterprise service demand and event safety risks, but never replace planning approval, profile individuals without authorization, or claim official implementation commitments [scenario:public-safety-operations-review].
 
+## AI Scenario Cards and Scenario-Space-Operation Mapping
+
+The 10 AI scenario cards are expanded with a unified structure: service objects, spatial location, data sources, privacy boundary, human review mechanism, operating entity, and implementation phase. The table below is the scenario card index; each card enters the scenario card library (component library) as a reusable component during formal development [depth:ai_scenario_governance].
+
+| ID | Scenario | Service objects | Spatial anchor | Data sources | Privacy & human review | Operating entity | Phase |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| SC-01 | Open-source publishing hall | Open-source developers | Origin community | Public code contributions, aggregated event statistics | No personal behavior tracking; published content requires human review | Community operation + enterprise co-build | Phase 1 |
+| SC-02 | Governance sandbox | Model vendors, safety agencies | Zhongzhiyuan | Desensitized test data | Minimal test data; outputs require human review | Governance platform operator | Phase 1 |
+| SC-03 | Edge compute station | Startups, local residents | Two-wing nodes | Aggregated energy and compute data | No personal identification; separate authorization required | Energy/compute service provider | Phase 1 |
+| SC-04 | AI slow-traffic navigation | All pedestrians | Full ruins park spine | Aggregated traffic flow, gap detection | No personal location tracking; results require human calibration | City management + enterprise | Phase 1 |
+| SC-05 | International roadshow hall | Enterprise visitors | Dazhongsi | Public registration and event information | Lists used only for the event; rights clearance required | Convention operator | Phase 1 |
+| SC-06 | Qingshui low-carbon innovation corridor | Residents, visitors | Qingshui riverfront | Environmental and energy monitoring | No personal collection; aggregated display only | Operations + energy platform | Phase 2 |
+| SC-07 | Near-campus conversion street | University students and faculty | Origin community | Authorized research summaries | Campus data requires authorization; confidential items not disclosed | University + incubator | Phase 2 |
+| SC-08 | Data-element salon | Data service enterprises | Dazhongsi | Public data-element exchange information | Complies with data regulations; personal data desensitized | Exchange platform + regulator | Phase 2 |
+| SC-09 | AI living-service model street | Local residents, youth | Mid-section blocks | Aggregated service booking and satisfaction | No commercial profiling; opt-out available | Community + service providers | Phase 2 |
+| SC-10 | Global AI activity week route | Visitors, developers | Public nodes along the spine | Public event information | Registration data used only for the event | Event committee + community | Phase 3 |
+
+At least three industry test-and-verify scenarios are provided, each with human review and data boundaries: open test field (Zhongzhiyuan, real roadside devices + simulation dual-track), open-source collaboration verification field (Origin community, open contributions and evaluation), and international roadshow verification field (Dazhongsi, interoperability verification for agents and devices). All AI governance follows data minimization, open sources, explainability, and human review; city agents only assist recognition and never replace planning approval, output unauthorized personal profiles, or claim official implementation commitments [scenario:public-safety-operations-review].
+
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
 Land use follows public land survey, planning and use-control classification standards [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE], forming complete, closed and seamless zones [data:geometry/land_use.geojson#LU-001]. The structure follows the ridge-and-two-wings logic: the ridge holds park green and plaza uses (1401/1403); the west wing mixes R&D (0802), education (0804), commercial (05) and residential (0701); the east wing mixes R&D, education, residential and commercial; the northern end hosts the Qinghe waterfront park and buffer green (1401/1402). All eight land-use polygons are expressed in `land_use.geojson`, consistent with metrics, without overlap or gaps [depth:land_use_layout].
@@ -90,6 +124,21 @@ Land use follows public land survey, planning and use-control classification sta
 Buildings distinguish retained, renovated, renewed, new-built or to-be-confirmed objects, stating footprint, function, scale, character, roof form, massing and height-control recommendation level [depth:height_massing_character]. `buildings.geojson` expresses 102 footprints of R&D, education, commercial, office and residential types, totaling about 1.119 million square meters, all inside the relevant zones of the overall design area [data:geometry/buildings.geojson#BLDG-001] [metric:building_footprint_area_sqm]. The retain-renovate-demolish method is governed by [depth:retain_renovate_demolish]: blocks adjacent to the rail corridor and the park are mainly retained and reshaped; low-efficiency production spaces convert to industry services and community support; new construction focuses on key-area plots; plots without survey, ownership, statutory plans or engineering data only receive methods and calibration checklists, never invented retain/renovate/demolish conclusions.
 
 Building scale and intensity are treated in three classes: spatial metrics recomputable from submitted geometry (areas, ratios, layer counts) are `known` in `metrics.json`; control metrics requiring official statutory plans (FAR, height, density, setbacks, redlines) are `unknown` with preconditions stated; performance metrics requiring operational calibration (innovation index, talent density) go into `compliance_matrix.json` and risk sections [metric:floor_area_ratio]. The A3 booklet provides the renewal project list and metric verification table, the A0 boards express key structure and key areas, and the HTML page links metrics with layers.
+
+## Implementation Quantitative Indicators and Responsible-Actor Matrix
+
+Beyond the phasing and renewal project list, quantitative implementation boundaries and suggested responsible actors are provided. All are "design suggestions / to be calibrated" and do not constitute approved indicators or government commitments [depth:renewal_project_list].
+
+| Dimension | Suggested boundary | Data/indicator anchor | Suggested actor | Prerequisites |
+| --- | --- | --- | --- | --- |
+| Slow-traffic connectivity | Slow-traffic connection across all 9 milestone nodes; gap inventory | roads.geojson + public_space.geojson | City management, subdistrict offices, transit operator | Road red lines and under-bridge space confirmation |
+| Public space | Public space ratio ~4.7%, phased improvement | public_space_ratio | Platform company, construction entities | Ownership and land procedures |
+| Blue-green space | Green ratio ~27.5%, maintain floor and optimize | green_ratio | Landscape/greening, water authority | Blue lines, flood-control conditions |
+| Edge compute | Several two-wing nodes (locations TBD) | constraints.geojson | Energy/compute service provider | Energy capacity and safety assessment |
+| Parking and non-motorized | Bicycle parking and shared parking at station-front and community living rooms (scale per control plan) | assumptions.json (A-CONTROLS class) | Transport, subdistrict offices | Parking study and control plan |
+| Operational events | Annual event system, scenario open-day cadence (suggested rhythm) | compliance_matrix.json | Event committee, community, enterprises | Permits and safety filings |
+
+These indicators only describe the proposed "boundary and method"; all final scales, indicators, and responsibility allocations must be re-verified by professional teams after the official control plan, special studies, and implementation conditions are confirmed [metric:floor_area_ratio].
 
 ## Transport, Rail, Municipal Infrastructure, and Public Services
 
@@ -108,6 +157,10 @@ The blue-green network takes the Jing-Zhang heritage park as its skeleton [data:
 The public-space system is anchored by nine KM milestone plazas [data:geometry/public_space.geojson#PUBLIC-KM-00]: KM-0 kilometer-zero gateway plaza at Dazhongsi station, KM-8 at the Qinghe waterfront and the acceleration hub, each intermediate milestone carrying an AI scenario theme. Station forecourts, a campus-city exchange square, community living rooms and an innovation corridor square complement the system, totaling a public-space ratio of about 4.7% [metric:public_space_ratio] [metric:public_space_area_sqm]. Slow-traffic gaps, elevated crossing nodes, park south and north landscape nodes are identified as project entries; parking, sports, innovation exchange, tech testing, application display and public services compound-use within green space [data:geometry/public_space.geojson#PUBLIC-05].
 
 Urban character fuses Jing-Zhang railway heritage, Zhongguancun innovation culture and AI innovation culture [standard:MOHURD-URBAN-DESIGN-MEASURES]: using Tsinghua Garden Station, Beijing Film Academy and other cultural resources, it guides urban tone, building character, roof form, massing, frontages and public art; wayfinding, cultural symbols and the international narrative unify under the KM-0 measuring system, and AI pilgrimage landmarks (the KM-0 origin stele, the global developers' honor wall, the milestone stele forest) anchor public-space nodes. All brands, fonts, images, portraits and corporate identifiers require cleared sources; character control distinguishes statutory control, design suggestions and pending conditions, and never invents pseudo-precise control lines without heritage or planning basis [depth:urban_character_and_identity].
+
+## Public Interest and Inclusivity Mechanism
+
+The plan places residents, young talent, enterprises, universities, visitors, and vulnerable groups in one spatial and operational framework [source:AGENT-TASKBOOK]. Accessibility and age-friendliness: the slow-traffic spine uses continuous gentle gradients without level changes, accessible elevators and audio guidance at key nodes, and age-friendly seating and shelter standards. Community co-building: public space upgrades set up community deliberation and co-building nodes; events and scenario open days prioritize incorporating resident feedback loops. Vulnerable-group services: AI living services retain offline human service windows, and all digital facilities provide human review and alternative channels so no one is excluded by digital capability differences. Public-decision transparency: monitoring data is displayed in aggregate only; public space upgrade indicators, event operation boundaries, and rights-clearance lists are open to the public for review [depth:public_interest_inclusion].
 
 ## Renewal Projects, Implementation Policy, and Phasing
 

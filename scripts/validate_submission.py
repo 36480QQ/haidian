@@ -1923,6 +1923,14 @@ def validate_design_depth_matrix_file(
             report.add_error(f"{label}: required must be true for formal design depth items")
         if item.get("status") != "complete":
             report.add_error(f"{label}: formal design depth item status must be complete")
+        completeness_limited_by = item.get("completeness_limited_by")
+        if completeness_limited_by is not None:
+            if not isinstance(completeness_limited_by, list) or not completeness_limited_by or any(
+                not isinstance(value, str) or not value.strip() for value in completeness_limited_by
+            ):
+                report.add_error(
+                    f"{label}: completeness_limited_by must be a non-empty string array when present"
+                )
         if not isinstance(item.get("evidence_summary_zh"), str) or not item.get("evidence_summary_zh", "").strip():
             report.add_error(f"{label}: evidence_summary_zh must be non-empty")
         for key in required_arrays:

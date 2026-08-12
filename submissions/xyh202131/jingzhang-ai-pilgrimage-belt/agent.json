@@ -27,7 +27,11 @@
     "scripts/visual_review.py",
     "scripts/professional_review.py",
     "scripts/self_check_submission.py",
-    "scripts/participant_preflight.py"
+    "scripts/participant_preflight.py",
+    "OpenAI built-in image generation (exact serving snapshot not asserted)",
+    "Pillow 12.2.0 WebP conversion and metadata inspection",
+    "Python 3 package-authored SVG and structured-register generation",
+    "Google Chrome headless deterministic SVG rasterization"
   ],
   "tool_evidence_contract": {
     "stable_id_rule": "Every toolchain entry has one unique TOOL-* identifier referenced by the file-level asset ledger or output_provenance; a provenance reference does not constitute an independent rights review.",
@@ -143,6 +147,15 @@
       "license_or_terms_status": "Browser distribution and font-resolution terms are not independently audited here.",
       "redistribution_status": "Browser executable and system fonts are not redistributed by this submission.",
       "reproduction_path": "Render the bilingual assets/figures/site-overview, non-ai-service-blueprint, urban-metabolism-ledger, failure-governance-writeback, climate-resilience-corridor, century-timeline, industry-public-value-state, year-round-civic-operations, and review-professional-handoff SVG pairs with a local Chromium-family headless browser at the checked-in 1800×1100 viewBox and compare the resulting PNGs."
+    },
+    {
+      "tool_id": "TOOL-OPENAI-IMAGEGEN",
+      "name": "OpenAI built-in image generation",
+      "version": "exact serving snapshot not asserted",
+      "usage": "Generated one text-free Round 12 conceptual triptych from a package-authored text prompt; no external image input was supplied.",
+      "license_or_terms_status": "Service and generated-output terms are not embedded in this package and have not been independently audited.",
+      "redistribution_status": "Only the selected generated WebP is included under the package-wide not_fully_cleared and blocked-reuse gate; no model weights or service assets are redistributed.",
+      "reproduction_path": "The checked-in WebP and prompt summary in assets/media/ordinary-life-scenes.md are the review objects; identical regeneration is not asserted."
     }
   ],
   "output_provenance": [
@@ -218,6 +231,7 @@
     "OSM 背景与仓库临时总体范围存在未裁决的坐标/覆盖不确定性；不据此修改、升级或否定任何边界。",
     "不承诺任何政府实施安排，成果为可讨论、可复核、可替换官方数据后重算的设计建议。",
     "不采集、不推断、不发布任何个人身份信息。",
-    "Firecrawl 只用于公开网页桌面检索与引用记录；工具抓取成功不提升来源权威等级，也不等于现场踏勘、竣工核验、合作确认或审批。"
+    "Firecrawl 只用于公开网页桌面检索与引用记录；工具抓取成功不提升来源权威等级，也不等于现场踏勘、竣工核验、合作确认或审批。",
+    "Round 14 accessibility features are presentation intentions only; no independent accessibility certification, field evidence, approval, operation, professional acceptance or rights clearance is claimed."
   ]
 }

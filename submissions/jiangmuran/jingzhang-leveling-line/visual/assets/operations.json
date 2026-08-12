@@ -1,0 +1,230 @@
+{
+ "schema_version": "operations-v1",
+ "note_zh": "本文件把任务书点名的两项 required_outputs——`honor_display_system` 与 `developer_community_operation`——从散文里取出来写成结构。**不是为了升一个评级**：两者本来就不是散文形状，一个是编号规则加五类标准件的硬约束，一个是四档周期加五步转化路径的进出条件。写成表，任何人都能逐条对；写成段落，只能读，然后信作者。文件里没有一个字段是为它新造的：画像 id、水准点等级、限差口径、退出条件都已在包内存在，构建时逐条断言。",
+ "note_en": "The two `required_outputs` the taskbook names — `honor_display_system` and `developer_community_operation` — taken out of prose and written as structure. Not to upgrade a grade: neither is prose-shaped. One is a numbering rule plus five component types with hard constraints; the other is four cadences plus a five-step conversion path with entry and exit conditions. As a table anyone can check them line by line; as a paragraph they can only be read and believed. No field here is invented for the file — every persona id, benchmark order, tolerance and exit condition already exists in the package and is asserted against it at build time.",
+ "honor_display_system": {
+  "principle_zh": "以**编号序列**而非排名榜组织：编号按合入时间排列，不隐含优劣。",
+  "principle_en": "Organised as a numbered sequence, not a leaderboard: numbers run in merge order and imply no ranking.",
+  "why_not_a_leaderboard_en": "A leaderboard needs a comparable score, and what this proposal argues throughout is that **a score without independent recomputation is not a basis for ranking**. Unable to supply that score, it should not publish that board.",
+  "numbering_rule_en": "One unique numbered plaque per contributor; once assigned, a number is never reclaimed and never reordered.",
+  "kit_note_en": "The five standard parts share one specification and open drawings, so any new node anywhere on the line can join in the same language.",
+  "why_not_a_leaderboard_zh": "排名榜要求一个可比的分数，而本方案通篇主张的是：**没有独立复核的分数不构成排序依据**。给不出那个分数，就不该给出那个榜。",
+  "numbering_rule_zh": "每位贡献者一个唯一编号铭牌；编号一经分配不回收、不重排。",
+  "plaque_matches_benchmark_ids": [
+   "BM-0",
+   "BM-1",
+   "BM-2",
+   "BM-21",
+   "BM-22",
+   "BM-301",
+   "BM-302",
+   "BM-303"
+  ],
+  "kit_of_parts": [
+   {
+    "id": "KIT-01",
+    "name_zh": "标石与铭牌",
+    "name_en": "Benchmark stone and plaque",
+    "hard_constraint_zh": "标石与地面齐平，不构成绊倒风险；铭牌编号唯一且与 geometry 中的 benchmark_id 一一对应",
+    "hard_constraint_en": "Stone flush with the ground, no trip hazard; plaque number unique and matching a `benchmark_id` in the geometry one-for-one",
+    "serves_personas": [
+     "P4",
+     "P5",
+     "P7"
+    ],
+    "drawing": "assets/figures/kit-of-parts.png"
+   },
+   {
+    "id": "KIT-02",
+    "name_zh": "读数牌",
+    "name_en": "Reading plate",
+    "hard_constraint_zh": "当期 f 与限差 F 同时可见，且标注复测日期；数值过期即视为未公示",
+    "hard_constraint_en": "Current f and tolerance F both visible, with the re-survey date; a stale value counts as not posted",
+    "serves_personas": [
+     "P2",
+     "P3",
+     "P4"
+    ],
+    "drawing": "assets/figures/kit-of-parts.png"
+   },
+   {
+    "id": "KIT-03",
+    "name_zh": "可停留座具",
+    "name_en": "Seating that permits staying",
+    "hard_constraint_zh": "带扶手，便于起身；设置在读数牌可视范围内，使取读数不需站立等待",
+    "hard_constraint_en": "Armrests, so getting up is possible; sited within sight of the reading plate, so taking a reading needs no standing wait",
+    "serves_personas": [
+     "P5",
+     "P7"
+    ],
+    "drawing": "assets/figures/street-eye-level.png"
+   },
+   {
+    "id": "KIT-04",
+    "name_zh": "无障碍引导",
+    "name_en": "Accessible wayfinding",
+    "hard_constraint_zh": "引导连续不断点；触觉与视觉双通道；接入路径不得以台阶为唯一方式",
+    "hard_constraint_en": "Continuous with no break; tactile and visual channels both; the approach may not be by steps alone",
+    "serves_personas": [
+     "P5",
+     "P6",
+     "P7"
+    ],
+    "drawing": "assets/figures/street-eye-level.png"
+   },
+   {
+    "id": "KIT-05",
+    "name_zh": "申诉入口",
+    "name_en": "Appeal point",
+    "hard_constraint_zh": "**必须同时给出扫码与电话/现场登记两条路径**——只给扫码，等于把不用智能手机的人排除在申诉之外，画像 P4 因此不成立",
+    "hard_constraint_en": "**Must offer both a QR code and a phone or in-person route** — a QR code alone excludes anyone without a smartphone from appealing, which makes persona P4 unworkable",
+    "serves_personas": [
+     "P4",
+     "P5",
+     "P6"
+    ],
+    "drawing": "assets/figures/street-eye-level.png"
+   }
+  ],
+  "kit_is_open_drawing": true,
+  "kit_note_zh": "五类标准件统一规格、开放图纸，使全线任何新增节点都能以一致语言接入。"
+ },
+ "developer_community_operation": {
+  "principle_zh": "以**复测周期**而非节庆日历组织，使活动成为治理动作而非宣传动作。",
+  "principle_en": "Organised by re-survey cycle rather than by festival calendar, so that an event is a governance action and not a publicity one.",
+  "operating_cycle": [
+   {
+    "id": "CYC-M",
+    "cadence_zh": "月度",
+    "cadence_en": "Monthly",
+    "event_zh": "社区复测日",
+    "event_en": "Community re-survey day",
+    "benchmark_order_zh": "三等水准点",
+    "benchmark_order": "third",
+    "led_by_personas": [
+     "P4",
+     "P5",
+     "P7"
+    ],
+    "measures_zh": "各三等点当期读数",
+    "publishes_zh": "该点位当期 f 与是否 ≤ F",
+    "measures_en": "the current reading at each third-order point",
+    "publishes_en": "that point's f for the cycle, and whether it is within F"
+   },
+   {
+    "id": "CYC-Q",
+    "cadence_zh": "季度",
+    "cadence_en": "Quarterly",
+    "event_zh": "场景开放日",
+    "event_en": "Scenario open day",
+    "benchmark_order_zh": "二等水准点",
+    "benchmark_order": "second",
+    "led_by_personas": [
+     "P2",
+     "P3"
+    ],
+    "measures_zh": "场景在公开问题集上的表现",
+    "publishes_zh": "场景级闭合差与退出条件是否触发",
+    "measures_en": "how a scenario performs on the published question set",
+    "publishes_en": "the scenario's closure error, and whether an exit condition fired"
+   },
+   {
+    "id": "CYC-H",
+    "cadence_zh": "半年度",
+    "cadence_en": "Half-yearly",
+    "event_zh": "路线复测",
+    "event_en": "Route re-survey",
+    "benchmark_order_zh": "一等附合路线 RT-N / RT-S",
+    "benchmark_order": "first",
+    "led_by_personas": [
+     "P1",
+     "P2"
+    ],
+    "measures_zh": "整条附合路线的闭合差",
+    "publishes_zh": "路线级 f，超限即整段退回复测",
+    "measures_en": "the closure error of the whole connecting route",
+    "publishes_en": "route-level f; exceeding it returns the whole segment for re-survey"
+   },
+   {
+    "id": "CYC-A",
+    "cadence_zh": "年度",
+    "cadence_en": "Annual",
+    "event_zh": "归零仪式",
+    "event_en": "Return-to-datum ceremony",
+    "benchmark_order_zh": "L3 归零点",
+    "benchmark_order": "datum",
+    "led_by_personas": [
+     "P1",
+     "P2",
+     "P3",
+     "P4",
+     "P5",
+     "P6",
+     "P7",
+     "P8",
+     "P9"
+    ],
+    "measures_zh": "全线读数归零与上一年度限差修订留档",
+    "publishes_zh": "全年闭合记录与限差修订理由；修订只可收紧",
+    "measures_en": "the whole line returned to datum, and the year's tolerance revisions logged",
+    "publishes_en": "the year's closure record and the reasons for any tolerance revision; revisions may only tighten"
+   }
+  ],
+  "conversion_path": [
+   {
+    "step": 1,
+    "id": "PATH-1",
+    "name_zh": "参与复测",
+    "name_en": "Take a reading",
+    "entry_zh": "任何人，无资格门槛",
+    "exit_zh": "完成一次有记录的读数",
+    "entry_en": "anyone, no qualification required",
+    "exit_en": "one recorded reading completed"
+   },
+   {
+    "step": 2,
+    "id": "PATH-2",
+    "name_zh": "提出场景",
+    "name_en": "Propose a scenario",
+    "entry_zh": "已有至少一次读数记录",
+    "exit_zh": "场景卡填全：水准点、空间锚点、退出量、执行角色",
+    "entry_en": "at least one recorded reading",
+    "exit_en": "a scenario card filled in full: benchmark, spatial anchor, exit quantity, executing role"
+   },
+   {
+    "step": 3,
+    "id": "PATH-3",
+    "name_zh": "进入受控测试场",
+    "name_en": "Enter the controlled ground",
+    "entry_zh": "场景卡通过 `check_cards.js`；S11 场地可用",
+    "exit_zh": "在受控条件下取得闭合记录",
+    "entry_en": "the card passes `check_cards.js`; the S11 ground is available",
+    "exit_en": "a closure record obtained under controlled conditions"
+   },
+   {
+    "step": 4,
+    "id": "PATH-4",
+    "name_zh": "取得水准合格",
+    "name_en": "Pass leveling",
+    "entry_zh": "已有受控场闭合记录",
+    "exit_zh": "**连续两个复测周期 f ≤ F**；一次达标可能是偶然",
+    "entry_en": "a controlled-ground closure record exists",
+    "exit_en": "**f ≤ F for two consecutive cycles** — once may be luck"
+   },
+   {
+    "step": 5,
+    "id": "PATH-5",
+    "name_zh": "落地运营",
+    "name_en": "Operate on site",
+    "entry_zh": "水准合格且撤除保证金到位",
+    "exit_zh": "持续满足复测周期；超限即整段退回，设备撤除",
+    "entry_en": "leveling passed and the removal bond is in place",
+    "exit_en": "continues to meet each cycle; exceeding returns the segment and removes the devices"
+   }
+  ],
+  "international_communication_zh": "以公开读数为素材，不以承诺为素材。",
+  "international_communication_en": "External communication draws on published readings, not on promises.",
+  "limits_en": "All of the above are proposed operating mechanisms; whether they are adopted rests with the responsible parties' own decisions, and this proposal may not be cited as a commitment made by any of them.",
+  "limits_zh": "以上均为运营机制建议，落实取决于责任主体的独立决策；本方案不得被引用为任何一方已作承诺。"
+ }
+}
