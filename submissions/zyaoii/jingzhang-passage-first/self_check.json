@@ -57,13 +57,15 @@
         "submissions/zyaoii/jingzhang-passage-first/sources.json",
         "submissions/zyaoii/jingzhang-passage-first/standard_matrix.json",
         "submissions/zyaoii/jingzhang-passage-first/visual/assets/passage-contract.json",
+        "submissions/zyaoii/jingzhang-passage-first/visual/assets/passage-tabletop-evidence.json",
+        "submissions/zyaoii/jingzhang-passage-first/visual/assets/run-passage-tabletop.js",
         "submissions/zyaoii/jingzhang-passage-first/visual/index.en.html",
         "submissions/zyaoii/jingzhang-passage-first/visual/index.html"
       ],
       "ai_package_stages": {
         "submissions/zyaoii/jingzhang-passage-first": "formal"
       },
-      "total_bytes": 7943374,
+      "total_bytes": 6277561,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -137,15 +139,15 @@
       "summary": {
         "standard_matrix_items": 8,
         "design_depth_items": 15,
-        "known_metric_refs_required": 15,
+        "known_metric_refs_required": 17,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 17,
+          "source": 21,
           "standard": 6,
           "depth": 9,
-          "data": 10,
-          "metric": 5
+          "data": 12,
+          "metric": 7
         }
       }
     },

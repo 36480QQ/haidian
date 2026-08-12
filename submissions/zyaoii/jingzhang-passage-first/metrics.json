@@ -153,6 +153,32 @@
       "confidence": "high",
       "assumptions": []
     },
+    "synthetic_tabletop_fixture_count": {
+      "status": "known",
+      "value": 6,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/run-passage-tabletop.js",
+        "visual/assets/passage-tabletop-evidence.json"
+      ],
+      "formula": "count(deterministic_synthetic_state_transition_fixtures)",
+      "confidence": "high",
+      "assumptions": [],
+      "reason": "Local deterministic fixtures only; not a real-site, engineering, accessibility, traffic, safety or operational test."
+    },
+    "synthetic_tabletop_check_pass_count": {
+      "status": "known",
+      "value": 7,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/run-passage-tabletop.js",
+        "visual/assets/passage-tabletop-evidence.json"
+      ],
+      "formula": "count(passed_deterministic_contract_checks)",
+      "confidence": "high",
+      "assumptions": [],
+      "reason": "Checks state completeness, fail-closed expiry, physical degradation, human-only opening, zero false-ready and absence of prohibited personal fields; it proves no field performance."
+    },
     "verified_public_project_candidate_count": {
       "status": "known",
       "value": 1,

@@ -94,6 +94,18 @@ Cases contribute methods only; foreign statutes, dimensions, agencies, and perfo
 
 The Jingzhang innovation is not an app but a reusable public contract linking event, evidence, responsibility, expiry, and restoration across projects. Industry value must be tested through fewer omissions, fewer false READY states, and lower public detour/communication burden—not sensor counts, model calls, investment totals, or invented company lists.
 
+### Functional-convergence falsification: a shared theme is not the same task
+
+Following the five-field method proposed in community Issue #1974, the proposal compares “beneficiary—end-to-end public task—spatial carrier—human decision/right—public outcome after failure” before and after building. Names and keywords are not originality evidence. The nearest neighbours offer useful methods, but none covers the same complete control object:
+
+| Nearest neighbour | Adjacent concern | Its primary control object | Irreplaceable difference in Passage Before Barriers |
+| --- | --- | --- | --- |
+| THE CIVIC METRE | Accessibility, entrances, human takeover, and continuous arrival | A lasting service spine, threshold nodes, and last-metre audit | This proposal controls a **time-bounded temporary-occupation event**: alternative-passage admission before occupation, evidence expiry while active, and original-function restoration at term [source:PEER-CIVIC-METRE] |
+| Civic AI Relay and Jingzhang Proving Line | Gates, failure, refusal, and exit evidence | AI service validation, adoption, and retirement across the belt | These Gates do not approve AI scenes; they constrain the physical order of work/barriers and public passage. AI may exit completely [source:PEER-CIVIC-AI-RELAY] [source:PEER-PROVING-LINE] |
+| Mobility Commons Jingzhang | Multimodal access, kerb operation, human fallback, and public routes | Employer/resident travel demand, kerb windows, and feeder operations | This proposal neither allocates kerb capacity nor optimizes traffic. It requires each specific occupation to deliver a verifiable alternative first and restore afterward [source:PEER-MOBILITY-COMMONS] |
+
+If a later proposal matches all five fields, this work should stop changing only personas, weather, interface, or evidence format. It should narrow/merge the task or change direction. High similarity prompts human review; it is not an automatic plagiarism or originality verdict.
+
 ## Overall-design scope: urban renewal and regulatory-plan-depth urban design
 
 ### Spatial structure and land use
@@ -171,6 +183,10 @@ All scenarios share one state contract rather than twelve unrelated AI features 
 
 AI net value is judged on four questions only: fewer critical-evidence omissions, less staff organization time, no added false READY state, and no added privacy or job burden. If net value fails, AI exits while the non-AI passage contract remains.
 
+To test that boundary as code rather than prose, `node visual/assets/run-passage-tabletop.js --check` replays six synthetic state fixtures without network, real site, personal data, or external system: missing authority cannot become VERIFIED; complete evidence plus named human authority can; expired evidence returns to UNKNOWN; physical obstruction becomes DEGRADED; an AI-only open request is refused; restoration requires human evidence [data:visual/assets/passage-tabletop-evidence.json] [data:visual/assets/run-passage-tabletop.js].
+
+The current local result is 6/6 fixtures and 7/7 contract checks, with `operational_status=not_authorized_not_run` and `performance_results=null` [metric:synthetic_tabletop_fixture_count] [metric:synthetic_tabletop_check_pass_count]. This proves only reproducible state and fail-closed logic—not a real route, safety, accessibility, traffic, permit, or operating performance.
+
 ## Traffic, rail, municipal, and public-service facilities
 
 The design order is “same-side continuity first, lawful side switching, uninterrupted entrances, and no transfer of cycling conflict to pedestrians.” `roads.geojson` is a conceptual lasting backbone, not an existing road, work access, or redline [data:geometry/roads.geojson#ROAD-PF-01] [standard:MOHURD-CONTROL-DETAILED-PLANNING]. Rail entrances, signals, works vehicles, bus stops, fire egress, and emergency traffic remain under the relevant professionals; AI controls none of them.
@@ -224,6 +240,19 @@ Two zero-tolerance measures are “marked passable without human verification = 
 
 The occupation/work/event party bears the plan, physical passage, maintenance, notice, restoration, and corresponding cost. Road/facility managers, approval bodies, contractor, supervisor, traffic/accessibility professionals act only within real authority. The public supplies clues and comprehension feedback. AI assists only. A real RACI must come from authorization documents [data:visual/assets/passage-contract.json].
 
+Delivery follows “one A, named R, evidence SLO, failure action.” All subjects below are unconfirmed **role types**, not institutional commitments:
+
+| Work package | Single A / key R | Procurable delivery evidence | Service gate and failure action |
+| --- | --- | --- | --- |
+| WP0 Authority and event baseline | Project/occupation promoter A; site/road manager role R | Applicable authority, boundary, term, original function, entrances, and restoration scope | Missing critical document or authority: remain UNKNOWN/PREPARING |
+| WP1 Physical alternative passage | Occupier A; contractor, supervisor, and relevant professionals R/C | Reviewed plan, installation record, field measurement, named pre-opening verification | Incomplete or unverified: VERIFIED_PASSAGE is forbidden |
+| WP2 Active maintenance | Occupier A; daily inspection and repair roles R | Duty roster, paper contact, expiry, night/rain/obstruction recheck, incident ticket | Critical evidence expires: UNKNOWN; physical failure: DEGRADED/authorized closure |
+| WP3 Public information | Occupier A; field service/information role R | Event ID, paper map, bilingual/easy-read notice, named contact, expiry | Human/paper path remains during digital failure; weak comprehension baseline requires revision |
+| WP4 Clearance and restoration | Occupier A; facility manager and restoration contractor role R | Clearance record, original-function review, defects, named restoration sign-off | Incomplete evidence: remain RESTORING; false RESTORED is forbidden |
+| WP5 AI comparison and exit | Real service owner A; tool, data/legal, and evaluation roles R/C | Blind comparison, paper baseline, omission/staff-minute/false-READY/job-burden results | AI adds no net value, error, or overreach: remove AI and retain the non-AI contract |
+
+The acceptance object is not “a system launch.” It is a physical passage, an offline-capable duty chain, and end-of-term restoration evidence. No work package may use completion elsewhere to offset a missing real A/R, valid evidence, or budget owner.
+
 The principal cost is people and field responsibility, not the model: coordination, professional survey, traffic/accessibility review, physical components, installation/maintenance, daily checks, night/rain/snow response, insurance, independent review, restoration, and exit. No RMB total or saving ratio is stated because two comparable quotations do not yet exist. Before a real pilot, obtain comparable evidence for physical components plus installation/maintenance and for professional inspection/traffic organization; identify who pays, maintains, and bears failure cost.
 
 ## Long-term operation, activities, and international communication
@@ -239,6 +268,8 @@ Provisional submission geometry permits recalculation of overall area, key-area 
 These values describe only the submission geometry, not statutory or existing-condition indicators. FAR, height, road redlines, real passage length/width/slope, real project area, users, cost, incidents, efficiency, and AI net value remain UNKNOWN.
 
 Operational measures have four layers: admission completeness (authority and named roles), erroneous state (false READY/expired READY), active degradation (detection to withdrawal/human action), and restoration closure (original function and sign-off). Passing machine intake, spatial review, professional matrices, and visual packaging means only that the submission can be reviewed—not that the proposal is compliant, high-scoring, selected, or field-ready [depth:metrics_recalculation].
+
+Offline evidence separately records six synthetic fixtures and seven deterministic checks. Those counts can be rerun, but they must not be confused with real-site sample size, incident reduction, passage capacity, or AI efficiency [metric:synthetic_tabletop_fixture_count] [metric:synthetic_tabletop_check_pass_count].
 
 ![Reproducible, field-measurement-pending, and veto metrics](assets/figures/metrics-evidence.en.png)
 
