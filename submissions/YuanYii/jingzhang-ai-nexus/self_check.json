@@ -89,7 +89,7 @@
       "ai_package_stages": {
         "submissions/YuanYii/jingzhang-ai-nexus": "formal"
       },
-      "total_bytes": 6107459,
+      "total_bytes": 6119094,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -165,15 +165,13 @@
       "summary": {
         "standard_matrix_items": 9,
         "design_depth_items": 15,
-        "known_metric_refs_required": 10,
-        "proposal_format_version": "2",
-        "evidence_contract": "section-anchors-plus-structured-audit",
+        "known_metric_refs_required": 24,
         "proposal_reference_counts": {
-          "source": 9,
+          "source": 22,
           "standard": 9,
           "depth": 15,
           "data": 11,
-          "metric": 12
+          "metric": 26
         }
       }
     },
@@ -191,7 +189,6 @@
   "package_type": "professional_design_package",
   "review_status": "formal-review-ready",
   "next_actions": [],
-  "schema_version": "0.1.0",
   "checks": [
     {
       "check_id": "DETERMINISTIC_VALIDATION",
