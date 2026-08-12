@@ -109,7 +109,30 @@ class SelfCheckEncodingTests(unittest.TestCase):
         )
         self.assertEqual("1", run.call_args.kwargs["env"]["PYTHONUTF8"])
         self.assertEqual("utf-8", run.call_args.kwargs["env"]["PYTHONIOENCODING"])
-        self.assertEqual({"returncode": 1, "ok": False, "stdout": {}, "stderr": ""}, result)
+        self.assertEqual(
+            {
+                "returncode": 1,
+                "ok": False,
+                "stdout": {},
+                "stderr": "command produced no JSON output",
+            },
+            result,
+        )
+
+    def test_run_json_command_requires_json_object_output(self) -> None:
+        fixtures = [
+            ("print('not json')", "invalid JSON output"),
+            ("print('[]')", "JSON output must be an object, got list"),
+            ("print('null')", "JSON output must be an object, got NoneType"),
+            ("pass", "command produced no JSON output"),
+        ]
+        for script, expected_error in fixtures:
+            with self.subTest(script=script):
+                result = run_json_command([sys.executable, "-c", script])
+
+                self.assertEqual(0, result["returncode"])
+                self.assertFalse(result["ok"])
+                self.assertIn(expected_error, result["stderr"])
 
 
 def run_scaffold(output_dir: Path, stage: str = "formal", cwd: Path = REPO_ROOT) -> subprocess.CompletedProcess:
