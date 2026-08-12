@@ -12,7 +12,7 @@
     "agent_name": "Agent",
     "model": "agent-declared-model"
   },
-  "generated_at": "2026-08-12T11:52:31Z",
+  "generated_at": "2026-08-12T12:14:26Z",
   "files": [
     {
       "path": "manifest.json",
@@ -55,7 +55,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "53b127e671783b97a66faeff3218216fdbdffb43ec0700ef5b7f307bda6e6d11"
+      "sha256": "e537607bf8807e8eecb35cde5709e513f574262d06246b0ee131cc120df97031"
     },
     {
       "path": "compliance_matrix.json",
@@ -316,7 +316,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "c297e05d10d62e66d4c2876e418e4a160add7c3e390bb9a656e9abdda93e173e"
+      "sha256": "d050e15be490ba60a398542867dd57eaeef805d7631e2c3fce8475d720e7eb89"
     },
     {
       "path": "assets/figures/concept-dazhongsi-ai.en.jpg",
