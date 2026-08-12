@@ -1,0 +1,184 @@
+{
+  "type": "FeatureCollection",
+  "name": "porous_ground_contract_conceptual_transects",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "ROAD-PGC-01",
+      "properties": {
+        "id": "ROAD-PGC-01",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "conceptual_only": true,
+        "official_boundary": false,
+        "authorization_status": "UNKNOWN",
+        "real_world_performance_claimed": false,
+        "road_class": "greenway",
+        "name_zh": "京张开合合同学习脊（非工程线位）",
+        "name_en": "Jing-Zhang Porosity Contract learning spine (not an engineering alignment)",
+        "length_m_declared": 7755.773,
+        "usage_note": "仅表达原铁路创新走廊中北部源—公众、中部穿行—停留、南部换乘—静侧的因果序列；不是现状铁路、道路、无障碍路线或工程线位。"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.3485,
+            39.946920000000006
+          ],
+          [
+            116.3475,
+            39.9885
+          ],
+          [
+            116.3485,
+            40.01675
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-PGC-02",
+      "properties": {
+        "id": "ROAD-PGC-02",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "conceptual_only": true,
+        "official_boundary": false,
+        "authorization_status": "UNKNOWN",
+        "real_world_performance_claimed": false,
+        "road_class": "pedestrian",
+        "name_zh": "南部大钟寺类型：换乘—静侧错位孔隙概念断面",
+        "name_en": "Southern Dazhongsi type: arrival to quiet side staggered-porosity concept transect",
+        "area_id": "dazhongsi_ai_industry_cluster",
+        "length_m_declared": 327.665,
+        "prototype_zone": "south",
+        "usage_note": "源—路径—接收者的可画设计变量，不证明真实源、真实开口、道路红线、消防条件或连续可达状态。"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.34674816086068,
+            39.94656790734482
+          ],
+          [
+            116.3479416188586,
+            39.94657462599318
+          ],
+          [
+            116.34873367102658,
+            39.9469573376181
+          ],
+          [
+            116.34917505231296,
+            39.94730205104936
+          ],
+          [
+            116.35025151663291,
+            39.94730808910847
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-PGC-03",
+      "properties": {
+        "id": "ROAD-PGC-03",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "conceptual_only": true,
+        "official_boundary": false,
+        "authorization_status": "UNKNOWN",
+        "real_world_performance_claimed": false,
+        "road_class": "pedestrian",
+        "name_zh": "中部AI原点：穿行—停留错位孔隙概念断面",
+        "name_en": "Central AI Origin: passage to dwell staggered-porosity concept transect",
+        "area_id": "beijing_ai_origin_community",
+        "length_m_declared": 331.242,
+        "prototype_zone": "middle",
+        "usage_note": "源—路径—接收者的可画设计变量，不证明真实源、真实开口、道路红线、消防条件或连续可达状态。"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.34574710736042,
+            39.98814788623209
+          ],
+          [
+            116.3469412883825,
+            39.988154620961886
+          ],
+          [
+            116.34726550275195,
+            39.98853470407819
+          ],
+          [
+            116.34817545266031,
+            39.9888820573845
+          ],
+          [
+            116.3492525691455,
+            39.98888810991645
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-PGC-04",
+      "properties": {
+        "id": "ROAD-PGC-04",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "conceptual_only": true,
+        "official_boundary": false,
+        "authorization_status": "UNKNOWN",
+        "real_world_performance_claimed": false,
+        "road_class": "pedestrian",
+        "name_zh": "北部众智园：源—公众错位孔隙概念断面",
+        "name_en": "Northern Zhongzhiyuan: source to public staggered-porosity concept transect",
+        "area_id": "zhongzhiyuan_ai_acceleration_area",
+        "length_m_declared": 327.665,
+        "prototype_zone": "north",
+        "usage_note": "源—路径—接收者的可画设计变量，不证明真实源、真实开口、道路红线、消防条件或连续可达状态。"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.34674638136723,
+            40.01639789722159
+          ],
+          [
+            116.34794105488267,
+            40.01640462557283
+          ],
+          [
+            116.34873390852253,
+            40.01678733907902
+          ],
+          [
+            116.34917573463684,
+            40.017132051974656
+          ],
+          [
+            116.35025329534747,
+            40.01713809873122
+          ]
+        ]
+      }
+    }
+  ]
+}

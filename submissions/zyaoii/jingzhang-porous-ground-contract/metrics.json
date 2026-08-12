@@ -1,0 +1,321 @@
+{
+  "schema_version": "0.1.0",
+  "units": {
+    "length": "m",
+    "area": "sqm"
+  },
+  "metrics": {
+    "site_area_sqm": {
+      "status": "known",
+      "value": 11412825.386,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "polygon_area_EPSG4548(submitted_rough_provisional_site)",
+      "confidence": "low",
+      "assumptions": [
+        "A-BOUNDARY-001"
+      ],
+      "reason": "Internally recalculated from rough provisional geometry; not precise or official."
+    },
+    "building_footprint_area_sqm": {
+      "status": "known",
+      "value": 19350.0,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/buildings.geojson"
+      ],
+      "formula": "sum(conceptual_source_and_receiver_interface_footprints_EPSG4548)",
+      "confidence": "low",
+      "assumptions": [
+        "A-CONTROLS-001"
+      ],
+      "reason": "Conceptual interface footprints, not existing or approved buildings."
+    },
+    "green_ratio": {
+      "status": "known",
+      "value": 0.031924,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/green_space.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "union(conceptual_passive_shade_geometry) / provisional_site_area",
+      "confidence": "low",
+      "assumptions": [
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001"
+      ],
+      "reason": "Conceptual shade/green interface ratio, not statutory or existing green space."
+    },
+    "public_space_ratio": {
+      "status": "known",
+      "value": 0.002855,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/public_space.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "union(conceptual_courts_and_learning_nodes) / provisional_site_area",
+      "confidence": "low",
+      "assumptions": [
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001"
+      ],
+      "reason": "Conceptual public-space prototypes, not an approved public-space supply."
+    },
+    "floor_area_ratio": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": [
+        "brief/site-package/ranges/planning_limits.json"
+      ],
+      "formula": "total_floor_area / official_site_area",
+      "confidence": "unknown",
+      "assumptions": [
+        "A-CONTROLS-001"
+      ],
+      "reason": "Official geometry, existing buildings and approved FAR controls are unavailable."
+    },
+    "key_area_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "geometry/key_areas.geojson",
+        "brief/site-package/agent_taskbook.json"
+      ],
+      "formula": "count(taskbook_key_area_names)",
+      "confidence": "medium",
+      "assumptions": [
+        "A-BOUNDARY-001",
+        "A-DAZHONGSI-ANCHOR-001"
+      ],
+      "reason": "Three names are required; their submitted geometries remain rough and provisional."
+    },
+    "contract_spine_length_m": {
+      "status": "known",
+      "value": 7755.773,
+      "unit": "m",
+      "source_files": [
+        "geometry/roads.geojson"
+      ],
+      "formula": "length_EPSG4548(ROAD-PGC-01)",
+      "confidence": "low",
+      "assumptions": [
+        "A-BOUNDARY-001"
+      ],
+      "reason": "Diagrammatic causal sequence only, not a real route or engineering alignment."
+    },
+    "land_use_partition_ratio": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/land_use.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "union(non_statutory_partition) / provisional_site_area",
+      "confidence": "high",
+      "assumptions": [
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001"
+      ],
+      "reason": "Package topology fact only; no statutory land-use meaning."
+    },
+    "scenario_card_count": {
+      "status": "known",
+      "value": 12,
+      "unit": "count",
+      "source_files": [
+        "simulation.json",
+        "proposal.md",
+        "proposal.en.md"
+      ],
+      "formula": "count(design_evidence.scenarios)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "persona_count": {
+      "status": "known",
+      "value": 6,
+      "unit": "count",
+      "source_files": [
+        "simulation.json",
+        "proposal.md",
+        "proposal.en.md"
+      ],
+      "formula": "count(design_evidence.personas)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "industry_test_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "simulation.json",
+        "proposal.md",
+        "proposal.en.md"
+      ],
+      "formula": "count(scenarios where industry_test=true)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "pilgrimage_node_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "simulation.json",
+        "geometry/public_space.geojson",
+        "proposal.md",
+        "proposal.en.md"
+      ],
+      "formula": "count(public_space features where pilgrimage_node=true)",
+      "confidence": "high",
+      "assumptions": [
+        "A-CONTROLS-001"
+      ],
+      "reason": "Three conceptual learning components, not authorised built landmarks."
+    },
+    "pilot_duration_days": {
+      "status": "known",
+      "value": 90,
+      "unit": "count",
+      "source_files": [
+        "simulation.json",
+        "proposal.md",
+        "proposal.en.md"
+      ],
+      "formula": "15 + 15 + 15 + 25 + 14 + 6",
+      "confidence": "high",
+      "assumptions": [
+        "A-PILOT-001"
+      ],
+      "reason": "Length of the proposed falsification protocol; not an announced operating period."
+    },
+    "passive_service_required_ratio": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": [
+        "simulation.json",
+        "proposal.md",
+        "proposal.en.md"
+      ],
+      "formula": "required_basic_service_when_power_network_model_off / required_basic_service",
+      "confidence": "high",
+      "assumptions": [
+        "A-ABLATED-AI-001"
+      ],
+      "reason": "Design requirement, not measured field availability."
+    },
+    "e3_site_evidence_count": {
+      "status": "known",
+      "value": 0,
+      "unit": "count",
+      "source_files": [
+        "assumptions.json",
+        "simulation.json"
+      ],
+      "formula": "count(authorised_site_baseline_records_in_package)",
+      "confidence": "high",
+      "assumptions": [
+        "A-BASELINE-001"
+      ]
+    },
+    "e4_implementation_evidence_count": {
+      "status": "known",
+      "value": 0,
+      "unit": "count",
+      "source_files": [
+        "assumptions.json",
+        "simulation.json"
+      ],
+      "formula": "count(written_authorisations_or_restored_real_mockups_in_package)",
+      "confidence": "high",
+      "assumptions": [
+        "A-OWNERSHIP-001"
+      ]
+    },
+    "authorized_real_pilot_site_count": {
+      "status": "unknown",
+      "value": null,
+      "unit": "count",
+      "source_files": [
+        "assumptions.json",
+        "simulation.json"
+      ],
+      "formula": "count(real_transects_with_written_operator_authorisation)",
+      "confidence": "unknown",
+      "assumptions": [
+        "A-OWNERSHIP-001"
+      ],
+      "reason": "No real site or operator is represented as authorised."
+    },
+    "actual_environmental_improvement": {
+      "status": "unknown",
+      "value": null,
+      "unit": "none",
+      "source_files": [
+        "assumptions.json",
+        "simulation.json"
+      ],
+      "formula": "paired_professional_measurement_after_authorised_mockup",
+      "confidence": "unknown",
+      "assumptions": [
+        "A-BASELINE-001",
+        "A-PERFORMANCE-001"
+      ],
+      "reason": "No field baseline, mock-up or matched comparison exists."
+    },
+    "ai_net_value": {
+      "status": "unknown",
+      "value": null,
+      "unit": "none",
+      "source_files": [
+        "assumptions.json",
+        "simulation.json"
+      ],
+      "formula": "stable_non_dominated_and_explainable_AI_candidate_minus_B1_on_held_out_scenarios",
+      "confidence": "unknown",
+      "assumptions": [
+        "A-ABLATED-AI-001"
+      ],
+      "reason": "The ablation protocol is specified but not executed on authorised inputs."
+    },
+    "pilot_cost_cny": {
+      "status": "unknown",
+      "value": null,
+      "unit": "none",
+      "source_files": [
+        "assumptions.json",
+        "simulation.json"
+      ],
+      "formula": "professional_scope + measurement + reversible_mockup + maintenance + insurance + restoration",
+      "confidence": "unknown",
+      "assumptions": [
+        "A-COST-001"
+      ],
+      "reason": "No authorised quantities or comparable quotations; only cost buckets and pricing gates are stated."
+    },
+    "dazhongsi_geometry_anchor": {
+      "status": "unknown",
+      "value": null,
+      "unit": "none",
+      "source_files": [
+        "geometry/key_areas.geojson",
+        "assumptions.json"
+      ],
+      "formula": "canonical_geometry_and_station_city_evidence_review",
+      "confidence": "unknown",
+      "assumptions": [
+        "A-DAZHONGSI-ANCHOR-001"
+      ],
+      "reason": "PROV-KEY-003 remains unanchored."
+    }
+  }
+}

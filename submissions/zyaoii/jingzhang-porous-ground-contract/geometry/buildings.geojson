@@ -1,0 +1,300 @@
+{
+  "type": "FeatureCollection",
+  "name": "porous_ground_contract_section_interfaces",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "BLDG-PGC-01",
+      "properties": {
+        "id": "BLDG-PGC-01",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "conceptual_only": true,
+        "official_boundary": false,
+        "authorization_status": "UNKNOWN",
+        "real_world_performance_claimed": false,
+        "building_type": "mixed_use",
+        "name_zh": "南部大钟寺类型：换乘—静侧源侧概念界面",
+        "name_en": "Southern Dazhongsi type: arrival to quiet side conceptual source-side interface",
+        "area_id": "dazhongsi_ai_industry_cluster",
+        "retain_renovate_demolish": "UNKNOWN",
+        "area_sqm_declared": 3570.0,
+        "usage_note": "仅表达源侧与开口错位关系，不是现状建筑、真实声/排放源、拆改留判断或报建轮廓。"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34679807184669,
+              39.94646451857219
+            ],
+            [
+              116.34676049842982,
+              39.94676935170279
+            ],
+            [
+              116.34798360427972,
+              39.946858655693696
+            ],
+            [
+              116.34802117232731,
+              39.94655382212804
+            ],
+            [
+              116.34679807184669,
+              39.94646451857219
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-PGC-02",
+      "properties": {
+        "id": "BLDG-PGC-02",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "conceptual_only": true,
+        "official_boundary": false,
+        "authorization_status": "UNKNOWN",
+        "real_world_performance_claimed": false,
+        "building_type": "mixed_use",
+        "name_zh": "南部大钟寺类型：换乘—静侧接收侧概念界面",
+        "name_en": "Southern Dazhongsi type: arrival to quiet side conceptual receiver-side interface",
+        "area_id": "dazhongsi_ai_industry_cluster",
+        "retain_renovate_demolish": "UNKNOWN",
+        "area_sqm_declared": 2880.0,
+        "usage_note": "仅表达人的停留/学习/等待接收面，不是现状建筑、人口分布、拆改留判断或工程方案。"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34907105114046,
+              39.9472508961209
+            ],
+            [
+              116.34909298275365,
+              39.947520546431896
+            ],
+            [
+              116.35021408779662,
+              39.94746652450972
+            ],
+            [
+              116.350192151793,
+              39.94719687437315
+            ],
+            [
+              116.34907105114046,
+              39.9472508961209
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-PGC-03",
+      "properties": {
+        "id": "BLDG-PGC-03",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "conceptual_only": true,
+        "official_boundary": false,
+        "authorization_status": "UNKNOWN",
+        "real_world_performance_claimed": false,
+        "building_type": "education",
+        "name_zh": "中部AI原点：穿行—停留源侧概念界面",
+        "name_en": "Central AI Origin: passage to dwell conceptual source-side interface",
+        "area_id": "beijing_ai_origin_community",
+        "retain_renovate_demolish": "UNKNOWN",
+        "area_sqm_declared": 3570.0,
+        "usage_note": "仅表达源侧与开口错位关系，不是现状建筑、真实声/排放源、拆改留判断或报建轮廓。"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34582163797874,
+              39.98800548560766
+            ],
+            [
+              116.34574963894339,
+              39.988306635102134
+            ],
+            [
+              116.34695870623618,
+              39.98847766269144
+            ],
+            [
+              116.34703070016194,
+              39.98817651241349
+            ],
+            [
+              116.34582163797874,
+              39.98800548560766
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-PGC-04",
+      "properties": {
+        "id": "BLDG-PGC-04",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "conceptual_only": true,
+        "official_boundary": false,
+        "authorization_status": "UNKNOWN",
+        "real_world_performance_claimed": false,
+        "building_type": "education",
+        "name_zh": "中部AI原点：穿行—停留接收侧概念界面",
+        "name_en": "Central AI Origin: passage to dwell conceptual receiver-side interface",
+        "area_id": "beijing_ai_origin_community",
+        "retain_renovate_demolish": "UNKNOWN",
+        "area_sqm_declared": 2880.0,
+        "usage_note": "仅表达人的停留/学习/等待接收面，不是现状建筑、人口分布、拆改留判断或工程方案。"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34806300442915,
+              39.988861848239594
+            ],
+            [
+              116.34810934343858,
+              39.98912966287436
+            ],
+            [
+              116.34922349872947,
+              39.98901559676058
+            ],
+            [
+              116.34917715543375,
+              39.98874778253177
+            ],
+            [
+              116.34806300442915,
+              39.988861848239594
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-PGC-05",
+      "properties": {
+        "id": "BLDG-PGC-05",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "conceptual_only": true,
+        "official_boundary": false,
+        "authorization_status": "UNKNOWN",
+        "real_world_performance_claimed": false,
+        "building_type": "lab",
+        "name_zh": "北部众智园：源—公众源侧概念界面",
+        "name_en": "Northern Zhongzhiyuan: source to public conceptual source-side interface",
+        "area_id": "zhongzhiyuan_ai_acceleration_area",
+        "retain_renovate_demolish": "UNKNOWN",
+        "area_sqm_declared": 3570.0,
+        "usage_note": "仅表达源侧与开口错位关系，不是现状建筑、真实声/排放源、拆改留判断或报建轮廓。"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3468498668846,
+              40.01621828041209
+            ],
+            [
+              116.34674397897845,
+              40.0165134562356
+            ],
+            [
+              116.34792955776012,
+              40.01676488241921
+            ],
+            [
+              116.348035440976,
+              40.016469705487296
+            ],
+            [
+              116.3468498668846,
+              40.01621828041209
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-PGC-06",
+      "properties": {
+        "id": "BLDG-PGC-06",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "conceptual_only": true,
+        "official_boundary": false,
+        "authorization_status": "UNKNOWN",
+        "real_world_performance_claimed": false,
+        "building_type": "lab",
+        "name_zh": "北部众智园：源—公众接收侧概念界面",
+        "name_en": "Northern Zhongzhiyuan: source to public conceptual receiver-side interface",
+        "area_id": "zhongzhiyuan_ai_acceleration_area",
+        "retain_renovate_demolish": "UNKNOWN",
+        "area_sqm_declared": 2880.0,
+        "usage_note": "仅表达人的停留/学习/等待接收面，不是现状建筑、人口分布、拆改留判断或工程方案。"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34905767953292,
+              40.017143164758345
+            ],
+            [
+              116.34912822453,
+              40.01740783898054
+            ],
+            [
+              116.35022977389313,
+              40.017234263833224
+            ],
+            [
+              116.35015922480078,
+              40.016969590241175
+            ],
+            [
+              116.34905767953292,
+              40.017143164758345
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

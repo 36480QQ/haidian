@@ -1,0 +1,803 @@
+{
+  "schema_version": "0.1.0",
+  "simulation_scope": "protocol_only_no_field_or_model_result",
+  "task_count": 12,
+  "tasks": [
+    {
+      "id": "SC-01",
+      "name_zh": "北部设备/活动源未知",
+      "name_en": "Unknown northern equipment/activity source",
+      "area": "zhongzhiyuan",
+      "persona_ids": [
+        "P-04",
+        "P-01"
+      ],
+      "disturbance": "source inventory absent",
+      "b1": "NO-GO; draw no exposure claim",
+      "ai": "not run",
+      "human_gate": "named source inventory and professional protocol",
+      "stop": "source or public route cannot be separated",
+      "industry_test": false,
+      "task_type": "pre_registered_protocol_case",
+      "outcome": "not_run_no_authority",
+      "evidence_grade": "E0",
+      "real_world_result": false,
+      "input_version": "E0-PROTOCOL-2026-08-12",
+      "discard_reason": "not run: no authorised real transect or E3/E4 evidence"
+    },
+    {
+      "id": "SC-02",
+      "name_zh": "源侧需要交换但公众侧需安静",
+      "name_en": "Source-side exchange versus public quiet",
+      "area": "zhongzhiyuan",
+      "persona_ids": [
+        "P-04",
+        "P-02"
+      ],
+      "disturbance": "open-too-little / open-too-straight conflict",
+      "b1": "stagger opening, continuous shade, quiet-side pocket",
+      "ai": "search explainable non-dominated variants only",
+      "human_gate": "planning+acoustics+environment+access review",
+      "stop": "any no-harm dimension degrades",
+      "industry_test": true,
+      "task_type": "pre_registered_protocol_case",
+      "outcome": "not_run_no_authority",
+      "evidence_grade": "E0",
+      "real_world_result": false,
+      "input_version": "E0-PROTOCOL-2026-08-12",
+      "discard_reason": "not run: no authorised real transect or E3/E4 evidence"
+    },
+    {
+      "id": "SC-03",
+      "name_zh": "断网、断电、模型退出",
+      "name_en": "Network, power or model outage",
+      "area": "zhongzhiyuan",
+      "persona_ids": [
+        "P-01",
+        "P-06"
+      ],
+      "disturbance": "digital layer absent",
+      "b1": "path, shade, stagger and quiet side remain",
+      "ai": "deleted without service loss",
+      "human_gate": "zero-power walk-through",
+      "stop": "basic route depends on device",
+      "industry_test": false,
+      "task_type": "pre_registered_protocol_case",
+      "outcome": "not_run_no_authority",
+      "evidence_grade": "E0",
+      "real_world_result": false,
+      "input_version": "E0-PROTOCOL-2026-08-12",
+      "discard_reason": "not run: no authorised real transect or E3/E4 evidence"
+    },
+    {
+      "id": "SC-04",
+      "name_zh": "中部日常穿行高峰",
+      "name_en": "Central daily passage peak",
+      "area": "ai_origin",
+      "persona_ids": [
+        "P-01",
+        "P-03"
+      ],
+      "disturbance": "movement pressure",
+      "b1": "multi-directional obstacle-free passage with staggered openings",
+      "ai": "compare passage/noise/shade trade-offs",
+      "human_gate": "campus/community authority and accessibility walk",
+      "stop": "route narrows, gates or excludes",
+      "industry_test": false,
+      "task_type": "pre_registered_protocol_case",
+      "outcome": "not_run_no_authority",
+      "evidence_grade": "E0",
+      "real_world_result": false,
+      "input_version": "E0-PROTOCOL-2026-08-12",
+      "discard_reason": "not run: no authorised real transect or E3/E4 evidence"
+    },
+    {
+      "id": "SC-05",
+      "name_zh": "学习停留面被直线导噪",
+      "name_en": "Direct noise path reaches a learning edge",
+      "area": "ai_origin",
+      "persona_ids": [
+        "P-03",
+        "P-05"
+      ],
+      "disturbance": "open-too-straight",
+      "b1": "dog-leg court and quiet inner edge",
+      "ai": "may propose alternatives, never certify",
+      "human_gate": "paired acoustic method and professional review",
+      "stop": "quiet receiver worsens",
+      "industry_test": true,
+      "task_type": "pre_registered_protocol_case",
+      "outcome": "not_run_no_authority",
+      "evidence_grade": "E0",
+      "real_world_result": false,
+      "input_version": "E0-PROTOCOL-2026-08-12",
+      "discard_reason": "not run: no authorised real transect or E3/E4 evidence"
+    },
+    {
+      "id": "SC-06",
+      "name_zh": "儿童/照护者与无障碍同行走查",
+      "name_en": "Child/caregiver and accessibility accompanied walk",
+      "area": "ai_origin",
+      "persona_ids": [
+        "P-01",
+        "P-03"
+      ],
+      "disturbance": "shade, visibility or path continuity failure",
+      "b1": "paper plan plus accompanied walk",
+      "ai": "cannot infer vulnerability",
+      "human_gate": "qualified accessibility/fire review",
+      "stop": "any barrier or unsafe conflict",
+      "industry_test": false,
+      "task_type": "pre_registered_protocol_case",
+      "outcome": "not_run_no_authority",
+      "evidence_grade": "E0",
+      "real_world_result": false,
+      "input_version": "E0-PROTOCOL-2026-08-12",
+      "discard_reason": "not run: no authorised real transect or E3/E4 evidence"
+    },
+    {
+      "id": "SC-07",
+      "name_zh": "南部到达源与静侧等待",
+      "name_en": "Southern arrival source versus quiet waiting",
+      "area": "dazhongsi_type",
+      "persona_ids": [
+        "P-02",
+        "P-05"
+      ],
+      "disturbance": "arrival activity could transmit through a straight opening",
+      "b1": "covered threshold, turn court, quiet inner side",
+      "ai": "type-study search only",
+      "human_gate": "canonical geometry and transport/source evidence",
+      "stop": "PROV-KEY-003 used as a real site",
+      "industry_test": false,
+      "task_type": "pre_registered_protocol_case",
+      "outcome": "not_run_no_authority",
+      "evidence_grade": "E0",
+      "real_world_result": false,
+      "input_version": "E0-PROTOCOL-2026-08-12",
+      "discard_reason": "not run: no authorised real transect or E3/E4 evidence"
+    },
+    {
+      "id": "SC-08",
+      "name_zh": "大钟寺几何未锚定",
+      "name_en": "Dazhongsi geometry remains unanchored",
+      "area": "dazhongsi_type",
+      "persona_ids": [
+        "P-05",
+        "P-06"
+      ],
+      "disturbance": "temporary polygon may be displaced",
+      "b1": "keep type diagram off-site and UNKNOWN",
+      "ai": "disabled for siting",
+      "human_gate": "official/canonical geometry",
+      "stop": "station exit, quadrant, distance or capacity claimed",
+      "industry_test": false,
+      "task_type": "pre_registered_protocol_case",
+      "outcome": "not_run_no_authority",
+      "evidence_grade": "E0",
+      "real_world_result": false,
+      "input_version": "E0-PROTOCOL-2026-08-12",
+      "discard_reason": "not run: no authorised real transect or E3/E4 evidence"
+    },
+    {
+      "id": "SC-09",
+      "name_zh": "传感器漂移或缺测",
+      "name_en": "Sensor drift or missing data",
+      "area": "all",
+      "persona_ids": [
+        "P-06"
+      ],
+      "disturbance": "evidence not comparable",
+      "b1": "suspend conclusions; passive form remains",
+      "ai": "output discarded",
+      "human_gate": "co-location/calibration and signed data-quality note",
+      "stop": "precise result shown despite failed QA",
+      "industry_test": false,
+      "task_type": "pre_registered_protocol_case",
+      "outcome": "not_run_no_authority",
+      "evidence_grade": "E0",
+      "real_world_result": false,
+      "input_version": "E0-PROTOCOL-2026-08-12",
+      "discard_reason": "not run: no authorised real transect or E3/E4 evidence"
+    },
+    {
+      "id": "SC-10",
+      "name_zh": "AI相对B1无稳定增益",
+      "name_en": "AI has no stable gain over B1",
+      "area": "all",
+      "persona_ids": [
+        "P-04",
+        "P-06"
+      ],
+      "disturbance": "held-out or perturbation test failure",
+      "b1": "retain manual passive design",
+      "ai": "delete AI",
+      "human_gate": "blind multi-professional review",
+      "stop": "KPI changed to preserve AI",
+      "industry_test": true,
+      "task_type": "pre_registered_protocol_case",
+      "outcome": "not_run_no_authority",
+      "evidence_grade": "E0",
+      "real_world_result": false,
+      "input_version": "E0-PROTOCOL-2026-08-12",
+      "discard_reason": "not run: no authorised real transect or E3/E4 evidence"
+    },
+    {
+      "id": "SC-11",
+      "name_zh": "公众投诉或多物理负向结果",
+      "name_en": "Complaint or adverse multi-physics result",
+      "area": "authorised_pilot_only",
+      "persona_ids": [
+        "P-01",
+        "P-02",
+        "P-03"
+      ],
+      "disturbance": "noise, wind discomfort, access or maintenance harm",
+      "b1": "close reversible pilot and restore",
+      "ai": "cannot override",
+      "human_gate": "named operator plus qualified professional",
+      "stop": "single benefit used to offset harm",
+      "industry_test": false,
+      "task_type": "pre_registered_protocol_case",
+      "outcome": "not_run_no_authority",
+      "evidence_grade": "E0",
+      "real_world_result": false,
+      "input_version": "E0-PROTOCOL-2026-08-12",
+      "discard_reason": "not run: no authorised real transect or E3/E4 evidence"
+    },
+    {
+      "id": "SC-12",
+      "name_zh": "90日结束与资产退出",
+      "name_en": "Day-90 closeout and asset exit",
+      "area": "authorised_pilot_only",
+      "persona_ids": [
+        "P-06"
+      ],
+      "disturbance": "pilot could become indefinite",
+      "b1": "signed PASS/REVISE/STOP and RESTORED receipt",
+      "ai": "archive model/version or delete",
+      "human_gate": "operator, professional and independent record sign-off",
+      "stop": "temporary occupation continues without new authority",
+      "industry_test": false,
+      "task_type": "pre_registered_protocol_case",
+      "outcome": "not_run_no_authority",
+      "evidence_grade": "E0",
+      "real_world_result": false,
+      "input_version": "E0-PROTOCOL-2026-08-12",
+      "discard_reason": "not run: no authorised real transect or E3/E4 evidence"
+    }
+  ],
+  "real_world_performance_claimed": false,
+  "current_implementation_state": "UNKNOWN_NO_GO",
+  "concept_spatial_gate": "C-S candidate; requires visual blind review",
+  "implementation_gate": "C-I HOLD until E3/E4",
+  "design_evidence": {
+    "public_service_atom": {
+      "zh": "在零电、断网、无模型状态下，人仍可沿连续无障碍阴影路径穿过一个可交换但不直送噪声的地面层，并在静侧停留。",
+      "en": "With power, network and model off, a person can still cross an exchange-capable ground layer on a continuous accessible shaded path without a direct noise path, and can pause on the quiet side."
+    },
+    "causal_contract": {
+      "headline_zh": "让地面打开，不让噪声直送到人。",
+      "headline_en": "OPEN THE GROUND, NOT A DIRECT NOISE PATH.",
+      "source": "verified traffic/equipment/activity/emission source or explicitly UNKNOWN hypothesis",
+      "path": "sealed, straight-through, or staggered/shaded/buffered ground section",
+      "receiver": "walking, learning, waiting, working or resting human surface",
+      "no_harm": [
+        "air_exchange",
+        "thermal_exposure",
+        "noise",
+        "accessibility",
+        "fire_evacuation",
+        "maintenance"
+      ]
+    },
+    "prototypes": [
+      {
+        "id": "PR-NORTH",
+        "area": "zhongzhiyuan",
+        "chain_zh": "源—公众",
+        "chain_en": "source to public",
+        "passive_form": "source-side control + staggered porosity + shaded public walk + quiet review pocket",
+        "known_status": "hypothesis; real source and operator UNKNOWN"
+      },
+      {
+        "id": "PR-MIDDLE",
+        "area": "ai_origin",
+        "chain_zh": "穿行—停留",
+        "chain_en": "passage to dwell",
+        "passive_form": "multi-directional passage + dog-leg shared court + quiet learning edge",
+        "known_status": "hypothesis; title, schedule and community authority UNKNOWN"
+      },
+      {
+        "id": "PR-SOUTH",
+        "area": "dazhongsi_type",
+        "chain_zh": "换乘—静侧",
+        "chain_en": "arrival to quiet side",
+        "passive_form": "outer arrival edge + covered threshold + turn court + quiet inner side",
+        "known_status": "type only; PROV-KEY-003 UNANCHORED"
+      }
+    ],
+    "two_wings": [
+      {
+        "id": "WING-ZGC",
+        "name_zh": "中关村科技服务翼",
+        "name_en": "Zhongguancun Technology Service Wing",
+        "exchange": "versioned rules, professional methods, tool manifests and negative-result/replay assets",
+        "prohibition": "no automatic transfer of geometry, thresholds or claimed outcomes"
+      },
+      {
+        "id": "WING-XIAOYUEHE",
+        "name_zh": "小月河场景赋能翼",
+        "name_en": "Xiaoyue River Scenario Empowerment Wing",
+        "exchange": "authorised de-identified scenario methods and ordinary maintenance lessons",
+        "prohibition": "no transfer without new B1, source registry, authority and no-harm review"
+      }
+    ],
+    "phase_i_section_c_candidate": {
+      "status": "PUBLIC_SITE_SPECIFIC_CONTEXT_BUT_NO_GO",
+      "location_context": "Official registers describe Jing-Zhang Railway Heritage Park Phase I Section C from Zhichun Road to the North Fourth Ring.",
+      "why_candidate": "A public park entry, emergency-shelter role and documented competent-unit lead make an authorisation request more concrete than an invented key-area point.",
+      "candidate_contact": "Haidian District Park Management Center, as listed competent unit; no consent or pilot duty is implied.",
+      "hard_no_harm": [
+        "emergency_shelter_function",
+        "evacuation",
+        "fire_access",
+        "barrier_free_continuity"
+      ],
+      "still_unknown": [
+        "written_authority",
+        "exact_transect",
+        "current_source_inventory",
+        "fire_and_emergency_protocol",
+        "accessibility",
+        "paired_environmental_baseline",
+        "maintenance_and_restoration_duties"
+      ],
+      "not_a_key_area_anchor": true,
+      "not_an_approved_pilot": true
+    },
+    "ablation": {
+      "B0": "authorised read-only paired baseline; no spatial change",
+      "B1": "manual professional rule baseline: source-side first, stagger openings, continuous shade, quiet side, accessibility/fire no-harm",
+      "P": "explainable passive parameter family: opening position, offset, buffer depth, shade continuity, receiver position and maintenance access",
+      "A": "design-time AI Pareto search on frozen authorised/synthetic inputs; no field control",
+      "adoption_gate": "AI survives only when stable on held-out/perturbed scenarios, explainable as a drawable spatial consequence, non-dominated relative to B1, and accepted by named professionals.",
+      "deletion_rule": "If no stable net gain exists, delete AI and retain B1; no KPI substitution is allowed."
+    },
+    "evidence_ladder": [
+      {
+        "id": "E0",
+        "meaning": "concept hypothesis, agent-generated illustration or synthetic protocol"
+      },
+      {
+        "id": "E1",
+        "meaning": "repository brief, rough provisional geometry and public regional context"
+      },
+      {
+        "id": "E2",
+        "meaning": "authoritative standards/guides and transparent methods; not a site baseline"
+      },
+      {
+        "id": "E3",
+        "meaning": "authorised transect, survey, paired measurement, co-location/calibration and named method record"
+      },
+      {
+        "id": "E4",
+        "meaning": "written pilot authority, reversible mock-up, qualified sign-off, negative results and restoration evidence"
+      }
+    ],
+    "state_machine": {
+      "ai_transition_authority": false,
+      "states": [
+        "UNKNOWN_NO_GO",
+        "BASELINED",
+        "B1_READY",
+        "AI_COMPARED",
+        "MOCKUP_AUTHORIZED",
+        "PILOT_OPEN",
+        "EVALUATING",
+        "PASS_REVISE_STOPPED",
+        "RESTORED"
+      ],
+      "current": "UNKNOWN_NO_GO",
+      "terminal_requirement": "Every pilot path, including PASS, ends in a signed RESTORED or newly authorised next-stage record."
+    },
+    "pilot_90_days": [
+      {
+        "days": "0-15",
+        "state": "UNKNOWN_NO_GO",
+        "deliverable": "authority, RACI, real transect, source inventory, fire/access/privacy and restoration budget",
+        "fail": "concept work only"
+      },
+      {
+        "days": "16-30",
+        "state": "BASELINED",
+        "deliverable": "paired B0 and instrument co-location/calibration",
+        "fail": "return UNKNOWN"
+      },
+      {
+        "days": "31-45",
+        "state": "B1_READY_AI_COMPARED",
+        "deliverable": "B1, frozen inputs, held-out AI ablation and rejected alternatives",
+        "fail": "delete AI or redraw"
+      },
+      {
+        "days": "46-70",
+        "state": "MOCKUP_AUTHORIZED_PILOT_OPEN",
+        "deliverable": "only authorised reversible shade/stagger/buffer mock-up with daily human opening check",
+        "fail": "close and restore"
+      },
+      {
+        "days": "71-84",
+        "state": "EVALUATING",
+        "deliverable": "matched remeasurement, missingness, complaints and negative results",
+        "fail": "no causal claim"
+      },
+      {
+        "days": "85-90",
+        "state": "PASS_REVISE_STOPPED_TO_RESTORED",
+        "deliverable": "named decision, removal/retention authority, restoration and asset disposition",
+        "fail": "cannot remain open under pilot label"
+      }
+    ],
+    "personas": [
+      {
+        "id": "P-01",
+        "name_zh": "行动不便或推婴儿车的穿行者",
+        "name_en": "Mobility-limited traveller or caregiver with a stroller",
+        "minimum_right": "continuous obstacle-free shaded path without a phone"
+      },
+      {
+        "id": "P-02",
+        "name_zh": "户外劳动与夜班人员",
+        "name_en": "Outdoor and night-shift worker",
+        "minimum_right": "truthful passive conditions and a quiet rest edge"
+      },
+      {
+        "id": "P-03",
+        "name_zh": "高校师生与社区学习者",
+        "name_en": "Student, researcher and neighbourhood learner",
+        "minimum_right": "passage without turning the study edge into a noise receiver"
+      },
+      {
+        "id": "P-04",
+        "name_zh": "研发/试验一线人员",
+        "name_en": "R&D or test-floor worker",
+        "minimum_right": "source-side ventilation study without exposing the public"
+      },
+      {
+        "id": "P-05",
+        "name_zh": "换乘访客与国际到访者",
+        "name_en": "Transfer passenger and international visitor",
+        "minimum_right": "legible arrival-to-quiet-side sequence without surveillance or app dependence"
+      },
+      {
+        "id": "P-06",
+        "name_zh": "维护与专业复核人员",
+        "name_en": "Maintenance and professional review worker",
+        "minimum_right": "bounded duties, safe access, negative-result logging and restoration authority"
+      }
+    ],
+    "scenarios": [
+      {
+        "id": "SC-01",
+        "name_zh": "北部设备/活动源未知",
+        "name_en": "Unknown northern equipment/activity source",
+        "area": "zhongzhiyuan",
+        "persona_ids": [
+          "P-04",
+          "P-01"
+        ],
+        "disturbance": "source inventory absent",
+        "b1": "NO-GO; draw no exposure claim",
+        "ai": "not run",
+        "human_gate": "named source inventory and professional protocol",
+        "stop": "source or public route cannot be separated",
+        "industry_test": false
+      },
+      {
+        "id": "SC-02",
+        "name_zh": "源侧需要交换但公众侧需安静",
+        "name_en": "Source-side exchange versus public quiet",
+        "area": "zhongzhiyuan",
+        "persona_ids": [
+          "P-04",
+          "P-02"
+        ],
+        "disturbance": "open-too-little / open-too-straight conflict",
+        "b1": "stagger opening, continuous shade, quiet-side pocket",
+        "ai": "search explainable non-dominated variants only",
+        "human_gate": "planning+acoustics+environment+access review",
+        "stop": "any no-harm dimension degrades",
+        "industry_test": true
+      },
+      {
+        "id": "SC-03",
+        "name_zh": "断网、断电、模型退出",
+        "name_en": "Network, power or model outage",
+        "area": "zhongzhiyuan",
+        "persona_ids": [
+          "P-01",
+          "P-06"
+        ],
+        "disturbance": "digital layer absent",
+        "b1": "path, shade, stagger and quiet side remain",
+        "ai": "deleted without service loss",
+        "human_gate": "zero-power walk-through",
+        "stop": "basic route depends on device",
+        "industry_test": false
+      },
+      {
+        "id": "SC-04",
+        "name_zh": "中部日常穿行高峰",
+        "name_en": "Central daily passage peak",
+        "area": "ai_origin",
+        "persona_ids": [
+          "P-01",
+          "P-03"
+        ],
+        "disturbance": "movement pressure",
+        "b1": "multi-directional obstacle-free passage with staggered openings",
+        "ai": "compare passage/noise/shade trade-offs",
+        "human_gate": "campus/community authority and accessibility walk",
+        "stop": "route narrows, gates or excludes",
+        "industry_test": false
+      },
+      {
+        "id": "SC-05",
+        "name_zh": "学习停留面被直线导噪",
+        "name_en": "Direct noise path reaches a learning edge",
+        "area": "ai_origin",
+        "persona_ids": [
+          "P-03",
+          "P-05"
+        ],
+        "disturbance": "open-too-straight",
+        "b1": "dog-leg court and quiet inner edge",
+        "ai": "may propose alternatives, never certify",
+        "human_gate": "paired acoustic method and professional review",
+        "stop": "quiet receiver worsens",
+        "industry_test": true
+      },
+      {
+        "id": "SC-06",
+        "name_zh": "儿童/照护者与无障碍同行走查",
+        "name_en": "Child/caregiver and accessibility accompanied walk",
+        "area": "ai_origin",
+        "persona_ids": [
+          "P-01",
+          "P-03"
+        ],
+        "disturbance": "shade, visibility or path continuity failure",
+        "b1": "paper plan plus accompanied walk",
+        "ai": "cannot infer vulnerability",
+        "human_gate": "qualified accessibility/fire review",
+        "stop": "any barrier or unsafe conflict",
+        "industry_test": false
+      },
+      {
+        "id": "SC-07",
+        "name_zh": "南部到达源与静侧等待",
+        "name_en": "Southern arrival source versus quiet waiting",
+        "area": "dazhongsi_type",
+        "persona_ids": [
+          "P-02",
+          "P-05"
+        ],
+        "disturbance": "arrival activity could transmit through a straight opening",
+        "b1": "covered threshold, turn court, quiet inner side",
+        "ai": "type-study search only",
+        "human_gate": "canonical geometry and transport/source evidence",
+        "stop": "PROV-KEY-003 used as a real site",
+        "industry_test": false
+      },
+      {
+        "id": "SC-08",
+        "name_zh": "大钟寺几何未锚定",
+        "name_en": "Dazhongsi geometry remains unanchored",
+        "area": "dazhongsi_type",
+        "persona_ids": [
+          "P-05",
+          "P-06"
+        ],
+        "disturbance": "temporary polygon may be displaced",
+        "b1": "keep type diagram off-site and UNKNOWN",
+        "ai": "disabled for siting",
+        "human_gate": "official/canonical geometry",
+        "stop": "station exit, quadrant, distance or capacity claimed",
+        "industry_test": false
+      },
+      {
+        "id": "SC-09",
+        "name_zh": "传感器漂移或缺测",
+        "name_en": "Sensor drift or missing data",
+        "area": "all",
+        "persona_ids": [
+          "P-06"
+        ],
+        "disturbance": "evidence not comparable",
+        "b1": "suspend conclusions; passive form remains",
+        "ai": "output discarded",
+        "human_gate": "co-location/calibration and signed data-quality note",
+        "stop": "precise result shown despite failed QA",
+        "industry_test": false
+      },
+      {
+        "id": "SC-10",
+        "name_zh": "AI相对B1无稳定增益",
+        "name_en": "AI has no stable gain over B1",
+        "area": "all",
+        "persona_ids": [
+          "P-04",
+          "P-06"
+        ],
+        "disturbance": "held-out or perturbation test failure",
+        "b1": "retain manual passive design",
+        "ai": "delete AI",
+        "human_gate": "blind multi-professional review",
+        "stop": "KPI changed to preserve AI",
+        "industry_test": true
+      },
+      {
+        "id": "SC-11",
+        "name_zh": "公众投诉或多物理负向结果",
+        "name_en": "Complaint or adverse multi-physics result",
+        "area": "authorised_pilot_only",
+        "persona_ids": [
+          "P-01",
+          "P-02",
+          "P-03"
+        ],
+        "disturbance": "noise, wind discomfort, access or maintenance harm",
+        "b1": "close reversible pilot and restore",
+        "ai": "cannot override",
+        "human_gate": "named operator plus qualified professional",
+        "stop": "single benefit used to offset harm",
+        "industry_test": false
+      },
+      {
+        "id": "SC-12",
+        "name_zh": "90日结束与资产退出",
+        "name_en": "Day-90 closeout and asset exit",
+        "area": "authorised_pilot_only",
+        "persona_ids": [
+          "P-06"
+        ],
+        "disturbance": "pilot could become indefinite",
+        "b1": "signed PASS/REVISE/STOP and RESTORED receipt",
+        "ai": "archive model/version or delete",
+        "human_gate": "operator, professional and independent record sign-off",
+        "stop": "temporary occupation continues without new authority",
+        "industry_test": false
+      }
+    ],
+    "pilgrimage_nodes": [
+      {
+        "id": "PL-01",
+        "name_zh": "开口账本",
+        "name_en": "The Opening Ledger",
+        "area": "zhongzhiyuan",
+        "content": "B1, AI alternatives, rejected solutions, uncertainty and public no-harm contract",
+        "site_status": "conceptual"
+      },
+      {
+        "id": "PL-02",
+        "name_zh": "弯折庭",
+        "name_en": "The Turn Court",
+        "area": "ai_origin",
+        "content": "full-scale legible dog-leg relation between passage and quiet learning side",
+        "site_status": "conceptual"
+      },
+      {
+        "id": "PL-03",
+        "name_zh": "复原签收台",
+        "name_en": "The Restore Table",
+        "area": "dazhongsi_type",
+        "content": "public record of stop, restoration and asset exit; type location only",
+        "site_status": "UNANCHORED"
+      }
+    ],
+    "culture_and_operation": [
+      {
+        "season": "spring",
+        "name_zh": "百年断面公开课",
+        "name_en": "Centennial Section Open Class",
+        "purpose": "rail engineering history, urban sections and public-interest design literacy; historical claims require curatorial review"
+      },
+      {
+        "season": "summer",
+        "name_zh": "开合盲测周",
+        "name_en": "Porosity Blind-Test Week",
+        "purpose": "B1 versus anonymous alternative review; no public-space automatic control"
+      },
+      {
+        "season": "autumn",
+        "name_zh": "负样本展",
+        "name_en": "Negative Results Exhibition",
+        "purpose": "show discarded AI, missing data, complaints and non-transferable cases"
+      },
+      {
+        "season": "winter",
+        "name_zh": "复原签收日",
+        "name_en": "Restore and Sign-off Day",
+        "purpose": "close temporary occupation and publish asset destinations"
+      },
+      {
+        "season": "international",
+        "name_zh": "开放断面协议",
+        "name_en": "Open Section Protocol",
+        "purpose": "bilingual versioned method exchange through the two wings; every transfer repeats B1 and authority review"
+      }
+    ],
+    "cost_envelope": {
+      "monetary_total_cny": "UNKNOWN",
+      "precision_policy": "No fabricated quote. Authorised scope plus comparable quotations or applicable procurement basis precedes a ceiling.",
+      "buckets": [
+        {
+          "bucket": "professional_survey_and_protocol",
+          "quantity_basis": "one authorised test/control transect, multi-professional method and sign-off"
+        },
+        {
+          "bucket": "measurement_and_co_location",
+          "quantity_basis": "paired, calibrated instruments and weather/source logging; specification by professionals"
+        },
+        {
+          "bucket": "reversible_passive_mockup",
+          "quantity_basis": "shade, stagger screen/planter, tactile/ordinary signage and unobstructed maintenance access"
+        },
+        {
+          "bucket": "daily_operation_and_maintenance",
+          "quantity_basis": "named opening, inspection, cleaning/plant care, complaint and absence-cover labour"
+        },
+        {
+          "bucket": "insurance_legal_and_public_notice",
+          "quantity_basis": "scope-specific authority, safety, notification and complaint handling"
+        },
+        {
+          "bucket": "restoration_reserve",
+          "quantity_basis": "removal, surface repair, planting disposition, instrument return and evidence archive"
+        }
+      ]
+    },
+    "maintenance_contract": {
+      "before_open": [
+        "obstacle-free route",
+        "fire/evacuation condition",
+        "component stability",
+        "shade/quiet-side legibility",
+        "valid authority"
+      ],
+      "during_open": [
+        "daily named walk-through",
+        "scheduled planting/cleaning",
+        "instrument QA separate from public opening",
+        "complaint and missingness log"
+      ],
+      "absence_rule": "No named authorised cover means CLOSED/NO-GO; AI is not cover.",
+      "failure_rule": "Remove reversible elements and preserve base passage when ordinary maintenance fails."
+    },
+    "exit_assets": [
+      "versioned B1 rule set",
+      "AI environment/model manifest or deletion record",
+      "rejected-alternative ledger",
+      "paired-data dictionary without personal data",
+      "negative-result and complaint register",
+      "removed/reused component inventory",
+      "surface and access restoration receipt"
+    ],
+    "unknown_register": [
+      "canonical site/key geometry",
+      "Dazhongsi anchor",
+      "real buildings/roads/title",
+      "Section C exact transect and written authority",
+      "source inventory",
+      "weather/air/noise baseline",
+      "fire/emergency/accessibility protocol",
+      "operator/professional team",
+      "actual performance",
+      "cost and quotes",
+      "maintenance capacity",
+      "pilot authority"
+    ]
+  }
+}

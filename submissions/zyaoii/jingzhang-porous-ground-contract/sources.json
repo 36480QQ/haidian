@@ -1,0 +1,231 @@
+{
+  "schema_version": "0.1.0",
+  "sources": [
+    {
+      "id": "SITE-PACKAGE",
+      "path": "brief/site-package/",
+      "source_type": "official_public",
+      "usage": "Current project brief, schemas, enums, ranges, standards and allowed design space; repository authority for package structure, not proof of exact site conditions."
+    },
+    {
+      "id": "SOURCE-REGISTRY",
+      "path": "data/source_registry.json",
+      "source_type": "repository_public_registry",
+      "usage": "Repository source-use registry; formal/background/provisional distinctions are preserved."
+    },
+    {
+      "id": "PROCESSED-FACT-PACK",
+      "path": "data/processed/agent_fact_pack.md",
+      "source_type": "repository_processed_reference",
+      "usage": "Navigation for scopes, tasks and missing-data checks; not a new authority source."
+    },
+    {
+      "id": "BOUNDARY-SOURCE",
+      "path": "brief/site-package/geometry/provisional_boundaries.geojson",
+      "source_type": "agent_inferred_from_public_data",
+      "usage": "Rough provisional overall working geometry only; no official redline or precise area claim."
+    },
+    {
+      "id": "KEY-AREA-SOURCE",
+      "path": "brief/site-package/geometry/provisional_boundaries.geojson",
+      "source_type": "agent_inferred_from_public_data",
+      "usage": "Three rough key-area carriers only; PROV-KEY-003 remains unanchored to real Dazhongsi conditions."
+    },
+    {
+      "id": "OFFICIAL-ANNOUNCEMENT",
+      "title": "百年京张AI创新带城市设计国际方案征集资格预审公告",
+      "publisher": "北京市规划和自然资源委员会海淀分局",
+      "url": "https://ghzrzyw.beijing.gov.cn/zhengwuxinxi/tzgg/hd/202605/t20260509_4643047.html",
+      "source_type": "official_public",
+      "accessed_date": "2026-08-12",
+      "usage": "Official tasks, three scope levels, key-area names, design depth and deliverable context.",
+      "license_summary": "Official public page cited with attribution; page assets are not reused."
+    },
+    {
+      "id": "AGENT-TASKBOOK",
+      "path": "brief/site-package/agent_taskbook.json",
+      "source_type": "user_provided_cleared",
+      "usage": "Agent charter, three areas/two wings, six tasks, scenarios, personas, landmarks, culture, international communication and operations."
+    },
+    {
+      "id": "MEE-GB3095-2026",
+      "title": "GB 3095—2026 环境空气质量标准",
+      "publisher": "生态环境部",
+      "url": "https://www.mee.gov.cn/ywgz/fgbz/bz/bzwb/dqhjbh/dqhjzlbz/202602/t20260225_1144419.shtml",
+      "source_type": "official_public",
+      "accessed_date": "2026-08-12",
+      "usage": "Current air-quality terminology and measurement boundary only; not evidence of local concentration or morphology benefit.",
+      "license_summary": "Official standard page cited; text/media not redistributed."
+    },
+    {
+      "id": "MEE-GB3096-2008",
+      "title": "GB 3096—2008 声环境质量标准",
+      "publisher": "生态环境部",
+      "url": "https://www.mee.gov.cn/ywgz/fgbz/bz/bzwb/wlhj/shjzlbz/200809/t20080917_128815.shtml",
+      "source_type": "official_public",
+      "accessed_date": "2026-08-12",
+      "usage": "Sound-environment classification and evaluation context; the proposal assigns no local functional category or compliance result.",
+      "license_summary": "Official standard page cited; text/media not redistributed."
+    },
+    {
+      "id": "MEE-NOISE-LAW-2021",
+      "title": "中华人民共和国噪声污染防治法",
+      "publisher": "生态环境部",
+      "url": "https://www.mee.gov.cn/ywgz/fgbz/fl/202112/t20211225_965275.shtml",
+      "source_type": "official_public",
+      "accessed_date": "2026-08-12",
+      "usage": "Source-control and responsibility boundary; it identifies no project operator, source or permit.",
+      "license_summary": "Official legal text cited with attribution."
+    },
+    {
+      "id": "MEE-HJ24-2021",
+      "title": "HJ 2.4—2021 环境影响评价技术导则 声环境",
+      "publisher": "生态环境部",
+      "url": "https://www.mee.gov.cn/ywgz/hjyxpj/qyyghhjyxpj/jsdz/202204/t20220408_974129.shtml",
+      "source_type": "official_public",
+      "accessed_date": "2026-08-12",
+      "usage": "Method reference for source-path-receiver thinking; not a substitute for statutory EIA or a site acoustic study.",
+      "license_summary": "Official public guidance cited; no document image reused."
+    },
+    {
+      "id": "CMA-GBT37529-2019",
+      "title": "GB/T 37529—2019 城市总体规划气候可行性论证",
+      "publisher": "中国气象局",
+      "url": "https://www.cma.gov.cn/zfxxgk/gknr/flfgbz/bz/202209/P020220921706096728200.pdf",
+      "source_type": "official_public",
+      "accessed_date": "2026-08-12",
+      "usage": "Climate, ventilation potential, morphology and green-space evidence framework; not a local threshold or completed climate assessment.",
+      "license_summary": "Official PDF cited; PDF pages not redistributed."
+    },
+    {
+      "id": "CMA-QXT437-2018",
+      "title": "QX/T 437—2018 气候可行性论证规范 城市通风廊道",
+      "publisher": "中国气象局",
+      "url": "https://www.cma.gov.cn/zfxxgk/gknr/flfgbz/bz/202209/t20220921_5099143.html",
+      "source_type": "official_public",
+      "accessed_date": "2026-08-12",
+      "usage": "Evidence that ventilation-corridor claims require data and analysis; no official Jing-Zhang corridor is asserted.",
+      "license_summary": "Official standard page cited with attribution."
+    },
+    {
+      "id": "MOHURD-GB55016-2021",
+      "title": "GB 55016—2021 建筑环境通用规范",
+      "publisher": "住房和城乡建设部（北京市政府公开入口）",
+      "url": "https://www.beijing.gov.cn/zhengce/zhengcefagui/qtwj/202204/t20220412_2674315.html",
+      "source_type": "official_public",
+      "accessed_date": "2026-08-12",
+      "usage": "Building-interface environment reference; not a substitute for outdoor urban-design, acoustics or HVAC professional review.",
+      "license_summary": "Official public entry cited; document assets not redistributed."
+    },
+    {
+      "id": "BARRIER-FREE-ENVIRONMENT-LAW",
+      "title": "中华人民共和国无障碍环境建设法",
+      "publisher": "全国人民代表大会常务委员会",
+      "url": "https://www.gov.cn/yaowen/liebiao/202306/content_6888910.htm",
+      "source_type": "official_public",
+      "accessed_date": "2026-08-12",
+      "usage": "Accessibility and human-service boundary reference; this package is not a compliance certification.",
+      "license_summary": "Official legal text cited with attribution."
+    },
+    {
+      "id": "LADYBUG-TOOLS-METHOD",
+      "title": "Ladybug Tools",
+      "publisher": "Ladybug Tools community",
+      "url": "https://github.com/ladybug-tools",
+      "source_type": "official_public",
+      "accessed_date": "2026-08-12",
+      "usage": "Method library for weather, solar and comfort scenarios; no code, default data or visual asset is copied, and model output would require verified inputs.",
+      "license_summary": "Open repositories with component-specific licenses; method reference only."
+    },
+    {
+      "id": "OPENFOAM-METHOD",
+      "title": "OpenFOAM Foundation",
+      "publisher": "OpenFOAM Foundation",
+      "url": "https://github.com/OpenFOAM",
+      "source_type": "official_public",
+      "accessed_date": "2026-08-12",
+      "usage": "Method reference for expert CFD deepening; no model was run and no performance result is claimed.",
+      "license_summary": "GPL open-source ecosystem; method reference only, no code redistributed."
+    },
+    {
+      "id": "NOISEMODELLING-METHOD",
+      "title": "NoiseModelling",
+      "publisher": "Université Gustave Eiffel",
+      "url": "https://github.com/Universite-Gustave-Eiffel/NoiseModelling",
+      "source_type": "official_public",
+      "accessed_date": "2026-08-12",
+      "usage": "Method reference for source-propagation-receiver modelling; foreign defaults are not Chinese legal conclusions and no local simulation was run.",
+      "license_summary": "GPL-3.0; method reference only, no code or assets copied."
+    },
+    {
+      "id": "PYTHERMALCOMFORT-METHOD",
+      "title": "pythermalcomfort",
+      "publisher": "pythermalcomfort contributors",
+      "url": "https://github.com/CenterForTheBuiltEnvironment/pythermalcomfort",
+      "source_type": "official_public",
+      "accessed_date": "2026-08-12",
+      "usage": "Method reference for transparent comfort calculations; not a spatial model or local health conclusion.",
+      "license_summary": "MIT; method reference only, no code copied."
+    },
+    {
+      "id": "IMAGEGEN-PGC-001",
+      "title": "porous-ground-cutaway-concept-v1",
+      "publisher": "zyaoii × OpenAI Codex built-in image generation",
+      "path": "assets/media/cover.webp",
+      "provenance_path": "assets/media/cover-provenance.md",
+      "source_type": "agent_generated_design",
+      "accessed_date": "2026-08-12",
+      "usage": "E0 conceptual triptych only: sealed heat / straight noise path / staggered porosity with shade and quiet side. It is not used to derive geometry or performance.",
+      "license_summary": "Agent-generated without input or reference image; no external visual asset supplied. Caption required: AI-generated conceptual illustration / AI生成概念示意，不作为场地证据。"
+    },
+    {
+      "id": "BEIJING-EMERGENCY-JZ-C-2025",
+      "title": "北京市地震应急避难场所信息（京张铁路遗址公园一期C段条目）",
+      "publisher": "北京市应急管理局",
+      "url": "https://yjglj.beijing.gov.cn/art/2025/3/27/art_8716_685886.html",
+      "source_type": "official_public",
+      "publication_date": "2025-03-27",
+      "accessed_date": "2026-08-12",
+      "temporal_scope": "public register published 2025-03-27",
+      "usage": "Candidate-only site-specific public existence/management context: the register identifies Phase I Section C, Zhichun Road to North Fourth Ring, Category III, 118,300 sqm, for earthquake response with other hazards considered. It supports an authorisation/evidence-segment lead only.",
+      "limitations": "This public record is not pilot authorization and not a canonical key-area site. No canonical project transect, current operating condition, section geometry, source inventory, performance, capacity for this proposal, implementation permission or government commitment is inferred; the emergency function may not be weakened.",
+      "license_summary": "Official public register cited with attribution; page assets are not reused."
+    },
+    {
+      "id": "BEIJING-JZ-PARK-OPEN-2023",
+      "title": "京张铁路遗址公园一期开放相关公开报道",
+      "publisher": "首都之窗 / 北京市人民政府",
+      "url": "https://www.beijing.gov.cn/renwen/cshd/202306/t20230630_3150675.html",
+      "source_type": "official_public",
+      "accessed_date": "2026-08-12",
+      "temporal_scope": "published 2023-06-30",
+      "usage": "Site-specific public context: Phase I opened in 2023; the overall concept is about 9 km; the Line 13 under-bridge space was opened and limited cut-rail openings enabled east-west access; later phases and Line 13 capacity expansion remained future work.",
+      "limitations": "Historical public context, not a current survey, legal access guarantee, canonical design boundary, engineering drawing, pilot permission, accessibility certification or measured environmental baseline.",
+      "license_summary": "Official government portal page cited and paraphrased; no page image reused."
+    },
+    {
+      "id": "HAIDIAN-GOV-REPORT-2026",
+      "title": "2026年海淀区政府工作报告",
+      "publisher": "北京市海淀区人民政府",
+      "url": "https://zyk.bjhd.gov.cn/zwdt/xxgk/zfgzbg/202602/t20260209_4805226_hd.shtml",
+      "source_type": "official_public",
+      "accessed_date": "2026-08-12",
+      "temporal_scope": "2026 government work report",
+      "usage": "Current district-level context: corridor regulatory planning passed technical review; obtaining approval and advancing implementation remain stated next steps. The report also says main works in implementable Phase-II areas were completed.",
+      "limitations": "The report is not the final approved planning text, canonical polygon, project approval, land/title record, funding commitment or permission for this proposal; exact controls must come from the authorised planning documents.",
+      "license_summary": "Official public report cited and paraphrased; no page assets reused."
+    },
+    {
+      "id": "BEIJING-PARK-DIRECTORY-2025",
+      "title": "北京市公园名录（2025年）",
+      "publisher": "北京市园林绿化局",
+      "url": "https://yllhj.beijing.gov.cn/ggfw/bjsggml/bjsgymlzb/202511/P020251127601806691724.pdf",
+      "source_type": "official_public",
+      "accessed_date": "2026-08-12",
+      "temporal_scope": "2025 directory, page 20, entry 385",
+      "usage": "The directory lists Jing-Zhang Railway Heritage Park as a level-3 specialised park, address North Fourth Ring to Zhichun Road, competent unit Haidian District Park Management Center. This establishes a candidate contact for an authorisation request.",
+      "limitations": "The competent-unit listing is not consent, assigned pilot responsibility, funding, procurement, current site availability or a government commitment; contact and authority must be confirmed in writing.",
+      "license_summary": "Official directory metadata cited with attribution; PDF pages are not redistributed."
+    }
+  ]
+}
