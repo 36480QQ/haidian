@@ -86,7 +86,7 @@ The evidence is organized into four tiers, each limited to a role consistent wit
 
 ### Evidence Is Not a One-Time Snapshot: Expiry Must Propagate Downstream
 
-`sources.json` records 29 sources and their access dates, but access on the same date does not mean that content remains valid indefinitely, nor does it reveal later revisions, replacement, unavailability, or the substitution of an official boundary for a provisional one. The new `visual/assets/evidence-freshness-policy.json` groups sources into project materials, provisional spatial data, urban context, policies and standards, and case references, then specifies review triggers, recommended maximum periods without re-verification, responsible roles, and invalidation actions. When a source becomes `review_due`, `superseded`, or `unavailable`, affected claims, matrix items, and scenario gate levels must be downgraded or frozen accordingly. The package currently confirms access dates only; it does not claim that a refresh audit with content summaries has been completed, so the completed-refresh count remains 0. Provisional spatial data remains `provisional_only` regardless of how recently it was accessed [data:visual/assets/evidence-freshness-policy.json#FRESH-01] [data:visual/assets/evidence-freshness-policy.json#FRESH-02].
+`sources.json` records 35 sources and their access dates, but access on the same date does not mean that content remains valid indefinitely, nor does it reveal later revisions, replacement, unavailability, or the substitution of an official boundary for a provisional one. `visual/assets/evidence-freshness-policy.json` groups sources into project materials, provisional spatial data, urban context, policies and standards, case references, and the Round 8–9 package-authored concept materials, then specifies review triggers, recommended maximum periods without re-verification, responsible roles, and invalidation actions. When a source becomes `review_due`, `superseded`, or `unavailable`, affected claims, matrix items, and scenario gate levels must be downgraded or frozen accordingly. The package currently confirms access dates only; it does not claim that a refresh audit with content summaries has been completed, so the completed-refresh count remains 0. Provisional spatial data remains `provisional_only` regardless of how recently it was accessed [data:visual/assets/evidence-freshness-policy.json#FRESH-01] [data:visual/assets/evidence-freshness-policy.json#FRESH-02] [data:visual/assets/evidence-freshness-policy.json#FRESH-06].
 
 The professional response separates standards by question instead of stacking identifiers behind one conclusion:
 
@@ -546,7 +546,7 @@ All area ratios using the provisional boundary as their denominator have `low` c
 - AI and data risk: Bias, hallucination, privacy leakage, unauthorized automation, and vendor lock-in are controlled through data minimization, retention at source, logging, human responsibility, retesting, expiry, and retirement. Automated enforcement, diagnosis, and substitution for formal approval are prohibited.
 - Safety and resilience risk: Robot, vehicle, and equipment testing occurs only within authorized areas. Physical emergency stops, on-site safety officers, offline human operation, and L0/L1/L2 degradation must remain available. Energy and recovery indicators remain unknown until measured.
 - Cultural and historical risk: Historical facts, people, artifacts, and engineering materials require verification through official, archival, or rights-cleared sources. AI-generated content receives explicit and metadata labels; disputed content can be corrected, removed, and traced [assumption:A-CULTURE-CONTENT-006].
-- Copyright and branding risk: The final file set contains 89 manifest paths, including 88 non-manifest content files; its 89 file-level asset records and 29 source-evidence records prove disclosure and link closure only. Coverage completeness becomes valid only after the manifest and rights ledger are refreshed from the final Git blobs and pass validation. Completed independent file-level clearance audits remain at 0 and the overall status is `not_fully_cleared`. `submission-use-rights-matrix.json` now records the current decision for announcement clause 8.1, repository review, organizer project use, entrant external display, cross-project reuse, and third-party components, but the package does not prove that the formal announcement terms apply identically to this GitHub open Agent call. The complete `COMMUNITY-DISPLAY-ONLY` terms, written consent, OSM ODbL obligations, PDF fonts, Node.js runtime and generation-tool terms, and logo/landmark trademark status still require review; the package must not claim full clearance [data:visual/assets/rights-clearance-ledger.json#RIGHTS-01] [data:visual/assets/submission-use-rights-matrix.json#JZ-SUBMISSION-USE-RIGHTS-V1].
+- Copyright and branding risk: The final file set contains 99 manifest paths, including 98 non-manifest content files; its 99 file-level asset records and 35 source-evidence records prove disclosure and link closure only. Coverage completeness becomes valid only after the manifest and rights ledger are refreshed from the final Git blobs and pass validation. Completed independent file-level clearance audits remain at 0 and the overall status is `not_fully_cleared`. `submission-use-rights-matrix.json` now records the current decision for announcement clause 8.1, repository review, organizer project use, entrant external display, cross-project reuse, and third-party components, but the package does not prove that the formal announcement terms apply identically to this GitHub open Agent call. The complete `COMMUNITY-DISPLAY-ONLY` terms, written consent, OSM ODbL obligations, PDF fonts, Node.js runtime and generation-tool terms, and logo/landmark trademark status still require review; the package must not claim full clearance [data:visual/assets/rights-clearance-ledger.json#RIGHTS-01] [data:visual/assets/submission-use-rights-matrix.json#JZ-SUBMISSION-USE-RIGHTS-V1].
 - External-coordination risk: Future Science City, Huairou Science City, the Beijing Economic-Technological Development Area, other innovation districts, and Beijing–Tianjin–Hebei are only optional retest roles. Without written confirmation, none may be described as a partner, investor, or committed implementation party [assumption:A-EXTERNAL-COLLAB-005].
 - Operations and equity risk: Event popularity cannot replace resident satisfaction, accessibility, fairness, or complaint closure. Recognition for contributions must not be used for traffic rankings, employment screening, or administrative evaluation.
 - Tool and evidence risk: Machine checks verify only structure, topology, references, and consistency. They do not replace professional judgment in planning, architecture, transport, municipal engineering, landscape, ecology, fire safety, railway safety, data security, accessibility, community engagement, or law [depth:risk_missing_data].
@@ -620,9 +620,176 @@ Ten cultural metrics remain unknown or 0; field coverage must not be passed off 
 
 `century-timeline.{svg,png}` bilingual time figure passed figure QA: A twin-track atlas / B source-grade table / C dispute-correction flow, all annotated G0 conceptual status and provisional geometry boundary.
 
+![Century-Time Museum: twin-track time atlas, typed sources, dispute correction, and screen-free node chain (G0 concept; archives, oral history, field tests, and confirmed duties all 0)](assets/figures/century-timeline.en.png)
+
 ### Inheritance and Freeze
 
 Geometry, existing SCENE/JZ/T IDs, eight projects, all G0 status, provisional boundaries, and `not_fully_cleared` remain unchanged. Official archives, confirmed accountable operators, independent retests, approval, or operating results remain 0.
+
+[back to top](#ai-pilgrimage-belt)
+## Mission Economy: Problem-Led Industry and Talent Translation
+
+> This section is the Round 9 (JZ-FUTURE-08) industry-and-talent mechanism increment, inheriting prior public-rights, evidence-type, failure-writeback and century-time-museum contracts; it creates no duplicate "validation-ticket" brand and invents no enterprise, investment, procurement or partnership.
+
+### Strategic Proposition
+
+Industry value is not proven by invented enterprise lists, investment amounts or investment-attraction promises; it is organized around real public problems, retestable tasks, professional services, independent retests and exit mechanisms. **Passing a test is not a procurement or deployment authorization**: file checks, technical tests, evidence gates, limited trials, procurement and normal deployment each record their own scope, responsibility, validity period and non-inferable items.
+
+### Mechanism Contract and Four-Axis Separation
+
+This round adds `mission-economy-contract.json` (JZ-MISSION-ECONOMY-G0-V1), organizing the following:
+
+- **Public-task lifecycle**: problem publication → problem-quality gate → fair small-team entry → offline prototyping → independent-retest gate → result reflow → exit or retirement; any step failing closes fail-closed, and stopping or exiting never interrupts ordinary public paths and manual services
+- **Entry and exit**: no account barrier, no upfront compliance cost, and a manual or non-AI path for the same task; small teams compete in the same pool as larger institutions; exit records are not used for hiring or talent ranking
+- **Procurement and intellectual-property boundary**: prototype procurement ≠ procurement authorization ≠ deployment authorization; prototype, limited trial, procurement and normal deployment each require separate written authorization; IP boundaries remain not_cleared and are not written as resolved
+- **Public-benefit reflow**: task results, failure archives and independent-retest conclusions return to ordinary corridor users in understandable form, independent of investment amounts; feedback only feeds the next round of problem definition
+- **Four-axis separation**: runtime state (ordinary/validation/failure/recovery), maturity (G0–G3), authorization scope and service state are recorded separately; one status field must not mean test, authorization, procurement and deployment at once
+
+### Metrics and Acceptance
+
+All ten decision metrics remain unknown or 0; field coverage, concept counts or machine PASS must not be presented as real-world outcomes:
+
+| Metric | Design status | Denominator | Proof ceiling |
+|---|---|---|---|
+| Public-task verifiability rate | unknown | same task, people, period, space baseline | field observation + independent retest |
+| Small-team participation ratio | unknown | same task, people, period, space baseline | field observation + responsibility records |
+| Independent-retest coverage | unknown | tasks passing the evidence gate | independent-retest records |
+| Task exit rate | 0 | tasks entering the entry queue | exit-event records |
+| Professional-service accessibility | unknown | users needing professional services | field or controlled test |
+| Public-benefit delivery status | unknown | result-reflow claims | delivery responsibility records |
+| University-course real participation | unknown (0 written confirmations) | university courses claimed | written confirmation files |
+| IP dispute count | 0 | task and prototype items | dispute-handling records |
+| Failed-project publication rate | unknown | exited or retired tasks | role-confirmed definition |
+| Institution written-confirmation status | 0 | referenced external institutions | written confirmation files |
+
+### Differentiated Expression in the Three Key Areas
+
+| Key area | Prototype role | Mission-economy expression |
+|---|---|---|
+| Zhongzhi Garden VERIFY | parallel validation court | independent-retest gate and equipment isolation carry task validation, no normal deployment |
+| Origin Community CO-CREATE | one street, two courts, four nodes | public-benefit reflow board carries screen-free feedback without collecting extra personal data |
+| Dazhongsi PUBLISH | four-quadrant walking + one hall one stage | the hall is the task-publication and manual-service node, not an AI-mandatory entrance |
+
+### Risk Rehearsals, Stop and Recovery
+
+- **R01 Tasks monopolized by large enterprises**: fail-closed immediately; activity heat and sunk cost cannot override stop conditions; revise only after ordinary paths and manual services are restored
+- **R02 Public problems reduced to investment-attraction packaging**: never beautify figures to hide the issue; after stopping, verify spatial or service damage and record responsible roles and materials requiring external confirmation
+- **R05 Unclear intellectual-property boundary**: stop using uncleared assets and restore ordinary paths; do not write IP as resolved before independent file-level audits (currently 0)
+- **R08 External institutions written as committed**: withdraw unconfirmed statements; until 0 written confirmations exist, enterprises, universities and service providers remain suggested or pending-confirmation roles
+
+### Figure Delivery
+
+The bilingual `industry-public-value-state.{svg,png}` industry–public value state map passed figure QA: A public-task lifecycle / B four-axis separation / C authorization ladder / D public-benefit reflow, all marked as G0 conceptual state, 0 external written confirmations and provisional geometry boundary.
+
+![Mission economy: problem-quality gate, four-axis separation, authorization ladder, and public-benefit reflow (G0 concept; tasks, retests, procurement, deployment, and written confirmations all 0)](assets/figures/industry-public-value-state.en.png)
+
+### Inheritance and Freeze
+
+Geometry, existing SCENE/JZ/T IDs, the eight projects, all G0 gates, provisional boundaries and `not_fully_cleared` are unchanged. Responsible roles (publication, entry, retest, stop, recovery) all remain roles-to-be-confirmed; real tasks, small teams, retests, exit events and written confirmations are all 0.
+
+[back to top](#ai-pilgrimage-belt)
+
+
+
+
+## Long-Term Civic Operations: Ordinary Life Stays Continuous
+
+> This is the serial Round 10 (`JZ-FUTURE-09`) operations-integration and overall-audit increment. It inherits the maintenance, public-rights, resource, failure-governance, climate, culture and mission-economy contracts established in Rounds 3–9. It does not rebuild those mechanisms or present Problem Season, Open-source Season, City Beta Season or Proof Week as held, scheduled, staffed or funded events.
+
+### Bilingual Operations Protocol and Year-Round Civic Timetable
+
+`civic-operations-contract.json` (`JZ-CIVIC-OPERATIONS-G0-V1`) sets the year-round default as an **ordinary civic day**: continuous ordinary route, account-free and QR-free entry, a complete non-AI task, screen-free information, maintenance and complaint access come first. The four seasonal programmes are bounded overlays that can occur only after responsibility, site, rights, budget, maintenance, exit and authorization conditions close. When inactive, paused or expired, the place returns to ordinary use [data:visual/assets/civic-operations-contract.json#annual_calendar].
+
+| Year-round window | Current real-world status | Ordinary civic value | Entry / exit contract |
+|---|---|---|---|
+| Ordinary civic day | Default; exact opening hours unknown | Passage, rest, ordinary service, learning, maintenance, complaint and quiet presence | Never yields to an event; staffed presence is displayed only after real confirmation |
+| No-event day | Required as a design default; confirmed dates 0 | Tests whether the place works without a festival | No event may permanently occupy the continuous civic track |
+| Problem Season | `not_scheduled` | Receives resident problems orally, on paper and in person | Publish reasons for acceptance, deferral and rejection; unresolved problems return to ordinary-service maintenance |
+| Open-source Season | `not_scheduled` | Produces a paper-readable task, source pack, offline baseline and rights boundary | Do not proceed while rights, labour, maintenance or exit responsibility remains open |
+| City Beta Season | `not_scheduled_not_authorized` | Can only be a future-approved bounded overlay | Daily track and same-task non-AI path remain continuous; failure triggers stop, isolation, restoration and writeback |
+| Proof Week / Evidence Week | `not_scheduled` | Publishes passes, failures, complaints, corrections, gaps and retirements together | Produce keep/correct/expand/retire advice and return unanswered problems to the next cycle |
+
+**Time boundary.** The inherited 22:00–07:00 quiet, low-stimulation and screen-free priority remains an earlier G0 design covenant only. It is not a real opening time, staffed night shift, statutory noise limit, lighting value or operating commitment. Real opening hours, staffed presence, shifts, headcount, backup roles, budget, noise, lighting and footfall remain `unknown` or `not_measured`; the conceptual timetable must not impersonate a confirmed roster.
+
+### One Resident Task across Day / Night / Failure / Recovery
+
+The same person, start/end and task continue through four windows: a corridor resident enters through an existing public access, follows the ordinary route, reads service status, submits or follows a neighbourhood question, and leaves. This is not a new scene; the exact access and route remain limited by provisional geometry [data:visual/assets/civic-operations-contract.json#resident_four_window_journey].
+
+| Window | Path and service | Staffed state | Proof overlay and writeback |
+|---|---|---|---|
+| Day ordinary | Ordinary/accessibility-intent route first; bilingual paper information identifies the same-task non-AI path | Must truthfully show online, offline or unknown; currently unknown | Off by default; any future activation remains voluntary, bounded and separately authorized |
+| Night or low-staff | Ordinary route, safe exit and screen-free information continue; resident quiet takes priority | No invented night shift; offline or unknown state publishes a non-digital next-contact route and never impersonates a person through AI | Off; events, broadcast, screens and proof yield |
+| Failure stop | Proof overlay isolates or exits; resident continues through the ordinary non-AI path or receives a safe refusal when future confirmed staff exist | Stop and handoff remain unconfirmed role types | Scene passport, civic timetable and evidence matrix prepare one conservative same-event writeback |
+| Recovery | Restore ordinary route, screen-free information, quiet conditions and the same basic task first | Restoration acceptance and public-update roles remain unconfirmed; real completions 0 | Stay off until root cause, responsibility, independent retest, place restoration and three-carrier consistency close; G0 and authorization do not auto-advance |
+
+Seven public rights remain visible in every window: account-free/QR-free entry, complete non-AI path, continuous accessibility intent, truthful staffed-state notice, consent withdrawal, correction/appeal, and a screen-free quiet option. Opening hours, shifts, noise, lighting, footfall, complaint closure and recovery duration remain typed unknowns rather than effects-rendered numbers.
+
+### Quiet, Screen-Free and Resident-Priority Covenant
+
+Programme admission must simultaneously check resident agenda, continuity of ordinary/accessibility routes, complete screen-free/non-AI task, responsibility and stop authority, separation of paid/contracted/community/voluntary labour, maintenance-retirement budget, minimum data and withdrawal, place-restoration acceptance, and a three-carrier publication plan. If any condition fails, do not admit or stop the programme and restore ordinary use before discussing a correction. Voluntary labour must be optional, disclosed, time-bounded, supported and withdrawable; it cannot fill continuous-service, safety, incident-duty or statutory responsibility.
+
+The three places cannot use one operating composition:
+
+| Key area | Ordinary priority | Conditional overlay | Failure and recovery | Non-transferable component |
+|---|---|---|---|---|
+| Zhongzhiyuan VERIFY | Public observation edge and ordinary passage | Future-approved parallel verification court | Equipment isolation, staffed-takeover type, component exit and independent place-restoration acceptance | Equipment isolation/retest edge cannot become a resident court or commuter hall |
+| Origin Community CO-CREATE | One daily street, resident life and screen-free learning | Issue clinic/co-learning after resident agenda and withdrawal rules close | Stop collection/matching, retain paper/manual service, withdraw screens/broadcast and restore one street/two courts | Two-court consent/withdrawal sequence cannot be transplanted into equipment proof or commuter publication |
+| Dazhongsi PUBLISH | Four-direction commuting, quiet rest and staffed service only when confirmed | Evidence release stays outside the continuous commuter line | Publish source correction, retain prior version, clear display overlay and restore commuting | Four-direction commuting and correction hall cannot become a verification court or resident learning court |
+
+### Role, Incident-Duty and Maintenance-Retirement Responsibility Matrix
+
+This round defines capabilities only; it invents no institution, person, headcount or shift. Eight role types—ordinary service, community agenda, incident duty, stop authority, maintenance/retirement, evidence writeback, rights review and independent review—respectively own same-task service, agenda intake, incident trigger, immediate stop, component/resource/place exit, three-carrier synchronization, public-rights/labour checks and annual retest advice. Written responsibility acceptance, staffing, shifts, incident roster and backup roles are all 0 [data:visual/assets/civic-operations-contract.json#role_and_responsibility_matrix].
+
+| Action | Responsible R | Accountable A | Consulted C | Informed I |
+|---|---|---|---|---|
+| Publish ordinary/no-event state | Ordinary service | Evidence writeback | Community agenda, rights review | Incident duty |
+| Admit a conditional programme | Community agenda | Stop authority | Ordinary service, maintenance/retirement, rights, independent review | Evidence writeback |
+| Receive complaint and stop | Incident duty, stop authority | Stop authority | Ordinary service, rights, maintenance/retirement | Evidence writeback, community agenda |
+| Restore place and service | Maintenance/retirement, ordinary service | Stop authority | Rights, independent review | Evidence writeback |
+| Annual continuation advice | Independent review | Stop authority | Community agenda, rights, maintenance/retirement | Ordinary service, evidence writeback |
+
+### Operational Three-Carrier Writeback
+
+The Round 6 writeback remains authoritative: programme admission/pause, staffed-state change, complaint hold, failure, correction, recovery, withdrawal, retirement and annual decision are append-only same-events. The scene passport writes back runtime/maturity/authorization/service axes and role vacancies. The civic timetable writes back ordinary/no-event default, conditional programme, quiet/screen-free covenant, staffed online/offline/unknown, detour and next update. The evidence matrix writes back claim change, anchor, limitation, appeal effect, retest, annual decision and non-authorization. If any carrier is missing or inconsistent, the public interface shows the most conservative state and proof restart is prohibited [data:visual/assets/civic-operations-contract.json#three_carrier_operations_integration] [data:visual/assets/failure-governance-register.json#three_carrier_writeback_contract].
+
+### Community Agenda, Failure Disclosure, Retirement and International-Retest Boundary
+
+Community agenda and complaint access support oral, paper and in-person modes, plus telephone only if a future service is truly confirmed; no account, QR code or AI is required. Public records retain only problem category, affected task, decision, correction and evidence version—never identity, sensitive narrative, raw personal data or shame ranking. Annual review must disclose ordinary/no-event use and displacement; programme admission/refusal/stop; failure/complaint/correction; rights and group impact; responsibility vacancy; labour categories; maintenance-retirement gaps; independent retest; local public benefit; and keep/correct/expand/retire advice. Success-only reporting fails the contract.
+
+A retirement receipt closes subject/version, decision authority, component/material/energy/data/log/account destinations, ordinary/accessibility route, quiet/screen-free and same-task service, public correction and three-carrier writeback, unresolved liabilities, independent acceptance and next-problem reflow. A retired object cannot silently enter another scene or season; real retirement receipts remain 0.
+
+International remote retesting may only repeat a minimized, privacy-safe evidence package. It cannot replace local resident agenda, professional judgement, operating duty or statutory authorization. It counts as local public benefit only if it improves a locally defined decision, correction, accessibility, maintenance, safety or ordinary-service question; publicity, audience size and partner prestige do not count. Confirmed international partners, real remote retests and verified local-benefit results all remain 0.
+
+### Annual Metrics and Keep / Correct / Expand / Retire
+
+| Decision metric | Current state | Required denominator / proof ceiling |
+|---|---|---|
+| No-event-day public use | unknown | same-task ordinary-day baseline + field observation |
+| Quiet-window delivery | unknown | confirmed quiet windows + field/complaint/maintenance records |
+| Community-agenda adoption | unknown | qualifying agenda items + reasoned receipts |
+| Complaint closure duration | unknown | preregistered clock boundaries + verified timestamps; no invented duration |
+| Operating-role vacancy | unknown | confirmed required role slots + responsibility/back-up records |
+| Maintenance-retirement budget confirmation | unknown | required budget items + written confirmation; a template is not funding |
+| Failure-disclosure completeness | unknown | verified events + privacy-safe annual record |
+| International-retest local benefit | unknown | completed remote retests + local decision evidence; publicity excluded |
+| Voluntary-labour disclosure | unknown | confirmed programmes using volunteers + consent/time/exit records |
+| Annual retirement completion | unknown | retirement decisions + five-part closure receipt |
+
+**Keep** means ordinary value and rights remain intact, without expansion. **Correct** requires a new version, responsibility and evidence. **Expand** requires independent real evidence, local public benefit, confirmed resources and a separate bounded authorization. **Retire** applies when ordinary path, rights, responsibility, budget, maintenance, public benefit, evidence or recovery cannot close. Passing a year, media heat, machine PASS, PR approval or merge never upgrades the project automatically.
+
+### Ten-Round Overall Consistency Audit
+
+The merged ten-round package remains focused on Twin-track Jing-Zhang as the only front-stage master grammar; Round 3–9 contracts remain referenced back-stage kernel. Zhongzhiyuan equipment isolation, Origin resident consent/quiet and Dazhongsi commuting/correction remain non-interchangeable. Twelve scenes, eight projects, three key areas and all geometry are unchanged. Every object remains G0, provisional and `not_fully_cleared`. This round adds one operations-integration contract and one review figure—not a new brand, scene or real service. Chinese/English Markdown, HTML, SVG/PNG, PDF and final-manifest parity must be validated on the PR exact head and cannot be self-proven by this paragraph [data:visual/assets/civic-operations-contract.json#ten_round_consistency_audit].
+
+Only external-evidence closure remains worth continuing: official geometry and survey, responsibility acceptance and staffed availability, same-task non-AI/accessibility co-testing, real maintenance/complaint/failure/recovery/retirement records, independent file-level rights audit, and revocable bounded authorization. Work that should stop includes new brands/scenes/unfounded precision, event-heat-led festival expansion, unrecorded partner/procurement/construction/operation/benefit claims, and contract accumulation that closes no real-world gap.
+
+### Figure Delivery and Boundary
+
+The bilingual `year-round-civic-operations.{svg,png}` figure places A year-round ordinary use and conditional seasons / B one resident four-window journey / C roles and three-carrier writeback / D annual failure disclosure and continuation decision on one review surface. The figure labels 22:00–07:00 as an inherited G0 design window only; confirmed roster, budget, event, partner, complaint and result remain 0 or unknown.
+
+![Long-term civic operations: year-round ordinary use, conditional seasons, day-night-failure-recovery journey, roles and three-carrier writeback, annual failure disclosure and retirement (G0 concept; no confirmed calendar, roster, budget, partner, complaint or operating result)](assets/figures/year-round-civic-operations.en.png)
+
+This section and figure constitute no site, construction, fire-safety, railway-protection, municipal, operational, procurement or other specialist approval and prove no rights clearance, real service, accessibility compliance, public value, international partnership or deployment authorization.
 
 [back to top](#ai-pilgrimage-belt)
 

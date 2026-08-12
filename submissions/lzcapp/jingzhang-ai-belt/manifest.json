@@ -18,8 +18,8 @@
       "path": "agent.json",
       "role": "config",
       "required": true,
-      "sha256": "371956b61d48ca9e9815afe8eda5a286d5a8d970258fa6c6f5b6ed70ef23540e",
-      "size": 326
+      "sha256": "95ab926676126dc311709671b54e28fb94886ae65e965b3f710aff7d3f2af1db",
+      "size": 307
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -190,8 +190,8 @@
       "path": "compliance_matrix.json",
       "role": "config",
       "required": true,
-      "sha256": "a9fcb50c78860e743c8426786038df9dd6be40ee2eb82bfc172d81f99a7f583d",
-      "size": 23543
+      "sha256": "1c72f72caee066366fff7bfaf660310369206ea53c3da63c80485fb9a6fc08d2",
+      "size": 23489
     },
     {
       "path": "design_depth_matrix.json",
@@ -304,16 +304,16 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "ff550d9b3ec1fe026e49fd0675769baabda119d8acb9ed349d63b04b58a532af",
-      "size": 73547
+      "sha256": "ecde95c3c4e2e6def227a1bbc8f16b90227e51cf14bb1c9cdca195639f0d0016",
+      "size": 77106
     },
     {
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "5670109f8dc41d553af6f62b7cc0c90b2a2525fa48280556eb6d85ff7c9caee8",
-      "size": 77011
+      "sha256": "3a8c9764f28f3ef1b58a9330f126d10d491c1c3c8d2de514c4186cc49f42be64",
+      "size": 80590
     },
     {
       "path": "report/copyright_statement.md",
@@ -349,14 +349,15 @@
       "path": "self_check.json",
       "role": "config",
       "required": true,
-      "sha256": "f25952885b0c359dac4419482964bdd185e7d0513000a33d495f6f77957dec32"
+      "sha256": "4d7500c87245683214bc26d0dba37c087697fe1b21352447b17b07acc0b54ece",
+      "size": 2252
     },
     {
       "path": "sources.json",
       "role": "config",
       "required": true,
-      "sha256": "093ef95272c6686d221d9c305f8a058476253e59c110ed0afe1372582c6a9a39",
-      "size": 14418
+      "sha256": "f0c3a3ed3160f375c79378c67dae1e76ad1f2d1e92219c921c54e6e2c2db3d4c",
+      "size": 17362
     },
     {
       "path": "standard_matrix.json",
@@ -455,14 +456,16 @@
       "required": false,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "f8b98ec163434505508e261c125d5b256bdf13762386b48d92de4c29a4241514"
+      "sha256": "0e606e329525f431dee1f1d1398fa9dbd2e446a185aed400534f46eb4291a1ef",
+      "size": 24473
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "c1c0e495fb3c2c70832bc48fdf24da75adcb1a3d522f5019b13bfe9874806176"
+      "sha256": "8fac0f076c9b9e86415b13af581081115ff9f4fb39c99803e334c83c554010b5",
+      "size": 22443
     }
   ],
   "validation_claim": {

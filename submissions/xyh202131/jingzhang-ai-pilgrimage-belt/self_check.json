@@ -1,6 +1,6 @@
 {
   "ok": true,
-  "submission_dir": "submissions/xyh202131/jingzhang-ai-pilgrimage-belt",
+  "submission_dir": "submissions\\xyh202131\\jingzhang-ai-pilgrimage-belt",
   "pr_author": "xyh202131",
   "stage": "formal",
   "deterministic_validation": {
@@ -35,6 +35,10 @@
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/failure-governance-writeback.svg",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/implementation-roadmap.en.png",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/implementation-roadmap.png",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/industry-public-value-state.en.png",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/industry-public-value-state.en.svg",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/industry-public-value-state.png",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/industry-public-value-state.svg",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/innovation-system.en.png",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/innovation-system.png",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/key-area-sections.en.png",
@@ -63,6 +67,10 @@
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/urban-metabolism-ledger.en.svg",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/urban-metabolism-ledger.png",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/urban-metabolism-ledger.svg",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/year-round-civic-operations.en.png",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/year-round-civic-operations.en.svg",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/year-round-civic-operations.png",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/year-round-civic-operations.svg",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assumptions.json",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/changelog.md",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/compliance_matrix.json",
@@ -92,6 +100,7 @@
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/sources.json",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/standard_matrix.json",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/visual/assets/century-time-museum-contract.json",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/visual/assets/civic-operations-contract.json",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/visual/assets/climate-resilience-contract.json",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/visual/assets/evidence-freshness-policy.json",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/visual/assets/failure-governance-register.json",
@@ -100,6 +109,7 @@
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/visual/assets/implementation-handoff-matrix.json",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/visual/assets/innovation-register.json",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/visual/assets/key-area-evidence-matrix.json",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/visual/assets/mission-economy-contract.json",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/visual/assets/non-ai-parity-contract.json",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/visual/assets/pilot-readiness-register.json",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/visual/assets/readiness-closure-contract.json",
@@ -118,7 +128,7 @@
       "ai_package_stages": {
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt": "formal"
       },
-      "total_bytes": 17069218,
+      "total_bytes": 20102462,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -210,7 +220,7 @@
           "source": 29,
           "standard": 6,
           "depth": 15,
-          "data": 50,
+          "data": 56,
           "metric": 80
         }
       }

@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "A city-usability framework that organizes the Jing-Zhang corridor as three Works and two service chains. Every AI service must provide human takeover, a no-app equivalent, minimum-data rules, a responsible owner, stop conditions, and a public change record."
 tracks: ["ai-traffic-walkability", "ai-public-services", "enterprise-services-ecosystem"]
 scenarios: ["ai-traffic-walkability", "ai-health-service-navigation", "ai-cultural-guide", "enterprise-service-copilot", "robot-delivery-low-speed", "public-safety-operations-review"]
-iteration: "v1.1"
+iteration: "v1.2"
 ---
 
 # JING-ZHANG WORKS / 京张好用
@@ -182,6 +182,16 @@ The RACI assigns site authorization to the owner or public-space operator, servi
 
 The developer community works from public problem orders. A team selects one public task, submits a six-field contract and synthetic test article, and enters real-task review only after the controlled test. The adoption path runs through problem order, contract completion, field baseline, controlled pilot, independent replay, authorized adoption, maintenance review, and retirement or renewal. International visitors can read bilingual task cards and version records. What travels is the test method and service standard, not an unverified success claim.[source:V11-IMPLEMENTATION-PLAYBOOK]
 
+### How the first pilot day runs
+
+One hour before opening, the pilot manager walks the complete route planned for that day. A vehicle blocking the entrance, a paper map pointing to a locked door, or an empty human takeover point keeps the affected service closed. Staff then complete one task with paper material, call the offline contact, and test the physical stop. If any step fails, the AI service stays closed while the manual service may continue.
+
+Ten minutes before opening, the service owner and on-site staff read through the source date, expiry time, minimum fields, and stop rule. Their signed sheet is the opening record. Two hours later, an accessibility reviewer repeats the no-app journey. A broken route causes staff to withdraw its public information. It can return only after repair and a complete replay.
+
+The afternoon includes one announced fault drill. No unsuspecting visitor becomes a test subject. A network outage sends the service back to paper and staff. A critical bilingual error is covered before anyone checks it against a dated public source. A blocked accessible or emergency route causes the safety lead to stop the affected service. At closing, the pilot manager reconciles the issue log, deletes expired test data, and records whether the next day will open, stay manual, wait for repair and replay, or retire the component.[source:V12-DAY-ONE-DRILL]
+
+This day-one drill remains an unexecuted operating procedure. Site, date, named people, budget, and permit are all blank. It shows the actions required to open and stop a service. It proves no rehearsal has taken place.[source:V12-DAY-ONE-DRILL]
+
 Policy recommendations are deliberately practical. Public-space access should include accountability and exit clauses. Procurement should require human bypass and data deletion. Performance reports should count failure and repair, not only footfall. Operators, funding, and events remain proposals for authorized bodies to decide.[depth:renewal_project_list] (assumption A-OPERATIONS-001)
 
 ## Metrics, Area Recalculation, and Compliance Matrix
@@ -195,6 +205,8 @@ All twelve scenarios contain the six responsibility fields, so structural readin
 Public-interest measures include coverage of no-app equivalents, visibility of human takeover, on-time issue closure, continuous-route pass rate, and published retirement records. The first-round target is complete equivalence and accountability. Real results require independent records.[source:PUBLIC-CHANGE-LOG] [depth:metrics_recalculation]
 
 `compliance_matrix.json` maps every mandatory announcement item to sections, layers, drawings, metrics, sources, assumptions, and checks. `standard_matrix.json` records responses to professional standards. `design_depth_matrix.json` shows how regulatory-plan and implementation-plan depth is evidenced. The matrices support machine review; this narrative retains the human judgment.[standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [depth:existing_conditions_diagnosis]
+
+`reviewer_evidence_index.json` provides a second entry point organized around the seven scoring questions. Each question goes directly to the proposal answer, the relevant text or file, and the real-world evidence that is still missing. It helps a person find material. It does not score the entry or turn a summary into a new fact.[source:V12-REVIEWER-EVIDENCE-INDEX]
 
 ![Metrics, sources, and release evidence](assets/figures/metrics-evidence.en.png)
 

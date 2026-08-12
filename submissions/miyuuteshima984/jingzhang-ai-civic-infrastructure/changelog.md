@@ -1,5 +1,34 @@
 # 方案迭代记录
 
+## v0.6 - 2026-08-12
+
+- Started from merged v0.5 exact head `caa654366f5ecbd3b7ab2e782ec65fe3192af0cf`, whose upstream PR #2062 was accepted at Review Agent 83/100 with mandatory rejection and all four local gates passed.
+- Added bilingual **three flagship pilot protocols** for Zhongzhiyuan low-speed robot testing, AI Origin accessibility/care navigation and Dazhongsi transfer/multilingual guidance. Each protocol now exposes a non-AI baseline, quantity basis, prerequisite evidence gates, test window, KPI direction, stop threshold, exit receipt and accountable-role structure without inventing real permits, contracts, budgets or field performance.
+- Added a bilingual **nine-persona inclusion and burden matrix** covering long-term residents/families, older people, disabled or sensory-limited users, children/caregivers, students/researchers, founders/firms, service workers/commuters, visitors/international users and no-smartphone/no-account/opt-out users. Each row records benefit, burden/exclusion risk, non-AI equivalent and human help/appeal path.
+- Added bilingual **implementation resource + RACI evidence gates** with concept quantity basis, A/R/C/I responsibility, maintenance cadence, prerequisite gates and a shared PRECONDITION → TEST → RECEIPT → GO/REVISE/STOP decision chain. Currency cost, final FTE, procurement, insurance and named institutional responsibility remain UNKNOWN until verified.
+- Added a bilingual **reviewer evidence index** mapping the seven public rubric dimensions and mandatory agent.1–agent.6 tasks to inspectable proposal/figure/JSON/GeoJSON evidence and explicit claim boundaries. The index is traceability infrastructure, not a self-score.
+- Added a bilingual **review evidence dashboard** and moved it above the fold of both offline visual pages so the Review Agent's HTML screenshot can directly see core metrics, three flagship pilots, inclusion, implementation gates and claim limits instead of relying on supplemental assets hidden far below the first viewport.
+- Corrected the offline visual self-check wording: v0.5 official PASS/merge is now recorded accurately, while v0.6 does not pre-claim final PASS until manifest refresh and persisted self-check are rerun on the final exact head.
+- Expanded visible task coverage from five generic personas to nine explicit user groups and from broad operations language to RACI, quantity basis, maintenance cadence, prerequisite gates and stop receipts.
+- Current v0.6 remains in design integration. Proposal narrative, report HTML, A3/A0 first pages, manifest hashes and persisted self-check must still be synchronized before a v0.6 PR is opened.
+
+## v0.5 - 2026-08-12
+
+- Follow-up enhancement after merged upstream PR #1954, whose final intake decision recorded Review Agent score 71/100 with mandatory rejection and all four local gates passed.
+- Added a bilingual **three positionings → five functions → three areas/two wings → C7** coordination loop so taskbook structure is visible as a design system rather than only a compliance entry.
+- Added a bilingual **full-factor AI ecosystem map** covering land, space, industry, capital, talent, compute, data and scenarios through research → translation → testing → adoption → long-term life → C7 feedback.
+- Expanded the ten AI+ scenarios into bilingual scenario cards with place/users, real problem, AI enhancement, non-AI baseline/exit and concept-stage acceptance evidence.
+- Added a bilingual regional-collaboration validation matrix for Beiyuwei Community, Future Science City, Huairou Science City, Beijing E-Town and Beijing–Tianjin–Hebei; every relationship is explicitly a potential interface rather than an established partnership, funding, data-sharing or administrative commitment.
+- Added a bilingual implementation/operations matrix linking project, space, proposed role, prerequisite, start/stop threshold, maintenance responsibility and acceptance KPI.
+- Added scenario-level privacy/data governance covering location/route, health/care, home environment, account/identity, behavior/usage and research/enterprise data with minimisation, access, retention/deletion, human review and opt-out rules.
+- Added an original submission-level **C7 COMPLETE LOOP** brand/VI concept direction. It does not reproduce or imitate any government, organizer or third-party official identity; `爽粉堡垒社区 / Shuangfen Fortress Community` remains a local naming easter egg only.
+- Added a public-space component library and three-layer wayfinding contract: permanent physical information first, updateable operations information second, optional AI third; shutting down AI must preserve basic navigation and public service.
+- Expanded `report/copyright_statement.md` into a per-asset rights/generation ledger covering raster figures, new SVGs, HTML, PDFs, GeoJSON, fonts/icons/code status and AI participation.
+- Strengthened `sources.json` with provenance, access date, rights/reuse, limitations, permitted use, collection method, coverage and transformation records; six international cases remain factual-reference-only and no case logo/image/map/web asset is embedded.
+- Integrated all new deliverables into aligned Chinese and English `proposal` files and raised `iteration` to `v0.5`.
+- Maintains all prior provisional-boundary and unknown-statutory-control disclaimers; no new diagram creates an official redline, approved zoning, investment promise, data authorization or implementation approval.
+- Pending final packaging work: integrate v0.5 assets into HTML/A3/A0/offline presentation, refresh the manifest through post-finalization tooling, persist a new machine self-check, run participant preflight and validate all visual files before opening a follow-up upstream PR.
+
 ## v0.4 - 2026-08-11
 
 - Reorganized Chinese and English proposals into the 13 mandatory formal-section headings required by the latest repository guide.

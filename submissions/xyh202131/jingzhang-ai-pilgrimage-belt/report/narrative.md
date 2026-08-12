@@ -82,6 +82,109 @@ Seven future measurement objects each have a typed anchor, denominator, and proo
 
 This round adds one structured climate contract and a bilingual SVG/PNG figure pair, so the final manifest/file ledger should contain 89 paths and 88 non-manifest files; completed independent file-level rights audits remain 0. Both HTML reports were rebuilt from final Markdown. Two fresh Python processes produced byte-identical four-PDF sets. The Chinese/English A3 booklets have 15/18 pages, and both A0 sets have 12 pages. Full rendering of all 57 pages found 0 blank pages, 0 replacement glyphs, and 0 out-of-page objects. Current SHA-256 values are: Chinese A3 `ccda6705564dd44e4e3ab859ebdceec38448f89ea05364becfe299d2127324f4`; English A3 `c24cbf055b835e02f3e7f92fe276dd53a76ab180221ac5ecade78a687f6f73a7`; Chinese A0 `25b02b20a485b45019896fc51ace2c28e6704a4c501926a58ed2b368bd1bd9f3`; English A0 `f3cf28899551041cfc6efa745cbc99230f32f3f7b7b3a76dcbba48d4789335c3`. This publication fixed point proves no field climate, hydraulic, accessibility, prompt, device, duty, approval, G1, or rights result.
 
+## 第 8—9 轮与跨轮闭环 / Rounds 8–9 and cross-round closure
+
+第 8 轮用 `JZ-TIME-MUSEUM-G0-V1` 把铁路史实、包内登记来源、待档案复核史实、生成内容与未来口述史分级，形成双轨时间图谱、争议停止—下架—纠错—版本保留—恢复链和无需账号/扫码/AI 的无屏节点链。第 9 轮用 `JZ-MISSION-ECONOMY-G0-V1` 把公共任务质量门、公平准入、离线原型、独立复测、结果回流和退出退役连接到同一失败治理与公共权利内核，并把运行、成熟度、授权和服务四轴分开。两轮都不宣称馆藏、口述史采集、现实任务、企业伙伴、采购、投资、部署或运营已经发生。
+
+Round 8 uses `JZ-TIME-MUSEUM-G0-V1` to distinguish public historical facts, registered in-package sources, archive-pending facts, generated content, and future oral history. It adds a twin-track time atlas, a stop–takedown–correct–retain–recover dispute chain, and a screen-free node chain requiring no account, QR code, or AI. Round 9 uses `JZ-MISSION-ECONOMY-G0-V1` to link problem-quality gates, fair entry, offline prototypes, independent retest, result reflow, and exit/retirement to the same failure-governance and public-rights kernel, while separating runtime, maturity, authorization, and service states. Neither round claims that archives, oral-history collection, real tasks, enterprise partners, procurement, investment, deployment, or operation exist.
+
+本次跨轮修补没有新增场景、项目、几何、边界、伙伴或成熟度，而是关闭第 8—9 轮在第 7 轮固定点之后留下的出版与审计缺口：双语视觉入口拆除错误嵌套链接；两组英文图修复标题、状态条、卡片、恢复链和页脚裁切；manifest 与逐文件权利台账从 89/88 扩至 99/98；35 条 `sources.json` 来源全部有 schema 约束的反向权利证据；第 8—9 轮包内来源删除未经证实的开放许可和展示权表述；四份 A3/A0 从最终双语内容重生并纳入百年时间与公共任务经济图件。结构闭环只证明路径、摘要和披露可核验，独立逐文件清权仍为 0，公共或专业复用继续阻断。
+
+This cross-round repair adds no scene, project, geometry, boundary, partner, or maturity. It closes publication and audit gaps left after the Round 7 fixed point: malformed nested bilingual navigation is corrected; title, status-bar, card, recovery-flow, and footer clipping is repaired in the two English figures; the manifest and file-level rights ledger expand from 89/88 to 99/98; all 35 `sources.json` records now reverse-link to schema-constrained rights evidence; unsupported open-license and exhibition-right statements are removed from the Round 8–9 in-package sources; and all four A3/A0 publications are regenerated from final bilingual content with the century-time and mission-economy figures included. Structural closure proves auditable paths, digests, and disclosure only. Independent file-level rights audits remain 0, and public or professional reuse remains blocked.
+
+最终出版固定点在两个新的 Python 进程中逐文件字节一致。中文/英文 A3 为 58/62 页，每种语言包含 14 组图件、每组 3 个 620×892 裁片，裁片相邻重叠 30px 并以 245mm 宽进入 A3 细节页；中英文 A0 各 14 页，按固定顺序保留整板。四份 PDF 共 148 页；PyMuPDF 检查页面尺寸、可搜索文字、替换字形与对象边界，并逐页渲染接触表，空白页、替换字形、越界文本块均为 0。SHA-256：中文 A3 `628a5c3441a57d5cf50ef058511262c21b967140bd01f5953ca644e38a4d1d63`，英文 A3 `6b8d2b774c843f6719f0cc80ad0d3d3c0622b924da6957f349bfc8a7b31a1ad8`，中文 A0 `2d663fabf42adcf0d63b363341037476de6b1952d8a0b64ba7fd4ffefa9021b9`，英文 A0 `565c93d8d233801835cc79a227f5f2ed8354a3d7ab79f1921ed840925c68a8a0`。出版 QA 不证明现场、馆藏、任务、伙伴、采购、部署、审批、G1 或清权。
+
+The final publication fixed point is byte-identical file by file across two fresh Python processes. The Chinese/English A3 booklets contain 58/62 pages. Each language includes 14 figure sets, each split into three 620×892 crops with 30px overlap and placed at 245mm width on A3 detail pages. Both A0 sets contain 14 whole-board pages in a fixed order. Across all 148 pages, PyMuPDF checked page sizes, searchable text, replacement glyphs, and text-block bounds and rendered every page into contact sheets; blank pages, replacement glyphs, and out-of-page text blocks are all 0. SHA-256: Chinese A3 `628a5c3441a57d5cf50ef058511262c21b967140bd01f5953ca644e38a4d1d63`; English A3 `6b8d2b774c843f6719f0cc80ad0d3d3c0622b924da6957f349bfc8a7b31a1ad8`; Chinese A0 `2d663fabf42adcf0d63b363341037476de6b1952d8a0b64ba7fd4ffefa9021b9`; English A0 `565c93d8d233801835cc79a227f5f2ed8354a3d7ab79f1921ed840925c68a8a0`. Publication QA proves no field condition, archive, task, partner, procurement, deployment, approval, G1 status, or rights clearance.
+
+## 第 10 轮长期公共运营集成与十轮审计 / Round 10 long-term civic-operations integration and ten-round audit
+
+### 串行门与范围 / Serial gate and scope
+
+第 10 轮只在第 9 轮 PR #2016 于 `2026-08-12T07:38:05Z` 合并后开始；合并提交 `0443856fc04709a6c6d6b52e0f134417a9b5531e` 已验证为本轮基线 `origin/main@905b8be6ed6b9eb9e84307ef2dbf565fe96dc6f0` 的祖先。开始编辑前，全部开放 PR 的文件范围扫描未发现同一投稿包的竞争变更。本轮串行编号为 10，方案 ID 为 `JZ-FUTURE-09`；两者没有被混写，也没有新增 `SCENE-*`、`JZ-*`、`T-*`、项目或 geometry。
+
+Round 10 began only after Round 9 PR #2016 merged at `2026-08-12T07:38:05Z`. Merge commit `0443856fc04709a6c6d6b52e0f134417a9b5531e` was verified as an ancestor of this round's base, `origin/main@905b8be6ed6b9eb9e84307ef2dbf565fe96dc6f0`. A file-scope scan of every open PR found no competing change to this submission package before editing began. The serial number is 10 and the plan ID is `JZ-FUTURE-09`; they are not conflated, and no `SCENE-*`, `JZ-*`, `T-*`, project, or geometry is added.
+
+`JZ-CIVIC-OPERATIONS-G0-V1` 选择六个相互依赖的运营集成工作包：全年普通日与无活动日；四个未排期条件季节；同一居民公共任务的昼间、夜间／低人员、故障、恢复四窗；八类角色与劳动披露；第 6 轮三载体状态回写；社区议程、失败公开、国际复测边界和年度去留。它继承第 3—9 轮已经建立的维护、公共权利、资源、失败、气候、文化和任务经济合同，只负责把这些机制接进全年普通使用与年度决策，不以新活动品牌覆盖旧治理内核。
+
+`JZ-CIVIC-OPERATIONS-G0-V1` selects six interdependent integration work packages: year-round ordinary/no-event days; four unscheduled conditional seasons; the same resident public task across day, night/low staffing, failure and recovery; eight role types plus labour disclosure; Round 6 three-carrier state writeback; and community agenda, failure disclosure, international-retest boundaries and annual disposition. It inherits the Round 3–9 maintenance, public-rights, resource, failure, climate, cultural and mission-economy contracts. Its job is to connect those mechanisms to ordinary year-round use and annual decisions, not to cover the governance kernel with another event brand.
+
+### 全年协议与四窗连续旅程 / Year-round protocol and four-window continuous journey
+
+全年底板是普通公共日：连续日常轨、无需账户／扫码、同一基本任务的非 AI 完整路径、无屏双语信息、可见的维护与投诉入口。无活动日必须保留，但现实日期为 0。问题季、开源季、城市 Beta 季和 Proof Week 只作为未来条件窗口，当前均 `not_scheduled`；城市 Beta 季另为 `not_authorized`。任何季节都不得占用普通路径、取消安静时段或把参与热度当公共价值。
+
+Ordinary public days form the all-year base: the continuous daily track, no account or QR requirement, a complete non-AI path to the same basic task, bilingual screen-free information, and visible maintenance and complaint entry. No-event days must remain, but confirmed real dates are 0. Question Season, Open-source Season, Urban Beta Season and Proof Week are future conditional windows only and all remain `not_scheduled`; Urban Beta Season is also `not_authorized`. No season may occupy the ordinary path, cancel quiet periods, or treat participation heat as public value.
+
+既有公共时刻表中的 `07:00–22:00` 与 `22:00–07:00` 已被明确标注为继承的 G0 设计窗口，而非现实开放时间、班次、夜班、噪声或照度承诺。每个时段都新增现实窗口、人工在线和责任确认状态；它们保持 `unknown`。夜间／低人员窗口关闭验证、活动、扩声和屏幕，却不能用 AI 冒充人工。发生概念故障时，先隔离验证叠层、保留普通非 AI 绕行并向场景护照—公共时刻表—证据矩阵保守回写；恢复先还普通路径、无屏与静音，再闭合根因、责任、复测和还场，不自动升级 G0 或授权重启。
+
+The existing public timetable's `07:00–22:00` and `22:00–07:00` entries are now explicitly inherited G0 design windows rather than real opening hours, shifts, night rosters, noise, or lighting promises. Every window now records real-window, human-availability and duty-confirmation states, all of which remain `unknown`. The night/low-staffing window closes validation, events, amplification and screens, but AI cannot impersonate staff. Under a conceptual failure, isolate the proof overlay, retain the ordinary non-AI detour, and conservatively write back to the scenario passport, public timetable and evidence matrix. Recovery restores the ordinary path, screen-free information and quiet first, then closes root cause, duty, retest and reinstatement; it neither advances G0 nor authorizes restart.
+
+四窗不变的公共权利是：无需账户／扫码进入、非 AI 完整同任务、无障碍连续意图待现场核验、人工状态如实显示、可撤回、可申诉、无屏安静。现实排班、人员编制、事故值班、志愿劳动投入、预算、活动、国际伙伴、投诉数据、恢复时长和运行成绩都不从概念时刻表推出。
+
+Rights that remain constant across all four windows are: entry without account/QR; a complete non-AI path to the same task; continuous accessibility intent pending field verification; truthful human-status display; withdrawal; appeal; and screen-free quiet. Real rosters, staffing levels, incident duty, volunteer input, budgets, events, international partners, complaint data, recovery duration and operating performance cannot be inferred from the concept timetable.
+
+### 角色、三载体与年度决策 / Roles, three carriers and annual decision
+
+八类角色是普通服务、社区议程、事故接收、停止权限、维护与退役、证据回写、权利复核和独立复核。每类只定义责任类型、触发条件、交接与不可替代的公共义务，不虚构人员、班次或机构。无偿志愿劳动不能作为隐藏运营底盘：来源、工作内容、时长、补偿、拒绝权和替代安排缺一即不得把该劳动计入可持续运营。
+
+The eight role types are ordinary service, community agenda, incident intake, stop authority, maintenance and retirement, evidence writeback, rights review, and independent review. Each defines a duty type, trigger, handover and non-substitutable public obligation without inventing people, shifts or institutions. Unpaid volunteer labour cannot be a hidden operating base: source, task, hours, compensation, refusal right and replacement arrangement must all be disclosed before such labour can count toward sustainable operation.
+
+三处重点区继续保持不可机械复制：众智园以平行验证庭、设备隔离、人工接管和恢复验收为主；原点社区以一街两院四节点、无屏共学、同意撤回和居民日常为主；大钟寺以四象限步行、一厅一台、通勤连续和人工服务为主。三处共享普通路径优先和三载体回写，但不共享同一平面构图、设备布局或活动模板。
+
+The three key areas remain non-mechanically-copyable. Zhongzhiyuan centres on a parallel proof court, equipment separation, staffed takeover and restoration acceptance. Origin Community centres on one street, two courts, four nodes, screen-free co-learning, consent withdrawal and resident routine. Dazhongsi centres on four-quadrant walking, one hall and one desk, commute continuity and staffed service. They share ordinary-path priority and three-carrier writeback, but not one plan composition, equipment layout or event template.
+
+社区议程允许口头、纸面和现场输入；必须给理由回执，并公开进入、暂缓、合并、拒绝或转交的决定。年度公开不得只报成功，必须同时列出普通／无活动使用、失败、投诉、纠错、责任空缺、劳动投入、维护／退役缺口、独立复测、本地公共收益和不同意见。国际远程复测只有改善本地公共决定、无障碍、维护、安全或普通服务才计收益；传播与伙伴数量不计。年度决定只有保持、修正、扩展、退役四类；扩展需要新现实证据与独立书面授权，退役需要普通服务连续、组件去向、数据处置、场所恢复和责任关闭五类回执。
+
+Community agenda can enter orally, on paper or in person. It requires a reasoned receipt and a published enter, defer, merge, reject or refer decision. Annual disclosure cannot publish successes alone; it must include ordinary/no-event use, failures, complaints, corrections, duty gaps, labour, maintenance/retirement gaps, independent retest, local public benefit and dissent. International remote retest counts only when it improves local decisions, accessibility, maintenance, safety or ordinary service; publicity and partner count do not count. Annual disposition has only four outcomes: keep, correct, expand or retire. Expansion requires new real evidence and separate written authorization. Retirement requires five receipts covering ordinary-service continuity, component destination, data disposition, place reinstatement and duty closure.
+
+### 十轮一致性结论 / Ten-round consistency conclusion
+
+| 轮次 | 保持的核心增量 | 第 10 轮审计结论 |
+|---|---|---|
+| 1 | 双轨京张前台总纲 | 连续日常轨、间歇验证轨、三换轨场、失败侧线和公共时刻表仍为唯一前台语法 |
+| 2 | 三处差异化空间原型 | 验证庭、居民共学街院、通勤发布服务仍不可互换 |
+| 3 | 维护型城市 | 既有优先、人工维护、恢复验收和退役责任被运营合同调用而未重造 |
+| 4 | 非 AI 优先公共权利 | 无账户／扫码、同任务非 AI、无屏、人工和申诉在四窗保持不变 |
+| 5 | 完整系统城市代谢 | 资源输入、维护劳动、外部成本和退出去向继续使用原账本 |
+| 6 | 反脆弱失败治理 | 三载体原子回写、四轴分离、停止、复测和主动退役进入全年时刻表 |
+| 7 | 气候韧性验证走廊 | 蓝绿普通基线、静态提示、维护净空和脆弱群体四态未被活动覆盖 |
+| 8 | 百年时间博物馆 | 来源分级、生成标识、纠错下架和无屏教育链保留 |
+| 9 | 公共任务经济 | 问题质量门、公平准入、采购/IP 边界和公共收益回流保留 |
+| 10 | 长期公共运营集成 | 把前九轮接入全年普通使用、失败公开和年度去留，不新增治理品牌 |
+
+| Round | Retained core increment | Round 10 audit conclusion |
+|---|---|---|
+| 1 | Twin-track front-stage master plan | The continuous daily track, intermittent proof track, three switchyards, failure siding and public timetable remain the only front-stage grammar |
+| 2 | Three differentiated spatial prototypes | Proof court, resident-learning street/courts and commuter publication/service remain non-interchangeable |
+| 3 | Maintenance urbanism | Existing-first, human maintenance, restoration acceptance and retirement duties are called rather than reinvented |
+| 4 | Non-AI-first public rights | No account/QR, same-task non-AI, screen-free, human and appeal rights remain constant across four windows |
+| 5 | Whole-system urban metabolism | Resource inputs, maintenance labour, external costs and exit destinations remain in the inherited ledger |
+| 6 | Antifragile failure governance | Atomic three-carrier writeback, four axes, stopping, retest and active retirement enter the year-round timetable |
+| 7 | Climate-resilience proof corridor | The ordinary blue-green base, static notice, maintenance clearance and vulnerable-group four states are not displaced by events |
+| 8 | Century-Time Museum | Source grading, generated-content labels, correction/takedown and screen-free education chain remain intact |
+| 9 | Mission economy | Problem-quality gate, fair entry, procurement/IP boundary and public-benefit reflow remain intact |
+| 10 | Long-term civic-operations integration | The first nine rounds connect to ordinary year-round use, failure disclosure and annual disposition without a new governance brand |
+
+总体审计固定为 12 个场景、8 个项目、3 个重点区，geometry 与临时边界零变化；中英文正文、离线 HTML、运营合同和双语图件使用相同的普通日、四季状态、四窗、角色、三载体、年度去留与 0/unknown 现实边界。所有场景仍为 G0，权利仍为 `not_fully_cleared`，独立逐文件清权审计完成数仍为 0。继续值得做的只有：在取得官方边界、现场无障碍／维护／气候数据、明确责任主体、预算、排班和书面授权后，按既有证据门逐项关闭 unknown。应停止的方向是：继续增加品牌、节庆、季节、场景、设备、精确位置、无证据 KPI、伙伴名单或成熟度叙事；用活动热度、机器 PASS、图面覆盖或传播量冒充公共价值；在普通路径、静音、无屏、非 AI、申诉或退役责任上退让。
+
+The overall audit fixes 12 scenes, eight projects and three key areas, with zero geometry or provisional-boundary change. Both proposal languages, offline HTML, the operations contract and bilingual figure use the same ordinary-day base, four conditional-season states, four windows, roles, three carriers, annual disposition and 0/unknown reality boundary. Every scene remains G0; rights remain `not_fully_cleared`; completed independent file-level rights audits remain 0. The only worthwhile continuation is to close existing unknowns through the inherited evidence gates after official boundaries, field accessibility/maintenance/climate data, accountable operators, budgets, rosters and written authorization exist. Work that should stop includes adding brands, festivals, seasons, scenes, devices, exact locations, unsupported KPIs, partner lists or maturity narratives; presenting event heat, machine PASS, drawing coverage or publicity as public value; or weakening ordinary-path, quiet, screen-free, non-AI, appeal or retirement duties.
+
+### 出版固定点 / Publication fixed point
+
+双语 `year-round-civic-operations.{svg,png}` 采用相同 1800×1100 画布、面板、坐标与状态语法；中文与英文 PNG 均由本机离线 headless Chrome 从可编辑 SVG 导出，未加载远程资源。四份 PDF 从最终双语 Markdown 和 15 组图件以两个新 Python 进程连续重生，逐文件字节一致。中文／英文 A3 为 63／67 页，单一 A3 纵向尺寸；中英文 A0 各 15 页，单一 A0 横向尺寸。PyMuPDF 检查全部 160 页的可搜索文字、图像对象、空白页、替换字形和文本边界；Poppler 对双语封面、第 12 张运营整板及 A3 运营细节裁片作视觉渲染复核。空白页、替换字形、越界文本块均为 0。
+
+The bilingual `year-round-civic-operations.{svg,png}` pair uses the same 1800×1100 canvas, panels, coordinates and state grammar. Both PNGs were exported from editable SVG sources by a local offline headless Chrome session without remote resources. All four PDFs were regenerated twice in fresh Python processes from the final bilingual Markdown and 15 figure sets and are byte-identical file by file. The Chinese/English A3 booklets contain 63/67 pages at one portrait A3 size; both A0 sets contain 15 pages at one landscape A0 size. PyMuPDF checked searchable text, image objects, blank pages, replacement glyphs and text bounds across all 160 pages. Poppler visually rendered both covers, both board 12 operations boards, and representative A3 operations detail crops. Blank pages, replacement glyphs and out-of-page text blocks are all 0.
+
+| PDF | Pages / format | SHA-256 |
+|---|---|---|
+| `drawings/a3-booklet.pdf` | 63 / A3 portrait | `e707883c9663945910d3496905461367e78a5fe40283b46423802b164cec59a1` |
+| `drawings/a3-booklet.en.pdf` | 67 / A3 portrait | `5f4f4abc6867e1419347a38b4c86dc246bb02881fe248aca7161796d11acce18` |
+| `drawings/a0-boards.pdf` | 15 / A0 landscape | `16754aff1b6fd81a2db3fdc40b42ab76c93a2cd2fd6c3c61cc65cdc031e7a6f9` |
+| `drawings/a0-boards.en.pdf` | 15 / A0 landscape | `ff7f7a57eed59d2ae0edbff2fceea7257c25ee1a4f7d1d74fb77ee44e4f40b82` |
+
+该出版固定点只证明当前包内字节和版式可复核，不证明活动、开放、排班、人员、预算、伙伴、投诉、事故、恢复时长、年度决定、运营成绩、批准、G1 或清权。
+
+This publication fixed point proves only that the current in-package bytes and layout are reviewable. It proves no event, opening, roster, staff, budget, partner, complaint, incident, recovery duration, annual decision, operating result, approval, G1 status or rights clearance.
+
 ## 双轨前台增量 / Twin-track frontend increment
 
 本轮把“双轨京张”建立为前台空间总纲：连续日常轨承载普通公共生活，间歇验证轨只在自愿、公告、限域、有责任人的时段出现；原点社区、众智园、大钟寺分别作为共创、验证、发布换轨场；失败侧线承载停止、人工接管、绕行、申诉和恢复；入口、时段、状态、人工、来源、退出六类信号共同组成公共时刻表。人工站房、无屏节点和非 AI 完整路径不依赖注册、扫码或 AI。`visual/assets/key-area-evidence-matrix.json#twin_track_frontend_contract` 记录同一套双轨、三换轨场、四态、旅程和后台治理回链，并把所有现实运行结果保持为 0 或 unknown。主图 `site-overview` 的双语 PNG 与新增双语 SVG 可编辑源只表达关系，不改 geometry、不新增场景编号，也不把验证轨升级为连续占地或已建设施。
@@ -108,7 +211,11 @@ V2.11 对整个投稿包做一致性与可移交性扫描，不新增空间项�
 
 V2.11 performs a package-wide consistency and transferability audit without adding a spatial project, scene, coordinate, real-world approval, or result. `implementation-handoff-matrix.json` connects the eight existing projects, three existing protocols, and twelve preregistration scenes to seven handoff packs, nine closure categories, and 99 stable artifact IDs; no artifact has been submitted and all eleven items remain NO-GO. `submission-use-rights-matrix.json` separates announcement clause 8.1 from repository review, organizer project use, entrant external display, cross-project reuse, and third-party components, while keeping applicability to this open Agent call pending confirmation. Dense bilingual evidence indexes are split into readable units while exhaustive indexes remain in structured files, and the previously referenced but absent `RISK_AND_SOURCE_BOUNDARIES` self-check is made explicit.
 
-## 本次增量状态 / Current increment status
+## 第 7 轮历史增量状态 / Historical Round 7 increment status
+
+> 本节只保留第 7 轮当时的固定点，不是第 9 轮修补后的当前状态；当前 99/98 路径、148 页出版与 35 条来源闭环以本报告上方“第 7—9 轮跨轮闭环修补”段落为准。
+>
+> This section preserves the Round 7 fixed point only and is not the current post-repair state. The current 99/98 paths, 148-page publication set, and 35-source closure are governed by the “Rounds 7–9 cross-round closure repair” section above.
 
 > 本节从最新 `main@cf263740…` 重新开始；第 6 轮合并 SHA `2f6dfc53…` 已验证为其祖先。本节不继承前一 PR 的 `[x]`、PDF、manifest 或可信 check；最终 PR head 的可信 `submission-validation` 才能关闭最后一项。
 >
@@ -130,15 +237,15 @@ V2.11 performs a package-wide consistency and transferability audit without addi
 - [x] Seven future measurements each have a typed anchor, denominator, and proof limit; real measures, prompts, devices, duties, and restoration remain 0 or unknown.
 - [x] Geometry, existing SCENE/JZ/T IDs, and eight projects are unchanged; every scene remains G0, with provisional boundaries and real maturity unchanged.
 - [x] Bilingual proposals, reports, visual pages, SVG/PNG, and A3/A0 outputs align; 57 PDF pages contain no blank page, replacement glyph, or out-of-page object, and both generation passes are byte-identical.
-- [x] The 89 manifest paths, five compatibility groups, and 89 rights-ledger records are exact sets; `not_fully_cleared`, zero independent file-level audits, and blocked public/professional reuse remain unchanged.
+- [x] The 89 manifest paths, five compatibility groups, and 89 rights-ledger records were exact sets at the Round 7 fixed point; `not_fully_cleared`, zero independent file-level audits, and blocked public/professional reuse remained unchanged.
 - [x] Strict, deterministic, spatial, visual, professional, self-check, T-02, bilingual structure, and participant preflight all pass on final bytes.
 - [ ] Trusted `submission-validation` on the final PR head reports `SUCCESS`.
 
 ## 权利证据审计 / Rights-evidence audit
 
-审计以 `visual/assets/source-rights-evidence.schema.json`、`visual/assets/source-rights-evidence.json`、`visual/assets/submission-use-rights-matrix.json`、`visual/assets/rights-clearance-ledger.json`、`agent.json` 与 `manifest.json` 为一组，不把任一结构 PASS 解释为法律清权。最低语义断言为：29 条来源与证据记录一一对应；120 个 OSM way 与 element lineage 一一对应；manifest、5 个兼容组和 89 条逐文件记录路径严格等集；除 manifest 与 ledger 两个不可自引用项外，每条资产摘要与 manifest 相等；工具 ID 均能解析到 `agent.json`；`audit_records=[]`；公告 8.1 适用关系仍待确认；P0 01/02/03 仍 open；公共或专业复用仍 blocked。
+审计以 `visual/assets/source-rights-evidence.schema.json`、`visual/assets/source-rights-evidence.json`、`visual/assets/submission-use-rights-matrix.json`、`visual/assets/rights-clearance-ledger.json`、`agent.json` 与 `manifest.json` 为一组，不把任一结构 PASS 解释为法律清权。最低语义断言为：35 条来源与证据记录一一对应；120 个 OSM way 与 element lineage 一一对应；manifest、5 个兼容组和 99 条逐文件记录路径严格等集；除 manifest 与 ledger 两个不可自引用项外，每条资产摘要与 manifest 相等；工具 ID 均能解析到 `agent.json`；`audit_records=[]`；公告 8.1 适用关系仍待确认；P0 01/02/03 仍 open；公共或专业复用仍 blocked。
 
-The audit treats `visual/assets/source-rights-evidence.schema.json`, `visual/assets/source-rights-evidence.json`, `visual/assets/submission-use-rights-matrix.json`, `visual/assets/rights-clearance-ledger.json`, `agent.json`, and `manifest.json` as one contract. No structural PASS is interpreted as legal clearance. Minimum semantic assertions are: one evidence record per each of 29 sources; one element-lineage record per each of 120 OSM ways; strict path equality among the manifest, five compatibility groups, and 89 file-level records; digest equality for every asset except the two explicit self-reference cases (manifest and ledger); every tool ID resolves in `agent.json`; `audit_records=[]`; announcement clause 8.1 applicability remains pending confirmation; P0 01/02/03 stay open; and public or professional reuse stays blocked.
+The audit treats `visual/assets/source-rights-evidence.schema.json`, `visual/assets/source-rights-evidence.json`, `visual/assets/submission-use-rights-matrix.json`, `visual/assets/rights-clearance-ledger.json`, `agent.json`, and `manifest.json` as one contract. No structural PASS is interpreted as legal clearance. Minimum semantic assertions are: one evidence record per each of 35 sources; one element-lineage record per each of 120 OSM ways; strict path equality among the manifest, five compatibility groups, and 99 file-level records; digest equality for every asset except the two explicit self-reference cases (manifest and ledger); every tool ID resolves in `agent.json`; `audit_records=[]`; announcement clause 8.1 applicability remains pending confirmation; P0 01/02/03 stay open; and public or professional reuse stays blocked.
 
 ```powershell
 $pkg = 'submissions/xyh202131/jingzhang-ai-pilgrimage-belt'

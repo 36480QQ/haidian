@@ -24,13 +24,11 @@ iteration: "v0.1"
 
 路签不是新系统,而是把信任做成可见对象:**纸面路签、金属路签、电子路签三级并存,具名人工签发,公众可查,审计可追。** 场景允许与否、数据边界在哪、谁复核、AI 停机后城市靠什么继续运转,全部写进每张场景卡的"进路表"(route table) [metric:staff_route_table_coverage_ratio]。AI 是列车,不是轨道;没有路签,再快的列车也停在站内。
 
-空间上,本案在临时范围内划分 42 个概念用地单元,完整覆盖约 11.4 平方公里的临时总体范围(EPSG:4548 复算) [data:geometry/land_use.geojson] [metric:land_use_parcel_count] [metric:site_area_sqm]。概念绿地率约 14.5%、公共空间比例约 7.6% [metric:green_ratio] [metric:public_space_ratio];12 个闭塞区间、6 个换签点、约 9.7 公里正线慢行脊构成空间骨架 [metric:spine_length_m]。所有几何基于仓库临时粗略边界,官方 polygon 发布后整链重算 [data:geometry/site_boundary.geojson#SITE-001] [assumption:A-BOUNDARY-001]。
+空间上,本案在临时范围内划分 42 个概念用地单元,完整覆盖约 11.4 平方公里的临时总体范围(EPSG:4548 复算) [data:geometry/land_use.geojson] [metric:land_use_parcel_count] [metric:site_area_sqm];概念绿地率约 14.5%、公共空间比例约 7.6% [data:geometry/green_space.geojson] [metric:green_ratio] [metric:public_space_ratio];12 个闭塞区间、6 个换签点、约 9.7 公里正线慢行脊构成空间骨架 [metric:spine_length_m]。所有几何基于仓库临时粗略边界,官方 polygon 发布后整链重算 [data:geometry/site_boundary.geojson#SITE-001] [assumption:A-BOUNDARY-001]。
 
 实施从"三个试点区间"开始,而不是一次铺满全线:众智园先发 2 个封闭试验区间,大钟寺先发 1 个开放体验区间;AI 原点开源区间以影子运行方式先做"模型说明与维护门诊" [metric:phasing_stage_count]。每一段都以"无签不进路"作为验收句:没有具名人工签发、没有可见凭证、没有降级人工流程、没有审计记录的场景,不发路签、不进区间 [data:risk.json]。
 
 这不是反 AI 的方案。相反,它把"如何被信任"变成 AI 企业可出售的能力:产品不仅证明性能,还证明能持证进路、能人工降级、能退出不留锁。世界级 AI 街区的成熟标志不是设备永远在线,而是城市在任何技术周期里都能安全放行、稳妥刹车——这正是单线铁路教会现代城市的事 [depth:overall_spatial_structure] [depth:three_level_scope_framework]。
-
-![京张路签 · 一页看懂](assets/figures/staff-card.png)
 
 ![正线、三场、六换签点与十二闭塞区间总览](assets/figures/site-overview.png)
 
@@ -152,17 +150,11 @@ iteration: "v0.1"
 | SCN-11 | 京张记忆共读 | 大钟寺 BS-11 | 清权史料检索与多语解释 | 仅公开清权史料 | 史实复核 | 实体时间线+撤回卡 | 公共 |
 | SCN-12 | 消费智能体拔线沙盒 | 大钟寺 BS-12 | 合成预算与逐步确认 | 无真实支付接入 | 每步人工确认 | 人工比价板+申诉入口 | 公共 |
 
-进路表是场景卡的强制字段:允许任务、禁止任务、数据边界、人工复核、降级路径、路签类型缺一不发签。生成式 AI 服务遵守《生成式人工智能服务管理暂行办法》对内容与责任的要求 [standard:GENERATIVE-AI-INTERIM-MEASURES] [source:DATA-SRC-GENERATIVE-AI-INTERIM-MEASURES];具体落点示例:SCN-06 双语模型说明工坊在发布前完成内容核验与来源披露,SCN-07 互操作沙盒禁止生成未经人工复核的转接指令。无障碍场景遵循《无障碍环境建设法》与国办 45 号文的适老要求,普通路径、纸面流程与有人柜台始终保留 [standard:BARRIER-FREE-ENVIRONMENT-LAW] [standard:ELDERLY-SMART-TECH-PLAN-2020-45];具体落点示例:SCN-09 导航同步发布触觉静态地图与现场核验路线,SCN-10 分诊柜台保留纸面目录与电话路径 [source:DATA-SRC-BARRIER-FREE-ENVIRONMENT-LAW] [source:DATA-SRC-ELDERLY-SMART-TECH-PLAN-2020-45]。
+进路表是场景卡的强制字段:允许任务、禁止任务、数据边界、人工复核、降级路径、路签类型缺一不发签。生成式 AI 服务遵守《生成式人工智能服务管理暂行办法》对内容与责任的要求 [standard:GENERATIVE-AI-INTERIM-MEASURES] [source:DATA-SRC-GENERATIVE-AI-INTERIM-MEASURES];无障碍场景遵循《无障碍环境建设法》与国办 45 号文的适老要求,普通路径、纸面流程与有人柜台始终保留 [standard:BARRIER-FREE-ENVIRONMENT-LAW] [standard:ELDERLY-SMART-TECH-PLAN-2020-45];两部文件的公开文本分别登记于来源索引 [source:DATA-SRC-BARRIER-FREE-ENVIRONMENT-LAW] [source:DATA-SRC-ELDERLY-SMART-TECH-PLAN-2020-45]。
 
- **电子路签与 AI 技术架构(概念方向)。** 电子路签建议采用"数字凭证+版本化记录"结构:签发时生成带签发人标识与哈希链的凭证号,验证时不采集个人身份,追回时写入区块记录;具体加密、防篡改与互认协议由数据与信息安全专业团队按现行标准设计 [assumption:A-STAFF-001]。模型部署采用"端侧优先、云端备案、边缘可断"的分级策略:试验区以端侧与边缘推理为主,断网演练为必测项;模型准入需通过性能基线、安全测试与失败档案三项技术门槛,版本更新走 C0—C7 闸门 [depth:municipal_new_infrastructure]。性能基线建议至少包含两项可测指标:端侧推理响应延迟(如 P95 不超过 500 ms 的目标值)与能耗峰值(如不超过单机额定功耗的 80%),具体阈值由专业团队按设备与场景标定;安全测试至少覆盖故障模式(断网、断连、异常输入)下的人工接管演练。数据管道只处理公开或授权数据,清洗、脱敏与删除流程写入进路表 [assumption:A-PRIVACY-001]。
+**电子路签与 AI 技术架构(概念方向)。** 电子路签建议采用"数字凭证+版本化记录"结构:签发时生成带签发人标识与哈希链的凭证号,验证时不采集个人身份,追回时写入区块记录;具体加密、防篡改与互认协议由数据与信息安全专业团队按现行标准设计 [assumption:A-STAFF-001]。模型部署采用"端侧优先、云端备案、边缘可断"的分级策略:试验区以端侧与边缘推理为主,断网演练为必测项;模型准入需通过性能基线、安全测试与失败档案三项技术门槛,版本更新走 C0—C7 闸门 [depth:municipal_new_infrastructure]。数据管道只处理公开或授权数据,清洗、脱敏与删除流程写入进路表 [assumption:A-PRIVACY-001]。
 
-**电子路签字段原型(示例)。** 为便于工程评估,电子路签建议至少包含以下字段:`staff_id`(签发号)、`issuer`(签发人标识)、`issued_at`(签发时间)、`expires_at`(有效期)、`section_id`(授权闭塞区间)、`model_hash`(模型版本哈希)、`route_table_ref`(进路表版本)、`degrade_trigger`(降级触发条件)、`recall_status`(追回状态)。该字段集是概念草案,具体格式与加密方案由数据安全专业团队按现行标准设计 [assumption:A-STAFF-001]。
-
-**电子路签的协议设想(供技术团队深化)。** 凭证结构建议分三层:①凭证头(签发区、区间号、有效期、签发人角色)②负载(服务授权范围、数据字段白名单、降级等级)③见证链(签发、换签、追回的哈希链,按时间顺序追加)。哈希链只存摘要不存原文,验证在端侧完成,链上记录用于事后审计而非实时授权。与现有政务数据平台的对接建议走"最小化互认":先以 CSV 白名单与签名摘要交换准入状态,不直接共享数据库;待数据与信息安全团队按现行标准设计互认协议后再扩展 [assumption:A-STAFF-001] [depth:municipal_new_infrastructure]。
-
-**协议验证路径建议(概念)。** 为把协议从方向推进到可评审的技术规格,建议分三步验证:第一步,在路签沙盒(PRJ-01)内用模拟签发环境跑 12 周推演,验证凭证号生成、换签交接与追回记录的可复现性;第二步,选取一个试点区间做端侧验证试点,对比"哈希链摘要核对"与"人工运行表+电话闭塞"两条路径的交接时延与失败率;第三步,把验证结果整理为技术规格建议,交数据与信息安全专业团队评审。三步均不采集个人身份,验证数据只存聚合摘要 [assumption:A-STAFF-001] [depth:phasing_implementation]。
-
-**非空间 AI 服务的路签边界。** 对不占用公共空间的纯数据服务(远程推理、后台模型),路签机制以"数据路签"形式适用:只授权公开/授权数据集的进入与输出,不授权个人敏感数据跨区流动;若服务最终输出进入公共空间展示或交互,则升级为对应区间的空间路签 [assumption:A-STAFF-001] [assumption:A-PRIVACY-001]。数据路签的签发与追溯建议登记:数据集标识与哈希、用途声明、消费方标识、数据删除或归档时间;任何未登记的数据流默认不授权,审计可按数据路签台账反查 [assumption:A-PRIVACY-001]。
+**非空间 AI 服务的路签边界。** 对不占用公共空间的纯数据服务(远程推理、后台模型),路签机制以"数据路签"形式适用:只授权公开/授权数据集的进入与输出,不授权个人敏感数据跨区流动;若服务最终输出进入公共空间展示或交互,则升级为对应区间的空间路签 [assumption:A-STAFF-001] [assumption:A-PRIVACY-001]。
 
 每张卡还登记"停机条件与交还路签的流程":设备如何断电、数据如何删除或归档、人工流程如何接管、失败档案存于何处 [depth:municipal_new_infrastructure] [depth:retain_renovate_demolish]。现场绩效指标在获得许可基线前保持 null,不填 0、不填 100%、不做估值 [metric:live_service_success_rate] [assumption:A-METRICS-001]。
 
@@ -222,35 +214,23 @@ iteration: "v0.1"
 
 **实施分期** [data:geometry/phasing.geojson#PHASE-01] [metric:phasing_stage_count] [depth:phasing_implementation]:近期(试验先发)——众智园两个试验区间 + 大钟寺一个开放区间先动,路签制度与审计在沙盒中跑通;中期(开源贯通)——AI 原点开源门诊、模型说明工坊与换签点横缝补齐,全线 12 区间完成普通基线审计;远期(常态运营)——全部区间进入持签运营,按季度发布"换签报告"(发放、降级、追回、失败档案统计)。
 
-**路签治理组织(概念)。** 路签运行建议由四类具名角色分担,任何角色缺失即停发路签:签发员(审核进路表并签发凭证)、换签员(在换签点核验交接)、审计员(独立复核发放/追回记录)、区间守护人(维护普通服务与人工降级路径)。四类角色可由现有公共部门、社区与专业机构人员兼任:例如区间守护人可挂靠公园管理处、街道办或城管等现有管理体系,在现行职责框架内增加"普通服务与降级路径守护"任务,不预设新增编制;具体职责、权限与法律责任由专业团队按现行制度设计 [assumption:A-STAFF-001]。
-
-**闭塞区间的自动停运条款。** 任一闭塞区间在以下条件之一出现时自动进入"停运且不排期"状态,而非仅暂停:连续无具名签发主体、进路表长期无法通过复核、或降级演练连续两次失败。停运区间只保留无签普通服务,待重新具备全部条件并公告后方可申请恢复 [assumption:A-STAFF-001]。
+**路签治理组织(概念)。** 路签运行建议由四类具名角色分担,任何角色缺失即停发路签:签发员(审核进路表并签发凭证)、换签员(在换签点核验交接)、审计员(独立复核发放/追回记录)、区间守护人(维护普通服务与人工降级路径)。四类角色可由现有公共部门、社区与专业机构人员兼任,具体职责、权限与法律责任由专业团队按现行制度设计,不预设新增编制 [assumption:A-STAFF-001]。
 
 **场景准入 C0—C7 闸门。** 路签签发按七级递进:完成进路表登记 → 无签普通基线可运行 → 持签影子运行 → 具名人工值守下有限授权 → 常态化运营 → 独立审计通过 → 发放年度换签凭证。每一级都要求上一级证据闭环,任何一级失败即回到上一级,不跳过、不并行背书 [depth:phasing_implementation]。
 
 **试点人力与预算量级(概念测算)。** 三个试点区间的最小运行编制建议为:每区间 1 名签发员(可兼换签)、1 名区间守护人、1 名兼职审计员,首年约 6—9 个全职等效岗位;路签制度沙盒(PRJ-01)最低启动条件为进路表 schema、一个模拟签发环境与一次 12 周推演,预算量级以常规公共咨询与数字化项目为参照估算。上述数字均为概念测算,不构成投资、采购或财政承诺 [assumption:A-RESOURCES-001]。
 
-**测算依据与参照(概念)。** 人力编制参照同量级公共空间运维的常见配置:单点值守公共服务点位通常配置 1—2 名现场人员/班次,三班制约需 4—6 人,叠加轮休与兼职审计后与 6—9 个全职等效岗位的量级一致;签发与换签职能借鉴政务窗口"一窗受理"的轮岗惯例,不单独设常驻专职岗。预算量级参照两类公开项目区间:街道级数字化改造试点(数十万元级)与区级公共咨询项目(百万元内),路签沙盒 PRJ-01 取其中较低量级;正式投资与采购预算须在授权后由专业团队编制,本包不给出承诺数字 [assumption:A-RESOURCES-001] [depth:phasing_implementation]。
-
 **成本与规模边界。** 试点人力、班次、维护、保险与预算在授权前保持 unknown [assumption:A-RESOURCES-001];本包只承诺"可独立暂停"的包结构,不给出投资测算或财政承诺 [assumption:A-VERB-001]。
 
-项目成熟度 G0—G7 与场景准入 C0—C7 是两套独立闸门:一个场景通过不能替另一个场景背书,一个项目有预算也不能绕过"无签不进路"。年度运营含四项节奏:每周开源维修门诊;每月一次区间降级演练(全线下一年共 12 次) [metric:fallback_drill_count];每季度独立评估者、维护者与受影响公众共同发布换签报告;每年举办"换签节"——用中英双语展示发放、停用、追回与修补,把开放复盘做成一带最持久的品牌事件。换签节年度复盘强制设置"公众质询环节":受影响居民、社区代表与开发者可现场质询本年路签发放与追回记录,质询意见经汇总后进入下一年度发放决策参考,具体时长与组织方式由运营团队设计,不承诺自动采纳 [assumption:A-EVENT-001]。开发者与企业的转化路径不是"路演—招商",而是"公共问题—普通基线—持签增益—降级演练—开放资产—专业采用" [source:CASE-UNHABITAT-PEOPLE] [assumption:A-EVENT-001]。
-
-**公众反馈进入路签机制的路径(概念)。** 社区与公众反馈建议通过三条具名通道进入路签系统,而非泛化的"意见箱":①换签报告——每季度与独立评估者共同发布,公众可对发放、停用与追回记录提出异议,异议进入审计员复核队列;②降级演练观察席——每月演练设公开观察席,受影响公众可旁听并记录降级路径的实际表现;③换签节提案窗口——年度换签节设提案环节,居民与企业可就场景边界、数据白名单与降级等级提出修订建议,修订建议进入 C0—C7 闸门评审。三条通道的产出都写入进路表修订记录,保证公众输入可追溯、可回应 [assumption:A-EVENT-001] [depth:phasing_implementation]。
+项目成熟度 G0—G7 与场景准入 C0—C7 是两套独立闸门:一个场景通过不能替另一个场景背书,一个项目有预算也不能绕过"无签不进路"。年度运营含四项节奏:每周开源维修门诊;每月一次区间降级演练(全线下一年共 12 次) [metric:fallback_drill_count];每季度独立评估者、维护者与受影响公众共同发布换签报告;每年举办"换签节"——用中英双语展示发放、停用、追回与修补,把开放复盘做成一带最持久的品牌事件。开发者与企业的转化路径不是"路演—招商",而是"公共问题—普通基线—持签增益—降级演练—开放资产—专业采用" [source:CASE-UNHABITAT-PEOPLE] [assumption:A-EVENT-001]。
 
 ## 指标体系、面积复算与合规矩阵
 
 指标分三层。
-
-- **临时几何诊断**:范围、绿地与公共空间比例有公式但无法定效力 [metric:site_area_sqm] [metric:green_ratio] [metric:public_space_ratio]。概念建筑基底面积由几何复算 [metric:building_footprint_area_sqm] [metric:spine_length_m]。
-- **重点区与通道**:两翼服务通道与重点区面积复算见 [metric:flank_road_length_m] [metric:key_area_total_sqm]。
-
-- **路签机制完整度**:区间、换签点与场景卡数量均可由包内 JSON 计数 [metric:block_section_count] [metric:exchange_point_count] [metric:scenario_card_count]。用户画像分类见画像章节 [metric:persona_count]。
-
-- **案例与地标**:生态案例与朝圣地标数量见生态与风貌章节 [metric:ai_ecosystem_case_count] [metric:landmark_count]。更新项目与用地单元数量见项目清单章节 [metric:renewal_project_count] [metric:land_use_parcel_count]。
-
-- **机制验收**:进路表覆盖与产业测试场景为机制验收指标 [metric:industry_test_scenario_count] [metric:staff_route_table_coverage_ratio]。年度演练与分期安排见运营章节 [metric:fallback_drill_count] [metric:phasing_stage_count]。
-
+- **临时几何诊断**:范围、绿地与公共空间比例有公式但无法定效力 [metric:site_area_sqm] [metric:green_ratio] [metric:public_space_ratio];概念建筑基底面积由几何复算 [metric:building_footprint_area_sqm] [metric:spine_length_m];两翼服务通道与重点区面积见对应指标 [metric:flank_road_length_m] [metric:key_area_total_sqm]。
+- **路签机制完整度**:区间、换签点与场景卡数量均可由包内 JSON 计数 [metric:block_section_count] [metric:exchange_point_count] [metric:scenario_card_count];用户画像分类见画像章节 [metric:persona_count]。
+  - 生态案例与朝圣地标数量见生态与风貌章节 [metric:ai_ecosystem_case_count] [metric:landmark_count];更新项目与用地单元数量见项目清单章节 [metric:renewal_project_count] [metric:land_use_parcel_count]。
+  - 进路表覆盖与产业测试场景为机制验收指标 [metric:industry_test_scenario_count] [metric:staff_route_table_coverage_ratio];年度演练与分期安排见运营章节 [metric:fallback_drill_count] [metric:phasing_stage_count]。
 - **现场效果**:服务成功率、恢复时间、负担分布,目前全部 null [metric:live_service_success_rate]。
 
 ![路签机制完整度与现场 unknown 的证据边界](assets/figures/metrics-evidence.png)
@@ -267,7 +247,7 @@ official polygon 到位后需全量复算,不能只手改标题数字 [assumptio
 
 最严重的失败不是模型输出错误,而是**凭证系统失灵后,AI 服务在无签状态下继续占用公共空间**。因此以下均为硬停止:无具名人工签发;无可见凭证;无降级人工流程;个人敏感数据越界;AI 作终局决定而无人工复核;公共路径、无障碍净宽或消防通道被测试占用;无法物理撤除的设备安装;文保、绿地、蓝线或交通安全约束未经审查 [data:risk.json] [depth:risk_missing_data]。
 
-**三类高风险场景的应急响应预案(概念)。** 凭证系统失灵:立即切换到电话闭塞式人工流程,全部区间暂停 AI 服务,实物路签与纸面台账接管,48 小时内完成审计并公布;手工闭塞操作清单至少包括:纸质台账模板(区段/凭证号/交接人/时间)、通讯树(守护人→签发员→审计员→值班负责人)、广播与现场公告指令示例,具体模板由运营团队编制;AI 服务越界:区间守护人物理隔离、断开数据写入、冻结输出,按失败档案流程归档并追回路签;供应商退出或断供:可逆插接轨断电撤除,开放适配器与维修手册接管,数据按进路表删除或归档。独立审计员建议由具备数据、运营与规划资质的第三方机构人员担任,每季度至少一次,重大故障后加审 [assumption:A-STAFF-001]。
+**三类高风险场景的应急响应预案(概念)。** 凭证系统失灵:立即切换到电话闭塞式人工流程,全部区间暂停 AI 服务,实物路签与纸面台账接管,48 小时内完成审计并公布;AI 服务越界:区间守护人物理隔离、断开数据写入、冻结输出,按失败档案流程归档并追回路签;供应商退出或断供:可逆插接轨断电撤除,开放适配器与维修手册接管,数据按进路表删除或归档。独立审计员建议由具备数据、运营与规划资质的第三方机构人员担任,每季度至少一次,重大故障后加审 [assumption:A-STAFF-001]。
 
 信息与资产只在可公开复核的资料边界内使用 [assumption:A-PRIVACY-001];隐私、版权、授权与实施风险由具名人工复核,任何一项证据不足就保持 pending,不用模型推断补齐。所有空间落地均为概念建议、参考方案或可供专业团队深化研究,不替代正式规划,不构成政府审定、项目立项、采购、合作、招商、投资或实施承诺 [assumption:A-VERB-001]。
 

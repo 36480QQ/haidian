@@ -213,6 +213,45 @@
       "assumptions": [
         "Components are conceptual, movable and conditional on G1 verification."
       ]
+    },
+    "g1_verification_domain_count": {
+      "status": "known",
+      "value": 7,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count(G1_verification_domains)",
+      "confidence": "high",
+      "assumptions": [
+        "A proposal checklist structure; it is not a statutory approval checklist."
+      ]
+    },
+    "codesign_participant_role_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count(paid_codesign_baseline_role_types)",
+      "confidence": "high",
+      "assumptions": [
+        "Role types are a proposed baseline; recruitment and compensation require separate written agreement."
+      ]
+    },
+    "shift_log_record_category_count": {
+      "status": "known",
+      "value": 7,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count(shift_log_record_categories)",
+      "confidence": "high",
+      "assumptions": [
+        "Categories are a de-identified service-governance template, not a workforce monitoring scheme."
+      ]
     }
   }
 }
