@@ -4,7 +4,7 @@ author_github: "userInner"
 language: "zh"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
-iteration: "v5.0"
+iteration: "v6.0"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以百年京张、中关村创新史和面向2030的人机自主权为主线，建设一条公共记忆可积累、个人数据可退出、创新收益可共享的AI城市廊道。"
@@ -14,18 +14,20 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 # 京张双记 / DOUBLE MEMORY JINGZHANG
 
-> **v5.0 核心判断：** 一条创新带不仅要在总平上成立，还要在清晨、工作日、午间、公开试验和夜间归途中持续服务普通人。新版把“总体带—日常路线—同意剖面—实施合同”进一步组织为“24 小时公共创新线”：普通服务始终先行，AI 只在可见、可选、可停止的时空单元中出现；所有法定控制仍待正式数据补齐，现场结果仍为 `not_field_tested / HOLD`。
+> **v6.0 核心判断：** 先做一个样段，再讨论扩展。总体愿景必须收束为三个可撤回、可核验、可复原的“双记样段”：普通服务可独立运行，AI 可拆除，责任可签认，结果可公开。所有法定控制仍待正式数据补齐，现场结果仍为 `not_field_tested / HOLD`。
 
-| 评审维度 | v5.0 的实质深化 | 核验入口 |
+| 评审维度 | v6.0 的实质深化 | 核验入口 |
 | --- | --- | --- |
 | 任务契合与原创性 | “证明里程”把公共记忆脊、日常路线、记忆边界护照和实施闸门组织成一条可追读的方法 | `proof-mile-spatial-atlas.json` |
 | AI 与规划创新 | AI 不再是设备清单，而是受 D0—D4 数据等级、删除回执、物理停止和独立复核约束的城市服务 | `forgetfulness-budget.json`、离线审计脚本 |
-| 实施可行性 | 建筑界面按“保留—轻改—可逆植入—法定控制明确后才新建”排序，并与 0—180 天闸门对接 | `building-interface-kit.json`、`implementation-contract.json` |
+| 实施可行性 | 三个重点区分别形成可签责任、可核预算、可执行回退的最小样段，并与 0—180 天闸门对接 | `three-proof-blocks.json`、`implementation-contract.json` |
 | 公共利益 | 三个重点区分别形成无需账号、保留普通等价服务的日常路线，由六类人物逐路线测试 | `key-area-daily-routes.json` |
 | 风险与表达 | 总图与控制账本把 known、design_target、unknown、HOLD 分层显示，避免图面精度掩盖证据缺口 | 第 1、3—5 张展板、空间审计脚本 |
-| 国际传播与长期运营 | “24 小时公共创新线”把五个日常时段、年度公开复盘与区域协作接口合并为一张可执行的运营图谱 | `24h-public-innovation-line.json`、v5 概念主视觉 |
+| 国际传播与长期运营 | “24 小时公共创新线”负责持续运营，“三处双记样段”负责小步实施与放行，形成愿景—样段—复盘闭环 | `24h-public-innovation-line.json`、第 9 张展板 |
 
-![24 小时公共创新线：铁路遗产、蓝绿系统、普通公共路线和围合试验庭连续工作的轴测概念体验（AI 生成，非现状或审批效果）](assets/media/cover-v5-professional.webp)
+![京张双记总体愿景：公共记忆脊、蓝绿系统、铁路遗产与连续公共生活共同构成创新带（AI 生成概念体验，非现状或审批效果）](assets/media/cover-v6-vision.webp)
+
+![三处双记样段：从总体愿景收束到三个可撤回、可核验、可复原的最小实施单元](assets/boards/board-09.jpg)
 
 ![24 小时运营—空间联动展板：五个时段分别登记普通服务、可选 AI、责任主体、放行条件与证据状态](assets/boards/board-08.jpg)
 
@@ -139,6 +141,12 @@ v2.0 将抽象梯度压成一个可异地复用、现场再校准的 60 米 × 1
 以站城步行连接、无账号公共服务、多语言交流、智能终端和内容消费为重点。导航、翻译、办事与无障碍辅助均保留人工、纸质或电话等价渠道。仓库临时大钟寺 polygon 存在空间偏移风险，本版不据此判断具体地块、路口和建筑。[data:geometry/key_areas.geojson#PROV-KEY-003] [source:DAZHONGSI-RENEWAL] [assumption:A-KEYAREA-002]
 
 三个重点区均采用“保留—轻改—可逆试验—审查扩展”路径；具体建筑规模、拆改和工程线位须待官方边界、权属和现场调查确认。
+
+### 三处双记样段：从愿景到可交付单元
+
+v6.0 不把三个重点区继续放大成未经核实的“大项目”，而是每处先完成一个最小样段：众智园“停机花园”以 60 米 × 14 米同意剖面为包络，保留 4 米无 AI 通行和围合低速测试；AI 原点“来源门诊”以可逆首层和前场承载纸面登记、人工申诉与可撤回来源记录；大钟寺“免账号会客厅”以无障碍到达、多语人工和端侧辅助建立站城公共界面。
+
+三样段概念投资带为 350—650 万元，共用现状基线、许可、运营、独立复核与复原准备为 400—700 万元，合计与实施合同的 750—1350 万元一致。放行顺序为 G0 锁定事实、G1 普通服务先开、G2 可逆原型、G3 不超过 20 个值守窗口、G4 保留/修改/退役；普通路线完成率和人工接管成功率目标均为 100%，边界理解率不低于 80%，未解决重大问题为 0。以上均为概念成本与试点目标，不是报价、批准预算或实测成绩；任一责任、许可或基线缺失即保持 `HOLD`。详见 `visual/assets/three-proof-blocks.json`。[depth:renewal_project_list]
 
 ![三处重点区日常路线：普通入口—无AI路径—人工服务—主动选择—普通出口](assets/boards/board-04.jpg)
 

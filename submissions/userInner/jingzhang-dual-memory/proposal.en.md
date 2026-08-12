@@ -4,7 +4,7 @@ author_github: "userInner"
 language: "en"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
-iteration: "v5.0"
+iteration: "v6.0"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "A human-directed AI urban corridor where public memory accumulates, personal data can expire, and the benefits of innovation are shared."
@@ -14,18 +14,20 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 # DOUBLE MEMORY JINGZHANG
 
-> **v5.0 thesis:** An innovation belt must work not only as a plan, but through early commute, the working day, midday life, open trials and the night journey home. The Proof Mile now becomes a 24-Hour Civic Innovation Line: ordinary service always comes first, while AI appears only in visible, optional and stoppable time-space units. Statutory controls remain pending official data; field results remain `not_field_tested / HOLD`.
+> **v6.0 thesis:** Prove one block before expansion. The corridor vision is contracted into three reversible, verifiable and reinstatable Dual-Memory proof blocks: ordinary service runs independently, AI can be removed, responsibility can be signed, and results can be published. Statutory controls remain pending official data; field results remain `not_field_tested / HOLD`.
 
-| Review dimension | Material v5.0 advance | Verification entry |
+| Review dimension | Material v6.0 advance | Verification entry |
 | --- | --- | --- |
 | Alignment and originality | The Proof Mile connects the public-memory spine, daily routes, passports, and implementation gates into one legible method | `proof-mile-spatial-atlas.json` |
 | AI-planning innovation | AI becomes a civic service constrained by D0–D4 data classes, deletion receipts, physical stops, and independent review | `forgetfulness-budget.json`; offline audit |
-| Feasibility | Building edges follow “retain—light retrofit—reversible insert—new build only after statutory controls,” linked to 0–180-day gates | `building-interface-kit.json`; `implementation-contract.json` |
+| Feasibility | Each key area becomes a minimum block with named accountability, reconciled cost and executable fallback, linked to 0–180-day gates | `three-proof-blocks.json`; `implementation-contract.json` |
 | Public interest | Each key area has an account-free daily route with an ordinary equivalent, tested separately by six personas | `key-area-daily-routes.json` |
 | Risk and expression | The atlas and control ledger separate known facts, design targets, unknown controls, and HOLD decisions | boards 01 and 03–05; spatial audit |
-| International communication and long-term operation | The 24-Hour Civic Innovation Line combines five daily windows, an annual public-review cycle and regional exchange interfaces | `24h-public-innovation-line.json`; v5 concept cover |
+| International communication and long-term operation | The 24-Hour Civic Innovation Line sustains operation while three proof blocks govern incremental delivery and release | `24h-public-innovation-line.json`; Board 09 |
 
-![24-Hour Civic Innovation Line: an axonometric concept experience linking railway heritage, blue-green systems, ordinary public routes and a bounded trial court (AI-generated, not existing-condition or approval evidence)](assets/media/cover-v5-professional.webp)
+![Dual-Memory corridor vision: public-memory spine, blue-green systems, railway heritage and continuous civic life (AI-generated concept experience, not existing-condition or approval evidence)](assets/media/cover-v6-vision.webp)
+
+![Three Dual-Memory proof blocks: contracting the corridor vision into reversible, verifiable and reinstatable delivery units](assets/boards/board-09.en.jpg)
 
 ![24-hour operations-space board: each of five windows records ordinary service, optional AI, accountable owner, release condition and evidence state](assets/boards/board-08.en.jpg)
 
@@ -134,6 +136,12 @@ Campus, park, and neighbourhood ground floors host a public AI register, provena
 The area combines station walking links, account-free public services, multilingual exchange, smart terminals, and content industries. Navigation, translation, civic services, and accessibility assistance retain human, paper, or telephone equivalents. The provisional Dazhongsi polygon has a known spatial-offset risk, so this version makes no parcel, intersection, or building-level claim from it. [data:geometry/key_areas.geojson#PROV-KEY-003] [source:DAZHONGSI-RENEWAL]
 
 All three areas follow retain, light retrofit, reversible trial, review, then expansion. Building scale, demolition, and engineering alignments await official boundaries, ownership data, and fieldwork.
+
+### Three Dual-Memory proof blocks: from vision to delivery unit
+
+v6.0 does not enlarge the three areas into unverified megaprojects. It first delivers one minimum block in each place. Zhongzhiyuan’s Stop Garden uses the 60 m × 14 m Consent Section as its envelope, retaining a 4 m no-AI route beside a bounded low-speed test court. AI Origin’s Provenance Clinic uses a reversible ground floor and forecourt for paper registration, staffed appeal and revocable provenance records. Dazhongsi’s Account-Free Commons combines step-free arrival, staffed multilingual service and optional on-device assistance at the station-neighbourhood interface.
+
+The three blocks carry a concept band of CNY 3.5–6.5 million; shared baseline work, permits, operation, independent review and reinstatement readiness carry CNY 4.0–7.0 million, reconciling with the implementation contract’s CNY 7.5–13.5 million total. Release proceeds through G0 lock facts, G1 ordinary base first, G2 reversible prototype, G3 no more than 20 staffed windows, and G4 retain/revise/retire. Targets are 100% ordinary-route completion, 100% human handoff, at least 80% boundary comprehension and zero unresolved major issues. These are concept costs and pilot targets—not quotations, approved budgets or measured results. Any missing responsibility, permit or baseline keeps the block at `HOLD`. See `visual/assets/three-proof-blocks.json`. [depth:renewal_project_list]
 
 ![Three key-area daily routes: ordinary entry—no-AI path—staffed service—opt-in threshold—ordinary exit](assets/boards/board-04.en.jpg)
 
