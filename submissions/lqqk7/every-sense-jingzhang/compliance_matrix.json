@@ -3,7 +3,7 @@
   "requirements": [
     {
       "requirement_id": "1.3.1", "title_zh": "构建世界级AI创新生态体系", "mandatory": true,
-      "report_sections": ["统筹研究范围产业与未来城市研究", "AI 创新生态、人才画像与 AI+ 场景", "服务等价基准 SEB v0.1", "更新项目清单、实施政策与分期计划"],
+      "report_sections": ["统筹研究范围产业与未来城市研究", "AI 创新生态、人才画像与 AI+ 场景", "服务等价基准 SEB v0.2", "更新项目清单、实施政策与分期计划"],
       "geojson_layers": ["geometry/key_areas.geojson", "geometry/land_use.geojson", "geometry/buildings.geojson", "geometry/phasing.geojson"], "geometry_feature_ids": ["PROV-KEY-001", "PROV-KEY-002", "PROV-KEY-003", "BLDG-002", "BLDG-003", "BLDG-004", "PHASE-001", "PHASE-002", "PHASE-003"],
       "metrics": ["independent_task_completion_rate", "co_design_role_coverage_ratio", "human_handover_success_rate"],
       "drawings": ["drawings/a3-booklet.pdf", "drawings/a0-boards.pdf"], "visual_sections": ["三层范围", "重点区域", "AI 场景"],
@@ -153,7 +153,7 @@
     },
     {
       "requirement_id": "agent.2", "title_zh": "AI全栈自主创新体系与世界级AI创新生态设计", "mandatory": true,
-      "report_sections": ["统筹研究范围产业与未来城市研究", "重点区域详细设计", "AI 创新生态、人才画像与 AI+ 场景", "服务等价基准 SEB v0.1", "更新项目清单、实施政策与分期计划", "OP-01 桌面配对试点档案（方法学演示）"],
+      "report_sections": ["统筹研究范围产业与未来城市研究", "重点区域详细设计", "AI 创新生态、人才画像与 AI+ 场景", "服务等价基准 SEB v0.2", "更新项目清单、实施政策与分期计划", "OP-01 桌面配对试点档案（方法学演示）"],
       "geojson_layers": ["geometry/key_areas.geojson", "geometry/buildings.geojson", "geometry/constraints.geojson", "geometry/phasing.geojson"], "geometry_feature_ids": ["PROV-KEY-001", "PROV-KEY-002", "PROV-KEY-003", "BLDG-002", "BLDG-003", "BLDG-004", "OP-01", "OP-05", "OP-08", "PHASE-001", "PHASE-002", "PHASE-003"],
       "metrics": ["independent_task_completion_rate", "human_handover_success_rate", "co_design_role_coverage_ratio"], "drawings": ["drawings/a3-booklet.pdf", "drawings/a0-boards.pdf"], "visual_sections": ["重点区域", "AI 场景", "更新项目"],
       "source_ids": ["AGENT-TASKBOOK", "CASE-CORNELL-TECH", "CASE-CETRAN", "CASE-JTC-LAUNCHPAD"], "assumption_ids": ["A-CASE-TRANSFER-001", "A-IMPLEMENTATION-001", "A-CO-DESIGN-001", "A-OPERATION-NODES-001"], "self_check_ids": ["PROFESSIONAL_EVIDENCE", "PROFESSIONAL_REVIEW"],
@@ -185,7 +185,7 @@
     },
     {
       "requirement_id": "agent.6", "title_zh": "一带全球AI创新活动体系与长期运营设计", "mandatory": true,
-      "report_sections": ["更新项目清单、实施政策与分期计划", "统筹研究范围产业与未来城市研究", "服务等价基准 SEB v0.1", "京张文化、中关村文化与 AI 新文化的多感官叙事", "指标体系、面积复算与合规矩阵", "风险、版权与合规说明", "OP-01 桌面配对试点档案（方法学演示）"],
+      "report_sections": ["更新项目清单、实施政策与分期计划", "统筹研究范围产业与未来城市研究", "服务等价基准 SEB v0.2", "京张文化、中关村文化与 AI 新文化的多感官叙事", "指标体系、面积复算与合规矩阵", "风险、版权与合规说明", "OP-01 桌面配对试点档案（方法学演示）"],
       "geojson_layers": ["geometry/phasing.geojson", "geometry/public_space.geojson", "geometry/roads.geojson", "geometry/key_areas.geojson", "geometry/constraints.geojson"], "geometry_feature_ids": ["PHASE-001", "PHASE-002", "PHASE-003", "PUBLIC-001", "PUBLIC-003", "PUBLIC-004", "PUBLIC-006", "PUBLIC-008", "ROAD-001", "PROV-KEY-001", "PROV-KEY-002", "PROV-KEY-003", "OP-01", "OP-05", "OP-08"],
       "metrics": ["co_design_role_coverage_ratio", "forced_abandonment_rate", "human_handover_response_time_seconds", "independent_task_completion_rate"], "drawings": ["drawings/a3-booklet.pdf", "drawings/a0-boards.pdf"], "visual_sections": ["品牌、文化与国际传播", "更新项目", "核心指标", "来源"],
       "source_ids": ["AGENT-TASKBOOK", "CASE-BARCELONA-URBAN-LAB", "CASE-MARINETERREIN", "CASE-JTC-LAUNCHPAD", "SOURCE-REGISTRY"], "assumption_ids": ["A-IMPLEMENTATION-001", "A-CO-DESIGN-001", "A-CASE-TRANSFER-001", "A-OPERATION-NODES-001"], "self_check_ids": ["VISUAL_STATIC", "PROFESSIONAL_EVIDENCE", "DETERMINISTIC_VALIDATION"],

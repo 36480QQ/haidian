@@ -184,20 +184,22 @@ W3C 的可感知、可操作、可理解与稳健原则用于检视数字和交�
 
 三张代表场景在进入测试前即绑定风险、责任和恢复证据，避免“有场景、无刹车”。S01 由无障碍与交通专业人员负责，关联 R-03、R-06、R-08；若连续路径、替代通道或参与便利缺失即停止，只有完成现场审计、参与者复核和可逆修正后才恢复。S05 由技术安全与场地运营人员负责，关联 R-02、R-04、R-07；若意图不可见、急停或人工接管失效即停止，只有封闭测试记录、故障绕行和维护责任闭合后才恢复。S08 由服务运营、支付合规和参与者代表共同复核，关联 R-01、R-03、R-04、R-08；若现金、人工或无账户替代路径不可用，或数据用途无法解释即停止，只有等价路径、数据处置和申诉链经 G3 独立复核后才恢复。三者分别由 OP-01 到达校正点 [data:geometry/constraints.geojson#OP-01]、OP-05 人工急停点 [data:geometry/constraints.geojson#OP-05] 与 OP-08 无账户退出点 [data:geometry/constraints.geojson#OP-08] 承接；其余 OP-02—OP-10 与 S02—S10 同序绑定，S11、S12 复用既有节点而不新增，节点总数与位置保持不变 [metric:op_node_count]。全部节点均已声明 AI 关闭后的等价路径与人工接管角色，两项覆盖率按文件完整性口径登记，不代表已经建成、配员或经过实测 [metric:scenario_exit_path_coverage] [metric:scenario_human_review_coverage]。
 
-## 服务等价基准 SEB v0.1
+## 服务等价基准 SEB v0.2
 
-前面各章把判据分散在场景卡、节点属性、指标口径、风险条目与开放层级里，读者要拼出“怎样才算做到了”，需要在五处之间来回翻。本章把这些判据封装成一件独立的、可被任何城市取走就用的东西：**服务等价基准（Service Equivalence Baseline，SEB）v0.1**。它不是本方案的附录，而是本方案希望留下的公共产品——海淀能否成为包容 AI 的策源地，最终取决于别的城市是否愿意用海淀写下的判据来检验自己 [source:AGENT-TASKBOOK] [metric:op_node_count]。
+前面各章把判据分散在场景卡、节点属性、指标口径、风险条目与开放层级里，读者要拼出“怎样才算做到了”，需要在五处之间来回翻。本章把这些判据封装成一件独立的、可被任何城市取走就用的东西：**服务等价基准（Service Equivalence Baseline，SEB）v0.2**。它不是本方案的附录，而是本方案希望留下的公共产品——海淀能否成为包容 AI 的策源地，最终取决于别的城市是否愿意用海淀写下的判据来检验自己 [source:AGENT-TASKBOOK] [metric:op_node_count]。
 
 基准由四个组件构成。每个组件在本包内都有对应的机器可读位置，复用者不需要重新发明，只需要接受同一套约束。
 
 | 基准组件 | 规范内容 | 本包内的机器可读位置 | 复用时必须一并接受的约束 |
 | --- | --- | --- | --- |
-| 节点 schema | 每个服务点位必须声明五个字段：`ai_off_path` 为 AI 关闭后的等价路径，`human_handoff` 为人工接管角色，`gate_id` 为当前所处闸门，`operating_mode` 为运行方式，`responsible_role` 为责任专业；缺任一字段的点位不得计入服务覆盖 | `geometry/constraints.geojson` 中十个点位要素的属性表 [data:geometry/constraints.geojson#OP-04] | 五个字段为必填而非可选；`ai_off_path` 不得填写“引导至线上办理”一类仍依赖同一系统的路径 |
-| 评分口径 | 七项包容性指标各自的分子与分母定义，覆盖独立完成率、双通道信息冗余率、AI 开关服务等价差、被迫放弃率、人工接管成功率与耗时、感官负荷超限点、共同设计角色组覆盖率 | `metrics.json` 中七项指标的 `numerator_definition` 与 `denominator_definition` 字段 [metric:ai_off_service_equivalence_gap] | **分母不得删除失败样本**：撤回、技术故障与非完成原因必须与完成数一并报告，删除任何一类即视为该次测量作废 |
-| 等级定义 | L0 资料与许可、L1 可逆原型、L2 封闭成对测试、L3 限定开放、L4 采用与常态运行共五级，每级绑定准入条件、停止条件、恢复证据与责任主体 | 本文「更新项目清单、实施政策与分期计划」中的开放机制表 [depth:phasing_implementation] | 等级以“场景 × 点位”为单位，不以工作包或行政区为单位；允许降级，且降级不附加额外程序门槛 |
+| 节点 schema | 每个服务点位必须声明五个字段：`ai_off_path` 为 AI 关闭后的等价路径，`human_handoff` 为人工接管角色，`gate_id` 为当前所处闸门，`operating_mode` 为运行方式，`responsible_role` 为责任专业；缺任一字段的点位不得计入服务覆盖 | `geometry/constraints.geojson` 中十个点位要素的属性表 [data:geometry/constraints.geojson#OP-04] | 五个字段为必填而非可选；`ai_off_path` 不得填写“引导至线上办理”一类仍依赖同一系统的路径，拒绝依据自 v0.2 起以机器可读的 `constraint_machine_rule` 写入基准，不再由校验实现自行解释 |
+| 评分口径 | 七项包容性指标各自的分子与分母定义，覆盖独立完成率、双通道信息冗余率、AI 开关服务等价差、被迫放弃率、人工接管成功率与耗时、感官负荷超限点、共同设计角色组覆盖率 | `metrics.json` 中七项指标的 `numerator_definition` 与 `denominator_definition` 字段 [metric:ai_off_service_equivalence_gap] | **分母不得删除失败样本**：撤回、技术故障与非完成原因必须与完成数一并报告，删除任何一类即视为该次测量作废；适用范围自 v0.2 起由 `applies_to` 明文界定，适用五项参与者任务型指标，两项文件完整性型覆盖率连同理由一并排除 |
+| 等级定义 | L0 资料与许可、L1 可逆原型、L2 封闭成对测试、L3 限定开放、L4 采用与常态运行共五级，每级绑定准入条件、停止条件、恢复证据与责任主体 | 本文「更新项目清单、实施政策与分期计划」中的开放机制表 [depth:phasing_implementation] | 等级以“场景 × 点位”为单位，不以工作包或行政区为单位；允许降级，且降级不附加额外程序门槛；每级所处闸门自 v0.2 起以结构化的 `gate_binding` 声明，L4 与 G3 的关系由基准明文规定而非由工具推断 |
 | 判定规则 | R-01 至 R-08 八项风险条目各自的停止条件与恢复证据，构成“什么时候必须停、拿什么才能重开”的完整规则集 | `risk.json` 中八条 `stop_condition` 与 `resume_condition` [metric:risk_item_count] | 停止条件触发即停止，不以“限期整改”替代停止；恢复须提交证据而不是承诺 |
 
-**产品化声明。** 基准版本为 v0.1，机器可读规范位于 `visual/assets/seb-spec.json`，内容与本章表格逐项一致，并含 `version`、`license`、`provenance` 三个元字段。开源许可建议采用 CC BY-SA 4.0：相同方式共享意味着任何城市改进了判据，也必须以同样条件把改进公开，这与本包空间数据所依托的 ODbL 生态在“改进回流”一点上取向一致。版本治理方式为：任何一次变更必须同时提交失败样本登记与受影响指标的复算说明，只改条文不交证据的修订不予合并；版本号仅在判据本身变化时递增，措辞与译文修订不递增。**基准的托管主体、发布渠道与许可的最终确定均待授权主体确认；本方案不代表任何机构发布该基准，也不声称其已被任何一方采用** [source:SOURCE-REGISTRY]。
+**产品化声明。** 基准版本为 v0.2（规范文件中 `version` 为 `0.2.0`），机器可读规范位于 `visual/assets/seb-spec.json`，内容与本章表格逐项一致，并含 `version`、`license`、`provenance` 三个元字段，其中 `provenance` 记有 v0.1 与 v0.2 两次发布的来源与对应回执编号。开源许可建议采用 CC BY-SA 4.0：相同方式共享意味着任何城市改进了判据，也必须以同样条件把改进公开，这与本包空间数据所依托的 ODbL 生态在“改进回流”一点上取向一致。版本治理方式为：任何一次变更必须同时提交失败样本登记与受影响指标的复算说明，只改条文不交证据的修订不予合并；版本号仅在判据本身变化时递增，措辞与译文修订不递增。**基准的托管主体、发布渠道与许可的最终确定均待授权主体确认；本方案不代表任何机构发布该基准，也不声称其已被任何一方采用** [source:SOURCE-REGISTRY]。
+
+**v0.2：治理回路的第一次转动。** 上面这套版本治理不是写给别人看的条款，它已经在本方案内部转过一圈。下一章的桌面配对推演在把判据写成可执行代码时撞到三处缺口，三处都被登记进变更回执而不是就地绕过，v0.2 随后按“变更须附失败样本登记与复算说明”的要求带着证据交付。三处闭合各一句：`ai_off_path` 的拒绝依据由校验工具的私有词表升格为基准的 `constraint_machine_rule`，并写明词表可随失败样本扩充、扩充即版本递增；等级定义的闸门字段由自由文本改为结构化的 `gate_binding`，L4 与 G3 的关系写进条文，正则抽取与工具推断一并取消；分母完整性规则增加 `applies_to`，适用的五项参与者任务型指标与排除的三项枚举型指标逐项列明，两项文件完整性型覆盖率连同排除理由一并写下。闭合第一条时还查出一条 v0.1 未曾登记的同类问题——人工接管的角色词表同样是工具私有词表——已一并升格并在回执中登记。本次为 schema 层变更，零指标数值受影响，完整回执编号为 CR-2026-08-12-002 [source:W3C-ACCESSIBILITY-PRINCIPLES]。这一段能证明的不是判据写得好，而是版本治理是一个已经转动过的机制而不是一句承诺；基准的性质不因此改变，它仍是概念建议，托管主体、发布渠道与许可仍待授权主体确认 [source:SOURCE-REGISTRY]。
 
 **复用场景。** 基准的价值只有在离开本项目之后才能被检验。中关村 AI 北纬社区的初创团队可以直接取用节点 schema 与成对测试规程，为早期产品做一次“AI 关闭后仍可用”的自测，不需要等待任何平台或授权；未来科学城的能源与医药专业设备界面可以只取评分口径中的双通道冗余率与人工接管耗时两项，把“专业设备只给专业人员用”这一默认前提放到可测量的位置上；任何一座城市的政务大厅可以只取 L0 至 L2 三级，在不改造任何空间的前提下先完成一轮成对测试，得到本厅的服务等价差读数。这是区域协同章“输出可复用的测试方法学”一句的实物形态：不是一份意向，而是一个文件加一张表 [source:BJ-AI-INNOVATION-DISTRICTS-20260121]。
 
@@ -207,7 +209,7 @@ W3C 的可感知、可操作、可理解与稳健原则用于检视数字和交�
 
 **演示性质声明。** 本章没有真实参与者，没有现场测量，也没有任何一次运行记录。这里做的是一次桌面配对推演：把上一章的服务等价基准施加在文本样例上，看判据能不能被逐条执行、会在哪里失效。因此本章不产生任何绩效指标数值，七项包容性指标在指标文件中保持待实测状态，任何一项都不得依据本章填写 [metric:independent_task_completion_rate] [metric:ai_off_service_equivalence_gap]。本章能够证明的是“制度可执行”——判据写得足够具体，机器可以判、第三方可以复核；它不能证明“结果已达标”，后者需要伦理化的真实测试，属于取得授权之后的事 [depth:phasing_implementation]。把这两件事分开陈述，是本方案对自身适用分母纪律：不能一边要求别人不得删除失败样本，一边把一次推演说成一次试点。
 
-**推演对象与工具。** 推演以场景 S01 多模态无障碍寻路在 OP-01 多模态到达校正点上的一次完整闸门过程为对象 [data:geometry/constraints.geojson#OP-01]。三件工具随包提交，均为零依赖的离线文件：`visual/assets/seb-tabletop-run.js` 是校验器，读取基准与样例并逐条判定；`visual/assets/seb-tabletop-fixtures.json` 是十条样例，正例四条、反例六条，每条自带预期判定与双语说明；`visual/assets/seb-change-receipt-sample.json` 是变更回执的格式与一条演示回执。在 `visual/assets` 目录下执行 `node seb-tabletop-run.js` 可复现本章全部结论，退出码为零表示十条样例的判定与预期完全一致 [source:PACKAGE-STRUCTURED-EVIDENCE-INDEX]。样例不含任何计数或比例，分母只以“哪些类别被声明”的方式表达，因此工具无法、也不会生成读数 [metric:op_node_count]。
+**推演对象与工具。** 推演以场景 S01 多模态无障碍寻路在 OP-01 多模态到达校正点上的一次完整闸门过程为对象 [data:geometry/constraints.geojson#OP-01]。三件工具随包提交，均为零依赖的离线文件：`visual/assets/seb-tabletop-run.js` 是校验器，读取基准与样例并逐条判定；`visual/assets/seb-tabletop-fixtures.json` 是十二条样例，正例五条、反例七条，每条自带预期判定与双语说明；`visual/assets/seb-change-receipt-sample.json` 是变更回执的格式与两条回执。在 `visual/assets` 目录下执行 `node seb-tabletop-run.js` 可复现本章全部结论，退出码为零表示十二条样例的判定与预期完全一致；校验器在判定之前先校验基准版本与样例声明是否匹配，不匹配即以退出码二拒绝运行而不作任何判定 [source:PACKAGE-STRUCTURED-EVIDENCE-INDEX]。样例不含任何计数或比例，分母只以“哪些类别被声明”的方式表达，因此工具无法、也不会生成读数 [metric:op_node_count]。
 
 推演按 G0、G1、G2 三步进行。每一步的准入条件都不是为本章新写的，而是逐字取自开放机制表中 L0、L1、L2 三行与节点的既有属性；工具在第一步之前先把 L2 样例的五个必填字段与几何文件中 OP-01 的属性逐字比对，比对通过才继续，以免推演落在一个与提交数据不一致的影子节点上 [depth:phasing_implementation] [data:geometry/constraints.geojson#OP-01]。
 
@@ -219,50 +221,61 @@ W3C 的可感知、可操作、可理解与稳健原则用于检视数字和交�
 
 比对结果是五个必填字段逐字一致，说明推演使用的节点与提交的几何数据是同一个 [data:geometry/constraints.geojson#OP-01]。这一步之所以必要，是因为桌面推演最容易出现的自欺方式，就是在纸上重新写一个比现实更整齐的节点，然后在它上面证明制度可行。
 
-**推演中发现的问题。** 三条，都是在把判据写成可执行代码的过程中真实撞到的，均已处置或登记。
+**推演中发现的问题。** 三条，都是在把判据写成可执行代码的过程中真实撞到的；三条均已登记，并已在基准 v0.2 中闭合。
 
-第一条最重要：`ai_off_path` 的约束在基准里只写成自然语言例句，无法被机器执行。反例 TT-N2 把该字段填成“引导至线上办理，在小程序内完成同一事项”——字段不缺、语法合法、人工快速审阅极易放过，但 AI 关闭之后使用者仍被要求上线，等价性并不成立。处置是把约束补齐为可执行形式，而不是放宽它：校验器以显式的同一系统词表实现拒绝规则，并在代码注释中声明该词表是工具的解释而非基准条文；同时登记 v0.2 待办，建议在节点 schema 中增加机器可读的拒绝依据字段。与之配套的放宽字段约束的意见未被采纳，理由写在本章末的变更回执里 [metric:scenario_exit_path_coverage]。
+第一条最重要：`ai_off_path` 的约束在基准里只写成自然语言例句，无法被机器执行。反例 TT-N2 把该字段填成“引导至线上办理，在小程序内完成同一事项”——字段不缺、语法合法、人工快速审阅极易放过，但 AI 关闭之后使用者仍被要求上线，等价性并不成立。处置是把约束补齐为可执行形式，而不是放宽它：校验器先以显式的同一系统词表实现拒绝规则，并在代码注释中声明该词表是工具的解释而非基准条文；同时登记 v0.2 待办，建议在节点 schema 中增加机器可读的拒绝依据字段。该待办已在 v0.2 兑现——词表升格为基准的 `constraint_machine_rule`，校验器改为读取基准条文，代码中不再保留任何私有词表；闭合过程中还查出人工接管的角色词表属同一类问题，一并升格。与之配套的放宽字段约束的意见始终未被采纳，理由写在本章末的变更回执里 [metric:scenario_exit_path_coverage]。
 
-第二条：等级定义中的闸门字段是自由文本，工具须以正则抽取闸门编号才能与节点属性比对，其中 L4 对应 G3 属工具推断，基准并未定义。第三条：分母完整性规则未界定适用范围，工具按分母文字中是否出现有效样本或成对测试样本，推导它只适用于参与者任务型指标，这同样是工具的解释而非基准的规定。两条都已作为工具级问题写入变更回执的失败样本登记，留待 v0.2 由基准本身回答，而不是由某一个实现私自决定 [metric:risk_item_count] [depth:phasing_implementation]。
+第二条：等级定义中的闸门字段是自由文本，工具须以正则抽取闸门编号才能与节点属性比对，其中 L4 对应 G3 属工具推断，基准并未定义。第三条：分母完整性规则未界定适用范围，工具按分母文字中是否出现有效样本或成对测试样本，推导它只适用于参与者任务型指标，这同样是工具的解释而非基准的规定。两条都已作为工具级问题写入变更回执的失败样本登记，并已在 v0.2 由基准本身回答：闸门字段改为结构化 `gate_binding`，正则随之删除；分母完整性规则增加 `applies_to`，适用与排除的指标逐项列明。第三条的闭合还改变了一个真实结论——新增反例 TT-N7 把人工接管响应耗时的记录删去技术故障样本，这类只报设备正常时耗时的写法在 v0.1 的文字推导下会被整个漏判，在 v0.2 的明文清单下当场被拒 [metric:risk_item_count] [depth:phasing_implementation]。
 
 **运行输出摘录。** 以下为实际运行结果的节选，省略处以省略号标出；完整输出可由读者自行复现 [source:PACKAGE-STRUCTURED-EVIDENCE-INDEX]。
 
 ```text
 $ node seb-tabletop-run.js
 SEB 桌面配对推演 / SEB tabletop pairing run
-基准 / Baseline : service-equivalence-baseline v0.1.0 (draft_concept_recommendation)
-样例 / Fixtures : seb-tabletop-fixtures v0.1.0 · 10 条 / items
+基准 / Baseline : service-equivalence-baseline v0.2.0 (draft_concept_recommendation)
+样例 / Fixtures : seb-tabletop-fixtures v0.2.0 · 12 条 / items
 性质 / Nature   : 方法学演示，无真实参与者，不产生任何绩效指标数值
                   methodology demonstration, no real participant, no performance metric value
+
+[R] 判据来源 / Rule provenance
+    ai_off_path   : forbidden_dependency · 14 项词表来自基准条文 / 14 terms from baseline text
+    human_handoff : required_role_token · 13 项词表来自基准条文 / 13 terms from baseline text
+    等级闸门 / Level gates : 结构化 gate_binding，L4 = G3 after 由基准明文规定 / stated by the baseline, not inferred
+    分母完整性 / Denominator integrity : 适用 5 项、排除 3 项，另排除 2 项文件完整性型指标 / 5 in scope, 3 out, 2 file-completeness metrics excluded
+    本工具不持有任何私有词表、私有正则或私有适用范围推导
+[S] 基准自洽 / Baseline self-consistency
+    适用与排除清单的并集 = 评分口径 8 项指标 / the two lists cover all 8 metric ids
+    文件完整性型指标不在评分口径内，按基准明文排除 / the file-completeness metrics lie outside the definitions and are excluded by baseline text
 [0] 节点数据对齐 / Node-data alignment
     TT-P3 ← geometry/constraints.geojson#OP-01 : 5 个必填字段逐字一致 / 5 required fields match verbatim
 …
-[3] TT-P3  OP-01 在 L2 的封闭成对测试申报，含撤回与故障的诚实分母 / OP-01 applying for L2 closed paired testing with an honest denominator
+[5] TT-P5  文件完整性型指标的声明，分母完整性规则按基准明文不适用 / A file-completeness metric is declared, and baseline text puts it outside the denominator-integrity rule
     判定 / verdict : ACCEPT   期望 / expected : ACCEPT   一致 / match
 …
-[6] TT-N2  ai_off_path 填写为引导至线上办理 / ai_off_path is filled in as directing the user to the online service
+[7] TT-N2  ai_off_path 填写为引导至线上办理 / ai_off_path is filled in as directing the user to the online service
     判定 / verdict : REJECT   期望 / expected : REJECT   一致 / match
     理由 / reason  : NODE_CONSTRAINT_VIOLATION:ai_off_path
                      AI 关闭后的路径仍依赖同一系统，等价性不成立 / the AI-off route still depends on the same system, so equivalence does not hold
-[7] TT-N3  分母删除撤回样本 / Withdrawn samples are dropped from the denominator
-    判定 / verdict : REJECT   期望 / expected : REJECT   一致 / match
-    理由 / reason  : DENOMINATOR_SAMPLE_DROPPED:withdrawn
-                     分母删除了失败样本，该次测量作废 / a failed sample was dropped from the denominator, voiding that measurement
-[8] TT-N4  停止条件触发却以限期整改续跑 / A triggered stop condition is continued under a corrective-action deadline
+…
+[9] TT-N4  停止条件触发却以限期整改续跑 / A triggered stop condition is continued under a corrective-action deadline
     判定 / verdict : REJECT   期望 / expected : REJECT   一致 / match
     理由 / reason  : STOP_NOT_ENFORCED
                      停止条件触发却以限期整改续跑 / a triggered stop condition was continued under a corrective-action deadline
-[9] TT-N5  人工接管只写机构名称，且 L2 缺恢复证据字段 / Human takeover names only an organisation, and the L2 recovery-evidence field is empty
+[10] TT-N5  人工接管只写机构名称，且 L2 缺恢复证据字段 / Human takeover names only an organisation, and the L2 recovery-evidence field is empty
     判定 / verdict : REJECT   期望 / expected : REJECT   一致 / match
     理由 / reason  : NODE_CONSTRAINT_VIOLATION:human_handoff
                      人工接管只写了机构，没有可被找到的角色 / human takeover names an organisation, not a findable role
     理由 / reason  : LEVEL_BINDING_MISSING:recovery_evidence
                      等级绑定字段不齐，四项缺一即不得升级 / a level binding field is missing; all four are required before any upgrade
 …
+[12] TT-N7  人工接管响应耗时的记录删除技术故障样本 / Technical-fault samples are dropped from the human-handover response-time record
+    判定 / verdict : REJECT   期望 / expected : REJECT   一致 / match
+    理由 / reason  : DENOMINATOR_SAMPLE_DROPPED:technical_fault
+                     分母删除了失败样本，该次测量作废 / a failed sample was dropped from the denominator, voiding that measurement
 汇总 / Summary
-    通过 / accepted : 4
-    拒绝 / rejected : 6
-    与期望一致 / matching expectation : 10 / 10
+    通过 / accepted : 5
+    拒绝 / rejected : 7
+    与期望一致 / matching expectation : 12 / 12
     本次运行不写入 metrics.json，七项包容性指标保持 unknown
 ```
 
@@ -306,7 +319,7 @@ SEB 桌面配对推演 / SEB tabletop pairing run
 
 **变更回执机制。** 回执把意见、修改与未采纳理由写成可带走、可核对的固定格式，字段见 `visual/assets/seb-change-receipt-sample.json`：编号、日期、复核轮次、点位、提出者角色组、原始意见、复核查到的事实、采纳结论、实际修改了哪些文件、未采纳的理由、失败样本登记、受影响指标的复算说明、第三方复核方法与张贴位置。其中未采纳理由与失败样本登记两项为必填——前者防止异议被静默吞掉，后者执行基准的版本治理要求：只改条文不交证据的修订不予合并 [source:W3C-ACCESSIBILITY-PRINCIPLES]。
 
-该文件内的演示回执以本次桌面推演自身为对象：意见是放宽 `ai_off_path` 约束以提高覆盖，查到的事实是反例 TT-N2 确实被拒绝且基准缺少机器可读的拒绝依据，结论为部分采纳——补齐可执行形式并登记 v0.2 待办，但**不采纳**放宽字段本身，理由是 AI 关闭后仍依赖同一系统时等价性在定义上不成立，以提高覆盖率为由放宽判据，等于用改判据的方式提高分数。失败样本登记栏写明本次无参与者样本及其原因，受影响指标栏写明本次不产生任何读数。**这是机制设计，不是已经运行过的机制**：真实共创启动后，每轮 G3 独立复核结束时发布一批回执，张贴于对应点位并进入公开复盘记录；在授权主体确认之前，本方案不承诺任何一轮回执的发布时间 [metric:co_design_role_coverage_ratio] [source:CASE-MARINETERREIN]。
+该文件内现有两条回执。第一条以本次桌面推演自身为对象：意见是放宽 `ai_off_path` 约束以提高覆盖，查到的事实是反例 TT-N2 确实被拒绝且基准缺少机器可读的拒绝依据，结论为部分采纳——补齐可执行形式并登记 v0.2 待办，但**不采纳**放宽字段本身，理由是 AI 关闭后仍依赖同一系统时等价性在定义上不成立，以提高覆盖率为由放宽判据，等于用改判据的方式提高分数。第二条是 v0.1 升至 v0.2 这次变更本身的回执：意见来自第一条登记的工具级失败，结论为全部采纳，修改文件清单、失败样本登记与受影响指标的复算说明逐项写出，复算结论是零指标数值受影响。两条的失败样本登记栏都写明本次无参与者样本及其原因；已发布的回执不改写，第一条的后续结论以追加字段指向第二条，读者既能看到当时的判断，也能看到它后来是否被兑现。**回执机制已经真的转过一次，但它仍不是任何一轮真实复核的结论**：真实共创启动后，每轮 G3 独立复核结束时发布一批回执，张贴于对应点位并进入公开复盘记录；在授权主体确认之前，本方案不承诺任何一轮回执的发布时间 [metric:co_design_role_coverage_ratio] [source:CASE-MARINETERREIN]。
 
 ## 用地、建筑规模与拆改留方案
 

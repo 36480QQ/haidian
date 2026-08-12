@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "975098578104ff16e8a86870af9eb8c14ff2fbb2c2c70cc1c819d85034311a7b"
+      "sha256": "0f3fab9bdf10c672c4b6935ba990e8b32fdfb18625fc7d66ec3ebada1775e914"
     },
     {
       "path": "agent.json",
@@ -56,13 +56,13 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "4bce59ef00f829a5c37e9a9b7cbaf4433430be5e74f81b65033b99e2060f2669"
+      "sha256": "eadad4e08be69455a1f34593bd10d14b601144a66d14ff7a4829c37733f2cf7c"
     },
     {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "06c99203c736184387ab429075befccb2c9ccf78961a963166c9c2b0e5b121a5"
+      "sha256": "c06542363b9f79019342f97550b0f6fafbffc59a8722437cd6b7df03102f4311"
     },
     {
       "path": "standard_matrix.json",
@@ -88,7 +88,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "5a77e41324f29ca62531b123ec58f9e213b14fed1c0dce69d72ba188eda5c484"
+      "sha256": "f0915cb52f55c8ef01ff96c34bae530b59d87e6873ceb5178329bebf3624128e"
     },
     {
       "path": "report/narrative.md",
@@ -218,7 +218,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "590b25af6120ec55a428ddafb1943d61e190b4622426d5724dba3d2fa2de453f"
+      "sha256": "4e403fb0ccffebc80ba640b4eeded44227144d3b63c9b9bdd854b21d0322c9ad"
     },
     {
       "path": "report/proposal.en.html",
@@ -226,7 +226,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "35a9e431cd7c3d706ac3d7f59459e398af8dfe4d3380be8a41c8cdb7dfd54bb2"
+      "sha256": "e1ae2a400bd4159bcae532f5fe852badbb7135d7da59dd983476edb17cadfb1e"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -325,7 +325,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "8c0611f354a14fee1d005f05ceb25d6ebe44271098d79c7cba3622fa42c3a3d6"
+      "sha256": "35ef962f4feeba003655c6d7dfe3116886902ff92acdb02b47e57ac66a161df7"
     },
     {
       "path": "assets/media/cover.webp",
@@ -455,9 +455,9 @@
       "role": "sources",
       "required": false,
       "language": "neutral",
-      "title_zh": "服务等价基准 SEB v0.1 机器可读规范",
-      "title_en": "Service Equivalence Baseline (SEB) v0.1 machine-readable spec",
-      "sha256": "c7af6cf52b1f53d34e3c0c48d39b4dee525d9ff135e39f86313301c006ae757b"
+      "title_zh": "服务等价基准 SEB v0.2 机器可读规范",
+      "title_en": "Service Equivalence Baseline (SEB) v0.2 machine-readable spec",
+      "sha256": "f131dbe80e37beca317375d9a9cb86eab72f2297977bd1195955c4b15d5350ea"
     },
     {
       "path": "visual/assets/seb-tabletop-run.js",
@@ -466,7 +466,7 @@
       "language": "neutral",
       "title_zh": "SEB 桌面配对推演校验器(方法学演示)",
       "title_en": "SEB tabletop pairing validator (methodology demonstration)",
-      "sha256": "59412e6a8864fe0a86f87600fd2f7310f97cec5ae9a9a95453bc49b6ef83bdd7"
+      "sha256": "6da2b508d7def1f4cb9b8a50c039e9b4e7cbd613be443590825a7701d4529691"
     },
     {
       "path": "visual/assets/seb-tabletop-fixtures.json",
@@ -475,7 +475,7 @@
       "language": "neutral",
       "title_zh": "SEB 桌面推演正反样例十条",
       "title_en": "SEB tabletop fixtures, four positive and six negative",
-      "sha256": "bfb93772e4e2f6ac21141f38a60cf938bcfd4547dbc0139661f5acb228f0cea9"
+      "sha256": "38ab51c275e71af27c574880c87a6f98ed5d8f8506ee44ed6d321b6acc01078a"
     },
     {
       "path": "visual/assets/seb-change-receipt-sample.json",
@@ -484,7 +484,7 @@
       "language": "neutral",
       "title_zh": "变更回执格式与演示回执",
       "title_en": "Change-receipt schema and demonstration receipt",
-      "sha256": "3bf2dde1e2dae28d0d17e3f3a0ac592e03efd00b5de208eb90ceaac378ba3a87"
+      "sha256": "9ba55925d42f3d9b6fbc44b0361c7b420e38813f7f089cea39e68af9e89aad5a"
     },
     {
       "path": "visual/assets/scene-fallback.en.png",
