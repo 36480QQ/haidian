@@ -12,7 +12,7 @@
     "agent_name": "柱子 / Zhuzi",
     "model": "Claude Fable 5 via Claude Code",
     "model_family": "claude",
-    "model_detail": "v1.0 scaffolded and authored with OpenAI GPT-5.6 Sol via Codex; v2.0-v5.2 iterations authored with Anthropic Claude Fable 5 via Claude Code with Claude Opus subagents; audio narration synthesized with MiniMax speech-2.8-hd (disclosed in assets/media transcripts)"
+    "model_detail": "v1.0 scaffolded and authored with OpenAI GPT-5.6 Sol via Codex; v2.0-v5.3 iterations authored with Anthropic Claude Fable 5 via Claude Code with Claude Opus subagents; audio narration synthesized with MiniMax speech-2.8-hd (disclosed in assets/media transcripts)"
   },
   "generated_at": "2026-08-12T11:56:14Z",
   "files": [
@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "efeea94102cfba8e494f23f270cfde1c2d5b1197ac7128adf4e586c013312ef7"
+      "sha256": "8beb9427cb6ce20d6ba4062da1c6846a3bdff3520467ac281868f24b199d3b22"
     },
     {
       "path": "agent.json",
@@ -38,7 +38,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "12ad6b92bb0cec4a8b6e494e865e4e1319346a6808b1f6edc505dbaa16199ad0"
+      "sha256": "6f57e563e5939e629ffa49c8cfe5bf47540e97142b5cfa10deb3823616e7273a"
     },
     {
       "path": "assumptions.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "bfcc1a8d64b16334b092091c4e6c03c1d3bbe91516cbb1f70e5a4159348eeedb"
+      "sha256": "5d2c0cec11bad5898ef1b2a2244d8e7a0b34c66d5b91fdfc6dc2710d50cf26d9"
     },
     {
       "path": "compliance_matrix.json",
@@ -121,7 +121,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "d82e73ecee0e804626b957291148b32acbd7443219eb283da427642d60bf6576"
+      "sha256": "e4b4d70451e64a918c63731bbaebbb8ec5831fff55d8073368730c2d386d5893"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -168,7 +168,7 @@
       "path": "geometry/constraints.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "7673e559eea538d6a555660f422066c124519ca15146c452f15ccefddbc1c40e"
+      "sha256": "662339210dfeb723e1a3380610fd922996fa07e41b442bae516d5dc2a3fc3be0"
     },
     {
       "path": "geometry/green_space.geojson",
@@ -218,7 +218,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "678474769d3675e666d48901e386df5e5089c49ce2e2b55ee104760851d4f275"
+      "sha256": "14d94ce2a143da613b0fe4c0408bb900c1a984b73d38249dfe7067fe7a1a7c41"
     },
     {
       "path": "report/proposal.en.html",
@@ -250,7 +250,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "92b4ffb99caf122ad4270ba6cd9075d566864b0f102b715e37781384c240ae81"
+      "sha256": "8963db04ae516bc58cb18c87238a0b0ecf92d2158f2b8ab1419870665345217b"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -325,7 +325,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "35ef962f4feeba003655c6d7dfe3116886902ff92acdb02b47e57ac66a161df7"
+      "sha256": "22be5dd10e3d0132c9d096e7005822cd123a1075733c955e4572790b109c530b"
     },
     {
       "path": "assets/media/cover.webp",
@@ -485,6 +485,33 @@
       "title_zh": "变更回执格式与两条回执",
       "title_en": "Change-receipt schema and two receipts",
       "sha256": "9ba55925d42f3d9b6fbc44b0361c7b420e38813f7f089cea39e68af9e89aad5a"
+    },
+    {
+      "path": "visual/assets/seb-op04-chain-data.json",
+      "role": "sources",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "OP-04 配对试点全过程链路数据档案(桌面复演)",
+      "title_en": "OP-04 paired-pilot full-process chain archive (tabletop replay)",
+      "sha256": "3363f3392abfce14908f9660e69b984e358572f798a7c47772f6fb3b6dde4474"
+    },
+    {
+      "path": "visual/assets/seb-op04-chain-run.js",
+      "role": "visualization",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "OP-04 全过程证据链自含复演器",
+      "title_en": "OP-04 full-process evidence-chain self-contained replayer",
+      "sha256": "803f61b5c8e55f5cbb8a0b832e46bc4085e0e3a6550acc005a5f4e6959cadcd9"
+    },
+    {
+      "path": "visual/assets/seb-change-receipt-op04.json",
+      "role": "sources",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "变更回执 CR-2026-08-12-003(OP-04 空间前提退回)",
+      "title_en": "Change receipt CR-2026-08-12-003 (OP-04 spatial-premise rollback)",
+      "sha256": "3388e1c72d1b0ff1a899936bdc6150cfb3e00ec20d0f6fe1b3298a3bf5ca0c8a"
     },
     {
       "path": "visual/assets/scene-fallback.en.png",
