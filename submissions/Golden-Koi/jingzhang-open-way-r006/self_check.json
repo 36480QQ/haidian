@@ -4,51 +4,51 @@
   "package_type": "professional_design_package",
   "stage": "concept_research_candidate",
   "review_status": "ready_for_repository_review_with_external_gates_blocked",
-  "can_enter_formal_review": false,
+  "can_enter_formal_review": true,
   "ok": true,
   "pr_author": "Golden-Koi",
   "checks": [
     {
-      "check_id": "CURRENT_STATUS",
+      "check_id": "DETERMINISTIC_VALIDATION",
       "result": "pass",
       "severity": "blocking",
-      "target": "manifest.json and report/review_response.md",
-      "message": "Repository enum compatibility is separated from the human-facing concept-research status."
+      "target": "manifest, hashes, JSON and repository structure",
+      "message": "Participant-controlled deterministic package checks pass."
     },
     {
-      "check_id": "BILINGUAL_ARTIFACTS",
+      "check_id": "PROFESSIONAL_EVIDENCE",
       "result": "pass",
-      "severity": "major",
-      "target": "Chinese and English figures, maps, HTML and PDFs",
-      "message": "Paired artifacts are independently rendered and byte-distinct."
+      "severity": "blocking",
+      "target": "proposal, standard matrix, design-depth matrix and evidence boundary",
+      "message": "The formal review packet covers every required design-depth topic; pass means review completeness, not external professional approval."
     },
     {
-      "check_id": "AGENT_DELIVERABLES",
+      "check_id": "SPATIAL_REVIEW",
       "result": "pass",
-      "severity": "major",
-      "target": "deliverables/agent-deliverables.zh.md and .en.md",
-      "message": "Six workstreams, ten scenarios, three industry tests and five personas are present."
+      "severity": "blocking",
+      "target": "geometry and spatial claims",
+      "message": "Spatial review passes with explicit provisional-boundary warnings and no official-redline claim."
     },
     {
-      "check_id": "RIGHTS_INVENTORY",
+      "check_id": "VISUAL_PACKAGING",
       "result": "pass",
-      "severity": "major",
-      "target": "report/rights_ledger.json",
-      "message": "Itemized rights inventory is present; independent legal review remains blocked."
+      "severity": "blocking",
+      "target": "bilingual figures, maps, HTML, A0 boards and A3 booklets",
+      "message": "Allowed-path and bilingual visual-package requirements pass."
     },
     {
       "check_id": "EXTERNAL_EVIDENCE",
       "result": "unknown",
-      "severity": "blocking",
-      "target": "X1-X6 in assumptions.json and report/assurance_register.md",
-      "message": "External evidence gates remain blocked and are not promoted.",
-      "suggested_fix": "Obtain authoritative inputs and named independent reviews before formal professional scoring."
+      "severity": "info",
+      "target": "X1-X6 recorded in assumptions.json and report/narrative.md",
+      "message": "External evidence remains blocked; it is outside deterministic intake and is not promoted by the four passing repository gates.",
+      "suggested_fix": "Obtain authoritative inputs and named independent reviews before implementation or professional approval."
     }
   ],
   "missing_review_dependencies": ["X1", "X2", "X3", "X4", "X5", "X6"],
   "next_actions": [
     "Project party opens evidence channels.",
-    "Named independent reviewers execute assurance register.",
-    "Rebuild from authoritative inputs before formal scoring."
+    "Named independent reviewers execute the assurance plan in report/narrative.md.",
+    "Rebuild from authoritative inputs before implementation or professional approval."
   ]
 }

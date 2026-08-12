@@ -1,81 +1,131 @@
 {
   "schema_version": "1.0.0",
-  "revision": "R006.1-review-fix",
-  "package_status": "CONCEPT_RESEARCH_CANDIDATE",
-  "formal_professional_scoring": false,
-  "matrix_scope": "participant-controllable concept response; not statutory or professional compliance",
-  "checks": [
+  "requirements": [
     {
-      "id": "C01",
-      "topic": "Bilingual content",
-      "status": "PASS_INTERNAL",
-      "evidence": [
-        "proposal.md",
-        "proposal.en.md",
-        "deliverables/agent-deliverables.zh.md",
-        "deliverables/agent-deliverables.en.md"
-      ],
-      "external_gate": null
+      "requirement_id": "C01_BILINGUAL_CONTENT",
+      "title_zh": "中英文双语内容完整",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": ["proposal.md", "proposal.en.md"],
+      "drawing_refs": ["drawings/a0-boards.pdf", "drawings/a0-boards.en.pdf"],
+      "geometry_refs": ["assets/maps/MAP-ORIGIN-N.svg", "assets/maps/MAP-ORIGIN-N.en.svg"],
+      "metric_refs": ["metrics.json"],
+      "source_ids": ["SUBMISSION-REFERENCE-AGENT-TASKBOOK-20260605"],
+      "assumption_ids": ["X6"],
+      "self_check_ids": ["VISUAL_PACKAGING"],
+      "evidence_summary_zh": "中英文提案、图件、网页、A0展板和A3册均具有独立文件与不同哈希。"
     },
     {
-      "id": "C02",
-      "topic": "Agent.1-agent.6 deliverables",
-      "status": "PASS_CONCEPT",
-      "evidence": [
-        "deliverables/agent-deliverables.zh.md"
-      ],
-      "external_gate": "X1-X6"
+      "requirement_id": "C02_AGENT_WORKSTREAMS",
+      "title_zh": "六个智能体工作流完整回应",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": ["proposal.md#six-agent-workstreams"],
+      "drawing_refs": ["drawings/a3-booklet.pdf"],
+      "geometry_refs": ["assets/figures/site-overview.png"],
+      "metric_refs": ["metrics.json"],
+      "source_ids": ["SUBMISSION-REFERENCE-AGENT-TASKBOOK-20260605"],
+      "assumption_ids": ["X1", "X2", "X3", "X4", "X5", "X6"],
+      "self_check_ids": ["PROFESSIONAL_EVIDENCE"],
+      "evidence_summary_zh": "品牌总图、案例生态、场景画像、公共空间、文化导视和运营转化六项均在方案中对应。"
     },
     {
-      "id": "C03",
-      "topic": "Rights inventory",
-      "status": "PASS_INVENTORY",
-      "evidence": [
-        "report/rights_ledger.json"
-      ],
-      "external_gate": "X6 legal review"
+      "requirement_id": "C03_RIGHTS_AND_PROVENANCE",
+      "title_zh": "版权、来源与AI协作边界",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": ["report/copyright_statement.md"],
+      "drawing_refs": ["drawings/a0-boards.pdf"],
+      "geometry_refs": ["geometry/site_boundary.geojson"],
+      "metric_refs": ["metrics.json"],
+      "source_ids": ["SAFE-PROVISIONAL-GEOMETRY-20260605"],
+      "assumption_ids": ["X1", "X6"],
+      "self_check_ids": ["DETERMINISTIC_VALIDATION"],
+      "evidence_summary_zh": "版权声明逐类说明身份、AI协作、字体、图件、地图、官方资料、案例、代码与影像边界。"
     },
     {
-      "id": "C04",
-      "topic": "Official spatial authority",
-      "status": "BLOCKED",
-      "evidence": [],
-      "external_gate": "X1"
+      "requirement_id": "C04_SPATIAL_AUTHORITY",
+      "title_zh": "权威空间资料与暂定边界隔离",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": ["proposal.md#evidence-boundary"],
+      "drawing_refs": ["drawings/a0-boards.pdf#page=6"],
+      "geometry_refs": ["geometry/site_boundary.geojson"],
+      "metric_refs": ["metrics.json"],
+      "source_ids": ["SAFE-PROVISIONAL-GEOMETRY-20260605"],
+      "assumption_ids": ["X1"],
+      "self_check_ids": ["SPATIAL_REVIEW"],
+      "evidence_summary_zh": "包内几何完整可复查但明确标为暂定；官方红线、坐标与权属仍列为X1外部证据。"
     },
     {
-      "id": "C05",
-      "topic": "Field journey and interfaces",
-      "status": "BLOCKED",
-      "evidence": [],
-      "external_gate": "X2"
+      "requirement_id": "C05_FIELD_AND_USER_EVIDENCE",
+      "title_zh": "现场与真实用户证据边界",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": ["report/narrative.md#external-assurance-boundary"],
+      "drawing_refs": ["drawings/a3-booklet.pdf#page=4"],
+      "geometry_refs": ["assets/maps/MAP-DZS-A.svg"],
+      "metric_refs": ["metrics.json"],
+      "source_ids": ["INTERNAL-CANDIDATE-RECORD-EVIDENCE-STATE-R006"],
+      "assumption_ids": ["X2", "X3"],
+      "self_check_ids": ["PROFESSIONAL_EVIDENCE"],
+      "evidence_summary_zh": "现场路线、真实用户、负担和异议均保持为待办证据，不把概念画像包装为实测。"
     },
     {
-      "id": "C06",
-      "topic": "Real users and burden",
-      "status": "BLOCKED",
-      "evidence": [],
-      "external_gate": "X3"
+      "requirement_id": "C06_OPERATING_AND_DATA_AUTHORITY",
+      "title_zh": "运营、数据与法律权责",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": ["report/narrative.md#external-assurance-boundary"],
+      "drawing_refs": ["drawings/a3-booklet.pdf#page=6"],
+      "geometry_refs": ["assets/maps/MAP-ZZY-A.svg"],
+      "metric_refs": ["metrics.json"],
+      "source_ids": ["INTERNAL-CANDIDATE-GOVERNANCE-SANDBOX-DRILL-R006"],
+      "assumption_ids": ["X4"],
+      "self_check_ids": ["PROFESSIONAL_EVIDENCE"],
+      "evidence_summary_zh": "运营角色、法律基础、服务、事件、申诉和数据合同的缺口及停止条件已经登记。"
     },
     {
-      "id": "C07",
-      "topic": "Operating/data/legal authority",
-      "status": "BLOCKED",
-      "evidence": [],
-      "external_gate": "X4"
+      "requirement_id": "C07_COST_PROCUREMENT_EXIT",
+      "title_zh": "成本、采购与退出机制",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": ["report/narrative.md#approximately-100-day-evidence-path"],
+      "drawing_refs": ["drawings/a3-booklet.pdf#page=7"],
+      "geometry_refs": ["assets/figures/metrics-evidence.png"],
+      "metric_refs": ["metrics.json"],
+      "source_ids": ["INTERNAL-CANDIDATE-RECORD-DESIGN-R006"],
+      "assumption_ids": ["X5"],
+      "self_check_ids": ["PROFESSIONAL_EVIDENCE"],
+      "evidence_summary_zh": "一百天路径给出责任、依赖、概算区间、验收和停止条件，同时明确不是报价或采购批准。"
     },
     {
-      "id": "C08",
-      "topic": "Cost/procurement/exit",
-      "status": "BLOCKED",
-      "evidence": [],
-      "external_gate": "X5"
+      "requirement_id": "C08_INDEPENDENT_ASSURANCE",
+      "title_zh": "独立专业与无障碍保证",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": ["report/narrative.md#external-assurance-boundary"],
+      "drawing_refs": ["drawings/a0-boards.pdf", "drawings/a3-booklet.pdf"],
+      "geometry_refs": ["assets/figures/metrics-evidence.png"],
+      "metric_refs": ["metrics.json"],
+      "source_ids": ["INTERNAL-CANDIDATE-RECORD-EVIDENCE-STATE-R006"],
+      "assumption_ids": ["X6"],
+      "self_check_ids": ["PROFESSIONAL_EVIDENCE", "VISUAL_PACKAGING"],
+      "evidence_summary_zh": "独立规划、交通、景观、市政、数据、无障碍、实体输出和成本复核均有明确责任和入口。"
     },
     {
-      "id": "C09",
-      "topic": "Independent professional/accessibility review",
-      "status": "BLOCKED",
-      "evidence": [],
-      "external_gate": "X6"
+      "requirement_id": "C09_REVIEW_STATUS_BOUNDARY",
+      "title_zh": "仓库评审状态与外部批准分离",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": ["report/narrative.md"],
+      "drawing_refs": ["drawings/a0-boards.pdf#page=6"],
+      "geometry_refs": ["geometry/site_boundary.geojson"],
+      "metric_refs": ["metrics.json"],
+      "source_ids": ["INTERNAL-CANDIDATE-RECORD-ARTIFACT-R006"],
+      "assumption_ids": ["X1", "X2", "X3", "X4", "X5", "X6"],
+      "self_check_ids": ["DETERMINISTIC_VALIDATION", "PROFESSIONAL_EVIDENCE", "SPATIAL_REVIEW", "VISUAL_PACKAGING"],
+      "evidence_summary_zh": "ready_for_review仅表示可进入仓库正式评审，不代表法定、专业、施工、运营或采购批准。"
     }
   ]
 }

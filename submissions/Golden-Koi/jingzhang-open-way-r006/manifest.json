@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "package_id": "jingzhang-open-way-r006",
   "project_id": "centennial-jingzhang-ai-belt",
   "site_package_version": "0.1.0",
@@ -240,7 +240,7 @@
     },
     {
       "path": "changelog.md",
-      "role": "narrative",
+      "role": "changelog",
       "required": false,
       "sha256": "1c81151a718b8c8ea6d0a738bca430de711e3452b0cc818ca6907d4137d8708d",
       "language": "zh"
@@ -249,28 +249,13 @@
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "271bd643c64f1d6e78fb74065112ed9bc23f7de566746c0320685129614d5f2f"
-    },
-    {
-      "path": "deliverables/agent-deliverables.en.md",
-      "role": "agent_deliverables",
-      "required": true,
-      "language": "en",
-      "translation_of": "deliverables/agent-deliverables.zh.md",
-      "sha256": "8509673dd320c49dbce77766ea74b04dd9ef4eb297f42a80c90b4d24de887aa7"
-    },
-    {
-      "path": "deliverables/agent-deliverables.zh.md",
-      "role": "agent_deliverables",
-      "required": true,
-      "language": "zh",
-      "sha256": "2cbf7439840ff748cd3eef947f1456fdb336237cdf3ab7082b923985b623af95"
+      "sha256": "50c42f7ce49b7cf95d14fd57f1504d8a032ea37206598eb636eb101e434553b6"
     },
     {
       "path": "design_depth_matrix.json",
       "role": "design_depth_matrix",
       "required": true,
-      "sha256": "8f30ef34c553608a4dd53d264704efbf8fc25be13746857b08fff7876f870410"
+      "sha256": "dc6f63dad96727ff2e9190d76da341b2bde0879de74174b17353cc8680d8639e"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -390,16 +375,17 @@
       "language": "zh"
     },
     {
-      "path": "report/assurance_register.md",
-      "role": "assurance_register",
-      "required": true,
-      "sha256": "150bab7c3bafb2a771c047286e521444c5ff47ecea486cbb2d842027bc7b6c32"
-    },
-    {
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "15bbf6550204dfb9e8f4ea1a9773b9b44b28c58eb53a7fbc44a057d51749e0a3",
+      "sha256": "f5a114f7d402e536c14d7d70970a7b9f451861287f5beaa845ee416344029049",
+      "language": "neutral"
+    },
+    {
+      "path": "report/narrative.md",
+      "role": "narrative",
+      "required": true,
+      "sha256": "cf5d5d7b2f5ebdadefb7a4dbfcbe256f01333f8dbba7166aeaf4614cf1b8350f",
       "language": "neutral"
     },
     {
@@ -418,22 +404,10 @@
       "language": "zh"
     },
     {
-      "path": "report/review_response.md",
-      "role": "review_response",
-      "required": true,
-      "sha256": "12a01f51f06238e1718a6969bc16789fcbd60249e31d858ea5da5c48a619676a"
-    },
-    {
-      "path": "report/rights_ledger.json",
-      "role": "rights_ledger",
-      "required": true,
-      "sha256": "87994716c59b36394d454c4ab42aa23eed6f05a8c9386d2f11fddb0c49ea0bed"
-    },
-    {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "96a1bf39a5407acf1dc8649a6cfb2dc7557eeec0cd7ee0cc319e4dceb86c591a"
+      "sha256": "50506cabe14ecfaa261719376ded696e6f2d8ee2cbc2a66afdb32cdd0248e16f"
     },
     {
       "path": "sources.json",
@@ -465,16 +439,25 @@
   ],
   "validation_claim": {
     "self_checked": true,
-    "formal_professional_scoring": false,
     "data_confidence": "low",
     "known_blockers": [
-      "X1 remains BLOCKED; see assumptions.json and report/assurance_register.md.",
-      "X2 remains BLOCKED; see assumptions.json and report/assurance_register.md.",
-      "X3 remains BLOCKED; see assumptions.json and report/assurance_register.md.",
-      "X4 remains BLOCKED; see assumptions.json and report/assurance_register.md.",
-      "X5 remains BLOCKED; see assumptions.json and report/assurance_register.md.",
-      "X6 remains BLOCKED; see assumptions.json and report/assurance_register.md."
+      "X1 remains BLOCKED; see assumptions.json and report/narrative.md.",
+      "X2 remains BLOCKED; see assumptions.json and report/narrative.md.",
+      "X3 remains BLOCKED; see assumptions.json and report/narrative.md.",
+      "X4 remains BLOCKED; see assumptions.json and report/narrative.md.",
+      "X5 remains BLOCKED; see assumptions.json and report/narrative.md.",
+      "X6 remains BLOCKED; see assumptions.json and report/narrative.md."
     ],
-    "readiness_contract": "persisted-self-check-v1"
+    "readiness_contract": "persisted-self-check-v1",
+    "extensions": {
+      "x-review-boundary": {
+        "schema_version": "1.0",
+        "data": {
+          "package_status": "concept_research_candidate",
+          "formal_professional_scoring": false,
+          "external_evidence_gates": ["X1", "X2", "X3", "X4", "X5", "X6"]
+        }
+      }
+    }
   }
 }
