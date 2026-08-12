@@ -17,7 +17,7 @@ iteration: "v0.1"
 
 > Let the same corridor complete its second infrastructure leap.
 
-One hundred years ago, Zhan Tianyou presided over the construction of China's first self-designed trunk railway here. Today, the corridor flanking the Jing-Zhang railway heritage park concentrates 60% of Beijing's registered large models and 17.9% of the nation's key national laboratories. This proposal defines **the corridor as an infrastructure belt of the intelligent era - the "Compute Belt"**. Rails were the infrastructure of the industrial era; compute is the infrastructure of the intelligent era. The corridor's leap from "rail belt" to "compute belt" is the second unfolding of infrastructure logic on the same land.[source:OFFICIAL-ANNOUNCEMENT] [source:GONGBAO-2025] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]
+One hundred years ago, Zhan Tianyou presided over the construction of China's first self-designed trunk railway here; the full line opened to traffic on 1909-09-24, with the opening ceremony held at Nankou on 1909-10-02.[source:JHZ-PEOPLE-1909] [source:JHZ-ARCHIVES] Today, the corridor flanking the Jing-Zhang railway heritage park concentrates 60% of Beijing's registered large models and 17.9% of the nation's key national laboratories. This proposal defines **the corridor as an infrastructure belt of the intelligent era - the "Compute Belt"**. Rails were the infrastructure of the industrial era; compute is the infrastructure of the intelligent era. The corridor's leap from "rail belt" to "compute belt" is the second unfolding of infrastructure logic on the same land.[source:OFFICIAL-ANNOUNCEMENT] [source:GONGBAO-2025] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]
 
 ![Overall concept and system boundary](assets/figures/site-overview.en.png)
 
@@ -51,7 +51,7 @@ This proposal adopts the three positionings of the task book - "centennial Jing-
 
 ### Naming System: Jing-Zhang Compute Belt
 
-The primary name "Jing-Zhang Compute Belt" takes the triple meaning of "compute": **computing power** (infrastructure of the intelligent era), **computation** (the essence of AI), and **recomputability** (this proposal's methodology - every spatial decision is recomputable and auditable). The historical closure narrative: Zhan Tianyou built the infrastructure of the physical era (rails); today the corridor lays out the infrastructure of the intelligent era (compute); from "engineering marvel" to "compute hub", the same corridor completes two infrastructure leaps.[source:AGENT-TASKBOOK] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]
+The primary name "Jing-Zhang Compute Belt" takes the triple meaning of "compute": **computing power** (infrastructure of the intelligent era), **computation** (the essence of AI), and **recomputability** (this proposal's methodology - every spatial decision is recomputable and auditable). The historical closure narrative: Zhan Tianyou built the infrastructure of the physical era (rails); today the corridor lays out the infrastructure of the intelligent era (compute); from "engineering marvel" to "compute hub", the same corridor completes two infrastructure leaps. Zhan's herringbone zigzag line and vertical-shaft tunnelling solved the 33 per-mille maximum grade of the Guanguan section - the factual core of the "engineering marvel" narrative.[source:JHZ-CHINANEWS] [source:JHZ-PEOPLE-1909] The history narrative and the triple meaning of "compute" jointly form this proposal's naming system.[source:AGENT-TASKBOOK] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]
 
 Sub-brand system: **Compute Hub** (three key areas), **Compute Corridor** (heritage park vitality belt), **Compute Walk** (cultural guide greenway), **Compute Belt Open Day** (annual event), **Open-Source Achievement Gallery** and **Agent Contribution Honor Wall** (public display system). The Logo direction combines "herringbone line x data bus": the upper part is Zhan Tianyou's herringbone track deformation, the lower part parallel data buses, forming a negative-space of the character "值" (on-duty/value); deep navy blue (auditable infrastructure), amber (on-duty/active), signal green (safe available), coral red (needs takeover/shutdown) form the palette.[source:AGENT-TASKBOOK] [depth:overall_spatial_structure]
 
@@ -305,7 +305,7 @@ All three industry-test scenarios (1-3) set a "shutdown threshold": precision de
 | Duty item | Content |
 | --- | --- |
 | Service hours | Park opening hours |
-| Input data | Public cultural sources (1909 Jing-Zhang railway history, primary sources pending registration), landmark locations |
+| Input data | Public cultural sources (1909 Jing-Zhang railway history; primary sources now registered: Beijing Municipal Archives "Jing-Zhang Luguang Sheying" et al., see sources.json JHZ-*), landmark locations |
 | Model role | Guide content generation and audio narration based on verified sources; no new historical claims |
 | Maturity | P1 first (phase 1, heritage core); content-guide level |
 | Human-takeover trigger | Doubtful content, visitor complaints, or facility faults route to human guides and maintenance |
@@ -423,3 +423,6 @@ Full sources, formulas, confidence, and assumptions live in `metrics.json`; task
 13. Beijing Municipal Science and Technology Commission / BDA: "Opinions on Further Stimulating Innovation Vitality in Beijing Economic-Technological Development Area and Building the Main Front of High-Precision Industry", 2025-04.[source:REGION-BDA]
 14. Xinhua Economic Information Daily: "Beijing Telecom Weaves the J-J-J Compute 'One Network' to Activate Regional Digital Development", 2024-02-23.[source:REGION-JINGJINJI]
 15. People's Daily: "Beijing Deploys Its Compute Architecture Comprehensively, Reaching About 200,000 P by 2027", 2026-01-23.[source:REGION-BJ-COMPUTE-NETWORK]
+16. Beijing Municipal Archives: "Jing-Zhang Luguang Sheying" (1909 official photo archive of the Jing-Zhang Railway, 178 photos).[source:JHZ-ARCHIVES]
+17. People's Daily Online (Culture): "On This Day: Jing-Zhang Railway Opened to Traffic on 1909-09-24", 2014-09-24.[source:JHZ-PEOPLE-1909]
+18. China News Service: "A Century-Long Leap of the Jing-Zhang Railway", 2019-09-23.[source:JHZ-CHINANEWS]
