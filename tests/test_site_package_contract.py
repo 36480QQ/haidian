@@ -275,5 +275,56 @@ class SitePackageContractTests(unittest.TestCase):
         self.assertNotIn("你也可以 Star", skill)
 
 
+
+    def test_skill_references_all_required_reference_docs(self) -> None:
+        """SKILL.md must link to all six reference documents."""
+        skill = (REPO_ROOT / "skills" / "urban-design-ai-submission" / "SKILL.md").read_text(encoding="utf-8")
+        required_refs = [
+            "references/geometry-and-metrics.md",
+            "references/human-readable-proposal.md",
+            "references/lightweight-workspace.md",
+            "references/multimodal-presentation.md",
+            "references/submission-package.md",
+            "references/validator-feedback.md",
+        ]
+        for ref in required_refs:
+            with self.subTest(ref=ref):
+                self.assertIn(ref, skill, f"SKILL.md must link to {ref}")
+
+    def test_site_package_design_brief_has_required_keys(self) -> None:
+        """design_brief.json must have all required top-level keys."""
+        brief_path = REPO_ROOT / "brief" / "site-package" / "design_brief.json"
+        brief = json.loads(brief_path.read_text(encoding="utf-8"))
+        required_keys = [
+            "project_id",
+            "site_name",
+            "official_scope_levels",
+            "key_areas",
+            "provisional_geometry",
+        ]
+        for key in required_keys:
+            with self.subTest(key=key):
+                self.assertIn(key, brief, f"design_brief.json must have top-level key '{key}'")
+
+    def test_provisional_boundaries_geojson_has_required_feature_ids(self) -> None:
+        """provisional_boundaries.geojson must contain the 6 required provisional feature IDs."""
+        geojson_path = (
+            REPO_ROOT / "brief" / "site-package" / "geometry" / "provisional_boundaries.geojson"
+        )
+        data = json.loads(geojson_path.read_text(encoding="utf-8"))
+        feature_ids = {f["properties"]["id"] for f in data["features"]}
+        required_ids = {
+            "PROV-SITE-001",
+            "PROV-RESEARCH-001",
+            "PROV-KEY-SCOPE-001",
+            "PROV-KEY-001",
+            "PROV-KEY-002",
+            "PROV-KEY-003",
+        }
+        for feature_id in required_ids:
+            with self.subTest(feature_id=feature_id):
+                self.assertIn(feature_id, feature_ids, f"provisional_boundaries.geojson must contain {feature_id}")
+
+
 if __name__ == "__main__":
     unittest.main()
