@@ -76,7 +76,7 @@
       "ai_package_stages": {
         "submissions/arccat-114/jingzhang-switch": "formal"
       },
-      "total_bytes": 5978384,
+      "total_bytes": 6012599,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -151,15 +151,15 @@
       "summary": {
         "standard_matrix_items": 9,
         "design_depth_items": 15,
-        "known_metric_refs_required": 36,
+        "known_metric_refs_required": 37,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 18,
+          "source": 20,
           "standard": 6,
           "depth": 12,
           "data": 21,
-          "metric": 9
+          "metric": 10
         }
       }
     },
