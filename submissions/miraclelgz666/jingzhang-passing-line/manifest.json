@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "package_id": "jingzhang-passing-line",
   "project_id": "centennial-jingzhang-ai-belt",
   "site_package_version": "0.1.0",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "9a687a238327727bd740c9c077a5f53089dad0e49dcd9bb6885fabc9466c6083"
+      "sha256": "b48c23562686fe919e247f0f9346fe9accea1ff17d1a85b5519e94975ed686a3"
     },
     {
       "path": "compliance_matrix.json",
