@@ -1,0 +1,78 @@
+{
+  "schema_version": "0.1.0",
+  "proposal_id": "ai-innovation-ecosystem-corridor",
+  "entries": [
+    {
+      "standard_id": "PROJECT-OFFICIAL-ANNOUNCEMENT",
+      "title_zh": "百年京张AI创新带城市设计国际方案征集资格预审公告",
+      "mandatory": true,
+      "covered": true,
+      "evidence_location": "proposal.md#设计依据与资料清单",
+      "coverage_notes": "三层范围、三处重点区、设计任务的主控依据"
+    },
+    {
+      "standard_id": "PROJECT-AGENT-OPEN-CALL-TASKBOOK",
+      "title_zh": "面向智能体任务书",
+      "mandatory": true,
+      "covered": true,
+      "evidence_location": "proposal.md (全文六项任务)",
+      "coverage_notes": "十条共创原则、六项任务、统一边界条款"
+    },
+    {
+      "standard_id": "MOHURD-URBAN-DESIGN-MEASURES",
+      "title_zh": "城市设计管理办法",
+      "mandatory": true,
+      "covered": true,
+      "evidence_location": "proposal.md#总体设计范围城市更新",
+      "coverage_notes": "城市设计落实规划、指导建筑设计、塑造特色风貌"
+    },
+    {
+      "standard_id": "MOHURD-CONTROL-DETAILED-PLANNING",
+      "title_zh": "控制性详细规划编制审批办法",
+      "mandatory": true,
+      "covered": true,
+      "evidence_location": "proposal.md#用地建筑规模与拆改留方案",
+      "coverage_notes": "区分已知控制条件、设计建议和待确认事项"
+    },
+    {
+      "standard_id": "MNR-LAND-USE-CLASSIFICATION-GUIDE",
+      "title_zh": "国土空间用地用海分类指南",
+      "mandatory": true,
+      "covered": true,
+      "evidence_location": "proposal.md#用地建筑规模与拆改留方案",
+      "coverage_notes": "用地分类采用统一分类逻辑"
+    },
+    {
+      "standard_id": "MOHURD-ARCH-DESIGN-DEPTH-2016",
+      "title_zh": "建筑工程设计文件编制深度规定",
+      "mandatory": false,
+      "covered": true,
+      "evidence_location": "proposal.md#重点区域详细设计",
+      "coverage_notes": "建筑专业深度参照，待官方文件补齐"
+    },
+    {
+      "standard_id": "GENERATIVE-AI-INTERIM-MEASURES",
+      "title_zh": "生成式人工智能服务管理暂行办法",
+      "mandatory": false,
+      "covered": true,
+      "evidence_location": "proposal.md#AI创新生态人才画像与AI+场景",
+      "coverage_notes": "AI场景隐私边界和合规参照"
+    },
+    {
+      "standard_id": "BARRIER-FREE-ENVIRONMENT-LAW",
+      "title_zh": "无障碍环境建设法",
+      "mandatory": false,
+      "covered": true,
+      "evidence_location": "proposal.md#用户画像",
+      "coverage_notes": "适老化场景和公共空间无障碍设计参照"
+    },
+    {
+      "standard_id": "ELDERLY-SMART-TECH-PLAN-2020-45",
+      "title_zh": "切实解决老年人运用智能技术困难实施方案",
+      "mandatory": false,
+      "covered": true,
+      "evidence_location": "proposal.md#用户画像 (画像3)",
+      "coverage_notes": "传统服务方式与智能化服务并行"
+    }
+  ]
+}
