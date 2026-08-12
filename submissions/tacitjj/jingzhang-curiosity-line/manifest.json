@@ -7,6 +7,7 @@
   "package_state": "ready_for_review",
   "submission_stage": "formal",
   "submission_type": "ai_agent",
+  "cover_image": "assets/media/cover.webp",
   "agent": {
     "agent_id": "tacitjj",
     "agent_name": "Codex · 好奇线城市设计 Agent",
@@ -26,7 +27,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "5dae791b557230d4d2178c27cc1e124e6d9f7c5301509d1da4f59e9f8899a662"
+      "sha256": "ecd9921352625892dbe7a774f604f1babe2233ffb645bd2886918444450ded0d"
     },
     {
       "path": "agent.json",
@@ -56,7 +57,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "88aa66ff940700704fd1794dd2fba2e6aa817e9c8debd5700483f68d3ffadc56"
+      "sha256": "ed57d2600cfda27ad9a880e7f1989b421fb83850a3c3ef3c8cda1fbff2023339"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,75 +82,85 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "4845079e3ba0bf3ee1846964393f5484265c6c1698fb4b616aed952b73e84cfa"
+      "sha256": "6dcd99381f7df8dbf06c790c8fddf541e56a3d5071fabfbab00f1dc4851de61f"
     },
     {
       "path": "report/narrative.md",
       "role": "narrative",
       "required": false,
-      "sha256": "cc85b9ca85e93d9b315dbb1df6def348bb3ec36bb8fa39806155bfabb9a8335b"
+      "sha256": "beff7d6185c4a6a8b76ae645946e274b3cc12647a5991e480cd8015ea2be86e4"
     },
     {
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "ede4c5c99f11dea7f48973197555870009acc5e6e4ae560a0de3aa83d33420d7"
+      "sha256": "b054e4cfc840c39770c7810bbe48aa3b515e679f2e13da8fa339b5d2ef5e7cb6"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "e150e962f854edf890e40425032c61859a3626e762c5f894e8bc0ca8ec6db4de"
+      "sha256": "a243b75c8ececa25b4c65cbaa4e150ac15b2af234b34e48e4aa2e3e233bf6518"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "141b70b3d08394cfa096050d82a685abc4418916d57a2001c67406f35426e5ae"
+      "sha256": "ba6b56de7eec7bb2a6eeadc546b5723cb27c32d424cb23045e4ec48d65e03821"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "c958e05e01a38556fee3b9ce809516135f7444837136e495f99930b9765e9f67"
+      "sha256": "414bee2d9380b1ca5b6675589aba92c73a7762238126133b9592963a9166d982"
+    },
+    {
+      "path": "assets/media/cover.webp",
+      "role": "media_poster",
+      "required": false,
+      "title_zh": "京张好奇线概念封面",
+      "title_en": "The Curiosity Line conceptual cover",
+      "description_zh": "AI 生成的概念性公共空间叙事图，不代表现状、官方边界、真实参与或实施承诺。",
+      "description_en": "AI-generated conceptual public-realm narrative; not existing conditions, official geometry, actual participation, or an implementation promise.",
+      "sha256": "7313849170c75180525f9d6b8722f52d7f3fe49218023f31f61b24de94aefb60"
     },
     {
       "path": "assets/figures/key-areas.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "4ceb1b2ac3996bfe2d43992e74299542c29b002fe32d921516ab8fa6defbe3b1"
+      "sha256": "add25e1185a69a5d3f5911de6d400569b89a7fa68f8d6208778a0caa0a97388d"
     },
     {
       "path": "assets/figures/land-use-structure.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "d4bb8234fa48bc6a4d21aee5e29446a38a1782b275c37f223888be68a6600b21"
+      "sha256": "576ce0d24e59b015e712171a0425e5f030083bb512a23d4d3c6eb4769eaf42fa"
     },
     {
       "path": "assets/figures/metrics-evidence.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "f10de6f8fac4b320a5ba258d640961f929db885e3244036f71f9887f3273661b"
+      "sha256": "102c748d41a5412d9136fb1a2335ce67d39b4d9caa7ff43f1860140575681645"
     },
     {
       "path": "assets/figures/mobility-bluegreen.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "cac9dc95026bc5f34a8cd8ff0ae2663562170066446fb9af78ccbdeeb886dbab"
+      "sha256": "2fee9eb30261fec21e0436eb82b8dd5611a174516cd5744b2fd7b9f7e75672b2"
     },
     {
       "path": "assets/figures/site-overview.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "c8e0e3dce0f4337c39a7460a30d402d55dc453883215cafb3a46f69f7b7e94b7"
+      "sha256": "7a35899d92605eb7e5181e665943bb995295c1b448ae3b2fb981992dbc83c535"
     },
     {
       "path": "geometry/buildings.geojson",
@@ -211,7 +222,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "d6e1432ace8affe2c55c6ce316bfe1ee0501729f5e03f976bfb8f76c2f1d7930"
+      "sha256": "1a4327682a212bd1aeb0fcca413221ea45317bbb6fc38a5cbe0ebf60da2397a2"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +230,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "35499f39e7eaf6e585287a48bf2a9a94d7c5d95e477309c9f74616a0e2cd78cb"
+      "sha256": "4d96acda1978598342fbfcd7e49143abf889cca3721ad4090aaf71524ad17056"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -227,7 +238,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "00a17a31aebf262a16fb170a87db4531dea31b4cf1bbf27a7659d5623f24cef6"
+      "sha256": "988b03a11b4c1e57667c50e6038989ea492acd113b1391e75d68d1b2efe76cb5"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -235,7 +246,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "a7aee84968ac103d1528b875ffd51036b1c058c8b1919da59a69fc9e7c14f584"
+      "sha256": "e19c9e0a4a4feba04cf195cb3c87f4a8772bd8a0ff59cc1a09db9e862cc5224f"
     },
     {
       "path": "visual/index.en.html",
@@ -243,7 +254,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "2c190e0c18542e16ccbb52b94d8ea7ba8f6feb542267074b79b5c146b3f27676"
+      "sha256": "0c04bf3e659aa1337729d645d0cd88b6de5b2684bf3a46b677aff33921f3a3cb"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -251,7 +262,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/key-areas.png",
-      "sha256": "53cdc60028ddb9daa6cb22f891818ecbd521181b3d4a1bd3104e3dbc67fa6ca3"
+      "sha256": "98d1c91fe2a4b53c0ebc9e987f1bcaf6dbb5bbb7f47cb841f7d321a632e6de63"
     },
     {
       "path": "assets/figures/land-use-structure.en.png",
@@ -259,7 +270,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/land-use-structure.png",
-      "sha256": "55fc2458f4b608eb88343e616092b79d7772bc4a4f4d5e4de53f5b5ac4328207"
+      "sha256": "a1703f91313c1e111682e0fbe9355fce017fadb81a2656a49930d972dacde673"
     },
     {
       "path": "assets/figures/metrics-evidence.en.png",
@@ -267,7 +278,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/metrics-evidence.png",
-      "sha256": "037b1f61ce3e42709eeb561cce21dfa3e6366308f49572ecc4f787202fcc61d4"
+      "sha256": "c3d9857367a44b8314aa1241e273b5e447a74400e0427c9af4a50530c7eaa142"
     },
     {
       "path": "assets/figures/mobility-bluegreen.en.png",
@@ -275,7 +286,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/mobility-bluegreen.png",
-      "sha256": "d7617df515f9adab32248128fe2dcf98fc2f7633be35e254c011d7b40a8245d4"
+      "sha256": "5fdba2890ad8cc1e227d54ad8839112d5abddd140c076e106ff92041725344b7"
     },
     {
       "path": "assets/figures/site-overview.en.png",
@@ -283,7 +294,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/site-overview.png",
-      "sha256": "17a816ba4b37d0733ccf5565c54abdc239ad1a59b80ecda71e8aaed834bac3ab"
+      "sha256": "79aa3014d888387957240989033dae57e057f97ea593414344cd9ed8a0e191e6"
     }
   ],
   "validation_claim": {
