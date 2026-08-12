@@ -42,13 +42,15 @@ iteration: "v2.0"
 
 统筹研究范围的核心任务是构建世界级 AI 创新生态与适配 AI 新质生产力的未来城市形态 [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]。v2 版提出「京张纪元轨道（Jing-Zhang Epoch Rail，简称 JZ·EPOCH）」总体概念，并把空间形态从通用「一带三核」重构为铁路遗产派生语法：以京张铁路「人」字线为创新总线（南段自西直门门户经五道口升至 AI 原点社区，北段经众智园至清河界面），三处重点区组织为三座「纪元站台」（每座站台按「站前广场-站房核心-站台绿化」三段式设计），中关村科技服务翼与小月河场景赋能翼如道岔从人字线交点分出，主线按「闭塞区间」划分为 B1-B5 五个可运营场景段 [depth:overall_spatial_structure]。该语法直接回应 1909 年詹天佑「人」字线的工程遗产，把铁路记忆转译为 AI 创新带的组织逻辑，而非简单套用产业园区网格。
 
-命名体系以「纪元」突出 1909 年京张铁路开创中国自主工程纪元，以「轨道」同时指向铁路遗址与 AI 数据轨道，支持系列命名（纪元站、纪元节、纪元指数、闭塞区间 B1-B5）。Logo 与视觉识别为原创矢量设计：双轨与人字道岔交汇构成 E 形符号，交汇点设信号红「原点节点」，寓意「人字线交点即创新原点」；配套色彩系统（轨道深蓝/信号红/AI 青/中关村金/纸白）、字体方向、双语口号与导视符号（纪元站/信号节点/时刻表/道岔指向），详见 [assets/figures/brand-board.png](assets/figures/brand-board.png) 与 `assets/brand/` [depth:overall_spatial_structure]。所有品牌元素为程序化原创绘制，无第三方字体、图片或商标依赖，权利登记见 `assets/rights_registry.json`。
+命名体系以「纪元」突出 1909 年京张铁路开创中国自主工程纪元，以「轨道」同时指向铁路遗址与 AI 数据轨道，支持系列命名（纪元站、纪元节、纪元指数、闭塞区间 B1-B5）。Logo 与视觉识别为原创矢量设计：双轨与人字道岔交汇构成 E 形符号，交汇点设信号红「原点节点」，寓意「人字线交点即创新原点」；配套色彩系统（轨道深蓝/信号红/AI 青/中关村金/纸白）、字体方向、双语口号与导视符号（纪元站/信号节点/时刻表/道岔指向），详见 [assets/figures/brand-board.png](assets/figures/brand-board.png) 与 `assets/brand/` [depth:overall_spatial_structure]。所有品牌元素为程序化原创绘制，无第三方字体、图片或商标依赖，权利登记见 `report/copyright_statement.md`。
 
 ![AI 创新生态图谱与全球案例转译](assets/figures/ecosystem-map.png)
 
 面向智能体任务书要求给出 5-8 个全球 AI 创新生态案例及可转化机制，本方案选取并转化为生态图谱五层回路：高校策源（北大/清华/北航/北邮等类别化表述）、开源协作、企业转化、资本与服务（中关村翼）、场景验证（小月河翼）、国际路演与治理（大钟寺/众智园）[source:AGENT-TASKBOOK]。七类公开案例作为背景性参考 [source:PUBLIC-ECOSYSTEM-CASES]：硅谷高校-园区-资本联动、剑桥科技园成果转化、特拉维夫政府风险分担与国防成果转化、深圳南山全产业链协同、伦敦 King's Cross 站城一体更新、首尔数字媒体城场景开放、杭州未来科技城人才与场景政策。每条案例转译为空间-要素机制：就近孵化（原点社区）、研发-测试-展示梯度产业空间（众智园）、场景开放招商（大钟寺/小月河）、站城一体化公共空间更新（对应 King's Cross）、数据/算力/场景要素保障（两翼）[depth:existing_conditions_diagnosis]。案例与要素机制均为公开资料综述与概念转译，具体数据与授权需在深化时逐项补充来源 [source:SOURCE-REGISTRY]。
 
 区域协同按「人才-成果-算力-制造-场景」五要素环流组织：北纬社区（人才与成果外溢）、未来科学城（大科学装置与算力）、怀柔科学城（基础研究转化）、北京经开区（制造/机器人/整车）、京津冀网络（场景、市场与供应链），以概念关系图表达协同回路 [depth:existing_conditions_diagnosis]。未来城市形态研究把 AI 交通、连续绿网、创新服务设施与国际化生活工作氛围落实到可定位的功能区、节点与廊道 [standard:MOHURD-URBAN-DESIGN-MEASURES]，统筹研究范围为总体设计提供产业与功能传导，不新增伪精确红线。
+
+![区域协同关系图：人才-成果-算力-制造-场景五要素环流](assets/figures/regional-synergy.png)
 
 ## 总体设计范围城市更新与控规深度城市设计
 
@@ -131,7 +133,7 @@ AI 创新生态按五大功能（AI 全栈自主创新体系、世界级创新�
 
 ## 指标体系、面积复算与合规矩阵
 
-指标体系按「可复算、可追溯、可解释、可降级」原则建立 [depth:metrics_recalculation]。全部已知指标由提交包 geometry 图层在 EPSG:4548 下复算，并在 `metrics.json` 中标注 `precision="provisional_pending_recalculation"`：总体设计范围面积 [metric:site_area_sqm] 平方米；三处重点区面积分别为 [metric:zhongzhiyuan_area_sqm]、[metric:beijing_ai_origin_area_sqm]、[metric:dazhongsi_area_sqm] 平方米（provisional 复算值），重点区数量 [metric:key_area_count] 处；绿地、公共空间、建筑基底与道路面积对应 [metric:green_space_area_sqm]、[metric:public_space_area_sqm]、[metric:building_footprint_area_sqm]、[metric:road_area_sqm] 及占比 [metric:green_ratio]、[metric:public_space_ratio]、[metric:road_ratio]；人字线主线长度 [metric:corridor_length_m] 米，闭塞区间 [metric:block_section_count] 段，AI 场景节点 [metric:scenario_node_count] 个，分期总面积 [metric:phasing_area_sqm] 平方米 [data:geometry/constraints.geojson#CON-RAIL-001]。FAR、建筑密度、总建筑规模、绿地率与退线等官方控制指标状态为 unknown，理由与缺口登记在 `metrics.json` 与 `assumptions.json`。
+指标体系按「可复算、可追溯、可解释、可降级」原则建立 [depth:metrics_recalculation]。全部已知指标由提交包 geometry 图层在 EPSG:4548 下复算，并在 `metrics.json` 中标注 `precision="provisional_pending_recalculation"`：总体设计范围面积 [metric:site_area_sqm] 平方米；三处重点区面积分别为 [metric:zhongzhiyuan_area_sqm]、[metric:beijing_ai_origin_area_sqm]、[metric:dazhongsi_area_sqm] 平方米（provisional 复算值），重点区数量 [metric:key_area_count] 处；绿地、公共空间、建筑基底与道路面积对应 [metric:green_space_area_sqm]、[metric:public_space_area_sqm]、[metric:building_footprint_area_sqm]、[metric:road_area_sqm] 及占比 [metric:green_ratio]、[metric:public_space_ratio]、[metric:road_ratio]；人字线主线长度 [metric:corridor_length_m] 米，闭塞区间 [metric:block_section_count] 段，AI 场景节点 [metric:scenario_node_count] 个，分期总面积 [metric:phasing_area_sqm] 平方米 [data:geometry/constraints.geojson#CON-RAIL-001]；文化、教育与医疗卫生用地面积分别 [metric:land_use_area_cultural_0803]、[metric:land_use_area_education_0804]、[metric:land_use_area_medical_0806] 平方米。FAR、建筑密度、总建筑规模、绿地率与退线等官方控制指标状态为 unknown，理由与缺口登记在 `metrics.json` 与 `assumptions.json`。
 
 ![核心指标复算与证据链（含 provisional 精度标注）](assets/figures/metrics-evidence.png)
 
@@ -146,11 +148,11 @@ AI 创新生态按五大功能（AI 全栈自主创新体系、世界级创新�
 ## 参考资料
 
 - `brief/site-package/design_brief.json`（三层范围、关键区面积、坐标政策）
-- `brief/site-package/agent_taskbook.json` 与 `standards/references/agent-open-call-taskbook-0518.md`
+- `brief/site-package/agent_taskbook.json` 与 `brief/site-package/standards/references/agent-open-call-taskbook-0518.md`
 - `brief/site-package/allowed_design_space.json`（可编辑图层、锁定图层、provisional 使用边界）
 - `brief/site-package/sources.json` 与 `data/source_registry.json`（来源权威等级与用途边界）
 - `brief/site-package/geometry/provisional_boundaries.geojson` 与 `provisional_boundaries_basis.md`
-- `brief/site-package/standards/standards.json` 与 `references/index.json`（本地标准快照与 SHA-256）
+- `brief/site-package/standards/standards.json` 与 `brief/site-package/standards/references/index.json`（本地标准快照与 SHA-256）
 - `brief/site-package/ranges/planning_limits.json`（已知官方面积与缺失控制指标）
 - `data/processed/agent_fact_pack.md` 及同目录 CSV（导航层，不替代原始来源）
 - `docs/formal-submission-guide.md`、`docs/data-workflow.md`、`docs/terminology-glossary.md`

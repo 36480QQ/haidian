@@ -69,6 +69,42 @@
       "assumptions": [],
       "precision": "provisional_pending_recalculation"
     },
+    "land_use_area_cultural_0803": {
+      "status": "known",
+      "value": 1165232.508,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "sum(polygon_area(land_use where land_use_code='0803'))",
+      "confidence": "medium",
+      "assumptions": [],
+      "precision": "provisional_pending_recalculation"
+    },
+    "land_use_area_education_0804": {
+      "status": "known",
+      "value": 1189070.825,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "sum(polygon_area(land_use where land_use_code='0804'))",
+      "confidence": "medium",
+      "assumptions": [],
+      "precision": "provisional_pending_recalculation"
+    },
+    "land_use_area_medical_0806": {
+      "status": "known",
+      "value": 559393.953,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "sum(polygon_area(land_use where land_use_code='0806'))",
+      "confidence": "medium",
+      "assumptions": [],
+      "precision": "provisional_pending_recalculation"
+    },
     "green_space_area_sqm": {
       "status": "known",
       "value": 3514739.383,
