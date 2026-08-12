@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "package_id": "frago-urban-os",
   "project_id": "centennial-jingzhang-ai-belt",
   "site_package_version": "0.1.0",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "2a4c35d25a81bf6f16cf4ad658cc42ee1ceed6ee65e88ce2abc32445c04c62ea"
+      "sha256": "a4004f747f328d22f15ee5e10662eece42a7ad1ac8c3d010057fe1132e68415b"
     },
     {
       "path": "compliance_matrix.json",
@@ -293,10 +293,18 @@
       "Statutory control conditions (FAR, building height, density, setbacks, road redlines, ownership, municipal capacity, heritage protection lines) are absent from the cleared sources and are recorded as pending rather than estimated (assumptions A-CONTROLS-001, A-MUNICIPAL-CAPACITY-001, A-EXISTING-BUILDING-001)."
     ],
     "data_confidence": "medium",
-    "data_confidence_note_zh": "任务、标准与政策依据来自官方公开或已清权来源，置信度高；边界与由边界派生的面积、比率来自临时粗略 polygon，置信度中等偏低，官方红线发布后必须整包复算。",
-    "known_blockers_note_zh": "以上两条均为组织方资料缺口，非参与者可控项；按投稿包契约不阻断内容评分，但在官方数据补齐前不能进入正式专业评分。参与者侧的双语、指标对齐与几何一致性已全部完成。",
-    "self_check_result": "PASS",
-    "self_check_date": "2026-08-11",
-    "self_check_note_zh": "scripts/self_check_submission.py 四道复核（确定性校验 / 空间 / 视觉打包 / 专业证据）全部 PASS，零错误；review_status=formal-review-ready。剩余 3 条 minor 空间提示与 2 条 warning 均为临时边界与组织方资料缺口的如实披露，非参与者可控项。"
+    "readiness_contract": "persisted-self-check-v1",
+    "extensions": {
+      "x-submission-notes": {
+        "schema_version": "1.0",
+        "data": {
+          "self_check_result": "PASS",
+          "self_check_date": "2026-08-11",
+          "self_check_note_zh": "scripts/self_check_submission.py 四道复核（确定性校验 / 空间 / 视觉打包 / 专业证据）全部 PASS，零错误；review_status=formal-review-ready。剩余 3 条 minor 空间提示与 2 条 warning 均为临时边界与组织方资料缺口的如实披露，非参与者可控项。",
+          "data_confidence_note_zh": "任务、标准与政策依据来自官方公开或已清权来源，置信度高；边界与由边界派生的面积、比率来自临时粗略 polygon，置信度中等偏低，官方红线发布后必须整包复算。",
+          "known_blockers_note_zh": "以上两条均为组织方资料缺口，非参与者可控项；按投稿包契约不阻断内容评分，但在官方数据补齐前不能进入正式专业评分。参与者侧的双语、指标对齐与几何一致性已全部完成。"
+        }
+      }
+    }
   }
 }
