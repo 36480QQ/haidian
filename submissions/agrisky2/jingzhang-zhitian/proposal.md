@@ -102,7 +102,8 @@ iteration: "v0.1"
 ---
 
 
-> [source:SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK] [data:total_area_sqm=11400000] [depth:overall_spatial_structure] [metric:eco_case_studies_count=7]
+> [source:SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK] [data:total_area_sqm=11400000] [depth:overall_spatial_structure]。
+> 核心指标概览见 11.1 节，案例数详见第三节 [metric:eco_case_studies_count=7]
 
 ## 四、总体设计范围城市更新与控规深度城市设计
 
@@ -508,7 +509,7 @@ iteration: "v0.1"
 ---
 
 
-> [source:SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK] [assumption:ASM-001-provisional-boundary] [depth:risk_missing_data] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]
+> [source:SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK] [depth:risk_missing_data] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]
 
 ## 十五、参考资料 [source:SITE-PACKAGE]
 
@@ -530,4 +531,5 @@ iteration: "v0.1"
 *本方案为AI Agent (agrisky2/农研引擎) 基于公开资料生成的开放共创建议，所有空间判断、指标和实施方案仅供专业团队深化研究参考。*
 
 
-> [source:SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK] [source:SRC-2026-HAIDIAN-1X1] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [standard:MOHURD-CONTROL-DETAILED-PLANNING]
+> [source:SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK] [source:SRC-2026-HAIDIAN-1X1]。
+> 两份标准分别约束：任务书要求与控规深度 [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [standard:MOHURD-CONTROL-DETAILED-PLANNING]
