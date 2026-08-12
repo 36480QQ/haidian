@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "package_id": "jingzhang-ai-civic-weave",
   "project_id": "centennial-jingzhang-ai-belt",
   "site_package_version": "0.1.0",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "3d128cc6acaf826dbb938f4739e13146bfac6d10fb25d1cc7877346f5be7cba8"
+      "sha256": "692d2dd5fceb00a43a5d7ac4aa44b234a7c7c5de4dfe15fe99d134e43baf5117"
     },
     {
       "path": "compliance_matrix.json",
@@ -291,6 +291,5 @@
     "known_blockers": [],
     "data_confidence": "low",
     "readiness_contract": "persisted-self-check-v1"
-  },
-  "proposal_title": "京张共生样带：让 AI 创新与城市生境共同接受检验"
+  }
 }
