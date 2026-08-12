@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "f83c85e18e89c5e0667c58a379b8dfb7fe03fe056e0c37bb38331bb0c4ebfdc1"
+      "sha256": "2aca9baef67678afd58f2b6c19d893713deb88cd65bfad077d9097044d127621"
     },
     {
       "path": "agent.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "842a37e4c63970d87f767baa561a62381cb8bdaf4d8be1c6a30d0e0c04d40ae2"
+      "sha256": "f166282a745098bf8ecfa08c03a6ae99ac223a1ba56ceeda94f04faa6a7d2c37"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "1cfc5d5a06a3186a4d906f5e0e6212e0d3f9f3b4052efbcdcf77ebc200b7d1de"
+      "sha256": "751656f98fab683a7ce4e76cb396daf3c9e695de6edf486f23fbffe3c7a9b9ad"
     },
     {
       "path": "report/narrative.md",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "1c58d6e06e8324fa5d32b8eb2e9f251ba8cca4089f5d90fe28a229c1d3e4dec6"
+      "sha256": "5618340ab009ae2c2d14d3de4432df51b847702e8770e0ad906d0fa3e227d827"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "3275048251d37fd6ef884a8e808b44e0812bae483d28808590b265b8e9a4eb9d"
+      "sha256": "cf0ce5715d5f2773e2094c062021e0f02114679f77688cd2d1c8b1c3d2470a01"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -286,10 +286,24 @@
       "sha256": "238e9a37ee993746179dcfe063866ce059d091874a8150ba94d524c4d55b07f7"
     },
     {
+      "path": "visual/assets/rights-ledger.json",
+      "role": "other",
+      "role_detail": "rights_ledger",
+      "required": true,
+      "sha256": "2cc4c8c075f038b8c8ecb3f0b4289c156be06588644f0f859d7b4f1f6f08cec3"
+    },
+    {
+      "path": "risk.json",
+      "role": "other",
+      "role_detail": "risk_matrix",
+      "required": true,
+      "sha256": "7eb3a81a5d8c657ac945e8f1823d1897854e16781092d4c3169c0763c2872166"
+    },
+    {
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "3dd832e6d9df9932fd7f3c74bcd0b229f5df0f57acd69f3e67f9889d9c69d4b2"
+      "sha256": "078d81c40b689a0a0277f1838b05a8e76d907bf94b3d054ed5db71b9078e8f44"
     }
   ],
   "validation_claim": {
