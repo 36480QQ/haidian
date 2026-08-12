@@ -42,7 +42,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 总体结构是“一条共读脊柱、三处压力测试、六类空间组件”。脊柱依托既有公共空间与慢行联系，不新增法定红线；三处重点区分别测试复杂共存、包容辨向和视觉拥挤；组件包括共读转角、入口识别框、公共导视保护视域、连续通行带、侧向停看口袋、可版本化临时界面 [depth:overall_spatial_structure] [data:geometry/roads.geojson#ROAD-001]。
 
-![六个全球AI生态案例、八要素机制与三区两翼转译](assets/figures/land-use-structure.png)
+![一条共读脊柱、三类接口与三级范围传导](assets/figures/land-use-structure.png)
 
 ## 任务书定位、三区两翼与协同回路
 
@@ -161,7 +161,7 @@ AI 不再以“泛化智能协调”出现，而限定为三项可与人工基�
 
 市政与新型基础设施仅预留标准化电源、通信与传感接口。AI 观察设备如需部署，应以短期、可移除、最小采集为原则；断电断网时固定导视、空间边界、纸质信息和人工服务继续工作。排水、照明、电力、通信、消防和维护车辆条件是深化前置项 [data:geometry/constraints.geojson] [depth:municipal_new_infrastructure]。
 
-![共读转角的平面、剖面与 AI 关闭路径](assets/figures/mobility-bluegreen.png)
+![交通慢行、轨道接驳、蓝绿公共空间与 AI 场景节点](assets/figures/mobility-bluegreen.png)
 
 ## 蓝绿空间、公共空间与城市风貌
 
@@ -192,7 +192,7 @@ AI 不再以“泛化智能协调”出现，而限定为三项可与人工基�
 
 三问均记录条件、参与者与失败样本；阈值由交通、无障碍、照明、消防和真实使用者共同确定，模型仿真不能写成现场安全证明 [metric:site_area_sqm] [metric:green_ratio] [depth:metrics_recalculation]。
 
-![三问验证、AI 边界与运营闭环](assets/figures/metrics-evidence.png)
+![指标来源、复算关系、未知控制与验收门](assets/figures/metrics-evidence.png)
 
 合规矩阵逐条覆盖公告 1.3、1.4、1.5 与 agent.1-agent.6；标准矩阵界定规划、用地、建筑和无障碍边界；设计深度矩阵把正文、图纸、图层、指标和自检连接起来。任何后续几何变更都必须重跑空间复核、图件、PDF、HTML、manifest hash 与全套 preflight。
 

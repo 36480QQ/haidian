@@ -42,7 +42,7 @@ At the strategic scale, co-legibility becomes a public question for the AI ecosy
 
 The structure is one co-legibility spine, three pressure tests and six component families: co-legible corners, entrance recognition frames, protected public-wayfinding fields, continuous passage bands, side stopping pockets and versioned temporary interfaces [depth:overall_spatial_structure] [data:geometry/roads.geojson#ROAD-001].
 
-![Six global AI ecosystem cases, eight-factor mechanism and translation into three areas and two wings](assets/figures/land-use-structure.en.png)
+![One co-legibility spine, three interface layers and three-level scope translation](assets/figures/land-use-structure.en.png)
 
 ## Taskbook positioning, three areas, two wings and coordination loop
 
@@ -161,7 +161,7 @@ Different speeds are made visible before they meet at stations, gates, curbs and
 
 Municipal design only reserves standardized, removable power, communication and sensing interfaces. Fixed wayfinding, physical boundaries, paper information and staff support remain operational through outages. Drainage, lighting, power, communications, fire and service access are professional prerequisites [data:geometry/constraints.geojson] [depth:municipal_new_infrastructure].
 
-![Co-legible corner plan, section and AI-off path](assets/figures/mobility-bluegreen.en.png)
+![Mobility, rail access, blue-green public space and AI scenario nodes](assets/figures/mobility-bluegreen.en.png)
 
 ## Blue-green space, public space and character
 
@@ -188,7 +188,7 @@ Overall area, key-area count, concept prototype envelope and route length can be
 
 Performance is not collapsed into one score. Each scenario asks what becomes visible and where; whether users understand direction, boundary and priority; and whether professionally confirmed action margin remains. Conditions and failures are retained, and simulation is never presented as field safety proof [metric:site_area_sqm] [metric:green_ratio] [depth:metrics_recalculation].
 
-![Three-question validation, AI boundary and operation loop](assets/figures/metrics-evidence.en.png)
+![Metric sources, recalculation relationships, unknown controls and acceptance gates](assets/figures/metrics-evidence.en.png)
 
 The compliance matrix covers the announcement and all six agent tasks. Standard and design-depth matrices connect readable claims to drawings, data and assumptions. Every geometry edit must regenerate figures, PDFs, HTML, manifest hashes and the full preflight.
 
