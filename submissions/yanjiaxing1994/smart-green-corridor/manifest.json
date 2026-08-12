@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "1b8c1be361f4e3fb63c4a42722796594df5f89ef26ac59ab44debbce219450c4"
+      "sha256": "f38710fa8af7fd54dfc2f6f4457a5c4073d53a217d65e45e820f66b3a2e7fcf6"
     },
     {
       "path": "proposal.en.md",
@@ -108,14 +108,14 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "1e5a73a31db795a8615f1ac8795a680533775ee6fc14209de91550855af50f4e"
+      "sha256": "89d49bc2bddeccc0841337c4bca1cd71640ad88788fe0fd7f7190dd4249287aa"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "acfe5e28a1ddd246c7db8014a66912f8fbec9633c0dca535bc60417c9738099e"
+      "sha256": "b2132c06fd33438cb222b17910b30f8cf9655980018a1595c1b6ae8f1935848b"
     },
     {
       "path": "visual/index.html",
@@ -129,7 +129,7 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "023d5b9901d631c014799e30c996c4ee65bfdba42748d1073b09da84fd35f55a"
+      "sha256": "74a3913e5309ee5f98929ce31356304d51caafe3b6465e229b53c7f24b530705"
     },
     {
       "path": "assets/figures/land-use-structure.png",
@@ -235,7 +235,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "55f91946d72dc6504e571d1189c6127380ec59bdbad74230c89d03c384964b32"
+      "sha256": "862fd69ff02cae68bbabb16db54741effef6a0f95c0835be1c15e4ef1d8160c1"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "b481e2f5428f070136f104953e9dc82cea82fbc6c3c2614168cf3a33a763af5c"
+      "sha256": "712ac06e70b01f6de08a42fa3b590ae52e0fb0f96a5953122d76870919e1c33a"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -251,7 +251,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/key-areas.png",
-      "sha256": "6b1234145619785468ad17b354d84672ff2714a613c15aa465c50a5acc8082f1"
+      "sha256": "a5f3f9f175ac42559782e809c24443a9792a0d30e80a37ccf3396b607160f62c"
     },
     {
       "path": "assets/figures/land-use-structure.en.png",
@@ -293,4 +293,3 @@
     "readiness_contract": "persisted-self-check-v1"
   }
 }
- 
