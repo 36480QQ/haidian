@@ -4,7 +4,7 @@ author_github: "LShengYi"
 language: "zh"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
-iteration: "5"
+iteration: "6"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以「智脉一带 · AI Pulse Belt」为总体意象的 formal AI 城市设计方案包：京张铁路百年'铁脉'转译为 AI 时代'数字智脉'，一带三核、双翼多点；全部几何基于官方临时边界生成并披露面积偏差，指标可复算、图层可校验、双语全对齐。"
@@ -254,6 +254,8 @@ AI 治理建议遵守数据最小化、公开来源、可解释与人工复核�
 **双语要求**：本方案中文主文件与英文对照译稿 `proposal.en.md` 完整对齐（bilingual_contract_version 1）；A3/A0 图纸、HTML 与含文字图件均提供双语表达，优先使用 `docs/terminology-glossary.md` 推荐译法。所有图片、图纸、图标、数据与代码资产在 `sources.json` 与 `report/copyright_statement.md` 中说明来源、许可与授权状态；HTML 页面不加载远程脚本、远程地图瓦片、远程字体、iframe、表单或外部 API，不跟踪评审者行为。
 
 **风险与缺资料清单**：official boundary、key area、控规、道路红线、地块权属、建筑现状、市政管线、文保与公共服务缺口均进入 `assumptions.json`（ASSUME-001/002/003、A-CONTROLS-001、ASSUME-004）与本节；任何缺少官方控规、道路红线、权属、市政、消防或文保条件的结论均降级为待确认事项 [depth:risk_missing_data] [data:geometry/constraints.geojson#CONSTRAINTS] [source:SITE-PACKAGE]。
+
+**风险登记与人工复核清单**：八维风险清单（数据隐私、实施复杂度、公众接受度、运维成本、政策不确定性、空间争议、技术成熟度、公平与包容性）逐项登记于 `risk.json`，其中实施复杂度与政策不确定性为高关注项并附人工复核要求 [depth:risk_missing_data] [data:risk.json]；十八项概念节点、廊道与区域登记于 `spatial.json`（disclaimer=concept-only），全部为概念表达、不代表审定结论，provisional 项经维护者复核后方可作为公共语境使用 [data:spatial.json] [data:geometry/key_areas.geojson#PROV-KEY-001]。
 
 **证据失效级联降级**：若本方案引用的任何来源（`sources.json` 登记条目或官方数据）被撤回、失效或修正，对应主张、指标、图件与合规矩阵条目同步降级为待确认，并重算受影响几何与指标；降级记录进入变更记录与脉冲协议 P4 复盘。
 

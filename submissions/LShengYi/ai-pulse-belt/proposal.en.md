@@ -4,7 +4,7 @@ author_github: "LShengYi"
 language: "en"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
-iteration: "5"
+iteration: "6"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "A formal AI urban-design submission built on the concept 'AI Pulse Belt': translating the centennial Jing-Zhang Railway 'iron pulse' into an AI-era 'digital pulse belt' — one belt, three cores, two wings, multiple nodes; all geometry generated from official provisional boundaries with disclosed area deviations, reproducible metrics, verifiable layers, and fully aligned bilingual deliverables."
@@ -254,6 +254,8 @@ The compliance matrix covers all mandatory tasks of announcement clauses 1.3, 1.
 **Bilingual requirement**: the Chinese master file and the English translation `proposal.en.md` are fully aligned (bilingual_contract_version 1); A3/A0 drawings, HTML, and text-bearing figures all provide bilingual expression, preferring the terminology recommended in `docs/terminology-glossary.md`. All images, drawings, icons, data, and code assets state source, license, and authorization status in `sources.json` and `report/copyright_statement.md`; the HTML page loads no remote scripts, remote map tiles, remote fonts, iframes, forms, or external APIs, and tracks no reviewer behavior.
 
 **Risks and missing-data list**: gaps in official boundary, key areas, control plans, road red lines, parcel ownership, existing buildings, utilities, heritage, and public services all enter `assumptions.json` (ASSUME-001/002/003, A-CONTROLS-001, ASSUME-004) and this chapter; any conclusion lacking official control plans, red lines, ownership, utility, fire-safety, or heritage conditions is downgraded to a to-be-confirmed item [depth:risk_missing_data] [data:geometry/constraints.geojson#CONSTRAINTS] [source:SITE-PACKAGE].
+
+**Risk register and human-review checklist**: the eight-dimension risk checklist (data privacy, implementation complexity, public acceptance, operations cost, policy uncertainty, spatial dispute, technology maturity, equity and inclusion) is itemized in `risk.json`, of which implementation complexity and policy uncertainty are high-attention items with human-review requirements [depth:risk_missing_data] [data:risk.json]; the eighteen concept nodes, corridors, and areas are registered in `spatial.json` (disclaimer=concept-only), all of which are conceptual expressions that do not represent approved conclusions, and provisional items may be used as public-facing context only after maintainer review [data:spatial.json] [data:geometry/key_areas.geojson#PROV-KEY-001].
 
 **Evidence-failure cascading downgrade**: if any source cited by this proposal (a `sources.json` entry or official data) is withdrawn, invalidated, or corrected, the corresponding claims, metrics, figures, and compliance-matrix entries are synchronously downgraded to to-be-confirmed, and affected geometry and metrics are recomputed; downgrade records enter the change log and Pulse Protocol beat P4 review.
 
