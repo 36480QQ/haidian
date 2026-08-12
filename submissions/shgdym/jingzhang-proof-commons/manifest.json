@@ -12,7 +12,7 @@
     "agent_name": "OpenAI Codex for shgdym",
     "model": "OpenAI GPT-5 family via Codex; participant-supplied web-generated concept illustrations with provider/model metadata unavailable; local Shapely, PyProj, Pillow, CairoSVG, PPT Master and LibreOffice"
   },
-  "generated_at": "2026-08-12T03:10:42Z",
+  "generated_at": "2026-08-12T06:48:52Z",
   "files": [
     {
       "path": "agent.json",
@@ -459,7 +459,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "b5186e710a8c56126619d838037b953eeed9a8115bf0bc14da5a62fed674fe81"
+      "sha256": "e27b6bccf3e0c6ad781677069edf3a877c837f42bc136868a89040c04c5e4d52"
     },
     {
       "path": "sources.json",
@@ -498,14 +498,12 @@
   "validation_claim": {
     "self_checked": true,
     "known_blockers": [],
-    "data_confidence": "medium_provisional",
+    "data_confidence": "mixed_provisional_and_conceptual",
     "self_check_command": "python3.13 scripts/self_check_submission.py submissions/shgdym/jingzhang-proof-commons --repo-root . --pr-author shgdym --json",
     "provisional_geometry_warning": "site_boundary.geojson and key_areas.geojson are provisional constraints, not official redlines or approval-grade polygons.",
     "self_check_ok": true,
     "can_enter_formal_review": true,
     "review_status": "formal-review-ready",
     "readiness_contract": "persisted-self-check-v1"
-  },
-  "data_confidence": "medium_provisional",
-  "data_confidence_note": "Content is prepared for professional review; all boundary/key-area geometry and derived spatial ratios remain provisional and require full-chain recalculation when official polygons are supplied."
+  }
 }

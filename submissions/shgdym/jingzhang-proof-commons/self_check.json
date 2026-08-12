@@ -1,336 +1,239 @@
 {
-  "schema_version": "0.1.0",
   "ok": true,
+  "submission_dir": "submissions/shgdym/jingzhang-proof-commons",
+  "pr_author": "shgdym",
+  "stage": "formal",
+  "deterministic_validation": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "errors": [],
+      "warnings": [
+        "submissions/shgdym/jingzhang-proof-commons/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied",
+        "submissions/shgdym/jingzhang-proof-commons/spatial.json: items[0]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/shgdym/jingzhang-proof-commons/spatial.json: items[1]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/shgdym/jingzhang-proof-commons/spatial.json: items[2]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/shgdym/jingzhang-proof-commons/spatial.json: items[3]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/shgdym/jingzhang-proof-commons/spatial.json: items[4]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/shgdym/jingzhang-proof-commons/spatial.json: items[5]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/shgdym/jingzhang-proof-commons/spatial.json: items[6]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/shgdym/jingzhang-proof-commons/spatial.json: items[7]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/shgdym/jingzhang-proof-commons/spatial.json: items[8]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/shgdym/jingzhang-proof-commons/spatial.json: items[9]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/shgdym/jingzhang-proof-commons/spatial.json: items[10]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/shgdym/jingzhang-proof-commons/spatial.json: items[11]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/shgdym/jingzhang-proof-commons/spatial.json: items[12]: provisional spatial concept needs maintainer review before being treated as public-facing context"
+      ],
+      "proposal_files": [
+        "submissions/shgdym/jingzhang-proof-commons/proposal.md"
+      ],
+      "changelog_files": [
+        "submissions/shgdym/jingzhang-proof-commons/changelog.md"
+      ],
+      "changed_files": [
+        "submissions/shgdym/jingzhang-proof-commons/agent.json",
+        "submissions/shgdym/jingzhang-proof-commons/assets/figures/aerial-design-key.en.png",
+        "submissions/shgdym/jingzhang-proof-commons/assets/figures/aerial-design-key.png",
+        "submissions/shgdym/jingzhang-proof-commons/assets/figures/brand-landmarks.en.png",
+        "submissions/shgdym/jingzhang-proof-commons/assets/figures/brand-landmarks.png",
+        "submissions/shgdym/jingzhang-proof-commons/assets/figures/cases-mechanism.en.png",
+        "submissions/shgdym/jingzhang-proof-commons/assets/figures/cases-mechanism.png",
+        "submissions/shgdym/jingzhang-proof-commons/assets/figures/delivery-dashboard.en.png",
+        "submissions/shgdym/jingzhang-proof-commons/assets/figures/delivery-dashboard.png",
+        "submissions/shgdym/jingzhang-proof-commons/assets/figures/experience-ai-origin.png",
+        "submissions/shgdym/jingzhang-proof-commons/assets/figures/experience-dazhongsi.png",
+        "submissions/shgdym/jingzhang-proof-commons/assets/figures/experience-zhongzhi.png",
+        "submissions/shgdym/jingzhang-proof-commons/assets/figures/framework-overview.en.png",
+        "submissions/shgdym/jingzhang-proof-commons/assets/figures/framework-overview.png",
+        "submissions/shgdym/jingzhang-proof-commons/assets/figures/identity-guidelines.en.png",
+        "submissions/shgdym/jingzhang-proof-commons/assets/figures/identity-guidelines.png",
+        "submissions/shgdym/jingzhang-proof-commons/assets/figures/implementation-roadmap.en.png",
+        "submissions/shgdym/jingzhang-proof-commons/assets/figures/implementation-roadmap.png",
+        "submissions/shgdym/jingzhang-proof-commons/assets/figures/key-areas.en.png",
+        "submissions/shgdym/jingzhang-proof-commons/assets/figures/key-areas.png",
+        "submissions/shgdym/jingzhang-proof-commons/assets/figures/land-use-structure.en.png",
+        "submissions/shgdym/jingzhang-proof-commons/assets/figures/land-use-structure.png",
+        "submissions/shgdym/jingzhang-proof-commons/assets/figures/metrics-evidence.en.png",
+        "submissions/shgdym/jingzhang-proof-commons/assets/figures/metrics-evidence.png",
+        "submissions/shgdym/jingzhang-proof-commons/assets/figures/mobility-bluegreen.en.png",
+        "submissions/shgdym/jingzhang-proof-commons/assets/figures/mobility-bluegreen.png",
+        "submissions/shgdym/jingzhang-proof-commons/assets/figures/regional-ecosystem.en.png",
+        "submissions/shgdym/jingzhang-proof-commons/assets/figures/regional-ecosystem.png",
+        "submissions/shgdym/jingzhang-proof-commons/assets/figures/scenario-operations.en.png",
+        "submissions/shgdym/jingzhang-proof-commons/assets/figures/scenario-operations.png",
+        "submissions/shgdym/jingzhang-proof-commons/assets/figures/sections-accessibility.en.png",
+        "submissions/shgdym/jingzhang-proof-commons/assets/figures/sections-accessibility.png",
+        "submissions/shgdym/jingzhang-proof-commons/assets/figures/site-overview.png",
+        "submissions/shgdym/jingzhang-proof-commons/assets/figures/station-design-atlas.en.png",
+        "submissions/shgdym/jingzhang-proof-commons/assets/figures/station-design-atlas.png",
+        "submissions/shgdym/jingzhang-proof-commons/assets/figures/station-experiences.en.png",
+        "submissions/shgdym/jingzhang-proof-commons/assets/figures/station-experiences.png",
+        "submissions/shgdym/jingzhang-proof-commons/assumptions.json",
+        "submissions/shgdym/jingzhang-proof-commons/changelog.md",
+        "submissions/shgdym/jingzhang-proof-commons/compliance_matrix.json",
+        "submissions/shgdym/jingzhang-proof-commons/design_depth_matrix.json",
+        "submissions/shgdym/jingzhang-proof-commons/drawings/a0-boards.en.pdf",
+        "submissions/shgdym/jingzhang-proof-commons/drawings/a0-boards.pdf",
+        "submissions/shgdym/jingzhang-proof-commons/drawings/a3-booklet.en.pdf",
+        "submissions/shgdym/jingzhang-proof-commons/drawings/a3-booklet.pdf",
+        "submissions/shgdym/jingzhang-proof-commons/geometry/buildings.geojson",
+        "submissions/shgdym/jingzhang-proof-commons/geometry/constraints.geojson",
+        "submissions/shgdym/jingzhang-proof-commons/geometry/green_space.geojson",
+        "submissions/shgdym/jingzhang-proof-commons/geometry/key_areas.geojson",
+        "submissions/shgdym/jingzhang-proof-commons/geometry/land_use.geojson",
+        "submissions/shgdym/jingzhang-proof-commons/geometry/phasing.geojson",
+        "submissions/shgdym/jingzhang-proof-commons/geometry/public_space.geojson",
+        "submissions/shgdym/jingzhang-proof-commons/geometry/roads.geojson",
+        "submissions/shgdym/jingzhang-proof-commons/geometry/site_boundary.geojson",
+        "submissions/shgdym/jingzhang-proof-commons/manifest.json",
+        "submissions/shgdym/jingzhang-proof-commons/metrics.json",
+        "submissions/shgdym/jingzhang-proof-commons/proposal.en.md",
+        "submissions/shgdym/jingzhang-proof-commons/proposal.md",
+        "submissions/shgdym/jingzhang-proof-commons/report/copyright_statement.md",
+        "submissions/shgdym/jingzhang-proof-commons/report/narrative.md",
+        "submissions/shgdym/jingzhang-proof-commons/report/proposal.en.html",
+        "submissions/shgdym/jingzhang-proof-commons/report/proposal.html",
+        "submissions/shgdym/jingzhang-proof-commons/risk.json",
+        "submissions/shgdym/jingzhang-proof-commons/self_check.json",
+        "submissions/shgdym/jingzhang-proof-commons/sources.json",
+        "submissions/shgdym/jingzhang-proof-commons/spatial.json",
+        "submissions/shgdym/jingzhang-proof-commons/standard_matrix.json",
+        "submissions/shgdym/jingzhang-proof-commons/visual/index.en.html",
+        "submissions/shgdym/jingzhang-proof-commons/visual/index.html"
+      ],
+      "ai_package_stages": {
+        "submissions/shgdym/jingzhang-proof-commons": "formal"
+      },
+      "total_bytes": 40667048,
+      "maintainer_bypass": false
+    },
+    "stderr": ""
+  },
+  "spatial_review": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "stage": "formal",
+      "issues": [
+        {
+          "check_id": "KEY_AREA_PROVISIONAL",
+          "severity": "minor",
+          "target_file": "geometry/key_areas.geojson",
+          "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
+          "target_feature_id": "PROV-KEY-001",
+          "expected": null,
+          "actual": null
+        },
+        {
+          "check_id": "KEY_AREA_PROVISIONAL",
+          "severity": "minor",
+          "target_file": "geometry/key_areas.geojson",
+          "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
+          "target_feature_id": "PROV-KEY-002",
+          "expected": null,
+          "actual": null
+        },
+        {
+          "check_id": "KEY_AREA_PROVISIONAL",
+          "severity": "minor",
+          "target_file": "geometry/key_areas.geojson",
+          "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
+          "target_feature_id": "PROV-KEY-003",
+          "expected": null,
+          "actual": null
+        }
+      ],
+      "metrics": {
+        "site_area_sqm": 11412825.386,
+        "green_space_area_sqm": 1556615.191,
+        "public_space_area_sqm": 523914.223,
+        "building_footprint_area_sqm": 1250582.623,
+        "green_ratio": 0.136392,
+        "public_space_ratio": 0.045906
+      }
+    },
+    "stderr": ""
+  },
+  "visual_review": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "issues": [],
+      "metrics_seen": {
+        "site_area_sqm": 11412825.386,
+        "green_ratio": 0.136392,
+        "public_space_ratio": 0.045906
+      }
+    },
+    "stderr": ""
+  },
+  "professional_review": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "issues": [],
+      "summary": {
+        "standard_matrix_items": 6,
+        "design_depth_items": 15,
+        "known_metric_refs_required": 19,
+        "proposal_format_version": "2",
+        "evidence_contract": "section-anchors-plus-structured-audit",
+        "proposal_reference_counts": {
+          "source": 15,
+          "standard": 6,
+          "depth": 3,
+          "data": 10,
+          "metric": 14
+        }
+      }
+    },
+    "stderr": ""
+  },
+  "spatial_issue_ids": [
+    "KEY_AREA_PROVISIONAL",
+    "KEY_AREA_PROVISIONAL",
+    "KEY_AREA_PROVISIONAL"
+  ],
+  "visual_issue_ids": [],
+  "professional_issue_ids": [],
+  "missing_review_dependencies": [],
   "can_enter_formal_review": true,
   "package_type": "professional_design_package",
   "review_status": "formal-review-ready",
-  "persisted_at": "2026-08-12T03:10:42Z",
-  "source_commands": [
-    "python3.13 scripts/self_check_submission.py submissions/shgdym/jingzhang-proof-commons --repo-root . --pr-author shgdym --json",
-    "python3.13 scripts/score_submission.py submissions/shgdym/jingzhang-proof-commons/proposal.md --repo-root . --json --strict"
-  ],
+  "next_actions": [],
+  "schema_version": "0.1.0",
   "checks": [
     {
       "check_id": "DETERMINISTIC_VALIDATION",
       "result": "pass",
-      "severity": "blocking"
+      "severity": "blocking",
+      "target": "validate_local_submission.py",
+      "message": "deterministic_validation: PASS"
     },
     {
       "check_id": "SPATIAL_REVIEW",
       "result": "pass",
-      "severity": "major",
-      "note": "Three organizer-data warnings remain because key-area polygons are provisional."
+      "severity": "blocking",
+      "target": "spatial_review.py",
+      "message": "spatial_review: PASS"
     },
     {
-      "check_id": "VISUAL_REVIEW",
+      "check_id": "VISUAL_PACKAGING",
       "result": "pass",
-      "severity": "major"
+      "severity": "blocking",
+      "target": "visual_review.py",
+      "message": "visual_review: PASS"
     },
     {
-      "check_id": "PROFESSIONAL_EVIDENCE_REVIEW",
+      "check_id": "PROFESSIONAL_EVIDENCE",
       "result": "pass",
-      "severity": "major"
-    },
-    {
-      "check_id": "ADVISORY_DIMENSION_CHECK",
-      "result": "pass",
-      "severity": "info",
-      "note": "8 pass, 0 needs-work, 0 missing; advisory only, not a guaranteed jury score."
-    },
-    {
-      "check_id": "PROVISIONAL_GEOMETRY_DISCLOSURE",
-      "result": "pass",
-      "severity": "major",
-      "note": "Boundary and key areas remain provisional; statutory and engineering use is prohibited."
+      "severity": "blocking",
+      "target": "professional_review.py",
+      "message": "professional_review: PASS"
     }
-  ],
-  "full_report": {
-    "ok": true,
-    "submission_dir": "submissions/shgdym/jingzhang-proof-commons",
-    "pr_author": "shgdym",
-    "stage": "formal",
-    "deterministic_validation": {
-      "returncode": 0,
-      "ok": true,
-      "stdout": {
-        "ok": true,
-        "errors": [],
-        "warnings": [
-          "submissions/shgdym/jingzhang-proof-commons/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied",
-          "submissions/shgdym/jingzhang-proof-commons/spatial.json: items[0]: provisional spatial concept needs maintainer review before being treated as public-facing context",
-          "submissions/shgdym/jingzhang-proof-commons/spatial.json: items[1]: provisional spatial concept needs maintainer review before being treated as public-facing context",
-          "submissions/shgdym/jingzhang-proof-commons/spatial.json: items[2]: provisional spatial concept needs maintainer review before being treated as public-facing context",
-          "submissions/shgdym/jingzhang-proof-commons/spatial.json: items[3]: provisional spatial concept needs maintainer review before being treated as public-facing context",
-          "submissions/shgdym/jingzhang-proof-commons/spatial.json: items[4]: provisional spatial concept needs maintainer review before being treated as public-facing context",
-          "submissions/shgdym/jingzhang-proof-commons/spatial.json: items[5]: provisional spatial concept needs maintainer review before being treated as public-facing context",
-          "submissions/shgdym/jingzhang-proof-commons/spatial.json: items[6]: provisional spatial concept needs maintainer review before being treated as public-facing context",
-          "submissions/shgdym/jingzhang-proof-commons/spatial.json: items[7]: provisional spatial concept needs maintainer review before being treated as public-facing context",
-          "submissions/shgdym/jingzhang-proof-commons/spatial.json: items[8]: provisional spatial concept needs maintainer review before being treated as public-facing context",
-          "submissions/shgdym/jingzhang-proof-commons/spatial.json: items[9]: provisional spatial concept needs maintainer review before being treated as public-facing context",
-          "submissions/shgdym/jingzhang-proof-commons/spatial.json: items[10]: provisional spatial concept needs maintainer review before being treated as public-facing context",
-          "submissions/shgdym/jingzhang-proof-commons/spatial.json: items[11]: provisional spatial concept needs maintainer review before being treated as public-facing context",
-          "submissions/shgdym/jingzhang-proof-commons/spatial.json: items[12]: provisional spatial concept needs maintainer review before being treated as public-facing context"
-        ],
-        "proposal_files": [
-          "submissions/shgdym/jingzhang-proof-commons/proposal.md"
-        ],
-        "changelog_files": [
-          "submissions/shgdym/jingzhang-proof-commons/changelog.md"
-        ],
-        "changed_files": [
-          "submissions/shgdym/jingzhang-proof-commons/agent.json",
-          "submissions/shgdym/jingzhang-proof-commons/assets/figures/aerial-design-key.en.png",
-          "submissions/shgdym/jingzhang-proof-commons/assets/figures/aerial-design-key.png",
-          "submissions/shgdym/jingzhang-proof-commons/assets/figures/brand-landmarks.en.png",
-          "submissions/shgdym/jingzhang-proof-commons/assets/figures/brand-landmarks.png",
-          "submissions/shgdym/jingzhang-proof-commons/assets/figures/cases-mechanism.en.png",
-          "submissions/shgdym/jingzhang-proof-commons/assets/figures/cases-mechanism.png",
-          "submissions/shgdym/jingzhang-proof-commons/assets/figures/delivery-dashboard.en.png",
-          "submissions/shgdym/jingzhang-proof-commons/assets/figures/delivery-dashboard.png",
-          "submissions/shgdym/jingzhang-proof-commons/assets/figures/experience-ai-origin.png",
-          "submissions/shgdym/jingzhang-proof-commons/assets/figures/experience-dazhongsi.png",
-          "submissions/shgdym/jingzhang-proof-commons/assets/figures/experience-zhongzhi.png",
-          "submissions/shgdym/jingzhang-proof-commons/assets/figures/framework-overview.en.png",
-          "submissions/shgdym/jingzhang-proof-commons/assets/figures/framework-overview.png",
-          "submissions/shgdym/jingzhang-proof-commons/assets/figures/identity-guidelines.en.png",
-          "submissions/shgdym/jingzhang-proof-commons/assets/figures/identity-guidelines.png",
-          "submissions/shgdym/jingzhang-proof-commons/assets/figures/implementation-roadmap.en.png",
-          "submissions/shgdym/jingzhang-proof-commons/assets/figures/implementation-roadmap.png",
-          "submissions/shgdym/jingzhang-proof-commons/assets/figures/key-areas.en.png",
-          "submissions/shgdym/jingzhang-proof-commons/assets/figures/key-areas.png",
-          "submissions/shgdym/jingzhang-proof-commons/assets/figures/land-use-structure.en.png",
-          "submissions/shgdym/jingzhang-proof-commons/assets/figures/land-use-structure.png",
-          "submissions/shgdym/jingzhang-proof-commons/assets/figures/metrics-evidence.en.png",
-          "submissions/shgdym/jingzhang-proof-commons/assets/figures/metrics-evidence.png",
-          "submissions/shgdym/jingzhang-proof-commons/assets/figures/mobility-bluegreen.en.png",
-          "submissions/shgdym/jingzhang-proof-commons/assets/figures/mobility-bluegreen.png",
-          "submissions/shgdym/jingzhang-proof-commons/assets/figures/regional-ecosystem.en.png",
-          "submissions/shgdym/jingzhang-proof-commons/assets/figures/regional-ecosystem.png",
-          "submissions/shgdym/jingzhang-proof-commons/assets/figures/scenario-operations.en.png",
-          "submissions/shgdym/jingzhang-proof-commons/assets/figures/scenario-operations.png",
-          "submissions/shgdym/jingzhang-proof-commons/assets/figures/sections-accessibility.en.png",
-          "submissions/shgdym/jingzhang-proof-commons/assets/figures/sections-accessibility.png",
-          "submissions/shgdym/jingzhang-proof-commons/assets/figures/site-overview.png",
-          "submissions/shgdym/jingzhang-proof-commons/assets/figures/station-design-atlas.en.png",
-          "submissions/shgdym/jingzhang-proof-commons/assets/figures/station-design-atlas.png",
-          "submissions/shgdym/jingzhang-proof-commons/assets/figures/station-experiences.en.png",
-          "submissions/shgdym/jingzhang-proof-commons/assets/figures/station-experiences.png",
-          "submissions/shgdym/jingzhang-proof-commons/assumptions.json",
-          "submissions/shgdym/jingzhang-proof-commons/changelog.md",
-          "submissions/shgdym/jingzhang-proof-commons/compliance_matrix.json",
-          "submissions/shgdym/jingzhang-proof-commons/design_depth_matrix.json",
-          "submissions/shgdym/jingzhang-proof-commons/drawings/a0-boards.en.pdf",
-          "submissions/shgdym/jingzhang-proof-commons/drawings/a0-boards.pdf",
-          "submissions/shgdym/jingzhang-proof-commons/drawings/a3-booklet.en.pdf",
-          "submissions/shgdym/jingzhang-proof-commons/drawings/a3-booklet.pdf",
-          "submissions/shgdym/jingzhang-proof-commons/geometry/buildings.geojson",
-          "submissions/shgdym/jingzhang-proof-commons/geometry/constraints.geojson",
-          "submissions/shgdym/jingzhang-proof-commons/geometry/green_space.geojson",
-          "submissions/shgdym/jingzhang-proof-commons/geometry/key_areas.geojson",
-          "submissions/shgdym/jingzhang-proof-commons/geometry/land_use.geojson",
-          "submissions/shgdym/jingzhang-proof-commons/geometry/phasing.geojson",
-          "submissions/shgdym/jingzhang-proof-commons/geometry/public_space.geojson",
-          "submissions/shgdym/jingzhang-proof-commons/geometry/roads.geojson",
-          "submissions/shgdym/jingzhang-proof-commons/geometry/site_boundary.geojson",
-          "submissions/shgdym/jingzhang-proof-commons/manifest.json",
-          "submissions/shgdym/jingzhang-proof-commons/metrics.json",
-          "submissions/shgdym/jingzhang-proof-commons/proposal.en.md",
-          "submissions/shgdym/jingzhang-proof-commons/proposal.md",
-          "submissions/shgdym/jingzhang-proof-commons/report/copyright_statement.md",
-          "submissions/shgdym/jingzhang-proof-commons/report/narrative.md",
-          "submissions/shgdym/jingzhang-proof-commons/report/proposal.en.html",
-          "submissions/shgdym/jingzhang-proof-commons/report/proposal.html",
-          "submissions/shgdym/jingzhang-proof-commons/risk.json",
-          "submissions/shgdym/jingzhang-proof-commons/self_check.json",
-          "submissions/shgdym/jingzhang-proof-commons/sources.json",
-          "submissions/shgdym/jingzhang-proof-commons/spatial.json",
-          "submissions/shgdym/jingzhang-proof-commons/standard_matrix.json",
-          "submissions/shgdym/jingzhang-proof-commons/visual/index.en.html",
-          "submissions/shgdym/jingzhang-proof-commons/visual/index.html"
-        ],
-        "ai_package_stages": {
-          "submissions/shgdym/jingzhang-proof-commons": "formal"
-        },
-        "total_bytes": 40671011,
-        "maintainer_bypass": false
-      },
-      "stderr": ""
-    },
-    "spatial_review": {
-      "returncode": 0,
-      "ok": true,
-      "stdout": {
-        "ok": true,
-        "stage": "formal",
-        "issues": [
-          {
-            "check_id": "KEY_AREA_PROVISIONAL",
-            "severity": "minor",
-            "target_file": "geometry/key_areas.geojson",
-            "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
-            "target_feature_id": "PROV-KEY-001",
-            "expected": null,
-            "actual": null
-          },
-          {
-            "check_id": "KEY_AREA_PROVISIONAL",
-            "severity": "minor",
-            "target_file": "geometry/key_areas.geojson",
-            "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
-            "target_feature_id": "PROV-KEY-002",
-            "expected": null,
-            "actual": null
-          },
-          {
-            "check_id": "KEY_AREA_PROVISIONAL",
-            "severity": "minor",
-            "target_file": "geometry/key_areas.geojson",
-            "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
-            "target_feature_id": "PROV-KEY-003",
-            "expected": null,
-            "actual": null
-          }
-        ],
-        "metrics": {
-          "site_area_sqm": 11412825.386,
-          "green_space_area_sqm": 1556615.191,
-          "public_space_area_sqm": 523914.223,
-          "building_footprint_area_sqm": 1250582.623,
-          "green_ratio": 0.136392,
-          "public_space_ratio": 0.045906
-        }
-      },
-      "stderr": ""
-    },
-    "visual_review": {
-      "returncode": 0,
-      "ok": true,
-      "stdout": {
-        "ok": true,
-        "issues": [],
-        "metrics_seen": {
-          "site_area_sqm": 11412825.386,
-          "green_ratio": 0.136392,
-          "public_space_ratio": 0.045906
-        }
-      },
-      "stderr": ""
-    },
-    "professional_review": {
-      "returncode": 0,
-      "ok": true,
-      "stdout": {
-        "ok": true,
-        "issues": [],
-        "summary": {
-          "standard_matrix_items": 6,
-          "design_depth_items": 15,
-          "known_metric_refs_required": 19,
-          "proposal_format_version": "2",
-          "evidence_contract": "section-anchors-plus-structured-audit",
-          "proposal_reference_counts": {
-            "source": 15,
-            "standard": 6,
-            "depth": 3,
-            "data": 10,
-            "metric": 14
-          }
-        }
-      },
-      "stderr": ""
-    },
-    "spatial_issue_ids": [
-      "KEY_AREA_PROVISIONAL",
-      "KEY_AREA_PROVISIONAL",
-      "KEY_AREA_PROVISIONAL"
-    ],
-    "visual_issue_ids": [],
-    "professional_issue_ids": [],
-    "missing_review_dependencies": [],
-    "can_enter_formal_review": true,
-    "package_type": "professional_design_package",
-    "review_status": "formal-review-ready",
-    "next_actions": []
-  },
-  "advisory_score_report": {
-    "proposal_path": "submissions/shgdym/jingzhang-proof-commons/proposal.md",
-    "ready": true,
-    "summary": {
-      "pass": 8,
-      "needs-work": 0,
-      "missing": 0,
-      "manual-review": 0
-    },
-    "metadata_missing": [],
-    "required_sections_missing": [],
-    "matched_sources": [
-      {
-        "id": "brief-public-brief",
-        "citation": "brief/public-brief.md"
-      },
-      {
-        "id": "brief-public-boundary",
-        "citation": "brief/README.md"
-      }
-    ],
-    "unmatched_reference_lines": [],
-    "checks": [
-      {
-        "dimension": "任务书相关性",
-        "status": "pass",
-        "messages": [
-          "命中 7 个任务关键词；建议明确回应百年京张、海淀、AI 创新带和城市治理/空间议题。"
-        ]
-      },
-      {
-        "dimension": "原创性",
-        "status": "pass",
-        "messages": [
-          "核心概念具备一定篇幅，并包含机制、体系或场景表达。"
-        ]
-      },
-      {
-        "dimension": "AI 与城市规划创新性",
-        "status": "pass",
-        "messages": [
-          "AI 能力与城市空间、治理或公共服务议题已有结合。"
-        ]
-      },
-      {
-        "dimension": "可实施性",
-        "status": "pass",
-        "messages": [
-          "落地路径包含阶段、参与主体和可衡量指标。"
-        ]
-      },
-      {
-        "dimension": "公共利益",
-        "status": "pass",
-        "messages": [
-          "命中 6 个公共利益相关词；建议说明居民、青年、企业、高校、游客和弱势群体的受益与影响。"
-        ]
-      },
-      {
-        "dimension": "风险合规",
-        "status": "pass",
-        "messages": [
-          "风险章节已覆盖公开边界、隐私、版权、复核或合规议题。"
-        ]
-      },
-      {
-        "dimension": "表达完整度",
-        "status": "pass",
-        "messages": [
-          "结构完整，正文长度达到基础自检阈值。"
-        ]
-      },
-      {
-        "dimension": "公开资料引用",
-        "status": "pass",
-        "messages": [
-          "已引用公开资料索引内资料。"
-        ]
-      }
-    ]
-  }
+  ]
 }
