@@ -57,16 +57,16 @@ Official boundaries, focus-area polygons, statutory controls, road lines, rail e
 
 |ID|Scene|Location|Users|Data minimisation|AI|Human review|Suggested operator|Risk|Exit / no-digital fallback|KPI|
 |---|---|---|---|---|---|---|---|---|---|---|
-|S01|开源发布厅|AI原点社区|开发者、高校|公开活动登记；聚合人数|内容检索与同传|主持人发布确认|社区运营方（建议）|误引/泄密|一键撤稿；线下议程|贡献项目数/纠错时长|
-|S02|安全治理沙盒|众智园|企业、监管、公众|授权测试集；最小日志|红队测试与解释|安全官放行|联合实验室（建议）|模型越权|隔离环境；立即停测|问题闭环率|
-|S03|端侧算力驿站|公共服务节点|居民、初创团队|设备状态；不采轨迹|边缘推理与排队|值守人员复核|设施运营方（建议）|能耗/滥用|限额；物理断开|能耗/服务可用率|
-|S04|AI慢行导航|京张主脊|所有步行者|匿名计数；人工报障|无障碍路径建议|人工热线兜底|公园运维（建议）|误导/数字排斥|纸图、编号导视|绕行时间/投诉|
-|S05|国际路演客厅|大钟寺|企业、访客|授权演示材料|同传与媒资编目|主办方审稿|活动运营方（建议）|版权/误译|撤下素材；人工翻译|转化线索/纠错|
-|S06|清河低碳创新廊|众智园|居民、研发人员|环境传感；不采身份|雨洪与能耗提示|运维确认|园区运维（建议）|传感失准|关闭自动提示|舒适时长/能耗|
-|S07|近校成果转化街|AI原点社区|师生、创业者|主动提交项目资料|服务匹配|法务与导师复核|转化平台（建议）|利益冲突|人工选择/退出|转化周期|
-|S08|数据要素会客厅|大钟寺|企业、公众|仅演示获授权数据|审计链可视化|合规官审批|平台方（建议）|授权失效|立即下架|授权完备率|
-|S09|AI生活服务样板街|小月河翼|老人、儿童、残障者|最少必要服务信息|辅助问答与预约|人工窗口最终确认|社区服务方（建议）|歧视/错误建议|无手机窗口；退出权|人工接管率/满意度|
-|S10|全球AI活动周路线|一带三核|公众、国际访客|票务最小字段；聚合客流|分流与多语导览|指挥台复核|联合主办方（建议）|拥挤/噪声|分区关闭/居民热线|峰值密度/复用率|
+|S01|Open Release Hall|AI Origin|developers, universities|public registration; aggregate counts|retrieval + interpretation|host release check|community operator (proposed)|misquote / leakage|withdrawal + offline agenda|projects / correction time|
+|S02|Safety Sandbox|Zhongzhiyuan|firms, regulators, public|authorised test set; minimal logs|red-team + explanation|safety officer release|joint lab (proposed)|model overreach|isolation + immediate stop|closure rate|
+|S03|Edge Compute Station|service nodes|residents, startups|device status; no tracking|edge inference + queue|staff review|facility operator (proposed)|energy / misuse|quota + physical disconnect|energy / uptime|
+|S04|Accessible Navigation|civic spine|all walkers|anonymous counts; manual reports|route assistance|staffed hotline|park ops (proposed)|misdirection / exclusion|paper map + numbered signs|detour / complaints|
+|S05|Global Demo Forum|Dazhongsi|firms, visitors|authorised demo assets|interpretation + media index|host editorial check|event operator (proposed)|rights / mistranslation|remove asset + human translator|leads / corrections|
+|S06|Low-carbon River Walk|Zhongzhiyuan|residents, researchers|environment sensors; no identity|runoff + energy prompts|maintenance check|park ops (proposed)|sensor error|disable automation|comfort / energy|
+|S07|Campus Transfer Street|AI Origin|students, founders|voluntary project data|service matching|legal + mentor review|transfer platform (proposed)|conflict of interest|human choice + exit|transfer time|
+|S08|Data Commons Forum|Dazhongsi|firms, public|authorised demo data only|audit-chain display|compliance approval|platform (proposed)|expired consent|immediate takedown|authorisation completeness|
+|S09|Inclusive Service Street|Xiaoyue wing|older people, children, disabled users|minimum service data|assisted Q&A + booking|staffed window confirms|community service (proposed)|bias / bad advice|no-phone window + exit|human takeover / satisfaction|
+|S10|Global AI Week Route|spine + anchors|public, global visitors|minimal ticket fields; aggregate flow|routing + multilingual guide|control desk review|joint host (proposed)|crowding / noise|section closure + hotline|peak density / reuse|
 
 ## Six-project delivery matrix
 
