@@ -363,11 +363,14 @@
         "drawings/a0-boards.pdf"
       ],
       "visual_sections": [
-        "城市更新"
+        "城市更新与三个项目级核验点"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
-        "SITE-PACKAGE"
+        "SITE-PACKAGE",
+        "SRC-043",
+        "SRC-045",
+        "SRC-047"
       ],
       "assumption_ids": [
         "A-CONTROLS-001",
@@ -397,12 +400,16 @@
         "drawings/a0-boards.pdf"
       ],
       "visual_sections": [
-        "交通与市政拓扑"
+        "交通目录、项目级站城控制与市政拓扑"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
         "SRC-016",
-        "SRC-030"
+        "SRC-027",
+        "SRC-029",
+        "SRC-030",
+        "SRC-032",
+        "SRC-043"
       ],
       "assumption_ids": [
         "A-CONTROLS-001",
@@ -537,12 +544,14 @@
         "drawings/a0-boards.pdf"
       ],
       "visual_sections": [
-        "停机庭"
+        "停机庭与学北园项目级核验点"
       ],
       "source_ids": [
         "SRC-019",
         "SRC-024",
-        "SRC-038"
+        "SRC-038",
+        "SRC-046",
+        "SRC-047"
       ],
       "assumption_ids": [
         "A-PROVISIONAL-GEOMETRY-001",
@@ -576,12 +585,15 @@
         "drawings/a0-boards.pdf"
       ],
       "visual_sections": [
-        "人间时站"
+        "人间时站与AI原点项目/角色核验点"
       ],
       "source_ids": [
         "SRC-007",
+        "SRC-013",
         "SRC-016",
-        "SRC-018"
+        "SRC-018",
+        "SRC-045",
+        "SRC-048"
       ],
       "assumption_ids": [
         "A-PROVISIONAL-GEOMETRY-001",
@@ -616,12 +628,14 @@
         "drawings/a0-boards.pdf"
       ],
       "visual_sections": [
-        "有时门"
+        "有时门与大钟寺项目级站城控制"
       ],
       "source_ids": [
         "SRC-016",
         "SRC-023",
-        "SRC-034"
+        "SRC-027",
+        "SRC-034",
+        "SRC-043"
       ],
       "assumption_ids": [
         "A-PROVISIONAL-GEOMETRY-001",
@@ -854,17 +868,20 @@
         "drawings/a0-boards.pdf"
       ],
       "visual_sections": [
-        "三工作包与年度闭环"
+        "三工作包、年度闭环与特定角色/统筹入口"
       ],
       "source_ids": [
         "AGENT-TASKBOOK",
         "SRC-008",
+        "SRC-012",
         "SRC-014",
         "SRC-022",
+        "SRC-025",
         "SRC-039",
         "SRC-040",
         "SRC-041",
-        "SRC-042"
+        "SRC-042",
+        "SRC-048"
       ],
       "assumption_ids": [
         "ASM-011",
