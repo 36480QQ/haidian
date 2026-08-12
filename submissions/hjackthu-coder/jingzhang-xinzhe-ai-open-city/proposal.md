@@ -126,3 +126,45 @@ AI原点社区定位为“近校开源成果转化社区”。空间上缝合校
 专业案例库仅作为方法与表达参照：总部园区用于研究研发组织和共享空间，城市设计征集用于研究总图和版式层级，低碳与未来社区资料用于研究蓝绿基础设施和运营指标。任何未确认许可的材料均不在公开包中再分发。
 
 本方案的机器审计入口为geometry、metrics、assumptions、sources和三类矩阵；人类阅读入口为中英文报告、五张图、A3文册、A0展板及离线HTML。二者共同构成可读、可复算、可追责的开源城市设计包 [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]。
+
+<!-- V2-VISUAL-EVIDENCE:START -->
+
+## V2视觉证据与空间原型
+
+四张效果图用于检验方案的公共空间气质、人物活动与材料语言，均为基于策略的概念性可视化，不代表现状精确透视、法定总平面或工程设计。总体鸟瞰把三处节点压缩进一幅叙事画面，仅用于说明“一轴三区”的协同关系；可审查的空间边界、面积与比例仍以GeoJSON和metrics.json为准。
+
+![京张新辙总体概念鸟瞰](assets/media/overall-vision.webp)
+
+![创新生态与区域协同](assets/figures/innovation-ecosystem.png)
+
+![三层范围与证据边界](assets/figures/scope-evidence.png)
+
+### 学北园：全栈验证公园
+
+学北园以开放测试庭院、清河创新界面、蓝色公共雨棚和安静研发环构成“可见但不扰民”的验证环境。效果图中的中央轨道明确为退役铁路遗存景观；机器人测试采用预约、分区、显著告知、人工安全员与可退出路径，避免把公共空间变成无边界试验场。
+
+![学北园全栈验证公园概念场景](assets/media/xuebeiyuan-test-commons.webp)
+
+![学北园空间原型与运营剖面](assets/figures/xuebeiyuan-detail.png)
+
+### AI原点：开源转化环
+
+AI原点把红砖存量、开源发布厅、成果转化街、人才客厅和全天生活服务组织成一公里步行创新环。发布活动并非每日满负荷状态，平日以社区服务、共享实验和小型协作为主；轨道遗存与雨水花园共同形成可识别的公共底盘。
+
+![AI原点开源转化环概念场景](assets/media/ai-origin-agora.webp)
+
+![AI原点空间原型与运营剖面](assets/figures/ai-origin-detail.png)
+
+### 大钟寺：全球路演公地
+
+大钟寺通过四象限步行环、朱红铁路灯廊、路演公地和遗产夜游线连接轨道通勤与夜间文化。灯廊被定义为可逆轻型连接设施，跨线、消防、无障碍、电梯与地下空间均须另行开展专项工程论证。
+
+![大钟寺全球路演公地概念场景](assets/media/dazhongsi-rail-lantern.webp)
+
+![大钟寺空间原型与运营剖面](assets/figures/dazhongsi-detail.png)
+
+![十二个AI服务蓝图](assets/figures/scenario-service-blueprints.png)
+
+![六个先导包与责任台账](assets/figures/phasing-delivery.png)
+
+<!-- V2-VISUAL-EVIDENCE:END -->

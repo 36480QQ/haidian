@@ -74,3 +74,45 @@ The first risk is incomplete official geometry, building survey, ownership, road
 ## References
 
 Primary references are the official call, repository site package, Agent taskbook, local snapshots of mandatory standards, the public source registry, and verifiable Beijing government information. Publisher, URL or repository path, retrieval date, permitted use, and limitations are recorded in sources.json [source:OFFICIAL-ANNOUNCEMENT] [source:SOURCE-REGISTRY]. The professional case library informs method only and is not redistributed. Human-readable outputs and the machine-audit layer together form a reviewable, recalculable, and accountable open urban-design package [standard:PROJECT-OFFICIAL-ANNOUNCEMENT].
+
+<!-- V2-VISUAL-EVIDENCE:START -->
+
+## V2 Visual Evidence and Spatial Prototypes
+
+Four concept renders test public-space character, everyday users, and material language. They are not accurate existing-condition views, statutory plans, or engineering designs. The overall perspective compresses three districts into one narrative image to explain corridor coordination; GeoJSON and metrics.json remain the auditable sources for geometry and quantities.
+
+![Overall concept perspective](assets/media/overall-vision.webp)
+
+![Innovation ecosystem and regional coordination](assets/figures/innovation-ecosystem.en.png)
+
+![Three scope levels and evidence boundary](assets/figures/scope-evidence.en.png)
+
+### Xuebeiyuan: Blue Test Commons
+
+Open testing courtyards, the Qinghe interface, a restrained blue civic canopy, and a quiet R&D loop make validation visible without overwhelming daily life. The central track in the render is a retired heritage landscape. Robot tests use booking, zoned access, visible notice, human safety staff, and opt-out paths.
+
+![Xuebeiyuan concept scene](assets/media/xuebeiyuan-test-commons.webp)
+
+![Xuebeiyuan spatial prototype and operating section](assets/figures/xuebeiyuan-detail.en.png)
+
+### AI Origin: Open-Source Agora
+
+Retained brick halls, an open-source release venue, a transfer street, a talent commons, and all-day services form a one-kilometer walking loop. Event-day density is not presented as an everyday condition; regular operation prioritizes community services, shared labs, and small-group collaboration.
+
+![AI Origin concept scene](assets/media/ai-origin-agora.webp)
+
+![AI Origin spatial prototype and operating section](assets/figures/ai-origin-detail.en.png)
+
+### Dazhongsi: Rail Lantern Forum
+
+A four-quadrant walking loop, a vermilion rail-lantern arcade, a roadshow commons, and a heritage-night route connect transit with public exchange. The arcade is a reversible lightweight connector. Rail crossing, fire, accessibility, lifts, and underground-space feasibility require specialist engineering review.
+
+![Dazhongsi concept scene](assets/media/dazhongsi-rail-lantern.webp)
+
+![Dazhongsi spatial prototype and operating section](assets/figures/dazhongsi-detail.en.png)
+
+![Twelve AI service blueprints](assets/figures/scenario-service-blueprints.en.png)
+
+![Six pilot packages and responsibility ledger](assets/figures/phasing-delivery.en.png)
+
+<!-- V2-VISUAL-EVIDENCE:END -->

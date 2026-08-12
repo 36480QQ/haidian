@@ -14,7 +14,7 @@
     "model_family": "gpt",
     "model_detail": "Codex collaborative urban-design agent"
   },
-  "generated_at": "2026-08-12T04:36:17.440455Z",
+  "generated_at": "2026-08-12T09:54:24.882981Z",
   "files": [
     {
       "path": "agent.json",
@@ -101,7 +101,7 @@
       "path": "assets/media/cover.webp",
       "role": "media_poster",
       "required": true,
-      "sha256": "918c9177f54d2b4fc30acd3ac1e12beba8feb30b870dbf8cabc1584fd26ffded",
+      "sha256": "19384cea059d32bc75f9f109a6775a97ffa234ff06722b43e45d072b5fa12971",
       "language": "neutral"
     },
     {
@@ -126,7 +126,7 @@
       "path": "drawings/a0-boards.en.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "1abf64aff3aaee7b68fa2a0ccb54ed0833385dca69b0fe3e66e8a010efb97dc2",
+      "sha256": "46ec2db73325f9bec358b74b4580d749c865617d4a4de7581389ccd392a1068f",
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf"
     },
@@ -134,14 +134,14 @@
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "123b9f230729de13cf17a3546f6438fb1596839dd47ae53c9498e84ae2ffb6c2",
+      "sha256": "757c8897e86d1420018d8063f324c40563f77b971ce45a6c1928ae6ff79fa4a8",
       "language": "zh"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "fa7bafcade32852f023ac695b9cd252364434eb8b55e1207aa8d79c795b6c265",
+      "sha256": "6107ab1d1e4b36aec26dcbe2d27589e74815cf8f184a8076a3a83966253d0f97",
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf"
     },
@@ -149,7 +149,7 @@
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "ddf1306a9b903a6aaa49a5c0b705668d2d24d2b228e0d2e60ac0903e2e2abe5b",
+      "sha256": "9003fb199fedc0707ff153e8bbdc3fc93f6029de51412cd599b48548966a529c",
       "language": "zh"
     },
     {
@@ -221,7 +221,7 @@
       "path": "proposal.en.md",
       "role": "narrative",
       "required": true,
-      "sha256": "25644ca20237ee10f4d1437019b3957f9292cc65bac81554d2ac09366874ddbf",
+      "sha256": "5fc75f32fded5d59c7ec024a3a271b7b55a5a19255df80404ed895a9f33fd77b",
       "language": "en",
       "translation_of": "proposal.md"
     },
@@ -229,14 +229,14 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "d6beaffc08dfe5eed41e38daee05237e7389907643cd9cb4186b3786ed2627bb",
+      "sha256": "025422644a34c3427f4b1fae9a30c1313de32ef683e66bb48295527cda19ccde",
       "language": "zh"
     },
     {
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "9a7f2d8d233aec385ebe497c9e630f663c820e594d3ae993275c6d70ed010595"
+      "sha256": "9596ebebb83ede229087eaa00a4dd7501b911fc21e5d2f599e70e16c8d1fe6f3"
     },
     {
       "path": "report/narrative.md",
@@ -248,7 +248,7 @@
       "path": "report/proposal.en.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "72d2c054d8202068823959ebe45594f3d584ffec7be4bbb4fec20cd8eb188636",
+      "sha256": "4c7261fad1046b79dc28052096fa86ce3b4e684c266a1ebd2c4266e616832d69",
       "language": "en",
       "translation_of": "report/proposal.html"
     },
@@ -256,14 +256,14 @@
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "2518fd91077eef018a47f47a971d8de08470a93231a9c905ec1577b218018af1",
+      "sha256": "4df32352d58d58b0a624a1f90f20c8bbdbd320b163d31280dd4d8eb923383c01",
       "language": "zh"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "bf84c1d370a1e0c30cc7203b53510a0ec52e2ceba1e3d7bf43903b1f39e7c210"
+      "sha256": "88ecedaa3b26424671204c9aafb37a918ad6f883e4d4d55bf253324b33a81672"
     },
     {
       "path": "sources.json",
@@ -281,7 +281,7 @@
       "path": "visual/index.en.html",
       "role": "visualization",
       "required": true,
-      "sha256": "b3a885bb70edc0ecc01214699e96ee7b417aa5f9f76f40e63badd5d27179fe58",
+      "sha256": "f1fc5e25157f0548c0bba4416f2a5b906748a3838757a5af5b377b1754650273",
       "language": "en",
       "translation_of": "visual/index.html"
     },
@@ -289,8 +289,200 @@
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
-      "sha256": "54ffeb38fa4d6e981b98d89e2c817dc4aa8faf6b162be0489d7f4050a3d2cc21",
+      "sha256": "6125dcaa5b9006d1358583af660d55cebc0bcd7c8d68a05c6f0e4ed33ff80d99",
       "language": "zh"
+    },
+    {
+      "path": "assets/figures/innovation-ecosystem.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "zh",
+      "sha256": "7c7098abb861d055a876a713419d2408360f0321631cde238a45c4f504708a1c"
+    },
+    {
+      "path": "assets/figures/innovation-ecosystem.en.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "en",
+      "translation_of": "assets/figures/innovation-ecosystem.png",
+      "sha256": "68a93e1524a0a8b7b9c9d804f639b2176bea0cffe2096933fed0db2701db1313"
+    },
+    {
+      "path": "assets/figures/scope-evidence.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "zh",
+      "sha256": "fcc7e3b62a3e41ff93ec72f157baf594739e8864798114bdc8fa8cad756f5e0e"
+    },
+    {
+      "path": "assets/figures/scope-evidence.en.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "en",
+      "translation_of": "assets/figures/scope-evidence.png",
+      "sha256": "41a65e9c602d1edb9a37b3dca9b48051eb00c71fa136787100c4f1c58a0b4a02"
+    },
+    {
+      "path": "assets/figures/xuebeiyuan-detail.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "zh",
+      "sha256": "949490d1ce34907fa737206b1c926fdef96441e665ef0689a9fa7911ad7f4d11"
+    },
+    {
+      "path": "assets/figures/xuebeiyuan-detail.en.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "en",
+      "translation_of": "assets/figures/xuebeiyuan-detail.png",
+      "sha256": "e7e056a4fb6ca474d36e8021202493ec203cc3f57e15a1e66f9a555609ce7969"
+    },
+    {
+      "path": "assets/figures/ai-origin-detail.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "zh",
+      "sha256": "812b5d2556124e475aaca9026d32349027f519eb2ace5c2d721e4b9f70ee988b"
+    },
+    {
+      "path": "assets/figures/ai-origin-detail.en.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "en",
+      "translation_of": "assets/figures/ai-origin-detail.png",
+      "sha256": "dbc9930ac2f6acf311e676f2b92f357a972bd762a116d8f998b163e27642b231"
+    },
+    {
+      "path": "assets/figures/dazhongsi-detail.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "zh",
+      "sha256": "db58d1bbf5fbfa1ae5c84073363887d585414575b01ba15865c1d1dd8905c5da"
+    },
+    {
+      "path": "assets/figures/dazhongsi-detail.en.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "en",
+      "translation_of": "assets/figures/dazhongsi-detail.png",
+      "sha256": "bb10b1ce95152ec6d6443bd333dea32cea2deb2d4783ed4752651ba77111544f"
+    },
+    {
+      "path": "assets/figures/scenario-service-blueprints.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "zh",
+      "sha256": "524e77551842d7636421740694d0933250bef58137dcd6c1cd03f2351c27296d"
+    },
+    {
+      "path": "assets/figures/scenario-service-blueprints.en.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "en",
+      "translation_of": "assets/figures/scenario-service-blueprints.png",
+      "sha256": "ba4cf90fec63ff36efcf77b20854546a32713305b154384eec254b134e2996dc"
+    },
+    {
+      "path": "assets/figures/phasing-delivery.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "zh",
+      "sha256": "f4618cf93125ea0bdb6aff5c088188f972bb36b42e07543785c4e13534a60d87"
+    },
+    {
+      "path": "assets/figures/phasing-delivery.en.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "en",
+      "translation_of": "assets/figures/phasing-delivery.png",
+      "sha256": "3e1d9b87e50acb1234414233e6b57c8f4478e84258e6a96b47ec60737d4f33e4"
+    },
+    {
+      "path": "assets/media/overall-vision.webp",
+      "role": "media_poster",
+      "required": true,
+      "language": "neutral",
+      "sha256": "19384cea059d32bc75f9f109a6775a97ffa234ff06722b43e45d072b5fa12971"
+    },
+    {
+      "path": "assets/media/xuebeiyuan-test-commons.webp",
+      "role": "media_poster",
+      "required": true,
+      "language": "neutral",
+      "sha256": "959086ed096bfb67533e517c44616e4dd7a198cb233cf9090ca7da2f9f476e63"
+    },
+    {
+      "path": "assets/media/ai-origin-agora.webp",
+      "role": "media_poster",
+      "required": true,
+      "language": "neutral",
+      "sha256": "52ad327fc0cb0ba6f9407c6c41b229ea34ef8ce0e4d38b98edb9d95e79a5addb"
+    },
+    {
+      "path": "assets/media/dazhongsi-rail-lantern.webp",
+      "role": "media_poster",
+      "required": true,
+      "language": "neutral",
+      "sha256": "7a8d369a6f268701c32a81897e648102a4593e8d21a835da4b62362e0d8192fa"
+    },
+    {
+      "path": "assets/media/jingzhang-design-film.vtt",
+      "role": "caption_track",
+      "required": true,
+      "language": "zh",
+      "sha256": "4e5ec814f561d469b30eeeff026694abf3809ecfe9d310c50c702a4d8f679426"
+    },
+    {
+      "path": "assets/media/jingzhang-design-film.mp4",
+      "role": "video",
+      "required": true,
+      "language": "zh",
+      "title_zh": "京张新辙54秒设计短片",
+      "title_en": "Jingzhang New Track 54-second design film",
+      "description_zh": "以总体结构、三处城市原型和分期实施讲述开放创新带。",
+      "description_en": "A short narrative of the corridor structure, three urban prototypes, and phased delivery.",
+      "poster": "assets/media/cover.webp",
+      "caption": "assets/media/jingzhang-design-film.vtt",
+      "transcript": "assets/media/jingzhang-design-film-transcript.md",
+      "sha256": "b57bc76bb8de1eba78ac944a4d9be934047ab633274c990eaaba259429eecdc6"
+    },
+    {
+      "path": "assets/media/jingzhang-design-film.en.mp4",
+      "role": "video",
+      "required": true,
+      "language": "en",
+      "title_zh": "京张新辙54秒设计短片",
+      "title_en": "Jingzhang New Track 54-second design film",
+      "description_zh": "以总体结构、三处城市原型和分期实施讲述开放创新带。",
+      "description_en": "A short narrative of the corridor structure, three urban prototypes, and phased delivery.",
+      "poster": "assets/media/cover.webp",
+      "caption": "assets/media/jingzhang-design-film-en.vtt",
+      "transcript": "assets/media/jingzhang-design-film-en-transcript.md",
+      "translation_of": "assets/media/jingzhang-design-film.mp4",
+      "sha256": "07757aa15263e3bbb3d91eeb432b8b30f5b2476c18bf8de87e9a4b9b48e870c0"
+    },
+    {
+      "path": "assets/media/jingzhang-design-film-transcript.md",
+      "role": "transcript",
+      "required": true,
+      "language": "zh",
+      "sha256": "38100bbb74aaf75ad2b18465392c8dd88ae58528f8f77e8dfafcc0ccf49a8078"
+    },
+    {
+      "path": "assets/media/jingzhang-design-film-en.vtt",
+      "role": "caption_track",
+      "required": true,
+      "language": "en",
+      "translation_of": "assets/media/jingzhang-design-film.vtt",
+      "sha256": "2faab928797a96f5e7630c2f3a043b191738c77097489297a868b82e7e36de74"
+    },
+    {
+      "path": "assets/media/jingzhang-design-film-en-transcript.md",
+      "role": "transcript",
+      "required": true,
+      "language": "en",
+      "translation_of": "assets/media/jingzhang-design-film-transcript.md",
+      "sha256": "6046c2df2bff46baa660f334fc28328a60f15b7ae5bb4fab726e272daf98b7ba"
     }
   ],
   "validation_claim": {
