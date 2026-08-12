@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "80b71cb78d2c1581fc679eb561959ac515bc8a3ff6f76c74dcc2c4e20d49b72f"
+      "sha256": "cd3ab35da582b8e229f6d44be8728038bd74765627842e1c3d9e9c550ba7c872"
     },
     {
       "path": "compliance_matrix.json",
@@ -93,7 +93,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "e2027d646ca44599895c9279171f61e0c19330a6470191db35fee16278ff3758"
+      "sha256": "b51ed5b70f7c3e69c77e198fc9ff90bb2e16d6a4bf1f193eb3bf3abd74b2dc69"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -284,11 +284,58 @@
       "sha256": "9bc4e13ede51a736ec3f1c87c79042fdcad6f212d305514e49ca80f9c12a3a66",
       "translation_of": "assets/figures/metrics-evidence.png",
       "language": "en"
+    },
+    {
+      "path": "assets/media/cover.webp",
+      "role": "media_poster",
+      "required": false,
+      "title_zh": "方案封面",
+      "title_en": "Proposal cover",
+      "description_zh": "由本包自有几何与视觉识别体系绘制的方案封面。",
+      "description_en": "Proposal cover drawn from the package's own geometry and visual identity.",
+      "sha256": "ad1a74ad970355967efd7ae7651850d37a6c34543b553d452f9feecac7167baf"
+    },
+    {
+      "path": "assets/media/gauge-mechanism.mp4",
+      "role": "video",
+      "required": false,
+      "title_zh": "京张公制：55 秒机制说明",
+      "title_en": "The Jing-Zhang Gauge: a 55-second mechanism explainer",
+      "description_zh": "无声动画：用本包已提交的几何与指标解释版本线、三工位与基准点如何构成一套可采用的公共规范。",
+      "description_en": "A silent animation explaining, from the package's own committed geometry and metrics, how the version line, the three stations, and the datum stones form an adoptable public specification.",
+      "poster": "assets/media/gauge-mechanism.webp",
+      "caption": "assets/media/gauge-mechanism.vtt",
+      "transcript": "assets/media/gauge-mechanism.md",
+      "sha256": "c747cd5a12655b59af78d8fa04c91047e77255e13947fbed8f359c9a6e069978"
+    },
+    {
+      "path": "assets/media/gauge-mechanism.webp",
+      "role": "media_poster",
+      "required": false,
+      "title_zh": "视频海报",
+      "title_en": "Video poster",
+      "description_zh": "视频「三工位」段的静帧。",
+      "description_en": "A still from the video's three-stations sequence.",
+      "sha256": "03d01aa613aecb6443d3136bf20167848b6a778d2a8bf28240f5dae54982d090"
+    },
+    {
+      "path": "assets/media/gauge-mechanism.vtt",
+      "role": "caption_track",
+      "required": false,
+      "sha256": "214b866a6bc73adaec234ec5d0caea03853f2ba7548bbc19a275b49ee57e5cda"
+    },
+    {
+      "path": "assets/media/gauge-mechanism.md",
+      "role": "transcript",
+      "required": false,
+      "sha256": "5c36d929bfccba4e0c329e32af1e52cbffefc690e7494b1bfb8580e87a96c1ab"
     }
   ],
   "validation_claim": {
     "self_checked": true,
     "known_blockers": [],
-    "data_confidence": "medium"
-  }
+    "data_confidence": "medium",
+    "readiness_contract": "persisted-self-check-v1"
+  },
+  "cover_image": "assets/media/cover.webp"
 }
