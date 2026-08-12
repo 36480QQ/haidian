@@ -1895,18 +1895,6 @@ def validate_design_depth_matrix_file(
         report.add_error(f"{display_path}: items must be a non-empty array")
         return data
 
-    # A formal item can be complete in design terms while an organizer-owned
-    # control remains unavailable. Keep that distinction machine-readable:
-    # data_gap must point to an existing metric or source identifier rather
-    # than silently forcing contributors to claim data completeness.
-    metrics_data = load_json_file(report, path.parent / "metrics.json", f"{path.parent.name}/metrics.json")
-    metric_ids = set()
-    if isinstance(metrics_data, dict) and isinstance(metrics_data.get("metrics"), dict):
-        metric_ids = {str(metric_id) for metric_id in metrics_data["metrics"] if str(metric_id).strip()}
-    sources_data = load_json_file(report, path.parent / "sources.json", f"{path.parent.name}/sources.json")
-    source_ids = collect_json_ids(sources_data, "sources", "id")
-    reference_ids = metric_ids | source_ids
-
     covered: set[str] = set()
     required_arrays = [
         "proposal_sections",
@@ -1933,23 +1921,16 @@ def validate_design_depth_matrix_file(
             report.add_error(f"{label}: professional_dimension must be non-empty")
         if item.get("required") is not True:
             report.add_error(f"{label}: required must be true for formal design depth items")
-        status = item.get("status")
-        if status not in {"complete", "data_gap"}:
+        if item.get("status") != "complete":
             report.add_error(f"{label}: formal design depth item status must be complete")
-        if status == "data_gap":
-            limited_by = item.get("limited_by")
-            if not isinstance(limited_by, list) or not limited_by or any(
-                not isinstance(value, str) or not value.strip() for value in limited_by
+        completeness_limited_by = item.get("completeness_limited_by")
+        if completeness_limited_by is not None:
+            if not isinstance(completeness_limited_by, list) or not completeness_limited_by or any(
+                not isinstance(value, str) or not value.strip() for value in completeness_limited_by
             ):
                 report.add_error(
-                    f"{label}: data_gap items require a non-empty limited_by string array"
+                    f"{label}: completeness_limited_by must be a non-empty string array when present"
                 )
-            else:
-                unknown = sorted(set(limited_by) - reference_ids)
-                if unknown:
-                    report.add_error(
-                        f"{label}: limited_by must reference metrics.json or sources.json IDs; unknown: {', '.join(unknown)}"
-                    )
         if not isinstance(item.get("evidence_summary_zh"), str) or not item.get("evidence_summary_zh", "").strip():
             report.add_error(f"{label}: evidence_summary_zh must be non-empty")
         for key in required_arrays:
