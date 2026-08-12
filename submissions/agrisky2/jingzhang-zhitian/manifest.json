@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "package_id": "jingzhang-zhitian",
   "project_id": "centennial-jingzhang-ai-belt",
-  "site_package_version": "0.1.0",
+  "site_package_version": "0.2.0",
   "package_type": "professional_design_package",
   "package_state": "ready_for_review",
   "submission_type": "ai_agent",
@@ -21,7 +21,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "17f451ac3bf8acbf14d5438a73a16f2ff15460f375b3a0c0da392ba5eecb4033"
+      "sha256": "1a308d69cf4ccca6ac7d6a2343cdd2f9d5732aae08e1c0e0cd7a6fea685a2f0b"
     },
     {
       "path": "proposal.en.md",
@@ -35,8 +35,7 @@
       "path": "manifest.json",
       "role": "manifest",
       "required": true,
-      "language": "neutral",
-      "sha256": "b0cb3103f652bcd478a6baef17e504e1364aea637509813c2332032d1e1f550d"
+      "language": "neutral"
     },
     {
       "path": "agent.json",
@@ -50,7 +49,7 @@
       "role": "metrics",
       "required": true,
       "language": "neutral",
-      "sha256": "96cf71c3bae4b3a28259339ab62ef01934e19eea8018dc1c66806ce676e66bf5"
+      "sha256": "9c06d2b57956e7b08469fe917ec6578e1fefa4bbc7c7960df64bdc64184b994b"
     },
     {
       "path": "assumptions.json",
@@ -78,7 +77,7 @@
       "role": "compliance_matrix",
       "required": true,
       "language": "neutral",
-      "sha256": "d8b9756c2de5313a7ceffe7b0ee670ddb45af91a3309804d13042c600e6907d8"
+      "sha256": "fd72819d36e6a99a19acc9151afa34658547a6b9aab24acd4ffbd32a0f55df81"
     },
     {
       "path": "standard_matrix.json",
@@ -92,7 +91,7 @@
       "role": "design_depth_matrix",
       "required": true,
       "language": "neutral",
-      "sha256": "2e62857a988d071a9bb3767677f29964c29fec3a9add8565658e1b2af97508e1"
+      "sha256": "61a9e5e4d782093ef4f4ac351106f6cc1917ce0800dfd282ec26a11fa4f89661"
     },
     {
       "path": "geometry/site_boundary.geojson",
@@ -113,14 +112,14 @@
       "role": "geometry",
       "required": true,
       "language": "neutral",
-      "sha256": "6e273029409a9c397adc0ae5b945a0ab9a0f01fcd1c9592e9a56664ef4adf3c6"
+      "sha256": "ce5d50865e54a042278c0520e22008eda1593ef89a043c882cf52850e4b0acd4"
     },
     {
       "path": "geometry/buildings.geojson",
       "role": "geometry",
       "required": true,
       "language": "neutral",
-      "sha256": "a54cfa5da13b843e670b70d83d0d570dd30a93250ce56ad87afe520f27a9b542"
+      "sha256": "7ed1571861a6c216827832455a9c19e2138915535d3035bc71039736673be999"
     },
     {
       "path": "geometry/roads.geojson",
@@ -134,14 +133,14 @@
       "role": "geometry",
       "required": true,
       "language": "neutral",
-      "sha256": "fe73f7d2380cf4ee6f7a4b01475c3524988794b370e1ba5b27817e010447da3c"
+      "sha256": "bcd49fddb4241a1493d7696296be8fbd7da0009561d8edb230d5560189e751d0"
     },
     {
       "path": "geometry/public_space.geojson",
       "role": "geometry",
       "required": true,
       "language": "neutral",
-      "sha256": "751defcdb475411d4ac14c7058102fecbf45371bdc59ccbb48f4309e7c23c1e2"
+      "sha256": "0d3354cb3909b2be21273e506631d31d07d922a1ca1a01bc450cd2c13a4adedd"
     },
     {
       "path": "geometry/constraints.geojson",
@@ -282,7 +281,7 @@
       "required": true,
       "language": "zh",
       "title_zh": "方案阅读版",
-      "sha256": "b7eb7762288dec633e5083421b3cb976a506bae44c22f0d3fb2c469eef2e5070"
+      "sha256": "495bdc7b5b183a1190bba540428c6c2eb664d2d382f92f413bf1ffdb3882c7ad"
     },
     {
       "path": "report/proposal.en.html",
@@ -291,7 +290,7 @@
       "language": "en",
       "title_en": "Proposal Reading View",
       "translation_of": "report/proposal.html",
-      "sha256": "fdf025c171c07ea0846fbd838c1de57d8b92ee996ed96f5a32138622ea09fa46"
+      "sha256": "d1bc7685b68569298a96841bf925ff2de2bf7b5560e3402fb723a2b59d3ab2c8"
     },
     {
       "path": "report/copyright_statement.md",
@@ -306,7 +305,7 @@
       "required": true,
       "language": "zh",
       "title_zh": "可视化展板",
-      "sha256": "7bdc6c2e19117b43f8ecf81a62d8bd80dc92113598968891c1ae30d2bd596528"
+      "sha256": "7f6eb4c3f52358883803f4c5e24e93b72b9fba3537b62c36d765083dd770b16c"
     },
     {
       "path": "visual/index.en.html",
