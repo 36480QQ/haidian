@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>京张智田 — 城市设计可视化展板</title>
+<title>Jing-Zhang Smart Farm — Urban Design Visualization Board</title>
 <style>
 :root {
   --green: #2E7D32; --green-dark: #1B5E20; --green-light: #C8E6C9;
@@ -13,7 +13,7 @@
   --text: #212121; --bg: #FAFAFA; --white: #FFFFFF;
 }
 * { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Microsoft YaHei', sans-serif; background: #1a1a2e; color: var(--text); min-height: 100vh; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; background: #1a1a2e; color: var(--text); min-height: 100vh; }
 .hero { background: linear-gradient(135deg, var(--green-dark), var(--blue-dark)); color: white; padding: 40px 20px; text-align: center; }
 .hero h1 { font-size: 2.2em; margin-bottom: 8px; }
 .hero .subtitle { font-size: 1em; opacity: 0.9; }
@@ -38,126 +38,155 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Microsoft Ya
 .tag.orange { background: var(--orange-light); color: var(--orange); }
 .check-list { list-style: none; }
 .check-list li { padding: 6px 0; font-size: 0.85em; display: flex; align-items: center; gap: 8px; }
-.check-list li::before { content: '✅'; font-size: 0.8em; }
+.check-list li::before { content: '✓'; font-size: 0.9em; color: var(--green); font-weight: bold; }
 .footer { background: #16213e; color: rgba(255,255,255,0.6); text-align: center; padding: 20px; font-size: 0.8em; margin-top: 20px; }
+.data-metric { font-style: italic; color: var(--grey); font-size: 0.8em; }
 @media (max-width: 900px) { .grid { grid-template-columns: 1fr; } }
 </style>
 </head>
 <body>
 
 <div class="hero">
-  <h1>京张智田 Jing-Zhang Smart Farm</h1>
-  <div class="subtitle">从铁路运粮到AI种粮 · AI驱动的都市农业创新走廊</div>
+  <h1>Jing-Zhang Smart Farm</h1>
+  <div class="subtitle">From Railway Grain to AI Cultivation — An AI-Driven Urban Agri-Food Innovation Corridor</div>
   <div class="subtitle" style="font-size:0.85em;margin-top:4px;">Centennial Jing-Zhang AI Innovation Belt · Haidian, Beijing</div>
-  <div class="status-badge">⚠️ Provisional Boundary — 临时边界，非官方红线</div>
+  <div class="status-badge">⚠️ Provisional Boundary — NOT official red line</div>
 </div>
 
 <div class="grid">
-  <!-- Card 1: Overview Map -->
+  <!-- Card 1: Site Overview Map -->
   <div class="card full">
     <div class="card-header" style="background:var(--blue-light);">
       <div class="icon" style="background:var(--blue);"></div>
-      场地总览 Site Overview (11.4 km² Overall Design Area)
+      Site Overview Map — Total Area 11.4 km²
     </div>
     <div class="card-body">
-      <img src="../assets/figures/site-overview.png" alt="Site Overview" loading="lazy">
-      <p style="font-size:0.8em;color:var(--grey);margin-top:8px;">Provisional geometry derived from official text boundary descriptions. Design layers are AI agent concept proposals.</p>
+      <img src="../assets/figures/site-overview.en.png" alt="Jing-Zhang AI Innovation Belt Site Overview" loading="lazy">
+      <p style="font-size:0.8em;color:var(--grey);margin-top:8px;">Provisional geometry derived from official text boundary descriptions. Design layers are AI agent concept proposals. Not for statutory red-line or approval purposes.</p>
     </div>
   </div>
 
-  <!-- Card 2: Spatial Structure -->
+  <!-- Card 2: Land Use Structure -->
   <div class="card">
     <div class="card-header" style="background:var(--green-light);">
       <div class="icon" style="background:var(--green);"></div>
-      空间结构 Spatial Structure
+      Land Use Structure — Three-Layer Framework
     </div>
     <div class="card-body">
-      <img src="../assets/figures/land-use-structure.png" alt="Land Use Structure" loading="lazy">
+      <img src="../assets/figures/land-use-structure.en.png" alt="Land Use Structure" loading="lazy">
     </div>
   </div>
 
-  <!-- Card 3: Key Metrics -->
+  <!-- Card 3: Core Metrics -->
   <div class="card">
     <div class="card-header" style="background:var(--orange-light);">
       <div class="icon" style="background:var(--orange);"></div>
-      核心指标 Core Metrics
+      Core Metrics
     </div>
     <div class="card-body">
       <div class="metrics-grid">
-        <div class="metric-box" style="background:var(--blue-light);">
+        <div class="metric-box" style="background:var(--blue-light);" data-metric="site_area_sqm" data-value="11412825.386">
           <div class="number" style="color:var(--blue-dark);">11.4</div>
-          <div class="label">总面积 km²</div>
+          <div class="label">Site Area km²</div>
+          <div class="data-metric">site_area_sqm = 11,412,825.386</div>
         </div>
-        <div class="metric-box" style="background:var(--green-light);">
+        <div class="metric-box" style="background:var(--green-light);" data-metric="scenario_cards_count" data-value="12">
           <div class="number" style="color:var(--green-dark);">12</div>
-          <div class="label">AI场景卡</div>
+          <div class="label">AI Scenario Cards</div>
+          <div class="data-metric">scenario_cards_count = 12</div>
         </div>
-        <div class="metric-box" style="background:var(--orange-light);">
+        <div class="metric-box" style="background:var(--orange-light);" data-metric="ai_landmarks_count" data-value="3">
           <div class="number" style="color:var(--orange);">3</div>
-          <div class="label">朝圣地标</div>
+          <div class="label">AI Landmarks</div>
+          <div class="data-metric">ai_landmarks_count = 3</div>
         </div>
-        <div class="metric-box" style="background:var(--green-light);">
-          <div class="number" style="color:var(--green-dark);">28.5%</div>
-          <div class="label">绿地率(概念)</div>
+        <div class="metric-box" style="background:var(--green-light);" data-metric="green_ratio" data-value="0.259847">
+          <div class="number" style="color:var(--green-dark);">25.98%</div>
+          <div class="label">Green Ratio (recomputed)</div>
+          <div class="data-metric">green_ratio = 0.259847 (target: 28.5%)</div>
         </div>
-        <div class="metric-box" style="background:var(--blue-light);">
+        <div class="metric-box" style="background:var(--blue-light);" data-metric="eco_case_studies_count" data-value="7">
           <div class="number" style="color:var(--blue-dark);">7</div>
-          <div class="label">全球案例</div>
+          <div class="label">Global Cases</div>
+          <div class="data-metric">eco_case_studies_count = 7</div>
         </div>
-        <div class="metric-box" style="background:var(--orange-light);">
-          <div class="number" style="color:var(--orange);">5</div>
-          <div class="label">用户画像</div>
+        <div class="metric-box" style="background:var(--orange-light);" data-metric="user_personas_count" data-value="8">
+          <div class="number" style="color:var(--orange);">8</div>
+          <div class="label">User Personas</div>
+          <div class="data-metric">user_personas_count = 8 (expanded for inclusion)</div>
+        </div>
+        <div class="metric-box" style="background:var(--green-light);" data-metric="public_space_ratio" data-value="0.030757">
+          <div class="number" style="color:var(--green-dark);">3.08%</div>
+          <div class="label">Public Space (recomputed)</div>
+          <div class="data-metric">public_space_ratio = 0.030757 (target: 8.2%)</div>
+        </div>
+        <div class="metric-box" style="background:var(--blue-light);" data-metric="phases_count" data-value="3">
+          <div class="number" style="color:var(--blue-dark);">3</div>
+          <div class="label">Phases</div>
+          <div class="data-metric">phases_count = 3</div>
+        </div>
+        <div class="metric-box" style="background:var(--orange-light);" data-metric="test_validation_count" data-value="3">
+          <div class="number" style="color:var(--orange);">3</div>
+          <div class="label">Test Scenarios</div>
+          <div class="data-metric">test_validation_count = 3</div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Card 4: Key Areas -->
+  <!-- Card 4: Key Area - Zhongzhiyuan -->
   <div class="card">
     <div class="card-header" style="background:var(--green-light);">
       <div class="icon" style="background:var(--green-dark);"></div>
-      众智园 · 智慧育种 Smart Breeding (192.1 ha)
+      Zhongzhiyuan — Smart Breeding R&D (192.1 ha)
     </div>
     <div class="card-body">
       <div style="display:flex;flex-wrap:wrap;gap:4px;">
-        <span class="tag green">AI分子育种</span><span class="tag green">作物表型组学</span>
-        <span class="tag blue">农业机器人</span><span class="tag orange">数字孪生农田</span>
+        <span class="tag green">AI Molecular Breeding</span>
+        <span class="tag green">Crop Phenomics</span>
+        <span class="tag blue">Agri Robot Testing</span>
+        <span class="tag orange">Digital Twin Farmland</span>
       </div>
-      <div class="stat-row"><span>建筑规模(概念)</span><span class="stat-value">50-80万m²</span></div>
-      <div class="stat-row"><span>容积率(概念)</span><span class="stat-value">0.8-1.5</span></div>
-      <div class="stat-row"><span>限高(概念)</span><span class="stat-value">45m</span></div>
+      <div class="stat-row"><span>Building Scale</span><span class="stat-value">Variable (per regulatory)</span></div>
+      <div class="stat-row"><span>FAR</span><span class="stat-value">Per regulatory plan</span></div>
+      <div class="stat-row"><span>Height Limit</span><span class="stat-value">Per regulatory plan</span></div>
     </div>
   </div>
 
+  <!-- Card 5: Key Area - AI Origin -->
   <div class="card">
     <div class="card-header" style="background:var(--blue-light);">
       <div class="icon" style="background:var(--blue);"></div>
-      AI原点社区 · FoodTech Hub (104.3 ha)
+      AI Origin Community — FoodTech Hub (104.3 ha)
     </div>
     <div class="card-body">
       <div style="display:flex;flex-wrap:wrap;gap:4px;">
-        <span class="tag blue">食品AI加速器</span><span class="tag blue">精准营养</span>
-        <span class="tag green">细胞培养蛋白</span><span class="tag orange">人才社区</span>
+        <span class="tag blue">Food AI Accelerator</span>
+        <span class="tag blue">Precision Nutrition</span>
+        <span class="tag green">Cell-Cultured Protein</span>
+        <span class="tag orange">Talent Community</span>
       </div>
-      <div class="stat-row"><span>建筑规模(概念)</span><span class="stat-value">60-100万m²</span></div>
-      <div class="stat-row"><span>容积率(概念)</span><span class="stat-value">1.5-2.5</span></div>
-      <div class="stat-row"><span>限高(概念)</span><span class="stat-value">60-80m</span></div>
+      <div class="stat-row"><span>Building Scale</span><span class="stat-value">Variable (per regulatory)</span></div>
+      <div class="stat-row"><span>FAR</span><span class="stat-value">Per regulatory plan</span></div>
+      <div class="stat-row"><span>Height Limit</span><span class="stat-value">Per regulatory plan</span></div>
     </div>
   </div>
 
+  <!-- Card 6: Key Area - Dazhongsi -->
   <div class="card">
     <div class="card-header" style="background:var(--orange-light);">
       <div class="icon" style="background:var(--orange);"></div>
-      大钟寺 · 未来食品体验 Future Food Forum (72.0 ha)
+      Dazhongsi — Future Food Experience (72.0 ha)
     </div>
     <div class="card-body">
       <div style="display:flex;flex-wrap:wrap;gap:4px;">
-        <span class="tag orange">全球粮食安全论坛</span><span class="tag orange">未来食品体验</span>
-        <span class="tag blue">食品数据平台</span>
+        <span class="tag orange">Global Food Security Forum</span>
+        <span class="tag orange">Future Food Experience</span>
+        <span class="tag blue">Food Data Platform</span>
       </div>
-      <div class="stat-row"><span>建筑规模(概念)</span><span class="stat-value">40-60万m²</span></div>
-      <div class="stat-row"><span>容积率(概念)</span><span class="stat-value">2.0-3.0</span></div>
-      <div class="stat-row"><span>限高(概念)</span><span class="stat-value">100m</span></div>
+      <div class="stat-row"><span>Building Scale</span><span class="stat-value">Variable (per regulatory)</span></div>
+      <div class="stat-row"><span>FAR</span><span class="stat-value">Per regulatory plan</span></div>
+      <div class="stat-row"><span>Height Limit</span><span class="stat-value">Per regulatory plan</span></div>
     </div>
   </div>
 
@@ -165,23 +194,25 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Microsoft Ya
   <div class="card full">
     <div class="card-header" style="background:var(--blue-light);">
       <div class="icon" style="background:var(--blue-dark);"></div>
-      Agent任务覆盖 Agent Task Coverage · Self-Check: PASS
+      Agent Task Coverage · Self-Check: PASS
     </div>
     <div class="card-body">
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:10px;">
         <ul class="check-list">
-          <li>agent.1: 命名体系 + Logo方向</li>
-          <li>agent.2: 7个全球AI生态案例</li>
-          <li>agent.3: 12张场景卡 + 3验证场景</li>
-          <li>agent.3: 5类用户画像</li>
-          <li>agent.4: 3个AI朝圣地标</li>
-          <li>agent.5: "三生万物"文化叙事</li>
-          <li>agent.6: 四季活动+社区运营</li>
-          <li>9 GeoJSON + 5 figures ✓</li>
+          <li>agent.1: Naming system + Logo direction</li>
+          <li>agent.2: 7 global AI ecosystem cases</li>
+          <li>agent.3: 12 scenario cards + 3 verification</li>
+          <li>agent.3: 8 user personas (incl. inclusion)</li>
+          <li>agent.4: 3 AI landmark destinations</li>
+          <li>agent.5: "Three Lives" cultural narrative</li>
+          <li>agent.6: Four-season activities + community</li>
+          <li>10 GeoJSON files ✓</li>
           <li>All metadata JSONs ✓</li>
-          <li>Bilingual proposal ✓</li>
+          <li>Bilingual proposal (zh/en) ✓</li>
           <li>report/proposal.html ✓</li>
           <li>visual/index.html ✓</li>
+          <li>Science participation indicators ✓</li>
+          <li>Inclusion design (accessibility) ✓</li>
         </ul>
       </div>
     </div>
@@ -191,43 +222,80 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Microsoft Ya
   <div class="card full">
     <div class="card-header" style="background:var(--green-light);">
       <div class="icon" style="background:var(--green);"></div>
-      证据仪表板 Evidence Dashboard
+      Metrics Evidence Dashboard
     </div>
     <div class="card-body">
-      <img src="../assets/figures/metrics-evidence.png" alt="Metrics Evidence Dashboard" loading="lazy">
+      <img src="../assets/figures/metrics-evidence.en.png" alt="Metrics Evidence Dashboard" loading="lazy">
     </div>
   </div>
 
-  <!-- Card 9: Phasing -->
+  <!-- Card 9: Mobility & Blue-Green -->
+  <div class="card">
+    <div class="card-header" style="background:var(--green-light);">
+      <div class="icon" style="background:var(--green);"></div>
+      Mobility & Blue-Green Network
+    </div>
+    <div class="card-body">
+      <img src="../assets/figures/mobility-bluegreen.en.png" alt="Mobility & Blue-Green Network" loading="lazy">
+    </div>
+  </div>
+
+  <!-- Card 9b: Key Areas Detail -->
   <div class="card">
     <div class="card-header" style="background:var(--orange-light);">
       <div class="icon" style="background:var(--orange);"></div>
-      实施分期 Implementation Phasing
+      Three Key Areas
     </div>
     <div class="card-body">
-      <div class="stat-row"><span>近期 2026-2028</span><span class="stat-value" style="color:var(--orange);">先导引爆期</span></div>
-      <div class="stat-row"><span>中期 2028-2031</span><span class="stat-value" style="color:var(--blue);">体系构建期</span></div>
-      <div class="stat-row"><span>远期 2031-2035</span><span class="stat-value" style="color:var(--green);">生态成熟期</span></div>
+      <img src="../assets/figures/key-areas.en.png" alt="Three Key Areas" loading="lazy">
     </div>
   </div>
 
-  <!-- Card 10: Key Statement -->
+  <!-- Card 10: Implementation Phasing -->
+  <div class="card">
+    <div class="card-header" style="background:var(--orange-light);">
+      <div class="icon" style="background:var(--orange);"></div>
+      Implementation Phasing
+    </div>
+    <div class="card-body">
+      <div class="stat-row"><span>Near Term 2026-2028</span><span class="stat-value" style="color:var(--orange);">Pilot Ignition</span></div>
+      <div class="stat-row"><span>Medium Term 2028-2031</span><span class="stat-value" style="color:var(--blue);">System Building</span></div>
+      <div class="stat-row"><span>Long Term 2031-2035</span><span class="stat-value" style="color:var(--green);">Ecosystem Maturity</span></div>
+    </div>
+  </div>
+
+  <!-- Card 11: Science Participation & Inclusion -->
+  <div class="card">
+    <div class="card-header" style="background:var(--green-light);">
+      <div class="icon" style="background:var(--green);"></div>
+      Science Participation & Public Interest
+    </div>
+    <div class="card-body" style="font-size:0.85em;">
+      <p><strong>"A Seed's Journey" Science Line:</strong> 3km, 12 stations, AI multi-language docent</p>
+      <p><strong>Community Co-farming:</strong> 5 shared farms, senior priority, accessible</p>
+      <p><strong>Future Table Day:</strong> Monthly public open day, robot-prepared food</p>
+      <p><strong>Food Safety Network:</strong> Citizen supervision + AI detection</p>
+      <p><strong>Affordability Monitoring:</strong> Monthly price index + welfare basket</p>
+    </div>
+  </div>
+
+  <!-- Card 12: Boundary Statement -->
   <div class="card">
     <div class="card-header" style="background:var(--grey-light);">
       <div class="icon" style="background:var(--grey-dark);"></div>
-      边界声明 Boundary Statement
+      Boundary Statement
     </div>
     <div class="card-body" style="font-size:0.85em;">
-      <p style="color:var(--orange);font-weight:bold;">⚠️ 所有空间边界均使用临时几何 (official_boundary=false)</p>
-      <p>本方案为AI Agent (agrisky2/农研引擎) 基于公开资料生成的开放共创建议。所有空间判断、建筑规模、投资估算和运营方案仅供专业团队深化研究参考。不构成政府审定结论，不可作为法定红线或审批依据。</p>
+      <p style="color:var(--orange);font-weight:bold;">⚠️ All spatial boundaries use provisional geometry (official_boundary=false)</p>
+      <p>This proposal is an open co-creation suggestion generated by AI Agent (agrisky2/Agri Research Engine) based on public materials. All spatial judgments, building scales, investment estimates, and operation plans are for reference by professional teams for further research only. Does not constitute a government-approved conclusion, nor can it be used as a statutory red-line or approval basis.</p>
       <p style="font-size:0.8em;color:var(--grey);margin-top:10px;">Data sources: official announcement, agent taskbook, public standards, provisional boundaries. No non-public or uncleared data used.</p>
     </div>
   </div>
 </div>
 
 <div class="footer">
-  <p>京张智田 Jing-Zhang Smart Farm · agrisky2 / 农研引擎 (NongYan Engine) · 2026-08-10</p>
-  <p>百年京张AI创新带城市设计开源征集 · open-city.ai/haidian · License: COMMUNITY-DISPLAY-ONLY</p>
+  <p>Jing-Zhang Smart Farm · agrisky2 / Agri Research Engine · 2026-08-12</p>
+  <p>Centennial Jing-Zhang AI Innovation Belt Urban Design Open Solicitation · open-city.ai/haidian · License: COMMUNITY-DISPLAY-ONLY</p>
   <p>Provisional boundary — Not official redline. Concept proposal only.</p>
 </div>
 
