@@ -1,0 +1,95 @@
+{
+  "version": "1.0",
+  "sources": [
+    {
+      "source_id": "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
+      "title": "百年京张AI创新带城市设计国际方案征集资格预审公告",
+      "publisher": "北京市规划和自然资源委员会海淀分局",
+      "url": "https://ghzrzyw.beijing.gov.cn/zhengwuxinxi/tzgg/hd/202605/t20260509_4643047.html",
+      "retrieval_date": "2026-08-07",
+      "usable_for_formal": "yes",
+      "limitations": "公开公告未附精确CAD/GIS边界。"
+    },
+    {
+      "source_id": "SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK",
+      "title": "面向全球智能体开展百年京张AI创新带城市设计开源征集任务书",
+      "publisher": "open-city-ai社区",
+      "url": "https://github.com/open-city-ai/haidian",
+      "retrieval_date": "2026-08-07",
+      "usable_for_formal": "yes",
+      "limitations": "需与正式公告和标准快照配合使用。"
+    },
+    {
+      "source_id": "SITE-PACKAGE",
+      "title": "场地资料包（design_brief、agent_taskbook和标准索引）",
+      "publisher": "项目组织方",
+      "url": "https://github.com/open-city-ai/haidian/tree/main/brief/site-package",
+      "retrieval_date": "2026-08-07",
+      "usable_for_formal": "yes",
+      "limitations": "公开结构化资料包。"
+    },
+    {
+      "source_id": "SOURCE-REGISTRY",
+      "title": "公开资料注册表",
+      "publisher": "项目组织方",
+      "url": "https://github.com/open-city-ai/haidian/blob/main/data/source_registry.json",
+      "retrieval_date": "2026-08-07",
+      "usable_for_formal": "yes",
+      "limitations": "注册表不替代原始来源。"
+    },
+    {
+      "source_id": "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+      "title": "社区维护临时边界",
+      "publisher": "open-city-ai社区",
+      "url": "https://github.com/open-city-ai/haidian/blob/main/brief/site-package/geometry/provisional_boundaries.geojson",
+      "retrieval_date": "2026-08-07",
+      "usable_for_formal": "provisional_only",
+      "limitations": "非官方红线，不能支撑精确面积或审批结论。"
+    },
+    {
+      "source_id": "GLOBAL-INNOVATION-DISTRICTS",
+      "title": "全球创新区公共空间案例研究",
+      "publisher": "公开学术文献与官方报告综合",
+      "url": "多来源",
+      "retrieval_date": "2026-08-07",
+      "usable_for_formal": "background_only",
+      "limitations": "仅用于方法比较。"
+    },
+    {
+      "source_id": "MOHURD-LOCAL-STANDARDS",
+      "title": "城市设计、控规深度与用地分类本地标准快照",
+      "publisher": "项目组织方本地参考库",
+      "url": "https://github.com/open-city-ai/haidian/tree/main/brief/site-package/standards",
+      "retrieval_date": "2026-08-07",
+      "usable_for_formal": "yes",
+      "limitations": "仅用于设计深度和证据链核对。"
+    },
+    {
+      "source_id": "D7-D8-CONCEPT-ASSETS",
+      "title": "D7-D8空间与文化表达初稿",
+      "publisher": "longkinght",
+      "url": "local workspace artifact",
+      "retrieval_date": "2026-08-11",
+      "usable_for_formal": "provisional_only",
+      "limitations": "原创概念图件和组件清单，不是现场测绘或审批资料。"
+    },
+    {
+      "source_id": "GLOBAL-CASE-DEEP-RESEARCH-20260811",
+      "title": "全球AI创新生态案例证据审计与补强 v2",
+      "publisher": "longkinght / external AI research workflow",
+      "url": "local workspace artifact: 30-竞品与社区/全球AI创新生态案例-证据审计与补强-v2.md",
+      "retrieval_date": "2026-08-11",
+      "usable_for_formal": "background_only",
+      "limitations": "8个主案例与1个机制补充的比较参考；不支撑京张正式边界、控规、投资、运营方或实施承诺；待核清单中的问题不得写成已证实事实。"
+    },
+    {
+      "source_id": "SCENARIO-GUARDRAILS-20260812",
+      "title": "场景双生卡三阶段护栏",
+      "publisher": "longkinght",
+      "url": "local workspace artifact: assets/media/scenario-guardrails-v1.md",
+      "retrieval_date": "2026-08-12",
+      "usable_for_formal": "provisional_only",
+      "limitations": "概念阶段的进入、普通服务等价、人工复核、停转和退出恢复字段；不构成运营授权、预算、采购或上线批准。"
+    }
+  ]
+}
