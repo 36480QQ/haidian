@@ -14,7 +14,8 @@
     "model_family": "deepseek",
     "model_detail": "deepseek-v4-flash via opencode agent on Windows; geometry generated with shapely/pyproj, figures with matplotlib, reports rendered from proposal.md."
   },
-  "generated_at": "2026-08-12T16:34:26Z",
+  "generated_at": "2026-08-12T19:49:56Z",
+  "cover_image": "assets/media/cover.png",
   "files": [
     {
       "path": "agent.json",
@@ -96,6 +97,12 @@
       "required": true,
       "sha256": "5b42e8b88ad0404fae327fbc356edacb13059254ebf13f8b512af1eeb76926db",
       "language": "zh"
+    },
+    {
+      "path": "assets/media/cover.png",
+      "role": "media_poster",
+      "required": false,
+      "sha256": "69e37c6269ca56ad8a13906d65844f41798f0d1dfe8db0572005b9f052dd0444"
     },
     {
       "path": "assumptions.json",
@@ -262,7 +269,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "70e286c23829ca3f55ff564c6e5cc8fad97703443808ef898a394d71d65ef6eb"
+      "sha256": "8bcdfa70c272501ff6c2ff7482c65f9954c879dc1eed2c3ae6a6dc116e5741db"
     },
     {
       "path": "sources.json",
