@@ -468,6 +468,10 @@ The figure below is not a rendering but a readable spatial statement. It uses on
 
 ![Ten-node service reach domains and the blue-green slow-mobility system](assets/figures/mobility-bluegreen.en.png)
 
+The main drawing is sized for full-page reading and keeps only the three largest gaps as the first audit breaks; the complete ten-node ranking, the caliber detail and the accountable body are logged in the companion Ten-Node Gap Audit Ledger. Both drawings read the same values.
+
+![Ten-Node Gap Audit Ledger](assets/figures/mobility-bluegreen-audit.en.png)
+
 ## Multisensory Narrative of Jing-Zhang Culture, Zhongguancun Culture, and New AI Culture
 
 The cultural judgement is that Jing-Zhang is not an old railway serving as a backdrop for AI, and Zhongguancun is not a slogan to be mounted on a wall. Both become a new AI culture only when they are translated into public behaviour that every kind of body can read and complete alone. Cultural work therefore starts with a traceable resource inventory, then decides the carriers, and only then reaches symbols and wayfinding [source:AGENT-TASKBOOK]. This chapter is a conceptual recommendation. It is not a heritage conservation plan and it does not settle historical fact.
@@ -636,6 +640,10 @@ The protocol precedes target values. Every task fixes its start, end, success cr
 The compliance matrix confirms that the three positioning statements, five functions, Three Areas and Two Wings, and agent.1—agent.6 each have narrative, spatial, scenario, metric, and operating responses; machine identifiers do not replace design reasoning. Known metrics retain source, formula, date, and confidence. Unknown metrics state the gap, responsible discipline, and condition for completion. Real testing needs reasonable accommodation, informed consent, privacy protection, human review, and exit rights, with disabled and neurodivergent participants, relevant professionals, and operators jointly reviewing protocols [source:WHO-DISABILITY-HEALTH]. Matrix entries concerning equal participation and accessible information follow the direction of the Barrier-Free Environment Construction Law; human and equivalent routes outside the matters the law lists are marked as this proposal's design recommendations and are never presented as conformity findings [standard:BARRIER-FREE-ENVIRONMENT-LAW].
 
 ![Metrics and evidence chain](assets/figures/metrics-evidence.en.png)
+
+The main drawing gives the distribution of evidence classes and the rules for blanks; the row-by-row source → operation → class ledger and the twelve declared blanks sit in the companion Metrics Evidence Audit Ledger, which introduces no new value.
+
+![Metrics Evidence Audit Ledger](assets/figures/metrics-evidence-audit.en.png)
 
 ## Risk, Copyright, and Compliance
 
