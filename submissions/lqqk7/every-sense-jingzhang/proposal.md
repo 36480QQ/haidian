@@ -9,14 +9,14 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以多感官通用设计为产业赛道与城市底线，让不同身体、感官和认知方式的人都能独立理解、选择、完成并退出同一项 AI 城市服务。"
 tracks: ["ai-traffic-walkability", "ai-public-services", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v5.0"
+iteration: "v5.2"
 ---
 
 # 万感京张：每一种身体都能独立使用的 AI 城市 / EVERY SENSE JING-ZHANG
 
 ## 一页执行摘要与交付索引
 
-本章为评审提供一页入口：左列是评审需要回答的问题，中列是本方案的回答，右列是可以立即打开核验的成果位置。本方案自正式投稿以来共经历五个版本——v1.0 提交完整结构化包并确立“AI ON = AI OFF”核心命题，v2.0 补入风险登记与包容性绩效指标族，v3.0 增补文化叙事、区域协同与品牌系统并加密几何图层，v4.0 修复展示页首屏、新增控规官方参照台账与四层运营节律，v5.0 增加封面、音频导览、多模态短片与交互场景四件多模态交付物；各版本改动逐条登记于 `changelog.md`，本章不重述其内容 [source:PACKAGE-STRUCTURED-EVIDENCE-INDEX]。
+本章为评审提供一页入口：左列是评审需要回答的问题，中列是本方案的回答，右列是可以立即打开核验的成果位置。本方案自正式投稿以来共经历七个版本——v1.0 提交完整结构化包并确立“AI ON = AI OFF”核心命题，v2.0 补入风险登记与包容性绩效指标族，v3.0 增补文化叙事、区域协同与品牌系统并加密几何图层，v4.0 修复展示页首屏、新增控规官方参照台账与四层运营节律，v5.0 增加封面、音频导览、多模态短片与交互场景四件多模态交付物，v5.1 新增服务等价基准 SEB v0.1 与机器可读规范、OP-01 桌面配对试点档案，并把慢行图整体重造为《十节点服务可达域与蓝绿慢行系统图》，v5.2 将基准升至 v0.2 完成版本治理闭环、闭合桌面推演登记的工具级缺口，并把 manifest 迁移至 schema 0.2.0；各版本改动逐条登记于 `changelog.md`，本章不重述其内容 [source:PACKAGE-STRUCTURED-EVIDENCE-INDEX]。
 
 | 评审问题 | 本方案的回答 | 可核验成果 |
 | --- | --- | --- |

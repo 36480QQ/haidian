@@ -9,14 +9,14 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "A universal-design innovation belt where people with different bodies, senses, and cognitive styles can understand, choose, complete, and exit the same AI-enabled public service independently."
 tracks: ["ai-traffic-walkability", "ai-public-services", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v5.0"
+iteration: "v5.2"
 ---
 
 # EVERY SENSE JING-ZHANG: An AI City Every Kind of Body Can Use Independently
 
 ## Executive Summary and Deliverables Index
 
-This chapter is a one-page entry point for reviewers: the left column states the question a review has to answer, the middle column gives this proposal's answer, and the right column names the deliverable that can be opened and checked immediately. Five versions have been submitted since the formal entry: v1.0 delivered the complete structured package and established the core proposition "AI ON = AI OFF"; v2.0 added the risk register and the family of inclusive-performance metrics; v3.0 added the cultural narrative, regional collaboration, and brand system and densified the geometry layers; v4.0 repaired the display page's first screen and added the official regulatory-plan reference register and the four-layer operating rhythm; v5.0 added four multimodal deliverables — cover, audio guide, short film, and interactive scene. Every change is registered item by item in `changelog.md` and is not restated here [source:PACKAGE-STRUCTURED-EVIDENCE-INDEX].
+This chapter is a one-page entry point for reviewers: the left column states the question a review has to answer, the middle column gives this proposal's answer, and the right column names the deliverable that can be opened and checked immediately. Seven versions have been submitted since the formal entry: v1.0 delivered the complete structured package and established the core proposition "AI ON = AI OFF"; v2.0 added the risk register and the family of inclusive-performance metrics; v3.0 added the cultural narrative, regional collaboration, and brand system and densified the geometry layers; v4.0 repaired the display page's first screen and added the official regulatory-plan reference register and the four-layer operating rhythm; v5.0 added four multimodal deliverables — cover, audio guide, short film, and interactive scene; v5.1 added the Service Equivalence Baseline SEB v0.1 with its machine-readable specification and the OP-01 desktop pairing pilot dossier, and rebuilt the mobility plate as "Ten-Node Service Reachability + Blue-Green & Slow Mobility"; v5.2 raised the baseline to v0.2, closing the version-governance loop and the tool-level gaps registered in the desktop walkthrough, and migrated the manifest to schema 0.2.0. Every change is registered item by item in `changelog.md` and is not restated here [source:PACKAGE-STRUCTURED-EVIDENCE-INDEX].
 
 | Review question | This proposal's answer | Verifiable deliverable |
 | --- | --- | --- |
