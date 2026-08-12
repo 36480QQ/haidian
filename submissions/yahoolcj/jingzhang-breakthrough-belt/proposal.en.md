@@ -101,13 +101,13 @@ Regulatory-depth note: statutory control indicators such as floor-area ratio, bu
 - **Spatial structure**: with the Qinghuayuan Station Origin Plaza as the center, organize a walkable innovation unit of "developer living room — university laboratories — startup blocks — talent community" [data:geometry/public_space.geojson#PS-04] [data:geometry/land_use.geojson#LU-R4C1].
 - **Building renewal**: mainly retention and functional replacement; the Wudaokou station-city commercial stock is renewed into intelligent-native consumption and innovation-service scenarios.
 - **Traffic and slow traffic**: strengthen slow-traffic stitching between Wudaokou Station and Chengfu Lu, and open pedestrian links between the Green Tunnel and university campuses (conceptual recommendation).
-- **Public space and AI scenarios**: establish the **"Zero-Milestone Breakthrough Stele" Origin Plaza** (one of the pilgrimage landmarks), and layout scenarios such as a developer living room, digital heritage roaming, and barrier-free AI wayfinding (SN-05, SN-07, SN-11).
+- **Public space and AI scenarios**: establish the **"Zero-Milestone Breakthrough Stele" Origin Plaza** (one of the memorial & service nodes), and layout scenarios such as a developer living room, digital heritage roaming, and barrier-free AI wayfinding (SN-05, SN-07, SN-11).
 - **Implementation risk**: the opening boundaries of university campuses and cultural-heritage-protection requirements require professional confirmation; cultural-facility renovation must not compromise the authenticity of the heritage site [depth:risk_missing_data].
 
 ### Dazhongsi AI Industry Cluster (Guan · Shi, approximately 72.0 ha, provisional)
 
 - **Positioning**: an intelligent-native new-business-format and AI scenario commercialization conversion area, corresponding to the "scenario breakthrough" narrative.
-- **Spatial structure**: with the Dazhongsi Station-front Through-Plaza as the hub, organize an intelligent-native consumption block, an AI industry clustering cluster, and the **"Breakthrough Measurement Plaza"** (one of the pilgrimage landmarks, symbolizing the east-west stitching of "two-way breakthrough measurement") [data:geometry/public_space.geojson#PS-01].
+- **Spatial structure**: with the Dazhongsi Station-front Through-Plaza as the hub, organize an intelligent-native consumption block, an AI industry clustering cluster, and the **"Breakthrough Measurement Plaza"** (one of the memorial & service nodes, symbolizing the east-west stitching of "two-way breakthrough measurement") [data:geometry/public_space.geojson#PS-01].
 - **Building renewal**: recommend functional replacement of existing commercial and low-efficiency buildings to form an integrated block of "testing — display — consumption — capital docking."
 - **Traffic and slow traffic**: rely on Dazhongsi Station and the conceptual branch of Dazhongsi Dong Lu to organize station-city integration, and reserve an unmanned shuttle loop [data:geometry/roads.geojson#RD-NS-5].
 - **Public space and AI scenarios**: layout an intelligent-native business district, a robot patrol validation field, and an unmanned delivery validation corridor (SN-01, SN-02, SN-09).
@@ -118,6 +118,8 @@ Regulatory-depth note: statutory control indicators such as floor-area ratio, bu
 ## AI Innovation Ecosystem, Talent Profiles, and AI+ Scenarios
 
 ### User Profiles (6 types, Task agent.3)
+
+The following profiles are a design-research perspective and remain **hypotheses to be verified**; they do not represent verified conclusions about residents' needs in the district. Demand verification requires public participation and on-site surveys conducted by the authorized organizing bodies.
 
 1. **University researchers / young professors**: need public computing power, pilot-testing space, and academic community; in laboratories by day and in the developer living room by night [metric:scenario_node_count].
 2. **Developers / entrepreneurs (including returnees and open-source contributors)**: need low-cost starter space, scenario orders, and an honors system; they care about the "Zero-Milestone Breakthrough Stele" and the contribution honor wall.
@@ -142,6 +144,13 @@ Regulatory-depth note: statutory control indicators such as floor-area ratio, bu
 | SN-10 | **AI Test · Multi-Agent Traffic Simulation** | Zhongzhiyuan | Autonomous-driving / transport enterprises | Simulation data open | Expert review | Research platform | Simulation distortion |
 | SN-11 | AI + Public Space · Barrier-Free AI Wayfinding | Southern section of heritage park | Persons with disabilities / elderly | Voice data kept local | Volunteer review | Park operator | Insufficient accessibility |
 | SN-12 | AI + Governance · Urban Agent Cockpit | North of Zhongzhiyuan | Public managers | Public data tiered openness | Official final review | Governance platform | Excessive surveillance |
+
+**Scenario execution and verification rules (who · for whom · when · resources · thresholds · stop · check)**: each scenario card is managed by the six execution elements — recommended operator (who, subject to authorization), service target (for whom), time window (when), resources and permits (site/facility/data licenses/approvals), baseline (the "no-service state" as baseline; missing data recorded as pending), success and stop thresholds, and human fallback and inspection. General rules:
+
+- **Time windows**: the test-validation scenarios (SN-08/09/10) are recommended to run in 6–12-month pilot windows; the other scenarios open progressively by phase (near/mid/long term); all timing is conceptual.
+- **Baselines**: current-state baselines (trip volumes, patrol coverage, delivery times, etc.) have no official or authorized data and are uniformly recorded as "pending official data"; simulated values are not used as baselines.
+- **Success / stop thresholds (examples)**: the unmanned delivery validation corridor continues only if the accident rate is zero and average delivery time is not worse than the human baseline; any safety incident, data breach, or privacy complaint immediately stops the service and returns to human handling.
+- **Human fallback and inspection**: every scenario retains a human takeover channel; test runs publish quarterly redacted log summaries open to public and expert review.
 
 Privacy and manual-review boundaries: all scenarios follow the four principles of "data minimization, anonymization priority, human final review, and opt-out"; all test-validation scenarios are marked as "conceptual test arrangements, not to be operated without approval" [source:AGENT-TASKBOOK] [depth:municipal_new_infrastructure].
 
@@ -169,7 +178,7 @@ Statutory control indicators (floor-area ratio, building height, building densit
 
 **Blue-green system**: with the Jing-Zhang Green Tunnel as the main axis (approximately 8.1 km), supplemented by community pocket parks, forming a "one axis + multiple points" blue-green network; green-space ratio approximately 13.9% and public-space ratio approximately 4.6% (conceptual values, pending recalculation with official green-system data) [metric:green_ratio] [metric:public_space_ratio] [data:geometry/green_space.geojson#GS-03].
 
-**AI Pilgrimage Landmarks (3, Task agent.4)**:
+**AI Memorial & Service Nodes (3; responding to the "pilgrimage landmarks" requirement of Task agent.4, here emphasizing their public memorial, learning, and service attributes)**:
 
 1. **"Zero-Milestone Breakthrough Stele" · Qinghuayuan Station Origin Plaza** — located near the former Qinghuayuan Station site of the Jing-Zhang Railway, serving as the "spiritual zero-kilometer point" of the belt and one candidate location for the global developer honor wall and agent contribution stele [data:geometry/public_space.geojson#PS-04].
 2. **"Badaling Tunnel Digital Twin Pavilion" · Zhongzhiyuan** — taking the 1908 Badaling Tunnel breakthrough as the prototype, using digital twins and open-source data to display the centennial relay from "engineering breakthrough → AI breakthrough," and serving as a candidate carrier for the open-source achievements display corridor [data:geometry/public_space.geojson#PS-05].
@@ -200,13 +209,24 @@ Landmarks, wayfinding, logos, typefaces, images, and human identifiers all requi
 
 ## Indicator System, Area Recalculation, and Compliance Matrix
 
-The core indicators of this proposal are all recalculated from the package geometry in EPSG:4548: site area 11.41 km²; research / education / residential / commercial / green-plaza ratio approximately 36/23/21/10/10; green-space ratio 13.9%; public-space ratio 4.6%; Green Tunnel spine 8.1 km; roads 43.1 km, density 3.78 km/km²; 3 key areas totaling approximately 369.3 ha; 12 AI scenario nodes; 3 pilgrimage landmarks; phased areas 1.492 / 2.819 / 7.102 million m² [metric:site_area_sqm] [metric:green_ratio] [metric:public_space_ratio] [metric:key_area_area_sqm] [metric:scenario_node_count] [metric:landmark_count].
+The core indicators of this proposal are all recalculated from the package geometry in EPSG:4548: site area 11.41 km²; research / education / residential / commercial / green-plaza ratio approximately 36/23/21/10/10; green-space ratio 13.9%; public-space ratio 4.6%; Green Tunnel spine 8.1 km; roads 43.1 km, density 3.78 km/km²; 3 key areas totaling approximately 369.3 ha; 12 AI scenario nodes; 3 memorial & service nodes; phased areas 1.492 / 2.819 / 7.102 million m² [metric:site_area_sqm] [metric:green_ratio] [metric:public_space_ratio] [metric:key_area_area_sqm] [metric:scenario_node_count] [metric:landmark_count].
 
 Indicator meanings: green-space ratio and public-space ratio support a high-quality environment in which talent is willing to stay (benchmarking the "stayability" of King's Cross and Kendall Square); the research-education land ratio supports innovation supply; road and slow-traffic indicators support the walking innovation network "from laboratory to street corner"; phasing indicators support the reversible implementation path of "origin first, then acceleration, then full-area stitching" [depth:metrics_recalculation].
 
 Compliance coverage: announcement tasks 1.3/1.4/1.5 and agent tasks agent.1–agent.6 are all registered item by item in the task coverage matrix and elaborated in the main text; the professional-standards matrix covers 6 mandatory standards; all 15 items in the design-depth matrix are marked complete [depth:metrics_recalculation].
 
 ![Core indicator recalculation and evidence chain diagram](assets/figures/metrics-evidence.png)
+
+## Site and Stakeholder Evidence
+
+This section discloses, in good faith, the on-site and stakeholder evidence status of this proposal:
+
+- **On-site presence**: this proposal was generated by an AI agent under the operator's authorization; neither the author nor the operator has conducted on-site surveys, interviews, or questionnaires in the project area;
+- **Evidence types**: only publicly available / rights-cleared repository materials and public historical materials are used (the qualification pre-announcement, the open-call taskbook, provisional boundaries, local standards snapshots, public history of the Jing-Zhang Railway and Jing-Zhang High-Speed Railway, and public materials on global innovation-ecosystem cases); no street-view APIs, platform heat data, or any unauthorized data are used [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK];
+- **Nature of user profiles and scenarios**: the 6 user profiles and 12 scenario cards are research perspectives and design targets — **hypotheses to be verified** — and do not represent resident consensus, demand ranking, on-site performance, or verified resident opinions;
+- **Affected groups and dissenting views**: the proposal directly affects university faculty and students, park/district workers, local residents, and commuters; criticism and suggestions from the community and the public are collected through this proposal's public comment channel ([issue #1968](https://github.com/open-city-ai/haidian/issues/1968)), and every comment receives an adopt / partially-adopt / decline response with reasons, recorded in a public ledger that ships with the next package iteration;
+- **Formal public participation**: informed consent, minimal/anonymized collection, retention periods, and the comment–response ledger are the responsibility of the authorized organizing bodies; this submission does not privately upload interview transcripts, contact information, or personal data;
+- **Boundary**: the merge, machine scoring, display, or selection of this proposal does not equal resident consent, planning approval, or implementation authorization [depth:risk_missing_data].
 
 ## Risk, Copyright, and Compliance Notes
 
