@@ -121,48 +121,6 @@
         "官方几何公布后复算"
       ]
     },
-    "key_area_dazhongsi_sqm": {
-      "status": "known",
-      "value": 720454,
-      "unit": "sqm",
-      "source_files": [
-        "geometry/key_areas.geojson"
-      ],
-      "formula": "官方公布约72.0公顷，临时多边形复算面积（取整）",
-      "confidence": "low",
-      "assumptions": [
-        "临时边界，非官方红线",
-        "官方几何公布后复算"
-      ]
-    },
-    "building_count": {
-      "status": "known",
-      "value": 1,
-      "unit": "count",
-      "source_files": [
-        "geometry/buildings.geojson"
-      ],
-      "formula": "图层要素计数（概念级）",
-      "confidence": "low",
-      "assumptions": [
-        "设计提案要素计数",
-        "官方几何到位后复算"
-      ]
-    },
-    "road_count": {
-      "status": "known",
-      "value": 1,
-      "unit": "count",
-      "source_files": [
-        "geometry/roads.geojson"
-      ],
-      "formula": "图层要素计数（概念级）",
-      "confidence": "low",
-      "assumptions": [
-        "概念要素",
-        "官方几何到位后复算"
-      ]
-    },
     "road_length_m": {
       "status": "known",
       "value": 8432,
@@ -175,32 +133,6 @@
       "assumptions": [
         "概念推演",
         "官方几何到位后复算"
-      ]
-    },
-    "green_space_count": {
-      "status": "known",
-      "value": 1,
-      "unit": "count",
-      "source_files": [
-        "geometry/green_space.geojson"
-      ],
-      "formula": "图层要素计数",
-      "confidence": "low",
-      "assumptions": [
-        "概念要素"
-      ]
-    },
-    "public_space_count": {
-      "status": "known",
-      "value": 1,
-      "unit": "count",
-      "source_files": [
-        "geometry/public_space.geojson"
-      ],
-      "formula": "图层要素计数",
-      "confidence": "low",
-      "assumptions": [
-        "概念要素"
       ]
     },
     "phase_count": {
@@ -227,6 +159,20 @@
       "confidence": "low",
       "assumptions": [
         "临时边界"
+      ]
+    },
+    "key_area_xizhimen_sqm": {
+      "status": "known",
+      "value": 720454,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/key_areas.geojson"
+      ],
+      "formula": "官方公布约72.0公顷，临时多边形复算面积（取整）",
+      "confidence": "low",
+      "assumptions": [
+        "临时边界，非官方红线",
+        "官方几何公布后复算"
       ]
     }
   }
