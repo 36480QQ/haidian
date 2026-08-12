@@ -78,7 +78,9 @@
         "pending": false
       },
       "p3_release": {
-        "released": false
+        "released": false,
+        "concept_passed": false,
+        "note": ""
       },
       "p4_review": {
         "review_required": true
@@ -109,7 +111,9 @@
         "pending": true
       },
       "p3_release": {
-        "released": false
+        "released": false,
+        "concept_passed": false,
+        "note": ""
       },
       "p4_review": {
         "review_required": true
@@ -140,7 +144,9 @@
         "pending": false
       },
       "p3_release": {
-        "released": false
+        "released": false,
+        "concept_passed": false,
+        "note": ""
       },
       "p4_review": {
         "review_required": true
@@ -171,7 +177,9 @@
         "pending": false
       },
       "p3_release": {
-        "released": false
+        "released": false,
+        "concept_passed": false,
+        "note": ""
       },
       "p4_review": {
         "review_required": true
@@ -181,8 +189,8 @@
       "id": "card-05",
       "title_zh": "智盒会议亭",
       "title_en": "Smart-Box Meeting Pavilion",
-      "protocol_status": "released",
-      "outcome": "released",
+      "protocol_status": "concept_released_pending_review",
+      "outcome": "concept_released_pending_review",
       "dispatch_schema_valid": true,
       "audit_complete": true,
       "status_light": {
@@ -199,11 +207,12 @@
         "declared": true
       },
       "p2_test": {
-        "pending": false,
-        "note": "P2 独立复测已完成；持续运行中的 P4 复盘复测按节拍继续"
+        "pending": true
       },
       "p3_release": {
-        "released": true
+        "released": false,
+        "concept_passed": true,
+        "note": "concept released pending review：概念推演通过 P3 要件，实际发布待正式门复核"
       },
       "p4_review": {
         "review_required": true
@@ -234,7 +243,9 @@
         "pending": true
       },
       "p3_release": {
-        "released": false
+        "released": false,
+        "concept_passed": false,
+        "note": ""
       },
       "p4_review": {
         "review_required": true
@@ -265,7 +276,9 @@
         "pending": false
       },
       "p3_release": {
-        "released": false
+        "released": false,
+        "concept_passed": false,
+        "note": ""
       },
       "p4_review": {
         "review_required": true
@@ -296,7 +309,9 @@
         "pending": true
       },
       "p3_release": {
-        "released": false
+        "released": false,
+        "concept_passed": false,
+        "note": ""
       },
       "p4_review": {
         "review_required": true
@@ -327,7 +342,9 @@
         "pending": false
       },
       "p3_release": {
-        "released": false
+        "released": false,
+        "concept_passed": false,
+        "note": ""
       },
       "p4_review": {
         "review_required": true
@@ -358,7 +375,9 @@
         "pending": true
       },
       "p3_release": {
-        "released": false
+        "released": false,
+        "concept_passed": false,
+        "note": ""
       },
       "p4_review": {
         "review_required": true
@@ -368,8 +387,8 @@
       "id": "card-11",
       "title_zh": "AI咖啡机器人驿站",
       "title_en": "AI Barista Robot Station",
-      "protocol_status": "released",
-      "outcome": "released",
+      "protocol_status": "concept_released_pending_review",
+      "outcome": "concept_released_pending_review",
       "dispatch_schema_valid": true,
       "audit_complete": true,
       "status_light": {
@@ -386,11 +405,12 @@
         "declared": true
       },
       "p2_test": {
-        "pending": false,
-        "note": "P2 独立复测已完成；持续运行中的 P4 复盘复测按节拍继续"
+        "pending": true
       },
       "p3_release": {
-        "released": true
+        "released": false,
+        "concept_passed": true,
+        "note": "concept released pending review：概念推演通过 P3 要件，实际发布待正式门复核"
       },
       "p4_review": {
         "review_required": true
@@ -400,8 +420,8 @@
       "id": "card-12",
       "title_zh": "开发者露天工位代码墙",
       "title_en": "Developer Open-Air Workstations & Code Wall",
-      "protocol_status": "released",
-      "outcome": "released",
+      "protocol_status": "concept_released_pending_review",
+      "outcome": "concept_released_pending_review",
       "dispatch_schema_valid": true,
       "audit_complete": true,
       "status_light": {
@@ -418,11 +438,12 @@
         "declared": true
       },
       "p2_test": {
-        "pending": false,
-        "note": "P2 独立复测已完成；持续运行中的 P4 复盘复测按节拍继续"
+        "pending": true
       },
       "p3_release": {
-        "released": true
+        "released": false,
+        "concept_passed": true,
+        "note": "concept released pending review：概念推演通过 P3 要件，实际发布待正式门复核"
       },
       "p4_review": {
         "review_required": true
@@ -453,7 +474,9 @@
         "pending": true
       },
       "p3_release": {
-        "released": false
+        "released": false,
+        "concept_passed": false,
+        "note": ""
       },
       "p4_review": {
         "review_required": true
@@ -484,7 +507,9 @@
         "pending": true
       },
       "p3_release": {
-        "released": false
+        "released": false,
+        "concept_passed": false,
+        "note": ""
       },
       "p4_review": {
         "review_required": true
@@ -515,7 +540,9 @@
         "pending": true
       },
       "p3_release": {
-        "released": false
+        "released": false,
+        "concept_passed": false,
+        "note": ""
       },
       "p4_review": {
         "review_required": true
