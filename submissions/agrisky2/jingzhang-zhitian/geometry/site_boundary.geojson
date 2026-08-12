@@ -1,13 +1,13 @@
 {
   "type": "FeatureCollection",
-  "name": "site_boundary",
+  "name": "SITE_BOUNDARY",
   "features": [
     {
       "type": "Feature",
       "id": "PROV-SITE-001",
       "properties": {
         "id": "PROV-SITE-001",
-        "layer": "site_boundary",
+        "layer": "SITE_BOUNDARY",
         "scope_id": "overall_design_area",
         "name_zh": "总体设计范围",
         "source_type": "agent_inferred_from_public_data",
