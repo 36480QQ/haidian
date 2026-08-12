@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "package_id": "jingzhang-ai-nexus",
   "project_id": "centennial-jingzhang-ai-belt",
   "site_package_version": "0.1.0",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "b938beff0691fecb68bd29128f1dc5465221b415f116f9c49c35f7f49e99d366"
+      "sha256": "b63b25184c2de0a1accbef5b70da8849773bfd3fc1bd49eecb5f891eb36d9545"
     },
     {
       "path": "compliance_matrix.json",
