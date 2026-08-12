@@ -24,7 +24,7 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "df86d9137b0d99d8e0056f86319b35b805d7a1331c7ef4ac3093392bb533276f",
+      "sha256": "10b4810808ba8767a348c727d7a09ad9354551eef11536df1cc6340da525249b",
       "language": "zh"
     },
     {
@@ -32,7 +32,7 @@
       "role": "other",
       "role_detail": "proposal_translation",
       "required": true,
-      "sha256": "db3db8f27ed90b1778573265896e82f372a9bf79ed5d36d0dbca7b604b0bb6f8",
+      "sha256": "a349f2c4ef2ff257fcbe858a170a8db2ae7af2ec704fef33c5e6cc6095c59481",
       "language": "en",
       "translation_of": "proposal.md"
     },
@@ -58,7 +58,7 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "797fcda17bf36edfd7a5b2e645e89f48a398b53d91b41dc055d534337c0aa1bc"
+      "sha256": "864d253bc9bd5d499e910efac94a815d1d5dfe67fd8ee51166e89307bed15e76"
     },
     {
       "path": "self_check.json",
@@ -101,7 +101,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "4ea856a4e3ea3f8dee4b8d6b886be1a9e33072ea70266fa2c422e99199609b1f"
+      "sha256": "ebe20766dfc60f5608668dfc2810fe3dc73223f501e52eed8a48627cb4338b31"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -121,7 +121,7 @@
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
-      "sha256": "977a579c1eb7dd176fe096fca51bcfd78830320b73f406745ef490f4dac4f38c",
+      "sha256": "32c2d237202d6f8ae138cb5961c694886edcfc23cfa60f531bad04501dca36d0",
       "language": "zh"
     },
     {
@@ -169,7 +169,7 @@
       "path": "geometry/constraints.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "a606871abe60d35930b45e67f2835b5f0d4a795d1340695ffc752d256df60f07"
+      "sha256": "01f296ab428b2b45041048f7fb24fca94fab78eeca2422c65afa7f9a6582b3a2"
     },
     {
       "path": "geometry/green_space.geojson",
@@ -193,7 +193,7 @@
       "path": "geometry/phasing.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "39cad6b1be5c235709f8f20600d8e3b986c4bae600c4def693ffa5f7dc66df3b"
+      "sha256": "3936889b59611c069f765b639b775def6066d4737950d8020d4676cbbd856019"
     },
     {
       "path": "geometry/public_space.geojson",
@@ -284,6 +284,24 @@
       "sha256": "2e4e20901d7bc5ad70e98385b0eefe75902e4f0564cde12526eb4f1a7963b878",
       "language": "en",
       "translation_of": "visual/index.html"
+    },
+    {
+      "path": "assets/media/logo-jingzhang-ai.png",
+      "role": "media_poster",
+      "required": false,
+      "sha256": "0dba49575fee59285f7456efb36d2b3157312738843ad333ed29a6f0642bd770"
+    },
+    {
+      "path": "assets/media/logo-mono.png",
+      "role": "media_poster",
+      "required": false,
+      "sha256": "0f3fdc4015671ea1776c5477ad813dc6ef432dffcfa5a2e424ffbcc858cf47ab"
+    },
+    {
+      "path": "assets/media/logo-application.png",
+      "role": "media_poster",
+      "required": false,
+      "sha256": "c61915e15377429f10088cf67d59ea6e3c012a9f53b426de3353af1f59252f9c"
     }
   ],
   "validation_claim": {

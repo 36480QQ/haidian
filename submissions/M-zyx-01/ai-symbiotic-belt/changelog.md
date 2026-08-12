@@ -1,5 +1,15 @@
 # 方案迭代记录
 
+## v0.1.10 - 2026-08-12（PR #1412 第三轮评审 P1/P2 补充）
+
+- **Logo 概念版**：生成 assets/media/logo-jingzhang-ai.png（主 Logo：人字形轨道+AI 节点）、logo-mono.png（单色版）、logo-application.png（应用示例）；manifest 登记 3 个 asset
+- **8 案例来源登记**：sources.json 新增 PROP-SRC-011~018（Stanford/King's Cross/Nanshan/Shibuya/one-north/ETH/Vector/Huaqiangbei，Wikipedia CC BY-SA）
+- **场景数据治理**：proposal 中英新增"场景数据生命周期与治理"节（数据生命周期/合法性基础/人工复核触发/申诉退出/非数字替代/事故响应停运/独立审计 + SC1/SC7/SC9 专项 PIA）
+- **包容性画像 P6-P10**：proposal 中英新增周边老年居民/残障人士/儿童照护者/低收入租户小商户/非智能手机用户（含防迁移、无障碍、线下替代通道、数字退出权）
+
+### 验证
+- node --test 全量通过；官方 validate/spatial/visual/professional 全 PASS
+
 ## v0.1.9 - 2026-08-12（PR #1412 第三轮 AI 评审修复：P0 可读性与指标一致性）
 
 ### 修复内容（评审"必须完成的下一步"P0 项）

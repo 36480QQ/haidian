@@ -170,6 +170,13 @@ Spatial structure: "One Spine · Three Cores · Two Wings"
 | P3 | Corporate innovation scout | Information density + networking | Zhongguancun Wing + AI experience street | 1-2 weeks/quarter |
 | P4 | International policy official | Site visits + meeting spaces | Beitaipingzhuang governance center | 2-5 days |
 | P5 | AI-curious citizen | Understandable experiences + family-friendly | Jing-Zhang Park + Wudaokou | Weekly |
+| P6 | Local senior residents | Accessible mobility, human service counters, health & social spaces | Jing-Zhang Park elder-friendly nodes + community centres | Daily |
+| P7 | Persons with disabilities | Fully accessible routes, non-visual navigation, assistive-tech compatibility | Universal design across all public scenarios | Weekly |
+| P8 | Children & caregivers | Safe child spaces, family facilities, pram-friendly routes | Wudaokou life circle + park family nodes | Weekly |
+| P9 | Low-income tenants & small merchants | Affordable commerce, anti-displacement safeguards, rent & business support | Existing residential areas + street-front renewal | Daily |
+| P10 | Non-smartphone users | In-person services, phone/counter alternatives, digital opt-out right | Offline counters in all scenarios | On demand |
+
+*Note: P6-P10 are public-interest and inclusivity personas (per review); baselines require community survey validation.*
 
 ### AI+ Scenario Cards (10) [depth:three_key_area_detailed_design]
 
@@ -189,6 +196,20 @@ Spatial structure: "One Spine · Three Cores · Two Wings"
 *Three testing/validation scenarios: SC4, SC6, SC9.*
 
 All scenarios follow edge-computing-first, human-override, and public-transparency principles.
+
+### Scenario Data Lifecycle & Governance (review deepening) [depth:risk_missing_data]
+
+A unified data-governance framework applies to all scenarios SC1-SC10:
+
+1. **Lifecycle**: purpose disclosed before collection -> minimal collection -> processing logged -> retention (30-180 days by default, then deletion/anonymization) -> deletion on service termination.
+2. **Legal basis & access control**: consent/statutory/public-interest basis; role-based access (citizen/operator/auditor); two-person review for log access.
+3. **Human review triggers**: health (SC1/SC7), public safety (SC9), and financial (SC5) outputs require human confirmation before action; AI only recommends.
+4. **Appeal & opt-out**: every user may request human explanation, access, or deletion; all digital services provide offline alternatives (counters/phone) for non-digital users (P10).
+5. **Non-digital alternatives**: SC3/SC4/SC8 etc. retain cash/human/non-smart channels; digital is never the only option.
+6. **Incident response & suspension**: graded response for data breaches/misjudgements (notify within 24h); any scenario with 3 high-risk misjudgements or failed compliance audits is suspended.
+7. **Independent audit**: annual third-party data-governance and inclusivity audit, public summary.
+
+*Note: design framework; to be refined with operators, data-compliance teams and regulators; high-risk scenarios (SC1/SC7/SC9) require a dedicated Privacy Impact Assessment (PIA) before pilots.*
 
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
