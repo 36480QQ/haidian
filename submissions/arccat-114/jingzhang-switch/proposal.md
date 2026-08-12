@@ -24,6 +24,25 @@ iteration: "v1.0"
 
 方案速览：一，这是一片已建成的城区，本方案不重新规划这座城市，只为它接通断裂的公共界面，并在触媒点上示范更新的做法[depth:retain_renovate_demolish]；二，道岔符号双关历史与未来，命名、Logo、导视共用一套"钢轨—道岔"语汇[depth:overall_spatial_structure]；三，12个AI场景由铁路语汇状态机统一治理，红牌暂停、人工接管、可退役[depth:three_key_area_detailed_design]；四，26个用地单元、约9.7公里绿廊主轴与18项指标由确定性管道生成，官方数据到位即可整包重算[metric:site_area_sqm]；五，首开行动含一次完整的"红牌撤回"演练，4处朝圣地标对接征集活动公布的纪念机制[source:AGENT-TASKBOOK]。**统一声明：本方案为AI生成的开放共创建议，基于临时粗略边界，全部空间内容均为概念建议、参考方案，供专业团队深化研究，不构成政府审定结论；官方红线与控规条件到位后，全部面积、比例与位置关系须整体重算。本声明覆盖全文。**[source:PROVISIONAL-BOUNDARIES][depth:risk_missing_data]
 
+### 证据边界台账（四态）
+
+本方案把"已知与未知的边界"做成显式可审计结构，不把未知写成已知，也不因未知回避设计讨论：
+
+| 证据项 | 状态 | 说明 |
+|--------|------|------|
+| 三层范围文字四至与约面积（43.6/11.4/368.4 公顷） | ✅ 已验证 | 公告原文[source:OFFICIAL-ANNOUNCEMENT] |
+| 三处重点区名称与约面积（192.1/104.3/72.0 公顷） | ✅ 已验证 | 公告原文[source:OFFICIAL-ANNOUNCEMENT] |
+| 控规草案空间结构"一带一轴两心多点" | ✅ 已验证 | 官方"一张图读懂"读本[source:HD00-1601-DRAFT-GUIDE] |
+| 京张公园二期开放（9 公里/约53公顷） | ✅ 已验证 | 官方公开报道（2026-08-06）[source:JZ-PARK-PHASE2-OPEN-2026] |
+| 京张公园一期开放（约2.5公里） | ✅ 已验证 | 官方公开报道（2023-06）[source:JZ-PARK-PHASE1] |
+| 北京 AI 产业口径（2500企业/212模型/4500亿） | ✅ 已验证 | 官方口径（全市）[source:BJ-AI-INDUSTRY-2026] |
+| 总体设计范围精确多边形 | ⏳ 待官方 | 本包使用公告文字四至派生的临时粗略边界[assumption:A-BOUNDARY-001] |
+| 三处重点区精确多边形 | ⏳ 待官方 | 临时粗略矩形，官方到位后重算[assumption:A-KEYAREA-002] |
+| 法定控制值（容积率/高度/密度/绿地率/退线） | ⏳ 待官方图则 | 全部登记 unknown，不推测伪精确值[metric:floor_area_ratio] |
+| 现状建筑与权属底数 | ⏳ 待官方普查 | 概念基底仅覆盖三处重点区示意，不作现状判断[assumption:A-CONTROLS-003] |
+| 道路红线/轨道接口/市政容量 | ⏳ 待专项资料 | 交通市政为概念骨架，不作工程结论[depth:risk_missing_data] |
+| 概念设计内容（用地/建筑/场景/指标） | 🟡 本包概念建议 | 低置信度标注，官方数据到位后整包重算[depth:metrics_recalculation] |
+
 ![总体概念与空间证据图](assets/figures/site-overview.png)
 
 ## 评审问答速览
@@ -143,7 +162,7 @@ Logo 方向：以两条钢轨相切构成"道岔"符号——两段轨线从远�
 
 全部场景采用铁路语汇状态机治理：**绿灯通行、黄灯限速（人工抽查）、红灯暂停（可退役）**，每张卡标注空间位置、服务对象、数据边界、人工复核与运营主体[standard:GENERATIVE-AI-INTERIM-MEASURES]。状态机已形式化为机器可读协议（`visual/assets/switch-protocol.json`）：迁移须人工签认、红不得直转绿、退役为终态、每季度一次红牌撤回演练——城市对智能体开放的是接口，人对智能体保留的是中断权[depth:three_key_area_detailed_design]。
 
-**公共利益三原则**贯穿全部场景：**服务等价**（不使用 AI 者获得等价人工服务）、**弱势保护**（老幼病障不作为首轮测试对象）、**红牌复核权**（受影响群体代表可发起红牌暂停）[standard:GENERATIVE-AI-INTERIM-MEASURES][source:AGENT-TASKBOOK]。协议可被第三方检验：`node visual/assets/verify_switch_protocol.js` 对协议做 10 项确定性检查（状态机合法性/迁移规则/红不直转绿/场景卡字段/责任矩阵等），当前全部通过[source:DESIGN-CONCEPT-SWITCH][depth:three_key_area_detailed_design]。
+**公共利益三原则**贯穿全部场景：**服务等价**（不使用 AI 者获得等价人工服务）、**弱势保护**（老幼病障不作为首轮测试对象）、**红牌复核权**（受影响群体代表可发起红牌暂停）[standard:GENERATIVE-AI-INTERIM-MEASURES][source:AGENT-TASKBOOK]。三条底线都有条文级依据：《无障碍环境建设法》第三十九条要求公共服务场所为残疾人、老年人提供无障碍服务，涉及医疗健康、社会保障等事项应**保留现场指导、人工办理等传统服务方式**[standard:BARRIER-FREE-ENVIRONMENT-LAW]——"服务等价"即该条的方案转译；《生成式人工智能服务管理暂行办法》第十四条要求提供者对违法内容**停止生成、停止传输、整改并报告**（对应红牌暂停与整改复核）、第十五条要求**建立健全投诉举报机制并公布处理流程与反馈时限**[standard:GENERATIVE-AI-INTERIM-MEASURES]——"红牌复核权"即该条的方案转译。协议可被第三方检验：`node visual/assets/verify_switch_protocol.js` 对协议做 10 项确定性检查（状态机合法性/迁移规则/红不直转绿/场景卡字段/责任矩阵等），当前全部通过[source:DESIGN-CONCEPT-SWITCH][depth:three_key_area_detailed_design]。
 
 | # | 场景卡 | 空间落位 | 服务对象 | 状态机 |
 |---|--------|---------|---------|--------|
@@ -162,6 +181,8 @@ Logo 方向：以两条钢轨相切构成"道岔"符号——两段轨线从远�
 
 其中场景4、5、11为产业测试验证场景（3张），满足任务书不少于3张的要求；场景1、7、12承载朝圣与荣誉展示功能[source:AGENT-TASKBOOK][depth:three_key_area_detailed_design]。
 
+**场景叙事：一位创业者的"换轨日"**——早上九点，她在始发场 0 公里广场参加"发车仪式"：AI 辅助的商业计划评审先由专家复核，绿灯放行[data:geometry/public_space.geojson#PUBLIC-001]；午后她沿绿廊主轴走到编组场，把脱敏数据送进企业数据沙箱做合规训练，沙箱的黄灯状态显示"审计中"，她能看到数据边界与退出条件[data:geometry/public_space.geojson#PUBLIC-003]；傍晚她回到岔心广场的换轨纪念碑前，看到开发者荣耀墙今天新增了两位贡献者的铭刻——她的开源贡献积分也已计入[data:geometry/public_space.geojson#PUBLIC-002]。全程没有一次"试点永久化"：每个场景都挂着信号灯状态与下次对时时间，红牌可暂停、人工可接管、到期可退役[standard:GENERATIVE-AI-INTERIM-MEASURES][source:DESIGN-CONCEPT-SWITCH]。
+
 **场景-空间-运营映射**（agent.3 完整矩阵）：12 张场景卡逐一映射到空间图层、运营主体、数据边界、人工复核与退出路径，机器可读版见 `visual/assets/switch-protocol.json`；三档场景分区对应"一岔三场两翼"的空间落位——S1 高开放（岔心/绿廊：场景1/2/3/7/12）、S2 中开放（原点/大钟寺：场景5/6/8/9/10）、S3 受控（众智园实验室：场景4/11）[source:AGENT-TASKBOOK][depth:three_key_area_detailed_design]。三张产业测试场景各配**十一字段试点卡**（基线、试验时段与样本、最小成功阈值、停止阈值、现场责任人、人工等价服务、数据删除证明、复盘周期、受益或担风险群体、资源与许可、申诉与问责路径），阈值一律试点前由实测基线冻结，本包不编造数值[source:DESIGN-CONCEPT-SWITCH][depth:phasing_implementation]：扳道房人工接管测试场以"红牌演练完成且人工接管零事故"为最小成功口径；编组场数据沙箱以"脱敏数据合规训练通过独立审计"为最小成功口径；隧道隐私盾测试场以"隐私计算验证通过独立审计且无数据泄露"为最小成功口径。
 
 ## 七、用地、建筑规模与拆改留方案
@@ -179,6 +200,19 @@ Logo 方向：以两条钢轨相切构成"道岔"符号——两段轨线从远�
 ![绿廊主轴标准断面（概念研究）](assets/figures/greenway-section.png)
 
 ![站前广场断面（概念研究）](assets/figures/plaza-section.png)
+
+**六类断面尺寸表（概念研究）**：
+
+| 断面类型 | 概念总宽 | 组成（自界面至界面） |
+|---------|---------|---------------------|
+| 绿廊主轴标准段 | 约 200 米 | 退台界面（≤30m）—绿廊 12m—漫步道 12m—骑行道 4m—组件带 3m—绿廊 12m—退台界面（≤30m）[data:geometry/roads.geojson#ROAD-001] |
+| 站前城市街道 | 约 40 米 | 建筑首层（开放界面）—人行 6m—骑行 3m—车行—绿带 |
+| 编组场站前广场段 | 约 80 米 | 建筑—站前广场 80m—绿廊 12m—站点接驳 |
+| 校园界面街 | 约 30 米 | 檐廊 3m—人行 4m—骑行 3m—既有车行—首层开放界面 |
+| 小月河滨水段 | 约 45 米 | 社区界面—人行 4m—绿岸 12m—河道—生态岸 8m—园区界面 |
+| 加速轨道产业段 | 梯度组织 | 研发楼群（8-12层）—可控测试庭院—信号广场（全栈发布场） |
+
+全部为概念研究尺寸，供交通与市政专业结合红线与实测深化，不作工程结论[source:DESIGN-CONCEPT-SWITCH][depth:traffic_rail_slow_parking]。
 
 无障碍设计贯彻《无障碍环境建设法》，绿廊全段考虑轮椅与婴儿车通行[standard:BARRIER-FREE-ENVIRONMENT-LAW]。市政与新型基础设施：端侧算力节点沿绿廊布设（灯杆、站亭集成），分布式能源与智慧路灯结合，既有市政管线改造与公共空间更新同步实施，容量测算留待专业评估[depth:municipal_new_infrastructure][assumption:A-CONTROLS-003]。公共服务设施按"三场+岔心"配置：岔心游客服务中心、原点社区中心、大钟寺商务服务中心、众智园产业服务楼，形成15分钟创新服务圈[depth:municipal_new_infrastructure][data:geometry/buildings.geojson#BLDG-015]。
 
