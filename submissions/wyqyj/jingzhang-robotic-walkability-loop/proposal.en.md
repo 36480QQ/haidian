@@ -21,7 +21,7 @@ This proposal treats the Jingzhang Railway Heritage Park and its surrounding urb
 
 The formal package uses only public repository materials and the repository-registered provisional geometry. The announcement, agent taskbook, site package and source register form the evidence base; `sources.json` records purpose, licence status and limitations, while `assumptions.json` records items requiring human confirmation. [source:SOURCE-REGISTRY] [source:SITE-PACKAGE] [source:PROCESSED-FACT-PACK]
 
-The overall boundary and the three registered key areas are temporary rough geometries with `official_boundary=false` and `geometry_role=provisional_constraint`. The approximately 11.4 km² area and three area figures support discussion, drawings and self-check only; they are not official redlines or survey results. All spatial metrics should be recalculated when official geometry is supplied. [source:BOUNDARY-SOURCE] [data:geometry/key_areas.geojson#PROV-KEY-001]
+The overall boundary and the **three registered key detailed-design areas** are temporary rough geometries with `official_boundary=false` and `geometry_role=provisional_constraint`. The approximately 11.4 km² area and three area figures support discussion, drawings and self-check only; they are not official redlines or survey results. All spatial metrics should be recalculated when official geometry is supplied. The five service nodes in this proposal are operational scenario interfaces, not five key detailed-design areas or statutory districts. [source:BOUNDARY-SOURCE] [data:geometry/key_areas.geojson#PROV-KEY-001]
 
 ## Three-level spatial framework
 ![Site overview](assets/figures/site-overview.en.png)
@@ -33,11 +33,13 @@ The overall boundary and the three registered key areas are temporary rough geom
 
 **Level 3 | City-agent governance.** Each task has dispatch, trajectory audit, incident escalation, remote emergency stop, human takeover, public complaint and data-minimisation mechanisms. The agent produces an understandable task record, responsible operator and resolution log; the model recommends but does not own an unexplainable public-space decision. [source:AGENT-TASKBOOK] [depth:robotic_governance]
 
-Together these levels form a “continuous human surface—robot service line—visible governance layer”. New `geometry/robot_nodes.geojson` and `geometry/robotic_network.geojson` express nodes and network separately from land use, buildings, roads, green space and public space, preventing conceptual operating lines from being read as statutory infrastructure. [data:geometry/roads.geojson#ROAD-001] [data:geometry/robot_nodes.geojson#NODE-ZHONGZHIYUAN] [data:geometry/robotic_network.geojson#ROBOT-NETWORK-001]
+Together these levels form a “continuous human surface—robot service line—visible governance layer”. In addition to the existing slow-movement concept centreline, `geometry/roads.geojson` uses identifiable `SCENARIO_NODE` and `ROAD_CENTERLINE` features to express five service nodes and the loop. Both remain design concepts, not statutory roads or approved robot routes. [data:geometry/roads.geojson#ROAD-001] [data:geometry/roads.geojson#NODE-ZHONGZHIYUAN] [data:geometry/roads.geojson#ROBOT-NETWORK-001]
 
 ## Coordinated research area, industry and future city
 
-The five task areas operate as scenario nodes rather than isolated campuses: AI Origin Community hosts public robot demonstrations, dispatch and experience; Zhongzhiyuan AI Autonomous Innovation Acceleration Area hosts R&D, open interfaces and safety validation; Dazhongsi AI Industry Cluster hosts enterprise services, campus delivery and mixed work-living scenes; Zhongguancun Technology Services Wing hosts cross-area connections and service networks; Xiaoyuehe Scenario Enablement Wing hosts park interpretation, inspection, event-day and public-space trials.
+The five task areas operate as scenario service nodes rather than isolated campuses: AI Origin Community hosts public robot demonstrations, dispatch and experience; Zhongzhiyuan AI Autonomous Innovation Acceleration Area hosts R&D, open interfaces and safety validation; Dazhongsi AI Industry Cluster hosts enterprise services, campus delivery and mixed work-living scenes; Zhongguancun Technology Services Wing hosts cross-area connections and service networks; Xiaoyuehe Scenario Enablement Wing hosts park interpretation, inspection, event-day and public-space trials.
+
+The three provisional detailed-design areas correspond only to Zhongzhiyuan, AI Origin and Dazhongsi. Zhongguancun Services Wing and Xiaoyuehe Scenario Wing are cross-area scenario interfaces; the proposal does not claim additional key-area boundaries. Drawings place “five nodes / three detailed-design areas” together to avoid reading an operating concept as statutory scope expansion. [data:geometry/key_areas.geojson#PROV-KEY-001] [data:geometry/roads.geojson#NODE-ZHONGGUANCUN]
 
 The ecosystem is organised as visible trials, reviewable operations and transferable interfaces: public experience stations, enterprise digital-twin testbeds and a city-management audit desk. No investment, operator or implementation commitment is implied; those conditions require later verification. [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [depth:ai_ecosystem_and_talent]
 
@@ -56,8 +58,8 @@ Land-use layers use the repository’s checkable classification codes as concept
 
 The public-realm rule is “enterable ground floors, visible corners and places to pause”. Robot stops must not occupy continuous accessible routes. Service cabinets, charging and maintenance are small, removable and relocatable modules; any fixed construction requires property, fire, traffic and municipal review.
 
-## Five focus areas
-![Five focus areas](assets/figures/key-areas.en.png)
+## Scenario service nodes and detailed-design areas
+![Five service nodes and three provisional detailed-design areas](assets/figures/key-areas.en.png)
 
 
 ### 1. AI Origin Community | Public experience and dispatch origin
@@ -96,7 +98,9 @@ This package does not propose statutory land-use changes, building heights, FAR,
 
 ## Transport, rail, municipal and public-service systems
 
-The mobility rule is “people continue, services retreat, anomalies are taken over”. The concept network does not change existing road functions. Crossings, fire routes, accessible ramps and station entrances are protected from occupation. Four operating states are suggested: green (pedestrian priority), amber (crowd growth and dispatch limits), red (event/incident withdrawal), and black (system failure, human takeover and manual inspection). The `robotic_network.geojson` layer expresses the conceptual centreline and `robot_nodes.geojson` expresses the node interfaces; neither may cover fire access, accessible paths or public-transport priority space. Loop length and node count are reproducible concept metrics, but require field traffic, station-demand and municipal checks before calibration. [data:geometry/robotic_network.geojson#ROBOT-NETWORK-001] [metric:robot_service_node_count] [metric:robot_loop_length_m] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]
+The mobility rule is “people continue, services retreat, anomalies are taken over”. The concept network does not change existing road functions. Crossings, fire routes, accessible ramps and station entrances are protected from occupation. Four operating states are suggested: green (pedestrian priority), amber (crowd growth and dispatch limits), red (event/incident withdrawal), and black (system failure, human takeover and manual inspection).
+
+The `ROBOT-NETWORK-001` centreline is a whole-loop recalculation baseline; actual discussion is segmented. Segment 1 is edge handover only; Segment 2 requires human presence and accessibility checks; Segment 3 is controlled testing only; Segment 4 is low-peak blue-green inspection; Segment 5 is closed by default pending walking continuity, road-rail conflict and management-interface checks. Each segment records its service window, takeover node, event-day action and field-check list; the whole-loop length must not be read as an operating entitlement. [data:geometry/roads.geojson#SERVICE-SEGMENT-01] [data:geometry/roads.geojson#SERVICE-SEGMENT-05] [metric:robot_service_node_count] [metric:robot_loop_length_m] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]
 
 Nodes may include removable stops, low-power charging, task-status boards and human-service boxes, subject to municipal, power, fire, traffic and park-management review. Only minimum event logs needed for task completion are retained; raw video and audio are not included in this package.
 
@@ -116,11 +120,15 @@ Green and public space are not leftover robot corridors: they are the continuous
 
 The policy gate is “rules before equipment, human before automation, disclosure before expansion”. Safety responsibility, data minimisation, accessibility, event-day withdrawal and public appeal come before procurement or scale-up. [depth:implementation_phasing] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]
 
+### Minimum pilot and phase gate
+
+The minimum pilot changes one variable only: under a **single node, fixed off-peak window and human presence**, whether one low-risk task may enter shared space. The proposal does not pre-set observation duration, task count or device model. Success signals are an uninterrupted pedestrian spine, a named person able to take over every exception and traceable public feedback. Failure signals are blocked accessible clearance, unavailable emergency stop or takeover, incomplete event-day withdrawal, or a complaint without an accountable resolver. Any failure keeps the system at the current phase while crowd, conflict, takeover and feedback records are recovered; it does not advance the phase. This experiment verifies rules, not automation superiority. [metric:pilot_gate_pass_rate] [metric:human_takeover_record_rate] [depth:implementation_phasing]
+
 ## Metrics, evidence and compliance
 ![Metrics and implementation evidence](assets/figures/metrics-evidence.en.png)
 
 
-Metrics are divided into spatial recalculation metrics and operating recommendations. The former must be computed from GeoJSON; the latter are concept targets to calibrate through field trials. Current provisional geometry supports site area, building footprint, green ratio, public-space ratio and key-area count. Full values are in `metrics.json`, rather than hand-entered here. Node count, loop length, takeover time and complaint closure time are concept targets, not measured facts.
+Metrics are divided into spatial recalculation, operating-structure and pilot-gate metrics. The first must be computed from GeoJSON; the second describes segment and takeover relationships; the third defines records and gate conditions without claiming measured performance. Current provisional geometry supports site area, building footprint, green ratio, public-space ratio and key-area count. Full values are in `metrics.json`, rather than hand-entered here. Node count and loop length are reproducible concept values, not operational conclusions. [metric:pilot_gate_pass_rate] [metric:human_takeover_record_rate]
 
 The compliance matrix covers announcement tasks, agent-taskbook requirements, professional standards and design-depth items. The A3 booklet, A0 boards, bilingual HTML and five bilingual figures form a readable evidence chain. [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [depth:metrics_recalculation] [metric:site_area_sqm]
 

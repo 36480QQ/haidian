@@ -21,7 +21,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 正式稿只使用仓库公开资料与仓库登记的 provisional geometry。公告、智能体任务书、站点包和来源登记共同构成任务依据；`sources.json` 记录每项资料的用途、许可状态与局限，`assumptions.json` 记录需要人工确认的事项。[source:SOURCE-REGISTRY] [source:SITE-PACKAGE] [source:PROCESSED-FACT-PACK]
 
-当前总体范围和三个已登记重点区域均为 `official_boundary=false`、`geometry_role=provisional_constraint` 的临时粗略边界。约 11.4 平方公里及三个片区面积只用于空间讨论、图件表达和自检，不代表官方红线或精确测绘结果；正式边界补齐后应重新计算全部面积指标。[source:BOUNDARY-SOURCE] [data:geometry/key_areas.geojson#PROV-KEY-001]
+当前总体范围和**三个已登记重点深化区**均为 `official_boundary=false`、`geometry_role=provisional_constraint` 的临时粗略边界。约 11.4 平方公里及三个片区面积只用于空间讨论、图件表达和自检，不代表官方红线或精确测绘结果；正式边界补齐后应重新计算全部面积指标。本文另设的五个服务节点是运行场景接口，不等同于五个重点深化区或法定片区。[source:BOUNDARY-SOURCE] [data:geometry/key_areas.geojson#PROV-KEY-001]
 
 ## 三层范围工作框架
 ![京张铁路遗址公园与五节点步行优先场地总览图](assets/figures/site-overview.png)
@@ -33,11 +33,13 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 **第三层｜城市智能体治理层。** 设立任务派发、轨迹审计、异常上报、远程急停、人工接管、公众申诉和数据最小化机制。每一次任务均生成可读的任务单、责任人和处理记录；模型只提供建议，不拥有不可解释的公共空间决策权。[source:AGENT-TASKBOOK] [depth:robotic_governance]
 
-三层叠合为“人行连续面—机器人服务线—治理可视面”。方案通过新增 `geometry/robot_nodes.geojson` 与 `geometry/robotic_network.geojson` 表达节点和网络，它们与既有用地、建筑、道路、绿地和公共空间图层分开，避免把概念运营线误读为法定交通设施。[data:geometry/roads.geojson#ROAD-001] [data:geometry/robot_nodes.geojson#NODE-ZHONGZHIYUAN] [data:geometry/robotic_network.geojson#ROBOT-NETWORK-001]
+三层叠合为“人行连续面—机器人服务线—治理可视面”。`geometry/roads.geojson` 在既有慢行概念中心线之外，以可识别的 `SCENARIO_NODE` 和 `ROAD_CENTERLINE` 要素表达五个服务节点与闭环；二者均为设计概念，不构成法定道路或获批机器人路线。[data:geometry/roads.geojson#ROAD-001] [data:geometry/roads.geojson#NODE-ZHONGZHIYUAN] [data:geometry/roads.geojson#ROBOT-NETWORK-001]
 
 ## 统筹研究范围产业与未来城市研究
 
-京张智行环把五个任务区域当作“场景节点”而不是孤立园区：AI 原点社区承担机器人服务展示、调度和公众体验；众智园 AI 自主创新加速区承担研发测试、开放接口和安全验证；大钟寺 AI 产业集聚区承担企业服务、园区配送和职住混合场景；中关村科技服务翼承担跨片区接驳、创新资源和服务网络；小月河场景赋能翼承担公园导览、巡检、活动日和公共空间试验。五节点之间以步行和公共交通可达性为主，机器人只补足短途服务和运维。
+京张智行环把五个任务区域当作“场景服务节点”而不是孤立园区：AI 原点社区承担机器人服务展示、调度和公众体验；众智园 AI 自主创新加速区承担研发测试、开放接口和安全验证；大钟寺 AI 产业集聚区承担企业服务、园区配送和职住混合场景；中关村科技服务翼承担跨片区接驳、创新资源和服务网络；小月河场景赋能翼承担公园导览、巡检、活动日和公共空间试验。五节点之间以步行和公共交通可达性为主，机器人只补足短途服务和运维。
+
+三个暂定重点深化区只对应众智园、AI 原点和大钟寺三个已登记空间范围；中关村服务翼与小月河服务翼是跨片区场景接口，暂不主张新增重点区边界。图面以“5 个节点 / 3 个深化区”并置表达，避免把运营构想误读为法定范围扩大。[data:geometry/key_areas.geojson#PROV-KEY-001] [data:geometry/roads.geojson#NODE-ZHONGGUANCUN]
 
 建议形成“可见的试验—可复盘的运营—可迁移的接口”三类产业生态：面向公众的机器人体验站、面向企业的数字孪生测试台、面向城市管理的安全审计台。该生态不承诺投资或运营主体，需由后续专业团队、产权人和管理部门核实并深化。[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [depth:ai_ecosystem_and_talent]
 
@@ -56,8 +58,8 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 城市界面以“首层可进入、转角可看见、节点可停留”为基本控制建议。机器人停靠点不占用连续无障碍带，服务柜、充电和维护设施采用可撤除、可迁移的小型模块；任何固定化建设需重新取得产权、消防、交通和市政条件。
 
-## 重点区域详细设计
-![五大重点区域](assets/figures/key-areas.png)
+## 重点区域详细设计：场景服务节点与重点深化区
+![五个服务节点与三个暂定重点深化区](assets/figures/key-areas.png)
 
 
 ### 1. AI 原点社区｜公众体验与调度原点
@@ -96,7 +98,9 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ## 交通、轨道、市政与公共服务设施
 
-智行环的交通原则是“人行不断、服务可退、异常可接管”。概念网络不改变既有道路功能；交叉口、消防通道、无障碍坡道和地铁出入口均视为不可侵占空间。建议设置四级运行状态：绿色（步行优先、机器人低速）、黄色（人群增多、调度限流）、红色（活动/事故、机器人退出）、黑色（系统故障、人工接管与人工巡检）。运行边界以 `robotic_network.geojson` 的概念中心线和节点接口表达，空间上不得覆盖消防、无障碍和公共交通优先通道；机器人服务线长度与节点数量仅作为可复算的概念指标，须在现场交通组织、轨道站点客流和市政条件核验后校准。[data:geometry/robotic_network.geojson#ROBOT-NETWORK-001] [metric:robot_service_node_count] [metric:robot_loop_length_m]
+智行环的交通原则是“人行不断、服务可退、异常可接管”。概念网络不改变既有道路功能；交叉口、消防通道、无障碍坡道和地铁出入口均视为不可侵占空间。建议设置四级运行状态：绿色（步行优先、机器人低速）、黄色（人群增多、调度限流）、红色（活动/事故、机器人退出）、黑色（系统故障、人工接管与人工巡检）。
+
+`ROBOT-NETWORK-001` 仅为全环复算基线；实际讨论应按五个候选服务分段进行。第 1 段只讨论边缘交接，第 2 段须完成人工在场与无障碍核验，第 3 段只用于受控测试，第 4 段只讨论低峰蓝绿巡检，第 5 段默认关闭并等待连续步行、道路轨道冲突与管理界面核验。每段均记录服务窗、接管节点、活动日动作和现场核验清单；不得以整环长度推定可运营范围。[data:geometry/roads.geojson#SERVICE-SEGMENT-01] [data:geometry/roads.geojson#SERVICE-SEGMENT-05] [metric:robot_loop_length_m]
 
 节点设施包括可撤除停靠位、低功耗充电、任务显示牌和人工服务箱，均须经市政、电力、消防、交通和公园管理条件核验。网络运行只保存完成任务所需的最小事件日志；原始视频或声学数据不进入本投稿包。
 
@@ -116,11 +120,15 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 政策建议采用“先规则、后设备；先人工、后自动；先公开、后扩展”的闸门：安全责任、隐私最小化、无障碍优先、活动日退出和公众申诉先于设备采购或规模扩张。[depth:implementation_phasing] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]
 
+### 最小试点与阶段闸门
+
+最小试点只改变一个变量：在**单一节点、固定低峰时段、人工在场**条件下，是否允许一项低风险任务进入共享空间。观察周期、任务数量和设备型号不在本方案预设。成功信号是：步行主轴未被占用、每次异常可由指定责任人完成接管、公众反馈可追溯处理；失败信号是：无障碍净空受阻、急停或接管不可用、活动日退出未完成、投诉无责任人闭环。出现任一失败信号即停留在当前阶段并回收人流、冲突点、接管记录和反馈数据，不进入下一期。该实验用于核验规则，不用于证明自动化优越性。[metric:pilot_gate_pass_rate] [metric:human_takeover_record_rate] [depth:implementation_phasing]
+
 ## 指标体系、面积复算与合规矩阵
 ![指标与实施证据](assets/figures/metrics-evidence.png)
 
 
-指标分为**空间复算指标**和**运营建议指标**。前者必须从 GeoJSON 计算，后者在现场试验后校准。当前 provisional geometry 推导的空间指标为：总体范围面积、建筑基底面积、绿地率、公共空间率和重点区域数量；完整数值见 `metrics.json`，不在正文重复手填。机器人节点数量、环线长度、接管响应时间和投诉闭环时间均标记为概念目标，不冒充实测值。
+指标分为**空间复算指标**、**运行结构指标**和**试点闸门指标**。前者必须从 GeoJSON 计算；运行结构指标只说明服务分段与接管关系；试点闸门指标只定义应收集的记录和通过条件，均不冒充实测绩效。当前 provisional geometry 推导的空间指标为：总体范围面积、建筑基底面积、绿地率、公共空间率和重点区域数量；完整数值见 `metrics.json`，不在正文重复手填。机器人节点数量与环线长度是概念网络的复算值，不能替代现场运营结论。[metric:pilot_gate_pass_rate] [metric:human_takeover_record_rate]
 
 合规矩阵覆盖公告任务、智能体任务书、专业标准和设计深度；每一章均以来源、标准、深度、空间数据或指标锚点支撑。A3 文册、A0 展板、双语 HTML 和五张双语图件共同构成可读证据链。[standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [depth:metrics_recalculation]
 
