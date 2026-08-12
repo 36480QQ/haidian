@@ -1,5 +1,22 @@
 # 方案迭代记录
 
+## v0.5 - 2026-08-12
+
+- Follow-up enhancement after merged upstream PR #1954, whose final intake decision recorded Review Agent score 71/100 with mandatory rejection and all four local gates passed.
+- Added a bilingual **three positionings → five functions → three areas/two wings → C7** coordination loop so taskbook structure is visible as a design system rather than only a compliance entry.
+- Added a bilingual **full-factor AI ecosystem map** covering land, space, industry, capital, talent, compute, data and scenarios through research → translation → testing → adoption → long-term life → C7 feedback.
+- Expanded the ten AI+ scenarios into bilingual scenario cards with place/users, real problem, AI enhancement, non-AI baseline/exit and concept-stage acceptance evidence.
+- Added a bilingual regional-collaboration validation matrix for Beiyuwei Community, Future Science City, Huairou Science City, Beijing E-Town and Beijing–Tianjin–Hebei; every relationship is explicitly a potential interface rather than an established partnership, funding, data-sharing or administrative commitment.
+- Added a bilingual implementation/operations matrix linking project, space, proposed role, prerequisite, start/stop threshold, maintenance responsibility and acceptance KPI.
+- Added scenario-level privacy/data governance covering location/route, health/care, home environment, account/identity, behavior/usage and research/enterprise data with minimisation, access, retention/deletion, human review and opt-out rules.
+- Added an original submission-level **C7 COMPLETE LOOP** brand/VI concept direction. It does not reproduce or imitate any government, organizer or third-party official identity; `爽粉堡垒社区 / Shuangfen Fortress Community` remains a local naming easter egg only.
+- Added a public-space component library and three-layer wayfinding contract: permanent physical information first, updateable operations information second, optional AI third; shutting down AI must preserve basic navigation and public service.
+- Expanded `report/copyright_statement.md` into a per-asset rights/generation ledger covering raster figures, new SVGs, HTML, PDFs, GeoJSON, fonts/icons/code status and AI participation.
+- Strengthened `sources.json` with provenance, access date, rights/reuse, limitations, permitted use, collection method, coverage and transformation records; six international cases remain factual-reference-only and no case logo/image/map/web asset is embedded.
+- Integrated all new deliverables into aligned Chinese and English `proposal` files and raised `iteration` to `v0.5`.
+- Maintains all prior provisional-boundary and unknown-statutory-control disclaimers; no new diagram creates an official redline, approved zoning, investment promise, data authorization or implementation approval.
+- Pending final packaging work: integrate v0.5 assets into HTML/A3/A0/offline presentation, refresh the manifest through post-finalization tooling, persist a new machine self-check, run participant preflight and validate all visual files before opening a follow-up upstream PR.
+
 ## v0.4 - 2026-08-11
 
 - Reorganized Chinese and English proposals into the 13 mandatory formal-section headings required by the latest repository guide.
