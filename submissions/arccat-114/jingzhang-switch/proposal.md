@@ -56,6 +56,8 @@ iteration: "v1.0"
 
 ![总体概念与空间证据图](assets/figures/site-overview.png)
 
+**表达与可访问性**：本包以"人可直接理解"为表达终点——正文为双语主文档；`visual/index.html` 提供本地离线的交互式阅读（图层切换、指标动画、双语按钮，资源全部本地打包，无 CDN/远程依赖）；图件均由 GeoJSON 与指标确定性派生并带图注与来源说明；`assets/media/cover.webp` 为自定义封面并登记于 manifest。所有媒体均为解释层，不冒充现场照片、居民意见、官方边界或实测数据；图片与交互均提供文字替代（图注/alt），不自动播放任何内容，生成工具与许可边界登记于版权声明[source:AGENT-TASKBOOK][depth:metrics_recalculation]。
+
 ## 评审问答速览
 
 | 评审会问 | 本方案的回答 | 可核验的东西 |
@@ -312,7 +314,9 @@ C（道岔）为主方案。比选的输家不被丢弃、被降级使用：A �
 
 资料合法性：全部论据来自公开或清权来源，登记于 sources.json；京张铁路历史与全球案例为背景资料，不支撑规划控制结论[source:SOURCE-REGISTRY]。
 
-**风险矩阵（概念，逐项风险+缓解）**：
+**风险矩阵（概念，逐项风险+缓解）**：机器可读登记册见 `risk.json`（八类风险维度的原生/缓解后等级；等级为概念自评，非实测）。八类风险维度等级雷达：
+
+![八类风险维度原生/缓解后等级雷达图](assets/figures/risk-radar.png)
 
 - ① 数据隐私风险：场景不依赖个人数据，测试场景限定脱敏与沙箱；缓解：数据最小化+独立审计[standard:GENERATIVE-AI-INTERIM-MEASURES]
 - ② 文保与遗产风险：京张故线与历史站房；缓解：文保避让+历史资料清权[source:AGENT-TASKBOOK]
