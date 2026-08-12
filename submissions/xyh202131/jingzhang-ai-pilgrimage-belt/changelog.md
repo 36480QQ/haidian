@@ -1,5 +1,17 @@
 # 方案迭代记录 / Changelog
 
+## v14.0 - 2026-08-13
+
+**Accessible offline review walk and final convergence / 可访问离线评审漫游与终局收束**
+
+- 新增双语五步离线评审入口与结构化路由合同，把双轨总纲、三种原型、普通非 AI 任务、故障恢复、D01—D08／H01—H07 专业交接压缩为一条可核查阅读路线；不新增机制或现实结论。
+- Added a bilingual five-step offline review entry and structured route contract, compressing the twin-track master plan, three prototypes, ordinary non-AI task, failure/recovery and D01–D08/H01–H07 professional handoff into one auditable reading route without adding a mechanism or real-world conclusion.
+- 核心内容不依赖 JavaScript；页面支持语义地标、跳转链接、可见焦点、原生 details、方向键/Home/End、减少动态和打印全展开。无账号、扫码、远程资源、表单、追踪、自动播放或 AI 依赖；这是可访问性意图，不声称认证。
+- Core content requires no JavaScript; semantic landmarks, skip link, visible focus, native details, arrow/Home/End keys, reduced motion and print-all mode are provided. There is no account, QR, remote resource, form, tracker, autoplay or AI dependency; these are accessibility intentions, not certification.
+- 第十四轮一致性审计保持一项核心概念、三处差异原型、12 场景、8 项目、3 重点区、99 槽、geometry、metrics、全部 G0、临时边界、NO-GO 与 `not_fully_cleared` 不变；文件或 PR 通过不构成审批、运营或权利许可。
+- The fourteen-round consistency audit preserves one core concept, three differentiated prototypes, 12 scenes, 8 projects, 3 key areas, 99 slots, geometry, metrics, all-G0 status, provisional boundaries, NO-GO and `not_fully_cleared`; no file or PR PASS creates approval, operation or rights clearance.
+
+
 > 本日志仅记录本投稿包的可追溯变化，不是审批、实施、现场测试、权利清除或 trusted CI 证明。每次内容变化后，均须从最终 Git blob 重新生成 manifest，并以绑定最终 PR head 的仓库验证为准。
 >
 > This log records traceable changes to this submission package only. It is not evidence of approval, implementation, field testing, rights clearance, or trusted CI. After any content change, regenerate the manifest from the final Git blobs and rely on repository validation attached to the final PR head.

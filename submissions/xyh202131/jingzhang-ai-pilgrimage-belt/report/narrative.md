@@ -639,3 +639,17 @@ If `origin` is the read-only canonical repository, separately run `git push --dr
 - Added three non-copyable reversible assembly/restoration packs, a six-stage lifecycle, and D01–D08 / H01–H07 backlinks.
 - 类型、尺寸、材料、连接、专项核验、位置、安装方法和恢复时长均为 unknown；现实安装、批准、责任、检查、拆除与验收均为 0。
 - Type, dimension, material, connection, specialist clearance, location, installation method and restoration duration remain unknown; real installation, approval, duty, inspection, removal and acceptance counts remain 0.
+
+
+## Round 14 accessible offline review walk / 第14轮可访问离线评审漫游
+
+`visual/index.html#accessible-review-walk` and its `.en.html` counterpart provide a five-step, fully local review route. Static semantic HTML contains the complete argument and evidence boundaries; dependency-free JavaScript only adds hash and keyboard navigation. There are 0 remote dependencies, accounts, QR codes, forms, trackers, autoplay or AI requirements. This is a presentation route, not evidence or accessibility certification. The fourteen-round audit retains Twin-track Jing-Zhang, the three differentiated prototypes, JZ-AIOS/G0–G3/evidence gates/rights boundary, 12 scenes, 8 projects, 3 key areas, 99 closure slots, provisional geometry, all-G0 status, NO-GO and `not_fully_cleared`.
+
+### Round 14 final publication evidence
+
+Two fresh deterministic builds produced the same four SHA-256 values. Page-size, blank-page, replacement-glyph and out-of-media-box checks are rerun separately; presentation PASS does not change G0 or rights state.
+
+- `a0-boards.en.pdf`: 18 pages; SHA-256 `6c07229b92eefc79604a9a4c4cf15b672fb4640637b50ba193e79f35d4887a02`
+- `a0-boards.pdf`: 18 pages; SHA-256 `32d9f5e9c0eec2140d8057b58c68ce92bb74e6710a28a0318ff9833804a7712f`
+- `a3-booklet.en.pdf`: 73 pages; SHA-256 `0e4bc3aae048eddbeb39aaa9211e7a4a3158396405cc52b3d4d7630b76022932`
+- `a3-booklet.pdf`: 69 pages; SHA-256 `d225e095cf5c95a2ccdd83c37d5f8ecba30a8fb647f74ddd902673d975bbafd5`
