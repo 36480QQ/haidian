@@ -1,6 +1,6 @@
 {
   "type": "FeatureCollection",
-  "name": "key_areas_official",
+  "name": "key_areas_provisional_design",
   "features": [
     {
       "type": "Feature",
@@ -158,5 +158,6 @@
         ]
       }
     }
-  ]
+  ],
+  "description": "三处重点区临时粗略范围（provisional_constraint, official_boundary=false）；公告未给出四至，矩形边不得解释为地块或道路红线。"
 }
