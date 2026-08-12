@@ -1,1635 +1,316 @@
 {
   "type": "FeatureCollection",
-  "name": "detail_zhongzhiyuan",
-  "crs_note": "Coordinates stored as EPSG:4326 lon/lat. Areas recomputed via EPSG:4548.",
-  "equal_area_projection": "EPSG:4548",
+  "key_area": "PROV-KEY-001",
   "features": [
     {
       "type": "Feature",
-      "id": "DET-zhongzhiyuan_ai_acceleration_area-COURT",
       "properties": {
-        "id": "DET-zhongzhiyuan_ai_acceleration_area-COURT",
-        "layer": "AI_SERVICE_ZONE",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "crs_note": "EPSG:4326 storage",
-        "equal_area_projection": "EPSG:4548",
-        "official_boundary": false,
-        "boundary_precision": "provisional_concept",
-        "name_zh": "众智园AI自主创新加速区粗略范围-公共主庭",
-        "detail_type": "public_court",
-        "parent_key_area": "PROV-KEY-001",
-        "area_id": "zhongzhiyuan_ai_acceleration_area",
-        "area_sqm_declared": 18843.897
+        "id": "STRUCT-SPINE",
+        "kind": "spine"
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "LineString",
         "coordinates": [
           [
-            [
-              116.34927274066104,
-              40.01654294476392
-            ],
-            [
-              116.34919282032303,
-              40.01635
-            ],
-            [
-              116.34906568542495,
-              40.01618431457505
-            ],
-            [
-              116.3489,
-              40.01605717967698
-            ],
-            [
-              116.34870705523609,
-              40.01597725933897
-            ],
-            [
-              116.3485,
-              40.015950000000004
-            ],
-            [
-              116.34829294476391,
-              40.01597725933897
-            ],
-            [
-              116.3481,
-              40.01605717967698
-            ],
-            [
-              116.34793431457506,
-              40.01618431457505
-            ],
-            [
-              116.34780717967698,
-              40.01635
-            ],
-            [
-              116.34772725933897,
-              40.01654294476392
-            ],
-            [
-              116.3477,
-              40.01675
-            ],
-            [
-              116.34772725933897,
-              40.016957055236084
-            ],
-            [
-              116.34780717967698,
-              40.01715
-            ],
-            [
-              116.34793431457506,
-              40.017315685424954
-            ],
-            [
-              116.3481,
-              40.017442820323026
-            ],
-            [
-              116.34829294476391,
-              40.017522740661036
-            ],
-            [
-              116.3485,
-              40.01755
-            ],
-            [
-              116.34870705523609,
-              40.017522740661036
-            ],
-            [
-              116.3489,
-              40.017442820323026
-            ],
-            [
-              116.34906568542495,
-              40.017315685424954
-            ],
-            [
-              116.34919282032303,
-              40.01715
-            ],
-            [
-              116.34927274066104,
-              40.016957055236084
-            ],
-            [
-              116.3493,
-              40.01675
-            ],
-            [
-              116.34927274066104,
-              40.01654294476392
-            ]
+            116.3485,
+            40.0075
+          ],
+          [
+            116.3485,
+            40.026
           ]
         ]
       }
     },
     {
       "type": "Feature",
-      "id": "DET-zhongzhiyuan_ai_acceleration_area-ENTRY",
       "properties": {
-        "id": "DET-zhongzhiyuan_ai_acceleration_area-ENTRY",
-        "layer": "AI_SERVICE_ZONE",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "crs_note": "EPSG:4326 storage",
-        "equal_area_projection": "EPSG:4548",
-        "official_boundary": false,
-        "boundary_precision": "provisional_concept",
-        "name_zh": "众智园AI自主创新加速区粗略范围-主入口",
-        "detail_type": "main_entry",
-        "parent_key_area": "PROV-KEY-001",
-        "area_id": "zhongzhiyuan_ai_acceleration_area",
-        "area_sqm_declared": 21617.337
+        "id": "STRUCT-CROSS",
+        "kind": "cross_seam"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.343,
+            40.01675
+          ],
+          [
+            116.354,
+            40.01675
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "COURT",
+        "kind": "public_court"
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3475,
-              40.0075
+              116.34939566625401,
+              40.01666178457371
+            ],
+            [
+              116.34938270675237,
+              40.016574418710185
+            ],
+            [
+              116.34936124630217,
+              40.016488743790475
+            ],
+            [
+              116.34933149157926,
+              40.01640558491087
+            ],
+            [
+              116.34929372913791,
+              40.01632574293686
+            ],
+            [
+              116.34924832265108,
+              40.016249986790285
+            ],
+            [
+              116.34919570940802,
+              40.01617904604426
+            ],
+            [
+              116.34913639610306,
+              40.01611360389693
+            ],
+            [
+              116.34907095395575,
+              40.016054290591974
+            ],
+            [
+              116.34900001320972,
+              40.01600167734893
+            ],
+            [
+              116.34892425706315,
+              40.01595627086209
+            ],
+            [
+              116.34884441508913,
+              40.01591850842074
+            ],
+            [
+              116.34876125620953,
+              40.015888753697844
+            ],
+            [
+              116.34867558128981,
+              40.01586729324764
+            ],
+            [
+              116.3485882154263,
+              40.015854333746
+            ],
+            [
+              116.3485,
+              40.01585
+            ],
+            [
+              116.3484117845737,
+              40.015854333746
+            ],
+            [
+              116.34832441871019,
+              40.01586729324764
+            ],
+            [
+              116.34823874379047,
+              40.015888753697844
+            ],
+            [
+              116.34815558491087,
+              40.01591850842074
+            ],
+            [
+              116.34807574293686,
+              40.01595627086209
+            ],
+            [
+              116.34799998679028,
+              40.01600167734893
+            ],
+            [
+              116.34792904604426,
+              40.016054290591974
+            ],
+            [
+              116.34786360389694,
+              40.01611360389693
+            ],
+            [
+              116.34780429059198,
+              40.01617904604426
+            ],
+            [
+              116.34775167734892,
+              40.016249986790285
+            ],
+            [
+              116.34770627086209,
+              40.01632574293686
+            ],
+            [
+              116.34766850842074,
+              40.01640558491087
+            ],
+            [
+              116.34763875369784,
+              40.016488743790475
+            ],
+            [
+              116.34761729324764,
+              40.016574418710185
+            ],
+            [
+              116.34760433374599,
+              40.01666178457371
             ],
             [
               116.3476,
-              40.0087
+              40.01675
+            ],
+            [
+              116.34760433374599,
+              40.0168382154263
+            ],
+            [
+              116.34761729324764,
+              40.01692558128982
+            ],
+            [
+              116.34763875369784,
+              40.01701125620953
+            ],
+            [
+              116.34766850842074,
+              40.01709441508913
+            ],
+            [
+              116.34770627086209,
+              40.01717425706315
+            ],
+            [
+              116.34775167734892,
+              40.01725001320972
+            ],
+            [
+              116.34780429059198,
+              40.017320953955746
+            ],
+            [
+              116.34786360389694,
+              40.01738639610307
+            ],
+            [
+              116.34792904604426,
+              40.01744570940803
+            ],
+            [
+              116.34799998679028,
+              40.01749832265107
+            ],
+            [
+              116.34807574293686,
+              40.01754372913791
+            ],
+            [
+              116.34815558491087,
+              40.017581491579264
+            ],
+            [
+              116.34823874379047,
+              40.01761124630216
+            ],
+            [
+              116.34832441871019,
+              40.017632706752366
+            ],
+            [
+              116.3484117845737,
+              40.017645666254005
+            ],
+            [
+              116.3485,
+              40.01765
+            ],
+            [
+              116.3485882154263,
+              40.017645666254005
+            ],
+            [
+              116.34867558128981,
+              40.017632706752366
+            ],
+            [
+              116.34876125620953,
+              40.01761124630216
+            ],
+            [
+              116.34884441508913,
+              40.017581491579264
+            ],
+            [
+              116.34892425706315,
+              40.01754372913791
+            ],
+            [
+              116.34900001320972,
+              40.01749832265107
+            ],
+            [
+              116.34907095395575,
+              40.01744570940803
+            ],
+            [
+              116.34913639610306,
+              40.01738639610307
+            ],
+            [
+              116.34919570940802,
+              40.017320953955746
+            ],
+            [
+              116.34924832265108,
+              40.01725001320972
+            ],
+            [
+              116.34929372913791,
+              40.01717425706315
+            ],
+            [
+              116.34933149157926,
+              40.01709441508913
+            ],
+            [
+              116.34936124630217,
+              40.01701125620953
+            ],
+            [
+              116.34938270675237,
+              40.01692558128982
+            ],
+            [
+              116.34939566625401,
+              40.0168382154263
             ],
             [
               116.3494,
-              40.0087
-            ],
-            [
-              116.3495,
-              40.0075
-            ],
-            [
-              116.3475,
-              40.0075
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "DET-zhongzhiyuan_ai_acceleration_area-SEAM",
-      "properties": {
-        "id": "DET-zhongzhiyuan_ai_acceleration_area-SEAM",
-        "layer": "AI_SERVICE_ZONE",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "crs_note": "EPSG:4326 storage",
-        "equal_area_projection": "EPSG:4548",
-        "official_boundary": false,
-        "boundary_precision": "provisional_concept",
-        "name_zh": "众智园AI自主创新加速区粗略范围-横缝步行",
-        "detail_type": "cross_seam",
-        "parent_key_area": "PROV-KEY-001",
-        "area_id": "zhongzhiyuan_ai_acceleration_area",
-        "area_sqm_declared": 31284.355
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.343,
-              40.016600000000004
-            ],
-            [
-              116.343,
-              40.0169
-            ],
-            [
-              116.354,
-              40.0169
-            ],
-            [
-              116.354,
-              40.016600000000004
-            ],
-            [
-              116.343,
-              40.016600000000004
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "DET-zhongzhiyuan_ai_acceleration_area-SPINE",
-      "properties": {
-        "id": "DET-zhongzhiyuan_ai_acceleration_area-SPINE",
-        "layer": "AI_SERVICE_ZONE",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "crs_note": "EPSG:4326 storage",
-        "equal_area_projection": "EPSG:4548",
-        "official_boundary": false,
-        "boundary_precision": "provisional_concept",
-        "name_zh": "众智园AI自主创新加速区粗略范围-慢行脊段",
-        "detail_type": "spine_segment",
-        "parent_key_area": "PROV-KEY-001",
-        "area_id": "zhongzhiyuan_ai_acceleration_area",
-        "area_sqm_declared": 87690.994
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.34875,
-              40.0075
-            ],
-            [
-              116.34825000000001,
-              40.0075
-            ],
-            [
-              116.34825000000001,
-              40.026
-            ],
-            [
-              116.34875,
-              40.026
-            ],
-            [
-              116.34875,
-              40.0075
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-001",
-      "properties": {
-        "id": "DET-zhongzhiyuan_ai_acceleration_area-BLDG-01",
-        "layer": "AI_SERVICE_ZONE",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "crs_note": "EPSG:4326 storage",
-        "equal_area_projection": "EPSG:4548",
-        "official_boundary": false,
-        "boundary_precision": "provisional_concept",
-        "building_type": "lab",
-        "name_zh": "院落核-1",
-        "name_en": "lab-1",
-        "parent_land_use": null,
-        "form_logic": "courtyard",
-        "cluster_id": "CL-zhongzhi-1",
-        "interface_setback": "front",
-        "concept_only": true,
-        "area_sqm_declared": 2002.237,
-        "detail_type": "building_pad",
-        "parent_key_area": "PROV-KEY-001",
-        "area_id": "zhongzhiyuan_ai_acceleration_area"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.34697794823751,
-              40.016165594682
-            ],
-            [
-              116.3476220517625,
-              40.016165594682
-            ],
-            [
-              116.3476220517625,
-              40.01573440531801
-            ],
-            [
-              116.34697794823751,
-              40.01573440531801
-            ],
-            [
-              116.34697794823751,
-              40.016165594682
-            ]
-          ],
-          [
-            [
-              116.34748152008433,
-              40.01587454186131
-            ],
-            [
-              116.34748152008433,
-              40.016057797341006
-            ],
-            [
-              116.34711847991568,
-              40.016057797341006
-            ],
-            [
-              116.34711847991568,
-              40.01587454186131
-            ],
-            [
-              116.34748152008433,
-              40.01587454186131
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-002",
-      "properties": {
-        "id": "DET-zhongzhiyuan_ai_acceleration_area-BLDG-02",
-        "layer": "AI_SERVICE_ZONE",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "crs_note": "EPSG:4326 storage",
-        "equal_area_projection": "EPSG:4548",
-        "official_boundary": false,
-        "boundary_precision": "provisional_concept",
-        "building_type": "incubator",
-        "name_zh": "院落翼L-2",
-        "name_en": "incubator-2",
-        "parent_land_use": null,
-        "form_logic": "L",
-        "cluster_id": "CL-zhongzhi-1",
-        "interface_setback": "side",
-        "concept_only": true,
-        "area_sqm_declared": 718.074,
-        "detail_type": "building_pad",
-        "parent_key_area": "PROV-KEY-001",
-        "area_id": "zhongzhiyuan_ai_acceleration_area"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.34749867080455,
-              40.01605000000001
-            ],
-            [
-              116.34749867080455,
-              40.01615779734101
-            ],
-            [
-              116.34770946832182,
-              40.01615779734101
-            ],
-            [
-              116.34770946832182,
-              40.0164272906935
-            ],
-            [
-              116.34785000000001,
-              40.0164272906935
-            ],
-            [
-              116.34785000000001,
-              40.01605000000001
-            ],
-            [
-              116.34749867080455,
-              40.01605000000001
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-003",
-      "properties": {
-        "id": "DET-zhongzhiyuan_ai_acceleration_area-BLDG-03",
-        "layer": "AI_SERVICE_ZONE",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "crs_note": "EPSG:4326 storage",
-        "equal_area_projection": "EPSG:4548",
-        "official_boundary": false,
-        "boundary_precision": "provisional_concept",
-        "building_type": "mixed_use",
-        "name_zh": "界面条-3",
-        "name_en": "mixed_use-3",
-        "parent_land_use": null,
-        "form_logic": "bar",
-        "cluster_id": "CL-zhongzhi-1",
-        "interface_setback": "street",
-        "concept_only": true,
-        "area_sqm_declared": 1116.999,
-        "detail_type": "building_pad",
-        "parent_key_area": "PROV-KEY-001",
-        "area_id": "zhongzhiyuan_ai_acceleration_area"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.34689011593863,
-              40.016571864894
-            ],
-            [
-              116.34770988406137,
-              40.016571864894
-            ],
-            [
-              116.34770988406137,
-              40.016428135106004
-            ],
-            [
-              116.34689011593863,
-              40.016428135106004
-            ],
-            [
-              116.34689011593863,
-              40.016571864894
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-004",
-      "properties": {
-        "id": "DET-zhongzhiyuan_ai_acceleration_area-BLDG-04",
-        "layer": "AI_SERVICE_ZONE",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "crs_note": "EPSG:4326 storage",
-        "equal_area_projection": "EPSG:4548",
-        "official_boundary": false,
-        "boundary_precision": "provisional_concept",
-        "building_type": "retail",
-        "name_zh": "底商垫-4",
-        "name_en": "retail-4",
-        "parent_land_use": null,
-        "form_logic": "R",
-        "cluster_id": "CL-zhongzhi-1",
-        "interface_setback": "pocket",
-        "concept_only": true,
-        "area_sqm_declared": 614.359,
-        "detail_type": "building_pad",
-        "parent_key_area": "PROV-KEY-001",
-        "area_id": "zhongzhiyuan_ai_acceleration_area"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.34746971358388,
-              40.015530349670705
-            ],
-            [
-              116.34779442966216,
-              40.01556535548122
-            ],
-            [
-              116.34783028641613,
-              40.0153696503293
-            ],
-            [
-              116.34750557033784,
-              40.01533464451878
-            ],
-            [
-              116.34746971358388,
-              40.015530349670705
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-005",
-      "properties": {
-        "id": "DET-zhongzhiyuan_ai_acceleration_area-BLDG-05",
-        "layer": "AI_SERVICE_ZONE",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "crs_note": "EPSG:4326 storage",
-        "equal_area_projection": "EPSG:4548",
-        "official_boundary": false,
-        "boundary_precision": "provisional_concept",
-        "building_type": "lab",
-        "name_zh": "院落核-5",
-        "name_en": "lab-5",
-        "parent_land_use": null,
-        "form_logic": "courtyard",
-        "cluster_id": "CL-zhongzhi-2",
-        "interface_setback": "front",
-        "concept_only": true,
-        "area_sqm_declared": 2002.23,
-        "detail_type": "building_pad",
-        "parent_key_area": "PROV-KEY-001",
-        "area_id": "zhongzhiyuan_ai_acceleration_area"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.34912654948356,
-              40.01630952183723
-            ],
-            [
-              116.34975657780116,
-              40.01641224500463
-            ],
-            [
-              116.34987345051645,
-              40.01599047816278
-            ],
-            [
-              116.34924342219885,
-              40.015887754995376
-            ],
-            [
-              116.34912654948356,
-              40.01630952183723
-            ]
-          ],
-          [
-            [
-              116.34969800616014,
-              40.01610514005895
-            ],
-            [
-              116.34964833525615,
-              40.01628439096673
-            ],
-            [
-              116.34929322838622,
-              40.0162264924542
-            ],
-            [
-              116.34934289929022,
-              40.01604724154641
-            ],
-            [
-              116.34969800616014,
-              40.01610514005895
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-006",
-      "properties": {
-        "id": "DET-zhongzhiyuan_ai_acceleration_area-BLDG-06",
-        "layer": "AI_SERVICE_ZONE",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "crs_note": "EPSG:4326 storage",
-        "equal_area_projection": "EPSG:4548",
-        "official_boundary": false,
-        "boundary_precision": "provisional_concept",
-        "building_type": "incubator",
-        "name_zh": "院落翼L-6",
-        "name_en": "incubator-6",
-        "parent_land_use": null,
-        "form_logic": "L",
-        "cluster_id": "CL-zhongzhi-2",
-        "interface_setback": "side",
-        "concept_only": true,
-        "area_sqm_declared": 718.072,
-        "detail_type": "building_pad",
-        "parent_key_area": "PROV-KEY-001",
-        "area_id": "zhongzhiyuan_ai_acceleration_area"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.34970634819041,
-              40.01619396918142
-            ],
-            [
-              116.34967713001159,
-              40.01629941089189
-            ],
-            [
-              116.34988332109735,
-              40.016333029383034
-            ],
-            [
-              116.34981027565028,
-              40.0165966336592
-            ],
-            [
-              116.34994773637412,
-              40.01661904598663
-            ],
-            [
-              116.35005000000001,
-              40.01625000000001
-            ],
-            [
-              116.34970634819041,
-              40.01619396918142
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-007",
-      "properties": {
-        "id": "DET-zhongzhiyuan_ai_acceleration_area-BLDG-07",
-        "layer": "AI_SERVICE_ZONE",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "crs_note": "EPSG:4326 storage",
-        "equal_area_projection": "EPSG:4548",
-        "official_boundary": false,
-        "boundary_precision": "provisional_concept",
-        "building_type": "mixed_use",
-        "name_zh": "界面条-7",
-        "name_en": "mixed_use-7",
-        "parent_land_use": null,
-        "form_logic": "bar",
-        "cluster_id": "CL-zhongzhi-2",
-        "interface_setback": "street",
-        "concept_only": true,
-        "area_sqm_declared": 1116.995,
-        "detail_type": "building_pad",
-        "parent_key_area": "PROV-KEY-001",
-        "area_id": "zhongzhiyuan_ai_acceleration_area"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.34907959410292,
-              40.016704925185294
-            ],
-            [
-              116.34988144832532,
-              40.01683566376199
-            ],
-            [
-              116.3499204058971,
-              40.016695074814706
-            ],
-            [
-              116.34911855167469,
-              40.01656433623801
-            ],
-            [
-              116.34907959410292,
-              40.016704925185294
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-008",
-      "properties": {
-        "id": "DET-zhongzhiyuan_ai_acceleration_area-BLDG-08",
-        "layer": "AI_SERVICE_ZONE",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "crs_note": "EPSG:4326 storage",
-        "equal_area_projection": "EPSG:4548",
-        "official_boundary": false,
-        "boundary_precision": "provisional_concept",
-        "building_type": "retail",
-        "name_zh": "底商垫-8",
-        "name_en": "retail-8",
-        "parent_land_use": null,
-        "form_logic": "R",
-        "cluster_id": "CL-zhongzhi-2",
-        "interface_setback": "pocket",
-        "concept_only": true,
-        "area_sqm_declared": 614.357,
-        "detail_type": "building_pad",
-        "parent_key_area": "PROV-KEY-001",
-        "area_id": "zhongzhiyuan_ai_acceleration_area"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.34965187471288,
-              40.0156998413297
-            ],
-            [
-              116.34996000673516,
-              40.015785868674406
-            ],
-            [
-              116.35004812528713,
-              40.0156001586703
-            ],
-            [
-              116.34973999326485,
-              40.015514131325595
-            ],
-            [
-              116.34965187471288,
-              40.0156998413297
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-009",
-      "properties": {
-        "id": "DET-zhongzhiyuan_ai_acceleration_area-BLDG-09",
-        "layer": "AI_SERVICE_ZONE",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "crs_note": "EPSG:4326 storage",
-        "equal_area_projection": "EPSG:4548",
-        "official_boundary": false,
-        "boundary_precision": "provisional_concept",
-        "building_type": "lab",
-        "name_zh": "院落核-9",
-        "name_en": "lab-9",
-        "parent_land_use": null,
-        "form_logic": "courtyard",
-        "cluster_id": "CL-zhongzhi-3",
-        "interface_setback": "front",
-        "concept_only": true,
-        "area_sqm_declared": 2002.184,
-        "detail_type": "building_pad",
-        "parent_key_area": "PROV-KEY-001",
-        "area_id": "zhongzhiyuan_ai_acceleration_area"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.34743164706707,
-              40.01800521659143
-            ],
-            [
-              116.34806596521223,
-              40.017919422037245
-            ],
-            [
-              116.34796835293294,
-              40.017494783408566
-            ],
-            [
-              116.34733403478778,
-              40.017580577962754
-            ],
-            [
-              116.34743164706707,
-              40.01800521659143
-            ]
-          ],
-          [
-            [
-              116.3478616802375,
-              40.01765150977471
-            ],
-            [
-              116.34790316545619,
-              40.0178319811919
-            ],
-            [
-              116.34754564068346,
-              40.01788033812244
-            ],
-            [
-              116.34750415546476,
-              40.01769986670525
-            ],
-            [
-              116.3478616802375,
-              40.01765150977471
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-010",
-      "properties": {
-        "id": "DET-zhongzhiyuan_ai_acceleration_area-BLDG-10",
-        "layer": "AI_SERVICE_ZONE",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "crs_note": "EPSG:4326 storage",
-        "equal_area_projection": "EPSG:4548",
-        "official_boundary": false,
-        "boundary_precision": "provisional_concept",
-        "building_type": "incubator",
-        "name_zh": "院落翼L-10",
-        "name_en": "incubator-10",
-        "parent_land_use": null,
-        "form_logic": "L",
-        "cluster_id": "CL-zhongzhi-3",
-        "interface_setback": "side",
-        "concept_only": true,
-        "area_sqm_declared": 718.055,
-        "detail_type": "building_pad",
-        "parent_key_area": "PROV-KEY-001",
-        "area_id": "zhongzhiyuan_ai_acceleration_area"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.34790400828446,
-              40.01789679702956
-            ],
-            [
-              116.34792841135429,
-              40.01800295668673
-            ],
-            [
-              116.34813600638361,
-              40.017974878469
-            ],
-            [
-              116.34819701405816,
-              40.018240277611916
-            ],
-            [
-              116.34833541074438,
-              40.0182215588001
-            ],
-            [
-              116.34825000000001,
-              40.01785
-            ],
-            [
-              116.34790400828446,
-              40.01789679702956
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-011",
-      "properties": {
-        "id": "DET-zhongzhiyuan_ai_acceleration_area-BLDG-11",
-        "layer": "AI_SERVICE_ZONE",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "crs_note": "EPSG:4326 storage",
-        "equal_area_projection": "EPSG:4548",
-        "official_boundary": false,
-        "boundary_precision": "provisional_concept",
-        "building_type": "mixed_use",
-        "name_zh": "界面条-11",
-        "name_en": "mixed_use-11",
-        "parent_land_use": null,
-        "form_logic": "bar",
-        "cluster_id": "CL-zhongzhi-3",
-        "interface_setback": "street",
-        "concept_only": true,
-        "area_sqm_declared": 1116.97,
-        "detail_type": "building_pad",
-        "parent_key_area": "PROV-KEY-001",
-        "area_id": "zhongzhiyuan_ai_acceleration_area"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.34731261171174,
-              40.01842536963925
-            ],
-            [
-              116.34811992571468,
-              40.018316176570295
-            ],
-            [
-              116.34808738828826,
-              40.01817463036074
-            ],
-            [
-              116.34728007428532,
-              40.0182838234297
-            ],
-            [
-              116.34731261171174,
-              40.01842536963925
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-012",
-      "properties": {
-        "id": "DET-zhongzhiyuan_ai_acceleration_area-BLDG-12",
-        "layer": "AI_SERVICE_ZONE",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "crs_note": "EPSG:4326 storage",
-        "equal_area_projection": "EPSG:4548",
-        "official_boundary": false,
-        "boundary_precision": "provisional_concept",
-        "building_type": "retail",
-        "name_zh": "底商垫-12",
-        "name_en": "retail-12",
-        "parent_land_use": null,
-        "form_logic": "R",
-        "cluster_id": "CL-zhongzhi-3",
-        "interface_setback": "pocket",
-        "concept_only": true,
-        "area_sqm_declared": 614.343,
-        "detail_type": "building_pad",
-        "parent_key_area": "PROV-KEY-001",
-        "area_id": "zhongzhiyuan_ai_acceleration_area"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.34789064202934,
-              40.017353143119394
-            ],
-            [
-              116.34821834952619,
-              40.01734436494918
-            ],
-            [
-              116.34820935797066,
-              40.0171468568806
-            ],
-            [
-              116.34788165047381,
-              40.01715563505081
-            ],
-            [
-              116.34789064202934,
-              40.017353143119394
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-013",
-      "properties": {
-        "id": "DET-zhongzhiyuan_ai_acceleration_area-BLDG-13",
-        "layer": "AI_SERVICE_ZONE",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "crs_note": "EPSG:4326 storage",
-        "equal_area_projection": "EPSG:4548",
-        "official_boundary": false,
-        "boundary_precision": "provisional_concept",
-        "building_type": "lab",
-        "name_zh": "院落核-13",
-        "name_en": "lab-13",
-        "parent_land_use": null,
-        "form_logic": "courtyard",
-        "cluster_id": "CL-zhongzhi-4",
-        "interface_setback": "front",
-        "concept_only": true,
-        "area_sqm_declared": 2002.186,
-        "detail_type": "building_pad",
-        "parent_key_area": "PROV-KEY-001",
-        "area_id": "zhongzhiyuan_ai_acceleration_area"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.34931893664363,
-              40.01740296442688
-            ],
-            [
-              116.34931893664363,
-              40.01789703557313
-            ],
-            [
-              116.34988106335636,
-              40.01789703557313
-            ],
-            [
-              116.34988106335636,
-              40.01740296442688
-            ],
-            [
-              116.34931893664363,
-              40.01740296442688
-            ]
-          ],
-          [
-            [
-              116.34969837217473,
-              40.017789238232126
-            ],
-            [
-              116.34945946832181,
-              40.017789238232126
-            ],
-            [
-              116.34945946832181,
-              40.01751076176788
-            ],
-            [
-              116.34969837217473,
-              40.01751076176788
-            ],
-            [
-              116.34969837217473,
-              40.017789238232126
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-014",
-      "properties": {
-        "id": "DET-zhongzhiyuan_ai_acceleration_area-BLDG-14",
-        "layer": "AI_SERVICE_ZONE",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "crs_note": "EPSG:4326 storage",
-        "equal_area_projection": "EPSG:4548",
-        "official_boundary": false,
-        "boundary_precision": "provisional_concept",
-        "building_type": "ai_r_and_d",
-        "name_zh": "院落翼U-14",
-        "name_en": "ai_r_and_d-14",
-        "parent_land_use": null,
-        "form_logic": "U",
-        "cluster_id": "CL-zhongzhi-4",
-        "interface_setback": "side",
-        "concept_only": true,
-        "area_sqm_declared": 877.627,
-        "detail_type": "building_pad",
-        "parent_key_area": "PROV-KEY-001",
-        "area_id": "zhongzhiyuan_ai_acceleration_area"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.34872524885817,
-              40.017500000000005
-            ],
-            [
-              116.34872524885817,
-              40.01759881422925
-            ],
-            [
-              116.34897117929499,
-              40.01759881422925
-            ],
-            [
-              116.34897117929499,
-              40.01774254401725
-            ],
-            [
-              116.34872524885817,
-              40.01774254401725
-            ],
-            [
-              116.34872524885817,
-              40.0178413582465
-            ],
-            [
-              116.34909999999999,
-              40.0178413582465
-            ],
-            [
-              116.34909999999999,
-              40.017500000000005
-            ],
-            [
-              116.34872524885817,
-              40.017500000000005
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-015",
-      "properties": {
-        "id": "DET-zhongzhiyuan_ai_acceleration_area-BLDG-15",
-        "layer": "AI_SERVICE_ZONE",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "crs_note": "EPSG:4326 storage",
-        "equal_area_projection": "EPSG:4548",
-        "official_boundary": false,
-        "boundary_precision": "provisional_concept",
-        "building_type": "mixed_use",
-        "name_zh": "界面条-15",
-        "name_en": "mixed_use-15",
-        "parent_land_use": null,
-        "form_logic": "bar",
-        "cluster_id": "CL-zhongzhi-4",
-        "interface_setback": "street",
-        "concept_only": true,
-        "area_sqm_declared": 1116.971,
-        "detail_type": "building_pad",
-        "parent_key_area": "PROV-KEY-001",
-        "area_id": "zhongzhiyuan_ai_acceleration_area"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.34950631221454,
-              40.017885591088756
-            ],
-            [
-              116.34950631221454,
-              40.018514408911244
-            ],
-            [
-              116.34969368778545,
-              40.018514408911244
-            ],
-            [
-              116.34969368778545,
-              40.017885591088756
-            ],
-            [
-              116.34950631221454,
-              40.017885591088756
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-016",
-      "properties": {
-        "id": "DET-zhongzhiyuan_ai_acceleration_area-BLDG-16",
-        "layer": "AI_SERVICE_ZONE",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "crs_note": "EPSG:4326 storage",
-        "equal_area_projection": "EPSG:4548",
-        "official_boundary": false,
-        "boundary_precision": "provisional_concept",
-        "building_type": "retail",
-        "name_zh": "底商垫-16",
-        "name_en": "retail-16",
-        "parent_land_use": null,
-        "form_logic": "R",
-        "cluster_id": "CL-zhongzhi-4",
-        "interface_setback": "pocket",
-        "concept_only": true,
-        "area_sqm_declared": 614.343,
-        "detail_type": "building_pad",
-        "parent_key_area": "PROV-KEY-001",
-        "area_id": "zhongzhiyuan_ai_acceleration_area"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.34984525090358,
-              40.01701170807517
-            ],
-            [
-              116.3497996150349,
-              40.01726078735943
-            ],
-            [
-              116.3500547490964,
-              40.017288291924835
-            ],
-            [
-              116.35010038496509,
-              40.01703921264057
-            ],
-            [
-              116.34984525090358,
-              40.01701170807517
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "PUBLIC-012",
-      "properties": {
-        "id": "DET-zhongzhiyuan_ai_acceleration_area-PUB-01",
-        "layer": "AI_SERVICE_ZONE",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "crs_note": "EPSG:4326 storage",
-        "equal_area_projection": "EPSG:4548",
-        "official_boundary": false,
-        "boundary_precision": "provisional_concept",
-        "name_zh": "站点口袋-北",
-        "public_space_type": "station_pocket",
-        "area_sqm_declared": 37285.594,
-        "detail_type": "public_prototype",
-        "parent_key_area": "PROV-KEY-001",
-        "area_id": "zhongzhiyuan_ai_acceleration_area"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.34999343134551,
-              40.01615558491087
-            ],
-            [
-              116.34986405745721,
-              40.015999986790284
-            ],
-            [
-              116.34968994949365,
-              40.01586360389693
-            ],
-            [
-              116.34947779832622,
-              40.01575167734893
-            ],
-            [
-              116.3492357568053,
-              40.01566850842074
-            ],
-            [
-              116.34897312645082,
-              40.01561729324764
-            ],
-            [
-              116.3487,
-              40.0156
-            ],
-            [
-              116.34842687354917,
-              40.01561729324764
-            ],
-            [
-              116.34816424319469,
-              40.01566850842074
-            ],
-            [
-              116.34792220167377,
-              40.01575167734893
-            ],
-            [
-              116.34771005050634,
-              40.01586360389693
-            ],
-            [
-              116.34753594254278,
-              40.015999986790284
-            ],
-            [
-              116.34740656865448,
-              40.01615558491087
-            ],
-            [
-              116.34732690060743,
-              40.016324418710184
-            ],
-            [
-              116.34729999999999,
-              40.0165
-            ],
-            [
-              116.34732690060743,
-              40.01667558128982
-            ],
-            [
-              116.34740656865448,
-              40.01684441508913
-            ],
-            [
-              116.34753594254278,
-              40.01700001320972
-            ],
-            [
-              116.34771005050634,
-              40.01713639610307
-            ],
-            [
-              116.34792220167377,
-              40.01724832265107
-            ],
-            [
-              116.34816424319469,
-              40.01733149157926
-            ],
-            [
-              116.34842687354917,
-              40.017382706752365
-            ],
-            [
-              116.3487,
-              40.0174
-            ],
-            [
-              116.34897312645082,
-              40.017382706752365
-            ],
-            [
-              116.3492357568053,
-              40.01733149157926
-            ],
-            [
-              116.34947779832622,
-              40.01724832265107
-            ],
-            [
-              116.34968994949365,
-              40.01713639610307
-            ],
-            [
-              116.34986405745721,
-              40.01700001320972
-            ],
-            [
-              116.34999343134551,
-              40.01684441508913
-            ],
-            [
-              116.35007309939256,
-              40.01667558128982
-            ],
-            [
-              116.3501,
-              40.0165
-            ],
-            [
-              116.35007309939256,
-              40.016324418710184
-            ],
-            [
-              116.34999343134551,
-              40.01615558491087
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "PUBLIC-019",
-      "properties": {
-        "id": "DET-zhongzhiyuan_ai_acceleration_area-PUB-02",
-        "layer": "AI_SERVICE_ZONE",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "crs_note": "EPSG:4326 storage",
-        "equal_area_projection": "EPSG:4548",
-        "official_boundary": false,
-        "boundary_precision": "provisional_concept",
-        "name_zh": "北段协议庭",
-        "public_space_type": "north_protocol_court",
-        "area_sqm_declared": 53270.911,
-        "detail_type": "public_prototype",
-        "parent_key_area": "PROV-KEY-001",
-        "area_id": "zhongzhiyuan_ai_acceleration_area"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.34916298315852,
-              40.00861731656764
-            ],
-            [
-              116.34899664530214,
-              40.00844442976698
-            ],
-            [
-              116.34877279220613,
-              40.008292893218815
-            ],
-            [
-              116.34850002641943,
-              40.0081685303877
-            ],
-            [
-              116.34818883017826,
-              40.008076120467486
-            ],
-            [
-              116.34785116257963,
-              40.008019214719596
-            ],
-            [
-              116.3475,
-              40.008
-            ],
-            [
-              116.34714883742036,
-              40.008019214719596
-            ],
-            [
-              116.34681116982173,
-              40.008076120467486
-            ],
-            [
-              116.34649997358056,
-              40.0081685303877
-            ],
-            [
-              116.34622720779386,
-              40.008292893218815
-            ],
-            [
-              116.34600335469786,
-              40.00844442976698
-            ],
-            [
-              116.34583701684147,
-              40.00861731656764
-            ],
-            [
-              116.34573458649527,
-              40.008804909677984
-            ],
-            [
-              116.3457,
-              40.009
-            ],
-            [
-              116.34573458649527,
-              40.00919509032202
-            ],
-            [
-              116.34583701684147,
-              40.009382683432364
-            ],
-            [
-              116.34600335469786,
-              40.00955557023302
-            ],
-            [
-              116.34622720779386,
-              40.009707106781185
-            ],
-            [
-              116.34649997358056,
-              40.0098314696123
-            ],
-            [
-              116.34681116982173,
-              40.009923879532515
-            ],
-            [
-              116.34714883742036,
-              40.009980785280405
-            ],
-            [
-              116.3475,
-              40.01
-            ],
-            [
-              116.34785116257963,
-              40.009980785280405
-            ],
-            [
-              116.34818883017826,
-              40.009923879532515
-            ],
-            [
-              116.34850002641943,
-              40.0098314696123
-            ],
-            [
-              116.34877279220613,
-              40.009707106781185
-            ],
-            [
-              116.34899664530214,
-              40.00955557023302
-            ],
-            [
-              116.34916298315852,
-              40.009382683432364
-            ],
-            [
-              116.34926541350472,
-              40.00919509032202
-            ],
-            [
-              116.3493,
-              40.009
-            ],
-            [
-              116.34926541350472,
-              40.008804909677984
-            ],
-            [
-              116.34916298315852,
-              40.00861731656764
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "SCN-12",
-      "properties": {
-        "id": "DET-zhongzhiyuan_ai_acceleration_area-SCN-12",
-        "layer": "SCENARIO_NODE",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "crs_note": "EPSG:4326 storage",
-        "equal_area_projection": "EPSG:4548",
-        "official_boundary": false,
-        "boundary_precision": "provisional_concept",
-        "name_zh": "治理论坛庭",
-        "name_en": "governance_forum",
-        "scenario_type": "governance_forum",
-        "host_structure": "zhongzhiyuan_ai_acceleration_area",
-        "place_geometry_id": "SCN-12",
-        "area_sqm_declared": 2370.035,
-        "detail_type": "scenario_anchor",
-        "parent_key_area": "PROV-KEY-001",
-        "area_id": "zhongzhiyuan_ai_acceleration_area"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.34845,
               40.01675
             ],
             [
-              116.34894999999999,
-              40.01675
-            ],
-            [
-              116.34894999999999,
-              40.01625
-            ],
-            [
-              116.34845,
-              40.01625
-            ],
-            [
-              116.34845,
-              40.01675
+              116.34939566625401,
+              40.01666178457371
             ]
           ]
         ]
@@ -1637,292 +318,2090 @@
     },
     {
       "type": "Feature",
-      "id": "DET-zhongzhiyuan_ai_acceleration_area-RISK",
       "properties": {
-        "id": "DET-zhongzhiyuan_ai_acceleration_area-RISK",
-        "layer": "AI_SERVICE_ZONE",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "crs_note": "EPSG:4326 storage",
-        "equal_area_projection": "EPSG:4548",
-        "official_boundary": false,
-        "boundary_precision": "provisional_concept",
-        "name_zh": "众智园AI自主创新加速区粗略范围-风险/待确认叠加",
-        "detail_type": "risk_overlay",
-        "parent_key_area": "PROV-KEY-001",
-        "area_id": "zhongzhiyuan_ai_acceleration_area",
-        "status": "pending_confirmation",
-        "area_sqm_declared": 24085.544
+        "id": "ENTRY",
+        "kind": "main_entry"
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.35039566625402,
-              40.01566178457371
+              116.3489,
+              40.0078
             ],
             [
-              116.35038270675237,
-              40.01557441871019
+              116.34889807389067,
+              40.00776079314387
             ],
             [
-              116.35036124630217,
-              40.01548874379048
+              116.34889231411216,
+              40.0077219638712
             ],
             [
-              116.35033149157927,
-              40.01540558491087
+              116.34888277613429,
+              40.0076838861291
             ],
             [
-              116.35029372913792,
-              40.01532574293686
+              116.34886955181301,
+              40.007646926627054
             ],
             [
-              116.35024832265108,
-              40.01524998679029
+              116.34885276850574,
+              40.00761144130527
             ],
             [
-              116.35019570940803,
-              40.01517904604426
+              116.34883258784492,
+              40.007577771906796
             ],
             [
-              116.35013639610307,
-              40.015113603896936
+              116.34880920418135,
+              40.00754624268634
             ],
             [
-              116.35007095395575,
-              40.015054290591976
+              116.34878284271248,
+              40.00751715728753
             ],
             [
-              116.35000001320972,
-              40.015001677348934
+              116.34875375731367,
+              40.00749079581866
             ],
             [
-              116.34992425706315,
-              40.01495627086209
+              116.34872222809321,
+              40.00746741215508
             ],
             [
-              116.34984441508914,
-              40.01491850842074
+              116.34868855869473,
+              40.00744723149426
             ],
             [
-              116.34976125620953,
-              40.014888753697846
+              116.34865307337294,
+              40.007430448187
             ],
             [
-              116.34967558128982,
-              40.01486729324764
+              116.3486161138709,
+              40.00741722386571
             ],
             [
-              116.34958821542631,
-              40.014854333746
+              116.34857803612881,
+              40.00740768588784
             ],
             [
-              116.3495,
-              40.01485
+              116.34853920685613,
+              40.00740192610933
             ],
             [
-              116.3494117845737,
-              40.014854333746
+              116.3485,
+              40.007400000000004
             ],
             [
-              116.3493244187102,
-              40.01486729324764
+              116.34846079314387,
+              40.00740192610933
             ],
             [
-              116.34923874379048,
-              40.014888753697846
+              116.34842196387119,
+              40.00740768588784
             ],
             [
-              116.34915558491087,
-              40.01491850842074
+              116.3483838861291,
+              40.00741722386571
             ],
             [
-              116.34907574293686,
-              40.01495627086209
+              116.34834692662706,
+              40.007430448187
             ],
             [
-              116.34899998679029,
-              40.015001677348934
+              116.34831144130527,
+              40.00744723149426
             ],
             [
-              116.34892904604426,
-              40.015054290591976
+              116.3482777719068,
+              40.00746741215508
             ],
             [
-              116.34886360389694,
-              40.015113603896936
+              116.34824624268633,
+              40.00749079581866
             ],
             [
-              116.34880429059199,
-              40.01517904604426
+              116.34821715728752,
+              40.00751715728753
             ],
             [
-              116.34875167734893,
-              40.01524998679029
+              116.34819079581865,
+              40.00754624268634
             ],
             [
-              116.3487062708621,
-              40.01532574293686
+              116.34816741215508,
+              40.007577771906796
             ],
             [
-              116.34866850842074,
-              40.01540558491087
+              116.34814723149427,
+              40.00761144130527
             ],
             [
-              116.34863875369784,
-              40.01548874379048
+              116.34813044818699,
+              40.007646926627054
             ],
             [
-              116.34861729324764,
-              40.01557441871019
+              116.34811722386571,
+              40.0076838861291
             ],
             [
-              116.348604333746,
-              40.01566178457371
+              116.34810768588784,
+              40.0077219638712
             ],
             [
-              116.3486,
-              40.015750000000004
+              116.34810192610934,
+              40.00776079314387
             ],
             [
-              116.348604333746,
-              40.0158382154263
+              116.3481,
+              40.0078
             ],
             [
-              116.34861729324764,
-              40.01592558128982
+              116.34810192610934,
+              40.00783920685613
             ],
             [
-              116.34863875369784,
-              40.01601125620953
+              116.34810768588784,
+              40.00787803612881
             ],
             [
-              116.34866850842074,
-              40.016094415089135
+              116.34811722386571,
+              40.007916113870905
             ],
             [
-              116.3487062708621,
-              40.01617425706315
+              116.34813044818699,
+              40.00795307337295
             ],
             [
-              116.34875167734893,
-              40.01625001320972
+              116.34814723149427,
+              40.007988558694734
             ],
             [
-              116.34880429059199,
-              40.01632095395575
+              116.34816741215508,
+              40.00802222809321
             ],
             [
-              116.34886360389694,
-              40.01638639610307
+              116.34819079581865,
+              40.00805375731367
             ],
             [
-              116.34892904604426,
-              40.01644570940803
+              116.34821715728752,
+              40.008082842712476
             ],
             [
-              116.34899998679029,
-              40.016498322651074
+              116.34824624268633,
+              40.008109204181345
             ],
             [
-              116.34907574293686,
-              40.016543729137915
+              116.3482777719068,
+              40.008132587844926
             ],
             [
-              116.34915558491087,
-              40.01658149157927
+              116.34831144130527,
+              40.008152768505745
             ],
             [
-              116.34923874379048,
-              40.01661124630216
+              116.34834692662706,
+              40.008169551813005
             ],
             [
-              116.3493244187102,
-              40.01663270675237
+              116.3483838861291,
+              40.0081827761343
             ],
             [
-              116.3494117845737,
-              40.01664566625401
+              116.34842196387119,
+              40.008192314112165
             ],
             [
-              116.3495,
-              40.016650000000006
+              116.34846079314387,
+              40.008198073890675
             ],
             [
-              116.34958821542631,
-              40.01664566625401
+              116.3485,
+              40.0082
             ],
             [
-              116.34967558128982,
-              40.01663270675237
+              116.34853920685613,
+              40.008198073890675
             ],
             [
-              116.34976125620953,
-              40.01661124630216
+              116.34857803612881,
+              40.008192314112165
             ],
             [
-              116.34984441508914,
-              40.01658149157927
+              116.3486161138709,
+              40.0081827761343
             ],
             [
-              116.34992425706315,
-              40.016543729137915
+              116.34865307337294,
+              40.008169551813005
             ],
             [
-              116.35000001320972,
-              40.016498322651074
+              116.34868855869473,
+              40.008152768505745
             ],
             [
-              116.35007095395575,
-              40.01644570940803
+              116.34872222809321,
+              40.008132587844926
             ],
             [
-              116.35013639610307,
-              40.01638639610307
+              116.34875375731367,
+              40.008109204181345
             ],
             [
-              116.35019570940803,
-              40.01632095395575
+              116.34878284271248,
+              40.008082842712476
             ],
             [
-              116.35024832265108,
-              40.01625001320972
+              116.34880920418135,
+              40.00805375731367
             ],
             [
-              116.35029372913792,
-              40.01617425706315
+              116.34883258784492,
+              40.00802222809321
             ],
             [
-              116.35033149157927,
-              40.016094415089135
+              116.34885276850574,
+              40.007988558694734
             ],
             [
-              116.35036124630217,
-              40.01601125620953
+              116.34886955181301,
+              40.00795307337295
             ],
             [
-              116.35038270675237,
-              40.01592558128982
+              116.34888277613429,
+              40.007916113870905
             ],
             [
-              116.35039566625402,
-              40.0158382154263
+              116.34889231411216,
+              40.00787803612881
             ],
             [
-              116.35040000000001,
-              40.015750000000004
+              116.34889807389067,
+              40.00783920685613
             ],
             [
-              116.35039566625402,
-              40.01566178457371
+              116.3489,
+              40.0078
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "FRONTAGE",
+        "kind": "active_frontage"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3433,
+              40.0077
+            ],
+            [
+              116.3433,
+              40.0085
+            ],
+            [
+              116.3537,
+              40.0085
+            ],
+            [
+              116.3537,
+              40.0077
+            ],
+            [
+              116.3433,
+              40.0077
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLDG-001",
+        "kind": "building",
+        "building_type": "ai_r_and_d"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3490777012758,
+              40.025352961352276
+            ],
+            [
+              116.34944189576785,
+              40.025352961352276
+            ],
+            [
+              116.34944189576785,
+              40.02507136300452
+            ],
+            [
+              116.3490777012758,
+              40.02507136300452
+            ],
+            [
+              116.3490777012758,
+              40.025352961352276
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLDG-002",
+        "kind": "building",
+        "building_type": "lab"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34881591443376,
+              40.02411963459103
+            ],
+            [
+              116.34872010078024,
+              40.02411963459103
+            ],
+            [
+              116.34872010078024,
+              40.024480477737114
+            ],
+            [
+              116.34872010078024,
+              40.02462481499555
+            ],
+            [
+              116.34881591443376,
+              40.02462481499555
+            ],
+            [
+              116.34881591443376,
+              40.024480477737114
+            ],
+            [
+              116.3490075417408,
+              40.024480477737114
+            ],
+            [
+              116.3490075417408,
+              40.02411963459103
+            ],
+            [
+              116.34881591443376,
+              40.02411963459103
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLDG-003",
+        "kind": "building",
+        "building_type": "office"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34807065278669,
+              40.0244117213526
+            ],
+            [
+              116.3479801871357,
+              40.0244117213526
+            ],
+            [
+              116.3479801871357,
+              40.02450800118376
+            ],
+            [
+              116.3479801871357,
+              40.02470056084608
+            ],
+            [
+              116.34807065278669,
+              40.02470056084608
+            ],
+            [
+              116.34807065278669,
+              40.02450800118376
+            ],
+            [
+              116.34825158408863,
+              40.02450800118376
+            ],
+            [
+              116.34825158408863,
+              40.02470056084608
+            ],
+            [
+              116.34834204973961,
+              40.02470056084608
+            ],
+            [
+              116.34834204973961,
+              40.02450800118376
+            ],
+            [
+              116.34834204973961,
+              40.0244117213526
+            ],
+            [
+              116.34825158408863,
+              40.0244117213526
+            ],
+            [
+              116.34807065278669,
+              40.0244117213526
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLDG-004",
+        "kind": "building",
+        "building_type": "incubator"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34913344147286,
+              40.025032945738374
+            ],
+            [
+              116.34913344147286,
+              40.024789990536675
+            ],
+            [
+              116.34879850855786,
+              40.024789990536675
+            ],
+            [
+              116.34879850855786,
+              40.025032945738374
+            ],
+            [
+              116.34913344147286,
+              40.025032945738374
+            ]
+          ],
+          [
+            [
+              116.34889898843237,
+              40.024862877097185
+            ],
+            [
+              116.34903296159835,
+              40.024862877097185
+            ],
+            [
+              116.34903296159835,
+              40.024960059177864
+            ],
+            [
+              116.34889898843237,
+              40.024960059177864
+            ],
+            [
+              116.34889898843237,
+              40.024862877097185
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLDG-005",
+        "kind": "building",
+        "building_type": "lab"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34958763491537,
+              40.024388278917854
+            ],
+            [
+              116.34942907048736,
+              40.024388278917854
+            ],
+            [
+              116.34942907048736,
+              40.02469817336319
+            ],
+            [
+              116.34942907048736,
+              40.02482213114132
+            ],
+            [
+              116.34958763491537,
+              40.02482213114132
+            ],
+            [
+              116.34958763491537,
+              40.02469817336319
+            ],
+            [
+              116.34990476377138,
+              40.02469817336319
+            ],
+            [
+              116.34990476377138,
+              40.024388278917854
+            ],
+            [
+              116.34958763491537,
+              40.024388278917854
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLDG-006",
+        "kind": "building",
+        "building_type": "ai_r_and_d"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3483505656444,
+              40.02494583558751
+            ],
+            [
+              116.3487699041625,
+              40.02494583558751
+            ],
+            [
+              116.3487699041625,
+              40.02473802784052
+            ],
+            [
+              116.3483505656444,
+              40.02473802784052
+            ],
+            [
+              116.3483505656444,
+              40.02494583558751
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLDG-007",
+        "kind": "building",
+        "building_type": "lab"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34788944521975,
+              40.024103090576446
+            ],
+            [
+              116.34771355509298,
+              40.024103090576446
+            ],
+            [
+              116.34771355509298,
+              40.02429259286684
+            ],
+            [
+              116.34771355509298,
+              40.02436839378301
+            ],
+            [
+              116.34788944521975,
+              40.02436839378301
+            ],
+            [
+              116.34788944521975,
+              40.02429259286684
+            ],
+            [
+              116.34824122547329,
+              40.02429259286684
+            ],
+            [
+              116.34824122547329,
+              40.024103090576446
+            ],
+            [
+              116.34788944521975,
+              40.024103090576446
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLDG-008",
+        "kind": "building",
+        "building_type": "lab"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35209565039546,
+              40.01148329815047
+            ],
+            [
+              116.35192480154747,
+              40.01148329815047
+            ],
+            [
+              116.35192480154747,
+              40.011873667053614
+            ],
+            [
+              116.35192480154747,
+              40.01202981461487
+            ],
+            [
+              116.35209565039546,
+              40.01202981461487
+            ],
+            [
+              116.35209565039546,
+              40.011873667053614
+            ],
+            [
+              116.35243734809144,
+              40.011873667053614
+            ],
+            [
+              116.35243734809144,
+              40.01148329815047
+            ],
+            [
+              116.35209565039546,
+              40.01148329815047
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLDG-009",
+        "kind": "building",
+        "building_type": "office"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35086777321506,
+              40.011231116618234
+            ],
+            [
+              116.35079729451662,
+              40.011231116618234
+            ],
+            [
+              116.35079729451662,
+              40.01134277428988
+            ],
+            [
+              116.35079729451662,
+              40.01156608963318
+            ],
+            [
+              116.35086777321506,
+              40.01156608963318
+            ],
+            [
+              116.35086777321506,
+              40.01134277428988
+            ],
+            [
+              116.35100873061192,
+              40.01134277428988
+            ],
+            [
+              116.35100873061192,
+              40.01156608963318
+            ],
+            [
+              116.35107920931036,
+              40.01156608963318
+            ],
+            [
+              116.35107920931036,
+              40.01134277428988
+            ],
+            [
+              116.35107920931036,
+              40.011231116618234
+            ],
+            [
+              116.35100873061192,
+              40.011231116618234
+            ],
+            [
+              116.35086777321506,
+              40.011231116618234
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLDG-010",
+        "kind": "building",
+        "building_type": "incubator"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35134290005874,
+              40.01081511393603
+            ],
+            [
+              116.35134290005874,
+              40.01058346157592
+            ],
+            [
+              116.35098679304534,
+              40.01058346157592
+            ],
+            [
+              116.35098679304534,
+              40.01081511393603
+            ],
+            [
+              116.35134290005874,
+              40.01081511393603
+            ]
+          ],
+          [
+            [
+              116.35109362514936,
+              40.01065295728395
+            ],
+            [
+              116.35123606795472,
+              40.01065295728395
+            ],
+            [
+              116.35123606795472,
+              40.010745618228
+            ],
+            [
+              116.35109362514936,
+              40.010745618228
+            ],
+            [
+              116.35109362514936,
+              40.01065295728395
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLDG-011",
+        "kind": "building",
+        "building_type": "mixed_use"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35048605471108,
+              40.010964543843706
+            ],
+            [
+              116.35102624584674,
+              40.010964543843706
+            ],
+            [
+              116.35102624584674,
+              40.01074841788441
+            ],
+            [
+              116.35048605471108,
+              40.01074841788441
+            ],
+            [
+              116.35048605471108,
+              40.010964543843706
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLDG-012",
+        "kind": "building",
+        "building_type": "lab"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35028279296405,
+              40.011265498137654
+            ],
+            [
+              116.3501514151091,
+              40.011265498137654
+            ],
+            [
+              116.3501514151091,
+              40.01158697863256
+            ],
+            [
+              116.3501514151091,
+              40.01171557083052
+            ],
+            [
+              116.35028279296405,
+              40.01171557083052
+            ],
+            [
+              116.35028279296405,
+              40.01158697863256
+            ],
+            [
+              116.35054554867396,
+              40.01158697863256
+            ],
+            [
+              116.35054554867396,
+              40.011265498137654
+            ],
+            [
+              116.35028279296405,
+              40.011265498137654
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLDG-013",
+        "kind": "building",
+        "building_type": "lab"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3518692734605,
+              40.01080743903241
+            ],
+            [
+              116.35175384042311,
+              40.01080743903241
+            ],
+            [
+              116.35175384042311,
+              40.01117188311215
+            ],
+            [
+              116.35175384042311,
+              40.01131766074404
+            ],
+            [
+              116.3518692734605,
+              40.01131766074404
+            ],
+            [
+              116.3518692734605,
+              40.01117188311215
+            ],
+            [
+              116.35210013953527,
+              40.01117188311215
+            ],
+            [
+              116.35210013953527,
+              40.01080743903241
+            ],
+            [
+              116.3518692734605,
+              40.01080743903241
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLDG-014",
+        "kind": "building",
+        "building_type": "office"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35149209588373,
+              40.01179792808832
+            ],
+            [
+              116.35141786242396,
+              40.01179792808832
+            ],
+            [
+              116.35141786242396,
+              40.01192396711339
+            ],
+            [
+              116.35141786242396,
+              40.012176045163535
+            ],
+            [
+              116.35149209588373,
+              40.012176045163535
+            ],
+            [
+              116.35149209588373,
+              40.01192396711339
+            ],
+            [
+              116.35164056280327,
+              40.01192396711339
+            ],
+            [
+              116.35164056280327,
+              40.012176045163535
+            ],
+            [
+              116.35171479626304,
+              40.012176045163535
+            ],
+            [
+              116.35171479626304,
+              40.01192396711339
+            ],
+            [
+              116.35171479626304,
+              40.01179792808832
+            ],
+            [
+              116.35164056280327,
+              40.01179792808832
+            ],
+            [
+              116.35149209588373,
+              40.01179792808832
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLDG-015",
+        "kind": "building",
+        "building_type": "incubator"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35178410426059,
+              40.01182567864981
+            ],
+            [
+              116.35178410426059,
+              40.01147975776134
+            ],
+            [
+              116.35141858495561,
+              40.01147975776134
+            ],
+            [
+              116.35141858495561,
+              40.01182567864981
+            ],
+            [
+              116.35178410426059,
+              40.01182567864981
+            ]
+          ],
+          [
+            [
+              116.3515282407471,
+              40.011583534027885
+            ],
+            [
+              116.3516744484691,
+              40.011583534027885
+            ],
+            [
+              116.3516744484691,
+              40.011721902383265
+            ],
+            [
+              116.3515282407471,
+              40.011721902383265
+            ],
+            [
+              116.3515282407471,
+              40.011583534027885
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLDG-016",
+        "kind": "building",
+        "building_type": "office"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34929537624052,
+              40.02236133307677
+            ],
+            [
+              116.34921212620078,
+              40.02236133307677
+            ],
+            [
+              116.34921212620078,
+              40.022501024371984
+            ],
+            [
+              116.34921212620078,
+              40.0227804069624
+            ],
+            [
+              116.34929537624052,
+              40.0227804069624
+            ],
+            [
+              116.34929537624052,
+              40.022501024371984
+            ],
+            [
+              116.34946187632002,
+              40.022501024371984
+            ],
+            [
+              116.34946187632002,
+              40.0227804069624
+            ],
+            [
+              116.34954512635976,
+              40.0227804069624
+            ],
+            [
+              116.34954512635976,
+              40.022501024371984
+            ],
+            [
+              116.34954512635976,
+              40.02236133307677
+            ],
+            [
+              116.34946187632002,
+              40.02236133307677
+            ],
+            [
+              116.34929537624052,
+              40.02236133307677
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLDG-017",
+        "kind": "building",
+        "building_type": "incubator"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34990874233173,
+              40.022576303834164
+            ],
+            [
+              116.34990874233173,
+              40.0223344310856
+            ],
+            [
+              116.34960898101218,
+              40.0223344310856
+            ],
+            [
+              116.34960898101218,
+              40.022576303834164
+            ],
+            [
+              116.34990874233173,
+              40.022576303834164
+            ]
+          ],
+          [
+            [
+              116.34969890940805,
+              40.02240699291017
+            ],
+            [
+              116.34981881393587,
+              40.02240699291017
+            ],
+            [
+              116.34981881393587,
+              40.0225037420096
+            ],
+            [
+              116.34969890940805,
+              40.0225037420096
+            ],
+            [
+              116.34969890940805,
+              40.02240699291017
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLDG-018",
+        "kind": "building",
+        "building_type": "mixed_use"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34965168665975,
+              40.02174778565939
+            ],
+            [
+              116.34996642842707,
+              40.02174778565939
+            ],
+            [
+              116.34996642842707,
+              40.021477488419045
+            ],
+            [
+              116.34965168665975,
+              40.021477488419045
+            ],
+            [
+              116.34965168665975,
+              40.02174778565939
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLDG-019",
+        "kind": "building",
+        "building_type": "lab"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34898767822479,
+              40.022280261041104
+            ],
+            [
+              116.34885331128478,
+              40.022280261041104
+            ],
+            [
+              116.34885331128478,
+              40.02260102543954
+            ],
+            [
+              116.34885331128478,
+              40.02272933119892
+            ],
+            [
+              116.34898767822479,
+              40.02272933119892
+            ],
+            [
+              116.34898767822479,
+              40.02260102543954
+            ],
+            [
+              116.34925641210481,
+              40.02260102543954
+            ],
+            [
+              116.34925641210481,
+              40.022280261041104
+            ],
+            [
+              116.34898767822479,
+              40.022280261041104
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLDG-020",
+        "kind": "building",
+        "building_type": "ai_r_and_d"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35000156234659,
+              40.02182643178513
+            ],
+            [
+              116.35038011430774,
+              40.02182643178513
+            ],
+            [
+              116.35038011430774,
+              40.02153881667088
+            ],
+            [
+              116.35000156234659,
+              40.02153881667088
+            ],
+            [
+              116.35000156234659,
+              40.02182643178513
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLDG-021",
+        "kind": "building",
+        "building_type": "mixed_use"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35023438085291,
+              40.02200040029612
+            ],
+            [
+              116.35064947708922,
+              40.02200040029612
+            ],
+            [
+              116.35064947708922,
+              40.02180190018208
+            ],
+            [
+              116.35023438085291,
+              40.02180190018208
+            ],
+            [
+              116.35023438085291,
+              40.02200040029612
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLDG-022",
+        "kind": "building",
+        "building_type": "lab"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34933816978224,
+              40.022046949931934
+            ],
+            [
+              116.34923289378213,
+              40.022046949931934
+            ],
+            [
+              116.34923289378213,
+              40.02234840551334
+            ],
+            [
+              116.34923289378213,
+              40.0224689877459
+            ],
+            [
+              116.34933816978224,
+              40.0224689877459
+            ],
+            [
+              116.34933816978224,
+              40.02234840551334
+            ],
+            [
+              116.34954872178247,
+              40.02234840551334
+            ],
+            [
+              116.34954872178247,
+              40.022046949931934
+            ],
+            [
+              116.34933816978224,
+              40.022046949931934
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLDG-023",
+        "kind": "building",
+        "building_type": "ai_r_and_d"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34959236839335,
+              40.02203898604414
+            ],
+            [
+              116.35007993676852,
+              40.02203898604414
+            ],
+            [
+              116.35007993676852,
+              40.021732834958584
+            ],
+            [
+              116.34959236839335,
+              40.021732834958584
+            ],
+            [
+              116.34959236839335,
+              40.02203898604414
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLDG-024",
+        "kind": "building",
+        "building_type": "lab"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35030948241909,
+              40.02265583285735
+            ],
+            [
+              116.3501800018256,
+              40.02265583285735
+            ],
+            [
+              116.3501800018256,
+              40.02290668907871
+            ],
+            [
+              116.3501800018256,
+              40.02300703156725
+            ],
+            [
+              116.35030948241909,
+              40.02300703156725
+            ],
+            [
+              116.35030948241909,
+              40.02290668907871
+            ],
+            [
+              116.35056844360605,
+              40.02290668907871
+            ],
+            [
+              116.35056844360605,
+              40.02265583285735
+            ],
+            [
+              116.35030948241909,
+              40.02265583285735
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLDG-025",
+        "kind": "building",
+        "building_type": "incubator"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35192096817295,
+              40.01006720125945
+            ],
+            [
+              116.35192096817295,
+              40.00983154528863
+            ],
+            [
+              116.35153499539342,
+              40.00983154528863
+            ],
+            [
+              116.35153499539342,
+              40.01006720125945
+            ],
+            [
+              116.35192096817295,
+              40.01006720125945
+            ]
+          ],
+          [
+            [
+              116.35165078722729,
+              40.009902242079875
+            ],
+            [
+              116.35180517633908,
+              40.009902242079875
+            ],
+            [
+              116.35180517633908,
+              40.009996504468205
+            ],
+            [
+              116.35165078722729,
+              40.009996504468205
+            ],
+            [
+              116.35165078722729,
+              40.009902242079875
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLDG-026",
+        "kind": "building",
+        "building_type": "lab"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35147732981774,
+              40.009616825958666
+            ],
+            [
+              116.35135618934649,
+              40.009616825958666
+            ],
+            [
+              116.35135618934649,
+              40.009891759499716
+            ],
+            [
+              116.35135618934649,
+              40.01000173291614
+            ],
+            [
+              116.35147732981774,
+              40.01000173291614
+            ],
+            [
+              116.35147732981774,
+              40.009891759499716
+            ],
+            [
+              116.35171961076023,
+              40.009891759499716
+            ],
+            [
+              116.35171961076023,
+              40.009616825958666
+            ],
+            [
+              116.35147732981774,
+              40.009616825958666
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLDG-027",
+        "kind": "building",
+        "building_type": "ai_r_and_d"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35180629357366,
+              40.01027244908698
+            ],
+            [
+              116.352353112677,
+              40.01027244908698
+            ],
+            [
+              116.352353112677,
+              40.0099104556801
+            ],
+            [
+              116.35180629357366,
+              40.0099104556801
+            ],
+            [
+              116.35180629357366,
+              40.01027244908698
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLDG-028",
+        "kind": "building",
+        "building_type": "lab"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35121467373567,
+              40.01045233983406
+            ],
+            [
+              116.3510870520638,
+              40.01045233983406
+            ],
+            [
+              116.3510870520638,
+              40.0107238981379
+            ],
+            [
+              116.3510870520638,
+              40.01083252145943
+            ],
+            [
+              116.35121467373567,
+              40.01083252145943
+            ],
+            [
+              116.35121467373567,
+              40.0107238981379
+            ],
+            [
+              116.35146991707941,
+              40.0107238981379
+            ],
+            [
+              116.35146991707941,
+              40.01045233983406
+            ],
+            [
+              116.35121467373567,
+              40.01045233983406
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLDG-029",
+        "kind": "building",
+        "building_type": "incubator"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35177132710537,
+              40.01088083602946
+            ],
+            [
+              116.35177132710537,
+              40.010650608579226
+            ],
+            [
+              116.35137177410506,
+              40.010650608579226
+            ],
+            [
+              116.35137177410506,
+              40.01088083602946
+            ],
+            [
+              116.35177132710537,
+              40.01088083602946
+            ]
+          ],
+          [
+            [
+              116.35149164000515,
+              40.0107196768143
+            ],
+            [
+              116.35165146120528,
+              40.0107196768143
+            ],
+            [
+              116.35165146120528,
+              40.01081176779439
+            ],
+            [
+              116.35149164000515,
+              40.01081176779439
+            ],
+            [
+              116.35149164000515,
+              40.0107196768143
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLDG-030",
+        "kind": "building",
+        "building_type": "lab"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3512182291742,
+              40.0101882897261
+            ],
+            [
+              116.35108195918035,
+              40.0101882897261
+            ],
+            [
+              116.35108195918035,
+              40.01039891869087
+            ],
+            [
+              116.35108195918035,
+              40.01048317027677
+            ],
+            [
+              116.3512182291742,
+              40.01048317027677
+            ],
+            [
+              116.3512182291742,
+              40.01039891869087
+            ],
+            [
+              116.35149076916188,
+              40.01039891869087
+            ],
+            [
+              116.35149076916188,
+              40.0101882897261
+            ],
+            [
+              116.3512182291742,
+              40.0101882897261
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLDG-111",
+        "kind": "building",
+        "building_type": "mixed_use"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34996093059507,
+              40.00850111111111
+            ],
+            [
+              116.34996093059507,
+              40.00872111111111
+            ],
+            [
+              116.35028093059506,
+              40.00872111111111
+            ],
+            [
+              116.35028093059506,
+              40.00850111111111
+            ],
+            [
+              116.34996093059507,
+              40.00850111111111
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLDG-112",
+        "kind": "building",
+        "building_type": "mixed_use"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34999662868209,
+              40.011223333333334
+            ],
+            [
+              116.34999662868209,
+              40.01144333333333
+            ],
+            [
+              116.35031662868208,
+              40.01144333333333
+            ],
+            [
+              116.35031662868208,
+              40.011223333333334
+            ],
+            [
+              116.34999662868209,
+              40.011223333333334
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLDG-113",
+        "kind": "building",
+        "building_type": "office"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34501051513445,
+              40.01394555555556
+            ],
+            [
+              116.34479718180113,
+              40.01394555555556
+            ],
+            [
+              116.34469051513446,
+              40.01394555555556
+            ],
+            [
+              116.34469051513446,
+              40.01416555555556
+            ],
+            [
+              116.34469051513446,
+              40.014253555555555
+            ],
+            [
+              116.34479718180113,
+              40.014253555555555
+            ],
+            [
+              116.34479718180113,
+              40.01416555555556
+            ],
+            [
+              116.34501051513445,
+              40.01416555555556
+            ],
+            [
+              116.34501051513445,
+              40.01394555555556
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLDG-114",
+        "kind": "building",
+        "building_type": "mixed_use"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34983579568508,
+              40.01394555555556
+            ],
+            [
+              116.34983579568508,
+              40.01416555555556
+            ],
+            [
+              116.35015579568507,
+              40.01416555555556
+            ],
+            [
+              116.35015579568507,
+              40.01394555555556
+            ],
+            [
+              116.34983579568508,
+              40.01394555555556
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLDG-115",
+        "kind": "building",
+        "building_type": "mixed_use"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34992709208673,
+              40.016667777777776
+            ],
+            [
+              116.34992709208673,
+              40.016887777777775
+            ],
+            [
+              116.35024709208672,
+              40.016887777777775
+            ],
+            [
+              116.35024709208672,
+              40.016667777777776
+            ],
+            [
+              116.34992709208673,
+              40.016667777777776
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLDG-116",
+        "kind": "building",
+        "building_type": "office"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3449888653239,
+              40.01939
+            ],
+            [
+              116.34477553199058,
+              40.01939
+            ],
+            [
+              116.34466886532391,
+              40.01939
+            ],
+            [
+              116.34466886532391,
+              40.01961
+            ],
+            [
+              116.34466886532391,
+              40.019698
+            ],
+            [
+              116.34477553199058,
+              40.019698
+            ],
+            [
+              116.34477553199058,
+              40.01961
+            ],
+            [
+              116.3449888653239,
+              40.01961
+            ],
+            [
+              116.3449888653239,
+              40.01939
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLDG-117",
+        "kind": "building",
+        "building_type": "mixed_use"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34975007874833,
+              40.01939
+            ],
+            [
+              116.34975007874833,
+              40.01961
+            ],
+            [
+              116.35007007874832,
+              40.01961
+            ],
+            [
+              116.35007007874832,
+              40.01939
+            ],
+            [
+              116.34975007874833,
+              40.01939
             ]
           ]
         ]
       }
     }
-  ],
-  "parent_area_id": "zhongzhiyuan_ai_acceleration_area"
+  ]
 }

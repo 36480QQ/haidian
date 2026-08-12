@@ -1,178 +1,316 @@
 {
   "type": "FeatureCollection",
-  "name": "detail_beijing_ai_origin",
-  "crs_note": "Coordinates stored as EPSG:4326 lon/lat. Areas recomputed via EPSG:4548.",
-  "equal_area_projection": "EPSG:4548",
+  "key_area": "PROV-KEY-002",
   "features": [
     {
       "type": "Feature",
-      "id": "DET-beijing_ai_origin_community-COURT",
       "properties": {
-        "id": "DET-beijing_ai_origin_community-COURT",
-        "layer": "AI_SERVICE_ZONE",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "crs_note": "EPSG:4326 storage",
-        "equal_area_projection": "EPSG:4548",
-        "official_boundary": false,
-        "boundary_precision": "provisional_concept",
-        "name_zh": "北京AI原点社区粗略范围-公共主庭",
-        "detail_type": "public_court",
-        "parent_key_area": "PROV-KEY-002",
-        "area_id": "beijing_ai_origin_community",
-        "area_sqm_declared": 18851.578
+        "id": "STRUCT-SPINE",
+        "kind": "spine"
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "LineString",
         "coordinates": [
           [
-            [
-              116.34827274066103,
-              39.98829294476392
-            ],
-            [
-              116.34819282032302,
-              39.9881
-            ],
-            [
-              116.34806568542494,
-              39.98793431457505
-            ],
-            [
-              116.3479,
-              39.98780717967698
-            ],
-            [
-              116.34770705523609,
-              39.98772725933897
-            ],
-            [
-              116.3475,
-              39.987700000000004
-            ],
-            [
-              116.34729294476391,
-              39.98772725933897
-            ],
-            [
-              116.3471,
-              39.98780717967698
-            ],
-            [
-              116.34693431457505,
-              39.98793431457505
-            ],
-            [
-              116.34680717967697,
-              39.9881
-            ],
-            [
-              116.34672725933896,
-              39.98829294476392
-            ],
-            [
-              116.3467,
-              39.9885
-            ],
-            [
-              116.34672725933896,
-              39.988707055236084
-            ],
-            [
-              116.34680717967697,
-              39.9889
-            ],
-            [
-              116.34693431457505,
-              39.989065685424954
-            ],
-            [
-              116.3471,
-              39.98919282032303
-            ],
-            [
-              116.34729294476391,
-              39.989272740661036
-            ],
-            [
-              116.3475,
-              39.9893
-            ],
-            [
-              116.34770705523609,
-              39.989272740661036
-            ],
-            [
-              116.3479,
-              39.98919282032303
-            ],
-            [
-              116.34806568542494,
-              39.989065685424954
-            ],
-            [
-              116.34819282032302,
-              39.9889
-            ],
-            [
-              116.34827274066103,
-              39.988707055236084
-            ],
-            [
-              116.3483,
-              39.9885
-            ],
-            [
-              116.34827274066103,
-              39.98829294476392
-            ]
+            116.3475,
+            39.9835
+          ],
+          [
+            116.3475,
+            39.9935
           ]
         ]
       }
     },
     {
       "type": "Feature",
-      "id": "DET-beijing_ai_origin_community-ENTRY",
       "properties": {
-        "id": "DET-beijing_ai_origin_community-ENTRY",
-        "layer": "AI_SERVICE_ZONE",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "crs_note": "EPSG:4326 storage",
-        "equal_area_projection": "EPSG:4548",
-        "official_boundary": false,
-        "boundary_precision": "provisional_concept",
-        "name_zh": "北京AI原点社区粗略范围-主入口",
-        "detail_type": "main_entry",
-        "parent_key_area": "PROV-KEY-002",
-        "area_id": "beijing_ai_origin_community",
-        "area_sqm_declared": 21624.822
+        "id": "STRUCT-CROSS",
+        "kind": "cross_seam"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.342,
+            39.9885
+          ],
+          [
+            116.353,
+            39.9885
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "COURT",
+        "kind": "public_court"
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.34649999999999,
-              39.9835
+              116.348395666254,
+              39.98841178457371
+            ],
+            [
+              116.34838270675236,
+              39.988324418710185
+            ],
+            [
+              116.34836124630216,
+              39.988238743790475
+            ],
+            [
+              116.34833149157926,
+              39.98815558491087
+            ],
+            [
+              116.34829372913791,
+              39.98807574293686
+            ],
+            [
+              116.34824832265107,
+              39.987999986790285
+            ],
+            [
+              116.34819570940802,
+              39.98792904604426
+            ],
+            [
+              116.34813639610306,
+              39.98786360389693
+            ],
+            [
+              116.34807095395574,
+              39.987804290591974
+            ],
+            [
+              116.34800001320971,
+              39.98775167734893
+            ],
+            [
+              116.34792425706314,
+              39.98770627086209
+            ],
+            [
+              116.34784441508913,
+              39.98766850842074
+            ],
+            [
+              116.34776125620952,
+              39.987638753697844
+            ],
+            [
+              116.3476755812898,
+              39.98761729324764
+            ],
+            [
+              116.3475882154263,
+              39.987604333746
+            ],
+            [
+              116.3475,
+              39.9876
+            ],
+            [
+              116.3474117845737,
+              39.987604333746
+            ],
+            [
+              116.34732441871019,
+              39.98761729324764
+            ],
+            [
+              116.34723874379047,
+              39.987638753697844
+            ],
+            [
+              116.34715558491087,
+              39.98766850842074
+            ],
+            [
+              116.34707574293685,
+              39.98770627086209
+            ],
+            [
+              116.34699998679028,
+              39.98775167734893
+            ],
+            [
+              116.34692904604425,
+              39.987804290591974
+            ],
+            [
+              116.34686360389694,
+              39.98786360389693
+            ],
+            [
+              116.34680429059198,
+              39.98792904604426
+            ],
+            [
+              116.34675167734892,
+              39.987999986790285
+            ],
+            [
+              116.34670627086209,
+              39.98807574293686
+            ],
+            [
+              116.34666850842073,
+              39.98815558491087
+            ],
+            [
+              116.34663875369783,
+              39.988238743790475
+            ],
+            [
+              116.34661729324763,
+              39.988324418710185
+            ],
+            [
+              116.34660433374599,
+              39.98841178457371
             ],
             [
               116.3466,
-              39.9847
+              39.9885
+            ],
+            [
+              116.34660433374599,
+              39.9885882154263
+            ],
+            [
+              116.34661729324763,
+              39.98867558128982
+            ],
+            [
+              116.34663875369783,
+              39.98876125620953
+            ],
+            [
+              116.34666850842073,
+              39.98884441508913
+            ],
+            [
+              116.34670627086209,
+              39.98892425706315
+            ],
+            [
+              116.34675167734892,
+              39.98900001320972
+            ],
+            [
+              116.34680429059198,
+              39.989070953955746
+            ],
+            [
+              116.34686360389694,
+              39.98913639610307
+            ],
+            [
+              116.34692904604425,
+              39.98919570940803
+            ],
+            [
+              116.34699998679028,
+              39.98924832265107
+            ],
+            [
+              116.34707574293685,
+              39.98929372913791
+            ],
+            [
+              116.34715558491087,
+              39.989331491579264
+            ],
+            [
+              116.34723874379047,
+              39.98936124630216
+            ],
+            [
+              116.34732441871019,
+              39.989382706752366
+            ],
+            [
+              116.3474117845737,
+              39.989395666254005
+            ],
+            [
+              116.3475,
+              39.9894
+            ],
+            [
+              116.3475882154263,
+              39.989395666254005
+            ],
+            [
+              116.3476755812898,
+              39.989382706752366
+            ],
+            [
+              116.34776125620952,
+              39.98936124630216
+            ],
+            [
+              116.34784441508913,
+              39.989331491579264
+            ],
+            [
+              116.34792425706314,
+              39.98929372913791
+            ],
+            [
+              116.34800001320971,
+              39.98924832265107
+            ],
+            [
+              116.34807095395574,
+              39.98919570940803
+            ],
+            [
+              116.34813639610306,
+              39.98913639610307
+            ],
+            [
+              116.34819570940802,
+              39.989070953955746
+            ],
+            [
+              116.34824832265107,
+              39.98900001320972
+            ],
+            [
+              116.34829372913791,
+              39.98892425706315
+            ],
+            [
+              116.34833149157926,
+              39.98884441508913
+            ],
+            [
+              116.34836124630216,
+              39.98876125620953
+            ],
+            [
+              116.34838270675236,
+              39.98867558128982
+            ],
+            [
+              116.348395666254,
+              39.9885882154263
             ],
             [
               116.3484,
-              39.9847
+              39.9885
             ],
             [
-              116.3485,
-              39.9835
-            ],
-            [
-              116.34649999999999,
-              39.9835
+              116.348395666254,
+              39.98841178457371
             ]
           ]
         ]
@@ -180,1245 +318,273 @@
     },
     {
       "type": "Feature",
-      "id": "DET-beijing_ai_origin_community-SEAM",
       "properties": {
-        "id": "DET-beijing_ai_origin_community-SEAM",
-        "layer": "AI_SERVICE_ZONE",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "crs_note": "EPSG:4326 storage",
-        "equal_area_projection": "EPSG:4548",
-        "official_boundary": false,
-        "boundary_precision": "provisional_concept",
-        "name_zh": "北京AI原点社区粗略范围-横缝步行",
-        "detail_type": "cross_seam",
-        "parent_key_area": "PROV-KEY-002",
-        "area_id": "beijing_ai_origin_community",
-        "area_sqm_declared": 31297.107
+        "id": "ENTRY",
+        "kind": "main_entry"
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.342,
-              39.988350000000004
+              116.3479,
+              39.9838
             ],
             [
-              116.342,
-              39.98865
+              116.34789807389066,
+              39.98376079314387
             ],
             [
-              116.353,
-              39.98865
+              116.34789231411216,
+              39.9837219638712
             ],
             [
-              116.353,
-              39.988350000000004
+              116.34788277613428,
+              39.9836838861291
             ],
             [
-              116.342,
-              39.988350000000004
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "DET-beijing_ai_origin_community-SPINE",
-      "properties": {
-        "id": "DET-beijing_ai_origin_community-SPINE",
-        "layer": "AI_SERVICE_ZONE",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "crs_note": "EPSG:4326 storage",
-        "equal_area_projection": "EPSG:4548",
-        "official_boundary": false,
-        "boundary_precision": "provisional_concept",
-        "name_zh": "北京AI原点社区粗略范围-慢行脊段",
-        "detail_type": "spine_segment",
-        "parent_key_area": "PROV-KEY-002",
-        "area_id": "beijing_ai_origin_community",
-        "area_sqm_declared": 47419.859
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.34774999999999,
-              39.9835
-            ],
-            [
-              116.34725,
-              39.9835
-            ],
-            [
-              116.34725,
-              39.9935
-            ],
-            [
-              116.34774999999999,
-              39.9935
-            ],
-            [
-              116.34774999999999,
-              39.9835
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-032",
-      "properties": {
-        "id": "DET-beijing_ai_origin_community-BLDG-01",
-        "layer": "AI_SERVICE_ZONE",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "crs_note": "EPSG:4326 storage",
-        "equal_area_projection": "EPSG:4548",
-        "official_boundary": false,
-        "boundary_precision": "provisional_concept",
-        "building_type": "education",
-        "name_zh": "院落核-32",
-        "name_en": "education-32",
-        "parent_land_use": null,
-        "form_logic": "courtyard",
-        "cluster_id": "CL-beijing_-1",
-        "interface_setback": "front",
-        "concept_only": true,
-        "area_sqm_declared": 2003.053,
-        "detail_type": "building_pad",
-        "parent_key_area": "PROV-KEY-002",
-        "area_id": "beijing_ai_origin_community"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.3459779482375,
-              39.987915594682
-            ],
-            [
-              116.3466220517625,
-              39.987915594682
-            ],
-            [
-              116.3466220517625,
-              39.98748440531801
-            ],
-            [
-              116.3459779482375,
-              39.98748440531801
-            ],
-            [
-              116.3459779482375,
-              39.987915594682
-            ]
-          ],
-          [
-            [
-              116.34648152008432,
-              39.98762454186131
-            ],
-            [
-              116.34648152008432,
-              39.987807797341006
-            ],
-            [
-              116.34611847991567,
-              39.987807797341006
-            ],
-            [
-              116.34611847991567,
-              39.98762454186131
-            ],
-            [
-              116.34648152008432,
-              39.98762454186131
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-033",
-      "properties": {
-        "id": "DET-beijing_ai_origin_community-BLDG-02",
-        "layer": "AI_SERVICE_ZONE",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "crs_note": "EPSG:4326 storage",
-        "equal_area_projection": "EPSG:4548",
-        "official_boundary": false,
-        "boundary_precision": "provisional_concept",
-        "building_type": "incubator",
-        "name_zh": "院落翼L-33",
-        "name_en": "incubator-33",
-        "parent_land_use": null,
-        "form_logic": "L",
-        "cluster_id": "CL-beijing_-1",
-        "interface_setback": "side",
-        "concept_only": true,
-        "area_sqm_declared": 718.366,
-        "detail_type": "building_pad",
-        "parent_key_area": "PROV-KEY-002",
-        "area_id": "beijing_ai_origin_community"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.34649867080455,
-              39.98780000000001
-            ],
-            [
-              116.34649867080455,
-              39.98790779734101
-            ],
-            [
-              116.34670946832182,
-              39.98790779734101
-            ],
-            [
-              116.34670946832182,
-              39.9881772906935
-            ],
-            [
-              116.34685,
-              39.9881772906935
-            ],
-            [
-              116.34685,
-              39.98780000000001
-            ],
-            [
-              116.34649867080455,
-              39.98780000000001
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-034",
-      "properties": {
-        "id": "DET-beijing_ai_origin_community-BLDG-03",
-        "layer": "AI_SERVICE_ZONE",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "crs_note": "EPSG:4326 storage",
-        "equal_area_projection": "EPSG:4548",
-        "official_boundary": false,
-        "boundary_precision": "provisional_concept",
-        "building_type": "mixed_use",
-        "name_zh": "界面条-34",
-        "name_en": "mixed_use-34",
-        "parent_land_use": null,
-        "form_logic": "bar",
-        "cluster_id": "CL-beijing_-1",
-        "interface_setback": "street",
-        "concept_only": true,
-        "area_sqm_declared": 1117.454,
-        "detail_type": "building_pad",
-        "parent_key_area": "PROV-KEY-002",
-        "area_id": "beijing_ai_origin_community"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.34589011593863,
-              39.988321864894
-            ],
-            [
-              116.34670988406137,
-              39.988321864894
-            ],
-            [
-              116.34670988406137,
-              39.988178135106004
-            ],
-            [
-              116.34589011593863,
-              39.988178135106004
-            ],
-            [
-              116.34589011593863,
-              39.988321864894
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-035",
-      "properties": {
-        "id": "DET-beijing_ai_origin_community-BLDG-04",
-        "layer": "AI_SERVICE_ZONE",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "crs_note": "EPSG:4326 storage",
-        "equal_area_projection": "EPSG:4548",
-        "official_boundary": false,
-        "boundary_precision": "provisional_concept",
-        "building_type": "retail",
-        "name_zh": "底商垫-35",
-        "name_en": "retail-35",
-        "parent_land_use": null,
-        "form_logic": "R",
-        "cluster_id": "CL-beijing_-1",
-        "interface_setback": "pocket",
-        "concept_only": true,
-        "area_sqm_declared": 614.609,
-        "detail_type": "building_pad",
-        "parent_key_area": "PROV-KEY-002",
-        "area_id": "beijing_ai_origin_community"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.34646971358387,
-              39.987280349670705
-            ],
-            [
-              116.34679442966215,
-              39.98731535548122
-            ],
-            [
-              116.34683028641612,
-              39.9871196503293
-            ],
-            [
-              116.34650557033784,
-              39.98708464451878
-            ],
-            [
-              116.34646971358387,
-              39.987280349670705
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-036",
-      "properties": {
-        "id": "DET-beijing_ai_origin_community-BLDG-05",
-        "layer": "AI_SERVICE_ZONE",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "crs_note": "EPSG:4326 storage",
-        "equal_area_projection": "EPSG:4548",
-        "official_boundary": false,
-        "boundary_precision": "provisional_concept",
-        "building_type": "education",
-        "name_zh": "院落核-36",
-        "name_en": "education-36",
-        "parent_land_use": null,
-        "form_logic": "courtyard",
-        "cluster_id": "CL-beijing_-2",
-        "interface_setback": "front",
-        "concept_only": true,
-        "area_sqm_declared": 2003.046,
-        "detail_type": "building_pad",
-        "parent_key_area": "PROV-KEY-002",
-        "area_id": "beijing_ai_origin_community"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.34812654948355,
-              39.98805952183723
-            ],
-            [
-              116.34875657780115,
-              39.98816224500463
-            ],
-            [
-              116.34887345051645,
-              39.98774047816278
-            ],
-            [
-              116.34824342219885,
-              39.987637754995376
-            ],
-            [
-              116.34812654948355,
-              39.98805952183723
-            ]
-          ],
-          [
-            [
-              116.34869800616013,
-              39.98785514005895
-            ],
-            [
-              116.34864833525614,
-              39.98803439096673
-            ],
-            [
-              116.34829322838621,
-              39.9879764924542
-            ],
-            [
-              116.34834289929022,
-              39.98779724154641
-            ],
-            [
-              116.34869800616013,
-              39.98785514005895
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-037",
-      "properties": {
-        "id": "DET-beijing_ai_origin_community-BLDG-06",
-        "layer": "AI_SERVICE_ZONE",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "crs_note": "EPSG:4326 storage",
-        "equal_area_projection": "EPSG:4548",
-        "official_boundary": false,
-        "boundary_precision": "provisional_concept",
-        "building_type": "incubator",
-        "name_zh": "院落翼L-37",
-        "name_en": "incubator-37",
-        "parent_land_use": null,
-        "form_logic": "L",
-        "cluster_id": "CL-beijing_-2",
-        "interface_setback": "side",
-        "concept_only": true,
-        "area_sqm_declared": 718.364,
-        "detail_type": "building_pad",
-        "parent_key_area": "PROV-KEY-002",
-        "area_id": "beijing_ai_origin_community"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.3487063481904,
-              39.98794396918142
-            ],
-            [
-              116.34867713001158,
-              39.98804941089189
-            ],
-            [
-              116.34888332109735,
-              39.988083029383034
-            ],
-            [
-              116.34881027565028,
-              39.9883466336592
-            ],
-            [
-              116.34894773637411,
-              39.98836904598663
-            ],
-            [
-              116.34905,
-              39.98800000000001
-            ],
-            [
-              116.3487063481904,
-              39.98794396918142
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-038",
-      "properties": {
-        "id": "DET-beijing_ai_origin_community-BLDG-07",
-        "layer": "AI_SERVICE_ZONE",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "crs_note": "EPSG:4326 storage",
-        "equal_area_projection": "EPSG:4548",
-        "official_boundary": false,
-        "boundary_precision": "provisional_concept",
-        "building_type": "mixed_use",
-        "name_zh": "界面条-38",
-        "name_en": "mixed_use-38",
-        "parent_land_use": null,
-        "form_logic": "bar",
-        "cluster_id": "CL-beijing_-2",
-        "interface_setback": "street",
-        "concept_only": true,
-        "area_sqm_declared": 1117.45,
-        "detail_type": "building_pad",
-        "parent_key_area": "PROV-KEY-002",
-        "area_id": "beijing_ai_origin_community"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.34807959410291,
-              39.988454925185295
-            ],
-            [
-              116.34888144832532,
-              39.98858566376199
-            ],
-            [
-              116.34892040589709,
-              39.988445074814706
-            ],
-            [
-              116.34811855167469,
-              39.98831433623801
-            ],
-            [
-              116.34807959410291,
-              39.988454925185295
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-039",
-      "properties": {
-        "id": "DET-beijing_ai_origin_community-BLDG-08",
-        "layer": "AI_SERVICE_ZONE",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "crs_note": "EPSG:4326 storage",
-        "equal_area_projection": "EPSG:4548",
-        "official_boundary": false,
-        "boundary_precision": "provisional_concept",
-        "building_type": "retail",
-        "name_zh": "底商垫-39",
-        "name_en": "retail-39",
-        "parent_land_use": null,
-        "form_logic": "R",
-        "cluster_id": "CL-beijing_-2",
-        "interface_setback": "pocket",
-        "concept_only": true,
-        "area_sqm_declared": 614.607,
-        "detail_type": "building_pad",
-        "parent_key_area": "PROV-KEY-002",
-        "area_id": "beijing_ai_origin_community"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.34865187471287,
-              39.9874498413297
+              116.347869551813,
+              39.98364692662705
             ],
             [
-              116.34896000673515,
-              39.98753586867441
+              116.34785276850573,
+              39.98361144130527
             ],
             [
-              116.34904812528713,
-              39.9873501586703
+              116.34783258784492,
+              39.983577771906795
             ],
             [
-              116.34873999326484,
-              39.987264131325595
+              116.34780920418135,
+              39.98354624268634
             ],
             [
-              116.34865187471287,
-              39.9874498413297
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-040",
-      "properties": {
-        "id": "DET-beijing_ai_origin_community-BLDG-09",
-        "layer": "AI_SERVICE_ZONE",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "crs_note": "EPSG:4326 storage",
-        "equal_area_projection": "EPSG:4548",
-        "official_boundary": false,
-        "boundary_precision": "provisional_concept",
-        "building_type": "education",
-        "name_zh": "院落核-40",
-        "name_en": "education-40",
-        "parent_land_use": null,
-        "form_logic": "courtyard",
-        "cluster_id": "CL-beijing_-3",
-        "interface_setback": "front",
-        "concept_only": true,
-        "area_sqm_declared": 2003.001,
-        "detail_type": "building_pad",
-        "parent_key_area": "PROV-KEY-002",
-        "area_id": "beijing_ai_origin_community"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.34643164706706,
-              39.98975521659143
-            ],
-            [
-              116.34706596521222,
-              39.989669422037245
-            ],
-            [
-              116.34696835293293,
-              39.989244783408566
-            ],
-            [
-              116.34633403478777,
-              39.989330577962754
-            ],
-            [
-              116.34643164706706,
-              39.98975521659143
-            ]
-          ],
-          [
-            [
-              116.3468616802375,
-              39.98940150977471
-            ],
-            [
-              116.34690316545618,
-              39.9895819811919
-            ],
-            [
-              116.34654564068346,
-              39.98963033812244
-            ],
-            [
-              116.34650415546476,
-              39.98944986670525
-            ],
-            [
-              116.3468616802375,
-              39.98940150977471
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-041",
-      "properties": {
-        "id": "DET-beijing_ai_origin_community-BLDG-10",
-        "layer": "AI_SERVICE_ZONE",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "crs_note": "EPSG:4326 storage",
-        "equal_area_projection": "EPSG:4548",
-        "official_boundary": false,
-        "boundary_precision": "provisional_concept",
-        "building_type": "incubator",
-        "name_zh": "院落翼L-41",
-        "name_en": "incubator-41",
-        "parent_land_use": null,
-        "form_logic": "L",
-        "cluster_id": "CL-beijing_-3",
-        "interface_setback": "side",
-        "concept_only": true,
-        "area_sqm_declared": 718.347,
-        "detail_type": "building_pad",
-        "parent_key_area": "PROV-KEY-002",
-        "area_id": "beijing_ai_origin_community"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.34690400828445,
-              39.98964679702956
-            ],
-            [
-              116.34692841135428,
-              39.98975295668673
-            ],
-            [
-              116.34713600638361,
-              39.989724878469
-            ],
-            [
-              116.34719701405815,
-              39.989990277611916
-            ],
-            [
-              116.34733541074438,
-              39.9899715588001
-            ],
-            [
-              116.34725,
-              39.9896
-            ],
-            [
-              116.34690400828445,
-              39.98964679702956
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-042",
-      "properties": {
-        "id": "DET-beijing_ai_origin_community-BLDG-11",
-        "layer": "AI_SERVICE_ZONE",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "crs_note": "EPSG:4326 storage",
-        "equal_area_projection": "EPSG:4548",
-        "official_boundary": false,
-        "boundary_precision": "provisional_concept",
-        "building_type": "mixed_use",
-        "name_zh": "界面条-42",
-        "name_en": "mixed_use-42",
-        "parent_land_use": null,
-        "form_logic": "bar",
-        "cluster_id": "CL-beijing_-3",
-        "interface_setback": "street",
-        "concept_only": true,
-        "area_sqm_declared": 1117.425,
-        "detail_type": "building_pad",
-        "parent_key_area": "PROV-KEY-002",
-        "area_id": "beijing_ai_origin_community"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.34631261171174,
-              39.99017536963925
-            ],
-            [
-              116.34711992571468,
-              39.990066176570295
-            ],
-            [
-              116.34708738828826,
-              39.98992463036074
-            ],
-            [
-              116.34628007428532,
-              39.9900338234297
-            ],
-            [
-              116.34631261171174,
-              39.99017536963925
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-043",
-      "properties": {
-        "id": "DET-beijing_ai_origin_community-BLDG-12",
-        "layer": "AI_SERVICE_ZONE",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "crs_note": "EPSG:4326 storage",
-        "equal_area_projection": "EPSG:4548",
-        "official_boundary": false,
-        "boundary_precision": "provisional_concept",
-        "building_type": "retail",
-        "name_zh": "底商垫-43",
-        "name_en": "retail-43",
-        "parent_land_use": null,
-        "form_logic": "R",
-        "cluster_id": "CL-beijing_-3",
-        "interface_setback": "pocket",
-        "concept_only": true,
-        "area_sqm_declared": 614.593,
-        "detail_type": "building_pad",
-        "parent_key_area": "PROV-KEY-002",
-        "area_id": "beijing_ai_origin_community"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.34689064202934,
-              39.989103143119394
-            ],
-            [
-              116.34721834952619,
-              39.98909436494918
-            ],
-            [
-              116.34720935797066,
-              39.9888968568806
-            ],
-            [
-              116.3468816504738,
-              39.98890563505081
-            ],
-            [
-              116.34689064202934,
-              39.989103143119394
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-044",
-      "properties": {
-        "id": "DET-beijing_ai_origin_community-BLDG-13",
-        "layer": "AI_SERVICE_ZONE",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "crs_note": "EPSG:4326 storage",
-        "equal_area_projection": "EPSG:4548",
-        "official_boundary": false,
-        "boundary_precision": "provisional_concept",
-        "building_type": "education",
-        "name_zh": "院落核-44",
-        "name_en": "education-44",
-        "parent_land_use": null,
-        "form_logic": "courtyard",
-        "cluster_id": "CL-beijing_-4",
-        "interface_setback": "front",
-        "concept_only": true,
-        "area_sqm_declared": 2003.002,
-        "detail_type": "building_pad",
-        "parent_key_area": "PROV-KEY-002",
-        "area_id": "beijing_ai_origin_community"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.34831893664362,
-              39.98915296442688
-            ],
-            [
-              116.34831893664362,
-              39.98964703557313
-            ],
-            [
-              116.34888106335636,
-              39.98964703557313
-            ],
-            [
-              116.34888106335636,
-              39.98915296442688
-            ],
-            [
-              116.34831893664362,
-              39.98915296442688
-            ]
-          ],
-          [
-            [
-              116.34869837217472,
-              39.989539238232126
-            ],
-            [
-              116.3484594683218,
-              39.989539238232126
-            ],
-            [
-              116.3484594683218,
-              39.98926076176788
-            ],
-            [
-              116.34869837217472,
-              39.98926076176788
-            ],
-            [
-              116.34869837217472,
-              39.989539238232126
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-045",
-      "properties": {
-        "id": "DET-beijing_ai_origin_community-BLDG-14",
-        "layer": "AI_SERVICE_ZONE",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "crs_note": "EPSG:4326 storage",
-        "equal_area_projection": "EPSG:4548",
-        "official_boundary": false,
-        "boundary_precision": "provisional_concept",
-        "building_type": "ai_r_and_d",
-        "name_zh": "院落翼U-45",
-        "name_en": "ai_r_and_d-45",
-        "parent_land_use": null,
-        "form_logic": "U",
-        "cluster_id": "CL-beijing_-4",
-        "interface_setback": "side",
-        "concept_only": true,
-        "area_sqm_declared": 877.985,
-        "detail_type": "building_pad",
-        "parent_key_area": "PROV-KEY-002",
-        "area_id": "beijing_ai_origin_community"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.34772524885817,
-              39.989250000000006
-            ],
-            [
-              116.34772524885817,
-              39.98934881422925
-            ],
-            [
-              116.34797117929499,
-              39.98934881422925
-            ],
-            [
-              116.34797117929499,
-              39.98949254401725
+              116.34778284271248,
+              39.98351715728753
             ],
             [
-              116.34772524885817,
-              39.98949254401725
+              116.34775375731367,
+              39.98349079581866
             ],
-            [
-              116.34772524885817,
-              39.9895913582465
-            ],
-            [
-              116.34809999999999,
-              39.9895913582465
-            ],
-            [
-              116.34809999999999,
-              39.989250000000006
-            ],
-            [
-              116.34772524885817,
-              39.989250000000006
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-046",
-      "properties": {
-        "id": "DET-beijing_ai_origin_community-BLDG-15",
-        "layer": "AI_SERVICE_ZONE",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "crs_note": "EPSG:4326 storage",
-        "equal_area_projection": "EPSG:4548",
-        "official_boundary": false,
-        "boundary_precision": "provisional_concept",
-        "building_type": "mixed_use",
-        "name_zh": "界面条-46",
-        "name_en": "mixed_use-46",
-        "parent_land_use": null,
-        "form_logic": "bar",
-        "cluster_id": "CL-beijing_-4",
-        "interface_setback": "street",
-        "concept_only": true,
-        "area_sqm_declared": 1117.426,
-        "detail_type": "building_pad",
-        "parent_key_area": "PROV-KEY-002",
-        "area_id": "beijing_ai_origin_community"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.34850631221454,
-              39.989635591088756
-            ],
-            [
-              116.34850631221454,
-              39.990264408911244
-            ],
-            [
-              116.34869368778544,
-              39.990264408911244
-            ],
-            [
-              116.34869368778544,
-              39.989635591088756
-            ],
-            [
-              116.34850631221454,
-              39.989635591088756
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-047",
-      "properties": {
-        "id": "DET-beijing_ai_origin_community-BLDG-16",
-        "layer": "AI_SERVICE_ZONE",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "crs_note": "EPSG:4326 storage",
-        "equal_area_projection": "EPSG:4548",
-        "official_boundary": false,
-        "boundary_precision": "provisional_concept",
-        "building_type": "retail",
-        "name_zh": "底商垫-47",
-        "name_en": "retail-47",
-        "parent_land_use": null,
-        "form_logic": "R",
-        "cluster_id": "CL-beijing_-4",
-        "interface_setback": "pocket",
-        "concept_only": true,
-        "area_sqm_declared": 614.594,
-        "detail_type": "building_pad",
-        "parent_key_area": "PROV-KEY-002",
-        "area_id": "beijing_ai_origin_community"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.34884525090358,
-              39.98876170807517
-            ],
-            [
-              116.34879961503489,
-              39.98901078735943
-            ],
-            [
-              116.3490547490964,
-              39.989038291924835
-            ],
-            [
-              116.34910038496508,
-              39.98878921264057
-            ],
-            [
-              116.34884525090358,
-              39.98876170807517
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "PUBLIC-004",
-      "properties": {
-        "id": "DET-beijing_ai_origin_community-PUB-01",
-        "layer": "AI_SERVICE_ZONE",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "crs_note": "EPSG:4326 storage",
-        "equal_area_projection": "EPSG:4548",
-        "official_boundary": false,
-        "boundary_precision": "provisional_concept",
-        "name_zh": "验证庭外延",
-        "public_space_type": "verify_forecourt",
-        "area_sqm_declared": 67494.0,
-        "detail_type": "public_prototype",
-        "parent_key_area": "PROV-KEY-002",
-        "area_id": "beijing_ai_origin_community"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
             [
-              116.34925537111177,
-              39.99054077988116
+              116.3477222280932,
+              39.98346741215508
             ],
             [
-              116.34907979226337,
-              39.99033331572038
+              116.34768855869473,
+              39.98344723149426
             ],
             [
-              116.34884350288425,
-              39.990151471862575
+              116.34765307337294,
+              39.983430448187
             ],
             [
-              116.34855558344273,
-              39.99000223646524
+              116.3476161138709,
+              39.98341722386571
             ],
             [
-              116.34822709852149,
-              39.98989134456099
+              116.34757803612881,
+              39.98340768588784
             ],
             [
-              116.34787067161183,
-              39.989823057663514
+              116.34753920685613,
+              39.98340192610933
             ],
             [
               116.3475,
-              39.9898
+              39.9834
             ],
             [
-              116.34712932838816,
-              39.989823057663514
+              116.34746079314387,
+              39.98340192610933
             ],
             [
-              116.3467729014785,
-              39.98989134456099
+              116.34742196387118,
+              39.98340768588784
             ],
             [
-              116.34644441655726,
-              39.99000223646524
+              116.3473838861291,
+              39.98341722386571
             ],
             [
-              116.34615649711574,
-              39.990151471862575
+              116.34734692662705,
+              39.983430448187
             ],
             [
-              116.34592020773663,
-              39.99033331572038
+              116.34731144130527,
+              39.98344723149426
             ],
             [
-              116.34574462888823,
-              39.99054077988116
+              116.34727777190679,
+              39.98346741215508
             ],
             [
-              116.34563650796723,
-              39.99076589161358
+              116.34724624268632,
+              39.98349079581866
             ],
             [
-              116.34559999999999,
-              39.991
+              116.34721715728752,
+              39.98351715728753
             ],
             [
-              116.34563650796723,
-              39.99123410838642
+              116.34719079581865,
+              39.98354624268634
             ],
             [
-              116.34574462888823,
-              39.99145922011884
+              116.34716741215507,
+              39.983577771906795
             ],
             [
-              116.34592020773663,
-              39.99166668427962
+              116.34714723149426,
+              39.98361144130527
             ],
             [
-              116.34615649711574,
-              39.991848528137425
+              116.34713044818699,
+              39.98364692662705
             ],
             [
-              116.34644441655726,
-              39.99199776353476
+              116.34711722386571,
+              39.9836838861291
             ],
             [
-              116.3467729014785,
-              39.99210865543901
+              116.34710768588783,
+              39.9837219638712
             ],
             [
-              116.34712932838816,
-              39.992176942336485
+              116.34710192610933,
+              39.98376079314387
+            ],
+            [
+              116.3471,
+              39.9838
+            ],
+            [
+              116.34710192610933,
+              39.98383920685613
+            ],
+            [
+              116.34710768588783,
+              39.98387803612881
+            ],
+            [
+              116.34711722386571,
+              39.983916113870904
+            ],
+            [
+              116.34713044818699,
+              39.98395307337295
+            ],
+            [
+              116.34714723149426,
+              39.98398855869473
+            ],
+            [
+              116.34716741215507,
+              39.98402222809321
+            ],
+            [
+              116.34719079581865,
+              39.98405375731367
+            ],
+            [
+              116.34721715728752,
+              39.984082842712475
+            ],
+            [
+              116.34724624268632,
+              39.984109204181344
+            ],
+            [
+              116.34727777190679,
+              39.984132587844925
+            ],
+            [
+              116.34731144130527,
+              39.984152768505744
+            ],
+            [
+              116.34734692662705,
+              39.984169551813004
+            ],
+            [
+              116.3473838861291,
+              39.9841827761343
+            ],
+            [
+              116.34742196387118,
+              39.984192314112164
+            ],
+            [
+              116.34746079314387,
+              39.984198073890674
             ],
             [
               116.3475,
-              39.9922
+              39.9842
             ],
             [
-              116.34787067161183,
-              39.992176942336485
+              116.34753920685613,
+              39.984198073890674
             ],
             [
-              116.34822709852149,
-              39.99210865543901
+              116.34757803612881,
+              39.984192314112164
             ],
             [
-              116.34855558344273,
-              39.99199776353476
+              116.3476161138709,
+              39.9841827761343
             ],
             [
-              116.34884350288425,
-              39.991848528137425
+              116.34765307337294,
+              39.984169551813004
             ],
             [
-              116.34907979226337,
-              39.99166668427962
+              116.34768855869473,
+              39.984152768505744
             ],
             [
-              116.34925537111177,
-              39.99145922011884
+              116.3477222280932,
+              39.984132587844925
             ],
             [
-              116.34936349203277,
-              39.99123410838642
+              116.34775375731367,
+              39.984109204181344
             ],
             [
-              116.3494,
-              39.991
+              116.34778284271248,
+              39.984082842712475
             ],
             [
-              116.34936349203277,
-              39.99076589161358
+              116.34780920418135,
+              39.98405375731367
             ],
             [
-              116.34925537111177,
-              39.99054077988116
+              116.34783258784492,
+              39.98402222809321
+            ],
+            [
+              116.34785276850573,
+              39.98398855869473
+            ],
+            [
+              116.347869551813,
+              39.98395307337295
+            ],
+            [
+              116.34788277613428,
+              39.983916113870904
+            ],
+            [
+              116.34789231411216,
+              39.98387803612881
+            ],
+            [
+              116.34789807389066,
+              39.98383920685613
+            ],
+            [
+              116.3479,
+              39.9838
             ]
           ]
         ]
@@ -1426,147 +592,33 @@
     },
     {
       "type": "Feature",
-      "id": "PUBLIC-010",
       "properties": {
-        "id": "DET-beijing_ai_origin_community-PUB-02",
-        "layer": "AI_SERVICE_ZONE",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "crs_note": "EPSG:4326 storage",
-        "equal_area_projection": "EPSG:4548",
-        "official_boundary": false,
-        "boundary_precision": "provisional_concept",
-        "name_zh": "人才服务院",
-        "public_space_type": "talent_court",
-        "area_sqm_declared": 43174.08,
-        "detail_type": "public_prototype",
-        "parent_key_area": "PROV-KEY-002",
-        "area_id": "beijing_ai_origin_community"
+        "id": "FRONTAGE",
+        "kind": "active_frontage"
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.35294720441844,
-              39.98844442976698
+              116.3423,
+              39.9837
             ],
             [
-              116.35276066017177,
-              39.98829289321881
+              116.3423,
+              39.9845
             ],
             [
-              116.35253335534952,
-              39.988168530387696
+              116.3527,
+              39.9845
             ],
             [
-              116.35227402514855,
-              39.98807612046748
+              116.3527,
+              39.9837
             ],
             [
-              116.35199263548301,
-              39.98801921471959
-            ],
-            [
-              116.3517,
-              39.988
-            ],
-            [
-              116.35140736451697,
-              39.98801921471959
-            ],
-            [
-              116.35112597485144,
-              39.98807612046748
-            ],
-            [
-              116.35086664465047,
-              39.988168530387696
-            ],
-            [
-              116.35063933982822,
-              39.98829289321881
-            ],
-            [
-              116.35045279558155,
-              39.98844442976698
-            ],
-            [
-              116.35031418070123,
-              39.988617316567634
-            ],
-            [
-              116.35022882207939,
-              39.98880490967798
-            ],
-            [
-              116.3502,
-              39.989
-            ],
-            [
-              116.35022882207939,
-              39.98919509032201
-            ],
-            [
-              116.35031418070123,
-              39.98938268343236
-            ],
-            [
-              116.35045279558155,
-              39.989555570233016
-            ],
-            [
-              116.35063933982822,
-              39.98970710678118
-            ],
-            [
-              116.35086664465047,
-              39.9898314696123
-            ],
-            [
-              116.35112597485144,
-              39.98992387953251
-            ],
-            [
-              116.35140736451697,
-              39.9899807852804
-            ],
-            [
-              116.3517,
-              39.989999999999995
-            ],
-            [
-              116.35199263548301,
-              39.9899807852804
-            ],
-            [
-              116.35227402514855,
-              39.98992387953251
-            ],
-            [
-              116.35253335534952,
-              39.9898314696123
-            ],
-            [
-              116.35276066017177,
-              39.98970710678118
-            ],
-            [
-              116.35294720441844,
-              39.989555570233016
-            ],
-            [
-              116.353,
-              39.98948972117581
-            ],
-            [
-              116.353,
-              39.98851027882419
-            ],
-            [
-              116.35294720441844,
-              39.98844442976698
+              116.3423,
+              39.9837
             ]
           ]
         ]
@@ -1574,159 +626,34 @@
     },
     {
       "type": "Feature",
-      "id": "PUBLIC-013",
       "properties": {
-        "id": "DET-beijing_ai_origin_community-PUB-03",
-        "layer": "AI_SERVICE_ZONE",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "crs_note": "EPSG:4326 storage",
-        "equal_area_projection": "EPSG:4548",
-        "official_boundary": false,
-        "boundary_precision": "provisional_concept",
-        "name_zh": "社区活动场",
-        "public_space_type": "community_yard",
-        "area_sqm_declared": 44406.549,
-        "detail_type": "public_prototype",
-        "parent_key_area": "PROV-KEY-002",
-        "area_id": "beijing_ai_origin_community"
+        "id": "BLDG-031",
+        "kind": "building",
+        "building_type": "education"
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.34488581929875,
-              39.98661731656764
+              116.34513133100997,
+              39.98671106723644
             ],
             [
-              116.34474720441844,
-              39.98644442976698
+              116.34557335815198,
+              39.98671106723644
             ],
             [
-              116.34456066017177,
-              39.98629289321882
+              116.34557335815198,
+              39.98635621271001
             ],
             [
-              116.34433335534952,
-              39.9861685303877
+              116.34513133100997,
+              39.98635621271001
             ],
             [
-              116.34407402514854,
-              39.98607612046749
-            ],
-            [
-              116.34379263548301,
-              39.9860192147196
-            ],
-            [
-              116.34349999999999,
-              39.986000000000004
-            ],
-            [
-              116.34320736451697,
-              39.9860192147196
-            ],
-            [
-              116.34292597485144,
-              39.98607612046749
-            ],
-            [
-              116.34266664465046,
-              39.9861685303877
-            ],
-            [
-              116.34243933982822,
-              39.98629289321882
-            ],
-            [
-              116.34225279558154,
-              39.98644442976698
-            ],
-            [
-              116.34211418070123,
-              39.98661731656764
-            ],
-            [
-              116.34202882207939,
-              39.986804909677986
-            ],
-            [
-              116.342,
-              39.987
-            ],
-            [
-              116.34202882207939,
-              39.98719509032202
-            ],
-            [
-              116.34211418070123,
-              39.987382683432365
-            ],
-            [
-              116.34225279558154,
-              39.98755557023302
-            ],
-            [
-              116.34243933982822,
-              39.98770710678119
-            ],
-            [
-              116.34266664465046,
-              39.9878314696123
-            ],
-            [
-              116.34292597485144,
-              39.98792387953252
-            ],
-            [
-              116.34320736451697,
-              39.987980785280406
-            ],
-            [
-              116.34349999999999,
-              39.988
-            ],
-            [
-              116.34379263548301,
-              39.987980785280406
-            ],
-            [
-              116.34407402514854,
-              39.98792387953252
-            ],
-            [
-              116.34433335534952,
-              39.9878314696123
-            ],
-            [
-              116.34456066017177,
-              39.98770710678119
-            ],
-            [
-              116.34474720441844,
-              39.98755557023302
-            ],
-            [
-              116.34488581929875,
-              39.987382683432365
-            ],
-            [
-              116.3449711779206,
-              39.98719509032202
-            ],
-            [
-              116.34499999999998,
-              39.987
-            ],
-            [
-              116.3449711779206,
-              39.986804909677986
-            ],
-            [
-              116.34488581929875,
-              39.98661731656764
+              116.34513133100997,
+              39.98671106723644
             ]
           ]
         ]
@@ -1734,50 +661,56 @@
     },
     {
       "type": "Feature",
-      "id": "SCN-04",
       "properties": {
-        "id": "DET-beijing_ai_origin_community-SCN-04",
-        "layer": "SCENARIO_NODE",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "crs_note": "EPSG:4326 storage",
-        "equal_area_projection": "EPSG:4548",
-        "official_boundary": false,
-        "boundary_precision": "provisional_concept",
-        "name_zh": "端侧算力驿站",
-        "name_en": "edge_compute",
-        "scenario_type": "edge_compute",
-        "host_structure": "zhongzhiyuan_ai_acceleration_area",
-        "place_geometry_id": "SCN-04",
-        "area_sqm_declared": 2370.908,
-        "detail_type": "scenario_anchor",
-        "parent_key_area": "PROV-KEY-002",
-        "area_id": "beijing_ai_origin_community"
+        "id": "BLDG-032",
+        "kind": "building",
+        "building_type": "talent_apartment"
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.34724999999996,
-              39.99124999999999
+              116.34486495785444,
+              39.98710371882006
             ],
             [
-              116.34774999999995,
-              39.99124999999999
+              116.34486495785444,
+              39.986759783262706
             ],
             [
-              116.34774999999995,
-              39.990749999999984
+              116.34432375014725,
+              39.986759783262706
             ],
             [
-              116.34724999999996,
-              39.990749999999984
+              116.34432375014725,
+              39.98710371882006
             ],
             [
-              116.34724999999996,
-              39.99124999999999
+              116.34486495785444,
+              39.98710371882006
+            ]
+          ],
+          [
+            [
+              116.3444861124594,
+              39.98686296392991
+            ],
+            [
+              116.34470259554229,
+              39.98686296392991
+            ],
+            [
+              116.34470259554229,
+              39.987000538152856
+            ],
+            [
+              116.3444861124594,
+              39.987000538152856
+            ],
+            [
+              116.3444861124594,
+              39.98686296392991
             ]
           ]
         ]
@@ -1785,50 +718,34 @@
     },
     {
       "type": "Feature",
-      "id": "SCN-10",
       "properties": {
-        "id": "DET-beijing_ai_origin_community-SCN-10",
-        "layer": "SCENARIO_NODE",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "crs_note": "EPSG:4326 storage",
-        "equal_area_projection": "EPSG:4548",
-        "official_boundary": false,
-        "boundary_precision": "provisional_concept",
-        "name_zh": "全球AI活动周枢纽",
-        "name_en": "festival_hub",
-        "scenario_type": "festival_hub",
-        "host_structure": "dazhongsi_ai_industry_cluster",
-        "place_geometry_id": "SCN-10",
-        "area_sqm_declared": 2370.974,
-        "detail_type": "scenario_anchor",
-        "parent_key_area": "PROV-KEY-002",
-        "area_id": "beijing_ai_origin_community"
+        "id": "BLDG-033",
+        "kind": "building",
+        "building_type": "lab"
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.35145,
-              39.98925
+              116.3448176852754,
+              39.98698223856576
             ],
             [
-              116.35194999999999,
-              39.98925
+              116.3451910946551,
+              39.98698223856576
             ],
             [
-              116.35194999999999,
-              39.988749999999996
+              116.3451910946551,
+              39.98667958273211
             ],
             [
-              116.35145,
-              39.988749999999996
+              116.3448176852754,
+              39.98667958273211
             ],
             [
-              116.35145,
-              39.98925
+              116.3448176852754,
+              39.98698223856576
             ]
           ]
         ]
@@ -1836,292 +753,1350 @@
     },
     {
       "type": "Feature",
-      "id": "DET-beijing_ai_origin_community-RISK",
       "properties": {
-        "id": "DET-beijing_ai_origin_community-RISK",
-        "layer": "AI_SERVICE_ZONE",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "crs_note": "EPSG:4326 storage",
-        "equal_area_projection": "EPSG:4548",
-        "official_boundary": false,
-        "boundary_precision": "provisional_concept",
-        "name_zh": "北京AI原点社区粗略范围-风险/待确认叠加",
-        "detail_type": "risk_overlay",
-        "parent_key_area": "PROV-KEY-002",
-        "area_id": "beijing_ai_origin_community",
-        "status": "pending_confirmation",
-        "area_sqm_declared": 24095.361
+        "id": "BLDG-034",
+        "kind": "building",
+        "building_type": "community_service"
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.34939566625401,
-              39.98741178457371
+              116.3458857265574,
+              39.98609347924208
             ],
             [
-              116.34938270675237,
-              39.98732441871019
+              116.34576376003001,
+              39.98609347924208
             ],
             [
-              116.34936124630217,
-              39.98723874379048
+              116.34576376003001,
+              39.98649529129724
             ],
             [
-              116.34933149157926,
-              39.98715558491087
+              116.34576376003001,
+              39.986656016119305
             ],
             [
-              116.34929372913791,
-              39.98707574293686
+              116.3458857265574,
+              39.986656016119305
             ],
             [
-              116.34924832265108,
-              39.98699998679029
+              116.3458857265574,
+              39.98649529129724
             ],
             [
-              116.34919570940802,
-              39.98692904604426
+              116.34612965961217,
+              39.98649529129724
             ],
             [
-              116.34913639610306,
-              39.986863603896936
+              116.34612965961217,
+              39.98609347924208
             ],
             [
-              116.34907095395575,
-              39.98680429059198
+              116.3458857265574,
+              39.98609347924208
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLDG-035",
+        "kind": "building",
+        "building_type": "incubator"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34547658433073,
+              39.98715626507032
+            ],
+            [
+              116.34532206796585,
+              39.98715626507032
+            ],
+            [
+              116.34532206796585,
+              39.98754008178799
+            ],
+            [
+              116.34532206796585,
+              39.987693608475055
+            ],
+            [
+              116.34547658433073,
+              39.987693608475055
+            ],
+            [
+              116.34547658433073,
+              39.98754008178799
+            ],
+            [
+              116.34578561706046,
+              39.98754008178799
+            ],
+            [
+              116.34578561706046,
+              39.98715626507032
+            ],
+            [
+              116.34547658433073,
+              39.98715626507032
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLDG-036",
+        "kind": "building",
+        "building_type": "mixed_use"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34482413624065,
+              39.986229438555625
+            ],
+            [
+              116.34471926721254,
+              39.986229438555625
+            ],
+            [
+              116.34471926721254,
+              39.98633691403705
+            ],
+            [
+              116.34471926721254,
+              39.98655186499988
+            ],
+            [
+              116.34482413624065,
+              39.98655186499988
+            ],
+            [
+              116.34482413624065,
+              39.98633691403705
+            ],
+            [
+              116.34503387429686,
+              39.98633691403705
+            ],
+            [
+              116.34503387429686,
+              39.98655186499988
+            ],
+            [
+              116.34513874332497,
+              39.98655186499988
+            ],
+            [
+              116.34513874332497,
+              39.98633691403705
+            ],
+            [
+              116.34513874332497,
+              39.986229438555625
+            ],
+            [
+              116.34503387429686,
+              39.986229438555625
+            ],
+            [
+              116.34482413624065,
+              39.986229438555625
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLDG-037",
+        "kind": "building",
+        "building_type": "incubator"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34779791771908,
+              39.985825555949205
+            ],
+            [
+              116.34766350562987,
+              39.985825555949205
+            ],
+            [
+              116.34766350562987,
+              39.98622101214451
+            ],
+            [
+              116.34766350562987,
+              39.98637919462263
+            ],
+            [
+              116.34779791771908,
+              39.98637919462263
+            ],
+            [
+              116.34779791771908,
+              39.98622101214451
+            ],
+            [
+              116.3480667418975,
+              39.98622101214451
+            ],
+            [
+              116.3480667418975,
+              39.985825555949205
+            ],
+            [
+              116.34779791771908,
+              39.985825555949205
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLDG-038",
+        "kind": "building",
+        "building_type": "mixed_use"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34786771879197,
+              39.98545351246675
+            ],
+            [
+              116.34775775460623,
+              39.98545351246675
+            ],
+            [
+              116.34775775460623,
+              39.98557478313189
+            ],
+            [
+              116.34775775460623,
+              39.98581732446216
+            ],
+            [
+              116.34786771879197,
+              39.98581732446216
+            ],
+            [
+              116.34786771879197,
+              39.98557478313189
+            ],
+            [
+              116.34808764716348,
+              39.98557478313189
+            ],
+            [
+              116.34808764716348,
+              39.98581732446216
+            ],
+            [
+              116.34819761134922,
+              39.98581732446216
+            ],
+            [
+              116.34819761134922,
+              39.98557478313189
+            ],
+            [
+              116.34819761134922,
+              39.98545351246675
+            ],
+            [
+              116.34808764716348,
+              39.98545351246675
+            ],
+            [
+              116.34786771879197,
+              39.98545351246675
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLDG-039",
+        "kind": "building",
+        "building_type": "education"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34692183424407,
+              39.98627982077184
+            ],
+            [
+              116.34733791815431,
+              39.98627982077184
+            ],
+            [
+              116.34733791815431,
+              39.98587485841735
+            ],
+            [
+              116.34692183424407,
+              39.98587485841735
+            ],
+            [
+              116.34692183424407,
+              39.98627982077184
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLDG-040",
+        "kind": "building",
+        "building_type": "mixed_use"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34775949006385,
+              39.98637761270283
+            ],
+            [
+              116.34768665426809,
+              39.98637761270283
+            ],
+            [
+              116.34768665426809,
+              39.986461304702814
+            ],
+            [
+              116.34768665426809,
+              39.98662868870277
+            ],
+            [
+              116.34775949006385,
+              39.98662868870277
+            ],
+            [
+              116.34775949006385,
+              39.986461304702814
+            ],
+            [
+              116.34790516165538,
+              39.986461304702814
+            ],
+            [
+              116.34790516165538,
+              39.98662868870277
+            ],
+            [
+              116.34797799745114,
+              39.98662868870277
+            ],
+            [
+              116.34797799745114,
+              39.986461304702814
+            ],
+            [
+              116.34797799745114,
+              39.98637761270283
+            ],
+            [
+              116.34790516165538,
+              39.98637761270283
+            ],
+            [
+              116.34775949006385,
+              39.98637761270283
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLDG-041",
+        "kind": "building",
+        "building_type": "mixed_use"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34275903538543,
+              39.98773652486118
+            ],
+            [
+              116.34268857736643,
+              39.98773652486118
+            ],
+            [
+              116.34268857736643,
+              39.9878083618916
+            ],
+            [
+              116.34268857736643,
+              39.987952035952446
+            ],
+            [
+              116.34275903538543,
+              39.987952035952446
+            ],
+            [
+              116.34275903538543,
+              39.9878083618916
+            ],
+            [
+              116.34289995142339,
+              39.9878083618916
+            ],
+            [
+              116.34289995142339,
+              39.987952035952446
+            ],
+            [
+              116.34297040944239,
+              39.987952035952446
+            ],
+            [
+              116.34297040944239,
+              39.9878083618916
+            ],
+            [
+              116.34297040944239,
+              39.98773652486118
+            ],
+            [
+              116.34289995142339,
+              39.98773652486118
+            ],
+            [
+              116.34275903538543,
+              39.98773652486118
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLDG-042",
+        "kind": "building",
+        "building_type": "talent_apartment"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34358330441209,
+              39.98805531985295
+            ],
+            [
+              116.34358330441209,
+              39.987728121210594
+            ],
+            [
+              116.3432216825032,
+              39.987728121210594
+            ],
+            [
+              116.3432216825032,
+              39.98805531985295
+            ],
+            [
+              116.34358330441209,
+              39.98805531985295
+            ]
+          ],
+          [
+            [
+              116.34333016907587,
+              39.9878262808033
+            ],
+            [
+              116.34347481783942,
+              39.9878262808033
+            ],
+            [
+              116.34347481783942,
+              39.987957160260244
+            ],
+            [
+              116.34333016907587,
+              39.987957160260244
+            ],
+            [
+              116.34333016907587,
+              39.9878262808033
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLDG-043",
+        "kind": "building",
+        "building_type": "lab"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3427669537551,
+              39.988295875366894
+            ],
+            [
+              116.34330665864383,
+              39.988295875366894
+            ],
+            [
+              116.34330665864383,
+              39.98810161099919
+            ],
+            [
+              116.3427669537551,
+              39.98810161099919
+            ],
+            [
+              116.3427669537551,
+              39.988295875366894
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLDG-044",
+        "kind": "building",
+        "building_type": "incubator"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34381791745388,
+              39.98682967976803
+            ],
+            [
+              116.34371983822764,
+              39.98682967976803
+            ],
+            [
+              116.34371983822764,
+              39.987244072526416
+            ],
+            [
+              116.34371983822764,
+              39.987409829629776
+            ],
+            [
+              116.34381791745388,
+              39.987409829629776
+            ],
+            [
+              116.34381791745388,
+              39.987244072526416
+            ],
+            [
+              116.34401407590634,
+              39.987244072526416
+            ],
+            [
+              116.34401407590634,
+              39.98682967976803
+            ],
+            [
+              116.34381791745388,
+              39.98682967976803
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLDG-045",
+        "kind": "building",
+        "building_type": "mixed_use"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34299927701863,
+              39.98723484279422
+            ],
+            [
+              116.3429120693263,
+              39.98723484279422
+            ],
+            [
+              116.3429120693263,
+              39.98734450312099
+            ],
+            [
+              116.3429120693263,
+              39.98756382377452
+            ],
+            [
+              116.34299927701863,
+              39.98756382377452
+            ],
+            [
+              116.34299927701863,
+              39.98734450312099
+            ],
+            [
+              116.34317369240333,
+              39.98734450312099
+            ],
+            [
+              116.34317369240333,
+              39.98756382377452
+            ],
+            [
+              116.34326090009566,
+              39.98756382377452
+            ],
+            [
+              116.34326090009566,
+              39.98734450312099
+            ],
+            [
+              116.34326090009566,
+              39.98723484279422
+            ],
+            [
+              116.34317369240333,
+              39.98723484279422
+            ],
+            [
+              116.34299927701863,
+              39.98723484279422
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLDG-046",
+        "kind": "building",
+        "building_type": "lab"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34220181733345,
+              39.9875301757648
+            ],
+            [
+              116.34259143866431,
+              39.9875301757648
+            ],
+            [
+              116.34259143866431,
+              39.987116300123844
+            ],
+            [
+              116.34220181733345,
+              39.987116300123844
+            ],
+            [
+              116.34220181733345,
+              39.9875301757648
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLDG-047",
+        "kind": "building",
+        "building_type": "talent_apartment"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34669818567959,
+              39.985084438892976
+            ],
+            [
+              116.34669818567959,
+              39.98484256241036
+            ],
+            [
+              116.34636282981204,
+              39.98484256241036
+            ],
+            [
+              116.34636282981204,
+              39.985084438892976
+            ],
+            [
+              116.34669818567959,
+              39.985084438892976
+            ]
+          ],
+          [
+            [
+              116.34646343657231,
+              39.984915125355144
             ],
             [
-              116.34900001320972,
-              39.986751677348934
+              116.34659757891932,
+              39.984915125355144
             ],
             [
-              116.34892425706315,
-              39.98670627086209
+              116.34659757891932,
+              39.98501187594819
             ],
             [
-              116.34884441508913,
-              39.98666850842074
+              116.34646343657231,
+              39.98501187594819
             ],
             [
-              116.34876125620953,
-              39.98663875369785
+              116.34646343657231,
+              39.984915125355144
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLDG-048",
+        "kind": "building",
+        "building_type": "lab"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34445754517058,
+              39.98529470188184
+            ],
+            [
+              116.34476930408336,
+              39.98529470188184
+            ],
+            [
+              116.34476930408336,
+              39.9848824335226
+            ],
+            [
+              116.34445754517058,
+              39.9848824335226
+            ],
+            [
+              116.34445754517058,
+              39.98529470188184
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLDG-049",
+        "kind": "building",
+        "building_type": "community_service"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3458026339414,
+              39.98472371115346
+            ],
+            [
+              116.34565163024072,
+              39.98472371115346
+            ],
+            [
+              116.34565163024072,
+              39.98499013456132
+            ],
+            [
+              116.34565163024072,
+              39.98509670392447
+            ],
+            [
+              116.3458026339414,
+              39.98509670392447
+            ],
+            [
+              116.3458026339414,
+              39.98499013456132
+            ],
+            [
+              116.34610464134278,
+              39.98499013456132
+            ],
+            [
+              116.34610464134278,
+              39.98472371115346
+            ],
+            [
+              116.3458026339414,
+              39.98472371115346
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLDG-050",
+        "kind": "building",
+        "building_type": "education"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34524018934401,
+              39.984955979869355
+            ],
+            [
+              116.34564708013166,
+              39.984955979869355
+            ],
+            [
+              116.34564708013166,
+              39.984634742076466
+            ],
+            [
+              116.34524018934401,
+              39.984634742076466
+            ],
+            [
+              116.34524018934401,
+              39.984955979869355
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLDG-051",
+        "kind": "building",
+        "building_type": "incubator"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34486630446233,
+              39.98442666576889
+            ],
+            [
+              116.34469274680542,
+              39.98442666576889
+            ],
+            [
+              116.34469274680542,
+              39.98466456581927
+            ],
+            [
+              116.34469274680542,
+              39.984759725839425
+            ],
+            [
+              116.34486630446233,
+              39.984759725839425
+            ],
+            [
+              116.34486630446233,
+              39.98466456581927
+            ],
+            [
+              116.34521341977613,
+              39.98466456581927
+            ],
+            [
+              116.34521341977613,
+              39.98442666576889
+            ],
+            [
+              116.34486630446233,
+              39.98442666576889
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLDG-052",
+        "kind": "building",
+        "building_type": "mixed_use"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3457085756921,
+              39.98504339603859
+            ],
+            [
+              116.34560017979213,
+              39.98504339603859
+            ],
+            [
+              116.34560017979213,
+              39.98518023833947
+            ],
+            [
+              116.34560017979213,
+              39.98545392294122
+            ],
+            [
+              116.3457085756921,
+              39.98545392294122
+            ],
+            [
+              116.3457085756921,
+              39.98518023833947
+            ],
+            [
+              116.34592536749204,
+              39.98518023833947
+            ],
+            [
+              116.34592536749204,
+              39.98545392294122
+            ],
+            [
+              116.34603376339201,
+              39.98545392294122
             ],
             [
-              116.34867558128981,
-              39.98661729324764
+              116.34603376339201,
+              39.98518023833947
             ],
             [
-              116.3485882154263,
-              39.986604333746
+              116.34603376339201,
+              39.98504339603859
             ],
             [
-              116.3485,
-              39.9866
+              116.34592536749204,
+              39.98504339603859
             ],
+            [
+              116.3457085756921,
+              39.98504339603859
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLDG-053",
+        "kind": "building",
+        "building_type": "talent_apartment"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
             [
-              116.3484117845737,
-              39.986604333746
+              116.34558138586695,
+              39.98449364764806
             ],
             [
-              116.34832441871019,
-              39.98661729324764
+              116.34558138586695,
+              39.984249389289
             ],
             [
-              116.34823874379047,
-              39.98663875369785
+              116.34503875226241,
+              39.984249389289
             ],
             [
-              116.34815558491087,
-              39.98666850842074
+              116.34503875226241,
+              39.98449364764806
             ],
             [
-              116.34807574293686,
-              39.98670627086209
+              116.34558138586695,
+              39.98449364764806
+            ]
+          ],
+          [
+            [
+              116.34520154234377,
+              39.984322666796714
             ],
             [
-              116.34799998679028,
-              39.986751677348934
+              116.34541859578559,
+              39.984322666796714
             ],
             [
-              116.34792904604426,
-              39.98680429059198
+              116.34541859578559,
+              39.98442037014034
             ],
             [
-              116.34786360389694,
-              39.986863603896936
+              116.34520154234377,
+              39.98442037014034
             ],
             [
-              116.34780429059198,
-              39.98692904604426
+              116.34520154234377,
+              39.984322666796714
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLDG-096",
+        "kind": "building",
+        "building_type": "office"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34506310889451,
+              39.98400111111111
             ],
             [
-              116.34775167734892,
-              39.98699998679029
+              116.34484977556119,
+              39.98400111111111
             ],
             [
-              116.34770627086209,
-              39.98707574293686
+              116.34474310889452,
+              39.98400111111111
             ],
             [
-              116.34766850842074,
-              39.98715558491087
+              116.34474310889452,
+              39.98422111111111
             ],
             [
-              116.34763875369784,
-              39.98723874379048
+              116.34474310889452,
+              39.98430911111111
             ],
             [
-              116.34761729324764,
-              39.98732441871019
+              116.34484977556119,
+              39.98430911111111
             ],
             [
-              116.34760433374599,
-              39.98741178457371
+              116.34484977556119,
+              39.98422111111111
             ],
             [
-              116.3476,
-              39.987500000000004
+              116.34506310889451,
+              39.98422111111111
             ],
+            [
+              116.34506310889451,
+              39.98400111111111
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLDG-097",
+        "kind": "building",
+        "building_type": "mixed_use"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
             [
-              116.34760433374599,
-              39.9875882154263
+              116.3498845056236,
+              39.98400111111111
             ],
             [
-              116.34761729324764,
-              39.98767558128982
+              116.3498845056236,
+              39.98422111111111
             ],
             [
-              116.34763875369784,
-              39.98776125620953
+              116.3502045056236,
+              39.98422111111111
             ],
             [
-              116.34766850842074,
-              39.987844415089135
+              116.3502045056236,
+              39.98400111111111
             ],
             [
-              116.34770627086209,
-              39.98792425706315
+              116.3498845056236,
+              39.98400111111111
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLDG-098",
+        "kind": "building",
+        "building_type": "office"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34488370065692,
+              39.98672333333333
             ],
             [
-              116.34775167734892,
-              39.98800001320972
+              116.3446703673236,
+              39.98672333333333
             ],
             [
-              116.34780429059198,
-              39.98807095395575
+              116.34456370065693,
+              39.98672333333333
             ],
             [
-              116.34786360389694,
-              39.98813639610307
+              116.34456370065693,
+              39.98694333333333
             ],
             [
-              116.34792904604426,
-              39.98819570940803
+              116.34456370065693,
+              39.98703133333333
             ],
             [
-              116.34799998679028,
-              39.988248322651074
+              116.3446703673236,
+              39.98703133333333
             ],
             [
-              116.34807574293686,
-              39.988293729137915
+              116.3446703673236,
+              39.98694333333333
             ],
             [
-              116.34815558491087,
-              39.98833149157927
+              116.34488370065692,
+              39.98694333333333
             ],
+            [
+              116.34488370065692,
+              39.98672333333333
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLDG-099",
+        "kind": "building",
+        "building_type": "mixed_use"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
             [
-              116.34823874379047,
-              39.98836124630216
+              116.3498692145385,
+              39.98672333333333
             ],
             [
-              116.34832441871019,
-              39.98838270675237
+              116.3498692145385,
+              39.98694333333333
             ],
             [
-              116.3484117845737,
-              39.98839566625401
+              116.35018921453849,
+              39.98694333333333
             ],
             [
-              116.3485,
-              39.988400000000006
+              116.35018921453849,
+              39.98672333333333
             ],
             [
-              116.3485882154263,
-              39.98839566625401
+              116.3498692145385,
+              39.98672333333333
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLDG-100",
+        "kind": "building",
+        "building_type": "mixed_use"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34989177846862,
+              39.989445555555555
             ],
             [
-              116.34867558128981,
-              39.98838270675237
+              116.34989177846862,
+              39.989665555555554
             ],
             [
-              116.34876125620953,
-              39.98836124630216
+              116.3502117784686,
+              39.989665555555554
             ],
             [
-              116.34884441508913,
-              39.98833149157927
+              116.3502117784686,
+              39.989445555555555
             ],
             [
-              116.34892425706315,
-              39.988293729137915
+              116.34989177846862,
+              39.989445555555555
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLDG-101",
+        "kind": "building",
+        "building_type": "office"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34509599667719,
+              39.99216777777778
             ],
             [
-              116.34900001320972,
-              39.988248322651074
+              116.34488266334387,
+              39.99216777777778
             ],
             [
-              116.34907095395575,
-              39.98819570940803
+              116.3447759966772,
+              39.99216777777778
             ],
             [
-              116.34913639610306,
-              39.98813639610307
+              116.3447759966772,
+              39.99238777777778
             ],
             [
-              116.34919570940802,
-              39.98807095395575
+              116.3447759966772,
+              39.99247577777778
             ],
             [
-              116.34924832265108,
-              39.98800001320972
+              116.34488266334387,
+              39.99247577777778
             ],
             [
-              116.34929372913791,
-              39.98792425706315
+              116.34488266334387,
+              39.99238777777778
             ],
             [
-              116.34933149157926,
-              39.987844415089135
+              116.34509599667719,
+              39.99238777777778
             ],
+            [
+              116.34509599667719,
+              39.99216777777778
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLDG-102",
+        "kind": "building",
+        "building_type": "mixed_use"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
             [
-              116.34936124630217,
-              39.98776125620953
+              116.34999519863231,
+              39.99216777777778
             ],
             [
-              116.34938270675237,
-              39.98767558128982
+              116.34999519863231,
+              39.99238777777778
             ],
             [
-              116.34939566625401,
-              39.9875882154263
+              116.3503151986323,
+              39.99238777777778
             ],
             [
-              116.3494,
-              39.987500000000004
+              116.3503151986323,
+              39.99216777777778
             ],
             [
-              116.34939566625401,
-              39.98741178457371
+              116.34999519863231,
+              39.99216777777778
             ]
           ]
         ]
       }
     }
-  ],
-  "parent_area_id": "beijing_ai_origin_community"
+  ]
 }

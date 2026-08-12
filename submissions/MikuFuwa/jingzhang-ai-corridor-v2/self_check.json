@@ -72,7 +72,7 @@
       "ai_package_stages": {
         "submissions/MikuFuwa/jingzhang-ai-corridor-v2": "formal"
       },
-      "total_bytes": 6822295,
+      "total_bytes": 5659366,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -114,11 +114,11 @@
       ],
       "metrics": {
         "site_area_sqm": 11412825.386,
-        "green_space_area_sqm": 2565531.784,
-        "public_space_area_sqm": 1065343.771,
-        "building_footprint_area_sqm": 162829.229,
-        "green_ratio": 0.224794,
-        "public_space_ratio": 0.093346
+        "green_space_area_sqm": 2933855.459,
+        "public_space_area_sqm": 1086378.376,
+        "building_footprint_area_sqm": 171277.011,
+        "green_ratio": 0.257067,
+        "public_space_ratio": 0.095189
       }
     },
     "stderr": ""
@@ -131,11 +131,11 @@
       "issues": [],
       "metrics_seen": {
         "site_area_sqm": 11412825.386,
-        "green_ratio": 0.224794,
-        "public_space_ratio": 0.093346,
-        "building_count": 156.0,
-        "road_segment_count": 54.0,
-        "building_density": 0.014267,
+        "green_ratio": 0.257067,
+        "public_space_ratio": 0.095189,
+        "building_count": 177.0,
+        "road_segment_count": 20.0,
+        "building_density": 0.015007,
         "key_area_count": 3.0
       }
     },
@@ -150,7 +150,7 @@
       "summary": {
         "standard_matrix_items": 6,
         "design_depth_items": 15,
-        "known_metric_refs_required": 28,
+        "known_metric_refs_required": 23,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {

@@ -1,18 +1,18 @@
 ---
-title: "JingZhang Open Spine · Protocol Edition (v2.2)"
+title: "JingZhang Open Spine · Protocol Edition (v2.3)"
 author_github: "MikuFuwa"
 language: "en"
 translation_of: "proposal.md"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "v2.2 ultra standard: courtyard/interface building clusters, break-diagnosis vs repair seams, key-area detail packs, A0 8 boards, A3 16-page booklet, pilot footprints and permit gates, EN parity; provisional + FAR unknown + medium."
+summary: "v2.3 morphology pass: mosaic land-use blocks (not vertical color bands), core-clustered buildings, named mobility breaks, figures/A0/A3 re-rendered with hash veto; Open Protocol Spine retained; provisional + FAR unknown + medium."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review", "robot-delivery-low-speed"]
-iteration: "v2.2"
+iteration: "v2.3"
 ---
 
-# JingZhang Open Spine · Protocol Edition (v2.2)
+# JingZhang Open Spine · Protocol Edition (v2.3)
 
 ## Design Basis and Source List
 
@@ -67,7 +67,7 @@ Light cases: Nanshan density, Toranomon vertical courts, Zhangjiang platform clu
 
 ## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
 
-Regulatory-plan **method** without fake FAR/height/redlines [standard:MOHURD-CONTROL-DETAILED-PLANNING] [depth:development_intensity_controls]. Land-use densified to **30** block/function units covering the site [data:geometry/land_use.geojson#LU-001] [metric:land_use_unit_count] [depth:land_use_layout]. Buildings **87** with courtyard/L/U/bar interface clusters mixed logic (not a pure grid of tiny rectangles) [metric:building_count] [data:geometry/buildings.geojson#BLDG-001]; road segments **28** [metric:road_segment_count] [data:geometry/roads.geojson#ROAD-001]. Renewal priority: public interfaces first, deep rebuild later.
+Regulatory-plan **method** without fake FAR/height/redlines [standard:MOHURD-CONTROL-DETAILED-PLANNING] [depth:development_intensity_controls]. Land-use rebuilt as mosaic street-block parcels (not vertical bands); densified to **30** block/function units covering the site [data:geometry/land_use.geojson#LU-001] [metric:land_use_unit_count] [depth:land_use_layout]. Buildings **87** with courtyard/L/U/bar interface clusters mixed logic (not a pure grid of tiny rectangles) [metric:building_count] [data:geometry/buildings.geojson#BLDG-001]; road segments **28** [metric:road_segment_count] [data:geometry/roads.geojson#ROAD-001]. Renewal priority: public interfaces first, deep rebuild later.
 
 ## Detailed Design of Key Areas
 

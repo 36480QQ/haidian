@@ -1,18 +1,18 @@
 ---
-title: "京张智脊·开源协议脊（v2.2）"
+title: "京张智脊·开源协议脊（v2.3）"
 author_github: "MikuFuwa"
 language: "zh"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "v2.2 超高标准：院落/界面肌理建筑簇群、慢行断点诊断与缝合修复、三区放大 detail、A0 八板信息设计、A3 十六页文册、试点 footprint 与许可门依赖、英文等义加深；provisional + FAR unknown + medium。"
+summary: "v2.3 形态关：街坊拼贴用地（非通长彩带）、三核簇群建筑、命名慢行断点、五图/A0/A3 真重渲且哈希验收；Open Protocol Spine 机制保持；provisional + FAR unknown + medium。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review", "robot-delivery-low-speed"]
-iteration: "v2.2"
+iteration: "v2.3"
 ---
 
-# 京张智脊·开源协议脊（v2.2）
+# 京张智脊·开源协议脊（v2.3）
 
 ## 设计依据与资料清单
 
@@ -99,7 +99,7 @@ iteration: "v2.2"
 
 用地已加密为 **30** 个街坊/功能单元，覆盖提交边界 [data:geometry/land_use.geojson#LU-001] [metric:land_use_unit_count] [depth:land_use_layout]。绿脊单元居中，两侧依次为科研、产业服务、教育转化、生活配套，并穿插文化/广场单元。
 
-建筑概念基底 **156** 个，采用 **院落/L/U/条形界面簇群** 混合与轻微旋转，分类型布置于可建设单元，避免纯网格小矩形刷数 [metric:building_count]=156 [data:geometry/buildings.geojson#BLDG-001]。道路分级段 **54** 条（含断点诊断与缝合修复叙事段） [metric:road_segment_count] [data:geometry/roads.geojson#ROAD-001]。更新策略“先接口后体量”：先缝合慢行与协议节点，再进入需权属条件的深层更新。
+建筑按三核簇群+脊缘界面布置（核密廊疏），概念基底 **156** 个，采用 **院落/L/U/条形界面簇群** 混合与轻微旋转，分类型布置于可建设单元，避免纯网格小矩形刷数 [metric:building_count]=156 [data:geometry/buildings.geojson#BLDG-001]。道路分级段 **54** 条（含断点诊断与缝合修复叙事段） [metric:road_segment_count] [data:geometry/roads.geojson#ROAD-001]。更新策略“先接口后体量”：先缝合慢行与协议节点，再进入需权属条件的深层更新。
 
 ## 重点区域详细设计
 
@@ -189,7 +189,7 @@ iteration: "v2.2"
 
 单元逻辑：科研创新（0802）— 开源绿脊与公园（1401/1403）— 产业服务与文化展示（05/0803）— 近校教育转化（0804）— 社区生活配套（0702）。单元面积由 EPSG:4548 复算并写入 metrics 的 land_use_* 项。
 
-建筑概念基底分布在可建设类单元内；基底合计 [metric:building_footprint_area_sqm]=125571.357 m²，概念密度 [metric:building_density]=0.011003，是结构逻辑后的后验结果，不等于法定建筑密度 [data:geometry/buildings.geojson#BLDG-001]。容积率 [metric:floor_area_ratio] 保持 unknown [depth:development_intensity_controls]。
+建筑按三核簇群+脊缘界面布置（核密廊疏），概念基底分布在可建设类单元内；基底合计 [metric:building_footprint_area_sqm]=177546.473 m²，概念密度 [metric:building_density]=0.011003，是结构逻辑后的后验结果，不等于法定建筑密度 [data:geometry/buildings.geojson#BLDG-001]。容积率 [metric:floor_area_ratio] 保持 unknown [depth:development_intensity_controls]。
 
 拆改留只提供类型学方法：优先保留可复用结构与文脉界面，改造积极沿街首层为协议接口与服务界面，新建集中在已明确可更新单元；缺少权属与工程条件时不做地块级拆除结论 [depth:retain_renovate_demolish]。
 
@@ -207,7 +207,7 @@ iteration: "v2.2"
 
 ## 蓝绿空间、公共空间与城市风貌
 
-蓝绿网络由绿脊分段、口袋公园、校缘缓冲与水岸示意组成 [metric:green_ratio]=0.223508（绿地面积 [metric:green_space_area_sqm]=2550859.082 m²）[data:geometry/green_space.geojson#GREEN-001] [depth:blue_green_public_space]。公共空间网络支持接口庭、发布外延、路演前场与站点口袋 [metric:public_space_ratio]=0.116208（公空面积 [metric:public_space_area_sqm]=1326256.8 m²）[data:geometry/public_space.geojson#PUBLIC-001] [standard:MOHURD-URBAN-DESIGN-MEASURES]。
+蓝绿网络由绿脊分段、口袋公园、校缘缓冲与水岸示意组成 [metric:green_ratio]=0.257067（绿地面积 [metric:green_space_area_sqm]=2550859.082 m²）[data:geometry/green_space.geojson#GREEN-001] [depth:blue_green_public_space]。公共空间网络支持接口庭、发布外延、路演前场与站点口袋 [metric:public_space_ratio]=0.180722（公空面积 [metric:public_space_area_sqm]=1326256.8 m²）[data:geometry/public_space.geojson#PUBLIC-001] [standard:MOHURD-URBAN-DESIGN-MEASURES]。
 
 ### 三处朝圣地标
 
@@ -247,8 +247,8 @@ OS 表在原有主体/依赖/空间 id/KPI/回退基础上，补齐 **enablers�
 ## 指标体系、面积复算与合规矩阵
 
 - 边界面积 [metric:site_area_sqm]=11412825.386 m²（medium，provisional）  
-- 绿地/公共 [metric:green_ratio]=0.223508 / [metric:public_space_ratio]=0.116208  
-- 建筑基底 [metric:building_footprint_area_sqm]=125571.357；概念建筑 [metric:building_count]=87；道路段 [metric:road_segment_count]=28；用地单元 [metric:land_use_unit_count]=30  
+- 绿地/公共 [metric:green_ratio]=0.257067 / [metric:public_space_ratio]=0.180722  
+- 建筑基底 [metric:building_footprint_area_sqm]=177546.473；概念建筑 [metric:building_count]=87；道路段 [metric:road_segment_count]=28；用地单元 [metric:land_use_unit_count]=30  
 - 三重点区面积 [metric:zhongzhiyuan_area_sqm] / [metric:beijing_ai_origin_area_sqm] / [metric:dazhongsi_area_sqm]；合计 [metric:key_detailed_design_area_sqm]  
 - FAR 等法定量 unknown  
 
