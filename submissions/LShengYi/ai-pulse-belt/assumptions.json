@@ -28,7 +28,7 @@
     {
       "id": "ASSUME-003",
       "title": "Announcement planning indicators are unknown until data release",
-      "statement": "The planning indicator system required by announcement 1.5.2.1 (AI innovation index, talent density, AI output value) is registered in metrics.json with status=unknown; no fabricated values are supplied. Formulas and data sources are declared so the indicators can be computed once official statistics are published.",
+      "statement": "The planning indicator system required by announcement 1.5(2)1 (AI innovation index, talent density, AI output value) is registered in metrics.json with status=unknown; no fabricated values are supplied. Formulas and data sources are declared so the indicators can be computed once official statistics are published.",
       "source": "brief/site-package/ranges/planning_limits.json",
       "confidence": "high",
       "impact": "Indicator cells render as 'unknown/pending' in figures and HTML until official data arrives; the submission stays auditable rather than presenting invented numbers."

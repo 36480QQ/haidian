@@ -95,7 +95,7 @@
       "formula": "composite(talent_density, ai_r_d_intensity, ai_output_value_per_capita); weights pending official indicator framework",
       "confidence": "unknown",
       "assumptions": [],
-      "reason": "Official indicator framework absent from public site package; proposal declares the indicator as a required planning metric (announcement 1.5.2.1) and will compute it once official statistics are released."
+      "reason": "Official indicator framework absent from public site package; proposal declares the indicator as a required planning metric (announcement 1.5(2)1) and will compute it once official statistics are released."
     },
     "talent_density": {
       "status": "unknown",
@@ -107,7 +107,7 @@
       "formula": "ai_related_employment_persons / official_site_area_sqm",
       "confidence": "unknown",
       "assumptions": [],
-      "reason": "Official employment statistics absent; indicator declared per announcement 1.5.2.1, computable after data release."
+      "reason": "Official employment statistics absent; indicator declared per announcement 1.5(2)1, computable after data release."
     },
     "ai_output_value": {
       "status": "unknown",
@@ -119,7 +119,7 @@
       "formula": "sum(ai_enterprise_output_cny) over overall design area, per official statistical caliber",
       "confidence": "unknown",
       "assumptions": [],
-      "reason": "Official economic statistics absent; indicator declared per announcement 1.5.2.1, computable after data release."
+      "reason": "Official economic statistics absent; indicator declared per announcement 1.5(2)1, computable after data release."
     }
   }
 }
