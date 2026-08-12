@@ -84,6 +84,41 @@ These cases come from public institutional or project pages; they support mechan
 
 Public district data show innovation factors already agglomerating here: 123 registered large models (60% of Beijing), 92 national key laboratories (63.4% of the city, 17.9% of the nation), 405.31 billion CNY technology contract turnover (+6.5%), 188.71 billion CNY computer/communication/electronics manufacturing output (+7.7%), and information/software/IT-services investment growing 1.5x. These data are the macro evidence for the Compute Belt positioning - the corridor already hosts the densest AI factors in the city, and this proposal's spatial design gives existing agglomeration a structure.[source:GONGBAO-2025] [metric:tech_contract_strength_index] [metric:lab_density_per_research_area]
 
+### Regional Synergy: How the Compute Belt Fits the Jing-Jin-Ji Innovation Network
+
+The Compute Belt is not an isolated park. The corridor sits in the heart of Zhongguancun Science City, and the task book explicitly requires agent.1 to answer "the overall spatial structure diagram and regional innovation synergy relations", listing "whether the proposal reflects innovation synergy with the Beiwei Community, Future Science City, Huairou Science City, BDA, and Beijing-Tianjin-Hebei" as one of its review dimensions.[source:AGENT-TASKBOOK]
+
+This proposal develops the regional synergy argument in three layers: **division of roles, factor flows, and cooperation interfaces**. The public positions of each partner are cited from government or authoritative media sources; all cooperation mechanisms are **conceptual suggestions** that require agreements and source verification before deepening - this proposal claims no established partnership.
+
+**Division of roles: five synergy points on one innovation chain**
+
+| Partner | Public position | Suggested role | Interface with the Belt |
+| --- | --- | --- | --- |
+| Zhongguancun AI Beiwei Community | Haidian Science City north zone (XiBeiwang); AI-native startup incubation platform focused on LLMs, embodied AI, and agents; initial 60,000 m² of industrial space | Early-stage incubation "from 0 to 1" | Incubation relay: graduates enter Zhongzhiyuan open-source piloting and validation, completing "from 1 to 10" |
+| Future Science City | One of the "three cities, one district" hub platforms (southern Changping); "two valleys, one park" pattern; advanced energy industry above 240 billion CNY, advanced manufacturing above 160 billion CNY | AI enablement entry for advanced energy/manufacturing scenarios | Belt public evaluation and compute services open to central-enterprise strategic research clusters; Energy Valley green power echoes the Belt's "distributed energy + compute waste heat" concept |
+| Huairou Science City | Huairou comprehensive national science center; 37 science facilities, 6 major science facilities, 17 open to global users | Relay point from basic research to applied validation | Large-facility data, after compliant de-identification, links to the Belt data sandbox; original-innovation outcomes complete their "validation - piloting" stage here |
+| BDA (Yizhuang) | The "one district" of "three cities, one district": main front of high-precision industry; has received 1,000+ innovation projects from the three science cities; high-level autonomous driving demo zone covering 600 km² | Mass-production conversion of piloting outcomes | Mutual recognition of test-ring operating experience and BDA demo-zone admission rules (concept); evaluated solutions proceed to mass conversion (concept) |
+| Beijing-Tianjin-Hebei | Beijing R&D dispatch + Tianjin manufacturing fusion + Hebei green supply; a J-J-J compute "one network" (1 ms within Beijing, 3 ms across the region); Beijing targets about 200,000 P compute by 2027 | A "Haidian endpoint" of the J-J-J compute network | Belt public compute platform connects to the J-J-J dispatch network (concept); Zhangjiakou/Langfang green compute forms a "cloud-edge" synergy with Belt edge nodes (concept) |
+
+Partner positions are sourced from: Haidian district government public reporting for the Beiwei Community [source:REGION-BEIWEI-COMMUNITY]; Changping district park overview for Future Science City [source:REGION-FUTURE-SCIENCE-CITY]; People's Daily public reporting for Huairou Science City [source:REGION-HUAIROU-SCIENCE-CITY]; the BDA high-precision-industry opinion for Yizhuang [source:REGION-BDA]; and Xinhua and People's Daily reporting for the J-J-J compute layout [source:REGION-JINGJINJI] [source:REGION-BJ-COMPUTE-NETWORK].
+
+The division logic follows the "five-stage relay": the Haidian corridor (the Belt) validates and tests, the Beiwei Community incubates early-stage ventures, Huairou provides original innovation, Yizhuang converts to mass production, and Future Science City plus J-J-J provide the energy, manufacturing, and compute base - five synergy points share one AI innovation chain, none isolated.
+
+**Factor flows: three kinds of flows**
+
+- **Talent flow**: Beiwei Community (early-stage founders) → the Belt (piloting, testing, and duty-hall roles) → Yizhuang (mass manufacturing and scenario operations); the same AI talent rolls through the region instead of leaving the capital metro area.[source:GONGBAO-2025]
+- **Compute flow**: under the J-J-J compute "one network", training loads dispatch to Zhangjiakou/Langfang green compute clusters while inference stays on Belt edge nodes - "compute flows across the region, latency stays in place".[source:REGION-JINGJINJI] [source:REGION-BJ-COMPUTE-NETWORK]
+- **Data and scenario flow**: Huairou large-facility data, after compliant de-identification, links to the Belt data sandbox; Belt public scenarios (evaluation, health navigation, civic counters) replicate across the J-J-J city cluster after first-launch validation.[source:REGION-HUAIROU-SCIENCE-CITY]
+
+**Interfaces: four cooperation mechanisms to deepen (conceptual)**
+
+- **Evaluation mutual-recognition interface**: open evaluation field results are recognized by BDA autonomous-driving admission assessment and Future Science City project reviews, reducing duplicated evaluation costs.
+- **Testing synergy interface**: the Belt low-speed test ring links to the BDA high-level autonomous driving demo zone under "tiered testing, mutual recognition of results".
+- **Showcase linkage interface**: the Compute Belt Open Day links with the Zhongguancun Forum and "three cities, one district" achievement tours, making validated outcomes visible across the J-J-J innovation network.
+- **Data sandbox interface**: following the BDA data-institution pioneer zone model, an auditable data sandbox on the Belt links Huairou large-facility data with Beiwei Community startup data needs.
+
+All four interfaces are conceptual suggestions: mechanisms involving cross-region agreements require professional teams and all parties to verify and deepen; this proposal commits to no established cooperation, co-construction, or policy arrangement.
+
 ## Overall Design Area: Urban Renewal at Regulatory-Plan Urban-Design Depth
 
 ### Overall Structure: One Spine, Five Stages, Two Wings
@@ -374,3 +409,9 @@ Full sources, formulas, confidence, and assumptions live in `metrics.json`; task
 7. Cyberspace Administration of China et al.: "Interim Measures for the Management of Generative AI Services", 2023.
 8. OpenStreetMap (ODbL): rail/road/green/water mapping of the Haidian Jing-Zhang corridor, fetched 2026-08-11.
 9. Open-source compute software stack "Zhongzhi": disclosed in the "Science & Technology" section of the Haidian 2025 Statistical Bulletin, 2026.
+10. Haidian District People's Government: "Zhongguancun AI Beiwei Community Launches Global Recruitment with Initial 60,000 m² of Quality Industrial Space", 2025-07-16.[source:REGION-BEIWEI-COMMUNITY]
+11. Beijing Changping District People's Government: Future Science City park overview ("two valleys, one park"; advanced energy and advanced manufacturing clusters), updated 2025-2026.[source:REGION-FUTURE-SCIENCE-CITY]
+12. People's Daily (Beijing): "Beijing Issues 12 Measures for Efficient Operation of Huairou Science City Large Facilities to Strengthen Original Innovation", 2026-07-15.[source:REGION-HUAIROU-SCIENCE-CITY]
+13. Beijing Municipal Science and Technology Commission / BDA: "Opinions on Further Stimulating Innovation Vitality in Beijing Economic-Technological Development Area and Building the Main Front of High-Precision Industry", 2025-04.[source:REGION-BDA]
+14. Xinhua Economic Information Daily: "Beijing Telecom Weaves the J-J-J Compute 'One Network' to Activate Regional Digital Development", 2024-02-23.[source:REGION-JINGJINJI]
+15. People's Daily: "Beijing Deploys Its Compute Architecture Comprehensively, Reaching About 200,000 P by 2027", 2026-01-23.[source:REGION-BJ-COMPUTE-NETWORK]
