@@ -379,6 +379,110 @@
    "assumptions": [
     "6 类用户画像。"
    ]
+  },
+  "reference_park_full_length_m": {
+   "status": "known",
+   "value": 9000,
+   "unit": "m",
+   "source_files": [
+    "sources.json"
+   ],
+   "formula": "官方报道口径：西直门至北五环9公里文化带状绿廊（2026-08-06二期开放）",
+   "confidence": "medium",
+   "assumptions": [
+    "官方全线口径，与本包概念主轴9.7km并存登记、不作同一值处理。"
+   ]
+  },
+  "reference_park_phase2_area_sqm": {
+   "status": "known",
+   "value": 530900,
+   "unit": "sqm",
+   "source_files": [
+    "sources.json"
+   ],
+   "formula": "官方报道口径：二期总用地约53公顷",
+   "confidence": "medium",
+   "assumptions": [
+    "官方报道口径，精确边界待主管部门图则。"
+   ]
+  },
+  "reference_park_phase1_length_m": {
+   "status": "known",
+   "value": 2500,
+   "unit": "m",
+   "source_files": [
+    "sources.json"
+   ],
+   "formula": "官方报道口径：一期知春路至清华东路段约2.5公里（2023-06开放）",
+   "confidence": "medium",
+   "assumptions": [
+    "官方报道口径。"
+   ]
+  },
+  "reference_ai_industry_enterprise_count": {
+   "status": "known",
+   "value": 2500,
+   "unit": "count",
+   "source_files": [
+    "sources.json"
+   ],
+   "formula": "官方口径：北京核心AI企业超2500家（截至2025-12-31）",
+   "confidence": "medium",
+   "assumptions": [
+    "北京市全市口径，非海淀区单列；仅作产业背景。"
+   ]
+  },
+  "reference_ai_foundation_model_count": {
+   "status": "known",
+   "value": 212,
+   "unit": "count",
+   "source_files": [
+    "sources.json"
+   ],
+   "formula": "官方口径：北京备案大模型212款（截至2025-12-31）",
+   "confidence": "medium",
+   "assumptions": [
+    "北京市全市口径。"
+   ]
+  },
+  "reference_ai_district_university_count": {
+   "status": "known",
+   "value": 37,
+   "unit": "count",
+   "source_files": [
+    "sources.json"
+   ],
+   "formula": "公开报道口径：海淀AI创新街区汇聚37所高校",
+   "confidence": "medium",
+   "assumptions": [
+    "公开报道口径，作片区背景。"
+   ]
+  },
+  "reference_ai_district_enterprise_count": {
+   "status": "known",
+   "value": 1300,
+   "unit": "count",
+   "source_files": [
+    "sources.json"
+   ],
+   "formula": "公开报道口径：海淀AI创新街区1300家AI企业",
+   "confidence": "medium",
+   "assumptions": [
+    "公开报道口径，作片区背景。"
+   ]
+  },
+  "proposed_total_floor_area_sqm": {
+   "status": "known",
+   "value": 560000,
+   "unit": "sqm",
+   "source_files": [
+    "geometry/buildings.geojson"
+   ],
+   "formula": "概念总建筑面积 ≈ 建筑基底×概念平均层数（280000㎡×2层概念）",
+   "confidence": "low",
+   "assumptions": [
+    "概念设计量：按三处重点区概念楼群平均2层估算，不等于法定规模；控规条件到位后重算。"
+   ]
   }
  }
 }
