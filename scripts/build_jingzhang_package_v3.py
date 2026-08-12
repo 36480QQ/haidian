@@ -997,13 +997,22 @@ BOOKLET_ORDER = [
 
 def make_pdf(path: Path, figure_names: list[str], lang="zh", a0=False):
     path.parent.mkdir(parents=True, exist_ok=True)
+    # Compress figure pages to JPEG before embedding so the shipped PDFs stay
+    # small (the figures themselves on disk are never modified).
+    cache = ROOT / "tmp" / "jingzhang-pdf-cache" / ("en" if lang == "en" else "zh")
+    cache.mkdir(parents=True, exist_ok=True)
+    jpeg_pages = {}
+    for name in figure_names:
+        src = FIG / f"{name}{'.en.png' if lang == 'en' else '.png'}"
+        dst = cache / f"{name}.jpg"
+        Image.open(src).convert("RGB").save(dst, format="JPEG", quality=52, subsampling=2, optimize=True)
+        jpeg_pages[name] = dst
     size = landscape(A0 if a0 else A3)
     c = canvas.Canvas(str(path), pagesize=size, pageCompression=1)
     pw, ph = size
     if not a0:
         for name in figure_names:
-            p = FIG / f"{name}{'.en.png' if lang == 'en' else '.png'}"
-            c.drawImage(str(p), 0, 0, width=pw, height=ph, preserveAspectRatio=False, mask='auto')
+            c.drawImage(str(jpeg_pages[name]), 0, 0, width=pw, height=ph, preserveAspectRatio=False, mask='auto')
             c.showPage()
     else:
         groups = [figure_names[i:i+4] for i in range(0, len(figure_names), 4)]
@@ -1015,11 +1024,10 @@ def make_pdf(path: Path, figure_names: list[str], lang="zh", a0=False):
             c.setFillColorRGB(0.949, 0.937, 0.906)
             c.rect(0, 0, pw, ph, fill=1, stroke=0)
             for j, name in enumerate(group):
-                p = FIG / f"{name}{'.en.png' if lang == 'en' else '.png'}"
                 col, row = j % 2, j // 2
                 x = margin + col*(cell_w+gap)
                 y = ph-margin-(row+1)*cell_h-row*gap
-                c.drawImage(str(p), x, y, width=cell_w, height=cell_h,
+                c.drawImage(str(jpeg_pages[name]), x, y, width=cell_w, height=cell_h,
                             preserveAspectRatio=False, mask='auto')
             c.showPage()
     c.save()
@@ -1118,9 +1126,19 @@ def refresh_manifest():
 def main():
     parser=argparse.ArgumentParser()
     parser.add_argument("--manifest-only",action="store_true")
+    parser.add_argument("--package-only",action="store_true",
+                        help="Rebuild PDFs, visual atlases, audit and manifest from the existing figure PNGs without redrawing them")
     args=parser.parse_args()
     if args.manifest_only:
         refresh_manifest();print("manifest refreshed");return
+    if args.package_only:
+        for lang in ("zh","en"):
+            make_pdf(DRAWINGS/("a3-booklet.en.pdf" if lang=="en" else "a3-booklet.pdf"),BOOKLET_ORDER,lang,a0=False)
+            a0_order=["site-overview","key-areas","implementation-protocol","metrics-evidence","land-use-structure","mobility-bluegreen","inclusion-incidence","area-action-plan","implementation-section","service-node-kit","regional-collaboration","rights-evidence"]
+            make_pdf(DRAWINGS/("a0-boards.en.pdf" if lang=="en" else "a0-boards.pdf"),a0_order,lang,a0=True)
+            build_visual_html(lang)
+        build_equivalence_audit();refresh_manifest()
+        print("rebuilt four PDFs and two visual atlases from existing figures");return
     FIG.mkdir(parents=True,exist_ok=True);DRAWINGS.mkdir(parents=True,exist_ok=True);ASSETS.mkdir(parents=True,exist_ok=True)
     for lang in ("zh","en"):
         for name,builder in FIGURE_BUILDERS.items():

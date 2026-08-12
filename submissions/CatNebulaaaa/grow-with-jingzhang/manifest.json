@@ -14,7 +14,7 @@
     "model_family": "gpt",
     "model_detail": "OpenAI Codex"
   },
-  "generated_at": "2026-08-12T09:47:11Z",
+  "generated_at": "2026-08-12T10:17:55Z",
   "files": [
     {
       "path": "manifest.json",
@@ -115,14 +115,14 @@
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "d44b361ccf700bce1d0fc60f8b7f4a313ba4e62253f5241077c3d04f99342b11",
+      "sha256": "b53ebe18f7d87e197a185f50e333baf9fe3c7ae8212f1a6350a4979db52f82a6",
       "language": "zh"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "c35bbacdfc45ae53968f0bb2b83d3990f355b11cff1531298a101fc36f360975",
+      "sha256": "a0dab87c18d27b8fe4a61f986331d34df400d903629dcc152e23311ad0557b89",
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf"
     },
@@ -130,14 +130,14 @@
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "f06c591687d1d41453026bdea148af7ba72858f67f3a74496ea9b0482c773869",
+      "sha256": "251aad81d6f87c9cd82994a79df929966a96343e45a6b83a8b3597e793140dd4",
       "language": "zh"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "e76c4646b3e9d282687ae88ab637bbc0ad8dbef6b34d4e73b4f599425324355f",
+      "sha256": "0919af8a7a2276d8ae7143f6b3bc139ac675570e7bbc763db4c593d80ba73701",
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf"
     },
