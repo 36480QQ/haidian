@@ -15,7 +15,9 @@
       "proposal_files": [
         "submissions/Mr-chen1/jingzhang-walkability-audit/proposal.md"
       ],
-      "changelog_files": [],
+      "changelog_files": [
+        "submissions/Mr-chen1/jingzhang-walkability-audit/changelog.md"
+      ],
       "changed_files": [
         "submissions/Mr-chen1/jingzhang-walkability-audit/agent.json",
         "submissions/Mr-chen1/jingzhang-walkability-audit/assets/figures/key-areas.en.png",
@@ -30,6 +32,7 @@
         "submissions/Mr-chen1/jingzhang-walkability-audit/assets/figures/site-overview.png",
         "submissions/Mr-chen1/jingzhang-walkability-audit/assets/media/cover.png",
         "submissions/Mr-chen1/jingzhang-walkability-audit/assumptions.json",
+        "submissions/Mr-chen1/jingzhang-walkability-audit/changelog.md",
         "submissions/Mr-chen1/jingzhang-walkability-audit/compliance_matrix.json",
         "submissions/Mr-chen1/jingzhang-walkability-audit/design_depth_matrix.json",
         "submissions/Mr-chen1/jingzhang-walkability-audit/drawings/a0-boards.en.pdf",
@@ -62,7 +65,7 @@
       "ai_package_stages": {
         "submissions/Mr-chen1/jingzhang-walkability-audit": "formal"
       },
-      "total_bytes": 8586239,
+      "total_bytes": 8602368,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -125,9 +128,9 @@
         "confirmed_walkability_problem_count": 0.0,
         "implemented_pilot_count": 0.0,
         "site_area_sqm": 11412825.386,
+        "field_research_record_count": 0.0,
         "green_ratio": 0.0,
-        "public_space_ratio": 0.0,
-        "field_research_record_count": 0.0
+        "public_space_ratio": 0.0
       }
     },
     "stderr": ""
@@ -141,7 +144,7 @@
       "summary": {
         "standard_matrix_items": 6,
         "design_depth_items": 15,
-        "known_metric_refs_required": 22,
+        "known_metric_refs_required": 20,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {

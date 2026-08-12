@@ -85,10 +85,10 @@
     {
       "id": "A-EVIDENCE-ZERO-001",
       "status": "technical_metric_scope",
-      "statement_zh": "绿地和公共空间机器指标为0，只因没有提交可声称polygon。",
-      "statement_en": "Machine green/public-space metrics are zero only because no claimable polygon is submitted.",
-      "impact_zh": "0不表示现场为0，也不是规划目标。",
-      "impact_en": "Zero is not an existing condition or planning target."
+      "statement_zh": "真实绿地和公共空间面积及比例保持未知；空间自检报告的可计算polygon面积为0，只描述当前文件内容。",
+      "statement_en": "Actual green/public-space areas and ratios remain unknown; the zero computable-polygon area reported by spatial review describes the submitted files only.",
+      "impact_zh": "技术自检结果不得解释为现场值、规划目标或跨方案可比较指标。",
+      "impact_en": "The technical review result must not be treated as an existing condition, planning target, or cross-submission comparable metric."
     },
     {
       "id": "A-CASES-001",

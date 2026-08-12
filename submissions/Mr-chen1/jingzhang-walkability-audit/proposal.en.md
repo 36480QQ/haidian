@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "This proposal makes walking and cycling connections among Jing-Zhang stations, the park, campuses, communities, and employment areas its first testable line of work. It verifies project status before multi-period observation, joint walk-throughs, and anonymous feedback. AI only assists evidence organisation; every micro-renewal action requires a non-AI baseline, Action Contract, before/after measurement, and exit decision. All candidate sites and problem types remain hypotheses, not site findings or construction commitments."
 tracks: ["youth-friendly-public-space", "ai-origin-community", "ai-public-services"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "ai-health-service-navigation", "robot-delivery-low-speed"]
-iteration: "v0.3"
+iteration: "v0.4"
 ---
 
 # JING-ZHANG WALKABILITY AUDIT: Connection Research and Reversible Micro-Renewal
@@ -137,7 +137,7 @@ Utilities and public services also need baselines. Water, drainage, power, commu
 
 ## Blue-Green Network, Public Space, and Urban Character
 
-`green_space.geojson` and `public_space.geojson` each contain one map-annotation gap marker. Their machine-recomputed area and ratio are zero. Zero means only “no evidence-supported polygon is asserted in this submission.” It does not mean that the site has no green or public space and it is not a planning target. [data:geometry/green_space.geojson#GR-SURVEY-MARKER] [metric:green_ratio]
+`green_space.geojson` and `public_space.geojson` each contain one map-annotation gap marker, not a green-space or public-space polygon. Actual green-space area, green ratio, public-space area, and public-space ratio remain pending an existing-condition survey. Spatial review may report zero computable polygon area in this package, but that technical result is not an existing-condition or planning metric. [data:geometry/green_space.geojson#GR-SURVEY-MARKER] [metric:green_space_area_sqm]
 
 Blue-green research must cover trees and habitat, water and drainage, heat, stormwater, soil, seasonal change, access boundaries, and maintenance. Public-space research must cover access, seating, shade, drinking water, toilets, lighting, consumption thresholds, day/night, and weekday/weekend opening. Until a baseline exists, this proposal draws no greenway, sponge system, plaza, or public living room. Any pilot avoids tree removal, heritage harm, and unassigned maintenance. [standard:MOHURD-URBAN-DESIGN-MEASURES] [depth:blue_green_public_space]
 
@@ -165,7 +165,7 @@ Implementation policy is limited to procedure: publish versions and limits; reta
 
 ## Metrics, Area Recalculation, and Compliance Matrix
 
-Metrics have three scopes. **Task/document status** counts three taskbook areas, three candidate audits, five hypotheses, ten cards, three AI-necessary tests, seven hypothesis recruitment groups, three information interfaces, and nine Action Contracts. **Technical QA** recalculates the provisional envelope as 11,412,825.386 sqm; green and public-space ratios are zero solely because no claimable polygon is submitted. **Site and implementation metrics** - confirmed walkability problems, observation/feedback records, implemented pilots, actors, budget, FAR, height, and utility capacity - remain unknown or record zero confirmations. [metric:confirmed_walkability_problem_count] [metric:field_research_record_count]
+Metrics have three scopes. **Task/document status** counts three taskbook areas, three candidate audits, five hypotheses, ten cards, three AI-necessary tests, seven hypothesis recruitment groups, three information interfaces, and nine Action Contracts. **Technical QA** recalculates the provisional envelope as 11,412,825.386 sqm; spatial review separately reports computable submitted polygon areas without converting “no polygon asserted” into a site ratio. **Site and implementation metrics** - green and public-space area/ratio, confirmed walkability problems, observation/feedback records, implemented pilots, actors, budget, FAR, height, and utility capacity - remain pending survey, pending formal data, or record zero confirmations. [metric:confirmed_walkability_problem_count] [metric:field_research_record_count]
 
 ![Metrics are not facts: known, unknown, zero records, and decision gates](assets/figures/metrics-evidence.en.png)
 
@@ -177,8 +177,8 @@ Metrics have three scopes. **Task/document status** counts three taskbook areas,
 | Zero confirmed walkability problems and implemented pilots | Known | No problem or project is presented as an established fact | The site has no problems or should never receive action |
 | Zero field-research records | Known | No site or participant research has been completed in this draft | The site has no problems or users |
 | Zero confirmed actors and budgets | Known | No implementation commitment exists | No potential actor or funding exists |
-| Zero green/public-space QA ratios | Known / technical | No evidence-supported polygon is asserted | Actual green or public space equals zero |
-| Land, building, transport, utility, blue-green baselines | Unknown | Professional data and research are required | Agent geometry may substitute |
+| Green/public-space areas and actual ratios | Unknown | Cleared polygons, access attributes, and professional recomputation are required | No submitted polygon means the site equals zero |
+| Land, building, transport, utility, and other blue-green baselines | Unknown | Professional data and research are required | Agent geometry may substitute |
 
 In the compliance, standard, and depth matrices, addressed/complete means that a requirement has a narrative response, gap disclosure, layer, and next step. It does not mean missing site design is complete. Trusted inputs trigger regeneration of geometry, metrics, images, HTML, and PDFs, followed by deterministic, spatial, visual, and professional-evidence checks. [depth:metrics_recalculation] [metric:confirmed_actor_count]
 

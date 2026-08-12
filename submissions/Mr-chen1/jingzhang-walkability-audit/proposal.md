@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "本方案把京张沿线站点、公园、校园、社区和园区之间的慢行接驳作为第一条可实证主线。它先核验候选节点的工程状态，再开展多时段观察、共同踏勘和匿名反馈；AI 只辅助整理证据，任何微更新均须经过非 AI 基线、行动合约、前后测量和退出判断。三个候选节点与所有问题类型均为待验证对象，不是现状结论或建设承诺。"
 tracks: ["youth-friendly-public-space", "ai-origin-community", "ai-public-services"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "ai-health-service-navigation", "robot-delivery-low-speed"]
-iteration: "v0.3"
+iteration: "v0.4"
 ---
 
 # 京张慢行体检：沿线接驳调查与可逆微更新计划
@@ -137,7 +137,7 @@ iteration: "v0.3"
 
 ## 蓝绿空间、公共空间与城市风貌
 
-`green_space.geojson` 和 `public_space.geojson` 各只有一个 map annotation 缺口点，机器复算面积和比例为 0。这里的 0 只表示“没有提交任何可被证据支持的绿地/公共空间 polygon”，绝不表示场地实际没有绿地或公共空间，也不构成规划指标。[data:geometry/green_space.geojson#GR-SURVEY-MARKER] [metric:green_ratio]
+`green_space.geojson` 和 `public_space.geojson` 各只有一个 map annotation 缺口点，不是绿地或公共空间 polygon。真实绿地面积、绿地率、公共空间面积和公共空间率均保持“待现状调查”；空间自检可以报告本包可计算 polygon 面积为 0，但该技术结果不进入现状或规划指标结论。[data:geometry/green_space.geojson#GR-SURVEY-MARKER] [metric:green_space_area_sqm]
 
 蓝绿调查需包含现状树木与生境、水系与排水、热环境、雨洪、土壤、季节变化、开放边界和维护；公共空间调查需包含可进入性、座椅、遮阴、饮水、厕所、照明、消费门槛、昼夜与周末开放。没有这些基线，不提出绿道、海绵设施、广场或“公共客厅”。后续小试必须避免砍移树木、破坏遗产或形成长期维护负担。[standard:MOHURD-URBAN-DESIGN-MEASURES] [depth:blue_green_public_space]
 
@@ -165,7 +165,7 @@ iteration: "v0.3"
 
 ## 指标体系、面积复算与合规矩阵
 
-指标分三类。第一类是**任务或文件状态**：3 个重点区来自任务书；3 个候选慢行体检节点、5 条待验证假设、10 张场景卡、3 个 AI 必要测试、7 类假设招募组、3 个信息界面和 9 份行动合约是本稿内容计数。第二类是**技术 QA**：临时边界复算 11,412,825.386 平方米；绿地和公共空间比例为 0，只因为未提交可声称 polygon。第三类是**现场与实施指标**：已确认慢行问题、观察/反馈记录、已实施试点、确认主体、预算、容积率、高度、市政容量等，当前均 unknown 或 0 条确认记录。[metric:confirmed_walkability_problem_count] [metric:field_research_record_count]
+指标分三类。第一类是**任务或文件状态**：3 个重点区来自任务书；3 个候选慢行体检节点、5 条待验证假设、10 张场景卡、3 个 AI 必要测试、7 类假设招募组、3 个信息界面和 9 份行动合约是本稿内容计数。第二类是**技术 QA**：临时边界复算 11,412,825.386 平方米；空间自检另行报告本包可计算 polygon 的面积，不把“没有提交 polygon”改写为场地比例。第三类是**现场与实施指标**：绿地与公共空间面积/比例、已确认慢行问题、观察/反馈记录、已实施试点、确认主体、预算、容积率、高度和市政容量等，当前均为待调查、待正式资料或 0 条确认记录。[metric:confirmed_walkability_problem_count] [metric:field_research_record_count]
 
 ![指标不等于事实：已知、未知、零记录与决策门](assets/figures/metrics-evidence.png)
 
@@ -177,8 +177,8 @@ iteration: "v0.3"
 | 已确认慢行问题 0、已实施试点 0 | known | 当前没有问题或项目被冒充为既成事实 | 场地没有问题或未来不应行动 |
 | 现场研究记录 0 | known | 截止本稿未开展现场/参与者研究 | 场地没有问题或没有使用者 |
 | 已确认 actor 0、预算 0 | known | 没有实施承诺 | 没有潜在主体或资金 |
-| 绿地/公共空间 QA 比例 0 | known / technical | 没有证据支持的提交 polygon | 实际绿地或公共空间为 0 |
-| 用地、建筑、交通、市政、蓝绿基线 | unknown | 需要专业资料与调查 | 可以用 Agent 图形替代 |
+| 绿地/公共空间面积与真实比例 | unknown | 需要清权 polygon、开放属性与专业复算 | 没有提交 polygon 等于现场为 0 |
+| 用地、建筑、交通、市政及其他蓝绿基线 | unknown | 需要专业资料与调查 | 可以用 Agent 图形替代 |
 
 `compliance_matrix.json`、`standard_matrix.json` 和 `design_depth_matrix.json` 中的 addressed/complete 表示“任务要求已被正文、缺口说明、图层和下一步响应”，不表示缺失的现场设计已经完成。正式资料到位后必须整包重建 geometry、metrics、图片、HTML 和 PDF，并重新运行确定性、空间、视觉和专业证据检查。[depth:metrics_recalculation] [metric:confirmed_actor_count]
 

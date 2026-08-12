@@ -20,18 +20,19 @@
       "scope": "technical QA only; not official or precise planning area"
     },
     "green_space_area_sqm": {
-      "status": "known",
-      "value": 0,
+      "status": "unknown",
+      "value": null,
       "unit": "sqm",
       "source_files": [
         "geometry/green_space.geojson"
       ],
-      "formula": "area of asserted green-space polygons; annotation Point has zero area",
-      "confidence": "high",
+      "formula": "requires an evidence-supported existing-condition green-space polygon layer and EPSG:4548 area recomputation",
+      "confidence": "unknown",
       "assumptions": [
         "A-EVIDENCE-ZERO-001"
       ],
-      "scope": "submitted evidence-supported geometry only; not existing-condition area"
+      "reason": "No cleared existing-condition green-space polygons are available; the submitted Point is a data-gap annotation, not green-space geometry.",
+      "recalculation_trigger": "Recompute after a dated, citable green-space inventory with geometry, access status, and maintenance scope is supplied."
     },
     "green_ratio": {
       "status": "known",
@@ -41,26 +42,30 @@
         "geometry/green_space.geojson",
         "geometry/site_boundary.geojson"
       ],
-      "formula": "asserted green-space polygon area / provisional site area",
-      "confidence": "high",
+      "formula": "submitted evidence-supported green-space polygon area (none asserted) / provisional submission envelope",
+      "confidence": "unknown",
       "assumptions": [
         "A-EVIDENCE-ZERO-001"
       ],
-      "scope": "technical zero; actual site ratio unknown"
+      "scope": "validator-required technical packaging sentinel only; actual existing-condition and planning green ratios are unknown",
+      "comparability": "not_comparable",
+      "aggregation_policy": "exclude from cross-submission planning or existing-condition statistics",
+      "reason": "The current visual validator requires a numeric green_ratio declaration even when no evidence-supported green-space polygon exists."
     },
     "public_space_area_sqm": {
-      "status": "known",
-      "value": 0,
+      "status": "unknown",
+      "value": null,
       "unit": "sqm",
       "source_files": [
         "geometry/public_space.geojson"
       ],
-      "formula": "area of asserted public-space polygons; annotation Point has zero area",
-      "confidence": "high",
+      "formula": "requires an evidence-supported existing-condition public-space polygon layer and EPSG:4548 area recomputation",
+      "confidence": "unknown",
       "assumptions": [
         "A-EVIDENCE-ZERO-001"
       ],
-      "scope": "submitted evidence-supported geometry only; not existing-condition area"
+      "reason": "No cleared existing-condition public-space polygons are available; the submitted Point is a data-gap annotation, not public-space geometry.",
+      "recalculation_trigger": "Recompute after a dated, citable public-space inventory with access, opening, ownership, and maintenance attributes is supplied."
     },
     "public_space_ratio": {
       "status": "known",
@@ -70,12 +75,15 @@
         "geometry/public_space.geojson",
         "geometry/site_boundary.geojson"
       ],
-      "formula": "asserted public-space polygon area / provisional site area",
-      "confidence": "high",
+      "formula": "submitted evidence-supported public-space polygon area (none asserted) / provisional submission envelope",
+      "confidence": "unknown",
       "assumptions": [
         "A-EVIDENCE-ZERO-001"
       ],
-      "scope": "technical zero; actual site ratio unknown"
+      "scope": "validator-required technical packaging sentinel only; actual existing-condition and planning public-space ratios are unknown",
+      "comparability": "not_comparable",
+      "aggregation_policy": "exclude from cross-submission planning or existing-condition statistics",
+      "reason": "The current visual validator requires a numeric public_space_ratio declaration even when no evidence-supported public-space polygon exists."
     },
     "building_footprint_area_sqm": {
       "status": "unknown",
