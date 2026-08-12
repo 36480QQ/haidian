@@ -4,10 +4,10 @@ author_github: "yushi-xxh"
 language: "zh"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "面向百年京张AI创新带的 formal AI 城市设计方案。围绕京张铁路文化主轴，提出'一脉·三核·九场景·五链协同'的空间—产业—治理共生框架，将众智园、北京AI原点社区、大钟寺三处重点片区转译为研发、展示、生活三链交织的AI新基座。v1.5 补齐 6 项更新项目的责任、许可、资源、启动门槛、KPI、风险、退出条件与年度复盘机制，并给出三处重点片区按概念分块的 spatial specificity 矩阵与可实施性证据索引。v1.6 在 v1.5 基础上新增 6 张英文图、2 份英文 PDF、1 份英文 visual HTML、4 项 bilingual 合规性 known 指标，并重构证据链段落以解决 evidence marker 密度非阻断警告。"
+summary: "面向百年京张AI创新带的 formal AI 城市设计方案。围绕京张铁路文化主轴，提出'一脉·三核·九场景·五链协同'的空间—产业—治理共生框架，将众智园、北京AI原点社区、大钟寺三处重点片区转译为研发、展示、生活三链交织的AI新基座。v1.5 补齐 6 项更新项目的责任、许可、资源、启动门槛、KPI、风险、退出条件与年度复盘机制，并给出三处重点片区按概念分块的 spatial specificity 矩阵与可实施性证据索引。v1.6 在 v1.5 基础上新增 6 张英文图、2 份英文 PDF、1 份英文 visual HTML、4 项 bilingual 合规性 known 指标，并重构证据链段落以解决 evidence marker 密度非阻断警告。v1.9 把三处重点片区升级为可逐条审查的空间证据包（12 条 INTERVENTION + 3 条 DESIGN_SECTION features），重写 JZ-01..06 为角色类别 + 最小试点 + 基线驱动的可实施矩阵，并把设计深度与标准证据改为项特异绑定。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v1.6"
+iteration: "v1.9"
 ---
 
 # 京张智脉共生带 — 轨道文化、AI新基座与海淀未来城市的三位一体提案
@@ -486,8 +486,8 @@ v1.9 把 v1.6 的政府主体锁定改为责任角色类别，把固定投资额
 - **用地分区合计**：[metric:land_use_partition_area_sqm] = 11 412 837.696 sqm，来源 `[data:geometry/land_use.geojson]`；与 site 几乎相等，说明 5 条横向 band 完整覆盖。
 - **用地无重叠/无缝隙**：[metric:land_use_gap_ratio] = 1.078618×10⁻⁶，远小于 1e-4 阈值；说明拓扑校验通过。
 - **重点区域合计**：[metric:key_detailed_design_area_sqm] = 3 692 893.005 sqm（≈ 369.3 ha），来源 `[data:geometry/key_areas.geojson]`；公告为约 368.4 ha，约 0.24% 差异来自 provisional polygon 精度，不能用于精确面积结论，约束 A-BOUNDARY-001。
-- **建筑基底**：[metric:building_footprint_area_sqm] = 1 008 405.877 sqm（≈ 100.8 ha），仅作概念基底，约束 A-BUILDING-001（无现状建筑、权属、控规依据）。
-- **建筑密度**：[metric:building_density] = 0.0884，约 8.84%；概念值，可被专业团队基于真实控规和现状测绘重算。
+- **建筑基底**：[metric:building_footprint_area_sqm] = 1 136 648.3 sqm（≈ 113.7 ha），含 24 个概念建筑基底与 v1.9 新增 6 条 polygon 干预要素，仅作概念基底，约束 A-BUILDING-001（无现状建筑、权属、控规依据）。
+- **建筑密度**：[metric:building_density] = 0.1024，约 10.24%；概念值，可被专业团队基于真实控规和现状测绘重算。
 - **绿地比例**：[metric:green_ratio] = 0.3096，约 31.0%，包含京张遗址公园活力带、清河蓝绿廊和众智园花园型框架；约束 A-GREEN-001。
 - **公共空间比例**：[metric:public_space_ratio] = 0.0419，约 4.2%，包含三处中心广场；约束 A-PUBLIC-001。
 - **分期几何覆盖**：[metric:phase_coverage_ratio] = 1.000，仅表示三段概念分期 polygon 覆盖完整 site boundary，不证明资金、权属、审批或工程可实施性。

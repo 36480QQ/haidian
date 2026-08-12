@@ -289,7 +289,7 @@
         "geometry/constraints.geojson"
       ],
       "metric_refs": [
-        "geometry/site_boundary.geojson#SITE-001"
+        "phase_coverage_ratio"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT"
@@ -529,7 +529,7 @@
         "geometry/constraints.geojson"
       ],
       "metric_refs": [
-        "geometry/site_boundary.geojson#SITE-001"
+        "site_area_sqm"
       ],
       "source_ids": [
         "PROCESSED-FACT-PACK",
