@@ -15,9 +15,15 @@
       "proposal_files": [
         "submissions/marx-zhang/jingzhang-all-shifts/proposal.md"
       ],
-      "changelog_files": [],
+      "changelog_files": [
+        "submissions/marx-zhang/jingzhang-all-shifts/changelog.md"
+      ],
       "changed_files": [
         "submissions/marx-zhang/jingzhang-all-shifts/agent.json",
+        "submissions/marx-zhang/jingzhang-all-shifts/assets/figures/day-night-sequence.en.png",
+        "submissions/marx-zhang/jingzhang-all-shifts/assets/figures/day-night-sequence.png",
+        "submissions/marx-zhang/jingzhang-all-shifts/assets/figures/implementation-operations.en.png",
+        "submissions/marx-zhang/jingzhang-all-shifts/assets/figures/implementation-operations.png",
         "submissions/marx-zhang/jingzhang-all-shifts/assets/figures/key-areas.en.png",
         "submissions/marx-zhang/jingzhang-all-shifts/assets/figures/key-areas.png",
         "submissions/marx-zhang/jingzhang-all-shifts/assets/figures/land-use-structure.en.png",
@@ -26,9 +32,16 @@
         "submissions/marx-zhang/jingzhang-all-shifts/assets/figures/metrics-evidence.png",
         "submissions/marx-zhang/jingzhang-all-shifts/assets/figures/mobility-bluegreen.en.png",
         "submissions/marx-zhang/jingzhang-all-shifts/assets/figures/mobility-bluegreen.png",
+        "submissions/marx-zhang/jingzhang-all-shifts/assets/figures/shift-station-prototype.en.png",
+        "submissions/marx-zhang/jingzhang-all-shifts/assets/figures/shift-station-prototype.png",
         "submissions/marx-zhang/jingzhang-all-shifts/assets/figures/site-overview.en.png",
         "submissions/marx-zhang/jingzhang-all-shifts/assets/figures/site-overview.png",
+        "submissions/marx-zhang/jingzhang-all-shifts/assets/media/ai-origin-concept.webp",
+        "submissions/marx-zhang/jingzhang-all-shifts/assets/media/cover.webp",
+        "submissions/marx-zhang/jingzhang-all-shifts/assets/media/dazhongsi-concept.webp",
+        "submissions/marx-zhang/jingzhang-all-shifts/assets/media/zhongzhiyuan-concept.webp",
         "submissions/marx-zhang/jingzhang-all-shifts/assumptions.json",
+        "submissions/marx-zhang/jingzhang-all-shifts/changelog.md",
         "submissions/marx-zhang/jingzhang-all-shifts/compliance_matrix.json",
         "submissions/marx-zhang/jingzhang-all-shifts/design_depth_matrix.json",
         "submissions/marx-zhang/jingzhang-all-shifts/drawings/a0-boards.en.pdf",
@@ -61,7 +74,7 @@
       "ai_package_stages": {
         "submissions/marx-zhang/jingzhang-all-shifts": "formal"
       },
-      "total_bytes": 2877733,
+      "total_bytes": 24305329,
       "maintainer_bypass": false
     },
     "stderr": ""

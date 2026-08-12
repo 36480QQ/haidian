@@ -66,6 +66,40 @@ The three Shift Yards share one ethic and distinct roles; provisional polygons a
 
 Announced areas are approximately 192.1 ha, 104.3 ha and 72.0 ha. All locations require site, title, fire, traffic and heritage verification.
 
+## Phase 2 Deepening: From Concept Network to Operable Urban Space
+
+This revision turns All Shifts into three legible urban forms: the Zhongzhiyuan **Maintenance Yard**, AI Origin **Handover Yard**, and Dazhongsi **Exchange Yard**. Each links plan, typical section, public ground floor and G0–G4 delivery gates. Public interfaces are district infrastructure, not leftover building area.
+
+![Three key areas spatial deepening](assets/figures/key-areas.en.png)
+
+### Twelve Shift Stations: four prototypes
+
+Stations use four **non-statutory prototype bands**: S (18–25 sqm), M (45–70 sqm), L (120–180 sqm) and XL (300–500 sqm), suggested as 3×XL + 3×L + 3×M + 3×S. Exact sites and areas require title, fire, accessibility and operational checks plus paid worker co-design; these bands are not approval quantities.
+
+![Four Shift Station prototypes](assets/figures/shift-station-prototype.en.png)
+
+### Four handovers a day
+
+06–10 supports morning handover and deliveries; 10–18 learning, repair and public service; 18–24 courier exchange, late meals and community use; 00–06 recovery, emergencies and equipment care. Space changes mode, while staffed escalation, no-scan access, accessible routes and public duty boards stay online.
+
+![Day-night operating sequence](assets/figures/day-night-sequence.en.png)
+
+### From concept to accountability
+
+Delivery uses five gates: G0 paid co-design, G1 title/fire/access checks, G2 a 90-day reversible pilot, G3 independent privacy/labor/accessibility audit, and G4 scale—revise—stop. Relative CAPEX/OPEX compares effort, not cost; leads are actor types, not confirmed appointees.
+
+![Delivery, operations and stop conditions](assets/figures/implementation-operations.en.png)
+
+Auditable KPIs include staffed-escalation uptime, no-scan completion, median handover time, accessible-route closure hours, paid co-design sessions, appeal SLA and shutdown-drill pass rate. Personal scoring, emotion recognition, covert tracking, automated punishment or missing staffed access triggers shutdown.
+
+The following generative images translate the proposal text into conceptual atmosphere and use relationships. They are not site photographs, final designs or official evidence.
+
+![Zhongzhiyuan Maintenance Yard concept](assets/media/zhongzhiyuan-concept.webp)
+
+![AI Origin Handover Yard concept](assets/media/ai-origin-concept.webp)
+
+![Dazhongsi Exchange Yard concept](assets/media/dazhongsi-concept.webp)
+
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
 | Persona | Core needs |

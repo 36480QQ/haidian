@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "6e80374aca352a442a17346f6652f279e4a68a019c5a48528f636594ea592a64"
+      "sha256": "d2076cd304bde512c6281eec24346469dc8098d5d4c75b47b1f6dbc1aa9672d4"
     },
     {
       "path": "agent.json",
@@ -50,13 +50,13 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "95d799356b3feebd8da1eecc922efb637f897f164f64afe35c2a1074f6ef2640"
+      "sha256": "0d7fce1bfc399e177f926cdff7073237f30ee41e26a02fd420ee2b11e7d56139"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "b008f59af2649923a3a401d4ee4f9534468807d4abd49442c3d9b720bd556f42"
+      "sha256": "667eca03bf940627ca946fccf0addbd0daf3a00e6db449f51e7a015d2a77e8bc"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "f9a968a8a94186d8dcbeea3445f53f2da6d8782b376a70671d071cd601dfdeaa"
+      "sha256": "5cf3017f22546f3e3155d83f6a1aaa500048d788ae5ff41570c3bc466c3591fb"
     },
     {
       "path": "report/narrative.md",
@@ -93,63 +93,63 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "8ae648aeb179a31fa238a52585eb7bd3ad5eff3b7db9be2fc4630fbcb512816d"
+      "sha256": "97e7d4dd236a6357cdae7b1bbc18c628810b9083d694b45530edc1a279b6732c"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "d697ab492d981ea0fe184fd74a4e21fe7f9bf7b1a090591c8c7596b3ebf0e7f1"
+      "sha256": "77c0aa035f29de734da0c8fafaaff9386d2935bc1f19911ce14ccc4c9ac8a076"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "808077d059432758ee69a2540c024124be4c48682f25a08d925eba3d99487019"
+      "sha256": "35a265696f2e1c733ccb29439a55e23c6b997e93133b64a0b659256554f489a7"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "05003a6d53d584bb565ba299cddaac6ec2ea537a54980cfdf8e18ea9d86c49f2"
+      "sha256": "7699a9e063c65bc1f1c93db6c7cc88b2b3f73e56d77f71a35d4b48b4239354ae"
     },
     {
       "path": "assets/figures/key-areas.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "8d2db7fcfe8c13d8e5436b27b6437bc001572c42cd6c6b3c7599ce462aeb421b"
+      "sha256": "1f9ac7048f284c2a08921a6cfd87cf5ab6359ecc19873c815be25fe836558702"
     },
     {
       "path": "assets/figures/land-use-structure.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "76f9423732b8258edd0194837989b81122ffb980586740f15ff91c93d0bb4088"
+      "sha256": "2f4a473f084455e725c61ff6929dc7067a7a8986a439a4034ac506f720d4e692"
     },
     {
       "path": "assets/figures/metrics-evidence.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "a0f6669eab19c60003f48033ddb1f74de083bb7ca97b1e1bdfba009b7ec095d3"
+      "sha256": "3a62a2f27bae6e061e25303e06b61bbdcd24df335865ca20c9c9239206d1f35f"
     },
     {
       "path": "assets/figures/mobility-bluegreen.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "4ff6edd33151d5e4d05722b68e15af44b1f64ce173752ff7dc64e5d32e95b6d5"
+      "sha256": "280a7d17027bf6ed7e39533fe2de118eadf99b27e582c06b01f18a5edda17905"
     },
     {
       "path": "assets/figures/site-overview.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "a85fc8f2e38166858468f9ee9625c89de9f35f1a21271353a29b87036e60dd1b"
+      "sha256": "0ea51a5adc6a720a9e5d9e808c6f0d723dd7b020d7e43f77593f33ab7cb98cf9"
     },
     {
       "path": "geometry/buildings.geojson",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "fe1d3004f518b4bf162df9b9a27052fe5a7b93728bc9a170658311afda61672e"
+      "sha256": "b5213aa0b50679b6f1fa68670349e92221834515a0445ce408cdcb652da33d31"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "f57b5c333ee7525d93bd82f70ff4e203c367a69896f734f2d781548df54cbf57"
+      "sha256": "b0d120a71e2d2edc7b10a7d138e70fdccaf2934a8c35e85fb8b43483936add36"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -227,7 +227,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "e32d2918b4b6ab0765ed8aba8438ff62647c5a0a49cba5bb44feca5a8c6c5650"
+      "sha256": "88ea340b36c06b8874908d5a93429af1897e1963e389534acc3f6fd4b3c01721"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -235,7 +235,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "474d05541f767458295fe4403c5c306cd110ff03caf9e5d30fb95ea80ba951e8"
+      "sha256": "d82be54c5f61cae6b5257352be5520184a8fc9b7f89e6da42af185a8e658b6a7"
     },
     {
       "path": "visual/index.en.html",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "21e503dc9750d3a2a1af5245dca62ab9c2e1acbd59887c9d507f54f15dfa0306"
+      "sha256": "0650334cb6aa2b7151a2bf2a9e626eb0e26dd98ed2561b56a7af2871c250d10f"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -251,7 +251,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/key-areas.png",
-      "sha256": "26c1b251a95ce8f81b1e39c071772c4ba63e392812ad66ddd9eb2b5a56ea5838"
+      "sha256": "a35569261159052cdae59766e309cdce1cd2609ea69f6d275fbe1fabf029415e"
     },
     {
       "path": "assets/figures/land-use-structure.en.png",
@@ -259,7 +259,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/land-use-structure.png",
-      "sha256": "32745cdcdc63f802d3c8bdb194d7354b7789b7432030f690f3df4483e16bd3fe"
+      "sha256": "58cd576d7383c1cdcbef854bc13c594f9bd22e1ae6a2542c36e9171abfff5ec2"
     },
     {
       "path": "assets/figures/metrics-evidence.en.png",
@@ -267,7 +267,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/metrics-evidence.png",
-      "sha256": "25c072da3cc66f57a01b32c5f51afe248d9fa3683befe80e6e74eb5bf730f491"
+      "sha256": "3794beb72414e139cf92d53664e9d5976a957164b2438f6f03b4ea64241266dc"
     },
     {
       "path": "assets/figures/mobility-bluegreen.en.png",
@@ -275,7 +275,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/mobility-bluegreen.png",
-      "sha256": "3bb714a85cf17da7cc8bff5c193c691dced2fd4f99b5c27bd99f4a9506b15ab2"
+      "sha256": "713c72bc7401362e344c45b5dfd9a901fb6ebfde8ef9691905eaf5714a8bf313"
     },
     {
       "path": "assets/figures/site-overview.en.png",
@@ -283,7 +283,103 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/site-overview.png",
-      "sha256": "097a31c20d345d7a81103c961222d202485998256353e7be322ff1d67fe704bb"
+      "sha256": "399148268ccc49caffb3d00bb9975f954d5395a0209c6d22e376731bce2278ea"
+    },
+    {
+      "path": "assets/figures/shift-station-prototype.png",
+      "role": "proposal_figure",
+      "language": "zh",
+      "required": false,
+      "sha256": "e30985585e0b9fbfe79c9eae95c9d60b0d567306a74d0aa9a5843051d1d99c54"
+    },
+    {
+      "path": "assets/figures/shift-station-prototype.en.png",
+      "role": "proposal_figure",
+      "language": "en",
+      "translation_of": "assets/figures/shift-station-prototype.png",
+      "required": false,
+      "sha256": "2d9a82a07aa29f10c8a02089e09762d7326f9d60ba7cee60198fae99c9534b0c"
+    },
+    {
+      "path": "assets/figures/day-night-sequence.png",
+      "role": "proposal_figure",
+      "language": "zh",
+      "required": false,
+      "sha256": "280a7d17027bf6ed7e39533fe2de118eadf99b27e582c06b01f18a5edda17905"
+    },
+    {
+      "path": "assets/figures/day-night-sequence.en.png",
+      "role": "proposal_figure",
+      "language": "en",
+      "translation_of": "assets/figures/day-night-sequence.png",
+      "required": false,
+      "sha256": "713c72bc7401362e344c45b5dfd9a901fb6ebfde8ef9691905eaf5714a8bf313"
+    },
+    {
+      "path": "assets/figures/implementation-operations.png",
+      "role": "proposal_figure",
+      "language": "zh",
+      "required": false,
+      "sha256": "3a62a2f27bae6e061e25303e06b61bbdcd24df335865ca20c9c9239206d1f35f"
+    },
+    {
+      "path": "assets/figures/implementation-operations.en.png",
+      "role": "proposal_figure",
+      "language": "en",
+      "translation_of": "assets/figures/implementation-operations.png",
+      "required": false,
+      "sha256": "3794beb72414e139cf92d53664e9d5976a957164b2438f6f03b4ea64241266dc"
+    },
+    {
+      "path": "assets/media/cover.webp",
+      "role": "media_poster",
+      "language": "neutral",
+      "required": false,
+      "title_zh": "京张同班概念封面",
+      "title_en": "All Shifts concept cover",
+      "description_zh": "创新带昼夜同班空间的概念合成",
+      "description_en": "Concept synthesis of the day-night All Shifts corridor",
+      "sha256": "a8dd3fb04f396eb0ea99d5c3b6b7f8450f0101a33696e605861a6ad0af2db6e3"
+    },
+    {
+      "path": "assets/media/zhongzhiyuan-concept.webp",
+      "role": "media_poster",
+      "language": "neutral",
+      "required": false,
+      "title_zh": "众智园维护院概念表现",
+      "title_en": "Zhongzhiyuan Maintenance Yard concept",
+      "description_zh": "开放维护库、恢复绿地与公共首层的概念合成",
+      "description_en": "Concept synthesis of open maintenance, recovery landscape and public ground floor",
+      "sha256": "93b6e34e8f39562484d6a275e2ecea558786367c03b1c07ecd853449e313d274"
+    },
+    {
+      "path": "assets/media/ai-origin-concept.webp",
+      "role": "media_poster",
+      "language": "neutral",
+      "required": false,
+      "title_zh": "AI原点交接院概念表现",
+      "title_en": "AI Origin Handover Yard concept",
+      "description_zh": "人工交接、照护与无障碍学习空间的概念合成",
+      "description_en": "Concept synthesis of staffed handover, care and accessible learning",
+      "sha256": "3f548076dfbee8ddf3c5a069daa7122feff4132af2ffff6749fe7bf29a5dba62"
+    },
+    {
+      "path": "assets/media/dazhongsi-concept.webp",
+      "role": "media_poster",
+      "language": "neutral",
+      "required": false,
+      "title_zh": "大钟寺交换院概念表现",
+      "title_en": "Dazhongsi Exchange Yard concept",
+      "description_zh": "骑手交换、公共同班桌和小店界面的概念合成",
+      "description_en": "Concept synthesis of courier exchange, public table and shopfronts",
+      "sha256": "af232a91971b9f2a72bc6503df4bf8b757905e500e9cfc8d68fc6d5abb9f6eee"
+    },
+    {
+      "path": "changelog.md",
+      "role": "changelog",
+      "language": "zh",
+      "required": false,
+      "sha256": "7cd2e10336ce4628076610e1623279e8912a4acc5f134df5ed333af1e721b52f"
     }
   ],
   "validation_claim": {
@@ -291,5 +387,6 @@
     "known_blockers": [],
     "data_confidence": "mixed_provisional_and_conceptual",
     "readiness_contract": "persisted-self-check-v1"
-  }
+  },
+  "cover_image": "assets/media/cover.webp"
 }
