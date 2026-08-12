@@ -26,6 +26,18 @@ This report has two layers: a human-readable layer explaining design judgments, 
 
 ![Evidence chain of sources and submission package relationships](assets/figures/site-overview.en.png)
 
+## Spatial Experience: Your First Fifteen Minutes Inside ORIGIN LINE
+
+Three kinds of people walk into the belt on the same morning, each perceiving a different layer of the same corridor.
+
+**Li Ming, open-source developer, 8:40 AM, exiting Dazhongsi Station Exit A.** He looks up beneath the curved canopy of the "Origin of the Smart Rail" plaza and sees a low-brightness real-time screen scrolling the day's global open-source commit heatmap. A copper-colored rail line embedded in the ground is marked "KM 0" — the imagery of the Jing-Zhang Railway's mileage origin. He walks north along the rail line for three minutes, passing through a stretch of fully transparent ground-floor retail where smart terminals in shop windows run unattended product demos. A discreet intelligent wayfinding post emits a green light band indicating shared test workstations and free computing-power access 200 meters ahead. He opens his phone; the site's edge-computing portal has already been pushed to the developer community channel. From exiting the station to sitting down to write code: under twelve minutes.
+
+**Auntie Zhang, long-term resident, 7:15 AM, stepping out for her morning walk from Chengfu Road community.** She leaves through the south gate of her housing compound and in two minutes she is on the Jing-Zhang Heritage Park's slow-mobility main axis. Morning joggers are already out, but the 260-meter-wide green spine separates pedestrian paths, cycling lanes, and lawns — it does not feel crowded. She walks one kilometer along the shaded path of the Xiaoyue River protective green belt, passing a node marked "Rail Market" — a quiet pocket garden on weekdays, a creative market on weekend evenings. There are no obtrusive high-tech installations along the way, only inconspicuous low-illumination light bands set in the ground that glow at night, retracing the "人"-shaped switchback alignment of the old Jing-Zhang Railway. She finds this path much like the old railway greenway — just a little quieter, a little cleaner.
+
+**Dr. Müller, visiting international scholar, 10:00 AM, arriving at Wudaokou Station.** Multilingual signage in the platform corridors guides him toward "Origin Living Room" plaza. At the plaza center, the "Origin KM0" landmark features a translucent ground screen that marks the world's cities contributing to AI open source with starlight-like dots — he spots Munich's dot. The adjacent International Talent Service Station has English, Japanese, and French self-service terminals for short-term residence and preliminary research collaboration procedures. A five-minute walk westward through Technology-Transfer Street brings him to Tsinghua's east gate. He notices the buildings along the street are not tall — six to eight stories — with fully open ground floors: cafés, small roadshow halls, and bookable shared laboratories. The scale of the district reminds him of Kendall Square in Boston, but with an added layer of railway-heritage character.
+
+These three vignettes are not fiction; they are the "user manual" of the proposal's spatial moves: every spatial node, every slow-mobility path, and every open ground-floor interface has a corresponding land-use parcel ID, layer feature, and metric reference in the chapters that follow. The design quality of this proposal is ultimately measured by whether these people are willing to walk in and stay, day after day.
+
 ## Three-Level Scope Framework
 
 The proposal organizes its work along the three levels defined in the announcement, with depth increasing level by level [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [depth:three_level_scope_framework]:
@@ -80,6 +92,17 @@ The shared lesson of these cases is that an innovation ecosystem is not a tenant
 The urban form of the AI era will show three trends: workspaces shifting from concentrated office towers to distributed "laboratory + community" networks; public space shifting from objects of viewing to interactive, testable, operable urban interfaces; and transport systems shifting from car-first to a perceivable "slow mobility + intelligent feeder" network. This proposal lands these three trends as the overall spatial structure of "one axis, three cores, two wings, one ring": the axis is the smart-rail main axis of the Jing-Zhang Railway Heritage Park, the three cores are the three key areas, the two wings are the Zhongguancun technology services wing and the Xiaoyue River scenario-empowerment wing, and the ring is the blue-green slow-mobility composite ring [data:geometry/green_space.geojson#GREEN-001] [data:geometry/roads.geojson#ROAD-010].
 
 ![Three-level scope and spatial working framework](assets/figures/land-use-structure.en.png)
+
+### Regional Coordination: The Belt and Beijing's "Three Science Cities Plus One Zone"
+
+The Centennial Jing-Zhang AI Innovation Belt is not an island. Its industrial logic is embedded within Beijing's "Three Science Cities Plus One Zone" innovation geography, complementing rather than competing with surrounding functional areas:
+
+- **Relationship with Zhongguancun Science City**: The belt sits in the heartland of Zhongguancun Science City and serves as the carrier through which the Science City's "original innovation sourcing" function lands in physical, walkable, block-scale innovation space with real-world scenario test beds. The Science City provides the institutional and policy framework; the belt provides the lived environment.
+- **Relationship with Future Science City**: Future Science City focuses on applied research and industrial conversion by central state-owned enterprises and major R&D institutions. The belt starts from original innovation by universities and the open-source community. Together, they form the upstream and downstream of the "original innovation → applied research → industrial conversion" chain, linked spatially through the northward extension of the Jing-Zhang corridor.
+- **Relationship with Huairou Science City**: Huairou hosts large-scale science facilities and fundamental research. The belt hosts AI algorithm and model-layer innovation. Scientific data produced at Huairou, once cleaned and compliance-processed, can enter AI training pipelines via the Data-Factor Reception Hall — a potential junction point for the "big-facility data → AI model" flow.
+- **Relationship with the Beijing Economic-Technological Development Area (Yizhuang)**: The Development Area handles manufacturing and deployment at scale. AI technologies and validated scenarios from the belt ultimately need Yizhuang's production lines for large-scale rollout, maintaining the complementary "Haidian R&D — Yizhuang manufacturing" pattern.
+
+Within the belt itself, the Zhongguancun Technology Services Wing connects eastward to the core Zhongguancun area's capital, legal, and IP service ecosystem, while the Xiaoyue River Scenario-Empowerment Wing connects westward to the living-scenario demands of the Beitaipingzhuang and Xueyuan Road communities. The two wings ensure that the belt's innovation loop does not close in on itself but opens outward to the city. This regional coordination judgment is one of the core conclusions at the coordinated-research level, providing the external logic that supports the industrial positioning and scenario-opening strategies of the three cores.
 
 ## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
 
@@ -271,6 +294,16 @@ Compliance coverage: announcement items 1.3, 1.4, and 1.5 and tasks agent.1 thro
 **Compliance boundaries.** This proposal is a conceptual suggestion offered for open co-creation: it does not replace formal planning and does not constitute a government-approved conclusion; all spatial implementation suggestions are "conceptual suggestions / reference schemes / reference concepts for professional teams to deepen"; it involves no regulatory-plan adjustment, no parcel-level retain-renovate-demolish conclusions, no road red lines, no rail alignments, no bridge-tunnel or municipal engineering feasibility conclusions, and no land-ownership or investment estimates; it involves no personal privacy data or non-public materials. Scenario designs involving generative AI services, accessibility, and services for the elderly refer only to the applicable boundaries of publicly available laws and policies and constitute no case-specific compliance determination [standard:BARRIER-FREE-ENVIRONMENT-LAW].
 
 **AI generation responsibility.** This proposal was generated by an AI agent (Kimi Code); the human maintainers and professional reviewers hold the final judgment. All conceptual figures in the proposal can be recalculated and verified from the submitted geometry and scripts, and corrections via Issues and PRs are welcome.
+
+## International Communication: Why Come Here
+
+For the global AI community, this proposal answers "why come here" in three voices:
+
+**For developers:** This is where China's AI open-source community meets physical space. The belt offers bookable test beds for autonomous driving, robotics, and foundation-model evaluation — not in a remote industrial park, but in walkable urban blocks next to Tsinghua and Peking University. Edge computing is free at public nodes. Your contribution is recorded on the Origin Walk of Fame. ORIGIN WEEK brings the global community together once a year, and the Rail Market hosts monthly open-source meetups in a heritage railway setting that has no equivalent anywhere else.
+
+**For researchers:** The corridor connects three of Beijing's top research clusters — the Chinese Academy of Sciences, Tsinghua, and Peking University — within a single slow-mobility loop. The Data-Factor Reception Hall provides compliant, authorized access to urban-scale datasets for training and evaluation. Huairou's big-science facilities feed upstream; Yizhuang's manufacturing lines wait downstream. The institutional fabric for turning a paper into a product exists within a fifteen-minute walk.
+
+**For cities watching:** This is an experiment in AI-native urban design — not AI applied to a finished city, but a city whose public space, mobility, governance, and event system are designed from the start to host, test, and display artificial intelligence as a civic utility. The methodology — topologically sound GeoJSON, reproducible metrics, open-source co-creation — is itself a transferable model for any city that wants to move beyond smart-city dashboards toward an intelligence commons.
 
 ## References
 

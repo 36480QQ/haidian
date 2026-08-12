@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "f6139079894072f52b39478d1fc4615a1390a706b89086ce48eeb52ea04b4726"
+      "sha256": "f3eb0e8af8b6b067195902b9c5567f2996b68b771697d26c0ac99a4a847cef43"
     },
     {
       "path": "agent.json",
@@ -44,7 +44,7 @@
       "path": "assumptions.json",
       "role": "assumptions",
       "required": true,
-      "sha256": "f9b5f67c3a6d397d9465f8aa88dfe4d42929dacdc1d77255b139268c0f27cf9d"
+      "sha256": "04f0023c0672433cdf89734766972adb69129ea4bae2c4c708015595e41bebc8"
     },
     {
       "path": "sources.json",
@@ -56,13 +56,13 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "a4cda53dc0882d91a9b591afc0c752274a355e85556e6f71f1a87872df424f1f"
+      "sha256": "79b2fd4de8b4e5ae88d1ef661388dde8234783c6bcc5863425a3f3a116a236a7"
     },
     {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "32e7371cb690992198418385277d70021b50f1067680da9a49e93ad9e2cdd7f0"
+      "sha256": "64369ba0bf214b471d630c6fc2db6062e4adf0e6704e9e9ee2990c29232b2f6c"
     },
     {
       "path": "standard_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "bb2222a29213f643fb47fb53ba0471214ddaa2d84880c0b6e7ccc9b701250302"
+      "sha256": "8abff05c15778a4325d92044dab3c692960130ca0fc9b05c224b95eda1b6eab1"
     },
     {
       "path": "report/narrative.md",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "ff530a1e5dd5a001301826b306513e39c812c6ccfc150542c8f2258f51cc930e"
+      "sha256": "0218e8e346f65c5945b503a946dd262079acdc2f3961bc24faee96d37be3b601"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "0c29aa12ab2609ded147439846ef1cb31f64ecc4a457de11bd6823a559e3a9b1"
+      "sha256": "db60e974be7f109419b34a58cd51f0609e530d1e9c8a8ff5203514d2a420bcbf"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",

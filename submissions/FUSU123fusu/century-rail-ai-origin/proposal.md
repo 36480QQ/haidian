@@ -26,6 +26,18 @@ iteration: "v1.0"
 
 ![资料证据链与提交包关系图](assets/figures/site-overview.png)
 
+## 空间体验：走进原点·智轨的第一个十五分钟
+
+三类人在同一个清晨走进一带，感受到的是同一条廊道的不同层次。
+
+**开源开发者李明，早上 8:40，从大钟寺地铁站 A 口出站。** 他抬头看到「智轨起点」广场的弧形顶棚下，一块低亮度的实时屏正在滚动全球开源社区当日的 commit 热力图。广场地面嵌着一条铜色轨道线，标注「KM 0」——京张铁路的里程原点意象。他沿着轨道线向北步行三分钟，穿过一段首层全透明的商业街区，店铺橱窗里的智能终端正在做无人值守的产品演示。路边的智能导视桩用低调的绿色光带提示前方 200 米有共享测试工位和免费算力接入点。他打开手机，场地的端侧算力入口已经推送到开发者社区频道。从出站到坐下写代码，他用了不到十二分钟。
+
+**常住居民张阿姨，早上 7:15，从成府路社区出门遛弯。** 她从小区南门出来，走两分钟就踏上了京张遗址公园的慢行主轴。晨跑的人已经不少，但 260 米宽的绿轴把步行道、骑行道和草坪隔开了，并不拥挤。她沿着小月河防护绿带的林荫道走了一公里，经过一个标着「铁轨市集」的节点——白天是安静的口袋花园，周末傍晚才变成创意市集。路上没有突兀的高科技装置，只有地面上不起眼的低照度光带在夜间会亮起，重现老京张铁路「人」字形转辙的轨迹。她觉得这条路和以前的铁路绿道差不多，只是安静了一些、干净了一些。
+
+**国际访学者 Dr. Müller，上午 10:00，从五道口站下车。** 站台通道里的多语种导视把他引向「原点客厅」广场。广场中央的「原点零公里」地标上，一块半透明的地屏用星光般的光点标注着全球为 AI 开源做出贡献的城市——他找到了慕尼黑的光点。旁边的国际人才服务站有英语、日语和法语的自助终端，可以处理短期居留和科研合作的初步手续。从广场向西步行五分钟，穿过成果转化街，就到了清华东门。他注意到沿街的建筑不高——六到八层——首层全部开放，有咖啡馆、小型路演厅和可以预约的共享实验室。整个街区的尺度让他想起波士顿肯德尔广场，但多了一层铁路遗产的历史底色。
+
+这三段体验不是虚构场景，而是方案空间动作的「使用说明书」：每一个空间节点、每一条慢行路径、每一处首层开放界面都在后文有对应的用地地块编号、图层要素和指标支撑。方案的设计质量，最终要用这些人每天愿不愿意走进来、留下来衡量。
+
 ## 三层范围工作框架
 
 方案按公告确定的三个层次组织工作，深度逐级递进 [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [depth:three_level_scope_framework]：
@@ -80,6 +92,17 @@ iteration: "v1.0"
 AI 时代的城市形态将呈现三个趋势：工作空间从集中写字楼转向「实验室+社区」的分布式网络；公共空间从观赏对象转向可交互、可测试、可运营的城市接口；交通系统从车行优先转向「慢行+智能接驳」的可感知网络。本方案把这三个趋势落为总体空间结构「一轴三核两翼一环」：一轴是京张遗址公园智轨主轴，三核是三处重点片区，两翼是中关村科技服务翼与小月河场景赋能翼，一环是蓝绿慢行复合环 [data:geometry/green_space.geojson#GREEN-001] [data:geometry/roads.geojson#ROAD-010]。
 
 ![三层范围与空间工作框架图](assets/figures/land-use-structure.png)
+
+### 区域协同：一带与北京三城一区的功能互补
+
+百年京张 AI 创新带不是一座孤岛。它的产业逻辑嵌套在北京「三城一区」科技创新格局中，与周边功能区形成分工互补而非同质竞争：
+
+- **与中关村科学城的关系**：一带本身位于中关村科学城腹地，是科学城「原始创新策源」功能向物质空间落地的载体——科学城提供制度与政策框架，一带提供可步行的、街区尺度的创新空间和真实场景测试床。
+- **与未来科学城的关系**：未来科学城聚焦央企与大型研发机构的应用研究和产业转化，一带则以高校和开源社区的原始创新为起点；二者构成「原始创新→应用研究→产业转化」链条的上下游，通过京张廊道的北向延伸保持空间和产业联络。
+- **与怀柔科学城的关系**：怀柔承载大科学装置和基础研究，一带承载 AI 算法与模型层创新；怀柔产出的科学数据经清洗和合规处理后可通过数据要素会客厅进入 AI 训练管线——这是「大装置数据→AI 模型」的潜在衔接点。
+- **与经济技术开发区的关系**：经开区是制造和落地环节，一带的 AI 技术和场景验证成果最终需要在经开区的产线上实现规模化部署，形成「海淀研发—亦庄制造」的互补格局。
+
+在一带自身的组织中，中关村科技服务翼向东对接中关村核心区的资本、法务和知识产权服务体系，小月河场景赋能翼向西对接北太平庄和学院路社区的生活场景需求——两翼使一带的创新回路不封闭于自身，而是向城市开放。这种区域协同判断是本方案统筹研究层面的核心结论之一，为三核的产业定位与场景开放策略提供了外部逻辑支撑。
 
 ## 总体设计范围城市更新与控规深度城市设计
 
@@ -271,6 +294,16 @@ AI 时代的城市形态将呈现三个趋势：工作空间从集中写字楼�
 **合规边界。** 本方案是开放共创的概念建议：不替代正式规划，不构成政府审定结论；所有空间落地建议均为「概念建议/参考方案/可供专业团队深化研究」；不涉及控规调整、具体地块拆改留结论、道路红线、轨道线位、桥隧与市政工程可行性结论、土地权属与投资测算；不涉及个人隐私数据与非公开资料。涉及生成式 AI 服务、无障碍与老年人服务的场景设计，仅以相关法规政策公开文本的适用边界为参照，不构成个案合规认定 [standard:BARRIER-FREE-ENVIRONMENT-LAW]。
 
 **AI 生成责任。** 本方案由 AI agent（Kimi Code）生成，人类维护者与专业评审拥有最终判断权；方案中的概念数值均可由提交的几何与脚本复算复核，欢迎通过 Issue 与 PR 指正。
+
+## 国际传播：Why Come Here
+
+面向全球 AI 社区，本方案用三段话回答「为什么要来这里」：
+
+**For developers:** This is where China's AI open-source community meets physical space. The belt offers bookable test beds for autonomous driving, robotics, and foundation-model evaluation — not in a remote industrial park, but in walkable urban blocks next to Tsinghua and Peking University. Edge computing is free at public nodes. Your contribution is recorded on the Origin Walk of Fame. ORIGIN WEEK brings the global community together once a year, and the Rail Market hosts monthly open-source meetups in a heritage railway setting that has no equivalent anywhere else.
+
+**For researchers:** The corridor connects three of Beijing's top research clusters — the Chinese Academy of Sciences, Tsinghua, and Peking University — within a single slow-mobility loop. The Data-Factor Reception Hall provides compliant, authorized access to urban-scale datasets for training and evaluation. Huairou's big-science facilities feed upstream; Yizhuang's manufacturing lines wait downstream. The institutional fabric for turning a paper into a product exists within a fifteen-minute walk.
+
+**For cities watching:** This is an experiment in AI-native urban design — not AI applied to a finished city, but a city whose public space, mobility, governance, and event system are designed from the start to host, test, and display artificial intelligence as a civic utility. The methodology — topologically sound GeoJSON, reproducible metrics, open-source co-creation — is itself a transferable model for any city that wants to move beyond smart-city dashboards toward an intelligence commons.
 
 ## 参考资料
 
