@@ -35,7 +35,8 @@
         "A-CONTROLS-001"
       ],
       "self_check_ids": [
-        "LAND_USE_TOPOLOGY"
+        "PROFESSIONAL_EVIDENCE",
+        "SPATIAL_REVIEW"
       ]
     },
     {
@@ -45,7 +46,7 @@
       "report_sections": [
         "统筹研究范围产业与未来城市研究",
         "总体设计范围城市更新与控规深度城市设计",
-        "用地、建筑量体与留改拆策略"
+        "用地、建筑规模与拆改留方案"
       ],
       "geojson_layers": [
         "geometry/land_use.geojson",
@@ -74,8 +75,8 @@
         "A-CONTROLS-001"
       ],
       "self_check_ids": [
-        "BOUNDARY_TRUST",
-        "LAND_USE_TOPOLOGY"
+        "SPATIAL_REVIEW",
+        "PROFESSIONAL_EVIDENCE"
       ]
     },
     {
@@ -84,7 +85,7 @@
       "mandatory": true,
       "report_sections": [
         "AI 创新生态、人才画像与 AI+ 场景",
-        "蓝绿网络、公共空间与城市风貌",
+        "蓝绿空间、公共空间与城市风貌",
         "空间体验：走进原点·智轨的第一个十五分钟"
       ],
       "geojson_layers": [
@@ -112,8 +113,8 @@
         "A-CONTROLS-001"
       ],
       "self_check_ids": [
-        "BOUNDARY_TRUST",
-        "VISUAL_STATIC"
+        "PROFESSIONAL_EVIDENCE",
+        "VISUAL_PACKAGING"
       ]
     },
     {
@@ -148,8 +149,8 @@
         "A-CONTROLS-001"
       ],
       "self_check_ids": [
-        "BOUNDARY_TRUST",
-        "KEY_AREAS_TRUST"
+        "PROFESSIONAL_EVIDENCE",
+        "DETERMINISTIC_VALIDATION"
       ]
     },
     {
@@ -192,8 +193,8 @@
         "A-CONTROLS-001"
       ],
       "self_check_ids": [
-        "BOUNDARY_TRUST",
-        "LAND_USE_TOPOLOGY"
+        "SPATIAL_REVIEW",
+        "PROFESSIONAL_EVIDENCE"
       ]
     },
     {
@@ -232,8 +233,8 @@
         "A-CONTROLS-001"
       ],
       "self_check_ids": [
-        "KEY_AREAS_TRUST",
-        "LAND_USE_TOPOLOGY"
+        "SPATIAL_REVIEW",
+        "PROFESSIONAL_EVIDENCE"
       ]
     },
     {
@@ -242,7 +243,7 @@
       "mandatory": true,
       "report_sections": [
         "统筹研究范围产业与未来城市研究",
-        "全球AI创新生态案例（回应agent.2）"
+        "全球 AI 创新生态案例（回应 agent.2）"
       ],
       "geojson_layers": [
         "geometry/key_areas.geojson",
@@ -267,7 +268,7 @@
         "A-CONTROLS-001"
       ],
       "self_check_ids": [
-        "LAND_USE_TOPOLOGY"
+        "PROFESSIONAL_EVIDENCE"
       ]
     },
     {
@@ -305,8 +306,8 @@
         "A-CONTROLS-001"
       ],
       "self_check_ids": [
-        "BOUNDARY_TRUST",
-        "LAND_USE_TOPOLOGY"
+        "PROFESSIONAL_EVIDENCE",
+        "SPATIAL_REVIEW"
       ]
     },
     {
@@ -342,7 +343,8 @@
         "A-CONTROLS-001"
       ],
       "self_check_ids": [
-        "LAND_USE_TOPOLOGY"
+        "PROFESSIONAL_EVIDENCE",
+        "SPATIAL_REVIEW"
       ]
     },
     {
@@ -352,7 +354,7 @@
       "report_sections": [
         "总体设计范围城市更新与控规深度城市设计",
         "更新总体框架与用地结构",
-        "更新项目、实施政策与分期"
+        "更新项目清单、实施政策与分期计划"
       ],
       "geojson_layers": [
         "geometry/land_use.geojson",
@@ -381,8 +383,8 @@
         "A-CONTROLS-001"
       ],
       "self_check_ids": [
-        "BOUNDARY_TRUST",
-        "LAND_USE_TOPOLOGY"
+        "SPATIAL_REVIEW",
+        "PROFESSIONAL_EVIDENCE"
       ]
     },
     {
@@ -414,7 +416,8 @@
         "A-CONTROLS-001"
       ],
       "self_check_ids": [
-        "BOUNDARY_TRUST"
+        "SPATIAL_REVIEW",
+        "PROFESSIONAL_EVIDENCE"
       ]
     },
     {
@@ -422,7 +425,7 @@
       "title_zh": "总体设计范围：京张遗址公园活力带",
       "mandatory": true,
       "report_sections": [
-        "蓝绿网络、公共空间与城市风貌",
+        "蓝绿空间、公共空间与城市风貌",
         "蓝绿空间系统"
       ],
       "geojson_layers": [
@@ -451,7 +454,8 @@
         "A-CONTROLS-001"
       ],
       "self_check_ids": [
-        "BOUNDARY_TRUST"
+        "SPATIAL_REVIEW",
+        "VISUAL_PACKAGING"
       ]
     },
     {
@@ -459,9 +463,9 @@
       "title_zh": "总体设计范围：城市风貌",
       "mandatory": true,
       "report_sections": [
-        "蓝绿网络、公共空间与城市风貌",
-        "用地、建筑量体与留改拆策略",
-        "文化叙事（回应agent.5）"
+        "蓝绿空间、公共空间与城市风貌",
+        "用地、建筑规模与拆改留方案",
+        "文化叙事（回应 agent.5）"
       ],
       "geojson_layers": [
         "geometry/buildings.geojson",
@@ -489,7 +493,8 @@
         "A-CONTROLS-001"
       ],
       "self_check_ids": [
-        "VISUAL_STATIC"
+        "PROFESSIONAL_EVIDENCE",
+        "VISUAL_PACKAGING"
       ]
     },
     {
@@ -528,8 +533,8 @@
         "A-CONTROLS-001"
       ],
       "self_check_ids": [
-        "KEY_AREAS_TRUST",
-        "LAND_USE_TOPOLOGY"
+        "SPATIAL_REVIEW",
+        "PROFESSIONAL_EVIDENCE"
       ]
     },
     {
@@ -538,7 +543,7 @@
       "mandatory": true,
       "report_sections": [
         "重点区域详细设计",
-        "众智园AI自主创新加速区"
+        "众智园 AI 自主创新加速区"
       ],
       "geojson_layers": [
         "geometry/key_areas.geojson",
@@ -563,7 +568,8 @@
         "A-CONTROLS-001"
       ],
       "self_check_ids": [
-        "KEY_AREAS_TRUST"
+        "SPATIAL_REVIEW",
+        "PROFESSIONAL_EVIDENCE"
       ]
     },
     {
@@ -572,7 +578,7 @@
       "mandatory": true,
       "report_sections": [
         "重点区域详细设计",
-        "北京AI原点社区"
+        "北京 AI 原点社区"
       ],
       "geojson_layers": [
         "geometry/key_areas.geojson",
@@ -598,7 +604,8 @@
         "A-CONTROLS-001"
       ],
       "self_check_ids": [
-        "KEY_AREAS_TRUST"
+        "SPATIAL_REVIEW",
+        "PROFESSIONAL_EVIDENCE"
       ]
     },
     {
@@ -607,7 +614,7 @@
       "mandatory": true,
       "report_sections": [
         "重点区域详细设计",
-        "大钟寺AI产业聚集区"
+        "大钟寺 AI 产业集聚区"
       ],
       "geojson_layers": [
         "geometry/key_areas.geojson",
@@ -633,7 +640,8 @@
         "A-CONTROLS-001"
       ],
       "self_check_ids": [
-        "KEY_AREAS_TRUST"
+        "SPATIAL_REVIEW",
+        "PROFESSIONAL_EVIDENCE"
       ]
     },
     {
@@ -642,7 +650,7 @@
       "mandatory": true,
       "report_sections": [
         "统筹研究范围产业与未来城市研究",
-        "总体概念与命名体系（回应agent.1）",
+        "总体概念与命名体系（回应 agent.1）",
         "三大定位、五大功能与三区两翼协同回路"
       ],
       "geojson_layers": [
@@ -671,8 +679,8 @@
         "A-CONTROLS-001"
       ],
       "self_check_ids": [
-        "BOUNDARY_TRUST",
-        "KEY_AREAS_TRUST"
+        "PROFESSIONAL_EVIDENCE",
+        "DETERMINISTIC_VALIDATION"
       ]
     },
     {
@@ -681,7 +689,7 @@
       "mandatory": true,
       "report_sections": [
         "统筹研究范围产业与未来城市研究",
-        "全球AI创新生态案例（回应agent.2）",
+        "全球 AI 创新生态案例（回应 agent.2）",
         "重点区域详细设计"
       ],
       "geojson_layers": [
@@ -708,7 +716,7 @@
         "A-CONTROLS-001"
       ],
       "self_check_ids": [
-        "LAND_USE_TOPOLOGY"
+        "PROFESSIONAL_EVIDENCE"
       ]
     },
     {
@@ -717,8 +725,8 @@
       "mandatory": true,
       "report_sections": [
         "AI 创新生态、人才画像与 AI+ 场景",
-        "AI场景卡（12张，其中4张为产业测试验证场景）",
-        "用户画像（回应agent.3，不少于5类）"
+        "AI 场景卡（12 张，其中 4 张为产业测试验证场景）",
+        "用户画像（回应 agent.3，不少于 5 类）"
       ],
       "geojson_layers": [
         "geometry/public_space.geojson",
@@ -742,7 +750,8 @@
         "A-CONTROLS-001"
       ],
       "self_check_ids": [
-        "VISUAL_STATIC"
+        "PROFESSIONAL_EVIDENCE",
+        "VISUAL_PACKAGING"
       ]
     },
     {
@@ -750,8 +759,8 @@
       "title_zh": "AI公共空间、智能原生新业态与朝圣地标设计",
       "mandatory": true,
       "report_sections": [
-        "蓝绿网络、公共空间与城市风貌",
-        "AI朝圣地标与荣誉展示系统（回应agent.4）"
+        "蓝绿空间、公共空间与城市风貌",
+        "AI 朝圣地标与荣誉展示体系（回应 agent.4）"
       ],
       "geojson_layers": [
         "geometry/public_space.geojson",
@@ -777,7 +786,8 @@
         "A-CONTROLS-001"
       ],
       "self_check_ids": [
-        "BOUNDARY_TRUST"
+        "PROFESSIONAL_EVIDENCE",
+        "VISUAL_PACKAGING"
       ]
     },
     {
@@ -785,8 +795,8 @@
       "title_zh": "百年京张文化、中关村文化与AI新文化融合叙事设计",
       "mandatory": true,
       "report_sections": [
-        "蓝绿网络、公共空间与城市风貌",
-        "文化叙事（回应agent.5）"
+        "蓝绿空间、公共空间与城市风貌",
+        "文化叙事（回应 agent.5）"
       ],
       "geojson_layers": [
         "geometry/public_space.geojson",
@@ -810,7 +820,7 @@
         "A-HERITAGE-001"
       ],
       "self_check_ids": [
-        "VISUAL_STATIC"
+        "PROFESSIONAL_EVIDENCE"
       ]
     },
     {
@@ -818,8 +828,8 @@
       "title_zh": "一带全球AI创新活动体系与长期运营设计",
       "mandatory": true,
       "report_sections": [
-        "更新项目、实施政策与分期",
-        "全球AI活动体系与长期运营（回应agent.6）"
+        "更新项目清单、实施政策与分期计划",
+        "全球 AI 活动体系与长期运营（回应 agent.6）"
       ],
       "geojson_layers": [
         "geometry/public_space.geojson",
@@ -843,7 +853,7 @@
         "A-OPS-001"
       ],
       "self_check_ids": [
-        "VISUAL_STATIC"
+        "PROFESSIONAL_EVIDENCE"
       ]
     }
   ]
