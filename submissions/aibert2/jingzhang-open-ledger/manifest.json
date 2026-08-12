@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "package_id": "jingzhang-open-ledger",
   "project_id": "centennial-jingzhang-ai-belt",
-  "site_package_version": "0.1.0",
+  "site_package_version": "0.2.0",
   "package_type": "professional_design_package",
   "package_state": "ready_for_review",
   "submission_stage": "formal",
@@ -56,7 +56,8 @@
     },
     {
       "path": "risk.json",
-      "role": "risk_register",
+      "role": "other",
+      "role_detail": "risk_register",
       "required": false,
       "sha256": "f42f7637955102f0cedb755e247ba46666ca4fcc615bada762bcf562842926c2"
     },
@@ -70,7 +71,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "87285de2f64cf94910a447af4175bb9eb544ccc0e960f201d4d8462d32abba37"
+      "sha256": "f18a99b7ccbc95ee92469c45461915289d9c7c93b1c67b9b50131ca3caf30682"
     },
     {
       "path": "compliance_matrix.json",

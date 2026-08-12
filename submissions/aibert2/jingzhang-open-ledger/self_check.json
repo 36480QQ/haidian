@@ -1,111 +1,200 @@
 {
-  "schema_version": "0.1.0",
   "ok": true,
+  "submission_dir": "submissions/aibert2/jingzhang-open-ledger",
+  "pr_author": "aibert2",
+  "stage": "formal",
+  "deterministic_validation": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "errors": [],
+      "warnings": [
+        "submissions/aibert2/jingzhang-open-ledger/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied"
+      ],
+      "proposal_files": [
+        "submissions/aibert2/jingzhang-open-ledger/proposal.md"
+      ],
+      "changelog_files": [
+        "submissions/aibert2/jingzhang-open-ledger/changelog.md"
+      ],
+      "changed_files": [
+        "submissions/aibert2/jingzhang-open-ledger/agent.json",
+        "submissions/aibert2/jingzhang-open-ledger/assets/figures/key-areas.en.png",
+        "submissions/aibert2/jingzhang-open-ledger/assets/figures/key-areas.png",
+        "submissions/aibert2/jingzhang-open-ledger/assets/figures/land-use-structure.en.png",
+        "submissions/aibert2/jingzhang-open-ledger/assets/figures/land-use-structure.png",
+        "submissions/aibert2/jingzhang-open-ledger/assets/figures/metrics-evidence.en.png",
+        "submissions/aibert2/jingzhang-open-ledger/assets/figures/metrics-evidence.png",
+        "submissions/aibert2/jingzhang-open-ledger/assets/figures/mobility-bluegreen.en.png",
+        "submissions/aibert2/jingzhang-open-ledger/assets/figures/mobility-bluegreen.png",
+        "submissions/aibert2/jingzhang-open-ledger/assets/figures/site-overview.en.png",
+        "submissions/aibert2/jingzhang-open-ledger/assets/figures/site-overview.png",
+        "submissions/aibert2/jingzhang-open-ledger/assets/jingzhang-commons-cover.png",
+        "submissions/aibert2/jingzhang-open-ledger/assumptions.json",
+        "submissions/aibert2/jingzhang-open-ledger/changelog.md",
+        "submissions/aibert2/jingzhang-open-ledger/compliance_matrix.json",
+        "submissions/aibert2/jingzhang-open-ledger/design_depth_matrix.json",
+        "submissions/aibert2/jingzhang-open-ledger/drawings/a0-boards.en.pdf",
+        "submissions/aibert2/jingzhang-open-ledger/drawings/a0-boards.pdf",
+        "submissions/aibert2/jingzhang-open-ledger/drawings/a3-booklet.en.pdf",
+        "submissions/aibert2/jingzhang-open-ledger/drawings/a3-booklet.pdf",
+        "submissions/aibert2/jingzhang-open-ledger/geometry/buildings.geojson",
+        "submissions/aibert2/jingzhang-open-ledger/geometry/constraints.geojson",
+        "submissions/aibert2/jingzhang-open-ledger/geometry/green_space.geojson",
+        "submissions/aibert2/jingzhang-open-ledger/geometry/key_areas.geojson",
+        "submissions/aibert2/jingzhang-open-ledger/geometry/land_use.geojson",
+        "submissions/aibert2/jingzhang-open-ledger/geometry/phasing.geojson",
+        "submissions/aibert2/jingzhang-open-ledger/geometry/public_space.geojson",
+        "submissions/aibert2/jingzhang-open-ledger/geometry/roads.geojson",
+        "submissions/aibert2/jingzhang-open-ledger/geometry/site_boundary.geojson",
+        "submissions/aibert2/jingzhang-open-ledger/manifest.json",
+        "submissions/aibert2/jingzhang-open-ledger/metrics.json",
+        "submissions/aibert2/jingzhang-open-ledger/proposal.en.md",
+        "submissions/aibert2/jingzhang-open-ledger/proposal.md",
+        "submissions/aibert2/jingzhang-open-ledger/report/copyright_statement.md",
+        "submissions/aibert2/jingzhang-open-ledger/report/narrative.md",
+        "submissions/aibert2/jingzhang-open-ledger/report/proposal.en.html",
+        "submissions/aibert2/jingzhang-open-ledger/report/proposal.html",
+        "submissions/aibert2/jingzhang-open-ledger/risk.json",
+        "submissions/aibert2/jingzhang-open-ledger/self_check.json",
+        "submissions/aibert2/jingzhang-open-ledger/sources.json",
+        "submissions/aibert2/jingzhang-open-ledger/standard_matrix.json",
+        "submissions/aibert2/jingzhang-open-ledger/visual/index.en.html",
+        "submissions/aibert2/jingzhang-open-ledger/visual/index.html"
+      ],
+      "ai_package_stages": {
+        "submissions/aibert2/jingzhang-open-ledger": "formal"
+      },
+      "total_bytes": 15304715,
+      "maintainer_bypass": false
+    },
+    "stderr": ""
+  },
+  "spatial_review": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "stage": "formal",
+      "issues": [
+        {
+          "check_id": "KEY_AREA_PROVISIONAL",
+          "severity": "minor",
+          "target_file": "geometry/key_areas.geojson",
+          "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
+          "target_feature_id": "PROV-KEY-001",
+          "expected": null,
+          "actual": null
+        },
+        {
+          "check_id": "KEY_AREA_PROVISIONAL",
+          "severity": "minor",
+          "target_file": "geometry/key_areas.geojson",
+          "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
+          "target_feature_id": "PROV-KEY-002",
+          "expected": null,
+          "actual": null
+        },
+        {
+          "check_id": "KEY_AREA_PROVISIONAL",
+          "severity": "minor",
+          "target_file": "geometry/key_areas.geojson",
+          "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
+          "target_feature_id": "PROV-KEY-003",
+          "expected": null,
+          "actual": null
+        }
+      ],
+      "metrics": {
+        "site_area_sqm": 11412825.386,
+        "green_space_area_sqm": 1754638.726,
+        "public_space_area_sqm": 200144.906,
+        "building_footprint_area_sqm": 176408.448,
+        "green_ratio": 0.153743,
+        "public_space_ratio": 0.017537
+      }
+    },
+    "stderr": ""
+  },
+  "visual_review": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "issues": [],
+      "metrics_seen": {
+        "site_area_sqm": 11412825.388,
+        "green_ratio": 0.153743,
+        "public_space_ratio": 0.017537
+      }
+    },
+    "stderr": ""
+  },
+  "professional_review": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "issues": [],
+      "summary": {
+        "standard_matrix_items": 5,
+        "design_depth_items": 15,
+        "known_metric_refs_required": 12,
+        "proposal_format_version": "2",
+        "evidence_contract": "section-anchors-plus-structured-audit",
+        "proposal_reference_counts": {
+          "source": 13,
+          "standard": 5,
+          "depth": 10,
+          "data": 8,
+          "metric": 11
+        }
+      }
+    },
+    "stderr": ""
+  },
+  "spatial_issue_ids": [
+    "KEY_AREA_PROVISIONAL",
+    "KEY_AREA_PROVISIONAL",
+    "KEY_AREA_PROVISIONAL"
+  ],
+  "visual_issue_ids": [],
+  "professional_issue_ids": [],
+  "missing_review_dependencies": [],
   "can_enter_formal_review": true,
+  "package_type": "professional_design_package",
+  "review_status": "formal-review-ready",
+  "next_actions": [],
+  "schema_version": "0.1.0",
   "checks": [
     {
       "check_id": "DETERMINISTIC_VALIDATION",
       "result": "pass",
       "severity": "blocking",
-      "target": "submission package",
-      "message": "Current local submission validation completed without deterministic errors.",
-      "suggested_fix": "Rerun repository validation after any package change."
+      "target": "validate_local_submission.py",
+      "message": "deterministic_validation: PASS"
     },
     {
       "check_id": "SPATIAL_REVIEW",
       "result": "pass",
       "severity": "blocking",
-      "target": "geometry/*.geojson",
-      "message": "Current local formal spatial review passed; provisional geometry remains explicitly labelled and content-scoring eligible.",
-      "suggested_fix": "Replace provisional geometry with cleared source data and rerun spatial review when supplied."
+      "target": "spatial_review.py",
+      "message": "spatial_review: PASS"
     },
     {
       "check_id": "VISUAL_PACKAGING",
       "result": "pass",
       "severity": "blocking",
-      "target": "visual/index.html, drawings",
-      "message": "Current local visual-packaging review passed for the static visualization, required review markers, and declared metrics.",
-      "suggested_fix": "Rerun visual review after changing layout, assets, or displayed metrics."
+      "target": "visual_review.py",
+      "message": "visual_review: PASS"
     },
     {
       "check_id": "PROFESSIONAL_EVIDENCE",
       "result": "pass",
       "severity": "blocking",
-      "target": "proposal.md, matrices, metrics",
-      "message": "Current local professional-evidence review passed for required standards, design depth, and claim-adjacent evidence.",
-      "suggested_fix": "Update source, metric, and matrix references together when revising claims."
-    },
-    {
-      "check_id": "BOUNDARY_TRUST",
-      "result": "pass",
-      "severity": "major",
-      "target": "geometry/site_boundary.geojson",
-      "message": "A traceable provisional boundary is explicitly flagged as non-official and non-statutory; it must be replaced before statutory or implementation use.",
-      "suggested_fix": "Obtain cleared official geometry with source/version/CRS metadata, replace all dependent geometry, and rerun reviews."
-    },
-    {
-      "check_id": "KEY_AREAS_TRUST",
-      "result": "pass",
-      "severity": "major",
-      "target": "geometry/key_areas.geojson",
-      "message": "Three required key-area constraints are present and explicitly provisional.",
-      "suggested_fix": "Replace with official or cleared detailed-area polygons when supplied."
-    },
-    {
-      "check_id": "LAND_USE_TOPOLOGY",
-      "result": "pass",
-      "severity": "info",
-      "target": "geometry/land_use.geojson",
-      "message": "Concept land-use bands are generated by an exact partition of the submitted provisional site ring and carry declared projected areas.",
-      "suggested_fix": "Rerun spatial review after any geometry replacement."
-    },
-    {
-      "check_id": "BILINGUAL_DISPLAY",
-      "result": "pass",
-      "severity": "info",
-      "target": "proposal.md, proposal.en.md, drawings, visual",
-      "message": "Chinese primary display artifacts have English counterparts with manifest translation metadata.",
-      "suggested_fix": "Update both language versions together when content changes."
-    },
-    {
-      "check_id": "VISUAL_STATIC",
-      "result": "pass",
-      "severity": "info",
-      "target": "visual/index.html",
-      "message": "The visual page is static and does not fetch remote data, embed remote media, or submit forms.",
-      "suggested_fix": "Keep the page self-contained when revising."
-    },
-    {
-      "check_id": "METHOD_TRANSLATION",
-      "result": "pass",
-      "severity": "info",
-      "target": "report/narrative.md",
-      "message": "Six international precedents are recorded with their source, a local translation, and an explicit non-copying caution.",
-      "suggested_fix": "Revisit method translations if public site data, user research, or review feedback changes the local constraints."
-    },
-    {
-      "check_id": "COVER_PROVENANCE",
-      "result": "pass",
-      "severity": "info",
-      "target": "assets/jingzhang-commons-cover.png",
-      "message": "The original generated cover is labelled as conceptual atmosphere only; its prompt summary, source record, license, and limitation are documented.",
-      "suggested_fix": "Do not use the cover as spatial evidence or a representation of an approved/built condition."
-    },
-    {
-      "check_id": "LOCAL_SPATIAL_REVIEW",
-      "result": "pass",
-      "severity": "info",
-      "target": "scripts/spatial_review.py",
-      "message": "Repository spatial review passed locally with Shapely, PyProj, and JSON Schema support: provisional-site containment, key-area containment, land-use coverage, and metric recomputation are consistent.",
-      "suggested_fix": "Rerun spatial_review.py after any geometry, metric, or boundary replacement."
-    },
-    {
-      "check_id": "PUBLISH_TARGET",
-      "result": "pass",
-      "severity": "info",
-      "target": "https://github.com/open-city-ai/haidian/pull/1661",
-      "message": "The v0.2 revision is prepared to update the existing aibert2 submission branch and pull request, avoiding a duplicate submission.",
-      "suggested_fix": "After upload, re-run repository validation and verify the PR check status."
+      "target": "professional_review.py",
+      "message": "professional_review: PASS"
     }
   ]
 }
