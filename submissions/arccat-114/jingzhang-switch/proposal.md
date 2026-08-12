@@ -9,7 +9,7 @@ license: "CC-BY-4.0"
 summary: "把京张铁路遗址走廊读作城市的'道岔'：詹天佑一百年前用'人'字形展线换轨上坡，今天AI创新带在同一片场地上换轨转向——科研换轨产业、实验室换轨城市、文化换轨体验。方案以'一岔三场两翼'组织空间：岔心（京张公园换轨枢纽）、始发场（AI原点社区）、加速轨道（众智园）、编组场（大钟寺）、东侧线（中关村科技服务翼）、西侧线（小月河场景赋能翼）；以铁路语汇治理12个AI场景（信号灯红牌暂停、扳道房人工接管、联锁协议可退役）；4处AI朝圣地标对接纪念机制。概念方案，基于临时边界，供专业团队深化。"
 tracks: ["jingzhang-heritage-narrative", "ai-origin-community", "ai-traffic-walkability"]
 scenarios: ["ai-cultural-guide", "ai-traffic-walkability", "enterprise-service-copilot", "robot-delivery-low-speed"]
-iteration: "v1.0"
+iteration: "v1.17"
 ---
 
 # 道岔·SWITCH——百年京张AI创新带城市设计方案
@@ -22,7 +22,7 @@ iteration: "v1.0"
 
 空间结构由此展开为**一岔、三场、两翼**：**岔心**（京张遗址公园中段的换轨枢纽，全带公共体验核心）；**始发场**（北京AI原点社区，0公里桩，策源与开源转化）；**加速轨道**（众智园AI自主创新加速区，全栈创新与AI治理）；**编组场**（大钟寺AI产业集聚区，智能原生业态与交会编组）；**东侧线**（中关村科技服务翼，要素全球化配置与资本赋能）；**西侧线**（小月河场景赋能翼，AI场景与活力城市）。9公里主脊同时是一部"换轨叙事"：南起编组场是交会，中段岔心是换轨，北抵加速轨道是加速——场景密度、公共界面与地标序列都沿这条"钢轨"组织[depth:overall_spatial_structure][data:geometry/land_use.geojson#LU-001]。
 
-方案速览：一，这是一片已建成的城区，本方案不重新规划这座城市，只为它接通断裂的公共界面，并在触媒点上示范更新的做法[depth:retain_renovate_demolish]；二，道岔符号双关历史与未来，命名、Logo、导视共用一套"钢轨—道岔"语汇[depth:overall_spatial_structure]；三，12个AI场景由铁路语汇状态机统一治理，红牌暂停、人工接管、可退役[depth:three_key_area_detailed_design]；四，26个用地单元、约9.7公里绿廊主轴与18项指标由确定性管道生成，官方数据到位即可整包重算[metric:site_area_sqm]；五，首开行动含一次完整的"红牌撤回"演练，4处朝圣地标对接征集活动公布的纪念机制[source:AGENT-TASKBOOK]。**统一声明：本方案为AI生成的开放共创建议，基于临时粗略边界，全部空间内容均为概念建议、参考方案，供专业团队深化研究，不构成政府审定结论；官方红线与控规条件到位后，全部面积、比例与位置关系须整体重算。本声明覆盖全文。**[source:PROVISIONAL-BOUNDARIES][depth:risk_missing_data]
+方案速览：一，这是一片已建成的城区，本方案不重新规划这座城市，只为它接通断裂的公共界面，并在触媒点上示范更新的做法[depth:retain_renovate_demolish]；二，道岔符号双关历史与未来，命名、Logo、导视共用一套"钢轨—道岔"语汇[depth:overall_spatial_structure]；三，12个AI场景由铁路语汇状态机统一治理，红牌暂停、人工接管、可退役[depth:three_key_area_detailed_design]；四，26个用地单元、约9.7公里绿廊主轴与41项指标由确定性管道生成，官方数据到位即可整包重算[metric:site_area_sqm]；五，首开行动含一次完整的"红牌撤回"演练，4处朝圣地标对接征集活动公布的纪念机制[source:AGENT-TASKBOOK]。**统一声明：本方案为AI生成的开放共创建议，基于临时粗略边界，全部空间内容均为概念建议、参考方案，供专业团队深化研究，不构成政府审定结论；官方红线与控规条件到位后，全部面积、比例与位置关系须整体重算。本声明覆盖全文。**[source:PROVISIONAL-BOUNDARIES][depth:risk_missing_data]
 
 ### 证据边界台账（四态）
 
@@ -33,7 +33,7 @@ iteration: "v1.0"
 | 三层范围文字四至与约面积（43.6/11.4/368.4 公顷） | ✅ 已验证 | 公告原文[source:OFFICIAL-ANNOUNCEMENT] |
 | 三处重点区名称与约面积（192.1/104.3/72.0 公顷） | ✅ 已验证 | 公告原文[source:OFFICIAL-ANNOUNCEMENT] |
 | 控规草案空间结构"一带一轴两心多点" | ✅ 已验证 | 官方"一张图读懂"读本[source:HD00-1601-DRAFT-GUIDE] |
-| 京张公园二期开放（9 公里/约53公顷） | ✅ 已验证 | 官方公开报道（2026-08-06）[source:JZ-PARK-PHASE2-OPEN-2026] |
+| 京张公园二期配套工程规模（530900㎡）与竣工字段 | ✅ 已验证 | 官方业绩公示原件（2026-08-05）[source:JZ-PARK-PHASE2-RECORD-2026]；配套项目口径，不等于整体竣工验收 |
 | 京张公园一期开放（约2.5公里） | ✅ 已验证 | 官方公开报道（2023-06）[source:JZ-PARK-PHASE1] |
 | 北京 AI 产业口径（2500企业/212模型/4500亿） | ✅ 已验证 | 官方口径（全市）[source:BJ-AI-INDUSTRY-2026] |
 | 总体设计范围精确多边形 | ⏳ 待官方 | 临时粗略边界复算 11,412,825 m²，与公告约 11.4 km² 差 **0.1125%**——如实披露[metric:provisional_site_area_difference_ratio][assumption:A-BOUNDARY-001] |
@@ -56,6 +56,8 @@ iteration: "v1.0"
 
 ![总体概念与空间证据图](assets/figures/site-overview.png)
 
+**表达与可访问性**：本包以"人可直接理解"为表达终点——正文为双语主文档；`visual/index.html` 提供本地离线的交互式阅读（图层切换、指标动画、双语按钮，资源全部本地打包，无 CDN/远程依赖）；图件均由 GeoJSON 与指标确定性派生并带图注与来源说明；`assets/media/cover.webp` 为自定义封面并登记于 manifest。所有媒体均为解释层，不冒充现场照片、居民意见、官方边界或实测数据；图片与交互均提供文字替代（图注/alt），不自动播放任何内容，生成工具与许可边界登记于版权声明[source:AGENT-TASKBOOK][depth:metrics_recalculation]。
+
 ## 评审问答速览
 
 | 评审会问 | 本方案的回答 | 可核验的东西 |
@@ -71,19 +73,27 @@ iteration: "v1.0"
 
 ## 一、设计依据与资料清单
 
-本方案的任务边界来自征集公告与面向全球智能体的开源征集任务书：公告界定三层范围、三处重点区与成果深度，任务书界定六项智能体任务、三大定位与十条共创原则[source:OFFICIAL-ANNOUNCEMENT][source:AGENT-TASKBOOK]。专业判断依据五部国家层面规范与政策：城市设计统筹遵循《城市设计管理办法》，"已知—待定"边界遵循《城市、镇控制性详细规划编制审批办法》，用地编码采用《国土空间调查、规划、用途管制用地用海分类指南》，AI 场景合规遵循《生成式人工智能服务管理暂行办法》，公共空间无障碍遵循《无障碍环境建设法》[standard:MOHURD-URBAN-DESIGN-MEASURES][standard:MOHURD-CONTROL-DETAILED-PLANNING][standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]；AI 场景合规遵循《生成式人工智能服务管理暂行办法》，公共空间无障碍遵循《无障碍环境建设法》[standard:GENERATIVE-AI-INTERIM-MEASURES][standard:BARRIER-FREE-ENVIRONMENT-LAW]。建筑设计深度规定正式文本尚未入库，本包如实登记为资料缺口，不宣称满足建筑设计深度[standard:MOHURD-ARCH-DESIGN-DEPTH-2016]。
+本方案的任务边界来自征集公告与面向全球智能体的开源征集任务书：公告界定三层范围、三处重点区与成果深度，任务书界定六项智能体任务、三大定位与十条共创原则[source:OFFICIAL-ANNOUNCEMENT][source:AGENT-TASKBOOK]。专业判断依据五部国家层面规范与政策：城市设计统筹遵循《城市设计管理办法》，"已知—待定"边界遵循《城市、镇控制性详细规划编制审批办法》，用地编码采用《国土空间调查、规划、用途管制用地用海分类指南》[standard:MOHURD-URBAN-DESIGN-MEASURES][standard:MOHURD-CONTROL-DETAILED-PLANNING][standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]；AI 场景合规遵循《生成式人工智能服务管理暂行办法》，公共空间无障碍遵循《无障碍环境建设法》[standard:GENERATIVE-AI-INTERIM-MEASURES][standard:BARRIER-FREE-ENVIRONMENT-LAW]。建筑设计深度规定正式文本尚未入库，本包如实登记为资料缺口，不宣称满足建筑设计深度[standard:MOHURD-ARCH-DESIGN-DEPTH-2016]。
 
-资料分三类管理，这条纪律贯穿全文：**正式论据只取自登记表批准的来源**；三区两翼、海淀产业体系等公开政策属于背景资料，承担语境与产业叙事，不支撑红线或承诺性结论[source:THREE-AREAS-WINGS][source:HAIDIAN-1X1]；京张铁路历史资料与临时边界只用于叙事与概念生成，明确标注为背景与临时约束[source:JZ-HERRINGBONE-PAPER][source:PROVISIONAL-BOUNDARIES]。完整机器索引以 `sources.json`、`assumptions.json` 与三份矩阵文件为准，本正文只保留直接相关的证据锚点[depth:risk_missing_data]。
+**控规进程的官方原件（2026）**：据《海淀区2026年政府工作报告》，京张铁路遗址公园沿线街区控规**已通过技术审查**、正推进获批实施[source:HD-GOV-REPORT-2026]；控规草案于2024年12月19日起公示，官方"一张图读懂"读本载明"**一带一轴，两心多点**"空间结构——"沿京张铁路遗址公园形成创新交往带"[source:HD00-1601-DRAFT-EXHIBITION][source:HD00-1601-DRAFT-GUIDE]；2025年2月规自委发布草案公示意见采信通告[source:HD00-1601-CONTROL-NOTICE]。本方案的"一岔三场两翼"与草案同向而非同一：主脊沿同一遗址公园展开，岔心对应"一带"中枢，三场中的大钟寺编组场与原点始发场对应"两心"所在片区；"道岔"命名、信号灯治理与东/西侧线为本方案自有结构，历史侧线在官方结构中没有对应物，主脊北端延至北五环[source:HD00-1601-DRAFT-GUIDE][depth:overall_spatial_structure]。
+
+**公园建设进程的官方原件（2026）**：京张遗址公园二期配套项目，市园林绿化局2026年7月14日政务公开记录完工[source:JZ-PARK-COMPLETION-2026]；北京市公共资源交易服务平台2026年8月5日业绩公示载明该配套项目（监理）工程规模**530900平方米**[metric:reference_park_phase2_scale_sqm]、竣工字段为"是"[source:JZ-PARK-PHASE2-RECORD-2026]——两处记录的记录对象均为二期配套项目，本包据此读作二期规模口径，不据此断言二期整体通过竣工验收，具体完工日期以主管部门公布为准；原件转录随包交付于 `visual/assets/official-records.json`。
+
+**产业底数的官方口径（2026）**：海淀区备案大模型累计122款、全市占比近60%，依托AI原点社区、AI北纬社区与京张铁路遗址公园创新带打造人工智能创新街区（2026政府工作报告口径）[source:HD-GOV-REPORT-2026]；北京备案模型达212款（2026北京两会口径）[source:BJ-AI-MODELS-2026]——两个口径并列存录、不作归一，均无面积分母，本包不作单位面积密度或地区排名判断[source:BJ-AI-INDUSTRY-2026]。
+
+资料分三类管理，这条纪律贯穿全文：**正式论据只取自登记表批准的来源**；三区两翼、海淀产业体系等公开政策属于背景资料，承担语境与产业叙事，不支撑红线或承诺性结论[source:THREE-AREAS-WINGS][source:HAIDIAN-1X1]；京张铁路历史资料与临时边界只用于叙事与概念生成，明确标注为背景与临时约束[source:JZ-HERRINGBONE-PAPER][source:PROVISIONAL-BOUNDARIES]。每条来源的权威等级、用于正文何处、不能支撑什么结论，逐条登记于 `sources.json`（机器可读、可审计）[source:SOURCE-REGISTRY][depth:risk_missing_data]。
 
 ## 二、三层范围工作框架
 
 本方案按公告的三层范围逐级落实：**统筹研究范围**（约43.6平方公里）回答"产业战略与未来城市"问题，工作目标是 AI 创新生态体系、三区两翼协同回路与未来 AI 城市形态研究；**总体设计范围**（约11.4平方公里）回答"城市更新与空间结构"问题，工作目标是控规深度城市设计，形成"一岔三场两翼"总体结构；**重点区域范围**（约368.4公顷）回答"落地与深化"问题，工作目标是对三处重点区开展精细化设计[source:OFFICIAL-ANNOUNCEMENT][depth:three_level_scope_framework]。
 
-三层范围的数据基础是公告文字四至派生的临时粗略边界：总体设计范围约11.41平方公里，与公告"约11.4平方公里"一致，但这不是官方红线，不能用于精确面积复算或审批依据[source:PROVISIONAL-BOUNDARIES][metric:site_area_sqm]。三处重点区同样使用临时粗略矩形（众智园约192.9公顷、原点社区约104.3公顷、大钟寺约72.0公顷，与公告公布面积一致），官方多边形到位后，本包全部面积、比例与位置关系将整包重算[metric:key_area_area_sqm][data:geometry/key_areas.geojson#PROV-KEY-001]。任何涉及精确边界与法定控制的表述，都以"待正式数据补齐"处理[assumption:A-BOUNDARY-001]。
+三层范围的数据基础是公告文字四至派生的临时粗略边界：总体设计范围约11.41平方公里，与公告"约11.4平方公里"一致，但这不是官方红线，不能用于精确面积复算或审批依据[source:PROVISIONAL-BOUNDARIES][metric:site_area_sqm]。三处重点区同样使用临时粗略矩形（众智园约192.9公顷、原点社区约104.3公顷、大钟寺约72.0公顷，与公告公布面积一致），官方多边形到位后，本包全部面积、比例与位置关系将整包重算[metric:key_area_count][data:geometry/key_areas.geojson#PROV-KEY-001]。任何涉及精确边界与法定控制的表述，都以"待正式数据补齐"处理[assumption:A-BOUNDARY-001]。
 
 ![三层范围与空间工作框架图](assets/figures/land-use-structure.png)
 
 ## 三、统筹研究范围产业与未来城市研究
+
+本章的产业判断有官方口径锚点（第一章已登记）；全球案例只取机制、不移植指标政策或企业名单[source:SOURCE-REGISTRY]；区域协同只给可交换的最小对象，不虚构签约与名单。
 
 ### 3.1 总体概念、主名称与命名体系
 
@@ -144,15 +154,19 @@ C（道岔）为主方案。比选的输家不被丢弃、被降级使用：A �
 
 ### 4.1 空间结构：一岔三场两翼
 
-总体结构以**京张绿廊主轴**为纲：一条约9.7公里的慢行绿廊沿场地中轴南北贯通[metric:greenway_length_m]，串联南端编组场（大钟寺）、中段岔心（京张公园换轨枢纽）、北端加速轨道（众智园），东侧线（学院路—中关村方向）与西侧线（小月河方向）在岔心处与主轴交汇，形成"钢轨上的城市"骨架[data:geometry/roads.geojson#ROAD-001][depth:overall_spatial_structure]。用地分区沿绿廊两侧展开：科研用地集中于两场（众智园、原点），商业服务业集中于编组场与岔心东侧，居住与社区服务分布于生活段，公园绿地构成南北贯通的绿廊主体[metric:land_use_area_by_code][data:geometry/land_use.geojson#LU-010]。
+总体结构以**京张绿廊主轴**为纲：一条约9.7公里的慢行绿廊沿场地中轴南北贯通[metric:greenway_length_m]，串联南端编组场（大钟寺）、中段岔心（京张公园换轨枢纽）、北端加速轨道（众智园），东侧线（学院路—中关村方向）与西侧线（小月河方向）在岔心处与主轴交汇，形成"钢轨上的城市"骨架[data:geometry/roads.geojson#ROAD-001][depth:overall_spatial_structure]。用地分区沿绿廊两侧展开：科研用地集中于两场（众智园、原点），商业服务业集中于编组场与岔心东侧，居住与社区服务分布于生活段，公园绿地构成南北贯通的绿廊主体[data:geometry/land_use.geojson#LU-010]。
 
 ### 4.2 城市更新总体框架
 
-本方案坚持"已建成城区"的现实约束：现状建筑基底约占提交范围的17%以内（概念建筑基底约28公顷，仅为三处重点区的示意楼群），更新策略不是推倒重来，而是**接通公共界面、注入AI触媒**——在岔心、站前、绿廊断点等位置植入约15处触媒项目，以公共空间与场景体验带动渐进更新[depth:retain_renovate_demolish][metric:building_footprint_area_sqm]。拆改留逻辑：现状保留为主体，改造集中于沿绿廊的界面建筑，拆除与新建仅出现在岔心周边与三处重点区的触媒地块，且全部标注为概念建议，不作为地块级结论[assumption:A-CONTROLS-003]。
+本方案坚持"已建成城区"的现实约束：现状建筑基底覆盖率按 OSM 概念量测约 17.2%（见第七章），概念更新基底约 28 公顷、仅为三处重点区的示意楼群，更新策略不是推倒重来，而是**接通公共界面、注入AI触媒**——在岔心、站前、绿廊断点等位置植入12项更新项目（见第十章），以公共空间与场景体验带动渐进更新[depth:retain_renovate_demolish][metric:building_footprint_area_sqm]。拆改留逻辑：现状保留为主体，改造集中于沿绿廊的界面建筑，拆除与新建仅出现在岔心周边与三处重点区的触媒地块，且全部标注为概念建议，不作为地块级结论[assumption:A-CONTROLS-003]。
 
 ### 4.3 功能比例与创新指标体系
 
-概念功能比例（以提交边界计）：绿地与开敞空间约42%（绿廊为主体，含公园绿地与广场），科研用地约18%，居住用地约14%，商业服务业约6%，社区服务与配套约7%，教育用地约7%[metric:land_use_area_by_code]。创新指标体系建议沿"策源—加速—交会"三段设置：策源段考核论文转化、开源贡献、初创密度；加速段考核全栈企业数、算力利用率、治理机制数；交会段考核智能原生业态数、场景开放数、公众体验人次；全带考核 AI 朝圣地标到访与全球传播声量[depth:metrics_recalculation][metric:scenario_node_count]。法定控制指标（容积率、建筑高度、建筑密度、绿地率、退线）未在清权资料包中提供，统一登记为待正式数据补齐，本包不宣称任何法定控制值[source:MOHURD-CONTROL-DETAILED-PLANNING][metric:floor_area_ratio]。公开信息可确认：京张铁路遗址公园沿线（人工智能创新街区重点地区）街区控制性详细规划草案已于2024年12月19日至2025年1月19日公示，规自委海淀分局2025年2月8日发布公示采信情况通告[source:HD00-1601-CONTROL-PLAN-NOTICE]——本方案与在编控规"同向而非同一"：主脊沿同一遗址公园展开，但本方案的命名、结构与范围是自身概念，控规法定图则获批公开后本包全部控制相关表述随之重算[assumption:A-CONTROLS-003]。控规草案公示的"一张图读懂"读本显示其空间结构为"一带一轴，两心多点"，其中一带即"京张铁路遗址公园创新交往带"，两心为大钟寺中心与五道口中心[source:HD00-1601-DRAFT-GUIDE]——本方案的岔心与三场正沿这条官方"一带"组织，两处重点区与大钟寺、五道口两心位置相合，属于对该官方结构的空间深化而非冲突[source:HD00-1601-DRAFT-GUIDE]。
+概念功能比例（以提交边界计）：绿地与开敞空间约42%（绿廊为主体，含公园绿地与广场），科研用地约18%，居住用地约14%，商业服务业约6%，社区服务与配套约7%，教育用地约7%[depth:land_use_layout]。创新指标体系建议沿"策源—加速—交会"三段设置：策源段考核论文转化、开源贡献、初创密度；加速段考核全栈企业数、算力利用率、治理机制数；交会段考核智能原生业态数、场景开放数、公众体验人次；全带考核 AI 朝圣地标到访与全球传播声量[depth:metrics_recalculation][metric:scenario_node_count]。法定控制指标（容积率、建筑高度、建筑密度、绿地率、退线）未在清权资料包中提供，统一登记为待正式数据补齐，本包不宣称任何法定控制值[source:MOHURD-CONTROL-DETAILED-PLANNING][metric:floor_area_ratio]。
+
+**但带内已经有官方标尺**：HD00-1603 街区地块《建设项目规划条件》（2025-0074号）载明 HD00-1603-01 为 B4 商业金融用地、用地面积约9.67公顷、容积率2.45[metric:reference_plot_far_01]，HD00-1603-03A 容积率2.2[metric:reference_plot_far_03a][source:HD-PLOT-CONDITIONS]——本方案不为任何地块预设强度，"低基底、开放首层"管的是界面尺度，总量留给逐地块控规。
+
+带内"战略定方向、设计定结构、实施定项目"的传导逻辑与《海淀分区规划（2017年—2035年）》的科学城定位同向[source:HD-DISTRICT-PLAN][depth:development_intensity_controls]。公开信息可确认：京张铁路遗址公园沿线（人工智能创新街区重点地区）街区控制性详细规划草案已于2024年12月19日至2025年1月19日公示，规自委海淀分局2025年2月8日发布公示采信情况通告[source:HD00-1601-CONTROL-NOTICE]——本方案与在编控规"同向而非同一"：主脊沿同一遗址公园展开，但本方案的命名、结构与范围是自身概念，控规法定图则获批公开后本包全部控制相关表述随之重算[assumption:A-CONTROLS-003]。控规草案公示的"一张图读懂"读本显示其空间结构为"一带一轴，两心多点"，其中一带即"京张铁路遗址公园创新交往带"，两心为大钟寺中心与五道口中心[source:HD00-1601-DRAFT-GUIDE]——本方案的岔心与三场正沿这条官方"一带"组织，两处重点区与大钟寺、五道口两心位置相合，属于对该官方结构的空间深化而非冲突[source:HD00-1601-DRAFT-GUIDE]。规自委案例可作控规覆盖本带的直接证据：蓝景丽家地块（东至京包铁路13号线用地西边界、南至北三环西路、总用地约3.95公顷）被官方明确为"京张遗址公园创新交往带的重要节点"[source:LANJINGLIJIA-OFFICIAL-CASE]。带内另有东升科技园三期 0807-604 地块走协议出让程序，其四项控制值经检索确认未公开[source:DONGSHENG-PLOT-NOT-PUBLIC]。
 
 ## 五、重点区域详细设计
 
@@ -172,11 +186,13 @@ C（道岔）为主方案。比选的输家不被丢弃、被降级使用：A �
 
 ### 5.3 大钟寺AI产业集聚区（编组场 MARSHALLING YARD）
 
-定位：智能原生新业态与城市消费交会区。空间结构：以"数字钟塔"为地标（编组场交会意象），沿南端形成"智能原生商业体验—AI产业办公—商务服务综合体"的混合街区[data:geometry/buildings.geojson#BLDG-011][depth:three_key_area_detailed_design]。建筑更新：商业建筑改造为智能原生体验馆（AI零售、无人配送、数字展陈），办公与综合体以新建与改造结合。公共空间：编组场站前广场、南门户口袋公园。AI场景：编组场企业数据沙箱（产业测试）、侧线场景快闪、检票口AI政务服务。实施风险：地处交通节点与商业区，须衔接轨道站点与地下空间管理，概念不涉及工程可行性结论[source:AGENT-TASKBOOK][assumption:A-SCENARIO-005]。
+定位：智能原生新业态与城市消费交会区。空间结构：以"数字钟塔"为地标（编组场交会意象），沿南端形成"智能原生商业体验—AI产业办公—商务服务综合体"的混合街区[data:geometry/buildings.geojson#BLDG-011][depth:three_key_area_detailed_design]。建筑更新：商业建筑改造为智能原生体验馆（AI零售、无人配送、数字展陈），办公与综合体以新建与改造结合。公共空间：编组场站前广场、南门户口袋公园。AI场景：编组场企业数据沙箱（产业测试）、侧线场景快闪、检票口AI政务服务。实施风险：地处交通节点与商业区，须衔接轨道站点与地下空间管理，概念不涉及工程可行性结论[source:AGENT-TASKBOOK][assumption:A-SCENARIO-005]。**站点锚定边界（组织方确认）**：征集组织方已确认三处重点区占位矩形按公告南北顺序与约面积配置、尚未完成站点/道路锚定，其中大钟寺占位矩形质心距大钟寺站约2.26公里、落在北京北站一带[source:KEY-AREA-ANCHOR-GAP-CONFIRMED]——因此本方案不按占位矩形断言与轨道站点的几何关系，编组场设计只给接驳组织原则，站点正式位置待官方锚定关系到位后重算。
 
 ![三处重点区域索引与设计任务图](assets/figures/key-areas.png)
 
 ## 六、AI 创新生态、人才画像与 AI+ 场景
+
+本章的治理主张可以一句话说清：**城市对智能体开放接口，人对智能体保留中断权**[source:AGENT-TASKBOOK][standard:GENERATIVE-AI-INTERIM-MEASURES]——全部场景由信号灯状态机治理，红牌暂停、人工接管、可退役，画像与场景互为检验工具。
 
 ### 6.1 用户画像
 
@@ -220,13 +236,15 @@ C（道岔）为主方案。比选的输家不被丢弃、被降级使用：A �
 
 ## 七、用地、建筑规模与拆改留方案
 
-用地布局以绿廊为轴、两翼展开：提交边界内共26个概念用地单元，完整覆盖边界、无缝隙无重叠[data:geometry/land_use.geojson#LU-001][metric:land_use_area_by_code]。绿地与开敞空间约480公顷（含公园绿地约456公顷、广场约44公顷）构成绿廊主体；科研用地约203公顷集中于众智园与原点；居住用地约161公顷分布于生活段；商业服务业约67公顷集中于大钟寺与岔心东侧[metric:land_use_area_by_code]。建筑基底概念布局约28公顷，集中于三处重点区，全部标注为低置信度概念设计量，不等于法定规模[metric:building_footprint_area_sqm][assumption:A-CONTROLS-003]。拆改留以"保留为主、界面改造、触媒新建"为原则，不作出地块级结论[depth:retain_renovate_demolish]。
+用地布局以绿廊为轴、两翼展开：提交边界内共26个概念用地单元，完整覆盖边界、无缝隙无重叠[data:geometry/land_use.geojson#LU-001][depth:land_use_layout]。公园绿地约480公顷、广场约44公顷构成绿廊主体（合计开敞约525公顷）；科研用地约203公顷集中于众智园与原点；居住用地约161公顷分布于生活段；商业服务业约67公顷集中于大钟寺与岔心东侧[depth:land_use_layout]。建筑基底概念布局约28公顷，集中于三处重点区，全部标注为低置信度概念设计量，不等于法定规模[metric:building_footprint_area_sqm][assumption:A-CONTROLS-003]。拆改留以"保留为主、界面改造、触媒新建"为原则，不作出地块级结论[depth:retain_renovate_demolish]。
 
 该原则有明确政策依据：《北京市城市更新条例》确立"留改拆"并举、以保留利用提升为主[source:BJ-RENEWAL-REGULATION]；住建部《防止大拆大建通知》（建科〔2021〕63号）要求拆除建筑面积不大于现状总建筑面积的20%、拆建比不大于2[source:MOHURD-63-NO-MASS-DEMOLITION]。本方案概念建筑基底约占提交范围2.5%，远低于20%红线，与政策方向同向[metric:building_footprint_area_sqm]。拆改留执行**决策门**：具体建筑进入深化后依次判断历史与公共价值、结构与消防可行性、全生命周期影响、使用者安置与参与、控规与权属合规，然后才进入"保留修缮/功能改造/局部替换/依法更新"四类；当前包不在图上标注任何拆除对象——把缺资料伪装成果断设计，正是本方案反对的那种"未对时的确定感"[source:MOHURD-63-NO-MASS-DEMOLITION][depth:retain_renovate_demolish]。容积率、建筑高度等法定控制值待正式控规数据补齐后复算[metric:floor_area_ratio][source:MOHURD-CONTROL-DETAILED-PLANNING]。
 
+**现状建成底数（OSM 概念量测）**：按 OpenStreetMap 公开建筑轮廓的量级参照，提交边界内基底不小于 400 平方米的建筑约 1,286 处，基底合计约 196 公顷，覆盖率约 17.2%[metric:building_count_existing][metric:building_footprint_existing_sqm][metric:building_coverage_ratio]。建筑轮廓数据来源为 OpenStreetMap 公开数据（ODbL 1.0）[source:OSM-EXISTING-BUILDINGS]。这个数字的意义不在"多"，而在"是什么样的多"：对建成区而言 17.2% 的基底覆盖率并不高，正是高校校园与大院式用地的形态特征——本包据此推断为"占满而未建足"；但建筑轮廓不能判定土地空置、权属状态与可开发容量，该推断待官方现状调查与权属底数核验[assumption:A-CONTROLS-003]。
+
 ## 八、交通、轨道、市政与公共服务设施
 
-交通骨架以"一主轴、六支路"组织：绿廊主轴慢行道约6公里（全带9.7公里概念骨架中的核心段）贯通南北[data:geometry/roads.geojson#ROAD-001][metric:greenway_length_m]，六条横向联通支路衔接东西两翼与轨道站点[data:geometry/roads.geojson#ROAD-002]，站点接驳按"轨道+慢行+低速接驳"组织，活动日由"时刻表"场景统一调度。
+交通骨架以"一主轴、六支路"组织：绿廊主轴慢行道沿场地中轴贯通南北（概念骨架约9.7公里）[data:geometry/roads.geojson#ROAD-001][metric:greenway_length_m]，六条横向联通支路衔接东西两翼与轨道站点[data:geometry/roads.geojson#ROAD-002]，站点接驳按"轨道+慢行+低速接驳"组织，活动日由"时刻表"场景统一调度。
 
 ![交通慢行与蓝绿公共空间复合系统图](assets/figures/mobility-bluegreen.png)
 
@@ -251,7 +269,7 @@ C（道岔）为主方案。比选的输家不被丢弃、被降级使用：A �
 
 ## 九、蓝绿空间、公共空间与城市风貌
 
-蓝绿空间以京张公园概念绿廊为骨架：三段式绿廊（南段活力绿廊、岔心中央公园、北段生态绿廊）共约456公顷[data:geometry/green_space.geojson#GREEN-001][metric:green_ratio]，与清河、小月河蓝绿系统衔接（小月河概念示意线见 constraints 图层，精确蓝线待官方数据）[data:geometry/constraints.geojson#CON-002]。官方口径可作叙事锚点：京张铁路遗址公共空间改造提升工程（二期）已于2026年8月6日建成开放，串联西直门至北五环形成总长9公里的文化带状绿廊、总用地约53公顷，分南段社区活力段与北段自然休闲段，并建成"三道一绿"慢行系统[source:JZ-PARK-PHASE2-OPEN-2026]——本方案概念绿廊与该官方绿廊同向展开，本包概念主轴长度（约9.7公里，临时边界内几何复算）与官方全线口径（9公里）并存登记、不作同一值处理[metric:greenway_length_m]。
+蓝绿空间以京张公园概念绿廊为骨架：三段式绿廊（南段活力绿廊、岔心中央公园、北段生态绿廊）共约480公顷[data:geometry/green_space.geojson#GREEN-001][metric:green_ratio]，与清河、小月河蓝绿系统衔接（小月河概念示意线见 constraints 图层，精确蓝线待官方数据）[data:geometry/constraints.geojson#CON-002]。官方口径可作叙事锚点：京张铁路遗址公共空间改造提升工程（二期）已于2026年8月6日建成开放，串联西直门至北五环形成总长9公里的文化带状绿廊、总用地约53公顷，分南段社区活力段与北段自然休闲段，并建成"三道一绿"慢行系统[source:JZ-PARK-PHASE2-OPEN-2026]——本方案概念绿廊与该官方绿廊同向展开，本包概念主轴长度（约9.7公里，临时边界内几何复算）与官方全线口径（9公里）并存登记、不作同一值处理[metric:greenway_length_m]。
 
 公园建设历程同样印证"轻量介入"策略：一期（知春路至清华东路段，约2.5公里）于2023年6月开放，保留老铁轨、原址复刻火车转盘与货运联络线铁轨，贯彻"最小干预原则"[source:JZ-PARK-PHASE1]——本方案的绿廊节点激活与组件植入延续这一原则[source:JZ-PARK-PHASE1]。公共空间体系为"1+3+N"：1处岔心换轨广场（全带公共体验核心）、3处站前广场（始发场、编组场、信号广场）[data:geometry/public_space.geojson#PUBLIC-002]、N处沿线口袋公园与慢行驿站[depth:blue_green_public_space]。
 
@@ -266,6 +284,8 @@ C（道岔）为主方案。比选的输家不被丢弃、被降级使用：A �
 城市风貌以"钢轨—道岔"为母题：建筑体量沿绿廊由南向北渐升（编组场低层商业→岔心公共建筑→加速轨道产业楼群），风貌控制色为钢轨灰蓝+信号三色点缀，屋顶与立面鼓励"轨道式"线脚语言；风貌控制为概念建议，法定建筑高度待控规确认[source:MOHURD-URBAN-DESIGN-MEASURES][assumption:A-CONTROLS-003]。
 
 ## 十、更新项目清单、实施政策与分期计划
+
+本章的全部活动、招商、资金、政策与运营安排均为**概念建议或深化方向**，不表述为已确定的政府安排；拆改留以决策门给条件而非给结论[source:AGENT-TASKBOOK][depth:renewal_project_list]。
 
 更新项目清单（12项，概念建议）：①岔心换轨广场与中央公园；②编组场站前广场与智能原生体验馆改造；③始发场0公里广场与开源孵化楼改造；④加速轨道信号广场与治理实验室新建；⑤绿廊南段活力段贯通；⑥绿廊北段生态段贯通；⑦原点人才公寓新建；⑧大钟寺商务服务综合体改造；⑨机车库教育实验室；⑩开发者荣耀墙；⑪历史侧线AR导览系统；⑫站点接驳与慢行断点整治[data:geometry/phasing.geojson#PHASE-001][depth:renewal_project_list]。实施政策建议：场景开放许可制（联锁协议）、开发者社区共建、公共空间先行、数据沙箱试点、国际活动申报机制——全部为政策机制建议，不构成政府承诺[source:AGENT-TASKBOOK][assumption:A-SCENARIO-005]。
 
@@ -302,7 +322,7 @@ C（道岔）为主方案。比选的输家不被丢弃、被降级使用：A �
 
 ## 十一、指标体系、面积复算与合规矩阵
 
-核心指标的设计含义：绿地比例约40%（概念）支撑人才与居民的生活品质，是"都市AI生活体验带"的空间底色[metric:green_ratio]；公共空间比例约1%（概念节点式）强调"少而精"的节点触媒，以岔心与站前广场承载交往与仪式[depth:metrics_recalculation]；科研用地约18%支撑"策源—加速"产业供给，直接对应五大功能中的全栈创新体系[metric:land_use_area_by_code]；建筑基底约28公顷仅为概念示意，回应"触媒更新而非推倒重来"的实施逻辑[metric:building_footprint_area_sqm]。
+核心指标的设计含义：绿地比例约40%（概念）支撑人才与居民的生活品质，是"都市AI生活体验带"的空间底色[metric:green_ratio]；公共空间比例约1%（概念节点式）强调"少而精"的节点触媒，以岔心与站前广场承载交往与仪式[depth:metrics_recalculation]；科研用地约18%支撑"策源—加速"产业供给，直接对应五大功能中的全栈创新体系；建筑基底约28公顷仅为概念示意，回应"触媒更新而非推倒重来"的实施逻辑[metric:building_footprint_area_sqm]。
 
 ![核心指标复算与证据链图](assets/figures/metrics-evidence.png)
 
@@ -312,7 +332,9 @@ C（道岔）为主方案。比选的输家不被丢弃、被降级使用：A �
 
 资料合法性：全部论据来自公开或清权来源，登记于 sources.json；京张铁路历史与全球案例为背景资料，不支撑规划控制结论[source:SOURCE-REGISTRY]。
 
-**风险矩阵（概念，逐项风险+缓解）**：
+**风险矩阵（概念，逐项风险+缓解）**：机器可读登记册见 `risk.json`（八类风险维度的原生/缓解后等级；等级为概念自评，非实测）。八类风险维度等级雷达：
+
+![八类风险维度原生/缓解后等级雷达图](assets/figures/risk-radar.png)
 
 - ① 数据隐私风险：场景不依赖个人数据，测试场景限定脱敏与沙箱；缓解：数据最小化+独立审计[standard:GENERATIVE-AI-INTERIM-MEASURES]
 - ② 文保与遗产风险：京张故线与历史站房；缓解：文保避让+历史资料清权[source:AGENT-TASKBOOK]
