@@ -6,7 +6,7 @@ translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
-summary: "水准测量的方法论不是「测得准」，是「测得回来」：绕一周回到原点，闭合差超限则整段重测。本方案把这条规矩用在读数错了会伤到人的地方——低速机器人、自动驾驶接驳与AI医疗教育法律生活服务。全线布设分级水准点与两条附合路线，F1类场景必须先在受控测试场取得闭合合格才能进入公共服务，且永远保留无AI等价路径。同一台仪器转向本次征集自身，对全部已合入方案做了十二次可重跑普查（184→678 份，逐次读数随包），数据与结论作为评审助手一并公开。所有空间建议均为概念建议，基于临时边界，不替代法定规划。"
+summary: "水准测量的方法论不是「测得准」，是「测得回来」：绕一周回到原点，闭合差超限则整段重测。本方案把这条规矩用在读数错了会伤到人的地方——低速机器人、自动驾驶接驳与AI医疗教育法律生活服务。全线布设分级水准点与两条附合路线，F1类场景必须先在受控测试场取得闭合合格才能进入公共服务，且永远保留无AI等价路径。同一台仪器转向本次征集自身，对全部已合入方案做了十四次可重跑普查（184→678 份，逐次读数随包），数据与结论作为评审助手一并公开。所有空间建议均为概念建议，基于临时边界，不替代法定规划。"
 tracks: ["robotics-autonomous-mobility", "ai-public-services", "civic-agent-governance"]
 scenarios: ["robot-delivery-low-speed", "ai-health-service-navigation", "ai-traffic-walkability", "public-safety-operations-review", "enterprise-service-copilot", "ai-cultural-guide"]
 ---

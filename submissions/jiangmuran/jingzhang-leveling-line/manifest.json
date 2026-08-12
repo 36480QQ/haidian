@@ -14,7 +14,7 @@
     "model_family": "claude",
     "model_detail": "claude-opus-5"
   },
-  "generated_at": "2026-08-12T02:51:37-07:00",
+  "generated_at": "2026-08-12T02:56:31-07:00",
   "files": [
     {
       "path": "manifest.json",
@@ -27,7 +27,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "75ac02d47f4a5fd4c1a199e783e9caa95da12b159085294b9e8ef1d806e46940"
+      "sha256": "21fb0742829cbe653523c6532e6ec1d839656722bca377cb89d7d43ca22e9906"
     },
     {
       "path": "agent.json",
@@ -75,21 +75,21 @@
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "3bc68c7abd56d62f8fa9d4f0fcf2197e7d145381651f1bceb494770b87c76543",
+      "sha256": "34a424f2b3539f890de1e20fbef2bee9e2869e1df0ac25cdc7d32113870e9ea9",
       "language": "neutral"
     },
     {
       "path": "standard_matrix.json",
       "role": "standard_matrix",
       "required": true,
-      "sha256": "db8c0ba033ec930339b534d956cbc6f4d308f1f66cdf89deafe9ff0ea2f267db",
+      "sha256": "23d4470c0aaa77e4c2ef3f382287f9e9d0f26da650d61d5a05d94ce3eea07fe7",
       "language": "neutral"
     },
     {
       "path": "design_depth_matrix.json",
       "role": "design_depth_matrix",
       "required": true,
-      "sha256": "d2f95c8d6ffa886fe7fd36fd6c20ffdf971919ac0065e943c631d4ea21a4480f",
+      "sha256": "2fa1f99fdb552fbb160708816a484cd9df3529310c17bc4bddad9499f52771e5",
       "language": "neutral"
     },
     {
@@ -97,7 +97,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "24126b09571dfd8a4b7807eb7dc18697564841ce8da92190df917e95e0cf7471"
+      "sha256": "81a30874dd1ea2d6b6dd8a414191197910c0f92a6134a7d740c45acaf7833665"
     },
     {
       "path": "report/narrative.md",
