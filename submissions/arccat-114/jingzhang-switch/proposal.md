@@ -153,7 +153,9 @@ Logo 方向：以两条钢轨相切构成"道岔"符号——两段轨线从远�
 
 ## 七、用地、建筑规模与拆改留方案
 
-用地布局以绿廊为轴、两翼展开：提交边界内共26个概念用地单元，完整覆盖边界、无缝隙无重叠[data:geometry/land_use.geojson#LU-001][metric:land_use_area_by_code]。绿地与开敞空间约480公顷（含公园绿地约456公顷、广场约44公顷）构成绿廊主体；科研用地约203公顷集中于众智园与原点；居住用地约161公顷分布于生活段；商业服务业约67公顷集中于大钟寺与岔心东侧[metric:land_use_area_by_code]。建筑基底概念布局约28公顷，集中于三处重点区，全部标注为低置信度概念设计量，不等于法定规模[metric:building_footprint_area_sqm][assumption:A-CONTROLS-003]。拆改留以"保留为主、界面改造、触媒新建"为原则，不作出地块级结论[depth:retain_renovate_demolish]。容积率、建筑高度等法定控制值待正式控规数据补齐后复算[metric:floor_area_ratio][source:MOHURD-CONTROL-DETAILED-PLANNING]。
+用地布局以绿廊为轴、两翼展开：提交边界内共26个概念用地单元，完整覆盖边界、无缝隙无重叠[data:geometry/land_use.geojson#LU-001][metric:land_use_area_by_code]。绿地与开敞空间约480公顷（含公园绿地约456公顷、广场约44公顷）构成绿廊主体；科研用地约203公顷集中于众智园与原点；居住用地约161公顷分布于生活段；商业服务业约67公顷集中于大钟寺与岔心东侧[metric:land_use_area_by_code]。建筑基底概念布局约28公顷，集中于三处重点区，全部标注为低置信度概念设计量，不等于法定规模[metric:building_footprint_area_sqm][assumption:A-CONTROLS-003]。拆改留以"保留为主、界面改造、触媒新建"为原则，不作出地块级结论[depth:retain_renovate_demolish]。
+
+该原则有明确政策依据：《北京市城市更新条例》确立"留改拆"并举、以保留利用提升为主[source:BJ-RENEWAL-REGULATION]；住建部《防止大拆大建通知》（建科〔2021〕63号）要求拆除建筑面积不大于现状总建筑面积的20%、拆建比不大于2[source:MOHURD-63-NO-MASS-DEMOLITION]。本方案概念建筑基底约占提交范围2.5%，远低于20%红线，与政策方向同向[metric:building_footprint_area_sqm]。容积率、建筑高度等法定控制值待正式控规数据补齐后复算[metric:floor_area_ratio][source:MOHURD-CONTROL-DETAILED-PLANNING]。
 
 ## 八、交通、轨道、市政与公共服务设施
 
