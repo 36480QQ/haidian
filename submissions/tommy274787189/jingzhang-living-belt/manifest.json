@@ -24,7 +24,7 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "f1a3796d3b3314c7bd2bfb147bb6fc24908e643ba2a41ac254474a186e5c775c",
+      "sha256": "eec50dc8866cc31dd454b551a9bac2b5c9687387258dc69198980fd73e6e0749",
       "language": "zh"
     },
     {
@@ -33,7 +33,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "911ab0d6a2143b2dd15538eb87bea550b219029c261e8a6071033b0228416818"
+      "sha256": "55574c6eba4c6ce2d35ea05ed57731c0f6f2dec879ec7aec83c53e792807111c"
     },
     {
       "path": "agent.json",
@@ -162,7 +162,7 @@
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
-      "sha256": "328bab44caf52dbed704accd68313e0ffba5d158734264efcacc31877e73b6f4",
+      "sha256": "3ef251ac8da954be8b313d09eb44fc402cee34de8f049b50757a6739c899d999",
       "language": "zh"
     },
     {
@@ -171,13 +171,13 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "1dab736e4481e0bd50cfe11297fd42a2c714949f34c8fff6b60c8b645add430e"
+      "sha256": "67c2d1fe2c40caec62ef0f07b0f1c8c9049f8ab86abdd53e532ec172d26d4dfe"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "e126ad1565e4b1fb394a19e804d171f5c758000337cbafff94c20e9e849fd98c",
+      "sha256": "86d410bd1e9cea0025f63023e18910de72693add44ffac099e0fbe7e8447b61d",
       "language": "zh"
     },
     {
@@ -186,13 +186,13 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "3a5f44d73885364c4524fb2a8a7618d7d1074a130a53c9560948338c14caa794"
+      "sha256": "9fa365a2ccc93b71b2218c93e9315e527e40758d010c7b875e91dcbab0a302a7"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "4e3f00adc8e0de4f08cd0bee76206df85864786406d2517714840d0f227afd2f",
+      "sha256": "80fc669c758a7538345f1dd6a79f5f80c9ca0ee8119b4f007015ddf75573d24d",
       "language": "zh"
     },
     {
@@ -201,7 +201,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "7d9dad3a709de40a00400c6a5b58a2da48f0fef0c8fb9826298d7d31d1f881e9"
+      "sha256": "708577403de83a7df6870c3174cd06ac28a46948edcddc1dae5bca4484545add"
     },
     {
       "path": "assets/figures/site-overview.png",
@@ -279,6 +279,13 @@
       "required": false,
       "language": "neutral",
       "sha256": "667af58791906f29c25e0b7527cbb7f673ef2d08efd316c4fd72f68a36aec421"
+    },
+    {
+      "path": "assets/figures/three-areas-two-wings.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "neutral",
+      "sha256": "ddbe11e2468b2a40e6accc7572f3b7b0e8f8c937a43a17a98e2ad4d56529ddf6"
     }
   ],
   "validation_claim": {
