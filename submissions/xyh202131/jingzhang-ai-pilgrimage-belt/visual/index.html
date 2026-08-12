@@ -170,7 +170,7 @@
     <main>
       <nav>
         <a href="#twin-track">双轨总纲</a><a href="#non-ai-first">非 AI 优先</a><a href="#maintenance">维护闭环</a><a href="#metabolism">城市代谢</a><a href="#failure-governance">失败治理</a><a href="#climate-resilience">气候韧性</a><a href="#first-test">首测协议</a
-        ><a href="#baseline">现实基线<a href="#time-museum">时间博物馆</a></a><a href="#overview">总体结构</a
+        ><a href="#baseline">现实基线</a><a href="#time-museum">时间博物馆</a><a href="#mission-economy">公共任务经济</a><a href="#overview">总体结构</a
         ><a href="#system">后台 JZ-AIOS</a
         ><a href="#scope">三层范围</a><a href="#areas">重点区域</a
         ><a href="#scenario">AI 场景</a><a href="#mobility">交通蓝绿</a
@@ -376,6 +376,35 @@
           </tbody>
         </table>
         <p>机器可审计入口：<a href="assets/century-time-museum-contract.json"><code>visual/assets/century-time-museum-contract.json</code></a>。geometry、现有 SCENE/JZ/T 编号、G0 和 <code>not_fully_cleared</code> 均不变。</p>
+      </section>
+
+      <section id="mission-economy" aria-labelledby="mission-economy-title">
+        <h2 id="mission-economy-title">公共任务经济：问题驱动的产业与人才转化</h2>
+        <div class="notice">
+          <strong>验证通过 ≠ 采购或部署授权：</strong>
+          不以虚构企业名单、投资额或招商承诺证明产业价值；以真实公共问题、可复测任务、专业服务、独立复测和退出机制连接企业、高校、社区与城市部门；原型采购、有限试用、采购与常态部署逐级独立书面授权。
+        </div>
+        <figure>
+          <img src="../assets/figures/industry-public-value-state.png" alt="产业—公共价值状态图：公共任务生命周期、四轴分离、授权阶梯与公共收益回流" />
+          <figcaption>G0 概念机制：任务 0 · 小团队 0 · 复测 0 · 书面确认 0；图件不声称企业、采购、投资、伙伴或已部署服务。</figcaption>
+        </figure>
+        <div class="grid">
+          <article class="card"><b>公共任务生命周期</b><p>问题发布→问题质量门→小团队公平准入→离线原型→独立复测门→结果回流→退出或退役；任何一步失败即 fail-closed，停止/退出不阻断普通公共路径与人工服务。</p></article>
+          <article class="card"><b>准入与退出</b><p>无账号门槛、不要求预付合规成本、同一任务存在人工或非 AI 路径；小团队与大机构同池竞争；退出记录不进入招聘或人才排名。</p></article>
+          <article class="card"><b>采购与知识产权边界</b><p>原型采购≠采购授权≠部署授权；知识产权边界保持 not_cleared，独立逐文件审计（当前 0）完成前不写成已解决。</p></article>
+          <article class="card"><b>公共收益回流</b><p>任务结果、失败归档与独立复测结论以可理解形式回到沿线普通使用者，不依赖投资额；反馈只作下一轮问题输入。</p></article>
+        </div>
+        <table>
+          <thead><tr><th>决定指标</th><th>设计期状态</th><th>现实核验方式</th><th>禁止误读</th></tr></thead>
+          <tbody>
+            <tr><td>公共任务可验证度</td><td>unknown</td><td>现场观察 + 独立复测</td><td>机器 PASS ≠ 现实成效</td></tr>
+            <tr><td>小团队参与比例</td><td>unknown</td><td>现场观察 + 责任记录</td><td>设计覆盖 ≠ 现实参与</td></tr>
+            <tr><td>独立复测覆盖</td><td>unknown</td><td>独立复测记录</td><td>证据门通过 ≠ 独立复测完成</td></tr>
+            <tr><td>任务退出率</td><td>0</td><td>退出事件记录</td><td>机制定义 ≠ 现实退出事件</td></tr>
+            <tr><td>机构书面确认状态</td><td>0</td><td>书面确认文件</td><td>建议角色 ≠ 已承诺合作</td></tr>
+          </tbody>
+        </table>
+        <p>机器可审计入口：<a href="assets/mission-economy-contract.json"><code>visual/assets/mission-economy-contract.json</code></a>。责任主体均为角色待确认；geometry、现有 SCENE/JZ/T 编号、G0 和 <code>not_fully_cleared</code> 均不变。</p>
       </section>
 
       <section id="review-path">
@@ -946,7 +975,7 @@
             <p>项任务映射到特定章节、图层、指标、来源、假设与检查</p>
           </article>
           <article class="card">
-            <strong>29</strong>
+            <strong>35</strong>
             <p>条来源分别记录允许与禁止用途</p>
           </article>
           <article class="card">
@@ -1076,7 +1105,7 @@
         <h2>来源—资产—权利证据</h2>
         <div class="grid">
           <article class="card">
-            <strong>29 / 29</strong>
+            <strong>35 / 35</strong>
             <p>
               来源记录与 schema
               化权利证据一一对应；缺失发布日期、原格式、摘要或条款时明确记为
@@ -1123,7 +1152,7 @@
       <section id="sources">
         <h2>来源与假设</h2>
         <p>
-          <code>sources.json</code> 登记 29 条来源及用途边界，并以稳定
+          <code>sources.json</code> 登记 35 条来源及用途边界，并以稳定
           <code>rights_evidence_id</code> 回链权利证据。4 条公开网页证据记录包外
           Firecrawl 抓取摘要，15
           条网页没有内容摘要；抓取缓存均不进入投稿包。<code

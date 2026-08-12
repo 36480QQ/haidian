@@ -86,7 +86,7 @@ The evidence is organized into four tiers, each limited to a role consistent wit
 
 ### Evidence Is Not a One-Time Snapshot: Expiry Must Propagate Downstream
 
-`sources.json` records 29 sources and their access dates, but access on the same date does not mean that content remains valid indefinitely, nor does it reveal later revisions, replacement, unavailability, or the substitution of an official boundary for a provisional one. The new `visual/assets/evidence-freshness-policy.json` groups sources into project materials, provisional spatial data, urban context, policies and standards, and case references, then specifies review triggers, recommended maximum periods without re-verification, responsible roles, and invalidation actions. When a source becomes `review_due`, `superseded`, or `unavailable`, affected claims, matrix items, and scenario gate levels must be downgraded or frozen accordingly. The package currently confirms access dates only; it does not claim that a refresh audit with content summaries has been completed, so the completed-refresh count remains 0. Provisional spatial data remains `provisional_only` regardless of how recently it was accessed [data:visual/assets/evidence-freshness-policy.json#FRESH-01] [data:visual/assets/evidence-freshness-policy.json#FRESH-02].
+`sources.json` records 35 sources and their access dates, but access on the same date does not mean that content remains valid indefinitely, nor does it reveal later revisions, replacement, unavailability, or the substitution of an official boundary for a provisional one. `visual/assets/evidence-freshness-policy.json` groups sources into project materials, provisional spatial data, urban context, policies and standards, case references, and the Round 8–9 package-authored concept materials, then specifies review triggers, recommended maximum periods without re-verification, responsible roles, and invalidation actions. When a source becomes `review_due`, `superseded`, or `unavailable`, affected claims, matrix items, and scenario gate levels must be downgraded or frozen accordingly. The package currently confirms access dates only; it does not claim that a refresh audit with content summaries has been completed, so the completed-refresh count remains 0. Provisional spatial data remains `provisional_only` regardless of how recently it was accessed [data:visual/assets/evidence-freshness-policy.json#FRESH-01] [data:visual/assets/evidence-freshness-policy.json#FRESH-02] [data:visual/assets/evidence-freshness-policy.json#FRESH-06].
 
 The professional response separates standards by question instead of stacking identifiers behind one conclusion:
 
@@ -546,7 +546,7 @@ All area ratios using the provisional boundary as their denominator have `low` c
 - AI and data risk: Bias, hallucination, privacy leakage, unauthorized automation, and vendor lock-in are controlled through data minimization, retention at source, logging, human responsibility, retesting, expiry, and retirement. Automated enforcement, diagnosis, and substitution for formal approval are prohibited.
 - Safety and resilience risk: Robot, vehicle, and equipment testing occurs only within authorized areas. Physical emergency stops, on-site safety officers, offline human operation, and L0/L1/L2 degradation must remain available. Energy and recovery indicators remain unknown until measured.
 - Cultural and historical risk: Historical facts, people, artifacts, and engineering materials require verification through official, archival, or rights-cleared sources. AI-generated content receives explicit and metadata labels; disputed content can be corrected, removed, and traced [assumption:A-CULTURE-CONTENT-006].
-- Copyright and branding risk: The final file set contains 89 manifest paths, including 88 non-manifest content files; its 89 file-level asset records and 29 source-evidence records prove disclosure and link closure only. Coverage completeness becomes valid only after the manifest and rights ledger are refreshed from the final Git blobs and pass validation. Completed independent file-level clearance audits remain at 0 and the overall status is `not_fully_cleared`. `submission-use-rights-matrix.json` now records the current decision for announcement clause 8.1, repository review, organizer project use, entrant external display, cross-project reuse, and third-party components, but the package does not prove that the formal announcement terms apply identically to this GitHub open Agent call. The complete `COMMUNITY-DISPLAY-ONLY` terms, written consent, OSM ODbL obligations, PDF fonts, Node.js runtime and generation-tool terms, and logo/landmark trademark status still require review; the package must not claim full clearance [data:visual/assets/rights-clearance-ledger.json#RIGHTS-01] [data:visual/assets/submission-use-rights-matrix.json#JZ-SUBMISSION-USE-RIGHTS-V1].
+- Copyright and branding risk: The final file set contains 99 manifest paths, including 98 non-manifest content files; its 99 file-level asset records and 35 source-evidence records prove disclosure and link closure only. Coverage completeness becomes valid only after the manifest and rights ledger are refreshed from the final Git blobs and pass validation. Completed independent file-level clearance audits remain at 0 and the overall status is `not_fully_cleared`. `submission-use-rights-matrix.json` now records the current decision for announcement clause 8.1, repository review, organizer project use, entrant external display, cross-project reuse, and third-party components, but the package does not prove that the formal announcement terms apply identically to this GitHub open Agent call. The complete `COMMUNITY-DISPLAY-ONLY` terms, written consent, OSM ODbL obligations, PDF fonts, Node.js runtime and generation-tool terms, and logo/landmark trademark status still require review; the package must not claim full clearance [data:visual/assets/rights-clearance-ledger.json#RIGHTS-01] [data:visual/assets/submission-use-rights-matrix.json#JZ-SUBMISSION-USE-RIGHTS-V1].
 - External-coordination risk: Future Science City, Huairou Science City, the Beijing Economic-Technological Development Area, other innovation districts, and Beijing–Tianjin–Hebei are only optional retest roles. Without written confirmation, none may be described as a partner, investor, or committed implementation party [assumption:A-EXTERNAL-COLLAB-005].
 - Operations and equity risk: Event popularity cannot replace resident satisfaction, accessibility, fairness, or complaint closure. Recognition for contributions must not be used for traffic rankings, employment screening, or administrative evaluation.
 - Tool and evidence risk: Machine checks verify only structure, topology, references, and consistency. They do not replace professional judgment in planning, architecture, transport, municipal engineering, landscape, ecology, fire safety, railway safety, data security, accessibility, community engagement, or law [depth:risk_missing_data].
@@ -620,11 +620,76 @@ Ten cultural metrics remain unknown or 0; field coverage must not be passed off 
 
 `century-timeline.{svg,png}` bilingual time figure passed figure QA: A twin-track atlas / B source-grade table / C dispute-correction flow, all annotated G0 conceptual status and provisional geometry boundary.
 
+![Century-Time Museum: twin-track time atlas, typed sources, dispute correction, and screen-free node chain (G0 concept; archives, oral history, field tests, and confirmed duties all 0)](assets/figures/century-timeline.en.png)
+
 ### Inheritance and Freeze
 
 Geometry, existing SCENE/JZ/T IDs, eight projects, all G0 status, provisional boundaries, and `not_fully_cleared` remain unchanged. Official archives, confirmed accountable operators, independent retests, approval, or operating results remain 0.
 
 [back to top](#ai-pilgrimage-belt)
+## Mission Economy: Problem-Led Industry and Talent Translation
+
+> This section is the Round 9 (JZ-FUTURE-08) industry-and-talent mechanism increment, inheriting prior public-rights, evidence-type, failure-writeback and century-time-museum contracts; it creates no duplicate "validation-ticket" brand and invents no enterprise, investment, procurement or partnership.
+
+### Strategic Proposition
+
+Industry value is not proven by invented enterprise lists, investment amounts or investment-attraction promises; it is organized around real public problems, retestable tasks, professional services, independent retests and exit mechanisms. **Passing a test is not a procurement or deployment authorization**: file checks, technical tests, evidence gates, limited trials, procurement and normal deployment each record their own scope, responsibility, validity period and non-inferable items.
+
+### Mechanism Contract and Four-Axis Separation
+
+This round adds `mission-economy-contract.json` (JZ-MISSION-ECONOMY-G0-V1), organizing the following:
+
+- **Public-task lifecycle**: problem publication → problem-quality gate → fair small-team entry → offline prototyping → independent-retest gate → result reflow → exit or retirement; any step failing closes fail-closed, and stopping or exiting never interrupts ordinary public paths and manual services
+- **Entry and exit**: no account barrier, no upfront compliance cost, and a manual or non-AI path for the same task; small teams compete in the same pool as larger institutions; exit records are not used for hiring or talent ranking
+- **Procurement and intellectual-property boundary**: prototype procurement ≠ procurement authorization ≠ deployment authorization; prototype, limited trial, procurement and normal deployment each require separate written authorization; IP boundaries remain not_cleared and are not written as resolved
+- **Public-benefit reflow**: task results, failure archives and independent-retest conclusions return to ordinary corridor users in understandable form, independent of investment amounts; feedback only feeds the next round of problem definition
+- **Four-axis separation**: runtime state (ordinary/validation/failure/recovery), maturity (G0–G3), authorization scope and service state are recorded separately; one status field must not mean test, authorization, procurement and deployment at once
+
+### Metrics and Acceptance
+
+All ten decision metrics remain unknown or 0; field coverage, concept counts or machine PASS must not be presented as real-world outcomes:
+
+| Metric | Design status | Denominator | Proof ceiling |
+|---|---|---|---|
+| Public-task verifiability rate | unknown | same task, people, period, space baseline | field observation + independent retest |
+| Small-team participation ratio | unknown | same task, people, period, space baseline | field observation + responsibility records |
+| Independent-retest coverage | unknown | tasks passing the evidence gate | independent-retest records |
+| Task exit rate | 0 | tasks entering the entry queue | exit-event records |
+| Professional-service accessibility | unknown | users needing professional services | field or controlled test |
+| Public-benefit delivery status | unknown | result-reflow claims | delivery responsibility records |
+| University-course real participation | unknown (0 written confirmations) | university courses claimed | written confirmation files |
+| IP dispute count | 0 | task and prototype items | dispute-handling records |
+| Failed-project publication rate | unknown | exited or retired tasks | role-confirmed definition |
+| Institution written-confirmation status | 0 | referenced external institutions | written confirmation files |
+
+### Differentiated Expression in the Three Key Areas
+
+| Key area | Prototype role | Mission-economy expression |
+|---|---|---|
+| Zhongzhi Garden VERIFY | parallel validation court | independent-retest gate and equipment isolation carry task validation, no normal deployment |
+| Origin Community CO-CREATE | one street, two courts, four nodes | public-benefit reflow board carries screen-free feedback without collecting extra personal data |
+| Dazhongsi PUBLISH | four-quadrant walking + one hall one stage | the hall is the task-publication and manual-service node, not an AI-mandatory entrance |
+
+### Risk Rehearsals, Stop and Recovery
+
+- **R01 Tasks monopolized by large enterprises**: fail-closed immediately; activity heat and sunk cost cannot override stop conditions; revise only after ordinary paths and manual services are restored
+- **R02 Public problems reduced to investment-attraction packaging**: never beautify figures to hide the issue; after stopping, verify spatial or service damage and record responsible roles and materials requiring external confirmation
+- **R05 Unclear intellectual-property boundary**: stop using uncleared assets and restore ordinary paths; do not write IP as resolved before independent file-level audits (currently 0)
+- **R08 External institutions written as committed**: withdraw unconfirmed statements; until 0 written confirmations exist, enterprises, universities and service providers remain suggested or pending-confirmation roles
+
+### Figure Delivery
+
+The bilingual `industry-public-value-state.{svg,png}` industry–public value state map passed figure QA: A public-task lifecycle / B four-axis separation / C authorization ladder / D public-benefit reflow, all marked as G0 conceptual state, 0 external written confirmations and provisional geometry boundary.
+
+![Mission economy: problem-quality gate, four-axis separation, authorization ladder, and public-benefit reflow (G0 concept; tasks, retests, procurement, deployment, and written confirmations all 0)](assets/figures/industry-public-value-state.en.png)
+
+### Inheritance and Freeze
+
+Geometry, existing SCENE/JZ/T IDs, the eight projects, all G0 gates, provisional boundaries and `not_fully_cleared` are unchanged. Responsible roles (publication, entry, retest, stop, recovery) all remain roles-to-be-confirmed; real tasks, small teams, retests, exit events and written confirmations are all 0.
+
+[back to top](#ai-pilgrimage-belt)
+
+
 
 
 ## References

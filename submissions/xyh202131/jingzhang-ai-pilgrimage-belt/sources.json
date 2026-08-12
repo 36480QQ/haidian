@@ -906,7 +906,7 @@
       "allowable_uses": [
         "Repository review",
         "Peer assessment",
-        "Internal consistency checks"
+        "Internal package consistency checks"
       ],
       "restrictions": [
         "Cannot claim real archive access",
@@ -918,7 +918,7 @@
         "Oral history consent template not yet distributed",
         "Independent historical review not yet conducted"
       ],
-      "license": "CC-BY-NC-SA-4.0 as per repository norms; cultural content rights require separate audit"
+      "license": "No complete reusable license terms are retained in the package; repository review only pending maintainer terms and independent rights audit"
     },
     {
       "id": "SOURCE-CENTURY-TIMELINE-Figure",
@@ -929,11 +929,11 @@
       "source_type": "generated_figure",
       "accessed_date": "2026-08-12",
       "authority_level": "submission_author",
-      "collection_method": "Script-generated from century-time-museum-contract.json data; bilingual text embedded in SVG",
+      "collection_method": "Package-authored bilingual SVG source with deterministic PNG exports; visual QA rerun in the Round 7–9 closure repair",
       "allowable_uses": [
         "Repository review",
         "Peer assessment",
-        "Exhibition display (with attribution)"
+        "Internal package consistency checks"
       ],
       "restrictions": [
         "Must carry G0 conceptual label",
@@ -944,7 +944,7 @@
         "Font embedding rights not separately audited",
         "Image quality depends on rendering engine"
       ],
-      "license": "Generated figure; source SVG retains full author attribution"
+      "license": "No complete reusable license terms are retained in the package; repository review only pending maintainer terms and independent rights audit"
     },
     {
       "id": "SOURCE-PORTABLE-TEMPORAL-EDUCATION-PEDAGOGY",
@@ -958,7 +958,8 @@
       "collection_method": "Cultural narrative section written as part of Round 8 proposal update",
       "allowable_uses": [
         "Repository review",
-        "Peer assessment"
+        "Peer assessment",
+        "Internal package consistency checks"
       ],
       "restrictions": [
         "Conceptual only; not a built exhibition",
@@ -968,7 +969,82 @@
         "Educator review not completed",
         "Child comprehension testing pending"
       ],
-      "license": "CC-BY-NC-SA-4.0 as per repository norms"
+      "license": "No complete reusable license terms are retained in the package; repository review only pending maintainer terms and independent rights audit"
+    },
+    {
+      "id": "SOURCE-JZ-MISSION-ECONOMY-G0-V1",
+      "rights_evidence_id": "SRC-RIGHTS-MISSION-ECONOMY-G0-V1",
+      "title": "公共任务经济 G0 合同：问题驱动的产业与人才转化（准入退出、采购知识产权边界、公共收益回流）",
+      "publisher": "xyh202131",
+      "path": "visual/assets/mission-economy-contract.json",
+      "source_type": "in_package_mechanism_contract",
+      "accessed_date": "2026-08-12",
+      "authority_level": "submission_author",
+      "collection_method": "Mission-economy mechanism contract written as part of Round 9 proposal update",
+      "allowable_uses": [
+        "Repository review",
+        "Peer assessment",
+        "Internal package consistency checks"
+      ],
+      "restrictions": [
+        "Conceptual only; no task, enterprise, procurement or deployment exists",
+        "0 written institution confirmations; roles to-be-confirmed"
+      ],
+      "known_gaps": [
+        "Responsible roles to be confirmed",
+        "No real tasks, retests or exit events"
+      ],
+      "license": "No complete reusable license terms are retained in the package; repository review only pending maintainer terms and independent rights audit"
+    },
+    {
+      "id": "SOURCE-INDUSTRY-PUBLIC-VALUE-FIGURE",
+      "rights_evidence_id": "SRC-RIGHTS-INDUSTRY-PUBLIC-VALUE-FIG",
+      "title": "产业—公共价值状态图：双语 SVG/PNG 图件（公共任务生命周期、四轴分离、授权阶梯、收益回流）",
+      "publisher": "xyh202131",
+      "path": "assets/figures/industry-public-value-state.{svg,png}",
+      "source_type": "generated_figure",
+      "accessed_date": "2026-08-12",
+      "authority_level": "submission_author",
+      "collection_method": "Package-authored bilingual SVG source with deterministic PNG exports; visual QA rerun in the Round 7–9 closure repair",
+      "allowable_uses": [
+        "Repository review",
+        "Peer assessment",
+        "Internal package consistency checks"
+      ],
+      "restrictions": [
+        "G0 conceptual mechanism only",
+        "No real status, approval, partner or operating result shown"
+      ],
+      "known_gaps": [
+        "Renderer-resolved fonts are not independently audited",
+        "Independent professional review remains pending"
+      ],
+      "license": "No complete reusable license terms are retained in the package; repository review only pending maintainer terms and independent rights audit"
+    },
+    {
+      "id": "SOURCE-MISSION-ECONOMY-PROPOSAL",
+      "rights_evidence_id": "SRC-RIGHTS-MISSION-ECONOMY-PROPOSAL",
+      "title": "公共任务经济：问题驱动的产业与人才转化（概念章节）",
+      "publisher": "xyh202131",
+      "path": "proposal.md#mission-economy-section",
+      "source_type": "conceptual_proposal",
+      "accessed_date": "2026-08-12",
+      "authority_level": "submission_author",
+      "collection_method": "Mission-economy narrative section written as part of Round 9 proposal update",
+      "allowable_uses": [
+        "Repository review",
+        "Peer assessment",
+        "Internal package consistency checks"
+      ],
+      "restrictions": [
+        "Conceptual only; not a government procurement or deployment",
+        "Passing a test is not an authorization"
+      ],
+      "known_gaps": [
+        "No institution written confirmations",
+        "No field or controlled testing"
+      ],
+      "license": "No complete reusable license terms are retained in the package; repository review only pending maintainer terms and independent rights audit"
     }
   ]
 }

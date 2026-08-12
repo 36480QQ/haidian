@@ -2023,6 +2023,166 @@
         "External reviewers not yet engaged"
       ],
       "reason": "External independent reviewers not yet engaged; status unknown pending reviewer appointments"
+    },
+    "mission_task_verifiability_rate": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": [
+        "visual/assets/mission-economy-contract.json"
+      ],
+      "formula": "verifiable_task_claims / total_task_claims",
+      "confidence": "low",
+      "required_for_formal_submission": false,
+      "assumptions": [
+        "Same-task, same-people, same-period or same-space baseline",
+        "Field coverage or machine PASS does not equal real-world outcome"
+      ],
+      "reason": "No real public tasks published yet; only contract-defined lifecycle exists at G0"
+    },
+    "small_team_participation_ratio": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": [
+        "visual/assets/mission-economy-contract.json"
+      ],
+      "formula": "small_team_participants / total_task_participants",
+      "confidence": "low",
+      "required_for_formal_submission": false,
+      "assumptions": [
+        "Requires field observation or responsibility records",
+        "Design-field coverage does not equal real participation"
+      ],
+      "reason": "No small teams have entered any task; 0 written confirmations"
+    },
+    "independent_retest_coverage": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": [
+        "visual/assets/mission-economy-contract.json"
+      ],
+      "formula": "tasks_passing_independent_retest / tasks_passing_evidence_gate",
+      "confidence": "low",
+      "required_for_formal_submission": false,
+      "assumptions": [
+        "Independent-retest role to be confirmed",
+        "Passing an evidence gate is not an independent retest"
+      ],
+      "reason": "0 independent retests run; retest role remains to-be-confirmed"
+    },
+    "task_exit_rate": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": [
+        "visual/assets/mission-economy-contract.json"
+      ],
+      "formula": "exited_tasks / tasks_entering_entry_queue",
+      "confidence": "low",
+      "required_for_formal_submission": false,
+      "assumptions": [
+        "No real exit events yet; keep 0/unknown",
+        "Exit records are not used for hiring or talent ranking"
+      ],
+      "reason": "0 tasks published and 0 exit events; mechanism definition only"
+    },
+    "professional_service_accessibility": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": [
+        "visual/assets/mission-economy-contract.json"
+      ],
+      "formula": "users_reaching_professional_service / users_needing_professional_service",
+      "confidence": "low",
+      "required_for_formal_submission": false,
+      "assumptions": [
+        "Requires field or controlled test",
+        "Manual and non-AI paths must be continuous to count"
+      ],
+      "reason": "No professional service exists yet; roles to-be-confirmed"
+    },
+    "public_benefit_delivery_status": {
+      "status": "unknown",
+      "value": null,
+      "unit": "status",
+      "source_files": [
+        "visual/assets/mission-economy-contract.json"
+      ],
+      "formula": "delivered_benefit_claims / result_reflow_claims",
+      "confidence": "low",
+      "required_for_formal_submission": false,
+      "assumptions": [
+        "No real delivery events; keep unknown, do not write promises",
+        "Reflow does not depend on investment amounts"
+      ],
+      "reason": "No task results or failure archives exist yet"
+    },
+    "university_course_real_participation": {
+      "status": "unknown",
+      "value": null,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/mission-economy-contract.json"
+      ],
+      "formula": "courses_with_written_confirmation / courses_claimed",
+      "confidence": "low",
+      "required_for_formal_submission": false,
+      "assumptions": [
+        "0 written confirmations; template contact is not a signed course",
+        "University participation is not written as contracted"
+      ],
+      "reason": "No university contact exists; 0 written confirmations"
+    },
+    "ip_dispute_count": {
+      "status": "unknown",
+      "value": null,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/mission-economy-contract.json"
+      ],
+      "formula": "recorded_ip_disputes / task_and_prototype_items",
+      "confidence": "low",
+      "required_for_formal_submission": false,
+      "assumptions": [
+        "IP boundaries remain not_cleared",
+        "No dispute events yet; keep 0"
+      ],
+      "reason": "Independent file-level clearance audits remain 0"
+    },
+    "failed_project_publication_rate": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": [
+        "visual/assets/mission-economy-contract.json"
+      ],
+      "formula": "published_failed_projects / exited_or_retired_tasks",
+      "confidence": "low",
+      "required_for_formal_submission": false,
+      "assumptions": [
+        "Publication scope needs role-confirmed definition",
+        "Failure disclosure is not used for hiring or ranking"
+      ],
+      "reason": "No exited or retired tasks exist; definition pending"
+    },
+    "institution_written_confirmation_status": {
+      "status": "unknown",
+      "value": null,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/mission-economy-contract.json"
+      ],
+      "formula": "written_confirmations / referenced_external_institutions",
+      "confidence": "low",
+      "required_for_formal_submission": false,
+      "assumptions": [
+        "External institutions are suggested or pending-confirmation roles only",
+        "0 written confirmations; do not write as partners"
+      ],
+      "reason": "No institution has been contacted or confirmed"
     }
   }
 }
