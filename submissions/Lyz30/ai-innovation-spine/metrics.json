@@ -135,6 +135,97 @@
       "assumptions": [
         "基于临时粗略边界推算，官方红线发布后需重算"
       ]
+    },
+    "land_use_mixed_area_sqm": {
+      "status": "known",
+      "value": 4975000.0,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "sum(area_sqm_declared where land_use_code=16)",
+      "confidence": "medium",
+      "assumptions": [
+        "基于临时粗略边界推算，官方红线发布后需重算"
+      ]
+    },
+    "land_use_rnd_industry_area_sqm": {
+      "status": "known",
+      "value": 2875000.0,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "sum(area_sqm_declared where land_use_code=0701)",
+      "confidence": "medium",
+      "assumptions": [
+        "基于临时粗略边界推算，官方红线发布后需重算"
+      ]
+    },
+    "land_use_green_area_sqm": {
+      "status": "known",
+      "value": 2047000.0,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "sum(area_sqm_declared where land_use_code=1401)",
+      "confidence": "medium",
+      "assumptions": [
+        "基于临时粗略边界推算，官方红线发布后需重算"
+      ]
+    },
+    "land_use_commercial_area_sqm": {
+      "status": "known",
+      "value": 983000.0,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "sum(area_sqm_declared where land_use_code=05)",
+      "confidence": "medium",
+      "assumptions": [
+        "基于临时粗略边界推算，官方红线发布后需重算"
+      ]
+    },
+    "land_use_community_area_sqm": {
+      "status": "known",
+      "value": 489000.0,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "sum(area_sqm_declared where land_use_code=0702)",
+      "confidence": "medium",
+      "assumptions": [
+        "基于临时粗略边界推算，官方红线发布后需重算"
+      ]
+    },
+    "land_use_education_area_sqm": {
+      "status": "known",
+      "value": 45000.0,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "sum(area_sqm_declared where land_use_code=0802)",
+      "confidence": "medium",
+      "assumptions": [
+        "基于临时粗略边界推算，官方红线发布后需重算"
+      ]
+    },
+    "land_use_area_distribution": {
+      "status": "known",
+      "value": 11413000.0,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "sum(area_sqm_declared all land_use features)",
+      "confidence": "medium",
+      "assumptions": [
+        "基于临时粗略边界推算，官方红线发布后需重算"
+      ]
     }
   }
 }
