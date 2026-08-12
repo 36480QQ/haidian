@@ -8,7 +8,7 @@
     "disclosure_effect": "audit_ready_not_cleared"
   },
   "coverage": {
-    "source_record_count": 41,
+    "source_record_count": 44,
     "osm_element_count": 120,
     "completed_independent_file_level_clearance_audits": 0,
     "asset_ledger_ref": "rights-clearance-ledger.json#asset_records"
@@ -1734,6 +1734,135 @@
       "unresolved_item_ids": [
         "RIGHTS-OPEN-01",
         "RIGHTS-OPEN-02"
+      ]
+    },
+    {
+      "evidence_id": "SRC-RIGHTS-JZ-ORDINARY-LIFE-MEDIA-REGISTER-R12",
+      "source_id": "SOURCE-JZ-ORDINARY-LIFE-MEDIA-REGISTER-R12",
+      "source_record_ref": "../../sources.json#SOURCE-JZ-ORDINARY-LIFE-MEDIA-REGISTER-R12",
+      "publisher": "xyh202131",
+      "locator": {
+        "kind": "repository_path",
+        "value": "visual/assets/ordinary-life-media-register.json"
+      },
+      "published_or_obtained": {
+        "status": "recorded",
+        "value": "2026-08-13",
+        "basis": "Package-authored Round 12 repository object; this is not a field observation, approval, operating result, professional opinion or public-release date."
+      },
+      "accessed_date": "2026-08-13",
+      "original_format": {
+        "status": "observed_from_repository_object",
+        "label": "JSON conceptual media register",
+        "media_type": "application/json",
+        "basis": "The format was observed directly from the package repository object."
+      },
+      "integrity": {
+        "method": "git_object",
+        "algorithm": "sha1",
+        "digest": "5f0974719048bb500d854d17b232dcd67422153b",
+        "digest_scope": "Git blob object for exact package file bytes at visual/assets/ordinary-life-media-register.json in the Round 12 candidate.",
+        "artifact_in_submission": true,
+        "limitation": "The digest fixes a package-authored G0 register only; it establishes no field fact, professional result, approval, maturity advancement, reusable licence or rights clearance."
+      },
+      "rights_basis": {
+        "declared_basis": "package_author_statement_for_repository_review_only; complete terms and independent file-level audit unavailable",
+        "terms_locator": null,
+        "evidence_state": "source_record_statement_only",
+        "independent_review_status": "not_started",
+        "package_use_mode": "repository_input"
+      },
+      "downstream_asset_ref": "rights-clearance-ledger.json#asset_records",
+      "unresolved_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-04"
+      ]
+    },
+    {
+      "evidence_id": "SRC-RIGHTS-ORDINARY-LIFE-MEDIA-R12",
+      "source_id": "SOURCE-ORDINARY-LIFE-MEDIA-R12",
+      "source_record_ref": "../../sources.json#SOURCE-ORDINARY-LIFE-MEDIA-R12",
+      "publisher": "xyh202131",
+      "locator": {
+        "kind": "repository_path",
+        "value": "assets/media/ordinary-life-scenes.webp"
+      },
+      "published_or_obtained": {
+        "status": "recorded",
+        "value": "2026-08-13",
+        "basis": "Package-authored Round 12 repository object; this is not a field observation, approval, operating result, professional opinion or public-release date."
+      },
+      "accessed_date": "2026-08-13",
+      "original_format": {
+        "status": "observed_from_repository_object",
+        "label": "Generated WebP conceptual visualization",
+        "media_type": "image/webp",
+        "basis": "The format was observed directly from the package repository object."
+      },
+      "integrity": {
+        "method": "git_object",
+        "algorithm": "sha1",
+        "digest": "aca018336c68a9a70bffff458cd21399a7507c54",
+        "digest_scope": "Git blob object for exact package file bytes at assets/media/ordinary-life-scenes.webp in the Round 12 candidate.",
+        "artifact_in_submission": true,
+        "limitation": "The digest fixes generated pixels only; it establishes no site condition, real participation, approved design, model-output rights, reusable licence or rights clearance."
+      },
+      "rights_basis": {
+        "declared_basis": "package_author_statement_for_repository_review_only; complete terms and independent file-level audit unavailable",
+        "terms_locator": null,
+        "evidence_state": "source_record_statement_only",
+        "independent_review_status": "not_started",
+        "package_use_mode": "repository_input"
+      },
+      "downstream_asset_ref": "rights-clearance-ledger.json#asset_records",
+      "unresolved_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-04"
+      ]
+    },
+    {
+      "evidence_id": "SRC-RIGHTS-ORDINARY-LIFE-PROPOSAL-R12",
+      "source_id": "SOURCE-ORDINARY-LIFE-PROPOSAL-R12",
+      "source_record_ref": "../../sources.json#SOURCE-ORDINARY-LIFE-PROPOSAL-R12",
+      "publisher": "xyh202131",
+      "locator": {
+        "kind": "repository_path",
+        "value": "proposal.md"
+      },
+      "published_or_obtained": {
+        "status": "recorded",
+        "value": "2026-08-13",
+        "basis": "Package-authored Round 12 repository object; this is not a field observation, approval, operating result, professional opinion or public-release date."
+      },
+      "accessed_date": "2026-08-13",
+      "original_format": {
+        "status": "observed_from_repository_object",
+        "label": "Markdown proposal narrative",
+        "media_type": "text/markdown",
+        "basis": "The format was observed directly from the package repository object."
+      },
+      "integrity": {
+        "method": "git_object",
+        "algorithm": "sha1",
+        "digest": "3f9aac7a7265984dfc8ebb5d7391a88d2df66b23",
+        "digest_scope": "Git blob object for exact package file bytes at proposal.md in the Round 12 candidate.",
+        "artifact_in_submission": true,
+        "limitation": "The digest fixes the package-authored bilingual narrative state only; it establishes no field observation, professional opinion, approval, implementation result, reusable licence or rights clearance."
+      },
+      "rights_basis": {
+        "declared_basis": "package_author_statement_for_repository_review_only; complete terms and independent file-level audit unavailable",
+        "terms_locator": null,
+        "evidence_state": "source_record_statement_only",
+        "independent_review_status": "not_started",
+        "package_use_mode": "repository_input"
+      },
+      "downstream_asset_ref": "rights-clearance-ledger.json#asset_records",
+      "unresolved_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-04"
       ]
     }
   ],
