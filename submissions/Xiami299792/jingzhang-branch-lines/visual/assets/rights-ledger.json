@@ -55,13 +55,21 @@
       "text_free": false,
       "text_review": "Rendered labels are deterministic plot text from data fields; no pseudo-text.",
       "use": "Mobility and blue-green network figure."
+    },
+    {
+      "path": "assets/media/cover.webp",
+      "generation_method": "AI image generation from a participant-authored prompt (user-provided asset, 2026-08-12); converted to WebP locally without modification",
+      "ai_generated": true,
+      "text_free": false,
+      "text_review": "Poster is a conceptual presentation graphic; any rendered text is AI-generated and not authoritative; it does not replace GeoJSON/JSON evidence.",
+      "use": "Optional gallery cover image (manifest.cover_image). Presentation-only concept layer; not spatial evidence."
     }
   ],
   "no_external_assets": {
     "fonts": "No third-party fonts embedded; system fonts only.",
     "images": "No third-party images, logos, portraits, or copyrighted visual materials embedded.",
     "tiles": "No commercial map tiles used; all geometry rendered from submitted GeoJSON.",
-    "media": "No video or audio assets included."
+    "media": "One AI-generated poster (assets/media/cover.webp) added as optional cover; no video/audio assets."
   },
-  "spatial_evidence_boundary": "All PNG figures are presentation aids derived deterministically from submitted geometry/metrics; they are not independent spatial evidence. Authoritative spatial evidence is the submitted GeoJSON and metrics.json only."
+  "spatial_evidence_boundary": "All PNG figures are presentation aids derived deterministically from submitted geometry/metrics; they are not independent spatial evidence. Authoritative spatial evidence is the submitted GeoJSON and metrics.json only. The poster is a presentation-only concept graphic and is not spatial evidence."
 }

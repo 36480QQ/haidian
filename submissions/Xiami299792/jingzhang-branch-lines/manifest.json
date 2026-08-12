@@ -58,7 +58,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "a4eb24203a69d8899cb408019698916115754d0975772c45ec4d3c3429e031db"
+      "sha256": "3715d88f5a24d5131ef483f63af4487c3ffbc0c3abe5244faef74fd325feeefd"
     },
     {
       "path": "compliance_matrix.json",
@@ -292,7 +292,7 @@
       "role": "other",
       "role_detail": "rights_ledger",
       "required": true,
-      "sha256": "2cc4c8c075f038b8c8ecb3f0b4289c156be06588644f0f859d7b4f1f6f08cec3"
+      "sha256": "cbcdab6904f9b99a2dfd4a59b20ed94ed42855cc154eae56695e6045a1564c05"
     },
     {
       "path": "risk.json",
@@ -305,7 +305,13 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "5f239c330612911d3d23ed9fb6e08a24d06ff3e78bb66a6f326a7b94d78d85e7"
+      "sha256": "9451b1a127bd6f469f6b431c619963eb5f40a1259c289ed03cd1f63cac87d82f"
+    },
+    {
+      "path": "assets/media/cover.webp",
+      "role": "media_poster",
+      "required": false,
+      "sha256": "6fd71777f41fcb41f951dbdb69614f2dee770146713da72715c779cb9b422981"
     }
   ],
   "validation_claim": {
@@ -313,5 +319,6 @@
     "known_blockers": [],
     "data_confidence": "high",
     "readiness_contract": "persisted-self-check-v1"
-  }
+  },
+  "cover_image": "assets/media/cover.webp"
 }

@@ -18,7 +18,7 @@
 
 - 官方 SITE_BOUNDARY / KEY_AREA 多边形未公布，全部几何 provisional，待官方资料全量重算。
 - 控规条件缺失指标保持 unknown，待正式数据补齐。
-- 海报/多媒体成果待用户生成后集成。
+- 海报已由用户生成并集成为封面（assets/media/cover.webp，role=media_poster，manifest.cover_image）；后续可继续补充视频/音频等多媒体成果。
 
 ### 公开资料与合规说明
 
