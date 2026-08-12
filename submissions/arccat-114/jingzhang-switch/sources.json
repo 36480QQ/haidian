@@ -441,6 +441,102 @@
       "usage": "现状建筑轮廓概念量测（提交边界内 1286 处、基底约 196 公顷、覆盖率约 17.2%）。",
       "used_for_zh": "现状建成密度量级参照与'占满而未建足'推断的基础。",
       "not_usable_for_zh": "非测绘成果，不能判定空置、权属与可开发容量；不构成现状底数。"
+    },
+    {
+      "id": "LANJINGLIJIA-OFFICIAL-CASE",
+      "title": "蓝景丽家项目：创新探索通过城市更新助力土地供应新路径（规自委案例展示）",
+      "publisher": "北京市规划和自然资源委员会",
+      "url": "https://ghzrzyw.beijing.gov.cn/zhengwuxinxi/zxzt/csgx/csgxfjszt/fjsztalzs/202606/t20260612_4698370.html",
+      "source_type": "official_public",
+      "authority_level": "official_public",
+      "usable_for_formal": "yes",
+      "usage": "规自委案例：蓝景丽家地块（东至京包铁路13号线用地西边界、南至北三环西路、总用地约3.95公顷）是京张遗址公园创新交往带的重要节点。",
+      "used_for_zh": "控规覆盖本带的直接官方证据；带内具体地块与官方'创新交往带'表述。",
+      "not_usable_for_zh": "案例表述不构成该地块全部控制值或审批结论。"
+    },
+    {
+      "id": "DONGSHENG-PLOT-NOT-PUBLIC",
+      "title": "海淀区协议出让国有土地使用权计划公示——东升科技园三期0807-604地块",
+      "publisher": "北京市规划和自然资源委员会",
+      "url": "https://ghzrzyw.beijing.gov.cn/ziranziyuanguanli/tdcr/xzxmydxycrjhgs/hd_xzxmydxycrjhgs/202510/t20251009_4216292.html",
+      "source_type": "official_public",
+      "authority_level": "official_public",
+      "usable_for_formal": "yes",
+      "usage": "东升科技园三期 0807-604 地块协议出让计划公示（2025-10）。",
+      "used_for_zh": "带内地块控制值检索范围的官方记录（该地块走协议出让、四项控制值经检索未公开）。",
+      "not_usable_for_zh": "公示不包含该地块全部规划控制值。"
+    },
+    {
+      "id": "KEY-AREA-ANCHOR-GAP-CONFIRMED",
+      "title": "征集组织方对重点区占位矩形未锚定的确认（issue #1029）",
+      "publisher": "open-city-ai/haidian 征集组织方",
+      "url": "https://github.com/open-city-ai/haidian/issues/1029",
+      "source_type": "official_public",
+      "authority_level": "official_public",
+      "usable_for_formal": "yes",
+      "usage": "组织方确认：PROV-KEY-003（大钟寺AI产业聚集区）占位矩形质心距大钟寺站约 2.26 公里、落在北京北站一带，三处重点区占位矩形按公告南北顺序与约面积配置、尚未完成站点/道路锚定。",
+      "used_for_zh": "本方案不按占位矩形断言与轨道站点的几何关系；重点区设计只给组织原则，站点正式位置待官方锚定。",
+      "not_usable_for_zh": "确认的是占位几何状态，不构成对任何站点位置或站城设计的认可。"
+    },
+    {
+      "id": "JZ-PARK-PHASE2-PLAN-2024",
+      "title": "京张铁路遗址公园二期相关规划报道（市发展改革委转载）",
+      "publisher": "北京市发展和改革委员会",
+      "url": "https://fgw.beijing.gov.cn/gzdt/fgzs/mtbdx/bzwlxw/202409/t20240909_3798305.htm",
+      "source_type": "official_public",
+      "authority_level": "background",
+      "usable_for_formal": "background_only",
+      "usage": "二期规划背景（2024-09 转载报道）。",
+      "used_for_zh": "公园二期规划进程背景。",
+      "not_usable_for_zh": "报道级口径，不构成工程或实施结论。"
+    },
+    {
+      "id": "JZ-PARK-GOV-PUBLICITY",
+      "title": "海淀区政府门户政务发布（京张公园相关）",
+      "publisher": "北京市海淀区人民政府",
+      "url": "https://www.bjhd.gov.cn/ztzx/2025/ysxtj/ttdkj/gzgxfn/202503/t20250314_4760993.shtml",
+      "source_type": "official_public",
+      "authority_level": "background",
+      "usable_for_formal": "background_only",
+      "usage": "政务发布口径（含'打通9条城市支路'等表述的出处之一）。",
+      "used_for_zh": "公园沿线支路等建设口号的政务发布语境。",
+      "not_usable_for_zh": "政务发布口径，未取得主管部门原件前不作承重结论。"
+    },
+    {
+      "id": "BJ-RENEWAL-TOOLKIT",
+      "title": "北京市城市更新改造指引/工具（市住建委）",
+      "publisher": "北京市住房和城乡建设委员会",
+      "url": "https://zjw.beijing.gov.cn/bjjs/xxgk/zcwj2024/qtzcwj/xxyx13/743895417/index.shtml",
+      "source_type": "official_public",
+      "authority_level": "official_public",
+      "usable_for_formal": "yes",
+      "usage": "城市更新操作指引类官方文件。",
+      "used_for_zh": "城市更新工具方法的官方方向依据。",
+      "not_usable_for_zh": "不构成具体地块的实施结论。"
+    },
+    {
+      "id": "BJ-RENEWAL-BANK",
+      "title": "北京市城市更新项目库（市政府公开）",
+      "publisher": "北京市人民政府",
+      "url": "https://www.beijing.gov.cn/zhengce/gfxwj/sj/202405/t20240527_3694574.html",
+      "source_type": "official_public",
+      "authority_level": "official_public",
+      "usable_for_formal": "yes",
+      "usage": "城市更新项目库相关官方公开文件。",
+      "used_for_zh": "城市更新项目机制的官方方向依据。",
+      "not_usable_for_zh": "不构成具体项目立项或投资安排。"
+    },
+    {
+      "id": "JZ-PARK-OFFICIAL-FIGURES",
+      "title": "北京市公园名录（市园林绿化局）",
+      "publisher": "北京市园林绿化局",
+      "url": "https://yllhj.beijing.gov.cn/ggfw/bjsggml/zhgy/hdq/202507/t20250724_4156668.shtml",
+      "source_type": "official_public",
+      "authority_level": "official_public",
+      "usable_for_formal": "yes",
+      "usage": "公园名录（海淀区）官方页面。",
+      "used_for_zh": "京张遗址公园在官方公园体系中的登记语境。",
+      "not_usable_for_zh": "名录不含面积或工程细节。"
     }
   ]
 }
