@@ -70,13 +70,20 @@ class SubmissionPacket:
     key_files: list[dict[str, Any]]
 
 
-def read_json(path: Path) -> Any:
+def read_json(path: Path) -> dict[str, Any] | None:
     if not path.exists():
         return None
     try:
-        return json.loads(path.read_text(encoding="utf-8"))
-    except (UnicodeDecodeError, json.JSONDecodeError):
-        return None
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except UnicodeDecodeError as exc:
+        raise ReviewPacketError(f"{path}: JSON file must be UTF-8") from exc
+    except json.JSONDecodeError as exc:
+        raise ReviewPacketError(f"{path}: invalid JSON: {exc}") from exc
+    except OSError as exc:
+        raise ReviewPacketError(f"{path}: could not read JSON: {exc}") from exc
+    if not isinstance(data, dict):
+        raise ReviewPacketError(f"{path}: JSON root must be an object")
+    return data
 
 
 def as_dict(value: Any) -> dict[str, Any]:
