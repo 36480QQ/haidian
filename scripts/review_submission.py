@@ -70,6 +70,28 @@ PACKAGE_FILES_INCLUDED_AS_RAW_TEXT = {
     "standard_matrix.json",
     "design_depth_matrix.json",
 }
+PACKAGE_FILES_INCLUDED_AS_RENDERED_PREVIEW = {
+    "assets/figures/site-overview.png",
+    "assets/figures/site-overview.en.png",
+    "assets/figures/land-use-structure.png",
+    "assets/figures/land-use-structure.en.png",
+    "assets/figures/key-areas.png",
+    "assets/figures/key-areas.en.png",
+    "assets/figures/mobility-bluegreen.png",
+    "assets/figures/mobility-bluegreen.en.png",
+    "assets/figures/metrics-evidence.png",
+    "assets/figures/metrics-evidence.en.png",
+    "report/proposal.html",
+    "report/proposal.en.html",
+    "visual/index.html",
+    "visual/index.en.html",
+}
+PACKAGE_FILES_INCLUDED_AS_PARTIAL_PREVIEW = {
+    "drawings/a3-booklet.pdf",
+    "drawings/a3-booklet.en.pdf",
+    "drawings/a0-boards.pdf",
+    "drawings/a0-boards.en.pdf",
+}
 
 
 def read_text(path: Path) -> str:
@@ -147,7 +169,14 @@ def build_review_input_access_boundary(
     """Describe packet visibility without reading or executing arbitrary artifacts."""
     present_paths = set(package_files)
     raw_text_paths = sorted(PACKAGE_FILES_INCLUDED_AS_RAW_TEXT & present_paths)
-    raw_text_not_supplied_paths = sorted(present_paths - PACKAGE_FILES_INCLUDED_AS_RAW_TEXT)
+    rendered_preview_paths = sorted(PACKAGE_FILES_INCLUDED_AS_RENDERED_PREVIEW & present_paths)
+    partial_preview_paths = sorted(PACKAGE_FILES_INCLUDED_AS_PARTIAL_PREVIEW & present_paths)
+    not_supplied_paths = sorted(
+        present_paths
+        - PACKAGE_FILES_INCLUDED_AS_RAW_TEXT
+        - PACKAGE_FILES_INCLUDED_AS_RENDERED_PREVIEW
+        - PACKAGE_FILES_INCLUDED_AS_PARTIAL_PREVIEW
+    )
     manifest_artifacts: list[dict[str, Any]] = []
     if isinstance(manifest, dict) and isinstance(manifest.get("files"), list):
         for item in manifest["files"]:
@@ -159,11 +188,16 @@ def build_review_input_access_boundary(
                 "role": item.get("role"),
                 "present_in_package": path in present_paths,
                 "raw_content_in_review_input_json": path in raw_text_paths,
+                "rendered_preview_supplied": path in rendered_preview_paths,
+                "partial_preview_supplied": path in partial_preview_paths,
             }
             manifest_artifacts.append(artifact)
     return {
         "raw_text_paths": raw_text_paths,
-        "raw_text_not_supplied_paths": raw_text_not_supplied_paths,
+        "rendered_preview_paths": rendered_preview_paths,
+        "partial_preview_paths": partial_preview_paths,
+        "partial_preview_rule": "PDF previews include only the first page of each listed file.",
+        "not_supplied_paths": not_supplied_paths,
         "manifest_artifacts": manifest_artifacts,
         "participant_verification_scripts_executed": False,
         "trusted_gate_reports_supplied": [
@@ -173,10 +207,10 @@ def build_review_input_access_boundary(
             "professional_review",
         ],
         "rule": (
-            "A package artifact being listed without its raw content in the advisory packet is an "
-            "access limitation, not evidence that the participant omitted it. Some visual artifacts "
-            "may be supplied separately as rendered previews. Never claim to have inspected or "
-            "executed an unsupplied artifact."
+            "A package artifact listed in not_supplied_paths is absent from the advisory packet, "
+            "not absent from the submission. Rendered previews do not expose source bytes, and PDF "
+            "previews include only their first page. Never claim to have inspected content "
+            "outside the stated access mode or executed a participant artifact."
         ),
     }
 
@@ -257,7 +291,7 @@ def build_prompt(review_input: dict) -> str:
             "Use only the supplied review-input JSON. Do not invent official boundaries, planning controls, data sources, or approval status.",
             "Use `source_registry_summary` to distinguish approved formal sources, background-only sources, provisional sources, and needs-review sources.",
             "Use `review_input_access_boundary` to distinguish raw package content actually supplied in the review-input JSON from artifacts that are only listed in the manifest or file inventory. Some visual artifacts may be attached separately as rendered previews.",
-            "Do not reduce a rubric score, create a required repair, fail a gate, or make an adverse recommendation merely because the advisory model cannot open an artifact listed in `raw_text_not_supplied_paths`. Do not claim to have inspected or executed an unsupplied artifact. Use the trusted deterministic, spatial, visual, and professional gate reports for those checks; request participant action only when a supplied report or visible contradiction establishes a real failure.",
+            "Do not reduce a rubric score, create a required repair, fail a gate, or make an adverse recommendation merely because an artifact is listed in `not_supplied_paths`. Treat `rendered_preview_paths` as visual evidence rather than source bytes, and never claim that `partial_preview_paths` proves anything beyond the first PDF page. Do not claim to have inspected or executed an unsupplied artifact. Use the trusted deterministic, spatial, visual, and professional gate reports for those checks; request participant action only when a supplied report or visible contradiction establishes a real failure.",
             "The review is a local maintainer aid. The only user-visible destination is a Pull Request comment; do not ask to publish this review to the gallery, submissions-data.js, or committed review pages.",
             "",
             f"Return JSON that validates against `{ADVISORY_REVIEW_SCHEMA_PATH}` and include the PR comment body in `pr_comment_markdown`.",
