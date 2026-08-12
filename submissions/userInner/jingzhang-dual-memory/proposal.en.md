@@ -4,7 +4,7 @@ author_github: "userInner"
 language: "en"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
-iteration: "v2.0"
+iteration: "v4.0"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "A human-directed AI urban corridor where public memory accumulates, personal data can expire, and the benefits of innovation are shared."
@@ -14,15 +14,17 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 # DOUBLE MEMORY JINGZHANG
 
-> **v2.0 thesis:** Urban design should deliver more than spatial images. Every public-AI component receives a “Memory Boundary Passport” stating its spatial envelope, accountable roles, permitted data, expiry period, human takeover, ordinary equivalent service, release evidence, and exit decision. The three key areas therefore become reviewable 180-day pilot contracts. Every result remains `design_target / not_run`; none is presented as field performance or a government commitment.
+> **v4.0 thesis:** Urban design must survive both spatial reading and evidence review. A fine-grained urban fabric, Jing-Zhang civic spine, six cross-stitches, three key-area daily plans, and one continuous public-edge section now carry the Proof Mile from belt to route, consent section, and implementation contract. Statutory controls remain `unknown`; field results remain `not_field_tested / HOLD`.
 
-| Review dimension | Material v2.0 advance | Verification entry |
+| Review dimension | Material v4.0 advance | Verification entry |
 | --- | --- | --- |
-| Alignment and originality | “Public-memory spine + Memory Boundary Passport + forgetfulness budget” combines Jing-Zhang history, human autonomy, and space into a distinct method | this page; `memory-boundary-passports.json` |
+| Alignment and originality | The Proof Mile connects the public-memory spine, daily routes, passports, and implementation gates into one legible method | `proof-mile-spatial-atlas.json` |
 | AI-planning innovation | AI becomes a civic service constrained by D0–D4 data classes, deletion receipts, physical stops, and independent review | `forgetfulness-budget.json`; offline audit |
-| Feasibility | Three reversible prototypes now have dimensions, cost bands, RACI, permit dependencies, 0–180-day gates, and reinstatement rules | `implementation-contract.json` |
-| Public interest | Six personas are tested route by route; a weak group cannot be hidden by an average | `public-interest-route-tests.json` |
-| Risk and expression | Provisional, unknown, and not-run states stay explicit; the new section-perspective and passports connect space, operation, data, and rights | new perspective; manifest; self-check |
+| Feasibility | Building edges follow “retain—light retrofit—reversible insert—new build only after statutory controls,” linked to 0–180-day gates | `building-interface-kit.json`; `implementation-contract.json` |
+| Public interest | Each key area has an account-free daily route with an ordinary equivalent, tested separately by six personas | `key-area-daily-routes.json` |
+| Risk and expression | The atlas and control ledger separate known facts, design targets, unknown controls, and HOLD decisions | boards 01 and 03–05; spatial audit |
+
+![Proof Mile spatial atlas: belt—daily route—consent section—implementation contract](assets/boards/board-01.en.jpg)
 
 ## Design Basis and Source List
 
@@ -128,6 +130,10 @@ The area combines station walking links, account-free public services, multiling
 
 All three areas follow retain, light retrofit, reversible trial, review, then expansion. Building scale, demolition, and engineering alignments await official boundaries, ownership data, and fieldwork.
 
+![Three key-area daily routes: ordinary entry—no-AI path—staffed service—opt-in threshold—ordinary exit](assets/boards/board-04.en.jpg)
+
+v4.0 places each daily-purpose chain on a project-bound key-area plan: work—lunch break—bus transfer at Zhongzhiyuan; home—learning—community service at AI Origin; and metro transfer—inclusive service—international exchange at Dazhongsi. Each route begins at an ordinary entry, treats an account-free no-AI path as the baseline, enters assistance or testing only after an active choice, and retains staffed service and an ordinary exit. Urban grain is illustrative; routes remain `design_target` and have not yet been field-walked or user-tested. [depth:key_area_urban_design]
+
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
 Six personas test equity: long-term residents and carers; students and faculty; start-ups and researchers; front-line service workers; commuters and temporary visitors; and international, disabled, or temporarily mobility-limited users. The ageing profile of the nearby Beihang community demonstrates why a future city must retain offline service and the right not to use AI. [source:BEIHANG-ELDERLY-COMMUNITY]
@@ -153,11 +159,13 @@ Twelve scenarios form service-data-human-fallback loops:
 
 Every scenario registers operator, user, data, retention, human fallback, stop condition, and post-trial evidence. Scenarios 03, 04, 05, 10, and 11 are auditable industrial test-and-validation cases. [source:PIPL] [source:CAC-AGENT-GOVERNANCE]
 
-v2.0 adds route tests rather than relying on persona descriptions. An older resident without a smartphone, wheelchair user, blind-cane or guide-dog user, parent with a child, night-shift service worker, and visitor with limited Chinese must each complete passage, comprehension, human takeover, and complaint tasks. Ordinary-route completion and human-takeover success must be 100%; critical-information comprehension at least 80%; no group may retain an unresolved critical issue. Failure means `HOLD`. These are release thresholds, not current performance; status is `not_run`. See `visual/assets/public-interest-route-tests.json`.
+v4.0 connects route tests directly to the three daily plans. An older resident without a smartphone, wheelchair user, blind-cane or guide-dog user, parent with a child, night-shift service worker, and visitor with limited Chinese must each complete passage, comprehension, human takeover, and complaint tasks. Ordinary-route completion and human-takeover success must be 100%; critical-information comprehension at least 80%; no group may retain an unresolved critical issue. Failure means `HOLD`. These are release thresholds, not current performance; status is `not_field_tested`. See `visual/assets/key-area-daily-routes.json` and `public-interest-route-tests.json`.
 
 Three pilgrimage landmarks are useful governance interfaces rather than monuments: the Shared Memory Platform at Qinghuayuan, the Public AI Register Tower at the AI Origin Community, and the Red-Light Trial Court at Zhongzhiyuan. Their value lies in public rules, not spectacle. [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]
 
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
+
+![Continuous public-edge section: retain and repair, open ground floor, reversible insert, and account-free bypass](assets/boards/board-05.en.jpg)
 
 The provisional land structure mixes R&D, industry and commerce, community services, and open space to avoid a single-use office district. The conceptual green-space layer measures 1,408,600.768 square metres, or 12.3423% of the submitted provisional boundary; the public-space layer measures 836,345.643 square metres, or 7.3281%. These are recalculated design-layer values, not existing-condition statistics or statutory controls. [metric:green_ratio] [metric:public_space_ratio]
 
@@ -210,7 +218,7 @@ Known metrics come only from submitted geometry or countable schedules: provisio
 
 The four rights have reviewable targets: all public AI systems disclose purpose, operator, data, and complaint route; every essential public service retains a non-AI equivalent; high-risk trials provide physical stop, human handoff, and a public response target; and each trial publishes cost, beneficiaries, saved resources, and reinvestment direction. Without field baselines, these remain targets and measurement protocols rather than achieved performance.
 
-The package includes a dependency-free structure audit: `node visual/assets/run-memory-passport-audit.js`. Its current `PASS` result proves only that all three passports contain responsibility, data, ordinary equivalence, stop, evidence, and `hold` fields, and that six personas and five forgetfulness classes are structurally present. It does not prove construction, system safety, public acceptance, or permission.
+The package includes two dependency-free audits: `node visual/assets/run-memory-passport-audit.js` and `node visual/assets/run-spatial-atlas-audit.js`. Both currently return `PASS`. The first checks passport responsibility, data, ordinary equivalence, stop, and release decisions. The second checks the four-level Proof Mile, three daily routes, account-free ordinary equivalents, not-field-tested state, missing statutory controls, and reversible renewal order. These results prove structural completeness only—not construction, system safety, public acceptance, or permission.
 
 ## Risk, Copyright, and Compliance
 
