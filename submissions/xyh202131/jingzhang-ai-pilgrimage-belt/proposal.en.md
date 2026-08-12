@@ -625,6 +625,67 @@ Ten cultural metrics remain unknown or 0; field coverage must not be passed off 
 Geometry, existing SCENE/JZ/T IDs, eight projects, all G0 status, provisional boundaries, and `not_fully_cleared` remain unchanged. Official archives, confirmed accountable operators, independent retests, approval, or operating results remain 0.
 
 [back to top](#ai-pilgrimage-belt)
+## Mission Economy: Problem-Led Industry and Talent Translation
+
+> This section is the Round 9 (JZ-FUTURE-08) industry-and-talent mechanism increment, inheriting prior public-rights, evidence-type, failure-writeback and century-time-museum contracts; it creates no duplicate "validation-ticket" brand and invents no enterprise, investment, procurement or partnership.
+
+### Strategic Proposition
+
+Industry value is not proven by invented enterprise lists, investment amounts or investment-attraction promises; it is organized around real public problems, retestable tasks, professional services, independent retests and exit mechanisms. **Passing a test is not a procurement or deployment authorization**: file checks, technical tests, evidence gates, limited trials, procurement and normal deployment each record their own scope, responsibility, validity period and non-inferable items.
+
+### Mechanism Contract and Four-Axis Separation
+
+This round adds `mission-economy-contract.json` (JZ-MISSION-ECONOMY-G0-V1), organizing the following:
+
+- **Public-task lifecycle**: problem publication → problem-quality gate → fair small-team entry → offline prototyping → independent-retest gate → result reflow → exit or retirement; any step failing closes fail-closed, and stopping or exiting never interrupts ordinary public paths and manual services
+- **Entry and exit**: no account barrier, no upfront compliance cost, and a manual or non-AI path for the same task; small teams compete in the same pool as larger institutions; exit records are not used for hiring or talent ranking
+- **Procurement and intellectual-property boundary**: prototype procurement ≠ procurement authorization ≠ deployment authorization; prototype, limited trial, procurement and normal deployment each require separate written authorization; IP boundaries remain not_cleared and are not written as resolved
+- **Public-benefit reflow**: task results, failure archives and independent-retest conclusions return to ordinary corridor users in understandable form, independent of investment amounts; feedback only feeds the next round of problem definition
+- **Four-axis separation**: runtime state (ordinary/validation/failure/recovery), maturity (G0–G3), authorization scope and service state are recorded separately; one status field must not mean test, authorization, procurement and deployment at once
+
+### Metrics and Acceptance
+
+All ten decision metrics remain unknown or 0; field coverage, concept counts or machine PASS must not be presented as real-world outcomes:
+
+| Metric | Design status | Denominator | Proof ceiling |
+|---|---|---|---|
+| Public-task verifiability rate | unknown | same task, people, period, space baseline | field observation + independent retest |
+| Small-team participation ratio | unknown | same task, people, period, space baseline | field observation + responsibility records |
+| Independent-retest coverage | unknown | tasks passing the evidence gate | independent-retest records |
+| Task exit rate | 0 | tasks entering the entry queue | exit-event records |
+| Professional-service accessibility | unknown | users needing professional services | field or controlled test |
+| Public-benefit delivery status | unknown | result-reflow claims | delivery responsibility records |
+| University-course real participation | unknown (0 written confirmations) | university courses claimed | written confirmation files |
+| IP dispute count | 0 | task and prototype items | dispute-handling records |
+| Failed-project publication rate | unknown | exited or retired tasks | role-confirmed definition |
+| Institution written-confirmation status | 0 | referenced external institutions | written confirmation files |
+
+### Differentiated Expression in the Three Key Areas
+
+| Key area | Prototype role | Mission-economy expression |
+|---|---|---|
+| Zhongzhi Garden VERIFY | parallel validation court | independent-retest gate and equipment isolation carry task validation, no normal deployment |
+| Origin Community CO-CREATE | one street, two courts, four nodes | public-benefit reflow board carries screen-free feedback without collecting extra personal data |
+| Dazhongsi PUBLISH | four-quadrant walking + one hall one stage | the hall is the task-publication and manual-service node, not an AI-mandatory entrance |
+
+### Risk Rehearsals, Stop and Recovery
+
+- **R01 Tasks monopolized by large enterprises**: fail-closed immediately; activity heat and sunk cost cannot override stop conditions; revise only after ordinary paths and manual services are restored
+- **R02 Public problems reduced to investment-attraction packaging**: never beautify figures to hide the issue; after stopping, verify spatial or service damage and record responsible roles and materials requiring external confirmation
+- **R05 Unclear intellectual-property boundary**: stop using uncleared assets and restore ordinary paths; do not write IP as resolved before independent file-level audits (currently 0)
+- **R08 External institutions written as committed**: withdraw unconfirmed statements; until 0 written confirmations exist, enterprises, universities and service providers remain suggested or pending-confirmation roles
+
+### Figure Delivery
+
+The bilingual `industry-public-value-state.{svg,png}` industry–public value state map passed figure QA: A public-task lifecycle / B four-axis separation / C authorization ladder / D public-benefit reflow, all marked as G0 conceptual state, 0 external written confirmations and provisional geometry boundary.
+
+### Inheritance and Freeze
+
+Geometry, existing SCENE/JZ/T IDs, the eight projects, all G0 gates, provisional boundaries and `not_fully_cleared` are unchanged. Responsible roles (publication, entry, retest, stop, recovery) all remain roles-to-be-confirmed; real tasks, small teams, retests, exit events and written confirmations are all 0.
+
+[back to top](#ai-pilgrimage-belt)
+
+
 
 
 ## References

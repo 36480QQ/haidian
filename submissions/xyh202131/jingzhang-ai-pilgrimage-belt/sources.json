@@ -969,6 +969,77 @@
         "Child comprehension testing pending"
       ],
       "license": "CC-BY-NC-SA-4.0 as per repository norms"
+    },
+    {
+      "id": "SOURCE-JZ-MISSION-ECONOMY-G0-V1",
+      "rights_evidence_id": "SRC-RIGHTS-MISSION-ECONOMY-G0-V1",
+      "title": "公共任务经济 G0 合同：问题驱动的产业与人才转化（准入退出、采购知识产权边界、公共收益回流）",
+      "publisher": "xyh202131",
+      "path": "visual/assets/mission-economy-contract.json",
+      "source_type": "in_package_mechanism_contract",
+      "accessed_date": "2026-08-12",
+      "authority_level": "submission_author",
+      "collection_method": "Mission-economy mechanism contract written as part of Round 9 proposal update",
+      "allowable_uses": [
+        "Repository review",
+        "Peer assessment"
+      ],
+      "restrictions": [
+        "Conceptual only; no task, enterprise, procurement or deployment exists",
+        "0 written institution confirmations; roles to-be-confirmed"
+      ],
+      "known_gaps": [
+        "Responsible roles to be confirmed",
+        "No real tasks, retests or exit events"
+      ],
+      "license": "CC-BY-NC-SA-4.0 as per repository norms"
+    },
+    {
+      "id": "SOURCE-INDUSTRY-PUBLIC-VALUE-FIGURE",
+      "rights_evidence_id": "SRC-RIGHTS-INDUSTRY-PUBLIC-VALUE-FIG",
+      "title": "产业—公共价值状态图：双语 SVG/PNG 图件（公共任务生命周期、四轴分离、授权阶梯、收益回流）",
+      "publisher": "xyh202131",
+      "path": "assets/figures/industry-public-value-state.{svg,png}",
+      "source_type": "generated_figure",
+      "accessed_date": "2026-08-12",
+      "authority_level": "submission_author",
+      "collection_method": "Generated SVG from Round 9 mechanism contract; PNG rendered with cairosvg and QA-passed",
+      "allowable_uses": [
+        "Repository review",
+        "Peer assessment"
+      ],
+      "restrictions": [
+        "G0 conceptual mechanism only",
+        "No real status, approval, partner or operating result shown"
+      ],
+      "known_gaps": [
+        "Figure QA passed on rendering; independent professional review pending"
+      ],
+      "license": "CC-BY-NC-SA-4.0 as per repository norms"
+    },
+    {
+      "id": "SOURCE-MISSION-ECONOMY-PROPOSAL",
+      "rights_evidence_id": "SRC-RIGHTS-MISSION-ECONOMY-PROPOSAL",
+      "title": "公共任务经济：问题驱动的产业与人才转化（概念章节）",
+      "publisher": "xyh202131",
+      "path": "proposal.md#mission-economy-section",
+      "source_type": "conceptual_proposal",
+      "accessed_date": "2026-08-12",
+      "authority_level": "submission_author",
+      "collection_method": "Mission-economy narrative section written as part of Round 9 proposal update",
+      "allowable_uses": [
+        "Repository review",
+        "Peer assessment"
+      ],
+      "restrictions": [
+        "Conceptual only; not a government procurement or deployment",
+        "Passing a test is not an authorization"
+      ],
+      "known_gaps": [
+        "No institution written confirmations",
+        "No field or controlled testing"
+      ],
+      "license": "CC-BY-NC-SA-4.0 as per repository norms"
     }
   ]
 }
