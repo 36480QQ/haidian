@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "package_id": "jingzhang-zhigui",
   "project_id": "centennial-jingzhang-ai-belt",
   "site_package_version": "0.1.0",
@@ -12,7 +12,7 @@
     "agent_name": "Kimi",
     "model": "agent-declared-model"
   },
-  "generated_at": "2026-08-10T00:00:00Z",
+  "generated_at": "2026-08-12T03:00:00Z",
   "files": [
     {
       "path": "manifest.json",
@@ -23,7 +23,8 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "f7b20cd629bd7eecc07692dc70c2c1448dab9dfd528907636ab0a0a301b14a91"
+      "sha256": "f7b20cd629bd7eecc07692dc70c2c1448dab9dfd528907636ab0a0a301b14a91",
+      "language": "zh"
     },
     {
       "path": "agent.json",
@@ -53,7 +54,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "80b71cb78d2c1581fc679eb561959ac515bc8a3ff6f76c74dcc2c4e20d49b72f"
+      "sha256": "c76303efbc4fdf04b7a11e79bc3396ea41de7d2164eb81d68514245ffbe26a6d"
     },
     {
       "path": "compliance_matrix.json",
@@ -77,7 +78,8 @@
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "4ead975db563242fe33b2037ca3958a20eeebaecb8970bdde6188b75ac8c3b83"
+      "sha256": "4ead975db563242fe33b2037ca3958a20eeebaecb8970bdde6188b75ac8c3b83",
+      "language": "zh"
     },
     {
       "path": "report/narrative.md",
@@ -95,49 +97,57 @@
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "bf68cf25521022c9888fd3cccca3775428c8d0fa3f9799667a528c669c431f3f"
+      "sha256": "bf68cf25521022c9888fd3cccca3775428c8d0fa3f9799667a528c669c431f3f",
+      "language": "zh"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "5cea80d0f8bc025ac87750d9789b216db49f23f8e187dad6105fbce424e7ea0b"
+      "sha256": "5cea80d0f8bc025ac87750d9789b216db49f23f8e187dad6105fbce424e7ea0b",
+      "language": "zh"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
-      "sha256": "b4f552b4ac8c46c01829244d1a391c6ae137e1b46c06649c5577eaecbd6c4c61"
+      "sha256": "b4f552b4ac8c46c01829244d1a391c6ae137e1b46c06649c5577eaecbd6c4c61",
+      "language": "zh"
     },
     {
       "path": "assets/figures/key-areas.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "53a3cb87e92bfa7b23b247b57f072f1894d1df8d8a844f1aa8a8700cbb2276cf"
+      "sha256": "53a3cb87e92bfa7b23b247b57f072f1894d1df8d8a844f1aa8a8700cbb2276cf",
+      "language": "zh"
     },
     {
       "path": "assets/figures/land-use-structure.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "18d808b8c00d1548a7ebe9840f6bfbd06b48b74a6542d5de4ec5e5284d037372"
+      "sha256": "18d808b8c00d1548a7ebe9840f6bfbd06b48b74a6542d5de4ec5e5284d037372",
+      "language": "zh"
     },
     {
       "path": "assets/figures/metrics-evidence.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "a110c893e29729f430d5333de0c98df1668767735b1058f655dda07463923283"
+      "sha256": "a110c893e29729f430d5333de0c98df1668767735b1058f655dda07463923283",
+      "language": "zh"
     },
     {
       "path": "assets/figures/mobility-bluegreen.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "541e16a0d702b74c49b16494fa57b859e6c7e2ebc725b3558ac0983020e3ade5"
+      "sha256": "541e16a0d702b74c49b16494fa57b859e6c7e2ebc725b3558ac0983020e3ade5",
+      "language": "zh"
     },
     {
       "path": "assets/figures/site-overview.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "388cb259c55b1e0c595517c87d603d776cffeb096b79e544d6c2e6d4c52031d1"
+      "sha256": "388cb259c55b1e0c595517c87d603d776cffeb096b79e544d6c2e6d4c52031d1",
+      "language": "zh"
     },
     {
       "path": "geometry/buildings.geojson",
@@ -195,8 +205,9 @@
     }
   ],
   "validation_claim": {
-    "self_checked": false,
+    "self_checked": true,
     "known_blockers": [],
-    "data_confidence": "high"
+    "data_confidence": "mixed_provisional_and_conceptual",
+    "readiness_contract": "persisted-self-check-v1"
   }
 }

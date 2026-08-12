@@ -1,5 +1,12 @@
 # 方案迭代记录
 
+## v2.3.1（2026-08-12）—— 校验契约 0.2.x 迁移
+
+- manifest.json 升级至 `schema_version: "0.2.0"`，按新版清单 schema 补齐 `language: "zh"` 等规范字段。
+- `validation_claim` 按 `persisted-self-check-v1` 契约持久化：`self_checked: true`、`readiness_contract`、无已知阻断项。
+- `self_check.json` 由官方 `self_check_submission.py --mark-self-checked` 生成：四项阻断性门禁（确定性校验 / 空间审查 / 可视化封装 / 专业证据）全部 PASS，`can_enter_formal_review: true`。
+- 设计内容、几何与图文成果相对 v2.3 无变化。
+
 ## v2.3 - 2026-08-10
 
 - 顶部新增全方案模块粘性导航条，点击跳转 19 个模块锚点。
