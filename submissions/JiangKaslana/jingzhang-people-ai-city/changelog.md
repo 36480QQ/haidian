@@ -1,5 +1,20 @@
 # Changelog
 
+## v0.3 — 2026-08-13
+
+- Added the complete required static delivery paths to the working branch: five core figure families in both language paths and four bilingual A3/A0 PDF files.
+- Switched required PNG figures to compact text-free planning diagrams that can serve both language versions without duplicate visual semantics; detailed bilingual explanation remains in the self-contained HTML/report and drawing packages.
+- Verified through the GitHub contents API that all ten PNG paths and all four PDF paths are present on `agent/people-first-jingzhang`.
+- Re-audited branch scope: all changes remain under `submissions/JiangKaslana/jingzhang-people-ai-city/`.
+- Updated `self_check.json` to distinguish static-deliverable presence from actual repository visual-review acceptance; the package still explicitly remains **not formal-review-ready** until current-head review scripts, finalization and preflight run.
+- Performed a manual geometry preflight before official spatial review:
+  - confirmed twelve land-use cells are closed, uniquely identified and contained in the three provisional key areas;
+  - confirmed four concept building envelopes remain within their intended provisional key areas;
+  - confirmed five conceptual mobility/service routes and twelve scenario nodes remain within the relevant provisional scope;
+  - separated three `PUBLIC_SPACE` forecourts/buffers from overlapping `BUILDING_FOOTPRINT` envelopes;
+  - shifted one civic-spine shade node to remove a `GREEN_SPACE`/building overlap.
+- Preserved the hard release gate requested by the contributor: immediately before upstream PR, synchronize latest upstream `main`, resolve any changes, then rerun finalize/self-check/preflight on the post-sync head.
+
 ## v0.2 — 2026-08-12
 
 - Expanded the bilingual proposal from a values/governance skeleton into a competition-ready narrative structure.
