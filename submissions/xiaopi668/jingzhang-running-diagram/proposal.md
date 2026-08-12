@@ -318,7 +318,7 @@ iteration: "v1.1"
 
 - **数据与几何风险**：官方精确边界、控规条件、现状建筑、权属与工程数据缺失；本包使用临时边界并登记复算路径，官方数据发布后整链重算 [depth:risk_missing_data] [source:BOUNDARY-SOURCE]。
 - **实施风险**：产业生态依赖外部环境，测试场景依赖监管许可；所有机制均为概念建议 [source:AGENT-TASKBOOK]。
-- **版权与清权**：本方案由 AI agent 生成，未使用个人隐私、涉密或内部非公开数据；Logo 与导视为原创概念方向，地图与几何基于仓库公开资料与临时边界。**逐资产版权/来源台账**（字体、生成工具与模型、图件、Logo、代码依赖、地图与数据转换的作者、许可证、允许用途与限制）见 `report/copyright_statement.md`；其中文化素材清权（A-CULTURE-CLEARANCE）登记为 `pending_clearance`，在权利人确认前不扩大使用范围，正文不绝对化宣称全部素材已清权 [source:AGENT-TASKBOOK] [depth:risk_missing_data]。
+- **版权与清权**：本方案由 AI agent 生成，未使用个人隐私数据、受保护的未公开数据或需授权使用的数据；Logo 与导视为原创概念方向，地图与几何基于仓库公开资料与临时边界。**逐资产版权/来源台账**（字体、生成工具与模型、图件、Logo、代码依赖、地图与数据转换的作者、许可证、允许用途与限制）见 `report/copyright_statement.md`；其中文化素材清权（A-CULTURE-CLEARANCE）登记为 `pending_clearance`，在权利人确认前不扩大使用范围，正文不绝对化宣称全部素材已清权 [source:AGENT-TASKBOOK] [depth:risk_missing_data]。
 - **法律边界**：本方案不构成正式规划、审批依据、工程可行性结论或政府实施承诺；"运行图""班次卡""枢纽站"等名称均为概念命名，不影射既有商标与机构 [source:AGENT-TASKBOOK]。
 - **隐私与人工复核**：所有 AI 场景（尤其 B04/B08/B10）遵循最小化数据采集、公开告知、可撤回、人工复核与一键回退原则 [standard:GENERATIVE-AI-INTERIM-MEASURES] [standard:BARRIER-FREE-ENVIRONMENT-LAW]。
 
