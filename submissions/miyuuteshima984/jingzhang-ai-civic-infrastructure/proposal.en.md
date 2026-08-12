@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Uses City Completeness as the spatial review method for the Centennial Jing-Zhang AI Innovation Belt: seven ordinary-city capabilities—HOME, LEARN, CARE, MOVE, GREEN, WORK and COMMON LIFE—form a durable everyday base first, while AI enters research, community, mobility and commerce as an optional enhancement layer. The structure is one public green spine, six completeness segments, six east-west stitching links and three key areas; Shuangfen Fortress remains only a community-name easter egg inside AI Origin Community."
 tracks: ["ai-origin-community", "ai-public-services", "ai-traffic-walkability"]
 scenarios: ["ai-traffic-walkability", "robot-delivery-low-speed", "enterprise-service-copilot", "ai-cultural-guide", "ai-health-service-navigation"]
-iteration: "v0.4"
+iteration: "v0.5"
 ---
 
 # JING-ZHANG CITY COMPLETENESS
@@ -54,6 +54,24 @@ These cases do not support statutory Jing-Zhang boundaries, heights or developme
 
 The C7 City Completeness Contract is **HOME, LEARN, CARE, MOVE, GREEN, WORK and COMMON LIFE**. Every renewal move states which capability it improves, whether it weakens another, and who maintains a non-AI baseline. **AI is not an eighth land-use category**; it is an optional enhancement layer across the seven capabilities. [metric:city_completeness_dimension_count]
 
+### Three Positionings—Five Functions—Three Areas and Two Wings Coordination Loop
+
+v0.5 upgrades the taskbook structure from a text registry into an explicit design loop. The three positionings—**Centennial Jing-Zhang Cultural Belt, Urban AI Life Experience Belt, and AI Integrated Innovation Belt**—flow through five functions—**full-stack AI innovation, a world-class AI ecosystem, AI+ scenario empowerment, a vibrant AI-enabled city, and a global AI-governance voice**—and become five urban interfaces: **AI Origin Community, Zhongzhiyuan AI Innovation Acceleration Area, Dazhongsi AI Industry Cluster, Zhongguancun Technology Service Wing, and Xiaoyuehe Scenario Empowerment Wing**. Every interface returns to C7 acceptance rather than allowing industry or technology objectives to bypass ordinary-city capability. [source:AGENT-TASKBOOK]
+
+![Three positionings, five functions, three areas/two wings and C7 feedback loop](assets/figures/taskbook-coordination-loop.en.svg)
+
+The eight factor classes are no longer a flat resource list. They form one conversion chain: **land, space, industry, capital, talent, compute, data and scenarios → research → translation → testing → adoption → long-term life → C7 feedback**. Capital, compute, institutional cooperation and data arrangements remain conceptual interfaces pending confirmation by real responsible parties; potential interfaces are not described as established commitments. [source:AGENT-TASKBOOK]
+
+![Full-factor ecosystem map for land, space, industry, capital, talent, compute, data and scenarios](assets/figures/ai-ecosystem-map.en.svg)
+
+Regional collaboration uses the same discipline: potential role, exchanged factor, interface, data boundary and validation method. Beiyuwei Community provides a daily-life scenario comparison; Future Science City provides a research-translation method comparison; Huairou Science City provides a research-ecosystem method reference; Beijing E-Town provides an industrialisation and market-validation comparison; and Beijing–Tianjin–Hebei provides a cross-regional scale for talent, industry and governance research. None means that the counterpart has consented, funded, shared data or made an administrative commitment.
+
+![Regional collaboration validation matrix](assets/figures/regional-collaboration-matrix.en.svg)
+
+The brand layer does not create an “official event logo”. It proposes an identity for this submission itself: **C7 COMPLETE LOOP**. The open ring means the city is continually being completed; the two rail lines recall the Jing-Zhang linear memory; seven nodes correspond to C7. Chinese and English have equal rank, every C7 icon is paired with text, and the system avoids government emblems, official seals, unauthorised institutional logos or visual claims that the proposal has already been implemented.
+
+![C7 brand and VI concept direction](assets/figures/brand-vi-direction.en.svg)
+
 ## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
 
 The spatial structure is **one spine, six segments, six stitches and three cores**. The Jing-Zhang public green spine is the shared north-south base and first provides walking, cycling, accessibility, cultural memory, shade, stormwater performance and free places to stay; digital interpretation and sensing are secondary overlays. Six completeness segments run from a southern culture/arrival zone through daily services, long-term living, AI Origin, academy collaboration and northern R&D. Six east-west stitching links express priority connections among communities, the park, universities/innovation areas and transit/city districts. [depth:overall_spatial_structure] [standard:MOHURD-URBAN-DESIGN-MEASURES]
@@ -81,6 +99,10 @@ Public exchange space accompanies all three tasks: an open exchange yard in Zhon
 Five design personas are used: long-term residents and families; students and researchers; founders and company employees; international developers and visiting scholars; and service workers, commuters and visitors. They are tests of whether the design excludes ordinary life, not demographic statistics. [metric:persona_count]
 
 Ten AI+ scenarios answer the same questions: who uses it, where, what real problem exists, what AI does, what the non-AI baseline is, who is accountable, how a human takes over on failure, and how success is evaluated. They are: controlled low-speed robotics in Zhongzhiyuan; shared research equipment and compute; university-result-to-city-problem translation; an accessibility assistant in Shuangfen Fortress; voluntary home-robot tests; community shared-space scheduling; multilingual Jing-Zhang heritage interpretation; complex-transfer and walking assistance; time-limited AI-native retail pilots; and a C7 completeness audit assistant. [metric:ai_scenario_count] [metric:non_ai_baseline_coverage_ratio]
+
+v0.5 expands those ten items from a one-line list into complete scenario cards. Every card states place/users, the real problem, the AI enhancement, the non-AI baseline and exit, and the evidence direction that decides whether the pilot can scale. Scenario KPIs are concept-stage validation directions, not measured performance or government commitments.
+
+![Ten AI+ scenario cards: problem—enhancement—baseline—exit—acceptance](assets/figures/ai-scenario-cards.en.svg)
 
 SCN-01, SCN-05 and SCN-09 provide technology, living-environment and market validation respectively, following “small scope, stoppable, reviewable, then consider expansion”. [metric:industry_test_scenario_count] Three public honour/pilgrimage nodes—Open Test Yard, City Commons Hall and Jing-Zhang Civic Station—must have real public functions before image-making value. [metric:pilgrimage_landmark_count]
 
@@ -122,6 +144,10 @@ The Jing-Zhang public green spine is first an ordinary public-life infrastructur
 
 Six civic commons follow `public_first_non_app_entry`: a person without an account, smartphone or willingness to be profiled can still enter and receive basic service. Package public-space area and ratio support conceptual comparison and are not statutory public-space controls. [metric:public_space_area_sqm] [metric:public_space_ratio] [depth:blue_green_public_space]
 
+v0.5 adds seven reusable public-space components: C7 orientation post, shaded stay island, robot handoff bay, staffed service desk, community shared table, accessibility continuity node and Jing-Zhang memory rail. Wayfinding has three layers: L1 permanent physical information keeps movement and help usable without power, network or a phone; L2 operations information communicates opening, closures, events and test status; L3 optional AI adds multilingual Q&A, personalised routing or booking assistance. Turning off L3 must automatically fall back to L1/L2 without loss of basic service.
+
+![Public-space component library and three-layer wayfinding](assets/figures/public-space-components-wayfinding.en.svg)
+
 Urban character does not pursue an “AI architecture look”. Research, residential, education and commercial buildings may have distinct characters, but all should have legible public ground floors, clear pedestrian entries, maintainable equipment, restrained heritage interfaces and night environments that do not depend on giant screens. Technological quality comes from service and spatial organisation rather than chip patterns on façades.
 
 ## Renewal Projects, Implementation Policy, and Phasing
@@ -131,6 +157,10 @@ Implementation does not follow “build a landmark first, repair ordinary life l
 `geometry/phasing.geojson` expresses near-, mid- and long-term conceptual study ranges, not a government construction timetable. Every stage has a “data arrives - recheck - then expand” prerequisite. If official polygons or key constraints change, phasing, land use, metrics, figures and PDFs are recalculated together. [data:geometry/phasing.geojson#PHASE-001] [depth:phasing_implementation]
 
 Long-term operation can include a public C7 walk-through, developer open week, controlled robotics open day, community public-service review and Jing-Zhang technology-history exhibition. Annual reporting should not only announce “what new AI was deployed”; it should also state which ordinary urban capability remains incomplete and which pilots were stopped, rolled back or redesigned.
+
+v0.5 further engineers implementation as **project—space—proposed role—prerequisite—start/stop threshold—maintenance responsibility—acceptance KPI**. The AI layer must be independently stoppable; real organizations, budgets, contracts, events and cross-institution arrangements require separate confirmation by real responsible parties.
+
+![Implementation and long-term operations matrix](assets/figures/implementation-operations-matrix.en.svg)
 
 ## Metrics, Area Recalculation, and Compliance Matrix
 
@@ -181,9 +211,13 @@ The empty constraints layer is itself an auditable data gap. Official heritage, 
 
 The first risk class is **spatial evidence precision**: precise official overall and key-area polygons are unavailable, and the provisional Dazhongsi rectangle has a known location risk. The second is **professional data availability**: building conditions, ownership, regulatory controls, utilities, fire safety, heritage, traffic sections and parking surveys are incomplete. The third is **technology governance**: AI scenarios can create privacy, exclusion, platform dependence, false decisions and maintenance cost, so every scenario keeps a non-AI baseline, human takeover, opt-out and review path. [depth:risk_missing_data]
 
+v0.5 moves privacy principles down to scenario-level data flows. Location/route, health/care, home environment, account/identity, behavior/usage, and research/enterprise data each receive purpose limitation, minimization, access, retention/deletion, human-review and opt-out rules. Refusing tracking cannot become a condition for movement, housing, basic services or public-space access; authorization for one scenario does not automatically extend to another.
+
+![AI scenario data flow and privacy governance](assets/figures/privacy-data-governance.en.svg)
+
 The empty `constraints.geojson` is an active disclosure and does not mean “there are no constraints”. Statutory FAR, height and road area remain unknown; schema sanity bounds or conceptual models are not used to fill them. Figures use locally generated graphics and public/cleared material without commercial map tiles, remote fonts, unlicensed imagery or third-party trademarks. [data:geometry/constraints.geojson#metadata]
 
-AI assisted public-source research, peer scanning, structured writing, GeoJSON, figures, HTML/PDF and validation work. The participant remains responsible for the conceptual direction, the Shuangfen Fortress naming easter egg and the final public submission. Any real implementation still requires statutory planning, professional design, public participation and competent-authority procedures that this package cannot replace.
+AI assisted public-source research, peer scanning, structured writing, GeoJSON, figures, HTML/PDF and validation work. The participant remains responsible for the conceptual direction, the Shuangfen Fortress naming easter egg and the final public submission. `report/copyright_statement.md` now contains a v0.5 per-asset rights and generation ledger covering core PNGs, new SVGs, HTML, PDFs, GeoJSON, font/icon/code status and AI participation. The six international cases in `sources.json` now record access date, intended use, reuse status, limitations, collection and transformation notes. Any real implementation still requires statutory planning, professional design, public participation and competent-authority procedures that this package cannot replace.
 
 ## References
 
@@ -204,5 +238,11 @@ The prose keeps one to three references next to each substantive judgment; compl
 | Provisional key-area boundaries | [source:KEY-AREA-SOURCE] |
 | Official call announcement | [source:OFFICIAL-ANNOUNCEMENT] |
 | Formal submission guide | [source:FORMAL-GUIDE] |
+| Vector Institute | [source:CASE-VECTOR] |
+| Mila | [source:CASE-MILA] |
+| Alan Turing Institute | [source:CASE-TURING] |
+| AI Singapore 100 Experiments | [source:CASE-AISG-100E] |
+| Seoul AI Hub | [source:CASE-SEOUL-AI-HUB] |
+| Punggol Digital District | [source:CASE-PUNGGOL] |
 
 A data gap is not treated as an unanswered design-depth item. All fifteen depth responses state what can be answered now, what information is missing and how later professional confirmation changes the package. The standard matrix similarly separates response completeness from data availability. [standard:MOHURD-URBAN-DESIGN-MEASURES] [depth:metrics_recalculation]
