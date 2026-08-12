@@ -41,6 +41,8 @@ The package also registers a public ODbL OSM background snapshot with `3,653` fe
 
 The levels are not scale copies. The coordinated level governs method and transfer eligibility; the overall level governs the contract network; each key area attempts to falsify it through a reviewable section.[depth:three_level_scope_framework] [depth:overall_spatial_structure] [data:geometry/roads.geojson#ROAD-PGC-01]
 
+The taskbook's three positions and five functions are not eight extra slogans; the same contract makes each reviewable. The Centennial Jing-Zhang Cultural Belt admits railway engineering history, public dimensions and maintenance records only after source registration and review as curatorial input. The Metropolitan AI Life Experience Belt requires phone-free and zero-power shaded passage and quiet sides. The AI-Integrated Innovation Belt runs north constraints → central comparison/translation → southern authorised adoption or exit. The full-stack function is `B0→B1→P→A→ablate/delete`; the world-class ecosystem function is six cases/eight elements with apply—allocate—record—exit gates; the AI+ paradigm is 12 stoppable scenario cards; the active AI city begins with passive form and human operation; global AI-governance voice is only a bilingual, replayable Open Section Protocol that publishes negative results, not a government position or international standard.[source:AGENT-TASKBOOK]
+
 ![Overall design plan thesis, three scope levels and three porous-ground prototypes](assets/figures/site-overview.en.png)
 
 ## Coordinated Research Area: Industry and Future City Research
@@ -86,7 +88,7 @@ The machine-readable authority is `simulation.json#design_evidence.nearest_neigh
 | Finance | Service-wing audit desk and authorised work package | Purpose, Gate, ceiling, conflict and restoration reserve | A-OWN/I-AUD; failure, maintenance and restoration funded | `UNKNOWN/unfunded` |
 | Talent | Campus-park-community path and accountable duty shift | Qualification, hours, responsible role and scenario destination | Training converts to an authorised accountable role | `UNKNOWN` |
 | Compute | Controlled backstage/off-site node; audit window only at ground | Job ID, quota, versions, energy, result, delete/archive | R-DATA/I-AUD; need, provenance and disposition reviewable | No resource/agreement |
-| Data | Controlled capture, de-identified evidence window and registry | Purpose, minimum fields, access, retention and deletion proof | R-DATA; refusal, no prohibited personal data, verified deletion | No field authority |
+| Data | Controlled capture, de-identified evidence window and registry | Purpose, minimum fields, access, retention and deletion proof | R-DATA; refusal, no prohibited personal data, signed deletion evidence required before closure | No field authority |
 | Scenario | Authorised reversible test field and public experience path | Owner, time, safety radius, stop and restoration receipt | A-OWN/R-OPS; real demand, complaint and RESTORED | `E3=0/E4=0 NO-GO` |
 
 The production loop is land authority → controlled space → real industry problem → data contract → compute allocation → B1/prototype → authorised scenario → positive and negative evidence → human adoption/modification/exit. The public loop begins with everyday burden, passes through minimum data and a reversible mock-up, then returns complaints, maintenance and negative results to the human Gate. The north therefore **invents/contains**, the centre **translates/compares**, and the south **adopts/exits**. The Zhongguancun wing supplies IP/finance/talent/compute/professional review; the Xiaoyue River wing supplies authorised scenario/feedback/maintenance/negative evidence. Neither can release space.[metric:ecosystem_element_count]
@@ -123,7 +125,16 @@ The three types are not copied nodes: the north controls source-public exposure,
 
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
-Six personas cover mobility-limited travellers/caregivers, outdoor/night workers, learners, R&D/test staff, transfer/international visitors, and maintenance/professional reviewers. They describe spatial failure burdens only; no person or health status is identified.[metric:persona_count] [source:BARRIER-FREE-ENVIRONMENT-LAW]
+Six personas describe spatial failure burdens only; no person or health status is identified. Each is traceable to scenarios, space and operating/exit duty.[metric:persona_count] [source:BARRIER-FREE-ENVIRONMENT-LAW]
+
+| Persona | Minimum right and scenarios | Spatial placement | Operation / exit duty |
+| --- | --- | --- | --- |
+| P01 mobility-limited traveller/caregiver | SC03/04/06: continuous phone-free, zero-power passage | central clear width, shade and visible path | C-ACC accompanied audit; one barrier closes/restores |
+| P02 outdoor/night worker | SC02/07/11: truthful conditions and quiet rest edge | northern source screen; southern type quiet side | R-OPS daily check; complaint/harm cannot be offset |
+| P03 learner | SC04/05/11: passage must not turn learning into noise receiver | central turn court and quiet learning edge | authorised campus/community body + acoustics; stop if quiet side worsens |
+| P04 R&D/test worker | SC01/02/10: exchange without exposing the public | northern back—evidence—public layering | A-DES/C-ENV source+B1 record; delete AI if no gain |
+| P05 transfer/international visitor | SC05/07/08: legible arrival without surveillance/App | southern threshold—buffer—quiet-side type only | NO-GO before canonical anchor; retract if shown as real site |
+| P06 maintenance/professional reviewer | SC03/09/10/12: auditable duty, missing data, negatives and restoration | maintenance access, PARK, ledger/restore table | primary+alternate+independent record; Day90 restores absent new authority |
 
 | Scenario | Conflict | B1 / AI | Human gate and stop |
 | --- | --- | --- | --- |
@@ -144,6 +155,8 @@ The authoritative 12-card, six-persona and three-industry-test structure is in `
 
 Three pilgrimage nodes expose AI limits rather than celebrate an algorithm: Zhongzhiyuan’s Opening Ledger displays B1, AI alternatives, rejection and uncertainty; AI Origin’s Turn Court makes passage and quiet side physically legible; the Dazhongsi-type Restore Table records stopping, restoration and asset destination and remains unanchored.[data:geometry/public_space.geojson#PUBLIC-PGC-06] [metric:pilgrimage_node_count]
 
+The honour system is not a celebrity wall. It publishes only verifiable contribution units: rule versions, replay records, rejected options, negative results, repair duty and restoration receipt; people or institutions appear only with permission. The component library has five reversible obligation types—offset gate, continuous shade, quiet-side edge, evidence window and mechanical PARK/clear-down piece. Each carries clear-width, fire/access, maintenance, removal and return fields and cannot be procured from a concept drawing. Nodes, contribution units and obligation components answer agent.4 without trading publicness for consumption or screens.[source:AGENT-TASKBOOK]
+
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
 The land-use map is a non-statutory programme-study partition; complete coverage serves topology and narrative only. Building features express source/receiver morphology, not current or planned buildings. FAR, height, density, current area, title and each retain/renovate/demolish decision remain `UNKNOWN`. The building-environment code is a deepening interface, not an outdoor compliance claim.[standard:MOHURD-GB55016-2021] [metric:floor_area_ratio]
@@ -162,7 +175,9 @@ Environmental instruments and local compute serve co-location, design comparison
 
 The blue-green layer diagrams passive shade, ordinary planting maintenance and a quiet-side interface. It claims no canopy, cooling, pollutant reduction, stormwater or statutory green-space supply. Public space stays non-commercial, continuously accessible and phone-free.[data:geometry/green_space.geojson#GREEN-PGC-01] [metric:green_ratio] [metric:public_space_ratio]
 
-Culture turns the century-old engineering values of public dimensions, sections, checking and maintenance—not copied railway imagery—into AI culture: Centennial Section Open Class, Porosity Blind-Test Week, Negative Results Exhibition, Restore and Sign-off Day, and a bilingual Open Section Protocol. History requires curatorial review; events are proposals, not government arrangements.[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [depth:blue_green_public_space]
+Culture turns public dimensions, sections, checking and maintenance—not copied railway imagery—into AI culture. A qualified curator must first build a register of artefact/date/source/licence/display scope; Zhongguancun culture is carried by open methods, replay and learning from failure, not corporate logos or portraits. Wayfinding has three layers: belt identity uses only pore/bend/receiver abstractions; spatial signs mark source, public front, quiet side and maintenance/egress; evidence signs show version, E-level, UNKNOWN, duty and exit state. The bilingual communication line is “Open the ground, not a direct noise path / 让地面打开，不让噪声直送到人”; it is not the belt logo, a standard or official endorsement.[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [depth:blue_green_public_space]
+
+Annual operation is a loop, not an event list. Spring's Centennial Section Open Class curates registered-source history and proposed sections, with factual status kept explicit. Summer's Porosity Blind-Test Week lets a developer community submit B1/AI options against one frozen input; professionals may reject all. Autumn's Negative Results Exhibition publishes missing data, complaints, non-transfer and deletion. Winter's Restore and Sign-off Day closes temporary occupation and records asset destinations. Developers maintain versions, reproducibility and issues, never field control. Scenario access follows application—authority—B1—ablation—reversible mock-up—exit. The public route reads the Opening Ledger—Turn Court—Restore Table causal chain. The bilingual Open Section Protocol transfers only clearly licensed methods; any international or attraction conversion must pass source licence, applicability, named authority, public no-harm, cost/maintenance and exit gates. Failure creates a research record, never a recruitment, funding or government promise.[metric:culture_operation_count]
 
 ## Renewal Projects, Implementation Policy, and Phasing
 
@@ -214,7 +229,7 @@ Everything below is a contract-admission target, **not an appointment, observed 
 | --- | --- | --- | --- |
 | P0 life safety/emergency/prohibited data/lost authority | Immediate STOP, CLEAR/close, stop collection | ≤5 min | Call alternate at 5 min; escalate A-OWN/A-EMG ≤15 min |
 | P1 no-harm exceedance/credible safety complaint | Return B1; close if B1 uncertain | ≤15 min while open | ≤30 min; on-site assessment ≤2 h |
-| P2 maintenance/drift/non-critical missingness | Suspend conclusion; use verified B1 | ≤4 operating h | Before next opening; signed MTTR governs repair |
+| P2 maintenance/drift/non-critical missingness | Suspend conclusion; use only a B1 admitted by the signed state gate, otherwise close | ≤4 operating h | Before next opening; signed MTTR governs repair |
 | P3 document/ordinary complaint | Log and acknowledge | ≤1 working day | Escalate ≤2 days; disposition/investigation note ≤5 days |
 
 No response only extends closure, and meeting a target never auto-clears risk. Duty, MTTR and drills are unsigned, so these SLOs are not feasibility or performance evidence.
@@ -261,7 +276,11 @@ Exit assets include B1 rules, model/dependency manifest or deletion record, reje
 
 ## Metrics, Area Recalculation, and Compliance Matrix
 
-Known package facts are six mechanism cases/30 first-party sources, eight ecosystem elements, three taskbook names, 12 scenarios, six personas, three industry tests, three conceptual landmarks, 12 RACI seat definitions, N1–N10, WP00–09, a 90-day protocol, three provisional context constraints, 3,653 OSM snapshot features, E3=0, E4=0 and the concept geometry’s own topology. These are package-content facts, not ecosystem outcomes, appointments, performance or release. Unknowns include real site, effect, AI net value, cost, FAR, current green/public space and the Dazhongsi anchor.[metric:global_case_study_count] [metric:ecosystem_element_count] [metric:osm_context_feature_count] [metric:e3_site_evidence_count] [metric:e4_implementation_evidence_count] [metric:ai_net_value]
+Known package facts are six mechanism cases/30 first-party sources, eight ecosystem elements, three taskbook names, 12 scenarios, six personas, three industry tests, three conceptual landmarks, 12 RACI seat definitions, N1–N10, WP00–09, a 90-day protocol and three provisional context constraints.[metric:global_case_study_count] [metric:ecosystem_element_count]
+
+The OSM snapshot contains 3,653 features, E3=0 and E4=0. These and the concept geometry's own topology/area are package-content facts, not ecosystem outcomes, appointments, performance or release.[metric:osm_context_feature_count] [metric:e3_site_evidence_count] [metric:e4_implementation_evidence_count]
+
+Unknowns include real site, effect, AI net value, cost, FAR, current green/public space and the Dazhongsi anchor.[metric:ai_net_value]
 
 EPSG:4548 areas only check internal consistency of the submitted provisional polygons. Sources, assumptions, nine GeoJSON layers, three matrices and self-check are authoritative; figures/HTML/generated illustration are explanatory.[metric:site_area_sqm] [depth:metrics_recalculation]
 
@@ -269,7 +288,9 @@ EPSG:4548 areas only check internal consistency of the submitted provisional pol
 
 ## Risk, Copyright, and Compliance
 
-The primary risks are treating provisional geometry as site fact, averages as no-harm, AI advice as approval, 90 days as annual proof, a reversible pilot as permanent occupation, or maintenance labour as invisible. Three provisional/context features in `constraints.geojson` expose the missing canonical base, unanchored PROV-KEY-003 and absent E3/E4; they are non-engineering-release blockers, not a Section-C boundary. Each risk requires downgrade, stop or restoration.[depth:risk_missing_data] [data:geometry/constraints.geojson#CONSTRAINT-PGC-01] [data:geometry/constraints.geojson#CONSTRAINT-PGC-02] [data:geometry/constraints.geojson#CONSTRAINT-PGC-03]
+The primary risks are treating provisional geometry as site fact, averages as no-harm, AI advice as approval, 90 days as annual proof, a reversible pilot as permanent occupation, or maintenance labour as invisible. Three provisional/context features in `constraints.geojson` expose the missing canonical base and unanchored PROV-KEY-003.[depth:risk_missing_data] [data:geometry/constraints.geojson#CONSTRAINT-PGC-01] [data:geometry/constraints.geojson#CONSTRAINT-PGC-02]
+
+The third feature exposes absent E3/E4. All three are non-engineering-release blockers, not a Section-C boundary; each risk requires downgrade, stop or restoration.[data:geometry/constraints.geojson#CONSTRAINT-PGC-03]
 
 The minimum data model has no name, phone, account, face, image, health, precise individual location, employer identity or continuous trajectory. Public feedback is object-level and time-aggregated. A forbidden field triggers stop, deletion and accountable handling.[source:SOURCE-REGISTRY]
 
@@ -280,8 +301,15 @@ All spatial proposals are open co-creation concepts, reference schemes or materi
 ## References
 
 - Official announcement, agent taskbook and processed navigation.[source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [source:PROCESSED-FACT-PACK]
+
 - Air, noise, legal responsibility and acoustic-method boundaries.[source:MEE-GB3095-2026] [source:MEE-GB3096-2008] [source:MEE-NOISE-LAW-2021]
+
 - Climate/ventilation and building-environment deepening.[source:CMA-GBT37529-2019] [source:CMA-QXT437-2018] [source:MOHURD-GB55016-2021]
+
 - Open tools are method references only; no model/default/conclusion is transferred.[source:PYTHERMALCOMFORT-METHOD] [source:LADYBUG-TOOLS-METHOD] [source:NOISEMODELLING-METHOD]
-- The 30 first-party records for six cases are in `sources.json`; only mechanisms and failure boundaries transfer.[source:CASE-SG-JTC-LAUNCHPAD-2026] [source:CASE-FR-IDRIS-ALLOCATIONS] [source:CASE-CA-VECTOR-ABOUT] [source:CASE-NL-GOV-BEETHOVEN] [source:CASE-US-CMU-RIC] [source:CASE-ES-22AT-2008]
+
+- The 30 first-party records for six cases are in `sources.json`; the Asian, French and Canadian cases transfer only mechanisms and failure boundaries.[source:CASE-SG-JTC-LAUNCHPAD-2026] [source:CASE-FR-IDRIS-ALLOCATIONS] [source:CASE-CA-VECTOR-ABOUT]
+
+- The Dutch, US and Spanish cases likewise transfer no scale, authority or performance claim.[source:CASE-NL-GOV-BEETHOVEN] [source:CASE-US-CMU-RIC] [source:CASE-ES-22AT-2008]
+
 - Public OSM background/provenance/ODbL limits and the unsigned E0 v2 control template.[source:OSM-CORRIDOR-CONTEXT-2026] [source:CONTROL-CONTRACT-V2]

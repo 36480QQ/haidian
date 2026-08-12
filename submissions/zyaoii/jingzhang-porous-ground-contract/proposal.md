@@ -41,6 +41,8 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 三层不是一张图的缩放。统筹层管理方法和转移资格；总体层管理空间合同网络；重点区用一张可验收断面反证合同。[depth:three_level_scope_framework] [depth:overall_spatial_structure] [data:geometry/roads.geojson#ROAD-PGC-01]
 
+任务书三大定位与五大功能不另起八个口号，而被同一合同逐项验收：百年京张文化带以真实铁路工程史、公开尺度和长期维护为策展输入；都市AI生活体验带以零手机、零电也可用的阴影通路与静侧为公共底线；AI融合创新带以北部提出约束—中部比较翻译—南部授权采用/退出为生产链。AI全栈自主创新体系由 `B0→B1→P→A→消融/删除` 实现；世界级AI创新生态由六案与八要素的申请—配给—留痕—退出实现；AI+场景赋能新范式由12张可停止场景卡实现；智能化AI活力城市由被动形态和人工运营先行实现；AI治理全球话语权只提出双语、可复演、公开负结果的“开放断面协议”，不声称代表政府或形成国际标准。[source:AGENT-TASKBOOK]
+
 ![京张会呼吸总体设计总平命题、三层范围与三类首层孔隙原型](assets/figures/site-overview.png)
 
 ## 统筹研究范围产业与未来城市研究
@@ -123,7 +125,16 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ## AI 创新生态、人才画像与 AI+ 场景
 
-六类画像覆盖行动不便/照护者、户外/夜班劳动者、高校与社区学习者、研发试验人员、换乘/国际访客、维护与专业复核人员。画像只描述空间失败负担，不识别人、不推断健康与身份。[metric:persona_count] [source:BARRIER-FREE-ENVIRONMENT-LAW]
+六类画像只描述空间失败负担，不识别人、不推断健康与身份；每类都必须能追到场景、空间和运营责任。[metric:persona_count] [source:BARRIER-FREE-ENVIRONMENT-LAW]
+
+| 画像 | 最低权利与场景 | 空间落点 | 运营/退出责任 |
+| --- | --- | --- | --- |
+| P01 行动不便者/照护者 | SC03/04/06：无手机、零电仍连续通行 | 中部连续净宽、阴影与可视路径 | C-ACC同行走查；一处障碍即关闭/复原 |
+| P02 户外/夜班劳动者 | SC02/07/11：诚实条件与静侧休息 | 北部源侧屏、南部类型静侧 | R-OPS日检；投诉或伤害不得被收益抵消 |
+| P03 高校/社区学习者 | SC04/05/11：穿行不把学习面变成噪声接收面 | 中部弯折庭与静侧学习边缘 | 校地授权主体+声学复核；静侧恶化即停 |
+| P04 研发/试验人员 | SC01/02/10：源侧交换不暴露公众 | 北部后台—证据面—公共前台 | A-DES/C-ENV登记源与B1；AI不胜则删除 |
+| P05 换乘/国际访客 | SC05/07/08：无需监控/App的可读到达 | 南部仅类型“门槛—缓冲—静侧” | canonical锚定前NO-GO；误当真实点位即撤回 |
+| P06 维护/专业复核人员 | SC03/09/10/12：职责、缺测、负结果和复原可审计 | 维护通路、PARK位、开口账本/签收台 | 主责+替补、独立记录；Day90无新授权即RESTORED |
 
 | 场景 | 空间冲突 | B1/AI关系 | 人工门与停止 |
 | --- | --- | --- | --- |
@@ -144,6 +155,8 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 三个朝圣节点不是纪念算法，而是公开AI边界：众智园“开口账本”展示B1、AI候选、淘汰理由与不确定性；AI原点“弯折庭”让人直接读懂通路和静侧；大钟寺类型“复原签收台”公开停止、恢复与资产去向，位置仍未锚定。[data:geometry/public_space.geojson#PUBLIC-PGC-06] [metric:pilgrimage_node_count]
 
+荣誉展示不做名人墙：只展示可核验贡献单元——公开规则版本、复演记录、被淘汰方案、负结果、修复人与复原签收；个人/机构名称只在授权后发布。公共组件库也只含五种可逆义务件：错位门、连续阴影、静侧边缘、证据窗、机械PARK/清场件；每件绑定净宽、消防/无障碍、维护、拆除和归还字段，不能从概念图直接采购。三节点+荣誉单元+组件义务共同响应agent.4，不以消费或屏幕换取公共性。[source:AGENT-TASKBOOK]
+
 ## 用地、建筑规模与拆改留方案
 
 用地图是非statutory功能研究分区，完整覆盖只为拓扑和空间叙事；建筑图只表达三类断面的源侧/接收侧质量，不代表现状或拟建。FAR、高度、密度、现状面积、产权与每一栋拆改留保持 `UNKNOWN`。建筑环境规范只作为专业深化接口，不把室内标准直接当室外达标结论。[standard:MOHURD-GB55016-2021] [metric:floor_area_ratio]
@@ -162,7 +175,9 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 蓝绿层只表达“公共阴影+普通植物维护+静侧”的被动接口，不宣称树冠、降温、污染削减、雨洪或法定绿地。公共空间必须保持非消费性、连续无障碍和零手机可用。[data:geometry/green_space.geojson#GREEN-PGC-01] [metric:green_ratio] [metric:public_space_ratio]
 
-文化叙事不复制铁路图像，而把百年工程文化中的“公开尺度、断面、复核、长期维护”转成AI新文化：春季“百年断面公开课”、夏季“开合盲测周”、秋季“负样本展”、冬季“复原签收日”，以及双语“开放断面协议”。历史内容须策展核验；活动只是运营建议，不是政府安排。[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [depth:blue_green_public_space]
+文化叙事不复制铁路图像，而把百年工程文化中的“公开尺度、断面、复核、长期维护”转成AI新文化。历史资源先由适格策展人建立“实体/年代/来源/许可/可展示范围”台账，再进入空间；中关村创新文化以公开方法、复演与失败学习承接，不把企业logo或人物肖像当文化证据。导视分三层：全带识别只用孔隙/折线/接收面抽象语法；空间导视标源侧、公共前台、静侧、维护/疏散路径；证据标识只显示版本、E级、UNKNOWN、责任和退出状态。中英国际传播句固定为“Open the ground, not a direct noise path / 让地面打开，不让噪声直送到人”，不是整体Logo、标准或官方背书。[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [depth:blue_green_public_space]
+
+年度运营不是活动清单而是闭环：春季“百年断面公开课”由策展/规划复核历史与断面；夏季“开合盲测周”由开发者社区提交同一冻结输入下的B1/AI匿名候选，专业组可全部淘汰；秋季“负样本展”公开缺测、投诉、不可迁移原因与删除决定；冬季“复原签收日”关闭临时占用并公布资产去向。开发者社区只维护版本、复现实验与issue，不操作现场；场景开放须经过申请—授权—B1—消融—可逆样段—退出状态机；公共体验沿开口账本—弯折庭—复原签收台读取因果链。双语“开放断面协议”只传播许可清楚的方法；国际伙伴或招引对象若要转化，必须依次通过来源许可、适用性、主体授权、公共no-harm、成本/维护和退出六门，未通过只形成研究记录，不形成招商、资金或政府承诺。[metric:culture_operation_count]
 
 ## 更新项目清单、实施政策与分期计划
 
@@ -214,7 +229,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 | --- | --- | --- | --- |
 | P0生命安全/应急/禁采数据/失权 | 立即STOP、CLEAR/关闭、停采 | ≤5分钟 | 5分钟叫替补；≤15分钟升A-OWN/A-EMG |
 | P1 no-harm越界/可信安全投诉 | 回B1；B1不明即关闭 | ≤15分钟（开放时） | ≤30分钟；≤2小时到场评估 |
-| P2维护/漂移/非关键缺测 | 暂停结论、用已验证B1 | ≤4运营小时 | 下一开放周期前；按签署MTTR修复 |
+| P2维护/漂移/非关键缺测 | 暂停结论；仅可使用经签署状态门准入的B1，否则关闭 | ≤4运营小时 | 下一开放周期前；按签署MTTR修复 |
 | P3文档/普通投诉 | 登记回执 | ≤1工作日 | ≤2工作日升级；≤5工作日处置/说明 |
 
 无人响应只延长关闭；达到目标也不自动解除风险。真实值班、MTTR和演练未签，故这些SLO不能作为可行性或绩效证据。
@@ -261,7 +276,11 @@ AI永不触发状态迁移。立即停止包括：通路/疏散受阻、构件�
 
 ## 指标体系、面积复算与合规矩阵
 
-包内可知的是：6个机制案例/30条一手来源、8个生态要素、三处任务书名称、12场景、6画像、3产业测试、3概念地标、12个RACI席位定义、N1—N10、WP00—09、90日协议、3个provisional context constraints、OSM快照3653要素、E3=0、E4=0，以及概念几何自身拓扑和面积。它们都是包内容事实，不是生态成效、任命、性能或放行。不可知的是：真实点位、实际性能、AI净增益、费用、FAR、现状绿地/公共空间和大钟寺锚点。[metric:global_case_study_count] [metric:ecosystem_element_count] [metric:osm_context_feature_count] [metric:e3_site_evidence_count] [metric:e4_implementation_evidence_count] [metric:ai_net_value]
+包内可知的是：6个机制案例/30条一手来源、8个生态要素、三处任务书名称、12场景、6画像、3产业测试、3概念地标、12个RACI席位定义、N1—N10、WP00—09、90日协议和3个provisional context constraints。[metric:global_case_study_count] [metric:ecosystem_element_count]
+
+OSM快照含3653要素，E3=0、E4=0；这些与概念几何自身拓扑/面积都是包内容事实，不是生态成效、任命、性能或放行。[metric:osm_context_feature_count] [metric:e3_site_evidence_count] [metric:e4_implementation_evidence_count]
+
+不可知的是：真实点位、实际性能、AI净增益、费用、FAR、现状绿地/公共空间和大钟寺锚点。[metric:ai_net_value]
 
 面积以EPSG:4548对提交临时 polygon 内部复算，仅用于包内一致性；不能作为精确规划指标。来源、假设、九GeoJSON、三矩阵和self_check构成权威层，图件/HTML/生成插画只是解释层。[metric:site_area_sqm] [depth:metrics_recalculation]
 
@@ -269,7 +288,9 @@ AI永不触发状态迁移。立即停止包括：通路/疏散受阻、构件�
 
 ## 风险、版权与合规说明
 
-最主要的风险不是“模型不准”，而是把临时几何当真实场地、把多指标平均当no-harm、把AI建议当批准、把90天当全年、把可逆试点变长期占用、或让维护劳动隐形。`constraints.geojson` 用三个 provisional/context features 明示 canonical base 缺失、PROV-KEY-003未锚定和E3/E4缺失；它们是非工程放行阻断，不是C段边界。任何一项风险都要求降级、停止或复原。[depth:risk_missing_data] [data:geometry/constraints.geojson#CONSTRAINT-PGC-01] [data:geometry/constraints.geojson#CONSTRAINT-PGC-02] [data:geometry/constraints.geojson#CONSTRAINT-PGC-03]
+最主要的风险不是“模型不准”，而是把临时几何当真实场地、把多指标平均当no-harm、把AI建议当批准、把90天当全年、把可逆试点变长期占用、或让维护劳动隐形。`constraints.geojson` 用三个 provisional/context features 明示 canonical base 缺失和PROV-KEY-003未锚定。[depth:risk_missing_data] [data:geometry/constraints.geojson#CONSTRAINT-PGC-01] [data:geometry/constraints.geojson#CONSTRAINT-PGC-02]
+
+第三个context feature明示E3/E4缺失；三者都是非工程放行阻断，不是C段边界，任何一项都要求降级、停止或复原。[data:geometry/constraints.geojson#CONSTRAINT-PGC-03]
 
 最小数据不含姓名、手机号、账号、脸、图像、健康、精确个人定位、单位身份或连续轨迹。公众反馈只做对象级问题和聚合时段；专业数据按授权保存。发现禁用字段立即停止、删除并由责任主体处理。[source:SOURCE-REGISTRY]
 
@@ -280,8 +301,15 @@ AI永不触发状态迁移。立即停止包括：通路/疏散受阻、构件�
 ## 参考资料
 
 - 官方公告、agent任务书、场地包与处理索引。[source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [source:PROCESSED-FACT-PACK]
+
 - 环境空气、声环境、噪声责任与声学方法边界。[source:MEE-GB3095-2026] [source:MEE-GB3096-2008] [source:MEE-NOISE-LAW-2021]
+
 - 气候/通风和建筑环境专业深化入口。[source:CMA-GBT37529-2019] [source:CMA-QXT437-2018] [source:MOHURD-GB55016-2021]
+
 - 可复核工具只作方法库，不移植模型、默认数据或结论。[source:PYTHERMALCOMFORT-METHOD] [source:LADYBUG-TOOLS-METHOD] [source:NOISEMODELLING-METHOD]
-- 六案30条一手来源见 `sources.json`；案例只转译机制与失败边界。[source:CASE-SG-JTC-LAUNCHPAD-2026] [source:CASE-FR-IDRIS-ALLOCATIONS] [source:CASE-CA-VECTOR-ABOUT] [source:CASE-NL-GOV-BEETHOVEN] [source:CASE-US-CMU-RIC] [source:CASE-ES-22AT-2008]
+
+- 六案30条一手来源见 `sources.json`；亚洲、欧洲和加拿大案例只转译机制与失败边界。[source:CASE-SG-JTC-LAUNCHPAD-2026] [source:CASE-FR-IDRIS-ALLOCATIONS] [source:CASE-CA-VECTOR-ABOUT]
+
+- 荷兰、美国和西班牙案例同样不转移规模、权力或绩效结论。[source:CASE-NL-GOV-BEETHOVEN] [source:CASE-US-CMU-RIC] [source:CASE-ES-22AT-2008]
+
 - OSM公开背景、provenance与ODbL边界；v2控制合同为未签E0模板。[source:OSM-CORRIDOR-CONTEXT-2026] [source:CONTROL-CONTRACT-V2]

@@ -466,8 +466,8 @@
       "value": 3653,
       "unit": "count",
       "source_files": [
-        "data/osm_corridor_context.geojson",
-        "data/osm_corridor_context.provenance.json"
+        "visual/assets/osm-context-data.js",
+        "visual/assets/osm-context-provenance.json"
       ],
       "formula": "len(complete attributed OSM context snapshot features)",
       "confidence": "high",
@@ -481,8 +481,8 @@
       "value": 283,
       "unit": "count",
       "source_files": [
-        "data/osm_corridor_context.geojson",
-        "data/osm_corridor_context.provenance.json"
+        "visual/assets/osm-context-data.js",
+        "visual/assets/osm-context-provenance.json"
       ],
       "formula": "count(OSM snapshot features where context_class=railway)",
       "confidence": "high",
@@ -496,8 +496,8 @@
       "value": 1065,
       "unit": "count",
       "source_files": [
-        "data/osm_corridor_context.geojson",
-        "data/osm_corridor_context.provenance.json"
+        "visual/assets/osm-context-data.js",
+        "visual/assets/osm-context-provenance.json"
       ],
       "formula": "count(OSM snapshot features where context_class=road)",
       "confidence": "high",
@@ -511,8 +511,8 @@
       "value": 55,
       "unit": "count",
       "source_files": [
-        "data/osm_corridor_context.geojson",
-        "data/osm_corridor_context.provenance.json"
+        "visual/assets/osm-context-data.js",
+        "visual/assets/osm-context-provenance.json"
       ],
       "formula": "count(OSM snapshot features where context_class=named_context)",
       "confidence": "high",
@@ -526,8 +526,8 @@
       "value": 24,
       "unit": "count",
       "source_files": [
-        "data/osm_corridor_context.geojson",
-        "data/osm_corridor_context.provenance.json"
+        "visual/assets/osm-context-data.js",
+        "visual/assets/osm-context-provenance.json"
       ],
       "formula": "count(OSM snapshot features where context_class=station)",
       "confidence": "high",
@@ -541,8 +541,8 @@
       "value": 96,
       "unit": "count",
       "source_files": [
-        "data/osm_corridor_context.geojson",
-        "data/osm_corridor_context.provenance.json"
+        "visual/assets/osm-context-data.js",
+        "visual/assets/osm-context-provenance.json"
       ],
       "formula": "count(OSM snapshot features where context_class=water)",
       "confidence": "high",
@@ -556,8 +556,8 @@
       "value": 147,
       "unit": "count",
       "source_files": [
-        "data/osm_corridor_context.geojson",
-        "data/osm_corridor_context.provenance.json"
+        "visual/assets/osm-context-data.js",
+        "visual/assets/osm-context-provenance.json"
       ],
       "formula": "count(OSM snapshot features where context_class=park)",
       "confidence": "high",
@@ -571,8 +571,8 @@
       "value": 1911,
       "unit": "count",
       "source_files": [
-        "data/osm_corridor_context.geojson",
-        "data/osm_corridor_context.provenance.json"
+        "visual/assets/osm-context-data.js",
+        "visual/assets/osm-context-provenance.json"
       ],
       "formula": "count(OSM snapshot features where context_class=building)",
       "confidence": "high",
@@ -586,8 +586,8 @@
       "value": 72,
       "unit": "count",
       "source_files": [
-        "data/osm_corridor_context.geojson",
-        "data/osm_corridor_context.provenance.json"
+        "visual/assets/osm-context-data.js",
+        "visual/assets/osm-context-provenance.json"
       ],
       "formula": "count(OSM snapshot features where context_class=landuse)",
       "confidence": "high",

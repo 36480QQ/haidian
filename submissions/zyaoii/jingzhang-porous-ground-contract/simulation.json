@@ -1264,7 +1264,7 @@
         {
           "level": "P2",
           "event": "non-safety maintenance defect, sensor/data drift or non-critical missingness",
-          "immediate": "suspend related conclusion; use verified B1",
+          "immediate": "suspend related conclusion; use only a B1 admitted by the signed state gate, otherwise close",
           "primary_ack_target": "<=4 operating hours",
           "alternate_escalation_target": "before next opening; repair within MTTR_class,E4",
           "status": "DRAFT_UNSIGNED_TARGET_NOT_PERFORMANCE"

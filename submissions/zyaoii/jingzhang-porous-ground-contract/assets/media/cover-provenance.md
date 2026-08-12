@@ -27,3 +27,10 @@ Avoid: generic smart-city glow, neon, sci-fi, environmental control room, infogr
 ## Use restrictions
 
 Any package copy must visibly caption it as “AI-generated conceptual illustration / AI 生成概念示意，不作为场地证据”. Exact geometry, labels, dimensions and claims must come from deterministic project files and evidence registries, not from pixels in this image.
+
+## Submitted derivative / 投稿衍生文件
+
+- Authoring source asset: `porous-ground-cutaway-concept-v1.png` (local working asset; not submitted)
+- Submitted package asset: `assets/media/cover.webp`
+- Deterministic conversion: Pillow opens the source PNG, converts it to RGB, and writes WebP with `quality=90, method=6`; pixel dimensions are preserved.
+- Evidentiary status and use restrictions are unchanged by conversion: E0 explanatory concept only, never site, geometry, simulation, approval, construction, or performance evidence.

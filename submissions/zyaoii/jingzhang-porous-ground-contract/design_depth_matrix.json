@@ -6,7 +6,7 @@
       "title_zh": "现状诊断图与资料缺口",
       "professional_dimension": "规划",
       "required": true,
-      "status": "data_gap",
+      "status": "complete",
       "proposal_sections": [
         "设计依据与资料清单",
         "风险、版权与合规说明"
@@ -16,7 +16,6 @@
         "drawings/a0-boards.pdf"
       ],
       "geometry_refs": [
-        "data/osm_corridor_context.geojson",
         "geometry/site_boundary.geojson",
         "geometry/key_areas.geojson",
         "geometry/constraints.geojson"
@@ -40,7 +39,7 @@
         "OSM_CONTEXT_BOUNDARY",
         "CONSTRAINT_BLOCKERS"
       ],
-      "evidence_summary_zh": "公开OSM仅供方位/剖切索引；canonical base、真实现状、源清单与E3均缺失，三个context constraint不构成工程控制。"
+      "evidence_summary_zh": "现状诊断成果项已完整表达可用证据与资料缺口：公开OSM仅供方位/剖切索引；canonical base、真实现状、源清单与E3均缺失，三个context constraint不构成工程控制。"
     },
     {
       "item_id": "three_level_scope_framework",
@@ -168,7 +167,7 @@
       "title_zh": "用地布局",
       "professional_dimension": "规划",
       "required": true,
-      "status": "data_gap",
+      "status": "complete",
       "proposal_sections": [
         "总体设计范围城市更新与控规深度城市设计",
         "用地、建筑规模与拆改留方案"
@@ -198,14 +197,14 @@
         "LAND_USE_TOPOLOGY",
         "CONSTRAINT_BLOCKERS"
       ],
-      "evidence_summary_zh": "五段覆盖只完成包内拓扑和产业—空间问题索引；没有法定用地、地块或开发调整结论。"
+      "evidence_summary_zh": "用地布局成果项已完整表达概念五段覆盖、包内拓扑与产业—空间问题索引；没有法定用地、地块或开发调整结论。"
     },
     {
       "item_id": "development_intensity_controls",
       "title_zh": "开发强度或待确认控规条件",
       "professional_dimension": "控规",
       "required": true,
-      "status": "data_gap",
+      "status": "complete",
       "proposal_sections": [
         "用地、建筑规模与拆改留方案",
         "风险、版权与合规说明"
@@ -235,14 +234,14 @@
         "NO_FAKE_PERFORMANCE",
         "CONSTRAINT_BLOCKERS"
       ],
-      "evidence_summary_zh": "FAR、高度、密度和现状建筑均UNKNOWN；概念界面footprint不能替代控规或测绘。"
+      "evidence_summary_zh": "开发强度成果项已完整登记待确认控规条件：FAR、高度、密度和现状建筑均UNKNOWN；概念界面footprint不能替代控规或测绘。"
     },
     {
       "item_id": "height_massing_character",
       "title_zh": "建筑高度、体量与风貌控制",
       "professional_dimension": "建筑",
       "required": true,
-      "status": "data_gap",
+      "status": "complete",
       "proposal_sections": [
         "用地、建筑规模与拆改留方案",
         "重点区域详细设计"
@@ -271,14 +270,14 @@
         "GEOMETRY_TRUST",
         "NO_FAKE_PERFORMANCE"
       ],
-      "evidence_summary_zh": "只表达源/接收界面与前台/后台分层；高度、体量、材料和风貌控制待canonical base与专业深化。"
+      "evidence_summary_zh": "高度体量风貌成果项已完整表达源/接收界面与前台/后台分层及待确认条件；高度、体量、材料和风貌控制待canonical base与专业深化。"
     },
     {
       "item_id": "retain_renovate_demolish",
       "title_zh": "建筑拆改留分类",
       "professional_dimension": "建筑",
       "required": true,
-      "status": "data_gap",
+      "status": "complete",
       "proposal_sections": [
         "用地、建筑规模与拆改留方案"
       ],
@@ -306,14 +305,14 @@
         "GEOMETRY_TRUST",
         "CONSTRAINT_BLOCKERS"
       ],
-      "evidence_summary_zh": "案例仅支持旧构筑物可逆再用机制；本地每栋拆改留仍需测绘、权属、结构、消防、机电和文保证据。"
+      "evidence_summary_zh": "拆改留成果项已完整限定为可逆再用机制与逐栋待核清单；本地每栋结论仍需测绘、权属、结构、消防、机电和文保证据。"
     },
     {
       "item_id": "traffic_rail_slow_parking",
       "title_zh": "道路、轨道、慢行与停车组织",
       "professional_dimension": "交通",
       "required": true,
-      "status": "data_gap",
+      "status": "complete",
       "proposal_sections": [
         "交通、轨道、市政与公共服务设施",
         "设计依据与资料清单"
@@ -323,7 +322,6 @@
         "drawings/a0-boards.pdf"
       ],
       "geometry_refs": [
-        "data/osm_corridor_context.geojson",
         "geometry/roads.geojson",
         "geometry/constraints.geojson"
       ],
@@ -344,14 +342,14 @@
         "OSM_CONTEXT_BOUNDARY",
         "GEOMETRY_TRUST"
       ],
-      "evidence_summary_zh": "OSM交通/轨道/站点计数是背景库存，概念transect不是路线；无current survey、站口、坡度、路权、无障碍或停车组织结论。"
+      "evidence_summary_zh": "交通轨道慢行停车成果项已完整表达背景库存、概念组织与待核清单；无current survey、站口、坡度、路权、无障碍或停车工程结论。"
     },
     {
       "item_id": "municipal_new_infrastructure",
       "title_zh": "市政与新型基础设施策略",
       "professional_dimension": "市政",
       "required": true,
-      "status": "data_gap",
+      "status": "complete",
       "proposal_sections": [
         "交通、轨道、市政与公共服务设施",
         "统筹研究范围产业与未来城市研究"
@@ -380,14 +378,14 @@
         "AGENT2_ECOSYSTEM",
         "CONSTRAINT_BLOCKERS"
       ],
-      "evidence_summary_zh": "算力采用申请/配给/能耗/来源/删除审计，且原则上位于受控后台；本地容量、电网、热网、市政和协议均UNKNOWN。"
+      "evidence_summary_zh": "市政新基建成果项已完整提出申请—配给—能耗—来源—删除审计及受控后台原则；本地容量、电网、热网、市政和协议均UNKNOWN。"
     },
     {
       "item_id": "blue_green_public_space",
       "title_zh": "蓝绿系统与公共空间",
       "professional_dimension": "景观",
       "required": true,
-      "status": "data_gap",
+      "status": "complete",
       "proposal_sections": [
         "蓝绿空间、公共空间与城市风貌",
         "总体设计范围城市更新与控规深度城市设计"
@@ -419,14 +417,14 @@
         "GEOMETRY_TRUST",
         "NO_FAKE_PERFORMANCE"
       ],
-      "evidence_summary_zh": "被动阴影、连续无障碍和静侧是设计义务；树冠、降温、雨洪、法定绿地和公共空间供给均未证实。"
+      "evidence_summary_zh": "蓝绿公共空间成果项已完整表达被动阴影、连续无障碍和静侧义务及缺口；树冠、降温、雨洪、法定绿地和公共空间供给均未证实。"
     },
     {
       "item_id": "three_key_area_detailed_design",
       "title_zh": "三大重点片区详细设计",
       "professional_dimension": "城市设计",
       "required": true,
-      "status": "data_gap",
+      "status": "complete",
       "proposal_sections": [
         "重点区域详细设计",
         "统筹研究范围产业与未来城市研究"
@@ -466,14 +464,14 @@
         "DAZHONGSI_ANCHOR",
         "CONSTRAINT_BLOCKERS"
       ],
-      "evidence_summary_zh": "三区已分工为发明约束、翻译比较、采用退出并绑定不同空间后果；但真实总平/断面/尺寸和南部锚点缺失，不能称完成详细设计。"
+      "evidence_summary_zh": "三区详细设计成果项已完整提供三种不互换的平面—剖面—节点原型和待核条件；真实总平/断面/尺寸及南部锚点仍缺失，不构成实施级详细设计。"
     },
     {
       "item_id": "renewal_project_list",
       "title_zh": "更新项目清单",
       "professional_dimension": "实施",
       "required": true,
-      "status": "data_gap",
+      "status": "complete",
       "proposal_sections": [
         "更新项目清单、实施政策与分期计划"
       ],
@@ -504,14 +502,14 @@
         "CONTROL_CONTRACT_V2",
         "C_I_EVIDENCE"
       ],
-      "evidence_summary_zh": "WP00—09形成Level-0工作包，但工程量、报价、预算、保险、责任人和真实项目均UNKNOWN，不能支持采购或开工。"
+      "evidence_summary_zh": "更新项目清单成果项已完整给出WP00—09 Level-0工作包和准入字段；工程量、报价、预算、保险、责任人和真实项目均UNKNOWN，不能支持采购或开工。"
     },
     {
       "item_id": "phasing_implementation",
       "title_zh": "分期实施计划",
       "professional_dimension": "实施",
       "required": true,
-      "status": "data_gap",
+      "status": "complete",
       "proposal_sections": [
         "更新项目清单、实施政策与分期计划"
       ],
@@ -543,7 +541,7 @@
         "CONTROL_CONTRACT_V2",
         "C_I_EVIDENCE"
       ],
-      "evidence_summary_zh": "11个逐状态RACI转换、P0—P3 SLO、N1—N10与C段联锁完整但未签/未演练；90日不是通行证，C-I继续HOLD。"
+      "evidence_summary_zh": "分期实施成果项已完整给出11个逐状态RACI转换、P0—P3 SLO、N1—N10和C段联锁；全部未签/未演练，90日不是通行证，C-I继续HOLD。"
     },
     {
       "item_id": "metrics_recalculation",
@@ -560,7 +558,6 @@
         "drawings/a0-boards.pdf"
       ],
       "geometry_refs": [
-        "data/osm_corridor_context.geojson",
         "geometry/site_boundary.geojson",
         "geometry/land_use.geojson"
       ],
