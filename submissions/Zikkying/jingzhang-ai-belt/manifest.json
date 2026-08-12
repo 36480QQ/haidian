@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "package_id": "jingzhang-ai-belt",
   "project_id": "centennial-jingzhang-ai-belt",
   "site_package_version": "0.1.0",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "b1c37d6ffec93276c4b0f131c7de9468eadca6cdd839a79acdb05cc8a55c0545"
+      "sha256": "f9e5079f53df6d8e6db4e8838587e81ee0018171b0b1e99a329c35c32bf8ac78"
     },
     {
       "path": "compliance_matrix.json",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "d91a46ca021e149c5752f16e4969555f9b37ce518a33e14a56e93d660fcb82c9"
+      "sha256": "8ed8de7d4c6feb50e6229fb1f10a19d7c6f1d319f5af5d665f36e0a93ce53e0e"
     },
     {
       "path": "assets/figures/key-areas.en.png",
