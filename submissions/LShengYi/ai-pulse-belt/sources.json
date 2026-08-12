@@ -42,6 +42,30 @@
       "path": "brief/site-package/agent_taskbook.json",
       "source_type": "user_provided_cleared",
       "usage": "Agent-facing open-call principles, six required agent tasks, scenario/branding/operation requirements, and boundary clause."
+    },
+    {
+      "id": "PEER-REFERENCE",
+      "path": "open-city-ai/haidian PR #1701 (人字智带), PR #925 (The Living Rail) — peer proposals",
+      "source_type": "repository_public_registry",
+      "usage": "Peer merged proposals used for mechanism-transfer boundary and expression-depth comparison; no content copied, mechanism conversion only."
+    },
+    {
+      "id": "MNR-LAND-USE-GUIDE",
+      "path": "《国土空间调查、规划、用途管制用地用海分类指南（试行）》(MNR public document)",
+      "source_type": "official_public",
+      "usage": "Land-use classification enum for geometry/land_use.geojson codes and standard_matrix response MNR-LAND-USE-CLASSIFICATION-GUIDE."
+    },
+    {
+      "id": "GENERATIVE-AI-REGULATION",
+      "path": "《生成式人工智能服务管理暂行办法》(2023-08-15 effective)",
+      "source_type": "official_public",
+      "usage": "AI governance principles (data minimization, disclosure, human review) applied to scenario cards and pulse protocol."
+    },
+    {
+      "id": "JZ-RAILWAY-CULTURE",
+      "path": "京张铁路百年公开史料（詹天佑纪念馆/公开出版物信息）",
+      "source_type": "official_public",
+      "usage": "Cultural narrative basis for heritage elements, AR scene 01 and AI pilgrim route; public-domain historical facts only."
     }
   ]
 }

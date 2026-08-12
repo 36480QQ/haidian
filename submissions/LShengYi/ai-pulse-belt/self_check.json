@@ -11,7 +11,6 @@
       "errors": [],
       "warnings": [
         "submissions/LShengYi/ai-pulse-belt/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied",
-        "submissions/LShengYi/ai-pulse-belt/changelog.md: 可能涉及非公开或敏感资料; maintainer review required",
         "submissions/LShengYi/ai-pulse-belt/spatial.json: items[0]: provisional spatial concept needs maintainer review before being treated as public-facing context",
         "submissions/LShengYi/ai-pulse-belt/spatial.json: items[1]: provisional spatial concept needs maintainer review before being treated as public-facing context",
         "submissions/LShengYi/ai-pulse-belt/spatial.json: items[2]: provisional spatial concept needs maintainer review before being treated as public-facing context",
@@ -42,6 +41,7 @@
         "submissions/LShengYi/ai-pulse-belt/assets/figures/mobility-bluegreen.png",
         "submissions/LShengYi/ai-pulse-belt/assets/figures/site-overview.en.png",
         "submissions/LShengYi/ai-pulse-belt/assets/figures/site-overview.png",
+        "submissions/LShengYi/ai-pulse-belt/assets/media/cover.webp",
         "submissions/LShengYi/ai-pulse-belt/assumptions.json",
         "submissions/LShengYi/ai-pulse-belt/changelog.md",
         "submissions/LShengYi/ai-pulse-belt/compliance_matrix.json",
@@ -69,6 +69,7 @@
         "submissions/LShengYi/ai-pulse-belt/report/proposal.html",
         "submissions/LShengYi/ai-pulse-belt/risk.json",
         "submissions/LShengYi/ai-pulse-belt/self_check.json",
+        "submissions/LShengYi/ai-pulse-belt/simulation.json",
         "submissions/LShengYi/ai-pulse-belt/sources.json",
         "submissions/LShengYi/ai-pulse-belt/spatial.json",
         "submissions/LShengYi/ai-pulse-belt/standard_matrix.json",
@@ -78,7 +79,7 @@
       "ai_package_stages": {
         "submissions/LShengYi/ai-pulse-belt": "formal"
       },
-      "total_bytes": 10046853,
+      "total_bytes": 10269621,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -156,10 +157,10 @@
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 7,
+          "source": 8,
           "standard": 9,
           "depth": 15,
-          "data": 22,
+          "data": 24,
           "metric": 9
         }
       }
