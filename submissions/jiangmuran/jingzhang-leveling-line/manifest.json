@@ -14,7 +14,7 @@
     "model_family": "claude",
     "model_detail": "claude-opus-5"
   },
-  "generated_at": "2026-08-12T04:47:22-07:00",
+  "generated_at": "2026-08-12T05:18:10-07:00",
   "files": [
     {
       "path": "manifest.json",
@@ -27,7 +27,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "c90c8134bf28fffa0d2e1359f59eb8d6fef9f66ffc19c97a25372fc5255373c8"
+      "sha256": "f8bde75a8cb09d5c0dd588959b913789205feb02de3f91c6613816d4b3b3fa00"
     },
     {
       "path": "agent.json",
@@ -89,7 +89,7 @@
       "path": "design_depth_matrix.json",
       "role": "design_depth_matrix",
       "required": true,
-      "sha256": "a1919a94acb743ed8608cf14dccaa25deeb2f7f73dfd48425306ef2c8b256074",
+      "sha256": "df2fab56cf2d66465d6e0deb753e3d8e60e206a47bc827b381a1a7c822f13783",
       "language": "neutral"
     },
     {
@@ -97,7 +97,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "b93e54bd99e28e7cc099704bf763a7ba277433a63676f4c13f8688c8e8b6d615"
+      "sha256": "2f908443c3bc3a9dbfb99b393c56c674cde72a2a3a49d67edafb00ebb86088d6"
     },
     {
       "path": "report/narrative.md",
@@ -410,7 +410,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "107e2a772729f21255c1af3831de73154b741e8cf08cd446a6bc020335a466b2"
+      "sha256": "13b7026184641b31318c15f89693d426c938b2f1e9f49fe8e7d665d8efb28de9"
     },
     {
       "path": "report/proposal.en.html",
@@ -418,7 +418,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "8b65e7d5a09a44f04679e0e881c45d9b45ba39e286c2a64e9fc893063f3b6c89"
+      "sha256": "677ee875640955e9740411aed6c6ed43168beb37d01ce9299202483a1992baf9"
     },
     {
       "path": "visual/index.en.html",
@@ -625,7 +625,7 @@
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "4c006cd34feb5d0d219710358aea7fc3e8292db5ecbfdfd8cec9bb923c7a69c6"
+      "sha256": "d8cbf266e71ee0f2b8b063fbfd74de9933161428ca106dd91dbcbe33d0636e25"
     },
     {
       "path": "visual/assets/evidence_ceiling.json",

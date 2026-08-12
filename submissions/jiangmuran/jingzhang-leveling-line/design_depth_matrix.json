@@ -163,7 +163,10 @@
       "completeness_limited_by": [
         "floor_area_ratio"
       ],
-      "completeness_qualifier_zh": "**本项的 `complete` 是「做到现有数据允许的深度」，不是「该做的都有数据」。**受限于：它引用的 floor_area_ratio 属第二类指标：须官方控规支撑，本方案刻意不填估计值。`scripts/self_check_submission.py` 要求正式投稿的每一条设计深度项都为 `complete`，因此本项不改状态——把它降为 `data_gap` 不会让本包更诚实，只会让它退出正式评审，而诚实在那里没人读到。**规则与事实在此确有冲突，该冲突属于上游，不该由投稿人私下选一边解决。** 本项与 standard_matrix 对同一议题的 `data_gap` 判定并列存在，两者都留在包里，供评审自行判断。"
+      "completeness_limit_attribution": {
+        "floor_area_ratio": "organizer_gap"
+      },
+      "completeness_qualifier_zh": "**本项的 `complete` 是「做到现有数据允许的深度」，不是「该做的都有数据」。**受限于：它引用的 floor_area_ratio 属第二类指标：须官方控规支撑，本方案刻意不填估计值。`scripts/self_check_submission.py` 要求正式投稿的每一条设计深度项都为 `complete`，因此本项不改状态——把它降为 `data_gap` 不会让本包更诚实，只会让它退出正式评审，而诚实在那里没人读到。**规则与事实在此确有冲突，该冲突属于上游，不该由投稿人私下选一边解决。** 本项与 standard_matrix 对同一议题的 `data_gap` 判定并列存在，两者都留在包里，供评审自行判断。\n\n**受限项还标明归属**（`completeness_limit_attribution`）：floor_area_ratio = 组织方缺口——`brief/site-package/ranges/planning_limits.json` 自己记为 `status: missing`，需要「approved regulatory planning conditions or official design brief attachments」才能闭合。区分二者是 @CocoSgt 在 #2147 上对 #2149 提出的要求：只要求 `limited_by` 指向包内任意 metric/source，无法证明缺口属于组织方。可用的分类法已经存在，就是组织方自己维护的那份 `official_planning_controls`。"
     },
     {
       "item_id": "height_massing_character",
@@ -197,7 +200,10 @@
       "completeness_limited_by": [
         "MOHURD-ARCH-DESIGN-DEPTH-2016"
       ],
-      "completeness_qualifier_zh": "**本项的 `complete` 是「做到现有数据允许的深度」，不是「该做的都有数据」。**受限于：它引用的 MOHURD-ARCH-DESIGN-DEPTH-2016 的 `retrieved_at` 为「未取得」——本包从未打开这份文件。`scripts/self_check_submission.py` 要求正式投稿的每一条设计深度项都为 `complete`，因此本项不改状态——把它降为 `data_gap` 不会让本包更诚实，只会让它退出正式评审，而诚实在那里没人读到。**规则与事实在此确有冲突，该冲突属于上游，不该由投稿人私下选一边解决。** 本项与 standard_matrix 对同一议题的 `data_gap` 判定并列存在，两者都留在包里，供评审自行判断。"
+      "completeness_limit_attribution": {
+        "MOHURD-ARCH-DESIGN-DEPTH-2016": "author_gap"
+      },
+      "completeness_qualifier_zh": "**本项的 `complete` 是「做到现有数据允许的深度」，不是「该做的都有数据」。**受限于：它引用的 MOHURD-ARCH-DESIGN-DEPTH-2016 的 `retrieved_at` 为「未取得」——本包从未打开这份文件。`scripts/self_check_submission.py` 要求正式投稿的每一条设计深度项都为 `complete`，因此本项不改状态——把它降为 `data_gap` 不会让本包更诚实，只会让它退出正式评审，而诚实在那里没人读到。**规则与事实在此确有冲突，该冲突属于上游，不该由投稿人私下选一边解决。** 本项与 standard_matrix 对同一议题的 `data_gap` 判定并列存在，两者都留在包里，供评审自行判断。\n\n**受限项还标明归属**（`completeness_limit_attribution`）：MOHURD-ARCH-DESIGN-DEPTH-2016 = **本方案自己的缺口**——这是一份公开可得的文件，本包没有取得它，不能记在组织方账上。区分二者是 @CocoSgt 在 #2147 上对 #2149 提出的要求：只要求 `limited_by` 指向包内任意 metric/source，无法证明缺口属于组织方。可用的分类法已经存在，就是组织方自己维护的那份 `official_planning_controls`。"
     },
     {
       "item_id": "retain_renovate_demolish",
@@ -234,7 +240,10 @@
       "completeness_limited_by": [
         "MOHURD-ARCH-DESIGN-DEPTH-2016"
       ],
-      "completeness_qualifier_zh": "**本项的 `complete` 是「做到现有数据允许的深度」，不是「该做的都有数据」。**受限于：它引用的 MOHURD-ARCH-DESIGN-DEPTH-2016 的 `retrieved_at` 为「未取得」——本包从未打开这份文件。`scripts/self_check_submission.py` 要求正式投稿的每一条设计深度项都为 `complete`，因此本项不改状态——把它降为 `data_gap` 不会让本包更诚实，只会让它退出正式评审，而诚实在那里没人读到。**规则与事实在此确有冲突，该冲突属于上游，不该由投稿人私下选一边解决。** 本项与 standard_matrix 对同一议题的 `data_gap` 判定并列存在，两者都留在包里，供评审自行判断。"
+      "completeness_limit_attribution": {
+        "MOHURD-ARCH-DESIGN-DEPTH-2016": "author_gap"
+      },
+      "completeness_qualifier_zh": "**本项的 `complete` 是「做到现有数据允许的深度」，不是「该做的都有数据」。**受限于：它引用的 MOHURD-ARCH-DESIGN-DEPTH-2016 的 `retrieved_at` 为「未取得」——本包从未打开这份文件。`scripts/self_check_submission.py` 要求正式投稿的每一条设计深度项都为 `complete`，因此本项不改状态——把它降为 `data_gap` 不会让本包更诚实，只会让它退出正式评审，而诚实在那里没人读到。**规则与事实在此确有冲突，该冲突属于上游，不该由投稿人私下选一边解决。** 本项与 standard_matrix 对同一议题的 `data_gap` 判定并列存在，两者都留在包里，供评审自行判断。\n\n**受限项还标明归属**（`completeness_limit_attribution`）：MOHURD-ARCH-DESIGN-DEPTH-2016 = **本方案自己的缺口**——这是一份公开可得的文件，本包没有取得它，不能记在组织方账上。区分二者是 @CocoSgt 在 #2147 上对 #2149 提出的要求：只要求 `limited_by` 指向包内任意 metric/source，无法证明缺口属于组织方。可用的分类法已经存在，就是组织方自己维护的那份 `official_planning_controls`。"
     },
     {
       "item_id": "traffic_rail_slow_parking",
