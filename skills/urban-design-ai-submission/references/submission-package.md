@@ -32,6 +32,95 @@ Rich optional presentation media belongs in `assets/media/`: locally stored vide
 
 Every required file path in `manifest.json` must exist and be listed. Hashes should use SHA-256.
 
+## Manifest Field Reference
+
+| Field | Required | Type | Notes |
+|---|---|---|---|
+| `package_id` | yes | string | Unique slug; typically `<github-login>/<proposal-slug>` |
+| `site_package_version` | yes | string | Version of the site package used; check `brief/` for current value |
+| `package_type` | yes | string | Must be `"professional_design_package"` |
+| `package_state` | yes | string | Must be `"ready_for_review"`; scaffolds use `"scaffold"` |
+| `proposal_slug` | yes | string | Matches the directory name under `submissions/<login>/` |
+| `agent_id` | yes | string | GitHub login of the submitting agent/participant |
+| `model` | yes | string | Declared model identifier; must not be a placeholder |
+| `model_family` | no | string | One of `gpt`, `claude`, `deepseek`, `qwen`, `glm`, `kimi`, `grok`, `other` |
+| `model_detail` | no | string | Free-text model description for aggregation |
+| `submission_timestamp` | yes | string | ISO 8601 UTC timestamp |
+| `validation_status` | yes | string | Self-declared validation outcome |
+| `data_confidence_summary` | yes | object | Per-layer confidence; at minimum `geometry`, `metrics`, `sources` |
+| `cover_image` | no | string | Path to `assets/media/` image, or `null`/absent to use generated cover |
+| `files` | yes | array | One entry per file in the package (see File Entry below) |
+
+### File Entry Shape
+
+```json
+{
+  "path": "proposal.md",
+  "role": "proposal",
+  "required": true,
+  "language": "zh",
+  "sha256": "abc123...",
+  "size_bytes": 45200
+}
+```
+
+| Field | Required | Notes |
+|---|---|---|
+| `path` | yes | Relative to the submission root |
+| `role` | yes | See File Role Catalog below |
+| `required` | yes | `true` or `false` |
+| `language` | no | `"zh"`, `"en"`, or `"neutral"` |
+| `translation_of` | no | Set on translation files to reference the primary file path |
+| `sha256` | yes | SHA-256 hex digest of the file content |
+| `size_bytes` | yes | File size in bytes |
+
+### File Role Catalog
+
+| Role | Description |
+|---|---|
+| `proposal` | Primary human-readable proposal (`proposal.md`) |
+| `proposal_translation` | Bilingual counterpart proposal |
+| `manifest` | `manifest.json` |
+| `metrics` | `metrics.json` |
+| `sources` | `sources.json` |
+| `assumptions` | `assumptions.json` |
+| `self_check` | `self_check.json` |
+| `compliance_matrix` | `compliance_matrix.json` |
+| `standard_matrix` | `standard_matrix.json` |
+| `design_depth_matrix` | `design_depth_matrix.json` |
+| `agent_metadata` | `agent.json` |
+| `geometry` | Any `geometry/*.geojson` file |
+| `figure` | Required or optional figure in `assets/figures/` |
+| `report_html` | `report/proposal.html` and bilingual counterparts |
+| `copyright_statement` | `report/copyright_statement.md` |
+| `narrative` | `report/narrative.md` |
+| `drawing` | PDF in `drawings/` |
+| `visual_html` | `visual/index.html` and bilingual counterparts |
+| `video` | Video file in `assets/media/` |
+| `audio` | Audio file in `assets/media/` |
+| `media_poster` | Poster image for video or as cover |
+| `caption_track` | VTT caption file |
+| `transcript` | Markdown transcript for audio/video |
+| `changelog` | `changelog.md` |
+
+## Computing SHA-256 Hashes
+
+Use the following snippet to generate hashes for all files before writing `manifest.json`:
+
+```python
+import hashlib, pathlib
+
+def sha256_file(path: pathlib.Path) -> str:
+    h = hashlib.sha256()
+    with open(path, "rb") as f:
+        for chunk in iter(lambda: f.read(65536), b""):
+            h.update(chunk)
+    return h.hexdigest()
+```
+
+`scripts/finalize_submission.py` computes and writes all hashes automatically. Re-run it after
+every file change to keep `manifest.json` in sync.
+
 ## Professional Evidence
 
 `standard_matrix.json` maps professional standards to proposal sections, drawings, geometry, metrics, sources, assumptions, and self-checks.
