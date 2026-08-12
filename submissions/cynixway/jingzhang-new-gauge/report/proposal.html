@@ -331,6 +331,20 @@ code {
 <li>**留存与删除**：个人数据按最短必要期限留存，提供删除机制。</li>
 </ul>
 <p>以上均为概念建议，具体合规须依据《个人信息保护法》《数据安全法》《无障碍环境建设法》等及专业法律审查 <code>[assumption:A-AI-GOVERNANCE-001]</code>。</p>
+<p>**公平账本（equity ledger）**：不同人群在同一空间中的体验差异不能用平均值掩盖。本方案设立公平账本——为 6 类人群分别记录可达性、热舒适、安全感知、服务等待时间和申诉响应差异 <code><span class="evidence evidence-depth">[depth:blue_green_public_space]</span></code> <code><span class="evidence evidence-standard">[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]</span></code>：</p>
+<p>| 人群 | 最弱体验风险 | 公平账本字段 | 设计响应 | |---|---|---|---| | 老人与儿童 | 热舒适差、无障碍断链、认知负担过重 | 遮阴覆盖率、无障碍主链连通率、标识可读性 | GRN-B1 遗产公园遮阴带 + S4 全龄慢行 + 物理标识优先 | | 残障人士 | 机器人占道、屏幕依赖 | 无障碍通道占用率、非数字替代覆盖率 | INF-E1 禁止机器人占道 + 每场景保留物理路径 | | 夜间劳动者（配送/保洁/安保） | 安全感知差、照明不足、休息空间缺失 | 夜间照度、休息点密度、急停按钮覆盖 | INF-E3 智能照明杆 + 24h 安全节点 | | 低数字素养居民 | AI 服务门槛过高 | 非数字替代使用率、人工窗口等待时间 | LIFE-D2 混合社区中心保留人工窗口 | | 开发者/创业者 | 测试场景入口少、审批不透明 | 场景开放数、审批时长 | INNO-A3 基准测试场开放申请制 | | 游客/访客 | 文化体验碎片化、导向困难 | 多语种覆盖率、导览可达性 | GRN-B1 五段故事节点 + S10 多语种 AI 导览 |</p>
+<p>公平账本当前为**概念框架**——每项字段的具体数值为 <code>design_target</code>（设计目标），不是现状实测值；待运营基线建立后转为可核验指标 <code>[assumption:A-EVIDENCE-001]</code>。</p>
+<h2>城市韧性与全状态降级（NG-6 第七步：韧性态）</h2>
+<p>城市基础设施的成熟标志不是&quot;性能最高&quot;，而是&quot;失效时优雅降级&quot;。本方案把 NG-6 服务契约从六步扩展为**七步**——在原 ⑥ 退场(Sunset)之后增加 **⑦ 韧性态(Resilience)**：定义四种运行状态及各自最低服务标准，确保 AI 系统在极端条件下仍可优雅退让至人工/物理兜底 <code><span class="evidence evidence-depth">[depth:municipal_new_infrastructure]</span></code> <code><span class="evidence evidence-depth">[depth:blue_green_public_space]</span></code> <code><span class="evidence evidence-standard">[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]</span></code>。</p>
+<p>| 状态 | 触发条件 | AI 服务降级 | 最低服务标准（人工/物理兜底） | 恢复路径 | |---|---|---|---|---| | **S0 正常态** | 晴天、网络通、电力通 | 全部运行 | 所有 NG-6 步骤正常 | — | | **S1 雨天态** | 降雨&gt;50mm/24h 或暴雨预警 | S3 接驳导航降频、S8 机器人配送暂停、S9 自动驾驶暂停 | 物理导引标识 + 人工配送 + 雨棚/避雨点每 200m | 雨停后人工检查无障碍主链→恢复 | | **S2 断网态** | 网络中断&gt;30min | 所有 AI 场景暂停 | 物理标识/纸质导览 + 人工值守窗口 + 离线应急地图 | 网络恢复→G3 系统权限 Gate 重新校验→逐步恢复 | | **S3 断电态** | 电力中断&gt;15min | 全部暂停 + 边缘节点切换备用电池 | 应急照明（INF-E3 微电网降级）+ 人工疏散指引 + 急停按钮可触发 | 电力恢复→设备自检→G0-G3 重新审查→恢复 |</p>
+<p>韧性态设计原则 <code>[assumption:A-GREEN-BLUE-CONCEPT-001]</code>：</p>
+<p>1. **最低服务不可省略**：每种降级态都必须保留人工/物理兜底路径，不得出现&quot;AI 停了一切都停&quot;的情况。 2. **急停优先于性能**：S8/S9 机器人/自动驾驶场景在 S1/S2/S3 任意状态触发时立即急停，不以&quot;自治率&quot;替代公共安全。 3. **恢复须过 Gate**：从降级态恢复正常态须经 G0-G3 重新审查（至少人工签字确认），不以自动恢复越级。 4. **年度演练**：每种降级态至少每年一次实地演练（概念建议，待运营主体落实），演练结果写入 evidence-ledger。</p>
+<p>韧性态与 NG-6 退场(Sunset)的区别：退场是&quot;项目生命周期终结&quot;，韧性态是&quot;日常运行中的临时降级&quot;——两者都要求人工最终判断和完整审计记录，但韧性态的恢复路径更短、触发更频繁。</p>
+<h2>最低后悔优先级方法论</h2>
+<p>传统的城市规划优先级往往追求&quot;每项最高&quot;——最高的绿地率、最高的连通率、最高的智能化。但在 provisional 边界 + 缺控规 + 缺现状测绘的条件下，&quot;每项最高&quot;既不可核验也难以实施。本方案采用**&quot;最低后悔&quot;（minimax regret）优先级方法论**——不追求单项最优，而是确保**最弱体验达标**，把有限的确定性用在&quot;避免最差结果&quot;上 <code><span class="evidence evidence-depth">[depth:phasing_implementation]</span></code> <code><span class="evidence evidence-depth">[depth:risk_missing_data]</span></code>。</p>
+<p>**方法论核心**：对 17 子块的每个设计决策，问的不是&quot;能做到多好&quot;，而是&quot;最差会怎样&quot;——如果最差情况可以接受（有兜底、可回滚、不伤害弱势群体），则推进；如果最差情况不可接受（无兜底、不可逆、伤害公共利益），则降级或停止。</p>
+<p>| 优先级 | 判断标准 | 对应子块示例 | 实施策略 | |---|---|---|---| | **P-确保** | 最差情况=有物理兜底、可回滚、不伤害弱势群体 | GRN-B1 遗产公园（物理导览兜底）、LIFE-D2 社区中心（人工窗口兜底） | 近期优先实施，不依赖 AI 成熟度 | | **P-条件** | 最差情况=AI 失效时降级为人工，但需额外运营成本 | INNO-A2 算力中心、IND-C1 总部基地 | 中期实施，前置条件=运营主体+成本确认 | | **P-试点** | 最差情况=AI 失效且人工兜底困难，需严格 geofence | S8 机器人配送、S9 自动驾驶 | 仅 SC-04 级最小试点，G0-G6 全过才扩容 |</p>
+<p>最低后悔方法论把 17 子块的&quot;概念建议&quot;转化为**可排序的实施优先级**——不是所有子块都要同时做到最好，而是按&quot;最差情况的可接受度&quot;排序，优先推进那些即使 AI 失效也不会让城市变差的子块。这与京张铁路&quot;人字形折返线&quot;的工程智慧一致——詹天佑没有追求最短路径或最高速度，而是选择了**最可靠**的工程方案来克服陡坡 <code><span class="evidence evidence-source">[source:HISTORY-ZHAN-TIANYOU]</span></code>。</p>
 <h2>用地、建筑规模与拆改留方案</h2>
 <p>用地布局见上节&quot;五轨分区&quot;，并进一步细化为 17 子块（详见&quot;地块级设计意图矩阵&quot;章节）。建筑规模表达 <code><span class="evidence evidence-depth">[depth:height_massing_character]</span></code> <code><span class="evidence evidence-depth">[depth:retain_renovate_demolish]</span></code>：</p>
 <ul>
