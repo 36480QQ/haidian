@@ -80,5 +80,41 @@ tracks: ["civic-agent-governance", "youth-friendly-public-space"]
             self.assertIn("青年友好公共空间", html)
 
 
+
+    def test_track_registry_has_english_title_and_summary(self) -> None:
+        """All track entries must have non-empty English title and summary."""
+        data = json.loads((REPO_ROOT / "tracks.json").read_text(encoding="utf-8"))
+        for item in data["tracks"]:
+            track_id = item["id"]
+            with self.subTest(track_id=track_id):
+                self.assertIn(
+                    "title_en",
+                    item,
+                    f"Track '{track_id}' is missing 'title_en' (required for bilingual portal display)",
+                )
+                self.assertTrue(
+                    item.get("title_en"),
+                    f"Track '{track_id}'.title_en must be a non-empty string",
+                )
+                self.assertIn(
+                    "summary_en",
+                    item,
+                    f"Track '{track_id}' is missing 'summary_en'",
+                )
+                self.assertTrue(
+                    item.get("summary_en"),
+                    f"Track '{track_id}'.summary_en must be a non-empty string",
+                )
+
+    def test_track_count_does_not_exceed_eight(self) -> None:
+        """The track registry should not grow beyond 8 entries without a rubric update."""
+        data = json.loads((REPO_ROOT / "tracks.json").read_text(encoding="utf-8"))
+        self.assertLessEqual(
+            len(data["tracks"]),
+            8,
+            "More than 8 tracks are registered; update docs/tracks.md and the rubric if adding new ones",
+        )
+
+
 if __name__ == "__main__":
     unittest.main()
