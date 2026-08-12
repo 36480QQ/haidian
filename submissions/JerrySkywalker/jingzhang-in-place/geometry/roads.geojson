@@ -1,6 +1,6 @@
 {
   "type": "FeatureCollection",
-  "name": "roads_scaffold",
+  "name": "concept_connection_family_v0_1",
   "features": [
     {
       "type": "Feature",
@@ -9,10 +9,14 @@
         "id": "ROAD-001",
         "layer": "ROAD_CENTERLINE",
         "source_type": "agent_generated_design",
-        "confidence": "medium",
+        "confidence": "low",
         "geometry_role": "design_proposal",
-        "road_class": "greenway",
-        "name_zh": "慢行与创新服务廊道"
+        "road_class": "public_connection_typology",
+        "name_zh": "普通公共联系原型（非道路红线）",
+        "name_en": "Ordinary public connection prototype (not a road redline)",
+        "connection_family": "ordinary_public_street_or_park_route",
+        "evidence_status": "SURVEY_ONLY_UNKNOWN",
+        "precision_note": "Conceptual cross-connection; alignment and capacity require current field and official data."
       },
       "geometry": {
         "type": "LineString",

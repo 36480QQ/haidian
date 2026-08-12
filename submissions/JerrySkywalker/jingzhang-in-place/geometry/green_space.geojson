@@ -1,6 +1,6 @@
 {
   "type": "FeatureCollection",
-  "name": "green_space_scaffold",
+  "name": "living_systems_response_prototype_v0_1",
   "features": [
     {
       "type": "Feature",
@@ -9,10 +9,14 @@
         "id": "GREEN-001",
         "layer": "GREEN_SPACE",
         "source_type": "agent_generated_design",
-        "confidence": "medium",
+        "confidence": "low",
         "geometry_role": "design_proposal",
         "land_use_code": "1401",
-        "name_zh": "连续公园绿地",
+        "name_zh": "既有河园接口与生境审查原型",
+        "name_en": "Existing park-water interface and living-systems review prototype",
+        "evidence_status": "CONCEPT_REQUIRES_EXISTING_PROJECT_AND_ECOLOGY_SURVEY",
+        "renewal_action": "COORDINATE_REPAIR_DO_NOT_DUPLICATE",
+        "precision_note": "Concept envelope only; not existing green geometry, water line, ecology or a new park boundary.",
         "area_sqm_declared": 1408600.768
       },
       "geometry": {

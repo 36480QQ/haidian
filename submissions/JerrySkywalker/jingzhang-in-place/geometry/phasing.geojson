@@ -1,6 +1,6 @@
 {
   "type": "FeatureCollection",
-  "name": "phasing_scaffold",
+  "name": "survey_and_reversible_pilot_gate_v0_1",
   "features": [
     {
       "type": "Feature",
@@ -9,10 +9,15 @@
         "id": "PHASE-001",
         "layer": "PHASE",
         "source_type": "agent_generated_design",
-        "confidence": "medium",
+        "confidence": "low",
         "geometry_role": "design_proposal",
-        "phase": "phase_1",
-        "name_zh": "一期可讨论范围",
+        "phase": "G0_G1",
+        "name_zh": "G0 调查协调与 G1 可撤回试点概念范围",
+        "name_en": "G0 survey/coordination and G1 reversible-pilot concept extent",
+        "trigger": "current project alignment, survey, rights-holder/user consent, professional review and ordinary-city safeguards",
+        "stop_go": "No verified carrier or public-interest safeguard means no pilot",
+        "exit_reuse": "remove temporary fit-out and retain ordinary city function",
+        "precision_note": "Concept phasing envelope; not an approved project boundary or government commitment.",
         "area_sqm_declared": 4587013.573
       },
       "geometry": {

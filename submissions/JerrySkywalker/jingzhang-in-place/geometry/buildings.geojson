@@ -1,6 +1,6 @@
 {
   "type": "FeatureCollection",
-  "name": "building_footprints_scaffold",
+  "name": "building_action_prototype_v0_1",
   "features": [
     {
       "type": "Feature",
@@ -9,10 +9,17 @@
         "id": "BLDG-001",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
-        "confidence": "medium",
+        "confidence": "low",
         "geometry_role": "design_proposal",
-        "building_type": "ai_r_and_d",
-        "name_zh": "AI研发示范建筑基底",
+        "building_type": "adaptable_carrier_prototype",
+        "name_zh": "待调查可逆载体原型（非现状建筑）",
+        "name_en": "Survey-required reversible carrier prototype (not an existing building)",
+        "evidence_status": "SURVEY_ONLY_UNKNOWN",
+        "renewal_action": "NO_ACTION_UNTIL_PROFESSIONAL_SURVEY",
+        "trigger": "verified task, eligible structure/fire/access/services, rights-holder and user consent",
+        "stop_go": "STOP unless every trigger is evidenced",
+        "exit_reuse": "remove controlled fit-out and retain ordinary training/work/community use",
+        "precision_note": "Concept footprint for workflow testing only; does not identify a real building or parcel.",
         "area_sqm_declared": 310807.184
       },
       "geometry": {

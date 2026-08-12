@@ -3,9 +3,59 @@
   "assumptions": [
     {
       "id": "A-CONTROLS-001",
-      "status": "pending_professional_confirmation",
-      "statement": "Detailed regulatory controls, road redlines, ownership, municipal utilities, and engineering constraints must be confirmed from official attachments before statutory use.",
-      "impact": "The package can be reviewed as a formal AI submission only for provided official boundaries and submitted design layers; statutory controls still need professional confirmation."
+      "status": "pending_official_and_professional_confirmation",
+      "statement": "Exact statutory controls, road redlines, ownership, investment, approval paths and phasing commitments are unavailable.",
+      "impact": "All precision-sensitive moves remain conceptual suggestions; no parcel action or government commitment is asserted.",
+      "closure": "Replace with official controls and professional/rights-holder confirmation, then rerun geometry, metrics and review."
+    },
+    {
+      "id": "A-GEOMETRY-001",
+      "status": "provisional_constraint",
+      "statement": "The organizer repository currently provides only a rough fitted 11.4 km² boundary and three key-area placeholder rectangles.",
+      "impact": "Area checks are consistency calculations, not statutory accuracy; all nine layers and figures require full recomputation.",
+      "closure": "Obtain official polygons and rebuild topology/metrics as one change set."
+    },
+    {
+      "id": "A-GEOMETRY-002",
+      "status": "known_context_mismatch",
+      "statement": "The provisional south key-area rectangle is materially displaced from the contextual Dazhongsi station anchor identified in open contextual data.",
+      "impact": "South-area work is a typological context window, never a parcel or station plan.",
+      "closure": "Use official key-area geometry and current surveyed station exits before precise design."
+    },
+    {
+      "id": "A-BUILDING-001",
+      "status": "survey_required",
+      "statement": "Building use, condition, structure, fire safety, heritage status, title, occupancy, adaptability and relocation effects are unknown.",
+      "impact": "No building is labelled vacant, low-efficiency, unsafe, reusable, openable or demolishable; geometry shows concept prototypes only.",
+      "closure": "Professional building and user/rights survey with documented consent."
+    },
+    {
+      "id": "A-ACCESS-001",
+      "status": "time_sensitive_and_survey_required",
+      "statement": "Campus entry, station exits, crossings, step-free continuity and public opening hours can change and are incompletely mapped.",
+      "impact": "Permanent public routes stay outside campuses; exact entrances and catchments are not claimed.",
+      "closure": "Current field access audit and operator/institution confirmation."
+    },
+    {
+      "id": "A-INFRA-001",
+      "status": "professional_capacity_check_required",
+      "statement": "Electricity, heat, water, drainage, communications, compute, underground and emergency capacities are unknown.",
+      "impact": "No megaproject or quantitative capacity claim; use existing eligible services first and add only after proof.",
+      "closure": "Utility records, engineering surveys, operator approval and life-cycle/exit plan."
+    },
+    {
+      "id": "A-OPERATIONS-001",
+      "status": "operator_and_user_evidence_required",
+      "statement": "Delivery, maintenance, waste, event, worker, business and residential conflicts are not established at site level.",
+      "impact": "Service routes and operating windows remain an audit layer, not an asserted hidden network.",
+      "closure": "Timed field observation and user/operator co-design."
+    },
+    {
+      "id": "A-AI-001",
+      "status": "task_and_carrier_verification_required",
+      "statement": "No named organization, carrier, model, dataset, operator or partnership is committed to the three bounded AI task packets.",
+      "impact": "AI spaces are reversible typologies with NO-BUILD outcomes, not promised facilities or endorsements.",
+      "closure": "Verified task owner, authorization, minimum resource, qualified human review, carrier and exit agreement."
     }
   ]
 }

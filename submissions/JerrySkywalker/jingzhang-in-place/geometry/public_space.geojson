@@ -1,6 +1,6 @@
 {
   "type": "FeatureCollection",
-  "name": "public_space_scaffold",
+  "name": "public_side_interface_prototype_v0_1",
   "features": [
     {
       "type": "Feature",
@@ -9,9 +9,15 @@
         "id": "PUBLIC-001",
         "layer": "PUBLIC_SPACE",
         "source_type": "agent_generated_design",
-        "confidence": "medium",
+        "confidence": "low",
         "geometry_role": "design_proposal",
-        "name_zh": "公共活动界面",
+        "name_zh": "公开侧普通城市界面原型",
+        "name_en": "Public-side ordinary-city interface prototype",
+        "evidence_status": "SURVEY_ONLY_UNKNOWN",
+        "renewal_action": "RETAIN_OR_REPAIR_THEN_OPEN_EDGE_IF_CONSENTED",
+        "users": "residents, workers, students, children/caregivers, older/disabled users, visitors",
+        "ai_off": "must remain open and usable without AI",
+        "precision_note": "Concept envelope only; not a current public-space or access-right claim.",
         "area_sqm_declared": 836345.643
       },
       "geometry": {

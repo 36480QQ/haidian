@@ -1,6 +1,6 @@
 {
   "type": "FeatureCollection",
-  "name": "land_use_topology_partition",
+  "name": "provisional_functional_response_partition_v0_1",
   "features": [
     {
       "type": "Feature",
@@ -9,10 +9,14 @@
         "id": "LU-001",
         "layer": "LAND_USE",
         "source_type": "agent_generated_design",
-        "confidence": "medium",
+        "confidence": "low",
         "geometry_role": "design_proposal",
         "land_use_code": "0802",
-        "name_zh": "AI研发创新用地",
+        "name_zh": "现状核验与适应性创新响应区",
+        "name_en": "Survey-gated adaptive innovation response zone",
+        "evidence_status": "SURVEY_ONLY_UNKNOWN",
+        "renewal_action": "RETAIN_THEN_ADAPT_IF_VERIFIED",
+        "precision_note": "Conceptual topology partition, not current use, parcel or statutory land-use change.",
         "area_sqm_declared": 2674562.492
       },
       "geometry": {
@@ -58,10 +62,14 @@
         "id": "LU-002",
         "layer": "LAND_USE",
         "source_type": "agent_generated_design",
-        "confidence": "medium",
+        "confidence": "low",
         "geometry_role": "design_proposal",
         "land_use_code": "1401",
-        "name_zh": "公园绿地与开敞空间",
+        "name_zh": "既有河园与项目接口响应区",
+        "name_en": "Existing park-water and project interface response zone",
+        "evidence_status": "MIXED_BUILT_AND_PROJECT_STATUS_REQUIRES_ITEM_CHECK",
+        "renewal_action": "RETAIN_COORDINATE_REPAIR",
+        "precision_note": "Conceptual topology partition, not mapped existing green space or a new green statutory zone.",
         "area_sqm_declared": 2589339.239
       },
       "geometry": {
@@ -99,10 +107,14 @@
         "id": "LU-003",
         "layer": "LAND_USE",
         "source_type": "agent_generated_design",
-        "confidence": "medium",
+        "confidence": "low",
         "geometry_role": "design_proposal",
         "land_use_code": "05",
-        "name_zh": "产业服务与商业服务用地",
+        "name_zh": "公开侧混合服务与接口响应区",
+        "name_en": "Public-side mixed service and interface response zone",
+        "evidence_status": "SURVEY_ONLY_UNKNOWN",
+        "renewal_action": "RETAIN_REPAIR_OPEN_EDGE_CONDITIONALLY",
+        "precision_note": "Conceptual topology partition, not a current commercial-use claim.",
         "area_sqm_declared": 3366138.181
       },
       "geometry": {
@@ -140,10 +152,14 @@
         "id": "LU-004",
         "layer": "LAND_USE",
         "source_type": "agent_generated_design",
-        "confidence": "medium",
+        "confidence": "low",
         "geometry_role": "design_proposal",
         "land_use_code": "0702",
-        "name_zh": "社区服务与配套用地",
+        "name_zh": "日常城市连续性与公共服务响应区",
+        "name_en": "Ordinary-city continuity and public-service response zone",
+        "evidence_status": "SURVEY_ONLY_UNKNOWN",
+        "renewal_action": "RETAIN_REPAIR_AND_INFILL_ONLY_AFTER_NEED",
+        "precision_note": "Conceptual topology partition, not a parcel-level community-use claim.",
         "area_sqm_declared": 2782792.823
       },
       "geometry": {
