@@ -664,7 +664,10 @@
       ],
       "metrics": [
         "scenario_count",
-        "greenway_length_m"
+        "greenway_length_m",
+        "public_acceptance_prototype_count",
+        "public_acceptance_threshold_count",
+        "human_fallback_target_seconds"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -681,13 +684,14 @@
       ],
       "assumption_ids": [
         "A-TRANSPORT-001",
-        "A-OPERATIONS-001"
+        "A-OPERATIONS-001",
+        "A-PROTOTYPE-001"
       ],
       "self_check_ids": [
         "KEY_AREAS_TRUST",
         "PRIVACY_HUMAN_REVIEW"
       ],
-      "evidence_summary_zh": "大钟寺以站城门厅—四象限缝合—全天候街—人工服务岛组织生活公地，站口与过街均待交通核验。"
+      "evidence_summary_zh": "大钟寺以站城门厅—四象限缝合—100米公共验收街—国际会客厅组织生活公地；四道空间门可感知治理，落位与过街待交通和权属核验。"
     },
     {
       "requirement_id": "agent.1",
@@ -780,7 +784,9 @@
       "metrics": [
         "scenario_count",
         "testbed_scenario_count",
-        "persona_count"
+        "persona_count",
+        "phone_free_basic_access_target_ratio",
+        "human_fallback_target_seconds"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -796,12 +802,13 @@
       ],
       "assumption_ids": [
         "A-OPERATIONS-001",
-        "A-TRANSPORT-001"
+        "A-TRANSPORT-001",
+        "A-PROTOTYPE-001"
       ],
       "self_check_ids": [
         "PRIVACY_HUMAN_REVIEW"
       ],
-      "evidence_summary_zh": "十二张场景卡归为三类空间原型，每张均有风险、责任、留存、审计、KPI、暂停和申诉字段。"
+      "evidence_summary_zh": "十二张场景卡归为三类空间原型并在100米公共验收街形成可步行的use-before-deploy序列；每张均有风险、责任、留存、审计、KPI、暂停和申诉字段。"
     },
     {
       "requirement_id": "agent.4",
@@ -819,7 +826,9 @@
       "metrics": [
         "greenway_length_m",
         "scenario_count",
-        "public_space_ratio"
+        "public_space_ratio",
+        "public_acceptance_prototype_count",
+        "public_acceptance_threshold_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -837,13 +846,14 @@
       ],
       "assumption_ids": [
         "A-HERITAGE-001",
-        "A-TRANSPORT-001"
+        "A-TRANSPORT-001",
+        "A-PROTOTYPE-001"
       ],
       "self_check_ids": [
         "METRIC_RECALC",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "公共主脊、三类东西缝合、四类地标和可见治理接口共同构成AI公共空间组件体系。"
+      "evidence_summary_zh": "公共主脊、三类东西缝合、四类地标与大钟寺四道验收门共同构成既有城市辨识度又能公开质询的AI公共空间组件体系。"
     },
     {
       "requirement_id": "agent.5",
@@ -897,7 +907,9 @@
       "metrics": [
         "phase_count",
         "renewal_project_count",
-        "scenario_count"
+        "scenario_count",
+        "pilot_duration_days",
+        "pilot_redline_kpi_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -912,13 +924,14 @@
         "SOURCE-REGISTRY"
       ],
       "assumption_ids": [
-        "A-OPERATIONS-001"
+        "A-OPERATIONS-001",
+        "A-PROTOTYPE-001"
       ],
       "self_check_ids": [
         "PRIVACY_HUMAN_REVIEW",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "春贡献、夏测试、秋论坛、冬复盘形成年度循环；理事会协调但每个场景保留唯一具名责任人。"
+      "evidence_summary_zh": "90天可退出试点先验证告知、人工兜底、共验、申诉与回滚；春贡献、夏测试、秋论坛、冬复盘再形成年度循环，每个场景保留唯一责任主体。"
     }
   ]
 }
