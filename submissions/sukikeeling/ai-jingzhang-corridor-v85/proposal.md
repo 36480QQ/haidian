@@ -40,7 +40,7 @@ The corridor follows a "one belt, three cores, two wings" spatial structure: the
 
 **首期只做低后悔准备。** 首个 90 天完成官方资料替换清单、无障碍审计与问题征集；随后启动 3 个可逆原型与公共评测协议；任一重大安全、权益或数据问题未闭环即停止。预算、主体、采购与建设时点在资料缺失时保持 unknown，不用概念承诺冒充可实施性 [depth:phasing_implementation]。
 
-**四个可审计成果让方案可以被接手。** `visual/assets/switchback-gate.json` 把折返点三态与回授门程序化为机器可读状态机；`visual/assets/delivery-matrix.json` 记录行动包依赖、责任、成果、验收与硬停止；`geometry/public_space.geojson` 提供 73.37 ha 连续公共验证带；12 张场景卡每张绑定坡度分级与折返条件 [metric:public_space_area_sqm] [metric:scenario_node_count] [metric:sunset_clause_trigger_count]。
+**四个可审计成果让方案可以被接手。** `visual/assets/switchback-gate.json` 把折返点三态与回授门程序化为机器可读状态机；`visual/assets/delivery-matrix.json` 记录行动包依赖、责任、成果、验收与硬停止；`geometry/public_space.geojson` 提供 73.37 ha 连续公共验证带；12 张场景卡每张绑定坡度分级与折返条件 [metric:public_space_area_sqm] [metric:scenario_node_count] [metric:sunset_clause_trigger_count]。机器契约数量登记为 [metric:machine_readable_contract_count]。
 
 **方案速览（5 条数字承诺）。** ①12 张场景卡，每张绑定坡度分级与折返点；②73.37 ha 连续公共验证带（6.43%），3 段折返公共带+4 广场+12 节点；③回授门三步（述职—质询—表决），公众听不懂即折返；④K 标版本链，每次复算/折返/入段永久留痕；⑤全包 53 个文件 100% 声明，0 编造数值——基线缺失一律标 pending [metric:public_space_ratio] [metric:sunset_clause_trigger_count]。
 

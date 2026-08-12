@@ -184,6 +184,27 @@
       "formula": "count(machine-readable governance contracts in visual/assets)",
       "confidence": "high",
       "assumptions": []
+    },
+    "open_task_count": {
+      "status": "unknown",
+      "value": null,
+      "unit": "count",
+      "reason": "基线待一期问题征集建立",
+      "required_for_formal_submission": false
+    },
+    "red_team_repro_count": {
+      "status": "unknown",
+      "value": null,
+      "unit": "count",
+      "reason": "基线待模型上街前挑战季建立",
+      "required_for_formal_submission": false
+    },
+    "annual_week_events": {
+      "status": "unknown",
+      "value": null,
+      "unit": "count",
+      "reason": "基线待首届京张城市AI周建立",
+      "required_for_formal_submission": false
     }
   }
 }

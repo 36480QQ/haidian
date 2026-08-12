@@ -631,6 +631,108 @@
         "GOVERNANCE_LOOP"
       ],
       "evidence_summary_zh": "场景运行状态用正线运行/侧线折返/入段检修三态表达，不设自动恢复；从检修态回正线须经折返点重新评估。"
+    },
+    {
+      "item_id": "brand_identity",
+      "title_zh": "品牌与标识规范",
+      "professional_dimension": "设计表达",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": [
+        "品牌与标识规范"
+      ],
+      "description_zh": "Logo 方向'人字形折返+轨道双轨+K标锚点'，深轨蓝/验证绿/历史铜三色，含最小尺寸/安全留白/禁用规则/色号系统。",
+      "evidence_summary_zh": "品牌色号系统（夜蓝#071A2B/验证绿#00D8C6/历史铜#C8964A/试验黄#FFC857/轨道银#A0AAB5/人工确认红#FF6B6B）已写入 proposal 品牌章节。",
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/public_space.geojson"
+      ],
+      "metric_refs": [
+        "scenario_node_count"
+      ],
+      "source_ids": [
+        "AGENT-TASKBOOK",
+        "PROCESSED-FACT-PACK"
+      ],
+      "assumption_ids": [
+        "ASM-001",
+        "ASM-002"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION"
+      ]
+    },
+    {
+      "item_id": "public_participation",
+      "title_zh": "公共参与机制",
+      "professional_dimension": "公共利益",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": [
+        "公共参与机制"
+      ],
+      "description_zh": "六类公众代表产生/补偿/无数字渠道/分组评估/否决权程序，公众代表否决权四步（触发/效力/复议/记录）。",
+      "evidence_summary_zh": "公众代表否决权程序（触发/48小时降级/公开复议/永久记录）已写入 proposal 公共参与章节。",
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/public_space.geojson",
+        "geometry/key_areas.geojson"
+      ],
+      "metric_refs": [
+        "public_issue_closure_rate",
+        "appeal_resolution_time_hours"
+      ],
+      "source_ids": [
+        "AGENT-TASKBOOK",
+        "SOURCE-REGISTRY"
+      ],
+      "assumption_ids": [
+        "ASM-001",
+        "ASM-002"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION"
+      ]
+    },
+    {
+      "item_id": "regional_collaboration",
+      "title_zh": "区域协同矩阵",
+      "professional_dimension": "区域协调",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": [
+        "区域协同矩阵"
+      ],
+      "description_zh": "北纬/未来科学城/怀柔/经开区/京津冀五方协同，每项绑定任务/要素/回路/主体。",
+      "evidence_summary_zh": "五方协同矩阵（任务/要素/运营回路/协作主体）已写入 proposal 区域协同章节。",
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson"
+      ],
+      "metric_refs": [
+        "scenario_node_count"
+      ],
+      "source_ids": [
+        "AGENT-TASKBOOK",
+        "OFFICIAL-ANNOUNCEMENT"
+      ],
+      "assumption_ids": [
+        "ASM-001",
+        "ASM-002"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION"
+      ]
     }
   ]
 }
