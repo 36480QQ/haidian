@@ -1,0 +1,175 @@
+{
+  "version": 1,
+  "dimensions": [
+    {
+      "id": "public_exclusion",
+      "label": "数字排斥与服务降级",
+      "score": 4,
+      "note": "AI城市最直接的公共风险不是模型不够先进，而是把不会用手机、无账号、老年人、残障人士或主动拒绝AI的人排除在完整服务之外。",
+      "mitigation": "所有12个场景必须设计非AI等价路径、人工服务与可申诉入口；人民AI服务站提供线下兜底。",
+      "human_review": "九类验收人共同测试，任何一类无法完成关键任务时不得宣称场景成熟。"
+    },
+    {
+      "id": "human_control",
+      "label": "人类控制与责任",
+      "score": 4,
+      "note": "公共AI若无明确人工接管、停机与责任主体，会把城市责任推给不可解释的系统。",
+      "mitigation": "设置人工总控、停机/降级模式、责任标识、结果复核、事件记录与退出方案；最终重大公共决定不交给AI。",
+      "human_review": "由依法有权的公共责任主体、专业人员与运营人员签字放行，AI不能自我批准。"
+    },
+    {
+      "id": "data_privacy",
+      "label": "数据、隐私与过度感知",
+      "score": 4,
+      "note": "传感器、机器人、导览和公共服务可能形成过度采集、跨用途使用或厂商锁定。",
+      "mitigation": "数据最小化、用途限定、短期试验优先、能不用生物识别就不用；公共接口优先可替换、可审计。",
+      "human_review": "数据、法务、网络安全和业务责任人逐场景复核数据来源、合法性、保留期限和退出方式。"
+    },
+    {
+      "id": "vendor_capture",
+      "label": "厂商锁定与事实治理权",
+      "score": 4,
+      "note": "如果城市公共服务、数据接口和规划试验由单一技术企业事实控制，技术便利可能演变成治理依赖。",
+      "mitigation": "采用开放接口、可迁移数据、公共知识台账和可替换采购；技术供应商不拥有规划审批、公共执法或服务资格决定权。",
+      "human_review": "重大平台架构、数据使用与采购模式需由公共机构和独立专业评审确认。"
+    },
+    {
+      "id": "heritage_symbolism",
+      "label": "红色文化符号化",
+      "score": 3,
+      "note": "红色传承若只表现为红墙、灯光、标语和纪念性体量，会把京张真实的工程、劳动和社区历史降格为视觉贴片。",
+      "mitigation": "只设置两类红色公共锚点，使用铁路工业材料语言；功能必须承载公共议事、人工服务、开源工坊和人民工程史。",
+      "human_review": "历史、文保、建筑和公众参与团队共同复核叙事与材料，不以政治符号数量作为成效。"
+    },
+    {
+      "id": "pilot_burden",
+      "label": "把居民当作技术实验成本",
+      "score": 4,
+      "note": "真实城市测试可能把错误、等待、绕行和隐私成本转嫁给普通人。",
+      "mitigation": "普通服务基线先行，所有测试可逆、可停、可恢复；失败时优先撤回工具而不是降低普通服务。",
+      "human_review": "每个旗舰试验进入下一阶段前公开失败记录、用户负担与人工复核结论。"
+    },
+    {
+      "id": "spatial_uncertainty",
+      "label": "空间资料不确定性",
+      "score": 4,
+      "note": "官方精确边界、控规、权属、文保、市政和工程条件仍不完整。",
+      "mitigation": "所有现阶段空间落位均标注概念性；临时几何不作为红线、审批和工程依据。",
+      "human_review": "官方图形和专业资料到位后整体复算、重画并重新自检。"
+    },
+    {
+      "id": "operation_cost",
+      "label": "人工兜底与长期运营成本",
+      "score": 3,
+      "note": "人民AI服务站、人工复核、公开台账和社区议事都需要持续人力，并非零成本功能。",
+      "mitigation": "把人工岗位、服务时段、维护、投诉和退出预算作为AI项目本体，而不是部署后附加。",
+      "human_review": "任何长期试点扩展前必须由未来运营主体确认人员、维护、责任和生命周期成本。"
+    }
+  ],
+  "implementation_readiness": {
+    "schema_version": "0.1.0",
+    "concept_version": "PEOPLE_FIRST_JINGZHANG_V0_1",
+    "governing_rule": "People remain the civic subject; AI remains a controllable, replaceable tool. Repository requirements, Chinese law, Beijing planning conditions and professional human judgment override every model output and foreign precedent.",
+    "tagline": "AI向前，人民在先 / AI Advances, People First",
+    "civic_ai_rights": [
+      "notice",
+      "choice",
+      "refusal",
+      "human_review",
+      "appeal_and_correction"
+    ],
+    "ordinary_service_contract": {
+      "sequence": ["BASELINE", "AI_PILOT", "HUMAN_REVIEW", "PUBLIC_RECEIPT", "SCALE_OR_REVISE_OR_STOP"],
+      "mandatory_non_ai_fallback_for_all_scenarios": true,
+      "automated_final_public_decision_target": 0
+    },
+    "pilgrimage_landmarks": [
+      {
+        "id": "LM-01",
+        "name_zh": "人民工程馆",
+        "name_en": "Civic Engineering Hall",
+        "type": "red_civic_landmark",
+        "role": "Railway/labor history + People's AI Assembly + public algorithm review + open-source city workshop",
+        "visual_rule": "deep red brick/ceramic, dark steel, restrained glass; no saturated red LED monumentality",
+        "siting_status": "conceptual_pending_heritage_ownership_engineering_review"
+      },
+      {
+        "id": "LM-02",
+        "name_zh": "开源原点广场",
+        "name_en": "Open-Source Origin Square",
+        "type": "non_red_ai_public_landmark",
+        "role": "A public square in the AI Origin Community where open-source civic tools, contributor records and community prototypes are visible and reusable",
+        "visual_rule": "lightweight silver/white structures, trees, public tables and low-brightness interfaces; the place remains usable when screens are off",
+        "siting_status": "conceptual_within_AI_origin_community"
+      },
+      {
+        "id": "LM-03",
+        "name_zh": "公共智能廊",
+        "name_en": "Civic Intelligence Arcade",
+        "type": "non_red_ai_public_landmark",
+        "role": "A Dazhongsi-facing public gallery for civic AI interfaces, multilingual public-service demonstrations, provenance, audit and reusable public-good capabilities",
+        "visual_rule": "transparent/lightweight arcade with visible service interfaces and human help; not a corporate showroom",
+        "siting_status": "conceptual_within_Dazhongsi_area"
+      }
+    ],
+    "red_civic_anchors": [
+      {
+        "id": "RA-01",
+        "name_zh": "人民工程馆",
+        "scale": "iconic_large",
+        "counted_as_ai_pilgrimage_landmark": true
+      },
+      {
+        "id": "RA-02",
+        "name_zh": "人民AI服务站",
+        "scale": "small_replicable",
+        "counted_as_ai_pilgrimage_landmark": false,
+        "reason": "It is deliberately everyday and service-oriented rather than monumental."
+      }
+    ],
+    "global_case_translations": [
+      {
+        "id": "GC-01",
+        "source_id": "CASE-PUNGGOL-DIGITAL-DISTRICT",
+        "mechanism": "interoperable district platform + living lab",
+        "jingzhang_translation": "shared, replaceable civic interfaces and a bounded test environment",
+        "do_not_copy": "sensor density, district scale, governance structure or vendor stack"
+      },
+      {
+        "id": "GC-02",
+        "source_id": "CASE-KALASATAMA-AGILE-PILOTS",
+        "mechanism": "short real-environment pilots with resident/business/expert feedback",
+        "jingzhang_translation": "reversible G1 pilots with baseline, public receipt and stop decision",
+        "do_not_copy": "foreign time/budget/performance values"
+      },
+      {
+        "id": "GC-03",
+        "source_id": "CASE-HELSINKI-AI-REGISTER",
+        "mechanism": "public register of city AI systems + feedback",
+        "jingzhang_translation": "public algorithm transparency board and review room",
+        "do_not_copy": "Finnish legal framework or exact registry fields"
+      },
+      {
+        "id": "GC-04",
+        "source_id": "CASE-DECIDIM-BARCELONA",
+        "mechanism": "open-source, traceable digital participation combined with in-person deliberation",
+        "jingzhang_translation": "People's AI Assembly + open-source civic participation infrastructure",
+        "do_not_copy": "electoral/political process assumptions or platform implementation"
+      },
+      {
+        "id": "GC-05",
+        "source_id": "CASE-SEOUL-AI-HUB",
+        "mechanism": "education-incubation-R&D-open-innovation growth-stage ecosystem",
+        "jingzhang_translation": "Zhongzhiyuan/AI Origin staged talent, startup, test and open-collaboration ladder",
+        "do_not_copy": "Seoul budgets, sites or regulatory exemptions"
+      },
+      {
+        "id": "GC-06",
+        "source_id": "CASE-QUAYSIDE-DIGITAL-GOVERNANCE",
+        "mechanism": "independent scrutiny of digital governance, privacy, data use and public authority",
+        "jingzhang_translation": "governance-before-scale, no vendor planning authority, explicit public responsibility",
+        "do_not_copy": "treating Toronto's conflict as equivalent to Beijing conditions"
+      }
+    ]
+  }
+}
