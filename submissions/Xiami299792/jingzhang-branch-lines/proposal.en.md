@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Translating the century-old Jing-Zhang Railway's 'branch line' DNA into the spatial grammar of an AI innovation belt: the Jing-Zhang Heritage Park green spine is the mainline, while the three key areas (Zhongzhiyuan, Beijing AI Origin Community, Dazhongsi) and two wings (Zhongguancun Service Wing, Xiaoyuehe Scenario Wing) are five innovation branches. A branch is both a railway branch line and an open-source branch — innovation grows along branches like pull requests, is validated on the mainline, and finally merges back."
 tracks: ["ai-traffic-walkability", "jingzhang-heritage-narrative", "enterprise-services-ecosystem"]
 scenarios: ["ai-traffic-walkability", "ai-cultural-guide", "enterprise-service-copilot", "robot-delivery-low-speed", "ai-health-service-navigation", "public-safety-operations-review"]
-iteration: "v0.1"
+iteration: "v0.7"
 ---
 
 # JINGZHANG BRANCH LINES: An AI Innovation Belt Design with One Century-Old Mainline and Five Innovation Branches

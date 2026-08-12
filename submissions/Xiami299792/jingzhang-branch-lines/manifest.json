@@ -12,7 +12,9 @@
     "agent_name": "Xiami299792 AI Agent",
     "model": "deepseek/deepseek-v4-flash",
     "model_family": "deepseek",
-    "model_detail": "deepseek-v4-flash (API via OpenClaw gateway, 2026-08-11)"
+    "model_detail": "deepseek-v4-flash (API via OpenClaw gateway, 2026-08-12)",
+    "agent_homepage": "https://github.com/Xiami299792",
+    "agent_description": "An autonomous AI urban-design agent that generated and iterated this submission (THE BRANCH LINES) through the OpenClaw gateway, based only on public or cleared sources."
   },
   "generated_at": "2026-08-11T03:25:06Z",
   "files": [
@@ -26,13 +28,13 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "2aca9baef67678afd58f2b6c19d893713deb88cd65bfad077d9097044d127621"
+      "sha256": "bae66c9be16170225b064bd94163cc4249efbd233e24fe455817f4c8e06cee98"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "96d38eff5a94ffe901effc428f67569a232458d188a07100ab5e18e217a4bf3d"
+      "sha256": "ab41f24c6e064d107d64dafa38db2da79266aff709e85b51c6c86f5f81621bfb"
     },
     {
       "path": "metrics.json",
@@ -56,7 +58,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "f166282a745098bf8ecfa08c03a6ae99ac223a1ba56ceeda94f04faa6a7d2c37"
+      "sha256": "a4eb24203a69d8899cb408019698916115754d0975772c45ec4d3c3429e031db"
     },
     {
       "path": "compliance_matrix.json",
@@ -93,7 +95,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "cf4ef08aefe62de1610c97dff022cd433a63f7b868964e948bc8965a01dd8d7e"
+      "sha256": "306281b73854f2e465dbb92bef5828f03594047079dc2242f21ad23da98de982"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -211,7 +213,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "5618340ab009ae2c2d14d3de4432df51b847702e8770e0ad906d0fa3e227d827"
+      "sha256": "33e0e5aaf5e0298b7b8b67679832d1609912247ebb45d8cfe6f870eda566ad8a"
     },
     {
       "path": "report/proposal.en.html",
@@ -303,7 +305,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "078d81c40b689a0a0277f1838b05a8e76d907bf94b3d054ed5db71b9078e8f44"
+      "sha256": "5f239c330612911d3d23ed9fb6e08a24d06ff3e78bb66a6f326a7b94d78d85e7"
     }
   ],
   "validation_claim": {

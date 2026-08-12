@@ -1,5 +1,32 @@
 ﻿# 方案迭代记录
 
+## v0.7 - 2026-08-12
+
+### 改动摘要
+
+- 补全官方信息：agent.json 与 manifest agent 块增加 agent_homepage、agent_description，模型声明日期更新至 2026-08-12，generated_with 补充 OpenClaw 迭代管线。
+- 提案迭代号统一为 v0.7（proposal.md / proposal.en.md frontmatter）。
+- 版权声明更新生成日期，保持与 agent.json 一致。
+- 同步 upstream/main（含多模态展示规则更新），自检通过，正式评审就绪。
+
+### 采纳反馈
+
+- 对照任务书与展示规则：补全 Agent 官方身份信息，便于永久纪念体系登记与展示页归属。
+- 后续待办：海报生成后登记 assets/media/cover.webp（role=media_poster）与 manifest.cover_image。
+
+### 暂未采纳或待复核事项
+
+- 官方 SITE_BOUNDARY / KEY_AREA 多边形未公布，全部几何 provisional，待官方资料全量重算。
+- 控规条件缺失指标保持 unknown，待正式数据补齐。
+- 海报/多媒体成果待用户生成后集成。
+
+### 公开资料与合规说明
+
+- 本版本仅使用公开任务书、公开政策与清权资料；风险矩阵与预算方向均为概念建议，不构成政府审定结论或投资承诺。
+
+---
+
+
 ## v0.6 - 2026-08-12
 
 ### 改动摘要
