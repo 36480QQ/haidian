@@ -1045,6 +1045,84 @@
         "No field or controlled testing"
       ],
       "license": "No complete reusable license terms are retained in the package; repository review only pending maintainer terms and independent rights audit"
+    },
+    {
+      "id": "SOURCE-JZ-CIVIC-OPERATIONS-G0-V1",
+      "rights_evidence_id": "SRC-RIGHTS-CIVIC-OPERATIONS-G0-V1",
+      "title": "长期公共共同体运营 G0 合同：全年普通使用、四窗旅程、角色责任、三载体回写与年度去留",
+      "publisher": "xyh202131",
+      "path": "visual/assets/civic-operations-contract.json",
+      "source_type": "in_package_operations_integration_contract",
+      "accessed_date": "2026-08-12",
+      "authority_level": "submission_author",
+      "collection_method": "Round 10 integration contract independently authored from the package's inherited Round 3–9 governance contracts and the local method-spec prompts; no peer submission expression or restricted asset is copied",
+      "allowable_uses": [
+        "Repository review",
+        "Peer assessment",
+        "Internal package consistency checks"
+      ],
+      "restrictions": [
+        "G0 concept only; not a confirmed calendar, event, opening hour, roster, budget, partner, complaint record or operating result",
+        "The inherited 22:00–07:00 window is a design contract only and cannot establish a night shift, noise limit or lighting level",
+        "Annual expand requires new field evidence and separate written authorization"
+      ],
+      "known_gaps": [
+        "Responsible operators and duty holders remain unconfirmed",
+        "Field accessibility, staffing, budget, complaint and operating evidence remain unknown or 0",
+        "Independent operations and rights review remains pending"
+      ],
+      "license": "No complete reusable license terms are retained in the package; repository review only pending maintainer terms and independent rights audit"
+    },
+    {
+      "id": "SOURCE-YEAR-ROUND-CIVIC-OPERATIONS-FIGURE",
+      "rights_evidence_id": "SRC-RIGHTS-YEAR-ROUND-CIVIC-OPERATIONS-FIG",
+      "title": "全年公共运营与十轮审计图：双语 SVG/PNG（普通日、条件季节、四窗旅程、三载体与年度去留）",
+      "publisher": "xyh202131",
+      "path": "assets/figures/year-round-civic-operations.{svg,png}",
+      "source_type": "generated_figure",
+      "accessed_date": "2026-08-12",
+      "authority_level": "submission_author",
+      "collection_method": "Package-authored bilingual SVG sources with deterministic local Chromium PNG exports and direct visual QA",
+      "allowable_uses": [
+        "Repository review",
+        "Peer assessment",
+        "Internal package consistency checks"
+      ],
+      "restrictions": [
+        "G0 conceptual operations diagram only",
+        "No real schedule, staffing, event, budget, international partner, complaint result or performance is shown",
+        "Cannot be used as approval for opening, operation, procurement, construction or deployment"
+      ],
+      "known_gaps": [
+        "Renderer-resolved fonts are not independently audited",
+        "Independent professional and rights review remains pending"
+      ],
+      "license": "No complete reusable license terms are retained in the package; repository review only pending maintainer terms and independent rights audit"
+    },
+    {
+      "id": "SOURCE-CIVIC-OPERATIONS-PROPOSAL",
+      "rights_evidence_id": "SRC-RIGHTS-CIVIC-OPERATIONS-PROPOSAL",
+      "title": "长期公共共同体运营：普通日常不断轨（双语概念章节）",
+      "publisher": "xyh202131",
+      "path": "proposal.md#long-term-civic-operations-section",
+      "source_type": "conceptual_proposal",
+      "accessed_date": "2026-08-12",
+      "authority_level": "submission_author",
+      "collection_method": "Round 10 bilingual narrative independently authored as an integration and ten-round audit of the package's existing contracts",
+      "allowable_uses": [
+        "Repository review",
+        "Peer assessment",
+        "Internal package consistency checks"
+      ],
+      "restrictions": [
+        "Conceptual only; not an operating plan or confirmed civic programme",
+        "Cannot upgrade any scene beyond G0 or clear any provisional geometry or rights status"
+      ],
+      "known_gaps": [
+        "No confirmed operation, staffing, budget, events, partners or results",
+        "No independent operations review"
+      ],
+      "license": "No complete reusable license terms are retained in the package; repository review only pending maintainer terms and independent rights audit"
     }
   ]
 }

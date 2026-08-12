@@ -8,7 +8,7 @@
     "disclosure_effect": "audit_ready_not_cleared"
   },
   "coverage": {
-    "source_record_count": 35,
+    "source_record_count": 38,
     "osm_element_count": 120,
     "completed_independent_file_level_clearance_audits": 0,
     "asset_ledger_ref": "rights-clearance-ledger.json#asset_records"
@@ -1470,6 +1470,132 @@
         "digest_scope": "Git blob object for exact package file bytes at proposal.md in the Round 7–9 closure candidate.",
         "artifact_in_submission": true,
         "limitation": "The digest fixes the package-authored object only; it does not establish external authority, reusable licensing, professional approval, or rights clearance."
+      },
+      "rights_basis": {
+        "declared_basis": "package_author_statement_for_repository_review_only; complete terms and independent file-level audit unavailable",
+        "terms_locator": null,
+        "evidence_state": "source_record_statement_only",
+        "independent_review_status": "not_started",
+        "package_use_mode": "repository_input"
+      },
+      "downstream_asset_ref": "rights-clearance-ledger.json#asset_records",
+      "unresolved_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02"
+      ]
+    },
+    {
+      "evidence_id": "SRC-RIGHTS-CIVIC-OPERATIONS-G0-V1",
+      "source_id": "SOURCE-JZ-CIVIC-OPERATIONS-G0-V1",
+      "source_record_ref": "../../sources.json#SOURCE-JZ-CIVIC-OPERATIONS-G0-V1",
+      "publisher": "xyh202131",
+      "locator": {
+        "kind": "repository_path",
+        "value": "visual/assets/civic-operations-contract.json"
+      },
+      "published_or_obtained": {
+        "status": "recorded",
+        "value": "2026-08-12",
+        "basis": "Package-authored repository object recorded for the Round 10 civic-operations integration; this is not an external publication or operating date."
+      },
+      "accessed_date": "2026-08-12",
+      "original_format": {
+        "status": "observed_from_repository_object",
+        "label": "JSON operations-integration contract",
+        "media_type": "application/json",
+        "basis": "The format was observed directly from the package repository object."
+      },
+      "integrity": {
+        "method": "git_object",
+        "algorithm": "sha1",
+        "digest": "3aa22b56c8f2fd690d9da34bc0d2c9da0abab313",
+        "digest_scope": "Git blob object for exact package file bytes at visual/assets/civic-operations-contract.json in the Round 10 candidate.",
+        "artifact_in_submission": true,
+        "limitation": "The digest fixes the package-authored object only; it establishes no real operation, external authority, reusable license, professional approval, partner, staffing, budget, result, or rights clearance."
+      },
+      "rights_basis": {
+        "declared_basis": "package_author_statement_for_repository_review_only; complete terms and independent file-level audit unavailable",
+        "terms_locator": null,
+        "evidence_state": "source_record_statement_only",
+        "independent_review_status": "not_started",
+        "package_use_mode": "repository_input"
+      },
+      "downstream_asset_ref": "rights-clearance-ledger.json#asset_records",
+      "unresolved_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02"
+      ]
+    },
+    {
+      "evidence_id": "SRC-RIGHTS-YEAR-ROUND-CIVIC-OPERATIONS-FIG",
+      "source_id": "SOURCE-YEAR-ROUND-CIVIC-OPERATIONS-FIGURE",
+      "source_record_ref": "../../sources.json#SOURCE-YEAR-ROUND-CIVIC-OPERATIONS-FIGURE",
+      "publisher": "xyh202131",
+      "locator": {
+        "kind": "repository_path",
+        "value": "assets/figures/year-round-civic-operations.svg"
+      },
+      "published_or_obtained": {
+        "status": "recorded",
+        "value": "2026-08-12",
+        "basis": "Package-authored repository object recorded for the Round 10 civic-operations integration; this is not an external publication or operating date."
+      },
+      "accessed_date": "2026-08-12",
+      "original_format": {
+        "status": "observed_from_repository_object",
+        "label": "SVG editable figure source",
+        "media_type": "image/svg+xml",
+        "basis": "The format was observed directly from the package repository object."
+      },
+      "integrity": {
+        "method": "git_object",
+        "algorithm": "sha1",
+        "digest": "80dfb70fa651fd4dbff3d710af7ede705e369b89",
+        "digest_scope": "Git blob object for exact package file bytes at assets/figures/year-round-civic-operations.svg in the Round 10 candidate.",
+        "artifact_in_submission": true,
+        "limitation": "The digest fixes the package-authored object only; it establishes no real operation, external authority, reusable license, professional approval, partner, staffing, budget, result, or rights clearance."
+      },
+      "rights_basis": {
+        "declared_basis": "package_author_statement_for_repository_review_only; complete terms and independent file-level audit unavailable",
+        "terms_locator": null,
+        "evidence_state": "source_record_statement_only",
+        "independent_review_status": "not_started",
+        "package_use_mode": "repository_input"
+      },
+      "downstream_asset_ref": "rights-clearance-ledger.json#asset_records",
+      "unresolved_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02"
+      ]
+    },
+    {
+      "evidence_id": "SRC-RIGHTS-CIVIC-OPERATIONS-PROPOSAL",
+      "source_id": "SOURCE-CIVIC-OPERATIONS-PROPOSAL",
+      "source_record_ref": "../../sources.json#SOURCE-CIVIC-OPERATIONS-PROPOSAL",
+      "publisher": "xyh202131",
+      "locator": {
+        "kind": "repository_path",
+        "value": "proposal.md#long-term-civic-operations-section"
+      },
+      "published_or_obtained": {
+        "status": "recorded",
+        "value": "2026-08-12",
+        "basis": "Package-authored repository object recorded for the Round 10 civic-operations integration; this is not an external publication or operating date."
+      },
+      "accessed_date": "2026-08-12",
+      "original_format": {
+        "status": "observed_from_repository_object",
+        "label": "Markdown proposal narrative",
+        "media_type": "text/markdown",
+        "basis": "The format was observed directly from the package repository object."
+      },
+      "integrity": {
+        "method": "git_object",
+        "algorithm": "sha1",
+        "digest": "2b48d4e6d403bbbab36a551a54c4527b604c322d",
+        "digest_scope": "Git blob object for exact package file bytes at proposal.md in the Round 10 candidate.",
+        "artifact_in_submission": true,
+        "limitation": "The digest fixes the package-authored object only; it establishes no real operation, external authority, reusable license, professional approval, partner, staffing, budget, result, or rights clearance."
       },
       "rights_basis": {
         "declared_basis": "package_author_statement_for_repository_review_only; complete terms and independent file-level audit unavailable",

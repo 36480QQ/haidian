@@ -173,14 +173,14 @@
     "完成替代来源复核后才解除阻断"
   ],
   "summary": {
-    "registered_source_count": 35,
-    "sources_assigned_to_freshness_class": 35,
+    "registered_source_count": 38,
+    "sources_assigned_to_freshness_class": 38,
     "freshness_class_count": 6,
     "required_refresh_record_field_count": 10,
     "current_completed_refresh_audits": 0
   },
   "current_package_snapshot": {
-    "recorded_accessed_date": "2026-08-09",
+    "recorded_accessed_date": "2026-08-12",
     "freshness_state": "access_date_recorded_refresh_audit_not_run",
     "content_digests_recorded": 4,
     "digest_scope_note": "The four digests identify local Firecrawl capture bytes for the new desktop sources; they are not publisher signatures and do not constitute completed freshness audits.",

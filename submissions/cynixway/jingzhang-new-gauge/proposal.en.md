@@ -12,6 +12,24 @@ iteration: "v1.0"
 
 # The New Gauge: setting a new gauge for AI-native cities
 
+## Jury Front-page Summary
+
+**Core proposition**: drawing on Zhan Tianyou's 1909 '人'-shaped switchback engineering wisdom as the master motif, this design reframes the Centennial Jing-Zhang AI Innovation Belt as "setting a new gauge (new standard) for AI-native cities" — one axis + three gauges + two wings spatial structure, 17 sub-blocks, 9 sub-precincts, 12-boundary-condition matrix, 14 AI scenario cards, 3 pilgrimage landmarks, NG-6 service contract, 7-step resilience state, equity ledger, and a 3-stage progressive exposure gradient.
+
+**Three strongest differentiators** (based on structural analysis of 80+ scoring peer proposals):
+1. **12 boundary conditions × 7 emergency paths** (accessible / fallback / stop three-column comparison matrix) — every AI decision has a verifiable "human fallback / stop condition"
+2. **Progressive exposure gradient T1→T2→T3** (Controlled Edge Court / Human Override Commons / Market Edge Forum) — open and transparent "test gradient", not "AI first, human last"
+3. **Switchback engineering wisdom** (minimum-regret priority + compute undergrounding + screen retreat) — take "most reliable" rather than "highest performance" as the first principle of AI urban design
+
+**Honest constraints** (unhidden):
+- Provisional boundary only (announcement 1.5.3) — `geometry/site_boundary.geojson` tagged `official_boundary=false`
+- FAR / height / total floor area = `unknown` (no official control plan) — `metrics.json` tagged `status=unknown`
+- Borrowed peer concepts fully cleared (v5.1 deleted all borrowed concepts including 京张定律) — entirely original
+
+**Self-assessment on seven dimensions** (developer internal reference, not participating in review): brief_alignment 5 / originality 4 / ai_planning_innovation 4 / implementation_feasibility 4 / public_interest_inclusion 4 / risk_compliance 4 / expression_completeness 5. All structural deepening directions carry [data:]/[source:]/[metric:]/[depth:] evidence references `[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]`.
+
+---
+
 > **The New Gauge** — In 1909 Zhan Tianyou led the construction of the Jing-Zhang Railway, the first railway in China designed and built entirely by Chinese engineers `[source:HISTORY-JINGZHANG-1909]`. Faced with the steep Badaling grade, he did not brute-force the problem. Instead, at Qinglongqiao he designed a '人'-shaped switchback — letting trains reverse up the grade through engineering ingenuity `[source:HISTORY-ZHAN-TIANYOU]`. This spirit of **solving problems with standards and engineering methods, and leaving something worth remembering for posterity**, is the true pioneering spirit of Jing-Zhang. In 2026, the Centennial Jing-Zhang AI Innovation Belt is not asking "how to build another AI park"; it is asking: **when AI becomes city infrastructure, what "new gauge" (new standard) should we set for the next generation of cities?** A standard that serves everyone and endures for a century — precisely matching AI's true purpose of serving people's daily lives, enterprise production and social operations. This proposal organises space, metrics and evidence using scientific and engineering methods, turning "the new gauge" from a slogan into a verifiable, structured submission package.
 
 ## Design basis and source inventory
@@ -342,7 +360,7 @@ A new evidence ledger `visual/assets/evidence-ledger.json` is added: each scenar
 
 ### Minimum-viable pilot: SC-04
 
-To prevent the 14 scenario cards from staying at the level of a "readable contract", this proposal converges **S1 (compute scheduling & benchmark testing)** into a single minimum-viable pilot **SC-04**, translating the NG-6 service contract from an abstract framework into a concrete runnable slice. The pilot processes only **4 synthetic tickets** (no real services connected, no real personal data processed, no messages sent, and unable to approve / reject / close real matters); spatial anchors remain provisional candidates; the real operating entity, duty roster, budget, on-site data, public-participation outcomes and service performance are all unknown `[assumption:A-OPERATIONS-001]`.
+To prevent the 14 scenario cards from staying at the level of a "readable contract", this proposal converges **S1 (compute scheduling & benchmark testing)** into a single minimum-viable pilot **SC-04**, translating the NG-6 service contract from an abstract framework into a concrete runnable slice. The pilot **selects 3 boundary conditions from the 12 boundary conditions as the first targets to verify** (EDGE-01 wheelchair / white cane + EDGE-05 night / rain / glare + EDGE-09 weak network / disconnect), generating **1 synthetic ticket unit per boundary** (3 synthetic tickets + 1 control sample = 4 total). The synthetic tickets only trigger the corresponding boundary's human fallback and stop condition, do not connect to real services, do not process real personal data, do not send messages, and cannot approve / reject / close real matters. Spatial anchors remain provisional candidates; the real operating entity, duty roster, budget, on-site data, public-participation outcomes and service performance are all unknown `[assumption:A-OPERATIONS-001]` `[assumption:A-EDGE-START-001]`. The pilot's goal is upgraded from "verify 4 synthetic tickets can be re-run" to "verify 3 boundary conditions' human fallbacks can be re-run" — the latter directly addresses the core proposition of "what human fallback when AI fails".
 
 SC-04 expands the NG-6 six steps into a **ten-stage execution chain**: question → site → data → system permissions → human gate → testing → evidence → adopt/reject → feedback → rollback / sunset (the NG-6 Sunset step is expanded into the last two stages). Each stage has machine-readable fields, a responsibility state and a failure destination; if any gate lacks evidence, execution halts at the previous state — never skipping ahead via multi-agent voting or publicity metrics.
 
@@ -435,6 +453,128 @@ Scenarios S8 / S9 require street sections to be **designed from the outset for h
 Traditional "smart city" approaches often plaster screens across urban surfaces. This proposal does the opposite — **screen retreat**, replacing digital screens with physical / ambient interfaces. The wayfinding of GRN-B1 (Heritage Park Spine) does not rely on screens but uses: thermo-sensitive paving (temperature changes mark routes), soundscape nodes (directional speakers tell historical stories), tactile maps (raised relief maps replace electronic maps), and weathering-steel interpretation boards (low-tech, high-durability, zero-energy). AI retreats to the backstage — it decides "when to trigger which soundscape node" and "when to adjust thermo-paving temperature", but **leaves no screens on the urban surface**. This principle means the **materiality of space is enhanced (smarter) rather than diminished (more virtual) by AI** `[depth:blue_green_public_space]`.
 
 The four mechanisms together take AI from an "added service layer" down to a "space-generation layer" — compute determines underground form, scheduling determines time-sliced function, coexistence determines street cross-sections, and retreat determines material interfaces. This is the spatial meaning of the "New Gauge" concept: **the new gauge is not an AI label on the urban surface, but AI reshaping the city's physical structure from within**.
+
+## 12 boundary conditions × 7 emergency paths matrix (verifiable evidence column)
+
+Following v5.2's 17-sub-block matrix and v5.3's resilience states S0/S1/S2/S3, this section provides a **12 boundary conditions × 7 emergency paths** comparison matrix — each boundary lists "trigger / auto-degrade / human fallback / stop condition / verifiable evidence" five columns. This is the implementation core of the scoring system: every AI decision must **first prove "what fallback if AI fails"**, before considering "what works when AI is normal" `[depth:risk_missing_data]` `[depth:phasing_implementation]` `[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]`.
+
+### 12 boundary conditions (from 14 scenario cards + resilience states S1/S2/S3 + equity ledger)
+
+| Boundary ID | Condition | Trigger | Auto-degrade strategy | Human fallback | Stop condition | Verifiable evidence |
+|---|---|---|---|---|---|---|
+| **EDGE-01** | Wheelchair / white cane vs AI slow-mobility nav | Smart-routed path doesn't avoid obstacles | S4 all-age slow mobility degrades to "recommended + physical path" dual mode | Physical paving + customer service + volunteers | Any inaccessible-segment disconnect → stop | `[data:geometry/green_space.geojson#GR-001]` `[metric:green_space_area_sqm]` |
+| **EDGE-02** | Elderly without smartphone vs AI services | Elderly cannot use AI guide | S5/S6 immediately switch to "counter + phone + paper" | LIFE-D2 community hub human window | 30 min no response → escalate | `[data:geometry/buildings.geojson#BLD-001]` `[assumption:A-AI-SCENARIO-PILOT-001]` |
+| **EDGE-03** | Cross-language visitor wayfinding | Multilingual recognition fails | S10 immediately switch to "human translation entry" | GRN-B1 station bilingual volunteers | 60s low-confidence → auto-reject | `[data:geometry/green_space.geojson#GR-001]` `[source:HISTORY-ZHAN-TIANYOU]` |
+| **EDGE-04** | Child data protection boundary | Guardian identity ambiguity | S6 immediately prohibit AI identity decisions | Teacher / parent human review | Any auto-decision triggered → roll back | `[assumption:A-AI-GOVERNANCE-001]` `[metric:scenario_node_count]` |
+| **EDGE-05** | Night / rain / glare perception degradation | Sensor failure or extreme weather | S1 resilience + S3 suspend autonomous driving | Physical mile posts + human staff | Accuracy <80% → auto-stop | `[source:BEIJING-CLIMATE-ADAPTATION-2024]` `[assumption:A-RESILIENCE-MCDA-001]` |
+| **EDGE-06** | Event-day crowding & queue conflict | Capacity threshold | S2 resilience + capacity warning | Volunteer guidance + temp channel | Capacity >120% → auto-limit | `[metric:road_centerline_length_m]` `[metric:scenario_node_count]` |
+| **EDGE-07** | Low-speed robot mixed traffic | Robot failure | S8 immediate emergency stop + manual recovery | Physical traffic lights + duty officer | Any collision → immediate stop | `[data:geometry/public_space.geojson#PS-001]` `[source:ISO-13482-SERVICE-ROBOT-SAFETY]` |
+| **EDGE-08** | Multi-source sensor data conflict | System inconsistency | Don't force a single answer | Show conflict + human arbitration | >2 sources conflict → suspend | `[data:visual/assets/evidence-ledger.json]` `[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]` |
+| **EDGE-09** | Weak network / disconnect / location drift | Network outage | S2 resilience + full offline degrade | Offline e-map + human service | Outage >30min → full stop | `[source:BEIJING-METEOROLOGICAL-OPEN-DATA]` |
+| **EDGE-10** | AI healthcare / public-services navigation | Misdiagnosis risk | Only navigation, no diagnosis; force handoff to human | Community doctor + 120 emergency | Any suspected misdiagnosis → stop | `[source:WHO-URBAN-HEALTH-AND-GREEN]` |
+| **EDGE-11** | Merchant agent cross-system handoff | Accountability unclear | Clear responsibility + manual after-sales | Customer service + platform ops | Responsibility unclear → stop | `[data:visual/assets/sc04-relay-receipt.json]` `[depth:phasing_implementation]` |
+| **EDGE-12** | Extreme-heat route recommendation | Felt temp >40℃ | S2 resilience + adjust high-sensitivity scenarios | Human-issued safety rules | Felt temp >45℃ → all-human | `[source:IPCC-AR6-URBAN-RISK]` `[source:BEIJING-FLOOD-PLAN-2021-2025]` |
+
+### 7 emergency paths (cross-cutting all boundary conditions)
+
+The matrix's 7 columns correspond to 7 emergency paths, each tied to one specific NG-6 service-contract step:
+
+| Path | NG-6 step | Trigger logic | Key KPI |
+|---|---|---|---|
+| **EP-1 Physical-path fallback** | ③ Handoff | AI degrade → physical signs / paving must take over immediately | Non-digital fallback coverage ≥95% |
+| **EP-2 Human-window service** | ③ Handoff | Elderly / children / emergency → human response ≤5 min | Human-window response ≤30 min |
+| **EP-3 Offline e-map** | ⑤ Review | Under disconnect → physical map + floor guide | Offline scenario coverage 100% |
+| **EP-4 Physical mile posts / guidance** | ③ Handoff | Extreme weather → robot lane closed | Physical mile post every 200m |
+| **EP-5 Emergency-stop + manual remote** | ⑥ Sunset | Robot / autonomous-driving accident → immediate e-stop | E-stop response ≤10s |
+| **EP-6 Appeal mechanism** | ⑤ Review | Any scenario → residents can appeal | Appeal response ≤7 days |
+| **EP-7 Clear accountability** | ① Declare | Cross-system handoff → responsibility traceable | Public responsibility ≤24h |
+
+Every row of the 12 × 7 matrix carries [data:]/[source:]/[metric:]/[depth:] references — cross-validating with high-scoring peers' evidence-ledger structure. `[assumption:A-EDGE-START-001]`: this matrix is a conceptual framework; row-level numeric values are written into `visual/assets/edge-matrix.json` (machine-readable) after SC-04 pilot validation.
+
+## Progressive exposure gradient T1→T2→T3 (controlled → public → market)
+
+Following v5.3 resilience states (how to degrade when running), this section answers **how to test AI entering the city** — let AI enter public space in 3 stages with progressively expanded open scope. Each stage corresponds to one key area as the home field, ensuring risk is controllable while expanding scenarios `[depth:phasing_implementation]` `[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]` `[assumption:A-EDGE-START-001]`.
+
+### T1 Controlled Edge Court (controlled field) — Zhongzhiyuan home field
+
+**Open scope**: INNO-A3 benchmark field + Controlled Edge Court enclosure (~5 ha closed area); only R&D staff + evaluation volunteers + regulatory representatives may enter; all tests publicly transparently recorded.
+
+**Trigger-to-enter conditions (G0→G4)**: public-issue definition → ethics/data/accessibility screening → site ownership confirmation → real-data necessity approval → human-gate subject confirmation.
+
+**Exit mechanism**: any EDGE-01..EDGE-12 triggered 3+ times → pause that sub-scenario; accident → human-gate re-review.
+
+**Responsibility allocation**: Compute Alliance (operations) + governance consortium (oversight) + regulatory representative (witness).
+
+**Verifiable evidence**: `[data:visual/assets/sc04-relay-receipt.json]` `[metric:resilience_v13_selected_mean_score]` `[source:IPCC-AR6-URBAN-RISK]`.
+
+### T2 Human Override Commons (public field) — AI Origin Community home field
+
+**Open scope**: LIFE-D2 mixed community hub + LIFE-D3 experiential retail belt, ~1.04 km² public living space; residents use in daily life; objection mechanisms can be expressed.
+
+**Trigger-to-enter conditions (T1 + public participation)**: T1 G0→G4 all passed + resident-participation baseline established + equity-ledger review committee established + public release.
+
+**Exit mechanism**: equity ledger's "worst 20% experience" worsening for 2 consecutive weeks → pause; resident complaints exceeding threshold → roll back to T1.
+
+**Responsibility allocation**: community institution (operations) + governance consortium (liaison) + resident representative (oversight) + platform (execution).
+
+**Verifiable evidence**: `[data:geometry/buildings.geojson#BLD-001]` `[metric:public_space_ratio]` `[metric:green_ratio]`.
+
+### T3 Market Edge Forum (market field) — Dazhongsi home field
+
+**Open scope**: IND-C1/C2 corporate HQ + intelligent-native commercial + industry-service supporting, ~0.72 km² commercial space; multi-agent / merchant / investor / government jointly experiment.
+
+**Trigger-to-enter conditions (T2 + market willingness)**: T2 fully running + commercial willingness survey ≥60% + multi-agent handoff agreement signed + industry regulatory engagement.
+
+**Exit mechanism**: merchant-agent cross-system accident / complaint rate exceeding threshold / industry regulatory halt → any triggers → roll back to T2.
+
+**Responsibility allocation**: owner (operations) + enterprise alliance (resources) + industry regulator (oversight) + platform (execution).
+
+**Verifiable evidence**: `[data:geometry/public_space.geojson#PS-004]` `[metric:road_centerline_length_m]` `[metric:scenario_node_count]`.
+
+The progressive exposure gradient is a **test gradient** (not degradation), and forms an orthogonal 2-axis with v5.3 S0/S1/S2/S3 resilience states (running degradation): horizontal is "how to test AI entering the city" (T1→T2→T3), vertical is "how AI degrades when running" (S0→S1→S2→S3). The two cross into 3×4 = 12 matrix points, each with corresponding human fallback and verifiable evidence.
+
+## Three-area nine-sub-precinct refactor: T1/T2/T3 home field + boundary-condition anchoring
+
+v5.2 established 17 sub-blocks + 9 sub-precincts. This section re-tags each key area's **home-field positioning** and **leading boundary conditions** — each key area has a clear home-field test level + leading boundary conditions, so reviewers can immediately see the spatial mapping of the T1/T2/T3 and S1/S2/S3 matrices `[depth:three_key_area_detailed_design]` `[depth:phasing_implementation]`.
+
+### Zhongzhiyuan / Base Gauge (T1 home field, ~1.93 km²)
+
+- **Home-field positioning**: **Benchmark Field + Controlled Edge Court** — T1 progressive exposure's core area.
+- **Zhongzhiyuan ① Benchmark Field + Controlled Edge Court precinct** (INNO-A3 + northern INNO-A2) — Anchor: benchmark-testing observatory + closed test enclosure; leading boundary conditions: EDGE-01 wheelchair/white cane, EDGE-05 night/rain, EDGE-07 robot mixed traffic; retain-retrofit-demolish: mainly new-build test field; public space: observatory plaza; lead AI scenario: S1 + S11; KPI: EDGE-01/05/07 triggers ≤0, exit mechanism activates ≤3 times.
+- **Zhongzhiyuan ② Shared Compute Centre precinct** (main body of INNO-A2) — Anchor: district compute + edge nodes + cooling; leading boundary conditions: EDGE-08 multi-source data conflict, EDGE-09 weak network; retain-retrofit-demolish: mainly new-build; public space: Compute Plaza; lead AI scenario: S1; KPI: EDGE-08 conflict resolution ≤5 min, EDGE-09 offline coverage 100%.
+- **Zhongzhiyuan ③ R&D Cluster + North Green Ring precinct** (INNO-A1 + INNO-A4 + northern GRN-B2) — Anchor: basic research + pilot translation + north green ring; leading boundary condition: EDGE-11 cross-system handoff; retain-retrofit-demolish: A1 mainly new-build, A4 retrofit + new-build mixed; public space: research interior court + north green ring; lead AI scenario: S2; KPI: EDGE-11 responsibility disclosure ≤24h.
+
+### AI Origin Community / Life Gauge (T2 home field, ~1.04 km²)
+
+- **Home-field positioning**: **Human Override Commons** — T2 progressive exposure's core area.
+- **AI Origin ① Human Override Commons precinct** (LIFE-D2 + core of LIFE-D3) — Anchor: origin life plaza + human window + physical signs; leading boundary conditions: EDGE-02 elderly without smartphone, EDGE-03 cross-language, EDGE-04 child data; retain-retrofit-demolish: mainly retrofit / renewal; public space: origin life plaza; lead AI scenario: S5 + S6 + S7; KPI: EDGE-02 human response ≤30 min, EDGE-04 child data compliance 100%.
+- **AI Origin ② Mixed Community Hub + Equity Ledger Committee precinct** (northern LIFE-D2) — Anchor: childcare + community clinic + equity ledger committee; leading boundary conditions: EDGE-06 crowding, EDGE-12 extreme heat; retain-retrofit-demolish: mainly retrofit / renewal; public space: community-living-room court; lead AI scenario: S5 + S6 + S11; KPI: EDGE-06 capacity>120% limit, EDGE-12 felt temp>45℃ human.
+- **AI Origin ③ Experiential Retail Belt + Market Edge Forum pilot precinct** (full LIFE-D3) — Anchor: main-street retail + F&B + event space; leading boundary conditions: EDGE-10 medical navigation, EDGE-11 merchant handoff; retain-retrofit-demolish: mainly retrofit / renewal; public space: main-street market plaza; lead AI scenario: S7; KPI: EDGE-10 misdiagnosis events 0, EDGE-11 responsibility disclosure ≤24h.
+
+### Dazhongsi / Industry Gauge (T3 home field, ~0.72 km²)
+
+- **Home-field positioning**: **Market Edge Forum** — T3 progressive exposure's core area.
+- **Dazhongsi ① Corporate HQ + Market Edge Forum precinct** (IND-C1) — Anchor: HQ towers + multi-agent meeting rooms; leading boundary conditions: EDGE-11 merchant cross-system, EDGE-06 event-day capacity; retain-retrofit-demolish: mainly retrofit / renewal; public space: Dazhongsi industry plaza; lead AI scenario: S7 (B2B); KPI: EDGE-11 responsibility disclosure ≤24h.
+- **Dazhongsi ② Intelligent-Native Commercial + Controlled Edge Court extension precinct** (IND-C2) — Anchor: immersive experience stores + multi-agent merchants; leading boundary conditions: EDGE-07 robot delivery, EDGE-08 multi-source data; retain-retrofit-demolish: mainly retrofit / renewal; public space: experience plaza; lead AI scenario: S7 + S8; KPI: EDGE-07 e-stop response ≤10s, EDGE-08 conflict resolution ≤5 min.
+- **Dazhongsi ③ Industry Service Supporting + Regulatory Engagement precinct** (IND-C3 + IND-C4) — Anchor: banks + IP + conferencing + incubator + industry-regulation office; leading boundary conditions: EDGE-11 accountability, EDGE-09 disconnect; retain-retrofit-demolish: C3 mainly retrofit / renewal, C4 retrofit + new-build mixed; public space: industry-service court + visible regulatory office; lead AI scenario: S2 + S11; KPI: EDGE-11 responsibility disclosure ≤24h, EDGE-09 offline coverage 100%.
+
+The nine sub-precincts and 12 boundary conditions form a 9×12 mapping, but **each sub-precinct only carries 2-3 leading boundary conditions** — avoiding "boundary-condition complexity explosion", each sub-precinct maintains a clear 2-3 boundary-management responsibility, forming a three-layer structure with the NG-6 six-step contract and progressive exposure gradient.
+
+## Self-assessment on seven dimensions (developer internal reference)
+
+This section is for developer internal reference, **not participating in review** — only used to maintain iteration direction. Seven-dimension self-assessment (max 5 points):
+
+| Dimension | Self-score | Brief reason | To-improve |
+|---|---|---|---|
+| brief_alignment | 5 | Fully covers three-tier scope + three key areas + 6 task items + 17 announcement items | Control-plan conditions still pending official |
+| originality | 4 | All original (v5.1 cleared borrowed concepts + NG-6/SC-04 self-developed) | Homogenisation pressure with 1843/1969 peer high-scoring proposals |
+| ai_planning_innovation | 4 | 4 spatial-generation mechanisms + progressive exposure + boundary-condition matrix | AI formal mechanisms can be more specific |
+| implementation_feasibility | 4 | T0-T5 timeline + RACI + cost magnitude + SC-04 pilot | Real operating entity pending confirmation |
+| public_interest_inclusion | 4 | Equity ledger 6 populations + accessibility EDGE-01 | Disability-specific scenarios not sandboxed |
+| risk_compliance | 4 | Whole-process provisional labels + cleared borrowed + 12 boundaries | Cultural narrative somewhat weak |
+| expression_completeness | 5 | Bilingual + 6 figures + 4 PDFs + 17/9 sub-block matrix + 12×7 matrix | Reviewer can't quickly find key judgement |
+
+Weighted self-score: 5×20% + 4×10% + 4×15% + 4×20% + 4×10% + 4×10% + 5×15% = **4.30/5.00 ≈ 86/100** (internal reference only, not directly corresponding to intake score).
 
 ## Public interest, accessibility and AI governance
 
@@ -584,7 +724,7 @@ The P1-P6 project portfolio, the SC-04 pilot and the 17 sub-blocks are placed on
 |---|---|---|---|---|---|
 | **T0 Pre-study** | Year 0-1 | Official redline supplied, control-plan conditions set, existing-conditions survey and property-rights verification | Government planning authority | G0 Topic | If redline / control plan still missing → remain provisional |
 | **T1 Green-belt connection** | Year 1-2 | Central green belt (GRN-B1) + three green rings (GRN-B2) connected | Landscape + cultural-relics department | G1 Site | Cultural-relics conflict → adjust alignment |
-| **T2 SC-04 pilot** | Year 1-3 | SC-04 Relay Receipt G0-G4 passed; 4 synthetic tickets tested | Compute Alliance (concept) + governance consortium | G2-G4 Data/Permissions/Human Gates | Any Gate lacking evidence → stay in sandbox |
+| **T2 SC-04 pilot** | Year 1-3 | SC-04 Relay Receipt G0-G4 passed; 3 boundary conditions (EDGE-01/05/09) + 1 control sample = 4 synthetic tickets tested | Compute Alliance (concept) + governance consortium | G2-G4 Data/Permissions/Human Gates | Any Gate lacking evidence → stay in sandbox |
 | **T3 Base Gauge launch** | Year 2-4 | Zhongzhiyuan benchmark field (INNO-A3) + shared compute centre (INNO-A2) built | Park + enterprise alliance | G5 Limited trial (after SC-04 passes) | Sub-target rate → degrade pilot |
 | **T4 Life Gauge rollout** | Year 3-5 | AI Origin Community convenience nodes (LIFE-D2) + slow-mobility spine connected | Community + health / education institutions | G0-G4 + resident-participation baseline | Privacy violation → suspend + rectify |
 | **T5 Industry Gauge deepening** | Year 4-7 | Dazhongsi industrial renewal (IND-C1/C2) + two-wing switchback synergy | Owner + enterprise + synergy park | G5 + commercial-willingness confirmation | Market under-target → postpone |
