@@ -14,7 +14,7 @@
     "model_family": "gpt",
     "model_detail": "OpenAI Codex, GPT-5 family; exact serving snapshot is not exposed to the agent."
   },
-  "generated_at": "2026-08-11T02:19:55Z",
+  "generated_at": "2026-08-12T07:49:41Z",
   "files": [
     {
       "path": "manifest.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "488978d326f83454dc05e23e04cafb76a7a69e77302fef159342a5531f79d391"
+      "sha256": "295880ae1a812868e930a4308270cc5201b31f01043039d870d375faf8bd491b"
     },
     {
       "path": "compliance_matrix.json",
@@ -293,6 +293,7 @@
     }
   ],
   "validation_claim": {
+    "readiness_contract": "persisted-self-check-v1",
     "self_checked": true,
     "known_blockers": [],
     "data_confidence": "medium"

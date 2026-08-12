@@ -1,6 +1,31 @@
 {
   "schema_version": "0.1.0",
+  "ok": true,
+  "can_enter_formal_review": true,
+  "package_type": "professional_design_package",
+  "review_status": "formal-review-ready",
   "checks": [
+    {
+      "check_id": "DETERMINISTIC_VALIDATION",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "manifest.json",
+      "message": "The complete package passes deterministic schema, manifest, scope, size, bilingual and integrity validation."
+    },
+    {
+      "check_id": "SPATIAL_REVIEW",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "geometry/",
+      "message": "Projected-area, topology and metric recalculation checks pass; provisional-boundary notices remain non-blocking and explicit."
+    },
+    {
+      "check_id": "VISUAL_PACKAGING",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "visual/index.html",
+      "message": "Offline visual packaging, local assets and displayed structured metrics pass the visual review."
+    },
     {
       "check_id": "BOUNDARY_TRUST",
       "result": "pass",
@@ -39,7 +64,7 @@
     {
       "check_id": "PROFESSIONAL_EVIDENCE",
       "result": "pass",
-      "severity": "major",
+      "severity": "blocking",
       "target": "proposal.md",
       "message": "All required chapters contain claim-adjacent evidence anchors and depth references."
     },
