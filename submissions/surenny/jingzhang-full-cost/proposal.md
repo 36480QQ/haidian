@@ -6,19 +6,23 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "以七本成本账、一本公共回报账与可拒签的停算清账回执为城市设计 admission gate；所有空间动作均为临时约束条件下的概念建议。"
+summary: "公共空间先交付，AI 只借用可撤的相对试验格，并在退出后留下可复算的公共净回报；七本成本账、一本公共回报账与可拒签回执共同构成 admission gate。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v0.6"
+iteration: "v0.7"
 ---
 
 # 京张算清：AI 进入城市前，先把全成本与公共回报算清
+
+> **核心命题：AI 可以离场，公共回报必须留在地上。** 公共总账线与人工服务先成立；AI 只借用可撤的相对试验格，并且只有在新增受保护用途严格多于试验占用时，才有资格进入人工共评。
 
 ## 设计依据与资料清单
 
 本成果以北京市规划和自然资源委员会海淀分局的公开公告、用户提供并清权的智能体任务书、仓库场地包和公共来源登记表为依据。公告提供三层范围的文字与约数，但没有正式 polygon；因此 `geometry/site_boundary.geojson` 与 `geometry/key_areas.geojson` 保留为临时约束，不是红线、控规或审批依据 [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [data:geometry/site_boundary.geojson#SITE-001]。结构化 JSON、GeoJSON、图件、HTML 和 PDF 由同一证据模型生成，正文只保留能帮助专业读者判断的相邻锚点。
 
-我们的设计判断是：AI 进入城市之前，必须先把空间、能源水、材料设备、数据算力、劳动维护、公众注意、公共资金七本成本账，与公共回报账放在同一张可步行、可复核的公共总账线上。没有本地测量的值就写“待补数据”，由责任人、方法、时间窗和停止条件接住，而不是用全球平均数填空 [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [metric:eight_ledger_baseline] [depth:existing_conditions_diagnosis]。
+我们的设计判断是：公共空间不能成为 AI 设备的永久展台。公共总账线、连续通行、人工服务、安静休息和维护通道必须先成立；AI 只作为可撤的临时客体进入，并用同一分母证明留下的受保护用途多于占用。空间、能源水、材料设备、数据算力、劳动维护、公众注意、公共资金七本成本账，与公共回报账因此被放在同一条可步行、可复核的公共总账线上 [data:geometry/roads.geojson#ROAD-001] [metric:spatial_balance_state_count] [depth:overall_spatial_structure]。
+
+没有本地测量的值就写“待补数据”，由责任人、方法、时间窗和停止条件接住，而不是用全球平均数填空。这个规则不把“人工后备、AI 可退出、公共回报”这些已有通用原则冒充原创；本包可核验的原创范围，是 `PUBLIC-003` 上前/候选/退出三态使用同一组相对布局格，并要求设备退出后保留公共增量 [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [metric:eight_ledger_baseline] [data:geometry/public_space.geojson#PUBLIC-003]。
 
 ![资料证据链与提交包关系图](assets/figures/site-overview.png)
 
@@ -35,6 +39,8 @@ iteration: "v0.6"
 `verify-responsibility-transfer.js` 先检查七项完整合约与 GeoJSON 锚点，再运行七个负例：分别删去接收角色、非 AI 等价路径、空间后果、失败分母、停算证据、恢复证据和受影响群体观察员；七个负例必须全部被拒绝。该结果只证明接口能拒绝责任转嫁，不证明岗位已任命、预算已落实或现场移交已发生 [metric:responsibility_handoff_negative_fixture_count] [metric:responsibility_handoff_fixture_match_rate] [depth:risk_missing_data]。
 
 “空间收支表”把同一主张压缩成 `PUBLIC-003` 公共回报桌上的一个可读空间决定：普通人工基线、AI 候选态与退出态各分配 12 个**相对布局格**，不使用米、平方米、容量或现场客流。候选态不得减少连续通行、人工服务、安静休息或维护通道；新增受保护用途格必须多于可撤 AI 试验占用格。当前桌面候选用 1 格试验换取 2 格受保护用途增量，因此相对净回报为 1 格；退出态清零试验格并保留新增的通行与休息。该算式只是一项待共评布局假设，不是官方尺寸、无障碍合规结论、现场绩效或实施许可 [metric:spatial_balance_state_count] [data:visual/assets/spatial-balance-data.js#public-return-table-spatial-balance-v1] [data:geometry/public_space.geojson#PUBLIC-003]。
+
+一名“不注册、不刷脸、需要完成夜班维护交接”的概念角色把三态后果串起来：普通基线中，她沿连续通行格抵达人工服务和维护通道；候选态只能在不削减这些用途的前提下借用 1 格 AI 试验位，并同时增加 1 格连续通行与 1 格安静休息；退出态撤走试验设备，但保留新增通行与休息。这个旅程用于暴露谁获得空间、谁承担维护和退出后还剩什么，不代表真实个人、现场访谈或已验证无障碍体验 [data:visual/assets/spatial-balance-data.js#public-return-table-spatial-balance-v1] [depth:three_key_area_detailed_design]。
 
 `verify-spatial-balance.js` 校验三态总格数、临时 GeoJSON 锚点、受保护用途不减、净回报严格大于试验占用、退出清零设备、人工 go/revise/exit 门与“仅相对格”边界；六个负例逐项破坏通行、净回报、退出、人工门、锚点或单位声明，必须全部被拒绝。轮椅使用者、老年人、照护者、小商户、人工服务人员与现场维护者只作为待授权共评群体，不记录个人数据，也不把离线通过冒充其真实同意 [metric:spatial_balance_negative_fixture_count] [metric:spatial_balance_fixture_match_rate] [depth:three_key_area_detailed_design]。
 
