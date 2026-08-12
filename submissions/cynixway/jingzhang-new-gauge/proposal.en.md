@@ -430,6 +430,53 @@ The wayfinding system is distinct from the belt's overall Logo system: the Logo 
 
 The above are all conceptual suggestions; specific compliance must follow the Personal Information Protection Law, the Data Security Law, the Accessibility Environment Construction Law and professional legal review `[assumption:A-AI-GOVERNANCE-001]`.
 
+**Equity ledger**: differences in experience across population groups cannot be hidden behind averages. This proposal establishes an equity ledger — recording accessibility, thermal comfort, safety perception, service wait times and appeal-response differences separately for six population groups `[depth:blue_green_public_space]` `[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]`:
+
+| Group | Weakest-experience risk | Equity-ledger field | Design response |
+|---|---|---|---|
+| Elderly and children | Poor thermal comfort, broken accessibility chain, cognitive overload | Shade coverage, accessible-mainline connectivity, sign legibility | GRN-B1 heritage-park shade belt + S4 all-age slow mobility + physical-sign priority |
+| People with disabilities | Robot obstruction, screen dependency | Accessible-channel occupation rate, non-digital fallback coverage | INF-E1 prohibits robot obstruction + every scenario keeps a physical path |
+| Night-shift workers (delivery / cleaning / security) | Poor safety perception, insufficient lighting, lack of rest space | Night-time illuminance, rest-point density, emergency-stop coverage | INF-E3 smart lighting poles + 24h safety nodes |
+| Low-digital-literacy residents | AI service threshold too high | Non-digital-alternative usage rate, human-window wait time | LIFE-D2 mixed community hub retains human windows |
+| Developers / entrepreneurs | Few test-scenario entry points, opaque approval | Open-scenario count, approval turnaround | INNO-A3 benchmark field open-application system |
+| Visitors / tourists | Fragmented cultural experience, difficult wayfinding | Multilingual coverage, guide accessibility | GRN-B1 five story-segment nodes + S10 multilingual AI guide |
+
+The equity ledger is currently a **conceptual framework** — the specific values of each field are `design_target` (design targets), not measured current-state values; they become verifiable indicators once an operational baseline is established `[assumption:A-EVIDENCE-001]`.
+
+## Urban resilience and full-state graceful degradation (NG-6 step 7: Resilience)
+
+The hallmark of mature urban infrastructure is not "maximum performance" but "graceful degradation under failure". This proposal extends the NG-6 service contract from six steps to **seven** — adding **⑦ Resilience** after the original ⑥ Sunset: defining four operating states with their own minimum service standards, ensuring that AI systems can gracefully yield to human / physical fallbacks under extreme conditions `[depth:municipal_new_infrastructure]` `[depth:blue_green_public_space]` `[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]`.
+
+| State | Trigger | AI service degradation | Minimum service standard (human / physical fallback) | Recovery path |
+|---|---|---|---|---|
+| **S0 Normal** | Clear weather, network up, power up | All running | All NG-6 steps normal | — |
+| **S1 Rainy** | Rainfall > 50mm/24h or rainstorm warning | S3 shuttle navigation reduces frequency, S8 robot delivery suspends, S9 autonomous shuttle suspends | Physical wayfinding signs + human delivery + shelter points every 200m | After rain stops: human-check accessible mainline → resume |
+| **S2 Network-down** | Network outage > 30min | All AI scenarios suspend | Physical signs / paper guides + human-staffed windows + offline emergency maps | Network restored → G3 system-permissions Gate re-verified → gradual resume |
+| **S3 Power-down** | Power outage > 15min | All suspend + edge nodes switch to backup battery | Emergency lighting (INF-E3 microgrid degradation) + human evacuation guidance + emergency-stop buttons remain triggerable | Power restored → equipment self-check → G0-G3 re-review → resume |
+
+Resilience-state design principles `[assumption:A-GREEN-BLUE-CONCEPT-001]`:
+
+1. **Minimum service is non-negotiable**: every degradation state must keep a human / physical fallback path; "AI stopped so everything stopped" is not acceptable.
+2. **Emergency stop outranks performance**: S8 / S9 robot / autonomous-driving scenarios trigger immediate emergency stop in any of S1 / S2 / S3, never substituting "autonomy rate" for public safety.
+3. **Recovery must pass Gates**: returning from a degraded state to normal requires G0-G3 re-review (at least a human signature), never skipping ahead via auto-recovery.
+4. **Annual drill**: each degradation state is drilled on-site at least once a year (conceptual suggestion, pending operating-entity implementation); drill results are written into the evidence ledger.
+
+Resilience differs from NG-6 Sunset: Sunset is "project lifecycle end", Resilience is "temporary degradation in daily operation" — both require human final judgement and complete audit records, but Resilience's recovery path is shorter and triggers more frequently.
+
+## Minimum-regret prioritisation methodology
+
+Traditional urban-planning priorities often pursue "maximum on every metric" — highest green ratio, highest connectivity, highest intelligence. But under provisional boundary + missing control plan + missing existing-conditions survey, "maximum on every metric" is neither verifiable nor implementable. This proposal adopts a **minimum-regret (minimax regret) prioritisation methodology** — not pursuing single-indicator optimality, but ensuring **the weakest experience meets standard**, spending limited certainty on "avoiding the worst outcome" `[depth:phasing_implementation]` `[depth:risk_missing_data]`.
+
+**Methodology core**: for every design decision on the 17 sub-blocks, the question is not "how good can it get" but "how bad can it get" — if the worst case is acceptable (has fallback, is rollback-able, does not harm vulnerable groups), proceed; if the worst case is unacceptable (no fallback, irreversible, harms public interest), downgrade or stop.
+
+| Priority | Criterion | Example sub-blocks | Implementation strategy |
+|---|---|---|---|
+| **P-Ensure** | Worst case = has physical fallback, rollback-able, does not harm vulnerable groups | GRN-B1 heritage park (physical-guide fallback), LIFE-D2 community hub (human-window fallback) | Near-term priority; does not depend on AI maturity |
+| **P-Conditional** | Worst case = AI failure degrades to human, but requires extra operating cost | INNO-A2 compute centre, IND-C1 HQ base | Mid-term; precondition = operating entity + cost confirmed |
+| **P-Pilot** | Worst case = AI failure with difficult human fallback, requires strict geofence | S8 robot delivery, S9 autonomous driving | SC-04-level minimum pilot only; full G0-G6 passage required before expansion |
+
+The minimum-regret methodology turns the 17 sub-blocks' "conceptual suggestions" into **sortable implementation priorities** — not all sub-blocks need to be best simultaneously, but sorted by "acceptability of the worst case", prioritising those sub-blocks that will not make the city worse even if AI fails. This is consistent with Jing-Zhang's '人'-shaped switchback engineering wisdom — Zhan Tianyou did not pursue the shortest path or the highest speed, but chose the **most reliable** engineering solution to overcome the steep grade `[source:HISTORY-ZHAN-TIANYOU]`.
+
 ## Land use, building scale and retain–retrofit–demolish scheme
 
 The land-use layout is given in the "five-gauge zoning" section above, further refined into 17 sub-blocks (see the "Parcel-level design intent matrix" chapter). Building-scale expression `[depth:height_massing_character]` `[depth:retain_renovate_demolish]`:
