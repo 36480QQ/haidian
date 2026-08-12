@@ -6,6 +6,8 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_file: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
+translation_of: "proposal.md"
+summary: "One civic spine, three anchors, two wings and five time protocols form testable and exit-ready AI urban infrastructure under provisional geometry."
 ---
 # Jing-Zhang Civic Rhythm: AI Innovation as Everyday Time Infrastructure
 ## Executive proposition
