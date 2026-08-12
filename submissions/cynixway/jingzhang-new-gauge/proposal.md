@@ -129,7 +129,9 @@ translation_file: "proposal.en.md"
 | 生活轨 | 0702 居住与社区服务 | 2.33 km² | 20.4% | 人才公寓、社区配套 |
 | 基建轨 | 1207 交通与市政设施 | 1.49 km² | 13.0% | 道路、轨道、算力、能源 |
 
-各带面积与占比的完整数值索引见 `metrics.json`：`land_use_area_{code}_sqm` 与 `land_use_ratio_{code}`——`[metric:land_use_area_0802_sqm]` `[metric:land_use_ratio_0802]` `[metric:land_use_area_1401_sqm]` `[metric:land_use_ratio_1401]` `[metric:land_use_area_05_sqm]` `[metric:land_use_ratio_05]` `[metric:land_use_area_0702_sqm]` `[metric:land_use_ratio_0702]` `[metric:land_use_area_1207_sqm]` `[metric:land_use_ratio_1207]`；用地代码遵循国土空间用地用海分类指南 `[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]`。
+各带面积与占比的完整数值索引见 `metrics.json`（`land_use_area_{code}_sqm` 与 `land_use_ratio_{code}` 系列），用地代码遵循国土空间用地用海分类指南 `[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]`。创新轨 0802：`[metric:land_use_area_0802_sqm]` `[metric:land_use_ratio_0802]`；绿地轨 1401：`[metric:land_use_area_1401_sqm]` `[metric:land_use_ratio_1401]`。
+
+产业轨 05：`[metric:land_use_area_05_sqm]` `[metric:land_use_ratio_05]`；生活轨 0702：`[metric:land_use_area_0702_sqm]` `[metric:land_use_ratio_0702]`；基建轨 1207：`[metric:land_use_area_1207_sqm]` `[metric:land_use_ratio_1207]`。
 
 用地划分在 `geometry/land_use.geojson` `[data:geometry/land_use.geojson#LU-0802-A1]` 中为完整分区：**5 个轨带细化为 17 个子块** `[metric:land_use_count]` 的 union = site boundary，无重叠、无空洞（自检已验证覆盖间隙与两两重叠均为0）。每个子块带 `parcel_id` / `name_zh` / `name_en` / `sub_function_zh` / `sub_function_en` / `parent_gauge` 字段，用地代码遵循国土空间用地用海分类指南 `[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]`，同一 `land_use_code` 的所有子块的 union 面积 = 原轨带面积（per-code 指标不变）。现状诊断与资料缺口分析 `[depth:existing_conditions_diagnosis]` 显示：现有公开资料仅提供 provisional 边界，缺现状建筑测绘、权属与市政容量，本方案据此在 `geometry/constraints.geojson` `[data:geometry/constraints.geojson#CON-001]` 中固化 provisional 约束层。
 
@@ -549,12 +551,44 @@ NG-6 将 12 张场景卡（S1–S12）统一纳入服务契约框架：每张卡
 - **招引转化通道**：人才（开发者社区→创业）、企业（基准测试→入驻）、开发者（贡献→荣誉→合作）。
 - **长期维护责任**：每个项目明确运营责任方与维护周期（见上表），不虚构运营预算。
 
+### 实施时间线与责任矩阵（agent.6 长期运营深化）
+
+把 P1-P6 项目组合、SC-04 试点与 17 子块的实施时序落到**三年滚动时间线**上（概念级别，待主体与预算确认）`[depth:phasing_implementation]` `[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]`：
+
+| 阶段 | 时间窗（概念） | 里程碑 | 主责主体（概念） | 前置 Gate | 停止条件 |
+|---|---|---|---|---|---|
+| **T0 前期研究** | Year 0-1 | 官方红线补齐、控规条件落实、现状测绘与权属核查 | 政府规划主管部门 | G0 选题 | 红线与控规仍缺则保持 provisional |
+| **T1 绿带贯通** | Year 1-2 | 中央绿带（GRN-B1）+ 三区绿环（GRN-B2）连通 | 园林+文保部门 | G1 场地 | 文保冲突→调整线位 |
+| **T2 SC-04 试点** | Year 1-3 | SC-04 Relay Receipt G0-G4 通过、4 份合成工单测试完成 | 算力联盟（概念）+ 治理联合体 | G2-G4 数据/权限/人工 Gate | 任一 Gate 缺证据→保持沙箱 |
+| **T3 基准轨启动** | Year 2-4 | 众智园基准测试场（INNO-A3）+ 共享算力中心（INNO-A2）建成 | 园区+企业联盟 | G5 限域试用（SC-04 通过后） | 达标率不达标→降级试点 |
+| **T4 生活轨推进** | Year 3-5 | AI 原点社区便民节点（LIFE-D2）+ 慢行主轴贯通 | 社区+卫生/教育机构 | G0-G4 + 居民参与基线 | 隐私违规→暂停+整改 |
+| **T5 产业轨深化** | Year 4-7 | 大钟寺产业更新（IND-C1/C2）+ 两翼道岔协同 | 业主+企业+协同园区 | G5 + 商业意愿确认 | 市场不达→延期 |
+
+责任矩阵（RACI 概念级）——每个关键事项标注 R（执行）/A（批准）/C（咨询）/I（知情）`[assumption:A-IMPLEMENTATION-001]`：
+
+| 事项 | 政府 | 企业联盟 | 社区机构 | 公众 | AI 代理（观察员） |
+|---|---|---|---|---|---|
+| 红线与控规确认 | R/A | C | I | I | I |
+| SC-04 试点推进 | A | R | C | C | I（可审计观察） |
+| 场景开放与回滚 | A | R | C | C | I（证据链记录） |
+| 公平账本复核 | A | C | R | C | I（数据采集辅助） |
+| 韧性态年度演练 | A | R | R | C | I（降级记录） |
+
+时间线与责任矩阵均为**概念建议**——所有时间窗、主责主体和 RACI 分配待官方主体、预算与审批确认后调整 `[assumption:A-IMPLEMENTATION-001]` `[assumption:A-OPERATIONS-001]`。
+
 ## 指标体系、面积复算与合规矩阵
 
-核心指标由 `geometry/*.geojson` 在 EPSG:4548（CGCS2000/3度带CM117E）下复算 `[depth:metrics_recalculation]`：
+核心指标由 `geometry/*.geojson` 在 EPSG:4548（CGCS2000/3度带CM117E）下复算 `[depth:metrics_recalculation]`。按指标族分组：
 
-- 用地面积 `[metric:site_area_sqm]`、绿地率 `[metric:green_ratio]`、公共空间率 `[metric:public_space_ratio]`、建筑密度 `[metric:building_density]`、重点区数 `[metric:key_area_count]`、重点区总面积 `[metric:key_area_total_sqm]`、路网 `[metric:road_centerline_length_m]`、场景节点数 `[metric:scenario_node_count]`、三期面积 `[metric:phasing_area_near_sqm]` `[metric:phasing_area_mid_sqm]` `[metric:phasing_area_far_sqm]`。
-- 法定控规项（FAR/高度/总建面）为 `unknown`，附 reason `[metric:floor_area_ratio]`。
+- **范围与密度**：用地面积 `[metric:site_area_sqm]`、绿地率 `[metric:green_ratio]`、公共空间率 `[metric:public_space_ratio]`、建筑密度 `[metric:building_density]`。
+
+- **重点区**：重点区数 `[metric:key_area_count]`、重点区总面积 `[metric:key_area_total_sqm]`。
+
+- **交通与场景**：路网 `[metric:road_centerline_length_m]`、场景节点数 `[metric:scenario_node_count]`。
+
+- **分期**：近期 `[metric:phasing_area_near_sqm]`、中期 `[metric:phasing_area_mid_sqm]`、远期 `[metric:phasing_area_far_sqm]`。
+
+- **法定控规项**（FAR/高度/总建面）为 `unknown`，附 reason `[metric:floor_area_ratio]`。
 
 覆盖情况：`compliance_matrix.json` 覆盖全部17个公告条目（1.3.1–1.5.3.3）+6个agent任务（agent.1–agent.6）共23项；`standard_matrix.json` 覆盖5个强制标准；`design_depth_matrix.json` 全部required depth项为 complete。
 
