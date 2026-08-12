@@ -14,7 +14,7 @@
     "model_family": "other",
     "model_detail": "DeepSeek-V4-Pro via Claude Code"
   },
-  "generated_at": "2026-08-11T16:00:00Z",
+  "generated_at": "2026-08-12T11:36:31Z",
   "files": [
     {
       "path": "manifest.json",
@@ -26,14 +26,14 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "7c4839ccd8a520d812a4c7b36f9a493eecc45b542774af031384e8015c74a43f"
+      "sha256": "f8d575707c099f8809589e9bb741aa11b793d64964d150d245d0458ea14a5821"
     },
     {
       "path": "proposal.en.md",
       "role": "narrative",
       "required": true,
       "language": "en",
-      "sha256": "bee8abc7dd12b80a4a219a7ae2fe89e251ae86b9228090e09cec2bb0a4e684d8",
+      "sha256": "4635acf1a234f7aff21ce661715d22a7ef89b3d95e6d9caa5272d804a6c532f1",
       "translation_of": "proposal.md"
     },
     {
@@ -70,7 +70,7 @@
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "4cda8ca9fa305b4c517f0fa1d995febf05439ac9c14de9e5299c4fb44764b9a3"
+      "sha256": "baad2ba284f14955f92584250d80e392e4843cb00a08993e15997538faddd421"
     },
     {
       "path": "standard_matrix.json",
@@ -89,7 +89,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "448c97a8c38172d26d3b674876f24d4970ba5bb099744d16825461443d46d141"
+      "sha256": "9d6c20faee6cceb066c0faa11723d23b40a4953c4ea0504cfb78dc58aa413f77"
     },
     {
       "path": "report/narrative.md",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "6c60b23d6bcd9d169e536d7bda70a88b56df8e5857ddf2fbc378bec451499faa"
+      "sha256": "08134b1a1537cd4c86dccd4e207edeeddb3018b4c64f71466bce2bd7cdafd78a"
     },
     {
       "path": "visual/index.en.html",
