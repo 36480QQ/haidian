@@ -1,6 +1,6 @@
 ---
 title: "智轨新脉：京张人字线 · 百年AI创新带总体城市设计"
-author_github: "mqcin"
+author_github: "ETO-MQC"
 language: "zh"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
