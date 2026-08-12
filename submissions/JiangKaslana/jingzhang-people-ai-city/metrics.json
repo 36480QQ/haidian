@@ -13,7 +13,7 @@
       "formula": "area(official_site_boundary, EPSG:4548)",
       "confidence": "unknown",
       "assumptions": ["Official exact polygon is not yet available."],
-      "reason": "The brief provides an official textual/nominal scope but professional spatial scoring requires official geometry; v0.1 does not substitute provisional area as exact site area."
+      "reason": "The brief provides an official textual/nominal scope but professional spatial scoring requires official geometry; v0.2 does not substitute provisional area as exact site area."
     },
     "green_ratio": {
       "status": "unknown",
@@ -59,7 +59,7 @@
       "value": 12,
       "unit": "count",
       "source_files": ["proposal.md"],
-      "formula": "count(v0.1_AI_scenario_cards)",
+      "formula": "count(v0.2_AI_scenario_cards)",
       "confidence": "high",
       "assumptions": ["Count refers to defined scenario programmes, not yet to verified physical nodes."]
     },
@@ -85,7 +85,7 @@
       "status": "known",
       "value": 6,
       "unit": "count",
-      "source_files": ["risk.json", "sources.json"],
+      "source_files": ["proposal.md", "risk.json", "sources.json"],
       "formula": "count(global_case_translations)",
       "confidence": "high",
       "assumptions": ["Cases are mechanism references only; foreign scale, performance, legal rules and budgets are not imported."]
@@ -130,8 +130,8 @@
       "status": "known",
       "value": 0,
       "unit": "count",
-      "source_files": ["proposal.md"],
-      "formula": "count(v0.1_scenarios_permitting_AI_as_final_authority_for_rights_eligibility_safety_payment_access_or_enforcement)",
+      "source_files": ["proposal.md", "risk.json"],
+      "formula": "count(v0.2_scenarios_permitting_AI_as_final_authority_for_rights_eligibility_safety_payment_access_or_enforcement)",
       "confidence": "high",
       "assumptions": ["AI may provide assistance, but final consequential public decisions require authorized human responsibility in this design concept."]
     },
@@ -144,6 +144,33 @@
       "confidence": "high",
       "assumptions": []
     },
+    "annual_program_count": {
+      "status": "known",
+      "value": 4,
+      "unit": "count",
+      "source_files": ["proposal.md"],
+      "formula": "count(long_term_program_brands)",
+      "confidence": "high",
+      "assumptions": ["Programs are proposed operating brands, not approved government events or funding commitments."]
+    },
+    "event_brand_count": {
+      "status": "known",
+      "value": 4,
+      "unit": "count",
+      "source_files": ["proposal.md"],
+      "formula": "count(Civic_AI_Open_Class, Jing_Zhang_Open_Source_Week, Civic_AI_Test_Day, Centennial_Engineering_Future_City_Forum)",
+      "confidence": "high",
+      "assumptions": ["Names and cadence remain design proposals until an operator adopts them."]
+    },
+    "civic_ai_register_required_field_count": {
+      "status": "known",
+      "value": 10,
+      "unit": "count",
+      "source_files": ["proposal.md"],
+      "formula": "count(purpose,status,responsible_body,data_categories,version_update_date,prohibited_capabilities,non_AI_route,human_review,complaint_entry,last_shutdown_or_material_change)",
+      "confidence": "high",
+      "assumptions": ["This is a proposed transparency-card schema, not an enacted mandatory registry schema."]
+    },
     "non_AI_key_service_success_rate": {
       "status": "unknown",
       "value": null,
@@ -152,14 +179,14 @@
       "formula": "successful_key_tasks_without_smartphone_or_mandatory_account / attempted_key_tasks",
       "confidence": "unknown",
       "assumptions": [],
-      "reason": "Requires a Phase-0 field baseline; v0.1 defines the metric without fabricating performance."
+      "reason": "Requires a Phase-0 field baseline; v0.2 defines the metric without fabricating performance."
     },
     "AI_to_human_handoff_wait_m": {
       "status": "unknown",
       "value": null,
       "unit": "m",
       "source_files": ["proposal.md"],
-      "formula": "median_handoff_path_length_or_equivalent_spatial_access_measure",
+      "formula": "median_spatial_distance_to_reachable_human_handoff_point",
       "confidence": "unknown",
       "assumptions": [],
       "reason": "Requires physical layout and service-operation testing."
