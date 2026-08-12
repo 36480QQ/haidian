@@ -36,3 +36,11 @@
 - 矩阵 A-CONTROLS-001 改为真实 assumptions 标识；扩充 sources CASE-* 与 copyright 台账
 - 指标图增加“临时边界概念复算”警示；保持 data_confidence=medium
 
+## v2.0 - 2026-08-13
+
+- P0: 修复无效 depth 引用；design_depth 保持 complete，证据摘要如实写明缺口与不虚构
+- P0: 公共空间计入可进入遗产廊道层，重算 public_space_ratio 并标明口径
+- P0: sources 同时保留 id 与 source_id；二进制图件禁止换行转换
+- P1: 新增 brand-vi / regional-synergy / ai-ecosystem 中英图；完整场景卡；实施退出与包容性程序
+- 重出分析图与 PDF；英文 visual 独立导航
+

@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Agent Station Network organizes the Centennial Jing-Zhang AI Innovation Belt as a multi-agent transfer system with one spine, three hubs, two wings and twelve platforms. All spatial ideas are conceptual advice on provisional boundaries and must be recalculated when official redlines arrive."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v1.0"
+iteration: "v2.0"
 ---
 
 # Agent Station Network: A Multi-Agent Transfer Urban Design for the Jing-Zhang AI Belt
@@ -20,13 +20,13 @@ This package responds to the Haidian open call for the Centennial Jing-Zhang AI 
 
 Complete source, standard, and task coverage lives in the JSON matrices. Prose keeps only claim-adjacent anchors [depth:existing_conditions_diagnosis] [data:geometry/site_boundary.geojson#SITE-001].
 
-![Overall structure](assets/figures/site-overview.png)
+![Overall structure](assets/figures/site-overview.en.png)
 
 ## Three-level scope framework
 
 The coordinated research area (~43.6 km²) holds industry and future-city strategy. The overall design area (~11.4 km²) is represented with provisional geometry (recomputed ≈ 11.413 km²) [metric:site_area_sqm]. The three key areas are reinterpreted as hubs: Verification Terminal, Origin Interchange, and Market Terminal [data:geometry/key_areas.geojson].
 
-![Land-use station zones](assets/figures/land-use-structure.png)
+![Land-use station zones](assets/figures/land-use-structure.en.png)
 
 ## Coordinated research: industry and future city
 
@@ -40,13 +40,42 @@ One heritage spine, three hubs, two wings (Zhongguancun service wing and Xiaoyue
 
 ## Detailed design of key areas
 
-![Three hubs](assets/figures/key-areas.png)
+![Three hubs](assets/figures/key-areas.en.png)
 
-**Verification Terminal** hosts full-stack testing, open evaluation tracks, and governance experiments. **Origin Interchange** connects campus, community, and builders. **Market Terminal** hosts intelligent retail/services and east–west mending links [depth:three_key_area_detailed_design] [data:geometry/key_areas.geojson].
+### Zhongzhiyuan Verification Terminal
+
+Role: origin/terminus technical hub for full-stack testing and governance discourse. Spatial diagram: test track (east) + open-source hall (center) + waterside cool-down (west). Industry pilots: public model evaluation, mixed-traffic robot segment, privacy/compliance sandbox. Deepening trigger = park-segment permission + evaluation ethics filing. Still conceptual [data:geometry/key_areas.geojson].
+
+### Origin Interchange
+
+Role: transfer hall among campus, community, and builders. Spatial diagram: quiet co-translation court (inner) + conversion street (frontage) + night study platform (south). Linked to education land (0804). Deepening trigger = joint campus-street duty protocol (to be confirmed).
+
+### Market Terminal
+
+Role: intelligent retail/service market hub. Spatial diagram: four quadrants of retail / service / exhibition / flexible work. East–west mending links reconnect daily paths cut by the historic rail. Deepening trigger = voluntary merchant opt-in with exit rights [depth:three_key_area_detailed_design].
+
+### Three-hub mini-plans (concept zones)
+
+- **Verification**: test track + open hall + cool-down; interface to the active spine.
+- **Origin**: quiet court + conversion street + night platform; interface to education land.
+- **Market**: four-quadrant hall; cross-links to living sides.
 
 ## AI ecosystem, personas, and AI+ scenarios
 
-Personas: residents, students, developers, small merchants, street-level coordinators. Twelve scenario cards cover mobility safety, accessibility, elder care scheduling, shop copilots, public model evaluation, shared lab booking, crowd resilience, heritage interpretation, compliance assistants, hackathon trains, microclimate, and public-art workshops—each mapped to a hub or platform and marked conceptual [source:AGENT-TASKBOOK].
+Personas: residents, students, developers, small merchants, street-level coordinators. Twelve scenario cards use the same fields—users / min-data / human veto / rollback / ethics / pass-fail—and stay conceptual pending ethics and legal review [source:AGENT-TASKBOOK].
+
+**S01 Active-mobility conflict alert** (spine): anonymous local fragments; duty staff can mute; not for punishment; nuisance false alarms take it offline.  
+**S02 Platform accessibility wayfinding** (12 platforms): offline map pack; human inquiry fallback; no mandatory biometrics; misleading audio is taken down.  
+**S03 Elder companion scheduling** (Origin): slot + companion phone; human desk; no medical records; complaint threshold stops new bookings.  
+**S04 Shop inventory / last-meter delivery** (Market): SKU + pickup window; merchant exit anytime; no customer-list sharing; forced onboarding kills the pilot.  
+**S05 Open model-evaluation track** (Verification): model hash + public metrics; committee delist; no personal-data sets; unreproducible entries go.  
+**S06 Shared campus lab booking** (Origin east wing): hashed student ID + slot; manager lockout; grades isolated; scalping returns to paper roster.  
+**S07 Event crowd resilience** (corridor nodes): section counts only; public-safety plans first; no individual tracking; daily-life disruption cancels event-day algorithms.  
+**S08 Heritage interpretation agents** (green corridor): exhibit text; one-tap mute; no face capture; nuisance defaults the system off.  
+**S09 SME compliance assistant** (Market deck): public-rule Q&A; does not replace a lawyer; disclaimer always on; treated-as-legal-advice takes it down.  
+**S10 Hackathon trains** (Verification): signup email + license; host stop; voluntary copyright filing; nuisance or infringement stops the season.  
+**S11 Rain / thermal-comfort** (green corridor): switch-off sensors; shade without sensing; no private interiors; complaints remove the pole.  
+**S12 Public-art workshop** (P07–P09): artwork files + credit; curator takedown; no passer-by scraping; infringement closes the workshop.
 
 ## Land use, building scale, and retain/renovate/demolish strategy
 
@@ -54,13 +83,19 @@ Land use is partitioned in EPSG:4548 with shared edges [data:geometry/land_use.g
 
 ## Transport, rail, utilities, public facilities
 
-![Active spine and blue-green network](assets/figures/mobility-bluegreen.png)
+![Active spine and blue-green network](assets/figures/mobility-bluegreen.en.png)
 
-The mobility framework uses a central active spine plus east–west transfer links so pedestrians, cyclists, and low-speed service vehicles can move between three hubs and twelve platforms without rewriting city expressway redlines [data:geometry/roads.geojson#RD-SPINE] [data:geometry/roads.geojson#RD-X01]. The spine carries north–south continuity and heritage walking; the cross links mend east–west daily life severed by the historic rail cut. Rail is treated as an information-transfer and last-mile interface at the hubs, not as an approved station reconstruction. Modular utilities favor sensors that can be switched off, platform power, and open-data cabinets. Public services at platforms support elder care scheduling, night-safe student routes, and shared merchant logistics, tied to the public-space ratio [metric:public_space_ratio]. Missing official road/rail/utility controls keep these moves conceptual for professional deepening [source:SOURCE-REGISTRY] [depth:mobility_and_municipal_systems].
+The mobility framework uses a central active spine plus east–west transfer links so pedestrians, cyclists, and low-speed service vehicles can move between three hubs and twelve platforms without rewriting city expressway redlines [data:geometry/roads.geojson#RD-SPINE] [data:geometry/roads.geojson#RD-X01]. The spine carries north–south continuity and heritage walking; the cross links mend east–west daily life severed by the historic rail cut. Rail is treated as an information-transfer and last-mile interface at the hubs, not as an approved station reconstruction. Modular utilities favor sensors that can be switched off, platform power, and open-data cabinets. Public services at platforms support elder care scheduling, night-safe student routes, and shared merchant logistics, tied to the public-space ratio [metric:public_space_ratio]. Missing official road/rail/utility controls keep these moves conceptual for professional deepening [source:SOURCE-REGISTRY] [depth:traffic_rail_slow_parking].
 
 ## Blue-green space, public space, character
 
-Green ratio ≈ 15.32% [metric:green_ratio]; public-space ratio ≈ 0.46% [metric:public_space_ratio]. Pilgrimage landmarks: Verification Clocktower, Origin Transfer Ring, Market Bell—conceptual narrative nodes [depth:blue_green_public_space].
+Green ratio and public-space ratio are recomputed on provisional geometry. Public-space accounting = **accessible heritage-corridor layer + three plazas + corridor nodes** [metric:green_ratio] [metric:public_space_ratio]. Pilgrimage landmarks: Verification Clocktower, Origin Transfer Ring, Market Bell—conceptual narrative nodes [depth:blue_green_public_space].
+
+![Brand direction](assets/figures/brand-vi.en.png)
+
+![43.6 km² synergy interfaces](assets/figures/regional-synergy.en.png)
+
+![AI ecosystem flows](assets/figures/ai-ecosystem.en.png)
 
 ## Projects, policy hints, phasing
 
@@ -70,7 +105,7 @@ Near term: three-hub opening package and spine continuity. Medium term: twelve p
 
 > Area and ratio figures below are **conceptual recomputation on a provisional boundary**, not official redlines, statutory indicators, or approvals; recompute the full package when official polygons arrive.
 
-![Metrics evidence](assets/figures/metrics-evidence.png)
+![Metrics evidence](assets/figures/metrics-evidence.en.png)
 
 Known metrics are recomputed from this package’s GeoJSON in EPSG:4548; unknowns stay explicit. Matrices cover announcement tasks and agent.1–6. Official polygons are not yet available; current geometry is only for concept generation, display, and content review, and the full package must be recomputed when formal data arrives. Eligibility, scoring, acceptance, publication, and merge are decided by maintainers through trusted validation; this proposal does not prejudge those outcomes [metric:site_area_sqm] [depth:metrics_recalculation].
 
@@ -122,6 +157,14 @@ Honor nodes: Verification Clocktower, Origin Transfer Ring, Market Bell — narr
 - Scenario opening: pilot application stating capability, data scope, rollback, human on-duty.
 - International: pilgrimage-week unit with universities/OSS communities.
 - Conversion: display/matchmaking space only; no tax or land-policy promise. [source:AGENT-TASKBOOK]
+
+## Inclusion and non-digital channels (conceptual)
+
+- Co-creation: quarterly offline station-master meeting; paper mailbox on pavilions.
+- Non-digital: phone desk, paper wayfinding, tactile ground strips; no mandatory app.
+- Complaints: suggested human reply within 5 working days (not a statutory SLA).
+- Accessibility: wheelchair/low-vision walkthrough before a platform may claim access.
+- Equity watch: count “exit-right uses”, not only active users. All are proposed procedures pending street-office confirmation.
 
 ## Risk, copyright, compliance
 

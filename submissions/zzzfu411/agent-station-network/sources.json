@@ -5,43 +5,54 @@
       "id": "SITE-PACKAGE",
       "path": "brief/site-package/",
       "source_type": "official_public",
-      "usage": "Project brief, enums, allowed design space, ranges, and schemas."
+      "usage": "Project brief, enums, allowed design space, ranges, and schemas.",
+      "source_id": "SITE-PACKAGE"
     },
     {
       "id": "SOURCE-REGISTRY",
       "path": "data/source_registry.json",
       "source_type": "repository_public_registry",
-      "usage": "Public/cleared/provisional source usability registry; distinguishes formal-ready, background-only, provisional-only, and needs-review materials."
+      "usage": "Public/cleared/provisional source usability registry; distinguishes formal-ready, background-only, provisional-only, and needs-review materials.",
+      "source_id": "SOURCE-REGISTRY"
     },
     {
       "id": "PROCESSED-FACT-PACK",
       "path": "data/processed/agent_fact_pack.md",
       "source_type": "repository_processed_reference",
-      "usage": "Agent-readable navigation layer for scopes, required tasks, source-use boundaries, and missing-data checklist; not a new authority source."
+      "usage": "Agent-readable navigation layer for scopes, required tasks, source-use boundaries, and missing-data checklist; not a new authority source.",
+      "source_id": "PROCESSED-FACT-PACK"
     },
     {
       "id": "BOUNDARY-SOURCE",
       "path": "brief/site-package/geometry/provisional_boundaries.geojson",
       "source_type": "agent_inferred_from_public_data",
-      "usage": "Submitted site boundary geometry source (provisional)."
+      "usage": "Submitted site boundary geometry source (provisional).",
+      "source_id": "BOUNDARY-SOURCE",
+      "usable_for_formal": "provisional_only",
+      "limitation": "provisional_only geometry; not official redline"
     },
     {
       "id": "KEY-AREA-SOURCE",
       "path": "brief/site-package/geometry/provisional_boundaries.geojson",
       "source_type": "agent_inferred_from_public_data",
-      "usage": "Three required detailed-design key area boundaries (provisional)."
+      "usage": "Three required detailed-design key area boundaries (provisional).",
+      "source_id": "KEY-AREA-SOURCE",
+      "usable_for_formal": "provisional_only",
+      "limitation": "provisional_only geometry; not official redline"
     },
     {
       "id": "OFFICIAL-ANNOUNCEMENT",
       "url": "https://ghzrzyw.beijing.gov.cn/zhengwuxinxi/tzgg/hd/202605/t20260509_4643047.html",
       "source_type": "official_public",
-      "usage": "Official announcement tasks, scope levels, key areas, language, and deliverable context."
+      "usage": "Official announcement tasks, scope levels, key areas, language, and deliverable context.",
+      "source_id": "OFFICIAL-ANNOUNCEMENT"
     },
     {
       "id": "AGENT-TASKBOOK",
       "path": "brief/site-package/agent_taskbook.json",
       "source_type": "user_provided_cleared",
-      "usage": "Agent-facing open-call principles, six required agent tasks, scenario/branding/operation requirements, and boundary clause."
+      "usage": "Agent-facing open-call principles, six required agent tasks, scenario/branding/operation requirements, and boundary clause.",
+      "source_id": "AGENT-TASKBOOK"
     },
     {
       "source_id": "CASE-BARCELONA-SUPERBLOCKS",
@@ -51,7 +62,8 @@
       "accessed_or_retrieved": "2026-08-10",
       "license_or_terms": "Reference by name only; no images reused",
       "used_for": "Transfer to life-block station platform idea",
-      "limitation": "Not a project-authorized dataset; textual transfer only"
+      "limitation": "Not a project-authorized dataset; textual transfer only",
+      "id": "CASE-BARCELONA-SUPERBLOCKS"
     },
     {
       "source_id": "CASE-SINGAPORE-SMART-NATION",
@@ -61,7 +73,8 @@
       "accessed_or_retrieved": "2026-08-10",
       "license_or_terms": "Reference by name only",
       "used_for": "Transfer to switch-offable municipal sensing interface",
-      "limitation": "No sensor specs copied; conceptual transfer only"
+      "limitation": "No sensor specs copied; conceptual transfer only",
+      "id": "CASE-SINGAPORE-SMART-NATION"
     },
     {
       "source_id": "CASE-SIDEWALK-TORONTO-LESSON",
@@ -71,7 +84,8 @@
       "accessed_or_retrieved": "2026-08-10",
       "license_or_terms": "Reference by name only",
       "used_for": "Negative lesson: publish/exit rights before deployment",
-      "limitation": "Project discontinued; used as governance caution only"
+      "limitation": "Project discontinued; used as governance caution only",
+      "id": "CASE-SIDEWALK-TORONTO-LESSON"
     },
     {
       "source_id": "CASE-HELSINKI-KALASATAMA",
@@ -81,7 +95,8 @@
       "accessed_or_retrieved": "2026-08-10",
       "license_or_terms": "Reference by name only",
       "used_for": "Transfer to origin community trial street",
-      "limitation": "Textual transfer only"
+      "limitation": "Textual transfer only",
+      "id": "CASE-HELSINKI-KALASATAMA"
     },
     {
       "source_id": "CASE-SEOUL-DMC",
@@ -91,7 +106,8 @@
       "accessed_or_retrieved": "2026-08-10",
       "license_or_terms": "Reference by name only",
       "used_for": "Transfer to market terminal media/business mix",
-      "limitation": "Textual transfer only"
+      "limitation": "Textual transfer only",
+      "id": "CASE-SEOUL-DMC"
     },
     {
       "source_id": "CASE-MUNICH-UNTERNEHMERTUM",
@@ -101,7 +117,8 @@
       "accessed_or_retrieved": "2026-08-10",
       "license_or_terms": "Reference by name only",
       "used_for": "Transfer to verification terminal industry-academia pipeline",
-      "limitation": "Textual transfer only"
+      "limitation": "Textual transfer only",
+      "id": "CASE-MUNICH-UNTERNEHMERTUM"
     },
     {
       "source_id": "CASE-ESTONIA-XROAD",
@@ -111,7 +128,8 @@
       "accessed_or_retrieved": "2026-08-10",
       "license_or_terms": "Reference by name only",
       "used_for": "Transfer to cross-hub minimal trust bus metaphor",
-      "limitation": "Not proposing a specific software stack"
+      "limitation": "Not proposing a specific software stack",
+      "id": "CASE-ESTONIA-XROAD"
     },
     {
       "source_id": "CASE-TOKYO-TAKESHIBA",
@@ -121,7 +139,8 @@
       "accessed_or_retrieved": "2026-08-10",
       "license_or_terms": "Reference by name only",
       "used_for": "Transfer to corridor pacing / living demo segment",
-      "limitation": "Textual transfer only"
+      "limitation": "Textual transfer only",
+      "id": "CASE-TOKYO-TAKESHIBA"
     }
   ]
 }

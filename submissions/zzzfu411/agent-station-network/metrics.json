@@ -47,7 +47,7 @@
     },
     "public_space_ratio": {
       "status": "known",
-      "value": 0.004638,
+      "value": 0.153876,
       "unit": "ratio",
       "source_files": [
         "geometry/public_space.geojson",
@@ -56,7 +56,8 @@
       "formula": "public_space_area_sqm / site_area_sqm",
       "confidence": "medium",
       "assumptions": [
-        "Station plazas and corridor platforms only."
+        "Includes accessible heritage-corridor public layer plus station plazas on provisional boundary.",
+        "Conceptual recomputation only; not a statutory public-space control."
       ]
     },
     "floor_area_ratio": {
@@ -108,7 +109,7 @@
     },
     "public_space_area_sqm": {
       "status": "known",
-      "value": 52929.256,
+      "value": 1756162.032,
       "unit": "sqm",
       "source_files": [
         "geometry/public_space.geojson"

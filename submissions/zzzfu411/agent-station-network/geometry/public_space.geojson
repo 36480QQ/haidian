@@ -1689,6 +1689,49 @@
           ]
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "id": "PS-CORRIDOR",
+      "properties": {
+        "id": "PS-CORRIDOR",
+        "layer": "PUBLIC_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "京张遗产廊道可进入公共层",
+        "name_en": "Accessible heritage-corridor public layer",
+        "public_space_type": "park_corridor",
+        "area_sqm_declared": 1748902.423,
+        "note_zh": "与绿地图层口径衔接：可进入公园层计入公共空间；临时边界概念复算。"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34913701090532,
+              39.93900022425155
+            ],
+            [
+              116.34703102798008,
+              39.93900022577779
+            ],
+            [
+              116.34619752611079,
+              40.026500137374484
+            ],
+            [
+              116.34830619719773,
+              40.02650016918715
+            ],
+            [
+              116.34913701090532,
+              39.93900022425155
+            ]
+          ]
+        ]
+      }
     }
   ]
 }
