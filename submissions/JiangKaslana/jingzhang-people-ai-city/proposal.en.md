@@ -3,401 +3,129 @@ title: "Jing-Zhang People's AI City: A Civic AI Commons on the Centennial Railwa
 author_github: "JiangKaslana"
 language: "en"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "Grounded in the autonomous engineering, labor memory and public-space regeneration of the Centennial Jing-Zhang Railway, this proposal advances ‘AI Advances, People First.’ People are the civic subjects of the city and of AI governance; AI is a public tool that must remain explainable, optional, rejectable, subject to human takeover and removable. The Jing-Zhang Heritage Park becomes a civic public spine, while Zhongzhiyuan, the Beijing AI Origin Community and Dazhongsi carry innovation, everyday life and industrial transformation. Two red civic anchors—the Civic Engineering Hall and People's AI Service Station—are paired with three AI pilgrimage landmarks: the Civic Engineering Hall, Open-Source Origin Square and Civic Intelligence Arcade. Red, industrial, community and AI cultures are translated into spatial rules, service guarantees, governance rights, pilot stop conditions and long-term operations."
+summary: "Grounded in the autonomous engineering, labor memory and public-space regeneration of the Centennial Jing-Zhang Railway, this proposal advances ‘AI Advances, People First.’ People are the civic subjects of the city and AI governance; AI is a public tool that must remain explainable, optional, rejectable, subject to human takeover and removable. The Jing-Zhang corridor becomes a civic spine connecting controlled innovation, everyday AI life and industrial translation, with two red civic anchors and three AI pilgrimage landmarks."
 tracks: ["jingzhang-heritage-narrative", "ai-origin-community", "civic-agent-governance"]
 scenarios: ["ai-cultural-guide", "ai-health-service-navigation", "robot-delivery-low-speed", "public-safety-operations-review", "ai-traffic-walkability"]
-iteration: "v0.2"
+iteration: "v0.3"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
-translation_file: "proposal.md"
+translation_of: "proposal.md"
 ---
 
 # Jing-Zhang People's AI City: A Civic AI Commons on the Centennial Railway
 
-## AI Advances, People First
+> **AI Advances, People First.**
+>
+> People are the owners of the city. AI is a tool people use and can control. Let the lines of technology ultimately flow into civic spaces of the people.
 
-> **People are the owners of the city. AI is a tool that people use and can control.**
+This proposal does not reserve “people-first” language for a concluding values page, nor does it translate red heritage into red walls, saturated lighting or giant slogans. It begins with operating constraints: AI may not reduce ordinary public service, consequential decisions must retain identifiable human responsibility, and real-world pilots must be stoppable. The 2026 policy principle that artificial intelligence should remain under human control is cited once as a governance anchor; the rest of the proposal translates that principle into spatial, service and operational mechanisms. [source:SRC-XI-AI-GOV-2026]
 
-This proposal does not place an “AI skin” over a conventional district. Nor does it deploy algorithms, robots and sensors first and then ask residents to adapt to a new technical order. It begins with a prior question: **what position should artificial intelligence occupy once it enters a people's city?**
+## Design Basis and Source List
 
-The answer is that technology must remain subordinate to the scale of human life, public interest and civic dignity. The sophistication of an AI district should not be measured by model count, camera count, robot density or screen area. It should be measured by whether ordinary life becomes more convenient, dignified, safe and fair. A person without a smartphone, an older resident, a blind pedestrian, a service worker, a parent with a child or a first-time visitor must not become a second-class urban user merely because the city has become “smarter.” [source:SRC-AGENT-TASKBOOK]
+The evidence base is divided into three classes that are never conflated. The first is the project-control layer: the official open-call announcement, agent taskbook, and the repository's current schemas, enums, standards and validation scripts. These define the three-level scope, three key areas, mandatory tasks and review contract. [source:SRC-DESIGN-BRIEF] The second class covers place and cultural context: published Jing-Zhang Railway Heritage Park material, people's-city practices, and the corridor's industrial, community and innovation histories. These support the narrative connecting railway engineering, Zhongguancun innovation and public AI life. [source:SRC-BJ-PEOPLE-CITY-2021] The third class covers AI governance and international mechanisms—Helsinki AI Register, Kalasatama, Punggol Digital District, Decidim, Seoul AI Hub and Toronto Quayside—used as bounded mechanism references rather than imported law, scale or performance claims.
 
-At the opening of the 2026 World Artificial Intelligence Conference and High-Level Meeting on Global AI Governance on 17 July 2026, Xi Jinping called for a people-centered and beneficial direction for AI and stressed: **“ensure that artificial intelligence always remains under human control.”** This proposal uses the full quotation only here and translates the governance principle into an auditable urban rule: every public-service AI system must have a legible responsible party, an equivalent non-AI route, human takeover, appeal and correction, and a way to exit. [source:SRC-XI-AI-GOV-2026]
+Claim boundaries are themselves part of the design. The overall site and three key areas currently inherit maintainer-provided provisional geometry. Cleared statutory regulatory controls, ownership, road redlines, heritage-control zones, rail and municipal geometry are not available, so `constraints.geojson` is intentionally empty and records a data gap. [assumption:A-CONTROLS-002] All new roads, building envelopes, green space, public space, phasing and scenario nodes are marked as design proposals. Drawing a polygon does not convert uncertainty into legal or engineering fact; preserving that distinction is the first discipline of an AI-generated urban proposal. [data:geometry/constraints.geojson#data_gap]
 
-The taskbook itself already establishes **public interest first** and **human-centered governance**, stating that urban governance should be based on human dignity and public welfare and that agents should augment human capability. [source:SRC-AGENT-TASKBOOK] People-first design is therefore not an imported side theme; it makes an existing project value operational in spatial design, services and long-term governance.
+## Three-Level Scope Framework
 
-All spatial proposals remain conceptual. Where official exact boundaries, regulatory controls, ownership, heritage-control lines or engineering evidence are unavailable, provisional geometry is not presented as a statutory conclusion. [source:SRC-DESIGN-BRIEF] [source:SRC-PROVISIONAL-BOUNDARY]
+The proposal follows the taskbook's three-level structure while adding a people-first question at every level. The **coordinated research area** asks how the corridor can sustain an AI innovation ecosystem over time, how technological gains return to public life, and how railway, Zhongguancun and AI cultures become a continuous story. The **overall design area** asks how the full roughly 11.4 km² provisional site gains a coherent urban structure, land-use responsibility system, mobility and public-space network, renewal logic and infrastructure approach rather than merely three isolated hotspots. The **key areas**—Zhongzhiyuan, Beijing AI Origin Community and Dazhongsi—then demonstrate “innovation the public can verify,” “AI people can live with,” and “industrial value people can share.” [source:SRC-DESIGN-BRIEF]
 
----
+![Overall provisional site, civic spine and three key areas](assets/figures/site-overview.en.png)
 
-## 1. One Centennial Line, Three Waves of Collective Creation
+A **Jing-Zhang Civic Public Spine** connects the three levels. It is not primarily an AI exhibition corridor; it is first a continuous walking, cycling, accessible, shaded, resting, cultural-memory and public-service structure. AI devices remain lightweight and removable. The current EPSG:4548 recalculation of the inherited provisional polygon is 11,412,825.386 m². That value is useful for internal consistency and review, but it is not represented as an official redline area. [metric:site_area_sqm]
 
-Jing-Zhang is not simply “railway heritage + AI industry.” If the railway is reduced to an industrial-style backdrop while AI becomes a layer of futuristic decoration, the relationship remains superficial.
+## Coordinated Research Area: Industry and Future City Research
 
-The proposal instead constructs a continuous history of collective creation.
+The Centennial Jing-Zhang story is not a collage of “railway heritage + AI industry.” It is framed as three waves of collective creation: **the railway—people build modern engineering; Zhongguancun—people create modern technology; the AI era—technology returns to everyday public life.** Railway history includes surveyors, construction workers, maintenance teams and generations of residents, not only individual engineering heroes. Zhongguancun likewise depends on researchers, teachers, students, technicians, entrepreneurs, service workers and public infrastructure. AI therefore earns its urban value through healthcare, mobility, education, ageing, culture, accessibility, public service and employment—not through model counts or robot density. [source:SRC-JZ-PARK-RED-2023]
 
-**Railway — people building modern engineering.** The Jing-Zhang Railway represents autonomous engineering under technological, capital and topographic constraints. Its history belongs not only to celebrated engineers but also to surveyors, builders, railway workers, maintainers and generations of people living along the line.
+The innovation ecosystem is organized through eight factors: research, talent, compute, data, capital, industry, space and real-world scenarios. Each receives a civic constraint. Research does not justify unlimited collection; a talent district must support teachers, students, service workers and families as well as highly paid engineers; compute scale is not a monument; data follows minimization and purpose limitation; capital does not gain public decision authority; industrial showcases disclose responsibility and non-AI routes; public space cannot be monopolized by pilots; and real-world testing requires human takeover and stop conditions. [source:SRC-AGENT-TASKBOOK]
 
-**Zhongguancun — people building modern technology.** Researchers, teachers, students, entrepreneurs, technical workers and service workers together form the innovation ecology. Innovation is not a disembodied story of lone geniuses; it is productive capacity created by social cooperation, education and public infrastructure.
+International cases are used only as mechanisms. Punggol suggests interoperable district platforms and living labs; Kalasatama suggests short reversible pilots; Helsinki AI Register demonstrates legible public AI inventories; Decidim links open-source participation to in-person deliberation; Seoul AI Hub demonstrates an education–incubation–R&D ladder; Toronto Quayside warns that technical platform power must not become de facto planning authority. [source:CASE-HELSINKI-AI-REGISTER] Jing-Zhang copies none of their legal systems, budgets or spatial scales.
 
-**AI — technology returning to everyday public life.** The final value of AI is not a laboratory leaderboard. It is whether healthcare, transport, education, elder care, culture, public administration, accessibility and neighborhood life actually improve.
+## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
 
-The narrative is therefore:
+The land-use concept now covers the entire provisional site rather than only the three key areas. In EPSG:4548, the site is partitioned into **three north–middle–south urban bands × four responsibility interfaces**, producing twelve non-overlapping full-coverage conceptual cells. The four interfaces are civic service and everyday life (0702), open learning/R&D/co-creation (0802), industry/small-business/controlled validation (05), and public green/heritage/slow mobility (1401). Codes follow repository-permitted land-use classification, while the names express design responsibility rather than cadastral certainty. [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]
 
-> **Centennial Jing-Zhang — people create history; Zhongguancun — people create technology; the AI era — technology returns to the people.**
+![Twelve full-site conceptual land-use responsibility cells](assets/figures/land-use-structure.en.png)
 
-Beijing's planning interpretation of the Jing-Zhang Railway Heritage Park explicitly describes a people-centered process of public co-creation, co-governance and sharing. Beijing's landscaping authority also describes the park as a public place carrying red, industrial, ecological and community culture. [source:SRC-BJ-PEOPLE-CITY-2021] [source:SRC-JZ-PARK-RED-2023]
+The overall structure is a civic spine, three urban bands, three key areas, two red civic anchors, three AI pilgrimage landmarks and a distributed service network. The two red anchors are the Civic Engineering Hall and People's AI Service Station. The three pilgrimage landmarks are the Civic Engineering Hall, Open-Source Origin Square and Civic Intelligence Arcade. Renewal follows **existing-first, light-intervention-first and reversible-first** principles. Where ownership, surveys, heritage and statutory controls are not available, the proposal does not invent FAR, height limits or road redlines. [assumption:A-CONTROLS-002]
 
-The proposal's “red gene” is therefore not an attached theme. It extends documented engineering, labor, community and public culture into the AI era.
+“Regulatory-plan-level response” here means correctly separating what can and cannot be supported by current evidence. Full-site land-use topology, conceptual public space, building envelopes, phasing and provisional metrics can be recalculated. Statutory regulatory geometry cannot. The latter remains an explicit data gap rather than a false layer of precision, and all calculated metrics must be regenerated when authoritative geometry replaces the provisional polygon. [depth:development_intensity_controls]
 
----
+## Detailed Design of Key Areas
 
-## 2. Civic AI Charter: Five Rights, One Duty, One Bottom Line
+The three key areas demonstrate different relationships between AI and civic life rather than repeating a generic futuristic technology park. **Zhongzhiyuan** is “innovation the public can verify”: intensive R&D, open collaboration and low-speed robotic pilots occur within legible test boundaries; ordinary and accessible routes remain distinct; and the public can see pilot purpose, responsible parties, stop status and Public Receipts. The Open Test Commons is conceived first as adaptive reuse or a shared interface between researchers, operators and acceptance users. [assumption:A-SCENARIO-010]
 
-### Five civic rights
+**Beijing AI Origin Community** is “AI people can live with.” It concentrates the Civic Engineering Hall, Open-Source Origin Square, People's AI Service Station, assisted services for older people, accessible navigation, child-safe mobility, cultural guidance, health-service navigation and civic deliberation. A person without a smartphone, without an account or actively refusing AI must still be able to find a route, rest, ask for help, use services, complain and reach a human. **Dazhongsi** is “industrial value people can share”: small-business support, service-worker assistance, the public algorithm transparency board and Civic Intelligence Arcade make industrial display subject to public responsibility and review. [metric:key_area_count]
 
-1. **Right to notice** — people should be told when AI is operating in public service, what it does, what it collects and who is responsible.
-2. **Right to choose** — people may use AI, human service or ordinary digital service without discriminatory service degradation.
-3. **Right to refuse** — non-essential public services should not make facial recognition, biometrics, mandatory accounts or persistent profiling the only entrance.
-4. **Right to human review** — decisions involving rights, eligibility, safety, payment, access or public-resource allocation must retain a clear human-review path.
-5. **Right to appeal and correction** — when AI fails, residents should face an accountable institution and responsible people, not the black-box answer that “the system says so.”
+![Concept structure of Zhongzhiyuan, AI Origin Community and Dazhongsi](assets/figures/key-areas.en.png)
 
-These five rights are proposal-level civic AI design requirements. They are not presented as an already enacted single statutory “five-right code.” Implementation must still comply with the laws, sector rules, competent authority, data-security requirements and procurement rules applicable at the time. [assumption:A-GOVERNANCE-004]
+The three pilgrimage landmarks are the Civic Engineering Hall, Open-Source Origin Square and Civic Intelligence Arcade. The People's AI Service Station is deliberately not counted as a pilgrimage landmark because it should remain everyday, modest and repeatable. What deserves a dedicated visit is not a larger screen but a different AI-city relationship: innovation can be inspected, algorithms questioned, open-source tools brought into public space, and failed technology publicly stopped. [metric:ai_landmark_count]
 
-### One public duty
+## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
-**Public authorities, operators and technology providers jointly carry duties of explanation, maintenance, correction, shutdown and exit.** AI must not become a mechanism for responsibility laundering. A technology supplier may provide a system, but that does not give it de facto power over planning approval, enforcement, eligibility or public-resource allocation.
+The proposal converts marketing personas into **nine acceptance groups**: long-term residents and families; older people; disabled people and users with mobility or sensory limitations; children and caregivers; students, teachers and researchers; entrepreneurs and enterprise workers; cleaning, security, delivery, repair and food-service workers; visitors and international users; and people without smartphones/accounts or who actively decline AI. A scenario that only works for a digitally confident person willing to grant broad permissions is not a people-first AI scenario. [metric:persona_count]
 
-### One bottom line
+The Civic AI Charter defines five proposal rights: **notice, choice, refusal, human review, and appeal/correction**. They are explicit design and operating requirements, not a claim that an enacted five-right statutory code already exists. Public authorities, operators and technology providers retain explainable responsibility for maintenance, correction, shutdown and exit. Meaningful human control must be visible in the city through responsibility labels, staffed channels, takeover and degraded modes, incident records, public feedback and restoration of ordinary service. [assumption:A-GOVERNANCE-004]
 
-Meaningful human control must remain real and actionable. “Human in the loop” cannot be a sentence hidden in a backend policy. It must be visible in space and workflow: staffed control positions, shutdown/degraded modes, human counters, incident records, public feedback entrances, named review roles and an ordinary-service restoration plan after removal.
+Twelve scenario nodes cover no-device access, older-person assistance, accessible navigation, child-safe mobility, civic deliberation, public algorithm transparency, service-worker support, small-business support, Jing-Zhang cultural guidance, controlled low-speed delivery, health-service navigation and public-safety decision support. **All 12 retain a human or non-AI equivalent, while the target number of final automated consequential public decisions is zero.** [metric:human_fallback_required_scenario_count] The common sequence is BASELINE → AI PILOT → HUMAN REVIEW → PUBLIC RECEIPT → SCALE / REVISE / STOP.
 
----
+## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
-## 3. Six Global Cases: Borrow Mechanisms, Not Scale
+The building layer contains four low-confidence concept envelopes: Civic Engineering Hall, the first People's AI Service Station demonstrator, Civic Intelligence Arcade and Zhongzhiyuan Open Test Commons. Their current union covers approximately 38,075.314 m² in EPSG:4548, a geometry-consistency value rather than an approved building footprint, floor area, FAR or developable parcel claim. [metric:building_footprint_area_sqm] Fire, structure, ownership, heritage, daylight, underground conditions and statutory development controls remain unresolved and therefore cannot be reverse-engineered from these rectangles.
 
-A world-class AI innovation ecosystem cannot be established by listing Silicon Valley, London and Singapore as prestige references. This proposal selects six cases that directly address Jing-Zhang's design questions and states both what can be learned and what must not be copied. All cases are background mechanisms only and do not create local planning controls.
+The retain–renovate–demolish principle is “survey existing assets before adding new ones.” The service station should preferably occupy existing civic premises or reversible lightweight construction. The Civic Intelligence Arcade should first explore adaptive reuse or arcade insertion. The Zhongzhiyuan commons should reuse existing R&D or public space where feasible. The Civic Engineering Hall, the only large red civic landmark, cannot be fixed as new-build, renovation or hybrid until heritage, ownership and engineering review. [depth:retain_renovate_demolish] If a concept location later proves unsuitable, the program may move; the people-first service contract may not disappear with it.
 
-| Case | Mechanism worth studying | Jing-Zhang translation | Do not copy |
-|---|---|---|---|
-| **Punggol Digital District, Singapore** [source:CASE-PUNGGOL-DIGITAL-DISTRICT] | district-scale interoperable digital platform + living lab | replaceable, auditable civic interfaces and bounded test environments | sensor density, development scale, governance structure or vendor stack |
-| **Kalasatama Agile Pilots, Helsinki** [source:CASE-KALASATAMA-AGILE-PILOTS] | short real-environment pilots with residents, companies and experts | reversible G1 prototypes followed by public feedback, revision or shutdown | foreign budgets, durations or performance numbers |
-| **Helsinki AI Register** [source:CASE-HELSINKI-AI-REGISTER] | public visibility into city AI systems, purposes and feedback channels | Civic AI Register + public algorithm transparency board + review room | Finnish law or exact registry fields as Beijing rules |
-| **Barcelona / Decidim** [source:CASE-DECIDIM-BARCELONA] | open-source, traceable digital participation linked with face-to-face deliberation | People's AI Assembly + open-source participation infrastructure; AI structures input but does not replace public judgment | political-process assumptions or implementation details |
-| **Seoul AI Hub** [source:CASE-SEOUL-AI-HUB] | education → incubation → R&D → industry-academia-research → open innovation | Zhongzhiyuan / AI Origin ladder of learning, research, testing, entrepreneurship, translation and open collaboration | Seoul budgets, site scale or regulatory arrangements |
-| **Toronto Quayside — counterexample** [source:CASE-QUAYSIDE-DIGITAL-GOVERNANCE] | digital governance, privacy, data use and public authority require independent scrutiny | governance before scale; city rules and public responsibility cannot be subordinated to vendor convenience | treating Toronto's dispute as equivalent to Beijing conditions |
+The Civic Engineering Hall uses deep red brick/ceramic, dark steel, timber and restrained glass, with traceable reused railway steel considered only after technical verification. Its importance is functional: a people's engineering-history gallery, People's AI Assembly, public algorithm review room and open-source city workshop. The much smaller People's AI Service Station provides staffed help, no-account assistance, physical credentials, accessible navigation, review, complaint/appeal, drinking water and short rest. Its entrance principle is simple: **technology may advance; service must not leave people behind.** [assumption:A-RED-ANCHOR-003]
 
-Together the six cases support one conclusion: **the scarce resource in an AI city is not another sensor. It is a public institution that makes technology visible, testable, stoppable and collectively governable.**
+## Transport, Rail, Municipal Infrastructure, and Public Services
 
----
+The transport layer does not fabricate existing road or rail engineering alignments. `roads.geojson` expresses only design intent: one north–south Jing-Zhang Civic Public Spine, three east–west key-area service seams and an accessible AI Origin service loop. Walking, cycling, accessibility, resting and staffed help take precedence over intelligent navigation and robot operations. Low-speed robots operate only in bounded validation areas while ordinary pedestrian and non-test routes remain available. AI accessibility guidance is valuable only when the physical accessible route is genuinely usable. [standard:BARRIER-FREE-ENVIRONMENT-LAW]
 
-## 4. A People's Innovation Ecosystem: Eight Factors, Each Accountable to Public Benefit
+![Civic spine, service seams and blue-green public-space concept](assets/figures/mobility-bluegreen.en.png)
 
-The taskbook requires both a world-class AI ecosystem and full-stack autonomous innovation capability. The proposal does not separate “industrial ecosystem” from “people's city.” Eight innovation factors are each tied to a public-value constraint.
+Rail interchange design, motor traffic, parking capacity, municipal capacity and pipe networks are not assigned invented numbers without trusted base data. New infrastructure can nevertheless define governance interfaces now: a Civic AI Register, responsible-party labels, human takeover, offline/degraded modes, complaint and incident records, and replaceable open interfaces. The People's AI Service Station becomes the human interface of that infrastructure: when models, networks or account systems fail, public service still has a physical endpoint. [assumption:A-HUMAN-CONTROL-005]
 
-| Factor | Role in the three areas and two wings | People-first constraint |
-|---|---|---|
-| **Research** | Zhongzhiyuan hosts core R&D and full-stack innovation | distinguish research freedom from resident rights; “research need” does not justify unlimited data collection |
-| **Talent** | AI Origin Community supports learning, exchange, entrepreneurship and life | the district must work not only for highly paid engineers but also teachers, students, service workers and families |
-| **Compute** | supports research, training, inference and civic services | public scenarios procure necessary capability; compute scale itself is not a civic achievement or landmark |
-| **Data** | supports validation, public service and research | minimize collection, restrict purpose, identify responsibility and avoid personal data where possible |
-| **Capital** | Zhongguancun service wing supports translation and growth | capital supports innovation but does not acquire de facto public rule-making or resident-rights authority |
-| **Industry** | Dazhongsi supports productization, business and clustering | industrial benefit returns through employment, public services, small-business capacity and open interfaces rather than a closed tech island |
-| **Space** | the Jing-Zhang civic spine links the three areas and two wings | public space belongs first to everyday life; AI equipment is light-touch and removable and may not displace basic access, greenery or rest |
-| **Scenarios** | Xiaoyuehe and the three areas form a real-world validation network | ordinary service comes first; every pilot requires human/non-AI fallback and a stop condition |
+The minimum service contract is that the non-AI path cannot fall below an ordinary urban-service baseline. Older people can reach staff, visitors do not require forced registration, blind users do not depend on screens, service workers are not subjected to invasive monitoring disguised as optimization, and small businesses do not exchange excessive authorization for basic public services. AI is a second layer that expands capability, not the admission gate to the city. [assumption:A-INCLUSION-007]
 
-The ecosystem is therefore not a one-way “build a platform and attract firms” model. It is a loop of **research capability → public problem → reversible pilot → acceptance by people → industrial translation → open knowledge returning to the city.**
+## Blue-Green Network, Public Space, and Urban Character
 
----
+The public-realm test is straightforward: **if every screen is switched off and every model is offline, the place must still work as a good city.** Conceptual green space includes the AI Origin civic green corridor, Zhongzhiyuan test buffer, Dazhongsi shaded forecourt and three shade nodes along the civic spine. The current conceptual green union is about 661,629.752 m², or 5.7972% of the provisional site. Explicit public-space polygons total about 120,618.287 m², or 1.0569%. These are proposal self-check metrics, not statutory green or public-space control ratios. [metric:green_ratio]
 
-## 5. Spatial Framework: One Civic Spine, Three Areas, Two Wings, Two Red Anchors and Many People's Services
+Red character follows a “material red, not lighting red” rule. The Civic Engineering Hall is the only large red landmark and the People's AI Service Station is a small red civic-service anchor; most AI infrastructure remains silver-grey, white, glass and metal. The overall visual relation becomes: **silver-grey technology lines ultimately flow into red civic nodes.** Red is meaningful because the node contains an accessible public institution, staff, deliberation, service, history and accountability—not because the city has added more red pixels. [source:SRC-JZ-PARK-RED-2023]
 
-The proposal retains the taskbook's three key areas and two wings rather than inventing a disconnected spatial system. [source:SRC-DESIGN-BRIEF]
+Open-Source Origin Square uses trees, public tables, demountable light structures and low-brightness interfaces. The Civic Intelligence Arcade combines industrial display with resting, staffed consultation, AI registry information and equivalent non-AI service. Zhongzhiyuan's civic test buffer allows the public to observe rules without being forced into the test zone. The v0.3 geometry preflight separated three forecourts/buffers from building envelopes and moved a shade node away from a building overlap, reducing ambiguity before official spatial review. [depth:blue_green_public_space]
 
-### One spine: the Jing-Zhang civic public spine
+## Renewal Projects, Implementation Policy, and Phasing
 
-The Jing-Zhang Railway Heritage Park and its connected public spaces form a civic public spine. It is first a place where everyone can enter, walk, rest, exercise, learn and meet; only second is it an AI demonstration corridor. New AI facilities must not displace basic slow-mobility rights, greenery, children's activity, resting space or barrier-free movement.
+Renewal projects are organized into spatial projects, governance infrastructure and long-term operations. Spatial projects include the Civic Engineering Hall, People's AI Service Station, Open-Source Origin Square, Civic Intelligence Arcade, Zhongzhiyuan Open Test Commons and civic-spine shade/mobility nodes. Governance infrastructure includes the Civic AI Register card, public algorithm transparency board, human takeover and stop mechanisms, and Public Receipts. Long-term operations include Civic AI Open Class, Jing-Zhang Open Source Week, Civic AI Test Day and the Centennial Engineering & Future City Forum. [metric:annual_program_count]
 
-AI infrastructure follows a **light-attachment, reversible** strategy. It should attach to existing management, lighting, wayfinding and service nodes wherever possible rather than turning the entire heritage park into an equipment showroom. Beijing's 2026 public information on phase two already emphasizes north-south continuity, east-west stitching, railway memory and community functions; the proposal layers civic AI onto that real public-space base rather than pretending the site is blank. [source:SRC-JZ-PARK-PHASE2-2026]
+Spatial phasing has three areas. P1 places civic service and governance first in AI Origin Community, proving that non-AI users retain complete service. P2 develops controlled validation and open collaboration in Zhongzhiyuan, where robotics and R&D operate with bounded pilots and public observation. P3 extends validated capabilities into Dazhongsi's industrial translation and public display. Governance also uses five gates: G0 facts and ordinary-service baseline, G1 reversible prototype, G2 public deliberation, G3 spatial/institutional consolidation and G4 open-source diffusion. [metric:phase_gate_count]
 
-### Three key areas
+Implementation policy therefore means more than “encourage AI deployment.” No AI substitution begins without a known ordinary baseline; no real public-space pilot starts without a responsible person and stop condition; high-risk systems cannot substitute a successful demo for professional review; and failed pilots must be removable while leaving an intelligible public record. [assumption:A-BASELINE-006] A final repository release gate is added: immediately before the upstream PR, synchronize the latest upstream `main`, resolve changes, and rerun deterministic, spatial, visual and professional review, finalization and participant preflight on the exact post-sync head.
 
-**Zhongzhiyuan AI Autonomous Innovation Acceleration Area — innovation that people can verify.** It hosts full-stack R&D, open-source validation, robotics and civic-agent tests. Any test entering real public space requires a safety boundary, ordinary non-test path, understandable public notice, human takeover and shutdown condition.
+## Metrics, Area Recalculation, and Compliance Matrix
 
-**Beijing AI Origin Community — AI that people can actually live with.** This is the most important everyday proving ground. Technical advancement is tested through ordinary tasks: buying medicine, taking a child home, handling a public service, navigating disability, resting between shifts, studying and family life.
+Metrics are divided into three layers. The first contains values that can already be derived from current structure and geometry: provisional site area 11,412,825.386 m²; conceptual green area 661,629.752 m² and ratio 0.057972; explicit conceptual public-space area 120,618.287 m² and ratio 0.010569; conceptual building footprint 38,075.314 m²; three key areas; twelve AI scenarios; nine acceptance groups; five civic AI rights; two red civic anchors; three pilgrimage landmarks; six international mechanism cases; five implementation gates and four long-term program brands. [metric:public_space_ratio] These are separated from real-world performance claims.
 
-**Dazhongsi AI Industry Cluster — industrial benefits that people can share.** Commercial and industrial transformation should also improve public services, employment support, small-business capability and urban vitality rather than creating a closed technology island accessible mainly to sector insiders and consumers.
+![Core spatial metrics and people-first governance evidence](assets/figures/metrics-evidence.en.png)
 
-### Two wings
+The second layer contains quality-of-life metrics that must remain unknown until G0 field baselines exist: key-task success without smartphones/accounts, distance/steps/wait to reach a human, older and disabled user task completion, appeal closure time, additional digital burden on service workers, public awareness that AI is in use, and service-quality gaps between AI and non-AI routes. The proposal refuses fabricated 90% satisfaction or accuracy figures. [assumption:A-BASELINE-006] The third layer is structured compliance evidence: `compliance_matrix.json` covers the 23 mandatory announcement/taskbook requirements; `standard_matrix.json` addresses the current mandatory professional standards; `design_depth_matrix.json` now follows the current 15-item formal design-depth contract. [data:geometry/land_use.geojson#LU-S01]
 
-The **Zhongguancun technology-service wing** organizes knowledge, talent, capital, IP and professional services. The **Xiaoyuehe scenario-empowerment wing** connects ecology, slow mobility, neighborhoods and real urban testing. Together they form the interface that converts laboratory capability into broadly usable urban services.
+All area recalculation follows the repository spatial review's EPSG:4548 logic. The v0.3 twelve-cell land-use partition covers the entire provisional site with projected gaps and overlaps far below the one-square-metre blocking threshold. When verified official geometry replaces the provisional boundary, the cells, areas and ratios must be regenerated rather than carried forward as inherited “approved” values. [assumption:A-BOUNDARY-001]
 
----
+## Risk, Copyright, and Compliance
 
-## 6. Two Red Civic Anchors: Few, Strong and Relevant
+Risk is organized using the repository's eight fixed dimensions: data privacy, implementation complexity, public acceptance, operations cost, policy uncertainty, spatial dispute, technology maturity, and equity/inclusion. The most important failures are not merely insufficient model accuracy but **technology excluding people, technology hiding responsibility, and technology shifting de facto civic authority to a supplier**. High-risk scenarios therefore require human review; “the system decided” is not a terminal accountability statement; and a pilot that imposes substantial burdens on residents should be revised or removed rather than training residents to adapt. [data:geometry/public_space.geojson#S05]
 
-Only two red civic building types are proposed. This avoids turning the innovation belt into a themed environment. The red architectural language derives from the site's documented red, industrial and community cultures rather than an added layer of political decoration. [source:SRC-JZ-PARK-RED-2023]
+The five Civic AI Rights are explicitly proposal governance requirements, not a claim about a single enacted statutory five-right code. The principle of human control over AI is a policy-to-design source, not official endorsement of any particular building, algorithm or spatial intervention. [assumption:A-HUMAN-CONTROL-005] International cases remain mechanism research; foreign law, budgets, performance values and disputes are not mapped directly onto Beijing. When statutory planning, heritage, ownership, municipal or engineering geometry is missing, an explicit empty data-gap layer is preferable to fabricated precision.
 
-### 6.1 Civic Engineering Hall
+The submitted narrative, concept geometry, identity SVG, static diagrams, HTML and PDFs are generated within this submission workflow. External material is used as factual and mechanism evidence rather than copied visual content; third-party photographs, map screenshots, trademark artwork and protected layouts are not packaged as submission media. The detailed declaration is in `report/copyright_statement.md`. [source:SRC-DESIGN-BRIEF]
 
-**Role: the belt's single large iconic red civic building.**
+## References
 
-The first siting study should examine an appropriate location with walkable links to Jing-Zhang railway heritage, Qinghuayuan Station and existing public cultural nodes. Final siting remains subject to heritage, ownership, access, transport and engineering review; v0.2 deliberately avoids pretending that a particular parcel is available. [assumption:A-RED-ANCHOR-003]
+Traceable evidence is centralized in `sources.json`, while prose uses only claim-adjacent anchors to avoid turning the proposal into a machine-reference dump. Project-control sources include the relevant Beijing open-call material, `brief/site-package/`, the agent taskbook, and current repository schemas/enums/standards. Place and civic sources cover Jing-Zhang red, industrial, ecological and community culture and people's-city participation practice. AI governance sources include the people-centered/beneficial direction and the principle that AI should remain under human control. [source:SRC-XI-AI-GOV-2026]
 
-The architectural language is not palace revival and not a red-LED “future tower.” It draws from railway depots, workers' cultural buildings and industrial halls:
+International mechanisms registered for comparison include Punggol Digital District, Kalasatama Agile Pilots, Helsinki AI Register, Barcelona/Decidim, Seoul AI Hub and Toronto Quayside. They support, respectively, interoperable living labs, reversible co-testing, public AI transparency, open-source participation, talent/industry growth ladders and a digital-governance counterexample; none serves as a Beijing statutory standard or performance benchmark. [source:CASE-PUNGGOL-DIGITAL-DISTRICT]
 
-- deep red brick or red ceramic;
-- dark steel frames and long-span roofs;
-- traceable reused railway steel for limited components where feasible;
-- restrained contemporary glass insertions;
-- warm night lighting rather than saturated red illumination.
-
-This building answers: **Where did we come from?** It remains an active civic institution with four permanent functions:
-
-1. **Jing-Zhang People's Engineering Gallery** — the collective history of engineers, railway workers, researchers and ordinary builders;
-2. **People's AI Assembly Hall** — public discussion of civic AI pilots by residents, experts, developers and operators;
-3. **Public Algorithm Review Room** — understandable disclosure of system purpose, risks, complaints, shutdowns and corrective actions;
-4. **Open-Source City Workshop** — residents, students and developers co-create accessibility tools, small community models, open-data applications and public-service prototypes.
-
-The principle that AI must remain under human control belongs on the governance wall before the People's AI Assembly Hall, not as a giant slogan covering the exterior. [source:SRC-XI-AI-GOV-2026]
-
-### 6.2 People's AI Service Station
-
-**Role: a small, everyday, replicable red civic building.**
-
-The first demonstrator should be located at a high-frequency public-service node in the AI Origin Community, subject to later spatial evidence. It is not a technology experience store. Its purpose is simple: **when a smart city fails, there is still a person and a place that catches you.**
-
-The station should provide human consultation, no-account service assistance, paper/physical credential support, barrier-free navigation, AI-result review, complaint and appeal support, device charging, drinking water and short rest. Red brick, timber and steel provide a materially grounded contrast to silver-gray technical devices.
-
-Its entrance principle is intentionally modest:
-
-> **Technology may advance; service must not leave people behind.**
-
-The People's AI Service Station deliberately does **not** count as an AI pilgrimage landmark. It should remain ordinary, useful and repeatable rather than becoming a check-in monument.
-
----
-
-## 7. Three AI Pilgrimage Landmarks: Not Three Giant AI Monuments
-
-The taskbook requires at least three AI pilgrimage landmarks. This proposal interprets pilgrimage as making global developers, researchers and ordinary visitors willing to travel here to experience a **distinct relationship between city, people and AI**, not as a competition in screen size or strange architecture.
-
-### LM-01 Civic Engineering Hall
-
-It is both one of the two red civic anchors and the first AI pilgrimage landmark. Its distinctiveness is not the red exterior. It combines railway engineering history, collective construction history, public AI deliberation, algorithm transparency and open-source civic making in one continuously operating institution.
-
-### LM-02 Open-Source Origin Square
-
-A conceptual public node in the AI Origin Community. Its core is not a giant digital screen but shade trees, shared tables, lightweight removable structures and low-brightness interfaces. It continuously displays reusable open-source city tools, contribution records, community prototypes and projects that were retired after failing tests.
-
-**When every screen is switched off, it must still be a good square.**
-
-Developers can publish open tools, residents can state real problems, students can reproduce projects and contributors can be remembered over time. It brings open source from a code-hosting platform back into physical civic space. [source:CASE-DECIDIM-BARCELONA]
-
-### LM-03 Civic Intelligence Arcade
-
-A conceptual public arcade in the Dazhongsi key area. It exhibits not corporate advertising but civic-intelligence interfaces: multilingual public services, accessible navigation, AI registration and provenance, model boundaries, human review, complaint paths and reusable public-good capabilities.
-
-Every demonstration must also answer: **Who is responsible? What data are used? What is the AI prohibited from doing? How can the same task be completed without AI?**
-
-It remains an industrial showcase, but one in which industry must accept public rules. Visitors should leave not only thinking “AI is powerful” but understanding “this is how a mature city controls AI and shares its benefits.” [source:CASE-HELSINKI-AI-REGISTER]
-
----
-
-## 8. Twelve AI Scenario Cards: Every Card Must Ask Who Benefits and Who May Be Left Out
-
-v0.2 locks the public-service contract for twelve scenarios. The next iteration will expand each into a formal card with data, ownership, KPIs and spatial evidence.
-
-| Scenario | AI adds | Must still work without AI | Human control / stop rule |
-|---|---|---|---|
-| **S01 Equivalent no-device access** | natural-language wayfinding, multilingual guidance, personalized route suggestions | physical/paper wayfinding, human help, basic routes without login | AI errors never disable ordinary wayfinding; recurrent errors trigger ordinary mode |
-| **S02 Older-person assisted service** | voice, large text, step explanations, document prompts | staffed counter, telephone, paper instructions | immediate human handoff; older users are not forced to complete AI interaction alone |
-| **S03 Barrier-free intelligent navigation** | routes based on gradient, barriers and facility state | continuous physical accessible route and staffed help | bad route data are human-correctable; uncertain safety cannot be auto-routed |
-| **S04 Child-safe slow-mobility assistant** | environmental and route prompts | ordinary wayfinding for parent/school journeys | no commercial child profiling; persistent facial tracking is not a default capability |
-| **S05 People's AI deliberation assistant** | deduplication, clustering, translation and organization of resident input | original comments remain intact; in-person deliberation operates independently | AI does not rank whose opinion matters more; public judgment remains human |
-| **S06 Public algorithm transparency board** | assembles system descriptions, versions and event status | equivalent core information available by paper/human request | responsible organization validates disclosures; system cannot self-certify compliance |
-| **S07 Service-worker city assistant** | routes, facilities, shift information and work-order assistance | human dispatch, telephone and ordinary work orders | invasive productivity surveillance may not be disguised as “efficiency optimization” |
-| **S08 Small-business civic assistant** | policy retrieval, accessibility advice, operations/footfall interpretation | staffed business service and public materials available independently | basic service cannot depend on platform lock-in or excessive data consent |
-| **S09 Jing-Zhang AI cultural guide** | multilingual Q&A, personalized narratives and accessible interpretation | physical exhibitions, conventional tours and source index | AI interpretation distinguished from verified fact; disputed claims route to sources/human review |
-| **S10 Controlled low-speed robot delivery** | short-distance low-speed delivery | human delivery and full pedestrian route | pedestrians have absolute priority; boundary breach, communications failure, congestion or uncertain perception triggers stop/takeover |
-| **S11 Community health-service navigation** | care routes, resource and process information | human consultation and ordinary health navigation | no unauthorized diagnosis, triage or treatment decision |
-| **S12 Public-safety decision support** | organizes event information and risk prompts | authorized staff can judge and act independently | enforcement, penalty, access and individual safety action remain authorized human decisions with records |
-
-All twelve scenarios require a human or non-AI equivalent path; v0.2 sets the target for final automated consequential public decisions at zero. [metric:human_fallback_required_scenario_count] [metric:automated_final_public_decision_count]
-
----
-
-## 9. Nine Acceptance Groups: Let Those Most Easily Ignored by Technology Test First
-
-The proposal treats personas as acceptance groups rather than marketing archetypes:
-
-1. long-term residents and families;
-2. older people;
-3. disabled and mobility/sensory-limited users;
-4. children and caregivers;
-5. students, teachers and researchers;
-6. entrepreneurs and company workers;
-7. cleaners, security staff, delivery workers, maintenance workers, food-service workers and other service labor;
-8. visitors and international users;
-9. people without smartphones or accounts, or who actively decline AI.
-
-If a scenario works well only for people with the newest phone, broad data consent and high AI literacy, it does not qualify as a people's AI scenario.
-
-Inclusive validation is not a survey asking whether nine groups “like AI.” It asks them to complete tasks: navigate, rest, seek help, use a service, complain, switch to a person, refuse consent and leave a test zone. If the task fails, the design returns to the table rather than educating the user to “adapt.” [source:STANDARD-BARRIER-FREE] [source:STANDARD-ELDERLY-TECH]
-
----
-
-## 10. Three Flagship Test Protocols: The City Is Not a Free Testbed
-
-### P1 Zhongzhiyuan: controlled low-speed robot pilot
-
-**Ordinary baseline:** pedestrians and ordinary delivery remain fully usable without robots.
-
-**Test boundary:** robots operate only in clearly marked low-speed controlled areas; ordinary public routes are not converted wholesale into test roads.
-
-**Human control:** named remote/on-site takeover roles, shutdown method, operating hours and incident reporting.
-
-**Stop triggers:** boundary breach, sustained perception uncertainty, congestion interference, material burden on accessible movement or inability to take over reliably.
-
-### P2 AI Origin: barrier-free and older-person navigation co-test
-
-**Ordinary baseline:** continuous physical wayfinding, accessible routes and human help exist first.
-
-**AI adds:** voice, large text, multilingual guidance, dynamic obstacle updates and route personalization.
-
-**Acceptance users:** older people, blind/low-vision users, wheelchair/mobility-limited users and caregivers receive priority in testing.
-
-**Stop trigger:** unsafe wrong routes, or material increase in task burden compared with ordinary service, blocks expansion.
-
-### P3 Belt-wide: Civic AI Register, transparency and human takeover platform
-
-Inspired by the public visibility mechanism of Helsinki's AI Register but redesigned for local institutional conditions. [source:CASE-HELSINKI-AI-REGISTER]
-
-Every public-service pilot receives a **Civic AI Register Card**: purpose, status, responsible body, data categories, version/update date, what the AI may not do, non-AI route, human review, complaint entry and latest shutdown/material change.
-
-**No automated compliance:** AI may help draft a register card, but it may not declare itself safe, compliant or ready. Launch and continued operation remain decisions of accountable people and institutions.
-
----
-
-## 11. AI Must Not Become a New Gate: Ordinary Service Comes First
-
-All public AI pilots follow an ordinary-service-first sequence:
-
-> **BASELINE → AI PILOT → HUMAN REVIEW → PUBLIC RECEIPT → SCALE / REVISE / STOP**
-
-Before an AI pilot begins, the ordinary service must be identified and tested. AI may add capability only without destroying the ordinary route. If the pilot worsens waiting time, error, accessibility, privacy risk or staff workload, it should be changed or stopped rather than making residents carry indefinite “model learning” costs. [source:CASE-KALASATAMA-AGILE-PILOTS]
-
-**Public Receipt** is a core proposal mechanism. At the end of a pilot, the result is not only an internal technical report. The public receives an understandable record of what was tried, what happened, what changed and why the system was continued, revised or stopped. Failure is not disgrace; hiding failure erodes public trust.
-
----
-
-## 12. Red Is Not a Decorative Color: A Visual System of Civic Nodes and Technical Networks
-
-The belt uses two material families.
-
-**Civic public nodes:** red brick, red ceramic, weathering steel, timber, traceable reused railway steel, deep shadow and tactile material.
-
-**AI technical network:** silver-gray metal, white components, transparent glass, low-brightness interfaces and removable equipment.
-
-Across the masterplan, the relationship becomes legible: **silver-gray technical lines ultimately flow into red civic nodes.**
-
-This does not aim to manufacture an ideological spectacle. It expresses a governance relationship through space: technology may become pervasive, but decision rights, service responsibility and public discussion must return to human places.
-
-> **Let the lines of technology ultimately flow into the spaces of the people.**
-
-Red is not “better” merely by becoming more saturated or widespread. Any major red-material use must explain its relation to railway industry, civic public architecture or community memory. No second large red monumental mass is proposed beyond the Civic Engineering Hall. [assumption:A-MATERIAL-009]
-
----
-
-## 13. Four Long-Term Program Brands: Turn “People Build the City” into an Operating Institution
-
-Long-term operation cannot rely on one annual AI summit. A people-built city needs low-threshold, recurring activities that leave an auditable trail of learning and improvement. [source:SRC-BJ-PEOPLE-CITY-2021]
-
-### A1 Civic AI Open Class
-
-Residents, older people, students, service workers, small businesses and public-service staff learn how one active AI system works: what it can do, what it cannot do, how to refuse it, switch to a person and complain. The class also captures real usage problems.
-
-### A2 Jing-Zhang Open Source Week
-
-Hosted by the Civic Engineering Hall and Open-Source Origin Square. Universities, research institutes, developers and communities publish reusable civic AI tools, accessibility components, data-cleaning methods, evaluation protocols and failure reviews. Recognition is based first on reuse and public value, not spectacle.
-
-### A3 Civic AI Test Day
-
-Each quarter, a small number of real scenarios are tested with relevant members of the nine acceptance groups. This is not a product launch. Problems are documented publicly and “recommend retirement” is an acceptable conclusion.
-
-### A4 Centennial Engineering & Future City Forum
-
-A long-running dialogue connecting Jing-Zhang's autonomous engineering history, Zhongguancun's innovation history and AI governance. Engineering, planning, history, AI, accessibility, public administration and labor studies meet so that the innovation belt does not collapse into an internal technology-industry vocabulary.
-
-Together, the four programs create an annual cycle of **learn → co-create → co-test → reflect.**
-
----
-
-## 14. Open and Shared: AI Capacity as Reusable Public Capacity
-
-The proposition that AI should become an international public good benefiting all humanity is translated into three urban actions rather than used as decorative rhetoric. [source:SRC-XI-AI-PUBLIC-GOOD-2026]
-
-1. **Open public-service interfaces** — where lawful and privacy-protective, prefer auditable, portable and replaceable interfaces that reduce single-vendor lock-in.
-2. **Open-Source City Workshop** — produce tools, documentation and evaluation methods that universities, communities, developers and other cities can reuse.
-3. **Public knowledge accumulation** — document successes, failures, shutdowns and corrections rather than showing only successful demos.
-
-“Open” does not mean publishing personal data, sensitive infrastructure information or restricted materials. What is opened is **method, interface, rule, non-sensitive knowledge and reproducible public capability.**
-
----
-
-## 15. Phasing: Prove the City Becomes Better Before Scaling AI
-
-### G0 — Facts and ordinary-service baseline
-
-Verify boundaries, ownership, heritage, existing service and user needs. No credible baseline means no “smart transformation.”
-
-### G1 — Reversible prototype
-
-Test small-scale, low-risk and stoppable devices. The People's AI Service Station, ordinary wayfinding and human fallback should precede large AI showpiece installations.
-
-### G2 — Public deliberation
-
-The People's AI Assembly Hall publishes pilot results, failures and resident feedback. Professional teams and accountable authorities decide whether to continue, revise or stop.
-
-### G3 — Spatial consolidation
-
-Only services validated in real use should enter long-term architecture, infrastructure and operating budgets. Technical maturity does not automatically equal urban suitability.
-
-### G4 — Open diffusion
-
-Mature rules, interfaces, components and evaluation methods may be shared with other parts of Haidian and other cities while preserving local differences and human judgment.
-
----
-
-## 16. Metrics: Measure Whether Ordinary People Can Complete the Task Before Measuring How Fast AI Is
-
-The proposal can already make several structured commitments without inventing field evidence: three key areas, twelve AI scenarios, three flagship validation directions, nine acceptance groups, five civic AI rights, two red civic anchor types, three AI pilgrimage landmarks, six global case mechanisms, five delivery gates, and human/non-AI fallback required for all twelve scenarios. [metric:key_area_count] [metric:scenario_node_count] [metric:industry_test_scenario_count] [metric:persona_count] [metric:civic_ai_right_count] [metric:red_civic_anchor_count] [metric:ai_landmark_count] [metric:global_case_count] [metric:phase_gate_count]
-
-Metrics that actually describe quality of life require a G0 field baseline and are deliberately left unknown rather than fabricated:
-
-- success rate for key tasks without a smartphone or account;
-- spatial distance, interaction steps and waiting time for AI-to-human handoff;
-- task completion for older and disabled users;
-- closure time for AI-error appeals;
-- shutdown and recovery records for public AI pilots;
-- additional digital burden placed on service workers;
-- public awareness of when AI is operating;
-- service-quality difference between AI and non-AI paths.
-
-Spatial area, green ratio, public-space share and network length will first be recomputed from conceptual GeoJSON under explicitly provisional geometry and then fully recalculated when official exact polygons become available. [assumption:A-BOUNDARY-001]
-
----
-
-## 17. Professional Work After v0.2
-
-v0.2 now locks the value system, governance logic, spatial concept, global case translations, scenario system, three landmarks and long-term operating model. The next iteration will complete:
-
-- nine provisional GeoJSON concept layers with explicit provisional status;
-- detailed spatial, mobility, green-space, public-space and building-renewal proposals for the three key areas;
-- full responsibility, data, privacy, KPI and stop-threshold fields for twelve scenario cards and three validation protocols;
-- conceptual plans, sections and architectural/landscape studies for the Civic Engineering Hall, People's AI Service Station, Open-Source Origin Square and Civic Intelligence Arcade;
-- a people–scenario–rights–human-fallback matrix;
-- continued correction of metrics, assumptions, sources, standards, design-depth and compliance matrices;
-- five bilingual core figures, A3 booklet, A0 boards and offline HTML;
-- accessibility, bilingual-equivalence, manifest, self-check and participant-preflight validation.
-
-The proposal rejects two shortcuts. **People-first design cannot be a closing-value statement, and red inheritance cannot be reduced to red walls and giant slogans.** Both must enter land use, architecture, services, civic rights, operating responsibility, pilot stop conditions and evaluation metrics.
+Professional responses are indexed in `standard_matrix.json`. Current mandatory controls include the project announcement, agent taskbook, urban-design management requirements, control-detailed-planning requirements and the national land-use classification guide; accessibility, ageing and generative-AI instruments provide bounded supplementary context where relevant. [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] The evidence hierarchy remains simple: **official or cleared fact outranks inference; verifiable geometry outranks a persuasive rendering; professional and public human judgment outranks a model certifying itself.**
