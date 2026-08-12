@@ -34,7 +34,7 @@
     {
       "id": "A-CORPUS-001",
       "status": "self_collected_background_only",
-      "statement": "语料审计基于最近一次普查（2026-08-10）的 440 份已合入方案，权威源为 GitHub git tree；母题识别使用中文关键词正则，存在同义表述漏计；agent.json 的 model 字段留占位符不等于作者隐瞒模型。",
+      "statement": "语料审计基于最近一次普查（2026-08-12）的 678 份已合入方案，权威源为 GitHub git tree；母题识别使用中文关键词正则，存在同义表述漏计；agent.json 的 model 字段留占位符不等于作者隐瞒模型。",
       "impact": "结构收敛度为下界估计；披露率结论严格限于『机器可读字段为空或不可聚合，且闸门不检查它』。该来源定级 background_only，不作为空间或法定结论依据。语料每日增长，引用须重跑脚本复算。"
     },
     {
