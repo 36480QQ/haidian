@@ -14,7 +14,9 @@ iteration: "v1.0"
 
 # 京张天窗带 / JINGZHANG SKYLIGHT LINE
 
-> **把‘永远在线’的执念，换成‘可停下来的自信’。** 百年京张铁路教会城市一件事：安全不是设备从不停止，而是养护从不缺席。当AI进入城市公共空间，本方案用铁路百年传承的“天窗”制度（定期停运、检修、复员），为每一类AI服务建立可预期、可接管、可回退的维护窗口，让创新带既是全球AI产业的展示场，也是检验“AI如何负责任地进入城市”的公共试验场。
+> **把‘永远在线’的执念，换成‘可停下来的自信’。**
+>
+> **ONE LINE, ONE WINDOW — NO WINDOW, NO DEPLOYMENT.** 一线路，一天窗；无天窗，不上线。 百年京张铁路教会城市一件事：安全不是设备从不停止，而是养护从不缺席。当AI进入城市公共空间，本方案用铁路百年传承的“天窗”制度（定期停运、检修、复员），为每一类AI服务建立可预期、可接管、可回退的维护窗口，让创新带既是全球AI产业的展示场，也是检验“AI如何负责任地进入城市”的公共试验场。
 
 ## 执行摘要
 
@@ -22,7 +24,7 @@ iteration: "v1.0"
 
 铁路“天窗”指为线路养护、设备检修预留的停运时间窗口，是铁路安全运行的基石制度：定期停下来，才能长久跑下去 [source:SRC-2026-BJ-KW-THREE-AREAS-WINGS]。本方案将这一制度三重转译——**铁路养护天窗**（检修纪律）、**建筑采光天窗**（让光进入公共空间）、**AI维护窗口**（模型停机、人工接管、数据回滚）——形成“京张天窗带”：一条贯通南北的天窗脊绿带，众智园、AI原点社区、大钟寺三处重点区各承担一种天窗原型（联试/共修/服务），中关村科技服务翼与小月河场景赋能翼构成要素与场景的协同回路。
 
-方案的空间骨架是“**一线三窗两翼**” [data:geometry/land_use.geojson#LU-001] [data:geometry/green_space.geojson#GREEN-001]：天窗脊是一条约9.5公里、宽约200米的南北贯通的公园绿带，串联三处重点区与12处天窗活动节点 [metric:skylight_spine_length_m]；三处重点区围绕公告划定的众智园（约192公顷）、AI原点社区（约104公顷）、大钟寺（约72公顷）展开 [metric:zhongzhiyuan_area_sqm] [metric:ai_origin_community_area_sqm] [metric:dazhongsi_area_sqm]，分别承载全栈验证、开源共创与智能原生业态；两翼则把中关村的要素配置能力与小月河的场景赋能能力接入脊线。全部空间结论基于临时边界，为概念建议，供专业团队深化 [data:geometry/site_boundary.geojson#SITE-001] [assumption:A-BOUNDARY-001]。
+这一总体概念直接回应“一带总体概念与功能统筹方案设计”任务：一条脊线统筹一带功能、三处天窗原型定义差异化定位、两翼完成要素协同 [agent.1]。方案的空间骨架是“**一线三窗两翼**” [data:geometry/land_use.geojson#LU-001] [data:geometry/green_space.geojson#GREEN-001]：天窗脊是一条约9.5公里、宽约200米的南北贯通的公园绿带，串联三处重点区与12处天窗活动节点 [metric:skylight_spine_length_m]；三处重点区围绕公告划定的众智园（约192公顷）、AI原点社区（约104公顷）、大钟寺（约72公顷）展开 [metric:zhongzhiyuan_area_sqm] [metric:ai_origin_community_area_sqm] [metric:dazhongsi_area_sqm]，分别承载全栈验证、开源共创与智能原生业态；两翼则把中关村的要素配置能力与小月河的场景赋能能力接入脊线。全部空间结论基于临时边界，为概念建议，供专业团队深化 [data:geometry/site_boundary.geojson#SITE-001] [assumption:A-BOUNDARY-001]。
 
 治理上，方案提出“**天窗协议**”（Skylight Protocol）：任何进入京张天窗带的AI场景，上线前必须声明运行时段、检修窗口、人工接管方案、数据回滚路径与退役条件，并以“绿/黄/红”三色窗口状态向公众公开 [metric:skylight_window_count]。12张AI场景卡中至少3张为产业测试验证场景，覆盖道路慢行、公共服务与企业服务三条主线；5类用户画像从居民、通勤者、开发者、企业主到游客，确保公共利益优先 [metric:scenario_card_count] [metric:persona_count]。3处AI朝圣地标——天窗广场、检修记忆馆、零点站台——把“让AI停下来”变成可参观、可参与、可纪念的公共仪式 [metric:pilgrimage_landmark_count]。
 
@@ -32,7 +34,7 @@ iteration: "v1.0"
 
 ## 设计依据与资料清单
 
-本方案依据四层资料组织：第一层是征集资格预审公告，界定三层范围、设计任务与成果深度 [source:SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT]；第二层是面向智能体任务书，界定三大定位、五大功能、三区两翼与六项智能体任务 [source:SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK]；第三层是仓库场地包中的枚举、指标、来源注册表与临时几何 [source:SRC-PROVISIONAL-BOUNDARIES-2026]；第四层是公开政策与国际案例，仅提取可迁移机制，不移植具体数值或制度 [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]。
+本方案依据四层资料组织：第一层是征集资格预审公告，界定三层范围、设计任务与成果深度 [source:SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT]；第二层是面向智能体任务书，界定三大定位、五大功能、三区两翼与六项智能体任务 [source:SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK]；第三层是仓库场地包中的枚举、指标、来源注册表与临时几何 [source:SRC-PROVISIONAL-BOUNDARIES-2026]；第四层是公开政策与国际案例，仅提取可迁移机制，不移植具体数值或制度 [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]。全部空间数据由本方案程序化生成，未引入OSM等第三方底图，无ODbL许可负担 [source:SRC-OSM-COPYRIGHT]。
 
 | 资料状态 | 本方案可做 | 本方案绝不做 | 待补资料 |
 |---|---|---|---|
@@ -63,7 +65,7 @@ iteration: "v1.0"
 
 ### 命名与视觉识别方向
 
-主名称建议为“**京张天窗带** / JINGZHANG SKYLIGHT LINE”，英文全称强调“skylight”的双关——既是建筑采光口，也是铁路养护与AI维护的“窗口”。命名体系分三层 [source:SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK]：
+文化叙事上，天窗带把“百年京张文化、中关村文化与AI新文化”合成一条主线：铁路养护史提供制度原型，中关村创新史提供精神原型，AI检修日志构成当代叙事，三者以“可停机”为共同母题 [agent.5]。主名称建议为“**京张天窗带** / JINGZHANG SKYLIGHT LINE”，英文全称强调“skylight”的双关——既是建筑采光口，也是铁路养护与AI维护的“窗口”。命名体系分三层 [source:SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK]：
 
 - 一带整体：京张天窗带（JINGZHANG SKYLIGHT LINE），作为百年京张文化带、都市AI生活体验带与AI融合创新带的统一载体；
 - 三窗原型：联试天窗（Test Window）、共修天窗（Commons Window）、服务天窗（Service Window），对应三处重点区；
@@ -103,7 +105,9 @@ Logo方向建议以“开启的天窗”为母题：一个向上开启的梯形�
 - **两翼**：中关村科技服务翼与小月河场景赋能翼，通过横向联络路与脊线节点缝合 [data:geometry/roads.geojson#ROAD-001]。
 - **十二节点**：天窗脊沿线6处公共活动节点 + 三处重点区天窗广场 + 社区口袋公园网络 [data:geometry/public_space.geojson#PUBLIC-004] [data:geometry/green_space.geojson#GREEN-013]。
 
-用地结构按国土空间用地分类表达，形成科研、居住、商业、文化、教育与绿地六类主导分区，全部覆盖提交边界且无缝隙、无重叠 [data:geometry/land_use.geojson#LU-001] [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]。绿地率约18.3%、公共空间比例约0.6%，建筑基底约28.4公顷 [metric:green_ratio] [metric:public_space_ratio] [metric:building_footprint_area_sqm]。这些为概念分区指标，供展示与讨论；官方边界与控规条件到位后需整体复算 [assumption:A-CONTROLS-001]。
+用地结构按国土空间用地分类表达，形成科研、居住、商业、文化、教育与绿地六类主导分区，全部覆盖提交边界且无缝隙、无重叠 [data:geometry/land_use.geojson#LU-001] [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [source:SRC-2023-MNR-LAND-USE-CLASSIFICATION]。更新深度参考城市设计管理办法与控规编制审批办法的专业边界 [source:SRC-2017-MOHURD-URBAN-DESIGN-MEASURES] [source:SRC-MOHURD-CONTROL-DETAILED-PLANNING]。
+
+概念分区指标方面：绿地率约18.3%、公共空间比例约0.6%，建筑基底约28.4公顷 [metric:green_ratio] [metric:public_space_ratio] [metric:building_footprint_area_sqm]。这些为概念分区指标，供展示与讨论；官方边界与控规条件到位后需整体复算 [assumption:A-CONTROLS-001]。
 
 更新逻辑遵循“保留优先、缝合为本、可逆插接”：铁路遗址、文保要素与成熟社区以保留为主；低效存量空间通过公共空间与天窗装置改造激活；新增AI设施采用可逆、可拆装的“插接式”单元，避免一次性大拆大建 [depth:retain_renovate_demolish]。建筑高度、容积率、退线等管控指标在缺少官方控规时统一记为 `unknown`，本方案仅提供概念体量方向，不作为法定控制结论 [standard:MOHURD-CONTROL-DETAILED-PLANNING] [assumption:A-CONTROLS-001]。
 
@@ -225,6 +229,43 @@ Logo方向建议以“开启的天窗”为母题：一个向上开启的梯形�
 - **中期（贯通）**：天窗脊慢行系统全线贯通，完成东西缝合与公共空间网络 [data:geometry/phasing.geojson#PHASE-005]。
 - **远期（机制化）**：天窗机制沉淀为长期品牌与治理资产，形成年度活动体系与全球传播 [data:geometry/phasing.geojson#PHASE-001]。
 
+### 天窗准入闸门（C0-C7）
+
+任何AI场景进入天窗带，按八级闸门逐级放行，任一闸门未过即暂停或回退（概念机制，最终以主管部门确认为准）[assumption:A-GATE-001]：
+
+| 闸门 | 名称 | 通过条件 | 对应阶段 |
+|---|---|---|---|
+| C0 | 概念审查 | 场景与天窗协议三条主线一致，不违背公共利益 | 申请前 |
+| C1 | 数据声明 | 数据采集边界、脱敏与聚合规则完整声明 [standard:GENERATIVE-AI-INTERIM-MEASURES] | 申请 |
+| C2 | 风险分级 | 按绿/黄/红完成风险分级，确定停机窗口与接管预案 | 评估 |
+| C3 | 试点申请 | 联试/共修/服务天窗任一原型接收，明确试点范围与期限 | 试点 |
+| C4 | 公众公示 | 三色状态、运行时段、检修窗口向公众公示不少于14天 | 公示 |
+| C5 | 试运行 | 限时限区试运行，天窗检修至少完成1次并公开复盘 | 试运行 |
+| C6 | 正式上线 | 连续通过2次检修复盘，人工接管演练达标 | 上线 |
+| C7 | 定期复检 | 按季度复检数据声明、风险分级与检修记录 | 运营 |
+
+### 应急响应与人工接管
+
+天窗带建立红橙黄三级应急机制，所有AI场景在C3起必须登记接管联系人并定期演练 [assumption:A-EMERGENCY-001]：
+
+- **红色（立即停机）**：出现人身安全、公共秩序或数据泄露风险，30分钟内完成停机与人工接管，同步广播三色状态变红；
+- **橙色（限期修复）**：服务异常或指标劣化，24小时内完成修复或回滚，期间切换人工替代路径；
+- **黄色（观察升级）**：异常趋势未明，72小时内持续观察并准备升级。
+
+每个联试天窗站点配置人工接管员2人（1主值+1备值），试点期共约6-12人；接管预案、演练记录与复盘报告按季度公开 [assumption:A-WINDOW-003]。
+
+### 运营编制与预算框架（概念测算）
+
+- **人力编制**：天窗管理办公室（统筹约5人）、三处站点运营（每处6-8人）、巡检与应急队伍（约10人）、开发者社区运营（约4人），试点期合计约40-50人；
+- **预算框架**：近期三处试点年运营成本概念测算约1.2亿元量级（含人工接管、数据回滚设施、设备维护与巡检），为概念量级，不含工程投资 [assumption:A-COST-001]；
+- **成本分担**：试点期以“联试”模式由场景提供方分担维护成本，公益类场景由政府运营主体承担；资金渠道（财政、专项债、产业基金、场景付费）为概念建议。
+
+### 公众参与、无障碍与投诉渠道
+
+- **参与机制**：天窗检修开放日、共修黑客松与公众反馈会按季度举办，检修日志与复盘报告公开可查；
+- **无障碍与数字包容**：所有AI场景保留非数字化替代路径（人工柜台、电话服务、标识指引），停机公告以多语言、大字版与广播同步发布；慢行与公共空间设计按无障碍规范配置 [standard:WUBA-2012-ACCESSIBILITY]；
+- **投诉与申诉**：设立“天窗热线”与线下受理点，投诉48小时内响应、7个工作日内反馈处理结果，重大投诉进入人工复核流程。
+
 ### 全球AI创新活动体系与长期运营
 
 - **年度活动体系**：以“京张天窗周”为年度旗舰（检修开放日、联试节、共修黑客松、服务体验周），四季各有主题 [agent.6]。
@@ -241,6 +282,9 @@ Logo方向建议以“开启的天窗”为母题：一个向上开启的梯形�
 - 总体设计范围面积：11,412,825 m² [metric:site_area_sqm]
 - 三处重点区面积：众智园约192.9万m²、AI原点约104.3万m²、大钟寺约72.0万m² [metric:zhongzhiyuan_area_sqm] [metric:ai_origin_community_area_sqm] [metric:dazhongsi_area_sqm]
 - 绿地率：18.3%；公共空间比例：0.6%；建筑基底：约28.4万m² [metric:green_ratio] [metric:public_space_ratio] [metric:building_footprint_area_sqm]
+
+空间与场景指标方面：
+
 - 天窗脊长度：约9.5km；天窗窗口数：12；场景卡：12张；画像：5类 [metric:skylight_spine_length_m] [metric:skylight_window_count] [metric:scenario_card_count]
 - 朝圣地标：3处；全球案例：6例 [metric:persona_count] [metric:pilgrimage_landmark_count]
 
@@ -254,7 +298,14 @@ Logo方向建议以“开启的天窗”为母题：一个向上开启的梯形�
 - 控规与权属风险：容积率、高度、拆改留等结论缺少官方条件，一律为概念方向 [assumption:A-CONTROLS-001]。
 - 版权合规：命名、Logo、场景与图件均为本方案自创概念，未使用未经授权的字体、图片、商标、肖像或企业标识；来源与许可见 `report/copyright_statement.md` 与 `sources.json`。
 - 生成披露：本方案由AI智能体依据公开/清权资料生成，生成方式、限制与授权状态已记录 [agent.json]。
+
+治理与运营风险方面：
+
 - 合规边界：方案不声称官方批准、审定控规、最终权属、实施承诺或政府背书；所有活动与政策安排均为概念建议 [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]。
+- AI安全与伦理：天窗协议要求所有场景通过C0-C7准入闸门并在运行期接受季度复检；高风险场景强制人工接管演练与停机演练，演练结果公开 [assumption:A-GATE-001] [assumption:A-EMERGENCY-001]，响应生成式人工智能服务管理暂行办法的合规要求 [source:SRC-2023-GENERATIVE-AI-INTERIM-MEASURES]。
+- 数据隐私与网络安全：数据采集遵循最小化原则，公共空间不默认成为数据源；个人数据脱敏聚合后方可进入场景运行与复盘，安全事件按红色应急等级处理并依法报告 [standard:GENERATIVE-AI-INTERIM-MEASURES] [risk:data_privacy]。
+- 事故责任与保险：各场景运营主体对自身AI服务承担主体责任，建议试点期购买公共责任险，天窗管理办公室负责事故上报、复盘与整改跟踪 [risk:technology_maturity]。
+- 风险登记：数据隐私、实施复杂度、公众接受度、运维成本、政策不确定性、空间争议、技术成熟度与公平包容性八类风险已在 `risk.json` 逐项登记并给出缓释与人工复核安排 [risk.json]。
 
 ## 参考资料
 
