@@ -1,5 +1,17 @@
 # 方案迭代记录
 
+## v0.6 - 2026-08-12
+
+- Started from merged v0.5 exact head `caa654366f5ecbd3b7ab2e782ec65fe3192af0cf`, whose upstream PR #2062 was accepted at Review Agent 83/100 with mandatory rejection and all four local gates passed.
+- Added bilingual **three flagship pilot protocols** for Zhongzhiyuan low-speed robot testing, AI Origin accessibility/care navigation and Dazhongsi transfer/multilingual guidance. Each protocol now exposes a non-AI baseline, quantity basis, prerequisite evidence gates, test window, KPI direction, stop threshold, exit receipt and accountable-role structure without inventing real permits, contracts, budgets or field performance.
+- Added a bilingual **nine-persona inclusion and burden matrix** covering long-term residents/families, older people, disabled or sensory-limited users, children/caregivers, students/researchers, founders/firms, service workers/commuters, visitors/international users and no-smartphone/no-account/opt-out users. Each row records benefit, burden/exclusion risk, non-AI equivalent and human help/appeal path.
+- Added bilingual **implementation resource + RACI evidence gates** with concept quantity basis, A/R/C/I responsibility, maintenance cadence, prerequisite gates and a shared PRECONDITION → TEST → RECEIPT → GO/REVISE/STOP decision chain. Currency cost, final FTE, procurement, insurance and named institutional responsibility remain UNKNOWN until verified.
+- Added a bilingual **reviewer evidence index** mapping the seven public rubric dimensions and mandatory agent.1–agent.6 tasks to inspectable proposal/figure/JSON/GeoJSON evidence and explicit claim boundaries. The index is traceability infrastructure, not a self-score.
+- Added a bilingual **review evidence dashboard** and moved it above the fold of both offline visual pages so the Review Agent's HTML screenshot can directly see core metrics, three flagship pilots, inclusion, implementation gates and claim limits instead of relying on supplemental assets hidden far below the first viewport.
+- Corrected the offline visual self-check wording: v0.5 official PASS/merge is now recorded accurately, while v0.6 does not pre-claim final PASS until manifest refresh and persisted self-check are rerun on the final exact head.
+- Expanded visible task coverage from five generic personas to nine explicit user groups and from broad operations language to RACI, quantity basis, maintenance cadence, prerequisite gates and stop receipts.
+- Current v0.6 remains in design integration. Proposal narrative, report HTML, A3/A0 first pages, manifest hashes and persisted self-check must still be synchronized before a v0.6 PR is opened.
+
 ## v0.5 - 2026-08-12
 
 - Follow-up enhancement after merged upstream PR #1954, whose final intake decision recorded Review Agent score 71/100 with mandatory rejection and all four local gates passed.
