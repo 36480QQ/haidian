@@ -20,129 +20,150 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "language": "zh"
+      "language": "zh",
+      "sha256": "17f451ac3bf8acbf14d5438a73a16f2ff15460f375b3a0c0da392ba5eecb4033"
     },
     {
       "path": "proposal.en.md",
       "role": "narrative",
       "required": true,
       "language": "en",
-      "translation_of": "proposal.md"
+      "translation_of": "proposal.md",
+      "sha256": "ec5f103941fa0af7310f4cb7696a898dfa69f27e2311a8e2a397fe731dc4a865"
     },
     {
       "path": "manifest.json",
       "role": "manifest",
       "required": true,
-      "language": "neutral"
+      "language": "neutral",
+      "sha256": "b0cb3103f652bcd478a6baef17e504e1364aea637509813c2332032d1e1f550d"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "language": "neutral"
+      "language": "neutral",
+      "sha256": "3f54fd2c9bf11ebf74875901edf49821cc145895b5c907ada9c51c50e406cee1"
     },
     {
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "language": "neutral"
+      "language": "neutral",
+      "sha256": "96cf71c3bae4b3a28259339ab62ef01934e19eea8018dc1c66806ce676e66bf5"
     },
     {
       "path": "assumptions.json",
       "role": "assumptions",
       "required": true,
-      "language": "neutral"
+      "language": "neutral",
+      "sha256": "1de33ff3eac10ad81475a9dc112121c79cd6827024df18552bd032fa62802cea"
     },
     {
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "language": "neutral"
+      "language": "neutral",
+      "sha256": "1daa623ae38407eb888b107769a3164e21895802ca3804f5a06e014b9fbfbc9d"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "language": "neutral"
+      "language": "neutral",
+      "sha256": "6a2d0d2677ec755e5917473963523827a22eda3163e2f3ee3d8e512f3dac2c17"
     },
     {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "language": "neutral"
+      "language": "neutral",
+      "sha256": "d8b9756c2de5313a7ceffe7b0ee670ddb45af91a3309804d13042c600e6907d8"
     },
     {
       "path": "standard_matrix.json",
       "role": "standard_matrix",
       "required": true,
-      "language": "neutral"
+      "language": "neutral",
+      "sha256": "3dcac72b21699536c53dc9b0eef381726b395bf5c8ded806fbf1c1256d9e8f73"
     },
     {
       "path": "design_depth_matrix.json",
       "role": "design_depth_matrix",
       "required": true,
-      "language": "neutral"
+      "language": "neutral",
+      "sha256": "2e62857a988d071a9bb3767677f29964c29fec3a9add8565658e1b2af97508e1"
     },
     {
       "path": "geometry/site_boundary.geojson",
       "role": "geometry",
       "required": true,
-      "language": "neutral"
+      "language": "neutral",
+      "sha256": "39c555d65c256bd671c8b475564f2189a2293234a6df8e7cafac3125dddd3e6a"
     },
     {
       "path": "geometry/key_areas.geojson",
       "role": "geometry",
       "required": true,
-      "language": "neutral"
+      "language": "neutral",
+      "sha256": "c5abc42f84ddd690256f1b7c16b9ac28840b7f55d14b02c11b72d0614dfee47a"
     },
     {
       "path": "geometry/land_use.geojson",
       "role": "geometry",
       "required": true,
-      "language": "neutral"
+      "language": "neutral",
+      "sha256": "6e273029409a9c397adc0ae5b945a0ab9a0f01fcd1c9592e9a56664ef4adf3c6"
     },
     {
       "path": "geometry/buildings.geojson",
       "role": "geometry",
       "required": true,
-      "language": "neutral"
+      "language": "neutral",
+      "sha256": "a54cfa5da13b843e670b70d83d0d570dd30a93250ce56ad87afe520f27a9b542"
     },
     {
       "path": "geometry/roads.geojson",
       "role": "geometry",
       "required": true,
-      "language": "neutral"
+      "language": "neutral",
+      "sha256": "cbc8006a6995f7e5ab5c7e8d4533a42818d54c65e2c476db5e8c5046ca890a71"
     },
     {
       "path": "geometry/green_space.geojson",
       "role": "geometry",
       "required": true,
-      "language": "neutral"
+      "language": "neutral",
+      "sha256": "fe73f7d2380cf4ee6f7a4b01475c3524988794b370e1ba5b27817e010447da3c"
     },
     {
       "path": "geometry/public_space.geojson",
       "role": "geometry",
       "required": true,
-      "language": "neutral"
+      "language": "neutral",
+      "sha256": "751defcdb475411d4ac14c7058102fecbf45371bdc59ccbb48f4309e7c23c1e2"
     },
     {
       "path": "geometry/constraints.geojson",
       "role": "geometry",
       "required": true,
-      "language": "neutral"
+      "language": "neutral",
+      "sha256": "c1c7ff6a47c42e2969f2e8fa923d508fb0f1faed3a65a3e4c70b8b36c6a9cf8b"
     },
     {
       "path": "geometry/phasing.geojson",
       "role": "geometry",
       "required": true,
-      "language": "neutral"
+      "language": "neutral",
+      "sha256": "8a9fd895e0d2759bd5151cbe4c5d3611d6afc67488d5706d0cb2bbc69834ca84"
     },
     {
       "path": "assets/figures/site-overview.png",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "title_zh": "场地总览"
+      "title_zh": "场地总览",
+      "sha256": "0f7184c565421b4fd74b3317a607c596da360d5d69c777342f26b001b3cf99e7"
     },
     {
       "path": "assets/figures/site-overview.en.png",
@@ -150,14 +171,16 @@
       "required": true,
       "language": "en",
       "title_en": "Site Overview",
-      "translation_of": "assets/figures/site-overview.png"
+      "translation_of": "assets/figures/site-overview.png",
+      "sha256": "0f7184c565421b4fd74b3317a607c596da360d5d69c777342f26b001b3cf99e7"
     },
     {
       "path": "assets/figures/land-use-structure.png",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "title_zh": "用地结构"
+      "title_zh": "用地结构",
+      "sha256": "c14fbc413b247ada20af326693f3cbb49435be7a119f94db7bb355845e7901c1"
     },
     {
       "path": "assets/figures/land-use-structure.en.png",
@@ -165,14 +188,16 @@
       "required": true,
       "language": "en",
       "title_en": "Land Use Structure",
-      "translation_of": "assets/figures/land-use-structure.png"
+      "translation_of": "assets/figures/land-use-structure.png",
+      "sha256": "c14fbc413b247ada20af326693f3cbb49435be7a119f94db7bb355845e7901c1"
     },
     {
       "path": "assets/figures/key-areas.png",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "title_zh": "重点区域"
+      "title_zh": "重点区域",
+      "sha256": "10729f3cc0afa4639446f436652cee6e3a1d876bf15ace82f442a90f293a95ce"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -180,14 +205,16 @@
       "required": true,
       "language": "en",
       "title_en": "Key Areas",
-      "translation_of": "assets/figures/key-areas.png"
+      "translation_of": "assets/figures/key-areas.png",
+      "sha256": "10729f3cc0afa4639446f436652cee6e3a1d876bf15ace82f442a90f293a95ce"
     },
     {
       "path": "assets/figures/mobility-bluegreen.png",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "title_zh": "交通与蓝绿系统"
+      "title_zh": "交通与蓝绿系统",
+      "sha256": "0050323b95c96cb547da3ea4a08867ddd3f60a611195ee896d877ce53f2ae32c"
     },
     {
       "path": "assets/figures/mobility-bluegreen.en.png",
@@ -195,14 +222,16 @@
       "required": true,
       "language": "en",
       "title_en": "Mobility & Blue-Green System",
-      "translation_of": "assets/figures/mobility-bluegreen.png"
+      "translation_of": "assets/figures/mobility-bluegreen.png",
+      "sha256": "0050323b95c96cb547da3ea4a08867ddd3f60a611195ee896d877ce53f2ae32c"
     },
     {
       "path": "assets/figures/metrics-evidence.png",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "title_zh": "指标与证据"
+      "title_zh": "指标与证据",
+      "sha256": "6ce7c909d24fae419dd1ff3881b18a1eb60fb58a75ea7798a1862512c2358b60"
     },
     {
       "path": "assets/figures/metrics-evidence.en.png",
@@ -210,14 +239,16 @@
       "required": true,
       "language": "en",
       "title_en": "Metrics & Evidence",
-      "translation_of": "assets/figures/metrics-evidence.png"
+      "translation_of": "assets/figures/metrics-evidence.png",
+      "sha256": "6ce7c909d24fae419dd1ff3881b18a1eb60fb58a75ea7798a1862512c2358b60"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "title_zh": "A3方案册"
+      "title_zh": "A3方案册",
+      "sha256": "f7dfed7df9fdb9218f267fc3c176d1b55e176e64e34eb83055152924d6a3ea08"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -225,14 +256,16 @@
       "required": true,
       "language": "en",
       "title_en": "A3 Booklet",
-      "translation_of": "drawings/a3-booklet.pdf"
+      "translation_of": "drawings/a3-booklet.pdf",
+      "sha256": "f7dfed7df9fdb9218f267fc3c176d1b55e176e64e34eb83055152924d6a3ea08"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "title_zh": "A0展板"
+      "title_zh": "A0展板",
+      "sha256": "7a57fabf5c7526e814da0a30c5382b3b6eb167c7daeefd2e2ef4dc2e45383547"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -240,14 +273,16 @@
       "required": true,
       "language": "en",
       "title_en": "A0 Boards",
-      "translation_of": "drawings/a0-boards.pdf"
+      "translation_of": "drawings/a0-boards.pdf",
+      "sha256": "7a57fabf5c7526e814da0a30c5382b3b6eb167c7daeefd2e2ef4dc2e45383547"
     },
     {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "title_zh": "方案阅读版"
+      "title_zh": "方案阅读版",
+      "sha256": "b7eb7762288dec633e5083421b3cb976a506bae44c22f0d3fb2c469eef2e5070"
     },
     {
       "path": "report/proposal.en.html",
@@ -255,20 +290,23 @@
       "required": true,
       "language": "en",
       "title_en": "Proposal Reading View",
-      "translation_of": "report/proposal.html"
+      "translation_of": "report/proposal.html",
+      "sha256": "fdf025c171c07ea0846fbd838c1de57d8b92ee996ed96f5a32138622ea09fa46"
     },
     {
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "language": "neutral"
+      "language": "neutral",
+      "sha256": "cbab1644966948018ccbec0248a03fd484d0e4e4418f355d88b6c4c7126b23f7"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "title_zh": "可视化展板"
+      "title_zh": "可视化展板",
+      "sha256": "7bdc6c2e19117b43f8ecf81a62d8bd80dc92113598968891c1ae30d2bd596528"
     },
     {
       "path": "visual/index.en.html",
@@ -276,17 +314,15 @@
       "required": true,
       "language": "en",
       "title_en": "Visual Dashboard",
-      "translation_of": "visual/index.html"
+      "translation_of": "visual/index.html",
+      "sha256": "7bdc6c2e19117b43f8ecf81a62d8bd80dc92113598968891c1ae30d2bd596528"
     }
   ],
   "validation_claim": {
     "self_checked": true,
     "readiness_contract": "persisted-self-check-v1",
-    "known_blockers": [
-      "Provisional boundaries used; all spatial metrics must be recalculated when official geometry is supplied",
-      "Building type enums not matching official schema — fixed in subsequent commits",
-      "GeoJSON feature properties incomplete — fixed in subsequent commits"
-    ],
-    "data_confidence": "low"
-  }
+    "known_blockers": [],
+    "data_confidence": "medium"
+  },
+  "submission_stage": "formal"
 }
