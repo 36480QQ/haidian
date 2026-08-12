@@ -1,5 +1,5 @@
 {
-  "authority": "R006.1 current source inventory: official references, open-data context, provisional geometry, current internal design records and standards references; no evidence or approval upgrade",
+  "authority": "R006.2 local-rescue source inventory: official references, open-data context, provisional geometry, current internal design records and standards references; no evidence or approval upgrade",
   "evidence_policy": {
     "classes": [
       "E",
@@ -13,7 +13,7 @@
     "osm_is_official_or_field_evidence": false,
     "professional_signoff_present": false
   },
-  "generated_at": "2026-08-09T23:32:50+10:00",
+  "generated_at": "2026-08-12T12:00:00+10:00",
   "reference_integration": {
     "added_source_ids": [
       "SUBMISSION-REFERENCE-PROJECT-OFFICIAL-ANNOUNCEMENT-20260605",
@@ -27,7 +27,7 @@
     "source_count_after": 17,
     "source_count_before": 12
   },
-  "round": "R003",
+  "round": "R006.2",
   "schema": "jingzhang.authoritative-source-inventory.v2",
   "schema_version": "2.0.0",
   "sources": [
@@ -207,7 +207,7 @@
       "status": "active",
       "superseded_by": [],
       "supersedes": [],
-      "title": "R006.1 current internal candidate evidence-state record",
+      "title": "R006.2 current internal candidate evidence-state record",
       "url": null
     },
     {
@@ -242,7 +242,7 @@
       "status": "active",
       "superseded_by": [],
       "supersedes": [],
-      "title": "R006.1 current internal candidate design-decision record",
+      "title": "R006.2 current internal candidate design-decision record",
       "url": null
     },
     {
@@ -277,7 +277,7 @@
       "status": "active",
       "superseded_by": [],
       "supersedes": [],
-      "title": "R006.1 current internal candidate artifact-state record",
+      "title": "R006.2 current internal candidate artifact-state record",
       "url": null
     },
     {
@@ -457,7 +457,7 @@
       "status": "active",
       "superseded_by": [],
       "supersedes": [],
-      "title": "R006.1 deterministic synthetic S2 / AI-off / vendor-exit sandbox drill",
+      "title": "R006.2 deterministic synthetic S2 / AI-off / vendor-exit sandbox drill",
       "url": null
     },
     {
@@ -655,7 +655,9 @@
       "source_type": "case_reference",
       "anchor_method": "direct_official_url_summary",
       "author": null,
-      "authority_scope": ["comparative_case_reference_only"],
+      "authority_scope": [
+        "comparative_case_reference_only"
+      ],
       "coverage": [],
       "title": "Smart Kalasatama final report",
       "publisher": "Forum Virium Helsinki, the City of Helsinki innovation company",
@@ -670,14 +672,20 @@
       "status": "active_unclaimed_reference",
       "superseded_by": [],
       "supersedes": [],
-      "prohibited_use": ["proof of JingZhang feasibility", "transfer of local governance or user findings", "image reuse without permission"]
+      "prohibited_use": [
+        "proof of JingZhang feasibility",
+        "transfer of local governance or user findings",
+        "image reuse without permission"
+      ]
     },
     {
       "source_id": "CASE-REFERENCE-HELSINKI-INNOVATION-DISTRICTS-202312",
       "source_type": "case_reference",
       "anchor_method": "direct_official_url_summary",
       "author": null,
-      "authority_scope": ["comparative_case_reference_only"],
+      "authority_scope": [
+        "comparative_case_reference_only"
+      ],
       "coverage": [],
       "title": "Helsinki Innovation Districts turned suburbs into living labs",
       "publisher": "Forum Virium Helsinki, the City of Helsinki innovation company",
@@ -692,14 +700,20 @@
       "status": "active_unclaimed_reference",
       "superseded_by": [],
       "supersedes": [],
-      "prohibited_use": ["proof of JingZhang feasibility", "representation of participation as support", "image reuse without permission"]
+      "prohibited_use": [
+        "proof of JingZhang feasibility",
+        "representation of participation as support",
+        "image reuse without permission"
+      ]
     },
     {
       "source_id": "CASE-REFERENCE-JTC-LAUNCHPAD-202205",
       "source_type": "case_reference",
       "anchor_method": "direct_official_url_summary",
       "author": null,
-      "authority_scope": ["comparative_case_reference_only"],
+      "authority_scope": [
+        "comparative_case_reference_only"
+      ],
       "coverage": [],
       "title": "5 Things to Know About LaunchPad",
       "publisher": "JTC, Government of Singapore",
@@ -714,14 +728,20 @@
       "status": "active_unclaimed_reference",
       "superseded_by": [],
       "supersedes": [],
-      "prohibited_use": ["proof of JingZhang market demand", "transfer of tenancy or institutional arrangements", "image reuse without permission"]
+      "prohibited_use": [
+        "proof of JingZhang market demand",
+        "transfer of tenancy or institutional arrangements",
+        "image reuse without permission"
+      ]
     },
     {
       "source_id": "CASE-REFERENCE-JTC-PUNGGOL-DIGITAL-DISTRICT-202601",
       "source_type": "case_reference",
       "anchor_method": "direct_official_url_summary",
       "author": null,
-      "authority_scope": ["comparative_case_reference_only"],
+      "authority_scope": [
+        "comparative_case_reference_only"
+      ],
       "coverage": [],
       "title": "Punggol Digital District",
       "publisher": "JTC, Government of Singapore",
@@ -736,14 +756,20 @@
       "status": "active_unclaimed_reference",
       "superseded_by": [],
       "supersedes": [],
-      "prohibited_use": ["authority for a JingZhang operating platform", "proof of local data lawfulness", "image reuse without permission"]
+      "prohibited_use": [
+        "authority for a JingZhang operating platform",
+        "proof of local data lawfulness",
+        "image reuse without permission"
+      ]
     },
     {
       "source_id": "CASE-REFERENCE-WATERFRONT-TORONTO-TERMINATION-202005",
       "source_type": "case_reference",
       "anchor_method": "direct_official_url_summary",
       "author": null,
-      "authority_scope": ["comparative_case_reference_only"],
+      "authority_scope": [
+        "comparative_case_reference_only"
+      ],
       "coverage": [],
       "title": "Plan Development Agreement as amended — terminated effective 17 May 2020",
       "publisher": "Waterfront Toronto",
@@ -758,8 +784,12 @@
       "status": "active_unclaimed_reference",
       "superseded_by": [],
       "supersedes": [],
-      "prohibited_use": ["copying contractual terms as local legal advice", "proof of JingZhang viability", "document redistribution outside source terms"]
+      "prohibited_use": [
+        "copying contractual terms as local legal advice",
+        "proof of JingZhang viability",
+        "document redistribution outside source terms"
+      ]
     }
   ],
-  "version": "JZ-R006.1-REVIEW-FIX-1.0.0"
+  "version": "JZ-R006.2-LOCAL-RESCUE-1.0.0"
 }

@@ -1,36 +1,7 @@
-# Copyright and Display Statement
+# 版权与来源声明 / Copyright and Source Statement
 
-Submitted by **林漢杰** in a personal capacity through the GitHub account **Golden-Koi**. The submitter identifies as a Taiwan-born Australian Chinese.
+本提交的正文、图表、视觉系统、网页与排版由 Golden-Koi 参赛者使用已披露的 Codex/AI 工具生成、选择和编辑，许可为 `COMMUNITY-DISPLAY-ONLY`。五组核心图由本地 GeoJSON、metrics 与权威内容蓝图派生，不含第三方地图截图、摄影或远程媒体。
 
-The original proposal text, generated diagrams, PDFs and static HTML included in this package are offered to the official repository under `COMMUNITY-DISPLAY-ONLY` for evaluation and public display in connection with the Centennial Jing-Zhang AI Innovation Belt open call.
+`assets/media/open-way-concept-hero.png` 是 AI 辅助概念插画，非现场影像；提示摘要、SHA-256、工具、用途和证据边界记录在 `visual/assets/rights_ledger.json`。图像不主张任何真实地块、建筑、人员、合作、机构或已实施状态。
 
-Official documents, public-source extracts, open map data, standards, names, marks and other third-party materials remain subject to their original rights, licences and attribution requirements. This statement does not relicense them or claim ownership over them. `sources.json` records source provenance.
-
-The proposal was produced with AI assistance from Codex App and Morrow. AI provenance does not imply legal personality, professional registration, independent verification, official endorsement or implementation approval. The rebuilt figures use no stock photography, remote raster tiles or third-party icon library; they are generated from primitive shapes, package text and explicitly provisional geometry. Noto Sans CJK SC is used under the SIL Open Font License 1.1 where embedded or rasterised.
-
-`COMMUNITY-DISPLAY-ONLY` is a package distribution boundary, not a claim that it can override an upstream licence. Any public exhibition beyond the open-call review context, commercial reuse, field photography, identifiable-person media or new official-source quotation requires a fresh rights, privacy and attribution review.
-
-## Itemized rights inventory
-
-- **Participant identity and text:** declared by the submitter; no third-party
-  authorship is claimed.
-- **AI assistance:** Codex App and Morrow assisted generation and packaging;
-  this does not create professional or legal authority.
-- **Fonts:** Noto Sans CJK SC, subject to SIL Open Font License 1.1.
-- **Figures and maps:** generated for this package from primitive shapes,
-  package text and explicitly provisional geometry.
-- **Icons and components:** package-authored geometric primitives; no external
-  icon library is bundled.
-- **OpenStreetMap-derived records:** retain OpenStreetMap attribution and
-  upstream licence obligations; no relicensing is claimed.
-- **Official materials and standards:** names and references are cited for
-  review context only and remain under their original rights.
-- **Named case references:** factual summaries link to official project or
-  institutional sources; no copied case imagery is included.
-- **Code:** participant-authored build and verification code remains subject to
-  repository terms; no hidden third-party binary is bundled.
-- **Photography and identifiable-person media:** none is included in the
-  rebuilt package.
-
-Before reuse outside the open-call review context, a named legal or rights
-reviewer must confirm upstream licences, attribution, privacy and display scope.
+国际案例仅作简短方法转译并保留原始发布链接，不复制受版权保护的长文本、图纸或摄影。OpenStreetMap 相关记录仅作为桌面语境，继续遵守 ODbL 归属与禁止升级为官方/现场证据的边界。
