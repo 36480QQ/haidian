@@ -10,9 +10,7 @@
       "ok": true,
       "errors": [],
       "warnings": [
-        "submissions/EileenClara/jingzhang-express/proposal.md: 可能涉及非公开或敏感资料; maintainer review required",
-        "submissions/EileenClara/jingzhang-express/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied",
-        "submissions/EileenClara/jingzhang-express/changelog.md: 可能涉及非公开或敏感资料; maintainer review required"
+        "submissions/EileenClara/jingzhang-express/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied"
       ],
       "proposal_files": [
         "submissions/EileenClara/jingzhang-express/proposal.md"
@@ -67,7 +65,7 @@
       "ai_package_stages": {
         "submissions/EileenClara/jingzhang-express": "formal"
       },
-      "total_bytes": 6114523,
+      "total_bytes": 6179957,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -167,8 +165,8 @@
           "source": 4,
           "standard": 7,
           "depth": 15,
-          "data": 28,
-          "metric": 15
+          "data": 30,
+          "metric": 16
         }
       }
     },

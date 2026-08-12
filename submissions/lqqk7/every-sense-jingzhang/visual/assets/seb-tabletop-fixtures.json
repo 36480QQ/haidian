@@ -1,14 +1,16 @@
 {
   "fixtures_id": "seb-tabletop-fixtures",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "consumes": {
     "spec": "visual/assets/seb-spec.json",
-    "spec_version": "0.1.0",
+    "spec_version": "0.2.0",
     "node_source_of_record": "geometry/constraints.geojson",
     "runner": "visual/assets/seb-tabletop-run.js"
   },
   "evidence_class": "methodology_demonstration",
   "contains_no_measurement_values": true,
+  "v0_2_note_zh": "随基准 v0.2 增补两条样例，用于检验本次三项闭合是否真的可执行：TT-P5 检验分母完整性规则的排除侧，声明一项文件完整性型指标而不声明任何参与者类别，应当通过；TT-N7 检验适用侧的扩张，人工接管响应耗时删除技术故障样本，应当被拒——这一条在 v0.1 的文字推导下会被漏判。原十条样例的预期判定与理由一字未改，用以确认闭合没有改变既有判据的结论。",
+  "v0_2_note_en": "Two fixtures arrive with baseline v0.2 to test whether the three closures are genuinely executable. TT-P5 tests the exclusion side of denominator integrity: it declares a file-completeness metric and no participant category, and should pass. TT-N7 tests the widened scope: a human-handover response-time record that drops technical-fault samples, which should be refused, and which the v0.1 wording heuristic would have missed. The expected verdicts and reasons of the original ten fixtures are unchanged to the letter, confirming that the closures altered no existing ruling.",
   "disclaimer_zh": "本文件是桌面推演样例，不是测试记录。样例中没有任何参与者、任何现场、任何计数或比例；分母只以类别是否被声明的方式表达，不带样本数量。运行本文件不产生绩效指标数值，metrics.json 中的七项包容性指标保持 unknown。",
   "disclaimer_en": "This file holds tabletop fixtures, not test records. It contains no participant, no site, no count and no ratio; denominators are expressed only as whether a category was declared, never as a sample size. Running it produces no performance metric value, and the seven inclusion metrics in metrics.json stay unknown.",
   "verdict_semantics": {
@@ -161,6 +163,47 @@
         "resumed": true,
         "resumption_basis": "evidence_submitted",
         "resumption_artifacts": ["问题日志", "故障绕行方案", "维护卡"]
+      },
+      "expected_verdict": "accept",
+      "expected_reasons": []
+    },
+    {
+      "fixture_id": "TT-P5",
+      "polarity": "positive",
+      "title_zh": "文件完整性型指标的声明，分母完整性规则按基准明文不适用",
+      "title_en": "A file-completeness metric is declared, and baseline text puts it outside the denominator-integrity rule",
+      "note_zh": "检验 v0.2 新增的适用范围条款的排除侧。样例声明 scenario_exit_path_coverage，其分母是几何文件中的点位总数，读数由文件内容直接得出，既无参与者也无尝试，因此不存在可被删除的失败样本，样例也不声明任何参与者类别。在 v0.1 下该指标编号不在评分口径内，工具会报未知而拒绝；v0.2 由基准把它明文列入排除清单之后判定通过——排除是被写下的，不是被默认的。",
+      "note_en": "This tests the exclusion side of the scope clause added in v0.2. The fixture declares scenario_exit_path_coverage, whose denominator is the node total in the geometry file: the reading follows straight from the file contents, there is no participant and no attempt, so no failed sample exists to drop and the fixture declares no participant category. Under v0.1 the metric id lay outside the scoring definitions and the tool refused it as unknown; from v0.2 the baseline names it on the excluded list and the fixture passes, because the exclusion is written down rather than assumed.",
+      "node": {
+        "id": "TT-NODE-G",
+        "scenario_id": "S01",
+        "ai_off_path": "固定多通道导视与有人求助",
+        "human_handoff": "现场无障碍服务人员接管并记录绕行",
+        "gate_id": "G0",
+        "operating_mode": "资料核对与任务脚本改写，不进行现场测试",
+        "responsible_role": "未来经授权的场地运营与无障碍专业团队"
+      },
+      "measurement_declaration": {
+        "metric_id": "scenario_exit_path_coverage",
+        "denominator_basis_zh": "geometry/constraints.geojson 中的点位总数，按文件完整性口径读取",
+        "denominator_basis_en": "the node total in geometry/constraints.geojson, read as a document-completeness figure",
+        "denominator_categories_declared": [],
+        "denominator_categories_excluded": [],
+        "value_reported": false,
+        "value_note_zh": "桌面推演不产生读数；该指标的读数由文件内容直接得出，复核方式是重读文件而不是重算样本。",
+        "value_note_en": "A tabletop run produces no reading; this metric's reading follows from the file contents and is re-checked by re-reading the file, not by recomputing samples."
+      },
+      "level_claim": {
+        "level_id": "L0",
+        "entry_condition": "官方范围、路线与服务清单核对完成，伦理、同意与数据处置协议齐备，十二个场景已改写为可复测任务脚本",
+        "stop_condition": "责任主体或资料边界不清，或来源无法确认发布者、时间、许可与用途",
+        "recovery_evidence": "来源登记补齐、书面授权、协议签署与数据处置记录",
+        "accountable_operator": "资料所有者与数据治理人员"
+      },
+      "decision": {
+        "risk_ids": ["R-08"],
+        "stop_condition_triggered": false,
+        "action_taken": "proceed"
       },
       "expected_verdict": "accept",
       "expected_reasons": []
@@ -366,6 +409,45 @@
       },
       "expected_verdict": "reject",
       "expected_reasons": ["RESUME_WITHOUT_EVIDENCE"]
+    },
+    {
+      "fixture_id": "TT-N7",
+      "polarity": "negative",
+      "title_zh": "人工接管响应耗时的记录删除技术故障样本",
+      "title_en": "Technical-fault samples are dropped from the human-handover response-time record",
+      "note_zh": "检验 v0.2 新增的适用范围条款的适用侧。只报设备正常时的接管耗时、把故障导致的接管从记录里拿掉，是耗时类读数最常见的美化方式，而且理由听上去很合理。该指标的分母写作按次记录、不取平均掩盖长尾，文字里既没有有效样本也没有成对测试样本，因此 v0.1 按分母文字推导适用范围的做法会把这一条整个漏掉；v0.2 把它明文写入适用清单之后，同一份记录当场被拒。",
+      "note_en": "This tests the inclusion side of the scope clause added in v0.2. Reporting handover times only for the runs where the equipment behaved, and removing the fault-driven handovers from the record, is the commonest way a timing figure is flattered, and the stated reason sounds entirely sensible. The metric's denominator reads as a per-instance log that must not hide its tail in an average, wording that names neither valid samples nor paired-test samples, so the v0.1 practice of inferring scope from denominator wording missed this case altogether. Once v0.2 names the metric on the included list, the same record is refused on the spot.",
+      "node": {
+        "id": "TT-NODE-H",
+        "scenario_id": "S05",
+        "ai_off_path": "不启用设备时保持可通行的人工服务与固定导视",
+        "human_handoff": "现场安全人员执行急停、人工接管与事件记录",
+        "gate_id": "G2",
+        "operating_mode": "受控封闭测试；未通过独立复核不得进入开放空间",
+        "responsible_role": "未来经授权的测试运营、安全与无障碍专业团队"
+      },
+      "measurement_declaration": {
+        "metric_id": "human_handover_response_time_seconds",
+        "denominator_categories_declared": ["completed", "withdrawn", "non_completion_other"],
+        "denominator_categories_excluded": ["technical_fault"],
+        "exclusion_rationale_given_zh": "设备故障导致的接管不反映人工响应速度，不宜计入",
+        "exclusion_rationale_given_en": "handovers triggered by equipment faults do not reflect how fast the staff responded and should not be counted",
+        "value_reported": false
+      },
+      "level_claim": {
+        "level_id": "L2",
+        "entry_condition": "受控环境内完成同一参与者、同一任务的 AI 开启与关闭成对协议，合理便利与退出方式事先约定",
+        "stop_condition": "替代路径、人工接管或参与条件任一未闭合，或以内部演示替代参与者证据",
+        "recovery_evidence": "问题日志、匿名化测试证据、故障绕行与维护卡",
+        "accountable_operator": "测试主持人、技术安全人员与参与者代表"
+      },
+      "decision": {
+        "risk_ids": ["R-02", "R-07"],
+        "stop_condition_triggered": false,
+        "action_taken": "proceed"
+      },
+      "expected_verdict": "reject",
+      "expected_reasons": ["DENOMINATOR_SAMPLE_DROPPED:technical_fault"]
     }
   ]
 }
