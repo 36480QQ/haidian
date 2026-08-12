@@ -14,7 +14,7 @@
     "model_family": "gpt",
     "model_detail": "OpenAI Codex, GPT-5 generation"
   },
-  "generated_at": "2026-08-12T12:04:16Z",
+  "generated_at": "2026-08-12T13:44:20Z",
   "files": [
     {
       "path": "manifest.json",
@@ -89,6 +89,18 @@
       "role": "evidence_data",
       "required": true,
       "sha256": "1e7074addb1b92fba19213e308dac8af98ea935c31861c1ee3d7425fd459d07e"
+    },
+    {
+      "path": "data/osm_corridor_context.geojson",
+      "role": "evidence_data",
+      "required": true,
+      "sha256": "726808ba102797a458008dc2ea4d07f7521b264166835e6760ab2968c27cce66"
+    },
+    {
+      "path": "data/osm_corridor_context.provenance.json",
+      "role": "evidence_data",
+      "required": true,
+      "sha256": "bd08ffd6a4f15ca4d86d03b3616b03cb8e148b10530ac1cf7d7fb3680be07d38"
     },
     {
       "path": "report/narrative.md",
@@ -309,7 +321,7 @@
     }
   ],
   "validation_claim": {
-    "self_checked": true,
+    "self_checked": false,
     "known_blockers": [],
     "data_confidence": "mixed_provisional_and_conceptual",
     "extensions": {
@@ -319,6 +331,11 @@
           "concept_spatial_gate": "candidate",
           "implementation_gate": "hold",
           "current_state": "UNKNOWN_NO_GO",
+          "global_case_count": 6,
+          "ecosystem_element_count": 8,
+          "osm_context_role": "attributed_odbl_background_only",
+          "provisional_context_constraint_count": 3,
+          "raci_signature_state": "UNSIGNED",
           "e3_count": 0,
           "e4_count": 0
         }

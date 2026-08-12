@@ -1,198 +1,124 @@
 {
-  "ok": true,
-  "submission_dir": "submissions\\zyaoii\\jingzhang-porous-ground-contract",
-  "pr_author": "zyaoii",
-  "stage": "formal",
-  "deterministic_validation": {
-    "returncode": 0,
-    "ok": true,
-    "stdout": {
-      "ok": true,
-      "errors": [],
-      "warnings": [
-        "submissions/zyaoii/jingzhang-porous-ground-contract/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied"
-      ],
-      "proposal_files": [
-        "submissions/zyaoii/jingzhang-porous-ground-contract/proposal.md"
-      ],
-      "changelog_files": [],
-      "changed_files": [
-        "submissions/zyaoii/jingzhang-porous-ground-contract/agent.json",
-        "submissions/zyaoii/jingzhang-porous-ground-contract/assets/figures/key-areas.en.png",
-        "submissions/zyaoii/jingzhang-porous-ground-contract/assets/figures/key-areas.png",
-        "submissions/zyaoii/jingzhang-porous-ground-contract/assets/figures/land-use-structure.en.png",
-        "submissions/zyaoii/jingzhang-porous-ground-contract/assets/figures/land-use-structure.png",
-        "submissions/zyaoii/jingzhang-porous-ground-contract/assets/figures/metrics-evidence.en.png",
-        "submissions/zyaoii/jingzhang-porous-ground-contract/assets/figures/metrics-evidence.png",
-        "submissions/zyaoii/jingzhang-porous-ground-contract/assets/figures/mobility-bluegreen.en.png",
-        "submissions/zyaoii/jingzhang-porous-ground-contract/assets/figures/mobility-bluegreen.png",
-        "submissions/zyaoii/jingzhang-porous-ground-contract/assets/figures/site-overview.en.png",
-        "submissions/zyaoii/jingzhang-porous-ground-contract/assets/figures/site-overview.png",
-        "submissions/zyaoii/jingzhang-porous-ground-contract/assets/media/cover-provenance.md",
-        "submissions/zyaoii/jingzhang-porous-ground-contract/assets/media/cover.webp",
-        "submissions/zyaoii/jingzhang-porous-ground-contract/assumptions.json",
-        "submissions/zyaoii/jingzhang-porous-ground-contract/compliance_matrix.json",
-        "submissions/zyaoii/jingzhang-porous-ground-contract/design_depth_matrix.json",
-        "submissions/zyaoii/jingzhang-porous-ground-contract/drawings/a0-boards.en.pdf",
-        "submissions/zyaoii/jingzhang-porous-ground-contract/drawings/a0-boards.pdf",
-        "submissions/zyaoii/jingzhang-porous-ground-contract/drawings/a3-booklet.en.pdf",
-        "submissions/zyaoii/jingzhang-porous-ground-contract/drawings/a3-booklet.pdf",
-        "submissions/zyaoii/jingzhang-porous-ground-contract/geometry/buildings.geojson",
-        "submissions/zyaoii/jingzhang-porous-ground-contract/geometry/constraints.geojson",
-        "submissions/zyaoii/jingzhang-porous-ground-contract/geometry/green_space.geojson",
-        "submissions/zyaoii/jingzhang-porous-ground-contract/geometry/key_areas.geojson",
-        "submissions/zyaoii/jingzhang-porous-ground-contract/geometry/land_use.geojson",
-        "submissions/zyaoii/jingzhang-porous-ground-contract/geometry/phasing.geojson",
-        "submissions/zyaoii/jingzhang-porous-ground-contract/geometry/public_space.geojson",
-        "submissions/zyaoii/jingzhang-porous-ground-contract/geometry/roads.geojson",
-        "submissions/zyaoii/jingzhang-porous-ground-contract/geometry/site_boundary.geojson",
-        "submissions/zyaoii/jingzhang-porous-ground-contract/manifest.json",
-        "submissions/zyaoii/jingzhang-porous-ground-contract/metrics.json",
-        "submissions/zyaoii/jingzhang-porous-ground-contract/proposal.en.md",
-        "submissions/zyaoii/jingzhang-porous-ground-contract/proposal.md",
-        "submissions/zyaoii/jingzhang-porous-ground-contract/report/copyright_statement.md",
-        "submissions/zyaoii/jingzhang-porous-ground-contract/report/narrative.md",
-        "submissions/zyaoii/jingzhang-porous-ground-contract/report/proposal.en.html",
-        "submissions/zyaoii/jingzhang-porous-ground-contract/report/proposal.html",
-        "submissions/zyaoii/jingzhang-porous-ground-contract/self_check.json",
-        "submissions/zyaoii/jingzhang-porous-ground-contract/simulation.json",
-        "submissions/zyaoii/jingzhang-porous-ground-contract/sources.json",
-        "submissions/zyaoii/jingzhang-porous-ground-contract/standard_matrix.json",
-        "submissions/zyaoii/jingzhang-porous-ground-contract/visual/index.en.html",
-        "submissions/zyaoii/jingzhang-porous-ground-contract/visual/index.html"
-      ],
-      "ai_package_stages": {
-        "submissions/zyaoii/jingzhang-porous-ground-contract": "formal"
-      },
-      "total_bytes": 26392607,
-      "maintainer_bypass": false
-    },
-    "stderr": ""
-  },
-  "spatial_review": {
-    "returncode": 0,
-    "ok": true,
-    "stdout": {
-      "ok": true,
-      "stage": "formal",
-      "issues": [
-        {
-          "check_id": "KEY_AREA_PROVISIONAL",
-          "severity": "minor",
-          "target_file": "geometry/key_areas.geojson",
-          "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
-          "target_feature_id": "PROV-KEY-001",
-          "expected": null,
-          "actual": null
-        },
-        {
-          "check_id": "KEY_AREA_PROVISIONAL",
-          "severity": "minor",
-          "target_file": "geometry/key_areas.geojson",
-          "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
-          "target_feature_id": "PROV-KEY-002",
-          "expected": null,
-          "actual": null
-        },
-        {
-          "check_id": "KEY_AREA_PROVISIONAL",
-          "severity": "minor",
-          "target_file": "geometry/key_areas.geojson",
-          "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
-          "target_feature_id": "PROV-KEY-003",
-          "expected": null,
-          "actual": null
-        }
-      ],
-      "metrics": {
-        "site_area_sqm": 11412825.386,
-        "green_space_area_sqm": 364338.518,
-        "public_space_area_sqm": 32586.455,
-        "building_footprint_area_sqm": 19350.0,
-        "green_ratio": 0.031924,
-        "public_space_ratio": 0.002855
-      }
-    },
-    "stderr": ""
-  },
-  "visual_review": {
-    "returncode": 0,
-    "ok": true,
-    "stdout": {
-      "ok": true,
-      "issues": [],
-      "metrics_seen": {
-        "site_area_sqm": 11412825.386,
-        "green_ratio": 0.031924,
-        "public_space_ratio": 0.002855
-      }
-    },
-    "stderr": ""
-  },
-  "professional_review": {
-    "returncode": 0,
-    "ok": true,
-    "stdout": {
-      "ok": true,
-      "issues": [],
-      "summary": {
-        "standard_matrix_items": 11,
-        "design_depth_items": 15,
-        "known_metric_refs_required": 15,
-        "proposal_format_version": "2",
-        "evidence_contract": "section-anchors-plus-structured-audit",
-        "proposal_reference_counts": {
-          "source": 24,
-          "standard": 6,
-          "depth": 13,
-          "data": 14,
-          "metric": 16
-        }
-      }
-    },
-    "stderr": ""
-  },
-  "spatial_issue_ids": [
-    "KEY_AREA_PROVISIONAL",
-    "KEY_AREA_PROVISIONAL",
-    "KEY_AREA_PROVISIONAL"
-  ],
-  "visual_issue_ids": [],
-  "professional_issue_ids": [],
-  "missing_review_dependencies": [],
-  "can_enter_formal_review": true,
-  "package_type": "professional_design_package",
-  "review_status": "formal-review-ready",
-  "next_actions": [],
   "schema_version": "0.1.0",
   "checks": [
     {
-      "check_id": "DETERMINISTIC_VALIDATION",
+      "check_id": "BOUNDARY_TRUST",
       "result": "pass",
-      "severity": "blocking",
-      "target": "validate_local_submission.py",
-      "message": "deterministic_validation: PASS"
+      "severity": "major",
+      "target": "geometry/site_boundary.geojson",
+      "message": "Overall geometry is low-confidence provisional_constraint and is not presented as a redline, survey, title or precise-area basis."
     },
     {
-      "check_id": "SPATIAL_REVIEW",
+      "check_id": "DAZHONGSI_ANCHOR",
       "result": "pass",
-      "severity": "blocking",
-      "target": "spatial_review.py",
-      "message": "spatial_review: PASS"
+      "severity": "major",
+      "target": "geometry/key_areas.geojson",
+      "message": "PROV-KEY-003 is explicitly UNANCHORED; no station-exit, quadrant, street, distance, capacity, title or real-site claim is made."
     },
     {
-      "check_id": "VISUAL_PACKAGING",
+      "check_id": "LAND_USE_TOPOLOGY",
       "result": "pass",
-      "severity": "blocking",
-      "target": "visual_review.py",
-      "message": "visual_review: PASS"
+      "severity": "major",
+      "target": "geometry/land_use.geojson",
+      "message": "Five non-statutory research overlays partition the provisional site with no material gap, overlap or outside area."
     },
     {
-      "check_id": "PROFESSIONAL_EVIDENCE",
+      "check_id": "GEOMETRY_TRUST",
       "result": "pass",
-      "severity": "blocking",
-      "target": "professional_review.py",
-      "message": "professional_review: PASS"
+      "severity": "major",
+      "target": "geometry/",
+      "message": "Design features remain low-confidence design_proposal. Three non-empty constraint features are explicitly provisional_context_constraint blockers; none is canonical, surveyed, engineering-release or a Section-C boundary."
+    },
+    {
+      "check_id": "CONSTRAINT_BLOCKERS",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/constraints.geojson",
+      "message": "Canonical-base missing, PROV-KEY-003 unanchored and E3/E4 absent are three distinct non-engineering-release constraints using only existing provisional SITE/KEY carriers."
+    },
+    {
+      "check_id": "OSM_CONTEXT_BOUNDARY",
+      "result": "pass",
+      "severity": "major",
+      "target": "data/osm_corridor_context.geojson",
+      "message": "The complete ODbL snapshot is attributed and counted as package background only; it is not a current survey, official boundary, title/accessibility/fire/source/operating or authorisation record."
+    },
+    {
+      "check_id": "AGENT2_ECOSYSTEM",
+      "result": "pass",
+      "severity": "major",
+      "target": "simulation.json",
+      "message": "Six mechanism case studies cite 30 first-party records and state non-copy limits/spatial consequences; the eight-element map and north-invent/centre-translate/south-adopt chain make both wings services without release authority."
+    },
+    {
+      "check_id": "NEAREST_NEIGHBOR_DIFFERENCE",
+      "result": "pass",
+      "severity": "major",
+      "target": "simulation.json",
+      "message": "Exactly seven designated full-text neighbours each expose claim, mechanism, spatial-consequence, evidence and exit differences; Chinese and English proposals render the same compact matrix."
+    },
+    {
+      "check_id": "CONTROL_CONTRACT_V2",
+      "result": "unknown",
+      "severity": "major",
+      "target": "simulation.json",
+      "message": "Twelve RACI seats, eleven state transitions, four SLO targets, N1-N10, WP00-WP09, symbolic ceilings and the Section-C interlock are complete E0 templates; all signable people, values, hardware and drills remain unsigned/UNKNOWN."
+    },
+    {
+      "check_id": "BILINGUAL_NARRATIVE",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal.en.md",
+      "message": "Chinese and English v2 proposals share the official chapter sequence, core claims, scenarios, metrics and evidence boundaries."
+    },
+    {
+      "check_id": "SCENARIO_COVERAGE",
+      "result": "pass",
+      "severity": "major",
+      "target": "simulation.json",
+      "message": "Twelve scenarios, six personas, three industry tests, three pilgrimage nodes, three distinct area verbs, two service-only wings and a culture/operations programme are structured and readable."
+    },
+    {
+      "check_id": "NON_AI_BASELINE",
+      "result": "pass",
+      "severity": "major",
+      "target": "simulation.json",
+      "message": "B0/B1/P/A is explicit; AI has no transition authority and is deleted when it cannot stably add value over B1."
+    },
+    {
+      "check_id": "PILOT_KILL_GATES",
+      "result": "pass",
+      "severity": "major",
+      "target": "simulation.json",
+      "message": "The 90-day NO-GO-to-RESTORED chain includes authority, baseline, ablation, reversible work, negative outcomes, stop conditions, maintenance and asset exit."
+    },
+    {
+      "check_id": "NO_FAKE_PERFORMANCE",
+      "result": "pass",
+      "severity": "major",
+      "target": "metrics.json",
+      "message": "Actual environmental improvement, AI net value, pilot cost, authorised site and Dazhongsi anchor remain UNKNOWN; E3 and E4 counts are zero."
+    },
+    {
+      "check_id": "C_I_EVIDENCE",
+      "result": "unknown",
+      "severity": "major",
+      "target": "assumptions.json",
+      "message": "C-I remains HOLD until an authorised transect, calibrated paired baseline, named professionals, reversible mock-up and restoration evidence exist."
+    },
+    {
+      "check_id": "VISUAL_STATIC",
+      "result": "unknown",
+      "severity": "info",
+      "target": "assets/figures/",
+      "message": "Figures, bilingual HTML and PDFs are owned by the parallel visual builder and were not modified or certified by this data builder."
+    },
+    {
+      "check_id": "FORMAL_FINALIZATION",
+      "result": "unknown",
+      "severity": "info",
+      "target": "manifest.json",
+      "message": "Official render/finalize/self-check/preflight must run after the visual package is complete; this is a formal data candidate, not review-ready."
     }
   ]
 }

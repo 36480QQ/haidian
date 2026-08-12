@@ -29,6 +29,8 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 空气、气候与声环境来源只定义专业方法边界，不证明京张现状或效果。声学采用源—路径—接收者分析逻辑；风、热、空气与声的真实变量必须在获授权断面上由适格人员确定。[source:MEE-GB3095-2026] [source:MEE-GB3096-2008] [source:MEE-HJ24-2021]
 
+包内另登记一份公开 ODbL 的 OSM 背景快照：共 `3,653` 个要素，其中 railway 283、road 1,065、named context 55、station 24、water 96、park 147、building 1,911、landuse 72。它只为方位与剖切索引服务，**不是** current survey、official/canonical boundary、权属、无障碍路线、消防条件、声/热/排放源清单、现状运营或授权；每个要素在专业使用前仍须核验。[source:OSM-CORRIDOR-CONTEXT-2026] [metric:osm_context_feature_count]
+
 ## 三层范围工作框架
 
 | 层级 | 不可替代的问题 | 本案交付 | 禁止下推 |
@@ -46,6 +48,48 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 本案把“AI全栈”理解为一条可删除AI的城市设计生产链，而非设备平台：B0只读基线；B1由规划、建筑、景观、环境、声学、消防和无障碍专业人员给出人工规则方案；P把开口位置、错位关系、缓冲深度、遮荫连续、接收面与维护通路转成可画参数；A只在冻结输入和留出情景中搜索Pareto候选。AI若不能稳定、可解释地找到不被B1支配的方案，就删除AI，B1公共服务不变。[source:LADYBUG-TOOLS-METHOD] [source:OPENFOAM-METHOD] [source:NOISEMODELLING-METHOD]
 
 中关村科技服务翼只交换规则版本、工具清单、专业方法、失败与复演资产；小月河场景赋能翼只交换获授权、已脱敏的场景方法和普通维护经验。任何跨区复制必须重新做B1、来源登记、责任确认和no-harm审查，不能平移几何、阈值或效果。[source:AGENT-TASKBOOK] [depth:existing_conditions_diagnosis]
+
+### agent.2：六案机制表，不做品牌榜
+
+| 案例 | 可核验机制 | 不能照搬 | 反向改变京张空间 |
+| --- | --- | --- | --- |
+| one-north / LaunchPad | 公共主开发、模块空间、首层展示、组织化试场与一站式服务 | JTC土地/主开发权、园区规模、未来项目；Punggol平台不在one-north | 首层拆成时限模块、证据窗、受控试场；逐模块过疏散/无障碍/声热/复原门 [source:CASE-SG-JTC-LAUNCHPAD-2026] |
+| Paris-Saclay / DATAIA / Jean Zay | 公共开发+研究教育网络+经申请配给的算力/数据基础 | 国家科研体系、超算规模、France 2030与热网 | 算力留在后台/外部；首层只公开申请—配给—能耗/来源—结果—删除/归档 [source:CASE-FR-IDRIS-ALLOCATIONS] [source:CASE-FR-GENCI-JEAN-ZAY] |
+| MaRS / Vector | 历史建筑和公共中庭邻接湿/干实验室、受限研究后台、人才/采用服务 | 共址与机构自报规模不证明溢出；实验室不能无边界开放 | 每个孔隙画公众前台—隔界证据面—授权后台，分别控制门禁、空气、数据和关闭 [source:CASE-CA-MARS-CENTRE] [source:CASE-CA-VECTOR-ABOUT] |
+| Brainport / HTCE | 三螺旋年度议程、共享实验/洁净/试制设施、空间与人才联动 | 国家资金、锚定企业和供应链；官方已承认住房/交通/能源压力 | 翼侧服务采用预约、资格、维护、退出；试验同步登记住房/通勤/电网/物流/公共路径负担 [source:CASE-NL-BRAINPORT-AGENDA] [source:CASE-NL-GOV-BEETHOVEN] |
+| Hazelwood Green / CMU | 工业棕地再生、可重构室内外试场、公共共同空间与社区利益目标 | 社区目标不等于收益兑现；基金会/大学/联邦资金不可移植 | 先分公共路径、受控测试面、应急停止区与PARK/复原位；公共路径不能当机器缓冲区 [source:CASE-US-CMU-RIC] [source:CASE-US-HG-NEIGHBORHOOD-PLAN] |
+| Barcelona 22@ | 工业用地长期转型、基础设施负担、旧厂再用及包容性修订 | 京张无已证同等改规/增值回收权；22@不是AI全栈绩效样板 | “孔隙义务随时限使用权走”：公共路径、静侧、维护、数据、安全、复原缺一不放行 [source:CASE-ES-BCN-IMU-2024] [source:CASE-ES-22AT-2008] |
+
+六案只证明机制曾由相应第一方主体公开描述，不证明其因果成效，更不生成京张企业、资金、算力、政策或指标。30条一手来源逐条登记 publisher/title/URL/date/use/limits/license；除明确CC BY 4.0的2008年22@资料外均仅事实性转述、不复制图表。[metric:global_case_study_count] [metric:global_case_first_party_source_count]
+
+### 七个指定近邻：五字段不可替代差异
+
+| 近邻 | Claim差异 | Mechanism差异 | Spatial consequence差异 | Evidence差异 | Exit差异 |
+| --- | --- | --- | --- | --- | --- |
+| THE BREATHING LINE | 不做宽泛气候/呼吸廊道，只验“交换开口不得直送噪声” | 逐孔源—路径—接收者+六维否决，不是脊/气候庭/横缝+感知 | 每孔必须画源侧、折线、人的接收面、零电状态 | 授权断面和同工况B0/B1多物理配对，不只传感校准 | 不止AI下线；失败孔隙SX→撤除/删数→S10 [source:PEER-THE-BREATHING-LINE] |
+| Urban-Form-First V6 | “形态优先/首层开放”不是差异，三物理冲突才是 | AI只搜冻结P域且不优于B1即删，不以算法改线面点/分期 | 后台—证据面—前台错位断面与静侧 | 六项硬门+B1/A同预算消融，不做综合价值护照 | 删A→B1/CLEAR；Day90须S10或新授权 [source:PEER-URBAN-FORM-FIRST-V6] |
+| THE SEASON LINE | 不承诺四季/全年公共客厅 | 固定被动B1+逐次授权，不运行期季节切换 | 遮荫/避雨只是不可抵消约束，不是品牌节点 | 匹配天气/源条件配对；90日不外推全年 | 无有限PASS即撤除、复原、关闭数据 [source:PEER-THE-SEASON-LINE] |
+| SHADE THE CLOUD | 不做算力换凉意；遮荫只服务零电路径/热门 | 资源配给/成本来源留痕+错位声热断面，不做热预算公地 | 无“一脊三凉岛”；逐孔同时过声/通行/应急/维护 | 热、声、空气、能耗分账，不能互相抵消 | 隔离复原准备金覆盖构件、表面、数据与验收 [source:PEER-SHADE-THE-CLOUD] |
+| Smart Waiting | 不做智能候场/动态舒适，只保固定被动最低服务 | AI仅设计期；现场启停、应急、迁移全由人/机械 | 零电路+错位孔+静侧+C-CLEAR，不是六状态候场门 | 验B1零电、逐状态签署和机械清场，不验AI切换率 | 删A→冻P→B1→CLEAR/关→撤→RESTORED [source:PEER-SMART-WAITING] |
+| Sonic Commons | 不做声景公地；声只否决直送噪声的开口 | 不机器聆听；物理错位/源控/静侧+配对测量 | 声改变每孔位置、折线、接收面，不形成声景网络 | 声与热/空气/无障碍/消防/维护共同硬门 | 投诉冲突先停，不能用仪器驳回；撤除复原 [source:PEER-SONIC-COMMONS] |
+| THE SECOND SURVEY | 不再声称断面/首层开放/90日独特，只验三物理孔隙 | 不按综合低分选点；先授权源—路径—接收者再过门/消融 | 不普遍开低分首层；错位/阴影/静侧/应急维护齐才进P | 冻结源/天气/误差，单项越界失败，AI留出胜B1 | 不只重排优先级；无PASS或有伤害即SX→S10 [source:PEER-THE-SECOND-SURVEY] |
+
+该矩阵的机器可读权威在 `simulation.json#design_evidence.nearest_neighbor_difference`，逐行含 `claim_difference / mechanism_difference / spatial_consequence_difference / evidence_difference / exit_difference`；只含上述七项，不扩大近邻集合。[metric:nearest_neighbor_difference_count]
+
+### 八要素生态图谱：每条箭头都是 Gate
+
+| 要素 | 首层/走廊载体 | 可交换资产 | 最小责任与放行门 | 当前状态 |
+| --- | --- | --- | --- | --- |
+| 地 | 前铁路长廊、站场/桥下、临界地块 | 授权边界、禁触清单、期限 | A-OWN/R-PM；权属、到期收回、遗产/通行 | `UNKNOWN/HOLD` |
+| 空间 | 孔隙、阴影路、庭院、静侧、后台 | 源—路径—接收者断面、前台/界面/后台、零电状态 | A-DES/R-OPS及消防/无障碍/环境否决 | `E0 only` |
+| 产业 | 北研发源—中转译—南采用/退出 | 真实问题、B1、原型、采用/退出条件 | 需求具名且先有较简单非AI基线 | 无企业承诺 |
+| 资金 | 服务翼审计台与获授权工作包 | 用途、Gate、上限、利益冲突、复原预留 | A-OWN/I-AUD；失败、维护与复原都有钱 | `UNKNOWN/unfunded` |
+| 人才 | 高校—园区—社区路径与值守班次 | 资格、工时、责任岗位、场景去向 | 培训必须进入获授权且可追责角色 | `UNKNOWN` |
+| 算力 | 后台/外部受控节点；首层仅审计窗 | 作业ID、配额、版本、能耗、结果、删除/归档 | R-DATA/I-AUD；必要性、来源与处置可审 | 无资源/协议 |
+| 数据 | 受控采集点、脱敏证据窗、来源库 | 目的、最小字段、权限、保留、删除证明 | R-DATA；可拒绝、无禁采个人数据、删除核验 | 无现场授权 |
+| 场景 | 获授权可逆试场与公共体验路 | owner、时段、安全半径、停止、复原签收 | A-OWN/R-OPS；真实需求、投诉与RESTORED | `E3=0/E4=0 NO-GO` |
+
+生产闭环为“地权→受控空间→真实产业问题→数据合同→算力配给→B1/原型→授权场景→正负证据→人类采用/修改/退出”；公共闭环从日常负担进入最小数据与可逆样段，再由投诉、维护和负结果返回人类Gate。北部因此是**发明并约束**，中部是**翻译并比较**，南部是**采用或退出**；中关村翼只提供IP/资金/人才/算力/专业复核，小月河翼只提供授权场景/反馈/维护/负证据，二者均无空间放行权。[metric:ecosystem_element_count]
 
 品牌以“错位开口”的括号/折线为识别，不以风的箭头、传感器或绿色发光线为主体。国际表达固定为 `OPEN THE GROUND, NOT A DIRECT NOISE PATH.`，把AI治理转成可见的“可比较、可删除、可恢复”。
 
@@ -135,6 +179,80 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 | 71—84 | EVALUATING | 匹配复测、缺测、投诉和负结果 | 不作因果结论 |
 | 85—90 | PASS/REVISE/STOP → RESTORED | 具名决定、撤除/保留授权、资产去向和复原证据 | 不得以试点名义续占 |
 
+### 未签署的逐状态 RACI 与 SLO
+
+以下全部是合同准入目标，**不是现有任命、响应绩效或服务承诺**。除公众渠道 `I-PUB` 外，12席位中的11个可签席位主责与替补均为 `UNKNOWN / UNSIGNED`；任一主责和替补同时空缺即按席位后果关闭，AI不是RACI席位。[source:CONTROL-CONTRACT-V2] [metric:unsigned_signable_raci_seat_count]
+
+| 席位 | 主责 / 替补 | 空缺后果 |
+| --- | --- | --- |
+| A-OWN 资产/场地 | `UNKNOWN / UNKNOWN` | 无现场行为 |
+| A-EMG 应急启停 | `UNKNOWN / UNKNOWN` | C段永久NO-GO |
+| A-DES 设计冻结 | `UNKNOWN / UNKNOWN` | 仅B0 |
+| R-PM 合同/状态账本 | `UNKNOWN / UNKNOWN` | 状态不升级 |
+| R-OPS 开门/停用/维护 | `UNKNOWN / UNKNOWN` | 关闭或CLEAR |
+| R-MEAS 测量/误差 | `UNKNOWN / UNKNOWN` | 无绩效结论 |
+| R-DATA 最小化/删除 | `UNKNOWN / UNKNOWN` | 停采并删除 |
+| C-FIRE / C-ACC / C-ENV | 三席均 `UNKNOWN / UNKNOWN` | 对应硬门不放行 |
+| I-AUD 独立见证 | `UNKNOWN / UNKNOWN` | C-I保持HOLD |
+| I-PUB 可达公告/申诉 | 公众渠道，非任命 | 无申诉闭环不得PASS |
+
+| 转换 | A | R | 最小门；失败 |
+| --- | --- | --- | --- |
+| S0→S1 | A-OWN | R-PM/R-DATA | E4采集授权、签RACI、隐私/投诉；否则S0 |
+| S1→S2 | A-DES | R-MEAS/R-DATA | E3真实断面、校准/配对/冻结；否则数据作废回S1 |
+| S2→S3 | A-DES | R-PM | B1图纸、六维no-harm、维护/复原；否则回S2/STOP |
+| S3→S4 | A-DES | R-PM | P参数域、约束相交、异质断面；否则S3 |
+| S4→S5 | A-DES | R-PM/R-DATA | 留出/扰动/消融优于B1；否则删A回S4/S3 |
+| S3/S4/S5→S6 | A-OWN | R-PM/R-OPS | E4许可、保险、BoQ/预算/复原金、值班/备件、C联锁；否则不安装 |
+| S6→S7 | A-OWN | R-OPS | 当日100%开门检查与机械清空检查；否则关闭 |
+| S7→S8 | A-DES | R-PM/R-MEAS/R-DATA | 冻结数据/投诉/负样本并停调参；否则REVISE/STOP |
+| S8→S9 | A-OWN | R-PM | 全硬门、预注册收益MDE、独立复核；否则REVISE/STOP |
+| 任意→SX | 事后A-OWN | 首见者/R-OPS/R-PM | 任一停止触发，不待批准；保持B1/CLEAR/关闭 |
+| SX→S10 | A-OWN | R-OPS/R-PM/R-DATA | E4撤除、复原、独立验收、数据删除；否则继续关闭 |
+
+| 等级 | 即时动作 | 主责确认目标 | 替补/升级目标 |
+| --- | --- | --- | --- |
+| P0生命安全/应急/禁采数据/失权 | 立即STOP、CLEAR/关闭、停采 | ≤5分钟 | 5分钟叫替补；≤15分钟升A-OWN/A-EMG |
+| P1 no-harm越界/可信安全投诉 | 回B1；B1不明即关闭 | ≤15分钟（开放时） | ≤30分钟；≤2小时到场评估 |
+| P2维护/漂移/非关键缺测 | 暂停结论、用已验证B1 | ≤4运营小时 | 下一开放周期前；按签署MTTR修复 |
+| P3文档/普通投诉 | 登记回执 | ≤1工作日 | ≤2工作日升级；≤5工作日处置/说明 |
+
+无人响应只延长关闭；达到目标也不自动解除风险。真实值班、MTTR和演练未签，故这些SLO不能作为可行性或绩效证据。
+
+### N1—N10、Level-0 BoQ 与 C 段机械联锁
+
+| 负样本 | 注入 | 必须结果 |
+| --- | --- | --- |
+| N1 | AI对B1无稳定净增益 | 删除A，回S4/S3 |
+| N2 | 仪器断连/漂移/关键缺测 | 停结论，B1或关闭 |
+| N3 | 任一no-harm越界 | SX、撤除、复原 |
+| N4 | 可信投诉与仪器冲突 | 先停，独立调查 |
+| N5 | 主责缺席且替补未接管 | 不开放或SX |
+| N6 | C段真启用/演练/误触发 | 强制C-CLEAR |
+| N7 | 极端天气/断网/断电 | B1保持，否则关闭 |
+| N8 | 出现禁采个人数据 | 停采、隔离、删除、升级 |
+| N9 | 构件卡滞/无备件 | C段验收失败；其他段B1/关闭 |
+| N10 | Day90无PASS/主动退出 | SX→S10并完成撤除、复原、删除 |
+
+N1—N10均为**必须真实运行并留证**的脚本，不是已通过结果。[metric:negative_test_count]
+
+| WP | Level-0范围 | 单位变量 | 当前量/价 |
+| --- | --- | --- | --- |
+| 00 | 授权、法务、保险、告知/可达渠道 | 项、保单期、批次、工时 | `UNKNOWN / UNKNOWN` |
+| 01 | 真实断面、权属/应急/消防/无障碍/源接收调查 | 断面、点、m、m²、工日 | `UNKNOWN / UNKNOWN` |
+| 02 | B0/B1仪器、租赁、校准、共点、QA | 站·日、台、校准、样本 | `UNKNOWN / UNKNOWN` |
+| 03 | 多专业设计与复核 | 工时、图纸、评审 | `UNKNOWN / UNKNOWN` |
+| 04 | 可逆零动力构件与机械联锁 | m、m²、套、模块、钥匙组 | `UNKNOWN / UNKNOWN` |
+| 05 | 安装、围护、运输、安全、开门检查 | 工时、车次、班次、日 | `UNKNOWN / UNKNOWN` |
+| 06 | 运维、清洁、绿化、巡检、备件、仓储 | 班次、工时、件·月、m²·次 | `UNKNOWN / UNKNOWN` |
+| 07 | 数据、日志、独立审计、投诉、负样本 | 工时、审计、演练 | `UNKNOWN / UNKNOWN` |
+| 08 | C段撤除—清场—验收—复位联锁/演练 | 钥匙组、构件、演练、工时 | `UNKNOWN / UNKNOWN` |
+| 09 | 撤除、运输、处置、复原、独立验收 | 件、车次、m²、工时、验收 | `UNKNOWN / UNKNOWN` |
+
+符号上限为 `CAPEX_upper = CAPEX_direct,H × (1+c_CAPEX,E4)`；年度运维为高情景频次×数量×单价、人工、校准、备件、仓储、保险、审计之和再乘 `(1+e_y,E4)`；恢复准备金为撤除、运输、仓储/处置、场地恢复、独立验收、数据结案高情景之和再乘 `(1+c_restore,E4)`。只有 `CAPEX_upper≤B_CAPEX`、`OPEX_y,upper≤B_OPEX,y`、隔离的 `R_funded≥R_restore,upper` 且全部E4签署才能进S6；任一UNKNOWN即阻断，不能用未来赞助、残值或AI预测冲抵。[metric:level_0_boq_work_package_count]
+
+C段默认安全状态是 `C-CLEAR`，但本包没有C段真实边界、硬件或演练。概念联锁为：`K_EMG`释放逐件撤除钥匙→模块锁入净空外获批`PARK_i`才释放`C_i`→全部`C_i`才能释放`KEY_CLEAR`并锁死重装钥匙→仅具名A-EMG解除、消防/无障碍/损伤复核与`KEY_STANDDOWN`才能反向复位。数字日志可镜像但不能覆盖机械事实；任一模块不能在E4签署的`T_C-clear`内完成就永久退出C段。日间、低照、主责缺席、断电通信、卡滞/丢钥匙、误触发、行动不便者和拒绝未授权复位须全套独立见证；此前C段物理NO-GO。[source:CONTROL-CONTRACT-V2]
+
 AI永不触发状态迁移。立即停止包括：通路/疏散受阻、构件风险、噪声/风不适或其他维度恶化、校准/可比性失败、未授权数据、责任人缺席、维护失败、投诉无法关闭、越出授权范围。[data:geometry/phasing.geojson#PHASE-PGC-03] [depth:phasing_implementation]
 
 成本不伪造总价。先锁定专业测绘与协议、仪器租赁/共址、可逆构件、安装拆除、日常维护、第三方复核、保险告知和恢复准备金；真实断面与数量明确后取得可比报价或适用采购依据，再批货币上限。[metric:pilot_cost_cny]
@@ -143,7 +261,7 @@ AI永不触发状态迁移。立即停止包括：通路/疏散受阻、构件�
 
 ## 指标体系、面积复算与合规矩阵
 
-包内可知的是：三处任务书名称、12场景、6画像、3产业测试、3概念地标、90日协议长度、E3=0、E4=0，以及概念几何自身的拓扑和面积。不可知的是：真实点位、实际性能、AI净增益、费用、FAR、现状绿地/公共空间和大钟寺锚点。[metric:e3_site_evidence_count] [metric:e4_implementation_evidence_count] [metric:ai_net_value]
+包内可知的是：6个机制案例/30条一手来源、8个生态要素、三处任务书名称、12场景、6画像、3产业测试、3概念地标、12个RACI席位定义、N1—N10、WP00—09、90日协议、3个provisional context constraints、OSM快照3653要素、E3=0、E4=0，以及概念几何自身拓扑和面积。它们都是包内容事实，不是生态成效、任命、性能或放行。不可知的是：真实点位、实际性能、AI净增益、费用、FAR、现状绿地/公共空间和大钟寺锚点。[metric:global_case_study_count] [metric:ecosystem_element_count] [metric:osm_context_feature_count] [metric:e3_site_evidence_count] [metric:e4_implementation_evidence_count] [metric:ai_net_value]
 
 面积以EPSG:4548对提交临时 polygon 内部复算，仅用于包内一致性；不能作为精确规划指标。来源、假设、九GeoJSON、三矩阵和self_check构成权威层，图件/HTML/生成插画只是解释层。[metric:site_area_sqm] [depth:metrics_recalculation]
 
@@ -151,7 +269,7 @@ AI永不触发状态迁移。立即停止包括：通路/疏散受阻、构件�
 
 ## 风险、版权与合规说明
 
-最主要的风险不是“模型不准”，而是把临时几何当真实场地、把多指标平均当no-harm、把AI建议当批准、把90天当全年、把可逆试点变长期占用、或让维护劳动隐形。任何一项都要求降级、停止或复原。[depth:risk_missing_data] [data:geometry/constraints.geojson#CONSTRAINTS]
+最主要的风险不是“模型不准”，而是把临时几何当真实场地、把多指标平均当no-harm、把AI建议当批准、把90天当全年、把可逆试点变长期占用、或让维护劳动隐形。`constraints.geojson` 用三个 provisional/context features 明示 canonical base 缺失、PROV-KEY-003未锚定和E3/E4缺失；它们是非工程放行阻断，不是C段边界。任何一项风险都要求降级、停止或复原。[depth:risk_missing_data] [data:geometry/constraints.geojson#CONSTRAINT-PGC-01] [data:geometry/constraints.geojson#CONSTRAINT-PGC-02] [data:geometry/constraints.geojson#CONSTRAINT-PGC-03]
 
 最小数据不含姓名、手机号、账号、脸、图像、健康、精确个人定位、单位身份或连续轨迹。公众反馈只做对象级问题和聚合时段；专业数据按授权保存。发现禁用字段立即停止、删除并由责任主体处理。[source:SOURCE-REGISTRY]
 
@@ -165,3 +283,5 @@ AI永不触发状态迁移。立即停止包括：通路/疏散受阻、构件�
 - 环境空气、声环境、噪声责任与声学方法边界。[source:MEE-GB3095-2026] [source:MEE-GB3096-2008] [source:MEE-NOISE-LAW-2021]
 - 气候/通风和建筑环境专业深化入口。[source:CMA-GBT37529-2019] [source:CMA-QXT437-2018] [source:MOHURD-GB55016-2021]
 - 可复核工具只作方法库，不移植模型、默认数据或结论。[source:PYTHERMALCOMFORT-METHOD] [source:LADYBUG-TOOLS-METHOD] [source:NOISEMODELLING-METHOD]
+- 六案30条一手来源见 `sources.json`；案例只转译机制与失败边界。[source:CASE-SG-JTC-LAUNCHPAD-2026] [source:CASE-FR-IDRIS-ALLOCATIONS] [source:CASE-CA-VECTOR-ABOUT] [source:CASE-NL-GOV-BEETHOVEN] [source:CASE-US-CMU-RIC] [source:CASE-ES-22AT-2008]
+- OSM公开背景、provenance与ODbL边界；v2控制合同为未签E0模板。[source:OSM-CORRIDOR-CONTEXT-2026] [source:CONTROL-CONTRACT-V2]

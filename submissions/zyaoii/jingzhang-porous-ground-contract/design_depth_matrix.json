@@ -6,11 +6,9 @@
       "title_zh": "现状诊断图与资料缺口",
       "professional_dimension": "规划",
       "required": true,
-      "status": "complete",
+      "status": "data_gap",
       "proposal_sections": [
-        "三层范围工作框架",
-        "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计",
+        "设计依据与资料清单",
         "风险、版权与合规说明"
       ],
       "drawing_refs": [
@@ -18,68 +16,31 @@
         "drawings/a0-boards.pdf"
       ],
       "geometry_refs": [
+        "data/osm_corridor_context.geojson",
         "geometry/site_boundary.geojson",
         "geometry/key_areas.geojson",
-        "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
-        "geometry/constraints.geojson",
-        "geometry/phasing.geojson"
+        "geometry/constraints.geojson"
       ],
       "metric_refs": [
-        "site_area_sqm",
-        "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "key_area_count"
+        "osm_context_feature_count",
+        "provisional_context_constraint_count",
+        "e3_site_evidence_count"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
-        "OFFICIAL-ANNOUNCEMENT",
-        "AGENT-TASKBOOK",
+        "OSM-CORRIDOR-CONTEXT-2026",
         "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE",
-        "MEE-GB3095-2026",
-        "MEE-GB3096-2008",
-        "MEE-HJ24-2021",
-        "CMA-GBT37529-2019",
-        "MOHURD-GB55016-2021",
-        "BARRIER-FREE-ENVIRONMENT-LAW",
-        "BEIJING-EMERGENCY-JZ-C-2025",
-        "BEIJING-JZ-PARK-OPEN-2023",
-        "HAIDIAN-GOV-REPORT-2026",
-        "BEIJING-PARK-DIRECTORY-2025"
+        "KEY-AREA-SOURCE"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001",
+        "A-OSM-CONTEXT-001",
         "A-BOUNDARY-001",
-        "A-DAZHONGSI-ANCHOR-001",
-        "A-SOURCE-001",
-        "A-BASELINE-001",
-        "A-OWNERSHIP-001",
-        "A-PILOT-001",
-        "A-ABLATED-AI-001",
-        "A-PERFORMANCE-001",
-        "A-COST-001",
-        "A-MAINTENANCE-001",
-        "A-DATA-001",
-        "A-C-PARK-001",
-        "A-EMERGENCY-001",
-        "A-PARK-MANAGER-001"
+        "A-BASELINE-001"
       ],
       "self_check_ids": [
-        "BOUNDARY_TRUST",
-        "KEY_AREAS_TRUST",
-        "LAND_USE_TOPOLOGY",
-        "VISUAL_STATIC",
-        "GEOMETRY_TRUST",
-        "NO_FAKE_PERFORMANCE"
+        "OSM_CONTEXT_BOUNDARY",
+        "CONSTRAINT_BLOCKERS"
       ],
-      "evidence_summary_zh": "此深度项以三层—三区因果链、源—路径—接收者断面合同、被动形态、九GeoJSON、可复算概念指标、B1与AI消融、责任/维护/成本桶/退出资产表达；无官方或现场证据的法定、现状与实施结论明确降级为UNKNOWN。"
+      "evidence_summary_zh": "公开OSM仅供方位/剖切索引；canonical base、真实现状、源清单与E3均缺失，三个context constraint不构成工程控制。"
     },
     {
       "item_id": "three_level_scope_framework",
@@ -169,9 +130,8 @@
       "status": "complete",
       "proposal_sections": [
         "三层范围工作框架",
-        "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计",
-        "风险、版权与合规说明"
+        "统筹研究范围产业与未来城市研究",
+        "重点区域详细设计"
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
@@ -180,157 +140,74 @@
       "geometry_refs": [
         "geometry/site_boundary.geojson",
         "geometry/key_areas.geojson",
-        "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
         "geometry/roads.geojson",
-        "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
-        "geometry/constraints.geojson",
-        "geometry/phasing.geojson"
+        "geometry/public_space.geojson"
       ],
       "metric_refs": [
-        "site_area_sqm",
-        "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "key_area_count"
+        "contract_spine_length_m",
+        "key_area_count",
+        "passive_service_required_ratio"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE",
-        "MEE-GB3095-2026",
-        "MEE-GB3096-2008",
-        "MEE-HJ24-2021",
-        "CMA-GBT37529-2019",
-        "MOHURD-GB55016-2021",
-        "BARRIER-FREE-ENVIRONMENT-LAW",
-        "BEIJING-EMERGENCY-JZ-C-2025",
-        "BEIJING-JZ-PARK-OPEN-2023",
-        "HAIDIAN-GOV-REPORT-2026",
-        "BEIJING-PARK-DIRECTORY-2025"
+        "BEIJING-JZ-PARK-OPEN-2023"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001",
         "A-BOUNDARY-001",
-        "A-DAZHONGSI-ANCHOR-001",
-        "A-SOURCE-001",
-        "A-BASELINE-001",
-        "A-OWNERSHIP-001",
-        "A-PILOT-001",
-        "A-ABLATED-AI-001",
-        "A-PERFORMANCE-001",
-        "A-COST-001",
-        "A-MAINTENANCE-001",
-        "A-DATA-001",
-        "A-C-PARK-001",
-        "A-EMERGENCY-001",
-        "A-PARK-MANAGER-001"
+        "A-CONTROLS-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
-        "KEY_AREAS_TRUST",
-        "LAND_USE_TOPOLOGY",
-        "VISUAL_STATIC",
-        "GEOMETRY_TRUST",
-        "NO_FAKE_PERFORMANCE"
+        "GEOMETRY_TRUST"
       ],
-      "evidence_summary_zh": "此深度项以三层—三区因果链、源—路径—接收者断面合同、被动形态、九GeoJSON、可复算概念指标、B1与AI消融、责任/维护/成本桶/退出资产表达；无官方或现场证据的法定、现状与实施结论明确降级为UNKNOWN。"
+      "evidence_summary_zh": "总体以北发明约束—中翻译比较—南采用退出及两翼服务回路组织；脊线与节点仍是低置信概念，不是可追踪真实总平。"
     },
     {
       "item_id": "land_use_layout",
       "title_zh": "用地布局",
       "professional_dimension": "规划",
       "required": true,
-      "status": "complete",
+      "status": "data_gap",
       "proposal_sections": [
-        "三层范围工作框架",
         "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计",
-        "风险、版权与合规说明"
+        "用地、建筑规模与拆改留方案"
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "geometry_refs": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
         "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
-        "geometry/constraints.geojson",
-        "geometry/phasing.geojson"
+        "geometry/site_boundary.geojson",
+        "geometry/constraints.geojson"
       ],
       "metric_refs": [
-        "site_area_sqm",
-        "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "key_area_count"
+        "land_use_partition_ratio",
+        "site_area_sqm"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
         "OFFICIAL-ANNOUNCEMENT",
-        "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE",
-        "MEE-GB3095-2026",
-        "MEE-GB3096-2008",
-        "MEE-HJ24-2021",
-        "CMA-GBT37529-2019",
-        "MOHURD-GB55016-2021",
-        "BARRIER-FREE-ENVIRONMENT-LAW",
-        "BEIJING-EMERGENCY-JZ-C-2025",
-        "BEIJING-JZ-PARK-OPEN-2023",
-        "HAIDIAN-GOV-REPORT-2026",
-        "BEIJING-PARK-DIRECTORY-2025"
+        "BOUNDARY-SOURCE"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001",
         "A-BOUNDARY-001",
-        "A-DAZHONGSI-ANCHOR-001",
-        "A-SOURCE-001",
-        "A-BASELINE-001",
-        "A-OWNERSHIP-001",
-        "A-PILOT-001",
-        "A-ABLATED-AI-001",
-        "A-PERFORMANCE-001",
-        "A-COST-001",
-        "A-MAINTENANCE-001",
-        "A-DATA-001",
-        "A-C-PARK-001",
-        "A-EMERGENCY-001",
-        "A-PARK-MANAGER-001"
+        "A-CONTROLS-001"
       ],
       "self_check_ids": [
-        "BOUNDARY_TRUST",
-        "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
-        "VISUAL_STATIC",
-        "GEOMETRY_TRUST",
-        "NO_FAKE_PERFORMANCE"
+        "CONSTRAINT_BLOCKERS"
       ],
-      "evidence_summary_zh": "此深度项以三层—三区因果链、源—路径—接收者断面合同、被动形态、九GeoJSON、可复算概念指标、B1与AI消融、责任/维护/成本桶/退出资产表达；无官方或现场证据的法定、现状与实施结论明确降级为UNKNOWN。"
+      "evidence_summary_zh": "五段覆盖只完成包内拓扑和产业—空间问题索引；没有法定用地、地块或开发调整结论。"
     },
     {
       "item_id": "development_intensity_controls",
       "title_zh": "开发强度或待确认控规条件",
       "professional_dimension": "控规",
       "required": true,
-      "status": "complete",
+      "status": "data_gap",
       "proposal_sections": [
-        "三层范围工作框架",
-        "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计",
+        "用地、建筑规模与拆改留方案",
         "风险、版权与合规说明"
       ],
       "drawing_refs": [
@@ -339,707 +216,334 @@
       ],
       "geometry_refs": [
         "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
-        "geometry/land_use.geojson",
         "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
-        "geometry/constraints.geojson",
-        "geometry/phasing.geojson"
+        "geometry/constraints.geojson"
       ],
       "metric_refs": [
-        "site_area_sqm",
-        "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "key_area_count"
+        "floor_area_ratio",
+        "building_footprint_area_sqm"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
         "OFFICIAL-ANNOUNCEMENT",
-        "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE",
-        "MEE-GB3095-2026",
-        "MEE-GB3096-2008",
-        "MEE-HJ24-2021",
-        "CMA-GBT37529-2019",
-        "MOHURD-GB55016-2021",
-        "BARRIER-FREE-ENVIRONMENT-LAW",
-        "BEIJING-EMERGENCY-JZ-C-2025",
-        "BEIJING-JZ-PARK-OPEN-2023",
-        "HAIDIAN-GOV-REPORT-2026",
-        "BEIJING-PARK-DIRECTORY-2025"
+        "SITE-PACKAGE"
       ],
       "assumption_ids": [
         "A-CONTROLS-001",
-        "A-BOUNDARY-001",
-        "A-DAZHONGSI-ANCHOR-001",
-        "A-SOURCE-001",
-        "A-BASELINE-001",
-        "A-OWNERSHIP-001",
-        "A-PILOT-001",
-        "A-ABLATED-AI-001",
-        "A-PERFORMANCE-001",
-        "A-COST-001",
-        "A-MAINTENANCE-001",
-        "A-DATA-001",
-        "A-C-PARK-001",
-        "A-EMERGENCY-001",
-        "A-PARK-MANAGER-001"
+        "A-BOUNDARY-001"
       ],
       "self_check_ids": [
-        "BOUNDARY_TRUST",
-        "KEY_AREAS_TRUST",
-        "LAND_USE_TOPOLOGY",
-        "VISUAL_STATIC",
-        "GEOMETRY_TRUST",
-        "NO_FAKE_PERFORMANCE"
+        "NO_FAKE_PERFORMANCE",
+        "CONSTRAINT_BLOCKERS"
       ],
-      "evidence_summary_zh": "此深度项以三层—三区因果链、源—路径—接收者断面合同、被动形态、九GeoJSON、可复算概念指标、B1与AI消融、责任/维护/成本桶/退出资产表达；无官方或现场证据的法定、现状与实施结论明确降级为UNKNOWN。"
+      "evidence_summary_zh": "FAR、高度、密度和现状建筑均UNKNOWN；概念界面footprint不能替代控规或测绘。"
     },
     {
       "item_id": "height_massing_character",
       "title_zh": "建筑高度、体量与风貌控制",
       "professional_dimension": "建筑",
       "required": true,
-      "status": "complete",
+      "status": "data_gap",
       "proposal_sections": [
-        "三层范围工作框架",
-        "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计",
-        "风险、版权与合规说明"
+        "用地、建筑规模与拆改留方案",
+        "重点区域详细设计"
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "geometry_refs": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
-        "geometry/land_use.geojson",
         "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
-        "geometry/constraints.geojson",
-        "geometry/phasing.geojson"
+        "geometry/key_areas.geojson",
+        "geometry/constraints.geojson"
       ],
       "metric_refs": [
-        "site_area_sqm",
         "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "key_area_count"
+        "floor_area_ratio"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
         "OFFICIAL-ANNOUNCEMENT",
-        "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE",
-        "MEE-GB3095-2026",
-        "MEE-GB3096-2008",
-        "MEE-HJ24-2021",
-        "CMA-GBT37529-2019",
-        "MOHURD-GB55016-2021",
-        "BARRIER-FREE-ENVIRONMENT-LAW",
-        "BEIJING-EMERGENCY-JZ-C-2025",
-        "BEIJING-JZ-PARK-OPEN-2023",
-        "HAIDIAN-GOV-REPORT-2026",
-        "BEIJING-PARK-DIRECTORY-2025"
+        "MOHURD-GB55016-2021"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001",
-        "A-BOUNDARY-001",
-        "A-DAZHONGSI-ANCHOR-001",
-        "A-SOURCE-001",
-        "A-BASELINE-001",
-        "A-OWNERSHIP-001",
-        "A-PILOT-001",
-        "A-ABLATED-AI-001",
-        "A-PERFORMANCE-001",
-        "A-COST-001",
-        "A-MAINTENANCE-001",
-        "A-DATA-001",
-        "A-C-PARK-001",
-        "A-EMERGENCY-001",
-        "A-PARK-MANAGER-001"
+        "A-CONTROLS-001"
       ],
       "self_check_ids": [
-        "BOUNDARY_TRUST",
-        "KEY_AREAS_TRUST",
-        "LAND_USE_TOPOLOGY",
-        "VISUAL_STATIC",
         "GEOMETRY_TRUST",
         "NO_FAKE_PERFORMANCE"
       ],
-      "evidence_summary_zh": "此深度项以三层—三区因果链、源—路径—接收者断面合同、被动形态、九GeoJSON、可复算概念指标、B1与AI消融、责任/维护/成本桶/退出资产表达；无官方或现场证据的法定、现状与实施结论明确降级为UNKNOWN。"
+      "evidence_summary_zh": "只表达源/接收界面与前台/后台分层；高度、体量、材料和风貌控制待canonical base与专业深化。"
     },
     {
       "item_id": "retain_renovate_demolish",
       "title_zh": "建筑拆改留分类",
       "professional_dimension": "建筑",
       "required": true,
-      "status": "complete",
+      "status": "data_gap",
       "proposal_sections": [
-        "三层范围工作框架",
-        "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计",
-        "风险、版权与合规说明"
+        "用地、建筑规模与拆改留方案"
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "geometry_refs": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
-        "geometry/land_use.geojson",
         "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
-        "geometry/constraints.geojson",
-        "geometry/phasing.geojson"
+        "geometry/constraints.geojson"
       ],
       "metric_refs": [
-        "site_area_sqm",
-        "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "key_area_count"
+        "building_footprint_area_sqm"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
         "OFFICIAL-ANNOUNCEMENT",
-        "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE",
-        "MEE-GB3095-2026",
-        "MEE-GB3096-2008",
-        "MEE-HJ24-2021",
-        "CMA-GBT37529-2019",
-        "MOHURD-GB55016-2021",
-        "BARRIER-FREE-ENVIRONMENT-LAW",
-        "BEIJING-EMERGENCY-JZ-C-2025",
-        "BEIJING-JZ-PARK-OPEN-2023",
-        "HAIDIAN-GOV-REPORT-2026",
-        "BEIJING-PARK-DIRECTORY-2025"
+        "CASE-ES-FOOD-LAB",
+        "CASE-US-CMU-MILL19-HISTORY"
       ],
       "assumption_ids": [
         "A-CONTROLS-001",
-        "A-BOUNDARY-001",
-        "A-DAZHONGSI-ANCHOR-001",
-        "A-SOURCE-001",
-        "A-BASELINE-001",
-        "A-OWNERSHIP-001",
-        "A-PILOT-001",
-        "A-ABLATED-AI-001",
-        "A-PERFORMANCE-001",
-        "A-COST-001",
-        "A-MAINTENANCE-001",
-        "A-DATA-001",
-        "A-C-PARK-001",
-        "A-EMERGENCY-001",
-        "A-PARK-MANAGER-001"
+        "A-GLOBAL-CASES-001"
       ],
       "self_check_ids": [
-        "BOUNDARY_TRUST",
-        "KEY_AREAS_TRUST",
-        "LAND_USE_TOPOLOGY",
-        "VISUAL_STATIC",
         "GEOMETRY_TRUST",
-        "NO_FAKE_PERFORMANCE"
+        "CONSTRAINT_BLOCKERS"
       ],
-      "evidence_summary_zh": "此深度项以三层—三区因果链、源—路径—接收者断面合同、被动形态、九GeoJSON、可复算概念指标、B1与AI消融、责任/维护/成本桶/退出资产表达；无官方或现场证据的法定、现状与实施结论明确降级为UNKNOWN。"
+      "evidence_summary_zh": "案例仅支持旧构筑物可逆再用机制；本地每栋拆改留仍需测绘、权属、结构、消防、机电和文保证据。"
     },
     {
       "item_id": "traffic_rail_slow_parking",
       "title_zh": "道路、轨道、慢行与停车组织",
       "professional_dimension": "交通",
       "required": true,
-      "status": "complete",
+      "status": "data_gap",
       "proposal_sections": [
-        "三层范围工作框架",
-        "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计",
-        "风险、版权与合规说明"
+        "交通、轨道、市政与公共服务设施",
+        "设计依据与资料清单"
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "geometry_refs": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
-        "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
+        "data/osm_corridor_context.geojson",
         "geometry/roads.geojson",
-        "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
-        "geometry/constraints.geojson",
-        "geometry/phasing.geojson"
+        "geometry/constraints.geojson"
       ],
       "metric_refs": [
-        "site_area_sqm",
-        "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "key_area_count"
+        "osm_context_railway_feature_count",
+        "osm_context_road_feature_count",
+        "osm_context_station_feature_count"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
-        "OFFICIAL-ANNOUNCEMENT",
-        "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE",
-        "MEE-GB3095-2026",
-        "MEE-GB3096-2008",
-        "MEE-HJ24-2021",
-        "CMA-GBT37529-2019",
-        "MOHURD-GB55016-2021",
-        "BARRIER-FREE-ENVIRONMENT-LAW",
-        "BEIJING-EMERGENCY-JZ-C-2025",
-        "BEIJING-JZ-PARK-OPEN-2023",
-        "HAIDIAN-GOV-REPORT-2026",
-        "BEIJING-PARK-DIRECTORY-2025"
+        "OSM-CORRIDOR-CONTEXT-2026",
+        "BEIJING-JZ-PARK-OPEN-2023"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001",
-        "A-BOUNDARY-001",
-        "A-DAZHONGSI-ANCHOR-001",
-        "A-SOURCE-001",
-        "A-BASELINE-001",
-        "A-OWNERSHIP-001",
-        "A-PILOT-001",
-        "A-ABLATED-AI-001",
-        "A-PERFORMANCE-001",
-        "A-COST-001",
-        "A-MAINTENANCE-001",
-        "A-DATA-001",
-        "A-C-PARK-001",
-        "A-EMERGENCY-001",
-        "A-PARK-MANAGER-001"
+        "A-OSM-CONTEXT-001",
+        "A-CONTROLS-001"
       ],
       "self_check_ids": [
-        "BOUNDARY_TRUST",
-        "KEY_AREAS_TRUST",
-        "LAND_USE_TOPOLOGY",
-        "VISUAL_STATIC",
-        "GEOMETRY_TRUST",
-        "NO_FAKE_PERFORMANCE"
+        "OSM_CONTEXT_BOUNDARY",
+        "GEOMETRY_TRUST"
       ],
-      "evidence_summary_zh": "此深度项以三层—三区因果链、源—路径—接收者断面合同、被动形态、九GeoJSON、可复算概念指标、B1与AI消融、责任/维护/成本桶/退出资产表达；无官方或现场证据的法定、现状与实施结论明确降级为UNKNOWN。"
+      "evidence_summary_zh": "OSM交通/轨道/站点计数是背景库存，概念transect不是路线；无current survey、站口、坡度、路权、无障碍或停车组织结论。"
     },
     {
       "item_id": "municipal_new_infrastructure",
       "title_zh": "市政与新型基础设施策略",
       "professional_dimension": "市政",
       "required": true,
-      "status": "complete",
+      "status": "data_gap",
       "proposal_sections": [
-        "三层范围工作框架",
-        "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计",
-        "风险、版权与合规说明"
+        "交通、轨道、市政与公共服务设施",
+        "统筹研究范围产业与未来城市研究"
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "geometry_refs": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
-        "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
-        "geometry/constraints.geojson",
-        "geometry/phasing.geojson"
+        "geometry/constraints.geojson"
       ],
       "metric_refs": [
-        "site_area_sqm",
-        "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "key_area_count"
+        "ecosystem_element_count",
+        "ai_net_value"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
-        "OFFICIAL-ANNOUNCEMENT",
-        "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE",
-        "MEE-GB3095-2026",
-        "MEE-GB3096-2008",
-        "MEE-HJ24-2021",
-        "CMA-GBT37529-2019",
-        "MOHURD-GB55016-2021",
-        "BARRIER-FREE-ENVIRONMENT-LAW",
-        "BEIJING-EMERGENCY-JZ-C-2025",
-        "BEIJING-JZ-PARK-OPEN-2023",
-        "HAIDIAN-GOV-REPORT-2026",
-        "BEIJING-PARK-DIRECTORY-2025"
+        "CASE-FR-IDRIS-ALLOCATIONS",
+        "CASE-FR-GENCI-JEAN-ZAY",
+        "CASE-NL-GOV-BEETHOVEN"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001",
-        "A-BOUNDARY-001",
-        "A-DAZHONGSI-ANCHOR-001",
-        "A-SOURCE-001",
-        "A-BASELINE-001",
-        "A-OWNERSHIP-001",
-        "A-PILOT-001",
-        "A-ABLATED-AI-001",
-        "A-PERFORMANCE-001",
-        "A-COST-001",
-        "A-MAINTENANCE-001",
-        "A-DATA-001",
-        "A-C-PARK-001",
-        "A-EMERGENCY-001",
-        "A-PARK-MANAGER-001"
+        "A-GLOBAL-CASES-001",
+        "A-CONTROLS-001"
       ],
       "self_check_ids": [
-        "BOUNDARY_TRUST",
-        "KEY_AREAS_TRUST",
-        "LAND_USE_TOPOLOGY",
-        "VISUAL_STATIC",
-        "GEOMETRY_TRUST",
-        "NO_FAKE_PERFORMANCE"
+        "AGENT2_ECOSYSTEM",
+        "CONSTRAINT_BLOCKERS"
       ],
-      "evidence_summary_zh": "此深度项以三层—三区因果链、源—路径—接收者断面合同、被动形态、九GeoJSON、可复算概念指标、B1与AI消融、责任/维护/成本桶/退出资产表达；无官方或现场证据的法定、现状与实施结论明确降级为UNKNOWN。"
+      "evidence_summary_zh": "算力采用申请/配给/能耗/来源/删除审计，且原则上位于受控后台；本地容量、电网、热网、市政和协议均UNKNOWN。"
     },
     {
       "item_id": "blue_green_public_space",
       "title_zh": "蓝绿系统与公共空间",
       "professional_dimension": "景观",
       "required": true,
-      "status": "complete",
+      "status": "data_gap",
       "proposal_sections": [
-        "三层范围工作框架",
-        "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计",
-        "风险、版权与合规说明"
+        "蓝绿空间、公共空间与城市风貌",
+        "总体设计范围城市更新与控规深度城市设计"
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "geometry_refs": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
-        "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
-        "geometry/roads.geojson",
         "geometry/green_space.geojson",
         "geometry/public_space.geojson",
-        "geometry/constraints.geojson",
-        "geometry/phasing.geojson"
+        "geometry/constraints.geojson"
       ],
       "metric_refs": [
-        "site_area_sqm",
-        "building_footprint_area_sqm",
         "green_ratio",
         "public_space_ratio",
-        "key_area_count"
+        "passive_service_required_ratio"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
-        "OFFICIAL-ANNOUNCEMENT",
-        "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE",
-        "MEE-GB3095-2026",
-        "MEE-GB3096-2008",
-        "MEE-HJ24-2021",
         "CMA-GBT37529-2019",
-        "MOHURD-GB55016-2021",
-        "BARRIER-FREE-ENVIRONMENT-LAW",
-        "BEIJING-EMERGENCY-JZ-C-2025",
-        "BEIJING-JZ-PARK-OPEN-2023",
-        "HAIDIAN-GOV-REPORT-2026",
-        "BEIJING-PARK-DIRECTORY-2025"
+        "CMA-QXT437-2018",
+        "BARRIER-FREE-ENVIRONMENT-LAW"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001",
-        "A-BOUNDARY-001",
-        "A-DAZHONGSI-ANCHOR-001",
-        "A-SOURCE-001",
-        "A-BASELINE-001",
-        "A-OWNERSHIP-001",
-        "A-PILOT-001",
-        "A-ABLATED-AI-001",
         "A-PERFORMANCE-001",
-        "A-COST-001",
-        "A-MAINTENANCE-001",
-        "A-DATA-001",
-        "A-C-PARK-001",
-        "A-EMERGENCY-001",
-        "A-PARK-MANAGER-001"
+        "A-CONTROLS-001"
       ],
       "self_check_ids": [
-        "BOUNDARY_TRUST",
-        "KEY_AREAS_TRUST",
-        "LAND_USE_TOPOLOGY",
-        "VISUAL_STATIC",
         "GEOMETRY_TRUST",
         "NO_FAKE_PERFORMANCE"
       ],
-      "evidence_summary_zh": "此深度项以三层—三区因果链、源—路径—接收者断面合同、被动形态、九GeoJSON、可复算概念指标、B1与AI消融、责任/维护/成本桶/退出资产表达；无官方或现场证据的法定、现状与实施结论明确降级为UNKNOWN。"
+      "evidence_summary_zh": "被动阴影、连续无障碍和静侧是设计义务；树冠、降温、雨洪、法定绿地和公共空间供给均未证实。"
     },
     {
       "item_id": "three_key_area_detailed_design",
       "title_zh": "三大重点片区详细设计",
       "professional_dimension": "城市设计",
       "required": true,
-      "status": "complete",
+      "status": "data_gap",
       "proposal_sections": [
-        "三层范围工作框架",
-        "总体设计范围城市更新与控规深度城市设计",
         "重点区域详细设计",
-        "风险、版权与合规说明"
+        "统筹研究范围产业与未来城市研究"
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "geometry_refs": [
-        "geometry/site_boundary.geojson",
         "geometry/key_areas.geojson",
-        "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
         "geometry/roads.geojson",
-        "geometry/green_space.geojson",
         "geometry/public_space.geojson",
-        "geometry/constraints.geojson",
-        "geometry/phasing.geojson"
+        "geometry/constraints.geojson"
       ],
       "metric_refs": [
-        "site_area_sqm",
-        "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "key_area_count"
+        "key_area_count",
+        "dazhongsi_geometry_anchor",
+        "ecosystem_element_count"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
-        "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
         "KEY-AREA-SOURCE",
-        "MEE-GB3095-2026",
-        "MEE-GB3096-2008",
-        "MEE-HJ24-2021",
-        "CMA-GBT37529-2019",
-        "MOHURD-GB55016-2021",
-        "BARRIER-FREE-ENVIRONMENT-LAW",
-        "BEIJING-EMERGENCY-JZ-C-2025",
-        "BEIJING-JZ-PARK-OPEN-2023",
-        "HAIDIAN-GOV-REPORT-2026",
-        "BEIJING-PARK-DIRECTORY-2025"
+        "CASE-SG-JTC-LAUNCHPAD-2026",
+        "CASE-FR-IDRIS-ALLOCATIONS",
+        "CASE-CA-VECTOR-ABOUT",
+        "CASE-NL-GOV-BEETHOVEN",
+        "CASE-US-CMU-RIC",
+        "CASE-ES-22AT-2008"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001",
         "A-BOUNDARY-001",
         "A-DAZHONGSI-ANCHOR-001",
-        "A-SOURCE-001",
-        "A-BASELINE-001",
-        "A-OWNERSHIP-001",
-        "A-PILOT-001",
-        "A-ABLATED-AI-001",
-        "A-PERFORMANCE-001",
-        "A-COST-001",
-        "A-MAINTENANCE-001",
-        "A-DATA-001",
-        "A-C-PARK-001",
-        "A-EMERGENCY-001",
-        "A-PARK-MANAGER-001"
+        "A-GLOBAL-CASES-001"
       ],
       "self_check_ids": [
-        "BOUNDARY_TRUST",
-        "KEY_AREAS_TRUST",
-        "LAND_USE_TOPOLOGY",
-        "VISUAL_STATIC",
-        "GEOMETRY_TRUST",
-        "NO_FAKE_PERFORMANCE"
+        "AGENT2_ECOSYSTEM",
+        "DAZHONGSI_ANCHOR",
+        "CONSTRAINT_BLOCKERS"
       ],
-      "evidence_summary_zh": "此深度项以三层—三区因果链、源—路径—接收者断面合同、被动形态、九GeoJSON、可复算概念指标、B1与AI消融、责任/维护/成本桶/退出资产表达；无官方或现场证据的法定、现状与实施结论明确降级为UNKNOWN。"
+      "evidence_summary_zh": "三区已分工为发明约束、翻译比较、采用退出并绑定不同空间后果；但真实总平/断面/尺寸和南部锚点缺失，不能称完成详细设计。"
     },
     {
       "item_id": "renewal_project_list",
       "title_zh": "更新项目清单",
       "professional_dimension": "实施",
       "required": true,
-      "status": "complete",
+      "status": "data_gap",
       "proposal_sections": [
-        "三层范围工作框架",
-        "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计",
-        "风险、版权与合规说明"
+        "更新项目清单、实施政策与分期计划"
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "geometry_refs": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
-        "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
-        "geometry/constraints.geojson",
-        "geometry/phasing.geojson"
+        "geometry/phasing.geojson",
+        "geometry/constraints.geojson"
       ],
       "metric_refs": [
-        "site_area_sqm",
-        "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "key_area_count"
+        "level_0_boq_work_package_count",
+        "unsigned_signable_raci_seat_count",
+        "authorized_real_pilot_site_count"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
-        "OFFICIAL-ANNOUNCEMENT",
-        "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE",
-        "MEE-GB3095-2026",
-        "MEE-GB3096-2008",
-        "MEE-HJ24-2021",
-        "CMA-GBT37529-2019",
-        "MOHURD-GB55016-2021",
-        "BARRIER-FREE-ENVIRONMENT-LAW",
+        "CONTROL-CONTRACT-V2",
         "BEIJING-EMERGENCY-JZ-C-2025",
-        "BEIJING-JZ-PARK-OPEN-2023",
-        "HAIDIAN-GOV-REPORT-2026",
         "BEIJING-PARK-DIRECTORY-2025"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001",
-        "A-BOUNDARY-001",
-        "A-DAZHONGSI-ANCHOR-001",
-        "A-SOURCE-001",
-        "A-BASELINE-001",
-        "A-OWNERSHIP-001",
-        "A-PILOT-001",
-        "A-ABLATED-AI-001",
-        "A-PERFORMANCE-001",
+        "A-CONTROL-CONTRACT-V2-001",
         "A-COST-001",
-        "A-MAINTENANCE-001",
-        "A-DATA-001",
-        "A-C-PARK-001",
-        "A-EMERGENCY-001",
-        "A-PARK-MANAGER-001"
+        "A-OWNERSHIP-001"
       ],
       "self_check_ids": [
-        "BOUNDARY_TRUST",
-        "KEY_AREAS_TRUST",
-        "LAND_USE_TOPOLOGY",
-        "VISUAL_STATIC",
-        "GEOMETRY_TRUST",
-        "NO_FAKE_PERFORMANCE"
+        "CONTROL_CONTRACT_V2",
+        "C_I_EVIDENCE"
       ],
-      "evidence_summary_zh": "此深度项以三层—三区因果链、源—路径—接收者断面合同、被动形态、九GeoJSON、可复算概念指标、B1与AI消融、责任/维护/成本桶/退出资产表达；无官方或现场证据的法定、现状与实施结论明确降级为UNKNOWN。"
+      "evidence_summary_zh": "WP00—09形成Level-0工作包，但工程量、报价、预算、保险、责任人和真实项目均UNKNOWN，不能支持采购或开工。"
     },
     {
       "item_id": "phasing_implementation",
       "title_zh": "分期实施计划",
       "professional_dimension": "实施",
       "required": true,
-      "status": "complete",
+      "status": "data_gap",
       "proposal_sections": [
-        "三层范围工作框架",
-        "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计",
-        "风险、版权与合规说明"
+        "更新项目清单、实施政策与分期计划"
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "geometry_refs": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
-        "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
-        "geometry/constraints.geojson",
-        "geometry/phasing.geojson"
+        "geometry/phasing.geojson",
+        "geometry/constraints.geojson"
       ],
       "metric_refs": [
-        "site_area_sqm",
-        "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "key_area_count"
+        "pilot_duration_days",
+        "negative_test_count",
+        "unsigned_signable_raci_seat_count",
+        "e4_implementation_evidence_count"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
-        "OFFICIAL-ANNOUNCEMENT",
-        "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE",
-        "MEE-GB3095-2026",
-        "MEE-GB3096-2008",
-        "MEE-HJ24-2021",
-        "CMA-GBT37529-2019",
-        "MOHURD-GB55016-2021",
-        "BARRIER-FREE-ENVIRONMENT-LAW",
-        "BEIJING-EMERGENCY-JZ-C-2025",
-        "BEIJING-JZ-PARK-OPEN-2023",
-        "HAIDIAN-GOV-REPORT-2026",
-        "BEIJING-PARK-DIRECTORY-2025"
+        "CONTROL-CONTRACT-V2",
+        "BEIJING-EMERGENCY-JZ-C-2025"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001",
-        "A-BOUNDARY-001",
-        "A-DAZHONGSI-ANCHOR-001",
-        "A-SOURCE-001",
-        "A-BASELINE-001",
-        "A-OWNERSHIP-001",
         "A-PILOT-001",
-        "A-ABLATED-AI-001",
-        "A-PERFORMANCE-001",
-        "A-COST-001",
-        "A-MAINTENANCE-001",
-        "A-DATA-001",
-        "A-C-PARK-001",
-        "A-EMERGENCY-001",
-        "A-PARK-MANAGER-001"
+        "A-CONTROL-CONTRACT-V2-001",
+        "A-EMERGENCY-001"
       ],
       "self_check_ids": [
-        "BOUNDARY_TRUST",
-        "KEY_AREAS_TRUST",
-        "LAND_USE_TOPOLOGY",
-        "VISUAL_STATIC",
-        "GEOMETRY_TRUST",
-        "NO_FAKE_PERFORMANCE"
+        "PILOT_KILL_GATES",
+        "CONTROL_CONTRACT_V2",
+        "C_I_EVIDENCE"
       ],
-      "evidence_summary_zh": "此深度项以三层—三区因果链、源—路径—接收者断面合同、被动形态、九GeoJSON、可复算概念指标、B1与AI消融、责任/维护/成本桶/退出资产表达；无官方或现场证据的法定、现状与实施结论明确降级为UNKNOWN。"
+      "evidence_summary_zh": "11个逐状态RACI转换、P0—P3 SLO、N1—N10与C段联锁完整但未签/未演练；90日不是通行证，C-I继续HOLD。"
     },
     {
       "item_id": "metrics_recalculation",
@@ -1048,78 +552,37 @@
       "required": true,
       "status": "complete",
       "proposal_sections": [
-        "三层范围工作框架",
-        "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计",
-        "风险、版权与合规说明"
+        "指标体系、面积复算与合规矩阵",
+        "设计依据与资料清单"
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "geometry_refs": [
+        "data/osm_corridor_context.geojson",
         "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
-        "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
-        "geometry/constraints.geojson",
-        "geometry/phasing.geojson"
+        "geometry/land_use.geojson"
       ],
       "metric_refs": [
         "site_area_sqm",
-        "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "key_area_count"
+        "land_use_partition_ratio",
+        "osm_context_feature_count",
+        "global_case_first_party_source_count"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
-        "OFFICIAL-ANNOUNCEMENT",
-        "AGENT-TASKBOOK",
         "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE",
-        "MEE-GB3095-2026",
-        "MEE-GB3096-2008",
-        "MEE-HJ24-2021",
-        "CMA-GBT37529-2019",
-        "MOHURD-GB55016-2021",
-        "BARRIER-FREE-ENVIRONMENT-LAW",
-        "BEIJING-EMERGENCY-JZ-C-2025",
-        "BEIJING-JZ-PARK-OPEN-2023",
-        "HAIDIAN-GOV-REPORT-2026",
-        "BEIJING-PARK-DIRECTORY-2025"
+        "OSM-CORRIDOR-CONTEXT-2026"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001",
         "A-BOUNDARY-001",
-        "A-DAZHONGSI-ANCHOR-001",
-        "A-SOURCE-001",
-        "A-BASELINE-001",
-        "A-OWNERSHIP-001",
-        "A-PILOT-001",
-        "A-ABLATED-AI-001",
-        "A-PERFORMANCE-001",
-        "A-COST-001",
-        "A-MAINTENANCE-001",
-        "A-DATA-001",
-        "A-C-PARK-001",
-        "A-EMERGENCY-001",
-        "A-PARK-MANAGER-001"
+        "A-OSM-CONTEXT-001"
       ],
       "self_check_ids": [
-        "BOUNDARY_TRUST",
-        "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
-        "VISUAL_STATIC",
-        "GEOMETRY_TRUST",
-        "NO_FAKE_PERFORMANCE"
+        "OSM_CONTEXT_BOUNDARY"
       ],
-      "evidence_summary_zh": "此深度项以三层—三区因果链、源—路径—接收者断面合同、被动形态、九GeoJSON、可复算概念指标、B1与AI消融、责任/维护/成本桶/退出资产表达；无官方或现场证据的法定、现状与实施结论明确降级为UNKNOWN。"
+      "evidence_summary_zh": "脚本复算临时几何拓扑并完整读取OSM快照类别计数；这些是包内内容指标，不是精确规划或现状指标。"
     },
     {
       "item_id": "risk_missing_data",
@@ -1128,78 +591,40 @@
       "required": true,
       "status": "complete",
       "proposal_sections": [
-        "三层范围工作框架",
-        "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计",
-        "风险、版权与合规说明"
+        "风险、版权与合规说明",
+        "更新项目清单、实施政策与分期计划"
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "geometry_refs": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
-        "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
         "geometry/constraints.geojson",
-        "geometry/phasing.geojson"
+        "geometry/key_areas.geojson"
       ],
       "metric_refs": [
-        "site_area_sqm",
-        "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "key_area_count"
+        "provisional_context_constraint_count",
+        "e3_site_evidence_count",
+        "e4_implementation_evidence_count",
+        "dazhongsi_geometry_anchor"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
-        "OFFICIAL-ANNOUNCEMENT",
-        "AGENT-TASKBOOK",
+        "CONTROL-CONTRACT-V2",
         "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE",
-        "MEE-GB3095-2026",
-        "MEE-GB3096-2008",
-        "MEE-HJ24-2021",
-        "CMA-GBT37529-2019",
-        "MOHURD-GB55016-2021",
-        "BARRIER-FREE-ENVIRONMENT-LAW",
-        "BEIJING-EMERGENCY-JZ-C-2025",
-        "BEIJING-JZ-PARK-OPEN-2023",
-        "HAIDIAN-GOV-REPORT-2026",
-        "BEIJING-PARK-DIRECTORY-2025"
+        "KEY-AREA-SOURCE"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001",
         "A-BOUNDARY-001",
         "A-DAZHONGSI-ANCHOR-001",
-        "A-SOURCE-001",
         "A-BASELINE-001",
-        "A-OWNERSHIP-001",
-        "A-PILOT-001",
-        "A-ABLATED-AI-001",
-        "A-PERFORMANCE-001",
-        "A-COST-001",
-        "A-MAINTENANCE-001",
-        "A-DATA-001",
-        "A-C-PARK-001",
-        "A-EMERGENCY-001",
-        "A-PARK-MANAGER-001"
+        "A-OWNERSHIP-001"
       ],
       "self_check_ids": [
-        "BOUNDARY_TRUST",
-        "KEY_AREAS_TRUST",
-        "LAND_USE_TOPOLOGY",
-        "VISUAL_STATIC",
-        "GEOMETRY_TRUST",
-        "NO_FAKE_PERFORMANCE"
+        "CONSTRAINT_BLOCKERS",
+        "NO_FAKE_PERFORMANCE",
+        "C_I_EVIDENCE"
       ],
-      "evidence_summary_zh": "此深度项以三层—三区因果链、源—路径—接收者断面合同、被动形态、九GeoJSON、可复算概念指标、B1与AI消融、责任/维护/成本桶/退出资产表达；无官方或现场证据的法定、现状与实施结论明确降级为UNKNOWN。"
+      "evidence_summary_zh": "canonical base缺失、大钟寺未锚定和E3/E4为零分别结构化，且所有UNKNOWN均阻断而非用正文补造。"
     }
   ]
 }

@@ -316,6 +316,285 @@
         "A-DAZHONGSI-ANCHOR-001"
       ],
       "reason": "PROV-KEY-003 remains unanchored."
+    },
+    "global_case_study_count": {
+      "status": "known",
+      "value": 6,
+      "unit": "count",
+      "source_files": [
+        "simulation.json",
+        "sources.json",
+        "proposal.md",
+        "proposal.en.md"
+      ],
+      "formula": "count(design_evidence.global_case_studies)",
+      "confidence": "high",
+      "assumptions": [
+        "A-GLOBAL-CASES-001"
+      ],
+      "reason": "Six mechanism case studies, not brands or transferable outcome benchmarks."
+    },
+    "global_case_first_party_source_count": {
+      "status": "known",
+      "value": 30,
+      "unit": "count",
+      "source_files": [
+        "sources.json"
+      ],
+      "formula": "count(sources where id in GLOBAL_CASE_SOURCE_IDS)",
+      "confidence": "high",
+      "assumptions": [
+        "A-GLOBAL-CASES-001"
+      ]
+    },
+    "nearest_neighbor_difference_count": {
+      "status": "known",
+      "value": 7,
+      "unit": "count",
+      "source_files": [
+        "simulation.json",
+        "sources.json",
+        "proposal.md",
+        "proposal.en.md"
+      ],
+      "formula": "count(design_evidence.nearest_neighbor_difference)",
+      "confidence": "high",
+      "assumptions": [
+        "A-ABLATED-AI-001"
+      ],
+      "reason": "Seven designated full-text neighbours only; each records claim, mechanism, spatial consequence, evidence and exit differences."
+    },
+    "ecosystem_element_count": {
+      "status": "known",
+      "value": 8,
+      "unit": "count",
+      "source_files": [
+        "simulation.json",
+        "proposal.md",
+        "proposal.en.md"
+      ],
+      "formula": "count(design_evidence.ecosystem_map.elements)",
+      "confidence": "high",
+      "assumptions": [
+        "A-GLOBAL-CASES-001"
+      ],
+      "reason": "Land, space, industry, finance, talent, compute, data and scenario are contract fields, not measured ecosystem performance."
+    },
+    "provisional_context_constraint_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "geometry/constraints.geojson"
+      ],
+      "formula": "count(provisional_context_constraints)",
+      "confidence": "high",
+      "assumptions": [
+        "A-BOUNDARY-001",
+        "A-DAZHONGSI-ANCHOR-001",
+        "A-BASELINE-001"
+      ],
+      "reason": "Three explicit non-engineering-release blockers; none is a real Section-C boundary."
+    },
+    "raci_seat_count": {
+      "status": "known",
+      "value": 12,
+      "unit": "count",
+      "source_files": [
+        "simulation.json",
+        "proposal.md",
+        "proposal.en.md"
+      ],
+      "formula": "count(design_evidence.governance_control_contract.raci_seats)",
+      "confidence": "high",
+      "assumptions": [
+        "A-CONTROL-CONTRACT-V2-001"
+      ],
+      "reason": "Seat definitions only; they are not appointments."
+    },
+    "unsigned_signable_raci_seat_count": {
+      "status": "known",
+      "value": 11,
+      "unit": "count",
+      "source_files": [
+        "simulation.json",
+        "proposal.md",
+        "proposal.en.md"
+      ],
+      "formula": "count(signable RACI seats where signature_status=UNSIGNED)",
+      "confidence": "high",
+      "assumptions": [
+        "A-CONTROL-CONTRACT-V2-001"
+      ],
+      "reason": "All signable primary and alternate fields remain UNKNOWN; I-PUB is a channel, not a signable seat."
+    },
+    "negative_test_count": {
+      "status": "known",
+      "value": 10,
+      "unit": "count",
+      "source_files": [
+        "simulation.json",
+        "proposal.md",
+        "proposal.en.md"
+      ],
+      "formula": "count(design_evidence.governance_control_contract.negative_tests)",
+      "confidence": "high",
+      "assumptions": [
+        "A-CONTROL-CONTRACT-V2-001"
+      ],
+      "reason": "N1–N10 are required tests, not completed results."
+    },
+    "level_0_boq_work_package_count": {
+      "status": "known",
+      "value": 10,
+      "unit": "count",
+      "source_files": [
+        "simulation.json",
+        "proposal.md",
+        "proposal.en.md"
+      ],
+      "formula": "count(design_evidence.governance_control_contract.level_0_boq)",
+      "confidence": "high",
+      "assumptions": [
+        "A-COST-001",
+        "A-CONTROL-CONTRACT-V2-001"
+      ],
+      "reason": "WP00–WP09 are quantity/cost placeholders; every q and p remains UNKNOWN."
+    },
+    "osm_context_feature_count": {
+      "status": "known",
+      "value": 3653,
+      "unit": "count",
+      "source_files": [
+        "data/osm_corridor_context.geojson",
+        "data/osm_corridor_context.provenance.json"
+      ],
+      "formula": "len(complete attributed OSM context snapshot features)",
+      "confidence": "high",
+      "assumptions": [
+        "A-OSM-CONTEXT-001"
+      ],
+      "reason": "Package-content count only; not current-condition completeness or engineering evidence."
+    },
+    "osm_context_railway_feature_count": {
+      "status": "known",
+      "value": 283,
+      "unit": "count",
+      "source_files": [
+        "data/osm_corridor_context.geojson",
+        "data/osm_corridor_context.provenance.json"
+      ],
+      "formula": "count(OSM snapshot features where context_class=railway)",
+      "confidence": "high",
+      "assumptions": [
+        "A-OSM-CONTEXT-001"
+      ],
+      "reason": "Attributed snapshot inventory only; no surveyed state, legal status, source role or authorisation is inferred."
+    },
+    "osm_context_road_feature_count": {
+      "status": "known",
+      "value": 1065,
+      "unit": "count",
+      "source_files": [
+        "data/osm_corridor_context.geojson",
+        "data/osm_corridor_context.provenance.json"
+      ],
+      "formula": "count(OSM snapshot features where context_class=road)",
+      "confidence": "high",
+      "assumptions": [
+        "A-OSM-CONTEXT-001"
+      ],
+      "reason": "Attributed snapshot inventory only; no surveyed state, legal status, source role or authorisation is inferred."
+    },
+    "osm_context_named_context_feature_count": {
+      "status": "known",
+      "value": 55,
+      "unit": "count",
+      "source_files": [
+        "data/osm_corridor_context.geojson",
+        "data/osm_corridor_context.provenance.json"
+      ],
+      "formula": "count(OSM snapshot features where context_class=named_context)",
+      "confidence": "high",
+      "assumptions": [
+        "A-OSM-CONTEXT-001"
+      ],
+      "reason": "Attributed snapshot inventory only; no surveyed state, legal status, source role or authorisation is inferred."
+    },
+    "osm_context_station_feature_count": {
+      "status": "known",
+      "value": 24,
+      "unit": "count",
+      "source_files": [
+        "data/osm_corridor_context.geojson",
+        "data/osm_corridor_context.provenance.json"
+      ],
+      "formula": "count(OSM snapshot features where context_class=station)",
+      "confidence": "high",
+      "assumptions": [
+        "A-OSM-CONTEXT-001"
+      ],
+      "reason": "Attributed snapshot inventory only; no surveyed state, legal status, source role or authorisation is inferred."
+    },
+    "osm_context_water_feature_count": {
+      "status": "known",
+      "value": 96,
+      "unit": "count",
+      "source_files": [
+        "data/osm_corridor_context.geojson",
+        "data/osm_corridor_context.provenance.json"
+      ],
+      "formula": "count(OSM snapshot features where context_class=water)",
+      "confidence": "high",
+      "assumptions": [
+        "A-OSM-CONTEXT-001"
+      ],
+      "reason": "Attributed snapshot inventory only; no surveyed state, legal status, source role or authorisation is inferred."
+    },
+    "osm_context_park_feature_count": {
+      "status": "known",
+      "value": 147,
+      "unit": "count",
+      "source_files": [
+        "data/osm_corridor_context.geojson",
+        "data/osm_corridor_context.provenance.json"
+      ],
+      "formula": "count(OSM snapshot features where context_class=park)",
+      "confidence": "high",
+      "assumptions": [
+        "A-OSM-CONTEXT-001"
+      ],
+      "reason": "Attributed snapshot inventory only; no surveyed state, legal status, source role or authorisation is inferred."
+    },
+    "osm_context_building_feature_count": {
+      "status": "known",
+      "value": 1911,
+      "unit": "count",
+      "source_files": [
+        "data/osm_corridor_context.geojson",
+        "data/osm_corridor_context.provenance.json"
+      ],
+      "formula": "count(OSM snapshot features where context_class=building)",
+      "confidence": "high",
+      "assumptions": [
+        "A-OSM-CONTEXT-001"
+      ],
+      "reason": "Attributed snapshot inventory only; no surveyed state, legal status, source role or authorisation is inferred."
+    },
+    "osm_context_landuse_feature_count": {
+      "status": "known",
+      "value": 72,
+      "unit": "count",
+      "source_files": [
+        "data/osm_corridor_context.geojson",
+        "data/osm_corridor_context.provenance.json"
+      ],
+      "formula": "count(OSM snapshot features where context_class=landuse)",
+      "confidence": "high",
+      "assumptions": [
+        "A-OSM-CONTEXT-001"
+      ],
+      "reason": "Attributed snapshot inventory only; no surveyed state, legal status, source role or authorisation is inferred."
     }
   }
 }

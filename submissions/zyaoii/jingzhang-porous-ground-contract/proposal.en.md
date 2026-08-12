@@ -29,6 +29,8 @@ Urban design, regulatory-plan boundaries and land classification are controlled 
 
 Air, climate and noise sources define professional method boundaries; they prove no local condition or effect. Acoustics uses source-path-receiver logic, while real wind, heat, air and sound variables require an authorised transect and qualified professionals.[source:MEE-GB3095-2026] [source:MEE-GB3096-2008] [source:MEE-HJ24-2021]
 
+The package also registers a public ODbL OSM background snapshot with `3,653` features: railway 283, road 1,065, named context 55, station 24, water 96, park 147, building 1,911 and land use 72. It supports orientation and section indexing only. It is **not** a current survey, official/canonical boundary, title record, accessible route, fire condition, sound/heat/emission source inventory, operating fact or authority; every feature still requires verification before professional use.[source:OSM-CORRIDOR-CONTEXT-2026] [metric:osm_context_feature_count]
+
 ## Three-Level Scope Framework
 
 | Level | Irreplaceable question | Delivery | Forbidden inference |
@@ -46,6 +48,48 @@ The levels are not scale copies. The coordinated level governs method and transf
 “Full-stack AI” is a design-production chain in which AI can be removed. B0 is a read-only authorised baseline. B1 is the manual rule solution by planning, architecture, landscape, environment, acoustics, fire and accessibility professionals. P converts opening position, offset, buffer depth, shade continuity, receiver surface and maintenance access into drawable parameters. A searches Pareto alternatives only on frozen inputs and held-out scenarios. If AI cannot stably and explainably find an alternative not dominated by B1, AI is deleted while the B1 public service remains.[source:LADYBUG-TOOLS-METHOD] [source:OPENFOAM-METHOD] [source:NOISEMODELLING-METHOD]
 
 The Zhongguancun Technology Service Wing exchanges versioned rules, tool manifests, professional methods and failure/replay assets. The Xiaoyue River Scenario Empowerment Wing exchanges only authorised, de-identified scenario methods and ordinary-maintenance lessons. Every transfer repeats B1, provenance, authority and no-harm review; geometry, thresholds and effects never transfer automatically.[source:AGENT-TASKBOOK] [depth:existing_conditions_diagnosis]
+
+### agent.2: Six Mechanism Cases, Not a Brand Ranking
+
+| Case | Verifiable mechanism | Do not copy | Spatial consequence for Jing-Zhang |
+| --- | --- | --- | --- |
+| one-north / LaunchPad | Public master development, modular space, ground-floor showcase, organised testbed and one-stop service | JTC land/master-developer powers, estate scale and future projects; the Punggol platform is not at one-north | Divide the ground floor into time-limited modules, an evidence window and controlled test space; separately clear egress/access/sound/heat/restoration [source:CASE-SG-JTC-LAUNCHPAD-2026] |
+| Paris-Saclay / DATAIA / Jean Zay | Public development, research/education network and application-based compute/data allocation | National research system, supercomputer scale, France 2030 and heat network | Keep compute backstage/off-site; the ground floor shows request-allocation-energy/provenance-result-delete/archive only [source:CASE-FR-IDRIS-ALLOCATIONS] [source:CASE-FR-GENCI-JEAN-ZAY] |
+| MaRS / Vector | Heritage building and common atrium beside wet/dry labs, restricted research and talent/adoption service | Co-location and self-reported scale do not prove spillover; labs cannot become boundaryless | Draw public frontstage—observable boundary—authorised backstage with distinct access, air, data and closure controls [source:CASE-CA-MARS-CENTRE] [source:CASE-CA-VECTOR-ABOUT] |
+| Brainport / HTCE | Annual triple-helix agenda, shared lab/cleanroom/pilot-production facilities and space-talent linkage | National funding, anchor firms and supply chain; official sources acknowledge housing/transport/energy pressure | Wing services use booking, qualification, maintenance and exit fields; tests also record housing/commute/grid/logistics/public-path burdens [source:CASE-NL-BRAINPORT-AGENDA] [source:CASE-NL-GOV-BEETHOVEN] |
+| Hazelwood Green / CMU | Brownfield regeneration, reconfigurable indoor/outdoor test ground, limited public commons and community-benefit goals | Community goals do not prove delivered benefit; foundation/university/federal funding does not transfer | First separate public route, controlled test field, emergency stop zone and PARK/restoration location; the public route is not a machine buffer [source:CASE-US-CMU-RIC] [source:CASE-US-HG-NEIGHBORHOOD-PLAN] |
+| Barcelona 22@ | Long industrial-land transition, infrastructure burdens, factory reuse and later inclusion correction | No proven equivalent Jing-Zhang rezoning/value-capture power; 22@ is not an AI-stack performance template | Obligations follow each time-limited opening right: no release without public path, quiet side, maintenance, data, safety and restoration [source:CASE-ES-BCN-IMU-2024] [source:CASE-ES-22AT-2008] |
+
+The cases prove only that the relevant first-party institutions publicly describe these mechanisms. They do not prove causal success or generate Jing-Zhang firms, funding, compute, policy or targets. Thirty first-party records include publisher/title/URL/date/use/limits/licence. Except the explicitly CC BY 4.0 2008 22@ record, they are factually paraphrased without copied figures.[metric:global_case_study_count] [metric:global_case_first_party_source_count]
+
+### Seven Designated Neighbours: Five-Field Non-Substitutability
+
+| Neighbour | Claim difference | Mechanism difference | Spatial-consequence difference | Evidence difference | Exit difference |
+| --- | --- | --- | --- | --- | --- |
+| THE BREATHING LINE | No broad breathing/climate corridor; only “exchange opening must not directly transmit noise” | Per-opening source-path-receiver plus six vetoes, not spine/courts/gaps+sensing | Every opening draws source, bend, human receiver and zero-power state | Authorised matched B0/B1 multi-physics transect, not sensing calibration alone | Beyond AI-off: failed opening SX→remove/delete→S10 [source:PEER-THE-BREATHING-LINE] |
+| Urban-Form-First V6 | Form-first/open ground is not the distinction; the three-physics conflict is | AI only searches frozen P and is deleted if not better than B1; no algorithmic line/surface/phasing authority | Offset backstage—evidence boundary—frontstage plus quiet side | Six hard gates+B1/A equal-budget ablation, not aggregate value passport | Delete A→B1/CLEAR; Day 90 needs S10 or new authority [source:PEER-URBAN-FORM-FIRST-V6] |
+| THE SEASON LINE | No seasonal/annual public-room promise | Fixed passive B1+per-use authority; no runtime seasonal switching | Shade/rain cover is a non-offsettable constraint, not branded node | Matched weather/source pairing; no annual extrapolation from 90 days | Without limited PASS, remove, restore and close data [source:PEER-THE-SEASON-LINE] |
+| SHADE THE CLOUD | No compute-for-coolth exchange; shade serves zero-power path/heat gate | Resource allocation/cost provenance+offset sound-heat section, not heat-budget commons | No spine/three cool islands; each opening clears sound/passage/emergency/maintenance | Heat, sound, air and energy ledgers cannot offset one another | Isolated reserve closes components, surface, data and acceptance [source:PEER-SHADE-THE-CLOUD] |
+| Smart Waiting | No smart waiting/dynamic comfort, only fixed passive minimum service | AI design-time only; humans/mechanics own opening, emergency and transition | Zero-power path+offset+quiet side+C-CLEAR, not six-state waiting gate | Test B1 zero-power, signed transitions and mechanical clear, not AI switch rate | Delete A→freeze P→B1→CLEAR/close→remove→RESTORED [source:PEER-SMART-WAITING] |
+| Sonic Commons | No sonic commons; sound only vetoes direct-noise openings | No machine listening; physical offset/source control/quiet side+paired measure | Sound changes opening position, bend and receiver, not a soundscape network | Sound joins heat/air/access/fire/maintenance hard gates | Complaint conflict stops first; instruments cannot dismiss it; remove/restore [source:PEER-SONIC-COMMONS] |
+| THE SECOND SURVEY | Sections/open ground/90 days are not unique; only multi-physics opening acceptance is | No aggregate worst-section siting; first authority/source-path-receiver, then gates/ablation | No general opening of low-score fronts; offset/shade/quiet/emergency-maintenance must all clear P | Freeze source/weather/error; one exceedance fails; AI must beat B1 held-out | Not reprioritisation only; no PASS or any harm gives SX→S10 [source:PEER-THE-SECOND-SURVEY] |
+
+The machine-readable authority is `simulation.json#design_evidence.nearest_neighbor_difference`; every row has `claim_difference / mechanism_difference / spatial_consequence_difference / evidence_difference / exit_difference`. It contains exactly these seven neighbours and no expanded set.[metric:nearest_neighbor_difference_count]
+
+### Eight-Element Ecosystem Map: Every Arrow Has a Gate
+
+| Element | Ground/corridor carrier | Exchange asset | Minimum responsibility and release gate | Current state |
+| --- | --- | --- | --- | --- |
+| Land | Former-rail corridor, station/under-bridge and provisional carriers | Authority boundary, no-touch list and term | A-OWN/R-PM; title, return, heritage/public passage | `UNKNOWN/HOLD` |
+| Space | Opening, shaded walk, court, quiet side and backstage | Source-path-receiver section, front/interface/backstage, zero-power state | A-DES/R-OPS plus fire/access/environment veto | `E0 only` |
+| Industry | North invention—central translation—south adoption/exit | Real problem, B1, prototype and adoption/exit condition | Named demand and a simpler non-AI baseline first | No firm commitment |
+| Finance | Service-wing audit desk and authorised work package | Purpose, Gate, ceiling, conflict and restoration reserve | A-OWN/I-AUD; failure, maintenance and restoration funded | `UNKNOWN/unfunded` |
+| Talent | Campus-park-community path and accountable duty shift | Qualification, hours, responsible role and scenario destination | Training converts to an authorised accountable role | `UNKNOWN` |
+| Compute | Controlled backstage/off-site node; audit window only at ground | Job ID, quota, versions, energy, result, delete/archive | R-DATA/I-AUD; need, provenance and disposition reviewable | No resource/agreement |
+| Data | Controlled capture, de-identified evidence window and registry | Purpose, minimum fields, access, retention and deletion proof | R-DATA; refusal, no prohibited personal data, verified deletion | No field authority |
+| Scenario | Authorised reversible test field and public experience path | Owner, time, safety radius, stop and restoration receipt | A-OWN/R-OPS; real demand, complaint and RESTORED | `E3=0/E4=0 NO-GO` |
+
+The production loop is land authority → controlled space → real industry problem → data contract → compute allocation → B1/prototype → authorised scenario → positive and negative evidence → human adoption/modification/exit. The public loop begins with everyday burden, passes through minimum data and a reversible mock-up, then returns complaints, maintenance and negative results to the human Gate. The north therefore **invents/contains**, the centre **translates/compares**, and the south **adopts/exits**. The Zhongguancun wing supplies IP/finance/talent/compute/professional review; the Xiaoyue River wing supplies authorised scenario/feedback/maintenance/negative evidence. Neither can release space.[metric:ecosystem_element_count]
 
 The identity is an offset bracket/turn, not a wind arrow, sensor or luminous green line. The international line—`OPEN THE GROUND, NOT A DIRECT NOISE PATH.`—turns AI governance into a visible promise of comparison, deletion and restoration.
 
@@ -135,6 +179,80 @@ Section C is therefore an evidence-segment candidate for requesting written auth
 | 71–84 | EVALUATING | Matched remeasurement, missingness, complaints and negative results | No causal claim |
 | 85–90 | PASS/REVISE/STOP → RESTORED | Named decision, removal/retention authority, asset destination and restoration | No pilot lock-in |
 
+### Unsigned State-by-State RACI and SLOs
+
+Everything below is a contract-admission target, **not an appointment, observed response performance or service commitment**. Excluding the public channel `I-PUB`, the primary and alternate for all 11 signable seats among the 12 seats are `UNKNOWN / UNSIGNED`. If both primary and alternate are vacant, the seat's fail-closed consequence applies. AI is not a RACI seat.[source:CONTROL-CONTRACT-V2] [metric:unsigned_signable_raci_seat_count]
+
+| Seat | Primary / alternate | Vacancy consequence |
+| --- | --- | --- |
+| A-OWN asset/site | `UNKNOWN / UNKNOWN` | No site action |
+| A-EMG emergency release | `UNKNOWN / UNKNOWN` | Section C permanently NO-GO |
+| A-DES design freeze | `UNKNOWN / UNKNOWN` | B0 only |
+| R-PM contract/state ledger | `UNKNOWN / UNKNOWN` | No state advance |
+| R-OPS open/stop/maintain | `UNKNOWN / UNKNOWN` | Closed or CLEAR |
+| R-MEAS measurement/error | `UNKNOWN / UNKNOWN` | No performance conclusion |
+| R-DATA minimise/delete | `UNKNOWN / UNKNOWN` | Stop collection and delete |
+| C-FIRE / C-ACC / C-ENV | all three `UNKNOWN / UNKNOWN` | Relevant hard gate cannot release |
+| I-AUD independent witness | `UNKNOWN / UNKNOWN` | C-I remains HOLD |
+| I-PUB accessible notice/appeal | public channel, not appointment | No PASS without an appeal loop |
+
+| Transition | A | R | Minimum gate; failure |
+| --- | --- | --- | --- |
+| S0→S1 | A-OWN | R-PM/R-DATA | E4 acquisition authority, signed RACI, privacy/complaint; otherwise S0 |
+| S1→S2 | A-DES | R-MEAS/R-DATA | E3 real transect, calibration/pairing/freeze; otherwise invalidate and return S1 |
+| S2→S3 | A-DES | R-PM | B1 drawings, six no-harm dimensions and maintenance/restoration; otherwise S2/STOP |
+| S3→S4 | A-DES | R-PM | P domain, constraint intersection and distinct sections; otherwise S3 |
+| S4→S5 | A-DES | R-PM/R-DATA | Held-out/perturbation/ablation versus B1; otherwise delete A and return S4/S3 |
+| S3/S4/S5→S6 | A-OWN | R-PM/R-OPS | E4 permission, insurance, BoQ/budget/reserve, duty/spares and C interlock; otherwise no installation |
+| S6→S7 | A-OWN | R-OPS | 100% daily pre-open and mechanical-clear check; otherwise closed |
+| S7→S8 | A-DES | R-PM/R-MEAS/R-DATA | Freeze data/complaints/negatives and stop tuning; otherwise REVISE/STOP |
+| S8→S9 | A-OWN | R-PM | All hard gates, preregistered benefit at MDE and independent review; otherwise REVISE/STOP |
+| Any→SX | A-OWN after event | first observer/R-OPS/R-PM | Any stop trigger; no prior approval; stay B1/CLEAR/closed |
+| SX→S10 | A-OWN | R-OPS/R-PM/R-DATA | E4 removal, restoration, independent acceptance and data deletion; otherwise closed |
+
+| Level | Immediate action | Primary acknowledgement target | Alternate/escalation target |
+| --- | --- | --- | --- |
+| P0 life safety/emergency/prohibited data/lost authority | Immediate STOP, CLEAR/close, stop collection | ≤5 min | Call alternate at 5 min; escalate A-OWN/A-EMG ≤15 min |
+| P1 no-harm exceedance/credible safety complaint | Return B1; close if B1 uncertain | ≤15 min while open | ≤30 min; on-site assessment ≤2 h |
+| P2 maintenance/drift/non-critical missingness | Suspend conclusion; use verified B1 | ≤4 operating h | Before next opening; signed MTTR governs repair |
+| P3 document/ordinary complaint | Log and acknowledge | ≤1 working day | Escalate ≤2 days; disposition/investigation note ≤5 days |
+
+No response only extends closure, and meeting a target never auto-clears risk. Duty, MTTR and drills are unsigned, so these SLOs are not feasibility or performance evidence.
+
+### N1–N10, Level-0 BoQ and Section-C Mechanical Interlock
+
+| Negative test | Injection | Required result |
+| --- | --- | --- |
+| N1 | No stable AI net value versus B1 | Delete A; return S4/S3 |
+| N2 | Instrument disconnect/drift/critical missingness | Suspend conclusion; B1 or close |
+| N3 | Any no-harm exceedance | SX, remove and restore |
+| N4 | Credible complaint conflicts with instrument | Stop first; investigate independently |
+| N5 | Primary absent and alternate does not take over | Do not open or SX |
+| N6 | Real Section-C activation/drill/false trigger | Force C-CLEAR |
+| N7 | Extreme weather/network/power failure | B1 persists or close |
+| N8 | Prohibited personal data appears | Stop, isolate, delete and escalate |
+| N9 | Component jam/no spare | Section C fails acceptance; elsewhere B1/close |
+| N10 | No PASS at Day 90/active exit | SX→S10 with removal, restoration and deletion |
+
+N1–N10 must be genuinely run and evidenced; listing them is not a passed result.[metric:negative_test_count]
+
+| WP | Level-0 scope | Unit variables | Current quantity/price |
+| --- | --- | --- | --- |
+| 00 | Authority, legal, insurance, notice/accessible channel | item, policy term, batch, labour-hour | `UNKNOWN / UNKNOWN` |
+| 01 | Real transect, title/emergency/fire/access/source-receiver survey | transect, point, m, sqm, person-day | `UNKNOWN / UNKNOWN` |
+| 02 | B0/B1 instruments, rental, calibration, co-location, QA | station-day, device, calibration, sample | `UNKNOWN / UNKNOWN` |
+| 03 | Multi-professional design and review | hour, drawing, review | `UNKNOWN / UNKNOWN` |
+| 04 | Reversible passive components and mechanical interlock | m, sqm, set, module, key-set | `UNKNOWN / UNKNOWN` |
+| 05 | Installation, protection, transport, safety and opening checks | hour, trip, shift, day | `UNKNOWN / UNKNOWN` |
+| 06 | Operations, cleaning, planting, inspection, spares, storage | shift, hour, item-month, sqm-visit | `UNKNOWN / UNKNOWN` |
+| 07 | Data, log, audit, complaint and negative test | hour, audit, drill | `UNKNOWN / UNKNOWN` |
+| 08 | Section-C remove-clear-accept-reset interlock/drills | key-set, component, drill, hour | `UNKNOWN / UNKNOWN` |
+| 09 | Removal, transport, disposal, restoration and acceptance | item, trip, sqm, hour, acceptance | `UNKNOWN / UNKNOWN` |
+
+The symbolic ceiling is `CAPEX_upper = CAPEX_direct,H × (1+c_CAPEX,E4)`. Annual OPEX is the high-scenario sum of frequency×quantity×unit price, labour, calibration, spares, storage, insurance and audit, multiplied by `(1+e_y,E4)`. The restoration reserve is the high-scenario sum of removal, transport, storage/disposal, site restoration, independent acceptance and data closeout, multiplied by `(1+c_restore,E4)`. S6 requires `CAPEX_upper≤B_CAPEX`, `OPEX_y,upper≤B_OPEX,y`, isolated `R_funded≥R_restore,upper`, and all E4 signatures. Any UNKNOWN blocks release; future sponsorship, residual value and AI prediction cannot offset the reserve.[metric:level_0_boq_work_package_count]
+
+Section C defaults to `C-CLEAR`, but the package has no real Section-C boundary, hardware or drill. The concept sequence is: `K_EMG` releases component removal keys → a module locked in approved out-of-clearance `PARK_i` releases `C_i` → all `C_i` release `KEY_CLEAR` and mechanically lock reinstall keys → only named A-EMG stand-down, fire/access/damage review and `KEY_STANDDOWN` reverse the sequence. Digital logs may mirror but never override mechanical fact. A module that cannot meet E4-signed `T_C-clear` is permanently excluded. Daylight, low light, absent primary/alternate takeover, power/comms loss, jam/lost key, false trigger, mobility-limited user and rejection of unauthorised reset all require independent witnessing; until then Section C is physically NO-GO.[source:CONTROL-CONTRACT-V2]
+
 AI never triggers a transition. Stops include obstruction, component risk, noise/wind/other harm, failed calibration/comparability, unauthorised data, absent duty holder, maintenance failure, unresolved complaint or scope overrun.[data:geometry/phasing.geojson#PHASE-PGC-03] [depth:phasing_implementation]
 
 Cost is not a fabricated total. It contains professional survey/protocol, instrument rental/co-location, reversible elements, installation/removal, daily maintenance, independent review, insurance/notice and restoration reserve. Comparable quotes or the applicable procurement basis follow an authorised scope before a monetary ceiling.[metric:pilot_cost_cny]
@@ -143,7 +261,7 @@ Exit assets include B1 rules, model/dependency manifest or deletion record, reje
 
 ## Metrics, Area Recalculation, and Compliance Matrix
 
-Known package facts are three taskbook names, 12 scenarios, six personas, three industry tests, three conceptual landmarks, a 90-day protocol, E3=0, E4=0 and the concept geometry’s own topology. Unknowns include real site, effect, AI net value, cost, FAR, current green/public space and the Dazhongsi anchor.[metric:e3_site_evidence_count] [metric:e4_implementation_evidence_count] [metric:ai_net_value]
+Known package facts are six mechanism cases/30 first-party sources, eight ecosystem elements, three taskbook names, 12 scenarios, six personas, three industry tests, three conceptual landmarks, 12 RACI seat definitions, N1–N10, WP00–09, a 90-day protocol, three provisional context constraints, 3,653 OSM snapshot features, E3=0, E4=0 and the concept geometry’s own topology. These are package-content facts, not ecosystem outcomes, appointments, performance or release. Unknowns include real site, effect, AI net value, cost, FAR, current green/public space and the Dazhongsi anchor.[metric:global_case_study_count] [metric:ecosystem_element_count] [metric:osm_context_feature_count] [metric:e3_site_evidence_count] [metric:e4_implementation_evidence_count] [metric:ai_net_value]
 
 EPSG:4548 areas only check internal consistency of the submitted provisional polygons. Sources, assumptions, nine GeoJSON layers, three matrices and self-check are authoritative; figures/HTML/generated illustration are explanatory.[metric:site_area_sqm] [depth:metrics_recalculation]
 
@@ -151,7 +269,7 @@ EPSG:4548 areas only check internal consistency of the submitted provisional pol
 
 ## Risk, Copyright, and Compliance
 
-The primary risks are treating provisional geometry as site fact, averages as no-harm, AI advice as approval, 90 days as annual proof, a reversible pilot as permanent occupation, or maintenance labour as invisible. Each requires downgrade, stop or restoration.[depth:risk_missing_data] [data:geometry/constraints.geojson#CONSTRAINTS]
+The primary risks are treating provisional geometry as site fact, averages as no-harm, AI advice as approval, 90 days as annual proof, a reversible pilot as permanent occupation, or maintenance labour as invisible. Three provisional/context features in `constraints.geojson` expose the missing canonical base, unanchored PROV-KEY-003 and absent E3/E4; they are non-engineering-release blockers, not a Section-C boundary. Each risk requires downgrade, stop or restoration.[depth:risk_missing_data] [data:geometry/constraints.geojson#CONSTRAINT-PGC-01] [data:geometry/constraints.geojson#CONSTRAINT-PGC-02] [data:geometry/constraints.geojson#CONSTRAINT-PGC-03]
 
 The minimum data model has no name, phone, account, face, image, health, precise individual location, employer identity or continuous trajectory. Public feedback is object-level and time-aggregated. A forbidden field triggers stop, deletion and accountable handling.[source:SOURCE-REGISTRY]
 
@@ -165,3 +283,5 @@ All spatial proposals are open co-creation concepts, reference schemes or materi
 - Air, noise, legal responsibility and acoustic-method boundaries.[source:MEE-GB3095-2026] [source:MEE-GB3096-2008] [source:MEE-NOISE-LAW-2021]
 - Climate/ventilation and building-environment deepening.[source:CMA-GBT37529-2019] [source:CMA-QXT437-2018] [source:MOHURD-GB55016-2021]
 - Open tools are method references only; no model/default/conclusion is transferred.[source:PYTHERMALCOMFORT-METHOD] [source:LADYBUG-TOOLS-METHOD] [source:NOISEMODELLING-METHOD]
+- The 30 first-party records for six cases are in `sources.json`; only mechanisms and failure boundaries transfer.[source:CASE-SG-JTC-LAUNCHPAD-2026] [source:CASE-FR-IDRIS-ALLOCATIONS] [source:CASE-CA-VECTOR-ABOUT] [source:CASE-NL-GOV-BEETHOVEN] [source:CASE-US-CMU-RIC] [source:CASE-ES-22AT-2008]
+- Public OSM background/provenance/ODbL limits and the unsigned E0 v2 control template.[source:OSM-CORRIDOR-CONTEXT-2026] [source:CONTROL-CONTRACT-V2]
