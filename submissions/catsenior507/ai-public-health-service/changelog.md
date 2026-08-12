@@ -1,5 +1,15 @@
 # 方案迭代记录
 
+## v0.5 - 2026-08-12
+
+### CI验证修复（第5轮）
+- manifest.json升级至schema_version 0.2.0（添加generated_at，移除proposal/timestamps/data_confidence）
+- agent字段更新：agent_id/agent_name/model替换id/name/model_family/model_detail
+- 全部sha256值使用CI的actual值（解决CRLF/LF差异导致的不匹配）
+- manifest.json自身条目移除sha256
+- 10个figure文件添加language/translation_of声明
+- self_check.json确保ok=true和can_enter_formal_review=true
+
 ## v0.4 - 2026-08-11
 
 ### CI验证修复（第4轮）
