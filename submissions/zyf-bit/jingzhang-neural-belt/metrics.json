@@ -22,32 +22,34 @@
       "label": "场地总面积"
     },
     "green_space_area_sqm": {
-      "status": "known",
-      "value": 2006528.900,
+      "status": "unknown",
+      "value": null,
       "unit": "sqm",
       "source_files": [
         "geometry/green_space.geojson"
       ],
       "formula": "SUM(polygon_area) of green_space features",
-      "confidence": "medium",
+      "confidence": "unknown",
       "assumptions": [
         "ASM-006"
       ],
-      "label": "绿地面积"
+      "label": "绿地面积",
+      "reason": "场地边界为临时粗略范围，绿地面积需待正式边界确认后复算。"
     },
     "public_space_area_sqm": {
-      "status": "known",
-      "value": 1511633.061,
+      "status": "unknown",
+      "value": null,
       "unit": "sqm",
       "source_files": [
         "geometry/public_space.geojson"
       ],
       "formula": "SUM(polygon_area) of public_space features",
-      "confidence": "medium",
+      "confidence": "unknown",
       "assumptions": [
         "ASM-006"
       ],
-      "label": "公共空间面积"
+      "label": "公共空间面积",
+      "reason": "场地边界为临时粗略范围，公共空间面积需待正式边界确认后复算。"
     },
     "green_ratio": {
       "status": "known",
@@ -80,19 +82,20 @@
       "label": "公共空间率"
     },
     "building_footprint_area_sqm": {
-      "status": "known",
-      "value": 879429.905,
+      "status": "unknown",
+      "value": null,
       "unit": "sqm",
       "source_files": [
         "geometry/buildings.geojson"
       ],
       "formula": "SUM(polygon_area) of building footprints",
-      "confidence": "medium",
+      "confidence": "unknown",
       "assumptions": [
         "ASM-006",
         "ASM-003"
       ],
-      "label": "建筑基底总面积"
+      "label": "建筑基底总面积",
+      "reason": "场地边界为临时粗略范围，建筑基底面积需待正式边界确认后复算。"
     },
     "floor_area_ratio": {
       "status": "unknown",
