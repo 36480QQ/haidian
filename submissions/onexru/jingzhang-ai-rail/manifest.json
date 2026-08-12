@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "d6583b2ddfd0f17d1bb532275aa7941dfe7e6828974276b708af71bad0967660"
+      "sha256": "47792c24415f309a7d0577eb8644628051f163265097570f85e431787da86f6f"
     },
     {
       "path": "compliance_matrix.json",
@@ -93,7 +93,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "db5a825f344f3d0537de3f59f01ef35ecb98a649aaaef48080f4ec140cb86407"
+      "sha256": "57c0ced465b851c6b7c30f8afb50ba25f82706479bbe407016775958e4a45e46"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -114,7 +114,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "d211037013297ce40cc0f998d20874c1d432f715e02285d128a3810893ab791b"
+      "sha256": "e8fc537a7e2acd13e8aaedca9e8206d866456cac1bc30dd9754705d8c372a6fc"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "633bf3b94bfa1d3339d5e68aab7cc28d1c723c70bf5b322928a82b50799d2da9"
+      "sha256": "de621d54c6d019535b9a3b5f26f53930b9763579d3312680eda1cde02a0f071c"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -284,6 +284,27 @@
       "language": "en",
       "translation_of": "assets/figures/site-overview.png",
       "sha256": "cdb63adff7d5c4c9d1c6865b6af708307ef2adae4490be53c72de4ea9e3a1e67"
+    },
+    {
+      "path": "changelog.md",
+      "role": "changelog",
+      "language": "zh",
+      "required": false,
+      "sha256": "53de29c858d9394bd0588aa8134f3f52f5a9bfecb35ed64cd4044f485150e011"
+    },
+    {
+      "path": "assets/media/cover.webp",
+      "role": "media_poster",
+      "language": "neutral",
+      "required": false,
+      "sha256": "2038136ffb5ae763fb584aad3e8248df6b17629e11589346927d46b73911209b"
+    },
+    {
+      "path": "risk.json",
+      "role": "evidence_data",
+      "language": "neutral",
+      "required": false,
+      "sha256": "b97b1936c2147d9dd3dd4ec5dc05a4a5bdd1a1eb9c5cd4737a62a937f56968f1"
     }
   ],
   "validation_claim": {
@@ -291,5 +312,6 @@
     "known_blockers": [],
     "data_confidence": "high",
     "readiness_contract": "persisted-self-check-v1"
-  }
+  },
+  "cover_image": "assets/media/cover.webp"
 }
