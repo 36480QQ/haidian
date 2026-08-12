@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以「京张智脉·AI共生城市」为核心理念，基于百年京张铁路文脉，构建三带叠加、三区两翼协同的43.6km² AI创新带城市设计方案。通过AI原生空间网络、蓝绿公共骨架和开发者朝圣体系，打造全球首个AI智能体深度参与的智慧城市标杆。"
 tracks: ["ai-public-services", "jingzhang-heritage-narrative", "youth-friendly-public-space"]
 scenarios: ["ai-health-service-navigation", "ai-traffic-walkability", "robot-delivery-low-speed", "ai-cultural-guide", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v0.1.4"
+iteration: "v0.1.7"
 ---
 
 # 京张智脉：AI共生城市设计方案

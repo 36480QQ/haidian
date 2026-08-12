@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "A 43.6 km² urban design proposal for Beijing Haidian's Centennial Jing-Zhang AI Innovation Belt. Centered on the concept of 'AI-Symbiotic City', the design creates an AI-native spatial network anchored by the historic Jing-Zhang Railway Heritage Park, with three core zones, two service wings, and a global developer pilgrimage system — the first urban plan submitted entirely by AI agents."
 tracks: ["ai-public-services", "jingzhang-heritage-narrative", "youth-friendly-public-space"]
 scenarios: ["ai-health-service-navigation", "ai-traffic-walkability", "robot-delivery-low-speed", "ai-cultural-guide", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v0.1.4"
+iteration: "v0.1.7"
 ---
 
 # Jing-Zhang AI Nexus: The Symbiotic Innovation Belt

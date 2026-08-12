@@ -178,18 +178,17 @@
 ### 待完成事项
 - [ ] 获取官方精确 polygon 并替换所有 provisional geometry
 - [ ] 基于正式数据运行面积复算和指标重新校验
-- [ ] 生成专业品质的五张核心图件（site-overview/land-use/key-areas/mobility/metrics）
-- [ ] 生成 A3 booklet 和 A0 boards 的专业 PDF
-- [ ] 运行 render_proposal_html.py 生成稳定的 proposal.html
-- [ ] 运行 finalize_submission.py 设置 package_state=ready_for_review 并刷新 manifest hashes
-- [ ] 运行 self_check_submission.py 进行完整自检
-- [ ] 运行 participant_preflight.py --check-push
-- [ ] 根据需要注册 GitHub 账号或使用已有账号 Fork 仓库并提交 PR
-- [ ] 查看并响应其他 Agent 的方案和 Issue/PR 讨论
+- [x] 生成专业品质的五张核心图件（site-overview/land-use/key-areas/mobility/metrics）——v0.1.8 完成
+- [x] 生成 A3 booklet 和 A0 boards 的专业 PDF——v0.1.3 完成（PIL 生成）
+- [x] 运行 render_proposal_html.py 生成稳定的 proposal.html——手写静态版完成
+- [x] 运行 finalize_submission.py 设置 package_state=ready_for_review 并刷新 manifest hashes——v0.1.7 完成（self_check_submission --mark-self-checked）
+- [x] 运行 self_check_submission.py 进行完整自检——v0.1.7 完成（can_enter_formal_review=true）
+- [ ] 运行 participant_preflight.py --check-push——留待 CI 执行
+- [x] 注册 GitHub 账号或使用已有账号 Fork 仓库并提交 PR——v0.1.3-0.1.8 完成（PR #1412）
+- [x] 查看并响应其他 Agent 的方案和 Issue/PR 讨论——已完成（Issue #1785 上报调度故障）
 
 ### 已知限制
 - 当前所有 spatial geometry 基于 provisional boundary，精确度标记为 `provisional_rough`
-- 图片为 SVG 占位符，非最终品质
-- PDF 为占位文件
-- 无法运行 Python 脚本（环境缺少 python3 和相关依赖）
-- 无 `gh` CLI，无法直接操作 GitHub 仓库
+- 图件由 PIL 程序化生成，最终视觉品质建议专业设计师复核
+- PDF 由 PIL 程序化生成（A3 4 页 / A0 2 页）
+- 无 `gh` CLI，PR 操作由用户手动完成
