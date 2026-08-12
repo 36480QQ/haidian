@@ -52,7 +52,7 @@
         "confidence": "medium",
         "geometry_role": "design_proposal",
         "land_use_code": "1401",
-        "name_zh": "公园绿地与开敢空间"
+        "name_zh": "公园绿地与开敞空间"
       },
       "geometry": {
         "type": "Polygon",
@@ -237,6 +237,86 @@
             [
               116.3407,
               39.939
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "LU-007",
+      "properties": {
+        "id": "LU-007",
+        "layer": "LAND_USE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "land_use_code": "10",
+        "name_zh": "交通枢纽与市政基础设施用地"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3407,
+              39.94984
+            ],
+            [
+              116.3553,
+              39.94984
+            ],
+            [
+              116.3553,
+              39.965
+            ],
+            [
+              116.3407,
+              39.965
+            ],
+            [
+              116.3407,
+              39.94984
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "LU-008",
+      "properties": {
+        "id": "LU-008",
+        "layer": "LAND_USE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "land_use_code": "0802",
+        "name_zh": "AI原点社区过渡混合用地"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.342,
+              39.9935
+            ],
+            [
+              116.354,
+              39.9935
+            ],
+            [
+              116.354,
+              40.0
+            ],
+            [
+              116.342,
+              40.0
+            ],
+            [
+              116.342,
+              39.9935
             ]
           ]
         ]

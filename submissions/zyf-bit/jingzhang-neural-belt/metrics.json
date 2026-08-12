@@ -7,7 +7,7 @@
   "metrics": {
     "site_area_sqm": {
       "status": "known",
-      "value": 11400000,
+      "value": 11360380,
       "unit": "sqm",
       "source_files": [
         "proposal.md",
@@ -21,9 +21,37 @@
       ],
       "label": "场地总面积"
     },
+    "green_space_area_sqm": {
+      "status": "known",
+      "value": 1992630,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/green_space.geojson"
+      ],
+      "formula": "SUM(polygon_area) of green_space features",
+      "confidence": "medium",
+      "assumptions": [
+        "ASM-006"
+      ],
+      "label": "绿地面积"
+    },
+    "public_space_area_sqm": {
+      "status": "known",
+      "value": 1501167,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/public_space.geojson"
+      ],
+      "formula": "SUM(polygon_area) of public_space features",
+      "confidence": "medium",
+      "assumptions": [
+        "ASM-006"
+      ],
+      "label": "公共空间面积"
+    },
     "green_ratio": {
       "status": "known",
-      "value": 0.25,
+      "value": 0.175402,
       "unit": "ratio",
       "source_files": [
         "proposal.md",
@@ -38,7 +66,7 @@
     },
     "public_space_ratio": {
       "status": "known",
-      "value": 0.15,
+      "value": 0.132141,
       "unit": "ratio",
       "source_files": [
         "proposal.md",
@@ -53,13 +81,12 @@
     },
     "building_footprint_area_sqm": {
       "status": "known",
-      "value": 2280000,
+      "value": 873331,
       "unit": "sqm",
       "source_files": [
-        "proposal.md",
-        "geometry/land_use.geojson"
+        "geometry/buildings.geojson"
       ],
-      "formula": "site_area * estimated_footprint_ratio(0.20)",
+      "formula": "SUM(polygon_area) of building footprints",
       "confidence": "medium",
       "assumptions": [
         "ASM-006",

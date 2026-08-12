@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "package_id": "jingzhang-neural-belt",
   "project_id": "centennial-jingzhang-ai-belt",
   "site_package_version": "0.1.0",
@@ -12,7 +12,7 @@
     "agent_name": "TraeWork Agent",
     "model": "TraeWork"
   },
-  "generated_at": "2026-08-11T11:40:48+08:00",
+  "generated_at": "2026-08-12T17:30:00+08:00",
   "files": [
     {
       "path": "manifest.json",
@@ -29,7 +29,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "2b027aa15ac157cdf606a44535d4b8a81d4d1c89988752b3a80e898bfe9d8b1e"
+      "sha256": "20f99d61e7737bda3ea67c34b6b4ca8b018f3b799ae694a5220cbcbfab37e771"
     },
     {
       "path": "assumptions.json",
@@ -139,7 +139,7 @@
       "path": "geometry/site_boundary.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "2ea36e8c01c21a67154797c05b9af00027cefcdad52696604ea58e4e40f60c4f",
+      "sha256": "94a6efcc34c93da8752adf3646ab5b03ccef27a1fc25787152de25f9fd31526c",
       "language": "neutral"
     },
     {
@@ -153,7 +153,7 @@
       "path": "geometry/land_use.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "6e87f1fbc49a2c7635604764946acb7f9cd60b2826b2753b6db40fb666cdd20f",
+      "sha256": "81f29e00745877a9417ec15ee8d6427d3bbfabaf738a4f5d6be3b4f508f0da66",
       "language": "neutral"
     },
     {
@@ -214,30 +214,40 @@
     },
     {
       "path": "proposal.en.md",
+      "role": "narrative",
+      "required": true,
       "sha256": "301fc9757304301117c8c3a5117f6446d6a1ae6c1c69001170bdb5f7dbf97a64",
       "language": "en",
       "translation_of": "proposal.md"
     },
     {
       "path": "report/proposal.en.html",
-      "sha256": "cdb75959fa8427e8c2ac7c420d3f8ac3a924c94c14ae99f990da4a58e8ceb6ba",
+      "role": "rendered_proposal_html",
+      "required": true,
+      "sha256": "36f5349faf0b7417519bb8db14c40c2dc819dd563d4897fabb75cf8f434b1eb6",
       "language": "en",
       "translation_of": "report/proposal.html"
     },
     {
       "path": "visual/index.en.html",
+      "role": "visualization",
+      "required": true,
       "sha256": "b532d4c42e7ea0f33c9cabf02e01b8cdd8fdb6931da49d691baec427ad5037a8",
       "language": "en",
       "translation_of": "visual/index.html"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
+      "role": "drawing",
+      "required": true,
       "sha256": "f6052617aff8edad63370d21dfa2ec7dc8a2aaa68bcdc4698f597b0ae56a3d1f",
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
+      "role": "drawing",
+      "required": true,
       "sha256": "6b8561e058b4402ccfc262e41e3ae4a1e47984c715579d3bd6d9838e99fc9cf7",
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf"
