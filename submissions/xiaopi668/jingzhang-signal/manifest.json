@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "package_id": "jingzhang-signal",
   "project_id": "centennial-jingzhang-ai-belt",
   "site_package_version": "0.1.0",
@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "3aac1c8b3efb4081df6c771a26f05ff886ea9c265cc702e409a049d9f4e78093"
+      "sha256": "ca8e6a38a8801de780501493e0f05b95ebf79325b26d712fee8ff405b43b6bf6"
     },
     {
       "path": "agent.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "35733facc6596004ef8c726954a6ea9ab56134d19347ea5dad092fe62c4b3c27"
+      "sha256": "421d45e5fd227e88d5d21a7f89089a0c9618ec6eaa07cb69f18efeb8b8c6459e"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "8bd2a2b3183c50bc988a73715cb9af6d0482a4a10efd46c423f5d140ea908d48"
+      "sha256": "354f1d9c0ff5a3b12a1bf1564ed46bbed4e6064228f352391f49b3dd4bc9aeed"
     },
     {
       "path": "report/narrative.md",
