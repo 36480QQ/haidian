@@ -264,6 +264,100 @@ Official site boundary and key area polygons are provisional. All spatial metric
 
 ---
 
+## 16. Implementation Feasibility & Engineering Verification
+
+### 16.1 Critical Structure Engineering Assessment
+
+| Structure | Project | Preliminary Assessment | Key Verification Points |
+|-----------|---------|----------------------|------------------------|
+| Zhongzhiyuan Rooftop Sports Court | JZ-07 | Existing roof per GB 3-Star; lightweight court feasible (≤3 kN/m² load) | Live load margin, waterproofing, parapet height (≥1.2m), noise impact |
+| Jing-Zhang Greenway Under-Ring-Road Passages | JZ-01 | Under-bridge clearance ≥2.5m at N3/N4/N5 rings | Structural safety distance, drainage, flood control |
+| Ancient Bell Interactive Installation (~1.2t) | JZ-11 | Scaled replica (1:4) cast copper alloy bell | Foundation bearing, seismic design, SPL ≤75dB @10m |
+| Dazhongsi Bowl Skatepark (2.0m depth) | JZ-04 | Semi-subterranean, ~2.5m excavation, above water table | Utility avoidance, drainage, underground parking load check |
+| Railway Memory Interactive Hall (~200 m²) | JZ-10 | Single-story steel frame + curtain wall, shallow foundation | Fire egress distance, 15yr design life, heritage buffer zone |
+| Directional Soundscape (Parametric Speakers) | JZ-19 | Ultrasonic carrier, ~15° beam width, natural attenuation beyond 5m | GB 3096 compliance, IP65 outdoor rating, EMC |
+
+### 16.2 RACI Matrix (Proposed)
+
+11 stakeholder roles across 3 implementation phases. **R=Responsible, A=Accountable, C=Consulted, I=Informed**.
+
+| Stakeholder | Near-term (0-2yr, 7 projects) | Mid-term (2-5yr, 7 projects) | Long-term (5yr+, 5 projects) |
+|-------------|-------------------------------|------------------------------|------------------------------|
+| Haidian District Gov (Planning Bureau) | A (site approval) | A (renovation approval) | C (brand consultation) |
+| District Sports Bureau | C (skatepark standards) | C (extreme sports advisory) | R/A (league operations) |
+| District Parks Bureau | A (green space compatibility) | C (waterfront greening review) | I (maintenance oversight) |
+| District Culture & Tourism Bureau | I (no cultural projects) | C (cultural content review) | A (heritage interpretation approval) |
+| Site Managers (Zhongzhiyuan / Tsinghua / Dongsheng) | C (consent) | R (renovation execution) | C (brand touchpoint approval) |
+| Subdistrict Offices | C (community consultation) | C (construction communication) | C (operations feedback) |
+| Professional Design Firms | R (design development + construction docs) | R (specialist论证 reports) | I (technical consulting) |
+| Contractors (public tender) | R (lightweight structures, paving) | R (renovations, cultural facilities) | — |
+| Third-Party Operator (proposed open recruitment) | — | I (construction progress awareness) | R (brand events, maintenance, commercial partnerships) |
+| Community / University / Enterprise Representatives | C (design-phase input) | C (renovation consultation) | C (satisfaction feedback) |
+| Heritage / Fire / Public Security Agencies | A (skatepark/pet zone safety) | A (fire + large event security) | C (league/event security review) |
+
+**Operational Model**:
+- Near-term (0-2yr): Directly managed by site managers; community volunteer-operated light events
+- Mid-term (2-5yr): Proposed "Jing-Zhang AI Greenway Operations Office" (district-affiliated or government-procured third-party operator)
+- Long-term (5yr+): Brand events sponsored by enterprises; cost structure: government subsidy 50% + commercial partnerships 30% + ticketing/services 20%. Estimated annual operating budget: CNY 8-12 million
+
+### 16.3 Cost Estimation Framework (Schematic Phase Reference)
+
+Reference unit prices from Beijing comparable projects (2019-2025). **All figures ±30-50% error margin — must be verified by cost consultants at preliminary design stage.**
+
+| Category | Items | Unit Price Range | Scope | Reference (CNY 10k) |
+|----------|-------|-----------------|-------|----------------------|
+| Paving & Trails | Colored asphalt cycleway, synthetic running track, permeable brick walkway | 150-500 CNY/m² | 67,500 m² total | 1,510-2,540 |
+| Skateparks | Pump track, street plaza, bowl | 800-4,000 CNY/m² | 3,500 m² total | 620-1,000 |
+| Building Renovations | Ground-floor grey space (curtain wall + floor + lighting) | 3,000-5,000 CNY/m² | ~1,000 m² | 300-500 |
+| Lightweight Structures | Steel frame + curtain wall ~200 m² each | 6,000-9,000 CNY/m² | 3 × 200 = 600 m² | 360-540 |
+| Modular Kiosks | Container conversions, service pavilions | 10-20 CNY 10k/unit | 5 ancillary + 3 fitness stations | 100-200 |
+| Landscape & Amenities | Rain gardens, pet zones, youth lawn, smart fitness stations, bike hubs, navigation posts | — | Various | 714-1,201 |
+| Temporary Infrastructure | Edge computing nodes (20 m² each) | 15-25 CNY 10k/site | 5 sites | 75-125 |
+| Brand Identity | Signage, wayfinding, ground markers | 2,000-5,000 CNY/point | ~200 touchpoints | 40-100 |
+| Soft Costs | Planning/design fees + specialist论证 | 8-12% of construction | — | 440-780 |
+
+**Phase Summary (CNY 10k)**:
+
+| Phase | Construction | Soft Costs | Total |
+|-------|-------------|-----------|-------|
+| Near-term (JZ-01~07) | 2,500-4,200 | 300-500 | **2,800-4,700** |
+| Mid-term (JZ-08~14) | 2,000-3,500 | 150-280 | **2,150-3,780** |
+| Long-term (JZ-15~19) | 300-600 | — | **300-600** |
+| **Grand Total** | | | **5,250-9,080** |
+
+⚠ Funding sources (schematic proposal): government investment ~60% (public infrastructure), private capital ~30% (operational facilities, brand sponsorship), university/enterprise co-investment ~10% (Zhongzhiyuan + Wudaokou renovations by property owners).
+
+---
+
+## 17. DPIA — AI Scenario Privacy Impact Assessment
+
+All 10 AI scenario cards involve personal data processing or sensor data collection. The following DPIA checklist is completed per PRC Personal Information Protection Law (2021) and GB/T 39335-2020. **Self-declaration at schematic phase — independent audit required before operations.**
+
+| Scenario Card | Data Collected | Personal Info? | Legal Basis | Minimization | User Control | Offline Alternative |
+|--------------|---------------|----------------|-------------|-------------|-------------|---------------------|
+| 01 AI Run Club | Skeleton coordinates (no face), pace/HR (opt-in), run stats | Skeleton = anonymous biometric (no facial recognition); HR may be indirectly identifying if linked to device ID | User opt-in = consent; anonymous skeleton = not PI processing | Extract kinematics only, discard video frames at edge, no cloud upload | Delete records anytime; disable skeleton analysis | RFID chip optional (race-only, returned after); no device required for daily use |
+| 02 Hackathon | Registration (name/org/email), code (public repo URL), demo video | Yes (name + contact) | Registration = consent; results = public disclosure | Name + contact only (no ID number); code is public | Anonymous participation (team alias); offline poster presentation option | Physical poster + oral presentation (no video upload required) |
+| 03 Rooftop League | Same skeleton as 01, match scores, team info | Scores recorded by team, not individual | Registration = consent | Competition-only zone collection; rankings publish team name + score only, no biometric data | Request match video for referee use only (not published) | Spectator zone separate from data collection zone |
+| 04 Outdoor Cinema | IR people counter (no images), anonymous voting | No (IR = pulse count, no image; anonymous voting) | Not applicable (no PI) | IR only outputs pass/no-pass pulses; voting is anonymous | Not needed (no PI collected) | Fully offline |
+| 05 Railway AR | Camera live view (for AR marker + SLAM), device model + browser version | Yes (camera = sensitive permission on Android/iOS) | User opens AR = informed consent; first-use popup; under-14 requires guardian | On-device rendering (WebAR); no camera/SLAM data uploaded; marker recognition = local model | Disable camera anytime; AR page has exit button | Printed guidebook (trifold, free at绿廊 entrances); physical interpretation panels at every heritage point |
+| 06 Pet Market | Vendor registration (name/contact), pet info (breed/size/vaccine proof) | Yes (vendor contact + pet vaccine records) | Registration = consent; vaccine = legal requirement (Animal Epidemic Prevention Law) | Name + contact only for stall operation; pet vaccine record for safety; no ID number or pet microchip | Vendors can opt out of public contact display (contact via organizer) | Pet free-play zone has NO data collection (fenced area only) |
+| 07 Extreme Sports League | Competition video (judging + broadcast), participant registration, ranking points | Yes (identity + competition video) | Registration = consent; public broadcast = industry norm with participant knowledge | Camera covers competition zone only (auto-blur pedestrians outside zone); multi-angle raw video retained only until arbitration period | Opt out of public broadcast (offline-only participation; video for referee only) | Spectator zone separate from capture zone |
+| 08 Glow Track Time Trial | RFID chip timing, skeleton coordinates (same as 01), LED color (triggered by fastest lap) | RFID links to participant number (indirectly identifying); skeleton = anonymous | RFID worn = consent; skeleton same as 01 | RFID records only split time + chip ID (no GPS); runway only active during events | Self-chosen race number (not real name); results published by race number | Non-event days: standard public track, no timing/data collection |
+| 09 Bell Sound Art Festival | Ambient recording (omnidirectional mic array), IR people counter, interactive installation logs | Ambient recording may incidentally capture identifiable speech → possible PI | Ticket = consent; on-site recording notice; performance = public (no reasonable privacy expectation) | Omnidirectional array for sound field reconstruction, NOT individual speech recognition or voiceprint extraction | "Quiet zone" seating outside mic array coverage | Watch via livestream instead of on-site |
+| 10 Global AI Open Day | Registration (name/org/nationality/contact), event photo/video for publicity, crowd count (IR + WiFi) | Yes (identity + event imagery) | Registration = consent; on-site photography notice; news reporting = lawful public disclosure | WiFi Probe Request counting uses MAC address hashing with salt rotated every 15 min; raw MAC NOT stored. ⚠ Note: hashed MAC may still be re-identifiable with spatio-temporal patterns — IR counting is the primary method, WiFi counting is cross-validation only | Opt-out badge (different color) signals photographers to avoid close-ups; signage at entrances | Keynote and awards streamed online (no on-site data collection for remote participants) |
+
+**DPIA Self-Declaration** (schematic phase, pending independent audit):
+- ✅ Lawful, necessary, minimal (PIPL Articles 5-7)
+- ✅ Data minimization: edge processing preferred, anonymous/aggregated when possible, only what's functionally necessary
+- ✅ Purpose limitation: each collection tied to explicit purpose
+- ✅ Storage limitation: retention periods defined, auto-deletion on expiry
+- ✅ User control: opt-out mechanism for every scenario; offline alternatives always available
+- ⚠ Pending: independent security audit of RFID, skeleton coordinates, MAC hashing, and WebAR SLAM
+- ⚠ Pending: full DPIA reports (not just checklists) for all scenarios before operational launch
+- ⚠ Children: under-14 AR requires guardian device-side authorization; no biometric collection from children at any AI interaction
+
+---
+
 ## References
 
 - Official Announcement [source:DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509]
