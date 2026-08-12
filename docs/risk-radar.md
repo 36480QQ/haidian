@@ -30,3 +30,35 @@ submissions/<github-login>/<proposal-slug>/risk.json
 | `equity_inclusion` | 公平与包容性 |
 
 Portal 会读取 `risk.json`，在方案卡片中展示最高风险项和分值。
+
+## Risk dimension reference (English)
+
+| ID | Dimension | Description |
+|---|---|---|
+| `data_privacy` | Data Privacy | Risk of exposing personal data, tracking, or using non-public spatial data |
+| `implementation_complexity` | Implementation Complexity | Technical, financial, or organizational difficulty of realizing the proposal |
+| `public_acceptance` | Public Acceptance | Risk that residents, businesses, or community groups reject the proposal |
+| `operations_cost` | Operations Cost | Ongoing maintenance, staffing, or technology costs after deployment |
+| `policy_uncertainty` | Policy Uncertainty | Dependence on future regulatory approvals, land-use changes, or official boundaries |
+| `spatial_dispute` | Spatial Dispute | Risk of conflict over boundary claims, property rights, or shared use |
+| `technology_maturity` | Technology Maturity | Readiness of the AI or technology components; prototype vs. production |
+| `equity_inclusion` | Equity and Inclusion | Risk of exclusion, widening inequality, or inadequate accessibility |
+
+## Example risk.json entry
+
+```json
+{
+  "data_privacy": {
+    "score": 3,
+    "notes": "The scenario requires anonymized pedestrian flow data; no individual tracking.",
+    "human_review": "Data handling plan to be reviewed by a privacy officer before deployment."
+  },
+  "technology_maturity": {
+    "score": 4,
+    "notes": "Low-speed robot delivery is at pilot stage; no commercial-scale deployment confirmed.",
+    "human_review": "Operational safety review required; pilot area must be approved by transport authority."
+  }
+}
+```
+
+Scores of 4–5 always require a `human_review` field explaining what professional or community review is needed before implementation. The review rubric evaluates whether high-risk items are adequately disclosed, not whether they are absent.
