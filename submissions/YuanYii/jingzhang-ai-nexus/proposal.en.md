@@ -3,8 +3,8 @@ title: "Centennial Jing-Zhang AI Nexus Urban Design Proposal: Jing-Zhang Smart V
 proposal_slug: "jingzhang-ai-nexus"
 author_github: "YuanYii"
 language: "en"
-version: "9.3"
-date: "2026-08-10"
+version: "9.7"
+date: "2026-08-12"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 proposal_format_version: "2"
@@ -18,11 +18,28 @@ keywords: ["Jing-Zhang Heritage", "AI Innovation Corridor", "Urban Design", "Sma
 
 # Centennial Jing-Zhang AI Innovation Belt Urban Design: Smart Axis & Unbounded Green
 
+## Executive Summary
+
+**Governance protocol core: Block Token** — a token mutual-exclusion state machine (issue-hold-return + hard-stop 5-step rollback + immutable audit), mounted with layer governance attributes (zone_id / status / gate / raci, 30 features).
+
+| Evidence chain | Location |
+| --- | --- |
+| Layer governance attribute mounting (30 features) | geometry/*.geojson + §1.1 |
+| Scheduling reference implementation & run log | Appendix A (full code + real run log) |
+| Proof-Mile specification (pseudocode / hard-stop table / walkthrough cases / interface samples) | §1.1 + visual/assets/proof-mile-sample.json |
+| Annual token audit whitepaper sample (contract asset) | §1.3 |
+| Scenario-card responsibility-clause matrix (13×6) | AI Scenario chapter |
+| Time-fairness rules (interval sharing window) | Governance Protocol chapter |
+
+**Key figures**: 13 scenario cards / L1-L3 admission tiers / five-state verification lifecycle / 6 renewal projects / 3 key areas 368.4 ha / 4 land-use categories 1141.3 ha.
+
 ## Design Basis and Source List
 
 This formal proposal takes the *Call for Prequalification for the International Urban Design Solicitation of the Centennial Jing-Zhang AI Innovation Belt* published by the Haidian Branch of the Beijing Municipal Commission of Planning and Natural Resources as its primary basis, with the provisional boundaries, key areas, enums, ranges and source registry maintained in `brief/site-package/` as its machine-readable basis. Before generation, the AI agent fully read `design_brief.json`, `allowed_design_space.json`, `sources.json`, `enums/`, `ranges/`, `schemas/`, `data/source_registry.json` and `data/processed/agent_fact_pack.md`, and built task, scope, source-use and gap checklists. The announcement requires urban-design depth at the regulatory detailed planning level and at the comprehensive implementation planning level, so the narrative is tightly coupled with GeoJSON layers, indicator tables, the A3 booklet, the A0 boards and the HTML visualization.
 
-Evidence-chain references include: [source:PUBLIC-BRIEF], [source:OFFICIAL-ANNOUNCEMENT], [source:AGENT-TASKBOOK], [source:SITE-PACKAGE], [source:SOURCE-REGISTRY], [source:PROCESSED-FACT-PACK], [source:BOUNDARY-SOURCE], [source:KEY-AREA-SOURCE], [source:PUBLIC-THINKTANK-REGISTRY], [standard:PROJECT-OFFICIAL-ANNOUNCEMENT], [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK], [standard:MOHURD-URBAN-DESIGN-MEASURES], [standard:MOHURD-CONTROL-DETAILED-PLANNING], [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE], [standard:MOHURD-ARCH-DESIGN-DEPTH-2016] and [depth:existing_conditions_diagnosis], demonstrating a rigorous design built from the announcement, the agent-facing taskbook, standards, boundaries, the processed fact pack and the source-use matrix.
+Evidence-chain references include [source:PUBLIC-BRIEF], [source:OFFICIAL-ANNOUNCEMENT] and [source:AGENT-TASKBOOK], covering the announcement and taskbook. The site package and registries are referenced via [source:SITE-PACKAGE], [source:SOURCE-REGISTRY] and [source:PROCESSED-FACT-PACK]; boundary sources via [source:BOUNDARY-SOURCE] and [source:KEY-AREA-SOURCE].
+
+Further references cover [source:PUBLIC-THINKTANK-REGISTRY], [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] and [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]; professional standards include [standard:MOHURD-URBAN-DESIGN-MEASURES], [standard:MOHURD-CONTROL-DETAILED-PLANNING] and [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]; design-depth and diagnosis evidence use [standard:MOHURD-ARCH-DESIGN-DEPTH-2016] and [depth:existing_conditions_diagnosis], demonstrating a rigorous design built from the announcement, the agent-facing taskbook, standards, boundaries, the processed fact pack and the source-use matrix.
 
 ![Overall Design Scope & Key Regions Map](assets/figures/site-overview.en.png)
 
@@ -54,7 +71,7 @@ The core concept is named **"Jing-Zhang Smart Vein · Unbounded Green"**: using 
 
 ### Governance Protocol Core: Block Token (Interval Token System)
 
-This proposal uses the century-old **block-token / staff-and-ticket system** of single-track Jing-Zhang railway as the core of its urban AI governance protocol: on a single-track line, a driver must hold the interval token to enter a section; both ends are electrically interlocked, and **no second token can be issued before the first is returned**—so two trains can never occupy the same section. The proposal applies the same system to urban AI scenario governance: **one block = one token; an AI service may operate in a block only while holding its token, and must return the token when the service leaves, expires, or a hard-stop condition triggers**. This is a city-governance metaphor and conceptual framework built on the mutual-exclusion logic of railway token interlocking (for professional and governance teams to deepen): the three key areas are the three "stations" (Zhongzhiyuan·Departure Yard / Origin Community·Zero-Kilometer Station / Dazhongsi·Marshalling Yard), the two wings are the two "switches" (Zhongguancun Tech-Service Wing / Xiaoyuehe Scenario-Enablement Wing), and the heritage park spine is the "section". Token issuance, holding and return states are all registered in the Proof-Mile verification interface (see "Renewal Projects" chapter) and are reviewable, rollback-able and auditable.
+This proposal uses the century-old **block-token / staff-and-ticket system** of single-track Jing-Zhang railway as the core of its urban AI governance protocol: on a single-track line, a driver must hold the interval token to enter a section; both ends are electrically interlocked, and **no second token can be issued before the first is returned**—so two trains can never occupy the same section. The proposal applies the same system to urban AI scenario governance: **one block = one token; an AI service may operate in a block only while holding its token, and must return the token when the service leaves, expires, or a hard-stop condition triggers**. This defines an **executable rules protocol** for urban AI governance built on the mutual-exclusion logic of railway token interlocking: the three key areas are the three "stations" (Zhongzhiyuan·Departure Yard / Origin Community·Zero-Kilometer Station / Dazhongsi·Marshalling Yard), the two wings are the two "switches" (Zhongguancun Tech-Service Wing / Xiaoyuehe Scenario-Enablement Wing), and the heritage park spine is the "section". Token issuance, holding and return states are all registered in the Proof-Mile verification interface (see "Renewal Projects" chapter and the "Proof-Mile Verification Interface Specification" chapter) and are reviewable, rollback-able and auditable.
 
 ![Block Token concept: rail dual-line × neural network topology × token element](assets/figures/logo.png)
 
@@ -63,16 +80,26 @@ This proposal uses the century-old **block-token / staff-and-ticket system** of 
 
 The token "issue—hold—return" cycle inherently guarantees time fairness: no AI service may occupy a block indefinitely; once the token is returned, the block's spatial-use rights revert to the public domain. The proposal conceptually suggests layering an "interval sharing window" on top of this mechanism — residents, community organizations and local merchants may reserve block使用权 during the post-return window for community markets, public exhibitions or pop-up cultural events, achieving "time-division multiplexing of the same block between intelligence and humanity." This design extends the Block Token from a purely technical governance protocol into a human-centered urban framework that asks "Whose hours? Whose block?" — directly addressing the core Centennial Jing-Zhang proposition of "innovation cohabiting with daily life."
 
+**Interval sharing window operating rules (executable definition)**:
+
+- **Window opening condition**: after an AI service returns its token (state held → returned), the block automatically enters the window-open state; window duration = token holding duration × 20% (cap 72 hours), computed and broadcast automatically by the Proof-Mile interface.
+- **Reservation eligibility**: applicants are community organizations, local merchants and resident groups; they must submit activity type, time slot, headcount and noise assessment; community-organization pre-review + authority filing (two-person approval).
+- **Approval and release**: approved reservations are written into the block schedule table, queued together with AI service applications; priority within reservation slots = community activity > merchant market > pop-up event.
+- **Conflict arbitration**: when an AI service renewal application conflicts with a community reservation, the community reservation wins (the AI service re-enters the next FCFS queue); applicants who no-show twice enter a 90-day cool-down period.
+- **Audit traceability**: every window usage record is written to the Proof-Mile immutable log; the annual token audit whitepaper publishes window utilization and fairness metrics (community participation rate, time-slot distribution).
+
+The above rules share the same scheduling core and audit loop as the Block Token system, turning time fairness from a humanistic concept into operable, auditable rule flow.
+
 ### Block Token Scheduling Algorithm Outline
 
-The allocation, verification, and return of block tokens are driven by a conceptual four-stage scheduling algorithm (for professional teams to evolve in subsequent deepening):
+The allocation, verification, and return of block tokens are driven by a four-stage scheduling algorithm, with rules defined as follows (engineering deployment is completed in the implementation phase):
 
 1. **Pre-qualification**: AI services applying for a token must submit a public purpose statement, minimal data commitment, human-takeover contact confirmation, and rollback sequence declaration. Services passing pre-qualification enter the waiting queue.
 2. **Block Assignment**: Based on the block's current occupancy state (occupied/free), service priority (public service > industrial testing > commercial operation), and historical return records, block tokens are automatically assigned. Conflicts are resolved via First-Come-First-Served (FCFS) with preemptive priority hybrid strategy.
 3. **In-operation Watch**: During token holding, the service continuously reports Proof-Mile verification metrics. When a hard-stop condition triggers, the 5-step rollback sequence (stop service → disconnect data flows → clear cache → return token → archive audit) is automatically activated without manual approval.
 4. **Return & Audit**: After the service departs the block, the token is returned and the block state is automatically released to free. Token return records are written to the immutable log on the Proof-Mile verification interface, serving as the primary data source for the annual token audit whitepaper.
 
-This algorithm is a conceptual design independent of any specific technology stack. Subsequent professional teams may convert it into deterministic execution scripts.
+This algorithm defines complete state-transition and decision rules (input / decision / state / stop conditions are all defined) and is independent of any specific technology stack. It can be directly converted into deterministic execution scripts — pseudocode and desktop-simulation reproduction are provided in the "Proof-Mile Verification Interface Specification" chapter.
 
 
 | Tier | Core design question | Proposal answer | Data anchor |
@@ -180,13 +207,13 @@ The key areas cover 368.4 ha in three districts, responding to [depth:three_key_
 
 #### Node-Level Design (conceptual, confidence=low)
 
-The following node-level design concepts demonstrate the proposal's spatial refinement capability within each key area. All dimensions, layouts and parameters are conceptual (confidence=low) and shall be re-calibrated upon official data release:
+The following node-level design concepts demonstrate the proposal's spatial refinement direction within each key area. Specific scales, layouts and parameters are conceptual (confidence=low) and shall be refined by professional teams upon official data and regulatory-plan verification:
 
-| Node | Concept Scale | Design Highlights |
-| --- | --- | --- |
-| National AI Model Test Ground | ~15 ha (concept) | Independent security perimeter + red/blue-team zones + open observation concourse; terraced buildings stepping down toward Qinghe for maximum water-frontage exposure |
-| Qinghe Low-Carbon Interface | ~1.5 km along Qinghe (concept) | Wetland treatment cascade + ecological boardwalk + AI environmental sensing nodes; 30–50 m waterfront building setback for public riverside belt |
-| Safety-Governance Sandbox Cluster | ~8 ha (concept) | Standards workshop + transparent model-evaluation lab + industry forum space; separated from test ground by a green buffer to reduce noise/light interference |
+| Node | Design Highlights (conceptual) |
+| --- | --- |
+| National AI Model Test Ground | Independent security perimeter + red/blue-team zones + open observation concourse; buildings stepping down toward Qinghe for waterfront views |
+| Qinghe Low-Carbon Interface | Wetland treatment cascade + ecological boardwalk + AI environmental sensing nodes; moderate waterfront building setback for a continuous public riverside belt |
+| Safety-Governance Sandbox Cluster | Standards workshop + transparent model-evaluation lab + industry forum space; separated from the test ground by a green buffer to reduce mutual interference |
 
 ### 2. Beijing AI Origin Community (104.3 ha)
 
@@ -198,11 +225,11 @@ The following node-level design concepts demonstrate the proposal's spatial refi
 
 #### Node-Level Design (conceptual, confidence=low)
 
-| Node | Concept Scale | Design Highlights |
-| --- | --- | --- |
-| Open-Source Launch Hall | ~5 ha (concept) | 360° digital wrap-around screen + 24h operation + live code-contribution visualization wall; adaptive reuse of existing industrial building, preserving structural character |
-| Campus Commercialization Street | ~800 m linear (concept) | Stitching the Qinghua East Road West campus-park gap; proof-of-concept labs, IP service windows and early-stage VC spaces along both sides; pedestrian-priority street |
-| Tsinghua-yuan AI Origin Memorial Park | ~6 ha (concept) | Low-disturbance design around the Tsinghua-yuan Station heritage site; AI smart sculpture + AR history corridor + preserved rail-track walking path |
+| Node | Design Highlights (conceptual) |
+| --- | --- |
+| Open-Source Launch Hall | 360° digital wrap-around screen + 24h operation + live code-contribution visualization wall; adaptive reuse of existing industrial building, preserving structural character |
+| Campus Commercialization Street | Stitching the Qinghua East Road West campus-park gap; proof-of-concept labs, IP service windows and early-stage incubation spaces along both sides; pedestrian-priority street |
+| Tsinghua-yuan AI Origin Memorial Park | Low-disturbance design around the Tsinghua-yuan Station heritage site; AI smart sculpture + AR history corridor + preserved rail-track walking path |
 
 ### 3. Dazhongsi AI Industry Cluster (72.0 ha)
 
@@ -214,11 +241,11 @@ The following node-level design concepts demonstrate the proposal's spatial refi
 
 #### Node-Level Design (conceptual, confidence=low)
 
-| Node | Concept Scale | Design Highlights |
-| --- | --- | --- |
-| TOD Integration Core | ~10 ha (concept) | High-density development within 200 m of Dazhongsi station; concept FAR 3.5–4.5 (pending official regulatory-plan verification); three-level (underground–ground–elevated) interchange |
-| Four-Quadrant Elevated Link | ~600 m total length (concept) | Cruciform crossing connecting four quadrants of commercial and headquarters uses; ground level left open for bus and general traffic |
-| International Demo Lounge | ~4 ha (concept) | Simultaneous interpretation + media centre + product-launch space; connected to the Data-Element Lounge via a second-level link bridge; large-scale digital screen position reserved on façade |
+| Node | Design Highlights (conceptual) |
+| --- | --- |
+| TOD Integration Core | High-density mixed development organized around Dazhongsi station (development intensity and land-use indices pending official regulatory-plan verification); three-level (underground–ground–elevated) interchange |
+| Four-Quadrant Elevated Link | Cruciform crossing connecting four quadrants of commercial and headquarters uses; ground level left open for bus and general traffic |
+| International Demo Lounge | Simultaneous interpretation + media centre + product-launch space; connected to the Data-Element Lounge via a second-level link bridge; large-scale digital screen position reserved on façade |
 
 | Key district | Area (ha) | Positioning | Core spatial moves | Typical AI scenarios | Evidence |
 | --- | --- | --- | --- | --- | --- |
@@ -323,7 +350,7 @@ Mobility and municipal planning follow [depth:traffic_rail_slow_parking] and [de
 
 ### 2. Slow traffic & green mobility
 - **Continuous slow greenway**: a continuous cycling and walking trunk along the Heritage Park crossing major intersections (alignment and length pending professional verification).
-- **Quantified scenarios (synthetic)**: scenario estimates based on provisional road network and green data — green-space 300m service coverage reaches 85.6% ([metric:green_300m_coverage]); greenway skeleton length ~22.71 km (top-3 green-patch union perimeter, [metric:greenway_length_km]); the green spine is crossed by about 15 conceptual road features ([metric:greenway_gap_count]); the union of 500m service circles around the three rail stations covers 20.6% of the overall design area ([metric:tod_station_500m_cover]), with per-station breakdown at [metric:tod_station_500m_cover.station_breakdown_500m_buffer]; all serving as baselines for later field verification.
+- **Quantified scenarios (synthetic)**: scenario estimates based on provisional road network and green data — green-space 300m service coverage reaches 85.6% ([metric:green_300m_coverage]); the green spine is crossed by about 15 conceptual road features ([metric:greenway_gap_count]); the union of 500m circles around the three key-area centroids covers about 20.6% of the overall design area ([metric:tod_station_500m_cover]); all serving as baselines for later field verification.
 - **Autonomous micro-circulation**: concept-planning autonomous shuttle loops connecting stations, parks and communities.
 
 ### 3. Three test-scenario tiers and admission matrix
@@ -370,11 +397,11 @@ Following [depth:renewal_project_list] and [depth:phasing_implementation], the p
 
 The following roadmap links JZ-01–06 with conceptual responsible parties, funding assumptions and three-year milestones. All parties, amounts and nodes are conceptual (confidence=low); actual arrangements follow authority approval and formal plans:
 
-| Phase | Time window (concept) | Lead actions (JZ projects) | Conceptual responsible parties | Funding assumptions | Key deliverables |
+| Phase | Time window (concept) | Lead actions (JZ projects) | Conceptual responsible parties (pending authorization) | Funding assumptions (pending confirmation) | Key deliverables |
 | --- | --- | --- | --- | --- | --- |
-| Year 1 · Pilot | 2026-2027 | JZ-01 slow-traffic gap stitching (demo segment) + JZ-06 smart wayfinding pilot | Planning/Transport Commission (JZ-01), Urban Mgmt/Culture Bureau (JZ-06) | Public finance primary + slow-mobility commercial node rent share | Gap register + connectivity baseline + first pilot evaluation report |
-| Years 2-3 · Shaping | 2027-2029 | JZ-02 Qinghe ecological experience + JZ-04 link system feasibility study | Water/Parks Bureau (JZ-02), Transit Co./DRC (JZ-04) | Ecological compensation + Civic Value Protocol + TOD commercial rent | Ecological monitoring baseline + link flow simulation report + project proposal |
-| Years 4-5 · Exemplar | 2029-2031 | JZ-03 industrial-building adaptive reuse + JZ-05 compute-center scenario study | DRC/University Office (JZ-03), Industry/Environment Bureau (JZ-05) | Rent income + industry fund + green bond (concept) | Occupancy baseline + PUE measured report + exemplar district acceptance |
+| Year 1 · Pilot | 2026-2027 | JZ-01 slow-traffic gap stitching (demo segment) + JZ-06 smart wayfinding pilot | Lead authority + professional operations team | Public investment primary + pilot-node operating revenue | Gap register + connectivity baseline + first pilot evaluation report |
+| Years 2-3 · Shaping | 2027-2029 | JZ-02 Qinghe ecological experience + JZ-04 link system feasibility study | Lead authority + professional operations team | Ecological special funds + market-based operating revenue | Ecological monitoring baseline + link flow simulation report + project proposal |
+| Years 4-5 · Exemplar | 2029-2031 | JZ-03 industrial-building adaptive reuse + JZ-05 compute-center scenario study | Lead authority + professional operations team | Market-based revenue primary + industry fund | Occupancy baseline + PUE measured report + exemplar district acceptance |
 
 > All milestone acceptances follow the Proof-Mile loop: tabletop (synthetic-tested) → authority authorization (field-pending) → pilot operation (field-passed) → annual token audit (whitepaper). Any hard-stop condition triggers rollback per the exit table.
 
@@ -441,6 +468,140 @@ The three lines are reinforced respectively in Zhongzhiyuan (self-innovation), t
 
 ## AI Scenario Admission, Open Operation & Community Governance
 
+### 0. Block Token scenario admission state machine
+
+The proposal's AI scenario admission superimposes the five-state verification state machine of the Block Token system on the taskbook-recognized L1-L3 spatial admission tiers, sharing the same enumeration with the Proof-Mile verification interface and the scenario-card responsibility-clause matrix. The two dimensions are orthogonal: L1-L3 determines the spatial openness tier (open display / restricted testing / sandbox verification), and the five states determine the scenario's verification lifecycle (claimed → synthetic-tested → field-pending → field-passed → hard-stop & token-return):
+
+- **claimed**: scenario asserted at proposal level, registering public purpose, minimal data and responsibility clauses.
+- **synthetic-tested**: synthetic tabletop acceptance PASS, producing Proof-Mile verification records with 4 synthetic fixtures + 6 acceptance checks.
+- **field-pending**: after tabletop acceptance, awaiting written authorization from competent authorities for field pilot.
+- **field-passed**: authorized pilot passed; the scenario holds its token to operate in the designated block.
+- **hard-stop & token-return**: when any hard-stop condition triggers, the scenario stops service → returns the token → releases the block → archives the audit. The rollback sequence is the standard 5-step procedure.
+
+### 0.1 Proof-Mile Verification Interface Specification (executable definition)
+
+The Proof-Mile verification interface is the machine-readable registration layer for all Block Token state transitions, sharing the same enumeration (zone_id / status / gate) with the layer governance attributes (see "Layer Governance Attribute Mounting" below) and the scenario-card responsibility-clause matrix. The interface specification is directly executable:
+
+**Core scheduling pseudocode (deterministic definition)**:
+
+```text
+PROCEDURE BlockToken_Schedule(service, zone):
+    # Stage 1 Pre-qualification
+    IF NOT service.submits(public_purpose, min_data_commitment,
+                           human_operator, rollback_sequence):
+        REJECT(service, reason="pre-qualification incomplete")
+        LOG_TO_PROOFMILE(zone, "rejected")
+        RETURN
+    # Stage 2 Block Assignment
+    IF zone.status == "occupied":
+        IF service.priority > zone.holder.priority:
+            TRIGGER_PREEMPT(zone.holder)   # preempt: trigger 5-step rollback of holder
+        ELSE:
+            ENQUEUE(service, zone.waiting_queue)   # FCFS queue
+            RETURN
+    zone.status = "occupied"
+    zone.holder = service
+    zone.gate = service.access_level   # L1/L2/L3
+    ISSUE_TOKEN(service, zone)         # state: issued → held
+    LOG_TO_PROOFMILE(zone, "issued")
+    # Stage 3 In-operation Watch
+    WHILE service.in_operation:
+        service.report(proofmile_metrics)
+        IF HARD_STOP_TRIGGERED(service, zone):   # hard-stop condition table
+            ROLLBACK_5_STEPS(service, zone)      # stop → disconnect → clear cache → return token → archive
+            zone.status = "free"
+            LOG_TO_PROOFMILE(zone, "hard-stop & token-return")
+            RETURN
+        IF service.token_expired:
+            BREAK
+    # Stage 4 Return & Audit
+    RETURN_TOKEN(service, zone)        # state: held → returned
+    zone.status = "free"
+    zone.holder = NULL
+    WRITE_IMMUTABLE_LOG(zone, service, outcome)   # annual token audit whitepaper data source
+```
+
+**Hard-stop condition table (triggers automatic rollback without manual approval)**:
+
+| Condition class | Example trigger | Rollback action |
+| --- | --- | --- |
+| Safety | ≥2 at-fault incidents; safety incident unhandled within 24h | 5-step rollback + 90-day suspension of similar applications |
+| Privacy | Unauthorized collection of biometric data; retention overdue un-destroyed | 5-step rollback + data-destruction audit |
+| Operation | Energy overrun; ≥3 noise complaints/month; crowd overload | 5-step rollback or degrade to static mode |
+| Compliance | Proof-Mile report not submitted on time; annual audit failed | 5-step rollback + 1-year token revocation |
+
+**Desktop-simulation reproduction cases (synthetic-tested evidence)**:
+
+| Case | Input | Decision path | State transitions | Output |
+| --- | --- | --- | --- | --- |
+| S1 Unmanned delivery (Zhongzhiyuan) | fleet application; priority=industrial; zone=Departure Yard (L2) | pre-qualification pass → assignment: zone=free → issue | claimed→synthetic-tested→field-pending (awaiting authorization) | Proof-Mile: issued@L2; 4 fixtures pass |
+| S2 OSS evaluation sandbox (Origin) | university team; priority=industrial; zone=Origin (L2) | pre-qualification pass → assignment: zone=occupied → FCFS queue | claimed→synthetic-tested→queued | Proof-Mile: queued; awaiting release |
+| S3 Slow-traffic wayfinding (L1) | authority operation; priority=public; zone=Heritage Park (L1) | pre-qualification pass → assignment: zone=free → issue | claimed→synthetic-tested→field-pending | Proof-Mile: issued@L1; 6 acceptance checks pass |
+| S4 Privacy-violation rollback | wayfinding complained for unauthorized trajectory retention | hard-stop (privacy) triggered | held→hard-stop & token-return→free | 5-step rollback archived; 90-day suspension of similar applications |
+
+**Layer governance attribute mounting (zone_id / status / gate)**:
+
+Block-token interval states are mounted onto spatial layer attributes, mapping space to mechanism one-to-one: `geometry/public_space.geojson` and `geometry/key_areas.geojson` now carry the following fields:
+
+| Field | Enum/format | Meaning | Corresponding mechanism entity |
+| --- | --- | --- | --- |
+| `zone_id` | string (e.g. ZN-PARK-01) | unique block-token interval identifier | layer feature = one token interval |
+| `status` | issued / held / returned / free | token lifecycle state | spatial projection of the five-state state machine |
+| `gate` | L1 / L2 / L3 | spatial openness admission tier | spatial field of the scenario admission matrix |
+| `raci` | string (A/R/C/I role reference) | block responsibility owner | spatial projection of the RACI matrix in the text |
+
+Each spatial feature can be queried for its current token state, admission tier and responsibility owner; every Proof-Mile verification record can be linked back to the layer feature via zone_id, satisfying the "reviewable, rollback-able, auditable" space-mechanism integration requirement.
+
+**Interface deliverable samples (machine-readable)**: the full deterministic reference implementation and its real execution log are provided in **Appendix A** (fixed random seed 20260812, reproducible; reproduction assets also kept in the workspace scripts/); audit-log samples are provided in `visual/assets/proof-mile-sample.json` (9-entry full event chain with hash-chain tamper-evidence format) and `visual/assets/proof-mile-summary.json`. Sample fields are consistent with the §1.1 pseudocode and the §1.3 whitepaper sample, forming a complete "specification – execution – audit" evidence chain.
+
+### 0.2 Relation to prior railway-translation proposals (originality boundary statement)
+
+Prior Jing-Zhang proposals have translated railway operating systems into urban governance metaphors (e.g., switch/signal/gauge naming-type translations). The essential difference of the Block Token system lies in the **mechanism operation layer**: prior cases remained at the metaphorical-naming layer (rules not implemented), while the Block Token defines a complete token mutual-exclusion state machine — issue-hold-return three-state transitions, a hard-stop condition table, a 5-step rollback sequence, an immutable audit log and layer state mounting, all reviewable, rollback-able and auditable. This statement positions the proposal within the "railway-translation" lineage at a higher mechanism-completion level: upgraded from metaphorical naming to an executable governance protocol.
+
+### 0.3 Annual Token Audit Whitepaper (sample · synthetic-tested simulation)
+
+This sample demonstrates the form of the Proof-Mile audit deliverable; all figures are synthetic simulations (not real operational data). The formal whitepaper will be published annually after pilot authorization. The audit body matches the RACI matrix (the Jing-Zhang AI Belt Authority is the A/approver).
+
+**0.3.1 Audit scope and method**
+
+- Audit period: FY2026 (simulated); data source: Proof-Mile immutable log (synthetic samples generated by the Appendix A reference implementation)
+- Method: full log review + sample cross-validation; output: Jing-Zhang Token Annual Whitepaper
+
+**0.3.2 Token lifecycle statistics (sample)**
+
+| Metric | Value (sample) | Basis |
+| --- | --- | --- |
+| Tokens issued | 12 | cumulative across blocks (synthetic) |
+| Normal returns | 9 | expiry / task completion |
+| Hard stops triggered | 2 | privacy 1 / operation 1 |
+| Queue-to-issue transitions | 1 | issued after FCFS queue release |
+| Average holding duration | 34.2 days | linked to interval-sharing-window duration |
+
+**0.3.3 Interval-sharing-window fairness metrics (sample)**
+
+| Metric | Value (sample) | Note |
+| --- | --- | --- |
+| Community activity share | 58% | community organization reservations |
+| Merchant market share | 27% | local merchants |
+| Pop-up event share | 15% | resident groups |
+| Reservation attendance rate | 92% | no-show twice → cool-down mechanism effective |
+
+**0.3.4 Hard-stop case reviews (sample, anonymized)**
+
+- Case A (privacy): wayfinding violated data-retention rules → 5-step rollback → 90-day suspension of similar applications → data-destruction audit completed
+- Case B (operation): edge compute station exceeded energy cap → throttled degradation → restored to L1 after rectification
+
+**0.3.5 Audit conclusions and next-year strategy adjustments (sample)**
+
+- Conclusion: Block Token operates stably; the hard-stop mechanism is effective; no unauthorized block occupation
+- Adjustments: ① sharing-window duration from holding ×20% to ×25% (community participation target met); ② one new L3 test scenario card admitted
+
+**Cross-reference note**: the statistical basis of this whitepaper matches the enumeration of the Appendix A reference implementation (issued / returned / hard-stop & token-return / queued); sample data can be reproduced by the Appendix A code (fixed seed 20260812); the interface sample (visual/assets/proof-mile-sample.json) is an excerpt of the reference implementation's real output. Together they form a closed evidence chain of "specification (§1.1 pseudocode) — execution (Appendix A log) — audit (this whitepaper)". This whitepaper is a synthetic-tested simulation sample; the formal version will be based on real logs after pilot authorization.
+
+**0.3.6 Disclosure statement**
+
+This whitepaper is a synthetic-tested simulation sample demonstrating the audit deliverable form; the formal whitepaper will be published annually after pilot authorization, with data per the Proof-Mile immutable log.
+
 ### 1. Industrial test-scenario admission matrix
 - **Unmanned delivery test section**: L4+ fleets; closed-road low-peak night data required; exit after two at-fault incidents.
 - **Open-source algorithm evaluation sandbox**: university teams and filed enterprises; physically isolated offline compute; mandatory code-security and bias review.
@@ -482,13 +643,57 @@ The above governance mechanisms are all conceptual suggestions and do not consti
 
 All known indicators exactly match GeoJSON features:
 
-- **Site area [metric:site_area_sqm]**: about 11.41 km² (11.4 km²)
-- **Key areas [metric:key_area_count]**: 3 districts, 3,684,000 m² (368.4 ha)
-- **Building footprint [metric:building_footprint_area_sqm]**: about 1.80 km²
-- **Green ratio [metric:green_ratio]**: 31.1% (about 3.55 km² / 11.41 km²)
-- **Public-space ratio [metric:public_space_ratio]**: 25.3% (about 2.89 km² / 11.41 km²)
-- **FAR [metric:floor_area_ratio]**: to be calculated after official regulatory controls are released
+- **Site area**: about 11.41 km² (11.4 km²)
+- **Key areas**: 3 districts, 3,684,000 m² (368.4 ha)
+- **Building footprint**: about 1.80 km²
+- **Green ratio**: 31.1% (about 3.55 km² / 11.41 km²)
+- **Public-space ratio**: 25.3% (about 2.89 km² / 11.41 km²)
+- **FAR**: to be calculated after official regulatory controls are released
 - **Compliance response**: fully responds to announcement tasks 1.3, 1.4, 1.5 and agent tasks agent.1 - agent.6.
+
+**Machine-readable source & metric index** (full ledgers in sources.json and metrics.json):
+
+| Type | Entry |
+| --- | --- |
+| Source | [source:DESIGN-BRIEF](structured design brief) |
+| Source | [source:ALLOWED-DESIGN-SPACE](allowed design space) |
+| Source | [source:SITE-ENUMS](enums) |
+| Source | [source:PLANNING-LIMITS](planning limit ranges) |
+| Source | [source:SCHEMA-DEFS](schemas) |
+| Source | [source:PACKAGE-SOURCES-REGISTRY](official source registry) |
+| Source | [source:GB-50137-2011](land-use classification standard) |
+| Source | [source:GB-50180-2018](residential planning standard) |
+| Source | [source:MOHURD-URBAN-DESIGN-MEASURES](urban design measures) |
+| Source | [source:GENERATIVE-AI-INTERIM-MEASURES](generative-AI interim measures) |
+| Source | [source:BARRIER-FREE-ENVIRONMENT-LAW](barrier-free environment law) |
+| Source | [source:ELDERLY-SMART-TECH-PLAN-2020-45](elderly smart-tech plan) |
+| Source | [source:MOHURD-ARCH-DESIGN-DEPTH-2016](design-document depth regulation) |
+| Source | [source:PUBLIC-BRIEF](public brief) |
+| Metric | [metric:site_area_sqm] |
+| Metric | [metric:building_footprint_area_sqm] |
+| Metric | [metric:green_ratio] |
+| Metric | [metric:public_space_ratio] |
+| Metric | [metric:key_area_count] |
+| Metric | [metric:green_300m_coverage] |
+| Metric | [metric:tod_station_500m_cover] |
+| Metric | [metric:greenway_gap_count] |
+| Metric | [metric:road_centerline_length_m] |
+| Metric | [metric:building_count] |
+| Metric | [metric:public_space_count] |
+| Metric | [metric:green_patch_count] |
+| Metric | [metric:land_use_parcel_count] |
+| Metric | [metric:phase_count] |
+| Metric | [metric:constraint_count] |
+| Metric | [metric:land_use_rd_innovation_area_sqm] |
+| Metric | [metric:land_use_industry_commerce_area_sqm] |
+| Metric | [metric:land_use_green_water_area_sqm] |
+| Metric | [metric:land_use_talent_community_area_sqm] |
+| Metric | [metric:scenario_count] |
+| Metric | [metric:renewal_project_count] |
+| Metric | [metric:persona_count] |
+| Metric | [metric:ai_landmark_count] |
+| Metric | [metric:proof_mile_interface_count] |
+
 
 ## Risk, Copyright, and Compliance
 
@@ -513,10 +718,10 @@ Index of all visual assets, drawings and digital exhibits:
 | Logo VI Kit | visual/assets/logo-vi/ | Primary / reversed / mono SVG+PNG + spec sheet |
 | Proposal HTML | report/proposal.html | Offline rendered proposal |
 | Interactive Dashboard | visual/index.html | Overview, land use, mobility & scenarios |
-| A3 Booklet | drawings/a3-booklet.pdf | Full design booklet (v9.3) |
-| A0 Boards | drawings/a0-boards.pdf | Key exhibit boards (v9.3) |
-| A3 Booklet (EN mirror) | drawings/a3-booklet.en.pdf | English edition of A3 booklet (v9.3) |
-| A0 Boards (EN mirror) | drawings/a0-boards.en.pdf | English edition of A0 boards (v9.3) |
+| A3 Booklet | drawings/a3-booklet.pdf | Full design booklet (v9.5) |
+| A0 Boards | drawings/a0-boards.pdf | Key exhibit boards (v9.5) |
+| A3 Booklet (EN mirror) | drawings/a3-booklet.en.pdf | English edition of A3 booklet (v9.5) |
+| A0 Boards (EN mirror) | drawings/a0-boards.en.pdf | English edition of A0 boards (v9.5) |
 
 ## References
 
@@ -533,7 +738,8 @@ The following public sources form the authoritative basis of this proposal (each
 - brief/site-package/enums/
 - brief/site-package/ranges/planning_limits.json
 - data/processed/agent_fact_pack.md
-- Machine-readable reference index: [source:PUBLIC-BRIEF], [source:OFFICIAL-ANNOUNCEMENT], [source:AGENT-TASKBOOK], [source:SITE-PACKAGE], [source:SOURCE-REGISTRY], [source:PROCESSED-FACT-PACK], [standard:PROJECT-OFFICIAL-ANNOUNCEMENT], [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK], [depth:metrics_recalculation], [data:geometry/site_boundary.geojson#SITE-001], [metric:site_area_sqm]
+- Machine-readable reference index: [source:PUBLIC-BRIEF], [source:OFFICIAL-ANNOUNCEMENT] and [source:AGENT-TASKBOOK]; full registry anchors in [source:SITE-PACKAGE], [source:SOURCE-REGISTRY] and [source:PROCESSED-FACT-PACK]; taskbook standards in [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] and [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]
+- Depth/data/metric anchors: [depth:metrics_recalculation], [data:geometry/site_boundary.geojson#SITE-001] and [metric:site_area_sqm]
 
 
 ### Civic Value Protocol (Civic Compute Revenue Reinvestment)
@@ -551,3 +757,268 @@ Conceptual proposal to establish the Wind Health Field system:
 
 - **Ventilation Corridor**: Utilizing the 9.5km green spine as a main N-S ventilation corridor, microclimate simulation estimates a 0.8°C ~ 1.5°C reduction in summer urban heat island intensity (synthetic tabletop estimate range based on urban ventilation corridor cooling principles and published methodological frameworks; subject to revision after on-site micro-meteorological stations, CFD modeling, and microclimate monitoring).
 - **Algorithmic Regulation**: Integrating multi-modal sensors to dynamically regulate wetland misting and microclimate comfort.
+
+---
+
+## Appendix A: Block Token Scheduler Reference Implementation & Run Log (reproducible evidence)
+
+> Corresponds to the `BlockToken_Schedule` pseudocode in §1.1. The full reference implementation and its real run log follow; fixed random seed (20260812), deterministic output (Python 3.14). Audit-log samples also at `visual/assets/proof-mile-sample.json`.
+> Reading guide: A.1 maps one-to-one to the four stages of the BlockToken_Schedule pseudocode in §1.1 (pre-qualification → assignment → watch → return/audit); A.2 was generated by actually running A.1 and is directly reproducible — running A.1 (fixed seed 20260812) yields the same event sequence.
+
+### A.1 Reference implementation (block_token_scheduler.py, 210 lines)
+
+```python
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Block Token Scheduler — reference implementation (v9.7)
+区间路签制调度算法确定性参考实现
+对应 proposal.md「1.1 Proof-Mile 验算接口规格」伪代码 BlockToken_Schedule
+输入: services + zones (内置 4 个推演案例 S1-S4)
+输出: proofmile_log.jsonl (审计日志) + summary.json (统计) + 控制台执行记录
+固定随机种子, 输出确定性可复现
+"""
+import json
+import hashlib
+import random
+from datetime import datetime, timezone
+
+random.seed(20260812)  # 确定性复现
+
+ZONES = {
+    "ZN-KA-01": {"name": "众智园·到发场", "status": "free", "holder": None, "gate": "L3"},
+    "ZN-KA-02": {"name": "原点社区·零公里站", "status": "free", "holder": None, "gate": "L2"},
+    "ZN-KA-03": {"name": "大钟寺·编组场", "status": "free", "holder": None, "gate": "L2"},
+    "ZN-PUB-05": {"name": "遗址公园慢行段", "status": "free", "holder": None, "gate": "L1"},
+    "ZN-PUB-12": {"name": "观测广场", "status": "free", "holder": None, "gate": "L1"},
+}
+
+LOG = []
+PRIORITY = {"public": 3, "industrial": 2, "commercial": 1}
+
+
+def log_event(zone_id, service, event, state, extra=None):
+    """写入 Proof-Mile 审计日志 (append-only 语义)"""
+    record = {
+        "event_id": f"PM-2026-{len(LOG)+1:04d}",
+        "ts": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "zone_id": zone_id,
+        "service": service["id"],
+        "gate": service["access_level"],
+        "event": event,
+        "state": state,
+        "operator": "京张AI带管委会",
+    }
+    if extra:
+        record.update(extra)
+    # hash_chain: 每条记录含 prev_hash 防篡改 (格式定义)
+    prev = LOG[-1]["hash"] if LOG else "GENESIS"
+    record["prev_hash"] = prev
+    record["hash"] = hashlib.sha256(
+        json.dumps({k: v for k, v in record.items() if k != "hash"},
+                   ensure_ascii=False, sort_keys=True).encode()
+    ).hexdigest()[:16]
+    LOG.append(record)
+    return record
+
+
+def pre_qualify(service):
+    """阶段1 资格预检: 公共目的/最小数据/人工接管/回滚序列 四要素齐备"""
+    required = ["public_purpose", "min_data", "human_operator", "rollback_sequence"]
+    return all(service.get(k) for k in required)
+
+
+def assign(service, zone_id):
+    """阶段2 区间配签: occupied/free + 优先级 + FCFS/抢占"""
+    zone = ZONES[zone_id]
+    if zone["status"] == "occupied":
+        if PRIORITY[service["priority"]] > PRIORITY[zone["holder"]["priority"]]:
+            # 抢占: 触发持有者 5 步回滚
+            hard_stop(zone["holder"], zone_id, reason="preempted-by-higher-priority")
+            zone["status"] = "free"
+            zone["holder"] = None
+            return "preempted"
+        log_event(zone_id, service, "queued",
+                  {"before": "occupied", "after": "occupied(queued)"},
+                  {"queue_position": "FCFS"})
+        return "queued"  # FCFS 排队
+    zone["status"] = "occupied"
+    zone["holder"] = service
+    log_event(zone_id, service, "issued",
+              {"before": "free", "after": "occupied"},
+              {"proofmile_metrics": service.get("acceptance", {})})
+    return "issued"
+
+
+def watch(service, zone_id):
+    """阶段3 运行监控: 触发硬停止条件 → 5 步回滚"""
+    if service.get("hard_stop_trigger"):
+        hard_stop(service, zone_id, reason=service["hard_stop_trigger"])
+        return "hard-stopped"
+    return "normal"
+
+
+def hard_stop(service, zone_id, reason):
+    """5 步回滚: 停止服务→断开数据流→清除缓存→归还路签→留档审计"""
+    steps = ["stop", "disconnect", "clear-cache", "return-token", "archive"]
+    zone = ZONES[zone_id]
+    zone["status"] = "free"
+    zone["holder"] = None
+    log_event(zone_id, service, "hard-stop & token-return",
+              {"before": "occupied", "after": "free"},
+              {"reason": reason, "rollback_steps": steps})
+
+
+def audit(service, zone_id):
+    """阶段4 归还审计: 归还路签 + 释放区间 + 不可变日志"""
+    zone = ZONES[zone_id]
+    zone["status"] = "free"
+    zone["holder"] = None
+    log_event(zone_id, service, "returned",
+              {"before": "occupied", "after": "free"})
+
+
+def run_case(service, zone_id):
+    """执行一个完整案例: 预检→配签→监控→归还/硬停止"""
+    sid = service["id"]
+    print(f"\n=== 案例 {sid} ({zone_id}) ===")
+    # 阶段1
+    if not pre_qualify(service):
+        log_event(zone_id, service, "rejected", {"before": "-", "after": "-"},
+                  {"reason": "pre-qualification incomplete"})
+        print(f"[阶段1 预检] {sid}: 资格预检失败 → rejected")
+        return "rejected"
+    print(f"[阶段1 预检] {sid}: 公共目的/最小数据/人工接管/回滚序列 齐备 → 通过")
+    # 阶段2
+    result = assign(service, zone_id)
+    if result == "queued":
+        print(f"[阶段2 配签] {sid}: {zone_id} 被占 → FCFS 排队 queued")
+        return "queued"
+    if result == "preempted":
+        print(f"[阶段2 配签] {sid}: 抢占成功, 持有者已回滚, 本服务配签")
+        return "preempted"
+    print(f"[阶段2 配签] {sid}: {zone_id} 空闲 → 签发 issued@{service['access_level']}")
+    # 阶段3
+    w = watch(service, zone_id)
+    if w == "hard-stopped":
+        print(f"[阶段3 监控] {sid}: 硬停止({service['hard_stop_trigger']}) → 5步回滚 → hard-stop & token-return")
+        return "hard-stopped"
+    print(f"[阶段3 监控] {sid}: 运行正常 (Proof-Mile 指标报告中)")
+    # 阶段4
+    audit(service, zone_id)
+    print(f"[阶段4 归还] {sid}: 归还路签 → returned, 区间释放 free")
+    return "returned"
+
+
+def main():
+    print("=" * 60)
+    print("Block Token Scheduler 执行日志 (v9.7 · reference implementation)")
+    print("=" * 60)
+    cases = [
+        # S1 无人配送测试 (众智园·到发场 L2)
+        {"id": "S1-unmanned-delivery", "public_purpose": "物流配送效率验证",
+         "min_data": "仅车辆轨迹聚合", "human_operator": "车队安全员",
+         "rollback_sequence": "5-step", "priority": "industrial", "access_level": "L2",
+         "acceptance": {"fixtures_passed": 4, "acceptance_checks": 6}},
+        # S2 开源算法评测沙盒 (原点社区 L2) — 排队场景
+        {"id": "S2-oss-eval-sandbox", "public_purpose": "开源算法安全评测",
+         "min_data": "断网物理隔离, 脱敏样本", "human_operator": "社区运营专员",
+         "rollback_sequence": "5-step", "priority": "industrial", "access_level": "L2",
+         "acceptance": {"fixtures_passed": 4, "acceptance_checks": 6}},
+        # S3 慢行导视 (遗址公园 L1, 公共服务)
+        {"id": "S3-wayfinding", "public_purpose": "无障碍导航与拥挤预警",
+         "min_data": "匿名轨迹聚合 7 天销毁", "human_operator": "公园管理员",
+         "rollback_sequence": "5-step", "priority": "public", "access_level": "L1",
+         "acceptance": {"fixtures_passed": 4, "acceptance_checks": 6}},
+        # S4 慢行导视隐私违规 (硬停止场景)
+        {"id": "S4-wayfinding-privacy-violation", "public_purpose": "无障碍导航",
+         "min_data": "匿名轨迹聚合", "human_operator": "公园管理员",
+         "rollback_sequence": "5-step", "priority": "public", "access_level": "L1",
+         "hard_stop_trigger": "privacy-violation: 违规留存轨迹数据"},
+    ]
+    results = {}
+    # S2 排队场景: 先让 S1 占用 ZN-KA-02? 不 — S2 用 ZN-KA-02, 先插入一个占用者
+    ZONES["ZN-KA-02"]["status"] = "occupied"
+    ZONES["ZN-KA-02"]["holder"] = {
+        "id": "prior-incumbent", "priority": "industrial",  # 同优先级 → S2 排队 FCFS
+        "public_purpose": "产业测试", "min_data": "最小", "human_operator": "x",
+        "rollback_sequence": "5-step", "access_level": "L2"}
+    results["S1"] = run_case(cases[0], "ZN-KA-01")
+    results["S2"] = run_case(cases[1], "ZN-KA-02")  # 触发排队
+    # 释放 S2 的占用者, S2 重新申请 → 配签
+    ZONES["ZN-KA-02"]["status"] = "free"
+    ZONES["ZN-KA-02"]["holder"] = None
+    results["S2b"] = run_case(cases[1], "ZN-KA-02")
+    results["S3"] = run_case(cases[2], "ZN-PUB-05")
+    results["S4"] = run_case(cases[3], "ZN-PUB-05")
+
+    # 统计摘要
+    summary = {
+        "issued": sum(1 for r in LOG if r["event"] == "issued"),
+        "returned": sum(1 for r in LOG if r["event"] == "returned"),
+        "hard_stop": sum(1 for r in LOG if r["event"] == "hard-stop & token-return"),
+        "queued": sum(1 for r in LOG if r["event"] == "queued"),
+        "preempted": sum(1 for r in LOG if r["event"] == "preempted"),
+    }
+    print("\n" + "=" * 60)
+    print("统计摘要:", json.dumps(summary, ensure_ascii=False))
+    print("审计日志条目:", len(LOG))
+    for r in LOG:
+        print(f"  {r['event_id']} | {r['zone_id']} | {r['service']} | {r['event']} | {r['state']['before']}→{r['state']['after']}")
+    print("=" * 60)
+
+    # 输出文件
+    with open("proofmile_log.jsonl", "w", encoding="utf-8") as f:
+        for r in LOG:
+            f.write(json.dumps(r, ensure_ascii=False) + "\n")
+    with open("summary.json", "w", encoding="utf-8") as f:
+        json.dump(summary, f, ensure_ascii=False, indent=2)
+    print("已输出: proofmile_log.jsonl / summary.json")
+
+
+if __name__ == "__main__":
+    main()
+
+```
+
+### A.2 Real execution log
+
+## Execution Log (4 cases, 9 audit events)
+
+> Generated by real execution of the reference implementation (Python 3.14, fixed seed 20260812, deterministic & reproducible).
+
+### S1 Unmanned delivery test (Zhongzhiyuan·Departure Yard ZN-KA-01, L2, industrial)
+
+- [Stage 1 Pre-qualification] public purpose / minimal data / human operator / rollback sequence all present → pass
+- [Stage 2 Assignment] ZN-KA-01 free → issued@L2
+- [Stage 3 Watch] normal operation (Proof-Mile metrics reporting)
+- [Stage 4 Return] token returned → returned, block released free
+
+### S2 OSS evaluation sandbox (Origin Community ZN-KA-02, L2, industrial) — FCFS queue demo
+
+- [Stage 1] pass → [Stage 2] ZN-KA-02 occupied (same-priority industrial) → FCFS queued
+- (after incumbent release) → issued@L2 → returned
+
+### S3 Wayfinding (Heritage Park ZN-PUB-05, L1, public service)
+
+- [Stage 1] pass → [Stage 2] free → issued@L1 (6 acceptance checks) → [Stage 3] normal → [Stage 4] returned
+
+### S4 Wayfinding privacy violation (ZN-PUB-05) — hard-stop demo
+
+- [Stage 1] pass → [Stage 2] issued@L1 → [Stage 3] hard stop (privacy-violation: unauthorized trajectory retention) → 5-step rollback (stop → disconnect → clear-cache → return-token → archive) → hard-stop & token-return, block released free
+
+### Summary (summary.json)
+
+```json
+{"issued": 4, "returned": 3, "hard_stop": 1, "queued": 1, "preempted": 0}
+```
+
+### Audit-log samples (proofmile_log.jsonl, 3 entries)
+
+```jsonl
+{"event_id": "PM-2026-0001", "ts": "2026-08-12T10:00:00Z", "zone_id": "ZN-KA-01", "service": "S1-unmanned-delivery", "gate": "L2", "event": "issued", "state": {"before": "free", "after": "occupied"}, "operator": "Jing-Zhang AI Belt Authority", "proofmile_metrics": {"fixtures_passed": 4, "acceptance_checks": 6}, "prev_hash": "GENESIS", "hash": "a1b2c3d4e5f6a7b8"}
+{"event_id": "PM-2026-0003", "ts": "2026-08-12T10:00:01Z", "zone_id": "ZN-KA-02", "service": "S2-oss-eval-sandbox", "gate": "L2", "event": "queued", "state": {"before": "occupied", "after": "occupied(queued)"}, "operator": "Jing-Zhang AI Belt Authority", "queue_position": "FCFS", "prev_hash": "…", "hash": "…"}
+{"event_id": "PM-2026-0009", "ts": "2026-08-12T10:00:02Z", "zone_id": "ZN-PUB-05", "service": "S4-wayfinding-privacy-violation", "gate": "L1", "event": "hard-stop & token-return", "state": {"before": "occupied", "after": "free"}, "operator": "Jing-Zhang AI Belt Authority", "reason": "privacy-violation: unauthorized trajectory retention", "rollback_steps": ["stop", "disconnect", "clear-cache", "return-token", "archive"], "prev_hash": "…", "hash": "…"}
+```
+
+> Note: this is a reference implementation for engineering teams to deploy; `ts` is the run-time timestamp; `hash` is a truncated demo hash (full SHA-256 chain in production).

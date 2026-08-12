@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "8dbe74ff3862b5f3a88ceefabcda4cdf460df851013ad85db31671154ee32887"
+      "sha256": "23bb90c6da8251b6e7d48686333242c67f7d2b0973bfc3152e75a30bf12f5b3d"
     },
     {
       "path": "agent.json",
@@ -38,7 +38,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "32e1fd1211616af2deefa2fdecff95df1b02caa470c62c455eb462a0546790f7"
+      "sha256": "bd0248a13f47b251eb304ef9066f170555099dcde837207ca19be0097a6d7594"
     },
     {
       "path": "assumptions.json",
@@ -50,38 +50,38 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "8aae0687e4f2a9914b74c60d083796b5b021f5c3a25303ee94be80b29ef94c49"
+      "sha256": "3d0fb916f394a6b772a2927e62a313c9cf7ed4e99d28790ded155b4fac785e61"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "20881a13014fe4a0645a20e3ce48e8d4530ebbabfee62b12c9880437e8beef2a"
+      "sha256": "5e3934f3afa54e6a8bd31201757ad25cc6e476d8ccba303224b540986454e23f"
     },
     {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "ab1aecb8e9c0ea42e0aedefbb1b91b96e1b404f1174b97761d642bb2eb216c45"
+      "sha256": "2cc4bca17cbf6817fec7443b3acf6e4e45dfb2f72e6a657039df65148438c601"
     },
     {
       "path": "standard_matrix.json",
       "role": "standard_matrix",
       "required": true,
-      "sha256": "5bab873b4391f0735b436404e8dd0adb947085946fdb194be753b9ef4497a811"
+      "sha256": "a3272ade13f859385a6439e889bb29a0d0548dbaaa03bd4d83cec83408fee8d8"
     },
     {
       "path": "design_depth_matrix.json",
       "role": "design_depth_matrix",
       "required": true,
-      "sha256": "49c9acc9632657e14ca5a39f2e8ae27e106313c3b55c1bec3f82007ba81f4d8c"
+      "sha256": "5b60ac561d2bfae672fa08bd0a69c56d2b1b6c72b15e66b33400b1a7d0f9d5eb"
     },
     {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "279b981442ea6a3622e19a129bad7e5c60029499153575b4113d680260692b49"
+      "sha256": "8c5621ad6098b8621a9420ba826d9ddd92bf5bc2b42045327b5bef2fc4761dbc"
     },
     {
       "path": "report/narrative.md",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "c49d8a607b56952123b2ba980e7d94111711d7fead47f8416bd1e77f05f3583c"
+      "sha256": "ff5e944259c2441ec42557f59776ae7e1e57e91163144446e9759f8940ea2b88"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "67529e38daa2fa1039984b3feeb8dfc9fc069416fb22d89653ca962e748b65d9"
+      "sha256": "2a36a5759ef7e4d1036a51451c303f09c5388f6a583990a43539f6533ac77494"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "1fef6f08bbbf9899e27abb5b7e602ce86e4cf4d722676878103d29b9fce22c72"
+      "sha256": "bc81d9130e4a026b7d6d2861b8763a30e01e411a60ab961da7d7f694c854f251"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -287,10 +287,11 @@
     },
     {
       "path": "visual/assets/switch-protocol.json",
-      "role": "switch_protocol",
+      "role": "other",
       "required": false,
       "language": "neutral",
-      "sha256": "66bf846dc5d2619f377d05c1c77e9818e6266509d92ae21ac1ccff1c3082929d"
+      "sha256": "c4b66fffeed7af734a05ec2a771eeebb431ac1fbf504c507fb05042ab66625f2",
+      "role_detail": "switch_protocol"
     },
     {
       "path": "assets/figures/greenway-section.png",
@@ -346,6 +347,20 @@
       "description_zh": "概念封面：场地走廊+道岔符号+一岔三场两翼品牌区；PIL 确定性渲染，非现场照片。",
       "description_en": "Conceptual cover: site corridor, switch symbol, one-switch-three-yards-two-sidings brand zone; deterministic PIL rendering, not site photography.",
       "sha256": "d244126fbd5514e4883e6b2d00dde3f5f3f018e957bb52711993acd61a60281e"
+    },
+    {
+      "path": "changelog.md",
+      "role": "changelog",
+      "required": false,
+      "language": "zh",
+      "sha256": "a764166dd5df27b5a054efb06dd4f59d5535f3ef74678593e9c3427bb958466e"
+    },
+    {
+      "path": "visual/assets/verify_switch_protocol.js",
+      "role": "verification_script",
+      "required": false,
+      "language": "neutral",
+      "sha256": "95ca3c0e6297a123583a3deb04bed7a08c254fdd14c71351ec69c4f3cf63734f"
     }
   ],
   "validation_claim": {

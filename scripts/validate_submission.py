@@ -17,6 +17,8 @@ from dataclasses import dataclass, field
 from pathlib import Path, PurePosixPath
 from typing import Iterable
 
+from front_matter import parse_front_matter
+
 
 POLICY_ROOT = Path(__file__).resolve().parents[1]
 PERSISTED_READINESS_CONTRACT = "persisted-self-check-v1"
@@ -444,26 +446,6 @@ def load_changed_files(args: argparse.Namespace) -> list[str]:
         if item.strip():
             normalized.append(normalize_changed_path(item))
     return sorted(dict.fromkeys(normalized))
-
-
-def parse_front_matter(text: str) -> tuple[dict[str, str], str]:
-    text = text.lstrip("\ufeff\n")
-    if not text.startswith("---\n"):
-        return {}, text
-    end = text.find("\n---", 4)
-    if end == -1:
-        return {}, text
-    raw = text[4:end].strip()
-    body = text[end + len("\n---") :].lstrip("\n")
-    metadata: dict[str, str] = {}
-    for line in raw.splitlines():
-        line = line.strip()
-        if not line or line.startswith("#") or ":" not in line:
-            continue
-        key, value = line.split(":", 1)
-        value = value.strip().strip('"').strip("'")
-        metadata[key.strip()] = value
-    return metadata, body
 
 
 def requires_bilingual_display(repo_root: Path, proposal_dir: str) -> bool:
@@ -993,6 +975,10 @@ def load_string_enums(repo_root: Path, relative_path: str) -> dict[str, set[str]
     }
 
 
+def allowed_values_hint(values: set[str]) -> str:
+    return ", ".join(sorted(values))
+
+
 def load_required_standard_ids(repo_root: Path) -> set[str]:
     standards_path = policy_file(repo_root, "brief/site-package/standards/standards.json")
     if not standards_path.exists():
@@ -1195,28 +1181,49 @@ def validate_geojson_file(
                 report.add_error(f"{feature_label}: missing property `{key}`")
         layer = properties.get("layer")
         if allowed_layers and layer and layer not in allowed_layers:
-            report.add_error(f"{feature_label}: unknown layer `{layer}`")
+            report.add_error(
+                f"{feature_label}: unknown layer `{layer}`; allowed: "
+                f"{allowed_values_hint(allowed_layers)}"
+            )
         source_type = properties.get("source_type")
         allowed_source_types = source_enums.get("source_types", set())
         if allowed_source_types and source_type and source_type not in allowed_source_types:
-            report.add_error(f"{feature_label}: unknown source_type `{source_type}`")
+            report.add_error(
+                f"{feature_label}: unknown source_type `{source_type}`; allowed: "
+                f"{allowed_values_hint(allowed_source_types)}"
+            )
         confidence = properties.get("confidence")
         allowed_confidence = source_enums.get("confidence_levels", set())
         if allowed_confidence and confidence and confidence not in allowed_confidence:
-            report.add_error(f"{feature_label}: unknown confidence `{confidence}`")
+            report.add_error(
+                f"{feature_label}: unknown confidence `{confidence}`; allowed: "
+                f"{allowed_values_hint(allowed_confidence)}"
+            )
         geometry_role = properties.get("geometry_role")
         allowed_roles = source_enums.get("geometry_roles", set())
         if allowed_roles and geometry_role and geometry_role not in allowed_roles:
-            report.add_error(f"{feature_label}: unknown geometry_role `{geometry_role}`")
+            report.add_error(
+                f"{feature_label}: unknown geometry_role `{geometry_role}`; allowed: "
+                f"{allowed_values_hint(allowed_roles)}"
+            )
         land_use_code = properties.get("land_use_code")
         if land_use_codes and land_use_code and str(land_use_code) not in land_use_codes:
-            report.add_error(f"{feature_label}: unknown land_use_code `{land_use_code}`")
+            report.add_error(
+                f"{feature_label}: unknown land_use_code `{land_use_code}`; allowed: "
+                f"{allowed_values_hint(land_use_codes)}"
+            )
         road_class = properties.get("road_class")
         if road_classes and road_class and str(road_class) not in road_classes:
-            report.add_error(f"{feature_label}: unknown road_class `{road_class}`")
+            report.add_error(
+                f"{feature_label}: unknown road_class `{road_class}`; allowed: "
+                f"{allowed_values_hint(road_classes)}"
+            )
         building_type = properties.get("building_type")
         if building_types and building_type and str(building_type) not in building_types:
-            report.add_error(f"{feature_label}: unknown building_type `{building_type}`")
+            report.add_error(
+                f"{feature_label}: unknown building_type `{building_type}`; allowed: "
+                f"{allowed_values_hint(building_types)}"
+            )
         if not isinstance(geometry, dict):
             report.add_error(f"{feature_label}: geometry must be an object")
         elif not geometry_coordinates_are_valid(geometry):
@@ -1586,6 +1593,10 @@ def validate_manifest_file(report: ValidationReport, repo_root: Path, proposal_d
                     report.add_error(message)
                 else:
                     report.add_warning(message + " (legacy package compatibility)")
+            elif declared_digest and safe_path == "manifest.json":
+                report.add_error(
+                    f"{proposal_dir}/manifest.json: manifest.json must not declare sha256; remove the field"
+                )
             elif declared_digest:
                 actual_digest = hashlib.sha256(listed_file.read_bytes()).hexdigest()
                 if declared_digest != actual_digest:

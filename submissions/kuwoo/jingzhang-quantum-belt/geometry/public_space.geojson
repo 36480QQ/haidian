@@ -661,6 +661,126 @@
           39.946
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "id": "SCN-18",
+      "properties": {
+        "id": "SCN-18",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "量子安全实验室 Quantum Security Lab",
+        "scenario_type": "industry"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3445,
+          40.012
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SCN-19",
+      "properties": {
+        "id": "SCN-19",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "量子中继节点·清河桥 QKD Relay Qinghe",
+        "scenario_type": "relay"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.346,
+          40.018
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SCN-20",
+      "properties": {
+        "id": "SCN-20",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "量子中继节点·知春路 QKD Relay Zhichun",
+        "scenario_type": "relay"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.348,
+          40.0015
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SCN-21",
+      "properties": {
+        "id": "SCN-21",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "量子中继节点·蓟门桥 QKD Relay Jimen",
+        "scenario_type": "relay"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.349,
+          39.97
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SCN-22",
+      "properties": {
+        "id": "SCN-22",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "量子中继节点·西直门方向 QKD Relay Xizhimen",
+        "scenario_type": "relay"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.346,
+          39.941
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SCN-23",
+      "properties": {
+        "id": "SCN-23",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "量子安全产业就业服务中心 Quantum Security Industry Service",
+        "scenario_type": "industry"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.35,
+          39.9905
+        ]
+      }
     }
   ]
 }

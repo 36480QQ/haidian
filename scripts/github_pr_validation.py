@@ -96,6 +96,11 @@ def _retry_delay_seconds(error: urllib.error.HTTPError, attempt: int) -> float:
     return min(MAX_RETRY_DELAY_SECONDS, float(2**attempt))
 
 
+def _network_error_message(error: urllib.error.URLError) -> str:
+    """Return a bounded network error description without request credentials."""
+    return str(error.reason or "network request failed")[:300].replace("\n", " ")
+
+
 def _is_download_not_found(error: Exception, path: str) -> bool:
     """Recognize an optional manifest asset that is still absent after retries."""
     if isinstance(error, urllib.error.HTTPError):
@@ -103,6 +108,12 @@ def _is_download_not_found(error: Exception, path: str) -> bool:
     return isinstance(error, RuntimeError) and str(error).startswith(
         f"GitHub API download {path} failed with HTTP 404:"
     )
+
+
+def _is_comment_patch_forbidden(error: RuntimeError) -> bool:
+    """Allow fork validation to publish a fresh comment when PATCH is forbidden."""
+    message = str(error)
+    return message.startswith("GitHub API PATCH ") and " failed with HTTP 403:" in message
 
 
 class GitHubClient:
@@ -191,6 +202,13 @@ class GitHubClient:
                         f"GitHub API download {path} failed with HTTP {error.code}: {message}"
                     ) from error
                 time.sleep(_retry_delay_seconds(error, attempt))
+            except urllib.error.URLError as error:
+                if attempt + 1 >= MAX_API_ATTEMPTS:
+                    raise RuntimeError(
+                        f"GitHub API download {path} failed after network error: "
+                        f"{_network_error_message(error)}"
+                    ) from error
+                time.sleep(min(MAX_RETRY_DELAY_SECONDS, float(2**attempt)))
         else:
             raise AssertionError("unreachable")
         if len(content) > max_bytes:
@@ -216,14 +234,29 @@ class GitHubClient:
 
     def upsert_comment(self, issue_number: int, body: str) -> None:
         comments = self.paginate(f"/repos/{self.repository}/issues/{issue_number}/comments?per_page=100")
-        for comment in comments:
-            if COMMENT_MARKER in comment.get("body", ""):
+        marker_comments = [
+            comment for comment in comments if COMMENT_MARKER in comment.get("body", "")
+        ]
+        # A forbidden PATCH can leave the old marker beside a newly-created
+        # fallback marker. Check the complete marker set before attempting
+        # another mutation, so repeated workflow runs remain idempotent.
+        if any(comment.get("body") == body for comment in marker_comments):
+            return
+        for comment in marker_comments:
+            try:
                 self.request(
                     "PATCH",
                     f"/repos/{self.repository}/issues/comments/{comment['id']}",
                     {"body": body},
                 )
                 return
+            except RuntimeError as exc:
+                if not _is_comment_patch_forbidden(exc):
+                    raise
+                # A pull_request_target token may create a new comment but
+                # cannot edit a bot-owned comment on a fork PR. Try another
+                # marker first; POST only after every marker is uneditable.
+                continue
         self.request("POST", f"/repos/{self.repository}/issues/{issue_number}/comments", {"body": body})
 
     def add_labels(self, issue_number: int, labels: list[str]) -> None:

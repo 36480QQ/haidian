@@ -14,7 +14,7 @@
     "model_family": "gpt",
     "model_detail": "OpenAI Codex, GPT-5 model family; exact service-side deployment snapshot is not exposed to the agent."
   },
-  "generated_at": "2026-08-10T03:54:07Z",
+  "generated_at": "2026-08-11T16:06:29Z",
   "files": [
     {
       "path": "manifest.json",
@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "8eed1b14ee5553bf1b70a8e8395898846d1f15b156c616dfb4af340e0db64cd3"
+      "sha256": "de55a80e25952bbb756c9a6a709e3cae60ec404eaaa2977eca462423bb439448"
     },
     {
       "path": "agent.json",
@@ -50,13 +50,13 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "f7817e241e9b16d8ca1caf72072dc14b1db2b71741347ae2f6477dd72546fd17"
+      "sha256": "574a9778ceedd5329e7d294651dd9dfa5c359dd57f4fe2310c23b6ff24c2b255"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "e622d6470b4bf00c1ab5a4e61afc44fadfea620220e4c93c9645c2499788cbea"
+      "sha256": "2312b0bc528799bb6223d4fb90f4df9d03698de947cf34d8edb4f5856f9f24da"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "f8cf91ce4d138464ae43da4b02067b3ae4f943aef9e5e5e4f9a7bce9c67cdcef"
+      "sha256": "7800d650016efcff49f2e52fb6a102724897255069365208c8c9030f57968534"
     },
     {
       "path": "report/narrative.md",
@@ -93,21 +93,21 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "a1cb02463e61b4fbb7c062fe243c7a51cef99758d71e8df9a114fefb88d7be60"
+      "sha256": "a9b692fc154ae0dca16dd9a91ebe62efdb32567f172a0c60b96fd992010968ea"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "c46a8daa233bd2b0c244f5700ce4d39607d98a32c96e22c77bb731c27f11c179"
+      "sha256": "c9cadae87c8559eb92cdc8669ac4cfc8954f94e42344bdc0bf2d3a62b21a0ffb"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "e1853495448fbe7f3e15a2b35fe7ac08d47b099bd34e599bb4864249aa59e8d2"
+      "sha256": "9d9cf1e47a049f8b9627f1c5b196569f3d1f7d803229e0484f4885e504fdbe50"
     },
     {
       "path": "visual/index.html",
@@ -121,35 +121,35 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "bc2e368cd07a8f7260c42dc7b80bfdea010d7a1155718a54932bea8ca4b96641"
+      "sha256": "8516a8842312c87d317edb548c8cff90f7fb87950f7460b06e8f98a86bec4c33"
     },
     {
       "path": "assets/figures/land-use-structure.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "410a1383d234047237762af55e0a4ee8c85fd9f6b89ceab12f31f80afa9fec99"
+      "sha256": "e0fe3699a875af1db73f4ce12bb7ad96bb538810257f348861a360aa5d304f23"
     },
     {
       "path": "assets/figures/metrics-evidence.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "46c9ebdf63ee7bd511c2942bf88a0ce1091d67cc199023edd2729442b79c95c0"
+      "sha256": "92f692a1904f497dd2146daa961871ef95ad7868c89f81aab1e89ea3bb1481fd"
     },
     {
       "path": "assets/figures/mobility-bluegreen.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "05d347d8d799cd76b3aa33eba769abbcfabd0a5783903398e7ee5d02591b4f99"
+      "sha256": "e8f0c8d83e5d767650f7c8f410ceb655ddde519ff5be618185d9f5d41cdb2c93"
     },
     {
       "path": "assets/figures/site-overview.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "3e4d475c20af106eb806d6c4efc941488dbe5e958e8e9813c5b48e7bb2beba95"
+      "sha256": "f9d46f5df97c9c08092f1f7b77e46c695fd2e1db69406e100738d3bd57906271"
     },
     {
       "path": "geometry/buildings.geojson",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "6a3227effbd45fd4096bb46ba14ff0e1ee97012c7f04b575cf01c0c2be6436d7"
+      "sha256": "fe9cc382bfe094908ee1823ae2bb6904668db89fbed32bdbff9f686a407f15e4"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "f26bd94e91f89801830c1fde2301bbc614156cbeeba75b69823dfbd34b95cb7c"
+      "sha256": "3ef453a83c6677098eff294130df19a5a098fbb372497460368ca373d79ff923"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -227,7 +227,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "c354cda945673f926cfdd58ddabbd78b09e9023297dc648bf2b874fd91b0a8df"
+      "sha256": "bb09b5a1bea56b521603817124a862b3514dffe6fcb2a5a39ffac0bf0aade1b2"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -235,7 +235,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "e888b464649edcce4690f54edcd7ca63f3223ff4abfdfc88979f5ec82fb71c1b"
+      "sha256": "2c0d8859db77d9554891ad0efb2ff221ce5065db02b51bade4d2212d65cd84d8"
     },
     {
       "path": "visual/index.en.html",
@@ -251,7 +251,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/key-areas.png",
-      "sha256": "94b8f3a98124fb51cd10e3a7e87f6b5fcfbe5739f5b64c45ecfd988a26ebed91"
+      "sha256": "5717d6ef87bc8184efda5b8ec803e3a5cba9ea1118cc591520bb753210aff13e"
     },
     {
       "path": "assets/figures/land-use-structure.en.png",
@@ -259,7 +259,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/land-use-structure.png",
-      "sha256": "176b2d07045771a4e307171e8d2b4b6217066d42c5d6a15e32a3e609a42fe174"
+      "sha256": "64245ea758651fcf876d89d414960b26f7611e9e78d0e3517b0fe153b533b862"
     },
     {
       "path": "assets/figures/metrics-evidence.en.png",
@@ -267,7 +267,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/metrics-evidence.png",
-      "sha256": "25b0a8e084b88bfc59ff33beb20e5b0a941db48f6b959046e2f1043ab276f9a9"
+      "sha256": "d87234b7aee8e2d449608bc96a867c55202427549fadd3bc9a1dacbd8e57c804"
     },
     {
       "path": "assets/figures/mobility-bluegreen.en.png",
@@ -275,7 +275,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/mobility-bluegreen.png",
-      "sha256": "76ede8cf5e3abed3e0e67cbb2faea72ce65669b0c026fd39f5163e32179f0216"
+      "sha256": "1f0c4c457d207540304b888c2622ed64760693c29847a40a9fe695b98cd0feee"
     },
     {
       "path": "assets/figures/site-overview.en.png",
@@ -283,12 +283,52 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/site-overview.png",
-      "sha256": "b2a42785e430a4e268cfb5423d3b4df26614df83af4a752bae019e95733dc1ee"
+      "sha256": "41c59325712b38e5a540e031cb094937435fa21607b08f027dccc4e11d126b25"
+    },
+    {
+      "path": "changelog.md",
+      "role": "changelog",
+      "required": false,
+      "sha256": "538258f410808274c006d43e2c3b7b7b3b2b1d4430d2b3d88429b83c1fd7e0a1"
+    },
+    {
+      "path": "assets/media/zhongzhiyuan-living-lab.webp",
+      "role": "media_poster",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "众智园全栈验证花园概念效果图",
+      "title_en": "Zhongzhiyuan Full-Stack Validation Garden concept view",
+      "description_zh": "成熟树荫、雨水花园、连续无障碍步行与可拆验证设施的非建成概念效果图。",
+      "description_en": "Unbuilt concept view of mature shade, rain gardens, continuous accessible walking and demountable validation facilities.",
+      "sha256": "7095f9eaab74295f83508a0148a34ba259d1aed6aea737e0f5cf4f4932f0bfbf"
+    },
+    {
+      "path": "assets/media/ai-origin-commons.webp",
+      "role": "media_poster",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "北京AI原点首层共创公地概念效果图",
+      "title_en": "Beijing AI Origin ground-floor commons concept view",
+      "description_zh": "既有街区中以连续无高差前场嵌入共享工坊与人工服务的非建成概念效果图。",
+      "description_en": "Unbuilt concept view of shared workshops and staffed service inserted into an existing block with a continuous step-free forecourt.",
+      "sha256": "90c33ef86092e94c852126953ec90c0962679dff44601b93c99aea5668c00dbd"
+    },
+    {
+      "path": "assets/media/dazhongsi-living-circle.webp",
+      "role": "media_poster",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "大钟寺十五分钟生活客厅概念效果图",
+      "title_en": "Dazhongsi 15-minute living room concept view",
+      "description_zh": "在既有混合街区嵌入全天候门廊、社区市集、维修、照护与人工问询的非建成概念效果图。",
+      "description_en": "Unbuilt concept view of an all-weather porch, neighborhood market, repair, care and staffed inquiry embedded in an existing mixed block.",
+      "sha256": "777962f35aa4d31217d893b17ff2618dcf3aca8c22f4207df450a84b79ed37f9"
     }
   ],
   "validation_claim": {
-    "self_checked": false,
+    "self_checked": true,
     "known_blockers": [],
-    "data_confidence": "medium"
+    "data_confidence": "medium",
+    "readiness_contract": "persisted-self-check-v1"
   }
 }

@@ -86,7 +86,7 @@ The evidence is organized into four tiers, each limited to a role consistent wit
 
 ### Evidence Is Not a One-Time Snapshot: Expiry Must Propagate Downstream
 
-`sources.json` records 29 sources and their access dates, but access on the same date does not mean that content remains valid indefinitely, nor does it reveal later revisions, replacement, unavailability, or the substitution of an official boundary for a provisional one. The new `visual/assets/evidence-freshness-policy.json` groups sources into project materials, provisional spatial data, urban context, policies and standards, and case references, then specifies review triggers, recommended maximum periods without re-verification, responsible roles, and invalidation actions. When a source becomes `review_due`, `superseded`, or `unavailable`, affected claims, matrix items, and scenario gate levels must be downgraded or frozen accordingly. The package currently confirms access dates only; it does not claim that a refresh audit with content summaries has been completed, so the completed-refresh count remains 0. Provisional spatial data remains `provisional_only` regardless of how recently it was accessed [data:visual/assets/evidence-freshness-policy.json#FRESH-01] [data:visual/assets/evidence-freshness-policy.json#FRESH-02].
+`sources.json` records 35 sources and their access dates, but access on the same date does not mean that content remains valid indefinitely, nor does it reveal later revisions, replacement, unavailability, or the substitution of an official boundary for a provisional one. `visual/assets/evidence-freshness-policy.json` groups sources into project materials, provisional spatial data, urban context, policies and standards, case references, and the Round 8–9 package-authored concept materials, then specifies review triggers, recommended maximum periods without re-verification, responsible roles, and invalidation actions. When a source becomes `review_due`, `superseded`, or `unavailable`, affected claims, matrix items, and scenario gate levels must be downgraded or frozen accordingly. The package currently confirms access dates only; it does not claim that a refresh audit with content summaries has been completed, so the completed-refresh count remains 0. Provisional spatial data remains `provisional_only` regardless of how recently it was accessed [data:visual/assets/evidence-freshness-policy.json#FRESH-01] [data:visual/assets/evidence-freshness-policy.json#FRESH-02] [data:visual/assets/evidence-freshness-policy.json#FRESH-06].
 
 The professional response separates standards by question instead of stacking identifiers behind one conclusion:
 
@@ -272,9 +272,33 @@ Haidian’s latest public requirements prioritize three groups: leading research
 | Older people and people with reduced mobility | Continuous accessibility and human assistance | Exclusion through digital barriers | Non-AI access, joint testing, and no withdrawal of staffed service |
 | Tourists and international visitors | Trustworthy multilingual cultural content | False narratives and excessive collection | Source labels, curatorial review, and account-free browsing |
 
-### Non-AI Options Must Complete the Same Basic Task
+### Non-AI-First Public City: Seven Rights and Two Paths to the Same Task
 
-Existing indicators can show that nine public nodes declare non-AI access and that twelve scenarios declare manual fallback, but they cannot prove that those alternatives are actually usable. The new `visual/assets/non-ai-parity-contract.json` requires every public service seeking entry to G2 or G3 to compare six dimensions: opening hours, basic outcome, cost, rights and grievance, safety and accessibility, and completion time. A person who does not use an account, smartphone, or algorithm must not receive lower eligibility, higher charges, or weaker review rights. No on-site joint-test results currently exist, so all four test journeys remain `unknown`; any permitted completion-time difference must be preregistered after a baseline is obtained rather than invented in the proposal [data:visual/assets/non-ai-parity-contract.json#PARITY-001] [data:visual/assets/non-ai-parity-contract.json#PARITY-004].
+**Core principle.** Non-AI is not a backup button used after AI fails. It is a first-class public-space and service infrastructure on the continuous civic track. A person must first be able to read a physical rights legend and use paper, speech, physical wayfinding, or staffed service along a continuous non-AI/accessibility-intent line, and may then choose bounded AI assistance voluntarily. The interfaces may differ, but both paths must reach the same essential outcome, eligibility, cost rule, accountable queue, appeal and correction rights, and stop/recovery route. “Permanent” means these design rights may not be removed from any future offered service window; it does not claim that the three places currently have fixed hours, assigned staff, or an approved service [data:visual/assets/non-ai-parity-contract.json] [assumption:A-NON-AI-FIRST-013].
+
+| Seven permanent public rights | Spatial and service requirement | Unacceptable counterexample |
+|---|---|---|
+| 1. No account or QR code | Entry, orientation, the basic task, complaint, and exit do not depend on an account, QR code, smartphone, or personal device | Entry is nominally open but service, ticketing, or appeal requires a scan |
+| 2. Complete non-AI path | Paper, oral, physical-wayfinding, or staffed channels actually reach the same essential outcome | A sign says “ask staff” but no task-completing handoff chain exists |
+| 3. Continuous accessibility intent | The ordinary route and service sequence are continuous by design; activities, queues, cables, and equipment may not occupy them. Field compliance still requires survey, co-testing, and professional review | A green line is presented as proof of existing accessibility compliance |
+| 4. Staffed service and handoff | When a future service is offered, a visible or callable human route receives, explains, safely refuses, or transfers the same task | Volunteers or event staff are presented as stable duty bearers |
+| 5. Consent can be withdrawn | Passage and basic service do not depend on co-testing or data processing; withdrawal can be oral, on paper, or through staff | Withdrawal is possible only by returning to a digital interface |
+| 6. Appeal and correction | Complaint, evidence supplement, correction, suspension, status query, and review enter the same accountable queue across channels | A non-AI request is deprioritised or receives no durable status reference |
+| 7. Screen-free and quiet | Screen-free waiting, physical information, and quiet rest remain; sound, light, queues, and events yield to ordinary movement and the quiet baseline | Persistent displays, announcements, or event intensity substitute for public service |
+
+**Dual-entry service blueprint.** The common entry first shows the seven rights and six civic signals. The primary route is “paper/oral task entry → screen-free waiting and physical status → dual-entry staffed desk → same basic task → paper/oral complaint, withdrawal, or correction → technology-free exit.” The optional AI route begins only after plain-language disclosure and separate voluntary consent, then rejoins the same staffed desk and accountable queue. Any hard failure stops the automated overlay while ordinary passage and the non-AI task remain, or a safe refusal and accountable handoff are provided. Temporary sound, light, screens, queues, collection, and equipment leave; restart cannot be discussed until independent retest and place restoration close [data:visual/assets/non-ai-parity-contract.json#service_blueprint].
+
+![Non-AI-first public-service blueprint: seven rights, two paths to the same task, three places, and group acceptance](assets/figures/non-ai-service-blueprint.en.png)
+
+| Switchyard | Continuous ordinary path and non-AI entry | Optional AI overlay | Stop and recovery |
+|---|---|---|---|
+| Zhongzhiyuan VERIFY | Continuous bypass and observation, physical state sign, staffed takeover point, and paper stop or appeal | Bounded offline proof only after future gates | Boundary breach, collision, failed detour, nuisance, or failed takeover isolates equipment while the ordinary path remains; equipment, cables, enclosure, sound, light, and queue leave before independent path and place recheck |
+| Origin Community CO-CREATE | Continuous daily street, screen-free waiting, paper or oral issue, staffed explanation, and withdrawal | Voluntary co-learning separated from passage and basic service | Failed withdrawal, safeguarding gap, material group disparity, amplified nuisance, or quiet-baseline failure stops collection and matching; paper and staffed service remain, digital/event overlays leave, and resident daily use returns |
+| Dazhongsi PUBLISH | Continuous four-way walking, physical source status, dual-entry staffed desk, and paper correction or appeal | Source-bounded navigation beside rather than over staffed service | Stale/conflicting sources, diagnosis-like output, failed handoff, blocked commuting, or unequal grievance takes automation offline; staffed and source-list service remain, the queue is corrected, event kit leaves, and all four movement arms are retested |
+
+**Accept each group separately; do not hide exclusion inside an overall average.** Older people must complete “find the right—ask orally—wait without a screen—complete the task—correct/withdraw—leave without an account.” Disabled people and people with reduced mobility must complete the same route and service sequence with needed communication or mobility support and no activity obstruction. People with low digital literacy must discover the non-AI choice without prompting, understand the next step, complete it, query status, and seek correction. People without an account or smart device must receive a durable status reference, enter the same queue, and retain the same cost and review rights. Each group records completion/abandonment, route or communication breaks, unplanned handoff, waiting and extra-step burden, rights understanding, and complaint/withdrawal/correction outcomes separately. Denominators, thresholds, and results require consent, a field baseline, and preregistration; all currently remain `unknown / not measured` [data:visual/assets/non-ai-parity-contract.json#group_acceptance].
+
+**Reality-maturity self-check.** The structured contract now contains seven rights, three place-service contracts, four group-acceptance structures, and six same-task journeys. These are documentation coverage, not field performance. Confirmed operators: 0; confirmed service staff: 0; real service interactions: 0; known group results: 0; real approvals and operations: 0. The ten-case T-02 synthetic decision replay proves G0 contract logic only and does not prove that a non-AI path is available. Exact service points, windows, staffed capacity, accessibility compliance, group samples, thresholds, complaint performance, and recovery performance remain unknown. Every scene remains G0; provisional boundaries, scene IDs, and rights status are unchanged [metric:non_ai_permanent_public_right_count] [metric:non_ai_observed_real_service_interaction_count] [data:visual/assets/key-area-evidence-matrix.json#non_ai_first_public_city_contract].
 
 ### Four-Gate System and Scenario Passports
 
@@ -360,6 +384,62 @@ The loop starts when an issue enters, but it must not be presented as a collecte
 The human journey makes maintenance workers, cleaners, staffed service workers, curators, and accessibility co-testers visible. They may receive, decline, or transfer an issue; no real work order exists before responsibility is accepted. A failed independent recheck, repeated failure, missing safe staffed route, or inability to restore daily use triggers stop, removes the temporary layer, and returns to the ordinary baseline. The quarterly maintenance map is a blank template for reviewing task family, existing scene/project, failure type, and retirement decision; it cannot display real complaints, budgets, or performance. `maintenance_urbanism_contract` stores these fields, the 12-scene-to-existing-project mapping, and zero/unknown reality counters in auditable form [data:visual/assets/key-area-evidence-matrix.json#maintenance_urbanism_contract] [assumption:A-MAINTENANCE-URBANISM-012].
 
 ![Maintenance urbanism: issue shells, visible human labour, existing-facility-first action, recheck decisions, repeated-failure siding, and restoration of the ordinary baseline (concept contract; real work orders: 0)](assets/figures/implementation-roadmap.en.png)
+
+### AI urban metabolism: twelve scenes, seven resources, complete exit
+
+This round still adds no scene, project, geometry, or maturity. It creates twelve G0 resource passports for the existing `SCENE-001`—`012`. Each passport records seven resources together: compute; energy; equipment and materials; data; human review; vendor dependency; and failure/exit cost. The boundary extends beyond the server to edge and network, public or personal end devices, sensing/display/fixings, staffed and non-AI baselines, and place accessibility, quiet, and restoration. **Complete fields prove design coverage only; they do not prove energy saving, carbon reduction, low cost, procurement, or operation** [data:visual/assets/urban-metabolism-ledger.json#resource_dimensions] [metric:urban_metabolism_scene_resource_passport_count].
+
+| Key area | Four existing scenes | Metabolic burdens that must remain visible | First exit questions |
+|---|---|---|---|
+| Zhongzhiyuan | `SCENE-001`—`004` | Mobile equipment and batteries, edge/network, incident material, human takeover, and long-lived archives | How are devices isolated, repaired, returned, or recycled; what minimum incident record remains; how is the continuous bypass restored? |
+| Origin Community | `SCENE-005`—`008` | Media/source rights, shared devices, consent and withdrawal, safeguarding/curation/co-testing labour, quiet clearance | How are records withdrawn or deleted; how does event kit leave; how do the two courts and daily street return first to resident use? |
+| Dazhongsi | `SCENE-009`—`012` | Route and authoritative-source updates, sensors/terminals, prohibited sensitive inference, staffed desk, four-way commuting | How does the automated layer go offline; how are records exported and corrected; how do same-task staffed service and four-way walking remain? |
+
+Any intensity or “greener” comparison first requires a public-readable task denominator, ordinary non-AI comparison, included whole-system components, time window, completion/abandonment rule, and group disaggregation where rights may differ. The current count of valid project denominators is 0. Energy, compute, human minutes, and equipment life are `not_measured`; vendor, equipment-lifecycle, and responsibility acceptance are `external_confirmation_required`; data and rights remain `not_fully_cleared`. Industry averages, nameplates, vendor material, simulation values, and sensor counts cannot substitute for project measurement [data:visual/assets/urban-metabolism-ledger.json#denominator_contract] [metric:urban_metabolism_measured_energy_scene_count] [metric:urban_metabolism_confirmed_vendor_scene_count] [assumption:A-URBAN-METABOLISM-014].
+
+Exit means more than “switch off.” Every component needs a destination: retain an existing facility; repair/reuse on site; redeploy elsewhere; return to supplier; compliant recycling or disposal; data export—deletion—minimum-log closure; and restoration of the ordinary place plus same-task staffed/non-AI service after cables, fixings, signs, queues, and temporary equipment leave. If denominator, source, responsibility, vendor export/repair terms, component destination, ordinary path, or independent retest is open, the decision remains `NO-GO / G0`. Even a future test `PASS` is not deployment authorization, site approval, procurement approval, rights clearance, or environmental benefit [data:visual/assets/urban-metabolism-ledger.json#public_decision_gate].
+
+![Jing-Zhang AI urban metabolism ledger: whole-system boundary, twelve scenes in three places, seven resources, exit destinations, and explicit unknowns (G0; measured energy/compute/human minutes = 0 scenes)](assets/figures/urban-metabolism-ledger.en.png)
+
+### Antifragile failure governance: write back every stop; never turn recovery into authorization
+
+The proposal already has a failure siding, ordinary–verification–fault–recovery states, a civic timetable, scene passports, and the T-02 synthetic replay. This round draws no duplicate siding and creates no new governance brand. It closes the most important gap inside existing JZ-AIOS: each pause, review, recovery, withdrawal, or retirement prepares one atomic writeback across the **scene passport—civic timetable—evidence matrix**. If a carrier is missing, version-inconsistent, or contradictory, the public interface shows the more conservative combination, the ordinary/non-AI path takes priority, and restart is prohibited. Runtime, maturity, authorization, and service remain separate axes. Restoring ordinary use neither advances G0 nor creates deployment authorization [data:visual/assets/failure-governance-register.json#three_carrier_writeback_contract] [data:visual/assets/key-area-evidence-matrix.json#antifragile_failure_governance_contract] [assumption:A-ANTIFRAGILE-GOVERNANCE-015].
+
+Six failure classes enter one grammar: safety/accessibility; rights, consent, and prohibited data; source, version, and reproducibility; service and staffed handoff; evidence and decision; and place restoration and exit. The first two trigger an immediate hard stop. Source/version failure freezes output and preserves prior evidence. If the staffed path is missing, automation stops while the same-task staffed/non-AI service remains, or a safe refusal is issued. A bad denominator, unsupported evidence, or an appeal excluded from go/no-go holds the decision. If a component, dataset, service, or place has no accountable destination, the system stays stopped or actively retires. Public records disclose only the affected task, failure class, current state, correction, evidence version, ordinary detour, and role type. They exclude complainant identity, sensitive narrative, raw personal data, and any shame ranking [metric:failure_governance_failure_class_count] [metric:failure_governance_real_failure_event_count].
+
+| Carrier | Required on pause | Required on recovery or retirement | Conservative public state when missing |
+|---|---|---|---|
+| Scene passport | Four axes, failure class, stop-authority role, prior version, evidence/appeal refs | New version, independent retest, expiry/withdrawal/retirement, open liabilities | `failure_stop / G0 / not_authorized` |
+| Civic timetable | Public runtime, ordinary/non-AI path, staffed contact, start time, next update | Ordinary-use restoration, available service, source version, detour/exit | Automation unavailable; ordinary path or safe refusal first |
+| Evidence matrix | Claim held or narrowed, evidence anchor, scope, and limitations | Appended correction, prior evidence retained, retest, go/no-go, and “does not authorize” | Claim remains held; an old PASS cannot restart it |
+
+The readable journey uses the T-02 `STOP-STALE-SOURCE` event as a synthetic example: 1) a synthetic request hits a stale-source condition and produces no substantive answer; 2) output freezes while the paper source page and staffed path remain; 3) it hands off to the “source-pack custodian” role, which remains unconfirmed; 4) the same event prepares all three writebacks; 5) a correction version is appended without deleting the old version; 6) an independent role replays the locked condition in full, while completed real retests remain 0; and 7) open evidence means staying stopped or retiring, while closure restores ordinary use only. T-02 remains deterministic, PII-free, free of model/API/real-service calls, and fail-closed. It is not a real incident, service result, or field recovery [data:visual/assets/t02-g0-g1-replay-result.json#STOP-STALE-SOURCE] [metric:failure_governance_completed_real_independent_retest_count].
+
+The public may request stopping or appeal orally, on paper, or through a future real staffed window without an account, QR code, or AI. A decision receipt must record one effect: hold, narrow scope, correct, retest, withdraw, retire, or reasoned no change. New evidence is append-only: a new record links through `supersedes / superseded_by`, and the prior record remains addressable instead of being overwritten. Repeated hard failure, no accountable stop authority, inability to restore the ordinary/non-AI path, an unclosed rights event, an independent retest that cannot reproduce the claim, or an exit without a destination makes active retirement a legitimate NO-GO result. A retirement receipt closes service and authorization, component destinations, data/logs, same-task service, place restoration, unresolved liabilities, and independent acceptance [metric:failure_governance_appeal_decision_change_count] [metric:failure_governance_completed_real_retirement_count].
+
+**Permanent authorization boundary: a file check, synthetic replay, machine PASS, independent retest, or restoration acceptance is valid only for its named object, decision-maker, evidence, scope, and limitations. None authorizes trial, procurement, construction, deployment, maturity advancement, site approval, professional approval, rights clearance, or a real-world outcome claim.** Real failure events, confirmed stop authorities, public corrections, real independent retests, active retirements, and approved restarts all remain 0. Stop-to-staffed-handoff time and ordinary-use-recovery time remain unknown rather than blank or fabricated [metric:failure_governance_confirmed_stop_authority_count] [metric:failure_governance_stop_to_staffed_handoff_time] [metric:failure_governance_ordinary_use_recovery_time].
+
+![Antifragile failure governance: six failure classes, stop/recovery storyboard, atomic three-carrier writeback, four separate axes, appeals, and active retirement (G0 concept contract; real events: 0)](assets/figures/failure-governance-writeback.en.png)
+
+### Climate-resilience proof corridor: establish the ordinary blue-green baseline before any prompting increment
+
+This round creates no separate climate-governance brand and does not rebuild maintenance work orders, the resource ledger, the failure siding, or the rights system. It applies those existing back-stage constraints to one readable climatic relationship. A **continuous ordinary blue-green route—shade and reachable-rest intent—static non-AI notice—manual-inspection handoff—stormwater/ecological-maintenance clear zone** first forms a complete daily baseline. Only under future approved, bounded, accountable conditions may an AI-assisted prompt and a conceptual Xiaoyue River climate-observation edge appear as intermittent, refusible, stoppable, removable overlays. The observation wing is a relational prototype—not an exact riverbank location, existing building, setback, built facility, or engineering conclusion [data:visual/assets/climate-resilience-contract.json#cohesive_work_packages] [data:visual/assets/key-area-evidence-matrix.json#climate_resilience_corridor_contract] [assumption:A-CLIMATE-RESILIENCE-016].
+
+The typical section places three non-competing bands together. The ordinary path and shade/rest intent remain continuous. Stormwater infiltration and overflow, landscape/water inspection, and ecological processes form a clear zone that equipment cannot enter. Removable mounts, power, network, data, signage, and queues may occupy only the service edge. Any overlay that narrows ordinary movement, blocks rest, obscures readable cues, obstructs stormwater or ecological maintenance, lacks human confirmation, or continues activity in extreme weather fails closed: stop the optional layer; remove components and fixings; isolate power/network; close data and service under future approved rules; clear signs and queues; repair surfaces; and obtain independent acceptance of ordinary-place recovery. Sensors cannot replace landscape, water, site, emergency, accessibility, or community judgment. The place and same-task service must remain complete after equipment exits [metric:climate_installed_sensor_or_interface_count] [metric:climate_completed_place_restoration_receipt_count].
+
+| Same task | Primary static non-AI path | Optional AI-assisted branch | Shared stop conditions |
+|---|---|---|---|
+| Receive an understandable, human-confirmed climate-safety action and choose ordinary movement, rest, staffed help, or exit | A high-contrast physical notice uses an approved public source and manual observation, states source/date, action, staffed or paper contact, and exit; no account, QR, screen, sensor, model, or network | Separately disclosed and voluntarily chosen; uses only future approved minimum data; the same human owner confirms the same action vocabulary, ordinary route, staffed handoff, appeal, and exit | stale source, branch disagreement, no human confirmation, inaccessible output, power/network loss, rights event, damage to the ordinary route or maintenance clear zone |
+
+The branches compare the **same task and group-specific outcome**; a faster digital prompt cannot be purchased by weakening static service. A future comparison must separately record completion, abandonment, breaks, waiting, staffed handoff, and rights outcomes for older people, disabled/reduced-mobility users, low-digital-literacy users, and people without a device or account. Real prompt events, false-positive/false-negative results, response times, group outcomes, and confirmed operators currently remain 0 or unknown. Diagram or template completeness and a synthetic PASS cannot prove warning accuracy [metric:climate_real_warning_event_count] [metric:climate_known_warning_performance_count].
+
+The vulnerable-group journey retains one task across four states: 1) in ordinary state, physical wayfinding reaches shade/rest intent, spoken or paper help, and direct exit; 2) in optional-assistance state, the person reads the static notice first and may choose or refuse the branch while retaining the same human, appeal, and exit; 3) in extreme-weather stop, every activity and optional device stops, with a physical safe refusal directing the ordinary exit or staffed handoff; and 4) in recovery, hazards, stormwater/maintenance clear zones, ordinary route, rest intent, physical notice, surfaces, and manual inspection are accepted first while the optional layer remains off. Restoring ordinary use does not advance G0 or create restart authorization [data:visual/assets/climate-resilience-contract.json#vulnerable_group_journey].
+
+Future measurement uses a typed anchor, denominator, and proof limit instead of render precision. Continuous shade length needs a surveyed path segment plus dated solar or observation record. Reachable rest needs a surveyed node plus accessibility co-test. Manual-inspection coverage needs a versioned route log and accountable signature. Warning error needs preregistered same-task events, reference source, and independent retest. Stormwater maintenance needs an official facility inventory, maintenance record, and acceptance. Stop time needs an approved event log and verified timestamp. Equipment exit needs a complete component register and place-restoration receipt. All seven are currently `unknown`, with 0 real field measurements; green ratio states a conceptual geometry ratio only, while the real-measurement count states evidence status only [metric:green_ratio] [metric:climate_real_field_measurement_count]. Continuous-shade and reachable-rest values still require formal survey and co-test. Provisional geometry, conceptual nodes, and sensor counts cannot substitute for microclimate, thermal comfort, hydraulic capacity, sponge performance, or accessibility results [metric:climate_continuous_shade_length] [metric:climate_reachable_rest_node_count].
+
+Seasonal operation states triggers rather than inventing an annual roster. Heat or solar attention begins with inspection of ordinary shade/rest intent and a human-confirmed static notice. Rain or stormwater attention begins by protecting flow, overflow, inspection, and maintenance access. Ecological-maintenance windows take priority, moving equipment and public activity outside the work zone. Extreme weather, unknown hydraulic consequence, maintenance conflict, unavailable accountable staff, or inability to restore the ordinary place requires stopping. Official boundaries, survey, microclimate, stormwater/municipal/ecological conditions, ownership, opening windows, duties and stop authority, professional conclusions, thresholds, equipment, and rights all remain external unknowns rather than climate-performance claims.
+
+![Climate-resilience proof corridor: ordinary blue-green route, shade and rest, stormwater/ecological-maintenance clear zone, manual inspection, same-task prompt comparison, removable service edge, and four-state vulnerable-group journey (G0; field measures, devices, and confirmed duties all 0)](assets/figures/climate-resilience-corridor.en.png)
 
 Eight projects form a renewal package that maps space, protocols, and operations one to one [depth:renewal_project_list]:
 
@@ -466,7 +546,7 @@ All area ratios using the provisional boundary as their denominator have `low` c
 - AI and data risk: Bias, hallucination, privacy leakage, unauthorized automation, and vendor lock-in are controlled through data minimization, retention at source, logging, human responsibility, retesting, expiry, and retirement. Automated enforcement, diagnosis, and substitution for formal approval are prohibited.
 - Safety and resilience risk: Robot, vehicle, and equipment testing occurs only within authorized areas. Physical emergency stops, on-site safety officers, offline human operation, and L0/L1/L2 degradation must remain available. Energy and recovery indicators remain unknown until measured.
 - Cultural and historical risk: Historical facts, people, artifacts, and engineering materials require verification through official, archival, or rights-cleared sources. AI-generated content receives explicit and metadata labels; disputed content can be corrected, removed, and traced [assumption:A-CULTURE-CONTENT-006].
-- Copyright and branding risk: The final file set contains 70 manifest paths, including 69 non-manifest content files; its 70 file-level asset records and 29 source-evidence records prove disclosure and link closure only. Coverage completeness becomes valid only after the manifest and rights ledger are refreshed from the final Git blobs and pass validation. Completed independent file-level clearance audits remain at 0 and the overall status is `not_fully_cleared`. `submission-use-rights-matrix.json` now records the current decision for announcement clause 8.1, repository review, organizer project use, entrant external display, cross-project reuse, and third-party components, but the package does not prove that the formal announcement terms apply identically to this GitHub open Agent call. The complete `COMMUNITY-DISPLAY-ONLY` terms, written consent, OSM ODbL obligations, PDF fonts, Node.js runtime and generation-tool terms, and logo/landmark trademark status still require review; the package must not claim full clearance [data:visual/assets/rights-clearance-ledger.json#RIGHTS-01] [data:visual/assets/submission-use-rights-matrix.json#JZ-SUBMISSION-USE-RIGHTS-V1].
+- Copyright and branding risk: The final file set contains 99 manifest paths, including 98 non-manifest content files; its 99 file-level asset records and 35 source-evidence records prove disclosure and link closure only. Coverage completeness becomes valid only after the manifest and rights ledger are refreshed from the final Git blobs and pass validation. Completed independent file-level clearance audits remain at 0 and the overall status is `not_fully_cleared`. `submission-use-rights-matrix.json` now records the current decision for announcement clause 8.1, repository review, organizer project use, entrant external display, cross-project reuse, and third-party components, but the package does not prove that the formal announcement terms apply identically to this GitHub open Agent call. The complete `COMMUNITY-DISPLAY-ONLY` terms, written consent, OSM ODbL obligations, PDF fonts, Node.js runtime and generation-tool terms, and logo/landmark trademark status still require review; the package must not claim full clearance [data:visual/assets/rights-clearance-ledger.json#RIGHTS-01] [data:visual/assets/submission-use-rights-matrix.json#JZ-SUBMISSION-USE-RIGHTS-V1].
 - External-coordination risk: Future Science City, Huairou Science City, the Beijing Economic-Technological Development Area, other innovation districts, and Beijing–Tianjin–Hebei are only optional retest roles. Without written confirmation, none may be described as a partner, investor, or committed implementation party [assumption:A-EXTERNAL-COLLAB-005].
 - Operations and equity risk: Event popularity cannot replace resident satisfaction, accessibility, fairness, or complaint closure. Recognition for contributions must not be used for traffic rankings, employment screening, or administrative evaluation.
 - Tool and evidence risk: Machine checks verify only structure, topology, references, and consistency. They do not replace professional judgment in planning, architecture, transport, municipal engineering, landscape, ecology, fire safety, railway safety, data security, accessibility, community engagement, or law [depth:risk_missing_data].
@@ -485,6 +565,234 @@ The rights matrix strictly separates “reviewable inside the repository” from
 | Release of OSM, fonts, logo, software, or generated assets | Blocked pending component audit | ODbL, font-embedding, trademark, and tool-output terms audit |
 
 All current AI scenarios are in G0 conceptual status. The eight projects and four-season events are proposals: they are not approved, built, or operating, and no organization has committed to them. Entry to a higher operating gate may be discussed only after statutory approval, responsible entities, professional review, public participation, funding and operations, and incident response are all defined.
+## The Century-Time Museum: A Verifiable, Correctable, Screen-free Time Education Line
+
+> This section is the Round 8 (JZ-FUTURE-07) cultural-narrative increment, inheriting prior public-rights, evidence-type, and failure-writeback contracts; no new governance brand or duplicate failure siding.
+
+### Strategic Proposition
+
+Juxtapose the Jing-Zhang railway's survey, standards, signals, maintenance, and public memory with AI's training, validation, failure, correction, and retirement as a city time-education line that does not worship technology.
+
+The core of this proposition is not an exhibition but a **correctable time-education line**—every historical fact, every archive, every generated content carries a source grade and allowable use; any disputed content has a clear flow of stop, takedown, correct, retain version, recover; all nodes require no account, QR code, screen, or AI.
+
+### Cultural Content Source and Rights Boundary
+
+This round adds `century-time-museum-contract.json` (JZ-TIME-MUSEUM-G0-V1), organizing:
+
+- **Century timeline**: five historical objects (1905–1909 survey & construction, 1909 full-line opening, 2019 Beijing–Zhangjiakou HSR, 2023+ heritage park phased opening, annual evidence update mechanism), each annotated with source grade, allowable use, and unknowns
+- **Source-grade table**: seven typed evidence anchors — official_archive / in_package_source / public_reporting / public_reporting_pending_archive / osm_background / generated_content / oral_history_pending
+- **Oral-history consent template**: pre-collection contract state; consent can be withdrawn at any time, content removed from public side after withdrawal, version retained for internal minimum audit only
+- **Five-step dispute-correction flow**: stop → takedown → correct → retain version → recover; independent review + public notice required before recovery, otherwise stay down or retire actively
+- **Screen-free node chain**: origin sign → atlas sign → evidence wall; no account, QR code, screen, or AI required
+
+### Metrics and Acceptance
+
+Ten cultural metrics remain unknown or 0; field coverage must not be passed off as real-world achievement:
+
+| Metric | Design Status | Denominator | Proof Limit |
+|---|---|---|---|
+| Source verifiability rate | unknown | Same-task, same-group, same-period | Field observation + independent retest |
+| Uncleared content count | unknown | Same-task, same-group, same-period | Independent file-level audit |
+| Generated-content label coverage | unknown | Total generated-content items | Manual check + sampling audit |
+| Dispute-handling time | unknown | No real dispute events | Process log + timestamp |
+| Oral-history consent rate | 0 (template only) | Total oral-history items collected | Consent record + withdrawal record |
+| Multilingual concept consistency | unknown | Total concept pairs | Bilingual comparison + professional review |
+| Screenless tour completion rate | unknown | Screenless-path users | Field or controlled test |
+| Child comprehension (pending) | unknown | School-age user sample | Educator assessment |
+| Annual retired-content count | 0 | Annual review cycle | Retirement list + receipt |
+| Independent historical review status | unknown | Required reviewers | Independent reviewer signature |
+
+### Differentiated Expression Across Three Key Areas
+
+| Key Area | Prototype Role | Time-Museum Expression |
+|---|---|---|
+| Zhongzhiyuan VERIFY | Parallel verification court | Equipment isolation belt + visible manual handoff window in source-grade display |
+| Origin Community CO-CREATE | One street, two courtyards, four nodes | Screen-free co-learning node carrying multilingual station sign and oral-history consent display |
+| Dazhongsi PUBLISH | Four-quadrant walking + one hall, one platform | One hall as staffed service and information-correction node, not an AI-mandatory entry |
+
+### Risk Preview and Stop/Recover
+
+- **R01 History metaphor passed as fact**: Immediate fail-closed upon discovery; switch to staffed or ordinary use; stop-to-recover requires independent review
+- **R02 Using uncleared images/text**: Remove temporary equipment, restore ordinary paths, notify affected persons, minimize event-evidence retention
+- **R03 Generated content disguised as archival material**: Generated content must carry visible label; removable anytime; after takedown, version retained, not auto-deleted
+
+### Figure Delivery
+
+`century-timeline.{svg,png}` bilingual time figure passed figure QA: A twin-track atlas / B source-grade table / C dispute-correction flow, all annotated G0 conceptual status and provisional geometry boundary.
+
+![Century-Time Museum: twin-track time atlas, typed sources, dispute correction, and screen-free node chain (G0 concept; archives, oral history, field tests, and confirmed duties all 0)](assets/figures/century-timeline.en.png)
+
+### Inheritance and Freeze
+
+Geometry, existing SCENE/JZ/T IDs, eight projects, all G0 status, provisional boundaries, and `not_fully_cleared` remain unchanged. Official archives, confirmed accountable operators, independent retests, approval, or operating results remain 0.
+
+[back to top](#ai-pilgrimage-belt)
+## Mission Economy: Problem-Led Industry and Talent Translation
+
+> This section is the Round 9 (JZ-FUTURE-08) industry-and-talent mechanism increment, inheriting prior public-rights, evidence-type, failure-writeback and century-time-museum contracts; it creates no duplicate "validation-ticket" brand and invents no enterprise, investment, procurement or partnership.
+
+### Strategic Proposition
+
+Industry value is not proven by invented enterprise lists, investment amounts or investment-attraction promises; it is organized around real public problems, retestable tasks, professional services, independent retests and exit mechanisms. **Passing a test is not a procurement or deployment authorization**: file checks, technical tests, evidence gates, limited trials, procurement and normal deployment each record their own scope, responsibility, validity period and non-inferable items.
+
+### Mechanism Contract and Four-Axis Separation
+
+This round adds `mission-economy-contract.json` (JZ-MISSION-ECONOMY-G0-V1), organizing the following:
+
+- **Public-task lifecycle**: problem publication → problem-quality gate → fair small-team entry → offline prototyping → independent-retest gate → result reflow → exit or retirement; any step failing closes fail-closed, and stopping or exiting never interrupts ordinary public paths and manual services
+- **Entry and exit**: no account barrier, no upfront compliance cost, and a manual or non-AI path for the same task; small teams compete in the same pool as larger institutions; exit records are not used for hiring or talent ranking
+- **Procurement and intellectual-property boundary**: prototype procurement ≠ procurement authorization ≠ deployment authorization; prototype, limited trial, procurement and normal deployment each require separate written authorization; IP boundaries remain not_cleared and are not written as resolved
+- **Public-benefit reflow**: task results, failure archives and independent-retest conclusions return to ordinary corridor users in understandable form, independent of investment amounts; feedback only feeds the next round of problem definition
+- **Four-axis separation**: runtime state (ordinary/validation/failure/recovery), maturity (G0–G3), authorization scope and service state are recorded separately; one status field must not mean test, authorization, procurement and deployment at once
+
+### Metrics and Acceptance
+
+All ten decision metrics remain unknown or 0; field coverage, concept counts or machine PASS must not be presented as real-world outcomes:
+
+| Metric | Design status | Denominator | Proof ceiling |
+|---|---|---|---|
+| Public-task verifiability rate | unknown | same task, people, period, space baseline | field observation + independent retest |
+| Small-team participation ratio | unknown | same task, people, period, space baseline | field observation + responsibility records |
+| Independent-retest coverage | unknown | tasks passing the evidence gate | independent-retest records |
+| Task exit rate | 0 | tasks entering the entry queue | exit-event records |
+| Professional-service accessibility | unknown | users needing professional services | field or controlled test |
+| Public-benefit delivery status | unknown | result-reflow claims | delivery responsibility records |
+| University-course real participation | unknown (0 written confirmations) | university courses claimed | written confirmation files |
+| IP dispute count | 0 | task and prototype items | dispute-handling records |
+| Failed-project publication rate | unknown | exited or retired tasks | role-confirmed definition |
+| Institution written-confirmation status | 0 | referenced external institutions | written confirmation files |
+
+### Differentiated Expression in the Three Key Areas
+
+| Key area | Prototype role | Mission-economy expression |
+|---|---|---|
+| Zhongzhi Garden VERIFY | parallel validation court | independent-retest gate and equipment isolation carry task validation, no normal deployment |
+| Origin Community CO-CREATE | one street, two courts, four nodes | public-benefit reflow board carries screen-free feedback without collecting extra personal data |
+| Dazhongsi PUBLISH | four-quadrant walking + one hall one stage | the hall is the task-publication and manual-service node, not an AI-mandatory entrance |
+
+### Risk Rehearsals, Stop and Recovery
+
+- **R01 Tasks monopolized by large enterprises**: fail-closed immediately; activity heat and sunk cost cannot override stop conditions; revise only after ordinary paths and manual services are restored
+- **R02 Public problems reduced to investment-attraction packaging**: never beautify figures to hide the issue; after stopping, verify spatial or service damage and record responsible roles and materials requiring external confirmation
+- **R05 Unclear intellectual-property boundary**: stop using uncleared assets and restore ordinary paths; do not write IP as resolved before independent file-level audits (currently 0)
+- **R08 External institutions written as committed**: withdraw unconfirmed statements; until 0 written confirmations exist, enterprises, universities and service providers remain suggested or pending-confirmation roles
+
+### Figure Delivery
+
+The bilingual `industry-public-value-state.{svg,png}` industry–public value state map passed figure QA: A public-task lifecycle / B four-axis separation / C authorization ladder / D public-benefit reflow, all marked as G0 conceptual state, 0 external written confirmations and provisional geometry boundary.
+
+![Mission economy: problem-quality gate, four-axis separation, authorization ladder, and public-benefit reflow (G0 concept; tasks, retests, procurement, deployment, and written confirmations all 0)](assets/figures/industry-public-value-state.en.png)
+
+### Inheritance and Freeze
+
+Geometry, existing SCENE/JZ/T IDs, the eight projects, all G0 gates, provisional boundaries and `not_fully_cleared` are unchanged. Responsible roles (publication, entry, retest, stop, recovery) all remain roles-to-be-confirmed; real tasks, small teams, retests, exit events and written confirmations are all 0.
+
+[back to top](#ai-pilgrimage-belt)
+
+
+
+
+## Long-Term Civic Operations: Ordinary Life Stays Continuous
+
+> This is the serial Round 10 (`JZ-FUTURE-09`) operations-integration and overall-audit increment. It inherits the maintenance, public-rights, resource, failure-governance, climate, culture and mission-economy contracts established in Rounds 3–9. It does not rebuild those mechanisms or present Problem Season, Open-source Season, City Beta Season or Proof Week as held, scheduled, staffed or funded events.
+
+### Bilingual Operations Protocol and Year-Round Civic Timetable
+
+`civic-operations-contract.json` (`JZ-CIVIC-OPERATIONS-G0-V1`) sets the year-round default as an **ordinary civic day**: continuous ordinary route, account-free and QR-free entry, a complete non-AI task, screen-free information, maintenance and complaint access come first. The four seasonal programmes are bounded overlays that can occur only after responsibility, site, rights, budget, maintenance, exit and authorization conditions close. When inactive, paused or expired, the place returns to ordinary use [data:visual/assets/civic-operations-contract.json#annual_calendar].
+
+| Year-round window | Current real-world status | Ordinary civic value | Entry / exit contract |
+|---|---|---|---|
+| Ordinary civic day | Default; exact opening hours unknown | Passage, rest, ordinary service, learning, maintenance, complaint and quiet presence | Never yields to an event; staffed presence is displayed only after real confirmation |
+| No-event day | Required as a design default; confirmed dates 0 | Tests whether the place works without a festival | No event may permanently occupy the continuous civic track |
+| Problem Season | `not_scheduled` | Receives resident problems orally, on paper and in person | Publish reasons for acceptance, deferral and rejection; unresolved problems return to ordinary-service maintenance |
+| Open-source Season | `not_scheduled` | Produces a paper-readable task, source pack, offline baseline and rights boundary | Do not proceed while rights, labour, maintenance or exit responsibility remains open |
+| City Beta Season | `not_scheduled_not_authorized` | Can only be a future-approved bounded overlay | Daily track and same-task non-AI path remain continuous; failure triggers stop, isolation, restoration and writeback |
+| Proof Week / Evidence Week | `not_scheduled` | Publishes passes, failures, complaints, corrections, gaps and retirements together | Produce keep/correct/expand/retire advice and return unanswered problems to the next cycle |
+
+**Time boundary.** The inherited 22:00–07:00 quiet, low-stimulation and screen-free priority remains an earlier G0 design covenant only. It is not a real opening time, staffed night shift, statutory noise limit, lighting value or operating commitment. Real opening hours, staffed presence, shifts, headcount, backup roles, budget, noise, lighting and footfall remain `unknown` or `not_measured`; the conceptual timetable must not impersonate a confirmed roster.
+
+### One Resident Task across Day / Night / Failure / Recovery
+
+The same person, start/end and task continue through four windows: a corridor resident enters through an existing public access, follows the ordinary route, reads service status, submits or follows a neighbourhood question, and leaves. This is not a new scene; the exact access and route remain limited by provisional geometry [data:visual/assets/civic-operations-contract.json#resident_four_window_journey].
+
+| Window | Path and service | Staffed state | Proof overlay and writeback |
+|---|---|---|---|
+| Day ordinary | Ordinary/accessibility-intent route first; bilingual paper information identifies the same-task non-AI path | Must truthfully show online, offline or unknown; currently unknown | Off by default; any future activation remains voluntary, bounded and separately authorized |
+| Night or low-staff | Ordinary route, safe exit and screen-free information continue; resident quiet takes priority | No invented night shift; offline or unknown state publishes a non-digital next-contact route and never impersonates a person through AI | Off; events, broadcast, screens and proof yield |
+| Failure stop | Proof overlay isolates or exits; resident continues through the ordinary non-AI path or receives a safe refusal when future confirmed staff exist | Stop and handoff remain unconfirmed role types | Scene passport, civic timetable and evidence matrix prepare one conservative same-event writeback |
+| Recovery | Restore ordinary route, screen-free information, quiet conditions and the same basic task first | Restoration acceptance and public-update roles remain unconfirmed; real completions 0 | Stay off until root cause, responsibility, independent retest, place restoration and three-carrier consistency close; G0 and authorization do not auto-advance |
+
+Seven public rights remain visible in every window: account-free/QR-free entry, complete non-AI path, continuous accessibility intent, truthful staffed-state notice, consent withdrawal, correction/appeal, and a screen-free quiet option. Opening hours, shifts, noise, lighting, footfall, complaint closure and recovery duration remain typed unknowns rather than effects-rendered numbers.
+
+### Quiet, Screen-Free and Resident-Priority Covenant
+
+Programme admission must simultaneously check resident agenda, continuity of ordinary/accessibility routes, complete screen-free/non-AI task, responsibility and stop authority, separation of paid/contracted/community/voluntary labour, maintenance-retirement budget, minimum data and withdrawal, place-restoration acceptance, and a three-carrier publication plan. If any condition fails, do not admit or stop the programme and restore ordinary use before discussing a correction. Voluntary labour must be optional, disclosed, time-bounded, supported and withdrawable; it cannot fill continuous-service, safety, incident-duty or statutory responsibility.
+
+The three places cannot use one operating composition:
+
+| Key area | Ordinary priority | Conditional overlay | Failure and recovery | Non-transferable component |
+|---|---|---|---|---|
+| Zhongzhiyuan VERIFY | Public observation edge and ordinary passage | Future-approved parallel verification court | Equipment isolation, staffed-takeover type, component exit and independent place-restoration acceptance | Equipment isolation/retest edge cannot become a resident court or commuter hall |
+| Origin Community CO-CREATE | One daily street, resident life and screen-free learning | Issue clinic/co-learning after resident agenda and withdrawal rules close | Stop collection/matching, retain paper/manual service, withdraw screens/broadcast and restore one street/two courts | Two-court consent/withdrawal sequence cannot be transplanted into equipment proof or commuter publication |
+| Dazhongsi PUBLISH | Four-direction commuting, quiet rest and staffed service only when confirmed | Evidence release stays outside the continuous commuter line | Publish source correction, retain prior version, clear display overlay and restore commuting | Four-direction commuting and correction hall cannot become a verification court or resident learning court |
+
+### Role, Incident-Duty and Maintenance-Retirement Responsibility Matrix
+
+This round defines capabilities only; it invents no institution, person, headcount or shift. Eight role types—ordinary service, community agenda, incident duty, stop authority, maintenance/retirement, evidence writeback, rights review and independent review—respectively own same-task service, agenda intake, incident trigger, immediate stop, component/resource/place exit, three-carrier synchronization, public-rights/labour checks and annual retest advice. Written responsibility acceptance, staffing, shifts, incident roster and backup roles are all 0 [data:visual/assets/civic-operations-contract.json#role_and_responsibility_matrix].
+
+| Action | Responsible R | Accountable A | Consulted C | Informed I |
+|---|---|---|---|---|
+| Publish ordinary/no-event state | Ordinary service | Evidence writeback | Community agenda, rights review | Incident duty |
+| Admit a conditional programme | Community agenda | Stop authority | Ordinary service, maintenance/retirement, rights, independent review | Evidence writeback |
+| Receive complaint and stop | Incident duty, stop authority | Stop authority | Ordinary service, rights, maintenance/retirement | Evidence writeback, community agenda |
+| Restore place and service | Maintenance/retirement, ordinary service | Stop authority | Rights, independent review | Evidence writeback |
+| Annual continuation advice | Independent review | Stop authority | Community agenda, rights, maintenance/retirement | Ordinary service, evidence writeback |
+
+### Operational Three-Carrier Writeback
+
+The Round 6 writeback remains authoritative: programme admission/pause, staffed-state change, complaint hold, failure, correction, recovery, withdrawal, retirement and annual decision are append-only same-events. The scene passport writes back runtime/maturity/authorization/service axes and role vacancies. The civic timetable writes back ordinary/no-event default, conditional programme, quiet/screen-free covenant, staffed online/offline/unknown, detour and next update. The evidence matrix writes back claim change, anchor, limitation, appeal effect, retest, annual decision and non-authorization. If any carrier is missing or inconsistent, the public interface shows the most conservative state and proof restart is prohibited [data:visual/assets/civic-operations-contract.json#three_carrier_operations_integration] [data:visual/assets/failure-governance-register.json#three_carrier_writeback_contract].
+
+### Community Agenda, Failure Disclosure, Retirement and International-Retest Boundary
+
+Community agenda and complaint access support oral, paper and in-person modes, plus telephone only if a future service is truly confirmed; no account, QR code or AI is required. Public records retain only problem category, affected task, decision, correction and evidence version—never identity, sensitive narrative, raw personal data or shame ranking. Annual review must disclose ordinary/no-event use and displacement; programme admission/refusal/stop; failure/complaint/correction; rights and group impact; responsibility vacancy; labour categories; maintenance-retirement gaps; independent retest; local public benefit; and keep/correct/expand/retire advice. Success-only reporting fails the contract.
+
+A retirement receipt closes subject/version, decision authority, component/material/energy/data/log/account destinations, ordinary/accessibility route, quiet/screen-free and same-task service, public correction and three-carrier writeback, unresolved liabilities, independent acceptance and next-problem reflow. A retired object cannot silently enter another scene or season; real retirement receipts remain 0.
+
+International remote retesting may only repeat a minimized, privacy-safe evidence package. It cannot replace local resident agenda, professional judgement, operating duty or statutory authorization. It counts as local public benefit only if it improves a locally defined decision, correction, accessibility, maintenance, safety or ordinary-service question; publicity, audience size and partner prestige do not count. Confirmed international partners, real remote retests and verified local-benefit results all remain 0.
+
+### Annual Metrics and Keep / Correct / Expand / Retire
+
+| Decision metric | Current state | Required denominator / proof ceiling |
+|---|---|---|
+| No-event-day public use | unknown | same-task ordinary-day baseline + field observation |
+| Quiet-window delivery | unknown | confirmed quiet windows + field/complaint/maintenance records |
+| Community-agenda adoption | unknown | qualifying agenda items + reasoned receipts |
+| Complaint closure duration | unknown | preregistered clock boundaries + verified timestamps; no invented duration |
+| Operating-role vacancy | unknown | confirmed required role slots + responsibility/back-up records |
+| Maintenance-retirement budget confirmation | unknown | required budget items + written confirmation; a template is not funding |
+| Failure-disclosure completeness | unknown | verified events + privacy-safe annual record |
+| International-retest local benefit | unknown | completed remote retests + local decision evidence; publicity excluded |
+| Voluntary-labour disclosure | unknown | confirmed programmes using volunteers + consent/time/exit records |
+| Annual retirement completion | unknown | retirement decisions + five-part closure receipt |
+
+**Keep** means ordinary value and rights remain intact, without expansion. **Correct** requires a new version, responsibility and evidence. **Expand** requires independent real evidence, local public benefit, confirmed resources and a separate bounded authorization. **Retire** applies when ordinary path, rights, responsibility, budget, maintenance, public benefit, evidence or recovery cannot close. Passing a year, media heat, machine PASS, PR approval or merge never upgrades the project automatically.
+
+### Ten-Round Overall Consistency Audit
+
+The merged ten-round package remains focused on Twin-track Jing-Zhang as the only front-stage master grammar; Round 3–9 contracts remain referenced back-stage kernel. Zhongzhiyuan equipment isolation, Origin resident consent/quiet and Dazhongsi commuting/correction remain non-interchangeable. Twelve scenes, eight projects, three key areas and all geometry are unchanged. Every object remains G0, provisional and `not_fully_cleared`. This round adds one operations-integration contract and one review figure—not a new brand, scene or real service. Chinese/English Markdown, HTML, SVG/PNG, PDF and final-manifest parity must be validated on the PR exact head and cannot be self-proven by this paragraph [data:visual/assets/civic-operations-contract.json#ten_round_consistency_audit].
+
+Only external-evidence closure remains worth continuing: official geometry and survey, responsibility acceptance and staffed availability, same-task non-AI/accessibility co-testing, real maintenance/complaint/failure/recovery/retirement records, independent file-level rights audit, and revocable bounded authorization. Work that should stop includes new brands/scenes/unfounded precision, event-heat-led festival expansion, unrecorded partner/procurement/construction/operation/benefit claims, and contract accumulation that closes no real-world gap.
+
+### Figure Delivery and Boundary
+
+The bilingual `year-round-civic-operations.{svg,png}` figure places A year-round ordinary use and conditional seasons / B one resident four-window journey / C roles and three-carrier writeback / D annual failure disclosure and continuation decision on one review surface. The figure labels 22:00–07:00 as an inherited G0 design window only; confirmed roster, budget, event, partner, complaint and result remain 0 or unknown.
+
+![Long-term civic operations: year-round ordinary use, conditional seasons, day-night-failure-recovery journey, roles and three-carrier writeback, annual failure disclosure and retirement (G0 concept; no confirmed calendar, roster, budget, partner, complaint or operating result)](assets/figures/year-round-civic-operations.en.png)
+
+This section and figure constitute no site, construction, fire-safety, railway-protection, municipal, operational, procurement or other specialist approval and prove no rights clearance, real service, accessibility compliance, public value, international partnership or deployment authorization.
+
+[back to top](#ai-pilgrimage-belt)
+
 
 ## References
 

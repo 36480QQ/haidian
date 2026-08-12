@@ -30,6 +30,12 @@
       "status": "background_reference",
       "statement": "Global ecosystem case summaries (Hefei quantum cluster, IBM Quantum Network, Kendall Square, Station F, one-north, Hetao, Zhangjiang) are model-level public-report summaries used as transferable mechanisms only.",
       "impact": "No enterprise roster, investment amount, or policy arrangement is asserted; all case-derived mechanisms require professional validation before deepening."
+    },
+    {
+      "id": "A-QKD-NETWORK-001",
+      "status": "pending_professional_confirmation",
+      "statement": "QKD transmission distance limits require relay nodes (trusted relay or quantum relay); node spacing, relay method, fiber route, and engineering conditions must be confirmed by professional teams before any deployment.",
+      "impact": "The backbone-relay-access network skeleton is a conceptual test-network suggestion; no coverage, capacity, or engineering claim is made."
     }
   ]
 }

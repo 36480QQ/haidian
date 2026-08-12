@@ -572,10 +572,12 @@
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
         "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "KEY-AREA-SOURCE",
+        "QKD-NETWORK-TECHNOLOGY"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-QKD-NETWORK-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -766,7 +768,8 @@
         "site_area_sqm",
         "green_ratio",
         "public_space_ratio",
-        "key_area_count"
+        "key_area_count",
+        "quantum_security_lab_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -784,7 +787,8 @@
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
         "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "KEY-AREA-SOURCE",
+        "BAQIS-2026"
       ],
       "assumption_ids": [
         "A-CONTROLS-001"
@@ -978,7 +982,11 @@
         "site_area_sqm",
         "green_ratio",
         "public_space_ratio",
-        "key_area_count"
+        "key_area_count",
+        "qkd_node_count",
+        "quantum_security_lab_count",
+        "quantum_job_family_count",
+        "scenario_node_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -996,10 +1004,16 @@
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
         "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "KEY-AREA-SOURCE",
+        "BAQIS-2026",
+        "QKD-NETWORK-TECHNOLOGY",
+        "CASE-QUANTUM-ECOSYSTEMS"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-QUANTUM-001",
+        "A-BOUNDARY-001",
+        "A-QKD-NETWORK-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -1031,7 +1045,9 @@
         "site_area_sqm",
         "green_ratio",
         "public_space_ratio",
-        "key_area_count"
+        "key_area_count",
+        "scenario_node_count",
+        "test_scenario_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -1049,10 +1065,12 @@
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
         "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "KEY-AREA-SOURCE",
+        "BAQIS-2026"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-QUANTUM-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -1084,7 +1102,9 @@
         "site_area_sqm",
         "green_ratio",
         "public_space_ratio",
-        "key_area_count"
+        "key_area_count",
+        "landmark_count",
+        "qkd_node_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -1102,7 +1122,8 @@
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
         "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "KEY-AREA-SOURCE",
+        "BAQIS-2026"
       ],
       "assumption_ids": [
         "A-CONTROLS-001"
@@ -1155,7 +1176,8 @@
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
         "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "KEY-AREA-SOURCE",
+        "BAQIS-2026"
       ],
       "assumption_ids": [
         "A-CONTROLS-001"

@@ -11,6 +11,7 @@
       "errors": [],
       "warnings": [
         "submissions/SJTdreams/jingzhang-bounded-sky/proposal.md: 可能涉及非公开或敏感资料; maintainer review required",
+        "submissions/SJTdreams/jingzhang-bounded-sky/manifest.json: published schema legacy advisory: validation_claim.data_confidence: 'mixed_provisional_and_synthetic' is not one of ['high', 'medium', 'low', 'unknown', 'mixed_provisional_and_conceptual']; update this manifest before adopting schema 0.2.x",
         "submissions/SJTdreams/jingzhang-bounded-sky/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied",
         "submissions/SJTdreams/jingzhang-bounded-sky/spatial.json: items[0]: provisional spatial concept needs maintainer review before being treated as public-facing context",
         "submissions/SJTdreams/jingzhang-bounded-sky/spatial.json: items[1]: provisional spatial concept needs maintainer review before being treated as public-facing context",
@@ -29,6 +30,16 @@
       ],
       "changed_files": [
         "submissions/SJTdreams/jingzhang-bounded-sky/agent.json",
+        "submissions/SJTdreams/jingzhang-bounded-sky/assets/attachments/spatial-evidence-atlas-v2.2/key-areas.en.png",
+        "submissions/SJTdreams/jingzhang-bounded-sky/assets/attachments/spatial-evidence-atlas-v2.2/key-areas.png",
+        "submissions/SJTdreams/jingzhang-bounded-sky/assets/attachments/spatial-evidence-atlas-v2.2/land-use-structure.en.png",
+        "submissions/SJTdreams/jingzhang-bounded-sky/assets/attachments/spatial-evidence-atlas-v2.2/land-use-structure.png",
+        "submissions/SJTdreams/jingzhang-bounded-sky/assets/attachments/spatial-evidence-atlas-v2.2/metrics-evidence.en.png",
+        "submissions/SJTdreams/jingzhang-bounded-sky/assets/attachments/spatial-evidence-atlas-v2.2/metrics-evidence.png",
+        "submissions/SJTdreams/jingzhang-bounded-sky/assets/attachments/spatial-evidence-atlas-v2.2/mobility-bluegreen.en.png",
+        "submissions/SJTdreams/jingzhang-bounded-sky/assets/attachments/spatial-evidence-atlas-v2.2/mobility-bluegreen.png",
+        "submissions/SJTdreams/jingzhang-bounded-sky/assets/attachments/spatial-evidence-atlas-v2.2/site-overview.en.png",
+        "submissions/SJTdreams/jingzhang-bounded-sky/assets/attachments/spatial-evidence-atlas-v2.2/site-overview.png",
         "submissions/SJTdreams/jingzhang-bounded-sky/assets/figures/culture-identity.en.png",
         "submissions/SJTdreams/jingzhang-bounded-sky/assets/figures/culture-identity.png",
         "submissions/SJTdreams/jingzhang-bounded-sky/assets/figures/ecosystem-network.en.png",
@@ -99,7 +110,7 @@
       "ai_package_stages": {
         "submissions/SJTdreams/jingzhang-bounded-sky": "formal"
       },
-      "total_bytes": 6204478,
+      "total_bytes": 7284445,
       "maintainer_bypass": false
     },
     "stderr": ""

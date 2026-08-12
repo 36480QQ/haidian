@@ -37,11 +37,11 @@
         "geometry/phasing.geojson"
       ],
       "metric_refs": [
-        "site_area_sqm",
+        "provisional_working_extent_area_sqm",
         "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "road_length_m",
+        "conceptual_blue_green_network_envelope_ratio",
+        "conceptual_action_envelope_ratio",
+        "conceptual_audit_alignment_length_m",
         "key_area_count",
         "flagship_project_count",
         "crosslink_count",
@@ -80,7 +80,37 @@
         "official geometry/controls as applicable",
         "field and professional survey as applicable",
         "competent-authority and stakeholder review"
-      ]
+      ],
+      "v2_1_evidence_refs": [
+        "geometry/roads.geojson",
+        "geometry/public_space.geojson",
+        "assets/figures/evidence-gap-atlas.png",
+        "assets/figures/public-value-governance.png"
+      ],
+      "responsibility_roles": {
+        "accountable": [
+          "IE"
+        ],
+        "responsible": [
+          "CM",
+          "TO"
+        ],
+        "consulted": [
+          "DO",
+          "IV",
+          "DC",
+          "PF",
+          "PO"
+        ]
+      },
+      "acceptance_conditions_zh": [
+        "官方事实、开放数据、概念几何和未知事项分层。",
+        "缺失输入关联责任、影响、阻断门和补充方式。",
+        "未核验事项不得通过图面精度被误认为事实。"
+      ],
+      "current_status_v2_1": "complete_for_concept_submission; statutory_professional_and_field_inputs_pending",
+      "current_status_zh": "v2.2已形成投稿深度的结构化响应和可追溯证据；正式规划、专项审查、现场勘测、权利核验及实施授权仍待法定和专业程序。",
+      "authority_boundary_zh": "本条目为概念建议和机器可读证据索引；责任单位、场地、资金、采购、法定指标、工程条件及实施授权均待核验并依法确定。"
     },
     {
       "item_id": "three_level_scope_framework",
@@ -118,11 +148,11 @@
         "geometry/phasing.geojson"
       ],
       "metric_refs": [
-        "site_area_sqm",
+        "provisional_working_extent_area_sqm",
         "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "road_length_m",
+        "conceptual_blue_green_network_envelope_ratio",
+        "conceptual_action_envelope_ratio",
+        "conceptual_audit_alignment_length_m",
         "key_area_count",
         "flagship_project_count",
         "crosslink_count",
@@ -161,7 +191,38 @@
         "official geometry/controls as applicable",
         "field and professional survey as applicable",
         "competent-authority and stakeholder review"
-      ]
+      ],
+      "v2_1_evidence_refs": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/roads.geojson",
+        "assets/figures/overall-design-plan.png",
+        "assets/figures/evidence-gap-atlas.png"
+      ],
+      "responsibility_roles": {
+        "accountable": [
+          "IE"
+        ],
+        "responsible": [
+          "CM",
+          "TO"
+        ],
+        "consulted": [
+          "DO",
+          "IV",
+          "DC",
+          "PF",
+          "PO"
+        ]
+      },
+      "acceptance_conditions_zh": [
+        "正文、几何、指标和图件能够以稳定ID相互校核。",
+        "概念动作、现状证据和待确认专业条件明确分层。",
+        "专业或法定输入不足时保持阻断，不作超越证据的结论。"
+      ],
+      "current_status_v2_1": "complete_for_concept_submission; statutory_professional_and_field_inputs_pending",
+      "current_status_zh": "v2.2已形成投稿深度的结构化响应和可追溯证据；正式规划、专项审查、现场勘测、权利核验及实施授权仍待法定和专业程序。",
+      "authority_boundary_zh": "本条目为概念建议和机器可读证据索引；责任单位、场地、资金、采购、法定指标、工程条件及实施授权均待核验并依法确定。"
     },
     {
       "item_id": "overall_spatial_structure",
@@ -199,11 +260,11 @@
         "geometry/phasing.geojson"
       ],
       "metric_refs": [
-        "site_area_sqm",
+        "provisional_working_extent_area_sqm",
         "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "road_length_m",
+        "conceptual_blue_green_network_envelope_ratio",
+        "conceptual_action_envelope_ratio",
+        "conceptual_audit_alignment_length_m",
         "key_area_count",
         "flagship_project_count",
         "crosslink_count",
@@ -242,7 +303,37 @@
         "official geometry/controls as applicable",
         "field and professional survey as applicable",
         "competent-authority and stakeholder review"
-      ]
+      ],
+      "v2_1_evidence_refs": [
+        "geometry/public_space.geojson",
+        "geometry/roads.geojson",
+        "assets/figures/overall-design-plan.png",
+        "assets/figures/section-family.png"
+      ],
+      "responsibility_roles": {
+        "accountable": [
+          "IE"
+        ],
+        "responsible": [
+          "CM",
+          "TO"
+        ],
+        "consulted": [
+          "DO",
+          "IV",
+          "DC",
+          "PF",
+          "PO"
+        ]
+      },
+      "acceptance_conditions_zh": [
+        "正文、几何、指标和图件能够以稳定ID相互校核。",
+        "概念动作、现状证据和待确认专业条件明确分层。",
+        "专业或法定输入不足时保持阻断，不作超越证据的结论。"
+      ],
+      "current_status_v2_1": "complete_for_concept_submission; statutory_professional_and_field_inputs_pending",
+      "current_status_zh": "v2.2已形成投稿深度的结构化响应和可追溯证据；正式规划、专项审查、现场勘测、权利核验及实施授权仍待法定和专业程序。",
+      "authority_boundary_zh": "本条目为概念建议和机器可读证据索引；责任单位、场地、资金、采购、法定指标、工程条件及实施授权均待核验并依法确定。"
     },
     {
       "item_id": "land_use_layout",
@@ -280,11 +371,11 @@
         "geometry/phasing.geojson"
       ],
       "metric_refs": [
-        "site_area_sqm",
+        "provisional_working_extent_area_sqm",
         "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "road_length_m",
+        "conceptual_blue_green_network_envelope_ratio",
+        "conceptual_action_envelope_ratio",
+        "conceptual_audit_alignment_length_m",
         "key_area_count",
         "flagship_project_count",
         "crosslink_count",
@@ -323,7 +414,37 @@
         "official geometry/controls as applicable",
         "field and professional survey as applicable",
         "competent-authority and stakeholder review"
-      ]
+      ],
+      "v2_1_evidence_refs": [
+        "geometry/land_use.geojson",
+        "geometry/public_space.geojson",
+        "assets/figures/overall-design-plan.png",
+        "assets/figures/evidence-gap-atlas.png"
+      ],
+      "responsibility_roles": {
+        "accountable": [
+          "IE"
+        ],
+        "responsible": [
+          "CM",
+          "TO"
+        ],
+        "consulted": [
+          "DO",
+          "IV",
+          "DC",
+          "PF",
+          "PO"
+        ]
+      },
+      "acceptance_conditions_zh": [
+        "正文、几何、指标和图件能够以稳定ID相互校核。",
+        "概念动作、现状证据和待确认专业条件明确分层。",
+        "专业或法定输入不足时保持阻断，不作超越证据的结论。"
+      ],
+      "current_status_v2_1": "complete_for_concept_submission; statutory_professional_and_field_inputs_pending",
+      "current_status_zh": "v2.2已形成投稿深度的结构化响应和可追溯证据；正式规划、专项审查、现场勘测、权利核验及实施授权仍待法定和专业程序。",
+      "authority_boundary_zh": "本条目为概念建议和机器可读证据索引；责任单位、场地、资金、采购、法定指标、工程条件及实施授权均待核验并依法确定。"
     },
     {
       "item_id": "development_intensity_controls",
@@ -361,11 +482,11 @@
         "geometry/phasing.geojson"
       ],
       "metric_refs": [
-        "site_area_sqm",
+        "provisional_working_extent_area_sqm",
         "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "road_length_m",
+        "conceptual_blue_green_network_envelope_ratio",
+        "conceptual_action_envelope_ratio",
+        "conceptual_audit_alignment_length_m",
         "key_area_count",
         "flagship_project_count",
         "crosslink_count",
@@ -404,7 +525,37 @@
         "official geometry/controls as applicable",
         "field and professional survey as applicable",
         "competent-authority and stakeholder review"
-      ]
+      ],
+      "v2_1_evidence_refs": [
+        "geometry/buildings.geojson",
+        "geometry/roads.geojson",
+        "assets/figures/evidence-gap-atlas.png",
+        "assets/figures/section-family.png"
+      ],
+      "responsibility_roles": {
+        "accountable": [
+          "IE"
+        ],
+        "responsible": [
+          "CM",
+          "TO"
+        ],
+        "consulted": [
+          "DO",
+          "IV",
+          "DC",
+          "PF",
+          "PO"
+        ]
+      },
+      "acceptance_conditions_zh": [
+        "正文、几何、指标和图件能够以稳定ID相互校核。",
+        "概念动作、现状证据和待确认专业条件明确分层。",
+        "专业或法定输入不足时保持阻断，不作超越证据的结论。"
+      ],
+      "current_status_v2_1": "complete_for_concept_submission; statutory_professional_and_field_inputs_pending",
+      "current_status_zh": "v2.2已形成投稿深度的结构化响应和可追溯证据；正式规划、专项审查、现场勘测、权利核验及实施授权仍待法定和专业程序。",
+      "authority_boundary_zh": "本条目为概念建议和机器可读证据索引；责任单位、场地、资金、采购、法定指标、工程条件及实施授权均待核验并依法确定。"
     },
     {
       "item_id": "height_massing_character",
@@ -442,11 +593,11 @@
         "geometry/phasing.geojson"
       ],
       "metric_refs": [
-        "site_area_sqm",
+        "provisional_working_extent_area_sqm",
         "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "road_length_m",
+        "conceptual_blue_green_network_envelope_ratio",
+        "conceptual_action_envelope_ratio",
+        "conceptual_audit_alignment_length_m",
         "key_area_count",
         "flagship_project_count",
         "crosslink_count",
@@ -485,7 +636,38 @@
         "official geometry/controls as applicable",
         "field and professional survey as applicable",
         "competent-authority and stakeholder review"
-      ]
+      ],
+      "v2_1_evidence_refs": [
+        "geometry/buildings.geojson",
+        "geometry/public_space.geojson",
+        "geometry/roads.geojson",
+        "assets/figures/section-family.png",
+        "assets/figures/evidence-gap-atlas.png"
+      ],
+      "responsibility_roles": {
+        "accountable": [
+          "IE"
+        ],
+        "responsible": [
+          "CM",
+          "TO"
+        ],
+        "consulted": [
+          "DO",
+          "IV",
+          "DC",
+          "PF",
+          "PO"
+        ]
+      },
+      "acceptance_conditions_zh": [
+        "正文、几何、指标和图件能够以稳定ID相互校核。",
+        "概念动作、现状证据和待确认专业条件明确分层。",
+        "专业或法定输入不足时保持阻断，不作超越证据的结论。"
+      ],
+      "current_status_v2_1": "complete_for_concept_submission; statutory_professional_and_field_inputs_pending",
+      "current_status_zh": "v2.2已形成投稿深度的结构化响应和可追溯证据；正式规划、专项审查、现场勘测、权利核验及实施授权仍待法定和专业程序。",
+      "authority_boundary_zh": "本条目为概念建议和机器可读证据索引；责任单位、场地、资金、采购、法定指标、工程条件及实施授权均待核验并依法确定。"
     },
     {
       "item_id": "retain_renovate_demolish",
@@ -523,11 +705,11 @@
         "geometry/phasing.geojson"
       ],
       "metric_refs": [
-        "site_area_sqm",
+        "provisional_working_extent_area_sqm",
         "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "road_length_m",
+        "conceptual_blue_green_network_envelope_ratio",
+        "conceptual_action_envelope_ratio",
+        "conceptual_audit_alignment_length_m",
         "key_area_count",
         "flagship_project_count",
         "crosslink_count",
@@ -566,7 +748,38 @@
         "official geometry/controls as applicable",
         "field and professional survey as applicable",
         "competent-authority and stakeholder review"
-      ]
+      ],
+      "v2_1_evidence_refs": [
+        "geometry/buildings.geojson",
+        "geometry/public_space.geojson",
+        "geometry/roads.geojson",
+        "assets/figures/section-family.png",
+        "assets/figures/evidence-gap-atlas.png"
+      ],
+      "responsibility_roles": {
+        "accountable": [
+          "IE"
+        ],
+        "responsible": [
+          "CM",
+          "TO"
+        ],
+        "consulted": [
+          "DO",
+          "IV",
+          "DC",
+          "PF",
+          "PO"
+        ]
+      },
+      "acceptance_conditions_zh": [
+        "正文、几何、指标和图件能够以稳定ID相互校核。",
+        "概念动作、现状证据和待确认专业条件明确分层。",
+        "专业或法定输入不足时保持阻断，不作超越证据的结论。"
+      ],
+      "current_status_v2_1": "complete_for_concept_submission; statutory_professional_and_field_inputs_pending",
+      "current_status_zh": "v2.2已形成投稿深度的结构化响应和可追溯证据；正式规划、专项审查、现场勘测、权利核验及实施授权仍待法定和专业程序。",
+      "authority_boundary_zh": "本条目为概念建议和机器可读证据索引；责任单位、场地、资金、采购、法定指标、工程条件及实施授权均待核验并依法确定。"
     },
     {
       "item_id": "traffic_rail_slow_parking",
@@ -604,11 +817,11 @@
         "geometry/phasing.geojson"
       ],
       "metric_refs": [
-        "site_area_sqm",
+        "provisional_working_extent_area_sqm",
         "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "road_length_m",
+        "conceptual_blue_green_network_envelope_ratio",
+        "conceptual_action_envelope_ratio",
+        "conceptual_audit_alignment_length_m",
         "key_area_count",
         "flagship_project_count",
         "crosslink_count",
@@ -647,7 +860,38 @@
         "official geometry/controls as applicable",
         "field and professional survey as applicable",
         "competent-authority and stakeholder review"
-      ]
+      ],
+      "v2_1_evidence_refs": [
+        "geometry/roads.geojson",
+        "geometry/public_space.geojson",
+        "geometry/roads.geojson",
+        "assets/figures/mobility-bluegreen.png",
+        "assets/figures/section-family.png"
+      ],
+      "responsibility_roles": {
+        "accountable": [
+          "IE"
+        ],
+        "responsible": [
+          "CM",
+          "TO"
+        ],
+        "consulted": [
+          "DO",
+          "IV",
+          "DC",
+          "PF",
+          "PO"
+        ]
+      },
+      "acceptance_conditions_zh": [
+        "正文、几何、指标和图件能够以稳定ID相互校核。",
+        "概念动作、现状证据和待确认专业条件明确分层。",
+        "专业或法定输入不足时保持阻断，不作超越证据的结论。"
+      ],
+      "current_status_v2_1": "complete_for_concept_submission; statutory_professional_and_field_inputs_pending",
+      "current_status_zh": "v2.2已形成投稿深度的结构化响应和可追溯证据；正式规划、专项审查、现场勘测、权利核验及实施授权仍待法定和专业程序。",
+      "authority_boundary_zh": "本条目为概念建议和机器可读证据索引；责任单位、场地、资金、采购、法定指标、工程条件及实施授权均待核验并依法确定。"
     },
     {
       "item_id": "municipal_new_infrastructure",
@@ -685,11 +929,11 @@
         "geometry/phasing.geojson"
       ],
       "metric_refs": [
-        "site_area_sqm",
+        "provisional_working_extent_area_sqm",
         "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "road_length_m",
+        "conceptual_blue_green_network_envelope_ratio",
+        "conceptual_action_envelope_ratio",
+        "conceptual_audit_alignment_length_m",
         "key_area_count",
         "flagship_project_count",
         "crosslink_count",
@@ -728,7 +972,38 @@
         "official geometry/controls as applicable",
         "field and professional survey as applicable",
         "competent-authority and stakeholder review"
-      ]
+      ],
+      "v2_1_evidence_refs": [
+        "visual/assets/scenario_prototypes.json#/prototypes",
+        "visual/assets/weave_contracts.json#/contracts",
+        "geometry/public_space.geojson",
+        "geometry/roads.geojson",
+        "assets/figures/ai-service-blueprints.png"
+      ],
+      "responsibility_roles": {
+        "accountable": [
+          "IE"
+        ],
+        "responsible": [
+          "TO"
+        ],
+        "consulted": [
+          "CM",
+          "DO",
+          "IV",
+          "DC",
+          "PF",
+          "PO"
+        ]
+      },
+      "acceptance_conditions_zh": [
+        "正文、几何、指标和图件能够以稳定ID相互校核。",
+        "概念动作、现状证据和待确认专业条件明确分层。",
+        "专业或法定输入不足时保持阻断，不作超越证据的结论。"
+      ],
+      "current_status_v2_1": "complete_for_concept_submission; statutory_professional_and_field_inputs_pending",
+      "current_status_zh": "v2.2已形成投稿深度的结构化响应和可追溯证据；正式规划、专项审查、现场勘测、权利核验及实施授权仍待法定和专业程序。",
+      "authority_boundary_zh": "本条目为概念建议和机器可读证据索引；责任单位、场地、资金、采购、法定指标、工程条件及实施授权均待核验并依法确定。"
     },
     {
       "item_id": "blue_green_public_space",
@@ -766,11 +1041,11 @@
         "geometry/phasing.geojson"
       ],
       "metric_refs": [
-        "site_area_sqm",
+        "provisional_working_extent_area_sqm",
         "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "road_length_m",
+        "conceptual_blue_green_network_envelope_ratio",
+        "conceptual_action_envelope_ratio",
+        "conceptual_audit_alignment_length_m",
         "key_area_count",
         "flagship_project_count",
         "crosslink_count",
@@ -809,7 +1084,38 @@
         "official geometry/controls as applicable",
         "field and professional survey as applicable",
         "competent-authority and stakeholder review"
-      ]
+      ],
+      "v2_1_evidence_refs": [
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson",
+        "geometry/public_space.geojson",
+        "geometry/roads.geojson",
+        "assets/figures/mobility-bluegreen.png"
+      ],
+      "responsibility_roles": {
+        "accountable": [
+          "IE"
+        ],
+        "responsible": [
+          "CM",
+          "TO"
+        ],
+        "consulted": [
+          "DO",
+          "IV",
+          "DC",
+          "PF",
+          "PO"
+        ]
+      },
+      "acceptance_conditions_zh": [
+        "正文、几何、指标和图件能够以稳定ID相互校核。",
+        "概念动作、现状证据和待确认专业条件明确分层。",
+        "专业或法定输入不足时保持阻断，不作超越证据的结论。"
+      ],
+      "current_status_v2_1": "complete_for_concept_submission; statutory_professional_and_field_inputs_pending",
+      "current_status_zh": "v2.2已形成投稿深度的结构化响应和可追溯证据；正式规划、专项审查、现场勘测、权利核验及实施授权仍待法定和专业程序。",
+      "authority_boundary_zh": "本条目为概念建议和机器可读证据索引；责任单位、场地、资金、采购、法定指标、工程条件及实施授权均待核验并依法确定。"
     },
     {
       "item_id": "three_key_area_detailed_design",
@@ -847,11 +1153,11 @@
         "geometry/phasing.geojson"
       ],
       "metric_refs": [
-        "site_area_sqm",
+        "provisional_working_extent_area_sqm",
         "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "road_length_m",
+        "conceptual_blue_green_network_envelope_ratio",
+        "conceptual_action_envelope_ratio",
+        "conceptual_audit_alignment_length_m",
         "key_area_count",
         "flagship_project_count",
         "crosslink_count",
@@ -890,7 +1196,39 @@
         "official geometry/controls as applicable",
         "field and professional survey as applicable",
         "competent-authority and stakeholder review"
-      ]
+      ],
+      "v2_1_evidence_refs": [
+        "visual/assets/implementation_register.json#/project_registers",
+        "visual/assets/scenario_prototypes.json#/prototypes",
+        "geometry/public_space.geojson",
+        "assets/figures/zhongzhiyuan-detail.png",
+        "assets/figures/ai-origin-detail.png",
+        "assets/figures/dazhongsi-detail.png"
+      ],
+      "responsibility_roles": {
+        "accountable": [
+          "IE"
+        ],
+        "responsible": [
+          "CM",
+          "TO"
+        ],
+        "consulted": [
+          "DO",
+          "IV",
+          "DC",
+          "PF",
+          "PO"
+        ]
+      },
+      "acceptance_conditions_zh": [
+        "三片区分别具有项目台账、场景原型、空间组件和专属图件。",
+        "空间建议与场地、权利、交通、文保和工程待核验条件并列。",
+        "图件不替代控规、建筑或工程设计。"
+      ],
+      "current_status_v2_1": "complete_for_concept_submission; statutory_professional_and_field_inputs_pending",
+      "current_status_zh": "v2.2已形成投稿深度的结构化响应和可追溯证据；正式规划、专项审查、现场勘测、权利核验及实施授权仍待法定和专业程序。",
+      "authority_boundary_zh": "本条目为概念建议和机器可读证据索引；责任单位、场地、资金、采购、法定指标、工程条件及实施授权均待核验并依法确定。"
     },
     {
       "item_id": "renewal_project_list",
@@ -928,11 +1266,11 @@
         "geometry/phasing.geojson"
       ],
       "metric_refs": [
-        "site_area_sqm",
+        "provisional_working_extent_area_sqm",
         "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "road_length_m",
+        "conceptual_blue_green_network_envelope_ratio",
+        "conceptual_action_envelope_ratio",
+        "conceptual_audit_alignment_length_m",
         "key_area_count",
         "flagship_project_count",
         "crosslink_count",
@@ -971,7 +1309,38 @@
         "official geometry/controls as applicable",
         "field and professional survey as applicable",
         "competent-authority and stakeholder review"
-      ]
+      ],
+      "v2_1_evidence_refs": [
+        "visual/assets/implementation_register.json#/project_registers",
+        "visual/assets/implementation_register.json#/raci_matrix",
+        "geometry/public_space.geojson",
+        "geometry/phasing.geojson",
+        "assets/figures/implementation-ledger.png"
+      ],
+      "responsibility_roles": {
+        "accountable": [
+          "CM"
+        ],
+        "responsible": [
+          "IE",
+          "DO"
+        ],
+        "consulted": [
+          "TO",
+          "IV",
+          "DC",
+          "PF",
+          "PO"
+        ]
+      },
+      "acceptance_conditions_zh": [
+        "项目台账、RACI、阶段门、成本口径、KPI和退出条件完整。",
+        "几何对象与实施阶段使用稳定ID关联。",
+        "责任单位、预算、采购和时序保持待依法确定。"
+      ],
+      "current_status_v2_1": "complete_for_concept_submission; statutory_professional_and_field_inputs_pending",
+      "current_status_zh": "v2.2已形成投稿深度的结构化响应和可追溯证据；正式规划、专项审查、现场勘测、权利核验及实施授权仍待法定和专业程序。",
+      "authority_boundary_zh": "本条目为概念建议和机器可读证据索引；责任单位、场地、资金、采购、法定指标、工程条件及实施授权均待核验并依法确定。"
     },
     {
       "item_id": "phasing_implementation",
@@ -1009,11 +1378,11 @@
         "geometry/phasing.geojson"
       ],
       "metric_refs": [
-        "site_area_sqm",
+        "provisional_working_extent_area_sqm",
         "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "road_length_m",
+        "conceptual_blue_green_network_envelope_ratio",
+        "conceptual_action_envelope_ratio",
+        "conceptual_audit_alignment_length_m",
         "key_area_count",
         "flagship_project_count",
         "crosslink_count",
@@ -1052,7 +1421,37 @@
         "official geometry/controls as applicable",
         "field and professional survey as applicable",
         "competent-authority and stakeholder review"
-      ]
+      ],
+      "v2_1_evidence_refs": [
+        "visual/assets/implementation_register.json#/stage_gates",
+        "visual/assets/implementation_register.json#/five_year_cost_model",
+        "geometry/phasing.geojson",
+        "assets/figures/implementation-ledger.png"
+      ],
+      "responsibility_roles": {
+        "accountable": [
+          "CM"
+        ],
+        "responsible": [
+          "IE",
+          "DO"
+        ],
+        "consulted": [
+          "TO",
+          "IV",
+          "DC",
+          "PF",
+          "PO"
+        ]
+      },
+      "acceptance_conditions_zh": [
+        "项目台账、RACI、阶段门、成本口径、KPI和退出条件完整。",
+        "几何对象与实施阶段使用稳定ID关联。",
+        "责任单位、预算、采购和时序保持待依法确定。"
+      ],
+      "current_status_v2_1": "complete_for_concept_submission; statutory_professional_and_field_inputs_pending",
+      "current_status_zh": "v2.2已形成投稿深度的结构化响应和可追溯证据；正式规划、专项审查、现场勘测、权利核验及实施授权仍待法定和专业程序。",
+      "authority_boundary_zh": "本条目为概念建议和机器可读证据索引；责任单位、场地、资金、采购、法定指标、工程条件及实施授权均待核验并依法确定。"
     },
     {
       "item_id": "metrics_recalculation",
@@ -1090,11 +1489,11 @@
         "geometry/phasing.geojson"
       ],
       "metric_refs": [
-        "site_area_sqm",
+        "provisional_working_extent_area_sqm",
         "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "road_length_m",
+        "conceptual_blue_green_network_envelope_ratio",
+        "conceptual_action_envelope_ratio",
+        "conceptual_audit_alignment_length_m",
         "key_area_count",
         "flagship_project_count",
         "crosslink_count",
@@ -1133,7 +1532,39 @@
         "official geometry/controls as applicable",
         "field and professional survey as applicable",
         "competent-authority and stakeholder review"
-      ]
+      ],
+      "v2_1_evidence_refs": [
+        "visual/assets/implementation_register.json#/kpi_matrix",
+        "geometry/roads.geojson",
+        "geometry/public_space.geojson",
+        "geometry/public_space.geojson",
+        "geometry/phasing.geojson",
+        "assets/figures/evidence-gap-atlas.png"
+      ],
+      "responsibility_roles": {
+        "accountable": [
+          "IV"
+        ],
+        "responsible": [
+          "CM",
+          "TO"
+        ],
+        "consulted": [
+          "IE",
+          "DO",
+          "DC",
+          "PF",
+          "PO"
+        ]
+      },
+      "acceptance_conditions_zh": [
+        "四项v2.2指标使用可复算的临时工作边界、概念包络或审计线口径。",
+        "指标对象、输入几何、单位、公式和证据上限可追溯。",
+        "临时指标不转写为法定规划控制指标。"
+      ],
+      "current_status_v2_1": "complete_for_concept_submission; statutory_professional_and_field_inputs_pending",
+      "current_status_zh": "v2.2已形成投稿深度的结构化响应和可追溯证据；正式规划、专项审查、现场勘测、权利核验及实施授权仍待法定和专业程序。",
+      "authority_boundary_zh": "本条目为概念建议和机器可读证据索引；责任单位、场地、资金、采购、法定指标、工程条件及实施授权均待核验并依法确定。"
     },
     {
       "item_id": "risk_missing_data",
@@ -1171,11 +1602,11 @@
         "geometry/phasing.geojson"
       ],
       "metric_refs": [
-        "site_area_sqm",
+        "provisional_working_extent_area_sqm",
         "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "road_length_m",
+        "conceptual_blue_green_network_envelope_ratio",
+        "conceptual_action_envelope_ratio",
+        "conceptual_audit_alignment_length_m",
         "key_area_count",
         "flagship_project_count",
         "crosslink_count",
@@ -1214,7 +1645,39 @@
         "official geometry/controls as applicable",
         "field and professional survey as applicable",
         "competent-authority and stakeholder review"
-      ]
+      ],
+      "v2_1_evidence_refs": [
+        "visual/assets/implementation_register.json#/stage_gates",
+        "visual/assets/scenario_prototypes.json#/prototypes",
+        "visual/assets/weave_contracts.json#/contracts",
+        "geometry/roads.geojson",
+        "assets/figures/evidence-gap-atlas.png",
+        "assets/figures/public-value-governance.png"
+      ],
+      "responsibility_roles": {
+        "accountable": [
+          "CM"
+        ],
+        "responsible": [
+          "IV",
+          "DC"
+        ],
+        "consulted": [
+          "IE",
+          "DO",
+          "TO",
+          "PF",
+          "PO"
+        ]
+      },
+      "acceptance_conditions_zh": [
+        "官方事实、开放数据、概念几何和未知事项分层。",
+        "缺失输入关联责任、影响、阻断门和补充方式。",
+        "未核验事项不得通过图面精度被误认为事实。"
+      ],
+      "current_status_v2_1": "complete_for_concept_submission; statutory_professional_and_field_inputs_pending",
+      "current_status_zh": "v2.2已形成投稿深度的结构化响应和可追溯证据；正式规划、专项审查、现场勘测、权利核验及实施授权仍待法定和专业程序。",
+      "authority_boundary_zh": "本条目为概念建议和机器可读证据索引；责任单位、场地、资金、采购、法定指标、工程条件及实施授权均待核验并依法确定。"
     }
   ]
 }

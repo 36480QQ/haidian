@@ -65,7 +65,7 @@
       "ai_package_stages": {
         "submissions/kuwoo/jingzhang-quantum-belt": "formal"
       },
-      "total_bytes": 25843514,
+      "total_bytes": 26012237,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -127,7 +127,7 @@
         "key_area_count": 3.0,
         "green_ratio": 0.217597,
         "public_space_ratio": 0.034905,
-        "scenario_node_count": 17.0,
+        "scenario_node_count": 23.0,
         "test_scenario_count": 3.0,
         "landmark_count": 4.0,
         "renewal_project_count": 8.0
@@ -144,14 +144,14 @@
       "summary": {
         "standard_matrix_items": 6,
         "design_depth_items": 15,
-        "known_metric_refs_required": 13,
+        "known_metric_refs_required": 15,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
           "source": 5,
           "standard": 4,
           "depth": 16,
-          "data": 15,
+          "data": 19,
           "metric": 4
         }
       }

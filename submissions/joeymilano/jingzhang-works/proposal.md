@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以城市可用性为总纲，把京张沿线组织成三座工场与两条服务链。每项 AI 服务都必须具备人工接手、无 App 等价路径、最少数据、责任主体、停止条件和公开改进记录。"
 tracks: ["ai-traffic-walkability", "ai-public-services", "enterprise-services-ecosystem"]
 scenarios: ["ai-traffic-walkability", "ai-health-service-navigation", "ai-cultural-guide", "enterprise-service-copilot", "robot-delivery-low-speed", "public-safety-operations-review"]
-iteration: "v1.1"
+iteration: "v1.2"
 ---
 
 # 京张好用 / JING-ZHANG WORKS
@@ -186,6 +186,16 @@ iteration: "v1.1"
 
 开发者社区围绕公开问题单工作。团队先选择一个公共任务，提交六字段合同和合成测试件，通过受控测试后才进入真实任务复核。采用路径依次经过问题开单、合同完整、现场基线、受控试点、独立复演、授权采用、维护复查和退役或续期。国际访客可以读取双语任务卡和版本记录，复制的是测试方法与服务标准，不是未经验证的成功宣传。[source:V11-IMPLEMENTATION-PLAYBOOK]
 
+### 试点第一天怎样过
+
+开门前一小时，试点经理先把当天开放的路线完整走一遍。入口被车辆占住、纸图指向一道锁着的门，或人工接手点没有人，都会让当天的相关服务保持关闭。值守人员随后用纸质材料完成一次任务，再拨通离线联系人并按下实体停止装置。任何一步走不通，AI 服务当天不上线，人工服务仍可保留。
+
+开门前十分钟，服务责任方和现场人员一起读出信息来源日期、到期时间、当天使用的最少字段以及停止规则。这张签字单是开场凭证。两小时后，无障碍复核人员再走一遍无 App 路线。路线一旦中断，现场先撤下发布信息，修好以后重新走完，不让后来的人继续踩同一个坑。
+
+下午安排一次事先说明的故障演练，不拿不知情的访客试错。断网时，工作人员切回纸图和人工服务。双语信息出现关键误译时，先遮住错误内容，再从有日期的公开来源核对。无障碍路线或疏散通道被占用时，安全负责人立即停止受影响的服务。关场以后，试点经理核对问题记录，删除到期测试数据，并把当天状态写成继续开放、只留人工、修复后复演或退役四种结果之一。[source:V12-DAY-ONE-DRILL]
+
+这份首日演练现在仍是一套待执行的工作程序。场地、日期、具名人员、预算和许可全部留空。它能说明开场和关停需要哪些动作，不能证明任何演练已经发生。[source:V12-DAY-ONE-DRILL]
+
 政策建议集中在三件可执行的小事。公共空间开放要附带责任与退出条款，场景采购要允许人工旁路和数据删除，运营评价要统计失败与修复而不只统计客流。所有实施主体、资金与活动安排均为概念建议，等待政府、产权方和专业团队决定。[depth:renewal_project_list] （假设 A-OPERATIONS-001）
 
 ## 指标体系、面积复算与合规矩阵
@@ -199,6 +209,8 @@ iteration: "v1.1"
 核心公共利益指标包括无 App 等价路径覆盖率、人工接手可见率、问题按期关闭率、路线连续通过率和停用记录公开率。首轮目标是每项服务都有等价路径，每个现场点都能找到接手人，每个严重问题都能触发停用。数值目标是设计门槛，真实结果要由独立记录证明。[source:PUBLIC-CHANGE-LOG] [depth:metrics_recalculation]
 
 `compliance_matrix.json` 对公告全部必选条款建立章节、图层、图纸、指标、来源、假设和自检映射。`standard_matrix.json` 记录正式标准的响应位置。`design_depth_matrix.json` 说明控规深度和综合实施方案深度如何被证据支撑。三份矩阵供机器复核，正文保留评审真正需要理解的判断。[standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [depth:existing_conditions_diagnosis]
+
+`reviewer_evidence_index.json` 按七项评分问题另做一层入口。每个问题旁边直接列出本方案的回答、正文或文件位置，以及仍未取得的现实证据。它只负责帮人找到材料，不替评审打分，也不会把索引里的概括当成新的事实。[source:V12-REVIEWER-EVIDENCE-INDEX]
 
 ![指标、来源与放行证据](assets/figures/metrics-evidence.png)
 

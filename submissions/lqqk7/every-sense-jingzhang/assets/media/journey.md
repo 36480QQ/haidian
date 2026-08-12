@@ -3,6 +3,7 @@
 **关联媒体：** `assets/media/journey.mp4`（视频，H.264 High@4.0 + AAC-LC，1920×1080，30 fps，时长 63.477 秒）
 **代表帧：** `assets/media/journey-poster.webp`（片头帧，1920×1080，无损 WebP）
 **同源字幕：** `assets/media/journey.vtt`（UTF-8 WebVTT，11 条字幕，时间轴由实测合成结果构造）
+**英文字幕轨：** `assets/media/journey-en.vtt`（UTF-8 WebVTT，11 条字幕，时间轴与 `journey.vtt` 同源，文本为同一旁白的英文翻译；无英文配音）/ **English caption track:** `assets/media/journey-en.vtt` (UTF-8 WebVTT, 11 cues, cue timing identical to `journey.vtt`, text translated from the same narration; no English voice-over).
 **内容语言：** 旁白与字幕为简体中文；画面关键标注为中英双语
 **性质：** 概念建议性质的方案陈述，非官方发布、非审批结论、非实景记录
 
@@ -43,6 +44,7 @@
 - **画面：** `assets/figures/mobility-bluegreen.png` 中「概念网络」的局部，自上而下缓慢下移，从直接多模态线与低刺激替代线上的十个节点，移到 AI ON 与 AI OFF 的成对对照框。
 - **画面文字：** 章节头 02 骨架与等价服务网络 / FRAMEWORK AND EQUIVALENT SERVICE NETWORK；三座多感官实验院 · 两翼支持网 / Three sensory labs · two supporting wings；直接多模态线 + 低刺激安静替代线 / Direct multimodal line + low-stimulation quiet route；十个独立完成点 OP-01—OP-10 / Ten independent-completion points；角标 概念建议 / CONCEPT。
 - **对应旁白：** 第 4 句。
+- **图件版本：** 本镜头取自本片渲染时（v5.0）的 `mobility-bluegreen.png`；该图已于 v5.1 整体重造为《十节点服务可达域与蓝绿慢行系统图》，图内名称与画面构图随之改变。本片未重新渲染，此处如实登记该差异，现行图件以 `assets/figures/` 为准。
 
 ### 镜头 04 · 三处重点区的运行合同 00:20.94 — 00:34.99
 
@@ -106,7 +108,7 @@
 | 5 | 三座实验院的角色分工：众智园的验证、AI 原点社区的共同设计、大钟寺的采用 |
 | 6 | 十个完成点把场景卡变成可识别、可停留、可测试、可退出的公共界面 |
 | 7—8 | 全案底线原则 AI ON = AI OFF，以及第 16 章交互场景中「切换 AI 开关，读数不变，改变的只是完成同一件事的通道」的表述 |
-| 9 | 《空间文化系统》与品牌视觉语法：统一轨距使不同列车共享同一网络，通用设计使不同身体共享同一座城市 |
+| 9 | 《京张文化、中关村文化与 AI 新文化的多感官叙事》与品牌视觉语法：统一轨距使不同列车共享同一网络，通用设计使不同身体共享同一座城市 |
 | 10 | 品牌国际传播句 One city. Many ways to sense it. 的中文表达 |
 | 11 | 《设计依据与资料清单》关于边界与结论效力的限定表述 |
 
@@ -119,7 +121,7 @@
 | 项目 | 记录 |
 | --- | --- |
 | 画面渲染 | 为本片手写的 HTML/CSS 排版页，经 Playwright 驱动的 Chromium 无头浏览器逐帧截图，1920×1080，30 fps，共 1905 帧。每帧的镜头位置由时间参数确定性计算，不依赖实时动画，因此不存在掉帧或快慢不均 |
-| 图件来源 | 本投稿包 `assets/figures/` 下的 `site-overview.png`、`mobility-bluegreen.png`、`key-areas.png`、`brand-system.png`（4800×3000，投稿方自制）。预缩放至 3000×1875 后在页面内做推移与缩放，未修改图内任何内容、未添加或删除图内要素 |
+| 图件来源 | 本投稿包 `assets/figures/` 下的 `site-overview.png`、`mobility-bluegreen.png`、`key-areas.png`、`brand-system.png`（4800×3000，投稿方自制）。预缩放至 3000×1875 后在页面内做推移与缩放，未修改图内任何内容、未添加或删除图内要素。本片镜头取自渲染时（v5.0）的图件版本：其中 `mobility-bluegreen.png` 已于 v5.1 整体重造为《十节点服务可达域与蓝绿慢行系统图》，`site-overview.png` 与 `brand-system.png` 亦有 v5.1 之后的显示精度与表述修订；本片未重新渲染，现行图件以 `assets/figures/` 为准 |
 | 标志图形 | 由本包 `assets/logo.svg` 的深色模式配色重绘为内联 SVG（感知线 #5fb3ab、节点环 #f2efe7、原点 #e08975），几何路径与原文件完全一致 |
 | 交互场景录制 | 用同一浏览器打开本包 `visual/index.html` 第 16 章交互场景，把 `requestAnimationFrame` 替换为可手动推进的队列，使动画相位每帧严格递增固定量，再逐帧截取「AI 开关条 + 场景舞台」区域（1344×595 CSS 像素，设备像素比 2，即 2688×1190 实际像素）。录制过程中依次执行两次点击：「播放引导流光」与「AI 关闭」。被录制页面的文件内容未作任何修改，运行期间不加载任何远程脚本、字体、瓦片或统计代码 |
 | 字体 | 画面文字由运行环境预装字体渲染（PingFang SC、Georgia 等），未嵌入、未随包分发任何字体文件 |
@@ -153,7 +155,7 @@
 ## 七、已知限制
 
 1. **合成语音的固有限制。** 系统语音在长句、专有名词与多音字上的语调与切分可能不够自然。该旁白用于信息传达，不用于替代专业配音或正式播报。
-2. **单一配音语言。** 目前仅提供简体中文旁白与中文字幕；画面关键标注为中英双语，未制作英文配音版本或英文字幕轨。英文内容以 `proposal.en.md` 为准。
+2. **单一配音语言。** 目前仅提供简体中文旁白；画面关键标注为中英双语，字幕轨提供中文 `journey.vtt` 与英文 `journey-en.vtt` 两条，未制作英文配音版本。英文内容以 `proposal.en.md` 为准。
 3. **未覆盖的无障碍通道。** 本片未提供手语视频、易读（Easy Read）改写版本与独立的音频描述（AD）音轨。画面中的关键信息已通过旁白、双语标注、烧录字幕与本文件第二节的分镜描述四重冗余提供；但严格意义上的音频描述音轨仍属缺项。方案主张手语与易读版本须由相应使用者群体参与评估后方可发布，在缺少该条件前不以机器生成结果充数。
 4. **镜头运动带来的边缘截断。** 图版局部推移过程中，画面边缘可能出现被裁切的文字或图形。完整图版见 `assets/figures/` 下的原始图件，本片不替代其阅读。
 5. **内容为概念阶段结论。** 片中的空间骨架、区域分工、节点定义与读数均属概念建议。截至制作时，本方案没有官方精确边界、现场无障碍审计数据与真实用户任务基线。
@@ -166,7 +168,7 @@
 
 This 63-second film is a **fully synthetic presentation artifact**. Its narration was produced with the MiniMax text-to-speech service (model `speech-2.8-hd`, preset synthetic voice "Chinese (Mandarin)_Reliable_Executive", accessed via the official `mmx` CLI) under the terms of that service, using the same voice as the package's `audio-guide.m4a`. It contains **no human voice recording, no voice cloning or imitation of any real person, no music, no sound effects, no sampled audio, no field recording, no photography, no drone or video footage, and no image- or video-generation model output**.
 
-Every frame was rendered from hand-written HTML/CSS through a headless Chromium browser and captured frame by frame. The visual material consists solely of (a) the submission package's own figure plates in `assets/figures/`, moved and zoomed without altering their content, (b) the package's own logo geometry from `assets/logo.svg`, and (c) a frame-accurate capture of the package's own interactive scene in `visual/index.html`, chapter 16, driven by two real clicks: "play guidance flow" and "AI OFF". The captured page loads no remote script, font, tile or tracker. Type is rendered with fonts preinstalled in the runtime; no font file is embedded or redistributed. The OpenStreetMap background carried inside the figure plates is credited on the plates themselves and appears with them on screen.
+Every frame was rendered from hand-written HTML/CSS through a headless Chromium browser and captured frame by frame. The visual material consists solely of (a) the submission package's own figure plates in `assets/figures/`, moved and zoomed without altering their content — captured at the version current when the film was rendered (v5.0), while `mobility-bluegreen.png` was rebuilt in v5.1 as "Ten-Node Service Reachability + Blue-Green & Slow Mobility" and `site-overview.png` and `brand-system.png` carry display-precision and wording revisions made from v5.1 onward; the film has not been re-rendered and the plates in `assets/figures/` are authoritative — (b) the package's own logo geometry from `assets/logo.svg`, and (c) a frame-accurate capture of the package's own interactive scene in `visual/index.html`, chapter 16, driven by two real clicks: "play guidance flow" and "AI OFF". The captured page loads no remote script, font, tile or tracker. Type is rendered with fonts preinstalled in the runtime; no font file is embedded or redistributed. The OpenStreetMap background carried inside the figure plates is credited on the plates themselves and appears with them on screen.
 
 The narration, the burnt-in Chinese captions, the WebVTT track (`journey.vtt`) and the transcript in section 3 above carry **identical wording**, so the film can be used by watching, by listening, or by reading text alone — an application of the proposal's own "AI ON = AI OFF" and dual-channel redundancy requirements to its own deliverable.
 

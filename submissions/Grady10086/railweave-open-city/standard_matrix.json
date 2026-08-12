@@ -37,11 +37,11 @@
         "geometry/phasing.geojson"
       ],
       "metric_refs": [
-        "site_area_sqm",
+        "provisional_working_extent_area_sqm",
         "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "road_length_m",
+        "conceptual_blue_green_network_envelope_ratio",
+        "conceptual_action_envelope_ratio",
+        "conceptual_audit_alignment_length_m",
         "key_area_count",
         "flagship_project_count",
         "crosslink_count",
@@ -71,8 +71,40 @@
         "VISUAL_STATIC",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "v2.0按照五级资料与成果表达要求，分类标注法定及批准依据、官方实施信息、官方文字范围、开放工作底图和规划设计建议，并通过矩阵关联正文、空间数据、指标和图纸。",
-      "status_semantics_zh": "addressed仅表示投稿包已就该项形成阶段性响应，不作为符合性审查、行政审批或专业审查结论。"
+      "evidence_summary_zh": "v2.2按照五级资料与成果表达要求，分类标注法定及批准依据、官方实施信息、官方文字范围、开放工作底图和规划设计建议，并通过矩阵关联正文、空间数据、指标和图纸。",
+      "status_semantics_zh": "addressed仅表示投稿包已就该项形成阶段性响应，不作为符合性审查、行政审批或专业审查结论。",
+      "v2_1_evidence_refs": [
+        "visual/assets/implementation_register.json#/stage_gates",
+        "geometry/public_space.geojson",
+        "geometry/phasing.geojson",
+        "geometry/roads.geojson",
+        "assets/figures/overall-design-plan.png",
+        "assets/figures/implementation-ledger.png"
+      ],
+      "responsibility_roles": {
+        "accountable": [
+          "CM"
+        ],
+        "responsible": [
+          "IE"
+        ],
+        "consulted": [
+          "DO",
+          "TO",
+          "IV",
+          "DC",
+          "PF",
+          "PO"
+        ]
+      },
+      "acceptance_conditions_zh": [
+        "标准要求与正文、几何、指标、图件和责任角色形成可追溯对应。",
+        "当前响应深度和待补输入明确。",
+        "依法确定和专业复核前不作法定或工程结论。"
+      ],
+      "current_status_v2_1": "addressed_at_concept_submission_depth; competent_authority_and_professional_review_pending",
+      "current_status_zh": "v2.2已形成投稿深度的结构化响应和可追溯证据；正式规划、专项审查、现场勘测、权利核验及实施授权仍待法定和专业程序。",
+      "authority_boundary_zh": "本条目为概念建议和机器可读证据索引；责任单位、场地、资金、采购、法定指标、工程条件及实施授权均待核验并依法确定。"
     },
     {
       "standard_id": "PROJECT-AGENT-OPEN-CALL-TASKBOOK",
@@ -110,11 +142,11 @@
         "geometry/phasing.geojson"
       ],
       "metric_refs": [
-        "site_area_sqm",
+        "provisional_working_extent_area_sqm",
         "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "road_length_m",
+        "conceptual_blue_green_network_envelope_ratio",
+        "conceptual_action_envelope_ratio",
+        "conceptual_audit_alignment_length_m",
         "key_area_count",
         "flagship_project_count",
         "crosslink_count",
@@ -144,8 +176,40 @@
         "VISUAL_STATIC",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "v2.0按照五级资料与成果表达要求，分类标注法定及批准依据、官方实施信息、官方文字范围、开放工作底图和规划设计建议，并通过矩阵关联正文、空间数据、指标和图纸。",
-      "status_semantics_zh": "addressed仅表示投稿包已就该项形成阶段性响应，不作为符合性审查、行政审批或专业审查结论。"
+      "evidence_summary_zh": "v2.2按照五级资料与成果表达要求，分类标注法定及批准依据、官方实施信息、官方文字范围、开放工作底图和规划设计建议，并通过矩阵关联正文、空间数据、指标和图纸。",
+      "status_semantics_zh": "addressed仅表示投稿包已就该项形成阶段性响应，不作为符合性审查、行政审批或专业审查结论。",
+      "v2_1_evidence_refs": [
+        "visual/assets/implementation_register.json#/project_registers",
+        "visual/assets/scenario_prototypes.json#/prototypes",
+        "visual/assets/weave_contracts.json#/contracts",
+        "assets/figures/ai-service-blueprints.png",
+        "assets/figures/identity-landmarks.png",
+        "assets/figures/public-value-governance.png"
+      ],
+      "responsibility_roles": {
+        "accountable": [
+          "CM"
+        ],
+        "responsible": [
+          "DO",
+          "TO"
+        ],
+        "consulted": [
+          "IE",
+          "IV",
+          "DC",
+          "PF",
+          "PO"
+        ]
+      },
+      "acceptance_conditions_zh": [
+        "六项智能体任务均具正文、结构化证据和视觉索引。",
+        "原型、实施、公众参与和长期运营形成可转交闭环。",
+        "概念建议、测试、采购、实施和政府背书状态不混淆。"
+      ],
+      "current_status_v2_1": "addressed_at_concept_submission_depth; competent_authority_and_professional_review_pending",
+      "current_status_zh": "v2.2已形成投稿深度的结构化响应和可追溯证据；正式规划、专项审查、现场勘测、权利核验及实施授权仍待法定和专业程序。",
+      "authority_boundary_zh": "本条目为概念建议和机器可读证据索引；责任单位、场地、资金、采购、法定指标、工程条件及实施授权均待核验并依法确定。"
     },
     {
       "standard_id": "MOHURD-URBAN-DESIGN-MEASURES",
@@ -183,11 +247,11 @@
         "geometry/phasing.geojson"
       ],
       "metric_refs": [
-        "site_area_sqm",
+        "provisional_working_extent_area_sqm",
         "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "road_length_m",
+        "conceptual_blue_green_network_envelope_ratio",
+        "conceptual_action_envelope_ratio",
+        "conceptual_audit_alignment_length_m",
         "key_area_count",
         "flagship_project_count",
         "crosslink_count",
@@ -217,8 +281,41 @@
         "VISUAL_STATIC",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "v2.0按照五级资料与成果表达要求，分类标注法定及批准依据、官方实施信息、官方文字范围、开放工作底图和规划设计建议，并通过矩阵关联正文、空间数据、指标和图纸。",
-      "status_semantics_zh": "addressed仅表示投稿包已就该项形成阶段性响应，不作为符合性审查、行政审批或专业审查结论。"
+      "evidence_summary_zh": "v2.2按照五级资料与成果表达要求，分类标注法定及批准依据、官方实施信息、官方文字范围、开放工作底图和规划设计建议，并通过矩阵关联正文、空间数据、指标和图纸。",
+      "status_semantics_zh": "addressed仅表示投稿包已就该项形成阶段性响应，不作为符合性审查、行政审批或专业审查结论。",
+      "v2_1_evidence_refs": [
+        "geometry/public_space.geojson",
+        "geometry/roads.geojson",
+        "assets/figures/overall-design-plan.png",
+        "assets/figures/section-family.png",
+        "assets/figures/zhongzhiyuan-detail.png",
+        "assets/figures/ai-origin-detail.png",
+        "assets/figures/dazhongsi-detail.png"
+      ],
+      "responsibility_roles": {
+        "accountable": [
+          "IE"
+        ],
+        "responsible": [
+          "CM",
+          "TO"
+        ],
+        "consulted": [
+          "DO",
+          "IV",
+          "DC",
+          "PF",
+          "PO"
+        ]
+      },
+      "acceptance_conditions_zh": [
+        "标准要求与正文、几何、指标、图件和责任角色形成可追溯对应。",
+        "当前响应深度和待补输入明确。",
+        "依法确定和专业复核前不作法定或工程结论。"
+      ],
+      "current_status_v2_1": "addressed_at_concept_submission_depth; competent_authority_and_professional_review_pending",
+      "current_status_zh": "v2.2已形成投稿深度的结构化响应和可追溯证据；正式规划、专项审查、现场勘测、权利核验及实施授权仍待法定和专业程序。",
+      "authority_boundary_zh": "本条目为概念建议和机器可读证据索引；责任单位、场地、资金、采购、法定指标、工程条件及实施授权均待核验并依法确定。"
     },
     {
       "standard_id": "MOHURD-CONTROL-DETAILED-PLANNING",
@@ -256,11 +353,11 @@
         "geometry/phasing.geojson"
       ],
       "metric_refs": [
-        "site_area_sqm",
+        "provisional_working_extent_area_sqm",
         "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "road_length_m",
+        "conceptual_blue_green_network_envelope_ratio",
+        "conceptual_action_envelope_ratio",
+        "conceptual_audit_alignment_length_m",
         "key_area_count",
         "flagship_project_count",
         "crosslink_count",
@@ -290,8 +387,39 @@
         "VISUAL_STATIC",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "v2.0按照五级资料与成果表达要求，分类标注法定及批准依据、官方实施信息、官方文字范围、开放工作底图和规划设计建议，并通过矩阵关联正文、空间数据、指标和图纸。",
-      "status_semantics_zh": "addressed仅表示投稿包已就该项形成阶段性响应，不作为符合性审查、行政审批或专业审查结论。"
+      "evidence_summary_zh": "v2.2按照五级资料与成果表达要求，分类标注法定及批准依据、官方实施信息、官方文字范围、开放工作底图和规划设计建议，并通过矩阵关联正文、空间数据、指标和图纸。",
+      "status_semantics_zh": "addressed仅表示投稿包已就该项形成阶段性响应，不作为符合性审查、行政审批或专业审查结论。",
+      "v2_1_evidence_refs": [
+        "visual/assets/implementation_register.json#/stage_gates",
+        "geometry/roads.geojson",
+        "geometry/phasing.geojson",
+        "assets/figures/evidence-gap-atlas.png",
+        "assets/figures/implementation-ledger.png"
+      ],
+      "responsibility_roles": {
+        "accountable": [
+          "CM"
+        ],
+        "responsible": [
+          "IE"
+        ],
+        "consulted": [
+          "DO",
+          "TO",
+          "IV",
+          "DC",
+          "PF",
+          "PO"
+        ]
+      },
+      "acceptance_conditions_zh": [
+        "已知依据、开放工作底图、概念建议和待确认事项分层表达。",
+        "强度、高度、拆改留和工程条件不被表述为审定结论。",
+        "取得官方和专业输入后重新校核并记录差异。"
+      ],
+      "current_status_v2_1": "addressed_at_concept_submission_depth; competent_authority_and_professional_review_pending",
+      "current_status_zh": "v2.2已形成投稿深度的结构化响应和可追溯证据；正式规划、专项审查、现场勘测、权利核验及实施授权仍待法定和专业程序。",
+      "authority_boundary_zh": "本条目为概念建议和机器可读证据索引；责任单位、场地、资金、采购、法定指标、工程条件及实施授权均待核验并依法确定。"
     },
     {
       "standard_id": "MNR-LAND-USE-CLASSIFICATION-GUIDE",
@@ -329,11 +457,11 @@
         "geometry/phasing.geojson"
       ],
       "metric_refs": [
-        "site_area_sqm",
+        "provisional_working_extent_area_sqm",
         "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "road_length_m",
+        "conceptual_blue_green_network_envelope_ratio",
+        "conceptual_action_envelope_ratio",
+        "conceptual_audit_alignment_length_m",
         "key_area_count",
         "flagship_project_count",
         "crosslink_count",
@@ -363,8 +491,38 @@
         "VISUAL_STATIC",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "v2.0按照五级资料与成果表达要求，分类标注法定及批准依据、官方实施信息、官方文字范围、开放工作底图和规划设计建议，并通过矩阵关联正文、空间数据、指标和图纸。",
-      "status_semantics_zh": "addressed仅表示投稿包已就该项形成阶段性响应，不作为符合性审查、行政审批或专业审查结论。"
+      "evidence_summary_zh": "v2.2按照五级资料与成果表达要求，分类标注法定及批准依据、官方实施信息、官方文字范围、开放工作底图和规划设计建议，并通过矩阵关联正文、空间数据、指标和图纸。",
+      "status_semantics_zh": "addressed仅表示投稿包已就该项形成阶段性响应，不作为符合性审查、行政审批或专业审查结论。",
+      "v2_1_evidence_refs": [
+        "geometry/land_use.geojson",
+        "geometry/public_space.geojson",
+        "assets/figures/overall-design-plan.png",
+        "assets/figures/evidence-gap-atlas.png"
+      ],
+      "responsibility_roles": {
+        "accountable": [
+          "CM"
+        ],
+        "responsible": [
+          "IE"
+        ],
+        "consulted": [
+          "DO",
+          "TO",
+          "IV",
+          "DC",
+          "PF",
+          "PO"
+        ]
+      },
+      "acceptance_conditions_zh": [
+        "标准要求与正文、几何、指标、图件和责任角色形成可追溯对应。",
+        "当前响应深度和待补输入明确。",
+        "依法确定和专业复核前不作法定或工程结论。"
+      ],
+      "current_status_v2_1": "addressed_at_concept_submission_depth; competent_authority_and_professional_review_pending",
+      "current_status_zh": "v2.2已形成投稿深度的结构化响应和可追溯证据；正式规划、专项审查、现场勘测、权利核验及实施授权仍待法定和专业程序。",
+      "authority_boundary_zh": "本条目为概念建议和机器可读证据索引；责任单位、场地、资金、采购、法定指标、工程条件及实施授权均待核验并依法确定。"
     },
     {
       "standard_id": "MOHURD-ARCH-DESIGN-DEPTH-2016",
@@ -402,11 +560,11 @@
         "geometry/phasing.geojson"
       ],
       "metric_refs": [
-        "site_area_sqm",
+        "provisional_working_extent_area_sqm",
         "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "road_length_m",
+        "conceptual_blue_green_network_envelope_ratio",
+        "conceptual_action_envelope_ratio",
+        "conceptual_audit_alignment_length_m",
         "key_area_count",
         "flagship_project_count",
         "crosslink_count",
@@ -436,8 +594,39 @@
         "VISUAL_STATIC",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "v2.0按照五级资料与成果表达要求，分类标注法定及批准依据、官方实施信息、官方文字范围、开放工作底图和规划设计建议，并通过矩阵关联正文、空间数据、指标和图纸。",
-      "status_semantics_zh": "addressed仅表示投稿包已就该项形成阶段性响应，不作为符合性审查、行政审批或专业审查结论。"
+      "evidence_summary_zh": "v2.2按照五级资料与成果表达要求，分类标注法定及批准依据、官方实施信息、官方文字范围、开放工作底图和规划设计建议，并通过矩阵关联正文、空间数据、指标和图纸。",
+      "status_semantics_zh": "addressed仅表示投稿包已就该项形成阶段性响应，不作为符合性审查、行政审批或专业审查结论。",
+      "v2_1_evidence_refs": [
+        "geometry/buildings.geojson",
+        "geometry/public_space.geojson",
+        "geometry/roads.geojson",
+        "assets/figures/section-family.png",
+        "assets/figures/evidence-gap-atlas.png"
+      ],
+      "responsibility_roles": {
+        "accountable": [
+          "IE"
+        ],
+        "responsible": [
+          "CM",
+          "TO"
+        ],
+        "consulted": [
+          "DO",
+          "IV",
+          "DC",
+          "PF",
+          "PO"
+        ]
+      },
+      "acceptance_conditions_zh": [
+        "已知依据、开放工作底图、概念建议和待确认事项分层表达。",
+        "强度、高度、拆改留和工程条件不被表述为审定结论。",
+        "取得官方和专业输入后重新校核并记录差异。"
+      ],
+      "current_status_v2_1": "addressed_at_concept_submission_depth; competent_authority_and_professional_review_pending",
+      "current_status_zh": "v2.2已形成投稿深度的结构化响应和可追溯证据；正式规划、专项审查、现场勘测、权利核验及实施授权仍待法定和专业程序。",
+      "authority_boundary_zh": "本条目为概念建议和机器可读证据索引；责任单位、场地、资金、采购、法定指标、工程条件及实施授权均待核验并依法确定。"
     }
   ]
 }

@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "664be9fc9779240df124b3645aa8cbfbead683444f05bcffd750c15544eb473a"
+      "sha256": "b7993c21571573c634a681b1e4583d8afd23e89d9b45325a2089824bd53ba7b0"
     },
     {
       "path": "agent.json",
@@ -38,13 +38,13 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "f5776ea3466cce4b54b56a4fb1f920d8aa386d112f0fb3a9fa2cf6a183c49558"
+      "sha256": "3bef4a639d100b6065181063d4617960927695097f6fe26f40d68280cf4bc301"
     },
     {
       "path": "assumptions.json",
       "role": "assumptions",
       "required": true,
-      "sha256": "0765cb6db5979d61ed758d76af6302a245774470dd8a7fb702da2629af86ba15"
+      "sha256": "cabb16cf26782afe6671ebc8b6e5c8270d87165a67d9078de2e51a3a47ff764f"
     },
     {
       "path": "sources.json",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "68ceb5748d18a9c00a5fbdb303ccc098dbf4ef65668a96a278c08e2c47d0e882"
+      "sha256": "b6e0f3b831e1c82c36404f4cf4a90718e2c99b1b3f02c1de00d7f34047e5a18f"
     },
     {
       "path": "report/proposal.en.html",
@@ -244,6 +244,18 @@
       "language": "en",
       "translation_of": "visual/index.html",
       "sha256": "3ec5eedaf9d8ecd6e565b1af44e8081e3e85f2823aa834fe988932926f89916d"
+    },
+    {
+      "path": "visual/assets/mainline-tabletop.json",
+      "role": "evidence_data",
+      "required": false,
+      "sha256": "6413638deb58f41d0761e552a126288ce17d32e2c175b26126cff7c1db982eec"
+    },
+    {
+      "path": "visual/assets/rights-ledger.json",
+      "role": "evidence_data",
+      "required": false,
+      "sha256": "59ae8745efbacb989d3002c93f301b2d3d90a96403b2c891f8b734e0b170c4d3"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -284,6 +296,42 @@
       "language": "en",
       "translation_of": "assets/figures/site-overview.png",
       "sha256": "9b75d04bf523b224fe1e560ba24b10db7c7060f7ee0b04f6613df62b7da2d674"
+    },
+    {
+      "path": "visual/assets/mainline-contracts.json",
+      "role": "evidence_data",
+      "required": false,
+      "sha256": "35600127d9e4b6edadec26c8f210265058633cd23f8df666bd0c1ccae1453e8a"
+    },
+    {
+      "path": "visual/assets/mainline-state-machine.json",
+      "role": "evidence_data",
+      "required": false,
+      "sha256": "235be9619322afc3fddf98727999dc4a7faee2687a457c8a7862ed196c5b2a1b"
+    },
+    {
+      "path": "visual/assets/mainline-gates.json",
+      "role": "evidence_data",
+      "required": false,
+      "sha256": "5834f2490b7e7b280ef9020d5537f19fd60d86c2c4cea52d7ee318101651ae49"
+    },
+    {
+      "path": "visual/assets/mainline-pipeline.json",
+      "role": "evidence_data",
+      "required": false,
+      "sha256": "ad850bee7449688d1a5e6137d3a7f919e0a2c80358886825680d99ee63426089"
+    },
+    {
+      "path": "visual/assets/mainline-raci.json",
+      "role": "evidence_data",
+      "required": false,
+      "sha256": "5020a379f45e5e10887965802be631def26f6d15698d23dcd7fc6e49ccaab52d"
+    },
+    {
+      "path": "risk.json",
+      "role": "evidence_data",
+      "required": false,
+      "sha256": "25e7d31971a80a17cef7f8ce10c9348c1ce64a56fca0fc4579e326a5875c0094"
     }
   ],
   "validation_claim": {
