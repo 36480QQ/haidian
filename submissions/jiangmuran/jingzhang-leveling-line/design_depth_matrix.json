@@ -37,7 +37,7 @@
         "references": 11,
         "reviewer_can_read_whole": 9,
         "reviewer_sees_as_image": 1,
-        "reviewer_sees_first_3_pages": 0,
+        "reviewer_sees_first_page_only": 0,
         "reviewer_cannot_open": 1
       }
     },
@@ -76,7 +76,7 @@
         "references": 10,
         "reviewer_can_read_whole": 7,
         "reviewer_sees_as_image": 1,
-        "reviewer_sees_first_3_pages": 0,
+        "reviewer_sees_first_page_only": 0,
         "reviewer_cannot_open": 2
       }
     },
@@ -116,7 +116,7 @@
         "references": 11,
         "reviewer_can_read_whole": 7,
         "reviewer_sees_as_image": 1,
-        "reviewer_sees_first_3_pages": 0,
+        "reviewer_sees_first_page_only": 0,
         "reviewer_cannot_open": 3
       }
     },
@@ -154,7 +154,7 @@
         "references": 9,
         "reviewer_can_read_whole": 7,
         "reviewer_sees_as_image": 1,
-        "reviewer_sees_first_3_pages": 0,
+        "reviewer_sees_first_page_only": 0,
         "reviewer_cannot_open": 1
       }
     },
@@ -199,7 +199,7 @@
         "references": 9,
         "reviewer_can_read_whole": 7,
         "reviewer_sees_as_image": 1,
-        "reviewer_sees_first_3_pages": 0,
+        "reviewer_sees_first_page_only": 0,
         "reviewer_cannot_open": 1
       }
     },
@@ -243,7 +243,7 @@
         "references": 8,
         "reviewer_can_read_whole": 6,
         "reviewer_sees_as_image": 0,
-        "reviewer_sees_first_3_pages": 0,
+        "reviewer_sees_first_page_only": 0,
         "reviewer_cannot_open": 2
       }
     },
@@ -290,7 +290,7 @@
         "references": 11,
         "reviewer_can_read_whole": 8,
         "reviewer_sees_as_image": 1,
-        "reviewer_sees_first_3_pages": 0,
+        "reviewer_sees_first_page_only": 0,
         "reviewer_cannot_open": 2
       }
     },
@@ -329,7 +329,7 @@
         "references": 10,
         "reviewer_can_read_whole": 8,
         "reviewer_sees_as_image": 1,
-        "reviewer_sees_first_3_pages": 0,
+        "reviewer_sees_first_page_only": 0,
         "reviewer_cannot_open": 1
       }
     },
@@ -368,7 +368,7 @@
         "references": 10,
         "reviewer_can_read_whole": 7,
         "reviewer_sees_as_image": 1,
-        "reviewer_sees_first_3_pages": 0,
+        "reviewer_sees_first_page_only": 0,
         "reviewer_cannot_open": 2
       }
     },
@@ -409,7 +409,7 @@
         "references": 12,
         "reviewer_can_read_whole": 9,
         "reviewer_sees_as_image": 1,
-        "reviewer_sees_first_3_pages": 0,
+        "reviewer_sees_first_page_only": 0,
         "reviewer_cannot_open": 2
       }
     },
@@ -449,7 +449,7 @@
         "references": 11,
         "reviewer_can_read_whole": 8,
         "reviewer_sees_as_image": 1,
-        "reviewer_sees_first_3_pages": 0,
+        "reviewer_sees_first_page_only": 0,
         "reviewer_cannot_open": 2
       }
     },
@@ -487,7 +487,7 @@
         "references": 9,
         "reviewer_can_read_whole": 7,
         "reviewer_sees_as_image": 0,
-        "reviewer_sees_first_3_pages": 0,
+        "reviewer_sees_first_page_only": 0,
         "reviewer_cannot_open": 2
       }
     },
@@ -527,7 +527,7 @@
         "references": 11,
         "reviewer_can_read_whole": 8,
         "reviewer_sees_as_image": 1,
-        "reviewer_sees_first_3_pages": 0,
+        "reviewer_sees_first_page_only": 0,
         "reviewer_cannot_open": 2
       }
     },
@@ -567,7 +567,7 @@
         "references": 11,
         "reviewer_can_read_whole": 8,
         "reviewer_sees_as_image": 1,
-        "reviewer_sees_first_3_pages": 0,
+        "reviewer_sees_first_page_only": 0,
         "reviewer_cannot_open": 2
       }
     },
@@ -611,7 +611,7 @@
         "references": 15,
         "reviewer_can_read_whole": 13,
         "reviewer_sees_as_image": 0,
-        "reviewer_sees_first_3_pages": 0,
+        "reviewer_sees_first_page_only": 0,
         "reviewer_cannot_open": 2
       }
     }
@@ -620,7 +620,7 @@
     "references": 158,
     "reviewer_can_read_whole": 119,
     "reviewer_sees_as_image": 12,
-    "reviewer_sees_first_3_pages": 0,
+    "reviewer_sees_first_page_only": 0,
     "reviewer_cannot_open": 27,
     "note_zh": "评审模型整份收到九个文件，不含 `geometry/` 与 `visual/assets/`（见 `scripts/review_submission.py::build_review_input`）。本表逐条标出它能打开多少、打不开多少——**这不是免责，是让评审知道哪一行的证据它可以自己核，哪一行只能听我说**。数字由构建算出，管线若开始多送文件，它们会自己变。"
   }
