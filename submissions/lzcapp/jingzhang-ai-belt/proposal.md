@@ -570,6 +570,11 @@ agent 生成的AI治理建议必须遵守数据最小化、公开来源、可解
 - data/processed/agent_task_requirements.csv
 - data/processed/source_use_matrix.csv
 - data/processed/missing_data_checklist.csv
-- 机器可读引用索引（正文各节已逐项给出，以下为按类型汇总）：
+- 机器可读引用索引（按类型汇总；完整登记见 `sources.json` / `standard_matrix.json` / `design_depth_matrix.json` / `metrics.json`）：
+  - 来源 [source]（26 条）：[source:SITE-PACKAGE] 任务书、[source:AGENT-TASKBOOK] 智能体任务书、[source:BOUNDARY-SOURCE] 边界来源、[source:KEY-AREA-SOURCE] 重点区来源、[source:ECOSYSTEM-MAP] 产业生态、[source:OPERATIONS] 运营路径 等，详见 `sources.json`。
+  - 标准 [standard]（6 条）：[standard:MOHURD-ARCH-DESIGN-DEPTH-2016] 成果深度、[standard:MOHURD-URBAN-DESIGN-MEASURES] 城市设计管理办法、[standard:MOHURD-CONTROL-DETAILED-PLANNING] 控规、[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] 用地分类、[standard:PROJECT-OFFICIAL-ANNOUNCEMENT] 公告、[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] 任务书，详见 `standard_matrix.json`。
+  - 深度 [depth]（15 条）：[depth:three_level_scope_framework] 三层范围、[depth:overall_spatial_structure] 总体结构、[depth:land_use_layout] 用地布局、[depth:height_massing_character] 高度体量、[depth:retain_renovate_demolish] 拆改留、[depth:renewal_project_list] 更新项目 等，详见 `design_depth_matrix.json`。
+  - 数据 [data]（15 条）：[data:geometry/site_boundary.geojson#SITE-001] 边界、[data:geometry/key_areas.geojson#PROV-KEY-001] 重点区、[data:geometry/land_use.geojson#LU-001] 用地、[data:geometry/buildings.geojson#BLDG-001] 建筑、[data:geometry/phasing.geojson#PHASE-001] 分期、[data:geometry/constraints.geojson#CONSTRAINTS] 约束 等，详见 `geometry/*.geojson`。
+  - 指标 [metric]（10 条）：[metric:site_area_sqm] 用地面积、[metric:green_ratio] 绿地率、[metric:public_space_ratio] 公共空间占比、[metric:building_density] 建筑密度、[metric:key_area_count] 重点区数量、[metric:phasing_area_sqm] 分期面积 等，详见 `metrics.json`。
 
-
+> 以上标记在正文各节均与论述上下文一同出现；本节仅按类型汇总，便于评审与脚本回链。provisional 边界与 unknown 指标不得读作正式控规结论。
