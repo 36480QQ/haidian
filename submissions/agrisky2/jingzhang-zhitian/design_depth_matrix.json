@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "items": [
     {
-      "item_id": "DD-001-land-use",
+      "item_id": "land-use",
       "title_zh": "用地功能布局",
       "professional_dimension": "urban_design",
       "required": true,
@@ -29,10 +29,11 @@
       "self_check_ids": [
         "GEOJSON_ALL_PRESENT"
       ],
-      "evidence_summary_zh": "完成概念用地功能分区，包含6个用地类型，以AI科研和商业服务为主"
+      "evidence_summary_zh": "完成概念用地功能分区，包含6个用地类型，以AI科研和商业服务为主",
+      "dimension_id": "land_use_layout"
     },
     {
-      "item_id": "DD-002-building-form",
+      "item_id": "building-form",
       "title_zh": "建筑形态与规模",
       "professional_dimension": "urban_design",
       "required": true,
@@ -59,10 +60,11 @@
       "self_check_ids": [
         "GEOJSON_ALL_PRESENT"
       ],
-      "evidence_summary_zh": "48栋概念建筑布局，按6种功能类型分布，FAR和GFA为概念建议"
+      "evidence_summary_zh": "48栋概念建筑布局，按6种功能类型分布，FAR和GFA为概念建议",
+      "dimension_id": "height_massing_character"
     },
     {
-      "item_id": "DD-003-mobility-bluegreen",
+      "item_id": "mobility-bluegreen",
       "title_zh": "交通慢行与蓝绿公共空间",
       "professional_dimension": "landscape",
       "required": true,
@@ -93,10 +95,11 @@
       "self_check_ids": [
         "GEOJSON_ALL_PRESENT"
       ],
-      "evidence_summary_zh": "概念道路网络（主次干路+纵向连接）、4个绿地斑块、6个公共空间节点"
+      "evidence_summary_zh": "概念道路网络（主次干路+纵向连接）、4个绿地斑块、6个公共空间节点",
+      "dimension_id": "traffic_rail_slow_parking"
     },
     {
-      "item_id": "DD-004-key-areas",
+      "item_id": "key-areas",
       "title_zh": "三个重点区域详细设计",
       "professional_dimension": "urban_design",
       "required": true,
@@ -124,10 +127,11 @@
       "self_check_ids": [
         "GEOJSON_ALL_PRESENT"
       ],
-      "evidence_summary_zh": "众智园（智慧育种研发）、AI原点社区（FoodTech创新）、大钟寺（未来食品体验）三个重点区差异化设计"
+      "evidence_summary_zh": "众智园（智慧育种研发）、AI原点社区（FoodTech创新）、大钟寺（未来食品体验）三个重点区差异化设计",
+      "dimension_id": "three_key_area_detailed_design"
     },
     {
-      "item_id": "DD-005-phasing",
+      "item_id": "phasing",
       "title_zh": "分期实施计划",
       "professional_dimension": "implementation",
       "required": true,
@@ -153,10 +157,11 @@
       "self_check_ids": [
         "AGENT_TASKS_COVERED"
       ],
-      "evidence_summary_zh": "三期实施：近期（2026-2028）核心启动、中期（2029-2032）拓展建设、远期（2033-2035）全面运营"
+      "evidence_summary_zh": "三期实施：近期（2026-2028）核心启动、中期（2029-2032）拓展建设、远期（2033-2035）全面运营",
+      "dimension_id": "phasing_implementation"
     },
     {
-      "item_id": "DD-006-ai-scenarios",
+      "item_id": "ai-scenarios",
       "title_zh": "AI场景卡与创新生态",
       "professional_dimension": "ai_innovation",
       "required": true,
@@ -188,10 +193,11 @@
         "SCENARIO_CARDS_COUNT",
         "AI_LANDMARKS_COUNT"
       ],
-      "evidence_summary_zh": "12张AI+农业场景卡+3张测试验证场景+5类用户画像+3个AI朝圣地标"
+      "evidence_summary_zh": "12张AI+农业场景卡+3张测试验证场景+5类用户画像+3个AI朝圣地标",
+      "dimension_id": "municipal_new_infrastructure"
     },
     {
-      "item_id": "DD-007-overall_spatial_structure",
+      "item_id": "overall_spatial_structure",
       "title_zh": "总体空间结构",
       "professional_dimension": "urban_design",
       "required": true,
@@ -217,10 +223,11 @@
       "self_check_ids": [
         "GEOJSON_ALL_PRESENT"
       ],
-      "evidence_summary_zh": "总体空间结构已在方案正文中展开设计，并通过空间数据和图纸证据支撑"
+      "evidence_summary_zh": "总体空间结构已在方案正文中展开设计，并通过空间数据和图纸证据支撑",
+      "dimension_id": "land_use_layout"
     },
     {
-      "item_id": "DD-008-land_use_layout",
+      "item_id": "land_use_layout",
       "title_zh": "用地布局",
       "professional_dimension": "urban_design",
       "required": true,
@@ -246,10 +253,11 @@
       "self_check_ids": [
         "GEOJSON_ALL_PRESENT"
       ],
-      "evidence_summary_zh": "用地布局已在方案正文中展开设计，并通过空间数据和图纸证据支撑"
+      "evidence_summary_zh": "用地布局已在方案正文中展开设计，并通过空间数据和图纸证据支撑",
+      "dimension_id": "land_use_layout"
     },
     {
-      "item_id": "DD-009-three_level_scope_framework",
+      "item_id": "three_level_scope_framework",
       "title_zh": "三层范围工作框架",
       "professional_dimension": "urban_design",
       "required": true,
@@ -276,10 +284,11 @@
       "self_check_ids": [
         "GEOJSON_ALL_PRESENT"
       ],
-      "evidence_summary_zh": "三层范围工作框架已在方案正文中展开设计，并通过空间数据和图纸证据支撑"
+      "evidence_summary_zh": "三层范围工作框架已在方案正文中展开设计，并通过空间数据和图纸证据支撑",
+      "dimension_id": "land_use_layout"
     },
     {
-      "item_id": "DD-010-existing_conditions_diagnosis",
+      "item_id": "existing_conditions_diagnosis",
       "title_zh": "现状条件诊断",
       "professional_dimension": "analysis",
       "required": true,
@@ -309,7 +318,7 @@
       "evidence_summary_zh": "现状条件诊断已在方案正文中展开设计，并通过空间数据和图纸证据支撑"
     },
     {
-      "item_id": "DD-011-height_massing_character",
+      "item_id": "height_massing_character",
       "title_zh": "高度体量与风貌",
       "professional_dimension": "urban_design",
       "required": true,
@@ -336,10 +345,11 @@
       "self_check_ids": [
         "GEOJSON_ALL_PRESENT"
       ],
-      "evidence_summary_zh": "高度体量与风貌已在方案正文中展开设计，并通过空间数据和图纸证据支撑"
+      "evidence_summary_zh": "高度体量与风貌已在方案正文中展开设计，并通过空间数据和图纸证据支撑",
+      "dimension_id": "land_use_layout"
     },
     {
-      "item_id": "DD-012-development_intensity_controls",
+      "item_id": "development_intensity_controls",
       "title_zh": "开发强度控制",
       "professional_dimension": "urban_design",
       "required": true,
@@ -366,10 +376,11 @@
       "self_check_ids": [
         "GEOJSON_ALL_PRESENT"
       ],
-      "evidence_summary_zh": "开发强度控制已在方案正文中展开设计，并通过空间数据和图纸证据支撑"
+      "evidence_summary_zh": "开发强度控制已在方案正文中展开设计，并通过空间数据和图纸证据支撑",
+      "dimension_id": "land_use_layout"
     },
     {
-      "item_id": "DD-013-blue_green_public_space",
+      "item_id": "blue_green_public_space",
       "title_zh": "蓝绿空间与公共空间",
       "professional_dimension": "landscape",
       "required": true,
@@ -400,7 +411,7 @@
       "evidence_summary_zh": "蓝绿空间与公共空间已在方案正文中展开设计，并通过空间数据和图纸证据支撑"
     },
     {
-      "item_id": "DD-014-traffic_rail_slow_parking",
+      "item_id": "traffic_rail_slow_parking",
       "title_zh": "交通、轨道、慢行与停车",
       "professional_dimension": "transportation",
       "required": true,
@@ -426,10 +437,11 @@
       "self_check_ids": [
         "GEOJSON_ALL_PRESENT"
       ],
-      "evidence_summary_zh": "交通、轨道、慢行与停车已在方案正文中展开设计，并通过空间数据和图纸证据支撑"
+      "evidence_summary_zh": "交通、轨道、慢行与停车已在方案正文中展开设计，并通过空间数据和图纸证据支撑",
+      "dimension_id": "traffic_rail_slow_parking"
     },
     {
-      "item_id": "DD-015-municipal_new_infrastructure",
+      "item_id": "municipal_new_infrastructure",
       "title_zh": "市政与新基础设施",
       "professional_dimension": "infrastructure",
       "required": true,
@@ -458,7 +470,7 @@
       "evidence_summary_zh": "市政与新基础设施已在方案正文中展开设计，并通过空间数据和图纸证据支撑"
     },
     {
-      "item_id": "DD-016-three_key_area_detailed_design",
+      "item_id": "three_key_area_detailed_design",
       "title_zh": "三个重点区域详细设计",
       "professional_dimension": "urban_design",
       "required": true,
@@ -484,10 +496,11 @@
       "self_check_ids": [
         "GEOJSON_ALL_PRESENT"
       ],
-      "evidence_summary_zh": "三个重点区域详细设计已在方案正文中展开设计，并通过空间数据和图纸证据支撑"
+      "evidence_summary_zh": "三个重点区域详细设计已在方案正文中展开设计，并通过空间数据和图纸证据支撑",
+      "dimension_id": "land_use_layout"
     },
     {
-      "item_id": "DD-017-renewal_project_list",
+      "item_id": "renewal_project_list",
       "title_zh": "更新项目清单",
       "professional_dimension": "implementation",
       "required": true,
@@ -513,10 +526,11 @@
       "self_check_ids": [
         "GEOJSON_ALL_PRESENT"
       ],
-      "evidence_summary_zh": "更新项目清单已在方案正文中展开设计，并通过空间数据和图纸证据支撑"
+      "evidence_summary_zh": "更新项目清单已在方案正文中展开设计，并通过空间数据和图纸证据支撑",
+      "dimension_id": "renewal_project_list"
     },
     {
-      "item_id": "DD-018-retain_renovate_demolish",
+      "item_id": "retain_renovate_demolish",
       "title_zh": "拆改留方案",
       "professional_dimension": "urban_design",
       "required": true,
@@ -542,10 +556,11 @@
       "self_check_ids": [
         "GEOJSON_ALL_PRESENT"
       ],
-      "evidence_summary_zh": "拆改留方案已在方案正文中展开设计，并通过空间数据和图纸证据支撑"
+      "evidence_summary_zh": "拆改留方案已在方案正文中展开设计，并通过空间数据和图纸证据支撑",
+      "dimension_id": "land_use_layout"
     },
     {
-      "item_id": "DD-019-phasing_implementation",
+      "item_id": "phasing_implementation",
       "title_zh": "分期实施方案",
       "professional_dimension": "implementation",
       "required": true,
@@ -571,10 +586,11 @@
       "self_check_ids": [
         "GEOJSON_ALL_PRESENT"
       ],
-      "evidence_summary_zh": "分期实施方案已在方案正文中展开设计，并通过空间数据和图纸证据支撑"
+      "evidence_summary_zh": "分期实施方案已在方案正文中展开设计，并通过空间数据和图纸证据支撑",
+      "dimension_id": "phasing_implementation"
     },
     {
-      "item_id": "DD-020-metrics_recalculation",
+      "item_id": "metrics_recalculation",
       "title_zh": "指标核算与重新计算",
       "professional_dimension": "analysis",
       "required": true,
@@ -602,10 +618,11 @@
       "self_check_ids": [
         "GEOJSON_ALL_PRESENT"
       ],
-      "evidence_summary_zh": "指标核算与重新计算已在方案正文中展开设计，并通过空间数据和图纸证据支撑"
+      "evidence_summary_zh": "指标核算与重新计算已在方案正文中展开设计，并通过空间数据和图纸证据支撑",
+      "dimension_id": "metrics_recalculation"
     },
     {
-      "item_id": "DD-021-risk_missing_data",
+      "item_id": "risk_missing_data",
       "title_zh": "数据缺失风险与应对",
       "professional_dimension": "risk_management",
       "required": true,
@@ -631,7 +648,8 @@
       "self_check_ids": [
         "GEOJSON_ALL_PRESENT"
       ],
-      "evidence_summary_zh": "数据缺失风险与应对已在方案正文中展开设计，并通过空间数据和图纸证据支撑"
+      "evidence_summary_zh": "数据缺失风险与应对已在方案正文中展开设计，并通过空间数据和图纸证据支撑",
+      "dimension_id": "risk_missing_data"
     }
   ]
 }
