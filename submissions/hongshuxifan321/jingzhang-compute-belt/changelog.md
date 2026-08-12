@@ -1,5 +1,13 @@
 # 方案迭代记录
 
+## v1.2-3 - 2026-08-12
+
+图纸双语修复（评审「表达完整度」点名扣分点：英文图含中文，v1 遗留）。
+
+- **build_pdfs.py 修复**：A3/A0 英文版 PDF 此前硬编码嵌入中文图（`site-overview.png` 等无 `.en` 后缀，仅外层标题切语言）→ 新增 `fig_for()` 按语言选 `.en.png`；`__main__` 补跑 `build_a0("en")`（此前漏调，`a0-boards.en.pdf` 实为旧版产物）
+- **验证**：mcp-vision（qwen-vl-max）复查 4 页英文 PDF——图内标题/图例/地图标注全英文，无中文残留
+- **校验**：self-check 四门 PASS → preflight PASS
+
 ## v1.2-2 - 2026-08-12
 
 审查遗留补齐（assumptions 证据链挂接）。
