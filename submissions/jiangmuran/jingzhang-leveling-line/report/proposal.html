@@ -667,7 +667,7 @@ code {
 <p>63 条全部有据。把下限改成重算的意义在于：<strong>如果哪天某类交付物被删掉一个，构建会失败，而不是矩阵继续声称它还在。</strong></p>
 <h3>一处<strong>故意不交</strong>的交付物：<code>simulation.json</code></h3>
 <p>仓库的 <code>validate_submission.py</code> 内建 <code>validate_simulation_consistency</code>，会把 <code>simulation.json</code> 的任务记录与 <code>metrics.json</code> 中的 <code>simulation_success_rate</code>、<code>tool_schema_pass_rate</code>、<code>energy_budget_violations</code>、<code>audit_completeness</code> 交叉复算。&lt;!-- SIMJSON:BEGIN --&gt;</p>
-<p>全场 678 份中有 <strong>15 份</strong>提交了它（<code>ChrysFu</code>, <code>Hyp6666</code>, <code>NearCai</code>, <code>SJTdreams</code>, <code>YoungCan-Wang</code>, <code>YuanYii</code>, <code>ZHLins</code>, <code>ZephyrL0</code>, <code>antelope1992-cmyk</code>, <code>guyhuang</code>, <code>luther-3</code>, <code>spacethroughing</code>, <code>surenny</code>, <code>wocaonimaworinixi-collab</code>, <code>zyaoii</code>）。本方案不交，理由必须写出来，否则这只是一处空缺。</p>
+<p>全场 678 份中有 <strong>15 份</strong>提交了它——名单在随包的 <code>visual/assets/field_extras.json</code> 的 <code>simulation_json.keys</code> 里，逐条可查。本方案不交，理由必须写出来，否则这只是一处空缺。</p>
 <p>&lt;!-- SIMJSON:END --&gt;</p>
 <p><strong>第一，那个 schema 要的数本方案没有依据。</strong> 它按智能体调度仿真设计：逐任务的 outcome、能耗与能耗预算、dispatch schema 校验结果。本方案没有做过任何设备调度仿真，也没有任何能耗测算基础——填进去的每一个数都会是编的。</p>
 <p><strong>第二，唯一能诚实塞进那个形状的东西，会产出一个被读错的数。</strong> 随包的十例桌面演练确实是任务记录：每例有确定的输入、确定的判定、确定的期望。但它的「成功率」是 <strong>10/10 判定与规格一致</strong>，而 <code>simulation_success_rate: 1.0</code> 在任何评审眼里读起来都是「这个场景百分之百成功」。两者相差极远：演练证明的是<strong>判定逻辑可复现、拒绝分支确实会触发</strong>，它不证明任何实地读数、任何真实复核主体、任何服务绩效。</p>

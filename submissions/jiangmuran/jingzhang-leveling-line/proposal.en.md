@@ -1285,7 +1285,7 @@ All 63 answered. Recomputing the floors rather than declaring them means that if
 
 The repository's `validate_submission.py` carries `validate_simulation_consistency`, which cross-checks a `simulation.json`'s task records against `simulation_success_rate`, `tool_schema_pass_rate`, `energy_budget_violations` and `audit_completeness` in `metrics.json`. <!-- SIMJSON:BEGIN -->
 
-**15 of 678** submissions ship one (`ChrysFu`, `Hyp6666`, `NearCai`, `SJTdreams`, `YoungCan-Wang`, `YuanYii`, `ZHLins`, `ZephyrL0`, `antelope1992-cmyk`, `guyhuang`, `luther-3`, `spacethroughing`, `surenny`, `wocaonimaworinixi-collab`, `zyaoii`). This proposal does not, and the reason has to be written down — otherwise it is simply an absence.
+**15 of 678** submissions ship one; the roster is in `simulation_json.keys` in the shipped `visual/assets/field_extras.json`, checkable entry by entry. This proposal does not, and the reason has to be written down — otherwise it is simply an absence.
 
 <!-- SIMJSON:END -->
 

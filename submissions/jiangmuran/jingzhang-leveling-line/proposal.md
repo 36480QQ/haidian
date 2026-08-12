@@ -1392,7 +1392,7 @@ node visual/assets/verify.js
 
 仓库的 `validate_submission.py` 内建 `validate_simulation_consistency`，会把 `simulation.json` 的任务记录与 `metrics.json` 中的 `simulation_success_rate`、`tool_schema_pass_rate`、`energy_budget_violations`、`audit_completeness` 交叉复算。<!-- SIMJSON:BEGIN -->
 
-全场 678 份中有 **15 份**提交了它（`ChrysFu`, `Hyp6666`, `NearCai`, `SJTdreams`, `YoungCan-Wang`, `YuanYii`, `ZHLins`, `ZephyrL0`, `antelope1992-cmyk`, `guyhuang`, `luther-3`, `spacethroughing`, `surenny`, `wocaonimaworinixi-collab`, `zyaoii`）。本方案不交，理由必须写出来，否则这只是一处空缺。
+全场 678 份中有 **15 份**提交了它——名单在随包的 `visual/assets/field_extras.json` 的 `simulation_json.keys` 里，逐条可查。本方案不交，理由必须写出来，否则这只是一处空缺。
 
 <!-- SIMJSON:END -->
 

@@ -159,7 +159,11 @@
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION"
       ],
-      "evidence_summary_zh": "本条由正文小节「指标体系、面积复算与合规矩阵」；图层 phasing.geojson；指标 phasing_union_area_sqm（class 1，由 visual/assets/verify.js 独立重算）；指标 floor_area_ratio（class 2，须官方控规支撑，状态保持 unknown；verify.js 断言的是它保持 unknown，不是它的取值）；图纸 metrics-evidence.png；来源 MOHURD-CONTROL-DETAILED-PLANNING（登记于 sources.json） 共同支撑，每一项均可独立打开核对。"
+      "evidence_summary_zh": "本条由正文小节「指标体系、面积复算与合规矩阵」；图层 phasing.geojson；指标 phasing_union_area_sqm（class 1，由 visual/assets/verify.js 独立重算）；指标 floor_area_ratio（class 2，须官方控规支撑，状态保持 unknown；verify.js 断言的是它保持 unknown，不是它的取值）；图纸 metrics-evidence.png；来源 MOHURD-CONTROL-DETAILED-PLANNING（登记于 sources.json） 共同支撑，每一项均可独立打开核对。",
+      "completeness_limited_by": [
+        "floor_area_ratio"
+      ],
+      "completeness_qualifier_zh": "**本项的 `complete` 是「做到现有数据允许的深度」，不是「该做的都有数据」。**受限于：它引用的 floor_area_ratio 属第二类指标：须官方控规支撑，本方案刻意不填估计值。`scripts/self_check_submission.py` 要求正式投稿的每一条设计深度项都为 `complete`，因此本项不改状态——把它降为 `data_gap` 不会让本包更诚实，只会让它退出正式评审，而诚实在那里没人读到。**规则与事实在此确有冲突，该冲突属于上游，不该由投稿人私下选一边解决。** 本项与 standard_matrix 对同一议题的 `data_gap` 判定并列存在，两者都留在包里，供评审自行判断。"
     },
     {
       "item_id": "height_massing_character",
@@ -189,7 +193,11 @@
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION"
       ],
-      "evidence_summary_zh": "本条由正文小节「建筑规模与拆改留」；图层 buildings.geojson；指标 building_footprint_area_sqm（class 1，由 visual/assets/verify.js 独立重算）；图纸 street-eye-level.png；来源 MOHURD-ARCH-DESIGN-DEPTH-2016、MOHURD-CONTROL-DETAILED-PLANNING（登记于 sources.json） 共同支撑，每一项均可独立打开核对。"
+      "evidence_summary_zh": "本条由正文小节「建筑规模与拆改留」；图层 buildings.geojson；指标 building_footprint_area_sqm（class 1，由 visual/assets/verify.js 独立重算）；图纸 street-eye-level.png；来源 MOHURD-ARCH-DESIGN-DEPTH-2016、MOHURD-CONTROL-DETAILED-PLANNING（登记于 sources.json） 共同支撑，每一项均可独立打开核对。",
+      "completeness_limited_by": [
+        "MOHURD-ARCH-DESIGN-DEPTH-2016"
+      ],
+      "completeness_qualifier_zh": "**本项的 `complete` 是「做到现有数据允许的深度」，不是「该做的都有数据」。**受限于：它引用的 MOHURD-ARCH-DESIGN-DEPTH-2016 的 `retrieved_at` 为「未取得」——本包从未打开这份文件。`scripts/self_check_submission.py` 要求正式投稿的每一条设计深度项都为 `complete`，因此本项不改状态——把它降为 `data_gap` 不会让本包更诚实，只会让它退出正式评审，而诚实在那里没人读到。**规则与事实在此确有冲突，该冲突属于上游，不该由投稿人私下选一边解决。** 本项与 standard_matrix 对同一议题的 `data_gap` 判定并列存在，两者都留在包里，供评审自行判断。"
     },
     {
       "item_id": "retain_renovate_demolish",
@@ -222,7 +230,11 @@
       "self_check_ids": [
         "LAND_USE_TOPOLOGY"
       ],
-      "evidence_summary_zh": "本条由正文小节「三片区共同的拆改留原则」；图层 buildings.geojson、land_use.geojson；指标 building_footprint_area_sqm、land_use_feature_count（class 1，由 visual/assets/verify.js 独立重算）；图纸 key-areas.png；来源 MOHURD-ARCH-DESIGN-DEPTH-2016、KEY-AREA-SOURCE（登记于 sources.json） 共同支撑，每一项均可独立打开核对。"
+      "evidence_summary_zh": "本条由正文小节「三片区共同的拆改留原则」；图层 buildings.geojson、land_use.geojson；指标 building_footprint_area_sqm、land_use_feature_count（class 1，由 visual/assets/verify.js 独立重算）；图纸 key-areas.png；来源 MOHURD-ARCH-DESIGN-DEPTH-2016、KEY-AREA-SOURCE（登记于 sources.json） 共同支撑，每一项均可独立打开核对。",
+      "completeness_limited_by": [
+        "MOHURD-ARCH-DESIGN-DEPTH-2016"
+      ],
+      "completeness_qualifier_zh": "**本项的 `complete` 是「做到现有数据允许的深度」，不是「该做的都有数据」。**受限于：它引用的 MOHURD-ARCH-DESIGN-DEPTH-2016 的 `retrieved_at` 为「未取得」——本包从未打开这份文件。`scripts/self_check_submission.py` 要求正式投稿的每一条设计深度项都为 `complete`，因此本项不改状态——把它降为 `data_gap` 不会让本包更诚实，只会让它退出正式评审，而诚实在那里没人读到。**规则与事实在此确有冲突，该冲突属于上游，不该由投稿人私下选一边解决。** 本项与 standard_matrix 对同一议题的 `data_gap` 判定并列存在，两者都留在包里，供评审自行判断。"
     },
     {
       "item_id": "traffic_rail_slow_parking",
