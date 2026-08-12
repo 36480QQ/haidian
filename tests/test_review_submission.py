@@ -45,8 +45,27 @@ summary: "围绕百年京张 AI 创新带提出可审查方案。"
 """,
                 encoding="utf-8",
             )
-            for name in ["manifest.json", "metrics.json", "assumptions.json", "sources.json", "self_check.json", "agent.json"]:
+            for name in ["metrics.json", "assumptions.json", "sources.json", "self_check.json", "agent.json"]:
                 (base / name).write_text("{}", encoding="utf-8")
+            (base / "geometry").mkdir()
+            (base / "geometry" / "evidence.geojson").write_text(
+                '{"type":"FeatureCollection","features":[]}', encoding="utf-8"
+            )
+            (base / "visual" / "assets").mkdir(parents=True)
+            (base / "visual" / "assets" / "verify.py").write_text(
+                "raise SystemExit('must not run')\n", encoding="utf-8"
+            )
+            (base / "manifest.json").write_text(
+                json.dumps(
+                    {
+                        "files": [
+                            {"path": "geometry/evidence.geojson", "role": "evidence_data"},
+                            {"path": "visual/assets/verify.py", "role": "verification_script"},
+                        ]
+                    }
+                ),
+                encoding="utf-8",
+            )
             out_dir = root / "review-out"
             completed = subprocess.run(
                 [
@@ -68,6 +87,14 @@ summary: "围绕百年京张 AI 创新带提出可审查方案。"
             self.assertIn("rubric_dimensions", review_input)
             self.assertIn("advisory_review_schema", review_input)
             self.assertIn("source_registry_summary", review_input)
+            boundary = review_input["review_input_access_boundary"]
+            self.assertIn("proposal.md", boundary["raw_text_paths"])
+            self.assertIn("geometry/evidence.geojson", boundary["raw_text_not_supplied_paths"])
+            self.assertIn("visual/assets/verify.py", boundary["raw_text_not_supplied_paths"])
+            self.assertFalse(boundary["participant_verification_scripts_executed"])
+            artifacts = {item["path"]: item for item in boundary["manifest_artifacts"]}
+            self.assertEqual(artifacts["geometry/evidence.geojson"]["role"], "evidence_data")
+            self.assertFalse(artifacts["visual/assets/verify.py"]["raw_content_in_review_input_json"])
             self.assertIn("approved_formal_sources", review_input["source_registry_summary"])
             self.assertEqual(
                 review_input["advisory_review_schema_path"],
@@ -79,6 +106,9 @@ summary: "围绕百年京张 AI 创新带提出可审查方案。"
             self.assertIn("Seven-dimension", prompt)
             self.assertIn("advisory_review.schema.json", prompt)
             self.assertIn("source_registry_summary", prompt)
+            self.assertIn("review_input_access_boundary", prompt)
+            self.assertIn("cannot open an artifact", prompt)
+            self.assertIn("Do not claim to have inspected or executed an unsupplied artifact", prompt)
             self.assertIn("background_only", prompt)
             self.assertIn("Pull Request comment", prompt)
             self.assertIn("pr_comment_markdown", prompt)

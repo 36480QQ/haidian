@@ -59,6 +59,17 @@ DIMENSIONS = [dimension["title_zh"] for dimension in RUBRIC_DIMENSIONS]
 SCRIPT_DIR = Path(__file__).resolve().parent
 DEFAULT_OUTPUT_ROOT = ".maintainer-review"
 ADVISORY_REVIEW_SCHEMA_PATH = "brief/site-package/schemas/advisory_review.schema.json"
+PACKAGE_FILES_INCLUDED_AS_RAW_TEXT = {
+    "proposal.md",
+    "manifest.json",
+    "metrics.json",
+    "assumptions.json",
+    "sources.json",
+    "self_check.json",
+    "compliance_matrix.json",
+    "standard_matrix.json",
+    "design_depth_matrix.json",
+}
 
 
 def read_text(path: Path) -> str:
@@ -129,9 +140,55 @@ def run_pre_submit_self_check(repo_root: Path, submission_dir: Path, author: str
     return run_json_command(command)
 
 
+def build_review_input_access_boundary(
+    package_files: list[str],
+    manifest: Any,
+) -> dict[str, Any]:
+    """Describe packet visibility without reading or executing arbitrary artifacts."""
+    present_paths = set(package_files)
+    raw_text_paths = sorted(PACKAGE_FILES_INCLUDED_AS_RAW_TEXT & present_paths)
+    raw_text_not_supplied_paths = sorted(present_paths - PACKAGE_FILES_INCLUDED_AS_RAW_TEXT)
+    manifest_artifacts: list[dict[str, Any]] = []
+    if isinstance(manifest, dict) and isinstance(manifest.get("files"), list):
+        for item in manifest["files"]:
+            if not isinstance(item, dict) or not isinstance(item.get("path"), str):
+                continue
+            path = item["path"]
+            artifact = {
+                "path": path,
+                "role": item.get("role"),
+                "present_in_package": path in present_paths,
+                "raw_content_in_review_input_json": path in raw_text_paths,
+            }
+            manifest_artifacts.append(artifact)
+    return {
+        "raw_text_paths": raw_text_paths,
+        "raw_text_not_supplied_paths": raw_text_not_supplied_paths,
+        "manifest_artifacts": manifest_artifacts,
+        "participant_verification_scripts_executed": False,
+        "trusted_gate_reports_supplied": [
+            "deterministic_validation",
+            "spatial_review",
+            "visual_review",
+            "professional_review",
+        ],
+        "rule": (
+            "A package artifact being listed without its raw content in the advisory packet is an "
+            "access limitation, not evidence that the participant omitted it. Some visual artifacts "
+            "may be supplied separately as rendered previews. Never claim to have inspected or "
+            "executed an unsupplied artifact."
+        ),
+    }
+
+
 def build_review_input(repo_root: Path, submission_dir: Path) -> dict:
     author = infer_author(submission_dir, repo_root)
     changed_files = discover_files(submission_dir, repo_root)
+    submission_rel = submission_dir.resolve().relative_to(repo_root.resolve())
+    package_files = [
+        Path(path).relative_to(submission_rel).as_posix()
+        for path in changed_files
+    ]
     pre_submit = run_pre_submit_self_check(repo_root, submission_dir, author)
     pre_submit_stdout = pre_submit.get("stdout") if isinstance(pre_submit.get("stdout"), dict) else {}
     validation_stdout = (
@@ -148,11 +205,12 @@ def build_review_input(repo_root: Path, submission_dir: Path) -> dict:
     advisory_review_schema = read_json(repo_root / ADVISORY_REVIEW_SCHEMA_PATH)
     source_registry = load_source_registry(repo_root)
     source_registry_summary = summarize_source_registry(source_registry)
+    manifest = read_json(submission_dir / "manifest.json")
     return {
-        "submission_dir": submission_dir.resolve().relative_to(repo_root.resolve()).as_posix(),
+        "submission_dir": submission_rel.as_posix(),
         "author": author,
         "proposal_md": read_text(submission_dir / "proposal.md"),
-        "manifest": read_json(submission_dir / "manifest.json"),
+        "manifest": manifest,
         "metrics": read_json(submission_dir / "metrics.json"),
         "assumptions": read_json(submission_dir / "assumptions.json"),
         "sources": read_json(submission_dir / "sources.json"),
@@ -172,6 +230,10 @@ def build_review_input(repo_root: Path, submission_dir: Path) -> dict:
         "advisory_review_schema_path": ADVISORY_REVIEW_SCHEMA_PATH,
         "advisory_review_schema": advisory_review_schema,
         "source_registry_summary": source_registry_summary,
+        "review_input_access_boundary": build_review_input_access_boundary(
+            package_files,
+            manifest,
+        ),
         "review_visibility_rule": "Maintainer/advisory review results are local-only and may be shared with the contributor through PR comments only. Do not add them to submissions-data.js, public gallery cards, or committed review pages.",
         "agent_taskbook_review_dimensions": agent_taskbook.get("review_dimensions") if isinstance(agent_taskbook, dict) else None,
         "agent_taskbook_boundary_clause": agent_taskbook.get("boundary_clause") if isinstance(agent_taskbook, dict) else None,
@@ -194,6 +256,8 @@ def build_prompt(review_input: dict) -> str:
             "You are reviewing a machine-readable AI urban design submission for the Haidian Centennial Jing-Zhang AI Innovation Belt.",
             "Use only the supplied review-input JSON. Do not invent official boundaries, planning controls, data sources, or approval status.",
             "Use `source_registry_summary` to distinguish approved formal sources, background-only sources, provisional sources, and needs-review sources.",
+            "Use `review_input_access_boundary` to distinguish raw package content actually supplied in the review-input JSON from artifacts that are only listed in the manifest or file inventory. Some visual artifacts may be attached separately as rendered previews.",
+            "Do not reduce a rubric score, create a required repair, fail a gate, or make an adverse recommendation merely because the advisory model cannot open an artifact listed in `raw_text_not_supplied_paths`. Do not claim to have inspected or executed an unsupplied artifact. Use the trusted deterministic, spatial, visual, and professional gate reports for those checks; request participant action only when a supplied report or visible contradiction establishes a real failure.",
             "The review is a local maintainer aid. The only user-visible destination is a Pull Request comment; do not ask to publish this review to the gallery, submissions-data.js, or committed review pages.",
             "",
             f"Return JSON that validates against `{ADVISORY_REVIEW_SCHEMA_PATH}` and include the PR comment body in `pr_comment_markdown`.",
