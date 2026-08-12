@@ -480,6 +480,126 @@
      ]
     ]
    }
+  },
+  {
+   "type": "Feature",
+   "id": "PUBLIC-013",
+   "properties": {
+    "name_zh": "车路协同测试段节点",
+    "public_type": "industry_test_node",
+    "id": "PUBLIC-013",
+    "layer": "PUBLIC_SPACE",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.34853555331225,
+       39.97075416787812
+      ],
+      [
+       116.34853298838918,
+       39.97102433770455
+      ],
+      [
+       116.34818184621642,
+       39.97102236370019
+      ],
+      [
+       116.34818441252175,
+       39.970752193892544
+      ],
+      [
+       116.34853555331225,
+       39.97075416787812
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "PUBLIC-014",
+   "properties": {
+    "name_zh": "低空配送航线验证节点",
+    "public_type": "industry_test_node",
+    "id": "PUBLIC-014",
+    "layer": "PUBLIC_SPACE",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.35070991608234,
+       40.01309508325466
+      ],
+      [
+       116.35070735588637,
+       40.013365251218104
+      ],
+      [
+       116.35035599667474,
+       40.013363282080405
+      ],
+      [
+       116.35035855825588,
+       40.01309311413569
+      ],
+      [
+       116.35070991608234,
+       40.01309508325466
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "PUBLIC-015",
+   "properties": {
+    "name_zh": "多模态导视测评场节点",
+    "public_type": "industry_test_node",
+    "id": "PUBLIC-015",
+    "layer": "PUBLIC_SPACE",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.34844148348871,
+       39.98066038649813
+      ],
+      [
+       116.34843891729575,
+       39.98093055585638
+      ],
+      [
+       116.34808772442719,
+       39.980928581163205
+      ],
+      [
+       116.34809029200314,
+       39.98065841182373
+      ],
+      [
+       116.34844148348871,
+       39.98066038649813
+      ]
+     ]
+    ]
+   }
   }
  ],
  "name": "AI Pulse Belt public space (concept)"

@@ -46,7 +46,18 @@ The three scopes are not disconnected drawings: the research scope sets industry
 
 The core task of the coordinated research scope is to build a world-class AI innovation ecosystem. The proposal organizes Haidian's universities, institutes, leading enterprises, computing-power/algorithm/data-factor resources, incubators, and tech services into a five-link innovation chain — "university source—open-source collaboration—enterprise transformation—public experience—global outreach" — and responds to the taskbook's "five functions" and "three districts, two wings" coordination requirements [source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
 
-**Ecosystem map (concept suggestion)**: drawing on global AI-district practice — Punggol Digital District (Singapore; integrated industry-education-living digital test bed), Kalasatama (Helsinki; agile test district), Seoul AI Hub, The Foundry (Cambridge), Waterfront Toronto (lakeside innovation corridor), and STATION F (Paris) plus Greater-Paris smart quarters — six spatial mechanisms are distilled: **land supply** (reserve land of class 16 for future uses), **spatial organization** (courtyard R&D blocks), **industry services** (one-stop computing/data/compliance/investment services), **capital mechanisms** (scenario opening and government procurement guidance), **talent services** (talent-special-zone and young-worker housing), and **data scenarios** (open test fields and evaluation systems). All global-case conclusions are concept references for professional deepening, not confirmed government arrangements.
+**Ecosystem map (concept suggestion)**: drawing on global AI-district practice, six spatial mechanisms are distilled: **land supply** (reserve land of class 16 for future uses), **spatial organization** (courtyard R&D blocks), **industry services** (one-stop computing/data/compliance/investment services), **capital mechanisms** (scenario opening and government procurement guidance), **talent services** (talent-special-zone and young-worker housing), and **data scenarios** (open test fields and evaluation systems). Six reference cases and their transferable mechanisms and limits:
+
+| Case | Transferable mechanism | Jing-Zhang application | Conditions not transferable |
+| --- | --- | --- | --- |
+| Punggol Digital District (SG) | Integrated industry-education-living digital test bed | Zhongzhizui R&D belt and test-field organization | Singapore's single-land-agency and fiscal model differ |
+| Kalasatama (Helsinki) | Agile test district, resident co-testing, time-boxed trials | Controlled testing and public review on the Xiaoyuehe wing | Municipal data and procurement regimes differ |
+| Seoul AI Hub | Government-nurtured AI enterprise platform | Zhongzhizui industry services and computing entry points | Korea's industrial ecology and financing structure are not portable |
+| The Foundry (Cambridge) | Campus—park—community triangle linkage | Origin Community's near-campus incubation interface | Cambridge land and research-funding structure differ |
+| Waterfront Toronto | Lakeside innovation corridor, public-private development | Dazhongsi station-front and greenway interface organization | Canadian public funding and development finance differ |
+| STATION F (Paris) | Mega-incubator plus district-scale innovation network | Origin release hall and open-workstation operations | EU funding and French labor institutions differ |
+
+All global-case conclusions are concept references for professional deepening, not confirmed government arrangements.
 
 **Three-district two-wing industrial layout (concept suggestion)**:
 
@@ -57,6 +68,16 @@ The core task of the coordinated research scope is to build a world-class AI inn
 | Dazhongsi AI Industry Cluster | Agents, smart terminals, content consumption, data factors | Zhichun-Road commercial belt, data-factor tower, station-front commerce [data:geometry/land_use.geojson#LU-001] |
 | Xiaoyue River enabling wing (west) | Scenario trials, ecology experience | Western protective green with test segments [data:geometry/green_space.geojson#GREEN-001] |
 | Zhongguancun service wing (east) | Tech services, international exchange | Research and service platforms along Xueyuan Road [data:geometry/land_use.geojson#LU-001] |
+
+**Regional collaboration interfaces (concept suggestion)**: the coordinated research scope links the wider innovation network through five interfaces; no cross-district agreement is confirmed at this stage, and the interfaces express negotiable directions only [source:AGENT-TASKBOOK]:
+
+| Interface | Demand Jing-Zhang can raise | Outcome it can receive | Boundary to keep |
+| --- | --- | --- | --- |
+| Beiwu community | Community-service and accessibility problems | Re-test opinions under different community conditions | No fabricated joint operation or resident authorization |
+| Future Science City | Urban-use problems of frontier technology | Expert review methods and R&D feedback | Research conclusions are not written as deployable products |
+| Huairou Science City | Urban-transfer needs of science-facility outputs | Interdisciplinary validation suggestions and measurement methods | No access to non-public research or facility data |
+| Beijing E-Town | Real-world problems of robotics and smart manufacturing | Production-environment re-test records and safety requirements | No fabricated enterprises, orders, or production-line cooperation |
+| Jing-Jin-Ji city network | Cross-city comparable public-service problems | Off-site re-tests, difference notes, and failure records | Single-site results never replace cross-city validation |
 
 The future-city form study answers how AI changes work, life, social interaction, learning, transport, and public services, using the "digital pulse belt" as spatial thread to locate AI transport systems, continuous green space, innovation service facilities, and an international living-working atmosphere into identifiable districts, nodes, corridors, and scenarios [depth:overall_spatial_structure] [standard:MOHURD-URBAN-DESIGN-MEASURES]. Global AI activities, developer communities, open scenarios, and pilgrimage routes are phrased as "concept suggestions / reference proposals," never as confirmed government events or implementation arrangements.
 
@@ -115,7 +136,15 @@ The proposal builds spatial-need profiles for AI talent and enterprises, and a t
 | 11 AI coffee robot station | Commercial and R&D corners: robotic-arm coffee experience and developer social hub | Minimal order data; standard payment channels | Mechanical faults stop it; complaints answered ≤24h |
 | 12 Open-air developer workspace code wall | Origin release plaza vicinity: open-source contribution wall, open-air workstations, demo zone | Public contribution data anonymized-aggregated | Human final review of content; disputes take it down |
 
-**3 industrial test-and-verification scenarios (concept suggestion)**: ① open vehicle-road-coordination test segment (concept 1.2 km on Pulse-Belt Avenue); ② low-altitude delivery route verification (concept Zhongzhizui–Dazhongsi route, subject to airspace and safety regulations) [scenario:robot-delivery-low-speed]; ③ multimodal wayfinding-system evaluation ground (entire greenway). **Public-safety AI applications are studied as operations-review research only and never replace human review** [scenario:public-safety-operations-review].
+**3 industrial test-and-verification scenarios (concept suggestion)**: each scenario anchors a test node in `geometry/public_space.geojson` and operates under Pulse Protocol beat P2 (controlled pilot):
+
+| Test scenario | Location & scope | Test content | Data & safety boundary | KPI & exit condition |
+| --- | --- | --- | --- | --- |
+| Open vehicle-road-coordination test segment | Concept 1.2 km on Pulse-Belt Avenue [data:geometry/public_space.geojson#PUBLIC-013] | Vehicle-road coordination and autonomous shuttle (card 02) [scenario:ai-traffic-walkability] | Vehicle-state and road-condition data for testing only; any accident stops and returns to manual | No major accident in accumulated tests; any major accident halts testing |
+| Low-altitude delivery route verification | Concept Zhongzhizui–Dazhongsi route [data:geometry/public_space.geojson#PUBLIC-014] | Drone delivery (card 06) [scenario:robot-delivery-low-speed] | Subject to airspace and safety regulations; no facial capture | No operation without airspace approval; zero tolerance for safety hazards |
+| Multimodal wayfinding evaluation ground | Entire greenway [data:geometry/public_space.geojson#PUBLIC-015] | Multimodal evaluation of barrier-free wayfinding (card 08) | No personal trajectory storage; on-site verifiable | On-site mismatch stops it |
+
+**Public-safety AI applications are studied as operations-review research only and never replace human review** [scenario:public-safety-operations-review].
 
 **3 AI pilgrimage landmarks (concept suggestion)**: the **Bell of AI Origins** (Dazhongsi station-forecourt plaza; bell culture meets AI-origin imagery), the **Tower of AI Light** (Zhongzhizui gateway plaza; light art with real-time model-inference visualization), and the **Pulse-Rail Art Track** (northern central greenway; artistic reuse of disused rails with digital projection). The pilgrimage route "A Century of Tracks, a Pulse of Intelligence" links to scenario card 10, the Global AI Week route [data:geometry/public_space.geojson#PUBLIC-001] [data:geometry/green_space.geojson#GREEN-001]. The related public-space and green metrics are `known` in `metrics.json` and directly recomputable [metric:public_space_ratio] [metric:green_ratio].
 
