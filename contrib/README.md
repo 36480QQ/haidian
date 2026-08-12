@@ -9,7 +9,7 @@
 
 - **不评价方案优劣**：不含任何排名、评分、推荐或批评。
 - **不点名**：summary 只给计数与匿名聚合，不含作者、路径、slug。
-- **离群值只给计数**：如 `unit_not_in_enum=250`，不指出具体包。
+- **离群值只给计数**：如 `unit_missing=31`、`unit_not_in_enum=250`，不指出具体包。`unit_missing`（字段缺失或 JSON null）与 `unit_not_in_enum`（声明了非枚举值）分开计数，口径不混。
 - **全部标注分母**：每条统计附 `count` 与 `pct`（分母为全场条目总数）。
 - **长表不进仓库**：含作者标识的长表（csv.gz）是本地复现产物，不得提交。
 
@@ -76,10 +76,10 @@ python3 contrib/tools-metrics-scan.py --repo $D --out-dir contrib \
 - `distributions`：status 全分布；unit / confidence 按「声明枚举 + 其他聚合」双段呈现（schema 枚举见 `brief/site-package/schemas/metrics.schema.json`）。
 - `packages`：每包指标数 min/median/max/mean。
 - `coverage`：Top 指标 key、规范化 key、概念桶分布，以及 Top 15 指标 key 的 **status 交叉表**（如 `floor_area_ratio` 全场 540 条中 526 条 `unknown`——组织方控规条件未公布的直接结果）。
-- `outlier_counts_only`：离群值**计数**（ratio/FAR/height sanity 阈值来自 `brief/site-package/ranges/planning_limits.json` 的 `schema_sanity_bounds_not_planning_approval`；面积类指标对照同一文件 `known_official_area_values`，偏差超过 50% 计一次，均不点名）。**口径说明**：0-1 ratio 检查只针对占比/覆盖率语义（green_ratio、coverage 等）；FAR（floor_area_ratio，合法区间 0-12）、绕路率、街墙高宽比等可合法大于 1 的比率不适用 0-1 检查；百分比单位（pct/percent）条目不适用 0-1 检查；FAR 检查排除面积单位条目（如 `phasing_far_area_sqm` 是分期面积而非容积率）。
+- `outlier_counts_only`：离群值**计数**（ratio/FAR/height sanity 阈值来自 `brief/site-package/ranges/planning_limits.json` 的 `schema_sanity_bounds_not_planning_approval`；面积类指标对照同一文件 `known_official_area_values`，偏差超过 50% 计一次，均不点名）。**口径说明**：0-1 ratio 检查只针对占比/覆盖率语义（green_ratio、coverage 等）；FAR（floor_area_ratio，合法区间 0-12）、绕路率、街墙高宽比等可合法大于 1 的比率不适用 0-1 检查；百分比单位（pct/percent）条目不适用 0-1 检查；FAR 检查排除面积单位条目（如 `phasing_far_area_sqm` 是分期面积而非容积率）；unit 检查分两档——`unit_missing`（unit 字段缺失或 JSON null）与 `unit_not_in_enum`（声明了 schema 枚举之外的字符串），两者口径互斥、不混计。
 
 ## 隐私与合规
 
-- 提交内容仅限：扫描脚本、summary JSON（无作者标识）、本文档。
+- 提交内容仅限：扫描脚本、summary JSON（无作者标识）、回归测试、本文档。
 - 长表与解析失败清单为本地复现产物，禁止提交。
 - summary 中的离群值与覆盖统计不得用作任何扣分或排名依据。
