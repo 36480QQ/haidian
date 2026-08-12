@@ -304,7 +304,7 @@ def land_use_structure(lang):
 
 def key_areas(lang):
     fig, root = page("03 / KEY DISTRICTS", "重点实施片区与近期建设任务", "Key Delivery Districts and Near-term Projects",
-                     "统筹公告规模、工作底图、首期项目、建设条件和责任分工", "Coordinate announced scale, working base, first projects, delivery conditions and responsibilities", lang)
+                     "三处重点片区分别建立项目清单和前置条件清单，分类安排更新方式与实施时序", "Each district receives its own project list, prerequisites, renewal method and delivery sequence", lang)
     photo = panel(fig, [.035, .18, .51, .64], face="#DDD", edge=INK, lw=.9)
     cover_image(photo, SCENES / "generated-co-learning-commons.png", (1500, 1000), (.62, .52))
     photo.add_patch(Rectangle((0, 0), 1, .17, transform=photo.transAxes, fc=INK, alpha=.87, ec="none"))
@@ -328,8 +328,12 @@ def key_areas(lang):
         text(tbl, .265, y0-.055, f"/ {calc:.1f} ha", 7.1, colors[i], True)
         first = area["first_action"]["name_zh"] if lang == "zh" else first_en[i]
         text(tbl, .065, y0-.115, first, 6.6, INK, True)
-        gates = " · ".join(area["open_gates"][:3]) if lang == "zh" else [
-            "tenure · fire/traffic · ethics/data", "tenure · structure/fire · operations", "flow/evacuation · rail · fire"][i]
+        gates = [
+            "权属准入 · 安全评估 · 交通消防",
+            "权属租约 · 结构消防 · 分时运营",
+            "客流疏散 · 轨道接口 · 产权协商",
+        ][i] if lang == "zh" else [
+            "tenure · safety review · traffic/fire", "lease · structure/fire · operations", "flow/evacuation · rail · tenure"][i]
         text(tbl, .065, y0-.163, gates, 5.2, MUTED)
         if i < 2:
             tbl.plot([.065, .95], [y0-.225, y0-.225], color=LINE, lw=.7, transform=tbl.transAxes)
@@ -449,7 +453,7 @@ def implementation_protocol(lang):
 
 def inclusion_incidence(lang):
     fig, root = page("07 / INCLUSIVE SERVICES", "重点人群服务需求与项目整改清单", "Priority-user Needs and Project Rectification List",
-                     "对儿童、老年人、残障人士、通勤人员等九类群体，逐项核对通行、停留、人工服务和施工影响", "Review mobility, stay, human service and construction impacts for nine priority user groups", lang)
+                     "项目立项前开展重点人群走查，形成问题清单、整改责任表和意见反馈记录", "Complete priority-user walk-throughs before initiation and record issues, rectification duties and responses", lang)
     ax = panel(fig,[.035,.16,.68,.66],face=PANEL,edge=LINE)
     groups=INCLUSION["groups"]
     topics = [
@@ -483,9 +487,9 @@ def inclusion_incidence(lang):
     ax.set_title("重点人群问题登记频次 0—3" if lang=="zh" else "REGISTERED USER ISSUES 0–3",fontproperties=fp(8,True),loc="left",pad=12,color=INK)
     side=panel(fig,[.735,.16,.23,.66],face=INK,edge=INK)
     text(side,.08,.93,"调查与处置安排" if lang=="zh" else "SURVEY + ACTION ARRANGEMENT",9,WHITE,True)
-    items=[("09","重点人群台账" if lang=="zh" else "priority-user registers",GREEN),
-           ("09","专项走查安排" if lang=="zh" else "targeted walk-throughs",CYAN),
-           ("00","现阶段覆盖率结论" if lang=="zh" else "current coverage findings",ORANGE)]
+    items=[("9类","重点人群调查" if lang=="zh" else "priority-user groups",GREEN),
+           ("6项","参与和反馈环节" if lang=="zh" else "participation steps",CYAN),
+           ("1套","问题整改责任表" if lang=="zh" else "rectification register",ORANGE)]
     for i,(v,l,c) in enumerate(items):stat(side,.08,.80-i*.18,v,l,c,18,6.2)
     note = "覆盖率在分时客流、常住与就业\n人口底数补齐后核算；当前按分组\n需求和问题清单推进整改。" if lang=="zh" else "Coverage is calculated after population,\nemployment and time-of-day flow baselines;\ncurrent action follows group issue lists."
     text(side,.08,.25,note,5.6,"#D7E1E8",linespacing=1.45)
@@ -495,7 +499,7 @@ def inclusion_incidence(lang):
 
 def area_action_plan(lang):
     fig, root = page("08 / ACTION PROGRAM", "近期建设项目库与实施条件", "Near-term Project Register and Delivery Conditions",
-                     "建立六个近期项目包，逐项明确建设内容、前置手续、投资级别、实施周期、验收要求和运营单位", "Six near-term projects record scope, prerequisites, cost class, schedule, acceptance and operator type", lang)
+                     "六个近期项目包逐项落实建设内容、前置手续、资金安排、实施周期、验收要求和运营责任", "Six near-term projects record scope, prerequisites, funding, schedule, acceptance and operating responsibility", lang)
     packages=CONTRACT["packages"]
     class_color={"S":GREEN,"M":CYAN,"L":ORANGE}
     labels_en=["Jingzhang mobility pilot","Dazhongsi station connection","Zhongzhiyuan R&D test field","AI Origin shared ground floor","public-service node prototype","public-AI management system"]
@@ -740,57 +744,67 @@ def ai_governance(lang):
         text(stats_panel, x, .67, value, 14.5 if i != 3 or lang != "zh" else 12.5, color, True, va="center")
         text(stats_panel, x, .27, label, 5.5, "#D7E1E8", True, va="center")
 
-    process = panel(fig, [.035, .285, .93, .385], face=PANEL, edge=LINE)
-    text(process, .025, .93, "全过程管理流程" if lang == "zh" else "FULL-CYCLE MANAGEMENT", 7.8, INK, True)
+    process = panel(fig, [.035, .275, .93, .395], face=PANEL, edge=LINE)
+    text(process, .025, .94, "全过程管理流程" if lang == "zh" else "FULL-CYCLE MANAGEMENT", 7.8, INK, True)
+    text(process, .975, .94,
+         "前一节点材料、责任和整改未落实，不转入下一节点" if lang == "zh" else
+         "NO TRANSFER UNTIL DOCUMENTS, OWNERSHIP AND RECTIFICATION ARE COMPLETE",
+         5.0, ORANGE, True, ha="right")
     stages_zh = [
-        ("项目申报", "实施单位", "明确服务对象、空间载体、数据范围和责任单位", "项目任务书"),
-        ("联合审查", "专业单位", "开展安全、数据、无障碍和运营条件审查", "审查意见书"),
-        ("试运行评估", "使用者与评估方", "公示服务规则，组织重点人群试用和现场走查", "问题清单与整改表"),
-        ("运行监管", "运营与人工服务", "落实人工接管、故障工单和服务信息公开", "月度运行记录"),
-        ("年度评估", "统筹与独立评估", "综合绩效、公众意见和维护成本调整项目", "延续调整清单"),
+        ("项目申报", "建设前", "实施单位", "场地、经费、数据和人工服务方案", "明确服务对象、建设位置和责任单位", "任务书及经费来源完整", "项目任务书"),
+        ("联合审查", "开放前", "统筹及专业单位", "项目任务书、风险清单和应急预案", "审查安全、数据、无障碍和运营条件", "审查意见逐项落实", "联合审查意见"),
+        ("试运行评估", "试运行期", "运营、使用者及评估方", "公示文本、测试方案和人工接管流程", "组织重点人群试用、走查和故障演练", "问题整改完成并复核", "问题清单与整改表"),
+        ("运行监管", "每月", "运营及人工服务", "设施清单、人员排班和服务工单", "落实人工接管、故障处置和信息公开", "月度记录完整可查", "运行月报与工单"),
+        ("年度评估", "每年", "统筹及独立评估", "绩效、公众意见和维护成本", "提出延续、整改、缩减或终止意见", "形成下一年度项目清单", "年度调整清单"),
     ]
     stages_en = [
-        ("SCENARIO FILING", "program lead", "define users, place, data scope and accountable body", "scenario brief"),
-        ("JOINT REVIEW", "specialists", "review safety, data, access and operating readiness", "review opinion"),
-        ("PUBLIC TESTING", "public + evaluator", "publish service rules and conduct all-age co-testing", "issue and action list"),
-        ("OPERATIONS", "operator + human service", "deliver takeover, work orders and public information", "monthly record"),
-        ("ANNUAL EVALUATION", "lead + evaluator", "review outcomes, comments and maintenance cost", "continue/adapt list"),
+        ("APPLICATION", "PRE-BUILD", "implementer", "site, funding, data and staffed-service plan", "define users, location and accountable body", "brief and funding source complete", "project brief"),
+        ("JOINT REVIEW", "PRE-OPEN", "lead + specialists", "project brief, risk list and emergency plan", "review safety, data, access and operations", "all review actions closed", "joint review opinion"),
+        ("TRIAL REVIEW", "TRIAL", "operator + users + evaluator", "notice, test plan and takeover procedure", "co-test with priority users and run fault drills", "actions closed and rechecked", "issue + action register"),
+        ("OPERATIONS", "MONTHLY", "operator + human service", "asset list, staff roster and work orders", "deliver takeover, fault response and disclosure", "monthly evidence complete", "monthly report + orders"),
+        ("ANNUAL REVIEW", "ANNUAL", "lead + evaluator", "performance, comments and maintenance cost", "continue, rectify, reduce or terminate", "next-year list agreed", "annual adjustment list"),
     ]
     stage_colors = [INK, CYAN, ORANGE, GREEN, VIOLET]
-    for i, (title_s, owner, action, output) in enumerate(stages_zh if lang == "zh" else stages_en):
+    for i, (title_s, timing, owner, inputs, action, transfer, output) in enumerate(stages_zh if lang == "zh" else stages_en):
         x = .025 + i * .194
-        process.add_patch(FancyBboxPatch((x, .12), .175, .70,
+        process.add_patch(FancyBboxPatch((x, .09), .175, .75,
             boxstyle="round,pad=.005,rounding_size=.012", transform=process.transAxes,
             fc=stage_colors[i] + "10", ec=stage_colors[i], lw=.8))
-        process.add_patch(Rectangle((x, .74), .175, .08, transform=process.transAxes, fc=stage_colors[i], ec="none"))
-        text(process, x + .018, .78, f"{i+1:02d}", 5.0, WHITE, True, va="center")
-        text(process, x + .055, .78, title_s, 5.8 if lang == "zh" else 4.7, WHITE, True, va="center")
-        text(process, x + .018, .65, "责任主体" if lang == "zh" else "OWNER", 4.6, stage_colors[i], True)
-        text(process, x + .018, .59, owner, 5.1, INK, True)
-        text(process, x + .018, .49, "主要任务" if lang == "zh" else "TASK", 4.6, stage_colors[i], True)
-        wrapped = "\n".join(textwrap.wrap(action, width=14 if lang == "zh" else 24))
-        text(process, x + .018, .43, wrapped, 4.65, MUTED, linespacing=1.35)
-        text(process, x + .018, .22, ("成果：" if lang == "zh" else "OUTPUT  ") + output, 4.65, INK, True)
+        process.add_patch(Rectangle((x, .75), .175, .09, transform=process.transAxes, fc=stage_colors[i], ec="none"))
+        text(process, x + .015, .795, f"{i+1:02d}", 4.8, WHITE, True, va="center")
+        text(process, x + .050, .795, title_s, 5.7 if lang == "zh" else 4.55, WHITE, True, va="center")
+        pill(process, x + .105, .683, timing, stage_colors[i], .056, 4.0)
+        text(process, x + .015, .675, "责任" if lang == "zh" else "OWNER", 4.25, stage_colors[i], True)
+        text(process, x + .015, .615, owner, 4.7, INK, True)
+        text(process, x + .015, .535, "前置材料" if lang == "zh" else "INPUT", 4.25, stage_colors[i], True)
+        text(process, x + .015, .492, "\n".join(textwrap.wrap(inputs, width=15 if lang == "zh" else 27)), 4.2, MUTED, linespacing=1.25)
+        text(process, x + .015, .385, "主要工作" if lang == "zh" else "ACTION", 4.25, stage_colors[i], True)
+        text(process, x + .015, .342, "\n".join(textwrap.wrap(action, width=15 if lang == "zh" else 27)), 4.2, INK, linespacing=1.25)
+        text(process, x + .015, .235, "转序条件" if lang == "zh" else "TRANSFER GATE", 4.25, stage_colors[i], True)
+        text(process, x + .015, .192, "\n".join(textwrap.wrap(transfer, width=15 if lang == "zh" else 27)), 4.15, MUTED, linespacing=1.2)
+        text(process, x + .015, .115, ("归档：" if lang == "zh" else "FILE  ") + output, 4.15, INK, True)
         if i < 4:
-            process.add_patch(FancyArrowPatch((x + .176, .47), (x + .192, .47), transform=process.transAxes,
+            process.add_patch(FancyArrowPatch((x + .176, .46), (x + .192, .46), transform=process.transAxes,
                                               arrowstyle="-|>", mutation_scale=7, color=INK, lw=.8, zorder=8))
 
-    controls = panel(fig, [.035, .125, .93, .12], face="#EEF1ED", edge=LINE)
+    controls = panel(fig, [.035, .105, .93, .135], face="#EEF1ED", edge=LINE)
     control_data = [
         ("服务保障" if lang == "zh" else "SERVICE ACCESS", GREEN,
-         "同步设置人工或非数字服务；停电断网期间保留实体导向" if lang == "zh" else "Maintain human/non-digital access and physical wayfinding during outages"),
+         "人工或非数字服务同步设置｜断网停电保留实体导向｜公众意见5个工作日答复" if lang == "zh" else "Staffed/non-digital route | physical wayfinding during outages | public reply within 5 days"),
         ("数据管理" if lang == "zh" else "DATA MANAGEMENT", CYAN,
-         "按服务目的采集必要信息；公开用途、保存期限和投诉渠道" if lang == "zh" else "Collect data required by purpose; publish use, retention and complaint route"),
+         "仅采集办理所需信息｜公开用途和保存期限｜年度更新数据清单" if lang == "zh" else "Necessary data only | disclose use and retention | update annual data inventory"),
         ("安全运行" if lang == "zh" else "SAFE OPERATIONS", ORANGE,
-         "重大故障立即隔离并切换人工服务；常规故障24小时内建单" if lang == "zh" else "Isolate critical faults and switch to human service; log routine faults within 24h"),
+         "重大故障立即隔离｜60秒人工响应｜常规故障24小时内建单" if lang == "zh" else "Isolate critical faults | 60 s human acknowledgement | routine work order within 24 h"),
         ("监督评估" if lang == "zh" else "PUBLIC OVERSIGHT", VIOLET,
-         "每月汇总故障、每季度复核规则、每年形成项目调整清单" if lang == "zh" else "Monthly fault summary, quarterly rule review and annual adjustment list"),
+         "每月汇总故障工单｜每季度复核服务规则｜每年形成调整清单" if lang == "zh" else "Monthly fault summary | quarterly rule review | annual adjustment list"),
     ]
     for i, (heading, color, body) in enumerate(control_data):
         x = .025 + i * .242
         controls.add_patch(Rectangle((x, .18), .009, .64, transform=controls.transAxes, fc=color, ec="none"))
-        text(controls, x + .025, .73, heading, 5.8, color, True)
-        text(controls, x + .025, .47, "\n".join(textwrap.wrap(body, width=20 if lang == "zh" else 35)), 4.6, INK, linespacing=1.3)
+        text(controls, x + .025, .76, heading, 5.8, color, True)
+        lines = body.split("｜") if lang == "zh" else body.split(" | ")
+        for j, line in enumerate(lines):
+            text(controls, x + .025, .50 - j*.19, f"{j+1:02d}  {line}", 4.35, INK, linespacing=1.2)
     footer(root, "growth-runbook.json · implementation-operation-contract.json · inclusion-ledger.json",
            "公共人工智能服务实行场景清单管理、人工服务保障和年度评估",
            "public AI services follow scenario-list management, human-service safeguards and annual evaluation", "12", lang)
@@ -799,25 +813,25 @@ def ai_governance(lang):
 
 def delivery_program(lang):
     fig, root = page("13 / PHASED DELIVERY", "分期实施计划与年度评估安排", "Phased Delivery Plan and Annual Evaluation",
-                     "按照近期启动、先行试点、成段建设和年度评估组织六项行动任务", "Six actions proceed through early start, pilot delivery, corridor works and annual evaluation", lang)
+                     "先完成90日准备工作，再按项目成熟度推进六个项目包，并建立月度调度和年度评估制度", "Complete 90-day preparation, then advance six projects by readiness with monthly scheduling and annual evaluation", lang)
     ax=panel(fig,[.035,.16,.93,.66],face=PANEL,edge=LINE)
     packages=CONTRACT["packages"]
-    starts=[3,9,9,6,3,0]; ends=[18,24,24,18,12,9]
+    starts=[6,12,12,9,6,3]; ends=[18,24,24,18,12,9]
     y=np.arange(6)[::-1]
     colors=[CYAN,ORANGE,ORANGE,CYAN,GREEN,GOLD]
     for i,(p,yy,s,e,c) in enumerate(zip(packages,y,starts,ends,colors)):
         ax.barh(yy,e-s,left=s,height=.48,color=c,alpha=.88)
         name=p["name_zh"] if lang=="zh" else ["spine pilot","station-city pilot","validation field","shared ground floor","service-node prototype","governance system"][i]
-        ax.text(-.5,yy,f"{p['id']}  {name}",fontproperties=fp(6.3,True),color=INK,ha="right",va="center")
+        ax.text(-.35,yy,f"{p['id']}  {name}",fontproperties=fp(6.3,True),color=INK,ha="right",va="center")
         ax.text((s+e)/2,yy,f"{s}–{e}m",fontproperties=fp(5.5,True),color=WHITE,ha="center",va="center")
     gate_months=[0,3,9,18,24]
     for gm,g,c in zip(gate_months,CONTRACT["gates"],[GREEN,CYAN,GOLD,ORANGE,VIOLET]):
         ax.axvline(gm,color=c,lw=1.4,ls="--",alpha=.9)
         ax.text(gm,6.05,g["id"],fontproperties=fp(6.0,True),color=c,ha="center")
-    ax.set_xlim(0,24);ax.set_ylim(-.8,6.4);ax.set_yticks([]);ax.set_xticks(range(0,25,3));ax.set_xticklabels(range(0,25,3),fontproperties=fp(5.5),color=MUTED)
+    ax.set_xlim(-5.8,24);ax.set_ylim(-.8,6.4);ax.set_yticks([]);ax.set_xticks(range(0,25,3));ax.set_xticklabels(range(0,25,3),fontproperties=fp(5.5),color=MUTED)
     ax.grid(axis="x",color=LINE,lw=.55);ax.spines[:].set_visible(False)
     ax.set_title("0–24 月建议实施窗口" if lang=="zh" else "PROPOSED 0–24 MONTH DELIVERY WINDOW",fontproperties=fp(8,True),loc="left",color=INK,pad=12)
-    text(ax,.58,.03,"每月进度调度 · 每季度资金与手续核查 · 完工后验收移交 · 每年运营评估" if lang=="zh" else "monthly scheduling · quarterly funding and permit checks · handover · annual operating review",5.6,MUTED)
+    text(ax,.58,.03,"0—15日底图权属｜16—45日踏勘测算｜46—75日流程演练｜76—90日整改决策" if lang=="zh" else "D0–15 base map/tenure | D16–45 survey/costing | D46–75 drills | D76–90 action decision",5.6,MUTED)
     footer(root,"implementation-operation-contract.json · user-cotest-plan.json","实施时序结合边界、权属、专项审查和资金安排滚动更新", "delivery sequencing is updated with boundaries, tenure, specialist review and funding", "13",lang)
     return fig
 
@@ -939,20 +953,20 @@ def image2_site_overview(lang):
         "01 / DELIVERY FRAMEWORK",
         "总体空间结构与近期实施安排",
         "Overall Spatial Structure and Near-term Delivery",
-        "以铁路遗产廊道为骨架，划定三处重点片区，优先实施慢行贯通、服务补缺和存量空间改造",
+        "组织近期项目和公共设施布局，形成一轴三片、两翼协同、十二节点的空间结构",
         "Use the rail heritage corridor as the framework, define three key districts and prioritise mobility continuity, service gaps and retrofit",
         lang,
     )
     hero = panel(fig, [.035, .405, .675, .415], face="#DAD8D0", edge=INK, lw=.9)
     cover_image(hero, SCENES / "image2-corridor-masterplan.jpg", (1700, 980), (.55, .52))
     hero.add_patch(Rectangle((0, 0), 1, .19, transform=hero.transAxes, fc=INK, alpha=.88, ec="none"))
-    text(hero, .035, .145, "近期建设任务：慢行贯通、节点补缺、存量盘活、责任落实" if lang == "zh" else "NEAR-TERM TASKS: CONNECT ROUTES, FILL SERVICE GAPS, RETROFIT SPACE, ASSIGN OWNERS", 8.8, WHITE, True)
-    text(hero, .035, .073, "以1公里示范段和3处首期节点为起点，同步核查边界权属、轨道安全、地下管线和运营经费。" if lang == "zh" else "Start with a 1 km pilot and three nodes while verifying boundaries, tenure, rail safety, utilities and operating funds.", 6.1, "#D9E5EA")
+    text(hero, .035, .145, "近期建设重点：慢行示范、节点补缺、首层改造、站城衔接" if lang == "zh" else "NEAR-TERM PRIORITIES: MOBILITY PILOT, SERVICE NODES, GROUND-FLOOR RETROFIT, STATION LINKS", 8.8, WHITE, True)
+    text(hero, .035, .073, "以1公里慢行示范段、3处首期节点和3个重点片区项目为抓手，分期形成连续公共空间和便民服务网络。" if lang == "zh" else "A 1 km mobility pilot, three first-stage nodes and three district projects establish a continuous public-space and service network.", 6.1, "#D9E5EA")
 
     story = panel(fig, [.035, .13, .675, .235], face="#DAD8D0", edge=INK, lw=.8)
     cover_image(story, SCENES / "image2-three-layer-story.jpg", (1700, 560), (.50, .53))
     story.add_patch(Rectangle((0, 0), 1, .22, transform=story.transAxes, fc=INK, alpha=.87, ec="none"))
-    labels = ["0—3月：资料与立项", "4—12月：示范段建设", "13—24月：片区滚动实施"] if lang == "zh" else ["0–3M: BASE DATA + INITIATION", "4–12M: PILOT DELIVERY", "13–24M: DISTRICT ROLL-OUT"]
+    labels = ["0—1月：底图与权属", "1—3月：项目准备与立项", "4—24月：示范先行、滚动实施"] if lang == "zh" else ["0–1M: BASE MAP + TENURE", "1–3M: PROJECT PREPARATION", "4–24M: PILOT + ROLL-OUT"]
     colors = [ORANGE, GREEN, CYAN]
     for i, (label, color) in enumerate(zip(labels, colors)):
         x = .055 + i * .315

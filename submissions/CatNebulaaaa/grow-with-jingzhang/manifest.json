@@ -14,7 +14,7 @@
     "model_family": "gpt",
     "model_detail": "OpenAI Codex"
   },
-  "generated_at": "2026-08-12T10:17:55Z",
+  "generated_at": "2026-08-12T14:38:10Z",
   "files": [
     {
       "path": "manifest.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "6fe70a045ef2212f6e11b6466211b72eccffa093756f15cb6869a4218c6f9035"
+      "sha256": "946282b707ee9b086cafbaba72fe2058e1391b6cd6e420ac58fd2dcab1ec4c87"
     },
     {
       "path": "compliance_matrix.json",
@@ -115,14 +115,14 @@
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "b53ebe18f7d87e197a185f50e333baf9fe3c7ae8212f1a6350a4979db52f82a6",
+      "sha256": "00f51e93b11f47451f7116b9acdcd37b1398e461a34c4c636e12b9e3e9c289e1",
       "language": "zh"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "a0dab87c18d27b8fe4a61f986331d34df400d903629dcc152e23311ad0557b89",
+      "sha256": "8a836df4dd00696a1919355e5209992019ac20141dded77118f677b5c1863502",
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf"
     },
@@ -130,14 +130,14 @@
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "251aad81d6f87c9cd82994a79df929966a96343e45a6b83a8b3597e793140dd4",
+      "sha256": "20120b6165c8cabaa334642f2f769c040f6ba2868144102542aec590fbae3b0c",
       "language": "zh"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "0919af8a7a2276d8ae7143f6b3bc139ac675570e7bbc763db4c593d80ba73701",
+      "sha256": "dd707e9a54ed5c352c21f9e8ff31004a2b329687455b789f52162b2fc97e1e23",
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf"
     },
@@ -160,14 +160,14 @@
       "path": "assets/figures/site-overview.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "532eb7dd0e3c7fb50babc547e63a1633e7351f6276fde10e999876362936d004",
+      "sha256": "7e1b977cb5d65ae3ed62044f48de347427540acdce8344e8cd7ddf38242fecd5",
       "language": "zh"
     },
     {
       "path": "assets/figures/site-overview.en.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "e04c72ef86c1c8c6842b4c7c443932826ccd77e292bc797d225b0ec2e7c52507",
+      "sha256": "d4fdc7a0e6422fa60bdfae697940add48a672ae15b13d5fb7f678fb7bf173e42",
       "language": "en",
       "translation_of": "assets/figures/site-overview.png"
     },
@@ -190,14 +190,14 @@
       "path": "assets/figures/key-areas.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "41852fa3289736591b26b96a612475b21b25c00e16a67ae0395bb762429972cf",
+      "sha256": "dd4d9c2e1d0a7d28b6ae7a3b9e6c4438255254f8b41b6a2b8eb5aa991c7537d7",
       "language": "zh"
     },
     {
       "path": "assets/figures/key-areas.en.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "454ffebf00a7280c5ced9cee662fa8f903c9042efd866086af7f40b56a9ca87d",
+      "sha256": "4c60d024116701ad25ef4bce1293a85a7cf36464ee6a63bf0b8c73b3bdd7d94b",
       "language": "en",
       "translation_of": "assets/figures/key-areas.png"
     },
@@ -250,14 +250,14 @@
       "path": "assets/figures/inclusion-incidence.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "3f53bd70e2c5762f4cab8caf9a6a25ce1d30b0725ff37f42bbf4c1ba2e62930b",
+      "sha256": "3731c6d437a1019f4e585d9450f7d9d1a09d6208f9077fbcd4cbf84bb2f8b4d4",
       "language": "zh"
     },
     {
       "path": "assets/figures/inclusion-incidence.en.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "01e75c3041f1c08d10ddae2f95d205f858229f3c3524d98bfc42555dba1bd14d",
+      "sha256": "cfc57592374622676ae054def7b97e13e692d9cc4a6daf7b736adf8f8c170d47",
       "language": "en",
       "translation_of": "assets/figures/inclusion-incidence.png"
     },
@@ -265,14 +265,14 @@
       "path": "assets/figures/area-action-plan.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "ecbaa9915eef3c1454178428f8a143600d60952f369ec01a7f7bac3be3c8274c",
+      "sha256": "18336dde4def6d8a16503020f6a2e3b400f1bcaa4de7dc6d4c863f72a93f409f",
       "language": "zh"
     },
     {
       "path": "assets/figures/area-action-plan.en.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "3eecd47b4c230fb9e5e3598067bb19d2246b15b932d096c53b353d3b7fb5252b",
+      "sha256": "c368b266180f162fb690b6bcbcc94d4a3b93997d49c08542ab7c0307596c30c2",
       "language": "en",
       "translation_of": "assets/figures/area-action-plan.png"
     },
@@ -325,14 +325,14 @@
       "path": "assets/figures/ai-governance.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "c7e2c6e513d0a7c07ffae2158560ee8bcbf9137b1dc6c976c30cba7d0b4e7e2b",
+      "sha256": "7c9ed164f469e145291c52de175d8a88c28a4ed51762618a84a076746c46f845",
       "language": "zh"
     },
     {
       "path": "assets/figures/ai-governance.en.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "e1c2d13c93c7b7f57cfc94fd2fc374867a2295442488bdca3b4d3b0dbdb95b41",
+      "sha256": "0ea610916a26eb3ac9879083e62bda74713a5b02c215cbd16412a552b3ac9d01",
       "language": "en",
       "translation_of": "assets/figures/ai-governance.png"
     },
@@ -340,14 +340,14 @@
       "path": "assets/figures/delivery-program.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "f99c255b750899af789d899dd563face8e12b9c1d4ec437c97ee7756c35fa664",
+      "sha256": "ccd2457089ef410a262934ef17576c9555489ba30ffb0db8d2928917010a5f24",
       "language": "zh"
     },
     {
       "path": "assets/figures/delivery-program.en.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "5125b7899de2890f53a70cfcc44adebf6844294706041d7767c49126368ffbf3",
+      "sha256": "1458d3e3b5a4846a9166daa9a20ae2121147ef80014977790c499b567bcfd7d4",
       "language": "en",
       "translation_of": "assets/figures/delivery-program.png"
     },
