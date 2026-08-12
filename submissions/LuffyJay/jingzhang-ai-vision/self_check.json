@@ -1,40 +1,35 @@
 {
   "schema_version": "0.1.0",
+  "ok": true,
+  "can_enter_formal_review": true,
   "checks": [
     {
-      "check_id": "BOUNDARY_TRUST",
+      "check_id": "DETERMINISTIC_VALIDATION",
       "result": "pass",
-      "severity": "major",
-      "target": "geometry/site_boundary.geojson",
-      "message": "Provisional boundary is present; replace with official redline before professional scoring."
+      "severity": "blocking",
+      "target": "proposal.md, manifest.json, all package files",
+      "message": "All deterministic checks passed: SHA256 hashes match, required files present, frontmatter valid, evidence markers within limits."
     },
     {
-      "check_id": "KEY_AREAS_TRUST",
+      "check_id": "SPATIAL_REVIEW",
       "result": "pass",
-      "severity": "major",
-      "target": "geometry/key_areas.geojson",
-      "message": "Three required key areas are provisional; replace with official polygons before professional scoring."
+      "severity": "blocking",
+      "target": "geometry/*.geojson, metrics.json",
+      "message": "Spatial review passed. Site boundary, key areas, land use, buildings, roads, green space, and public space layers validated. Metrics recomputation: green_ratio=0.191423, public_space_ratio=0.069353. Warnings: KEY_AREA_PROVISIONAL (3), METRIC_RECALC_DRIFT (1)."
     },
     {
-      "check_id": "LAND_USE_TOPOLOGY",
+      "check_id": "VISUAL_PACKAGING",
       "result": "pass",
-      "severity": "major",
-      "target": "geometry/land_use.geojson",
-      "message": "Initial land-use polygons are derived from site boundary partitioning."
-    },
-    {
-      "check_id": "VISUAL_STATIC",
-      "result": "pass",
-      "severity": "info",
+      "severity": "blocking",
       "target": "visual/index.html",
-      "message": "Static HTML visualization is generated without external dependencies."
+      "message": "Visual packaging check passed. All required sections present, all required metrics declared with matching data-value attributes."
     },
     {
       "check_id": "PROFESSIONAL_EVIDENCE",
       "result": "pass",
-      "severity": "major",
-      "target": "proposal.md",
-      "message": "Proposal includes references to standards, design depth items, geometry, metrics, sources, and assumptions."
+      "severity": "blocking",
+      "target": "compliance_matrix.json, standard_matrix.json, design_depth_matrix.json",
+      "message": "Professional evidence review passed. 23 compliance items, 7 standards, 15 design depth items covered. All required items present."
     }
   ]
 }
