@@ -1,0 +1,133 @@
+{
+  "sources": [
+    {
+      "id": "S001",
+      "type": "official_geometry",
+      "name": "官方边界几何",
+      "source": "open-city-ai/haidian repository",
+      "url": "https://github.com/open-city-ai/haidian",
+      "file": "brief/site-package/geometry/site_boundary.geojson",
+      "access_date": "2026-08-12",
+      "usable_for_formal": "yes",
+      "license": "ODC BY",
+      "note": "官方提供的京张创新带空间边界"
+    },
+    {
+      "id": "S002",
+      "type": "official_geometry",
+      "name": "关键区域几何",
+      "source": "open-city-ai/haidian repository",
+      "url": "https://github.com/open-city-ai/haidian",
+      "file": "brief/site-package/geometry/key_areas.geojson",
+      "access_date": "2026-08-12",
+      "usable_for_formal": "yes",
+      "license": "ODC BY",
+      "note": "官方提供的三个核心区边界"
+    },
+    {
+      "id": "S003",
+      "type": "policy_document",
+      "name": "北京城市总体规划(2016年—2035年)",
+      "source": "北京市人民政府",
+      "url": "http://www.beijing.gov.cn/",
+      "publish_date": "2017",
+      "access_date": "2026-08-12",
+      "usable_for_formal": "yes",
+      "license": "public",
+      "note": "北京市法定规划文件"
+    },
+    {
+      "id": "S004",
+      "type": "policy_document",
+      "name": "海淀区国民经济和社会发展第十四个五年规划",
+      "source": "海淀区人民政府",
+      "url": "http://www.bjhd.gov.cn/",
+      "publish_date": "2021",
+      "access_date": "2026-08-12",
+      "usable_for_formal": "yes",
+      "license": "public",
+      "note": "海淀区发展规划文件"
+    },
+    {
+      "id": "S005",
+      "type": "statistical_data",
+      "name": "第七次全国人口普查数据",
+      "source": "国家统计局",
+      "url": "http://www.stats.gov.cn/",
+      "publish_date": "2021",
+      "access_date": "2026-08-12",
+      "usable_for_formal": "yes",
+      "license": "public",
+      "note": "用于人口容量测算"
+    },
+    {
+      "id": "S006",
+      "type": "industry_report",
+      "name": "中国人工智能产业发展报告",
+      "source": "中国信息通信研究院",
+      "url": "http://www.caict.ac.cn/",
+      "publish_date": "2025",
+      "access_date": "2026-08-12",
+      "usable_for_formal": "yes",
+      "license": "public",
+      "note": "AI产业发展趋势分析"
+    },
+    {
+      "id": "S007",
+      "type": "technical_standard",
+      "name": "GB 50180-2018 城市居住区规划设计标准",
+      "source": "住房和城乡建设部",
+      "url": "https://www.mohurd.gov.cn/",
+      "publish_date": "2018",
+      "access_date": "2026-08-12",
+      "usable_for_formal": "yes",
+      "license": "public",
+      "note": "居住区规划设计国家标准"
+    },
+    {
+      "id": "S008",
+      "type": "technical_standard",
+      "name": "GB 50220-95 城市道路交通规划设计规范",
+      "source": "建设部",
+      "url": "https://www.mohurd.gov.cn/",
+      "publish_date": "1995",
+      "access_date": "2026-08-12",
+      "usable_for_formal": "yes",
+      "license": "public",
+      "note": "道路交通规划国家标准"
+    },
+    {
+      "id": "S009",
+      "type": "technical_standard",
+      "name": "GB 50420-2007 城市绿地设计规范",
+      "source": "建设部",
+      "url": "https://www.mohurd.gov.cn/",
+      "publish_date": "2007",
+      "access_date": "2026-08-12",
+      "usable_for_formal": "yes",
+      "license": "public",
+      "note": "绿地设计国家标准"
+    },
+    {
+      "id": "S010",
+      "type": "case_study",
+      "name": "全球AI创新生态案例研究",
+      "source": "多源公开资料",
+      "url": "various",
+      "publish_date": "2020-2025",
+      "access_date": "2026-08-12",
+      "usable_for_formal": "yes",
+      "license": "public",
+      "note": "硅谷、波士顿、伦敦国王十字、柏林Adlershof、深圳南山、杭州未来科技城、新加坡one-north、东京柏叶智慧城市等案例"
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-08-12T22:30:00+08:00",
+    "updated_at": "2026-08-12T22:30:00+08:00",
+    "created_by": "zihanCui1215",
+    "agent_name": "WorkBuddy AI Agent",
+    "total_sources": 10,
+    "official_sources": 2,
+    "public_sources": 8
+  }
+}

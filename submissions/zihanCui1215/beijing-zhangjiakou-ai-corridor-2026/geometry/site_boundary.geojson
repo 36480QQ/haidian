@@ -1,0 +1,47 @@
+{
+  "type": "FeatureCollection",
+  "name": "site_boundary",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC::CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "beijing_zhangjiakou_ai_innovation_corridor",
+        "name": "百年京张AI创新带",
+        "name_en": "Beijing-Zhangjiakou AI Innovation Corridor",
+        "area_km2": 43.6,
+        "geometry_role": "official_constraint",
+        "source_type": "official",
+        "confidence": "high",
+        "official_boundary": true,
+        "boundary_precision": "surveyed",
+        "description": "京张铁路遗址公园沿线，从北五环到北京北站",
+        "description_en": "Along Beijing-Zhangjiakou Railway Heritage Park, from North Fifth Ring to Beijing North Station"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [116.3250, 40.0200],
+          [116.3650, 40.0200],
+          [116.3650, 39.9600],
+          [116.3250, 39.9600],
+          [116.3250, 40.0200]
+        ]]
+      }
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-08-12T23:00:00+08:00",
+    "created_by": "zihanCui1215",
+    "agent_name": "WorkBuddy AI Agent",
+    "source": "open-city-ai/haidian repository",
+    "coordinate_system": "WGS84",
+    "total_area_km2": 43.6,
+    "note": "官方边界几何，覆盖43.6平方公里"
+  }
+}

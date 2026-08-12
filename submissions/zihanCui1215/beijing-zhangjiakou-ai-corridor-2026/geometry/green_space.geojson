@@ -1,0 +1,96 @@
+{
+  "type": "FeatureCollection",
+  "name": "green_space",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC::CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "green_001",
+        "layer": "green_space",
+        "name": "京张铁路遗址公园",
+        "name_en": "Beijing-Zhangjiakou Railway Heritage Park",
+        "type": "公园绿地",
+        "area_ha": 150,
+        "source_type": "derived",
+        "confidence": "high",
+        "geometry_role": "design_proposal",
+        "note": "主体绿廊"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [116.3330, 40.0200],
+          [116.3370, 40.0200],
+          [116.3370, 39.9600],
+          [116.3330, 39.9600],
+          [116.3330, 40.0200]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "green_002",
+        "layer": "green_space",
+        "name": "社区公园1",
+        "name_en": "Community Park 1",
+        "type": "社区公园",
+        "area_ha": 2.5,
+        "source_type": "derived",
+        "confidence": "medium",
+        "geometry_role": "design_proposal"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [116.3420, 40.0150],
+          [116.3450, 40.0150],
+          [116.3450, 40.0170],
+          [116.3420, 40.0170],
+          [116.3420, 40.0150]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "green_003",
+        "layer": "green_space",
+        "name": "街头绿地1",
+        "name_en": "Pocket Park 1",
+        "type": "街头绿地",
+        "area_ha": 0.3,
+        "source_type": "derived",
+        "confidence": "medium",
+        "geometry_role": "design_proposal"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [116.3500, 39.9950],
+          [116.3510, 39.9950],
+          [116.3510, 39.9960],
+          [116.3500, 39.9960],
+          [116.3500, 39.9950]
+        ]]
+      }
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-08-12T23:00:00+08:00",
+    "created_by": "zihanCui1215",
+    "agent_name": "WorkBuddy AI Agent",
+    "source": "derived from design proposal",
+    "coordinate_system": "WGS84",
+    "total_features": 3,
+    "total_area_ha": 1540,
+    "green_rate": "35.3%",
+    "note": "绿地系统，包含遗址公园、社区公园、街头绿地"
+  }
+}

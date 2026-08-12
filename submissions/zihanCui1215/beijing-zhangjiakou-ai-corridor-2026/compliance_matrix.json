@@ -1,0 +1,95 @@
+{
+  "compliance_items": [
+    {
+      "id": "C001",
+      "requirement": "绿地率≥35%",
+      "value": "35.3%",
+      "compliance": "pass",
+      "evidence": "metrics.json#/spatial_metrics/green_rate/value",
+      "source": "GB 50420-2007 城市绿地设计规范"
+    },
+    {
+      "id": "C002",
+      "requirement": "容积率控制（核心区2.5-4.0）",
+      "value": "核心区平均3.5",
+      "compliance": "pass",
+      "evidence": "metrics.json#/spatial_metrics/far_core_zone/value",
+      "source": "北京市控制性详细规划编制技术要点"
+    },
+    {
+      "id": "C003",
+      "requirement": "容积率控制（一般区1.5-2.5）",
+      "value": "一般区平均2.2",
+      "compliance": "pass",
+      "evidence": "metrics.json#/spatial_metrics/far_general_zone/value",
+      "source": "北京市控制性详细规划编制技术要点"
+    },
+    {
+      "id": "C004",
+      "requirement": "建筑密度≤40%",
+      "value": "平均35%",
+      "compliance": "pass",
+      "evidence": "metrics.json#/spatial_metrics/building_density/value",
+      "source": "GB 50180-2018 城市居住区规划设计标准"
+    },
+    {
+      "id": "C005",
+      "requirement": "教育设施500m覆盖",
+      "value": "100%覆盖",
+      "compliance": "pass",
+      "evidence": "metrics.json#/facility_metrics/education_coverage_500m/value",
+      "source": "GB 50180-2018 城市居住区规划设计标准"
+    },
+    {
+      "id": "C006",
+      "requirement": "医疗设施1000m覆盖",
+      "value": "100%覆盖",
+      "compliance": "pass",
+      "evidence": "metrics.json#/facility_metrics/medical_coverage_1000m/value",
+      "source": "GB 50180-2018 城市居住区规划设计标准"
+    },
+    {
+      "id": "C007",
+      "requirement": "公园绿地500m覆盖",
+      "value": "100%覆盖",
+      "compliance": "pass",
+      "evidence": "metrics.json#/facility_metrics/park_coverage_500m/value",
+      "source": "GB 50420-2007 城市绿地设计规范"
+    },
+    {
+      "id": "C008",
+      "requirement": "道路系统符合规范",
+      "value": "符合四级道路等级体系",
+      "compliance": "pass",
+      "evidence": "proposal.md#6.1",
+      "source": "GB 50220-95 城市道路交通规划设计规范"
+    },
+    {
+      "id": "C009",
+      "requirement": "用地分类符合国标",
+      "value": "采用GB 50137标准分类",
+      "compliance": "pass",
+      "evidence": "metrics.json#/land_use_breakdown",
+      "source": "GB 50137 城市用地分类与规划建设用地标准"
+    },
+    {
+      "id": "C010",
+      "requirement": "双语文档完整",
+      "value": "中英文版本齐全",
+      "compliance": "pass",
+      "evidence": "proposal.md + proposal.en.md",
+      "source": "SKILL.md要求"
+    }
+  ],
+  "summary": {
+    "total_items": 10,
+    "passed": 10,
+    "failed": 0,
+    "compliance_rate": "100%"
+  },
+  "metadata": {
+    "created_at": "2026-08-12T22:30:00+08:00",
+    "created_by": "zihanCui1215",
+    "agent_name": "WorkBuddy AI Agent"
+  }
+}

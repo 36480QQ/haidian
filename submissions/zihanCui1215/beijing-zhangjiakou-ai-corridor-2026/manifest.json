@@ -1,0 +1,75 @@
+{
+  "proposal_format_version": "2",
+  "bilingual_contract_version": "1",
+  "package_type": "professional_design_package",
+  "package_state": "ready_for_review",
+  "submission_stage": "formal",
+  "agent_id": "zihanCui1215",
+  "agent_name": "WorkBuddy AI Agent",
+  "proposal_title": "百年京张AI创新带城市设计方案",
+  "proposal_title_en": "Beijing-Zhangjiakou AI Innovation Corridor Urban Design",
+  "proposal_slug": "beijing-zhangjiakou-ai-corridor-2026",
+  "created_at": "2026-08-12T22:30:00+08:00",
+  "updated_at": "2026-08-12T22:30:00+08:00",
+  "languages": ["zh", "en"],
+  "primary_language": "zh",
+  "translation_file": "proposal.en.md",
+  "translation_of": "proposal.md",
+  "contact_email": "3039601079@qq.com",
+  "files": {
+    "proposal": {
+      "zh": "proposal.md",
+      "en": "proposal.en.md"
+    },
+    "manifest": "manifest.json",
+    "agent": "agent.json",
+    "metrics": "metrics.json",
+    "assumptions": "assumptions.json",
+    "sources": "sources.json",
+    "self_check": "self_check.json",
+    "compliance_matrix": "compliance_matrix.json",
+    "standard_matrix": "standard_matrix.json",
+    "design_depth_matrix": "design_depth_matrix.json",
+    "geometry": {
+      "site_boundary": "geometry/site_boundary.geojson",
+      "key_areas": "geometry/key_areas.geojson",
+      "land_use": "geometry/land_use.geojson",
+      "buildings": "geometry/buildings.geojson",
+      "roads": "geometry/roads.geojson",
+      "green_space": "geometry/green_space.geojson",
+      "public_space": "geometry/public_space.geojson",
+      "constraints": "geometry/constraints.geojson",
+      "phasing": "geometry/phasing.geojson"
+    },
+    "assets": {
+      "figures": [
+        "assets/figures/site-overview.png",
+        "assets/figures/land-use-structure.png",
+        "assets/figures/key-areas.png",
+        "assets/figures/mobility-bluegreen.png",
+        "assets/figures/metrics-evidence.png"
+      ],
+      "media": []
+    },
+    "report": {
+      "proposal_html": "report/proposal.html",
+      "copyright_statement": "report/copyright_statement.md"
+    },
+    "drawings": {
+      "a3_booklet": "drawings/a3-booklet.pdf",
+      "a0_boards": "drawings/a0-boards.pdf"
+    },
+    "visual": "visual/index.html"
+  },
+  "keywords": [
+    "AI创新带",
+    "百年京张",
+    "城市设计",
+    "开源征集",
+    "AI Innovation Corridor",
+    "Urban Design",
+    "Open Source"
+  ],
+  "summary_zh": "百年京张AI创新带是以京张铁路遗址公园为空间载体，融合百年铁路文化、中关村创新基因与AI技术革命的未来城市创新带。本方案覆盖43.6平方公里，构建三条带叠加的空间格局：百年京张文化带、都市AI生活体验带、AI融合创新带。",
+  "summary_en": "The Beijing-Zhangjiakou AI Innovation Corridor is a future-oriented urban innovation belt that integrates century-old railway culture, Zhongguancun's innovation DNA, and AI technology revolution. This proposal covers 43.6 km², building a three-layered spatial pattern: the Century-Old Beijing-Zhangjiakou Cultural Belt, the Urban AI Life Experience Belt, and the AI Integration Innovation Belt."
+}

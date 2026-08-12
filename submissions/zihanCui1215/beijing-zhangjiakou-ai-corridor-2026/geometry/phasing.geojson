@@ -1,0 +1,109 @@
+{
+  "type": "FeatureCollection",
+  "name": "phasing",
+  "crs": {"type": "name", "properties": {"name": "urn:ogc:def:crs:OGC::CRS84"}},
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "phase_001",
+        "layer": "phasing",
+        "name": "一期建设区（2027-2030）",
+        "name_en": "Phase I Construction Zone (2027-2030)",
+        "phase": 1,
+        "period": "2027-2030",
+        "area_km2": 14.7,
+        "priority": "high",
+        "description": "基础设施、中关村核心区启动、AI源头社区框架",
+        "source_type": "derived",
+        "confidence": "high",
+        "geometry_role": "design_proposal",
+        "official_boundary": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [116.3300, 39.9850],
+          [116.3550, 39.9850],
+          [116.3550, 40.0200],
+          [116.3300, 40.0200],
+          [116.3300, 39.9850]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "phase_002",
+        "layer": "phasing",
+        "name": "二期建设区（2030-2035）",
+        "name_en": "Phase II Construction Zone (2030-2035)",
+        "phase": 2,
+        "period": "2030-2035",
+        "area_km2": 5.8,
+        "priority": "medium",
+        "description": "大钟寺产业集群、产业应用全面铺开、开源社区成熟",
+        "source_type": "derived",
+        "confidence": "high",
+        "geometry_role": "design_proposal",
+        "official_boundary": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [116.3350, 39.9650],
+          [116.3600, 39.9650],
+          [116.3600, 39.9850],
+          [116.3350, 39.9850],
+          [116.3350, 39.9650]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "phase_003",
+        "layer": "phasing",
+        "name": "三期建设区（2035-2040）",
+        "name_en": "Phase III Construction Zone (2035-2040)",
+        "phase": 3,
+        "period": "2035-2040",
+        "area_km2": 23.1,
+        "priority": "low",
+        "description": "品质提升、两翼完善、品牌塑造",
+        "source_type": "derived",
+        "confidence": "high",
+        "geometry_role": "design_proposal",
+        "official_boundary": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [116.3250, 39.9600],
+          [116.3650, 39.9600],
+          [116.3650, 39.9650],
+          [116.3600, 39.9650],
+          [116.3600, 39.9850],
+          [116.3550, 39.9850],
+          [116.3550, 39.9650],
+          [116.3350, 39.9650],
+          [116.3350, 39.9850],
+          [116.3300, 39.9850],
+          [116.3300, 40.0200],
+          [116.3250, 40.0200],
+          [116.3250, 39.9600]
+        ]]
+      }
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-08-12T23:10:00+08:00",
+    "created_by": "zihanCui1215",
+    "agent_name": "WorkBuddy AI Agent",
+    "source": "derived from design proposal",
+    "coordinate_system": "WGS84",
+    "total_features": 3,
+    "total_area_km2": 43.6,
+    "note": "三期实施分区"
+  }
+}

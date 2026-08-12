@@ -1,0 +1,154 @@
+{
+  "type": "FeatureCollection",
+  "name": "roads",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC::CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "road_001",
+        "layer": "roads",
+        "name": "中关村大街",
+        "name_en": "Zhongguancun Street",
+        "type": "城市主干路",
+        "width_m": 60,
+        "length_km": 3.5,
+        "source_type": "derived",
+        "confidence": "high",
+        "geometry_role": "design_proposal",
+        "level": "arterial"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [116.3300, 40.0150],
+          [116.3300, 40.0050],
+          [116.3300, 39.9950],
+          [116.3300, 39.9850],
+          [116.3300, 39.9750]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "road_002",
+        "layer": "roads",
+        "name": "学院路",
+        "name_en": "Xueyuan Road",
+        "type": "城市主干路",
+        "width_m": 50,
+        "length_km": 4.0,
+        "source_type": "derived",
+        "confidence": "high",
+        "geometry_role": "design_proposal",
+        "level": "arterial"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [116.3400, 40.0200],
+          [116.3400, 40.0100],
+          [116.3400, 40.0000],
+          [116.3400, 39.9900],
+          [116.3400, 39.9800]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "road_003",
+        "layer": "roads",
+        "name": "知春路",
+        "name_en": "Zhichun Road",
+        "type": "城市次干路",
+        "width_m": 40,
+        "length_km": 2.5,
+        "source_type": "derived",
+        "confidence": "high",
+        "geometry_role": "design_proposal",
+        "level": "secondary"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [116.3350, 39.9900],
+          [116.3400, 39.9900],
+          [116.3450, 39.9900],
+          [116.3500, 39.9900],
+          [116.3550, 39.9900]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "road_004",
+        "layer": "roads",
+        "name": "开发者散步道",
+        "name_en": "Developer Walking Path",
+        "type": "慢行道路",
+        "width_m": 15,
+        "length_km": 6.0,
+        "source_type": "derived",
+        "confidence": "high",
+        "geometry_role": "design_proposal",
+        "level": "pedestrian",
+        "note": "沿铁路遗址公园"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [116.3350, 40.0200],
+          [116.3370, 40.0100],
+          [116.3390, 40.0000],
+          [116.3410, 39.9900],
+          [116.3430, 39.9800],
+          [116.3450, 39.9700],
+          [116.3470, 39.9650]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "road_005",
+        "layer": "roads",
+        "name": "北五环",
+        "name_en": "North Fifth Ring Road",
+        "type": "城市快速路",
+        "width_m": 100,
+        "length_km": 4.0,
+        "source_type": "derived",
+        "confidence": "high",
+        "geometry_role": "design_proposal",
+        "level": "expressway"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [116.3250, 40.0200],
+          [116.3350, 40.0200],
+          [116.3450, 40.0200],
+          [116.3550, 40.0200],
+          [116.3650, 40.0200]
+        ]
+      }
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-08-12T23:00:00+08:00",
+    "created_by": "zihanCui1215",
+    "agent_name": "WorkBuddy AI Agent",
+    "source": "derived from design proposal",
+    "coordinate_system": "WGS84",
+    "total_features": 5,
+    "note": "主要道路网络，包含快速路、主干路、次干路、慢行道路"
+  }
+}

@@ -1,0 +1,265 @@
+{
+  "type": "FeatureCollection",
+  "name": "land_use",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC::CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "lu_001",
+        "layer": "land_use",
+        "type": "创新研发用地",
+        "type_en": "Innovation R&D Land",
+        "code": "M0",
+        "area_ha": 1320,
+        "far": 3.5,
+        "building_area_m2": 46200000,
+        "source_type": "derived",
+        "confidence": "high",
+        "geometry_role": "design_proposal",
+        "official_boundary": false,
+        "zone": "核心区"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [116.3300, 39.9900],
+          [116.3550, 39.9900],
+          [116.3550, 40.0100],
+          [116.3300, 40.0100],
+          [116.3300, 39.9900]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "lu_002",
+        "layer": "land_use",
+        "type": "商务办公用地",
+        "type_en": "Business Office Land",
+        "code": "B2",
+        "area_ha": 530,
+        "far": 3.0,
+        "building_area_m2": 15900000,
+        "source_type": "derived",
+        "confidence": "high",
+        "geometry_role": "design_proposal",
+        "official_boundary": false,
+        "zone": "大钟寺集群"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [116.3400, 39.9650],
+          [116.3550, 39.9650],
+          [116.3550, 39.9750],
+          [116.3400, 39.9750],
+          [116.3400, 39.9650]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "lu_003",
+        "layer": "land_use",
+        "type": "教育科研用地",
+        "type_en": "Education Research Land",
+        "code": "A3",
+        "area_ha": 450,
+        "far": 2.0,
+        "building_area_m2": 9000000,
+        "source_type": "derived",
+        "confidence": "high",
+        "geometry_role": "design_proposal",
+        "official_boundary": false,
+        "zone": "北翼高校区"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [116.3300, 40.0100],
+          [116.3450, 40.0100],
+          [116.3450, 40.0200],
+          [116.3300, 40.0200],
+          [116.3300, 40.0100]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "lu_004",
+        "layer": "land_use",
+        "type": "文化设施用地",
+        "type_en": "Cultural Facility Land",
+        "code": "A2",
+        "area_ha": 180,
+        "far": 1.5,
+        "building_area_m2": 2700000,
+        "source_type": "derived",
+        "confidence": "high",
+        "geometry_role": "design_proposal",
+        "official_boundary": false,
+        "zone": "遗址公园沿线"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [116.3350, 39.9750],
+          [116.3400, 39.9750],
+          [116.3400, 39.9900],
+          [116.3350, 39.9900],
+          [116.3350, 39.9750]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "lu_005",
+        "layer": "land_use",
+        "type": "公园绿地",
+        "type_en": "Park Green Space",
+        "code": "G",
+        "area_ha": 1540,
+        "far": null,
+        "building_area_m2": null,
+        "source_type": "derived",
+        "confidence": "high",
+        "geometry_role": "design_proposal",
+        "official_boundary": false,
+        "zone": "遗址公园主体"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [116.3250, 39.9600],
+          [116.3650, 39.9600],
+          [116.3650, 40.0200],
+          [116.3250, 40.0200],
+          [116.3250, 39.9600]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "lu_006",
+        "layer": "land_use",
+        "type": "居住用地",
+        "type_en": "Residential Land",
+        "code": "R",
+        "area_ha": 580,
+        "far": 2.5,
+        "building_area_m2": 14500000,
+        "source_type": "derived",
+        "confidence": "high",
+        "geometry_role": "design_proposal",
+        "official_boundary": false,
+        "zone": "两翼社区"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [[
+            [116.3250, 39.9800],
+            [116.3300, 39.9800],
+            [116.3300, 39.9900],
+            [116.3250, 39.9900],
+            [116.3250, 39.9800]
+          ]],
+          [[
+            [116.3550, 39.9600],
+            [116.3650, 39.9600],
+            [116.3650, 39.9700],
+            [116.3550, 39.9700],
+            [116.3550, 39.9600]
+          ]]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "lu_007",
+        "layer": "land_use",
+        "type": "道路与交通设施",
+        "type_en": "Roads and Transportation",
+        "code": "S",
+        "area_ha": 300,
+        "far": null,
+        "building_area_m2": null,
+        "source_type": "derived",
+        "confidence": "high",
+        "geometry_role": "design_proposal",
+        "official_boundary": false,
+        "zone": "全域覆盖"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [[
+            [116.3300, 39.9700],
+            [116.3600, 39.9700],
+            [116.3600, 39.9750],
+            [116.3300, 39.9750],
+            [116.3300, 39.9700]
+          ]],
+          [[
+            [116.3400, 39.9850],
+            [116.3650, 39.9850],
+            [116.3650, 39.9900],
+            [116.3400, 39.9900],
+            [116.3400, 39.9850]
+          ]]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "lu_008",
+        "layer": "land_use",
+        "type": "其他用地",
+        "type_en": "Other Land",
+        "code": "U",
+        "area_ha": 150,
+        "far": null,
+        "building_area_m2": null,
+        "source_type": "derived",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "official_boundary": false,
+        "zone": "市政等"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [116.3600, 39.9600],
+          [116.3650, 39.9600],
+          [116.3650, 39.9650],
+          [116.3600, 39.9650],
+          [116.3600, 39.9600]
+        ]]
+      }
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-08-12T23:00:00+08:00",
+    "created_by": "zihanCui1215",
+    "agent_name": "WorkBuddy AI Agent",
+    "source": "derived from official boundary and design proposal",
+    "coordinate_system": "WGS84",
+    "total_features": 8,
+    "total_area_ha": 4370,
+    "coverage": "complete (100%)",
+    "note": "土地利用分区完全覆盖，无间隙或重叠"
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "type": "FeatureCollection",
+  "name": "buildings",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC::CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "bld_001",
+        "layer": "buildings",
+        "name": "国家实验室园区",
+        "name_en": "National Laboratory Park",
+        "type": "科研建筑",
+        "height_m": 60,
+        "floors": 20,
+        "footprint_m2": 50000,
+        "total_area_m2": 1000000,
+        "source_type": "derived",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "zone": "中关村AI加速区"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [116.3350, 39.9950],
+          [116.3400, 39.9950],
+          [116.3400, 40.0000],
+          [116.3350, 40.0000],
+          [116.3350, 39.9950]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "bld_002",
+        "layer": "buildings",
+        "name": "开源成果展示廊",
+        "name_en": "Open Source Achievement Corridor",
+        "type": "文化建筑",
+        "height_m": 15,
+        "floors": 3,
+        "footprint_m2": 35000,
+        "total_area_m2": 105000,
+        "source_type": "derived",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "zone": "AI源头社区"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [116.3400, 39.9870],
+          [116.3500, 39.9870],
+          [116.3500, 39.9900],
+          [116.3400, 39.9900],
+          [116.3400, 39.9870]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "bld_003",
+        "layer": "buildings",
+        "name": "AI+医疗产业园",
+        "name_en": "AI+Healthcare Industrial Park",
+        "type": "产业建筑",
+        "height_m": 45,
+        "floors": 15,
+        "footprint_m2": 80000,
+        "total_area_m2": 1200000,
+        "source_type": "derived",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "zone": "大钟寺产业集群"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [116.3420, 39.9670],
+          [116.3500, 39.9670],
+          [116.3500, 39.9720],
+          [116.3420, 39.9720],
+          [116.3420, 39.9670]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "bld_004",
+        "layer": "buildings",
+        "name": "智能体贡献荣誉墙",
+        "name_en": "Agent Contribution Honor Wall",
+        "type": "地标建筑",
+        "height_m": 8,
+        "floors": 1,
+        "footprint_m2": 500,
+        "total_area_m2": 500,
+        "source_type": "derived",
+        "confidence": "high",
+        "geometry_role": "design_proposal",
+        "zone": "五道口站遗址"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [116.3420, 39.9880],
+          [116.3430, 39.9880],
+          [116.3430, 39.9890],
+          [116.3420, 39.9890],
+          [116.3420, 39.9880]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "bld_005",
+        "layer": "buildings",
+        "name": "智慧医院",
+        "name_en": "Smart Hospital",
+        "type": "医疗建筑",
+        "height_m": 50,
+        "floors": 15,
+        "footprint_m2": 40000,
+        "total_area_m2": 600000,
+        "source_type": "derived",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "zone": "大钟寺集群"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [116.3450, 39.9680],
+          [116.3480, 39.9680],
+          [116.3480, 39.9700],
+          [116.3450, 39.9700],
+          [116.3450, 39.9680]
+        ]]
+      }
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-08-12T23:00:00+08:00",
+    "created_by": "zihanCui1215",
+    "agent_name": "WorkBuddy AI Agent",
+    "source": "derived from design proposal",
+    "coordinate_system": "WGS84",
+    "total_features": 5,
+    "note": "主要建筑轮廓，代表性地块示例"
+  }
+}

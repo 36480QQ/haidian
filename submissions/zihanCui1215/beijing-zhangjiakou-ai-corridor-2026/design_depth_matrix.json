@@ -1,0 +1,124 @@
+{
+  "design_depth_items": [
+    {
+      "id": "D001",
+      "category": "spatial_structure",
+      "design_element": "用地边界和性质",
+      "depth_level": "控规级",
+      "evidence": "land_use.geojson完整覆盖，明确用地性质和边界",
+      "proposal_section": "3.2 土地利用布局",
+      "compliance": "achieved"
+    },
+    {
+      "id": "D002",
+      "category": "spatial_structure",
+      "design_element": "开发强度控制指标",
+      "depth_level": "控规级",
+      "evidence": "容积率、建筑密度、建筑高度分区控制",
+      "proposal_section": "3.3 开发强度控制",
+      "compliance": "achieved"
+    },
+    {
+      "id": "D003",
+      "category": "transportation",
+      "design_element": "道路交通系统",
+      "depth_level": "控规级",
+      "evidence": "道路等级、红线宽度、断面设计",
+      "proposal_section": "6.1 综合交通规划",
+      "compliance": "achieved"
+    },
+    {
+      "id": "D004",
+      "category": "public_facilities",
+      "design_element": "公共服务设施布局",
+      "depth_level": "控规级",
+      "evidence": "教育、医疗、文体、社区服务设施布局",
+      "proposal_section": "6.3 公共服务设施",
+      "compliance": "achieved"
+    },
+    {
+      "id": "D005",
+      "category": "blue_green_space",
+      "design_element": "蓝绿公共空间",
+      "depth_level": "控规级",
+      "evidence": "绿地系统、公共空间、文化节点设计",
+      "proposal_section": "7.1-7.2",
+      "compliance": "achieved"
+    },
+    {
+      "id": "D006",
+      "category": "implementation",
+      "design_element": "分期实施计划",
+      "depth_level": "控规级",
+      "evidence": "三期实施计划（2027-2040）",
+      "proposal_section": "8.1 分期实施计划",
+      "compliance": "achieved"
+    },
+    {
+      "id": "D007",
+      "category": "implementation",
+      "design_element": "政策保障措施",
+      "depth_level": "控规级",
+      "evidence": "土地、人才、产业、创新政策包",
+      "proposal_section": "8.2 政策包设计",
+      "compliance": "achieved"
+    },
+    {
+      "id": "D008",
+      "category": "ai_ecosystem",
+      "design_element": "AI创新生态体系",
+      "depth_level": "概念设计",
+      "evidence": "生态链路、用户画像、场景卡片",
+      "proposal_section": "5. AI创新生态体系",
+      "compliance": "achieved"
+    },
+    {
+      "id": "D009",
+      "category": "ai_ecosystem",
+      "design_element": "三个核心区详细设计",
+      "depth_level": "控规级",
+      "evidence": "功能布局、空间要素、技术指标",
+      "proposal_section": "4. 三个核心区详细设计",
+      "compliance": "achieved"
+    },
+    {
+      "id": "D010",
+      "category": "ai_ecosystem",
+      "design_element": "产业测试验证平台",
+      "depth_level": "概念设计",
+      "evidence": "AI医疗、自动驾驶、智慧校园测试平台",
+      "proposal_section": "5.3 产业测试验证平台",
+      "compliance": "achieved"
+    },
+    {
+      "id": "D011",
+      "category": "cultural_narrative",
+      "design_element": "文化叙事体系",
+      "depth_level": "概念设计",
+      "evidence": "三乐章叙事、文化导览路线",
+      "proposal_section": "7.3 文化叙事与导览路线",
+      "compliance": "achieved"
+    },
+    {
+      "id": "D012",
+      "category": "long_term_operation",
+      "design_element": "长期运营机制",
+      "depth_level": "概念设计",
+      "evidence": "全球AI创新大会、开源开发者大会、开发者朝圣之旅",
+      "proposal_section": "8.3 长期运营机制",
+      "compliance": "achieved"
+    }
+  ],
+  "depth_summary": {
+    "regulatory_level_items": 7,
+    "conceptual_design_items": 5,
+    "total_items": 12,
+    "all_achieved": true
+  },
+  "metadata": {
+    "created_at": "2026-08-12T22:30:00+08:00",
+    "created_by": "zihanCui1215",
+    "agent_name": "WorkBuddy AI Agent",
+    "note": "控规级城市设计深度要求已全部达到，AI生态、文化叙事、长期运营等特色内容达到概念设计深度"
+  }
+}
