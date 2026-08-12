@@ -146,6 +146,26 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ![众智园维护院当班记录模板](assets/figures/zhongzhiyuan-shift-log.png)
 
+## 第三阶段深化：三处场景 × 一日行动剧本
+
+这组行动剧本把三处“同班场”放进同一日的四段节奏：06—10 抵达与晨间交接，10—18 共同工作、学习与照护，18—24 夜餐、交换与社区服务，00—06 恢复、应急与安全离开。它不是已确认的班表、客流预测、现场调查或实施授权，而是把既有角色、场景卡和空间原型组织为“人如何抵达—获得什么服务—在哪个空间交接—何时转向人工”的概念性工作流 [metric:daily_script_area_count] [metric:daily_script_shift_count]。
+
+![三处同班场 24 小时行动剧本总览](assets/figures/daily-script-overview.png)
+
+众智园维护院让维护技师、研发者和人工支持在公共首层交班：晨间分开设备到达与步行流线，白天共享维护台与学习桌，晚间由人工交接台回应求助与申诉，夜间清点可移动组件并恢复绿地。AI只处理授权设备状态或辅助文档检索，不能记录个人表现 [source:AGENT-TASKBOOK]。
+
+![众智园维护院一日行动剧本](assets/figures/zhongzhiyuan-daily-script.png)
+
+AI 原点交接院把学习者、照护者与低数字素养使用者放在同一服务链：近校抵达时使用视觉、语音和人工导视，白天连接学习桌、休息座和服务台，夜间保留无扫码夜餐、申诉入口和安静恢复空间。AI仅给出可解释的导向或服务辅助，不能替代照护判断、推断身份或情绪 [standard:BARRIER-FREE-ENVIRONMENT-LAW]。
+
+![AI 原点交接院一日行动剧本](assets/figures/ai-origin-daily-script.png)
+
+大钟寺交换院把骑手、小店经营者和夜班人员的换乘、短停和安全离开组织在一起：早间分开换乘、配送与步行，白天开放同班桌和小店协作界面，晚间以遮雨交接湾、夜餐和慢行线完成交接，夜间保留人工求助和申诉转介。AI仅发布聚合导向或在店主控制下辅助经营，不追踪个人路线、不自动惩罚或封禁 [standard:GENERATIVE-AI-INTERIM-MEASURES]。
+
+![大钟寺交换院一日行动剧本](assets/figures/dazhongsi-daily-script.png)
+
+无论哪一处、哪个时段，人工入口、无扫码服务、连续无障碍路线与公开责任信息都不得下线。人工入口缺失、无障碍路线阻断、隐蔽追踪、个人评分、自动惩罚或生产系统接入，任一情形均意味着暂停、不开放；这些剧本不替代真实场地、消防、产权、劳动或专业核验结论。
+
 ## AI 创新生态、人才画像与 AI+ 场景
 
 八类画像把技术岗位与城市运行岗位放在同一张需求表中：

@@ -20,8 +20,14 @@
       ],
       "changed_files": [
         "submissions/marx-zhang/jingzhang-all-shifts/agent.json",
+        "submissions/marx-zhang/jingzhang-all-shifts/assets/figures/ai-origin-daily-script.en.png",
+        "submissions/marx-zhang/jingzhang-all-shifts/assets/figures/ai-origin-daily-script.png",
+        "submissions/marx-zhang/jingzhang-all-shifts/assets/figures/daily-script-overview.en.png",
+        "submissions/marx-zhang/jingzhang-all-shifts/assets/figures/daily-script-overview.png",
         "submissions/marx-zhang/jingzhang-all-shifts/assets/figures/day-night-sequence.en.png",
         "submissions/marx-zhang/jingzhang-all-shifts/assets/figures/day-night-sequence.png",
+        "submissions/marx-zhang/jingzhang-all-shifts/assets/figures/dazhongsi-daily-script.en.png",
+        "submissions/marx-zhang/jingzhang-all-shifts/assets/figures/dazhongsi-daily-script.png",
         "submissions/marx-zhang/jingzhang-all-shifts/assets/figures/implementation-operations.en.png",
         "submissions/marx-zhang/jingzhang-all-shifts/assets/figures/implementation-operations.png",
         "submissions/marx-zhang/jingzhang-all-shifts/assets/figures/key-areas.en.png",
@@ -38,6 +44,8 @@
         "submissions/marx-zhang/jingzhang-all-shifts/assets/figures/site-overview.png",
         "submissions/marx-zhang/jingzhang-all-shifts/assets/figures/zhongzhiyuan-codesign-workshop.en.png",
         "submissions/marx-zhang/jingzhang-all-shifts/assets/figures/zhongzhiyuan-codesign-workshop.png",
+        "submissions/marx-zhang/jingzhang-all-shifts/assets/figures/zhongzhiyuan-daily-script.en.png",
+        "submissions/marx-zhang/jingzhang-all-shifts/assets/figures/zhongzhiyuan-daily-script.png",
         "submissions/marx-zhang/jingzhang-all-shifts/assets/figures/zhongzhiyuan-g1-checklist.en.png",
         "submissions/marx-zhang/jingzhang-all-shifts/assets/figures/zhongzhiyuan-g1-checklist.png",
         "submissions/marx-zhang/jingzhang-all-shifts/assets/figures/zhongzhiyuan-pilot-audit.en.png",
@@ -86,7 +94,7 @@
       "ai_package_stages": {
         "submissions/marx-zhang/jingzhang-all-shifts": "formal"
       },
-      "total_bytes": 30265769,
+      "total_bytes": 40579163,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -160,7 +168,7 @@
       "summary": {
         "standard_matrix_items": 6,
         "design_depth_items": 15,
-        "known_metric_refs_required": 18,
+        "known_metric_refs_required": 20,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
@@ -168,7 +176,7 @@
           "standard": 7,
           "depth": 15,
           "data": 10,
-          "metric": 13
+          "metric": 15
         }
       }
     },

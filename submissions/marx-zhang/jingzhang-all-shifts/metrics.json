@@ -252,6 +252,32 @@
       "assumptions": [
         "Categories are a de-identified service-governance template, not a workforce monitoring scheme."
       ]
+    },
+    "daily_script_area_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count(daily_action_script_key_areas)",
+      "confidence": "high",
+      "assumptions": [
+        "Three concept action scripts correspond to the announcement's three named key-area roles; they are not confirmed site operations."
+      ]
+    },
+    "daily_script_shift_count": {
+      "status": "known",
+      "value": 4,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count(conceptual_time_windows:06-10,10-18,18-24,00-06)",
+      "confidence": "high",
+      "assumptions": [
+        "Time windows are an existing proposal narrative device, not verified shift patterns or approved service hours."
+      ]
     }
   }
 }
