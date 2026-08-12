@@ -7,6 +7,19 @@
     "boundary_status": "derived_from_maintainer_defined_provisional_site_boundary",
     "derivation_note": "在EPSG:4548下以统一矩形网格切割PROV-SITE-001临时边界生成，相邻单元共享完全相同边界坐标；边界正式化后须整体重新生成。"
   },
+  "data_gap": {
+    "status": "official_constraint_geometry_unavailable",
+    "declared_by": "submissions/yadnuses/jingzhang-mend (v0.5)",
+    "assumption_ids": ["A-CONTROLS-001", "A-CONTROLS-002", "A-HERITAGE-001"],
+    "missing_layers": [
+      "REGULATORY_CONTROL",
+      "HERITAGE_PROTECTION",
+      "PARCEL",
+      "EXISTING_PRIMARY_ROAD"
+    ],
+    "note_zh": "本图层仅含 3 条 provisional/示意性要素（CONS-001 京张铁路遗址廊道暂定保护控制范围、CONS-002 京张铁路旧线示意线位、CONS-003 小月河示意水系），均非 official_constraint。控规控制线、法定文保范围、道路红线与权属地块在公开场地包中无官方几何来源，缺口按 A-CONTROLS-001/A-CONTROLS-002/A-HERITAGE-001 登记；取得官方或已清权几何前，不得以推定线条冒充 official_constraint，宁缺毋假。",
+    "note_en": "This layer contains only 3 provisional/indicative features (CONS-001 tentative heritage corridor range, CONS-002 old Jingzhang rail alignment, CONS-003 XiaoYue River water alignment); none is an official_constraint. No official geometry for regulatory-control lines, statutory heritage ranges, road redlines, or cadastral parcels exists in the public site package; the gap is registered as A-CONTROLS-001/A-CONTROLS-002/A-HERITAGE-001. Until official or cleared geometry is available, inferred lines must not be presented as official_constraint - an empty/partial set is preferred over fabrication."
+  },
   "features": [
     {
       "type": "Feature",

@@ -15,6 +15,12 @@ iteration: "v1.0"
 
 # Jingzhang AI Innovation Belt Youth-Friendly Public Space and AI Pilgrimage Landmark Urban Design
 
+## Core Proposition: The Zhan Tianyou Protocol
+
+Core Proposition: Zhan Tianyou Protocol — A Trust Framework for Human-Machine Collaborative Urban Design
+
+In 1909, Zhan Tianyou led the construction of the Beijing-Zhangjiakou Railway, marking the first time Chinese people independently completed the design of a mainline railway. A century later, on the same land, AI intelligence entities participated in real urban design for the first time. This proposal introduces the "Zhan Tianyou Protocol" — a trust framework for human-machine collaborative urban design that grows from the legacy of the Beijing-Zhangjiakou Railway. Zhan Tianyou won trust back then with three things: visible engineering quality, transparent work records, and verifiable results. Today's AI also needs these three: readable design plans, traceable evidence chains, and reviewable metric data. This proposal itself is an empirical demonstration of this protocol. The "Zhan Tianyou Protocol" consists of four principles: 1) Visibility — All design judgments are traceable through spatial layers 2) Stoppable — Each AI scenario has a named human responsible person and an exit mechanism 3) AI-free Equivalence — Public spaces function fully without AI 4) Intergenerational Equity — The plan serves young talents as well as children, the elderly, people with disabilities, and low-income groups. This proposal was independently completed by an AI Agent under the supervision of human operator @Cxd1229 — the proposal itself is an empirical demonstration that "AI can participate in real urban design."
+
 ## Design Basis and Source Inventory
 
 This proposal is prepared in accordance with the Haidian Centennial Jingzhang AI Innovation Belt International Urban Design Competition Announcement (May 9, 2026, Beijing Municipal Commission of Planning and Natural Resources) and the Global Agent Open Call Taskbook.
@@ -57,7 +63,7 @@ Bounded by North 5th Ring Road to the north, Jingzang Expressway to the east, Xi
 
 ### Overall Concept and Naming System [task:agent.1]
 
-**Concept**: Jingzhang AI Innovation Belt (JZ.AI).
+**Concept**: Jingzhang AI Innovation Belt (JZ.AI). Core framework: the Zhan Tianyou Protocol — a human-AI collaborative trust framework grown from the Jingzhang Railway legacy.
 
 **Three Positionings**: Centennial Jingzhang Cultural Belt · Urban AI Living Experience Belt · AI Integration Innovation Belt
 
