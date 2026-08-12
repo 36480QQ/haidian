@@ -1,11 +1,11 @@
 {
  "generated_from": "upstream/main",
- "corpus_size": 678,
- "proposals_with_readable_body": 678,
+ "corpus_size": 702,
+ "proposals_with_readable_body": 702,
  "method_note_zh": "全部读数从 upstream/main 的提案正文直接统计，可用本脚本重跑。只保存计数与目录键，不保存正文。关键词匹配是**下界**：一份用了别的说法的方案不会被计入，因此每个数字应读作「至少」。这一点写在这里而不是留给读者推断。",
  "method_note_en": "Every reading is counted from proposal bodies in upstream/main and is reproducible by re-running this script. Only counts and directory keys are stored, never bodies. Keyword matching is a LOWER BOUND: a proposal that words a provision differently is not counted, so read every figure as 'at least'.",
  "simulation_json": {
-  "count": 16,
+  "count": 17,
   "keys": [
    "submissions/ChrysFu/jingzhang-ai-talent-living-lab",
    "submissions/Hyp6666/jingzhang-service-life-covenant",
@@ -22,7 +22,8 @@
    "submissions/spacethroughing/embodied-jingzhang-urban-llm-harness",
    "submissions/surenny/jingzhang-full-cost",
    "submissions/wocaonimaworinixi-collab/jingzhang-ai-native-belt",
-   "submissions/zyaoii/jingzhang-dignity-supply-line"
+   "submissions/zyaoii/jingzhang-dignity-supply-line",
+   "submissions/zyaoii/jingzhang-passage-first"
   ]
  },
  "self_correction": {
@@ -50,14 +51,14 @@
   }
  },
  "zigzag": {
-  "named_in_title_or_summary": 42,
-  "mentioned_anywhere": 165,
+  "named_in_title_or_summary": 45,
+  "mentioned_anywhere": 177,
   "census_records_not_matched": 0,
   "method_zh": "命名口径 = census 的 title + summary；提及口径 = 正文全文。"
  },
  "baseline_provisions": {
   "speed_limit": {
-   "count": 81,
+   "count": 83,
    "keys": [
     "submissions/147228/jingzhang-human-city-os",
     "submissions/ABUQWQ/jingzhang-ai-coexistence-loop",
@@ -75,6 +76,7 @@
     "submissions/Juwan-Hwang/jingzhang-diagram",
     "submissions/LangQi99/jingzhang-commonline",
     "submissions/Lixiaoyiao/jingzhang-slow-variables",
+    "submissions/M-zyx-01/ai-symbiotic-belt",
     "submissions/Margin-del/jingzhang-zhimai-belt",
     "submissions/NannaOlympicBroadcast/ai-native-embodied-city-testbed",
     "submissions/Pashisfisuta/jingzhang-new-track",
@@ -97,12 +99,11 @@
     "submissions/gr-87/jingzhang-ai-new-track",
     "submissions/gysycg/renzihao-ai-growth-belt",
     "submissions/hannahlovegood/ren-line",
-    "submissions/huangdihd/agent-native-urbanism",
-    "submissions/ikashana/zero-one-jingzhang"
+    "submissions/hongshuxifan321/jingzhang-compute-belt"
    ]
   },
   "remote_and_physical_estop": {
-   "count": 149,
+   "count": 153,
    "keys": [
     "submissions/007xf/jingzhang-on-duty",
     "submissions/147228/jingzhang-open-pulse",
@@ -147,7 +148,7 @@
    ]
   },
   "on_site_safety_officer": {
-   "count": 289,
+   "count": 299,
    "keys": [
     "submissions/007xf/jingzhang-on-duty",
     "submissions/147228/ai-era-human-city",
@@ -184,15 +185,15 @@
     "submissions/Edmounds/jingzhang-night-shift",
     "submissions/Empress7211/open-jingzhang",
     "submissions/FA555/jingzhang-chrono-commons",
+    "submissions/FUSU123fusu/century-rail-ai-origin",
     "submissions/FengYing1314/handover-jingzhang",
     "submissions/Fisfzy/jingzhang-ai-track",
     "submissions/FoxBai/jingzhang-public-baseline",
-    "submissions/GES233/jingzhang-spine",
-    "submissions/GHOST-AKU/open-yard-civic-ai-belt"
+    "submissions/GES233/jingzhang-spine"
    ]
   },
   "event_log": {
-   "count": 56,
+   "count": 58,
    "keys": [
     "submissions/147228/ai-era-human-city",
     "submissions/147228/enterprise-resident-flow-commons",
@@ -208,6 +209,7 @@
     "submissions/Hyp6666/jingzhang-service-life-covenant",
     "submissions/LiuXiu233/switchback-belt-jingzhang",
     "submissions/Lixiaoyiao/jingzhang-slow-variables",
+    "submissions/M-zyx-01/ai-symbiotic-belt",
     "submissions/Niko77066/jingzhang-ai-commons",
     "submissions/OceanHAN/ai-innovation-belt",
     "submissions/Poetryincense/jingzhang-open-line",
@@ -221,6 +223,7 @@
     "submissions/YuanYii/jingzhang-ai-nexus",
     "submissions/aibonacci/jingzhang-open-source-city",
     "submissions/antelope1992-cmyk/jingzhang-ai-origin-community",
+    "submissions/cyny666/open-source-jingzhang",
     "submissions/ferretgeek/jingzhang-sonic-commons",
     "submissions/gehryliuRMuniversity/jingzhang-proving-line",
     "submissions/guyhuang/jz-common-ports",
@@ -231,13 +234,11 @@
     "submissions/jiangmuran/jingzhang-leveling-line",
     "submissions/jingxun998/jingzhang-proof-city",
     "submissions/jitrocky/trusted-living-line",
-    "submissions/jollyworm-coder/jingzhang-commons",
-    "submissions/knqiufan/listening-line-jingzhang",
-    "submissions/kylin985ti/jingzhang-bluegreen-link"
+    "submissions/jollyworm-coder/jingzhang-commons"
    ]
   },
   "non_ai_equivalent_path": {
-   "count": 300,
+   "count": 311,
    "keys": [
     "submissions/007xf/everyday-jingzhang",
     "submissions/007xf/jingzhang-on-duty",
@@ -269,6 +270,7 @@
     "submissions/DuanYuFi/jingzhang-room-for-error",
     "submissions/Dytchem/heritage-ai-loop",
     "submissions/Edmounds/jingzhang-night-shift",
+    "submissions/EileenClara/jingzhang-express",
     "submissions/Empress7211/open-jingzhang",
     "submissions/FengYing1314/handover-jingzhang",
     "submissions/Fisfzy/jingzhang-ai-track",
@@ -277,12 +279,11 @@
     "submissions/GalaxyNew/jingzhang-ai-genesis",
     "submissions/Gante393/jingzhang-intelligence-loop",
     "submissions/Garylauchina/jingzhang-protocol",
-    "submissions/GiaSip/the-tacit-belt",
-    "submissions/Grady10086/railweave-open-city"
+    "submissions/GiaSip/the-tacit-belt"
    ]
   },
   "scenario_level_suspension": {
-   "count": 407,
+   "count": 418,
    "keys": [
     "submissions/007xf/jingzhang-on-duty",
     "submissions/0x-focus/jingzhang-ai-link-belt",
@@ -317,13 +318,13 @@
     "submissions/Bortor/jingzhang-ai-ribbon",
     "submissions/CHINAplayerstl/open-source-pilgrimage",
     "submissions/CHneger/jingzhang-commons-loop",
+    "submissions/CS-Faith/jingzhang-corridor-zero",
     "submissions/CaoChen13/jingzhang-probe",
     "submissions/Cashmeran/jingzhang-co-walk",
     "submissions/CatNebulaaaa/grow-with-jingzhang",
     "submissions/CharlesXmf/jingzhang-synapse-corridor",
     "submissions/Chidoudou/jingzhang-ai-main-street",
-    "submissions/ChrysFu/jingzhang-ai-talent-living-lab",
-    "submissions/Clay-HHK/agent-habitat-belt"
+    "submissions/ChrysFu/jingzhang-ai-talent-living-lab"
    ]
   }
  },

@@ -174,20 +174,20 @@ footer { margin-top: 60px; border-top: 1px solid var(--rule); padding-top: 16px;
 按仓库规则不阻断内容评分；本包已按要求标注 <code>official_boundary=false</code> 与 <code>provisional_constraint</code>。</p>
 
 <h3>第一幕：对本次征集自身的实测</h3>
-<p class="note">截至 2026-08-12，本征集已合入 678 份方案（枚举 git tree），抓取 678/678 成功、0 失败。语料每日增长，引用前须重跑普查脚本。</p>
+<p class="note">截至 2026-08-12，本征集已合入 702 份方案（枚举 git tree），抓取 702/702 成功、0 失败。语料每日增长，引用前须重跑普查脚本。</p>
 <div class="bar">
-  <span style="width:80.97%;background:#0A72A8"></span>
-  <span style="width:19.03%;background:#C0392B"></span>
+  <span style="width:81.34%;background:#0A72A8"></span>
+  <span style="width:18.66%;background:#C0392B"></span>
   <span style="width:0.00%;background:#906519"></span>
 </div>
 <div class="legend">
-  <span><i style="background:#0A72A8"></i>已填写 549（但用了 196 种写法）</span>
-  <span><i style="background:#C0392B"></i>留在脚手架占位符 129</span>
+  <span><i style="background:#0A72A8"></i>已填写 571（但用了 207 种写法）</span>
+  <span><i style="background:#C0392B"></i>留在脚手架占位符 131</span>
   <span><i style="background:#906519"></i>空 0</span>
 </div>
-<p>权威源为 GitHub git tree，覆盖 <b>678</b> 份；同期展示索引仅列 507 份，滞后 <b>171</b> 份。
-机器可读披露字段为空者 <b>129（19.0%）</b>；而已填写的 549 份用了
-<b class="f1">196 种字符串</b>，归并后只落进 <b>9 个桶</b>——单是 GPT/Codex 一族就有 75 种写法，覆盖 305 份。
+<p>权威源为 GitHub git tree，覆盖 <b>702</b> 份；同期展示索引仅列 507 份，滞后 <b>195</b> 份。
+机器可读披露字段为空者 <b>131（18.7%）</b>；而已填写的 571 份用了
+<b class="f1">207 种字符串</b>，归并后只落进 <b>9 个桶</b>——单是 GPT/Codex 一族就有 78 种写法，覆盖 314 份。
 charter.6 要求披露生成方法、charter.5 要求结构化可机读，而四项 gate 均不检查该字段。<b>无人能从中聚合出「本次征集由哪些模型生成」——这条治理回路目前不闭合。</b></p>
 <p class="note">必须说准：<code>model</code> 字段留在占位符<b>不等于</b>作者隐瞒模型——相当多作者在 <code>authorName</code> 或正文里写明了。
 本方案的结论严格限于「机器可读的披露字段为空，且闸门不检查它」。这是可修复的工程缺陷，不是道德指控。
@@ -202,7 +202,7 @@ charter.6 要求披露生成方法、charter.5 要求结构化可机读，而四
 
 <h2>假设<span class="en">ASSUMPTIONS</span></h2>
 <table><tr><th>项</th><th>内容</th></tr>
-<tr><td><code>A-BOUNDARY-001</code></td><td>三层范围与三处重点区的精确官方 polygon 截至 2026-08-08 未公开发布；本包使用 brief/site-package/geometry/provisional_boundaries.geojson 的临时替代边界。</td></tr><tr><td><code>A-CONTROLS-001</code></td><td>容积率、建筑高度、建筑密度、退线、道路红线、权属、市政管线与工程约束须以官方控规条件与专项论证为准。</td></tr><tr><td><code>A-HERITAGE-001</code></td><td>清华园车站旧址等文物保护范围、建设控制地带、蓝线与绿线的官方 GIS 图层仍属数据缺口。</td></tr><tr><td><code>A-CLOSURE-001</code></td><td>闭合差 f、限差 F 达标率、无AI等价路径覆盖率与居民发起复测次数目前均无基线数据。</td></tr><tr><td><code>A-CLOSURE-002</code></td><td>若复测主体同质化，闭合差会系统性偏小而失去意义。</td></tr><tr><td><code>A-CORPUS-001</code></td><td>语料审计基于最近一次普查（2026-08-12）的 678 份已合入方案，权威源为 GitHub git tree；母题识别使用中文关键词正则，存在同义表述漏计；agent.json 的 model 字段留占位符不等于作者隐瞒模型。</td></tr><tr><td><code>A-SELF-COUNT-001</code></td><td>本包的计数类指标（场景卡、画像、地标、案例、更新项目、分期、用地类别、勘误条目、权利台账条目、随包校验脚本等）由构建从随包产物重算，量的是**本包交付了什么**，不是场地或全场的任何事实。</td></tr><tr><td><code>A-OSM-001</code></td><td>OpenStreetMap 为众包数据。公园多边形可能只覆盖已建成并被测绘的一段；干道位置为 OSM 实测而非官方道路中心线；某处在 OSM 上没有过街设施，不等于现场没有。</td></tr>
+<tr><td><code>A-BOUNDARY-001</code></td><td>三层范围与三处重点区的精确官方 polygon 截至 2026-08-08 未公开发布；本包使用 brief/site-package/geometry/provisional_boundaries.geojson 的临时替代边界。</td></tr><tr><td><code>A-CONTROLS-001</code></td><td>容积率、建筑高度、建筑密度、退线、道路红线、权属、市政管线与工程约束须以官方控规条件与专项论证为准。</td></tr><tr><td><code>A-HERITAGE-001</code></td><td>清华园车站旧址等文物保护范围、建设控制地带、蓝线与绿线的官方 GIS 图层仍属数据缺口。</td></tr><tr><td><code>A-CLOSURE-001</code></td><td>闭合差 f、限差 F 达标率、无AI等价路径覆盖率与居民发起复测次数目前均无基线数据。</td></tr><tr><td><code>A-CLOSURE-002</code></td><td>若复测主体同质化，闭合差会系统性偏小而失去意义。</td></tr><tr><td><code>A-CORPUS-001</code></td><td>语料审计基于最近一次普查（2026-08-12）的 702 份已合入方案，权威源为 GitHub git tree；母题识别使用中文关键词正则，存在同义表述漏计；agent.json 的 model 字段留占位符不等于作者隐瞒模型。</td></tr><tr><td><code>A-SELF-COUNT-001</code></td><td>本包的计数类指标（场景卡、画像、地标、案例、更新项目、分期、用地类别、勘误条目、权利台账条目、随包校验脚本等）由构建从随包产物重算，量的是**本包交付了什么**，不是场地或全场的任何事实。</td></tr><tr><td><code>A-OSM-001</code></td><td>OpenStreetMap 为众包数据。公园多边形可能只覆盖已建成并被测绘的一段；干道位置为 OSM 实测而非官方道路中心线；某处在 OSM 上没有过街设施，不等于现场没有。</td></tr>
 </table>
 <p class="note">风险已声明：闭合差机制若复核主体同质化，f 会系统性偏小而失去意义。缓解措施是强制复核主体多元
 （专业机构、运营方、居民代表、国际访客四类缺一不可），且居民代表拥有独立发起权。此风险须在首个复测周期后重新评估。</p>
