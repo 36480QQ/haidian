@@ -36,6 +36,24 @@
       "status": "recalculated_from_geometry",
       "statement": "全部已知指标由提交包 geometry 在 EPSG:4548 下复算，与 metrics.json 一致。",
       "impact": "provisional 边界下的数值仅作概念参考，官方数据补齐后统一更新。"
+    },
+    {
+      "id": "A-PRECISION-001",
+      "status": "provisional_pending_recalculation",
+      "statement": "所有由 provisional 边界派生的面积、比例与长度指标在 metrics.json 中标注 precision=provisional_pending_recalculation，展示值合理舍入。",
+      "impact": "不得作为精确面积、审批或法定控制依据；官方红线发布后整体复算。"
+    },
+    {
+      "id": "A-OPERATIONS-001",
+      "status": "concept_proposal",
+      "statement": "年度活动日历、治理架构、开发者社区规则、招引转化漏斗与 KPI 均为概念建议与方向性目标。",
+      "impact": "不构成政府已确定安排；KPI 需运营验证后校准。"
+    },
+    {
+      "id": "A-INCLUSION-001",
+      "status": "concept_proposal",
+      "statement": "九类用户画像与包容性机制（无障碍连续路径、替代服务、公众参与、投诉申诉、算法纠错）为设计输入，需以现状调研与公众参与结果修正。",
+      "impact": "不采集个人隐私画像；详细设计阶段需纳入弱势群体与非数字用户验证。"
     }
   ]
 }

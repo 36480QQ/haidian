@@ -52,6 +52,20 @@
       "usage": "三处重点区 provisional 多边形来源；仅供设计讨论，不得作 official polygon 或精确面积依据。",
       "usable_for_formal": "provisional_only",
       "limitation": "三区精确四至与面积以官方正式文件为准。"
+    },
+    {
+      "id": "PUBLIC-ECOSYSTEM-CASES",
+      "source_type": "background_only",
+      "usage": "全球 AI 创新生态案例（硅谷、剑桥、特拉维夫、深圳南山、伦敦 King's Cross、首尔 DMC、杭州未来科技城）为公开资料综述，用于机制转译；具体数据与引用需在深化时逐项补充来源与授权。",
+      "usable_for_formal": "background_only",
+      "limitation": "不作为正式统计或政策依据。"
+    },
+    {
+      "id": "RIGHTS-REGISTRY",
+      "path": "report/copyright_statement.md",
+      "source_type": "user_provided_cleared",
+      "usage": "逐资产权利登记：全部图表/Logo/导视为 AI 智能体程序化原创绘制；字体使用系统字体；无第三方图片、地图、商标或代码依赖。",
+      "usable_for_formal": "yes"
     }
   ]
 }

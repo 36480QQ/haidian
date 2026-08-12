@@ -16,11 +16,12 @@
       "confidence": "medium",
       "assumptions": [
         "边界为provisional粗略边界，官方红线发布后需复算。"
-      ]
+      ],
+      "precision": "provisional_pending_recalculation"
     },
     "land_use_area_research_0802": {
       "status": "known",
-      "value": 677277.422,
+      "value": 1131265.535,
       "unit": "sqm",
       "source_files": [
         "geometry/land_use.geojson"
@@ -29,55 +30,60 @@
       "confidence": "medium",
       "assumptions": [
         "用地分区为概念性划分，非法定控规。"
-      ]
+      ],
+      "precision": "provisional_pending_recalculation"
     },
     "land_use_area_commercial_05": {
       "status": "known",
-      "value": 1503186.462,
+      "value": 2707644.129,
       "unit": "sqm",
       "source_files": [
         "geometry/land_use.geojson"
       ],
       "formula": "sum(polygon_area(land_use where land_use_code='05'))",
       "confidence": "medium",
-      "assumptions": []
+      "assumptions": [],
+      "precision": "provisional_pending_recalculation"
     },
     "land_use_area_residential_07": {
       "status": "known",
-      "value": 931824.768,
+      "value": 1057292.51,
       "unit": "sqm",
       "source_files": [
         "geometry/land_use.geojson"
       ],
       "formula": "sum(polygon_area(land_use where land_use_code in ('0701','0702')))",
       "confidence": "medium",
-      "assumptions": []
+      "assumptions": [],
+      "precision": "provisional_pending_recalculation"
     },
     "land_use_area_green_14": {
       "status": "known",
-      "value": 5810511.519,
+      "value": 3602945.419,
       "unit": "sqm",
       "source_files": [
         "geometry/land_use.geojson"
       ],
       "formula": "sum(polygon_area(land_use where land_use_code in ('1401','1403')))",
       "confidence": "medium",
-      "assumptions": []
+      "assumptions": [],
+      "precision": "provisional_pending_recalculation"
     },
     "green_space_area_sqm": {
       "status": "known",
-      "value": 5239542.272,
+      "value": 3514739.383,
       "unit": "sqm",
       "source_files": [
         "geometry/green_space.geojson"
       ],
       "formula": "sum(polygon_area(green_space))",
       "confidence": "medium",
-      "assumptions": []
+      "assumptions": [],
+      "precision": "provisional_pending_recalculation"
     },
     "green_ratio": {
       "status": "known",
-      "value": 0.459092,
+      "value": 0.307964,
       "unit": "ratio",
       "source_files": [
         "geometry/green_space.geojson",
@@ -87,7 +93,8 @@
       "confidence": "medium",
       "assumptions": [
         "绿地率以概念性绿地分区计算，非法定绿地率。"
-      ]
+      ],
+      "precision": "provisional_pending_recalculation"
     },
     "public_space_area_sqm": {
       "status": "known",
@@ -98,7 +105,8 @@
       ],
       "formula": "sum(polygon_area(public_space))",
       "confidence": "medium",
-      "assumptions": []
+      "assumptions": [],
+      "precision": "provisional_pending_recalculation"
     },
     "public_space_ratio": {
       "status": "known",
@@ -110,11 +118,12 @@
       ],
       "formula": "public_space_area_sqm / site_area_sqm",
       "confidence": "medium",
-      "assumptions": []
+      "assumptions": [],
+      "precision": "provisional_pending_recalculation"
     },
     "building_footprint_area_sqm": {
       "status": "known",
-      "value": 3235087.179,
+      "value": 2376206.541,
       "unit": "sqm",
       "source_files": [
         "geometry/buildings.geojson"
@@ -123,7 +132,8 @@
       "confidence": "medium",
       "assumptions": [
         "建筑基底为概念性布置，需现状调查与控规确认。"
-      ]
+      ],
+      "precision": "provisional_pending_recalculation"
     },
     "building_density": {
       "status": "unknown",
@@ -163,7 +173,7 @@
     },
     "road_area_sqm": {
       "status": "known",
-      "value": 4404951.749,
+      "value": 1360676.823,
       "unit": "sqm",
       "source_files": [
         "geometry/roads.geojson"
@@ -172,11 +182,12 @@
       "confidence": "medium",
       "assumptions": [
         "道路面积按概念性红线宽度估算，非官方道路红线。"
-      ]
+      ],
+      "precision": "provisional_pending_recalculation"
     },
     "road_ratio": {
       "status": "known",
-      "value": 0.385965,
+      "value": 0.119223,
       "unit": "ratio",
       "source_files": [
         "geometry/roads.geojson",
@@ -184,7 +195,8 @@
       ],
       "formula": "road_area_sqm / site_area_sqm",
       "confidence": "medium",
-      "assumptions": []
+      "assumptions": [],
+      "precision": "provisional_pending_recalculation"
     },
     "phasing_area_sqm": {
       "status": "known",
@@ -197,7 +209,8 @@
       "confidence": "medium",
       "assumptions": [
         "分期范围为概念性建议，非政府确定的开发时序。"
-      ]
+      ],
+      "precision": "provisional_pending_recalculation"
     },
     "key_area_count": {
       "status": "known",
@@ -221,7 +234,8 @@
       "confidence": "medium",
       "assumptions": [
         "临时粗略重点区面积，官方边界发布后复算。"
-      ]
+      ],
+      "precision": "provisional_pending_recalculation"
     },
     "beijing_ai_origin_area_sqm": {
       "status": "known",
@@ -234,7 +248,8 @@
       "confidence": "medium",
       "assumptions": [
         "临时粗略重点区面积，官方边界发布后复算。"
-      ]
+      ],
+      "precision": "provisional_pending_recalculation"
     },
     "dazhongsi_area_sqm": {
       "status": "known",
@@ -247,11 +262,12 @@
       "confidence": "medium",
       "assumptions": [
         "临时粗略重点区面积，官方边界发布后复算。"
-      ]
+      ],
+      "precision": "provisional_pending_recalculation"
     },
     "scenario_node_count": {
       "status": "known",
-      "value": 10,
+      "value": 13,
       "unit": "count",
       "source_files": [
         "assets/figures/site-overview.png"
@@ -260,6 +276,33 @@
       "confidence": "medium",
       "assumptions": [
         "场景节点为概念性布局，随方案深化调整。"
+      ]
+    },
+    "corridor_length_m": {
+      "status": "known",
+      "value": 9500.6,
+      "unit": "m",
+      "source_files": [
+        "geometry/roads.geojson"
+      ],
+      "formula": "length(ren-line mainline centerline in EPSG:4548)",
+      "confidence": "medium",
+      "assumptions": [
+        "人字线主线为概念性走线，非官方铁路线位。"
+      ],
+      "precision": "provisional_pending_recalculation"
+    },
+    "block_section_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": [
+        "assets/figures/site-overview.png"
+      ],
+      "formula": "count(design block sections along mainline)",
+      "confidence": "medium",
+      "assumptions": [
+        "闭塞区间数量为概念性组织，随深化调整。"
       ]
     }
   }
