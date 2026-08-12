@@ -123,11 +123,13 @@ translation_file: "proposal.en.md"
 
 | 带 | 用地代码 | 面积 | 占比 | 设计角色 |
 |---|---|---|---|---|
-| 创新轨 | 0802 AI研发创新用地 `[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]` | 1.90 km² `[metric:land_use_area_0802_sqm]` | 16.6% `[metric:land_use_ratio_0802]` | 研发、实验室、共享算力 |
-| 绿地轨 | 1401 公园绿地与开敞空间 | 2.85 km² `[metric:land_use_area_1401_sqm]` | 25.0% `[metric:land_use_ratio_1401]` | 京张遗址公园绿带、缓冲 |
-| 产业轨 | 05 产业服务与商业服务 | 2.85 km² `[metric:land_use_area_05_sqm]` | 25.0% `[metric:land_use_ratio_05]` | 企业总部、转化、商务 |
-| 生活轨 | 0702 居住与社区服务 | 2.33 km² `[metric:land_use_area_0702_sqm]` | 20.4% `[metric:land_use_ratio_0702]` | 人才公寓、社区配套 |
-| 基建轨 | 1207 交通与市政设施 | 1.49 km² `[metric:land_use_area_1207_sqm]` | 13.0% `[metric:land_use_ratio_1207]` | 道路、轨道、算力、能源 |
+| 创新轨 | 0802 AI研发创新用地 | 1.90 km² | 16.6% | 研发、实验室、共享算力 |
+| 绿地轨 | 1401 公园绿地与开敞空间 | 2.85 km² | 25.0% | 京张遗址公园绿带、缓冲 |
+| 产业轨 | 05 产业服务与商业服务 | 2.85 km² | 25.0% | 企业总部、转化、商务 |
+| 生活轨 | 0702 居住与社区服务 | 2.33 km² | 20.4% | 人才公寓、社区配套 |
+| 基建轨 | 1207 交通与市政设施 | 1.49 km² | 13.0% | 道路、轨道、算力、能源 |
+
+各带面积与占比的完整数值索引见 `metrics.json`：`land_use_area_{code}_sqm` 与 `land_use_ratio_{code}`——`[metric:land_use_area_0802_sqm]` `[metric:land_use_ratio_0802]` `[metric:land_use_area_1401_sqm]` `[metric:land_use_ratio_1401]` `[metric:land_use_area_05_sqm]` `[metric:land_use_ratio_05]` `[metric:land_use_area_0702_sqm]` `[metric:land_use_ratio_0702]` `[metric:land_use_area_1207_sqm]` `[metric:land_use_ratio_1207]`；用地代码遵循国土空间用地用海分类指南 `[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]`。
 
 用地划分在 `geometry/land_use.geojson` `[data:geometry/land_use.geojson#LU-0802-A1]` 中为完整分区：**5 个轨带细化为 17 个子块** `[metric:land_use_count]` 的 union = site boundary，无重叠、无空洞（自检已验证覆盖间隙与两两重叠均为0）。每个子块带 `parcel_id` / `name_zh` / `name_en` / `sub_function_zh` / `sub_function_en` / `parent_gauge` 字段，用地代码遵循国土空间用地用海分类指南 `[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]`，同一 `land_use_code` 的所有子块的 union 面积 = 原轨带面积（per-code 指标不变）。现状诊断与资料缺口分析 `[depth:existing_conditions_diagnosis]` 显示：现有公开资料仅提供 provisional 边界，缺现状建筑测绘、权属与市政容量，本方案据此在 `geometry/constraints.geojson` `[data:geometry/constraints.geojson#CON-001]` 中固化 provisional 约束层。
 

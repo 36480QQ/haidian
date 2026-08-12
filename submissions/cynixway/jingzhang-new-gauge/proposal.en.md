@@ -123,11 +123,13 @@ Because the current boundary is provisional, the above derivation is a direction
 
 | Gauge | Land-use code | Area | Share | Design role |
 |---|---|---|---|---|
-| Innovation Gauge | 0802 AI R&D innovation land `[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]` | 1.90 km² `[metric:land_use_area_0802_sqm]` | 16.6% `[metric:land_use_ratio_0802]` | R&D, labs, shared compute |
-| Green Gauge | 1401 Parks and open space | 2.85 km² `[metric:land_use_area_1401_sqm]` | 25.0% `[metric:land_use_ratio_1401]` | Jing-Zhang heritage-park green belt, buffer |
-| Industry Gauge | 05 Industrial and commercial services | 2.85 km² `[metric:land_use_area_05_sqm]` | 25.0% `[metric:land_use_ratio_05]` | Corporate HQs, translation, business |
-| Life Gauge | 0702 Residential and community services | 2.33 km² `[metric:land_use_area_0702_sqm]` | 20.4% `[metric:land_use_ratio_0702]` | Talent housing, community facilities |
-| Infrastructure Gauge | 1207 Transport and municipal facilities | 1.49 km² `[metric:land_use_area_1207_sqm]` | 13.0% `[metric:land_use_ratio_1207]` | Roads, rail, compute, energy |
+| Innovation Gauge | 0802 AI R&D innovation land | 1.90 km² | 16.6% | R&D, labs, shared compute |
+| Green Gauge | 1401 Parks and open space | 2.85 km² | 25.0% | Jing-Zhang heritage-park green belt, buffer |
+| Industry Gauge | 05 Industrial and commercial services | 2.85 km² | 25.0% | Corporate HQs, translation, business |
+| Life Gauge | 0702 Residential and community services | 2.33 km² | 20.4% | Talent housing, community facilities |
+| Infrastructure Gauge | 1207 Transport and municipal facilities | 1.49 km² | 13.0% | Roads, rail, compute, energy |
+
+The full numeric index of per-belt areas and shares lives in `metrics.json`: `land_use_area_{code}_sqm` and `land_use_ratio_{code}` — `[metric:land_use_area_0802_sqm]` `[metric:land_use_ratio_0802]` `[metric:land_use_area_1401_sqm]` `[metric:land_use_ratio_1401]` `[metric:land_use_area_05_sqm]` `[metric:land_use_ratio_05]` `[metric:land_use_area_0702_sqm]` `[metric:land_use_ratio_0702]` `[metric:land_use_area_1207_sqm]` `[metric:land_use_ratio_1207]`; land-use codes follow the Territorial-Space Land-Use and Sea-Use Classification Guide `[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]`.
 
 The land-use division is encoded in full in `geometry/land_use.geojson` `[data:geometry/land_use.geojson#LU-0802-A1]` — **5 gauge belts refined into 17 named sub-blocks** `[metric:land_use_count]` whose union equals the site boundary, with no overlap and no holes (self-check has verified that both the overlap and gap between any pair are 0). Each sub-block carries `parcel_id` / `name_zh` / `name_en` / `sub_function_zh` / `sub_function_en` / `parent_gauge` fields; land-use codes follow the Territorial-Space Land-Use and Sea-Use Classification Guide `[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]`, and the union of all sub-blocks sharing one `land_use_code` equals the original belt area (per-code metrics unchanged). The existing-conditions diagnosis and data-gap analysis `[depth:existing_conditions_diagnosis]` show that public materials supply only the provisional boundary — existing building survey, property rights and municipal capacity are missing — so this proposal encodes the provisional constraint layer in `geometry/constraints.geojson` `[data:geometry/constraints.geojson#CON-001]`.
 
