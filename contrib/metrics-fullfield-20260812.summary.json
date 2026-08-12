@@ -1,58 +1,62 @@
 {
   "snapshot": {
     "repository": "open-city-ai/haidian",
-    "sha": "6843ad6709e05b6521f25185d476a967fd928305",
+    "sha": "0f13375fe1a9c8789cf991b336dd5e14b104fcdb",
     "sha_verified_against_head": true,
-    "date": "20260811",
-    "n_packages_total_dirs": 577,
-    "n_packages_with_metrics": 577,
-    "n_packages_with_manifest": 577,
-    "n_packages_with_proposal": 577,
-    "n_metric_entries": 12972,
+    "date": "20260812",
+    "n_packages_total_dirs": 671,
+    "n_packages_with_metrics": 671,
+    "n_packages_with_manifest": 671,
+    "n_packages_with_proposal": 671,
+    "n_metric_entries": 15006,
     "n_parse_failures": 0
   },
   "root_structure": {
     "container_shapes": {
-      "metrics,schema_version,units": 577
+      "metrics,schema_version,units": 671
     },
     "schema_versions": {
-      "0.1.0": 573,
-      "0.2.0": 3,
-      "0.1.1": 1
+      "0.1.0": 665,
+      "0.2.0": 4,
+      "0.1.1": 2
     }
   },
   "field_coverage": {
     "confidence": {
-      "missing_count": 150,
-      "missing_pct": 1.16
+      "missing_count": 158,
+      "missing_pct": 1.05
     },
     "formula": {
-      "missing_count": 98,
-      "missing_pct": 0.76
+      "missing_count": 105,
+      "missing_pct": 0.7
     },
     "source_files": {
-      "missing_count": 96,
-      "missing_pct": 0.74
+      "missing_count": 98,
+      "missing_pct": 0.65
     },
     "unit": {
       "missing_count": 20,
-      "missing_pct": 0.15
+      "missing_pct": 0.13
     },
     "value": {
       "missing_count": 5,
-      "missing_pct": 0.04
+      "missing_pct": 0.03
     }
   },
   "entry_validity": {
-    "valid_entries": 12799,
-    "valid_pct": 98.67,
+    "valid_entries": 14820,
+    "valid_pct": 98.76,
     "problem_breakdown": {
       "status='known'": {
-        "count": 130,
+        "count": 138,
         "explanation": "entry has a declared-valid status but is missing one or more required fields (status/value/unit/source_files/formula/confidence)"
       },
       "status='unknown'": {
-        "count": 43,
+        "count": 45,
+        "explanation": "entry has a declared-valid status but is missing one or more required fields (status/value/unit/source_files/formula/confidence)"
+      },
+      "status='not_applicable'": {
+        "count": 3,
         "explanation": "entry has a declared-valid status but is missing one or more required fields (status/value/unit/source_files/formula/confidence)"
       }
     }
@@ -60,55 +64,56 @@
   "distributions": {
     "status": {
       "known": {
-        "count": 10983,
-        "pct": 84.67
+        "count": 12701,
+        "pct": 84.64
       },
       "unknown": {
-        "count": 1976,
+        "count": 2286,
         "pct": 15.23
       },
       "not_applicable": {
-        "count": 13,
-        "pct": 0.1
+        "count": 19,
+        "pct": 0.13
       }
     },
     "unit": {
       "declared_enum": {
-        "sqm": 5312,
-        "count": 3419,
-        "ratio": 2923,
-        "m": 871,
-        "index": 103,
-        "none": 94
+        "sqm": 6047,
+        "count": 4020,
+        "ratio": 3377,
+        "m": 989,
+        "none": 115,
+        "index": 115
       },
       "other_values": {
-        "total_count": 250,
-        "n_distinct_values": 90,
+        "total_count": 343,
+        "n_distinct_values": 112,
         "top": {
           "null": 45,
-          "km": 16,
-          "persons": 14,
+          "km": 21,
+          "m²": 21,
+          "persons": 16,
+          "ha": 14,
           "far": 10,
           "n/a": 10,
-          "ha": 8,
-          "normalized_score_0_100": 6,
-          "percent": 5
+          "个": 9
         }
       }
     },
     "confidence": {
       "declared_enum": {
-        "medium": 5981,
-        "high": 3173,
-        "unknown": 1884,
-        "low": 1770
+        "medium": 6867,
+        "high": 3747,
+        "unknown": 2172,
+        "low": 2032
       },
       "other_values": {
-        "total_count": 164,
-        "n_distinct_values": 7,
+        "total_count": 188,
+        "n_distinct_values": 8,
         "top": {
-          "null": 150,
-          "n/a": 5,
+          "null": 158,
+          "screening": 11,
+          "n/a": 10,
           "medium_internal_consistency": 4,
           "concept": 2,
           "medium_internal_consistency_low_precision": 1,
@@ -121,217 +126,218 @@
   "packages": {
     "metrics_per_pkg": {
       "min": 6,
-      "median": 21,
-      "max": 86,
-      "mean": 22.48
+      "median": 20,
+      "max": 159,
+      "mean": 22.36
     }
   },
   "coverage": {
     "top_metric_keys": [
       {
-        "site_area_sqm": 577
+        "site_area_sqm": 671
       },
       {
-        "green_ratio": 577
+        "green_ratio": 671
       },
       {
-        "public_space_ratio": 577
+        "public_space_ratio": 671
       },
       {
-        "key_area_count": 564
+        "key_area_count": 657
       },
       {
-        "building_footprint_area_sqm": 562
+        "building_footprint_area_sqm": 655
       },
       {
-        "floor_area_ratio": 540
+        "floor_area_ratio": 630
       },
       {
-        "public_space_area_sqm": 381
+        "public_space_area_sqm": 434
       },
       {
-        "green_space_area_sqm": 376
+        "green_space_area_sqm": 428
       },
       {
-        "persona_count": 202
+        "persona_count": 230
       },
       {
-        "building_density": 199
+        "building_density": 226
       },
       {
-        "building_height_m": 193
+        "building_height_m": 222
       },
       {
-        "total_floor_area_sqm": 158
+        "total_floor_area_sqm": 174
       },
       {
-        "scenario_node_count": 152
+        "scenario_node_count": 173
       },
       {
-        "renewal_project_count": 148
+        "renewal_project_count": 166
       },
       {
-        "scenario_card_count": 131
+        "scenario_card_count": 154
       },
       {
-        "landmark_count": 110
+        "landmark_count": 127
       },
       {
-        "phase_1_area_sqm": 109
+        "phase_count": 122
       },
       {
-        "phase_count": 102
+        "phase_1_area_sqm": 116
       },
       {
-        "phase_2_area_sqm": 100
+        "road_area_sqm": 109
       },
       {
-        "phase_3_area_sqm": 100
+        "phase_2_area_sqm": 107
       }
     ],
     "top_normalized_keys": [
       {
-        "site_area": 583
+        "site_area": 679
       },
       {
-        "public_space": 582
+        "public_space": 679
       },
       {
-        "green": 577
+        "green": 671
       },
       {
-        "key_area": 565
+        "key_area": 658
       },
       {
-        "building_footprint_area": 563
+        "building_footprint_area": 656
       },
       {
-        "floor_area": 541
+        "floor_area": 631
       },
       {
-        "public_space_area": 383
+        "public_space_area": 436
       },
       {
-        "green_space_area": 377
+        "green_space_area": 429
       },
       {
-        "building_density": 210
+        "building_density": 238
       },
       {
-        "persona": 202
+        "persona": 230
       },
       {
-        "building_height": 194
+        "building_height": 223
       },
       {
-        "total_floor_area": 159
+        "total_floor_area": 175
       },
       {
-        "scenario_node": 152
+        "scenario_node": 173
       },
       {
-        "renewal_project": 148
+        "renewal_project": 166
       },
       {
-        "road_area": 145
+        "road_area": 161
       },
       {
-        "scenario_card": 131
+        "scenario_card": 154
       },
       {
-        "landmark": 110
+        "landmark": 127
       },
       {
-        "phase_1_area": 109
+        "phase": 122
       },
       {
-        "phase": 102
+        "phase_1_area": 116
       },
       {
-        "phase_2_area": 100
+        "phase_2_area": 107
       }
     ],
     "concept_buckets": {
       "area": {
-        "count": 6304,
-        "pct": 48.6
+        "count": 7224,
+        "pct": 48.14
       },
       "counts": {
-        "count": 2634,
-        "pct": 20.31
+        "count": 3106,
+        "pct": 20.7
       },
       "intensity": {
-        "count": 2413,
-        "pct": 18.6
+        "count": 2774,
+        "pct": 18.49
       },
       "other": {
-        "count": 799,
-        "pct": 6.16
+        "count": 950,
+        "pct": 6.33
       },
       "mobility": {
-        "count": 678,
-        "pct": 5.23
+        "count": 782,
+        "pct": 5.21
       },
       "green_public": {
-        "count": 144,
-        "pct": 1.11
+        "count": 170,
+        "pct": 1.13
       }
     },
     "top_key_status_cross": {
       "site_area_sqm": {
-        "known": 577
+        "known": 671
       },
       "green_ratio": {
-        "known": 577
+        "known": 671
       },
       "public_space_ratio": {
-        "known": 577
+        "known": 671
       },
       "key_area_count": {
-        "known": 564
+        "known": 657
       },
       "building_footprint_area_sqm": {
-        "known": 560,
-        "unknown": 2
+        "known": 652,
+        "unknown": 3
       },
       "floor_area_ratio": {
-        "known": 14,
-        "unknown": 526
+        "known": 16,
+        "unknown": 614
       },
       "public_space_area_sqm": {
-        "known": 381
+        "known": 434
       },
       "green_space_area_sqm": {
-        "known": 376
+        "known": 428
       },
       "persona_count": {
-        "known": 202
+        "known": 230
       },
       "building_density": {
-        "known": 104,
-        "unknown": 95
+        "known": 118,
+        "unknown": 108
       },
       "building_height_m": {
-        "unknown": 193
+        "unknown": 222
       },
       "total_floor_area_sqm": {
-        "known": 19,
-        "unknown": 139
+        "known": 21,
+        "unknown": 153
       },
       "scenario_node_count": {
-        "known": 152
+        "known": 173
       },
       "renewal_project_count": {
-        "known": 148
+        "known": 166
       },
       "scenario_card_count": {
-        "known": 131
+        "known": 154
       }
     }
   },
   "outlier_counts_only": {
     "status_not_in_enum": 0,
-    "unit_not_in_enum": 250,
+    "unit_missing": 45,
+    "unit_not_in_enum": 298,
     "ratio_outside_0_1": 0,
     "far_above_12": 0,
     "height_above_300m": 0,
