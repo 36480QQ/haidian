@@ -60,5 +60,11 @@
   - **修复方案 (a)**：把 `SC-09 (AI 生活服务示范街)` 从 `AGENT-MILE-004` 移到 `AGENT-MILE-003`（成府路 → 蓝旗营 生活段，符合"社区与商业交汇处"空间描述）。
   - **修复后状态**：10 scenarios 覆盖 9 distinct AGENT-MILE IDs（001–009 全部绑定至少 1 张卡）。`AGENT-MILE-008` 对应 2 张卡（SC-05、SC-08），其余 8 段各对应 1 张。
   - **proposal.md** / **proposal.en.md** §"命名层级"扩展：在"智脉一里"小节后追加 9 行 bullet 显式列出"9 段 × 600 米 → 10 张场景卡的对应关系"，让 reviewer 不需要 grep `compliance_matrix.json` 也能直接验证数字对齐。
-  - **PR 上下文**：本 fix 提交在 PR #1904 已合并（merge commit `f186eba6`）之后，作为 follow-up PR 推到 main（PR 分支：`fix/centennial-corridor-v015`），遵循 taskbook `continuous_participation.materials_update_notice` 的迭代要求与 zymk8353 #1920、siddhartha-yz #1915 等先例。
+  - **PR 上下文**：本 fix 提交在 PR #1904 已合并（merge commit `f186eba6`）之后，作为 follow-up PR 推到 main（PR #1940，HEAD `6e4b9dae`，merged by CocoSgt 23:03:44Z，merge commit `6eb03484`，score 61/100），遵循 taskbook `continuous_participation.materials_update_notice` 的迭代要求与 zymk8353 #1920、siddhartha-yz #1915 等先例。
   - 重新跑 finalize + self_check + preflight + validate_manifest_schema 四关，can_enter_formal_review=true / next_actions=[] / Changed files=41。
+
+## v0.1.6 - 2026-08-12
+
+- 回应 PR #1940 re-review #4911573862（Reviewer: `qwenwork`）的非阻断 nit：
+  - **"其余 9 段"措辞矛盾**：`proposal.md` L74 写"其余 9 段没有重复"，但 9 段已全部被前一句"8 段对应单卡 + AGENT-MILE-008 对应两张"覆盖，"其余 9 段"自相矛盾；`proposal.en.md` L102 英文版正确写为 "The remaining 8 segments do not repeat"。
+  - **修复方案**：把中文版"其余 9 段没有重复"改为"**全部 9 段互不重复**"，与英文版语义对齐（英文版不需要修改）。
