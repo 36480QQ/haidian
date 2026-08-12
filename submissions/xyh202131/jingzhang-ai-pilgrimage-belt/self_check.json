@@ -1,6 +1,6 @@
 {
   "ok": true,
-  "submission_dir": "submissions\\xyh202131\\jingzhang-ai-pilgrimage-belt",
+  "submission_dir": "submissions/xyh202131/jingzhang-ai-pilgrimage-belt",
   "pr_author": "xyh202131",
   "stage": "formal",
   "deterministic_validation": {
@@ -10,6 +10,7 @@
       "ok": true,
       "errors": [],
       "warnings": [
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/manifest.json: published schema legacy advisory: <root>: Additional properties are not allowed ('release_claim', 'rights_claim', 'translation_file' were unexpected); update this manifest before adopting schema 0.2.x",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied"
       ],
       "proposal_files": [
@@ -20,6 +21,18 @@
       ],
       "changed_files": [
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/agent.json",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/century-timeline.en.png",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/century-timeline.en.svg",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/century-timeline.png",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/century-timeline.svg",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/climate-resilience-corridor.en.png",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/climate-resilience-corridor.en.svg",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/climate-resilience-corridor.png",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/climate-resilience-corridor.svg",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/failure-governance-writeback.en.png",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/failure-governance-writeback.en.svg",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/failure-governance-writeback.png",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/failure-governance-writeback.svg",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/implementation-roadmap.en.png",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/implementation-roadmap.png",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/innovation-system.en.png",
@@ -38,10 +51,18 @@
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/metrics-evidence.png",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/mobility-bluegreen.en.png",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/mobility-bluegreen.png",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/non-ai-service-blueprint.en.png",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/non-ai-service-blueprint.en.svg",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/non-ai-service-blueprint.png",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/non-ai-service-blueprint.svg",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/site-overview.en.png",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/site-overview.en.svg",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/site-overview.png",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/site-overview.svg",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/urban-metabolism-ledger.en.png",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/urban-metabolism-ledger.en.svg",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/urban-metabolism-ledger.png",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/urban-metabolism-ledger.svg",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assumptions.json",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/changelog.md",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/compliance_matrix.json",
@@ -70,7 +91,10 @@
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/self_check.json",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/sources.json",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/standard_matrix.json",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/visual/assets/century-time-museum-contract.json",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/visual/assets/climate-resilience-contract.json",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/visual/assets/evidence-freshness-policy.json",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/visual/assets/failure-governance-register.json",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/visual/assets/g0-offline-enterprise-service-baseline.json",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/visual/assets/g1-preregistration-register.json",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/visual/assets/implementation-handoff-matrix.json",
@@ -87,13 +111,14 @@
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/visual/assets/submission-use-rights-matrix.json",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/visual/assets/t02-g0-g1-replay-fixtures.json",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/visual/assets/t02-g0-g1-replay-result.json",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/visual/assets/urban-metabolism-ledger.json",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/visual/index.en.html",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/visual/index.html"
       ],
       "ai_package_stages": {
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt": "formal"
       },
-      "total_bytes": 10543538,
+      "total_bytes": 17069218,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -178,15 +203,15 @@
       "summary": {
         "standard_matrix_items": 6,
         "design_depth_items": 15,
-        "known_metric_refs_required": 75,
+        "known_metric_refs_required": 119,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
           "source": 29,
           "standard": 6,
           "depth": 15,
-          "data": 38,
-          "metric": 58
+          "data": 50,
+          "metric": 80
         }
       }
     },

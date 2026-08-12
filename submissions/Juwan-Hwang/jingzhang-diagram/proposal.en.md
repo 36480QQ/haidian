@@ -118,7 +118,7 @@ To keep "AI + city" from becoming a slogan, theory is made explicit as design co
 
 ### The Switchback Unit — Space Is Protocol
 
-From "a single walkway" to "a spatial operating system": the switchback walkway in prior proposals is the correct spatial judgment; this proposal upgrades it into a unitized system that can be designed, governed, and operated. **The switchback unit = one west-east crossing + one turnback node + one block section.** Four attributes stack on the same unit: the space unit (a section of switchback walkway + crossing blocks on both sides + the turnback-node switch public space); the governance unit (one block section, where at the same moment only one high-impact AI scenario trial is admitted per unit); the narrative unit (a section of kilometer markers, each unit corresponding to an "origin moment"); the operation unit (one token, where scenario authorization, term, responsible person, and exit plan are all publicly checkable) [data:geometry/land_use.geojson#LU-001] [depth:overall_spatial_structure].
+From "a single walkway" to "a spatial operating system": the switchback walkway in prior proposals is the correct spatial judgment; this proposal upgrades it into a unitized system that can be designed, governed, and operated. **The switchback unit = one west-east crossing + one turnback node + one block section.** Four attributes stack on the same unit: the space unit (a section of switchback walkway + crossing blocks on both sides + the turnback-node switch public space); the governance unit (one block section, where at the same moment only one high-impact AI scenario trial is admitted per unit); the narrative unit (a section of kilometer markers, each unit corresponding to an "origin moment"); the operation unit (one token, where scenario authorization, term, responsible person, and exit plan are all publicly checkable) [data:geometry/land_use.geojson#LU-001A] [depth:overall_spatial_structure].
 
 ### Node Typology and Three-Layer Spatio-Temporal Section
 
@@ -134,7 +134,7 @@ Node typology (railway-facility translation): the switch node (turnback point, w
 
 ## Key Areas Detailed Design
 
-The three districts are not three parks but three work sections of one innovation train — defining spatial roles through railway-facility typology [source:OFFICIAL-ANNOUNCEMENT] [data:geometry/key_areas.geojson#PROV-KEY-001] [depth:three_key_area_detailed_design].
+The three districts are not three parks but three work sections of one innovation train — defining spatial roles through railway-facility typology [source:OFFICIAL-ANNOUNCEMENT] [data:geometry/key_areas.geojson#PROV-KEY-001] [depth:three_key_area_detailed_design]. The count and positioning of the three districts are mapped item by item in `compliance_matrix.json` [metric:key_area_count].
 
 ### Zhongzhi AI Independent Innovation Acceleration Area (192.1 ha) — "Test Track": Surface Problems Safely
 
@@ -228,7 +228,7 @@ Retain (rail heritage, university cores, and high-quality existing parks should 
 
 ### Land-Use Layout and Building Scale
 
-Land-use expression adopts checkable land-use classification: nine land-use polygons tile the ODA interior without gaps or overlaps (the three key districts are subdivided into functional bands, while the heritage-park green spine and the two-wing interface remain whole) [data:geometry/land_use.geojson#LU-002A] [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [depth:land_use_layout]. Building height and massing give conceptual suggestions (tall in the north, low in the south; tall around stations; low at park edges), explicitly marked as pending official control plans, with no fabricated FAR/height/density. The building retain/renovate/demolish classification uses the retain_renovate_demolish field — ten renewal-project carriers are individually tagged as retain (the Qinghuayuan Station site), renovate (Chengfu Road old buildings, electronics malls, etc.), or reversible new-build (the governance sandbox cluster) — retaining heritage fabric, retrofit-potential buildings, and demolition-with-assessment, explicitly marked as conceptual suggestions that do not replace statutory judgment [data:geometry/buildings.geojson#BLDG-001].
+Land-use expression adopts checkable land-use classification: nine land-use polygons tile the ODA interior without gaps or overlaps (the three key districts are subdivided into functional bands, while the heritage-park green spine and the two-wing interface remain whole) [data:geometry/land_use.geojson#LU-002A] [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [depth:land_use_layout]. Building height and massing give conceptual suggestions (tall in the north, low in the south; tall around stations; low at park edges), explicitly marked as pending official control plans, with no fabricated FAR/height/density [depth:height_massing_character] [standard:MOHURD-ARCH-DESIGN-DEPTH-2016]. The building retain/renovate/demolish classification uses the retain_renovate_demolish field — ten renewal-project carriers are individually tagged as retain (the Qinghuayuan Station site), renovate (Chengfu Road old buildings, electronics malls, etc.), or reversible new-build (the governance sandbox cluster) — retaining heritage fabric, retrofit-potential buildings, and demolition-with-assessment, explicitly marked as conceptual suggestions that do not replace statutory judgment [data:geometry/buildings.geojson#BLDG-001] [metric:building_footprint_area_sqm].
 
 ## Transport, Rail, Municipal, and Public Services
 
@@ -240,7 +240,7 @@ Functions are organized on the existing rail stations (Line 13, Line 12, the Cha
 
 ### Blue-Green System
 
-Heritage park (line) × Qinghe (blue) × Xiaoyue River (corridor) × turnback-node park cluster (points); surrounding historical green spaces such as the Yuandadu earthen city are stitched by slow travel (concept), with no green-ratio metric conclusion [depth:blue_green_public_space] [data:geometry/green_space.geojson] [data:geometry/public_space.geojson].
+Heritage park (line) × Qinghe (blue) × Xiaoyue River (corridor) × turnback-node park cluster (points); surrounding historical green spaces such as the Yuandadu earthen city are stitched by slow travel (concept), with no green-ratio metric conclusion [depth:blue_green_public_space] [data:geometry/green_space.geojson] [metric:green_ratio]. Public-space elements are detailed in the component-library and scenario-card sections [data:geometry/public_space.geojson] [metric:public_space_ratio].
 
 ### Public-Space Component Library (all open-source drawings)
 
@@ -329,7 +329,7 @@ The AI Urban Performance Index: Innovation Loop Latency / scenario accessibility
 
 ### Spatial Metric Discipline
 
-The formal packaging stage enters `metrics.json` (full fields of status/value/unit/source_files/formula/confidence/assumptions) [metric:site_area_sqm] [depth:metrics_recalculation] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]; area-type metrics based on provisional boundaries are all marked `provisional` and unconditionally recomputed on EPSG:4548 once official data arrives; FAR, height, and density are listed as unknown / pending_control, not masquerading as approved metrics with speculative values. The compliance matrix maps announcement sections 1.3/1.4/1.5 and the mandatory tasks of agent.1-agent.6 item by item in `compliance_matrix.json`.
+The formal packaging stage enters `metrics.json` (full fields of status/value/unit/source_files/formula/confidence/assumptions) [metric:site_area_sqm] [metric:floor_area_ratio] [depth:metrics_recalculation]; development intensity is listed as unknown / pending_control due to the absence of official controls [depth:development_intensity_controls] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]. Area-type metrics based on provisional boundaries are all marked `provisional` and unconditionally recomputed on EPSG:4548 once official data arrives; FAR, height, and density are listed as unknown / pending_control, not masquerading as approved metrics with speculative values. The compliance matrix maps announcement sections 1.3/1.4/1.5 and the mandatory tasks of agent.1-agent.6 item by item in `compliance_matrix.json`.
 
 ![Metrics, evidence, and recompute discipline](assets/figures/metrics-evidence.en.png)
 

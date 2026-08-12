@@ -9,7 +9,9 @@
       "status": "known",
       "value": 11412825.386,
       "unit": "sqm",
-      "source_files": ["geometry/site_boundary.geojson"],
+      "source_files": [
+        "geometry/site_boundary.geojson"
+      ],
       "formula": "polygon_area(submitted_site_boundary)",
       "confidence": "low",
       "assumptions": [
@@ -20,7 +22,9 @@
       "status": "known",
       "value": 310807.184,
       "unit": "sqm",
-      "source_files": ["geometry/buildings.geojson"],
+      "source_files": [
+        "geometry/buildings.geojson"
+      ],
       "formula": "sum(polygon_area(building_footprints))",
       "confidence": "medium",
       "assumptions": [
@@ -31,7 +35,10 @@
       "status": "known",
       "value": 0.123423,
       "unit": "ratio",
-      "source_files": ["geometry/green_space.geojson", "geometry/site_boundary.geojson"],
+      "source_files": [
+        "geometry/green_space.geojson",
+        "geometry/site_boundary.geojson"
+      ],
       "formula": "green_space_area_sqm / site_area_sqm",
       "confidence": "medium",
       "assumptions": [
@@ -42,7 +49,10 @@
       "status": "known",
       "value": 0.073281,
       "unit": "ratio",
-      "source_files": ["geometry/public_space.geojson", "geometry/site_boundary.geojson"],
+      "source_files": [
+        "geometry/public_space.geojson",
+        "geometry/site_boundary.geojson"
+      ],
       "formula": "public_space_area_sqm / site_area_sqm",
       "confidence": "medium",
       "assumptions": [
@@ -53,7 +63,9 @@
       "status": "unknown",
       "value": null,
       "unit": "ratio",
-      "source_files": ["brief/site-package/ranges/planning_limits.json"],
+      "source_files": [
+        "brief/site-package/ranges/planning_limits.json"
+      ],
       "formula": "total_floor_area_sqm / official_site_area_sqm",
       "confidence": "unknown",
       "assumptions": [],
@@ -63,7 +75,9 @@
       "status": "known",
       "value": 3,
       "unit": "count",
-      "source_files": ["geometry/key_areas.geojson"],
+      "source_files": [
+        "geometry/key_areas.geojson"
+      ],
       "formula": "count(key_detailed_design_areas)",
       "confidence": "low",
       "assumptions": [
@@ -74,7 +88,9 @@
       "status": "known",
       "value": 3,
       "unit": "count",
-      "source_files": ["geometry/public_space.geojson"],
+      "source_files": [
+        "geometry/public_space.geojson"
+      ],
       "formula": "count(FR-NODE-*)",
       "confidence": "low",
       "assumptions": [
@@ -85,7 +101,9 @@
       "status": "known",
       "value": 8,
       "unit": "count",
-      "source_files": ["visual/assets/example-desk-receipt.json"],
+      "source_files": [
+        "visual/assets/example-desk-receipt.json"
+      ],
       "formula": "design_rule_min_open_seats_per_active_desk_zone",
       "confidence": "low",
       "assumptions": [
@@ -96,7 +114,9 @@
       "status": "known",
       "value": 3,
       "unit": "count",
-      "source_files": ["geometry/public_space.geojson"],
+      "source_files": [
+        "geometry/public_space.geojson"
+      ],
       "formula": "one_desk_zone_per_forest_rail_node",
       "confidence": "low",
       "assumptions": [
@@ -107,7 +127,9 @@
       "status": "known",
       "value": 3,
       "unit": "count",
-      "source_files": ["geometry/public_space.geojson"],
+      "source_files": [
+        "geometry/public_space.geojson"
+      ],
       "formula": "edge_light_zones_aligned_to_desk_and_soft_paving",
       "confidence": "low",
       "assumptions": [
@@ -118,7 +140,9 @@
       "status": "known",
       "value": 6,
       "unit": "count",
-      "source_files": ["proposal.md"],
+      "source_files": [
+        "proposal.md"
+      ],
       "formula": "concept_unbranded_daily_trial_points_along_corridor",
       "confidence": "low",
       "assumptions": [
@@ -129,7 +153,9 @@
       "status": "known",
       "value": 5,
       "unit": "count",
-      "source_files": ["proposal.md"],
+      "source_files": [
+        "proposal.md"
+      ],
       "formula": "count(TEST-01..TEST-05)",
       "confidence": "medium",
       "assumptions": [
@@ -140,7 +166,9 @@
       "status": "known",
       "value": 7,
       "unit": "count",
-      "source_files": ["visual/assets/operations-matrix.json"],
+      "source_files": [
+        "visual/assets/operations-matrix.json"
+      ],
       "formula": "count(G0..G6)",
       "confidence": "medium",
       "assumptions": [
@@ -151,11 +179,79 @@
       "status": "known",
       "value": 16,
       "unit": "count",
-      "source_files": ["proposal.md"],
+      "source_files": [
+        "proposal.md"
+      ],
       "formula": "count(scenario_cards_in_proposal)",
       "confidence": "medium",
       "assumptions": [
         "Narrative scenario cards; not live services."
+      ]
+    },
+    "announced_coordinated_research_area_sqm": {
+      "status": "known",
+      "value": 43600000,
+      "unit": "sqm",
+      "source_files": [
+        "brief/site-package/ranges/planning_limits.json"
+      ],
+      "formula": "official_announcement_text_area",
+      "confidence": "high",
+      "assumptions": [
+        "Official text area from prequalification announcement; not derived from package polygon."
+      ]
+    },
+    "announced_overall_design_area_sqm": {
+      "status": "known",
+      "value": 11400000,
+      "unit": "sqm",
+      "source_files": [
+        "brief/site-package/ranges/planning_limits.json"
+      ],
+      "formula": "official_announcement_text_area",
+      "confidence": "high",
+      "assumptions": [
+        "Official text area; do not replace with provisional polygon area."
+      ]
+    },
+    "announced_key_detailed_design_area_sqm": {
+      "status": "known",
+      "value": 3684000,
+      "unit": "sqm",
+      "source_files": [
+        "brief/site-package/ranges/planning_limits.json"
+      ],
+      "formula": "official_announcement_text_area",
+      "confidence": "high",
+      "assumptions": [
+        "Sum of three key areas in announcement text."
+      ]
+    },
+    "announced_dazhongsi_area_sqm": {
+      "status": "known",
+      "value": 720000,
+      "unit": "sqm",
+      "source_files": [
+        "brief/site-package/ranges/planning_limits.json"
+      ],
+      "formula": "official_announcement_text_area",
+      "confidence": "high",
+      "assumptions": [
+        "Dazhongsi AI industry cluster official text area 72.0 ha."
+      ]
+    },
+    "provisional_site_area_difference_ratio": {
+      "status": "known",
+      "value": 0.001125,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/site_boundary.geojson",
+        "brief/site-package/ranges/planning_limits.json"
+      ],
+      "formula": "(site_area_sqm - announced_overall_design_area_sqm) / announced_overall_design_area_sqm",
+      "confidence": "low",
+      "assumptions": [
+        "Illustrates mismatch only; not an approval tolerance."
       ]
     }
   }

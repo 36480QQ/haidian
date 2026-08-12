@@ -6,21 +6,23 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "以京张铁路记忆主脊为公共底座，把三区两翼组织为可测试、可申诉、可迭代的开放智能公地；临时边界仅用于生成与内容审查，全部空间结论待官方资料校准。"
+summary: "提出“AI上街之前，先通过公共验收”，以大钟寺100米公共验收街和90天可退出试点，把三区两翼组织为可测试、可申诉、可迭代的开放智能公地。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v2.0"
+iteration: "v2.1"
 ---
 
 # 智脉共生：京张开放智能公地
 
-本方案的核心判断是：百年京张不需要一条只在节庆时被看见的“AI 展示带”，而需要一套全年运行、人人可进入、技术可被质询的城市公共协议。方案把京张遗址公园理解为“记忆与公共智能主脊”，将众智园、北京 AI 原点社区、大钟寺分别转译为安全治理、开源转化、智能原生生活三类城市实验室，再以中关村科技服务翼和小月河场景赋能翼连接资本、法务、算力、数据与真实城市问题。所有动作均为概念建议、参考方案或可供专业团队深化研究，不替代正式规划，不构成政府审定结论。
+**AI 上街之前，先通过公共验收。** 这是“智脉共生”最简短、也最可检验的城市主张：百年京张不需要一条只在节庆时被看见的“AI 展示带”，而需要一套全年运行、人人可进入、技术可被质询、失败能够退出的城市公共协议。方案把京张遗址公园理解为“记忆与公共智能主脊”，将众智园、北京 AI 原点社区、大钟寺分别转译为安全治理、开源转化、智能原生生活三类城市实验室，再以中关村科技服务翼和小月河场景赋能翼连接资本、法务、算力、数据与真实城市问题。所有动作均为概念建议、参考方案或可供专业团队深化研究，不替代正式规划，不构成政府审定结论。
 
 ## 设计依据与资料清单
 
 方案首先锁定资料权力边界：仓库公开任务书 `brief/public-brief.md` 与官方公告用于确认项目愿景、三层范围文字、公告面积约值和设计任务 [source:OFFICIAL-ANNOUNCEMENT] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]；清权任务书用于三大定位、五大功能、三区两翼和六项 agent 任务 [source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]。
 
 城市设计、控规编制和用地分类分别受本地标准快照约束 [standard:MOHURD-URBAN-DESIGN-MEASURES] [standard:MOHURD-CONTROL-DETAILED-PLANNING] [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]。建筑设计深度文件尚无可核验官方正文，只登记为数据缺口 [standard:MOHURD-ARCH-DESIGN-DEPTH-2016]。
+
+公共 AI 的适用边界另由三份背景依据校准：生成式 AI 暂行办法只在向境内公众提供生成内容服务的法定范围内引用，申诉数字时限仍是本项目自设目标 [standard:GENERATIVE-AI-INTERIM-MEASURES]；无障碍环境建设法第 39 条的人工办理要求不被泛化到全部公共空间 [standard:BARRIER-FREE-ENVIRONMENT-LAW]；国办发〔2020〕45 号只作为传统与智能服务并行的政策参照，其 2020—2022 阶段目标不写成 2026 年仍在执行的项目义务 [standard:ELDERLY-SMART-TECH-PLAN-2020-45]。
 
 仓库资料包、登记表与处理事实包分别作为规则、可用性判断与阅读导航 [source:SITE-PACKAGE] [source:SOURCE-REGISTRY] [source:PROCESSED-FACT-PACK]。
 
@@ -78,9 +80,13 @@ iteration: "v2.0"
 
 ### 大钟寺：智能原生生活公地
 
-大钟寺在 [data:geometry/key_areas.geojson#PROV-KEY-003] 内形成“站前四象限公共客厅 + 智能原生样板街 + 国际路演厅”。四象限强调地面优先、连续过街、非机动车秩序和无障碍，不预判桥隧方案；样板街允许智能体、终端、内容和生活服务进行明确告知的短期试验；路演厅连接企业、开发者、城市问题提出者和国际访客。片区详细设计证据由 [depth:three_key_area_detailed_design] 统筹，所有工程与招商内容仍为深化建议。
+大钟寺在 [data:geometry/key_areas.geojson#PROV-KEY-003] 内形成“站前四象限公共客厅 + **100 米公共验收街** + 国际路演厅”。四象限强调地面优先、连续过街、非机动车秩序和无障碍，不预判桥隧方案；100 米街是可迁移的代表性相对尺度原型，不是对现状道路、地块或工程线位的判断。路演厅连接企业、开发者、城市问题提出者和国际访客。片区详细设计证据由 [depth:three_key_area_detailed_design] 统筹，所有工程与招商内容仍为深化建议。
 
-空间原型采用“站城门厅 - 四象限地面缝合 - 全天候智能原生街 - 申诉与国际会客厅”的公共客厅语法。四象限先保证连续无障碍路径、可见过街和自行车停放，再讨论地下或桥隧工程；沿街试验采用日常、测试日、活动日三种可切换状态。首期三个概念动作是站前导航与人工服务岛、数据授权会客厅和可关闭的路演界面；站口、道路断面、轨道保护和疏散资料不到位时不得工程化。
+100 米公共验收街把治理条款变成四段身体可感知的空间：0—20 米“知情门廊”公开目的、数据、责任和开放时段；20—45 米“双轨服务台”让人工与 AI 服务并列，基本服务不以手机、账户或人脸为门槛；45—75 米“公共共验庭”由居民、老人、残障者、专业人员和运营方共同测试；75—100 米“申诉与回滚廊”提供纠错、删除、暂停与退出留痕。四段由连续无障碍路径、触觉引导、基本通行净空和休息点串联，设备可撤、可复用、不得侵占通行。原型数量、四道验收门和人工兜底目标分别由 [metric:public_acceptance_prototype_count] [metric:public_acceptance_threshold_count] [metric:human_fallback_target_seconds] 记录。
+
+![大钟寺100米公共验收街：从知情到回滚的四道空间门](assets/figures/public-acceptance-street.png)
+
+这条街的价值不在于再造一个“AI 打卡点”，而在于建立城市尺度的 use-before-deploy：先由真实使用者和专业人员共同验收，再决定技术是否进入日常公共空间。它把“看得见、说得清、接得住、退得回”变成国际访客能走完、普通居民能质询、运营者必须承担责任的京张辨识度。站口、道路断面、轨道保护、疏散和权属资料不到位时不得工程化。
 
 ## AI 创新生态、人才画像与 AI+ 场景
 
@@ -108,6 +114,8 @@ S02-S04 是三类产业测试验证场景 [metric:testbed_scenario_count]，其�
 十二场景进一步归并为三类可画、可搭、可退出的空间原型。A 类“受控试验场”服务 S02-S04，包含告知门、缓冲带、测试区、安全员视线、观众边界、后勤口和急停；B 类“公共廊道与共创点”服务 S05、S06、S10，包含连续无障碍通行、非跟踪式感知、人工帮助点和设施级数据镜像；C 类“展示、服务与协作厅”服务其余场景，包含开放前厅、内容清权、人工终审、申诉窗口和可撤回档案。所有节点都必须让人三十秒内读懂“目的、数据、责任、退出”，设备不得占用基本通行净空。
 
 逐场景治理字段已写入 `geometry/public_space.geojson`：风险等级、最终责任角色、保存规则、审计频率、成功 KPI 和暂停条件不再复用同一泛化句。共同试点目标为：上线前责任、告知、风险分级和急停演练覆盖率 100%；高影响输出人工最终决定覆盖率 100%；默认生物识别采集和连续个人轨迹留存均为 0；严重安全事件目标为 0；申诉在 1 个工作日内确认，并以 5 个工作日给出处理结果为试点目标。上述是运营目标，不是现状绩效或政府承诺。
+
+其中“基本服务不以手机、账户或人脸为门槛”是本方案主动提高的公共服务底线 [metric:phone_free_basic_access_target_ratio]，不是对全部场所适用的法律结论；“1 日确认、5 日目标答复”也不是法规规定的数字时限。若场景构成面向境内公众的生成式 AI 内容服务，才在相应法定范围内执行投诉举报和内容治理要求；医疗、社保、金融、生活缴费等列举场所的人工办理边界则按无障碍法第 39 条另行核对，不偷换适用范围。
 
 ## 用地、建筑规模与拆改留方案
 
@@ -139,6 +147,12 @@ S02-S04 是三类产业测试验证场景 [metric:testbed_scenario_count]，其�
 
 分期不是建设工期，而是“先协议、再网络、后更新”的风险顺序。[data:geometry/phasing.geojson#PHASE-001] 先在三处重点区做可逆试点，面积 [metric:phase_1_area_sqm]；PHASE-002 连续化公地主脊，面积 [metric:phase_2_area_sqm]；PHASE-003 在官方资料和专业审查后适配片区更新，面积 [metric:phase_3_area_sqm]。三阶段总数由 [metric:phase_count] 复算，[depth:renewal_project_list] 与 [depth:phasing_implementation] 负责把项目、依赖和证据对应。
 
+首个可执行动作不是大片建设，而是大钟寺公共验收街的 **90 天可退出试点** [metric:pilot_duration_days]：0—30 天只做现场基线、无障碍共走、责任与数据清单，不激活 AI；31—60 天用可撤设施和离线模拟，由人工主导服务并演练转人工、急停和申诉；61—90 天才进行限时开放、每日复盘和独立验收。六条红线 KPI 是激活前告知 100%、高影响输出人工最终决定 100%、基本服务手机/账户/人脸强制门槛为 0、转人工目标不超过 30 秒、申诉 1 日确认/5 日目标答复、严重安全事件目标为 0 [metric:pilot_redline_kpi_count]。任一红线失败即暂停，不用平均分掩盖伤害。
+
+责任上由场地运营者承担唯一 A（accountable），人工服务、无障碍、安全、数据与法务小组为 R，居民、老人、残障者代表和独立评估者参与 C；成本只分 L1“运营/家具/标识”和 L2“临时构筑/本地系统”，不编造金额。采购必须包含开放接口、数据最小化、无供应商锁定和退出条款；任何永久工程属于 L3，待 official polygons、道路、市政、文保、消防和法定程序后另行研究。
+
+![90天可退出试点：阶段、红线KPI、责任与成本带](assets/figures/implementation-readiness.png)
+
 年度运营提出四季循环：春季“开源贡献月”发布问题与数据许可；夏季“城市测试周”只在隔离、预约和急停条件下验证；秋季“全球开放智能公地论坛”对比城市案例与治理；冬季“贡献档案季”复盘失败、纠错和公共价值。开发者社区以 issue、复盘和导师机制持续运营；场景开放采用申请、伦理/安全审查、限时测试、公众反馈、退出五步流程；国际传播以可验证贡献而非夸张排名为核心。
 
 为避免“人人负责等于无人负责”，方案提出概念性的“京张开放智能公地理事会”：园区与公园运营方负责场地开放，高校和研发机构负责方法审查，企业与开发者负责产品和事件责任，居民及残障者代表拥有质询席位，数据、法律、安全和文化遗产专家拥有专业否决建议权，政府与法定专业部门保留依法应有的最终权限。每个场景仍必须有唯一具名运营责任人；理事会不能代替法定审批，也不能稀释事故责任。
@@ -155,6 +169,8 @@ S02-S04 是三类产业测试验证场景 [metric:testbed_scenario_count]，其�
 
 机器可读的完整指标索引保留在 `metrics.json`，正文只解释最影响设计判断的面积、网络、场景与实施指标。概念建筑基底和公地主脊分别由 [metric:building_footprint_area_sqm] [metric:greenway_length_m] 支撑，场景与分期数量由 [metric:scenario_count] [metric:phase_count] 支撑。
 
+冲奖版另增加六个非空间、非现状绩效的“公共验收指标”：1 个代表性原型由 [metric:public_acceptance_prototype_count] 管理，4 道空间门由 [metric:public_acceptance_threshold_count] 管理，90 天试点由 [metric:pilot_duration_days] 管理。30 秒人工兜底由 [metric:human_fallback_target_seconds] 管理，基本服务无强制手机/账户/人脸目标覆盖率 100% 由 [metric:phone_free_basic_access_target_ratio] 管理，6 条红线 KPI 由 [metric:pilot_redline_kpi_count] 管理。它们只能作为项目自设验收契约，不能被展示为现状成绩、法定标准或政府承诺。
+
 `compliance_matrix.json` 覆盖公告 1.3、1.4、1.5 与 agent.1-agent.6；`standard_matrix.json` 覆盖 mandatory 标准并把缺失建筑深度文件标记为资料缺口；`design_depth_matrix.json` 覆盖十五项 formal 深度。用地与交通的关键证据分别由 [depth:land_use_layout] [depth:traffic_rail_slow_parking] 管理。
 
 蓝绿空间与风险边界分别由专业证据链 [depth:blue_green_public_space] [depth:risk_missing_data] 管理。全部 PASS 仅表示包可进入内容审查，不代表方案优秀、获批或可实施。
@@ -165,12 +181,12 @@ S02-S04 是三类产业测试验证场景 [metric:testbed_scenario_count]，其�
 
 第一风险是精度误导：临时 polygon 可能改变用地切分、重点区关系和所有面积，故图面以虚线淡化边界，正文不使用“精确红线”措辞。第二风险是规划越界：容积率、高度、密度、道路、四线、权属、拆改留和工程均为 unknown，方案只给方法与待确认清单。第三风险是技术伤害：公共 AI 场景限定聚合或主动授权数据，高影响决定必须人工复核，并提供停止、申诉、纠错和删除机制。第四风险是文化与版权：史实需专业核对，Logo、图标、图表、地图和字体均使用本方案原创几何、仓库清权数据或系统/开源资产。
 
-本提交不使用秘密地图、商业地图截图、远程地图瓦片、新闻图片、个人隐私、企业内部表格或未经授权的品牌素材。五张 PNG、A3/A0、离线 HTML、GeoJSON 与 JSON 由同一数据脚本派生；PDF 只作为解释层，结构化数据优先。`visual/index.html` 无远程脚本、字体、表单、iframe、API 或跟踪。版权与生成说明见待补控制登记层 [data:geometry/constraints.geojson#PENDING-CONTROLS-001] 和 `report/copyright_statement.md`；该 feature 只是沿 SITE-001 临时包络建立的“控制条件核验范围”，`not_a_control_line=true`，不表示任何已公布控制线或建设许可；数据缺口、人工复核和官方资料替换流程由 [depth:risk_missing_data] 管理。
+本提交不使用秘密地图、商业地图截图、远程地图瓦片、新闻图片、个人隐私、企业内部表格或未经授权的品牌素材。七组双语 PNG、A3/A0、离线 HTML、GeoJSON 与 JSON 由同一设计证据链派生；其中公共验收街氛围图由 OpenAI 内置图像生成工具生成，无文字、无品牌，并在图面醒目标记“AI 生成概念效果图 / 非现场照片”。它不证明现状、边界、居民意见或工程可行性，结构化数据和专业图纸优先。`visual/index.html` 无远程脚本、字体、表单、iframe、API 或跟踪。版权与生成说明见待补控制登记层 [data:geometry/constraints.geojson#PENDING-CONTROLS-001] 和 `report/copyright_statement.md`；该 feature 只是沿 SITE-001 临时包络建立的“控制条件核验范围”，`not_a_control_line=true`，不表示任何已公布控制线或建设许可；数据缺口、人工复核和官方资料替换流程由 [depth:risk_missing_data] 管理。
 
 安全审查还覆盖了外部 Skill 的执行面：未运行会写入个人目录的安装器，未运行联网抓取、GitHub API 或外部 AI 评审脚本；依赖装在仓库内隔离环境并仅使用二进制 wheel。发布 PR 前只应包含本投稿目录，且需由真实 GitHub 作者确认署名、知识产权和对外提交。
 
 ## 参考资料
 
-正式任务依据包括官方公告、清权 agent 任务书、城市设计管理办法、控规编制审批办法和国土空间用地分类指南；其本地快照、哈希与获取状态见 `brief/site-package/standards/`。空间生成只使用仓库登记的 provisional boundaries，明确不可用于官方红线、精确面积或审批。国际案例来源仅用于比较创新空间与运营机制，并在 `sources.json` 中标注 background，不向本项目移植企业名单、量化绩效或政策承诺。
+正式任务依据包括官方公告、清权 agent 任务书、城市设计管理办法、控规编制审批办法和国土空间用地分类指南；生成式 AI、无障碍环境与适老智能技术三份文件仅在各自适用边界内作为公共服务和风险治理参照。其本地快照、哈希与获取状态见 `brief/site-package/standards/`。空间生成只使用仓库登记的 provisional boundaries，明确不可用于官方红线、精确面积或审批。国际案例来源仅用于比较创新空间与运营机制，并在 `sources.json` 中标注 background，不向本项目移植企业名单、量化绩效或政策承诺。
 
 机器证据文件依次为 `geometry/*.geojson`、`metrics.json`、三类矩阵、manifest/sources/assumptions/self_check、`proposal.md`、五张 PNG、HTML 与 PDF。`geometry/constraints.geojson` 只登记需要补齐官方控制资料的核验包络，表达“控制条件未知且必须补齐”，而不是已经确认或没有约束；[data:geometry/phasing.geojson#PHASE-003] 表达风险顺序，不是开发时序。核心来源回链为 [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [source:SOURCE-REGISTRY]，核心标准回链为 [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]，核心空间回链为 [data:geometry/site_boundary.geojson#SITE-001]，核心指标回链为 [metric:site_area_sqm]。

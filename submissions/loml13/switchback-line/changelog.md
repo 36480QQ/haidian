@@ -1,5 +1,22 @@
 # 方案迭代记录
 
+## v1.7.1 - 2026-08-11
+
+manifest 迁移 0.2.x（Issue #1058 / PR #1063 已合并）：
+
+- `schema_version` 0.1.0 → 0.2.0，进入 strict gate；`visual_asset` ×5 → canonical `asset`，`risk` ×1 → `other` + `role_detail: "risk"`，`changelog` 已为 canonical 不变。迁移后全包 role 均为 canonical 或显式 `other`，无遗留 advisory 违规。
+
+
+## v1.7 - 2026-08-11
+
+文保约束落地（响应 Issue #1774 数据源索引）：
+
+- CX-003 清华园车站旧址由点位占位升级为 provisional 面：按北京市文物局「第十一批划定」文字四至生成保护范围 + 建控地带Ⅰ类/Ⅴ类三个子区共 5 个 polygon，以 OSM 建筑轮廓定向偏移（J01 直接命名锚定，J02/J03 邻接推定，Y01 未落图以 J02 西墙代替并注明）；全部 `provisional_constraint` / `agent_inferred_from_public_data` / `confidence: medium`，properties 原样保留四至原文、条目 URL 与访问日期（A-HERITAGE-FOURTO-001）。
+- CX-004 觉生寺（大钟寺）登记「第一批划定」四至文字与来源页；其锚点（食品厂/照相机厂/规划红线）不可公开核实，保持点位、不推定面。
+- 坐标勘误：CX-003 原点位偏东约 1.7 km、CX-004 原偏东南约 3.0 km，均经 OSM 落图校正（A-HERITAGE-POINT-FIX-001）。
+- sources.json 新增 BJGOV-HERITAGE-BATCH11 / BJWW-QHY-STATION-T11 / BJWW-JUESHENG-T1 / BJGOV-CCZ-RULES / OPENSTREETMAP / ISSUE-1774 六条登记。
+
+
 ## v1.6 - 2026-08-10
 
 数据质量响应（Issue #1029）：
