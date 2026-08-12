@@ -1,0 +1,23 @@
+{
+  "schema_version": "0.1.0",
+  "assumptions": [
+    {
+      "id": "A-CONTROLS-001",
+      "status": "pending_professional_confirmation",
+      "statement": "Detailed regulatory controls, road redlines, ownership, municipal utilities, and engineering constraints must be confirmed from official attachments before statutory use.",
+      "impact": "The package is a reviewable concept submission, but no statutory, parcel-level, demolition, engineering, or implementation conclusion may be drawn until those materials are supplied."
+    },
+    {
+      "id": "A-BOUNDARY-001",
+      "status": "provisional_constraint",
+      "statement": "The site boundary and all three key-area polygons are repository-maintained provisional rough geometry, not organizer-supplied official polygons.",
+      "impact": "All dependent land-use, building, road, green-space, public-space, phasing, area, and ratio evidence must be regenerated and rechecked when official polygons become available."
+    },
+    {
+      "id": "A-OPERATIONS-001",
+      "status": "concept_proposal",
+      "statement": "The Consent Line governance protocol, three civic test grounds, annual event, and operating roles are design references only; no implementing body, budget, or approval has been confirmed.",
+      "impact": "Each pilot requires professional, legal, accessibility, cybersecurity, service-owner, and public-interest review before any real-world trial."
+    }
+  ]
+}

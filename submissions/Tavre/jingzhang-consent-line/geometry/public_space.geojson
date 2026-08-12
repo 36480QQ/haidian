@@ -1,0 +1,48 @@
+{
+  "type": "FeatureCollection",
+  "name": "consent_line_public_space",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "PUBLIC-001",
+      "properties": {
+        "id": "PUBLIC-001",
+        "layer": "PUBLIC_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "京张问路公共协议界面",
+        "name_en": "Consent Line civic protocol interface",
+        "design_program": ["人工服务蓝线", "知情说明台", "退出与申诉入口", "无障碍共测"],
+        "area_sqm_declared": 836345.643
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34734399999999,
+              39.967
+            ],
+            [
+              116.34734399999999,
+              40.00025
+            ],
+            [
+              116.349996,
+              40.00025
+            ],
+            [
+              116.349996,
+              39.967
+            ],
+            [
+              116.34734399999999,
+              39.967
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

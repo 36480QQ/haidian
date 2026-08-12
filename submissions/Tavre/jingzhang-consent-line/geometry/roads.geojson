@@ -1,0 +1,34 @@
+{
+  "type": "FeatureCollection",
+  "name": "consent_line_mobility",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "ROAD-001",
+      "properties": {
+        "id": "ROAD-001",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "road_class": "greenway",
+        "name_zh": "京张问路慢行主线",
+        "name_en": "Jingzhang Consent Line greenway",
+        "design_protocol": "every AI service node retains a visible human fallback route"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.340948,
+            39.9845
+          ],
+          [
+            116.35374,
+            39.9845
+          ]
+        ]
+      }
+    }
+  ]
+}
