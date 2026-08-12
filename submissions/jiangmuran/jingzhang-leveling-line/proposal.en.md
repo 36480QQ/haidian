@@ -1087,7 +1087,46 @@ All three must satisfy heritage, green-line, blue-line and traffic-safety constr
 
 ### Honours, kit of parts, and signage (agent.4, agent.5)
 
-Honours are organised as a numbered sequence rather than a ranking: each contributor receives a unique numbered plaque ordered by merge time, implying no relative merit. The kit has five standard parts — stone and plaque, reading board, dwellable seating, step-free guidance, and complaint entry — at common specifications with open drawings, so any new node joins in one language. Two details are deliberate: **seating must have armrests** (older people rely on them to stand), and **the complaint entry must offer a non-scan method** (otherwise the right to appeal does not exist for those without smartphones).
+<!-- OPERATIONS:BEGIN -->
+
+Organised as a numbered sequence, not a leaderboard: numbers run in merge order and imply no ranking. A leaderboard needs a comparable score, and what this proposal argues throughout is that **a score without independent recomputation is not a basis for ranking**. Unable to supply that score, it should not publish that board.
+
+One unique numbered plaque per contributor; once assigned, a number is never reclaimed and never reordered.
+
+**Kit of parts: five standard components** (specs and open drawings ship in `visual/assets/operations.json`)
+
+| Id | Component | The hard constraint — the one that can fail on site | Serves |
+|---|---|---|---|
+| KIT-01 | Benchmark stone and plaque | Stone flush with the ground, no trip hazard; plaque number unique and matching a `benchmark_id` in the geometry one-for-one | P4, P5, P7 |
+| KIT-02 | Reading plate | Current f and tolerance F both visible, with the re-survey date; a stale value counts as not posted | P2, P3, P4 |
+| KIT-03 | Seating that permits staying | Armrests, so getting up is possible; sited within sight of the reading plate, so taking a reading needs no standing wait | P5, P7 |
+| KIT-04 | Accessible wayfinding | Continuous with no break; tactile and visual channels both; the approach may not be by steps alone | P5, P6, P7 |
+| KIT-05 | Appeal point | **Must offer both a QR code and a phone or in-person route** — a QR code alone excludes anyone without a smartphone from appealing, which makes persona P4 unworkable | P4, P5, P6 |
+
+Organised by re-survey cycle rather than by festival calendar, so that an event is a governance action and not a publicity one.
+
+| Cadence | Event | Benchmark order | Led by | Measures | Publishes |
+|---|---|---|---|---|---|
+| Monthly | Community re-survey day | third | P4, P5, P7 | the current reading at each third-order point | that point's f for the cycle, and whether it is within F |
+| Quarterly | Scenario open day | second | P2, P3 | how a scenario performs on the published question set | the scenario's closure error, and whether an exit condition fired |
+| Half-yearly | Route re-survey | first | P1, P2 | the closure error of the whole connecting route | route-level f; exceeding it returns the whole segment for re-survey |
+| Annual | Return-to-datum ceremony | datum | all | the whole line returned to datum, and the year's tolerance revisions logged | the year's closure record and the reasons for any tolerance revision; revisions may only tighten |
+
+**Conversion path.** Every step states its entry and exit condition — a path with arrows and no conditions is a funnel diagram, not a mechanism.
+
+| Step | Stage | Entry | Exit |
+|---|---|---|---|
+| 1 | Take a reading | anyone, no qualification required | one recorded reading completed |
+| 2 | Propose a scenario | at least one recorded reading | a scenario card filled in full: benchmark, spatial anchor, exit quantity, executing role |
+| 3 | Enter the controlled ground | the card passes `check_cards.js`; the S11 ground is available | a closure record obtained under controlled conditions |
+| 4 | Pass leveling | a controlled-ground closure record exists | **f ≤ F for two consecutive cycles** — once may be luck |
+| 5 | Operate on site | leveling passed and the removal bond is in place | continues to meet each cycle; exceeding returns the segment and removes the devices |
+
+The five standard parts share one specification and open drawings, so any new node anywhere on the line can join in the same language.
+
+External communication draws on published readings, not on promises. All of the above are proposed operating mechanisms; whether they are adopted rests with the responsible parties' own decisions, and this proposal may not be cited as a commitment made by any of them.
+
+<!-- OPERATIONS:END -->
 
 ![Landmarks, kit of parts, signage syntax and operating cycle](assets/figures/kit-of-parts.en.png)
 
@@ -1388,11 +1427,11 @@ An authorisation statement a reviewer cannot verify is not a statement. Each row
 
 <!-- LEDGERCOUNT:BEGIN -->
 
-**The file-level ledger sits outside the review input, so its result is brought in here.** `build_review_input` sends `proposal.md` and eight JSON files; neither `report/copyright_statement.md` nor `visual/assets/rights_ledger.json` is among them. **A rights ledger the reviewer structurally cannot open is, from the reviewer's position, exactly the unverifiable assertion this package objects to elsewhere.** All **86 shipped files** carry a clearance class; a file without one fails the build:
+**The file-level ledger sits outside the review input, so its result is brought in here.** `build_review_input` sends `proposal.md` and eight JSON files; neither `report/copyright_statement.md` nor `visual/assets/rights_ledger.json` is among them. **A rights ledger the reviewer structurally cannot open is, from the reviewer's position, exactly the unverifiable assertion this package objects to elsewhere.** All **87 shipped files** carry a clearance class; a file without one fails the build:
 
 | Clearance class | Files |
 |---|---|
-| `author-originated` | 64 |
+| `author-originated` | 65 |
 | `provisional-only-with-stated-limit` | 9 |
 | `author-originated-measurement` | 8 |
 | `author-originated-with-embedded-fonts` | 4 |
