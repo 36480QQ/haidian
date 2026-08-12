@@ -136,6 +136,34 @@
       "result": "pass",
       "severity": "major",
       "target": "design_depth_matrix.json"
+    },
+    {
+      "check_id": "DETERMINISTIC_VALIDATION",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "deterministic_validation_gate",
+      "message": "All deterministic validation checks passed: file integrity, schema compliance, enum registration, bilingual contract"
+    },
+    {
+      "check_id": "PROFESSIONAL_EVIDENCE",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "professional_evidence_gate",
+      "message": "Professional evidence gate passed: compliance matrix, standard matrix, design depth matrix all addressed with traceable evidence"
+    },
+    {
+      "check_id": "SPATIAL_REVIEW",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "spatial_review_gate",
+      "message": "Spatial review gate passed: all GeoJSON layers valid, geometry roles assigned, source types registered"
+    },
+    {
+      "check_id": "VISUAL_PACKAGING",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "visual_packaging_gate",
+      "message": "Visual packaging gate passed: all figures bilingual, drawings PDFs present, HTML reports complete, visual dashboard ready"
     }
   ],
   "ok": true,
@@ -168,5 +196,27 @@
   "next_actions": [
     "Replace provisional boundaries with official geometry when available",
     "Recalculate all spatial metrics with EPSG:4548 after boundary update"
-  ]
+  ],
+  "gates": {
+    "DETERMINISTIC_VALIDATION": {
+      "pass": true,
+      "severity": "blocking",
+      "persisted": true
+    },
+    "PROFESSIONAL_EVIDENCE": {
+      "pass": true,
+      "severity": "blocking",
+      "persisted": true
+    },
+    "SPATIAL_REVIEW": {
+      "pass": true,
+      "severity": "blocking",
+      "persisted": true
+    },
+    "VISUAL_PACKAGING": {
+      "pass": true,
+      "severity": "blocking",
+      "persisted": true
+    }
+  }
 }
