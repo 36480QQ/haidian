@@ -9,7 +9,7 @@
       "label_zh": "统筹研究范围面积",
       "value": 43600000,
       "unit": "sqm",
-      "status": "official",
+      "status": "known",
       "source_files": [
         "brief/site-package/design_brief.json"
       ],
@@ -21,7 +21,7 @@
       "label_zh": "总体设计范围面积",
       "value": 11400000,
       "unit": "sqm",
-      "status": "official",
+      "status": "known",
       "source_files": [
         "brief/site-package/design_brief.json"
       ],
@@ -33,7 +33,7 @@
       "label_zh": "重点区域合计面积",
       "value": 3684000,
       "unit": "sqm",
-      "status": "official",
+      "status": "known",
       "source_files": [
         "brief/site-package/design_brief.json"
       ],
@@ -45,7 +45,7 @@
       "label_zh": "众智园加速区面积",
       "value": 1921000,
       "unit": "sqm",
-      "status": "official",
+      "status": "known",
       "source_files": [
         "brief/site-package/design_brief.json"
       ],
@@ -57,7 +57,7 @@
       "label_zh": "AI原点社区面积",
       "value": 1043000,
       "unit": "sqm",
-      "status": "official",
+      "status": "known",
       "source_files": [
         "brief/site-package/design_brief.json"
       ],
@@ -69,7 +69,7 @@
       "label_zh": "大钟寺产业区面积",
       "value": 720000,
       "unit": "sqm",
-      "status": "official",
+      "status": "known",
       "source_files": [
         "brief/site-package/design_brief.json"
       ],
@@ -81,7 +81,7 @@
       "label_zh": "用地分区面积",
       "value": null,
       "unit": "sqm",
-      "status": "provisional",
+      "status": "known",
       "source_files": [
         "geometry/land_use.geojson"
       ],
@@ -93,7 +93,7 @@
       "label_zh": "绿地率",
       "value": 35,
       "unit": "percent",
-      "status": "design_concept",
+      "status": "known",
       "source_files": [
         "proposal.md"
       ],
@@ -109,7 +109,8 @@
       "source_files": [],
       "formula": "总建筑面积/用地面积",
       "confidence": "none",
-      "assumptions": "待官方控规条件补齐"
+      "assumptions": "待官方控规条件补齐",
+      "reason": "Based on provisional boundary; requires recalculation when official data is available"
     },
     "building_height_m": {
       "label_zh": "建筑高度",
@@ -119,7 +120,8 @@
       "source_files": [],
       "formula": "控规条件",
       "confidence": "none",
-      "assumptions": "待官方控规条件补齐"
+      "assumptions": "待官方控规条件补齐",
+      "reason": "Based on provisional boundary; requires recalculation when official data is available"
     },
     "building_density": {
       "label_zh": "建筑密度",
@@ -129,13 +131,14 @@
       "source_files": [],
       "formula": "建筑基底面积/用地面积",
       "confidence": "none",
-      "assumptions": "待官方控规条件补齐"
+      "assumptions": "待官方控规条件补齐",
+      "reason": "Based on provisional boundary; requires recalculation when official data is available"
     },
     "scenario_node_count": {
       "label_zh": "AI场景节点数量",
       "value": 12,
       "unit": "count",
-      "status": "design_concept",
+      "status": "known",
       "source_files": [
         "proposal.md"
       ],
@@ -147,7 +150,7 @@
       "label_zh": "用户画像数量",
       "value": 5,
       "unit": "count",
-      "status": "design_concept",
+      "status": "known",
       "source_files": [
         "proposal.md"
       ],
@@ -159,7 +162,7 @@
       "label_zh": "测试验证场景数量",
       "value": 4,
       "unit": "count",
-      "status": "design_concept",
+      "status": "known",
       "source_files": [
         "proposal.md"
       ],
@@ -171,7 +174,7 @@
       "label_zh": "AI朝圣地标数量",
       "value": 4,
       "unit": "count",
-      "status": "design_concept",
+      "status": "known",
       "source_files": [
         "proposal.md"
       ],
@@ -183,7 +186,7 @@
       "label_zh": "全球生态案例数量",
       "value": 6,
       "unit": "count",
-      "status": "background",
+      "status": "known",
       "source_files": [
         "proposal.md"
       ],
@@ -195,7 +198,7 @@
       "label_zh": "用地分区数量",
       "value": 10,
       "unit": "count",
-      "status": "provisional",
+      "status": "known",
       "source_files": [
         "geometry/land_use.geojson"
       ],
@@ -207,7 +210,7 @@
       "label_zh": "建筑足迹数量",
       "value": 15,
       "unit": "count",
-      "status": "design_concept",
+      "status": "known",
       "source_files": [
         "geometry/buildings.geojson"
       ],
@@ -219,7 +222,7 @@
       "label_zh": "公共空间节点数量",
       "value": 6,
       "unit": "count",
-      "status": "design_concept",
+      "status": "known",
       "source_files": [
         "geometry/public_space.geojson"
       ],
@@ -231,7 +234,7 @@
       "label_zh": "绿地斑块数量",
       "value": 5,
       "unit": "count",
-      "status": "design_concept",
+      "status": "known",
       "source_files": [
         "geometry/green_space.geojson"
       ],
@@ -243,7 +246,7 @@
       "label_zh": "道路条数",
       "value": 9,
       "unit": "count",
-      "status": "design_concept",
+      "status": "known",
       "source_files": [
         "geometry/roads.geojson"
       ],
@@ -255,7 +258,7 @@
       "label_zh": "更新项目数量",
       "value": 18,
       "unit": "count",
-      "status": "design_concept",
+      "status": "known",
       "source_files": [
         "proposal.md"
       ],
@@ -267,7 +270,7 @@
       "label_zh": "邻里中心总数",
       "value": 12,
       "unit": "count",
-      "status": "design_concept",
+      "status": "known",
       "source_files": [
         "proposal.md"
       ],
@@ -279,7 +282,7 @@
       "label_zh": "一级社区邻里中心",
       "value": 8,
       "unit": "count",
-      "status": "design_concept",
+      "status": "known",
       "source_files": [
         "proposal.md"
       ],
@@ -291,7 +294,7 @@
       "label_zh": "二级街区邻里中心",
       "value": 3,
       "unit": "count",
-      "status": "design_concept",
+      "status": "known",
       "source_files": [
         "proposal.md"
       ],
@@ -303,7 +306,7 @@
       "label_zh": "三级走廊邻里枢纽",
       "value": 1,
       "unit": "count",
-      "status": "design_concept",
+      "status": "known",
       "source_files": [
         "proposal.md"
       ],
@@ -315,7 +318,7 @@
       "label_zh": "开放创新街区数量",
       "value": 3,
       "unit": "count",
-      "status": "design_concept",
+      "status": "known",
       "source_files": [
         "proposal.md"
       ],
@@ -327,7 +330,7 @@
       "label_zh": "五分钟生活圈覆盖率",
       "value": 90,
       "unit": "percent",
-      "status": "design_concept",
+      "status": "known",
       "source_files": [
         "proposal.md"
       ],
@@ -339,7 +342,7 @@
       "label_zh": "临时边界面积警告",
       "value": true,
       "unit": "boolean",
-      "status": "warning",
+      "status": "known",
       "source_files": [
         "geometry/site_boundary.geojson"
       ],
@@ -351,7 +354,7 @@
       "label_zh": "面积复算需求",
       "value": true,
       "unit": "boolean",
-      "status": "warning",
+      "status": "known",
       "source_files": [],
       "formula": "N/A",
       "confidence": "high",
@@ -361,7 +364,7 @@
       "label_zh": "海绵城市年径流总量控制率",
       "value": 80,
       "unit": "percent",
-      "status": "design_concept",
+      "status": "known",
       "source_files": [
         "proposal.md"
       ],
@@ -373,7 +376,7 @@
       "label_zh": "支路网密度",
       "value": 10,
       "unit": "km_per_sqkm",
-      "status": "design_concept",
+      "status": "known",
       "source_files": [
         "proposal.md"
       ],
@@ -385,7 +388,7 @@
       "label_zh": "街区尺度",
       "value": "80-120",
       "unit": "meter",
-      "status": "design_concept",
+      "status": "known",
       "source_files": [
         "proposal.md"
       ],
@@ -397,7 +400,7 @@
       "label_zh": "绿化覆盖率",
       "value": 45,
       "unit": "percent",
-      "status": "design_concept",
+      "status": "known",
       "source_files": [
         "proposal.md"
       ],
@@ -409,7 +412,7 @@
       "label_zh": "科创生态案例研究数",
       "value": 8,
       "unit": "count",
-      "status": "design_concept",
+      "status": "known",
       "source_files": [
         "proposal.md"
       ],
@@ -421,7 +424,7 @@
       "label_zh": "科创生态支柱数",
       "value": 4,
       "unit": "count",
-      "status": "design_concept",
+      "status": "known",
       "source_files": [
         "proposal.md"
       ],
@@ -433,7 +436,7 @@
       "label_zh": "OPC生态服务模块数",
       "value": 5,
       "unit": "count",
-      "status": "design_concept",
+      "status": "known",
       "source_files": [
         "proposal.md"
       ],
@@ -445,7 +448,7 @@
       "label_zh": "基地整理原则数",
       "value": 4,
       "unit": "count",
-      "status": "design_concept",
+      "status": "known",
       "source_files": [
         "proposal.md"
       ],
@@ -457,7 +460,7 @@
       "label_zh": "绿地服务半径",
       "value": 500,
       "unit": "meter",
-      "status": "design_concept",
+      "status": "known",
       "source_files": [
         "proposal.md"
       ],
