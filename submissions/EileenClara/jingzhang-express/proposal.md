@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以京张铁路遗产为空间主轴，把创新链的源头—转化—市场三个阶段映射为众智园、北京AI原点社区、大钟寺三个站点，形成“一正线三站两翼”的创新产线结构；三处重点区名称与三条主题带为官方规划命名层，“京张直快 JINGZHANG EXPRESS”为品牌叙事层，不替代官方命名。全部空间建议为概念建议，基于 provisional boundary 生成，待正式数据补齐后复算。"
 tracks: ["jingzhang-heritage-narrative","ai-origin-community","ai-public-services"]
 scenarios: ["ai-cultural-guide","ai-health-service-navigation","ai-traffic-walkability","enterprise-service-copilot","public-safety-operations-review","robot-delivery-low-speed"]
-iteration: "v0.1"
+iteration: "v0.4"
 ---
 
 # 京张直快 JINGZHANG EXPRESS：把百年京张铁路变成一条创新产线

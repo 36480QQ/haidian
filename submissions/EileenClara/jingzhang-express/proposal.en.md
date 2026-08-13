@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Using the Jing-Zhang railway heritage as the spatial backbone, this proposal maps the three stages of the innovation chain — origin, transformation, market — onto three stations (Zhongzhiyuan, Beijing AI Origin Community, and Dazhongsi), forming an innovation production-line structure of "One Main Line, Three Stations, and Two Wings". The names of the three key areas and the three thematic belts belong to the official planning-naming layer, while "JINGZHANG EXPRESS" is a branding-and-narrative layer that does not replace official names. All spatial suggestions are conceptual recommendations generated on the basis of the provisional boundary, subject to recalculation once official data is completed."
 tracks: ["jingzhang-heritage-narrative","ai-origin-community","ai-public-services"]
 scenarios: ["ai-cultural-guide","ai-health-service-navigation","ai-traffic-walkability","enterprise-service-copilot","public-safety-operations-review","robot-delivery-low-speed"]
-iteration: "v0.1"
+iteration: "v0.4"
 ---
 
 # JINGZHANG EXPRESS: Turning the Centennial Jing-Zhang Railway into an Innovation Production Line
