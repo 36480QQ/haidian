@@ -16,7 +16,7 @@ const check = (id, condition, detail) => {
   checks.push({ id, result: condition ? 'pass' : 'fail', detail });
 };
 
-check('XR-01', schema.title === 'X Receipt 0.1' && receipt.schema_version === '0.1.0', 'schema and receipt versions align');
+check('XR-01', schema.title === 'X Receipt Lifecycle 1.0' && receipt.schema_version === '0.1.0', 'lifecycle schema 1.0 and retained SC-03 fixture bundle are both explicit');
 check('XR-02', JSON.stringify(receipt.route) === JSON.stringify(['TEST', 'RELEASE', 'USE', 'RETURN']), 'four-stage X route is ordered');
 check('XR-03', receipt.fixtures.length === 4 && new Set(receipt.fixtures.map((x) => x.id)).size === 4, 'four unique synthetic fixtures are present');
 check('XR-04', receipt.fixtures.every((x) => x.public_path_state === 'OPEN'), 'ordinary accessible path remains open in every fixture');
@@ -48,7 +48,9 @@ const evidence = {
     schema_ref: 'x-receipt.schema.json',
     schema_sha256: sha256(schemaPath),
     receipt_ref: 'example-sc03-x-receipt.json',
-    receipt_sha256: sha256(receiptPath)
+    receipt_sha256: sha256(receiptPath),
+    lifecycle_validator_ref: 'verify-x-lifecycle.js',
+    lifecycle_test_results_ref: 'x-lifecycle-test-results.json'
   },
   environment: {
     data: 'four bundled synthetic fixtures; no personal data',
