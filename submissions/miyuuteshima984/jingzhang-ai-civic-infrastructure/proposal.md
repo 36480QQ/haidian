@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以城市完整度作为百年京张AI创新带的空间审查方法：居、学、护、行、绿、工、交七项普通城市能力先形成长期可用的日常底盘，AI作为可选增强层进入科研、社区、交通和商业。总体形成一条公共绿脊、六段完整度片区、六条东西缝合联系与三处重点区；爽粉堡垒仅作为AI原点社区中的社区命名彩蛋。"
 tracks: ["ai-origin-community", "ai-public-services", "ai-traffic-walkability"]
 scenarios: ["ai-traffic-walkability", "robot-delivery-low-speed", "enterprise-service-copilot", "ai-cultural-guide", "ai-health-service-navigation"]
-iteration: "v0.7"
+iteration: "v0.8"
 ---
 
 # 京张城市完整度 / JING-ZHANG CITY COMPLETENESS
@@ -137,6 +137,24 @@ v0.7 不再把“评审索引”当作第一视觉，而从三类真实日常路
 AI 对城市形态的影响被压缩为六类可逆空间原型：测试口袋、无障碍求助节点、连续站城到达界面、可替换小型服务节点、人优先的公共首层，以及“观察—小范围原型—公共/专业复核—合并或回退”的可回退空间版本链。这回答的是 AI 如何改变空间组织和规划方法，而不是如何给既有空间附加更多数字界面。
 
 ![AI 如何改变城市形态：六类可逆物理接口](assets/figures/ai-urban-form-change.svg)
+
+<!-- V08-PROTOTYPE-START -->
+### v0.8｜把六类接口收束成一个 1:1 城市原型：C7 CIVIC STATION
+
+v0.8 是从 v0.7 exact head 分出的 **prototype-first 并行候选**。它不再增加新的评分索引，而把已有六类可逆接口收束成一个评委可在一页内读懂、专业团队可在未来按真实条件深化的 1:1 公共空间原型：**C7 CIVIC STATION / 城市完整度站**。它不是一座“AI 亭子”，而是一段普通城市先完整、AI 再进入的空间序列。[metric:flagship_physical_prototype_count]
+
+原型固定为五段：**①普通城市底座**（遮阴、坐凳、连续无障碍、实体双语导视、普通通行）→ **②人工服务层**（无账号窗口、纸质/电话入口、人工接手）→ **③可选 AI 层**（多语问答、路径辅助、服务匹配）→ **④受控测试口袋**（与公共通行物理分离，可封闭、可撤除）→ **⑤ AI-OFF 恢复状态**（设备停机后仍可通行、求助、停留并获得基本服务）。三种运行状态为 DAILY / CONTROLLED TEST / AI-OFF；任何测试不得以牺牲普通通行、无障碍或基本公共服务为代价。[metric:civic_station_operating_state_count]
+
+![C7 CIVIC STATION：一个可关闭、可恢复的 1:1 城市原型](assets/figures/c7-civic-station-prototype.svg)
+
+同一原型在三区采用不同嵌入方式：众智园侧重“研发日常 → 受控测试”，测试口袋必须与服务劳动者和访客的普通路径分离；AI 原点侧重“无手机/照护日常 → 人工服务 → 可选 AI”，拒绝账号不降低基本服务；大钟寺侧重“站城到达 → 实体双语导视 → 人工换乘 → 可选动态信息”，动态系统失效后回到固定路径与人工服务。固定 `key-areas.png` 因此改为直接展示同一原型在三种城市织体中的差异化落位。
+
+### v0.8｜15 个待测槽位：不填现场数值，先把未来验证工作定义清楚
+
+为避免“以后再测”成为空话，三区各预登记五类 observation slot：**到达连续性、无账号/人工等价、无障碍与停留、测试边界、停机恢复与维护**，共 15 个稳定 `observation_id`。[metric:preregistered_observation_slot_count] 当前全部为 `not_measured`，坐标、样本量、阈值、现场读数、许可和责任主体均保持待真实踏勘/专业确认；这是一份现场工作包，不是现场证据。详见 `visual/assets/field-observation-register.json`。
+
+每个槽位只回答四件事：未来要观察什么、由谁确认、什么情况必须停止解释、AI 退出后普通城市功能如何验收。任何未测字段都不得被图纸或指标自动补成“达标”。
+<!-- V08-PROTOTYPE-END -->
 
 ## 用地、建筑规模与拆改留方案
 

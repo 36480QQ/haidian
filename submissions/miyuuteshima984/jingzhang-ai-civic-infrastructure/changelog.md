@@ -1,5 +1,13 @@
 # 方案迭代记录
 
+
+## v0.8 - 2026-08-13
+
+- prototype-first 并行候选：把六类可逆接口收束为一个 C7 CIVIC STATION 1:1 公共原型。
+- 新增 DAILY / CONTROLLED_TEST / AI_OFF 三状态与五段空间合同。
+- 新增三区 × 五类共 15 个 `not_measured` 现场待测槽位，不虚构现场数值。
+- 重建固定 `key-areas*.png`，让 reviewer 输入直接看到同一原型在三种城市织体中的差异化落位。
+
 ## v0.7 - 2026-08-13
 
 - Added three current official Haidian public sources (2025 Urban Renewal Guide, 2025 implementation guide, and 2025 Q4 AI-district progress) and split implementation into reversible low-disturbance actions versus changes that require real project generation, implementation-plan review and permitting.

@@ -55,7 +55,8 @@
       "report_sections": [
         "总体设计范围城市更新与控规深度城市设计",
         "交通、轨道、市政与公共服务设施",
-        "蓝绿空间、公共空间与城市风貌"
+        "蓝绿空间、公共空间与城市风貌",
+        "v0.8｜把六类接口收束成一个 1:1 城市原型：C7 CIVIC STATION"
       ],
       "geojson_layers": [
         "geometry/land_use.geojson",
@@ -70,7 +71,10 @@
         "green_ratio",
         "conceptual_building_count",
         "everyday_journey_count",
-        "reversible_urban_form_prototype_count"
+        "reversible_urban_form_prototype_count",
+        "flagship_physical_prototype_count",
+        "preregistered_observation_slot_count",
+        "civic_station_operating_state_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -110,7 +114,8 @@
       "report_sections": [
         "重点区域详细设计",
         "AI 创新生态、人才画像与 AI+ 场景",
-        "蓝绿空间、公共空间与城市风貌"
+        "蓝绿空间、公共空间与城市风貌",
+        "v0.8｜把六类接口收束成一个 1:1 城市原型：C7 CIVIC STATION"
       ],
       "geojson_layers": [
         "geometry/land_use.geojson",
@@ -122,7 +127,10 @@
         "land_use_community_service_sqm",
         "land_use_education_sqm",
         "green_ratio",
-        "persona_count"
+        "persona_count",
+        "flagship_physical_prototype_count",
+        "preregistered_observation_slot_count",
+        "civic_station_operating_state_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -232,14 +240,18 @@
       "mandatory": true,
       "report_sections": [
         "三层范围工作框架",
-        "重点区域详细设计"
+        "重点区域详细设计",
+        "v0.8｜把六类接口收束成一个 1:1 城市原型：C7 CIVIC STATION"
       ],
       "geojson_layers": [
         "geometry/key_areas.geojson"
       ],
       "metrics": [
         "key_area_announced_total_sqm",
-        "key_area_count"
+        "key_area_count",
+        "flagship_physical_prototype_count",
+        "preregistered_observation_slot_count",
+        "civic_station_operating_state_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -312,7 +324,8 @@
       "mandatory": true,
       "report_sections": [
         "统筹研究范围产业与未来城市研究",
-        "总体设计范围城市更新与控规深度城市设计"
+        "总体设计范围城市更新与控规深度城市设计",
+        "v0.8｜把六类接口收束成一个 1:1 城市原型：C7 CIVIC STATION"
       ],
       "geojson_layers": [
         "geometry/land_use.geojson",
@@ -325,7 +338,10 @@
         "east_west_stitch_count",
         "green_ratio",
         "everyday_journey_count",
-        "reversible_urban_form_prototype_count"
+        "reversible_urban_form_prototype_count",
+        "flagship_physical_prototype_count",
+        "preregistered_observation_slot_count",
+        "civic_station_operating_state_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -358,7 +374,8 @@
       "mandatory": true,
       "report_sections": [
         "总体设计范围城市更新与控规深度城市设计",
-        "用地、建筑规模与拆改留方案"
+        "用地、建筑规模与拆改留方案",
+        "v0.8｜把六类接口收束成一个 1:1 城市原型：C7 CIVIC STATION"
       ],
       "geojson_layers": [
         "geometry/land_use.geojson",
@@ -368,7 +385,10 @@
         "land_use_research_sqm",
         "land_use_commercial_service_sqm",
         "conceptual_building_count",
-        "implementation_path_count"
+        "implementation_path_count",
+        "flagship_physical_prototype_count",
+        "preregistered_observation_slot_count",
+        "civic_station_operating_state_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -405,7 +425,8 @@
       "mandatory": true,
       "report_sections": [
         "总体设计范围城市更新与控规深度城市设计",
-        "更新项目清单、实施政策与分期计划"
+        "更新项目清单、实施政策与分期计划",
+        "v0.8｜把六类接口收束成一个 1:1 城市原型：C7 CIVIC STATION"
       ],
       "geojson_layers": [
         "geometry/land_use.geojson",
@@ -414,7 +435,10 @@
       ],
       "metrics": [
         "city_completeness_segment_count",
-        "conceptual_building_count"
+        "conceptual_building_count",
+        "flagship_physical_prototype_count",
+        "preregistered_observation_slot_count",
+        "civic_station_operating_state_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -808,7 +832,8 @@
       "title_zh": "AI+场景赋能新范式与智能化AI活力城市设计",
       "mandatory": true,
       "report_sections": [
-        "AI 创新生态、人才画像与 AI+ 场景"
+        "AI 创新生态、人才画像与 AI+ 场景",
+        "v0.8｜把六类接口收束成一个 1:1 城市原型：C7 CIVIC STATION"
       ],
       "geojson_layers": [
         "geometry/public_space.geojson",
@@ -818,7 +843,10 @@
       "metrics": [
         "ai_scenario_count",
         "industry_test_scenario_count",
-        "non_ai_baseline_coverage_ratio"
+        "non_ai_baseline_coverage_ratio",
+        "flagship_physical_prototype_count",
+        "preregistered_observation_slot_count",
+        "civic_station_operating_state_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -857,7 +885,8 @@
       "mandatory": true,
       "report_sections": [
         "AI 创新生态、人才画像与 AI+ 场景",
-        "蓝绿空间、公共空间与城市风貌"
+        "蓝绿空间、公共空间与城市风貌",
+        "v0.8｜把六类接口收束成一个 1:1 城市原型：C7 CIVIC STATION"
       ],
       "geojson_layers": [
         "geometry/public_space.geojson",
@@ -866,7 +895,10 @@
       ],
       "metrics": [
         "public_space_count",
-        "pilgrimage_landmark_count"
+        "pilgrimage_landmark_count",
+        "flagship_physical_prototype_count",
+        "preregistered_observation_slot_count",
+        "civic_station_operating_state_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -938,7 +970,8 @@
       "title_zh": "一带全球AI创新活动体系与长期运营设计",
       "mandatory": true,
       "report_sections": [
-        "更新项目清单、实施政策与分期计划"
+        "更新项目清单、实施政策与分期计划",
+        "v0.8｜把六类接口收束成一个 1:1 城市原型：C7 CIVIC STATION"
       ],
       "geojson_layers": [
         "geometry/phasing.geojson",
@@ -947,7 +980,10 @@
       "metrics": [
         "public_space_count",
         "ai_scenario_count",
-        "implementation_path_count"
+        "implementation_path_count",
+        "flagship_physical_prototype_count",
+        "preregistered_observation_slot_count",
+        "civic_station_operating_state_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",

@@ -103,3 +103,9 @@ Any future third-party image, font, code library, map layer, institutional logo 
 - `assets/figures/ai-urban-form-change.svg` / `.en.svg`: submission-original / AI-assisted vector diagram; no third-party logo, image, map tile, font file or proprietary diagram is embedded. Spatial interfaces require later verification against official geometry, field surveys and professional requirements.
 
 - `assets/figures/key-area-spatial-sections.svg` / `.en.svg` and rendered `key-areas.png` / `.en.png`: submission-original / AI-assisted spatial section diagrams. No third-party image, logo, map tile, font file or identifiable person is embedded; all people/buildings/trees are diagrammatic primitives, and the sections are conceptual rather than surveyed existing conditions.
+
+
+## v0.8 新增资产 / New assets
+
+- `c7-civic-station-prototype*.svg`、重建的 `key-areas*.png` 与两份 JSON 均由本投稿在 v0.8 内原创生成；未使用第三方照片、Logo、地图瓦片或字体文件。
+- 15 个 observation slot 是未测工作结构，不含个人信息、真实坐标或现场数据。
