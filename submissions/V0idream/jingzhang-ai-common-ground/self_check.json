@@ -59,13 +59,17 @@
         "submissions/V0idream/jingzhang-ai-common-ground/self_check.json",
         "submissions/V0idream/jingzhang-ai-common-ground/sources.json",
         "submissions/V0idream/jingzhang-ai-common-ground/standard_matrix.json",
+        "submissions/V0idream/jingzhang-ai-common-ground/visual/assets/run-six-gate-proofing.js",
+        "submissions/V0idream/jingzhang-ai-common-ground/visual/assets/six-gate-proof-evidence.json",
+        "submissions/V0idream/jingzhang-ai-common-ground/visual/assets/six-gate-proofing.schema.json",
+        "submissions/V0idream/jingzhang-ai-common-ground/visual/assets/synthetic-proof-cases.json",
         "submissions/V0idream/jingzhang-ai-common-ground/visual/index.en.html",
         "submissions/V0idream/jingzhang-ai-common-ground/visual/index.html"
       ],
       "ai_package_stages": {
         "submissions/V0idream/jingzhang-ai-common-ground": "formal"
       },
-      "total_bytes": 6337843,
+      "total_bytes": 6907922,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -123,6 +127,10 @@
       "ok": true,
       "issues": [],
       "metrics_seen": {
+        "proofing_gate_count": 6.0,
+        "synthetic_proof_pass_count": 7.0,
+        "proofing_pilot_duration_weeks": 12.0,
+        "regional_interface_count": 5.0,
         "site_area_sqm": 11412825.386,
         "green_ratio": 0.215536,
         "public_space_ratio": 0.056098
@@ -139,7 +147,7 @@
       "summary": {
         "standard_matrix_items": 6,
         "design_depth_items": 15,
-        "known_metric_refs_required": 13,
+        "known_metric_refs_required": 19,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
@@ -147,7 +155,7 @@
           "standard": 6,
           "depth": 15,
           "data": 10,
-          "metric": 13
+          "metric": 18
         }
       }
     },
