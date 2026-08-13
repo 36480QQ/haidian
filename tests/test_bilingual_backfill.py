@@ -76,6 +76,25 @@ class BilingualBackfillTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, "submissions root must not be a symbolic link"):
                 submission_dirs(root, [])
 
+    def test_artifact_only_rejects_ambiguous_slug_and_empty_selection(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp) / "repo"
+            first = root / "submissions" / "alice" / "same-slug"
+            second = root / "submissions" / "bob" / "same-slug"
+            for package in (first, second):
+                package.mkdir(parents=True)
+                (package / "proposal.md").write_text(
+                    '---\nlanguage: "en"\n---\n# Proposal\n', encoding="utf-8"
+                )
+
+            with self.assertRaisesRegex(ValueError, "ambiguous"):
+                submission_dirs(root, ["same-slug"])
+            self.assertEqual(
+                [first], submission_dirs(root, ["submissions/alice/same-slug"])
+            )
+            with self.assertRaisesRegex(ValueError, "did not match"):
+                submission_dirs(root, ["missing"])
+
     def test_front_matter_parser_accepts_utf8_bom(self) -> None:
         front, body = parse_front_matter("\ufeff---\nlanguage: zh\n---\n正文\n")
         self.assertEqual(["language: zh"], front)

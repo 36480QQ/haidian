@@ -113,6 +113,29 @@ def is_symlink_free_contained_path(path: Path, root: Path) -> bool:
     return path.resolve().is_relative_to(root.resolve())
 
 
+def resolve_only_selection(found: list[Path], only: list[str], repo_root: Path) -> list[Path]:
+    if not only:
+        return found
+    selected: list[Path] = []
+    for raw in only:
+        candidate = Path(raw)
+        if candidate.is_absolute():
+            matches = [path for path in found if path == candidate.resolve()]
+        elif "/" in raw or "\\" in raw:
+            target = (repo_root / candidate).resolve()
+            matches = [path for path in found if path == target]
+        else:
+            matches = [path for path in found if path.name == raw]
+            if len(matches) > 1:
+                choices = ", ".join(path.relative_to(repo_root).as_posix() for path in matches)
+                raise ValueError(f"--only `{raw}` is ambiguous; use an exact path: {choices}")
+        if not matches:
+            raise ValueError(f"--only `{raw}` did not match a discovered submission")
+        if matches[0] not in selected:
+            selected.append(matches[0])
+    return sorted(selected)
+
+
 def submission_dirs(repo_root: Path, only: list[str]) -> list[Path]:
     submissions_root = repo_root / "submissions"
     if submissions_root.is_symlink():
@@ -122,10 +145,7 @@ def submission_dirs(repo_root: Path, only: list[str]) -> list[Path]:
         for path in submissions_root.glob("*/*/proposal.md")
         if is_symlink_free_contained_path(path, submissions_root)
     )
-    if not only:
-        return dirs
-    wanted = set(only)
-    return [directory for directory in dirs if directory.name in wanted or directory.as_posix() in wanted]
+    return resolve_only_selection(dirs, only, repo_root)
 
 
 def languages(submission_dir: Path) -> tuple[str, str]:
