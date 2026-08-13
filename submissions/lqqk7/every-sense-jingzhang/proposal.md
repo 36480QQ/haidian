@@ -33,7 +33,7 @@ iteration: "v5.4"
 | --- | --- | --- | --- |
 | 方案封面 | `assets/media/cover.webp` | 原创矢量构图：AI 开启与 AI 关闭两条完全等价的服务线并列，线上十个节点对应十个独立完成节点，三个开放节点标示三处重点区域 | `assets/media/cover.md` 提供可直接用作替代文本的完整文字等价描述 |
 | 音频导览 | `assets/media/audio-guide.m4a` | 2 分 34 秒中文导览，覆盖核心命题、AI 开关服务等价、空间骨架、三区两翼分工、十节点的评价意义与边界声明；旁白为系统语音合成，无真人录音、无音乐、无实地录音 | `assets/media/audio-guide.vtt` 二十六条同源字幕与 `assets/media/audio-guide.md` 全文文字稿 |
-| 多模态短片 | `assets/media/journey.mp4` | 63 秒七镜头，其中一段为第 16 章交互场景的逐帧实录：连续演示“播放引导流光”与“切换 AI 关闭”两次真实操作，切换前后节点位置与服务可达性读数不变 | `assets/media/journey.vtt` 外挂字幕、`assets/media/journey.md` 分镜与文字稿、`assets/media/journey-poster.webp` 静止海报 |
+| 多模态短片 | `assets/media/journey.mp4` | 63 秒七镜头，其中一段为第 16 章交互场景的逐帧实录：连续演示“播放引导流光”与“切换 AI 关闭”两次真实操作，切换前后节点位置与已声明覆盖读数不变（声明层口径，非现场绩效） | `assets/media/journey.vtt` 外挂字幕、`assets/media/journey.md` 分镜与文字稿、`assets/media/journey-poster.webp` 静止海报 |
 | 交互场景 | `visual/index.html` 第 16 章 | Canvas 轴测场景：可切换 AI 开关、播放引导流光、逐节点展开场景卡，鼠标与键盘两种操作等价 | `visual/assets/scene-fallback.png` 静态后备视图与 `<noscript>` 降级路径，全站离线运行 |
 
 四件交付物逐条对齐智能体任务书 `multimodal_presentation.guardrails` 的五条守则。其一，音频与视频均不自动播放，须由使用者主动触发，播放控件可键盘操作。其二，音频与视频均提供同源字幕与全文文字稿，用词与画面完全一致，不存在“音频版更完整、文字版为摘要”的层级差。其三，生成工具、制作方法、权利边界与个人数据边界逐项记录于三份说明文件，未使用第三方素材、人物肖像或未清权字体。其四，全部画面为原创矢量与数据驱动渲染，无实拍、无生成式影像，并在画面内标注“概念建议 / CONCEPT”，不作为现场证据或效果承诺。其五，交互场景与展示页完全本地打包，不加载任何远程脚本、字体、瓦片或统计代码，且静态图纸、双语 PDF 与离线 HTML 仍按要求完整提交 [source:SOURCE-REGISTRY]。

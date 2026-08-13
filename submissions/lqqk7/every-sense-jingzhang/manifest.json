@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "2c5a2e8d53fe8b045424222b4a7b923df49c6b1e9a35d310f79f6cdd2ffa187e"
+      "sha256": "a832ad546268d8b0dc8445e2c1bfc598152a7d67a7bc3a3685c598421ae14a10"
     },
     {
       "path": "agent.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "1eebf20f1054dace4cf53c9adb1619a242c4d181e721e214c9e4078888a6a66b"
+      "sha256": "254f81b0e48753e7170b88fd6a4688ffd9de07a6e321f20064045cf9d49f72f2"
     },
     {
       "path": "compliance_matrix.json",
@@ -88,7 +88,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "dc8bb2eafa70824892749df705ce07e00d93be46c269f6e32048e8d6c0ae1f37"
+      "sha256": "c25d48dde7a9bc5ff930f7f038db67bc7f2b2259d9c9a7bcd974cc3604fa8794"
     },
     {
       "path": "report/narrative.md",
@@ -121,7 +121,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "220035ddc5e2cd0937ad7026b8e9cd05bb1903fae7acdc3f51d8a49d6fba9da5"
+      "sha256": "d9de44e9b3c90ff338b952f9258a41b1d7db51ae4f1dc88558e354fce2307d8a"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -218,7 +218,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "f8040de84dabcc202cef4e734c805476336c73612ae240441e2fe0ff8ebd1604"
+      "sha256": "4105e6439293103cc3f69deaa2a62060f6ea515c75b4cb65a8397ae9b5aba7e2"
     },
     {
       "path": "report/proposal.en.html",
@@ -226,7 +226,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "2ee249949a30e1393312d1f4597732344a3cb8fd803b781d6209ff30b68af5fa"
+      "sha256": "64f73557a54abec10fbab9413e99fb3fdfb62ae3ecad9a3ec783e513a5cab756"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -250,7 +250,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "c98e12df9aa93269639f67e0c86d3822111811b3ec25f225646dcc666ee7ecab"
+      "sha256": "72a902fd74adadd3ce08a8e4b152541d6ba94e2fb41afb18bd5412513c62705e"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -355,7 +355,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "ad1ddb8036e525c23ee186642fe68f2befbc70bd0ce36fa1c746a007dc350837"
+      "sha256": "7d1219c6f4b7e881c15ff8f234d411184f1784c277d19b6bba8a96be42fb6888"
     },
     {
       "path": "assets/media/cover.webp",
@@ -443,12 +443,12 @@
       "required": false,
       "title_zh": "万感京张 多模态短片（中文旁白 · 中英双语标注）",
       "title_en": "Every Sense Jing-Zhang multimodal short film (Chinese narration, bilingual on-screen labels)",
-      "description_zh": "63 秒短片，七个镜头：片头主题、总体结构与三处重点区、骨架与等价服务网络、三处重点区的人尺度运行合同、第 16 章交互场景的逐帧实录、品牌语法与文化底线、片尾边界声明。交互段实录连续呈现「播放引导流光」与「切换 AI 关闭」两次真实操作，切换前后十个独立完成节点的位置与可达性、以及服务可达性读数 10 / 10、2、3 / 3 完全不变。中文合成旁白，画面关键标注中英双语，中文字幕既烧录在画面上也提供外挂 WebVTT。无真人录音、无音乐、无实拍、无第三方素材、无生成式影像。",
+      "description_zh": "63 秒短片，七个镜头：片头主题、总体结构与三处重点区、骨架与等价服务网络、三处重点区的人尺度运行合同、第 16 章交互场景的逐帧实录、品牌语法与文化底线、片尾边界声明。交互段实录连续呈现「播放引导流光」与「切换 AI 关闭」两次真实操作，切换前后十个独立完成节点的位置、以及已声明覆盖读数 10 / 10、2、3 / 3 完全不变（声明完整度，非现场绩效）。中文合成旁白，画面关键标注中英双语，中文字幕既烧录在画面上也提供外挂 WebVTT。无真人录音、无音乐、无实拍、无第三方素材、无生成式影像。",
       "description_en": "A 63-second film in seven shots: title, overall structure and the three key areas, the framework and equivalent service network, the human-scale operating contracts of the three key areas, a frame-accurate capture of the chapter-16 interactive scene, the brand grammar and cultural baseline, and the closing scope statement. The captured sequence performs two real interactions — play the guidance flow, then switch to AI OFF — after which the ten independent-completion nodes and the service readout of 10 / 10, 2 and 3 / 3 remain unchanged. Synthetic Chinese narration, bilingual on-screen labels, Chinese captions both burnt in and supplied as WebVTT. No human recording, no music, no live-action footage, no third-party assets, no generative imagery.",
       "poster": "assets/media/journey-poster.webp",
       "caption": "assets/media/journey.vtt",
       "transcript": "assets/media/journey.md",
-      "sha256": "9bc4cb314e7655b65c428d240542e17c0e6dd6e56a86db07078bc8eaeadbafeb"
+      "sha256": "5b8bca9aefb98d0c1ed89fe1b25b0237375d51633ffe7337d6ffda627ed0453c"
     },
     {
       "path": "assets/media/journey-poster.webp",
@@ -468,7 +468,7 @@
       "title_en": "Multimodal short film Chinese captions",
       "description_zh": "11 条 WebVTT 中文字幕，时间轴由逐句合成样本的实测长度与显式静音间隔精确累加得到，与旁白严格同步；用词与画面烧录字幕、`journey.md` 文字稿完全一致。",
       "description_en": "Eleven WebVTT Chinese caption cues. The timeline is derived by exact accumulation of the measured length of each synthesised sentence and the explicit silence gaps, so it is strictly synchronised with the narration; the wording is identical to the burnt-in captions and to the transcript in journey.md.",
-      "sha256": "d090544e87392b10ae38c499444d0a17a1af48dd845f570f288417e0c5de47df"
+      "sha256": "21d4a9da37182afdbacef25a314cca8512c11d1811f272f03d587fdbc043889f"
     },
     {
       "path": "assets/media/journey.md",
@@ -478,7 +478,7 @@
       "title_en": "Multimodal short film storyboard, transcript and rights note",
       "description_zh": "七个镜头的分镜与画面文字（中英）对照、旁白全文（含时间码）、与 proposal.md 的来源对应表、画面渲染与交互场景逐帧录制的方法记录、语音合成与权利声明、已知限制。同时论证看／听／读三条通道承载相同内容，是方案 AI ON = AI OFF 等价路径原则在自身交付物上的应用。",
       "description_en": "A shot-by-shot storyboard with bilingual on-screen text, the full narration with time codes, a source mapping to proposal.md, the production record for frame rendering and for the frame-accurate capture of the interactive scene, the synthesis and rights statement, and known limitations. It also documents that watching, listening and reading carry identical content, applying the proposal's own AI ON = AI OFF equivalence principle to its own deliverable.",
-      "sha256": "3c5feec62d0deaf0dafd36f62f863108a98e755819a13d244e1170d15824cd77"
+      "sha256": "a8819cf8fb0283cb9c4cb69245eee1b39ad233028ee5b10d6b6e04e2ea3680f5"
     },
     {
       "path": "visual/assets/seb-spec.json",
@@ -559,7 +559,7 @@
       "translation_of": "assets/media/journey.vtt",
       "title_zh": "旅程短片英文字幕轨",
       "title_en": "English caption track for the journey film",
-      "sha256": "591f319eb06c1f47d29034a944cc5681515ff30b54758ad5fa88a6146809d4b5"
+      "sha256": "b3db3068625b98921de3972b2ac10f795f1514cc41faaf0f1b182252818c2bdb"
     },
     {
       "path": "assets/media/audio-guide-en.vtt",
