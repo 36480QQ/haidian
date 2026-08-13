@@ -31,7 +31,7 @@ iteration: "v1.0"
 
 \*\*总体设计范围（11.4 km²）\*\*对应 `geometry/site_boundary.geojson` 的临时 polygon，需达到控制性详细规划深度的城市设计 [standard:MOHURD-CONTROL-DETAILED-PLANNING]。 [depth:land_use_layout]。其面积按 EPSG:4548 投影复算为 11,412,825 m²，差异源于 provisional 边界本身的粗略性 [metric:site_area_sqm]。在官方红线到位前，本层面积与所有比例均按"方向性"对待，并在 `assumptions.json#A-CONTROLS-001` 中声明。
 
-\*\*重点片区（368.4 ha）\*\*由众智园（192.1 ha）、北京 AI 原点社区（104.3 ha）、大钟寺（72.0 ha）三处组成，对应 `geometry/key_areas.geojson` [source:AGENT-TASKBOOK]。 [data:geometry/key_areas.geojson#PROV-KEY-001]。 [data:geometry/key_areas.geojson#PROV-KEY-002]。 [data:geometry/key_areas.geojson#PROV-KEY-003]。本轮复算面积为 1,929,202 m² + 1,043,237 m² + 720,454 m²，合计 369.3 ha，与公告 368.4 ha 在方向上一致，差异来自临时边界 [metric:key_area_zhongzhiyuan_sqm]。 [metric:key_area_beijing_ai_origin_sqm]。 [metric:key_area_dazhongsi_sqm]。
+\*\*重点片区（368.4 ha）\*\*由众智园（约 192.9 ha，临时几何复算；公告口径 192.1 ha）、北京 AI 原点社区（104.3 ha）、大钟寺（72.0 ha）三处组成，对应 `geometry/key_areas.geojson` [source:AGENT-TASKBOOK]。 [data:geometry/key_areas.geojson#PROV-KEY-001]。 [data:geometry/key_areas.geojson#PROV-KEY-002]。 [data:geometry/key_areas.geojson#PROV-KEY-003]。本轮复算面积为 1,929,202 m² + 1,043,237 m² + 720,454 m²，合计 369.3 ha，与公告 368.4 ha 在方向上一致，差异来自临时边界 [metric:key_area_zhongzhiyuan_sqm]。 [metric:key_area_beijing_ai_origin_sqm]。 [metric:key_area_dazhongsi_sqm]。（各重点区面积为临时几何方向性估算，官方 polygon 到位后须重算）
 
 ![三层范围与空间工作框架图](assets/figures/land-use-structure.png)
 
@@ -43,11 +43,15 @@ iteration: "v1.0"
 
 ### 三大定位与五大功能
 
-按公告 1.5（1）要求，本方案把"AI 原生创新城区、铁路遗产活化、全龄友好（含无障碍）"作为三大定位，把"产业创新、生活服务、文化展示、公共交往、生态蓝绿"作为五大功能，并把它们逐一对应到用地代码 [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]。三大定位 → 五大功能 → 用地代码的映射详见 `standard_matrix.json`，并在正文中作为后续每个设计的判断基准 [depth:three_level_scope_framework]。
+按公告 1.5（1）"三大定位、五大功能"框架，本方案不作另立框架，而是将自身设计逐一定位到任务书原定义：**三大定位**——① 百年京张文化带（以京张铁路 1909 年自主建造遗产为母题，铁路遗存廊道 + 遗产慢行脊串联三核）；② 都市 AI 生活体验带（AI 原生生活服务、无障碍与全龄友好沿京张绿脉落地）；③ AI 融合创新带（模型—算力—数据—治理全栈自主创新与开源协作）。**五大功能**——① AI 全栈自主创新体系；② 世界级 AI 创新生态；③ AI+ 场景赋能新范式；④ 智能化 AI 活力城市；⑤ AI 治理全球话语权 [source:AGENT-TASKBOOK]。三大定位 → 五大功能 → 用地代码的映射详见 `standard_matrix.json`，并作为后续每个设计的判断基准 [depth:three_level_scope_framework] [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]。
 
 ### 三区两翼协同回路
 
-三区（众智园、北京 AI 原点社区、大钟寺）两翼（北翼衔接上地—西二旗 AI 算力带、南翼衔接中关村核心创新主轴）构成"研发—转化—产业—生活—展示"的回路 [source:AGENT-TASKBOOK]。 [depth:overall_spatial_structure]。众智园承担国家平台、概念验证与中试；AI 原点承担源头创新、开源发布与人才生活；大钟寺承担领军企业、智能体新业态与数据要素；北翼承接算力调度与上游研发，南翼承接应用场景与品牌传播。
+三区（众智园、北京 AI 原点社区、大钟寺）与任务书定义的**两翼**——**中关村科技服务翼**（依托中关村 IP 与资本，承接要素全球化配置、开源协作与品牌传播）与**小月河场景赋能翼**（沿小月河—京张绿脉组织 AI 场景赋能，塑造智能化 AI 活力城市）——构成"研发—转化—产业—生活—展示"的协同回路 [source:AGENT-TASKBOOK]。 [depth:overall_spatial_structure]。众智园承担国家平台、概念验证与中试；AI 原点承担源头创新、开源发布与人才生活；大钟寺承担领军企业、智能体新业态与数据要素；中关村科技服务翼承接 IP、资本与全球要素配置，小月河场景赋能翼承接场景试点与活力营造。
+
+### 区域协同（方向性，非既有合作）
+
+本方案将京张 AI 创新带置于海淀区—北京市创新网络中，提出与**北纬社区、未来科学城、怀柔科学城、经开区及京津冀**的创新协同方向：向北衔接未来科学城的基础研究与大科学装置，向东联动经开区产业转化，向北纬社区输出开源与人才培训，向怀柔科学城对接算力与数据基础设施，并向京津冀延伸场景标准与治理输出 [source:AGENT-TASKBOOK]。上述协同均为**方向性建议**，未声明既有合作协议或落地工程，具体机制待相关主体确认。
 
 ### 全球 AI 创新生态案例（5–8 个）
 
@@ -71,10 +75,10 @@ iteration: "v1.0"
 - **产业目标**：以 AI 全栈自主为骨架，构建国家级 AI 中试与开源生态；
 - **功能布局**：四类用地代码（0802 AI 研发创新 267 ha、1401 公园绿地 259 ha、05 产业服务商业 337 ha、0702 社区服务配套 278 ha，合计 1,141 ha [metric:land_use_area_0802_sqm]。 [metric:land_use_area_1401_sqm]。 [metric:land_use_area_05_sqm]）形成"研发—服务—生活—生态"的四带结构 [depth:land_use_layout]。 [data:geometry/land_use.geojson#LU-001]。 [data:geometry/land_use.geojson#LU-002]。 [data:geometry/land_use.geojson#LU-003]。 [data:geometry/land_use.geojson#LU-004]；
 - **创新指标体系**：AI 场景节点数、产业建筑面积、绿地率与公共空间率、慢行连通率（详见 §11）；
-- **更新框架**：84 栋建筑中保留 21 栋、改造 31 栋、新建 32 栋 [data:geometry/buildings.geojson#BLDG-001]。 [depth:retain_renovate_demolish]。 [metric:building_density]，平均容积率 0.79 [metric:floor_area_ratio]；
+- **更新框架（假设模型，非控规结论）**：在临时边界与**假设建筑模型**（现状建筑层数、强度、功能与产权均未知，见 `assumptions.json#A-CONTROLS-003`）下，算法演示得到 84 栋建筑中保留 21 栋、改造 31 栋、新建 32 栋 [data:geometry/buildings.geojson#BLDG-001]。 [depth:retain_renovate_demolish]。 [metric:building_density]，平均容积率 0.79 [metric:floor_area_ratio]；上述拆改留分类、栋数与强度**仅为概念建议 / 算法演示**，不构成法定拆改留或工程结论，须经专业团队以官方资料复核后方可采用；
 - **交通组织**：京张遗址公园慢行主轴（greenway）1 条、铁路遗存廊道（rail）1 条、次干路 2 条、连接线 1 条 [data:geometry/roads.geojson#ROAD-001]。 [data:geometry/roads.geojson#ROAD-002]；
-- **蓝绿系统**：连续公园绿地 1,409 ha [metric:green_area_sqm] + 公共活动界面 836 ha [metric:public_space_area_sqm]，绿地率 12.34% [metric:green_ratio]、公共空间率 7.33% [metric:public_space_ratio]；
-- **风貌控制**：建筑高度 4–16 层，体量由南向北逐步抬升，强化京张遗址公园中轴线 [depth:height_massing_character]。 [standard:MOHURD-ARCH-DESIGN-DEPTH-2016]。
+- **蓝绿系统**：连续公园绿地约 140.9 ha（1,408,601 m²，临时几何复算）[metric:green_area_sqm] + 公共活动界面约 83.6 ha（836,346 m²，临时几何复算）[metric:public_space_area_sqm]，绿地率 12.34% [metric:green_ratio]、公共空间率 7.33% [metric:public_space_ratio]；（注：绿地与公共空间绝对面积为临时边界下的方向性估算，官方红线到位后重算；公顷值由 m² ÷10000 换算，此前版本误作 ÷1000 导致十倍偏差，已更正）
+- **风貌控制（概念性形态研究，非法定高度管控）**：建筑高度 4–16 层为概念性体量区间，体量由南向北逐步抬升，强化京张遗址公园中轴线 [depth:height_massing_character]。 [standard:MOHURD-ARCH-DESIGN-DEPTH-2016]；实际高度与视线通廊须待控规、文保（建设控制地带）与市政条件确认；
 
 ## 重点区域详细设计
 
@@ -82,7 +86,7 @@ iteration: "v1.0"
 
 ![三处重点区域索引与设计任务图](assets/figures/key-areas.png)
 
-### 众智园 AI 自主创新加速区（192.9 ha）
+### 众智园 AI 自主创新加速区（约 192.9 ha，临时几何；公告口径 192.1 ha）
 
 定位为国家 AI 自主创新加速器，主导产业为模型/芯片中试、智能体评测与开源协作。空间结构为花园型自主创新街区：京张遗址公园绿脉穿区而过，形成"中央绿轴 + 四个创新簇"的格局。建筑更新以新建智造工场与改造旧厂房为主，保留少量有铁路工业遗产价值的车间作为 AI 展览与开源博物馆 [data:geometry/key_areas.geojson#PROV-KEY-001]。 [depth:retain_renovate_demolish]。交通组织与轨道站点一体设计，慢行优先于车行。公共空间强调"中试即展演"，把概念验证工场与开源发布厅同时作为公共客厅。AI 场景以"中试工场 + 算力网络评测 + 概念验证"为主，对应 NODE-01/02/03/04 [data:geometry/ai_service_nodes.geojson#NODE-01]。实施风险：权属与现状建筑年代结构待确认，部分用地可能涉及京张遗址公园保护带 [standard:BARRIER-FREE-ENVIRONMENT-LAW]。
 
@@ -128,6 +132,64 @@ iteration: "v1.0"
 
 > 上述 14 张卡中，01、02、03 明确为 **industry_test**；04 为产业算力；其余覆盖治理、生活、文化、出行与无障碍。每张卡均在 `geometry/ai_service_nodes.geojson` 中落点，并设置 `privacy_boundary` 与 `human_review` 字段 [standard:GENERATIVE-AI-INTERIM-MEASURES]。
 
+### 场景卡完整字段（14 张）
+
+每张卡统一包含 8 个字段：① 数据输入；② 系统边界；③ 模型能力；④ 触发条件；⑤ 服务流程；⑥ 失败降级；⑦ 可测 KPI；⑧ 空间设施需求。以下先给出 3 张产业测试卡的**可复现实验协议**，其余 11 张给出字段摘要。
+
+#### 01 · AI 模型中试工场（industry_test，NODE-01，众智园）
+
+- **数据输入**：公开数据集 + 行业脱敏样本；模型权重 / 评测集经授权接入，原始数据不出域。
+- **系统边界**：仅服务模型训练—中试—评测闭环，不直连城市运行系统；算力与数据通过沙箱隔离。
+- **模型能力**：支持多模态模型微调、蒸馏与开源权重发布；内置评测基线。
+- **触发条件**：企业 / 高校提交中试申请 → 人工复核（必）→ 分配算力配额。
+- **服务流程**：申请 → 合规审查 → 沙箱训练 → 自动评测 → 开源发布 / 驳回。
+- **失败降级**：算力波动时降级为排队重试；评测异常时冻结发布并人工复核；数据泄露风险触发熔断。
+- **可测 KPI**：中试周期 ≤ 14 天 / 单任务；评测可复现率 ≥ 95%；开源发布合规率 100%。
+- **空间设施需求**：中试工场（≥2,000 m²）、算力机房、开源发布厅、人工复核工位。
+- **可复现实验协议**：基线 = 同一公开评测集 + 固定随机种子；记录环境 / 数据版本 / 超参；保存期限 = 评测日志脱敏后留存 180 天；人工决策点 = 发布前合规复核；退出机制 = 项目结束 30 天内销毁副本。
+
+#### 02 · 城市智能体沙盒（industry_test，NODE-11，大钟寺）
+
+- **数据输入**：模拟城市运行数据 + 受控真实接口（只读、脱敏）。
+- **系统边界**：沙箱内运行，禁止越权控制真实基础设施；所有写操作需人工授权。
+- **模型能力**：多智能体编排、仿真推演、策略回放。
+- **触发条件**：治理 / 企业提交沙盒实验 → 人工复核（必）→ 授权沙箱环境。
+- **服务流程**：场景建模 → 仿真 → 策略评估 → 人工确认 → 仅以报告形式输出建议。
+- **失败降级**：越权请求一律拒绝并告警；仿真失稳自动暂停；输出不可直接联动物理系统。
+- **可测 KPI**：越权拦截率 100%；仿真与历史回放误差 ≤ 10%；建议采纳前人工确认率 100%。
+- **空间设施需求**：沙盒机房、治理协同室、可视化推演厅。
+- **可复现实验协议**：基线 = 固定历史回放数据集；记录策略版本与随机种子；保存期限 = 实验数据脱敏留存 90 天；人工决策点 = 任一写操作前授权；退出机制 = 实验结束即销毁沙箱。
+
+#### 03 · AI 算力网络评测场（industry_test，NODE-06，AI 原点）
+
+- **数据输入**：算力节点遥测（聚合、匿名）、评测任务日志。
+- **系统边界**：仅评测算力调度与能效，不托管业务数据。
+- **模型能力**：算力调度优化、能效基准评测、故障预测。
+- **触发条件**：平台方提交评测任务 → 人工复核（必）→ 分配评测窗口。
+- **服务流程**：接入 → 基准测试 → 能效评分 → 发布榜单 / 报告。
+- **失败降级**：节点离线时跳过并告警；评分异常触发复测；断电由电网协同降级。
+- **可测 KPI**：评测覆盖节点 ≥ 80%；能效评分可复现误差 ≤ 5%；报告准时率 ≥ 98%。
+- **空间设施需求**：评测机房、能效监测中心、行业发布空间。
+- **可复现实验协议**：基线 = 标准算力基准套件 + 固定负载；记录硬件 / 固件版本；保存期限 = 评测日志脱敏留存 120 天；人工决策点 = 榜单发布前复核；退出机制 = 任务结束 7 天内归档。
+
+#### 04–14 · 字段摘要
+
+| # | 名称 | 数据输入 | 系统边界 | 可测 KPI | 空间设施 |
+| -- | ---- | ---- | ---- | ---- | ---- |
+| 04 | 分布式低碳算力驿站 | 能源数据聚合 | 电网侧，不参与业务 | 断电频次、PUE | 算力驿站 |
+| 05 | 慢行断点诊断 | 匿名轨迹 | 仅分析不干预 | 断点修复率 | 慢行节点 |
+| 06 | 人才生活管家 | 用户授权画像 | 个人域，最小必要 | 服务响应 | 社区客厅 |
+| 07 | AI 安全治理廊 | 治理数据 | 监管专用 | 合规率 | 治理廊 |
+| 08 | 数据要素剧场 | 公开字段 | 交易沙箱 | 撮合量 | 数据剧场 |
+| 09 | 校企转化客厅 | 学术脱敏 | 高校—企业 | 转化数 | 转化客厅 |
+| 10 | 开源发布厅 | 公开 | 全球直播 | 发布数 | 发布厅 |
+| 11 | AI 健康驿站 | 严格授权 | 医疗专用 | 服务覆盖 | 健康驿站 |
+| 12 | AI 教育课堂 | 教学脱敏 | 教育域 | 完课率 | 教育舱 |
+| 13 | AI 法律服务舱 | 案件脱敏 | 司法专用 | 误法率 | 法律舱 |
+| 14 | 无障碍智能出行 | 行程授权 | 出行域 | 误识率 | 接驳点 |
+
+> 全部 14 张卡的 `privacy_boundary`、`human_review` 与 `data_input` 字段已在 `geometry/ai_service_nodes.geojson` 的 `properties` 中结构化落点；未闭合的数据字典（样本来源、成本级别、保存期限、退出条件）作为后续专业团队深化项在 `assumptions.json` 中登记。
+
 ### AI 全栈自主创新空间分布
 
 模型/算力 → 众智园 + 北翼；数据/治理 → 大钟寺；源头创新/开源 → AI 原点；应用与公共场景 → 沿京张绿脉分布 [depth:overall_spatial_structure]。
@@ -144,7 +206,7 @@ iteration: "v1.0"
 | 0702 | 社区服务与配套用地     | 278.28   | 24.4% | [data:geometry/land_use.geojson#LU-004] |
 | 合计   | 11,412,825 m² | 1,141.29 | 100%  | [metric:site_area_sqm]                  |
 
-建筑规模：建筑基底 87.04 万 m²，建筑密度 7.63% [metric:building_density]，平均层数按加权约 9.9 层估算，总建筑面积约 905.7 万 m² [metric:total_floor_area_sqm]，综合容积率 0.79 [metric:floor_area_ratio]。建筑层数范围 4–16 层，由南向北逐步抬升，形成京张主轴低—中—高的天际线 [depth:height_massing_character]。
+建筑规模（假设建筑模型下的算法演示，非控规 / 法定结论）：建筑基底 87.04 万 m²，建筑密度 7.63% [metric:building_density]，平均层数按加权约 9.9 层估算，总建筑面积约 905.7 万 m² [metric:total_floor_area_sqm]，综合容积率 0.79 [metric:floor_area_ratio]；上述数字源自 `assumptions.json#A-CONTROLS-003` 的假设建筑模型（现状层数、强度、功能、产权均未知），仅作算法演示与体量量级参考，**不构成控规深度或工程结论**，须在官方建筑普查与控规条件到位后由专业团队复核 [depth:height_massing_character]。建筑层数范围 4–16 层为概念性体量区间，由南向北逐步抬升，形成京张主轴低—中—高的天际线。
 
 拆改留分类：84 栋建筑按 `building_action` 字段分类 [data:geometry/buildings.geojson#BLDG-001]。 [depth:retain_renovate_demolish]：
 
@@ -160,7 +222,7 @@ iteration: "v1.0"
 
 交通组织以京张遗址公园慢行主轴为核心，构建"绿色慢行 + 铁路遗存 + 次干路微循环 + 站点一体化"四级体系 [depth:traffic_rail_slow_parking]：
 
-- **京张遗址公园慢行主轴**：贯穿南北，长度按场地南北跨度约 9.7 km，宽度按规划带状公园 ≥30 m，承担慢行、公共活动与 AI 公共场景三重功能 [data:geometry/roads.geojson#ROAD-001]；
+- **京张遗址公园慢行主轴**：贯穿南北，长度按场地南北跨度约 9.7 km，宽度按规划带状公园 ≥30 m（宽度为概念性规划建议，基于 20 m 中心线缓冲的简化估算，**非道路红线或横断面结论**，待市政与园林条件确认）[data:geometry/roads.geojson#ROAD-001]，承担慢行、公共活动与 AI 公共场景三重功能；
 - **铁路遗存廊道**：保护性展示 1909 年钢轨断面与站点遗存，作为文化地标 [data:geometry/roads.geojson#ROAD-002]；
 - **次干路 2 条**：分别服务众智园—AI 原点—大钟寺三区衔接，微循环组织 [data:geometry/roads.geojson#ROAD-003]；
 - **连接线 1 条**：服务社区—站点最后一公里，优先慢行 [data:geometry/roads.geojson#ROAD-005]。
@@ -206,6 +268,8 @@ iteration: "v1.0"
 | 一期（phase_1） | 京张遗址公园活力带 + AI 原点启动区 | 4,979,199  | 绿脉贯通、原点站 VI、开源发布厅运营  | 官方红线延期 |
 | 二期（phase_2） | 众智园 AI 自主创新加速区       | ~3,800,000 | 中试工场 + 算力驿站 + 智眸塔概念  | 权属与文保  |
 | 三期（phase_3） | 大钟寺 AI 产业聚集区 + 外围联动  | ~2,600,000 | 数据要素剧场 + 治理廊 + 街区四象限 | 古刹视线通廊 |
+
+> 分期面积为基于临时边界与假设开发模型的**概念性量级估算**，非法定分期或工程投资结论，须经专业团队以官方资料复核后采用。
 
 ### 年度活动体系（长期运营）
 

@@ -85,7 +85,7 @@ The overall design scope organises the urban-renewal framework at control-plan d
 
 - **Transport**: one Jing-Zhang heritage park slow spine (greenway), one railway heritage corridor (rail), two arterials, one connector [data:geometry/roads.geojson#ROAD-001] ·  [data:geometry/roads.geojson#ROAD-002];
 
-- **Blue-green**: continuous park green 1,409 ha [metric:green_area_sqm] + public activity frontage 836 ha [metric:public_space_area_sqm], green ratio 12.34% [metric:green_ratio], public-space ratio 7.33% [metric:public_space_ratio];
+- **Blue-green**: continuous park green ~140.9 ha (1,408,601 m², provisional geometry) [metric:green_area_sqm] + public activity frontage ~83.6 ha (836,346 m², provisional geometry) [metric:public_space_area_sqm], green ratio 12.34% [metric:green_ratio], public-space ratio 7.33% [metric:public_space_ratio]; (Note: the hectare values are converted from m² ÷ 10,000; an earlier draft used ÷ 1,000 causing a tenfold error and has been corrected.)
 
 - **Character control**: building height 4–16 floors, massing rising northwards, reinforcing the Jing-Zhang heritage park central axis [depth:height_massing_character] ·  [standard:MOHURD-ARCH-DESIGN-DEPTH-2016].
 

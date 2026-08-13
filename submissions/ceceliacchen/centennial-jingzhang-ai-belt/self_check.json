@@ -67,6 +67,13 @@
       "severity": "info",
       "target": "visual/index.html",
       "message": "Static HTML visualization is generated without external dependencies."
+    },
+    {
+      "check_id": "LAND_USE_TOPOLOGY",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/land_use.geojson",
+      "message": "Land-use topology recomputed from geometry and reconciled with metrics.json; provisional boundaries disclosed, official polygons pending."
     }
   ],
   "notes": [

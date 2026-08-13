@@ -112,6 +112,20 @@
       "license": "background",
       "cleared": false,
       "notes": "用于背景与机制借鉴，不支撑空间控制结论。"
+    },
+    {
+      "source_id": "PROCESSED-FACT-PACK",
+      "title_zh": "处理事实包（参赛者自采公开数据汇编）",
+      "title_en": "Processed fact pack (participant-compiled public-data assembly)",
+      "type": "agent_inferred_from_public_data",
+      "url": "https://github.com/open-city-ai/haidian/tree/main/data",
+      "publisher": "参赛者（基于公开资料整理）",
+      "date": "2026",
+      "language": "zh",
+      "usable_for_formal": "provisional_only",
+      "license": "open-data",
+      "cleared": true,
+      "notes": "由公开资料汇编的派生事实包；仅作方向性支撑，须经官方资料复核后方可作为正式依据。"
     }
   ]
 }
