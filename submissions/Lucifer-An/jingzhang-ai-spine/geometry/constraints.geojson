@@ -7,8 +7,8 @@
       "id": "CONSTRAINT-SITE",
       "properties": {
         "id": "CONSTRAINT-SITE",
-        "layer": "CONSTRAINT",
-        "source_type": "repository_maintainer_provisional",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_inferred_from_public_data",
         "confidence": "medium",
         "geometry_role": "provisional_constraint",
         "area_sqm_declared": 11345657.1,
@@ -64,8 +64,8 @@
       "id": "CONSTRAINT-RAIL",
       "properties": {
         "id": "CONSTRAINT-RAIL",
-        "layer": "CONSTRAINT",
-        "source_type": "agent_designed_concept",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
         "confidence": "low",
         "geometry_role": "design_proposal",
         "area_sqm_declared": 287514.5,
