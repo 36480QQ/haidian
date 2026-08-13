@@ -15,6 +15,16 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 > **The proposal in one sentence**: let the spirit of self-reliance embodied in Zhan Tianyou's herringbone switchback grow, along the very same corridor, into the Chinese character for "people" that begins the Chinese word for artificial intelligence - **AI, for the people**.
 
+## Overall Concept, Name, English Name and Naming System
+
+The **overall concept** is: taking the "herringbone switchback" at Qinglong Bridge as a geometric motif, forming a spatial narrative of "a century of self-reliance, the character for people rising". Through four origin points of independent innovation and AI governance demonstration, we give Haidian the spatial identity of "the source of independent innovation".
+
+**Name**: JINGZHANG RISING (京张向上)
+
+**English Name**: JINGZHANG RISING
+
+**Naming System**: One spine · Three terraces · Two wings · Two stitching systems
+
 **JINGZHANG RISING**
 One spine · Three terraces · Two wings · Two stitching systems
 
@@ -59,6 +69,64 @@ The three levels are bound by **two-way verification**: if a strategy at one lev
 | Coordinated research area | How to organise the AI ecosystem and future urban form | Full-stack self-reliant innovation chain, four-origins narrative, global event system | `compliance_matrix.json`, `standard_matrix.json` |
 | Overall design area | How industry, renewal, transport and character land on the map | One spine, three terraces, two wings, two stitching systems; 31 parcels | [data:geometry/land_use.geojson#LU-001] [data:geometry/roads.geojson#ROAD-001] |
 | Key areas | How the three districts reach detailed-design depth | Three distinct sets of moves for Origin Terrace, Origin Works and Bell Hub | [data:geometry/key_areas.geojson#PROV-KEY-003] |
+
+## The Coordination Loop: Three Positionings, Five Functions, Three Districts and Two Wings
+
+The announcement and the agent taskbook fix three frameworks: the three positionings, the five functions, and the three districts with two wings [source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]. **This proposal does not reinvent them and does not rename them.** It answers the harder question: how the three close into a **loop** rather than sitting as three separate lists [depth:overall_spatial_structure].
+
+### 1. The three positionings are a timeline, not three parallel belts
+
+| Positioning (official) | Question answered | Time | What this proposal does |
+| --- | --- | --- | --- |
+| **Centennial Jing-Zhang Cultural Belt** (百年京张文化带) | Where we came from | Past to present | Four origins (1909 self-reliance, 1949 the examination journey, 1980 innovation, 2026 AI) strung into 9.6 walkable kilometres |
+| **Urban AI Life Experience Belt** (都市AI生活体验带) | How people use it now | Present | Twelve AI+ scenario cards covering commuting, healthcare, admin, childcare and employment, each with a staffed human channel |
+| **AI Convergence Innovation Belt** (AI融合创新带) | Where we are going | Present to future | Full-stack self-reliant innovation chain, open-source ecosystem, industry-grade test scenarios |
+
+**These are yesterday, today and tomorrow on one line, not three parallel belts.** A proposal that only tells history becomes a memorial park; one that only builds industry becomes a business park; one that only sells experience becomes a shopping street. All three share the same 9,574.15 m heritage spine [metric:heritage_spine_length_m], so the positionings layer on one route instead of competing for land.
+
+### 2. How the five functions divide the work
+
+| Function (official) | Core role | Spatial anchor | Verifiable delivery |
+| --- | --- | --- | --- |
+| **Full-stack self-reliant AI system** | Chip to framework to model to application | Zhongzhiyuan AI Self-Reliant Innovation Acceleration Area | Full-stack blocks organised by chain segment, not by company size |
+| **World-class AI innovation ecosystem** | Open source, talent, capital, translation | Beijing AI Origin Community | Open-source release hall, corridor desks, campus-adjacent translation blocks |
+| **New paradigm of AI+ scenario empowerment** | Scenario opening, testing, iteration | Xiaoyuehe Scenario Empowerment Wing | Twelve scenario cards plus four industry-grade test scenarios |
+| **Intelligent, vibrant AI city** | Everyday, perceptible public services | The spine and the three terraces | Three-colour status display plus human fallback channel |
+| **Global voice in AI governance** | Standards, evaluation, institutional export | Zhongzhiyuan AI Self-Reliant Innovation Acceleration Area | Human fallback and the public answer sheet as a reproducible minimum |
+
+**The fifth function carries the heaviest investment here, deliberately.** Catching up on chips and models takes time, but **the vacancy in governance rules exists right now**. No city anywhere has answered who is accountable once AI enters public service. The answer offered here is not a declaration but a **copyable checklist**: six public-answer-sheet items and five hard requirements for the human channel. That is the most citable path, and the truest sense of the word "voice" [depth:governance_mechanism].
+
+### 3. The loop: making factors actually circulate
+
+Three districts and two wings, if merely placed side by side, are only a zoning diagram. Here they are organised as **one directed, closed loop**:
+
+> **Zhongzhiyuan (build capability) → Origin Community (gather talent, translate results) → Xiaoyuehe Wing (supply scenarios, validate) → Dazhongsi (form industries, meet the market) → Zhongguancun Wing (allocate factors and capital) → back into Zhongzhiyuan (reinvest in R&D)**
+
+| Step | District (official name) | Input | Output | Handed to next |
+| --- | --- | --- | --- | --- |
+| 1 Capability | Zhongzhiyuan AI Self-Reliant Innovation Acceleration Area | R&D, compute, standards | Self-reliant models and evaluation definitions | Capability that can be tested |
+| 2 Talent | Beijing AI Origin Community | Open-source community, housing, translation space | Teams and open-source results | Products awaiting validation |
+| 3 Scenarios | Xiaoyuehe Scenario Empowerment Wing | Real settings, test permissions | Validation data and failure records | Solutions proven usable |
+| 4 Industry | Dazhongsi AI Industry Cluster | Station-city footfall, consumption, data factors | Revenue and market feedback | Commercial proof |
+| 5 Factors | Zhongguancun Technology Service Wing | Capital, IP, global allocation | Reinvestment and international channels | Back to step 1 |
+
+**The value of this loop is that it can be checked.** Every break has an observable symptom: capability nobody validates (1→3 broken), open-source results that never commercialise (2→4 broken), revenue that never returns to R&D (4→5→1 broken). Whether the loop closes is therefore listed as an observable item in the annual public recomputation, rather than being drawn as an arrow diagram and left there [depth:implementation_roadmap].
+
+**Why the two wings are wings and not districts.** Neither wing holds independent spatial primacy. Their job is to **feed the three districts in both directions**: one supplies factors and capital, the other supplies scenarios and validation. A wing is judged not by its own output but by **how many additional closed loops it lets the three districts complete**.
+
+### 4. Regional innovation coordination
+
+The belt is not an island, and its place in Beijing and the wider region must be stated [depth:regional_coordination]:
+
+| Partner | Relationship | Division of labour |
+| --- | --- | --- |
+| **Huairou Science City** | Upstream | Takes the industrialisation downstream of its large facilities and basic research; does not duplicate large scientific facilities |
+| **Future Science City** (Changping) | Parallel, complementary | Upstream general AI capability feeding its energy and pharmaceutical platforms |
+| **Beijing Economic-Technological Development Area** (Yizhuang) | Downstream | Supplies algorithms and standards; leaves advanced manufacturing and connected-vehicle scale-up there, and does not compete for manufacturing land |
+| **Beiwei Community** (北纬社区) | Neighbouring innovation community | Named in the announcement; included in the belt's innovation-community network through shared open-source releases, events and talent services, with slow-mobility and public-service interfaces reserved |
+| **Beijing-Tianjin-Hebei (the Zhangjiakou end)** | The other end of the corridor | Algorithms and standards stay in Haidian; large-scale training compute and green power sit at the Zhangjiakou end (see the regional collaboration chapter) |
+
+**A necessary boundary statement**: apart from this design area, none of the above lies within the scope of this urban design. This proposal makes no land-use, indicator or construction arrangement for any of them, and every statement here is a judgement about coordination and a conceptual recommendation [assumption:A-CONTROLS-001]. The organiser's public materials give no boundary or statutory extent for "Beiwei Community," so it is treated **only as a coordination partner**: its geography is not inferred and no space is allocated to it, pending official data and the recalculation protocol.
 
 ## Coordinated Research Area: Industry and Future City Research
 
@@ -510,9 +578,108 @@ Everything in this section is a **conceptual governance recommendation for an op
 
 This proposal creates no new administrative body, no new charge and no new mandatory obligor. The implementation path proposed is to **embed the requirements above into the design guidelines, tenancy conditions and operating assessments of public space and public service facilities on this belt** — landing them through existing instruments rather than adding an institutional layer.
 
-### 5. The institutional design of scenario opening
+### 5. The Temporal Commons: AI Innovation as an Open Data Ecosystem
+
+**The Temporal Commons is the proposal's core differentiation.** Rather than describe Jingzhang Rising as a "geographic space", it is better understood as a **data-infrastructure timeline** [depth:planning_innovation] [depth:long_term_operation]. It is a place where past heritage, present innovation and future ecosystem coexist and mutually reinforce each other through transparent data, collective learning from failure, and cross-generational dialogue.
+
+#### 5.1 From geographic space to temporal commons
+
+| Dimension | Traditional business park model | Jingzhang Rising "temporal commons" model |
+|-----------|--------------------------------|------------------------------------------|
+| Spatial role | Tenant leasing, property management | Data hub, governance laboratory |
+| Value flow | Land-value capture | Shared innovation outcomes and data contribution |
+| Enterprise relationship | Competition or acquisition | Collaboration with "contribution-to-capability" cycles |
+| Time scale | 5-10 year update cycles | Hundred-year heritage → modern innovation → future ecosystem (three-generation progression) |
+| Data flow | Each company proprietary; data silos | Public-layer data open, application-layer data contributed back, governance-layer answer sheets transparent |
+| Measurement | GDP, talent settlement numbers | "Data contribution rate", "human-fallback coverage rate", "governance failure records" |
+
+#### 5.2 The four-layer data architecture of the temporal commons
+
+**Layer 1: Public Foundation Data (Government-issued, permanently open)**
+- Source: Urban built-environment scans, weather, traffic flow, public events
+- Access: Enterprises and research institutions may use for product development and algorithm validation
+- Responsibility: Government departments update periodically and annotate source and method
+- Spatial host: Zhiyuan Terrace's "AI Open Data Center" [data:geometry/key_areas.geojson#PROV-KEY-001]
+
+**Layer 2: Industrial Application Data (Enterprise-submitted, terms public)**
+- Process: Data generated by AI products operating in pilot scenarios (e.g., actual traffic flows from signal optimisation, selection rates from recommendation algorithms)
+- Return mechanism: After product launch, each quarter a "application outcome review" is filed; publishable portions are shared within the belt (reducing redundant development)
+- Incentive design: Teams contributing high-quality data gain later funding connections, government procurement advantage, and tax benefits
+- Spatial host: Origin Square's "Innovation Outcome Translation Center" [data:geometry/key_areas.geojson#PROV-KEY-002]
+
+**Layer 3: Governance Transparency Data (System-generated, real-time queryable)**
+- Content: Three-colour status cards for AI services, failure records, human-channel response times, public complaints and feedback summary
+- Visualization: Real-time 3D dashboard (displayed centrally on public structures like the Compute Clock)
+- Access: Entire society may query (without personal identifiers), real-time update, no delay
+- Spatial host: Intelligence Bell's "Governance Visualization Center" [data:geometry/key_areas.geojson#PROV-KEY-003]
+
+**Layer 4: Academic & Community Data (Agreement-based sharing, research feedback)**
+- Process: Universities and community groups may apply for access to anonymised datasets for academic research and social assessment
+- Responsibility: Published results must cite the data source; findings must be shared back with belt community
+- Deliverable: Annual "Jingzhang Data Stories", collecting academic findings, community feedback, and policy suggestions
+- Spatial host: Peking University, Tsinghua, Chinese Academy of Sciences research centres within the belt (specific data-authorisation rules must be separately justified under the PRC Data Security Law and related current regulations; this proposal does not presuppose a standard name)
+
+#### 5.3 Cross-generational co-creation framework
+
+**Three-generation dialogue: past-present-future** [depth:design_mechanism_innovation]:
+
+| Era | Representative figures | Inherited legacy | Present responsibility | Future promise |
+|-----|------------------------|-------------------|----------------------|-----------------|
+| **Century past** (1909-2009) | Zhan Tianyou and self-reliant pioneers | Jing-Zhang Railway heritage (physical) + self-reliant spirit (culture) | Protect heritage, tell the story well, inspire successors | Commit to continuing self-reliance |
+| **Present** (2009-2026) | Zhongguancun innovators, Haidian planners | Full-stack self-reliance chain, compute concentration, governance exploration | Open scenarios, share data, record failures | Replicable methodology |
+| **Future** (2026+) | AI developers, residents, global participants | New technology, new products, new governance experience | Contribute data continuously, participate in review, drive iteration | Apply globally |
+
+**Physical manifestation**:
+- Temporal timeline path: Four "era pillars" (1909, 1949, 1980, 2026) embedded along 9.6 km of the spine, each inscribed with "where we came from", "what we do here", "how the next generation will use it"
+- Annual co-creation forum: "Cross-generational dialogue" themed conference held each autumn at Zhiyuan Terrace, inviting railway historians, contemporary innovation leaders, young developers and outside visitors
+- Open Data Prize: Annual recognition for "most socially valuable data contribution" and "most honest failure record", with winners receiving belt community spending credit and honour certificate
+
+#### 5.4 Alignment with global AI governance
+
+The "Temporal Commons + Transparency + Failure Records" model proposed by Jingzhang Rising echoes yet differs from **publicly known categories of international governance practice**. The paradigms listed here are widely recognised international governance approaches, cited to situate this proposal's relative position - they are not performance-data citations of any specific project and are not treated as recomputable metrics:
+
+| Governance paradigm | Representative regions | Core mechanism | Jingzhang innovation |
+|-----------|----------|-----------------|---------------------|
+| Open Data Movement | Globally common practice | Public data opening | Jingzhang adds "application data return" (enterprises must contribute) + "failure record transparency" (not only successes) |
+| Regulatory Sandbox | Common regulatory tool used in Singapore, the UK, and elsewhere | Controlled experimentation | Jingzhang adds "temporal progression" (sandbox is not just short-term trial, but long-term ecosystem) |
+| AI Ethics Board | Common governance form in the EU, California, and elsewhere | Ethical review | Jingzhang adds "human fallback" (review findings translate to human-channel design) |
+| Data Commons | Common community practice in India, Kenya, and elsewhere | Community data commons | Jingzhang adds "three-colour visualization" (governance becomes public landscape, not just backend data) |
+
+**Necessary declaration**: the table above is a general comparison of governance-paradigm categories; it does not represent that this team has verified the official data or performance metrics of any specific project. Citing specific case data would require separate verification with a traceable, citable source.
+
+#### 5.5 Risk and boundaries of the temporal commons
+
+**Necessary declarations** of limit and assumption [assumption:A-CONTROLS-001]:
+
+1. **Data security and privacy legal boundaries**: All data sharing and publication in this proposal must strictly comply with PRC *Data Security Law* and *Personal Information Protection Law*; any data practice must be professionally assessed and approved by regulators.
+2. **Enterprise data property boundaries**: Ownership, use rights and benefit rights over enterprise-generated application data must be clearly defined in tenancy contracts; this proposal does not arbitrate property disputes.
+3. **Political risk of government data publication**: Certain public data may carry security sensitivity; publication must pass statutory security review.
+4. **Sustainability of cross-generational framework**: A hundred-year planning cycle exceeds the governance span of any single actor; sustained commitment requires institutional and legal safeguards (e.g. revision of city master plans, legislative protection).
+
+The proposal recommends embedding "Temporal Commons" guiding principles in the *Jingzhang Rising Urban Design Guidelines*; specific data-governance rules shall be co-drafted by data protection, informatization and industry associations, not determined by planning alone.
+
+### 6. The institutional design of scenario opening
 
 **A scenario is not an event; it is an institution.** The proposal recommends a closed loop of an **open scenario list plus application, review, authorisation and post-hoc review**: government periodically publishes the public spaces, facilities and data available for opening; teams apply through a standard process; authorised tests must publish their boundaries and safety plans; and on completion a review report must be filed with the publishable portion made public. **Opening without losing control is the core competitiveness of governance here.**
+
+### 7. Factor guarantees and technology testing: keeping the innovation chain from breaking halfway
+
+**The real threshold of an innovation belt is not whether good ideas exist, but at which link an idea breaks.** The proposal offers guarantee-mechanism recommendations for four key factors [depth:industrial_support]:
+
+| Factor | Common breaking point | Recommended guarantee mechanism | Spatial host |
+| --- | --- | --- | --- |
+| **Compute** | Small teams cannot afford or negotiate machine-room access | A compute-scheduling and green-power accounting window offering one-stop matching of "local inference + remote training" and public disclosure of green-power share | Intelligence Bell |
+| **Data** | Data holders are afraid to open it; those who want it cannot get it | A public data opening list + tiered authorisation + post-use review disclosure | Origin Terrace |
+| **Scenarios** | No real environment exists to verify lab-scale indicators | The scenario-opening list institution (see above) and the four industry-grade test scenarios | Xiaoyue River Scenario-Empowerment Wing |
+| **Talent and capital** | Teams arrive but cannot be retained; early projects cannot raise funds | Corridor workspaces, low-cost housing, global factor allocation and IP/capital empowerment via the Zhongguancun Technology Services Wing | Origin Works / Zhongguancun Technology Services Wing |
+
+**Three bottom lines for technology testing.** Testing on this belt differs from a closed laboratory - it happens in real public space and must therefore be constrained:
+
+1. **Tests must publish their boundaries**: the test area, timing, affected population and exit method must be publicised in advance; the public has the right to know it is inside a test environment.
+2. **Tests must be immediately terminable**: any test in public space must have an instant human-termination method, and the pre-existing service must be fully restored after termination.
+3. **Tests must file a review, including failures**: a test that only reports success and never failure is not a test. The publishable portion of the review report must be published - the same logic as the failure-record clause in the public report card.
+
+**The factor-guarantee mechanism design is entirely a conceptual recommendation.** The actual arrangements for fiscal, land, data-authorisation and property-rights matters must be determined through statutory procedure; this proposal makes no commitment on behalf of any entity [assumption:A-CONTROLS-001].
 
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
@@ -560,11 +727,27 @@ Commuter cycleways and leisure greenways should be **separated**. Commuting want
 
 Seven stitching links cross the rail corridor [metric:east_west_stitch_count]. Each is simultaneously a green link, a pedestrian link and a view corridor, joining western campuses to eastern communities. Their sections derive from the logo fold geometry, giving the family a recognisable trait.
 
-### 3. Station-city integration
+### 3. How AI actually enters transport, rather than adding screens
+
+**Most "smart transport" fails because it optimises vehicle throughput rather than the experience of people.** Every AI transport application in this belt must answer one question: **whose journey did it shorten** [depth:traffic_rail_slow_parking]?
+
+| AI capability | Real problem addressed | Where | Verifiable indicator | What it must not do |
+| --- | --- | --- | --- | --- |
+| Adaptive signal timing | Long crossing waits on stitching links push pedestrians into unsafe crossings | Seven stitching links and main junctions | Average pedestrian wait; unsafe crossing counts | Never trade pedestrian green time for vehicle throughput |
+| Walking-route guidance | Rail severance forces detours; newcomers cannot tell where to cross | Spine and terrace wayfinding | Actual reduction in detour distance | No compulsory app; a physical wayfinding equivalent must exist |
+| Tidal kerbside management | Commuter peaks and evening activity need opposite arrangements | Kerbside along the belt | Illegal parking rate; cycle clutter | Not used to issue automated fines |
+| Accessible-route detection | Wheelchair and pram users cannot tell which routes have steps | Whole slow-mobility network | Continuous accessible-route coverage | Accessibility information is never a paid feature |
+| Feeder demand forecasting | First and last services mismatch actual end-of-trip demand | Rail stations along the belt | Interchange waiting time | Prediction never replaces guaranteed baseline service |
+
+**One hard constraint**: whenever any of these services fails, **the existing physical wayfinding, staffed presence and fixed timetable must remain independently usable**. Signals must not enter an unpredictable state because an algorithm failed, and signboards must not be replaced by "scan the code for directions." This is the human-fallback principle applied to transport.
+
+**On rail.** Existing stations along the belt form its skeleton. This proposal adds no line proposals: network changes follow statutory process and are not for a design proposal to decide [assumption:A-CONTROLS-001]. What the proposal can do is **convert the 300 m around each station from space you pass through into space you stay in**, through concourses, four-quadrant walking connections and feeder arrangements, so that interchange need not happen in rain or full sun.
+
+### 4. Station-city integration
 
 Rail stations along the belt organise four-quadrant walking, cycle interchange and feeder services through station concourses. **A station concourse is not a retail atrium but a civic living room**: it should provide free seating, drinking water, baby-care and accessible facilities, along with an AI service point and a staffed fallback counter.
 
-### 4. Municipal and new infrastructure
+### 5. Municipal and new infrastructure
 
 The principle is that **new infrastructure follows public nodes** [depth:municipal_new_infrastructure]: edge-compute waypoints, edge nodes, distributed energy, storage and charging are co-located compactly with public space nodes rather than forming isolated machine-room islands. In addition:
 
@@ -574,7 +757,21 @@ The principle is that **new infrastructure follows public nodes** [depth:municip
 
 Capacity, routing and load assessment for conventional utilities must follow official data; this proposal draws no engineering conclusions [assumption:A-CONTROLS-001].
 
-### 5. Public services
+### 6. The energy cost of compute must be made visible
+
+**An AI innovation belt cannot dodge an awkward fact: compute is a heavy electricity user.** A proposal that discusses compute capacity without discussing its energy cost is not honest, and under reduction-led development it would not survive scrutiny [depth:municipal_new_infrastructure].
+
+Three layers of response:
+
+**First, move the bulk out.** Large-scale training compute sits at the Zhangjiakou end (see the regional collaboration chapter); the Haidian end keeps only the light compute needed for inference and development. **This is a division on the energy ledger, not a rhetorical one.**
+
+**Second, whatever stays must publish its cost.** Edge-compute waypoints and nodes within the belt must publish three figures: live energy use, green-power share, and **where the waste heat goes**. Heat rejection is certain to occur; the only question is whether it is dumped into the air or recovered. The proposal suggests exploring recovery for space heating or hot-water pre-heating at public nodes where conditions allow — **feasibility requires professional thermal assessment, and this proposal draws no engineering conclusion and promises no recovery ratio.**
+
+**Third, turn energy use into public information.** The Bell of Compute is not only a sculpture; it is a live display of energy use and green-power share. **Once residents can see how much power this belt used today and how much of it was green, compute stops being an abstraction and becomes a public question.** This follows the same logic as the public answer sheet: **publish first, and only then can there be discussion; make it visible, and only then can there be constraint.**
+
+Load forecasting, substation capacity and heating-network capacity must be assessed by qualified parties against official utility data; this proposal draws no engineering conclusions [assumption:A-CONTROLS-001].
+
+### 7. Public services
 
 Education, health, elderly care, childcare, culture and sport are provided on a fifteen-minute innovation living circle, with two gaps prioritised: **low-cost housing and shared living facilities** for young founders, and **age-friendly and digital-assistance facilities** for older residents. Continuous barrier-free design applies along the whole belt in line with accessibility legislation.
 
@@ -678,12 +875,43 @@ The personas in this proposal are not only an industry analysis; they are a test
 | Existing local residents | marginalised by renewal; new facilities feel unrelated to them | the five human fallback requirements, a standing review at the Examination Waystation, and neighbourhood AI service points | human lane compliance rate |
 | Elderly residents | high threshold for smart devices; excluded by digitalised services | AI must not become the only way to obtain a public service (binding clause) | the five requirements: same place, hours, rights, prominence, switchability |
 | Commuters and visitors | severance by the railway east to west; long detours | seven cross-corridor stitching links plus north-south continuity of the spine | slow mobility network length [metric:slow_mobility_network_length_m] |
+| Out-of-town visitors | do not know what to see, where to enter, or where they can cross | four origins strung into an "origin route"; a continuous metal 人-stroke inlay readable by the body without interpretive signage; physical wayfinding in station concourses | continuity of origin markers; physical wayfinding coverage |
+| Disabled and mobility-impaired users | steps, gaps and temporary obstructions make a known route fail without warning | continuous barrier-free design along the whole belt; accessible-route information published free of charge | continuous accessible-route coverage |
+| Low-income and gig workers | upgrading raises living costs and pushes them out | low-cost housing and shared living facilities enter the renewal project list; the public-return clause requires occupants to offer free training places | low-cost housing supply; number of public-interest places |
 
-**A standard the proposal sets for itself.** Rows four and five are its threshold. An innovation belt that makes local elderly people feel excluded has failed in governance terms, however impressive its industrial indicators. That is why the five human fallback requirements are written as binding clauses rather than aspirations, and are carried into acceptance and annual review [depth:renewal_project_list].
+**A standard the proposal sets for itself.** The last three rows are its threshold. An innovation belt that makes local elderly people feel excluded, that a wheelchair user cannot traverse, or that pushes out the low-income residents who were already there, has failed in governance terms — **however impressive its industrial indicators** [depth:renewal_project_list].
+
+### 5b. Inclusion is an admission condition, not a patch
+
+**The position of disadvantaged groups cannot be repaired afterwards; it can only be protected in advance.** Three requirements are written into admission rather than aspiration:
+
+**One: accessibility is continuous, or it does not count.** The common failure is compliance at points and rupture along the line — every building passes, yet the route from a front door to the metro entrance cannot be travelled. Acceptance is therefore measured on the **continuous route**, not on isolated facilities: any single break renders that route non-compliant. Design must meet accessibility legislation, with technical parameters set by qualified parties under the applicable codes [assumption:A-CONTROLS-001].
+
+**Two: accessibility information must be free and open.** Which route has steps, which ramp is under repair, which lift is out of service — this is essential information for wheelchair and pram users. It **must not be a paid feature and must not require a proprietary app**, and should be published as open data that third parties may use.
+
+**Three: fallback for the digitally excluded carries no entry test.** The five hard requirements for the human channel apply **regardless of who is at the counter**; nobody must prove they "cannot use a phone" in order to be served by a person. **A concession you must first prove you deserve is simply a new barrier.**
+
+**On visitors and residents.** The cultural narrative addresses outside visitors, but **not at the cost of local daily life**. The event system and pilgrimage landmarks must avoid the tourist-district pattern of being overwhelmed during festivals and empty the rest of the year: the four origins are first a daily walking route for residents and only second a destination for visitors. **The measure of success is not visitor numbers, but whether local people use it every day.**
 
 ### 6. A global AI event system
 
 A long-term event system of **one congress, one contest, one festival and one honour list** is proposed: an annual global AI open-source congress at Origin Works, a city-scale AI scenario challenge using the whole belt as its arena, a civic AI culture festival staged on the spine, and an annual open-source contribution list announced at the Origin Stele. The purpose of the event system is to convert one-off construction spending into **a continuing asset of attention**.
+
+### 7. First-start pilots: turning "can this be built" into something auditable within a year
+
+Whether a proposal is implementable does not depend on how many phases it draws. It depends on **whether it dares to name the first pilot and write down the failure test in advance**. Three **first-start pilot sites** are therefore proposed, all on already-built land with relatively simple tenure and no need for large-scale demolition, so each can begin before the official boundary is released [depth:implementation_roadmap].
+
+| Pilot | Location | First-year action | Suggested lead body | Acceptance test after one year | Failure test (triggers exit or redesign) |
+| --- | --- | --- | --- | --- | --- |
+| **1. Human-fallback model counter** | An existing government or community service counter within Origin Works | Convert one counter to the five hard requirements; staff the human channel on site and publish all six answer-sheet items | Local subdistrict office plus the counter's operating unit | 100% compliance of the human channel; all six items published; completion rate for older users no lower than before conversion | AI becomes the only entry point, or a red-status downgrade leaves no human channel to absorb demand |
+| **2. One stitching link opened** | The shortest and least obstructed of the seven cross-corridor links | Open one east-west slow-mobility link, with night lighting and step-free ramps | Local parks/transport authority plus the railway landowner | Walking detour distance falls; average daily crossings rise over three consecutive months | Tenure coordination prevents a start, or daily crossings after opening fall below half the projection |
+| **3. First scenario-opening list** | Xiaoyuehe Scenario Empowerment Wing | Publish the first three real test scenarios, with the full apply-assess-exit procedure | District science and technology authority plus scenario landowners | Every scenario in the first batch is taken up by a team that files a validation report, failures included | No team applies after publication, or teams that apply cannot actually get on site |
+
+**Why these three.** Each tests one of the proposal's three central claims: whether the governance core survives contact with a real counter (1), whether stitching actually changes walking behaviour (2), and whether opening scenarios actually attracts real teams (3). **None depends on the official boundary, none involves a demolition decision, and each returns a yes or no within a year.**
+
+**On the failure tests.** The final column is not a disclaimer; it is the methodological position of this proposal: **an implementation plan unwilling to write its failure test in advance cannot be held to account afterwards.** If a pilot misses its target, the reason should be published and the scheme adjusted, rather than quietly scaled up. This is the same logic as the "failure record" and "exit condition" entries in the public answer sheet [depth:risk_register].
+
+**Milestones and responsibility interfaces.** Phase 1 (2026-2028) takes the three pilots and the opening of the northern spine as its milestone; Phase 2 (2029-2031) takes a completed stitching network and the formed full-stack blocks; Phase 3 (2032-2035) takes station-city integration and a steady-state event system. Each phase may begin only after the previous phase has published its recomputation and pilot conclusions; **if that is not done, the next phase does not start.** All lead bodies above are **suggestions**; actual mandates must be settled through statutory process, and this proposal makes no commitment on any organisation's behalf [assumption:A-CONTROLS-001].
 
 ## Metrics, Area Recalculation, and Compliance Matrix
 
