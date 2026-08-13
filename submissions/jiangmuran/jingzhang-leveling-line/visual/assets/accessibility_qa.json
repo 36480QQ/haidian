@@ -77,6 +77,12 @@
    "pass": true
   },
   {
+   "sheet": "svg/device",
+   "min_font_units": 9.0,
+   "min_height_mm_at_A0": 4.73,
+   "pass": true
+  },
+  {
    "sheet": "svg/ecosystem",
    "min_font_units": 9.0,
    "min_height_mm_at_A0": 4.73,
@@ -227,6 +233,12 @@
    "pass": true
   },
   {
+   "sheet": "svg.en/device",
+   "min_font_units": 9.0,
+   "min_height_mm_at_A0": 4.73,
+   "pass": true
+  },
+  {
    "sheet": "svg.en/ecosystem",
    "min_font_units": 9.0,
    "min_height_mm_at_A0": 4.73,
@@ -361,21 +373,21 @@
  ],
  "offline_html": {
   "visual/index.html": {
-   "images": 24,
+   "images": 25,
    "images_without_alt": 0,
    "has_lang": true,
    "heading_level_jumps": 0,
-   "figcaptions": 25,
+   "figcaptions": 26,
    "interactive_elements_needing_focus": 0,
    "has_dark_mode": true,
    "inline_script_tags": 0
   },
   "visual/index.en.html": {
-   "images": 24,
+   "images": 25,
    "images_without_alt": 0,
    "has_lang": true,
    "heading_level_jumps": 0,
-   "figcaptions": 25,
+   "figcaptions": 26,
    "interactive_elements_needing_focus": 0,
    "has_dark_mode": true,
    "inline_script_tags": 0
@@ -384,13 +396,13 @@
  "asset_references": [
   {
    "file": "visual/index.html",
-   "references": 24,
+   "references": 25,
    "missing": [],
    "remote": []
   },
   {
    "file": "visual/index.en.html",
-   "references": 24,
+   "references": 25,
    "missing": [],
    "remote": []
   },

@@ -692,6 +692,10 @@ This link turns on one decision, drawn in FIG.17: **the ramp sits on the desire 
 ![FIG.12 Four-quadrant pedestrian connection and device queue reservoir at Dazhongsi](assets/figures/crossing.en.png)
 
 This was a sentence and nothing else. FIG.12 draws it: holding areas in all four quadrants, the device queue reservoir set behind the building line, and an as-measured column left deliberately empty — carrying capacity is computed on site from measured clear width.
+
+![FIG.24 The device envelope: what exactly goes in those 18 m²](assets/figures/device.en.png)
+
+**What goes inside those 18 m² had never been said either.** FIG.12 fixed a floor for the reservoir while this package had never drawn a device or stated how big one is — and an area is not a specification: two devices of equal footprint and different turning radii need different reservoirs. FIG.24 supplies an envelope rather than a product: no manufacturer, no model, only what a spatial proposal is entitled to fix — the volume a device may occupy and the clear width it must leave. Each of seven dimensions is marked with what bounds it, and **three are bounded by nothing but this proposal, marked in red on the sheet, because those are the ones to attack first**. On this envelope the 18 m² holds 8 devices, and the build refuses if the two sheets stop agreeing about the same piece of ground.
 - **Traffic.** Dazhongsi station integration. Points here span **three jurisdictions** — municipal road, rail station and commercial property — making them the most complex on the line.
 - **Scenarios carried.** S03 agent business service desk, S05 data-factor authorisation chain, S09 daily-service demonstration street, mostly F2.
 
@@ -1535,11 +1539,11 @@ An authorisation statement a reviewer cannot verify is not a statement. Each row
 
 <!-- LEDGERCOUNT:BEGIN -->
 
-**The file-level ledger sits outside the review input, so its result is brought in here.** `build_review_input` sends `proposal.md` and eight JSON files; neither `report/copyright_statement.md` nor `visual/assets/rights_ledger.json` is among them. **A rights ledger the reviewer structurally cannot open is, from the reviewer's position, exactly the unverifiable assertion this package objects to elsewhere.** All **114 shipped files** carry a clearance class; a file without one fails the build:
+**The file-level ledger sits outside the review input, so its result is brought in here.** `build_review_input` sends `proposal.md` and eight JSON files; neither `report/copyright_statement.md` nor `visual/assets/rights_ledger.json` is among them. **A rights ledger the reviewer structurally cannot open is, from the reviewer's position, exactly the unverifiable assertion this package objects to elsewhere.** All **116 shipped files** carry a clearance class; a file without one fails the build:
 
 | Clearance class | Files |
 |---|---|
-| `author-originated` | 92 |
+| `author-originated` | 94 |
 | `provisional-only-with-stated-limit` | 9 |
 | `author-originated-measurement` | 8 |
 | `author-originated-with-embedded-fonts` | 4 |
@@ -1594,7 +1598,7 @@ One point of citation discipline deserves stating plainly: **the cases are used 
 
 <!-- FIGINDEX:BEGIN -->
 
-There are 24 sheets, numbered FIG.00 to FIG.23. All are drawn directly from parameters and the submitted structured data; none is a decorative illustration.
+There are 25 sheets, numbered FIG.00 to FIG.24. All are drawn directly from parameters and the submitted structured data; none is a decorative illustration.
 
 | Sheet | Content | What to read on it |
 |---|---|---|
@@ -1622,6 +1626,7 @@ There are 24 sheets, numbered FIG.00 to FIG.23. All are drawn directly from para
 | FIG.21 | How far the nearest benchmark actually is: this proposal's own rule, applied to itself | This proposal argues repeatedly that review you must walk fifteen minutes to reach has not been given — and **nobody had measured the walk**. Measured: the worst place on the line is 1,111 m from the nearest benchmark, **30.9 minutes for P5, twice the limit this proposal holds others to**, and six of nine segments fail. The rule ships as a spacing requirement; the positions wait for the official alignment |
 | FIG.22 | Winter: water, ice, and two of this package's rules in collision | The three community points are read monthly, which means read in January. KIT-01 requires the stone flush with no trip hazard and FIG.16 gave that ±5 mm — **and a mark set flush into level paving sits in whatever the paving collects: the tolerance that makes it safe in September is what makes it dangerous in January**. The answer is a local high point, not a ring |
 | FIG.23 | Finding the nearest benchmark: which way, and how far | Markers appear only inside the stretches FIG.21 marks as failing — 48 of them at 150 m spacing, on the existing KIT-04, nothing new built. The face answers four things: direction, distance, P5's time, and the id. **And it states what signage cannot do — it does not make 1,111 m near; this is mitigation, not the fix** |
+| FIG.24 | The device envelope: what exactly goes in those 18 m² | FIG.12 fixed the device reservoir at ≥ 18 m² and this package had never drawn a device or said how big one is. An envelope, not a product: 1,200 × 700 × 1,300 mm, 1,800 mm turning circle, ≤ 120 kg. Each of seven dimensions is marked with what bounds it, and **three are bounded by nothing but this proposal — those are the ones to attack first**. The envelope puts 8 devices in the 18 m² |
 
 <!-- FIGINDEX:END -->
 
