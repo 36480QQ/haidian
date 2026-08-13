@@ -867,6 +867,10 @@ Logo安全区建议不小于节点圆直径，印刷最小宽度25 mm、屏幕�
 
 机器可读结果见 `visual/assets/project_library_rehearsal.json`。其中所有 `field_result` 保持空值，`field_results_completed=0`：本排演只检查合同结构，不证明场地、人员、安全、预算、服务质量、审批或公共成效。[metric:field_rehearsal_completed_count]
 
+#### 可运行的方法产品：生长网项目门协议
+
+本方案将“六智能体＋四道人门”进一步交付为可离线运行的规则产品，而不只停留在正文描述：`growth-mesh-project-gate.json` 定义角色、权限、合同字段、人类决策门、判定规则、证伪测试和事实边界；`growth-mesh-project-gate-fixtures.json` 提供正例与删字段反例；`growth-mesh-project-gate-run.js` 无需安装依赖即可用Node.js运行；`growth-mesh-project-gate-receipt.json` 保存本次实际运行回执。执行 `node visual/assets/growth-mesh-project-gate-run.js` 可复现 **6／6 个预期判断**，其中明确阻断“无运营主体的项目”“无AI等价路径的场景”和“无基线的体检”。该协议是可供其他片区桌面排演的概念方法，不是规划标准、认证或已部署系统；许可仍为COMMUNITY-DISPLAY-ONLY，除非投稿者另行书面授权复用。
+
 
 ## 评审证据索引
 
