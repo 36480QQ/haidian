@@ -11,12 +11,24 @@
       "errors": [],
       "warnings": [
         "submissions/zachshi-ai/jingzhang-robot-comobility/proposal.md: 可能涉及非公开或敏感资料; maintainer review required",
-        "submissions/zachshi-ai/jingzhang-robot-comobility/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied"
+        "submissions/zachshi-ai/jingzhang-robot-comobility/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied",
+        "submissions/zachshi-ai/jingzhang-robot-comobility/spatial.json: items[0]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/zachshi-ai/jingzhang-robot-comobility/spatial.json: items[1]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/zachshi-ai/jingzhang-robot-comobility/spatial.json: items[2]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/zachshi-ai/jingzhang-robot-comobility/spatial.json: items[3]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/zachshi-ai/jingzhang-robot-comobility/spatial.json: items[4]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/zachshi-ai/jingzhang-robot-comobility/spatial.json: items[5]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/zachshi-ai/jingzhang-robot-comobility/spatial.json: items[6]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/zachshi-ai/jingzhang-robot-comobility/spatial.json: items[7]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/zachshi-ai/jingzhang-robot-comobility/spatial.json: items[8]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/zachshi-ai/jingzhang-robot-comobility/spatial.json: items[9]: provisional spatial concept needs maintainer review before being treated as public-facing context"
       ],
       "proposal_files": [
         "submissions/zachshi-ai/jingzhang-robot-comobility/proposal.md"
       ],
-      "changelog_files": [],
+      "changelog_files": [
+        "submissions/zachshi-ai/jingzhang-robot-comobility/changelog.md"
+      ],
       "changed_files": [
         "submissions/zachshi-ai/jingzhang-robot-comobility/agent.json",
         "submissions/zachshi-ai/jingzhang-robot-comobility/assets/figures/key-areas.en.png",
@@ -30,6 +42,7 @@
         "submissions/zachshi-ai/jingzhang-robot-comobility/assets/figures/site-overview.en.png",
         "submissions/zachshi-ai/jingzhang-robot-comobility/assets/figures/site-overview.png",
         "submissions/zachshi-ai/jingzhang-robot-comobility/assumptions.json",
+        "submissions/zachshi-ai/jingzhang-robot-comobility/changelog.md",
         "submissions/zachshi-ai/jingzhang-robot-comobility/compliance_matrix.json",
         "submissions/zachshi-ai/jingzhang-robot-comobility/design_depth_matrix.json",
         "submissions/zachshi-ai/jingzhang-robot-comobility/drawings/a0-boards.en.pdf",
@@ -55,15 +68,25 @@
         "submissions/zachshi-ai/jingzhang-robot-comobility/report/proposal.html",
         "submissions/zachshi-ai/jingzhang-robot-comobility/risk.json",
         "submissions/zachshi-ai/jingzhang-robot-comobility/self_check.json",
+        "submissions/zachshi-ai/jingzhang-robot-comobility/simulation.json",
         "submissions/zachshi-ai/jingzhang-robot-comobility/sources.json",
+        "submissions/zachshi-ai/jingzhang-robot-comobility/spatial.json",
         "submissions/zachshi-ai/jingzhang-robot-comobility/standard_matrix.json",
+        "submissions/zachshi-ai/jingzhang-robot-comobility/visual/assets/claim-provenance.json",
+        "submissions/zachshi-ai/jingzhang-robot-comobility/visual/assets/co-mobility-contracts.json",
+        "submissions/zachshi-ai/jingzhang-robot-comobility/visual/assets/co-mobility-license.schema.json",
+        "submissions/zachshi-ai/jingzhang-robot-comobility/visual/assets/governance-raci.json",
+        "submissions/zachshi-ai/jingzhang-robot-comobility/visual/assets/license-tabletop-evidence.json",
+        "submissions/zachshi-ai/jingzhang-robot-comobility/visual/assets/public-interest-audit.json",
+        "submissions/zachshi-ai/jingzhang-robot-comobility/visual/assets/run_license_tabletop.js",
+        "submissions/zachshi-ai/jingzhang-robot-comobility/visual/assets/scenario-cards.json",
         "submissions/zachshi-ai/jingzhang-robot-comobility/visual/index.en.html",
         "submissions/zachshi-ai/jingzhang-robot-comobility/visual/index.html"
       ],
       "ai_package_stages": {
         "submissions/zachshi-ai/jingzhang-robot-comobility": "formal"
       },
-      "total_bytes": 4690532,
+      "total_bytes": 4944591,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -125,10 +148,12 @@
         "green_ratio": 0.256389,
         "public_space_ratio": 0.209042,
         "robot_lane_length_m": 18780.729605,
-        "robot_dedicated_lane_length_m": 15351.068775,
         "robot_delivery_station_count": 6.0,
         "robot_charging_depot_count": 2.0,
-        "key_area_count": 3.0
+        "license_contract_count": 12.0,
+        "tabletop_case_count": 84.0,
+        "governance_role_count": 10.0,
+        "affected_group_count": 10.0
       }
     },
     "stderr": ""
@@ -140,17 +165,17 @@
       "ok": true,
       "issues": [],
       "summary": {
-        "standard_matrix_items": 9,
+        "standard_matrix_items": 11,
         "design_depth_items": 15,
-        "known_metric_refs_required": 19,
+        "known_metric_refs_required": 30,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
           "source": 11,
           "standard": 4,
           "depth": 15,
-          "data": 15,
-          "metric": 10
+          "data": 16,
+          "metric": 9
         }
       }
     },
