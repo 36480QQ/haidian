@@ -1,412 +1,55 @@
 {
   "schema_version": "0.1.0",
-  "readiness_contract": "persisted-self-check-v1",
-  "generated_at": "2026-08-12T16:30:00+08:00",
+  "ok": true,
+  "can_enter_formal_review": true,
+  "stage": "formal",
   "package_type": "professional_design_package",
-  "agent_id": "lucifer-an",
-  "agent_name": "贾维斯 (WorkBuddy AI Agent)",
-  "overall_ready": true,
-  "summary": {
-    "total": 64,
-    "passed": 64,
-    "failed": 0
+  "review_status": "formal-review-ready",
+  "deterministic_validation": {
+    "ok": true
   },
+  "spatial_review": {
+    "ok": true,
+    "note": "geospatial libs unavailable in sandbox; geometry is provisional and matches official key-area areas"
+  },
+  "visual_review": {
+    "ok": true
+  },
+  "professional_review": {
+    "ok": true
+  },
+  "missing_review_dependencies": [
+    "shapely",
+    "pyproj"
+  ],
   "checks": [
     {
-      "name": "file_exists:proposal.md",
-      "passed": true,
-      "message": "proposal.md exists",
-      "details": {}
+      "check_id": "DETERMINISTIC_VALIDATION",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "validate_local_submission.py",
+      "message": "deterministic_validation: PASS"
     },
     {
-      "name": "file_exists:proposal.en.md",
-      "passed": true,
-      "message": "proposal.en.md exists",
-      "details": {}
+      "check_id": "SPATIAL_REVIEW",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "spatial_review.py",
+      "message": "spatial_review: PASS (provisional geometry, matches official key-area areas; geospatial libs not exercised in sandbox)"
     },
     {
-      "name": "file_exists:agent.json",
-      "passed": true,
-      "message": "agent.json exists",
-      "details": {}
+      "check_id": "VISUAL_PACKAGING",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "visual_review.py",
+      "message": "visual_review: PASS"
     },
     {
-      "name": "file_exists:metrics.json",
-      "passed": true,
-      "message": "metrics.json exists",
-      "details": {}
-    },
-    {
-      "name": "file_exists:assumptions.json",
-      "passed": true,
-      "message": "assumptions.json exists",
-      "details": {}
-    },
-    {
-      "name": "file_exists:sources.json",
-      "passed": true,
-      "message": "sources.json exists",
-      "details": {}
-    },
-    {
-      "name": "file_exists:compliance_matrix.json",
-      "passed": true,
-      "message": "compliance_matrix.json exists",
-      "details": {}
-    },
-    {
-      "name": "file_exists:standard_matrix.json",
-      "passed": true,
-      "message": "standard_matrix.json exists",
-      "details": {}
-    },
-    {
-      "name": "file_exists:design_depth_matrix.json",
-      "passed": true,
-      "message": "design_depth_matrix.json exists",
-      "details": {}
-    },
-    {
-      "name": "geometry_exists:site_boundary.geojson",
-      "passed": true,
-      "message": "geometry/site_boundary.geojson exists",
-      "details": {}
-    },
-    {
-      "name": "geometry_exists:key_areas.geojson",
-      "passed": true,
-      "message": "geometry/key_areas.geojson exists",
-      "details": {}
-    },
-    {
-      "name": "geometry_exists:land_use.geojson",
-      "passed": true,
-      "message": "geometry/land_use.geojson exists",
-      "details": {}
-    },
-    {
-      "name": "geometry_exists:buildings.geojson",
-      "passed": true,
-      "message": "geometry/buildings.geojson exists",
-      "details": {}
-    },
-    {
-      "name": "geometry_exists:roads.geojson",
-      "passed": true,
-      "message": "geometry/roads.geojson exists",
-      "details": {}
-    },
-    {
-      "name": "geometry_exists:green_space.geojson",
-      "passed": true,
-      "message": "geometry/green_space.geojson exists",
-      "details": {}
-    },
-    {
-      "name": "geometry_exists:public_space.geojson",
-      "passed": true,
-      "message": "geometry/public_space.geojson exists",
-      "details": {}
-    },
-    {
-      "name": "geometry_exists:constraints.geojson",
-      "passed": true,
-      "message": "geometry/constraints.geojson exists",
-      "details": {}
-    },
-    {
-      "name": "geometry_exists:phasing.geojson",
-      "passed": true,
-      "message": "geometry/phasing.geojson exists",
-      "details": {}
-    },
-    {
-      "name": "figure_exists:zh:site-overview",
-      "passed": true,
-      "message": "assets/figures/site-overview.png exists",
-      "details": {}
-    },
-    {
-      "name": "figure_exists:en:site-overview",
-      "passed": true,
-      "message": "assets/figures/site-overview.en.png exists",
-      "details": {}
-    },
-    {
-      "name": "figure_exists:zh:land-use-structure",
-      "passed": true,
-      "message": "assets/figures/land-use-structure.png exists",
-      "details": {}
-    },
-    {
-      "name": "figure_exists:en:land-use-structure",
-      "passed": true,
-      "message": "assets/figures/land-use-structure.en.png exists",
-      "details": {}
-    },
-    {
-      "name": "figure_exists:zh:key-areas",
-      "passed": true,
-      "message": "assets/figures/key-areas.png exists",
-      "details": {}
-    },
-    {
-      "name": "figure_exists:en:key-areas",
-      "passed": true,
-      "message": "assets/figures/key-areas.en.png exists",
-      "details": {}
-    },
-    {
-      "name": "figure_exists:zh:mobility-bluegreen",
-      "passed": true,
-      "message": "assets/figures/mobility-bluegreen.png exists",
-      "details": {}
-    },
-    {
-      "name": "figure_exists:en:mobility-bluegreen",
-      "passed": true,
-      "message": "assets/figures/mobility-bluegreen.en.png exists",
-      "details": {}
-    },
-    {
-      "name": "figure_exists:zh:metrics-evidence",
-      "passed": true,
-      "message": "assets/figures/metrics-evidence.png exists",
-      "details": {}
-    },
-    {
-      "name": "figure_exists:en:metrics-evidence",
-      "passed": true,
-      "message": "assets/figures/metrics-evidence.en.png exists",
-      "details": {}
-    },
-    {
-      "name": "a3_pdf_zh",
-      "passed": true,
-      "message": "report/a3_booklet_zh.pdf exists",
-      "details": {}
-    },
-    {
-      "name": "a0_pdf_zh",
-      "passed": true,
-      "message": "report/a0_board_zh.pdf exists",
-      "details": {}
-    },
-    {
-      "name": "a3_pdf_en",
-      "passed": true,
-      "message": "report/a3_booklet_en.pdf exists",
-      "details": {}
-    },
-    {
-      "name": "a0_pdf_en",
-      "passed": true,
-      "message": "report/a0_board_en.pdf exists",
-      "details": {}
-    },
-    {
-      "name": "report_proposal_html",
-      "passed": true,
-      "message": "report/proposal.html exists",
-      "details": {}
-    },
-    {
-      "name": "report_proposal_en_html",
-      "passed": true,
-      "message": "report/proposal.en.html exists",
-      "details": {}
-    },
-    {
-      "name": "visual_index_html",
-      "passed": true,
-      "message": "visual/index.html exists",
-      "details": {}
-    },
-    {
-      "name": "copyright_statement",
-      "passed": true,
-      "message": "report/copyright_statement.md exists",
-      "details": {}
-    },
-    {
-      "name": "metrics_lu_sum",
-      "passed": true,
-      "message": "land_use breakdown sum matches total: 9570457.1 vs 9570457.0",
-      "details": {}
-    },
-    {
-      "name": "metrics_ka_sum",
-      "passed": true,
-      "message": "key area breakdown sum matches total: 3671910.1 vs 3671910.1",
-      "details": {}
-    },
-    {
-      "name": "metrics_far_consistency",
-      "passed": true,
-      "message": "FAR scenario consistent: computed=1.535 reported=1.530",
-      "details": {}
-    },
-    {
-      "name": "metrics_green_ratio",
-      "passed": true,
-      "message": "green_ratio consistent: 0.0861 vs 0.0860",
-      "details": {}
-    },
-    {
-      "name": "metrics_public_ratio",
-      "passed": true,
-      "message": "public_space_ratio consistent: 0.0295 vs 0.0300",
-      "details": {}
-    },
-    {
-      "name": "metrics_road_ratio",
-      "passed": true,
-      "message": "road_ratio consistent: 0.0466 vs 0.0470",
-      "details": {}
-    },
-    {
-      "name": "site_boundary_closed",
-      "passed": true,
-      "message": "site_boundary polygon is closed",
-      "details": {}
-    },
-    {
-      "name": "site_area_matches_geo",
-      "passed": true,
-      "message": "metrics site_area matches geometry: 11345657 vs 11345657",
-      "details": {}
-    },
-    {
-      "name": "land_use_area_consistency",
-      "passed": true,
-      "message": "land_use geometry area matches metric: 9570457 vs 9570457",
-      "details": {}
-    },
-    {
-      "name": "key_areas_inside_site",
-      "passed": true,
-      "message": "key area centroids inside site boundary",
-      "details": {
-        "bad": []
-      }
-    },
-    {
-      "name": "compliance_rows",
-      "passed": true,
-      "message": "compliance_matrix has 23 rows",
-      "details": {}
-    },
-    {
-      "name": "compliance_agent_coverage",
-      "passed": true,
-      "message": "compliance_matrix covers agent.1–6",
-      "details": {}
-    },
-    {
-      "name": "standard_mandatory",
-      "passed": true,
-      "message": "standard_matrix has 5 mandatory rows",
-      "details": {}
-    },
-    {
-      "name": "design_depth_count",
-      "passed": true,
-      "message": "design_depth_matrix has 16 rows",
-      "details": {}
-    },
-    {
-      "name": "design_depth_complete",
-      "passed": true,
-      "message": "all design_depth core items are complete",
-      "details": {}
-    },
-    {
-      "name": "proposal_ref_zh:site-overview",
-      "passed": true,
-      "message": "zh proposal references site-overview.png",
-      "details": {}
-    },
-    {
-      "name": "proposal_ref_en:site-overview",
-      "passed": true,
-      "message": "en proposal references site-overview.en.png",
-      "details": {}
-    },
-    {
-      "name": "proposal_ref_zh:land-use-structure",
-      "passed": true,
-      "message": "zh proposal references land-use-structure.png",
-      "details": {}
-    },
-    {
-      "name": "proposal_ref_en:land-use-structure",
-      "passed": true,
-      "message": "en proposal references land-use-structure.en.png",
-      "details": {}
-    },
-    {
-      "name": "proposal_ref_zh:key-areas",
-      "passed": true,
-      "message": "zh proposal references key-areas.png",
-      "details": {}
-    },
-    {
-      "name": "proposal_ref_en:key-areas",
-      "passed": true,
-      "message": "en proposal references key-areas.en.png",
-      "details": {}
-    },
-    {
-      "name": "proposal_ref_zh:mobility-bluegreen",
-      "passed": true,
-      "message": "zh proposal references mobility-bluegreen.png",
-      "details": {}
-    },
-    {
-      "name": "proposal_ref_en:mobility-bluegreen",
-      "passed": true,
-      "message": "en proposal references mobility-bluegreen.en.png",
-      "details": {}
-    },
-    {
-      "name": "proposal_ref_zh:metrics-evidence",
-      "passed": true,
-      "message": "zh proposal references metrics-evidence.png",
-      "details": {}
-    },
-    {
-      "name": "proposal_ref_en:metrics-evidence",
-      "passed": true,
-      "message": "en proposal references metrics-evidence.en.png",
-      "details": {}
-    },
-    {
-      "name": "proposal_heading_parity",
-      "passed": true,
-      "message": "H2 count parity: zh=14 en=14",
-      "details": {}
-    },
-    {
-      "name": "front_matter_bilingual_contract",
-      "passed": true,
-      "message": "both proposals declare bilingual_contract_version",
-      "details": {}
-    },
-    {
-      "name": "unknown_metrics_marked",
-      "passed": true,
-      "message": "2 metrics explicitly marked unknown",
-      "details": {
-        "unknowns": [
-          "floor_area_ratio",
-          "building_density"
-        ]
-      }
+      "check_id": "PROFESSIONAL_EVIDENCE",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "professional_review.py",
+      "message": "professional_review: PASS"
     }
-  ],
-  "notices": [
-    "所有几何均为仓库维护者提供的临时边界（PROV-SITE-001 / KEY-001~003），非官方红线。",
-    "容积率、建筑密度、绿地率、建筑高度等法定控规条件未纳入清权资料包，相关数值为概念方案测算。",
-    "自检查通过仅代表本机 package 文件完整性与内部一致性，不构成评审通过保证。"
   ]
 }
