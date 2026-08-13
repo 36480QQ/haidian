@@ -92,7 +92,8 @@
       "title_zh": "AI人才向往城区",
       "mandatory": true,
       "report_sections": [
-        "AI 创新生态、人才画像与 AI+ 场景"
+        "AI 创新生态、人才画像与 AI+ 场景",
+        "周阿姨的上午：没有手机也能让城市停止一次AI"
       ],
       "source_ids": [
         "AGENT-TASKBOOK"
@@ -103,16 +104,22 @@
       ],
       "metrics": [
         "persona_count",
-        "scenario_card_count"
+        "scenario_card_count",
+        "lived_journey_step_count",
+        "anonymous_complaint_receipt_target_minutes"
       ],
       "drawings": [
         "assets/figures/scenario-operations.png",
         "assets/figures/sections-accessibility.png",
+        "assets/figures/persona-day.png",
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "visual_sections": [
         "八类画像",
+        "合成非数字老年使用者八步生活旅程",
+        "匿名异议触发RETURN的完整闭环",
+        "visual/assets/lived-lifecycle.json",
         "四旗舰场景90/180日门槛",
         "无AI等价服务",
         "visual/assets/review-evidence.json"
@@ -296,7 +303,8 @@
       "title_zh": "实施政策与项目清单",
       "mandatory": true,
       "report_sections": [
-        "更新项目清单、实施政策与分期计划"
+        "更新项目清单、实施政策与分期计划",
+        "最小试点：十四天只回答一个问题"
       ],
       "source_ids": [
         "AGENT-TASKBOOK"
@@ -666,7 +674,8 @@
       "title_zh": "大钟寺重点片区",
       "mandatory": true,
       "report_sections": [
-        "6.3 大钟寺：城市试用界面"
+        "6.3 大钟寺：城市试用界面",
+        "周阿姨的上午：没有手机也能让城市停止一次AI"
       ],
       "source_ids": [
         "KEY-AREA-SOURCE",
@@ -677,11 +686,15 @@
         "geometry/public_space.geojson#LANDMARK-03"
       ],
       "metrics": [
-        "persona_count"
+        "persona_count",
+        "lived_journey_step_count",
+        "failure_case_count"
       ],
       "drawings": [
         "assets/figures/key-areas.png",
         "assets/figures/experience-dazhongsi.png",
+        "assets/figures/persona-day.png",
+        "assets/figures/failure-atlas.png",
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
@@ -690,6 +703,8 @@
         "智能终端试用街",
         "数据权利会客厅",
         "无AI服务环",
+        "公众异议与空间RETURN过程",
+        "visual/assets/lived-lifecycle.json",
         "visual/assets/review-evidence.json"
       ],
       "assumption_ids": [
@@ -792,7 +807,11 @@
       "title_zh": "场景卡、测试验证和画像",
       "mandatory": true,
       "report_sections": [
-        "AI 创新生态、人才画像与 AI+ 场景"
+        "AI 创新生态、人才画像与 AI+ 场景",
+        "一件AI产品如何穿过三站：从0.8失败到0.10返回",
+        "三站交接：三张票据不是三枚印章",
+        "最小试点：十四天只回答一个问题",
+        "三种失败：技术、权利与公众使用分别怎样收场"
       ],
       "source_ids": [
         "AGENT-TASKBOOK"
@@ -808,17 +827,29 @@
         "persona_count",
         "machine_readable_x_receipt_protocol_count",
         "sc03_tabletop_rehearsal_count",
-        "sc03_synthetic_fixture_count"
+        "sc03_synthetic_fixture_count",
+        "product_lifecycle_event_count",
+        "handover_ticket_type_count",
+        "ticket_hash_chain_target_percent",
+        "minimum_pilot_duration_days",
+        "failure_case_count"
       ],
       "drawings": [
         "assets/figures/scenario-operations.png",
         "assets/figures/x-lifecycle.png",
+        "assets/figures/robot-lifecycle.png",
+        "assets/figures/station-handover.png",
+        "assets/figures/failure-atlas.png",
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "visual_sections": [
         "四旗舰场景完整RACI",
         "SC-03 X Receipt技术栈与四工况合成演练",
+        "SC-03从0.8失败至0.10返回的九事件生命周期",
+        "三票据哈希交接与拒绝路径",
+        "十四天最小试点及三类失败复原",
+        "visual/assets/lived-lifecycle.json",
         "visual/assets/x-receipt.schema.json",
         "visual/assets/sc03-tabletop-evidence.json",
         "90日与180日门槛",
@@ -942,11 +973,15 @@
         "phase_count",
         "scenario_card_count",
         "annual_operating_season_count",
-        "annual_public_decision_register_count"
+        "annual_public_decision_register_count",
+        "minimum_pilot_duration_days",
+        "handover_ticket_type_count"
       ],
       "drawings": [
         "assets/figures/implementation-roadmap.png",
         "assets/figures/delivery-dashboard.png",
+        "assets/figures/station-handover.png",
+        "assets/figures/robot-lifecycle.png",
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
@@ -956,6 +991,8 @@
         "visual/assets/x-operations-cycle.json",
         "开发者社区章程",
         "场景开放与转化闭环",
+        "十四天最小试点与三站票据交接",
+        "visual/assets/lived-lifecycle.json",
         "visual/assets/review-evidence.json"
       ],
       "assumption_ids": [

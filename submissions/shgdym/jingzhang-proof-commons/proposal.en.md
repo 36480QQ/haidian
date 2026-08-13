@@ -178,6 +178,78 @@ This submission actually ran a **synthetic tabletop exercise**, not a field pilo
 
 ![X lifecycle, SC-03 synthetic exercise and field-pilot blockers](assets/figures/x-lifecycle.en.png)
 
+### How one AI product crosses three stations: from 0.8 failure to 0.10 return
+
+To make X more than a brand, one low-speed embodied-service prototype travels through all three stations. The sequence below is a synthetic operating narrative governed by fixed rules; it is not evidence of a real product, company, venue or approval. Only one version is valid at any moment. Every handover carries the upstream ticket hash, and a change in version, scene or rights state invalidates downstream tickets. The city therefore encounters not a vague “robot project” but a decision chain that can be paused, questioned and reversed. [data:visual/assets/lived-lifecycle.json] [metric:product_lifecycle_event_count]
+
+| Event | Place and version | What happens | Human decision | Spatial consequence | Evidence retained |
+| --- | --- | --- | --- | --- | --- |
+| L01 first test | Zhongzhi, 0.8-test | Unexpected-crossing fixture fires; the prototype cannot yield reliably within its declared time | Safety lead decides FAIL | Machine pocket and observation buffer close; public path stays open | Fixture, stop source, response time and unresolved defect |
+| L02 restoration | Zhongzhi, 0.8-test | Device powers down and leaves; telemetry freezes; removable boundary is recovered | Site lead signs RESTORE | Test court returns to ordinary court, seating and green | Demobilisation image position, component inventory and ordinary-state check |
+| L03 independent retest | Zhongzhi, 0.9-retest | Four fixed fixtures plus lost-link and localisation-uncertainty fixtures are repeated | Independent safety reviewer signs PASS | Machine pocket reopens only for the retest | Test Receipt with version, fixtures and human sign-off |
+| L04 release hold | AI Origin, 0.9-rc1 | One software licence does not map fully to the tested version | Rights reviewer signs HOLD | Release indicator stays off; display becomes an ordinary methods lesson | Rights gap, named follow-up role and deadline |
+| L05 limited release | AI Origin, 0.9-rc1 | Licence chain, component bill, limitations and withdrawal owner close | Release steward signs LIMITED | Contribution ring displays limited use, never certification or recommendation | Release Ticket and Test Receipt hash |
+| L06 public use | Dazhongsi, 0.9-limited-use | Staff, three-level notice and non-AI channel are present together | Public-service lead signs OPEN | Device enters only the removable trial pocket; civic path remains unchanged | Opening check, duty roster and notice-comprehension sample |
+| L07 public objection | Dazhongsi, 0.9-limited-use | Device, queue or observers interfere with wheelchair-priority movement | Staff record COMPLAINT | Device immediately HOLDS; accessible crossing clears first | Anonymous complaint ticket, response clock and affected cohort |
+| L08 city return | Dazhongsi, 0.9-limited-use | Position adjustment cannot resolve the route conflict on site | User and accessibility reviewers sign RETURN | Trial pocket closes; paper and staffed services continue | Public Verdict, restoration check and revision requirement |
+| L09 return to origin | Zhongzhi, 0.10-return | New version and new route-occupation fixture return to controlled testing | State becomes PENDING | It cannot return to AI Origin or Dazhongsi before retest | New test brief linked to all three previous tickets |
+
+The value of this chain is not eventual approval. It lets the product fail at L01, L04 and L08, with different consequences. Technical failure returns to testing; rights failure blocks release; public-use failure changes both control logic and spatial layout. No one can use a later version to erase an earlier failure, use a Zhongzhi technical PASS in place of an AI Origin rights decision, or use either in place of Dazhongsi public judgment. The three stations are therefore not an exhibition tour but a relay between three distinct forms of civic authority.
+
+![One AI product from first failure through limited release and public objection back to testing](assets/figures/robot-lifecycle.en.png)
+
+### Three-station handover: three tickets, not three seals
+
+Each station asks a different question, requires different signatories and rejects for different reasons. A Test Receipt says only whether one exact version completed declared fixtures inside an exact envelope. A Release Ticket says only whether that version's licences, data rights, software composition, limits and withdrawal duty permit limited release. A Public Verdict says only whether the city wishes limited use to continue when staff, a non-AI equivalent and real objections are present. None is a government approval, product certification or permanent passport. All three expire, are scoped and can be actively withdrawn.
+
+| Ticket | Required fields | Proposed signatories | Explicitly does not prove | Destination after refusal |
+| --- | --- | --- | --- | --- |
+| Test Receipt | Product and model version, fixed fixtures, test envelope, human stop, unresolved defects, raw-record hash | Candidate operator + independent safety reviewer | Rights clearance, public acceptance, procurement value or safety in every context | Revise at Zhongzhi and restore test space |
+| Release Ticket | Test Receipt hash, software/model/data bill, licences, use term, public limits and withdrawal owner | Rights reviewer + release steward | Government endorsement, commercial recommendation, field usability or long-term operation | HOLD at AI Origin; no public trial |
+| Public Verdict | Release Ticket hash, notice comprehension, non-AI equivalent, complaints, cohort gaps and continue/revise/return decision | Public-service lead + user/accessibility reviewer | Universal satisfaction, permanent deployment or automatic validity for later versions | Close trial pocket and return to Zhongzhi or AI Origin |
+
+Handover occurs on visible civic interfaces. Zhongzhi's test handover table shows only version, envelope, fixtures and unresolved issues. AI Origin uses paired release tables: one for reproducible methods and one for licences, limits and withdrawal. Dazhongsi's public-verdict table keeps continue, revise and stop states in the same sightline as staffed appeal and paper service. When a ticket expires, its light and mark disappear and the place returns to ordinary learning, rest or movement, so an obsolete exhibit cannot acquire de facto endorsement. [metric:handover_ticket_type_count]
+
+The minimum chain is upstream hash, current version, human sign-off and expiry. If 0.9-retest becomes 0.9-rc1 at AI Origin, the release steward explains the change and decides whether retesting is necessary. If Dazhongsi changes route, speed or sensing range, the Release Ticket does not automatically cover the new condition. If a complaint reveals use absent from test fixtures, the Public Verdict creates a RETURN task rather than merely promising to “improve experience”. This gives the handover a custody chain and lets failure rewrite the upstream test brief. [data:visual/assets/lived-lifecycle.json] [metric:ticket_hash_chain_target_percent]
+
+![Fields, signatories, refusal conditions and return paths for the three tickets](assets/figures/station-handover.en.png)
+
+### Minimum pilot: fourteen days answer one question
+
+The minimum pilot does not seek event scale. It asks whether one declared version can pass three stations for one limited public use and restore ordinary space after failure. The proposed maximum is one specified device, one machine test pocket and one continuously open accessible public bypass. Exact dimensions, distance, speed and participation await official geometry, field measurement, hazard analysis and approval; the concept cannot pre-fill them. Without a candidate operator, insurance, safety duty, accessibility review and restoration resources, the fourteen-day clock does not begin.
+
+| Time | Required action | Passing evidence | Blocking condition |
+| --- | --- | --- | --- |
+| D-30 | Name candidate operator, venue, insurance, safety and accessibility roles | Responsibility register with signable fields | Any duty has no owner |
+| D-7 | Complete field walk, notice-comprehension test and ordinary-state restoration drill | Breakpoint map, notice result and restoration list | Accessible main chain breaks or restoration fails |
+| D0 | Repeat four synthetic fixtures and freeze X Receipt version | Reproducible tabletop record | Fixture, version or script mismatch |
+| D1-D3 | Closed testing with no public user inside the machine pocket | Duty, stop, boundary and incident records | Boundary breach, lost link or takeover failure |
+| D4 | Independent retest and Test Receipt decision | Dual sign-off and unresolved-defect list | Irreproducibility or concealed defect |
+| D5-D7 | Review rights, version, limits and withdrawal route | Candidate Release Ticket | Unclear rights, version mismatch or absent withdrawal owner |
+| D8-D12 | Limited staffed public use with non-AI service open | Opening check, complaint tickets and service log | Absent staff, broken alternative or serious objection |
+| D13 | Publish de-identified issues, cohort gaps and restoration evidence | Public issue register | Missing incident, complaint or disparity |
+| D14 | Decide continue, revise or RETURN | Public Verdict | Event closure cannot substitute for a decision |
+
+Day fourteen never grants automatic renewal. Continue means only that the same version, envelope and purpose may enter another time-limited review. Revise changes ticket status to HOLD. RETURN removes equipment, restores the site and sends a new test question to Zhongzhi. A field pilot must prove more than the tabletop's `4/4`: duty presence, public comprehension, real stop performance, accessible continuity, whether complaints alter decisions, and whether the place remains useful after demobilisation. [metric:minimum_pilot_duration_days]
+
+### Three failures: technical, rights and public use
+
+**F-TECH-01 technical failure.** At Zhongzhi, localisation uncertainty exceeds the tolerance declared in the test brief. Independent envelope monitoring first issues HOLD; the on-duty safety lead executes the physical or remote stop. The machine pocket and observation buffer close while the permanent public path stays open. Event telemetry freezes, but the no-image-retention rule remains; an incident does not license expanded collection. After removal, the court returns to seating, walking and open green. A new Test Receipt requires an independent repetition of lost-localisation, minimum-risk-stop and takeover fixtures on the same hardware, software and map versions.
+
+**F-RIGHTS-01 rights failure.** At AI Origin, release staff find that a software licence has expired or cannot be tied to the exact Zhongzhi hash. The technical PASS remains historically valid, but release becomes HOLD. The contribution ring removes “available for trial”; its table becomes an ordinary methods class. Distribution freezes while audit records remain, and disputed code or data are not exposed. The rights reviewer records the gap, owner and deadline. Only a closed licence, component bill, version hash and withdrawal duty can support a new Release Ticket; company assurance or a live demonstration cannot replace clearance.
+
+**F-PUBLIC-01 public-use failure.** The device does not collide, but its queue, observers or parking obstruct the wheelchair-priority route, or the staffed alternative disappears. Dazhongsi's public-service lead first stops the device, clears the crossing and switches to paper and staffed service without waiting for an algorithmic ruling. A person may complain anonymously and receive a paper receipt within the five-minute target; a de-identified event enters the public register. Return to use requires a user-led route test and two review cycles without a material cohort gap. Until then, ordinary accessible movement and staffed service remain, and the product returns to Zhongzhi. “Users are unfamiliar with technology” is not an acceptable failure explanation. [metric:failure_case_count]
+
+The three failures cause three spatial actions: technical failure contracts the machine envelope, rights failure withdraws the release interface, and public failure restores ordinary movement and human service. The common rule is that the public does not pay for product failure through detours, delay or extra data. Failure and success appear together without ranking people. Every RETURN answers five questions: who stopped it, what closed, what stayed open, how records were handled, and what is required to come back. [data:visual/assets/lived-lifecycle.json]
+
+![Triggers, human decisions, restoration and re-entry conditions for three failure classes](assets/figures/failure-atlas.en.png)
+
+### Why AI makes the three places physically different
+
+Without the X mechanism, the three key areas could collapse into a laboratory, launch hall and experience shop. Because space must absorb failure, Zhongzhi needs three layers: permanent public path, observation buffer and machine test pocket. The inner layer can close, demobilise and restore; the middle lets people observe at a safe distance and closes after an incident; the outer serves daily walking at all times. Emergency stops cannot hide backstage, and boundary, version and accountable person must be visible before entry.
+
+AI Origin is not an ordinary release hall but a ground-floor interface of methods table, rights table and withdrawal track. Methods can remain available for learning while a rights-failed product leaves release status. Success and failure enter the version wall together, and expired tickets stop emitting status. Dazhongsi is not an equipment showroom but parallel civic path, limited trial pocket and staffed/non-AI service band. People reach destinations without crossing the trial, and staff can clear devices and queues without closing the civic chain. STOP and RETURN therefore determine removable boundaries, replaceable signs, parallel service and permanently open movement.
+
 Every scene uses the same RACI floor: an operator is accountable, a professional group approves, users and communities are consulted, and the public is informed. AI is never the accountable actor. Resources use S (existing space and staff), M (removable components and specialist service), and L (engineering or long-term operation requiring a separate case). SC-01-SC-04 are industrial test and validation scenes. [metric:scenario_card_count] [metric:industry_validation_scenario_count]
 
 ![Twelve scenes, accountability and stop logic](assets/figures/scenario-operations.en.png)
@@ -204,6 +276,30 @@ The executable VI standard fixes mark construction, minimum clearspace, minimum 
 ![X JINGZHANG construction, colour, type, information hierarchy and misuse rules](assets/figures/identity-guidelines.en.png)
 
 ### Inclusion: equal service without an application
+
+#### Ms Zhou's morning: stopping urban AI without a smartphone
+
+Ms Zhou is a 72-year-old composite persona used to test the proposal, not a real resident. She walks slowly, needs a continuous step-free route and places to sit, does not use a smartphone for public services, and does not wish to tell a machine about herself. The design succeeds not when she learns AI but when she reaches her destination and receives equal service without it, then changes a real decision when technology affects her movement. [data:visual/assets/lived-lifecycle.json] [metric:lived_journey_step_count]
+
+**08:10, Dazhongsi arrival edge.** The first interface is not a download prompt. It is a staffed desk, paper route and three parallel states: ordinary passage, limited trial and paused/withdrawn. Staff ask for neither account, phone number nor face data, only destination and whether a step-free route is needed. The foldout uses the same colours and numbers as ground wayfinding and remains legible when digital systems fail. Choosing paper neither lowers queue priority nor creates a “low digital ability” profile.
+
+**08:25, urban-trial threshold.** Three-level notice first says what is being tested, then what event data may be recorded and for how long, then shows staffed help, non-AI route, anonymous complaint and immediate exit. She need not understand the model; she needs to know where the device moves, who is on duty and how to continue without participating. She remains on the civic chain while the trial pocket sits to one side. Queue and observers cannot cross the tactile boundary. Dimensions are future acceptance items, not built facts inferred from a concept drawing.
+
+**08:42, accessible-priority crossing.** A limited-use prototype approaches. It should HOLD and yield, but observers reduce usable clearance. Even without collision this is a public-use failure: safety and dignity cannot be measured only by whether a device strikes someone. Staff stop the machine and move observers first while the civic path remains open. Ms Zhou is not asked to detour around the trial pocket.
+
+**08:43, objection.** She can press a staffed-call control, speak at the desk or use paper. Staff record place, time, affected service and requested outcome, not identity number, contact or a lasting behaviour trail. She receives a paper event receipt within the five-minute target. An anonymous report has equal status. If she volunteers a collection method, a response is available at the same desk within the five-working-day target; otherwise the public register shows state by event number. [metric:anonymous_complaint_receipt_target_minutes]
+
+**08:45, Public Verdict becomes RETURN.** Public-service and accessibility roles decide that this is not a single yield event but an untested relationship between device, observation and priority route. The trial pocket closes, status light changes to RETURN and equipment leaves. Ordinary retail, seating, toilet wayfinding and staffed service continue. The issue cannot be coded as “older user resists technology”. It creates a new Zhongzhi fixture: how does public clearance survive when device parking, observers and wheelchair priority coincide?
+
+**09:05, ordinary journey continues.** Ms Zhou reaches her destination by paper route. Service surviving AI withdrawal proves the place is civic infrastructure rather than an equipment-dependent display. She need not wait for a technical review or join later testing because she complained. The desk still answers transport, toilet, rest and cultural-route questions after the site returns to ordinary state.
+
+**11:30, public without profiling.** The register shows event number, scene version, responsible role, temporary action, next review and whether the case returned to TEST. It does not show name, age or identifiable trajectory. Age and non-digital status belong only to this synthetic design review, not a real complaint record. If the issue may affect similar users, the operator invites user and disability groups to route retesting, but participation is voluntary and not a condition of receiving an answer.
+
+**D+5, closure rather than reassurance.** At the desk, the response lists three checkable facts: whether the device remains stopped, how the place changed and which test must pass before return. If only wording changes while route conflict remains, the Public Verdict remains RETURN. Ms Zhou may reject the response and request independent review. One ordinary objection thus travels through service desk, public verdict, new Zhongzhi fixture and the next X Receipt, changing both product and place.
+
+![Composite non-digital older user from arrival and choice through anonymous complaint to RETURN](assets/figures/persona-day.en.png)
+
+The journey operationalises five indivisible rights: see status before entry, receive an equal service without AI, reach staff without an account, obtain a receipt for anonymous objection, and make objection affect continuation. Reviewers should not merely check that a desk exists. They should complete the task from transit arrival to paper route, destination under device and network failure, complaint submission and public response. Failure at any step blocks the related AI scene.
 
 Eight personas include developers, startups, university users, enterprise visitors, residents, operators, children and caregivers, and older, disabled, and non-digital users. A continuous accessible route, concept rest nodes within 400 metres, tactile and high-contrast information, low-glare night light, paper and staffed service, and use without face recognition or a smartphone are entry conditions. Distances and locations require field audit after official geometry.
 
