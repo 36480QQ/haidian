@@ -10,19 +10,7 @@
       "ok": true,
       "errors": [],
       "warnings": [
-        "submissions/cleverwwh/jingzhang-ai-belt-vision/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied",
-        "submissions/cleverwwh/jingzhang-ai-belt-vision/proposal.md: a paragraph/block contains 11 evidence markers; keep the full index in structured files; legacy proposal remains compatible and the viewer will condense it",
-        "submissions/cleverwwh/jingzhang-ai-belt-vision/proposal.md: bilingual contract requires translation_file=proposal.en.md; legacy v1 package remains compatible",
-        "submissions/cleverwwh/jingzhang-ai-belt-vision/assets/figures/key-areas.png: bilingual contract requires en display counterpart `assets/figures/key-areas.en.png`; legacy v1 package remains compatible",
-        "submissions/cleverwwh/jingzhang-ai-belt-vision/assets/figures/land-use-structure.png: bilingual contract requires en display counterpart `assets/figures/land-use-structure.en.png`; legacy v1 package remains compatible",
-        "submissions/cleverwwh/jingzhang-ai-belt-vision/assets/figures/metrics-evidence.png: bilingual contract requires en display counterpart `assets/figures/metrics-evidence.en.png`; legacy v1 package remains compatible",
-        "submissions/cleverwwh/jingzhang-ai-belt-vision/assets/figures/mobility-bluegreen.png: bilingual contract requires en display counterpart `assets/figures/mobility-bluegreen.en.png`; legacy v1 package remains compatible",
-        "submissions/cleverwwh/jingzhang-ai-belt-vision/assets/figures/site-overview.png: bilingual contract requires en display counterpart `assets/figures/site-overview.en.png`; legacy v1 package remains compatible",
-        "submissions/cleverwwh/jingzhang-ai-belt-vision/drawings/a0-boards.pdf: bilingual contract requires en display counterpart `drawings/a0-boards.en.pdf`; legacy v1 package remains compatible",
-        "submissions/cleverwwh/jingzhang-ai-belt-vision/drawings/a3-booklet.pdf: bilingual contract requires en display counterpart `drawings/a3-booklet.en.pdf`; legacy v1 package remains compatible",
-        "submissions/cleverwwh/jingzhang-ai-belt-vision/proposal.md: bilingual contract requires en display counterpart `proposal.en.md`; legacy v1 package remains compatible",
-        "submissions/cleverwwh/jingzhang-ai-belt-vision/report/proposal.html: bilingual contract requires en display counterpart `report/proposal.en.html`; legacy v1 package remains compatible",
-        "submissions/cleverwwh/jingzhang-ai-belt-vision/visual/index.html: bilingual contract requires en display counterpart `visual/index.en.html`; legacy v1 package remains compatible"
+        "submissions/cleverwwh/jingzhang-ai-belt-vision/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied"
       ],
       "proposal_files": [
         "submissions/cleverwwh/jingzhang-ai-belt-vision/proposal.md"
@@ -58,12 +46,13 @@
         "submissions/cleverwwh/jingzhang-ai-belt-vision/self_check.json",
         "submissions/cleverwwh/jingzhang-ai-belt-vision/sources.json",
         "submissions/cleverwwh/jingzhang-ai-belt-vision/standard_matrix.json",
+        "submissions/cleverwwh/jingzhang-ai-belt-vision/visual/assets/sources_ledger.json",
         "submissions/cleverwwh/jingzhang-ai-belt-vision/visual/index.html"
       ],
       "ai_package_stages": {
         "submissions/cleverwwh/jingzhang-ai-belt-vision": "formal"
       },
-      "total_bytes": 558996,
+      "total_bytes": 1786683,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -139,8 +128,6 @@
         "standard_matrix_items": 6,
         "design_depth_items": 15,
         "known_metric_refs_required": 7,
-        "proposal_format_version": "1",
-        "evidence_contract": "legacy-exhaustive-inline",
         "proposal_reference_counts": {
           "source": 7,
           "standard": 6,
@@ -163,48 +150,31 @@
   "can_enter_formal_review": true,
   "package_type": "professional_design_package",
   "review_status": "formal-review-ready",
-  "next_actions": [
-    "Review legacy bilingual compatibility warning: submissions/cleverwwh/jingzhang-ai-belt-vision/proposal.md: bilingual contract requires translation_file=proposal.en.md; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/cleverwwh/jingzhang-ai-belt-vision/assets/figures/key-areas.png: bilingual contract requires en display counterpart `assets/figures/key-areas.en.png`; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/cleverwwh/jingzhang-ai-belt-vision/assets/figures/land-use-structure.png: bilingual contract requires en display counterpart `assets/figures/land-use-structure.en.png`; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/cleverwwh/jingzhang-ai-belt-vision/assets/figures/metrics-evidence.png: bilingual contract requires en display counterpart `assets/figures/metrics-evidence.en.png`; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/cleverwwh/jingzhang-ai-belt-vision/assets/figures/mobility-bluegreen.png: bilingual contract requires en display counterpart `assets/figures/mobility-bluegreen.en.png`; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/cleverwwh/jingzhang-ai-belt-vision/assets/figures/site-overview.png: bilingual contract requires en display counterpart `assets/figures/site-overview.en.png`; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/cleverwwh/jingzhang-ai-belt-vision/drawings/a0-boards.pdf: bilingual contract requires en display counterpart `drawings/a0-boards.en.pdf`; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/cleverwwh/jingzhang-ai-belt-vision/drawings/a3-booklet.pdf: bilingual contract requires en display counterpart `drawings/a3-booklet.en.pdf`; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/cleverwwh/jingzhang-ai-belt-vision/proposal.md: bilingual contract requires en display counterpart `proposal.en.md`; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/cleverwwh/jingzhang-ai-belt-vision/report/proposal.html: bilingual contract requires en display counterpart `report/proposal.en.html`; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/cleverwwh/jingzhang-ai-belt-vision/visual/index.html: bilingual contract requires en display counterpart `visual/index.en.html`; legacy v1 package remains compatible"
-  ],
-  "schema_version": "0.1.0",
+  "next_actions": [],
   "checks": [
     {
       "check_id": "DETERMINISTIC_VALIDATION",
-      "result": "pass",
       "severity": "blocking",
-      "target": "validate_local_submission.py",
-      "message": "deterministic_validation: PASS"
+      "result": "pass",
+      "message": "validate_local_submission.py passed with 0 errors"
     },
     {
       "check_id": "SPATIAL_REVIEW",
-      "result": "pass",
       "severity": "blocking",
-      "target": "spatial_review.py",
-      "message": "spatial_review: PASS"
+      "result": "pass",
+      "message": "spatial_review.py passed; 3 minor KEY_AREA_PROVISIONAL issues are non-blocking"
     },
     {
       "check_id": "VISUAL_PACKAGING",
-      "result": "pass",
       "severity": "blocking",
-      "target": "visual_review.py",
-      "message": "visual_review: PASS"
+      "result": "pass",
+      "message": "visual_review.py passed with 0 issues"
     },
     {
       "check_id": "PROFESSIONAL_EVIDENCE",
-      "result": "pass",
       "severity": "blocking",
-      "target": "professional_review.py",
-      "message": "professional_review: PASS"
+      "result": "pass",
+      "message": "professional_review.py passed with 0 issues"
     }
   ]
 }
