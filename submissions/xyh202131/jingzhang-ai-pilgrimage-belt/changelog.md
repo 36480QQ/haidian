@@ -1,20 +1,5 @@
 # 方案迭代记录 / Changelog
 
-## v16.0 - 2026-08-13
-
-**Jury-first convergence and trusted delivery migration / 评审收束与可信交付迁移**
-
-- 将前台唯一身份收束为“双轨京张 / Twin-Track Jing-Zhang”，并把旧投稿名移出首屏；JZ-AIOS、G0—G3、证据门、权利边界仍为后台内核。页首元数据压缩为 3 条评审轨道和 6 个官方场景族，但 12 个结构化场景节点、8 个项目、3 个重点区及其编号全部保留。
-- Converged the sole front-stage identity on Twin-Track Jing-Zhang and removed the legacy submission name from the first screen. JZ-AIOS, G0–G3, evidence gates and rights boundaries remain the back-stage kernel. Front-matter metadata is compressed to three review tracks and six official scenario families while all twelve structured scene nodes, eight projects, three key areas and identifiers remain intact.
-- 新增用户启动、静音、48 秒的普通—验证—故障—恢复评审动态；无 JavaScript 时四张卡完整可读，减少动态时改为逐态按钮。动态不采集数据、不自动播放，也不构成现场事故、恢复时长、人员或运营证据。
-- Added a user-started, silent 48-second ordinary–proof–failure–recovery review motion. All four cards remain complete without JavaScript, and reduced-motion mode advances discretely. It collects no data, never autoplays, and creates no field-incident, recovery-duration, staffing or operating evidence.
-- 重建双语封面、14 页 A3 评审册和 8 张 A0 核心板：每个可见单元只承担一个判断，并在统一证据带中披露 12/12 文档覆盖、现场结果 0、GO/批准 0、G0、临时几何和 `not_fully_cleared`。长文 References 保持最后章节。
-- Rebuilt the bilingual cover, fourteen-page A3 jury booklets and eight A0 core boards. Each visible unit carries one judgement and a shared evidence strip discloses 12/12 document coverage, zero field results, zero GO/approval, G0, provisional geometry and `not_fully_cleared`. References remain the final long-form section.
-- 把 manifest 迁移到严格 0.2.x：非规范旧角色无损保存在 `role=other` + `role_detail`，旧翻译、校验、权利和发布声明移入带版本扩展；新增封面入口。迁移不改变权利阻断或现实成熟度。
-- Migrated the manifest to strict 0.2.x: non-canonical legacy roles are preserved losslessly as `role=other` plus `role_detail`; legacy translation, validation, rights and release claims move into versioned extensions; the cover entry is added. Migration changes neither the rights gate nor real-world maturity.
-- 现场采集、批准、GO、真实故障、恢复验收、人员、排班、预算、客流和逐文件独立清权仍为 0 或 unknown；临时边界与三项空间提示保持不变。
-- Field collection, approvals, GO, real failures, restoration acceptances, staffing, rosters, budgets, footfall and independent file-level rights clearance remain 0 or unknown. Provisional boundaries and the three spatial notices remain unchanged.
-
 ## v15.0 - 2026-08-13
 
 **Field evidence intake and replacement pack / 现场证据采集与替换包**

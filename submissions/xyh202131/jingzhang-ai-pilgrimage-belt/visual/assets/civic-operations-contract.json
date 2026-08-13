@@ -58,7 +58,7 @@
     {
       "id": "OPS-WP-02",
       "name_zh": "昼间—夜间—故障—恢复同任务旅程",
-      "name_en": "Same-task ordinary-proof-failure-recovery journey with day/night conditions",
+      "name_en": "Same-task day-night-failure-recovery journey",
       "output": "four_window_resident_journey"
     },
     {
@@ -174,9 +174,6 @@
   },
   "resident_four_window_journey": {
     "journey_id": "OPS-JOURNEY-RESIDENT-01",
-    "legacy_key_retained_for_backlinks": true,
-    "canonical_state_sequence": ["ordinary", "proof_optional_aid", "failure_stop", "recovery"],
-    "condition_labels_not_states": ["day", "night", "low_staff", "extreme_weather"],
     "not_a_new_scene": true,
     "person_type": "corridor resident using a normal public route and asking about a neighbourhood service",
     "public_task": "walk through the place, read current service information, submit or follow a neighbourhood question, and leave",
@@ -192,25 +189,22 @@
     ],
     "windows": [
       {
-        "window": "ordinary",
+        "window": "day",
         "runtime_state": "ordinary",
-        "condition_labels": ["day", "night", "low_staff"],
-        "path": "ordinary public route remains primary; static bilingual and paper information identifies the same-task non-AI route; at night or low staffing, safe exit, screen-free information and quiet priority remain",
-        "staffed_status": "show confirmed online/offline/unknown truthfully; current reality is unknown; no invented night shift",
-        "proof_overlay": "off by default; events, broadcast, screens and proof yield to ordinary life"
+        "path": "ordinary public route remains primary; static bilingual and paper information identifies the same-task non-AI route",
+        "staffed_status": "show confirmed online/offline/unknown truthfully; current reality is unknown",
+        "proof_overlay": "off by default; any future activation is voluntary, bounded and separately authorized"
       },
       {
-        "window": "proof_optional_aid",
-        "runtime_state": "proof_optional_aid",
-        "condition_labels": ["day", "future_separately_authorized_window"],
-        "path": "the same ordinary task and non-AI control path remain continuous while proof appears only in a bounded side zone",
-        "staffed_status": "responsible, takeover and stop roles must be confirmed before staffed presence is shown",
-        "proof_overlay": "voluntary, announced, withdrawable and separately authorized; prepare one same-event three-carrier writeback"
+        "window": "night_or_low_staff",
+        "runtime_state": "ordinary_quiet",
+        "path": "ordinary and accessible-route intent remains continuous; screen-free information and safe exit remain visible",
+        "staffed_status": "no invented night shift; if offline or unknown, publish that state and a non-digital next-contact route without pretending AI is a person",
+        "proof_overlay": "off; resident-priority quiet covenant overrides events, broadcast and proof"
       },
       {
-        "window": "failure_stop",
+        "window": "failure",
         "runtime_state": "failure_stop",
-        "condition_labels": ["any_time", "extreme_weather_if_triggered"],
         "path": "proof overlay isolates or exits; resident continues by the ordinary non-AI path or receives a safe staffed refusal when independently confirmed staff exist",
         "staffed_status": "stop-authority and handoff role types required but assignments remain unconfirmed",
         "proof_overlay": "stopped; passport, timetable and evidence matrix prepare one conservative writeback"
@@ -218,7 +212,6 @@
       {
         "window": "recovery",
         "runtime_state": "recovery",
-        "condition_labels": ["after_failure_or_planned_stop"],
         "path": "restore ordinary route, screen-free information, quiet conditions and the same basic task before discussing any proof restart",
         "staffed_status": "restoration acceptance and public update require confirmed future roles; current completion is 0",
         "proof_overlay": "remains off until root cause, responsibility, independent retest, place recovery and three-carrier consistency close; G0 and authorization do not auto-advance"
