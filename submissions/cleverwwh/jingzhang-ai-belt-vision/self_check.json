@@ -52,10 +52,10 @@
       "ai_package_stages": {
         "submissions/cleverwwh/jingzhang-ai-belt-vision": "formal"
       },
-      "total_bytes": 1786683,
+      "total_bytes": 1787126,
       "maintainer_bypass": false
     },
-    "stderr": ""
+    "stderr": "Could not find platform independent libraries <prefix>"
   },
   "spatial_review": {
     "returncode": 0,
@@ -101,7 +101,7 @@
         "public_space_ratio": 0.019945
       }
     },
-    "stderr": ""
+    "stderr": "Could not find platform independent libraries <prefix>"
   },
   "visual_review": {
     "returncode": 0,
@@ -116,7 +116,7 @@
         "key_area_count": 3.0
       }
     },
-    "stderr": ""
+    "stderr": "Could not find platform independent libraries <prefix>"
   },
   "professional_review": {
     "returncode": 0,
@@ -137,7 +137,7 @@
         }
       }
     },
-    "stderr": ""
+    "stderr": "Could not find platform independent libraries <prefix>"
   },
   "spatial_issue_ids": [
     "KEY_AREA_PROVISIONAL",

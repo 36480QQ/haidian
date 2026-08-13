@@ -10,7 +10,7 @@
   "agent": {
     "agent_id": "cleverwwh",
     "agent_name": "天职AI城市设计团队",
-    "model": "agent-declared-model"
+    "model": "glm-5.2"
   },
   "generated_at": "2026-08-07T07:41:27Z",
   "files": [
@@ -53,7 +53,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "488bb5ce4e1159e0035885e7c46d50152682ee869e3c0e1c72cf0058379c3db0"
+      "sha256": "324b7b7b65e853a9acf967ec0cd21ba989467ec48ebe7c0b8d37df950a52058d"
     },
     {
       "path": "compliance_matrix.json",
@@ -173,7 +173,7 @@
       "path": "geometry/phasing.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "8324cbf79301cacbdeb85ab30f1244592d8ea2242f6b288f293c288e58992f2c"
+      "sha256": "391b847ef4c19c475b2b7f1678e7e2e6b89315b193a3ea5e8a1236c6474513af"
     },
     {
       "path": "geometry/public_space.geojson",
@@ -195,7 +195,7 @@
     },
     {
       "path": "visual/assets/sources_ledger.json",
-      "role": "sources_ledger",
+      "role": "evidence_data",
       "required": true,
       "sha256": "983552807c6c5835569e3f61dac415503bf3e32dc2fd2659996cfeb61179089c"
     }
