@@ -7,8 +7,8 @@ bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以京张铁路遗址走廊为'智脉'主轴，串联众智园AI加速区、AI原点社区和大钟寺AI产业区三大节点，构建集AI全栈研发、场景赋能、公共空间、文化叙事和长期运营于一体的世界级AI创新生态廊。"
-tracks: ["ai-traffic-walkability", "jingzhang-heritage", "ai-origin-community", "enterprise-service", "ai-public-service"]
-scenarios: ["ai-traffic-walkability", "ai-medical", "robot-delivery", "ai-guide", "enterprise-service", "public-safety"]
+tracks: ["jingzhang-heritage-narrative", "enterprise-services-ecosystem", "ai-public-services"]
+scenarios: ["ai-traffic-walkability", "ai-health-service-navigation", "robot-delivery-low-speed", "ai-cultural-guide", "enterprise-service-copilot", "public-safety-operations-review"]
 iteration: "v1.0"
 ---
 
@@ -471,6 +471,35 @@ iteration: "v1.0"
 3. **AI+医疗验证中心**：在社区诊站部署AI辅助诊断系统，在用户授权和医生监督下验证AI医疗服务的安全性和有效性。
 4. **城市AI治理沙盒**：在重点公共空间部署AI城市治理试验，在人工复核和公众参与框架下验证AI辅助治理的边界。
 
+## AI 创新生态、人才画像与 AI+ 场景
+
+本方案以「AI创新生态廊」为核心理念，构建涵盖研发、展示、服务、活动和公共体验的复合AI创新生态系统 [source:AGENT-TASKBOOK]。
+
+### AI创新生态四大支柱
+
+1. **基础设施层**：AI算力中心、数据平台、开源工具链
+2. **产业应用层**：AI+交通、AI+医疗、AI+教育、AI+治理场景集群 [metric:ai_scenario_count]
+3. **创新服务层**：企业服务copilot、技术转移、投融资对接 [depth:ai_ecosystem_design]
+4. **文化体验层**：AI朝圣地标、数字叙事、公众参与平台
+
+### 人才画像
+
+- **AI研发人才**：博士及以上，关注算法创新和论文发表
+- **工程落地人才**：硕士及本科，关注产品化和场景落地
+- **创业团队**：AI原点社区入驻团队，关注融资和成长 [data:geometry/key_areas.geojson#KA-001]
+- **公共服务人才**：医疗、教育、法律领域AI应用专员
+
+### AI+场景卡
+
+本方案设计12张AI场景卡，覆盖交通、医疗、教育、治理、机器人等六大方向 [source:PROJECT-AGENT-OPEN-CALL-TASKBOOK]。场景设计遵循"低速、可监管、可复核"原则，每个场景明确技术路径、责任主体和评估指标。
+
+### AI朝圣地标
+
+1. **京张AI记忆塔**：铁路文化+AI历史的沉浸式体验空间
+2. **众智广场**：开源AI展示与互动节点
+3. **AI原点门户**：中关村AI起源叙事地标
+4. **大钟寺智绘桥**：传统钟声与AI生成艺术的跨界装置
+
 ## 用地、建筑规模与拆改留方案
 
 ### 用地布局
@@ -722,3 +751,5 @@ iteration: "v1.0"
 8. 仓库维护者提供的临时粗略边界数据，2026年6月5日。
 9. OpenStreetMap版权和许可（ODbL），用于背景参照。
 10. 国家互联网信息办公室等七部门，《生成式人工智能服务管理暂行办法》，2023年7月。
+
+[source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [metric:green_ratio]
