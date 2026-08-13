@@ -182,7 +182,7 @@ The site package publishes a manifest schema at `brief/site-package/schemas/mani
 
 **That paragraph is now history, because it was fixed.** The finding went into companion Issue #1058, closed on 2026-08-11 — not by widening the enum but by making `role` an open pattern (`^[a-z][a-z0-9_]{1,63}$`) with the canonical set described in prose. This package went from declaring four schema exceptions to declaring none for roles (one remains, the root property `data_confidence`). Of the current 727 manifests **81** still fail, and the schema is **still enforced by no gate** — what was fixed is that the enumeration was too narrow; what was not fixed is that nobody checks. `scripts/validate_submission.py` checks that the files a manifest declares exist and that their digests match; it does not check whether the manifest itself conforms to the schema, and nothing else in the repository does either. That is how a published contract can be violated by a third of the corpus without anyone noticing.
 
-**The shape of the violations says this is not carelessness.** Grouped by kind, just over half of them (706 of 1,255) are one thing: the `role` enum has no entry for roles that packages genuinely carry.
+**The shape of the violations says this is not carelessness.** Grouped by kind, just over half of them (706 of 1,255, 56.3%) are one thing: the `role` enum has no entry for roles that packages genuinely carry.
 
 | Role used, absent from the enum | Occurrences | Packages |
 |---|---|---|
@@ -469,7 +469,7 @@ The mark, its construction, four variants and three applications (benchmark plaq
 
 ### Three positionings, five functions, and a circuit that closes (agent.1)
 
-The taskbook gives three positionings and five functions [source:AGENT-TASKBOOK]. Rather than restate them, this proposal connects them into a **circuit that can close** — which is precisely the blind spot the field converges into. The measurement is in the motif table above; more than half use a three-core structure, 39.6% two wings, and 30.0% a single spine [source:FIELD-CENSUS-2026-08]. That convergence is not consensus; it is what the taskbook's "three areas, two wings" induces. Drawing the same structure again adds nothing. What adds something is stating **by what mechanism these units hand responsibility to one another.**
+The taskbook gives three positionings and five functions [source:AGENT-TASKBOOK]. Rather than restate them, this proposal connects them into a **circuit that can close** — which is precisely the blind spot the field converges into. The measurement is in the motif table above; three-core, two-wing and one-spine all clear thirty per cent. **The specific shares are not repeated here, because repeating them is how they expire** — the table is generated and only its conclusion is used here [source:FIELD-CENSUS-2026-08]. That convergence is not consensus; it is what the taskbook's "three areas, two wings" induces. Drawing the same structure again adds nothing. What adds something is stating **by what mechanism these units hand responsibility to one another.**
 
 The leveling network's answer is elevation transfer: each station's reading depends on the one before it, and the run returns to the origin to be computed.
 
@@ -1453,13 +1453,13 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-70 entries. By finder:
+71 entries. By finder:
 
 | Found by | Count | What it says |
 |---|---|---|
 | Independent audit | 25 | The audit was run against the shipped package, not a draft |
 | The author | 35 | Found while working |
-| This package's own gate | 6 | Caught at build time — which is what a gate is for |
+| This package's own gate | 7 | Caught at build time — which is what a gate is for |
 | **Reviewers outside this proposal** | **4** | [@anselasimov-web](https://github.com/anselasimov-web) on PR #1002; [@147228](https://github.com/147228) on PR #1065; [@Sonike](https://github.com/Sonike) on Issue #950; [@147228](https://github.com/147228) on Issue #950 / PR #1190 |
 
 <!-- ERRATA:COUNT:END -->
@@ -1476,7 +1476,7 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 |---|---|
 | **The check measured the convenient thing** | **15** |
 | **A deliverable was not looked at before shipping** | **11** |
-| **Two copies of one thing drifted** | **7** |
+| **Two copies of one thing drifted** | **8** |
 | Geometry did not mean what it said | 4 |
 | A number outlived the sentence holding it | 4 |
 | A reference did not resolve | 4 |
@@ -1535,11 +1535,11 @@ An authorisation statement a reviewer cannot verify is not a statement. Each row
 
 <!-- LEDGERCOUNT:BEGIN -->
 
-**The file-level ledger sits outside the review input, so its result is brought in here.** `build_review_input` sends `proposal.md` and eight JSON files; neither `report/copyright_statement.md` nor `visual/assets/rights_ledger.json` is among them. **A rights ledger the reviewer structurally cannot open is, from the reviewer's position, exactly the unverifiable assertion this package objects to elsewhere.** All **113 shipped files** carry a clearance class; a file without one fails the build:
+**The file-level ledger sits outside the review input, so its result is brought in here.** `build_review_input` sends `proposal.md` and eight JSON files; neither `report/copyright_statement.md` nor `visual/assets/rights_ledger.json` is among them. **A rights ledger the reviewer structurally cannot open is, from the reviewer's position, exactly the unverifiable assertion this package objects to elsewhere.** All **114 shipped files** carry a clearance class; a file without one fails the build:
 
 | Clearance class | Files |
 |---|---|
-| `author-originated` | 91 |
+| `author-originated` | 92 |
 | `provisional-only-with-stated-limit` | 9 |
 | `author-originated-measurement` | 8 |
 | `author-originated-with-embedded-fonts` | 4 |
