@@ -56,6 +56,16 @@
       "source": "proposal.md section S1 (wing framework); ASSUME-005",
       "confidence": "medium",
       "impact": "Wing-related metrics remain conceptual until official release; no wing claims official status."
+    },
+    {
+      "id": "ASSUME-007",
+      "title": "Public issue #1029: Dazhongsi key-area centroid offset disclosed",
+      "statement": "Open issue #1029 reports that the centroid of PROV-KEY-003 (Dazhongsi AI-industry cluster) in provisional_boundaries.geojson sits near Beijing North Railway Station. This submission treats PROV-KEY-003 geometry as a provisional constraint only: its area (72 ha) is registered but excluded from any conclusion that depends on precise location (station-adjacent integration, retail street layout); spatial.json marks area-dazhongsi mode=concept. The location will be re-derived under the P4 re-check procedure once the official geometry is corrected.",
+      "source": "https://github.com/open-city-ai/haidian/issues/1029",
+      "linked": [
+        "ASSUME-001",
+        "ASSUME-002"
+      ]
     }
   ]
 }
