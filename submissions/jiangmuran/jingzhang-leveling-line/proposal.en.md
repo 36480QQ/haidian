@@ -1398,6 +1398,10 @@ Contrast (WCAG 2.1, ≥ 4.5 body text, ≥ 3.0 large text and graphical objects,
 
 Distance legibility: A0 is 841 mm across a 1600-unit canvas; by the signage convention *legible height ≈ viewing distance ÷ 250*, a 1 m reading distance requires ≥ 4.0 mm. The smallest actual type across all sheets is **4.73 mm**. Offline HTML: **every one of nine images carries alt text**, the language is declared, heading levels do not skip, there are ten figure captions, dark mode is supported, and there are **zero `<script>` tags**.
 
+![FIG.27 One reading: where a person stands, and whether they block the way](assets/figures/visit.en.png)
+
+**That ratio had never been pointed at the plate.** It has only ever been used to check this proposal's own drawings — and turned on the plate, what it yields is not a type size but **a place to stand**: a 12 mm cap height × 250 gives a 3.0 m reading distance, and 3.0 m falls outside the 1,500 mm accessible clear route, so the reader and the people walking past neither yield nor collide. At 6 mm the distance drops to 1.5 m and the reader stands in the middle of the path: **the plate is still legible and the footway no longer works** — precisely the substitution this package keeps finding, one measure satisfied and the cost moved onto another measure nobody wrote down. So FIG.27 draws "anyone can walk up to a benchmark and take a reading" as the ground each of its four steps takes: walking there (FIG.21 already measured that step as failing), standing, reading, and scanning to appeal — the last of which must come within 600 mm, so the code sits on the side away from the direction of travel: **the one action that must intrude does so at the edge rather than across the flow**. The 12 mm cap height is chosen by this proposal and registered as `A-PLATE-001` in the same commit; the ratio of 250 is not.
+
 **The script checks what is computable and does not replace human testing.** Screen-reader listening, reading by people with colour vision deficiency, and on-site legibility from a printed A0 must be done by people; this proposal does not claim to have done them, only that the computable part has been computed and can be re-run.
 
 ### Recomputation discipline
@@ -1547,11 +1551,11 @@ An authorisation statement a reviewer cannot verify is not a statement. Each row
 
 <!-- LEDGERCOUNT:BEGIN -->
 
-**The file-level ledger sits outside the review input, so its result is brought in here.** `build_review_input` sends `proposal.md` and eight JSON files; neither `report/copyright_statement.md` nor `visual/assets/rights_ledger.json` is among them. **A rights ledger the reviewer structurally cannot open is, from the reviewer's position, exactly the unverifiable assertion this package objects to elsewhere.** All **120 shipped files** carry a clearance class; a file without one fails the build:
+**The file-level ledger sits outside the review input, so its result is brought in here.** `build_review_input` sends `proposal.md` and eight JSON files; neither `report/copyright_statement.md` nor `visual/assets/rights_ledger.json` is among them. **A rights ledger the reviewer structurally cannot open is, from the reviewer's position, exactly the unverifiable assertion this package objects to elsewhere.** All **122 shipped files** carry a clearance class; a file without one fails the build:
 
 | Clearance class | Files |
 |---|---|
-| `author-originated` | 98 |
+| `author-originated` | 100 |
 | `provisional-only-with-stated-limit` | 9 |
 | `author-originated-measurement` | 8 |
 | `author-originated-with-embedded-fonts` | 4 |
@@ -1606,7 +1610,7 @@ One point of citation discipline deserves stating plainly: **the cases are used 
 
 <!-- FIGINDEX:BEGIN -->
 
-There are 27 sheets, numbered FIG.00 to FIG.26. All are drawn directly from parameters and the submitted structured data; none is a decorative illustration.
+There are 28 sheets, numbered FIG.00 to FIG.27. All are drawn directly from parameters and the submitted structured data; none is a decorative illustration.
 
 | Sheet | Content | What to read on it |
 |---|---|---|
@@ -1637,6 +1641,7 @@ There are 27 sheets, numbered FIG.00 to FIG.26. All are drawn directly from para
 | FIG.24 | The device envelope: what exactly goes in those 18 m² | FIG.12 fixed the device reservoir at ≥ 18 m² and this package had never drawn a device or said how big one is. An envelope, not a product: 1,200 × 700 × 1,300 mm, 1,800 mm turning circle, ≤ 120 kg. Each of seven dimensions is marked with what bounds it, and **three are bounded by nothing but this proposal — those are the ones to attack first**. The envelope puts 8 devices in the 18 m² |
 | FIG.25 | BM-0, the origin: the place both routes have to return to | BM-0 appears on nearly every sheet here and had never been drawn. A 2,400 mm setup circle, an approach sightline cone for each closing route, and the closure record outside the door facing the footway at the plate geometry FIG.16 fixed. **A reading is published the moment it is taken, and evidence is only as public as the door** — hang it in a hall with opening hours and the origin is shut when the reading lands. It shows network closure, not local failure (errata E50) |
 | FIG.26 | BM-2x, the second order: a scenario has to be stoppable, and that takes ground | The two wings carry the second order — it appears in the naming table, the cost table and the resource table, and had never been drawn. The difference is not the stone (KIT-01, as everywhere) but that what runs here is a scenario against real users, so it has to be stoppable. From FIG.24's ≤ 6 km/h the halt distance is **2.59 m**, and no fixed object or waiting area may stand within it. **The reaction time and deceleration are chosen by this proposal and registered as A-DEVICE-002 in the same commit** |
+| FIG.27 | One reading: where a person stands, and whether they block the way | The whole participation argument rests on anyone being able to walk up to a benchmark and take a reading, and no sheet had drawn the four minutes that person spends standing there. Working back from the legible-height ratio this package already publishes, a 12 mm cap height gives a **3.0 m** reading distance, clear of the 1,500 mm route. At 6 mm it falls to 1.5 m and the reader stands in the path — **the plate stays legible and the footway stops working**. Cap height chosen, registered as A-PLATE-001 in the same commit |
 
 <!-- FIGINDEX:END -->
 
