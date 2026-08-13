@@ -53,7 +53,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "d2da4f91efe2b7d22ba56cb40b3debc8e7226faaa5727c08210c4a9665babe12"
+      "sha256": "e82d6d4c1c488f96c331cc7d23044ca714ce38f1647620ef514bf6a7e31bfea7"
     },
     {
       "path": "compliance_matrix.json",
@@ -431,7 +431,7 @@
   "validation_claim": {
     "self_checked": true,
     "known_blockers": [],
-    "data_confidence": "mixed_by_evidence_tier",
+    "data_confidence": "mixed_provisional_and_conceptual",
     "confidence_detail": {
       "official_public_facts": "high",
       "open_existing_context": "medium",

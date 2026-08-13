@@ -10,7 +10,6 @@
       "ok": true,
       "errors": [],
       "warnings": [
-        "submissions/bit40303-ops/jingzhang-co-intelligence-loop/manifest.json: published schema legacy advisory: validation_claim.data_confidence: 'mixed_by_evidence_tier' is not one of ['high', 'medium', 'low', 'unknown', 'mixed_provisional_and_conceptual']; update this manifest before adopting schema 0.2.x",
         "submissions/bit40303-ops/jingzhang-co-intelligence-loop/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied",
         "submissions/bit40303-ops/jingzhang-co-intelligence-loop/proposal.md: a paragraph/block contains 11 evidence markers; keep the full index in structured files; legacy proposal remains compatible and the viewer will condense it",
         "submissions/bit40303-ops/jingzhang-co-intelligence-loop/proposal.md: a paragraph/block contains 10 evidence markers; keep the full index in structured files; legacy proposal remains compatible and the viewer will condense it",
@@ -122,7 +121,7 @@
       "ai_package_stages": {
         "submissions/bit40303-ops/jingzhang-co-intelligence-loop": "formal"
       },
-      "total_bytes": 19400625,
+      "total_bytes": 19401963,
       "maintainer_bypass": false
     },
     "stderr": ""
