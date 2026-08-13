@@ -20,16 +20,14 @@
       "path": "manifest.json",
       "role": "manifest",
       "required": true,
-      "sha256": "8159caedd0d09ddc8610fee43e9f49370d5d73a6e3fe4136e0793dc3abc9ea83",
-      "size_bytes": 9948
+      "sha256": "8159caedd0d09ddc8610fee43e9f49370d5d73a6e3fe4136e0793dc3abc9ea83"
     },
     {
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "4b82c23262b2e51959fe3231ce80ad7905c2d25647a090f5be5a13bffc7fa190",
-      "size_bytes": 87860
+      "sha256": "4b82c23262b2e51959fe3231ce80ad7905c2d25647a090f5be5a13bffc7fa190"
     },
     {
       "path": "proposal.en.md",
@@ -37,8 +35,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "984694b0bfe9d7c7686463fcf74af12b2e3aea328bc50a26feca4e394b4a3dbb",
-      "size_bytes": 103401
+      "sha256": "984694b0bfe9d7c7686463fcf74af12b2e3aea328bc50a26feca4e394b4a3dbb"
     },
     {
       "path": "agent.json",
@@ -74,8 +71,7 @@
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "5b477a365dfe51cd41d90c8ff9b0ee5a5362fbf2b3d7446bc54b82044bfea15d",
-      "size_bytes": 33688
+      "sha256": "5b477a365dfe51cd41d90c8ff9b0ee5a5362fbf2b3d7446bc54b82044bfea15d"
     },
     {
       "path": "standard_matrix.json",
@@ -87,8 +83,7 @@
       "path": "design_depth_matrix.json",
       "role": "design_depth_matrix",
       "required": true,
-      "sha256": "bee5f3e894cbe7e39f642faafa41731d792c7ca6f58356ca6a264c335d6b00d0",
-      "size_bytes": 26976
+      "sha256": "bee5f3e894cbe7e39f642faafa41731d792c7ca6f58356ca6a264c335d6b00d0"
     },
     {
       "path": "report/proposal.html",
