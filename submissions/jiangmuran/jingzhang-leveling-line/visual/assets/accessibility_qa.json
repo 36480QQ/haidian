@@ -65,6 +65,12 @@
  ],
  "type_size_at_A0": [
   {
+   "sheet": "svg/crossing",
+   "min_font_units": 9.0,
+   "min_height_mm_at_A0": 4.73,
+   "pass": true
+  },
+  {
    "sheet": "svg/ecosystem",
    "min_font_units": 9.5,
    "min_height_mm_at_A0": 4.99,
@@ -138,6 +144,12 @@
   },
   {
    "sheet": "svg/street-eye-level",
+   "min_font_units": 9.0,
+   "min_height_mm_at_A0": 4.73,
+   "pass": true
+  },
+  {
+   "sheet": "svg.en/crossing",
    "min_font_units": 9.0,
    "min_height_mm_at_A0": 4.73,
    "pass": true
@@ -217,21 +229,21 @@
  ],
  "offline_html": {
   "visual/index.html": {
-   "images": 12,
+   "images": 13,
    "images_without_alt": 0,
    "has_lang": true,
    "heading_level_jumps": 0,
-   "figcaptions": 13,
+   "figcaptions": 14,
    "interactive_elements_needing_focus": 0,
    "has_dark_mode": true,
    "inline_script_tags": 0
   },
   "visual/index.en.html": {
-   "images": 12,
+   "images": 13,
    "images_without_alt": 0,
    "has_lang": true,
    "heading_level_jumps": 0,
-   "figcaptions": 13,
+   "figcaptions": 14,
    "interactive_elements_needing_focus": 0,
    "has_dark_mode": true,
    "inline_script_tags": 0
@@ -240,13 +252,13 @@
  "asset_references": [
   {
    "file": "visual/index.html",
-   "references": 12,
+   "references": 13,
    "missing": [],
    "remote": []
   },
   {
    "file": "visual/index.en.html",
-   "references": 12,
+   "references": 13,
    "missing": [],
    "remote": []
   },

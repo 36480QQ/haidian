@@ -262,6 +262,22 @@ Route A is the announcement's textual bounds, from which the repository inferred
 
 Every reading is recomputed from the shipped coordinates by `node visual/assets/check_osm.js` in EPSG:4548. OSM is crowd-sourced; its limits are registered as `A-OSM-001`.
 
+**The 1,116.7 m from this proposal's spine to the surveyed park needs interpreting, or it reads as a siting error.**
+
+An independent design reviewer read that figure and concluded the spine was not drawn on the site and should be moved onto the real alignment. That is a reasonable inference from the one number, and it does not survive measuring the organisers' geometry alongside it:
+
+| Quantity | Value | Set by |
+|---|---|---|
+| Provisional **overall design area** to surveyed park | **412.5 m** (disjoint) | the organisers' provisional geometry |
+| This proposal's spine to the surveyed park | 1,116.7 m | this proposal |
+| Spine moved to the design area's **western edge** | 414.7 m | floor is 412.5 m |
+
+**The surveyed park lies wholly outside the provisional overall design area** — not a choice this proposal made, but a property of the organisers' geometry, published in the second row of the table above. So “draw the spine on the real alignment” means moving the primary axis outside the design area.
+
+Nor is the western edge the optimum inside it. The three key areas, which the organisers define, have centroids at lon 116.3475–116.3485, and the spine runs along that line; the western edge is at 116.3397. **Hugging that edge would cut the distance to the park from 1,117 m to 415 m at the cost of leaving all three key areas** — and threading those three is what the spine is for.
+
+So the choice is: the spine threads the three key areas, sits 1,116.7 m from the surveyed park, and publishes that gap on the drawing. **It is not a gap that moving a line can close — its floor is set by the organisers' provisional geometry. It is published so that when the official polygon lands, what must be recomputed is obvious at a glance.**
+
 <!-- OSMTABLE:END -->
 
 **That is a closure error, and it is in the site data rather than on paper.** The 43.6 km² research area agrees completely with OSM, so the announcement's textual bounds and the actual geography do not conflict; but the 11.4 km² provisional overall design area does not intersect the surveyed park at all.
@@ -1433,11 +1449,11 @@ An authorisation statement a reviewer cannot verify is not a statement. Each row
 
 <!-- LEDGERCOUNT:BEGIN -->
 
-**The file-level ledger sits outside the review input, so its result is brought in here.** `build_review_input` sends `proposal.md` and eight JSON files; neither `report/copyright_statement.md` nor `visual/assets/rights_ledger.json` is among them. **A rights ledger the reviewer structurally cannot open is, from the reviewer's position, exactly the unverifiable assertion this package objects to elsewhere.** All **88 shipped files** carry a clearance class; a file without one fails the build:
+**The file-level ledger sits outside the review input, so its result is brought in here.** `build_review_input` sends `proposal.md` and eight JSON files; neither `report/copyright_statement.md` nor `visual/assets/rights_ledger.json` is among them. **A rights ledger the reviewer structurally cannot open is, from the reviewer's position, exactly the unverifiable assertion this package objects to elsewhere.** All **90 shipped files** carry a clearance class; a file without one fails the build:
 
 | Clearance class | Files |
 |---|---|
-| `author-originated` | 66 |
+| `author-originated` | 68 |
 | `provisional-only-with-stated-limit` | 9 |
 | `author-originated-measurement` | 8 |
 | `author-originated-with-embedded-fonts` | 4 |
@@ -1490,7 +1506,7 @@ One point of citation discipline deserves stating plainly: **the cases are used 
 
 <!-- FIGINDEX:BEGIN -->
 
-There are 12 sheets, numbered FIG.00 to FIG.11. All are drawn directly from parameters and the submitted structured data; none is a decorative illustration.
+There are 13 sheets, numbered FIG.00 to FIG.12. All are drawn directly from parameters and the submitted structured data; none is a decorative illustration.
 
 | Sheet | Content | What to read on it |
 |---|---|---|
@@ -1506,6 +1522,7 @@ There are 12 sheets, numbered FIG.00 to FIG.11. All are drawn directly from para
 | FIG.09 | Landmarks, kit of parts, signage syntax and operating cycle | The actual form of the five standard components; the numbering grammar; a calendar organised by re-survey cycle rather than by festival |
 | FIG.10 | The benchmark at eye level, and kerb allocation | A third-order benchmark drawn at human eye height: the stone flush with the ground, the current `f ≤ F` on the reading plate, the appeal route given as both a QR code and a phone number; the four figures standing there are the people who take the readings, not staffage. The kerb section below **draws the order and not the widths** |
 | FIG.11 | Regional coordination interface: extending the network across jurisdictions | Every row states not only what is exchanged but **what is explicitly not exchanged** and what must hold before the interface opens; the output of coordination is a number (cross-network closure error), not a statement of intent |
+| FIG.12 | Four-quadrant pedestrian connection and device queue reservoir at Dazhongsi | A 1:500 type drawing: holding areas in all four quadrants, the device queue reservoir set behind the building line, and an **as-measured column left deliberately empty** — carrying capacity must be computed on site from measured effective clear width |
 
 <!-- FIGINDEX:END -->
 

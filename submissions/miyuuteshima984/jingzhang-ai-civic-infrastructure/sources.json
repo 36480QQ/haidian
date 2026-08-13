@@ -285,6 +285,51 @@
       "collection_method": "直接访问第一方公开页面。",
       "geographic_temporal_coverage": "新加坡 Punggol Digital District 当前公开项目信息。",
       "transformations": "机制抽象和短摘要；not-embedded。"
+    },
+    {
+      "id": "HD-URBAN-RENEWAL-GUIDE-2025",
+      "url": "https://zyk.bjhd.gov.cn/zwdt/zcwj/202507/t20250716_4779051.shtml",
+      "source_type": "official_public",
+      "usage": "海淀区城市更新总体方向：街区/校区/园区/社区融合、生活圈与创新圈融合、人工智能创新街区、站城融合、公共服务补充与数智空间/城市功能融合。",
+      "provenance": "北京市海淀区人民政府《海淀区城市更新导则（2025年版）》现行有效公开页面。",
+      "accessed_or_snapshot_date": "2026-08-13",
+      "rights_and_reuse": "政府公开信息；仅做事实摘要、实施逻辑和来源链接，不复制页面图片或长段文本。",
+      "limitations": "区级导则不是本方案的项目审批、地块控规、建设许可或实施承诺；不能替代 official geometry 和项目级专业条件。",
+      "permitted_use": "支撑城市完整度与产城融合/站城融合/AI创新街区的设计逻辑，以及实施分级边界。",
+      "publisher": "北京市海淀区人民政府",
+      "collection_method": "2026-08-13 读取政府公开网页并提取与本方案直接相关的政策方向。",
+      "geographic_temporal_coverage": "海淀区，2025年版城市更新导则，当前公开页面标注现行有效。",
+      "transformations": "只转译为本方案的空间设计原则与实施分级，不移植指标、项目名单或审批结论。"
+    },
+    {
+      "id": "HD-URBAN-RENEWAL-IMPLEMENTATION-2025",
+      "url": "https://www.bjhd.gov.cn/ztzx/2025/csgxsszy/",
+      "source_type": "official_public",
+      "usage": "海淀城市更新项目生成、实施方案审查、行政许可、建设运营流程，以及涉及公共利益/公共安全和用地/规模/高度等变化时的实施方案要求。",
+      "provenance": "北京市海淀区人民政府公开《海淀区城市更新实施指引（2025年）》专题页面。",
+      "accessed_or_snapshot_date": "2026-08-13",
+      "rights_and_reuse": "政府公开信息；仅做流程与职责边界摘要。",
+      "limitations": "流程适用性和具体实施主体必须在真实项目生成后由主管部门确认；本方案不能据此自认入库、立项、许可或实施主体。",
+      "permitted_use": "把概念更新动作区分为低扰动可逆研究与需要正式实施方案/许可的重改造路径。",
+      "publisher": "北京市海淀区人民政府",
+      "collection_method": "2026-08-13 读取政府公开专题页的项目生成、方案审查、许可与建设运营条目。",
+      "geographic_temporal_coverage": "海淀区城市更新项目实施流程，2025年版。",
+      "transformations": "提炼为设计阶段的前置证据门和不得越权的实施路径，不推断项目已启动。"
+    },
+    {
+      "id": "HD-AI-DISTRICT-PROGRESS-2025Q4",
+      "url": "https://zyk.bjhd.gov.cn/jbdt/auto4488_51784/zdrw/202601/t20260115_4801833_hd.shtml",
+      "source_type": "official_public",
+      "usage": "公开确认人工智能创新街区“两区一带”推进、五道口 AI 原点社区建设，以及交通/教育/医疗/养老等“可感可及”场景方向的现实政策语境。",
+      "provenance": "海淀区发展和改革委员会《2025年区政府重点任务落实情况（第四季度情况）》公开页面。",
+      "accessed_or_snapshot_date": "2026-08-13",
+      "rights_and_reuse": "政府公开信息；仅用于现实语境与方向核对。",
+      "limitations": "公开进展不等于本投稿的任何场景、位置、合作方、资金或实施安排获得批准；不得据此推导项目级承诺。",
+      "permitted_use": "支撑 AI 原点和可感知公共服务场景属于真实政策议题，而本方案的具体空间原型仍保持概念属性。",
+      "publisher": "北京市海淀区发展和改革委员会",
+      "collection_method": "2026-08-13 读取政府公开重点任务落实页面。",
+      "geographic_temporal_coverage": "海淀区人工智能创新街区，2025年第四季度工作进展。",
+      "transformations": "只提取方向性事实，不复制项目成果或把现有示范项目写成本方案成果。"
     }
   ]
 }
