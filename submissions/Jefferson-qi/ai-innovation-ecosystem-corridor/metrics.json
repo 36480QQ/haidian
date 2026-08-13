@@ -81,24 +81,26 @@
       "label_zh": "用地分区面积",
       "value": null,
       "unit": "sqm",
-      "status": "known",
+      "status": "unknown",
       "source_files": [
         "geometry/land_use.geojson"
       ],
       "formula": "EPSG:4548投影面积复算",
       "confidence": "low",
-      "assumptions": "基于临时粗略边界复算，官方边界补齐后需重算"
+      "assumptions": "基于临时粗略边界复算，官方边界补齐后需重算",
+      "reason": "Land use polygons are provisional; requires recalculation when official boundary is available"
     },
     "green_ratio": {
       "label_zh": "绿地率",
-      "value": 35,
-      "unit": "percent",
+      "value": 0.135242,
+      "unit": "ratio",
       "status": "known",
       "source_files": [
-        "proposal.md"
+        "geometry/green_space.geojson",
+        "geometry/site_boundary.geojson"
       ],
-      "formula": "绿地面积/用地面积",
-      "confidence": "medium",
+      "formula": "green_space_area / site_area (EPSG:4548)",
+      "confidence": "high",
       "assumptions": "绿地联通原则下的刚性控制目标值"
     },
     "floor_area_ratio": {
@@ -388,13 +390,14 @@
       "label_zh": "街区尺度",
       "value": "80-120",
       "unit": "meter",
-      "status": "known",
+      "status": "unknown",
       "source_files": [
         "proposal.md"
       ],
       "formula": "支路间距",
       "confidence": "medium",
-      "assumptions": "小街区是开放创新街区的空间基础"
+      "assumptions": "小街区是开放创新街区的空间基础",
+      "reason": "Block scale is a range (80-120m), not a single numeric value"
     },
     "green_coverage_ratio": {
       "label_zh": "绿化覆盖率",
@@ -467,6 +470,63 @@
       "formula": "口袋公园至最远住户步行距离",
       "confidence": "medium",
       "assumptions": "5分钟步行可达公共绿地"
+    },
+    "site_area_sqm": {
+      "label_zh": "用地总面积",
+      "value": 43609232.558,
+      "unit": "sqm",
+      "status": "known",
+      "source_files": [
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "EPSG:4548 projected area",
+      "confidence": "medium",
+      "assumptions": "Based on provisional rough boundary; recalculate when official boundary is available"
+    },
+    "green_space_area_sqm": {
+      "label_zh": "绿地面积",
+      "value": 5897815.28,
+      "unit": "sqm",
+      "status": "known",
+      "source_files": [
+        "geometry/green_space.geojson"
+      ],
+      "formula": "EPSG:4548 projected area",
+      "confidence": "medium"
+    },
+    "public_space_area_sqm": {
+      "label_zh": "公共空间面积",
+      "value": 1327938.329,
+      "unit": "sqm",
+      "status": "known",
+      "source_files": [
+        "geometry/public_space.geojson"
+      ],
+      "formula": "EPSG:4548 projected area",
+      "confidence": "medium"
+    },
+    "building_footprint_area_sqm": {
+      "label_zh": "建筑基底面积",
+      "value": 3291144.559,
+      "unit": "sqm",
+      "status": "known",
+      "source_files": [
+        "geometry/buildings.geojson"
+      ],
+      "formula": "EPSG:4548 projected area",
+      "confidence": "medium"
+    },
+    "public_space_ratio": {
+      "label_zh": "公共空间率",
+      "value": 0.030451,
+      "unit": "ratio",
+      "status": "known",
+      "source_files": [
+        "geometry/public_space.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "public_space_area / site_area (EPSG:4548)",
+      "confidence": "medium"
     }
   },
   "units": {
