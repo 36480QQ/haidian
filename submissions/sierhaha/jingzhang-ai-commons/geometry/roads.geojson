@@ -511,6 +511,33 @@
      ]
     ]
    }
+  },
+  {
+   "type": "Feature",
+   "id": "ROAD-019",
+   "properties": {
+    "id": "ROAD-019",
+    "layer": "ROAD_CENTERLINE",
+    "source_type": "agent_generated_design",
+    "confidence": "medium",
+    "geometry_role": "design_proposal",
+    "road_class": "local_access",
+    "name_zh": "清华园站慢行连接",
+    "length_m_declared": 555.19
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      116.3428,
+      39.988
+     ],
+     [
+      116.3428,
+      39.993
+     ]
+    ]
+   }
   }
  ]
 }
