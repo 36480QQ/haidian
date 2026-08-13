@@ -41,6 +41,7 @@ from github_pr_validation import (  # noqa: E402
     is_current_pull_request_head,
     is_non_submission_pr,
     is_review_queue_candidate,
+    reserved_legacy_login_user_id,
     main,
     readiness_contract_dirs_from_base,
     run_trusted_review_gates,
@@ -979,6 +980,8 @@ class ManifestHydrationTests(unittest.TestCase):
         self.assertEqual(
             set(), authorized_legacy_submission_dirs(REPO_ROOT, 51290995, "attacker")
         )
+        self.assertEqual(51290995, reserved_legacy_login_user_id(REPO_ROOT, "zymk8353"))
+        self.assertIsNone(reserved_legacy_login_user_id(REPO_ROOT, "unrelated"))
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
             policy = root / "data" / "participant_owner_aliases.json"
@@ -1892,8 +1895,35 @@ class SubmissionWorkflowTests(unittest.TestCase):
             )
             denied = validate_submission(root, "current", changed)
 
-        self.assertNotIn("must exactly match", "\n".join(allowed.errors))
+        self.assertTrue(allowed.ok, allowed.errors)
+        self.assertFalse(denied.ok)
         self.assertIn("must exactly match", "\n".join(denied.errors))
+
+    def test_re_registered_legacy_login_cannot_take_over_historical_package(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            base = "submissions/legacy/known-package"
+            changed = self.write_minimal_ai_package(root, base)
+            report = validate_submission(
+                root,
+                "legacy",
+                changed,
+                blocked_submission_owners={"legacy"},
+            )
+
+        self.assertFalse(report.ok)
+        self.assertIn("reserved historical login", "\n".join(report.errors))
+
+    def test_alias_policy_is_participant_protected(self) -> None:
+        path = "data/participant_owner_aliases.json"
+        self.assertFalse(is_non_submission_pr([path]))
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            (root / "data").mkdir()
+            (root / path).write_text('{"aliases": []}\n', encoding="utf-8")
+            report = validate_submission(root, "alice", [path])
+        self.assertFalse(report.ok)
+        self.assertIn("global policy", "\n".join(report.errors))
 
     def test_submission_owner_casing_must_match_github_login(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:

@@ -182,6 +182,7 @@ ALLOWED_VISUAL_ASSET_EXTENSIONS = {".css", ".js", ".json", ".svg", ".png", ".jpg
 PARTICIPANT_PROTECTED_GLOBAL_FILES = {
     "submissions-data.js",
     "gallery-publication.json",
+    "data/participant_owner_aliases.json",
 }
 MAINTAINER_CONTROLLED_SUBMISSIONS_ROOT_FILES = {
     "submissions/README.md",
@@ -2801,6 +2802,7 @@ def validate_submission(
     required_readiness_contract_dirs: Iterable[str] = (),
     strict_manifest_paths: Iterable[str] = (),
     authorized_legacy_submission_dirs: Iterable[str] = (),
+    blocked_submission_owners: Iterable[str] = (),
 ) -> ValidationReport:
     report = ValidationReport()
     repo_root = repo_root.resolve()
@@ -2818,6 +2820,11 @@ def validate_submission(
     authorized_legacy_dirs = {
         normalize_changed_path(path).rstrip("/")
         for path in authorized_legacy_submission_dirs
+    }
+    blocked_owners = {
+        str(owner).strip().casefold()
+        for owner in blocked_submission_owners
+        if str(owner).strip()
     }
 
     if not pr_author or not GITHUB_LOGIN_RE.match(pr_author):
@@ -2869,7 +2876,7 @@ def validate_submission(
         if not report.maintainer_bypass:
             if path in PARTICIPANT_PROTECTED_GLOBAL_FILES:
                 report.add_error(
-                    f"{path}: participants must not edit maintainer-controlled gallery publication data"
+                    f"{path}: participants must not edit maintainer-controlled gallery publication data or global policy"
                 )
                 continue
             if parts[0] != "submissions" or len(parts) < 2:
@@ -2878,6 +2885,12 @@ def validate_submission(
                 )
                 continue
             proposal_dir = "/".join(parts[:3]) if len(parts) >= 3 else ""
+            if parts[1].casefold() in blocked_owners:
+                report.add_error(
+                    f"{path}: submission owner `{parts[1]}` is a reserved historical login "
+                    "bound to a different stable GitHub user ID"
+                )
+                continue
             if parts[1] != pr_author and proposal_dir not in authorized_legacy_dirs:
                 report.add_error(
                     f"{path}: submission directory `{parts[1]}` must exactly match "

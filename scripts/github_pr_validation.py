@@ -403,7 +403,14 @@ def authorized_legacy_submission_dirs(
     if not isinstance(aliases, list):
         return set()
     for item in aliases:
-        if not isinstance(item, dict) or item.get("github_user_id") != github_user_id:
+        if not isinstance(item, dict):
+            continue
+        configured_user_id = item.get("github_user_id")
+        if (
+            not isinstance(configured_user_id, int)
+            or isinstance(configured_user_id, bool)
+            or configured_user_id != github_user_id
+        ):
             continue
         configured_login = item.get("current_login")
         if not isinstance(configured_login, str) or configured_login.casefold() != current_login.casefold():
@@ -429,6 +436,32 @@ def authorized_legacy_submission_dirs(
             result.add(PurePosixPath(value).as_posix())
         return result
     return set()
+
+
+def reserved_legacy_login_user_id(repo_root: Path, login: str) -> int | None:
+    """Return the trusted user ID that owns a released historical login."""
+    try:
+        policy = json.loads(
+            (repo_root / PARTICIPANT_OWNER_ALIASES_PATH).read_text(encoding="utf-8")
+        )
+    except (OSError, UnicodeDecodeError, json.JSONDecodeError):
+        return None
+    aliases = policy.get("aliases") if isinstance(policy, dict) else None
+    if not isinstance(aliases, list):
+        return None
+    for item in aliases:
+        if not isinstance(item, dict):
+            continue
+        legacy_login = item.get("legacy_login")
+        user_id = item.get("github_user_id")
+        if (
+            isinstance(legacy_login, str)
+            and legacy_login.casefold() == login.casefold()
+            and isinstance(user_id, int)
+            and not isinstance(user_id, bool)
+        ):
+            return user_id
+    return None
 
 
 def is_review_queue_candidate(
@@ -660,6 +693,12 @@ def main() -> int:
     authorized_legacy_dirs = authorized_legacy_submission_dirs(
         trusted_repo_root, pr_user_id, pr_author
     )
+    reserved_legacy_user_id = reserved_legacy_login_user_id(trusted_repo_root, pr_author)
+    blocked_submission_owners = (
+        {pr_author}
+        if reserved_legacy_user_id is not None and reserved_legacy_user_id != pr_user_id
+        else set()
+    )
     validation_files = validation_paths_for(files, maintainer_bypass)
     queue_candidate = is_review_queue_candidate(changed_files, pr_author, authorized_legacy_dirs)
 
@@ -748,6 +787,7 @@ def main() -> int:
                 strict_manifest_paths=strict_manifest_paths_for(files),
                 required_readiness_contract_dirs=required_readiness_contract_dirs,
                 authorized_legacy_submission_dirs=authorized_legacy_dirs,
+                blocked_submission_owners=blocked_submission_owners,
             )
             if validation_files and not base_sha:
                 validation.add_error(
