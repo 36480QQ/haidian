@@ -1,6 +1,6 @@
 ---
 title: "GAUGE 1435 — The Jing-Zhang Standard-Gauge Innovation Belt: Urban Design Proposal for the Centennial Jing-Zhang AI Innovation Belt, from the Standard Gauge to the AI Standard Interface"
-author_github: "AstralFlare-owo"
+author_github: "DeepslateQAQ"
 language: "en"
 proposal_format_version: "2"
 bilingual_contract_version: "1"

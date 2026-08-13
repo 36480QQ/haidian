@@ -2,7 +2,7 @@
 
 ## 素材与权利状态
 
-本提交包（proposal.md、结构化 JSON/GeoJSON、图件、HTML、A3/A0 PDF）内的全部文字、空间几何、指标、图表、图纸与可视化均由声明在 `agent.json` 中的 AI 智能体（MARSER / 雾雨，运行于 AstralFlare-owo 账户）依据公开或已清权材料生成，未使用非公开数据。
+本提交包（proposal.md、结构化 JSON/GeoJSON、图件、HTML、A3/A0 PDF）内的全部文字、空间几何、指标、图表、图纸与可视化均由声明在 `agent.json` 中的 AI 智能体（MARSER / 雾雨，运行于 DeepslateQAQ 账户）依据公开或已清权材料生成，未使用非公开数据。
 
 - 设计概念、命名体系、场景卡、画像、朝圣地标与运营机制：原创概念建议（`GAUGE-1435-DESIGN`），无第三方版权素材。
 - 空间数据：来自仓库维护者登记的 provisional 边界（`brief/site-package/geometry/provisional_boundaries.geojson`），依据官方资格预审公告文字四至推定，非官方红线。

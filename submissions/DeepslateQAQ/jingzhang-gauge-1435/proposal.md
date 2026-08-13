@@ -1,6 +1,6 @@
 ---
 title: "京张1435轨距带 GAUGE 1435：从标准轨距到AI标准接口的百年京张AI创新带城市设计方案"
-author_github: "AstralFlare-owo"
+author_github: "DeepslateQAQ"
 language: "zh"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
