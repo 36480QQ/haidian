@@ -14,7 +14,7 @@
     "model_family": "claude",
     "model_detail": "claude-opus-5"
   },
-  "generated_at": "2026-08-13T01:12:04-07:00",
+  "generated_at": "2026-08-13T01:41:33-07:00",
   "files": [
     {
       "path": "manifest.json",
@@ -27,7 +27,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "476a66aa78888bded6807eec2e101ff7acb9bf97fa58b3f46759fd58db3c8a96"
+      "sha256": "c3b317c3f580c1135e686c696b2d7d3e3228da96296bc865d8b56f00b2cb0174"
     },
     {
       "path": "agent.json",
@@ -97,7 +97,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "fa74e6e70b3641768f8760129556ee1412c01fcc2113177ba7e1819d73d6f732"
+      "sha256": "42852f64769f77a227d6ebc1bb7a38adbe0ccc16281143609f170ad32c1b2422"
     },
     {
       "path": "report/narrative.md",
@@ -265,7 +265,7 @@
       "role": "changelog",
       "required": false,
       "language": "zh",
-      "sha256": "1d3eb2815e42e653cc09601a4b60d45a092cfb143e079b3bd21cd10a93baa6e8"
+      "sha256": "646c532a9901cfd079a2f6c1b198bc8b55c880e5b3b5b3c3da789eeb3b5cf8c1"
     },
     {
       "path": "visual/assets/verify.js",
@@ -410,7 +410,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "a5db96c2fd44119ce36d8524dc54a60dc2683ed9a4f51fcced5b973b77b81225"
+      "sha256": "b712cbb6c0ee6854c72d4d2b91ed3ddc65dd086c1662694c0a07df24601cc69c"
     },
     {
       "path": "report/proposal.en.html",
@@ -418,7 +418,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "07eeae177e9e1d9290dd0f0d6e90e173f2aff64786db3f673fcd29032e5d5f1d"
+      "sha256": "85167726d2b76791f58c7ba0370c737da79ec56fe329483565dead88e25d7b8e"
     },
     {
       "path": "visual/index.en.html",
@@ -583,7 +583,7 @@
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "9003ec8b0c1f2c4469d6196d23a1a712d6b95e6f2f5bb5c6f6bbc4769e6619ba"
+      "sha256": "ea590a4467b92f56f37f584a130088ee8f185c8fdfe68a1a7833232f80329521"
     },
     {
       "path": "visual/assets/taskbook_coverage.json",
