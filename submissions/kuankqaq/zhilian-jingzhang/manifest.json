@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "package_id": "zhilian-jingzhang",
   "project_id": "centennial-jingzhang-ai-belt",
   "site_package_version": "0.1.0",
@@ -71,9 +71,10 @@
     },
     {
       "path": "risk.json",
-      "role": "risk",
       "required": true,
-      "sha256": "ef3a861cae1bf42b829784747136d936d78d4d155afbf7e417fd7e4097b457c7"
+      "sha256": "ef3a861cae1bf42b829784747136d936d78d4d155afbf7e417fd7e4097b457c7",
+      "role_detail": "risk",
+      "role": "other"
     },
     {
       "path": "self_check.json",
@@ -89,9 +90,10 @@
     },
     {
       "path": "spatial.json",
-      "role": "spatial",
       "required": true,
-      "sha256": "5ecf22913953befed00650137deff146caa1a1004a013e3d710d1fc1e15140af"
+      "sha256": "5ecf22913953befed00650137deff146caa1a1004a013e3d710d1fc1e15140af",
+      "role_detail": "spatial",
+      "role": "other"
     },
     {
       "path": "standard_matrix.json",
