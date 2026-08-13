@@ -99,6 +99,39 @@
       "confidence": "high",
       "assumptions": []
     },
+    "hero_scenario_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/two-answers.json"
+      ],
+      "formula": "count(scenarios where evidence_tier=hero)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "catalog_scenario_count": {
+      "status": "known",
+      "value": 9,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/two-answers.json"
+      ],
+      "formula": "count(scenarios where evidence_tier=catalog)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "adoption_receipt_coverage_count": {
+      "status": "known",
+      "value": 12,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/two-answers.json"
+      ],
+      "formula": "count(scenarios with complete receipt_fields and evidence_status=not_field_run)",
+      "confidence": "high",
+      "assumptions": []
+    },
     "industry_test_count": {
       "status": "known",
       "value": 3,
