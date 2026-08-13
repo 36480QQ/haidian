@@ -1,6 +1,9 @@
 {
   "type": "FeatureCollection",
-  "name": "constraints_scaffold",
+  "name": "constraints_official_geometry_unavailable",
+  "evidence_status": "official_geometry_unavailable",
+  "confidence": "unknown",
+  "description": "Intentional empty collection documenting unavailable official controls; no inferred constraint geometry is supplied.",
   "features": [],
   "data_gap": {
     "status": "official_constraint_geometry_unavailable",

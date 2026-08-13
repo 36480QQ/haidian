@@ -15,21 +15,35 @@
       "proposal_files": [
         "submissions/Qrzzzz/jingzhang-in-situ/proposal.md"
       ],
-      "changelog_files": [],
+      "changelog_files": [
+        "submissions/Qrzzzz/jingzhang-in-situ/changelog.md"
+      ],
       "changed_files": [
         "submissions/Qrzzzz/jingzhang-in-situ/agent.json",
+        "submissions/Qrzzzz/jingzhang-in-situ/assets/figures/ai-ecosystem.en.png",
+        "submissions/Qrzzzz/jingzhang-in-situ/assets/figures/ai-ecosystem.png",
+        "submissions/Qrzzzz/jingzhang-in-situ/assets/figures/culture-wayfinding.en.png",
+        "submissions/Qrzzzz/jingzhang-in-situ/assets/figures/culture-wayfinding.png",
+        "submissions/Qrzzzz/jingzhang-in-situ/assets/figures/identity-system.en.png",
+        "submissions/Qrzzzz/jingzhang-in-situ/assets/figures/identity-system.png",
         "submissions/Qrzzzz/jingzhang-in-situ/assets/figures/key-areas.en.png",
         "submissions/Qrzzzz/jingzhang-in-situ/assets/figures/key-areas.png",
         "submissions/Qrzzzz/jingzhang-in-situ/assets/figures/land-use-structure.en.png",
         "submissions/Qrzzzz/jingzhang-in-situ/assets/figures/land-use-structure.png",
+        "submissions/Qrzzzz/jingzhang-in-situ/assets/figures/landmarks-components.en.png",
+        "submissions/Qrzzzz/jingzhang-in-situ/assets/figures/landmarks-components.png",
         "submissions/Qrzzzz/jingzhang-in-situ/assets/figures/metrics-evidence.en.png",
         "submissions/Qrzzzz/jingzhang-in-situ/assets/figures/metrics-evidence.png",
         "submissions/Qrzzzz/jingzhang-in-situ/assets/figures/mobility-bluegreen.en.png",
         "submissions/Qrzzzz/jingzhang-in-situ/assets/figures/mobility-bluegreen.png",
+        "submissions/Qrzzzz/jingzhang-in-situ/assets/figures/operations-pathway.en.png",
+        "submissions/Qrzzzz/jingzhang-in-situ/assets/figures/operations-pathway.png",
+        "submissions/Qrzzzz/jingzhang-in-situ/assets/figures/scenario-matrix.en.png",
+        "submissions/Qrzzzz/jingzhang-in-situ/assets/figures/scenario-matrix.png",
         "submissions/Qrzzzz/jingzhang-in-situ/assets/figures/site-overview.en.png",
         "submissions/Qrzzzz/jingzhang-in-situ/assets/figures/site-overview.png",
-        "submissions/Qrzzzz/jingzhang-in-situ/assets/media/cover.webp",
         "submissions/Qrzzzz/jingzhang-in-situ/assumptions.json",
+        "submissions/Qrzzzz/jingzhang-in-situ/changelog.md",
         "submissions/Qrzzzz/jingzhang-in-situ/compliance_matrix.json",
         "submissions/Qrzzzz/jingzhang-in-situ/design_depth_matrix.json",
         "submissions/Qrzzzz/jingzhang-in-situ/drawings/a0-boards.en.pdf",
@@ -56,13 +70,18 @@
         "submissions/Qrzzzz/jingzhang-in-situ/self_check.json",
         "submissions/Qrzzzz/jingzhang-in-situ/sources.json",
         "submissions/Qrzzzz/jingzhang-in-situ/standard_matrix.json",
+        "submissions/Qrzzzz/jingzhang-in-situ/visual/assets/NotoSansSC-OFL-1.1.css",
+        "submissions/Qrzzzz/jingzhang-in-situ/visual/assets/font-subset.css",
+        "submissions/Qrzzzz/jingzhang-in-situ/visual/assets/rebuild-visuals-source.json",
+        "submissions/Qrzzzz/jingzhang-in-situ/visual/assets/visual.css",
+        "submissions/Qrzzzz/jingzhang-in-situ/visual/assets/visual.js",
         "submissions/Qrzzzz/jingzhang-in-situ/visual/index.en.html",
         "submissions/Qrzzzz/jingzhang-in-situ/visual/index.html"
       ],
       "ai_package_stages": {
         "submissions/Qrzzzz/jingzhang-in-situ": "formal"
       },
-      "total_bytes": 2474063,
+      "total_bytes": 11213876,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -122,7 +141,8 @@
       "metrics_seen": {
         "site_area_sqm": 11412825.386,
         "green_ratio": 0.123423,
-        "public_space_ratio": 0.073281
+        "public_space_ratio": 0.073281,
+        "key_area_count": 3.0
       }
     },
     "stderr": ""
@@ -140,10 +160,10 @@
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 7,
+          "source": 12,
           "standard": 6,
           "depth": 15,
-          "data": 11,
+          "data": 10,
           "metric": 5
         }
       }

@@ -1,6 +1,10 @@
 {
   "type": "FeatureCollection",
-  "name": "public_space_scaffold",
+  "name": "public_space_conceptual_design",
+  "evidence_status": "conceptual_design",
+  "confidence": "medium",
+  "boundary_dependency": "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+  "description": "Agent-generated conceptual public-space layer; not a surveyed existing condition, approved boundary or statutory public-space ratio.",
   "features": [
     {
       "type": "Feature",

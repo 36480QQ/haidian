@@ -1,6 +1,10 @@
 {
   "type": "FeatureCollection",
-  "name": "site_boundary_scaffold",
+  "name": "site_boundary_provisional_rough",
+  "evidence_status": "provisional_only",
+  "confidence": "low",
+  "source_id": "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+  "description": "Rough substitute boundary derived from public text and approximate area constraints; not an official redline or precise-area basis.",
   "features": [
     {
       "type": "Feature",
@@ -9,12 +13,13 @@
         "id": "SITE-001",
         "layer": "SITE_BOUNDARY",
         "source_type": "agent_inferred_from_public_data",
-        "confidence": "medium",
+        "confidence": "low",
         "geometry_role": "provisional_constraint",
         "scope_id": "overall_design_area",
         "name_zh": "总体设计范围粗略替代边界",
         "official_boundary": false,
         "boundary_precision": "provisional_rough",
+        "usable_for_formal": "provisional_only",
         "source_id": "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
         "derived_from_source_ids": [
           "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"

@@ -1,6 +1,10 @@
 {
   "type": "FeatureCollection",
-  "name": "building_footprints_scaffold",
+  "name": "building_footprints_conceptual_design",
+  "evidence_status": "conceptual_design",
+  "confidence": "medium",
+  "boundary_dependency": "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+  "description": "Agent-generated conceptual building footprint for design discussion only; not a surveyed existing building, approved envelope or engineering conclusion.",
   "features": [
     {
       "type": "Feature",

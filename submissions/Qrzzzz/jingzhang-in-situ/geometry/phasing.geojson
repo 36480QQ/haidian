@@ -1,6 +1,10 @@
 {
   "type": "FeatureCollection",
-  "name": "phasing_scaffold",
+  "name": "phasing_conceptual_design",
+  "evidence_status": "conceptual_design",
+  "confidence": "medium",
+  "boundary_dependency": "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+  "description": "Agent-generated conceptual phase for discussion; not an approved schedule, budget, procurement or implementation commitment.",
   "features": [
     {
       "type": "Feature",

@@ -1,6 +1,10 @@
 {
   "type": "FeatureCollection",
-  "name": "land_use_topology_partition",
+  "name": "land_use_conceptual_design",
+  "evidence_status": "conceptual_design",
+  "confidence": "medium",
+  "boundary_dependency": "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+  "description": "Agent-generated conceptual land-use partition within a provisional rough boundary; not an approved land-use plan or cadastral record.",
   "features": [
     {
       "type": "Feature",

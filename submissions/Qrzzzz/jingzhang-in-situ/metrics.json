@@ -13,9 +13,10 @@
         "geometry/site_boundary.geojson"
       ],
       "formula": "polygon_area(submitted_site_boundary)",
-      "confidence": "high",
+      "confidence": "low",
       "assumptions": [
-        "Trusted official boundary is present in the site package."
+        "Calculated from the provisional rough boundary registered as DATA-SRC-PROVISIONAL-BOUNDARIES-20260605.",
+        "The value is reproducible for intake self-check and scenario comparison only; it is not an official or precise site area."
       ]
     },
     "building_footprint_area_sqm": {
@@ -27,7 +28,9 @@
       ],
       "formula": "sum(polygon_area(building_footprints))",
       "confidence": "medium",
-      "assumptions": []
+      "assumptions": [
+        "The footprint is an agent-generated conceptual design layer, not a surveyed existing condition or approved building envelope."
+      ]
     },
     "green_ratio": {
       "status": "known",
@@ -38,8 +41,11 @@
         "geometry/site_boundary.geojson"
       ],
       "formula": "green_space_area_sqm / site_area_sqm",
-      "confidence": "medium",
-      "assumptions": []
+      "confidence": "low",
+      "assumptions": [
+        "The numerator is an agent-generated conceptual design layer and the denominator is a provisional rough boundary.",
+        "Use only as a recalculable scenario indicator; publish with approximate precision and not as a statutory or engineering ratio."
+      ]
     },
     "public_space_ratio": {
       "status": "known",
@@ -50,8 +56,11 @@
         "geometry/site_boundary.geojson"
       ],
       "formula": "public_space_area_sqm / site_area_sqm",
-      "confidence": "medium",
-      "assumptions": []
+      "confidence": "low",
+      "assumptions": [
+        "The numerator is an agent-generated conceptual design layer and the denominator is a provisional rough boundary.",
+        "Use only as a recalculable scenario indicator; publish with approximate precision and not as a statutory or engineering ratio."
+      ]
     },
     "floor_area_ratio": {
       "status": "unknown",
@@ -70,11 +79,13 @@
       "value": 3,
       "unit": "count",
       "source_files": [
-        "geometry/key_areas.geojson"
+        "brief/site-package/agent_taskbook.json"
       ],
-      "formula": "count(key_detailed_design_areas)",
+      "formula": "count(required_key_detailed_design_areas_named_in_agent_taskbook)",
       "confidence": "high",
-      "assumptions": []
+      "assumptions": [
+        "High confidence applies only to the textual requirement for three named key areas; their submitted polygons remain provisional-only and low confidence."
+      ]
     }
   }
 }

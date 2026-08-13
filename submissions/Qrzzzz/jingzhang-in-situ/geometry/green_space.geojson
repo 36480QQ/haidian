@@ -1,6 +1,10 @@
 {
   "type": "FeatureCollection",
-  "name": "green_space_scaffold",
+  "name": "green_space_conceptual_design",
+  "evidence_status": "conceptual_design",
+  "confidence": "medium",
+  "boundary_dependency": "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+  "description": "Agent-generated conceptual green-space layer; areas and ratios remain recalculable scenario indicators, not surveyed or statutory values.",
   "features": [
     {
       "type": "Feature",
