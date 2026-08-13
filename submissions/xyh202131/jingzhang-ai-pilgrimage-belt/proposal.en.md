@@ -256,6 +256,18 @@ The three pilgrimage landmarks are redefined as three chapters in one knowledge 
 
 The “restoration acceptance” above is a conceptual checklist for a future accountable role, not site approval, completion acceptance, or proof that existing conditions comply. All three prototypes require removability, stoppability, and a detour, but no component may be sited until exact land, ownership, fire, railway protection, municipal, accessibility, and operating responsibility evidence has passed professional review [assumption:A-KEY-AREA-SPATIAL-011] [data:visual/assets/key-area-evidence-matrix.json#round2_spatial_deepening].
 
+### Ordinary-Life Spatial Scenes: See How People Use the Place before Adding the System
+
+The triptych is not an atmospheric layer placed over the existing dense system diagrams. It translates one public-rights rule to human scale: **a person can first walk, stay, ask, exit, and complete the basic task; AI appears only in a side-positioned, optional, stoppable overlay.** The Zhongzhiyuan panel separates an ordinary bypass from a parallel proof court. Origin Community uses one screen-free resident street to link two courts. Dazhongsi places the commuter spine and quiet staffed service beside optional activity. No panel requires an account, scan, screen, network, or AI, and none places proof, furniture, platform, queue, or cables in the continuous daily route [data:visual/assets/ordinary-life-media-register.json] [data:visual/assets/non-ai-parity-contract.json].
+
+![Ordinary-life spatial scenes: Zhongzhiyuan parallel proof court, Origin Community screen-free daily street, and staffed service beside Dazhongsi commuting; conceptual visualization, not field evidence](assets/media/ordinary-life-scenes.webp)
+
+[Read the bilingual long description, generation method, and rights limitations](assets/media/ordinary-life-scenes.md). The image was generated with the OpenAI image-generation tool on 13 August 2026 from a package-authored prompt. No site photograph, map screenshot, private image, identifiable person, logo, or third-party visual was supplied. The selected output was only converted to WebP and had no EXIF/GPS at inspection; all people are non-identifiable synthetic figures. This disclosure is not a model-output-terms audit or a reuse licence, and the rights status remains `not_fully_cleared` [source:SOURCE-ORDINARY-LIFE-MEDIA-R12].
+
+**Ordinary—proof—fault—recovery.** Ordinary state first keeps physical wayfinding, continuous accessibility intent, screen-free staying, and staffed explanation. Proof state permits only a future announced, authorized, time-bounded, accountable, removable overlay outside the route; the image does not prove those conditions exist. Fault state immediately stops the overlay, isolates equipment, explains through staff, and keeps the bypass. Recovery state removes the overlay and restores surface, planting, quiet, and passage first. If independent review does not close, remain at G0, stay stopped, or retire. The three places share this order but implement it differently through equipment isolation, consent withdrawal, and source correction, so they cannot be copied mechanically [data:visual/assets/ordinary-life-media-register.json#four_state_reading] [data:visual/assets/key-area-evidence-matrix.json#round2_spatial_deepening].
+
+**Rights visible in the image do not prove current site provision.** The wheelchair user, older people, children, caregivers, and commuters test whether the relationship is legible; they are not real participants, consent, or research samples. Tactile wayfinding, step-free continuity, clear width, slope, turning, rest, fire, railway protection, municipal conditions, and staffed-service capacity still require survey, co-testing, and professional responsibility. Real photographs, confirmed viewpoints, field observations, approved components, operational interactions, confirmed accessibility results, and confirmed restoration results all remain 0. The image cannot establish location, scale, dimension, material, shift, construction, operation, or approval [assumption:A-KEY-AREA-SPATIAL-011] [data:visual/assets/implementation-handoff-matrix.json].
+
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
 ### Seven Joint-Testing Profiles
@@ -793,6 +805,58 @@ This section and figure constitute no site, construction, fire-safety, railway-p
 
 [back to top](#ai-pilgrimage-belt)
 
+## Review Synthesis and Professional Handoff: Freeze the Grammar, Replace Real-World Gaps
+
+### A Four-Step Review Entry, Not a Score by Round Count
+
+Round 11 adds no brand, scene, season, project or governance contract. It compresses the ten-round package into one continuous review entry. First: does ordinary life work before any proof activity? The continuous civic track, no-account/no-QR entry, complete non-AI task, screen-free nodes, staffed handoff and continuous accessibility intent must remain visible. Second: are the three places genuinely non-interchangeable? Zhongzhiyuan centres equipment isolation, physical stop and restoration acceptance; Origin Community centres the resident street, two-court deliberation, four withdrawal nodes and quiet; Dazhongsi centres four-quadrant commuting, source correction, staffed service and quiet stopping. Third: can the back-stage system stop, write back and exit after failure? JZ-AIOS, four state axes, evidence gates, three carriers and exit receipts must answer together. Fourth: which elements may be frozen, and which must be replaced, recalculated, reviewed or deleted after real evidence arrives [data:visual/assets/implementation-handoff-matrix.json#review_synthesis].
+
+This route compresses reading order, not evidence gates. One concept is Twin-track Jing-Zhang; three prototypes are the parallel proof court, one street/two courts/four nodes, and four-quadrant walking plus one hall/one desk; one back-stage kernel is JZ-AIOS + G0–G3 + evidence gates + rights boundaries. A document check, synthetic PASS, evidence-gate result, restoration acceptance, PR approval or merge cannot be promoted into field-trial, procurement, construction, operation, deployment or maturity authorization.
+
+### Six Taskbook Duties: Review Question and Professional Next Action
+
+| Taskbook duty | One core review question | Current readable evidence | Professional next action | Must never be inferred |
+|---|---|---|---|---|
+| agent.1 Master concept and coordination | Does the concept organize spatial relations rather than remain a slogan? | Twin-track overview, three scopes, three areas/two wings and compliance matrix | Preserve the twin-track grammar; replace provisional geometry and recalculate only after authoritative boundaries and survey arrive | Official redline, approved control plan, road engineering or built proof facility |
+| agent.2 Innovation ecosystem | Does the ecosystem connect space, eight factors and public value? | JZ-AIOS, case-to-local-action table, mission economy and resource ledger | Test demand, resources and value with dated, attributable evidence; keep unconfirmed partners and budgets at 0/unknown | Enterprise commitment, investment amount, procurement or subsidy |
+| agent.3 AI+ scenarios | Can every scenario be human-reviewed, stopped and returned to ordinary service? | Twelve existing passports, G1 preregistration, failure governance and T-02 synthetic replay | Close H01–H07 for the affected existing scene; do not create a new scene ID to bypass an evidence gap | Field readiness, privacy compliance, approved test or deployment performance |
+| agent.4 Public space and landmarks | Do ordinary movement, non-AI, accessibility and staffed service work first? | Three plans/sections, non-AI blueprint, reversible components and restoration gates | Survey and co-test the ordinary route before locating an optional overlay; specialist constraints may reject the concept | Existing-building condition, accessibility compliance, fire, railway or heritage clearance |
+| agent.5 Cultural narrative | Is content verifiable, correctable and reachable without a screen? | Century-time atlas, source grades, correction/takedown and screen-free chain | Replace typed placeholders with cleared primary records while retaining dispute, version and recovery history | Archive ownership, metaphor as fact, image rights or operating exhibition |
+| agent.6 Long-term operation | Does year-round operation serve ordinary life rather than event heat? | No-event days, four-window journey, quiet covenant, three carriers and annual disposition | Confirm duties, staffed availability, quiet windows, budgets, complaint and retirement before scheduling | Confirmed event, opening hour, roster, partner or operating result |
+
+`compliance_matrix.json` remains the complete coverage ledger for all six duties. This table is a review entry only; it neither replaces that matrix nor turns serial increments into a seventh task [data:visual/assets/implementation-handoff-matrix.json#agent_task_review_crosswalk].
+
+### Eight Authoritative-Data Replacements: New Evidence Triggers Recalculation, Not Pasting
+
+| Replacement pack | Current state | Required real-world input | Triggered action | Affected outputs |
+|---|---|---|---|---|
+| D01 Official boundary and key areas | provisional_only | Dated official polygons with CRS, version, use permission and accountable source | Difference check → replace → EPSG:4548 recalculation | Containment, area metrics, all spatial figures, HTML and A3/A0 |
+| D02 Existing/as-built survey | not_measured | Topography, levels, entries, surfaces, planting, facilities and opening conditions | Verify, revise or delete conceptual relations | Ordinary routes, ground-floor interfaces, sections and restoration baseline |
+| D03 Controls and ownership | unknown / not_authorized | Effective control plan, ownership/use rights, four-line controls and approval register | Professional conflict review before precise location | Land use, building/update language, component location and phase statements |
+| D04 Accessibility and same-task co-test | design_intent_only | Measured route plus consented, group-separated same-task records | Group-by-group review and drawing revision | Continuous route, staffed handoff, screen-free completion and parity outcomes |
+| D05 Transport and peak continuity | conceptual | Pedestrian/cycle/transit evidence, desire lines, station interfaces and peak conflicts | Recalculate and stress-test ordinary movement | Six interfaces, Dazhongsi four-way route, event displacement and windows |
+| D06 Specialist constraints | not_specialist_verified | Railway, heritage, water, ecology, municipal, fire, emergency, structure, light and noise reviews | Specialist findings may override or remove the concept | Removable components, service edges, quiet/night mode and restoration acceptance |
+| D07 Responsibility and operation | role_types_only | Written role acceptance, stop/restart chain, backup, budget, maintenance and retirement duty | No schedule or trial before confirmation | Civic timetable, staffed availability, incident duty and annual decisions |
+| D08 Rights and reuse | not_fully_cleared | Complete terms, written consent, ODbL, font/tool/media and file-level audit | No external display or professional reuse before clearance | Display, translation, professional deepening, cross-project and third-party release |
+
+Every new input must retain source, version, date, spatial/temporal scope and use permission. The package must then decide item by item whether to freeze, replace, recalculate, review or retire, synchronizing prose, GeoJSON/JSON, figures, PDFs, three carriers, manifest and rights ledger. If authoritative evidence conflicts with the concept, protect ordinary public rights and stop the affected proof overlay; never alter an official or locked layer to preserve the proposal [data:visual/assets/implementation-handoff-matrix.json#official_data_replacement_register].
+
+### Seven Professional Disciplines and the Stop Line
+
+Planning/urban design, landscape/accessibility, transport, architecture/public interface, railway/heritage/municipal/fire and other specialist safety, data/AI/rights, and operations/community each receive only the D01–D08 evidence appropriate to their judgement. A concept diagram cannot replace a planning decision; a green line cannot prove accessibility compliance; OSM cannot prove transport or boundary conditions; a massing prototype cannot prove an existing building; a complete template cannot replace specialist safety review; a synthetic PASS cannot prove data or service performance; and an event calendar cannot replace duties and budgets [data:visual/assets/implementation-handoff-matrix.json#professional_discipline_matrix].
+
+Current authoritative replacement artifacts: 0; accepted professional duties: 0; submitted artifacts across 99 closure slots: 0; approved items: 0; field tests: 0; GO decisions: 0. The first professional action is not to draw with greater precision. It is to select one existing project or scene and submit traceable material through H01–H07. Only after all nine closure categories are complete may a separately authorized next gate be discussed. Any major gap remains NO-GO.
+
+### Bilingual Review Figure and Reality Boundary
+
+`review-professional-handoff.{svg,png}` places A one concept/three prototypes/one kernel, B six taskbook duties, C eight authoritative-data replacements, and D seven professional disciplines plus the NO-GO stop line on one review surface. It is a G0 concept and handoff index—not evidence of supplied data, professional opinion, accepted responsibility, approval or implementation.
+
+![Review synthesis and professional handoff: one concept, three prototypes, one kernel, six duties, eight data replacements, seven disciplines, and a NO-GO stop line (G0; real replacement artifacts, accepted duties, approvals and field tests all 0)](assets/figures/review-professional-handoff.en.png)
+
+This round changes none of the twelve scenes, eight projects, three key areas, geometry or metrics. Every object remains G0, provisional and `not_fully_cleared`. This section constitutes no formal plan, government decision, site, control-plan, architecture, transport, railway, heritage, municipal, fire, accessibility, data, operating, rights or deployment authorization.
+
+[back to top](#ai-pilgrimage-belt)
+
 
 ## References
 
@@ -809,3 +873,39 @@ Governance and method context also includes [source:NATIONAL-DATA-INFRA-2025], t
 The global comparison set includes [source:CASE-KENDALL], [source:CASE-ONE-NORTH], and [source:CASE-22AT]. The same set also includes [source:CASE-KINGS-CROSS], [source:CASE-STATION-F], and [source:CASE-MARS]. Existing directional context is [source:OSM-CONTEXT]. Its ODbL data is used only to identify roads, railways, and waterways and cannot serve as an official boundary or engineering basis.
 
 Generation method: the spatial design is derived from the public provisional boundary, project enumerations, OSM context, and deterministic scripts. Areas and lengths are recalculated in EPSG:4548. Scenario passports, service zones, public-space modes, and phase gates are recorded as GeoJSON attributes. PNG, A3/A0, and offline HTML are explanatory layers, while `geometry/*.geojson`, `metrics.json`, the three matrices, and `self_check.json` are the evidence layer. `COMMUNITY-DISPLAY-ONLY` is recorded only as the current license label because its complete terms are not included. File-level status, unresolved items, and use limitations are stated in `visual/assets/rights-clearance-ledger.json` and `report/copyright_statement.md`.
+
+
+## Three reversible assembly and restoration packs
+
+> This Round 13 professional-handoff increment adds no scene, project, key area, geometry, boundary, maturity or governance brand. It only turns the three existing prototypes into typed relations that can be blocked before installation, checked before opening, kept secondary during ordinary use, stopped and isolated on failure, inventoried on exit, and independently accepted after restoration. The drawing is not an engineering detail, existing building, approved location, procurement list or completed acceptance. [data:visual/assets/reversible-component-restoration-register.json]
+
+![Three reversible assembly and restoration packs](assets/figures/reversible-components.en.png)
+
+### One six-stage grammar, not one copied composition
+
+| Stage | Public-space action | Real evidence that must close | Current decision |
+|---|---|---|---|
+| Before-install evidence | Survey ordinary routes, daily interfaces and restoration baseline before locating anything | D01-D03 + H01-H03 | 0 artifacts; NO-GO |
+| Pre-opening check | Read continuous ordinary/non-AI route, screen-free information, staffed status and stop method together | D04-D07 + H04-H06 | 0 checks; stay closed |
+| Ordinary use | Optional overlay is off by default; resident, commute, observation and quiet use do not yield to events | Real ordinary-day baseline | unknown; not operation |
+| Stop and isolate | Stop the applicable automation/capture/amplification/display layer and retain the same manual task or safe refusal | H05 stop chain and failure writeback | 0 events; no automatic restart |
+| Remove and exit | Record components, fixings, cables, signs, queues and data/log/account destinations | D06-D08 + destination receipt | 0 removals; no silent transfer |
+| Restore and accept | Restore ordinary route, surface/planting, quiet, screen-free information and same-task service before independent retest | H06-H07 + restoration receipt | 0 completions; professionals may reject/delete |
+
+### Three journeys and non-copyable components
+
+**Zhongzhiyuan.** A visitor arrives on the continuous observation bypass; the proof court, isolation edge and equipment stay beside it. Even under future authorization, opening requires measured bypass, physical stop and staffed takeover. Boundary breach, collision risk, nuisance or unavailable takeover stops and isolates the proof layer without deleting the bypass. Exit inventories equipment, edge, fixings, cables and service traces; path, surface, planting, sound/light and same-task service need independent acceptance before retest. Its equipment-isolation / physical-status / staffed-takeover / recovery-checkpoint chain cannot become resident deliberation courts or a commuter publication hall.
+
+**Origin Community.** Residents first receive one complete daily street; two courts and four screen-free nodes sit beside it and withdraw individually. Paper or staffed learning, refusal, withdrawal and correction require no account, QR code or AI. Withdrawal, safeguarding gaps, group disparity, nuisance or quiet failure stops matching, capture and amplification while the street and paper task remain. Exit closes consent-record destinations and removes kits, signs, capture, screens and temporary fixings before courts and street return to residents. Its resident-priority / screen-free learning / consent-withdrawal / quiet-edge sequence cannot be transplanted into equipment testing or peak commuting.
+
+**Dazhongsi.** Four commute arms and a clear centre work first; the source-correction hall and dual-entry staffed desk occupy an off-route bay. A source challenge, stale version, rights concern, queue spill or peak-path intrusion withdraws the publication layer while keeping the prior version addressable; staffed service is shown only when genuinely confirmed. Exit removes display, sound/light, queue and service overlays, restoring four-way movement, quiet rest and the source-version trail. Its peak continuity / source correction / dual-entry staffed service / off-route quiet relation cannot become a proof court or community courts.
+
+### Typed unknowns and professional veto
+
+For every component, `TYPE / DIMENSION / MATERIAL / CONNECTION / SPECIALIST CLEARANCE / EXACT LOCATION / INSTALLATION METHOD / RESTORATION DURATION` remain `null / unknown`. D01-D08 govern real boundary, survey, control, accessibility co-test, peak transport, specialist constraints, duties and rights; H01-H07 govern authority, approval scope, baseline, data/safety, stop/recovery, public parity and independent retest. When professional evidence conflicts, ordinary public rights prevail and the proof overlay stops. Professionals may revise, reject or delete a component concept; official evidence must never be altered to preserve the drawing. Installations, approved details, accepted duties, inspections, real removals and restoration acceptances remain 0. All objects remain G0, provisional and `not_fully_cleared`.
+
+## Round 14 convergence: five-minute accessible offline review walk
+
+Open `visual/index.en.html#accessible-review-walk` and follow five steps: twin-track spatial grammar → three non-interchangeable prototypes → an ordinary non-AI task → failure and recovery → real-input replacement and professional NO-GO. The page is fully offline and requires no account, QR code, remote resource or AI. With JavaScript disabled, all five narratives, limitations and evidence backlinks remain readable in document order. Keyboard enhancement only adds direct, previous/next and Home/End navigation; print exposes everything. These are accessibility intentions and review presentation—not WCAG certification or new evidence.
+
+This round adds **0** concepts, scenes, projects, geometry, approvals, field tests, operations, accepted professional duties or rights clearance. Twelve scenes, eight projects, three key areas, 99 closure slots, G0, provisional boundaries, D01–D08, H01–H07 and `not_fully_cleared` remain unchanged. Professionals may revise, reject or delete the concept; major evidence, ordinary-rights or rights gaps retain NO-GO.

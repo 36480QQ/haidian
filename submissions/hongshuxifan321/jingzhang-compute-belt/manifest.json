@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "93acbe56a5de678d9f137e9a8b076ca2abb332338d39704f3114ad632b714891"
+      "sha256": "17b457ed0c420fe3398487f768b734514922d9be47bed826141d209a2c86db3f"
     },
     {
       "path": "agent.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "920bad46be2d5ca91b1f631f6f6c28af5340219da5ec942146b3fbee483e97a4"
+      "sha256": "91bc4795f3c5d712bb338a36b0fffdf11ccec04608dd46ad8ed49c3fb9c204a4"
     },
     {
       "path": "compliance_matrix.json",
@@ -77,11 +77,25 @@
       "sha256": "e273b4f0c717616539700570985e10af6ffc627eb62185c40090b163b086d1a7"
     },
     {
+      "path": "spatial.json",
+      "role": "other",
+      "required": false,
+      "sha256": "555265b54212e74acbb07a0cf35df6e100c0420aeb85c400e5f7ce033e2b0c28",
+      "role_detail": "spatial_nodes"
+    },
+    {
+      "path": "risk.json",
+      "role": "other",
+      "required": false,
+      "sha256": "1f2032909b4a042a7ff8d8a9912fa771acb96eb2d05f262e2dd99701c3c13f54",
+      "role_detail": "risk_matrix"
+    },
+    {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "1e735b95466732d9211cd420eb53fa8bf9eb56208a233c40e7c5ecc4025162fa"
+      "sha256": "8e68ae3872e8101e490a0c49c2466c42eb87ffc69473ffcfd3bcb91d1e40bf48"
     },
     {
       "path": "report/narrative.md",
@@ -295,7 +309,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "5f5871da2185b867a77b00c18801dc250b7f91e5e39b0fbca2cde95b188ab8c2"
+      "sha256": "32374a9e70ae8589a658e0fba40577c322c3830fcc395b11072c486090d6cfd8"
     },
     {
       "path": "assets/branding/logo-construction.png",

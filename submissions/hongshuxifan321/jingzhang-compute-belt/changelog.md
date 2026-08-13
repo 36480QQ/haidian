@@ -1,5 +1,15 @@
 # 方案迭代记录
 
+## v1.2-4 - 2026-08-12
+
+合并入库后小修三项（仓库全区域巡查发现，打包单 PR）。
+
+- **用字统一**：proposal.md「大钟寺 AI 产业集聚区」→「大钟寺 AI 产业聚集区」（与术语表/compliance_matrix 统一，术语表明确「聚集区」统一译为 Industry Cluster；英文 Dazhongsi AI Industry Cluster 此前已一致）
+- **新增 risk.json**（role=other + role_detail=risk_matrix，可选项）：8 风险维度全量（数据隐私/实施复杂度/公众接受度/运维成本/政策不确定性/空间争议/技术成熟度/公平与包容性），内容转自正文「风险、版权与合规说明」章节；政策不确定性与实施复杂度评 4 分并带 human_review 路径，与「控规条件缺失、指标保持 unknown」口径一致
+- **新增 spatial.json**（role=other + role_detail=spatial_nodes，可选项）：6 个概念空间对象（三区两翼节点 3 + 主廊道/文化廊道 2 + 两翼协同区域 1），geometry 全部 mode=concept 仅文字标注，不含任何坐标、红线或审定指标；linked_scenarios 挂接仓库场景注册表（robot-delivery-low-speed / ai-traffic-walkability / ai-cultural-guide）
+- **manifest.json**：45 → 47 文件（新增 risk/spatial 两个可选项）
+- **校验**：schema 校验通过 → self-check 四门 PASS → preflight PASS
+
 ## v1.2-3 - 2026-08-12
 
 图纸双语修复（评审「表达完整度」点名扣分点：英文图含中文，v1 遗留）。

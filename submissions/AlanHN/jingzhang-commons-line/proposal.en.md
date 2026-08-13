@@ -30,7 +30,9 @@ The overall structure is deliberately transferable: a public rail-memory spine l
 
 The name is **Jing-Zhang Commons Line** and the communication phrase is **Centennial Rail Trace × Open Intelligence × Everyday City**. The logo uses two rail lines and an open node to express traceability, contribution and human review. The three official positioning belts are interpreted as traceable heritage, perceptible AI everyday life and testable AI integration. Five functions are linked as a loop: tools, ecosystem, real scenarios, public experience and governance. [source:AGENT-TASKBOOK] [depth:overall_spatial_structure]
 
-Six international precedents are used only as mechanism references: Kendall Square, Barcelona 22@, MaRS, Punggol Digital District, Paris-Saclay and High Tech Campus Eindhoven. The local translation is a six-layer ecosystem: origin, tools, verification, products, scenarios and governance. No precedent supplies a site control, investment target or implementation promise for Jing-Zhang. [source:CASE-KENDALL] [source:CASE-22BARCELONA] [source:CASE-MARS] [source:CASE-PUNGGOL] [source:CASE-PARIS-SACLAY] [source:CASE-EINDHOVEN]
+Six international precedents are used only as mechanism references: Kendall Square, Barcelona 22@, MaRS, Punggol Digital District, Paris-Saclay and High Tech Campus Eindhoven. The local translation is a six-layer ecosystem: origin, tools, verification, products, scenarios and governance. [source:CASE-KENDALL] [source:CASE-22BARCELONA] [source:CASE-MARS]
+
+No precedent supplies a site control, investment target or implementation promise for Jing-Zhang. The remaining case references are retained for comparison only. [source:CASE-PUNGGOL] [source:CASE-PARIS-SACLAY] [source:CASE-EINDHOVEN]
 
 Regional cooperation is treated as an interface, not as a new boundary. Beiwèi Community can provide resident questions and non-digital feedback; Future Science City can provide authorized research and validation needs; Huairou Science City can provide observation methods; the Beijing Economic-Technological Development Area can provide manufacturing and robotics test questions; and the wider Beijing-Tianjin-Hebei region can exchange cultural routes, open standards and cases. Every exchange requires authorization, minimization, human review and a clear data/IP boundary. [source:AGENT-TASKBOOK] [depth:three_level_scope_framework]
 
@@ -135,7 +137,13 @@ The annual operation loop is: open-source problem season, safety validation seas
 
 ## Metrics, Area Recalculation, and Compliance Matrix
 
-The submitted provisional boundary is approximately 11.413 km², the conceptual building footprint is 53.8 ha, the green envelope is 138.3 ha, the public-space envelope is 7.8 ha, the slow-mobility network is 23.9 km, there are 12 scenario nodes, 9 renewal project nodes and 3 key areas. Land-use union equals the submitted boundary. FAR, height and total floor area remain unknown. Every metric is derived from the package geometry and labeled with confidence and assumptions. [metric:site_area_sqm] [metric:building_footprint_area_sqm] [metric:green_space_area_sqm] [metric:public_space_area_sqm] [metric:walking_cycling_network_length_m] [metric:key_area_count] [metric:scenario_node_count] [metric:renewal_project_count] [metric:floor_area_ratio] [metric:building_height_m] [metric:total_floor_area_sqm]
+The submitted provisional boundary is approximately 11.413 km², the conceptual building footprint is 53.8 ha, and the land-use union equals the submitted boundary. FAR, height and total floor area remain unknown. [metric:site_area_sqm] [metric:building_footprint_area_sqm] [metric:green_space_area_sqm]
+
+The green envelope is 138.3 ha and the public-space envelope is 7.8 ha; these are conceptual design values, not approved controls. [metric:public_space_area_sqm] [metric:walking_cycling_network_length_m] [metric:key_area_count]
+
+There are 12 scenario nodes and 9 renewal project nodes. Every metric is derived from package geometry and labeled with confidence and assumptions. [metric:scenario_node_count] [metric:renewal_project_count] [metric:floor_area_ratio]
+
+Building height and total floor area remain unknown until official controls and surveys are available. [metric:building_height_m] [metric:total_floor_area_sqm]
 
 The compliance, standard and design-depth matrices link each required task to proposal sections, geometry, figures, metrics, sources, assumptions and self-checks. A PASS means that evidence is present and reviewable; it does not mean official approval or engineering feasibility. [depth:metrics_recalculation] [source:AGENT-TASKBOOK]
 

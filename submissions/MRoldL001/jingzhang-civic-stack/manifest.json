@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "de55a80e25952bbb756c9a6a709e3cae60ec404eaaa2977eca462423bb439448"
+      "sha256": "7ec7a3120ff0eef5bd0f84ba52f0bf78c8947805f2972bd1c78f23d418f8a8cd"
     },
     {
       "path": "agent.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "2312b0bc528799bb6223d4fb90f4df9d03698de947cf34d8edb4f5856f9f24da"
+      "sha256": "887711ac2b8a626f16472e0549bbb02a1f1488fe29d5931f35e5239fe800bae5"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "7800d650016efcff49f2e52fb6a102724897255069365208c8c9030f57968534"
+      "sha256": "1c148c421a9687f53175cdf25bf251ea6f953266ad393b68da99019f5a72fbab"
     },
     {
       "path": "report/narrative.md",
@@ -93,63 +93,63 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "a9b692fc154ae0dca16dd9a91ebe62efdb32567f172a0c60b96fd992010968ea"
+      "sha256": "3d6cf93350eab65f620c98ec53d6efc313b9780e72469224641f52b47adef9b3"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "c9cadae87c8559eb92cdc8669ac4cfc8954f94e42344bdc0bf2d3a62b21a0ffb"
+      "sha256": "687b4b216b051ed819a3d44c4e26a8733d09fa2806ef1b25a95c2567011b2e79"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "9d9cf1e47a049f8b9627f1c5b196569f3d1f7d803229e0484f4885e504fdbe50"
+      "sha256": "251654ac8a6968489a8129598e7b0d9b69d14c8219e32cf9df2cb52aedf24e6a"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "55d3d90854d933d28ede27ab9bce57ceea3796a39bfe274918fbceb203b59358"
+      "sha256": "d52d75d5bbe2493e15c2757deb7b4235859538ee1caf7914c19a96ad2e845695"
     },
     {
       "path": "assets/figures/key-areas.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "8516a8842312c87d317edb548c8cff90f7fb87950f7460b06e8f98a86bec4c33"
+      "sha256": "35ab901c9d0c9609aed5d7d5380ba9a2ec7749f8bbdf5cd59ccabb19a8598e8f"
     },
     {
       "path": "assets/figures/land-use-structure.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "e0fe3699a875af1db73f4ce12bb7ad96bb538810257f348861a360aa5d304f23"
+      "sha256": "6d2662152d26e00f70764ebeb126c2a1968f749ca3a5c11f24bf25ea96a18ede"
     },
     {
       "path": "assets/figures/metrics-evidence.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "92f692a1904f497dd2146daa961871ef95ad7868c89f81aab1e89ea3bb1481fd"
+      "sha256": "1989ae756e9168ebcf21081c1b289d608d9f1787ebb26668cde5b73e82dd22c0"
     },
     {
       "path": "assets/figures/mobility-bluegreen.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "e8f0c8d83e5d767650f7c8f410ceb655ddde519ff5be618185d9f5d41cdb2c93"
+      "sha256": "256cf78f16615162252462e641bec78889fb5906a53ec3240a63aba4a8db5845"
     },
     {
       "path": "assets/figures/site-overview.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "f9d46f5df97c9c08092f1f7b77e46c695fd2e1db69406e100738d3bd57906271"
+      "sha256": "f467a1b4d2c441e18fe63c032e3f5698fefc478412bd276a72be9b00e4096fa0"
     },
     {
       "path": "geometry/buildings.geojson",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "fe9cc382bfe094908ee1823ae2bb6904668db89fbed32bdbff9f686a407f15e4"
+      "sha256": "8bcdb3fafe05256f94e6caa487b82e5259957e0cfed86d19d6fd8c1de548a266"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "3ef453a83c6677098eff294130df19a5a098fbb372497460368ca373d79ff923"
+      "sha256": "875552c453e82df9092f5a3e791a862acf02bec2b7db37ea6cb914e174234455"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -227,7 +227,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "bb09b5a1bea56b521603817124a862b3514dffe6fcb2a5a39ffac0bf0aade1b2"
+      "sha256": "2c131f94fc4157e24577b4ad891ffc34c1445d82afd509823c384b9231596098"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -235,7 +235,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "2c0d8859db77d9554891ad0efb2ff221ce5065db02b51bade4d2212d65cd84d8"
+      "sha256": "2bf89bd3bcd2416d55a13fa99cb695553b439186e70bffa634d29c01a638aa21"
     },
     {
       "path": "visual/index.en.html",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "0fd5cea49e0ac008ebe158650cbdc405efde910332ec993da528d860f9e26bdb"
+      "sha256": "0b63e1beefb0e18f46c95dd65f8ba8d3051f43ddff4d56a0f8f0a47c65222bb3"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -251,7 +251,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/key-areas.png",
-      "sha256": "5717d6ef87bc8184efda5b8ec803e3a5cba9ea1118cc591520bb753210aff13e"
+      "sha256": "86afa59b7dc278b061fc52e6eed2e04b65c9714a9e1d97e138fc335a6624d496"
     },
     {
       "path": "assets/figures/land-use-structure.en.png",
@@ -259,7 +259,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/land-use-structure.png",
-      "sha256": "64245ea758651fcf876d89d414960b26f7611e9e78d0e3517b0fe153b533b862"
+      "sha256": "1b6f28d1f0894441d9b3bb1dfe83d3dfefad3b7fa77f91481a12a73400948b2e"
     },
     {
       "path": "assets/figures/metrics-evidence.en.png",
@@ -267,7 +267,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/metrics-evidence.png",
-      "sha256": "d87234b7aee8e2d449608bc96a867c55202427549fadd3bc9a1dacbd8e57c804"
+      "sha256": "bef61da2be0caa91238f2c51f9cef0348951ee5b1914cd1eff8e5f5c777bea20"
     },
     {
       "path": "assets/figures/mobility-bluegreen.en.png",
@@ -275,7 +275,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/mobility-bluegreen.png",
-      "sha256": "1f0c4c457d207540304b888c2622ed64760693c29847a40a9fe695b98cd0feee"
+      "sha256": "735f70c8886f0ccdd012f2185766d31f4331ed41c20f2a5f3357b5a98117906b"
     },
     {
       "path": "assets/figures/site-overview.en.png",
@@ -283,13 +283,45 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/site-overview.png",
-      "sha256": "41c59325712b38e5a540e031cb094937435fa21607b08f027dccc4e11d126b25"
+      "sha256": "af4e3d163946ce16fbef783a81c1a4c6752db2519c1c2121b30935bd6237df4a"
     },
     {
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "538258f410808274c006d43e2c3b7b7b3b2b1d4430d2b3d88429b83c1fd7e0a1"
+      "sha256": "cab2308e77d4888c0d3178611150747ef36418e57baa7b570efd53055dfe1546"
+    },
+    {
+      "path": "assets/identity/jingzhang-civic-stack-mark.svg",
+      "role": "asset",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "京张共益栈主标",
+      "title_en": "Jing-Zhang Civic Stack primary mark",
+      "description_zh": "京张带贯通留白的深蓝菱形原创标志。",
+      "description_en": "Original deep-navy diamond mark with a continuous Jing-Zhang Belt-shaped void.",
+      "sha256": "cbfd441d7d227a8aa60021033f2fdd943d248860eb51296a04cc6884044d0e1f"
+    },
+    {
+      "path": "assets/identity/jingzhang-civic-stack-mark-light.svg",
+      "role": "asset",
+      "required": false,
+      "language": "neutral",
+      "sha256": "c6f4e552ad17e941aea95286a914b2b3ca1ffe3864ca4e8655e231ef035c143f"
+    },
+    {
+      "path": "assets/identity/jingzhang-civic-stack-mark.png",
+      "role": "asset",
+      "required": false,
+      "language": "neutral",
+      "sha256": "086ceab72c8aa0d55dddc766aeec2e30f47d31fff099e5f1da9347050b8a8a55"
+    },
+    {
+      "path": "assets/identity/jingzhang-civic-stack-mark-light.png",
+      "role": "asset",
+      "required": false,
+      "language": "neutral",
+      "sha256": "a43dca1f798f7ae4cc9dccb24a3d7f3f82c8c61469f8118ed20350b626be3d5a"
     },
     {
       "path": "assets/media/zhongzhiyuan-living-lab.webp",

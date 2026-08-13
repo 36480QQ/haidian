@@ -1123,6 +1123,223 @@
         "No independent operations review"
       ],
       "license": "No complete reusable license terms are retained in the package; repository review only pending maintainer terms and independent rights audit"
+    },
+    {
+      "id": "SOURCE-JZ-REVIEW-HANDOFF-V1",
+      "rights_evidence_id": "SRC-RIGHTS-JZ-REVIEW-HANDOFF-V1",
+      "title": "评审收束与专业深化交接矩阵：四步评审、六任务、八类资料替换与七专业停止线",
+      "publisher": "xyh202131",
+      "path": "visual/assets/implementation-handoff-matrix.json",
+      "source_type": "in_package_review_handoff_matrix",
+      "accessed_date": "2026-08-12",
+      "authority_level": "submission_author",
+      "collection_method": "Round 11 extension of the existing implementation handoff matrix, independently authored from the package's merged ten-round evidence and current repository taskbook",
+      "allowable_uses": [
+        "Repository review",
+        "Peer assessment",
+        "Internal package consistency checks"
+      ],
+      "restrictions": [
+        "G0 review and handoff index only; not a professional opinion, approval or implementation record",
+        "A mapped replacement or discipline does not prove that real material or responsibility exists",
+        "Cannot replace the nine-category closure contract or authorize progression"
+      ],
+      "known_gaps": [
+        "Authoritative replacement materials remain 0",
+        "Accepted professional duties and all 99 real-world closure artifacts remain 0"
+      ],
+      "license": "No complete reusable license terms are retained in the package; repository review only pending maintainer terms and independent rights audit"
+    },
+    {
+      "id": "SOURCE-REVIEW-PROFESSIONAL-HANDOFF-FIGURE",
+      "rights_evidence_id": "SRC-RIGHTS-REVIEW-PROFESSIONAL-HANDOFF-FIG",
+      "title": "评审收束与专业深化交接图：双语 SVG/PNG（一概念、三原型、一内核、六任务、八替换、七专业）",
+      "publisher": "xyh202131",
+      "path": "assets/figures/review-professional-handoff.{svg,png}",
+      "source_type": "generated_figure",
+      "accessed_date": "2026-08-12",
+      "authority_level": "submission_author",
+      "collection_method": "Package-authored bilingual SVG sources with deterministic local Chromium PNG exports and direct visual QA",
+      "allowable_uses": [
+        "Repository review",
+        "Peer assessment",
+        "Internal package consistency checks"
+      ],
+      "restrictions": [
+        "G0 review diagram only",
+        "No official input, professional acceptance, approval, field test, GO decision or implementation result is shown",
+        "Cannot be used as authorization for professional reuse, operation, construction or deployment"
+      ],
+      "known_gaps": [
+        "Renderer-resolved fonts are not independently audited",
+        "Independent professional and rights review remains pending"
+      ],
+      "license": "No complete reusable license terms are retained in the package; repository review only pending maintainer terms and independent rights audit"
+    },
+    {
+      "id": "SOURCE-REVIEW-HANDOFF-PROPOSAL",
+      "rights_evidence_id": "SRC-RIGHTS-REVIEW-HANDOFF-PROPOSAL",
+      "title": "评审收束与专业深化交接：冻结骨架，只替换现实缺口（双语概念章节）",
+      "publisher": "xyh202131",
+      "path": "proposal.md#review-synthesis-professional-handoff",
+      "source_type": "conceptual_proposal",
+      "accessed_date": "2026-08-12",
+      "authority_level": "submission_author",
+      "collection_method": "Round 11 bilingual review synthesis independently authored from the package's merged evidence and official six-task structure",
+      "allowable_uses": [
+        "Repository review",
+        "Peer assessment",
+        "Internal package consistency checks"
+      ],
+      "restrictions": [
+        "Conceptual only; not a professional handoff acceptance, statutory plan, review conclusion or authorization",
+        "Cannot upgrade geometry, rights, responsibility or any scene beyond G0"
+      ],
+      "known_gaps": [
+        "No authoritative replacement material or professional acceptance",
+        "No field test, approval or GO decision"
+      ],
+      "license": "No complete reusable license terms are retained in the package; repository review only pending maintainer terms and independent rights audit"
+    },
+    {
+      "id": "SOURCE-JZ-ORDINARY-LIFE-MEDIA-REGISTER-R12",
+      "rights_evidence_id": "SRC-RIGHTS-JZ-ORDINARY-LIFE-MEDIA-REGISTER-R12",
+      "title": "普通生活空间场景结构化媒体登记：三原型、四态与零现实结果边界",
+      "publisher": "xyh202131",
+      "path": "visual/assets/ordinary-life-media-register.json",
+      "source_type": "in_package_concept_media_register",
+      "accessed_date": "2026-08-13",
+      "authority_level": "submission_author",
+      "collection_method": "Round 12 package-authored structured register derived from the existing three prototypes and public-rights contracts",
+      "allowable_uses": [
+        "Repository review",
+        "Peer assessment",
+        "Internal package consistency checks"
+      ],
+      "restrictions": [
+        "G0 conceptual interpretation only; not spatial, operational, accessibility, approval or field evidence",
+        "Cannot create a location, dimension, component, shift, operating result or maturity upgrade"
+      ],
+      "known_gaps": [
+        "Real photographs, confirmed viewpoints, field observations, approved components and operational interactions remain 0",
+        "Independent professional and rights review remains pending"
+      ],
+      "license": "No complete reusable license terms are retained in the package; repository review only pending maintainer terms and independent rights audit"
+    },
+    {
+      "id": "SOURCE-ORDINARY-LIFE-MEDIA-R12",
+      "rights_evidence_id": "SRC-RIGHTS-ORDINARY-LIFE-MEDIA-R12",
+      "title": "普通生活空间场景册：无文字三联概念图与双语无障碍说明",
+      "publisher": "xyh202131",
+      "path": "assets/media/ordinary-life-scenes.webp",
+      "source_type": "generated_concept_visualization",
+      "accessed_date": "2026-08-13",
+      "authority_level": "submission_author",
+      "collection_method": "Generated with OpenAI built-in image generation from a package-authored text prompt, then converted locally to WebP with Pillow without compositional editing",
+      "allowable_uses": [
+        "Repository review",
+        "Peer assessment",
+        "Internal package consistency checks"
+      ],
+      "restrictions": [
+        "Concept visualization only; not a site photograph, confirmed viewpoint, approved design, product selection or operating record",
+        "Public or professional reuse remains blocked pending complete model/output terms and independent rights audit"
+      ],
+      "known_gaps": [
+        "Exact model serving snapshot and complete output terms are not asserted",
+        "No independent image-rights, accessibility, architectural or professional review"
+      ],
+      "license": "No public or professional reuse licence is asserted; repository review only pending complete terms and independent audit"
+    },
+    {
+      "id": "SOURCE-ORDINARY-LIFE-PROPOSAL-R12",
+      "rights_evidence_id": "SRC-RIGHTS-ORDINARY-LIFE-PROPOSAL-R12",
+      "title": "普通生活空间场景册：先看人怎样使用，再看系统怎样叠加（双语概念章节）",
+      "publisher": "xyh202131",
+      "path": "proposal.md#ordinary-life-spatial-scenes",
+      "source_type": "conceptual_proposal",
+      "accessed_date": "2026-08-13",
+      "authority_level": "submission_author",
+      "collection_method": "Round 12 bilingual interpretation authored from the existing three-switchyard, non-AI parity, failure/recovery, and professional-handoff evidence",
+      "allowable_uses": [
+        "Repository review",
+        "Peer assessment",
+        "Internal package consistency checks"
+      ],
+      "restrictions": [
+        "Conceptual only; not field research, resident consent, professional opinion, approval or implementation evidence",
+        "Cannot upgrade any scene beyond G0 or alter provisional geometry"
+      ],
+      "known_gaps": [
+        "No field survey, confirmed viewpoint, approved component, operating result or restoration result"
+      ],
+      "license": "No complete reusable license terms are retained in the package; repository review only pending maintainer terms and independent rights audit"
+    },
+    {
+      "id": "SOURCE-JZ-REVERSIBLE-REGISTER-R13",
+      "rights_evidence_id": "SRC-RIGHTS-JZ-REVERSIBLE-REGISTER-R13",
+      "title": "三处可逆构件与恢复装配结构化登记",
+      "publisher": "xyh202131",
+      "path": "visual/assets/reversible-component-restoration-register.json",
+      "source_type": "in_package_concept_register",
+      "accessed_date": "2026-08-13",
+      "authority_level": "submission_author",
+      "collection_method": "Round 13 package-authored synthesis of existing key-area, readiness and professional-handoff contracts",
+      "allowable_uses": [
+        "Repository review",
+        "Internal package consistency checks"
+      ],
+      "restrictions": [
+        "Concept types only; not engineering, approval, installation or restoration evidence"
+      ],
+      "known_gaps": [
+        "All location, dimension, material, connection, specialist and real acceptance evidence remains unknown or 0"
+      ],
+      "license": "Repository review only pending complete terms and independent rights audit"
+    },
+    {
+      "id": "SOURCE-JZ-REVERSIBLE-FIGURE-R13",
+      "rights_evidence_id": "SRC-RIGHTS-JZ-REVERSIBLE-FIGURE-R13",
+      "title": "三处可逆构件与恢复装配双语关系图",
+      "publisher": "xyh202131",
+      "path": "assets/figures/reversible-components.svg",
+      "source_type": "package_authored_concept_figure",
+      "accessed_date": "2026-08-13",
+      "authority_level": "submission_author",
+      "collection_method": "Deterministic package-authored SVG generated from the structured Round 13 register and rasterized with local Chrome",
+      "allowable_uses": [
+        "Repository review",
+        "Internal package consistency checks"
+      ],
+      "restrictions": [
+        "Not to scale; not engineering, site, component or acceptance evidence"
+      ],
+      "known_gaps": [
+        "No professional or independent file-level rights audit"
+      ],
+      "license": "Repository review only pending complete terms and independent rights audit"
+    },
+    {
+      "id": "SOURCE-JZ-REVIEW-WALK-R14",
+      "rights_evidence_id": "SRC-RIGHTS-JZ-REVIEW-WALK-R14",
+      "title": "第14轮双语可访问离线评审漫游与路由合同",
+      "publisher": "xyh202131",
+      "path": "visual/assets/review-walkthrough.json",
+      "source_type": "package_authored_review_route",
+      "accessed_date": "2026-08-13",
+      "authority_level": "submission_author",
+      "collection_method": "Package-authored synthesis of existing Round 1–13 evidence and boundaries into semantic HTML, CSS, dependency-free JavaScript and JSON",
+      "allowable_uses": [
+        "Repository review",
+        "Internal package consistency checks"
+      ],
+      "restrictions": [
+        "Presentation only; not evidence, accessibility certification, approval, operation or reuse licence"
+      ],
+      "known_gaps": [
+        "No independent accessibility audit or file-level rights clearance"
+      ],
+      "license": "Repository review only pending complete terms and independent rights audit"
     }
   ]
 }

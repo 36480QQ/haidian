@@ -12,6 +12,20 @@ AI 朝圣·铁轨新生带当前方案将百年京张定义为一条可审计的
 
 Round 2 adds no competing plan. It deepens the three key areas into public-space prototypes that cannot be mechanically copied. Zhongzhiyuan protects public observation through a parallel proof court, physical equipment isolation, and a service/stop edge. Origin Community protects resident daily life through one street, two courts, four nodes, screen-free learning, and consent withdrawal. Dazhongsi protects commuting through four-way walking, one hall/one desk, source correction, and same-task staffed service. Plans, relationship sections, ground-floor interfaces, continuous non-AI/accessibility intent, four-step journeys, removable components, ordinary–proof–fault–recovery states, and place-restoration acceptance link to one structured contract. Every node remains G0; provisional geometry, field coverage, local PASS results, and generation records are not approval, field performance, or rights-clearance evidence.
 
+## 第 12 轮普通生活空间场景册 / Round 12 ordinary-life spatial scenes
+
+第 12 轮不增加场景、项目、几何或治理合同，而为三处既有原型增加一层普通人可直接理解的人尺度入口。一张无文字合成三联图把众智园的普通旁路与平行验证庭、原点社区的无屏居民街与两院、大钟寺的连续通勤与旁侧人工服务并置；技术、活动、围挡、桌椅和人工窗口均不得封闭连续日常路径。中英文正文、离线 visual、双语长描述和 `ordinary-life-media-register.json` 以同一顺序解释普通—验证—故障—恢复：普通任务先独立成立，未来验证只作路径外、限时、有人负责的可拆叠层；故障时停叠层、保旁路；恢复先还场，独立复核未闭合就保持 G0、停止或退役。
+
+Round 12 adds no scene, project, geometry, or governance contract. It gives the three existing prototypes a human-scale entry that an ordinary viewer can understand directly. One text-free synthetic triptych aligns Zhongzhiyuan’s ordinary bypass and parallel proof court, Origin Community’s screen-free resident street and two courts, and Dazhongsi’s continuous commute and off-route staffed service. Technology, activities, enclosure, furniture, and staffed points never close the continuous daily path. The bilingual proposals, offline visual, long description, and `ordinary-life-media-register.json` use the same ordinary–proof–fault–recovery order: the ordinary task works independently first; a future proof layer is off-route, time-bounded, accountable, and removable; a fault stops the overlay and retains the bypass; recovery restores the place first, and remains at G0, stopped, or retired if independent review does not close.
+
+该图由 OpenAI 内置图像生成工具于 2026-08-13 从本包自编文本提示生成，未输入现场照片、地图截图、私人图像、可识别人物、Logo 或第三方视觉；选定输出只用 Pillow 转为 WebP，没有构图编辑，检查时无 EXIF/GPS。图中人物为不可识别合成角色，不代表真实参与、同意或调研。真实照片、确认视点、现场观察、获批构件、运营交互、确认无障碍结果和确认恢复结果均为 0；位置、比例、尺寸、材料、消防、铁路保护、市政、班次、建设、运行和审批不能从图像推断。完整模型输出条款和独立逐文件权利审计未完成，权利继续 `not_fully_cleared`，公共或专业复用继续阻断。
+
+The image was generated on 13 August 2026 with the OpenAI built-in image-generation tool from a package-authored text prompt. No site photograph, map screenshot, private image, identifiable person, logo, or third-party visual was supplied. Pillow only converted the selected output to WebP without compositional editing; no EXIF/GPS was present at inspection. The people are non-identifiable synthetic figures and represent no real participation, consent, or research. Real photographs, confirmed viewpoints, field observations, approved components, operational interactions, confirmed accessibility results, and confirmed restoration results remain 0. No location, scale, dimension, material, fire, railway-protection, municipal, shift, construction, operation, or approval conclusion may be inferred. Complete model-output terms and independent file-level rights review remain incomplete; rights stay `not_fully_cleared`, and public or professional reuse remains blocked.
+
+出版固定点由两个新的 Python 进程重建，四份 PDF 逐文件字节一致：中文/英文 A3 为 68/72 页，中英文 A0 各 17 页，共 174 页；全页检查得到空白页 0、替换字形 0、越界文本块 0，并在四份出版物中定位到普通生活场景入口。SHA-256：中文 A3 `6ea3fe812ab02fac3390f1fd7d5699ff92d3f64c945cbb9eb72d95f1a622be86`，英文 A3 `ee4f5a69d105af65ed9a79c731c920453d55a4021c8c3d7b51da3595fa1706af`，中文 A0 `d15aa4a4ed2b4a4d9a9c1047b7e85eb0807eec4a7bfd62529a793149ad43f3cf`，英文 A0 `ca1304e2df189ac9b29ddc9d2b9e2717ca93bf5159b9138fc223d99d049fb8e4`。出版 QA 只证明文件可读和可复现，不证明现场、批准、建设、运营、G1 或清权。
+
+Two fresh Python processes produced file-identical four-PDF sets. The Chinese/English A3 booklets contain 68/72 pages, and both A0 sets contain 17 pages, for 174 pages total. Full-page QA found 0 blank pages, 0 replacement glyphs, and 0 out-of-page text blocks, and located the ordinary-life scene entry in all four publications. SHA-256: Chinese A3 `6ea3fe812ab02fac3390f1fd7d5699ff92d3f64c945cbb9eb72d95f1a622be86`; English A3 `ee4f5a69d105af65ed9a79c731c920453d55a4021c8c3d7b51da3595fa1706af`; Chinese A0 `d15aa4a4ed2b4a4d9a9c1047b7e85eb0807eec4a7bfd62529a793149ad43f3cf`; English A0 `ca1304e2df189ac9b29ddc9d2b9e2717ca93bf5159b9138fc223d99d049fb8e4`. Publication QA proves file readability and reproducibility only; it proves no field condition, approval, construction, operation, G1 status, or rights clearance.
+
 ## 第 2 轮三座换轨场增量 / Round 2 three-switchyard increment
 
 本轮选择六个内聚工作包：众智园平行验证庭与设备隔离、原点社区一街两院四节点与无屏撤回、大钟寺四象限步行与一厅一台、三处连续非 AI / 无障碍意图线与人工交接、差异化可拆构件与夜间静音、四态与场所恢复验收及证据回链。`key-areas` 现在承担普通状态平面、首层公共界面和四步旅程，`key-area-sections` 承担三种关系剖面、四态和恢复门；两组均有中英文 SVG 可编辑源和 PNG 展示导出。`visual/assets/key-area-evidence-matrix.json#round2_spatial_deepening` 逐处记录唯一规划问题、连续路径、人工交接、可拆构件、不可复制组件、未知决策字段和恢复检查。
@@ -184,6 +198,36 @@ The bilingual `year-round-civic-operations.{svg,png}` pair uses the same 1800×1
 该出版固定点只证明当前包内字节和版式可复核，不证明活动、开放、排班、人员、预算、伙伴、投诉、事故、恢复时长、年度决定、运营成绩、批准、G1 或清权。
 
 This publication fixed point proves only that the current in-package bytes and layout are reviewable. It proves no event, opening, roster, staff, budget, partner, complaint, incident, recovery duration, annual decision, operating result, approval, G1 status or rights clearance.
+
+## 第 11 轮评审收束与专业深化交接 / Round 11 review synthesis and professional handoff
+
+### 串行门与工作包 / Serial gate and work package
+
+第 11 轮只在第 10 轮 PR #2101 合并并进入最新 `main`、同一投稿包无开放竞争 PR、GitHub 与 Git 身份均为 `xyh202131` 后开始。工作包只深化既有 `implementation-handoff-matrix.json`，增加双语评审/交接总图和对应正文入口；不修改 geometry、metrics、12 个场景、8 个项目、3 个重点区、G0、临时边界或 `not_fully_cleared`。
+
+Round 11 began only after Round 10 PR #2101 merged into the latest `main`, no open PR competed for the same package, and both GitHub and Git identities were verified as `xyh202131`. The work package deepens only the existing `implementation-handoff-matrix.json`, adding a bilingual review/handoff figure and corresponding reading entry. It changes no geometry, metrics, twelve scenes, eight projects, three key areas, G0 status, provisional boundary, or `not_fully_cleared` rights state.
+
+### 评审收束 / Review synthesis
+
+评审顺序固定为四问：普通生活是否先于验证成立；三处是否不可互换；后台是否能停止、回写和退场；哪些内容冻结、哪些必须被现实资料替换。一个前台概念是“双轨京张”，三处原型分别是众智园平行验证庭、原点社区一街两院四节点、大钟寺四象限步行与一厅一台，一个后台内核是 JZ-AIOS + G0—G3 + 证据门 + 权利边界。六项 Agent 任务各绑定一个评审问题、现有证据、专业接手动作和禁止推断，完整覆盖仍由 `compliance_matrix.json` 承担。
+
+The review order is fixed to four questions: does ordinary life work before proof; are the three places non-interchangeable; can the back-stage system stop, write back and exit; and what is frozen versus replaced by real evidence. The single front-stage concept is Twin-track Jing-Zhang; the prototypes are Zhongzhiyuan's parallel proof court, Origin Community's one street/two courts/four nodes, and Dazhongsi's four-quadrant walking plus one hall/one desk; the single back-stage kernel is JZ-AIOS + G0–G3 + evidence gates + rights boundaries. Each of the six Agent duties now binds one review question, current evidence, professional next action and prohibited inference, while `compliance_matrix.json` remains the exhaustive coverage ledger.
+
+### 官方资料替换与七专业停止线 / Authoritative-data replacement and seven-discipline stop line
+
+八类替换包 D01—D08 分别覆盖官方几何、现状测绘、控规权属、无障碍/同任务共测、交通高峰、专项约束、责任运营和权利复用。每份新材料必须带来源、版本、日期、空间/时间范围与使用权限，并触发“冻结—替换—复算—复核—必要时退役”的完整下游更新。规划城市设计、景观/无障碍、交通、建筑/公共界面、专项安全、数据/AI/权利、运营/社区七类专业只对其证据范围负责；概念图、绿线、OSM、体量原型、完整模板、合成 PASS 和活动日历均不能代替相应专业判断。
+
+Eight replacement packs D01–D08 cover official geometry, existing-condition survey, controls/title, accessibility and same-task co-test, peak movement, specialist constraints, responsibility/operation, and rights/reuse. Every new input must retain source, version, date, spatial/temporal scope and use permission, triggering a full downstream sequence of freeze, replace, recalculate, verify and—when required—retire. Seven disciplines—planning/urban design, landscape/accessibility, transport, architecture/public interface, specialist safety, data/AI/rights, and operations/community—judge only within their evidence scope. Concept diagrams, green lines, OSM, massing prototypes, complete templates, synthetic PASS, and event calendars cannot replace those judgements.
+
+当前权威替换材料 0、专业责任接受 0、99 槽提交 0、批准 0、现场测试 0、GO 0。任一重大缺口继续 NO-GO；先保护普通公共权利、停止受影响验证叠层，再修正或退役。`review-professional-handoff.{svg,png}` 双语总图只是一张 G0 评审与专业交接索引，不是现实资料、专业意见、责任接受、审批或实施结果。
+
+Current authoritative replacement inputs are 0; accepted professional duties 0; submitted artifacts across 99 slots 0; approvals 0; field tests 0; GO decisions 0. Any material gap remains NO-GO: protect ordinary public rights first, stop the affected proof overlay, then revise or retire. The bilingual `review-professional-handoff.{svg,png}` is only a G0 review and professional-handoff index, not real evidence, professional opinion, accepted duty, approval, or implementation result.
+
+### 第 11 轮出版固定点 / Round 11 publication fixed point
+
+最终投稿包为 108 个 manifest 路径、107 个非 manifest 内容文件、41 条来源和 108 条逐文件权利记录；独立逐文件清权仍为 0。双语 HTML 从最终 Markdown 重生，新增双语评审交接图作为中英文 A0 首板和 A3 封面。两个新的 Python 进程所得四份 PDF 逐文件字节一致：中文/英文 A3 为 67/71 页，中英文 A0 各 16 页，共 170 页；全页检查得到空白页 0、替换字形 0。SHA-256：中文 A3 `8f5835af07cf0e1640728cb5860b4cff91b6238304c00994385ad4484b779029`，英文 A3 `7c6c9e63da74c65bc650ffc388d25aef322d2c265107a78435825c873ff2fc6a`，中文 A0 `4dd45f6c8a34acd80f30db9361560ea95689eef2bfe2fc6feae3bba8103824ad`，英文 A0 `4222709be163478b9bc5e0d1025d068c9bd50ef30b5c364e5d7da9387f139acd`。该固定点只证明包内字节、版式和交接索引可复核，不证明现实资料、专业接受、审批、现场测试、GO、实施或清权。
+
+The final package contains 108 manifest paths, 107 non-manifest content files, 41 sources, and 108 file-level rights records; completed independent file-level rights audits remain 0. Both HTML reports were rebuilt from final Markdown, and the new bilingual review/handoff figure is the first A0 board and A3 cover in each language. Two fresh Python processes produced byte-identical files: the Chinese/English A3 booklets contain 67/71 pages, both A0 sets contain 16 pages, and all four PDFs total 170 pages; full-page checks found 0 blank pages and 0 replacement glyphs. SHA-256: Chinese A3 `8f5835af07cf0e1640728cb5860b4cff91b6238304c00994385ad4484b779029`; English A3 `7c6c9e63da74c65bc650ffc388d25aef322d2c265107a78435825c873ff2fc6a`; Chinese A0 `4dd45f6c8a34acd80f30db9361560ea95689eef2bfe2fc6feae3bba8103824ad`; English A0 `4222709be163478b9bc5e0d1025d068c9bd50ef30b5c364e5d7da9387f139acd`. This fixed point proves only reviewable in-package bytes, layout, and handoff indexing—not real evidence, professional acceptance, approval, field testing, GO, implementation, or rights clearance.
 
 ## 双轨前台增量 / Twin-track frontend increment
 
@@ -588,3 +632,24 @@ git diff --check
 若 `origin` 指向只读公共仓库，对可写 fork 另行执行 `git push --dry-run fork HEAD:<branch>`。
 
 If `origin` is the read-only canonical repository, separately run `git push --dry-run fork HEAD:<branch>` against the writable fork.
+
+## 第 13 轮增量 / Round 13 increment
+
+- 新增三处可逆构件与恢复装配册、六阶段生命周期和 D01—D08 / H01—H07 回链；三处构图不可机械复制。
+- Added three non-copyable reversible assembly/restoration packs, a six-stage lifecycle, and D01–D08 / H01–H07 backlinks.
+- 类型、尺寸、材料、连接、专项核验、位置、安装方法和恢复时长均为 unknown；现实安装、批准、责任、检查、拆除与验收均为 0。
+- Type, dimension, material, connection, specialist clearance, location, installation method and restoration duration remain unknown; real installation, approval, duty, inspection, removal and acceptance counts remain 0.
+
+
+## Round 14 accessible offline review walk / 第14轮可访问离线评审漫游
+
+`visual/index.html#accessible-review-walk` and its `.en.html` counterpart provide a five-step, fully local review route. Static semantic HTML contains the complete argument and evidence boundaries; dependency-free JavaScript only adds hash and keyboard navigation. There are 0 remote dependencies, accounts, QR codes, forms, trackers, autoplay or AI requirements. This is a presentation route, not evidence or accessibility certification. The fourteen-round audit retains Twin-track Jing-Zhang, the three differentiated prototypes, JZ-AIOS/G0–G3/evidence gates/rights boundary, 12 scenes, 8 projects, 3 key areas, 99 closure slots, provisional geometry, all-G0 status, NO-GO and `not_fully_cleared`.
+
+### Round 14 final publication evidence
+
+Two fresh deterministic builds produced the same four SHA-256 values. Page-size, blank-page, replacement-glyph and out-of-media-box checks are rerun separately; presentation PASS does not change G0 or rights state.
+
+- `a0-boards.en.pdf`: 18 pages; SHA-256 `6c07229b92eefc79604a9a4c4cf15b672fb4640637b50ba193e79f35d4887a02`
+- `a0-boards.pdf`: 18 pages; SHA-256 `32d9f5e9c0eec2140d8057b58c68ce92bb74e6710a28a0318ff9833804a7712f`
+- `a3-booklet.en.pdf`: 73 pages; SHA-256 `0e4bc3aae048eddbeb39aaa9211e7a4a3158396405cc52b3d4d7630b76022932`
+- `a3-booklet.pdf`: 69 pages; SHA-256 `d225e095cf5c95a2ccdd83c37d5f8ecba30a8fb647f74ddd902673d975bbafd5`

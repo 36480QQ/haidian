@@ -66,6 +66,12 @@
       "status": "pending_governance_design",
       "statement": "No approved data-retention, access-control, publication or independent-review protocol exists for the shift log.",
       "impact": "The log is limited to the proposed de-identified service template; no personal or production data may be collected before a separate governance protocol is approved."
+    },
+    {
+      "id": "A-DAILY-SCRIPT-001",
+      "status": "design_research_hypothesis",
+      "statement": "The three-area daily scripts use four conceptual time windows, personas, service moves and spatial actions; no verified roster, footfall baseline, site observation or operating authorization has been supplied.",
+      "impact": "The scripts communicate a testable people-service-space sequence only. They do not confirm a site, opening hour, workforce arrangement, route, facility condition or implementation commitment and must be validated before activation."
     }
   ]
 }
