@@ -1,6 +1,6 @@
 # 公开资料时效性与权威性规则
 
-> 状态：草案。访问日期：2026-05-28。  
+> 状态：草案。访问日期：2026-05-28。
 > 用途：筛选、排序和复核百年京张 AI 创新带资料包中的公开资料。
 
 ## 1. 权威等级
@@ -69,15 +69,18 @@
 
 ## English Quick Reference
 
+The Chinese text above is authoritative. This section is a non-normative summary; where it
+omits a detail, follow the Chinese requirements.
+
 ### Authority levels
 
 | Level | Usability | Source type |
 |---|---|---|
-| A0 | Primary evidence | Official government announcements, policy documents, planning summaries, official statistics, official standards |
-| A1 | Strong evidence | Government department website news, official policy interpretations, official press conference transcripts |
-| A2 | Supporting evidence | State media reports (Beijing Daily, Xinhua, People's Daily); use for timelines and narrative, not planning conclusions |
+| A0 | Primary evidence | Official government announcements, policy documents, planning summaries, official statistics and gazettes, official standards, and open-data-platform metadata |
+| A1 | Strong evidence | Government department website news, official policy interpretations, official press conference transcripts; cross-check key figures against A0 where possible |
+| A2 | Supporting evidence | Authorized reposts by the Beijing government portal and state media reports (Beijing Daily, Xinhua, People's Daily); use for timelines and narrative, not planning conclusions |
 | A3 | Benchmark evidence | OECD, UN-Habitat, Brookings, CIDOB reports; use for international cases and frameworks, not local conclusions |
-| X | Do not index | Commercial map tiles, password-protected downloads, unclear copyright images, non-public data |
+| X | Do not index | Commercial map tiles, account-gated or password-protected materials, unclear-copyright images, non-public data, and personal information |
 
 ### Timeliness levels
 
@@ -86,7 +89,7 @@
 | T0 | Published in 2026 or during the open-call period |
 | T1 | Published in 2025 or policy/plan still in force |
 | T2 | Planning period covers 2026 and beyond (e.g., 2020–2035) |
-| T3 | Long-term historical facts (heritage, parks) |
+| T3 | Long-term historical facts (heritage, parks); record the access date |
 | T4 | Potentially outdated; only use as background context |
 
 ### Crawl priority order

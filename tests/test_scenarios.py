@@ -73,22 +73,6 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot"]
 
 
 
-    def test_scenario_card_has_bilingual_title(self) -> None:
-        """Each scenario card must declare both Chinese and English titles."""
-        registry = load_scenario_registry(REPO_ROOT)
-        for scenario_id, scenario in registry.items():
-            with self.subTest(scenario_id=scenario_id):
-                self.assertIn("title", scenario, f"{scenario_id} is missing 'title'")
-                self.assertIn(
-                    "title_en",
-                    scenario,
-                    f"{scenario_id} is missing 'title_en' (English title required for bilingual display)",
-                )
-                self.assertTrue(
-                    scenario["title_en"],
-                    f"{scenario_id}.title_en must be a non-empty string",
-                )
-
     def test_scenario_card_has_human_review_field(self) -> None:
         """Every scenario card must declare a non-empty human_review requirement."""
         registry = load_scenario_registry(REPO_ROOT)

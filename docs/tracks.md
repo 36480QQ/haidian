@@ -40,11 +40,4 @@ tracks: ["ai-traffic-walkability", "civic-agent-governance"]
 | `ai-public-services` | AI + Public Services | Healthcare, education, legal aid, life services, navigation |
 | `robotics-autonomous-mobility` | Robotics and Autonomous Mobility | Delivery, guided tours, inspection, low-speed pilot zones |
 
-Each proposal may declare up to 3 track IDs. Tracks are used for portal filtering and gallery display only; they are not evaluation criteria.
-
-## Adding a new track
-
-1. Add a new entry to `tracks.json` following the existing schema.
-2. Update this document with the new row in both tables.
-3. Update `templates/proposal.md` front matter comments if the new track is relevant.
-4. If the new track has a corresponding scenario, add it to `docs/scenarios.md` as well.
+Each proposal must declare 1 to 3 track IDs. Tracks are used for portal filtering and gallery display only; they are not evaluation criteria.

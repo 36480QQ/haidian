@@ -44,20 +44,28 @@ Portal 会读取 `risk.json`，在方案卡片中展示最高风险项和分值�
 | `technology_maturity` | Technology Maturity | Readiness of the AI or technology components; prototype vs. production |
 | `equity_inclusion` | Equity and Inclusion | Risk of exclusion, widening inequality, or inadequate accessibility |
 
-## Example risk.json entry
+## Example risk.json
 
 ```json
 {
-  "data_privacy": {
-    "score": 3,
-    "notes": "The scenario requires anonymized pedestrian flow data; no individual tracking.",
-    "human_review": "Data handling plan to be reviewed by a privacy officer before deployment."
-  },
-  "technology_maturity": {
-    "score": 4,
-    "notes": "Low-speed robot delivery is at pilot stage; no commercial-scale deployment confirmed.",
-    "human_review": "Operational safety review required; pilot area must be approved by transport authority."
-  }
+  "version": 1,
+  "dimensions": [
+    {
+      "id": "data_privacy",
+      "label": "Data Privacy",
+      "score": 3,
+      "note": "The scenario uses anonymized pedestrian flow data and does not track individuals.",
+      "mitigation": "Use only public, authorized, and aggregated data with documented retention limits."
+    },
+    {
+      "id": "technology_maturity",
+      "label": "Technology Maturity",
+      "score": 4,
+      "note": "Low-speed robot delivery remains at pilot stage without confirmed commercial deployment.",
+      "mitigation": "Limit deployment to a reversible supervised pilot with an operational fallback.",
+      "human_review": "Transport and safety professionals must review the pilot area before implementation."
+    }
+  ]
 }
 ```
 

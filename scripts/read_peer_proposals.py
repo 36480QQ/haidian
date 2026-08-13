@@ -379,15 +379,11 @@ def main(argv: list[str] | None = None) -> int:
         selected_items = [find_proposal(items, item["key"]) for item in result["proposals"]]
         print(render_list(selected_items, result["index_source"]))
     elif result.get("ok"):
-        print(f"Downloaded to: {result.get('output_dir')}")
-        for entry in result.get("downloaded", []):
-            print(f"  {entry['path']} ({entry['bytes']:,} bytes)")
+        print(f"Downloaded {len(result['downloaded'])} files to {result['output_dir']}")
         if result.get("optional_missing"):
-            print("Optional files not present:")
-            for path in result["optional_missing"]:
-                print(f"  {path}")
+            print("Optional files not present: " + ", ".join(result["optional_missing"]))
     else:
-        print(f"Error: {result.get('error')}", file=sys.stderr)
+        print(f"Peer proposal read failed: {result['error']}", file=sys.stderr)
     return 0 if result.get("ok") else 1
 
 

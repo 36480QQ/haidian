@@ -244,42 +244,64 @@ def render_markdown_body(submission_dir: Path, markdown: str, language: str = "z
                 closing_length = len(candidate_stripped) - len(
                     candidate_stripped.lstrip(fence_char)
                 )
-                if closing_length >= fence_length and candidate_stripped == fence_char * closing_length:
+                if (
+                    closing_length >= fence_length
+                    and not candidate_stripped[closing_length:]
+                ):
                     index += 1
                     break
-                code_lines.append(html.escape(candidate))
+                code_lines.append(candidate)
                 index += 1
-            blocks.append(f"<pre><code>{'chr(10)'.join(code_lines)}</code></pre>".replace(
-                "'chr(10)'", "\\n"
-            ))
-            # Re-render with actual newline join
-            code_html = "\n".join(code_lines)
-            blocks[-1] = f"<pre><code>{code_html}</code></pre>"
+            blocks.append(f"<pre><code>{html.escape(chr(10).join(code_lines))}</code></pre>")
             continue
 
-        if has_unescaped_pipe(stripped_line) and index + 1 < len(lines):
-            delimiter_cells = parse_table_delimiter(lines[index + 1].rstrip())
-            if delimiter_cells:
+        if (
+            index + 1 < len(lines)
+            and stripped_line
+            and not line.startswith("#")
+            and not line.startswith("- ")
+            and not IMAGE_RE.fullmatch(stripped_line)
+            and (has_unescaped_pipe(line) or has_unescaped_pipe(lines[index + 1]))
+        ):
+            delimiter_cells = parse_table_delimiter(lines[index + 1].strip())
+            header_cells = split_table_row(line)
+            if delimiter_cells is not None and len(header_cells) == len(delimiter_cells):
                 flush_paragraph()
                 close_list()
-                header_cells = split_table_row(line)
                 alignments = [table_alignment(cell) for cell in delimiter_cells]
                 header = "".join(
-                    render_table_cell("th", cell, alignments[col_i] if col_i < len(alignments) else None, language)
-                    for col_i, cell in enumerate(header_cells)
+                    render_table_cell("th", cell, alignment, language)
+                    for cell, alignment in zip(header_cells, alignments)
                 )
-                body_rows: list[str] = []
                 index += 2
+                body_rows: list[str] = []
                 while index < len(lines):
-                    row_line = lines[index].rstrip()
-                    if not has_unescaped_pipe(row_line.strip()):
+                    row = lines[index].rstrip()
+                    stripped = row.strip()
+                    if (
+                        not stripped
+                        or not has_unescaped_pipe(row)
+                        or stripped.startswith("#")
+                        or stripped.startswith("- ")
+                        or stripped.startswith("* ")
+                        or stripped.startswith("+ ")
+                        or stripped.startswith(">")
+                        or stripped.startswith("```")
+                        or stripped.startswith("~~~")
+                        or re.match(r"^\d{1,9}[.)]\s+", stripped)
+                        or IMAGE_RE.fullmatch(stripped)
+                    ):
                         break
-                    row_cells = split_table_row(row_line)
-                    cells_html = "".join(
-                        render_table_cell("td", cell, alignments[col_i] if col_i < len(alignments) else None, language)
-                        for col_i, cell in enumerate(row_cells)
+                    cells = split_table_row(row)
+                    cells = (cells + [""] * len(header_cells))[: len(header_cells)]
+                    body_rows.append(
+                        "<tr>"
+                        + "".join(
+                            render_table_cell("td", cell, alignment, language)
+                            for cell, alignment in zip(cells, alignments)
+                        )
+                        + "</tr>"
                     )
-                    body_rows.append(f"<tr>{cells_html}</tr>")
                     index += 1
                 body = f"<tbody>{''.join(body_rows)}</tbody>" if body_rows else ""
                 blocks.append(
@@ -544,14 +566,16 @@ def main() -> int:
 
     primary_translation_href = None
     if translation_output:
-        primary_translation_href = os.path.relpath(translation_output, out_path.parent)
+        primary_translation_href = Path(
+            os.path.relpath(translation_output, out_path.parent)
+        ).as_posix()
     html_text = render_html(submission_dir, translation_href=primary_translation_href)
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text(html_text, encoding="utf-8")
     print(out_path)
     if translation_output and translation_path:
         translation_output.parent.mkdir(parents=True, exist_ok=True)
-        primary_href = os.path.relpath(out_path, translation_output.parent)
+        primary_href = Path(os.path.relpath(out_path, translation_output.parent)).as_posix()
         translation_output.write_text(
             render_html(submission_dir, translation_name, translation_href=primary_href),
             encoding="utf-8",

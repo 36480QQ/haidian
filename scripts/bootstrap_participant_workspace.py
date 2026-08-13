@@ -345,15 +345,13 @@ def main(argv: list[str] | None = None) -> int:
         if not args.dry_run:
             execute_plan(commands, target)
         report = build_report(args, target, commands)
-    except BootstrapError as exc:
+    except (BootstrapError, OSError) as exc:
         report = {"ok": False, "error": str(exc)}
 
     if args.json:
         print(json.dumps(report, ensure_ascii=False, indent=2))
-    elif not report.get("ok"):
-        print(render_failure(report), file=sys.stderr)
     else:
-        print(render_text(report))
+        print(render_text(report) if report.get("ok") else render_failure(report))
     return 0 if report.get("ok") else 1
 
 

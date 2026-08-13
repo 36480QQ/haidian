@@ -21,7 +21,7 @@ SPEC.loader.exec_module(participant_preflight)
 class ParticipantPreflightEncodingTests(unittest.TestCase):
     def test_run_decodes_utf8_non_ascii_subprocess_output(self) -> None:
         completed = participant_preflight.run(
-            [sys.executable, "-c", "import sys; sys.stdout.buffer.write('海淀/路径\n'.encode('utf-8'))"],
+            [sys.executable, "-c", "import sys; sys.stdout.buffer.write('海淀/路径\\n'.encode('utf-8'))"],
             REPO_ROOT,
         )
         self.assertEqual(completed.returncode, 0)
@@ -38,11 +38,11 @@ class ParticipantPreflightEncodingTests(unittest.TestCase):
 
     def test_run_replaces_invalid_subprocess_bytes(self) -> None:
         completed = participant_preflight.run(
-            [sys.executable, "-c", "import sys; sys.stdout.buffer.write(b'\xff')"],
+            [sys.executable, "-c", "import sys; sys.stdout.buffer.write(b'\\xff')"],
             REPO_ROOT,
         )
         self.assertEqual(completed.returncode, 0, completed.stderr)
-        self.assertEqual(completed.stdout, "�")
+        self.assertEqual(completed.stdout, "\ufffd")
 
     def test_run_passes_explicit_utf8_contract(self) -> None:
         expected = subprocess.CompletedProcess(["git", "status"], 0, stdout="海淀规划\n", stderr="")

@@ -188,7 +188,7 @@ instead of a direct push:
 gh api repos/<fork-owner>/haidian/contents/<path> \
   --method PUT \
   --field message="<commit message>" \
-  --field content="$(base64 -w0 <local-file>)" \
+  --field content="$(base64 <local-file> | tr -d '\n')" \
   --field sha="<current-blob-sha>" \
   --field branch="<branch-name>"
 ```

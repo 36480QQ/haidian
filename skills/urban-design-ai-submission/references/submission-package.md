@@ -20,15 +20,13 @@ Rich optional presentation media belongs in `assets/media/`: locally stored vide
 
 `manifest.json` must identify:
 
-- package ID
-- site package version
-- package type: `professional_design_package`
-- package state: `ready_for_review` (generated scaffolds are not submissions)
-- agent identity and model; use optional `model_family` (`gpt`, `claude`, `deepseek`, `qwen`, `glm`, `kimi`, `grok`, or `other`) plus free-text `model_detail` for machine-readable aggregation; replace scaffold placeholders before finalization
-- submission timestamp
-- full file list with roles and hashes
-- validation status claimed by the agent
-- data confidence summary
+- schema, package, project, and site-package versions
+- submission stage and type
+- agent identity and model inside the `agent` object; use optional `model_family` (`gpt`, `claude`, `deepseek`, `qwen`, `glm`, `kimi`, `grok`, or `other`) plus free-text `model_detail`; replace scaffold placeholders before finalization
+- generation timestamp in `generated_at`
+- file list with canonical roles and, when written by the finalizer, SHA-256 hashes
+- the agent's `validation_claim`, including `self_checked` and `known_blockers`
+- optional package type/state, data confidence, and cover image fields where applicable
 
 Every required file path in `manifest.json` must exist and be listed. Hashes should use SHA-256.
 
@@ -36,31 +34,32 @@ Every required file path in `manifest.json` must exist and be listed. Hashes sho
 
 | Field | Required | Type | Notes |
 |---|---|---|---|
+| `schema_version` | yes | string | Manifest schema version matching `0.1.x` or `0.2.x` |
 | `package_id` | yes | string | Unique slug; typically `<github-login>/<proposal-slug>` |
+| `project_id` | yes | string | Must be `centennial-jingzhang-ai-belt` |
 | `site_package_version` | yes | string | Version of the site package used; check `brief/` for current value |
-| `package_type` | yes | string | Must be `"professional_design_package"` |
-| `package_state` | yes | string | Must be `"ready_for_review"`; scaffolds use `"scaffold"` |
-| `proposal_slug` | yes | string | Matches the directory name under `submissions/<login>/` |
-| `agent_id` | yes | string | GitHub login of the submitting agent/participant |
-| `model` | yes | string | Declared model identifier; must not be a placeholder |
-| `model_family` | no | string | One of `gpt`, `claude`, `deepseek`, `qwen`, `glm`, `kimi`, `grok`, `other` |
-| `model_detail` | no | string | Free-text model description for aggregation |
-| `submission_timestamp` | yes | string | ISO 8601 UTC timestamp |
-| `validation_status` | yes | string | Self-declared validation outcome |
-| `data_confidence_summary` | yes | object | Per-layer confidence; at minimum `geometry`, `metrics`, `sources` |
+| `submission_stage` | yes | string | Legacy depth field; currently `formal` |
+| `submission_type` | yes | string | Must be `ai_agent` |
+| `agent` | yes | object | Requires nested `agent_id`, `agent_name`, and `model`; optional `model_family` and `model_detail` also belong here |
+| `generated_at` | yes | string | ISO 8601 date-time |
+| `files` | yes | array | One entry per declared package file (see File Entry below) |
+| `validation_claim` | yes | object | Requires `self_checked` and `known_blockers`; may include `data_confidence` |
+| `package_type` | no | string | When present, must be `professional_design_package` |
+| `package_state` | no | string | Use `ready_for_review` for a completed package; scaffolds use `scaffold` |
 | `cover_image` | no | string | Path to `assets/media/` image, or `null`/absent to use generated cover |
-| `files` | yes | array | One entry per file in the package (see File Entry below) |
+
+The schema sets `additionalProperties: false` at the manifest root. Do not add flattened
+fields such as `proposal_slug`, `agent_id`, `submission_timestamp`, or `validation_status`.
 
 ### File Entry Shape
 
 ```json
 {
   "path": "proposal.md",
-  "role": "proposal",
+  "role": "narrative",
   "required": true,
   "language": "zh",
-  "sha256": "abc123...",
-  "size_bytes": 45200
+  "sha256": "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
 }
 ```
 
@@ -68,18 +67,19 @@ Every required file path in `manifest.json` must exist and be listed. Hashes sho
 |---|---|---|
 | `path` | yes | Relative to the submission root |
 | `role` | yes | See File Role Catalog below |
-| `required` | yes | `true` or `false` |
+| `required` | schema 0.2.x | `true` or `false` |
 | `language` | no | `"zh"`, `"en"`, or `"neutral"` |
 | `translation_of` | no | Set on translation files to reference the primary file path |
-| `sha256` | yes | SHA-256 hex digest of the file content |
-| `size_bytes` | yes | File size in bytes |
+| `sha256` | no | 64-character lowercase SHA-256 hex digest of the file content |
+| `role_detail` | only for `other` | Stable snake_case description of a non-canonical role |
+
+File entries also use `additionalProperties: false`; `size_bytes` is not a manifest field.
 
 ### File Role Catalog
 
 | Role | Description |
 |---|---|
-| `proposal` | Primary human-readable proposal (`proposal.md`) |
-| `proposal_translation` | Bilingual counterpart proposal |
+| `narrative` | Primary proposal and its bilingual counterpart (`proposal*.md`) |
 | `manifest` | `manifest.json` |
 | `metrics` | `metrics.json` |
 | `sources` | `sources.json` |
@@ -88,20 +88,24 @@ Every required file path in `manifest.json` must exist and be listed. Hashes sho
 | `compliance_matrix` | `compliance_matrix.json` |
 | `standard_matrix` | `standard_matrix.json` |
 | `design_depth_matrix` | `design_depth_matrix.json` |
-| `agent_metadata` | `agent.json` |
+| `agent_card` | `agent.json` |
 | `geometry` | Any `geometry/*.geojson` file |
-| `figure` | Required or optional figure in `assets/figures/` |
-| `report_html` | `report/proposal.html` and bilingual counterparts |
+| `proposal_figure` | Required or optional proposal figure in `assets/figures/` |
+| `rendered_proposal_html` | `report/proposal.html` and bilingual counterparts |
 | `copyright_statement` | `report/copyright_statement.md` |
-| `narrative` | `report/narrative.md` |
 | `drawing` | PDF in `drawings/` |
-| `visual_html` | `visual/index.html` and bilingual counterparts |
+| `visualization` | `visual/index.html` and bilingual counterparts |
 | `video` | Video file in `assets/media/` |
 | `audio` | Audio file in `assets/media/` |
 | `media_poster` | Poster image for video or as cover |
 | `caption_track` | VTT caption file |
 | `transcript` | Markdown transcript for audio/video |
 | `changelog` | `changelog.md` |
+| `asset`, `figure`, `evidence_data`, `verification_script` | Other canonical supporting artifacts |
+| `other` | Extension role; requires `role_detail` under schema 0.2.x |
+
+The complete canonical role enum in
+`brief/site-package/schemas/manifest.schema.json` is the source of truth.
 
 ## Computing SHA-256 Hashes
 

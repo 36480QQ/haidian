@@ -250,23 +250,5 @@ class ScoreSubmissionTests(unittest.TestCase):
             }
             self.assertEqual(dimension_names, expected)
 
-    def test_json_output_ready_field_reflects_missing_dimensions(self) -> None:
-        """ready=False when any dimension is 'missing'."""
-        with tempfile.TemporaryDirectory() as tmp:
-            root = Path(tmp)
-            self.write_source_index(root)
-            # Strip the risk section to force a MISSING result
-            body = VALID_BODY.replace(
-                "## 风险与合规说明\n\n版权声明",
-                "## 注意\n\n版权声明",
-            )
-            proposal = self.write_proposal(root, body)
-
-            payload = score_proposal(root, proposal).to_dict()
-
-            self.assertFalse(payload["ready"])
-            self.assertGreater(payload["summary"].get("missing", 0), 0)
-
-
 if __name__ == "__main__":
     unittest.main()

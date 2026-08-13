@@ -31,10 +31,6 @@ Use this as a starting point for any geometry layer. Replace `<layer-name>` with
 ```json
 {
   "type": "FeatureCollection",
-  "crs": {
-    "type": "name",
-    "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" }
-  },
   "features": [
     {
       "type": "Feature",

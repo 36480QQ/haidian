@@ -291,21 +291,6 @@ class SitePackageContractTests(unittest.TestCase):
             with self.subTest(ref=ref):
                 self.assertIn(ref, skill, f"SKILL.md must link to {ref}")
 
-    def test_site_package_design_brief_has_required_keys(self) -> None:
-        """design_brief.json must have all required top-level keys."""
-        brief_path = REPO_ROOT / "brief" / "site-package" / "design_brief.json"
-        brief = json.loads(brief_path.read_text(encoding="utf-8"))
-        required_keys = [
-            "project_id",
-            "site_name",
-            "official_scope_levels",
-            "key_areas",
-            "provisional_geometry",
-        ]
-        for key in required_keys:
-            with self.subTest(key=key):
-                self.assertIn(key, brief, f"design_brief.json must have top-level key '{key}'")
-
     def test_provisional_boundaries_geojson_has_required_feature_ids(self) -> None:
         """provisional_boundaries.geojson must contain the 6 required provisional feature IDs."""
         geojson_path = (

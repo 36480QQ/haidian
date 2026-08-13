@@ -24,10 +24,14 @@ Severity levels:
 - `minor`: does not block review
 - `info`: trace or advisory message
 
-## Check ID Catalog
+## Proposed Check ID Taxonomy
 
-The following check IDs are produced by `scripts/validate_submission.py`. Use them to route
-automated repair logic without string-matching on the `message` field.
+The tables below define a target taxonomy for future machine-readable validation feedback.
+They are not emitted by `scripts/validate_submission.py`, whose `ValidationReport` currently
+contains plain error and warning strings. Do not build repair routing against these IDs yet.
+The structured review scripts (`professional_review.py`, `spatial_review.py`, and
+`visual_review.py`) emit their own established `check_id` values; consume those values directly
+from each review report.
 
 ### Geometry Checks
 
@@ -72,7 +76,7 @@ automated repair logic without string-matching on the `message` field.
 | `PROPOSAL_TOO_SHORT` | blocking | Compact character count below `MIN_FORMAL_PROPOSAL_COMPACT_CHARS` (5000) |
 | `PROPOSAL_SECTION_MISSING_ZH` | blocking | A required Chinese section heading is absent |
 | `PROPOSAL_SECTION_MISSING_EN` | blocking | A required English section heading is absent (English-primary proposals) |
-| `PROPOSAL_SECTION_TOO_SHORT` | major | A required section is below `MIN_REQUIRED_SECTION_COMPACT_CHARS` (280 chars) |
+| `PROPOSAL_SECTION_TOO_SHORT` | blocking | A required section is below `MIN_REQUIRED_SECTION_COMPACT_CHARS` (280 chars) |
 | `PROPOSAL_SCAFFOLD_MARKER` | blocking | `SCAFFOLD-DRAFT` marker still present |
 | `PROPOSAL_EVIDENCE_DUMP` | major | More than `MAX_INLINE_REFERENCES_PER_BLOCK` (8) consecutive evidence markers |
 | `PROPOSAL_MISSING_FIGURE` | blocking | A required figure (`site-overview.png` etc.) is not embedded in the proposal |
@@ -102,7 +106,7 @@ automated repair logic without string-matching on the `message` field.
 
 ## Repair Workflow
 
-When the validator returns errors, repair in this order:
+When validation returns errors, repair in this order:
 
 1. **blocking geometry errors first** — a bad polygon prevents area recalculation, which cascades
    into `metrics.json` and scoring. Fix topology, re-run `scripts/validate_local_submission.py`.
@@ -122,7 +126,7 @@ python3 scripts/self_check_submission.py submissions/<login>/<slug> --mark-self-
 
 ## Handling Multiple Errors
 
-The validator returns all errors in a single pass. Group them by `target_file` before routing to
-repair agents so each agent receives a coherent set of related errors for one file. Errors for
-`manifest.json` should always be handled last because every upstream file change invalidates the
-manifest hashes.
+The structured review scripts return issues with `target_file` or `path`; group those issues by
+file before routing repairs. For the plain strings returned by `validate_submission.py`, use the
+path prefix in each message until it gains a structured output contract. Repair `manifest.json`
+last because every upstream file change invalidates manifest hashes.

@@ -291,16 +291,11 @@ def main() -> int:
         print(json.dumps(report.to_dict(), ensure_ascii=False, indent=2))
     else:
         status = "PASS" if report.ok else "FAIL"
-        print(f"# Data registry validation: {status}")
-        print(f"Sources: {report.source_count}")
-        if report.errors:
-            print("\nErrors:")
-            for error in report.errors:
-                print(f"- {error}")
-        if report.warnings:
-            print("\nWarnings:")
-            for warning in report.warnings:
-                print(f"- {warning}")
+        print(f"data registry validation: {status} ({report.source_count} sources)")
+        for message in report.errors:
+            print(f"ERROR: {message}")
+        for message in report.warnings:
+            print(f"WARNING: {message}")
     return 0 if report.ok else 1
 
 
