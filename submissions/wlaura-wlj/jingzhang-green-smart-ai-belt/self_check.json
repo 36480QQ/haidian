@@ -19,6 +19,8 @@
       "changelog_files": [],
       "changed_files": [
         "submissions/wlaura-wlj/jingzhang-green-smart-ai-belt/agent.json",
+        "submissions/wlaura-wlj/jingzhang-green-smart-ai-belt/assets/figures/ai-ecosystem.en.png",
+        "submissions/wlaura-wlj/jingzhang-green-smart-ai-belt/assets/figures/ai-ecosystem.png",
         "submissions/wlaura-wlj/jingzhang-green-smart-ai-belt/assets/figures/key-areas.en.png",
         "submissions/wlaura-wlj/jingzhang-green-smart-ai-belt/assets/figures/key-areas.png",
         "submissions/wlaura-wlj/jingzhang-green-smart-ai-belt/assets/figures/land-use-structure.en.png",
@@ -27,6 +29,8 @@
         "submissions/wlaura-wlj/jingzhang-green-smart-ai-belt/assets/figures/metrics-evidence.png",
         "submissions/wlaura-wlj/jingzhang-green-smart-ai-belt/assets/figures/mobility-bluegreen.en.png",
         "submissions/wlaura-wlj/jingzhang-green-smart-ai-belt/assets/figures/mobility-bluegreen.png",
+        "submissions/wlaura-wlj/jingzhang-green-smart-ai-belt/assets/figures/regional-synergy.en.png",
+        "submissions/wlaura-wlj/jingzhang-green-smart-ai-belt/assets/figures/regional-synergy.png",
         "submissions/wlaura-wlj/jingzhang-green-smart-ai-belt/assets/figures/site-overview.en.png",
         "submissions/wlaura-wlj/jingzhang-green-smart-ai-belt/assets/figures/site-overview.png",
         "submissions/wlaura-wlj/jingzhang-green-smart-ai-belt/assumptions.json",
@@ -62,7 +66,7 @@
       "ai_package_stages": {
         "submissions/wlaura-wlj/jingzhang-green-smart-ai-belt": "formal"
       },
-      "total_bytes": 2944122,
+      "total_bytes": 3746120,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -140,7 +144,7 @@
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 5,
+          "source": 2,
           "standard": 1,
           "depth": 4,
           "data": 11,
@@ -180,14 +184,14 @@
     },
     {
       "check_id": "VISUAL_PACKAGING",
-      "message": "visual_review: PASS",
+      "message": "visual_packaging: PASS",
       "result": "pass",
       "severity": "blocking",
       "target": "visual_review.py"
     },
     {
       "check_id": "PROFESSIONAL_EVIDENCE",
-      "message": "professional_review: PASS",
+      "message": "professional_evidence: PASS",
       "result": "pass",
       "severity": "blocking",
       "target": "professional_review.py"

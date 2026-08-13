@@ -61,6 +61,43 @@ The three key areas each focus on distinct AI functions and blue-green strategie
 The naming system builds on three cultural genes: the historical depth of the Jing-Zhang Railway (century-old industrial heritage), the innovation density of Zhongguancun (China's Silicon Valley), and the future orientation of blue-green ecology (carbon-neutral pioneer) [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
 
 **Logo Direction**: The cross-section of the Jing-Zhang Railway track serves as the prototype, deforming into three upward-growing green lines, with an AI chip grid texture embedded at the intersection, forming a visual metaphor of "green veins birthing smart cores." The color palette transitions from deep green (#1B5E20) to tech blue (#1565C0), adaptable across full-scale applications from building facades to digital screens [agent:1].
+### Brand Visual Identity (VI) Guidance
+
+To support consistent communication of the "Green Veins, Smart Core" brand, this proposal provides the following VI guidance [agent:1]. A full VI manual should be developed by a professional brand team and subject to trademark/copyright clearance.
+
+**Color System**
+
+| Color Role | Value | Meaning | Application |
+|---|---|---|---|
+| Primary deep green | `#1B5E20` | Blue-green ecology, sustainability | Building facades, landscape furniture, primary signage |
+| Secondary tech blue | `#1565C0` | AI, digital, future | Digital interfaces, smart stations, data visualization |
+| Accent vibrant orange | `#EF6C00` | Innovation vitality, events | Event visuals, wayfinding highlights, youth communities |
+| Neutral mist grey | `#78909C` | Industrial heritage, sobriety | Railway heritage installations, background information |
+| Background pale green-grey | `#F4F7F2` | Nature, breathability | Exhibition backgrounds, publications |
+
+**Type System**
+
+| Use | Chinese Recommendation | English Recommendation |
+|---|---|---|
+| Headings / identity | Source Han Sans, PingFang SC, Heiti | Montserrat, Inter, Helvetica Neue |
+| Body / wayfinding | Source Han Serif, PingFang SC | Source Serif 4, Georgia |
+| Numbers / data screens | DIN, Roboto Mono | DIN, Roboto Mono |
+
+**Logo Construction (Direction)**
+
+- Use one railway-track cross-section as a 1× width unit; three "green-vein" lines grow upward at 0.6×, 1.0×, and 0.6× spacing
+- The chip grid at the intersection consists of a 3×3 cell matrix; minimum usage size ≥16 mm (print) or 48 px (screen)
+- Logo clear space: leave a margin of at least 25% of the logo height on all sides at the minimum size
+- Monochrome and reverse versions: provide deep-green, pure-white, and pure-black versions; do not use gradient versions as a standalone logo
+
+**Application Examples**
+
+- Physical identity: smart-station canopy fascias, weathering-steel plaques on railway heritage, trash bins and benches with stamped logos
+- Digital interfaces: splash icon for the Green Vein AI Slow Lane app, opening animation for the "Light of the Smart Valley" data tower
+- Print system: letterhead, business cards, conference badges, event-poster grid system
+
+> **Rights note**: The Logo/VI direction is conceptual only. Final design must be developed by a professional agency, including trademark screening (especially for "Jing-Zhang" railway/culture-tourism marks) and copyright registration to avoid conflicts. See `report/copyright_statement.md` for the full rights inventory.
+
 
 ### Global AI Innovation Ecosystem Case Studies
 
@@ -77,6 +114,19 @@ Five globally relevant AI innovation ecosystem cases inform this proposal [sourc
 5. **Digital Media City (Seoul)**: The digital transformation of a former landfill site provides lessons for AI-enabled repurposing of Jing-Zhang railway industrial heritage. Key takeaway: the PPP triangular driver of public institution + private enterprise + university, and the "public space first, buildings later" development sequence.
 
 The core insight across all cases: world-class AI innovation districts all build upon a strong public realm skeleton — whether the Dasha River ecological waterfront, King's Cross Granary Square, or one-north's rain-tree walkways. The Jing-Zhang Corridor's blue-green-smart design aims precisely to provide such a world-class public realm skeleton for the AI innovation belt.
+### Case Comparison Matrix
+
+The following table compares the five global cases across model type, core takeaway, applicability to Jing-Zhang, and key prerequisites/risks [source:AGENT-TASKBOOK][agent:2].
+
+| Case | Model Type | Core Takeaway | Applicability to Jing-Zhang | Key Prerequisites / Risks |
+|---|---|---|---|---|
+| Palo Alto-Stanford Research Park | University spillover | Walkable academic-industry mixed blocks, open prototyping labs | High: strong talent spillover from Tsinghua/Peking University/CAS, fits AI Origin Community | Must overcome university walls and IP barriers |
+| King's Cross Knowledge Quarter | Brownfield regeneration knowledge economy | Triangular activation of cultural + tech anchors + public realm | High: Dazhongsi's low-efficiency market/warehouse renewal can reference this | Must protect Dazhongsi heritage skyline and coordinate complex property rights |
+| Singapore one-north | Eco-technology park | Park-within-park system connected by rain-tree walkways | Medium: climate and institutional differences require localization | Tropical planting cannot be copied; use North-China native species |
+| Nanshan Science Park-Dasha River | Domestic tech corridor + blue-green corridor | Transformation from drainage channel to innovation waterfront | High: spatial scale and functional mix closest to Jing-Zhang | Qinghe/Xiaoyuehe ecological restoration needs water-resource and environmental studies |
+| Seoul Digital Media City | Industrial-heritage digital transformation | PPP triangle + public-space-first phasing | High: Jing-Zhang railway industrial heritage is analogous | Requires long-term government-university-enterprise coordination; avoid excessive public investment |
+
+
 
 ### Strategic Positioning and Functional Alignment
 
@@ -101,6 +151,13 @@ The synergy among three areas and two wings is not a simple functional zoning ex
 - **Northern Loop** (Zhongzhiyuan ↔ Zhongguancun Technology Service Wing): Basic research → pilot acceleration → technology transfer, structured along the Qinghe River blue-green corridor
 - **Central Loop** (AI Origin Community ↔ Xiaoyuehe Scenario Empowerment Wing): Community innovation → scenario testing → feedback iteration, connected by the Xiaoyuehe River waterfront walkway
 - **Southern Loop** (Dazhongsi ↔ convergence of both wings): Industrial application → consumption experience → value realization, leveraging the southern segment of the Jing-Zhang Park open space
+### Regional Innovation Synergy Network Map
+
+The figure below is a schematic illustration of the factor-synergy relationships between the Jing-Zhang AI Innovation Belt and Zhongguancun, Future Science City, Huairou Science City, the Beijing-Tianjin-Hebei innovation corridor, and the municipal blue-green ecological network [agent:1][source:SITE-PACKAGE].
+
+![Regional innovation synergy network of the Jing-Zhang AI Innovation Belt: showing factor flows and ecological linkages among the belt, Zhongguancun Science City North, Zhongguancun Core, Xizhimen Fintech Corridor, Future Science City, Huairou Science City, the Beijing-Tianjin-Hebei innovation corridor, and the municipal blue-green network](assets/figures/regional-synergy.en.png)
+
+
 
 ## Overall Design Area: Urban Renewal at Regulatory-Plan Urban Design Depth
 
@@ -239,6 +296,13 @@ Aligned with the "Green & Smart" theme, five core user personas are defined [age
 4. **Scenario Explorer**: Members of the public visiting from across the city and globally to experience AI scenarios. Core needs: perceptible, participatory, photographable AI experiences. Spatial preferences: along the Jing-Zhang green vein, AI MALL, AI pilgrimage landmarks.
 
 5. **Green Guardian**: Community operators, environmental volunteers, and resident representatives. Core needs: participatory governance, environmental data transparency, community belonging. Spatial preferences: community gardens, participatory planning workshops, environmental monitoring platforms.
+### AI Innovation Ecosystem Structure Map
+
+The figure below illustrates the structure of the Green Veins Smart Core AI innovation ecosystem, showing the circular relationships among universities and research institutes, enterprises and entrepreneurs, capital, government and platforms, community and public, and data/compute infrastructure, together with the ethics-and-governance core [agent:3][agent:5].
+
+![Green Veins Smart Core AI innovation ecosystem structure: a central hub showing circular flows among universities/research, enterprises/entrepreneurs, capital/investment, government/platform, community/public, and data/compute infrastructure, with an ethics and governance core](assets/figures/ai-ecosystem.en.png)
+
+
 
 ### AI+ Scenario Cards (10 Full Scenarios + 3 Test Scenarios)
 
@@ -391,6 +455,33 @@ At the central plaza of the "AI Valley" entrepreneurship complex in Wudaokou. A 
 
 **3. "Internet of Everything" Ground Sculpture Cluster (Dazhongsi Segment)**
 Between Dazhongsi AI MALL and the Jing-Zhang Heritage Park southern gateway, composed of 12 interactive sculptures scattered across the plaza. Each sculpture takes a different natural element as its form (water, wind, light, plants), embedded with sensors and AI processing units capable of sensing the surrounding environment (temperature, pedestrian flow, sound) and responding subtly — the water-form sculpture's ripples shift with pedestrian density, the wind-form sculpture's rotation changes with air quality data. The core message conveyed by the sculpture cluster: AI is not a force above nature, but a tool that coexists with nature and serves humanity [agent:4].
+### Public Space Component Library
+
+For the three-tier AI public-space hierarchy (city-level, district-level, community-level), this proposal offers a catalog of common component types and configuration suggestions [agent:4]. Specific selection, materials, installation details, and age-friendly requirements must be developed by a professional team and subject to dedicated accessibility review.
+
+| Component Category | Component Name | Function | Suggested Location | Key Design Parameters | Operation Responsibility |
+|---|---|---|---|---|---|
+| Smart station | Green Vein AI Station | Environmental monitoring, AI guidance, shared equipment, emergency call | Every 500 m along the green vein | Footprint 20–40 m², PV roof, near-zero-carbon demonstration | Municipal + operations service provider |
+| Slow-mobility facility | AI Slow Lane pavement | Shared surface for walking, cycling, low-speed autonomous vehicles | Full length of the Jing-Zhang green vein | Conceptual width 8–12 m, permeable paving ≥60%, zero-level interfaces | Municipal |
+| Interactive installation | AR heritage guidance post | Overlay Jing-Zhang railway historical imagery, trigger AR narration | Railway heritage nodes | Solar powered, IP65, Braille + QR-code dual entry | Cultural operator |
+| Sponge facility | Rain-garden module | Source reduction, ecological retention, science education | Low points, road green belts | Retention depth 15–30 cm, native plants ≥50% | Municipal + community |
+| Rest furniture | Railway-sleeper recycled bench | Preserve industrial memory, provide rest | Green-vein nodes, pocket plazas | Weathering steel / recycled sleepers, USB charging, storage slot | Municipal |
+| Signage facility | Bilingual smart wayfinding panel | Directions, map, accessibility info, AI entry | Rail station exits, green-vein entrances, community gateways | Height 1.8–2.2 m, high contrast, night reflectivity/lighting | Municipal + foundation |
+| Energy facility | PV canopy | Shading, power generation, data collection | Green-vein activity plazas, AI MALL roofs | Approx. 15 MWp district-wide (conceptual; requires dedicated study) | Energy service provider |
+| Sanitation facility | AI smart bin | Sorting guidance, fullness alerts, carbon credits | Community-level public spaces | Infrared lid, compaction module, no facial data | Community operator |
+
+### Signage and Wayfinding System
+
+The signage system must serve both digital-navigation and non-digital users, forming a three-level hierarchy and providing bilingual Chinese-English, Braille, and tactile information at key nodes [agent:4][agent:5].
+
+| Level | Location | Information | Form Requirements | Accessibility Requirements |
+|---|---|---|---|---|
+| Level 1 · City gateway | North 5th Ring, Xizhimen, G6 expressway entries | Belt overview, slow-mobility spine entry, P&R | Gateway marker / monument, 5–8 m tall | Tactile overview map at base |
+| Level 2 · District | Entrances to three key areas, rail station exits | Key-area map, attraction/facility index, events | Standing / wall signage, 2.2–3 m tall | Tactile map, voice QR code |
+| Level 3 · Node | Green-vein intersections, AI stations, building forecourts | Direction arrows, distances, accessibility, AI entries | Post / overhead sign, 1.8–2.2 m tall | Braille direction panels, high-contrast colors |
+| Digital enhancement | Key nodes | QR/Bluetooth beacons triggering AI guidance, AR content | Integrated with physical signage | Paper maps provided as non-digital alternative |
+
+
 
 ### Urban Character Control
 
@@ -457,6 +548,74 @@ Between Dazhongsi AI MALL and the Jing-Zhang Heritage Park southern gateway, com
 - **Attraction and Conversion Pathway**: From summit participant → developer community member → sandbox testing enterprise → settled enterprise, forming a complete talent/enterprise conversion funnel
 
 **Note**: All activities, investment attraction, policies, and operational arrangements described above are conceptual proposals and deepening directions only, and do not constitute confirmed government arrangements or investment commitments.
+### Event Brand Visual System
+
+To strengthen the identity of the "Green Veins AI Summit" and the "1+4+N" annual activity system, this proposal offers an event-brand visual direction [agent:6]:
+
+- **Core visual motif**: "Growing code" — translating the parallel lines of Jing-Zhang railway tracks into flowing data streams overlaid with leaf textures, creating a dynamic pattern that is both industrial and ecological
+- **Seasonal color expansion**: Building on the primary deep green / tech blue palette, each season receives a signature color (Spring bud green `#7CB342`, Summer water blue `#29B6F6`, Autumn wheat gold `#FFB300`, Winter frost teal `#B0BEC5`), creating a recognizable seasonal event family
+- **Typography and layout**: Headlines mix bold sans-serif with monospace typefaces to echo the "nature + code" dual gene; posters use both 16:9 horizontal and 3:4 vertical grids for social-media and print consistency
+- **Spatial visuals**: The summit main venue should use reusable modular staging, LED floor screens, and greenery installations to reduce single-use construction; outdoor sub-venues use projection mapping interacting with railway heritage structures
+- **Digital communication**: Unified motion opener (Smart Valley tower data visualization, green-vein growth animation), AR invitations, and real-time event data visualization
+
+> **Rights note**: Event visual direction is conceptual only. Final design must be developed by a professional visual team and clear font, image, and music rights.
+
+### International Copy Style Guide
+
+To ensure consistent understanding by international reviewers, overseas media, and partners, this proposal establishes a basic copy style [agent:5].
+
+| Item | Preferred Usage | Avoid | Rationale |
+|---|---|---|---|
+| Project name | Jing-Zhang AI Innovation Belt | Jingzhang Belt (no hyphen) | "Jing-Zhang" retains the hyphen, matching "京张" |
+| Proposal theme | Green Veins, Smart Core | — | English subtitle emphasizing ecology and smart core |
+| English brand | JZ·AI Green Corridor | JZAI | Keep separator for spoken communication |
+| Chinese name | 京张AI创新带 | 京张人工智能创新带 (too long) | Use the short form in formal contexts |
+| Three core names | Zhongzhiyuan AI Acceleration Area; Beijing AI Origin Community; Dazhongsi AI Industry Cluster | Acronyms like ZZY | Use full English translations for international communication |
+| Tone | Professional, open, actionable | Hype or commitment language | Aligns with "conceptual recommendation" positioning; avoid absolute claims such as "world's first" |
+| Data phrasing | "design target," "recommended value," "estimated based on provisional boundaries" | "will reach," "expected to achieve" | Distinguish conceptual targets from known facts |
+
+
+
+## Implementation Governance, Funding, and Operations
+
+This proposal puts forward a governance framework of "government sets direction, foundation operates the platform, operators execute, and community co-supervises," together with funding and operations mechanisms [agent:6]. All governance arrangements, funding estimates, and operational responsibilities are conceptual recommendations and must be developed according to actual project legal structures and government decisions.
+
+### RACI Responsibility Matrix
+
+| Work Stream | District Government / Planning Commission (decision / oversight) | Green Vein AI Foundation (coordination / platform) | Professional Operator (execution) | Community / Residents (participation / oversight) | Universities / Enterprises (technology / scenarios) |
+|---|---|---|---|---|---|
+| Jing-Zhang green vein construction | A | C | R | C | I |
+| AI scenario deployment | A | R | R | C | C |
+| Data platform operation | A | R | R | I | C |
+| Branding and events | C | R | C | C | I |
+| Energy microgrid | A | C | R | I | C |
+| Community micro-renewal | C | C | R | R | C |
+| Funding mobilization | A | R | C | I | I |
+| Independent ethics oversight | I | C | I | R | C |
+
+*Note: R = Responsible; A = Accountable; C = Consulted; I = Informed.*
+
+### Funding Structure (Conceptual Illustration)
+
+| Funding Type | Primary Use | Nature | Indicative Share | Notes |
+|---|---|---|---|---|
+| Fiscal funds | Green-vein parks, municipal roads, public-service facilities | Public investment | 35–45% | Mainly municipal special bonds and district fiscal budgets |
+| PPP / social capital | AI MALL, TOD complexes, district energy stations | Commercial investment | 25–35% | Recovered through concession fees and user charges |
+| Green finance | PV, ground-source heat pumps, sponge city, green buildings | Policy financing | 15–20% | Green bonds, green credit, carbon-reduction support instruments |
+| Community renewal fund | Older-community green micro-renewal, community AI scenarios | Small public + social donations | 5–10% | Managed by the foundation under public oversight |
+| Enterprise R&D investment | AI sandbox, pilot platforms, computing facilities | Market-driven R&D | 10–15% | Enterprises invest independently; government opens scenarios |
+
+### Operations and Maintenance Mechanisms
+
+| Facility / System | Responsible Party | Operation Model | Indicative KPIs |
+|---|---|---|---|
+| Jing-Zhang green vein public space | Municipal landscaping + Green Vein AI Foundation | Government procurement + social co-construction | Green coverage, facility integrity, public satisfaction ≥80% |
+| AI slow-mobility lane | Municipal transport + smart-mobility operator | Concession | Slow-mode share, incident rate, facility uptime ≥95% |
+| Smart integrated poles / edge computing | Telecom operators + AI service providers | Commercial operation + public-service floor | Device uptime, data-interface availability |
+| AI energy microgrid | Energy service provider | Energy performance contracting / energy management | Renewable energy share ≥20%, peak-load reduction ≥10% |
+| AI data platform | Green Vein AI Foundation (owner) + tech operator | Platform operation + third-party audit | API availability, privacy incidents, ethics-audit coverage |
+| Event brand and content | Foundation + event operating company | Market-driven event operation | Annual events ≥100, international participant share |
+
 
 ## Metrics, Area Recalculation, and Compliance Matrix
 
@@ -526,5 +685,4 @@ This proposal completes the following matrix files to ensure structured evidence
 6. King's Cross Central Limited Partnership, King's Cross Urban Renewal Master Plan
 7. Shenzhen Planning and Natural Resources Bureau, Dasha River Ecological Corridor Landscape Plan
 8. Seoul Metropolitan Government, Digital Media City (DMC) Development Master Plan
-9. OpenStreetMap Contributors, Beijing Haidian District Base Geographic Data (ODbL License)
-10. Beijing Public Data Open Platform, Transport, Environmental, and Public Service Statistics
+9. Beijing Public Data Open Platform, Transport, Environmental, and Public Service Statistics

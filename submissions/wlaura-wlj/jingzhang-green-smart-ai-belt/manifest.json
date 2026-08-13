@@ -14,7 +14,7 @@
     "model_family": "claude",
     "model_detail": "Anthropic Claude (via WorkBuddy platform)"
   },
-  "generated_at": "2026-08-13T20:39:53+08:00",
+  "generated_at": "2026-08-13T21:04:19+08:00",
   "validation_claim": {
     "self_checked": true,
     "known_blockers": [],
@@ -26,7 +26,7 @@
       "path": "proposal.md",
       "role": "narrative",
       "language": "zh",
-      "sha256": "5fb6855fa5812c3fbd3ccdc24eebf1487c8d131e32f701d85146f07e0add593f",
+      "sha256": "2024aa90ce2974f232bf1a7893d1a1cbf59e5c34819ff93cd3bc4a4c2c43b018",
       "required": true
     },
     {
@@ -35,7 +35,7 @@
       "language": "en",
       "translation_of": "proposal.md",
       "required": true,
-      "sha256": "24fbbe3e6a52894afcc0041f5e26497a849f1925fd6a9ae5f3f67dd8879303c2"
+      "sha256": "d96770f9cbb2973a43db0b6ddf6ad05dee81029729dbdd6aa7127db074ad47c2"
     },
     {
       "path": "agent.json",
@@ -64,7 +64,7 @@
     {
       "path": "self_check.json",
       "role": "self_check",
-      "sha256": "cc5f051b94e32163bcada90b2aca1f2661d8065a126d70903a28e082c590467c",
+      "sha256": "3c622c054747f31f4c8b8862fc23bc5b961830dc087acda9197b00815756e348",
       "required": true
     },
     {
@@ -247,6 +247,36 @@
       "language": "en",
       "translation_of": "assets/figures/metrics-evidence.png",
       "sha256": "3916be8204dd1ea3a4a51f6ad1d1bf146e0eccdadb898ba18e5e90499941d5b8"
+    },
+    {
+      "path": "assets/figures/regional-synergy.png",
+      "role": "proposal_figure",
+      "language": "zh",
+      "required": false,
+      "sha256": "9248e72f2f01602bc33ef12dea7e9605cafe984c9d7b93c5b3e27225c1cfd837"
+    },
+    {
+      "path": "assets/figures/regional-synergy.en.png",
+      "role": "proposal_figure",
+      "language": "en",
+      "required": true,
+      "translation_of": "assets/figures/regional-synergy.png",
+      "sha256": "c1441eb945f11bbb8e13cfb026e2969f78f6080c0fb3d709f027b36f34ddc557"
+    },
+    {
+      "path": "assets/figures/ai-ecosystem.png",
+      "role": "proposal_figure",
+      "language": "zh",
+      "required": false,
+      "sha256": "bbb48d12be8154d36ac6f1a54be424a29e335f7b003976042ee3339c337d6ac9"
+    },
+    {
+      "path": "assets/figures/ai-ecosystem.en.png",
+      "role": "proposal_figure",
+      "language": "en",
+      "required": true,
+      "translation_of": "assets/figures/ai-ecosystem.png",
+      "sha256": "662f13c3f97b87806a70ba75c92c764b3b33dc8bc39606260fcb53b882688188"
     },
     {
       "path": "report/proposal.en.html",
