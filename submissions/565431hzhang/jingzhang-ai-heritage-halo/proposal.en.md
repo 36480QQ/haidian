@@ -595,6 +595,19 @@ Project list and phasing depth are managed by [depth:renewal_project_list] and [
 - **Mid-term (3-7 yr) — Three zones formed & renewal**: JZ-02 Qinghe Interface, JZ-03 Transformation Street, JZ-04 Station-TOD connectivity; three key areas take shape, AI innovation ecosystem emerges, market-based operators introduced
 - **Long-term (7-15 yr) — Ecosystem & discourse power**: Complete regional collaboration (Beiwu compute, Future Science City research, ETDZ testing); form full AI industry chain and global AI pilgrimage landmark; sustain public space maintenance through data-economy compliance revenue
 
+**Near-term pilot measurable checklist (conceptual framework, pending operational data)**:
+
+| Pilot action | Time window | Measurable indicator | Responsible party | Go/No-Go condition |
+| --- | --- | --- | --- | --- |
+| Slow-mobility gap stitching 2-3 sites | Month 1-6 | Gaps stitched, connectivity ≥85% | Municipal + transport | Road redline confirmed |
+| Global AI Week first event | Month 3-12 | Participants ≥500, media coverage ≥10 | Event committee | Public space permit |
+| Edge compute pilot 1-2 nodes | Month 6-18 | Availability ≥95%, users ≥1000/month | Municipal + operator | Network + operator |
+| Open-source hall trial operation | Month 12-24 | Monthly events ≥2, projects ≥5 | Community committee | Venue + operator |
+| Safety sandbox phase 1 | Month 18-30 | Tests ≥3, draft standards ≥1 | Standards consortium | Consortium established |
+| Data element parlor pilot | Month 24-36 | Compliant trades ≥1, audit 0 violations | Third-party data gov | Data governance framework |
+
+> Indicators are conceptual; baselines require professional survey before pilot launch. Pilots not meeting targets are automatically deferred.
+
 **Policy recommendations (covering six mechanisms)** [source:PROCESSED-FACT-PACK]:
 - **Urban renewal coordination**: "Micro-renewal + node activation" approach, avoiding large-scale demolition; retain/renovate/demolish plans subject to independent survey and community disclosure
 - **Spatial supply**: Reserve flexible-use land and public space for new industries at low entry cost
