@@ -68,7 +68,9 @@
         "land_use_feature_count",
         "east_west_stitch_count",
         "green_ratio",
-        "conceptual_building_count"
+        "conceptual_building_count",
+        "everyday_journey_count",
+        "reversible_urban_form_prototype_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -76,13 +78,19 @@
       ],
       "visual_sections": [
         "C7 城市能力与用地织补",
-        "慢行蓝绿与公共空间"
+        "慢行蓝绿与公共空间",
+        "v0.7三条日常城市链",
+        "v0.7三处重点区空间剖面",
+        "v0.7 AI城市形态原型"
       ],
       "source_ids": [
         "AGENT-TASKBOOK",
         "LAND-USE-CODES",
         "BUILDING-TYPES",
-        "ALLOWED-DESIGN-SPACE"
+        "ALLOWED-DESIGN-SPACE",
+        "HD-URBAN-RENEWAL-GUIDE-2025",
+        "HD-URBAN-RENEWAL-IMPLEMENTATION-2025",
+        "HD-AI-DISTRICT-PROGRESS-2025Q4"
       ],
       "assumption_ids": [
         "A-C7-006",
@@ -122,11 +130,17 @@
       ],
       "visual_sections": [
         "三处重点区",
-        "C7 城市能力与用地织补"
+        "C7 城市能力与用地织补",
+        "v0.7三条日常城市链",
+        "v0.7三处重点区空间剖面",
+        "v0.7 AI城市形态原型"
       ],
       "source_ids": [
         "AGENT-TASKBOOK",
-        "DESIGN-BRIEF"
+        "DESIGN-BRIEF",
+        "HD-URBAN-RENEWAL-GUIDE-2025",
+        "HD-URBAN-RENEWAL-IMPLEMENTATION-2025",
+        "HD-AI-DISTRICT-PROGRESS-2025Q4"
       ],
       "assumption_ids": [
         "A-EXISTING-004",
@@ -232,7 +246,10 @@
         "drawings/a0-boards.pdf"
       ],
       "visual_sections": [
-        "三处重点区"
+        "三处重点区",
+        "v0.7三条日常城市链",
+        "v0.7三处重点区空间剖面",
+        "v0.7 AI城市形态原型"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
@@ -306,7 +323,9 @@
       "metrics": [
         "city_completeness_dimension_count",
         "east_west_stitch_count",
-        "green_ratio"
+        "green_ratio",
+        "everyday_journey_count",
+        "reversible_urban_form_prototype_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -314,10 +333,16 @@
       ],
       "visual_sections": [
         "总体范围与城市完整度",
-        "慢行蓝绿与公共空间"
+        "慢行蓝绿与公共空间",
+        "v0.7三条日常城市链",
+        "v0.7三处重点区空间剖面",
+        "v0.7 AI城市形态原型"
       ],
       "source_ids": [
-        "AGENT-TASKBOOK"
+        "AGENT-TASKBOOK",
+        "HD-URBAN-RENEWAL-GUIDE-2025",
+        "HD-URBAN-RENEWAL-IMPLEMENTATION-2025",
+        "HD-AI-DISTRICT-PROGRESS-2025Q4"
       ],
       "assumption_ids": [
         "A-C7-006"
@@ -342,7 +367,8 @@
       "metrics": [
         "land_use_research_sqm",
         "land_use_commercial_service_sqm",
-        "conceptual_building_count"
+        "conceptual_building_count",
+        "implementation_path_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -350,12 +376,18 @@
       ],
       "visual_sections": [
         "C7 城市能力与用地织补",
-        "三处重点区"
+        "三处重点区",
+        "v0.7三条日常城市链",
+        "v0.7三处重点区空间剖面",
+        "v0.7 AI城市形态原型"
       ],
       "source_ids": [
         "DESIGN-BRIEF",
         "LAND-USE-CODES",
-        "BUILDING-TYPES"
+        "BUILDING-TYPES",
+        "HD-URBAN-RENEWAL-GUIDE-2025",
+        "HD-URBAN-RENEWAL-IMPLEMENTATION-2025",
+        "HD-AI-DISTRICT-PROGRESS-2025Q4"
       ],
       "assumption_ids": [
         "A-BUILDING-MODEL-005",
@@ -390,7 +422,10 @@
       ],
       "visual_sections": [
         "总体范围与城市完整度",
-        "三处重点区"
+        "三处重点区",
+        "v0.7三条日常城市链",
+        "v0.7三处重点区空间剖面",
+        "v0.7 AI城市形态原型"
       ],
       "source_ids": [
         "DESIGN-BRIEF"
@@ -688,7 +723,9 @@
       "metrics": [
         "city_completeness_dimension_count",
         "city_completeness_segment_count",
-        "east_west_stitch_count"
+        "east_west_stitch_count",
+        "everyday_journey_count",
+        "reversible_urban_form_prototype_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -700,10 +737,15 @@
         "三大定位—五大功能—三区两翼协同闭环",
         "C7品牌与VI概念方向",
         "评审证据索引",
-        "v0.6评审证据总表"
+        "v0.6评审证据总表",
+        "v0.7三条日常城市链",
+        "v0.7三处重点区空间剖面",
+        "v0.7 AI城市形态原型"
       ],
       "source_ids": [
-        "AGENT-TASKBOOK"
+        "AGENT-TASKBOOK",
+        "HD-URBAN-RENEWAL-GUIDE-2025",
+        "HD-URBAN-RENEWAL-IMPLEMENTATION-2025"
       ],
       "assumption_ids": [
         "A-C7-006",
@@ -790,10 +832,16 @@
         "三个旗舰试点协议",
         "包容性与负担矩阵",
         "评审证据索引",
-        "v0.6评审证据总表"
+        "v0.6评审证据总表",
+        "v0.7三条日常城市链",
+        "v0.7三处重点区空间剖面",
+        "v0.7 AI城市形态原型"
       ],
       "source_ids": [
-        "AGENT-TASKBOOK"
+        "AGENT-TASKBOOK",
+        "HD-URBAN-RENEWAL-GUIDE-2025",
+        "HD-URBAN-RENEWAL-IMPLEMENTATION-2025",
+        "HD-AI-DISTRICT-PROGRESS-2025Q4"
       ],
       "assumption_ids": [
         "A-AI-BASELINE-008"
@@ -867,10 +915,15 @@
         "C7品牌与VI概念方向",
         "公共空间组件库与三层导视系统",
         "包容性与负担矩阵",
-        "评审证据索引"
+        "评审证据索引",
+        "v0.7三条日常城市链",
+        "v0.7三处重点区空间剖面",
+        "v0.7 AI城市形态原型"
       ],
       "source_ids": [
-        "AGENT-TASKBOOK"
+        "AGENT-TASKBOOK",
+        "HD-URBAN-RENEWAL-GUIDE-2025",
+        "HD-URBAN-RENEWAL-IMPLEMENTATION-2025"
       ],
       "assumption_ids": [
         "A-BOUNDARY-001"
@@ -893,7 +946,8 @@
       ],
       "metrics": [
         "public_space_count",
-        "ai_scenario_count"
+        "ai_scenario_count",
+        "implementation_path_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -909,7 +963,9 @@
         "v0.6评审证据总表"
       ],
       "source_ids": [
-        "AGENT-TASKBOOK"
+        "AGENT-TASKBOOK",
+        "HD-URBAN-RENEWAL-GUIDE-2025",
+        "HD-URBAN-RENEWAL-IMPLEMENTATION-2025"
       ],
       "assumption_ids": [
         "A-C7-006"
