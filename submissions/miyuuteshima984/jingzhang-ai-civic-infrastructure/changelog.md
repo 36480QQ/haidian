@@ -1,5 +1,14 @@
 # 方案迭代记录
 
+## v0.7 - 2026-08-13
+
+- Added three current official Haidian public sources (2025 Urban Renewal Guide, 2025 implementation guide, and 2025 Q4 AI-district progress) and split implementation into reversible low-disturbance actions versus changes that require real project generation, implementation-plan review and permitting.
+- Rebuilt the mandatory bilingual `key-areas.png` core figure as three actual spatial sections—innovation campus, long-term neighborhood and station-city everyday district—so the Review Agent fixed visual packet sees spatial differentiation directly rather than reviewer-oriented task cards.
+- Reversed the v0.6 rubric-first presentation after #2143 merged at Review Agent 76/100 despite all four gates passing: the above-fold reviewer dashboard is demoted to traceability and the first visual returns to actual urban experience.
+- Added bilingual three everyday journey diagrams for Zhongzhiyuan, AI Origin and Dazhongsi: ordinary-city baseline, physical repair, optional AI enhancement and a functioning failure/exit route.
+- Added bilingual AI-urban-form prototypes: bounded test pockets, accessible help thresholds, continuous arrival interfaces, replaceable service nodes, people-first public ground floors and reversible spatial versioning.
+- Started from upstream main `0f051ddb5b91bf5e1992a1b32b8c3b2763978fc8` to inherit the latest validator/schema changes.
+
 ## v0.6 - 2026-08-12
 
 - Started from merged v0.5 exact head `caa654366f5ecbd3b7ab2e782ec65fe3192af0cf`, whose upstream PR #2062 was accepted at Review Agent 83/100 with mandatory rejection and all four local gates passed.
