@@ -89,6 +89,12 @@
    "pass": true
   },
   {
+   "sheet": "svg/heritage",
+   "min_font_units": 9.0,
+   "min_height_mm_at_A0": 4.73,
+   "pass": true
+  },
+  {
    "sheet": "svg/hero-leveling-line",
    "min_font_units": 11.0,
    "min_height_mm_at_A0": 5.78,
@@ -114,6 +120,12 @@
   },
   {
    "sheet": "svg/land-use-structure",
+   "min_font_units": 9.5,
+   "min_height_mm_at_A0": 4.99,
+   "pass": true
+  },
+  {
+   "sheet": "svg/maintenance",
    "min_font_units": 9.5,
    "min_height_mm_at_A0": 4.99,
    "pass": true
@@ -203,6 +215,12 @@
    "pass": true
   },
   {
+   "sheet": "svg.en/heritage",
+   "min_font_units": 9.0,
+   "min_height_mm_at_A0": 4.73,
+   "pass": true
+  },
+  {
    "sheet": "svg.en/hero-leveling-line",
    "min_font_units": 11.0,
    "min_height_mm_at_A0": 5.78,
@@ -228,6 +246,12 @@
   },
   {
    "sheet": "svg.en/land-use-structure",
+   "min_font_units": 9.5,
+   "min_height_mm_at_A0": 4.99,
+   "pass": true
+  },
+  {
+   "sheet": "svg.en/maintenance",
    "min_font_units": 9.5,
    "min_height_mm_at_A0": 4.99,
    "pass": true
@@ -289,21 +313,21 @@
  ],
  "offline_html": {
   "visual/index.html": {
-   "images": 18,
+   "images": 20,
    "images_without_alt": 0,
    "has_lang": true,
    "heading_level_jumps": 0,
-   "figcaptions": 19,
+   "figcaptions": 21,
    "interactive_elements_needing_focus": 0,
    "has_dark_mode": true,
    "inline_script_tags": 0
   },
   "visual/index.en.html": {
-   "images": 18,
+   "images": 20,
    "images_without_alt": 0,
    "has_lang": true,
    "heading_level_jumps": 0,
-   "figcaptions": 19,
+   "figcaptions": 21,
    "interactive_elements_needing_focus": 0,
    "has_dark_mode": true,
    "inline_script_tags": 0
@@ -312,13 +336,13 @@
  "asset_references": [
   {
    "file": "visual/index.html",
-   "references": 18,
+   "references": 20,
    "missing": [],
    "remote": []
   },
   {
    "file": "visual/index.en.html",
-   "references": 18,
+   "references": 20,
    "missing": [],
    "remote": []
   },
