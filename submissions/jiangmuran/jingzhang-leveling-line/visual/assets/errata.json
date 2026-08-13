@@ -4,9 +4,9 @@
  "note_en": "A register of this package's own errors. Not a changelog: a changelog says what changed, this says what was wrong, what shape the error had, who found it, and which commit fixed it. Every entry names a commit, and the build verifies that commit exists and touched the file blamed. An errata register that cannot be joined to the repository is the defect it records.",
  "why_zh": "全场 351 份方案中没有一份勘误、撤回或作者自述的复盘。一个主张城市应当公开自身误差的方案，不能自己呈现一个无瑕的表面：它提出的整套机制都建立在「看不见失败的测量不值得信任」之上，文档同理。",
  "counts": {
-  "total": 49,
+  "total": 50,
   "by_found_by": {
-   "audit": 23,
+   "audit": 24,
    "own-gate": 2,
    "external-reviewer": 4,
    "self": 20
@@ -25,6 +25,7 @@
    "six-classes-for-a-seven-class-partition": 1,
    "the-table-stopped-being-a-table": 1,
    "index-that-does-not-index": 1,
+   "rule-applied-to-others-but-not-to-self": 1,
    "attribution-to-a-file-that-refuses-it": 1,
    "number-with-no-file-behind-it": 2,
    "claim-outlived-the-corpus": 1
@@ -474,6 +475,16 @@
    "what_zh": "图纸索引上方写「共十二张图纸，FIG.00–FIG.11 连续编号」，下方的表只有九行（FIG.01–FIG.09）。缺 FIG.00（全文开篇那张）、FIG.10（人视街道剖面）与 FIG.11（区域协同接口）——**而正文在 L531 按编号引用了 FIG.11**，把读者指向一个不含它的索引。同一处的复核清单则编号成 1…10、8、9，十二项用了十个号。",
    "why_zh": "两个语种带着同样的九行，所以这不是翻译疏漏，是**完整性声明写在表格上方那句话里、而不是由表格本身承担**。清单的编号是看得见的那个缺陷，危险的是另一个：清单上每一项都指名一个路径，一份把评审指向不存在文件的清单，比没有清单更糟。",
    "fix_zh": "两者都改为生成：索引由 `build_figure_index.py` 从随包 PNG 生成，句中的份数写自 `len(FIGURES)`，并断言每张随包图有编号、每个编号有文件、正文引用的每个 FIG.NN 都能解析到行；清单由 `enumerate` 编号，且十二项声明的 17 条路径必须全部在包内解析。"
+  },
+  {
+   "id": "E50",
+   "commit": "c443cb85",
+   "file": "visual/assets/operations.json",
+   "found_by": "audit",
+   "shape": "rule-applied-to-others-but-not-to-self",
+   "what_zh": "L2 闭合差碑——那面「允许自己难看」的墙——立在 BM-1 众智园（研发片区），而读数不一致真正落到的人在约 3 km 外的三等社区点 BM-303。**机构的公开认错，立在机构自己所在的地方。**",
+   "why_zh": "本方案通篇主张「把复核权放在需要走十五分钟才能到的专门机构，等于没有给」，而这处选址正是那句话的反例——**规则对别人成立，对自己没有执行**。这不是数字过期，也不是引用错误：是一处**本方案自己的伦理主张与自己的选址相矛盾**，而包内没有任何闸门能发现它，因为它不是可计算的量。发现它的是一次独立评图。",
+   "fix_zh": "当期失败读数改为在**每一个三等社区点**同步显示，用既有标准件 KIT-02 读数牌，新增构筑物 0 处；L2 保留为年度归零仪式与全年闭合记录的所在。**当期的坏消息属于它发生的地方**；一次面向全线的年度仪式可以集中，一条正在退回的场景不行。"
   },
   {
    "id": "E49",
