@@ -132,6 +132,24 @@
       "confidence": "high",
       "assumptions": []
     },
+    "technical_desktop_check_count": {
+      "status": "known",
+      "value": 10,
+      "unit": "count",
+      "source_files": ["visual/assets/proof-block-technical-spec.json"],
+      "formula": "count(TV-01..TV-10 where result=pass)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "field_performance_test_pass_count": {
+      "status": "known",
+      "value": 0,
+      "unit": "count",
+      "source_files": ["visual/assets/proof-block-technical-spec.json"],
+      "formula": "count(TV-11..TV-12 where result=pass)",
+      "confidence": "high",
+      "assumptions": ["A-FIELDWORK-001"]
+    },
     "completed_field_observation_count": {
       "status": "known",
       "value": 0,

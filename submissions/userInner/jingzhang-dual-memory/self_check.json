@@ -103,9 +103,11 @@
         "submissions/userInner/jingzhang-dual-memory/visual/assets/implementation-contract.json",
         "submissions/userInner/jingzhang-dual-memory/visual/assets/key-area-daily-routes.json",
         "submissions/userInner/jingzhang-dual-memory/visual/assets/memory-boundary-passports.json",
+        "submissions/userInner/jingzhang-dual-memory/visual/assets/proof-block-technical-spec.json",
         "submissions/userInner/jingzhang-dual-memory/visual/assets/proof-mile-spatial-atlas.json",
         "submissions/userInner/jingzhang-dual-memory/visual/assets/public-interest-route-tests.json",
         "submissions/userInner/jingzhang-dual-memory/visual/assets/run-memory-passport-audit.js",
+        "submissions/userInner/jingzhang-dual-memory/visual/assets/run-proof-block-technical-audit.js",
         "submissions/userInner/jingzhang-dual-memory/visual/assets/run-site-evidence-audit.js",
         "submissions/userInner/jingzhang-dual-memory/visual/assets/run-spatial-atlas-audit.js",
         "submissions/userInner/jingzhang-dual-memory/visual/assets/site-evidence-ledger.json",
@@ -116,7 +118,7 @@
       "ai_package_stages": {
         "submissions/userInner/jingzhang-dual-memory": "formal"
       },
-      "total_bytes": 34243590,
+      "total_bytes": 32492735,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -190,7 +192,7 @@
       "summary": {
         "standard_matrix_items": 6,
         "design_depth_items": 15,
-        "known_metric_refs_required": 14,
+        "known_metric_refs_required": 16,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
@@ -198,7 +200,7 @@
           "standard": 4,
           "depth": 16,
           "data": 11,
-          "metric": 8
+          "metric": 10
         }
       }
     },
