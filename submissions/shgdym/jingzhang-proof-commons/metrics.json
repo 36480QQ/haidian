@@ -335,6 +335,89 @@
       "assumptions": [],
       "precision_note": "Proposed operating target, not evidence of an existing annual programme."
     },
+    "lived_journey_step_count": {
+      "status": "known",
+      "value": 8,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/lived-lifecycle.json"
+      ],
+      "formula": "count(composite_persona_day_journey_steps)",
+      "confidence": "high",
+      "assumptions": [],
+      "precision_note": "Synthetic design-review journey, not observation of a real resident."
+    },
+    "handover_ticket_type_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/lived-lifecycle.json"
+      ],
+      "formula": "count(TEST_RELEASE_USE_handover_ticket_types)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "ticket_hash_chain_target_percent": {
+      "status": "known",
+      "value": 100,
+      "unit": "percent",
+      "source_files": [
+        "visual/assets/lived-lifecycle.json"
+      ],
+      "formula": "required_linked_upstream_ticket_hashes / required_handover_tickets * 100",
+      "confidence": "high",
+      "assumptions": [],
+      "precision_note": "Protocol acceptance target, not measured operational performance."
+    },
+    "minimum_pilot_duration_days": {
+      "status": "known",
+      "value": 14,
+      "unit": "days",
+      "source_files": [
+        "visual/assets/lived-lifecycle.json"
+      ],
+      "formula": "proposed_bounded_pilot_decision_window",
+      "confidence": "high",
+      "assumptions": [],
+      "precision_note": "Proposed minimum-pilot protocol; field operation remains unauthorised and unrun."
+    },
+    "product_lifecycle_event_count": {
+      "status": "known",
+      "value": 9,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/lived-lifecycle.json"
+      ],
+      "formula": "count(synthetic_product_lifecycle_events)",
+      "confidence": "high",
+      "assumptions": [],
+      "precision_note": "Synthetic lifecycle events for design review."
+    },
+    "failure_case_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/lived-lifecycle.json"
+      ],
+      "formula": "count(technical_rights_public_use_failure_cases)",
+      "confidence": "high",
+      "assumptions": [],
+      "precision_note": "Designed failure cases, not claims of real incidents."
+    },
+    "anonymous_complaint_receipt_target_minutes": {
+      "status": "known",
+      "value": 5,
+      "unit": "minutes",
+      "source_files": [
+        "visual/assets/lived-lifecycle.json"
+      ],
+      "formula": "proposed_maximum_time_to_issue_anonymous_paper_receipt",
+      "confidence": "high",
+      "assumptions": [],
+      "precision_note": "Proposed service target pending an authorised operator and field test."
+    },
     "floor_area_ratio": {
       "status": "unknown",
       "value": null,
