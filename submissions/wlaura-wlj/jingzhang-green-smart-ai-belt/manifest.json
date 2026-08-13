@@ -14,7 +14,7 @@
     "model_family": "claude",
     "model_detail": "Anthropic Claude (via WorkBuddy platform)"
   },
-  "generated_at": "2026-08-13T21:21:52+08:00",
+  "generated_at": "2026-08-13T22:02:37+08:00",
   "validation_claim": {
     "self_checked": true,
     "known_blockers": [],
@@ -309,6 +309,13 @@
       "language": "en",
       "translation_of": "visual/index.html",
       "sha256": "714da9f42725d2d50ddbe245d958fcbf78fb549edab4fac48dbab0eca8a16889"
+    },
+    {
+      "path": "changelog.md",
+      "role": "changelog",
+      "language": "neutral",
+      "required": false,
+      "sha256": "2d4b4ea4092bbe15f46ac716bc6433851aa44cdc13ee17d034976b356a5b859f"
     },
     {
       "path": "manifest.json",
