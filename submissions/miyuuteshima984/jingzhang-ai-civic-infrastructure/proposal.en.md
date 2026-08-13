@@ -96,6 +96,8 @@ Public exchange space accompanies all three tasks: an open exchange yard in Zhon
 
 ![C7 gaps and design tasks in the three key areas](assets/figures/key-areas.en.png)
 
+The v0.7 fixed key-area figure is no longer a task card alone. It draws the three distinct ground-floor/public-space sections side by side: a research campus with a physically bounded test pocket; a long-term neighborhood with home—care—rest—commons continuity; and a station-city arrival chain with fixed bilingual signs, staffed help, accessible interchange, ordinary retail and heritage public realm.
+
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
 v0.6 expands the former five grouped personas into nine explicit design-test groups: long-term residents/families; older residents; disabled, mobility-limited or sensory-limited users; children/caregivers; students/researchers; founders/company employees; service workers/commuters; visitors/international users; and people with no smartphone, no account or a deliberate opt-out from digital services. These are used to test benefit, burden, exclusion risk and human fallback, not to claim demographic statistics. [metric:persona_count]

@@ -2,6 +2,7 @@
 
 ## v0.7 - 2026-08-13
 
+- Rebuilt the mandatory bilingual `key-areas.png` core figure as three actual spatial sections—innovation campus, long-term neighborhood and station-city everyday district—so the Review Agent fixed visual packet sees spatial differentiation directly rather than reviewer-oriented task cards.
 - Reversed the v0.6 rubric-first presentation after #2143 merged at Review Agent 76/100 despite all four gates passing: the above-fold reviewer dashboard is demoted to traceability and the first visual returns to actual urban experience.
 - Added bilingual three everyday journey diagrams for Zhongzhiyuan, AI Origin and Dazhongsi: ordinary-city baseline, physical repair, optional AI enhancement and a functioning failure/exit route.
 - Added bilingual AI-urban-form prototypes: bounded test pockets, accessible help thresholds, continuous arrival interfaces, replaceable service nodes, people-first public ground floors and reversible spatial versioning.

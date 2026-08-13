@@ -101,3 +101,5 @@ Any future third-party image, font, code library, map layer, institutional logo 
 
 - `assets/figures/everyday-journey-sections.svg` / `.en.svg`: submission-original / AI-assisted vector diagram; no third-party logo, image, map tile, font file, identifiable person or proprietary diagram is embedded. Conceptual storyboard only, not observed user behavior.
 - `assets/figures/ai-urban-form-change.svg` / `.en.svg`: submission-original / AI-assisted vector diagram; no third-party logo, image, map tile, font file or proprietary diagram is embedded. Spatial interfaces require later verification against official geometry, field surveys and professional requirements.
+
+- `assets/figures/key-area-spatial-sections.svg` / `.en.svg` and rendered `key-areas.png` / `.en.png`: submission-original / AI-assisted spatial section diagrams. No third-party image, logo, map tile, font file or identifiable person is embedded; all people/buildings/trees are diagrammatic primitives, and the sections are conceptual rather than surveyed existing conditions.
