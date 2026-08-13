@@ -2,13 +2,14 @@
 title: "AI Innovation Ecosystem Corridor: The Intelligent Rebirth of the Century-Old Jing-Zhang Railway"
 author_github: "Jefferson-qi"
 language: "en"
+translation_of: "proposal.md"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_file: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Using the Jing-Zhang Railway heritage corridor as the 'intelligence vein' main axis, connecting three major nodes — Zhongzhiyuan AI Acceleration Zone, Beijing AI Origin Community, and Dazhongsi AI Industry Zone — to build a world-class AI innovation ecosystem corridor integrating full-stack AI R&D, scenario empowerment, public space, cultural narrative, and long-term operation."
-tracks: ["ai-traffic-walkability", "jingzhang-heritage", "ai-origin-community", "enterprise-service", "ai-public-service"]
-scenarios: ["ai-traffic-walkability", "ai-medical", "robot-delivery", "ai-guide", "enterprise-service", "public-safety"]
+tracks: ["jingzhang-heritage-narrative", "enterprise-services-ecosystem", "ai-public-services"]
+scenarios: ["ai-traffic-walkability", "ai-health-service-navigation", "robot-delivery-low-speed", "ai-cultural-guide", "enterprise-service-copilot", "public-safety-operations-review"]
 iteration: "v1.0"
 ---
 
