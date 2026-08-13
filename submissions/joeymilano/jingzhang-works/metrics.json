@@ -230,6 +230,48 @@
       "formula": "count(spatial_sequence)",
       "confidence": "high",
       "assumptions": []
+    },
+    "startup_cost_line_count": {
+      "status": "known",
+      "value": 6,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/implementation_playbook.json"
+      ],
+      "formula": "count(startup_cost_ledger.lines)",
+      "confidence": "high",
+      "assumptions": [
+        "A-DELIVERY-001",
+        "A-OPERATIONS-001"
+      ]
+    },
+    "stop_drill_category_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/day_one_operations_drill.json"
+      ],
+      "formula": "count(five_stop_drills)",
+      "confidence": "high",
+      "assumptions": [
+        "A-DELIVERY-001"
+      ]
+    },
+    "priced_startup_cost_line_count": {
+      "status": "unknown",
+      "value": null,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/implementation_playbook.json"
+      ],
+      "formula": "count(startup_cost_ledger.lines where monetary price is backed by an authorized scope and comparable quotes)",
+      "confidence": "unknown",
+      "assumptions": [
+        "A-DELIVERY-001",
+        "A-OPERATIONS-001"
+      ],
+      "reason": "No pilot site, opening schedule, accountable buyer, or comparable quote set is authorized in this submission."
     }
   }
 }

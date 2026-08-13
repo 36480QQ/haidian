@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "794aecb4d25d2f8a67a739ee64e59a2adf4a726b1a67c71595db7c68b24c302a"
+      "sha256": "ee55d6ccf8161df106a4cffb922a8ee10bd7a1ab3bb6437a2376806a9a283157"
     },
     {
       "path": "agent.json",
@@ -38,7 +38,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "fccfaa56011f4cebbb300b21127ec6c28dbfa9d103c924c224f3f5e402139c34"
+      "sha256": "77b0cc02785c6d4a14f6bd9ee33c67b0f3adde751f97beba254ca8d042e0b50d"
     },
     {
       "path": "assumptions.json",
@@ -50,13 +50,13 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "cdb7f8b8cfe5aaf1159c5ce8009aeb25c288a7b3719cedcf3ea52a5241f58954"
+      "sha256": "4c30207bdad216fce28178b0c60390c67d16540aa1f2cd9bb8279730907c6055"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "09d7e4fd183e480bb0eeb3d1737e677ad4ae3d396e75ecc761fd02f539b051fb"
+      "sha256": "1f60994c807cd83d600082053aea730a1e61640fd50fce1ebdc5c63d7bb12214"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "adc77a2afe60a225fb7f54f0e055c87c5357d6a3914ba39ebfb07a61162699ea"
+      "sha256": "91e76bc3456a36e14de8650d1fa3de482eb0df95c064f06c6e1a523ff95eb4da"
     },
     {
       "path": "report/narrative.md",
@@ -100,21 +100,21 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "cb89eea0de01e15cd9dca9f5f1ce8234dcbed2ec19b9270407ccc2b31d5cb14a"
+      "sha256": "500dad97bf608975515e2cb845a14d5ae3715a02c477a8ec50b0b3f68c6b0433"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "eeb089848fe7aa5fee1ba064bd2de9ced0ef7d99ce51666991987f9f06e4c8d9"
+      "sha256": "15f87094d02d6f2a99dabcbc61ebf7a79f40e91bcf61c939233ed0421709eb95"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "0411b2e63ae7753654bd7e975f81b6013ede3bbbc80433e41f5409c252d3142e"
+      "sha256": "e48e951e5c825b7e3461a6518f895e3d86cc4db55dc99f951fab7ff3daf10096"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -149,7 +149,7 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "f35876ce21735818a7775c7d2d6a03a88afbfdde13cc9eb6890d31b8da27e422"
+      "sha256": "453e55b8fe40d114de7d96b27f7bdb638c150812ffd616b92592f089faa85c18"
     },
     {
       "path": "geometry/buildings.geojson",
@@ -210,7 +210,7 @@
       "role": "narrative",
       "required": false,
       "language": "neutral",
-      "sha256": "620f979d3582945ed05f85989bed60f2d9bb8ace1618db163a6d66c1ed54bde4"
+      "sha256": "9efab7afd7b5c3a0e2bbda42a8327ddc0d0054ae59785dc778c99427c2fd952b"
     },
     {
       "path": "risk.json",
@@ -252,7 +252,7 @@
       "role": "visualization",
       "required": true,
       "language": "neutral",
-      "sha256": "243200dc21d75f65e1330edc5c8b8a81c3d461199e7b0f28f530977440e7e592"
+      "sha256": "f8f6802fbb0db79e1179dfe47ae42377887891677115c6477867985f441dc234"
     },
     {
       "path": "visual/assets/build_usability_evidence.js",
@@ -267,7 +267,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "b51682e3da1ae355aedddf28e02776aafd93e20122ae9b58844589e4ae6d68c3"
+      "sha256": "666b39ae6d6d46833790dfa99b1cdb6f783187b4ca17695269b5f5fb19de7387"
     },
     {
       "path": "report/proposal.en.html",
@@ -275,7 +275,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "1b44b37913f370a1f7089a82a68bd87ebb76c0f6eea999534fb0f9a9340eed8d"
+      "sha256": "5a9d9c0102b7bfedc8ccde101bd55dc1ef45f5a1c0a70265d415bf1723516560"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -283,7 +283,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "9b700a6039dc1757e32968ca77ad3b8386a1304e19e2296382e98880c0f3e333"
+      "sha256": "d018409f2523267afa74864686c29ff5a680dc8d0d84edea8ff3dd6ffdd5f58a"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -291,7 +291,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "b25504ab1bdb19f117e01a4df019c959132bd79b4a393801677f895c6097d62f"
+      "sha256": "95b8149f7a4519ad2b9b996bcc467e37bd66e67da6866db96fa7a95807bef46f"
     },
     {
       "path": "visual/index.en.html",
@@ -299,7 +299,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "da559e8b273ad62247035f6e328ceea701f51fc823aee2d873e67281c5533c1c"
+      "sha256": "c1dc71cc61017148e004f14ac3e40581a2cd5be2a9a698bcc5bdda5a8ae2d9b0"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -339,7 +339,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/site-overview.png",
-      "sha256": "1a09745f1dddb5f3025e26d6af83d0df395958ffaf41d187b889e0c1bf56add6"
+      "sha256": "ac55f2ecc7adb1879a62c5fd826140b1cdd1e376239441eea9b2d40bfdec5bff"
     },
     {
       "path": "visual/assets/taskbook_crosswalk.json",
@@ -374,7 +374,7 @@
       "role": "visualization",
       "required": true,
       "language": "neutral",
-      "sha256": "675322d6c7f7dc860acffa2c2215201a9112ed678e78aff7fa0d7c6e6ad59543"
+      "sha256": "94d05aafeca051b9e08049522da411c92b89cf0d716a221864984626fe3c0cee"
     },
     {
       "path": "visual/assets/fieldwork_execution_kit.json",
@@ -416,7 +416,7 @@
       "role": "visualization",
       "required": true,
       "language": "neutral",
-      "sha256": "35e682cad22cd342cc217e9ee7b4ea43dfdd7ea8adb29b5726db79f599b7fae0"
+      "sha256": "a25d0a0badec9f72e574d8314a3df21c5a3deda6241a6d97f9be0ded21d74c68"
     },
     {
       "path": "visual/assets/validate_reviewer_evidence.js",
