@@ -25,8 +25,10 @@ These features must be inside `site_boundary.geojson` and non-overlapping. Offic
 
 ## FeatureCollection Template
 
-Use this as a starting point for any geometry layer. Replace `<layer-name>` with the file stem
-(e.g. `land_use`, `buildings`):
+Use this as a starting point for any geometry layer. Replace `<feature-id-prefix>` with a stable
+identifier prefix (often the file stem, such as `land_use` or `buildings`). Replace
+`<LAYER_CODE>` with the canonical code for that feature type from
+`brief/site-package/enums/layers.json`, such as `LAND_USE` or `BUILDING_FOOTPRINT`:
 
 ```json
 {
@@ -34,10 +36,10 @@ Use this as a starting point for any geometry layer. Replace `<layer-name>` with
   "features": [
     {
       "type": "Feature",
-      "id": "<layer-name>-001",
+      "id": "<feature-id-prefix>-001",
       "properties": {
-        "id": "<layer-name>-001",
-        "layer": "<layer-name>",
+        "id": "<feature-id-prefix>-001",
+        "layer": "<LAYER_CODE>",
         "source_type": "agent_inferred_from_public_data",
         "confidence": "medium",
         "geometry_role": "design_proposal",
@@ -65,7 +67,7 @@ Use this as a starting point for any geometry layer. Replace `<layer-name>` with
 Key points:
 - The first and last coordinate pair of every ring **must be identical** (closed ring).
 - Longitude comes first (`[lon, lat]`), not latitude-first.
-- `EPSG:4326` longitude range: `[-180, 180]`; latitude range: `[-90, 90]`.  
+- `EPSG:4326` longitude range: `[-180, 180]`; latitude range: `[-90, 90]`.
   Haidian area: approximately `[116.27–116.38, 39.95–40.07]`.
 - Projected coordinates (e.g. values like `439000, 4427000`) indicate a wrong CRS.
 
@@ -143,6 +145,9 @@ Any metric displayed in `visual/index.html` must match `metrics.json`. Use `data
 | Public-space ratio | `public_space_area / site_area` | dimensionless (0–1) |
 | Road area ratio | `road_area / site_area` | dimensionless (0–1) |
 
-When official boundary polygons are unavailable, mark each metric as `provisional_constraint` and
-set `"boundary_precision": "provisional_rough"` in its `assumptions` array. Recalculate all
-precision-sensitive metrics once official polygons arrive.
+When official boundary polygons are unavailable, put `geometry_role="provisional_constraint"`
+and `boundary_precision="provisional_rough"` on the relevant GeoJSON boundary feature. Metrics
+derived from that feature must retain a valid `status` (`known`, `unknown`, or `not_applicable`),
+use low or otherwise appropriate `confidence`, and include a plain-string assumption such as
+`"Calculated from repository provisional rough boundary geometry; not suitable for official area claims."`
+Recalculate all precision-sensitive metrics once official polygons arrive.
