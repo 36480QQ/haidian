@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
-  "retrieval_date": "2026-08-12",
-  "reuse_note": "Cite and paraphrase public facts only. No source photography, maps, or long text is redistributed; no explicit open-media licence was found unless stated.",
+  "retrieval_date": "2026-08-13",
+  "reuse_note": "Cite/paraphrase public facts and method precedents only. No source photography, maps, logo, system font or long text is redistributed. Formal local claims are limited to source-specific scope and explicit assumptions.",
   "sources": [
     {
       "id": "SITE-PACKAGE",
@@ -294,6 +294,81 @@
       "license_reuse": "citation only; no explicit open-media licence",
       "confidence": "high_for_area_and_process",
       "formal_usability": "formal_with_no_parcel_transfer"
+    },
+    {
+      "id": "BENCHMARK-SEOUL-AI-HUB",
+      "publisher": "official institutional source",
+      "title": "Seoul AI Hub official introduction",
+      "url": "https://www.seoulaihub.kr/eng1/index2.asp",
+      "date": "accessed 2026-08-13",
+      "source_type": "background_public",
+      "authority": "BACKGROUND_METHOD_CASE",
+      "spatial_scope": "international reference only",
+      "usage": "Method case for a talent/company/community operating ecology, not a landmark-only response.",
+      "does_not_support": "Any Jing-Zhang location, carrier, investment, approval, partnership or statutory claim.",
+      "license_reuse": "citation and paraphrase only; no media redistributed",
+      "confidence": "medium",
+      "formal_usability": "background_only"
+    },
+    {
+      "id": "BENCHMARK-VECTOR",
+      "publisher": "official institutional source",
+      "title": "Vector Institute — About",
+      "url": "https://vectorinstitute.ai/about/",
+      "date": "accessed 2026-08-13",
+      "source_type": "background_public",
+      "authority": "BACKGROUND_METHOD_CASE",
+      "spatial_scope": "international reference only",
+      "usage": "Method case for research-to-industry translation with accountable institutions.",
+      "does_not_support": "Any Jing-Zhang location, carrier, investment, approval, partnership or statutory claim.",
+      "license_reuse": "citation and paraphrase only; no media redistributed",
+      "confidence": "medium",
+      "formal_usability": "background_only"
+    },
+    {
+      "id": "BENCHMARK-MILA",
+      "publisher": "official institutional source",
+      "title": "Mila — About",
+      "url": "https://mila.quebec/en/about/about-mila",
+      "date": "accessed 2026-08-13",
+      "source_type": "background_public",
+      "authority": "BACKGROUND_METHOD_CASE",
+      "spatial_scope": "international reference only",
+      "usage": "Method case for open-science/community exchange and research transfer boundaries.",
+      "does_not_support": "Any Jing-Zhang location, carrier, investment, approval, partnership or statutory claim.",
+      "license_reuse": "citation and paraphrase only; no media redistributed",
+      "confidence": "medium",
+      "formal_usability": "background_only"
+    },
+    {
+      "id": "BENCHMARK-AI-SINGAPORE",
+      "publisher": "official institutional source",
+      "title": "Singapore Government Technology Agency — PlatformAI",
+      "url": "https://stg.ai.gov.sg/platform-docs/",
+      "date": "accessed 2026-08-13",
+      "source_type": "background_public",
+      "authority": "BACKGROUND_METHOD_CASE",
+      "spatial_scope": "international reference only",
+      "usage": "Method case for a shared platform with documented service and governance boundaries.",
+      "does_not_support": "Any Jing-Zhang location, carrier, investment, approval, partnership or statutory claim.",
+      "license_reuse": "citation and paraphrase only; no media redistributed",
+      "confidence": "medium",
+      "formal_usability": "background_only"
+    },
+    {
+      "id": "BENCHMARK-DIGITAL-CATAPULT",
+      "publisher": "official institutional source",
+      "title": "Digital Catapult — Applied AI Growth Programme",
+      "url": "https://www.digicatapult.org.uk/programmes/programme/applied-ai-growth-programme/",
+      "date": "accessed 2026-08-13",
+      "source_type": "background_public",
+      "authority": "BACKGROUND_METHOD_CASE",
+      "spatial_scope": "international reference only",
+      "usage": "Method case for testbed, demonstrator and adoption pathways that remain evidence-gated.",
+      "does_not_support": "Any Jing-Zhang location, carrier, investment, approval, partnership or statutory claim.",
+      "license_reuse": "citation and paraphrase only; no media redistributed",
+      "confidence": "medium",
+      "formal_usability": "background_only"
     }
   ]
 }
