@@ -21,6 +21,8 @@ iteration: "v1.0"
 
 [standard:GENERATIVE-AI-INTERIM-MEASURES]。 [standard:BARRIER-FREE-ENVIRONMENT-LAW]。 [standard:ELDERLY-SMART-TECH-PLAN-2020-45]。 正文中每条关键判断都标注 [source] / [standard] / [depth] / [data] / [metric] 五类证据；删除 标记后正文仍自然完整可读。
 
+> ⚠️ **拟议主体 / 待协商声明（适用于全文）**：本方案涉及的所有政府部门、医院、高校、企业、平台与公益组织均为**拟议主体、待协商，无既有协议或合作证据**；所有招商、运营、政策、活动与协同安排均为概念建议，不构成已确定政府安排或已签约内容；所有"建设、运营、政策"均须经资质团队与官方资料复核。
+
 ![总览地图：用地区分、交通慢行、蓝绿空间、建筑更新与 AI 场景节点](assets/figures/site-overview.png)
 
 ## 三层范围工作框架
@@ -301,7 +303,7 @@ iteration: "v1.0"
 
 ![核心指标复算与证据链图](assets/figures/metrics-evidence.png)
 
-合规矩阵覆盖：`standard_matrix.json` 覆盖 8 项必引规范（含 PROJECT-AGENT-OPEN-CALL-TASKBOOK）[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]；`design_depth_matrix.json` 13 项设计深度全部 complete（含 three_level_scope_framework、overall_spatial_structure、land_use_layout、development_intensity_controls、height_massing_character、retain_renovate_demolish、traffic_rail_slow_parking、municipal_new_infrastructure、blue_green_public_space、three_key_area_detailed_design、renewal_project_list、scenario_cards、existing_conditions_diagnosis）；`compliance_matrix.json` 覆盖公告 1.5（1）—（3）三层范围、面向智能体任务书 agent.1—agent.6 共六项任务。临时边界下面积为方向性数据，官方红线到位后须重算并更新本表。
+合规矩阵覆盖：`standard_matrix.json` 覆盖 8 项必引规范（含 PROJECT-AGENT-OPEN-CALL-TASKBOOK）[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]；`design_depth_matrix.json` 共 15 项设计深度，已按数据可得性**下调状态**——仅 `risk_missing_data` 为 complete，其余 `existing_conditions_diagnosis`、`three_level_scope_framework`、`overall_spatial_structure`、`three_key_area_detailed_design`、`renewal_project_list` 为 partial，`land_use_layout`、`traffic_rail_slow_parking`、`blue_green_public_space`、`metrics_recalculation` 为 directional，`development_intensity_controls`、`height_massing_character`、`municipal_new_infrastructure`、`phasing_implementation` 为 conceptual，`retain_renovate_demolish` 为 parametric；均不构成批准深度或工程结论；`compliance_matrix.json` 覆盖公告 1.5（1）—（3）三层范围、面向智能体任务书 agent.1—agent.6 共六项任务。临时边界下面积为方向性数据，官方红线到位后须重算并更新本表。
 
 ## 风险、版权与合规说明
 
