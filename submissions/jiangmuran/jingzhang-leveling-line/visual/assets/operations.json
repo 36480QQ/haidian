@@ -472,8 +472,8 @@
    ],
    "sessions_per_year_total": 47,
    "paid_hours_total": [
-    133.0,
-    214.0
+    138.7,
+    219.7
    ],
    "volunteer_hours_total": [
     148.0,
@@ -487,13 +487,26 @@
     120,
     260
    ],
+   "survey_hours_total": [
+    133.0,
+    214.0
+   ],
+   "maintenance": {
+    "per_benchmark": 1.4166666666666667,
+    "swaps": 11.333333333333334,
+    "hours": 5.666666666666667,
+    "cny": [
+     680,
+     1473
+    ]
+   },
    "labour_cny_total": [
-    15960,
-    55640
+    16644,
+    57122
    ],
    "annual_cny_total": [
-    18760,
-    62440
+    19444,
+    63922
    ],
    "derivation_zh": "每行的年次数由 `spatial.json` 中该点自己声明的复测周期换算，未在此处手写；工时 = 年次数 × 人数 × 每次工时区间；金额 = 工时 × 费率区间 + 耗材区间。",
    "derivation_en": "Sessions per year are converted from the re-survey cadence each point declares in `spatial.json`, not typed into this table; hours = sessions × people × the per-session band; money = hours × the rate band plus consumables.",
