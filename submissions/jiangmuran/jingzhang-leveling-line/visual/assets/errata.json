@@ -4,9 +4,9 @@
  "note_en": "A register of this package's own errors. Not a changelog: a changelog says what changed, this says what was wrong, what shape the error had, who found it, and which commit fixed it. Every entry names a commit, and the build verifies that commit exists and touched the file blamed. An errata register that cannot be joined to the repository is the defect it records.",
  "why_zh": "全场 351 份方案中没有一份勘误、撤回或作者自述的复盘。一个主张城市应当公开自身误差的方案，不能自己呈现一个无瑕的表面：它提出的整套机制都建立在「看不见失败的测量不值得信任」之上，文档同理。",
  "counts": {
-  "total": 50,
+  "total": 51,
   "by_found_by": {
-   "audit": 24,
+   "audit": 25,
    "own-gate": 2,
    "external-reviewer": 4,
    "self": 20
@@ -25,6 +25,7 @@
    "six-classes-for-a-seven-class-partition": 1,
    "the-table-stopped-being-a-table": 1,
    "index-that-does-not-index": 1,
+   "requirement-with-nobody-to-execute-it": 1,
    "rule-applied-to-others-but-not-to-self": 1,
    "attribution-to-a-file-that-refuses-it": 1,
    "number-with-no-file-behind-it": 2,
@@ -475,6 +476,16 @@
    "what_zh": "图纸索引上方写「共十二张图纸，FIG.00–FIG.11 连续编号」，下方的表只有九行（FIG.01–FIG.09）。缺 FIG.00（全文开篇那张）、FIG.10（人视街道剖面）与 FIG.11（区域协同接口）——**而正文在 L531 按编号引用了 FIG.11**，把读者指向一个不含它的索引。同一处的复核清单则编号成 1…10、8、9，十二项用了十个号。",
    "why_zh": "两个语种带着同样的九行，所以这不是翻译疏漏，是**完整性声明写在表格上方那句话里、而不是由表格本身承担**。清单的编号是看得见的那个缺陷，危险的是另一个：清单上每一项都指名一个路径，一份把评审指向不存在文件的清单，比没有清单更糟。",
    "fix_zh": "两者都改为生成：索引由 `build_figure_index.py` 从随包 PNG 生成，句中的份数写自 `len(FIGURES)`，并断言每张随包图有编号、每个编号有文件、正文引用的每个 FIG.NN 都能解析到行；清单由 `enumerate` 编号，且十二项声明的 17 条路径必须全部在包内解析。"
+  },
+  {
+   "id": "E51",
+   "commit": "f41277a4",
+   "file": "visual/assets/operations.json",
+   "found_by": "audit",
+   "shape": "requirement-with-nobody-to-execute-it",
+   "what_zh": "转化路径第五步的进入条件写着「水准合格且**撤除保证金**到位」。而包内没有一个字说明那是什么保证金、谁收、存在哪、按什么条件释放、逾期不撤怎么办。同一处还缺一整张表：八个水准点、四档周期、五步路径都写到了退出条件的精度，**却没有一句话交代谁召集、一年多少次、花多少钱**。",
+   "why_zh": "**一个没有保管方的保证金是一句话，不是一项约束。** 它在正文里起的是「此处已有制度保障」的作用，而读者若真去执行，会发现无处可执行——这与本包反复批评他人的「承诺型条款」是同一件事，只是写在自己这一侧。成本的缺席同理：把机制写到进出条件的精度而不写它的年成本，等于把最容易被否决的那一问留给评审自己去猜，而「由属地统筹」不是答案，是答案本该出现的位置。两处都不是可计算的量，包内闸门都抓不到，由独立评图指出。",
+   "fix_zh": "保证金**不新设**，挂靠到已有的两件工具：履约保证金（可由等额银行/保险保函替代，不占现金）与第三方责任险；保管方为发包方专户，释放权在发包方且以属地街道出具的场地恢复确认为前置，逾期未撤由发包方以保证金委托第三方撤除并追偿差额。**金额以撤除恢复的估算成本为基数取 100%–150% 区间，而非合同额百分比**——按合同额取百分比与撤除成本无关，造价低而位置难的装置，拆掉可能比装上贵。成本表按水准点逐点给出八行：年次数由 `spatial.json` 中该点自己声明的复测周期换算，不在成本模型里手写，改了周期不改这里就构建失败；志愿工时照列不计价（全年 148–244 小时，是这套机制向社区索取的量）；全年 47 次、专业工时 133–214，含耗材 18,760–62,440 元/年，全部为区间。**表里唯一不是数出来的数是费率**，并且写明它是 provisional、包内无可核来源，公式随表公布以便读者换自己的费率重算。"
   },
   {
    "id": "E50",
