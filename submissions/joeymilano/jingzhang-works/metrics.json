@@ -219,6 +219,17 @@
       "assumptions": [
         "A-OPERATIONS-001"
       ]
+    },
+    "complete_task_step_count": {
+      "status": "known",
+      "value": 6,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/complete_task_receipt.json"
+      ],
+      "formula": "count(spatial_sequence)",
+      "confidence": "high",
+      "assumptions": []
     }
   }
 }

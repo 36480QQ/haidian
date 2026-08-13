@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "A city-usability framework that organizes the Jing-Zhang corridor as three Works and two service chains. Every AI service must provide human takeover, a no-app equivalent, minimum-data rules, a responsible owner, stop conditions, and a public change record."
 tracks: ["ai-traffic-walkability", "ai-public-services", "enterprise-services-ecosystem"]
 scenarios: ["ai-traffic-walkability", "ai-health-service-navigation", "ai-cultural-guide", "enterprise-service-copilot", "robot-delivery-low-speed", "public-safety-operations-review"]
-iteration: "v1.2"
+iteration: "v1.3"
 ---
 
 # JING-ZHANG WORKS / 京张好用
@@ -25,6 +25,10 @@ This proposal treats the approximate 11.4-square-kilometre overall design area a
 The core product is an Urban Usability Compiler. It neither predicts people nor replaces public decisions. It checks whether a service contract is complete. If any of six fields is missing, the result stays `unknown` or `blocked`: accountable owner, no-app equivalent, minimum-data rule, human takeover, stop condition, and validation metric. All twelve scenario cards compile structurally; structural completeness is not field performance. Where no fieldwork or real operation exists, measured results remain empty.[metric:scenario_ready_count] (assumption A-FIELD-001)
 
 Three public nodes make the rules visible. Ask First Desk provides routes and public-service help without registration. Human Takeover Pavilion is a visible and reachable interface when automation fails. Public Change Log shows the problem, owner, deadline, action, and retirement history. Each starts as a movable and reversible prototype. A reviewer can test the entire proposition with one question: can somebody without a smartphone, with low vision, or visiting for the first time arrive, get help, complete a task, and leave safely? If not, the AI service should not open.[metric:public_node_count]
+
+That question now has a route a person can follow. Design rehearsal U05-A chooses an ordinary task. An older visitor without a smartphone wants to understand which materials a public service requires and where to go next. Static numbering leads the visitor to Learning Works. At Ask First, the visitor explains the task. A staff member provides a printed checklist carrying the source date. AI may shorten the public explanation, while the staff member verifies and signs every critical fact. The visitor sits down to reread the list and returns to the counter if one item is missing. On departure, the visitor carries the checklist, the offline service location, the information expiry date, and an issue number.
+
+One broken step blocks the whole service. If the route is obstructed, the source is stale, or the counter is unstaffed, staff withdraw the AI service while paper and staffed routes continue. U05-A is currently a spatial and service design rehearsal. The package records no real visitor, field observation, or completion rate.[source:V13-COMPLETE-TASK-RECEIPT]
 
 ## Design Basis and Source List
 
@@ -60,11 +64,11 @@ Each of the taskbook's three positions has a testable urban action. The Centenni
 
 Regional collaboration moves anonymized task patterns, test protocols, and versioned service standards rather than personal records or confidential company data. Beiwei Community contributes community-service problems and review practice. Future Science City connects research prototypes and test methods. Huairou Science City connects science-facility applications with public understanding. Beijing E-Town connects manufacturing validation and scaling experience. The Beijing-Tianjin-Hebei network can receive portable bilingual service standards. These are proposed relationships; no participation, funding, or adoption commitment is claimed.[source:V11-REGIONAL-COLLABORATION]
 
-![Three scopes, three Works, and two service chains](assets/figures/site-overview.en.png)
+![How one public task moves through three Works and two service chains](assets/figures/site-overview.en.png)
 
 ## Coordinated Research Area: Industry and Future City Research
 
-“JING-ZHANG WORKS” is both a name and a public test. The mark combines two railway lines with an orange acceptance stamp. Parallel lines mean that AI and no-app routes must coexist. An opening in the stamp means a service can be paused and withdrawn. Warm white, coal black, signal orange, and cobalt blue borrow the practical character of railway work orders and public-service manuals. The graphics are original and use no corporate marks, portraits, or third-party imagery.(assumption A-BRAND-001) [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]
+“JING-ZHANG WORKS” is both a name and a public test. The mark combines two railway lines with an orange acceptance stamp. Parallel lines mean that AI and no-app routes must coexist. An opening in the stamp means a service can be paused and withdrawn. Warm white, coal black, signal orange, and cobalt blue borrow the practical character of railway work orders and public-service manuals. The brand graphics, maps, and information structure are original and use no corporate marks. Sixteen external photographs in the A3 booklet and A0 boards provide historical, urban-character, and service-practice references only; every image records its author, licence, and original page and is never project field evidence.(assumption A-BRAND-001) [source:V14-PHOTO-CREDITS] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]
 
 The ecosystem follows four stages: problem, validation, adoption, and maintenance. Universities contribute methods; companies productize; Prototype Works provides isolated testing; the scenario wing provides real public tasks; the technology-service wing supports legal, IP, and finance needs; and public operators decide whether to adopt. Adoption never removes responsibility. Every service retains a named maintainer, a human route, and a public retirement record. Innovation density is measured through closed problems, takeover time, and recovery from failure rather than showroom count.[metric:service_chain_count] [depth:overall_spatial_structure]
 
@@ -77,6 +81,8 @@ An annual operating concept follows four seasons: issue public problem orders in
 ## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
 
 The overall structure has one public-service spine, three Works, six cross-connections, and two resource loops. The spine uses the heritage park and adjacent public space as its preferred carrier for walking, rest, guidance, and visible improvement records. Cross-connections examine where an apparently nearby destination remains difficult to enter. Each checks crossings, ramps, thresholds, lighting, shade, seating, and access to human help. Provisional polygon edges remain secondary in every drawing.[data:geometry/roads.geojson#ROAD-001] [data:geometry/public_space.geojson#PUBLIC-001]
+
+The Complete Task Receipt is the proposal's distinctive unit of acceptance. The plan draws one task as continuous space from arrival and clarification through verification and rereading to departure with a result. Prototype Works checks tools and safety. Learning Works makes information understandable and provides human sign-off. Everyday Works tests whether the service can survive an ordinary day. The same receipt records the owner, paper route, source date, reason for stopping, and repair result. A missing segment blocks the whole service.[source:V13-COMPLETE-TASK-RECEIPT]
 
 Renewal proceeds from inventory to lightweight pilot to professional works. Existing buildings are first classified as shared-time opportunities, adaptive-reuse candidates, or unverified. Spaces with a public entrance and basic safety conditions may test movable counters, signs, shade, lighting, and temporary power. Structural, fire, heritage, utility, road, and permanent landscape work requires ownership and professional evidence.[standard:MOHURD-CONTROL-DETAILED-PLANNING] [depth:retain_renovate_demolish]
 
@@ -98,7 +104,7 @@ All three begin with reversible components. Adaptive ground-floor work follows o
 
 The component library divides the prototypes into six tools that can be installed, checked, and removed separately. C01 Ask First Desk provides paper maps, staffed guidance, and issue intake. C02 Human Takeover Pavilion provides a visible marker, accessible counter, physical stop, and offline contact sheet. C03 Public Change Log shows task ID, owner, due date, result, and retirement. C04 Accessible Test Lane supports controlled equipment tests. C05 Task Journey Marker connects paper maps, numbered nodes, and takeover directions. C06 Quiet Rest Point records seating, shade, quiet, and access to human help. The display system is called the Works Record. It publishes only evidence-backed pass, revision due, and retired states; it does not award unsupported innovation honors.[source:V11-COMPONENT-LIBRARY]
 
-![Three key areas and three public nodes](assets/figures/key-areas.en.png)
+![Spatial sections and movable prototypes for the three Works](assets/figures/key-areas.en.png)
 
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
@@ -206,9 +212,9 @@ Public-interest measures include coverage of no-app equivalents, visibility of h
 
 `compliance_matrix.json` maps every mandatory announcement item to sections, layers, drawings, metrics, sources, assumptions, and checks. `standard_matrix.json` records responses to professional standards. `design_depth_matrix.json` shows how regulatory-plan and implementation-plan depth is evidenced. The matrices support machine review; this narrative retains the human judgment.[standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [depth:existing_conditions_diagnosis]
 
-`reviewer_evidence_index.json` provides a second entry point organized around the seven scoring questions. Each question goes directly to the proposal answer, the relevant text or file, and the real-world evidence that is still missing. It helps a person find material. It does not score the entry or turn a summary into a new fact.[source:V12-REVIEWER-EVIDENCE-INDEX]
+`reviewer_evidence_index.json` remains a structured attachment instead of carrying the public narrative. The proposal and figures first show how a person completes a task. The index provides a path only when a reviewer needs to verify a source. It does not score the entry or turn a summary into a new fact.[source:V12-REVIEWER-EVIDENCE-INDEX]
 
-![Metrics, sources, and release evidence](assets/figures/metrics-evidence.en.png)
+![Design rehearsal U05-A, completing one task without a smartphone](assets/figures/metrics-evidence.en.png)
 
 ## Risk, Copyright, and Compliance
 
