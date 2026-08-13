@@ -356,3 +356,20 @@
 - **spatial.json 公开级标注**：18 项概念对象中 11 项 `public_level` 由 `provisional` 调整为 `public`（官方模板默认值；spatial.json 整体 disclaimer=concept-only、geometry.mode=concept 无坐标，概念对象与几何层 provisional 披露是两件事），消除 11 条「provisional spatial concept needs maintainer review」校验器 warning；现分布 public=17、cleared=1。
 - **proposal.md/en.md 风险段解耦表述**：原「3 项边界…经维护者复核后方可作为公共语境使用」改为「概念对象按 public_level=public/cleared 标注供方案卡片公开展示；对应几何仅在 geometry/*.geojson 以 provisional_constraint 呈现，3 项重点区边界不升级为官方边界、不构成实施承诺」——公开级标注与几何 provisional 披露分离表述，避免语义冲突。
 - 版本串 v9.5 → v9.6（gen_01/03/04/05 同步），触发 finalize 可读产物门控全 changed。
+
+## v10.0 - 2026-08-13
+
+### 改动摘要
+
+- **开篇公共验收契约（智脉四问）**：执行摘要后新增「核心判断与公共验收契约」小节 + 4 行契约表（市民能核验什么/空间界面/通过证据/不满足时），P1-P4 四拍协议前置为第一屏可判定契约（zh+en 同步，新增表 1 张）。
+- **场景卡服务合同**：场景卡章新增 12 行服务合同表（失败模式/人工复核/对应回滚触发器），12 张卡与五类回滚触发器逐一挂接（zh+en 同步，新增表 1 张）。
+- **实施矩阵补验收指标列**：JZ 项目表新增「验收指标（建议目标）」列，12 项各给出可量化目标（贯通率≥90%、过街≤60s、注册开发者≥5000 等），全部标注「建议目标」（zh+en 同步）。
+- **JZ-01 最小可复演单元深写**：协议挂接段后新增「最小可复演单元：JZ-01 绿廊贯通试点」表（试点目标/五步动作/责任主体/时间线 0-3/3-6/6-9/9-12 月/启动条件/风险与退出），证明 100 天征集周期内可启动的完整闭环（zh+en 同步，新增表 1 张）。
+- 版本串 v9.6 → v10.0（gen_01/03/04/05 同步），触发 finalize 可读产物门控全 changed。
+
+## v10.1 - 2026-08-13
+
+### 改动摘要
+
+- **开篇引用收敛**：契约段连续 evidence 标记由 5 个收敛为 3 个（`pulse_beat_count`/`rollback_trigger_class_count`/`objection_gate_count`），满足确定性校验「单段≤3 个连续标记」约束；被裁的两个计数在开篇其余段已有引用，信息不丢失。
+- 版本串 v10.0 → v10.1（gen_01/03/04/05 同步），全产物重生成，finalize 门控全 changed。
