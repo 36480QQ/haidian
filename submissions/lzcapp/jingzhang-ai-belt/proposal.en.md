@@ -4,7 +4,7 @@ author_github: "lzcapp"
 language: "en"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "A formal AI urban-design package built on a provisional boundary and structured self-checks; precision caveats and metric recalculation are preserved, but the organizer data gap does not block content scoring."
+summary: "A formal AI urban-design package built on a provisional boundary and structured self-checks; spatial metrics at organizer data gaps are marked unknown, pending recalculation once official polygons are released."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 proposal_format_version: "2"
@@ -82,7 +82,7 @@ The evidence chain is decomposed into the following traceable markers:
 
 
 
-This package is generated under the organizer's provisional boundary: `geometry/site_boundary.geojson` and `geometry/key_areas.geojson` are marked `provisional_constraint`, `official_boundary=false`, and may only be used for generation, self-check, visualization and design discussion — never as an official redline, approval basis, precise-area basis or statutory control conclusion. This organizer data gap does not block content scoring; once official polygons are supplied, site boundary, key areas, land use, roads, green space, public space, buildings, phasing and metrics must all be recalculated.
+This package is generated under the organizer's provisional boundary: `geometry/site_boundary.geojson` and `geometry/key_areas.geojson` are marked `provisional_constraint`, `official_boundary=false`, and may only be used for generation, self-check, visualization and design discussion — never as an official redline, approval basis, precise-area basis or statutory control conclusion. Spatial metrics at these organizer data gaps are marked unknown; once official polygons are supplied, site boundary, key areas, land use, roads, green space, public space, buildings, phasing and metrics must all be recalculated.
 
 ## Three-Level Scope Framework
 
@@ -307,7 +307,7 @@ See also `metrics.json`'s `boundary_offset_note`: the submitted geometry (PROV-S
 
 ## Risk, Copyright, and Compliance
 
-The main proposal may be Chinese or English, with a full counterpart via `proposal.en.md` or `proposal.zh.md`; a missing translation yields only a non-blocking warning. A3/A0, HTML and text-bearing drawings should provide corresponding-language copies, preferring the event's recommended terminology. All images, drawings, icons, data and code assets must state source, license and authorization status in `sources.json` or `report/copyright_statement.md`. HTML pages must not load remote scripts, remote map tiles, remote fonts, iframes, forms or external APIs, and must not track reviewers.
+The main proposal may be Chinese or English, with a full counterpart via `proposal.en.md` or `proposal.zh.md`; a missing translation yields only a non-blocking warning (a completeness note for the package). A3/A0, HTML and text-bearing drawings should provide corresponding-language copies, preferring the event's recommended terminology. All images, drawings, icons, data and code assets must state source, license and authorization status in `sources.json` or `report/copyright_statement.md`. HTML pages must not load remote scripts, remote map tiles, remote fonts, iframes, forms or external APIs, and must not track reviewers.
 
 Risk and missing-data items are governed by [depth:risk_missing_data] and cross-checked with [data:geometry/constraints.geojson#CONSTRAINTS], [source:SITE-PACKAGE]
 , [source:PROCESSED-FACT-PACK] and [standard:MOHURD-CONTROL-DETAILED-PLANNING]. The official-boundary, key-area, regulatory-plan, road, parcel, building, municipal, heritage and public-service gaps in `missing_data_checklist.csv` must enter `assumptions.json`, self-check and the risk section. Any conclusion lacking official regulatory plan, road redline, ownership, municipal, fire or heritage conditions is downgraded to to-be-confirmed.
