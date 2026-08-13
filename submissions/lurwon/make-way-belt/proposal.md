@@ -6,7 +6,7 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "以京张铁路'人字形折返'的百年智慧为文化根脉，提出'相让带（MAKE-WAY）'——一条让人与 AI 在街道上彼此让路的创新带：三大定位、五大功能沿'一带一轴两心多点'落为让行中轴、五大让行枢纽与人机共行三轨街道；三个重点区域分别以'加速出站、原点让行、换乘枢纽'定位；把《让行规则》作为可公开编写、可迭代的城市公共产品，回应'AI 治理全球话语权'。全部空间结论为基于 provisional 边界的概念建议。"
+summary: "以京张铁路'人字形折返'的百年智慧为文化根脉，提出'相让带（MAKE-WAY）'——以人轨/慢行轨/机轨三轨物理分道的人机共行街道为空间骨架、以三处具身智能实景测试场为产业锚点，让行（Make-Way）作为三轨的运行规则而非口号：三大定位、五大功能沿'一带一轴两心多点'落为三轨共行中轴与五大让行枢纽；三个重点区域分别以'加速出站、原点让行、换乘枢纽'定位；以分级自主、人工兜底的规则回应'AI 治理全球话语权'。全部空间结论为基于 provisional 边界的概念建议。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 iteration: "v0.1"
@@ -26,9 +26,9 @@ iteration: "v0.1"
 
 ## 三层范围工作框架
 
-**统筹研究范围（43.6 km²）**：研究世界级 AI 创新生态、三区两翼耦合网络、AI 产业与未来城市形态、AI+交通与连续绿色空间体系，成果表达为产业战略与网络关系，不逐地块落位 [source:SRC-OFFICIAL-ANNOUNCEMENT]。
+**统筹研究范围（43.6 km²）**：研究世界级 AI 创新生态、三区两翼耦合网络、AI 产业与未来城市形态、AI+交通与连续绿色空间体系，成果表达为产业战略与网络关系，不逐地块落位 [source:SRC-OFFICIAL-ANNOUNCEMENT] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]。
 
-**总体设计范围（11.4 km²）**：以控规"一带一轴、两心多点"为骨架 [source:SRC-KONGGUI-APPROVED]，叠加"让行中轴 + 五大让行枢纽 + 人机共行三轨街道"，达到控规深度城市设计；面积以提交边界实测 `site_area_sqm ≈ 1141.3 公顷` [metric:site_area_sqm]，官方边界到位后重算。
+**总体设计范围（11.4 km²）**：以控规"一带一轴、两心多点"为骨架 [source:SRC-KONGGUI-APPROVED]，叠加"三轨共行中轴 + 五大让行枢纽 + 人机共行三轨街道"，达到控规深度城市设计；面积以提交边界实测 `site_area_sqm ≈ 1141.3 公顷` [metric:site_area_sqm]，官方边界到位后重算 [standard:MOHURD-CONTROL-DETAILED-PLANNING]。
 
 **重点区域范围（368.4 公顷，provisional）**：对众智园AI自主创新加速区、北京AI原点社区、大钟寺AI产业集聚区做规划综合实施方案深度的详细设计 [data:geometry/key_areas.geojson#PROV-KEY-001]。三处重点区边界为临时约束，其中"加速出站、原点让行、换乘枢纽"的角色定位为概念方向，可供专业团队深化。
 
@@ -40,21 +40,21 @@ iteration: "v0.1"
 
 ### 命名与身份系统（Agent 任务一）
 
-主名称**「相让带」**（英文 **MAKE-WAY BELT**），取自京张铁路"人字形折返"的百年智慧——詹天佑在青龙桥让火车**掉头**以攀上 33‰ 陡坡，中国人向"坡"让路，完成了自己第一条干线铁路 [source:SRC-HIST-REN-SWITCHBACK]。AI 创新带的当代智慧是"让行"：人与机器在街道上彼此让路，从工程之"让"到伦理之"让"，是同一精神在 AI 时代的延续。
+主名称**「相让带」**（英文 **MAKE-WAY BELT**），取自京张铁路"人字形折返"的百年智慧——詹天佑在青龙桥让火车**掉头**以攀上 33‰ 陡坡，中国人向"坡"让路，完成了自己第一条干线铁路 [source:SRC-HIST-REN-SWITCHBACK]。AI 创新带的当代智慧是**三轨共行**：在人轨、慢行轨、机轨三条物理分道上，人与机器各有其位、彼此让行——从工程之"让"（让火车登高）到空间之"让"（让路权分层），是同一精神在 AI 时代的延续。**让行是三轨的运行规则，不是一句口号** [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]。
 
-命名选择经过了既有提交的概念空间检验：606 个 peer proposals 中"人字"族（185）、"双轨"族（145）、"折返"族（96）高度饱和，而"相让/让行"几乎空白，因此以"让行"论点而非"人字"隐喻作为主名，既差异化又保留文化根脉 [source:SRC-PEER-PROPOSALS]。
+命名选择经过了既有提交的概念空间检验：606 个 peer proposals 中"人字"族（185）、"双轨"族（145）、"折返"族（96）高度饱和，且"转人工/可撤回"等治理母题已成共识（153/239 命中）；而"三轨"（8）与"人机共行"（7）几乎空白——因此以**三轨物理分道**的空间设计为主卖点，让行降为三轨的运行规则，既差异化又保留文化根脉 [source:SRC-PEER-PROPOSALS]。
 
-**Logo 方向**：两条轨迹（一条人、一条机器）相向而行、彼此让路，**让出一个"人"字**——"人"是让出来的，不是拼出来的。中文符号取"让"的揖让形态，英文符号取道路让行手势；统一母题用于枢纽标识、街道地刻、机器人车身与活动视觉 [source:SRC-AGENT-TASKBOOK]。
+**Logo 方向**：三条平行轨迹（人轨、慢行轨、机轨）由一根横向的"让行横杠"相连——三条线各安其位，横杠代表让行规则把三者编织成一张网。中文符号取"让"的揖让形态，英文符号取道路让行手势；统一母题用于枢纽标识、三轨地面划线、机器人车身与活动视觉 [source:SRC-AGENT-TASKBOOK]。
 
 ### 三定位、五功能与三区两翼
 
 **三大定位**：百年京张文化带、都市AI生活体验带、AI融合创新带——分别由"让行文化、人机共行街道、让行规则治理"承载 [source:SRC-AGENT-TASKBOOK]。
 
-**五大功能**沿空间落实：AI全栈自主创新体系→众智园；世界级AI创新生态→原点社区；AI+场景赋能新范式→大钟寺与小月河场景赋能翼；智能化AI活力城市→人机共行街道体系；AI治理全球话语权→《让行规则》公共产品 [source:SRC-AGENT-TASKBOOK]。
+**五大功能**沿空间落实：AI全栈自主创新体系→众智园；世界级AI创新生态→原点社区；AI+场景赋能新范式→大钟寺与小月河场景赋能翼；智能化AI活力城市→三轨共行街道体系；AI治理全球话语权→分级自主、人工兜底的《让行规则》[source:SRC-AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]。
 
 **三区两翼协同回路**：三区（原点/众智园/大钟寺）形成"规则—加速—应用"的创新回路，两翼（中关村科技服务翼、小月河场景赋能翼）提供资本与场景支撑。本方案以"让行"为轴心，使三区两翼围绕同一条人机共行主线组织，避免三区各自为政 [source:SRC-AGENT-TASKBOOK]。
 
-### 全球 AI 创新生态案例（5–8 个）
+### 全球 AI 创新生态与治理机制案例（10 个）
 
 1. **大钟寺1733**：闲置 43 万 m² 商业体更新为字节办公+文商旅，"文脉为根基、数字为支撑、烟火为内核"，"古寺+AI商业"场景 [source:SRC-DAZHONGSI-1733]。
 2. **北京卫星制造厂科技园**：东方红一号诞生地经"修旧如旧"更新为智能制造示范区，引入具身智能研究院，"工业骨架—新功能外皮"样本 [source:SRC-SATFACTORY-PARK]。
@@ -62,27 +62,29 @@ iteration: "v0.1"
 4. **五道口AI产业园**：11 栋楼宇、14 万 m²、118 家 AI 企业、营收超 50 亿元，海淀 AI 创新街区先导区 [source:SRC-WUDAOKOU-AIPARK]。
 5. **众智园**：AI 全栈五层体系，预计 2026 年 7 月具备开园条件，FlagOS 多芯片算子库支撑自主生态 [source:SRC-ZHONGZHIYUAN]。
 6. **具身智能街区趋势**：成都交子大道机器人街区、上海杨浦大学路科创街区、深圳"机警战队"——"场景落地元年"的人机共处实践，是本方案人机共行街道的正面对照 [source:SRC-EMBODIED-AI-STREET]。
-7. **智能体城市（agentic city）**：学术前沿指出城市正从智慧城市走向自主 agent 组织服务，同时警示监控与治理风险 [source:SRC-AGENTIC-CITY]。
-8. **遗址公园 AI 户外秀场**：一期已成 AI 设备实景测试场，2025 年 60 余场活动、超 430 万人次 [source:SRC-PARK-PHASE2]。
+7. **新加坡榜鹅数码园区实体AI试验平台**（2026-05）：全球首个在混合用途公共区域大规模测试多厂商机器人的平台（配送/巡逻/清洁，8 家企业），在"活跃通勤法令"豁免下于公共走廊测试——正是本方案"具身智能实景测试场"的全球正例 [source:SRC-CASE-PUNGGOL]。
+8. **新加坡分级自主框架**：监督强度与智能体行为潜在影响成正比，关键节点人工审批、故障时下线，"组织与人类最终负责"——为本方案"让行规则"的分级自主、人工兜底提供治理背书 [source:SRC-CASE-SG-AUTONOMY]。
+9. **欧盟 AI Act 的 agentic 治理缺口**：责任归属、监督悖论、跨辖区运行未充分应对，机器人安全元件合规延至 2028——是"AI 治理全球话语权"功能的国际背景 [source:SRC-CASE-EU-AIACT]。
+10. **Monash 六城机器人治理研究**（2025）：即使领先机器人城市也缺乏保护公共利益的政策，呼吁预期性、公民参与的政策制定——支撑本方案反监控、反排挤红线 [source:SRC-CASE-MONASH-ROBOT]。
 
-这些案例提炼出可空间化、可运营、可场景化的经验：把"闲置存量"转为"创新载体"、把"实景测试"作为公共体验、把"规则先行"作为治理机制。
+这些案例提炼出可空间化、可运营、可场景化的经验：把"实景测试"作为公共体验（榜鹅/遗址公园）、把"分级自主"作为治理机制（新加坡框架）、把"物理分道"作为安全前提（三轨设计），呼应城市机器人治理的"物理 API"提议 [source:SRC-CASE-PHYSICAL-API]。
 
 ## 总体设计范围城市更新与控规深度城市设计
 
-### 空间结构：一带一轴两心多点 × 让行叠加
+### 空间结构：一带一轴两心多点 × 三轨共行叠加
 
 在控规骨架之上 [source:SRC-KONGGUI-APPROVED]：
 
-- **一带** = 京张遗址公园 = **让行中轴**：在既有的"三道一绿"慢行系统上，叠加**机器人微出行道**，形成"人轨步道 / 慢行绿道 / 机轨微出行"三轨并行的共行体系 [source:SRC-PARK-PHASE2] [data:geometry/roads.geojson#RD-SP001]。
+- **一带** = 京张遗址公园 = **三轨共行中轴**：在既有的"三道一绿"慢行系统上，叠加**机器人微出行道**，形成"人轨步道 / 慢行绿道 / 机轨微出行"三条**物理分道**并行的共行体系——这是本方案最核心的空间动作，让行规则在此落地而非停留在口号 [source:SRC-PARK-PHASE2] [data:geometry/roads.geojson#RD-SP001] [standard:MOHURD-URBAN-DESIGN-MEASURES]。
 - **一轴** = 中关村大街创新发展轴：保持官方定位，作为东西让行连接的主干。
 - **两心** = 大钟寺中心、五道口中心：演化为**让行换乘枢纽**与**让行记忆枢纽**。
 - **多点** = 知春路、四道口等：演化为**让行实验枢纽**与社区节点。
 
-**五大让行枢纽**（西直门门户 / 大钟寺换乘 / 知春路实验 / 五道口记忆 / 北五环门户）既是交通换乘点，也是"让行规则"的物理课堂与展示场 [data:geometry/public_space.geojson#HB-001]。
+**五大让行枢纽**（西直门门户 / 大钟寺换乘 / 知春路实验 / 五道口记忆 / 北五环门户）既是交通换乘点，也是让行规则的物理课堂与展示场 [data:geometry/public_space.geojson#HB-001]。
 
 ### 更新框架与拆改留逻辑
 
-采用**针灸式织补**而非大拆大建：以 9 公里已贯通绿廊为"任脉"基线 [source:SRC-PARK-PHASE2]，沿鱼骨状慢行通道与节点做精细化织补，保留工业遗产原貌（卫星厂"修旧如旧"为范本 [source:SRC-SATFACTORY-PARK]）。拆改留按"拆解—重组—新生"沿轨道推进，但**具体地块级拆改留必须等待官方权属与现状建筑数据**，本方案仅给概念分区 [source:SRC-PROVISIONAL-BOUNDARIES] [depth:renewal_logic]。
+采用**针灸式织补**而非大拆大建：以 9 公里已贯通绿廊为"任脉"基线 [source:SRC-PARK-PHASE2]，沿鱼骨状慢行通道与节点做精细化织补，保留工业遗产原貌（卫星厂"修旧如旧"为范本 [source:SRC-SATFACTORY-PARK]）。拆改留按"拆解—重组—新生"沿轨道推进，但**具体地块级拆改留必须等待官方权属与现状建筑数据**，本方案仅给概念分区 [source:SRC-PROVISIONAL-BOUNDARIES] [depth:renewal_logic] [standard:MOHURD-ARCH-DESIGN-DEPTH-2016]。
 
 ### 待确认控规条件
 
@@ -112,7 +114,7 @@ iteration: "v0.1"
 
 1. **通勤程序员**：中关村/众智园工作，早高峰通勤，"20 分钟通勤休闲圈"与机器人配送共行。
 2. **高校师生**：清华、北语、北航等 50+ 院所师生，跨校科创与青年社区（706 青年空间精神）。
-3. **社区老人**：45 万居民中的高知老龄化群体，智能养老、无障碍与代际融合刚需。
+3. **社区老人**：45 万居民中的高知老龄化群体，智能养老、无障碍与代际融合刚需 [standard:ELDERLY-SMART-TECH-PLAN-2020-45]。
 4. **机器人服务商**：具身智能/配送/巡检企业，需要实景测试场地与共行规则。
 5. **沿街商户**：1733、卫星厂、五道口商圈的商户，数字经营与客流运营。
 6. **游客与开发者**：来京张/八大学院/AI 地标的访客与全球开发者。
@@ -135,11 +137,11 @@ iteration: "v0.1"
 | 12 | **AI 体育训练测试**（测试验证） | 运动科技企业 | 众智园段 | 运动数据 | 专业教练 |
 | 13 | **车路协同测试**（测试验证） | 自动驾驶企业 | 大钟寺段 | 轨迹数据 | 交管+第三方 |
 
-每张场景卡在 `scenarios/*.json` 有结构化记录；此处呈现可读摘要，全部场景受《让行规则》与数据治理约束 [source:SRC-AGENT-TASKBOOK] [source:SRC-GENERATIVE-AI-MEASURES]。
+每张场景卡在 `scenarios/*.json` 有结构化记录；此处呈现可读摘要，全部场景受《让行规则》与数据治理约束 [source:SRC-AGENT-TASKBOOK] [source:SRC-GENERATIVE-AI-MEASURES] [standard:GENERATIVE-AI-INTERIM-MEASURES]。
 
 ## 用地、建筑规模与拆改留方案
 
-用地分区从提交边界拓扑安全地分割，覆盖全边界、无重叠 [data:geometry/land_use.geojson]：居住用地（0701，约 373 万 m²）、科研用地（0802，约 229 万 m²）、商业服务（05，约 200 万 m²）、教育（0804，约 89 万 m²）、文化（0803，约 55 万 m²）、公园绿地（1401，约 195 万 m²）[metric:land_use_1401_area_sqm]。绿地率约 13.2%、公共空间率约 0.9%（另有已贯通绿廊计入绿地）[metric:green_ratio] [metric:public_space_ratio]。
+用地分区从提交边界拓扑安全地分割，覆盖全边界、无重叠 [data:geometry/land_use.geojson]：居住用地（0701，约 373 万 m²）、科研用地（0802，约 229 万 m²）、商业服务（05，约 200 万 m²）、教育（0804，约 89 万 m²）、文化（0803，约 55 万 m²）、公园绿地（1401，约 195 万 m²）[metric:land_use_1401_area_sqm]。绿地率约 13.2%、公共空间率约 0.9%（另有已贯通绿廊计入绿地）[metric:green_ratio] [metric:public_space_ratio]。用地分类遵循国土空间用地用海分类指南 [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]。
 
 建筑规模为概念估算：概念建筑底图约 142 万 m²（`building_footprint_area_sqm`），按平均 4 层估算总规模约 568 万 m²、容积率约 0.50——均为低置信度设计量，**不等于法定控制值**，待官方控规与现状建筑数据补齐后复算 [metric:building_footprint_area_sqm] [metric:floor_area_ratio]。
 
@@ -147,7 +149,7 @@ iteration: "v0.1"
 
 ## 交通、轨道、市政与公共服务设施
 
-**人机共行街道体系**是本方案交通核心：沿让行中轴设"人轨/慢行轨/机轨"三轨 [data:geometry/roads.geojson#RD-SP001] [metric:make_way_street_m]，配套**《让行规则》**：分时（机器人配送时段）、分道（机轨独立）、优先权（行人绝对优先）、故障接管（机器人靠边停）；三轨总长约 28.8 km [metric:make_way_street_m]。
+**三轨共行街道体系**是本方案交通核心：沿中轴设"人轨/慢行轨/机轨"三条物理分道 [data:geometry/roads.geojson#RD-SP001] [metric:make_way_street_m]，配套**《让行规则》**：分时（机器人配送时段）、分道（机轨独立）、优先权（行人绝对优先）、故障接管（机器人靠边停）；三轨总长约 28.8 km [metric:make_way_street_m]。分道设计以无障碍与行人绝对优先为前提 [standard:BARRIER-FREE-ENVIRONMENT-LAW]。
 
 **轨道站点一体化**：依托 10/12/13/15 号线与西直门、大钟寺、知春路、五道口等换乘点，设让行枢纽广场与自行车/机器人停放 [source:SRC-PARK-PHASE2]。**市政与新型基础设施**：结合分布式能源、端侧算力与既有市政体系提出体系建议，不给出工程线位结论 [depth:risk_missing_data]。**公共服务**：围绕"一刻钟社区服务圈"配生活服务与创新服务平台，设施容量待官方底数 [source:SRC-KONGGUI-APPROVED]。
 
@@ -195,6 +197,28 @@ iteration: "v0.1"
 - **反失败红线**：反冷科技（Songdo）、反监控（Sidewalk 数据恐慌）[source:SRC-FAIL-SIDEWALK]、反排挤（22@ 绅士化）[source:SRC-FAIL-22AT]、反从零造城（NEOM 规模失控）[source:SRC-FAIL-NEOM]、反政绩摆设（贵州县智慧城市闲置）[source:SRC-FAIL-GUIZHOU]——这些失败例证被转化为设计红线，确保方案以用为本、渐进可逆、包容可负担。
 - **版权与 AI 生成责任**：生成媒体与方法见 `report/copyright_statement.md`；AI 生成内容已披露，不冒充现场、居民意见或官方边界。
 - **待补资料**：官方多边形、控规条件、权属、现状建筑、市政条件——按 `assumptions.json` 的 gap 清单待补，到位后复算。
+
+### 利益相关方与包容机制（public interest inclusion）
+
+| 利益相关方 | 关注 | 方案回应 |
+|---|---|---|
+| 沿线居民（45 万） | 被更新排挤、噪声与安全 | 保留+织补为主；可负担住房与本地就业条款；三轨行人绝对优先 |
+| 沿街商户 | 客流与数字经营 | 无人零售/智能导购反哺客流；数字工具降低经营门槛 |
+| 社区老人 | 智能技术门槛 | 智能养老驿站 + 非 App 入口 + 人工席位 [standard:ELDERLY-SMART-TECH-PLAN-2020-45] |
+| 机器人服务商 | 实景测试场地与规则 | 三处测试场 + 分级自主的让行规则 [source:SRC-CASE-SG-AUTONOMY] |
+| 开发者/研究者 | 可测试、可复现 | 具身智能上街测试场 + 公开测试日志 |
+| 政府与专业机构 | 合规与法定程序 | 概念建议属性，不替代法定规划 [source:SRC-AGENT-TASKBOOK] |
+| 残障人士 | 无障碍 | 三轨分道 + 无障碍优先 [standard:BARRIER-FREE-ENVIRONMENT-LAW] |
+
+### 未缓解风险登记（risk compliance）
+
+| 风险 | 现状 | 未缓解原因 | 缓解路径（待补） |
+|---|---|---|---|
+| 人机冲突责任归属 | 未定 | 缺乏官方交通规则与判例 | 待官方人机共行法规；参照欧盟 agentic 治理缺口与新加坡"组织与人类最终负责"原则 [source:SRC-CASE-EU-AIACT] |
+| 数据治理与隐私 | 概念层 | 缺官方数据共享细则 | 以生成式 AI 办法为底线，待官方数据治理细则 [standard:GENERATIVE-AI-INTERIM-MEASURES] |
+| 具身智能安全 | 未实测 | 缺官方测试标准 | 分级自主 + 测试场先导 + 故障接管 [source:SRC-CASE-SG-AUTONOMY] |
+| 排挤与绅士化 | 概念承诺 | 缺权属与利益分配机制 | 可负担住房条款，待官方更新政策与社区利益协议 [source:SRC-FAIL-22AT] |
+| 官方边界/控规缺失 | 待补 | 组织方数据缺口 | 官方多边形到位后全量复算 [source:SRC-PROVISIONAL-BOUNDARIES] |
 
 ## 参考资料
 
