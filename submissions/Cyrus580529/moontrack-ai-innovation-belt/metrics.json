@@ -1,0 +1,315 @@
+{
+  "schema_version": "0.1.0",
+  "units": {
+    "length": "m",
+    "area": "sqm"
+  },
+  "metrics": {
+    "site_area_sqm": {
+      "status": "known",
+      "value": 11412825.386,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "polygon_area(submitted_site_boundary)",
+      "confidence": "medium",
+      "assumptions": [
+        "A-CONTROLS-001: boundary is the organizer's provisional polygon, not an official redline; recalculate when official geometry is supplied."
+      ]
+    },
+    "building_footprint_area_sqm": {
+      "status": "known",
+      "value": 310807.184,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/buildings.geojson"
+      ],
+      "formula": "sum(polygon_area(building_footprints))",
+      "confidence": "medium",
+      "assumptions": []
+    },
+    "green_ratio": {
+      "status": "known",
+      "value": 0.123423,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/green_space.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "green_space_area_sqm / site_area_sqm",
+      "confidence": "low",
+      "assumptions": [
+        "A-GEO-007: green-space polygons are OSM-derived and may be incomplete; this ratio is indicative and does not support a statutory green-ratio conclusion."
+      ]
+    },
+    "public_space_ratio": {
+      "status": "known",
+      "value": 0.073281,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/public_space.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "public_space_area_sqm / site_area_sqm",
+      "confidence": "low",
+      "assumptions": [
+        "A-GEO-007: derived from OSM point and polygon data; indicative only."
+      ]
+    },
+    "floor_area_ratio": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": [
+        "brief/site-package/ranges/planning_limits.json"
+      ],
+      "formula": "total_floor_area_sqm / official_site_area_sqm",
+      "confidence": "unknown",
+      "assumptions": [],
+      "reason": "Approved FAR controls and the official site boundary are not present in the public site package."
+    },
+    "key_area_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "geometry/key_areas.geojson"
+      ],
+      "formula": "count(key_detailed_design_areas)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "xiaoyuehe_total_length_m": {
+      "status": "known",
+      "value": 10051.4,
+      "unit": "m",
+      "source_files": [
+        "geometry/green_space.geojson"
+      ],
+      "formula": "sum(line_length(features[layer=EXISTING_WATER])) projected to EPSG:4548",
+      "confidence": "medium",
+      "assumptions": [
+        "A-GEO-001: segment xiaoyuehe-seg-07 falls outside the coordinated research scope and is included in this total as background course length.",
+        "A-GEO-007: OSM-derived centreline; culverted sections are inferred from tagging, not survey."
+      ]
+    },
+    "xiaoyuehe_segments_in_design_scope": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": [
+        "geometry/green_space.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "count(EXISTING_WATER segments whose vertices test inside the overall design scope polygon)",
+      "confidence": "medium",
+      "assumptions": [
+        "Point-in-polygon test against the organizer's provisional boundary; 5 of 8 segments qualify."
+      ]
+    },
+    "cycleway_segments_total": {
+      "status": "known",
+      "value": 421,
+      "unit": "count",
+      "source_files": [
+        "geometry/roads.geojson"
+      ],
+      "formula": "count(features[layer=ROAD_CENTERLINE])",
+      "confidence": "medium",
+      "assumptions": [
+        "A-GEO-004: 28 reverse-tagged cycleway*=no entries were removed before counting."
+      ]
+    },
+    "cycleway_total_length_m": {
+      "status": "known",
+      "value": 142150.0,
+      "unit": "m",
+      "source_files": [
+        "geometry/roads.geojson"
+      ],
+      "formula": "sum(line_length(features[layer=ROAD_CENTERLINE])) projected to EPSG:4548",
+      "confidence": "medium",
+      "assumptions": [
+        "A-GEO-004: crowd-sourced linework; not verified segment by segment on the ground."
+      ]
+    },
+    "cycleway_near_river_300m_segments": {
+      "status": "known",
+      "value": 42,
+      "unit": "count",
+      "source_files": [
+        "geometry/roads.geojson",
+        "geometry/green_space.geojson"
+      ],
+      "formula": "count(ROAD_CENTERLINE segments whose distance to the EXISTING_WATER union is <= 300 m in EPSG:4548)",
+      "confidence": "medium",
+      "assumptions": [
+        "A-GEO-004: supersedes the earlier draft count of 26, which predated full linework."
+      ]
+    },
+    "cycleway_near_river_300m_length_m": {
+      "status": "known",
+      "value": 23040.0,
+      "unit": "m",
+      "source_files": [
+        "geometry/roads.geojson",
+        "geometry/green_space.geojson"
+      ],
+      "formula": "sum(line_length) over the 42 segments within 300 m of the watercourse",
+      "confidence": "medium",
+      "assumptions": []
+    },
+    "cycleway_network_connected_components": {
+      "status": "known",
+      "value": 62,
+      "unit": "count",
+      "source_files": [
+        "geometry/roads.geojson"
+      ],
+      "formula": "count(connected_components(graph)) where the graph is built by planarizing all ROAD_CENTERLINE segments at intersections and snapping endpoints within 8 m, in EPSG:4548",
+      "confidence": "medium",
+      "assumptions": [
+        "A-NET-001: the count is dependent on the 8 m snapping tolerance, which is a method choice.",
+        "A-NET-002: gaps of under ~15 m may be OSM mapping artefacts rather than physical breaks."
+      ]
+    },
+    "cycleway_largest_component_length_m": {
+      "status": "known",
+      "value": 27560.0,
+      "unit": "m",
+      "source_files": [
+        "geometry/roads.geojson"
+      ],
+      "formula": "sum(edge_length) over the largest connected component",
+      "confidence": "medium",
+      "assumptions": [
+        "A-NET-001: tolerance-dependent."
+      ]
+    },
+    "cycleway_largest_component_share": {
+      "status": "known",
+      "value": 0.149,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/roads.geojson"
+      ],
+      "formula": "largest_component_nodes / total_graph_nodes = 85 / 571",
+      "confidence": "medium",
+      "assumptions": [
+        "A-NET-001: tolerance-dependent."
+      ]
+    },
+    "gap_closure_length_m": {
+      "status": "known",
+      "value": 56.0,
+      "unit": "m",
+      "source_files": [
+        "geometry/roads.geojson"
+      ],
+      "formula": "sum of the three shortest inter-component gaps: 9 m + 12 m + 35 m",
+      "confidence": "low",
+      "assumptions": [
+        "A-NET-002: whether these three gaps are real physical breaks or mapping artefacts is unverified; project JZ-07 is scoped as field verification first.",
+        "A-NET-003: topological only; says nothing about kerb gradient, clear width, or physical passability."
+      ]
+    },
+    "gap_closure_unlocked_network_m": {
+      "status": "known",
+      "value": 30210.0,
+      "unit": "m",
+      "source_files": [
+        "geometry/roads.geojson"
+      ],
+      "formula": "sum(component_length) over components joinable to the largest component through a gap of <= 200 m (21.58 km + 3.54 km + 5.10 km)",
+      "confidence": "low",
+      "assumptions": [
+        "A-NET-002: a hypothesis to be tested on site, not a design conclusion."
+      ]
+    },
+    "elderly_facilities_total": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": [
+        "geometry/public_space.geojson"
+      ],
+      "formula": "count(features[layer=SCENARIO_NODE])",
+      "confidence": "medium",
+      "assumptions": [
+        "A-GEO-007: OSM POIs; the list is not an exhaustive register of elderly-care provision in the area."
+      ]
+    },
+    "elderly_facilities_network_reachable": {
+      "status": "known",
+      "value": 0,
+      "unit": "count",
+      "source_files": [
+        "geometry/public_space.geojson",
+        "geometry/roads.geojson"
+      ],
+      "formula": "count(SCENARIO_NODE facilities in the same connected component as the candidate depot and within 100 m of a graph node)",
+      "confidence": "medium",
+      "assumptions": [
+        "A-NET-004: measured from a single candidate depot, the node in the largest component closest to the watercourse (22 m from the river); the result is depot-dependent.",
+        "A-NET-003: topological reachability only."
+      ]
+    },
+    "elderly_facilities_within_100m_of_legal_lane": {
+      "status": "known",
+      "value": 1,
+      "unit": "count",
+      "source_files": [
+        "geometry/public_space.geojson",
+        "geometry/roads.geojson"
+      ],
+      "formula": "count(SCENARIO_NODE facilities whose straight-line distance to any ROAD_CENTERLINE is <= 100 m)",
+      "confidence": "medium",
+      "assumptions": [
+        "Straight-line measure. It is reported alongside elderly_facilities_network_reachable precisely to show the gap between as-the-crow-flies proximity and network reachability."
+      ]
+    },
+    "universities_in_research_scope": {
+      "status": "known",
+      "value": 50,
+      "unit": "count",
+      "source_files": [
+        "geometry/public_space.geojson"
+      ],
+      "formula": "count(features[layer=PUBLIC_SPACE, source_type=osm])",
+      "confidence": "medium",
+      "assumptions": [
+        "A-GEO-005: filtered to institutions inside the coordinated research scope, which is broader than 'adjacent to the site'; 8 faculty- and room-level sub-facilities were removed so every entry is an institution in its own right.",
+        "One entry (university-existing-18988158) carries no Chinese name in the source data and is included in this count."
+      ]
+    },
+    "universities_within_100m_of_legal_lane": {
+      "status": "known",
+      "value": 14,
+      "unit": "count",
+      "source_files": [
+        "geometry/public_space.geojson",
+        "geometry/roads.geojson"
+      ],
+      "formula": "count(PUBLIC_SPACE institutions whose straight-line distance to any ROAD_CENTERLINE is <= 100 m)",
+      "confidence": "medium",
+      "assumptions": [
+        "A-GEO-005: straight-line measure over all 50 institutions."
+      ]
+    },
+    "robot_service_network_10min_m": {
+      "status": "known",
+      "value": 5430.0,
+      "unit": "m",
+      "source_files": [
+        "geometry/roads.geojson"
+      ],
+      "formula": "sum(edge_length) reachable within 2,500 m of the candidate depot along the graph, i.e. 10 minutes at the 15 km/h regulatory ceiling",
+      "confidence": "low",
+      "assumptions": [
+        "A-NET-004: depot-dependent.",
+        "The binding constraint is network fragmentation, not the speed limit; a connected network would raise this figure substantially at the same 15 km/h."
+      ]
+    }
+  }
+}

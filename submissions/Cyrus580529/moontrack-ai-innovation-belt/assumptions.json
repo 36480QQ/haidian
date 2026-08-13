@@ -1,0 +1,77 @@
+{
+  "schema_version": "0.1.0",
+  "assumptions": [
+    {
+      "id": "A-CONTROLS-001",
+      "status": "pending_professional_confirmation",
+      "statement": "Detailed regulatory controls, road redlines, ownership, municipal utilities, and engineering constraints must be confirmed from official attachments before statutory use.",
+      "impact": "The package can be reviewed as a formal AI submission only for provided official boundaries and submitted design layers; statutory controls still need professional confirmation."
+    },
+    {
+      "id": "A-GEO-001",
+      "status": "measured_and_disclosed",
+      "statement": "Xiaoyuehe river segment xiaoyuehe-seg-07 (11 vertices) was point-in-polygon tested against the official provisional boundaries and falls outside PROV-RESEARCH-001, the coordinated research scope.",
+      "impact": "Narrative and drawings cite only the in-scope segments. Where the full river course is shown, the northern extension is labelled as background reference outside the research scope."
+    },
+    {
+      "id": "A-GEO-002",
+      "status": "measured_and_disclosed",
+      "statement": "The two industry anchors (Dongpan Innovation Center and the Zhongguancun Haidian Embodied AI Industrial Park) fall inside PROV-RESEARCH-001 only. They are not inside PROV-SITE-001 (overall design scope) or any of the three key detailed-design areas.",
+      "impact": "The narrative describes them as adjacent industrial-ecosystem partners within the coordinated research scope. It must not imply they sit inside the design scope or the key areas."
+    },
+    {
+      "id": "A-GEO-003",
+      "status": "low_confidence_disclosed",
+      "statement": "anchor-embodied-ai-industrial-park shares a single coordinate with the Dongpan Innovation Center because the location was derived from a street address rather than an independent survey point; confidence is recorded as low.",
+      "impact": "Any statement requiring the park's actual site boundary needs separate verification. No metric in metrics.json depends on this coordinate."
+    },
+    {
+      "id": "A-GEO-004",
+      "status": "measured_and_disclosed",
+      "statement": "Cycleway geometry was re-queried with Overpass `out geom` to obtain full linework. geometry/roads.geojson carries 421 cycleway segments (28 reverse-tagged `cycleway*=no` entries removed). Measured against the river geometry in EPSG:4548, 42 segments totalling 23.04 km lie within roughly 300 m of the Xiaoyuehe watercourse. This supersedes the earlier draft count of 26, which was computed before full linework was available.",
+      "impact": "Confidence raised from low to medium. The layer supports scenario-level route reasoning only. It is crowd-sourced data with no segment-by-segment field verification of continuity or lane type, and must not be used for engineering-grade right-of-way design."
+    },
+    {
+      "id": "A-GEO-005",
+      "status": "measured_and_disclosed",
+      "statement": "geometry/public_space.geojson retains university and research-institution POIs falling inside the coordinated research scope. Eight faculty-, classroom- or building-level sub-facilities were removed so every remaining entry is an institution in its own right. The filter is 'inside the research scope', which is broader than 'adjacent to the Xiaoyuehe scenario'.",
+      "impact": "The narrative must not cite the full institution list as 'adjacent'. Where adjacency matters, the measured distance-to-cycleway figure is cited instead: 14 institutions lie within 100 m of a legal lane."
+    },
+    {
+      "id": "A-GEO-006",
+      "status": "pending_professional_confirmation",
+      "statement": "The main Renmin University campus (OSM id 30725330) is confirmed outside the coordinated research scope. However, the Renmin University School of Continuing Education, at a different coordinate (116.3577, 40.0006), does fall inside the scope and is closer to the site.",
+      "impact": "Earlier project records did not distinguish the main campus from its branch. Whether the School of Continuing Education is a year-round independent campus or an affiliated office needs confirmation before it is cited as a talent-catchment anchor."
+    },
+    {
+      "id": "A-GEO-007",
+      "status": "medium_confidence_disclosed",
+      "statement": "All OSM-derived layers, including the 127 park and green-space entries, are crowd-sourced and may be incomplete, duplicated, or out of date; confidence is uniformly recorded as medium.",
+      "impact": "Consistent with docs/data-workflow.md section 6, OSM data is used only as existing_condition or provisional_constraint. It never serves as an official boundary and does not support precise green-ratio or coverage metrics."
+    },
+    {
+      "id": "A-NET-001",
+      "status": "method_choice_disclosed",
+      "statement": "The cycleway network graph in analysis_network.py is built by planarizing all segments at intersections, then snapping endpoints into shared nodes with an 8 m tolerance, in EPSG:4548. The 8 m tolerance is a method choice, not a measured property of the network.",
+      "impact": "A larger tolerance would merge genuinely disconnected links into false connections; a smaller one would split genuinely continuous links into false breaks. The reported figure of 62 connected components is therefore tolerance-dependent and must be reproduced with the stated parameter before being quoted."
+    },
+    {
+      "id": "A-NET-002",
+      "status": "pending_field_verification",
+      "statement": "The three shortest gaps between the largest component and its neighbours measure 9 m, 12 m, and 35 m. Gaps this small are as likely to be OSM mapping artefacts, where the lane is continuous on the ground but drawn as separate ways, as they are to be real physical breaks. The converse error is also possible: links continuous on the map may be severed on the ground by railings, kerbs, or grade changes.",
+      "impact": "Project JZ-07 is scoped as a field-verification task first and a construction task only on confirmation. The claim that 56 m of connection unlocks 30.21 km of additional network is a hypothesis to be tested on site, not a design conclusion. If the breaks prove to be artefacts, the item is struck from the project list."
+    },
+    {
+      "id": "A-NET-003",
+      "status": "out_of_scope_disclosed",
+      "statement": "The network analysis tests topological connectivity only. It carries no information on kerb ramp gradient, paving condition, clear width, turning radius, or any other physical property governing whether a low-speed robot can actually traverse a link.",
+      "impact": "Reachability results state whether a path exists in the graph, not whether it is passable. All robot-service scenarios remain conditional on traffic and municipal professionals confirming physical passability."
+    },
+    {
+      "id": "A-NET-004",
+      "status": "measured_and_disclosed",
+      "statement": "Robot reachability to elderly-care facilities was computed from a single candidate depot: the node inside the largest connected component lying closest to the watercourse, 22 m from the river. Measured from that depot, network-reachable facilities number 0 of 5.",
+      "impact": "The result is depot-dependent. A different depot inside another component would produce a different reachable set, though no component contains more than one facility with under 100 m of terminal access. The 0-of-5 finding is used to establish that the flagship scenario has an unmet precondition, not to rank candidate depot sites."
+    }
+  ]
+}
