@@ -1016,7 +1016,8 @@
         "三层范围工作框架",
         "统筹研究范围产业与未来城市研究",
         "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计"
+        "重点区域详细设计",
+        "AI 创新生态、人才画像与 AI+ 场景"
       ],
       "geojson_layers": [
         "geometry/site_boundary.geojson",
@@ -1031,7 +1032,8 @@
         "site_area_sqm",
         "green_ratio",
         "public_space_ratio",
-        "key_area_count"
+        "key_area_count",
+        "star_ground_product_latency_min"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -1052,14 +1054,16 @@
         "KEY-AREA-SOURCE"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-SPACE-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
         "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
-      ]
+      ],
+      "note_zh": "第 13 张场景卡「星地协同应急态势感知」为示范验证卡，覆盖场景卡六要素；星地协同专题为概念建议（A-SPACE-001），provisional 全程标注。"
     },
     {
       "requirement_id": "agent.4",
