@@ -1461,12 +1461,12 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-73 entries. By finder:
+74 entries. By finder:
 
 | Found by | Count | What it says |
 |---|---|---|
 | Independent audit | 25 | The audit was run against the shipped package, not a draft |
-| The author | 37 | Found while working |
+| The author | 38 | Found while working |
 | This package's own gate | 7 | Caught at build time — which is what a gate is for |
 | **Reviewers outside this proposal** | **4** | [@anselasimov-web](https://github.com/anselasimov-web) on PR #1002; [@147228](https://github.com/147228) on PR #1065; [@Sonike](https://github.com/Sonike) on Issue #950; [@147228](https://github.com/147228) on Issue #950 / PR #1190 |
 
@@ -1492,6 +1492,7 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 | A claim outlived the corpus | 2 |
 | A measurement answering a question it cannot answer | 2 |
 | A number with no file behind it | 2 |
+| Recorded where it was found, not where anyone would look | 2 |
 | A rule applied to others but not to itself | 2 |
 | A claim pointing at a total that excludes the very thing it claims | 1 |
 | Attributed to a file that refuses to do it | 1 |
@@ -1500,7 +1501,6 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 | The gate reported and was ignored | 1 |
 | An index that does not index | 1 |
 | A number read off a drawing rather than computed | 1 |
-| Recorded where it was found, not where anyone would look | 1 |
 | A requirement with nobody to execute it | 1 |
 | Six classes listed for a seven-class partition | 1 |
 | A term of art applied where it does not hold | 1 |

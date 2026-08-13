@@ -242,6 +242,48 @@
       "what_would_close_it_en": "Obtaining the vertical-illuminance increment limit for neighbouring dwellings from the local lighting standard.",
       "owner_means_zh": "本方案自己能关、或每次构建都在关",
       "owner_means_en": "this package can close it, or closes it on every build"
+    },
+    {
+      "id": "A-DEVICE-001",
+      "status": "chosen_by_this_proposal",
+      "statement": "FIG.24 的设备包络中，高度 1,300 mm、回转直径 1,800 mm、整备质量 ≤ 120 kg 三项由本方案自定，包内外均无可核来源。",
+      "impact": "这三项决定储备空间的形状与容量（18 m² 容纳 8 台）。任一项改变，FIG.12 的储备空间下限与 FIG.24 的台数结论同时失效，须一并重算。",
+      "derivation_zh": "FIG.24 的七项包络里，四项能追到已发布内容：长宽由 FIG.12 的缘石开口反推，剩余净宽与 KIT-04 同值，标识规则与读数牌同源，场地速度按地方管理规定。**另外三项没有来源**：高度 1,300 mm 取在站立成人视线以下，回转直径 1,800 mm 取原地转向所需，整备质量 ≤ 120 kg 取一人断电后可推离的量级。三项都写着推理，但推理不是来源——图上以红色标出，此处登记。",
+      "derivation_en": "Four of FIG.24's seven envelope dimensions trace to something already published: length and width are derived from the kerb cut in FIG.12, the surviving clear width is the KIT-04 figure, the marking rule is the reading plate's, and the site speed comes from local regulation. **Three have no source**: the 1,300 mm height is set below standing eye level, the 1,800 mm turning circle is what a standing turn needs, and the ≤ 120 kg mass is the order one person can push clear after a power failure. Each carries reasoning, and reasoning is not a source — marked red on the sheet and registered here.",
+      "if_wrong_zh": "**错的方向不对称。** 三项取小了，真实设备进不来，缘石处每天出现被拒绝的设备，而 18 m² 里放不下宣称的 8 台；取大了，储备空间比需要的大，占掉的是人行道。受影响的是 FIG.12 与 FIG.24 的一致性结论，不是水准网机制本身——机制不依赖设备多大，只依赖「先把人的空间划出来」这条次序。",
+      "what_would_close_it_zh": "取得拟接入设备类型的实际外廓与回转规格，或地方对低速配送设备的通行管理细则。",
+      "what_would_close_it_en": "Obtain the actual outline and turning specification of the device types intended to operate here, or local rules governing low-speed delivery devices.",
+      "owner": "participant",
+      "next_action_zh": "本包缺口：取得拟接入设备类型的外廓与回转规格，或地方低速设备通行细则；**取不到就照现状登记，不得把自定值写成规范值**。",
+      "next_action_en": "This package's gap: obtain the outline and turning specification of the device types intended here, or the local rules for low-speed devices. **Where it cannot be obtained it stays registered as chosen, and a self-chosen value is never written up as a standard.**",
+      "if_wrong_en": "**The error is asymmetric.** Too small and real devices cannot enter — refused at the kerb daily, and the 18 m² does not hold the 8 claimed. Too large and the reservoir is bigger than it needs to be, at the footway's expense. What is affected is the agreement between FIG.12 and FIG.24, not the levelling mechanism: the mechanism does not depend on how big a device is, only on the order — pedestrian space first.",
+      "owner_means_zh": "本方案自己能关、或每次构建都在关",
+      "owner_means_en": "this package can close it, or closes it on every build",
+      "affects_metrics": [],
+      "affects_metric_count": 0,
+      "carries_no_metric_note_zh": "**本包没有任何已发布的数字建立在这条假设上。** 这不是疏漏，是这条假设的性质：它若失效，`metrics.json` 里不会有任何一个值改变，因此**任何对数字的检查都抓不到它**。上面的 `if_wrong_zh` 说明了失效会长什么样；能发现它的只有外部判断，不是本包的闸门。把它单列并写明这一点，是本方案能对它做的全部。",
+      "carries_no_metric_note_en": "**No published number in this package rests on this assumption.** That is not an oversight but the nature of it: if it fails, no value in `metrics.json` changes, so **no check on the numbers can catch it**. `if_wrong_zh` above says what failure would look like; only outside judgement can detect it, not this package's gates. Listing it separately and saying so is the whole of what this proposal can do about it."
+    },
+    {
+      "id": "A-ORIGIN-001",
+      "status": "chosen_by_this_proposal",
+      "statement": "FIG.25 的架站圈 ⌀ 2,400 mm 由三脚架张开 1,200 mm 与操作者外圈 600 mm 相加得出；两项取值均为本方案按一般水准仪作业估计，未取得仪器厂商规格或作业规程原文。",
+      "impact": "架站圈决定原点场地的最小尺寸，以及它是否与无障碍通行净宽冲突。取小了，闭合作业实际会占用通行净宽——那正是本方案对设备的禁止事项。",
+      "derivation_zh": "架站圈 = 三脚架张开 1,200 mm + 操作者外圈 600 mm × 2 = 2,400 mm。两个加数都是本方案按一般水准仪作业估计，**未取得任何仪器规格书或作业规程原文**。公式随图公布正是为此：换一组数，圈径与它对无障碍净宽的影响立即可重算。",
+      "derivation_en": "Setup circle = 1,200 mm tripod spread + 600 mm operator ring × 2 = 2,400 mm. Both terms are this proposal's estimate for ordinary levelling work; **no instrument specification or working procedure was obtained**. The formula ships with the sheet for that reason — substitute your own figures and the circle, and its effect on the accessible width, recompute.",
+      "if_wrong_zh": "取小了后果具体：闭合作业实际会占用无障碍通行净宽，而那正是本方案在 FIG.24 里禁止设备做的事——**规则对别人成立、对自己没有执行**，本册记过两次的那一型（E50、E60）。取大了只是原点场地要求偏严。",
+      "what_would_close_it_zh": "取得所选水准仪与三脚架的规格书，或作业规程中对架站空间的规定。",
+      "what_would_close_it_en": "Obtain the specification for the chosen level and tripod, or whatever the working procedure says about setup space.",
+      "owner": "participant",
+      "next_action_zh": "本包缺口：取得水准仪与三脚架规格书，或作业规程对架站空间的规定。",
+      "next_action_en": "This package's gap: obtain the level and tripod specification, or whatever the working procedure fixes for setup space.",
+      "if_wrong_en": "Too small has a specific consequence: closing a route would in fact stand on the accessible clear width — the very thing FIG.24 forbids devices from doing. That is **a rule holding for others and not enforced against ourselves**, the shape this register has recorded twice (E50, E60). Too large only makes the origin's site requirement stricter than it needs to be.",
+      "owner_means_zh": "本方案自己能关、或每次构建都在关",
+      "owner_means_en": "this package can close it, or closes it on every build",
+      "affects_metrics": [],
+      "affects_metric_count": 0,
+      "carries_no_metric_note_zh": "**本包没有任何已发布的数字建立在这条假设上。** 这不是疏漏，是这条假设的性质：它若失效，`metrics.json` 里不会有任何一个值改变，因此**任何对数字的检查都抓不到它**。上面的 `if_wrong_zh` 说明了失效会长什么样；能发现它的只有外部判断，不是本包的闸门。把它单列并写明这一点，是本方案能对它做的全部。",
+      "carries_no_metric_note_en": "**No published number in this package rests on this assumption.** That is not an oversight but the nature of it: if it fails, no value in `metrics.json` changes, so **no check on the numbers can catch it**. `if_wrong_zh` above says what failure would look like; only outside judgement can detect it, not this package's gates. Listing it separately and saying so is the whole of what this proposal can do about it."
     }
   ],
   "note_zh": "**本文件是评审模型整份读取的九个文件之一，而 `geometry/` 与 `visual/assets/` 不是**（见 `scripts/review_submission.py::build_review_input`）。因此每条假设除了陈述，还写出：`derivation_zh`——这个读数实际是怎么得出的；`if_wrong_zh`——如果它错了，本方案的哪个结论会变、哪个不会；`what_would_close_it_zh`——什么能让它不再是假设；以及 `affects_metrics`——**由 metrics.json 的 assumption_ids 反向索引算出**，使读这份文件的人能看出每条假设承载了多少个数字。一条没有写出后果的假设是免责声明，不是假设。",
@@ -251,9 +293,9 @@
     "not_applicable": 1,
     "operator_after_award": 2,
     "organizer": 3,
-    "participant": 2,
+    "participant": 4,
     "permanently_open": 1
   },
-  "ownership_note_zh": "**每条假设除了「什么能关闭它」，还写明「谁能关闭它」。** 一份只说条件不说责任的登记表，会把两种情况混成一种：本方案还没做的，和本方案做不了的。本册 10 条的归属为 mixed 1、not_applicable 1、operator_after_award 2、organizer 3、participant 2、permanently_open 1。仓库的评审脚本只把以 `组织方：`／`主办方：` 开头的动作视为外部所有，其余一律 fail-closed 归还参与方（`is_organizer_owned_action`）；本包因此只在三条确属主管部门发布的项上使用该前缀，**A-CONTROLS-001 拆开写而不整条认领，A-LIGHTING-001 记为本方案自己的欠缺**——没拿到一份已公开的标准，不是别人的问题。",
-  "ownership_note_en": "**Each assumption states who can close it, not only what would close it.** A register that gives the condition but not the responsibility merges two different things: what this package has not done, and what this package cannot do. Across 10 records the split is mixed 1, not_applicable 1, operator_after_award 2, organizer 3, participant 2, permanently_open 1. The repository's review script treats an action as externally owned only when it begins `组织方：`/`主办方：` and returns everything else fail-closed to the participant (`is_organizer_owned_action`), so that prefix is used here for the three items that are genuinely an authority's publication and for nothing else — **A-CONTROLS-001 is split rather than claimed whole, and A-LIGHTING-001 is booked as this package's own shortfall**, because not having obtained a published standard is nobody else's fault."
+  "ownership_note_zh": "**每条假设除了「什么能关闭它」，还写明「谁能关闭它」。** 一份只说条件不说责任的登记表，会把两种情况混成一种：本方案还没做的，和本方案做不了的。本册 12 条的归属为 mixed 1、not_applicable 1、operator_after_award 2、organizer 3、participant 4、permanently_open 1。仓库的评审脚本只把以 `组织方：`／`主办方：` 开头的动作视为外部所有，其余一律 fail-closed 归还参与方（`is_organizer_owned_action`）；本包因此只在三条确属主管部门发布的项上使用该前缀，**A-CONTROLS-001 拆开写而不整条认领，A-LIGHTING-001 记为本方案自己的欠缺**——没拿到一份已公开的标准，不是别人的问题。",
+  "ownership_note_en": "**Each assumption states who can close it, not only what would close it.** A register that gives the condition but not the responsibility merges two different things: what this package has not done, and what this package cannot do. Across 12 records the split is mixed 1, not_applicable 1, operator_after_award 2, organizer 3, participant 4, permanently_open 1. The repository's review script treats an action as externally owned only when it begins `组织方：`/`主办方：` and returns everything else fail-closed to the participant (`is_organizer_owned_action`), so that prefix is used here for the three items that are genuinely an authority's publication and for nothing else — **A-CONTROLS-001 is split rather than claimed whole, and A-LIGHTING-001 is booked as this package's own shortfall**, because not having obtained a published standard is nobody else's fault."
 }
