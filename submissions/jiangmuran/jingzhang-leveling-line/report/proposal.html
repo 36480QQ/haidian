@@ -445,7 +445,7 @@ code {
 <blockquote><p><strong>没有水准点的路段，不允许机器人运行。</strong>（No benchmark, no robot.）</p></blockquote>
 <p>这条规则把治理变成了空间设计问题——因此它属于城市设计而非技术管理。机器人可运行的范围，等于水准点覆盖的范围；要扩大运营范围，必须先建测点。测点是实体的、公共可达的、编号唯一的 <span class="evidence evidence-data">[data:geometry/public_space.geojson#PUBLIC-001]</span>，其覆盖占比可从图层复算 <span class="evidence evidence-metric">[metric:public_space_ratio]</span>。</p>
 <p><strong>先说清楚哪些不是本方案的增量。</strong> 逐份核读本次征集这两条赛道的全部方案后可以确认，&lt;!-- BASELINE6:BEGIN --&gt;</p>
-<p>以下六项已成为事实标准，括号内为 702 份语料中的实测份数：场景级停用与退出条件（420）、无AI等价路径（312）、现场安全员（299）、远程与物理急停（153）、限速（82）、事件日志（58）。最薄的一项也有 58 份，最厚的 420 份。<strong>这是下界</strong>——换了说法的方案不会被关键词计入。本方案全部采纳这六项并写入下方场景卡，但<strong>不把它们当作创新陈述</strong>——它们是准入底线。把底线当卖点，说明没有读过这个场。</p>
+<p>以下六项已成为事实标准，括号内为 702 份语料中的实测份数：场景级停用与退出条件（422）、无AI等价路径（313）、现场安全员（300）、远程与物理急停（154）、限速（82）、事件日志（59）。最薄的一项也有 59 份，最厚的 422 份。<strong>这是下界</strong>——换了说法的方案不会被关键词计入。本方案全部采纳这六项并写入下方场景卡，但<strong>不把它们当作创新陈述</strong>——它们是准入底线。把底线当卖点，说明没有读过这个场。</p>
 <p>&lt;!-- BASELINE6:END --&gt;</p>
 <p>本方案的增量在别处：<strong>在两条赛道的全部方案里逐词检索为零或近零的那些测项上。</strong></p>
 <p>这一节的计数此前是本方案手读 18 份得出的，清单与口径都没有交出来——一个只有作者能复核的数字，按本方案自己的标准不构成证据。现已改为可重跑脚本：从 git tree 枚举两条赛道的<strong>全部已合入方案</strong>（含本方案；份数随语料增长，见下表表头），对每份全文运行公开的关键词正则，逐项列出命中方案名，结果随包提交于 <code>visual/assets/track_scan.json</code>。</p>
@@ -719,7 +719,7 @@ code {
 <p>63 条全部有据。把下限改成重算的意义在于：<strong>如果哪天某类交付物被删掉一个，构建会失败，而不是矩阵继续声称它还在。</strong></p>
 <h3>一处<strong>故意不交</strong>的交付物：<code>simulation.json</code></h3>
 <p>仓库的 <code>validate_submission.py</code> 内建 <code>validate_simulation_consistency</code>，会把 <code>simulation.json</code> 的任务记录与 <code>metrics.json</code> 中的 <code>simulation_success_rate</code>、<code>tool_schema_pass_rate</code>、<code>energy_budget_violations</code>、<code>audit_completeness</code> 交叉复算。&lt;!-- SIMJSON:BEGIN --&gt;</p>
-<p>全场 702 份中有 <strong>18 份</strong>提交了它——名单在随包的 <code>visual/assets/field_extras.json</code> 的 <code>simulation_json.keys</code> 里，逐条可查。本方案不交，理由必须写出来，否则这只是一处空缺。</p>
+<p>全场 702 份中有 <strong>19 份</strong>提交了它——名单在随包的 <code>visual/assets/field_extras.json</code> 的 <code>simulation_json.keys</code> 里，逐条可查。本方案不交，理由必须写出来，否则这只是一处空缺。</p>
 <p>&lt;!-- SIMJSON:END --&gt;</p>
 <p><strong>第一，那个 schema 要的数本方案没有依据。</strong> 它按智能体调度仿真设计：逐任务的 outcome、能耗与能耗预算、dispatch schema 校验结果。本方案没有做过任何设备调度仿真，也没有任何能耗测算基础——填进去的每一个数都会是编的。</p>
 <p><strong>第二，唯一能诚实塞进那个形状的东西，会产出一个被读错的数。</strong> 随包的十例桌面演练确实是任务记录：每例有确定的输入、确定的判定、确定的期望。但它的「成功率」是 <strong>10/10 判定与规格一致</strong>，而 <code>simulation_success_rate: 1.0</code> 在任何评审眼里读起来都是「这个场景百分之百成功」。两者相差极远：演练证明的是<strong>判定逻辑可复现、拒绝分支确实会触发</strong>，它不证明任何实地读数、任何真实复核主体、任何服务绩效。</p>

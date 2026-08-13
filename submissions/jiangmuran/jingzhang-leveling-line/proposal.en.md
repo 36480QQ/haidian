@@ -796,7 +796,7 @@ This rule turns governance into a spatial design problem, which is why it belong
 
 **First, what is not this proposal's increment.** Reading every proposal in these two tracks confirms that <!-- BASELINE6:BEGIN -->
 
-These six are now de facto standard. The figures in brackets are measured counts across the 702-proposal corpus: scenario-level suspension and exit conditions (420); a non-AI equivalent path (312); an on-site safety officer (299); remote and physical e-stop (153); speed limits (82); event logs (58). The thinnest is at 58, the thickest at 420. **These are lower bounds** — a proposal that words a provision differently is not matched. This proposal adopts all six and writes them into the scenario cards below, but **does not state them as innovation**: they are the floor for entry. Selling the floor as a feature shows you have not read the field.
+These six are now de facto standard. The figures in brackets are measured counts across the 702-proposal corpus: scenario-level suspension and exit conditions (422); a non-AI equivalent path (313); an on-site safety officer (300); remote and physical e-stop (154); speed limits (82); event logs (59). The thinnest is at 59, the thickest at 422. **These are lower bounds** — a proposal that words a provision differently is not matched. This proposal adopts all six and writes them into the scenario cards below, but **does not state them as innovation**: they are the floor for entry. Selling the floor as a feature shows you have not read the field.
 
 <!-- BASELINE6:END -->
 
@@ -1422,7 +1422,7 @@ All 63 answered. Recomputing the floors rather than declaring them means that if
 
 The repository's `validate_submission.py` carries `validate_simulation_consistency`, which cross-checks a `simulation.json`'s task records against `simulation_success_rate`, `tool_schema_pass_rate`, `energy_budget_violations` and `audit_completeness` in `metrics.json`. <!-- SIMJSON:BEGIN -->
 
-**18 of 702** submissions ship one; the roster is in `simulation_json.keys` in the shipped `visual/assets/field_extras.json`, checkable entry by entry. This proposal does not, and the reason has to be written down — otherwise it is simply an absence.
+**19 of 702** submissions ship one; the roster is in `simulation_json.keys` in the shipped `visual/assets/field_extras.json`, checkable entry by entry. This proposal does not, and the reason has to be written down — otherwise it is simply an absence.
 
 <!-- SIMJSON:END -->
 

@@ -810,7 +810,7 @@ Logo 方向取自水准点标石的实物形态与水准仪的读数十字丝，
 
 **先说清楚哪些不是本方案的增量。** 逐份核读本次征集这两条赛道的全部方案后可以确认，<!-- BASELINE6:BEGIN -->
 
-以下六项已成为事实标准，括号内为 702 份语料中的实测份数：场景级停用与退出条件（420）、无AI等价路径（312）、现场安全员（299）、远程与物理急停（153）、限速（82）、事件日志（58）。最薄的一项也有 58 份，最厚的 420 份。**这是下界**——换了说法的方案不会被关键词计入。本方案全部采纳这六项并写入下方场景卡，但**不把它们当作创新陈述**——它们是准入底线。把底线当卖点，说明没有读过这个场。
+以下六项已成为事实标准，括号内为 702 份语料中的实测份数：场景级停用与退出条件（422）、无AI等价路径（313）、现场安全员（300）、远程与物理急停（154）、限速（82）、事件日志（59）。最薄的一项也有 59 份，最厚的 422 份。**这是下界**——换了说法的方案不会被关键词计入。本方案全部采纳这六项并写入下方场景卡，但**不把它们当作创新陈述**——它们是准入底线。把底线当卖点，说明没有读过这个场。
 
 <!-- BASELINE6:END -->
 
@@ -1529,7 +1529,7 @@ node visual/assets/verify.js
 
 仓库的 `validate_submission.py` 内建 `validate_simulation_consistency`，会把 `simulation.json` 的任务记录与 `metrics.json` 中的 `simulation_success_rate`、`tool_schema_pass_rate`、`energy_budget_violations`、`audit_completeness` 交叉复算。<!-- SIMJSON:BEGIN -->
 
-全场 702 份中有 **18 份**提交了它——名单在随包的 `visual/assets/field_extras.json` 的 `simulation_json.keys` 里，逐条可查。本方案不交，理由必须写出来，否则这只是一处空缺。
+全场 702 份中有 **19 份**提交了它——名单在随包的 `visual/assets/field_extras.json` 的 `simulation_json.keys` 里，逐条可查。本方案不交，理由必须写出来，否则这只是一处空缺。
 
 <!-- SIMJSON:END -->
 
