@@ -861,6 +861,10 @@ The project-library gate was run against **310 deterministic synthetic fixtures*
 
 The machine-readable result is `visual/assets/project_library_rehearsal.json`. Its `field_result` values remain null and `field_results_completed=0`: this rehearsal checks contract structure, not site performance, staffing, safety, budget, service quality, approval or public outcome.[metric:field_rehearsal_completed_count]
 
+#### Portable method product: Growth Mesh Project-Gate Protocol
+
+The proposal's six-Agent/four-human-gate method is also delivered as an executable offline product rather than prose alone: `growth-mesh-project-gate.json` defines roles, permissions, contract schemas, human gates, decision rules, falsification tests and truth boundaries; `growth-mesh-project-gate-fixtures.json` supplies positive and missing-field examples; `growth-mesh-project-gate-run.js` runs with Node.js and no package install; `growth-mesh-project-gate-receipt.json` records the actual run. Running `node visual/assets/growth-mesh-project-gate-run.js` reproduces **6/6 expected decisions**, including explicit rejection of a project without an operator, a scenario without a non-AI equivalent and a health check without a baseline. The protocol is a concept method ready for external rehearsal, not a planning standard, certification or deployed system; its licence remains COMMUNITY-DISPLAY-ONLY unless the contributor grants a separate written reuse licence.
+
 
 ## Reviewer Evidence Index
 
