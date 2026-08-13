@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "A city-usability framework that organizes the Jing-Zhang corridor as three Works and two service chains. Every AI service must provide human takeover, a no-app equivalent, minimum-data rules, a responsible owner, stop conditions, and a public change record."
 tracks: ["ai-traffic-walkability", "ai-public-services", "enterprise-services-ecosystem"]
 scenarios: ["ai-traffic-walkability", "ai-health-service-navigation", "ai-cultural-guide", "enterprise-service-copilot", "robot-delivery-low-speed", "public-safety-operations-review"]
-iteration: "v1.3"
+iteration: "v1.5"
 ---
 
 # JING-ZHANG WORKS / 京张好用
@@ -29,6 +29,10 @@ Three public nodes make the rules visible. Ask First Desk provides routes and pu
 That question now has a route a person can follow. Design rehearsal U05-A chooses an ordinary task. An older visitor without a smartphone wants to understand which materials a public service requires and where to go next. Static numbering leads the visitor to Learning Works. At Ask First, the visitor explains the task. A staff member provides a printed checklist carrying the source date. AI may shorten the public explanation, while the staff member verifies and signs every critical fact. The visitor sits down to reread the list and returns to the counter if one item is missing. On departure, the visitor carries the checklist, the offline service location, the information expiry date, and an issue number.
 
 One broken step blocks the whole service. If the route is obstructed, the source is stale, or the counter is unstaffed, staff withdraw the AI service while paper and staffed routes continue. U05-A is currently a spatial and service design rehearsal. The package records no real visitor, field observation, or completion rate.[source:V13-COMPLETE-TASK-RECEIPT]
+
+The ninety-day pilot now has a startup ledger that can support an actual scope meeting. Its six cost lines cover field baseline work, paper service, a movable public interface, controlled testing, staffed operation, and permanent works. Each line identifies its unit, quantity basis, recurring burden, quotation gate, removal, and data-deletion obligation. The monetary total stays empty because the site, opening hours, accountable buyer, and comparable quotes do not yet exist. That empty total blocks false precision while leaving a usable cost structure for the authorized team.[source:V11-IMPLEMENTATION-PLAYBOOK] [metric:startup_cost_line_count]
+
+The day-one rehearsal now covers five stop situations: route and life safety, information and network failure, missing staff, a privacy incident, and supplier exit. Each has an immediate human action and evidence required for reopening. Structural checks show that the steps are specified; they do not authorize a site or prove that anyone has performed them.[source:V12-DAY-ONE-DRILL] [metric:stop_drill_category_count]
 
 ## Design Basis and Source List
 
@@ -184,6 +188,19 @@ Years three to five may establish a corridor service standard. The six-field con
 
 Five gates divide the ninety days. Weeks 0 to 2 complete the field baseline, signed roles, and risk register. Weeks 3 to 4 install Ask First, takeover marking, a paper route, and the change log, followed by staff drills. Weeks 5 to 8 run two public services and one industry test. Weeks 9 to 11 repair repeated barriers and replay failed tasks. Weeks 12 to 13 decide whether each component is adopted, revised, or retired. S-class resources cover signs, paper service, existing furniture, and staff time. M-class resources cover a movable pavilion, controlled test lane, temporary power, and specialist review. L-class resources are permanent works requiring formal project approval. This package states no unauthorized monetary amount.[source:V11-IMPLEMENTATION-PLAYBOOK]
 
+The ledger establishes measurement before quotation. Field baseline work is measured by six complete routes and twelve fixed observations. Paper service is measured at each opened entry, counter, and exit. The movable interface is one set per authorized site, with rental or adaptation preferred before purchase. The controlled window admits one industry test at a time. Staff cost is measured per open shift, with one named takeover person and a separate independent replay slot. Permanent works have a quantity of zero during the ninety-day pilot and wait for a formally approved project.[source:V11-IMPLEMENTATION-PLAYBOOK] [metric:startup_cost_line_count]
+
+| Startup cost line | How quantity is established | One-off or recurring | Evidence needed before quotation |
+| --- | --- | --- | --- |
+| C01 field baseline | Six task routes and twelve fixed observations | One-off | Route list, privacy boundary, evidence acceptance sheet |
+| C02 paper service | One set at every opened entry, counter, and exit | Recurring | Information owner, expiry rule, print specification |
+| C03 movable public interface | One set for one pilot site | One-off | Site authorization, measured access route, fire review, removal method |
+| C04 controlled test window | One industry test at a time | One-off | Test boundary, named handler, physical stop, restoration deposit |
+| C05 staffed operation | One takeover person per open shift plus independent replay | Recurring | Shift plan, substitute, labour rules, stop authority |
+| C06 permanent works | Zero during the ninety-day pilot | Formal-project cost | Official geometry, ownership, approved brief, investment decision, professional design |
+
+The buying order is deliberately plain. Rent or adapt before commissioning a bespoke component. Fund human service and independent review before an AI display. Every installation quote includes removal, data deletion, and site restoration. Procurement stops when the operator or recurring budget is absent.[source:V11-IMPLEMENTATION-PLAYBOOK]
+
 The RACI assigns site authorization to the owner or public-space operator, service release to the service owner, on-site takeover to named staff, and stopping or retirement to the safety lead or service owner. Planning, fire, accessibility, data protection, and professional reviewers join as required. Four design targets continue after release. Human takeover must remain visible. A serious safety or privacy event causes immediate suspension. Public information carries a source and expiry. Every published route passes a full no-app replay. These are pilot thresholds and have no measured achievement rate yet.[source:V11-IMPLEMENTATION-PLAYBOOK]
 
 The developer community works from public problem orders. A team selects one public task, submits a six-field contract and synthetic test article, and enters real-task review only after the controlled test. The adoption path runs through problem order, contract completion, field baseline, controlled pilot, independent replay, authorized adoption, maintenance review, and retirement or renewal. International visitors can read bilingual task cards and version records. What travels is the test method and service standard, not an unverified success claim.[source:V11-IMPLEMENTATION-PLAYBOOK]
@@ -195,6 +212,14 @@ One hour before opening, the pilot manager walks the complete route planned for 
 Ten minutes before opening, the service owner and on-site staff read through the source date, expiry time, minimum fields, and stop rule. Their signed sheet is the opening record. Two hours later, an accessibility reviewer repeats the no-app journey. A broken route causes staff to withdraw its public information. It can return only after repair and a complete replay.
 
 The afternoon includes one announced fault drill. No unsuspecting visitor becomes a test subject. A network outage sends the service back to paper and staff. A critical bilingual error is covered before anyone checks it against a dated public source. A blocked accessible or emergency route causes the safety lead to stop the affected service. At closing, the pilot manager reconciles the issue log, deletes expired test data, and records whether the next day will open, stay manual, wait for repair and replay, or retire the component.[source:V12-DAY-ONE-DRILL]
+
+| Stop drill | Immediate site action | Evidence required to reopen |
+| --- | --- | --- |
+| Route and life safety | Stop the affected service and retain staffed guidance | Full route replay signed by safety and access reviewers |
+| Information and network | Cover incorrect information and return to dated paper service | Source check and successful paper-task replay |
+| Missing staff | Keep the AI service closed until a qualified substitute accepts responsibility | Primary and substitute staff each complete the manual task |
+| Privacy incident | Stop processing, isolate records, delete through the approved path, and review | Scope, deletion result, corrective action, and independent data review |
+| Supplier exit | Disconnect the dependency, export authorized public records, restore ordinary service, and remove the installation | Portable records, verified deletion, restored site, and ordinary-service replay |
 
 This day-one drill remains an unexecuted operating procedure. Site, date, named people, budget, and permit are all blank. It shows the actions required to open and stop a service. It proves no rehearsal has taken place.[source:V12-DAY-ONE-DRILL]
 
