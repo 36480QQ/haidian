@@ -24,7 +24,7 @@ scenarios:
 ## Centennial Jingzhang AI Belt Urban Design
 
 > **In 1909, Zhan Tianyou answered the mountain with a switchback line, and answered the question of people with "each contributes what he has learned, each gives what he knows."**
-> **In 2019, the Jingzhang HSR answered the question of speed with the world's first intelligent railway.**
+> **In 2019, the Jingzhang HSR answered the question of speed with the world's first intelligent high-speed railway.**
 > **In 2026, we answer the question of intelligence with a working diagram — letting every innovation run by the diagram, and letting everyone step off at any time.**
 >
 > **The railway that taught China to climb now runs on a diagram written by everyone.**
@@ -86,7 +86,7 @@ Visual identity (conceptual direction, all self-drawn and rights-cleared): the l
 
 ### Core Proposition: A City That Runs by the Diagram
 
-What truly cannot be replicated about this land is the stacking of three "world firsts / firsts" on the same corridor [source:OFFICIAL-ANNOUNCEMENT]: 1909 self-reliance — the first trunk railway designed and built independently by Chinese, where Zhan Tianyou, facing a 33‰ grade, answered with a switchback line, trading topology for gradient and switchback for reversibility; 1980s entrepreneurship — the Zhongguancun electronics street, the origin of China's marketized tech innovation; 2019 intelligence — the world's first intelligent HSR, realizing 350 km/h-class automated driving and BeiDou applications (public-report wording, to be confirmed against authoritative sources in the formal stage); 2026 symbiosis — humanity's first answer to at what grade humans and intelligence climb together. **The Jingzhang gene already contains "a self-driving railway"** — the key anchor every prior proposal missed. According to public historical material, Zhan Tianyou's "each contributes what he has learned, each gives what he knows" is attributed to encouraging young engineers; to be verified word-for-word against authoritative sources before formal submission; this is an open-source declaration written in 1909, which this proposal establishes as its spiritual constitution [depth:overall_spatial_structure] [assumption:A-FACT-ZHANTIANYOU-001] [assumption:A-FACT-SMART-HSR-2019-002].
+What truly cannot be replicated about this land is the stacking of three "world firsts / firsts" on the same corridor [source:OFFICIAL-ANNOUNCEMENT]: 1909 self-reliance — the first trunk railway designed and built independently by Chinese, where Zhan Tianyou, facing a 33‰ grade, answered with a switchback line, trading topology for gradient and switchback for reversibility; 1980s entrepreneurship — the Zhongguancun electronics street, the origin of China's marketized tech innovation; 2019 intelligence — the world's first 350 km/h intelligent high-speed railway, realizing 350 km/h-class automated driving and BeiDou applications (per the Minister of Transport's statement at the 2025 NPC session [source:AUTHORITY-MOT-2025]); 2026 symbiosis — humanity's first answer to at what grade humans and intelligence climb together. **The Jingzhang gene already contains "a self-driving railway"** — the key anchor every prior proposal missed. Zhan Tianyou's "each contributes what he has learned, each gives what he knows" is from his 1914 speech at the Hankou European and American Alumni Association (original: "each contributes what he has learned, each gives what he knows, so that the nation may prosper, suffer no foreign humiliation, and stand independently on this earth" [source:BAIKE-ZHANTIANYOU]); this is an open-source declaration written in 1914 — five years after the Jingzhang Railway's completion — which this proposal establishes as its spiritual constitution [depth:overall_spatial_structure] [assumption:A-FACT-ZHANTIANYOU-001] [assumption:A-FACT-SMART-HSR-2019-002].
 
 ### Meta-Concept: The Working Diagram — the Master Score of the Railway
 
@@ -256,7 +256,7 @@ Railway ballast is the silent bearer, exactly like open-source contributors. Pla
 ```
 Act 1 · 1909 self-reliance  → the mountain was there; Zhan Tianyou answered with the "human" glyph — winning by wit; he said: each contributes what he has learned, each gives what he knows
 Act 2 · 1980s entrepreneurship → the institutional slope was there; Zhongguancun answered with the market — building a career by wit
-Act 3 · 2019 intelligence      → the limit of speed was there; the Jingzhang HSR answered with intelligence — the world's first intelligent railway
+Act 3 · 2019 intelligence      → the limit of speed was there; the Jingzhang HSR answered with intelligence — the world's first intelligent high-speed railway
 Act 4 · 2026 symbiosis         → the gradient of intelligence is here; our answer is the "human" — humanity holds the switch, running by the diagram
 ```
 
@@ -279,7 +279,7 @@ The trail ends not at a "museum of the future" but at a living deliberation floo
 
 ### Cultural Red Lines
 
-No distortion of historical facts; no use of culture as tech decoration; no unauthorized portraits, trademarks, or copyrighted material; all historical statements are re-verified against authoritative historical sources in the formal packaging stage (see the A-HIST series in assumptions.json) [assumption:A-FACT-OPENING-DATE-003].
+No distortion of historical facts; no use of culture as tech decoration; no unauthorized portraits, trademarks, or copyrighted material; all historical statements have been verified against public authoritative sources (see the A-FACT series in assumptions.json) [assumption:A-FACT-OPENING-DATE-003].
 
 ## Renewal Project List, Implementation Policy, and Phasing Plan
 
@@ -328,7 +328,7 @@ The formal packaging stage enters `metrics.json` (full fields of status/value/un
 
 1. **Statutory boundary**: all spatial implementation suggestions in this proposal are conceptual suggestions, reference schemes, or material for professional teams to deepen; they do not replace formal planning and do not constitute government-approved conclusions [depth:risk_missing_data] [self_check:DETERMINISTIC_VALIDATION].
 2. **Data boundary**: the official precise boundary polygons, control-plan metrics, current-condition surveys, land ownership, utility lines, and heritage surveys have not been publicly obtained; anything involving FAR, height, retain/retrofit/demolish conclusions, road alignments, and investment calculations is listed as to-be-confirmed [data:geometry/constraints.geojson].
-3. **Factual risk**: historical facts such as Zhan Tianyou's inscription, the "world's first intelligent HSR" phrasing for the Jingzhang HSR, and the opening anniversary are cited per public sources and will be verified item-by-item against authoritative sources before formal submission [source:OFFICIAL-ANNOUNCEMENT].
+3. **Factual risk**: historical facts — Zhan Tianyou's "each contributes what he has learned, each gives what he knows" inscription (1914 Hankou Alumni Association speech), the "world's first 350 km/h intelligent high-speed railway" phrasing for the Jingzhang HSR (Minister of Transport, 2025 NPC session), and the Jingzhang Railway opening anniversary (October 2, 1909 grand opening ceremony at Nankou; full-line service commenced September 24, 1909) — have been verified against public authoritative sources; see assumptions.json [source:BAIKE-ZHANTIANYOU] [source:AUTHORITY-MOT-2025].
 4. **Technical risk**: scenarios such as automated driving, robotics, and computing coupling are all set as speed- and zone-limited reversible trials, retaining human final decision and exit plans.
 5. **Social risk**: heritage activation may bring gentrification pressure — hedged by the community-embedding plan, the honor system for in-situ residents, and public-service increases (drawing on the High Line Park lesson).
 6. **Governance risk**: the risk of regulators being captured by interests — hedged by independent audit, open-source priority, a public constraint handbook, and a public rejection-certificate system.
@@ -345,4 +345,4 @@ The formal packaging stage enters `metrics.json` (full fields of status/value/un
 - Source register data/source_registry.json and processed fact pack data/processed/agent_fact_pack.md [source:SOURCE-REGISTRY] [source:PROCESSED-FACT-PACK]
 - Provisional coarse boundary and key areas geometry/provisional_boundaries.geojson [source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE]
 - Professional standards: urban design management measures, control-detailed-planning depth requirements, land-use classification guide (see standard_matrix.json) [standard:MOHURD-URBAN-DESIGN-MEASURES] [standard:MOHURD-CONTROL-DETAILED-PLANNING] [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]
-- Historical facts to be verified later against authoritative sources: Zhan Tianyou's "each contributes what he has learned, each gives what he knows" inscription, the "world's first intelligent HSR" phrasing for the Jingzhang HSR, and the opening anniversary (see assumptions.json)
+- Verified historical facts: Zhan Tianyou's "each contributes what he has learned, each gives what he knows" inscription (1914 speech), the "world's first 350 km/h intelligent high-speed railway" phrasing for the Jingzhang HSR (Minister of Transport, 2025), and the Jingzhang Railway opening anniversary (October 2, 1909, Nankou opening ceremony) (see assumptions.json)
