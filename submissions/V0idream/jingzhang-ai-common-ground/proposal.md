@@ -5,7 +5,7 @@ language: "zh"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
-iteration: "v2.0"
+iteration: "v3.0"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以一条翻译绿脊、三座译院、六道公共门和十二个AI场景，把技术—知识—产品—日常连接成可验证、可退出、有人兜底的城市公共价值链。空间表达基于临时边界，不替代正式规划。"
 tracks: ["enterprise-services-ecosystem", "civic-agent-governance", "ai-traffic-walkability"]
@@ -22,6 +22,8 @@ scenarios: ["enterprise-service-copilot", "public-safety-operations-review", "ai
 
 本轮以 SCN-05“跨语城市服务台”为最小可复跑样例：在本地、零联网环境中，用 1 条完整路径和 6 条单门失败路径验证“全部通过才形成校样、任一失败即返回重译”。结果为 7/7 合成路径符合预期；这只证明规则逻辑可复跑，不证明现场安全、居民同意、运营绩效或部署获批 [metric:proofing_gate_count] [metric:synthetic_proof_case_count] [metric:synthetic_proof_pass_count]。
 
+V3 再把协议压缩为一个可检查、可搬离的最小城市单元：TG-PILOT-01 由 72 平方米、五个空间区和五个运行状态组成；每次服务生成一张不含个人身份的“城市校样回执”，公开人工责任、有效期、普通服务、申诉和回退。12 条匿名包容性合成路径得到 12/12 预期判断；这仍是零联网规则证据，不是现场结果 [metric:pilot_module_area_sqm] [metric:pilot_operating_state_count] [metric:synthetic_inclusion_journey_pass_count]。
+
 ### 策略比选
 
 | 选项 | 主要收益 | 主要风险 | 判断 |
@@ -33,6 +35,14 @@ scenarios: ["enterprise-service-copilot", "public-safety-operations-review", "ai
 ### 五个区域协同接口
 
 北纬社区提供社区问题与日常服务反馈；未来科学城提供基础研究议题；怀柔科学城提供科学装置与科研场景需求；经开区提供制造验证与供应链问题；京津冀节点提供跨区域公共服务与成果转化问题。京张译场只接收公开或清权的问题卡、最小测试需求和可撤回反馈，输出带来源、责任、限制和退出条件的“城市校样”；不声称已有合作、数据共享、采购或结果互认 [source:AGENT-TASKBOOK] [depth:three_level_scope_framework]。
+
+| 概念接口 | 只接收 | 只输出 | 到期/退出 |
+| --- | --- | --- | --- |
+| 北纬社区 | 去身份化的社区问题卡 | 普通服务与 AI 服务差异回执 | 一个试验周期后关闭 |
+| 未来科学城 | 公开基础研究问题与复现条件 | 带适用边界的模型校样 | 复现失败即重译 |
+| 怀柔科学城 | 公开装置需求与安全前提 | 场景约束清单 | 安全责任不明即停止 |
+| 经开区 | 清权制造验证问题 | 可撤回的测试记录 | 供应链或权利不清即退出 |
+| 京津冀 | 公开跨区域服务问题 | 双语普通服务与校样接口 | 不互认审批或采购结论 |
 
 ## 设计依据与资料清单
 
@@ -57,6 +67,8 @@ scenarios: ["enterprise-service-copilot", "public-safety-operations-review", "ai
 京张的转化不是复制“硅谷外观”，而是设置六道公共门：来源门核对数据与知识产权，同意门说明参与和退出，可达门保证无障碍与低数字门槛，复核门明确人工责任，回退门保留暂停和降级，维护门公开运营与更新责任。六门既是东西缝合的公共空间，也是每项 AI 服务进入日常前的放行协议 [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [data:geometry/public_space.geojson#PUBLIC-001]。
 
 视觉识别采用原创“双轨译括号”：两条京张轨线在中央形成开放括号，青绿表示可追溯的公共路径，暖黄表示人的判断。标志不借用企业商标；“译场 / Translation Grounds”同时指空间场所与持续翻译的共同实践。
+
+![京张译场原创识别系统](assets/figures/identity-system.png)
 
 ## 总体设计范围城市更新与控规深度城市设计
 
@@ -90,6 +102,17 @@ scenarios: ["enterprise-service-copilot", "public-safety-operations-review", "ai
 
 七类使用者共同决定场景：研究者需要可复现环境，初创团队需要低成本验证，成熟企业需要采用反馈，居民需要清楚的人工服务入口，老年人与低数字能力者需要不被强制数字化，残障使用者需要多模态可达，国际访客需要跨语解释。场景不以持续识别人群为前提，只使用最少必要的公开或经授权数据。
 
+V3 不把“七类使用者”停留在画像清单，而以六条正向、六条失败路径检查服务是否真的保留纸质、人工、无障碍、跨语、监护和技术日志条件。合成的无智能手机居民、轮椅访客、低视力研究者、国际访客、监护人陪同青年和初创测试者各有一条可达路径与一条故障路径；缺少必要通道、人工接管超过 120 秒概念目标、回执字段不足或普通服务关闭，均返回重译 [metric:synthetic_inclusion_journey_count] [metric:pilot_handoff_target_seconds] [metric:proof_receipt_required_field_count]。
+
+| 合成人物路径 | 必须保留的通道 | 不可接受的替代 | 普通服务基线 |
+| --- | --- | --- | --- |
+| 无智能手机居民 | 纸质 + 人工 | 仅屏幕/扫码 | 有人窗口与纸质说明 |
+| 轮椅访客 | 无台阶 + 人工 | 以楼梯或绕行代替 | 连续无障碍入口 |
+| 低视力研究者 | 音频 + 大字 + 人工 | 仅小字屏幕 | 可朗读的人工说明 |
+| 国际访客 | 双语 + 人工 | 仅机器翻译 | 双语人工复核 |
+| 监护人陪同青年 | 监护告知 + 人工 | 默认同意 | 可撤回的线下活动 |
+| 初创测试者 | 技术日志 + 人工 | 黑箱结果 | 线下技术评审 |
+
 十二张场景卡以 `scenario_ids` 登记在六道公共门空间中，前三项为产业测试验证场景 [metric:scenario_node_count] [metric:test_validation_scenario_count] [data:geometry/public_space.geojson#PUBLIC-001]：
 
 1. 开源模型门诊：带数据卡、失败样本和人工签字的模型复诊。
@@ -112,6 +135,24 @@ scenarios: ["enterprise-service-copilot", "public-safety-operations-review", "ai
 第 1—2 周只记录普通人工服务基线；第 3—5 周用合成问题离线校译；第 6—8 周在保留人工主通道的前提下做平行服务；第 9—11 周公开校样、申诉和回退演练；第 12 周只允许“采纳、限期重译、退场”三种结论。任一阶段若出现来源无法追溯、告知/撤回失效、无障碍或非数字路径中断、人工接管失败、回退失败或维护责任空缺，即恢复普通服务 [metric:proofing_pilot_duration_weeks] [metric:proofing_stop_condition_count]。
 
 责任采用原创的 T/R/C/W 分工：Translator 负责把问题译成服务规则，Reviewer 负责专业与权利复核，Community witness 见证可达、申诉和退出，Steward 负责版本、维护与退场。当前四类角色均未由真实机构指派。资源只分等级而不虚构金额：R0 为流程、人员和纸质材料；R1 为可撤离家具、标识与离线终端；R2 涉及建筑、市政或系统接口，必须等待专业深化和审批 [depth:phasing_implementation] [source:AGENT-TASKBOOK]。
+
+### TG-PILOT-01：72 平方米可撤离校译单元
+
+校译单元采用 12 米 × 6 米设计原型，不绑定具体建筑或地块：14.4 平方米普通服务与等候、10.8 平方米知情与撤回、18 平方米隔离/平行校译、14.4 平方米人工复核与回执、14.4 平方米安静申诉与回退。AI 只依赖中央校译区，其余四区在 AI 关闭后仍工作；真实落地必须重新核验权属、消防、无障碍、结构、市政和排班 [metric:pilot_module_area_sqm] [depth:three_key_area_detailed_design]。
+
+每个开放班次的概念最低资源是两名在场人员——普通服务员与校译操作员职责分离——另有一名专业复核员待命；配置一台隔离终端、一个物理停止键、两套触觉/大字导引和一个上锁证据柜。供应方只能提交证据，不能批准自己的六门；普通服务员无需供应方许可即可恢复人工服务。这是待校准的资源原型，不是机构排班或财政承诺 [metric:pilot_minimum_open_shift_staff_count] [depth:phasing_implementation]。
+
+![可撤离校译单元](assets/figures/pilot-bay.png)
+
+### 城市校样回执：把退出权交还给使用者
+
+每次公众校样只产生匿名令牌、服务目的、六门状态、人工责任角色、有效期、普通服务路径、申诉路径和回退状态八项字段；不使用姓名、面部、连续位置或“区块链身份证”。回执到期不自动续期，任一门失败即盖“返回重译”，物理停止键把空间从公众校样状态恢复到普通服务状态 [metric:proof_receipt_required_field_count] [metric:proofing_gate_count]。
+
+五个状态同时约束服务与空间：S0 只运行普通服务；S1 在隔离区用公开/合成问题校译；S2 输出只给人工复核、不面向公众；S3 六门全部通过后才展示带回执的公众校样；S4 只能选择限量采纳、返回重译或拆除 AI 层并恢复基线。120 秒人工接管和一个开放班次内确认撤回均是待实测、待专业校准的概念目标 [metric:pilot_operating_state_count] [metric:pilot_handoff_target_seconds]。
+
+![城市校样回执](assets/figures/proof-receipt.png)
+
+![六类包容性校译路径](assets/figures/inclusion-paths.png)
 
 ## 用地、建筑规模与拆改留方案
 
@@ -145,8 +186,11 @@ scenarios: ["enterprise-service-copilot", "public-safety-operations-review", "ai
 | T-04 大钟寺采用译院 | 服务首问、终端循环、国际回译 | 官方重点区与站点锚定确认 |
 | T-05 六道公共门 | 来源、同意、可达、复核、回退、维护 | 道路红线与无障碍专项确认 |
 | T-06 十二场景轮换计划 | 90 天测试—公开复盘—续期/停止 | 数据授权、人工责任人、投诉渠道 |
+| T-07 TG-PILOT-01 校译单元 | 五区、两人在场、隔离终端、物理停止、回执与退场 | 真实场地、运营主体、消防与无障碍专业确认 |
 
 每个项目在进入下一阶段前提交六项“校样包”：问题卡、空间卡、数据/权利卡、人工责任卡、停止恢复卡和维护退场卡。T-01、T-05 属 R1 可逆组件；T-06 从 R0 流程开始；T-02—T-04 只有在建筑、权属、消防、市政和运营主体确认后才可能从 R1 进入 R2。资金只在后续由专业团队形成成本区间，本稿不编造投资额或财政承诺。
+
+T-07 将责任进一步拆开：场地方只批准空间与普通服务基线，服务运营人掌握人工接管，AI 供应方提交模型与数据说明，专业复核员判断安全/权利/可达，社区见证人只记录可达与申诉观察、不接触案例内容，维护人负责版本、有效期和拆除记录。六类角色目前均未被真实机构指派；缺任一关键责任人，S3 公众校样不得开始。
 
 第一阶段只做可逆标签、服务流程和临时场景；第二阶段在调查后进行三译院适应性更新；第三阶段等待官方边界和专项条件后再决定系统性建设。阶段一图形面积只表示依赖顺序，不是开工范围 [metric:phase_1_area_sqm] [depth:renewal_project_list] [depth:phasing_implementation]。
 
