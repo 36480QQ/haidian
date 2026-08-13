@@ -57,7 +57,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "52f97cfdc5b3d764121018eddcb1cbc3de841b7b77054038141126571939d350"
+      "sha256": "9ce0f2079e5f8e182c86bfc9705ef6f675dcab46a1bef35255a8f6d5767533c2"
     },
     {
       "path": "compliance_matrix.json",
@@ -115,7 +115,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "9c18a744fd6fa3e59e289a06f6054a5ba554ea5ed1ff3ad873aa011b98cddfad"
+      "sha256": "896283e7eb0b408b3f6e81218214204616b63cd49b177a3bb338c3d60779d81f"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -244,7 +244,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "94e8096a9181a93508ae2039856c71f574381fff790468a99e33ba1620632399"
+      "sha256": "c27c3468f1de10e66bac0e5ef1d107726a8efcce126856595689b9a9eba4a382"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -297,7 +297,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "573ddc032b52b45174fa6ebb9e66cef5952a5f552fefdb525613397d20212470"
+      "sha256": "cb37fb0d6f6cb08defda4b13417c03324ddb02660586c9115db48fc39ff29b35"
     }
   ],
   "validation_claim": {
