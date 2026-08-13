@@ -19,6 +19,11 @@ class MetricTypeTests(unittest.TestCase):
         self.assertFalse(is_json_number(True))
         self.assertFalse(is_json_number(False))
 
+    def test_non_finite_values_are_not_json_numbers(self) -> None:
+        for value in (float("nan"), float("inf"), float("-inf")):
+            with self.subTest(value=value):
+                self.assertFalse(is_json_number(value))
+
     def test_boolean_known_metric_fails_deterministic_validation(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             path = Path(tmp) / "metrics.json"

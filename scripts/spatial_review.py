@@ -358,7 +358,7 @@ def check_key_areas(report: SpatialReport, site: Any, key_items: list[tuple[str,
                 )
             )
         expected_area = props.get("official_area_sqm")
-        if isinstance(expected_area, bool):
+        if is_official and isinstance(expected_area, bool):
             report.add(
                 SpatialIssue(
                     "KEY_AREA_AREA_TYPE",

@@ -249,6 +249,29 @@ class SpatialReviewTests(unittest.TestCase):
             self.assertFalse(report.ok)
             self.assertIn("KEY_AREA_AREA_MISMATCH", {issue.check_id for issue in report.issues})
 
+    def test_provisional_key_area_ignores_non_authoritative_area_field(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            base = "submissions/alice/spatial-provisional-key-area"
+            write_valid_spatial_package(root, base)
+            path = root / base / "geometry/key_areas.geojson"
+            data = json.loads(path.read_text(encoding="utf-8"))
+            props = data["features"][0]["properties"]
+            props.update(
+                source_type="agent_generated_design",
+                confidence="medium",
+                geometry_role="design_proposal",
+                official_boundary=False,
+                official_area_sqm=True,
+            )
+            write_json(root, f"{base}/geometry/key_areas.geojson", data)
+
+            report = review_submission(root / base, REPO_ROOT, "formal")
+
+        check_ids = {issue.check_id for issue in report.issues}
+        self.assertNotIn("KEY_AREA_AREA_TYPE", check_ids)
+        self.assertIn("KEY_AREA_NOT_OFFICIAL", check_ids)
+
     def test_absolute_metric_drift_is_reported_without_blocking_legacy_package(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
