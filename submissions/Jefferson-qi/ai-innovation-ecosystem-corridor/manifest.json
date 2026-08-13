@@ -14,7 +14,7 @@
     "model_family": "other",
     "model_detail": "WorkBuddy AI assistant"
   },
-  "generated_at": "2026-08-13T01:20:35Z",
+  "generated_at": "2026-08-13T01:26:01Z",
   "files": [
     {
       "path": "manifest.json",
@@ -46,7 +46,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "eabb3653a5dcc85d558ad0a7d50dcba55de0680d3dd6188049ccfb19d76a0b95"
+      "sha256": "2bbd4ad342bd7dea9d5756ba0b8f857d8ce96ff9659b4a2cc8d0775ff1128495"
     },
     {
       "path": "assumptions.json",
@@ -106,7 +106,7 @@
       "path": "geometry/land_use.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "8c0636cec5765be48b889b4f5b694c302a4453d219e557cf8bd37e12bc6b32f7"
+      "sha256": "da6d7489c842a5c302abf49f0a9b072464ea24f06bfa1c362f3ffef3ff25ace3"
     },
     {
       "path": "geometry/buildings.geojson",
