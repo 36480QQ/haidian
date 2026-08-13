@@ -139,7 +139,7 @@ iteration: "v1.0"
 
 ## 指标体系、面积复算与合规矩阵
 
-核心指标与设计含义 [metric:site_area_sqm]：基地面积 11,412,825 m²（provisional）；绿地率 37.3% 支撑人才生活与创新交往 [metric:green_ratio]；公共空间占比 16.6% 支撑场景试验与公共体验 [metric:public_space_ratio]；建筑密度 12.1% 为概念承载力参考 [metric:building_density]；重点区域 3 处 [metric:key_area_count]。全部指标公式、来源与复算过程见 `metrics.json`，任务覆盖见 `compliance_matrix.json`（公告 1.3—1.5 全部任务与 agent.1—agent.6），专业标准覆盖见 `standard_matrix.json`，设计深度覆盖见 `design_depth_matrix.json` [depth:metrics_recalculation]。
+核心指标与设计含义 [metric:site_area_sqm]：基地面积 11,412,825 m²（provisional）；绿地率 37.3% 支撑人才生活与创新交往 [metric:green_ratio]；公共空间占比 16.6% 支撑场景试验与公共体验 [metric:public_space_ratio]；建筑密度 12.1% 为概念承载力参考 [metric:building_density]；重点区域 3 处 [metric:key_area_count]。星地协同指标 [metric:star_ground_product_latency_min] 定义信息产品生成时延（接收完成至待人工复核产品，单景口径，分钟），不含过境等待与人工复核段，当前为口径登记（unknown），待硬件在环基线化后回填 P50/P95；目标表述为相对式：较传统"原始数据下传+地面解译"流程缩短一个数量级（小时级→分钟级）。全部指标公式、来源与复算过程见 `metrics.json`，任务覆盖见 `compliance_matrix.json`（公告 1.3—1.5 全部任务与 agent.1—agent.6），专业标准覆盖见 `standard_matrix.json`，设计深度覆盖见 `design_depth_matrix.json` [depth:metrics_recalculation]。
 
 ![核心指标复算与证据链图](assets/figures/metrics-evidence.png)
 
