@@ -4,12 +4,12 @@
  "note_en": "A register of this package's own errors. Not a changelog: a changelog says what changed, this says what was wrong, what shape the error had, who found it, and which commit fixed it. Every entry names a commit, and the build verifies that commit exists and touched the file blamed. An errata register that cannot be joined to the repository is the defect it records.",
  "why_zh": "全场 351 份方案中没有一份勘误、撤回或作者自述的复盘。一个主张城市应当公开自身误差的方案，不能自己呈现一个无瑕的表面：它提出的整套机制都建立在「看不见失败的测量不值得信任」之上，文档同理。",
  "counts": {
-  "total": 64,
+  "total": 65,
   "by_found_by": {
    "audit": 25,
    "own-gate": 5,
    "external-reviewer": 4,
-   "self": 30
+   "self": 31
   },
   "by_shape": {
    "reference-does-not-resolve": 4,
@@ -25,6 +25,7 @@
    "six-classes-for-a-seven-class-partition": 1,
    "the-table-stopped-being-a-table": 1,
    "index-that-does-not-index": 1,
+   "number-read-off-a-drawing-instead-of-computed": 1,
    "recorded-where-it-was-found-not-where-it-is-looked-for": 1,
    "two-of-our-own-rules-collide-under-a-condition": 1,
    "rule-applied-to-others-but-not-to-self": 2,
@@ -480,6 +481,16 @@
    "what_zh": "图纸索引上方写「共十二张图纸，FIG.00–FIG.11 连续编号」，下方的表只有九行（FIG.01–FIG.09）。缺 FIG.00（全文开篇那张）、FIG.10（人视街道剖面）与 FIG.11（区域协同接口）——**而正文在 L531 按编号引用了 FIG.11**，把读者指向一个不含它的索引。同一处的复核清单则编号成 1…10、8、9，十二项用了十个号。",
    "why_zh": "两个语种带着同样的九行，所以这不是翻译疏漏，是**完整性声明写在表格上方那句话里、而不是由表格本身承担**。清单的编号是看得见的那个缺陷，危险的是另一个：清单上每一项都指名一个路径，一份把评审指向不存在文件的清单，比没有清单更糟。",
    "fix_zh": "两者都改为生成：索引由 `build_figure_index.py` 从随包 PNG 生成，句中的份数写自 `len(FIGURES)`，并断言每张随包图有编号、每个编号有文件、正文引用的每个 FIG.NN 都能解析到行；清单由 `enumerate` 编号，且十二项声明的 17 条路径必须全部在包内解析。"
+  },
+  {
+   "id": "E65",
+   "commit": "b9467e07",
+   "file": "assets/figures/reach.png",
+   "found_by": "self",
+   "shape": "number-read-off-a-drawing-instead-of-computed",
+   "what_zh": "FIG.21 的头条数字——全线最远处距最近水准点——写的是 1,107 m。它是从那张剖面**采样曲线**上取最大值得到的：600 个采样点摊在 9,443 m 上，分辨率 15.7 m，峰值正好落在两点之间。精确值是分析解：线上离所有水准点最远的位置，只能是某个内部间隔的中点或线路两端——**1,111.2 m**。偏差 4 m 由 FIG.23 暴露：两张图对同一个测量报了两个数（1,107 与 1,111）。",
+   "why_zh": "**这是本方案全部自我批评所依赖的那个数，而它是从图上读出来的，不是算出来的。** 本包通篇主张「不能被独立复算的数不构成证据」，并据此给别人写过意见；然后把自己最重要的一个读数，从一条为了画图而采样的折线上读了下来。它还扩散了：正文两处、图纸目录一行、以及三份 PR 说明都写着 1,107。误差方向也值得记——**采样只会低估峰值**，因此这个错误让本方案的自我批评看起来比实际温和了一点。",
+   "fix_zh": "改为解析求解（内部间隔中点与两端取最大），并把 1,107 全包扫除；P5 的时间随之从 30.8 分钟改为 30.9 分钟。FIG.23 加断言：它与 FIG.21 对同一测量的取值相差超过 0.5 m 即拒绝构建——**这两张图是被彼此发现的，现在被彼此看住**。"
   },
   {
    "id": "E64",
