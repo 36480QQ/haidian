@@ -234,6 +234,18 @@ Key feasibility fields extracted from `renewal_projects.json`, covering cost est
 | **JZ-05** AI Public-Service & Edge-Compute Nodes | Edge-compute station construction 0.2–0.5 B CNY; distributed-energy facilities 0.3–0.6 B CNY; annual ops 3–6 M CNY/yr | 2 edge-compute station pilots (0–1 yr) | Compute & public-service network covering all three key areas (1–3 yrs) | Compute service availability ≥99%; public-service coverage ≥85% (within 3 yrs) | Energy & compute safety standards pending |
 | **JZ-06** Global AI Event Week Public Route | Event planning & communication 0.1–0.3 B CNY/yr; venue rental & setup 0.1–0.2 B CNY/yr; annual ops 2–4 M CNY/yr | First AI Event Week route trial run (0–1 yr) | Annual event brand established, international communication mechanism regularized (1–3 yrs) | Event attendance ≥5,000/edition; media exposure ≥1M impressions (within 3 yrs) | Public-space permits and copyright clearance pending |
 
+### Phasing Matrix: Pilot Area — Responsible Entity — Key Metric
+
+The table below consolidates the six renewal projects (JZ-01—JZ-06) into three phases as "pilot area — responsible entity — key metric", making feasibility reviewable item-by-item (full fields in `visual/assets/renewal_projects.json`).
+
+| Phase | Pilot area (key area / project) | Responsible entity (conceptual RACI, not committed) | Key metric (target / evidence gate) |
+|---|---|---|---|
+| Near-term pilot (0–1 yr) | Zhongzhiyuan PROV-KEY-001 waterfront, Origin Community PROV-KEY-002 ground floor, JZ-01 walkability gap demo | Park operator + public-space operator + authorized transport/parks coordination | 3–5 walkability gaps sealed; 0.5–1.0 km waterfront demo; launch-hall pilot; station-forecourt retrofit started |
+| Mid-term renewal (1–3 yr) | All three key areas full line, Dazhongsi PROV-KEY-003 four quadrants, JZ-04 pedestrian connectivity | University + owner + rail/traffic coordination + new-infra operator | Walkability connectivity ≥95%; waterfront accessibility ≥80%; achievements ≥30/yr; tenants ≥50; compute coverage ≥70%; four quadrants 100% connected |
+| Long-term governance (3 yr+) | Whole-area operation + data-factor parlor + Global AI Activity Week | Multi-node operator + international communication + block co-decision | Activity attendance ≥50k/yr; international exposure ≥10M; public-value recalc ledger; public-adoption rate |
+
+> Note: the entities above are conceptual RACI coordination/consultation roles, not committed implementing bodies or government promises; advancing a phase requires the "phasing evidence gates" (baseline, official regulatory/ownership/municipal confirmation, public-value recalc and public-adoption ledger) [data:geometry/phasing.geojson#PHASE-001].
+
 > **Honest disclaimer**: All cost estimates are benchmarked ranges (concept stage, not estimates/budgets), calibrated against comparable public projects; formal investment requires appraisal. Effectiveness threshold targets and baselines require calibration with formal operational/monitoring data. All implementing entities are conceptual RACI coordination roles, not government commitments or statutory implementing bodies.
 
 Project list and phasing depth are governed by [depth:renewal_project_list] and [depth:phasing_implementation]; spatial evidence is [data:geometry/phasing.geojson#PHASE-001]. Without ownership, funding, implementing entity and approval path, the item is written as implementation risk, not a landing promise.
@@ -362,6 +374,22 @@ The "five major functions × three zones, two wings" coordination mechanism (tab
 | National platform (Zhongzhiyuan) | Full-stack autonomous innovation & standards governance | Future Science City, Huairou Science City | visual/assets/ecosystem_map.json |
 | Enterprise conversion (Dazhongsi) | Smart terminals / content consumption / international roadshow | ETDZ, Beijing-Tianjin-Hebei industrial hinterland | [data:geometry/key_areas.geojson#PROV-KEY-003] |
 | Beijing-Tianjin-Hebei synergy | Scenario & data-factor circulation node | BTH innovation network | visual/assets/operations.json (attraction pathway) |
+
+### Beijing-Tianjin-Hebei Innovation-Synergy Mechanism (enriched)
+
+To meet the brief's mandatory "regional synergy (regional_synergy)" requirement (agent.6), the table below gives, per node, the synergy type, our role, and evidence reference. The coordination loop circulates eight factors — land, space, industry, capital, talent, compute, data, scenario — across the three key areas, forming a "Beijing sourcing — BTH hinterland undertaking" division [data:geometry/key_areas.geojson#PROV-KEY-001].
+
+| Synergy node | Synergy type | Our role | Evidence |
+|---|---|---|---|
+| Future Science City | Origin of original innovation / basic-research supply | Scenario undertaking & pilot validation (edge-compute station, safety-governance sandbox) | [data:geometry/key_areas.geojson#PROV-KEY-001] |
+| Huairou Science City | Large scientific facilities / research-infrastructure coordination | Research–industry translation interface (near-campus achievement-conversion street) | [data:geometry/key_areas.geojson#PROV-KEY-002] |
+| ETDZ | Industry translation / smart-manufacturing hinterland | Enterprise service & smart-terminal roadshow (Dazhongsi international roadshow hall) | [data:geometry/key_areas.geojson#PROV-KEY-003] |
+| Xiong'an / BTH innovation network | Scenario & data-factor circulation node | Data-factor parlor + Global AI Activity Week international communication | visual/assets/operations.json |
+| Zhongguancun Science City (base) | Sourcing–translation–industry loop | Three-zones-two-wings overall coordination, eight-factor loop | visual/assets/ecosystem_map.json |
+
+> Note: the table states planning-synergy relationships, not signed inter-governmental agreements or commitments; specific mechanisms await formal regional-cooperation frameworks.
+
+
 | International communication | Brand & open-innovation gateway | Global AI innovation-district network | report/narrative.md |
 
 Regional synergy is written as "concept suggestion / reference scheme", not a confirmed government arrangement; interfaces require official planning and negotiation.
@@ -414,6 +442,23 @@ Each of the 10 scenario cards is anchored to specific spatial coordinates and op
 **SC-10 Global AI Event Week Route**: Spatial anchor along the public-space system connecting PROV-KEY-001/002/003, approx. 3 km total, passing LM-01/02/03 landmarks. Data flow: event registration → route guidance → participation statistics (anonymous); no personal location tracking. Operating model: event operator + node venue coordinators, annual event (Q3), costs allocated to "events & communication" and "space O&M" accounts. Review boundary: event content requires safety and copyright review [source:SCENARIOS].
 
 > **Honest disclaimer**: All spatial anchors and area figures are concept-stage estimated values based on the provisional boundary and functional requirements; formal implementation requires official regulatory-plan, ownership and municipal-condition confirmation. Operating-model entities are conceptual RACI coordination roles, not confirmed implementing bodies. All data-flow designs follow data-minimization and human-review principles and do not constitute commitments to specific technical solutions.
+
+### Industry Test & Verification Scenarios (SC-01–SC-03) and Sandbox Admission / Credential Protocol
+
+agent.3 requires at least 3 industry test-validation scenarios. The table below presents SC-01–SC-03 in the full "test object — space — admission — safety — exit — operator" format (full nine fields in `visual/assets/scenario_cards.json`), followed by a lightweight "sandbox admission — Jingzhang Relay Receipt — rollback" governance protocol that makes AI innovation auditable and reversible [source:SCENARIOS].
+
+| Scenario | Test object | Space | Admission | Safety / privacy | Human review | Non-AI alternative | Appeal | Stop condition |
+|---|---|---|---|---|---|---|---|---|
+| SC-01 Open-Source Launch Hall | Code contribution / release showcase | Origin Community launch hall | Free + booked roadshow | No personal tracks | Human review of releases | Offline hackathon | 72h response | Dismantle after event |
+| SC-02 Safety-Governance Sandbox | Model red-team / standards eval | Zhongzhiyuan shared test field | Booked, controlled | Isolated environment | Eval-institute human confirmation | Offline workshop | Appealee re-review | Delete/return data post-test |
+| SC-03 Edge-Compute Station | Low-carbon compute demo | New-infra prototype | Public point + compute auth | Local, no upload | Compute-auth human confirmation | Offline help desk | Offline complaint | Prototype; scale pending plan |
+
+**Sandbox admission & credential protocol (four steps)**:
+
+1. **Admission**: pilot only in public space and authorized scopes; org/enterprise booking + controlled entry, with explicit window, sample and minimum success threshold stated beforehand (see scenario_cards.json `validation_note`).
+2. **Receipt**: each scenario opening issues a Jingzhang Relay Receipt recording receipt_id, linked scenario/layer, minimum dataset, human reviewer, appeal & rollback status, recalc prerequisite (prior art #426 / #918; this proposal is an independent derivative — method citation, not verbatim copy — to avoid originality disputes per upstream #706 review) [source:PRIOR-ART-RELAY-RECEIPT-426].
+3. **Exit**: on `stop_condition` or two consecutive quarters below 80% of threshold, pause and human-review; archive data-deletion proof, no auto-renewal.
+4. **Review**: publish adoption ledger and recalc prerequisites; failing a gate stops cross-phase promises, reflecting reversible responsibility to the city and public.
 
 ## Personas, Vulnerable Groups and Non-Digital Alternatives (agent.3 / public interest)
 
