@@ -175,16 +175,14 @@
     },
     "a3_booklet_page_count": {
       "status": "known",
-      "value": 48,
+      "value": 84,
       "unit": "count",
       "source_files": [
         "drawings/a3-booklet.pdf"
       ],
       "formula": "PDF page count",
       "confidence": "high",
-      "assumptions": [
-        "Evidence-led final booklet; page count reduced by removing template filler and consolidating substantive maps, contracts and delivery evidence."
-      ]
+      "assumptions": []
     },
     "urban_health_dimension_count": {
       "status": "known",

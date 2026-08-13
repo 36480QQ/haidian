@@ -15,13 +15,14 @@ scenarios: ["enterprise-service-copilot", "ai-traffic-walkability", "robot-deliv
 
 > **Core proposition: universities and leading firms are anchors, the district is an incubator, and community is infrastructure.** Haidian does not lack innovation sources; it needs urban interfaces that turn talent relations into projects, projects into firms, and growing firms into the next round of shared capacity.
 
-## Decision brief | evidence, plan, contract and acceptance
+## Original AI-planning mechanism: an auditable multi-agent control plane
 
-The proposal begins with public problem evidence rather than impression. E0 official material confirms complex rail and cross movement, breaks, multiple actors and segment differences. Actual flows, accessibility barriers, building safety, rights and fire interfaces remain E3 pending verification and cannot trigger permanent works. Spatially, a public innovation axis connects verification at Zhongzhiyuan, incubation at AI Origin and conversion at Dazhongsi; fifteen projects and six east-west stitches use the same provisional GeoJSON system. Delivery starts with a reversible 90-day pilot for Z1 shared validation, O1 open-project clinic and D1 first-order centre, followed by a human decision to continue, adjust or exit.
+The proposal does not treat AI image production as planning innovation. Its original contribution is a six-agent evidence-compilation chain that turns incomplete site signals into reviewable investigation tasks, spatial options, bounded scenarios and operating contracts—without allowing an agent to approve its own output. A1 stewards provenance; A2 compiles the seven-part health check; A3 locates projects and exposes spatial conflicts; A4 designs bounded scenarios with a non-AI equivalent; A5 binds operations to RACI, accounts and acceptance; A6 may veto release when accessibility, affordability or resident safeguards fail. This chain integrates **industry, space, mobility, public service, culture and governance** on one decision record rather than using six disconnected dashboards.
 
-![First-phase delivery, project contracts, acceptance and exit](assets/figures/metrics-evidence.en.png)
+![Multi-agent urban-renewal control plane](assets/figures/metrics-evidence.en.png)
 
-Every project contract binds the spatial task, operator, professional sign-off, quantity and cost method, deliverable, acceptance evidence and stop gate. Public safeguards include anonymous passage, at least two resident seats, at least 20% affordable opening hours, accessibility sign-off and no service-for-data exchange. AI only recommends and aggregates; release always retains human authorization, appeal, shutdown and an audit trail. This is a reading entry, not a self-score or construction commitment.
+Four named human gates retain evidence acceptance, pilot release, professional sign-off, and continue/adjust/exit decisions. The public-interest gate requires at least two resident signers, at least 20% affordable service hours and an always-open human/non-AI route. A stepped, non-deprivation evaluation compares similar nodes starting at different times while nobody loses an existing service route; outcomes include time-to-project, valid tests, first orders, anonymous access, affordable hours, accessibility, complaints/takeover and group gaps. The protocol is a concept ready for professional development—not proof of deployment—and produces no field score before a real baseline and human review.[depth:risk_missing_data]
+
 
 ## Design Basis and Source List
 
@@ -71,7 +72,7 @@ The current submission records **known, unknown and proposed** separately. Geome
 | Feasibility 20% | 7D check, 15 contracts, WP0-6, 90-day pilot and funding accounts | Project cards + mainline + funding matrix |
 | Public interest 10% | Anonymous passage, accessibility, affordability, family support and tech opt-out | Public gates + resident scenarios |
 | Risk and compliance 10% | Provisional limits, sign-off, stop rules, rights clearance and no invented score | Assumption/compliance matrices + stop conditions |
-| Expression completeness 15% | Bilingual 48-page A3, eight A0 boards, HTML, GeoJSON and shared metrics | Manifest + bilingual contract + self-check |
+| Expression completeness 15% | Bilingual report, 84-page evidence-led A3, A0, HTML, GeoJSON and shared metrics | Manifest + bilingual contract + self-check |
 
 This matrix is a reading guide, not a self-awarded score. Formal review remains external.[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]
 
@@ -120,6 +121,31 @@ The Jingzhang Growth Mesh sits on Haidian's Jingzhang rail heritage corridor, no
 
 ![Site location and regional collaboration](assets/figures/dia-21-location.en.png)
 
+
+
+## District position and problem evidence
+
+The proposal does not replace site judgment with a generic technology-park image. Official public evidence establishes three safe premises: the roughly 9-km Jingzhang railway heritage park meets Line 13, high-speed rail and cross streets through varied vertical relationships, breaks and difficult crossings; railway, universities, institutes, subdistricts, parks and communities create a multi-owner, phased coordination problem; and the roughly 37-km² AI innovation belt defines three zones, two wings and a 1-2 km urban interface where universities, research, firms, talent and public space overlap.[source:OFFICIAL-JINGZHANG-PLANNING-2021] [source:OFFICIAL-HAIDIAN-AI-BELT-2026]
+
+![District location and innovation anchors](assets/figures/map-a1-regional-location.en.png)
+
+The health check separates E0 official/primary evidence, E1 provisional derivation and E3 field verification. Complex longitudinal/cross movement, multiple actors and sectional differences are E0; a continuous service chain among the three cores is E1; interface quality, accessibility obstacles, real flows and user needs remain E3 until supported by photographs, observation and interviews. E3 cannot trigger permanent works.
+
+![Problem evidence and health-check grades](assets/figures/map-a2-evidence-diagnosis.en.png)
+
+## Masterplan and located project portfolio
+
+The masterplan locates all fifteen projects: Zhongzhiyuan asks whether a technology can be validated credibly; AI Origin asks whether people can become a stable team and project; Dazhongsi asks whether a verified project can secure a first order and grow into an enterprise. The Zhongguancun service wing provides callable compute, data, IP, compliance and capital interfaces; the Xiaoyuehe wing supplies bounded public-realm test settings. Six cross-corridor seams prioritize links among stations, universities, parks, communities and river edges; exact widths, levels and works await survey.
+
+![Masterplan and fifteen located projects](assets/figures/map-a3-masterplan-projects.en.png)
+
+## Operating scheme and project contracts
+
+Operations follow a steering committee—district platform—three core units—professional partners—users/public responsibility chain. Shared validation, the open-source living room/night school, and first-order/enterprise services each define a catalogue, public duty, operating income, cost account, acceptance evidence and stop gate. Every project contract includes problem evidence, spatial boundary, works and operating task, RACI, quantities/cost method, milestones, acceptance evidence, risks and stop conditions.
+
+![Operating scheme and project contracts](assets/figures/ops-a1-operations-contracts.en.png)
+
+Quantity and cost follow “price only measured quantities; no quantity, no invented total.” Public realm, building renewal, validation equipment, operating launch and contingency keep separate quantity sources. Formal estimates require a confirmed boundary, engineering survey, professional design, market quotation and an authorized delivery model. The unit account defines revenue, cost and stress-test formulas only—never invented rent, investment or payback.
 
 
 ## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
@@ -844,7 +870,7 @@ The machine-readable result is `visual/assets/project_library_rehearsal.json`. I
 | Feasibility 20% | 7D check, 15 contracts, WP0-6, 90-day pilot and funding accounts | Project cards + mainline + funding matrix |
 | Public interest 10% | Anonymous passage, accessibility, affordability, family support and tech opt-out | Public gates + resident scenarios |
 | Risk and compliance 10% | Provisional limits, sign-off, stop rules, rights clearance and no invented score | Assumption/compliance matrices + stop conditions |
-| Expression completeness 15% | Bilingual 48-page A3, eight A0 boards, HTML, GeoJSON and shared metrics | Manifest + bilingual contract + self-check |
+| Expression completeness 15% | Bilingual report, 84-page evidence-led A3, A0, HTML, GeoJSON and shared metrics | Manifest + bilingual contract + self-check |
 
 Every claimed mechanism points to a document, figure, owner, limit and acceptance state; field results remain zero until actual operation.
 
@@ -872,23 +898,3 @@ The complete asset-rights ledger is `report/copyright_statement.md`. It covers t
 3. Author-cleared Mars Plan theory and methods.
 4. Primary institutional sources for the seven international cases.
 5. Local snapshots of professional urban-design, regulatory-planning, land-use and design-depth standards.
-
-## Site position and evidence-led diagnosis — deepening note
-
-The scheme no longer substitutes a generic technology-park image for a site diagnosis. Public official sources confirm: a roughly 9 km Jingzhang corridor with complex Line 13/high-speed-rail vertical relationships and cross-street breaks; multiple railway, university, district, park and community actors requiring phased negotiation; and an approximately 37 km2 AI innovation belt with three zones, two wings and a 1-2 km urban interface.[source:OFFICIAL-JINGZHANG-PLANNING-2021] [source:OFFICIAL-HAIDIAN-AI-BELT-2026]
-
-![Regional position and anchors](assets/figures/map-a1-regional-location.en.png)
-
-Evidence is graded E0 (official/primary public), E1 (derived from provisional geometry and public sources) and E3 (pending field verification). Interface quality, accessibility barriers, actual flows and user demand remain E3 and cannot directly trigger construction investment.
-
-![Evidence-led diagnosis](assets/figures/map-a2-evidence-diagnosis.en.png)
-
-## Master plan, operations and contracts — deepening note
-
-All fifteen projects are placed in the three cores: Zhongzhiyuan tests credibility, AI Origin forms teams and projects, and Dazhongsi connects first orders and enterprise growth. Six east-west stitches connect transit, universities, parks, communities and the river; widths, levels and engineering conditions await measured survey.
-
-![Master plan and project placement](assets/figures/map-a3-masterplan-projects.en.png)
-
-Operations use a five-level responsibility chain and service catalogue. Every project contract includes problem evidence, spatial boundary, works and operating task, RACI, quantity/cost method, milestones, acceptance evidence and stop gates. Quantities must precede market inquiry; no total investment, rent or payback is invented.
-
-![Operations and project contracts](assets/figures/ops-a1-operations-contracts.en.png)
