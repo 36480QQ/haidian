@@ -251,9 +251,6 @@
       "status": "known",
       "value": 14,
       "unit": "count",
-      "source_files": [
-        "geometry/ai_service_nodes.geojson"
-      ],
       "formula": "count(ai_service_nodes)",
       "confidence": "medium",
       "assumptions": []
