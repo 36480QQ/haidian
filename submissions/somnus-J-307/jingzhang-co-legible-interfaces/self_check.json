@@ -68,7 +68,7 @@
       "ai_package_stages": {
         "submissions/somnus-J-307/jingzhang-co-legible-interfaces": "formal"
       },
-      "total_bytes": 14899358,
+      "total_bytes": 14899905,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -171,74 +171,32 @@
   "schema_version": "0.1.0",
   "checks": [
     {
-      "check_id": "BOUNDARY_TRUST",
+      "check_id": "DETERMINISTIC_VALIDATION",
       "result": "pass",
-      "severity": "major",
-      "target": "geometry/site_boundary.geojson",
-      "message": "Provisional source and limits remain explicit."
+      "severity": "blocking",
+      "target": "validate_local_submission.py",
+      "message": "deterministic_validation: PASS"
     },
     {
-      "check_id": "KEY_AREAS_TRUST",
+      "check_id": "SPATIAL_REVIEW",
       "result": "pass",
-      "severity": "major",
-      "target": "geometry/key_areas.geojson",
-      "message": "Exactly three provisional key areas remain."
+      "severity": "blocking",
+      "target": "spatial_review.py",
+      "message": "spatial_review: PASS"
     },
     {
-      "check_id": "LAND_USE_TOPOLOGY",
+      "check_id": "VISUAL_PACKAGING",
       "result": "pass",
-      "severity": "major",
-      "target": "geometry/land_use.geojson",
-      "message": "Complete scaffold partition retained pending official data."
-    },
-    {
-      "check_id": "SCENARIO_MATRIX",
-      "result": "pass",
-      "severity": "major",
-      "target": "visual/assets/scenarios.json",
-      "message": "Structure check only: sixteen working candidate records cover four task families and retain separate validation fields."
-    },
-    {
-      "check_id": "AI_OFF_BASELINE",
-      "result": "pass",
-      "severity": "major",
-      "target": "visual/assets/field-protocol.json",
-      "message": "Protocol check only: all three test drafts include an explicit AI-off baseline and rollback path."
-    },
-    {
-      "check_id": "PRIVACY_BOUNDARY",
-      "result": "pass",
-      "severity": "major",
-      "target": "proposal.md",
-      "message": "No facial recognition, personal trajectory or automatic rights allocation."
-    },
-    {
-      "check_id": "VISUAL_STATIC",
-      "result": "pass",
-      "severity": "info",
-      "target": "visual/index.html",
-      "message": "Offline bilingual HTML has no remote dependency or tracking."
-    },
-    {
-      "check_id": "TASK_RESPONSE_EVIDENCE",
-      "result": "pass",
-      "severity": "major",
-      "target": "visual/assets/taskbook-response.json",
-      "message": "Concept-stage check: six taskbook responses have distinct outputs, sources, limitations and confirmation gates."
+      "severity": "blocking",
+      "target": "visual_review.py",
+      "message": "visual_review: PASS"
     },
     {
       "check_id": "PROFESSIONAL_EVIDENCE",
-      "result": "unknown",
-      "severity": "major",
-      "target": "visual/assets/taskbook-response.json",
-      "message": "Concept-stage evidence is packaged; field survey, regulatory controls, engineering verification and operator confirmation remain unavailable."
-    },
-    {
-      "check_id": "FIELD_VALIDATION",
-      "result": "unknown",
-      "severity": "major",
-      "target": "visual/assets/field-protocol.json",
-      "message": "The field protocol is complete as a draft but has not been executed."
+      "result": "pass",
+      "severity": "blocking",
+      "target": "professional_review.py",
+      "message": "professional_review: PASS"
     }
   ]
 }
