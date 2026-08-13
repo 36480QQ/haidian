@@ -1184,6 +1184,15 @@ Sessions per year are converted from the re-survey cadence each point declares i
 | BM-303 | third | 12 | the sub-district office or residents' committee | 18–30 | 36–60 | 200–500 | community governance service procurement — sub-district |
 | **Total** | — | **47** | — | **133–214** | **148–244** | **2,800–6,800** | — |
 
+The table above prices the network **as laid out**. FIG.21 measures the worst walk on the line at 1,107 m — 30.8 minutes for P5 — and finds six of nine segments failing this proposal's own fifteen-minute rule; closing it needs nine more third-order points. **That is not the same table**: a compliant network costs the following again, on the same model. Letting the as-laid-out figure stand in for the compliant one is the substitution this package would flag in someone else's.
+
+| To close the gap | |
+|---|---|
+| More third-order points | 9 |
+| More re-surveys a year | 108 |
+| More paid hours | 162–270 |
+| More annual cost | CNY 21,240–74,700 |
+
 **Volunteer hours are counted and not priced.** Pricing them would inflate a cost nobody pays; omitting them would pretend they are free. They are the hours this mechanism asks of residents each year, and that is a quantity to see before agreeing to it.
 
 At CNY 120–260 per hour, paid labour runs CNY 15,960–55,640 a year, or **CNY 18,760–62,440 a year** including consumables — all bands, none of them point estimates.
