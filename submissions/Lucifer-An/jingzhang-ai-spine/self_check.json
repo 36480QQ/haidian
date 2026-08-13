@@ -26,6 +26,10 @@
         "submissions/Lucifer-An/jingzhang-ai-spine/assets/figures/metrics-evidence.png",
         "submissions/Lucifer-An/jingzhang-ai-spine/assets/figures/mobility-bluegreen.en.png",
         "submissions/Lucifer-An/jingzhang-ai-spine/assets/figures/mobility-bluegreen.png",
+        "submissions/Lucifer-An/jingzhang-ai-spine/assets/figures/regional-synergy.en.png",
+        "submissions/Lucifer-An/jingzhang-ai-spine/assets/figures/regional-synergy.png",
+        "submissions/Lucifer-An/jingzhang-ai-spine/assets/figures/scenario-cards.en.png",
+        "submissions/Lucifer-An/jingzhang-ai-spine/assets/figures/scenario-cards.png",
         "submissions/Lucifer-An/jingzhang-ai-spine/assets/figures/site-overview.en.png",
         "submissions/Lucifer-An/jingzhang-ai-spine/assets/figures/site-overview.png",
         "submissions/Lucifer-An/jingzhang-ai-spine/assumptions.json",
@@ -54,13 +58,16 @@
         "submissions/Lucifer-An/jingzhang-ai-spine/self_check.json",
         "submissions/Lucifer-An/jingzhang-ai-spine/sources.json",
         "submissions/Lucifer-An/jingzhang-ai-spine/standard_matrix.json",
+        "submissions/Lucifer-An/jingzhang-ai-spine/visual/assets/phasing.json",
+        "submissions/Lucifer-An/jingzhang-ai-spine/visual/assets/rights_ledger.json",
+        "submissions/Lucifer-An/jingzhang-ai-spine/visual/assets/scenarios.json",
         "submissions/Lucifer-An/jingzhang-ai-spine/visual/index.en.html",
         "submissions/Lucifer-An/jingzhang-ai-spine/visual/index.html"
       ],
       "ai_package_stages": {
         "submissions/Lucifer-An/jingzhang-ai-spine": "formal"
       },
-      "total_bytes": 3887653,
+      "total_bytes": 5827013,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -165,30 +172,22 @@
     {
       "check_id": "DETERMINISTIC_VALIDATION",
       "result": "pass",
-      "severity": "blocking",
-      "target": "validate_local_submission.py",
-      "message": "deterministic_validation: PASS"
+      "severity": "blocking"
     },
     {
       "check_id": "SPATIAL_REVIEW",
       "result": "pass",
-      "severity": "blocking",
-      "target": "spatial_review.py",
-      "message": "spatial_review: PASS"
+      "severity": "blocking"
     },
     {
       "check_id": "VISUAL_PACKAGING",
       "result": "pass",
-      "severity": "blocking",
-      "target": "visual_review.py",
-      "message": "visual_review: PASS"
+      "severity": "blocking"
     },
     {
       "check_id": "PROFESSIONAL_EVIDENCE",
       "result": "pass",
-      "severity": "blocking",
-      "target": "professional_review.py",
-      "message": "professional_review: PASS"
+      "severity": "blocking"
     }
   ]
 }
