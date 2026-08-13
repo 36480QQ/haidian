@@ -617,7 +617,7 @@ This proposal creates no new administrative body, no new charge and no new manda
 - Process: Universities and community groups may apply for access to anonymised datasets for academic research and social assessment
 - Responsibility: Published results must cite the data source; findings must be shared back with belt community
 - Deliverable: Annual "Jingzhang Data Stories", collecting academic findings, community feedback, and policy suggestions
-- Spatial host: Peking University, Tsinghua, Chinese Academy of Sciences research centres within the belt [standard:RESEARCH-DATA-GOVERNANCE]
+- Spatial host: Peking University, Tsinghua, Chinese Academy of Sciences research centres within the belt (specific data-authorisation rules must be separately justified under the PRC Data Security Law and related current regulations; this proposal does not presuppose a standard name)
 
 #### 5.3 Cross-generational co-creation framework
 
