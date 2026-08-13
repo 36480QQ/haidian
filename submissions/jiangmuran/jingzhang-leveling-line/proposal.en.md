@@ -796,7 +796,7 @@ This rule turns governance into a spatial design problem, which is why it belong
 
 **First, what is not this proposal's increment.** Reading every proposal in these two tracks confirms that <!-- BASELINE6:BEGIN -->
 
-These six are now de facto standard. The figures in brackets are measured counts across the 770-proposal corpus: scenario-level suspension and exit conditions (459); a non-AI equivalent path (344); an on-site safety officer (320); remote and physical e-stop (168); speed limits (94); event logs (64). The thinnest is at 64, the thickest at 459. **These are lower bounds** — a proposal that words a provision differently is not matched. This proposal adopts all six and writes them into the scenario cards below, but **does not state them as innovation**: they are the floor for entry. Selling the floor as a feature shows you have not read the field.
+These six are now de facto standard. The figures in brackets are measured counts across the 770-proposal corpus: scenario-level suspension and exit conditions (461); a non-AI equivalent path (346); an on-site safety officer (320); remote and physical e-stop (167); speed limits (94); event logs (64). The thinnest is at 64, the thickest at 461. **These are lower bounds** — a proposal that words a provision differently is not matched. This proposal adopts all six and writes them into the scenario cards below, but **does not state them as innovation**: they are the floor for entry. Selling the floor as a feature shows you have not read the field.
 
 <!-- BASELINE6:END -->
 
@@ -1453,12 +1453,12 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-67 entries. By finder:
+68 entries. By finder:
 
 | Found by | Count | What it says |
 |---|---|---|
 | Independent audit | 25 | The audit was run against the shipped package, not a draft |
-| The author | 33 | Found while working |
+| The author | 34 | Found while working |
 | This package's own gate | 5 | Caught at build time — which is what a gate is for |
 | **Reviewers outside this proposal** | **4** | [@anselasimov-web](https://github.com/anselasimov-web) on PR #1002; [@147228](https://github.com/147228) on PR #1065; [@Sonike](https://github.com/Sonike) on Issue #950; [@147228](https://github.com/147228) on Issue #950 / PR #1190 |
 
@@ -1474,7 +1474,7 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 
 | Shape | Count |
 |---|---|
-| **The check measured the convenient thing** | **13** |
+| **The check measured the convenient thing** | **14** |
 | **A deliverable was not looked at before shipping** | **11** |
 | **Two copies of one thing drifted** | **7** |
 | Geometry did not mean what it said | 4 |

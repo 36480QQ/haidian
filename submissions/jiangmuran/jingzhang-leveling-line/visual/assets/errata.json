@@ -4,18 +4,18 @@
  "note_en": "A register of this package's own errors. Not a changelog: a changelog says what changed, this says what was wrong, what shape the error had, who found it, and which commit fixed it. Every entry names a commit, and the build verifies that commit exists and touched the file blamed. An errata register that cannot be joined to the repository is the defect it records.",
  "why_zh": "全场 351 份方案中没有一份勘误、撤回或作者自述的复盘。一个主张城市应当公开自身误差的方案，不能自己呈现一个无瑕的表面：它提出的整套机制都建立在「看不见失败的测量不值得信任」之上，文档同理。",
  "counts": {
-  "total": 67,
+  "total": 68,
   "by_found_by": {
    "audit": 25,
    "own-gate": 5,
    "external-reviewer": 4,
-   "self": 33
+   "self": 34
   },
   "by_shape": {
    "reference-does-not-resolve": 4,
    "number-outlived-the-sentence-holding-it": 4,
    "two-copies-of-one-thing-drifted": 7,
-   "check-measured-the-convenient-thing": 13,
+   "check-measured-the-convenient-thing": 14,
    "geometry-does-not-mean-what-it-says": 4,
    "term-of-art-misapplied": 1,
    "claim-outlived-the-package": 3,
@@ -483,6 +483,16 @@
    "what_zh": "图纸索引上方写「共十二张图纸，FIG.00–FIG.11 连续编号」，下方的表只有九行（FIG.01–FIG.09）。缺 FIG.00（全文开篇那张）、FIG.10（人视街道剖面）与 FIG.11（区域协同接口）——**而正文在 L531 按编号引用了 FIG.11**，把读者指向一个不含它的索引。同一处的复核清单则编号成 1…10、8、9，十二项用了十个号。",
    "why_zh": "两个语种带着同样的九行，所以这不是翻译疏漏，是**完整性声明写在表格上方那句话里、而不是由表格本身承担**。清单的编号是看得见的那个缺陷，危险的是另一个：清单上每一项都指名一个路径，一份把评审指向不存在文件的清单，比没有清单更糟。",
    "fix_zh": "两者都改为生成：索引由 `build_figure_index.py` 从随包 PNG 生成，句中的份数写自 `len(FIGURES)`，并断言每张随包图有编号、每个编号有文件、正文引用的每个 FIG.NN 都能解析到行；清单由 `enumerate` 编号，且十二项声明的 17 条路径必须全部在包内解析。"
+  },
+  {
+   "id": "E68",
+   "commit": "41c6c16e",
+   "file": "assets/figures/maintenance.png",
+   "found_by": "self",
+   "shape": "check-measured-the-convenient-thing",
+   "what_zh": "标石尺寸 400 × 400 × 600 mm 在包内写了三遍：KIT-01 硬约束文本、FIG.16 的尺寸表、FIG.18 的质量计算。FIG.16 有一道闸门 `assert_kit_agrees()`，专为防止图纸与表格漂移而设，**它断言了七个尺寸，而标石自己的三个不在其中**——±5 mm、900、1350、450、2000、300、1500 都查，400 与 600 不查。FIG.18 则连表都不看：它自带一份 `STONE_MM = (400.0, 400.0, 600.0)` 与密度，由此算出 **230 kg**。",
+   "why_zh": "**闸门查的是好查的那七个，漏的是这张图存在的理由。** 本册已有 13 条同型（check-measured-the-convenient-thing），但此前都是「闸门没建」；这一条是**闸门建好了，且刻意排除了最该覆盖的那一项**——更难发现，因为存在一道通过的检查恰恰是不去检查它的原因。后果不在图面而在论证：230 kg 是 FIG.18 全部不对称的支点（「标石是唯一不可更换、也是唯一一人搬不动的件」），而它由一份与任何权威源都不相连的私有副本算出。把标石改成 400 × 400 × 800，KIT-01 会说 800，FIG.16 的剖面照旧画 600 且不报错，FIG.18 照旧说 230 kg——**三份文件，三个石头。**",
+   "fix_zh": "收敛为一处：`build_operations.py` 定义 `STONE_MM` 与 `CONCRETE_DENSITY_KG_M3`，KIT-01 的中英硬约束文本由它生成，FIG.16 的尺寸表、平面标注与剖面深度全部引用它，FIG.18 导入同一元组算质量并断言与 KIT 的算法结果一致。`assert_kit_agrees()` 的断言项由 7 增至 8，新增的一项就是标石三维。**自测过**：把 STONE_MM 改为 (500, 400, 600) 而不重新生成 operations.json，FIG.16 拒绝构建并指名缺的那一项。"
   },
   {
    "id": "E67",
