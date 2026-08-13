@@ -4,12 +4,12 @@
  "note_en": "A register of this package's own errors. Not a changelog: a changelog says what changed, this says what was wrong, what shape the error had, who found it, and which commit fixed it. Every entry names a commit, and the build verifies that commit exists and touched the file blamed. An errata register that cannot be joined to the repository is the defect it records.",
  "why_zh": "全场 351 份方案中没有一份勘误、撤回或作者自述的复盘。一个主张城市应当公开自身误差的方案，不能自己呈现一个无瑕的表面：它提出的整套机制都建立在「看不见失败的测量不值得信任」之上，文档同理。",
  "counts": {
-  "total": 63,
+  "total": 64,
   "by_found_by": {
    "audit": 25,
    "own-gate": 5,
    "external-reviewer": 4,
-   "self": 29
+   "self": 30
   },
   "by_shape": {
    "reference-does-not-resolve": 4,
@@ -25,6 +25,7 @@
    "six-classes-for-a-seven-class-partition": 1,
    "the-table-stopped-being-a-table": 1,
    "index-that-does-not-index": 1,
+   "recorded-where-it-was-found-not-where-it-is-looked-for": 1,
    "two-of-our-own-rules-collide-under-a-condition": 1,
    "rule-applied-to-others-but-not-to-self": 2,
    "claim-that-cannot-be-checked-by-construction": 1,
@@ -479,6 +480,16 @@
    "what_zh": "图纸索引上方写「共十二张图纸，FIG.00–FIG.11 连续编号」，下方的表只有九行（FIG.01–FIG.09）。缺 FIG.00（全文开篇那张）、FIG.10（人视街道剖面）与 FIG.11（区域协同接口）——**而正文在 L531 按编号引用了 FIG.11**，把读者指向一个不含它的索引。同一处的复核清单则编号成 1…10、8、9，十二项用了十个号。",
    "why_zh": "两个语种带着同样的九行，所以这不是翻译疏漏，是**完整性声明写在表格上方那句话里、而不是由表格本身承担**。清单的编号是看得见的那个缺陷，危险的是另一个：清单上每一项都指名一个路径，一份把评审指向不存在文件的清单，比没有清单更糟。",
    "fix_zh": "两者都改为生成：索引由 `build_figure_index.py` 从随包 PNG 生成，句中的份数写自 `len(FIGURES)`，并断言每张随包图有编号、每个编号有文件、正文引用的每个 FIG.NN 都能解析到行；清单由 `enumerate` 编号，且十二项声明的 17 条路径必须全部在包内解析。"
+  },
+  {
+   "id": "E64",
+   "commit": "e34b7cd8",
+   "file": "assumptions.json",
+   "found_by": "self",
+   "shape": "recorded-where-it-was-found-not-where-it-is-looked-for",
+   "what_zh": "近十三张新图纸每一张都声明了一个「本包没有」的输入。拿它们逐条对 `assumptions.json`——那份存在的理由就是列出本方案不知道什么的文件——**两条不在里面**：FIG.16 的当地标准冻深 D，FIG.20 的窗前垂直照度增量限值。",
+   "why_zh": "不对称之处才是要点：**已登记的两条（文保范围 A-HERITAGE-001、官方 polygon A-BOUNDARY-001）是从题面继承来的缺口；漏登的两条是新图纸自己发现的缺口。** 一条在画图时被发现的缺口，就被写在了发现它的地方，然后停在那里。按勘误 E58 的教训：图纸是评审可能不打开的那一份，假设登记表是他们会读的那一份——**只声明在图上的缺口，等于登记表不知道它存在**。E58 与 E59 把这条用在「已完成的工作」与「已完成的成品」上；这一条把它用在**无知**上：不只是做完的东西要够得到，承认不知道的那些话也要够得到。",
+   "fix_zh": "补登两条，与其余记录同一处理：A-GEOTECH-001（标准冻深 D）写明**误差不对称**——取浅了，标石在第一个冬天后位移，此前每一次读数都不再可比；取深了只是多花混凝土——因此 FIG.16 的规则写成下限。A-LIGHTING-001（窗前照度增量限值）写明本方案**当前并不依赖它**（FIG.20 不设灯具，构造上绕开了），登记的理由是「当前不依赖」与「不存在」不是一回事：日后若确需补充照明，它是前置条件而非事后校核。两条各带推导、若假设为错的后果、以及闭合条件。"
   },
   {
    "id": "E63",
