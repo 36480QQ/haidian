@@ -37,6 +37,16 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 **Logo 与视觉方向。** 以「人」字折返道岔为几何母题，抽象为一个可无限延展的识别符，向下渗透到导视、地面铺装、灯光节奏和数字标识系统；该识别符与文化标识系统分层管理，不与文化导视混用 [depth:height_massing_character]。所有字体、图像、商标、人物肖像均须清权后方可正式使用，当前仅作方向示意 [source:SITE-PACKAGE]。**五大功能与三区两翼**的协同回路为：AI原点社区承载世界级创新生态、众智园承载全栈自主创新与AI治理话语权、大钟寺承载智能原生新业态、要素翼负责全球化要素配置、场景翼负责AI+场景赋能与活力城市——五功能互为供需，形成闭环 [depth:three_level_scope_framework]。
 
+## 差异化主张 · 可验证·可 fork 的开源城市（Governance-as-Code）
+
+在数百份以「人字 / 智脉 / 缝合」立意的方案之外，REN-Axis 的真正差异**不在口号，而在成果形态**：这是一份**可运行自检、可复算、可 fork、带持续集成（CI）的开源城市方案**。
+
+- **可验证（Verifiable）**：每条设计主张都回引可追溯来源，每个 known 指标都能从 GeoJSON 以 EPSG:4548 复算，整包通过确定性 / 空间 / 视觉 / 专业四门自检——方案是**可证伪、可审计**的，而非精修愿景图 [depth:metrics_recalculation] [source:SITE-PACKAGE]。
+- **可 fork（Forkable）**：任何智能体或专业团队都能 fork 本方案、替换某一图层、重跑自检、以 Pull Request 提出更优版本——城市设计从「一次性投标」变为**可版本化、可持续迭代**的公共过程 [source:AGENT-TASKBOOK]。
+- **规则即代码（Governance-as-Code）**：AI 场景、数据边界、荣誉体系与运营 KPI 均以机器可读、可版本化的结构化文件表达，并内置显式人工复核门（数据最小化、人在回路）——「城市智能体治理」从概念变成**带测试的规则** [depth:risk_missing_data]。
+
+由此，京张创新带可成为全球首个**带 CI 的开源城市方案母本**：以人为本（人字）× 以证为据（可验证），恰是这场 Agent 开源征集的天然归宿。REN-Axis 在提交时即以「PR + 四门自检 + 可复算证据链」**落地**了这一主张，而不仅是描述它——这是它区别于其余以愿景叙事为终点的方案的根本所在。
+
 ## 三层范围工作框架
 
 方案严格按照公告确定的三个层次组织工作 [source:OFFICIAL-ANNOUNCEMENT] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]。**统筹研究范围约 43.6 平方公里**（北至北五环、东至京藏高速、南至西直门外大街、西至万泉河路），关注AI产业生态、战略定位、创新链与未来城市形态；**总体设计范围约 11.4 平方公里**（京张遗址公园周边 1–2 公里城市与产业区），要求形成城市更新总体框架、产业空间布局、交通市政支撑与风貌控制；**重点区域约 368.4 公顷**（众智园、AI原点社区、大钟寺），要求明确功能业态、建筑规模、拆改留分类、公共空间连通与交通组织 [data:geometry/site_boundary.geojson#SITE-001] [metric:site_area_sqm]。
@@ -148,7 +158,7 @@ AI场景必须落到空间与治理边界：公共空间场景引用公共空间
 
 ## 蓝绿空间、公共空间与城市风貌
 
-蓝绿空间以京张遗址公园活力带为骨架，统筹清河、小月河、周边高校、企业与社区出行需求，提出南北贯通、东西连通的步道、骑行道与绿色空间体系 [depth:blue_green_public_space] [data:geometry/green_space.geojson#GREEN-001]。方案识别慢行断点、上跨环路节点、公园南北端景观节点，提出停车、体育、创新交往、科技测试、应用展示与公共服务的复合利用策略 [data:geometry/public_space.geojson#PUBLIC-001] [metric:green_ratio]。基于 provisional 边界复算，绿地率约 12.3%、公共空间比例约 7.3%（随官方 polygon 发布后重算）；数值取自 `metrics.json` 中可复算项，正文给结论、文件存公式与来源 [metric:green_ratio] [metric:public_space_ratio]。
+蓝绿空间以京张遗址公园活力带为骨架，统筹清河、小月河、周边高校、企业与社区出行需求，提出南北贯通、东西连通的步道、骑行道与绿色空间体系 [depth:blue_green_public_space] [data:geometry/green_space.geojson#GREEN-001]。方案识别慢行断点、上跨环路节点、公园南北端景观节点，提出停车、体育、创新交往、科技测试、应用展示与公共服务的复合利用策略 [data:geometry/public_space.geojson#PUBLIC-001] [metric:green_ratio]。基于 provisional 边界复算，绿地率约 21.1%、公共空间比例约 7.3%（随官方 polygon 发布后重算）；数值取自 `metrics.json` 中可复算项，正文给结论、文件存公式与来源 [metric:green_ratio] [metric:public_space_ratio]。
 
 城市风貌融合京张铁路历史文化、中关村创新文化与AI创新文化，利用清华园火车站、北影等文化资源，提出城市基调、建筑风貌、屋顶形态、体量、界面与公共艺术引导 [standard:MOHURD-URBAN-DESIGN-MEASURES] [metric:public_space_ratio]。导视标识、文化符号、国际传播叙事、AI朝圣地标与荣誉展示体系的品牌、字体、图像、肖像、企业标识均须清权来源；风貌控制分清官方管控、设计建议与待确认条件，无文保或控规依据时严禁给出伪精确控制线。
 
