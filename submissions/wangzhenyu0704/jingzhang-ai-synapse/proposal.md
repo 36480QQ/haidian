@@ -79,7 +79,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 总体设计按控规城市设计深度提出更新总体结构、低效空间识别方法、更新项目清单、实施政策建议、产业功能比例概念、空间组织模式与综合承载讨论。`geometry/land_use.geojson` 完整覆盖提交边界且无重叠；建筑、道路、绿地、公共空间与分期自同一边界派生；`metrics.json` 复算核心面积与比例。
 
-依据 [standard:MOHURD-CONTROL-DETAILED-PLANNING]：[data:geometry/land_use.geojson#LU-001] 表达用地结构，[data:geometry/buildings.geojson#BLDG-001] 表达概念建筑基底，[data:geometry/roads.geojson#ROAD-001] 表达慢行主脊，[metric:building_footprint_area_sqm] 复算建筑基底，[depth:land_use_layout] 与 [depth:development_intensity_controls] 约束深度。当前建筑基底复算值为 763820.254 ㎡。
+依据 [standard:MOHURD-CONTROL-DETAILED-PLANNING]：[data:geometry/land_use.geojson#LU-001] 表达用地结构，[data:geometry/buildings.geojson#BLDG-001] 表达概念建筑基底，[data:geometry/roads.geojson#ROAD-001] 表达慢行主脊，[metric:building_footprint_area_sqm] 复算建筑基底，[depth:land_use_layout] 与 [depth:development_intensity_controls] 约束深度。当前建筑基底复算值为 [metric:building_footprint_area_sqm]（401,334 ㎡，以 `metrics.json` 为准）。
 
 交通、轨道、市政与配套围绕站点一体化、微循环、非机动车停放、创新服务平台、人才生活服务、分布式能源与端侧算力提出空间布局概念。涉及高度、强度、红线、退线的内容一律标注“待正式控规条件确认”，不以 agent 推测值冒充审定指标，并与 [standard:MOHURD-ARCH-DESIGN-DEPTH-2016] 的深度表达要求对齐。
 
@@ -99,7 +99,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ## AI 创新生态、人才画像与 AI+ 场景
 
-本节回应 agent.3：不少于 10 张场景卡、不少于 3 个产业测试验证场景、不少于 5 类用户画像，并给出场景-空间-运营映射与隐私/人工复核边界。公共空间场景引用 [data:geometry/public_space.geojson#PUBLIC-001]，慢行场景引用 [data:geometry/roads.geojson#ROAD-001]，开敞空间引用 [data:geometry/green_space.geojson#GREEN-001] 与 [metric:public_space_ratio]、[metric:green_ratio]。当前绿地率 0.155186、公共空间率 0.072603。
+本节回应 agent.3：不少于 10 张场景卡、不少于 3 个产业测试验证场景、不少于 5 类用户画像，并给出场景-空间-运营映射与隐私/人工复核边界。公共空间场景引用 [data:geometry/public_space.geojson#PUBLIC-001]，慢行场景引用 [data:geometry/roads.geojson#ROAD-001]，开敞空间引用 [data:geometry/green_space.geojson#GREEN-001] 与 [metric:public_space_ratio]、[metric:green_ratio]。当前绿地率 [metric:green_ratio]（63.9%）、公共空间率 [metric:public_space_ratio]（7.9%），均来自 GeoJSON 复算。
 
 | 用户画像 | 典型需求 | 空间响应 | 自检边界 |
 | --- | --- | --- | --- |
@@ -189,7 +189,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ![核心指标复算与证据链图](assets/figures/metrics-evidence.png)
 
-当前复算：site_area_sqm=11412825.386；green_ratio=0.155186；public_space_ratio=0.072603；building_footprint_area_sqm=763820.254；key_area_count=3；floor_area_ratio=unknown。合规矩阵覆盖公告 1.3/1.4/1.5 与 agent.1–agent.6；标准矩阵与设计深度矩阵证明专业响应。指标分三类：几何可复算、需官方控规支撑、需运营数据校准，分别进入 metrics / assumptions / compliance，避免把运营愿景误写成审定条件。
+当前复算（与 `metrics.json` 一致）：[metric:site_area_sqm]=11,412,825 ㎡；[metric:green_ratio]=63.9%；[metric:public_space_ratio]=7.9%；[metric:building_footprint_area_sqm]=401,334 ㎡；[metric:key_area_count]=3；[metric:floor_area_ratio]=unknown。合规矩阵覆盖公告 1.3/1.4/1.5 与 agent.1–agent.6；标准矩阵与设计深度矩阵证明专业响应。指标分三类：几何可复算、需官方控规支撑、需运营数据校准，分别进入 metrics / assumptions / compliance，避免把运营愿景误写成审定条件。
 
 ## 风险、版权与合规说明
 
