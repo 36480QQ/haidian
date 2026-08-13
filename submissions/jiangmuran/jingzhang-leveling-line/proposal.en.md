@@ -1498,11 +1498,11 @@ An authorisation statement a reviewer cannot verify is not a statement. Each row
 
 <!-- LEDGERCOUNT:BEGIN -->
 
-**The file-level ledger sits outside the review input, so its result is brought in here.** `build_review_input` sends `proposal.md` and eight JSON files; neither `report/copyright_statement.md` nor `visual/assets/rights_ledger.json` is among them. **A rights ledger the reviewer structurally cannot open is, from the reviewer's position, exactly the unverifiable assertion this package objects to elsewhere.** All **96 shipped files** carry a clearance class; a file without one fails the build:
+**The file-level ledger sits outside the review input, so its result is brought in here.** `build_review_input` sends `proposal.md` and eight JSON files; neither `report/copyright_statement.md` nor `visual/assets/rights_ledger.json` is among them. **A rights ledger the reviewer structurally cannot open is, from the reviewer's position, exactly the unverifiable assertion this package objects to elsewhere.** All **98 shipped files** carry a clearance class; a file without one fails the build:
 
 | Clearance class | Files |
 |---|---|
-| `author-originated` | 74 |
+| `author-originated` | 76 |
 | `provisional-only-with-stated-limit` | 9 |
 | `author-originated-measurement` | 8 |
 | `author-originated-with-embedded-fonts` | 4 |
@@ -1555,7 +1555,7 @@ One point of citation discipline deserves stating plainly: **the cases are used 
 
 <!-- FIGINDEX:BEGIN -->
 
-There are 16 sheets, numbered FIG.00 to FIG.15. All are drawn directly from parameters and the submitted structured data; none is a decorative illustration.
+There are 17 sheets, numbered FIG.00 to FIG.16. All are drawn directly from parameters and the submitted structured data; none is a decorative illustration.
 
 | Sheet | Content | What to read on it |
 |---|---|---|
@@ -1575,6 +1575,7 @@ There are 16 sheets, numbered FIG.00 to FIG.15. All are drawn directly from para
 | FIG.13 | The three key areas in section, at one scale | One horizontal scale, one datum convention, no vertical exaggeration — and three different problems: reaching a river across a 100% single-use block; step-free continuity over a 1.2 m rise; a station below grade with the device queue held behind the building line. **±0.00 is each area's own benchmark, not a shared absolute datum** |
 | FIG.14 | The through-block public route to the Qing river | FIG.13's section states that this edge needs a public route across the R&D block to the levee path, and no drawing showed it. 6.0 m clear, centres at most 250 m apart (four of them, divided into a 939.0 m frontage), **open 24 hours and ungated**; the fallback alignment and the cost of a refusal are drawn, the cost in minutes |
 | FIG.15 | Phasing: advanced by closure results, not by dates | `phasing.geojson` has shipped for a long time, been repaired once, and enters the recompute path — **and no drawing had ever shown it**. The three increments, the benchmarks each adds, the condition that opens it (a number, not a year), and **what each phase costs to run**: the near term holds BM-0 alone, on one session a year |
+| FIG.16 | The benchmark and its reading plate, as a construction detail | The whole proposal rests on one object and **not one dimension appeared anywhere in the package**. Plan at 1:20, section and elevation at 1:10, nine dimensions each with the reason it is that number; **the one figure left blank is the frost depth D** — a local geotechnical value with no verifiable source here, so the sheet gives the rule and not the number |
 
 <!-- FIGINDEX:END -->
 
