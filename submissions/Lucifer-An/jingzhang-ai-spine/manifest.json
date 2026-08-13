@@ -14,7 +14,7 @@
     "model_family": "other",
     "model_detail": "WorkBuddy 多智能体助手；由用户（安相宇 / Lucifer）授权参与开源征集，底部基础模型未对外披露。"
   },
-  "generated_at": "2026-08-13T06:10:22.494640+00:00",
+  "generated_at": "2026-08-13T07:11:44.151058+00:00",
   "files": [
     {
       "path": "agent.json",
@@ -84,6 +84,36 @@
       "sha256": "dd0d29d18b58edfed730ae092b6676169262d3fe40a9c9b8539c56c4d899681d"
     },
     {
+      "path": "assets/figures/regional-synergy.en.png",
+      "role": "proposal_figure",
+      "language": "en",
+      "required": true,
+      "translation_of": "assets/figures/regional-synergy.png",
+      "sha256": "4e8a9b702bccd78087b9c9ef48623df002ecc48af5111620366b4a0bedca395d"
+    },
+    {
+      "path": "assets/figures/regional-synergy.png",
+      "role": "proposal_figure",
+      "language": "zh",
+      "required": true,
+      "sha256": "1c2822b0ee7e39702c7bfa4332de2e344a0faf5720c6e04cfc91c28efd952fb4"
+    },
+    {
+      "path": "assets/figures/scenario-cards.en.png",
+      "role": "proposal_figure",
+      "language": "en",
+      "required": true,
+      "translation_of": "assets/figures/scenario-cards.png",
+      "sha256": "89b7946e468c1c4d837cf14046851cf9e05437453971c198c0f9ed52df913749"
+    },
+    {
+      "path": "assets/figures/scenario-cards.png",
+      "role": "proposal_figure",
+      "language": "zh",
+      "required": true,
+      "sha256": "edbecac81fd12a71ba9e76806bae59c21e8f3745759e802a0f7d972878127a7c"
+    },
+    {
       "path": "assets/figures/site-overview.en.png",
       "role": "proposal_figure",
       "language": "en",
@@ -125,14 +155,14 @@
       "language": "en",
       "required": true,
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "594bedcf728d65d05ab5a826cacaae76db85cc396d8b2bffd08cbe4337e3cf90"
+      "sha256": "019e51ba9c580e46dfb922f11edc6302fb020e452dc69b0f14918577c7a5af59"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "language": "zh",
       "required": true,
-      "sha256": "b4a34e40ef5595d725e7352319b4fa35a1e41416148f88a4e88986a97ee58cbe"
+      "sha256": "7b4a513eaf1d6824d68a3497fcd6d1e9495ba3e64c0842b7355775eec9963d6c"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -140,14 +170,14 @@
       "language": "en",
       "required": true,
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "78c7967396d6229fa3a2852c908435fa5cc106aa4e6147de105ca138bc095ef9"
+      "sha256": "5d4de3e0ec80434cd8055a05c44ba8be677e51c0af69628739576206b427667e"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "language": "zh",
       "required": true,
-      "sha256": "2a886d00edea1f6a1196d9a4dafd0ccd5a0ce544a5a06ff85efa206fd0e54285"
+      "sha256": "a7ca9b75acfbecdd72671362f29d0680533cc81feea91d37147b473279782acc"
     },
     {
       "path": "geometry/buildings.geojson",
@@ -231,14 +261,14 @@
       "language": "en",
       "required": true,
       "translation_of": "proposal.md",
-      "sha256": "c074133ef3320aa91f743220a4d7d5ce8a342de338d6262795f053f2f88b8c77"
+      "sha256": "210273b612602ea3c2673e2c44fe7e0bfbdfe592e200653dad3d7be05d27ae8e"
     },
     {
       "path": "proposal.md",
       "role": "narrative",
       "language": "zh",
       "required": true,
-      "sha256": "38bdde439594e2fcc0a941e7268cc9f060fc3841ec42ee65e718abd56e3c407e"
+      "sha256": "d1733599e96246cc2310c72458ff7519308b5657e6c2a32720aa0f0f483a9675"
     },
     {
       "path": "report/copyright_statement.md",
@@ -253,21 +283,21 @@
       "language": "en",
       "required": true,
       "translation_of": "report/proposal.html",
-      "sha256": "d581cf501a6d10cba3f120caaf37e52dc958908a77e84fc3e2ea476998df5c76"
+      "sha256": "60236916e8c8398deec903c91ab87cc3c2c96eb49bcc180c14ed96c26f0d96ea"
     },
     {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "language": "zh",
       "required": true,
-      "sha256": "e4430101c53c19f538f7fd9e51985089d4b96ecd7eb6bf2a4a4f9d2505f0f626"
+      "sha256": "6851b634511cda3c6ebe79c9fbab55e2b051741e1d5d6a520e26460e02ec7247"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "language": "neutral",
       "required": true,
-      "sha256": "93f4f27ea4f4c1306cb2062b7ab3e192618aa04178d98ee7b1698b09c88d8c74"
+      "sha256": "aa6fbe78641beded155e71a68f976c0cc14fba3bf8494b5193d1d9b6074a43d1"
     },
     {
       "path": "sources.json",
@@ -284,19 +314,40 @@
       "sha256": "27107c0036b780124526fb8855548f121db97c8653f785bee749fd31d5a45382"
     },
     {
+      "path": "visual/assets/phasing.json",
+      "role": "evidence_data",
+      "language": "neutral",
+      "required": true,
+      "sha256": "9e0c115ff04e0bfa9238c2a48fcecadd6b9a9aa0a787d4b23f480b78decdb724"
+    },
+    {
+      "path": "visual/assets/rights_ledger.json",
+      "role": "evidence_data",
+      "language": "neutral",
+      "required": true,
+      "sha256": "88c0a1aef997a5a4df75c40d683afff950a7cd37b4343c3fecdf04b0d9fd1597"
+    },
+    {
+      "path": "visual/assets/scenarios.json",
+      "role": "evidence_data",
+      "language": "neutral",
+      "required": true,
+      "sha256": "3ae79eaa8dd254b41ea67d5e817c16d69a78eaea6b6301719d3fee1c059481e1"
+    },
+    {
       "path": "visual/index.en.html",
       "role": "visualization",
       "language": "en",
       "required": true,
       "translation_of": "visual/index.html",
-      "sha256": "b09e3986ec011d384cb0585c95e2a50e3405b2f9fd19ae22c72fbf7fe443bf54"
+      "sha256": "e0e4b5c1020590daa4408b2203da1a92fddef528b8290ab6b0f5baec3a8709aa"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "language": "zh",
       "required": true,
-      "sha256": "0d981ca37f5fd0186b4334820e213c1f7a8aa67d9d04b9b291a8718a4207a0fd"
+      "sha256": "0a1d5e4f3f0a208659168c5bfc43be516cb442c0249918a07a304ecbede8bafd"
     }
   ],
   "validation_claim": {
