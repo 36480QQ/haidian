@@ -666,8 +666,8 @@ The final publications were built twice in fresh Python processes with a fixed f
 
 | PDF | Pages / format | SHA-256 |
 |---|---|---|
-| `drawings/a3-booklet.pdf` | 66 / A3 portrait | `6b008a186a5343723c98f263f1835bb183f1b3c1c50037b97a1e3c4582b7737d` |
-| `drawings/a3-booklet.en.pdf` | 71 / A3 portrait | `101b0bc0ca9ffa36815ecfe3a2d7b3cd14d3efd60f250c91ebb37b3655b4f67f` |
+| `drawings/a3-booklet.pdf` | 66 / A3 portrait | `8f6b8bea4f9c2b458876a99a4642660e1954dd8d8b45291801db137b2c20a035` |
+| `drawings/a3-booklet.en.pdf` | 71 / A3 portrait | `524d6ca44aaa9820658855c256aa4152dce18e9694536a4bcc6364a62edaa7e4` |
 | `drawings/a0-boards.pdf` | 18 / A0 landscape | `686a2524d9d6f72486d32fbc3e13da3feb1e3f1d5e7f298c6ba9ce89559d47aa` |
 | `drawings/a0-boards.en.pdf` | 18 / A0 landscape | `540a4da7756ee2ff4ccf5cf6f55013c03a12ef7a7caf4ba796bde1f2694e490f` |
 

@@ -10,6 +10,8 @@
 - Added three non-interchangeable future routes: Zhongzhiyuan for equipment isolation/stop/restoration, Origin for consent withdrawal/daily life/safeguarding, and Dazhongsi for peak continuity/source version/correction. Completed route walks remain 0.
 - #2266 只提供公众可读的保留/修改/暂停/归还处置方法，并被规范化到本包已有术语；未复制其品牌、空间构图、几何、指标、图件、媒体或现实结论。
 - PR #2266 contributes public keep/modify/pause/return disposition method only, normalized into this package's existing vocabulary. No brand, spatial composition, geometry, metric, figure, media or real-world claim is copied.
+- 追加当前态一致性审计：把正文、来源新鲜度策略和双语权利声明中的旧轮次计数统一为最终 125 个路径、50 条来源与 24 个 SVG；历史固定点仍作为带轮次标识的历史记录保留。
+- Added a current-state consistency audit: synchronized stale round-era counts in the narrative, freshness policy and bilingual rights statement to the final 125 paths, 50 sources and 24 SVG files; explicitly versioned historical fixed points remain historical records.
 - 12 场景、8 项目、3 重点区、99 槽、geometry、metrics、全部 G0、临时边界、NO-GO 和 `not_fully_cleared` 保持不变。
 - Twelve scenes, eight projects, three key areas, 99 slots, geometry, metrics, all-G0 status, provisional boundaries, NO-GO and `not_fully_cleared` remain unchanged.
 
