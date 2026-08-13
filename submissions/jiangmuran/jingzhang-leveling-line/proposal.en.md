@@ -497,6 +497,10 @@ The leveling network's answer is elevation transfer: each station's reading depe
 - **BM-2 Dazhongsi** carries AI-native new activity: high-frequency consumer and business scenarios take their readings here.
 - **The Zhongguancun services wing** supplies factors and capital and is the route's **support system**; **the Xiaoyuehe scenario wing** supplies real users and is therefore the route's **source of reading density**.
 
+![FIG.26 BM-2x, the second order: a scenario has to be stoppable, and that takes ground](assets/figures/wing.en.png)
+
+**The two wings carry the second order, and the second order had never been drawn.** It appears in the naming table, the cost table and the resource table — the one tier of this network that never reached a sheet. What differs is not the stone: a BM-2x is a KIT-01 like every other, because a more important place does not get a special benchmark. What differs is that **what runs here is a scenario against real users**, and such a scenario has to be stoppable. FIG.26 turns "stoppable" into a dimension: from the ≤ 6 km/h site speed FIG.24 already fixes, 1.0 s of reaction covers 1.67 m and decelerating at 1.5 m/s² covers 0.93 m, giving a **halt distance of 2.59 m** — and no fixed object or waiting area may stand in that ground ahead of the observed frontage. **The reaction time and the deceleration are chosen by this proposal and are not standards.** Both are registered as `A-DEVICE-002` in the same commit as the sheet, with derivation, direction of error, closure condition and owner: the error is asymmetric — too small and the cost lands on a person — so the distance is taken at a bound rather than at a typical value.
+
 The five functions are consequently not five parallel slogans but five positions on one circuit: set the datum (Zhongzhiyuan) → depart (Origin Community) → take readings (Dazhongsi and the two wings) → return to the origin and compute (Origin Community) → re-measure if over tolerance. The spatial expression is [data:geometry/public_space.geojson#PUBLIC-001], and the overall structure corresponds to [depth:overall_spatial_structure].
 
 ### Global AI innovation ecosystem cases (agent.2)
@@ -1543,11 +1547,11 @@ An authorisation statement a reviewer cannot verify is not a statement. Each row
 
 <!-- LEDGERCOUNT:BEGIN -->
 
-**The file-level ledger sits outside the review input, so its result is brought in here.** `build_review_input` sends `proposal.md` and eight JSON files; neither `report/copyright_statement.md` nor `visual/assets/rights_ledger.json` is among them. **A rights ledger the reviewer structurally cannot open is, from the reviewer's position, exactly the unverifiable assertion this package objects to elsewhere.** All **118 shipped files** carry a clearance class; a file without one fails the build:
+**The file-level ledger sits outside the review input, so its result is brought in here.** `build_review_input` sends `proposal.md` and eight JSON files; neither `report/copyright_statement.md` nor `visual/assets/rights_ledger.json` is among them. **A rights ledger the reviewer structurally cannot open is, from the reviewer's position, exactly the unverifiable assertion this package objects to elsewhere.** All **120 shipped files** carry a clearance class; a file without one fails the build:
 
 | Clearance class | Files |
 |---|---|
-| `author-originated` | 96 |
+| `author-originated` | 98 |
 | `provisional-only-with-stated-limit` | 9 |
 | `author-originated-measurement` | 8 |
 | `author-originated-with-embedded-fonts` | 4 |
@@ -1602,7 +1606,7 @@ One point of citation discipline deserves stating plainly: **the cases are used 
 
 <!-- FIGINDEX:BEGIN -->
 
-There are 26 sheets, numbered FIG.00 to FIG.25. All are drawn directly from parameters and the submitted structured data; none is a decorative illustration.
+There are 27 sheets, numbered FIG.00 to FIG.26. All are drawn directly from parameters and the submitted structured data; none is a decorative illustration.
 
 | Sheet | Content | What to read on it |
 |---|---|---|
@@ -1632,6 +1636,7 @@ There are 26 sheets, numbered FIG.00 to FIG.25. All are drawn directly from para
 | FIG.23 | Finding the nearest benchmark: which way, and how far | Markers appear only inside the stretches FIG.21 marks as failing — 48 of them at 150 m spacing, on the existing KIT-04, nothing new built. The face answers four things: direction, distance, P5's time, and the id. **And it states what signage cannot do — it does not make 1,111 m near; this is mitigation, not the fix** |
 | FIG.24 | The device envelope: what exactly goes in those 18 m² | FIG.12 fixed the device reservoir at ≥ 18 m² and this package had never drawn a device or said how big one is. An envelope, not a product: 1,200 × 700 × 1,300 mm, 1,800 mm turning circle, ≤ 120 kg. Each of seven dimensions is marked with what bounds it, and **three are bounded by nothing but this proposal — those are the ones to attack first**. The envelope puts 8 devices in the 18 m² |
 | FIG.25 | BM-0, the origin: the place both routes have to return to | BM-0 appears on nearly every sheet here and had never been drawn. A 2,400 mm setup circle, an approach sightline cone for each closing route, and the closure record outside the door facing the footway at the plate geometry FIG.16 fixed. **A reading is published the moment it is taken, and evidence is only as public as the door** — hang it in a hall with opening hours and the origin is shut when the reading lands. It shows network closure, not local failure (errata E50) |
+| FIG.26 | BM-2x, the second order: a scenario has to be stoppable, and that takes ground | The two wings carry the second order — it appears in the naming table, the cost table and the resource table, and had never been drawn. The difference is not the stone (KIT-01, as everywhere) but that what runs here is a scenario against real users, so it has to be stoppable. From FIG.24's ≤ 6 km/h the halt distance is **2.59 m**, and no fixed object or waiting area may stand within it. **The reaction time and deceleration are chosen by this proposal and registered as A-DEVICE-002 in the same commit** |
 
 <!-- FIGINDEX:END -->
 
