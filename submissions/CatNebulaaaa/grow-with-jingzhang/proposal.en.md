@@ -14,7 +14,7 @@ The Jingzhang railway corridor carries a century of industrial memory and links 
 
 It must be recognised clearly that the basic preconditions have not yet been verified item by item: formal boundaries, land and building tenure, rail safety, transport organisation, underground utilities, fire conditions, capital funding and future operating bodies. The proposal therefore takes a cautious, bottom-line approach. Verifying prerequisites is the first task; only on that basis should project scope, scale and sequence be determined, so that work does not start prematurely or proceed ahead of the evidence.
 
-As required by the taskbook, the proposal works on an approximately 11.4 km² overall design area, takes Zhongzhiyuan, the Beijing AI Origin Community and Dazhongsi as the three near-term key districts, and establishes six project packages within a rolling 0–24 month delivery window. The heritage corridor serves primarily as a public-space connection; the three districts respectively address gaps in research and testing, technology transfer, talent services and station-city interchange; and twelve public-service nodes are built and opened in phases alongside the pilot corridor and district projects.[source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK]
+As required by the taskbook, the proposal works on an approximately 11.4 km² overall design area, takes Zhongzhiyuan, the Beijing AI Origin Community and Dazhongsi as the three near-term key districts, and establishes six project packages within a rolling 0–24 month delivery window. The heritage corridor serves primarily as a public-space connection; the three districts respectively address gaps in research and testing, technology transfer, talent services and station-city interchange; and twelve public-service nodes are built and opened in phases alongside the pilot corridor and district projects.[source:DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509] [source:DATA-SRC-AGENT-TASKBOOK-20260518]
 
 ## 1. Priority Delivery Issues
 
@@ -45,7 +45,7 @@ Near-term work proceeds in five rolling windows, each with defined tasks, propos
 
 ## 2. Design Basis and Source List
 
-The working scope follows the three levels set by the open-call taskbook: a 43.6 km² coordinated research area, an approximately 11.4 km² overall design area, and the three key districts of Zhongzhiyuan, Beijing AI Origin Community and Dazhongsi. At this stage the planning base map is built from the published information package and the official notice; once formal boundaries are published, layer updates, area recalculation and indicator checks will be carried out uniformly. It should be noted that the submitted `SITE_BOUNDARY` and `KEY_AREA` layers are recorded as `official_boundary=false` and `geometry_role=provisional_constraint`; they serve as provisional working constraints only and are not a basis for land acquisition, land supply or engineering setting-out.[source:OFFICIAL-ANNOUNCEMENT] [source:SITE-PACKAGE] [assumption:A-BOUNDARY-001]
+The working scope follows the three levels set by the open-call taskbook: a 43.6 km² coordinated research area, an approximately 11.4 km² overall design area, and the three key districts of Zhongzhiyuan, Beijing AI Origin Community and Dazhongsi. At this stage the planning base map is built from the published information package and the official notice; once formal boundaries are published, layer updates, area recalculation and indicator checks will be carried out uniformly. It should be noted that the submitted `SITE_BOUNDARY` and `KEY_AREA` layers are recorded as `official_boundary=false` and `geometry_role=provisional_constraint`; they serve as provisional working constraints only and are not a basis for land acquisition, land supply or engineering setting-out.[source:DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509] [source:SITE-PACKAGE] [assumption:A-BOUNDARY-001]
 
 To keep sources traceable and usage consistent, planning material is managed under four evidence statuses:
 
@@ -80,9 +80,9 @@ The three scales correspond respectively to regional coordination research, regu
 
 ## 5. Coordinated Research Area: Industry and Future City Research
 
-The coordinated research area addresses cross-district and cross-party coordination. Five types of annual tasks are established: R&D testing and safety evaluation, campus-community education and training, technology-transfer services, station-city public services, and blue-green facility operation and maintenance. Each task records a lead type, supporting bodies, annual deliverables, funding and filed outputs, and is managed through the program scheduling list.[data:visual/assets/regional-collaboration-ledger.json]
+The coordinated research area operates as a two-tier network. Five internal interfaces cover R&D testing, campus-community education, technology transfer, station-city service and blue-green maintenance. External programs connect Beiwei Community, Future Science City, Huairou Science City, Beijing Economic-Technological Development Area and the wider Beijing-Tianjin-Hebei innovation network. Each program uses an annual assignment that records exchanged resources, accountable body types, output quantities, budget items and exit conditions.[data:visual/assets/regional-collaboration-ledger.json] [data:visual/assets/regional-action-program.json]
 
-In terms of division of labour, universities, research institutes, parks and professional evaluators jointly propose annual testing needs; technology-service bodies, rightsholders and park operators define the space and service conditions for technology transfer; subdistricts, operators and user representatives register facility gaps for community and station projects; and landscape, municipal and facility operators define maintenance standards and annual costs. District-level coordination should keep the planning account, the schedule account and the funding account in step, so that construction tasks and long-term operations do not fall out of alignment.[depth:overall_spatial_structure]
+Beiwei Community runs four priority-group walks and completes at least six service-process improvements each year. Future Science City co-releases two cross-city scenario challenges. Huairou Science City produces two public-science course packages and one urban-application validation. Beijing Economic-Technological Development Area runs three device cross-tests and one supply-chain session. The Beijing-Tianjin-Hebei network publishes one interregional scenario catalogue and advances three off-site validations. A collaboration is excluded from implementation and performance reporting until its annual project agreement has been confirmed.[depth:overall_spatial_structure] [data:visual/assets/regional-action-program.json]
 
 Project initiation includes five baseline surveys: enterprises and employment, talent and family services, time-of-day commuting and interchange, existing buildings and leases, and blue-green and utility capacity. The results form a unified dataset, updated annually by the responsible bodies, and serve as the basis for adjusting service provision, project priorities and funding plans.[source:PROCESSED-FACT-PACK] [metric:osm_context_feature_count]
 
@@ -153,6 +153,16 @@ Each public-service node is planned at 250–400 m² and uses demountable compon
 
 ## 12. AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
+### 12.1 Innovation chain and factor allocation
+
+The innovation ecosystem operates through four stages: demand release, prototype validation, public co-testing and application. Each year the program publishes at least 30 civic and industrial needs, completes at least 20 prototype tests at Zhongzhiyuan, runs at least 12 multi-group co-tests in AI Origin Community and the Xiaoyue River public-experience loop, and produces at least eight procurement, partnership or scaled-application plans through Dazhongsi and the Zhongguancun technology-service interface. Every stage issues an identifier, evaluation result, corrective action and conversion receipt.[data:visual/assets/ecosystem-policy.json]
+
+Land, space, industry, finance, talent, computing, data and scenarios are managed through eight factor registers. First-stage projects use existing buildings and reversible facilities. Public co-testing space includes staffed service. Public-realm works, test facilities and commercial operations use separate accounts. Talent development links courses, training, residencies and jobs. Each dataset records source, purpose, retention, human review and deletion duty. Scenarios pass through open calls, joint review, time-limited trials, evaluation and exit.
+
+![Benchmark cases and the AI innovation ecosystem](assets/figures/ecosystem-benchmark.en.png)
+
+### 12.2 Twelve public AI services
+
 Each of the twelve proposed public services defines its users, location, owner type, staffed route, necessary data, stop authority, public notice and annual review requirements. Four services are selected for near-term trial operation; the remainder proceed in careful phases once site, staffing, funding and specialist-review conditions are in place.
 
 | ID | Service and location | Delivery and operating requirement | Staffed route and adjustment condition |
@@ -190,6 +200,16 @@ Colours are assigned by information duty: orange for responsibility, warning and
 
 ![Grow with Jingzhang brand and public-information system](assets/figures/brand-system.en.png)
 
+### Three cultural narratives and three civic landmarks
+
+The corridor adopts three narrative lines. “Independent Engineering” covers the 1909 Jingzhang Railway, surveying and construction archives. “Open Innovation” covers Zhongguancun research, entrepreneurship, open-source collaboration and technology transfer. “Civic Intelligence” explains the duties, rights and operating rules that govern AI in public services. The three lines structure public courses, wayfinding, annual exhibitions and international communication.[data:visual/assets/culture-landmark-system.json]
+
+Three landmarks are delivered. The Jingzhang Origin Milestone Court in AI Origin Community organises rail archives, oral history and public courses around the dates 1909, 1980 and 2026. The Open Model Gallery at Zhongzhiyuan publishes reproducible models, test methods, failure cases, data sources and stop records. The Civic Governance Signal Tower in Dazhongsi Public Hall displays whether each of the twelve services is open, restricted, under human takeover, being corrected or stopped. All three landmarks also provide everyday access, rest, education, wayfinding and staffed service.
+
+The Jingzhang Open Contribution Archive records four types of contribution: public problem discovery, open tools and data, safety and accessibility improvements, and long-term maintenance. Only verifiable public work qualifies; sponsorship alone does not. Physical plaques, the contribution wall, the offline archive and the annual public report use the same record IDs and undergo annual joint review.
+
+![Cultural narrative, civic landmarks and contribution archive](assets/figures/culture-landmarks.en.png)
+
 ## 15. Renewal Projects, Implementation Policy, and Phasing
 
 Six near-term project packages are established: the Jingzhang mobility pilot, the Dazhongsi station-city connection project, the Zhongzhiyuan R&D test field, the AI Origin shared ground floor, the public-service-node prototype and the public-AI service management system. Cost classes S, M and L are comparison grades for the project-reserve stage, corresponding to below CNY 5 million, CNY 5–20 million and CNY 20–50 million; specific investment requirements are determined at feasibility study, design estimate and fiscal review.
@@ -225,7 +245,17 @@ Participants include program, delivery and operating bodies; transport, rail, fi
 
 ![Ninety-day co-test, delivery phases and public receipts](assets/figures/delivery-program.en.png)
 
-## 17. Metrics, Area Recalculation, and Compliance Matrix
+## 17. Annual Events, Developer Community, and Conversion
+
+The annual calendar has four seasons. The Jingzhang Urban Problem Season in spring publishes at least 30 scenario needs and runs six site walks. The Open Validation Season in summer completes at least 20 prototype tests and repeats eight negative-test categories. Jingzhang Civic Intelligence Week in autumn completes at least 12 multi-group co-tests and four open-source workshops. The Annual Governance Assembly in winter reviews all twelve services and six project packages, issuing a list of actions to continue, correct, reduce or terminate.[data:visual/assets/annual-operation-program.json]
+
+The developer community maintains four working groups: public service and accessibility, model safety and evaluation, edge devices and robotics, and urban data and maintenance. Each project names a maintainer and a public-problem owner. Licences for code, models, data and documentation are registered separately. A project that misses two consecutive safety corrections loses access to public scenarios. The annual program includes twelve open working days and produces at least eight reusable outputs.
+
+Enterprise and talent conversion follows five gates: need registration, controlled validation, public co-testing, procurement or partnership, and scaled application. Cross-district replication begins only after rights, costs, operating responsibility and annual service performance meet the stated thresholds. Event funding, site maintenance and staffed-service posts have separate budgets; events cannot draw on basic maintenance or human-service funding.
+
+![Annual events, developer community and conversion pathway](assets/figures/annual-operation.en.png)
+
+## 18. Metrics, Area Recalculation, and Compliance Matrix
 
 Indicators are divided into five types: working-base recalculations, concept-scheme recalculations, proposed controls, operating targets and scheme-rule checks. Figures and tables record the current status, measurement method, responsible body and review cycle for each indicator. Items not yet surveyed are entered in the project-initiation list rather than filled with estimates.[metric:green_ratio] [metric:public_space_ratio] [depth:metrics_recalculation]
 
@@ -243,27 +273,31 @@ Indicators are divided into five types: working-base recalculations, concept-sch
 | Protocol-valid services | 12/12 | Scheme-stage check | Check every service against eight admission rules |
 | Negative tests rejected | 8/8 | Scheme-stage check | Inject defect and confirm expected rejection rule |
 
-## 18. Risk, Copyright, and Compliance
+## 19. Risk, Copyright, and Compliance
 
 Risk management covers boundary and tenure, rail and transport, personal information and minors, accessibility, operations and maintenance, climate and drainage, commercial displacement, and asset rights and claims. Each category defines its trigger conditions, mitigation measures, emergency arrangements and responsible body. Throughout delivery, staffed routes, basic public amenities and public-comment channels remain open, so that essential urban services run stably.[data:risk.json]
 
-Figures, PDFs and webpages in this package are generated locally from structured data. OpenStreetMap background data follows ODbL 1.0 with contributor credit; NASA POWER data supports concept-stage climate analysis; Blender, Three.js and generated scenes support scheme communication. The source, transformation, licence condition and claim boundary of each asset are recorded in `sources.json`, `rights-clearance-ledger.json` and the copyright statement, keeping provenance traceable and use compliant.[source:OSM-CONTEXT-20260808] [source:NASA-POWER-2015-2024]
+Figures, PDFs and webpages in this package are generated from structured data through the local build system. OpenStreetMap background follows ODbL 1.0 and retains contributor credit; NASA POWER supports concept-stage climate analysis; Blender, Three.js and generated scenes support spatial communication. Every delivered file records its path, author or generation tool, input source, licence, transformation, credit location, publication scope and restriction. Original work follows the bundled `COMMUNITY-DISPLAY-ONLY` terms.[source:OSM-CONTEXT-20260808] [source:NASA-POWER-2015-2024] [data:visual/assets/rights-clearance-ledger.json]
 
 ![Evidence, rights and claim-boundary register](assets/figures/rights-evidence.en.png)
 
 The next-stage data list includes official overall and key-district boundaries, topographic survey, road and parcel redlines, building-by-building and tenure survey, heritage controls, utility alignments and capacity, fire and transport models, time-based station passenger flow, current accessibility barriers, detailed hydrology and soil data, and public-participation records. Once these are incorporated into the shared base map, the land balance and indicators will be recalculated, producing a deepened scheme ready for planning review, feasibility study and engineering design.
 
-## 19. References
+## 20. Taskbook Delivery Matrix
 
-The task basis consists of the open-call notice, the agent taskbook, the repository site package, the source registry and the processed fact navigation.[source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [source:SOURCE-REGISTRY]
+The six taskbook workstreams are controlled through one delivery matrix. Overall coordination, ecosystem benchmarking, twelve public AI services, landmarks and recognition, cultural narrative, and annual operation each have a dedicated sheet, structured register, report section and annual indicator. A task is not recorded as complete unless the corresponding file, figure and accountability register have been delivered.[data:visual/assets/agent-task-delivery-matrix.json]
 
-Urban renewal, walking and cycling, accessibility and climate adaptation refer to the Beijing Urban Renewal Regulation, Beijing walk-cycle planning and design standards, the national Accessibility Environment Construction Law, and Beijing sponge-city and resilient-city standards. Applicable clauses and design parameters will be confirmed by qualified organisations during project initiation and specialist design.[source:BEIJING-URBAN-RENEWAL-REGULATION] [source:ACCESSIBILITY-LAW-2023] [source:BEIJING-SPONGE-DESIGN-STANDARD]
+## 21. References
+
+The task basis consists of the open-call notice, the agent taskbook, the repository site package, the source registry and the processed fact navigation.[source:DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509] [source:DATA-SRC-AGENT-TASKBOOK-20260518] [source:SOURCE-REGISTRY]
+
+Urban renewal, walking and cycling, accessibility and climate adaptation refer to the Beijing Urban Renewal Regulation, Beijing walk-cycle planning and design standards, the national Accessibility Environment Construction Law, and Beijing sponge-city and resilient-city standards. Applicable clauses and design parameters will be confirmed by qualified organisations during project initiation and specialist design.[source:BEIJING-URBAN-RENEWAL-REGULATION] [source:DATA-SRC-BARRIER-FREE-ENVIRONMENT-LAW] [source:BEIJING-SPONGE-DESIGN-STANDARD]
 
 ### Deliverable Index
 
 The index below links public sources, planning standards, design depth, spatial layers and the indicator ledger, so that original records and recalculation rules can be traced.
 
-- Sources and methods: [source:SITE-PACKAGE] [source:SOURCE-REGISTRY] [source:PROCESSED-FACT-PACK] [source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE] [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [source:CASE-PARIS-15M] [source:CASE-VIENNA-GENDER] [source:CASE-PUNGGOL] [source:CASE-KALASATAMA] [source:CASE-BARCELONA-SUPERBLOCK] [source:CASE-KENDALL] [source:CASE-PARIS-SACLAY] [source:PRINCIPLE-UNHABITAT] [source:PRINCIPLE-NEB] [source:PRINCIPLE-AMSTERDAM-CIRCULAR] [source:OSM-CONTEXT-20260808] [source:NASA-POWER-2015-2024] [source:BEIJING-SPONGE-CITY] [source:BEIJING-RESILIENT-CITY] [source:BEIJING-CLIMATE-ADAPTATION] [source:BEIJING-RAIN-GARDEN-STANDARD] [source:BEIJING-URBAN-RENEWAL-REGULATION] [source:BEIJING-WALK-CYCLE-STANDARD] [source:ACCESSIBILITY-LAW-2023] [source:BEIJING-SPONGE-DESIGN-STANDARD] [source:BLENDER-52-MODEL] [source:THREEJS-OFFLINE-EXHIBIT] [source:OPENAI-IMAGEGEN-SCENES]
+- Sources and methods: [source:SITE-PACKAGE] [source:SOURCE-REGISTRY] [source:PROCESSED-FACT-PACK] [source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE] [source:DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509] [source:DATA-SRC-AGENT-TASKBOOK-20260518] [source:CASE-PARIS-15M] [source:CASE-VIENNA-GENDER] [source:CASE-PUNGGOL] [source:CASE-KALASATAMA] [source:CASE-BARCELONA-SUPERBLOCK] [source:CASE-KENDALL] [source:CASE-PARIS-SACLAY] [source:PRINCIPLE-UNHABITAT] [source:PRINCIPLE-NEB] [source:PRINCIPLE-AMSTERDAM-CIRCULAR] [source:OSM-CONTEXT-20260808] [source:NASA-POWER-2015-2024] [source:BEIJING-SPONGE-CITY] [source:BEIJING-RESILIENT-CITY] [source:BEIJING-CLIMATE-ADAPTATION] [source:BEIJING-RAIN-GARDEN-STANDARD] [source:BEIJING-URBAN-RENEWAL-REGULATION] [source:BEIJING-WALK-CYCLE-STANDARD] [source:DATA-SRC-BARRIER-FREE-ENVIRONMENT-LAW] [source:BEIJING-SPONGE-DESIGN-STANDARD] [source:BLENDER-52-MODEL] [source:THREEJS-OFFLINE-EXHIBIT] [source:OPENAI-IMAGEGEN-SCENES]
 - Applicable standards: [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [standard:MOHURD-URBAN-DESIGN-MEASURES] [standard:MOHURD-CONTROL-DETAILED-PLANNING] [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [standard:MOHURD-ARCH-DESIGN-DEPTH-2016]
 - Design depth: [depth:existing_conditions_diagnosis] [depth:three_level_scope_framework] [depth:overall_spatial_structure] [depth:land_use_layout] [depth:development_intensity_controls] [depth:height_massing_character] [depth:retain_renovate_demolish] [depth:traffic_rail_slow_parking] [depth:municipal_new_infrastructure] [depth:blue_green_public_space] [depth:three_key_area_detailed_design] [depth:renewal_project_list] [depth:phasing_implementation] [depth:metrics_recalculation] [depth:risk_missing_data]
 - Spatial data: [data:geometry/site_boundary.geojson] [data:geometry/key_areas.geojson] [data:geometry/land_use.geojson] [data:geometry/buildings.geojson] [data:geometry/roads.geojson] [data:geometry/green_space.geojson] [data:geometry/public_space.geojson] [data:geometry/constraints.geojson] [data:geometry/phasing.geojson]

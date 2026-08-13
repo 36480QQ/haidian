@@ -14,7 +14,7 @@ tracks: ["ai-traffic-walkability", "ai-public-services", "civic-agent-governance
 
 需要清醒认识到，现阶段正式边界、土地及房屋权属、轨道安全、交通组织、地下管线、消防条件、项目资金和后续运营主体等基础条件尚未逐项核清。本方案坚持底线思维、量力而行，把核清前置条件作为现阶段首要工作，在此基础上研究确定项目能否启动、建设规模和实施顺序，防止脱离实际、仓促上马。
 
-按照征集任务，方案以约 11.4 平方公里总体设计范围为工作底图，以众智园、北京 AI 原点社区和大钟寺三处重点片区为近期工作重点，建立六个项目包和 0—24 个月滚动实施计划。其中，京张铁路遗产廊道主要承担公共空间联系功能；三处重点片区分别补齐研发测试、成果转化、人才服务和站城接驳方面的设施短板；十二处公共服务节点随示范段和片区项目分期建设、逐步投用。[source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK]
+按照征集任务，方案以约 11.4 平方公里总体设计范围为工作底图，以众智园、北京 AI 原点社区和大钟寺三处重点片区为近期工作重点，建立六个项目包和 0—24 个月滚动实施计划。其中，京张铁路遗产廊道主要承担公共空间联系功能；三处重点片区分别补齐研发测试、成果转化、人才服务和站城接驳方面的设施短板；十二处公共服务节点随示范段和片区项目分期建设、逐步投用。[source:DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509] [source:DATA-SRC-AGENT-TASKBOOK-20260518]
 
 ## 一、需要优先解决的实施问题
 
@@ -22,7 +22,7 @@ tracks: ["ai-traffic-walkability", "ai-public-services", "civic-agent-governance
 
 | 实施问题 | 管理判断 | 近期工作 | 形成成果 |
 |---|---|---|---|
-| 正式边界、权属和现状条件尚未齐备 | 现有图层可用于方案编制，暂不作为征地、供地或工程放线依据 | 衔接主管部门和权利主体，核对红线、产权、租约、在建项目及使用现状 | 统一工作底图、权属清单、现状建筑台账 |
+| 正式边界、权属和现状条件尚未齐备 | 现有图层用于方案编制；征地、供地和工程放线统一采用主管部门确认成果 | 衔接主管部门和权利主体，核对红线、产权、租约、在建项目及使用现状 | 统一工作底图、权属清单、现状建筑台账 |
 | 京张沿线存在慢行断点和站区衔接问题 | 先选择条件相对成熟的 1 公里路段开展示范，避免全线同步开工 | 完成交通调查、轨道安全协调、管线摸排、树木调查和典型断面比选 | 示范段实施方案、专项意见、施工图任务书 |
 | 便民服务设施分散，建设与运营责任容易脱节 | 服务节点与场地、人员、经费和维护责任一并落实 | 确定 3 处首期节点，核实用地、设施接入、人员排班和年度运维经费 | 节点选址表、设施清单、运营责任表 |
 | 重点片区更新条件差异较大 | 众智园、AI 原点社区和大钟寺分别编制项目清单，不采用统一开发模式 | 逐片区核对权属、结构消防、客流疏散、产业需求和经营条件 | 三张项目清单、三套前置条件清单 |
@@ -45,7 +45,7 @@ tracks: ["ai-traffic-walkability", "ai-public-services", "civic-agent-governance
 
 ## 二、设计依据与资料清单
 
-本方案工作范围按照征集任务书确定，包括 43.6 平方公里统筹研究范围、约 11.4 平方公里总体设计范围，以及众智园、北京 AI 原点社区和大钟寺三处重点片区。现阶段依据征集资料包和公告信息形成规划工作底图；待正式边界公布后，统一开展图层更新、面积复算和指标校核。需要说明的是，本次提交的 `SITE_BOUNDARY` 和 `KEY_AREA` 图层属性登记为 `official_boundary=false`、`geometry_role=provisional_constraint`，仅作为方案编制的暂定约束，不作为征地、供地或工程放线的依据。[source:OFFICIAL-ANNOUNCEMENT] [source:SITE-PACKAGE] [assumption:A-BOUNDARY-001]
+本方案工作范围按照征集任务书确定，包括 43.6 平方公里统筹研究范围、约 11.4 平方公里总体设计范围，以及众智园、北京 AI 原点社区和大钟寺三处重点片区。规划编制统一采用征集资料包和公告信息形成的工作底图。正式边界纳入统一底图后，完成图层更新、面积复算和指标校核；`SITE_BOUNDARY` 和 `KEY_AREA` 在此之前执行暂定约束属性，不进入征地、供地和工程放线程序。[source:DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509] [source:SITE-PACKAGE] [assumption:A-BOUNDARY-001]
 
 为确保资料来源清楚、使用口径统一，本方案对规划资料按四类属性实行分类管理：
 
@@ -56,7 +56,7 @@ tracks: ["ai-traffic-walkability", "ai-public-services", "civic-agent-governance
 | 规划控制值 | 用于方案比选和后续专项设计 | 步行净宽、骑行净宽、休憩点间距、遮阴比例 | 纳入专项设计和工程验收进一步校核 |
 | 深化事项 | 随现状调查和法定程序补充 | 正式红线、权属、容积率、逐栋现状、市政容量 | 纳入下一阶段资料清单和任务分工 |
 
-对国内外相关案例，本方案坚持因地制宜、为我所用，仅作为工作方法的比选参考：近邻设施布局用于校核服务半径，包容性规划方法用于识别不同人群的通行和使用障碍，渐进式更新经验用于安排小规模先行项目，产学研协同做法用于梳理运营关系。用地性质、开发强度、工程参数和审批程序，一律以北京市现行规划管理要求和项目专项意见为准。[source:CASE-VIENNA-GENDER] [source:CASE-PUNGGOL] [source:CASE-KALASATAMA]
+方案选取 Kendall Square、Paris-Saclay、Kalasatama、Punggol Digital District、Barcelona Superblocks 和 Vienna Gender Mainstreaming 六个案例进行同表比较。比较结果直接转化为六项制度：科研验证与成果转化连续布置，交通节点与共享设施同步建设，数字服务设置人工接管，园区和高校共享场景清单，慢行整治释放公共空间，重点人群走查纳入项目立项。案例中的高租金挤出、低密扩张、封闭数据平台和削弱基本服务等做法不予采用。[source:CASE-VIENNA-GENDER] [source:CASE-PUNGGOL] [source:CASE-KALASATAMA] [source:CASE-BARCELONA-SUPERBLOCK] [source:CASE-KENDALL] [source:CASE-PARIS-SACLAY] [data:visual/assets/ecosystem-policy.json]
 
 ## 三、规划目标与公共服务保障要求
 
@@ -80,9 +80,9 @@ tracks: ["ai-traffic-walkability", "ai-public-services", "civic-agent-governance
 
 ## 五、统筹研究范围产业与未来城市研究
 
-统筹研究范围着重解决跨片区、跨主体的协同事宜，设置五类年度协同事项：研发测试与安全评估、校园社区教育培训、科技成果转化服务、站城公共服务、蓝绿设施运行维护。每项工作均明确牵头类型、配合单位、年度任务、经费安排和归档成果，纳入项目调度清单管理。[data:visual/assets/regional-collaboration-ledger.json]
+统筹研究范围建立两级协同网络。廊道内部设置研发测试、校园社区教育、成果转化、站城服务和蓝绿运维五类接口；外部联动北纬社区、未来科学城、怀柔科学城、北京经济技术开发区和京津冀创新节点。各协作单元执行年度任务书，明确资源交换、责任类型、成果数量、经费科目和退出条件。[data:visual/assets/regional-collaboration-ledger.json] [data:visual/assets/regional-action-program.json]
 
-在分工上，研发测试由高校、科研机构、园区和专业评估单位共同提出年度需求；成果转化由技术服务机构、产权单位和园区运营方明确空间及服务条件；社区和站区项目由属地、运营单位和使用者代表提出设施补短板清单；园林、市政和设施运营单位负责明确维护标准和年度费用。区级统筹工作应同步算好规划账、时间账和资金账，防止建设任务与后续运营相互脱节。[depth:overall_spatial_structure]
+北纬社区每年开展四次重点人群走查并完成不少于六项服务流程改进；未来科学城每年联合发布两个跨城场景题目；怀柔科学城每年形成两套公共科学课程和一项城市应用验证；北京经济技术开发区每年组织三项设备互测和一次供应链对接；京津冀协同网络每年发布一份跨区域场景目录，推动三项成果异地验证。未经年度项目协议确认的协作事项不列入实施项目和绩效统计。[depth:overall_spatial_structure] [data:visual/assets/regional-action-program.json]
 
 项目启动阶段安排五项专项调查：企业和就业岗位、人才及家庭公共服务、分时通勤和站城接驳、存量建筑和租赁使用、蓝绿及市政设施容量。调查结果形成统一数据表，由责任单位按年度更新，作为调整公共服务规模、项目排序和资金计划的依据。[source:PROCESSED-FACT-PACK] [metric:osm_context_feature_count]
 
@@ -90,7 +90,7 @@ tracks: ["ai-traffic-walkability", "ai-public-services", "civic-agent-governance
 
 ## 六、总体设计范围城市更新与控规深度城市设计
 
-总体设计范围形成“一轴三片、两翼协同、多点支撑”的空间结构，用于组织近期项目和公共设施布局，不替代法定用地及规划条件。
+总体设计范围形成“一轴三片、两翼协同、多点支撑”的空间结构，统筹近期项目和公共设施布局；法定用地及规划条件按照主管部门审批成果执行。
 
 - 京张沿线公共空间联系轴依托铁路遗产廊道，分段补齐步行、骑行、林荫、雨水设施、公共服务和文化信息。
 - 三处重点片区分别承担受控验证、社区协同创新和站城公共服务职能。
@@ -153,6 +153,16 @@ tracks: ["ai-traffic-walkability", "ai-public-services", "civic-agent-governance
 
 ## 十二、AI 创新生态、人才画像与 AI+ 场景
 
+### （一）创新生态与要素配置
+
+创新生态按照“需求发布—原型验证—公共共测—转化应用”四级链条运行。每年发布不少于 30 项公共与产业场景需求，在众智园完成不少于 20 项原型测试，在 AI 原点社区和小月河公共体验环完成不少于 12 项多群体共测，在大钟寺和中关村科技服务翼形成不少于 8 项采购、合作或规模应用方案。每一阶段均形成编号、评估结果、整改要求和转化回执。[data:visual/assets/ecosystem-policy.json]
+
+土地、空间、产业、资金、人才、算力、数据和场景实行八类要素清单管理。首期项目优先使用存量建筑和可逆设施；公共共测空间同步配置人工服务；公共环境、试验设施和商业运营分类建账；人才培养设置课程、实训、驻留和岗位四级通道；数据逐项登记来源、用途、保存期限、人工复核和删除责任；场景实行公开征集、联合审查、限期试验、效果评估和退出更新。
+
+![国内外案例比较与AI创新生态图谱](assets/figures/ecosystem-benchmark.png)
+
+### （二）十二项公共人工智能服务
+
 十二项拟建公共服务逐项明确服务对象、建设位置、责任类型、人工办理方式、必要数据、暂停权限、信息公开和年度评估要求。近期先行选择四项组织试运行；其余项目待场地、人员、经费和专业审查条件具备后，分期稳妥实施。
 
 | 编号 | 服务项目与建设位置 | 建设和运行要求 | 人工办理与调整条件 |
@@ -190,6 +200,16 @@ tracks: ["ai-traffic-walkability", "ai-public-services", "civic-agent-governance
 
 ![公共空间标识与导视系统指引](assets/figures/brand-system.png)
 
+### 三条文化叙事与三处主题地标
+
+沿线文化表达实行三条叙事线。第一条“自主工程”讲述 1909 年京张铁路工程、测绘与建设档案；第二条“开放创新”梳理中关村科研创业、开源协作和产业转化；第三条“公共智能”展示人工智能进入城市公共服务后的责任、权利和运行规则。三条叙事分别进入公共课程、空间导视、年度展陈和国际传播文本。[data:visual/assets/culture-landmark-system.json]
+
+建设三处主题地标。北京 AI 原点社区设置“京张原点里程庭”，以 1909、1980、2026 三个时间刻度组织铁路档案、口述史和开放课程；众智园设置“开放模型廊”，公开展示可复现模型、测试方法、失败样例、数据来源和停止记录；大钟寺站城公共厅设置“共治信号塔”，显示十二项服务的开放、限流、人工接管、整改和停止状态。三处地标同时承担通行、休憩、课程、导向和人工服务，不设置脱离日常使用的纯展示构筑物。
+
+建立“京张开放贡献档案”，按公共问题发现、开源工具与数据、安全与无障碍改进、长期维护四类记录贡献。荣誉只授予有公开成果和可复核记录的个人或团队，机构赞助不直接形成荣誉资格。沿线实体铭牌、开放贡献墙、离线数字档案和年度公共报告使用同一编号，每年联合复核一次。
+
+![文化叙事、主题地标与荣誉展示体系](assets/figures/culture-landmarks.png)
+
 ## 十五、更新项目清单、实施政策与分期计划
 
 近期建立六个项目包，即京张沿线慢行示范段、大钟寺站城衔接先导项目、众智园研发测试场、AI 原点社区共享首层、公共服务节点样板、公共人工智能服务管理系统。S、M、L 为项目储备阶段的投资比较级别，分别对应 500 万元以内、500—2,000 万元和 2,000—5,000 万元；具体资金需求在可行性研究、设计概算和财政评审阶段核定。
@@ -225,7 +245,17 @@ tracks: ["ai-traffic-walkability", "ai-public-services", "civic-agent-governance
 
 ![分期实施计划与年度评估安排](assets/figures/delivery-program.png)
 
-## 十七、指标体系、面积复算与合规矩阵
+## 十七、年度活动、开发者社区与转化机制
+
+建立四季活动日历。春季举办“京张城市问题季”，发布不少于 30 项场景需求并开展 6 场现场走查；夏季举办“京张开放验证季”，完成不少于 20 项原型测试和 8 类异常情形复测；秋季举办“京张公共智能周”，完成不少于 12 项多群体共测和 4 场开源工作坊；冬季召开“京张年度治理会”，对十二项服务和六个项目包形成继续、整改、缩减或终止清单。[data:visual/assets/annual-operation-program.json]
+
+开发者社区设置公共服务与无障碍、模型安全与评测、端侧设备与机器人、城市数据与运维四个常态工作组。每个项目指定维护人和公共问题负责人，代码、模型、数据和文档分别登记许可；连续两次未完成安全整改的项目停止进入公共场景。年度安排 12 次开放工作日，形成不少于 8 项可复用成果。
+
+企业和人才转化执行五级流程：需求入库、受控验证、公共共测、采购与合作、规模应用。项目只有在权利清晰、成本可承担、运营责任落实且年度绩效达到服务标准后，才能进入跨区复制和规模应用。年度活动经费、场地运维经费和人工服务岗位经费分别编制，活动经费不得挤占基本设施维护和人工服务预算。
+
+![年度活动、开发者社区与成果转化路径](assets/figures/annual-operation.png)
+
+## 十八、指标体系、面积复算与合规矩阵
 
 指标体系分为工作底图复算、概念方案复算、规划控制值、运营目标和方案规则校核五类。图表同步列出各项指标的当前状态、测量方法、责任主体和评估周期；尚未调查核实的补充事项，纳入项目启动清单，不以推测值充数。[metric:green_ratio] [metric:public_space_ratio] [depth:metrics_recalculation]
 
@@ -238,32 +268,36 @@ tracks: ["ai-traffic-walkability", "ai-public-services", "civic-agent-governance
 | 连续步行净宽 | ≥3.0 m | 建议控制值，未实施 | 建成后按最窄点逐段实测 |
 | 双向骑行净宽 | ≥4.0 m | 建议控制值，未实施 | 施工图复核和建成实测 |
 | 有效休憩点间距 | ≤150 m | 建议控制值，未实施 | 沿连续无障碍路线测量 |
-| 主要停留空间遮阴 | ≥70% | 建议目标，未实施 | 夏季设计时段日照分析和现场抽测 |
+| 主要停留空间遮阴 | ≥70% | 方案控制目标 | 夏季设计时段日照分析和现场抽测 |
 | 人工服务可用率 | 100% | 运营目标，未实施 | 按公布时段开展月度抽测 |
 | 完成规则校核的拟建服务 | 12/12 | 方案阶段校核 | 八项申报审查条件逐项核对 |
 | 完成异常情形测试 | 8/8 | 方案阶段校核 | 按预设异常情形核对响应机制 |
 
-## 十八、风险、版权与合规说明
+## 十九、风险、版权与合规说明
 
 风险管理覆盖边界和权属、轨道及交通、个人信息和未成年人、无障碍、运营维护、气候排水、商业置换、素材权利和成果使用等事项。各类事项逐项明确识别条件、处置措施、应急安排和责任主体。项目推进期间，持续保障人工办理路径、基本公共设施和公众意见渠道畅通，确保城市基本服务稳定运行。[data:risk.json]
 
-本成果的图件、PDF 和网页由本地脚本及结构化数据生成。OpenStreetMap 背景数据遵循 ODbL 1.0 并标注贡献者；NASA POWER 数据用于概念阶段气候分析；Blender、Three.js 和图像生成场景用于方案表达。各项素材的来源、加工方式、许可条件和主张边界，登记于 `sources.json`、`rights-clearance-ledger.json` 和版权声明，做到来源可溯、使用合规。[source:OSM-CONTEXT-20260808] [source:NASA-POWER-2015-2024]
+本成果的图件、PDF 和网页由结构化数据和本地构建程序生成。OpenStreetMap 背景遵循 ODbL 1.0 并保留贡献者署名；NASA POWER 数据用于概念阶段气候分析；Blender、Three.js 和图像生成场景用于空间表达。每个成果文件登记文件路径、作者或生成工具、输入来源、许可、修改方式、署名位置、公开范围和限制条件。原创成果适用 `COMMUNITY-DISPLAY-ONLY` 条款，完整条款随包交付。[source:OSM-CONTEXT-20260808] [source:NASA-POWER-2015-2024] [data:visual/assets/rights-clearance-ledger.json]
 
 ![成果编制依据与资料使用说明](assets/figures/rights-evidence.png)
 
 下一阶段资料清单包括正式总体及重点区边界、地形测绘、道路和地块红线、逐栋建筑及产权、文物保护、市政管线与容量、消防与交通模型、站点分时客流、现状无障碍障碍点、详细水文土壤及公众参与记录。上述资料纳入统一底图后，复算土地平衡和各项指标，形成可进入规划审查、可行性研究和工程设计阶段的深化成果。
 
-## 十九、参考资料
+## 二十、任务书交付矩阵
 
-任务依据包括征集公告、面向智能体任务书、仓库资料包、来源登记和处理事实导航。[source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [source:SOURCE-REGISTRY]
+任务书六项专项任务纳入统一交付矩阵。总体统筹、案例与生态、十二项场景、地标与荣誉、文化叙事、年度运营分别对应独立图页、结构化台账、正文专节和年度指标。项目管理单位按交付矩阵检查缺项，未形成文件、图件或责任清单的任务不计为完成。[data:visual/assets/agent-task-delivery-matrix.json]
 
-城市更新、慢行无障碍和气候适应依据包括《北京市城市更新条例》、北京步行和自行车交通环境规划设计标准、《无障碍环境建设法》、北京海绵城市及韧性城市相关标准。具体适用条款和设计参数，在项目立项及专项设计阶段由具备相应资质的单位核对确认。[source:BEIJING-URBAN-RENEWAL-REGULATION] [source:ACCESSIBILITY-LAW-2023] [source:BEIJING-SPONGE-DESIGN-STANDARD]
+## 二十一、参考资料
+
+任务依据包括征集公告、面向智能体任务书、仓库资料包、来源登记和处理事实导航。[source:DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509] [source:DATA-SRC-AGENT-TASKBOOK-20260518] [source:SOURCE-REGISTRY]
+
+城市更新、慢行无障碍和气候适应依据包括《北京市城市更新条例》、北京步行和自行车交通环境规划设计标准、《无障碍环境建设法》、北京海绵城市及韧性城市相关标准。具体适用条款和设计参数，在项目立项及专项设计阶段由具备相应资质的单位核对确认。[source:BEIJING-URBAN-RENEWAL-REGULATION] [source:DATA-SRC-BARRIER-FREE-ENVIRONMENT-LAW] [source:BEIJING-SPONGE-DESIGN-STANDARD]
 
 ### 成果资料索引
 
 下列索引用于连接公开资料、规划标准、设计深度、空间图层和指标台账，便于查询原始记录和复算口径。
 
-- 来源与方法：[source:SITE-PACKAGE] [source:SOURCE-REGISTRY] [source:PROCESSED-FACT-PACK] [source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE] [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [source:CASE-PARIS-15M] [source:CASE-VIENNA-GENDER] [source:CASE-PUNGGOL] [source:CASE-KALASATAMA] [source:CASE-BARCELONA-SUPERBLOCK] [source:CASE-KENDALL] [source:CASE-PARIS-SACLAY] [source:PRINCIPLE-UNHABITAT] [source:PRINCIPLE-NEB] [source:PRINCIPLE-AMSTERDAM-CIRCULAR] [source:OSM-CONTEXT-20260808] [source:NASA-POWER-2015-2024] [source:BEIJING-SPONGE-CITY] [source:BEIJING-RESILIENT-CITY] [source:BEIJING-CLIMATE-ADAPTATION] [source:BEIJING-RAIN-GARDEN-STANDARD] [source:BEIJING-URBAN-RENEWAL-REGULATION] [source:BEIJING-WALK-CYCLE-STANDARD] [source:ACCESSIBILITY-LAW-2023] [source:BEIJING-SPONGE-DESIGN-STANDARD] [source:BLENDER-52-MODEL] [source:THREEJS-OFFLINE-EXHIBIT] [source:OPENAI-IMAGEGEN-SCENES]
+- 来源与方法：[source:SITE-PACKAGE] [source:SOURCE-REGISTRY] [source:PROCESSED-FACT-PACK] [source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE] [source:DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509] [source:DATA-SRC-AGENT-TASKBOOK-20260518] [source:CASE-PARIS-15M] [source:CASE-VIENNA-GENDER] [source:CASE-PUNGGOL] [source:CASE-KALASATAMA] [source:CASE-BARCELONA-SUPERBLOCK] [source:CASE-KENDALL] [source:CASE-PARIS-SACLAY] [source:PRINCIPLE-UNHABITAT] [source:PRINCIPLE-NEB] [source:PRINCIPLE-AMSTERDAM-CIRCULAR] [source:OSM-CONTEXT-20260808] [source:NASA-POWER-2015-2024] [source:BEIJING-SPONGE-CITY] [source:BEIJING-RESILIENT-CITY] [source:BEIJING-CLIMATE-ADAPTATION] [source:BEIJING-RAIN-GARDEN-STANDARD] [source:BEIJING-URBAN-RENEWAL-REGULATION] [source:BEIJING-WALK-CYCLE-STANDARD] [source:DATA-SRC-BARRIER-FREE-ENVIRONMENT-LAW] [source:BEIJING-SPONGE-DESIGN-STANDARD] [source:BLENDER-52-MODEL] [source:THREEJS-OFFLINE-EXHIBIT] [source:OPENAI-IMAGEGEN-SCENES]
 - 适用标准：[standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [standard:MOHURD-URBAN-DESIGN-MEASURES] [standard:MOHURD-CONTROL-DETAILED-PLANNING] [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [standard:MOHURD-ARCH-DESIGN-DEPTH-2016]
 - 设计深度：[depth:existing_conditions_diagnosis] [depth:three_level_scope_framework] [depth:overall_spatial_structure] [depth:land_use_layout] [depth:development_intensity_controls] [depth:height_massing_character] [depth:retain_renovate_demolish] [depth:traffic_rail_slow_parking] [depth:municipal_new_infrastructure] [depth:blue_green_public_space] [depth:three_key_area_detailed_design] [depth:renewal_project_list] [depth:phasing_implementation] [depth:metrics_recalculation] [depth:risk_missing_data]
 - 空间数据：[data:geometry/site_boundary.geojson] [data:geometry/key_areas.geojson] [data:geometry/land_use.geojson] [data:geometry/buildings.geojson] [data:geometry/roads.geojson] [data:geometry/green_space.geojson] [data:geometry/public_space.geojson] [data:geometry/constraints.geojson] [data:geometry/phasing.geojson]
