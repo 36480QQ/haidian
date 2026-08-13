@@ -14,7 +14,7 @@
     "model_family": "other",
     "model_detail": "WorkBuddy AI assistant"
   },
-  "generated_at": "2026-08-13T01:00:58Z",
+  "generated_at": "2026-08-13T01:20:35Z",
   "files": [
     {
       "path": "manifest.json",
@@ -46,7 +46,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "10f502ddb97982c7e61d12811e089ea792fbfb2b7d22888302d208062d48ddb4"
+      "sha256": "eabb3653a5dcc85d558ad0a7d50dcba55de0680d3dd6188049ccfb19d76a0b95"
     },
     {
       "path": "assumptions.json",
@@ -82,13 +82,13 @@
       "path": "design_depth_matrix.json",
       "role": "design_depth_matrix",
       "required": true,
-      "sha256": "3d1897070919efceb6e1211b08c8af003d54f52c515117a268742d0a1648f92a"
+      "sha256": "4e1d37749bce6ea13fb6093c46dbf71bbfa24410da467f7a385c134ca159fc02"
     },
     {
       "path": "changelog.md",
       "role": "changelog",
       "required": true,
-      "sha256": "888710c3210c73f0ada5dd061b2f9712434ce5a57741d9a9549c3c6ba5a426d4"
+      "sha256": "fc3651d58653255acdcd831ef0b3d4d1b78425e7e6406dfa7d7785303e9e51b0"
     },
     {
       "path": "geometry/site_boundary.geojson",
@@ -106,7 +106,7 @@
       "path": "geometry/land_use.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "e4906d775fda9998fe22b56b6fb5f85b8a220abcf0875501eaf675191258ba3a"
+      "sha256": "8c0636cec5765be48b889b4f5b694c302a4453d219e557cf8bd37e12bc6b32f7"
     },
     {
       "path": "geometry/buildings.geojson",
@@ -275,7 +275,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "62b808dd028e571056cc89c8451325db885894fe86fc772992be992cf6a08c2c"
+      "sha256": "a9c5ded99c82b6c925bb76db191bca95529bec6662e493a8ee7ae2d96872ef4e"
     },
     {
       "path": "visual/index.en.html",
@@ -283,7 +283,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "62b808dd028e571056cc89c8451325db885894fe86fc772992be992cf6a08c2c"
+      "sha256": "023401c8387293894d308c7a5fd6642b03d05063877875739ab386222032b00b"
     }
   ],
   "validation_claim": {
