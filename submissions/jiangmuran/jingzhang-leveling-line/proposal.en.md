@@ -49,6 +49,10 @@ Rules are easy to write. You find out whether they work by writing somebody's mo
 
 **What she can do.** She may require one re-survey of the judgement that affected her, and the result is published alongside the original reading, anonymised. That right sits at the third-order point nearest her home: **putting the right of review in a specialist institution fifteen minutes away is the same as not granting it.**
 
+![FIG.21 How far the nearest benchmark actually is](assets/figures/reach.en.png)
+
+**That sentence had never been turned on this proposal.** FIG.21 measures the walk along the spine: the worst place on the line is 1,107 m from the nearest benchmark, 30.8 minutes for P5, and six of nine segments fail — **on this rule, this proposal does not meet the standard it holds others to**.
+
 **What the reading board says.** On the L2 closure stele this scenario is marked in datum red with the date it was sent back. The device is allowed to look bad: **a civic instrument willing to display its own failures builds more trust than any success narrative.**
 
 **How long the way back takes.** Not "fix it and relaunch". The whole route is re-measured, two consecutive cycles must fall within tolerance because once may be luck, the cause is published, and for an F1 scenario all four review categories must agree unanimously. Afterwards the cycle is halved until two further passes. **Exit is easy and return is slow, deliberately.**
@@ -1516,11 +1520,11 @@ An authorisation statement a reviewer cannot verify is not a statement. Each row
 
 <!-- LEDGERCOUNT:BEGIN -->
 
-**The file-level ledger sits outside the review input, so its result is brought in here.** `build_review_input` sends `proposal.md` and eight JSON files; neither `report/copyright_statement.md` nor `visual/assets/rights_ledger.json` is among them. **A rights ledger the reviewer structurally cannot open is, from the reviewer's position, exactly the unverifiable assertion this package objects to elsewhere.** All **106 shipped files** carry a clearance class; a file without one fails the build:
+**The file-level ledger sits outside the review input, so its result is brought in here.** `build_review_input` sends `proposal.md` and eight JSON files; neither `report/copyright_statement.md` nor `visual/assets/rights_ledger.json` is among them. **A rights ledger the reviewer structurally cannot open is, from the reviewer's position, exactly the unverifiable assertion this package objects to elsewhere.** All **108 shipped files** carry a clearance class; a file without one fails the build:
 
 | Clearance class | Files |
 |---|---|
-| `author-originated` | 84 |
+| `author-originated` | 86 |
 | `provisional-only-with-stated-limit` | 9 |
 | `author-originated-measurement` | 8 |
 | `author-originated-with-embedded-fonts` | 4 |
@@ -1575,7 +1579,7 @@ One point of citation discipline deserves stating plainly: **the cases are used 
 
 <!-- FIGINDEX:BEGIN -->
 
-There are 21 sheets, numbered FIG.00 to FIG.20. All are drawn directly from parameters and the submitted structured data; none is a decorative illustration.
+There are 22 sheets, numbered FIG.00 to FIG.21. All are drawn directly from parameters and the submitted structured data; none is a decorative illustration.
 
 | Sheet | Content | What to read on it |
 |---|---|---|
@@ -1600,6 +1604,7 @@ There are 21 sheets, numbered FIG.00 to FIG.20. All are drawn directly from para
 | FIG.18 | Maintenance: putting the wear on the parts that can be swapped | A monthly re-survey is a maintenance problem first. The sheet turns on one asymmetry: **the stone is the only part that must never be replaced and the only one a person cannot carry** (about 230 kg) — a benchmark that moves is not the same benchmark — so the wear is placed on the face, post, seat and guidance strip; the last block states what happens when a stone is lost anyway |
 | FIG.19 | Monuments beside heritage fabric: the no-drilling construction and its setback rule | The call is for a belt along a hundred-year-old railway and this proposal's central act is sinking concrete. Three constructions chosen by distance from the fabric, with the cost stated: **without excavation there is no foundation below the frost line, so the surface-set marker cannot carry first- or second-order duty**. Where d is measured from depends on the official heritage layer — absent here, and recorded as a gap |
 | FIG.20 | Reading after dark, without lighting the benchmark | Three third-order points are read monthly by residents, and many of those days fall after dark. A lamp is the obvious answer and the wrong one: **a dead lamp leaves a plate that looks maintained and cannot be read** — a measurement whose failure is invisible. The face is retroreflective and the reader brings the light; a dirty face looks dirty, in daylight |
+| FIG.21 | How far the nearest benchmark actually is: this proposal's own rule, applied to itself | This proposal argues repeatedly that review you must walk fifteen minutes to reach has not been given — and **nobody had measured the walk**. Measured: the worst place on the line is 1,107 m from the nearest benchmark, **30.8 minutes for P5, twice the limit this proposal holds others to**, and six of nine segments fail. The rule ships as a spacing requirement; the positions wait for the official alignment |
 
 <!-- FIGINDEX:END -->
 
