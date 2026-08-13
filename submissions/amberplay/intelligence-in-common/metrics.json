@@ -642,6 +642,108 @@
         "A-CONTROLS-001"
       ],
       "reason": "缺少官方道路红线与断面资料。"
+    },
+    "project_delivery_contract_count": {
+      "status": "known",
+      "value": 8.0,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/renewal-projects.json"
+      ],
+      "formula": "count(projects)",
+      "confidence": "medium",
+      "assumptions": [
+        "A-OPERATIONS-001"
+      ],
+      "interpretation_rule": "concept delivery contracts, not approved projects or procurement commitments"
+    },
+    "project_unique_accountable_owner_count": {
+      "status": "known",
+      "value": 8.0,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/renewal-projects.json"
+      ],
+      "formula": "count(distinct accountable roles across projects)",
+      "confidence": "medium",
+      "assumptions": [
+        "A-OPERATIONS-001"
+      ],
+      "interpretation_rule": "role-level accountability proposal; organizations and people require later confirmation"
+    },
+    "project_stop_restore_contract_ratio": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": [
+        "visual/assets/renewal-projects.json"
+      ],
+      "formula": "projects with stop_restore / all projects",
+      "confidence": "medium",
+      "assumptions": [
+        "A-OPERATIONS-001"
+      ],
+      "interpretation_rule": "design completeness target, not field performance"
+    },
+    "project_90_day_deliverable_contract_ratio": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": [
+        "visual/assets/renewal-projects.json"
+      ],
+      "formula": "projects with 0-30,31-60,61-90 deliverables / all projects",
+      "confidence": "medium",
+      "assumptions": [
+        "A-OPERATIONS-001"
+      ],
+      "interpretation_rule": "planned deliverable coverage, not implementation completion"
+    },
+    "detailed_key_area_sheet_count": {
+      "status": "known",
+      "value": 3.0,
+      "unit": "count",
+      "source_files": [
+        "assets/figures/key-area-zhongzhiyuan.png",
+        "assets/figures/key-area-origin.png",
+        "assets/figures/key-area-dazhongsi.png"
+      ],
+      "formula": "count(differentiated key-area detailed-design sheets)",
+      "confidence": "medium",
+      "assumptions": [
+        "A-BOUNDARY-001",
+        "A-EXISTING-001"
+      ],
+      "interpretation_rule": "conditional concept prototypes, not surveyed or construction drawings"
+    },
+    "heritage_conditional_segment_count": {
+      "status": "known",
+      "value": 6.0,
+      "unit": "count",
+      "source_files": [
+        "assets/figures/heritage-spatial-narrative.png"
+      ],
+      "formula": "count(conditional narrative segments)",
+      "confidence": "medium",
+      "assumptions": [
+        "A-HERITAGE-001"
+      ],
+      "interpretation_rule": "spatial narrative framework; specific heritage locations await official inventory"
+    },
+    "building_public_interface_typology_count": {
+      "status": "known",
+      "value": 3.0,
+      "unit": "count",
+      "source_files": [
+        "geometry/buildings.geojson",
+        "assets/figures/building-public-realm-interfaces.png"
+      ],
+      "formula": "count(distinct concept interface_typology)",
+      "confidence": "medium",
+      "assumptions": [
+        "A-EXISTING-001"
+      ],
+      "interpretation_rule": "concept interface types, not retain-renovate-demolish decisions"
     }
   }
 }
