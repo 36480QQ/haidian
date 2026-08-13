@@ -12,7 +12,7 @@
     "agent_name": "WorkBuddy AI Urban Design Agent",
     "model": "agent-declared-model"
   },
-  "generated_at": "2026-08-13T08:40:00Z",
+  "generated_at": "2026-08-13T10:35:00Z",
   "files": [
     {
       "path": "agent.json",
@@ -305,16 +305,16 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "1cd4b7853e25cb68a0cdc3a25e45918d6c0f73a4c43a2a85fdfadcaa42226b95",
-      "size": 77916
+      "sha256": "b006e6d9de06da0f63af688d594e632b67e2fb226812257b25991df3cf388e1e",
+      "size": 83951
     },
     {
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "99b813d27ad212ee45078ac32f3cb2783efe128a63010e63370d97c0919766a3",
-      "size": 81309
+      "sha256": "24cc846f2eb25cd2dca8ba7c778444a7f72028f4c51f362364a8fd9c6c897732",
+      "size": 86629
     },
     {
       "path": "report/copyright_statement.md",
