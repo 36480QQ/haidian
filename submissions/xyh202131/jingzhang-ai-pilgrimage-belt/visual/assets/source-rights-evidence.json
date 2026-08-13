@@ -4768,29 +4768,32 @@
   ],
   "font_inventory": [
     {
-      "font_id": "FONT-NOTO-SANS-SC-PDF-SUBSETS",
+      "font_id": "FONT-DENGXIAN-R16-PDF-SUBSETS",
       "scope": [
         "../../drawings/a3-booklet.pdf",
         "../../drawings/a3-booklet.en.pdf",
         "../../drawings/a0-boards.pdf",
-        "../../drawings/a0-boards.en.pdf"
+        "../../drawings/a0-boards.en.pdf",
+        "../../assets/media/twin-track-cover.webp"
       ],
-      "embedding_state": "embedded_subset",
-      "source_or_resolution": "NotoSansSC-VF.ttf was instantiated at weights 400/700 and subset programs are embedded in all four PDFs; no standalone source font file is shipped.",
-      "evidence_state": "facts_recorded_compliance_unreviewed",
+      "embedding_state": "embedded_subset_in_pdfs_rasterized_in_cover",
+      "source_or_resolution": "Local DengXian Regular/Bold 1.22 sources with SHA-256 e051009b42b454352a90ae0c9b8adb58bbdbcd168768750b35bc3357510de141 and 236df24be867e527bdf810d00eb5c38f18244e776238a9f5ca937363267a9169; PDF subsets are embedded, cover glyphs are rasterized, and no standalone font source ships.",
+      "evidence_state": "facts_recorded_embedding_and_reuse_compliance_unreviewed",
       "independent_review_status": "not_started",
       "unresolved_item_ids": [
         "RIGHTS-OPEN-02"
       ]
     },
     {
-      "font_id": "FONT-HELVETICA-A3-REFERENCE",
+      "font_id": "FONT-HELVETICA-R16-RESOURCE",
       "scope": [
         "../../drawings/a3-booklet.pdf",
-        "../../drawings/a3-booklet.en.pdf"
+        "../../drawings/a3-booklet.en.pdf",
+        "../../drawings/a0-boards.pdf",
+        "../../drawings/a0-boards.en.pdf"
       ],
       "embedding_state": "referenced_not_embedded",
-      "source_or_resolution": "Read-only PyMuPDF inspection reports Helvetica references in the A3 PDFs without an embedded Helvetica font program.",
+      "source_or_resolution": "Read-only PyMuPDF inspection reports a Helvetica resource in all four Round 16 PDFs without an embedded Helvetica font program.",
       "evidence_state": "facts_recorded_compliance_unreviewed",
       "independent_review_status": "not_started",
       "unresolved_item_ids": [
@@ -4810,7 +4813,7 @@
         "../../assets/figures/key-area-sections.en.png"
       ],
       "embedding_state": "renderer_resolution_unknown",
-      "source_or_resolution": "SVG font stacks name Arial, Microsoft YaHei, and Noto Sans CJK SC, but the concrete fonts resolved by the SVG-to-PNG renderer were not recorded.",
+      "source_or_resolution": "SVG font stacks name Arial, Microsoft YaHei and Noto Sans CJK SC, but the concrete fonts resolved by SVG-to-PNG renderers were not recorded.",
       "evidence_state": "resolution_unrecorded",
       "independent_review_status": "not_started",
       "unresolved_item_ids": [
