@@ -84,7 +84,8 @@
    "confidence": "unknown",
    "assumptions": [
     "官方控规容积率缺失（planning_limits.json status=missing）；概念参考值见concept_gross_floor_area_sqm/site_area≈2.45，仅为设计讨论量。"
-   ]
+   ],
+   "reason": "官方控规容积率条件缺失（planning_limits.json 中 status=missing）；待正式控制条件公布后以官方口径复算。概念参考值见 concept_gross_floor_area_sqm。"
   },
   "green_space_area_sqm": {
    "status": "known",

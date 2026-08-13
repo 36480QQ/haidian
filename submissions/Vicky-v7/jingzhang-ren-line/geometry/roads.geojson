@@ -254,6 +254,33 @@
     "confidence": "medium",
     "geometry_role": "design_proposal",
     "road_class": "branch",
+    "name_zh": "东西缝合支路（纬度39.9885）",
+    "name_en": "East-west stitching street at 39.9885N"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      116.34057096774194,
+      39.9885
+     ],
+     [
+      116.35342,
+      39.9885
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "ROAD-011",
+   "properties": {
+    "id": "ROAD-011",
+    "layer": "ROAD_CENTERLINE",
+    "source_type": "agent_generated_design",
+    "confidence": "medium",
+    "geometry_role": "design_proposal",
+    "road_class": "branch",
     "name_zh": "东西缝合支路（纬度39.9935）",
     "name_en": "East-west stitching street at 39.9935N"
    },
@@ -273,9 +300,9 @@
   },
   {
    "type": "Feature",
-   "id": "ROAD-011",
+   "id": "ROAD-012",
    "properties": {
-    "id": "ROAD-011",
+    "id": "ROAD-012",
     "layer": "ROAD_CENTERLINE",
     "source_type": "agent_generated_design",
     "confidence": "medium",
@@ -300,9 +327,9 @@
   },
   {
    "type": "Feature",
-   "id": "ROAD-012",
+   "id": "ROAD-013",
    "properties": {
-    "id": "ROAD-012",
+    "id": "ROAD-013",
     "layer": "ROAD_CENTERLINE",
     "source_type": "agent_generated_design",
     "confidence": "medium",
@@ -327,9 +354,36 @@
   },
   {
    "type": "Feature",
-   "id": "ROAD-013",
+   "id": "ROAD-014",
    "properties": {
-    "id": "ROAD-013",
+    "id": "ROAD-014",
+    "layer": "ROAD_CENTERLINE",
+    "source_type": "agent_generated_design",
+    "confidence": "medium",
+    "geometry_role": "design_proposal",
+    "road_class": "branch",
+    "name_zh": "东西缝合支路（纬度40.0135）",
+    "name_en": "East-west stitching street at 40.0135N"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      116.34206585365854,
+      40.0135
+     ],
+     [
+      116.35458767123288,
+      40.0135
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "ROAD-015",
+   "properties": {
+    "id": "ROAD-015",
     "layer": "ROAD_CENTERLINE",
     "source_type": "agent_generated_design",
     "confidence": "medium",
@@ -354,9 +408,9 @@
   },
   {
    "type": "Feature",
-   "id": "ROAD-014",
+   "id": "ROAD-016",
    "properties": {
-    "id": "ROAD-014",
+    "id": "ROAD-016",
     "layer": "ROAD_CENTERLINE",
     "source_type": "agent_generated_design",
     "confidence": "medium",
