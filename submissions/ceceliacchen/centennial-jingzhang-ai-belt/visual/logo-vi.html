@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>品牌与视觉识别 · 京张智脉 Rail-to-Brain</title>
+<style>
+:root{
+  --bg:#05070a;--fg:#f1f0eb;--muted:#8d949f;--dim:#737b86;--line:#ffffff1f;
+  --gold:#E8B04B;--blue:#2E6FF2;--purple:#7B5CFF;--green:#3FB68B;--ink:#0B0E13;--paper:#F4F1EA;
+  --sans:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Source Han Sans SC","Noto Sans CJK SC","Microsoft YaHei",sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--sans);background:var(--bg);color:var(--fg);line-height:1.75;-webkit-font-smoothing:antialiased}
+nav{position:sticky;top:0;z-index:100;display:flex;justify-content:space-between;align-items:center;height:56px;padding:0 40px;background:#05070ae3;backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav-back{color:var(--muted);font-size:13px;text-decoration:none}
+.nav-lang{border:1px solid var(--line);color:var(--muted);font:10px var(--mono,monospace);letter-spacing:.12em;padding:7px 12px;background:none;cursor:pointer}
+.nav-lang:hover{border-color:var(--gold);color:var(--gold)}
+.wrap{max-width:1000px;margin:0 auto;padding:0 40px 90px}
+.hero{padding:72px 0 40px}
+.eyebrow{color:var(--gold);font:10px var(--mono,monospace);letter-spacing:.2em;text-transform:uppercase;margin-bottom:18px;display:inline-flex;gap:8px;align-items:center}
+.eyebrow::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--gold);box-shadow:0 0 12px var(--gold)}
+h1{font-size:clamp(2rem,4.4vw,3.2rem);font-weight:400;letter-spacing:-.04em;margin-bottom:10px}
+.sub{color:var(--dim);font:10px var(--mono,monospace);letter-spacing:.18em;text-transform:uppercase}
+.lead{color:#9299a4;max-width:640px;margin-top:18px;font-size:14px}
+.section{padding-top:60px}
+.st{font-size:clamp(1.3rem,2.4vw,1.9rem);font-weight:400;letter-spacing:-.03em;margin-bottom:8px}
+.sd{color:var(--dim);font-size:13px;margin-bottom:22px;max-width:620px}
+.grid{display:grid;gap:18px}
+.markwrap{display:grid;grid-template-columns:auto 1fr;gap:40px;align-items:center;padding:34px;border:1px solid var(--line);background:#080a0e;border-radius:14px}
+.markbox{width:200px;height:200px;display:grid;place-items:center;background:radial-gradient(circle at 50% 40%,#10141b,#070a0e);border-radius:18px;border:1px solid var(--line)}
+.wordmark .zh{font-size:40px;letter-spacing:.04em}
+.wordmark .en{color:var(--gold);font:11px var(--mono,monospace);letter-spacing:.28em;margin-top:8px;text-transform:uppercase}
+.cols2{grid-template-columns:repeat(2,1fr)}
+.cols3{grid-template-columns:repeat(3,1fr)}
+.card{border:1px solid var(--line);background:#080a0e;border-radius:12px;padding:20px}
+.swatch{height:84px;border-radius:10px;display:flex;align-items:flex-end;padding:10px;font:10px var(--mono,monospace);color:#05070a;font-weight:600}
+.swatch.light{color:#05070a}.swatch.dark{color:#f1f0eb}
+.meta{margin-top:10px;font-size:12px;color:var(--muted)}
+.meta b{color:var(--fg);font-weight:600}
+.type{font-size:30px;letter-spacing:.02em}
+.type small{display:block;font-size:11px;color:var(--dim);letter-spacing:.1em;margin-top:6px}
+.app{display:grid;place-items:center;height:120px;border-radius:10px;background:#0c1016;border:1px solid var(--line);position:relative;color:var(--muted);font-size:11px}
+.badge{width:80px;height:80px}
+.callout{border:1px solid rgba(232,176,75,.22);border-left:2px solid var(--gold);background:linear-gradient(120deg,rgba(232,176,75,.06),transparent 60%);padding:18px 22px;margin-top:18px;font-size:13px;color:#b9b1a4;line-height:1.85}
+.dodont{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.do{border:1px solid rgba(63,182,139,.3);border-left:2px solid var(--green)}
+.dont{border:1px solid rgba(232,120,75,.3);border-left:2px solid #e8784b}
+.dodont .h{font-size:13px;font-weight:600;margin-bottom:10px;padding:14px 16px 0}
+.dodont ul{list-style:none;padding:0 16px 16px;font-size:12px;color:var(--muted);line-height:1.8}
+.dodont li::before{content:"·";margin-right:8px;color:var(--dim)}
+footer{border-top:1px solid var(--line);margin-top:70px;padding:28px 40px;max-width:1000px;margin-left:auto;margin-right:auto;display:flex;justify-content:space-between;color:var(--dim);font:9px var(--mono,monospace);letter-spacing:.1em;flex-wrap:wrap;gap:10px}
+@media(max-width:720px){.wrap,nav,footer{padding-left:18px;padding-right:18px}.markwrap{grid-template-columns:1fr;gap:24px}.cols2,.cols3,.dodont{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="nav-back" data-i18n="back">← 返回可视化索引</a>
+  <button class="nav-lang" id="langToggle">EN</button>
+</nav>
+
+<div class="wrap">
+  <div class="hero">
+    <div class="eyebrow" data-i18n="eyebrow">Brand & Visual Identity</div>
+    <h1 data-i18n="h1">京张智脉 · Rail-to-Brain</h1>
+    <div class="sub" data-i18n="sub">CENTENNIAL JING-ZHANG AI BELT · LOGO / VI</div>
+    <p class="lead" data-i18n="lead">以百年铁路为基，生长出面向未来的智能脉络。标志为「铁路 → 神经网络」的形变单体，凝聚「铁路遗产 → 智能原生城区」的核心叙事。</p>
+  </div>
+
+  <!-- LOGOMARK -->
+  <div class="section">
+    <div class="st" data-i18n="s1t">标志 Logomark</div>
+    <div class="sd" data-i18n="s1d">矢量文件见 visual/assets/logo.svg，可无限缩放、无字体依赖。</div>
+    <div class="markwrap">
+      <div class="markbox">
+        <svg width="150" height="150" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="京张智脉 Rail-to-Brain">
+          <g stroke="#E8B04B" stroke-width="10" stroke-linecap="round" fill="none">
+            <line x1="40" y1="200" x2="110" y2="120"/>
+            <line x1="200" y1="200" x2="130" y2="120"/>
+          </g>
+          <path d="M120 120 L120 92" stroke="#2E6FF2" stroke-width="10" stroke-linecap="round" fill="none"/>
+          <g stroke="#2E6FF2" stroke-width="8" stroke-linecap="round" fill="none">
+            <path d="M120 92 L78 52"/>
+            <path d="M120 92 L162 52"/>
+            <path d="M120 92 L120 40"/>
+          </g>
+          <g fill="#7B5CFF">
+            <circle cx="78" cy="48" r="12"/>
+            <circle cx="162" cy="48" r="12"/>
+            <circle cx="120" cy="34" r="13"/>
+          </g>
+          <circle cx="120" cy="120" r="14" fill="#E8B04B"/>
+        </svg>
+      </div>
+      <div class="wordmark">
+        <div class="zh">京张智脉</div>
+        <div class="en">Rail-to-Brain</div>
+        <p class="lead" style="margin-top:14px" data-i18n="wmark">中文名为主、英文名为辅，全域统一。底部两条铁轨收束为竖干，向上分叉为三组神经节点，中心金色节点喻三核一体。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- PALETTE -->
+  <div class="section">
+    <div class="st" data-i18n="s2t">色彩系统 Color Tokens</div>
+    <div class="sd" data-i18n="s2d">主色智脉蓝；辅色铁轨金 + 京张紫；自然色绿脉。深/浅背景对比度 ≥ 4.5:1。</div>
+    <div class="grid cols3">
+      <div class="card"><div class="swatch dark" style="background:#E8B04B">#E8B04B</div><div class="meta"><b data-i18n="c1">铁轨金 Rail Gold</b><br>遗产 / 主轴 / 强调</div></div>
+      <div class="card"><div class="swatch dark" style="background:#2E6FF2">#2E6FF2</div><div class="meta"><b data-i18n="c2">智脉蓝 Brain Blue</b><br>科技 / 智能体 / 主色</div></div>
+      <div class="card"><div class="swatch dark" style="background:#7B5CFF">#7B5CFF</div><div class="meta"><b data-i18n="c3">京张紫 Jingzhang Purple</b><br>创新 / 文化 / 节点</div></div>
+      <div class="card"><div class="swatch dark" style="background:#3FB68B">#3FB68B</div><div class="meta"><b data-i18n="c4">绿脉 Green</b><br>蓝绿 / 公共空间</div></div>
+      <div class="card"><div class="swatch dark" style="background:#0B0E13;border:1px solid #2a2f38">#0B0E13</div><div class="meta"><b data-i18n="c5">墨 Ink</b><br>背景 / 正文（深）</div></div>
+      <div class="card"><div class="swatch light" style="background:#F4F1EA;color:#0B0E13">#F4F1EA</div><div class="meta"><b data-i18n="c6">纸 Paper</b><br>背景 / 正文（浅）</div></div>
+    </div>
+  </div>
+
+  <!-- TYPOGRAPHY -->
+  <div class="section">
+    <div class="st" data-i18n="s3t">字体 Typography</div>
+    <div class="sd" data-i18n="s3d">中文思源黑/宋优先，西文 grotesk；系统字体栈，不内嵌字体文件。</div>
+    <div class="grid cols2">
+      <div class="card type">京张智脉 · 智能原生城区<small data-i18n="t1">思源黑体 / Source Han Sans（标题可用宋体增文化气质）</small></div>
+      <div class="card type" style="font-family:var(--mono,monospace)">Rail-to-Brain AI Belt<small data-i18n="t2">Grotesk / Inter / Helvetica Neue（西文与数据）</small></div>
+    </div>
+  </div>
+
+  <!-- APPLICATIONS -->
+  <div class="section">
+    <div class="st" data-i18n="s4t">应用规范 Applications</div>
+    <div class="sd" data-i18n="s4d">导视、14 节点徽标（与 NODE-xx 对齐）、工牌、发布物料、数字端 favicon。</div>
+    <div class="grid cols3">
+      <div class="card"><div class="app" data-i18n="a1">主标识 + 中英组合</div></div>
+      <div class="card"><div class="app" data-i18n="a2">导视系统</div></div>
+      <div class="card"><div class="app" data-i18n="a3">节点徽标 ×14</div></div>
+      <div class="card"><div class="app" data-i18n="a4">工牌 / 发布物料</div></div>
+      <div class="card"><div class="app" data-i18n="a5">数字端 favicon</div></div>
+      <div class="card">
+        <div style="display:flex;gap:10px;justify-content:center;align-items:center;height:100%">
+          <svg class="badge" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg"><circle cx="120" cy="120" r="110" fill="none" stroke="#2E6FF2" stroke-width="6"/><g stroke="#E8B04B" stroke-width="10" stroke-linecap="round" fill="none"><line x1="70" y1="170" x2="110" y2="120"/><line x1="170" y1="170" x2="130" y2="120"/></g><circle cx="120" cy="120" r="12" fill="#E8B04B"/><text x="120" y="225" text-anchor="middle" fill="#f1f0eb" font-size="26" font-family="monospace">NODE-07</text></svg>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DO / DON'T -->
+  <div class="section">
+    <div class="st" data-i18n="s5t">使用禁忌 Do / Don't</div>
+    <div class="dodont">
+      <div class="do"><div class="h" data-i18n="do-h">Do</div><ul>
+        <li data-i18n="do1">保持标志比例与 ≥ 1/2 留白</li>
+        <li data-i18n="do2">深/浅版本按需切换</li>
+        <li data-i18n="do3">节点徽标与 NODE 编号配套</li>
+      </ul></div>
+      <div class="dont"><div class="h" data-i18n="dont-h">Don't</div><ul>
+        <li data-i18n="dont1">不拉伸 / 旋转 / 改色</li>
+        <li data-i18n="dont2">不用于低对比背景</li>
+        <li data-i18n="dont3">不声称已注册 / 获批</li>
+      </ul></div>
+    </div>
+    <div class="callout" data-i18n="legal">法律状态：本 Logo / VI 为投稿方案的<b>概念性视觉提案</b>，非任何机构已注册标识；如被采纳须另行完成商标注册与品牌合规审查。版权归作者（生成式辅助设计，见 report/copyright_statement.md）。</div>
+  </div>
+</div>
+
+<footer>
+  <span>京张智脉 · Rail-to-Brain — 概念性品牌提案</span>
+  <span data-i18n="fnote">非注册商标 · 版权归作者</span>
+</footer>
+
+<script>
+const T={
+  zh:{
+    'back':'← 返回可视化索引','eyebrow':'品牌与视觉识别','h1':'京张智脉 · Rail-to-Brain',
+    'sub':'CENTENNIAL JING-ZHANG AI BELT · LOGO / VI',
+    'lead':'以百年铁路为基，生长出面向未来的智能脉络。标志为「铁路 → 神经网络」的形变单体，凝聚「铁路遗产 → 智能原生城区」的核心叙事。',
+    's1t':'标志 Logomark','s1d':'矢量文件见 visual/assets/logo.svg，可无限缩放、无字体依赖。',
+    'wmark':'中文名为主、英文名为辅，全域统一。底部两条铁轨收束为竖干，向上分叉为三组神经节点，中心金色节点喻三核一体。',
+    's2t':'色彩系统 Color Tokens','s2d':'主色智脉蓝；辅色铁轨金 + 京张紫；自然色绿脉。深/浅背景对比度 ≥ 4.5:1。',
+    'c1':'铁轨金 Rail Gold','c2':'智脉蓝 Brain Blue','c3':'京张紫 Jingzhang Purple','c4':'绿脉 Green','c5':'墨 Ink','c6':'纸 Paper',
+    's3t':'字体 Typography','s3d':'中文思源黑/宋优先，西文 grotesk；系统字体栈，不内嵌字体文件。',
+    't1':'思源黑体 / Source Han Sans（标题可用宋体增文化气质）','t2':'Grotesk / Inter / Helvetica Neue（西文与数据）',
+    's4t':'应用规范 Applications','s4d':'导视、14 节点徽标（与 NODE-xx 对齐）、工牌、发布物料、数字端 favicon。',
+    'a1':'主标识 + 中英组合','a2':'导视系统','a3':'节点徽标 ×14','a4':'工牌 / 发布物料','a5':'数字端 favicon',
+    's5t':'使用禁忌 Do / Don\'t','do-h':'Do','do1':'保持标志比例与 ≥ 1/2 留白','do2':'深/浅版本按需切换','do3':'节点徽标与 NODE 编号配套',
+    'dont-h':'Don\'t','dont1':'不拉伸 / 旋转 / 改色','dont2':'不用于低对比背景','dont3':'不声称已注册 / 获批',
+    'legal':'法律状态：本 Logo / VI 为投稿方案的概念性视觉提案，非任何机构已注册标识；如被采纳须另行完成商标注册与品牌合规审查。版权归作者（生成式辅助设计，见 report/copyright_statement.md）。',
+    'fnote':'非注册商标 · 版权归作者'
+  },
+  en:{
+    'back':'← Back to visualizations','eyebrow':'Brand & Visual Identity','h1':'Jingzhang Zhimai · Rail-to-Brain',
+    'sub':'CENTENNIAL JING-ZHANG AI BELT · LOGO / VI',
+    'lead':'A century-old railway as the base, growing an intelligent vein for the future. The mark morphs "rail → neural network", embodying the core narrative: railway heritage → AI-native district.',
+    's1t':'Logomark','s1d':'Vector file: visual/assets/logo.svg — infinitely scalable, no font dependency.',
+    'wmark':'Chinese name primary, English secondary, unified everywhere. Two gold rails converge into a stem branching into three purple neural nodes; the gold hub denotes the three-core union.',
+    's2t':'Color Tokens','s2d':'Primary Brain Blue; secondary Rail Gold + Jingzhang Purple; natural Greenway. Contrast ≥ 4.5:1 on dark/light.',
+    'c1':'Rail Gold','c2':'Brain Blue','c3':'Jingzhang Purple','c4':'Greenway Green','c5':'Ink','c6':'Paper',
+    's3t':'Typography','s3d':'CJK Source Han Sans/Serif first; Latin grotesk; system stacks, no embedded fonts.',
+    't1':'Source Han Sans / Serif (Song for titles adds cultural tone)','t2':'Grotesk / Inter / Helvetica Neue (Latin & data)',
+    's4t':'Applications','s4d':'Signage, 14 node badges (aligned to NODE-xx), credentials, launch materials, digital favicon.',
+    'a1':'Primary mark + zh/en lockup','a2':'Signage system','a3':'Node badges ×14','a4':'Credentials / launch','a5':'Digital favicon',
+    's5t':'Do / Don\'t','do-h':'Do','do1':'Keep proportion & ≥ 1/2 clear space','do2':'Switch dark/light as needed','do3':'Pair node badge with NODE id',
+    'dont-h':'Don\'t','dont1':'No stretch / rotate / recolor','dont2':'No low-contrast backgrounds','dont3':'No claim of registration / approval',
+    'legal':'Legal status: this Logo / VI is a conceptual proposal for the submission, not a registered mark of any organization; trademark clearance is required if adopted. Copyright rests with the author (generative-assisted design; see report/copyright_statement.md).',
+    'fnote':'Not a registered trademark · © author'
+  }
+};
+let lang=localStorage.getItem('lang')||(navigator.language.startsWith('zh')?'zh':'en');
+function applyLang(l){lang=l;localStorage.setItem('lang',l);document.documentElement.lang=l==='zh'?'zh-CN':'en';document.getElementById('langToggle').textContent=l==='zh'?'EN':'中文';document.querySelectorAll('[data-i18n]').forEach(el=>{const v=T[l][el.dataset.i18n];if(v!==undefined)el.innerHTML=v;});}
+document.getElementById('langToggle').addEventListener('click',()=>{document.body.style.opacity='.6';setTimeout(()=>{applyLang(lang==='zh'?'en':'zh');document.body.style.opacity='1';},120);});
+applyLang(lang);
+</script>
+</body>
+</html>

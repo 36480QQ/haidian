@@ -97,15 +97,15 @@ The three key areas are detailed by "positioning + spatial structure + building 
 
 ### Zhongzhiyuan AI autonomous-innovation accelerator (192.9 ha)
 
-Positioned as a national AI autonomous-innovation accelerator; lead industries are model/chip pilot, agent evaluation and open collaboration. Spatial structure: a garden-style autonomous-innovation block where the Jing-Zhang heritage park green vein crosses the area, forming a "central green axis + four innovation clusters". Building renewal centres on new smart-manufacturing workshops and renovated old factories, retaining a few railway-industrial-heritage workshops as AI exhibition and open-source museum [data:geometry/key_areas.geojson#PROV-KEY-001] ·  [depth:retain_renovate_demolish]. Transport is integrated with the rail station, slow-first over vehicles. Public space stresses "pilot-as-show": the proof-of-concept workshop and open-source release hall double as public living rooms. AI scenarios: "pilot workshop + compute-network evaluation + proof-of-concept", mapped to NODE-01/02/03/04 [data:geometry/ai_service_nodes.geojson#NODE-01]. Implementation risk: tenure and the existing building age structure are to be confirmed; some land may fall in the Jing-Zhang heritage park protection belt [standard:BARRIER-FREE-ENVIRONMENT-LAW].
+Positioned as a national AI autonomous-innovation accelerator; lead industries are model/chip pilot, agent evaluation and open collaboration. Spatial structure: a garden-style autonomous-innovation block where the Jing-Zhang heritage park green vein crosses the area, forming a "central green axis + four innovation clusters". Building renewal centres on new smart-manufacturing workshops and renovated old factories, retaining a few railway-industrial-heritage workshops as AI exhibition and open-source museum [data:geometry/key_areas.geojson#PROV-KEY-001] ·  [depth:retain_renovate_demolish]. Transport is integrated with the rail station, slow-first over vehicles. Public space stresses "pilot-as-show": the proof-of-concept workshop and open-source release hall double as public living rooms. AI scenarios: "pilot workshop + compute-network evaluation + proof-of-concept", mapped to NODE-01/02/03/04 [data:scenarios/scenario-cards.json#NODE-01]. Implementation risk: tenure and the existing building age structure are to be confirmed; some land may fall in the Jing-Zhang heritage park protection belt [standard:BARRIER-FREE-ENVIRONMENT-LAW].
 
 ### Beijing AI Origin community (104.3 ha)
 
-Positioned as a campus-adjacent AI source-innovation and open-source community, connecting Tsinghua, Peking, CAS and other universities [source:AGENT-TASKBOOK]. Spatial structure: "twin-track heritage belt + block-style open-source community". Building renewal mixes demolition/renovation/retention: retain railway-worker cultural relics, renovate old communities, build new talent apartments and open-source living rooms [data:geometry/key_areas.geojson#PROV-KEY-002]. Transport achieves station integration and slow-gap repair, linking university — station — community [depth:traffic_rail_slow_parking]. AI scenarios: "open-source release hall + university-industry translation living room + talent-life butler + AI education/law/health", mapped to NODE-05–NODE-10 [data:geometry/ai_service_nodes.geojson#NODE-05]. Implementation risk: control-plan indicators and university cooperation mechanisms await approval; resolve via renewal policy and co-build agreements [depth:renewal_project_list].
+Positioned as a campus-adjacent AI source-innovation and open-source community, connecting Tsinghua, Peking, CAS and other universities [source:AGENT-TASKBOOK]. Spatial structure: "twin-track heritage belt + block-style open-source community". Building renewal mixes demolition/renovation/retention: retain railway-worker cultural relics, renovate old communities, build new talent apartments and open-source living rooms [data:geometry/key_areas.geojson#PROV-KEY-002]. Transport achieves station integration and slow-gap repair, linking university — station — community [depth:traffic_rail_slow_parking]. AI scenarios: "open-source release hall + university-industry translation living room + talent-life butler + AI education/law/health", mapped to NODE-05–NODE-10 [data:scenarios/scenario-cards.json#NODE-05]. Implementation risk: control-plan indicators and university cooperation mechanisms await approval; resolve via renewal policy and co-build agreements [depth:renewal_project_list].
 
 ### Dazhongsi AI industry cluster (72.0 ha)
 
-Positioned as a urban intelligent-economy block of leading enterprises + new agent formats. Spatial structure: "four-quadrant intersection + central AI bell tower + green composite". Building renewal features commerce-service composites and green-space composites [data:geometry/key_areas.geojson#PROV-KEY-003] ·  [depth:height_massing_character]. Transport achieves four-quadrant intersection connectivity. AI scenarios: "data-factor theatre + city-agent sandbox + AI-safety governance corridor", mapped to NODE-11–NODE-14 [data:geometry/ai_service_nodes.geojson#NODE-11]. Implementation risk: balance of ancient-temple heritage protection with high-intensity development, via height zoning and view-corridor control [depth:blue_green_public_space].
+Positioned as a urban intelligent-economy block of leading enterprises + new agent formats. Spatial structure: "four-quadrant intersection + central AI bell tower + green composite". Building renewal features commerce-service composites and green-space composites [data:geometry/key_areas.geojson#PROV-KEY-003] ·  [depth:height_massing_character]. Transport achieves four-quadrant intersection connectivity. AI scenarios: "data-factor theatre + city-agent sandbox + AI-safety governance corridor", mapped to NODE-11–NODE-14 [data:scenarios/scenario-cards.json#NODE-11]. Implementation risk: balance of ancient-temple heritage protection with high-intensity development, via height zoning and view-corridor control [depth:blue_green_public_space].
 
 ## AI innovation ecosystem, talent personas and AI+ scenarios
 
@@ -125,7 +125,7 @@ Positioned as a urban intelligent-economy block of leading enterprises + new age
 
 ### AI scenario cards (≥10, ≥3 industry tests)
 
-The 14 cards below cover the three areas and the Jing-Zhang green vein. Each gives location, service object, operating data, privacy boundary, human review, operator and risk [depth:scenario_cards] ·  [data:geometry/ai_service_nodes.geojson#NODE-01] to [data:geometry/ai_service_nodes.geojson#NODE-14].
+The 14 cards below cover the three areas and the Jing-Zhang green vein. Each gives location, service object, operating data, privacy boundary, human review, operator and risk [depth:scenario_cards] ·  [data:scenarios/scenario-cards.json#NODE-01] to [data:scenarios/scenario-cards.json#NODE-14].
 
 | # | Name | Location | Service | Type | Privacy | Human review | Operator | Risk |
 |---|---|---|---|---|---|---|---|---|
@@ -144,7 +144,7 @@ The 14 cards below cover the three areas and the Jing-Zhang green vein. Each giv
 | 13 | AI legal pod | Dazhongsi NODE-14 | residents+enterprise | ai_law | case desensitised | required | justice office+law firm | mis-law |
 | 14 | Accessible smart mobility | green vein+district | elderly/PWD | accessibility | trip consent | partial | fed. disabled persons+platform | mis-id |
 
-> Of the 14 cards, 01/02/03 are explicitly **industry_test**; 04 is industry compute; the rest cover governance, living, culture, mobility and accessibility. Each card is a point in `geometry/ai_service_nodes.geojson` with `privacy_boundary` and `human_review` fields [standard:GENERATIVE-AI-INTERIM-MEASURES].
+> Of the 14 cards, 01/02/03 are explicitly **industry_test**; 04 is industry compute; the rest cover governance, living, culture, mobility and accessibility. Each card is a point in `scenarios/scenario-cards.json` with `privacy_boundary` and `human_review` fields [standard:GENERATIVE-AI-INTERIM-MEASURES].
 
 ### AI full-stack autonomous spatial distribution
 
@@ -208,7 +208,7 @@ Blue-green and public space follow "one belt + two patches + many nodes" [depth:
 
 - **Two patches**: Zhongzhiyuan central green axis, AI Origin twin-track heritage belt;
 
-- **Many nodes**: 14 AI service nodes across the three areas and the green vein — public living rooms, open-source halls, governance corridors [data:geometry/ai_service_nodes.geojson#NODE-01].
+- **Many nodes**: 14 AI service nodes across the three areas and the green vein — public living rooms, open-source halls, governance corridors [data:scenarios/scenario-cards.json#NODE-01].
 
 Public-space ratio 7.33% [metric:public_space_ratio], green ratio 12.34% [metric:green_ratio]; blue-green + public space totals 19.67% of the site.
 
@@ -283,7 +283,7 @@ The compliance matrix covers: `standard_matrix.json` covers 8 mandatory standard
 
 - **Non-public exclusion**: no meeting minutes, interview records or internal approvals are cited;
 
-- **Privacy**: scenario cards follow the four-tier "public — authorised — desensitised — human review", consistent with `privacy_boundary` and `human_review` fields in `geometry/ai_service_nodes.geojson` [standard:GENERATIVE-AI-INTERIM-MEASURES];
+- **Privacy**: scenario cards follow the four-tier "public — authorised — desensitised — human review", consistent with `privacy_boundary` and `human_review` fields in `scenarios/scenario-cards.json` [standard:GENERATIVE-AI-INTERIM-MEASURES];
 
 - **AI generation responsibility**: this proposal is generated by the AI agent declared in `agent.json`; text, geometry, drawings, PDFs and static HTML are model outputs requiring professional review before implementation;
 

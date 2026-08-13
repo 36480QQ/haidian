@@ -90,15 +90,15 @@ iteration: "v1.0"
 
 ### 众智园 AI 自主创新加速区（约 192.9 ha，临时几何；公告口径 192.1 ha）
 
-定位为国家 AI 自主创新加速器，主导产业为模型/芯片中试、智能体评测与开源协作。空间结构为花园型自主创新街区：京张遗址公园绿脉穿区而过，形成"中央绿轴 + 四个创新簇"的格局。建筑更新以新建智造工场与改造旧厂房为主，保留少量有铁路工业遗产价值的车间作为 AI 展览与开源博物馆 [data:geometry/key_areas.geojson#PROV-KEY-001]。 [depth:retain_renovate_demolish]。交通组织与轨道站点一体设计，慢行优先于车行。公共空间强调"中试即展演"，把概念验证工场与开源发布厅同时作为公共客厅。AI 场景以"中试工场 + 算力网络评测 + 概念验证"为主，对应 NODE-01/02/03/04 [data:geometry/ai_service_nodes.geojson#NODE-01]。实施风险：权属与现状建筑年代结构待确认，部分用地可能涉及京张遗址公园保护带 [standard:BARRIER-FREE-ENVIRONMENT-LAW]。
+定位为国家 AI 自主创新加速器，主导产业为模型/芯片中试、智能体评测与开源协作。空间结构为花园型自主创新街区：京张遗址公园绿脉穿区而过，形成"中央绿轴 + 四个创新簇"的格局。建筑更新以新建智造工场与改造旧厂房为主，保留少量有铁路工业遗产价值的车间作为 AI 展览与开源博物馆 [data:geometry/key_areas.geojson#PROV-KEY-001]。 [depth:retain_renovate_demolish]。交通组织与轨道站点一体设计，慢行优先于车行。公共空间强调"中试即展演"，把概念验证工场与开源发布厅同时作为公共客厅。AI 场景以"中试工场 + 算力网络评测 + 概念验证"为主，对应 NODE-01/02/03/04 [data:scenarios/scenario-cards.json#NODE-01]。实施风险：权属与现状建筑年代结构待确认，部分用地可能涉及京张遗址公园保护带 [standard:BARRIER-FREE-ENVIRONMENT-LAW]。
 
 ### 北京 AI 原点社区（104.3 ha）
 
-定位为近校型 AI 源头创新与开源社区，对接清华、北大、中科院等高校院所 [source:AGENT-TASKBOOK]。空间结构为"双轨遗产带 + 街坊式开源社区"。建筑更新采取拆改留混合策略：保留铁路工人文化遗存、改造老旧社区、新建人才公寓与开源客厅 [data:geometry/key_areas.geojson#PROV-KEY-002]。交通组织实现站点一体化与慢行断点修复，串联高校—站点—社区三段 [depth:traffic_rail_slow_parking]。AI 场景以"开源发布厅 + 校企转化客厅 + 人才生活管家 + AI 教育/法律/健康"为主，对应 NODE-05–NODE-10 [data:geometry/ai_service_nodes.geojson#NODE-05]。实施风险：控规指标与高校合作机制待批，需通过更新政策与共建协议解决 [depth:renewal_project_list]。
+定位为近校型 AI 源头创新与开源社区，对接清华、北大、中科院等高校院所 [source:AGENT-TASKBOOK]。空间结构为"双轨遗产带 + 街坊式开源社区"。建筑更新采取拆改留混合策略：保留铁路工人文化遗存、改造老旧社区、新建人才公寓与开源客厅 [data:geometry/key_areas.geojson#PROV-KEY-002]。交通组织实现站点一体化与慢行断点修复，串联高校—站点—社区三段 [depth:traffic_rail_slow_parking]。AI 场景以"开源发布厅 + 校企转化客厅 + 人才生活管家 + AI 教育/法律/健康"为主，对应 NODE-05–NODE-10 [data:scenarios/scenario-cards.json#NODE-05]。实施风险：控规指标与高校合作机制待批，需通过更新政策与共建协议解决 [depth:renewal_project_list]。
 
 ### 大钟寺 AI 产业聚集区（72.0 ha）
 
-定位为领军企业 + 智能体新业态的城市型智能经济街区。空间结构以"四象限路口 + 中央 AI 钟楼 + 绿地复合体"为主，建筑更新以商业服务复合与绿地复合利用为特征 [data:geometry/key_areas.geojson#PROV-KEY-003]。 [depth:height_massing_character]。交通组织实现路口四象限连通。AI 场景以"数据要素剧场 + 城市智能体沙盒 + AI 安全治理廊"为主，对应 NODE-11–NODE-14 [data:geometry/ai_service_nodes.geojson#NODE-11]。实施风险：古刹文保与高强度开发的平衡，需通过高度分区与视线通廊控制 [depth:blue_green_public_space]。
+定位为领军企业 + 智能体新业态的城市型智能经济街区。空间结构以"四象限路口 + 中央 AI 钟楼 + 绿地复合体"为主，建筑更新以商业服务复合与绿地复合利用为特征 [data:geometry/key_areas.geojson#PROV-KEY-003]。 [depth:height_massing_character]。交通组织实现路口四象限连通。AI 场景以"数据要素剧场 + 城市智能体沙盒 + AI 安全治理廊"为主，对应 NODE-11–NODE-14 [data:scenarios/scenario-cards.json#NODE-11]。实施风险：古刹文保与高强度开发的平衡，需通过高度分区与视线通廊控制 [depth:blue_green_public_space]。
 
 ## AI 创新生态、人才画像与 AI+ 场景
 
@@ -113,7 +113,7 @@ iteration: "v1.0"
 
 ### AI 场景卡（≥10 张，≥3 产业测试）
 
-以下 14 张场景卡覆盖三区与京张绿脉。每张均给出空间位置、服务对象、运行数据、隐私边界、人工复核、运营主体、可视化图层与风险 [depth:scenario_cards]。 [data:geometry/ai_service_nodes.geojson#NODE-01] 至 [data:geometry/ai_service_nodes.geojson#NODE-14]。
+以下 14 张场景卡覆盖三区与京张绿脉。每张均给出空间位置、服务对象、运行数据、隐私边界、人工复核、运营主体、可视化图层与风险 [depth:scenario_cards]。 完整 14 张卡（含统一 8 字段与可复现协议）见 `report/scenario-cards.md` 与结构化数据 `scenarios/scenario-cards.json` [data:scenarios/scenario-cards.json#NODE-01] 至 [data:scenarios/scenario-cards.json#NODE-14]。
 
 | #  | 名称         | 位置            | 服务对象    | 类型                     | 隐私边界       | 人工复核 | 运营主体         | 风险   |
 | -- | ---------- | ------------- | ------- | ---------------------- | ---------- | ---- | ------------ | ---- |
@@ -132,7 +132,7 @@ iteration: "v1.0"
 | 13 | AI 法律服务舱   | 大钟寺 NODE-14   | 居民 + 企业 | ai_law                 | 案件脱敏       | 必    | 司法所 + 律所     | 误法   |
 | 14 | 无障碍智能出行    | 绿脉 + 全域       | 老龄/残障   | accessibility          | 行程授权       | 部分   | 残联 + 平台      | 误识   |
 
-> 上述 14 张卡中，01、02、03 明确为 **industry_test**；04 为产业算力；其余覆盖治理、生活、文化、出行与无障碍。每张卡均在 `geometry/ai_service_nodes.geojson` 中落点，并设置 `privacy_boundary` 与 `human_review` 字段 [standard:GENERATIVE-AI-INTERIM-MEASURES]。
+> 上述 14 张卡中，01、02、03 明确为 **industry_test**；04 为产业算力；其余覆盖治理、生活、文化、出行与无障碍。每张卡均在 `scenarios/scenario-cards.json` 中结构化落点，并设置 `privacy_boundary` 与 `human_review` 字段 [standard:GENERATIVE-AI-INTERIM-MEASURES]。
 
 ### 场景卡完整字段（14 张）
 
@@ -190,7 +190,7 @@ iteration: "v1.0"
 | 13 | AI 法律服务舱 | 案件脱敏 | 司法专用 | 误法率 | 法律舱 |
 | 14 | 无障碍智能出行 | 行程授权 | 出行域 | 误识率 | 接驳点 |
 
-> 全部 14 张卡的 `privacy_boundary`、`human_review` 与 `data_input` 字段已在 `geometry/ai_service_nodes.geojson` 的 `properties` 中结构化落点；未闭合的数据字典（样本来源、成本级别、保存期限、退出条件）作为后续专业团队深化项在 `assumptions.json` 中登记。
+> 全部 14 张卡的 `privacy_boundary`、`human_review` 与 `data_input` 字段已在 `scenarios/scenario-cards.json` 中结构化落点（完整 8 字段与可复现协议见 `report/scenario-cards.md`）；未闭合的数据字典（样本来源、成本级别、保存期限、退出条件）作为后续专业团队深化项在 `assumptions.json` 中登记。
 
 ### AI 全栈自主创新空间分布
 
@@ -244,7 +244,7 @@ iteration: "v1.0"
 
 - **一带**：京张遗址公园活力带（沿 greenway 主轴），承担慢行、文化与 AI 公共场景三合一职能 [data:geometry/green_space.geojson#GREEN-001]；
 - **两片**：众智园中央绿轴、AI 原点双轨遗产带两个核心绿地；
-- **多点**：14 个 AI 服务节点散布于三区与绿脉，对应公共客厅、开源发布厅、AI 治理廊等 [data:geometry/ai_service_nodes.geojson#NODE-01]。
+- **多点**：14 个 AI 服务节点散布于三区与绿脉，对应公共客厅、开源发布厅、AI 治理廊等 [data:scenarios/scenario-cards.json#NODE-01]。
 
 公共空间率 7.33% [metric:public_space_ratio]，绿地率 12.34% [metric:green_ratio]，合计蓝绿+公共空间占场地 19.67%。
 
@@ -310,7 +310,7 @@ iteration: "v1.0"
 - **资料合法性**：本方案所有要素仅使用 `sources.json` 中已 `cleared=true` 且 `usable_for_formal=yes` 的资料；未使用任何非公开、未授权或需要二次授权的素材；
 - **版权与人物企业标识**：所有地标、Logo、字体、人物、企业名称均按"概念候选"处理，不构成已批建或已签约标识；
 - **非公开资料排除**：未引用任何会议纪要、座谈记录、内部审批件；
-- **隐私保护**：AI 场景卡按"公开—授权—脱敏—人工复核"四级处理，与 `geometry/ai_service_nodes.geojson` 中的 `privacy_boundary` 与 `human_review` 字段一致 [standard:GENERATIVE-AI-INTERIM-MEASURES]；
+- **隐私保护**：AI 场景卡按"公开—授权—脱敏—人工复核"四级处理，与 `scenarios/scenario-cards.json` 中的 `privacy_boundary` 与 `human_review` 字段一致 [standard:GENERATIVE-AI-INTERIM-MEASURES]；
 - **AI 生成责任**：本方案由 `agent.json` 声明的 AI 智能体生成，输出文本、几何、图纸、PDF 与静态 HTML 均为模型生成物，需经专业复核后再用于实施；
 - **官方批准/实施承诺禁用**：本方案不表述任何已批准或已实施内容，所有"建设、运营、政策"均为概念建议；
 - **待补资料**：详见 `report/copyright_statement.md` 与 `assumptions.json`，含控规指标、官方红线、权属与工程条件四项 [depth:existing_conditions_diagnosis]；

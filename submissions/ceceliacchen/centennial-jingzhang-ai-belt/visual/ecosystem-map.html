@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 创新生态图谱 · 京张智脉</title>
+<style>
+:root{
+  --bg:#05070a;--fg:#f1f0eb;--muted:#8d949f;--dim:#737b86;--line:#ffffff1f;
+  --gold:#E8B04B;--blue:#2E6FF2;--purple:#7B5CFF;--green:#3FB68B;
+  --sans:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Source Han Sans SC","Noto Sans CJK SC","Microsoft YaHei",sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--sans);background:var(--bg);color:var(--fg);line-height:1.7;-webkit-font-smoothing:antialiased}
+nav{position:sticky;top:0;z-index:100;display:flex;justify-content:space-between;align-items:center;height:56px;padding:0 40px;background:#05070ae3;backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav-back{color:var(--muted);font-size:13px;text-decoration:none}
+.nav-lang{border:1px solid var(--line);color:var(--muted);font:10px var(--mono,monospace);letter-spacing:.12em;padding:7px 12px;background:none;cursor:pointer}
+.nav-lang:hover{border-color:var(--gold);color:var(--gold)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 40px 90px}
+.hero{padding:64px 0 30px}
+.eyebrow{color:var(--gold);font:10px var(--mono,monospace);letter-spacing:.2em;text-transform:uppercase;margin-bottom:16px}
+h1{font-size:clamp(1.9rem,4vw,3rem);font-weight:400;letter-spacing:-.04em;margin-bottom:8px}
+.sub{color:var(--dim);font:10px var(--mono,monospace);letter-spacing:.18em;text-transform:uppercase}
+.lead{color:#9299a4;max-width:680px;margin-top:16px;font-size:14px}
+.section{padding-top:46px}
+.st{font-size:clamp(1.2rem,2.2vw,1.7rem);font-weight:400;letter-spacing:-.03em;margin-bottom:8px}
+.sd{color:var(--dim);font-size:13px;margin-bottom:18px;max-width:640px}
+.mapcard{border:1px solid var(--line);background:#080a0e;border-radius:14px;padding:18px;overflow:hidden}
+.mapcard svg{width:100%;height:auto;display:block}
+.legend{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}
+.lg{display:flex;align-items:center;gap:10px;font-size:12px;color:var(--muted)}
+.dot{width:12px;height:12px;border-radius:50%;flex-shrink:0}
+table{width:100%;border-collapse:collapse;margin-top:14px;font-size:13px}
+th,td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top}
+th{background:#0c1016;color:var(--fg);font-weight:600}
+td{color:#aab0ba}
+.tag{display:inline-block;font:10px var(--mono,monospace);padding:2px 7px;border-radius:20px;border:1px solid var(--line);color:var(--muted);margin:2px}
+footer{border-top:1px solid var(--line);margin-top:70px;padding:26px 40px;max-width:1040px;margin-left:auto;margin-right:auto;display:flex;justify-content:space-between;color:var(--dim);font:9px var(--mono,monospace);letter-spacing:.1em;flex-wrap:wrap;gap:10px}
+@media(max-width:720px){.wrap,nav,footer{padding-left:18px;padding-right:18px}.legend{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="nav-back" data-i18n="back">← 返回可视化索引</a>
+  <button class="nav-lang" id="langToggle">EN</button>
+</nav>
+
+<div class="wrap">
+  <div class="hero">
+    <div class="eyebrow" data-i18n="eyebrow">AI Innovation Ecosystem</div>
+    <h1 data-i18n="h1">AI 创新生态图谱</h1>
+    <div class="sub" data-i18n="sub">CENTENNIAL JING-ZHANG AI BELT · ECOSYSTEM MAP</div>
+    <p class="lead" data-i18n="lead">以京张智脉为核心，6 大支柱向外辐射；6 个全球案例作为卫星，以「经验教训」连线回对应支柱，呈现本方案对全球智能城市经验的收敛与差异化定位。</p>
+  </div>
+
+  <div class="section">
+    <div class="st" data-i18n="s1t">网络图 Network Map</div>
+    <div class="sd" data-i18n="s1d">中心＝京张智脉；内环＝6 支柱；外环＝6 全球案例；连线＝可借鉴经验映射。</div>
+    <div class="mapcard">
+      <svg viewBox="0 0 980 660" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="AI 创新生态图谱">
+        <defs>
+          <radialGradient id="core" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#E8B04B"/><stop offset="100%" stop-color="#b9842f"/>
+          </radialGradient>
+        </defs>
+        <!-- links -->
+        <g stroke="#ffffff" stroke-opacity="0.16" stroke-width="1.6" fill="none">
+          <line x1="490" y1="40" x2="490" y2="180"/>
+          <line x1="490" y1="40" x2="620" y2="255"/>
+          <line x1="741" y1="185" x2="620" y2="255"/>
+          <line x1="741" y1="475" x2="620" y2="405"/>
+          <line x1="239" y1="475" x2="490" y2="480"/>
+          <line x1="239" y1="475" x2="620" y2="405"/>
+          <line x1="490" y1="620" x2="490" y2="480"/>
+          <line x1="490" y1="620" x2="360" y2="255"/>
+          <line x1="239" y1="185" x2="360" y2="255"/>
+          <line x1="239" y1="185" x2="490" y2="480"/>
+        </g>
+        <!-- pillars (inner ring) -->
+        <g font-family="inherit" font-size="15" font-weight="600" text-anchor="middle">
+          <circle cx="490" cy="180" r="40" fill="#2E6FF2"/>
+          <text x="490" y="185" fill="#fff">人才</text>
+          <circle cx="620" cy="255" r="40" fill="#2E6FF2"/>
+          <text x="620" y="260" fill="#fff">算力</text>
+          <circle cx="620" cy="405" r="40" fill="#7B5CFF"/>
+          <text x="620" y="410" fill="#fff">数据治理</text>
+          <circle cx="490" cy="480" r="40" fill="#3FB68B"/>
+          <text x="490" y="485" fill="#06281d">公共场景</text>
+          <circle cx="360" cy="405" r="40" fill="#E8B04B"/>
+          <text x="360" y="410" fill="#2a1d05">开源</text>
+          <circle cx="360" cy="255" r="40" fill="#7B5CFF"/>
+          <text x="360" y="260" fill="#fff">文化叙事</text>
+        </g>
+        <!-- core -->
+        <circle cx="490" cy="330" r="56" fill="url(#core)"/>
+        <text x="490" y="324" text-anchor="middle" font-size="15" font-weight="700" fill="#1a1206">京张智脉</text>
+        <text x="490" y="344" text-anchor="middle" font-size="9" font-family="monospace" fill="#1a1206">Rail-to-Brain</text>
+        <!-- cases (outer ring) -->
+        <g font-family="inherit" font-size="13" font-weight="600" text-anchor="middle">
+          <circle cx="490" cy="40" r="34" fill="#0c1016" stroke="#2E6FF2" stroke-width="2"/>
+          <text x="490" y="38" fill="#cdd6e6">深圳</text><text x="490" y="54" font-size="9" fill="#8d949f">产业实测</text>
+          <circle cx="741" cy="185" r="34" fill="#0c1016" stroke="#2E6FF2" stroke-width="2"/>
+          <text x="741" y="183" fill="#cdd6e6">新加坡</text><text x="741" y="199" font-size="9" fill="#8d949f">公共算力</text>
+          <circle cx="741" cy="475" r="34" fill="#0c1016" stroke="#7B5CFF" stroke-width="2"/>
+          <text x="741" y="473" fill="#d6cdf0">赫尔辛基</text><text x="741" y="489" font-size="9" fill="#8d949f">数据信托</text>
+          <circle cx="239" cy="475" r="34" fill="#0c1016" stroke="#3FB68B" stroke-width="2"/>
+          <text x="239" y="473" fill="#bfe9d6">阿姆斯特丹</text><text x="239" y="489" font-size="9" fill="#8d949f">算法透明</text>
+          <circle cx="490" cy="620" r="34" fill="#0c1016" stroke="#3FB68B" stroke-width="2"/>
+          <text x="490" y="618" fill="#bfe9d6">首尔</text><text x="490" y="634" font-size="9" fill="#8d949f">市民参与</text>
+          <circle cx="239" cy="185" r="34" fill="#0c1016" stroke="#7B5CFF" stroke-width="2"/>
+          <text x="239" y="183" fill="#d6cdf0">多伦多</text><text x="239" y="199" font-size="9" fill="#8d949f">社区共创</text>
+        </g>
+      </svg>
+    </div>
+    <div class="legend">
+      <div class="lg"><span class="dot" style="background:#E8B04B"></span><span data-i18n="l1">核心 · 京张智脉</span></div>
+      <div class="lg"><span class="dot" style="background:#2E6FF2"></span><span data-i18n="l2">支柱 · 人才 / 算力</span></div>
+      <div class="lg"><span class="dot" style="background:#7B5CFF"></span><span data-i18n="l3">支柱 · 数据治理 / 文化</span></div>
+      <div class="lg"><span class="dot" style="background:#3FB68B"></span><span data-i18n="l4">支柱 · 公共场景 / 开源</span></div>
+      <div class="lg"><span class="dot" style="background:#0c1016;border:1px solid #2E6FF2"></span><span data-i18n="l5">全球案例（连线＝借鉴）</span></div>
+      <div class="lg"><span class="dot" style="background:#ffffff22"></span><span data-i18n="l6">经验映射连线</span></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="st" data-i18n="s2t">案例对照表 Comparison</div>
+    <div class="sd" data-i18n="s2d">6 个全球案例映射到本方案支柱，及其经验教训。</div>
+    <table>
+      <thead><tr><th data-i18n="th1">案例</th><th data-i18n="th2">城市</th><th data-i18n="th3">映射支柱</th><th data-i18n="th4">经验教训</th></tr></thead>
+      <tbody>
+        <tr><td data-i18n="r1a">多伦多 Quayside</td><td>Toronto</td><td><span class="tag">公共场景</span><span class="tag">文化叙事</span></td><td data-i18n="r1b">社区与原居民早期共创，避免科技飞地</td></tr>
+        <tr><td data-i18n="r2a">赫尔辛基 数据信托</td><td>Helsinki</td><td><span class="tag">数据治理</span></td><td data-i18n="r2b">个人数据主权、可信授权</td></tr>
+        <tr><td data-i18n="r3a">新加坡 Smart Nation</td><td>Singapore</td><td><span class="tag">算力</span></td><td data-i18n="r3b">公共算力网络支撑中小主体</td></tr>
+        <tr><td data-i18n="r4a">阿姆斯特丹 AI 登记</td><td>Amsterdam</td><td><span class="tag">数据治理</span><span class="tag">公共场景</span></td><td data-i18n="r4b">公共算法可审计、透明</td></tr>
+        <tr><td data-i18n="r5a">深圳 产业群</td><td>Shenzhen</td><td><span class="tag">算力</span><span class="tag">人才</span></td><td data-i18n="r5b">可复现实测，非概念口号</td></tr>
+        <tr><td data-i18n="r6a">首尔 市民 AI</td><td>Seoul</td><td><span class="tag">公共场景</span><span class="tag">文化叙事</span></td><td data-i18n="r6b">市民中心、参与式治理</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<footer>
+  <span>京张智脉 · Rail-to-Brain — AI 创新生态图谱（概念性）</span>
+  <span data-i18n="fnote">全球案例仅作经验参照 · 非合作承诺</span>
+</footer>
+
+<script>
+const T={
+  zh:{
+    'back':'← 返回可视化索引','eyebrow':'AI 创新生态','h1':'AI 创新生态图谱','sub':'CENTENNIAL JING-ZHANG AI BELT · ECOSYSTEM MAP',
+    'lead':'以京张智脉为核心，6 大支柱向外辐射；6 个全球案例作为卫星，以「经验教训」连线回对应支柱，呈现本方案对全球智能城市经验的收敛与差异化定位。',
+    's1t':'网络图 Network Map','s1d':'中心＝京张智脉；内环＝6 支柱；外环＝6 全球案例；连线＝可借鉴经验映射。',
+    's2t':'案例对照表 Comparison','s2d':'6 个全球案例映射到本方案支柱，及其经验教训。',
+    'th1':'案例','th2':'城市','th3':'映射支柱','th4':'经验教训',
+    'r1a':'多伦多 Quayside','r1b':'社区与原居民早期共创，避免科技飞地',
+    'r2a':'赫尔辛基 数据信托','r2b':'个人数据主权、可信授权',
+    'r3a':'新加坡 Smart Nation','r3b':'公共算力网络支撑中小主体',
+    'r4a':'阿姆斯特丹 AI 登记','r4b':'公共算法可审计、透明',
+    'r5a':'深圳 产业群','r5b':'可复现实测，非概念口号',
+    'r6a':'首尔 市民 AI','r6b':'市民中心、参与式治理',
+    'l1':'核心 · 京张智脉','l2':'支柱 · 人才 / 算力','l3':'支柱 · 数据治理 / 文化','l4':'支柱 · 公共场景 / 开源','l5':'全球案例（连线＝借鉴）','l6':'经验映射连线',
+    'fnote':'全球案例仅作经验参照 · 非合作承诺'
+  },
+  en:{
+    'back':'← Back to visualizations','eyebrow':'AI Innovation Ecosystem','h1':'AI Innovation Ecosystem Map','sub':'CENTENNIAL JING-ZHANG AI BELT · ECOSYSTEM MAP',
+    'lead':'Jingzhang Zhimai at the center radiates six pillars; six global cases orbit as satellites, linking back via "lessons learned" to the pillars they inform.',
+    's1t':'Network Map','s1d':'Center = Jingzhang Zhimai; inner ring = 6 pillars; outer ring = 6 global cases; links = lessons mapped.',
+    's2t':'Comparison Table','s2d':'Six global cases mapped to the proposal pillars, with lessons.',
+    'th1':'Case','th2':'City','th3':'Pillars','th4':'Lesson',
+    'r1a':'Toronto Quayside','r1b':'Co-create with community/residents; avoid tech enclaves',
+    'r2a':'Helsinki Data Trust','r2b':'Personal data sovereignty, trusted consent',
+    'r3a':'Singapore Smart Nation','r3b':'Public compute network for SMEs',
+    'r4a':'Amsterdam AI Register','r4b':'Public algorithms auditable & transparent',
+    'r5a':'Shenzhen Cluster','r5b':'Reproducible tests, not slogans',
+    'r6a':'Seoul Citizen AI','r6b':'Citizen-centric, participatory governance',
+    'l1':'Core · Jingzhang Zhimai','l2':'Pillar · Talent / Compute','l3':'Pillar · Data / Culture','l4':'Pillar · Public / Open','l5':'Global case (link = lesson)','l6':'Lesson link',
+    'fnote':'Global cases are reference only · no partnership implied'
+  }
+};
+let lang=localStorage.getItem('lang')||(navigator.language.startsWith('zh')?'zh':'en');
+function applyLang(l){lang=l;localStorage.setItem('lang',l);document.documentElement.lang=l==='zh'?'zh-CN':'en';document.getElementById('langToggle').textContent=l==='zh'?'EN':'中文';document.querySelectorAll('[data-i18n]').forEach(el=>{const v=T[l][el.dataset.i18n];if(v!==undefined)el.innerHTML=v;});}
+document.getElementById('langToggle').addEventListener('click',()=>{document.body.style.opacity='.6';setTimeout(()=>{applyLang(lang==='zh'?'en':'zh');document.body.style.opacity='1';},120);});
+applyLang(lang);
+</script>
+</body>
+</html>
