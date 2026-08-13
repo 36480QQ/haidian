@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以城市可用性为总纲，把京张沿线组织成三座工场与两条服务链。每项 AI 服务都必须具备人工接手、无 App 等价路径、最少数据、责任主体、停止条件和公开改进记录。"
 tracks: ["ai-traffic-walkability", "ai-public-services", "enterprise-services-ecosystem"]
 scenarios: ["ai-traffic-walkability", "ai-health-service-navigation", "ai-cultural-guide", "enterprise-service-copilot", "robot-delivery-low-speed", "public-safety-operations-review"]
-iteration: "v1.5"
+iteration: "v1.6"
 ---
 
 # 京张好用 / JING-ZHANG WORKS
@@ -37,6 +37,8 @@ iteration: "v1.5"
 九十天试点现在有了一本能拿去开会的开工账。六行成本对象分别是现场基线、纸质服务、可移动公共界面、受控测试、值守运行和永久工程。每一行都写明按什么计量，哪些费用会反复发生，谁确认范围以后才准询价，撤场和数据删除也放在同一笔采购里。金额仍为空，因为场地、开放时段、责任采购人和三家可比报价尚未成立。这个空白会阻止虚假的总投资，也给专业团队留下可以接着算的清单。[source:V11-IMPLEMENTATION-PLAYBOOK] [metric:startup_cost_line_count]
 
 首日演练也补到五类停用情形。路线与生命安全、信息与网络、人员缺岗、隐私事件、供应商退出各有人工动作和重新开放证据。结构检查只能证明这些步骤已经写清，场地和人员签字之前仍然不能开场。[source:V12-DAY-ONE-DRILL] [metric:stop_drill_category_count]
+
+字段写全以后，还要看看规则会不会真的挡错。开门前排演器为十二项任务各保留一份完整合同，再依次拿掉责任主体、无 App 路径、最少数据、人工接手、停止条件和验证指标，得到八十四个合同样例。六张首日故障卡另跑六次，总计九十次离线检查。完整样例最多只能进入现场复核，七十二个缺项样例和六个故障样例都必须挡住 AI 开门或退回纸质与人工服务。当前九十项预期判断全部相符，现场结果仍为零。这只能说明规则能挡住这些合成错误，不能说明任何路线、人员或服务已经在现场有效。[source:V16-PREOPENING-REHEARSAL] [metric:preopening_synthetic_case_count] [metric:preopening_expected_match_count]
 
 ## 设计依据与资料清单
 
@@ -136,6 +138,8 @@ iteration: "v1.5"
 | T04 | 数字孪生应急演练 | 用合成数据推演疏散和资源调度 | 桌面推演与纸质预案 | 应急专业人员负责；模型与预案冲突时以人工指挥为准 |
 
 城市可用性编译器读取 `visual/assets/task_journeys.json`。六项字段全部存在时输出 `ready_for_field_review`，缺失时输出具体原因，不会生成默认责任人或替代数据。编译结果写入 `visual/assets/usability-readiness.json`，输入哈希和版本写入同一文件，便于复演。它是责任完整性检查器，不是合规认证器。[source:USABILITY-COMPILER] [metric:compiler_required_field_count]
+
+`visual/assets/run_preopening_rehearsal.js` 继续做反向检查。每项任务先跑完整版本，再逐项删掉六个放行字段；六张故障卡则在开门前注入。脚本要求缺项和故障全部阻断 AI 开场，也要求所有 `field_result` 保持空值。结果连同两份输入哈希写入 `visual/assets/preopening-rehearsal.json`。这是一组可复演的合成规则测试，不是居民参与、专业审查或现场验收。[source:V16-PREOPENING-REHEARSAL] [metric:preopening_missing_case_blocked_count] [metric:preopening_fault_case_blocked_count]
 
 数据规则遵循最少、短期、可删除。路线服务不保存精确个人轨迹，公共信息服务不保存提问者身份，拥挤管理不使用人脸，测试场景只使用合成或明确授权数据。每个场景都有人工复核与投诉路径，拒绝 AI 不影响获得等价服务。[standard:GENAI-INTERIM-MEASURES] （假设 A-DATA-001）
 

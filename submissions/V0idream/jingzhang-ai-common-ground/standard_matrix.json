@@ -10,7 +10,9 @@
       "proposal_sections": [
         "设计依据与资料清单",
         "总体设计范围城市更新与控规深度城市设计",
-        "指标体系、面积复算与合规矩阵"
+        "指标体系、面积复算与合规矩阵",
+        "TG-PILOT-01：72 平方米可撤离校译单元",
+        "城市校样回执：把退出权交还给使用者"
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
@@ -34,7 +36,14 @@
         "key_area_count",
         "scenario_node_count",
         "test_validation_scenario_count",
-        "landmark_count"
+        "landmark_count",
+        "pilot_module_area_sqm",
+        "pilot_operating_state_count",
+        "pilot_minimum_open_shift_staff_count",
+        "pilot_handoff_target_seconds",
+        "proof_receipt_required_field_count",
+        "synthetic_inclusion_journey_count",
+        "synthetic_inclusion_journey_pass_count"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -53,7 +62,10 @@
         "A-ROAD-001",
         "A-HERITAGE-001",
         "A-IMPLEMENTATION-001",
-        "A-CASE-TRANSFER-001"
+        "A-CASE-TRANSFER-001",
+        "A-PILOT-MODULE-001",
+        "A-PILOT-TARGET-001",
+        "A-INCLUSION-SYNTHETIC-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",

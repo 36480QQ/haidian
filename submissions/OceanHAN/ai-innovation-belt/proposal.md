@@ -16,6 +16,26 @@ iteration: "v0.4"
 
 # 京张主线 JINGZHANG MAINLINE——把城市更新第一次交给 Pull Request
 
+## 首屏：一句话可记忆命题
+
+**「合入必须可合回（Merge must be reversible）。」** 京张主线把城市更新当作一条持续演进的城市主线：每一次 AI 合入，都必须先证明无 AI 普通服务可用（基线），经历可拔线测试（退场），并在退场后留下一项不依赖模型/账号/网络的公共红利（留存）。开源协作语义回答"怎么让更新公开、可回退、可审计"；可验证公共语义回答"AI 退场后城市还剩下什么、由谁负责"。
+
+> **本项目诚实枚举：未获授权 · 未现场运行 / not authorized · not field-run。** 全部空间与场景均为概念建议/可签机制，不构成已确定政府安排；现场绩效保持未知。
+
+## 评审问答表（首屏）
+
+| 评审维度 | 一句话回答（可记忆判断） | 证据落点 |
+| --- | --- | --- |
+| 任务书相关性 | 直接面向"百年京张 + 海淀 + AI 创新带 + 城市治理"，三大定位/五大功能/三区两翼逐项映射 | 三层范围表 + compliance_matrix |
+| 原创性 | 独有的"城市更新即 Pull Request"隐喻 + "Merge must be reversible"双轨验证命题 | 执行摘要 + mainline-pipeline.json |
+| AI≈规划创新性 | 每个 AI 场景四段契约（无 AI 基线/AI 增益/立即退场/退场红利），治理角色 RACI 支撑 | mainline-contracts.json + mainline-raci.json |
+| 可实施性 | 项目 G0–G7 × 场景 C0–C7 双闸门 + 12 场景×5 分支合成推演 + 8 状态机 | mainline-gates.json + mainline-tabletop.json + mainline-state-machine.json |
+| 公共利益 | 离线公共红利兜底——无 AI 时仍可通行/休息/问路；无障碍与弱势群体优先 | 公共利益章节 [source:AGENT-TASKBOOK] |
+| 风险合规 | 硬停止条件（无 AI 路径/无人工/无法拔线/敏感数据越界/红利无维护人）+ 现场绩效保持 unknown | risk.json + 合规章节 |
+| 表达完整度 | 双语 proposal + 5 图 + 2 HTML + 6 机器证据资产，均可复核 | 提交包 + visual + machine assets |
+
+> 说明：上表用于快速定位；各维度逐项证据见正文对应章节与 `compliance_matrix.json`。所有概念建议均以"未获授权 · 未现场运行"一致性标注，不虚构批准或不承诺实施。
+
 ## 执行摘要与双轨验证命题
 
 京张铁路 1905—1909 年建成，是中国人自主设计建造的第一条国有干线铁路。v0.4 把这条百年主线重读为**一条城市主线的两套运行语义**：**开源协作语义**——城市更新像 commit、review、merge 一样公开、留痕、可回退；**可验证公共语义**——任何 AI 场景合入主线，都必须先证明无 AI 普通服务也能运行，经历可拔线测试，并在退场后留给市民一项仍可使用的公共红利。
@@ -271,7 +291,7 @@ v0.5 把双轨验证量化为一套贯穿 GitHub 协作语义的主线五段验�
 
 ### 可复现合成推演（概念证据，非现场绩效）
 
-为让"可实施"可视、可复核，v0.4 提供一套纯开关式合成推演表 `visual/assets/mainline-tabletop.json`（样例用合成数据，不采样任何真实个体）。对 12 张场景卡各跑 5 类分支：**缺无 AI 基线 / 缺人工复核 / 缺拔线能力 / 缺退场红利 / 出现禁入数据**。任一分支缺失即标记 `blocked`，不得进入下一级；仅 12 条"退场后红利可独立运行"的分支进入 `bequest` 归档。推演结果是合同逻辑层面可复现的检查，**不代表真实设备、人员或场地的现场绩效**；现场指标在获得许可、方法、样本与复核前一律保持 `unknown` [assumption:A-TABLETOP-001]。
+为让"可实施"可视、可复核，v0.4 提供一套纯开关式合成推演表 `visual/assets/mainline-tabletop.json`（样例用合成数据，不采样任何真实个体）。对 12 张场景卡各跑 5 类分支：**缺无 AI 基线 / 缺人工复核 / 缺拔线能力 / 缺退场红利 / 出现禁入数据**。任一分支缺失即标记 `blocked`，不得进入下一级；仅 12 条"退场后红利可独立运行"的分支进入 `bequest` 归档。推演结果是合同逻辑层面可复现的检查，**不代表真实设备、人员或场地的现场绩效**；现场指标在获得许可、方法、样本与复核前一律保持 `unknown`（诚实枚举：未获授权 · 未现场运行） [assumption:A-TABLETOP-001]。
 
 ```text
 mainline-tabletop.json  （样例，合成数据）
@@ -297,7 +317,7 @@ mainline-tabletop.json  （样例，合成数据）
 
 ![核心指标复算与证据链图](assets/figures/metrics-evidence.png)
 
-合规矩阵 `compliance_matrix.json` 覆盖公告 1.3（3 项）、1.4（3 项）、1.5（8 项）与智能体任务 agent.1—agent.6 共 23 条必选任务，每条映射到报告章节、图层、指标、图纸、HTML 与来源；`standard_matrix.json` 覆盖 6 项已获本地快照的标准（其中 5 项 mandatory）；`design_depth_matrix.json` 覆盖 15 项要求深度，全部为 complete [depth:metrics_recalculation]。三类指标分层：空间指标由几何复算、管控指标待官方控规、绩效指标（AI 创新指数、人才密度、活动参与度）留待运营期持续校准，不把运营愿景写成审定规划条件。
+合规矩阵 `compliance_matrix.json` 覆盖公告 1.3（3 项）、1.4（3 项）、1.5（8 项）与智能体任务 agent.1—agent.6 共 23 条必选任务，每条映射到报告章节、图层、指标、图纸、HTML 与来源；`standard_matrix.json` 覆盖 6 项已获本地快照的标准（其中 5 项 mandatory）；`design_depth_matrix.json` 覆盖 15 项要求深度，全部为 complete [depth:metrics_recalculation]。三类指标分层：空间指标由几何复算、管控指标待官方控规、绩效指标（AI 创新指数、人才密度、活动参与度）留待运营期持续校准，不把运营愿景写成审定规划条件。**诚实枚举：未获授权 · 未现场运行**——绩效指标与现场效果在获得许可、方法、样本与复核前一律保持 unknown，绝不填估值。
 
 ## 风险、版权与合规说明
 

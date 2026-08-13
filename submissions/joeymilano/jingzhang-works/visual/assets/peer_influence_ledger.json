@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.5.0",
+  "schema_version": "1.6.0",
   "principle": "Only public, exact-head review evidence is used to learn general mechanisms. Text, field combinations, schemas, geometry, graphics, and assets are independently redesigned.",
   "benchmark_selection_rule": "Retain only entries with an exact-head formal score and explicit merged evidence; prefer mechanisms that close a current scoring gap rather than entries with abundant imagery or polished copy alone.",
   "influences": [
@@ -82,6 +82,29 @@
       ],
       "prohibited_reuse": "No shift-ledger schema, role specification, sentence pattern, plan geometry, generated image, or other visual asset is reused. Issue #706 is treated as a structural-copying warning.",
       "risk_control_source": "https://github.com/open-city-ai/haidian/issues/706",
+      "copied_assets_text_or_schema": false
+    },
+    {
+      "public_entry": "AI along Jing-Zhang",
+      "pull_request": "https://github.com/open-city-ai/haidian/pull/2247",
+      "exact_head": "7ddf26cefbe27ecc14440133c9e220a40bcd3db6",
+      "formal_review": "https://github.com/open-city-ai/haidian/pull/2247",
+      "formal_score": 96,
+      "merge_evidence": "PR #2247 is merged at the exact head shown above; an earlier reviewed head scored 88 before its bilingual visual repair.",
+      "source_files": [
+        "submissions/zhiwuyazhe-fjr/ai-along-jingzhang/visual/assets/question-station-prototype.json",
+        "submissions/zhiwuyazhe-fjr/ai-along-jingzhang/visual/assets/raci-and-signoff.json",
+        "submissions/zhiwuyazhe-fjr/ai-along-jingzhang/visual/assets/public-acceptance-tabletop/run_tabletop.js",
+        "submissions/zhiwuyazhe-fjr/ai-along-jingzhang/visual/assets/public-acceptance-tabletop/scenario-contracts.json"
+      ],
+      "general_mechanism_learned": "A participant-authored offline stress test can make a public-service release rule inspectable when it clearly separates synthetic fixtures from field proof.",
+      "independent_redesign": "The Pre-opening Rehearsal derives ninety original fixtures from this submission's own six-field contracts and six day-one fault cards. It removes one release field at a time, blocks AI opening on omissions or faults, preserves field results as null, and publishes both input hashes.",
+      "expected_score_dimension": [
+        "originality",
+        "implementation_feasibility",
+        "expression_completeness"
+      ],
+      "prohibited_reuse": "No acceptance-tabletop name, scenario taxonomy, receipt object, evaluation vocabulary, schema, code structure, wording, layout, or visual asset is reused.",
       "copied_assets_text_or_schema": false
     }
   ]

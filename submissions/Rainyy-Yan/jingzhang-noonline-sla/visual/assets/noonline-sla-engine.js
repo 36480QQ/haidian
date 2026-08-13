@@ -10,6 +10,7 @@
 
 const fs = require("fs");
 const path = require("path");
+const verificationWorkflow = require("./noonline-sla-field-verification.js");
 
 const STATUSES = { A: 4, B: 3, C: 2, DEGRADED: 1, UNKNOWN: 0 };
 const FIELD_ASSUMPTION = "A-MICROCLIMATE-001";
@@ -477,6 +478,19 @@ function buildReport(root) {
     normal[routeId] = evaluateRoute(route, packageData);
   }
   const failures = runFailures(normal, packageData);
+  const fieldDataGaps = [
+    "shade_continuity_not_field_verified",
+    "continuous_exposure_not_field_verified",
+    "service_node_locations_not_surveyed",
+    "drinking_water_points_not_existing_inventory",
+    "seating_points_not_existing_inventory",
+    "public_entries_not_access_audited",
+    "crossing_waiting_conditions_not_measured",
+    "summer_detour_distance_not_field_verified"
+  ];
+  const verificationLedger = verificationWorkflow.deriveVerificationLedger(ROUTES, fieldDataGaps);
+  const promotionGate = verificationWorkflow.promotionGate(verificationLedger);
+  const workflowAssertions = verificationWorkflow.runWorkflowAssertions(verificationLedger);
   return {
     schema_version: "0.1.0",
     engine_id: "noonline-sla-engine",
@@ -494,6 +508,16 @@ function buildReport(root) {
     failure_cases: failures,
     ai_off_test: runAiOffTest(packageData),
     evidence_trace_index: buildTraceIndex(normal, failures),
+    verification_workflow: {
+      ledger_file: "visual/assets/noonline-field-verification-ledger.json",
+      field_pack_zh: "visual/index.html#v2-field-verification",
+      field_pack_en: "visual/index.en.html#v2-field-verification",
+      state_machine: verificationLedger.state_machine,
+      ledger: verificationLedger,
+      promotion_gate: promotionGate,
+      current_sla_explanation: verificationWorkflow.explainCurrentSla(verificationLedger),
+      workflow_assertions: workflowAssertions
+    },
     inconsistencies: detectInconsistencies(normal),
     query_examples: {
       why_SLA_A_is_B_not_A: {
@@ -504,16 +528,7 @@ function buildReport(root) {
         evidence_conditions: normal["SLA-A"].evidence_trace.map((item) => item.condition)
       }
     },
-    field_data_gaps: [
-      "shade_continuity_not_field_verified",
-      "continuous_exposure_not_field_verified",
-      "service_node_locations_not_surveyed",
-      "drinking_water_points_not_existing_inventory",
-      "seating_points_not_existing_inventory",
-      "public_entries_not_access_audited",
-      "crossing_waiting_conditions_not_measured",
-      "summer_detour_distance_not_field_verified"
-    ]
+    field_data_gaps: fieldDataGaps
   };
 }
 
@@ -540,7 +555,26 @@ function runAssertions(report) {
   }
   if (!report.ai_off_test.passed) errors.push("AI_OFF_TEST expected pass");
   if (!report.inconsistencies.length) errors.push("Expected at least one provisional consistency finding");
+  const workflow = report.verification_workflow;
+  if (!workflow || workflow.ledger.summary.total_tasks !== 45) errors.push("Expected exactly 45 derived field-verification tasks");
+  if (!workflow || workflow.promotion_gate.promotion !== "blocked") errors.push("Unknown mandatory field evidence must block SLA-A promotion");
+  if (!workflow || !workflow.workflow_assertions.ok) errors.push("Field-verification workflow assertions failed");
   return errors;
+}
+
+function writeGeneratedFieldPackSection(root, ledger, language, filename) {
+  const target = path.join(root, "visual", filename);
+  const begin = "<!-- FIELD_VERIFICATION_PACK:BEGIN -->";
+  const end = "<!-- FIELD_VERIFICATION_PACK:END -->";
+  const current = fs.readFileSync(target, "utf8");
+  const start = current.indexOf(begin);
+  const finish = current.indexOf(end);
+  if (start < 0 || finish < start) {
+    throw new Error(`${filename} is missing field-verification template markers`);
+  }
+  const replacement = `${begin}\n${verificationWorkflow.renderFieldPackSection(ledger, language)}\n${end}`;
+  const next = `${current.slice(0, start)}${replacement}${current.slice(finish + end.length)}`;
+  fs.writeFileSync(target, next, "utf8");
 }
 
 function main() {
@@ -549,11 +583,16 @@ function main() {
   const testOutput = path.join(root, "visual", "assets", "noonline-sla-test-results.json");
   const report = buildReport(root);
   fs.writeFileSync(output, `${JSON.stringify(report, null, 2)}\n`, "utf8");
+  const ledgerOutput = path.join(root, "visual", "assets", "noonline-field-verification-ledger.json");
+  fs.writeFileSync(ledgerOutput, `${JSON.stringify(report.verification_workflow.ledger, null, 2)}\n`, "utf8");
+  writeGeneratedFieldPackSection(root, report.verification_workflow.ledger, "zh", "index.html");
+  writeGeneratedFieldPackSection(root, report.verification_workflow.ledger, "en", "index.en.html");
   const errors = runAssertions(report);
   const testReport = {
     ok: errors.length === 0,
     engine_id: report.engine_id,
-    assertions: "deterministic_expected_results",
+    assertions: "deterministic_expected_results_and_field_verification_workflow",
+    field_verification_workflow: report.verification_workflow.workflow_assertions,
     errors,
     output: path.relative(root, output).split(path.sep).join("/")
   };

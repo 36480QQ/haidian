@@ -4,7 +4,7 @@ author_github: "Rainyy-Yan"
 language: "zh"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以午间科研通勤、校园园区步行和地铁园区最后一公里为抓手，把京张遗址公园周边公共空间转化为可审计的午间服务等级网络。"
-iteration: "v0.1"
+iteration: "v2.0"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
@@ -97,6 +97,14 @@ scenarios: "ai-traffic-walkability,enterprise-service-copilot,public-safety-oper
 | AI 全部关闭。 | AI_OFF_TEST = PASS_WITH_PROVISIONAL_PHYSICAL_NETWORK。 | 固定标识、实体路线、座椅、饮水、公共入口和人工服务点可形成概念兜底网络，但尚不是现实运营证明。 | 现场确认设施存在、开放、可达且有人负责后，AI-OFF 结论才可从 provisional 转为现场验证。 |
 
 A 级升级门槛是硬门槛，不是“未来完善后自然达到 A”。从 Verified SLA = B 升级到 A，必须补齐：遮阴连续性现场核验、连续暴晒距离实测、饮水点真实位置与开放状态、座椅及休息节点状态、公共入口实际开放条件、关键过街条件、夏季实际绕行距离、人工服务点责任与可用时段。缺少任一关键证据时，Engine 不应自动升级到 A。
+
+#### V2 现场核验工作流
+
+V2 不声称已经完成任何现场核验。Engine 从既有三类 SLA 路径、概念节点与八类 evidence gap 自动生成 45 项机器可读核验任务，写入 `visual/assets/noonline-field-verification-ledger.json`；其中 SLA-A 的 18 项任务为升级门 mandatory evidence，基线全部为 `unknown`。每项任务包含 route/node/object、所需证据、核验方法、通过/失败条件、状态、置信度、核验人、时间和证据引用；双语人工核验清单由同一 ledger 自动注入 `visual/index.html#v2-field-verification` 与 `visual/index.en.html#v2-field-verification`，不维护脱离机器数据的人工副本 [data:visual/assets/noonline-field-verification-ledger.json#summary] [metric:field_verification_task_count]。
+
+核验状态机只允许 `unknown → scheduled → observed → verified / rejected`。AI 不能创建、观察、确认或拒绝现场证据；`verified` 与 `rejected` 必须由人类核验人写入，并同时具备 verifier、timestamp 和 evidence reference。SLA-A promotion gate 因 18 项 mandatory evidence 均未完成而返回 `promotion = blocked`，所以当前 Target SLA = A、Verified SLA = B 不变；任何 mandatory evidence 被拒绝时继续阻断升级并触发保持 B 或降级复核。即使所有 mandatory evidence 未来由人类流程核验，gate 也只允许后续 Engine/政策复核，绝不自动把 Verified SLA 写成 A [data:visual/assets/noonline-sla-report.json#verification_workflow] [assumption:A-FIELD-VERIFICATION-WORKFLOW-001]。
+
+2026 年公开的京张铁路遗址公园沿线街区控规获批信息，为本方案提供了约 9 公里绿廊、南北贯通/东西联通慢行和便民服务方向的最新官方语境；本 submission 的 `ROAD-001` 仍只是概念性服务参考轴，而非官方 GIS、现状设施 inventory 或 SLA-A 的现场证据 [source:EXT-SRC-JINGZHANG-CONTROL-PLAN-20260812] [data:geometry/roads.geojson#ROAD-001]。
 
 市政与公共服务设施采用轻量化、可撤回的原则：先做可移动饮水、座椅、遮阴、充电、信息牌和人工服务桌，再根据专业测量决定是否需要固定工程。未公开的管线、排水、电力、消防和地下空间资料不被推断，相关内容只列为后续深化清单 [depth:municipal_new_infrastructure] [assumption:A-CONTROLS-001]。
 

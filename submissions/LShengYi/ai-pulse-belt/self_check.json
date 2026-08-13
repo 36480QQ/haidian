@@ -65,13 +65,19 @@
         "submissions/LShengYi/ai-pulse-belt/sources.json",
         "submissions/LShengYi/ai-pulse-belt/spatial.json",
         "submissions/LShengYi/ai-pulse-belt/standard_matrix.json",
+        "submissions/LShengYi/ai-pulse-belt/visual/assets/dividend-contracts.json",
+        "submissions/LShengYi/ai-pulse-belt/visual/assets/governance-raci.json",
+        "submissions/LShengYi/ai-pulse-belt/visual/assets/implementation-gates.json",
+        "submissions/LShengYi/ai-pulse-belt/visual/assets/review-evidence-index.json",
+        "submissions/LShengYi/ai-pulse-belt/visual/assets/simulate-check.js",
+        "submissions/LShengYi/ai-pulse-belt/visual/assets/state-machine.json",
         "submissions/LShengYi/ai-pulse-belt/visual/index.en.html",
         "submissions/LShengYi/ai-pulse-belt/visual/index.html"
       ],
       "ai_package_stages": {
         "submissions/LShengYi/ai-pulse-belt": "formal"
       },
-      "total_bytes": 17188925,
+      "total_bytes": 16479323,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -145,15 +151,15 @@
       "summary": {
         "standard_matrix_items": 14,
         "design_depth_items": 15,
-        "known_metric_refs_required": 44,
+        "known_metric_refs_required": 61,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 11,
-          "standard": 14,
-          "depth": 15,
-          "data": 27,
-          "metric": 48
+          "source": 12,
+          "standard": 15,
+          "depth": 16,
+          "data": 28,
+          "metric": 63
         }
       }
     },

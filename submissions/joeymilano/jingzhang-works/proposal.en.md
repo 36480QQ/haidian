@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "A city-usability framework that organizes the Jing-Zhang corridor as three Works and two service chains. Every AI service must provide human takeover, a no-app equivalent, minimum-data rules, a responsible owner, stop conditions, and a public change record."
 tracks: ["ai-traffic-walkability", "ai-public-services", "enterprise-services-ecosystem"]
 scenarios: ["ai-traffic-walkability", "ai-health-service-navigation", "ai-cultural-guide", "enterprise-service-copilot", "robot-delivery-low-speed", "public-safety-operations-review"]
-iteration: "v1.5"
+iteration: "v1.6"
 ---
 
 # JING-ZHANG WORKS / 京张好用
@@ -33,6 +33,8 @@ One broken step blocks the whole service. If the route is obstructed, the source
 The ninety-day pilot now has a startup ledger that can support an actual scope meeting. Its six cost lines cover field baseline work, paper service, a movable public interface, controlled testing, staffed operation, and permanent works. Each line identifies its unit, quantity basis, recurring burden, quotation gate, removal, and data-deletion obligation. The monetary total stays empty because the site, opening hours, accountable buyer, and comparable quotes do not yet exist. That empty total blocks false precision while leaving a usable cost structure for the authorized team.[source:V11-IMPLEMENTATION-PLAYBOOK] [metric:startup_cost_line_count]
 
 The day-one rehearsal now covers five stop situations: route and life safety, information and network failure, missing staff, a privacy incident, and supplier exit. Each has an immediate human action and evidence required for reopening. Structural checks show that the steps are specified; they do not authorize a site or prove that anyone has performed them.[source:V12-DAY-ONE-DRILL] [metric:stop_drill_category_count]
+
+Complete fields are not enough; the release rule must also refuse a bad contract. The Pre-opening Rehearsal keeps one complete copy of each of the twelve task contracts, then removes the accountable owner, no-app route, minimum-data rule, human takeover, stop condition, and validation metric one at a time. That produces eighty-four contract fixtures. Six declared day-one faults add six more checks. A complete fixture can advance only to field review. All seventy-two incomplete fixtures and all six fault fixtures must block AI opening or return the task to paper and staffed service. The ninety synthetic decisions currently match their expected outcomes, while field results remain zero. This shows how the rule treats these fixtures; it does not show that any route, staff member, or service works on site.[source:V16-PREOPENING-REHEARSAL] [metric:preopening_synthetic_case_count] [metric:preopening_expected_match_count]
 
 ## Design Basis and Source List
 
@@ -132,6 +134,8 @@ Twelve scenarios use the same six-field gate. “Ready” below means the contra
 | T04 | Digital-twin emergency exercise | Rehearse egress and resources with synthetic data | Tabletop exercise and paper plan | Emergency professional; human command overrides any model conflict |
 
 The compiler reads `visual/assets/task_journeys.json`. It emits `ready_for_field_review` only when all six fields are explicit, otherwise it lists what is missing. It never invents an owner or substitutes default data. `visual/assets/usability-readiness.json` stores compiler version, input hash, and replayable results. This is a responsibility-completeness check, not a compliance certificate.[source:USABILITY-COMPILER] [metric:compiler_required_field_count]
+
+`visual/assets/run_preopening_rehearsal.js` then tests the reverse direction. It runs the complete contract, removes each of the six release fields in turn, and injects the six declared fault cards before opening. The script requires every omission and fault to block AI release, and requires every `field_result` to remain null. `visual/assets/preopening-rehearsal.json` stores the decisions and both input hashes. This is a replayable synthetic rule test, not resident participation, professional review, or field acceptance.[source:V16-PREOPENING-REHEARSAL] [metric:preopening_missing_case_blocked_count] [metric:preopening_fault_case_blocked_count]
 
 Data rules are minimal, short-lived, and deletable. Route services do not keep personal trajectories; public-information services do not retain identity; crowd operations do not use face recognition; test scenes use synthetic or clearly authorized data. Each service has a complaint route and human review. Refusing AI never lowers access to an equivalent service.[standard:GENAI-INTERIM-MEASURES] (assumption A-DATA-001)
 

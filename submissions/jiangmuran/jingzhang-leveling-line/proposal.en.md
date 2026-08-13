@@ -780,7 +780,7 @@ This rule turns governance into a spatial design problem, which is why it belong
 
 **First, what is not this proposal's increment.** Reading every proposal in these two tracks confirms that <!-- BASELINE6:BEGIN -->
 
-These six are now de facto standard. The figures in brackets are measured counts across the 702-proposal corpus: scenario-level suspension and exit conditions (420); a non-AI equivalent path (311); an on-site safety officer (300); remote and physical e-stop (153); speed limits (82); event logs (58). The thinnest is at 58, the thickest at 420. **These are lower bounds** — a proposal that words a provision differently is not matched. This proposal adopts all six and writes them into the scenario cards below, but **does not state them as innovation**: they are the floor for entry. Selling the floor as a feature shows you have not read the field.
+These six are now de facto standard. The figures in brackets are measured counts across the 702-proposal corpus: scenario-level suspension and exit conditions (420); a non-AI equivalent path (312); an on-site safety officer (299); remote and physical e-stop (153); speed limits (82); event logs (58). The thinnest is at 58, the thickest at 420. **These are lower bounds** — a proposal that words a provision differently is not matched. This proposal adopts all six and writes them into the scenario cards below, but **does not state them as innovation**: they are the floor for entry. Selling the floor as a feature shows you have not read the field.
 
 <!-- BASELINE6:END -->
 
@@ -1119,10 +1119,10 @@ One unique numbered plaque per contributor; once assigned, a number is never rec
 
 | Id | Component | The hard constraint — the one that can fail on site | Serves |
 |---|---|---|---|
-| KIT-01 | Benchmark stone and plaque | Stone flush with the ground, no trip hazard; plaque number unique and matching a `benchmark_id` in the geometry one-for-one | P4, P5, P7 |
-| KIT-02 | Reading plate | Current f and tolerance F both visible, with the re-survey date; a stale value counts as not posted | P2, P3, P4 |
-| KIT-03 | Seating that permits staying | Armrests, so getting up is possible; sited within sight of the reading plate, so taking a reading needs no standing wait | P5, P7 |
-| KIT-04 | Accessible wayfinding | Continuous with no break; tactile and visual channels both; the approach may not be by steps alone | P5, P6, P7 |
+| KIT-01 | Benchmark stone and plaque | Stone top within ±5 mm of the paving — "flush" with no tolerance cannot be failed; 400 × 400 × 600 mm, foundation underside at least 100 mm below the local standard frost depth; plaque number unique and matching a `benchmark_id` in the geometry one-for-one. Detailed in FIG.16 | P4, P5, P7 |
+| KIT-02 | Reading plate | Current f and tolerance F both visible, with the re-survey date; a stale value counts as not posted. Face 600 × 450 mm raked 15°, lower edge 900 mm and upper edge 1,350 mm — the band a seated and a standing reader share; the face is replaceable without the post. Detailed in FIG.16 | P2, P3, P4 |
+| KIT-03 | Seating that permits staying | Seat 450 mm high with armrests, so getting up is possible; within 2,000 mm of the reading plate and in sight of it, so taking a reading needs no standing wait. Detailed in FIG.16 | P5, P7 |
+| KIT-04 | Accessible wayfinding | Guidance strip 300 mm wide and continuous, stopping 300 mm short of the stone so it does not lead onto it; tactile and visual channels both; Ø1,500 mm turning space with 2,100 mm headroom at the reading position; the approach may not be by steps alone. Detailed in FIG.16 | P5, P6, P7 |
 | KIT-05 | Appeal point | **Must offer both a QR code and a phone or in-person route** — a QR code alone excludes anyone without a smartphone from appealing, which makes persona P4 unworkable | P4, P5, P6 |
 
 Organised by re-survey cycle rather than by festival calendar, so that an event is a governance action and not a publicity one.
@@ -1144,7 +1144,54 @@ Organised by re-survey cycle rather than by festival calendar, so that an event 
 | 4 | Pass leveling | a controlled-ground closure record exists | **f ≤ F for two consecutive cycles** — once may be luck |
 | 5 | Operate on site | leveling passed and the removal bond is in place | continues to meet each cycle; exceeding returns the segment and removes the devices |
 
+**This is the proposal's own rule turned against it.** The L2 closure stele — the wall that is allowed to look bad — stands at BM-1 in Zhongzhiyuan, an R&D district, while the person a wrong reading lands on is at BM-303, a third-order community point some 3 km away. **The institution's public confession is sited where the institution is.** This proposal argues throughout that review placed fifteen minutes' walk away has not been given; this siting was the counter-example.
+
+The current-cycle failure reading is shown at **every third-order community point**, using the existing KIT-02 reading plate rather than any new structure: a returned scenario is marked in datum red with its return date and the conditions for resumption. L2 remains the site of the annual return-to-datum ceremony and the year's closure record, because that is one line-wide occasion — but **the current bad news belongs where it happened**.
+
+Replicated at BM-301, BM-302, BM-303 using component KIT-02; new structures required: 0.
+
 The five standard parts share one specification and open drawings, so any new node anywhere on the line can join in the same language.
+
+**One year of running it, costed — all eight benchmarks, row by row.**
+
+Sessions per year are converted from the re-survey cadence each point declares in `spatial.json`, not typed into this table; hours = sessions × people × the per-session band; money = hours × the rate band plus consumables.
+
+| Benchmark | Cadence | Sessions/yr | Convener | Paid hours (priced) | Volunteer hours (unpriced) | Consumables (CNY/yr) | Budget line |
+|---|---|---|---|---|---|---|---|
+| BM-0 | datum | 1 | the implementing body with a licensed surveying unit | 15–24 | — | 600–1500 | municipal facility maintenance — survey and monument upkeep |
+| BM-1 | first | 1 | the implementing body with a licensed surveying unit | 12–18 | — | 500–1200 | municipal facility maintenance — survey and monument upkeep |
+| BM-2 | first | 1 | the implementing body with a licensed surveying unit | 12–18 | — | 500–1200 | municipal facility maintenance — survey and monument upkeep |
+| BM-21 | second | 4 | the park operator | 20–32 | 20–32 | 300–700 | park operations — scenario open days and tech services |
+| BM-22 | second | 4 | the park operator | 20–32 | 20–32 | 300–700 | park operations — scenario open days and tech services |
+| BM-301 | third | 12 | the sub-district office or residents' committee | 18–30 | 36–60 | 200–500 | community governance service procurement — sub-district |
+| BM-302 | third | 12 | the sub-district office or residents' committee | 18–30 | 36–60 | 200–500 | community governance service procurement — sub-district |
+| BM-303 | third | 12 | the sub-district office or residents' committee | 18–30 | 36–60 | 200–500 | community governance service procurement — sub-district |
+| **Total** | — | **47** | — | **133–214** | **148–244** | **2,800–6,800** | — |
+
+**Volunteer hours are counted and not priced.** Pricing them would inflate a cost nobody pays; omitting them would pretend they are free. They are the hours this mechanism asks of residents each year, and that is a quantity to see before agreeing to it.
+
+At CNY 120–260 per hour, paid labour runs CNY 15,960–55,640 a year, or **CNY 18,760–62,440 a year** including consumables — all bands, none of them point estimates.
+
+**The only number here that is not counted is the rate**: CNY 120–260 per hour is a band with no verifiable source in this package, and it is graded provisional. Every other cell is a count of sessions, people, hours or items. Substitute your own rate and the table recomputes — the formula ships beside it for exactly that reason.
+
+**The removal bond, docked to instruments that already exist.**
+
+**No new deposit is created.** The removal obligation is docked to two instruments already in use in construction and municipal works: a performance bond covers the specific obligation to remove on time and restore the site, and third-party liability insurance covers harm caused while the devices stand. Creating a new deposit would mean creating rules for collecting, holding, disputing and releasing it — and this proposal establishes no new body, so it should not propose money only a new body could hold.
+
+| | |
+|---|---|
+| Instruments | a performance bond (or an equivalent bank or insurance guarantee); third-party liability insurance |
+| Custodian | Held in an independent escrow account drawn on by **dual signature** — the contracting party (the implementing body) and the sub-district office together; or replaced at equal value by a bank or insurance guarantee so no cash is tied up. |
+| Release authority | Released on both signatures; neither party alone can release it. **Single-party release does not hold** — the party that pays for removal cannot also be the party that decides whether removal happened. |
+| Release conditions | the devices are removed; the site is restored to the state in the baseline photographs taken on entry; no third-party claim is outstanding |
+| If removal is overdue | If removal is overdue the contracting party commissions removal and restoration from the bond, settles at actual cost, and recovers any shortfall from the responsible party. |
+| Amount | 100%–150% of the estimated removal-and-restoration cost — a band, not a point estimate; the upper end covers the cost of organising removal by a third party. Any statutory ceiling is the contracting party's to apply; this proposal cites no article number it cannot show you. |
+| Service level | Service level: removal and site restoration complete within 30 days of a removal order; third-party liability cover may not lapse while the devices stand, and a lapse is itself a stop condition. |
+| Stop conditions | f > F for two consecutive cycles (the same condition as PATH-5); liability cover lapses; a removal order passes its deadline |
+
+**The base is the estimated cost of removal and restoration, not a percentage of contract price.** A percentage of contract price bears no relation to what removal costs: a cheap installation in an awkward place can cost more to take out than to put in.
+
+The dual-signature escrow construction is borrowed from another submission in this call (wocaonimaworinixi-collab, X08): of 738 packages it is the only one that gives a removal deposit a trustee and a rule for drawing on it. It is borrowed because it is harder than what this package had — release by the contracting party with a confirmation attached.
 
 External communication draws on published readings, not on promises. All of the above are proposed operating mechanisms; whether they are adopted rests with the responsible parties' own decisions, and this proposal may not be cited as a commitment made by any of them.
 
@@ -1180,7 +1227,7 @@ A proposal that claims to do heritage narrative without naming a single heritage
 
 Out of scope: **Qinglongqiao Station and the switchback**, tens of kilometres away near Badaling. This needs saying, because it concerns a common practice. The switchback is the line's most recognisable symbol and <!-- ZIGZAG:BEGIN -->
 
-Of the 702 submissions, **45** name it in the title or summary and **177** mention it anywhere in the body [source:FIELD-CENSUS-2026-08]. The two readings are given separately because “core meta-symbol” asks about naming, not mention; both are recomputed from the bodies by `analysis/field_extras.py`.
+Of the 702 submissions, **45** name it in the title or summary and **178** mention it anywhere in the body [source:FIELD-CENSUS-2026-08]. The two readings are given separately because “core meta-symbol” asks about naming, not mention; both are recomputed from the bodies by `analysis/field_extras.py`.
 
 <!-- ZIGZAG:END -->. Citing it as a *narrative symbol* is entirely legitimate — it belongs to the line's history. But it is a **specific engineering structure outside this 43.6 km² design area.** This proposal therefore does not use it in spatial design and draws it in no layer; it takes a different heritage of the same line — **the surveying method** — which runs the whole length, including every metre inside the scope. This is not a judgement of other proposals; it is this proposal's own boundary of use: **a symbol can be borrowed; a site cannot.**
 
@@ -1346,7 +1393,7 @@ All 63 answered. Recomputing the floors rather than declaring them means that if
 
 The repository's `validate_submission.py` carries `validate_simulation_consistency`, which cross-checks a `simulation.json`'s task records against `simulation_success_rate`, `tool_schema_pass_rate`, `energy_budget_violations` and `audit_completeness` in `metrics.json`. <!-- SIMJSON:BEGIN -->
 
-**17 of 702** submissions ship one; the roster is in `simulation_json.keys` in the shipped `visual/assets/field_extras.json`, checkable entry by entry. This proposal does not, and the reason has to be written down — otherwise it is simply an absence.
+**18 of 702** submissions ship one; the roster is in `simulation_json.keys` in the shipped `visual/assets/field_extras.json`, checkable entry by entry. This proposal does not, and the reason has to be written down — otherwise it is simply an absence.
 
 <!-- SIMJSON:END -->
 
@@ -1376,13 +1423,13 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-49 entries. By finder:
+57 entries. By finder:
 
 | Found by | Count | What it says |
 |---|---|---|
-| Independent audit | 23 | The audit was run against the shipped package, not a draft |
-| The author | 20 | Found while working |
-| This package's own gate | 2 | Caught at build time — which is what a gate is for |
+| Independent audit | 25 | The audit was run against the shipped package, not a draft |
+| The author | 25 | Found while working |
+| This package's own gate | 3 | Caught at build time — which is what a gate is for |
 | **Reviewers outside this proposal** | **4** | [@anselasimov-web](https://github.com/anselasimov-web) on PR #1002; [@147228](https://github.com/147228) on PR #1065; [@Sonike](https://github.com/Sonike) on Issue #950; [@147228](https://github.com/147228) on Issue #950 / PR #1190 |
 
 <!-- ERRATA:COUNT:END -->
@@ -1397,19 +1444,23 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 
 | Shape | Count |
 |---|---|
-| **The check measured the convenient thing** | **11** |
-| **A deliverable was not looked at before shipping** | **8** |
+| **The check measured the convenient thing** | **13** |
+| **A deliverable was not looked at before shipping** | **9** |
+| **Two copies of one thing drifted** | **5** |
 | Geometry did not mean what it said | 4 |
 | A number outlived the sentence holding it | 4 |
 | A reference did not resolve | 4 |
-| Two copies of one thing drifted | 4 |
 | A claim outlived the package | 3 |
 | A measurement answering a question it cannot answer | 2 |
 | A number with no file behind it | 2 |
 | Attributed to a file that refuses to do it | 1 |
 | A claim outlived the corpus | 1 |
+| A claim this medium makes uncheckable in principle | 1 |
+| A hard constraint nothing could fail | 1 |
 | The gate reported and was ignored | 1 |
 | An index that does not index | 1 |
+| A requirement with nobody to execute it | 1 |
+| A rule applied to others but not to itself | 1 |
 | Six classes listed for a seven-class partition | 1 |
 | A term of art applied where it does not hold | 1 |
 | The table stopped being a table | 1 |
@@ -1449,11 +1500,11 @@ An authorisation statement a reviewer cannot verify is not a statement. Each row
 
 <!-- LEDGERCOUNT:BEGIN -->
 
-**The file-level ledger sits outside the review input, so its result is brought in here.** `build_review_input` sends `proposal.md` and eight JSON files; neither `report/copyright_statement.md` nor `visual/assets/rights_ledger.json` is among them. **A rights ledger the reviewer structurally cannot open is, from the reviewer's position, exactly the unverifiable assertion this package objects to elsewhere.** All **90 shipped files** carry a clearance class; a file without one fails the build:
+**The file-level ledger sits outside the review input, so its result is brought in here.** `build_review_input` sends `proposal.md` and eight JSON files; neither `report/copyright_statement.md` nor `visual/assets/rights_ledger.json` is among them. **A rights ledger the reviewer structurally cannot open is, from the reviewer's position, exactly the unverifiable assertion this package objects to elsewhere.** All **100 shipped files** carry a clearance class; a file without one fails the build:
 
 | Clearance class | Files |
 |---|---|
-| `author-originated` | 68 |
+| `author-originated` | 78 |
 | `provisional-only-with-stated-limit` | 9 |
 | `author-originated-measurement` | 8 |
 | `author-originated-with-embedded-fonts` | 4 |
@@ -1506,7 +1557,7 @@ One point of citation discipline deserves stating plainly: **the cases are used 
 
 <!-- FIGINDEX:BEGIN -->
 
-There are 13 sheets, numbered FIG.00 to FIG.12. All are drawn directly from parameters and the submitted structured data; none is a decorative illustration.
+There are 18 sheets, numbered FIG.00 to FIG.17. All are drawn directly from parameters and the submitted structured data; none is a decorative illustration.
 
 | Sheet | Content | What to read on it |
 |---|---|---|
@@ -1523,6 +1574,11 @@ There are 13 sheets, numbered FIG.00 to FIG.12. All are drawn directly from para
 | FIG.10 | The benchmark at eye level, and kerb allocation | A third-order benchmark drawn at human eye height: the stone flush with the ground, the current `f ≤ F` on the reading plate, the appeal route given as both a QR code and a phone number; the four figures standing there are the people who take the readings, not staffage. The kerb section below **draws the order and not the widths** |
 | FIG.11 | Regional coordination interface: extending the network across jurisdictions | Every row states not only what is exchanged but **what is explicitly not exchanged** and what must hold before the interface opens; the output of coordination is a number (cross-network closure error), not a statement of intent |
 | FIG.12 | Four-quadrant pedestrian connection and device queue reservoir at Dazhongsi | A 1:500 type drawing: holding areas in all four quadrants, the device queue reservoir set behind the building line, and an **as-measured column left deliberately empty** — carrying capacity must be computed on site from measured effective clear width |
+| FIG.13 | The three key areas in section, at one scale | One horizontal scale, one datum convention, no vertical exaggeration — and three different problems: reaching a river across a 100% single-use block; step-free continuity over a 1.2 m rise; a station below grade with the device queue held behind the building line. **±0.00 is each area's own benchmark, not a shared absolute datum** |
+| FIG.14 | The through-block public route to the Qing river | FIG.13's section states that this edge needs a public route across the R&D block to the levee path, and no drawing showed it. 6.0 m clear, centres at most 250 m apart (four of them, divided into a 939.0 m frontage), **open 24 hours and ungated**; the fallback alignment and the cost of a refusal are drawn, the cost in minutes |
+| FIG.15 | Phasing: advanced by closure results, not by dates | `phasing.geojson` has shipped for a long time, been repaired once, and enters the recompute path — **and no drawing had ever shown it**. The three increments, the benchmarks each adds, the condition that opens it (a number, not a year), and **what each phase costs to run**: the near term holds BM-0 alone, on one session a year |
+| FIG.16 | The benchmark and its reading plate, as a construction detail | The whole proposal rests on one object and **not one dimension appeared anywhere in the package**. Plan at 1:20, section and elevation at 1:10, nine dimensions each with the reason it is that number; **the one figure left blank is the frost depth D** — a local geotechnical value with no verifiable source here, so the sheet gives the rule and not the number |
+| FIG.17 | The step-free link from the origin community to the heritage park | FIG.13's section says this place exists to put a 1:12 ramp where the steps are, and no drawing had shown it. One design decision: **the ramp sits on the desire line and the steps beside it** — the usual arrangement offsets the ramp and charges its user twice that offset every trip, while nobody on the steps walks a metre further |
 
 <!-- FIGINDEX:END -->
 
