@@ -27,8 +27,8 @@ The spatial scope uses the repository maintainers' **provisional rough boundary*
 ## Three-Level Scope Framework
 
 - **Coordinated research area** 43.6 km²: bounded by the North 5th Ring Road, Jingzang Expressway, Xizhimenwai Street, and Wanquanhe Road, as a regional strategic background frame [source:SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT].
-- **Overall design area** 11.35 km² (recalculated from the provisional boundary; announcement ≈ 11.4 km²): the urban and industrial area within 1–2 km around the Jing-Zhang Heritage Park [metric:site_area_sqm] [data:geometry/site_boundary.geojson#SITE-001].
-- **Key detailed-design area** 368.4 ha: from north to south — Zhongzhiyuan AI Self-Innovation Acceleration Area (≈192.1 ha), Beijing AI Origin Community (≈104.3 ha), Dazhongsi AI Industry Cluster (≈72.0 ha) [metric:key_detailed_design_area] [data:geometry/key_areas.geojson#KEY-zhongzhiyuan_ai_acceleration_area].
+- **Overall design area** 11.41 km² (recalculated from the provisional boundary; announcement ≈ 11.4 km²): the urban and industrial area within 1–2 km around the Jing-Zhang Heritage Park [metric:site_area_sqm] [data:geometry/site_boundary.geojson#SITE-001].
+- **Key detailed-design area** 367.19 ha: from north to south — Zhongzhiyuan AI Self-Innovation Acceleration Area (≈192.1 ha), Beijing AI Origin Community (≈104.3 ha), Dazhongsi AI Industry Cluster (≈72.0 ha) [metric:key_detailed_design_area] [data:geometry/key_areas.geojson#KEY-zhongzhiyuan_ai_acceleration_area].
 
 The provisional boundary is shown as a faint dashed constraint, emphasizing design intent rather than a statutory redline [depth:DD-02].
 
@@ -98,7 +98,7 @@ A "**AI Spine main axis**" organizes the walking + transit skeleton, linking the
 
 ## Blue-Green Network, Public Space, and Urban Character
 
-The blue-green system uses the Jing-Zhang Heritage Park green corridor as its backbone, augmented by pocket parks and plaza nodes; provisional estimates give a green ratio ≈ 0.09 and public-space ratio ≈ 0.03, pending official green-space system confirmation [metric:green_ratio] [metric:public_space_ratio] [data:geometry/green_space.geojson#GREEN-SPINE]. Urban character uses a "zigzag motif + steel-grey / heritage-green / AI-blue" palette to coordinate building height, massing, style, and color control [standard:MOHURD-URBAN-DESIGN-MEASURES] [depth:DD-06].
+The blue-green system uses the Jing-Zhang Heritage Park green corridor as its backbone, augmented by pocket parks and plaza nodes; provisional estimates give a green ratio ≈ 0.0808 and public-space ratio ≈ 0.03, pending official green-space system confirmation [metric:green_ratio] [metric:public_space_ratio] [data:geometry/green_space.geojson#GREEN-SPINE]. Urban character uses a "zigzag motif + steel-grey / heritage-green / AI-blue" palette to coordinate building height, massing, style, and color control [standard:MOHURD-URBAN-DESIGN-MEASURES] [depth:DD-06].
 
 ## Centennial Jing-Zhang Culture, Zhongguancun Culture, and AI New-Culture Fusion Narrative (agent.5)
 
