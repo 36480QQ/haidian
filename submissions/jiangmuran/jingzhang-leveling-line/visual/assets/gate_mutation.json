@@ -62,8 +62,32 @@
       "what_en": "Rename the only mention of personas.json in the English edition so the shipped file goes unnamed.",
       "why_zh": "同一道闸门的第二条规则：随包成品必须在正文里被指名。一道只有一半被验证过的闸门，是一道只有一半的闸门。",
       "why_en": "The second rule inside the same gate: a shipped deliverable must be named in the prose. A gate with only half of it exercised is half a gate."
+    },
+    {
+      "id": "M6",
+      "gate": "computed_value_qa.py",
+      "target": "proposal.md",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把正文里手写的最近距离从 412.5 m 改成 481.2 m，模拟图层改动后句子没跟着改。",
+      "what_en": "Change one hand-written nearest-distance from 412.5 m to 481.2 m, simulating a layer that moved while the sentence did not.",
+      "why_zh": "`412.5 m` 在中文版生成块之外手写了六处。图层一改，六句话同时变错，而旁边生成的表是对的——闸门必须抓住这种不一致，否则它保护的正是它自己声称在防的缺陷。",
+      "why_en": "`412.5 m` is hand-written six times in the Chinese edition outside any generated block. If the layer moves, six sentences go wrong at once while the generated table beside them goes right — the gate has to catch that, or it protects exactly the defect it claims to prevent."
+    },
+    {
+      "id": "M7",
+      "gate": "claim_audit_qa.py",
+      "target": "proposal.en.md",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "在英文版追加一个只有英文版有的带单位测量值。",
+      "what_en": "Append a unit-carrying measurement that exists in the English edition only.",
+      "why_zh": "这正是该闸门存在的原因——英文版曾独有 39.6%、30.0% 与一整段 0.24% 的论证。人为制造同一情况若不报错，那三处当初被报出来就只是巧合。",
+      "why_en": "This is the condition the gate was built for: the English edition once carried 39.6%, 30.0% and a whole 0.24% paragraph the Chinese did not. If the same condition introduced deliberately goes unreported, catching those three was luck."
     }
   ],
-  "caught": 5,
+  "caught": 7,
   "survived": 0
 }
