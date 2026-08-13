@@ -1,19 +1,12 @@
-# 方案简述
+# 提交叙事（narrative）
 
-**百年京张·第一轨——从自主铁路到自主AI的城市脊柱** 是一个以詹天佑精神为文脉原点、以京张遗址公园走廊为城市脊柱的 formal AI 城市设计方案包。方案把"自主"作为从铁路时代到AI时代的文化母题，以"一轨三核、多点场景、蓝绿慢行复合环"组织空间，并将 AI 创新生态、人才画像、AI+ 场景、城市更新实施路径落到可复核的 GeoJSON 图层、metrics.json 和合规矩阵中。
+## 一句话主张
+百年京张·第一轨——把京张遗址公园走廊转化为"从自主铁路到自主AI"的城市脊柱：以自主文脉为原点，以原创 Logo 与视觉系统为识别，以三区两翼与空间-产业-运营映射为骨架，以 6 个国际案例、AI 创新生态图谱与八类支撑机制为生态底座，以 10 张场景卡、3 个测试验证场景、3 个朝圣地标、12 项组件库与年度运营设计为可体验、可深化的概念成果。
 
-## 主要设计内容
+## 证据链
+- 机器证据：geometry/*.geojson（provisional_constraint）、metrics.json（provisional estimate）、sources.json（含国际案例/字体/工具/原创资产许可）、compliance_matrix.json、standard_matrix.json、design_depth_matrix.json（按实际完成度登记）、self_check.json（四门 gate）。
+- 人类可读：proposal.md / proposal.en.md（完整中英对照）、report/proposal.html、visual/index.html（中英）、A3 文册与 A0 展板（中英）。
+- 视觉：所有图件为数据驱动原创渲染，含比例尺、指北针、经纬网格、图例、标签与 provisional banner；Logo 为提交方原创。
 
-- **三层范围**：统筹研究范围 43.6 km²、总体设计范围 11.4 km²、重点区域 368.4 ha。
-- **三核定位**：众智园 AI 自主创新加速区（花园型自主创新街区）、北京 AI 原点社区（近校型成果转化街区）、大钟寺 AI 产业聚集区（城市型智能经济街区）。
-- **空间策略**：以京张遗址公园走廊为文化-创新-生活复合主轴；以连续公园绿地、公共活动界面、慢行与创新服务廊道和建筑更新项目共同组成蓝绿慢行复合环。
-- **AI 场景**：10 个可运营 AI+ 场景，涵盖开源发布、智能体沙盒、慢行断点诊断、人才生活管家、AI 安全治理、校企转化客厅、数据要素剧场、低碳算力驿站、京张记忆线路和全球 AI 活动周路线。
-- **核心指标**：场地面积约 1141 万 m²；建筑基底面积基于生成图层复算；绿地率、公共空间率、重点区数量等指标见 metrics.json。
-
-## 关键假设与数据缺口
-
-本包使用 `brief/site-package/geometry/provisional_boundaries.geojson` 作为临时边界，官方边界、控规控制线、道路红线、权属地块、文物保护范围、市政管线等正式数据尚未获取。所有涉及上述条件的结论均表述为"概念建议 / 参考方案 / 待专业团队深化"，并已在 assumptions.json、self_check.json、missing_data_checklist.csv 中登记。临时边界不阻断内容评分，但需在官方数据发布后重算。
-
-## 提交者
-
-OpenSquilla（GitHub: wwwaaa123122），使用 provider-independent AI agent runtime。
+## 统一边界表述
+所有面积与几何派生指标按 provisional estimate 标注（减少有效数字），并显著提示：官方边界发布后整体复算。全部空间落地建议为"概念建议/参考方案/可供专业团队深化研究"，不构成红线、审批依据或工程方案。
