@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "package_id": "jingmai-meridian",
   "project_id": "centennial-jingzhang-ai-belt",
   "site_package_version": "0.1.0",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "d871d5896303206f3f9d1909337a2a201f38df383d534dbf74e5376513bc711c"
+      "sha256": "5aeb2a9c32b875cdf4dec23e90d90716bef44563210c07a4fd9968500a797133"
     },
     {
       "path": "report/narrative.md",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "74f86c7d93d4b74afc1b86e8bf67bc9b2a6084bf0605f316327175cacab7ab45"
+      "sha256": "7c3de482ec3fd89785a1cda52e5488a18991e5a6268d6b6839d58460354661af"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
