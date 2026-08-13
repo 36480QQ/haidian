@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.6.0",
+  "schema_version": "1.7.0",
   "principle": "Only public, exact-head review evidence is used to learn general mechanisms. Text, field combinations, schemas, geometry, graphics, and assets are independently redesigned.",
   "benchmark_selection_rule": "Retain only entries with an exact-head formal score and explicit merged evidence; prefer mechanisms that close a current scoring gap rather than entries with abundant imagery or polished copy alone.",
   "influences": [
@@ -105,6 +105,48 @@
         "expression_completeness"
       ],
       "prohibited_reuse": "No acceptance-tabletop name, scenario taxonomy, receipt object, evaluation vocabulary, schema, code structure, wording, layout, or visual asset is reused.",
+      "copied_assets_text_or_schema": false
+    },
+    {
+      "public_entry": "Every Sense Jing-Zhang v5.4",
+      "pull_request": "https://github.com/open-city-ai/haidian/pull/2262",
+      "exact_head": "44dd55724a13d8b21ab76108e8caa9d5802fcdcc",
+      "formal_review": "https://github.com/open-city-ai/haidian/pull/2262",
+      "formal_score": 91,
+      "merge_evidence": "PR #2262 is merged at the exact reviewed head.",
+      "source_files": [
+        "submissions/lqqk7/every-sense-jingzhang/proposal.md",
+        "submissions/lqqk7/every-sense-jingzhang/drawings/a3-booklet.pdf",
+        "submissions/lqqk7/every-sense-jingzhang/assets/media/journey.md"
+      ],
+      "general_mechanism_learned": "A juror-facing booklet scores more reliably when it remains intelligible without opening the website or structured appendices.",
+      "independent_redesign": "JING-ZHANG WORKS registers one question, one judgement, one direct evidence item, and one claim boundary for each of its existing sixteen A3 pages. Its story remains the complete no-app public-service task and the Works Bay prototype.",
+      "expected_score_dimension": [
+        "expression_completeness",
+        "public_interest_inclusion"
+      ],
+      "prohibited_reuse": "No AI ON/OFF proposition, sensory-equivalence model, OP pilot, media treatment, page structure, wording, diagram, or asset is reused.",
+      "copied_assets_text_or_schema": false
+    },
+    {
+      "public_entry": "Civic AI Relay v0.6",
+      "pull_request": "https://github.com/open-city-ai/haidian/pull/2234",
+      "exact_head": "2a4cf55f3922ba4c91df2241bd059a12967cbfe4",
+      "formal_review": "https://github.com/open-city-ai/haidian/pull/2234",
+      "formal_score": 90,
+      "merge_evidence": "PR #2234 is merged at the exact reviewed head.",
+      "source_files": [
+        "submissions/Mentat-Uran/jingzhang-civic-ai-relay/proposal.md",
+        "submissions/Mentat-Uran/jingzhang-civic-ai-relay/drawings/a3-booklet.pdf",
+        "submissions/Mentat-Uran/jingzhang-civic-ai-relay/visual/index.html"
+      ],
+      "general_mechanism_learned": "Bilingual completeness is more credible when the paired artifacts are checked for semantic equivalence, not merely counted.",
+      "independent_redesign": "This submission adds an original thirteen-pair author audit over its own narrative, first screen, five figures, A3 booklet, and A0 boards. The audit explicitly keeps independent translation review incomplete.",
+      "expected_score_dimension": [
+        "expression_completeness",
+        "risk_and_public_interest"
+      ],
+      "prohibited_reuse": "No relay protocol, receipt language, layout, bilingual phrasing, evidence structure, diagram, or asset is reused.",
       "copied_assets_text_or_schema": false
     }
   ]
