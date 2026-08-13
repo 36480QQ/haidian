@@ -15,6 +15,10 @@ scenarios: ["enterprise-service-copilot", "ai-traffic-walkability", "robot-deliv
 
 > **Core proposition: universities and leading firms are anchors, the district is an incubator, and community is infrastructure.** Haidian does not lack innovation sources; it needs urban interfaces that turn talent relations into projects, projects into firms, and growing firms into the next round of shared capacity.
 
+## Equivalent listening, viewing, reading and interaction routes
+
+This package proves its “community as infrastructure” principle through four equivalent offline routes: the bilingual report and drawings; a system-speech audio guide with transcript and captions; a silent five-sheet journey with captions and static originals; and a keyboard-operable project-gate rehearsal with a static fallback. None auto-plays or loads remote code, fonts, tiles or tracking. All frames are project-owned drawings; there is no human recording, music, field footage or third-party visual material. If media or JavaScript fails, the transcripts, five core figures and protocol fallback retain the same claims. These media communicate the concept and its truth boundary; they do not prove deployment or field impact.
+
 ## Original AI-planning mechanism: an auditable multi-agent control plane
 
 The proposal does not treat AI image production as planning innovation. Its original contribution is a six-agent evidence-compilation chain that turns incomplete site signals into reviewable investigation tasks, spatial options, bounded scenarios and operating contracts—without allowing an agent to approve its own output. A1 stewards provenance; A2 compiles the seven-part health check; A3 locates projects and exposes spatial conflicts; A4 designs bounded scenarios with a non-AI equivalent; A5 binds operations to RACI, accounts and acceptance; A6 may veto release when accessibility, affordability or resident safeguards fail. This chain integrates **industry, space, mobility, public service, culture and governance** on one decision record rather than using six disconnected dashboards.
