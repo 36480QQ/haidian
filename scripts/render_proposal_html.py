@@ -1,5 +1,45 @@
 #!/usr/bin/env python3
-"""Render a submission proposal.md into an offline readable HTML report."""
+"""Render a submission proposal.md into an offline readable HTML report.
+
+This script converts ``proposal.md`` (and its bilingual counterpart when
+present) into self-contained offline HTML at ``report/proposal.html``.  The
+output must not load any remote resources; all figures are embedded as
+``../assets/figures/`` relative paths.
+
+When the proposal declares a ``translation_file`` in its front matter, the
+corresponding HTML translation is written alongside the primary report and each
+file links to the other with a language-switch anchor.
+
+Evidence markers (``[source:...]``, ``[standard:...]``, ``[depth:...]``,
+``[data:...]``, ``[metric:...]``) are rendered as quiet ``<sup>`` labels so
+reviewers can trace claims without the markers obscuring prose.
+
+Usage
+-----
+Run from the repository root or any directory with the path to the proposal::
+
+    python3 scripts/render_proposal_html.py submissions/<login>/<slug>
+
+The output path defaults to ``report/proposal.html`` inside the submission
+directory.  Override with ``--out``::
+
+    python3 scripts/render_proposal_html.py submissions/<login>/<slug> \\
+        --out report/proposal-preview.html
+
+The script exits 0 on success and 1 when ``proposal.md`` is missing.
+
+Supported Markdown features
+----------------------------
+- ATX headings (``#`` through ``####``)
+- Paragraphs
+- Unordered lists (``- item``)
+- Fenced code blocks (triple backtick or tilde)
+- Inline code, bold, italic, bold-italic
+- GitHub-flavored tables (``| col | col |`` with column alignment)
+- Block quotes
+- Inline images with local paths (remote ``http://`` sources are rejected)
+- Evidence markers rendered as ``<sup class="evidence">`` labels
+"""
 
 from __future__ import annotations
 
@@ -52,6 +92,12 @@ def parse_front_matter(text: str) -> tuple[dict[str, str], str]:
 
 
 def normalize_image_src(submission_dir: Path, raw_src: str) -> str:
+    """Resolve *raw_src* to a report-relative local path.
+
+    Raises:
+        ValueError: If *raw_src* is a remote URL, an unsafe path (absolute or
+            containing ``..``), or if the target file does not exist.
+    """
     if re.match(r"^(?:https?:)?//", raw_src, re.I) or re.match(r"^(?:data|file|javascript):", raw_src, re.I):
         raise ValueError(f"remote or unsafe image source is not allowed: {raw_src}")
     clean = raw_src.split("#", 1)[0].split("?", 1)[0]
@@ -490,9 +536,19 @@ code {{
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("submission_dir")
-    parser.add_argument("--out", default="report/proposal.html")
+    parser = argparse.ArgumentParser(
+        description=__doc__,
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+    )
+    parser.add_argument(
+        "submission_dir",
+        help="Path to the proposal directory, e.g. submissions/<login>/<slug>",
+    )
+    parser.add_argument(
+        "--out",
+        default="report/proposal.html",
+        help="Output path relative to submission_dir (default: report/proposal.html)",
+    )
     args = parser.parse_args()
 
     submission_dir = Path(args.submission_dir).resolve()
@@ -510,14 +566,16 @@ def main() -> int:
 
     primary_translation_href = None
     if translation_output:
-        primary_translation_href = os.path.relpath(translation_output, out_path.parent)
+        primary_translation_href = Path(
+            os.path.relpath(translation_output, out_path.parent)
+        ).as_posix()
     html_text = render_html(submission_dir, translation_href=primary_translation_href)
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text(html_text, encoding="utf-8")
     print(out_path)
     if translation_output and translation_path:
         translation_output.parent.mkdir(parents=True, exist_ok=True)
-        primary_href = os.path.relpath(out_path, translation_output.parent)
+        primary_href = Path(os.path.relpath(out_path, translation_output.parent)).as_posix()
         translation_output.write_text(
             render_html(submission_dir, translation_name, translation_href=primary_href),
             encoding="utf-8",
