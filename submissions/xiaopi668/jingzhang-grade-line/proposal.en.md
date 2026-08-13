@@ -27,6 +27,15 @@ This is not a standalone vision text: every spatial judgment traces to layers, m
 
 ![Evidence chain and package structure](assets/figures/site-overview.en.png)
 
+### AI-native workflow and methodology
+
+The proposal is generated end-to-end by an AI agent, and the workflow itself is part of the planning-methodology innovation [source:AGENT-TASKBOOK].
+
+1. **Procedural geometry with topology verification**: land_use is cut by one shared polygonize line network, inherently seamless (no gaps/overlaps), with areas auto-recomputed in EPSG:4548 [data:geometry/land_use.geojson#LU-001].
+2. **Data-driven figures**: all 10 figures are generated directly from GeoJSON and metrics, keeping text and numbers consistent [metric:site_area_sqm].
+3. **Multimodal simulation-review loop**: strict-round simulation reviews mirror the official prompt, each finding repaired before submission; this revision comes from that loop.
+4. **Analytical AI application concepts**: walkability isochrones, demand inference, and the scenario data return loop (feedback siding) as landing points for analytical AI in planning [metric:road_total_length_m].
+
 ## Three-Level Scope Framework
 
 The proposal is organized on the announced three levels [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]: the coordinated research area (43.6 km²) answers how the AI ecosystem and future city form are organized; the overall design area (11.41 km², the corridor 1–2 km around the Jing-Zhang Heritage Park) answers how industry space, urban renewal, transport and urban character are mapped; the key detailed design area (368.4 ha in three sub-areas) answers how each area reaches detailed-design depth. The three levels are mapped item by item in `compliance_matrix.json`, covering all mandatory tasks of Announcement 1.3/1.4/1.5 and agent.1–agent.6 [depth:three_level_scope_framework].
@@ -194,6 +203,17 @@ Land use is driven by the gradient protocol and recomputed from the submitted ge
 
 Landmarks, wayfinding and honor systems are concept directions using no unauthorized person, company identity or trademark [source:SOURCE-REGISTRY]; cultural narrative stays within historical facts and never presents concept landmarks as approved construction [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [depth:blue_green_public_space].
 
+### Community protection and affordability (public interest)
+
+High-intensity renewal of an AI belt carries gentrification and living-cost risks; the proposal responds with four mechanisms [source:AGENT-TASKBOOK]:
+
+1. **Retain-renovate-improve first**: the two wings' hinterlands are mainly retained, renovated and improved, minimizing displacement; the conceptual residential zone is ~2.499 million m² [metric:land_use_residential_sqm].
+2. **Community benefit sharing**: scenario-operation and public-space event revenues return to community services (study rooms, childcare, canteens) through a concept mechanism to be professionally deepened.
+3. **Affordability monitoring**: a public-data-based rent and living-cost monitoring concept indicator triggers renewal-pace review when exceeded.
+4. **Affordable housing and talent apartments**: research and acceleration grades host talent-apartment concepts; the community hinterland keeps mixed housing structure (ratios pending the regulatory plan).
+
+All-age and accessible design runs through public space: elderly, disabled and low-income groups are served by the SC-03 accessible mobility assistant and a foot-of-slope digital-literacy training station [metric:public_space_ratio]. All mechanisms are concepts, not housing-policy commitments.
+
 ## Renewal Project List, Policies and Phasing
 
 ### Project package (6 independently pausable items)
@@ -207,9 +227,28 @@ Landmarks, wayfinding and honor systems are concept directions using no unauthor
 | JZ-05 | Full-stack verification field (test #3) | industry service | Acceleration | data isolation, professional review | [data:geometry/land_use.geojson#LU-003] |
 | JZ-06 | Milepost Walk | culture/operation | Belt-wide | park management, cultural clearance | [data:geometry/phasing.geojson#PHASE-001] |
 
+### Implementation depth: cost magnitudes, operators and emergency response
+
+**Cost magnitude estimates (concept ranges, non-statutory)**: the following magnitudes only test implementability, inferred from public experience of comparable public-space and park projects; they are not investment calculations, fiscal commitments or approval bases [source:SRC-GLOBAL-CASES].
+
+| Project | Concept cost range (RMB) | Main source | Note |
+| --- | --- | --- | --- |
+| JZ-01 Switchback Plaza | 10–30 M | public-investment-led | plaza renovation & wayfinding |
+| JZ-02 Scenario supermarket | 5–10 M | platform + social capital | lightweight facilities first |
+| JZ-03 Code garden | 3–8 M | open-source sponsorship | low-maintenance public space |
+| JZ-04 Pop-up lab | 10–30 M | university + incubator | reversible light retrofit |
+| JZ-05 Verification field | 50–200 M | park platform + enterprises | data isolation & benchmarking |
+| JZ-06 Milepost Walk | 5–10 M | public-investment-led | mileposts & honor system |
+
+**Operator and staffing concept estimates**: main-line operations 20–40 people (greenway maintenance, events, guiding), verification field 10–20 (benchmarking, isolation ops), developer-community operations 5–10, culture guiding 3–5, about 40–75 in total; staffing is a concept estimate from comparable public-facility experience, not a fiscal commitment [source:AGENT-TASKBOOK].
+
+**Two-level emergency response plan (concept)**: technical incidents (model failure, data breach) — pause the scenario immediately → human takeover → isolate affected data → public debrief within 24h; operational incidents (event safety, facility failure) — activate the on-site plan → professional response → compensation channel → public statement. The grade-signal system guarantees every scenario has pause, rollback and human-takeover switches [metric:ai_scenario_node_count].
+
+**Ridership and commute concept estimates**: applied grade ~20–40k daily visitors, research grade 10–20k, acceleration grade 30–50k (park commutes) — low-confidence ranges inferred from public data, to be calibrated by site survey and official data [source:SRC-BEIJING-SCIENCE-CENTER].
+
 ### Admission gates and phasing
 
-Implementation follows **C0–C7 eight gates** (concept→ownership confirmation→professional deepening→pilot→evaluation→expansion→normalization→governance review); failure at any gate pauses the item, keeping everything reversible and reviewable [depth:phasing_implementation]. Phasing is independent of the submission cycle: **near term (2026–2028)** starts lightweight pilots and scenario operations on the applied and research grades (~6.250 million m² [metric:phase_1_area_sqm]); **mid term (2028–2031)** advances the transition band and acceleration-grade south extension (~2.879 million m² [metric:phase_2_area_sqm]); **long term (2031–2035)** completes the acceleration grade (~2.248 million m² [metric:phase_3_area_sqm]) [data:geometry/phasing.geojson#PHASE-002]. Each phase has exit conditions and professional review gates; engineering deepening starts only after official regulatory, municipal, transport and ownership conditions are confirmed [depth:renewal_project_list].
+Implementation follows **C0–C7 eight gates** (concept→ownership confirmation→professional deepening→pilot→evaluation→expansion→normalization→governance review); failure at any gate pauses the item, keeping everything reversible and reviewable [depth:phasing_implementation]. Phasing is independent of the submission cycle: **near term (2026–2028)** starts on the applied and research grades; the phase polygons cover both grade bands (~6.250 million m² [metric:phase_1_area_sqm]), of which only lightweight pilots and scenario operations start first (~5% of the near-term extent, controlled by gates C0–C2), the rest advancing as conditions mature; **mid term (2028–2031)** advances the transition band and acceleration-grade south extension (~2.879 million m² [metric:phase_2_area_sqm]); **long term (2031–2035)** completes the acceleration grade (~2.248 million m² [metric:phase_3_area_sqm]) [data:geometry/phasing.geojson#PHASE-002]. Each phase has exit conditions and professional review gates; engineering deepening starts only after official regulatory, municipal, transport and ownership conditions are confirmed [depth:renewal_project_list].
 
 ### Operation mechanisms (agent.6)
 
@@ -219,7 +258,7 @@ Implementation follows **C0–C7 eight gates** (concept→ownership confirmation
 
 Indicators are managed in three classes [depth:metrics_recalculation]: (1) directly recomputable from submitted geometry (areas, ratios, counts — in `metrics.json`); (2) control metrics needing official regulatory plans (FAR, height, density) recorded as unknown with recompute triggers [metric:floor_area_ratio]; (3) operational performance metrics (innovation index, event participation) with calibration paths in `assumptions.json`. All 26 metrics state status, formula, source_files and confidence; known metrics are verifiable from GeoJSON or trusted sources [metric:key_area_total_sqm] [metric:road_total_length_m].
 
-The green ratio (24.4%) supports "breathing" innovation environments on research and acceleration grades; the public-space ratio (2.9%) focuses the anchoring effect of transfer nodes and plazas rather than blanket distribution [metric:green_ratio] [metric:public_space_ratio]; building footprints (1.398 million m²) test industry-space supply rather than serve as an approval basis [metric:building_footprint_area_sqm]. The three key areas total 3.693 million m² (consistent with the announced 368.4 ha [metric:key_area_total_sqm]); the grade-band structure is realized through the spatial allocation of research, commercial and green land [metric:land_use_research_sqm] [metric:land_use_commercial_sqm] [metric:land_use_green_sqm].
+The green ratio (24.4%) supports "breathing" innovation environments on research and acceleration grades; the public-space ratio (2.9%) focuses the anchoring effect of transfer nodes and plazas rather than blanket distribution [metric:green_ratio] [metric:public_space_ratio]; building footprints (1.398 million m²) test industry-space supply rather than serve as an approval basis [metric:building_footprint_area_sqm]. The three key areas total 3.693 million m² (approximately the announced 368.4 ha, a 0.24% provisional-precision difference [metric:key_area_total_sqm]); the grade-band structure is realized through the spatial allocation of research, commercial and green land [metric:land_use_research_sqm] [metric:land_use_commercial_sqm] [metric:land_use_green_sqm].
 
 The compliance matrix (23 items) covers Announcement 1.3/1.4/1.5 and agent.1–agent.6 item by item [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]. The standard matrix (9 items) covers urban design, regulatory-depth planning, land-use classification, road design, residential-area standards and design depth [standard:MOHURD-CONTROL-DETAILED-PLANNING] [standard:MOHURD-URBAN-DESIGN-MANAGEMENT] [standard:GB-50180-URBAN-RESIDENTIAL-AREA]. All 15 design-depth items are marked complete or data_gap with evidence summaries [standard:CJJ-37-URBAN-ROAD-DESIGN] [standard:MOHURD-ARCH-DESIGN-DEPTH-2016]. Self-check status is authoritative in `self_check.json` [source:SITE-PACKAGE].
 

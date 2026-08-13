@@ -260,7 +260,7 @@
     "PROPOSAL_REFERENCE",
     "BILINGUAL_CONTRACT"
    ],
-   "evidence_summary_zh": "开发强度采用三层管理：可复算概念体量（building_footprint_area_sqm）、unknown 管控指标（floor_area_ratio 附复算触发条件）与运营绩效指标路径，属完整回应。"
+   "evidence_summary_zh": "开发强度指标待官方控规，概念体量用于检验空间供给，法定强度如实标注 unknown。"
   },
   {
    "item_id": "height_massing_character",
@@ -580,7 +580,8 @@
    "metric_refs": [
     "phase_1_area_sqm",
     "phase_2_area_sqm",
-    "phase_3_area_sqm"
+    "phase_3_area_sqm",
+    "operations_team_concept_headcount"
    ],
    "source_ids": [
     "SITE-PACKAGE",
@@ -608,7 +609,7 @@
     "PROPOSAL_REFERENCE",
     "BILINGUAL_CONTRACT"
    ],
-   "evidence_summary_zh": "6 项可独立暂停项目包（JZ-01…06）与依赖条件、证据引用齐全。"
+   "evidence_summary_zh": "6 项可独立暂停项目包（JZ-01…06）附成本量级概念区间、运营主体与依赖条件，证据引用齐全。"
   },
   {
    "item_id": "phasing_implementation",
@@ -630,7 +631,8 @@
    "metric_refs": [
     "phase_1_area_sqm",
     "phase_2_area_sqm",
-    "phase_3_area_sqm"
+    "phase_3_area_sqm",
+    "daily_visitors_concept_mid"
    ],
    "source_ids": [
     "SITE-PACKAGE",
@@ -658,7 +660,7 @@
     "PROPOSAL_REFERENCE",
     "BILINGUAL_CONTRACT"
    ],
-   "evidence_summary_zh": "近/中/远三期覆盖全 site，C0–C7 闸门与退出条件明确。"
+   "evidence_summary_zh": "近/中/远三期覆盖全 site，C0–C7 闸门、两级应急响应预案与退出条件明确。"
   },
   {
    "item_id": "metrics_recalculation",
