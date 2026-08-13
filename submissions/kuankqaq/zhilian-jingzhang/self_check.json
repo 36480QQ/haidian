@@ -1,133 +1,223 @@
 {
+  "ok": true,
+  "submission_dir": "submissions\\kuankqaq\\zhilian-jingzhang",
+  "pr_author": "kuankqaq",
+  "stage": "formal",
+  "deterministic_validation": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "errors": [],
+      "warnings": [
+        "submissions/kuankqaq/zhilian-jingzhang/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied",
+        "submissions/kuankqaq/zhilian-jingzhang/spatial.json: items[0]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/kuankqaq/zhilian-jingzhang/spatial.json: items[1]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/kuankqaq/zhilian-jingzhang/spatial.json: items[2]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/kuankqaq/zhilian-jingzhang/spatial.json: items[3]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/kuankqaq/zhilian-jingzhang/spatial.json: items[4]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/kuankqaq/zhilian-jingzhang/spatial.json: items[5]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/kuankqaq/zhilian-jingzhang/spatial.json: items[6]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/kuankqaq/zhilian-jingzhang/spatial.json: items[7]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/kuankqaq/zhilian-jingzhang/spatial.json: items[8]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/kuankqaq/zhilian-jingzhang/spatial.json: items[9]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/kuankqaq/zhilian-jingzhang/spatial.json: items[10]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/kuankqaq/zhilian-jingzhang/spatial.json: items[11]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/kuankqaq/zhilian-jingzhang/spatial.json: items[12]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/kuankqaq/zhilian-jingzhang/spatial.json: items[13]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/kuankqaq/zhilian-jingzhang/spatial.json: items[14]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/kuankqaq/zhilian-jingzhang/spatial.json: items[15]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/kuankqaq/zhilian-jingzhang/spatial.json: items[16]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/kuankqaq/zhilian-jingzhang/spatial.json: items[17]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/kuankqaq/zhilian-jingzhang/spatial.json: items[18]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/kuankqaq/zhilian-jingzhang/spatial.json: items[19]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/kuankqaq/zhilian-jingzhang/spatial.json: items[20]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/kuankqaq/zhilian-jingzhang/spatial.json: items[21]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/kuankqaq/zhilian-jingzhang/spatial.json: items[22]: provisional spatial concept needs maintainer review before being treated as public-facing context"
+      ],
+      "proposal_files": [
+        "submissions/kuankqaq/zhilian-jingzhang/proposal.md"
+      ],
+      "changelog_files": [
+        "submissions/kuankqaq/zhilian-jingzhang/changelog.md"
+      ],
+      "changed_files": [
+        "submissions/kuankqaq/zhilian-jingzhang/agent.json",
+        "submissions/kuankqaq/zhilian-jingzhang/assets/figures/key-areas.en.png",
+        "submissions/kuankqaq/zhilian-jingzhang/assets/figures/key-areas.png",
+        "submissions/kuankqaq/zhilian-jingzhang/assets/figures/land-use-structure.en.png",
+        "submissions/kuankqaq/zhilian-jingzhang/assets/figures/land-use-structure.png",
+        "submissions/kuankqaq/zhilian-jingzhang/assets/figures/metrics-evidence.en.png",
+        "submissions/kuankqaq/zhilian-jingzhang/assets/figures/metrics-evidence.png",
+        "submissions/kuankqaq/zhilian-jingzhang/assets/figures/mobility-bluegreen.en.png",
+        "submissions/kuankqaq/zhilian-jingzhang/assets/figures/mobility-bluegreen.png",
+        "submissions/kuankqaq/zhilian-jingzhang/assets/figures/site-overview.en.png",
+        "submissions/kuankqaq/zhilian-jingzhang/assets/figures/site-overview.png",
+        "submissions/kuankqaq/zhilian-jingzhang/assumptions.json",
+        "submissions/kuankqaq/zhilian-jingzhang/changelog.md",
+        "submissions/kuankqaq/zhilian-jingzhang/compliance_matrix.json",
+        "submissions/kuankqaq/zhilian-jingzhang/design_depth_matrix.json",
+        "submissions/kuankqaq/zhilian-jingzhang/drawings/a0-boards.en.pdf",
+        "submissions/kuankqaq/zhilian-jingzhang/drawings/a0-boards.pdf",
+        "submissions/kuankqaq/zhilian-jingzhang/drawings/a3-booklet.en.pdf",
+        "submissions/kuankqaq/zhilian-jingzhang/drawings/a3-booklet.pdf",
+        "submissions/kuankqaq/zhilian-jingzhang/geometry/buildings.geojson",
+        "submissions/kuankqaq/zhilian-jingzhang/geometry/constraints.geojson",
+        "submissions/kuankqaq/zhilian-jingzhang/geometry/green_space.geojson",
+        "submissions/kuankqaq/zhilian-jingzhang/geometry/key_areas.geojson",
+        "submissions/kuankqaq/zhilian-jingzhang/geometry/land_use.geojson",
+        "submissions/kuankqaq/zhilian-jingzhang/geometry/phasing.geojson",
+        "submissions/kuankqaq/zhilian-jingzhang/geometry/public_space.geojson",
+        "submissions/kuankqaq/zhilian-jingzhang/geometry/roads.geojson",
+        "submissions/kuankqaq/zhilian-jingzhang/geometry/site_boundary.geojson",
+        "submissions/kuankqaq/zhilian-jingzhang/manifest.json",
+        "submissions/kuankqaq/zhilian-jingzhang/metrics.json",
+        "submissions/kuankqaq/zhilian-jingzhang/proposal.en.md",
+        "submissions/kuankqaq/zhilian-jingzhang/proposal.md",
+        "submissions/kuankqaq/zhilian-jingzhang/report/copyright_statement.md",
+        "submissions/kuankqaq/zhilian-jingzhang/report/narrative.md",
+        "submissions/kuankqaq/zhilian-jingzhang/report/proposal.en.html",
+        "submissions/kuankqaq/zhilian-jingzhang/report/proposal.html",
+        "submissions/kuankqaq/zhilian-jingzhang/risk.json",
+        "submissions/kuankqaq/zhilian-jingzhang/self_check.json",
+        "submissions/kuankqaq/zhilian-jingzhang/sources.json",
+        "submissions/kuankqaq/zhilian-jingzhang/spatial.json",
+        "submissions/kuankqaq/zhilian-jingzhang/standard_matrix.json",
+        "submissions/kuankqaq/zhilian-jingzhang/visual/index.en.html",
+        "submissions/kuankqaq/zhilian-jingzhang/visual/index.html"
+      ],
+      "ai_package_stages": {
+        "submissions/kuankqaq/zhilian-jingzhang": "formal"
+      },
+      "total_bytes": 5397617,
+      "maintainer_bypass": false
+    },
+    "stderr": ""
+  },
+  "spatial_review": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "stage": "formal",
+      "issues": [
+        {
+          "check_id": "KEY_AREA_PROVISIONAL",
+          "severity": "minor",
+          "target_file": "geometry/key_areas.geojson",
+          "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
+          "target_feature_id": "K-001",
+          "expected": null,
+          "actual": null
+        },
+        {
+          "check_id": "KEY_AREA_PROVISIONAL",
+          "severity": "minor",
+          "target_file": "geometry/key_areas.geojson",
+          "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
+          "target_feature_id": "K-002",
+          "expected": null,
+          "actual": null
+        },
+        {
+          "check_id": "KEY_AREA_PROVISIONAL",
+          "severity": "minor",
+          "target_file": "geometry/key_areas.geojson",
+          "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
+          "target_feature_id": "K-003",
+          "expected": null,
+          "actual": null
+        }
+      ],
+      "metrics": {
+        "site_area_sqm": 11412825.386,
+        "green_space_area_sqm": 3305261.164,
+        "public_space_area_sqm": 92195.385,
+        "building_footprint_area_sqm": 599545.326,
+        "green_ratio": 0.289609,
+        "public_space_ratio": 0.008078
+      }
+    },
+    "stderr": ""
+  },
+  "visual_review": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "issues": [],
+      "metrics_seen": {
+        "site_area_sqm": 11412825.386,
+        "green_ratio": 0.289609,
+        "public_space_ratio": 0.008078
+      }
+    },
+    "stderr": ""
+  },
+  "professional_review": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "issues": [],
+      "summary": {
+        "standard_matrix_items": 6,
+        "design_depth_items": 15,
+        "known_metric_refs_required": 16,
+        "proposal_format_version": "2",
+        "evidence_contract": "section-anchors-plus-structured-audit",
+        "proposal_reference_counts": {
+          "source": 16,
+          "standard": 6,
+          "depth": 16,
+          "data": 12,
+          "metric": 17
+        }
+      }
+    },
+    "stderr": ""
+  },
+  "spatial_issue_ids": [
+    "KEY_AREA_PROVISIONAL",
+    "KEY_AREA_PROVISIONAL",
+    "KEY_AREA_PROVISIONAL"
+  ],
+  "visual_issue_ids": [],
+  "professional_issue_ids": [],
+  "missing_review_dependencies": [],
+  "can_enter_formal_review": true,
+  "package_type": "professional_design_package",
+  "review_status": "formal-review-ready",
+  "next_actions": [],
   "schema_version": "0.1.0",
   "checks": [
     {
-      "check_id": "BOUNDARY_TRUST",
+      "check_id": "DETERMINISTIC_VALIDATION",
       "result": "pass",
-      "severity": "major",
-      "target": "geometry/site_boundary.geojson",
-      "message": "站点边界为临时边界（provisional_constraint、official_boundary=false），已在 sources、assumptions 与正文明确声明限制；仅用于方案生成、自检与可视化，不作为 official redline 或精确面积依据。",
-      "suggested_fix": "官方 SITE_BOUNDARY 发布后替换该图层，并重跑全图层复算与指标、图纸、HTML 重新生成。"
+      "severity": "blocking",
+      "target": "validate_local_submission.py",
+      "message": "deterministic_validation: PASS"
     },
     {
-      "check_id": "KEY_AREAS_TRUST",
+      "check_id": "SPATIAL_REVIEW",
       "result": "pass",
-      "severity": "major",
-      "target": "geometry/key_areas.geojson",
-      "message": "三处重点区域（众智园、北京AI原点社区、大钟寺）为临时多边形，已在 sources 与 assumptions 声明 provisional 限制；详细设计按临时边界表达功能业态、拆改留、公共空间与交通组织。",
-      "suggested_fix": "官方 KEY_AREA 多边形发布后替换图层，并复核三片区详细设计内容与指标。"
+      "severity": "blocking",
+      "target": "spatial_review.py",
+      "message": "spatial_review: PASS"
     },
     {
-      "check_id": "LAND_USE_TOPOLOGY",
+      "check_id": "VISUAL_PACKAGING",
       "result": "pass",
-      "severity": "minor",
-      "target": "geometry/land_use.geojson",
-      "message": "用地分区完整覆盖提交边界，无缝隙、无重叠，分类代码遵循用地用海分类指南；图层要素计数 469 与 metrics 一致。",
-      "suggested_fix": "官方边界替换后重新执行覆盖检查与要素计数。"
-    },
-    {
-      "check_id": "GEOMETRY_VALIDITY",
-      "result": "pass",
-      "severity": "minor",
-      "target": "geometry/",
-      "message": "提交的 GeoJSON 图层几何有效，面积与长度在 EPSG:4548 投影下复算，无自交或退化要素阻断解析。",
-      "suggested_fix": "保持几何校验脚本纳入最终化流水线，替换边界后重跑。"
-    },
-    {
-      "check_id": "METRICS_RECALC",
-      "result": "pass",
-      "severity": "minor",
-      "target": "metrics.json",
-      "message": "全部 known 指标由提交几何在 EPSG:4548 下复算，公式、来源文件与置信度齐备；unknown 指标给出原因与前置条件。",
-      "suggested_fix": "边界或图层变更后重跑 spatial_review 脚本并同步本文件。"
-    },
-    {
-      "check_id": "VISUAL_STATIC",
-      "result": "pass",
-      "severity": "minor",
-      "target": "visual/index.html",
-      "message": "HTML 电子展示为离线静态成果，不加载远程脚本、瓦片、字体、iframe 或外部 API，不跟踪访问行为；核心指标与 metrics.json 一致。",
-      "suggested_fix": "指标或图层更新后重新生成 HTML，保持离线静态约束。"
-    },
-    {
-      "check_id": "BILINGUAL_CONTRACT",
-      "result": "pass",
-      "severity": "minor",
-      "target": "proposal.en.md",
-      "message": "方案承诺中英双语完整对照，A3/A0 图纸与 HTML 提供语言副本，术语遵循推荐译法；版权与许可状态在 sources 与版权说明中登记。",
-      "suggested_fix": "最终化前逐项核对译文完整性、语言映射与版权清权清单。"
-    },
-    {
-      "check_id": "SCENARIO_CARDS",
-      "result": "pass",
-      "severity": "minor",
-      "target": "proposal.md",
-      "message": "方案提供 10 张 AI 场景卡，覆盖开源发布、安全治理、端侧算力、慢行导航、国际路演、低碳廊道、成果转化、数据要素、生活服务与全球活动路线，每张注明空间载体与运营边界。",
-      "suggested_fix": "深化时补充每张场景卡的数据来源、隐私边界与人工复核主体。"
-    },
-    {
-      "check_id": "PERSONAS",
-      "result": "pass",
-      "severity": "minor",
-      "target": "proposal.md",
-      "message": "方案提供 5 类用户画像：开源开发者、初创团队、头部企业访客、周边居民、高校师生，各画像给出典型需求、空间响应与自检边界。",
-      "suggested_fix": "深化时以调研或运营数据校准画像比例与空间供给。"
-    },
-    {
-      "check_id": "TEST_SCENARIOS",
-      "result": "pass",
-      "severity": "minor",
-      "target": "proposal.md",
-      "message": "方案提供 3 个产业测试验证场景，对应任务书要求，均标注合规授权与人工复核前置条件。",
-      "suggested_fix": "明确各测试场景的场地、数据、安全与运营主体责任。"
-    },
-    {
-      "check_id": "LANDMARKS",
-      "result": "pass",
-      "severity": "minor",
-      "target": "proposal.md",
-      "message": "方案提出 3 个 AI 朝圣地标：智轨之门（京张AI记忆之环）、原点之光（AI创始者广场）、智钟回响（大钟寺AI智核），对应三区链节文化表达。",
-      "suggested_fix": "深化时补充地标的公共艺术、导视与活动承载设计。"
-    },
-    {
-      "check_id": "CULTURE_NARRATIVE",
-      "result": "pass",
-      "severity": "minor",
-      "target": "proposal.md",
-      "message": "文化叙事完成百年京张铁路、中关村创新与 AI 新文化三部曲转译，落实为京张文化活力带主轴与一带一环空间组织，品牌符号均注明清权要求。",
-      "suggested_fix": "正式深化时对品牌、字体、图像与肖像逐项完成版权清权。"
-    },
-    {
-      "check_id": "OPERATIONS_MODEL",
-      "result": "pass",
-      "severity": "minor",
-      "target": "proposal.md",
-      "message": "运营体系为概念建议：年度智链节、开发者社区、场景开放日与 AI 创新回路，注明运营对象、频率、责任边界与风险，非确定政府安排。",
-      "suggested_fix": "深化时形成可运营主体承接的运营方案与绩效考核框架。"
+      "severity": "blocking",
+      "target": "visual_review.py",
+      "message": "visual_review: PASS"
     },
     {
       "check_id": "PROFESSIONAL_EVIDENCE",
       "result": "pass",
-      "severity": "minor",
-      "target": "proposal.md",
-      "message": "方案正文对标准、设计深度项、图层、指标、来源与假设建立可追溯引用，符合控规深度城市设计与规划综合实施方案深度表达要求。",
-      "suggested_fix": "补充缺口资料后同步更新标准矩阵与设计深度矩阵证据。"
-    },
-    {
-      "check_id": "SOURCE_USE_BOUNDARY",
-      "result": "pass",
-      "severity": "minor",
-      "target": "data/source_registry.json",
-      "message": "来源用途边界已登记：formal 可用资料与 provisional-only 资料分级明确，背景资料未被升级为法定依据，provisional 边界未用于官方红线。",
-      "suggested_fix": "新增来源时同步登记其 authority_level 与 usable_for 边界。"
-    },
-    {
-      "check_id": "RISK_DISCLOSURE",
-      "result": "pass",
-      "severity": "minor",
-      "target": "proposal.md",
-      "message": "风险章节披露临时边界、控规缺口、道路红线、文保蓝线、权属、市政与运营风险，缺资料清单进入 assumptions 与自检，方案不声称官方批准或实施保证。",
-      "suggested_fix": "资料到位后逐项核销风险项并更新 missing_data 清单。"
+      "severity": "blocking",
+      "target": "professional_review.py",
+      "message": "professional_review: PASS"
     }
   ]
 }
