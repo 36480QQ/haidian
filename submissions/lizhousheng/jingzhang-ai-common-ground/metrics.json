@@ -13,9 +13,10 @@
         "geometry/site_boundary.geojson"
       ],
       "formula": "polygon_area(submitted_site_boundary)",
-      "confidence": "high",
+      "confidence": "provisional",
       "assumptions": [
-        "Trusted official boundary is present in the site package."
+        "Value is recomputed from the submitted provisional SITE_BOUNDARY only; it is not an official redline, statutory area, approval basis, or engineering quantity.",
+        "Recompute after organizer-supplied official boundary geometry is available."
       ]
     },
     "building_footprint_area_sqm": {
@@ -26,8 +27,10 @@
         "geometry/buildings.geojson"
       ],
       "formula": "sum(polygon_area(building_footprints))",
-      "confidence": "medium",
-      "assumptions": []
+      "confidence": "provisional",
+      "assumptions": [
+        "Concept building footprints are derived against the submitted provisional boundary and require recalculation with official geometry, ownership, existing-building, and engineering records."
+      ]
     },
     "green_ratio": {
       "status": "known",
@@ -38,8 +41,10 @@
         "geometry/site_boundary.geojson"
       ],
       "formula": "green_space_area_sqm / site_area_sqm",
-      "confidence": "medium",
-      "assumptions": []
+      "confidence": "provisional",
+      "assumptions": [
+        "A concept ratio recomputed from submitted provisional GeoJSON; it is not a statutory green-space control."
+      ]
     },
     "public_space_ratio": {
       "status": "known",
@@ -50,8 +55,10 @@
         "geometry/site_boundary.geojson"
       ],
       "formula": "public_space_area_sqm / site_area_sqm",
-      "confidence": "medium",
-      "assumptions": []
+      "confidence": "provisional",
+      "assumptions": [
+        "A concept ratio recomputed from submitted provisional GeoJSON; it is not a statutory public-space control."
+      ]
     },
     "floor_area_ratio": {
       "status": "unknown",
@@ -73,8 +80,10 @@
         "geometry/key_areas.geojson"
       ],
       "formula": "count(key_detailed_design_areas)",
-      "confidence": "high",
-      "assumptions": []
+      "confidence": "provisional",
+      "assumptions": [
+        "Count identifies the three submitted provisional key-area concepts and is not an official delineation."
+      ]
     }
   }
 }
