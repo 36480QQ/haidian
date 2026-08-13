@@ -42,9 +42,9 @@ The industry strategy asks how capability becomes shared urban value instead of 
 | Seoul DMC | Digital-media cluster and urban experience | Connect production, display, training and public experience |
 | London Knowledge Quarter | Walkable knowledge network | Turn dispersed institutions into a network through shared missions and events |
 
-The resulting chain links foundational research, responsible testing, open-source translation, urban experience and professional support. Every proposed deployment receives a six-field passport: problem, data, responsible party, human review, exit condition and public return [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [depth:overall_spatial_structure].
+The resulting five-part chain links foundational research and open-source interpretation at Origin, responsible model, chip, compute and safety testing at Zhongzhiyuan, enterprise services and AI-native experiences at Dazhongsi, legal/IP/capital/international support through the Zhongguancun technology-service wing, and urban questions and feedback through the Xiaoyue River scenario wing. Beijing’s “three areas and two wings” and Haidian’s “1+X+1” industrial system are local policy context, not proof of an approved project. Every proposed deployment receives a six-field passport: problem, data, responsible party, human review, exit condition and public return [source:SRC-2026-BJ-KW-THREE-AREAS-WINGS] [source:SRC-2026-HAIDIAN-1X1] [depth:overall_spatial_structure].
 
-The identity is “Jing-Zhang CoMind Loop.” An open double ring represents urban life and the research system; their gap is the exchange gate. Railway charcoal and park green are primary colors; orange identifies interfaces that require attention and human confirmation.
+The identity is “Jing-Zhang CoMind Loop.” Its mark is an open double ring: the outer ring represents urban life, the inner ring the research system, and the orange gap their exchange gate. The mark is applied in the concept map, wayfinding and project-passport examples. Railway charcoal and park green are primary colors; orange identifies interfaces that require attention and human confirmation. This makes choice, traceability and exit part of one visible design grammar rather than a slogan [depth:overall_spatial_structure].
 
 ## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
 
@@ -61,6 +61,16 @@ All three key-area polygons are provisional and unsuitable for precise area or e
 1. **Zhongzhiyuan Responsible Test Station** combines a Qinghe green interface, a standards co-creation hall and a model responsibility court. Published status is version- and context-specific; transport, flood, energy and compute capacity require professional review.
 2. **AI Origin Open Translation Station** links campus, park and community walking interfaces with open-source release, translation, talent services and public learning. Contribution credit may be named, pseudonymous or withdrawn; renewal prioritizes light-touch shared ground floors.
 3. **Dazhongsi Urban Experience Station** combines an urban-challenge demo, data-consent lounge and AI-native experience hall around transit and four-quadrant walking needs. Bridges, tunnels and intersection changes remain questions for professional teams.
+
+The three areas share an “open interface—adaptive building—operational audit” method, but their spatial moves and acceptance questions remain distinct:
+
+| Key area | Spatial structure and public realm | Building renewal and active travel | AI scenarios and operation | Main implementation risks |
+| --- | --- | --- | --- | --- |
+| Zhongzhiyuan | A Qinghe green edge links the responsibility court, standards hall and visible failure log | Reuse ground floors and courtyards first; verify river crossing, transport and flood conditions | Responsible model testing and edge-compute booking; bounded versions, human review and public pause | River, flood, energy, fire safety and responsibility boundaries |
+| AI Origin Community | A campus—park—community seam forms a loop for releases, learning and talent services | Prioritize shared ground floors and time-based access; test continuous accessibility before works | Open contribution station and cultural archive guide; named, pseudonymous and withdrawn participation | Campus access, intellectual property, night disturbance and maintenance owner |
+| Dazhongsi | A four-quadrant transit walking network organizes the consent lounge, experience hall and urban-question demo | Improve surface crossings, shade and staying space first; bridges and tunnels remain study topics | Data consent, AI retail trials and digital-content co-creation; testing is not procurement | Transit interchange, commercial misreading, consent and crowd safety |
+
+Each area receives a project passport recording location, responsible body, version, open hours, named human lead, pause condition and next review date. When official polygons, building surveys, ownership and engineering evidence arrive, professional teams should restart from geometry and building investigation—not merely replace diagram titles [data:geometry/key_areas.geojson#PROV-KEY-002] [depth:three_key_area_detailed_design].
 
 Three pilgrimage landmarks are information infrastructures: the Responsibility Gauge, Open Contribution Ring and Urban Question Bell. Each displays version, source, failure record, responsible human and exit path [depth:three_key_area_detailed_design].
 
@@ -92,7 +102,18 @@ Railway components become an information grammar: rivet rhythms become evidence 
 
 ## Renewal Projects, Implementation Policy, and Phasing
 
-Eight concept projects cover the translation spine, three stations, three information landmarks, twelve scenario interfaces, a public project-passport platform and an annual handover. Each requires official geometry, ownership, engineering, accessibility, data, safety and operational review as relevant.
+Eight concept projects translate the spatial strategy into accountable stage gates:
+
+| ID | Concept project and location | Suggested lead / collaborators | Stage gate | Public KPI and exit condition |
+| --- | --- | --- | --- | --- |
+| C01 | CoMind translation spine · heritage-park corridor | Park operator / subdistrict, transport and accessibility representatives | Near term: audit walking, ownership and lighting | Close the gap list; pause expansion if continuity or maintenance fails |
+| C02 | Zhongzhiyuan responsibility court | Campus property/operator / testing, safety and river teams | Near-term pilot: river, transport, energy and fire review | 100% of tests show version, human lead and pause status |
+| C03 | Origin open translation station | Campus–park partnership / community and open-source maintainers | Near-term pilot: confirm shared hours and IP rules | Contributions can be named, pseudonymous or withdrawn; no opening without a maintainer |
+| C04 | Dazhongsi urban experience hall | Local and space operator / transit, commerce and data leads | Mid term: surface interchange and crowd-safety review | Testing, procurement and formal operation shown as three separate states |
+| C05 | Three public information landmarks · three stations | Public-space operator / heritage, landscape and content editors | Mid term: view, heritage, structure and content review | Meet update and accessible-readability thresholds; remove stale content |
+| C06 | Twelve scenario interfaces · corridor nodes | Scenario owners / data, safety and user representatives | Open in batches after data and human review | 12/12 retain human and non-digital paths; complaints can trigger pause |
+| C07 | CoMind project-passport platform · online and onsite | Joint operating secretariat / project leads and public observers | Start with first pilots after confirming fields and maintenance budget | Version, source, responsibility, exit and review date all complete |
+| C08 | Annual CoMind handover · whole corridor | Community operating alliance / developers, residents and international partners | Long term: event permission and annual audit | Publish failures, feedback and next owner; no renewal without a handover record |
 
 Phasing is not an investment or government commitment. Phase 1 opens low-cost public interfaces and question lists; Phase 2 mends building and mobility networks after professional review; Phase 3 considers additions needing regulatory, engineering and long-term operational support [data:geometry/phasing.geojson#PHASE-101] [metric:renewal_project_count] [depth:phasing_implementation].
 
@@ -100,7 +121,7 @@ The proposed annual cycle is spring problem intake, summer responsible testing, 
 
 ## Metrics, Area Recalculation, and Compliance Matrix
 
-Internal recalculation gives a provisional site area of 11.413 km², a concept green ratio of 6.4%, a concept public-space ratio of 0.4%, twelve scenario nodes and eight renewal projects. These values share one source with the GeoJSON and cannot replace official area or regulatory controls [metric:site_area_sqm] [metric:green_ratio] [depth:metrics_recalculation].
+Internal recalculation gives a provisional site area of 11.413 km², 6.4% concept green coverage, 0.4% coverage by three key public courts, twelve scenario nodes and eight concept renewal projects. These figures describe coverage in the submitted layers, not planning targets or statutory ratios. Public-value acceptance metrics add 12/12 scenarios with human fallback, project passports in 3/3 key areas and stage gates for 8/8 concept projects; later operators can continue auditing them [metric:site_area_sqm] [metric:green_ratio] [depth:metrics_recalculation].
 
 ![Metrics and evidence chain](assets/figures/metrics-evidence.en.png)
 

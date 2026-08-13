@@ -134,6 +134,46 @@
         "All area values are derived from repository provisional geometry and require recalculation after official polygons arrive."
       ]
     },
+    "human_fallback_scenario_ratio": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/constraints.geojson"
+      ],
+      "formula": "count(SCENARIO_NODE where human_review = required) / count(SCENARIO_NODE)",
+      "confidence": "high",
+      "assumptions": [
+        "This measures submitted scenario-card coverage, not implemented service performance."
+      ]
+    },
+    "key_area_passport_coverage_ratio": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": [
+        "proposal.md",
+        "geometry/key_areas.geojson"
+      ],
+      "formula": "count(key areas assigned a project-passport protocol) / count(KEY_AREA)",
+      "confidence": "medium",
+      "assumptions": [
+        "This is a design acceptance requirement; future operators must maintain the passports."
+      ]
+    },
+    "stage_gate_project_ratio": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count(concept renewal projects with an explicit stage gate) / count(concept renewal projects)",
+      "confidence": "medium",
+      "assumptions": [
+        "This measures completeness of the concept project list, not approval or delivery."
+      ]
+    },
     "total_floor_area_sqm": {
       "status": "unknown",
       "value": null,
