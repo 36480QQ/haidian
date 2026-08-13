@@ -265,6 +265,18 @@ The proposed operating platform combines a public or ownership base, professiona
 
 The packages translate what the fifteen projects do into who can procure them, what evidence accepts them and when work stops. WP0 comes first and cannot be bypassed by construction procurement. WP1 public base and WP2-WP5 operating products keep separate accounts. WP6 supplies evidence and decision support only; it never replaces decisions by owners, demand owners, professional signers or statutory authorities.
 
+### 90-Day Minimum Credible Pilot
+
+| Period | Action | Package | Acceptance evidence | Stop condition |
+|---|---|---|---|---|
+| D0–15 Baseline | Register boundaries, rights, demand and risks | WP0 | Signed baseline pack + variance register | Stop if any right or safety owner is unclear |
+| D16–30 Protocol | Complete charter, D0-D3 classes, acceptance and appeal | WP1/WP6 | Charter + data protocol + named owners | Stop without human takeover or appeal |
+| D31–60 Bounded tests | Run model safety, domestic compute and bounded robotics tests | WP2 | Reproducible sheets + event logs + safety sign-off | Stop on major incident, privilege breach or irreproducibility |
+| D61–75 Public test | Open day, accessibility check, resident co-governance and first-order matching | WP3/WP4 | Use records + inclusion review + demand-test chain | Adjust on complaint cluster, exclusion or false demand |
+| D76–90 Decision | Publish anonymous audit summary and continue-adjust-exit decision | WP5/WP6 | Audit summary + decision record + next-cycle responsibility | Do not expand without complete evidence or public-value gate |
+
+The pilot treats executable rules, reproducible tests, human takeover, public appeal and failure exit—not permanent construction or recruitment counts—as acceptance objects. Day 90 produces only a continue, adjust or exit recommendation for the next cycle; it is not project approval, a funding arrangement or a government implementation decision.
+
 The unit account uses a normalized sensitivity example rather than invented currency: revenue index equals utilization × unit price × operable quantity. Test a 20% utilization decline, 10% price decline and 20% equipment-hour decline. If any case crowds out public-service hours, maintenance reserve or safety staffing, expansion stops and the space mix or low-performing project is adjusted or exited. Parameter ranges are added only when ownership, operator and contract/procurement evidence exists.[assumption:A-UNIT-ECONOMICS-007]
 
 ## Metrics, Area Recalculation, and Compliance Matrix
