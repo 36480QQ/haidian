@@ -1138,7 +1138,7 @@ One unique numbered plaque per contributor; once assigned, a number is never rec
 | KIT-01 | Benchmark stone and plaque | Stone top within ±5 mm of the paving — "flush" with no tolerance cannot be failed; 400 × 400 × 600 mm, foundation underside at least 100 mm below the local standard frost depth; plaque number unique and matching a `benchmark_id` in the geometry one-for-one. Detailed in FIG.16. **In winter this constraint collides with itself** — a mark set flush into level paving sits in standing water and becomes the trip hazard once frozen; the resolution and the winter reading are FIG.22 | P4, P5, P7 |
 | KIT-02 | Reading plate | Current f and tolerance F both visible, with the re-survey date; a stale value counts as not posted. Face 600 × 450 mm raked 15°, lower edge 900 mm and upper edge 1,350 mm — the band a seated and a standing reader share; the face is replaceable without the post. Detailed in FIG.16 | P2, P3, P4 |
 | KIT-03 | Seating that permits staying | Seat 450 mm high with armrests, so getting up is possible; within 2,000 mm of the reading plate and in sight of it, so taking a reading needs no standing wait. Detailed in FIG.16 | P5, P7 |
-| KIT-04 | Accessible wayfinding | Guidance strip 300 mm wide and continuous, stopping 300 mm short of the stone so it does not lead onto it; tactile and visual channels both; Ø1,500 mm turning space with 2,100 mm headroom at the reading position; the approach may not be by steps alone. Detailed in FIG.16 | P5, P6, P7 |
+| KIT-04 | Accessible wayfinding | Guidance strip 300 mm wide and continuous, stopping 300 mm short of the stone so it does not lead onto it; tactile and visual channels both; Ø1,500 mm turning space with 2,100 mm headroom at the reading position; the approach may not be by steps alone. Detailed in FIG.16; inside the stretches FIG.21 marks as failing it also carries the find-the-benchmark information, FIG.23 | P5, P6, P7 |
 | KIT-05 | Appeal point | **Must offer both a QR code and a phone or in-person route** — a QR code alone excludes anyone without a smartphone from appealing, which makes persona P4 unworkable | P4, P5, P6 |
 
 Organised by re-survey cycle rather than by festival calendar, so that an event is a governance action and not a publicity one.
@@ -1530,11 +1530,11 @@ An authorisation statement a reviewer cannot verify is not a statement. Each row
 
 <!-- LEDGERCOUNT:BEGIN -->
 
-**The file-level ledger sits outside the review input, so its result is brought in here.** `build_review_input` sends `proposal.md` and eight JSON files; neither `report/copyright_statement.md` nor `visual/assets/rights_ledger.json` is among them. **A rights ledger the reviewer structurally cannot open is, from the reviewer's position, exactly the unverifiable assertion this package objects to elsewhere.** All **110 shipped files** carry a clearance class; a file without one fails the build:
+**The file-level ledger sits outside the review input, so its result is brought in here.** `build_review_input` sends `proposal.md` and eight JSON files; neither `report/copyright_statement.md` nor `visual/assets/rights_ledger.json` is among them. **A rights ledger the reviewer structurally cannot open is, from the reviewer's position, exactly the unverifiable assertion this package objects to elsewhere.** All **112 shipped files** carry a clearance class; a file without one fails the build:
 
 | Clearance class | Files |
 |---|---|
-| `author-originated` | 88 |
+| `author-originated` | 90 |
 | `provisional-only-with-stated-limit` | 9 |
 | `author-originated-measurement` | 8 |
 | `author-originated-with-embedded-fonts` | 4 |
@@ -1589,7 +1589,7 @@ One point of citation discipline deserves stating plainly: **the cases are used 
 
 <!-- FIGINDEX:BEGIN -->
 
-There are 23 sheets, numbered FIG.00 to FIG.22. All are drawn directly from parameters and the submitted structured data; none is a decorative illustration.
+There are 24 sheets, numbered FIG.00 to FIG.23. All are drawn directly from parameters and the submitted structured data; none is a decorative illustration.
 
 | Sheet | Content | What to read on it |
 |---|---|---|
@@ -1616,6 +1616,7 @@ There are 23 sheets, numbered FIG.00 to FIG.22. All are drawn directly from para
 | FIG.20 | Reading after dark, without lighting the benchmark | Three third-order points are read monthly by residents, and many of those days fall after dark. A lamp is the obvious answer and the wrong one: **a dead lamp leaves a plate that looks maintained and cannot be read** — a measurement whose failure is invisible. The face is retroreflective and the reader brings the light; a dirty face looks dirty, in daylight |
 | FIG.21 | How far the nearest benchmark actually is: this proposal's own rule, applied to itself | This proposal argues repeatedly that review you must walk fifteen minutes to reach has not been given — and **nobody had measured the walk**. Measured: the worst place on the line is 1,107 m from the nearest benchmark, **30.8 minutes for P5, twice the limit this proposal holds others to**, and six of nine segments fail. The rule ships as a spacing requirement; the positions wait for the official alignment |
 | FIG.22 | Winter: water, ice, and two of this package's rules in collision | The three community points are read monthly, which means read in January. KIT-01 requires the stone flush with no trip hazard and FIG.16 gave that ±5 mm — **and a mark set flush into level paving sits in whatever the paving collects: the tolerance that makes it safe in September is what makes it dangerous in January**. The answer is a local high point, not a ring |
+| FIG.23 | Finding the nearest benchmark: which way, and how far | Markers appear only inside the stretches FIG.21 marks as failing — 48 of them at 150 m spacing, on the existing KIT-04, nothing new built. The face answers four things: direction, distance, P5's time, and the id. **And it states what signage cannot do — it does not make 1,111 m near; this is mitigation, not the fix** |
 
 <!-- FIGINDEX:END -->
 

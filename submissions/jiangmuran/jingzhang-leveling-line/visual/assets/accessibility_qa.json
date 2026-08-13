@@ -203,6 +203,12 @@
    "pass": true
   },
   {
+   "sheet": "svg/wayfind",
+   "min_font_units": 9.0,
+   "min_height_mm_at_A0": 4.73,
+   "pass": true
+  },
+  {
    "sheet": "svg/winter",
    "min_font_units": 9.0,
    "min_height_mm_at_A0": 4.73,
@@ -341,6 +347,12 @@
    "pass": true
   },
   {
+   "sheet": "svg.en/wayfind",
+   "min_font_units": 9.0,
+   "min_height_mm_at_A0": 4.73,
+   "pass": true
+  },
+  {
    "sheet": "svg.en/winter",
    "min_font_units": 9.0,
    "min_height_mm_at_A0": 4.73,
@@ -349,21 +361,21 @@
  ],
  "offline_html": {
   "visual/index.html": {
-   "images": 23,
+   "images": 24,
    "images_without_alt": 0,
    "has_lang": true,
    "heading_level_jumps": 0,
-   "figcaptions": 24,
+   "figcaptions": 25,
    "interactive_elements_needing_focus": 0,
    "has_dark_mode": true,
    "inline_script_tags": 0
   },
   "visual/index.en.html": {
-   "images": 23,
+   "images": 24,
    "images_without_alt": 0,
    "has_lang": true,
    "heading_level_jumps": 0,
-   "figcaptions": 24,
+   "figcaptions": 25,
    "interactive_elements_needing_focus": 0,
    "has_dark_mode": true,
    "inline_script_tags": 0
@@ -372,13 +384,13 @@
  "asset_references": [
   {
    "file": "visual/index.html",
-   "references": 23,
+   "references": 24,
    "missing": [],
    "remote": []
   },
   {
    "file": "visual/index.en.html",
-   "references": 23,
+   "references": 24,
    "missing": [],
    "remote": []
   },
