@@ -11,10 +11,10 @@
 | `assets/media/safety-acceptance-garden-v3.webp` | Codex 城市设计智能体 / OpenAI 内置图像生成工具 | 2026-08-12 文本生成；无输入参考图；提示词要求北京气候公共花园、轮椅使用者、受控机器人测试、人类安全员与物理暂停设施，无文字/品牌 | 生成式合成场景；不对应众智园真实地块、人物或设备 | 只说明“普通花园 + 受控测试”的设计意图；不证明安全、无障碍或实施条件 |
 | `assets/media/rights-contribution-arcade-v3.webp` | Codex 城市设计智能体 / OpenAI 内置图像生成工具 | 2026-08-12 文本生成；无输入参考图；提示词要求适应性再利用廊道、有人值守的权利台、共验长桌、连续普通通行，无文字/品牌 | 生成式合成场景；不对应原点社区真实建筑、人物或机构 | 只说明来源、质询、撤回与公众穿行并置的设计意图 |
 | `assets/media/cover-v3.webp` | Codex 城市设计智能体 | 2026-08-12 由上述三张合成场景本地裁切、拼接并叠加原创色块；无新增第三方素材 | 上述三张图的派生封面 | 仅作封面，不作为空间或现场证据 |
-| `assets/figures/*.png` | Codex 城市设计智能体 | Pillow/原创矢量几何离线绘制；公共验收街双语图嵌入上述合成场景并加醒目标注 | 无商业地图、地图瓦片、商标或可识别真实人物素材 | 图像是解释层，结构化数据与专业图纸优先 |
+| `assets/figures/*.png` | Codex 城市设计智能体 | Pillow/原创矢量几何离线绘制；v3.2 的五张主评图、三张重点区详图、遗产叙事图、建筑—公共空间界面图与八项目交付矩阵均由同一结构化证据链生成；重点区详图嵌入上述合成场景并加醒目标注 | 无商业地图、地图瓦片、商标或可识别真实人物素材 | 图像是条件式设计与解释层，结构化数据与专业核验优先 |
 | `visual/index.html`、`report/proposal.html` | Codex 城市设计智能体 | 原创 HTML/CSS/本地交互与仓库本地渲染器 | 无 CDN、远程脚本、外部字体、API、iframe 或表单；交互不发送或保存数据 | 离线阅读，不覆盖 GeoJSON/metrics |
-| `visual/assets/acceptance-*.json`、`acceptance-runner.js` | Codex 城市设计智能体 | 12张原创场景护照、24条合成测试路径与只读零联网 Node 校验器 | 不导入第三方数据或代码；只读本地 JSON、不写文件、不联网 | 只验证规则逻辑；`field_performance=null`、`deployment_decision=not_authorized_not_run` |
-| `drawings/a3-booklet.pdf`、`drawings/a0-boards.pdf` | Codex 城市设计智能体 | ReportLab 离线排版；图表来自上述原创资产 | PDF 使用系统/CID 字体进行排版，不分发字体文件 | 输出为展示成果，不是审批图纸 |
+| `visual/assets/acceptance-*.json`、`visual/assets/renewal-projects.json`、`acceptance-runner.js` | Codex 城市设计智能体 | 12张原创场景护照、24条合成测试路径、8份项目交付合约与只读零联网 Node 校验器 | 不导入第三方数据或代码；只读本地 JSON、不写文件、不联网 | 只验证规则逻辑；`field_performance=null`、`deployment_decision=not_authorized_not_run` |
+| `drawings/a3-booklet*.pdf`、`drawings/a0-boards*.pdf` | Codex 城市设计智能体 | 原创图面离线编排并展平为整页图像；中英版本由同一版式与数据生成 | PDF 不依赖或分发外部字体文件 | 输出为展示成果，不是审批图纸 |
 | 国际案例文字 | 各案例官方机构；本方案仅作摘要与转译 | 依据官方公开页面形成短摘要 | URL、访问日期和 background-only 状态见 `sources.json` | 不支撑本地红线、绩效或实施承诺 |
 
 曾尝试通过公开 OpenStreetMap 接口取得现状背景数据，但接口连续超时，最终成果未纳入任何 OSM 几何、截图或地图瓦片，也不据此推断道路、站口、建筑、水系或官方边界。三处重点区图因此明确标为“空间原型，待 official polygons、公开现状与现场踏勘校准”。

@@ -77,8 +77,12 @@
         "submissions/shgdym/jingzhang-proof-commons/assets/figures/station-experiences.png",
         "submissions/shgdym/jingzhang-proof-commons/assets/figures/station-handover.en.png",
         "submissions/shgdym/jingzhang-proof-commons/assets/figures/station-handover.png",
+        "submissions/shgdym/jingzhang-proof-commons/assets/figures/station-topology-proof.en.png",
+        "submissions/shgdym/jingzhang-proof-commons/assets/figures/station-topology-proof.png",
         "submissions/shgdym/jingzhang-proof-commons/assets/figures/x-lifecycle.en.png",
         "submissions/shgdym/jingzhang-proof-commons/assets/figures/x-lifecycle.png",
+        "submissions/shgdym/jingzhang-proof-commons/assets/figures/x-operating-proof.en.png",
+        "submissions/shgdym/jingzhang-proof-commons/assets/figures/x-operating-proof.png",
         "submissions/shgdym/jingzhang-proof-commons/assumptions.json",
         "submissions/shgdym/jingzhang-proof-commons/changelog.md",
         "submissions/shgdym/jingzhang-proof-commons/compliance_matrix.json",
@@ -111,10 +115,23 @@
         "submissions/shgdym/jingzhang-proof-commons/standard_matrix.json",
         "submissions/shgdym/jingzhang-proof-commons/visual/assets/example-sc03-x-receipt.json",
         "submissions/shgdym/jingzhang-proof-commons/visual/assets/lived-lifecycle.json",
+        "submissions/shgdym/jingzhang-proof-commons/visual/assets/railway-operating-translation.json",
         "submissions/shgdym/jingzhang-proof-commons/visual/assets/review-evidence.json",
         "submissions/shgdym/jingzhang-proof-commons/visual/assets/run-sc03-tabletop.js",
+        "submissions/shgdym/jingzhang-proof-commons/visual/assets/run-x-census.js",
         "submissions/shgdym/jingzhang-proof-commons/visual/assets/sc03-tabletop-evidence.json",
+        "submissions/shgdym/jingzhang-proof-commons/visual/assets/station-topology-results.json",
+        "submissions/shgdym/jingzhang-proof-commons/visual/assets/station-topology.json",
+        "submissions/shgdym/jingzhang-proof-commons/visual/assets/verify-station-topology.js",
+        "submissions/shgdym/jingzhang-proof-commons/visual/assets/verify-x-lifecycle.js",
+        "submissions/shgdym/jingzhang-proof-commons/visual/assets/x-census-details-001.json",
+        "submissions/shgdym/jingzhang-proof-commons/visual/assets/x-census-details-002.json",
+        "submissions/shgdym/jingzhang-proof-commons/visual/assets/x-census-details-index.json",
+        "submissions/shgdym/jingzhang-proof-commons/visual/assets/x-census-reading-log.json",
+        "submissions/shgdym/jingzhang-proof-commons/visual/assets/x-census.json",
         "submissions/shgdym/jingzhang-proof-commons/visual/assets/x-cultural-route.json",
+        "submissions/shgdym/jingzhang-proof-commons/visual/assets/x-lifecycle-test-results.json",
+        "submissions/shgdym/jingzhang-proof-commons/visual/assets/x-lifecycle-valid-example.json",
         "submissions/shgdym/jingzhang-proof-commons/visual/assets/x-operations-cycle.json",
         "submissions/shgdym/jingzhang-proof-commons/visual/assets/x-receipt.schema.json",
         "submissions/shgdym/jingzhang-proof-commons/visual/index.en.html",
@@ -123,7 +140,7 @@
       "ai_package_stages": {
         "submissions/shgdym/jingzhang-proof-commons": "formal"
       },
-      "total_bytes": 39152407,
+      "total_bytes": 39245235,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -197,15 +214,15 @@
       "summary": {
         "standard_matrix_items": 6,
         "design_depth_items": 15,
-        "known_metric_refs_required": 34,
+        "known_metric_refs_required": 48,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 15,
-          "standard": 6,
-          "depth": 3,
-          "data": 16,
-          "metric": 29
+          "source": 21,
+          "standard": 5,
+          "depth": 4,
+          "data": 24,
+          "metric": 31
         }
       }
     },

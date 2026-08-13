@@ -4,10 +4,10 @@
  "note_en": "A register of this package's own errors. Not a changelog: a changelog says what changed, this says what was wrong, what shape the error had, who found it, and which commit fixed it. Every entry names a commit, and the build verifies that commit exists and touched the file blamed. An errata register that cannot be joined to the repository is the defect it records.",
  "why_zh": "全场 351 份方案中没有一份勘误、撤回或作者自述的复盘。一个主张城市应当公开自身误差的方案，不能自己呈现一个无瑕的表面：它提出的整套机制都建立在「看不见失败的测量不值得信任」之上，文档同理。",
  "counts": {
-  "total": 57,
+  "total": 59,
   "by_found_by": {
    "audit": 25,
-   "own-gate": 3,
+   "own-gate": 5,
    "external-reviewer": 4,
    "self": 25
   },
@@ -19,7 +19,7 @@
    "geometry-does-not-mean-what-it-says": 4,
    "term-of-art-misapplied": 1,
    "claim-outlived-the-package": 3,
-   "deliverable-not-inspected-before-shipping": 9,
+   "deliverable-not-inspected-before-shipping": 11,
    "gate-reported-and-was-ignored": 1,
    "measurement-answering-a-question-it-cannot-answer": 2,
    "six-classes-for-a-seven-class-partition": 1,
@@ -478,6 +478,26 @@
    "what_zh": "图纸索引上方写「共十二张图纸，FIG.00–FIG.11 连续编号」，下方的表只有九行（FIG.01–FIG.09）。缺 FIG.00（全文开篇那张）、FIG.10（人视街道剖面）与 FIG.11（区域协同接口）——**而正文在 L531 按编号引用了 FIG.11**，把读者指向一个不含它的索引。同一处的复核清单则编号成 1…10、8、9，十二项用了十个号。",
    "why_zh": "两个语种带着同样的九行，所以这不是翻译疏漏，是**完整性声明写在表格上方那句话里、而不是由表格本身承担**。清单的编号是看得见的那个缺陷，危险的是另一个：清单上每一项都指名一个路径，一份把评审指向不存在文件的清单，比没有清单更糟。",
    "fix_zh": "两者都改为生成：索引由 `build_figure_index.py` 从随包 PNG 生成，句中的份数写自 `len(FIGURES)`，并断言每张随包图有编号、每个编号有文件、正文引用的每个 FIG.NN 都能解析到行；清单由 `enumerate` 编号，且十二项声明的 17 条路径必须全部在包内解析。"
+  },
+  {
+   "id": "E59",
+   "commit": "7f49c634",
+   "file": "proposal.md",
+   "found_by": "own-gate",
+   "shape": "deliverable-not-inspected-before-shipping",
+   "what_zh": "E58 只查了图纸。把同一个问题问到全部随包文件上：106 个文件里 21 个在两版正文中从未被指名。剔除语言副本与「由引用它的文件带到」的那些，剩下 **7 件成品**：两份 PDF（A3 文册、A0 展板）、两份正文渲染（report/proposal.html、visual/index.html）、只含叙述的 report/narrative.md，以及论证真正依赖的两份数据——personas.json（它才是让正文与场景卡里每个 P 编号可被逐个断言的东西）与 score_correlates.json。",
+   "why_zh": "**每一件都是专门做的、过了自己的闸门、随包发布，而评审读的那份文档里够不到它们。** 上一条把这归为「做完、随包、从论证里够不到」；这一条说明那不是图纸独有的毛病，而是这个包在很长时间里都没有问过的一个问题：**成品做完之后，有没有人被告知它存在。** personas.json 尤其难堪——它存在的理由就是让引用可核，而正文从没提过它。",
+   "fix_zh": "`figure_citation_qa` 扩展为同时检查一份成品清单：清单内任一件若在两版正文中都未被指名，构建失败。清单**刻意不是「全部随包文件」**——schema、摘要与 `.en` 副本由引用它们的文件带到，不必单独指名；清单里的是「成品」。并在图纸目录之前加一段指名它们，同时写明为什么要加这一段：一份只列文件名的清单读起来像归档癖，而这段要说的是——**一件没有被正文指名的成品，等于没有人被告知它存在**。"
+  },
+  {
+   "id": "E58",
+   "commit": "0faab6b1",
+   "file": "proposal.md",
+   "found_by": "own-gate",
+   "shape": "deliverable-not-inspected-before-shipping",
+   "what_zh": "图纸从十二张长到二十一张，每一张都登记进图纸目录、随包、翻译。而按目录之外的引用去数：**二十一张里有十四张，正文从未指向过它们**——其中九张连一张插图都没有嵌入正文，只以文件和目录行存在。交通章把「路口四象限步行连通」称作本片区最具体的空间任务，而画那个路口的 FIG.12 就在同一个包里，两者之间没有一句话。",
+   "why_zh": "**目录说明一张图存在，不给读者任何打开它的理由。** 本轮八张新图纸每一张都是为回应某一条具体评图意见而画的，而作出那些论证的段落里没有一个引用指向它们——做完、随包、然后从论证里够不到。这是本册记过九次的那型缺陷换了个位置：不是没检查成品，是没检查成品与论证之间那根线。顺带查出：`kit_note_zh` 自建起就存在，而渲染时只有英文分支输出了它，中文版从未印出那句话。",
+   "fix_zh": "新增闸门 `figure_citation_qa`：任一张图纸若在两版正文中都只出现在图纸目录里，构建失败——统计前先剥掉 FIGINDEX 块，因为目录行正是本闸门要与引用区分开的东西。随后把十四处引用放到各自论证所在的位置：FIG.12 放在四象限那一段、FIG.14 放在「从主脊到水岸的连续步行」之后、FIG.17 放在跨管辖那一段、FIG.15 放在分期触发条件之后、FIG.13 放进重点区表的脚注、FIG.16/18/19/20 放进组件库说明。既有插图的 alt 文本一律补上图号。中文分支补印 kit_note_zh。"
   },
   {
    "id": "E57",

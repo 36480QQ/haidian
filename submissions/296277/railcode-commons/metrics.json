@@ -188,6 +188,59 @@
       "assumptions": [
         "Self-imposed target; subject to pilot measurement."
       ]
+    },
+    "implementation_readiness_record_count": {
+      "status": "known",
+      "value": 6,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/delivery_contracts.json",
+        "visual/assets/implementation_readiness.json"
+      ],
+      "formula": "count(RC-01..RC-06 with preflight, pause, resume, and dual-signoff fields)",
+      "confidence": "high",
+      "assumptions": [
+        "Counts package records only; no authorization, institution, field run, or achieved performance is claimed."
+      ]
+    },
+    "cultural_evidence_record_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/cultural_evidence_matrix.json"
+      ],
+      "formula": "count(CUL-01..CUL-05)",
+      "confidence": "high",
+      "assumptions": [
+        "Counts evidence-plan records, including pending and creative states; not verified heritage inventory."
+      ]
+    },
+    "regional_contract_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/regional_collaboration_contracts.json"
+      ],
+      "formula": "count(REG-01..REG-05)",
+      "confidence": "high",
+      "assumptions": [
+        "Portable unconfirmed templates; no institutional participation claimed."
+      ]
+    },
+    "developer_funnel_stage_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/developer_conversion_funnel.json"
+      ],
+      "formula": "count(join, co-create, test, publish, reuse)",
+      "confidence": "high",
+      "assumptions": [
+        "Operating-design stages only; no recruited developer or conversion performance claimed."
+      ]
     }
   }
 }

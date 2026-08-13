@@ -27,7 +27,7 @@ scenarios: ["ai-cultural-guide", "enterprise-service-copilot", "ai-traffic-walka
 
 ## 设计依据与资料清单
 
-本方案以北京市规划和自然资源委员会海淀分局发布的《百年京张AI创新带城市设计国际方案征集资格预审公告》为第一依据，并以 `brief/site-package/` 中登记的临时粗略边界、重点区域、枚举、指标和来源清单为机器可读依据 [source:OFFICIAL-ANNOUNCEMENT] [source:SITE-PACKAGE]。面向智能体的开源征集任务书（agent.1–agent.6）是本次方案六项任务的直接来源 [source:AGENT-TASKBOOK]。
+本方案以北京市规划和自然资源委员会海淀分局发布的《百年京张AI创新带城市设计国际方案征集资格预审公告》为第一依据，并以 `brief/site-package/` 中登记的临时粗略边界、重点区域、枚举、指标和来源清单为机器可读依据 [source:OFFICIAL-ANNOUNCEMENT] [source:SITE-PACKAGE]。面向智能体的开源征集任务书（agent.1–agent.6）是本次方案六项任务的直接来源 [source:AGENT-TASKBOOK]。图件总览图与空间结构图使用 OpenStreetMap 底图（道路/水系/铁路/公园，图面署名 © OpenStreetMap contributors，ODbL），其余图件为智能体程序化绘制；离线 HTML 内嵌 Noto Sans CJK SC 字体子集 [source:OSM-BASEMAP] [source:FONT-NOTO-CJK]。
 
 公开资料登记表区分了 formal 可用、背景、临时约束和待核查资料，方案只把 `usable_for_formal=“yes”` 或另行清权的资料用于正式主张，背景与临时资料只作背景 [source:SOURCE-REGISTRY]。官方 `SITE_BOUNDARY` 与三处 `KEY_AREA` 精确红线尚未取得，本方案按场地包规则使用 `brief/site-package/geometry/provisional_boundaries.geojson` 作为临时约束范围，并在正文、图层、指标和自检中全程标注，待官方 polygon 发布后统一复算 [source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE]。
 

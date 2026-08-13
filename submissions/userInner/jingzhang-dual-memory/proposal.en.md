@@ -4,7 +4,7 @@ author_github: "userInner"
 language: "en"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
-iteration: "v7.0"
+iteration: "v8.0"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "A human-directed AI urban corridor where public memory accumulates, personal data can expire, and the benefits of innovation are shared."
@@ -14,26 +14,26 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 # DOUBLE MEMORY JINGZHANG
 
-> **v7.0 thesis:** Lock evidence before siting a proof block. This edition separates public verified facts, reproducible derivatives, pending fieldwork, and prohibited inference. One two-parcel transaction is verified at Dazhongsi, one public-works contract at Qinghe, and a formal planning procedure along the corridor; official key-area polygons and qualifying field observations remain unavailable, so every proof block stays at `HOLD`.
+> **v8.0 thesis:** Evidence must become a spatial constraint that can fail. This edition develops the 60 × 14 m minimum block into a pre-survey technical package: five coordinated drawings, ten desktop checks and two field-release tests are registered separately. Desktop logic passes 10/10; field performance remains 0/2 not run, so the block stays at `HOLD` and no drawing is presented as measured or built evidence.
 
-| Review dimension | Material v7.0 advance | Verification entry |
+| Review dimension | Material v8.0 advance | Verification entry |
 | --- | --- | --- |
 | Alignment and originality | The Proof Mile connects the public-memory spine, daily routes, passports, and implementation gates into one legible method | `proof-mile-spatial-atlas.json` |
 | AI-planning innovation | AI becomes a civic service constrained by D0–D4 data classes, deletion receipts, physical stops, and independent review | `forgetfulness-budget.json`; offline audit |
-| Feasibility | A Qinghe public-works contract and a Dazhongsi two-parcel transaction enter the evidence ledger and constrain accountability, cost and fallback claims | `site-evidence-ledger.json`; `three-proof-blocks.json` |
-| Public interest | Three field routes now define observation points, time windows and privacy admission; qualifying observations remain zero | `field-survey-register.json` |
-| Risk and expression | Departmental joint review is not approval; a project client is not a land-right holder; two parcels cannot represent the whole key area | Board 10; site-evidence audit |
+| Feasibility | P01 plan, S01 section, D01 detail, O01 operations and T01 test form an auditable package; dimensions, cost and reinstatement are recomputed offline | `proof-block-technical-spec.json`; technical audit |
+| Public interest | A 4.0 m no-AI route remains open with at least 1.8 m accessible clear width; ordinary service needs no account and never crosses the test court | P01, S01 and T01 |
+| Risk and expression | Desktop checks 10/10 and field tests 0/2 are displayed separately; any failed field rejection line keeps the block at `HOLD` | Board 01; metrics-evidence figure |
 | International communication and long-term operation | The 24-Hour Civic Innovation Line sustains operation while three proof blocks govern incremental delivery and release | `24h-public-innovation-line.json`; Board 09 |
 
 ![Dual-Memory corridor vision: public-memory spine, blue-green systems, railway heritage and continuous civic life (AI-generated concept experience, not existing-condition or approval evidence)](assets/media/cover-v6-vision.webp)
+
+![60 × 14 m fail-able technical package: dimensioned plan, construction section, verification ticket and release gates](assets/boards/board-01.en.jpg)
 
 ![Three Dual-Memory proof blocks: contracting the corridor vision into reversible, verifiable and reinstatable delivery units](assets/boards/board-09.en.jpg)
 
 ![Evidence before siting: official records, reproducible metrics, pending routes, and prohibited inference](assets/boards/board-10.en.jpg)
 
 ![24-hour operations-space board: each of five windows records ordinary service, optional AI, accountable owner, release condition and evidence state](assets/boards/board-08.en.jpg)
-
-![Proof Mile spatial atlas: belt—daily route—consent section—implementation contract](assets/boards/board-01.en.jpg)
 
 ## Design Basis and Source List
 
@@ -53,7 +53,7 @@ Sources are separated by role. Official notices and policies support task, direc
 
 The three images provide visual evidence for engineering history, daily railway life, and adaptive reuse. Authors, licences, original pages, and modification notes are registered in the source and copyright files. [source:IMAGE-JINGZHANG-1909] [source:IMAGE-QHY-2016] [source:IMAGE-QHY-2024]
 
-### v7 official records and ownership boundary
+### Official records and ownership boundary
 
 Draft control plans for HD00-1601, 1602, 1603, 1604 and 1605 were displayed from 19 December 2024 to 19 January 2025. Haidian's first-quarter 2026 progress record says only that the corridor control plan passed municipal departmental joint review and continued towards approval and implementation. This verifies an advancing procedure—not final approval, official polygons, land-use controls or development parameters. [source:JZ-CONTROL-PLAN-NOTICE] [source:JZ-CONTROL-PLAN-PROGRESS]
 
@@ -113,7 +113,13 @@ One legible field language unifies the gradients: white dots mean free passage, 
 
 ![Three-zone consent section-perspective: no-AI passage, anonymous assistance and controlled testing retain staffed control and a continuous bypass](assets/renders/05-consent-section-perspective-v2.png)
 
-v2.0 turns the abstract gradient into a 60 m × 14 m prototype envelope that can be recalibrated on site: a 4.0 m continuous no-AI walk, 2.5 m anonymous-assist strip, 5.0 m controlled test court, and 2.5 m planted safety buffer. These are functional tests rather than parcel controls; accessible clear width must never fall below 1.8 m. Sensors remain visible, the edge cabinet can be disconnected, the court has a physical emergency stop and staffed controller, and the public bypass never crosses the test area. Full construction, responsibility, data, and stop conditions are in `visual/assets/memory-boundary-passports.json`. [depth:traffic_rail_slow_parking]
+v8.0 turns the abstract gradient into a 60 m × 14 m prototype envelope that can be recalibrated on site: a 4.0 m continuous no-AI walk, 2.5 m anonymous-assist strip, 5.0 m controlled test court, and 2.5 m planted safety buffer. These are functional tests rather than parcel controls; accessible clear width must never fall below 1.8 m. Sensors remain visible, the edge cabinet can be disconnected, the court has a physical emergency stop and staffed controller, and the public bypass never crosses the test area. Full construction, responsibility, data, and stop conditions are in `visual/assets/memory-boundary-passports.json`. [depth:traffic_rail_slow_parking]
+
+### v8 fail-able technical package
+
+The minimum block is not a rendering but five drawings that must reconcile. P01 fixes the 14.0 m total and four-zone allocation. S01 keeps the ordinary route continuously open. D01 fixes a threshold no higher than 6 mm, crossfall no greater than 2%, head clearance of at least 2.2 m, a wheelchair turning circle of at least 1.5 m, and tactile warning at least 0.6 m deep. O01 fixes a human-takeover target within 10 seconds, local isolation within 120 seconds, and removal of the digital kit within 48 hours. T01 records every release and rejection condition.
+
+The technical audit recomputes a 14.0 m total, a 4.0 m ordinary route, emergency-stop design reach no greater than 15 m, and reconciliation between CNY 3.5–6.5 million for three blocks and CNY 7.5–13.5 million for the full programme. Ten of ten desktop checks pass. Qualifying field observation and physical stop/takeover timing remain unperformed at 0/2; until both pass, `release_decision` stays `HOLD`. The auditable specification and calculator are `visual/assets/proof-block-technical-spec.json` and `visual/assets/run-proof-block-technical-audit.js`. [metric:technical_desktop_check_count] [metric:field_performance_test_pass_count]
 
 ### Memory Boundary Passports and the forgetfulness budget
 
@@ -149,7 +155,7 @@ All three areas follow retain, light retrofit, reversible trial, review, then ex
 
 ### Three Dual-Memory proof blocks: from vision to delivery unit
 
-v7.0 does not enlarge the three areas into unverified megaprojects. It first delivers one minimum block in each place. Zhongzhiyuan’s Stop Garden uses the 60 m × 14 m Consent Section as its envelope, retaining a 4 m no-AI route beside a bounded low-speed test court. AI Origin’s Provenance Clinic uses a reversible ground floor and forecourt for paper registration, staffed appeal and revocable provenance records. Dazhongsi’s Account-Free Commons combines step-free arrival, staffed multilingual service and optional on-device assistance at the station-neighbourhood interface.
+v8.0 does not enlarge the three areas into unverified megaprojects. It first delivers one minimum block in each place. Zhongzhiyuan’s Stop Garden uses the 60 m × 14 m Consent Section as its envelope, retaining a 4 m no-AI route beside a bounded low-speed test court. AI Origin’s Provenance Clinic uses a reversible ground floor and forecourt for paper registration, staffed appeal and revocable provenance records. Dazhongsi’s Account-Free Commons combines step-free arrival, staffed multilingual service and optional on-device assistance at the station-neighbourhood interface.
 
 The three blocks carry a concept band of CNY 3.5–6.5 million; shared baseline work, permits, operation, independent review and reinstatement readiness carry CNY 4.0–7.0 million, reconciling with the implementation contract’s CNY 7.5–13.5 million total. Release proceeds through G0 lock facts, G1 ordinary base first, G2 reversible prototype, G3 no more than 20 staffed windows, and G4 retain/revise/retire. Targets are 100% ordinary-route completion, 100% human handoff, at least 80% boundary comprehension and zero unresolved major issues. These are concept costs and pilot targets—not quotations, approved budgets or measured results. Any missing responsibility, permit or baseline keeps the block at `HOLD`. See `visual/assets/three-proof-blocks.json`. [depth:renewal_project_list]
 

@@ -1,5 +1,19 @@
 # 方案迭代记录
 
+## v2.4 - 2026-08-13
+
+- 以政府面向的公共命题重构首读：以百年京张为公共创新主轴，通过“区域定链—走廊织网—重点区落项目”形成开放问题、自主验证、首用转化和知识回流的城市创新链。
+- 固化“一脊三廊三结六界面”空间语法，并形成众智园“可旁观的验证院”、AI原点“开源修补街”、大钟寺“首用四象限站厅”三项场地化原型。
+- 将首屏由治理结构展示切换为空间骨架和单点实施命题：一处候选场地、一个S06限定试点、100个相对工作日、当前G0前置核验。
+- 将 `s06_minimum_delivery_package.json` 升级为统一交付包：100至150米设计控制路线、3至5个决策点、一个1:1无障碍服务湾、六个决策窗口、单一A责任签收、六个BoQ包、E0至E6证据链，以及第91至100日强制撤权、删数、拆机、复原和再决策。
+- 明确总价形成门：工程量确认、三份带日期可比价格覆盖至少80%预估成本、人员/法务/保险/退出全部计价并经PF签收前，不发布预算研究总价。
+- 重建中英文A3/A0首版、空间比选图、空间交付证据图和离线网页首屏；合规控制继续作为实施后台，不再替代正向空间愿景。
+
+- Reframed the public proposition around a Centennial Jingzhang civic innovation spine, regional chain-setting, corridor weaving, and place-based project delivery.
+- Established one spine, three corridors, three knots, six reversible interfaces, and three place-specific prototypes.
+- Upgraded the S06 package to one candidate site and a 100-day bounded pilot with a 1:1 accessible service bay, one-A RACI, six BoQ packages, E0-E6 evidence, and mandatory Day 91-100 restoration and re-decision.
+- Rebuilt both A3/A0 covers, spatial evidence figures, and offline first screens so spatial value and implementation specificity lead while governance remains the delivery background.
+
 ## v2.3 - 2026-08-12
 
 ### 五态织入法与空间比选 / Five-state method and spatial option screen

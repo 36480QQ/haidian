@@ -1,5 +1,19 @@
 # 方案迭代记录
 
+## v0.7 - 2026-08-13
+
+呈现与表达导向（对照 96 分提案的评审首屏配方，保留双螺旋创新带 × 电力碱基对特色）：
+
+- **OSM 真实底图**：总览图、空间结构图加入 OpenStreetMap 底图（道路/水系/铁路/公园，经 Overpass 提取），配北针、比例尺、图例与图面署名「© OpenStreetMap contributors (ODbL)」；版权声明与 sources.json 同步登记 OSM 来源。
+- **HTML 字体子集嵌入**：visual/index.html、report/proposal.html（含英文版）内嵌 Noto Sans CJK SC woff2 字体子集（约 400 KB），消除评审环境无中文系统字体时的方框字。
+- **修复双语图件引用缺陷**：英文提案中 5 张核心图（site-overview/land-use-structure/key-areas/mobility-bluegreen/metrics-evidence）原先错误引用中文版图，已改为 .en.png（双语等价审计捕获并修复）。
+- **版权逐项资产权利清单**：copyright_statement 重写为逐项清单（OSM 署名/字体/图件/代码依赖/离线声明）。
+- **双语等价审计**：新增 audit 脚本，产出 report/bilingual_audit.json（章节 15=15、标记 139=139、图件 15 对 15，PASS）。
+- **A3 封面加可复现试点入口**：封面标注 run_jz05_pilot.js 十段执行链/七道 Gate/六项验收。
+- ROAD-019 清华园站慢行连接（19 条路）；图件/图纸版本 v0.7。
+
+保持不变的承诺：临时约束边界待官方红线复算；控规条件缺失以情景假设供对标；全部机制/主体/指标/试点为概念建议或候选口径。
+
 ## v0.6 - 2026-08-11
 
 人工专家审核导向的内容强化（保留双螺旋创新带 × 电力碱基对特色）：

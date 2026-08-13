@@ -19,6 +19,8 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 The **overall concept** is: taking the "herringbone switchback" at Qinglong Bridge as a geometric motif, forming a spatial narrative of "a century of self-reliance, the character for people rising". Through four origin points of independent innovation and AI governance demonstration, we give Haidian the spatial identity of "the source of independent innovation".
 
+The concept is integrated in three layers from the outset rather than added as a later chapter: the **spatial layer** uses the folded 人 geometry to organise one spine, three terraces, two wings and two stitches; the **operating layer** records century-long contributions, present experiments and future corrections as a Temporal Commons; the **governance layer** uses "human fallback + public report card" to decide whether an AI service may enter public space. The three layers answer what it looks like, how it accumulates value over time, and why it may be admitted.
+
 **Name**: JINGZHANG RISING (京张向上)
 
 **English Name**: JINGZHANG RISING
@@ -27,6 +29,29 @@ The **overall concept** is: taking the "herringbone switchback" at Qinglong Brid
 
 **JINGZHANG RISING**
 One spine · Three terraces · Two wings · Two stitching systems
+
+## One-Page Jury Entry: Seven Evidence Dimensions and Six Agent Tasks
+
+This page is an **evidence navigator**, not a self-score. Every row points to an institution, spatial move, implementation sequence or deliverable that can be checked directly. If the index conflicts with the narrative, structured files or figures, the structured evidence and public boundary declarations govern.
+
+| Jury question | Direct answer | Where to verify | Failure test |
+| --- | --- | --- | --- |
+| Does it answer the brief completely? | The three scope levels, three positionings, five functions, three areas and two wings, and `agent.1-agent.6` form a section-layer-metric-drawing-web loop | The next table, 23 rows in `compliance_matrix.json`, and task coverage in Figure 05 [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] | If any mandatory task has no openable output, it is not covered |
+| Is there an irreplaceable original judgement? | "A century of self-reliance, the character for people rising" links the 1909 engineering achievement, the 1949 examination journey, the 1980 Zhongguancun origin and contemporary AI self-reliance; "human fallback + public report card" turns the proposition into an admission rule | "Four Origins" and "Human fallback and public report card" [depth:overall_spatial_structure] [depth:risk_missing_data] | If generic technology-park language can replace it without loss, the proposition fails |
+| Does AI genuinely enter urban planning? | Twelve cards specify space, operation, minimum data, human route, release evidence and exit; four industrial tests address stack adaptation, business stress, embodied safety and multi-agent coordination | "Twelve AI+ scenario cards" and "Four industry-grade test scenarios" [metric:scenario_card_count] [metric:industry_test_scenario_count] | Equipment names without responsibility and exit conditions are not AI planning innovation |
+| Can it be implemented? | Three first-start pilots use six 90-day evidence gates for baseline, tabletop rehearsal, shadow flow, AI-off drill, authorised trial and independent review; one-year indicators then decide continuation, redesign or exit | "First-start pilots" and "The first 90-day evidence gates" [depth:phasing_implementation] | If ownership, permission, human route or restoration responsibility is missing, on-site action cannot start |
+| Does it protect public interest? | Six core personas plus residents, elderly people, visitors, disabled people, low-income and flexible workers are mapped to real situations; AI is never the only public-service entrance | "Six personas", "What six user groups actually face", and "Inclusion is an admission condition" | If an equivalent human route fails, the AI route stops too |
+| Does it respect risk and compliance? | Thirty known metrics are recomputable and three statutory-control metrics remain explicitly unknown; ten risks, a file-by-file rights ledger and provisional-boundary warnings are disclosed | `metrics.json`, the risk register and `report/copyright_statement.md` [assumption:A-CONTROLS-001] | A fact unsupported by public or cleared evidence does not enter a conclusion |
+| Is the expression complete? | Five paired bilingual fixed figures, bilingual A3/A0 PDFs, and paired narrative and interactive offline HTML can each be read independently; static deliverables do not depend on video | `assets/figures/`, `drawings/`, `report/`, `visual/` | If a primary channel is unreadable, text, captions or static figures provide an equivalent fallback |
+
+| Agent task | Delivered mandatory outputs | Direct entry |
+| --- | --- | --- |
+| `agent.1` overall concept and function coordination | Chinese/English names, naming system, logo direction, three positionings, five functions, three-areas/two-wings loop, overall structure and regional interfaces | This chapter, Figure 01, and "The coordination loop" |
+| `agent.2` full-stack self-reliance and innovation ecosystem | Eight cases, AI innovation ecosystem map, six-layer stack, eight-factor guarantees and technology testing | "Coordinated-area industry and future-city research" and "Factor guarantees and technology testing" |
+| `agent.3` AI+ scenarios and active city | Twelve full operating cards, four industrial validation scenarios, six core personas, and scenario-space-operation-exit mapping | "AI innovation ecosystem, personas and AI+ scenarios" |
+| `agent.4` public space, new business and landmarks | Continuous heritage-park spine, north-south continuity and east-west stitching, four pilgrimage landmarks, an honour display system and six public-space components | "Four Origins", "Honour display system and public-space component library", and Figure 03 |
+| `agent.5` fused cultural narrative | Railway-examination-Zhongguancun-AI four-origin timeline, folded-angle wayfinding, symbols and international copy | "Four Origins", "Naming system and visual identity", and "International communication" |
+| `agent.6` global activities and long-term operation | One conference, one competition, one festival and one list; monthly developer-community operation; scenario opening; seven-step attraction-to-conversion pathway; brand assets | "Global AI event system" and "Developer-community operation and conversion pathway" |
 
 ---
 
@@ -94,7 +119,7 @@ The announcement and the agent taskbook fix three frameworks: the three position
 | **Intelligent, vibrant AI city** | Everyday, perceptible public services | The spine and the three terraces | Three-colour status display plus human fallback channel |
 | **Global voice in AI governance** | Standards, evaluation, institutional export | Zhongzhiyuan AI Self-Reliant Innovation Acceleration Area | Human fallback and the public answer sheet as a reproducible minimum |
 
-**The fifth function carries the heaviest investment here, deliberately.** Catching up on chips and models takes time, but **the vacancy in governance rules exists right now**. No city anywhere has answered who is accountable once AI enters public service. The answer offered here is not a declaration but a **copyable checklist**: six public-answer-sheet items and five hard requirements for the human channel. That is the most citable path, and the truest sense of the word "voice" [depth:governance_mechanism].
+**The fifth function carries the heaviest investment here, deliberately.** Catching up on chips and models takes time, but **the vacancy in governance rules exists right now**. No city anywhere has answered who is accountable once AI enters public service. The answer offered here is not a declaration but a **copyable checklist**: six public-answer-sheet items and five hard requirements for the human channel. That is the most citable path, and the truest sense of the word "voice" [depth:risk_missing_data].
 
 ### 3. The loop: making factors actually circulate
 
@@ -110,13 +135,13 @@ Three districts and two wings, if merely placed side by side, are only a zoning 
 | 4 Industry | Dazhongsi AI Industry Cluster | Station-city footfall, consumption, data factors | Revenue and market feedback | Commercial proof |
 | 5 Factors | Zhongguancun Technology Service Wing | Capital, IP, global allocation | Reinvestment and international channels | Back to step 1 |
 
-**The value of this loop is that it can be checked.** Every break has an observable symptom: capability nobody validates (1→3 broken), open-source results that never commercialise (2→4 broken), revenue that never returns to R&D (4→5→1 broken). Whether the loop closes is therefore listed as an observable item in the annual public recomputation, rather than being drawn as an arrow diagram and left there [depth:implementation_roadmap].
+**The value of this loop is that it can be checked.** Every break has an observable symptom: capability nobody validates (1→3 broken), open-source results that never commercialise (2→4 broken), revenue that never returns to R&D (4→5→1 broken). Whether the loop closes is therefore listed as an observable item in the annual public recomputation, rather than being drawn as an arrow diagram and left there [depth:phasing_implementation].
 
 **Why the two wings are wings and not districts.** Neither wing holds independent spatial primacy. Their job is to **feed the three districts in both directions**: one supplies factors and capital, the other supplies scenarios and validation. A wing is judged not by its own output but by **how many additional closed loops it lets the three districts complete**.
 
 ### 4. Regional innovation coordination
 
-The belt is not an island, and its place in Beijing and the wider region must be stated [depth:regional_coordination]:
+The belt is not an island, and its place in Beijing and the wider region must be stated [depth:three_level_scope_framework]:
 
 | Partner | Relationship | Division of labour |
 | --- | --- | --- |
@@ -182,6 +207,23 @@ The five functions required by the announcement are given spatial carriers [stan
 | International exchange and culture | Four pilgrimage landmarks and the event system | Pilgrimage landmarks [metric:pilgrimage_landmark_count] |
 
 The **three districts** are the three key areas, read as three ascending terraces of innovation potential. The **two wings** are the western Zhongguancun technology-service wing (universities, institutes and professional services supplying talent, capital, legal and standards capacity to the belt) and the eastern Xiaoyuehe scenario-enablement wing (residential communities and everyday services supplying real scenarios, real data and real users). Seven east-west stitching links connect the wings to the spine [metric:east_west_stitch_count].
+
+#### AI innovation ecosystem map: eight factors as one conversion chain, not a checklist
+
+The taskbook requires land, space, industry, funding, talent, compute, data and scenarios to be addressed together. This proposal organises them as an ecosystem map of **entry condition - spatial interface - checkable output - return direction** [depth:overall_spatial_structure]:
+
+| Factor | Entry condition | Spatial interface | Checkable output | Return path |
+| --- | --- | --- | --- | --- |
+| Land | Ownership, regulatory planning and public-interest conditions confirmed through statutory process | Three terraces and reserved land | A list of reversible and convertible carriers | Reassign use when technology changes instead of creating stranded assets |
+| Space | Daily passage, accessibility and human service are not displaced by tests | Spine, seven stitches and station forecourts | Equivalent AI and non-AI routes for the same task | User review informs the next spatial revision |
+| Industry | Technology-stack position, real need and responsible party stated | Six-layer full-stack blocks at Zhiyuan Terrace | Re-testable prototype, model or service contract | Results return to research and standards |
+| Funding | No unsupported amount promised; public, social-capital and restoration responsibilities separated first | Four accounts: public skeleton, cultural anchors, innovation carriers and station-city works | Stage budget, restoration guarantee and exit cost | Failing an evidence gate stops expansion |
+| Talent | Contributions, tasks and living services traceable; titles do not replace outcomes | Origin Works desks, youth housing and release hall | Open-source submissions, translation projects and public-explanation hours | Contributions enter honour display and later scenario eligibility |
+| Compute | Capacity, energy, green-power basis and disconnection method explainable | Intelligence Bell and edge-compute stops | Published load, energy and green-power basis | Use and energy results constrain scheduling |
+| Data | Source, authorisation, minimisation, retention, refusal and deletion complete | Data-compliance window and four-layer Temporal Commons | Data catalogue, authorisation record and post-use review | Publishable parts return to the commons; personal information does not |
+| Scenarios | Non-AI baseline, human takeover, failure and exit written first | Xiaoyuehe wing and twelve scenario nodes | Scenario cards, test records and public report cards | Continue, revise or retire conclusions return to the three areas and two wings |
+
+This map describes **conceptual responsibility relationships**, not existing policy, funding or institutional commitments. A real loop means each factor can say what it received, why the next factor may accept it, and where it returns after failure [assumption:A-CONTROLS-001].
 
 ### 3. A full-stack self-reliant innovation system
 
@@ -395,6 +437,23 @@ From this the proposal derives a contemporary reading of the Examination Origin:
 
 It should be stated plainly that this proposal's use of this historical resource is strictly limited to the **spatial interpretation and commemorative expression of publicly documented history**. It makes no political declaration, fabricates no historical material and alters no protected fabric. Any action touching protected heritage must be separately submitted for approval under the Cultural Relics Protection Law and the requirements of the heritage authorities [assumption:A-CONTROLS-001].
 
+### 2.2 Honour display system and public-space component library
+
+The taskbook requires not only landmark numbers but also an **honour display system and public-space component library**. This proposal combines them into a family of recognisable, reversible components that still work without a smartphone [depth:blue_green_public_space].
+
+**Honour display is not a celebrity wall; it is a public ledger of contribution and correction.** The Origin Stele retains verified long-term contributions; the release hall carries a quarterly version board; the Compute Bell shows the three-colour service state; the annual list records new contributions, failure reviews and public corrections. Each entry contains only the contribution, version, evidence, public return, failure and correction state. Irrelevant personal data are excluded, and corporate publicity, donation amount or administrative rank are not treated as honour. Unreviewed material remains "pending verification" and cannot enter the permanent layer.
+
+| Code | Component | Required task | Equivalent route when AI is off | Installation and withdrawal condition |
+| --- | --- | --- | --- | --- |
+| C1 | Herringbone dual-entry service desk | Show AI and human entrances, service limits and waiting positions together | Human desk independently completes every core item | Install after staffing, queue and fire conditions are verified; remove with the service |
+| C2 | Public report-card board | Show commitment, data, takeover, failure, public return and exit | Fixed paper board and human explanation | No green state if any of the six items is missing |
+| C3 | Three-colour status post | Make green, amber and red status visible in public space | Mechanical flip sign or paper status card | Source and responsible person traceable; remove when service ends |
+| C4 | Physical accessible wayfinding | Show continuous route, ramps, lifts, rest points and temporary breaks | Tactile map, ground line, fixed arrows and human escort | Verify segment by segment on site; cover or remove immediately when the route changes |
+| C5 | Reversible test boundary | Separate ordinary passage from time-limited testing and show exit and emergency stop | Physical barrier, safety officer and ordinary route | Set briefly only after permission, capacity, stop and restoration are complete |
+| C6 | Origin rest-and-story unit | Provide seating, shade, verified history, correction entry and honour-version record | Fixed panel, paper leaflet and human guide | Do not attach to protected fabric; install after historical, structural and accessibility review |
+
+The six components specify **task, information and geometric family**, not dimensions, construction or engineering details without site measurement. The folded angle comes from the logo motif, but usability comes before recognition; no component may obstruct passage, accessibility, heritage protection or ordinary service to preserve brand consistency.
+
 ### 3. Land-use layout and partition method
 
 Land use is not divided arbitrarily but by **anchor catchment**, so that every parcel can answer which node it serves and how long it takes to walk there:
@@ -428,7 +487,7 @@ Actual height figures must follow official boundaries and regulatory conditions.
 
 The three key areas total about 369.3 ha [metric:key_area_total_area_sqm], all expressed as provisional rough extents and offered as conceptual recommendations [data:geometry/key_areas.geojson#PROV-KEY-001] [depth:three_key_area_detailed_design].
 
-![Fig.03 Detailed design of the three key areas](assets/figures/key-areas.en.png)
+![Fig.03 Spatial prototypes, human routes and six evidence gates for the three key areas](assets/figures/key-areas.en.png)
 
 ### 1. Origin Terrace (Zhongzhiyuan AI self-reliant innovation acceleration area)
 
@@ -491,22 +550,24 @@ Six personas are used to derive spatial and service supply [metric:persona_count
 
 ### 2. Twelve AI+ scenario cards
 
-Twelve operable scenario cards are prepared [metric:scenario_card_count], each with a name, carrier space, beneficiary, data source and compliance boundary. The list is given here; full cards are submitted as structured files [source:SITE-PACKAGE]:
+Twelve **full operating cards** are prepared [metric:scenario_card_count]. The table completes the taskbook's scenario-space-operation mapping: each card states the user task, space, recommended responsibility combination, minimum data, non-AI route, release evidence and exit condition. Every item under "release evidence" is evidence a future pilot must obtain **before opening**, not performance this proposal claims has already been achieved. Without authorisation, baseline and a human route, the scenario remains unopened [source:AGENT-TASKBOOK] [depth:risk_missing_data].
 
-| # | Scenario | Carrier space | Main beneficiary |
-| --- | --- | --- | --- |
-| 1 | AI walking navigation and accessible routing | The whole spine greenway | Residents, elderly people, wheelchair users |
-| 2 | Multilingual agent guide to the heritage park | Along the four origins | Visitors, students, international guests |
-| 3 | Enterprise-service copilot for policy, premises and permits | Enterprise halls at the three terraces | Founders and firms |
-| 4 | City operation check-up and public-safety review | Bell Hub operations hall | Government and citizens |
-| 5 | Community AI service points for booking, meals and home help | Community nodes on both wings | Local and elderly residents |
-| 6 | Public evaluation and leaderboards for open models | Release hall | Open-source community, researchers |
-| 7 | Autonomous driving and unmanned delivery testing | Designated test segments | Firms, logistics |
-| 8 | Compute load and green-power visualisation | Bell of Compute | Citizens, regulators |
-| 9 | Landing-service agent for young talent | Talent hall, Origin Works | Young talent |
-| 10 | Compliant matchmaking of university and industry data | Near-campus research band | Universities, firms |
-| 11 | Intelligent inspection and predictive maintenance | Belt-wide utilities | Operators |
-| 12 | Digital literacy and AI general-knowledge classes | Community cultural facilities | Residents of all ages |
+| # / scenario | User task and public value | Space and recommended responsibility | Minimum data and non-AI route | Evidence before release | Failure, downgrade and exit |
+| --- | --- | --- | --- | --- | --- |
+| 01 AI walking and accessible routing | Residents, elderly people, wheelchair users and families with pushchairs find a continuous route | Spine and stitches; transport/landscape professionals + local operator | Only field-verified ramps, lifts, works and passage status; physical map, continuous signs and human escort remain | The same trip works through AI and fixed wayfinding; every accessible segment is field-checked | Any mismatch marks the route unavailable; physical wayfinding remains; repeated error triggers withdrawal and re-test |
+| 02 Multilingual heritage guide | Visitors, students and international guests understand the four origins accurately | Origin Route; heritage/history professionals + guide operator | Read only registered public history; no personal tracking; fixed panels, leaflet and human guide remain | Every fact traces to a source and translations receive human review | Remove erroneous history or translation until corrected; never present a concept landmark as built |
+| 03 Enterprise-service copilot | Founders find public policy, premises, qualification and professional-service entrances | Enterprise halls; public service desk + licensed professionals | Read only dated public policy and directories; desk and telephone referral remain | Source, version, expiry date and next human responsibility are complete | Stale information, eligibility error or approval-like claim triggers suspension; professional conclusions go to humans |
+| 04 City operation review | Operators aggregate issues and the public sees improvement rather than automated punishment | Intelligence Bell operations hall; city operator + independent reviewer | Only lawfully authorised facility and incident aggregates; manual inspection, paper log and appeal remain | Data authority, false-positive review, human takeover and publication basis reviewed | Unauthorised data, automatic penalty or unexplained false positives end public use |
+| 05 Community AI service point | Residents complete booking referral, meal and home-help enquiries | Community nodes; neighbourhood service body + relevant provider | Minimum information only, no mandatory face recognition; counter, telephone and paper directory remain | Same-place, same-hours, same-rights, same-prominence and switchability all verified | AI-only access, unstaffed human lane or unequal cost stops the AI lane too |
+| 06 Open-model public evaluation | Researchers and citizens understand model version, capability and limit | Origin Works release hall; open-source community + independent evaluator | Cleared test set and version record, no private uploads; human baseline evaluation remains | Dataset source, version, reproduction steps, failure examples and conflicts disclosed | Non-reproducible result, best-result cherry-picking or version substitution removes the ranking |
+| 07 Controlled low-speed delivery / driving | Firms test physical safety while the public may decline participation | Separately authorised time and segment; tester + site owner + safety officer | Safety-necessary data only, no facial recognition; ordinary passage and human delivery remain | Permission, insurance, enclosure, capacity, physical stop, takeover and restoration complete | Boundary breach, stop failure, or obstruction of accessibility/daily passage terminates the test |
+| 08 Compute and green-power visualisation | Citizens and regulators understand resource cost | Compute Bell; facility operator + energy-metering professional | Calibrated aggregates only, no commercially sensitive load; monthly human report remains | Meter source, period, missing-data marker and method readable | Meter/account mismatch or missing data shown as normal takes the display offline |
+| 09 Young-talent landing service | Young people find housing, desks, events and service entrances | Origin Works talent hall; talent-service desk + community operator | Public service information only, no inferred eligibility; human advice and paper list remain | Directory, eligibility boundary, human review and complaint route complete | Any promise of eligibility, subsidy, housing or approval is withdrawn and corrected |
+| 10 University-industry data matchmaking | University and firm decide whether a lawful conversation may start, not exchange data directly | Near-campus research band; university research management + data-compliance professionals | Stage one exchanges metadata and purpose only, not raw personal data; human compliance meeting remains | Ownership, purpose, minimisation, de-identification, retention and deletion reviewed | Unauthorised raw-data exchange or purpose drift terminates matchmaking and is reviewed |
+| 11 Facility inspection and predictive maintenance | Operators find faults earlier without automatic closure | Belt-wide facilities; asset/operator + professional inspector | Equipment status and manual inspection records; scheduled inspection and on-site reporting remain | False-positive/negative baseline, human confirmation, work order and restoration responsibility complete | Automatic shutdown without confirmation, concentrated false positives or unclear responsibility returns to manual inspection |
+| 12 Digital literacy and AI general knowledge | Residents of all ages learn capability, boundary, risk and exit | Community cultural facilities; community educator + volunteer tutor | Minimum registration only, no profiling; in-person teaching, paper materials and questions remain | Content, child protection, accessible materials and feedback receive human review | Marketing disguised as training, forced registration or no human teaching cancels eligibility |
+
+All twelve cards share four hard rules: **same-task equivalence, minimum data, human final decision and reversibility**. Scenario count is not an achievement. A scenario may move from concept card to controlled pilot only when an ordinary user can complete the task, refuse unnecessary permission, find a person, challenge a result and exit safely.
 
 ### 3. Four industry-grade test scenarios
 
@@ -526,11 +587,11 @@ Five binding requirements are proposed for inclusion in the design and acceptanc
 
 | Requirement | Content | Spatial implication |
 | --- | --- | --- |
-| Same place | the human lane sits within the same premises, within walking distance, not in another building or another time slot | plans must reserve a staffed position and waiting space |
-| Same hours | the human lane operates for no less time than the AI lane | affects staffing and shift patterns |
-| Same rights | outcome, turnaround and cost through the human lane are no worse than through the AI lane | institutional, not spatial |
-| Same prominence | signage for the human lane is no smaller or less prominent than for the AI lane | fixed in the wayfinding standard |
-| Switchable | a user may transfer from the AI lane to the human lane at any point without rejoining the queue | circulation must support lateral transfer |
+| H1 Same place | the human lane sits within the same premises, within walking distance, not in another building or another time slot | plans must reserve a staffed position and waiting space |
+| H2 Same hours | the human lane operates for no less time than the AI lane | affects staffing and shift patterns |
+| H3 Same rights | outcome, turnaround and cost through the human lane are no worse than through the AI lane | institutional, not spatial |
+| H4 Same prominence | signage for the human lane is no smaller or less prominent than for the AI lane | fixed in the wayfinding standard |
+| H5 Switchable | a user may transfer from the AI lane to the human lane at any point without rejoining the queue | circulation must support lateral transfer |
 
 **Why this is written as a binding clause rather than an aspiration.** An innovation belt that makes those who cannot, will not or are unable to use smart devices feel excluded has failed in governance terms, however impressive its industrial indicators. **AI must not become the only way to obtain a public service.** This is not a reservation about technology; it is the concrete redemption of the phrase "a people-centred city".
 
@@ -538,14 +599,24 @@ Five binding requirements are proposed for inclusion in the design and acceptanc
 
 **Definition.** Every AI service entering public space on this belt must publish, at fixed intervals and in a fixed format, a report card covering six items, none of which may be omitted:
 
-1. **Service commitment** — what it does, what it does not do, whom it serves and where its limits lie.
-2. **Data provenance** — what data it collects, on what basis, how long it is kept, whether it can be refused, and how it can be deleted.
-3. **Human takeover** — who may halt it, how, and who is accountable afterwards.
-4. **Failure record** — misjudgements, faults, complaints and their resolution during the period. **Reporting achievements without reporting failures is not permitted.**
-5. **Public return** — verifiable benefit delivered to the public in time, cost, accessibility or safety.
-6. **Exit condition** — under what circumstances it should be downgraded or withdrawn.
+1. **F1 Service commitment** — what it does, what it does not do, whom it serves and where its limits lie.
+2. **F2 Data provenance** — what data it collects, on what basis, how long it is kept, whether it can be refused, and how it can be deleted.
+3. **F3 Human takeover** — who may halt it, how, and who is accountable afterwards.
+4. **F4 Failure record** — misjudgements, faults, complaints and their resolution during the period. **Reporting achievements without reporting failures is not permitted.**
+5. **F5 Public return** — verifiable benefit delivered to the public in time, cost, accessibility or safety.
+6. **F6 Exit condition** — under what circumstances it should be downgraded or withdrawn.
 
 **The assessors are users, not experts.** A standing review mechanism is proposed at the Examination Waystation, open to residents, students, elderly people, founders, commuters and visitors, with results published alongside the report cards.
+
+**The same report card is instantiated differently in the three areas rather than copied onto three screens:**
+
+| Key area | What the report card must foreground | Equivalent human route | Immediate red condition |
+| --- | --- | --- | --- |
+| Zhiyuan full-stack test court | Model/device version, cleared data, test boundary, physical stop and independent retest | Human baseline test, on-site safety officer and paper test record | Unclear data rights, boundary breach or stop failure |
+| Origin Works model counter | Service item, minimum data, five human-lane conditions, completion by elderly and disabled users | Counter, telephone, paper directory and human transfer | AI-only entry or interrupted human lane |
+| Intelligence Bell operations hall | Load, energy, green-power basis, three-colour service state, complaints and maintenance | Human inspection, monthly report and appeal | Inconsistent metering, missing data disguised as normal, or no human review |
+
+Figure 03 places these three instances beside their shared evidence gates. The instances answer what each area does; the common report card answers why a service may be admitted.
 
 #### 4.3 Three-colour status and the downgrade path
 
@@ -580,7 +651,7 @@ This proposal creates no new administrative body, no new charge and no new manda
 
 ### 5. The Temporal Commons: AI Innovation as an Open Data Ecosystem
 
-**The Temporal Commons is the proposal's core differentiation.** Rather than describe Jingzhang Rising as a "geographic space", it is better understood as a **data-infrastructure timeline** [depth:planning_innovation] [depth:long_term_operation]. It is a place where past heritage, present innovation and future ecosystem coexist and mutually reinforce each other through transparent data, collective learning from failure, and cross-generational dialogue.
+**The Temporal Commons is the proposal's core differentiation.** Rather than describe Jingzhang Rising as a "geographic space", it is better understood as a **data-infrastructure timeline** [depth:overall_spatial_structure] [depth:phasing_implementation]. It is a place where past heritage, present innovation and future ecosystem coexist and mutually reinforce each other through transparent data, collective learning from failure, and cross-generational dialogue.
 
 #### 5.1 From geographic space to temporal commons
 
@@ -621,7 +692,7 @@ This proposal creates no new administrative body, no new charge and no new manda
 
 #### 5.3 Cross-generational co-creation framework
 
-**Three-generation dialogue: past-present-future** [depth:design_mechanism_innovation]:
+**Three-generation dialogue: past-present-future** [depth:overall_spatial_structure]:
 
 | Era | Representative figures | Inherited legacy | Present responsibility | Future promise |
 |-----|------------------------|-------------------|----------------------|-----------------|
@@ -664,7 +735,7 @@ The proposal recommends embedding "Temporal Commons" guiding principles in the *
 
 ### 7. Factor guarantees and technology testing: keeping the innovation chain from breaking halfway
 
-**The real threshold of an innovation belt is not whether good ideas exist, but at which link an idea breaks.** The proposal offers guarantee-mechanism recommendations for four key factors [depth:industrial_support]:
+**The real threshold of an innovation belt is not whether good ideas exist, but at which link an idea breaks.** The proposal offers guarantee-mechanism recommendations for four key factors [depth:overall_spatial_structure]:
 
 | Factor | Common breaking point | Recommended guarantee mechanism | Spatial host |
 | --- | --- | --- | --- |
@@ -897,19 +968,48 @@ The personas in this proposal are not only an industry analysis; they are a test
 
 A long-term event system of **one congress, one contest, one festival and one honour list** is proposed: an annual global AI open-source congress at Origin Works, a city-scale AI scenario challenge using the whole belt as its arena, a civic AI culture festival staged on the spine, and an annual open-source contribution list announced at the Origin Stele. The purpose of the event system is to convert one-off construction spending into **a continuing asset of attention**.
 
+#### Developer-community operation and attraction-to-conversion pathway
+
+If events produce only footfall and no maintainers, validation record or subsequent project, they are not long-term operation. The proposal recommends a rhythm of **monthly maintenance, quarterly rehearsal and annual disclosure**. This is a conceptual operating mechanism, not a claim that an organisation or budget already exists [depth:phasing_implementation].
+
+| Cycle | Community action | Required public output | Test against empty event-making |
+| --- | --- | --- | --- |
+| Monthly | Maintainer rotation, public issue diagnosis, scenario-card revision and public explanation | Version record, unresolved issues and next responsible role | A talk without a reusable contribution is incomplete |
+| Quarterly | Choose one scenario for tabletop negative-case rehearsal and AI-off drill | Failure record, human-takeover result and revised card | A scenario that hides failure or cannot complete the human route may not advance |
+| Annually | One congress, one contest, one festival, one list, plus public review | Annual public report card, contribution/correction ledger and continue/retire list | An event that reports only visitors and media, not public return, is downgraded |
+
+Three roles are proposed without creating a new administrative level: **maintainers** keep code, data and document versions; **scenario owners** carry permission, site, human takeover and restoration; **public reviewers** test whether a real task can be understood, completed and exited. Anyone may raise an issue, but an on-site pilot requires one accountable entity and professional review; contributor identity never substitutes for permission or safety assessment.
+
+The seven-step route from global visit to local conversion is: `public issue -> reproducible proposal -> scenario-card review -> tabletop negative-case rehearsal -> authorised limited trial -> public report card and independent review -> continue, revise or retire`. The international congress brings issues and teams; Origin Works translates; Zhiyuan Terrace validates; Intelligence Bell provides the adoption interface; Xiaoyuehe and corridor users provide feedback; the Zhongguancun service wing supplies legal, IP, standards, capital and internationalisation referrals. **A project that fails the previous link cannot jump ahead through investment promotion, event popularity or official visits.**
+
 ### 7. First-start pilots: turning "can this be built" into something auditable within a year
 
-Whether a proposal is implementable does not depend on how many phases it draws. It depends on **whether it dares to name the first pilot and write down the failure test in advance**. Three **first-start pilot sites** are therefore proposed, all on already-built land with relatively simple tenure and no need for large-scale demolition, so each can begin before the official boundary is released [depth:implementation_roadmap].
+Whether a proposal is implementable does not depend on how many phases it draws. It depends on **whether it dares to name the first pilot and write down the failure test in advance**. Three **first-start pilots** are therefore proposed. They prioritise existing service counters, existing walking interfaces and a list-based institutional pilot; they do not assume simple ownership and do not require major demolition. Any on-site action still requires ownership, permission and measured conditions to be confirmed, while preparatory verification can proceed without treating provisional boundaries as official redlines [depth:phasing_implementation] [assumption:A-CONTROLS-001].
 
 | Pilot | Location | First-year action | Suggested lead body | Acceptance test after one year | Failure test (triggers exit or redesign) |
 | --- | --- | --- | --- | --- | --- |
-| **1. Human-fallback model counter** | An existing government or community service counter within Origin Works | Convert one counter to the five hard requirements; staff the human channel on site and publish all six answer-sheet items | Local subdistrict office plus the counter's operating unit | 100% compliance of the human channel; all six items published; completion rate for older users no lower than before conversion | AI becomes the only entry point, or a red-status downgrade leaves no human channel to absorb demand |
-| **2. One stitching link opened** | The shortest and least obstructed of the seven cross-corridor links | Open one east-west slow-mobility link, with night lighting and step-free ramps | Local parks/transport authority plus the railway landowner | Walking detour distance falls; average daily crossings rise over three consecutive months | Tenure coordination prevents a start, or daily crossings after opening fall below half the projection |
-| **3. First scenario-opening list** | Xiaoyuehe Scenario Empowerment Wing | Publish the first three real test scenarios, with the full apply-assess-exit procedure | District science and technology authority plus scenario landowners | Every scenario in the first batch is taken up by a team that files a validation report, failures included | No team applies after publication, or teams that apply cannot actually get on site |
+| **1. Human-fallback model counter** | A candidate existing government or community service counter within Origin Works, selected only after G0 ownership and operating review | Convert one counter to the five hard requirements; staff the human channel on site and publish all six answer-sheet items | Local subdistrict office plus the counter's operating unit | 100% compliance with all five human-channel conditions; all six report-card items published; older-user completion no lower than the G0 baseline | AI becomes the only entry point, or a red-status downgrade leaves no human channel to absorb demand |
+| **2. One stitching link opened** | Select one of the seven conceptual links after G0 field audit; no number is fixed now and no ownership or engineering simplicity is claimed | First audit real detour and barriers, then prepare a reference scheme for lighting, wayfinding, accessibility and continuity | Local parks/transport authority plus the railway landowner | Walking detour falls against G0 baseline; every accessible segment passes field check; daily use reaches the G0 pre-published threshold for three months | No construction if ownership or safety fails; if the disclosed threshold is missed after opening, review, revise or exit |
+| **3. First scenario-opening list** | Candidate space in the Xiaoyuehe wing after ownership and permission review | Publish three test issues with application, assessment, authorisation and exit procedures | District science and technology authority plus scenario landowners | Every issue receives a compliant application; at least one lawfully enters the site and files a validation report including failures | No compliant application, or no application can move from paper to lawful on-site entry |
+
+#### The first 90-day evidence gates: prove control before opening
+
+The table compresses the **common first 90 days** of the three one-year pilots into six evidence gates. It is a proposed execution order, not a completed trial. Before D1 all three pilots remain "not authorised, not operating on site". Calendar time cannot replace evidence; failure at any gate freezes the pilot at its prior state [depth:phasing_implementation].
+
+| Gate | Suggested period | Common action across three pilots | Required evidence | If not passed |
+| --- | --- | --- | --- | --- |
+| G0 Baseline and rights | D1-15 | Verify ownership, permission, existing service, non-AI baseline, affected groups and data gaps | One-page baseline, responsibility list and prohibited-data list | Desk research only; no site entry |
+| G1 Negative-case tabletop | D16-30 | Rehearse six failures per pilot: missing responsibility, data excess, failed human route, inability to stop, no restoration duty and hidden failure - eighteen protocol cases in total | Per-case "must block / must return" record and revision list | If any negative case could pass, rewrite the rule |
+| G2 Spatial shadow flow | D31-45 | Demonstrate with paper, markings and ordinary reversible elements; do not replace current service or collect public data | Circulation, accessibility, fire safety, human workstation and removal drawings/photos | Remove mock-up if ordinary passage or human service is obstructed |
+| G3 Deliberate AI-off drill | D46-60 | Disconnect the intelligent step and complete the same task by human or low-tech route | Takeover time, re-queuing, information loss and restoration responsibility | If the same task cannot be completed, the AI route does not open |
+| G4 Time-limited authorised trial | D61-75 | Trial at small scale only after ownership, permission, safety and notice are complete; otherwise continue shadow flow | First public report card, complaints/failures and end date | Overreach, missing notice, inability to exit or serious complaint returns to G2 |
+| G5 Independent review and decision | D76-90 | Review by professionals not responsible for delivery and by actual users | One of four decisions - continue, revise, rebuild or exit - with responsible person | No independent review or hidden failure means no expansion into the one-year pilot |
+
+The three pilots have different **special tests**: the model counter tests the five human-lane conditions; the stitching link tests actual detour, continuous accessibility and ordinary passage; the scenario list tests whether an application can move from paper to lawful entry. Common gates do not make them the same project; they ensure none can bypass baseline, human route, stopping and restoration.
 
 **Why these three.** Each tests one of the proposal's three central claims: whether the governance core survives contact with a real counter (1), whether stitching actually changes walking behaviour (2), and whether opening scenarios actually attracts real teams (3). **None depends on the official boundary, none involves a demolition decision, and each returns a yes or no within a year.**
 
-**On the failure tests.** The final column is not a disclaimer; it is the methodological position of this proposal: **an implementation plan unwilling to write its failure test in advance cannot be held to account afterwards.** If a pilot misses its target, the reason should be published and the scheme adjusted, rather than quietly scaled up. This is the same logic as the "failure record" and "exit condition" entries in the public answer sheet [depth:risk_register].
+**On the failure tests.** The final column is not a disclaimer; it is the methodological position of this proposal: **an implementation plan unwilling to write its failure test in advance cannot be held to account afterwards.** If a pilot misses its target, the reason should be published and the scheme adjusted, rather than quietly scaled up. This is the same logic as the "failure record" and "exit condition" entries in the public answer sheet [depth:risk_missing_data].
 
 **Milestones and responsibility interfaces.** Phase 1 (2026-2028) takes the three pilots and the opening of the northern spine as its milestone; Phase 2 (2029-2031) takes a completed stitching network and the formed full-stack blocks; Phase 3 (2032-2035) takes station-city integration and a steady-state event system. Each phase may begin only after the previous phase has published its recomputation and pilot conclusions; **if that is not done, the next phase does not start.** All lead bodies above are **suggestions**; actual mandates must be settled through statutory process, and this proposal makes no commitment on any organisation's behalf [assumption:A-CONTROLS-001].
 

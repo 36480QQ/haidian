@@ -24,6 +24,18 @@
         "submissions/felix-lhz/jingzhang-civic-proving-line/assets/figures/culture-brand.png",
         "submissions/felix-lhz/jingzhang-civic-proving-line/assets/figures/ecosystem-synergy.en.png",
         "submissions/felix-lhz/jingzhang-civic-proving-line/assets/figures/ecosystem-synergy.png",
+        "submissions/felix-lhz/jingzhang-civic-proving-line/assets/figures/hero-s2-detail.en.png",
+        "submissions/felix-lhz/jingzhang-civic-proving-line/assets/figures/hero-s2-detail.png",
+        "submissions/felix-lhz/jingzhang-civic-proving-line/assets/figures/hero-s2-section.en.png",
+        "submissions/felix-lhz/jingzhang-civic-proving-line/assets/figures/hero-s2-section.png",
+        "submissions/felix-lhz/jingzhang-civic-proving-line/assets/figures/hero-s7-detail.en.png",
+        "submissions/felix-lhz/jingzhang-civic-proving-line/assets/figures/hero-s7-detail.png",
+        "submissions/felix-lhz/jingzhang-civic-proving-line/assets/figures/hero-s7-section.en.png",
+        "submissions/felix-lhz/jingzhang-civic-proving-line/assets/figures/hero-s7-section.png",
+        "submissions/felix-lhz/jingzhang-civic-proving-line/assets/figures/hero-t2-detail.en.png",
+        "submissions/felix-lhz/jingzhang-civic-proving-line/assets/figures/hero-t2-detail.png",
+        "submissions/felix-lhz/jingzhang-civic-proving-line/assets/figures/hero-t2-section.en.png",
+        "submissions/felix-lhz/jingzhang-civic-proving-line/assets/figures/hero-t2-section.png",
         "submissions/felix-lhz/jingzhang-civic-proving-line/assets/figures/implementation-roadmap.en.png",
         "submissions/felix-lhz/jingzhang-civic-proving-line/assets/figures/implementation-roadmap.png",
         "submissions/felix-lhz/jingzhang-civic-proving-line/assets/figures/key-areas.en.png",
@@ -87,13 +99,18 @@
         "submissions/felix-lhz/jingzhang-civic-proving-line/standard_matrix.json",
         "submissions/felix-lhz/jingzhang-civic-proving-line/visual/assets/build-a0-v3.js",
         "submissions/felix-lhz/jingzhang-civic-proving-line/visual/assets/build-v3.js",
+        "submissions/felix-lhz/jingzhang-civic-proving-line/visual/assets/build-v4.js",
         "submissions/felix-lhz/jingzhang-civic-proving-line/visual/assets/context-open-map.json",
         "submissions/felix-lhz/jingzhang-civic-proving-line/visual/assets/embed-v3-html.js",
+        "submissions/felix-lhz/jingzhang-civic-proving-line/visual/assets/embed-v4-html.js",
         "submissions/felix-lhz/jingzhang-civic-proving-line/visual/assets/enrich-v3-data.js",
         "submissions/felix-lhz/jingzhang-civic-proving-line/visual/assets/enrich-v3-geometry.js",
+        "submissions/felix-lhz/jingzhang-civic-proving-line/visual/assets/enrich-v4-data.js",
+        "submissions/felix-lhz/jingzhang-civic-proving-line/visual/assets/internal-v4-rubric.json",
         "submissions/felix-lhz/jingzhang-civic-proving-line/visual/assets/prepare-open-map.js",
         "submissions/felix-lhz/jingzhang-civic-proving-line/visual/assets/red-team-review.json",
         "submissions/felix-lhz/jingzhang-civic-proving-line/visual/assets/refresh-v3-matrices.js",
+        "submissions/felix-lhz/jingzhang-civic-proving-line/visual/assets/register-v4-manifest.js",
         "submissions/felix-lhz/jingzhang-civic-proving-line/visual/assets/spatial-atlas.json",
         "submissions/felix-lhz/jingzhang-civic-proving-line/visual/assets/two-answers-mark.svg",
         "submissions/felix-lhz/jingzhang-civic-proving-line/visual/assets/two-answers.css",
@@ -106,7 +123,7 @@
       "ai_package_stages": {
         "submissions/felix-lhz/jingzhang-civic-proving-line": "formal"
       },
-      "total_bytes": 26574852,
+      "total_bytes": 22118516,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -180,14 +197,14 @@
       "summary": {
         "standard_matrix_items": 6,
         "design_depth_items": 15,
-        "known_metric_refs_required": 13,
+        "known_metric_refs_required": 16,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
           "source": 17,
           "standard": 1,
           "depth": 7,
-          "data": 13,
+          "data": 17,
           "metric": 12
         }
       }

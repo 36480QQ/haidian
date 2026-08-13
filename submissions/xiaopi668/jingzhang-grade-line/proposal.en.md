@@ -32,7 +32,7 @@ This is not a standalone vision text: every spatial judgment traces to layers, m
 The proposal is generated end-to-end by an AI agent, and the workflow itself is part of the planning-methodology innovation [source:AGENT-TASKBOOK].
 
 1. **Procedural geometry with topology verification**: land_use is cut by one shared polygonize line network, inherently seamless (no gaps/overlaps), with areas auto-recomputed in EPSG:4548 [data:geometry/land_use.geojson#LU-001].
-2. **Data-driven figures**: all 10 figures are generated directly from GeoJSON and metrics, keeping text and numbers consistent [metric:site_area_sqm].
+2. **Data-driven figures**: all 5 core figures (bilingual pairs) are generated directly from GeoJSON and metrics, keeping text and numbers consistent [metric:site_area_sqm].
 3. **Multimodal simulation-review loop**: strict-round simulation reviews mirror the official prompt, each finding repaired before submission; this revision comes from that loop.
 4. **Analytical AI application concepts**: walkability isochrones, demand inference, and the scenario data return loop (feedback siding) as landing points for analytical AI in planning [metric:road_total_length_m].
 
@@ -240,11 +240,11 @@ All-age and accessible design runs through public space: elderly, disabled and l
 | JZ-05 Verification field | 50–200 M | park platform + enterprises | data isolation & benchmarking |
 | JZ-06 Milepost Walk | 5–10 M | public-investment-led | mileposts & honor system |
 
-**Operator and staffing concept estimates**: main-line operations 20–40 people (greenway maintenance, events, guiding), verification field 10–20 (benchmarking, isolation ops), developer-community operations 5–10, culture guiding 3–5, about 40–75 in total; staffing is a concept estimate from comparable public-facility experience, not a fiscal commitment [source:AGENT-TASKBOOK].
+**Operator and staffing concept estimates**: main-line operations 20–40 people (greenway maintenance, events, guiding), verification field 10–20 (benchmarking, isolation ops), developer-community operations 5–10, culture guiding 3–5, about 40–75 in total (upper-bound total 75 [metric:operations_team_concept_headcount]); staffing is a concept estimate from comparable public-facility experience, not a fiscal commitment [source:AGENT-TASKBOOK].
 
 **Two-level emergency response plan (concept)**: technical incidents (model failure, data breach) — pause the scenario immediately → human takeover → isolate affected data → public debrief within 24h; operational incidents (event safety, facility failure) — activate the on-site plan → professional response → compensation channel → public statement. The grade-signal system guarantees every scenario has pause, rollback and human-takeover switches [metric:ai_scenario_node_count].
 
-**Ridership and commute concept estimates**: applied grade ~20–40k daily visitors, research grade 10–20k, acceleration grade 30–50k (park commutes) — low-confidence ranges inferred from public data, to be calibrated by site survey and official data [source:SRC-BEIJING-SCIENCE-CENTER].
+**Ridership and commute concept estimates**: applied grade ~20–40k daily visitors, research grade 10–20k, acceleration grade 30–50k (park commutes), three-band concept mid-total ~42.5k/day [metric:daily_visitors_concept_mid] — low-confidence ranges inferred from public data, to be calibrated by site survey and official data [source:SRC-GLOBAL-CASES].
 
 ### Admission gates and phasing
 
@@ -256,7 +256,7 @@ Implementation follows **C0–C7 eight gates** (concept→ownership confirmation
 
 ## Indicators, Area Recalculation and Compliance Matrix
 
-Indicators are managed in three classes [depth:metrics_recalculation]: (1) directly recomputable from submitted geometry (areas, ratios, counts — in `metrics.json`); (2) control metrics needing official regulatory plans (FAR, height, density) recorded as unknown with recompute triggers [metric:floor_area_ratio]; (3) operational performance metrics (innovation index, event participation) with calibration paths in `assumptions.json`. All 26 metrics state status, formula, source_files and confidence; known metrics are verifiable from GeoJSON or trusted sources [metric:key_area_total_sqm] [metric:road_total_length_m].
+Indicators are managed in three classes [depth:metrics_recalculation]: (1) directly recomputable from submitted geometry (areas, ratios, counts — in `metrics.json`); (2) control metrics needing official regulatory plans (FAR, height, density) recorded as unknown with recompute triggers [metric:floor_area_ratio]; (3) operational performance metrics (innovation index, event participation) with calibration paths in `assumptions.json`. All 27 metrics (26 known + 1 unknown) state status, formula, source_files and confidence; spatial known metrics are verifiable from submitted GeoJSON, and concept metrics carry low confidence and calibration paths [metric:key_area_total_sqm] [metric:road_total_length_m].
 
 The green ratio (24.4%) supports "breathing" innovation environments on research and acceleration grades; the public-space ratio (2.9%) focuses the anchoring effect of transfer nodes and plazas rather than blanket distribution [metric:green_ratio] [metric:public_space_ratio]; building footprints (1.398 million m²) test industry-space supply rather than serve as an approval basis [metric:building_footprint_area_sqm]. The three key areas total 3.693 million m² (approximately the announced 368.4 ha, a 0.24% provisional-precision difference [metric:key_area_total_sqm]); the grade-band structure is realized through the spatial allocation of research, commercial and green land [metric:land_use_research_sqm] [metric:land_use_commercial_sqm] [metric:land_use_green_sqm].
 

@@ -57,7 +57,8 @@
       "evidence_summary_en": "Baseline diagnosis: last-mile delivery cost, terminal traffic conflicts and elderly parcel pickup difficulties form three verifiable problems; baseline built from public sources and recomputable geometry; all official-data gaps honestly declared with backfill paths.",
       "completeness_limited_by": [
         "official traffic/demographic baseline data pending; provisional boundary only"
-      ]
+      ],
+      "evidence_artifact_refs": []
     },
     {
       "item_id": "three_level_scope_framework",
@@ -112,7 +113,8 @@
         "VISUAL_STATIC"
       ],
       "evidence_summary_zh": "三层范围与共行网分级对应：统筹研究43.6km²（产业生态与协同）、总体设计11.4km²（一廊四支六驿两基）、重点区域368.4ha（三片区深化）。",
-      "evidence_summary_en": "Three scopes map to network tiers: 43.6 km² coordinated research, 11.4 km² overall design (one corridor/four branches/six stations/two depots), 368.4 ha key areas."
+      "evidence_summary_en": "Three scopes map to network tiers: 43.6 km² coordinated research, 11.4 km² overall design (one corridor/four branches/six stations/two depots), 368.4 ha key areas.",
+      "evidence_artifact_refs": []
     },
     {
       "item_id": "overall_spatial_structure",
@@ -167,7 +169,8 @@
         "VISUAL_STATIC"
       ],
       "evidence_summary_zh": "总体空间结构'一廊四支、六驿两基、三区联动'：共行主廊15.4km专用段+3.4km共享段；18个用地分区全部承载机器人场景标签。",
-      "evidence_summary_en": "Overall structure 'one corridor, four branches, six stations, two depots, three areas': 15.4 km dedicated + 3.4 km shared lanes; all 18 parcels carry robot-scenario tags."
+      "evidence_summary_en": "Overall structure 'one corridor, four branches, six stations, two depots, three areas': 15.4 km dedicated + 3.4 km shared lanes; all 18 parcels carry robot-scenario tags.",
+      "evidence_artifact_refs": []
     },
     {
       "item_id": "land_use_layout",
@@ -222,7 +225,8 @@
         "VISUAL_STATIC"
       ],
       "evidence_summary_zh": "用地布局：18个分区无重叠完整覆盖临时边界，8类合法用地代码；机器人语义通过robot_zone属性表达而不改代码枚举。",
-      "evidence_summary_en": "Land use: 18 non-overlapping parcels fully cover the provisional boundary with 8 legal land-use codes; robot semantics expressed via robot_zone props, not enum changes."
+      "evidence_summary_en": "Land use: 18 non-overlapping parcels fully cover the provisional boundary with 8 legal land-use codes; robot semantics expressed via robot_zone props, not enum changes.",
+      "evidence_artifact_refs": []
     },
     {
       "item_id": "development_intensity_controls",
@@ -280,7 +284,8 @@
       "evidence_summary_en": "Development intensity: all status=unknown (FAR/height/density lack official controls); conceptual buildings carry height_conceptual_m flagged as illustrative, not approved.",
       "completeness_limited_by": [
         "official regulatory-plan conditions unpublished"
-      ]
+      ],
+      "evidence_artifact_refs": []
     },
     {
       "item_id": "height_massing_character",
@@ -335,7 +340,8 @@
         "VISUAL_STATIC"
       ],
       "evidence_summary_zh": "高度体量风貌：机器人设施按'低矮轻量'原则（驿站4.5m/维保基地6.0m概念值），主体建筑体量沿用既有基底不新增高层；风貌建议银灰+京张绿。",
-      "evidence_summary_en": "Height and massing: robot facilities follow a low-light principle (stations 4.5 m / depots 6.0 m conceptual); main buildings reuse existing footprints, no new towers; silver-grey + Jingzhang green character suggestion."
+      "evidence_summary_en": "Height and massing: robot facilities follow a low-light principle (stations 4.5 m / depots 6.0 m conceptual); main buildings reuse existing footprints, no new towers; silver-grey + Jingzhang green character suggestion.",
+      "evidence_artifact_refs": []
     },
     {
       "item_id": "retain_renovate_demolish",
@@ -393,7 +399,8 @@
       "evidence_summary_en": "Retain-renovate-demolish: zero large-scale demolition principle; all buildings are conceptual retain/renovate + light modular stations; R/R/D conclusions await official control conditions.",
       "completeness_limited_by": [
         "building inventory and ownership data unpublished"
-      ]
+      ],
+      "evidence_artifact_refs": []
     },
     {
       "item_id": "traffic_rail_slow_parking",
@@ -452,7 +459,12 @@
         "VISUAL_STATIC"
       ],
       "evidence_summary_zh": "交通轨道慢行停车：共行网与慢行主轴叠加设计，三种断面（专用2.5m/共享/行人优先）+限速分级（5/8/10/15km/h）；轨道接驳线与停车供给为概念建议，红线与消防条件待确认。",
-      "evidence_summary_en": "Traffic/rail/slow/parking: co-mobility overlays the slow-traffic spine; three cross-sections (dedicated 2.5 m / shared / pedestrian-priority) with speed tiers (5/8/10/15 km/h); metro feeders and parking are conceptual; redlines and fire conditions pending."
+      "evidence_summary_en": "Traffic/rail/slow/parking: co-mobility overlays the slow-traffic spine; three cross-sections (dedicated 2.5 m / shared / pedestrian-priority) with speed tiers (5/8/10/15 km/h); metro feeders and parking are conceptual; redlines and fire conditions pending.",
+      "evidence_artifact_refs": [
+        "visual/assets/scenario-cards.json",
+        "visual/assets/co-mobility-contracts.json",
+        "visual/assets/license-tabletop-evidence.json"
+      ]
     },
     {
       "item_id": "municipal_new_infrastructure",
@@ -507,7 +519,8 @@
         "VISUAL_STATIC"
       ],
       "evidence_summary_zh": "市政与新基建：充电维保基地2座（概念）、驿站6座按'模块化+可迁移'设计；电力、通信、消防条件列为正式深化前置条件。",
-      "evidence_summary_en": "Municipal/new infrastructure: 2 charging depots and 6 modular relocatable stations (conceptual); power, telecom and fire conditions listed as formal deepening preconditions."
+      "evidence_summary_en": "Municipal/new infrastructure: 2 charging depots and 6 modular relocatable stations (conceptual); power, telecom and fire conditions listed as formal deepening preconditions.",
+      "evidence_artifact_refs": []
     },
     {
       "item_id": "blue_green_public_space",
@@ -562,7 +575,8 @@
         "VISUAL_STATIC"
       ],
       "evidence_summary_zh": "蓝绿公共空间：共行绿廊五段与绿地图层一致，绿地率0.256389、公共空间率0.209042（union复算）；共行零点广场/人机共行记忆长廊承载公共体验。",
-      "evidence_summary_en": "Blue-green public space: five greenway segments match the green layer; green ratio 0.256389, public-space ratio 0.209042 (union recalculation); Zero Plaza and memory corridor carry public experience."
+      "evidence_summary_en": "Blue-green public space: five greenway segments match the green layer; green ratio 0.256389, public-space ratio 0.209042 (union recalculation); Zero Plaza and memory corridor carry public experience.",
+      "evidence_artifact_refs": []
     },
     {
       "item_id": "three_key_area_detailed_design",
@@ -621,7 +635,12 @@
         "VISUAL_STATIC"
       ],
       "evidence_summary_zh": "三重点区深化：众智园（测试场/研发/发布）、原点社区（示范运营/时空馆/零点广场）、大钟寺（终端产业/方舟旗舰/体验广场）均有场景、项目包与实施依赖表。",
-      "evidence_summary_en": "Three key areas: Zhongzhiyuan (test ground/R&D/release), Origin Community (pilot operation/museum/Zero Plaza), Dazhongsi (terminal industry/ark flagship/experience plaza), each with scenarios, project packages and dependency tables."
+      "evidence_summary_en": "Three key areas: Zhongzhiyuan (test ground/R&D/release), Origin Community (pilot operation/museum/Zero Plaza), Dazhongsi (terminal industry/ark flagship/experience plaza), each with scenarios, project packages and dependency tables.",
+      "evidence_artifact_refs": [
+        "visual/assets/scenario-cards.json",
+        "visual/assets/co-mobility-contracts.json",
+        "visual/assets/license-tabletop-evidence.json"
+      ]
     },
     {
       "item_id": "renewal_project_list",
@@ -659,7 +678,10 @@
         "robot_lane_length_m",
         "robot_delivery_station_count",
         "robot_charging_depot_count",
-        "phasing_zone_count"
+        "phasing_zone_count",
+        "license_contract_count",
+        "tabletop_case_count",
+        "governance_role_count"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -680,7 +702,12 @@
         "VISUAL_STATIC"
       ],
       "evidence_summary_zh": "更新项目清单：12个可审查概念项目包（JZ-01..JZ-12），每项含位置/类型/功能/责任主体/依赖条件/阶段/风险/评估指标与退出条件，全部为概念建议。",
-      "evidence_summary_en": "Renewal project list: 12 reviewable conceptual project packages (JZ-01..JZ-12) each with location/type/function/owner/dependencies/phase/risk/indicators and exit conditions, all framed as proposals."
+      "evidence_summary_en": "Renewal project list: 12 reviewable conceptual project packages (JZ-01..JZ-12) each with location/type/function/owner/dependencies/phase/risk/indicators and exit conditions, all framed as proposals.",
+      "evidence_artifact_refs": [
+        "visual/assets/scenario-cards.json",
+        "visual/assets/co-mobility-contracts.json",
+        "visual/assets/license-tabletop-evidence.json"
+      ]
     },
     {
       "item_id": "phasing_implementation",
@@ -718,7 +745,10 @@
         "robot_lane_length_m",
         "robot_delivery_station_count",
         "robot_charging_depot_count",
-        "phasing_zone_count"
+        "phasing_zone_count",
+        "license_contract_count",
+        "tabletop_case_count",
+        "governance_role_count"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -739,7 +769,8 @@
         "VISUAL_STATIC"
       ],
       "evidence_summary_zh": "分期实施：近期示范段（原点社区配送试点）→中期网络化（大钟寺+公园核心段）→远期贯通（众智园接入）；每期列前置条件、主体类型、资金类别与退出条件。",
-      "evidence_summary_en": "Phasing: near-term demo (Origin Community delivery pilot) → mid-term networking (Dazhongsi + park core) → long-term through-connection (Zhongzhiyuan); each phase lists preconditions, actor types, funding categories and exit conditions."
+      "evidence_summary_en": "Phasing: near-term demo (Origin Community delivery pilot) → mid-term networking (Dazhongsi + park core) → long-term through-connection (Zhongzhiyuan); each phase lists preconditions, actor types, funding categories and exit conditions.",
+      "evidence_artifact_refs": []
     },
     {
       "item_id": "metrics_recalculation",
@@ -773,7 +804,10 @@
         "building_footprint_area_sqm",
         "green_ratio",
         "public_space_ratio",
-        "key_area_count"
+        "key_area_count",
+        "license_contract_count",
+        "tabletop_case_count",
+        "governance_role_count"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -794,7 +828,8 @@
         "VISUAL_STATIC"
       ],
       "evidence_summary_zh": "指标复算：6项交叉指标以EPSG:4548 union复算（site 11,412,825.386㎡、绿地率0.256389、公共空间率0.209042）；19项指标全部known/unknown状态明确。",
-      "evidence_summary_en": "Metrics: 6 cross-checked metrics recomputed with EPSG:4548 unions (site 11,412,825.386 m², green ratio 0.256389, public-space ratio 0.209042); all 19 metrics have explicit known/unknown status."
+      "evidence_summary_en": "Metrics: 6 cross-checked metrics recomputed with EPSG:4548 unions (site 11,412,825.386 m², green ratio 0.256389, public-space ratio 0.209042); all 19 metrics have explicit known/unknown status.",
+      "evidence_artifact_refs": []
     },
     {
       "item_id": "risk_missing_data",
@@ -828,7 +863,10 @@
         "building_footprint_area_sqm",
         "green_ratio",
         "public_space_ratio",
-        "key_area_count"
+        "key_area_count",
+        "license_contract_count",
+        "tabletop_case_count",
+        "governance_role_count"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -849,7 +887,12 @@
         "VISUAL_STATIC"
       ],
       "evidence_summary_zh": "风险与缺资料：risk.json六维度（隐私/公众接受/技术成熟/政策/运营成本/空间争议），score≥3维度全部附human_review；缺资料清单进入assumptions.json与正文风险节。",
-      "evidence_summary_en": "Risk/missing data: risk.json six dimensions (privacy/public acceptance/technology maturity/policy/operations cost/spatial dispute), human_review on every score≥3 dimension; missing-data checklist enters assumptions.json and the risk section."
+      "evidence_summary_en": "Risk/missing data: risk.json six dimensions (privacy/public acceptance/technology maturity/policy/operations cost/spatial dispute), human_review on every score≥3 dimension; missing-data checklist enters assumptions.json and the risk section.",
+      "evidence_artifact_refs": [
+        "visual/assets/scenario-cards.json",
+        "visual/assets/co-mobility-contracts.json",
+        "visual/assets/license-tabletop-evidence.json"
+      ]
     }
   ]
 }
