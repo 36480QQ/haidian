@@ -140,10 +140,10 @@ The global cases are seven, selected for being *of the same kind as one mechanis
 | Case | Ecosystem niche (matching component) | What it teaches this proposal | Status |
 |---|---|---|---|
 | Toronto Quayside (announced 2017; developer announced termination in May 2020) [source:CASE-QUAYSIDE] | Failure cases and exit mechanism (D-03, the Retirement Ground) | When data-governance disputes are unresolved at the mechanism level, public trust collapses before the technology fails; exit and failure display must be part of the institution, not an accident | verified |
-| Amsterdam / Helsinki algorithm registers (launched September 2020) [source:CASE-AI-REGISTER] | Public registration (the JZ-Gauge version register) | City-level public algorithm registers already run in practice; the value lies in field structure and accountability, not in registration itself | verified |
+| Amsterdam algorithm register (live on the municipal site; Helsinki runs an equivalent register) [source:CASE-AI-REGISTER] | Public registration (the JZ-Gauge version register) | City-level public algorithm registers already run in practice; the value lies in field structure and accountability, not in registration itself | verified |
 | UK Algorithmic Transparency Recording Standard, maintained by GDS [source:CASE-UK-ATRS] | Standardising the register fields themselves (spec-card fields) | Making "what to register" itself a cross-department standard — isomorphic to the spec card's "define once, cite everywhere" | verified |
-| Singapore AI Verify (released 2022; foundation established 2023) [source:CASE-AI-VERIFY] | Conformance testing (testing capacity at Gauge Works) | Government-led "test before claim": governance claims can be tooled and made verifiable — isomorphic to this proposal's "pass the test and you are in" | verified |
-| EU model contractual clauses for AI procurement, MCC-AI (published 2023) [source:CASE-MCC-AI] | Procurement interface (the institutional form of the JZ-Parts catalogue) | Public procurement is the strongest executor of a specification; templated clauses make "buy to spec" replicable | verified |
+| Singapore AI Verify (released May 2022) [source:CASE-AI-VERIFY] | Conformance testing (testing capacity at Gauge Works) | Government-led "test before claim": governance claims can be tooled and made verifiable — isomorphic to this proposal's "pass the test and you are in" | verified |
+| EU model contractual clauses for AI procurement, MCC-AI (European Commission Community of Practice working document; light version published February 2025) [source:CASE-MCC-AI] | Procurement interface (the institutional form of the JZ-Parts catalogue) | Public procurement is the strongest executor of a specification; templated clauses make "buy to spec" replicable | verified |
 | Spain's AI regulatory sandbox (Royal Decree 817/2023) [source:CASE-ES-SANDBOX] | The legal form of experimental zones (Field Wing scenario opening) | A lawful channel for trial within drawn boundaries has a legislative precedent; a sandbox's output should feed specification revision rather than be an exemption in itself | verified |
 | Singapore one-north (launched 2001) [source:CASE-ONE-NORTH] | A phased innovation-district spatial sequence (gauge-setting — first installation — volume deployment) | Twenty-year phased development lets research, piloting, and industrialisation unfold as a gradient within one district; the spatial sequence serves the industrial sequence | verified |
 
@@ -550,10 +550,10 @@ The repository working documents `docs/data-workflow.md` and `docs/terminology-g
 **Cited (external public sources, retrieved 2026-08-13)**
 
 - Toronto Quayside termination coverage (CBC, May 2020) [source:CASE-QUAYSIDE]
-- Amsterdam algorithm register (municipal site, launched September 2020, jointly with Helsinki) [source:CASE-AI-REGISTER]
+- Amsterdam algorithm register (municipal site, live) [source:CASE-AI-REGISTER]
 - UK Algorithmic Transparency Recording Standard hub (gov.uk, maintained by GDS) [source:CASE-UK-ATRS]
 - Singapore AI Verify press release (IMDA, 2022-05-25) [source:CASE-AI-VERIFY]
-- EU model contractual clauses for AI procurement, MCC-AI (OECD.AI policy entry) [source:CASE-MCC-AI]
+- EU model contractual clauses for AI procurement, MCC-AI (OECD.AI policy entry; light version published 2025-02) [source:CASE-MCC-AI]
 - Spain's AI regulatory sandbox under Royal Decree 817/2023 (Pinsent Masons, November 2023) [source:CASE-ES-SANDBOX]
 - Singapore one-north innovation district entry (National Library Board Singapore) [source:CASE-ONE-NORTH]
 

@@ -63,7 +63,8 @@
       "id": "CASE-AI-REGISTER",
       "url": "https://algoritmeregister.amsterdam.nl/",
       "source_type": "official_public",
-      "usage": "Amsterdam algorithm register (with Helsinki ai.hel.fi, launched 2020-09); retrieved 2026-08-13."
+      "usage": "Amsterdam algorithm register, live municipal register page; Helsinki runs an equivalent register (ai.hel.fi); retrieved 2026-08-13.",
+      "limitations": "登记册页面本身未标注上线日期，本包不就上线时间作事实断言，仅引用其作为运行中的城市级算法公开登记先例。"
     },
     {
       "id": "CASE-UK-ATRS",
@@ -81,7 +82,8 @@
       "id": "CASE-MCC-AI",
       "url": "https://oecd.ai/en/dashboards/policy-initiatives/model-contractual-clauses-for-the-public-procurement-of-non-high-risk-ai-mcc-ai-light",
       "source_type": "official_public",
-      "usage": "EU model contractual clauses for public procurement of AI (MCC-AI, 2023, high-risk and light versions); retrieved 2026-08-13."
+      "usage": "EU model contractual clauses for the public procurement of non-high-risk AI (MCC-AI-Light), European Commission Community of Practice working document published 2025-02, per OECD.AI policy entry; retrieved 2026-08-13.",
+      "limitations": "OECD.AI 条目载明该文件为欧委会 AI 采购实践社区的工作文件、不代表欧盟委员会官方立场；本包仅引用其作为「按规格采购」条款模板化的先例。"
     },
     {
       "id": "CASE-ES-SANDBOX",
