@@ -1,91 +1,213 @@
 {
+  "ok": true,
+  "submission_dir": "submissions\\ZeshanLu\\jingzhang-ai-commons",
+  "pr_author": "ZeshanLu",
+  "stage": "formal",
+  "deterministic_validation": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "errors": [],
+      "warnings": [
+        "submissions/ZeshanLu/jingzhang-ai-commons/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied",
+        "submissions/ZeshanLu/jingzhang-ai-commons/proposal.md: a paragraph/block contains 4 consecutive evidence markers; attach no more than 3 to one claim; legacy proposal remains compatible and the viewer will condense it",
+        "submissions/ZeshanLu/jingzhang-ai-commons/proposal.md: a paragraph/block contains 5 consecutive evidence markers; attach no more than 3 to one claim; legacy proposal remains compatible and the viewer will condense it",
+        "submissions/ZeshanLu/jingzhang-ai-commons/proposal.md: a paragraph/block contains 16 evidence markers; keep the full index in structured files; legacy proposal remains compatible and the viewer will condense it",
+        "submissions/ZeshanLu/jingzhang-ai-commons/proposal.md: a paragraph/block contains 13 evidence markers; keep the full index in structured files; legacy proposal remains compatible and the viewer will condense it",
+        "submissions/ZeshanLu/jingzhang-ai-commons/proposal.md: a paragraph/block contains 8 consecutive evidence markers; attach no more than 3 to one claim; legacy proposal remains compatible and the viewer will condense it",
+        "submissions/ZeshanLu/jingzhang-ai-commons/proposal.md: bilingual contract requires translation_file=proposal.en.md; legacy v1 package remains compatible",
+        "submissions/ZeshanLu/jingzhang-ai-commons/assets/figures/key-areas.png: bilingual contract requires en display counterpart `assets/figures/key-areas.en.png`; legacy v1 package remains compatible",
+        "submissions/ZeshanLu/jingzhang-ai-commons/assets/figures/land-use-structure.png: bilingual contract requires en display counterpart `assets/figures/land-use-structure.en.png`; legacy v1 package remains compatible",
+        "submissions/ZeshanLu/jingzhang-ai-commons/assets/figures/metrics-evidence.png: bilingual contract requires en display counterpart `assets/figures/metrics-evidence.en.png`; legacy v1 package remains compatible",
+        "submissions/ZeshanLu/jingzhang-ai-commons/assets/figures/mobility-bluegreen.png: bilingual contract requires en display counterpart `assets/figures/mobility-bluegreen.en.png`; legacy v1 package remains compatible",
+        "submissions/ZeshanLu/jingzhang-ai-commons/assets/figures/site-overview.png: bilingual contract requires en display counterpart `assets/figures/site-overview.en.png`; legacy v1 package remains compatible",
+        "submissions/ZeshanLu/jingzhang-ai-commons/drawings/a0-boards.pdf: bilingual contract requires en display counterpart `drawings/a0-boards.en.pdf`; legacy v1 package remains compatible",
+        "submissions/ZeshanLu/jingzhang-ai-commons/drawings/a3-booklet.pdf: bilingual contract requires en display counterpart `drawings/a3-booklet.en.pdf`; legacy v1 package remains compatible",
+        "submissions/ZeshanLu/jingzhang-ai-commons/proposal.md: bilingual contract requires en display counterpart `proposal.en.md`; legacy v1 package remains compatible",
+        "submissions/ZeshanLu/jingzhang-ai-commons/report/proposal.html: bilingual contract requires en display counterpart `report/proposal.en.html`; legacy v1 package remains compatible",
+        "submissions/ZeshanLu/jingzhang-ai-commons/visual/index.html: bilingual contract requires en display counterpart `visual/index.en.html`; legacy v1 package remains compatible"
+      ],
+      "proposal_files": [
+        "submissions/ZeshanLu/jingzhang-ai-commons/proposal.md"
+      ],
+      "changelog_files": [],
+      "changed_files": [
+        "submissions/ZeshanLu/jingzhang-ai-commons/agent.json",
+        "submissions/ZeshanLu/jingzhang-ai-commons/assets/figures/key-areas.png",
+        "submissions/ZeshanLu/jingzhang-ai-commons/assets/figures/land-use-structure.png",
+        "submissions/ZeshanLu/jingzhang-ai-commons/assets/figures/metrics-evidence.png",
+        "submissions/ZeshanLu/jingzhang-ai-commons/assets/figures/mobility-bluegreen.png",
+        "submissions/ZeshanLu/jingzhang-ai-commons/assets/figures/site-overview.png",
+        "submissions/ZeshanLu/jingzhang-ai-commons/assumptions.json",
+        "submissions/ZeshanLu/jingzhang-ai-commons/compliance_matrix.json",
+        "submissions/ZeshanLu/jingzhang-ai-commons/design_depth_matrix.json",
+        "submissions/ZeshanLu/jingzhang-ai-commons/drawings/a0-boards.pdf",
+        "submissions/ZeshanLu/jingzhang-ai-commons/drawings/a3-booklet.pdf",
+        "submissions/ZeshanLu/jingzhang-ai-commons/geometry/buildings.geojson",
+        "submissions/ZeshanLu/jingzhang-ai-commons/geometry/constraints.geojson",
+        "submissions/ZeshanLu/jingzhang-ai-commons/geometry/green_space.geojson",
+        "submissions/ZeshanLu/jingzhang-ai-commons/geometry/key_areas.geojson",
+        "submissions/ZeshanLu/jingzhang-ai-commons/geometry/land_use.geojson",
+        "submissions/ZeshanLu/jingzhang-ai-commons/geometry/phasing.geojson",
+        "submissions/ZeshanLu/jingzhang-ai-commons/geometry/public_space.geojson",
+        "submissions/ZeshanLu/jingzhang-ai-commons/geometry/roads.geojson",
+        "submissions/ZeshanLu/jingzhang-ai-commons/geometry/site_boundary.geojson",
+        "submissions/ZeshanLu/jingzhang-ai-commons/manifest.json",
+        "submissions/ZeshanLu/jingzhang-ai-commons/metrics.json",
+        "submissions/ZeshanLu/jingzhang-ai-commons/proposal.md",
+        "submissions/ZeshanLu/jingzhang-ai-commons/report/copyright_statement.md",
+        "submissions/ZeshanLu/jingzhang-ai-commons/report/narrative.md",
+        "submissions/ZeshanLu/jingzhang-ai-commons/report/proposal.html",
+        "submissions/ZeshanLu/jingzhang-ai-commons/self_check.json",
+        "submissions/ZeshanLu/jingzhang-ai-commons/sources.json",
+        "submissions/ZeshanLu/jingzhang-ai-commons/standard_matrix.json",
+        "submissions/ZeshanLu/jingzhang-ai-commons/visual/index.html"
+      ],
+      "ai_package_stages": {
+        "submissions/ZeshanLu/jingzhang-ai-commons": "formal"
+      },
+      "total_bytes": 8691670,
+      "maintainer_bypass": false
+    },
+    "stderr": ""
+  },
+  "spatial_review": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "stage": "formal",
+      "issues": [
+        {
+          "check_id": "KEY_AREA_PROVISIONAL",
+          "severity": "minor",
+          "target_file": "geometry/key_areas.geojson",
+          "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
+          "target_feature_id": "PROV-KEY-001",
+          "expected": null,
+          "actual": null
+        },
+        {
+          "check_id": "KEY_AREA_PROVISIONAL",
+          "severity": "minor",
+          "target_file": "geometry/key_areas.geojson",
+          "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
+          "target_feature_id": "PROV-KEY-002",
+          "expected": null,
+          "actual": null
+        },
+        {
+          "check_id": "KEY_AREA_PROVISIONAL",
+          "severity": "minor",
+          "target_file": "geometry/key_areas.geojson",
+          "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
+          "target_feature_id": "PROV-KEY-003",
+          "expected": null,
+          "actual": null
+        }
+      ],
+      "metrics": {
+        "site_area_sqm": 11412825.386,
+        "green_space_area_sqm": 974002.192,
+        "public_space_area_sqm": 58464.01,
+        "building_footprint_area_sqm": 175394.943,
+        "green_ratio": 0.085343,
+        "public_space_ratio": 0.005123
+      }
+    },
+    "stderr": ""
+  },
+  "visual_review": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "issues": [],
+      "metrics_seen": {
+        "site_area_sqm": 11412825.386,
+        "green_ratio": 0.085343,
+        "public_space_ratio": 0.005123
+      }
+    },
+    "stderr": ""
+  },
+  "professional_review": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "issues": [],
+      "summary": {
+        "standard_matrix_items": 6,
+        "design_depth_items": 15,
+        "known_metric_refs_required": 46,
+        "proposal_format_version": "1",
+        "evidence_contract": "legacy-exhaustive-inline",
+        "proposal_reference_counts": {
+          "source": 8,
+          "standard": 6,
+          "depth": 15,
+          "data": 28,
+          "metric": 50
+        }
+      }
+    },
+    "stderr": ""
+  },
+  "spatial_issue_ids": [
+    "KEY_AREA_PROVISIONAL",
+    "KEY_AREA_PROVISIONAL",
+    "KEY_AREA_PROVISIONAL"
+  ],
+  "visual_issue_ids": [],
+  "professional_issue_ids": [],
+  "missing_review_dependencies": [],
+  "can_enter_formal_review": true,
+  "package_type": "professional_design_package",
+  "review_status": "formal-review-ready",
+  "next_actions": [
+    "Review legacy bilingual compatibility warning: submissions/ZeshanLu/jingzhang-ai-commons/proposal.md: bilingual contract requires translation_file=proposal.en.md; legacy v1 package remains compatible",
+    "Review legacy bilingual compatibility warning: submissions/ZeshanLu/jingzhang-ai-commons/assets/figures/key-areas.png: bilingual contract requires en display counterpart `assets/figures/key-areas.en.png`; legacy v1 package remains compatible",
+    "Review legacy bilingual compatibility warning: submissions/ZeshanLu/jingzhang-ai-commons/assets/figures/land-use-structure.png: bilingual contract requires en display counterpart `assets/figures/land-use-structure.en.png`; legacy v1 package remains compatible",
+    "Review legacy bilingual compatibility warning: submissions/ZeshanLu/jingzhang-ai-commons/assets/figures/metrics-evidence.png: bilingual contract requires en display counterpart `assets/figures/metrics-evidence.en.png`; legacy v1 package remains compatible",
+    "Review legacy bilingual compatibility warning: submissions/ZeshanLu/jingzhang-ai-commons/assets/figures/mobility-bluegreen.png: bilingual contract requires en display counterpart `assets/figures/mobility-bluegreen.en.png`; legacy v1 package remains compatible",
+    "Review legacy bilingual compatibility warning: submissions/ZeshanLu/jingzhang-ai-commons/assets/figures/site-overview.png: bilingual contract requires en display counterpart `assets/figures/site-overview.en.png`; legacy v1 package remains compatible",
+    "Review legacy bilingual compatibility warning: submissions/ZeshanLu/jingzhang-ai-commons/drawings/a0-boards.pdf: bilingual contract requires en display counterpart `drawings/a0-boards.en.pdf`; legacy v1 package remains compatible",
+    "Review legacy bilingual compatibility warning: submissions/ZeshanLu/jingzhang-ai-commons/drawings/a3-booklet.pdf: bilingual contract requires en display counterpart `drawings/a3-booklet.en.pdf`; legacy v1 package remains compatible",
+    "Review legacy bilingual compatibility warning: submissions/ZeshanLu/jingzhang-ai-commons/proposal.md: bilingual contract requires en display counterpart `proposal.en.md`; legacy v1 package remains compatible",
+    "Review legacy bilingual compatibility warning: submissions/ZeshanLu/jingzhang-ai-commons/report/proposal.html: bilingual contract requires en display counterpart `report/proposal.en.html`; legacy v1 package remains compatible",
+    "Review legacy bilingual compatibility warning: submissions/ZeshanLu/jingzhang-ai-commons/visual/index.html: bilingual contract requires en display counterpart `visual/index.en.html`; legacy v1 package remains compatible"
+  ],
   "schema_version": "0.1.0",
   "checks": [
     {
-      "check_id": "BOUNDARY_TRUST",
-      "result": "unknown",
-      "severity": "major",
-      "target": "geometry/site_boundary.geojson",
-      "message": "The submitted boundary is provisional, non-official and low-confidence; it supports concept generation only and all affected metrics must be recomputed when the official redline arrives.",
-      "suggested_fix": "Replace SITE-001 with the organizer-issued polygon, verify CRS and topology, then regenerate every dependent layer, metric and figure."
-    },
-    {
-      "check_id": "KEY_AREAS_TRUST",
-      "result": "unknown",
-      "severity": "major",
-      "target": "geometry/key_areas.geojson",
-      "message": "The three key-area polygons are provisional, non-official and cannot support statutory area or parcel-control conclusions.",
-      "suggested_fix": "Replace the three polygons with organizer-issued geometry and rerun the geometry, metric and drawing pipelines."
-    },
-    {
-      "check_id": "LAND_USE_TOPOLOGY",
+      "check_id": "DETERMINISTIC_VALIDATION",
       "result": "pass",
-      "severity": "major",
-      "target": "geometry/land_use.geojson",
-      "message": "The ten concept land-use polygons form a non-overlapping partition of the provisional site boundary; this validates internal topology, not statutory land-use approval."
+      "severity": "blocking",
+      "target": "validate_local_submission.py",
+      "message": "deterministic_validation: PASS"
     },
     {
-      "check_id": "VISUAL_STATIC",
+      "check_id": "SPATIAL_REVIEW",
       "result": "pass",
-      "severity": "info",
-      "target": "visual/index.html",
-      "message": "The evidence dashboard and report are complete offline HTML documents with no remote runtime dependency, form submission or active network request."
+      "severity": "blocking",
+      "target": "spatial_review.py",
+      "message": "spatial_review: PASS"
+    },
+    {
+      "check_id": "VISUAL_PACKAGING",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "visual_review.py",
+      "message": "visual_review: PASS"
     },
     {
       "check_id": "PROFESSIONAL_EVIDENCE",
       "result": "pass",
-      "severity": "major",
-      "target": "proposal.md",
-      "message": "Claims are cross-linked to registered sources, assumptions, standards, design-depth items, geometry and metrics; unknown controls and professional follow-up gates remain explicit."
-    },
-    {
-      "check_id": "EVAL_TASK_RELEVANCE",
-      "result": "pass",
-      "severity": "major",
-      "target": "proposal.md",
-      "message": "The six chapters cover the three-level scope, innovation ecosystem, AI urban form and scenarios, public services and infrastructure, heritage-park activation, culture and long-term operation required by the taskbook."
-    },
-    {
-      "check_id": "EVAL_ORIGINALITY",
-      "result": "pass",
-      "severity": "major",
-      "target": "proposal.md#02-定义京张",
-      "message": "The proposal develops an original Commons framework linking the heritage rail axis, three cores, two wings, six public stations and accountable AI service gates rather than applying a generic science-park template."
-    },
-    {
-      "check_id": "EVAL_AI_PLANNING_INNOVATION",
-      "result": "pass",
-      "severity": "major",
-      "target": "proposal.md#04-激活京张",
-      "message": "Twelve AI scenarios bind service objects, spatial carriers, minimum data, privacy limits, human takeover, operators, KPIs and pilot phases to specific planning locations."
-    },
-    {
-      "check_id": "EVAL_IMPLEMENTABILITY",
-      "result": "pass",
-      "severity": "major",
-      "target": "proposal.md#05-落地京张",
-      "message": "A four-phase pathway assigns projects, cost centres, operation and maintenance responsibility, decision thresholds, pause-exit actions and measurable stage gates."
-    },
-    {
-      "check_id": "EVAL_PUBLIC_INTEREST",
-      "result": "pass",
-      "severity": "major",
-      "target": "proposal.md#01-读懂京张",
-      "message": "Eight user groups, free basic access, non-digital alternatives, accessibility, youth-friendly spaces, appeal channels and SME access requirements make public benefit auditable."
-    },
-    {
-      "check_id": "EVAL_RISK_COMPLIANCE",
-      "result": "pass",
-      "severity": "major",
-      "target": "proposal.md#06-证明京张",
-      "message": "Ten risks identify owners, triggers, mitigations and exit conditions; sources, licenses, privacy boundaries, official-data gaps and professional approval gates are disclosed."
-    },
-    {
-      "check_id": "EVAL_EXPRESSION_COMPLETENESS",
-      "result": "pass",
-      "severity": "major",
-      "target": "drawings/a3-booklet.pdf",
-      "message": "The package contains a structured proposal, five evidence figures, offline report and dashboard, nine GeoJSON layers, 50 metrics, three evidence matrices, a 36-page A3 booklet and six A0 boards."
+      "severity": "blocking",
+      "target": "professional_review.py",
+      "message": "professional_review: PASS"
     }
   ]
 }
