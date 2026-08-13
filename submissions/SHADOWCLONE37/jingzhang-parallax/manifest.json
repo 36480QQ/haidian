@@ -15,6 +15,7 @@
     "model_detail": "Primary Codex desktop agent; deterministic local generation with Python 3.12."
   },
   "generated_at": "2026-08-13T01:59:56Z",
+  "cover_image": "assets/media/cover.webp",
   "files": [
     {
       "path": "manifest.json",
@@ -26,7 +27,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "4a94eebacba0cf33c333722bc1afa0defeb983d40d4098ed2a7a572f575aa98a"
+      "sha256": "49396feb4c36cdd9cd9a725b39b755c4efd5ec71ddee2da3f1b5b1ccc4707e25"
     },
     {
       "path": "agent.json",
@@ -56,7 +57,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "f40bc4d663d5be838bc6a64c2b26c61360c21f34cfebcb3888af1418b463c855"
+      "sha256": "21236ab9de158b938d455ff385167651486d7aced3f631227e31c346f061d0b4"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +82,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "f87e2a0c726a49363e1aaf86ebbcfc916e41cd5fd17528fa463973a6c87e331e"
+      "sha256": "ccd7ac7f526dc5131b077bb9923f779695d7345a0908b69217d584359ee755c3"
     },
     {
       "path": "report/narrative.md",
@@ -93,21 +94,21 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "290385ba316f449031d119086514c56a9e4e41db31d47eee3440eb0dc1b96c37"
+      "sha256": "46aad0d233e2a54280f00667d533912583073b7e5726a8f2dc53638437b21fd0"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "78fc35d8958e8ac29032efc518042bdf2e972e2a9d981e23cfcfed7462541922"
+      "sha256": "b581757e99a4a84a06472d50cd286052d1793dd1ecee019f3381738897ba0dba"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "444326bcc1d34e9c4e6a8bb627b6163ce13258d6c8ce2c9a5fded6568dd3b810"
+      "sha256": "dc926be1f2537ebf5570e0f55b9d2387349bf380661bd1aa4d0454c2ec200a36"
     },
     {
       "path": "visual/index.html",
@@ -209,7 +210,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "a6283ac005d4390d277fc9e6b3a16526f239de7d75ff5567eb5d1f6cde907eee"
+      "sha256": "65d7a7d24b7ee0ef4249efd9cf536d2f23a195f57acd698c8d6b79bed9215607"
     },
     {
       "path": "proposal.en.md",
@@ -217,7 +218,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "66ef52324ecf1d07ffc7b24380d3b55ad9d373309bd4d563da5cb994986cb720"
+      "sha256": "89c3e237ad45730c91d01efc3a15acc11617f0c04fd531964b1acf9b98d0a194"
     },
     {
       "path": "report/proposal.en.html",
@@ -225,7 +226,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "f6fb5822ddf283e768086165790997a0cf0972141e2b862c3af279966b32d7c8"
+      "sha256": "9d2fab46257003cea8568056de7a45a50a0d6aaa8432e5d0f1145199bdad6327"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -233,7 +234,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "280df4ad81238d13d7f79516bedc369a65e0e6b019fda36a045b36cdf7958e8a"
+      "sha256": "40f44dfa74aead55e7f67b7b12a18041efaaf3c9591fb83183e124f9fdb2c55c"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -241,7 +242,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "18f7cd5079b88a1a96c7aaeaea2deed64336301e75727adc3864d9aa0a854b79"
+      "sha256": "aae3e9f8a7134965edb3e053e530937a92c15fc75bcf42743e6437dc8e7136da"
     },
     {
       "path": "visual/index.en.html",
@@ -290,6 +291,17 @@
       "language": "en",
       "translation_of": "assets/figures/site-overview.png",
       "sha256": "c400f398dae806998dab6b9d416cca59a8ade96add420cd11b2e0afff2d58f7c"
+    },
+    {
+      "path": "assets/media/cover.webp",
+      "role": "media_poster",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "京张视差概念性空间主视觉",
+      "title_en": "Parallax Jing-Zhang conceptual spatial hero",
+      "description_zh": "AI 生成的概念性空间想象，用于解释模型线、生活线与三座多解场；不代表现状、审批方案或公众意见。",
+      "description_en": "AI-generated conceptual spatial visualization of the model line, lived line, and three plural-futures yards; not existing conditions, an approved plan, or evidence of public opinion.",
+      "sha256": "46a04ecc5f9c210db75009abbf89fa6feb58b55fe07177a3d8155e90227a990b"
     }
   ],
   "validation_claim": {
