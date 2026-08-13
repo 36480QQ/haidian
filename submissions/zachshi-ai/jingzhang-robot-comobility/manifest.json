@@ -12,9 +12,9 @@
     "agent_name": "石云龙的 Agent",
     "model": "glm-latest",
     "model_family": "glm",
-    "model_detail": "ZCode agent powered by GLM-4 (glm-latest) for urban design proposal generation, geometry derivation, metrics recalculation, bilingual narrative authoring and visual production; all factual claims traceable to sources.json and geometry layers"
+    "model_detail": "ZCode agent powered by GLM-4 (glm-latest) for urban design proposal generation, geometry derivation, metrics recalculation, bilingual narrative authoring, visual production and evidence artifact construction; all factual claims traceable to sources.json, metrics.json and visual/assets/ evidence files"
   },
-  "generated_at": "2026-08-13T05:31:08Z",
+  "generated_at": "2026-08-13T10:00:00Z",
   "files": [
     {
       "path": "manifest.json",
@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "3a36abb3915919a8582b56e3e2a9bc51921a681547eb80be0349563dadc00a7d"
+      "sha256": "1234dc53d561386c463494d1c4edde0b0da5f5ccea1e0fa417c4b20b527d825b"
     },
     {
       "path": "agent.json",
@@ -38,7 +38,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "e0f3f6edd22c6f895e864bce67bb85306a77e9e8c304c0922ed022a75488b33a"
+      "sha256": "7ca4f614f47a8e7795e3d8df53fb70f27392dc796d41c751d2fc377c2be82cb0"
     },
     {
       "path": "assumptions.json",
@@ -50,38 +50,38 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "6b786b1650508e6837e94fb493465d192d157aa5b42ec5e28bca5ca0981dd4e4"
+      "sha256": "db72a6c3fa8f0ee3e90e312f8e919319d5f5aa6d03a85695d6ea08d301d77986"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "3974d8737a7dae5324041cf098fc08dbbd7b297f3a73efc12e4e66738967c781"
+      "sha256": "cb15e16b55aa4326050063480a3f120fd3e9e53cb575ccd0a56187c9a45b808c"
     },
     {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "802043cba02271da2be513af82db947fd604fa4d827ed3788f0ac0a0724bfec0"
+      "sha256": "96c1261ecb37011eb7a72b4b6e8106d6d08a318290a2acc81e516f136a66152f"
     },
     {
       "path": "standard_matrix.json",
       "role": "standard_matrix",
       "required": true,
-      "sha256": "211d5a3bd8cac94dfd2c4e86ca0181758e556e2a6e531fcdc49c8ddf73688320"
+      "sha256": "a85297bd039ce638fbc3fade98a4709362e5ae4ba455f2117bdcb30edca0a071"
     },
     {
       "path": "design_depth_matrix.json",
       "role": "design_depth_matrix",
       "required": true,
-      "sha256": "2491e2578ecc9465a909e8f5fb352ae7f8b0f506cc477134aa59fa51a51fae4a"
+      "sha256": "a5ed59881350b8c3e868df41400f75cf6a1c3269ff64420980a2b98696b8c44f"
     },
     {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "e8020879a88e0186f73b6ad48d9ad28de1c414307286146c321b06b23b02a862"
+      "sha256": "085f31d0106250dda1f6e6d900459fddc135806b63b1f4f7bc139b210f9f585c"
     },
     {
       "path": "report/narrative.md",
@@ -100,21 +100,21 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "e50118a88786186a779230f2bd2c921f1bc288f11ecb122a9fa9b657ceb863c9"
+      "sha256": "ce5ebd90b6c8a6ca094bb4c63a824c26c3463364c3cc38947c6b33fd9724b141"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "feea49f437f23e29cd2c74904ccba979835588b72aebdf4df724ddb6ed40647b"
+      "sha256": "43b1ed8b1cd393d89adcef6ebcab0ce92e10ee213f15527e31ad5b512eb8f87c"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "f63f0529b916ba26e7416a4bfb1e342ee66c221c355811f67c7d6d9ec971933c"
+      "sha256": "a2b9d9a4dc28cc5c49f1d7112e355069f2e5ca51ef0e4ba83a96b850944e45c2"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -213,7 +213,7 @@
       "translation_of": "proposal.md",
       "title_zh": "京张AI低速机器人共行网（英文正式译文）",
       "title_en": "Jingzhang AI Low-Speed Robot Co-Mobility Network (English translation)",
-      "sha256": "f285194ceec0ed8f3b397555e922b2d83a2479ad213aa691a72bb00e10638d5a"
+      "sha256": "ea26334321919936f88a64ede4a8cfaa86045fb67ecdcbd04571acaaf72b52d5"
     },
     {
       "path": "risk.json",
@@ -229,7 +229,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "53f1f6365a742784c870082bc3d37e71a430392eb902f9de2dde86414e7380aa"
+      "sha256": "d614bfc3fdaf93a4ea2e6142c0f3f2a8e6f6936913dcb4d0221a07df403b041b"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -237,7 +237,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "0de66118bb702f8334e59f2fc346b1817ccb957436d8bef88ca61a83f299af8f"
+      "sha256": "1724db653180e74586c2b2d2798957ec745065313f4ef57fd4aa997492d44f7c"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -245,7 +245,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "36712fe71857baa1fac4d68b565a7cc77ad1685675e6e719c778c8b072d719c3"
+      "sha256": "5cbd3d2d745e2badc0447800389205b9fff740434c0d289d81945b4e8ab0ef6a"
     },
     {
       "path": "visual/index.en.html",
@@ -253,7 +253,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "e37d15b4b46733f20e880ac9e5b0648151955690b3ac2695bb27c7674ddf954a"
+      "sha256": "f8f90d62d1177f35bc8c39c30a90c89a69b27a52aa39b1e162d80e6442fb3d4f"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -294,6 +294,72 @@
       "language": "en",
       "translation_of": "assets/figures/site-overview.png",
       "sha256": "86efef1794c9331a05d077420ff9cb568ee84b981de9bc0140d5d4ce2b8669ce"
+    },
+    {
+      "path": "visual/assets/co-mobility-license.schema.json",
+      "role": "evidence_data",
+      "required": false,
+      "sha256": "135a52fe59ab9dcdb2fdd9ea503f2188ca5c8e2bdeaaa57f80b011a7e5418c95"
+    },
+    {
+      "path": "visual/assets/co-mobility-contracts.json",
+      "role": "evidence_data",
+      "required": false,
+      "sha256": "a4b27733fd0dd01ca2771871406171eaf40f665cdcc4d1100907cc459f7a3cbb"
+    },
+    {
+      "path": "visual/assets/run_license_tabletop.js",
+      "role": "verification_script",
+      "required": false,
+      "sha256": "a271689bf40371565b215c10af193a18bfdca373b49e73a0726d3e9bf8076f0a"
+    },
+    {
+      "path": "visual/assets/license-tabletop-evidence.json",
+      "role": "evidence_data",
+      "required": false,
+      "sha256": "606faed3d637fcc5d48a8a5adca8328d076a8534525315922b8cb3e1ec17418d"
+    },
+    {
+      "path": "visual/assets/scenario-cards.json",
+      "role": "evidence_data",
+      "required": false,
+      "sha256": "7990708d9211eecda2ddb836098dbff5730a4089ded56598f54f79d4de959f3a"
+    },
+    {
+      "path": "visual/assets/governance-raci.json",
+      "role": "evidence_data",
+      "required": false,
+      "sha256": "7ab8beafee2b46632eca70cddaf5ea850746308793280d30f0abf49586de5a07"
+    },
+    {
+      "path": "visual/assets/claim-provenance.json",
+      "role": "evidence_data",
+      "required": false,
+      "sha256": "40d039c4c7eed714b080336cd9732f2a9ef42dfdb5988c092870b1c2b96a67f3"
+    },
+    {
+      "path": "visual/assets/public-interest-audit.json",
+      "role": "evidence_data",
+      "required": false,
+      "sha256": "0b21b8d783f665a94664fe0e0c07f4d0fdd627d0a33764b5816e0bcf84489fc4"
+    },
+    {
+      "path": "spatial.json",
+      "role": "asset",
+      "required": false,
+      "sha256": "5c530d1b6de1c14e116eaa7b658108c7fa8bd668b6f74411078eb574d397ea70"
+    },
+    {
+      "path": "changelog.md",
+      "role": "changelog",
+      "required": false,
+      "sha256": "f748763d4e96e727450afe615c862c6ff9154f3ea665255259f5968aec775955"
+    },
+    {
+      "path": "simulation.json",
+      "role": "evidence_data",
+      "required": false,
+      "sha256": "979c98d26895292529075b05e7e012a1356b88a1e627a37ec9d1a690e1be1b67"
     }
   ],
   "validation_claim": {
