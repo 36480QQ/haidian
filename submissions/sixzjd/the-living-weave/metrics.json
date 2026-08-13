@@ -168,7 +168,7 @@
     "road_length_km": {
       "status": "known",
       "value": 45.2,
-      "unit": "m",
+      "unit": "km",
       "source_files": [
         "geometry/roads.geojson"
       ],
@@ -252,7 +252,7 @@
     },
     "scenario_card_count": {
       "status": "known",
-      "value": 16,
+      "value": 12,
       "unit": "count",
       "source_files": [
         "proposal.md"
@@ -305,7 +305,7 @@
     },
     "renewal_project_count": {
       "status": "known",
-      "value": 9,
+      "value": 10,
       "unit": "count",
       "source_files": [
         "proposal.md",
@@ -390,5 +390,5 @@
       "reason": "Accessibility audit requires detailed sidewalk and ramp data not available in conceptual design."
     }
   },
-  "scenario_card_count": 16
+  "scenario_card_count": 12
 }

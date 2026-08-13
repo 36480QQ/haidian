@@ -116,19 +116,19 @@ code {
 <p class="translation-link"><a href="proposal.en.html">Read in English</a></p>
 </section>
 <h1>京张织 · The Living Weave</h1>
-<blockquote><p>城市不是机器，城市是一匹活的织物。铁路是经线，横path是纬线，AI是提花机——人类历史上第一台可编程的机器。我们不是在规划一座城市，我们是在重新穿线，让百年京张的经纬重新织出未来。</p></blockquote>
+<blockquote><p>城市不是机器，城市是一匹活的织物。铁路是经线，横向连接是纬线，AI 是提花机——人类历史上第一台可编程的机器。我们不是在规划一座城市，我们是在重新穿线，让百年京张的经纬重新织出未来。</p></blockquote>
 <p>---</p>
 <h2>1. 设计依据与资料清单</h2>
 <h3>1.1 织物的第一根线：来源与依据</h3>
 <p>每一匹织物的第一根线是经线——它决定整匹织物的方向和张力。本方案的第一根经线，是北京市规划和自然资源委员会海淀分局发布的《百年京张AI创新带城市设计国际方案征集资格预审公告》 <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="OFFICIAL-ANNOUNCEMENT" title="来源：OFFICIAL-ANNOUNCEMENT">来源</sup>。公告确定了三层范围、三处重点区域、五大功能和交付深度，是整份方案不可动摇的起点。</p>
-<p>第二根经线是《面向智能体任务书》 <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="AGENT-TASKBOOK" title="来源：AGENT-TASKBOOK">来源</sup>，它将公告的设计要求转译为六个智能体可执行的开放任务（agent.1—agent.6），涵盖命名与视觉识别、全球案例对标、场景卡设计、用户画像、朝圣路线和长期运营机制。第三根经线是来源登记表 <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="SOURCE-REGISTRY" title="来源：SOURCE-REGISTRY">来源</sup>，它区分了官方公开资料、已清权资料和临时推断资料的可用边界，确保方案不将 provisional 数据冒充法定结论。</p>
+<p>第二根经线是《面向智能体任务书》 <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="AGENT-TASKBOOK" title="来源：AGENT-TASKBOOK">来源</sup>，它将公告的设计要求转译为六个智能体可执行的开放任务（agent.1—agent.6）：总体概念与功能统筹、全栈创新生态、AI+场景赋能、公共空间与地标、三种文化融合叙事、全球活动与长期运营。第三根经线是来源登记表 <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="SOURCE-REGISTRY" title="来源：SOURCE-REGISTRY">来源</sup>，它区分了组织方正式可用资料、背景参考和临时推断资料的可用边界，确保方案不将 provisional 数据冒充法定结论。</p>
 <p>辅助导航层包括事实包 <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="PROCESSED-FACT-PACK" title="来源：PROCESSED-FACT-PACK">来源</sup>——它帮助设计者快速理解三层范围、任务清单和资料缺口，但本身不构成新的权威来源。所有事实判断仍需回到已登记的原始材料。</p>
 <figure class="proposal-figure"><img src="../assets/figures/site-overview.png" alt="资料证据链与场地总览"><figcaption>资料证据链与场地总览</figcaption></figure>
 <h3>1.2 资料可用性的&quot;织物质检&quot;</h3>
 <p>如同织造前需检查每根纱线的强度与来源，本方案对所有引用资料进行分级管理 <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="SOURCE-REGISTRY" title="来源：SOURCE-REGISTRY">来源</sup>：</p>
 <ul>
-<li><strong>正式可用资料</strong>（formal-ready）：公告原文、任务书、公开地理信息——可直接用于方案生成和评分响应。</li>
-<li><strong>背景参考</strong>（background-only）：学术论文、媒体报道、全球案例——用于论证和类比，不作为法定依据。</li>
+<li><strong>正式可用资料</strong>（formal-ready）：仅限组织方来源登记表明确允许的公告、任务书、资料包和已清权资料——可直接用于方案生成和评分响应。</li>
+<li><strong>背景参考</strong>（background-only）：公开地理信息、学术论文、媒体报道和全球案例——仅用于论证和类比，不作为正式证据或法定依据。</li>
 <li><strong>临时推断资料</strong>（provisional-only）：由 agent 根据公开地图数据推断的场地边界和重点区几何——仅用于方案生成、自检和可视化讨论，<strong>不得作为官方红线、审批依据、精确面积结论或法定控制线</strong>。</li>
 </ul>
 <p>当前提交包中，<code>geometry/site_boundary.geojson</code> 与 <code>geometry/key_areas.geojson</code> 均标注为 <code>provisional_constraint</code>、<code>official_boundary=false</code> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/site_boundary.geojson#SITE-001" title="空间数据：geometry/site_boundary.geojson#SITE-001">空间数据</sup>。这意味着正文中所有空间结构、面积指标和项目布局均为<strong>概念性建议</strong>，待官方正式边界发布后须全面复算。该数据缺口本身不阻断内容评分 <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="site_area_sqm" title="指标：site_area_sqm">指标</sup>。</p>
@@ -191,7 +191,7 @@ code {
 <p>方案提出以下空间组织原则：</p>
 <p>1. <strong>经线优先</strong>：京张遗址公园作为南北主轴，其公共空间、慢行系统和景观界面优先保障，任何横向开发不得阻断经线的连续性。 2. <strong>纬线分层</strong>：三条横向发展带各有明确的密度梯度和功能侧重，避免同质化竞争。 3. <strong>交织加密</strong>：在轨道站点、公园入口和公共广场等关键节点，加密经纬交织频率，形成高人气的&quot;花结点&quot;。 4. <strong>边缘疏松</strong>：在清河沿岸、高校边界和产业区边缘，保持疏松的织法，为未来功能变化预留弹性。</p>
 <h3>4.3 建筑规模的&quot;织物克重&quot;</h3>
-<p>建筑方案以 <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/buildings.geojson#BLDG-001" title="空间数据：geometry/buildings.geojson#BLDG-001">空间数据</sup> 为基底，区分保留、改造、更新、新建和待确认五类对象 <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="retain_renovate_demolish" title="深度：retain_renovate_demolish">深度</sup>。当前建筑基底面积约 31.08 万平方米 <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="building_footprint_area_sqm" title="指标：building_footprint_area_sqm">指标</sup>。</p>
+<p>建筑方案以 <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/buildings.geojson#BLDG-001" title="空间数据：geometry/buildings.geojson#BLDG-001">空间数据</sup> 为基底，区分保留、改造、更新、新建和待确认五类对象 <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="retain_renovate_demolish" title="深度：retain_renovate_demolish">深度</sup>。当前概念建筑基底面积约 54.63 万平方米 <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="building_footprint_area_sqm" title="指标：building_footprint_area_sqm">指标</sup>；该值只反映提交几何，不是法定建设规模。</p>
 <p>建筑高度、体量和风貌控制遵循以下层级：</p>
 <ul>
 <li><strong>已知条件</strong>：以官方控规和文保要求为准。</li>
@@ -277,7 +277,7 @@ code {
 <div class="proposal-table"><table><thead><tr><th>织法类型</th><th>用地功能</th><th>密度梯度</th><th>对应区域</th></tr></thead><tbody><tr><td>疏织（Open Weave）</td><td>研发办公、创客空间、开放测试场</td><td>低密度、高弹性</td><td>众智园</td></tr><tr><td>密织（Dense Weave）</td><td>人才住宅、共享办公、成果转化</td><td>高密度、高混合</td><td>AI原点社区</td></tr><tr><td>结构织（Structured Weave）</td><td>企业总部、商业中心、数据设施</td><td>中高密度、高稳定</td><td>大钟寺</td></tr><tr><td>经线（Warp）</td><td>京张遗址公园、公共绿地、慢行系统</td><td>线性连续</td><td>全线</td></tr><tr><td>交织点（Cross-weave）</td><td>轨道站点、公共广场、服务节点</td><td>节点加密</td><td>关键节点</td></tr></tbody></table></div>
 <p>用地分类的完整属性表保存在 <code>geometry/land_use.geojson</code> 中，每个多边形包含用地类别、密度梯度、建议容积率和实施状态字段。</p>
 <h3>7.2 建筑规模的&quot;织物克重&quot;</h3>
-<p>建筑方案以 <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/buildings.geojson#BLDG-001" title="空间数据：geometry/buildings.geojson#BLDG-001">空间数据</sup> 为基底 <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="building_footprint_area_sqm" title="指标：building_footprint_area_sqm">指标</sup>。当前建筑基底面积约 31.08 万平方米。</p>
+<p>建筑方案以 <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/buildings.geojson#BLDG-001" title="空间数据：geometry/buildings.geojson#BLDG-001">空间数据</sup> 为基底 <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="building_footprint_area_sqm" title="指标：building_footprint_area_sqm">指标</sup>。当前概念建筑基底面积约 54.63 万平方米，待正式边界、权属和控规条件到位后整体复算。</p>
 <p>建筑规模控制遵循以下原则：</p>
 <ul>
 <li><strong>已知条件</strong>：以官方控规、文保要求和已审批规划条件为准。</li>
@@ -324,7 +324,7 @@ code {
 <h2>9. 蓝绿空间、公共空间与城市风貌</h2>
 <h3>9.1 蓝绿空间的&quot;绿色经纬&quot;</h3>
 <p>蓝绿空间方案以京张遗址公园活力带为骨架 <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/green_space.geojson#GREEN-001" title="空间数据：geometry/green_space.geojson#GREEN-001">空间数据</sup>，统筹清河、小月河、周边高校和企业绿地，提出南北贯通、东西连通的蓝绿系统。</p>
-<p>当前绿地率约 12.3% <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="green_ratio" title="指标：green_ratio">指标</sup>，公共空间比例约 7.3% <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="public_space_ratio" title="指标：public_space_ratio">指标</sup>。方案通过以下策略提升蓝绿空间的质量和连通性：</p>
+<p>当前概念绿地率约 19.99% <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="green_ratio" title="指标：green_ratio">指标</sup>，公共空间比例约 7.98% <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="public_space_ratio" title="指标：public_space_ratio">指标</sup>。两项指标均按临时边界内提交几何复算，方案通过以下策略提升蓝绿空间的质量和连通性：</p>
 <ul>
 <li><strong>经线绿廊</strong>：沿京张遗址公园建设连续的生物多样性和慢行复合绿廊，作为城市&quot;绿色经线&quot;。</li>
 <li><strong>纬线绿带</strong>：在三条横向发展带中设置线性公园和绿色街道，将经线绿廊与周边社区、高校和企业绿地连接。</li>
@@ -383,7 +383,7 @@ code {
 <h3>11.1 三类指标</h3>
 <p>方案将指标分为三类，分别对应不同的数据来源和置信度：</p>
 <p><strong>第一类：空间指标</strong>（可由提交几何直接复算）</p>
-<div class="proposal-table"><table><thead><tr><th>指标</th><th>数值</th><th>来源</th><th>置信度</th></tr></thead><tbody><tr><td>总体设计范围面积</td><td>≈11.4 km²</td><td><sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="site_area_sqm" title="指标：site_area_sqm">指标</sup> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/site_boundary.geojson#SITE-001" title="空间数据：geometry/site_boundary.geojson#SITE-001">空间数据</sup></td><td>高（provisional）</td></tr><tr><td>建筑基底面积</td><td>≈31.08 万 m²</td><td><sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="building_footprint_area_sqm" title="指标：building_footprint_area_sqm">指标</sup> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/buildings.geojson#BLDG-001" title="空间数据：geometry/buildings.geojson#BLDG-001">空间数据</sup></td><td>中</td></tr><tr><td>绿地率</td><td>≈12.3%</td><td><sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="green_ratio" title="指标：green_ratio">指标</sup> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/green_space.geojson#GREEN-001" title="空间数据：geometry/green_space.geojson#GREEN-001">空间数据</sup></td><td>中</td></tr><tr><td>公共空间比例</td><td>≈7.3%</td><td><sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="public_space_ratio" title="指标：public_space_ratio">指标</sup> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/public_space.geojson#PUBLIC-001" title="空间数据：geometry/public_space.geojson#PUBLIC-001">空间数据</sup></td><td>中</td></tr><tr><td>重点区域数量</td><td>3</td><td><sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="key_area_count" title="指标：key_area_count">指标</sup> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/key_areas.geojson#KEY-001" title="空间数据：geometry/key_areas.geojson#KEY-001">空间数据</sup></td><td>高</td></tr></tbody></table></div>
+<div class="proposal-table"><table><thead><tr><th>指标</th><th>数值</th><th>来源</th><th>置信度</th></tr></thead><tbody><tr><td>总体设计范围面积</td><td>≈11.4 km²</td><td><sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="site_area_sqm" title="指标：site_area_sqm">指标</sup> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/site_boundary.geojson#SITE-001" title="空间数据：geometry/site_boundary.geojson#SITE-001">空间数据</sup></td><td>高（provisional）</td></tr><tr><td>建筑基底面积</td><td>≈54.63 万 m²</td><td><sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="building_footprint_area_sqm" title="指标：building_footprint_area_sqm">指标</sup> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/buildings.geojson#BLDG-001" title="空间数据：geometry/buildings.geojson#BLDG-001">空间数据</sup></td><td>中（概念几何）</td></tr><tr><td>绿地率</td><td>≈19.99%</td><td><sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="green_ratio" title="指标：green_ratio">指标</sup> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/green_space.geojson#GREEN-001" title="空间数据：geometry/green_space.geojson#GREEN-001">空间数据</sup></td><td>中（临时边界）</td></tr><tr><td>公共空间比例</td><td>≈7.98%</td><td><sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="public_space_ratio" title="指标：public_space_ratio">指标</sup> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/public_space.geojson#PUBLIC-001" title="空间数据：geometry/public_space.geojson#PUBLIC-001">空间数据</sup></td><td>中（临时边界）</td></tr><tr><td>重点区域数量</td><td>3</td><td><sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="key_area_count" title="指标：key_area_count">指标</sup> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/key_areas.geojson#KEY-001" title="空间数据：geometry/key_areas.geojson#KEY-001">空间数据</sup></td><td>高</td></tr></tbody></table></div>
 <p><strong>第二类：管控指标</strong>（需官方控规支撑）</p>
 <p>容积率、建筑高度、建筑密度、退线、道路红线、设施标准——当前均列为 <code>unknown</code> 或 <code>pending_control</code>，待正式控规条件确认后填入。</p>
 <p><strong>第三类：绩效指标</strong>（需运营数据持续校准）</p>
@@ -396,12 +396,12 @@ code {
 <li>公告 1.3（构建世界级 AI 创新生态体系）→ 第 2、3 节</li>
 <li>公告 1.4（总体设计范围城市更新）→ 第 4、7、8 节</li>
 <li>公告 1.5（重点区域详细设计）→ 第 5 节</li>
-<li>agent.1（命名与视觉识别）→ 第 3.2 节</li>
-<li>agent.2（全球案例对标）→ 第 3.4 节</li>
-<li>agent.3（场景卡设计）→ 第 6.2 节</li>
-<li>agent.4（用户画像）→ 第 6.1 节</li>
-<li>agent.5（朝圣路线与地标）→ 第 5.2—5.4、9.2 节</li>
-<li>agent.6（长期运营机制）→ 第 10.2—10.4 节</li>
+<li>agent.1（总体概念与功能统筹）→ 第 2、4 节</li>
+<li>agent.2（全栈创新生态）→ 第 3、5 节</li>
+<li>agent.3（AI+场景赋能）→ 第 6 节</li>
+<li>agent.4（公共空间、智能原生业态与地标）→ 第 5、9 节</li>
+<li>agent.5（京张、中关村与 AI 新文化叙事）→ 第 3、8、9 节</li>
+<li>agent.6（全球活动与长期运营）→ 第 10 节</li>
 </ul>
 <p>---</p>
 <h2>12. 风险、版权与合规说明</h2>
@@ -415,7 +415,7 @@ code {
 </ul>
 <p>上述缺口不阻断内容评分，但方案不声称官方批准、审定控规、最终土地权属、最终建设规模或保证实施。</p>
 <h3>12.2 版权与知识产权</h3>
-<p>所有图片、图纸、图标、数据和代码资产在 <code>sources.json</code> 和 <code>report/copyright_statement.md</code> 中说明来源、许可和授权状态。</p>
+<p>所有图片、图纸、图标、数据和代码资产在 <code>sources.json</code> 和 <code>report/copyright_statement.md</code> 中说明来源、许可、生成方法和再分发状态。</p>
 <ul>
 <li>HTML 页面不加载远程脚本、远程地图瓦片、远程字体、iframe、表单或外部 API，不跟踪评审者行为。</li>
 <li>所有品牌、字体、图像、肖像和企业标识必须有清权来源。</li>

@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "88631c59add11373338a549f771d94a7ad20921b6b07633cf65dd3ee13b619f9"
+      "sha256": "367d5b8d8dda538e44de47fd249bf227655200317ac5b249ac348fcd8e85b10f"
     },
     {
       "path": "agent.json",
@@ -38,7 +38,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "475fc8388884217c365e1ad525db23291e82925b55f23c2fe191c7139b4a976a"
+      "sha256": "9be91971f60d418d0336ac47257ea3b15c019809fcaa02772c78e1dc205b9570"
     },
     {
       "path": "assumptions.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "f8f4a8bf7f66055c6e5b071f3e019042db634edd189d585cce718a9eb6e213a3"
+      "sha256": "a994bc61d778a4ff32c645cd155b3f5fa70c8a58277e2fc3160ac2c8f7a55844"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,40 +81,40 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "bb02383957a393cbe26e7e7c3181e658f1978986dfb101ec85a8e2f440428d90"
+      "sha256": "ed9bbcedfedb292219819edf6483c5ade33e65f35d674f6e02f64c23786792fa"
     },
     {
       "path": "report/narrative.md",
       "role": "narrative",
       "required": false,
-      "sha256": "a7e943e4ae7ea6fac88f67458edaf3270f89a5bffa2868c5ba142cd34ec4f8ad"
+      "sha256": "bbe1bf2e9160644a1c5de1e0bfa8b0b88e191e9838fc9e0813b4fed02b3983cb"
     },
     {
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "1d1faa5dee4bbea754a9ebc80e9393e185de6dd90518a6f5819f55c434baed8f"
+      "sha256": "893bd039775f073573a07a3829c21a61ac6df315132822002adc662b0b3ba71c"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "cd620d49f5a171421b4e7de737ddea7395002ea08935a7b28fbeab892fb4be9b"
+      "sha256": "27156b257097d8770c9778a1561c1c04902aa74b9e1f525389f6c77c89ca8501"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "32caa0706e3f55733d1d079a932b625ec4eaab68f67ba40a4fbf4eb2c9b5ebf4"
+      "sha256": "4ce59f39364cd14f2e0e55b35ed6f7b2868edffb7963a92687e2745af8a2c7ac"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "9568fe849c29126f6efb5db7ff551d81d3999bf10424709059542933d4406c7c"
+      "sha256": "22ce722e2a1e66b6f272508f9401d949a20ead15aac8cc2c0bef2308344acd2a"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "206ba1789c89a98da22e37bf8032d8e32976082f3a6cc91f07145c88ba2e4b1e"
+      "sha256": "cdd3cae5b11495438deccd423869c57da4e1cdb92656d345d402f3f82ce4d9df"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "6aa7eabca75d32d02be20bb09dd887f30379170734fd6db36b3370a4b36d230e"
+      "sha256": "a1b8834a786cb65a4e4338a43f7991d5f8b9ead3d7d0513bf4925b7e07da792f"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -227,7 +227,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "5dee383c9b25881129bbf5906b3df2c1a2ff82eca707862b65ff63ab079dcaa8"
+      "sha256": "04077a4a975efc99a9affdb4074d85c70eb254667346c4b6870b781ffdc4157e"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -235,7 +235,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "0466b5d69c8d37766d8667fcf859d5044cde1a460b18a7cbc680df784c687b5b"
+      "sha256": "b7737ec6c3165eac809fb7e59965b038a128673b8ef2ef367a5fcf6bc68a6d97"
     },
     {
       "path": "visual/index.en.html",

@@ -23,7 +23,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 The first thread in any fabric is the warp — it sets the direction and tension for the entire cloth. The first warp thread of this proposal is the *Prequalification Notice for the International Urban Design Competition for the Century-Old Jingzhang AI Innovation Belt*, issued by the Haidian Sub-bureau of the Beijing Municipal Commission of Planning and Natural Resources [source:OFFICIAL-ANNOUNCEMENT]. The notice defines the three scope tiers, three key areas, five functional requirements, and delivery depth — the immovable starting point for this entire proposal.
 
-The second warp thread is the *Agent Task Book* [source:AGENT-TASKBOOK], which translates the competition's design requirements into six open, agent-executable tasks (agent.1 through agent.6), covering naming and visual identity, global case benchmarking, scenario card design, user personas, pilgrimage routes, and long-term operational mechanisms. The third warp thread is the Source Registry [source:SOURCE-REGISTRY], which distinguishes the usability boundaries of official public data, cleared data, and provisional inferences — ensuring the proposal never presents provisional data as statutory conclusions.
+The second warp thread is the *Agent Task Book* [source:AGENT-TASKBOOK], which translates the competition's design requirements into six open, agent-executable tasks (agent.1 through agent.6): overall concept and functional coordination, full-stack innovation ecosystem, AI-enabled scenarios, public space and landmarks, a three-culture narrative, and global activities with long-term operations. The third warp thread is the Source Registry [source:SOURCE-REGISTRY], which distinguishes organizer-approved formal material, background references, and provisional inferences — ensuring the proposal never presents provisional data as statutory conclusions.
 
 A supplementary navigation layer includes the Processed Fact Pack [source:PROCESSED-FACT-PACK] — it helps designers quickly grasp the three scope tiers, the task list, and data gaps, but does not itself constitute a new authoritative source. All factual determinations must still trace back to the registered original materials.
 
@@ -168,7 +168,7 @@ The proposal puts forward the following spatial organization principles:
 
 ### 4.3 Building Scale as "Fabric Weight"
 
-The building proposal takes [data:geometry/buildings.geojson#BLDG-001] as its baseline, distinguishing five object types: retain, renovate, regenerate, new-build, and pending confirmation [depth:retain_renovate_demolish]. Current building footprint area is approximately 310,800 square meters [metric:building_footprint_area_sqm].
+The building proposal takes [data:geometry/buildings.geojson#BLDG-001] as its baseline, distinguishing five object types: retain, renovate, regenerate, new-build, and pending confirmation [depth:retain_renovate_demolish]. Current conceptual building footprint area is approximately 546,300 square meters [metric:building_footprint_area_sqm]; it is not a statutory development quota.
 
 Building height, massing, and character controls follow this hierarchy:
 
@@ -325,7 +325,7 @@ The complete attribute table for land-use classification is stored in `geometry/
 
 ### 7.2 Building Scale as "Fabric Weight"
 
-The building proposal takes [data:geometry/buildings.geojson#BLDG-001] as its baseline [metric:building_footprint_area_sqm]. Current building footprint area is approximately 310,800 square meters.
+The building proposal takes [data:geometry/buildings.geojson#BLDG-001] as its baseline [metric:building_footprint_area_sqm]. Current conceptual building footprint area is approximately 546,300 square meters and must be recalculated when official boundaries, ownership, and controls are available.
 
 Building scale controls follow these principles:
 
@@ -396,7 +396,7 @@ Facility standards, spatial layout, service radii, and operating models — wher
 
 The blue-green space plan takes the Jingzhang Heritage Park Vitality Belt as its backbone [data:geometry/green_space.geojson#GREEN-001], integrating the Qinghe River, Xiaoyue River, surrounding university and enterprise green spaces into a north–south continuous, east–west connected blue-green system.
 
-Current green-space ratio is approximately 12.3% [metric:green_ratio]; public-space proportion is approximately 7.3% [metric:public_space_ratio]. The proposal improves the quality and connectivity of blue-green space through the following strategies:
+Current conceptual green-space ratio is approximately 19.99% [metric:green_ratio]; public-space proportion is approximately 7.98% [metric:public_space_ratio]. Both are recalculated from submitted geometry within the provisional boundary. The proposal improves the quality and connectivity of blue-green space through the following strategies:
 
 - **Warp Green Corridor**: Build a continuous biodiversity and slow-traffic composite green corridor along the Jingzhang Heritage Park, serving as the city's "green warp."
 - **Weft Green Belts**: Set linear parks and green streets along the three transverse development belts, connecting the warp green corridor with surrounding communities, universities, and enterprise green spaces.
@@ -510,9 +510,9 @@ The proposal classifies indicators into three categories, each corresponding to 
 | Indicator | Value | Source | Confidence |
 | --- | --- | --- | --- |
 | Overall Design Scope area | approx. 11.4 km² | [metric:site_area_sqm] [data:geometry/site_boundary.geojson#SITE-001] | High (provisional) |
-| Building footprint area | approx. 310,800 m² | [metric:building_footprint_area_sqm] [data:geometry/buildings.geojson#BLDG-001] | Medium |
-| Green-space ratio | approx. 12.3% | [metric:green_ratio] [data:geometry/green_space.geojson#GREEN-001] | Medium |
-| Public-space proportion | approx. 7.3% | [metric:public_space_ratio] [data:geometry/public_space.geojson#PUBLIC-001] | Medium |
+| Building footprint area | approx. 546,300 m² | [metric:building_footprint_area_sqm] [data:geometry/buildings.geojson#BLDG-001] | Medium (concept geometry) |
+| Green-space ratio | approx. 19.99% | [metric:green_ratio] [data:geometry/green_space.geojson#GREEN-001] | Medium (provisional boundary) |
+| Public-space proportion | approx. 7.98% | [metric:public_space_ratio] [data:geometry/public_space.geojson#PUBLIC-001] | Medium (provisional boundary) |
 | Number of key areas | 3 | [metric:key_area_count] [data:geometry/key_areas.geojson#KEY-001] | High |
 
 **Category 2: Regulatory Indicators** (requiring official regulatory-plan support)
@@ -534,12 +534,12 @@ Key coverage relationships:
 - Notice 1.3 (Build a world-class AI innovation ecosystem) -> Sections 2, 3
 - Notice 1.4 (Overall design scope urban regeneration) -> Sections 4, 7, 8
 - Notice 1.5 (Key area detailed design) -> Section 5
-- agent.1 (Naming and visual identity) -> Section 3.2
-- agent.2 (Global case benchmarking) -> Section 3.4
-- agent.3 (Scenario card design) -> Section 6.2
-- agent.4 (User personas) -> Section 6.1
-- agent.5 (Pilgrimage route and landmarks) -> Sections 5.2 — 5.4, 9.2
-- agent.6 (Long-term operational mechanism) -> Sections 10.2 — 10.4
+- agent.1 (Overall concept and functional coordination) -> Sections 2 and 4
+- agent.2 (Full-stack innovation ecosystem) -> Sections 3 and 5
+- agent.3 (AI-enabled scenarios) -> Section 6
+- agent.4 (Public space, native AI services and landmarks) -> Sections 5 and 9
+- agent.5 (Jing-Zhang, Zhongguancun and AI cultural narrative) -> Sections 3, 8 and 9
+- agent.6 (Global activities and long-term operations) -> Section 10
 
 ---
 

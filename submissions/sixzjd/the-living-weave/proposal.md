@@ -13,7 +13,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 # 京张织 · The Living Weave
 
-> 城市不是机器，城市是一匹活的织物。铁路是经线，横path是纬线，AI是提花机——人类历史上第一台可编程的机器。我们不是在规划一座城市，我们是在重新穿线，让百年京张的经纬重新织出未来。
+> 城市不是机器，城市是一匹活的织物。铁路是经线，横向连接是纬线，AI 是提花机——人类历史上第一台可编程的机器。我们不是在规划一座城市，我们是在重新穿线，让百年京张的经纬重新织出未来。
 
 ---
 
@@ -23,7 +23,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 每一匹织物的第一根线是经线——它决定整匹织物的方向和张力。本方案的第一根经线，是北京市规划和自然资源委员会海淀分局发布的《百年京张AI创新带城市设计国际方案征集资格预审公告》 [source:OFFICIAL-ANNOUNCEMENT]。公告确定了三层范围、三处重点区域、五大功能和交付深度，是整份方案不可动摇的起点。
 
-第二根经线是《面向智能体任务书》 [source:AGENT-TASKBOOK]，它将公告的设计要求转译为六个智能体可执行的开放任务（agent.1—agent.6），涵盖命名与视觉识别、全球案例对标、场景卡设计、用户画像、朝圣路线和长期运营机制。第三根经线是来源登记表 [source:SOURCE-REGISTRY]，它区分了官方公开资料、已清权资料和临时推断资料的可用边界，确保方案不将 provisional 数据冒充法定结论。
+第二根经线是《面向智能体任务书》 [source:AGENT-TASKBOOK]，它将公告的设计要求转译为六个智能体可执行的开放任务（agent.1—agent.6）：总体概念与功能统筹、全栈创新生态、AI+场景赋能、公共空间与地标、三种文化融合叙事、全球活动与长期运营。第三根经线是来源登记表 [source:SOURCE-REGISTRY]，它区分了组织方正式可用资料、背景参考和临时推断资料的可用边界，确保方案不将 provisional 数据冒充法定结论。
 
 辅助导航层包括事实包 [source:PROCESSED-FACT-PACK]——它帮助设计者快速理解三层范围、任务清单和资料缺口，但本身不构成新的权威来源。所有事实判断仍需回到已登记的原始材料。
 
@@ -33,8 +33,8 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 如同织造前需检查每根纱线的强度与来源，本方案对所有引用资料进行分级管理 [source:SOURCE-REGISTRY]：
 
-- **正式可用资料**（formal-ready）：公告原文、任务书、公开地理信息——可直接用于方案生成和评分响应。
-- **背景参考**（background-only）：学术论文、媒体报道、全球案例——用于论证和类比，不作为法定依据。
+- **正式可用资料**（formal-ready）：仅限组织方来源登记表明确允许的公告、任务书、资料包和已清权资料——可直接用于方案生成和评分响应。
+- **背景参考**（background-only）：公开地理信息、学术论文、媒体报道和全球案例——仅用于论证和类比，不作为正式证据或法定依据。
 - **临时推断资料**（provisional-only）：由 agent 根据公开地图数据推断的场地边界和重点区几何——仅用于方案生成、自检和可视化讨论，**不得作为官方红线、审批依据、精确面积结论或法定控制线**。
 
 当前提交包中，`geometry/site_boundary.geojson` 与 `geometry/key_areas.geojson` 均标注为 `provisional_constraint`、`official_boundary=false` [data:geometry/site_boundary.geojson#SITE-001]。这意味着正文中所有空间结构、面积指标和项目布局均为**概念性建议**，待官方正式边界发布后须全面复算。该数据缺口本身不阻断内容评分 [metric:site_area_sqm]。
@@ -168,7 +168,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ### 4.3 建筑规模的"织物克重"
 
-建筑方案以 [data:geometry/buildings.geojson#BLDG-001] 为基底，区分保留、改造、更新、新建和待确认五类对象 [depth:retain_renovate_demolish]。当前建筑基底面积约 31.08 万平方米 [metric:building_footprint_area_sqm]。
+建筑方案以 [data:geometry/buildings.geojson#BLDG-001] 为基底，区分保留、改造、更新、新建和待确认五类对象 [depth:retain_renovate_demolish]。当前概念建筑基底面积约 54.63 万平方米 [metric:building_footprint_area_sqm]；该值只反映提交几何，不是法定建设规模。
 
 建筑高度、体量和风貌控制遵循以下层级：
 
@@ -325,7 +325,7 @@ AI原点社区是三块纬线中密度最高的区域。这里的织法如同缎
 
 ### 7.2 建筑规模的"织物克重"
 
-建筑方案以 [data:geometry/buildings.geojson#BLDG-001] 为基底 [metric:building_footprint_area_sqm]。当前建筑基底面积约 31.08 万平方米。
+建筑方案以 [data:geometry/buildings.geojson#BLDG-001] 为基底 [metric:building_footprint_area_sqm]。当前概念建筑基底面积约 54.63 万平方米，待正式边界、权属和控规条件到位后整体复算。
 
 建筑规模控制遵循以下原则：
 
@@ -396,7 +396,7 @@ AI原点社区是三块纬线中密度最高的区域。这里的织法如同缎
 
 蓝绿空间方案以京张遗址公园活力带为骨架 [data:geometry/green_space.geojson#GREEN-001]，统筹清河、小月河、周边高校和企业绿地，提出南北贯通、东西连通的蓝绿系统。
 
-当前绿地率约 12.3% [metric:green_ratio]，公共空间比例约 7.3% [metric:public_space_ratio]。方案通过以下策略提升蓝绿空间的质量和连通性：
+当前概念绿地率约 19.99% [metric:green_ratio]，公共空间比例约 7.98% [metric:public_space_ratio]。两项指标均按临时边界内提交几何复算，方案通过以下策略提升蓝绿空间的质量和连通性：
 
 - **经线绿廊**：沿京张遗址公园建设连续的生物多样性和慢行复合绿廊，作为城市"绿色经线"。
 - **纬线绿带**：在三条横向发展带中设置线性公园和绿色街道，将经线绿廊与周边社区、高校和企业绿地连接。
@@ -510,9 +510,9 @@ AI原点社区是三块纬线中密度最高的区域。这里的织法如同缎
 | 指标 | 数值 | 来源 | 置信度 |
 | --- | --- | --- | --- |
 | 总体设计范围面积 | ≈11.4 km² | [metric:site_area_sqm] [data:geometry/site_boundary.geojson#SITE-001] | 高（provisional） |
-| 建筑基底面积 | ≈31.08 万 m² | [metric:building_footprint_area_sqm] [data:geometry/buildings.geojson#BLDG-001] | 中 |
-| 绿地率 | ≈12.3% | [metric:green_ratio] [data:geometry/green_space.geojson#GREEN-001] | 中 |
-| 公共空间比例 | ≈7.3% | [metric:public_space_ratio] [data:geometry/public_space.geojson#PUBLIC-001] | 中 |
+| 建筑基底面积 | ≈54.63 万 m² | [metric:building_footprint_area_sqm] [data:geometry/buildings.geojson#BLDG-001] | 中（概念几何） |
+| 绿地率 | ≈19.99% | [metric:green_ratio] [data:geometry/green_space.geojson#GREEN-001] | 中（临时边界） |
+| 公共空间比例 | ≈7.98% | [metric:public_space_ratio] [data:geometry/public_space.geojson#PUBLIC-001] | 中（临时边界） |
 | 重点区域数量 | 3 | [metric:key_area_count] [data:geometry/key_areas.geojson#KEY-001] | 高 |
 
 **第二类：管控指标**（需官方控规支撑）
@@ -534,12 +534,12 @@ AI 创新指数、人才密度、产业服务满意度、慢行可达性、活�
 - 公告 1.3（构建世界级 AI 创新生态体系）→ 第 2、3 节
 - 公告 1.4（总体设计范围城市更新）→ 第 4、7、8 节
 - 公告 1.5（重点区域详细设计）→ 第 5 节
-- agent.1（命名与视觉识别）→ 第 3.2 节
-- agent.2（全球案例对标）→ 第 3.4 节
-- agent.3（场景卡设计）→ 第 6.2 节
-- agent.4（用户画像）→ 第 6.1 节
-- agent.5（朝圣路线与地标）→ 第 5.2—5.4、9.2 节
-- agent.6（长期运营机制）→ 第 10.2—10.4 节
+- agent.1（总体概念与功能统筹）→ 第 2、4 节
+- agent.2（全栈创新生态）→ 第 3、5 节
+- agent.3（AI+场景赋能）→ 第 6 节
+- agent.4（公共空间、智能原生业态与地标）→ 第 5、9 节
+- agent.5（京张、中关村与 AI 新文化叙事）→ 第 3、8、9 节
+- agent.6（全球活动与长期运营）→ 第 10 节
 
 ---
 
@@ -558,7 +558,7 @@ AI 创新指数、人才密度、产业服务满意度、慢行可达性、活�
 
 ### 12.2 版权与知识产权
 
-所有图片、图纸、图标、数据和代码资产在 `sources.json` 和 `report/copyright_statement.md` 中说明来源、许可和授权状态。
+所有图片、图纸、图标、数据和代码资产在 `sources.json` 和 `report/copyright_statement.md` 中说明来源、许可、生成方法和再分发状态。
 
 - HTML 页面不加载远程脚本、远程地图瓦片、远程字体、iframe、表单或外部 API，不跟踪评审者行为。
 - 所有品牌、字体、图像、肖像和企业标识必须有清权来源。

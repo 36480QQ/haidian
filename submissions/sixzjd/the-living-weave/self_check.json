@@ -67,7 +67,7 @@
       "ai_package_stages": {
         "submissions/sixzjd/the-living-weave": "formal"
       },
-      "total_bytes": 31569070,
+      "total_bytes": 36117172,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -132,7 +132,7 @@
         "road_length_km": 45.2,
         "land_use_zone_count": 16.0,
         "building_count": 20.0,
-        "scenario_card_count": 16.0,
+        "scenario_card_count": 12.0,
         "persona_count": 6.0,
         "pilgrimage_landmark_count": 3.0
       }
@@ -174,7 +174,7 @@
   "package_type": "professional_design_package",
   "review_status": "formal-review-ready",
   "next_actions": [],
-  "self_checked_manifest_updated": true,
+  "schema_version": "0.1.0",
   "checks": [
     {
       "check_id": "DETERMINISTIC_VALIDATION",
