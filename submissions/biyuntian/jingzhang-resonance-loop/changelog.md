@@ -1,5 +1,22 @@
 # 方案迭代记录
 
+## v1.4 - 2026-08-13
+
+- Added a bilingual climate–space–service care loop that ties sun, rain and evening conditions to shade, drainage, night guidance, human maintenance and bounded low-carbon compute explanation.
+- Added a bilingual four-node cultural family that turns railway memory, public questioning, open contribution and station-city return into distinct everyday interfaces with participation and non-digital retained benefits.
+- Added a bilingual public-value evidence ledger that limits review to non-profiling observations of movement, understanding, human alternatives, care and feedback, with explicit retain/revise/return-to-people/exit outcomes.
+- Added a bilingual six-part public-interface chain connecting railway memory, campus-edge walking, three anchors, cross-line verification and station-city daily life through a shared movement-first rule.
+- Added a bilingual three-stage Resonance Roadmap that links baseline observation, reversible pilots and annual public review to explicit retain/revise/withdraw/exit decisions.
+- Added bilingual reversible detail kits for the heritage park, campus edge and station-city corner, with field observation, temporary setup, withdrawal rules and specialist handoff materials.
+- Added a bilingual three-anchor daily rhythm so commute peak, daytime and evening each test a retained human baseline, a bounded AI role and a visible site receipt.
+- Refined the core spatial method into the **Lasting Return Rule**: every digital pilot must leave a usable offline civic improvement for mobility, knowledge or everyday care.
+- Added a bilingual `resonance-return-system` diagram and connected it to both readable proposals and both offline visual indexes.
+- Reframed the six AI+ scenario cards as place-based services with a required retained public benefit, staffed baseline and stop condition.
+- Added professional handoff records for heritage-park mobility, campus-edge knowledge and station-city daily-service actions.
+- Rebuilt bilingual A0 boards and A3 booklets so the master map, the three retained civic benefits, the three anchor prototypes and the four public gates read as one review sequence.
+- Added a bilingual culture-and-operation loop: four route segments, four seasonal themes, retained civic benefits and public end-of-cycle decisions.
+- Added a bilingual six-stage ecosystem relay, clarifying reviewable handoffs from research to city adoption and the non-investment public boundary of capital service.
+
 ## v1.3 - 2026-08-12
 
 - Added six named, public-source global innovation cases and explicit mechanism-to-Haidian translations with non-transfer boundaries.
