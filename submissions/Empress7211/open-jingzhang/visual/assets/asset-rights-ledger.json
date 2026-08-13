@@ -293,6 +293,54 @@
       "review_status": "machine_verified_human_final_pending"
     },
     {
+      "path": "visual/assets/first-100-days-evidence-plan.json",
+      "asset_type": "proposed_evidence_action_register",
+      "provenance_group": "maintenance_record",
+      "review_status": "machine_verified_field_actions_not_started"
+    },
+    {
+      "path": "visual/assets/issue-router-tabletop/README.json",
+      "asset_type": "synthetic_tabletop_guide",
+      "provenance_group": "maintenance_record",
+      "review_status": "machine_verified"
+    },
+    {
+      "path": "visual/assets/issue-router-tabletop/contract.json",
+      "asset_type": "synthetic_tabletop_contract",
+      "provenance_group": "maintenance_record",
+      "review_status": "machine_verified_not_field_authorized"
+    },
+    {
+      "path": "visual/assets/issue-router-tabletop/fixtures.positive.json",
+      "asset_type": "synthetic_positive_fixture",
+      "provenance_group": "maintenance_record",
+      "review_status": "machine_verified_synthetic_only"
+    },
+    {
+      "path": "visual/assets/issue-router-tabletop/fixtures.negative.json",
+      "asset_type": "synthetic_negative_fixtures",
+      "provenance_group": "maintenance_record",
+      "review_status": "machine_verified_synthetic_only"
+    },
+    {
+      "path": "visual/assets/issue-router-tabletop/run_tabletop.js",
+      "asset_type": "deterministic_zero_dependency_runner",
+      "provenance_group": "maintenance_record",
+      "review_status": "machine_verified"
+    },
+    {
+      "path": "visual/assets/issue-router-tabletop/receipts.json",
+      "asset_type": "synthetic_deterministic_receipts",
+      "provenance_group": "maintenance_record",
+      "review_status": "machine_verified_not_field_evidence"
+    },
+    {
+      "path": "visual/assets/issue-router-tabletop/test_tabletop.js",
+      "asset_type": "focused_fail_closed_tests",
+      "provenance_group": "maintenance_record",
+      "review_status": "machine_verified"
+    },
+    {
       "path": "visual/assets/alt-text.json",
       "asset_type": "accessibility_text_register",
       "provenance_group": "maintenance_record",
