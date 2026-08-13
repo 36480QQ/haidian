@@ -14,7 +14,7 @@
     "model_family": "claude",
     "model_detail": "claude-opus-5"
   },
-  "generated_at": "2026-08-13T07:42:19-07:00",
+  "generated_at": "2026-08-13T08:14:29-07:00",
   "files": [
     {
       "path": "manifest.json",
@@ -47,14 +47,14 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "fea4f7122dbb8398339193fef52894693db94d0cf479757ea00acf38303fc223",
+      "sha256": "6e208f2a3805a5b327afbd07b6e1a97fe6d0a71e8e36dbc6a0d260d7c0004f41",
       "language": "neutral"
     },
     {
       "path": "assumptions.json",
       "role": "assumptions",
       "required": true,
-      "sha256": "2982a0381df05af357aa5f7c8731d1d6fb70fe16dc13091659276d5c33b40f2f",
+      "sha256": "963214839c91b6579faa82a3e6ab1fd183f28613616a5c149b7edaa5132608e3",
       "language": "neutral"
     },
     {
@@ -132,7 +132,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "a8a7836c806a8fdddc020c80a182cbcbcf07ae4821d67e6648211f8862c7ff0a"
+      "sha256": "6276e1e14ce732fa56924f0b9cc7d318dbe4365e866946ff07224d3834b60e14"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -426,7 +426,7 @@
       "required": false,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "9a73ace8ee314f7d30c7eeeb8c5b98a37885601b2d333af66be92cc5ecab9c46"
+      "sha256": "d0657790b390cf75f71024c0c320bc176d24a44d9fffb3f63ab95c1d0605be53"
     },
     {
       "path": "visual/assets/parity_qa.json",

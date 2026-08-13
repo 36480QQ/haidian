@@ -144,6 +144,34 @@
         "osm_vertices_shipped"
       ],
       "affects_metric_count": 1
+    },
+    {
+      "id": "A-GEOTECH-001",
+      "status": "blocked_on_site_investigation",
+      "statement": "当地标准冻深与地基土的冻胀性属岩土数据，本包未取得。",
+      "impact": "FIG.16 给出基础规则（基础底面低于标准冻深 D 不少于 100 mm）而不给 D 的数值；FIG.19 的表面式标志因无基础而随季节位移，故不得承担一等、二等职能。D 由工程勘察填入后，标石构造深度与造价随之确定。",
+      "derivation_zh": "标石之所以要有基础，是因为**没有基础的标志会随季节移动**，而移动过的水准点不再是同一个点。基础深度由当地标准冻深 D 决定，D 是岩土数值，随土质与地下水位变化，包内没有可核来源。FIG.16 因此**给规则不给数**：基础底面低于 D 不少于 100 mm，D 由工程勘察填入——这与本包对官方边界的处理是同一条原则。**这条假设此前只写在图纸上。** 图纸是评审可能不打开的那一份（勘误 E58），而假设登记表是他们会读的那一份；一条只声明在图上的缺口，等于登记表不知道它存在。",
+      "derivation_en": "The stone needs a foundation because **a marker without one moves with the season**, and a benchmark that has moved is not the same benchmark. The depth is set by the local standard frost depth D, a geotechnical value varying with soil and water table, with no verifiable source in this package. FIG.16 therefore **gives the rule and not the number**. This assumption previously existed only on a drawing — the artifact a reviewer may not open (errata E58) — rather than in the register they read.",
+      "if_wrong_zh": "若 D 取小了，标石在第一个冬天后位移，此前每一次读数都不再可比；若取大了，只是多花土方与混凝土。**误差不对称，因此规则写成下限。**",
+      "what_would_close_it_zh": "工程勘察给出场地标准冻深与冻胀性分级，即可填数并核定标石造价。",
+      "affects_metrics": [],
+      "affects_metric_count": 0,
+      "carries_no_metric_note_zh": "**本包没有任何已发布的数字建立在这条假设上。** 这不是疏漏，是这条假设的性质：它若失效，`metrics.json` 里不会有任何一个值改变，因此**任何对数字的检查都抓不到它**。上面的 `if_wrong_zh` 说明了失效会长什么样；能发现它的只有外部判断，不是本包的闸门。把它单列并写明这一点，是本方案能对它做的全部。",
+      "carries_no_metric_note_en": "**No published number in this package rests on this assumption.** That is not an oversight but the nature of it: if it fails, no value in `metrics.json` changes, so **no check on the numbers can catch it**. `if_wrong_zh` above says what failure would look like; only outside judgement can detect it, not this package's gates. Listing it separately and saying so is the whole of what this proposal can do about it."
+    },
+    {
+      "id": "A-LIGHTING-001",
+      "status": "blocked_on_local_standard",
+      "statement": "相邻居住建筑窗前垂直照度增量的限值取决于地方照明标准，本包未取得。",
+      "impact": "FIG.20 因此不设固定灯具：读数光源由读者自带，反光膜回射，从构造上避开了需要该限值的情形；若日后确需补充照明，该限值是前置条件。",
+      "derivation_zh": "夜间读数需要牌面可读。装灯是显而易见的答案，而灯要供电、要维护、会打进对面的窗，并且**灯坏了以后牌面看上去完好却读不出**——一个看不见自己失败的测量。FIG.20 因此不设固定灯具，改用反光膜、光源由读者自带；该做法在构造上绕开了「窗前垂直照度增量限值」这一未取得的输入。限值仍登记在此：**若日后确需补充照明，它是前置条件而不是事后校核**。",
+      "derivation_en": "A night reading needs a legible face. A lamp is the obvious answer and the wrong one: it needs power and maintenance, throws light into the windows opposite, and when it dies leaves a plate that looks intact and cannot be read. FIG.20 therefore fits no luminaire, which sidesteps the unobtained limit entirely. The limit is registered here because **if supplementary lighting is ever added, it is a precondition rather than an after-the-fact check**.",
+      "if_wrong_zh": "本方案当前不依赖该限值——不设灯就不产生窗前照度增量。它被登记，是因为「当前不依赖」与「不存在」不是一回事。",
+      "what_would_close_it_zh": "取得地方照明标准中相邻居住建筑窗前垂直照度增量限值即可闭合。",
+      "affects_metrics": [],
+      "affects_metric_count": 0,
+      "carries_no_metric_note_zh": "**本包没有任何已发布的数字建立在这条假设上。** 这不是疏漏，是这条假设的性质：它若失效，`metrics.json` 里不会有任何一个值改变，因此**任何对数字的检查都抓不到它**。上面的 `if_wrong_zh` 说明了失效会长什么样；能发现它的只有外部判断，不是本包的闸门。把它单列并写明这一点，是本方案能对它做的全部。",
+      "carries_no_metric_note_en": "**No published number in this package rests on this assumption.** That is not an oversight but the nature of it: if it fails, no value in `metrics.json` changes, so **no check on the numbers can catch it**. `if_wrong_zh` above says what failure would look like; only outside judgement can detect it, not this package's gates. Listing it separately and saying so is the whole of what this proposal can do about it."
     }
   ],
   "note_zh": "**本文件是评审模型整份读取的九个文件之一，而 `geometry/` 与 `visual/assets/` 不是**（见 `scripts/review_submission.py::build_review_input`）。因此每条假设除了陈述，还写出：`derivation_zh`——这个读数实际是怎么得出的；`if_wrong_zh`——如果它错了，本方案的哪个结论会变、哪个不会；`what_would_close_it_zh`——什么能让它不再是假设；以及 `affects_metrics`——**由 metrics.json 的 assumption_ids 反向索引算出**，使读这份文件的人能看出每条假设承载了多少个数字。一条没有写出后果的假设是免责声明，不是假设。",
