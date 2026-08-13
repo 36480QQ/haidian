@@ -1,6 +1,6 @@
 {
  "method": "English words per Chinese character, tables and code fences excluded. Calibrated to the field: 0.784 words/char measured across the 41 scored packages (see score_correlates.json); the floor is 0.75 of that. This measures content parity, which string-coverage counters do not. Parity does not predict review score (r = -0.20); the gate exists for the reader.",
- "overall_ratio": 0.872,
+ "overall_ratio": 0.871,
  "floor": 0.75,
  "sections": [
   {
@@ -26,16 +26,16 @@
   },
   {
    "section": "Three-Level Scope Framework",
-   "zh_chars": 726,
+   "zh_chars": 826,
    "en_words": 753,
-   "ratio": 1.323,
+   "ratio": 1.163,
    "pass": true
   },
   {
    "section": "Coordinated Research Area: Industry and Future City Research",
    "zh_chars": 3362,
-   "en_words": 2243,
-   "ratio": 0.851,
+   "en_words": 2264,
+   "ratio": 0.859,
    "pass": true
   },
   {
