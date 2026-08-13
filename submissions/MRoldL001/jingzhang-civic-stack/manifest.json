@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "887711ac2b8a626f16472e0549bbb02a1f1488fe29d5931f35e5239fe800bae5"
+      "sha256": "3623e1ffed6e94ed7f4064146495c635f7080044e952ceb9e5fb5de41c959511"
     },
     {
       "path": "compliance_matrix.json",
@@ -114,7 +114,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "d52d75d5bbe2493e15c2757deb7b4235859538ee1caf7914c19a96ad2e845695"
+      "sha256": "c7150592a8b2fcc1dd2c92fb0e52c8245f90caba876601c3d07cd1774e9f7cfa"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "0b63e1beefb0e18f46c95dd65f8ba8d3051f43ddff4d56a0f8f0a47c65222bb3"
+      "sha256": "42001e441e1393eb28dd9eef5582cae6784376b299409246cdc9c11cc5db2c07"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -289,7 +289,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "cab2308e77d4888c0d3178611150747ef36418e57baa7b570efd53055dfe1546"
+      "sha256": "cf1cd947ea95f06014dd88e972ba85343a6a0a3a67bc260814e3d017620e0d4e"
     },
     {
       "path": "assets/identity/jingzhang-civic-stack-mark.svg",
@@ -355,6 +355,17 @@
       "description_zh": "在既有混合街区嵌入全天候门廊、社区市集、维修、照护与人工问询的非建成概念效果图。",
       "description_en": "Unbuilt concept view of an all-weather porch, neighborhood market, repair, care and staffed inquiry embedded in an existing mixed block.",
       "sha256": "777962f35aa4d31217d893b17ff2618dcf3aca8c22f4207df450a84b79ed37f9"
+    },
+    {
+      "path": "visual/assets/site.css",
+      "role": "asset",
+      "required": true,
+      "language": "neutral",
+      "title_zh": "离线总览共享样式与响应式动效",
+      "title_en": "Shared offline overview styles and responsive motion",
+      "description_zh": "中英文总览页共用的本地 CSS，包含规划图册网格、矢量图标布局、响应式规则、克制动效和减弱动态回退。",
+      "description_en": "Local CSS shared by both overview pages, including the planning-atlas grid, vector-icon layout, responsive rules, restrained motion and reduced-motion fallback.",
+      "sha256": "628dae8f960d994696e70bf4da516782f441552de6591cdf88668fb7bde8c94d"
     }
   ],
   "validation_claim": {
