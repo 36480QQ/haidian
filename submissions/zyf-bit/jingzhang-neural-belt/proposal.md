@@ -523,7 +523,7 @@ iteration: "v1.0"
 | --- | --- | --- | --- | --- | --- |
 | 场地总面积 | 12,144,892 | sqm | geometry/site_boundary.geojson | polygon_area(provisional_boundary) | medium |
 | 绿地率 | 0.165216 | ratio | geometry/green_space.geojson | green_area / site_area | medium |
-| 公共空间率 | 0.124467 | ratio | geometry/public_space.geojson | public_area / site_area | medium |
+| 公共空间率 | 0.11852 | ratio | geometry/public_space.geojson | public_area / site_area | medium |
 | 建筑基底面积 | unknown | sqm | geometry/buildings.geojson | sum(building_footprints) | unknown |
 | 容积率 | unknown | ratio | - | total_floor_area / site_area | unknown |
 | 重点区域数量 | 3 | count | geometry/key_areas.geojson | count(key_areas) | high |
@@ -594,3 +594,13 @@ iteration: "v1.0"
 8. 詹天佑与京张铁路相关公开历史资料
 9. 中关村科技园区发展相关公开政策文件
 10. 全球AI创新生态案例公开资料（硅谷、MIT、深圳、新加坡等）
+### 无障碍与包容性设计
+
+本方案在AI场景设计中遵循无障碍和包容性原则，确保不同群体均能受益于AI城市服务：
+
+- **老年人友好**：所有AI公共服务点设置大字版界面、语音交互和人工辅助选项；社区卫生AI分诊提供电话预约和现场登记双通道。
+- **残障人士无障碍**：公共空间和AI体验设施遵循《无障碍环境建设法》[source:DATA-SRC-BARRIER-FREE-ENVIRONMENT-LAW]，设置盲道连接、无障碍入口、触觉导览和手语翻译服务。
+- **儿童与监护人**：AI交互装置设置儿童安全高度和护眼模式；公共空间配置母婴设施和儿童活动区。
+- **低数字素养者**：每个AI场景保留非数字化替代路径和人工服务窗口；社区中心提供AI使用辅导。
+- **不愿使用AI者**：公共服务不因用户拒绝AI而降低服务质量，保留传统服务渠道和申诉机制。
+- **低收入居民**：AI公共服务免费开放；人才公寓设置不同收入层次配比，避免绅士化排他。

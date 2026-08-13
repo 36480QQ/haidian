@@ -29,7 +29,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "63909b3bd8e0d3c286933454b6e994c81c2689b985ecdd4291df631d5c0e49dd"
+      "sha256": "c86990e2f1c2c34a528dee6b4c754c54fea448ee52e2740a2456fb89afa0a54b"
     },
     {
       "path": "assumptions.json",
@@ -41,7 +41,7 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "e46e7461f6e9d1ffa5a5d3df12590b790d5a7a79c9bb56c4f5e53be81dc5bafd"
+      "sha256": "86307c8dcbbb4e7aaee5c13c0a69c96c5f288cb7d55171c07b888d418068d494"
     },
     {
       "path": "self_check.json",
@@ -53,25 +53,25 @@
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "c46d26a0b618b53cba695bc6e2699b86b7ae74ddaa04d6fd41e611ee42d9073b"
+      "sha256": "20ffa943eaef885eb121552c602e9b182a7c32afcc3787f50f9d43a82d6bd476"
     },
     {
       "path": "standard_matrix.json",
       "role": "standard_matrix",
       "required": true,
-      "sha256": "c0919fdf326d216d55e5bc116f728c4f3f73a00c1aa0923d7f357c9de42896a0"
+      "sha256": "c6f1f8e542c553182b0f14d6e91cc818a82dbcaf5c43f80ff61003c4a20b1792"
     },
     {
       "path": "design_depth_matrix.json",
       "role": "design_depth_matrix",
       "required": true,
-      "sha256": "d121a643973162437ca81faa796823b990dec50dbc8b191684170b8f0226dd74"
+      "sha256": "f7bda80f9d68715718960b9506a17fe32e1e3b147d3ed24ae47be50c3526fd1c"
     },
     {
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "e87a76cd8cc1ada6b327386999c683e58869911c748f7b3a0533cf53b43fcc0a",
+      "sha256": "f7d94d128b62e77b68b3b280045578fb371d08e83dd45fc21aef4e3c14b5c8e5",
       "language": "zh"
     },
     {
@@ -97,7 +97,7 @@
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
-      "sha256": "19a4acdb73a97312fa8a767357e31a5d7d152fbad225000b07271d76618c2b9a",
+      "sha256": "94a6819b3309727700c428feb1032a8f1b41bf55967e09332043e4011c4461a9",
       "language": "zh"
     },
     {

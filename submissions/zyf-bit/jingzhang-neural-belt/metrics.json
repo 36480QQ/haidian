@@ -7,13 +7,13 @@
   "metrics": {
     "site_area_sqm": {
       "status": "known",
-      "value": 12144892.398,
+      "value": 12116773,
       "unit": "sqm",
       "source_files": [
         "proposal.md",
         "geometry/site_boundary.geojson"
       ],
-      "formula": "SUM(polygon_area) of provisional boundary polygons",
+      "formula": "SUM(polygon_area) of provisional boundary polygons (EPSG:4548)",
       "confidence": "medium",
       "assumptions": [
         "ASM-001",
@@ -68,7 +68,7 @@
     },
     "public_space_ratio": {
       "status": "known",
-      "value": 0.124467,
+      "value": 0.11852,
       "unit": "ratio",
       "source_files": [
         "proposal.md",
@@ -82,20 +82,20 @@
       "label": "公共空间率"
     },
     "building_footprint_area_sqm": {
-      "status": "unknown",
-      "value": null,
+      "status": "known",
+      "value": 877400,
       "unit": "sqm",
       "source_files": [
         "geometry/buildings.geojson"
       ],
-      "formula": "SUM(polygon_area) of building footprints",
-      "confidence": "unknown",
+      "formula": "SUM(polygon_area) of building footprints (EPSG:4548)",
+      "confidence": "low",
       "assumptions": [
         "ASM-006",
         "ASM-003"
       ],
       "label": "建筑基底总面积",
-      "reason": "场地边界为临时粗略范围，建筑基底面积需待正式边界确认后复算。"
+      "reason": "基于provisional边界内的建筑多边形面积复算，待正式边界和建筑详查确认后更新。"
     },
     "floor_area_ratio": {
       "status": "unknown",

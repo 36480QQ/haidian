@@ -2,7 +2,7 @@
   "sources": [
     {
       "source_id": "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
-      "source_title": "百年京张AI创新带城市设计开源征集预公告",
+      "source_title": "百年京张AI创新带城市设计开源征集资格预审公告",
       "publisher": "北京市规划和自然资源委员会海淀分局",
       "url": "https://ghzrzyw.beijing.gov.cn/",
       "date": "2026-05",
@@ -27,17 +27,17 @@
       "url": "",
       "date": "2026-08",
       "license": "provisional",
-      "usage_note": "基于预公告文字描述与卫星影像推定的工作边界，非官方红线，详见 ASM-001/ASM-002。",
+      "usage_note": "基于预公告文字描述与卫星影像推定的工作边界，非官方红线，详见 ASM-001/ASM-002。用于现状用地、道路、绿地和建筑多边形的生成与可视化参考，不作为合规数据来源。",
       "authority_level": "derived"
     },
     {
-      "source_id": "DATA-SRC-HAIDIAN-1X1-BASEMAP",
-      "source_title": "海淀区1:1000基础地理数据(公开摘要)",
-      "publisher": "北京市规划和自然资源委员会海淀分局",
-      "url": "",
-      "date": "2024",
-      "license": "public_summary",
-      "usage_note": "用于现状土地利用、道路网络与绿地系统的参考分析。 注意：本数据源不在已批准的数据来源注册表中，仅可作为背景参考使用，不作为合规数据来源。",
+      "source_id": "DATA-SRC-BARRIER-FREE-ENVIRONMENT-LAW",
+      "source_title": "中华人民共和国无障碍环境建设法",
+      "publisher": "全国人民代表大会常务委员会",
+      "url": "https://www.gov.cn/xinwen/2023-06/29/content_6888741.htm",
+      "date": "2023-06",
+      "license": "public_law",
+      "usage_note": "用于无障碍环境建设的法律依据，指导AI公共服务场景的无障碍设计标准。",
       "authority_level": "official"
     },
     {
@@ -58,16 +58,6 @@
       "date": "2025",
       "license": "public_data",
       "usage_note": "用于人口、产业与经济背景数据。",
-      "authority_level": "public"
-    },
-    {
-      "source_id": "SRC-OSM",
-      "source_title": "OpenStreetMap 路网与POI数据",
-      "publisher": "OpenStreetMap 贡献者",
-      "url": "https://www.openstreetmap.org/",
-      "date": "2026-08",
-      "license": "ODbL 1.0",
-      "usage_note": "用于交通网络与兴趣点分析。数据依据 Open Data Commons Open Database License (ODbL) 使用，须注明来源 © OpenStreetMap contributors。",
       "authority_level": "public"
     }
   ]
