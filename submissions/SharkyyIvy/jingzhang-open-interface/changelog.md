@@ -1,5 +1,42 @@
 # 方案迭代记录
 
+## v3.3 - 2026-08-13
+
+### Final Urban Design Revision
+
+- Projected the accepted Gate A/B/C evidence, three-scope and three-areas-two-wings system, AI ecosystem mechanisms, and Gate B spatial reconstruction into the official submission contract.
+- Closed project, scenario, actor, phase, metric, funding, approval, human-review, fallback, stop, and exit semantics without inventing baselines or commitments.
+- Rebuilt the bilingual proposal, HTML report, visual index, FIG-01..FIG-16 set, and vector A0/A3 deliverables.
+- Retained provisional geometry as compatibility-only, non-statutory material; no surveyed boundary, statutory control, funding approval, or implementation commitment is asserted.
+- Completed Gate B, Gate C, Gate D, deterministic, spatial, visual, professional, participant, data-registry, and source validation before submission.
+
+## v3.2 - 2026-08-10
+
+### Gate A Final Evidence Patch
+
+- Kept the existing six ecosystem cases and added five primary institutional source records: Mila Industry Services, Vector ICAP, Vector student/talent programs, STATION F programs, and MIT SuperCloud.
+- Separated `case_field_status_completeness` from `portfolio_verified_mechanism_coverage` in the Gate A audit and review package.
+- Added field-level evidence for industry participation, funding support, compute/big-data infrastructure, talent programs, institutional coordination, and commercialization only where the new sources directly support the claims.
+- Achieved portfolio VERIFIED precedent coverage for all seven previously empty mechanisms; unsupported case fields remain `NOT_VERIFIED`.
+- Added three typed `DESIGN TARGET` edges for lawful/consented data access from the data-access gate through ORG research/prototype, ZZY controlled testing, and DZS review/adoption.
+- Increased Gate A tests from 12 to 15, including per-mechanism portfolio mutation checks and explicit DATA-edge enforcement.
+
+## v3.1 - 2026-08-10
+
+### Gate A Targeted Repair
+
+- Replaced tautological boundary hashing with an immutable six-feature comparison between canonical base commit `e15274661f164ce9d06687f3193e0d1b3b6073a5` and the working-tree provisional geometry.
+- Added mutation tests proving a change to any one of the six provisional features blocks Gate A.
+- Added feature-level category, source type/IDs, source feature/query reference, derivation method, evidence class, confidence, precision, and geometry role.
+- Downgraded unsupported exact positions for `EX-TRANSIT-003` and `EX-HERITAGE-001` to null-geometry `DATA_GAP` records.
+- Replaced list-only diagnosis coverage with feature-derived category coverage; all 13 required categories have evidence records.
+- Separated universities, research institutes, operators, public agencies, and industry fields in all six ecosystem cases; every mechanism field now has source IDs or explicit `NOT_VERIFIED`/`UNKNOWN` status.
+- Corrected the source ledger to 11 records, converted the global-case bundle into a true six-source index, and repaired source-alias consistency.
+- Replaced generic wing `feeds` arrays with 22 typed directed edges; moved ORG translation before prototype/testing and added an Exit/Feedback node with a return edge to research.
+- Renamed the open ecosystem geometry from loop to pathway and added semantic audit rules for future loop/cycle closure.
+- Replaced review-cadence placeholders with eight measurable KPI definitions and two supporting method definitions; no baseline or target value was invented.
+- Expanded Gate A tests from 2 to 12 and regenerated the review package plus four evidence tables.
+
 ## v3.0 - 2026-08-10
 
 ### Baseline
