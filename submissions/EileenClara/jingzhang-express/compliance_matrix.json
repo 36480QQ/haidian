@@ -423,6 +423,7 @@
       "report_sections": [
         "总体设计范围城市更新与控规深度城市设计",
         "更新项目清单、实施政策与分期计划",
+        "实施门槛与公共价值契约（G0—G4）",
         "场景开放运营与轻量试点机制",
         "全生命周期空间供给与运营策略",
         "用地、建筑规模与拆改留方案"
@@ -648,7 +649,8 @@
       "title_zh": "众智园AI自主创新加速区",
       "mandatory": true,
       "report_sections": [
-        "重点区域详细设计"
+        "重点区域详细设计",
+        "空间形态原型：低密测试院落"
       ],
       "geojson_layers": [
         "geometry/key_areas.geojson",
@@ -692,7 +694,8 @@
       "title_zh": "北京AI原点社区",
       "mandatory": true,
       "report_sections": [
-        "重点区域详细设计"
+        "重点区域详细设计",
+        "空间形态原型：斜向交换站厅"
       ],
       "geojson_layers": [
         "geometry/key_areas.geojson",
@@ -737,7 +740,8 @@
       "title_zh": "大钟寺AI产业聚集区",
       "mandatory": true,
       "report_sections": [
-        "重点区域详细设计"
+        "重点区域详细设计",
+        "空间形态原型：站城双厅"
       ],
       "geojson_layers": [
         "geometry/key_areas.geojson",
@@ -930,7 +934,11 @@
       "report_sections": [
         "AI 创新生态、人才画像与 AI+ 场景",
         "蓝绿空间、公共空间与城市风貌",
-        "重点区域详细设计"
+        "重点区域详细设计",
+        "空间形态原型：低密测试院落",
+        "空间形态原型：斜向交换站厅",
+        "空间形态原型：站城双厅",
+        "实施门槛与公共价值契约（G0—G4）"
       ],
       "geojson_layers": [
         "geometry/public_space.geojson",
@@ -1020,6 +1028,7 @@
       "mandatory": true,
       "report_sections": [
         "更新项目清单、实施政策与分期计划",
+        "实施门槛与公共价值契约（G0—G4）",
         "场景开放运营与轻量试点机制",
         "全生命周期空间供给与运营策略",
         "AI 创新生态、人才画像与 AI+ 场景",
