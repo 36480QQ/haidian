@@ -134,11 +134,38 @@
       "what_en": "Append a whole Chinese-only chapter with no English counterpart, so section coverage falls.",
       "why_zh": "第一版英文覆盖率量的是「交出去翻译的字符串是否都翻回来了」——恒为 100%，而实际内容覆盖只有 65%，设计章节接近 45%。**改口径之后必须验证新口径真的会掉下来**，否则换的只是一个更好听的 100%。",
       "why_en": "The first coverage number measured whether the strings handed to the translator came back translated — always 100%, while real content coverage was 65% and the design chapters nearer 45%. **After changing what is measured, the new measure has to be shown capable of falling**, or all that changed is a nicer-sounding 100%."
+    },
+    {
+      "id": "M12",
+      "gate": "overflow_qa.py",
+      "target": "fig_visit.py",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "rendered": true,
+      "what_zh": "把 FIG.27 的末段下移到 y=1300，使它越过页脚线。",
+      "what_en": "Move FIG.27's last block down to y=1300 so it crosses the footer rule.",
+      "why_zh": "**这道闸门在本包里抓到过的东西比任何一道都多**——每加一张图它都报一次英文溢出。但它此前从未被证明会失败，而「每次都报」与「总是报同一类」不是一回事。",
+      "why_en": "**This gate has caught more in this package than any other** — it has reported an English overrun on every sheet ever added. It had still never been shown to fail on demand, and \"it reports every time\" is not the same claim as \"it would report this\"."
+    },
+    {
+      "id": "M13",
+      "gate": "accessibility_qa.py",
+      "target": "fig_visit.py",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "rendered": true,
+      "what_zh": "把 FIG.27 一段正文的字号压到 2.0，远低于远距可读性下限。",
+      "what_en": "Drop one body run on FIG.27 to 2.0 pt, far below the legible-height floor.",
+      "why_zh": "本包用「可读字高 ≈ 视距 ÷ 250」核自己的图纸，报最小字高 4.73 mm 全部达标。**FIG.27 刚刚把同一条比例指向牌面**——那么这条比例自己有没有被验证过会失败，就是必须回答的问题。",
+      "why_en": "This package checks its own drawings with the legible-height ratio and reports a 4.73 mm minimum, all passing. **FIG.27 has just pointed that same ratio at the plate** — which makes whether the ratio itself has ever been shown to fail a question that has to be answered."
     }
   ],
-  "caught": 11,
+  "caught": 13,
   "survived": 0,
   "gates_proven_able_to_fail": [
+    "accessibility_qa.py",
     "assumption_refs_qa.py",
     "cjk_leak_qa.py",
     "claim_audit_qa.py",
@@ -146,16 +173,15 @@
     "figure_citation_qa.py",
     "markdown_structure_qa.py",
     "matrix_refs_qa.py",
+    "overflow_qa.py",
     "parity_qa.py",
     "sources_qa.py",
     "stale_corpus_qa.py"
   ],
   "gates_not_covered": {
-    "overflow_qa.py": "reads rendered SVGs, which the next build step overwrites — proving it can fail needs a mutated drawing source and a re-render",
-    "accessibility_qa.py": "same: contrast and glyph height are measured on rendered output, not on text a byte-swap can reach",
     "census_claims_qa.py": "its expected values come from files a mutation would have to damage in step, which tests the harness rather than the gate",
     "forward_reference_qa.py": "the defect is a *direction* — a reference that resolves and points the wrong way — which needs a reordering, not a swap"
   },
-  "coverage_note_zh": "**覆盖率的分母写在这里。** 本包共 16 道闸门，其中 10 道已被证明会失败；其余 4 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
-  "coverage_note_en": "**The denominator is written down.** Of this package's 16 gates, 10 have been shown capable of failing and 4 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
+  "coverage_note_zh": "**覆盖率的分母写在这里。** 本包共 16 道闸门，其中 12 道已被证明会失败；其余 2 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
+  "coverage_note_en": "**The denominator is written down.** Of this package's 16 gates, 12 have been shown capable of failing and 2 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
 }
