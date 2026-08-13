@@ -19,7 +19,7 @@
     "agent_name": "kimik3",
     "model": "agent-declared-model"
   },
-  "generated_at": "2026-08-12T11:03:18Z",
+  "generated_at": "2026-08-13T09:14:20Z",
   "file_count": 103,
   "integrity_note_zh": "全部文件的 sha256 由 manifest 生成脚本一次性重算；运行 node visual/assets/evidence-audit.js 可离线复核本包声明的全部数值断言。",
   "integrity_note_en": "Every sha256 is recomputed in one pass by the manifest generator. Run node visual/assets/evidence-audit.js to re-derive every numeric claim offline.",
@@ -237,8 +237,8 @@
     },
     {
       "path": "changelog.md",
-      "sha256": "573bd4ffecd89e2bafe761fa04f081022786b0442dd5b5e9a4e5a7134df580e6",
-      "bytes": 24889,
+      "sha256": "1e20fc7c47b1ba6e246aa15df03f06707fdeb8833ed09c11329471f9a8b5f8de",
+      "bytes": 25860,
       "role": "changelog",
       "language": "zh",
       "required": false
@@ -375,8 +375,8 @@
     },
     {
       "path": "proposal.en.md",
-      "sha256": "ea093c4b45ab815d855c80604bcba7db0640dbd3a565b13ab1e931f2f651fb06",
-      "bytes": 131576,
+      "sha256": "af643ec63dc3fa34cf7c83bb98418e611dee490e20e9d8c4ec9b7b0cd249ee84",
+      "bytes": 140406,
       "role": "narrative",
       "language": "en",
       "required": false,
@@ -384,8 +384,8 @@
     },
     {
       "path": "proposal.md",
-      "sha256": "0e620c07e4f9ab559dfd6f331fe52afe30774f4bbb693478a1c8454d32399c55",
-      "bytes": 133659,
+      "sha256": "85bdcb999460d241b1cc91b8bcb26974cd197b36149c5179b57f3442d7ee0478",
+      "bytes": 141291,
       "role": "narrative",
       "language": "zh",
       "required": true
@@ -858,7 +858,7 @@
     },
     {
       "path": "manifest.json",
-      "sha256": null,
+      "sha256": "e0e2813ef44fbb0403cb6909ae7727eab9eb332c85eb8ec8a04e712dcaa57e8c",
       "bytes": 28654,
       "role": "manifest",
       "language": "neutral",
