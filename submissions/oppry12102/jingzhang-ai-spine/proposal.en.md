@@ -84,6 +84,48 @@ The agent taskbook requires 5–8 global AI innovation ecosystem cases to illust
 
 These cases serve only as mechanism references and do not constitute an investment-attraction list, investment commitment, or policy conclusion; their realization depends on formal planning, property rights, and operational conditions [source:AGENT-TASKBOOK].
 
+### Regional Coordination Mechanism (Three Areas, Two Wings, and Jing-Jin-Ji)
+
+The agent taskbook requires responding to regional innovation coordination with the Beiwei Community, the Future Science City, the Huairou Science City, the Economic-Technological Development Area, and the broader Jing-Jin-Ji region [source:AGENT-TASKBOOK]. This proposal turns coordination from naming into executable mechanisms, nodes, and cooperation flows, avoiding a "three areas, two wings" that stops at slogans [depth:overall_spatial_structure]:
+
+| Coordination partner | Coordination mechanism | Node / cooperation flow | Role for this belt |
+| --- | --- | --- | --- |
+| Zhongguancun Technology Service Wing (in-area) | Shared technology services | Legal, IP, investment, and computing services laid out along the Jing-Zhang slow-mobility belt | Turns R&D output into landed enterprises |
+| Xiaoyue River Scenario Empowerment Wing (in-area) | Scenario-open enclave | Reservable test scenarios for urban governance, healthcare, and education | Provides AI+ scenario verification and display |
+| Beiwei Community (Haidian) | Talent and living-support coordination | Job-housing balance, talent apartments, and community services linked | Stabilizes young innovation talent supply |
+| Future Science City (Changping) | Basic research–transfer relay | Joint labs, pilot lines, and a result-transfer corridor | Receives source innovation and localizes it |
+| Huairou Science City (Huairou) | Large science facilities + AI fusion | Computing and scientific-data docking, cross-domain research collaboration | Provides facility-grade computing and scientific problems |
+| Economic-Technological Development Area (Yizhuang) | Advanced-manufacturing scenario feedback | Manufacturing scenario opening, edge-device testing | Directs AI scenarios toward physical manufacturing |
+| Jing-Jin-Ji | Standard mutual recognition and activity linkage | Activity-week sub-venues, standard recognition, talent mobility | Raises the belt's international standing and radiation |
+
+The above coordination items are all conceptual proposals / cooperation-mechanism directions requiring formal negotiation among the relevant parties; they do not constitute already-determined government arrangements or cooperation agreements [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
+
+### AI Innovation Ecosystem Map
+
+The Haidian innovation ecosystem is organized along six rings — "sourcing–incubation–transfer–demonstration–governance–communication" — with each ring anchored to a locatable node [depth:overall_spatial_structure]:
+
+| Ecosystem ring | Representative actor types | Spatial anchor | Carrier provided by this proposal |
+| --- | --- | --- | --- |
+| Sourcing | Universities, basic-research platforms | Around Tsinghua, Peking, Beihang, and BFA | Near-campus result-transfer street, open-source community |
+| Incubation | Incubators, makerspaces | Origin Community, Zhongzhiyuan | Shared testbeds, incubation space |
+| Transfer | Listed firms, unicorns, leading enterprises | Dazhongsi, Zhongguancun Technology Service Wing | International roadshow hall, result release |
+| Demonstration | Scenario opening, pilot blocks | Jing-Zhang slow-mobility belt, communities | Sandbox, sample street, computing stations |
+| Governance | Standards, safety, data factors | Zhongzhiyuan, data-factor reception hall | Governance sandbox, audit desk |
+| Communication | Activities, brand, international exchange | One-spine public-space system | Activity week, pilgrimage landmarks, contribution wall |
+
+This map turns the "world-class AI innovation ecosystem" from abstract description into a locatable, operable ecosystem layering [source:AGENT-TASKBOOK].
+
+### Brand Board and Public-Space Component Library
+
+The brand board (conceptual) takes the "Jing-Zhang AI Spine" master brand plus the "one spine, three cores, two wings" extended names as its skeleton, defining four kinds of reusable assets [source:AGENT-TASKBOOK]:
+
+- **Logo motif**: the Jing-Zhang Railway's "人" (herringbone) switchback × neural-network nodes × double track-gauge imagery, with a steel-gray / vegetation-green / computing-blue three-color system.
+- **Application specifications (concept)**: minimum specs for four application classes — signage, boards, event materials, and digital media (safe space, minimum type size, bilingual correspondence, color-usage boundary).
+- **Public-space component library (concept)**: eight standardized components — seating, signage, lighting, shading, information screens, code wall, testbed enclosure, and accessibility facilities — for reuse across the three key areas and the slow-mobility belt.
+- **International communication application**: bilingual naming, bilingual event-week visuals, and bilingual signage for the international roadshow hall, ensuring global recognizability.
+
+All brands, fonts, images, portraits, and enterprise marks must be used only after clearance; this package provides only conceptual directions and contains no uncleared finished Logo image [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
+
 ## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
 
 The overall design area must reach regulatory-plan-level urban-design depth. The proposal must propose an urban-renewal overall spatial structure, inefficient-space identification, a renewal project list, implementation policy suggestions, industry-function ratios, spatial organization models, total building scale, and a comprehensive carrying-capacity assessment. `geometry/land_use.geojson` should fully cover the design boundary without overlap; `geometry/buildings.geojson` should express renewed or retained building footprints; `geometry/roads.geojson` should express micro-circulation, slow mobility, and rail interchange relations; `metrics.json` should recalculate core areas, ratios, and layer counts.
@@ -122,18 +164,22 @@ AI scenarios must land on spatial and governance boundaries: public-space scenar
 | Nearby resident | Commuting, leisure, community services, low-disturbance renewal | Jing-Zhang heritage park slow-mobility loop, embedded community services, night lighting and activity grading | Resident personas are not used for commercial recommendation |
 | University student and faculty | Result transfer, cross-campus collaboration, daily slow mobility | Campus-park slow-mobility stitching, result-transfer stations, AI education experience points | Campus data and research results require authorization |
 
-| Scenario card | Spatial carrier | Design note |
-| --- | --- | --- |
-| 01 Open-source release hall | Beijing AI Origin Community | Provides result release, code-contribution display, and small roadshow space for universities, open-source communities, and startups |
-| 02 Safety-governance sandbox | Zhongzhiyuan | Translates standard-setting, safety evaluation, and model red-teaming into visitable, reservable, regulated display and collaboration nodes |
-| 03 Edge-computing station | Overall-design-area nodes | Combined with public services, enterprise services, and low-carbon energy strategy, as a new-infrastructure prototype to be deepened |
-| 04 AI slow-mobility navigation | Jing-Zhang heritage park vitality belt | Uses explainable signage and low-intrusion sensing to identify slow-mobility gaps, crowded nodes, and accessibility needs |
-| 05 Dazhongsi international roadshow hall | Dazhongsi AI Industry Cluster | Serves display, negotiation, media release, and international exchange for agent, terminal, and content-consumption enterprises |
-| 06 Qinghe low-carbon innovation corridor | Zhongzhiyuan Qinghe interface | Combines green space, stormwater, walking and cycling, and AI display as the campus public living room |
-| 07 Near-campus result-transfer street | Beijing AI Origin Community | Organizes incubation, display, legal, IP, and investment services for university result transfer |
-| 08 Data-factor reception hall | Dazhongsi area | Presents the urban service interface of data-factor and digital-asset circulation on a compliant, authorized, auditable basis |
-| 09 AI life-service sample street | Community-commercial intersection | Lands AI+ healthcare, education, law, and life services into operable small-block street space |
-| 10 Global AI activity-week route | One-spine public-space system | Forms a walkable, communicable experience route from heritage culture, open-source community, and industry display to international roadshow |
+The proposal separately addresses vulnerable and digitally marginalized groups: older adults, children, people with disabilities, low-digital-literacy users, night workers, and low-income groups are not included in commercial profiling [depth:metrics_recalculation]. Public spaces and scenarios provide continuous accessible paths, non-intelligent human-service alternatives, low-cost usage options, and safe night lighting, and add "accessibility coverage, non-intelligent alternative reachability, and low-cost service-point count" to scenario KPIs to avoid digital exclusion [source:AGENT-TASKBOOK].
+
+The table below expands the ten scenario cards into a "scenario–space–data–model–operation–governance" matrix, listing per card the data source and privacy boundary, AI input/output and model responsibility, operating entity, failure fallback and evaluation metrics, and spatial facility needs, so scenarios are operable objects rather than slogans [source:AGENT-TASKBOOK] [depth:metrics_recalculation].
+
+| Scenario | Spatial carrier | Data source & privacy boundary | AI input/output & model responsibility | Operating entity | Fallback · KPI · spatial facilities |
+| --- | --- | --- | --- | --- | --- |
+| 01 Open-source release hall | Beijing AI Origin Community | Public code/contribution records, aggregated only, no individual tracking | Content display/retrieval, no personal profiling, human-reviewable output | Open-source community + park operator | Human review + takedown; KPI=release sessions/participants; facilities=hall + code wall |
+| 02 Safety-governance sandbox | Zhongzhiyuan | Public evaluation samples, authorized red-teaming | Safety evaluation/red-teaming, sandbox isolation, failure rollback | Standards body + park operator | Sandbox isolation + rollback; KPI=evaluation sessions/pass rate; facilities=lab + display |
+| 03 Edge-computing station | Overall-design-area nodes | Anonymous compute load, no personal data | Scheduling and energy optimization, degradable | Operator + energy authority | Degraded service + manual switch; KPI=utilization/energy; facilities=edge node + storage |
+| 04 AI slow-mobility navigation | Jing-Zhang heritage park vitality belt | Low-intrusion sensing (anonymous), no identity capture | Gap/crowding identification, explainable output | Park operator | Manual signage fallback; KPI=continuity/accessibility coverage; facilities=signage + sensors |
+| 05 Dazhongsi international roadshow hall | Dazhongsi AI Industry Cluster | Public enterprise display materials (after clearance) | Multilingual display, no commercial inference | Business operator | Content review + removal; KPI=roadshow count/international reception; facilities=hall + meeting |
+| 06 Qinghe low-carbon innovation corridor | Zhongzhiyuan Qinghe interface | Public environmental monitoring data | Energy/stormwater analysis, alert output | Park operator + water authority | Flood alert + timed opening; KPI=waterfront reachability; facilities=walkway + station |
+| 07 Near-campus result-transfer street | Beijing AI Origin Community | Public result catalog (after authorization) | Match recommendation, published after human review | Incubation operator | Human review + exit; KPI=transfer projects/occupancy; facilities=incubation + display |
+| 08 Data-factor reception hall | Dazhongsi area | Compliant authorized data, de-identified | De-identification and audit, no raw-data output | Data operator | Audit + takedown; KPI=authorized transactions/compliance; facilities=hall + audit desk |
+| 09 AI life-service sample street | Community-commercial intersection | Public service info, no resident profiling | AI+ service suggestions, human review | Community + service providers | Human service alternative; KPI=satisfaction/reachability; facilities=stations + accessibility |
+| 10 Global AI activity-week route | One-spine public-space system | Activity reservations (aggregated), no individual tracking | Flow optimization, explainable | Brand operator | Reservation + safety plan; KPI=participation/international reach; facilities=signage + nodes |
 
 AI governance suggestions generated by the agent must obey data minimization, public sources, explainability, and human review. Urban intelligent agents can help identify slow-mobility gaps, public-space heat, facility maintenance, enterprise service demand, and event safety risk, but they cannot replace planning approval, cannot output unauthorized personal profiling, and cannot claim an official implementation commitment. All AI scenario nodes should enter the structured layers or the compliance matrix so reviewers can see their relation to industry, space, and public interest.
 
@@ -179,14 +225,16 @@ The implementation scheme should form a reviewable renewal project list stating 
 
 The project list and phasing depth are governed by [depth:renewal_project_list] and [depth:phasing_implementation], with phasing spatial evidence at [data:geometry/phasing.geojson#PHASE-001]. Without property rights, funding, implementation entities, and approval paths, the proposal must write them as implementation risks, not as commitments to deliver.
 
-| Project code | Project name | Type | Main dependencies | Evidence |
-| --- | --- | --- | --- | --- |
-| JZ-01 | Jing-Zhang heritage park slow-mobility gap stitching | Public space / transport | Road redlines, under-bridge space, transport-organization review | [data:geometry/roads.geojson#ROAD-001] |
-| JZ-02 | Zhongzhiyuan Qinghe innovation interface | Blue-green space / industry display | River blue line, ecological and flood conditions | [data:geometry/green_space.geojson#GREEN-001] |
-| JZ-03 | Origin Community near-campus result-transfer street | Urban renewal / industry service | Campus boundary, property rights, ground-floor mix | [data:geometry/buildings.geojson#BLDG-001] |
-| JZ-04 | Dazhongsi station four-quadrant pedestrian connectivity | Rail integration / slow mobility | Rail station, road intersection, municipal pipelines | [data:geometry/public_space.geojson#PUBLIC-001] |
-| JZ-05 | AI public services and edge-computing nodes | New infrastructure / public service | Energy, computing, safety, and operating entity | [data:geometry/constraints.geojson#CONSTRAINTS] |
-| JZ-06 | Global AI activity-week public route | Operation / brand | Public-space permits, event safety, copyright clearance | [data:geometry/phasing.geojson#PHASE-001] |
+The renewal project list is expanded along "lead/participating roles → prerequisites → cost level → time window → KPI → human fallback → long-term governance", so each project is not just a name and dependencies but an implementation skeleton that professional teams can deepen [depth:renewal_project_list]. Cost levels are relative magnitudes (low / low-mid / mid / mid-high), not investment estimates; time windows are post-solicitation advancement indications, not government scheduling commitments.
+
+| Project code | Project name | Type | Lead / participating roles | Prerequisites | Cost · time window | KPI | Human fallback & governance |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| JZ-01 | Jing-Zhang heritage park slow-mobility gap stitching | Public space / transport | District housing + park operator + subdistrict | Road redline, under-bridge space, traffic review [data:geometry/roads.geojson#ROAD-001] | Low-mid · 1–2 yr | Continuity rate, gaps closed | Detour plan + temporary barriers + night lighting; park–transport joint meeting |
+| JZ-02 | Zhongzhiyuan Qinghe innovation interface | Blue-green / industry display | Park operator + water authority | River blue line, ecology, flood control [data:geometry/green_space.geojson#GREEN-001] | Mid · 2–3 yr | Waterfront reachability, showcase count | Flood alert + timed opening; blue-line review |
+| JZ-03 | Origin Community near-campus result-transfer street | Urban renewal / industry service | Campus + operator + subdistrict | Campus boundary, property rights, ground-floor mix [data:geometry/buildings.geojson#BLDG-001] | Mid · 2–5 yr | Transfer projects, occupancy | Professional review of existing buildings + phased opening |
+| JZ-04 | Dazhongsi station four-quadrant pedestrian connectivity | Rail integration / slow mobility | Rail group + transport + subdistrict | Station, intersection, utilities [data:geometry/public_space.geojson#PUBLIC-001] | Mid-high · 3–5 yr | Quadrant connectivity, transfer time | Temporary underpass + signage; traffic review |
+| JZ-05 | AI public services and edge-computing nodes | New infrastructure / public service | Operator + energy authority | Energy, compute, safety, operator [data:geometry/constraints.geojson#CONSTRAINTS] | Mid · phased | Compute utilization, service reach | Data minimization + human review; tiered sandbox opening |
+| JZ-06 | Global AI activity-week public route | Operation / brand | Brand operator + public-space manager | Public-space permit, event safety, IP clearance [data:geometry/phasing.geojson#PHASE-001] | Low · annual | Participation, international reach | Reservation + safety plan; annual review |
 
 Phasing must be distinguished from the 100-day solicitation design period: the solicitation period is a submission deadline, while implementation phasing is the advancement path of urban renewal and project construction. The proposal should propose a near-term pilot, mid-term renewal, and long-term governance framework, marking which content can start with lightweight facilities, operational activities, and service platforms, and which must await formal regulatory, municipal, transport, and property-right conditions. For the annual activity system, developer community operation, scenario open days, public experience routes, and international communication mechanisms, the prose should state the operating object, frequency, responsibility boundary, conversion path, and risk, not just promotional slogans.
 
@@ -205,6 +253,18 @@ The agent taskbook requires responding to the annual activity system, activity b
 **Public experience route** organizes a "from Zero Kilometer to the Future City Testbed" pilgrimage route along the Jing-Zhang heritage park and the blue-green slow-mobility composite loop, linking the three cores and three landmarks for walking, cycling, and reserved visits [data:geometry/green_space.geojson#GREEN-001].
 
 **International communication and attraction-conversion mechanism** turns brand attention into follow-up conversion paths for talent, enterprises, and projects through the international roadshow hall, result releases, and the developer community; whether conversion materializes depends on formal planning, policy, and property-right conditions, and must not be written as a definitive commitment [source:AGENT-TASKBOOK].
+
+## AI Planning Method Workflow (Diagnose–Generate–Simulate–Review–Iterate)
+
+The AI planning method here is not a one-shot generation but a reproducible five-step workflow [depth:metrics_recalculation]:
+
+1. **Diagnose**: identify existing conditions, gaps, and limits from the provisional boundary, constraint layers, and the missing-data checklist [data:geometry/constraints.geojson#CONSTRAINTS].
+2. **Generate**: generate land-use, building, road, green-space, public-space, and phasing layers from the three-level scope and three-core positioning.
+3. **Simulate**: recalculate area, green ratio, public-space ratio, and building footprint under EPSG:4548.
+4. **Review**: run the deterministic / spatial / visual / professional four-gate self-check and manually spot-check the figures.
+5. **Iterate**: after official polygons replace the provisional ones, or after receiving review feedback, rerun the scaffold, self-check, and drawing/HTML generation.
+
+This workflow ensures that every "diagnose–generate–simulate–review–iterate" step has traceable layer, metric, or self-check evidence [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
 
 ## Metrics, Area Recalculation, and Compliance Matrix
 
