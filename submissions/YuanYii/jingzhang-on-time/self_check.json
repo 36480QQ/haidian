@@ -1,0 +1,63 @@
+{
+ "schema_version": "0.1.0",
+ "ok": true,
+ "checks": [
+  {
+   "check_id": "SC_FINAL",
+   "result": "pass",
+   "severity": "blocking",
+   "target": "full_package",
+   "message": "v1.0 版本全链一致 + 四门禁复跑通过（提交前最终校验）"
+  },
+  {
+   "check_id": "SC_MANIFEST",
+   "result": "pass",
+   "severity": "blocking",
+   "target": "manifest.json",
+   "message": "manifest schema 合规，41 files 含 sha256"
+  },
+  {
+   "check_id": "SC_BILINGUAL",
+   "result": "pass",
+   "severity": "major",
+   "target": "proposal.md",
+   "message": "双语全套（proposal/drawings/report/visual/figures 均含 en 对应版）"
+  },
+  {
+   "check_id": "SC_GEOMETRY_GOVERNANCE",
+   "result": "pass",
+   "severity": "major",
+   "target": "geometry/*.geojson",
+   "message": "9 图层全部带 id/layer/source_type/confidence/geometry_role + zone_id/raci/gate/status"
+  },
+  {
+   "check_id": "SC_SPATIAL",
+   "result": "pass",
+   "severity": "major",
+   "target": "spatial_review",
+   "message": "ok=true（3 条 minor provisional 提示属预期）"
+  },
+  {
+   "check_id": "SC_VISUAL",
+   "result": "pass",
+   "severity": "major",
+   "target": "visual_review",
+   "message": "ok=true"
+  },
+  {
+   "check_id": "SC_PROFESSIONAL",
+   "result": "pass",
+   "severity": "major",
+   "target": "professional_review",
+   "message": "ok=true"
+  },
+  {
+   "check_id": "SC_TIMETABLE",
+   "result": "pass",
+   "severity": "major",
+   "target": "check_timetable.js",
+   "message": "运行图校验器 10 用例 3 接受 7 拒绝"
+  }
+ ],
+ "manifest_sha256": "56372cdcd572db6c43dc2736ff1f20e170440955e74808fb4927ef4f8a7adb25"
+}
