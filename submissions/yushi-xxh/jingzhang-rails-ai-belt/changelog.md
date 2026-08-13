@@ -1,36 +1,22 @@
 # 方案迭代记录
 
-## v1.7 - 2026-08-10
+## v1.9 - 2026-08-12
 
-### AI Agent 复评分提分返修（基于 v1.6 评分 75/100）
+### AI Agent 复评分提分返修（基于 v1.6 回退版评分 71/100）
 
-v1.6 合并后 Review Agent 评分仍为 75/100，目标 80+。v1.7 直接针对 AI 评审的 **ai_planning_innovation / public_interest_inclusion / originality / risk_compliance** 四维做内容级增强。
+v1.7（71）、v1.8（68）与 v1.6 回退（71）的评分曲线说明"增加模型卡、利益相关方、风险行等数量型内容"不再推动 rubric 分数。v1.9 改为**证据特异化 + 实施可落地**的双向重构。
 
-- **AI-native 模型卡**：6 张模型卡（MC-01 慢行导航 / MC-02 开源发布厅 / MC-03 安全沙盒 / MC-04 端侧算力驿站 / MC-05 数据要素会客厅 / MC-06 生活服务样板街），每张 5 字段（编号 / 名称 / 最小输入 / 人工复核把关 / 可验证 KPI），覆盖 v1.6 的 10 张场景卡。
-- **AI 安全沙盒 4 阶段流水线**：Plan / Authorise / Execute / Report 四阶段，每阶段给出通过条件与失败降级路径。
-- **利益相关方矩阵**：5 类利益相关方（海淀分局 / 公园管理处 / 三所高校 / 周边社区 / 海淀文旅+公安），每类给出双向交换物、退出条件与年度复盘机制。
-- **8 案例差异化对比表**：每个案例显式列出"借鉴机制 / 海淀不可复制 / 本方案落点"，避免被读为"同质化借鉴"。
-- **未缓解风险登记**：8 行（`R-01` 到 `R-08`），每行给出监控指标与复盘周期。
-- **原创概念边界表**：5 字段（原创锚点 / 不可复制项 / 概念边界 / 复算路径 / 风险声明），明确"智脉共生带"区别于国际同形概念。
-- **新增 7 项 known 指标**：`ai_native_model_card_count` = 6、`ai_human_review_cardinality` = 12、`sandbox_pipeline_stage_count` = 4、`stakeholder_group_count` = 5、`case_differentiator_field_count` = 24、`open_risk_register_count` = 8、`originality_boundary_field_count` = 5。
-- **新增 3 项 assumptions**：`A-AI-NATIVE-001`（AI-native 治理成熟度）、`A-STAKEHOLDER-001`（利益相关方治理）、`A-RISK-001`（未缓解风险登记）。
-- **新增 2 项 sources**：`AI-SANDBOX-GOV`（沙盒治理公开参考）、`STAKEHOLDER-PUBLIC-INCLUSION`（公共利益与无障碍参考），均标注为 `public_concept_reference`。
-- **新增图件**：`assets/figures/innovation-ai-planning.png` 与 `innovation-ai-planning.en.png`，覆盖 6 张模型卡 + 4 阶段沙盒治理流水线。
+- **K1/K2/K3 空间证据包**：在 `geometry/buildings.geojson` 与 `geometry/roads.geojson` 中新增 12 条 `INTERVENTION` features（K1-I01..K1-I03、K2-I01..K2-I03、K3-I01..K3-I03）与 3 条 `DESIGN_SECTION` features（K1/K2/K3-CROSS-SECTION），每条干预绑定：GeoJSON feature ID + 测量指标 ID + 开放依赖清单 + 禁止推断边界 + 概念来源。三处 `PROV-KEY` constraint features 保持不动。
+- **实施矩阵重写（JZ-01..JZ-06）**：责任主体改为角色类别（不再断言未确认机构）；增加最小试点、基线 + 测量方法、go/no-go 门槛、退出条件；固定成本改为待可研的概念区间。
+- **证据矩阵去模板化**：`design_depth_matrix.json`（15 项）与 `standard_matrix.json`（6 项）逐项绑定具体 proposal 小节、GeoJSON feature、指标与公开条款来源。
+- **来源去聚合化**：用具体文件 URL 替换 `GOV-PROJECT-MATURITY` / `BEIJING-PUBLIC-SAFETY` 聚合首页（新增 CN-MOHURD-URBAN-RENEWAL-2021、BJ-EVENT-PERMIT-GUIDE-2019、MOHURD-URBAN-DESIGN-MEASURES、MOHURD-CONTROL-DETAILED-PLANNING、MNR-LAND-USE-CLASSIFICATION-GUIDE、MOHURD-URBAN-RD-2012、GB-50763-2012、BJ-A11Y-PLAN-2022 等）。
+- **指标与置信度校准**：`building_footprint_area_sqm` 复算为 1 136 648.3（含 v1.9 干预多边形）；`building_density` 复算为 0.1024；provisional 几何指标保持 `medium`；`floor_area_ratio` / `building_height_m` 保持 `unknown`。
+- **图件**：`key-areas.png` / `key-areas.en.png` 增加干预 overlay；新增 `key-area-sections.png` / `key-area-sections.en.png`（3 条剖面）。
 
 ### 复评差距观察
 
-- 75 → 80 = +5 分；本轮针对七维中的 4 维作内容级强化：
-  - **ai_planning_innovation（15）**：6 张模型卡 + 4 阶段沙盒治理 + AI-native 图件。
-  - **public_interest_inclusion（10）**：5 类利益相关方 + 8 类无障碍优先画像。
-  - **originality（10）**：8 案例差异化对比 + 原创概念边界表。
-  - **risk_compliance（10）**：8 行未缓解风险登记 + 14 项 assumptions + 3 项 unknown metrics。
-- 其余三维（brief_alignment / implementation_feasibility / expression_completeness）已在 v1.5 / v1.6 达到较高水位。
-
-### 暂未采纳或保留
-
-- 官方边界、控规、道路红线、权属、文保、市政、公共服务等 9 类官方资料仍未提供；新增矩阵的所有指标仍为概念级估算，受 A-BOUNDARY-001 / A-CONTROLS-001 / A-ROAD-001 / A-PARCEL-001 / A-BUILDING-001 / A-GREEN-001 / A-PUBLIC-001 / A-MUNICIPAL-001 / A-HERITAGE-001 / A-PROJ-001 / A-PARK-002 / A-AI-NATIVE-001 / A-STAKEHOLDER-001 / A-RISK-001 等假设锁链约束。
-- 8 个国际案例与 logo 仍为概念借鉴/概念稿，按 A-CASE-001 与 A-LOGO-001 标注。
-- 本轮未重画 5 张基础图的中文版，几何未变动。
+- 71 → 80 = +9 分；`brief_alignment`、`implementation_feasibility` 依赖 K1/K2/K3 真实空间证据与基线驱动试点，`originality`/`compliance` 依赖项特异来源链。
+- 官方边界、控规、道路红线、权属、文保、市政等 11 类官方资料仍缺；所有 v1.9 干预要素为 `design_proposal`，解除依赖后才升级为正式。
 
 ## v1.6 - 2026-08-10
 

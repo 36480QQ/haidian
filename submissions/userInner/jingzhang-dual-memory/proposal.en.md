@@ -4,6 +4,7 @@ author_github: "userInner"
 language: "en"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
+iteration: "v8.0"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "A human-directed AI urban corridor where public memory accumulates, personal data can expire, and the benefits of innovation are shared."
@@ -12,6 +13,27 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 ---
 
 # DOUBLE MEMORY JINGZHANG
+
+> **v8.0 thesis:** Evidence must become a spatial constraint that can fail. This edition develops the 60 × 14 m minimum block into a pre-survey technical package: five coordinated drawings, ten desktop checks and two field-release tests are registered separately. Desktop logic passes 10/10; field performance remains 0/2 not run, so the block stays at `HOLD` and no drawing is presented as measured or built evidence.
+
+| Review dimension | Material v8.0 advance | Verification entry |
+| --- | --- | --- |
+| Alignment and originality | The Proof Mile connects the public-memory spine, daily routes, passports, and implementation gates into one legible method | `proof-mile-spatial-atlas.json` |
+| AI-planning innovation | AI becomes a civic service constrained by D0–D4 data classes, deletion receipts, physical stops, and independent review | `forgetfulness-budget.json`; offline audit |
+| Feasibility | P01 plan, S01 section, D01 detail, O01 operations and T01 test form an auditable package; dimensions, cost and reinstatement are recomputed offline | `proof-block-technical-spec.json`; technical audit |
+| Public interest | A 4.0 m no-AI route remains open with at least 1.8 m accessible clear width; ordinary service needs no account and never crosses the test court | P01, S01 and T01 |
+| Risk and expression | Desktop checks 10/10 and field tests 0/2 are displayed separately; any failed field rejection line keeps the block at `HOLD` | Board 01; metrics-evidence figure |
+| International communication and long-term operation | The 24-Hour Civic Innovation Line sustains operation while three proof blocks govern incremental delivery and release | `24h-public-innovation-line.json`; Board 09 |
+
+![Dual-Memory corridor vision: public-memory spine, blue-green systems, railway heritage and continuous civic life (AI-generated concept experience, not existing-condition or approval evidence)](assets/media/cover-v6-vision.webp)
+
+![60 × 14 m fail-able technical package: dimensioned plan, construction section, verification ticket and release gates](assets/boards/board-01.en.jpg)
+
+![Three Dual-Memory proof blocks: contracting the corridor vision into reversible, verifiable and reinstatable delivery units](assets/boards/board-09.en.jpg)
+
+![Evidence before siting: official records, reproducible metrics, pending routes, and prohibited inference](assets/boards/board-10.en.jpg)
+
+![24-hour operations-space board: each of five windows records ordinary service, optional AI, accountable owner, release condition and evidence state](assets/boards/board-08.en.jpg)
 
 ## Design Basis and Source List
 
@@ -30,6 +52,14 @@ Sources are separated by role. Official notices and policies support task, direc
 ![Restored old Qinghuayuan Station, 2024 (N509FZ, CC BY-SA 4.0)](assets/reference/2024-qinghuayuan-renovated-cc-by-sa-4.jpg)
 
 The three images provide visual evidence for engineering history, daily railway life, and adaptive reuse. Authors, licences, original pages, and modification notes are registered in the source and copyright files. [source:IMAGE-JINGZHANG-1909] [source:IMAGE-QHY-2016] [source:IMAGE-QHY-2024]
+
+### Official records and ownership boundary
+
+Draft control plans for HD00-1601, 1602, 1603, 1604 and 1605 were displayed from 19 December 2024 to 19 January 2025. Haidian's first-quarter 2026 progress record says only that the corridor control plan passed municipal departmental joint review and continued towards approval and implementation. This verifies an advancing procedure—not final approval, official polygons, land-use controls or development parameters. [source:JZ-CONTROL-PLAN-NOTICE] [source:JZ-CONTROL-PLAN-PROGRESS]
+
+At Qinghe, an official public-works contract covers the east side of the Jing-Zhang high-speed railway from Xiaoying West Road to Xierqi North Road: 134,619.3 square metres, CNY 28,986,162.09, Qinghe Subdistrict Office as client, and 29 May 2026 as planned completion. It verifies contract scope and parties, not actual completion or land rights. The derived CNY 215.32 per square metre records scale only and is not directly comparable with proof-block concept costs. [source:QINGHE-CONTRACT] [metric:verified_qinghe_public_project_area_sqm]
+
+Near Dazhongsi, an official transaction covers parcels HD00-1603-01 and HD00-1603-03A: 39,522.11 square metres of land, a 96,811.51-square-metre above-ground floor-area cap, a derived FAR cap of 2.4496, a CNY 2.8 billion price, and Beijing Yunyue Changshi Technology Co., Ltd. as winning bidder. The right record applies only to these two parcels; it is not a complete ownership map for the approximately 72-hectare key area and says nothing about adjacent roads, stations or buildings. [source:DAZHONGSI-LAND-TRANSACTION] [metric:verified_dazhongsi_parcel_far_cap]
 
 ## Three-Level Scope Framework
 
@@ -81,6 +111,24 @@ The building layer contains 310,807.184 square metres of conceptual renewal foot
 
 One legible field language unifies the gradients: white dots mean free passage, blue pulses mean anonymous assistance, and amber frames mean an active trial. Green, yellow, and red states mean normal, restricted, and stopped.
 
+![Three-zone consent section-perspective: no-AI passage, anonymous assistance and controlled testing retain staffed control and a continuous bypass](assets/renders/05-consent-section-perspective-v2.png)
+
+v8.0 turns the abstract gradient into a 60 m × 14 m prototype envelope that can be recalibrated on site: a 4.0 m continuous no-AI walk, 2.5 m anonymous-assist strip, 5.0 m controlled test court, and 2.5 m planted safety buffer. These are functional tests rather than parcel controls; accessible clear width must never fall below 1.8 m. Sensors remain visible, the edge cabinet can be disconnected, the court has a physical emergency stop and staffed controller, and the public bypass never crosses the test area. Full construction, responsibility, data, and stop conditions are in `visual/assets/memory-boundary-passports.json`. [depth:traffic_rail_slow_parking]
+
+### v8 fail-able technical package
+
+The minimum block is not a rendering but five drawings that must reconcile. P01 fixes the 14.0 m total and four-zone allocation. S01 keeps the ordinary route continuously open. D01 fixes a threshold no higher than 6 mm, crossfall no greater than 2%, head clearance of at least 2.2 m, a wheelchair turning circle of at least 1.5 m, and tactile warning at least 0.6 m deep. O01 fixes a human-takeover target within 10 seconds, local isolation within 120 seconds, and removal of the digital kit within 48 hours. T01 records every release and rejection condition.
+
+The technical audit recomputes a 14.0 m total, a 4.0 m ordinary route, emergency-stop design reach no greater than 15 m, and reconciliation between CNY 3.5–6.5 million for three blocks and CNY 7.5–13.5 million for the full programme. Ten of ten desktop checks pass. Qualifying field observation and physical stop/takeover timing remain unperformed at 0/2; until both pass, `release_decision` stays `HOLD`. The auditable specification and calculator are `visual/assets/proof-block-technical-spec.json` and `visual/assets/run-proof-block-technical-audit.js`. [metric:technical_desktop_check_count] [metric:field_performance_test_pass_count]
+
+### Memory Boundary Passports and the forgetfulness budget
+
+Each passport answers eight questions: where, how large, who is responsible, what is recorded, how long it remains, how ordinary service continues, what stops the system, and what evidence supports retention, revision, or retirement. All three passports currently remain `hold`. They may enter `limited_release` only when responsibility, an ordinary equivalent route, data notice, emergency takeover, complaint/deletion channels, and an independent accessibility walk-through are evidenced.
+
+The forgetfulness budget defines D0–D4 data classes: ordinary anonymous use collects nothing; aggregate environment data lasts at most 90 days; voluntary service sessions 0–7 days; controlled test events 30 days; and rights-cleared public contributions follow an explicit archival term and remain withdrawable. Public memory may accumulate only with clear rights, while personal traces expire by default. Any undeclared field, failed expiry job, or unverifiable deletion receipt freezes collection and restores ordinary service. See `visual/assets/forgetfulness-budget.json`. [source:PIPL]
+
+![Memory Boundary Passport system: public memory remains correctable while personal data expires under a forgetfulness budget](assets/figures/memory-passport-system.en.png)
+
 ## Detailed Design of Key Areas
 
 ![Three human-directed urban laboratories](assets/figures/key-areas.en.png)
@@ -104,6 +152,22 @@ Campus, park, and neighbourhood ground floors host a public AI register, provena
 The area combines station walking links, account-free public services, multilingual exchange, smart terminals, and content industries. Navigation, translation, civic services, and accessibility assistance retain human, paper, or telephone equivalents. The provisional Dazhongsi polygon has a known spatial-offset risk, so this version makes no parcel, intersection, or building-level claim from it. [data:geometry/key_areas.geojson#PROV-KEY-003] [source:DAZHONGSI-RENEWAL]
 
 All three areas follow retain, light retrofit, reversible trial, review, then expansion. Building scale, demolition, and engineering alignments await official boundaries, ownership data, and fieldwork.
+
+### Three Dual-Memory proof blocks: from vision to delivery unit
+
+v8.0 does not enlarge the three areas into unverified megaprojects. It first delivers one minimum block in each place. Zhongzhiyuan’s Stop Garden uses the 60 m × 14 m Consent Section as its envelope, retaining a 4 m no-AI route beside a bounded low-speed test court. AI Origin’s Provenance Clinic uses a reversible ground floor and forecourt for paper registration, staffed appeal and revocable provenance records. Dazhongsi’s Account-Free Commons combines step-free arrival, staffed multilingual service and optional on-device assistance at the station-neighbourhood interface.
+
+The three blocks carry a concept band of CNY 3.5–6.5 million; shared baseline work, permits, operation, independent review and reinstatement readiness carry CNY 4.0–7.0 million, reconciling with the implementation contract’s CNY 7.5–13.5 million total. Release proceeds through G0 lock facts, G1 ordinary base first, G2 reversible prototype, G3 no more than 20 staffed windows, and G4 retain/revise/retire. Targets are 100% ordinary-route completion, 100% human handoff, at least 80% boundary comprehension and zero unresolved major issues. These are concept costs and pilot targets—not quotations, approved budgets or measured results. Any missing responsibility, permit or baseline keeps the block at `HOLD`. See `visual/assets/three-proof-blocks.json`. [depth:renewal_project_list]
+
+### Three field routes and evidence admission
+
+Fieldwork is now an executable protocol. FS-01 follows the Qinghe contract segment with at least 12 points across weekday morning peak, midday and evening peak. FS-02 links Wudaokou and Qinghua East Road West Exit with at least 15 points across a weekday afternoon and weekend daytime. FS-03 covers four Dazhongsi station quadrants and the public edges of the two known parcels with at least 16 points across weekday morning peak, evening peak and weekend daytime. An observation enters the formal ledger only with timestamp, position and accuracy, viewing direction, a public-space location, structured finding, privacy-cleared photo hash and reviewer.
+
+This edition contains zero observations meeting those conditions; all three routes remain `planned`. It therefore makes no verified claim about route performance, user feedback, actual completion or co-design outcomes. Eight of eight desktop evidence checks pass, proving source, calculation and wording consistency only—not field performance. [metric:completed_field_observation_count] [depth:key_area_urban_design]
+
+![Three key-area daily routes: ordinary entry—no-AI path—staffed service—opt-in threshold—ordinary exit](assets/boards/board-04.en.jpg)
+
+v4.0 places each daily-purpose chain on a project-bound key-area plan: work—lunch break—bus transfer at Zhongzhiyuan; home—learning—community service at AI Origin; and metro transfer—inclusive service—international exchange at Dazhongsi. Each route begins at an ordinary entry, treats an account-free no-AI path as the baseline, enters assistance or testing only after an active choice, and retains staffed service and an ordinary exit. Urban grain is illustrative; routes remain `design_target` and have not yet been field-walked or user-tested. [depth:key_area_urban_design]
 
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
@@ -130,9 +194,13 @@ Twelve scenarios form service-data-human-fallback loops:
 
 Every scenario registers operator, user, data, retention, human fallback, stop condition, and post-trial evidence. Scenarios 03, 04, 05, 10, and 11 are auditable industrial test-and-validation cases. [source:PIPL] [source:CAC-AGENT-GOVERNANCE]
 
+v4.0 connects route tests directly to the three daily plans. An older resident without a smartphone, wheelchair user, blind-cane or guide-dog user, parent with a child, night-shift service worker, and visitor with limited Chinese must each complete passage, comprehension, human takeover, and complaint tasks. Ordinary-route completion and human-takeover success must be 100%; critical-information comprehension at least 80%; no group may retain an unresolved critical issue. Failure means `HOLD`. These are release thresholds, not current performance; status is `not_field_tested`. See `visual/assets/key-area-daily-routes.json` and `public-interest-route-tests.json`.
+
 Three pilgrimage landmarks are useful governance interfaces rather than monuments: the Shared Memory Platform at Qinghuayuan, the Public AI Register Tower at the AI Origin Community, and the Red-Light Trial Court at Zhongzhiyuan. Their value lies in public rules, not spectacle. [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]
 
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
+
+![Continuous public-edge section: retain and repair, open ground floor, reversible insert, and account-free bypass](assets/boards/board-05.en.jpg)
 
 The provisional land structure mixes R&D, industry and commerce, community services, and open space to avoid a single-use office district. The conceptual green-space layer measures 1,408,600.768 square metres, or 12.3423% of the submitted provisional boundary; the public-space layer measures 836,345.643 square metres, or 7.3281%. These are recalculated design-layer values, not existing-condition statistics or statutory controls. [metric:green_ratio] [metric:public_space_ratio]
 
@@ -156,6 +224,12 @@ The visual language combines the railway’s legible construction, Zhongguancun�
 
 ## Renewal Projects, Implementation Policy, and Phasing
 
+### Minimum 0–180-day delivery contract
+
+Delivery begins with facts and ordinary service, not AI procurement. Days 0–30 lock geometry, ownership, responsibility, and field baselines. Days 31–60 first deliver the accessible bypass, paper signs, staffed service, shade, seating, and drinking water. Days 61–90 may add reversible zones, edge cabinet, physical stop, and audit record. Days 91–120 permit no more than 20 staffed windows while logging positive, negative, near-miss, complaint, and deletion evidence. Days 121–180 end with an independent retain, revise, or retire decision.
+
+The concept cost band for three prototypes, baseline work, operation, and contingency is CNY 7.5–13.5 million. At least 30% of first-stage spending supports ordinary public service and accessibility; AI hardware remains below 25% before G3; 10% contingency is held until independent review. This compares implementation magnitude and is not an approved investment. Missing official geometry, ownership, heritage, fire, transport, utilities, tree/soil, data-impact, insurance, or maintenance evidence stops the relevant gate. Full RACI and reinstatement rules are in `visual/assets/implementation-contract.json`. [depth:phasing_implementation]
+
 | ID | Project | First action | Condition before expansion |
 | --- | --- | --- | --- |
 | DM-01 | Public-memory spine | Oral history, account-free signs, rest points | Heritage and field review |
@@ -169,7 +243,9 @@ The visual language combines the railway’s legible construction, Zhongguancun�
 
 From 2026 to 2028, the priority is field baselines, registers, and reversible trials. From 2028 to 2030, only components that pass safety, equity, accessibility, and resident-acceptance review expand. After 2030, open standards can be exported while annual review, recall, and retirement remain mandatory. [data:geometry/phasing.geojson#PHASE-001] [source:HAIDIAN-FIVE-YEAR-PLAN] [depth:phasing_implementation]
 
-Operation uses four ledgers: system registration, personal authorisation, public benefit, and failure-retirement. Annual programmes combine community issue calls, open test days, international standards workshops, and public retrospectives. Undetermined events are not presented as government commitments. [depth:renewal_project_list]
+Operation uses four ledgers: system registration, personal authorisation, public benefit, and failure-retirement. v5.0 tests spatial and service continuity through five windows: 06:00 early commute and stewardship, 09:00 knowledge exchange and enterprise service, 12:00 community lunch and midday park, 18:00 open trials and failure review, and 22:00 night return and system reset. Every window records ordinary service, optional AI, accountable operation and a release condition in `visual/assets/24h-public-innovation-line.json`. These are operational design targets, not an approved programme or deployed service. [depth:renewal_project_list]
+
+The annual cycle combines a community problem call, reversible prototype week, failure-and-recall review, and an international open-standard workshop. Exchange interfaces are reserved for North Latitude Community, Future Science City, Huairou Science City, Beijing E-Town and the wider Jing-Jin-Ji innovation network. Collaboration shares public methods, reusable evaluation protocols and de-identified findings; it does not pool personal trajectories or claim a confirmed government arrangement. [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]
 
 ## Metrics, Area Recalculation, and Compliance Matrix
 
@@ -178,6 +254,8 @@ Operation uses four ledgers: system registration, personal authorisation, public
 Known metrics come only from submitted geometry or countable schedules: provisional boundary area, three key areas, building footprints, green and public-space ratios, twelve scenarios, six personas, and eight renewal projects. FAR, height, road redlines, utility capacity, investment, and programme remain pending. metrics.json retains formulas and source files; compliance_matrix.json maps announcement and agent.1-agent.6 requirements to sections, layers, drawings, sources, and checks. [depth:metrics_recalculation]
 
 The four rights have reviewable targets: all public AI systems disclose purpose, operator, data, and complaint route; every essential public service retains a non-AI equivalent; high-risk trials provide physical stop, human handoff, and a public response target; and each trial publishes cost, beneficiaries, saved resources, and reinvestment direction. Without field baselines, these remain targets and measurement protocols rather than achieved performance.
+
+The package includes two dependency-free audits: `node visual/assets/run-memory-passport-audit.js` and `node visual/assets/run-spatial-atlas-audit.js`. Both currently return `PASS`. The first checks passport responsibility, data, ordinary equivalence, stop, and release decisions. The second checks the four-level Proof Mile, three daily routes, account-free ordinary equivalents, not-field-tested state, missing statutory controls, and reversible renewal order. These results prove structural completeness only—not construction, system safety, public acceptance, or permission.
 
 ## Risk, Copyright, and Compliance
 

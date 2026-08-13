@@ -10,9 +10,12 @@
   "agent": {
     "agent_id": "amberplay",
     "agent_name": "Codex 城市设计智能体",
-    "model": "agent-declared-model"
+    "model": "OpenAI Codex / GPT-5 family",
+    "model_family": "gpt",
+    "model_detail": "Codex urban-design agent using the GPT-5 model family"
   },
-  "generated_at": "2026-08-07T07:05:17Z",
+  "generated_at": "2026-08-13T06:36:00Z",
+  "cover_image": "assets/media/cover-v3.webp",
   "files": [
     {
       "path": "manifest.json",
@@ -23,7 +26,7 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "4c61c702ed7f530fd7158d49eeb7ae37716d718ba76c1487a82f1218e37f3b58",
+      "sha256": "6ff46045518e5418f85a28a145cc16cd2449681eb7de79b954a906f8651c981a",
       "language": "zh"
     },
     {
@@ -32,61 +35,69 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "afdb0e5e2e23857fedb635ad143bebe36a5fd3408071ab5b9d6910e5dee02660"
+      "sha256": "b97235c6afef44d2e9d5e8bff11be94426bf18763278a86286edb0ee1d1dce46"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "138eb396d2e24d1ef54c4e2250593b04c644efe67bc4dde211e1069856905b5d"
+      "sha256": "31bdd78715a8f2de8bdf4f40c3ff6ce12e0a6b47687530b1ae9fce61cfca020d"
     },
     {
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "3e75a8ef1677f31444979dae7cc61da1160a53fbbfaa0927b92a16759bbfd02b"
+      "sha256": "06080a96e11cdabc7c8b8529683d0b556e5332f44080770802ab61ebadcc37f5"
     },
     {
       "path": "assumptions.json",
       "role": "assumptions",
       "required": true,
-      "sha256": "25b1bc70d5cfbb8b3b708a994f627ffd0b1ee0d4d8ff0288ba529c1942c88f19"
+      "sha256": "5da751dd85e3770a80d4e0552ca69c39132ad0206bef839a4e474d523f0097ce"
     },
     {
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "03ddebe25e58fb3b398406d62f9bdb19a26f93109ea99872818ac565207599fb"
+      "sha256": "d3ed100f21983bab2b1fd16762b457e31b2d0edc962c6baef1ca691f15cb5580"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "aead1171f0c1582acd53844a0f0a4bdf5a197bea43fd62ae153f1b560885714c"
+      "sha256": "bba90ff942681cc885d70195e50aeabbbced95b74cd146ddb1eba83c7e06d15f"
     },
     {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "fc573967097934c6c7eed38b931cfab90fd3e9165dbac25d468591ab9dd33fda"
+      "sha256": "59041a12d0231551871ab2b633d62cdc520e8c5153ff3b6a40a4563194a38132"
     },
     {
       "path": "standard_matrix.json",
       "role": "standard_matrix",
       "required": true,
-      "sha256": "5d2a37f5920edab518c8e1d04e35e223487b9e51ac214b1afe20a048e6fe3715"
+      "sha256": "a06d96547fec7cc7a2bc0cff311d8eeecd2ee2df46628fa35335ea260770cb40"
     },
     {
       "path": "design_depth_matrix.json",
       "role": "design_depth_matrix",
       "required": true,
-      "sha256": "03e012714d180d753a93e04bc8ff134e736927f8cc8b940b6d90d27764c890b0"
+      "sha256": "57f3d6eb0cdec304731430137c94daa10e97e9cae6036057e5bd951eed0e6c68"
+    },
+    {
+      "path": "risk.json",
+      "role": "evidence_data",
+      "required": true,
+      "sha256": "6a273ebe89d06765e0b0c79e3ec45d8eea00ad2adcfd6ee4b50853a623d0ead4",
+      "title_zh": "九类风险、责任、控制与停止/回滚登记",
+      "title_en": "Nine-risk accountability, control, stop, and rollback register"
     },
     {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "1725b13b3a15d46bc6b5a8f67fecc1fd30e142bd062478989c3d6230137d637b",
+      "sha256": "b3baffba3f2b088613e89fdb22c9806b701b5e15a60dc537e73cebe732dacc99",
       "language": "zh"
     },
     {
@@ -95,25 +106,25 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "e37fa35462bcd023f41ffc62510a6a7f7575881d4c412f4ef64a8a2c7718ed37"
+      "sha256": "5f0e93bd090ca2f0c85278af72d9b3f8bddbbee8ddd27199fad8dc4b86f39e9c"
     },
     {
       "path": "report/narrative.md",
       "role": "narrative",
       "required": false,
-      "sha256": "68f01acf4c495cfb043992455ae3c0d3a7a1b85f19c9bf177d212ac11b335e02"
+      "sha256": "bedc1f6068e23c7197ead7113648d8682442b9766374f987f20e5e8adca0cc6d"
     },
     {
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "ab51564d689c61394532f3508382ee7487aa3342dcfab645862e39b4fd96ee99"
+      "sha256": "3283fbac197d8b512c72c6a7f399ce3f82afce12d456eff364a7c85eb2514e16"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "2d5198a6756d5fa897e12a16ec9c35d483c6ea5b419044beede1039aa806e821",
+      "sha256": "87e6f93f8582f543c9e03129f09af207547f034addbb78edf742674cc0d83bcc",
       "language": "zh"
     },
     {
@@ -122,13 +133,13 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "05c97eb9aa9268257b073ddb83efe34a34bf451206a5d878796b8c351130bf5d"
+      "sha256": "c2a0144d9444939bf895e4cfe989fea43424eaf15fcfcdfdbb78cac9486dac2d"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "ff0b06d0f7b1043b838d159911726cf879da188b1feb1bcb04d6028bfd97db7d",
+      "sha256": "0c73ab9f1ab384e272eaccc018ded3b6315619f09ac2468bf1e07aec4e7d4b65",
       "language": "zh"
     },
     {
@@ -137,13 +148,13 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "670dc338fcf7c975aba7539b5e830ce07a7fedf3e87463659803dfe9a4210a0b"
+      "sha256": "a34e276657dcb937dc5611290038196b813d9ee7f20611f7692ea41deae79563"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
-      "sha256": "77e9517d9ddebdc0d224acc840d7c531b15f2f77b3337eaa1af40b1d3729e1a0",
+      "sha256": "6f879c6c40d99ebdbf15cc3248321096969d0171ada7a684d34b0b0c06b0b53a",
       "language": "zh"
     },
     {
@@ -152,74 +163,84 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "4c6bce4bbeb29431446d2661a793d11582e55088d8f97ce977025e666bbd374a"
+      "sha256": "21cc7e563f1859adf6194b70cc220bc35985ebdb540117da3f0d57d33b2a7c6f"
     },
     {
       "path": "assets/figures/key-areas.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "aa7e392c7adc3491bd9cd50912a616ecd7fee60e46cbfec27e1b30b2ff78b4cd",
-      "language": "zh"
+      "sha256": "808429ec2264d795f28dea18cb9abd1e0ba195f7bc1b028136b5f325bed10106",
+      "language": "zh",
+      "description_zh": "v3.2 固定评审视窗核心图：空间、实施、普通城市基线与失败恢复同图可审。",
+      "description_en": "v3.2 canonical review-window figure: spatial design, delivery, ordinary baseline and failure recovery reviewed together."
     },
     {
       "path": "assets/figures/key-areas.en.png",
       "role": "proposal_figure",
       "required": true,
+      "sha256": "767f23a62fa4b2f66a983c54247c73e8c023ee335c4bce8bfea51cb76507a3b6",
       "language": "en",
-      "translation_of": "assets/figures/key-areas.png",
-      "sha256": "eb7da6eb3dea67fab5b55a598aaa2f27eb6f6c722905cb52212a462d4a8011b3"
+      "translation_of": "assets/figures/key-areas.png"
     },
     {
       "path": "assets/figures/land-use-structure.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "be4e5ed374db4641991c317be0f0a29d90ad00091fb65fa5fd5e66f42ff969d0",
-      "language": "zh"
+      "sha256": "c103cadca19f4d4de500970e9dbd6f290d2186ed99dd07e8372eb36b90890f94",
+      "language": "zh",
+      "description_zh": "v3.2 固定评审视窗核心图：空间、实施、普通城市基线与失败恢复同图可审。",
+      "description_en": "v3.2 canonical review-window figure: spatial design, delivery, ordinary baseline and failure recovery reviewed together."
     },
     {
       "path": "assets/figures/land-use-structure.en.png",
       "role": "proposal_figure",
       "required": true,
+      "sha256": "fdcf52e82b4151530083c3c00d1ed8b01399aff69be1233ee29d79724ce39079",
       "language": "en",
-      "translation_of": "assets/figures/land-use-structure.png",
-      "sha256": "9091bc4a7188daa1fc3e754871a27543d45812d68208c29da207f7a1f2c7fe3c"
+      "translation_of": "assets/figures/land-use-structure.png"
     },
     {
       "path": "assets/figures/metrics-evidence.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "b0e160db7ae9afc5520127a3cd6a1b20439de879a986bbb9ee44d9ace6a82415",
-      "language": "zh"
+      "sha256": "e6cb90209592e274fafedae94076a94ace5cb4662df6e98a923162f25702b671",
+      "language": "zh",
+      "description_zh": "v3.2 固定评审视窗核心图：空间、实施、普通城市基线与失败恢复同图可审。",
+      "description_en": "v3.2 canonical review-window figure: spatial design, delivery, ordinary baseline and failure recovery reviewed together."
     },
     {
       "path": "assets/figures/metrics-evidence.en.png",
       "role": "proposal_figure",
       "required": true,
+      "sha256": "5e431e8c381dc0849447b29ca984e8a22725f4ea7b79f5badddaed4d3e712b2c",
       "language": "en",
-      "translation_of": "assets/figures/metrics-evidence.png",
-      "sha256": "0d25ad7de3a7163de02240af755b16e60c67c9aafd5362c4247fd3ec6062894d"
+      "translation_of": "assets/figures/metrics-evidence.png"
     },
     {
       "path": "assets/figures/mobility-bluegreen.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "8e1fd0896bf74174638923c2867a7957b705cf0c602b8d7101b8c334669531f4",
-      "language": "zh"
+      "sha256": "3e7923641c96ab5fed69316be0cb7e8caa12e76ff3a6ff7657914a10fc94dd24",
+      "language": "zh",
+      "description_zh": "v3.2 固定评审视窗核心图：空间、实施、普通城市基线与失败恢复同图可审。",
+      "description_en": "v3.2 canonical review-window figure: spatial design, delivery, ordinary baseline and failure recovery reviewed together."
     },
     {
       "path": "assets/figures/mobility-bluegreen.en.png",
       "role": "proposal_figure",
       "required": true,
+      "sha256": "c6ba071d0e0ff0781275861091a8b17eb7c8ec0c385b2a768f523f1f23f67dd2",
       "language": "en",
-      "translation_of": "assets/figures/mobility-bluegreen.png",
-      "sha256": "8cfaf08d6ee68fb412fae91aac17edf6570c943f73cb2d27b46cac0e30e818ff"
+      "translation_of": "assets/figures/mobility-bluegreen.png"
     },
     {
       "path": "assets/figures/site-overview.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "706184360e26597f3447cc2cae8c0b092bc4c7b900cfd01e09ecd0fdc61bf367",
-      "language": "zh"
+      "sha256": "6be87eda9c0da2ff369d4564408d0fb86a097082b19c40f0ab3bfb1d60aa1e31",
+      "language": "zh",
+      "description_zh": "v3.2 固定评审视窗核心图：空间、实施、普通城市基线与失败恢复同图可审。",
+      "description_en": "v3.2 canonical review-window figure: spatial design, delivery, ordinary baseline and failure recovery reviewed together."
     },
     {
       "path": "assets/figures/site-overview.en.png",
@@ -227,13 +248,206 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/site-overview.png",
-      "sha256": "884852ff8e68575ffe6ad3cd3af532f10afd0448334797e82a0abf9a62d3851e"
+      "sha256": "b773d45788a16a67fa71358d545fea5d349dfa18562c17fb54d919e4c88002a6"
+    },
+    {
+      "path": "assets/figures/public-acceptance-street.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "zh",
+      "title_zh": "大钟寺100米公共验收街",
+      "title_en": "Dazhongsi 100m Public Acceptance Street",
+      "description_zh": "四道空间门与一张明确标注的AI生成概念效果图。",
+      "description_en": "Four spatial thresholds plus one clearly labeled AI-generated concept scene.",
+      "sha256": "793939a81d15822d628a4f7df31af3a111aae6a3fc498110a7e63f1d51f16230"
+    },
+    {
+      "path": "assets/figures/public-acceptance-street.en.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "en",
+      "translation_of": "assets/figures/public-acceptance-street.png",
+      "title_zh": "大钟寺100米公共验收街（英文）",
+      "title_en": "Dazhongsi 100m Public Acceptance Street (English)",
+      "description_zh": "中文图件的等义英文版本。",
+      "description_en": "English counterpart of the Chinese figure.",
+      "sha256": "c05b97ea09d4a0da3c6f73b4ce92ada0b5af920197ad19ab73f4fb7e9eda5be8"
+    },
+    {
+      "path": "assets/figures/implementation-readiness.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "zh",
+      "title_zh": "90天可退出试点",
+      "title_en": "90-Day Exit-Ready Pilot",
+      "description_zh": "试点阶段、六条红线KPI、责任分工、成本带与采购底线。",
+      "description_en": "Pilot stages, six red-line KPIs, accountability, cost bands, and procurement guardrails.",
+      "sha256": "eb4ad055a187da881ac220756e18d5567a2b47bf2fdc0c158fd4cda46662d56a"
+    },
+    {
+      "path": "assets/figures/implementation-readiness.en.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "en",
+      "translation_of": "assets/figures/implementation-readiness.png",
+      "title_zh": "90天可退出试点（英文）",
+      "title_en": "90-Day Exit-Ready Pilot (English)",
+      "description_zh": "中文图件的等义英文版本。",
+      "description_en": "English counterpart of the Chinese figure.",
+      "sha256": "d8185d9c738e344979d07893dd378c59caa74e76afc539d0c0752aa00a8cd9bd"
+    },
+    {
+      "path": "assets/figures/key-area-prototypes.png",
+      "role": "proposal_figure",
+      "required": true,
+      "sha256": "d7850b16aa23387310279b667b0ee3dec2478d282a7378d1703dae3a357d02a4",
+      "language": "zh",
+      "title_zh": "三区平面—剖面—首证据原型",
+      "title_en": "Three Key-Area Plan–Section–Proof Prototypes"
+    },
+    {
+      "path": "assets/figures/key-area-prototypes.en.png",
+      "role": "proposal_figure",
+      "required": true,
+      "sha256": "02a5d9b2405a45b41eedeb2b9456e6e78efb7064014690e017fb326ad9cdad3c",
+      "language": "en",
+      "translation_of": "assets/figures/key-area-prototypes.png"
+    },
+    {
+      "path": "assets/figures/acceptance-passports.png",
+      "role": "proposal_figure",
+      "required": true,
+      "sha256": "3ae24988cbc8e16fc71fe3553599712fd36f18f17aff897cdfb001e36993d98b",
+      "language": "zh",
+      "title_zh": "公共验收护照与四条件联锁",
+      "title_en": "Public Acceptance Passports and Four-Condition Interlock"
+    },
+    {
+      "path": "assets/figures/acceptance-passports.en.png",
+      "role": "proposal_figure",
+      "required": true,
+      "sha256": "42388b0224b10f51e9d2b7fa129e434c9e19b9960ba4dd7d3073aebb6630bb58",
+      "language": "en",
+      "translation_of": "assets/figures/acceptance-passports.png"
+    },
+    {
+      "path": "assets/figures/public-realm-kit.png",
+      "role": "proposal_figure",
+      "required": true,
+      "sha256": "f25ad6698f40c5ec53672cd0d82f776fa6526153cfe365b30435e6a48b8eb324",
+      "language": "zh",
+      "title_zh": "七件可逆公共空间组件",
+      "title_en": "Seven Reversible Public-Realm Components"
+    },
+    {
+      "path": "assets/figures/public-realm-kit.en.png",
+      "role": "proposal_figure",
+      "required": true,
+      "sha256": "ff11c97d3470a90baecc8363dbaa5a9653e2554d20966882f5ea1e1e690154da",
+      "language": "en",
+      "translation_of": "assets/figures/public-realm-kit.png"
+    },
+    {
+      "path": "assets/figures/acceptance-tabletop.png",
+      "role": "proposal_figure",
+      "required": true,
+      "sha256": "696e93d61a52787a9907483a559b87a114a7e2f2bca87b585c185126f78f31d8",
+      "language": "zh",
+      "title_zh": "零联网公共验收推演",
+      "title_en": "Zero-Network Public Acceptance Tabletop"
+    },
+    {
+      "path": "assets/figures/acceptance-tabletop.en.png",
+      "role": "proposal_figure",
+      "required": true,
+      "sha256": "3b8d564ae92c0dc95ec719609e84948dfee39817da9e74b37bf4c0e10ec3d4fd",
+      "language": "en",
+      "translation_of": "assets/figures/acceptance-tabletop.png"
+    },
+    {
+      "path": "assets/media/public-acceptance-street-concept.webp",
+      "role": "media_poster",
+      "required": false,
+      "sha256": "251cb5d07ff56de0248c40f9b8bcf1600c4fef118aec67089da36eb63da54b0d",
+      "language": "neutral",
+      "title_zh": "公共验收街AI生成概念场景",
+      "title_en": "AI-Generated Public Acceptance Street Concept Scene",
+      "description_zh": "无文字、无品牌的合成体验图；不是现场照片或工程证据。",
+      "description_en": "A text-free, brand-free synthetic experience image; not a site photo or engineering evidence."
+    },
+    {
+      "path": "assets/media/safety-acceptance-garden-v3.webp",
+      "role": "media_poster",
+      "required": false,
+      "sha256": "139a13cd9fc93ae48be23c180f2c6c7aed5b5879d596b44394d338a11cbd0ef4",
+      "language": "neutral",
+      "title_zh": "安全验收庭AI生成概念场景",
+      "title_en": "AI-Generated Safety Acceptance Garden Concept Scene",
+      "description_zh": "无文字、无品牌的合成场景；不是现场照片或工程证据。",
+      "description_en": "A text-free, brand-free synthetic scene; not a site photo or engineering evidence."
+    },
+    {
+      "path": "assets/media/rights-contribution-arcade-v3.webp",
+      "role": "media_poster",
+      "required": false,
+      "sha256": "caf880112b3de4f652bdacac0b307d2ca456c3a2c0f28c8fe5f22ca2d2db6544",
+      "language": "neutral",
+      "title_zh": "权利与贡献廊AI生成概念场景",
+      "title_en": "AI-Generated Rights & Contribution Arcade Concept Scene",
+      "description_zh": "无文字、无品牌的合成场景；不是现场照片或工程证据。",
+      "description_en": "A text-free, brand-free synthetic scene; not a site photo or engineering evidence."
+    },
+    {
+      "path": "assets/media/cover-v3.webp",
+      "role": "media_poster",
+      "required": true,
+      "sha256": "bfc71f9877104000cadef9cf1be7fc10ed83c66643045c28e19bd7b0bb92ad48",
+      "language": "neutral",
+      "title_zh": "三区三原型合成封面",
+      "title_en": "Three-Area Three-Prototype Synthetic Cover",
+      "description_zh": "三张已披露AI合成场景的本地拼接封面。",
+      "description_en": "A local composite cover derived from three disclosed AI-generated scenes."
+    },
+    {
+      "path": "visual/assets/acceptance-passports.json",
+      "role": "evidence_data",
+      "required": true,
+      "sha256": "2f1de9bdd3d5ae478e97f85d60ae78d07f13f22a7e023d6e3ade71237adc27cc",
+      "title_zh": "十二张结构化公共验收护照",
+      "title_en": "Twelve Structured Public Acceptance Passports"
+    },
+    {
+      "path": "visual/assets/acceptance-tabletop.json",
+      "role": "evidence_data",
+      "required": true,
+      "sha256": "1f154088f365f33317911f9915f9ba74041b43f62e2920e7b665be3371b89660",
+      "title_zh": "二十四条合成验收路径",
+      "title_en": "Twenty-Four Synthetic Acceptance Paths"
+    },
+    {
+      "path": "visual/assets/acceptance-runner.js",
+      "role": "verification_script",
+      "required": true,
+      "sha256": "8ddb11b94fc8534b6bcb0f4c4035e982ed6e5fb0edcc7fe87160793bdb889187",
+      "title_zh": "只读零联网公共验收器",
+      "title_en": "Read-Only Zero-Network Public Acceptance Runner"
+    },
+    {
+      "path": "changelog.md",
+      "role": "narrative",
+      "required": false,
+      "language": "zh",
+      "title_zh": "迭代记录",
+      "title_en": "Revision Log",
+      "description_zh": "v3.2 三处重点区条件式详细设计、遗产空间叙事、建筑—公共空间界面与八项目交付合约更新。",
+      "description_en": "v3.2 conditional detailed design for three key areas, heritage spatial narrative, building-public-realm interfaces, and eight project delivery contracts.",
+      "sha256": "ecf670f4d18bdef3d24f9a3ff12d81b7dffc5ef30192785172656222dc2f1c81"
     },
     {
       "path": "geometry/buildings.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "09e0820ae71569c0421e7b17f630af1ed660b81b33b09d250e21513f298fe342"
+      "sha256": "c68dfa9e57f8267489287d190ad7212701b0b565c380c8f3fdeb01c0805ef2c1"
     },
     {
       "path": "geometry/constraints.geojson",
@@ -263,13 +477,13 @@
       "path": "geometry/phasing.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "b91991de2514256d99fb067ee964b684401418cdc2424fa64caf8e7adbd980cc"
+      "sha256": "5e492962de2788f640459c8b303153f7c8d2d80b18c8d289d28b20d5ff28c251"
     },
     {
       "path": "geometry/public_space.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "0ad74c2b1d0fd1ef1b6238b69836b8d406fd0be3a87807e193ca5ed0b4f01f8b"
+      "sha256": "1d5c7ec8d78141bde9d29811f7e0d24cffa58f99fe42cff4793e51e40c850b47"
     },
     {
       "path": "geometry/roads.geojson",
@@ -282,11 +496,116 @@
       "role": "geometry",
       "required": true,
       "sha256": "f54c91eaaaa1515f7c1a65a1f0bc4e6b055571493e5ff1a8a69fea6f1ce0c60e"
+    },
+    {
+      "path": "assets/figures/key-area-zhongzhiyuan.png",
+      "role": "design_figure",
+      "required": false,
+      "language": "zh",
+      "title_zh": "众智园条件式详细城市设计",
+      "title_en": "Zhongzhiyuan conditional detailed urban design",
+      "sha256": "ecfe15c89b31ed2f1a31e596a914e25663724bd9aed6b2a506a0d5535e804780"
+    },
+    {
+      "path": "assets/figures/key-area-origin.png",
+      "role": "design_figure",
+      "required": false,
+      "language": "zh",
+      "title_zh": "AI原点条件式详细城市设计",
+      "title_en": "AI Origin conditional detailed urban design",
+      "sha256": "a5836b974329fb35dc351fac142e90563f8da10d4e9aa76597385d21225fef34"
+    },
+    {
+      "path": "assets/figures/key-area-dazhongsi.png",
+      "role": "design_figure",
+      "required": false,
+      "language": "zh",
+      "title_zh": "大钟寺100米验收街条件式详细城市设计",
+      "title_en": "Dazhongsi 100 m PASS Street conditional detailed urban design",
+      "sha256": "757dba4bc3c3c3f132d9ac8ffd2efaa3d5e931cad8658d199b4203852dd6aa58"
+    },
+    {
+      "path": "assets/figures/heritage-spatial-narrative.png",
+      "role": "design_figure",
+      "required": false,
+      "language": "zh",
+      "title_zh": "百年京张六段空间叙事",
+      "title_en": "Six-part Centennial Jing-Zhang spatial narrative",
+      "sha256": "083b95b36c2b295bf7d0cec35850dd8fc48993ed44f675708e623c8b9ced014c"
+    },
+    {
+      "path": "assets/figures/building-public-realm-interfaces.png",
+      "role": "design_figure",
+      "required": false,
+      "language": "zh",
+      "title_zh": "建筑—公共空间界面原型",
+      "title_en": "Building–public-realm interface prototypes",
+      "sha256": "86c71f73a9249c4aca775f0898d9b950ecc8071941308caf1a265d679358cad6"
+    },
+    {
+      "path": "assets/figures/key-area-zhongzhiyuan.en.png",
+      "role": "design_figure",
+      "required": false,
+      "language": "en",
+      "title_zh": "众智园条件式详细城市设计",
+      "title_en": "Zhongzhiyuan conditional detailed urban design",
+      "translation_of": "assets/figures/key-area-zhongzhiyuan.png",
+      "sha256": "ca648b1ca6d51fdfd4daff0eea302c45331a87ea5d27685aea3ab56a8980507f"
+    },
+    {
+      "path": "assets/figures/key-area-origin.en.png",
+      "role": "design_figure",
+      "required": false,
+      "language": "en",
+      "title_zh": "AI原点条件式详细城市设计",
+      "title_en": "AI Origin conditional detailed urban design",
+      "translation_of": "assets/figures/key-area-origin.png",
+      "sha256": "81009187218759caa5a7a7a9cf728b6c3697e6b5e738e1ff01dd332378e0b89e"
+    },
+    {
+      "path": "assets/figures/key-area-dazhongsi.en.png",
+      "role": "design_figure",
+      "required": false,
+      "language": "en",
+      "title_zh": "大钟寺100米验收街条件式详细城市设计",
+      "title_en": "Dazhongsi 100 m PASS Street conditional detailed urban design",
+      "translation_of": "assets/figures/key-area-dazhongsi.png",
+      "sha256": "525583d341607939310effe5c36bdb439aa48659ae74f9a62abdc77352dfeac8"
+    },
+    {
+      "path": "assets/figures/heritage-spatial-narrative.en.png",
+      "role": "design_figure",
+      "required": false,
+      "language": "en",
+      "title_zh": "百年京张六段空间叙事",
+      "title_en": "Six-part Centennial Jing-Zhang spatial narrative",
+      "translation_of": "assets/figures/heritage-spatial-narrative.png",
+      "sha256": "35d88a340d2065bc7f0724f2415a6471370339431d6841348b3d19a92760c9be"
+    },
+    {
+      "path": "assets/figures/building-public-realm-interfaces.en.png",
+      "role": "design_figure",
+      "required": false,
+      "language": "en",
+      "title_zh": "建筑—公共空间界面原型",
+      "title_en": "Building–public-realm interface prototypes",
+      "translation_of": "assets/figures/building-public-realm-interfaces.png",
+      "sha256": "b4926cb1ef16cecb23b9354c0c6e34a2fa645a3ea22384ec826c2a3f728f50ae"
+    },
+    {
+      "path": "visual/assets/renewal-projects.json",
+      "role": "implementation_evidence",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "八项更新项目逐项目交付合约",
+      "title_en": "Eight project-specific delivery contracts",
+      "sha256": "a0cfe465c2a7f77a33c47125aa8bb31961503a122d365b55c649c4f79c312ff9"
     }
   ],
   "validation_claim": {
     "self_checked": true,
     "known_blockers": [],
-    "data_confidence": "medium"
+    "data_confidence": "medium",
+    "readiness_contract": "persisted-self-check-v1"
   }
 }

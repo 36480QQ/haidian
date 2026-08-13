@@ -110,10 +110,12 @@
         "geometry/green_space.geojson",
         "geometry/public_space.geojson"
       ],
-      "metric_refs": [
-        "greenway_length_m",
-        "green_ratio",
-        "key_area_count"
+  "metric_refs": [
+    "greenway_length_m",
+    "green_ratio",
+    "key_area_count",
+    "public_acceptance_prototype_count",
+    "reversible_public_realm_component_count"
       ],
       "source_ids": [
         "SOURCE-REGISTRY",
@@ -128,7 +130,7 @@
         "METRIC_RECALC",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "总体主脊、三重点区空间语法、模块断面和公共界面共同回应城市设计的平面、立体与风貌统筹。"
+  "evidence_summary_zh": "总体主脊与三种验收原型分别给出平面顺序、概念断面、公共界面和C01-C07组件，形成从总体结构到人尺度设施的空间统筹。"
     },
     {
       "standard_id": "MOHURD-CONTROL-DETAILED-PLANNING",
@@ -246,6 +248,119 @@
         "PROFESSIONAL_EVIDENCE"
       ],
       "evidence_summary_zh": "当前只完成建筑界面与原型基底层级；真实总平面、单体、层数、结构和拆改留须在官方与现场资料后深化。"
+    },
+    {
+      "standard_id": "GENERATIVE-AI-INTERIM-MEASURES",
+      "requirement_zh": "仅在面向境内公众提供生成内容服务的适用范围内引用；投诉处理、内容治理、安全评估和备案不得被扩大或伪造为本项目既有结论。",
+      "professional_dimension": "AI治理与公众服务",
+      "mandatory": false,
+      "review_status": "addressed",
+      "proposal_sections": [
+        "AI 创新生态、人才画像与 AI+ 场景",
+        "风险、版权与合规说明"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/public_space.geojson",
+        "geometry/phasing.geojson"
+      ],
+  "metric_refs": [
+    "scenario_count",
+    "pilot_redline_kpi_count",
+    "public_acceptance_passport_count",
+    "acceptance_tabletop_case_count"
+      ],
+      "source_ids": [
+        "SITE-PACKAGE",
+        "SOURCE-REGISTRY"
+      ],
+  "assumption_ids": [
+    "A-OPERATIONS-001",
+    "A-PROTOTYPE-001",
+    "A-PASSPORT-001"
+      ],
+      "self_check_ids": [
+        "PRIVACY_HUMAN_REVIEW",
+        "PROFESSIONAL_EVIDENCE"
+      ],
+  "evidence_summary_zh": "十二张护照逐场景记录数据、人工终审、申诉、急停与退出；24条合成推演只证明逻辑，1日/5日目标不冒充法定时限。"
+    },
+    {
+      "standard_id": "BARRIER-FREE-ENVIRONMENT-LAW",
+      "requirement_zh": "无障碍与人工服务设计应尊重法律适用场景；第39条列举事项不被泛化为全部公共空间的一般法定义务。",
+      "professional_dimension": "无障碍与公共空间",
+      "mandatory": false,
+      "review_status": "addressed",
+      "proposal_sections": [
+        "重点区域详细设计",
+        "交通、轨道、市政与公共服务设施"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/public_space.geojson",
+        "geometry/roads.geojson"
+      ],
+  "metric_refs": [
+    "phone_free_basic_access_target_ratio",
+    "human_fallback_target_seconds",
+    "reversible_public_realm_component_count"
+      ],
+      "source_ids": [
+        "SITE-PACKAGE",
+        "SOURCE-REGISTRY"
+      ],
+      "assumption_ids": [
+        "A-PROTOTYPE-001",
+        "A-TRANSPORT-001"
+      ],
+      "self_check_ids": [
+        "PROFESSIONAL_EVIDENCE",
+        "VISUAL_STATIC"
+      ],
+  "evidence_summary_zh": "三区原型都保留3.0米概念净通道与普通no-AI基线，组件不得侵占通行；正文同步限定第39条列举场景边界。"
+    },
+    {
+      "standard_id": "ELDERLY-SMART-TECH-PLAN-2020-45",
+      "requirement_zh": "以传统服务与智能服务并行作为适老场景背景参照；2020—2022阶段目标不写成2026年法定义务或本地落实事实。",
+      "professional_dimension": "适老服务与数字包容",
+      "mandatory": false,
+      "review_status": "addressed",
+      "proposal_sections": [
+        "AI 创新生态、人才画像与 AI+ 场景",
+        "更新项目清单、实施政策与分期计划"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/public_space.geojson",
+        "geometry/phasing.geojson"
+      ],
+      "metric_refs": [
+        "human_fallback_target_seconds",
+        "phone_free_basic_access_target_ratio",
+        "pilot_duration_days"
+      ],
+      "source_ids": [
+        "SITE-PACKAGE",
+        "SOURCE-REGISTRY"
+      ],
+      "assumption_ids": [
+        "A-OPERATIONS-001",
+        "A-PROTOTYPE-001"
+      ],
+      "self_check_ids": [
+        "PRIVACY_HUMAN_REVIEW",
+        "PROFESSIONAL_EVIDENCE"
+      ],
+      "evidence_summary_zh": "双轨服务台、30秒人工兜底和老人参与共验把数字包容落实为空间与运营建议；政策时效和非本地事实边界同步披露。"
     }
   ]
 }

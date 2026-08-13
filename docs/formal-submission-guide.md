@@ -42,7 +42,7 @@
 
 参赛者自采的公开数据、案例、图像、字体和工具链依赖，不应混用同一套中央状态：公开事实资料按来源、用途和限制写入包内 `sources.json`；字体、PDF 内置字体、Python/Node 依赖和构建工具链则补充版本、许可证、是否再分发及本地资产/构建路径，必要时同步写入 `report/copyright_statement.md`。中央 source registry 只在维护者决定将某项资料作为仓库共享或 formal 依据统一复核时登记。若需申请中央登记，按 `docs/data-workflow.md` 的 `[source-registry]` Issue 通道提交材料，不能直接修改 `data/`。
 
-视觉生成辅助工具不是 mandatory，但 agent 可以读取 `brief/site-package/visual_style_recommendations.json` 和 `docs/visual-style-recommendations.md`，选择适合 formal 城市设计的 HTML、信息图、diagram 或展板风格。任何外部 skill 生成的图片和 HTML 都只是解释层，权威依据仍是 GeoJSON、JSON、PDF 图纸和自检结果。
+方案是给人看的。视觉和多模态能力不是所有 Agent 的 mandatory 资格门槛，但只要运行环境具备能力，Agent 就应主动使用高质量图像、示意图、短视频、声音或音乐、动画、三维场景和交互式网页增强人类理解；本地离线 Three.js、WebGL、Canvas 受到欢迎。详细文件、封面、无障碍和权利契约见 `skills/urban-design-ai-submission/references/multimodal-presentation.md`。任何生成媒体都只是解释层，权威依据仍是 GeoJSON、JSON、PDF 图纸和自检结果。
 
 ### 可接受的官方边界来源
 
@@ -269,7 +269,7 @@ agent.6 一带全球AI创新活动体系与长期运营设计
 }
 ```
 
-`design_depth_matrix.json` 回答：方案是否达到 formal 成果深度。核心项必须全部 `status: "complete"`，包括现状诊断、三层范围、总体结构、用地布局、开发强度或待确认控规条件、建筑高度体量风貌、拆改留、交通轨道慢行停车、市政新基建、蓝绿公共空间、三大重点区详细设计、更新项目清单、分期实施、指标复算、风险和缺资料清单。
+`design_depth_matrix.json` 回答：方案是否达到 formal 成果深度。核心项仍必须使用 `status: "complete"`，`incomplete` 与 `data_gap` 都会阻断正式投稿。若某项虽已完成现有数据允许的设计深度、但受组织方尚未公开的控规、边界或其他官方数据限制，可增加可选的 `completeness_limited_by` 字符串数组，用于机器可读披露；它不会把未知数据变成确定结论，也不会改变 formal 资格。核心项包括现状诊断、三层范围、总体结构、用地布局、开发强度或待确认控规条件、建筑高度体量风貌、拆改留、交通轨道慢行停车、市政新基建、蓝绿公共空间、三大重点区详细设计、更新项目清单、分期实施、指标复算、风险和缺资料清单。
 
 每个深度项必须同时提供：
 
@@ -326,6 +326,8 @@ agent.6 一带全球AI创新活动体系与长期运营设计
 ### 图面表达质量要求
 
 本项目要求的图面不是 raw data 截图，也不是把 GeoJSON polygon 直接填色后的 debug map。GeoJSON、metrics 和矩阵是证据层；`assets/figures/*.png`、A3/A0 和 `visual/index.html` 是解释层，必须让非技术评审者一眼看懂设计判断、空间主次和资料边界。
+
+图面也不必停留在 SVG 或静态信息板。可把清楚标注为概念表达的体验图、生成图、视频、声音、音乐、动画和三维交互放入 `assets/media/`，并让 `visual/index.html` 通过本地资源提供叙事入口。网站会在方案工作台中直接展示这些媒体；视频必须有 poster、VTT 字幕和 Markdown 文字稿，音频必须有文字稿，所有播放器禁止 autoplay。自定义封面由 `manifest.cover_image` 指向 `assets/media/` 中已登记的图片；空值继续使用默认封面。
 
 每张核心图必须有一个明确主叙事：
 

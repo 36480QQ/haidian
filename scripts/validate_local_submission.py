@@ -3,6 +3,24 @@
 
 This is a contributor-friendly wrapper around validate_submission.py. It
 discovers files under one proposal directory and passes them as changed files.
+
+Usage
+-----
+Run from the repository root (or pass --repo-root explicitly):
+
+    python3 scripts/validate_local_submission.py submissions/<login>/<slug> \\
+        --pr-author <login>
+
+Add --json to get machine-readable output suitable for automated repair:
+
+    python3 scripts/validate_local_submission.py submissions/<login>/<slug> \\
+        --pr-author <login> --json
+
+The exit code is 0 when the package passes all blocking checks and 1 when one
+or more errors are found.  Warnings do not affect the exit code.
+
+Use --allow-pending-self-check to skip the self_checked assertion when the
+four-gate self-check is still running in a background process.
 """
 
 from __future__ import annotations
@@ -59,6 +77,15 @@ def discover_submission_files(submission_dir: Path, repo_root: Path) -> list[str
     return files
 
 
+def strict_manifest_paths(changed_files: list[str]) -> set[str]:
+    """Treat the local package manifest as newly introduced when requested."""
+    return {
+        path
+        for path in changed_files
+        if path.startswith("submissions/") and path.endswith("/manifest.json")
+    }
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("submission_dir")
@@ -69,6 +96,11 @@ def main() -> int:
         "--allow-pending-self-check",
         action="store_true",
         help="allow a v2 ready package's self_checked=false claim while the self-check is completing",
+    )
+    parser.add_argument(
+        "--strict-manifest",
+        action="store_true",
+        help="require the discovered manifest to use the forward schema 0.2.x contract",
     )
     args = parser.parse_args()
 
@@ -83,6 +115,9 @@ def main() -> int:
         args.pr_author,
         changed_files,
         allow_pending_self_check=args.allow_pending_self_check,
+        strict_manifest_paths=strict_manifest_paths(changed_files)
+        if args.strict_manifest
+        else (),
     )
     if args.json:
         print(json.dumps(report.to_dict(), ensure_ascii=False, indent=2))

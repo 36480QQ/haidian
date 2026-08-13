@@ -106,7 +106,10 @@
       "metric_refs": [
         "site_area_sqm",
         "public_space_ratio",
-        "key_area_count"
+        "key_area_count",
+        "relay_contract_count",
+        "relay_state_count",
+        "regional_interface_count"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
@@ -120,13 +123,15 @@
         "A-KEYAREA-LOCATION-001",
         "A-HOUSING-DATA-001",
         "A-AI-GOVERNANCE-001",
-        "A-IMPLEMENTATION-001"
+        "A-IMPLEMENTATION-001",
+        "A-PILOT-001",
+        "A-REGIONAL-001"
       ],
       "self_check_ids": [
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "一条居业接力主线、六条横向接力链、三处站点和四类居住原型构成总体结构，并通过 land_use、roads、public_space 和 key_areas 图层交叉表达。"
+      "evidence_summary_zh": "一条居业接力主线、六条横向接力链、三处站点和四类居住原型构成空间结构；六份合同、九态状态机、三闸门和五个区域接口构成责任结构，并由几何、协议 JSON、指标和图件交叉表达。"
     },
     {
       "item_id": "land_use_layout",
@@ -428,7 +433,8 @@
       "metric_refs": [
         "key_area_count",
         "building_footprint_area_sqm",
-        "public_space_ratio"
+        "public_space_ratio",
+        "station_service_blueprint_count"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
@@ -441,14 +447,15 @@
         "A-KEYAREA-LOCATION-001",
         "A-HOUSING-DATA-001",
         "A-AI-GOVERNANCE-001",
-        "A-IMPLEMENTATION-001"
+        "A-IMPLEMENTATION-001",
+        "A-PILOT-001"
       ],
       "self_check_ids": [
         "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "众智园项目研居站、AI原点家庭转换站、大钟寺抵达换乘站均给出功能、建筑、公共空间、慢行、场景与分期原型；临时重点区不被声称为精确落位或法定详规。"
+      "evidence_summary_zh": "三站各有独立概念总平、相对剖面、普通/无障碍/服务分流和四阶段服务蓝图，且逐项列出 fallback 与 unknown；临时重点区仍不被声称为精确落位、法定详规或可建位置。"
     },
     {
       "item_id": "renewal_project_list",
@@ -471,7 +478,9 @@
       "metric_refs": [
         "building_footprint_area_sqm",
         "public_space_ratio",
-        "key_area_count"
+        "key_area_count",
+        "validation_protocol_count",
+        "pilot_protocol_phase_count"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
@@ -483,12 +492,14 @@
         "A-KEYAREA-LOCATION-001",
         "A-HOUSING-DATA-001",
         "A-AI-GOVERNANCE-001",
-        "A-IMPLEMENTATION-001"
+        "A-IMPLEMENTATION-001",
+        "A-PILOT-001",
+        "A-VALIDATION-001"
       ],
       "self_check_ids": [
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "项目清单围绕主线、三站、四类居住、三项验证、三处地标和年度活动组织，给出概念位置、依赖与阶段；责任主体、预算、产权和审批均待协作确认。"
+      "evidence_summary_zh": "八个工作包增加 90 天影子演练、可逆小试和联合复核，三项验证逐项给出基线、周期、仪器、拟议验收、停止和签字；责任主体、预算、容量、产权、采购和审批仍待授权确认。"
     },
     {
       "item_id": "phasing_implementation",
@@ -511,7 +522,10 @@
       "metric_refs": [
         "site_area_sqm",
         "key_area_count",
-        "public_space_ratio"
+        "public_space_ratio",
+        "pilot_protocol_phase_count",
+        "relay_gate_count",
+        "pilot_total_lifecycle_cost_cny"
       ],
       "source_ids": [
         "AGENT-TASKBOOK",
@@ -523,13 +537,15 @@
         "A-BOUNDARY-001",
         "A-KEYAREA-LOCATION-001",
         "A-AI-GOVERNANCE-001",
-        "A-IMPLEMENTATION-001"
+        "A-IMPLEMENTATION-001",
+        "A-PILOT-001",
+        "A-BRAND-OPS-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "先以可逆服务和场景验证启动，再扩展三站与公共主线，最终形成年度运营复盘；分期面积可由 phasing 几何复算，具体开发时序和批准安排不作政府承诺。"
+      "evidence_summary_zh": "空间三期继续由 phasing 几何复算；服务层另以 90 天三阶段、五条 RACI 工作流、成本容量公式、采购验收和退场条件控制。unknown 不是放行，具体日期、预算与批准安排不作政府承诺。"
     },
     {
       "item_id": "metrics_recalculation",
@@ -558,7 +574,11 @@
         "green_ratio",
         "public_space_ratio",
         "floor_area_ratio",
-        "key_area_count"
+        "key_area_count",
+        "relay_contract_count",
+        "relay_tabletop_check_count",
+        "validation_protocol_count",
+        "regional_interface_count"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -570,14 +590,16 @@
         "A-BOUNDARY-001",
         "A-KEYAREA-LOCATION-001",
         "A-HOUSING-DATA-001",
-        "A-IMPLEMENTATION-001"
+        "A-IMPLEMENTATION-001",
+        "A-PILOT-001",
+        "A-VALIDATION-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
         "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY"
       ],
-      "evidence_summary_zh": "已知指标均从提交 GeoJSON 在 EPSG:4548 下复算并保留公式；FAR 以及租金、住房存量、单元数、可负担性、真实通勤、服务容量、高度和留驻率不以愿景数字代替数据。"
+      "evidence_summary_zh": "空间已知值由 EPSG:4548 几何复算，协议已知值由 JSON 数组和桌面任务台账计数；FAR、租金、住房、通勤、容量、试点成本、公平性、设备与现场验证结果均保持 unknown，不以 go/no-go 条件冒充成绩。"
     },
     {
       "item_id": "risk_missing_data",
@@ -601,7 +623,10 @@
       "metric_refs": [
         "site_area_sqm",
         "floor_area_ratio",
-        "key_area_count"
+        "key_area_count",
+        "relay_tabletop_check_count",
+        "pilot_total_lifecycle_cost_cny",
+        "ordinary_route_outcome_parity"
       ],
       "source_ids": [
         "SOURCE-REGISTRY",
@@ -614,7 +639,11 @@
         "A-BOUNDARY-001",
         "A-KEYAREA-LOCATION-001",
         "A-HERITAGE-GEOMETRY-001",
-        "A-IMPLEMENTATION-001"
+        "A-IMPLEMENTATION-001",
+        "A-PILOT-001",
+        "A-VALIDATION-001",
+        "A-REGIONAL-001",
+        "A-BRAND-OPS-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -622,7 +651,7 @@
         "VISUAL_STATIC",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "风险清单覆盖临时边界与重点区位置、官方控规、产权、文保 GIS、市政、工程、运营数据、AI决策边界、第三方版权和离线可用性；每项同时说明当前用途、禁用范围和专业深化入口。"
+      "evidence_summary_zh": "八维风险矩阵、六合同 stop rule、负向 fixture、三项验证停止条件与 90 天 go/no-go 共同覆盖空间、政策、运维、技术、隐私和公平风险；每项说明人工复核、普通路径与恢复入口，unknown 明确不是 pass。"
     }
   ]
 }

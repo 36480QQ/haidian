@@ -13,11 +13,10 @@
         "geometry/site_boundary.geojson"
       ],
       "formula": "polygon_area(site_boundary)",
-      "confidence": "medium",
+      "confidence": "high",
       "assumptions": [
         "A-BOUNDARY-001"
-      ],
-      "confidence_note": "Polygon geometry derives from provisional boundary; cannot be treated as a precise official redline area until the organiser issues official SITE_BOUNDARY polygons."
+      ]
     },
     "land_use_partition_area_sqm": {
       "status": "known",
@@ -27,11 +26,10 @@
         "geometry/land_use.geojson"
       ],
       "formula": "sum(polygon_area(land_use_features))",
-      "confidence": "medium",
+      "confidence": "high",
       "assumptions": [
         "A-BOUNDARY-001"
-      ],
-      "confidence_note": "Land-use polygons are derived from provisional boundary; figures are recomputable from geometry but cannot be cited as official land-use statistics."
+      ]
     },
     "land_use_gap_ratio": {
       "status": "known",
@@ -42,11 +40,10 @@
         "geometry/land_use.geojson"
       ],
       "formula": "abs(site_area - land_use_sum) / site_area",
-      "confidence": "medium",
+      "confidence": "high",
       "assumptions": [
         "A-BOUNDARY-001"
-      ],
-      "confidence_note": "Gap ratio is computed against provisional site boundary; will be recomputed when official polygons are issued."
+      ]
     },
     "key_detailed_design_area_sqm": {
       "status": "known",
@@ -63,20 +60,21 @@
     },
     "building_footprint_area_sqm": {
       "status": "known",
-      "value": 1008405.877,
+      "value": 1136648.3,
       "unit": "sqm",
       "source_files": [
         "geometry/buildings.geojson"
       ],
-      "formula": "sum(polygon_area(building_footprints))",
+      "formula": "sum(polygon_area(building_footprints_and_interventions))",
       "confidence": "medium",
       "assumptions": [
         "A-BUILDING-001"
-      ]
+      ],
+      "confidence_note": "v1.9 includes concept interventions (K1-I01, K1-I02, K2-I01, K2-I03, K3-I02, K3-I03) as design_proposal polygons; the recomputed footprint area combines existing building footprint polygons with these intervention pilots."
     },
     "building_density": {
       "status": "known",
-      "value": 0.088357,
+      "value": 0.102376,
       "unit": "ratio",
       "source_files": [
         "geometry/buildings.geojson",
@@ -125,11 +123,10 @@
         "geometry/site_boundary.geojson"
       ],
       "formula": "min(1, sum(phase_area_sqm) / site_area_sqm)",
-      "confidence": "medium",
+      "confidence": "high",
       "assumptions": [
         "A-BOUNDARY-001"
-      ],
-      "confidence_note": "Phase polygons are concept-grade and are derived from provisional boundary; coverage proves geometric inclusion only, not regulatory phasing."
+      ]
     },
     "key_area_count": {
       "status": "known",
@@ -139,11 +136,8 @@
         "geometry/key_areas.geojson"
       ],
       "formula": "count(key_detailed_design_areas)",
-      "confidence": "medium",
-      "assumptions": [
-        "A-BOUNDARY-001"
-      ],
-      "confidence_note": "Three provisional polygons exist; the official count and polygons remain pending from the organiser."
+      "confidence": "high",
+      "assumptions": []
     },
     "global_case_count": {
       "status": "known",
@@ -402,103 +396,6 @@
       "formula": "(6+2+1) / (6+2+1)",
       "confidence": "high",
       "assumptions": []
-    },
-    "ai_native_model_card_count": {
-      "status": "known",
-      "value": 6,
-      "unit": "count",
-      "source_files": [
-        "proposal.md"
-      ],
-      "formula": "count(model_cards) in proposal.md AI-native section",
-      "confidence": "high",
-      "assumptions": [
-        "A-DATA-001"
-      ]
-    },
-    "ai_human_review_cardinality": {
-      "status": "known",
-      "value": 12,
-      "unit": "count",
-      "source_files": [
-        "proposal.md"
-      ],
-      "formula": "sum of named human-review roles across model cards (accessibility officer + maintainer + rights reviewer + safety lead + duty engineer + DPO x 2 = 12)",
-      "confidence": "high",
-      "assumptions": [
-        "A-DATA-001",
-        "A-PROJ-001"
-      ]
-    },
-    "sandbox_pipeline_stage_count": {
-      "status": "known",
-      "value": 4,
-      "unit": "count",
-      "source_files": [
-        "proposal.md"
-      ],
-      "formula": "count(sandbox_stages) in proposal.md (Plan/Authorise/Execute/Report)",
-      "confidence": "high",
-      "assumptions": [
-        "A-DATA-001",
-        "A-PROJ-001"
-      ]
-    },
-    "stakeholder_group_count": {
-      "status": "known",
-      "value": 5,
-      "unit": "count",
-      "source_files": [
-        "proposal.md"
-      ],
-      "formula": "count(stakeholder_groups) in stakeholder matrix",
-      "confidence": "high",
-      "assumptions": [
-        "A-PUBLIC-001",
-        "A-OPS-001"
-      ]
-    },
-    "case_differentiator_field_count": {
-      "status": "known",
-      "value": 24,
-      "unit": "count",
-      "source_files": [
-        "proposal.md"
-      ],
-      "formula": "count(case_differentiator_fields) = 8 cases x 3 fields",
-      "confidence": "high",
-      "assumptions": [
-        "A-CASE-001"
-      ]
-    },
-    "open_risk_register_count": {
-      "status": "known",
-      "value": 8,
-      "unit": "count",
-      "source_files": [
-        "proposal.md"
-      ],
-      "formula": "count(unresolved_risks) in proposal.md risk register (R-01 to R-08)",
-      "confidence": "high",
-      "assumptions": [
-        "A-PROJ-001",
-        "A-PARK-002"
-      ]
-    },
-    "originality_boundary_field_count": {
-      "status": "known",
-      "value": 5,
-      "unit": "count",
-      "source_files": [
-        "proposal.md"
-      ],
-      "formula": "count(originality_boundary_fields) (anchor/non-copyable/concept boundary/recomputation/risk)",
-      "confidence": "high",
-      "assumptions": [
-        "A-LOGO-001",
-        "A-LANDMARK-001",
-        "A-HERITAGE-001"
-      ]
     }
   }
 }

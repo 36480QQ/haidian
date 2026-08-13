@@ -741,7 +741,9 @@
         "site_area_sqm",
         "green_ratio",
         "public_space_ratio",
-        "key_area_count"
+        "key_area_count",
+        "relay_contract_count",
+        "regional_interface_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -749,6 +751,8 @@
       ],
       "visual_sections": [
         "总览地图",
+        "接力合同",
+        "区域协同",
         "任务覆盖"
       ],
       "source_ids": [
@@ -763,14 +767,16 @@
         "A-KEYAREA-LOCATION-001",
         "A-HOUSING-DATA-001",
         "A-AI-GOVERNANCE-001",
-        "A-IMPLEMENTATION-001"
+        "A-IMPLEMENTATION-001",
+        "A-PILOT-001",
+        "A-REGIONAL-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
         "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY"
       ],
-      "evidence_summary_zh": "“行止有居”以一线三站四居六接力统筹产业、居住、公共服务、慢行和运营；结构可由图层与指标追踪，同时完整保留临时边界限制。"
+      "evidence_summary_zh": "“行止有居”以一线三站四居和六份接力合同统筹产业、居住、公共服务、慢行和运营；九态状态机、三闸门与五个区域接口可由 JSON、图件和指标追踪，同时完整保留临时边界与未建立合作的限制。"
     },
     {
       "requirement_id": "agent.2",
@@ -787,14 +793,18 @@
       ],
       "metrics": [
         "building_footprint_area_sqm",
-        "key_area_count"
+        "key_area_count",
+        "validation_protocol_count",
+        "regional_interface_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "visual_sections": [
-        "AI 场景"
+        "AI 场景",
+        "90 天试点",
+        "区域协同"
       ],
       "source_ids": [
         "AGENT-TASKBOOK",
@@ -806,12 +816,15 @@
         "A-CONTROLS-001",
         "A-KEYAREA-LOCATION-001",
         "A-HOUSING-DATA-001",
-        "A-AI-GOVERNANCE-001"
+        "A-AI-GOVERNANCE-001",
+        "A-PILOT-001",
+        "A-VALIDATION-001",
+        "A-REGIONAL-001"
       ],
       "self_check_ids": [
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "可逆内装、住研邻接噪声/安全、智能家居门内默认禁入三项验证，把AI研发与真实居住需求相连；验证结果、容量和产业成效须未来实测。"
+      "evidence_summary_zh": "可逆内装、住研邻接噪声/安全、智能家居门内默认禁入三项协议补齐基线、周期、仪器、拟议阈值、停止、恢复与人工签字；五个区域接口只定义交换对象，真实验证、容量和产业协同成效仍待授权实测。"
     },
     {
       "requirement_id": "agent.3",
@@ -827,14 +840,19 @@
       ],
       "metrics": [
         "public_space_ratio",
-        "building_footprint_area_sqm"
+        "building_footprint_area_sqm",
+        "scenario_card_count",
+        "relay_contract_count",
+        "equity_acceptance_rule_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "visual_sections": [
-        "AI 场景"
+        "AI 场景",
+        "接力合同",
+        "公平验收"
       ],
       "source_ids": [
         "AGENT-TASKBOOK",
@@ -844,13 +862,15 @@
       "assumption_ids": [
         "A-CONTROLS-001",
         "A-HOUSING-DATA-001",
-        "A-AI-GOVERNANCE-001"
+        "A-AI-GOVERNANCE-001",
+        "A-PILOT-001",
+        "A-VALIDATION-001"
       ],
       "self_check_ids": [
         "VISUAL_STATIC",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "十二张场景卡覆盖抵达、核验、转换、工作、慢行、照护、撤回、维修、断网、离开与回流；每张均保留人工复核、无AI路径和退出机制。"
+      "evidence_summary_zh": "十二张场景卡逐项增加触发、最小数据、负责/批准角色、成功证据、停止规则和退出资产，并继承六合同的人工复核、无 AI、断网、撤回与申诉路径；六条公平验收要求失败退出继续留在分母。"
     },
     {
       "requirement_id": "agent.4",
@@ -867,14 +887,18 @@
       "metrics": [
         "public_space_ratio",
         "green_ratio",
-        "key_area_count"
+        "key_area_count",
+        "landmark_count",
+        "station_service_blueprint_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "visual_sections": [
-        "蓝绿公共空间"
+        "蓝绿公共空间",
+        "重点区域",
+        "公平验收"
       ],
       "source_ids": [
         "AGENT-TASKBOOK",
@@ -886,13 +910,14 @@
         "A-KEYAREA-LOCATION-001",
         "A-HERITAGE-GEOMETRY-001",
         "A-AI-GOVERNANCE-001",
-        "A-IMPLEMENTATION-001"
+        "A-IMPLEMENTATION-001",
+        "A-KEYAREA-LOCATION-001"
       ],
       "self_check_ids": [
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "第一把钥匙、居业里程表和回程票档案分置三站，配合可参与的公共主线和服务节点；地标为原创概念，不使用外部商标、图片或远程媒体。"
+      "evidence_summary_zh": "第一把钥匙、居业里程表和回程票档案分置三站；三份独立站点图补充相对总平、剖面、分流和服务蓝图。地标与自定义封面均由本地原创代码生成，不使用外部商标、照片、瓦片或远程媒体。"
     },
     {
       "requirement_id": "agent.5",
@@ -909,14 +934,17 @@
       ],
       "metrics": [
         "public_space_ratio",
-        "green_ratio"
+        "green_ratio",
+        "regional_interface_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "visual_sections": [
-        "蓝绿公共空间"
+        "蓝绿公共空间",
+        "区域协同",
+        "品牌与国际传播"
       ],
       "source_ids": [
         "QINGHUAYUAN-HERITAGE-2026",
@@ -926,13 +954,15 @@
       "assumption_ids": [
         "A-CONTROLS-001",
         "A-HERITAGE-GEOMETRY-001",
-        "A-IMPLEMENTATION-001"
+        "A-IMPLEMENTATION-001",
+        "A-REGIONAL-001",
+        "A-BRAND-OPS-001"
       ],
       "self_check_ids": [
         "VISUAL_STATIC",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "“行止有居”将百年京张的移动与停驻转译为当代居业连续性，并以编组、换挂、直通组织叙事；文保资料仅作保守背景，不替代保护范围图。"
+      "evidence_summary_zh": "“行止有居”将百年京张的移动与停驻转译为当代居业连续性，以编组、换挂、直通组织九态交接；品牌 steward 和六类传播状态防止把投稿误写为批准或建成，文保资料仍只作保守背景。"
     },
     {
       "requirement_id": "agent.6",
@@ -949,14 +979,21 @@
       "metrics": [
         "key_area_count",
         "public_space_ratio",
-        "site_area_sqm"
+        "site_area_sqm",
+        "pilot_protocol_phase_count",
+        "relay_gate_count",
+        "equity_acceptance_rule_count",
+        "pilot_total_lifecycle_cost_cny"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "visual_sections": [
-        "更新项目"
+        "更新项目",
+        "90 天试点",
+        "公平验收",
+        "品牌与国际传播"
       ],
       "source_ids": [
         "AGENT-TASKBOOK",
@@ -968,13 +1005,15 @@
         "A-CONTROLS-001",
         "A-KEYAREA-LOCATION-001",
         "A-AI-GOVERNANCE-001",
-        "A-IMPLEMENTATION-001"
+        "A-IMPLEMENTATION-001",
+        "A-PILOT-001",
+        "A-BRAND-OPS-001"
       ],
       "self_check_ids": [
         "VISUAL_STATIC",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "年度居业接力周把可逆原型开放测试、服务复盘、回流故事和聚合居业账本串成持续循环；参与规模、预算、责任主体和成效指标等待运营合作方确认。"
+      "evidence_summary_zh": "90 天影子演练、可逆小试和联合复核由三道闸门控制，RACI、成本容量公式、采购验收与退场责任均可审核；年度接力周、steward、预算、SLA、规模和成效仍等待获授权主体确认。"
     }
   ]
 }

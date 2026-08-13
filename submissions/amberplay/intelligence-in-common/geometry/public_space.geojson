@@ -26,7 +26,10 @@
         "area_sqm_declared": 17187.751,
         "feature_semantics": "SCENARIO_SUPPORT_ENVELOPE",
         "not_facility_footprint": true,
-        "measurement_semantics": "union_of_support_envelopes_for_internal_comparison_only"
+        "measurement_semantics": "union_of_support_envelopes_for_internal_comparison_only",
+        "linked_project_id": "JZ-03",
+        "spatial_admission_rule": "ordinary_no_ai_route_and_staffed_service_remain_available_before_during_after_trial",
+        "failure_recovery_state": "ai_off_remove_reversible_kit_keep_ordinary_public_space"
       },
       "geometry": {
         "type": "Polygon",
@@ -352,7 +355,10 @@
         "area_sqm_declared": 25175.224,
         "feature_semantics": "SCENARIO_SUPPORT_ENVELOPE",
         "not_facility_footprint": true,
-        "measurement_semantics": "union_of_support_envelopes_for_internal_comparison_only"
+        "measurement_semantics": "union_of_support_envelopes_for_internal_comparison_only",
+        "linked_project_id": "JZ-02",
+        "spatial_admission_rule": "ordinary_no_ai_route_and_staffed_service_remain_available_before_during_after_trial",
+        "failure_recovery_state": "ai_off_remove_reversible_kit_keep_ordinary_public_space"
       },
       "geometry": {
         "type": "Polygon",
@@ -678,7 +684,10 @@
         "area_sqm_declared": 25177.023,
         "feature_semantics": "SCENARIO_SUPPORT_ENVELOPE",
         "not_facility_footprint": true,
-        "measurement_semantics": "union_of_support_envelopes_for_internal_comparison_only"
+        "measurement_semantics": "union_of_support_envelopes_for_internal_comparison_only",
+        "linked_project_id": "JZ-02",
+        "spatial_admission_rule": "ordinary_no_ai_route_and_staffed_service_remain_available_before_during_after_trial",
+        "failure_recovery_state": "ai_off_remove_reversible_kit_keep_ordinary_public_space"
       },
       "geometry": {
         "type": "Polygon",
@@ -1004,7 +1013,10 @@
         "area_sqm_declared": 25178.151,
         "feature_semantics": "SCENARIO_SUPPORT_ENVELOPE",
         "not_facility_footprint": true,
-        "measurement_semantics": "union_of_support_envelopes_for_internal_comparison_only"
+        "measurement_semantics": "union_of_support_envelopes_for_internal_comparison_only",
+        "linked_project_id": "JZ-02",
+        "spatial_admission_rule": "ordinary_no_ai_route_and_staffed_service_remain_available_before_during_after_trial",
+        "failure_recovery_state": "ai_off_remove_reversible_kit_keep_ordinary_public_space"
       },
       "geometry": {
         "type": "Polygon",
@@ -1330,7 +1342,10 @@
         "area_sqm_declared": 17194.683,
         "feature_semantics": "SCENARIO_SUPPORT_ENVELOPE",
         "not_facility_footprint": true,
-        "measurement_semantics": "union_of_support_envelopes_for_internal_comparison_only"
+        "measurement_semantics": "union_of_support_envelopes_for_internal_comparison_only",
+        "linked_project_id": "JZ-01",
+        "spatial_admission_rule": "ordinary_no_ai_route_and_staffed_service_remain_available_before_during_after_trial",
+        "failure_recovery_state": "ai_off_remove_reversible_kit_keep_ordinary_public_space"
       },
       "geometry": {
         "type": "Polygon",
@@ -1656,7 +1671,10 @@
         "area_sqm_declared": 17190.722,
         "feature_semantics": "SCENARIO_SUPPORT_ENVELOPE",
         "not_facility_footprint": true,
-        "measurement_semantics": "union_of_support_envelopes_for_internal_comparison_only"
+        "measurement_semantics": "union_of_support_envelopes_for_internal_comparison_only",
+        "linked_project_id": "JZ-03",
+        "spatial_admission_rule": "ordinary_no_ai_route_and_staffed_service_remain_available_before_during_after_trial",
+        "failure_recovery_state": "ai_off_remove_reversible_kit_keep_ordinary_public_space"
       },
       "geometry": {
         "type": "Polygon",
@@ -1982,7 +2000,10 @@
         "area_sqm_declared": 17184.529,
         "feature_semantics": "SCENARIO_SUPPORT_ENVELOPE",
         "not_facility_footprint": true,
-        "measurement_semantics": "union_of_support_envelopes_for_internal_comparison_only"
+        "measurement_semantics": "union_of_support_envelopes_for_internal_comparison_only",
+        "linked_project_id": "JZ-06",
+        "spatial_admission_rule": "ordinary_no_ai_route_and_staffed_service_remain_available_before_during_after_trial",
+        "failure_recovery_state": "ai_off_remove_reversible_kit_keep_ordinary_public_space"
       },
       "geometry": {
         "type": "Polygon",
@@ -2308,7 +2329,10 @@
         "area_sqm_declared": 17188.26,
         "feature_semantics": "SCENARIO_SUPPORT_ENVELOPE",
         "not_facility_footprint": true,
-        "measurement_semantics": "union_of_support_envelopes_for_internal_comparison_only"
+        "measurement_semantics": "union_of_support_envelopes_for_internal_comparison_only",
+        "linked_project_id": "JZ-07",
+        "spatial_admission_rule": "ordinary_no_ai_route_and_staffed_service_remain_available_before_during_after_trial",
+        "failure_recovery_state": "ai_off_remove_reversible_kit_keep_ordinary_public_space"
       },
       "geometry": {
         "type": "Polygon",
@@ -2634,7 +2658,10 @@
         "area_sqm_declared": 17187.243,
         "feature_semantics": "SCENARIO_SUPPORT_ENVELOPE",
         "not_facility_footprint": true,
-        "measurement_semantics": "union_of_support_envelopes_for_internal_comparison_only"
+        "measurement_semantics": "union_of_support_envelopes_for_internal_comparison_only",
+        "linked_project_id": "JZ-03",
+        "spatial_admission_rule": "ordinary_no_ai_route_and_staffed_service_remain_available_before_during_after_trial",
+        "failure_recovery_state": "ai_off_remove_reversible_kit_keep_ordinary_public_space"
       },
       "geometry": {
         "type": "Polygon",
@@ -2960,7 +2987,10 @@
         "area_sqm_declared": 17196.292,
         "feature_semantics": "SCENARIO_SUPPORT_ENVELOPE",
         "not_facility_footprint": true,
-        "measurement_semantics": "union_of_support_envelopes_for_internal_comparison_only"
+        "measurement_semantics": "union_of_support_envelopes_for_internal_comparison_only",
+        "linked_project_id": "JZ-01",
+        "spatial_admission_rule": "ordinary_no_ai_route_and_staffed_service_remain_available_before_during_after_trial",
+        "failure_recovery_state": "ai_off_remove_reversible_kit_keep_ordinary_public_space"
       },
       "geometry": {
         "type": "Polygon",
@@ -3282,11 +3312,26 @@
         "stop_rule": "suspend linked scenario if independent appeal and corrective action are unavailable",
         "privacy_rule": "aggregate_or_opt_in_data_only",
         "human_review": "required_for_public_or_high_impact_decisions",
-        "design_note": "可逆、可预约、可审计的概念公共空间节点；实施需另行安全和专业审查。",
+        "design_note": "可逆、可预约、可审计的概念公共空间节点；同时承载大钟寺100米公共验收街的申诉与回滚门，实施需另行安全和专业审查。",
+        "prototype_role": "dazhongsi_100m_public_acceptance_street",
+        "prototype_semantics": "representative_relative_sequence_not_existing_street_or_engineering_alignment",
+        "representative_length_m": 100,
+        "thresholds": [
+          "0-20m_notice_porch",
+          "20-45m_dual_human_ai_service_desk",
+          "45-75m_public_acceptance_court",
+          "75-100m_appeal_and_rollback_porch"
+        ],
+        "basic_access_rule": "no_mandatory_phone_account_or_face_gate",
+        "human_fallback_target_seconds": 30,
+        "pilot_duration_days": 90,
         "area_sqm_declared": 17197.67,
         "feature_semantics": "SCENARIO_SUPPORT_ENVELOPE",
         "not_facility_footprint": true,
-        "measurement_semantics": "union_of_support_envelopes_for_internal_comparison_only"
+        "measurement_semantics": "union_of_support_envelopes_for_internal_comparison_only",
+        "linked_project_id": "JZ-07",
+        "spatial_admission_rule": "ordinary_no_ai_route_and_staffed_service_remain_available_before_during_after_trial",
+        "failure_recovery_state": "ai_off_remove_reversible_kit_keep_ordinary_public_space"
       },
       "geometry": {
         "type": "Polygon",
@@ -3612,7 +3657,10 @@
         "area_sqm_declared": 17198.084,
         "feature_semantics": "SCENARIO_SUPPORT_ENVELOPE",
         "not_facility_footprint": true,
-        "measurement_semantics": "union_of_support_envelopes_for_internal_comparison_only"
+        "measurement_semantics": "union_of_support_envelopes_for_internal_comparison_only",
+        "linked_project_id": "JZ-08",
+        "spatial_admission_rule": "ordinary_no_ai_route_and_staffed_service_remain_available_before_during_after_trial",
+        "failure_recovery_state": "ai_off_remove_reversible_kit_keep_ordinary_public_space"
       },
       "geometry": {
         "type": "Polygon",

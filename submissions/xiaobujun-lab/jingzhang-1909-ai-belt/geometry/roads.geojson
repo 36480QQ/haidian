@@ -90,7 +90,7 @@
     "confidence": "medium",
     "geometry_role": "design_proposal",
     "road_class": "greenway",
-    "name_zh": "小月河场景赋能滨水绿道"
+    "name_zh": "小月河场景连接绿道"
    },
    "geometry": {
     "type": "LineString",
@@ -386,6 +386,36 @@
      [
       116.3540138,
       39.9485337
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "ROAD-011",
+   "properties": {
+    "id": "ROAD-011",
+    "layer": "ROAD_CENTERLINE",
+    "source_type": "agent_generated_design",
+    "confidence": "medium",
+    "geometry_role": "design_proposal",
+    "road_class": "transit_connection",
+    "name_zh": "知春路节点东西缝合慢行轴"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      116.3397068,
+      39.9747546
+     ],
+     [
+      116.3475624,
+      39.9749975
+     ],
+     [
+      116.3544706,
+      39.9753701
      ]
     ]
    }

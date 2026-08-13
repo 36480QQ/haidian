@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "ada1191ed42c6f36204068c9aa9ba54e29ec0b813bc8494453a890f561d51f0d"
+      "sha256": "5302de76f2686078337db54af2f7faf72129afbbd8f1db54fc8c8778177e5c1c"
     },
     {
       "path": "agent.json",
@@ -38,13 +38,13 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "57accb38b63074b0d1524047a5c4909efb3eee1a378fb371076f7cbb23ffa953"
+      "sha256": "3bef4a639d100b6065181063d4617960927695097f6fe26f40d68280cf4bc301"
     },
     {
       "path": "assumptions.json",
       "role": "assumptions",
       "required": true,
-      "sha256": "0765cb6db5979d61ed758d76af6302a245774470dd8a7fb702da2629af86ba15"
+      "sha256": "cabb16cf26782afe6671ebc8b6e5c8270d87165a67d9078de2e51a3a47ff764f"
     },
     {
       "path": "sources.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "80b71cb78d2c1581fc679eb561959ac515bc8a3ff6f76c74dcc2c4e20d49b72f"
+      "sha256": "be9490e21723baa01fb3a4e2ab6fede873e89eaada58b869d55a0f11764dae5d"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "c74f8b7b06ea5c09777e28033ac0a4a6890d9fcd283f4b3261636be1f677de7e"
+      "sha256": "956072813a63254b940873644f139993ac7ec54c85b85eab48e1ac7d9deb99d9"
     },
     {
       "path": "report/narrative.md",
@@ -114,7 +114,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "8fb5f29a49979148d83e044cd61800f59e3066083971937122b758a434ae13df"
+      "sha256": "0eb796279f2097dc791e5cb6be4cced27bed85cccce4469f7d20b32a63a35c39"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "ac6e986bba2fcb127c1c718a8f034a048674d23340a8302264a6bfcedd58262e"
+      "sha256": "61dbfb7d4613880ce2f72e4eb270ef872786f89bfc9ec331fe0333711d285a0f"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "d7b1875ac8f2937f2a682a123cba04d0fb2ed720b82f535bf5b30cc0a1af2152"
+      "sha256": "5e1e852a827f999649aef4fcccb584568154b063126c1b9819791933abb6d5a3"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -243,7 +243,19 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "b8f72d6012d562a154cec97a6448b4641e38ac5cf8fe4ac5a1c020ad186279c0"
+      "sha256": "8b97c73eda5c2772bb2f18e502791d76e810292309586c2f2fb8e8148cf6cf08"
+    },
+    {
+      "path": "visual/assets/mainline-tabletop.json",
+      "role": "evidence_data",
+      "required": false,
+      "sha256": "6413638deb58f41d0761e552a126288ce17d32e2c175b26126cff7c1db982eec"
+    },
+    {
+      "path": "visual/assets/rights-ledger.json",
+      "role": "evidence_data",
+      "required": false,
+      "sha256": "59ae8745efbacb989d3002c93f301b2d3d90a96403b2c891f8b734e0b170c4d3"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -284,14 +296,51 @@
       "language": "en",
       "translation_of": "assets/figures/site-overview.png",
       "sha256": "9b75d04bf523b224fe1e560ba24b10db7c7060f7ee0b04f6613df62b7da2d674"
+    },
+    {
+      "path": "visual/assets/mainline-contracts.json",
+      "role": "evidence_data",
+      "required": false,
+      "sha256": "35600127d9e4b6edadec26c8f210265058633cd23f8df666bd0c1ccae1453e8a"
+    },
+    {
+      "path": "visual/assets/mainline-state-machine.json",
+      "role": "evidence_data",
+      "required": false,
+      "sha256": "235be9619322afc3fddf98727999dc4a7faee2687a457c8a7862ed196c5b2a1b"
+    },
+    {
+      "path": "visual/assets/mainline-gates.json",
+      "role": "evidence_data",
+      "required": false,
+      "sha256": "5834f2490b7e7b280ef9020d5537f19fd60d86c2c4cea52d7ee318101651ae49"
+    },
+    {
+      "path": "visual/assets/mainline-pipeline.json",
+      "role": "evidence_data",
+      "required": false,
+      "sha256": "ad850bee7449688d1a5e6137d3a7f919e0a2c80358886825680d99ee63426089"
+    },
+    {
+      "path": "visual/assets/mainline-raci.json",
+      "role": "evidence_data",
+      "required": false,
+      "sha256": "5020a379f45e5e10887965802be631def26f6d15698d23dcd7fc6e49ccaab52d"
+    },
+    {
+      "path": "risk.json",
+      "role": "evidence_data",
+      "required": false,
+      "sha256": "343d31e7db84ff5ce5e4e355d013bf01648b186ff7da8066f74a737eda76d99b"
     }
   ],
   "validation_claim": {
     "self_checked": true,
     "known_blockers": [],
     "data_confidence": "medium (provisional boundary: all spatial metrics recalculated in EPSG:4548 from provisional geometry; official redline required for professional scoring)",
-    "last_validated_at": "2026-08-10T09:50:00Z",
-    "reviewer_feedback_addressed_zh": "评审 v1 意见处理：1) manifest.validation_claim.self_checked 已同步为 true 并记录 last_validated_at；2) 边界派生数据（site_area_sqm/site_area_ha/key_area_count/land_use_polygon_count/land_use_coverage_ratio）置信度统一从 high 降为 medium，data_confidence 同步为 medium（provisional 边界披露）。",
-    "reviewer_feedback_addressed_en": "Reviewer v1 addressed: 1) manifest.validation_claim.self_checked synced to true with last_validated_at; 2) boundary-derived metrics (site_area_sqm/site_area_ha/key_area_count/land_use_polygon_count/land_use_coverage_ratio) downgraded from high to medium confidence, data_confidence set to medium (provisional boundary disclosed)."
+    "last_validated_at": "2026-08-11T07:00:00Z",
+    "reviewer_feedback_addressed_zh": "v0.2 已处理实施可行性；v0.3：三区两翼结构化映射表、区域协同可签接口（北纬社区/未来科学城/怀柔科学城/经开区/京津冀）、主线合入验收协议五则、visual 新增实施路径与治理版块。",
+    "reviewer_feedback_addressed_en": "v0.2 addressed implementation feasibility; v0.3: structured three-areas-two-wings mapping table, regional signable interfaces (Beiwai/Future Science City/Huairou/E-Town/BTH), five-rule mainline merge acceptance protocol, new implementation & governance section in visual.",
+    "readiness_contract": "persisted-self-check-v1"
   }
 }

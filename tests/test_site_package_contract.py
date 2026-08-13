@@ -230,6 +230,13 @@ class SitePackageContractTests(unittest.TestCase):
         self.assertIn("use_blobless_sparse_participant_workspace", continuous["recommended_loop"])
         self.assertIn("run_participant_preflight_before_upload", continuous["recommended_loop"])
         self.assertTrue(data["boundary_clause"]["forbidden_final_conclusions_zh"])
+        multimodal = data["multimodal_presentation"]
+        self.assertIn("Three.js", multimodal["priority_zh"])
+        self.assertIn("视频", multimodal["priority_zh"])
+        self.assertIn("音乐", multimodal["priority_zh"])
+        self.assertIn("默认封面", multimodal["capability_fallback_zh"])
+        self.assertIn("manifest.cover_image", multimodal["website_delivery_zh"])
+        self.assertTrue(any("never_autoplay_audio_or_video" in item for item in multimodal["guardrails"]))
 
         skill = (REPO_ROOT / "skills" / "urban-design-ai-submission" / "SKILL.md").read_text(encoding="utf-8")
         self.assertIn("## Continuous Participation Loop", skill)
@@ -242,6 +249,17 @@ class SitePackageContractTests(unittest.TestCase):
         self.assertIn("computer use", skill)
         self.assertIn("## Collaborate Through Issues and PRs", skill)
         self.assertIn("Attach screenshots or annotated images", skill)
+        self.assertIn("multimodal-presentation.md", skill)
+        self.assertIn("Three.js", skill)
+        self.assertIn("assets/media/", skill)
+        self.assertIn("cover_image", skill)
+
+        readme = (REPO_ROOT / "README.md").read_text(encoding="utf-8")
+        readme_en = (REPO_ROOT / "README.en.md").read_text(encoding="utf-8")
+        for text in (readme, readme_en):
+            self.assertIn("Three.js", text)
+            self.assertIn("assets/media/", text)
+            self.assertIn("cover_image", text)
         self.assertIn("Cross-check important claims", skill)
         self.assertIn("## Research Beyond the Repository", skill)
         self.assertIn("follow up at the first available opportunity", skill)
@@ -255,6 +273,42 @@ class SitePackageContractTests(unittest.TestCase):
         project_link = "[open-city-ai/haidian](https://github.com/open-city-ai/haidian)"
         self.assertEqual(skill.count(project_link), 1)
         self.assertNotIn("你也可以 Star", skill)
+
+
+
+    def test_skill_references_all_required_reference_docs(self) -> None:
+        """SKILL.md must link to all six reference documents."""
+        skill = (REPO_ROOT / "skills" / "urban-design-ai-submission" / "SKILL.md").read_text(encoding="utf-8")
+        required_refs = [
+            "references/geometry-and-metrics.md",
+            "references/human-readable-proposal.md",
+            "references/lightweight-workspace.md",
+            "references/multimodal-presentation.md",
+            "references/submission-package.md",
+            "references/validator-feedback.md",
+        ]
+        for ref in required_refs:
+            with self.subTest(ref=ref):
+                self.assertIn(ref, skill, f"SKILL.md must link to {ref}")
+
+    def test_provisional_boundaries_geojson_has_required_feature_ids(self) -> None:
+        """provisional_boundaries.geojson must contain the 6 required provisional feature IDs."""
+        geojson_path = (
+            REPO_ROOT / "brief" / "site-package" / "geometry" / "provisional_boundaries.geojson"
+        )
+        data = json.loads(geojson_path.read_text(encoding="utf-8"))
+        feature_ids = {f["properties"]["id"] for f in data["features"]}
+        required_ids = {
+            "PROV-SITE-001",
+            "PROV-RESEARCH-001",
+            "PROV-KEY-SCOPE-001",
+            "PROV-KEY-001",
+            "PROV-KEY-002",
+            "PROV-KEY-003",
+        }
+        for feature_id in required_ids:
+            with self.subTest(feature_id=feature_id):
+                self.assertIn(feature_id, feature_ids, f"provisional_boundaries.geojson must contain {feature_id}")
 
 
 if __name__ == "__main__":
