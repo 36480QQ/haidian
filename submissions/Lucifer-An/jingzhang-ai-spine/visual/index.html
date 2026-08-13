@@ -3402,6 +3402,43 @@ order.forEach(layer=>{
 });
 </script>
 
+<section id="figure-gallery" style="margin:16px 24px;padding:14px 18px;background:#fff;border:1px solid #ccc;border-radius:8px;">
+  <h2 style="font-size:15px;margin:0 0 10px;color:#0d3c75;">方案图集 / Figure gallery（离线本地图件）</h2>
+  <p style="font-size:13px;color:#444;line-height:1.9;margin:0 0 12px;">
+    以下 7 张图件由本地脚本 <code>build_figures.py</code> 生成，全部为原创栅格图，无第三方图像与远程资源；中英双语版本分别对应 <code>*.png</code> 与 <code>*.en.png</code>。图件与 <code>metrics.json</code>、<code>visual/assets/scenarios.json</code>、<code>visual/assets/phasing.json</code> 同源，数值一致。
+  </p>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;">
+    <figure style="margin:0;">
+      <img src="../assets/figures/site-overview.png" alt="总览图：三层范围与遗址公园廊道" style="width:100%;border:1px solid #d8dcd6;border-radius:6px;background:#fff;">
+      <figcaption style="font-size:12px;color:#666;margin-top:6px;">图 1 · 总览地图：统筹研究 43.6 km²、总体设计 11.35 km²、重点片区 368.4 ha 三层范围</figcaption>
+    </figure>
+    <figure style="margin:0;">
+      <img src="../assets/figures/land-use-structure.png" alt="用地分区结构图" style="width:100%;border:1px solid #d8dcd6;border-radius:6px;background:#fff;">
+      <figcaption style="font-size:12px;color:#666;margin-top:6px;">图 2 · 用地分区与功能结构：科研创新、居住、公共服务、蓝绿与公共空间</figcaption>
+    </figure>
+    <figure style="margin:0;">
+      <img src="../assets/figures/key-areas.png" alt="三处重点片区图" style="width:100%;border:1px solid #d8dcd6;border-radius:6px;background:#fff;">
+      <figcaption style="font-size:12px;color:#666;margin-top:6px;">图 3 · 三处重点片区：众智园全栈自主加速区、北京AI原点社区、大钟寺AI产业集群</figcaption>
+    </figure>
+    <figure style="margin:0;">
+      <img src="../assets/figures/mobility-bluegreen.png" alt="交通慢行与蓝绿网络图" style="width:100%;border:1px solid #d8dcd6;border-radius:6px;background:#fff;">
+      <figcaption style="font-size:12px;color:#666;margin-top:6px;">图 4 · 交通慢行骨架与蓝绿公共空间网络叠合</figcaption>
+    </figure>
+    <figure style="margin:0;">
+      <img src="../assets/figures/scenario-cards.png" alt="12 张 AI 场景卡" style="width:100%;border:1px solid #d8dcd6;border-radius:6px;background:#fff;">
+      <figcaption style="font-size:12px;color:#666;margin-top:6px;">图 5 · AI+ 场景卡（SC-01～SC-12）：用户画像 / 技术 / 空间落点 / 运营方 / 可量化指标（数据源 <code>visual/assets/scenarios.json</code>）</figcaption>
+    </figure>
+    <figure style="margin:0;">
+      <img src="../assets/figures/regional-synergy.png" alt="区域协同节点与流向图" style="width:100%;border:1px solid #d8dcd6;border-radius:6px;background:#fff;">
+      <figcaption style="font-size:12px;color:#666;margin-top:6px;">图 6 · 区域协同与京津冀创新网络：向北衔接未来科学城、向南联动经开区，形成"研发—中试—场景—治理"闭环</figcaption>
+    </figure>
+    <figure style="margin:0;">
+      <img src="../assets/figures/metrics-evidence.png" alt="核心指标与证据图" style="width:100%;border:1px solid #d8dcd6;border-radius:6px;background:#fff;">
+      <figcaption style="font-size:12px;color:#666;margin-top:6px;">图 7 · 核心指标与证据链：面积复算、绿地率、公共空间比、分期面积（数据源 <code>metrics.json</code> / <code>visual/assets/phasing.json</code>）</figcaption>
+    </figure>
+  </div>
+</section>
+
 <section id="coverage-checklist" style="margin:16px 24px;padding:14px 18px;background:#fff;border:1px solid #ccc;border-radius:8px;">
   <h2 style="font-size:15px;margin:0 0 10px;color:#0d3c75;">可视化覆盖范围自检 / Visualization coverage checklist</h2>
   <p style="font-size:13px;color:#444;line-height:1.9;margin:0 0 10px;">
