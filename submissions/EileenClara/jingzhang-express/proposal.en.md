@@ -397,16 +397,39 @@ This proposal places all renewal projects and test scenarios under a unified imp
 - **G3 Public trial run**: open a trial run to the public and collect feedback from citizens and developers; illustrative evaluation indicators include usage visits, satisfaction, safety-takeover counts, and complaint-response times [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
 - **G4 Decide retain/revise/stop**: decide the project's fate against preset indicators; when indicators fail or risks become uncontrollable, pause, narrow the scope, or roll back to the concept layer for further deepening; the exit mechanism is a routine operational decision, not overall failure [depth:phasing_implementation].
 
-The public-value compact (conceptual) specifies eight elements for each intervention: public problem, geometric location, service bottom line, data boundary, human review, evaluation indicators, stop conditions, and rollback actions. The compact is written as "geometric location locked + indicators illustrative" and makes no commitment on implementation, funding, or participating entities [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]. Illustrative compact points are as follows; all geometric locations fall on submitted layers:
+The public-value compact (conceptual) specifies eight elements for each intervention: public problem, geometric location, service bottom line, data boundary, human review, evaluation indicators, stop conditions, and rollback actions. The compact is written as "geometric location locked + indicators illustrative" and makes no commitment on implementation, funding, or participating entities [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]. The table below places all 12 renewal projects (JZ-01—JZ-12) within the illustrative compact points; all geometric locations fall on submitted layers, and stop and rollback conditions are given per project's implementation phase and dependencies [depth:renewal_project_list].
 
 | Project | Geometric Location | Evaluation Indicators (illustrative) | Stop and Rollback Conditions |
 | --- | --- | --- | --- |
 | JZ-01 Jing-Zhang Heritage Park slow-mobility gap stitching | Heritage-park slow-mobility backbone (ROAD-001/007) | Number of gaps stitched, length of continuous slow-mobility route | Passing safety or traffic-organization review fails → pause, narrow to sample segment, roll back to concept layer |
+| JZ-02 Zhongzhiyuan Qinghe innovation interface | Qinghe · Zhongzhiyuan innovation-interface blue-green corridor (GREEN-001) and Qinghe waterside (ROAD-008) | Number of blue-green interface pilot nodes, open-test usage frequency | Qinghe blue-line or flood-control review fails or ecological impact exceeds limits → pause interface retrofitting, narrow to a single node, roll back to concept layer |
+| JZ-03 Origin Community campus-adjacent achievement-transformation street | Campus-adjacent achievement-transformation incubator (BLDG-001) and service offices (BLDG-009) along education land (LU-005) | Number of ground-floor format replacement pilots, number of tenant transformation teams | Campus-boundary or ownership review fails or ground-floor replacement rate misses target → narrow pilot segment, roll back to concept layer |
+| JZ-04 Dazhongsi station four-quadrant pedestrian connectivity | Dazhongsi station intersection four quadrants and station-city east-west interchange (ROAD-005) | Number of four-quadrant connectivity pilots, added non-motorized-vehicle spaces | Rail or municipal-pipeline conditions fail review → suspend implementation, retain existing passage, roll back to concept layer |
 | JZ-05 Open test ground for model training and evaluation | Zhongzhiyuan testing grounds (around BLDG-003) | Number of open test workspaces, pilot evaluation tasks | Computing-power or data-authorization risk uncontrollable → narrow scope, return to conceptual recommendation |
+| JZ-06 Open-source achievement showcase gallery and contribution honor wall | Origin Community open-source plaza (PUBLIC-002/GREEN-005) | Number of exhibition events, number of honor-wall entries | Copyright rights-clearing or public-space permit fails → suspend exhibition, remove content, roll back to concept layer |
 | JZ-07 Xiaoyue River low-speed robot delivery pilot | Xiaoyue River slow-mobility loop (ROAD-004/008) | Pilot robots deployed, safety takeovers | Passing safety or liability boundaries uncontrollable → stop on schedule, withdraw pilot equipment, roll back to concept layer |
+| JZ-08 AI life-services model street | Streets around residential and community-service facility land (0701/0702) (LU-008) | Number of pilot street segments, service visits and satisfaction | Accessibility/age-friendliness review fails or satisfaction below target → narrow pilot segment, roll back to concept layer |
+| JZ-09 Edge-computing and distributed-energy stations | Zhongzhiyuan research-land (0802, LU-001) park service nodes | Number of pilot stations, connected service terminals | Energy, computing, or safety conditions fail review → suspend operation, withdraw pilot equipment, roll back to concept layer |
+| JZ-10 Global AI innovation events public route | Three-station plazas and heritage-park slow-mobility backbone (PUBLIC-001/002/003, ROAD-001/007) | Number of events, attendance, international communication reach | Event safety or copyright rights-clearing fails → cancel events, remove public route, roll back to concept layer |
 | JZ-11 Three-station plaza public-experience launch pilot | Three-station plazas (PUBLIC-001/002/003) | Pilot events, plaza usage visits | Event safety or public value fails → pause, restore regular plaza opening, roll back to concept layer |
+| JZ-12 Campus-park slow-mobility stitching pilot | Education land (LU-005) and developer promenade (ROAD-007) | Number of slow-mobility gaps stitched, connectivity of pilot segments | Campus-boundary or ownership review fails or connectivity gain below target → narrow pilot segment, roll back to concept layer |
 
-The table above is a conceptual recommendation; the indicators are illustrative and may be calibrated by operators with real data; the stop and rollback actions are routine operational decisions and do not constitute a negative conclusion about any project [data:geometry/roads.geojson#ROAD-004] [data:geometry/public_space.geojson#PUBLIC-001].
+The table above is a conceptual recommendation; the indicators are illustrative and may be calibrated by operators with real data; the stop and rollback actions are routine operational decisions and do not constitute a negative conclusion about any project [data:geometry/roads.geojson#ROAD-004] [data:geometry/public_space.geojson#PUBLIC-001] [depth:renewal_project_list].
+
+#### G0 Institutional Engagement Checklist (Concept)
+
+The core actions of the G0 gate are "evidence lock" and "authorization-boundary confirmation": before a project enters a lightweight pilot, a conceptual checklist lists the categories of institutions that each key-path project engages at G0 and the items each must confirm, writing the authorization, boundary, and compliance preconditions into the compact [source:DATA-SRC-AGENT-TASKBOOK-20260518] [depth:phasing_implementation]. The checklist below is a conceptual engagement clue and does not constitute any institution's commitment or an arrangement already reached:
+
+| Institution Category (conceptual) | Items to Confirm at G0 | Projects (illustrative) |
+| --- | --- | --- |
+| Local planning and natural-resources authorities | Boundary and regulatory-plan basis, land-use codes, approval path | JZ-01 gap stitching, JZ-02 Qinghe interface |
+| Local sub-districts / urban management | Pilot authorization, public-space use, event safety | JZ-07 robot delivery, JZ-11 plaza pilot |
+| Rail operator | Station-integration scope, interchange and four-quadrant connectivity conditions | JZ-04 four-quadrant connectivity, JZ-12 slow-mobility stitching |
+| Park operating platform | Space, computing-power, and data entry points; operation and compliance boundaries | JZ-05 test ground, JZ-09 computing stations |
+| Universities and research institutes | Achievement transformation, campus-adjacent collaboration, campus boundary and data authorization | JZ-03 transformation street, JZ-12 slow-mobility stitching, ★07 education classes |
+| Capital and service intermediaries | Investment and financing, legal and compliance consulting | JZ-05 test ground, JZ-10 events public route |
+
+The institution list above is a conceptual engagement clue and does not constitute any institution's commitment or an arrangement already reached; specific engagement entities, agreements, and authorization boundaries must be confirmed by professional teams and local authorities before a project enters its pilot [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [depth:renewal_project_list].
 
 ### Scenario Open Operation and Lightweight Pilot Mechanism
 
@@ -418,6 +441,39 @@ For the four industrial testing-and-validation scenarios (★01 open test ground
 - **Formalization or stop**: scenarios that pass evaluation and obtain compliant authorization may move into formal operation; scenarios that fail evaluation or whose risks are uncontrollable are stopped or reduced in scope on schedule and returned to the concept layer for further deepening; the exit mechanism is a routine operational decision and does not imply overall failure [depth:phasing_implementation].
 
 Pilot authorization and liability allocation follow the principle of "conceptual recommendations make no commitment; pilots require authorization": no test scenario is presented as approved operation, and the specific pilot scope, traffic rules, liability boundaries, and compliance conditions await confirmation by local authorities and professional teams; the evaluation indicators are illustrative and may be calibrated by operators with real data. This mechanism connects to the phasing plan: lightweight pilots are placed in the near term (PHASE-001) for early validation where possible, while formalized operation advances as the industrial carriers mature in the mid term (PHASE-002) and long term (PHASE-003) [data:geometry/phasing.geojson#PHASE-001] [data:geometry/phasing.geojson#PHASE-002] [source:DATA-SRC-AGENT-TASKBOOK-20260518].
+
+#### AI-to-Space Engineering Chains (Example)
+
+For the three test scenarios ★01, ★07, and ★11, this proposal uses a four-step chain — input → AI processing → spatial output → validation — to illustrate how AI can act on spatial form under controlled conditions; all chains are conceptual recommendations/illustrative scopes and do not claim that such systems exist or have landed, and the methods cited are publicly reproducible [source:DATA-SRC-AGENT-TASKBOOK-20260518] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
+
+**★01 Open Test Ground for Model Training and Evaluation (Zhongzhiyuan)**
+
+| Step | Content (illustrative) |
+| --- | --- |
+| Input | Public benchmarks and authorized evaluation sets, plus measurement-point definition around BLDG-003 in the Zhongzhiyuan testing grounds [data:geometry/buildings.geojson#BLDG-003] |
+| AI processing | Evaluation-task decomposition and scheduling (publicly reproducible methods), identifying site gaps and flow conflicts [data:geometry/land_use.geojson#LU-001] |
+| Spatial output | Test-ground layout and stitch-point geometry (around BLDG-003, research land 0802) [metric:land_use_share_0802] |
+| Validation | Human review + open-test workspaces/pilot evaluation tasks; on failure → narrow scope, return to conceptual recommendation [depth:renewal_project_list] |
+
+**★07 Campus-Adjacent Innovation Education and AI Literacy Classes (Origin Community)**
+
+| Step | Content (illustrative) |
+| --- | --- |
+| Input | Public courses and rights-cleared textbooks, plus measurement-point definition on education land (LU-005) and at the open-source innovation education facilities (BLDG-007) [data:geometry/land_use.geojson#LU-005] |
+| AI processing | Class-demand clustering and course organization (publicly reproducible methods), identifying shared classrooms and showcase nodes [data:geometry/buildings.geojson#BLDG-007] |
+| Spatial output | Shared-classroom and showcase-node geometry within the exchange hall (PUBLIC-002) [data:geometry/public_space.geojson#PUBLIC-002] |
+| Validation | Teacher gatekeeping + class sessions and satisfaction; on failure → suspend sessions, roll back to concept layer [depth:renewal_project_list] |
+
+**★11 Xiaoyue River Low-Speed Robot Delivery (Xiaoyue River wing)**
+
+| Step | Content (illustrative) |
+| --- | --- |
+| Input | Public road-network and aggregated dispatch data, plus measurement-point definition on the slow-mobility loop (ROAD-004) and waterside walkways (ROAD-008) [data:geometry/roads.geojson#ROAD-004] |
+| AI processing | Route planning and dispatch (publicly reproducible methods), identifying slow-mobility gaps and passage time windows [data:geometry/roads.geojson#ROAD-008] |
+| Spatial output | Pilot-route and test-ground geometry (ROAD-004/008) [data:geometry/roads.geojson#ROAD-004] |
+| Validation | Remote human takeover + pilot deployments/safety takeovers; on failure → stop on schedule, withdraw pilot equipment, roll back to concept layer [source:DATA-SRC-AGENT-TASKBOOK-20260518] |
+
+The four-step chains above are conceptual recommendations and illustrative scopes, illustrating that AI can provide recalculable inputs to spatial form within human-review and authorization boundaries; they do not constitute any built system or approved-operation statement [depth:phasing_implementation] [source:DATA-SRC-AGENT-TASKBOOK-20260518].
 
 ### Lifecycle Space Supply and Operation Strategy
 
