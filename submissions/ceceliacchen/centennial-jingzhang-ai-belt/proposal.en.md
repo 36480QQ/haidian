@@ -293,6 +293,20 @@ The compliance matrix covers: `standard_matrix.json` covers 8 mandatory standard
 
 - **Professional review needed**: not an implementation basis before review by a licensed architect / planner.
 
+## Deliverables index (conceptual)
+
+Companion deliverables of this proposal (all conceptual, subject to professional and official review):
+
+- Scenario cards: `scenarios/scenario-cards.json`, `report/scenario-cards.md`
+- Brand & ecosystem: `report/logo-vi.md`, `visual/assets/logo.svg`, `visual/logo-vi.html`, `report/ecosystem-map.md`, `visual/ecosystem-map.html`
+- Terminology: `glossary.json`, `report/glossary.md`
+- Implementation–operations: `implementation-matrix.json`, `report/implementation-matrix.md`
+- Public space: `component-library.json`, `report/component-library.md`
+- Participation & governance: `report/honor-system.md`, `report/developer-path.md`
+- Blue-green & comms: `report/xiaoyuehe-path.md`, `report/international-comms.md`
+
+> All entities in these deliverables are proposed / to-be-negotiated; metrics are directional estimates or parametric demonstrations.
+
 ## References
 
 1. Beijing Haidian District / open-city-ai. Centennial Jing-Zhang AI Innovation Belt urban design international call pre-qualification announcement [source:OFFICIAL-ANNOUNCEMENT].

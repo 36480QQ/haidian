@@ -316,6 +316,20 @@ iteration: "v1.0"
 - **待补资料**：详见 `report/copyright_statement.md` 与 `assumptions.json`，含控规指标、官方红线、权属与工程条件四项 [depth:existing_conditions_diagnosis]；
 - **专业复核需求**：本方案在资质建筑师 / 规划师复核前不可作为正式实施依据。
 
+## 配套交付物索引（概念级）
+
+本方案配套的深化交付物（均为概念级，须经资质团队与官方资料复核）：
+
+- 场景卡：`scenarios/scenario-cards.json`、`report/scenario-cards.md`
+- 品牌与生态：`report/logo-vi.md`、`visual/assets/logo.svg`、`visual/logo-vi.html`、`report/ecosystem-map.md`、`visual/ecosystem-map.html`
+- 术语一致：`glossary.json`、`report/glossary.md`
+- 实施运营：`implementation-matrix.json`、`report/implementation-matrix.md`
+- 公共空间：`component-library.json`、`report/component-library.md`
+- 参与治理：`report/honor-system.md`、`report/developer-path.md`
+- 蓝绿与传播：`report/xiaoyuehe-path.md`、`report/international-comms.md`
+
+> 所有交付物中的主体均为拟议 / 待协商，指标为方向性估算或参数化演示。
+
 ## 参考资料
 
 1. 北京市海淀区 / 开放城市 AI. 百年京张 AI 创新带城市设计国际方案征集资格预审公告 [source:OFFICIAL-ANNOUNCEMENT].

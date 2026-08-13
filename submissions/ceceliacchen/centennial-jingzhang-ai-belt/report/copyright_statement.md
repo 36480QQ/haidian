@@ -50,7 +50,7 @@
 ## 5. 不能证明 / 须替换或删除的项（诚实声明）
 
 - **精确规划数字**（84 栋拆改留、4–16 层、FAR 0.79、总建面 905.7 万㎡、分期精确面积等）：源于假设模型，不能作为专业/法定结论，本包已将其状态下调为参数化演示/方向性估算，并建议正式提交前以官方普查与控规条件替换。
-- **Logo/VI 定稿、生态图谱、14 张完整场景卡、组件库、荣誉体系、转化路径、实施运营矩阵**：本版为概念级，部分以文字/编号引用存在，尚未全部形成可审阅的可视化成果；已在 `assumptions.json` 登记为后续专业团队深化项。
+- **配套深化交付物（概念级，已全部形成可审阅成果）**：14 张完整场景卡（`scenarios/scenario-cards.json` + `report/scenario-cards.md`）、Logo/VI（`report/logo-vi.md` + `visual/assets/logo.svg` + `visual/logo-vi.html`）、生态图谱（`report/ecosystem-map.md` + `visual/ecosystem-map.html`）、EN–ZH 术语表（`glossary.json` + `report/glossary.md`）、实施运营矩阵（`implementation-matrix.json` + `report/implementation-matrix.md`）、公共空间组件库（`component-library.json` + `report/component-library.md`）、荣誉体系（`report/honor-system.md`）、开发者治理与转化路径（`report/developer-path.md`）、小月河连续路径（`report/xiaoyuehe-path.md`）、国际传播结构（`report/international-comms.md`）。以上均为概念级，须经资质团队与官方资料复核后深化，已在 `assumptions.json` 登记。
 - **合作/运营能力证据**：与政府、医院、高校、企业、平台的合作均为"拟议主体/待协商，无既有协议证据"，不主张任何既有合作。
 
 > 本台账所列"AI 生成""provisional""background_only"等分类均可在 `sources.json`、`assumptions.json` 与 `standard_matrix.json` 中交叉核验；凡标注"待替换/待补证"者，均不构成现实世界版权或审批证明。
