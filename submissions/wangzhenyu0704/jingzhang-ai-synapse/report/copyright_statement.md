@@ -20,7 +20,14 @@
 | `assets/figures/metrics-evidence.png` | 图件 | 同上；数值与 `metrics.json` 一致 | COMMUNITY-DISPLAY-ONLY |
 | `assets/figures/3d-corridor-axon.png` | 图件 | Agent 等轴测概念体量示意，非真实街景照片 | COMMUNITY-DISPLAY-ONLY |
 | `assets/figures/3d-key-nodes.png` | 图件 | 同上 | COMMUNITY-DISPLAY-ONLY |
-| `assets/figures/3d-public-space-iso.png` | 图件 | 同上 | COMMUNITY-DISPLAY-ONLY |
+| `assets/figures/operation-conversion.png` | 图件 | Agent 绘制年度运营与转化路径 | COMMUNITY-DISPLAY-ONLY |
+| `assets/figures/logo-vi-direction.png` | 图件 | Agent 原创 Logo/VI 概念（几何折线+突触点） | COMMUNITY-DISPLAY-ONLY |
+| `assets/figures/regional-synergy.png` | 图件 | Agent 绘制区域协同概念图 | COMMUNITY-DISPLAY-ONLY |
+| `assets/figures/ecosystem-map.png` | 图件 | Agent 绘制八要素生态图谱 | COMMUNITY-DISPLAY-ONLY |
+| `assets/figures/scenario-cards-grid.png` | 图件 | Agent 绘制 10 场景卡 | COMMUNITY-DISPLAY-ONLY |
+| `assets/figures/test-validation-flows.png` | 图件 | Agent 绘制 3 测试流程 | COMMUNITY-DISPLAY-ONLY |
+| `assets/figures/public-space-components.png` | 图件 | Agent 绘制公共空间组件库 | COMMUNITY-DISPLAY-ONLY |
+| `assets/figures/culture-bilingual-signage.png` | 图件 | Agent 绘制双语导视方向 | COMMUNITY-DISPLAY-ONLY |
 | `drawings/a3-booklet.pdf` | PDF | ReportLab 嵌入上述 PNG | COMMUNITY-DISPLAY-ONLY |
 | `drawings/a0-boards.pdf` | PDF | ReportLab 嵌入上述 PNG | COMMUNITY-DISPLAY-ONLY |
 | `visual/index.html` | HTML | `scripts/scaffold_ai_submission.py` 模板 + Agent 定制 gallery | COMMUNITY-DISPLAY-ONLY；无 CDN |

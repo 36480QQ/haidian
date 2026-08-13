@@ -55,20 +55,40 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 主名称「京张智脉」强调京张铁路百年文脉与 AI 创新脉冲；英文名 Jing-Zhang AI Synapse Corridor 便于国际传播。Logo 方向：轨道路径折线 + 突触节点发光点；色系京张绿 `#1F6B4A`、铸铁灰 `#2C333A`、信号琥珀 `#D97706`。视觉延展覆盖导视、活动主视觉、场景卡与荣誉墙，但不擅自使用未清权字体、商标或肖像。总体结构图见 `assets/figures/site-overview.png` 与 A0-1 展板，强调廊道、节点、公共网络而非 provisional 矩形本身。
 
+![Logo 与视觉识别方向（概念）](assets/figures/logo-vi-direction.png)
+
+### 区域创新协同（概念接口）
+
+除中关村科技服务翼、小月河场景赋能翼外，本方案补充与海淀—京津冀创新网络的**概念协同接口**（非已签协议、非实施承诺）：
+
+| 外部节点 | 协同要素 | 在京张智脉的接口空间 | 运营机制（概念） |
+| --- | --- | --- | --- |
+| 北纬社区 | 居住生活、通勤、社区服务 | 人才公寓、社区嵌入、公园慢行 | 公共服务联办、活动共建 |
+| 未来科学城 | 算力、中试、大模型评测 | 众智园安全沙盒、端侧算力驿站 | 场景互认、评测结果共享（分级脱敏） |
+| 怀柔科学城 | 基础研究、仪器、联合课题 | AI原点转化街、高校界面 | 课题发布、仪器预约（授权后） |
+| 经开区 | 智造、终端、机器人 | 大钟寺展示、测试路线 | 中试场景对接、路演联办 |
+| 京津冀 | 标准、开源、国际活动 | 全球 AI 活动周公共路线 | 活动联办、开源贡献名录 |
+
+![区域创新协同关系图](assets/figures/regional-synergy.png)
+
 ### agent.2 全球案例与生态图谱（概念建议）
 
-| 案例 | 可转化机制 | 在京张智脉的参考落点 |
-| --- | --- | --- |
-| 新加坡 One-North | 产研混合街区 + 慢行网络 | 原点社区近校转化街 |
-| 波士顿 Kendall Square | 高校-实验室-企业走廊 | 校企慢行联络与成果发布 |
-| 伦敦 Knowledge Quarter | 知识资产与公共空间叠加 | 大钟寺数据要素会客厅 |
-| 巴黎 Station F | 大规模孵化与开放活动 | 众智园共享测试场 |
-| 首尔数字媒体城 | 内容产业与城市界面 | 大钟寺智能消费场景 |
-| 多伦多 Waterfront 创新区 | 公共空间先行的更新 | 京张遗址公园公共脊 |
-| 赫尔辛基 Maria 01 | 创业社区运营 | 开发者社区与场景开放日 |
-| 深圳湾/南山科技走廊（公开资料） | 轨道接驳与产业带联动 | 站点一体化概念建议 |
+| 案例 | 可转化机制 | 在京张智脉的参考落点 | 来源 |
+| --- | --- | --- | --- |
+| 新加坡 One-North | 产研混合街区 + 慢行网络 | 原点社区近校转化街 | [source:CASE-ONE-NORTH] |
+| 波士顿 Kendall Square | 高校-实验室-企业走廊 | 校企慢行联络与成果发布 | [source:CASE-KENDALL] |
+| 伦敦 Knowledge Quarter | 知识资产与公共空间叠加 | 大钟寺数据要素会客厅 | [source:CASE-KQ-LONDON] |
+| 巴黎 Station F | 大规模孵化与开放活动 | 众智园共享测试场 | [source:CASE-STATION-F] |
+| 首尔数字媒体城 | 内容产业与城市界面 | 大钟寺智能消费场景 | 公开资料（背景参考） |
+| 多伦多 Waterfront 创新区 | 公共空间先行的更新 | 京张遗址公园公共脊 | 公开资料（背景参考） |
+| 赫尔辛基 Maria 01 | 创业社区运营 | 开发者社区与场景开放日 | [source:CASE-MARIA01] |
+| 深圳湾/南山科技走廊（公开资料） | 轨道接驳与产业带联动 | 站点一体化概念建议 | 公开资料（背景参考） |
+
+各案例均为公开资料中的规划/更新模式参考，详见 `sources.json` 中 `CASE-*` 条目；不得据此推断具体企业入驻或投资承诺。
 
 生态图谱建议把土地、空间、产业、资金、人才、算力、数据、场景八类要素映射到三核两翼；不编造企业名单、投资额或财政承诺。空间回接 [data:geometry/land_use.geojson#LU-001]、[data:geometry/public_space.geojson#PUBLIC-001] 与 [depth:overall_spatial_structure]、[standard:MOHURD-URBAN-DESIGN-MEASURES]。
+
+![AI 创新生态图谱](assets/figures/ecosystem-map.png)
 
 未来城市形态回答 AI 如何改变工作、生活、学习、交通与公共服务：把 AI 交通、连续绿色空间、创新服务与国际化氛围落为可定位廊道与节点。运营类设想（全球 AI 活动、开发者社区、朝圣路线）一律写为概念建议，供专业团队深化研究。
 
@@ -124,6 +144,20 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 产业测试验证场景（概念建议，非已批准运营）：（1）众智园模型评测与安全红队沙盒；（2）遗址公园/微循环低速机器人配送与巡检测试；（3）城市智能体辅助慢行断点诊断与公共服务运维复核。城市智能体可辅助识别断点、热力、维护与活动风险，但不能替代规划审批，不能输出未经授权个人画像，不能声称获得官方实施承诺。
 
+![10 张 AI 场景卡视觉索引](assets/figures/scenario-cards-grid.png)
+
+![3 个产业测试验证流程（含人工复核）](assets/figures/test-validation-flows.png)
+
+### 场景—空间—运营—治理交接表（概念）
+
+| 场景/项目 | 空间节点 | 数据级别 | 人工复核 | 牵头（R） | 协同（A/C） | 前置条件 | KPI（概念） | 退出/回退 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 01 开源发布厅 | AI原点 | 公开/授权成果 | 内容合规 | 运营方 | 高校/社区 | 版权清权 | 发布场次、贡献条目 | 下架争议内容 |
+| 02 安全沙盒 | 众智园 | 脱敏基准集 | 安全官复核 | 平台方 | 监管/专家 | 评测规范 | 评测报告数 | 暂停高风险测试 |
+| 04 AI慢行导航 | 遗址公园 | 聚合热力 | 维护工单确认 | 市政/公园 | 社区 | 传感许可 | 断点关闭率 | 关闭争议采集 |
+| JZ-01 慢行缝合 | 公园主脊 | 现状调研 | 交通工程师 | 更新统筹 | 交通/公园 | 红线复核 | 连通节点数 | 暂缓施工段 |
+| JZ-04 站城步行 | 大钟寺 | 站点公开资料 | 交警/消防 | 轨道运营 | 街道 | 交叉口方案 | 四象限连通性 | 改临时导改 |
+
 ## 用地、建筑规模与拆改留方案
 
 用地方案按国土空间用途分类公开标准表达，形成完整闭合无缝分区：AI 研发、蓝绿开敞、产业服务与智能消费、交通场站接驳、社区服务与人才生活配套。分类依据 [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]；高度体量风貌由 [depth:height_massing_character] 管理；拆改留方法由 [depth:retain_renovate_demolish] 管理。证据为 [data:geometry/land_use.geojson#LU-001]、[data:geometry/buildings.geojson#BLDG-001]、[metric:building_footprint_area_sqm]。
@@ -148,9 +182,27 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 不少于 3 个 AI 朝圣地标参考方案：（1）众智园「自主创新灯塔」——全栈能力与安全治理展示；（2）原点社区「开源代码墙」——贡献可记忆与开源荣誉；（3）大钟寺「智能经济舞台」——智能原生业态与国际路演。可扩展「安全治理廊」作为公共组件库节点。荣誉展示体系建议采用可更换模块化展墙 + 数字贡献名录，严禁未清权肖像/商标。
 
+![公共空间组件库（概念模块）](assets/figures/public-space-components.png)
+
 ### agent.5 文化叙事与导视
 
 文化叙事融合京张铁路历史文化、中关村创新文化与 AI 新文化，利用清华园火车站、北影等公开文化资源提出城市基调、建筑风貌、屋顶体量、界面与公共艺术引导的参考方向。导视标识与一带 Logo 系统区分：一带 Logo 负责总体识别，导视系统负责路径、场景与地标层级。国际传播叙事建议关键词：Heritage Rail · Synapse Innovation · Open Civic AI。严禁歪曲史实或把文化降为科技贴纸。
+
+![文化导视与双语标识方向](assets/figures/culture-bilingual-signage.png)
+
+### 包容性与无障碍（概念建议）
+
+在既有五类创新画像之外，补充以下公众需求与替代路径：
+
+| 群体 | 需求 | 空间/服务响应 | 数字替代/申诉 |
+| --- | --- | --- | --- |
+| 残障人士 | 连续无障碍、可预测路径 | 缓坡、电梯、触觉导视、宽通道 | 语音导览、人工导引预约 |
+| 老年人 | 易读导视、休息、医疗就近 | 大字号双语牌、座椅、社区服务嵌入 | 电话/窗口人工服务 |
+| 儿童照护者 | 安全、看护、亲子活动 | 公园活动节点、防护界面 | 不使用儿童画像营销 |
+| 低收入/非数字用户 | 可负担、非 App 依赖 | 窗口服务、纸质导览、现金/卡兼容 | 保留线下办理渠道 |
+| 夜间工作者 | 照明、安全、接驳 | 照明分层、可见巡逻、站城照明 | 紧急按钮与投诉通道 |
+
+上述为概念校核清单，不构成无障碍合规证明；正式实施须由专业团队按规范复核。
 
 ## 更新项目清单、实施政策与分期计划
 
@@ -165,9 +217,22 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 | JZ-05 | AI 公共服务与端侧算力节点 | 新基建 | 能源、算力、运营主体 | [data:geometry/constraints.geojson#CONSTRAINTS] |
 | JZ-06 | 全球 AI 活动周公共路线 | 运营/品牌 | 公共空间许可、安全、版权 | [data:geometry/phasing.geojson#PHASE-001] |
 
+### 更新项目交接表（RACI / KPI / 退出）
+
+| 编号 | 责任主体 R | 协同 A/C | 资源量级（概念） | 审批前置 | 量化 KPI | 风险负责人 | 退出条件 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| JZ-01 | 更新统筹 | 交通/公园/街道 | 中（公共空间） | 红线、桥下复核 | 断点缝合数、慢行连通 | 交通工程师 | 暂缓争议段落 |
+| JZ-02 | 园区运营 | 水务/规划 | 中（滨水界面） | 蓝线、防洪 | 界面长度、活动场次 | 水务专员 | 洪水预警关闭活动 |
+| JZ-03 | 校区-园区协调 | 产权/商户 | 中（街区更新） | 权属、业态 | 转化项目数 | 产权法务 | 暂停未授权改造 |
+| JZ-04 | 轨道运营 | 交警/市政 | 高（站城一体） | 站点方案 | 步行连通率 | 轨道安全 | 改临时导改 |
+| JZ-05 | 新基建运营 | 能源/算力 | 中（节点） | 能源许可 | 节点可用率 | 能源主管 | 算力过载降级 |
+| JZ-06 | 活动组委会 | 公安/版权 | 低-中（活动） | 活动许可 | 参与人次、满意度 | 活动安全 | 版权争议下架 |
+
 ### agent.6 长期运营（概念建议）
 
 年度活动体系参考：春季开源共建周、夏季场景开放日、秋季全球 AI 活动周、冬季治理与安全论坛。品牌 IP 与传播视觉沿用智脉折线+突触节点。开发者社区运营建议：贡献积分、场景沙盒预约、导师对接与高校社团联动。场景开放运营强调预约、隐私最小化、人工复核与退出机制。国际传播与招引转化路径：活动曝光 → 开源贡献 → 中试场景 → 企业服务对接，不写政府承诺、资金或招商确定事项。近期以轻量设施与运营试点启动，中期推进公共空间与接驳更新，长期建立治理与数据框架；均待正式控规、市政、交通与权属确认后由专业团队深化。
+
+![年度运营与转化机制](assets/figures/operation-conversion.png)
 
 
 
@@ -196,6 +261,14 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 风险与缺资料由 [depth:risk_missing_data] 管理，并与 [data:geometry/constraints.geojson#CONSTRAINTS]、[source:SITE-PACKAGE]、[source:PROCESSED-FACT-PACK]、[standard:MOHURD-CONTROL-DETAILED-PLANNING] 校核。`missing_data_checklist.csv` 中的 official boundary、key area、控规、道路、地块、建筑、市政、文保与公共服务缺口已进入 assumptions 与正文。任何缺少官方控规、道路红线、权属、市政、消防或文保条件的结论，均降级为待确认事项。
 
 本方案不声称官方批准、审定控规、最终权属、最终建设规模或保证实施。图片、图纸、图标、数据与代码资产在 `sources.json` 与 `report/copyright_statement.md` 说明来源与许可。`visual/index.html` 为离线静态页，不加载远程脚本、瓦片、字体、iframe、表单或外部 API。AI agent 对事实、来源、版权、空间数据、指标与表达负责；维护者与专业评审可依据自检、空间复核与合规矩阵要求返修或拒绝。许可：COMMUNITY-DISPLAY-ONLY。
+
+## 国际传播摘要（English · 概念文案）
+
+**Jing-Zhang AI Synapse Corridor** links heritage rail culture with open, civic AI innovation across a north–south synapse belt in Haidian. Three key nodes—Zhongzhiyuan (full-stack R&D), AI Origin (campus translation), and Dazhongsi (station-city consumption)—connect to regional partners including Future Sci‑City compute, Huairou basic research, E‑Towns manufacturing, and Jing‑Jin‑Ji event networks through *conceptual* interfaces only, not approved agreements.
+
+Ten scenario cards, three test‑validation flows with human review, a public-space component library, bilingual signage, and a seasonal event-to-enterprise conversion pathway are provided as reference material for professional teams. All metrics are recalculated from provisional GeoJSON ([metric:building_footprint_area_sqm] 401,334 sqm; [metric:green_ratio] 63.9%; [metric:public_space_ratio] 7.9%) and must be recomputed when official boundaries arrive. No FAR, demolition, engineering, funding, or government approval is claimed.
+
+**Keywords:** Heritage Rail · Synapse Innovation · Open Civic AI · Walkable Blue‑Green Corridor · Human‑in‑the‑Loop Governance.
 
 ## 参考资料
 

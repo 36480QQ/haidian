@@ -18,14 +18,14 @@
       "path": "manifest.json",
       "role": "manifest",
       "required": true,
-      "bytes": 7589
+      "bytes": 9468
     },
     {
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "6ae6ea238e2d2376238e443229f9c6e4345ed2da3d21a309a6d9b2372bd802e2",
-      "bytes": 26369
+      "sha256": "fee058434414999bf37475300472270117d33d0671b0d0d33b60ca7db781e5df",
+      "bytes": 32724
     },
     {
       "path": "agent.json",
@@ -52,8 +52,8 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "277f52ce872fad29938dfe266f8049d8250961b041a4bdd12169cf35e75f1079",
-      "bytes": 1948
+      "sha256": "ea8bfdafc25fca6d9bf78289cb317407caa0272a3d481ab864274f0fcb22a82b",
+      "bytes": 3067
     },
     {
       "path": "self_check.json",
@@ -87,8 +87,8 @@
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "1390d565e02006807587bf3d2e862c8447933bedcb891244c8b62cd42294e50d",
-      "bytes": 35505
+      "sha256": "4953e4f7ecd1483c094c83c176c75d74d9adc0d282345f30ca8f3e61237d4239",
+      "bytes": 43263
     },
     {
       "path": "report/narrative.md",
@@ -101,29 +101,29 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "7e735a769f1005df4c20b33b830a3a4a2baddb42d9eb9ceefe87d7d9b997e46f",
-      "bytes": 3368
+      "sha256": "0e42c6f4fb8383844b2480a9836c561d658c7e1ae38b9e918972b307faac9970",
+      "bytes": 4213
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "5310ee7d6b5dc8522a01bff6f0e046c09935bc7b4addf1d8a73c352bf16d07ca",
-      "bytes": 3630309
+      "sha256": "6118ee4b7091d67a353629d0568e71c102416aea096dbb945df7e80eddbb8e7f",
+      "bytes": 4557035
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "51ab79662c056ebf2637f860a1c0e3948828a6b94e72f7e281a2a42582871765",
-      "bytes": 3628370
+      "sha256": "ff045c00adcbdcf602aa43b6388934df1ad408fc4a27222efdecaa2ea6a6329d",
+      "bytes": 2671707
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
-      "sha256": "ee17609203441a2b8230935b18e7688155126a298b34c0a5b0c663239cfd4d7e",
-      "bytes": 15241
+      "sha256": "812df242136a0ae91dd518d9d488d26bdfd63e97bc5773b9d9a101f94f3c8996",
+      "bytes": 16923
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -243,6 +243,62 @@
       "required": false,
       "sha256": "07a577a2ee2075ac6471af2d7ea1a80eb660c8c43b44d3ba1ee10dc82df164db",
       "bytes": 567597
+    },
+    {
+      "path": "assets/figures/logo-vi-direction.png",
+      "role": "supporting_figure",
+      "required": false,
+      "sha256": "c5c6358967bb5734ea5c11e7f4d7f42747f37f2cde9276919e8c6b3db1fa078f",
+      "bytes": 115791
+    },
+    {
+      "path": "assets/figures/regional-synergy.png",
+      "role": "supporting_figure",
+      "required": false,
+      "sha256": "d0b09eba1bb2b79585978d640e560a097dd9266f2e69df60a6575f640a8c07a2",
+      "bytes": 179386
+    },
+    {
+      "path": "assets/figures/ecosystem-map.png",
+      "role": "supporting_figure",
+      "required": false,
+      "sha256": "4e784b13e03ac9f8bccd73f994c68c49e8afb1515f5382e24ca34f0a5d07b5a3",
+      "bytes": 88818
+    },
+    {
+      "path": "assets/figures/scenario-cards-grid.png",
+      "role": "supporting_figure",
+      "required": false,
+      "sha256": "1a137ab31f630628520a1767d08244803df8dbf33d29807587905c4240bbf63a",
+      "bytes": 117713
+    },
+    {
+      "path": "assets/figures/test-validation-flows.png",
+      "role": "supporting_figure",
+      "required": false,
+      "sha256": "a41c39a354fb67ee4e456438c5fcb680cc8fb9f6bd5ea8768033e4a6515056cc",
+      "bytes": 120684
+    },
+    {
+      "path": "assets/figures/public-space-components.png",
+      "role": "supporting_figure",
+      "required": false,
+      "sha256": "029e618c71027339ed96578a0dafc13d18235ed6765fc1866710d18829416010",
+      "bytes": 100364
+    },
+    {
+      "path": "assets/figures/culture-bilingual-signage.png",
+      "role": "supporting_figure",
+      "required": false,
+      "sha256": "dea17ef30be8e47f8a55b22e6a684d38e3719faab30069960654bd1a21707441",
+      "bytes": 92939
+    },
+    {
+      "path": "assets/figures/operation-conversion.png",
+      "role": "supporting_figure",
+      "required": false,
+      "sha256": "117eab0e3d599816784ec5d19a5db0eb36d7cd2bacdacbfce54e9d251478c04f",
+      "bytes": 75862
     }
   ],
   "validation_claim": {
