@@ -68,10 +68,10 @@
   ],
   "implementation_readiness": {
     "schema_version": "0.1.0",
-    "concept_version": "EVERYDAY_JINGZHANG_V1",
+    "concept_version": "EVERYDAY_JINGZHANG_V2",
     "governing_rule": "Repository requirements, Chinese law, Beijing conditions, cleared data and professional review override every precedent, diagram and tool output.",
-    "central_claim": "Make seven ordinary urban tasks work first; allow six mature staff-side tools only when useful; permit zero automated public decisions.",
-    "tagline": "Make the city work first. Add AI only when useful.",
+    "central_claim": "Repair one continuous everyday line and open one anchor room plus two pop-up rooms first; only then allow six removable staff tools under twelve named human duty-shift contracts, with zero automated public decisions.",
+    "tagline": "One post. One bell. One logbook. The person remains in charge.",
     "urban_moves": [
       {
         "id": "U1_WALK",
@@ -193,7 +193,20 @@
         "ownership_of_railway_history",
         "verified_local_performance_before_fieldwork"
       ],
-      "precedent_rule": "Methods may inform the work; no case image, brand, budget, statutory arrangement or performance result is copied."
+      "precedent_rule": "Methods may inform the work; no case image, brand, budget, statutory arrangement or performance result is copied.",
+      "v2_original_combination": [
+        "railway_shift_discipline_translated_into_one_post_one_bell_one_logbook_public_service_contract",
+        "one_anchor_room_two_scheduled_pop_up_rooms_for_operationally_affordable_early_delivery",
+        "twelve_duty_shift_contracts_three_stress_shifts_and_eight_cross_room_fault_cards",
+        "staff_tool_innovation_measured_by_handover_stop_reopen_and_removal_evidence_not_automation_level"
+      ],
+      "v2_not_claimed": [
+        "field_safety_or_accessibility_pass",
+        "confirmed_staffing_or_operating_budget",
+        "official_site_or_key_area_boundary",
+        "public_acceptance_before_representative_user_rehearsal",
+        "AI_performance_before_authorized_shadow_baseline"
+      ]
     },
     "stakeholder_governance": {
       "roles": [
@@ -645,6 +658,83 @@
         "tool_output": "candidate_conflicts",
         "human_authority": "author_and_independent_reviewer_correct"
       }
-    ]
+    ],
+    "duty_shift_contract": {
+      "title_zh": "一岗一铃一册",
+      "title_en": "One Post, One Bell, One Logbook",
+      "required_field_count": 8,
+      "contract_count": 12,
+      "shift_state_count": 3,
+      "asset": "visual/assets/duty-shift-contracts.json",
+      "opening_rule": "No named post, ordinary help channel, stop trigger or handover evidence means no assisted-service opening.",
+      "public_rule": "A physical bell, telephone or staffed counter is always available without app, login, face recognition or tool use.",
+      "record_rule": "Every shift, stop, repair, handover and reopen leaves a paper-and-exportable record with named sign-off."
+    },
+    "preopening_shift_rehearsal": {
+      "status": "synthetic_package_check_only",
+      "readiness_label": "READY_FOR_STAFF_REHEARSAL_NOT_OPENING_APPROVAL",
+      "complete_contract_shift_cases": 36,
+      "missing_required_field_cases": 96,
+      "cross_room_fault_cases": 8,
+      "total_cases": 140,
+      "expected_matches": 140,
+      "field_passes_claimed": 0,
+      "asset": "visual/assets/preopening-shift-rehearsal.json",
+      "reproduction": "node visual/assets/run-shift-rehearsal.js"
+    },
+    "opening_resource_model": {
+      "pilot_configuration": "one_anchor_room_plus_two_scheduled_pop_up_rooms",
+      "anchor_room": "AI Origin Common Table, subject to operator, ownership, fire and accessibility confirmation",
+      "pop_up_rooms": [
+        "Zhongzhi Repair Garden",
+        "Dazhongsi Day-Night Living Room"
+      ],
+      "minimum_opening_condition": "published service window, one named duty role, reachable relief role, paper/phone fallback and maintenance contact",
+      "staff_hour_formula": "sum(room_open_hours x on_duty_roles) + 20_percent_handover_training_relief_allowance",
+      "example_not_commitment": {
+        "assumed_anchor_hours_per_week": 24,
+        "assumed_each_pop_up_hours_per_week": 8,
+        "frontline_base_hours_per_week": 40,
+        "handover_training_relief_allowance_ratio": 0.2,
+        "calculated_frontline_hours_per_week": 48,
+        "minimum_people_for_resilient_roster": 2,
+        "reason": "one person cannot provide simultaneous opening, relief, leave and two-person safety coverage"
+      },
+      "not_included_in_capex_range": [
+        "permanent payroll",
+        "utilities",
+        "rent or asset transfer",
+        "statutory professional fees",
+        "major civil works"
+      ],
+      "confirmation_owner": "site_operator_and_district_coordinator"
+    },
+    "day_one_operating_drill": {
+      "sequence": [
+        "08:30 named roster, route and asset opening check",
+        "09:00 ordinary paper-phone-staffed service opens; staff tools remain optional",
+        "12:00 shift handover compares tickets, unresolved hazards, sources and tool status",
+        "15:00 one representative-user task and one repair-ticket trace are witnessed",
+        "18:00 close or hand over; publish unresolved items, owners and deadlines"
+      ],
+      "fault_injection": "one of eight fault cards is rehearsed without affecting real public rights",
+      "pass_condition": "ordinary service completes, named owner accepts every unresolved item, and no tool closes or reopens a public matter"
+    },
+    "legal_and_data_floor": {
+      "controlling_law": [
+        "Personal Information Protection Law of the PRC",
+        "Data Security Law of the PRC"
+      ],
+      "minimum_rules": [
+        "no unnecessary personal information in tool inputs",
+        "purpose, source, access and retention are approved before shadow use",
+        "incident isolation and deletion evidence precede any restart",
+        "vendor or model change returns the tool to SHADOW or REMOVED"
+      ],
+      "sources": [
+        "PIPL-2021",
+        "DATA-SECURITY-LAW-2021"
+      ]
+    }
   }
 }
