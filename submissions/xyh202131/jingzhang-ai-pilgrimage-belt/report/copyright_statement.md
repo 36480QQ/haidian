@@ -44,3 +44,7 @@ Review in this order: sources and licenses → fonts and generation tools → ma
 
 
 - Round 14 offline review HTML, CSS, JavaScript and route JSON are package-authored presentation sources with no remote dependency or copied third-party page asset. They remain `not_fully_cleared`; the repository record is not a public/professional reuse licence, accessibility certification, planning judgement or approval.
+
+## Round 15 evidence-intake assets
+
+`field-evidence-intake.{svg,png}` and `visual/assets/field-evidence-intake-contract.json` are package-authored review objects derived from existing package contracts. They contain no imported field data or external image asset. PR #2266 is cited for method comparison only; none of its figures, media, geometry or layout assets is copied. These statements do not upgrade the package-wide `not_fully_cleared` status or authorize public/professional reuse.
