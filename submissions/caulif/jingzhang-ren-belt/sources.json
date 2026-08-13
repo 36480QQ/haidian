@@ -5,123 +5,229 @@
       "id": "SITE-PACKAGE",
       "path": "brief/site-package/",
       "source_type": "official_public",
+      "publisher": "open-city-ai/haidian maintainers",
+      "published_date": "2026-08-07",
+      "accessed_date": "2026-08-13",
+      "license": "Repository public materials; follow repo licence",
+      "reuse": "May be quoted and cited for this call",
+      "limits": "Does not replace official CAD/GIS attachments",
       "usage": "Project brief, enums, allowed design space, ranges, and schemas."
     },
     {
       "id": "SOURCE-REGISTRY",
       "path": "data/source_registry.json",
       "source_type": "repository_public_registry",
-      "usage": "Public/cleared/provisional source usability registry; distinguishes formal-ready, background-only, provisional-only, and needs-review materials."
+      "publisher": "open-city-ai/haidian maintainers",
+      "published_date": "2026-08-07",
+      "accessed_date": "2026-08-13",
+      "license": "Repository public materials",
+      "reuse": "Use-class lookup only",
+      "limits": "Cannot upgrade a background_only source to formal-ready",
+      "usage": "Public/cleared/provisional source usability registry."
     },
     {
       "id": "PROCESSED-FACT-PACK",
       "path": "data/processed/agent_fact_pack.md",
       "source_type": "repository_processed_reference",
-      "usage": "Agent-readable navigation layer for scopes, required tasks, source-use boundaries, and missing-data checklist; not a new authority source."
+      "publisher": "open-city-ai/haidian maintainers",
+      "published_date": "2026-08-07",
+      "accessed_date": "2026-08-13",
+      "license": "Repository public materials",
+      "reuse": "Navigation only",
+      "limits": "Not a new authority; always return to original source_id",
+      "usage": "Agent-readable navigation layer; not a new authority source."
     },
     {
       "id": "BOUNDARY-SOURCE",
       "path": "brief/site-package/geometry/provisional_boundaries.geojson",
       "source_type": "agent_inferred_from_public_data",
+      "publisher": "open-city-ai/haidian maintainers",
+      "published_date": "2026-08-07",
+      "accessed_date": "2026-08-13",
+      "license": "Repository provisional geometry",
+      "reuse": "Concept generation and display only",
+      "limits": "Not an official redline; not a precise-area basis. #846 notes 412.5 m offset from OSM park.",
       "usage": "Submitted site boundary geometry source (provisional)."
     },
     {
       "id": "KEY-AREA-SOURCE",
       "path": "brief/site-package/geometry/provisional_boundaries.geojson",
       "source_type": "agent_inferred_from_public_data",
+      "publisher": "open-city-ai/haidian maintainers",
+      "published_date": "2026-08-07",
+      "accessed_date": "2026-08-13",
+      "license": "Repository provisional geometry",
+      "reuse": "Concept generation and display only",
+      "limits": "Not official key-area redlines. #1029: PROV-KEY-003 centroid ~2.26 km from Dazhongsi station.",
       "usage": "Three required detailed-design key area boundaries (provisional)."
     },
     {
       "id": "OFFICIAL-ANNOUNCEMENT",
       "url": "https://ghzrzyw.beijing.gov.cn/zhengwuxinxi/tzgg/hd/202605/t20260509_4643047.html",
       "source_type": "official_public",
+      "publisher": "北京市规划和自然资源委员会海淀分局",
+      "published_date": "2026-05-09",
+      "accessed_date": "2026-08-13",
+      "license": "Official public notice; quotation for the call",
+      "reuse": "Tasks, three-level scope, key-area names and announced areas",
+      "limits": "Does not include official CAD/GIS polygons",
       "usage": "Official announcement tasks, scope levels, key areas, language, and deliverable context."
     },
     {
       "id": "AGENT-TASKBOOK",
       "path": "brief/site-package/agent_taskbook.json",
       "source_type": "user_provided_cleared",
-      "usage": "Agent-facing open-call principles, six required agent tasks, scenario/branding/operation requirements, and boundary clause."
+      "publisher": "open-city-ai/haidian maintainers (agent-facing extract of the open call)",
+      "published_date": "2026-05-18",
+      "accessed_date": "2026-08-13",
+      "license": "Cleared repository extract",
+      "reuse": "agent.1–agent.6 requirements and boundary clause",
+      "limits": "Does not replace the paper qualification package",
+      "usage": "Agent-facing open-call principles, six required agent tasks, and boundary clause."
     },
     {
       "id": "PUBLIC-HAIDIAN-PROFILE-2025",
       "url": "https://www.beijing.gov.cn/renwen/bjgk/hdgk/sy/202604/t20260402_4573390.html",
       "source_type": "official_public",
+      "publisher": "北京市人民政府 / 海淀区人民政府",
       "published_date": "2026-04-02",
-      "usage": "Haidian 2025 statistics: area 430 km2, resident population 3.111 million, GDP 1369.14 billion CNY, 37 universities, 92 national key labs, 96 national research institutes, 692 academicians, talent pool 2.0058 million."
+      "accessed_date": "2026-08-13",
+      "license": "Official public webpage; quotation with attribution",
+      "reuse": "2025 point-in-time statistics only",
+      "limits": "Time-point figures; re-verify before statutory use; not a spatial control",
+      "usage": "Haidian 2025 statistics: area 430 km2, resident population 3.111 million, GDP 1369.14 billion CNY, 37 universities, talent pool 2.0058 million."
     },
     {
       "id": "PUBLIC-HAIDIAN-AI-2026",
       "url": "https://www.bjhd.gov.cn/ztzx/2025/aifuture/",
       "source_type": "official_public",
+      "publisher": "海淀区人民政府",
       "published_date": "2026-01-11",
-      "usage": "Haidian AI industry scale and AI Origin Community ('global top ten innovation districts', OPC community, 1000+ AI scientists, 13k developers)."
+      "accessed_date": "2026-08-13",
+      "license": "Official public thematic page; quotation with attribution",
+      "reuse": "Industry-scale context",
+      "limits": "Marketing/thematic page; not a parcel control; counts are point-in-time",
+      "usage": "Haidian AI industry scale (1300+ firms, 74 registered models, core industry over 350 billion CNY)."
     },
     {
       "id": "PUBLIC-JINGZHANG-PARK-2026",
       "url": "https://news.bjd.com.cn/2023/06/30/10480406.shtml",
       "source_type": "official_media",
+      "publisher": "北京日报 / 京报网",
       "published_date": "2023-06-30",
-      "usage": "Jing-Zhang Railway Heritage Park phase 1 opening (Tsinghua East Rd to Zhichun Rd, ~2.4-2.5 km, 16.8 ha, 2023) and full 9 km line plan serving 70 communities and ~450k residents, 13 Line bridge underpass opening, rail-underground release."
+      "accessed_date": "2026-08-13",
+      "license": "Official media report; quotation with attribution",
+      "reuse": "Phase-1 opening facts and published 9 km plan narrative",
+      "limits": "News text is not a survey; OSM park polygon (#846) does not intersect the provisional overall-design rectangle",
+      "usage": "Jing-Zhang Railway Heritage Park phase 1 opening and published 9 km / 70-community / 450k-resident plan."
     },
     {
       "id": "PUBLIC-JINGZHANG-HISTORY-2026",
       "url": "https://www.china-railway.com.cn",
       "source_type": "official_media",
+      "publisher": "中国国家铁路集团有限公司",
       "published_date": "2024-11-13",
-      "usage": "Jing-Zhang Railway 1909 completion as China's first self-built mainline, Qinglongqiao ren-shaped (zigzag) alignment, Tsinghuayuan station 1949 entry, Jing-Zhang high-speed railway 2019 opening and underground section, 'Tianyou' shield."
+      "accessed_date": "2026-08-13",
+      "license": "Official enterprise public site; quotation with attribution",
+      "reuse": "1909 completion, Qinglongqiao Y-alignment, 1949 Tsinghuayuan, 2019 HSR",
+      "limits": "Portal homepage is not a single-fact landing page; treat as institutional publisher, not a cadastral source",
+      "usage": "Jing-Zhang Railway 1909 completion, Qinglongqiao ren-shaped alignment, Tsinghuayuan 1949 entry, 2019 HSR opening."
     },
     {
       "id": "PUBLIC-BEIJING-AI-POLICY",
       "url": "https://www.beijing.gov.cn/zhengce/zhengcefagui/202305/t20230530_3116889.html",
       "source_type": "official_public",
+      "publisher": "北京市人民政府",
       "published_date": "2023-05-30",
-      "usage": "Beijing AI origin-stronghold implementation plan (Jingzhengfa 2023-14): 300bn CNY core industry goal, Haidian City Brain 2.0, public computing center."
+      "accessed_date": "2026-08-13",
+      "license": "Official policy page; quotation with attribution",
+      "reuse": "Policy direction for City Brain 2.0 and public computing",
+      "limits": "Municipal policy, not a site-specific approval or investment commitment",
+      "usage": "Beijing AI origin-stronghold implementation plan (Jingzhengfa 2023-14)."
     },
     {
       "id": "PUBLIC-RAIL-LINES-2026",
       "url": "http://www.beijing.gov.cn/fuwu/bmfw/sy/jrts/202302/t20230203_2911219.html",
       "source_type": "official_public",
+      "publisher": "北京市人民政府",
       "published_date": "2023-02-03",
-      "usage": "Changping Line south extension phase 1 opening Feb 2023 (Qinghe-West Tucheng, 9.7 km; Xuezhixi/Xueyuan/Xixiangcheng stations) serving the Xueyuan Road innovation belt."
+      "accessed_date": "2026-08-13",
+      "license": "Official public service notice; quotation with attribution",
+      "reuse": "Changping Line south-extension phase-1 opening facts",
+      "limits": "Service notice, not a station-area urban-design approval",
+      "usage": "Changping Line south extension phase 1 opening Feb 2023 (Qinghe–West Tucheng)."
     },
     {
       "id": "OPENSTREETMAP-CONTEXT",
       "url": "https://www.openstreetmap.org/copyright",
       "source_type": "open_data",
-      "published_date": "accessed 2026-08-08",
-      "usage": "Offline OSM raster is used only as a location-reference backdrop; submitted provisional polygons are not official redlines.",
-      "license": "ODbL 1.0; attribution to OpenStreetMap contributors."
+      "publisher": "OpenStreetMap contributors",
+      "published_date": "accessed 2026-08-13",
+      "accessed_date": "2026-08-13",
+      "license": "ODbL 1.0",
+      "reuse": "Offline location-reference raster and attribution only",
+      "limits": "background_only; not an official redline; #846 offset is disclosed, not used to redraw the site",
+      "usage": "Offline OSM raster is used only as a location-reference backdrop."
     },
     {
       "id": "WIKIMEDIA-QINGLONGQIAO",
       "url": "https://commons.wikimedia.org/wiki/File:Main_building_of_Qinglongqiao_Railway_Station_(20170329104940).jpg",
       "source_type": "open_media",
-      "published_date": "accessed 2026-08-08",
-      "usage": "Context photograph in assets/context/qinglongqiao-station.jpg and root landing page derivative.",
-      "license": "CC BY-SA 4.0; author N509FZ; derivative use retains attribution and share-alike."
+      "publisher": "Wikimedia Commons",
+      "published_date": "2017-03-29",
+      "accessed_date": "2026-08-08",
+      "license": "CC BY-SA 4.0",
+      "reuse": "Context photograph with author credit and share-alike",
+      "limits": "Not a design drawing; author N509FZ must remain attributed",
+      "usage": "Context photograph in assets/context/qinglongqiao-station.jpg."
     },
     {
       "id": "WIKIMEDIA-JINGZHANG-LOCOMOTIVE",
       "url": "https://commons.wikimedia.org/wiki/File:DFH2_0023_locomotive_at_Jingzhang_Railway_Park_20250706-173423.jpg",
       "source_type": "open_media",
-      "published_date": "accessed 2026-08-08",
-      "usage": "Context photograph in assets/context/jingzhang-park-locomotive.jpg and root landing page derivative.",
-      "license": "CC BY-SA 4.0; author XiaYZ2023; derivative use retains attribution and share-alike."
+      "publisher": "Wikimedia Commons",
+      "published_date": "2025-07-06",
+      "accessed_date": "2026-08-08",
+      "license": "CC BY-SA 4.0",
+      "reuse": "Context photograph with author credit and share-alike",
+      "limits": "Not a design drawing; author XiaYZ2023 must remain attributed",
+      "usage": "Context photograph in assets/context/jingzhang-park-locomotive.jpg."
     },
     {
       "id": "SUBMISSION-BRAND-ASSETS",
       "path": "assets/brand/",
       "source_type": "agent_generated_design",
-      "usage": "REN BELT mark, reverse mark and identity sheet are original submission assets by caulif AI agent; not official government marks.",
-      "license": "Submission-original generated work; permitted for review and project display."
+      "publisher": "caulif AI agent",
+      "published_date": "2026-08-08",
+      "accessed_date": "2026-08-13",
+      "license": "Submission-original generated work; COMMUNITY-DISPLAY-ONLY",
+      "reuse": "Review and project display",
+      "limits": "Not an official government mark",
+      "usage": "REN BELT mark, reverse mark and identity sheet."
     },
     {
       "id": "SUBMISSION-EVIDENCE-PACKS",
-      "path": "report/",
+      "path": "proposal.md",
       "source_type": "agent_generated_design",
-      "usage": "Case-study table, scenario/operations matrix, implementation cards, inclusion framework, landmark system and annual operations are proposal evidence packs derived from the cited public sources and design assumptions.",
-      "license": "Submission-original generated work; factual claims remain subject to source and professional review."
+      "publisher": "caulif AI agent",
+      "published_date": "2026-08-13",
+      "accessed_date": "2026-08-13",
+      "license": "Submission-original generated work; COMMUNITY-DISPLAY-ONLY",
+      "reuse": "Review; factual claims remain subject to cited public sources",
+      "limits": "JSON under visual/assets/evidence is a copy; the reviewable surface is proposal.md / report HTML / drawings",
+      "usage": "Case table, scenario cards, implementation cards, inclusion, landmarks and annual operations."
+    },
+    {
+      "id": "SUBMISSION-CONCEPT-ILLUSTRATIONS",
+      "path": "assets/context/",
+      "source_type": "agent_generated_design",
+      "publisher": "caulif AI agent",
+      "published_date": "2026-08-13",
+      "accessed_date": "2026-08-13",
+      "license": "Submission-original generated work; COMMUNITY-DISPLAY-ONLY",
+      "reuse": "Exhibition atmosphere only",
+      "limits": "Not survey, not official redline, not a photographic record of the site",
+      "usage": "Generated corridor, plaza, blue-green section and landmark vignettes used as figure bases."
     }
   ]
 }
