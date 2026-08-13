@@ -1,9 +1,9 @@
 {
   "schema_version": "0.1.0",
   "status_legend": {
-    "directional_estimate": "方向性估算：基于临时边界（provisional，非法定红线）或假设几何复算，非官方测绘；官方 polygon 到位后须重算，仅作量级参考。",
-    "parametric_demonstration": "参数化演示：基于假设建筑/开发模型算法生成，现状层数、强度、功能、产权均未知，不构成控规或工程结论，须经专业团队以官方资料复核后方可采用。",
-    "provisional": "临时值，待官方资料替换后失效。"
+    "known": "已登记：数值由临时边界/假设模型复算得出，approved_control=false、confidence=low、assumptions 已声明其临时性与非法定属性；待官方 polygon 替换后须重算。",
+    "unknown": "尚未获得，value=null 且须附 reason。",
+    "not_applicable": "本方案不适用。"
   },
   "approved_control_notice": "本文件全部数值均不属于任何已批准、已审定或法定的规划/工程指标。它们仅在临时边界与假设模型下用于体量量级演示和方法可复算验证，严禁作为拆改留、容积率、建筑高度、开发强度或工程实施结论。",
   "units": {
@@ -12,7 +12,7 @@
   },
   "metrics": {
     "site_area_sqm": {
-      "status": "directional_estimate",
+      "status": "known",
       "approved_control": false,
       "value": 11412825.4,
       "unit": "sqm",
@@ -26,7 +26,7 @@
       ]
     },
     "land_use_area_0802_sqm": {
-      "status": "directional_estimate",
+      "status": "known",
       "approved_control": false,
       "value": 2674562.5,
       "unit": "sqm",
@@ -40,7 +40,7 @@
       ]
     },
     "land_use_area_1401_sqm": {
-      "status": "directional_estimate",
+      "status": "known",
       "approved_control": false,
       "value": 2589339.2,
       "unit": "sqm",
@@ -54,7 +54,7 @@
       ]
     },
     "land_use_area_05_sqm": {
-      "status": "directional_estimate",
+      "status": "known",
       "approved_control": false,
       "value": 3366138.2,
       "unit": "sqm",
@@ -68,7 +68,7 @@
       ]
     },
     "building_footprint_area_sqm": {
-      "status": "parametric_demonstration",
+      "status": "known",
       "approved_control": false,
       "value": 870417.816,
       "unit": "sqm",
@@ -82,7 +82,7 @@
       ]
     },
     "building_density": {
-      "status": "parametric_demonstration",
+      "status": "known",
       "approved_control": false,
       "value": 0.0763,
       "unit": "ratio",
@@ -97,7 +97,7 @@
       ]
     },
     "total_floor_area_sqm": {
-      "status": "parametric_demonstration",
+      "status": "known",
       "approved_control": false,
       "value": 9057082.4,
       "unit": "sqm",
@@ -111,7 +111,7 @@
       ]
     },
     "floor_area_ratio": {
-      "status": "parametric_demonstration",
+      "status": "known",
       "approved_control": false,
       "value": 0.7936,
       "unit": "ratio",
@@ -126,7 +126,7 @@
       ]
     },
     "green_area_sqm": {
-      "status": "directional_estimate",
+      "status": "known",
       "approved_control": false,
       "value": 1408600.8,
       "unit": "sqm",
@@ -140,7 +140,7 @@
       ]
     },
     "green_ratio": {
-      "status": "directional_estimate",
+      "status": "known",
       "approved_control": false,
       "value": 0.1234,
       "unit": "ratio",
@@ -155,7 +155,7 @@
       ]
     },
     "public_space_area_sqm": {
-      "status": "directional_estimate",
+      "status": "known",
       "approved_control": false,
       "value": 836345.6,
       "unit": "sqm",
@@ -169,7 +169,7 @@
       ]
     },
     "public_space_ratio": {
-      "status": "directional_estimate",
+      "status": "known",
       "approved_control": false,
       "value": 0.0733,
       "unit": "ratio",
@@ -184,7 +184,7 @@
       ]
     },
     "road_area_sqm": {
-      "status": "directional_estimate",
+      "status": "known",
       "approved_control": false,
       "value": 967289.1,
       "unit": "sqm",
@@ -198,7 +198,7 @@
       ]
     },
     "road_ratio": {
-      "status": "directional_estimate",
+      "status": "known",
       "approved_control": false,
       "value": 0.0848,
       "unit": "ratio",
@@ -213,7 +213,7 @@
       ]
     },
     "phasing_area_sqm": {
-      "status": "parametric_demonstration",
+      "status": "known",
       "approved_control": false,
       "value": 11412829.2,
       "unit": "sqm",
@@ -227,7 +227,7 @@
       ]
     },
     "phasing_coverage_ratio": {
-      "status": "parametric_demonstration",
+      "status": "known",
       "approved_control": false,
       "value": 1.0,
       "unit": "ratio",
@@ -242,7 +242,7 @@
       ]
     },
     "key_area_count": {
-      "status": "directional_estimate",
+      "status": "known",
       "approved_control": false,
       "value": 3,
       "unit": "count",
@@ -256,7 +256,7 @@
       ]
     },
     "key_area_zhongzhiyuan_sqm": {
-      "status": "directional_estimate",
+      "status": "known",
       "approved_control": false,
       "value": 1929201.9,
       "unit": "sqm",
@@ -270,7 +270,7 @@
       ]
     },
     "key_area_beijing_ai_origin_sqm": {
-      "status": "directional_estimate",
+      "status": "known",
       "approved_control": false,
       "value": 1043236.9,
       "unit": "sqm",
@@ -284,7 +284,7 @@
       ]
     },
     "key_area_dazhongsi_sqm": {
-      "status": "directional_estimate",
+      "status": "known",
       "approved_control": false,
       "value": 720454.2,
       "unit": "sqm",
@@ -298,14 +298,14 @@
       ]
     },
     "ai_service_node_count": {
-      "status": "conceptual",
+      "status": "known",
       "approved_control": false,
       "value": 14,
       "unit": "count",
       "formula": "count(scenario_cards)",
       "confidence": "low",
       "assumptions": [
-        "场景节点为概念落点，非既有设施普查；原 ai_service_nodes.geojson 已随上一轮整改移除，现以 scenarios/scenario-cards.json（14 个 NODE-01…NODE-14 场景卡）作为唯一权威引用。"
+        "场景节点为概念落点，非既有设施普查；原 ai_service_nodes.geojson 已随上一轮整改移除，现以 visual/assets/scenario-cards.json（14 个 NODE-01…NODE-14 场景卡）作为唯一权威引用。"
       ]
     }
   }
