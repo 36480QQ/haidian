@@ -49,6 +49,10 @@ Rules are easy to write. You find out whether they work by writing somebody's mo
 
 **What she can do.** She may require one re-survey of the judgement that affected her, and the result is published alongside the original reading, anonymised. That right sits at the third-order point nearest her home: **putting the right of review in a specialist institution fifteen minutes away is the same as not granting it.**
 
+![FIG.21 How far the nearest benchmark actually is](assets/figures/reach.en.png)
+
+**That sentence had never been turned on this proposal.** FIG.21 measures the walk along the spine: the worst place on the line is 1,107 m from the nearest benchmark, 30.8 minutes for P5, and six of nine segments fail — **on this rule, this proposal does not meet the standard it holds others to**.
+
 **What the reading board says.** On the L2 closure stele this scenario is marked in datum red with the date it was sent back. The device is allowed to look bad: **a civic instrument willing to display its own failures builds more trust than any success narrative.**
 
 **How long the way back takes.** Not "fix it and relaunch". The whole route is re-measured, two consecutive cycles must fall within tolerance because once may be luck, the cause is published, and for an F1 scenario all four review categories must agree unanimously. Afterwards the cycle is halved until two further passes. **Exit is easy and return is slow, deliberately.**
@@ -792,7 +796,7 @@ This rule turns governance into a spatial design problem, which is why it belong
 
 **First, what is not this proposal's increment.** Reading every proposal in these two tracks confirms that <!-- BASELINE6:BEGIN -->
 
-These six are now de facto standard. The figures in brackets are measured counts across the 702-proposal corpus: scenario-level suspension and exit conditions (420); a non-AI equivalent path (312); an on-site safety officer (299); remote and physical e-stop (153); speed limits (82); event logs (58). The thinnest is at 58, the thickest at 420. **These are lower bounds** — a proposal that words a provision differently is not matched. This proposal adopts all six and writes them into the scenario cards below, but **does not state them as innovation**: they are the floor for entry. Selling the floor as a feature shows you have not read the field.
+These six are now de facto standard. The figures in brackets are measured counts across the 702-proposal corpus: scenario-level suspension and exit conditions (422); a non-AI equivalent path (313); an on-site safety officer (300); remote and physical e-stop (154); speed limits (82); event logs (59). The thinnest is at 59, the thickest at 422. **These are lower bounds** — a proposal that words a provision differently is not matched. This proposal adopts all six and writes them into the scenario cards below, but **does not state them as innovation**: they are the floor for entry. Selling the floor as a feature shows you have not read the field.
 
 <!-- BASELINE6:END -->
 
@@ -1180,6 +1184,15 @@ Sessions per year are converted from the re-survey cadence each point declares i
 | BM-303 | third | 12 | the sub-district office or residents' committee | 18–30 | 36–60 | 200–500 | community governance service procurement — sub-district |
 | **Total** | — | **47** | — | **133–214** | **148–244** | **2,800–6,800** | — |
 
+The table above prices the network **as laid out**. FIG.21 measures the worst walk on the line at 1,107 m — 30.8 minutes for P5 — and finds six of nine segments failing this proposal's own fifteen-minute rule; closing it needs nine more third-order points. **That is not the same table**: a compliant network costs the following again, on the same model. Letting the as-laid-out figure stand in for the compliant one is the substitution this package would flag in someone else's.
+
+| To close the gap | |
+|---|---|
+| More third-order points | 9 |
+| More re-surveys a year | 108 |
+| More paid hours | 162–270 |
+| More annual cost | CNY 21,240–74,700 |
+
 **Volunteer hours are counted and not priced.** Pricing them would inflate a cost nobody pays; omitting them would pretend they are free. They are the hours this mechanism asks of residents each year, and that is a quantity to see before agreeing to it.
 
 At CNY 120–260 per hour, paid labour runs CNY 15,960–55,640 a year, or **CNY 18,760–62,440 a year** including consumables — all bands, none of them point estimates.
@@ -1409,7 +1422,7 @@ All 63 answered. Recomputing the floors rather than declaring them means that if
 
 The repository's `validate_submission.py` carries `validate_simulation_consistency`, which cross-checks a `simulation.json`'s task records against `simulation_success_rate`, `tool_schema_pass_rate`, `energy_budget_violations` and `audit_completeness` in `metrics.json`. <!-- SIMJSON:BEGIN -->
 
-**18 of 702** submissions ship one; the roster is in `simulation_json.keys` in the shipped `visual/assets/field_extras.json`, checkable entry by entry. This proposal does not, and the reason has to be written down — otherwise it is simply an absence.
+**19 of 702** submissions ship one; the roster is in `simulation_json.keys` in the shipped `visual/assets/field_extras.json`, checkable entry by entry. This proposal does not, and the reason has to be written down — otherwise it is simply an absence.
 
 <!-- SIMJSON:END -->
 
@@ -1439,12 +1452,12 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-59 entries. By finder:
+60 entries. By finder:
 
 | Found by | Count | What it says |
 |---|---|---|
 | Independent audit | 25 | The audit was run against the shipped package, not a draft |
-| The author | 25 | Found while working |
+| The author | 26 | Found while working |
 | This package's own gate | 5 | Caught at build time — which is what a gate is for |
 | **Reviewers outside this proposal** | **4** | [@anselasimov-web](https://github.com/anselasimov-web) on PR #1002; [@147228](https://github.com/147228) on PR #1065; [@Sonike](https://github.com/Sonike) on Issue #950; [@147228](https://github.com/147228) on Issue #950 / PR #1190 |
 
@@ -1469,6 +1482,7 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 | A claim outlived the package | 3 |
 | A measurement answering a question it cannot answer | 2 |
 | A number with no file behind it | 2 |
+| A rule applied to others but not to itself | 2 |
 | Attributed to a file that refuses to do it | 1 |
 | A claim outlived the corpus | 1 |
 | A claim this medium makes uncheckable in principle | 1 |
@@ -1476,7 +1490,6 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 | The gate reported and was ignored | 1 |
 | An index that does not index | 1 |
 | A requirement with nobody to execute it | 1 |
-| A rule applied to others but not to itself | 1 |
 | Six classes listed for a seven-class partition | 1 |
 | A term of art applied where it does not hold | 1 |
 | The table stopped being a table | 1 |
@@ -1516,11 +1529,11 @@ An authorisation statement a reviewer cannot verify is not a statement. Each row
 
 <!-- LEDGERCOUNT:BEGIN -->
 
-**The file-level ledger sits outside the review input, so its result is brought in here.** `build_review_input` sends `proposal.md` and eight JSON files; neither `report/copyright_statement.md` nor `visual/assets/rights_ledger.json` is among them. **A rights ledger the reviewer structurally cannot open is, from the reviewer's position, exactly the unverifiable assertion this package objects to elsewhere.** All **106 shipped files** carry a clearance class; a file without one fails the build:
+**The file-level ledger sits outside the review input, so its result is brought in here.** `build_review_input` sends `proposal.md` and eight JSON files; neither `report/copyright_statement.md` nor `visual/assets/rights_ledger.json` is among them. **A rights ledger the reviewer structurally cannot open is, from the reviewer's position, exactly the unverifiable assertion this package objects to elsewhere.** All **108 shipped files** carry a clearance class; a file without one fails the build:
 
 | Clearance class | Files |
 |---|---|
-| `author-originated` | 84 |
+| `author-originated` | 86 |
 | `provisional-only-with-stated-limit` | 9 |
 | `author-originated-measurement` | 8 |
 | `author-originated-with-embedded-fonts` | 4 |
@@ -1575,7 +1588,7 @@ One point of citation discipline deserves stating plainly: **the cases are used 
 
 <!-- FIGINDEX:BEGIN -->
 
-There are 21 sheets, numbered FIG.00 to FIG.20. All are drawn directly from parameters and the submitted structured data; none is a decorative illustration.
+There are 22 sheets, numbered FIG.00 to FIG.21. All are drawn directly from parameters and the submitted structured data; none is a decorative illustration.
 
 | Sheet | Content | What to read on it |
 |---|---|---|
@@ -1600,6 +1613,7 @@ There are 21 sheets, numbered FIG.00 to FIG.20. All are drawn directly from para
 | FIG.18 | Maintenance: putting the wear on the parts that can be swapped | A monthly re-survey is a maintenance problem first. The sheet turns on one asymmetry: **the stone is the only part that must never be replaced and the only one a person cannot carry** (about 230 kg) — a benchmark that moves is not the same benchmark — so the wear is placed on the face, post, seat and guidance strip; the last block states what happens when a stone is lost anyway |
 | FIG.19 | Monuments beside heritage fabric: the no-drilling construction and its setback rule | The call is for a belt along a hundred-year-old railway and this proposal's central act is sinking concrete. Three constructions chosen by distance from the fabric, with the cost stated: **without excavation there is no foundation below the frost line, so the surface-set marker cannot carry first- or second-order duty**. Where d is measured from depends on the official heritage layer — absent here, and recorded as a gap |
 | FIG.20 | Reading after dark, without lighting the benchmark | Three third-order points are read monthly by residents, and many of those days fall after dark. A lamp is the obvious answer and the wrong one: **a dead lamp leaves a plate that looks maintained and cannot be read** — a measurement whose failure is invisible. The face is retroreflective and the reader brings the light; a dirty face looks dirty, in daylight |
+| FIG.21 | How far the nearest benchmark actually is: this proposal's own rule, applied to itself | This proposal argues repeatedly that review you must walk fifteen minutes to reach has not been given — and **nobody had measured the walk**. Measured: the worst place on the line is 1,107 m from the nearest benchmark, **30.8 minutes for P5, twice the limit this proposal holds others to**, and six of nine segments fail. The rule ships as a spacing requirement; the positions wait for the official alignment |
 
 <!-- FIGINDEX:END -->
 
