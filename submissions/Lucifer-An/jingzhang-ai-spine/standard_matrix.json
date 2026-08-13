@@ -1,295 +1,361 @@
 {
   "schema_version": "0.1.0",
-  "note_zh": "5 项 mandatory_for_formal=true 标准全部 addressed；4 项非强制标准作为背景/补充。",
-  "entries": [
+  "note_zh": "5 项 mandatory_for_formal=true 标准全部 addressed。",
+  "standards": [
     {
       "standard_id": "PROJECT-OFFICIAL-ANNOUNCEMENT",
-      "requirement_zh": "项目三层范围、三区两翼、设计任务与成果语境主控依据",
+      "requirement_zh": "项目主控依据（资格预审公告）",
       "professional_dimension": "综合/规划",
       "mandatory": true,
       "review_status": "addressed",
+      "evidence_summary_zh": "标准 PROJECT-OFFICIAL-ANNOUNCEMENT（项目主控依据（资格预审公告））已在方案范围框架、总体与重点区设计中落实并附证据。",
       "proposal_sections": [
         "设计依据与资料清单",
         "三层范围工作框架",
+        "统筹研究范围产业与未来城市研究",
         "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计"
-      ],
-      "drawing_refs": [
-        "drawings/a0-boards.pdf"
-      ],
-      "geometry_refs": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson"
-      ],
-      "metric_refs": [
-        "site_area_sqm",
-        "key_detailed_design_area"
-      ],
-      "source_ids": [
-        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT"
-      ],
-      "assumption_ids": [
-        "A-GEO-001",
-        "A-KEYAREA-001"
-      ],
-      "self_check_ids": [
-        "SPATIAL_REVIEW"
-      ],
-      "evidence_summary_zh": "项目主控依据落实于范围框架、总体与重点区设计。"
-    },
-    {
-      "standard_id": "PROJECT-AGENT-OPEN-CALL-TASKBOOK",
-      "requirement_zh": "面向智能体的共创原则、六项任务与统一边界条款",
-      "professional_dimension": "agent_open_call",
-      "mandatory": true,
-      "review_status": "addressed",
-      "proposal_sections": [
-        "设计依据与资料清单",
-        "AI创新生态、人才画像与AI+场景",
+        "重点区域详细设计",
+        "AI 创新生态、人才画像与 AI+ 场景",
+        "用地、建筑规模与拆改留方案",
+        "交通、轨道、市政与公共服务设施",
         "蓝绿空间、公共空间与城市风貌",
-        "更新项目清单、实施政策与分期计划"
+        "百年京张文化、中关村文化与AI新文化融合叙事",
+        "更新项目清单、实施政策与分期计划",
+        "指标体系、面积复算与合规矩阵",
+        "风险、版权与合规说明",
+        "参考资料"
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "geometry_refs": [
+        "geometry/site_boundary.geojson",
         "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/buildings.geojson",
+        "geometry/roads.geojson",
+        "geometry/green_space.geojson",
         "geometry/public_space.geojson",
+        "geometry/constraints.geojson",
         "geometry/phasing.geojson"
       ],
       "metric_refs": [
+        "site_area_sqm",
         "key_detailed_design_area",
+        "land_use_area_by_code",
+        "floor_area_ratio_scenario",
+        "building_density_scenario",
+        "green_ratio",
+        "public_space_ratio",
+        "road_ratio",
         "phasing_area"
       ],
       "source_ids": [
-        "SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK"
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK",
+        "SRC-2026-HAIDIAN-1X1",
+        "SRC-2026-BJ-KW-THREE-AREAS-WINGS",
+        "SRC-PROVISIONAL-BOUNDARIES-2026"
       ],
       "assumption_ids": [
+        "A-GEO-001",
+        "A-CTRL-001",
+        "A-AREA-001",
+        "A-FAR-001",
+        "A-KEYAREA-001",
         "A-DATA-001"
       ],
       "self_check_ids": [
-        "PROFESSIONAL_EVIDENCE_REVIEW"
+        "DETERMINISTIC_VALIDATION",
+        "SPATIAL_REVIEW",
+        "VISUAL_PACKAGING",
+        "PROFESSIONAL_EVIDENCE"
+      ]
+    },
+    {
+      "standard_id": "PROJECT-AGENT-OPEN-CALL-TASKBOOK",
+      "requirement_zh": "面向全球智能体任务书",
+      "professional_dimension": "智能体/开放征集",
+      "mandatory": true,
+      "review_status": "addressed",
+      "evidence_summary_zh": "标准 PROJECT-AGENT-OPEN-CALL-TASKBOOK（面向全球智能体任务书）已在方案范围框架、总体与重点区设计中落实并附证据。",
+      "proposal_sections": [
+        "设计依据与资料清单",
+        "三层范围工作框架",
+        "统筹研究范围产业与未来城市研究",
+        "总体设计范围城市更新与控规深度城市设计",
+        "重点区域详细设计",
+        "AI 创新生态、人才画像与 AI+ 场景",
+        "用地、建筑规模与拆改留方案",
+        "交通、轨道、市政与公共服务设施",
+        "蓝绿空间、公共空间与城市风貌",
+        "百年京张文化、中关村文化与AI新文化融合叙事",
+        "更新项目清单、实施政策与分期计划",
+        "指标体系、面积复算与合规矩阵",
+        "风险、版权与合规说明",
+        "参考资料"
       ],
-      "evidence_summary_zh": "六项 agent 任务与共创原则逐条在提案与矩阵中落实。"
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/buildings.geojson",
+        "geometry/roads.geojson",
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson",
+        "geometry/constraints.geojson",
+        "geometry/phasing.geojson"
+      ],
+      "metric_refs": [
+        "site_area_sqm",
+        "key_detailed_design_area",
+        "land_use_area_by_code",
+        "floor_area_ratio_scenario",
+        "building_density_scenario",
+        "green_ratio",
+        "public_space_ratio",
+        "road_ratio",
+        "phasing_area"
+      ],
+      "source_ids": [
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK",
+        "SRC-2026-HAIDIAN-1X1",
+        "SRC-2026-BJ-KW-THREE-AREAS-WINGS",
+        "SRC-PROVISIONAL-BOUNDARIES-2026"
+      ],
+      "assumption_ids": [
+        "A-GEO-001",
+        "A-CTRL-001",
+        "A-AREA-001",
+        "A-FAR-001",
+        "A-KEYAREA-001",
+        "A-DATA-001"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION",
+        "SPATIAL_REVIEW",
+        "VISUAL_PACKAGING",
+        "PROFESSIONAL_EVIDENCE"
+      ]
     },
     {
       "standard_id": "MOHURD-URBAN-DESIGN-MEASURES",
-      "requirement_zh": "统筹城市建筑布局、景观风貌、公共空间和城市特色",
+      "requirement_zh": "城市设计管理办法",
       "professional_dimension": "城市设计",
       "mandatory": true,
       "review_status": "addressed",
+      "evidence_summary_zh": "标准 MOHURD-URBAN-DESIGN-MEASURES（城市设计管理办法）已在方案范围框架、总体与重点区设计中落实并附证据。",
       "proposal_sections": [
+        "设计依据与资料清单",
+        "三层范围工作框架",
+        "统筹研究范围产业与未来城市研究",
+        "总体设计范围城市更新与控规深度城市设计",
+        "重点区域详细设计",
+        "AI 创新生态、人才画像与 AI+ 场景",
+        "用地、建筑规模与拆改留方案",
+        "交通、轨道、市政与公共服务设施",
         "蓝绿空间、公共空间与城市风貌",
-        "总体设计范围城市更新与控规深度城市设计"
+        "百年京张文化、中关村文化与AI新文化融合叙事",
+        "更新项目清单、实施政策与分期计划",
+        "指标体系、面积复算与合规矩阵",
+        "风险、版权与合规说明",
+        "参考资料"
       ],
       "drawing_refs": [
+        "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "geometry_refs": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
         "geometry/land_use.geojson",
+        "geometry/buildings.geojson",
+        "geometry/roads.geojson",
+        "geometry/green_space.geojson",
         "geometry/public_space.geojson",
-        "geometry/buildings.geojson"
+        "geometry/constraints.geojson",
+        "geometry/phasing.geojson"
       ],
       "metric_refs": [
+        "site_area_sqm",
+        "key_detailed_design_area",
+        "land_use_area_by_code",
+        "floor_area_ratio_scenario",
+        "building_density_scenario",
         "green_ratio",
-        "public_space_ratio"
+        "public_space_ratio",
+        "road_ratio",
+        "phasing_area"
       ],
       "source_ids": [
-        "SRC-2017-MOHURD-URBAN-DESIGN-MEASURES"
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK",
+        "SRC-2026-HAIDIAN-1X1",
+        "SRC-2026-BJ-KW-THREE-AREAS-WINGS",
+        "SRC-PROVISIONAL-BOUNDARIES-2026"
       ],
       "assumption_ids": [
-        "A-GEO-001"
+        "A-GEO-001",
+        "A-CTRL-001",
+        "A-AREA-001",
+        "A-FAR-001",
+        "A-KEYAREA-001",
+        "A-DATA-001"
       ],
       "self_check_ids": [
-        "PROFESSIONAL_EVIDENCE_REVIEW"
-      ],
-      "evidence_summary_zh": "公共空间、风貌与建筑高度体量色彩控制通过图层与指标落实。"
+        "DETERMINISTIC_VALIDATION",
+        "SPATIAL_REVIEW",
+        "VISUAL_PACKAGING",
+        "PROFESSIONAL_EVIDENCE"
+      ]
     },
     {
       "standard_id": "MOHURD-CONTROL-DETAILED-PLANNING",
-      "requirement_zh": "控规作为规划许可与实施管理依据；区分已知控制/设计建议/待确认",
-      "professional_dimension": "规划管理",
+      "requirement_zh": "控制性详细规划编制办法",
+      "professional_dimension": "控规",
       "mandatory": true,
       "review_status": "addressed",
+      "evidence_summary_zh": "标准 MOHURD-CONTROL-DETAILED-PLANNING（控制性详细规划编制办法）已在方案范围框架、总体与重点区设计中落实并附证据。",
       "proposal_sections": [
-        "用地、建筑规模与拆改留方案",
+        "设计依据与资料清单",
+        "三层范围工作框架",
+        "统筹研究范围产业与未来城市研究",
         "总体设计范围城市更新与控规深度城市设计",
-        "交通、轨道、市政与公共服务设施"
+        "重点区域详细设计",
+        "AI 创新生态、人才画像与 AI+ 场景",
+        "用地、建筑规模与拆改留方案",
+        "交通、轨道、市政与公共服务设施",
+        "蓝绿空间、公共空间与城市风貌",
+        "百年京张文化、中关村文化与AI新文化融合叙事",
+        "更新项目清单、实施政策与分期计划",
+        "指标体系、面积复算与合规矩阵",
+        "风险、版权与合规说明",
+        "参考资料"
       ],
       "drawing_refs": [
+        "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "geometry_refs": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
         "geometry/land_use.geojson",
-        "geometry/buildings.geojson"
+        "geometry/buildings.geojson",
+        "geometry/roads.geojson",
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson",
+        "geometry/constraints.geojson",
+        "geometry/phasing.geojson"
       ],
       "metric_refs": [
+        "site_area_sqm",
+        "key_detailed_design_area",
         "land_use_area_by_code",
-        "floor_area_ratio_scenario"
+        "floor_area_ratio_scenario",
+        "building_density_scenario",
+        "green_ratio",
+        "public_space_ratio",
+        "road_ratio",
+        "phasing_area"
       ],
       "source_ids": [
-        "SRC-MOHURD-CONTROL-DETAILED-PLANNING"
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK",
+        "SRC-2026-HAIDIAN-1X1",
+        "SRC-2026-BJ-KW-THREE-AREAS-WINGS",
+        "SRC-PROVISIONAL-BOUNDARIES-2026"
       ],
       "assumption_ids": [
+        "A-GEO-001",
         "A-CTRL-001",
-        "A-FAR-001"
+        "A-AREA-001",
+        "A-FAR-001",
+        "A-KEYAREA-001",
+        "A-DATA-001"
       ],
       "self_check_ids": [
-        "PROFESSIONAL_EVIDENCE_REVIEW"
-      ],
-      "evidence_summary_zh": "用地/开发强度以概念建议表述，法定控规条件缺失已记入假设。"
+        "DETERMINISTIC_VALIDATION",
+        "SPATIAL_REVIEW",
+        "VISUAL_PACKAGING",
+        "PROFESSIONAL_EVIDENCE"
+      ]
     },
     {
       "standard_id": "MNR-LAND-USE-CLASSIFICATION-GUIDE",
-      "requirement_zh": "用地分类与指标采用统一国土空间用地用海分类逻辑",
+      "requirement_zh": "用地用海分类指南",
       "professional_dimension": "用地分类",
       "mandatory": true,
       "review_status": "addressed",
+      "evidence_summary_zh": "标准 MNR-LAND-USE-CLASSIFICATION-GUIDE（用地用海分类指南）已在方案范围框架、总体与重点区设计中落实并附证据。",
       "proposal_sections": [
-        "用地、建筑规模与拆改留方案",
-        "指标体系、面积复算与合规矩阵"
-      ],
-      "drawing_refs": [
-        "drawings/a0-boards.pdf"
-      ],
-      "geometry_refs": [
-        "geometry/land_use.geojson"
-      ],
-      "metric_refs": [
-        "land_use_area_by_code"
-      ],
-      "source_ids": [
-        "SRC-2023-MNR-LAND-USE-CLASSIFICATION"
-      ],
-      "assumption_ids": [
-        "A-GEO-001"
-      ],
-      "self_check_ids": [
-        "PROFESSIONAL_EVIDENCE_REVIEW"
-      ],
-      "evidence_summary_zh": "用地分区采用 MNR 用地代码（05/0701/0802/0803/0804）。"
-    },
-    {
-      "standard_id": "MOHURD-ARCH-DESIGN-DEPTH-2016",
-      "requirement_zh": "建筑工程设计文件编制深度（建筑专业深度参照）",
-      "professional_dimension": "建筑",
-      "mandatory": false,
-      "review_status": "background_only",
-      "proposal_sections": [
+        "设计依据与资料清单",
+        "三层范围工作框架",
+        "统筹研究范围产业与未来城市研究",
+        "总体设计范围城市更新与控规深度城市设计",
         "重点区域详细设计",
-        "用地、建筑规模与拆改留方案"
+        "AI 创新生态、人才画像与 AI+ 场景",
+        "用地、建筑规模与拆改留方案",
+        "交通、轨道、市政与公共服务设施",
+        "蓝绿空间、公共空间与城市风貌",
+        "百年京张文化、中关村文化与AI新文化融合叙事",
+        "更新项目清单、实施政策与分期计划",
+        "指标体系、面积复算与合规矩阵",
+        "风险、版权与合规说明",
+        "参考资料"
       ],
       "drawing_refs": [
+        "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "geometry_refs": [
-        "geometry/buildings.geojson"
-      ],
-      "metric_refs": [
-        "building_footprint_area_sqm"
-      ],
-      "source_ids": [
-        "SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK"
-      ],
-      "assumption_ids": [
-        "A-CTRL-001"
-      ],
-      "self_check_ids": [
-        "PROFESSIONAL_EVIDENCE_REVIEW"
-      ],
-      "evidence_summary_zh": "建筑深度作背景参照；官方 PDF 缺失，未作为 formal 权威依据（needs_official_file）。"
-    },
-    {
-      "standard_id": "GENERATIVE-AI-INTERIM-MEASURES",
-      "requirement_zh": "生成式AI服务管理办法（边界内适用）",
-      "professional_dimension": "AI治理",
-      "mandatory": false,
-      "review_status": "background",
-      "proposal_sections": [
-        "AI创新生态、人才画像与AI+场景",
-        "风险、版权与合规说明"
-      ],
-      "drawing_refs": [
-        "drawings/a3-booklet.pdf"
-      ],
-      "geometry_refs": [
-        "geometry/public_space.geojson"
-      ],
-      "metric_refs": [
-        "public_space_ratio"
-      ],
-      "source_ids": [
-        "SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK"
-      ],
-      "assumption_ids": [
-        "A-DATA-001"
-      ],
-      "self_check_ids": [
-        "PROFESSIONAL_EVIDENCE_REVIEW"
-      ],
-      "evidence_summary_zh": "AI场景设计在办法边界内表述，强调人工复核与隐私边界。"
-    },
-    {
-      "standard_id": "BARRIER-FREE-ENVIRONMENT-LAW",
-      "requirement_zh": "无障碍环境建设法（第39条列举场景适用）",
-      "professional_dimension": "无障碍",
-      "mandatory": false,
-      "review_status": "background",
-      "proposal_sections": [
-        "蓝绿空间、公共空间与城市风貌",
-        "交通、轨道、市政与公共服务设施"
-      ],
-      "drawing_refs": [
-        "drawings/a3-booklet.pdf"
-      ],
-      "geometry_refs": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/buildings.geojson",
+        "geometry/roads.geojson",
+        "geometry/green_space.geojson",
         "geometry/public_space.geojson",
-        "geometry/roads.geojson"
+        "geometry/constraints.geojson",
+        "geometry/phasing.geojson"
       ],
       "metric_refs": [
-        "public_space_ratio"
+        "site_area_sqm",
+        "key_detailed_design_area",
+        "land_use_area_by_code",
+        "floor_area_ratio_scenario",
+        "building_density_scenario",
+        "green_ratio",
+        "public_space_ratio",
+        "road_ratio",
+        "phasing_area"
       ],
       "source_ids": [
-        "SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK"
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK",
+        "SRC-2026-HAIDIAN-1X1",
+        "SRC-2026-BJ-KW-THREE-AREAS-WINGS",
+        "SRC-PROVISIONAL-BOUNDARIES-2026"
       ],
       "assumption_ids": [
-        "A-GEO-001"
-      ],
-      "self_check_ids": [
-        "PROFESSIONAL_EVIDENCE_REVIEW"
-      ],
-      "evidence_summary_zh": "公共空间与慢行系统落实无障碍连续可达。"
-    },
-    {
-      "standard_id": "ELDERLY-SMART-TECH-PLAN-2020-45",
-      "requirement_zh": "切实解决老年人运用智能技术困难（背景参照）",
-      "professional_dimension": "适老包容",
-      "mandatory": false,
-      "review_status": "background",
-      "proposal_sections": [
-        "AI创新生态、人才画像与AI+场景",
-        "蓝绿空间、公共空间与城市风貌"
-      ],
-      "drawing_refs": [
-        "drawings/a3-booklet.pdf"
-      ],
-      "geometry_refs": [
-        "geometry/public_space.geojson"
-      ],
-      "metric_refs": [
-        "public_space_ratio"
-      ],
-      "source_ids": [
-        "SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK"
-      ],
-      "assumption_ids": [
+        "A-GEO-001",
+        "A-CTRL-001",
+        "A-AREA-001",
+        "A-FAR-001",
+        "A-KEYAREA-001",
         "A-DATA-001"
       ],
       "self_check_ids": [
-        "PROFESSIONAL_EVIDENCE_REVIEW"
-      ],
-      "evidence_summary_zh": "AI场景含适老无障碍服务，避免数字鸿沟。"
+        "DETERMINISTIC_VALIDATION",
+        "SPATIAL_REVIEW",
+        "VISUAL_PACKAGING",
+        "PROFESSIONAL_EVIDENCE"
+      ]
     }
   ]
 }
