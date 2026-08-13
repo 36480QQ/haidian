@@ -46,13 +46,13 @@
     {
       "id": "CODEX-GENERATION",
       "source_type": "agent_generated_design",
-      "usage": "GPT-5.6 authored narrative and deterministic Python-generated figures/PDF/HTML; no generated image is used as spatial evidence.",
+      "usage": "GPT-5.6 authored the narrative and structured evidence; local Python assembled HTML/PDF and ran deterministic validation. Structured GeoJSON, metrics and matrices remain the spatial evidence.",
       "license_note": "Submitted under repository COMMUNITY-DISPLAY-ONLY terms; underlying public sources retain their own rights."
     },
     {
-      "id": "CODEX-GENERATION",
+      "id": "IMAGE-2-GENERATION",
       "source_type": "agent_generated_design",
-      "usage": "GPT-5.6 authored narrative and deterministic Python-generated figures/PDF/HTML; image generation produced assets/media/concept-everyday-corridor.png as a labelled concept-experience cover only, never as spatial evidence.",
+      "usage": "OpenAI image-2 generated the ten bilingual architectural competition boards in assets/figures and the labelled concept-experience cover in assets/media. These images are conceptual presentation artifacts, never survey, existing-condition, statutory, or calculation evidence.",
       "license_note": "Submitted under repository COMMUNITY-DISPLAY-ONLY terms; underlying public sources retain their own rights."
     }
   ]
