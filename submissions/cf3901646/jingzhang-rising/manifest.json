@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "42d986e4e6b435ea7f67f316938d3c394f0af9e3c3e01e338c6325004b6f4f7c"
+      "sha256": "a8de2c850950a43ebbe0e632715901a3603273d884185e4caeebf5dafa32a052"
     },
     {
       "path": "agent.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "8b0f50b8a08249514d227cfd5ce8a9185cf97a6f56c82a164a32a1dc68596a8d"
+      "sha256": "9a2c89be6c4f9b53f3c91e740f8c19a855bc4bc6b6a6362dfcab2c832a999b72"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "60d18bac60d6f08f92d0f96d15697eecebad8e9e83c01eb10d000412bc3b0a4a"
+      "sha256": "0b8e5f3a22d128f7b0c06a6104890a6b8e038c97ec7584c4d2ab5455d09c0a45"
     },
     {
       "path": "report/narrative.md",
@@ -218,7 +218,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "6208d236a974d86fbee46d4c73ed9d107956c514f4935253fa09db322b5acb93"
+      "sha256": "fbaf202ca277ccdd9a56807159c2fbc8d11d108cefa7dcc6dda2e4cf4b194aac"
     },
     {
       "path": "report/proposal.en.html",
@@ -226,7 +226,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "b27b786b9a83aa5753af625f47b78404d4c98b11d0f3daf13091ced819988cc2"
+      "sha256": "b12ed66a90f8f1ff38a137d7999c0c9bf11d1aa118768008423b45347d274a11"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -301,7 +301,7 @@
       "title_en": "Jingzhang Rising - proposal film",
       "description_zh": "七十五秒方案短片，依次呈现百年自主的两份国家级事实、北京轴线谱系定位、一脉三台两翼双缝空间结构、四个原点文化线索、人工兜底与公开答卷治理内核，以及三项待确认指标的明确不回答。画面由本包 geometry 图层程序化生成。",
       "description_en": "A 75-second proposal film covering the two national-level facts behind a century of self-reliance, the Beijing axis lineage, the spine-terraces-wings-stitches structure, the four origins, the human fallback and public report card governance core, and the three metrics this proposal declines to answer. Frames are generated programmatically from the package geometry layers.",
-      "sha256": "a26601120455ebeaf12d0b0c8a08b8587b6792e3f3815747dbf265af8d2499d0",
+      "sha256": "24f9eafca54828a729fd6b38f474c20867fb8918f5ee73b238f291afe6fecffd",
       "poster": "assets/media/film-poster.png",
       "caption": "assets/media/film.vtt",
       "transcript": "assets/media/film-transcript.md"
@@ -316,7 +316,7 @@
       "title_en": "Jingzhang Rising - proposal film (English)",
       "description_zh": "七十五秒方案短片，依次呈现百年自主的两份国家级事实、北京轴线谱系定位、一脉三台两翼双缝空间结构、四个原点文化线索、人工兜底与公开答卷治理内核，以及三项待确认指标的明确不回答。画面由本包 geometry 图层程序化生成。",
       "description_en": "A 75-second proposal film covering the two national-level facts behind a century of self-reliance, the Beijing axis lineage, the spine-terraces-wings-stitches structure, the four origins, the human fallback and public report card governance core, and the three metrics this proposal declines to answer. Frames are generated programmatically from the package geometry layers.",
-      "sha256": "26c7ec8862cbf2177b0eddf084c397d7d041c7c1f4f4f8f70583cfd72259bc46",
+      "sha256": "18ad56d28d5cab72f7ba53b9c4bb62420a9ea10a4f86f722135d5ac95e0f6767",
       "poster": "assets/media/film-poster-en.png",
       "caption": "assets/media/film-en.vtt",
       "transcript": "assets/media/film-transcript-en.md"
