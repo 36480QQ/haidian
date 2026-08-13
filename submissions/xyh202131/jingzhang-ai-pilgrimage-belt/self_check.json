@@ -75,6 +75,7 @@
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/visual/assets/key-area-evidence-matrix.json",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/visual/assets/non-ai-parity-contract.json",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/visual/assets/pilot-readiness-register.json",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/visual/assets/readiness-closure-contract.json",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/visual/assets/rights-clearance-ledger.json",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/visual/assets/site-grounding-register.json",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/visual/index.en.html",
@@ -206,7 +207,7 @@
       "priority": "P0",
       "status": "open",
       "owner_needed": "independent rights reviewer",
-    "evidence_needed": "file-level audit for all 65 manifest paths"
+    "evidence_needed": "file-level audit for all 66 manifest paths"
     },
     {
       "item_id": "RIGHTS-OPEN-03",
@@ -221,8 +222,8 @@
     "completed_independent_file_level_clearance_audits": 0,
     "source_records": 29,
     "osm_element_records": 120,
-    "manifest_paths": 65,
-    "file_level_asset_records": 65,
+    "manifest_paths": 66,
+    "file_level_asset_records": 66,
     "audit_records": 0,
     "repository_review": "disclosure_ready",
     "public_or_professional_reuse": "blocked_pending_terms_and_audit",
@@ -295,6 +296,13 @@
       "message": "零依赖 Node 22.x 离线回放在十个无 PII 合成案例上取得 10/10 精确预期决策匹配与 0 mismatch；4/4 个不同的声明停止事件均精确映射到各自恢复动作；13/13 fail-closed 负向控制覆盖样例/冻结合同未知字段、枚举与回答模式漂移、来源闭包、禁采数据优先级、canonical RACI 闭包、现实服务授权和摘要计数篡改；允许来源闭包 6/6。该 PASS 只证明 G0 合同逻辑可确定性重放；实体回答、模型/API、真实服务、现场、审批、责任主体、真实独立复测、G1 结果与真实非 AI 同权结果仍为 0 或 unknown，当前 gate 保持 G0。"
     },
     {
+      "check_id": "READINESS_CLOSURE_NO_GO",
+      "result": "pass",
+      "severity": "major",
+      "target": "visual/assets/readiness-closure-contract.json",
+      "message": "JZ-01—JZ-08 与 T-01—T-03 共 11 项均引用既有 pilot-readiness 记录并适用同一九类关闭合同；99/99 个现实证据槽全部保持 open、已关闭 0、11/11 决定为 NO-GO。该 PASS 只证明缺口与否决规则可审计，不证明责任接受、审批、现场基线、恢复演练、社区共测或独立复测已完成。"
+    },
+    {
       "check_id": "PUBLIC_INTEREST_FALLBACK",
       "result": "pass",
       "severity": "major",
@@ -327,7 +335,7 @@
       "result": "pass",
       "severity": "major",
       "target": "proposal.md",
-      "message": "正文与矩阵的 6 项标准、15 项设计深度、62 个必需 known 指标引用通过专业证据检查；正文含 29 类来源、32 类 data 与 58 个 metric 标记。"
+      "message": "正文与矩阵的 6 项标准、15 项设计深度、75 个必需 known 指标引用通过专业证据检查；正文含 29 类来源、34 类 data 与 58 个 metric 标记。"
     },
     {
       "check_id": "RIGHTS_DISCLOSURE_AND_LINK_CLOSURE",
@@ -335,7 +343,7 @@
       "severity": "major",
       "target": "visual/assets/rights-clearance-ledger.json",
       "reproduction_command": "Run the complete PowerShell/Python audit block under report/narrative.md#权利证据审计--rights-evidence-audit; it executes JSON Schema validation plus path, hash, source, OSM, tool, declared-parent and release-gate assertions.",
-      "message": "manifest、5 个兼容组与 65 条逐文件资产记录严格等集且路径唯一；29 条来源、120 个 OSM way、稳定工具 ID、Noto/Helvetica/SVG/Node.js 运行时边界与外部请求均闭合。包内 metrics source_files 与声明的直接父资产已机器核对；parent_asset_refs 不是通用构建图。该 PASS 只表示披露和声明链接可审计；独立逐文件清权审计仍为 0、总体 not_fully_cleared。"
+      "message": "manifest、5 个兼容组与 66 条逐文件资产记录严格等集且路径唯一；29 条来源、120 个 OSM way、稳定工具 ID、Noto/Helvetica/SVG/Node.js 运行时边界与外部请求均闭合。包内 metrics source_files 与声明的直接父资产已机器核对；parent_asset_refs 不是通用构建图。该 PASS 只表示披露和声明链接可审计；独立逐文件清权审计仍为 0、总体 not_fully_cleared。"
     },
     {
       "check_id": "PUBLIC_OR_PROFESSIONAL_REUSE_RIGHTS",
@@ -349,7 +357,7 @@
       "result": "pass",
       "severity": "info",
       "target": "drawings/",
-      "message": "中英文 A0 均为 8 页实际 A0 横向且保留八张 1800×1100 整板总览；中文/英文 A3 为 33/36 页实际 A3 纵向，每种语言将 8 组图拆为 24 个 620×892、245mm 宽且相邻重叠 30px 的细节页，不再嵌入整板图。重点区平面、差异化剖面与证据矩阵使用同一套三组四态名称；live text 不低于 9pt，栅格证据有效最小文字指标为中 10.865pt/英 9.185pt，444/444 逻辑块可搜索；全部 85 页无裁切、越界、空白页或孤立标题。"
+      "message": "中英文 A0 均为 8 页实际 A0 横向且保留八张 1800×1100 整板总览；中文/英文 A3 为 33/36 页实际 A3 纵向，每种语言将 8 组图拆为 24 个 620×892、245mm 宽且相邻重叠 30px 的细节页，不再嵌入整板图。重点区平面、差异化剖面与证据矩阵使用同一套三组四态名称；live text 不低于 9pt，栅格证据有效最小文字指标为中 10.865pt/英 9.185pt，445/445 逻辑块可搜索；全部 85 页无裁切、越界、空白页或孤立标题。"
     }
   ]
 }

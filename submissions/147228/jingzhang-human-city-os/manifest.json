@@ -12,7 +12,7 @@
     "agent_name": "OpenAI Codex",
     "model": "OpenAI Codex (GPT-5)"
   },
-  "generated_at": "2026-08-10T08:39:32+08:00",
+  "generated_at": "2026-08-10T09:16:42+08:00",
   "files": [
     {
       "path": "manifest.json",
@@ -24,7 +24,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "6dfeec397a2b8139efe6b956f4c8fe3b1cf59f35a20844330849638fc9fc5ac6"
+      "sha256": "fa07c3a44b09356769369d73178652bb374f49ae13ab26029f8dc5304d996c4c"
     },
     {
       "path": "agent.json",
@@ -60,7 +60,7 @@
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "d74fb5be17854d6aaa3831297f3b59061b39fe0504b18a2c8bc34ba8f994df5a"
+      "sha256": "7698f3bfc0da4538613966651ef3508542e3563ffb4b9afe3ef1ca3b22761ce4"
     },
     {
       "path": "standard_matrix.json",
@@ -72,14 +72,14 @@
       "path": "design_depth_matrix.json",
       "role": "design_depth_matrix",
       "required": true,
-      "sha256": "82d4b1827cb78e7860588c35269fe64641bd88558055e44d1982e840fe9f88df"
+      "sha256": "d3c3a4be7ef32eb7bdf0e1930e7e4b8417dd14f4b26a247bfd82c4337a8c945a"
     },
     {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "9ceaf8d6707a411b66ba15f71f39cb1d82da88543c4798870819f10f5e7bd215"
+      "sha256": "b136fb142ea154cd11021433640c716f6f00e53bffd508fa62e0ead2d833ae9d"
     },
     {
       "path": "report/narrative.md",
@@ -91,7 +91,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "67447f330c2d5b381f22ad957fe3bd524decedb35439d5c0c5783013dc408da7"
+      "sha256": "a754eb959704db0ffb7efd717c6dda4f15b69af44072fb3ec23069e26025e736"
     },
     {
       "path": "report/copyright_statement.md",
@@ -118,7 +118,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "fc6acde861a5ac1d94979758215bf286e37a4ca0e792dfde8100a072b9e990f0"
+      "sha256": "f04608fdac2336195328b2363ac57af869f1a235ed6ca9ff9a7296f20237f954"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -229,7 +229,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "0fc25fc4f1415de8e7a33f20651922f8a0405d788f08e66e12562d5e2cd93010"
+      "sha256": "af565cfebb3ff923d46950d2ef0cb8835b818e939219ad6eb4faa60aff78cc32"
     },
     {
       "path": "report/proposal.en.html",
@@ -237,7 +237,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "60fc3da3ffcd45bf0b4cc6768153c8a2947a15532c200df4266c5a99aa726232"
+      "sha256": "0dc7c9433be85730e65b70a44d9915cfc6f8935820acf4c9c773a3f27fda4d88"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -261,7 +261,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "18dee26ce7f1bd7d8eefed5291c4107819df7d21afa2fc9001f4787a18dd9e4e"
+      "sha256": "bfb7977fb53ccbde8d0abd681aa3d7c5b841008810f9848db82e25b28834fc9b"
     },
     {
       "path": "visual/assets/accessibility-audit.json",
@@ -275,7 +275,7 @@
       "role": "visualization",
       "required": false,
       "language": "neutral",
-      "sha256": "1682bf829ecd056ca3ad4e257581ab5407c911f3f72ebafe631ee18f67c34769"
+      "sha256": "19a496d0095f4b2fb35647c1f05be71030feccdcedd9a4b6e7a17095cb06183e"
     },
     {
       "path": "visual/assets/implementation-operation-matrix.json",
@@ -317,14 +317,14 @@
       "role": "visualization",
       "required": false,
       "language": "neutral",
-      "sha256": "b462a97b9f85b47b55b79ae09a2526ae6d5c70dd995d0aa2604fbb50e182c562"
+      "sha256": "695ca3faf7764259b820c352f38a93f45a83a737756c397efe9989b4d93abcc1"
     },
     {
       "path": "visual/assets/human-city-reference-audit.json",
       "role": "visualization",
       "required": false,
       "language": "neutral",
-      "sha256": "200449deecbcfe871b1e9f04315b6f760a841836d6d46df2625a59aee6dd765c"
+      "sha256": "e534f31132c66eff421fd69a6ed37319d4ba36831070d250374e7c6a4863c289"
     },
     {
       "path": "visual/assets/run-human-city-reference-audit.js",
@@ -338,7 +338,7 @@
       "role": "visualization",
       "required": false,
       "language": "neutral",
-      "sha256": "f600f510893c2b6b7cc6ff8e013cf3e59035a90b1cbc4f4088052d13afd8f7a4"
+      "sha256": "5ee3cb6106b660dd1d0c28474ee701efbc15ed217f4631b5291194c31de12633"
     },
     {
       "path": "visual/assets/spatial-action-node-plans.json",
@@ -537,7 +537,7 @@
       "role": "visualization",
       "required": false,
       "language": "neutral",
-      "sha256": "80bd5183b5e81fe3c42fc6c6af88f30fc780f7684bac2c5d7f1a3c5e9e12db66"
+      "sha256": "08b627c3185cee852e91f6b56f008a94adb6c748d5e230ed138af92a955784e6"
     },
     {
       "path": "visual/assets/run-reviewer-navigation-audit.js",
@@ -732,6 +732,93 @@
       "language": "en",
       "translation_of": "assets/figures/human-city-spatial-sequence.svg",
       "sha256": "fa09b9304e490c89312bb0d8cc52798f3b2bacabf9705caade57bef82a9b9d70"
+    },
+    {
+      "path": "visual/assets/build-human-city-v15-assets.js",
+      "role": "workflow_script",
+      "required": false,
+      "language": "neutral",
+      "sha256": "aa640a0db7603ee0109c8a8f4eaf960ddf3259dfe33dcd54f0b9eca3cd110c5b"
+    },
+    {
+      "path": "visual/assets/check-human-city-v15-assets.js",
+      "role": "workflow_script",
+      "required": false,
+      "language": "neutral",
+      "sha256": "04446a6cf1596b1514e3fbb6f51542a1a27819fd366b13ce69741a5517e5d417"
+    },
+    {
+      "path": "visual/assets/human-city-mainline.json",
+      "role": "visualization",
+      "required": false,
+      "language": "neutral",
+      "sha256": "d4327fc675919166654c4442698cdea8f84bb4e55f201e44b29f244fd15a2299"
+    },
+    {
+      "path": "assets/figures/human-city-mainline.svg",
+      "role": "figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "1349fea75d0b2aabd629363959ade1c4a7504c2641070b537656f19ecf58dfc6"
+    },
+    {
+      "path": "assets/figures/human-city-mainline.en.svg",
+      "role": "figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/figures/human-city-mainline.svg",
+      "sha256": "516df17ee1039f6a1d9c3189de9672c5fa09ffed7294c07b64b8a009f53ab4d3"
+    },
+    {
+      "path": "visual/assets/parametric-search.json",
+      "role": "visualization",
+      "required": false,
+      "language": "neutral",
+      "sha256": "311f7935cc16dd47567c1141dead95b8cadde3dddbba7ca0462e1a1b1053ec28"
+    },
+    {
+      "path": "visual/assets/parametric-search-evidence.json",
+      "role": "evidence",
+      "required": false,
+      "language": "neutral",
+      "sha256": "19440554246279262df3f1b48c2fee4f92a0e3e8136f17dea5acb1cf3134f3eb"
+    },
+    {
+      "path": "assets/figures/parametric-search.svg",
+      "role": "figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "6f345549b3a4371a23f797ce7909e65fdb83f3a847bee19aff1827b988d6984f"
+    },
+    {
+      "path": "assets/figures/parametric-search.en.svg",
+      "role": "figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/figures/parametric-search.svg",
+      "sha256": "0f4f4d3162fe158348f4b8ff43f7d43691edc5f69eb94710632afbb03d6d5b86"
+    },
+    {
+      "path": "visual/assets/human-city-delivery-spine.json",
+      "role": "visualization",
+      "required": false,
+      "language": "neutral",
+      "sha256": "2cf1f7e03dee46d75814ddf3bb255d4951f430b7ecb8d1eb1937592e34b001e8"
+    },
+    {
+      "path": "assets/figures/human-city-delivery-spine.svg",
+      "role": "figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "9a458bc0c84c3d19453d9622556c5af31bfe48447e32ca57a1c605b81fec7b37"
+    },
+    {
+      "path": "assets/figures/human-city-delivery-spine.en.svg",
+      "role": "figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/figures/human-city-delivery-spine.svg",
+      "sha256": "caf5816098163b5f9e78bdc085acb26ea26e365609804cfd95dbd12401992c3f"
     }
   ],
   "validation_claim": {

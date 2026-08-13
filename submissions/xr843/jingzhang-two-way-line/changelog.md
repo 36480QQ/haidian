@@ -1,5 +1,13 @@
 # 方案迭代记录
 
+## v1.1 - 2026-08-10
+
+- 持久化本包在当前 main 提交上的真实四门自检结果（deterministic validation / spatial review / visual packaging / professional evidence 均为 PASS），并写入 `review_status=formal-review-ready` 与 `manifest.validation_claim.readiness_contract=persisted-self-check-v1`。响应 #883 测得的存量缺口与 #807 的 readiness 契约。
+- 证据由 `scripts/self_check_submission.py --mark-self-checked` 实跑生成并回读，内嵌各门原始报告；这是作者侧的可复现回放记录，不是独立背书，provenance 仍以受信 CI 或维护者重跑为准。
+- 保留本包原有的六项包级自检（BOUNDARY_TRUST / KEY_AREAS_TRUST / LAND_USE_TOPOLOGY / METRIC_RECALC / VISUAL_STATIC / BILINGUAL_PAIRING）与四门规范化记录并存，使 `compliance_matrix.json` 的 `self_check_ids` 引用保持完整。
+- 三条 `KEY_AREA_PROVISIONAL` 仍如实保留为 minor、非阻断提示：重点区为推定范围，不是官方红线，也不构成精确面积依据。
+- 未改动几何、指标数值、图纸、正文结论或许可声明；未改动 `submissions-data.js`、`gallery-publication.json`，也未触碰其它投稿包。
+
 ## v1.0 - 2026-08-09
 
 - 初版 formal 概念方案包：「京张对开 THE TWO-WAY LINE」。

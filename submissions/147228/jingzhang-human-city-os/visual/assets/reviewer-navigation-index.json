@@ -1,6 +1,6 @@
 {
   "schema_version": "0.2.0",
-  "package_iteration": "v1.0",
+  "package_iteration": "v1.5",
   "status": "offline_navigation_evidence_only",
   "not_a_score": true,
   "purpose_zh": "把仓库 formal scorecard 的七个工作流问题，以及任务书列出的十三项统一评审维度，分别连接到最短的包内证据路径、复核顺序和仍然不能被本包证明的边界；这是导航索引与路径完整性台账，不是评分器、分数承诺、官方评审结论或实施证明。",
@@ -56,12 +56,16 @@
         "visual/assets/parametric-tradeoff-study.json",
         "visual/assets/run-parametric-tradeoff-study.js",
         "visual/assets/parametric-tradeoff-study-evidence.json",
+        "visual/assets/parametric-search.json",
+        "visual/assets/parametric-search-evidence.json",
+        "visual/assets/build-human-city-v15-assets.js",
+        "visual/assets/check-human-city-v15-assets.js",
         "visual/assets/human-city-receipt.json",
         "visual/assets/run-human-city-receipt.js",
         "visual/assets/spatial-figure-method.json",
         "metrics.json"
       ],
-      "strongest_evidence": "ordinary-person replay, 17 scenario cards, four objective lenses with a non-dominated candidate set, a synthetic six-gate human-city receipt, deterministic runners, spatial method, and metric recalculation chain",
+      "strongest_evidence": "ordinary-person replay, 17 scenario cards, a fixed-seed 128-candidate search across four objective lenses, a synthetic six-gate human-city receipt, deterministic runners, spatial method, and metric recalculation chain",
       "boundary_zh": "本地脚本只做离线结构和负测；不调用外部系统，也不替代专业模型、许可或现场测试。",
       "boundary_en": "Local scripts cover offline structure and negative tests only; they do not call external systems or replace professional models, permits, or field tests."
     },
@@ -182,8 +186,8 @@
       "dimension_id": "planning_innovation",
       "title_zh": "规划创新性",
       "title_en": "Planning innovation",
-      "evidence_paths": ["proposal.md", "visual/assets/human-machine-interface-prototypes.json", "visual/assets/parametric-tradeoff-study.json", "visual/assets/parametric-tradeoff-study-evidence.json", "visual/assets/human-city-receipt.json", "visual/assets/human-city-receipt-evidence.json", "geometry/land_use.geojson"],
-      "evidence_summary_zh": "以人机接口、可逆留白、城市 API、四个目标镜头下的非支配候选、合成人本交接凭证与发布门把空间、产业和治理放在同一可回溯关系中。",
+      "evidence_paths": ["proposal.md", "visual/assets/human-machine-interface-prototypes.json", "visual/assets/parametric-tradeoff-study.json", "visual/assets/parametric-tradeoff-study-evidence.json", "visual/assets/parametric-search.json", "visual/assets/parametric-search-evidence.json", "visual/assets/human-city-receipt.json", "visual/assets/human-city-receipt-evidence.json", "geometry/land_use.geojson"],
+      "evidence_summary_zh": "以人机接口、可逆留白、固定种子搜索的四个代理镜头、合成人本交接凭证与发布门把空间、产业和治理放在同一可回溯关系中。",
       "evidence_summary_en": "Human-machine interfaces, reversible reserve, city APIs, and release gates connect space, industry, and governance in one traceable relationship.",
       "boundary_zh": "概念分区与接口不是法定用地、工程断面或真实系统架构。",
       "boundary_en": "Conceptual partitions and interfaces are not statutory land use, engineering sections, or real system architecture."
