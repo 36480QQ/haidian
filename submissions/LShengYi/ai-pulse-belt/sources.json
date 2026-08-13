@@ -13,7 +13,11 @@
       "public_status": "confirmed-public",
       "citation": "open-city-ai/haidian: brief/site-package/ (design_brief.json, agent_taskbook.json, allowed_design_space.json, ranges/planning_limits.json, schemas/)",
       "usage_note": "Authoritative brief package: scope numbers (43.6 / 11.4 / 368.4 ha), required agents 1-6, allowed design space and planning limits; primary basis for all scope claims.",
-      "risk_note": "Pre-announcement context; the formal tender announcement may adjust scope numbers or requirements."
+      "risk_note": "Pre-announcement context; the formal tender announcement may adjust scope numbers or requirements.",
+      "usable_for_formal": "yes",
+      "prohibited_uses": [
+        "formal evidence in proposal, matrices, and metrics"
+      ]
     },
     {
       "id": "SOURCE-REGISTRY",
@@ -27,7 +31,11 @@
       "public_status": "confirmed-public",
       "citation": "open-city-ai/haidian: data/source_registry.json",
       "usage_note": "Classifies every repository source as formal-ready, background-only, provisional-only, or needs-review; used to respect source-use boundaries in this submission.",
-      "risk_note": "Registry entries may be re-classified as the call progresses; re-checked under P4."
+      "risk_note": "Registry entries may be re-classified as the call progresses; re-checked under P4.",
+      "usable_for_formal": "yes",
+      "prohibited_uses": [
+        "formal evidence for approved official sources"
+      ]
     },
     {
       "id": "PROCESSED-FACT-PACK",
@@ -41,7 +49,13 @@
       "public_status": "confirmed-public",
       "citation": "open-city-ai/haidian: data/processed/agent_fact_pack.md",
       "usage_note": "Navigation layer for scopes, required tasks, source-use boundaries and missing-data checklist; used as pointer, not as a new authority source.",
-      "risk_note": "Derived document; any figures re-verified against primary sources before use."
+      "risk_note": "Derived document; any figures re-verified against primary sources before use.",
+      "usable_for_formal": "background_only",
+      "prohibited_uses": [
+        "official redline",
+        "precise area",
+        "statutory control"
+      ]
     },
     {
       "id": "BOUNDARY-SOURCE",
@@ -55,7 +69,14 @@
       "public_status": "public-draft",
       "citation": "open-city-ai/haidian: geometry/provisional_boundaries.geojson (PROV-SITE-001, PROV-RESEARCH-001, PROV-KEY-SCOPE-001, PROV-KEY-001..003)",
       "usage_note": "All geometry anchors to these provisional constraints; fit deviations disclosed in ASSUME-002; no official boundary attribute claimed.",
-      "risk_note": "Provisional; official boundary release requires re-fit of geometry and recomputation of area metrics (P4)."
+      "risk_note": "Provisional; official boundary release requires re-fit of geometry and recomputation of area metrics (P4).",
+      "usable_for_formal": "provisional_only",
+      "prohibited_uses": [
+        "official redline",
+        "precise area",
+        "statutory control",
+        "site ownership"
+      ]
     },
     {
       "id": "KEY-AREA-SOURCE",
@@ -69,7 +90,13 @@
       "public_status": "external-public",
       "citation": "Publicly announced park and district information used to size the three key areas (Zhongzhiyuan AI acceleration area, Beijing AI Origin community, Dazhongsi AI industry cluster); announced areas 192.1 / 104.3 / 72.0 ha per planning_limits.json",
       "usage_note": "Provides qualitative anchors (functions, positioning, public information) for the three key areas; areas taken from organizer planning_limits.json, geometry measured on provisional scopes.",
-      "risk_note": "Agent-inferred from public data; individual facts re-verified against organizer numbers where available; no private data used."
+      "risk_note": "Agent-inferred from public data; individual facts re-verified against organizer numbers where available; no private data used.",
+      "usable_for_formal": "provisional_only",
+      "prohibited_uses": [
+        "official boundary",
+        "precise key-area extent",
+        "statutory control"
+      ]
     },
     {
       "id": "OFFICIAL-ANNOUNCEMENT",
@@ -83,7 +110,12 @@
       "public_status": "confirmed-public",
       "citation": "https://ghzrzyw.beijing.gov.cn/zhengwuxinxi/tzgg/hd/202605/t20260509_4643047.html (北京市规划和自然资源委员会海淀分局关于百年京张AI创新带城市设计开源征集预公告)",
       "usage_note": "Primary requirement source: 1.5(1) scope framework, 1.5(2) planning indicator system (AI innovation index, talent density, AI output value), 1.5(2) Haidian 1+X+1 industry system, 1.5(3) key-area detailed-design tasks 1)2)3), IP clause 8.1.",
-      "risk_note": "Pre-announcement; formal call text may revise clause numbering or requirements; clause references re-checked under P4."
+      "risk_note": "Pre-announcement; formal call text may revise clause numbering or requirements; clause references re-checked under P4.",
+      "usable_for_formal": "yes",
+      "prohibited_uses": [
+        "quoting out of context",
+        "presenting as settled decision"
+      ]
     },
     {
       "id": "AGENT-TASKBOOK",
@@ -97,7 +129,11 @@
       "public_status": "confirmed-public",
       "citation": "open-city-ai/haidian: brief/site-package/agent_taskbook.json (and references/agent-open-call-taskbook-0518.md)",
       "usage_note": "Defines the six agent roles this submission answers (naming system, AI ecosystem, scenarios, pilgrimage landmarks, cultural narrative, community operations); each chapter carries an agent-response note.",
-      "risk_note": "Taskbook may be updated by organizer; response mapping re-checked under P4."
+      "risk_note": "Taskbook may be updated by organizer; response mapping re-checked under P4.",
+      "usable_for_formal": "yes",
+      "prohibited_uses": [
+        "presenting agent deliverables as official planning conclusions"
+      ]
     },
     {
       "id": "PEER-REFERENCE",
@@ -111,7 +147,12 @@
       "public_status": "external-public",
       "citation": "open-city-ai/haidian merged peer submissions, e.g. PR 1701 人字智带, PR 925 The Living Rail",
       "usage_note": "Compared for structure and depth calibration only; no content copied; distinct concept and geometry retained.",
-      "risk_note": "Peer content not an authority source; used for formatting reference only."
+      "risk_note": "Peer content not an authority source; used for formatting reference only.",
+      "usable_for_formal": "background_only",
+      "prohibited_uses": [
+        "copying peer text or figures",
+        "claiming peer conclusions as our own"
+      ]
     },
     {
       "id": "MNR-LAND-USE-GUIDE",
@@ -125,7 +166,11 @@
       "public_status": "confirmed-public",
       "citation": "自然资源部《国土空间调查、规划、用途管制用地用海分类指南（试行）》自然资发〔2023〕234号",
       "usage_note": "Basis for the 13 land-use classes (0802 research, 05 commerce, 0701 housing, 1207 roads, 1401/1402 green, 16 reserve, etc.) in land_use.geojson.",
-      "risk_note": "Class codes follow the guide's national caliber; local refinement may differ."
+      "risk_note": "Class codes follow the guide's national caliber; local refinement may differ.",
+      "usable_for_formal": "yes",
+      "prohibited_uses": [
+        "misapplying classification codes to non-land contexts"
+      ]
     },
     {
       "id": "GENERATIVE-AI-REGULATION",
@@ -139,7 +184,11 @@
       "public_status": "confirmed-public",
       "citation": "《生成式人工智能服务管理暂行办法》（国家互联网信息办公室等七部门令第15号，2023年7月10日公布，2023年8月15日施行）",
       "usage_note": "Compliance boundary for AI-generated content in scenario cards (e.g., content moderation, algorithm transparency obligations).",
-      "risk_note": "Regulatory landscape evolves; compliance measures updated under P4."
+      "risk_note": "Regulatory landscape evolves; compliance measures updated under P4.",
+      "usable_for_formal": "yes",
+      "prohibited_uses": [
+        "applying beyond its Article-2 scope (public-facing generative AI services)"
+      ]
     },
     {
       "id": "JZ-RAILWAY-CULTURE",
@@ -153,7 +202,12 @@
       "public_status": "external-public",
       "citation": "詹天佑《京张铁路工程纪略》（1915年刊印）及京张铁路历史文化公开材料",
       "usage_note": "Cultural spine of the 'Pulse Belt' concept: 100-year iron pulse transformed into a digital AI pulse; heritage anchors in narrative, landmarks and museum-tour content.",
-      "risk_note": "Historical facts kept at publicly documented level; no proprietary archival material used."
+      "risk_note": "Historical facts kept at publicly documented level; no proprietary archival material used.",
+      "usable_for_formal": "background_only",
+      "prohibited_uses": [
+        "heritage logos or marks in the brand logo",
+        "unauthorized imagery"
+      ]
     },
     {
       "id": "UNMANNED-AIRCRAFT-REGULATIONS",
@@ -167,7 +221,11 @@
       "public_status": "confirmed-public",
       "citation": "《无人驾驶航空器飞行管理暂行条例》（国务院、中央军委令第761号，2024年1月1日施行）",
       "usage_note": "Regulatory basis for the low-altitude delivery route verification scenario (card 06) and UAS demonstration segments.",
-      "risk_note": "Local implementation rules (Beijing measures) also apply; airspace approvals are case-specific."
+      "risk_note": "Local implementation rules (Beijing measures) also apply; airspace approvals are case-specific.",
+      "usable_for_formal": "yes",
+      "prohibited_uses": [
+        "flight operations without airspace approval"
+      ]
     },
     {
       "id": "BEIJING-UAS-MEASURES",
@@ -181,7 +239,11 @@
       "public_status": "confirmed-public",
       "citation": "《北京市无人驾驶航空器管理若干规定》（北京市第十六届人民代表大会常务委员会会议通过，2024年6月1日施行）",
       "usage_note": "Local-layer regulatory basis for UAS scenario cards within Beijing jurisdiction.",
-      "risk_note": "Document number not cited (legislation without formal document number); exact effective text per official gazette."
+      "risk_note": "Document number not cited (legislation without formal document number); exact effective text per official gazette.",
+      "usable_for_formal": "yes",
+      "prohibited_uses": [
+        "flight operations without airspace approval"
+      ]
     },
     {
       "id": "ICV-ROAD-TEST-REGULATIONS",
@@ -195,7 +257,11 @@
       "public_status": "confirmed-public",
       "citation": "《智能网联汽车道路测试与示范应用管理规范（试行）》（工信部联装〔2021〕97号，2021年7月27日印发）",
       "usage_note": "Basis for the vehicle-road-coordination test segment (industry test scenario 1) and autonomous shuttle corridor (card 02).",
-      "risk_note": "Trial rule; Beijing pilot specifics require separate application."
+      "risk_note": "Trial rule; Beijing pilot specifics require separate application.",
+      "usable_for_formal": "yes",
+      "prohibited_uses": [
+        "road testing without filing"
+      ]
     },
     {
       "id": "V2X-CLOUD-INTEGRATION-PILOT",
@@ -209,7 +275,11 @@
       "public_status": "confirmed-public",
       "citation": "工业和信息化部等五部门《关于开展智能网联汽车'车路云一体化'应用试点工作的通知》（工信部联通装〔2024〕118号，2024年7月；试点城市名单以正式发布为准）",
       "usage_note": "Pilot framework referenced by the V2X cloud-integration test segment; links the concept to national pilot conditions without claiming pilot status.",
-      "risk_note": "Document number cited per public reporting; exact number and pilot list per official release."
+      "risk_note": "Document number cited per public reporting; exact number and pilot list per official release.",
+      "usable_for_formal": "yes",
+      "prohibited_uses": [
+        "fabricating pilot participation or approval"
+      ]
     },
     {
       "id": "BARRIER-FREE-DESIGN-CODE",
@@ -223,7 +293,11 @@
       "public_status": "confirmed-public",
       "citation": "《无障碍设计规范》GB 50763-2012",
       "usage_note": "Design basis for barrier-free AI wayfinding (card 08) and public-space accessibility requirements.",
-      "risk_note": "Standards may be revised; check current edition at implementation."
+      "risk_note": "Standards may be revised; check current edition at implementation.",
+      "usable_for_formal": "yes",
+      "prohibited_uses": [
+        "misreading code clauses as statutory obligations for all public spaces"
+      ]
     },
     {
       "id": "BARRIER-FREE-ENVIRONMENT-LAW",
@@ -237,7 +311,11 @@
       "public_status": "confirmed-public",
       "citation": "《中华人民共和国无障碍环境建设法》（2023年6月28日通过，2023年9月1日施行）",
       "usage_note": "Statutory basis for accessibility obligations across scenarios, public space nodes and the health-service navigation node.",
-      "risk_note": "Implementing regulations continue to be published; obligations updated under P4."
+      "risk_note": "Implementing regulations continue to be published; obligations updated under P4.",
+      "usable_for_formal": "yes",
+      "prohibited_uses": [
+        "expanding Article-39 manual-service requirement beyond its listed venues"
+      ]
     },
     {
       "id": "AREA-CROSSCHECK",
@@ -251,7 +329,12 @@
       "public_status": "external-public",
       "citation": "Independent re-measurement of key computed areas on publicly available map data (EPSG:4548) recorded in changelog and metrics assumptions",
       "usage_note": "Documents that key areas (site 11.4128 km2, key areas 369.3 ha) were independently re-measured, not accepted from a single computation run.",
-      "risk_note": "Third-party map data are approximate; organizer official figures supersede."
+      "risk_note": "Third-party map data are approximate; organizer official figures supersede.",
+      "usable_for_formal": "provisional_only",
+      "prohibited_uses": [
+        "official area",
+        "statutory control"
+      ]
     }
   ]
 }
