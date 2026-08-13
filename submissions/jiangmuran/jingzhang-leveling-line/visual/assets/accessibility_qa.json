@@ -125,6 +125,12 @@
    "pass": true
   },
   {
+   "sheet": "svg/phasing",
+   "min_font_units": 10.0,
+   "min_height_mm_at_A0": 5.26,
+   "pass": true
+  },
+  {
    "sheet": "svg/region-interface",
    "min_font_units": 9.5,
    "min_height_mm_at_A0": 4.99,
@@ -221,6 +227,12 @@
    "pass": true
   },
   {
+   "sheet": "svg.en/phasing",
+   "min_font_units": 10.0,
+   "min_height_mm_at_A0": 5.26,
+   "pass": true
+  },
+  {
    "sheet": "svg.en/region-interface",
    "min_font_units": 9.5,
    "min_height_mm_at_A0": 4.99,
@@ -253,21 +265,21 @@
  ],
  "offline_html": {
   "visual/index.html": {
-   "images": 15,
+   "images": 16,
    "images_without_alt": 0,
    "has_lang": true,
    "heading_level_jumps": 0,
-   "figcaptions": 16,
+   "figcaptions": 17,
    "interactive_elements_needing_focus": 0,
    "has_dark_mode": true,
    "inline_script_tags": 0
   },
   "visual/index.en.html": {
-   "images": 15,
+   "images": 16,
    "images_without_alt": 0,
    "has_lang": true,
    "heading_level_jumps": 0,
-   "figcaptions": 16,
+   "figcaptions": 17,
    "interactive_elements_needing_focus": 0,
    "has_dark_mode": true,
    "inline_script_tags": 0
@@ -276,13 +288,13 @@
  "asset_references": [
   {
    "file": "visual/index.html",
-   "references": 15,
+   "references": 16,
    "missing": [],
    "remote": []
   },
   {
    "file": "visual/index.en.html",
-   "references": 15,
+   "references": 16,
    "missing": [],
    "remote": []
   },
