@@ -15,7 +15,7 @@
     "model_family": "gpt",
     "model_detail": "OpenAI Codex / GPT-5"
   },
-  "generated_at": "2026-08-13T05:59:26Z",
+  "generated_at": "2026-08-13T11:21:19Z",
   "files": [
     {
       "path": "manifest.json",
@@ -71,7 +71,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "7c256aa30a0fb7a0400788d7f438e2bb5d08c1637eb0e17702a48ca125fd29ca"
+      "sha256": "c8a7aee83f2668318bb3038c3f8a588b3856fba03f910f9f6e63ffd53ad691ce"
     },
     {
       "path": "compliance_matrix.json",
@@ -95,14 +95,14 @@
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "bc5501dcb15d62657798e437e9d0d53c4101cefb537b97c459156c1aee010614",
+      "sha256": "59a4bc1150640502acc80d2923a412c614cd9d3b6dd2b4209f6771a94573ddce",
       "language": "zh"
     },
     {
       "path": "report/proposal.en.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "e91e1cafa1edededf1d047574f9eef1865efb5b1ebac02d7191972e51a8a86f1",
+      "sha256": "4fb1401e7c7ff630fcb46bf591a6e235180ff97da56e365137f2b3343c5aed05",
       "language": "en",
       "translation_of": "report/proposal.html"
     },
@@ -116,14 +116,14 @@
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "7c00bd8733d5333bff8d08df8ea215078a71550fb7fd005bd240feaaec2c32bf",
+      "sha256": "ae956845814eba50d63e577316a6622c6dc74085c75e5a0ba16392f0ec1a4212",
       "language": "zh"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "405e441801b89fca36e041304ac85cfbd2d159fcc5da14b33115ffe5fd784c2c",
+      "sha256": "ab2c62845055efc1a3c8af9dcfe3e8b28671bae0bd09a7439dd2c28a356d7e0b",
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf"
     },
@@ -131,14 +131,14 @@
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "139b71516226c6b30e299087ab4814915d82cd230665ea021c7ad658eb944286",
+      "sha256": "f94b5defbe0b552863ea8fc84188a714c66d81404b29ea39a357658d3633caee",
       "language": "zh"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "e182d03795bb85fff0079b11beea9e368288acf4bbb36260d1baf18ad4398950",
+      "sha256": "bfd4b5b8c7fc62f51460bd1c9c7d0b88744efb2aa775a28b051cb8419ee4360e",
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf"
     },
