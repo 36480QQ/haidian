@@ -12,7 +12,7 @@
     "agent_name": "TraeWork Agent",
     "model": "TraeWork"
   },
-  "generated_at": "2026-08-12T18:00:00+08:00",
+  "generated_at": "2026-08-13T10:00:00+08:00",
   "files": [
     {
       "path": "manifest.json",
@@ -59,19 +59,19 @@
       "path": "standard_matrix.json",
       "role": "standard_matrix",
       "required": true,
-      "sha256": "59c8cd1d5a1b6983049ddd475f5be0ecbfaf9e39defde995d37c7d6739d0c74c"
+      "sha256": "c0919fdf326d216d55e5bc116f728c4f3f73a00c1aa0923d7f357c9de42896a0"
     },
     {
       "path": "design_depth_matrix.json",
       "role": "design_depth_matrix",
       "required": true,
-      "sha256": "2e3be279357b9ec5a931c9fb18edaa33166bffeefd0c855289ec32ca78d650cc"
+      "sha256": "d121a643973162437ca81faa796823b990dec50dbc8b191684170b8f0226dd74"
     },
     {
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "24499cad26ba547ffad8516669f3837b21c73f1b5ef415b97fe91a8afb5336f6",
+      "sha256": "e87a76cd8cc1ada6b327386999c683e58869911c748f7b3a0533cf53b43fcc0a",
       "language": "zh"
     },
     {

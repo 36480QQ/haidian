@@ -39,7 +39,7 @@
         "key_area_count"
       ],
       "source_ids": [
-        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT"
+        "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
       ]
     },
     {
@@ -79,7 +79,7 @@
         "ai_landmark_count"
       ],
       "source_ids": [
-        "SRC-AGENT-TASKBOOK"
+        "DATA-SRC-AGENT-TASKBOOK-20260518"
       ]
     },
     {
@@ -120,7 +120,7 @@
         "building_footprint_area_sqm"
       ],
       "source_ids": [
-        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT"
+        "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
       ]
     },
     {
@@ -162,8 +162,8 @@
         "public_space_ratio"
       ],
       "source_ids": [
-        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
-        "SRC-HAIDIAN-1X1"
+        "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
+        "DATA-SRC-HAIDIAN-1X1-BASEMAP"
       ]
     },
     {
@@ -201,8 +201,8 @@
         "green_ratio"
       ],
       "source_ids": [
-        "SRC-HAIDIAN-1X1",
-        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT"
+        "DATA-SRC-HAIDIAN-1X1-BASEMAP",
+        "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
       ]
     }
   ]

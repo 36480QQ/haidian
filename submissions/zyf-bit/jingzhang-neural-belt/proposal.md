@@ -222,7 +222,7 @@ iteration: "v1.0"
 
 ### AI场景卡（不少于10张）
 
-本方案设计12张AI场景卡，覆盖交通、医疗、教育、法律、生活服务、安防、环境、能源、公共空间和企业服务等领域。每张场景卡映射到具体空间位置、服务对象、运行数据、隐私边界和运营主体 `[data:geometry/scenario_node.geojson]`。
+本方案设计12张AI场景卡，覆盖交通、医疗、教育、法律、生活服务、安防、环境、能源、公共空间和企业服务等领域。每张场景卡映射到具体空间位置、服务对象、运行数据、隐私边界和运营主体 `[data:geometry/key_areas.geojson]`。
 
 **1. AI+交通信号优化** `[SN-001]`
 - 空间位置：众智园北侧清河南路与北五环辅路交叉口
@@ -524,15 +524,16 @@ iteration: "v1.0"
 | 场地总面积 | 12,144,892 | sqm | geometry/site_boundary.geojson | polygon_area(provisional_boundary) | medium |
 | 绿地率 | 0.165216 | ratio | geometry/green_space.geojson | green_area / site_area | medium |
 | 公共空间率 | 0.124467 | ratio | geometry/public_space.geojson | public_area / site_area | medium |
-| 建筑基底面积 | 2,280,000 | sqm | geometry/buildings.geojson | sum(building_footprints) | low |
+| 建筑基底面积 | unknown | sqm | geometry/buildings.geojson | sum(building_footprints) | unknown |
 | 容积率 | unknown | ratio | - | total_floor_area / site_area | unknown |
 | 重点区域数量 | 3 | count | geometry/key_areas.geojson | count(key_areas) | high |
-| AI场景节点 | 12 | count | geometry/scenario_node.geojson | count(scenario_nodes) | high |
+| AI场景节点 | 12 | count | proposal.md | count(scenario_nodes) | high |
 | 用户画像 | 6 | count | proposal.md | count(personas) | high |
 | AI朝圣地标 | 3 | count | geometry/public_space.geojson | count(landmarks) | high |
 | 全球案例 | 7 | count | proposal.md | count(case_studies) | high |
 
 容积率标记为unknown，因为正式控规容积率控制未发布 `[assumption:ASM-003]` `[metric:floor_area_ratio]`。
+建筑基底面积标记为unknown，场地边界为临时粗略范围，建筑基底面积需待正式边界确认后复算。
 
 ### 面积复算
 
