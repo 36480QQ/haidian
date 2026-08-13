@@ -23,7 +23,7 @@ As official precise polygon/CAD/GIS boundaries have not been made publicly avail
 
 This proposal follows the "Green Veins, Smart Core" theme, focusing on deep integration between blue-green infrastructure, smart city systems, and the AI innovation ecosystem. All spatial implementation suggestions are conceptual proposals, reference schemes, or material for professional teams to deepen — they do not substitute formal planning nor constitute approved government conclusions.
 
-![Jing-Zhang AI Innovation Belt Master Plan Overview: 11.4 km² design area, One Belt-Three Cores-Two Wings spatial structure, and blue-green smart urban framework](assets/figures/site-overview.png)
+![Jing-Zhang AI Innovation Belt Master Plan Overview: 11.4 km² design area, One Belt-Three Cores-Two Wings spatial structure, and blue-green smart urban framework](assets/figures/site-overview.en.png)
 
 ## Three-Level Scope Framework
 
@@ -48,7 +48,7 @@ At this level, the proposal puts forward five core blue-green-smart metrics: gre
 
 The three key areas each focus on distinct AI functions and blue-green strategies [data:geometry/key_areas.geojson#PROV-KEY-001] [data:geometry/key_areas.geojson#PROV-KEY-002] [data:geometry/key_areas.geojson#PROV-KEY-003], reaching the urban design depth of planning implementation schemes. Detailed design for each key area appears in Chapter 5.
 
-![Three-level scope framework with six functional zones: 43.6 km² coordinated research area, 11.4 km² overall design area, and spatial layout of six major land use categories](assets/figures/land-use-structure.png)
+![Three-level scope framework with six functional zones: 43.6 km² coordinated research area, 11.4 km² overall design area, and spatial layout of six major land use categories](assets/figures/land-use-structure.en.png)
 
 ## Coordinated Research Area: Industry and Future City Strategy
 
@@ -104,6 +104,8 @@ The synergy among three areas and two wings is not a simple functional zoning ex
 
 ## Overall Design Area: Urban Renewal at Regulatory-Plan Urban Design Depth
 
+> **Section disclaimer**: The following land-use allocation, development intensity, building scale, setbacks, blue/green/road redline controls, municipal energy facilities, renewal ratios, and transport widths are **conceptual design recommendations** based on provisional boundaries and publicly available information. They do not constitute statutory planning conditions or engineering conclusions. Final indicators must be subject to official regulatory conditions, accurate site surveys, professional modeling, and approvals by the competent authorities.
+
 ### Spatial Structure and Functional Zoning
 
 Within the approximately 11.4 km² overall design area, the proposal establishes a spatial structure of "green veins stringing pearls, blue networks weaving the city" [depth:land_use_layout] [data:geometry/land_use.geojson]:
@@ -124,7 +126,7 @@ Within the approximately 11.4 km² overall design area, the proposal establishes
 - **Mixed-use priority**: AI Core Innovation Zone adopts M0 innovative industrial mixed-use — ground floors open for public functions and AI scenario experience, middle floors for R&D and offices, upper floors for talent housing
 - **TOD-oriented development**: Around stations on Lines 13, 4, 10, and the Jing-Zhang HSR Qinghe Station, high-density mixed-use development within a 500 m radius, with 100% public access on ground floors of station-adjacent buildings
 - **Green vein setback**: First-row buildings on both sides of the Jing-Zhang Heritage Park shall maintain a minimum 20 m setback, forming a three-level transition of "green vein — tree-lined boulevard — building forecourt," with building heights stepping down toward the green vein
-- **Blue-line control**: Within 50 m of the Qinghe and Xiaoyuehe blue lines, land use is restricted to green space and low-intensity public service facilities only
+- **Blue-line control (conceptual recommendation)**: Within the blue-line control zone of Qinghe and Xiaoyuehe, land use is recommended to prioritize green space and low-intensity public service facilities. The exact blue-line distance, control width, and requirements must be confirmed against the officially approved river blue-line plan.
 
 ### Urban Renewal Framework
 
@@ -150,7 +152,7 @@ Within the approximately 11.4 km² overall design area, the proposal establishes
 
 - Distributed edge computing nodes pre-embedded along the green vein (one per 500 m), providing localized computing support for real-time AI scenario inference
 - Streetlight poles upgraded to smart integrated poles incorporating 5G micro-base stations, environmental sensors, edge computing units, smart lighting, and information displays
-- District energy stations deployed using ground-source heat pumps + rooftop PV + off-peak electricity storage for clean energy supply, targeting renewable energy penetration ≥20%
+- Conceptual district energy stations using ground-source heat pumps + rooftop PV + off-peak electricity storage for clean energy supply, targeting renewable energy penetration ≥20%; station locations, technology selection, geological conditions, and environmental impact require dedicated energy planning and approval
 
 ### Blue-Green Public Space System
 
@@ -182,7 +184,7 @@ Within the approximately 11.4 km² overall design area, the proposal establishes
 **Blue-Green Strategy**:
 - Qinghe River (northern boundary) ecological restoration: converting hard embankments to natural gently sloping wetlands, adding 30% more waterfront public space
 - L-shaped blue-green ventilation corridor along the Qinghe and Jing-Zhang green vein, channeling summer southeast breezes into the area
-- New buildings must meet near-zero energy standards, with Qinghe River surface water source heat pumps providing district heating and cooling
+- New buildings are recommended to target near-zero energy standards; the feasibility of using Qinghe River surface water as a heat source for district heating and cooling should be studied and requires water-resource, environmental, and hydrological review and approval
 
 **AI Scenarios**: Distributed computing center facades as city-scale real-time data visualization screens; AI water quality monitoring and aquatic ecosystem digital twin in Qinghe wetlands; "transparent factory" visiting corridor through the shared pilot platform.
 
@@ -220,7 +222,7 @@ Within the approximately 11.4 km² overall design area, the proposal establishes
 
 **AI Scenarios**: 24-hour unmanned retail and AI shopping guide experience in AI MALL; human-machine co-creation exhibitions in AI Art Gallery; Dazhongsi AR historical tour — viewing the century-old bell anew through AI "eyes."
 
-![Three key areas spatial index: Zhongzhiyuan AI Acceleration Area (192.1 ha), Beijing AI Origin Community (104.3 ha), and Dazhongsi AI Industry Cluster (72.0 ha) with locations and boundaries](assets/figures/key-areas.png)
+![Three key areas spatial index: Zhongzhiyuan AI Acceleration Area (192.1 ha), Beijing AI Origin Community (104.3 ha), and Dazhongsi AI Industry Cluster (72.0 ha) with locations and boundaries](assets/figures/key-areas.en.png)
 
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
@@ -283,9 +285,9 @@ All AI scenarios follow four principles: "minimum necessary data, edge-first pro
 | Water Bodies (E) | 30 | 2.6% | Qinghe + Xiaoyuehe |
 | Municipal Facilities (U) | 20 | 1.8% | Including district energy stations |
 
-Total building floor area is controlled at 12–14 million m² (gross FAR approximately 1.1–1.2), comprising approximately 5.5 million m² of R&D industrial, 2.0 million m² of commercial and business, 4.0 million m² of residential, and 0.6 million m² of public service [metric:total_gfa].
+Total building floor area is conceptually recommended at 12–14 million m² (gross FAR approximately 1.1–1.2, for capacity illustration only), comprising approximately 5.5 million m² of R&D industrial, 2.0 million m² of commercial and business, 4.0 million m² of residential, and 0.6 million m² of public service [metric:total_gfa].
 
-**Important**: The above land use classification and building scale are conceptual proposals based on provisional boundaries. In the absence of official regulatory-plan conditions and precise current-condition data, these figures serve only as directional suggestions. Formal planning must rely on official regulatory-plan conditions for precise calculation.
+**Important**: The above land-use classification, area ratios, and building scale are conceptual proposals based on provisional boundaries. In the absence of official regulatory-plan conditions, land ownership data, and precise current-condition data, these figures serve only as directional suggestions. Formal planning must rely on official regulatory-plan conditions, building surveys, and approval procedures for precise calculation and cannot be used directly as an approval basis.
 
 ### Renewal Strategy and Green Transition
 
@@ -300,11 +302,11 @@ See the Chinese proposal for detailed transport strategies, infrastructure plann
 - "Three-horizontal, three-vertical" external transport framework with densified internal road networks
 - "Smart Slow Lane" with independent right-of-way along the green vein
 - TOD-oriented development around five rail stations
-- District energy stations with ground-source heat pumps, rooftop PV, and off-peak storage
+- Conceptual district energy stations with ground-source heat pumps, rooftop PV, and off-peak storage; locations, technology, and capacity require dedicated energy planning and approval
 - Sponge city target: 85% annual runoff capture rate
 - 15-minute community living circle for public services
 
-![Transportation slow-mobility network and blue-green infrastructure composite overlay: showing spatial coupling between Jing-Zhang Green Vein slow-mobility corridor, rail transit station TOD coverage, and Qinghe-Xiaoyuehe blue-green network](assets/figures/mobility-bluegreen.png)
+![Transportation slow-mobility network and blue-green infrastructure composite overlay: showing spatial coupling between Jing-Zhang Green Vein slow-mobility corridor, rail transit station TOD coverage, and Qinghe-Xiaoyuehe blue-green network](assets/figures/mobility-bluegreen.en.png)
 
 ## Blue-Green Space, Public Space, and Urban Character
 
@@ -433,7 +435,7 @@ This proposal completes the following matrix files to ensure structured evidence
 - `standard_matrix.json`: Responds to all mandatory professional standards
 - `design_depth_matrix.json`: All required design depth items are in `complete` status
 
-![Core metrics visualization evidence chart: key indicator targets and evidence chains across five dimensions — ecology, transportation, industry, society, and operations](assets/figures/metrics-evidence.png)
+![Core metrics visualization evidence chart: key indicator targets and evidence chains across five dimensions — ecology, transportation, industry, society, and operations](assets/figures/metrics-evidence.en.png)
 
 ## Risk, Copyright, and Compliance Statements
 

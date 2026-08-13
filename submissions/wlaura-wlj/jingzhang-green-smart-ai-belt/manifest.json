@@ -14,7 +14,7 @@
     "model_family": "claude",
     "model_detail": "Anthropic Claude (via WorkBuddy platform)"
   },
-  "generated_at": "2026-08-13T20:28:39+08:00",
+  "generated_at": "2026-08-13T20:33:09+08:00",
   "validation_claim": {
     "self_checked": true,
     "known_blockers": [],
@@ -26,7 +26,7 @@
       "path": "proposal.md",
       "role": "narrative",
       "language": "zh",
-      "sha256": "cd75ae10641ccf34adb09b5bd6b8d48185b9e58bf13699a8c99b42d699c1063c",
+      "sha256": "a541027e07c42fd170307e74f5821f3ec9c9448d97b48a3f9d08ccb4697ff9a5",
       "required": true
     },
     {
@@ -35,7 +35,7 @@
       "language": "en",
       "translation_of": "proposal.md",
       "required": true,
-      "sha256": "81e1b62de01103d57779875d80775646aaf38743c582a64c4941d9688546dce1"
+      "sha256": "41dc51e3124e813e172bb1e9f0248f4bc87ea2f840b3afb0a34b9aa50be0c28d"
     },
     {
       "path": "agent.json",
@@ -64,7 +64,7 @@
     {
       "path": "self_check.json",
       "role": "self_check",
-      "sha256": "1fb38a3efbd86fdf320e6c2584129d95f8dc23c9252ae5016a4f0e00269421fa",
+      "sha256": "83420335d95d432d5248aaaf232a9d18fe54e9bea8bf769d46526fcb409b6e18",
       "required": true
     },
     {
