@@ -1,0 +1,149 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": "official-announcement",
+      "title": "百年京张AI创新带城市设计国际方案征集资格预审公告",
+      "type": "brief",
+      "path": "brief/site-package/standards/references/",
+      "publisher": "北京市规划和自然资源委员会海淀分局",
+      "published_at": "2026-05",
+      "public_status": "public",
+      "citation": "公告原文（维护者登记于 site-package，编号 PROJECT-OFFICIAL-ANNOUNCEMENT）",
+      "usage_note": "本方案第一权威依据；公告1.3/1.4/1.5任务逐条映射至 compliance_matrix。",
+      "risk_note": "公告未提供精确红线，仅用于任务响应与概念设计，不得据以得出法定边界结论。"
+    },
+    {
+      "id": "agent-taskbook",
+      "title": "面向全球智能体开展百年京张AI创新带城市设计开源征集任务书摘录",
+      "type": "brief",
+      "path": "brief/site-package/agent_taskbook.json",
+      "publisher": "open-city-ai/haidian 维护者（用户提供清权摘要）",
+      "published_at": "2026-05-18",
+      "public_status": "user_provided_cleared_summary",
+      "citation": "agent_taskbook.json（source_id SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK）",
+      "usage_note": "agent.1-agent.6 六项智能体任务与三大定位/五大功能/三区两翼的权威来源。",
+      "risk_note": "摘录性文本，正式设计控制仍以官方公告与正式附件为准。"
+    },
+    {
+      "id": "provisional-boundaries",
+      "title": "京张AI创新带临时粗略边界（provisional_boundaries.geojson）",
+      "type": "boundary",
+      "path": "brief/site-package/geometry/provisional_boundaries.geojson",
+      "publisher": "open-city-ai/haidian 维护者",
+      "published_at": "2026-06-05",
+      "public_status": "provisional",
+      "citation": "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+      "usage_note": "仅用于 AI agent 生成、展示与临时自检；全部图层标 geometry_role=provisional_constraint、official_boundary=false。",
+      "risk_note": "不得作为 official redline、审批依据或精确面积复算依据；官方多边形发布后须全量重算。"
+    },
+    {
+      "id": "site-package-registry",
+      "title": "公开资料用途登记（data/source_registry.json）",
+      "type": "brief",
+      "path": "data/source_registry.json",
+      "publisher": "open-city-ai/haidian 维护者",
+      "published_at": "2026-06",
+      "public_status": "public",
+      "citation": "仓库 data/source_registry.json",
+      "usage_note": "formal 可用/背景/临时三类资料的用途边界导航；本方案结论只用 usable_for_formal=yes 来源。",
+      "risk_note": "background_only 与 provisional_only 资料不得升级为正式证据。"
+    },
+    {
+      "id": "beijing-advanced-ad-zone",
+      "title": "北京市高级别自动驾驶示范区（政策先行区）设立与扩区情况",
+      "type": "policy",
+      "url": "https://www.beijing.gov.cn/",
+      "publisher": "北京市人民政府、北京市经济和信息化局",
+      "published_at": "2020-09",
+      "public_status": "public",
+      "citation": "北京市政府 2020 年 9 月决定设立北京市高级别自动驾驶示范区（经开区为核心区，后续扩至海淀等区）",
+      "usage_note": "作为低速无人配送政策环境与路权实践的背景依据；不构成对本方案任何审批承诺。",
+      "risk_note": "政策细节随试点演进更新，引用时以官方最新发布为准。"
+    },
+    {
+      "id": "meituan-auto-delivery-car",
+      "title": "美团自动配送车在北京公开道路测试与运营试点情况",
+      "type": "industry",
+      "url": "https://www.meituan.com/news",
+      "publisher": "美团（企业公开报道）",
+      "published_at": "2021-02",
+      "public_status": "public",
+      "citation": "美团自动配送车获准在北京公开道路测试并开展生鲜/药品配送试点（企业公开信息，2021 年前后）",
+      "usage_note": "全球案例证据之一（background_only），说明低速配送在北京的现实运营基础；非设计承诺。",
+      "risk_note": "企业宣传性来源，规模与运营数据未经第三方审计；仅作背景案例引用。"
+    },
+    {
+      "id": "neolix-low-speed-av",
+      "title": "新石器（Neolix）低速无人车在北京经济技术开发区运营",
+      "type": "industry",
+      "url": "https://www.neolix.cn/",
+      "publisher": "新石器慧通（北京）科技有限公司",
+      "published_at": "2021-06",
+      "public_status": "public",
+      "citation": "新石器在亦庄等区域开展低速无人零售与配送运营（企业公开信息）",
+      "usage_note": "全球案例证据（background_only）；佐证低速机器人商业化闭环的存在。",
+      "risk_note": "企业来源，里程与单量数据需以运营备案与第三方核验为准。"
+    },
+    {
+      "id": "jd-smart-delivery-vehicle",
+      "title": "京东物流智能快递车常态化运营情况",
+      "type": "industry",
+      "url": "https://www.jd.com/",
+      "publisher": "京东物流（企业公开报道）",
+      "published_at": "2021-06",
+      "public_status": "public",
+      "citation": "京东物流智能快递车在常熟等地常态化运营并逐步扩至北京部分区域（企业公开信息）",
+      "usage_note": "全球案例证据（background_only）；支撑'末端配送可自动化'的可行性判断。",
+      "risk_note": "企业来源，覆盖城市与单量为近似信息，仅作背景。"
+    },
+    {
+      "id": "starship-technologies",
+      "title": "Starship Technologies 低速配送机器人全球运营",
+      "type": "industry",
+      "url": "https://www.starship.xyz/",
+      "publisher": "Starship Technologies",
+      "published_at": "2021-01",
+      "public_status": "public",
+      "citation": "Starship 在大学城与郊区社区运营小型轮式配送机器人，累计交付超百万单（企业公开数据）",
+      "usage_note": "全球案例证据（background_only）；国际对照证明人行道级低速机器人规模化可行。",
+      "risk_note": "海外运营环境与中国路权规则不同，直接类比有限；仅作方法对照。"
+    },
+    {
+      "id": "serve-robotics-la",
+      "title": "Serve Robotics 洛杉矶人行道配送机器人运营",
+      "type": "industry",
+      "url": "https://www.serverobotics.com/",
+      "publisher": "Serve Robotics",
+      "published_at": "2022-04",
+      "public_status": "public",
+      "citation": "Serve Robotics 在洛杉矶开展人行道级无人配送并在部分街区商业化运营（企业公开信息）",
+      "usage_note": "全球案例证据（background_only）；补充美国西海岸城市街道环境案例。",
+      "risk_note": "企业来源；城市尺度与法规环境差异大，仅作对照参考。"
+    },
+    {
+      "id": "barrier-free-environment-law",
+      "title": "中华人民共和国无障碍环境建设法",
+      "type": "policy",
+      "url": "https://www.gov.cn/",
+      "publisher": "全国人民代表大会常务委员会",
+      "published_at": "2023-06-28",
+      "public_status": "public",
+      "citation": "无障碍环境建设法（2023年6月28日通过，2023年9月1日施行）第39条等",
+      "usage_note": "共行车道与驿站的无障碍设计原则依据；公共利益与包容性章节的核心标准。",
+      "risk_note": "法条引用为公开文本；具体设施是否符合须由专业无障碍评估确认。"
+    },
+    {
+      "id": "generative-ai-interim-measures",
+      "title": "生成式人工智能服务管理暂行办法",
+      "type": "policy",
+      "url": "https://www.cac.gov.cn/",
+      "publisher": "国家互联网信息办公室等七部门",
+      "published_at": "2023-07-10",
+      "public_status": "public",
+      "citation": "生成式人工智能服务管理暂行办法（2023年8月15日施行）",
+      "usage_note": "机器人调度与AI交互服务的合规框架依据（算法备案、内容标识、人类复核、投诉渠道）。",
+      "risk_note": "法规解释以官方发布与主管部门口径为准。"
+    }
+  ]
+}
