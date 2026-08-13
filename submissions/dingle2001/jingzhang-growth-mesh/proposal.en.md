@@ -74,7 +74,7 @@ The current submission records **known, unknown and proposed** separately. Geome
 | Feasibility 20% | 7D check, 15 contracts, WP0-6, 90-day pilot and funding accounts | Project cards + mainline + funding matrix |
 | Public interest 10% | Anonymous passage, accessibility, affordability, family support and tech opt-out | Public gates + resident scenarios |
 | Risk and compliance 10% | Provisional limits, sign-off, stop rules, rights clearance and no invented score | Assumption/compliance matrices + stop conditions |
-| Expression completeness 15% | Bilingual report, 84-page evidence-led A3, A0, HTML, GeoJSON and shared metrics | Manifest + bilingual contract + self-check |
+| Expression completeness 15% | Bilingual report, 54-page evidence-led A3, A0, HTML, GeoJSON and shared metrics | Manifest + bilingual contract + self-check |
 
 This matrix is a reading guide, not a self-awarded score. Formal review remains external.[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]
 
@@ -872,9 +872,16 @@ The machine-readable result is `visual/assets/project_library_rehearsal.json`. I
 | Feasibility 20% | 7D check, 15 contracts, WP0-6, 90-day pilot and funding accounts | Project cards + mainline + funding matrix |
 | Public interest 10% | Anonymous passage, accessibility, affordability, family support and tech opt-out | Public gates + resident scenarios |
 | Risk and compliance 10% | Provisional limits, sign-off, stop rules, rights clearance and no invented score | Assumption/compliance matrices + stop conditions |
-| Expression completeness 15% | Bilingual report, 84-page evidence-led A3, A0, HTML, GeoJSON and shared metrics | Manifest + bilingual contract + self-check |
+| Expression completeness 15% | Bilingual report, 54-page evidence-led A3, A0, HTML, GeoJSON and shared metrics | Manifest + bilingual contract + self-check |
 
 Every claimed mechanism points to a document, figure, owner, limit and acceptance state; field results remain zero until actual operation.
+
+
+### Reproducible proofing and rights surface
+
+The machine-readable record `visual/assets/qa-proofing-record.json` checks all **124 PDF pages** across the four bilingual A0/A3 files for text blocks outside the page box, inventories every embedded font, compares bilingual page/kind/image sequences, checks all four HTML entries for remote active dependencies and missing image alternative text, and records contrast ratios for the core palette. The release condition is zero out-of-page text blocks, zero non-OFL embedded fonts, zero missing image alternatives and zero remote active dependencies. This is the contributor's repeatable self-check—not accessibility certification, legal clearance, engineering sign-off or assistive-technology user testing.
+
+The rights ledger groups authored text/methods, official/public sources, provisional geometry, code-generated drawings, AI concept views, brand/basic geometry, fonts and finished layouts. Noto Sans SC subsets in the PDFs use the SIL Open Font License; no standalone font files are shipped. AI views remain removable experience images, while plans, sections, GeoJSON and contracts preserve the core evidence chain.[source:RIGHTS-NOTO-OFL]
 
 
 ## Metrics, Area Recalculation, and Compliance Matrix
