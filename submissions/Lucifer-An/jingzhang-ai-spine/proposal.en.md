@@ -36,7 +36,23 @@ The provisional boundary is shown as a faint dashed constraint, emphasizing desi
 
 ## Coordinated Research Area: Industry and Future City Research
 
-At the 43.6 km² coordinated level, the proposal connects innovation synergy with the **North Latitude Community, Future Science City, Huairou Science City, E-Town, and the Beijing-Tianjin-Hebei** region, proposing a "space–industry" integration framework: the Jing-Zhang AI Spine as the innovation main axis, linking Zhongguancun Science City's incumbent innovation resources with Haidian's "1+X+1" industry system [source:SRC-2026-HAIDIAN-1X1]. This level is strategic background only and does not make statutory-planning judgments [depth:DD-01].
+At the 43.6 km² coordinated level, the proposal connects innovation synergy with the **North Latitude Community, Future Science City, Huairou Science City, E-Town, and the Beijing-Tianjin-Hebei** region, proposing a "space–industry" integration framework: the Jing-Zhang AI Spine as the innovation main axis, linking Zhongguancun Science City's incumbent innovation resources with Haidian's "1+X+1" industry system [source:SRC-2026-HAIDIAN-1X1]. This level focuses on the spatial carrying capacity of the regional innovation network and industrial spillover, identifying corridor opportunities where the Jing-Zhang AI Spine connects northward to Future Science City and southward to E-Town, forming a regional "R&D — pilot — scenario — governance" loop [depth:DD-01]. This level is strategic background only and does not make statutory-planning judgments; related areas and boundaries are recalculated from provisional geometry pending official regional-planning verification [assumption:A-GEO-001] [data:geometry/site_boundary.geojson#SITE-001].
+
+### Regional Synergy Nodes and Flows
+
+With the Jing-Zhang AI Spine as the innovation main axis, the belt connects northward to Future Science City and southward to E-Town, and radiates to Huairou Science City, Zhongguancun Science City, the Beijing-Tianjin-Hebei region, and the North Latitude Community, forming a regional "R&D — pilot — scenario — governance" loop [depth:DD-01] [source:SRC-2026-BJ-KW-THREE-AREAS-WINGS]. Node–flow relations are as follows:
+
+![regional-synergy](../assets/figures/regional-synergy.en.png)
+
+| Regional node | Relation to the Spine | Synergy content | Flow label |
+| --- | --- | --- | --- |
+| Future Science City (north) | R&D origination | Basic research and big-science facility spillover | Basic → R&D |
+| Huairou Science City | Basic-research supply | Big-science facilities and compute synergy | Basic → R&D |
+| Zhongguancun Science City | Incumbent innovation hub | Factor allocation and sci-tech service wing | Service wing |
+| E-Town (south) | Scenario conversion | Pilot — scenario — industrial landing | Scenario / conversion |
+| Beijing-Tianjin-Hebei | Regional synergy | Industrial-chain and talent coordination | Regional synergy |
+| North Latitude Community | Future city | Future-city testbed scenarios | Factor return |
+| Three key areas | Spine main-axis nodes | R&D — pilot — scenario — governance loop | Main-axis loop |
 
 ## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
 
@@ -78,7 +94,7 @@ The three key areas are differentially positioned, each with concept-level detai
 
 ### AI+ Scenario Empowerment Paradigm and Intelligent AI Vibrant City (agent.3)
 
-**Twelve AI scenario cards** (illustrative): ① AI heritage-park guide ② accessibility companion ③ community AI canteen ④ compute reservation ⑤ developer驿站 ⑥ AI red-team drill ⑦ AI cultural curation ⑧ walking navigation ⑨ night economy ⑩ energy & waste sorting ⑪ emergency linkage ⑫ multilingual service. Each scenario specifies users, technology, spatial anchor, and operator [depth:DD-10].
+**Twelve AI scenario cards**, full version in the section *Twelve AI Scenario Cards (Full)* below [depth:DD-10]; each specifies users, technology, spatial anchor, operator, and a quantifiable value metric.
 
 **Three industry test/validation scenarios**: ① low-speed autonomous shuttle / AD test track ② AI medical-imaging & health validation center ③ service-robot inspection test field. Test scenarios are explicitly "test/validation," not approved operations [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
 
@@ -91,6 +107,29 @@ The Jing-Zhang Heritage Park acts as a north–south vitality belt, achieving ea
 **Three AI pilgrimage landmarks**: ① **Zhi-Zi Origin · AI Flame Tower** (Beijing AI Origin Community) ② **Spine Interchange · Open-Source Compute Core** (Zhongzhiyuan) ③ **Bell Temple Echo · Open-Source Bell** (Dazhongsi). A supporting **honor-display system**: an "Honor Trail" along the heritage park showing contributor plaques, model leaderboards, and benchmark boards; a **public-space component library** of reusable驿站, screens, and seating modules [depth:DD-10] [data:geometry/public_space.geojson#PUB-001]. Landmarks avoid over-entertainment, influencer-ization, or vulgarization [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
 
 ![mobility-bluegreen](../assets/figures/mobility-bluegreen.en.png)
+
+## Twelve AI Scenario Cards (Full)
+
+The 12 scenario cards run through "user — technology — space — operator — metric," forming an implementable AI-empowerment map; overview figure below [depth:DD-10] [data:geometry/public_space.geojson#PUB-001].
+
+![scenario-cards](../assets/figures/scenario-cards.en.png)
+
+| # | Scenario | Persona | Technology | Spatial anchor | Operator | Value metric |
+| --- | --- | --- | --- | --- | --- | --- |
+| SC-01 | AI Heritage-Park Guide | International visitor / Family | Multimodal LLM + AR landmark + TTS | Heritage Park corridor (Zhi-Zi Origin · AI Flame Tower) | Platform co. + culture-tourism | ≥ 0.5M guided visits/yr |
+| SC-02 | Accessibility Companion | Senior / PWD | Vision-language nav + obstacle avoidance + sign/subtitle | AI Spine walkway + accessible nodes | Subdistrict + community | Accessible-node coverage ≥ 90% |
+| SC-03 | Community AI Canteen | Senior / Family | Nutrition LLM + smart checkout + cooking robots | Beijing AI Origin · Honor Trail | Community canteen + 3rd-party F&B | ≥ 800 meals/day |
+| SC-04 | Compute Reservation | Young researcher / Entrepreneur | Compute scheduler + credit quota + billing API | Zhongzhiyuan · Open-Source Compute Core | Platform co. + compute provider | Booking response ≤ 5 min |
+| SC-05 | Developer Station | Global developer | OSS sandbox + contribution credits + leaderboard | Beijing AI Origin · Developer Station | Platform co. + OSS community | ≥ 12k dev-resident days/yr |
+| SC-06 | AI Red-Team Drill | City manager / Annotator | Adversarial gen + compliance scan + review console | Zhongzhiyuan · Safety Center | Platform co. + regulator | ≥ 24 drills/yr |
+| SC-07 | AI Cultural Curation | Family / Visitor | Generative exhibition + curation LLM + projection | Dazhongsi · Open-Source Bell + culture zone | Culture-tourism + art faculty | ≥ 12 curated events/yr |
+| SC-08 | Active-Mobility Navigation | All-age | Multimodal routing + crowding + shade/slope | AI Spine + cross-link streets | Platform co. + mobility op | Walk connectivity ≥ 95% |
+| SC-09 | Night-Time Economy | Entrepreneur / Family | Crowd-heat forecast + light interaction + patrol | Dazhongsi smart-native retail + park night tour | Retail op + platform co. | Night footfall +30% |
+| SC-10 | Energy & Waste Sorting | All-age / City manager | Vision sorting + carbon credits + microgrid | Key areas + microgrid nodes | Property + municipal | Sorting accuracy ≥ 92% |
+| SC-11 | Emergency Coordination | City manager / All-age | Sensing fusion + plan simulation + alert | AI Spine + public-space library | Subdistrict + emergency dept. | Alert ≤ 1 min |
+| SC-12 | Multilingual Service | International visitor / Developer | Real-time translation + multilingual KB | Belt-wide · station/landmark screens | Platform co. + volunteers | ≥ 8 languages |
+
+Scenario design respects privacy and human-review boundaries and does not rely on non-public data or designated vendors [depth:DD-08]. Structured data in `visual/assets/scenarios.json`.
 
 ## Transport, Rail, Municipal Infrastructure, and Public Services
 
@@ -106,7 +145,42 @@ A **spatial culture system**: ① **Railway Memory Axis** (zigzag switchback rel
 
 ## Renewal Projects, Implementation Policy, and Phasing
 
-Renewal projects and scenario opening are organized in **near / mid / far** three phases: near-term (Dazhongsi + AI Origin launch area) delivers the Open-Source Bell Plaza, Honor Trail, and first scenarios; mid-term (urban-renewal & scenario-empowerment area) advances the AI Spine axis and public space; far-term (Zhongzhiyuan full-stack acceleration area) builds the Compute Core and full-stack chain [depth:DD-13] [data:geometry/phasing.geojson#PHASE_1]. Implementation policy emphasizes "concept suggestion, reference scheme," not conflated with land tenure, investment estimates, or approval judgments [assumption:A-CTRL-001].
+Renewal projects and scenario opening are organized in **near / mid / far** three phases: near-term (Dazhongsi + AI Origin launch area) delivers the Open-Source Bell Plaza, Honor Trail, and first scenarios; mid-term (urban-renewal & scenario-empowerment area) advances the AI Spine axis and public space; far-term (Zhongzhiyuan full-stack acceleration area) builds the Compute Core and full-stack chain [depth:DD-13] [data:geometry/phasing.geojson#PHASE_1]. Implementation policy emphasizes "concept suggestion, reference scheme," not conflated with land tenure, investment estimates, or approval judgments; all projects are conceptual ideas rather than confirmed arrangements [assumption:A-CTRL-001]. Phase areas are recalculated from provisional geometry: near-term ≈ 323.7 ha, mid-term ≈ 147.8 ha, far-term ≈ 242.4 ha [metric:phasing_area].
+
+## Phased Implementation: RACI and KPI
+
+Renewal projects and scenario opening are organized in near / mid / far three phases [depth:DD-13] [data:geometry/phasing.geojson#PHASE_1]. The responsibility matrix uses **R (Responsible) / A (Accountable) / C (Consulted) / I (Informed)** to keep delivery bodies explicit, accountable, and coordinated.
+
+### Phased RACI Responsibility Matrix
+
+| Role \ Phase | Near-term P1 | Mid-term P2 | Far-term P3 |
+| --- | --- | --- | --- |
+| Haidian District Government | A | A | A |
+| Local sub-district offices | R | R | I |
+| Platform company / delivery body | R | R | R |
+| Design team | C | C | C |
+| Operators | R | R | R |
+| Community / public | I | C | I |
+| Universities and institutes | C | C | R |
+
+### Phased KPI Table
+
+| Phase | Key indicator | Target |
+| --- | --- | --- |
+| Near-term P1 | Open AI scenarios | ≥ 6 |
+| Near-term P1 | Honor Trail completion rate | 100% |
+| Near-term P1 | Public satisfaction | ≥ 80% |
+| Near-term P1 | Spine main-axis demonstration segment | ≥ 1.5 km |
+| Mid-term P2 | Slow-mobility network connectivity | ≥ 95% |
+| Mid-term P2 | Public-space accessibility improvement | ≥ 30% |
+| Mid-term P2 | Cumulative open AI scenarios | ≥ 12 |
+| Mid-term P2 | Blue-green network continuity | ≥ 90% |
+| Far-term P3 | Domestic compute available scale | ≥ 1000 PFLOPS |
+| Far-term P3 | Full-stack autonomous chain coverage | ≥ 80% |
+| Far-term P3 | International open-source contribution ranking | Global top 20 |
+| Far-term P3 | AI governance standard proposals | ≥ 3 |
+
+Full structured data is in `visual/assets/phasing.json`; all projects are conceptual ideas rather than confirmed arrangements, and do not replace land tenure, investment estimates, or approval judgments [assumption:A-CTRL-001].
 
 ## Metrics, Area Recalculation, and Compliance Matrix
 
@@ -124,6 +198,21 @@ All metrics are recalculated from geometry; areas use an equirectangular approxi
 - **Missing-control risk**: FAR/height/density/green-ratio/setback missing; related values are concept estimates [assumption:A-CTRL-001].
 - **Data-timeliness risk**: external cases and personas are compiled from public sources, not real-time investment/policy facts [assumption:A-DATA-001].
 - **Copyright compliance**: no copyrighted fonts, images, trademarks, portraits, or paper figures are used; generative media are concept displays only and labeled [standard:GENERATIVE-AI-INTERIM-MEASURES].
+
+### Rights Ledger: Fonts / Images / Map Geometry / Code / Generative Tools
+
+To answer copyright and compliance review, a five-category asset rights ledger is established (full structured data in `visual/assets/rights_ledger.json`):
+
+| Asset class | Item | Source / licence | Manner of use | Rights status | Risk |
+| --- | --- | --- | --- | --- | --- |
+| Font | Microsoft YaHei (msyh.ttc) | OS-preinstalled (Microsoft EULA) | Local rasterisation into PNG only; font file not redistributed | Compliant | Low |
+| Images | All scheme figure PNGs | Generated locally by the AI agent / CC-BY-4.0 | Concept display | Original, no third-party imagery | Low |
+| Map geometry | 9 GeoJSON files | Agent-inferred (provisional polygons) | Concept base map, official_boundary=false | Provisional, pending verification | Medium |
+| Code | build_*.py | Self-authored by the contributor (MIT-style) | Reproducible local build | Owned | Low |
+| Generative tools | PIL / markdown / shapely / pyproj | Permissive PyPI licences | Local execution | Compliant | Low |
+| Generative tools | WorkBuddy AI Agent | User-authorised | Concept generation | Authorised | Low |
+
+If fonts must be embedded or redistributed, SIL OFL open fonts such as Source Han or Noto will be used instead; all generative content is labelled per the Interim Measures for the Administration of Generative AI Services [standard:GENERATIVE-AI-INTERIM-MEASURES].
 
 All content is open co-creation suggestion, does not replace formal planning, and does not constitute a government-approved conclusion [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
 
