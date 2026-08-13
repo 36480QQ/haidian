@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以城市可用性为总纲，把京张沿线组织成三座工场与两条服务链。每项 AI 服务都必须具备人工接手、无 App 等价路径、最少数据、责任主体、停止条件和公开改进记录。"
 tracks: ["ai-traffic-walkability", "ai-public-services", "enterprise-services-ecosystem"]
 scenarios: ["ai-traffic-walkability", "ai-health-service-navigation", "ai-cultural-guide", "enterprise-service-copilot", "robot-delivery-low-speed", "public-safety-operations-review"]
-iteration: "v1.2"
+iteration: "v1.3"
 ---
 
 # 京张好用 / JING-ZHANG WORKS
@@ -29,6 +29,10 @@ iteration: "v1.2"
 三个公共节点让这套规则在街上看得见。先问台让人无需注册就能问路和获得公共服务帮助。人工接手亭是 AI 失效时可见、可达、有人负责的接口。公开改进墙展示问题、责任人、截止时间、处理结果和停用记录。它们采用可移动、可撤回的原型，先验证到达、停留、接手和退出，再讨论永久工程。[standard:MOHURD-URBAN-DESIGN-MEASURES] [metric:public_node_count]
 
 评审可以用一句话检验本方案。一个没有智能手机、看不清屏幕或第一次来到这里的人，能否到达、获得帮助、完成任务并安全离开。做不到这些，这项 AI 服务就不应上线。
+
+这句话现在有了一张可以走的图。设计演练 U05-A 选了一件很普通的事。一个不用智能手机的老年访客，想查清办理一项公共服务需要哪些材料，下一步该去哪里。他沿静态编号来到共学工场，在先问台把事情说清。工作人员给他一张写有来源日期的纸质清单。AI 可以把公开说明改短一些，关键事实仍由柜台人员核对并签字。访客坐下来重看，少一项就回到柜台补问。离开时，他手里有材料清单、线下办理地点、信息到期日和问题编号。
+
+六步里只要断掉一步，整项服务就不放行。路线被堵、来源过期或柜台无人时，工作人员先撤下 AI 服务，纸质和人工路径继续。U05-A 目前只是空间与服务设计演练。包内没有真实访客、现场记录或完成率。[source:V13-COMPLETE-TASK-RECEIPT]
 
 ## 设计依据与资料清单
 
@@ -64,11 +68,11 @@ iteration: "v1.2"
 
 区域协同只传递经过脱敏的任务模式、测试协议和版本化服务标准，不搬运个人记录或企业受限资料。北纬社区提供社区服务问题和复盘经验，未来科学城连接科研原型与测试方法，怀柔科学城连接科学设施应用与公共理解，经开区连接制造验证和规模化工程经验，京津冀网络承接可移植的双语服务标准。以上均为建议关系，不表示任何机构已经参与、出资或承诺采用。[source:V11-REGIONAL-COLLABORATION]
 
-![三层范围、三区工场与两条服务链](assets/figures/site-overview.png)
+![一件公共任务如何穿过三座工场与两条服务链](assets/figures/site-overview.png)
 
 ## 统筹研究范围产业与未来城市研究
 
-品牌名称“京张好用”是一句公共判断，也是一套工作方法。标志以两条铁路平行线和一枚橙色验收章构成。平行线代表 AI 路径与无 App 路径必须同时存在，验收章中的缺口代表服务可以暂停和撤回。暖白、煤黑、信号橙与钴蓝来自铁路工作单和公共服务手册的视觉经验。所有图形均为原创矢量与程序绘制，不使用企业商标、人物肖像或第三方照片。（假设 A-BRAND-001） [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]
+品牌名称“京张好用”是一句公共判断，也是一套工作方法。标志以两条铁路平行线和一枚橙色验收章构成。平行线代表 AI 路径与无 App 路径必须同时存在，验收章中的缺口代表服务可以暂停和撤回。暖白、煤黑、信号橙与钴蓝来自铁路工作单和公共服务手册的视觉经验。品牌图形、地图与信息结构均为原创，不使用企业商标。A3 文册和 A0 展板中的 16 张外部照片只作为历史、城市气质和服务做法参考，逐张登记作者、许可与原始页面，不作为项目现场证据。（假设 A-BRAND-001） [source:V14-PHOTO-CREDITS] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]
 
 产业生态按“问题、验证、采用、维护”组织。高校和研究机构提出方法，企业完成产品化，造物工场提供隔离测试，场景翼提供真实任务，科技服务翼处理知识产权、法务和资本，公共运营单位决定是否采用。采用之后，每项服务仍要保留具名维护者、人工旁路和公开退役记录。创新密度由问题关闭率、人工接手时效和失败后恢复能力衡量，展厅数量不算结果。[metric:service_chain_count] [depth:overall_spatial_structure]
 
@@ -81,6 +85,8 @@ iteration: "v1.2"
 ## 总体设计范围城市更新与控规深度城市设计
 
 总体结构是一条公共服务脊柱、三座工场、六条横向连接和两条资源回路。服务脊柱优先利用京张遗址公园及其邻接公共空间的连续性，承载步行、休息、问路和公开改进记录。横向连接针对“到达后仍进不去”的问题，逐条检查过街、坡道、门槛、照明、树荫、座椅和人工帮助。图层表达方向与关系，不把临时 polygon 的边缘画成设计主角。[data:geometry/roads.geojson#ROAD-001] [data:geometry/public_space.geojson#PUBLIC-001]
+
+“完整任务回执”是本方案独有的验收单位。总图把一件事从到达、问清、核对、复看直到带着结果离开画成连续空间。造物工场先检查工具和安全，共学工场负责说清信息并完成人工签核，日用工场检验这套服务能否进入普通的一天。这套机制让空间、服务和 AI 共用一张回执，记录负责人、纸质路径、来源日期、停止原因和修复结果。少一段，整项服务就不放行。[source:V13-COMPLETE-TASK-RECEIPT]
 
 更新采取先盘点、再轻量试点、后专业工程的顺序。现有建筑先按共享时段、适应性改造候选、待核验三类登记。具备公共入口和基本安全条件的空间可先通过可移动桌台、导视、遮阴、照明和临时电源验证需求。涉及结构、消防、文保、市政、道路和永久景观的动作，只能在权属和专业条件到位后深化。[standard:MOHURD-CONTROL-DETAILED-PLANNING] [depth:retain_renovate_demolish]
 
@@ -102,7 +108,7 @@ iteration: "v1.2"
 
 组件库把原型拆成六件可以单独安装、检查和撤走的工具。C01 先问台提供纸图、人工问路和问题登记。C02 人工接手亭设置可见标记、无障碍柜台、实体停止和离线联系人。C03 公开改进墙显示任务编号、负责人、期限、结果与退役记录。C04 无障碍测试道服务受控设备测试。C05 任务路线标记把纸图、编号和接手方向接起来。C06 安静休息点记录座椅、遮阴、安静和人工帮助状态。展示体系称为“好用记录”，只发布有证据通过、到期修改和已经退役三种状态，不颁发缺少证据的创新荣誉。[source:V11-COMPONENT-LIBRARY]
 
-![三处重点区与三个公共节点](assets/figures/key-areas.png)
+![三座工场的空间剖面与可迁移原型](assets/figures/key-areas.png)
 
 ## AI 创新生态、人才画像与 AI+ 场景
 
@@ -210,9 +216,9 @@ iteration: "v1.2"
 
 `compliance_matrix.json` 对公告全部必选条款建立章节、图层、图纸、指标、来源、假设和自检映射。`standard_matrix.json` 记录正式标准的响应位置。`design_depth_matrix.json` 说明控规深度和综合实施方案深度如何被证据支撑。三份矩阵供机器复核，正文保留评审真正需要理解的判断。[standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [depth:existing_conditions_diagnosis]
 
-`reviewer_evidence_index.json` 按七项评分问题另做一层入口。每个问题旁边直接列出本方案的回答、正文或文件位置，以及仍未取得的现实证据。它只负责帮人找到材料，不替评审打分，也不会把索引里的概括当成新的事实。[source:V12-REVIEWER-EVIDENCE-INDEX]
+`reviewer_evidence_index.json` 留在结构化附件中，不再承担方案叙事。正文和图件先说明人怎样完成任务，索引只在需要核对来源时提供路径。它不替评审打分，也不会把概括当成新的事实。[source:V12-REVIEWER-EVIDENCE-INDEX]
 
-![指标、来源与放行证据](assets/figures/metrics-evidence.png)
+![设计演练 U05-A，不用手机完整办成一件事](assets/figures/metrics-evidence.png)
 
 ## 风险、版权与合规说明
 
