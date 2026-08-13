@@ -16,6 +16,12 @@
     "g1_authorized_record_count": 0,
     "rule": "An empty evidence slot is an open requirement, never evidence of completion. Category definitions and parent-register prose are specifications only."
   },
+  "artifact_id_contract": {
+    "pattern": "<parent-item-id>-<closure-category-id>",
+    "example": "JZ-01-C01_ROLE_ACCEPTANCE",
+    "uniqueness_rule": "Every required item-category slot has one stable artifact ID. A submitted file or URL must be attached to that ID and independently verified before the category can close.",
+    "empty_slot_rule": "A required_artifact_id with no submitted_evidence_by_category entry remains open and cannot be counted as evidence."
+  },
   "closure_categories": [
     {
       "category_id": "C01_ROLE_ACCEPTANCE",
@@ -134,7 +140,8 @@
       "item_type": "concept_project",
       "completed_category_ids": [],
       "open_category_ids": ["C01_ROLE_ACCEPTANCE", "C02_APPROVAL_SCOPE", "C03_SITE_TIME_BASELINE", "C04_PROHIBITED_DATA_CONTROL", "C05_STOP_AUTHORITY", "C06_RECOVERY_REHEARSAL", "C07_COMMUNITY_CO_TEST", "C08_INDEPENDENT_RETEST", "C09_GO_NO_GO_MINUTE"],
-      "evidence_by_category": {},
+      "required_artifact_ids": ["JZ-01-C01_ROLE_ACCEPTANCE", "JZ-01-C02_APPROVAL_SCOPE", "JZ-01-C03_SITE_TIME_BASELINE", "JZ-01-C04_PROHIBITED_DATA_CONTROL", "JZ-01-C05_STOP_AUTHORITY", "JZ-01-C06_RECOVERY_REHEARSAL", "JZ-01-C07_COMMUNITY_CO_TEST", "JZ-01-C08_INDEPENDENT_RETEST", "JZ-01-C09_GO_NO_GO_MINUTE"],
+      "submitted_evidence_by_category": {},
       "decision": "NO-GO"
     },
     {
@@ -143,7 +150,8 @@
       "item_type": "concept_project",
       "completed_category_ids": [],
       "open_category_ids": ["C01_ROLE_ACCEPTANCE", "C02_APPROVAL_SCOPE", "C03_SITE_TIME_BASELINE", "C04_PROHIBITED_DATA_CONTROL", "C05_STOP_AUTHORITY", "C06_RECOVERY_REHEARSAL", "C07_COMMUNITY_CO_TEST", "C08_INDEPENDENT_RETEST", "C09_GO_NO_GO_MINUTE"],
-      "evidence_by_category": {},
+      "required_artifact_ids": ["JZ-02-C01_ROLE_ACCEPTANCE", "JZ-02-C02_APPROVAL_SCOPE", "JZ-02-C03_SITE_TIME_BASELINE", "JZ-02-C04_PROHIBITED_DATA_CONTROL", "JZ-02-C05_STOP_AUTHORITY", "JZ-02-C06_RECOVERY_REHEARSAL", "JZ-02-C07_COMMUNITY_CO_TEST", "JZ-02-C08_INDEPENDENT_RETEST", "JZ-02-C09_GO_NO_GO_MINUTE"],
+      "submitted_evidence_by_category": {},
       "decision": "NO-GO"
     },
     {
@@ -152,7 +160,8 @@
       "item_type": "concept_project",
       "completed_category_ids": [],
       "open_category_ids": ["C01_ROLE_ACCEPTANCE", "C02_APPROVAL_SCOPE", "C03_SITE_TIME_BASELINE", "C04_PROHIBITED_DATA_CONTROL", "C05_STOP_AUTHORITY", "C06_RECOVERY_REHEARSAL", "C07_COMMUNITY_CO_TEST", "C08_INDEPENDENT_RETEST", "C09_GO_NO_GO_MINUTE"],
-      "evidence_by_category": {},
+      "required_artifact_ids": ["JZ-03-C01_ROLE_ACCEPTANCE", "JZ-03-C02_APPROVAL_SCOPE", "JZ-03-C03_SITE_TIME_BASELINE", "JZ-03-C04_PROHIBITED_DATA_CONTROL", "JZ-03-C05_STOP_AUTHORITY", "JZ-03-C06_RECOVERY_REHEARSAL", "JZ-03-C07_COMMUNITY_CO_TEST", "JZ-03-C08_INDEPENDENT_RETEST", "JZ-03-C09_GO_NO_GO_MINUTE"],
+      "submitted_evidence_by_category": {},
       "decision": "NO-GO"
     },
     {
@@ -161,7 +170,8 @@
       "item_type": "concept_project",
       "completed_category_ids": [],
       "open_category_ids": ["C01_ROLE_ACCEPTANCE", "C02_APPROVAL_SCOPE", "C03_SITE_TIME_BASELINE", "C04_PROHIBITED_DATA_CONTROL", "C05_STOP_AUTHORITY", "C06_RECOVERY_REHEARSAL", "C07_COMMUNITY_CO_TEST", "C08_INDEPENDENT_RETEST", "C09_GO_NO_GO_MINUTE"],
-      "evidence_by_category": {},
+      "required_artifact_ids": ["JZ-04-C01_ROLE_ACCEPTANCE", "JZ-04-C02_APPROVAL_SCOPE", "JZ-04-C03_SITE_TIME_BASELINE", "JZ-04-C04_PROHIBITED_DATA_CONTROL", "JZ-04-C05_STOP_AUTHORITY", "JZ-04-C06_RECOVERY_REHEARSAL", "JZ-04-C07_COMMUNITY_CO_TEST", "JZ-04-C08_INDEPENDENT_RETEST", "JZ-04-C09_GO_NO_GO_MINUTE"],
+      "submitted_evidence_by_category": {},
       "decision": "NO-GO"
     },
     {
@@ -170,7 +180,8 @@
       "item_type": "concept_project",
       "completed_category_ids": [],
       "open_category_ids": ["C01_ROLE_ACCEPTANCE", "C02_APPROVAL_SCOPE", "C03_SITE_TIME_BASELINE", "C04_PROHIBITED_DATA_CONTROL", "C05_STOP_AUTHORITY", "C06_RECOVERY_REHEARSAL", "C07_COMMUNITY_CO_TEST", "C08_INDEPENDENT_RETEST", "C09_GO_NO_GO_MINUTE"],
-      "evidence_by_category": {},
+      "required_artifact_ids": ["JZ-05-C01_ROLE_ACCEPTANCE", "JZ-05-C02_APPROVAL_SCOPE", "JZ-05-C03_SITE_TIME_BASELINE", "JZ-05-C04_PROHIBITED_DATA_CONTROL", "JZ-05-C05_STOP_AUTHORITY", "JZ-05-C06_RECOVERY_REHEARSAL", "JZ-05-C07_COMMUNITY_CO_TEST", "JZ-05-C08_INDEPENDENT_RETEST", "JZ-05-C09_GO_NO_GO_MINUTE"],
+      "submitted_evidence_by_category": {},
       "decision": "NO-GO",
       "boundary_note": "The existing synthetic T-02 replay does not close any real-world category."
     },
@@ -180,7 +191,8 @@
       "item_type": "concept_project",
       "completed_category_ids": [],
       "open_category_ids": ["C01_ROLE_ACCEPTANCE", "C02_APPROVAL_SCOPE", "C03_SITE_TIME_BASELINE", "C04_PROHIBITED_DATA_CONTROL", "C05_STOP_AUTHORITY", "C06_RECOVERY_REHEARSAL", "C07_COMMUNITY_CO_TEST", "C08_INDEPENDENT_RETEST", "C09_GO_NO_GO_MINUTE"],
-      "evidence_by_category": {},
+      "required_artifact_ids": ["JZ-06-C01_ROLE_ACCEPTANCE", "JZ-06-C02_APPROVAL_SCOPE", "JZ-06-C03_SITE_TIME_BASELINE", "JZ-06-C04_PROHIBITED_DATA_CONTROL", "JZ-06-C05_STOP_AUTHORITY", "JZ-06-C06_RECOVERY_REHEARSAL", "JZ-06-C07_COMMUNITY_CO_TEST", "JZ-06-C08_INDEPENDENT_RETEST", "JZ-06-C09_GO_NO_GO_MINUTE"],
+      "submitted_evidence_by_category": {},
       "decision": "NO-GO"
     },
     {
@@ -189,7 +201,8 @@
       "item_type": "concept_project",
       "completed_category_ids": [],
       "open_category_ids": ["C01_ROLE_ACCEPTANCE", "C02_APPROVAL_SCOPE", "C03_SITE_TIME_BASELINE", "C04_PROHIBITED_DATA_CONTROL", "C05_STOP_AUTHORITY", "C06_RECOVERY_REHEARSAL", "C07_COMMUNITY_CO_TEST", "C08_INDEPENDENT_RETEST", "C09_GO_NO_GO_MINUTE"],
-      "evidence_by_category": {},
+      "required_artifact_ids": ["JZ-07-C01_ROLE_ACCEPTANCE", "JZ-07-C02_APPROVAL_SCOPE", "JZ-07-C03_SITE_TIME_BASELINE", "JZ-07-C04_PROHIBITED_DATA_CONTROL", "JZ-07-C05_STOP_AUTHORITY", "JZ-07-C06_RECOVERY_REHEARSAL", "JZ-07-C07_COMMUNITY_CO_TEST", "JZ-07-C08_INDEPENDENT_RETEST", "JZ-07-C09_GO_NO_GO_MINUTE"],
+      "submitted_evidence_by_category": {},
       "decision": "NO-GO"
     },
     {
@@ -198,7 +211,8 @@
       "item_type": "concept_project",
       "completed_category_ids": [],
       "open_category_ids": ["C01_ROLE_ACCEPTANCE", "C02_APPROVAL_SCOPE", "C03_SITE_TIME_BASELINE", "C04_PROHIBITED_DATA_CONTROL", "C05_STOP_AUTHORITY", "C06_RECOVERY_REHEARSAL", "C07_COMMUNITY_CO_TEST", "C08_INDEPENDENT_RETEST", "C09_GO_NO_GO_MINUTE"],
-      "evidence_by_category": {},
+      "required_artifact_ids": ["JZ-08-C01_ROLE_ACCEPTANCE", "JZ-08-C02_APPROVAL_SCOPE", "JZ-08-C03_SITE_TIME_BASELINE", "JZ-08-C04_PROHIBITED_DATA_CONTROL", "JZ-08-C05_STOP_AUTHORITY", "JZ-08-C06_RECOVERY_REHEARSAL", "JZ-08-C07_COMMUNITY_CO_TEST", "JZ-08-C08_INDEPENDENT_RETEST", "JZ-08-C09_GO_NO_GO_MINUTE"],
+      "submitted_evidence_by_category": {},
       "decision": "NO-GO"
     },
     {
@@ -207,7 +221,8 @@
       "item_type": "first_test_protocol",
       "completed_category_ids": [],
       "open_category_ids": ["C01_ROLE_ACCEPTANCE", "C02_APPROVAL_SCOPE", "C03_SITE_TIME_BASELINE", "C04_PROHIBITED_DATA_CONTROL", "C05_STOP_AUTHORITY", "C06_RECOVERY_REHEARSAL", "C07_COMMUNITY_CO_TEST", "C08_INDEPENDENT_RETEST", "C09_GO_NO_GO_MINUTE"],
-      "evidence_by_category": {},
+      "required_artifact_ids": ["T-01-C01_ROLE_ACCEPTANCE", "T-01-C02_APPROVAL_SCOPE", "T-01-C03_SITE_TIME_BASELINE", "T-01-C04_PROHIBITED_DATA_CONTROL", "T-01-C05_STOP_AUTHORITY", "T-01-C06_RECOVERY_REHEARSAL", "T-01-C07_COMMUNITY_CO_TEST", "T-01-C08_INDEPENDENT_RETEST", "T-01-C09_GO_NO_GO_MINUTE"],
+      "submitted_evidence_by_category": {},
       "decision": "NO-GO"
     },
     {
@@ -216,7 +231,8 @@
       "item_type": "first_test_protocol",
       "completed_category_ids": [],
       "open_category_ids": ["C01_ROLE_ACCEPTANCE", "C02_APPROVAL_SCOPE", "C03_SITE_TIME_BASELINE", "C04_PROHIBITED_DATA_CONTROL", "C05_STOP_AUTHORITY", "C06_RECOVERY_REHEARSAL", "C07_COMMUNITY_CO_TEST", "C08_INDEPENDENT_RETEST", "C09_GO_NO_GO_MINUTE"],
-      "evidence_by_category": {},
+      "required_artifact_ids": ["T-02-C01_ROLE_ACCEPTANCE", "T-02-C02_APPROVAL_SCOPE", "T-02-C03_SITE_TIME_BASELINE", "T-02-C04_PROHIBITED_DATA_CONTROL", "T-02-C05_STOP_AUTHORITY", "T-02-C06_RECOVERY_REHEARSAL", "T-02-C07_COMMUNITY_CO_TEST", "T-02-C08_INDEPENDENT_RETEST", "T-02-C09_GO_NO_GO_MINUTE"],
+      "submitted_evidence_by_category": {},
       "decision": "NO-GO",
       "boundary_note": "One synthetic governance replay is complete, but it confirms no organisation, approval, site, field baseline, real stop/recovery rehearsal, community co-test, or independent real retest."
     },
@@ -226,7 +242,8 @@
       "item_type": "first_test_protocol",
       "completed_category_ids": [],
       "open_category_ids": ["C01_ROLE_ACCEPTANCE", "C02_APPROVAL_SCOPE", "C03_SITE_TIME_BASELINE", "C04_PROHIBITED_DATA_CONTROL", "C05_STOP_AUTHORITY", "C06_RECOVERY_REHEARSAL", "C07_COMMUNITY_CO_TEST", "C08_INDEPENDENT_RETEST", "C09_GO_NO_GO_MINUTE"],
-      "evidence_by_category": {},
+      "required_artifact_ids": ["T-03-C01_ROLE_ACCEPTANCE", "T-03-C02_APPROVAL_SCOPE", "T-03-C03_SITE_TIME_BASELINE", "T-03-C04_PROHIBITED_DATA_CONTROL", "T-03-C05_STOP_AUTHORITY", "T-03-C06_RECOVERY_REHEARSAL", "T-03-C07_COMMUNITY_CO_TEST", "T-03-C08_INDEPENDENT_RETEST", "T-03-C09_GO_NO_GO_MINUTE"],
+      "submitted_evidence_by_category": {},
       "decision": "NO-GO"
     }
   ],
@@ -234,6 +251,8 @@
     "record_count": 11,
     "closure_category_count": 9,
     "required_record_category_slot_count": 99,
+    "stable_required_artifact_id_count": 99,
+    "submitted_evidence_reference_count": 0,
     "completed_record_category_slot_count": 0,
     "open_record_category_slot_count": 99,
     "closure_ratio": 0.0,
