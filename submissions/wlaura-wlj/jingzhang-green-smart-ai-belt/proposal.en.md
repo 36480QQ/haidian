@@ -268,6 +268,44 @@ The following summarizes 10 AI scenario cards [agent:3]. Complete details are in
 
 All AI scenarios follow four principles: "minimum necessary data, edge-first processing, human-reviewable decisions, no individual profiling" [agent:3]. No facial recognition is deployed. No individual trajectory tracking is performed. All automated decisions include human appeal channels.
 
+#### Data Flow and Privacy/Security Assessment
+
+The main data types, sources, processing locations, storage locations, purposes, risk levels, and controls are summarized below. All personally related data are collected in anonymized or aggregated form; raw personal identifiers are de-sensitized at the collection side.
+
+| Data Type | Typical Sources | Processing Location | Storage Location | Purpose | Risk Level | Key Controls |
+|---|---|---|---|---|---|---|
+| Mobile signaling / location aggregates | Slow-mobility navigation, public-space vitality monitoring | Edge node aggregation, then upload | Municipal platform, encrypted | Crowd density, route optimization | Medium | Anonymization; output aggregated heatmaps only; retention ≤7 days |
+| Wi-Fi probes | Public-space vitality monitoring | Edge node | Edge cache, not cloud | Real-time occupancy estimation | Medium | Only MAC hash; deleted within 24 hours; no identity linkage |
+| Video / cameras | Slow-mobility navigation, water-quality twin, safety management | Edge AI analytics | Local event snapshots only | Public safety, environmental observation | High | No facial recognition; real-time analysis; no long-term raw video storage |
+| Delivery orders | Autonomous delivery network | Delivery operator platform | Operator database | Route dispatch | Low | Encrypted; minimum fields (address/time) |
+| User behavior / preferences | Retail experience navigation, participatory platform | Business platform | Operator database | Recommendations and feedback statistics | Medium | Anonymous ID; optional consent; revocable |
+| Resident feedback / complaints | Participatory planning platform | Community platform | Government or community hosting | Planning decision reference | Low | Real-name or anonymous optional; de-identified before disclosure |
+| Energy / environment / building operations data | Energy microgrid, MRV system | Building or district platform | Regional carbon platform | Energy optimization, carbon accounting | Low | Building-level aggregation; no resident personal information |
+
+Text data-flow diagram:
+
+```
+Sensing layer (cameras / Wi-Fi / signaling / sensors)
+    → Edge nodes (anonymization / aggregation / real-time inference)
+        → District platform (encrypted transmission, minimum dataset)
+            → Application scenarios (navigation / dispatch / monitoring / participatory governance)
+                → Public / managers (aggregated results, visualization, decision support)
+```
+
+#### Non-Digital Alternatives and Inclusive Design
+
+- **Non-digital route and information alternatives**: All AI navigation services are paired with traditional signage (map boards, directional signs, Braille/tactile signs); public transport and the slow-mobility lane provide paper maps and physical information kiosks, ensuring that people without smartphones (elderly, children, those without network access) can still access services.
+- **Accessible continuous routes**: The Jing-Zhang Green Vein smart slow-mobility lane connects rail stations and neighborhood entrances via zero-level ramps, tactile guide paths, and audible crossing signals; path width, gradient, and rest facilities conceptually meet accessibility design code requirements, subject to dedicated accessibility review.
+- **Digital opt-out**: Before deploying optional data collection such as mobile signaling, Wi-Fi probes, or retail behavior analysis, clear privacy notices and opt-out methods are provided at entrances, in apps, and on on-site notice boards (e.g., disable Bluetooth, do not authorize app location, call privacy hotline). Opt-out users can still use essential public-space services without barriers.
+
+#### Appeals, Oversight, and Third-Party Supervision
+
+- **Human appeal channel**: All AI-based automated decisions (e.g., carbon-point deductions, delivery restrictions, public-space access) provide a human-review entry point; community centers, online platforms, and customer service hotlines accept appeals, with a commitment to respond within five working days.
+- **Independent third-party oversight**: It is recommended to establish a "Green Vein AI Data Ethics Committee" composed of the district data bureau, university ethics committees, resident representatives, and legal advisors to periodically audit data collection scope, retention periods, algorithmic fairness, and security measures.
+- **Security incident response**: A data-breach emergency plan is established. In the event of a security incident, relevant collection is suspended immediately, affected users/regulators are notified, and tracing and remediation are initiated; an annual security assessment report is disclosed to the oversight committee.
+
+> **Prerequisite note**: The privacy and security mechanisms above are conceptual designs. Specific implementation must comply with the Personal Information Protection Law, Data Security Law, and Beijing public-data management regulations, and must pass a Privacy Impact Assessment (PIA) and cybersecurity classification protection evaluation before going live.
+
 ## Land Use, Building Scale, and Renewal Strategy
 
 ### Land Use Zoning and Scale
