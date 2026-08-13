@@ -122,6 +122,54 @@
       "usage": "Jing-Zhang Railway Heritage Park phase 1 opening and published 9 km / 70-community / 450k-resident plan."
     },
     {
+      "id": "PUBLIC-JINGZHANG-PARK-PHASE2-2026",
+      "url": "https://www.bjnews.com.cn/detail/1785993777129872.html",
+      "source_type": "official_media",
+      "publisher": "新京报 / 海淀区园林绿化局转述",
+      "published_date": "2026-08-06",
+      "accessed_date": "2026-08-13",
+      "license": "Official media report; quotation with attribution",
+      "reuse": "Phase-2 opening facts only; not a survey",
+      "limits": "News text is not CAD/GIS; 53 ha is the reported park area, not this package's schematic green_space layer; cross-check China News Service 2026-08-07",
+      "usage": "Jing-Zhang Heritage Park phase 2 opened 2026-08-06: about 9 km, about 53 ha, three slow-traffic ways, nine opened streets, Qinghe / Huilongguan links. Public segments used for scene assignment only: north Tsinghua East–Jianting about 2.6 km / 30.01 ha; mid Phase 1 Tsinghua East–Zhichun about 2.4 km (open 2023); south Beijing North–Zhichunlu Dayuncun about 23.08 ha."
+    },
+    {
+      "id": "PUBLIC-AI-ORIGIN-BLOCK-2026",
+      "url": "https://www.beijing.gov.cn/ywdt/gqrd/202601/t20260106_4404599.html",
+      "source_type": "official_public",
+      "publisher": "北京市人民政府 / 首都之窗",
+      "published_date": "2026-01-06",
+      "accessed_date": "2026-08-13",
+      "license": "Official public webpage; quotation with attribution",
+      "reuse": "Named first-batch AI innovation block facts",
+      "limits": "District narrative, not an official key-area polygon or FAR control",
+      "usage": "Beijing Origin Community listed as a first-batch AI innovation block; Wudaokou core about 3 km2."
+    },
+    {
+      "id": "PUBLIC-LANJINGLIJIA-2026",
+      "url": "https://www.bjnews.com.cn/detail/1785798406189093.html",
+      "source_type": "official_media",
+      "publisher": "新京报 / 海淀区住房和城乡建设委员会转述",
+      "published_date": "2026-08-03",
+      "accessed_date": "2026-08-13",
+      "license": "Official media report; quotation with attribution",
+      "reuse": "Public fact about an already-gazetted renewal project",
+      "limits": "Not this package's demolition proposal; investment figures are reported, not a commitment by this submission",
+      "usage": "Lanjinglijia at 23 North 3rd Ring West Road gazetted as demolition-rebuild international exchange centre."
+    },
+    {
+      "id": "PUBLIC-HIGHLINE-OPS",
+      "url": "https://www.thehighline.org/blog/2025/04/10/breaking-new-ground-in-public-space-design/",
+      "source_type": "open_reference",
+      "publisher": "Friends of the High Line / High Line Network",
+      "published_date": "2025-04-10",
+      "accessed_date": "2026-08-13",
+      "license": "Public web page; quotation with attribution for case transfer",
+      "reuse": "Mechanism transfer only: city owns structure, operator programmes",
+      "limits": "Foreign case; not a spatial template, funding model or partnership claim for Haidian",
+      "usage": "Case C1: programme-before-more-building and split of ownership vs operations."
+    },
+    {
       "id": "PUBLIC-JINGZHANG-HISTORY-2026",
       "url": "https://www.china-railway.com.cn",
       "source_type": "official_media",
@@ -226,8 +274,8 @@
       "accessed_date": "2026-08-13",
       "license": "Submission-original generated work; COMMUNITY-DISPLAY-ONLY",
       "reuse": "Exhibition atmosphere only",
-      "limits": "Not survey, not official redline, not a photographic record of the site",
-      "usage": "Generated corridor, plaza, blue-green section and landmark vignettes used as figure bases."
+      "limits": "Generated vignettes are atmosphere only; required figures are technical schematics composed locally from metrics.json",
+      "usage": "Optional context vignettes in assets/context/; not used as the five required figures."
     }
   ]
 }

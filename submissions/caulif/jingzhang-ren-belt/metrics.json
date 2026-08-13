@@ -27,7 +27,9 @@
       ],
       "formula": "union(polygon_area(green_space))",
       "confidence": "medium",
-      "assumptions": []
+      "assumptions": [
+        "Schematic union inside the provisional boundary. Do not mix with the publicly reported opened park area of about 53 ha (2026-08-06)."
+      ]
     },
     "public_space_area_sqm": {
       "status": "known",

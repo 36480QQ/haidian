@@ -16,14 +16,14 @@
     {
       "id": "A-DATA-VERIFY-003",
       "status": "pending_professional_confirmation",
-      "statement": "Public facts cited from Haidian government, Beijing government, Beijing Daily/People's Daily, Beijing Science & Technology Commission and rail-line public notices were verified on 2026-08-08 via authoritative URLs; figures are point-in-time statistics.",
+      "statement": "Public facts cited from Haidian government, Beijing government, Beijing Daily/People's Daily/Beijing News, Beijing Science & Technology Commission and rail-line public notices were verified on 2026-08-13 via authoritative URLs; figures are point-in-time statistics. Park Phase 2 opening (2026-08-06, about 9 km / 53 ha) is a public report, not a substitute for official CAD.",
       "impact": "Population, GDP, enterprise counts, park scale and rail-line facts are time-point statistics used for context; they should be re-verified against the latest official releases before statutory use."
     },
     {
       "id": "A-LOCATION-OFFSET-005",
       "status": "provisional",
       "statement": "GitHub issue #1029: provisional Dazhongsi key-area centroid is near Beijing North Station, about 2.26 km from Dazhongsi metro station. GitHub issue #846: provisional overall-design polygon does not intersect the OSM Jingzhang Relics Park (nearest about 412.5 m). This package discloses both offsets and does not invent a replacement official redline.",
-      "impact": "Named tasks that sit on Dazhongsi station or the built park (especially JZ-07) remain conceptual until official polygons arrive; drawings stay inside the current provisional container so KEY_AREA_OUTSIDE_SITE does not fire."
+      "impact": "Named tasks that sit on Dazhongsi station or the built park (especially JZ-07) remain conceptual until official polygons arrive; drawings stay inside the current provisional container so KEY_AREA_OUTSIDE_SITE does not fire. Schematic green_space area must not be mixed with the reported 53 ha opened park."
     },
     {
       "id": "A-CONCEPT-SCALE-004",

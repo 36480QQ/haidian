@@ -10,7 +10,12 @@
       "ok": true,
       "errors": [],
       "warnings": [
-        "submissions/caulif/jingzhang-ren-belt/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied"
+        "submissions/caulif/jingzhang-ren-belt/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied",
+        "submissions/caulif/jingzhang-ren-belt/manifest.json: `assets/figures/key-areas.en.png` should declare language=en",
+        "submissions/caulif/jingzhang-ren-belt/manifest.json: `assets/figures/land-use-structure.en.png` should declare language=en",
+        "submissions/caulif/jingzhang-ren-belt/manifest.json: `assets/figures/metrics-evidence.en.png` should declare language=en",
+        "submissions/caulif/jingzhang-ren-belt/manifest.json: `assets/figures/mobility-bluegreen.en.png` should declare language=en",
+        "submissions/caulif/jingzhang-ren-belt/manifest.json: `assets/figures/site-overview.en.png` should declare language=en"
       ],
       "proposal_files": [
         "submissions/caulif/jingzhang-ren-belt/proposal.md"
@@ -81,7 +86,7 @@
       "ai_package_stages": {
         "submissions/caulif/jingzhang-ren-belt": "formal"
       },
-      "total_bytes": 36812598,
+      "total_bytes": 19430364,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -156,10 +161,8 @@
         "standard_matrix_items": 6,
         "design_depth_items": 15,
         "known_metric_refs_required": 17,
-        "proposal_format_version": "1",
-        "evidence_contract": "legacy-exhaustive-inline",
         "proposal_reference_counts": {
-          "source": 19,
+          "source": 23,
           "standard": 6,
           "depth": 15,
           "data": 9,

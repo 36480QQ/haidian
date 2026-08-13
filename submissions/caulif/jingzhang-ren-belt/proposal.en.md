@@ -4,9 +4,9 @@ author_github: "caulif"
 language: "en"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "The Qinglongqiao Y-junction is translated into an operable public-space structure: one 9 km heritage spine, three stations, two wings, and four time marks. Twelve scenario cards, twelve implementation cards, six case transfers and four landmarks are written in this text so a reviewer need not open geometry/ or visual/assets/. All spatial claims are conceptual suggestions."
+summary: "The Qinglongqiao Y-junction is translated into an operable structure: one spine (the 9 km heritage park already opened on 2026-08-06), three stations on real anchors, two wings, and four time marks. Near-term work operates built assets and overlays switch-off scenes; it does not treat completing the greenway as a future build. All spatial claims are conceptual suggestions."
 tracks: ["jingzhang-heritage-narrative", "ai-origin-community", "youth-friendly-public-space"]
-iteration: "v1.2"
+iteration: "v1.4"
 ---
 
 # Centennial Jing-Zhang REN BELT: a people-first AI urban design
@@ -21,7 +21,9 @@ Every public fact cited in this text is registered in `sources.json` with publis
 
 **Disclose, do not invent a redline (#1029 / #846).** Submitted `SITE-001` and the three `KEY_AREA` polygons are the repository's provisional rectangles [source:BOUNDARY-SOURCE]. Key-area source: [source:KEY-AREA-SOURCE]. They are `geometry_role=provisional_constraint` and `official_boundary=false`. OSM is a location reference only [source:OPENSTREETMAP-CONTEXT]. Site boundary: [data:geometry/site_boundary.geojson#SITE-001]. Issue #1029: the Dazhongsi rectangle centroid is near Beijing North Station, about 2.26 km from Dazhongsi metro station. Issue #846: the provisional overall-design polygon does not intersect the OSM Jingzhang Relics Park (nearest about 412.5 m). This package does not treat OSM as an official redline and does not draw a “better” polygon that would leave `PROV-SITE-001`. The brief's named Dazhongsi four-quadrant walk is kept as a **named conceptual task** on card JZ-07, with the station marked outside the provisional rectangle. Area is in `metrics.json` [metric:site_area_sqm]. Key-area layer: [data:geometry/key_areas.geojson#PROV-KEY-001].
 
-Public point-in-time facts (re-verify before statutory use): Heritage Park phase 1 opened June 2023 (Tsinghua East Rd–Zhichun Rd, about 2.4–2.5 km, 16.8 ha); the planned 9 km belt would serve about 70 communities and 450,000 residents [source:PUBLIC-JINGZHANG-PARK-2026]. Haidian 2025: 3.111 million residents, 430 km², GDP 1,369.14 billion CNY, 37 universities, 2.0058 million talents [source:PUBLIC-HAIDIAN-PROFILE-2025]. 1,300+ AI firms, 74 registered large models, core AI industry over 350 billion CNY [source:PUBLIC-HAIDIAN-AI-2026]. Jing-Zhang HSR opened 30 December 2019; the old line between Xueyuan South Rd and the North 5th Ring went underground [source:PUBLIC-JINGZHANG-HISTORY-2026]. Beijing Jingzhengfa 2023-14 supports Haidian City Brain 2.0 and a public computing centre [source:PUBLIC-BEIJING-AI-POLICY]. Changping Line south extension phase 1 opened February 2023 [source:PUBLIC-RAIL-LINES-2026].
+Public point-in-time facts (re-verify before statutory use). Heritage Park phase 1 opened June 2023 [source:PUBLIC-JINGZHANG-PARK-2026]. Phase 2 opened to the public on 6 August 2026: about 9 km from Xizhimen to the North 5th Ring, about 53 ha, serving about 70 communities and 450,000 residents; reports also describe unbroken walk / jog / bike ways, nine opened streets, and links to the Qinghe greenway and the Huilongguan cycleway [source:PUBLIC-JINGZHANG-PARK-PHASE2-2026]. Haidian 2025: 3.111 million residents, 430 km², GDP 1,369.14 billion CNY, 37 universities, 2.0058 million talents [source:PUBLIC-HAIDIAN-PROFILE-2025]. 1,300+ AI firms, 74 registered large models, core AI industry over 350 billion CNY [source:PUBLIC-HAIDIAN-AI-2026].
+
+Jing-Zhang HSR opened 30 December 2019; the old line between Xueyuan South Rd and the North 5th Ring went underground [source:PUBLIC-JINGZHANG-HISTORY-2026]. Beijing Jingzhengfa 2023-14 supports Haidian City Brain 2.0 and a public computing centre [source:PUBLIC-BEIJING-AI-POLICY]. Changping Line south extension phase 1 opened February 2023 [source:PUBLIC-RAIL-LINES-2026]. Beijing AI Origin Community was listed in January 2026 as a first-batch AI innovation block, publicly described as a Wudaokou core of about 3 km² [source:PUBLIC-AI-ORIGIN-BLOCK-2026]. Dazhongsi already has the 1733 (former Zhongkun Plaza) station-city renewal and the gazetted Lanjinglijia demolition-rebuild at 23 North 3rd Ring West Road [source:PUBLIC-LANJINGLIJIA-2026].
 
 Standards: announcement and taskbook [standard:PROJECT-OFFICIAL-ANNOUNCEMENT], urban-design measures [standard:MOHURD-URBAN-DESIGN-MEASURES]. Regulatory-plan and architectural depth: [standard:MOHURD-CONTROL-DETAILED-PLANNING] and [standard:MOHURD-ARCH-DESIGN-DEPTH-2016]. Land-use classification: [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]. Gaps: [depth:existing_conditions_diagnosis].
 
@@ -35,18 +37,31 @@ Work follows the announcement's three scopes [source:OFFICIAL-ANNOUNCEMENT]. The
 
 Structure: **one spine, three stations, two wings, four marks**.
 
-- **Spine:** a continuous walkable, cyclable, stayable 9 km heritage greenway [data:geometry/green_space.geojson#GREEN-001].
-- **Stations:** Zhongzhiyuan (north, stack autonomy and safety), Origin Community (middle, near-campus transfer and open source), Dazhongsi (south, station-city and international exchange). Count: [metric:key_area_count].
+- **Spine:** the 9 km heritage greenway is already open. This package treats it as an **operating public skeleton**, not a future build [data:geometry/green_space.geojson#GREEN-001]. The reported park area is about 53 ha; this package's `green_space` layer is schematic inside the provisional box and must not be mixed with that figure [source:PUBLIC-JINGZHANG-PARK-PHASE2-2026].
+- **Stations:** Zhongzhiyuan (north, stack autonomy and safety, anchored on the existing Xueyuan-Road campus and Qinghe), Origin Community (middle, near-campus transfer and open source, anchored on the listed Wudaokou AI block), Dazhongsi (south, station-city and international exchange, anchored on the real metro station and gazetted renewal). Count: [metric:key_area_count].
 - **Wings:** Xiaoyue River scene wing (daily life, care, public experience) and Zhongguancun service wing (capital, IP, firm services). They meet at Origin Community as a managed public interface.
 - **Marks:** 1905/1909 construction, 1949 Tsinghuayuan station, 2019 HSR and undergrounding, 2026 this call. Content is re-reviewed yearly [source:PUBLIC-JINGZHANG-HISTORY-2026].
 
 No area, ratio or project count enters a formal conclusion unless it can be recomputed from submitted geometry [depth:overall_spatial_structure].
 
+The opened park is publicly reported in two Phase-2 segments. This package uses them to place scenes; they are not redlines [source:PUBLIC-JINGZHANG-PARK-PHASE2-2026]:
+
+- **North, nature-leisure:** Tsinghua East Rd–Jianting Bridge, about 2.6 km / 30.01 ha; fishbone walks; Qinghe and Dongsheng Bajia links. Hosts Zhongzhiyuan tests (S02, S06, T2, T3).
+- **Middle, Phase 1:** Tsinghua East Rd–Zhichun Rd, about 2.4 km (open since 2023). Hosts Origin publish and Tsinghuayuan guide (S01, S07, S11, S12).
+- **South, community-vitality:** Beijing North–Zhichunlu Dayuncun, about 23.08 ha; via Dazhongsi and the North 3rd Ring balcony. Hosts pitch, living street and last-mile tests (S05, S08, S09, T1).
+
 ![Land-use structure](assets/figures/land-use-structure.en.png)
 
 ## Coordinated Research Area: Industry and Future City Research
 
-Industry numbers are the verified public figures already cited [source:PUBLIC-HAIDIAN-PROFILE-2025]. The proposed chain is five checkable stages: **campus origin → open collaboration → firm transfer → controlled scene test → international communication or exit**. Beiwai Community, Future Science City, Huairou Science City and the Economic-Technological Development Area are named partners only; this package invents no cross-district contracts.
+Industry numbers are the verified public figures already cited [source:PUBLIC-HAIDIAN-PROFILE-2025]. The proposed chain is five checkable stages: **campus origin → open collaboration → firm transfer → controlled scene test → international communication or exit**. Cross-district work keeps **checkable interfaces** only; this package invents no contracts:
+
+| Partner | Public interface | Action on this belt | Stop |
+| --- | --- | --- | --- |
+| Huilongguan cycleway | Already linked by park Phase 2 | Paper maps and signs to this belt's edge | No extra signs if tenure is unclear |
+| Dongsheng Bajia Country Park | North segment already linked | Nature-leisure wayfinding; do not alter that park | Stop events if ecology thresholds trip |
+| Qinghe waterfront greenway | Already linked in Phase 2 | S06/T3 publish aggregates only | Stop tests if water/flood thresholds trip |
+| Beiwai / Future Science City / Huairou / EDA | Public event invitations | Reserve AI Week guest slots | No partner branding without a written invite |
 
 ### Name, logo and visual identity (agent.1)
 
@@ -60,9 +75,11 @@ Name: **Centennial Jing-Zhang REN BELT**. REN is the pinyin of 人 (person). The
 
 ### Global cases and transfer mechanisms (agent.2)
 
+The table only transfers **checkable interfaces**. C1 takes the High Line split of city-owned structure vs operator programming [source:PUBLIC-HIGHLINE-OPS].
+
 | ID | Case | Checkable mechanism | Interface on this belt | Not done |
 | --- | --- | --- | --- | --- |
-| C1 | Palo Alto / Silicon Valley | Ground-floor mix of start-ups, capital and public stay | Dazhongsi shared hall (S05, L-04) | No form copy |
+| C1 | High Line / New York | City owns structure; operator programmes and maintains; programme before more building | Operate the already-open park first (JZ-01, S10) | No viaduct copy, no budget copy |
 | C2 | Vector Institute / Toronto | University–industry lab on a public node | Origin transfer street (S07, JZ-04) | No plaque promised |
 | C3 | Pangyo Techno Valley | Ten-minute walk from rail | Three east–west stitches (JZ-01/07/10) | No FAR invented |
 | C4 | Jurong Lake District | Blue-green network linking work, life, learning | Heritage spine + Qinghe (S06, JZ-02) | No twin claimed built |
@@ -77,9 +94,11 @@ Four operating rules: space hosts only permitted public nodes; money is split in
 
 Regulatory-plan depth is required, but FAR, height, density and setbacks are unpublished and stay unknown [standard:MOHURD-CONTROL-DETAILED-PLANNING].
 
-- **One spine:** continuity first, events second [data:geometry/green_space.geojson#GREEN-001]. Green ratio: [metric:green_ratio].
+- **One spine:** the 9 km park is already open. Near-term work operates the three slow-traffic ways, audits access and night safety, and keeps the nine opened streets open — it does not rebuild a greenway [data:geometry/green_space.geojson#GREEN-001]. Green ratio is schematic [metric:green_ratio].
 - **Three stitches:** slow crossings at Zhongzhiyuan, Origin and Dazhongsi. Road centre-lines are schematic [data:geometry/roads.geojson#ROAD-002].
 - **Four clusters:** Qinghe gateway, near-campus transfer, station-city south, Xizhimen–Xueyuan Road. Conceptual shares: research/innovation ~22%, open green ~20%, living/community ~26%, pending official controls [depth:land_use_layout].
+
+Implementation layers (conceptual): **L0 built** (9 km park, three ways, Origin block, 1733) → **L1 reversible pilots** → **L2 permit stitches** → **L3 redline/demolition** only in dialogue with already-gazetted projects.
 
 Retain / renovate / new is a grading logic, not a parcel verdict [depth:retain_renovate_demolish]. FAR stays unknown [metric:floor_area_ratio].
 
@@ -87,11 +106,11 @@ Retain / renovate / new is a grading logic, not a parcel verdict [depth:retain_r
 
 All three polygons are provisional [data:geometry/key_areas.geojson#PROV-KEY-001]. Recomputed area: [metric:key_area_zhongzhiyuan_area_sqm]. Depth item: [depth:three_key_area_detailed_design].
 
-**1) Zhongzhiyuan AI acceleration area (~192.1 ha, north).** Public anchors are Qinghe and the North 5th Ring gateway. Actions: a reachable innovation plaza and controlled test yard (S02, S06, T2, T3); keep the river green wedge; add one east–west stitch. Depends on official boundary, blue line, flood control and campus rights. Stop: no safety officer, or water/flood thresholds exceeded — keep walking and shade only.
+**1) Zhongzhiyuan AI acceleration area (~192.1 ha, north).** Public anchors are the existing Zhongguancun Dongsheng Zhongzhiyuan campus on north Xueyuan Road, plus Qinghe / North 5th Ring. Phase 2 already links to the Qinghe greenway, so “connect to the river” is not a future build. Actions: a reachable innovation plaza and controlled test yard (S02, S06, T2, T3); keep the river green wedge; add one east–west stitch. Depends on official boundary, blue line, flood control and campus rights. Stop: no safety officer, or water/flood thresholds exceeded — keep walking and shade only.
 
-**2) Beijing AI Origin Community (~104.3 ha, middle).** Public anchors are the near-campus edge and Tsinghuayuan station. Actions: Origin Plaza with lights that can be switched off (S01, S12, L-03); transfer street with non-digital booking (S07, JZ-04); campus–park stitch. Depends on campus edge, ground-floor tenure and heritage review. Stop: complaints over threshold or content failing review — take down that item, do not close the walk.
+**2) Beijing AI Origin Community (~104.3 ha, middle).** Public anchors are the first-batch AI innovation block at Wudaokou: about 3 km², Origin Tower as landmark, Tsinghua to the north [source:PUBLIC-AI-ORIGIN-BLOCK-2026]. Tsinghuayuan station is the memory point. Actions: Origin Plaza with lights that can be switched off (S01, S12, L-03); transfer street with non-digital booking (S07, JZ-04); campus–park stitch. Depends on campus edge, ground-floor tenure and heritage review. Stop: complaints over threshold or content failing review — take down that item, do not close the walk.
 
-**3) Dazhongsi AI cluster (~72.0 ha, south).** The brief names four-quadrant walkability at Dazhongsi metro. This package **also discloses** that the provisional rectangle sits near Beijing North Station, about 2.26 km from that metro (#1029). Drawings stay inside the rectangle. JZ-07 keeps four-quadrant connectivity as a conceptual task that cannot enter engineering review until official polygons and rail-protection conditions exist. Inside the rectangle, light wayfinding, replaceable display frames and a shared civic/pitch hall can start (S05, S08, L-04). Stop: if approvals or tenure fail, keep a signage pilot only.
+**3) Dazhongsi AI cluster (~72.0 ha, south).** The brief names four-quadrant walkability at Dazhongsi metro. Public anchors are the real station on the North 3rd Ring (Lines 12/13), the completed 1733 renewal, and the gazetted Lanjinglijia rebuild [source:PUBLIC-LANJINGLIJIA-2026]. This package **also discloses** that the provisional rectangle sits near Beijing North Station, about 2.26 km from that metro (#1029). Drawings stay inside the rectangle. JZ-07 keeps four-quadrant connectivity as a conceptual task that cannot enter engineering review until official polygons and rail-protection conditions exist. Inside the rectangle, light wayfinding, replaceable display frames and a shared civic/pitch hall can start (S05, S08, L-04), in dialogue with 1733 / Lanjinglijia rather than a new demolition. Stop: if approvals or tenure fail, keep a signage pilot only.
 
 ![Mobility and blue-green network](assets/figures/mobility-bluegreen.en.png)
 
@@ -145,7 +164,7 @@ Policy is rail access plus slow travel, not new expressways. Line 13 already par
 
 ## Blue-Green Network, Public Space, and Urban Character
 
-The 9 km heritage spine is the skeleton, discussed against Qinghe, Xiaoyue River, Wanquan River and the northern moat [source:PUBLIC-JINGZHANG-PARK-2026]. Recomputed green ~2.735 million m² [metric:green_space_area_sqm]; public space ~1.189 million m² [metric:public_space_area_sqm]. These bind to the provisional boundary and must be recalculated. History layer and contemporary layer stay labelled apart [source:PUBLIC-JINGZHANG-HISTORY-2026].
+The already-open 9 km heritage spine is the skeleton, discussed against Qinghe, Xiaoyue River, Wanquan River and the northern moat [source:PUBLIC-JINGZHANG-PARK-PHASE2-2026]. Recomputed schematic green ~2.735 million m² [metric:green_space_area_sqm]; public space ~1.189 million m² [metric:public_space_area_sqm]. These bind to the provisional boundary and **are not** the reported ~53 ha opened park. History layer and contemporary layer stay labelled apart [source:PUBLIC-JINGZHANG-HISTORY-2026].
 
 ### Four landmarks, honour rules, component kit (agent.4)
 
@@ -166,7 +185,7 @@ All twelve items are conceptual. Near term (2026–2030): reversible light pilot
 
 | ID | Project | Phase / cost | Owner | Dependencies | Acceptance | Stop |
 | --- | --- | --- | --- | --- | --- | --- |
-| JZ-01 | Continuous park walk | Near / low | District renewal or parks operator | Park permit; rail/heritage/fire | Continuity ≥90%; yearly check | Two failed safety checks → segmented pilot |
+| JZ-01 | Operate the open park and patch gaps | Near / low | District parks or renewal operator | Park already open; access, night safety, street links | Separate quarterly access audits on north and south segments; keep 9 opened streets; obstacles in 24 h | Two failed safety checks → pause events, do not close the park |
 | JZ-02 | Qinghe blue-green corridor | Mid / medium | Water, parks, street | Flood, water quality, utilities | Storage points professionally accepted | Close tests if thresholds exceeded |
 | JZ-03 | Zhongzhiyuan plaza | Near / low | Park operator + street | Space permit, event safety, clearance | ≥1 civic event/quarter; satisfaction ≥80% | Two weak quarters → change programme |
 | JZ-04 | Origin transfer street | Mid / medium | Park / campus / street | Campus edge, tenure, ground floor | Non-digital booking; fees public | Pause sharing if complaints exceed cap |
@@ -200,11 +219,22 @@ Loop: quarterly assembly → open day → yearly third-party fairness audit, pub
 | Q3 | Global AI Belt Week | Firms, visitors, public | Pitches, tours, open day | Booking + walk-in; civic ≥20% |
 | Q4 | Public audit and memory walk | Public, auditors, heritage | Fairness audit and guide review | Public report; human/paper/voice |
 
+Year 1 lands each quarter on a place already open to the public:
+
+| Window | Public place | Action | Acceptance |
+| --- | --- | --- | --- |
+| Q1 | Origin block public space (Wudaokou) | Open Call Lab | Public problem list; paper sign-up; accessible session |
+| Q2 | North segment Jianting–Qinghe | Blue-green repair week | Obstacle close-out; include a night session |
+| Q3 | South greenway; 1733 indoor backup if weather or nuisance | Global AI Belt Week | Civic ≥20%; reroute or go indoors if nuisance |
+| Q4 | Tsinghuayuan station–Phase 1 greenway | Audit and memory walk | Three doors; public report |
+
+1733 is only a conceptual indoor backup in an already-renewed public space; this package does not claim to own or operate it.
+
 Funnel: collect → prototype → controlled test → human review and fairness audit → procure/transfer **or exit**. A co-governance committee (street, park, campus, residents) meets quarterly. Each test has one operator and one safety officer with a kill switch. Complaints acknowledged in 48 h, answered in 15 working days. Not a government commitment [depth:phasing_implementation].
 
 ## Metrics, Area Recalculation, and Compliance Matrix
 
-Class 1, recomputed in EPSG:4548 from submitted geometry: site area ~11.4128 million m² [metric:site_area_sqm], green area and ratio, public-space area and ratio, footprints, greenway length, three key-area areas, land-use coverage and three land-use shares. Because the boundary is provisional, site-area confidence is medium. Class 2 (FAR, height) stays unknown. Class 3 (participation mix, civic quota, complaint close-out) is an audit set, not a spatial control [depth:metrics_recalculation].
+Class 1, recomputed in EPSG:4548 from submitted geometry: site area ~11.4128 million m² [metric:site_area_sqm], green area and ratio, public-space area and ratio, footprints, greenway length, three key-area areas, land-use coverage and three land-use shares. Because the boundary is provisional, site-area confidence is medium. Schematic green ~2.735 million m² must not be mixed with the reported ~53 ha opened park. Class 2 (FAR, height) stays unknown. Class 3 (participation mix, civic quota, complaint close-out) is an audit set, not a spatial control [depth:metrics_recalculation].
 
 The compliance matrix covers announcement 1.3 / 1.4 / 1.5 (16 items) and agent.1–agent.6 (6 items). Standards and design-depth matrices cover six standards and fifteen required depths.
 
@@ -214,7 +244,7 @@ The compliance matrix covers announcement 1.3 / 1.4 / 1.5 (16 items) and agent.1
 
 Only public or cleared sources [source:SOURCE-REGISTRY]. Boundaries are provisional [source:BOUNDARY-SOURCE]. All spatial suggestions are “conceptual suggestion / reference scheme / material for professional teams” [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
 
-Copyright: text, geometry, figures, A3/A0 and offline HTML are generated by the declared agent (caulif) or use registered sources. Qinglongqiao photo: N509FZ, CC BY-SA 4.0. Park locomotive: XiaYZ2023, CC BY-SA 4.0. Location raster: OpenStreetMap contributors, ODbL 1.0. Corridor / plaza / section illustrations are original generated images for narrative only, not survey. System font fallbacks; no font files shipped. See `report/copyright_statement.md`.
+Copyright: text, geometry, figures, A3/A0 and offline HTML are generated by the declared agent (caulif) or use registered sources. Qinglongqiao photo: N509FZ, CC BY-SA 4.0. Park locomotive: XiaYZ2023, CC BY-SA 4.0. Location raster: OpenStreetMap contributors, ODbL 1.0. Corridor / plaza / section illustrations are original generated images for atmosphere only, not survey; the five required figures are technical schematics composed locally from metrics and public place-names. System font fallbacks; no font files shipped. See `report/copyright_statement.md`.
 
 Still missing: official polygons, regulatory controls, building tenure, road redlines, utilities, heritage control lines, investment owners. Logged in `assumptions.json` [depth:risk_missing_data].
 
@@ -223,7 +253,11 @@ Still missing: official polygons, regulatory controls, building tenure, road red
 - brief/public-brief.md; brief/site-package/design_brief.json; agent_taskbook.json; provisional_boundaries.geojson and basis.md
 - data/source_registry.json; data/processed/agent_fact_pack.md and companion CSVs
 - Haidian government profile (2025 figures, updated April 2026)
-- Beijing Daily / People's Daily reports on Heritage Park phase 1 and the 9 km plan (2023–2026)
+- Beijing Daily / People's Daily reports on Heritage Park phase 1 (2023)
+- Beijing News / China News Service reports on Heritage Park phase 2 opening (2026-08-06): 9 km, about 53 ha, three slow-traffic ways, nine streets
+- Capital Window: first-batch AI innovation blocks, Haidian Origin Community (2026-01)
+- Beijing News: Lanjinglijia municipal-quota demolition-rebuild (2026-08-03)
+- High Line public operations materials (case transfer only)
 - Beijing Jingzhengfa 2023-14
 - Beijing government Changping Line south-extension service notice (2023-02-03)
 - GitHub: PR #508; Issues #1029, #846, #1927, #2170, #1061, #1062, #953
