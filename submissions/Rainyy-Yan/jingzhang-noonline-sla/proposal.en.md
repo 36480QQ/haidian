@@ -4,7 +4,7 @@ author_github: "Rainyy-Yan"
 language: "en"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "A midday service-level network for research commuting, campus-park walking, and metro-to-park last-mile access around the Jing-Zhang heritage park."
-iteration: "v0.1"
+iteration: "v2.0"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_of: "proposal.md"
@@ -97,6 +97,14 @@ This round uses a two-layer status: `Target SLA` is the intended design level, w
 | All AI services off. | AI_OFF_TEST = PASS_WITH_PROVISIONAL_PHYSICAL_NETWORK. | Fixed signs, physical routes, seats, water, public entries and staffed fallback form a conceptual backup network, not proof of real operation. | The AI-OFF result can move from provisional to field-verified only after facilities are confirmed present, open, accessible and assigned to an operator. |
 
 The A-level upgrade threshold is a hard threshold, not a vague promise that the route will reach A later. To move from Verified SLA = B to A, the package must add field verification for shade continuity, measured continuous-exposure distance, real drinking-water locations and opening status, seating and rest-node condition, public-entry opening conditions, key crossing conditions, actual summer detour distance, and staffed-service responsibility plus available hours. If any critical evidence is missing, the Engine should not auto-upgrade to A.
+
+#### V2 Field-Verification Workflow
+
+V2 does not claim that any field verification has been completed. The Engine derives 45 machine-readable verification tasks from the existing three SLA paths, conceptual nodes and eight evidence-gap categories, and writes them to `visual/assets/noonline-field-verification-ledger.json`. Eighteen SLA-A tasks are mandatory promotion-gate evidence, and every baseline task is `unknown`. Each task includes route/node/object, evidence required, method, pass/fail condition, status, confidence, verifier, timestamp and evidence reference. The human-readable checklist is generated from the same ledger into `visual/index.html#v2-field-verification` and `visual/index.en.html#v2-field-verification`; no disconnected manual checklist is maintained [data:visual/assets/noonline-field-verification-ledger.json#summary] [metric:field_verification_task_count].
+
+The state machine permits only `unknown → scheduled → observed → verified / rejected`. AI may not create, observe, verify or reject field evidence. `verified` and `rejected` require a human verifier, timestamp and evidence reference. Because all 18 mandatory SLA-A tasks remain incomplete, the promotion gate returns `promotion = blocked`; Target SLA = A and Verified SLA = B therefore remain unchanged. A rejected mandatory item continues to block promotion and triggers a remain-B or downgrade review. Even if all mandatory items are later verified through the human workflow, the gate only permits a subsequent Engine/policy recheck; it never auto-writes Verified SLA=A [data:visual/assets/noonline-sla-report.json#verification_workflow] [assumption:A-FIELD-VERIFICATION-WORKFLOW-001].
+
+The 2026 public announcement of the approved Jing-Zhang Railway Heritage Park corridor control-plan context provides current official background for a roughly 9 km green corridor, north-south/east-west slow mobility and public-service direction. This submission's `ROAD-001` remains a conceptual service reference axis, not official GIS, an existing-facility inventory or SLA-A field evidence [source:EXT-SRC-JINGZHANG-CONTROL-PLAN-20260812] [data:geometry/roads.geojson#ROAD-001].
 
 Municipal and public-service facilities follow a lightweight and reversible approach: begin with movable water, seating, shade, charging, signs and staff tables, then decide whether fixed works are needed after professional measurement. Unpublished utility, drainage, power, fire-safety and underground-space information is not inferred [depth:municipal_new_infrastructure] [assumption:A-CONTROLS-001].
 

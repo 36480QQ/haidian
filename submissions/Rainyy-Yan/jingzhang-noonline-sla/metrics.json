@@ -238,6 +238,48 @@
       "assumptions": [
         "A-PROVISIONAL-BOUNDARY-001"
       ]
+    },
+    "field_verification_task_count": {
+      "status": "known",
+      "value": 45,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/noonline-field-verification-ledger.json"
+      ],
+      "formula": "count(tasks deterministically derived from existing Noonline SLA route conditions and evidence gaps)",
+      "confidence": "high",
+      "assumptions": [
+        "A-FIELD-VERIFICATION-WORKFLOW-001"
+      ],
+      "reason": "This counts verification tasks, not observed facilities or verified field evidence."
+    },
+    "sla_a_mandatory_verification_task_count": {
+      "status": "known",
+      "value": 18,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/noonline-field-verification-ledger.json"
+      ],
+      "formula": "count(tasks where mandatory_for_sla_a=true)",
+      "confidence": "high",
+      "assumptions": [
+        "A-FIELD-VERIFICATION-WORKFLOW-001"
+      ],
+      "reason": "Mandatory evidence-gate task count; it does not state that any condition is field verified."
+    },
+    "field_verification_unknown_task_count": {
+      "status": "known",
+      "value": 45,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/noonline-field-verification-ledger.json"
+      ],
+      "formula": "count(tasks where status=unknown in the generated baseline ledger)",
+      "confidence": "high",
+      "assumptions": [
+        "A-FIELD-VERIFICATION-WORKFLOW-001"
+      ],
+      "reason": "This reports the workflow baseline. It is not a count of physical failures or facilities."
     }
   }
 }
