@@ -158,7 +158,7 @@ AI场景必须落到空间与治理边界：公共空间场景引用公共空间
 
 ## 蓝绿空间、公共空间与城市风貌
 
-蓝绿空间以京张遗址公园活力带为骨架，统筹清河、小月河、周边高校、企业与社区出行需求，提出南北贯通、东西连通的步道、骑行道与绿色空间体系 [depth:blue_green_public_space] [data:geometry/green_space.geojson#GREEN-001]。方案识别慢行断点、上跨环路节点、公园南北端景观节点，提出停车、体育、创新交往、科技测试、应用展示与公共服务的复合利用策略 [data:geometry/public_space.geojson#PUBLIC-001] [metric:green_ratio]。基于 provisional 边界复算，绿地率约 12.3%、公共空间比例约 7.3%（随官方 polygon 发布后重算）；数值取自 `metrics.json` 中可复算项，正文给结论、文件存公式与来源 [metric:green_ratio] [metric:public_space_ratio]。
+蓝绿空间以京张遗址公园活力带为骨架，统筹清河、小月河、周边高校、企业与社区出行需求，提出南北贯通、东西连通的步道、骑行道与绿色空间体系 [depth:blue_green_public_space] [data:geometry/green_space.geojson#GREEN-001]。方案识别慢行断点、上跨环路节点、公园南北端景观节点，提出停车、体育、创新交往、科技测试、应用展示与公共服务的复合利用策略 [data:geometry/public_space.geojson#PUBLIC-001] [metric:green_ratio]。基于 provisional 边界复算，绿地率约 21.1%、公共空间比例约 7.3%（随官方 polygon 发布后重算）；数值取自 `metrics.json` 中可复算项，正文给结论、文件存公式与来源 [metric:green_ratio] [metric:public_space_ratio]。
 
 城市风貌融合京张铁路历史文化、中关村创新文化与AI创新文化，利用清华园火车站、北影等文化资源，提出城市基调、建筑风貌、屋顶形态、体量、界面与公共艺术引导 [standard:MOHURD-URBAN-DESIGN-MEASURES] [metric:public_space_ratio]。导视标识、文化符号、国际传播叙事、AI朝圣地标与荣誉展示体系的品牌、字体、图像、肖像、企业标识均须清权来源；风貌控制分清官方管控、设计建议与待确认条件，无文保或控规依据时严禁给出伪精确控制线。
 
