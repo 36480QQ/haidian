@@ -206,5 +206,5 @@ Area recalculation follows: every area/ratio is reproducible from `geometry/*.ge
 6. Renewal case reports on Dazhongsi 1733, Dinghao DH3 and the Beijing Satellite Manufacturing Factory Science Park (Beijing Youth Daily / China News Service / Haidian Web).
 7. Embodied-AI street practices and agentic-city scholarship (CCTV / Jiefang Daily / ScienceDirect).
 8. Historical material on the Jing-Zhang Railway "ren"-shaped switchback and Wudaokou cultural memory (Beijing News / Baidu Baike / Beijing Daily).
-9. Failure-case studies of Sidewalk Toronto, NEOM, Barcelona 22@ and a county smart-city project.
-10. Historical reports on the Eight Colleges and College Road (Beijing Daily).
+9. International failure-case studies (Sidewalk Toronto, NEOM, Barcelona 22@) and a domestic "vanity project" smart-city lesson, all converted into design red lines [source:SRC-FAIL-SIDEWALK] [source:SRC-FAIL-NEOM] [source:SRC-FAIL-22AT]; the idle county smart-city lesson is in sources.json [source:SRC-FAIL-GUIZHOU].
+10. Historical reports on the Eight Colleges and College Road (Beijing Daily) [source:SRC-COLLEGE-ROAD].

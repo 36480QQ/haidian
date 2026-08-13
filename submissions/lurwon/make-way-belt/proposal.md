@@ -206,5 +206,5 @@ iteration: "v0.1"
 6. 大钟寺1733、鼎好DH3、北京卫星制造厂科技园更新案例报道（北京青年报/中新网/海淀网）。
 7. 具身智能街区实践与智能体城市学术文献（央视网/解放日报/ScienceDirect）。
 8. 京张铁路"人字形折返"与五道口文化记忆史料（新京报/百度百科/北京日报）。
-9. Sidewalk Toronto、NEOM、巴塞罗那22@、贵州县智慧城市等失败案例研究。
-10. 八大学院与学院路历史文化报道（北京日报）。
+9. 国际失败案例研究（Sidewalk Toronto、NEOM、巴塞罗那22@）与国内"政绩摆设"式智慧城市教训，全部转化为本方案设计红线 [source:SRC-FAIL-SIDEWALK] [source:SRC-FAIL-NEOM] [source:SRC-FAIL-22AT]；贵州县智慧城市闲置的教训见 sources.json [source:SRC-FAIL-GUIZHOU]。
+10. 八大学院与学院路历史文化报道（北京日报）[source:SRC-COLLEGE-ROAD]。
