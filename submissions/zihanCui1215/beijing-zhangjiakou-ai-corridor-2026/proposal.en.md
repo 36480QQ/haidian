@@ -1,3 +1,11 @@
+---
+title: "Beijing-Zhangjiakou AI Innovation Corridor Urban Design"
+author_github: "zihanCui1215"
+language: "en"
+license: "CC BY 4.0"
+summary: "A future-oriented urban innovation belt integrating century-old railway culture, Zhongguancun innovation DNA, and AI technology revolution along the Beijing-Zhangjiakou Railway Heritage Park, covering 43.6 km²."
+---
+
 # Beijing-Zhangjiakou AI Innovation Corridor Urban Design
 
 **百年京张AI创新带城市设计方案**
@@ -602,3 +610,12 @@ May a hundred years later, when people walk in the Beijing-Zhangjiakou Railway H
 ---
 
 **END OF DOCUMENT**
+
+## References
+
+1. Beijing Master Plan (2016-2035)
+2. Haidian District Plan
+3. Jingzhang Railway Heritage Park Master Plan
+4. GB 50180-2018, GB 50220-95, GB 50420-2007
+5. 2023 MNR Land Use Classification
+6. open-city-ai/haidian repository

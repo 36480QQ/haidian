@@ -1,6 +1,6 @@
 {
   "type": "FeatureCollection",
-  "name": "roads",
+  "name": "ROAD_CENTERLINE",
   "crs": {
     "type": "name",
     "properties": {
@@ -12,134 +12,225 @@
       "type": "Feature",
       "properties": {
         "id": "road_001",
-        "layer": "roads",
+        "layer": "ROAD_CENTERLINE",
         "name": "中关村大街",
         "name_en": "Zhongguancun Street",
         "type": "城市主干路",
         "width_m": 60,
         "length_km": 3.5,
-        "source_type": "derived",
+        "source_type": "agent_generated_design",
         "confidence": "high",
         "geometry_role": "design_proposal",
-        "level": "arterial"
+        "level": "arterial",
+        "road_class": "branch"
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [116.3300, 40.0150],
-          [116.3300, 40.0050],
-          [116.3300, 39.9950],
-          [116.3300, 39.9850],
-          [116.3300, 39.9750]
+          [
+            116.33,
+            40.015
+          ],
+          [
+            116.33,
+            40.005
+          ],
+          [
+            116.33,
+            39.995
+          ],
+          [
+            116.33,
+            39.985
+          ],
+          [
+            116.33,
+            39.975
+          ]
         ]
-      }
+      },
+      "id": "road_001"
     },
     {
       "type": "Feature",
       "properties": {
         "id": "road_002",
-        "layer": "roads",
+        "layer": "ROAD_CENTERLINE",
         "name": "学院路",
         "name_en": "Xueyuan Road",
         "type": "城市主干路",
         "width_m": 50,
         "length_km": 4.0,
-        "source_type": "derived",
+        "source_type": "agent_generated_design",
         "confidence": "high",
         "geometry_role": "design_proposal",
-        "level": "arterial"
+        "level": "arterial",
+        "road_class": "branch"
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [116.3400, 40.0200],
-          [116.3400, 40.0100],
-          [116.3400, 40.0000],
-          [116.3400, 39.9900],
-          [116.3400, 39.9800]
+          [
+            116.34,
+            40.02
+          ],
+          [
+            116.34,
+            40.01
+          ],
+          [
+            116.34,
+            40.0
+          ],
+          [
+            116.34,
+            39.99
+          ],
+          [
+            116.34,
+            39.98
+          ]
         ]
-      }
+      },
+      "id": "road_002"
     },
     {
       "type": "Feature",
       "properties": {
         "id": "road_003",
-        "layer": "roads",
+        "layer": "ROAD_CENTERLINE",
         "name": "知春路",
         "name_en": "Zhichun Road",
         "type": "城市次干路",
         "width_m": 40,
         "length_km": 2.5,
-        "source_type": "derived",
+        "source_type": "agent_generated_design",
         "confidence": "high",
         "geometry_role": "design_proposal",
-        "level": "secondary"
+        "level": "secondary",
+        "road_class": "branch"
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [116.3350, 39.9900],
-          [116.3400, 39.9900],
-          [116.3450, 39.9900],
-          [116.3500, 39.9900],
-          [116.3550, 39.9900]
+          [
+            116.335,
+            39.99
+          ],
+          [
+            116.34,
+            39.99
+          ],
+          [
+            116.345,
+            39.99
+          ],
+          [
+            116.35,
+            39.99
+          ],
+          [
+            116.355,
+            39.99
+          ]
         ]
-      }
+      },
+      "id": "road_003"
     },
     {
       "type": "Feature",
       "properties": {
         "id": "road_004",
-        "layer": "roads",
+        "layer": "ROAD_CENTERLINE",
         "name": "开发者散步道",
         "name_en": "Developer Walking Path",
         "type": "慢行道路",
         "width_m": 15,
         "length_km": 6.0,
-        "source_type": "derived",
+        "source_type": "agent_generated_design",
         "confidence": "high",
         "geometry_role": "design_proposal",
         "level": "pedestrian",
-        "note": "沿铁路遗址公园"
+        "note": "沿铁路遗址公园",
+        "road_class": "branch"
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [116.3350, 40.0200],
-          [116.3370, 40.0100],
-          [116.3390, 40.0000],
-          [116.3410, 39.9900],
-          [116.3430, 39.9800],
-          [116.3450, 39.9700],
-          [116.3470, 39.9650]
+          [
+            116.335,
+            40.02
+          ],
+          [
+            116.337,
+            40.01
+          ],
+          [
+            116.339,
+            40.0
+          ],
+          [
+            116.341,
+            39.99
+          ],
+          [
+            116.343,
+            39.98
+          ],
+          [
+            116.345,
+            39.97
+          ],
+          [
+            116.347,
+            39.965
+          ]
         ]
-      }
+      },
+      "id": "road_004"
     },
     {
       "type": "Feature",
       "properties": {
         "id": "road_005",
-        "layer": "roads",
+        "layer": "ROAD_CENTERLINE",
         "name": "北五环",
         "name_en": "North Fifth Ring Road",
         "type": "城市快速路",
         "width_m": 100,
         "length_km": 4.0,
-        "source_type": "derived",
+        "source_type": "agent_generated_design",
         "confidence": "high",
         "geometry_role": "design_proposal",
-        "level": "expressway"
+        "level": "expressway",
+        "road_class": "branch"
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [116.3250, 40.0200],
-          [116.3350, 40.0200],
-          [116.3450, 40.0200],
-          [116.3550, 40.0200],
-          [116.3650, 40.0200]
+          [
+            116.325,
+            40.02
+          ],
+          [
+            116.335,
+            40.02
+          ],
+          [
+            116.345,
+            40.02
+          ],
+          [
+            116.355,
+            40.02
+          ],
+          [
+            116.365,
+            40.02
+          ]
         ]
-      }
+      },
+      "id": "road_005"
     }
   ],
   "metadata": {

@@ -1,95 +1,730 @@
 {
-  "compliance_items": [
+  "schema_version": "0.1.0",
+  "requirements": [
     {
-      "id": "C001",
-      "requirement": "绿地率≥35%",
-      "value": "35.3%",
-      "compliance": "pass",
-      "evidence": "metrics.json#/spatial_metrics/green_rate/value",
-      "source": "GB 50420-2007 城市绿地设计规范"
+      "requirement_id": "REQ-01",
+      "title_zh": "设计依据与资料清单",
+      "mandatory": true,
+      "report_sections": [
+        "设计依据与资料清单"
+      ],
+      "geojson_layers": [
+        "LAND_USE"
+      ],
+      "metrics": [
+        "site_area_sqm"
+      ],
+      "drawings": [
+        "site-overview"
+      ],
+      "visual_sections": [
+        "总览地图"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "assumption_ids": [
+        "ASSUME-001"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION"
+      ]
     },
     {
-      "id": "C002",
-      "requirement": "容积率控制（核心区2.5-4.0）",
-      "value": "核心区平均3.5",
-      "compliance": "pass",
-      "evidence": "metrics.json#/spatial_metrics/far_core_zone/value",
-      "source": "北京市控制性详细规划编制技术要点"
+      "requirement_id": "REQ-02",
+      "title_zh": "三层范围工作框架",
+      "mandatory": true,
+      "report_sections": [
+        "三层范围工作框架"
+      ],
+      "geojson_layers": [
+        "LAND_USE"
+      ],
+      "metrics": [
+        "green_ratio"
+      ],
+      "drawings": [
+        "site-overview"
+      ],
+      "visual_sections": [
+        "三层范围"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "assumption_ids": [
+        "ASSUME-001"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION"
+      ]
     },
     {
-      "id": "C003",
-      "requirement": "容积率控制（一般区1.5-2.5）",
-      "value": "一般区平均2.2",
-      "compliance": "pass",
-      "evidence": "metrics.json#/spatial_metrics/far_general_zone/value",
-      "source": "北京市控制性详细规划编制技术要点"
+      "requirement_id": "REQ-03",
+      "title_zh": "统筹研究范围产业与未来城市研究",
+      "mandatory": true,
+      "report_sections": [
+        "统筹研究范围产业与未来城市研究"
+      ],
+      "geojson_layers": [
+        "LAND_USE"
+      ],
+      "metrics": [
+        "site_area_sqm"
+      ],
+      "drawings": [
+        "land-use-structure"
+      ],
+      "visual_sections": [
+        "用地分区"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "assumption_ids": [
+        "ASSUME-001"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION"
+      ]
     },
     {
-      "id": "C004",
-      "requirement": "建筑密度≤40%",
-      "value": "平均35%",
-      "compliance": "pass",
-      "evidence": "metrics.json#/spatial_metrics/building_density/value",
-      "source": "GB 50180-2018 城市居住区规划设计标准"
+      "requirement_id": "REQ-04",
+      "title_zh": "总体设计范围城市更新与控规深度城市设计",
+      "mandatory": true,
+      "report_sections": [
+        "总体设计范围城市更新与控规深度城市设计"
+      ],
+      "geojson_layers": [
+        "LAND_USE"
+      ],
+      "metrics": [
+        "building_density"
+      ],
+      "drawings": [
+        "land-use-structure"
+      ],
+      "visual_sections": [
+        "用地分区"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "assumption_ids": [
+        "ASSUME-001"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION"
+      ]
     },
     {
-      "id": "C005",
-      "requirement": "教育设施500m覆盖",
-      "value": "100%覆盖",
-      "compliance": "pass",
-      "evidence": "metrics.json#/facility_metrics/education_coverage_500m/value",
-      "source": "GB 50180-2018 城市居住区规划设计标准"
+      "requirement_id": "REQ-05",
+      "title_zh": "重点区域详细设计",
+      "mandatory": true,
+      "report_sections": [
+        "重点区域详细设计"
+      ],
+      "geojson_layers": [
+        "BUILDING_FOOTPRINT"
+      ],
+      "metrics": [
+        "key_area_zhongguancun_sqm"
+      ],
+      "drawings": [
+        "key-areas"
+      ],
+      "visual_sections": [
+        "重点区域"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "assumption_ids": [
+        "ASSUME-001"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION"
+      ]
     },
     {
-      "id": "C006",
-      "requirement": "医疗设施1000m覆盖",
-      "value": "100%覆盖",
-      "compliance": "pass",
-      "evidence": "metrics.json#/facility_metrics/medical_coverage_1000m/value",
-      "source": "GB 50180-2018 城市居住区规划设计标准"
+      "requirement_id": "REQ-06",
+      "title_zh": "中关村AI加速核心区",
+      "mandatory": true,
+      "report_sections": [
+        "重点区域详细设计"
+      ],
+      "geojson_layers": [
+        "BUILDING_FOOTPRINT"
+      ],
+      "metrics": [
+        "key_area_zhongguancun_sqm"
+      ],
+      "drawings": [
+        "key-areas"
+      ],
+      "visual_sections": [
+        "重点区域"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "assumption_ids": [
+        "ASSUME-001"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION"
+      ]
     },
     {
-      "id": "C007",
-      "requirement": "公园绿地500m覆盖",
-      "value": "100%覆盖",
-      "compliance": "pass",
-      "evidence": "metrics.json#/facility_metrics/park_coverage_500m/value",
-      "source": "GB 50420-2007 城市绿地设计规范"
+      "requirement_id": "REQ-07",
+      "title_zh": "北京AI源头社区",
+      "mandatory": true,
+      "report_sections": [
+        "重点区域详细设计"
+      ],
+      "geojson_layers": [
+        "BUILDING_FOOTPRINT"
+      ],
+      "metrics": [
+        "key_area_ai_origin_sqm"
+      ],
+      "drawings": [
+        "key-areas"
+      ],
+      "visual_sections": [
+        "重点区域"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "assumption_ids": [
+        "ASSUME-001"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION"
+      ]
     },
     {
-      "id": "C008",
-      "requirement": "道路系统符合规范",
-      "value": "符合四级道路等级体系",
-      "compliance": "pass",
-      "evidence": "proposal.md#6.1",
-      "source": "GB 50220-95 城市道路交通规划设计规范"
+      "requirement_id": "REQ-08",
+      "title_zh": "大钟寺AI产业集群",
+      "mandatory": true,
+      "report_sections": [
+        "重点区域详细设计"
+      ],
+      "geojson_layers": [
+        "BUILDING_FOOTPRINT"
+      ],
+      "metrics": [
+        "key_area_dazhongsi_sqm"
+      ],
+      "drawings": [
+        "key-areas"
+      ],
+      "visual_sections": [
+        "重点区域"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "assumption_ids": [
+        "ASSUME-001"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION"
+      ]
     },
     {
-      "id": "C009",
-      "requirement": "用地分类符合国标",
-      "value": "采用GB 50137标准分类",
-      "compliance": "pass",
-      "evidence": "metrics.json#/land_use_breakdown",
-      "source": "GB 50137 城市用地分类与规划建设用地标准"
+      "requirement_id": "REQ-09",
+      "title_zh": "AI创新生态、人才画像与AI+场景",
+      "mandatory": true,
+      "report_sections": [
+        "AI 创新生态、人才画像与 AI+ 场景"
+      ],
+      "geojson_layers": [
+        "LAND_USE"
+      ],
+      "metrics": [
+        "average_far"
+      ],
+      "drawings": [
+        "key-areas"
+      ],
+      "visual_sections": [
+        "AI 场景"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "assumption_ids": [
+        "ASSUME-001"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION"
+      ]
     },
     {
-      "id": "C010",
-      "requirement": "双语文档完整",
-      "value": "中英文版本齐全",
-      "compliance": "pass",
-      "evidence": "proposal.md + proposal.en.md",
-      "source": "SKILL.md要求"
+      "requirement_id": "REQ-10",
+      "title_zh": "用地布局方案",
+      "mandatory": true,
+      "report_sections": [
+        "用地、建筑规模与拆改留方案"
+      ],
+      "geojson_layers": [
+        "LAND_USE"
+      ],
+      "metrics": [
+        "site_area_sqm"
+      ],
+      "drawings": [
+        "land-use-structure"
+      ],
+      "visual_sections": [
+        "用地分区"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "assumption_ids": [
+        "ASSUME-001"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION"
+      ]
+    },
+    {
+      "requirement_id": "REQ-11",
+      "title_zh": "建筑规模控制",
+      "mandatory": true,
+      "report_sections": [
+        "用地、建筑规模与拆改留方案"
+      ],
+      "geojson_layers": [
+        "BUILDING_FOOTPRINT"
+      ],
+      "metrics": [
+        "building_density"
+      ],
+      "drawings": [
+        "key-areas"
+      ],
+      "visual_sections": [
+        "建筑"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "assumption_ids": [
+        "ASSUME-001"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION"
+      ]
+    },
+    {
+      "requirement_id": "REQ-12",
+      "title_zh": "拆改留策略",
+      "mandatory": true,
+      "report_sections": [
+        "用地、建筑规模与拆改留方案"
+      ],
+      "geojson_layers": [
+        "BUILDING_FOOTPRINT"
+      ],
+      "metrics": [
+        "average_far"
+      ],
+      "drawings": [
+        "key-areas"
+      ],
+      "visual_sections": [
+        "建筑"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "assumption_ids": [
+        "ASSUME-001"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION"
+      ]
+    },
+    {
+      "requirement_id": "REQ-13",
+      "title_zh": "交通系统",
+      "mandatory": true,
+      "report_sections": [
+        "交通、轨道、市政与公共服务设施"
+      ],
+      "geojson_layers": [
+        "ROAD_CENTERLINE"
+      ],
+      "metrics": [
+        "road_coverage"
+      ],
+      "drawings": [
+        "mobility-bluegreen"
+      ],
+      "visual_sections": [
+        "交通慢行"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "assumption_ids": [
+        "ASSUME-001"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION"
+      ]
+    },
+    {
+      "requirement_id": "REQ-14",
+      "title_zh": "轨道交通接驳",
+      "mandatory": true,
+      "report_sections": [
+        "交通、轨道、市政与公共服务设施"
+      ],
+      "geojson_layers": [
+        "ROAD_CENTERLINE"
+      ],
+      "metrics": [
+        "railway_length_m"
+      ],
+      "drawings": [
+        "mobility-bluegreen"
+      ],
+      "visual_sections": [
+        "交通慢行"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "assumption_ids": [
+        "ASSUME-001"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION"
+      ]
+    },
+    {
+      "requirement_id": "REQ-15",
+      "title_zh": "蓝绿空间",
+      "mandatory": true,
+      "report_sections": [
+        "蓝绿空间、公共空间与城市风貌"
+      ],
+      "geojson_layers": [
+        "GREEN_SPACE"
+      ],
+      "metrics": [
+        "green_ratio"
+      ],
+      "drawings": [
+        "mobility-bluegreen"
+      ],
+      "visual_sections": [
+        "蓝绿公共空间"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "assumption_ids": [
+        "ASSUME-001"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION"
+      ]
+    },
+    {
+      "requirement_id": "REQ-16",
+      "title_zh": "公共空间",
+      "mandatory": true,
+      "report_sections": [
+        "蓝绿空间、公共空间与城市风貌"
+      ],
+      "geojson_layers": [
+        "PUBLIC_SPACE"
+      ],
+      "metrics": [
+        "public_space_ratio"
+      ],
+      "drawings": [
+        "mobility-bluegreen"
+      ],
+      "visual_sections": [
+        "蓝绿公共空间"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "assumption_ids": [
+        "ASSUME-001"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION"
+      ]
+    },
+    {
+      "requirement_id": "REQ-17",
+      "title_zh": "城市风貌",
+      "mandatory": true,
+      "report_sections": [
+        "蓝绿空间、公共空间与城市风貌"
+      ],
+      "geojson_layers": [
+        "GREEN_SPACE"
+      ],
+      "metrics": [
+        "green_ratio"
+      ],
+      "drawings": [
+        "site-overview"
+      ],
+      "visual_sections": [
+        "蓝绿公共空间"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "assumption_ids": [
+        "ASSUME-001"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION"
+      ]
+    },
+    {
+      "requirement_id": "REQ-18",
+      "title_zh": "更新项目清单",
+      "mandatory": true,
+      "report_sections": [
+        "更新项目清单、实施政策与分期计划"
+      ],
+      "geojson_layers": [
+        "BUILDING_FOOTPRINT"
+      ],
+      "metrics": [
+        "phase_1_area_sqm"
+      ],
+      "drawings": [
+        "key-areas"
+      ],
+      "visual_sections": [
+        "更新项目"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "assumption_ids": [
+        "ASSUME-001"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION"
+      ]
+    },
+    {
+      "requirement_id": "REQ-19",
+      "title_zh": "实施政策",
+      "mandatory": true,
+      "report_sections": [
+        "更新项目清单、实施政策与分期计划"
+      ],
+      "geojson_layers": [
+        "LAND_USE"
+      ],
+      "metrics": [
+        "phase_1_area_sqm"
+      ],
+      "drawings": [
+        "metrics-evidence"
+      ],
+      "visual_sections": [
+        "更新项目"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "assumption_ids": [
+        "ASSUME-001"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION"
+      ]
+    },
+    {
+      "requirement_id": "REQ-20",
+      "title_zh": "分期计划一期",
+      "mandatory": true,
+      "report_sections": [
+        "更新项目清单、实施政策与分期计划"
+      ],
+      "geojson_layers": [
+        "PHASE"
+      ],
+      "metrics": [
+        "phase_1_area_sqm"
+      ],
+      "drawings": [
+        "metrics-evidence"
+      ],
+      "visual_sections": [
+        "更新项目"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "assumption_ids": [
+        "ASSUME-001"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION"
+      ]
+    },
+    {
+      "requirement_id": "REQ-21",
+      "title_zh": "分期计划二期",
+      "mandatory": true,
+      "report_sections": [
+        "更新项目清单、实施政策与分期计划"
+      ],
+      "geojson_layers": [
+        "PHASE"
+      ],
+      "metrics": [
+        "phase_2_area_sqm"
+      ],
+      "drawings": [
+        "metrics-evidence"
+      ],
+      "visual_sections": [
+        "更新项目"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "assumption_ids": [
+        "ASSUME-001"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION"
+      ]
+    },
+    {
+      "requirement_id": "REQ-22",
+      "title_zh": "分期计划三期",
+      "mandatory": true,
+      "report_sections": [
+        "更新项目清单、实施政策与分期计划"
+      ],
+      "geojson_layers": [
+        "PHASE"
+      ],
+      "metrics": [
+        "phase_3_area_sqm"
+      ],
+      "drawings": [
+        "metrics-evidence"
+      ],
+      "visual_sections": [
+        "更新项目"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "assumption_ids": [
+        "ASSUME-001"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION"
+      ]
+    },
+    {
+      "requirement_id": "REQ-23",
+      "title_zh": "指标体系",
+      "mandatory": true,
+      "report_sections": [
+        "指标体系、面积复算与合规矩阵"
+      ],
+      "geojson_layers": [
+        "LAND_USE"
+      ],
+      "metrics": [
+        "site_area_sqm"
+      ],
+      "drawings": [
+        "metrics-evidence"
+      ],
+      "visual_sections": [
+        "核心指标"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "assumption_ids": [
+        "ASSUME-001"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION"
+      ]
+    },
+    {
+      "requirement_id": "REQ-24",
+      "title_zh": "风险与版权",
+      "mandatory": true,
+      "report_sections": [
+        "风险、版权与合规说明"
+      ],
+      "geojson_layers": [
+        "LAND_USE"
+      ],
+      "metrics": [
+        "green_ratio"
+      ],
+      "drawings": [
+        "metrics-evidence"
+      ],
+      "visual_sections": [
+        "核心指标"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "assumption_ids": [
+        "ASSUME-001"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION"
+      ]
+    },
+    {
+      "requirement_id": "REQ-25",
+      "title_zh": "参考资料",
+      "mandatory": true,
+      "report_sections": [
+        "参考资料"
+      ],
+      "geojson_layers": [
+        "LAND_USE"
+      ],
+      "metrics": [
+        "site_area_sqm"
+      ],
+      "drawings": [
+        "site-overview"
+      ],
+      "visual_sections": [
+        "来源"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "assumption_ids": [
+        "ASSUME-001"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION"
+      ]
     }
-  ],
-  "summary": {
-    "total_items": 10,
-    "passed": 10,
-    "failed": 0,
-    "compliance_rate": "100%"
-  },
-  "metadata": {
-    "created_at": "2026-08-12T22:30:00+08:00",
-    "created_by": "zihanCui1215",
-    "agent_name": "WorkBuddy AI Agent"
-  }
+  ]
 }

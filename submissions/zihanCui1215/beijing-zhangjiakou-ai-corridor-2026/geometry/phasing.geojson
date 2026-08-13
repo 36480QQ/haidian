@@ -1,13 +1,18 @@
 {
   "type": "FeatureCollection",
-  "name": "phasing",
-  "crs": {"type": "name", "properties": {"name": "urn:ogc:def:crs:OGC::CRS84"}},
+  "name": "PHASE",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC::CRS84"
+    }
+  },
   "features": [
     {
       "type": "Feature",
       "properties": {
         "id": "phase_001",
-        "layer": "phasing",
+        "layer": "PHASE",
         "name": "一期建设区（2027-2030）",
         "name_en": "Phase I Construction Zone (2027-2030)",
         "phase": 1,
@@ -15,27 +20,45 @@
         "area_km2": 14.7,
         "priority": "high",
         "description": "基础设施、中关村核心区启动、AI源头社区框架",
-        "source_type": "derived",
+        "source_type": "agent_generated_design",
         "confidence": "high",
         "geometry_role": "design_proposal",
         "official_boundary": false
       },
       "geometry": {
         "type": "Polygon",
-        "coordinates": [[
-          [116.3300, 39.9850],
-          [116.3550, 39.9850],
-          [116.3550, 40.0200],
-          [116.3300, 40.0200],
-          [116.3300, 39.9850]
-        ]]
-      }
+        "coordinates": [
+          [
+            [
+              116.33,
+              39.985
+            ],
+            [
+              116.355,
+              39.985
+            ],
+            [
+              116.355,
+              40.02
+            ],
+            [
+              116.33,
+              40.02
+            ],
+            [
+              116.33,
+              39.985
+            ]
+          ]
+        ]
+      },
+      "id": "phase_001"
     },
     {
       "type": "Feature",
       "properties": {
         "id": "phase_002",
-        "layer": "phasing",
+        "layer": "PHASE",
         "name": "二期建设区（2030-2035）",
         "name_en": "Phase II Construction Zone (2030-2035)",
         "phase": 2,
@@ -43,27 +66,45 @@
         "area_km2": 5.8,
         "priority": "medium",
         "description": "大钟寺产业集群、产业应用全面铺开、开源社区成熟",
-        "source_type": "derived",
+        "source_type": "agent_generated_design",
         "confidence": "high",
         "geometry_role": "design_proposal",
         "official_boundary": false
       },
       "geometry": {
         "type": "Polygon",
-        "coordinates": [[
-          [116.3350, 39.9650],
-          [116.3600, 39.9650],
-          [116.3600, 39.9850],
-          [116.3350, 39.9850],
-          [116.3350, 39.9650]
-        ]]
-      }
+        "coordinates": [
+          [
+            [
+              116.335,
+              39.965
+            ],
+            [
+              116.36,
+              39.965
+            ],
+            [
+              116.36,
+              39.985
+            ],
+            [
+              116.335,
+              39.985
+            ],
+            [
+              116.335,
+              39.965
+            ]
+          ]
+        ]
+      },
+      "id": "phase_002"
     },
     {
       "type": "Feature",
       "properties": {
         "id": "phase_003",
-        "layer": "phasing",
+        "layer": "PHASE",
         "name": "三期建设区（2035-2040）",
         "name_en": "Phase III Construction Zone (2035-2040)",
         "phase": 3,
@@ -71,29 +112,71 @@
         "area_km2": 23.1,
         "priority": "low",
         "description": "品质提升、两翼完善、品牌塑造",
-        "source_type": "derived",
+        "source_type": "agent_generated_design",
         "confidence": "high",
         "geometry_role": "design_proposal",
         "official_boundary": false
       },
       "geometry": {
         "type": "Polygon",
-        "coordinates": [[
-          [116.3250, 39.9600],
-          [116.3650, 39.9600],
-          [116.3650, 39.9650],
-          [116.3600, 39.9650],
-          [116.3600, 39.9850],
-          [116.3550, 39.9850],
-          [116.3550, 39.9650],
-          [116.3350, 39.9650],
-          [116.3350, 39.9850],
-          [116.3300, 39.9850],
-          [116.3300, 40.0200],
-          [116.3250, 40.0200],
-          [116.3250, 39.9600]
-        ]]
-      }
+        "coordinates": [
+          [
+            [
+              116.325,
+              39.96
+            ],
+            [
+              116.365,
+              39.96
+            ],
+            [
+              116.365,
+              39.965
+            ],
+            [
+              116.36,
+              39.965
+            ],
+            [
+              116.36,
+              39.985
+            ],
+            [
+              116.355,
+              39.985
+            ],
+            [
+              116.355,
+              39.965
+            ],
+            [
+              116.335,
+              39.965
+            ],
+            [
+              116.335,
+              39.985
+            ],
+            [
+              116.33,
+              39.985
+            ],
+            [
+              116.33,
+              40.02
+            ],
+            [
+              116.325,
+              40.02
+            ],
+            [
+              116.325,
+              39.96
+            ]
+          ]
+        ]
+      },
+      "id": "phase_003"
     }
   ],
   "metadata": {

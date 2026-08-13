@@ -1,6 +1,6 @@
 {
   "type": "FeatureCollection",
-  "name": "public_space",
+  "name": "PUBLIC_SPACE",
   "crs": {
     "type": "name",
     "properties": {
@@ -12,74 +12,128 @@
       "type": "Feature",
       "properties": {
         "id": "pub_001",
-        "layer": "public_space",
+        "layer": "PUBLIC_SPACE",
         "name": "五道口站遗址广场",
         "name_en": "Wudaokou Station Heritage Plaza",
         "type": "城市广场",
         "area_ha": 1.2,
-        "source_type": "derived",
+        "source_type": "agent_generated_design",
         "confidence": "high",
         "geometry_role": "design_proposal",
         "note": "智能体贡献荣誉墙所在地"
       },
       "geometry": {
         "type": "Polygon",
-        "coordinates": [[
-          [116.3410, 39.9870],
-          [116.3440, 39.9870],
-          [116.3440, 39.9890],
-          [116.3410, 39.9890],
-          [116.3410, 39.9870]
-        ]]
-      }
+        "coordinates": [
+          [
+            [
+              116.341,
+              39.987
+            ],
+            [
+              116.344,
+              39.987
+            ],
+            [
+              116.344,
+              39.989
+            ],
+            [
+              116.341,
+              39.989
+            ],
+            [
+              116.341,
+              39.987
+            ]
+          ]
+        ]
+      },
+      "id": "pub_001"
     },
     {
       "type": "Feature",
       "properties": {
         "id": "pub_002",
-        "layer": "public_space",
+        "layer": "PUBLIC_SPACE",
         "name": "开源成果展示节点1",
         "name_en": "Open Source Achievement Node 1",
         "type": "展示空间",
         "area_ha": 0.5,
-        "source_type": "derived",
+        "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal"
       },
       "geometry": {
         "type": "Polygon",
-        "coordinates": [[
-          [116.3350, 40.0050],
-          [116.3360, 40.0050],
-          [116.3360, 40.0060],
-          [116.3350, 40.0060],
-          [116.3350, 40.0050]
-        ]]
-      }
+        "coordinates": [
+          [
+            [
+              116.335,
+              40.005
+            ],
+            [
+              116.336,
+              40.005
+            ],
+            [
+              116.336,
+              40.006
+            ],
+            [
+              116.335,
+              40.006
+            ],
+            [
+              116.335,
+              40.005
+            ]
+          ]
+        ]
+      },
+      "id": "pub_002"
     },
     {
       "type": "Feature",
       "properties": {
         "id": "pub_003",
-        "layer": "public_space",
+        "layer": "PUBLIC_SPACE",
         "name": "大钟寺文化广场",
         "name_en": "Dazhongsi Cultural Plaza",
         "type": "城市广场",
         "area_ha": 0.8,
-        "source_type": "derived",
+        "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal"
       },
       "geometry": {
         "type": "Polygon",
-        "coordinates": [[
-          [116.3430, 39.9720],
-          [116.3450, 39.9720],
-          [116.3450, 39.9735],
-          [116.3430, 39.9735],
-          [116.3430, 39.9720]
-        ]]
-      }
+        "coordinates": [
+          [
+            [
+              116.343,
+              39.972
+            ],
+            [
+              116.345,
+              39.972
+            ],
+            [
+              116.345,
+              39.9735
+            ],
+            [
+              116.343,
+              39.9735
+            ],
+            [
+              116.343,
+              39.972
+            ]
+          ]
+        ]
+      },
+      "id": "pub_003"
     }
   ],
   "metadata": {

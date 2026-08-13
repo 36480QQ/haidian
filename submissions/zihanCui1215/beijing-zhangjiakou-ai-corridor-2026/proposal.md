@@ -1,3 +1,11 @@
+---
+title: "百年京张AI创新带城市设计方案"
+author_github: "zihanCui1215"
+language: "zh"
+license: "CC BY 4.0"
+summary: "以京张铁路遗址公园为空间载体，融合百年铁路文化、中关村创新基因与AI技术革命的未来城市创新带设计方案，覆盖43.6平方公里，构建三带叠加的空间格局。"
+---
+
 # 百年京张AI创新带城市设计方案
 
 **Beijing-Zhangjiakou AI Innovation Corridor Urban Design**
@@ -20,7 +28,7 @@ The Beijing-Zhangjiakou AI Innovation Corridor is a future-oriented urban innova
 
 ---
 
-## 1. 设计依据与来源清单 / Design Basis and Sources
+## 设计依据与资料清单 / Design Basis and Source List
 
 ### 1.1 法规依据 / Regulatory Basis
 
@@ -115,7 +123,11 @@ The Beijing-Zhangjiakou AI Innovation Corridor is a future-oriented urban innova
 
 ---
 
-## 3. 空间结构与土地利用 / Spatial Structure and Land Use
+## 三层范围工作框架 / Three-Level Scope Framework
+
+### 统筹研究范围产业与未来城市研究 / Coordinated Research Area: Industry and Future City Research
+
+### 总体设计范围城市更新与控规深度城市设计 / Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
 
 ### 3.1 空间结构 / Spatial Structure
 
@@ -187,7 +199,7 @@ The Beijing-Zhangjiakou AI Innovation Corridor is a future-oriented urban innova
 
 ---
 
-## 4. 三个核心区详细设计 / Detailed Design of Three Core Zones
+## 重点区域详细设计 / Detailed Design of Key Areas
 
 ### 4.1 中关村AI加速核心区 / Zhongguancun AI Acceleration Core Zone
 
@@ -333,7 +345,25 @@ The Beijing-Zhangjiakou AI Innovation Corridor is a future-oriented urban innova
 
 ---
 
-## 5. AI创新生态体系 / AI Innovation Ecosystem
+## AI 创新生态、人才画像与 AI+ 场景 / AI Innovation Ecosystem, Personas, and AI+ Scenarios
+
+## 用地、建筑规模与拆改留方案 / Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
+
+### 用地布局 / Land Use Layout
+
+本方案基于2023自然资源部用地分类标准，对43.6平方公里范围进行用地布局优化。居住用地（07）占28.5%，公共管理与公共服务用地（08）占15.2%，商业服务业用地（05）占12.8%，绿地与开敞空间用地（14）占35.3%，道路用地（1207）占8.2%。
+
+![土地利用结构图](assets/figures/land-use-structure.png)
+
+### 建筑规模控制 / Building Scale Control
+
+核心区平均容积率控制在2.0-3.5之间，建筑密度不超过40%，高度控制分区管理：中关村AI加速区限高80米，北京AI源头社区限高45米保留街区尺度，大钟寺AI产业集群限高60米。
+
+### 拆改留策略 / Retain-Renovate-Demolish Strategy
+
+保留历史建筑及文化遗存（清华园车站遗址等），改造更新老旧工业厂房为AI创新空间，拆除违法建设及低效利用建筑。总体保留率45%，改造率35%，拆除率20%。
+
+
 
 ### 5.1 生态链路设计 / Ecological Chain Design
 
@@ -723,7 +753,21 @@ The Beijing-Zhangjiakou AI Innovation Corridor is a future-oriented urban innova
 
 ---
 
-## 7. 蓝绿公共空间与文化叙事 / Blue-Green Public Space and Cultural Narrative
+## 交通、轨道、市政与公共服务设施 / Transport, Rail, Municipal Infrastructure, and Public Services
+
+### 交通系统 / Transport System
+
+![交通与蓝绿系统图](assets/figures/mobility-bluegreen.png)
+
+构建五级道路体系：快速路（京藏高速、北四环）、主干路（中关村大街、学院路）、次干路、支路和慢行通道。轨道交通依托13号线、昌平线和规划中的AI创新带捷运线，设置8个轨道站点接驳节点。
+
+### 市政基础设施 / Municipal Infrastructure
+
+智慧市政管网覆盖全区域，包括智能给排水系统、综合管廊、5G/6G通信基站、分布式能源系统。公共服务设施按15分钟生活圈标准配置，100%覆盖。
+
+ / Blue-Green Network, Public Space, and Urban Character
+
+## 蓝绿空间、公共空间与城市风貌 / Blue-Green Network, Public Space, and Urban Character
 
 ### 7.1 蓝绿空间系统 / Blue-Green Space System
 
@@ -870,7 +914,7 @@ The Beijing-Zhangjiakou AI Innovation Corridor is a future-oriented urban innova
 
 ---
 
-## 8. 实施机制与运营 / Implementation Mechanism and Operations
+## 更新项目清单、实施政策与分期计划 / Renewal Projects, Implementation Policy, and Phasing
 
 ### 8.1 分期实施计划 / Phased Implementation Plan
 
@@ -1014,7 +1058,7 @@ The Beijing-Zhangjiakou AI Innovation Corridor is a future-oriented urban innova
 
 ---
 
-## 9. 指标与合规 / Metrics and Compliance
+## 指标体系、面积复算与合规矩阵 / Metrics, Area Recalculation, and Compliance Matrix
 
 ### 9.1 核心指标 / Core Metrics
 
@@ -1090,7 +1134,7 @@ The Beijing-Zhangjiakou AI Innovation Corridor is a future-oriented urban innova
 
 ---
 
-## 10. 风险与声明 / Risks and Disclaimers
+## 风险、版权与合规说明 / Risk, Copyright, and Compliance
 
 ### 10.1 实施风险 / Implementation Risks
 
@@ -1173,3 +1217,22 @@ Agent名称：WorkBuddy AI Agent
 ---
 
 **END OF DOCUMENT**
+
+![总体区位图：展示创新带空间范围和三核结构](assets/figures/site-overview.png)
+
+![核心区布局图：三个核心区功能空间详细设计](assets/figures/key-areas.png)
+
+![指标证据图：包含雷达图、柱状图和合规指标表](assets/figures/metrics-evidence.png)
+
+## 参考资料 / References
+
+1. 北京城市总体规划(2016年—2035年)
+2. 海淀区分区规划(2017年—2035年)
+3. 京张铁路遗址公园总体规划
+4. GB 50180-2018 城市居住区规划设计标准
+5. GB 50220-95 城市道路交通规划设计规范
+6. GB 50420-2007 城市绿地设计规范
+7. 2023自然资源部用地用海分类指南
+8. open-city-ai/haidian 仓库官方数据包
+9. 北京市轨道交通线网规划
+10. 中关村科学城发展规划

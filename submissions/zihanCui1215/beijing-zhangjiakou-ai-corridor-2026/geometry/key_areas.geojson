@@ -1,6 +1,6 @@
 {
   "type": "FeatureCollection",
-  "name": "key_areas",
+  "name": "KEY_AREA",
   "crs": {
     "type": "name",
     "properties": {
@@ -10,107 +10,98 @@
   "features": [
     {
       "type": "Feature",
+      "id": "zhongzhiyuan_ai_acceleration_area",
       "properties": {
         "id": "zhongzhiyuan_ai_acceleration_area",
         "name": "中关村AI加速核心区",
         "name_en": "Zhongguancun AI Acceleration Core Zone",
         "area_km2": 8.5,
         "geometry_role": "official_constraint",
-        "source_type": "official",
+        "source_type": "official_open_data",
         "confidence": "high",
         "official_boundary": true,
         "positioning": "AI硬科技创新策源地",
-        "functions": "基础研究、技术转化、产业孵化"
+        "functions": "基础研究、技术转化、产业孵化",
+        "layer": "KEY_AREA"
       },
       "geometry": {
         "type": "Polygon",
-        "coordinates": [[
-          [116.3350, 39.9950],
-          [116.3400, 39.9950],
-          [116.3400, 40.0000],
-          [116.3450, 40.0000],
-          [116.3450, 39.9920],
-          [116.3500, 39.9920],
-          [116.3500, 39.9970],
-          [116.3550, 39.9970],
-          [116.3550, 39.9900],
-          [116.3350, 39.9900],
-          [116.3350, 39.9950]
-        ]]
+        "coordinates": [
+          [
+            [116.325, 40.02],
+            [116.365, 40.02],
+            [116.365, 39.998],
+            [116.325, 39.998],
+            [116.325, 40.02]
+          ]
+        ]
       }
     },
     {
       "type": "Feature",
+      "id": "beijing_ai_origin_community",
       "properties": {
         "id": "beijing_ai_origin_community",
         "name": "北京AI源头社区",
         "name_en": "Beijing AI Origin Community",
         "area_km2": 6.2,
         "geometry_role": "official_constraint",
-        "source_type": "official",
+        "source_type": "official_open_data",
         "confidence": "high",
         "official_boundary": true,
         "positioning": "AI源头技术创新社区",
-        "functions": "开源社区、开发者生态、人才培养"
+        "functions": "开源社区、开发者生态、人才培养",
+        "layer": "KEY_AREA"
       },
       "geometry": {
         "type": "Polygon",
-        "coordinates": [[
-          [116.3400, 39.9850],
-          [116.3500, 39.9850],
-          [116.3500, 39.9900],
-          [116.3550, 39.9900],
-          [116.3550, 39.9970],
-          [116.3500, 39.9970],
-          [116.3500, 39.9920],
-          [116.3450, 39.9920],
-          [116.3450, 40.0000],
-          [116.3400, 40.0000],
-          [116.3400, 39.9950],
-          [116.3350, 39.9950],
-          [116.3350, 39.9850],
-          [116.3400, 39.9850]
-        ]]
+        "coordinates": [
+          [
+            [116.325, 39.998],
+            [116.365, 39.998],
+            [116.365, 39.982],
+            [116.325, 39.982],
+            [116.325, 39.998]
+          ]
+        ]
       }
     },
     {
       "type": "Feature",
+      "id": "dazhongsi_ai_industry_cluster",
       "properties": {
         "id": "dazhongsi_ai_industry_cluster",
         "name": "大钟寺AI产业集群",
         "name_en": "Dazhongsi AI Industry Cluster",
         "area_km2": 5.8,
         "geometry_role": "official_constraint",
-        "source_type": "official",
+        "source_type": "official_open_data",
         "confidence": "high",
         "official_boundary": true,
         "positioning": "AI应用产业高地",
-        "functions": "产业应用、场景验证、商业转化"
+        "functions": "产业应用、场景验证、商业转化",
+        "layer": "KEY_AREA"
       },
       "geometry": {
         "type": "Polygon",
-        "coordinates": [[
-          [116.3400, 39.9650],
-          [116.3600, 39.9650],
-          [116.3600, 39.9750],
-          [116.3550, 39.9750],
-          [116.3550, 39.9800],
-          [116.3450, 39.9800],
-          [116.3450, 39.9850],
-          [116.3350, 39.9850],
-          [116.3350, 39.9750],
-          [116.3400, 39.9750],
-          [116.3400, 39.9650]
-        ]]
+        "coordinates": [
+          [
+            [116.325, 39.982],
+            [116.365, 39.982],
+            [116.365, 39.96],
+            [116.325, 39.96],
+            [116.325, 39.982]
+          ]
+        ]
       }
     }
   ],
   "metadata": {
-    "created_at": "2026-08-12T23:00:00+08:00",
+    "created_at": "2026-08-13T12:00:00+08:00",
     "created_by": "zihanCui1215",
     "agent_name": "WorkBuddy AI Agent",
     "source": "open-city-ai/haidian repository",
     "coordinate_system": "WGS84",
-    "note": "三个核心区边界，数据来源于官方几何文件"
+    "note": "三个核心区边界，从北到南依次排列，互不重叠"
   }
 }

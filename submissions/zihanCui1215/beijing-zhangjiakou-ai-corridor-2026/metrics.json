@@ -1,205 +1,177 @@
 {
-  "spatial_metrics": {
-    "total_area": {
-      "value": 43.6,
-      "unit": "km²",
-      "source": "site_boundary.geojson",
-      "calculation_method": "geometry projection to EPSG:4548"
+  "schema_version": "0.1.0",
+  "units": {
+    "length": "m",
+    "area": "sqm"
+  },
+  "metrics": {
+    "site_area_sqm": {
+      "status": "known",
+      "value": 43600000,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "Sum of all site boundary polygons",
+      "confidence": "high",
+      "assumptions": [
+        "ASSUME-001"
+      ]
     },
-    "building_area": {
-      "value": 8830,
-      "unit": "万m²",
-      "source": "land_use.geojson + buildings.geojson",
-      "calculation_method": "sum of building areas by land use type"
+    "green_ratio": {
+      "status": "known",
+      "value": 0.353,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/green_space.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "green_space_area / site_area",
+      "confidence": "medium",
+      "assumptions": [
+        "ASSUME-002"
+      ]
     },
-    "average_far": {
-      "value": 2.8,
-      "unit": null,
-      "source": "calculated",
-      "calculation_method": "building_area / total_area / 10000"
-    },
-    "far_core_zone": {
-      "value": 3.5,
-      "unit": null,
-      "range": "3.0-4.0",
-      "note": "中关村AI加速区、北京AI源头社区、大钟寺AI产业集群"
-    },
-    "far_general_zone": {
-      "value": 2.2,
-      "unit": null,
-      "range": "1.5-2.5",
-      "note": "两翼支撑区、居住社区"
+    "public_space_ratio": {
+      "status": "known",
+      "value": 0.082,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/public_space.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "public_space_area / site_area",
+      "confidence": "medium",
+      "assumptions": [
+        "ASSUME-003"
+      ]
     },
     "building_density": {
-      "value": 35,
-      "unit": "%",
-      "source": "calculated",
-      "calculation_method": "building footprint / total area"
+      "status": "known",
+      "value": 0.35,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/buildings.geojson"
+      ],
+      "formula": "building_footprint_area / site_area",
+      "confidence": "medium",
+      "assumptions": [
+        "ASSUME-004"
+      ]
     },
-    "green_area": {
-      "value": 1540,
-      "unit": "ha",
-      "source": "green_space.geojson",
-      "calculation_method": "geometry area calculation"
+    "average_far": {
+      "status": "known",
+      "value": 2.8,
+      "unit": "ratio",
+      "source_files": [
+        "metrics.json"
+      ],
+      "formula": "total_floor_area / site_area",
+      "confidence": "medium",
+      "assumptions": [
+        "ASSUME-005"
+      ]
     },
-    "green_rate": {
-      "value": 35.3,
-      "unit": "%",
-      "source": "calculated",
-      "calculation_method": "green_area / total_area * 100"
+    "road_coverage": {
+      "status": "known",
+      "value": 0.082,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/roads.geojson"
+      ],
+      "formula": "road_area / site_area",
+      "confidence": "medium",
+      "assumptions": [
+        "ASSUME-006"
+      ]
     },
-    "road_area": {
-      "value": 300,
-      "unit": "ha",
-      "source": "roads.geojson",
-      "calculation_method": "geometry area calculation"
+    "key_area_zhongguancun_sqm": {
+      "status": "known",
+      "value": 8500000,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/key_areas.geojson"
+      ],
+      "formula": "Key area polygon area",
+      "confidence": "high",
+      "assumptions": []
     },
-    "road_rate": {
-      "value": 6.9,
-      "unit": "%",
-      "source": "calculated",
-      "calculation_method": "road_area / total_area * 100"
+    "key_area_ai_origin_sqm": {
+      "status": "known",
+      "value": 6200000,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/key_areas.geojson"
+      ],
+      "formula": "Key area polygon area",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "key_area_dazhongsi_sqm": {
+      "status": "known",
+      "value": 5800000,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/key_areas.geojson"
+      ],
+      "formula": "Key area polygon area",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "heritage_sites_count": {
+      "status": "known",
+      "value": 4,
+      "unit": "count",
+      "source_files": [
+        "geometry/constraints.geojson"
+      ],
+      "formula": "Count of heritage protection features",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "railway_length_m": {
+      "status": "known",
+      "value": 9300,
+      "unit": "m",
+      "source_files": [
+        "geometry/constraints.geojson"
+      ],
+      "formula": "Length of heritage railway alignment",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "phase_1_area_sqm": {
+      "status": "known",
+      "value": 15000000,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/phasing.geojson"
+      ],
+      "formula": "Phase 1 polygon area",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "phase_2_area_sqm": {
+      "status": "known",
+      "value": 16000000,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/phasing.geojson"
+      ],
+      "formula": "Phase 2 polygon area",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "phase_3_area_sqm": {
+      "status": "known",
+      "value": 12600000,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/phasing.geojson"
+      ],
+      "formula": "Phase 3 polygon area",
+      "confidence": "high",
+      "assumptions": []
     }
-  },
-  "industry_metrics": {
-    "ai_industry_land_area": {
-      "value": 1320,
-      "unit": "ha",
-      "note": "创新研发+商务办公+教育科研"
-    },
-    "ai_industry_land_ratio": {
-      "value": 30.3,
-      "unit": "%",
-      "calculation_method": "ai_industry_land_area / total_area * 100"
-    },
-    "expected_ai_companies": {
-      "value": 500,
-      "unit": "家",
-      "note": "2035年目标"
-    },
-    "high_tech_company_ratio": {
-      "value": 60,
-      "unit": "%",
-      "note": "目标值"
-    },
-    "expected_annual_output": {
-      "value": 500,
-      "unit": "亿元",
-      "note": "2035年目标"
-    }
-  },
-  "population_metrics": {
-    "employment_capacity": {
-      "value": 150000,
-      "unit": "人",
-      "range": "15-20万",
-      "calculation_method": "employment density 0.3-0.4 person/10m²"
-    },
-    "residence_capacity": {
-      "value": 80000,
-      "unit": "人",
-      "range": "8-10万",
-      "calculation_method": "per capita living area 30m²"
-    },
-    "daily_active_population": {
-      "value": 250000,
-      "unit": "人",
-      "range": "25-30万",
-      "note": "就业+居住+访客"
-    }
-  },
-  "facility_metrics": {
-    "education_coverage_500m": {
-      "value": 100,
-      "unit": "%",
-      "note": "500m半径覆盖率"
-    },
-    "medical_coverage_1000m": {
-      "value": 100,
-      "unit": "%",
-      "note": "1000m半径覆盖率"
-    },
-    "park_coverage_500m": {
-      "value": 100,
-      "unit": "%",
-      "note": "公园绿地500m覆盖"
-    },
-    "transit_coverage_800m": {
-      "value": 80,
-      "unit": "%",
-      "note": "轨道站点800m覆盖（主要覆盖核心区）"
-    }
-  },
-  "land_use_breakdown": [
-    {
-      "type": "创新研发用地",
-      "code": "M0",
-      "area_ha": 1320,
-      "ratio": 30.3,
-      "far": 3.5,
-      "building_area_wanm2": 4620
-    },
-    {
-      "type": "商务办公用地",
-      "code": "B2",
-      "area_ha": 530,
-      "ratio": 12.2,
-      "far": 3.0,
-      "building_area_wanm2": 1590
-    },
-    {
-      "type": "教育科研用地",
-      "code": "A3",
-      "area_ha": 450,
-      "ratio": 10.3,
-      "far": 2.0,
-      "building_area_wanm2": 900
-    },
-    {
-      "type": "文化设施用地",
-      "code": "A2",
-      "area_ha": 180,
-      "ratio": 4.1,
-      "far": 1.5,
-      "building_area_wanm2": 270
-    },
-    {
-      "type": "公园绿地",
-      "code": "G",
-      "area_ha": 1540,
-      "ratio": 35.3,
-      "far": null,
-      "building_area_wanm2": null
-    },
-    {
-      "type": "居住用地",
-      "code": "R",
-      "area_ha": 580,
-      "ratio": 13.3,
-      "far": 2.5,
-      "building_area_wanm2": 1450
-    },
-    {
-      "type": "道路与交通设施",
-      "code": "S",
-      "area_ha": 300,
-      "ratio": 6.9,
-      "far": null,
-      "building_area_wanm2": null
-    },
-    {
-      "type": "其他用地",
-      "code": "U",
-      "area_ha": 150,
-      "ratio": 3.4,
-      "far": null,
-      "building_area_wanm2": null
-    }
-  ],
-  "calculation_metadata": {
-    "coordinate_system": "EPSG:4548",
-    "calculation_date": "2026-08-12",
-    "software": "custom scripts",
-    "accuracy_note": "面积计算采用投影坐标系EPSG:4548，精度满足规划要求"
   }
 }

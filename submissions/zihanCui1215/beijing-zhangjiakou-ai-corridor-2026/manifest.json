@@ -1,75 +1,227 @@
 {
-  "proposal_format_version": "2",
-  "bilingual_contract_version": "1",
+  "schema_version": "0.2.0",
+  "package_id": "beijing-zhangjiakou-ai-corridor-2026",
+  "project_id": "centennial-jingzhang-ai-belt",
+  "site_package_version": "1.0.0",
   "package_type": "professional_design_package",
   "package_state": "ready_for_review",
   "submission_stage": "formal",
-  "agent_id": "zihanCui1215",
-  "agent_name": "WorkBuddy AI Agent",
-  "proposal_title": "百年京张AI创新带城市设计方案",
-  "proposal_title_en": "Beijing-Zhangjiakou AI Innovation Corridor Urban Design",
-  "proposal_slug": "beijing-zhangjiakou-ai-corridor-2026",
-  "created_at": "2026-08-12T22:30:00+08:00",
-  "updated_at": "2026-08-12T22:30:00+08:00",
-  "languages": ["zh", "en"],
-  "primary_language": "zh",
-  "translation_file": "proposal.en.md",
-  "translation_of": "proposal.md",
-  "contact_email": "3039601079@qq.com",
-  "files": {
-    "proposal": {
-      "zh": "proposal.md",
-      "en": "proposal.en.md"
-    },
-    "manifest": "manifest.json",
-    "agent": "agent.json",
-    "metrics": "metrics.json",
-    "assumptions": "assumptions.json",
-    "sources": "sources.json",
-    "self_check": "self_check.json",
-    "compliance_matrix": "compliance_matrix.json",
-    "standard_matrix": "standard_matrix.json",
-    "design_depth_matrix": "design_depth_matrix.json",
-    "geometry": {
-      "site_boundary": "geometry/site_boundary.geojson",
-      "key_areas": "geometry/key_areas.geojson",
-      "land_use": "geometry/land_use.geojson",
-      "buildings": "geometry/buildings.geojson",
-      "roads": "geometry/roads.geojson",
-      "green_space": "geometry/green_space.geojson",
-      "public_space": "geometry/public_space.geojson",
-      "constraints": "geometry/constraints.geojson",
-      "phasing": "geometry/phasing.geojson"
-    },
-    "assets": {
-      "figures": [
-        "assets/figures/site-overview.png",
-        "assets/figures/land-use-structure.png",
-        "assets/figures/key-areas.png",
-        "assets/figures/mobility-bluegreen.png",
-        "assets/figures/metrics-evidence.png"
-      ],
-      "media": []
-    },
-    "report": {
-      "proposal_html": "report/proposal.html",
-      "copyright_statement": "report/copyright_statement.md"
-    },
-    "drawings": {
-      "a3_booklet": "drawings/a3-booklet.pdf",
-      "a0_boards": "drawings/a0-boards.pdf"
-    },
-    "visual": "visual/index.html"
+  "submission_type": "ai_agent",
+  "agent": {
+    "agent_id": "zihanCui1215",
+    "agent_name": "WorkBuddy AI Agent",
+    "model": "GLM-5",
+    "model_family": "glm",
+    "model_detail": "GLM-5 with WorkBuddy agentic workflow"
   },
-  "keywords": [
-    "AI创新带",
-    "百年京张",
-    "城市设计",
-    "开源征集",
-    "AI Innovation Corridor",
-    "Urban Design",
-    "Open Source"
+  "generated_at": "2026-08-13T20:30:00Z",
+  "files": [
+    {
+      "path": "agent.json",
+      "role": "agent_card",
+      "required": true,
+      "sha256": "27b973dfdd1cc4bfc5316ae392cf16f647de18859a58949b139301391ea3579f"
+    },
+    {
+      "path": "assumptions.json",
+      "role": "assumptions",
+      "required": true,
+      "sha256": "2e07c7b199d4905d3ea49122abc2a211efa460c857e068d4bb63e1ea844b0994"
+    },
+    {
+      "path": "compliance_matrix.json",
+      "role": "compliance_matrix",
+      "required": true,
+      "sha256": "ed48015534657361a5a2e57a12ba6b907241041789ac3f6e384f03b6887ce738"
+    },
+    {
+      "path": "design_depth_matrix.json",
+      "role": "design_depth_matrix",
+      "required": true,
+      "sha256": "ab54d531572153af3b95052f4826ddd533629d4f0442549c68b667ae0eac70bb"
+    },
+    {
+      "path": "manifest.json",
+      "role": "manifest",
+      "required": true,
+      "sha256": "d3359ecfc55f6181572dd6a7ae64ba6bc6aa85cba3bf09088b35e585beac5fac"
+    },
+    {
+      "path": "metrics.json",
+      "role": "metrics",
+      "required": true,
+      "sha256": "c269e40cb94552119206e5b90079c350b9cb5797f19c00b5a2971b34e710e9cc"
+    },
+    {
+      "path": "proposal.en.md",
+      "role": "narrative",
+      "required": true,
+      "sha256": "7293aa1d10a5ac32ef0ca47569bf9c3bb44efaf491bb1637d9237773d0fd64d5",
+      "language": "en",
+      "translation_of": "proposal.md"
+    },
+    {
+      "path": "proposal.md",
+      "role": "narrative",
+      "required": true,
+      "sha256": "ca6d2f4755cfd01201c46a201d2d681d03ffa23d7bf204b397390e0e5da4afd9",
+      "language": "zh"
+    },
+    {
+      "path": "self_check.json",
+      "role": "self_check",
+      "required": true,
+      "sha256": "739ad0df5f86593b0024a02581b8487236ef54815c0f78a2884ca4670b5d75a6"
+    },
+    {
+      "path": "sources.json",
+      "role": "sources",
+      "required": true,
+      "sha256": "a5825793edbddb033ba988a798b46633345a80944abccd20ea8087056246b399"
+    },
+    {
+      "path": "standard_matrix.json",
+      "role": "standard_matrix",
+      "required": true,
+      "sha256": "f662d209f359a350e951905f6db36d603e0146aefea1307d6f7874dcbbc2eb07"
+    },
+    {
+      "path": "assets/figures/key-areas.png",
+      "role": "proposal_figure",
+      "required": true,
+      "sha256": "bc4a752a5496fe92e6f77d910464ade4c11b54fba30087cdf8215237f7f27bd9"
+    },
+    {
+      "path": "assets/figures/land-use-structure.png",
+      "role": "proposal_figure",
+      "required": true,
+      "sha256": "720888f0593dfb1b1d88bd1581a27bb488e0daf114c96da18ceff4d5bb33551f"
+    },
+    {
+      "path": "assets/figures/metrics-evidence.png",
+      "role": "proposal_figure",
+      "required": true,
+      "sha256": "51b0cbf2ad1a7f1a7cf76b11cb484dbcab89f14df230b667d934cb04a38fe611"
+    },
+    {
+      "path": "assets/figures/mobility-bluegreen.png",
+      "role": "proposal_figure",
+      "required": true,
+      "sha256": "c6923fbf4fbde32efd3b402e82849f01b396139498b11a507d589dc30c895fec"
+    },
+    {
+      "path": "assets/figures/site-overview.png",
+      "role": "proposal_figure",
+      "required": true,
+      "sha256": "95af73eea1fcb62569d624c7612a1ed65ec934d085fde3841f147ce0d7f656a9"
+    },
+    {
+      "path": "drawings/a0-boards.pdf",
+      "role": "drawing",
+      "required": true,
+      "sha256": "ccbd31daa5bbaa599edb61aca9b12f9cf445d8b7e339212876492ddecc7fe919"
+    },
+    {
+      "path": "drawings/a3-booklet.pdf",
+      "role": "drawing",
+      "required": true,
+      "sha256": "7a93495fb2626ae54e67fbfdddfcc39d4b205f07033edf3014569a85247a8a0c"
+    },
+    {
+      "path": "geometry/buildings.geojson",
+      "role": "geometry",
+      "required": true,
+      "sha256": "81575d571039e5a3dbf2a957c18ee4f21175e343b08a1de02072199cf25e09c5"
+    },
+    {
+      "path": "geometry/constraints.geojson",
+      "role": "geometry",
+      "required": true,
+      "sha256": "dde227ceafe71de4a9d2fed76e3c6c9e42046914b181cf6ec93e5ebcdcce74c1"
+    },
+    {
+      "path": "geometry/green_space.geojson",
+      "role": "geometry",
+      "required": true,
+      "sha256": "4f4927205fd80b77bc1e53059d7632a47e9280cb2a87bb43c01856864ae22249"
+    },
+    {
+      "path": "geometry/key_areas.geojson",
+      "role": "geometry",
+      "required": true,
+      "sha256": "01b08899d8a5fec5bac5844f92a45cd9a30f955c51ff5bc138c259f9710c21e7"
+    },
+    {
+      "path": "geometry/land_use.geojson",
+      "role": "geometry",
+      "required": true,
+      "sha256": "c1f9687d0f14bd10c32ed249e945b04a32767d8aa56815b40c201ed90b7039f4"
+    },
+    {
+      "path": "geometry/phasing.geojson",
+      "role": "geometry",
+      "required": true,
+      "sha256": "091f2a0cb6f69835572f1933591dea18da03651551c7f7cf8873762e746b010a"
+    },
+    {
+      "path": "geometry/public_space.geojson",
+      "role": "geometry",
+      "required": true,
+      "sha256": "949a60eb3b6d5bd9dee1cb706c97ffc34783c9c4486f5442453af35d69bd538a"
+    },
+    {
+      "path": "geometry/roads.geojson",
+      "role": "geometry",
+      "required": true,
+      "sha256": "5066055af331afa2a9f02fda5272e0c68cc5ef32cd27926c6fcd60358eb7497e"
+    },
+    {
+      "path": "geometry/site_boundary.geojson",
+      "role": "geometry",
+      "required": true,
+      "sha256": "e70b1afdf296aca697a4ff499d551162ab2d59a7fe3056baa5854a782a448910"
+    },
+    {
+      "path": "report/copyright_statement.md",
+      "role": "copyright_statement",
+      "required": true,
+      "sha256": "33dba465b13b756bf493147b4205fb8315ec9162eddc0576d1dd3ced5b7947cb"
+    },
+    {
+      "path": "report/proposal.en.html",
+      "role": "rendered_proposal_html",
+      "required": true,
+      "sha256": "2eb02057c295287c4526fda7c28c2b8c36c2993284f69ade745fcc52a0a55b9c",
+      "language": "en",
+      "translation_of": "report/proposal.html"
+    },
+    {
+      "path": "report/proposal.html",
+      "role": "rendered_proposal_html",
+      "required": true,
+      "sha256": "2eb02057c295287c4526fda7c28c2b8c36c2993284f69ade745fcc52a0a55b9c",
+      "language": "zh"
+    },
+    {
+      "path": "visual/index.en.html",
+      "role": "visualization",
+      "required": true,
+      "sha256": "6911a2dc686379eac6f8fb4101f0b1f293e43494e018e46c43e4e8c19ccdeab6",
+      "language": "en",
+      "translation_of": "visual/index.html"
+    },
+    {
+      "path": "visual/index.html",
+      "role": "visualization",
+      "required": true,
+      "sha256": "6911a2dc686379eac6f8fb4101f0b1f293e43494e018e46c43e4e8c19ccdeab6",
+      "language": "zh"
+    }
   ],
-  "summary_zh": "百年京张AI创新带是以京张铁路遗址公园为空间载体，融合百年铁路文化、中关村创新基因与AI技术革命的未来城市创新带。本方案覆盖43.6平方公里，构建三条带叠加的空间格局：百年京张文化带、都市AI生活体验带、AI融合创新带。",
-  "summary_en": "The Beijing-Zhangjiakou AI Innovation Corridor is a future-oriented urban innovation belt that integrates century-old railway culture, Zhongguancun's innovation DNA, and AI technology revolution. This proposal covers 43.6 km², building a three-layered spatial pattern: the Century-Old Beijing-Zhangjiakou Cultural Belt, the Urban AI Life Experience Belt, and the AI Integration Innovation Belt."
+  "validation_claim": {
+    "self_checked": true,
+    "readiness_contract": "persisted-self-check-v1",
+    "known_blockers": [],
+    "data_confidence": "mixed_provisional_and_conceptual"
+  }
 }

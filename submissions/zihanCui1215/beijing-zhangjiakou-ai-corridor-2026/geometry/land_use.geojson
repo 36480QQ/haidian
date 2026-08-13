@@ -1,6 +1,6 @@
 {
   "type": "FeatureCollection",
-  "name": "land_use",
+  "name": "LAND_USE",
   "crs": {
     "type": "name",
     "properties": {
@@ -12,243 +12,429 @@
       "type": "Feature",
       "properties": {
         "id": "lu_001",
-        "layer": "land_use",
+        "layer": "LAND_USE",
         "type": "创新研发用地",
         "type_en": "Innovation R&D Land",
         "code": "M0",
         "area_ha": 1320,
         "far": 3.5,
         "building_area_m2": 46200000,
-        "source_type": "derived",
+        "source_type": "agent_generated_design",
         "confidence": "high",
         "geometry_role": "design_proposal",
         "official_boundary": false,
-        "zone": "核心区"
+        "zone": "核心区",
+        "land_use_code": "16"
       },
       "geometry": {
         "type": "Polygon",
-        "coordinates": [[
-          [116.3300, 39.9900],
-          [116.3550, 39.9900],
-          [116.3550, 40.0100],
-          [116.3300, 40.0100],
-          [116.3300, 39.9900]
-        ]]
-      }
+        "coordinates": [
+          [
+            [
+              116.33,
+              39.99
+            ],
+            [
+              116.355,
+              39.99
+            ],
+            [
+              116.355,
+              40.01
+            ],
+            [
+              116.33,
+              40.01
+            ],
+            [
+              116.33,
+              39.99
+            ]
+          ]
+        ]
+      },
+      "id": "lu_001"
     },
     {
       "type": "Feature",
       "properties": {
         "id": "lu_002",
-        "layer": "land_use",
+        "layer": "LAND_USE",
         "type": "商务办公用地",
         "type_en": "Business Office Land",
         "code": "B2",
         "area_ha": 530,
         "far": 3.0,
         "building_area_m2": 15900000,
-        "source_type": "derived",
+        "source_type": "agent_generated_design",
         "confidence": "high",
         "geometry_role": "design_proposal",
         "official_boundary": false,
-        "zone": "大钟寺集群"
+        "zone": "大钟寺集群",
+        "land_use_code": "05"
       },
       "geometry": {
         "type": "Polygon",
-        "coordinates": [[
-          [116.3400, 39.9650],
-          [116.3550, 39.9650],
-          [116.3550, 39.9750],
-          [116.3400, 39.9750],
-          [116.3400, 39.9650]
-        ]]
-      }
+        "coordinates": [
+          [
+            [
+              116.34,
+              39.965
+            ],
+            [
+              116.355,
+              39.965
+            ],
+            [
+              116.355,
+              39.975
+            ],
+            [
+              116.34,
+              39.975
+            ],
+            [
+              116.34,
+              39.965
+            ]
+          ]
+        ]
+      },
+      "id": "lu_002"
     },
     {
       "type": "Feature",
       "properties": {
         "id": "lu_003",
-        "layer": "land_use",
+        "layer": "LAND_USE",
         "type": "教育科研用地",
         "type_en": "Education Research Land",
         "code": "A3",
         "area_ha": 450,
         "far": 2.0,
         "building_area_m2": 9000000,
-        "source_type": "derived",
+        "source_type": "agent_generated_design",
         "confidence": "high",
         "geometry_role": "design_proposal",
         "official_boundary": false,
-        "zone": "北翼高校区"
+        "zone": "北翼高校区",
+        "land_use_code": "0804"
       },
       "geometry": {
         "type": "Polygon",
-        "coordinates": [[
-          [116.3300, 40.0100],
-          [116.3450, 40.0100],
-          [116.3450, 40.0200],
-          [116.3300, 40.0200],
-          [116.3300, 40.0100]
-        ]]
-      }
+        "coordinates": [
+          [
+            [
+              116.33,
+              40.01
+            ],
+            [
+              116.345,
+              40.01
+            ],
+            [
+              116.345,
+              40.02
+            ],
+            [
+              116.33,
+              40.02
+            ],
+            [
+              116.33,
+              40.01
+            ]
+          ]
+        ]
+      },
+      "id": "lu_003"
     },
     {
       "type": "Feature",
       "properties": {
         "id": "lu_004",
-        "layer": "land_use",
+        "layer": "LAND_USE",
         "type": "文化设施用地",
         "type_en": "Cultural Facility Land",
         "code": "A2",
         "area_ha": 180,
         "far": 1.5,
         "building_area_m2": 2700000,
-        "source_type": "derived",
+        "source_type": "agent_generated_design",
         "confidence": "high",
         "geometry_role": "design_proposal",
         "official_boundary": false,
-        "zone": "遗址公园沿线"
+        "zone": "遗址公园沿线",
+        "land_use_code": "0802"
       },
       "geometry": {
         "type": "Polygon",
-        "coordinates": [[
-          [116.3350, 39.9750],
-          [116.3400, 39.9750],
-          [116.3400, 39.9900],
-          [116.3350, 39.9900],
-          [116.3350, 39.9750]
-        ]]
-      }
+        "coordinates": [
+          [
+            [
+              116.335,
+              39.975
+            ],
+            [
+              116.34,
+              39.975
+            ],
+            [
+              116.34,
+              39.99
+            ],
+            [
+              116.335,
+              39.99
+            ],
+            [
+              116.335,
+              39.975
+            ]
+          ]
+        ]
+      },
+      "id": "lu_004"
     },
     {
       "type": "Feature",
       "properties": {
         "id": "lu_005",
-        "layer": "land_use",
+        "layer": "LAND_USE",
         "type": "公园绿地",
         "type_en": "Park Green Space",
         "code": "G",
         "area_ha": 1540,
         "far": null,
         "building_area_m2": null,
-        "source_type": "derived",
+        "source_type": "agent_generated_design",
         "confidence": "high",
         "geometry_role": "design_proposal",
         "official_boundary": false,
-        "zone": "遗址公园主体"
+        "zone": "遗址公园主体",
+        "land_use_code": "14"
       },
       "geometry": {
         "type": "Polygon",
-        "coordinates": [[
-          [116.3250, 39.9600],
-          [116.3650, 39.9600],
-          [116.3650, 40.0200],
-          [116.3250, 40.0200],
-          [116.3250, 39.9600]
-        ]]
-      }
+        "coordinates": [
+          [
+            [
+              116.325,
+              39.96
+            ],
+            [
+              116.365,
+              39.96
+            ],
+            [
+              116.365,
+              40.02
+            ],
+            [
+              116.325,
+              40.02
+            ],
+            [
+              116.325,
+              39.96
+            ]
+          ]
+        ]
+      },
+      "id": "lu_005"
     },
     {
       "type": "Feature",
       "properties": {
         "id": "lu_006",
-        "layer": "land_use",
+        "layer": "LAND_USE",
         "type": "居住用地",
         "type_en": "Residential Land",
         "code": "R",
         "area_ha": 580,
         "far": 2.5,
         "building_area_m2": 14500000,
-        "source_type": "derived",
+        "source_type": "agent_generated_design",
         "confidence": "high",
         "geometry_role": "design_proposal",
         "official_boundary": false,
-        "zone": "两翼社区"
+        "zone": "两翼社区",
+        "land_use_code": "07"
       },
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
-          [[
-            [116.3250, 39.9800],
-            [116.3300, 39.9800],
-            [116.3300, 39.9900],
-            [116.3250, 39.9900],
-            [116.3250, 39.9800]
-          ]],
-          [[
-            [116.3550, 39.9600],
-            [116.3650, 39.9600],
-            [116.3650, 39.9700],
-            [116.3550, 39.9700],
-            [116.3550, 39.9600]
-          ]]
+          [
+            [
+              [
+                116.325,
+                39.98
+              ],
+              [
+                116.33,
+                39.98
+              ],
+              [
+                116.33,
+                39.99
+              ],
+              [
+                116.325,
+                39.99
+              ],
+              [
+                116.325,
+                39.98
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                116.355,
+                39.96
+              ],
+              [
+                116.365,
+                39.96
+              ],
+              [
+                116.365,
+                39.97
+              ],
+              [
+                116.355,
+                39.97
+              ],
+              [
+                116.355,
+                39.96
+              ]
+            ]
+          ]
         ]
-      }
+      },
+      "id": "lu_006"
     },
     {
       "type": "Feature",
       "properties": {
         "id": "lu_007",
-        "layer": "land_use",
+        "layer": "LAND_USE",
         "type": "道路与交通设施",
         "type_en": "Roads and Transportation",
         "code": "S",
         "area_ha": 300,
         "far": null,
         "building_area_m2": null,
-        "source_type": "derived",
+        "source_type": "agent_generated_design",
         "confidence": "high",
         "geometry_role": "design_proposal",
         "official_boundary": false,
-        "zone": "全域覆盖"
+        "zone": "全域覆盖",
+        "land_use_code": "1207"
       },
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
-          [[
-            [116.3300, 39.9700],
-            [116.3600, 39.9700],
-            [116.3600, 39.9750],
-            [116.3300, 39.9750],
-            [116.3300, 39.9700]
-          ]],
-          [[
-            [116.3400, 39.9850],
-            [116.3650, 39.9850],
-            [116.3650, 39.9900],
-            [116.3400, 39.9900],
-            [116.3400, 39.9850]
-          ]]
+          [
+            [
+              [
+                116.33,
+                39.97
+              ],
+              [
+                116.36,
+                39.97
+              ],
+              [
+                116.36,
+                39.975
+              ],
+              [
+                116.33,
+                39.975
+              ],
+              [
+                116.33,
+                39.97
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                116.34,
+                39.985
+              ],
+              [
+                116.365,
+                39.985
+              ],
+              [
+                116.365,
+                39.99
+              ],
+              [
+                116.34,
+                39.99
+              ],
+              [
+                116.34,
+                39.985
+              ]
+            ]
+          ]
         ]
-      }
+      },
+      "id": "lu_007"
     },
     {
       "type": "Feature",
       "properties": {
         "id": "lu_008",
-        "layer": "land_use",
+        "layer": "LAND_USE",
         "type": "其他用地",
         "type_en": "Other Land",
         "code": "U",
         "area_ha": 150,
         "far": null,
         "building_area_m2": null,
-        "source_type": "derived",
+        "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
         "official_boundary": false,
-        "zone": "市政等"
+        "zone": "市政等",
+        "land_use_code": "0702"
       },
       "geometry": {
         "type": "Polygon",
-        "coordinates": [[
-          [116.3600, 39.9600],
-          [116.3650, 39.9600],
-          [116.3650, 39.9650],
-          [116.3600, 39.9650],
-          [116.3600, 39.9600]
-        ]]
-      }
+        "coordinates": [
+          [
+            [
+              116.36,
+              39.96
+            ],
+            [
+              116.365,
+              39.96
+            ],
+            [
+              116.365,
+              39.965
+            ],
+            [
+              116.36,
+              39.965
+            ],
+            [
+              116.36,
+              39.96
+            ]
+          ]
+        ]
+      },
+      "id": "lu_008"
     }
   ],
   "metadata": {

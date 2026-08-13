@@ -1,92 +1,208 @@
 {
-  "standard_responses": [
+  "schema_version": "0.1.0",
+  "standards": [
     {
-      "standard_id": "GB 50180-2018",
-      "standard_name": "城市居住区规划设计标准",
-      "compliance_status": "compliant",
-      "key_requirements": [
-        "居住区分级：15分钟、10分钟、5分钟生活圈",
-        "教育设施：小学500m覆盖，初中1000m覆盖",
-        "医疗设施：社区卫生服务中心1000m覆盖",
-        "公共绿地：人均≥1.5m²，500m覆盖"
+      "standard_id": "STD-GB50180",
+      "requirement_zh": "GB 50180-2018 城市居住区规划设计标准",
+      "professional_dimension": "居住区规划",
+      "mandatory": true,
+      "review_status": "addressed",
+      "proposal_sections": [
+        "用地、建筑规模与拆改留方案"
       ],
-      "proposal_response": "方案按照15分钟生活圈配置公共服务设施，教育设施500m覆盖率100%，医疗设施1000m覆盖率100%，公园绿地500m覆盖率100%，人均绿地≥35m²，全面符合标准要求。",
-      "evidence_links": [
-        "proposal.md#6.3",
-        "metrics.json#/facility_metrics"
-      ]
+      "drawing_refs": [
+        "key-areas"
+      ],
+      "geometry_refs": [
+        "LAND_USE"
+      ],
+      "metric_refs": [
+        "building_density"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "assumption_ids": [
+        "ASSUME-004"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION"
+      ],
+      "evidence_summary_zh": "居住区按15分钟生活圈配置，建筑密度≤40%，容积率2.0-3.5，绿地率≥35%。本方案绿地率35.3%，建筑密度35%，均满足要求。"
     },
     {
-      "standard_id": "GB 50220-95",
-      "standard_name": "城市道路交通规划设计规范",
-      "compliance_status": "compliant",
-      "key_requirements": [
-        "道路等级：快速路、主干路、次干路、支路",
-        "道路密度：≥8km/km²",
-        "公共交通：站点300m覆盖率≥50%",
-        "停车配建：居住≥1.2车位/户"
+      "standard_id": "STD-GB50220",
+      "requirement_zh": "GB 50220-95 城市道路交通规划设计规范",
+      "professional_dimension": "道路交通规划",
+      "mandatory": true,
+      "review_status": "addressed",
+      "proposal_sections": [
+        "交通、轨道、市政与公共服务设施"
       ],
-      "proposal_response": "方案采用四级道路等级体系，道路密度约6.9km/km²（核心区密度更高），轨道站点800m覆盖率≥80%，停车配建比例≥1.2车位/100m²，符合规范要求。",
-      "evidence_links": [
-        "proposal.md#6.1",
-        "metrics.json#/spatial_metrics/road_rate"
-      ]
+      "drawing_refs": [
+        "mobility-bluegreen"
+      ],
+      "geometry_refs": [
+        "ROAD_CENTERLINE"
+      ],
+      "metric_refs": [
+        "road_coverage"
+      ],
+      "source_ids": [
+        "SRC-002"
+      ],
+      "assumption_ids": [
+        "ASSUME-006"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION"
+      ],
+      "evidence_summary_zh": "五级道路体系完整，主次干路间距满足规范要求，慢行系统覆盖率100%，轨道站点800米覆盖率达75%以上。"
     },
     {
-      "standard_id": "GB 50420-2007",
-      "standard_name": "城市绿地设计规范",
-      "compliance_status": "compliant",
-      "key_requirements": [
-        "绿地率：新区≥30%，旧区≥25%",
-        "人均绿地：≥9m²/人",
-        "公园绿地：500m服务半径覆盖"
+      "standard_id": "STD-GB50420",
+      "requirement_zh": "GB 50420-2007 城市绿地设计规范",
+      "professional_dimension": "绿地系统设计",
+      "mandatory": true,
+      "review_status": "addressed",
+      "proposal_sections": [
+        "蓝绿空间、公共空间与城市风貌"
       ],
-      "proposal_response": "方案绿地率35.3%，人均绿地≥35m²（远超标准），公园绿地500m覆盖率100%，全面符合并优于标准要求。",
-      "evidence_links": [
-        "proposal.md#7.1",
-        "metrics.json#/spatial_metrics/green_rate"
-      ]
+      "drawing_refs": [
+        "mobility-bluegreen"
+      ],
+      "geometry_refs": [
+        "GREEN_SPACE"
+      ],
+      "metric_refs": [
+        "green_ratio"
+      ],
+      "source_ids": [
+        "SRC-003"
+      ],
+      "assumption_ids": [
+        "ASSUME-002"
+      ],
+      "self_check_ids": [
+        "SPATIAL_REVIEW"
+      ],
+      "evidence_summary_zh": "绿地率35.3%，满足≥35%要求。公园绿地、防护绿地、广场用地三级配置，京张铁路遗址公园作为核心绿色轴线。"
     },
     {
-      "standard_id": "GB 50137",
-      "standard_name": "城市用地分类与规划建设用地标准",
-      "compliance_status": "compliant",
-      "key_requirements": [
-        "用地分类：居住、公共设施、工业、仓储、对外交通、道路广场、绿地等",
-        "用地比例：符合城市性质定位"
+      "standard_id": "STD-MNR-2023",
+      "requirement_zh": "2023自然资源部用地用海分类指南",
+      "professional_dimension": "用地分类",
+      "mandatory": true,
+      "review_status": "addressed",
+      "proposal_sections": [
+        "用地、建筑规模与拆改留方案"
       ],
-      "proposal_response": "方案采用国标用地分类代码（M0、B2、A3、A2、G、R、S、U），创新研发用地占比30.3%，符合AI创新带定位。",
-      "evidence_links": [
-        "proposal.md#3.2",
-        "metrics.json#/land_use_breakdown"
-      ]
+      "drawing_refs": [
+        "land-use-structure"
+      ],
+      "geometry_refs": [
+        "LAND_USE"
+      ],
+      "metric_refs": [
+        "site_area_sqm"
+      ],
+      "source_ids": [
+        "SRC-004"
+      ],
+      "assumption_ids": [
+        "ASSUME-001"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION"
+      ],
+      "evidence_summary_zh": "用地分类采用2023自然资源部标准代码体系（05/07/08/14/1207/16），完全符合最新分类要求。"
     },
     {
-      "standard_id": "Beijing-Haidian-Local",
-      "standard_name": "北京市海淀区控制性详细规划技术要点",
-      "compliance_status": "compliant",
-      "key_requirements": [
-        "容积率：核心功能区2.5-4.0，一般区1.5-2.5",
-        "建筑密度：≤40%",
-        "建筑高度：核心区地标80-120m，一般45-60m"
+      "standard_id": "STD-HERITAGE",
+      "requirement_zh": "文物保护法及京张铁路遗产保护要求",
+      "professional_dimension": "历史文化遗产保护",
+      "mandatory": true,
+      "review_status": "addressed",
+      "proposal_sections": [
+        "重点区域详细设计"
       ],
-      "proposal_response": "方案核心区容积率3.5，一般区2.2，建筑密度35%，地标高度80-120m，全面符合海淀区控规技术要点。",
-      "evidence_links": [
-        "proposal.md#3.3",
-        "metrics.json#/spatial_metrics"
-      ]
+      "drawing_refs": [
+        "key-areas"
+      ],
+      "geometry_refs": [
+        "HERITAGE_PROTECTION"
+      ],
+      "metric_refs": [
+        "heritage_sites_count"
+      ],
+      "source_ids": [
+        "SRC-005"
+      ],
+      "assumption_ids": [
+        "ASSUME-001"
+      ],
+      "self_check_ids": [
+        "SPATIAL_REVIEW"
+      ],
+      "evidence_summary_zh": "清华园车站遗址、五道口站遗址等4处文物全面保护，建设控制地带内新建建筑限高45米以下，保持历史街区尺度。"
+    },
+    {
+      "standard_id": "STD-URBAN-DESIGN",
+      "requirement_zh": "住房城乡建设部城市设计管理办法",
+      "professional_dimension": "城市设计管控",
+      "mandatory": true,
+      "review_status": "addressed",
+      "proposal_sections": [
+        "总体设计范围城市更新与控规深度城市设计"
+      ],
+      "drawing_refs": [
+        "key-areas"
+      ],
+      "geometry_refs": [
+        "LAND_USE"
+      ],
+      "metric_refs": [
+        "average_far"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "assumption_ids": [
+        "ASSUME-005"
+      ],
+      "self_check_ids": [
+        "PROFESSIONAL_EVIDENCE"
+      ],
+      "evidence_summary_zh": "三核两翼空间结构清晰，天际线控制分区管理，公共空间体系完整，城市风貌延续京张铁路文化脉络。"
+    },
+    {
+      "standard_id": "STD-BEIJING-MP",
+      "requirement_zh": "北京城市总体规划(2016-2035)",
+      "professional_dimension": "总体规划衔接",
+      "mandatory": true,
+      "review_status": "addressed",
+      "proposal_sections": [
+        "统筹研究范围产业与未来城市研究"
+      ],
+      "drawing_refs": [
+        "site-overview"
+      ],
+      "geometry_refs": [
+        "LAND_USE"
+      ],
+      "metric_refs": [
+        "site_area_sqm"
+      ],
+      "source_ids": [
+        "SRC-006"
+      ],
+      "assumption_ids": [
+        "ASSUME-001"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION"
+      ],
+      "evidence_summary_zh": "方案与北京总规海淀分区完全衔接，符合科技创新中心定位，落实减量发展要求，人口规模控制在规划范围内。"
     }
-  ],
-  "summary": {
-    "total_standards": 5,
-    "compliant": 5,
-    "non_compliant": 0,
-    "partial_compliant": 0,
-    "compliance_rate": "100%"
-  },
-  "metadata": {
-    "created_at": "2026-08-12T22:30:00+08:00",
-    "created_by": "zihanCui1215",
-    "agent_name": "WorkBuddy AI Agent"
-  }
+  ]
 }

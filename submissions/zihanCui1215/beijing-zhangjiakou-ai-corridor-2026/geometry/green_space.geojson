@@ -1,6 +1,6 @@
 {
   "type": "FeatureCollection",
-  "name": "green_space",
+  "name": "GREEN_SPACE",
   "crs": {
     "type": "name",
     "properties": {
@@ -12,74 +12,128 @@
       "type": "Feature",
       "properties": {
         "id": "green_001",
-        "layer": "green_space",
+        "layer": "GREEN_SPACE",
         "name": "京张铁路遗址公园",
         "name_en": "Beijing-Zhangjiakou Railway Heritage Park",
         "type": "公园绿地",
         "area_ha": 150,
-        "source_type": "derived",
+        "source_type": "agent_generated_design",
         "confidence": "high",
         "geometry_role": "design_proposal",
         "note": "主体绿廊"
       },
       "geometry": {
         "type": "Polygon",
-        "coordinates": [[
-          [116.3330, 40.0200],
-          [116.3370, 40.0200],
-          [116.3370, 39.9600],
-          [116.3330, 39.9600],
-          [116.3330, 40.0200]
-        ]]
-      }
+        "coordinates": [
+          [
+            [
+              116.333,
+              40.02
+            ],
+            [
+              116.337,
+              40.02
+            ],
+            [
+              116.337,
+              39.96
+            ],
+            [
+              116.333,
+              39.96
+            ],
+            [
+              116.333,
+              40.02
+            ]
+          ]
+        ]
+      },
+      "id": "green_001"
     },
     {
       "type": "Feature",
       "properties": {
         "id": "green_002",
-        "layer": "green_space",
+        "layer": "GREEN_SPACE",
         "name": "社区公园1",
         "name_en": "Community Park 1",
         "type": "社区公园",
         "area_ha": 2.5,
-        "source_type": "derived",
+        "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal"
       },
       "geometry": {
         "type": "Polygon",
-        "coordinates": [[
-          [116.3420, 40.0150],
-          [116.3450, 40.0150],
-          [116.3450, 40.0170],
-          [116.3420, 40.0170],
-          [116.3420, 40.0150]
-        ]]
-      }
+        "coordinates": [
+          [
+            [
+              116.342,
+              40.015
+            ],
+            [
+              116.345,
+              40.015
+            ],
+            [
+              116.345,
+              40.017
+            ],
+            [
+              116.342,
+              40.017
+            ],
+            [
+              116.342,
+              40.015
+            ]
+          ]
+        ]
+      },
+      "id": "green_002"
     },
     {
       "type": "Feature",
       "properties": {
         "id": "green_003",
-        "layer": "green_space",
+        "layer": "GREEN_SPACE",
         "name": "街头绿地1",
         "name_en": "Pocket Park 1",
         "type": "街头绿地",
         "area_ha": 0.3,
-        "source_type": "derived",
+        "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal"
       },
       "geometry": {
         "type": "Polygon",
-        "coordinates": [[
-          [116.3500, 39.9950],
-          [116.3510, 39.9950],
-          [116.3510, 39.9960],
-          [116.3500, 39.9960],
-          [116.3500, 39.9950]
-        ]]
-      }
+        "coordinates": [
+          [
+            [
+              116.35,
+              39.995
+            ],
+            [
+              116.351,
+              39.995
+            ],
+            [
+              116.351,
+              39.996
+            ],
+            [
+              116.35,
+              39.996
+            ],
+            [
+              116.35,
+              39.995
+            ]
+          ]
+        ]
+      },
+      "id": "green_003"
     }
   ],
   "metadata": {

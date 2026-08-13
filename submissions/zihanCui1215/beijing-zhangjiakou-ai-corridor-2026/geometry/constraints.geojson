@@ -1,18 +1,23 @@
 {
   "type": "FeatureCollection",
-  "name": "constraints",
-  "crs": {"type": "name", "properties": {"name": "urn:ogc:def:crs:OGC::CRS84"}},
+  "name": "HERITAGE_PROTECTION",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC::CRS84"
+    }
+  },
   "features": [
     {
       "type": "Feature",
       "properties": {
         "id": "con_001",
-        "layer": "constraints",
+        "layer": "HERITAGE_PROTECTION",
         "name": "京张铁路遗址保护线",
         "name_en": "Beijing-Zhangjiakou Railway Heritage Protection Line",
         "type": "文物保护约束",
         "constraint_type": "heritage_protection",
-        "source_type": "official",
+        "source_type": "official_open_data",
         "confidence": "high",
         "geometry_role": "official_constraint",
         "official_boundary": true,
@@ -20,25 +25,43 @@
       },
       "geometry": {
         "type": "Polygon",
-        "coordinates": [[
-          [116.3340, 40.0200],
-          [116.3360, 40.0200],
-          [116.3360, 39.9600],
-          [116.3340, 39.9600],
-          [116.3340, 40.0200]
-        ]]
-      }
+        "coordinates": [
+          [
+            [
+              116.334,
+              40.02
+            ],
+            [
+              116.336,
+              40.02
+            ],
+            [
+              116.336,
+              39.96
+            ],
+            [
+              116.334,
+              39.96
+            ],
+            [
+              116.334,
+              40.02
+            ]
+          ]
+        ]
+      },
+      "id": "con_001"
     },
     {
       "type": "Feature",
       "properties": {
         "id": "con_002",
-        "layer": "constraints",
+        "layer": "HERITAGE_PROTECTION",
         "name": "高校保护区",
         "name_en": "University Protection Zone",
         "type": "教育用地保护",
         "constraint_type": "education_protection",
-        "source_type": "official",
+        "source_type": "official_open_data",
         "confidence": "high",
         "geometry_role": "official_constraint",
         "official_boundary": true,
@@ -46,25 +69,43 @@
       },
       "geometry": {
         "type": "Polygon",
-        "coordinates": [[
-          [116.3300, 40.0100],
-          [116.3450, 40.0100],
-          [116.3450, 40.0200],
-          [116.3300, 40.0200],
-          [116.3300, 40.0100]
-        ]]
-      }
+        "coordinates": [
+          [
+            [
+              116.33,
+              40.01
+            ],
+            [
+              116.345,
+              40.01
+            ],
+            [
+              116.345,
+              40.02
+            ],
+            [
+              116.33,
+              40.02
+            ],
+            [
+              116.33,
+              40.01
+            ]
+          ]
+        ]
+      },
+      "id": "con_002"
     },
     {
       "type": "Feature",
       "properties": {
         "id": "con_003",
-        "layer": "constraints",
+        "layer": "HERITAGE_PROTECTION",
         "name": "轨道交通控制线",
         "name_en": "Rail Transit Control Line",
         "type": "交通设施控制",
         "constraint_type": "transit_buffer",
-        "source_type": "official",
+        "source_type": "official_open_data",
         "confidence": "high",
         "geometry_role": "official_constraint",
         "official_boundary": true,
@@ -73,12 +114,25 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [116.3350, 40.0150],
-          [116.3350, 40.0000],
-          [116.3350, 39.9850],
-          [116.3350, 39.9700]
+          [
+            116.335,
+            40.015
+          ],
+          [
+            116.335,
+            40.0
+          ],
+          [
+            116.335,
+            39.985
+          ],
+          [
+            116.335,
+            39.97
+          ]
         ]
-      }
+      },
+      "id": "con_003"
     }
   ],
   "metadata": {

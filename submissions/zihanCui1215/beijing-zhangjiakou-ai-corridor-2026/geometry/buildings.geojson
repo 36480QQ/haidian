@@ -1,6 +1,6 @@
 {
   "type": "FeatureCollection",
-  "name": "buildings",
+  "name": "BUILDING_FOOTPRINT",
   "crs": {
     "type": "name",
     "properties": {
@@ -12,7 +12,7 @@
       "type": "Feature",
       "properties": {
         "id": "bld_001",
-        "layer": "buildings",
+        "layer": "BUILDING_FOOTPRINT",
         "name": "国家实验室园区",
         "name_en": "National Laboratory Park",
         "type": "科研建筑",
@@ -20,27 +20,46 @@
         "floors": 20,
         "footprint_m2": 50000,
         "total_area_m2": 1000000,
-        "source_type": "derived",
+        "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "zone": "中关村AI加速区"
+        "zone": "中关村AI加速区",
+        "building_type": "mixed_use"
       },
       "geometry": {
         "type": "Polygon",
-        "coordinates": [[
-          [116.3350, 39.9950],
-          [116.3400, 39.9950],
-          [116.3400, 40.0000],
-          [116.3350, 40.0000],
-          [116.3350, 39.9950]
-        ]]
-      }
+        "coordinates": [
+          [
+            [
+              116.335,
+              39.995
+            ],
+            [
+              116.34,
+              39.995
+            ],
+            [
+              116.34,
+              40.0
+            ],
+            [
+              116.335,
+              40.0
+            ],
+            [
+              116.335,
+              39.995
+            ]
+          ]
+        ]
+      },
+      "id": "bld_001"
     },
     {
       "type": "Feature",
       "properties": {
         "id": "bld_002",
-        "layer": "buildings",
+        "layer": "BUILDING_FOOTPRINT",
         "name": "开源成果展示廊",
         "name_en": "Open Source Achievement Corridor",
         "type": "文化建筑",
@@ -48,27 +67,46 @@
         "floors": 3,
         "footprint_m2": 35000,
         "total_area_m2": 105000,
-        "source_type": "derived",
+        "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "zone": "AI源头社区"
+        "zone": "AI源头社区",
+        "building_type": "mixed_use"
       },
       "geometry": {
         "type": "Polygon",
-        "coordinates": [[
-          [116.3400, 39.9870],
-          [116.3500, 39.9870],
-          [116.3500, 39.9900],
-          [116.3400, 39.9900],
-          [116.3400, 39.9870]
-        ]]
-      }
+        "coordinates": [
+          [
+            [
+              116.34,
+              39.987
+            ],
+            [
+              116.35,
+              39.987
+            ],
+            [
+              116.35,
+              39.99
+            ],
+            [
+              116.34,
+              39.99
+            ],
+            [
+              116.34,
+              39.987
+            ]
+          ]
+        ]
+      },
+      "id": "bld_002"
     },
     {
       "type": "Feature",
       "properties": {
         "id": "bld_003",
-        "layer": "buildings",
+        "layer": "BUILDING_FOOTPRINT",
         "name": "AI+医疗产业园",
         "name_en": "AI+Healthcare Industrial Park",
         "type": "产业建筑",
@@ -76,27 +114,46 @@
         "floors": 15,
         "footprint_m2": 80000,
         "total_area_m2": 1200000,
-        "source_type": "derived",
+        "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "zone": "大钟寺产业集群"
+        "zone": "大钟寺产业集群",
+        "building_type": "mixed_use"
       },
       "geometry": {
         "type": "Polygon",
-        "coordinates": [[
-          [116.3420, 39.9670],
-          [116.3500, 39.9670],
-          [116.3500, 39.9720],
-          [116.3420, 39.9720],
-          [116.3420, 39.9670]
-        ]]
-      }
+        "coordinates": [
+          [
+            [
+              116.342,
+              39.967
+            ],
+            [
+              116.35,
+              39.967
+            ],
+            [
+              116.35,
+              39.972
+            ],
+            [
+              116.342,
+              39.972
+            ],
+            [
+              116.342,
+              39.967
+            ]
+          ]
+        ]
+      },
+      "id": "bld_003"
     },
     {
       "type": "Feature",
       "properties": {
         "id": "bld_004",
-        "layer": "buildings",
+        "layer": "BUILDING_FOOTPRINT",
         "name": "智能体贡献荣誉墙",
         "name_en": "Agent Contribution Honor Wall",
         "type": "地标建筑",
@@ -104,27 +161,46 @@
         "floors": 1,
         "footprint_m2": 500,
         "total_area_m2": 500,
-        "source_type": "derived",
+        "source_type": "agent_generated_design",
         "confidence": "high",
         "geometry_role": "design_proposal",
-        "zone": "五道口站遗址"
+        "zone": "五道口站遗址",
+        "building_type": "mixed_use"
       },
       "geometry": {
         "type": "Polygon",
-        "coordinates": [[
-          [116.3420, 39.9880],
-          [116.3430, 39.9880],
-          [116.3430, 39.9890],
-          [116.3420, 39.9890],
-          [116.3420, 39.9880]
-        ]]
-      }
+        "coordinates": [
+          [
+            [
+              116.342,
+              39.988
+            ],
+            [
+              116.343,
+              39.988
+            ],
+            [
+              116.343,
+              39.989
+            ],
+            [
+              116.342,
+              39.989
+            ],
+            [
+              116.342,
+              39.988
+            ]
+          ]
+        ]
+      },
+      "id": "bld_004"
     },
     {
       "type": "Feature",
       "properties": {
         "id": "bld_005",
-        "layer": "buildings",
+        "layer": "BUILDING_FOOTPRINT",
         "name": "智慧医院",
         "name_en": "Smart Hospital",
         "type": "医疗建筑",
@@ -132,21 +208,40 @@
         "floors": 15,
         "footprint_m2": 40000,
         "total_area_m2": 600000,
-        "source_type": "derived",
+        "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "zone": "大钟寺集群"
+        "zone": "大钟寺集群",
+        "building_type": "mixed_use"
       },
       "geometry": {
         "type": "Polygon",
-        "coordinates": [[
-          [116.3450, 39.9680],
-          [116.3480, 39.9680],
-          [116.3480, 39.9700],
-          [116.3450, 39.9700],
-          [116.3450, 39.9680]
-        ]]
-      }
+        "coordinates": [
+          [
+            [
+              116.345,
+              39.968
+            ],
+            [
+              116.348,
+              39.968
+            ],
+            [
+              116.348,
+              39.97
+            ],
+            [
+              116.345,
+              39.97
+            ],
+            [
+              116.345,
+              39.968
+            ]
+          ]
+        ]
+      },
+      "id": "bld_005"
     }
   ],
   "metadata": {

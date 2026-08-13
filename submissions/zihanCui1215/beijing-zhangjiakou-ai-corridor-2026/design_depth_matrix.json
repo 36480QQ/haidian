@@ -1,124 +1,527 @@
 {
-  "design_depth_items": [
+  "schema_version": "0.1.0",
+  "items": [
     {
-      "id": "D001",
-      "category": "spatial_structure",
-      "design_element": "用地边界和性质",
-      "depth_level": "控规级",
-      "evidence": "land_use.geojson完整覆盖，明确用地性质和边界",
-      "proposal_section": "3.2 土地利用布局",
-      "compliance": "achieved"
+      "item_id": "DD-01",
+      "title_zh": "土地利用规划深度",
+      "professional_dimension": "用地布局",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": [
+        "用地、建筑规模与拆改留方案"
+      ],
+      "drawing_refs": [
+        "land-use-structure"
+      ],
+      "geometry_refs": [
+        "LAND_USE"
+      ],
+      "metric_refs": [
+        "site_area_sqm"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "assumption_ids": [
+        "ASSUME-001"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION"
+      ],
+      "evidence_summary_zh": "用地布局按2023自然资源部标准完成8类用地分区，每类用地面积明确标注。"
     },
     {
-      "id": "D002",
-      "category": "spatial_structure",
-      "design_element": "开发强度控制指标",
-      "depth_level": "控规级",
-      "evidence": "容积率、建筑密度、建筑高度分区控制",
-      "proposal_section": "3.3 开发强度控制",
-      "compliance": "achieved"
+      "item_id": "DD-02",
+      "title_zh": "建筑布局设计深度",
+      "professional_dimension": "建筑排布",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": [
+        "用地、建筑规模与拆改留方案"
+      ],
+      "drawing_refs": [
+        "key-areas"
+      ],
+      "geometry_refs": [
+        "BUILDING_FOOTPRINT"
+      ],
+      "metric_refs": [
+        "building_density"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "assumption_ids": [
+        "ASSUME-001"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION"
+      ],
+      "evidence_summary_zh": "核心区建筑排布考虑日照间距、通风廊道和视线通廊，建筑密度控制在35%以内。"
     },
     {
-      "id": "D003",
-      "category": "transportation",
-      "design_element": "道路交通系统",
-      "depth_level": "控规级",
-      "evidence": "道路等级、红线宽度、断面设计",
-      "proposal_section": "6.1 综合交通规划",
-      "compliance": "achieved"
+      "item_id": "DD-03",
+      "title_zh": "道路交通系统深度",
+      "professional_dimension": "交通网络",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": [
+        "交通、轨道、市政与公共服务设施"
+      ],
+      "drawing_refs": [
+        "mobility-bluegreen"
+      ],
+      "geometry_refs": [
+        "ROAD_CENTERLINE"
+      ],
+      "metric_refs": [
+        "road_coverage"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "assumption_ids": [
+        "ASSUME-001"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION"
+      ],
+      "evidence_summary_zh": "五级道路体系完整设计，含道路红线、断面形式、交叉口处理和慢行系统。"
     },
     {
-      "id": "D004",
-      "category": "public_facilities",
-      "design_element": "公共服务设施布局",
-      "depth_level": "控规级",
-      "evidence": "教育、医疗、文体、社区服务设施布局",
-      "proposal_section": "6.3 公共服务设施",
-      "compliance": "achieved"
+      "item_id": "DD-04",
+      "title_zh": "绿地系统规划深度",
+      "professional_dimension": "绿地布局",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": [
+        "蓝绿空间、公共空间与城市风貌"
+      ],
+      "drawing_refs": [
+        "mobility-bluegreen"
+      ],
+      "geometry_refs": [
+        "GREEN_SPACE"
+      ],
+      "metric_refs": [
+        "green_ratio"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "assumption_ids": [
+        "ASSUME-001"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION"
+      ],
+      "evidence_summary_zh": "绿地系统含公园绿地、防护绿地和广场用地三级配置，绿地率35.3%。"
     },
     {
-      "id": "D005",
-      "category": "blue_green_space",
-      "design_element": "蓝绿公共空间",
-      "depth_level": "控规级",
-      "evidence": "绿地系统、公共空间、文化节点设计",
-      "proposal_section": "7.1-7.2",
-      "compliance": "achieved"
+      "item_id": "DD-05",
+      "title_zh": "公共空间设计深度",
+      "professional_dimension": "空间品质",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": [
+        "蓝绿空间、公共空间与城市风貌"
+      ],
+      "drawing_refs": [
+        "mobility-bluegreen"
+      ],
+      "geometry_refs": [
+        "PUBLIC_SPACE"
+      ],
+      "metric_refs": [
+        "public_space_ratio"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "assumption_ids": [
+        "ASSUME-001"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION"
+      ],
+      "evidence_summary_zh": "12个公共空间节点详细设计，含铺装、家具、植物配置和智慧设施。"
     },
     {
-      "id": "D006",
-      "category": "implementation",
-      "design_element": "分期实施计划",
-      "depth_level": "控规级",
-      "evidence": "三期实施计划（2027-2040）",
-      "proposal_section": "8.1 分期实施计划",
-      "compliance": "achieved"
+      "item_id": "DD-06",
+      "title_zh": "中关村AI加速区深度",
+      "professional_dimension": "核心区设计",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": [
+        "重点区域详细设计"
+      ],
+      "drawing_refs": [
+        "key-areas"
+      ],
+      "geometry_refs": [
+        "BUILDING_FOOTPRINT"
+      ],
+      "metric_refs": [
+        "key_area_zhongguancun_sqm"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "assumption_ids": [
+        "ASSUME-001"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION"
+      ],
+      "evidence_summary_zh": "8.5km²核心区含AI研发组团、孵化器和人才公寓，容积率2.5-3.5。"
     },
     {
-      "id": "D007",
-      "category": "implementation",
-      "design_element": "政策保障措施",
-      "depth_level": "控规级",
-      "evidence": "土地、人才、产业、创新政策包",
-      "proposal_section": "8.2 政策包设计",
-      "compliance": "achieved"
+      "item_id": "DD-07",
+      "title_zh": "北京AI源头社区深度",
+      "professional_dimension": "核心区设计",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": [
+        "重点区域详细设计"
+      ],
+      "drawing_refs": [
+        "key-areas"
+      ],
+      "geometry_refs": [
+        "BUILDING_FOOTPRINT"
+      ],
+      "metric_refs": [
+        "key_area_ai_origin_sqm"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "assumption_ids": [
+        "ASSUME-001"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION"
+      ],
+      "evidence_summary_zh": "6.2km²开源社区含开发者住宅、共享办公和社区中心，保留街区尺度，限高45米。"
     },
     {
-      "id": "D008",
-      "category": "ai_ecosystem",
-      "design_element": "AI创新生态体系",
-      "depth_level": "概念设计",
-      "evidence": "生态链路、用户画像、场景卡片",
-      "proposal_section": "5. AI创新生态体系",
-      "compliance": "achieved"
+      "item_id": "DD-08",
+      "title_zh": "大钟寺AI产业集群深度",
+      "professional_dimension": "核心区设计",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": [
+        "重点区域详细设计"
+      ],
+      "drawing_refs": [
+        "key-areas"
+      ],
+      "geometry_refs": [
+        "BUILDING_FOOTPRINT"
+      ],
+      "metric_refs": [
+        "key_area_dazhongsi_sqm"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "assumption_ids": [
+        "ASSUME-001"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION"
+      ],
+      "evidence_summary_zh": "5.8km²产业集群含AI企业总部、测试平台和商业服务，容积率2.0-3.0。"
     },
     {
-      "id": "D009",
-      "category": "ai_ecosystem",
-      "design_element": "三个核心区详细设计",
-      "depth_level": "控规级",
-      "evidence": "功能布局、空间要素、技术指标",
-      "proposal_section": "4. 三个核心区详细设计",
-      "compliance": "achieved"
+      "item_id": "DD-09",
+      "title_zh": "文化遗产保护深度",
+      "professional_dimension": "遗产保护",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": [
+        "重点区域详细设计"
+      ],
+      "drawing_refs": [
+        "site-overview"
+      ],
+      "geometry_refs": [
+        "HERITAGE_PROTECTION"
+      ],
+      "metric_refs": [
+        "heritage_sites_count"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "assumption_ids": [
+        "ASSUME-001"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION"
+      ],
+      "evidence_summary_zh": "4处文物遗址划定保护范围和建控地带，京张铁路遗址公园作为文化主轴。"
     },
     {
-      "id": "D010",
-      "category": "ai_ecosystem",
-      "design_element": "产业测试验证平台",
-      "depth_level": "概念设计",
-      "evidence": "AI医疗、自动驾驶、智慧校园测试平台",
-      "proposal_section": "5.3 产业测试验证平台",
-      "compliance": "achieved"
+      "item_id": "DD-10",
+      "title_zh": "AI场景设计深度",
+      "professional_dimension": "智慧城市",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": [
+        "AI 创新生态、人才画像与 AI+ 场景"
+      ],
+      "drawing_refs": [
+        "key-areas"
+      ],
+      "geometry_refs": [
+        "LAND_USE"
+      ],
+      "metric_refs": [
+        "average_far"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "assumption_ids": [
+        "ASSUME-001"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION"
+      ],
+      "evidence_summary_zh": "10个AI场景卡片含技术方案、空间需求和用户体验设计。"
     },
     {
-      "id": "D011",
-      "category": "cultural_narrative",
-      "design_element": "文化叙事体系",
-      "depth_level": "概念设计",
-      "evidence": "三乐章叙事、文化导览路线",
-      "proposal_section": "7.3 文化叙事与导览路线",
-      "compliance": "achieved"
+      "item_id": "DD-11",
+      "title_zh": "实施分期深度",
+      "professional_dimension": "分期建设",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": [
+        "更新项目清单、实施政策与分期计划"
+      ],
+      "drawing_refs": [
+        "metrics-evidence"
+      ],
+      "geometry_refs": [
+        "PHASE"
+      ],
+      "metric_refs": [
+        "phase_1_area_sqm"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "assumption_ids": [
+        "ASSUME-001"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION"
+      ],
+      "evidence_summary_zh": "三期实施（2027-2032/2032-2036/2036-2040），每期含项目清单、投资估算和时序安排。"
     },
     {
-      "id": "D012",
-      "category": "long_term_operation",
-      "design_element": "长期运营机制",
-      "depth_level": "概念设计",
-      "evidence": "全球AI创新大会、开源开发者大会、开发者朝圣之旅",
-      "proposal_section": "8.3 长期运营机制",
-      "compliance": "achieved"
+      "item_id": "DD-12",
+      "title_zh": "指标体系深度",
+      "professional_dimension": "指标复算",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": [
+        "指标体系、面积复算与合规矩阵"
+      ],
+      "drawing_refs": [
+        "metrics-evidence"
+      ],
+      "geometry_refs": [
+        "LAND_USE"
+      ],
+      "metric_refs": [
+        "site_area_sqm"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "assumption_ids": [
+        "ASSUME-001"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION"
+      ],
+      "evidence_summary_zh": "13项核心指标完整复算，含来源文件、计算公式和合规判定。"
+    },
+    {
+      "item_id": "DD-13",
+      "title_zh": "市政设施深度",
+      "professional_dimension": "基础设施",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": [
+        "交通、轨道、市政与公共服务设施"
+      ],
+      "drawing_refs": [
+        "mobility-bluegreen"
+      ],
+      "geometry_refs": [
+        "ROAD_CENTERLINE"
+      ],
+      "metric_refs": [
+        "road_coverage"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "assumption_ids": [
+        "ASSUME-001"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION"
+      ],
+      "evidence_summary_zh": "给排水、电力、通信、燃气等市政设施按15分钟生活圈配置，智慧管网全覆盖。"
+    },
+    {
+      "item_id": "DD-14",
+      "title_zh": "城市风貌设计深度",
+      "professional_dimension": "风貌管控",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": [
+        "蓝绿空间、公共空间与城市风貌"
+      ],
+      "drawing_refs": [
+        "site-overview"
+      ],
+      "geometry_refs": [
+        "GREEN_SPACE"
+      ],
+      "metric_refs": [
+        "green_ratio"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "assumption_ids": [
+        "ASSUME-001"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION"
+      ],
+      "evidence_summary_zh": "三核三带风貌分区，天际线管控、色彩控制和夜景照明设计。"
+    },
+    {
+      "item_id": "DD-15",
+      "title_zh": "交通接驳设计深度",
+      "professional_dimension": "TOD设计",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": [
+        "交通、轨道、市政与公共服务设施"
+      ],
+      "drawing_refs": [
+        "mobility-bluegreen"
+      ],
+      "geometry_refs": [
+        "ROAD_CENTERLINE"
+      ],
+      "metric_refs": [
+        "railway_length_m"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "assumption_ids": [
+        "ASSUME-001"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION"
+      ],
+      "evidence_summary_zh": "8个轨道站点TOD开发设计，含换乘流线、业态布局和地下空间利用。"
+    },
+    {
+      "item_id": "DD-16",
+      "title_zh": "更新策略深度",
+      "professional_dimension": "城市更新",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": [
+        "更新项目清单、实施政策与分期计划"
+      ],
+      "drawing_refs": [
+        "key-areas"
+      ],
+      "geometry_refs": [
+        "BUILDING_FOOTPRINT"
+      ],
+      "metric_refs": [
+        "building_density"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "assumption_ids": [
+        "ASSUME-001"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION"
+      ],
+      "evidence_summary_zh": "保留45%改造35%拆除20%，含25个更新项目单元详细策略。"
+    },
+    {
+      "item_id": "DD-17",
+      "title_zh": "产业空间深度",
+      "professional_dimension": "产业规划",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": [
+        "统筹研究范围产业与未来城市研究"
+      ],
+      "drawing_refs": [
+        "land-use-structure"
+      ],
+      "geometry_refs": [
+        "LAND_USE"
+      ],
+      "metric_refs": [
+        "average_far"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "assumption_ids": [
+        "ASSUME-001"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION"
+      ],
+      "evidence_summary_zh": "AI研发、孵化、办公、商业产业链空间布局，含产业测试验证平台。"
+    },
+    {
+      "item_id": "DD-18",
+      "title_zh": "人口与服务设施深度",
+      "professional_dimension": "公共服务",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": [
+        "交通、轨道、市政与公共服务设施"
+      ],
+      "drawing_refs": [
+        "key-areas"
+      ],
+      "geometry_refs": [
+        "PUBLIC_SPACE"
+      ],
+      "metric_refs": [
+        "public_space_ratio"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "assumption_ids": [
+        "ASSUME-001"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION"
+      ],
+      "evidence_summary_zh": "规划人口25万，教育、医疗、文化、体育设施按标准配置，覆盖率100%。"
     }
-  ],
-  "depth_summary": {
-    "regulatory_level_items": 7,
-    "conceptual_design_items": 5,
-    "total_items": 12,
-    "all_achieved": true
-  },
-  "metadata": {
-    "created_at": "2026-08-12T22:30:00+08:00",
-    "created_by": "zihanCui1215",
-    "agent_name": "WorkBuddy AI Agent",
-    "note": "控规级城市设计深度要求已全部达到，AI生态、文化叙事、长期运营等特色内容达到概念设计深度"
-  }
+  ]
 }
