@@ -1423,13 +1423,13 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-53 entries. By finder:
+55 entries. By finder:
 
 | Found by | Count | What it says |
 |---|---|---|
 | Independent audit | 25 | The audit was run against the shipped package, not a draft |
-| The author | 22 | Found while working |
-| This package's own gate | 2 | Caught at build time — which is what a gate is for |
+| The author | 23 | Found while working |
+| This package's own gate | 3 | Caught at build time — which is what a gate is for |
 | **Reviewers outside this proposal** | **4** | [@anselasimov-web](https://github.com/anselasimov-web) on PR #1002; [@147228](https://github.com/147228) on PR #1065; [@Sonike](https://github.com/Sonike) on Issue #950; [@147228](https://github.com/147228) on Issue #950 / PR #1190 |
 
 <!-- ERRATA:COUNT:END -->
@@ -1444,12 +1444,12 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 
 | Shape | Count |
 |---|---|
-| **The check measured the convenient thing** | **12** |
+| **The check measured the convenient thing** | **13** |
 | **A deliverable was not looked at before shipping** | **9** |
+| **Two copies of one thing drifted** | **5** |
 | Geometry did not mean what it said | 4 |
 | A number outlived the sentence holding it | 4 |
 | A reference did not resolve | 4 |
-| Two copies of one thing drifted | 4 |
 | A claim outlived the package | 3 |
 | A measurement answering a question it cannot answer | 2 |
 | A number with no file behind it | 2 |
