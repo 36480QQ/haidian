@@ -44,3 +44,9 @@
 - P1: 新增 brand-vi / regional-synergy / ai-ecosystem 中英图；完整场景卡；实施退出与包容性程序
 - 重出分析图与 PDF；英文 visual 独立导航
 
+## v2.1 - 2026-08-13
+
+- 按上游新校验合同将 manifest 升级为 schema 0.2.0
+- 写入 validation_claim.readiness_contract=persisted-self-check-v1
+- 持久化四门 self_check（ok / can_enter_formal_review / blocking gates）
+

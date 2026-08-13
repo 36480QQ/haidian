@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "package_id": "agent-station-network",
   "project_id": "centennial-jingzhang-ai-belt",
   "site_package_version": "0.1.0",
@@ -105,8 +105,9 @@
     },
     {
       "path": "changelog.md",
-      "role": "supporting",
-      "sha256": "216062a113fdc49e179d6dbdbbbed9de0ebfed179f405d9bcd46f8adb69da7bd"
+      "role": "changelog",
+      "sha256": "e927219168425636e2633488ff24a324d951ed3286929f2aac2a93db9331e9fb",
+      "required": false
     },
     {
       "path": "compliance_matrix.json",
@@ -256,7 +257,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "f8cc66c7fb3251c5fc6e5f61283156b1916d5d08f43b66b547e6e9b5893301fb"
+      "sha256": "5130979424a799568cff0013e113f6b091e5021e7e0cbab4dec24f9fbb301c08"
     },
     {
       "path": "sources.json",
@@ -339,6 +340,7 @@
   "validation_claim": {
     "self_checked": true,
     "known_blockers": [],
-    "data_confidence": "medium"
+    "data_confidence": "medium",
+    "readiness_contract": "persisted-self-check-v1"
   }
 }
