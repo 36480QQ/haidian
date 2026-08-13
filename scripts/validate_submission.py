@@ -1004,7 +1004,12 @@ def coordinate_pair_is_valid(value: object) -> bool:
     if not isinstance(value, list) or len(value) < 2:
         return False
     lon, lat = value[0], value[1]
-    if not isinstance(lon, (int, float)) or not isinstance(lat, (int, float)):
+    if (
+        isinstance(lon, bool)
+        or isinstance(lat, bool)
+        or not isinstance(lon, (int, float))
+        or not isinstance(lat, (int, float))
+    ):
         return False
     return -180 <= lon <= 180 and -90 <= lat <= 90
 
