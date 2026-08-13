@@ -7,15 +7,15 @@
   "metrics": {
     "site_area_sqm": {
       "status": "known",
-      "description": "总体设计范围面积（overall_design_area）",
-      "value": 11400000,
+      "description": "总体设计范围面积（overall_design_area，provisional polygon 复算；官方公告 11.4 km²=11400000 m²）",
+      "value": 11412825.386,
       "unit": "sqm",
       "source_files": [
         "geometry/site_boundary.geojson",
         "brief/site-package/design_brief.json",
         "brief/site-package/ranges/planning_limits.json"
       ],
-      "formula": "official_announcement_declared_area(11.4 km^2); polygon_calculated=11425715.145",
+      "formula": "polygon_area(submitted_site_boundary, EPSG:4548)=11412825.386; official_announcement_declared_area=11400000 (11.4 km^2)",
       "confidence": "medium",
       "assumptions": [
         "总体设计范围边界为临时粗略替代边界（official_boundary=false），不得作为审批依据。"
@@ -23,13 +23,13 @@
     },
     "site_area_calculated_sqm": {
       "status": "known",
-      "description": "总体设计范围 provisional polygon 计算面积（与声明值 11400000 存在约 0.23% 微小差异）",
-      "value": 11425715.145,
+      "description": "总体设计范围 provisional polygon 复算面积（EPSG:4548，与 site_area_sqm 一致）",
+      "value": 11412825.386,
       "unit": "sqm",
       "source_files": [
         "geometry/site_boundary.geojson"
       ],
-      "formula": "polygon_area(submitted_site_boundary) in EPSG local projection",
+      "formula": "polygon_area(submitted_site_boundary) in EPSG:4548",
       "confidence": "medium",
       "assumptions": [
         "总体设计范围边界为临时粗略替代边界（official_boundary=false），不得作为审批依据。"
@@ -286,12 +286,12 @@
     },
     "building_footprint_area_sqm": {
       "status": "known",
-      "value": 111954.441,
+      "value": 111816.454,
       "unit": "sqm",
       "source_files": [
         "geometry/buildings.geojson"
       ],
-      "formula": "sum(polygon_area(building_footprints))",
+      "formula": "sum(polygon_area(building_footprints)) in EPSG:4548",
       "confidence": "medium",
       "assumptions": []
     },

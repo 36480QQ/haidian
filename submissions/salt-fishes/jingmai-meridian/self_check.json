@@ -10,7 +10,6 @@
       "ok": true,
       "errors": [],
       "warnings": [
-        "submissions/salt-fishes/jingmai-meridian/proposal.md: 可能涉及非公开或敏感资料; maintainer review required",
         "submissions/salt-fishes/jingmai-meridian/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied"
       ],
       "proposal_files": [
@@ -62,7 +61,7 @@
       "ai_package_stages": {
         "submissions/salt-fishes/jingmai-meridian": "formal"
       },
-      "total_bytes": 3848866,
+      "total_bytes": 3873654,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -100,24 +99,6 @@
           "target_feature_id": "PROV-KEY-003",
           "expected": null,
           "actual": null
-        },
-        {
-          "check_id": "METRIC_RECALC_DRIFT",
-          "severity": "minor",
-          "target_file": "metrics.json",
-          "message": "site_area_sqm is within the legacy tolerance but drifts beyond ordinary reporting precision; reconcile before publication.",
-          "target_feature_id": null,
-          "expected": 11412825.385554,
-          "actual": 11400000.0
-        },
-        {
-          "check_id": "METRIC_RECALC_DRIFT",
-          "severity": "minor",
-          "target_file": "metrics.json",
-          "message": "building_footprint_area_sqm is within the legacy tolerance but drifts beyond ordinary reporting precision; reconcile before publication.",
-          "target_feature_id": null,
-          "expected": 111816.453826,
-          "actual": 111954.441
         }
       ],
       "metrics": {
@@ -138,7 +119,7 @@
       "ok": true,
       "issues": [],
       "metrics_seen": {
-        "site_area_sqm": 11400000.0,
+        "site_area_sqm": 11412825.386,
         "coordinated_research_area_sqm": 43600000.0,
         "key_detailed_design_area_sqm": 3684000.0,
         "green_ratio": 0.209845,
@@ -157,7 +138,7 @@
         "human_review_coverage": 1.0,
         "public_participation_channels": 9.0,
         "phasing_period_count": 4.0,
-        "building_footprint_area_sqm": 111954.441,
+        "building_footprint_area_sqm": 111816.454,
         "public_space_ratio": 0.007628,
         "public_space_area_sqm": 87054.545,
         "green_space_area_sqm": 2394921.508
@@ -191,9 +172,7 @@
   "spatial_issue_ids": [
     "KEY_AREA_PROVISIONAL",
     "KEY_AREA_PROVISIONAL",
-    "KEY_AREA_PROVISIONAL",
-    "METRIC_RECALC_DRIFT",
-    "METRIC_RECALC_DRIFT"
+    "KEY_AREA_PROVISIONAL"
   ],
   "visual_issue_ids": [],
   "professional_issue_ids": [],
