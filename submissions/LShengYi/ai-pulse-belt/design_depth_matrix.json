@@ -711,7 +711,27 @@
         "building_footprint_area_sqm",
         "green_ratio",
         "public_space_ratio",
-        "key_area_count"
+        "key_area_count",
+        "key_area_total_area_sqm",
+        "land_parcel_count",
+        "building_count",
+        "green_space_count",
+        "public_space_node_count",
+        "road_segment_count",
+        "phasing_zone_count",
+        "research_0802_ratio",
+        "commercial_05_ratio",
+        "residential_0701_ratio",
+        "roads_1207_ratio",
+        "green_1401_1402_ratio",
+        "reserve_16_ratio",
+        "culture_edu_sports_medical_ratio",
+        "floor_area_ratio",
+        "building_height_m",
+        "building_density",
+        "ai_innovation_index",
+        "talent_density",
+        "ai_output_value"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -723,14 +743,16 @@
         "KEY-AREA-SOURCE"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "ASSUME-002",
+        "ASSUME-005"
       ],
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",
         "SPATIAL_REVIEW",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "9 项指标中 5 项 known 可直接复算（site_area_sqm/green_ratio/public_space_ratio/key_area_count/building_footprint_area_sqm），4 项 unknown 待官方数据；公式与数据来源登记于 metrics.json，见 figures/metrics-evidence.*.png。"
+      "evidence_summary_zh": "50 项指标中 35 项 known 可直接复算（空间类 14：面积/比例/计数，EPSG:4548；功能比例 7：概念图层复算；元素计数 14：正文登记），15 项 unknown 待官方数据（管控类 12＋绩效类 3，公式与 reason 均登记）；面积与绿地率另经公开地图量测交叉验证，见 figures/metrics-evidence.*.png。"
     },
     {
       "item_id": "risk_missing_data",

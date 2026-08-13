@@ -71,8 +71,8 @@ This section provides review-dimension evidence indexes and response checklists;
 
 | Caliber | Count | Description |
 | --- | --- | --- |
-| known, directly recomputable | 5 | site_area_sqm, building_footprint_area_sqm, green_ratio, public_space_ratio, key_area_count |
-| unknown, pending official data | 4 | floor_area_ratio, ai_innovation_index, talent_density, ai_output_value (formulas registered) |
+| known, directly recomputable | 35 | Spatial class 14 (areas/ratios/counts, EPSG:4548) + functional proportions 7 (concept-layer recalculation) + element counts 14 (registered in narrative); full list in the Metrics chapter |
+| unknown, pending official data | 15 | Control class 12 (FAR/height/density/setback/households/budget/compute/operations, etc.) + performance class 3 (AI innovation index / talent density / AI output value, formulas registered); each `reason` states the recomputation path |
 | Concept ranges enter no conclusion | all | Every proportion/investment/funding range marked "pending review", see ASSUME-005 |
 
 **Table A6 Official-vs-measured deviation statement**
@@ -661,7 +661,21 @@ The solicitation window (100 days) is the delivery and review time constraint an
 
 ## Metrics, Area Recalculation, and Compliance Matrix
 
-The indicator system (`metrics.json`) has 9 metrics: overall-design area (site_area_sqm, measured 11,412,825.4 m2 vs official 11,400,000 m2, 0.11% deviation), building footprint area (building_footprint_area_sqm, ~110.3 ha), green ratio (green_ratio, 25.0%), public-space ratio (public_space_ratio, ~5.9 ha), key-area count (key_area_count, 3), floor-area ratio (floor_area_ratio, `status=unknown`, official FAR controls absent), and the announcement 1.5(2) planning-indicator system — AI innovation index (ai_innovation_index), talent density (talent_density), and AI output value (ai_output_value), all `status=unknown` pending official statistics and recomputable from the registered formulas once released. All known metrics are recomputable from GeoJSON [metric:site_area_sqm] [data:geometry/green_space.geojson#GREEN-001] [depth:metrics_recalculation].
+The indicator system (`metrics.json`) has **50 metrics** in five classes (all 50 are listed with values in the table below):
+
+**① Spatial class, known (14 metrics, recomputed directly from submitted geometry in EPSG:4548)**: overall-design area (site_area_sqm, measured 11,412,825.4 m2 vs official 11,400,000 m2, 0.11% deviation), building footprint area (building_footprint_area_sqm, ~110.3 ha), green ratio (green_ratio, 25.0%), public-space ratio (public_space_ratio, ~5.9 ha, 0.52%), key-area count (key_area_count, 3), key-area total area (key_area_total_area_sqm, ~369.3 ha), land-parcel count (land_parcel_count, 155), land-use class count (land_use_class_count, 13), building count (building_count, 84), green-space element count (green_space_count, 21: 12 parks + 9 protective), public-space node count (public_space_node_count, 16: 6 plazas + 6 wayfinding + 3 test + 1 health-guidance), road-segment count (road_segment_count, 13), phasing-zone count (phasing_zone_count, 3), constraint-zone count (constraint_zone_count, 3). The spatial class recomputes entirely from `geometry/*.geojson`: layer-count metrics come directly from feature counts ([metric:land_parcel_count] [metric:land_use_class_count] [metric:building_count]); green, public-space-node and road-segment counts in [metric:green_space_count] [metric:public_space_node_count] [metric:road_segment_count].
+
+**② Functional-proportion class, known (7 metrics, recomputed from this package's concept layers in EPSG:4548; not official land-use figures)**: research 0802 21.9%, commerce 05 7.0%, housing 0701 13.6%, roads 1207 10.7%, green 1401+1402 25.0%, reserve 16 2.7%, culture/education/sports/medical combined 14.3% (interval caliber and the 1+X+1 mapping in ASSUME-005 and the Chapter 3 table). Each proportion is recomputed from the concept layers ([metric:research_0802_ratio] [metric:commercial_05_ratio] [metric:residential_0701_ratio]); roads, green and reserve proportions registered separately ([metric:roads_1207_ratio] [metric:green_1401_1402_ratio] [metric:reserve_16_ratio]), and the culture/education/sports/medical combined share in [metric:culture_edu_sports_medical_ratio].
+
+**③ Concept-element counts, known (14 metrics, registered in the narrative)**: 12 scenario cards, 3 industrial test scenarios, 7 user personas, 3 pilgrimage landmarks, 6 global cases, 9 geometry layers, 4 Pulse-Protocol beats, 5 rollback-trigger classes, 15 simulation tasks, 4 funding channels, 11 one-off investment items, 3 objection gates, 3 emergency tiers, 5 public bottom-line indicators. Element counts are registered in the narrative and structure files ([metric:scenario_card_count] [metric:industry_test_scenario_count] [metric:persona_count]); pilgrimage-landmark, global-case and geometry-layer counts in [metric:pilgrimage_landmark_count] [metric:ecosystem_case_count] [metric:geometry_layer_count].
+
+Protocol and funding counts are additionally registered in simulation.json and the investment list ([metric:pulse_beat_count] [metric:rollback_trigger_class_count] [metric:simulation_task_count]); funding-channel and one-off investment-item counts in [metric:funding_channel_count] [metric:investment_item_count]; objection-gate, emergency-tier and public bottom-line indicator counts in [metric:objection_gate_count] [metric:emergency_tier_count] [metric:bottom_line_indicator_count].
+
+**④ Control class, unknown (12 metrics; official conditions absent, no conclusions entered)**: floor-area ratio (floor_area_ratio), building height (building_height_m), building density (building_density), statutory green ratio (statutory_green_ratio), setback (setback_m), affected-household count (affected_household_count), mitigation budget (mitigation_budget_cny), compute capacity (compute_capacity), annual participant count (annual_participant_count), approved scenario count (approved_scenario_count), developer-to-pilot conversion ratio (developer_to_pilot_conversion_ratio), annual operation cost (annual_operation_cost_cny; concept range 5–15 M CNY/year in ASSUME-005) — each `reason` states the missing conditions and the recomputation path; phasing-zone and constraint-zone counts are registered in the geometry layers ([metric:phasing_zone_count] [metric:constraint_zone_count]), and the key-area total recalculation in [metric:key_area_total_area_sqm].
+
+**⑤ Performance class, unknown (3 metrics, announcement 1.5(2) planning-indicator system)**: AI innovation index (ai_innovation_index), talent density (talent_density), AI output value (ai_output_value) — formulas and data sources registered; computed once official statistics release.
+
+All known metrics are recomputable from GeoJSON; area and green ratio are additionally cross-checked against public map measurements and the official planning_limits.json values (cross-check record in [source:AREA-CROSSCHECK]) [metric:site_area_sqm] [data:geometry/green_space.geojson#GREEN-001] [depth:metrics_recalculation].
 
 | Metric | Current value | Confidence | Use |
 | --- | --- | --- | --- |
@@ -670,7 +684,48 @@ The indicator system (`metrics.json`) has 9 metrics: overall-design area (site_a
 | Green ratio | 25.0% | Medium (provisional boundary) | Blue-green system performance |
 | Public-space ratio | ~5.9 ha (0.52%) | Medium (provisional boundary) | Public-space system performance |
 | Key-area count | 3 | High (layer verification) | Detailed-design scope confirmation |
+| Key-area total area | ~369.3 ha | High (measured recalculation) | Detailed-design total (deviation in ASSUME-002) |
+| Land-parcel count | 155 | High (layer verification) | Seamless-coverage completeness evidence |
+| Land-use class count | 13 | High (layer verification) | Classification-structure evidence (per MNR guide) |
+| Building count | 84 | High (layer verification) | Massing-scale evidence |
+| Green-space element count | 21 (12 parks + 9 protective) | High (layer verification) | Blue-green element evidence |
+| Public-space node count | 16 (6+6+3+1) | High (layer verification) | Scenario-node evidence |
+| Road-segment count | 13 | High (layer verification) | Mobility-skeleton evidence |
+| Phasing-zone count | 3 | High (layer verification) | Phased-implementation evidence |
+| Constraint-zone count | 3 | High (layer verification) | Sensitive-boundary disclosure evidence |
+| Research 0802 ratio | 21.9% (concept-layer recalculation) | Medium (concept caliber) | 1+X+1 functional structure (interval in ASSUME-005) |
+| Commerce 05 ratio | 7.0% (concept-layer recalculation) | Medium (concept caliber) | 1+X+1 functional structure |
+| Housing 0701 ratio | 13.6% (concept-layer recalculation) | Medium (concept caliber) | 1+X+1 functional structure |
+| Roads 1207 ratio | 10.7% (concept-layer recalculation) | Medium (concept caliber) | 1+X+1 functional structure |
+| Green 1401+1402 ratio | 25.0% (concept-layer recalculation) | Medium (concept caliber) | 1+X+1 functional structure |
+| Reserve 16 ratio | 2.7% (concept-layer recalculation) | Medium (concept caliber) | 1+X+1 functional structure |
+| Culture/edu/sports/medical ratio | 14.3% (concept-layer recalculation) | Medium (concept caliber) | 1+X+1 functional structure |
+| Scenario-card count | 12 (registered in narrative) | High (text verification) | agent.3 coverage evidence |
+| Industrial test-scenario count | 3 (registered in narrative) | High (text verification) | agent.3 coverage evidence |
+| User-persona count | 7 (registered in narrative) | High (text verification) | agent.3 coverage evidence |
+| Pilgrimage-landmark count | 3 (registered in narrative) | High (text verification) | agent.4 coverage evidence |
+| Global-case count | 6 (registered in narrative) | High (text verification) | agent.2 coverage evidence |
+| Geometry-layer count | 9 (registered in narrative) | High (text verification) | Package-structure evidence |
+| Pulse-beat count | 4 (registered in simulation.json) | High (text verification) | Operating-mechanism evidence |
+| Rollback-trigger class count | 5 (registered in simulation.json) | High (text verification) | Risk-control evidence |
+| Simulation-task count | 15 (registered in simulation.json) | High (text verification) | Protocol-executability evidence |
+| Funding-channel count | 4 (registered in narrative) | High (text verification) | Funding-mechanism evidence |
+| One-off investment-item count | 11 (registered in narrative) | High (text verification) | Renewal-project-list evidence |
+| Objection-gate count | 3 (registered in narrative) | High (text verification) | Objection-handling evidence |
+| Emergency-tier count | 3 (registered in simulation.json) | High (text verification) | Emergency-mechanism evidence |
+| Public bottom-line indicator count | 5 (registered in narrative) | High (text verification) | Public-interest guarantee evidence |
 | Floor-area ratio | unknown | Pending official conditions | Enters no conclusion |
+| Building height | unknown | Pending official conditions | Enters no conclusion |
+| Building density | unknown | Pending official conditions | Enters no conclusion |
+| Statutory green ratio | unknown | Pending official conditions | Per official control caliber |
+| Setback | unknown | Pending official conditions | Per official red lines |
+| Affected-household count | unknown | Pending site survey | No demolish-renovate-retain conclusion |
+| Mitigation budget | unknown | Pending official investment plan | Concept range in ASSUME-005 |
+| Compute capacity | unknown | Pending industry implementation | Concept direction in Chapter 6 |
+| Annual participant count | unknown | Pending operating data | Conversion funnel in ASSUME-005 |
+| Approved scenario count | unknown | Pending P1 gates | All scenarios are concept declarations |
+| Developer-to-pilot conversion ratio | unknown | Pending operating data | Conversion funnel in ASSUME-005 |
+| Annual operation cost | unknown | Pending official investment plan | Concept range 5–15 M CNY/year in ASSUME-005 |
 | AI innovation index | unknown | Pending official statistics | Announcement 1.5(2) planning indicator (formula registered) |
 | Talent density | unknown | Pending official statistics | Announcement 1.5(2) planning indicator (formula registered) |
 | AI output value | unknown | Pending official statistics | Announcement 1.5(2) planning indicator (formula registered) |

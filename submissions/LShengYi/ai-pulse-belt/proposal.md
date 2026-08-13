@@ -71,8 +71,8 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "robot-deliv
 
 | 口径 | 数量 | 说明 |
 | --- | --- | --- |
-| known 可直接复算 | 5 项 | site_area_sqm、building_footprint_area_sqm、green_ratio、public_space_ratio、key_area_count |
-| unknown 待官方数据 | 4 项 | floor_area_ratio、ai_innovation_index、talent_density、ai_output_value（公式已登记） |
+| known 可直接复算 | 35 项 | 空间类 14（面积/比例/计数，EPSG:4548 复算）＋功能比例 7（概念图层复算）＋元素计数 14（正文登记），清单见指标章 |
+| unknown 待官方数据 | 15 项 | 管控类 12（容积率/高度/密度/退线/户数/预算/算力/运营等）＋绩效类 3（AI 创新指数/人才密度/产值，公式已登记），reason 均已说明复算路径 |
 | 概念区间不进入结论 | 全部 | 所有比例/投资/资金区间标注"待复核"，见 ASSUME-005 |
 
 **表 A6 官方—实测差异声明**
@@ -663,7 +663,21 @@ AI 治理建议遵守数据最小化、公开来源、可解释与人工复核�
 
 ## 指标体系、面积复算与合规矩阵
 
-指标体系（`metrics.json`）含 9 项：总体设计范围面积（site_area_sqm，实测 11,412,825.4 m2，官方 11,400,000 m2，偏差 0.11%）、建筑基底面积（building_footprint_area_sqm，约 110.3 ha）、绿地率（green_ratio，25.0%）、公共空间比例（public_space_ratio，约 5.9 ha）、重点区数量（key_area_count，3）、容积率（floor_area_ratio，`status=unknown`，官方 FAR 控制缺失）与公告 1.5(2) 规划指标体系要求的 AI 创新指数（ai_innovation_index）、人才密度（talent_density）、产值规模（ai_output_value，均 `status=unknown`，待官方统计发布后按已登记公式复算）。所有 known 指标均可从 GeoJSON 复算，面积与绿地率另经公开地图量测与官方 planning_limits.json 数值交叉验证（交叉验证记录见 [source:AREA-CROSSCHECK]）[metric:site_area_sqm] [data:geometry/green_space.geojson#GREEN-001] [depth:metrics_recalculation]。
+指标体系（`metrics.json`）含 **50 项**，分五类管理（表内列出全部 50 项及数值）：
+
+**① 空间类 known（14 项，从提交几何直接复算，EPSG:4548）**：总体设计范围面积（site_area_sqm，实测 11,412,825.4 m2，官方 11,400,000 m2，偏差 0.11%）、建筑基底面积（building_footprint_area_sqm，约 110.3 ha）、绿地率（green_ratio，25.0%）、公共空间比例（public_space_ratio，约 5.9 ha、0.52%）、重点区数量（key_area_count，3）、重点区总面积（key_area_total_area_sqm，约 369.3 ha）、用地地块数（land_parcel_count，155 地块）、用地类别数（land_use_class_count，13 类）、建筑栋数（building_count，84）、绿地要素数（green_space_count，21：12 公园＋9 防护）、公共空间节点数（public_space_node_count，16：6 广场＋6 导视＋3 测试＋1 健康导引）、道路段数（road_segment_count，13）、分期区数（phasing_zone_count，3）、约束区数（constraint_zone_count，3）。空间类全部从 `geometry/*.geojson` 复算：图层计数类指标直接来自图层要素数（[metric:land_parcel_count] [metric:land_use_class_count] [metric:building_count]），绿地、公共空间节点与道路段计数见 [metric:green_space_count] [metric:public_space_node_count] [metric:road_segment_count]。
+
+**② 功能比例 known（7 项，按本包概念图层 EPSG:4548 复算，非官方用地口径）**：科研 0802 21.9%、商业 05 7.0%、住宅 0701 13.6%、道路 1207 10.7%、绿地 1401＋1402 25.0%、留白 16 2.7%、文教体医合计 14.3%（区间口径与 1+X+1 映射见 ASSUME-005 与第三章表）。各比例按概念图层复算（[metric:research_0802_ratio] [metric:commercial_05_ratio] [metric:residential_0701_ratio]）；道路、绿地与留白比例分别登记（[metric:roads_1207_ratio] [metric:green_1401_1402_ratio] [metric:reserve_16_ratio]），文教体医合计见 [metric:culture_edu_sports_medical_ratio]。
+
+**③ 方案元素计数 known（14 项，按正文登记）**：12 场景卡、3 产业测试场景、7 用户画像、3 朝圣地标、6 全球案例、9 几何图层、4 脉冲节拍、5 回滚触发器、15 模拟推演任务、4 资金渠道、11 一次性投入项目、3 异议门、3 应急层级、5 公共底线指标。元素计数均登记于正文与结构文件（[metric:scenario_card_count] [metric:industry_test_scenario_count] [metric:persona_count]），朝圣地标、全球案例与几何图层计数见 [metric:pilgrimage_landmark_count] [metric:ecosystem_case_count] [metric:geometry_layer_count]。
+
+协议与资金类计数另登记于 simulation.json 与投入清单（[metric:pulse_beat_count] [metric:rollback_trigger_class_count] [metric:simulation_task_count]），资金渠道与一次性项目计数见 [metric:funding_channel_count] [metric:investment_item_count]，异议门、应急层级与公共底线指标计数见 [metric:objection_gate_count] [metric:emergency_tier_count] [metric:bottom_line_indicator_count]。
+
+**④ 管控类 unknown（12 项，官方条件缺失，不进入任何结论）**：容积率（floor_area_ratio）、建筑高度（building_height_m）、建筑密度（building_density）、法定绿地率（statutory_green_ratio）、退线（setback_m）、受影响户数（affected_household_count）、补偿预算（mitigation_budget_cny）、算力规模（compute_capacity）、年参与人次（annual_participant_count）、已批场景数（approved_scenario_count）、开发者转化率（developer_to_pilot_conversion_ratio）、年度运营成本（annual_operation_cost_cny，概念区间 0.05–0.15 亿元/年见 ASSUME-005）——reason 均已说明待补条件与复算路径；分期区与约束区数量登记于几何图层（[metric:phasing_zone_count] [metric:constraint_zone_count]），重点区总量复算见 [metric:key_area_total_area_sqm]。
+
+**⑤ 绩效类 unknown（3 项，公告 1.5(2) 规划指标体系）**：AI 创新指数（ai_innovation_index）、人才密度（talent_density）、产值规模（ai_output_value）——公式与数据来源均已登记，待官方统计发布后复算。
+
+所有 known 指标均可从 GeoJSON 复算，面积与绿地率另经公开地图量测与官方 planning_limits.json 数值交叉验证（交叉验证记录见 [source:AREA-CROSSCHECK]）[metric:site_area_sqm] [data:geometry/green_space.geojson#GREEN-001] [depth:metrics_recalculation]。
 
 | 指标 | 当前值 | 置信度 | 用途 |
 | --- | --- | --- | --- |
@@ -672,7 +686,48 @@ AI 治理建议遵守数据最小化、公开来源、可解释与人工复核�
 | 绿地率 | 25.0% | 中（provisional 边界） | 蓝绿系统绩效 |
 | 公共空间比例 | 约 5.9 ha（0.52%） | 中（provisional 边界） | 公共空间系统绩效 |
 | 重点区数量 | 3 | 高（图层核对） | 详细设计范围确认 |
+| 重点区总面积 | 约 369.3 ha | 高（实测复算） | 详细设计总量（偏差见 ASSUME-002） |
+| 用地地块数 | 155 | 高（图层核对） | 无缝覆盖完整性证据 |
+| 用地类别数 | 13 | 高（图层核对） | 分类结构证据（按 MNR 指南） |
+| 建筑栋数 | 84 | 高（图层核对） | 体量组织规模证据 |
+| 绿地要素数 | 21（12 公园＋9 防护） | 高（图层核对） | 蓝绿系统要素证据 |
+| 公共空间节点数 | 16（6＋6＋3＋1） | 高（图层核对） | 场景落位节点证据 |
+| 道路段数 | 13 | 高（图层核对） | 交通骨架要素证据 |
+| 分期区数 | 3 | 高（图层核对） | 分期实施框架证据 |
+| 约束区数 | 3 | 高（图层核对） | 敏感边界披露证据 |
+| 科研 0802 比例 | 21.9%（概念图层复算） | 中（概念口径） | 1+X+1 功能结构（区间见 ASSUME-005） |
+| 商业 05 比例 | 7.0%（概念图层复算） | 中（概念口径） | 1+X+1 功能结构 |
+| 住宅 0701 比例 | 13.6%（概念图层复算） | 中（概念口径） | 1+X+1 功能结构 |
+| 道路 1207 比例 | 10.7%（概念图层复算） | 中（概念口径） | 1+X+1 功能结构 |
+| 绿地 1401＋1402 比例 | 25.0%（概念图层复算） | 中（概念口径） | 1+X+1 功能结构 |
+| 留白 16 比例 | 2.7%（概念图层复算） | 中（概念口径） | 1+X+1 功能结构 |
+| 文教体医比例 | 14.3%（概念图层复算） | 中（概念口径） | 1+X+1 功能结构 |
+| 场景卡数 | 12（登记于正文） | 高（文本核对） | agent.3 覆盖证据 |
+| 产业测试场景数 | 3（登记于正文） | 高（文本核对） | agent.3 覆盖证据 |
+| 用户画像数 | 7（登记于正文） | 高（文本核对） | agent.3 覆盖证据 |
+| 朝圣地标数 | 3（登记于正文） | 高（文本核对） | agent.4 覆盖证据 |
+| 全球案例数 | 6（登记于正文） | 高（文本核对） | agent.2 覆盖证据 |
+| 几何图层数 | 9（登记于正文） | 高（文本核对） | 成果包结构证据 |
+| 脉冲节拍数 | 4（登记于 simulation.json） | 高（文本核对） | 运营机制框架证据 |
+| 回滚触发器类数 | 5（登记于 simulation.json） | 高（文本核对） | 风险管控框架证据 |
+| 模拟推演任务数 | 15（登记于 simulation.json） | 高（文本核对） | 协议可执行性证据 |
+| 资金渠道数 | 4（登记于正文） | 高（文本核对） | 资金机制框架证据 |
+| 一次性投入项目数 | 11（登记于正文） | 高（文本核对） | 更新项目清单证据 |
+| 异议门数 | 3（登记于正文） | 高（文本核对） | 异议处理机制证据 |
+| 应急层级数 | 3（登记于 simulation.json） | 高（文本核对） | 应急机制证据 |
+| 公共底线指标数 | 5（登记于正文） | 高（文本核对） | 公共利益保障证据 |
 | 容积率 | unknown | 待官方条件 | 不进入任何结论 |
+| 建筑高度 | unknown | 待官方条件 | 不进入任何结论 |
+| 建筑密度 | unknown | 待官方条件 | 不进入任何结论 |
+| 法定绿地率 | unknown | 待官方条件 | 以官方控规口径为准 |
+| 退线 | unknown | 待官方条件 | 以官方红线为准 |
+| 受影响户数 | unknown | 待现状调查 | 拆改留不做结论 |
+| 补偿预算 | unknown | 待官方投资计划 | 概念区间见 ASSUME-005 |
+| 算力规模 | unknown | 待产业落地 | 概念方向见第六章 |
+| 年参与人次 | unknown | 待运营数据 | 转化漏斗见 ASSUME-005 |
+| 已批场景数 | unknown | 待 P1 门 | 全部场景为概念申报 |
+| 开发者转化率 | unknown | 待运营数据 | 转化漏斗见 ASSUME-005 |
+| 年度运营成本 | unknown | 待官方投资计划 | 概念区间 0.05–0.15 亿元/年见 ASSUME-005 |
 | AI 创新指数 | unknown | 待官方统计 | 公告 1.5(2) 规划指标（公式已登记） |
 | 人才密度 | unknown | 待官方统计 | 公告 1.5(2) 规划指标（公式已登记） |
 | 产值规模 | unknown | 待官方统计 | 公告 1.5(2) 规划指标（公式已登记） |
