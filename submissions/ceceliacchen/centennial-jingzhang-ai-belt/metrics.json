@@ -302,10 +302,10 @@
       "approved_control": false,
       "value": 14,
       "unit": "count",
-      "formula": "count(ai_service_nodes)",
+      "formula": "count(scenario_cards)",
       "confidence": "low",
       "assumptions": [
-        "场景节点为概念落点，非既有设施普查；落点 geometry 已随上一轮整改从包内移除，仅保留文字与编号引用。"
+        "场景节点为概念落点，非既有设施普查；原 ai_service_nodes.geojson 已随上一轮整改移除，现以 scenarios/scenario-cards.json（14 个 NODE-01…NODE-14 场景卡）作为唯一权威引用。"
       ]
     }
   }
