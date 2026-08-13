@@ -780,8 +780,9 @@
         "drawings/a0-boards.pdf"
       ],
       "visual_sections": [
-        "总览地图",
-        "AI 场景"
+        "生态图谱与产业—空间映射",
+        "三处重点区原型",
+        "案例与来源"
       ],
       "source_ids": [
         "AGENT-TASKBOOK",
@@ -799,8 +800,8 @@
       "self_check_ids": [
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_zh": "六例全球案例表（每例含一手来源、机制、适用条件、不可照搬点、转化动作）、AI 创新生态图谱、产业-空间映射与土地/空间/产业/资金/人才/算力/数据/场景八类机制完整成文；未编造企业名单、投资额或政策承诺。",
-      "evidence_en": "A six-case global table (primary source, mechanism, applicability, non-transferable points, conversion move), AI ecosystem map, industry-space mapping, and eight mechanisms (land, space, industry, capital, talent, compute, data, scenario) are fully written; no fabricated company lists, investment figures, or policy promises."
+      "evidence_zh": "proposal.md 的“AI 创新生态图谱与产业—空间映射”表把研发、孵化、测试、转化、规模化、传播六阶段逐项映射到三核两翼、公共节点、八类机制、运营角色与可核查输出；site-overview 图件、A0-1/A0-4、A3-3 和 visual/index.html 提供可见双语图谱。六个案例均指向具体官方页面并记录采集方法、时空覆盖、许可/限制、交叉核验和转化边界。",
+      "evidence_en": "The proposal's AI ecosystem and industry-space table maps the six stages of research, incubation, testing, translation, scaling, and communication to the three cores/two wings, public nodes, eight mechanisms, accountable roles, and auditable outputs. The site-overview figure, A0-1/A0-4, A3-3, and visual/index.html show the bilingual map. All six cases point to specific official pages and record collection method, spatial/temporal coverage, rights/limits, cross-check, and transfer boundary."
     },
     {
       "requirement_id": "agent.3",
@@ -826,9 +827,9 @@
         "drawings/a0-boards.pdf"
       ],
       "visual_sections": [
-        "AI 场景",
-        "蓝绿公共空间",
-        "交通慢行"
+        "TVS 可测试服务蓝图",
+        "三处重点区原型",
+        "蓝绿公共空间与交通慢行"
       ],
       "source_ids": [
         "AGENT-TASKBOOK",
@@ -844,8 +845,8 @@
         "VISUAL_STATIC",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_zh": "十二张场景卡（含 3 张标记为 AI 产业测试验证场景，每卡含 id/用户/空间节点/问题/服务/数据及合法来源/隐私最小化/人工复核/运营责任/成熟度/验证指标）、六类 persona、场景-空间-运营矩阵与小月河公共体验路径。",
-      "evidence_en": "Twelve scenario cards (three explicitly marked as AI industry testing/validation scenarios, each with id/user/spatial node/problem/service/data and legal source/privacy minimization/human review/operating responsibility/maturity/validation metrics), six personas, a scenario-space-operation matrix, and a Xiaoyue River public experience route."
+      "evidence_zh": "十二张场景卡与六类 persona 保持完整；proposal.md 的“三个 TVS 的可测试服务蓝图”对 SC-02/08/11 分别给出 persona、触发入口、空间节点、前台/后台、输入/输出、合法来源、最小采集、人工复核、失败关闭、投诉申诉、责任、准入门槛、测试步骤、退出条件和 4 项指标获取方式，并明确人工窗口/电话/纸质表单提供等价服务。A0-3、A3-5、metrics-evidence 图件与视觉页可见。",
+      "evidence_en": "The twelve scenario cards and six personas remain complete. The proposal's three testable TVS blueprints give SC-02/08/11 a persona, trigger, node, frontstage/backstage, input/output, lawful source, minimum collection, human review, fail-closed, complaint/appeal, responsibility, access gate, test steps, exit, and four measurable data methods, with equivalent counter/phone/paper service. They are visible in A0-3, A3-5, the metrics-evidence figure, and the visual index."
     },
     {
       "requirement_id": "agent.4",
