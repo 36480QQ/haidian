@@ -30,7 +30,11 @@
         "submissions/xie7ge/comind-loop/assets/figures/mobility-bluegreen.png",
         "submissions/xie7ge/comind-loop/assets/figures/site-overview.en.png",
         "submissions/xie7ge/comind-loop/assets/figures/site-overview.png",
+        "submissions/xie7ge/comind-loop/assets/media/cover-v3.webp",
         "submissions/xie7ge/comind-loop/assets/media/cover.webp",
+        "submissions/xie7ge/comind-loop/assets/media/station-dazhongsi-v3.png",
+        "submissions/xie7ge/comind-loop/assets/media/station-origin-v3.png",
+        "submissions/xie7ge/comind-loop/assets/media/station-zhongzhiyuan-v3.png",
         "submissions/xie7ge/comind-loop/assumptions.json",
         "submissions/xie7ge/comind-loop/changelog.md",
         "submissions/xie7ge/comind-loop/compliance_matrix.json",
@@ -66,7 +70,7 @@
       "ai_package_stages": {
         "submissions/xie7ge/comind-loop": "formal"
       },
-      "total_bytes": 10689625,
+      "total_bytes": 26620221,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -145,7 +149,7 @@
       "summary": {
         "standard_matrix_items": 6,
         "design_depth_items": 15,
-        "known_metric_refs_required": 17,
+        "known_metric_refs_required": 22,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
@@ -153,7 +157,7 @@
           "standard": 6,
           "depth": 15,
           "data": 12,
-          "metric": 10
+          "metric": 14
         }
       }
     },

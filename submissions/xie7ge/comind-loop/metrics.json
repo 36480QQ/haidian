@@ -240,6 +240,51 @@
         "The stages define the proposed governance and spatial-design lifecycle."
       ]
     },
+    "station_spatial_sequence_coverage_ratio": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": ["proposal.md", "assets/figures/key-areas.png"],
+      "formula": "count(key areas documenting arrival, threshold, core, public review and exit) / count(KEY_AREA)",
+      "confidence": "high",
+      "assumptions": ["This measures design-package coverage, not built-space performance."]
+    },
+    "accessible_equivalent_path_key_area_ratio": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": ["proposal.md", "geometry/key_areas.geojson"],
+      "formula": "count(key areas requiring a continuous staffed or non-digital equivalent path) / count(KEY_AREA)",
+      "confidence": "medium",
+      "assumptions": ["Detailed accessibility design requires survey and professional review."]
+    },
+    "day_night_operation_key_area_ratio": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": ["proposal.md", "geometry/key_areas.geojson"],
+      "formula": "count(key areas with explicit day and night operating modes) / count(KEY_AREA)",
+      "confidence": "high",
+      "assumptions": ["Operating modes are conceptual requirements for future operators."]
+    },
+    "reversible_component_project_ratio": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": ["proposal.md"],
+      "formula": "count(key-area station concepts using a six-item reversible kit) / count(KEY_AREA)",
+      "confidence": "medium",
+      "assumptions": ["Component specifications and quantities require later engineering design."]
+    },
+    "comind_kit_component_count": {
+      "status": "known",
+      "value": 6,
+      "unit": "count",
+      "source_files": ["proposal.md"],
+      "formula": "count(reversible components in the CoMind spatial kit)",
+      "confidence": "high",
+      "assumptions": ["The kit is a concept-stage minimum, not a procurement list."]
+    },
     "total_floor_area_sqm": {
       "status": "unknown",
       "value": null,
