@@ -42,6 +42,36 @@
       "path": "brief/site-package/agent_taskbook.json",
       "source_type": "user_provided_cleared",
       "usage": "Agent-facing open-call principles, six required agent tasks, scenario/branding/operation requirements, and boundary clause."
+    },
+    {
+      "id": "DATA-HAIDIAN-AI-INDUSTRY",
+      "url": "https://zyk.bjhd.gov.cn/",
+      "source_type": "external_public_statistics",
+      "usage": "Haidian AI industry scale (core industry ~2822亿元 2024, 1900+ AI enterprises, 104 registered large models) and district GDP (~1.3万亿元); cited as verifiable public context for the industry/ecosystem research, not as statutory control."
+    },
+    {
+      "id": "DATA-HAIDIAN-EDUCATION",
+      "url": "https://zyk.bjhd.gov.cn/",
+      "source_type": "external_public_statistics",
+      "usage": "Haidian education scale (~415,000 enrolled students, 181 primary/secondary schools, 220 kindergartens, 2024); supports the campus-adjacent innovation-street and talent-life-service scenario KPIs."
+    },
+    {
+      "id": "DATA-ALONG-UNIVERSITIES",
+      "url": "https://zyk.bjhd.gov.cn/",
+      "source_type": "external_public_reference",
+      "usage": "Distribution of universities and research institutes along the Xueyuan Road / Jing-Zhang corridor (Beijing Jiaotong, Beihang, USTB, CUGB, CUMTB, BLCU, BJFU, CAU, Tsinghua, PKU; CAS institutes); anchors the 'source/origin' ring of the innovation-ecosystem map."
+    },
+    {
+      "id": "DATA-RAIL-METRO-RIDERSHIP",
+      "url": "https://www.bjsubway.com/",
+      "source_type": "external_public_statistics",
+      "usage": "Beijing rail-transit ridership context (network ~990万/day 2024; Line 13 peak ~160万/day; Line 13 A/B split adding ~19 stations); supports slow-mobility demand, station-integration, and AI+scenario KPI baselines."
+    },
+    {
+      "id": "DATA-JINGZHANG-HSR",
+      "url": "https://www.beijing.gov.cn/",
+      "source_type": "external_public_statistics",
+      "usage": "Beijing-Zhangjiakou HSR operation (opened 2019-12-30; ~5742万 cumulative passengers to 2025-01; Qinghe station holiday peak ~4.45万/day); evidences the released ground rail corridor and the Qinghe tri-rail hub opportunity."
     }
   ]
 }
