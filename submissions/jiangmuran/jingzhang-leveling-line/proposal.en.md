@@ -21,7 +21,7 @@ scenarios: ["robot-delivery-low-speed", "ai-health-service-navigation", "ai-traf
 >
 > **So this proposal does not open with "urban AI governance". It opens where a wrong reading injures a person.** Low-speed robots and autonomous shuttles; AI health, education, legal and daily services. What those need is not a cleverer model. It is an institution that can show the system **measures back**.
 
-![The Leveling Line: the datum departs, rises, returns — and does not land back. That red height difference is the closure error](assets/figures/hero-leveling-line.en.png)
+![FIG.00 The Leveling Line: the datum departs, rises, returns — and does not land back. That red height difference is the closure error](assets/figures/hero-leveling-line.en.png)
 
 ## Executive brief, one page
 
@@ -91,7 +91,7 @@ The census deliberately does not read `submissions-data.js`. That file is a gene
 
 Data products ship in `visual/assets/` and the numbers can be checked directly. The generation scripts cannot ship: the submission format's allow-list accepts no `.py` anywhere (`assets/*` takes images only, `report/*` five fixed names, `geometry/*` nine named files). They are published in the accompanying issue instead. Both self-collected sources are graded `background_only` in `sources.json`: they are the empirical basis of the argument, **not** evidence for any spatial or statutory conclusion.
 
-![Overall concept and site cross-check](assets/figures/site-overview.en.png)
+![FIG.01 Overall concept and site cross-check](assets/figures/site-overview.en.png)
 
 Official `SITE_BOUNDARY` and the three `KEY_AREA` polygons remain unpublished. This package labels `geometry/site_boundary.geojson` and `geometry/key_areas.geojson` as `provisional_constraint` with `official_boundary=false`; they are for generation, self-check, visualisation and discussion only, never as an official redline, approval basis or precise-area basis. When official polygons appear, **every layer and metric is recomputed as a whole** — never one file at a time. That is the same rule this proposal applies to the city: over tolerance, re-measure the section, do not patch a station.
 
@@ -221,7 +221,7 @@ Motif and structure detection uses Chinese keyword patterns and misses synonyms,
 
 <!-- NUMERATOR:END -->
 
-![Evidence chain and submission package: a leveling circuit not yet closed](assets/figures/evidence-circuit.en.png)
+![FIG.02 Evidence chain and submission package: a leveling circuit not yet closed](assets/figures/evidence-circuit.en.png)
 
 None of this weakens the call. It shows the opposite: this open-source mechanism **is genuinely producing checkable public evidence**: every submission, every review record and the whole merge history are public, so each reading above can be re-run by anyone. **This sentence used to end “and no other city project can be measured this way”. This package has measured no other city project, so nothing in it could support that; it is removed.** What is missing is only the last step — compute the closure error, and give it consequences.
 
@@ -426,7 +426,7 @@ The two figures either side of this discrepancy deserve a note. The key-area tot
 
 All three spatial boundaries are provisional substitutes [source:BOUNDARY-SOURCE]; their inferential basis and error are documented in the repository's `provisional_boundaries_basis.md`. When official data is published, the whole package is recomputed [depth:existing_conditions_diagnosis] — never one layer at a time, because a network in which one station has been re-measured and the rest have not is not a network.
 
-![Three scope levels and network orders](assets/figures/land-use-structure.en.png)
+![FIG.03 Three scope levels and network orders](assets/figures/land-use-structure.en.png)
 
 ## Coordinated Research Area: Industry and Future City Research
 
@@ -461,7 +461,7 @@ The mark is taken from two physical objects: the form of a benchmark stone, and 
 
 The mark, its construction, four variants and three applications (benchmark plaque, reading board, data-interface icon) are drawn below. All graphics are generated from geometric parameters and can be redrawn from them.
 
-![Identity: mark, construction and applications](assets/figures/identity.en.png)
+![FIG.07 Identity: mark, construction and applications](assets/figures/identity.en.png)
 
 ### Three positionings, five functions, and a circuit that closes (agent.1)
 
@@ -523,7 +523,7 @@ The re-survey cell for funding is **deliberately empty**: investment arrangement
 
 The correspondence between industry and space lands in [data:geometry/land_use.geojson#LU-001], with metric conventions in [metric:key_area_count]. The full chain of custody and the six-case comparison are drawn below — **the funding row's re-survey cell is a blank box in the drawing, and that is a judgement rather than an oversight.**
 
-![Innovation ecosystem and element mechanisms](assets/figures/ecosystem.en.png)
+![FIG.08 Innovation ecosystem and element mechanisms](assets/figures/ecosystem.en.png)
 
 ### Regional coordination: extending the network into a regional one (agent.1)
 
@@ -555,7 +555,7 @@ The five partners the taskbook names sit at different points in the innovation c
 
 This proposal decides nothing on behalf of any cluster and assumes no coordination commitment; all of the above is mechanism advice for independent assessment [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]. At the regional level, the spatial interface is the coordinated research area [data:geometry/site_boundary.geojson#SITE-001].
 
-![Regional coordination interfaces: extending the levelling network](assets/figures/region-interface.en.png)
+![FIG.11 Regional coordination interfaces: extending the levelling network](assets/figures/region-interface.en.png)
 
 **The table above is now a drawing: FIG.11, the regional coordination interfaces** (`assets/figures/region-interface.png`, and A0 board 2). Drawing it has a reason. Coordination is the item most often answered with a sentence about strengthening cooperation and building platforms — a sentence that cannot be checked and therefore cannot be executed. Levelling gives it an executable form: two independent networks join by sharing a datum and a tolerance convention, and the output of a **joint observation** is a number, the cross-network closure error, not an intention. Every row states not only what is exchanged but **what is explicitly not exchanged** and **what must be true for the interface to open** — because an interface with no stated non-commitment is a promise made on someone else's behalf.
 
@@ -630,7 +630,7 @@ The classification is by the approval and engineering level a connection require
 | Beijing AI Origin Community | 104.3 ha | BM-0 | community services 94% | 2 | 1 / 1 |
 | Zhongzhiyuan AI Acceleration Zone | 192.9 ha | BM-1 | R&D 100% | 2 | 2 / 2 |
 
-The three total **369.3 ha**, **32.4%** of the design scope. **The denominator of each share is the key area's own extent, not the design scope** — a share with an unstated denominator is a defect this package's errata register names. Land-use and key-area boundaries are provisional stand-ins and must be recomputed when official geometry is published; the per-area plans are FIG.04, drawn at one shared scale.
+The three total **369.3 ha**, **32.4%** of the design scope. **The denominator of each share is the key area's own extent, not the design scope** — a share with an unstated denominator is a defect this package's errata register names. Land-use and key-area boundaries are provisional stand-ins and must be recomputed when official geometry is published; the per-area plans are FIG.04 and the sections FIG.13 — three at one scale on one datum convention, so the charge that they are one template used three times can be tested.
 
 **The dominant-use column runs at nearly 100%, and that is stated rather than hidden behind a top-three list: this partition gives each key area one dominant use and does not subdivide within it.** Generating this table is what made it sayable — a top-three framing would have shown 99% / 1% and looked layered. It is a judgement, not an oversight: the names of the three areas come from the announcement, their geometry is a provisional stand-in, and subdividing inside them depends on tenure, the regulatory plan and retain/demolish status — the same unpublished data. **A 193-hectare area with one use is thin as detailed design. This proposal says so, and attaches it to a named precondition rather than glossing it: when official geometry and controls are published, these three cells are the first three to be replaced.**
 
@@ -644,7 +644,7 @@ Each of the three key areas carries one survey role, and the three check one ano
 | Beijing AI Origin Community [data:geometry/key_areas.geojson#PROV-KEY-002] | **BM-0, origin benchmark** | Near-campus innovation, open-source system, talent district | **Origin benchmark stone** and public evidence hall (permanent display and search of every proposal in this call); direct campus-to-park walking link; rail-station integration | S01 scenario open day; S07 open-source collaboration; re-survey of talent services |
 | Dazhongsi AI Industry Cluster [data:geometry/key_areas.geojson#PROV-KEY-003] | **BM-2, high-frequency reading point** | AI-native consumption and business | Four-quadrant pedestrian connection at the intersection; compound use of planned green space; Dazhongsi station integration | S03 agent business desk; S05 data-factor circulation; S09 daily-service demonstration street |
 
-![Key areas and benchmark layout](assets/figures/key-areas.en.png)
+![FIG.04 Key areas and benchmark layout](assets/figures/key-areas.en.png)
 
 ### Zhongzhiyuan AI Autonomous Innovation Acceleration Area (BM-1, the tolerance datum)
 
@@ -654,6 +654,10 @@ Each of the three key areas carries one survey role, and the three check one ano
 - **Buildings and scale.** Indicative footprints are in [data:geometry/buildings.geojson#BLDG-001], including the test field and tolerance chamber (BLDG-004) and the L2 closure stele (BLDG-002, offset from the former so the two do not share ground). Scale is order-of-magnitude only and constitutes no building design.
 - **Retain, renovate, demolish.** Renovation-led. Existing workshops and research buildings with clear title and sound structure are converted first into test and display space. No demolition conclusion is offered.
 - **Public space connection.** A low-carbon social environment is organised along the Qinghe frontage, giving a continuous walk from the spine to the water's edge. That frontage is also a candidate position for a second-order point.
+
+![FIG.14 The through-block public route to the Qing river](assets/figures/riverfront.en.png)
+
+Across a frontage that is 100% single-use, a continuous walk means **through the block or not at all**. FIG.14 draws that route, and prices a refusal in minutes.
 - **Traffic.** External traffic here is freight-like — test equipment and materials — and must be separated from the pedestrian spine. **Freight entrances may not open onto the spine.**
 - **Scenarios carried.** S11 AI industry validation field (F1) and S10 public-safety operations review (F1). Both are scenarios that **may never be executed automatically.**
 
@@ -666,6 +670,10 @@ Each of the three key areas carries one survey role, and the three check one ano
 - **Retain, renovate, demolish.** Retention and renovation combined. **Residential provision must not be reduced to make room for innovation functions**; any talent housing must be additional to, not substituted for, existing residential supply — **and that constraint is currently unverifiable**. Existing residential floor area is unpublished and this package has not measured it, so `existing_residential_floor_area_sqm` stays `unknown` in `metrics.json` with its precondition named. By this proposal's own standard a rule that cannot be checked is not a rule yet: it stands as a mandatory check at the next stage, not as a satisfied condition. `0701` residential and `0804` education do not appear in the land-use layer because they fall inside the eleven reserved blocks and their boundaries depend on the same unpublished data — **a judgement, not an omission**.
 - **Public space connection.** The direct campus-to-park walking link is this area's decisive move, and its success is judged by the **actual walking time** of personas P3 and P4 — not by straight-line distance, which conceals every crossing, kerb and detour that decides whether the link is used. Rail-station integration follows the station-point unification rule, with the concourse doubling as a third-order point.
 - **Traffic.** Walking and cycling lead. The jurisdictional problem is sharpest here: points in this area sit across both park management and campus authority [data:geometry/public_space.geojson#PUBLIC-001].
+
+![FIG.17 The step-free link from the origin community to the heritage park](assets/figures/steplink.en.png)
+
+This link turns on one decision, drawn in FIG.17: **the ramp sits on the desire line and the steps beside it.**
 - **Scenarios carried.** S01 scenario open day and S07 open-source collaboration, both F3; talent and public-service re-surveys depart from here.
 
 ### Dazhongsi AI Industry Cluster (BM-2, the high-frequency reading point)
@@ -676,6 +684,10 @@ Each of the three key areas carries one survey role, and the three check one ano
 - **Buildings and scale.** The AI-native business frontage (BLDG-005) and the L3 zeroing point (BLDG-003, offset). The zeroing point is an annual ceremony space and an ordinary public dwelling space the rest of the year; it is not single-use.
 - **Retain, renovate, demolish.** Renovation and compound use. **Compound use of planned green space is conditional on the green function not being downgraded**: what is compounded is time-of-day and user group, not the conversion of green space into development land.
 - **Public space connection.** The **four-quadrant pedestrian connection at the intersection** is the most concrete spatial task in this area, and also the decisive location for device queue storage — without four-quadrant connection, devices and pedestrians necessarily contend for the same waiting area (see the transport section).
+
+![FIG.12 Four-quadrant pedestrian connection and device queue reservoir at Dazhongsi](assets/figures/crossing.en.png)
+
+This was a sentence and nothing else. FIG.12 draws it: holding areas in all four quadrants, the device queue reservoir set behind the building line, and an as-measured column left deliberately empty — carrying capacity is computed on site from measured clear width.
 - **Traffic.** Dazhongsi station integration. Points here span **three jurisdictions** — municipal road, rail station and commercial property — making them the most complex on the line.
 - **Scenarios carried.** S03 agent business service desk, S05 data-factor authorisation chain, S09 daily-service demonstration street, mostly F2.
 
@@ -1093,7 +1105,7 @@ Public-service facility baselines are a current data gap. This proposal invents 
 
 Layers [data:geometry/green_space.geojson#GREEN-001] and [data:geometry/public_space.geojson#PUBLIC-001]; recomputed ratios [metric:green_ratio] and [metric:public_space_ratio]; depth [depth:blue_green_public_space].
 
-![Slow mobility, blue-green and closing routes](assets/figures/mobility-bluegreen.en.png)
+![FIG.05 Slow mobility, blue-green and closing routes](assets/figures/mobility-bluegreen.en.png)
 
 ### Three AI pilgrimage landmarks (agent.4)
 
@@ -1150,7 +1162,7 @@ The current-cycle failure reading is shown at **every third-order community poin
 
 Replicated at BM-301, BM-302, BM-303 using component KIT-02; new structures required: 0.
 
-The five standard parts share one specification and open drawings, so any new node anywhere on the line can join in the same language.
+The five standard parts share one specification and open drawings, so any new node anywhere on the line can join in the same language. The construction detail is FIG.16; wear and replacement are FIG.18, where the stone is the only part that must never be replaced and the only one a person cannot carry; the no-drilling construction and setback rule beside heritage fabric are FIG.19; and why the plate carries no lamp is FIG.20.
 
 **One year of running it, costed — all eight benchmarks, row by row.**
 
@@ -1197,13 +1209,13 @@ External communication draws on published readings, not on promises. All of the 
 
 <!-- OPERATIONS:END -->
 
-![Landmarks, kit of parts, signage syntax and operating cycle](assets/figures/kit-of-parts.en.png)
+![FIG.09 Landmarks, kit of parts, signage syntax and operating cycle](assets/figures/kit-of-parts.en.png)
 
 A kit of parts is easy to write as a list, and a list is exactly what hides whether it works. The sheet below draws a third-order benchmark at **eye level**, to a stated scale of 1 m = 138 units: the stone flush with the paving, the reading board showing this cycle's `f 0.13 ≤ F 0.20`, seating with armrests, continuous step-free guidance, and a complaint entry offering both a scan and a phone/in-person route. The figures standing in it are personas P4, P5, P6 and P7 — **they are not staffage, they are the people who take the readings**, and every hard constraint in the five components exists because of them.
 
 The lower panel is the kerb in section, in the priority order the transport chapter sets, and it **draws sequence without drawing widths**: capacity must be computed on site from measured clear width, and a figure not derived from measurement is fabricated certainty. Device charging sits behind pedestrians and accessibility, and that order is itself the position.
 
-![The benchmark on the street, and how the kerb is shared](assets/figures/street-eye-level.en.png)
+![FIG.10 The benchmark on the street, and how the kerb is shared](assets/figures/street-eye-level.en.png)
 
 **Bilingual signage rules.** Most systems set Chinese above English and then drop English when space is short. This numbering grammar **depends on no language at all**, which is its core advantage as signage: the number itself (`BM-0`, `BM-3xx`, `RT-N`, `F1`) is Latin letters and digits, readable and repeatable by readers of either language and of neither. Order and cycle are bilingual with Chinese first; readings and tolerances are **numbers first** (`f 0.14 ≤ F 0.20` needs no translation); the complaint entry is bilingual **plus a non-textual icon**; historical and cultural text is bilingual in full, because compressing it distorts it. Three hard rules: **numbers are never translated** (a `BM-0` is `BM-0` in every language version, or cross-language reference breaks); when space is short, compress explanation first, then English, **never the number or the reading**; and where Chinese and English disagree anywhere, **the recomputable number governs**.
 
@@ -1241,6 +1253,10 @@ The signage and wayfinding system reuses the network's numbering grammar: the nu
 ## Renewal Projects, Implementation Policy, and Phasing
 
 Phasing and project extents are in [data:geometry/phasing.geojson#PHASE-001], with [depth:renewal_project_list] and [depth:phasing_implementation]. Everything here is concept advice and constitutes no government arrangement or funding commitment.
+
+![FIG.15 Phasing: advanced by closure results, not by dates](assets/figures/phasing.en.png)
+
+FIG.15 draws the three increments, the benchmarks each adds, and **what each phase costs to run**: the near term holds BM-0 alone, on one session a year.
 
 ### The first closure trial: a minimum unit that runs in four weeks
 
@@ -1346,7 +1362,7 @@ It calls none of this proposal's generation scripts and needs neither Python nor
 
 **This is not decoration.** During development it overturned one of this proposal's own numbers: `building_footprint_area_sqm` diverged by 16% because two landmarks sat concentric with adjacent facilities — the generation side hid the overlap in a union, and independent summation exposed it. **The response was to fix the geometry, not the metric:** the two landmarks were offset, and footprint overlap became a hard build error. The episode is recorded in `changelog.md`. A number that has been overturned by its own verifier is more credible than one never tested.
 
-![Recomputed metrics and the field census](assets/figures/metrics-evidence.en.png)
+![FIG.06 Recomputed metrics and the field census](assets/figures/metrics-evidence.en.png)
 
 ### Accessibility and legibility QA: computed, not asserted
 
@@ -1423,13 +1439,13 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-57 entries. By finder:
+59 entries. By finder:
 
 | Found by | Count | What it says |
 |---|---|---|
 | Independent audit | 25 | The audit was run against the shipped package, not a draft |
 | The author | 25 | Found while working |
-| This package's own gate | 3 | Caught at build time — which is what a gate is for |
+| This package's own gate | 5 | Caught at build time — which is what a gate is for |
 | **Reviewers outside this proposal** | **4** | [@anselasimov-web](https://github.com/anselasimov-web) on PR #1002; [@147228](https://github.com/147228) on PR #1065; [@Sonike](https://github.com/Sonike) on Issue #950; [@147228](https://github.com/147228) on Issue #950 / PR #1190 |
 
 <!-- ERRATA:COUNT:END -->
@@ -1445,7 +1461,7 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 | Shape | Count |
 |---|---|
 | **The check measured the convenient thing** | **13** |
-| **A deliverable was not looked at before shipping** | **9** |
+| **A deliverable was not looked at before shipping** | **11** |
 | **Two copies of one thing drifted** | **5** |
 | Geometry did not mean what it said | 4 |
 | A number outlived the sentence holding it | 4 |
@@ -1500,11 +1516,11 @@ An authorisation statement a reviewer cannot verify is not a statement. Each row
 
 <!-- LEDGERCOUNT:BEGIN -->
 
-**The file-level ledger sits outside the review input, so its result is brought in here.** `build_review_input` sends `proposal.md` and eight JSON files; neither `report/copyright_statement.md` nor `visual/assets/rights_ledger.json` is among them. **A rights ledger the reviewer structurally cannot open is, from the reviewer's position, exactly the unverifiable assertion this package objects to elsewhere.** All **104 shipped files** carry a clearance class; a file without one fails the build:
+**The file-level ledger sits outside the review input, so its result is brought in here.** `build_review_input` sends `proposal.md` and eight JSON files; neither `report/copyright_statement.md` nor `visual/assets/rights_ledger.json` is among them. **A rights ledger the reviewer structurally cannot open is, from the reviewer's position, exactly the unverifiable assertion this package objects to elsewhere.** All **106 shipped files** carry a clearance class; a file without one fails the build:
 
 | Clearance class | Files |
 |---|---|
-| `author-originated` | 82 |
+| `author-originated` | 84 |
 | `provisional-only-with-stated-limit` | 9 |
 | `author-originated-measurement` | 8 |
 | `author-originated-with-embedded-fonts` | 4 |
@@ -1555,9 +1571,11 @@ One point of citation discipline deserves stating plainly: **the cases are used 
 
 ### Index to the drawings, and what to read in each
 
+**The forms these sheets ship in.** The twenty-one single sheets are also composed into two finished products: `drawings/a3-booklet.pdf`, an A3 booklet to be read page by page, and `drawings/a0-boards.pdf`, A0 boards to be read standing up. Two renderings of the text open directly: `report/proposal.html` is this document as a web page, and `visual/index.html` is a visual index threading the shipped structured data together; `report/narrative.md` is a continuous narrative without the tables and gate records, for a reader who wants only the argument. Two data files behind the drawings ship as well: `visual/assets/personas.json` defines the nine personas and makes every `P` number in the prose and the scenario cards assertable one by one, and `visual/assets/score_correlates.json` holds this proposal's own statistics on what correlates with score across the field. **Listing them is not housekeeping: a finished product the prose never names is one nobody has been told exists.**
+
 <!-- FIGINDEX:BEGIN -->
 
-There are 20 sheets, numbered FIG.00 to FIG.19. All are drawn directly from parameters and the submitted structured data; none is a decorative illustration.
+There are 21 sheets, numbered FIG.00 to FIG.20. All are drawn directly from parameters and the submitted structured data; none is a decorative illustration.
 
 | Sheet | Content | What to read on it |
 |---|---|---|
@@ -1581,6 +1599,7 @@ There are 20 sheets, numbered FIG.00 to FIG.19. All are drawn directly from para
 | FIG.17 | The step-free link from the origin community to the heritage park | FIG.13's section says this place exists to put a 1:12 ramp where the steps are, and no drawing had shown it. One design decision: **the ramp sits on the desire line and the steps beside it** — the usual arrangement offsets the ramp and charges its user twice that offset every trip, while nobody on the steps walks a metre further |
 | FIG.18 | Maintenance: putting the wear on the parts that can be swapped | A monthly re-survey is a maintenance problem first. The sheet turns on one asymmetry: **the stone is the only part that must never be replaced and the only one a person cannot carry** (about 230 kg) — a benchmark that moves is not the same benchmark — so the wear is placed on the face, post, seat and guidance strip; the last block states what happens when a stone is lost anyway |
 | FIG.19 | Monuments beside heritage fabric: the no-drilling construction and its setback rule | The call is for a belt along a hundred-year-old railway and this proposal's central act is sinking concrete. Three constructions chosen by distance from the fabric, with the cost stated: **without excavation there is no foundation below the frost line, so the surface-set marker cannot carry first- or second-order duty**. Where d is measured from depends on the official heritage layer — absent here, and recorded as a gap |
+| FIG.20 | Reading after dark, without lighting the benchmark | Three third-order points are read monthly by residents, and many of those days fall after dark. A lamp is the obvious answer and the wrong one: **a dead lamp leaves a plate that looks maintained and cannot be read** — a measurement whose failure is invisible. The face is retroreflective and the reader brings the light; a dirty face looks dirty, in daylight |
 
 <!-- FIGINDEX:END -->
 
