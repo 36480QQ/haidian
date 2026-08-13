@@ -87,6 +87,19 @@
    }
   ],
   "kit_is_open_drawing": true,
+  "failure_display": {
+   "defect_zh": "**这一条是本方案自己的规则打自己。** L2 闭合差碑——那面「允许自己难看」的墙——立在 BM-1 众智园，一个研发片区；而读数不一致真正落到的人在 BM-303，一个约 3 km 外的三等社区点。**机构的公开认错，立在机构自己所在的地方。** 本方案通篇主张「把复核权放在需要走十五分钟才能到的专门机构，等于没有给」，这处选址正是那句话的反例。",
+   "defect_en": "**This is the proposal's own rule turned against it.** The L2 closure stele — the wall that is allowed to look bad — stands at BM-1 in Zhongzhiyuan, an R&D district, while the person a wrong reading lands on is at BM-303, a third-order community point some 3 km away. **The institution's public confession is sited where the institution is.** This proposal argues throughout that review placed fifteen minutes' walk away has not been given; this siting was the counter-example.",
+   "correction_zh": "当期失败读数在**每一个三等社区点**同步显示，用的是既有标准件 KIT-02 读数牌，不新增构筑物：退回中的场景以基准红标出，写明退回日期与恢复条件。L2 保留为**年度归零仪式**与全年闭合记录的所在，因为那是一次集中的、面向全线的仪式；而**当期的坏消息属于它发生的地方**。",
+   "correction_en": "The current-cycle failure reading is shown at **every third-order community point**, using the existing KIT-02 reading plate rather than any new structure: a returned scenario is marked in datum red with its return date and the conditions for resumption. L2 remains the site of the annual return-to-datum ceremony and the year's closure record, because that is one line-wide occasion — but **the current bad news belongs where it happened**.",
+   "replicated_at": [
+    "BM-301",
+    "BM-302",
+    "BM-303"
+   ],
+   "component": "KIT-02",
+   "new_structures_required": 0
+  },
   "kit_note_zh": "五类标准件统一规格、开放图纸，使全线任何新增节点都能以一致语言接入。"
  },
  "developer_community_operation": {
