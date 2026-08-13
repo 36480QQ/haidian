@@ -121,6 +121,10 @@ Logo 与视觉识别方向（概念建议）：以“一列穿越百年铁路的
 
 **定位**：花园型全栈自主创新街区，对应创新链的“源头”，承载基础研究、算力底座、模型训练与标准/安全治理。复算面积约 192.92 公顷（公告约 192.1 公顷）[metric:key_area_area_sqm_zhongzhiyuan_ai_acceleration_area]。
 
+![众智园放大平面·低密测试院落原型](assets/figures/key-area-zhongzhiyuan.png)
+
+放大平面把“低密测试院落”原型落到图纸：研发组团围合半开放测试庭院，模型评测、安全治理沙盒与算力驿站沿庭院布置，可追溯到科研用地（0802）上的复算落点 [data:geometry/buildings.geojson#BLDG-003] [data:geometry/land_use.geojson#LU-001]。
+
 #### 空间形态原型：低密测试院落
 
 众智园的空间形态原型是“低密测试院落”：AI研发中心、全栈自主创新实验室、算力与标准服务办公与人才公寓（BLDG-002—BLDG-006）以中低密度围合成若干开放测试庭院，模型评测、安全治理沙盒与算力驿站沿庭院布置，源头站广场（PUBLIC-003）成为庭院的公共地面，清河界面（ROAD-008）作为园区景观脊向北界定院落群 [data:geometry/buildings.geojson#BLDG-003] [data:geometry/public_space.geojson#PUBLIC-003]。这一原型“远观可读出庭院—绿带—站场的院落城市结构，近观可追溯到每个测试场地、算力驿站与标准工作坊在科研用地（0802）上的可复算落点” [data:geometry/land_use.geojson#LU-001]。设计动作以“围合”为主：研发组团围合出半开放测试庭院，景观脊缝合庭院与滨水界面，站城东西接驳（ROAD-006）把五环路方向人流导入庭院北侧的接驳枢纽 [data:geometry/roads.geojson#ROAD-006]。
@@ -135,6 +139,10 @@ Logo 与视觉识别方向（概念建议）：以“一列穿越百年铁路的
 ### 编组段·转化站：北京AI原点社区
 
 **定位**：近校型成果转化与人才社区，对应创新链的“转化”，面向清华、北大、中科院等原始创新策源，组织孵化、转化、开源协作与人才服务。复算面积约 104.32 公顷（公告约 104.3 公顷）[metric:key_area_area_sqm_beijing_ai_origin_community]。
+
+![原点社区放大平面·斜向交换站厅原型](assets/figures/key-area-origin.png)
+
+放大平面表达“斜向交换站厅”的对角对位：近校成果转化街与开源广场沿教育用地（0804）斜向相交，穿行口、首层业态与慢行缝合点可追溯到教育用地上的几何落点 [data:geometry/buildings.geojson#BLDG-007] [data:geometry/public_space.geojson#PUBLIC-002]。
 
 #### 空间形态原型：斜向交换站厅
 
@@ -151,11 +159,19 @@ Logo 与视觉识别方向（概念建议）：以“一列穿越百年铁路的
 
 **定位**：城市型智能经济与国际交往街区，对应创新链的“到达”，承载智能体、智能终端、内容消费、数据要素与数字资产流通。复算面积约 72.05 公顷（公告约 72.0 公顷）[metric:key_area_area_sqm_dazhongsi_ai_industry_cluster]。
 
+![大钟寺放大平面·站城双厅原型](assets/figures/key-area-dazhongsi.png)
+
+放大平面表达“站城双厅”的并列体量：站厅—广场—城厅沿站城东西接驳共享公共地面，四象限步行连通可追溯到商业用地（05）上的复算落点 [data:geometry/buildings.geojson#BLDG-010] [data:geometry/roads.geojson#ROAD-005]。
+
 #### 空间形态原型：站城双厅
 
 大钟寺的空间形态原型是“站城双厅”：大钟寺轨道接驳枢纽（BLDG-012）形成“站厅”，AI原生商业综合体与消费体验街区（BLDG-010/011）形成“城厅”，两个厅沿站城东西接驳（ROAD-005）并列布置并共享公共地面，到达站广场（PUBLIC-001）成为双厅之间的城市前厅 [data:geometry/buildings.geojson#BLDG-010] [data:geometry/public_space.geojson#PUBLIC-001]。这一原型“远观可读出站厅—广场—城厅三个并列体量构成的双厅城市结构，近观可追溯到四象限步行连通、内容消费与数据要素展示在商业用地（05，复算占比约 12.7%）上的可复算落点” [metric:land_use_share_05]。设计动作以“双厅并列+四象限缝合”为主：站城东西接驳（ROAD-005）串联双厅与东西象限，四象限步行连通（JZ-04）缝合路口四个方向，数据要素会客厅与AI原生消费共享同一公共地面 [data:geometry/roads.geojson#ROAD-005]。
 
 - **空间结构**：以大钟寺站一体化枢纽 + 站城商业街区 + AI原生消费体验街区组织；规划绿地复合利用。
+
+![大钟寺站城东西接驳剖面](assets/figures/section-dazhongsi.png)
+
+剖面表达站厅—广场—城厅沿东西接驳轴线的竖向空间关系，接驳连通与公共地面共享在剖面上可追溯 [data:geometry/roads.geojson#ROAD-005] [data:geometry/public_space.geojson#PUBLIC-001]。
 - **建筑更新**：大钟寺·AI原生商业综合体、AI消费体验街区、轨道接驳枢纽（BLDG-010—BLDG-012）构成建筑基底意象 [data:geometry/buildings.geojson#BLDG-010]。
 - **交通慢行**：开展大钟寺地铁站所在路口四象限步行连通设计，完善非机动车停放等静态交通组织，站城东西接驳（ROAD-005）提升重点地块连通度 [data:geometry/roads.geojson#ROAD-005]。
 - **公共空间**：到达站广场（PUBLIC-001）与大钟寺·站城公园绿地（GREEN-004）承载国际交往、内容消费与数据要素展示 [data:geometry/public_space.geojson#PUBLIC-001]。

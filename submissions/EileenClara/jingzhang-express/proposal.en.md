@@ -121,6 +121,10 @@ The three key areas are the physical carriers of the "three stations" and corres
 
 **Positioning**: a garden-type full-stack independent innovation block corresponding to the "origin" of the innovation chain, carrying basic research, computing-power foundation, model training, and standards/safety governance. Recalculated area: approximately 192.92 hectares (announced approximately 192.1 hectares) [metric:key_area_area_sqm_zhongzhiyuan_ai_acceleration_area].
 
+![Enlarged plan of Zhongzhiyuan · low-density testing campus prototype](assets/figures/key-area-zhongzhiyuan.en.png)
+
+The enlarged plan brings the "low-density testing campus" prototype onto the drawing: R&D clusters enclose semi-open testing courtyards, with model evaluation, safety-governance sandboxes, and computing-power stations arranged along the courtyards, traceable to recalculable locations on research land (0802) [data:geometry/buildings.geojson#BLDG-003] [data:geometry/land_use.geojson#LU-001].
+
 #### Spatial-Form Prototype: Low-Density Testing Campus
 
 The spatial-form prototype of Zhongzhiyuan is the "low-density testing campus": the AI R&D Center, full-stack independent innovation laboratories, computing-power and standards service offices, and talent apartments (BLDG-002—BLDG-006) enclose open testing courtyards at low to medium density, with model evaluation, safety-governance sandboxes, and computing-power stations arranged along the courtyards; the origin-station plaza (PUBLIC-003) becomes the courtyards' public ground, and the Qinghe interface (ROAD-008) acts as the campus's landscape spine delimiting the courtyard clusters to the north [data:geometry/buildings.geojson#BLDG-003] [data:geometry/public_space.geojson#PUBLIC-003]. Seen from afar, this prototype reads as a courtyard—green-belt—station urban structure; seen up close, each testing ground, computing-power station, and standards workshop can be traced to a recalculable location on research land (0802) [data:geometry/land_use.geojson#LU-001]. The design move is primarily "enclosure": the R&D clusters enclose semi-open testing courtyards, the landscape spine stitches the courtyards to the waterfront interface, and the station-city east-west interchange (ROAD-006) channels flows from the Fifth Ring Road direction into the interchange hub north of the courtyards [data:geometry/roads.geojson#ROAD-006].
@@ -135,6 +139,10 @@ The spatial-form prototype of Zhongzhiyuan is the "low-density testing campus": 
 ### Marshalling Segment · Transformation Station: Beijing AI Origin Community
 
 **Positioning**: a campus-adjacent achievement-transformation and talent community corresponding to the "transformation" of the innovation chain, oriented to original-innovation sources such as Tsinghua, Peking University, and the Chinese Academy of Sciences, organizing incubation, transformation, open-source collaboration, and talent services. Recalculated area: approximately 104.32 hectares (announced approximately 104.3 hectares) [metric:key_area_area_sqm_beijing_ai_origin_community].
+
+![Enlarged plan of the Origin Community · diagonal exchange hall prototype](assets/figures/key-area-origin.en.png)
+
+The enlarged plan expresses the diagonal alignment of the "diagonal exchange hall": the campus-adjacent achievement-transformation street and the open-source plaza intersect diagonally along the education land (0804), with crossing points, ground-floor formats, and slow-mobility stitches traceable to geometric locations on the education land [data:geometry/buildings.geojson#BLDG-007] [data:geometry/public_space.geojson#PUBLIC-002].
 
 #### Spatial-Form Prototype: Diagonal Exchange Hall
 
@@ -151,11 +159,19 @@ The spatial-form prototype of the Origin Community is the "diagonal exchange hal
 
 **Positioning**: an urban-type intelligent-economy and international-exchange block corresponding to the "arrival" of the innovation chain, carrying agents, smart terminals, content consumption, data elements, and digital-asset circulation. Recalculated area: approximately 72.05 hectares (announced approximately 72.0 hectares) [metric:key_area_area_sqm_dazhongsi_ai_industry_cluster].
 
+![Enlarged plan of Dazhongsi · station-city double hall prototype](assets/figures/key-area-dazhongsi.en.png)
+
+The enlarged plan expresses the parallel masses of the "station-city double hall": station hall—plaza—city hall share a public ground along the station-city east-west interchange, with four-quadrant pedestrian connectivity traceable to recalculable locations on commercial land (05) [data:geometry/buildings.geojson#BLDG-010] [data:geometry/roads.geojson#ROAD-005].
+
 #### Spatial-Form Prototype: Station-City Double Hall
 
 The spatial-form prototype of Dazhongsi is the "station-city double hall": the Dazhongsi rail interchange hub (BLDG-012) forms the "station hall", the AI-native commercial complex and consumption-experience blocks (BLDG-010/011) form the "city hall", and the two halls sit side by side along the station-city east-west interchange (ROAD-005), sharing a public ground where the arrival-station plaza (PUBLIC-001) acts as the urban front hall between them [data:geometry/buildings.geojson#BLDG-010] [data:geometry/public_space.geojson#PUBLIC-001]. Seen from afar, the double-hall urban structure of three parallel masses — station hall, plaza, city hall — is legible; seen up close, the four-quadrant pedestrian connectivity, content consumption, and data-element showcases can be traced to recalculable locations on commercial land (05, recalculated share approximately 12.7%) [metric:land_use_share_05]. The design moves are primarily "parallel double halls plus four-quadrant stitching": the station-city east-west interchange (ROAD-005) links the two halls and the east-west quadrants, the four-quadrant pedestrian connectivity (JZ-04) stitches the four directions of the intersection, and the data-element living room and AI-native consumption share the same public ground [data:geometry/roads.geojson#ROAD-005].
 
 - **Spatial structure**: the Dazhongsi station integrated hub + station-city commercial blocks + AI-native consumption experience blocks; planned green land is used in a mixed way.
+
+![East-west interchange section of Dazhongsi station-city](assets/figures/section-dazhongsi.en.png)
+
+The section expresses the vertical spatial relationship of station hall—plaza—city hall along the east-west interchange axis, with interchange connectivity and shared public ground traceable in section [data:geometry/roads.geojson#ROAD-005] [data:geometry/public_space.geojson#PUBLIC-001].
 - **Building renewal**: the Dazhongsi · AI-native commercial complex, AI consumption experience blocks, and the rail interchange hub (BLDG-010—BLDG-012) form the building-footprint imagery [data:geometry/buildings.geojson#BLDG-010].
 - **Transport and slow mobility**: four-quadrant pedestrian connectivity design at the Dazhongsi metro station intersection, completion of static-transport organization such as non-motorized-vehicle parking, and station-city east-west interchange (ROAD-005) to improve the connectivity of key parcels [data:geometry/roads.geojson#ROAD-005].
 - **Public space**: the arrival-station plaza (PUBLIC-001) and the Dazhongsi · station-city park green space (GREEN-004) host international exchange, content consumption, and data-element showcases [data:geometry/public_space.geojson#PUBLIC-001].
