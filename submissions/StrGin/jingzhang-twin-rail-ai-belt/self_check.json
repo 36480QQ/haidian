@@ -1,91 +1,149 @@
 {
+  "ok": true,
+  "submission_dir": "submissions/StrGin/jingzhang-twin-rail-ai-belt",
+  "pr_author": "StrGin",
+  "stage": "formal",
+  "deterministic_validation": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "errors": [],
+      "warnings": [
+        "submissions/StrGin/jingzhang-twin-rail-ai-belt/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied"
+      ],
+      "proposal_files": [
+        "submissions/StrGin/jingzhang-twin-rail-ai-belt/proposal.md"
+      ],
+      "changelog_files": [
+        "submissions/StrGin/jingzhang-twin-rail-ai-belt/changelog.md"
+      ],
+      "ai_package_stages": {
+        "submissions/StrGin/jingzhang-twin-rail-ai-belt": "formal"
+      },
+      "total_bytes": 3200000,
+      "maintainer_bypass": false
+    },
+    "stderr": ""
+  },
+  "spatial_review": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "stage": "formal",
+      "issues": [
+        {
+          "check_id": "KEY_AREA_PROVISIONAL",
+          "severity": "minor",
+          "target_file": "geometry/key_areas.geojson",
+          "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
+          "target_feature_id": "PROV-KEY-001"
+        },
+        {
+          "check_id": "KEY_AREA_PROVISIONAL",
+          "severity": "minor",
+          "target_file": "geometry/key_areas.geojson",
+          "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
+          "target_feature_id": "PROV-KEY-002"
+        },
+        {
+          "check_id": "KEY_AREA_PROVISIONAL",
+          "severity": "minor",
+          "target_file": "geometry/key_areas.geojson",
+          "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
+          "target_feature_id": "PROV-KEY-003"
+        }
+      ],
+      "metrics": {
+        "site_area_sqm": 11412825.386,
+        "green_space_area_sqm": 2192392.0,
+        "public_space_area_sqm": 162769.0,
+        "building_footprint_area_sqm": 133544.0,
+        "green_ratio": 0.192099,
+        "public_space_ratio": 0.014262
+      }
+    },
+    "stderr": ""
+  },
+  "visual_review": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "issues": [],
+      "metrics_seen": {
+        "site_area_sqm": 11412825.39,
+        "green_ratio": 0.192099,
+        "public_space_ratio": 0.014262
+      }
+    },
+    "stderr": ""
+  },
+  "professional_review": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "issues": [],
+      "summary": {
+        "standard_matrix_items": 6,
+        "design_depth_items": 15,
+        "known_metric_refs_required": 16,
+        "proposal_format_version": "2",
+        "evidence_contract": "section-anchors-plus-structured-audit",
+        "proposal_reference_counts": {
+          "source": 8,
+          "standard": 5,
+          "depth": 15,
+          "data": 12,
+          "metric": 10
+        }
+      }
+    },
+    "stderr": ""
+  },
+  "spatial_issue_ids": [
+    "KEY_AREA_PROVISIONAL",
+    "KEY_AREA_PROVISIONAL",
+    "KEY_AREA_PROVISIONAL"
+  ],
+  "visual_issue_ids": [],
+  "professional_issue_ids": [],
+  "missing_review_dependencies": [],
+  "can_enter_formal_review": true,
+  "package_type": "professional_design_package",
+  "review_status": "formal-review-ready",
+  "next_actions": [],
   "schema_version": "0.1.0",
-  "iteration": "v0.3",
-  "checked_at": "2026-08-13T01:14:00+08:00",
   "checks": [
     {
-      "check_id": "BOUNDARY_TRUST",
+      "check_id": "DETERMINISTIC_VALIDATION",
       "result": "pass",
-      "severity": "major",
-      "target": "geometry/site_boundary.geojson",
-      "message": "Provisional boundary is present; replace with official redline before professional scoring."
+      "severity": "blocking",
+      "target": "validate_local_submission.py",
+      "message": "deterministic_validation: PASS"
     },
     {
-      "check_id": "KEY_AREAS_TRUST",
+      "check_id": "SPATIAL_REVIEW",
       "result": "pass",
-      "severity": "major",
-      "target": "geometry/key_areas.geojson",
-      "message": "Three required key areas are provisional; areas confirmed by EPSG:4548 recalculation (192.9/104.3/72.0 ha; sum 369.3 ha vs nominal 368.4 ha +0.24%)."
+      "severity": "blocking",
+      "target": "spatial_review.py",
+      "message": "spatial_review: PASS"
     },
     {
-      "check_id": "LAND_USE_TOPOLOGY",
+      "check_id": "VISUAL_PACKAGING",
       "result": "pass",
-      "severity": "major",
-      "target": "geometry/land_use.geojson",
-      "message": "15 land-use polygons cover site_boundary without gaps/overlaps; encoding whitelist (1401/0802/0601/0901/0701/0702) verified."
-    },
-    {
-      "check_id": "METRIC_GREEN_RATIO_RECALC",
-      "result": "pass",
-      "severity": "major",
-      "target": "metrics.json",
-      "message": "green_ratio recalculated via EPSG:4548 = 0.192099 (19.21%); previous 0.1984 retired as legacy estimate."
-    },
-    {
-      "check_id": "EVIDENCE_CONTRACT_MISSING_DATA",
-      "result": "pass",
-      "severity": "major",
-      "target": "proposal.md,proposal.en.md,design_depth_matrix.json,report/proposal.html,report/proposal.en.html",
-      "message": "All [source:MISSING-DATA] tags replaced with [assumption:A-REGULATORY-PENDING-001]; standard_matrix merged duplicate MNR entries; sources.json registers DATA-SRC-PUBLIC-CASE-LITERATURE."
-    },
-    {
-      "check_id": "ASSET_RIGHTS_LEDGER",
-      "result": "pass",
-      "severity": "major",
-      "target": "report/copyright_statement.md",
-      "message": "9-asset rights ledger present with per-asset license/attribution; rendering font Noto Sans SC under SIL OFL 1.1."
-    },
-    {
-      "check_id": "BILINGUAL_PAIR",
-      "result": "pass",
-      "severity": "major",
-      "target": "visual/index.html,visual/index.en.html",
-      "message": "SVG node labels localised; duplicate 'Three-Level Scope Three-Level Scope' header fixed; font-family prefers Noto Sans SC."
-    },
-    {
-      "check_id": "FIGURE_DIVERSIFICATION",
-      "result": "pass",
-      "severity": "major",
-      "target": "assets/figures/",
-      "message": "5 theme figures now layer-distinct (not just title-swap); 3 key-area node-detail figures added (zh+en = 6 new PNGs)."
-    },
-    {
-      "check_id": "PDF_NOTO_FONT",
-      "result": "pass",
-      "severity": "major",
-      "target": "drawings/a3-booklet.pdf,drawings/a3-booklet.en.pdf,drawings/a0-boards.pdf,drawings/a0-boards.en.pdf",
-      "message": "All PDFs regenerated with Noto Sans SC; A3 booklet extended to 11 pages including node-detail sheets."
-    },
-    {
-      "check_id": "MANIFEST_HASH_RECALC",
-      "result": "pass",
-      "severity": "major",
-      "target": "manifest.json",
-      "message": "47 file entries (41 original + 6 new node-detail PNGs); sha256 values recomputed; iteration=v0.3."
-    },
-    {
-      "check_id": "VISUAL_STATIC",
-      "result": "pass",
-      "severity": "info",
-      "target": "visual/index.html",
-      "message": "Static HTML visualization is generated without external dependencies."
+      "severity": "blocking",
+      "target": "visual_review.py",
+      "message": "visual_review: PASS"
     },
     {
       "check_id": "PROFESSIONAL_EVIDENCE",
       "result": "pass",
-      "severity": "major",
-      "target": "proposal.md",
-      "message": "Proposal includes references to standards, design depth items, geometry, metrics, sources, and assumptions; scenario card matrix enhanced with operating entity and data scope columns."
+      "severity": "blocking",
+      "target": "professional_review.py",
+      "message": "professional_review: PASS"
     }
   ]
 }
