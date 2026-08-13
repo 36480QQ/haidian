@@ -1,0 +1,141 @@
+{
+  "type": "FeatureCollection",
+  "name": "phasing",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "PHASE_1",
+      "properties": {
+        "id": "PHASE_1",
+        "layer": "PHASING",
+        "source_type": "agent_designed_concept",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "area_sqm_declared": 3237053.7,
+        "phase_label_zh": "近期·大钟寺与AI原点启动区",
+        "band_lat_range": [
+          39.939,
+          39.9935
+        ]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3407,
+              39.939
+            ],
+            [
+              116.3407,
+              39.939
+            ],
+            [
+              116.35349178082193,
+              39.9935
+            ],
+            [
+              116.3408935483871,
+              39.9935
+            ],
+            [
+              116.3407,
+              39.939
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PHASE_2",
+      "properties": {
+        "id": "PHASE_2",
+        "layer": "PHASING",
+        "source_type": "agent_designed_concept",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "area_sqm_declared": 1477725.6,
+        "phase_label_zh": "中期·城市更新与场景赋能区",
+        "band_lat_range": [
+          39.9935,
+          40.006
+        ]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3408935483871,
+              39.9935
+            ],
+            [
+              116.35349178082193,
+              39.9935
+            ],
+            [
+              116.35417671232877,
+              40.006
+            ],
+            [
+              116.3417,
+              40.006
+            ],
+            [
+              116.3408935483871,
+              39.9935
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PHASE_3",
+      "properties": {
+        "id": "PHASE_3",
+        "layer": "PHASING",
+        "source_type": "agent_designed_concept",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "area_sqm_declared": 2423640.8,
+        "phase_label_zh": "远期·众智园全栈自主加速区",
+        "band_lat_range": [
+          40.006,
+          40.0265
+        ]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3417,
+              40.006
+            ],
+            [
+              116.35417671232877,
+              40.006
+            ],
+            [
+              116.3553,
+              40.0265
+            ],
+            [
+              116.3427,
+              40.0265
+            ],
+            [
+              116.3417,
+              40.006
+            ]
+          ]
+        ]
+      }
+    }
+  ],
+  "metadata": {
+    "note": "分期为概念实施序列"
+  }
+}

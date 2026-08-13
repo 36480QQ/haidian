@@ -1,0 +1,285 @@
+{
+  "type": "FeatureCollection",
+  "name": "land_use",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "LU-01",
+      "properties": {
+        "id": "LU-01",
+        "layer": "LAND_USE",
+        "source_type": "agent_designed_concept",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "area_sqm_declared": 1878187.3,
+        "land_use_code": "05",
+        "land_use_label_zh": "商业服务业用地",
+        "zone_desc_zh": "大钟寺智能原生消费与商务组团",
+        "band_lat_range": [
+          39.939,
+          39.965
+        ]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3407,
+              39.939
+            ],
+            [
+              116.3407,
+              39.939
+            ],
+            [
+              116.3553,
+              39.965
+            ],
+            [
+              116.33997777777778,
+              39.965
+            ],
+            [
+              116.3407,
+              39.939
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "LU-02",
+      "properties": {
+        "id": "LU-02",
+        "layer": "LAND_USE",
+        "source_type": "agent_designed_concept",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "area_sqm_declared": 1420138.8,
+        "land_use_code": "0701",
+        "land_use_label_zh": "城镇住宅用地",
+        "zone_desc_zh": "人才公寓与混合居住组团",
+        "band_lat_range": [
+          39.965,
+          39.975
+        ]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.33997777777778,
+              39.965
+            ],
+            [
+              116.3553,
+              39.965
+            ],
+            [
+              116.3545,
+              39.975
+            ],
+            [
+              116.3397,
+              39.975
+            ],
+            [
+              116.33997777777778,
+              39.965
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "LU-03",
+      "properties": {
+        "id": "LU-03",
+        "layer": "LAND_USE",
+        "source_type": "agent_designed_concept",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "area_sqm_declared": 1136964.1,
+        "land_use_code": "0804",
+        "land_use_label_zh": "教育科研配套用地",
+        "zone_desc_zh": "科研与孵化配套组团",
+        "band_lat_range": [
+          39.975,
+          39.9835
+        ]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3397,
+              39.975
+            ],
+            [
+              116.3545,
+              39.975
+            ],
+            [
+              116.35382,
+              39.9835
+            ],
+            [
+              116.34024838709676,
+              39.9835
+            ],
+            [
+              116.3397,
+              39.975
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "LU-04",
+      "properties": {
+        "id": "LU-04",
+        "layer": "LAND_USE",
+        "source_type": "agent_designed_concept",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "area_sqm_declared": 1233800.5,
+        "land_use_code": "0802",
+        "land_use_label_zh": "科研用地",
+        "zone_desc_zh": "北京AI原点社区·开放研发组团",
+        "band_lat_range": [
+          39.9835,
+          39.9935
+        ]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34024838709676,
+              39.9835
+            ],
+            [
+              116.35382,
+              39.9835
+            ],
+            [
+              116.35349178082193,
+              39.9935
+            ],
+            [
+              116.3408935483871,
+              39.9935
+            ],
+            [
+              116.34024838709676,
+              39.9835
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "LU-05",
+      "properties": {
+        "id": "LU-05",
+        "layer": "LAND_USE",
+        "source_type": "agent_designed_concept",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "area_sqm_declared": 1477725.6,
+        "land_use_code": "0803",
+        "land_use_label_zh": "文化用地",
+        "zone_desc_zh": "AI策展与文化展示组团",
+        "band_lat_range": [
+          39.9935,
+          40.006
+        ]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3408935483871,
+              39.9935
+            ],
+            [
+              116.35349178082193,
+              39.9935
+            ],
+            [
+              116.35417671232877,
+              40.006
+            ],
+            [
+              116.3417,
+              40.006
+            ],
+            [
+              116.3408935483871,
+              39.9935
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "LU-06",
+      "properties": {
+        "id": "LU-06",
+        "layer": "LAND_USE",
+        "source_type": "agent_designed_concept",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "area_sqm_declared": 2423640.8,
+        "land_use_code": "0802",
+        "land_use_label_zh": "科研用地",
+        "zone_desc_zh": "众智园全栈自主加速组团",
+        "band_lat_range": [
+          40.006,
+          40.0265
+        ]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3417,
+              40.006
+            ],
+            [
+              116.35417671232877,
+              40.006
+            ],
+            [
+              116.3553,
+              40.0265
+            ],
+            [
+              116.3427,
+              40.0265
+            ],
+            [
+              116.3417,
+              40.006
+            ]
+          ]
+        ]
+      }
+    }
+  ],
+  "metadata": {
+    "note": "对临时 site_boundary 的完整用地分区，共享边界、无空隙无重叠"
+  }
+}

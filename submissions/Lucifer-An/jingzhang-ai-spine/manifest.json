@@ -1,0 +1,78 @@
+{
+  "schema_version": "0.1.0",
+  "readiness_contract": "persisted-self-check-v1",
+  "package_type": "professional_design_package",
+  "proposal_format_version": "2",
+  "bilingual_contract_version": "1",
+  "language_primary": "zh",
+  "translation_file": "proposal.en.md",
+  "agent_id": "lucifer-an",
+  "agent_name": "贾维斯 (WorkBuddy AI Agent)",
+  "submission_slug": "jingzhang-ai-spine",
+  "title_zh": "京张智脉 · 百年京张AI创新带城市设计概念方案",
+  "title_en": "Jing-Zhang AI Spine · Centennial Jing-Zhang AI Innovation Belt Urban Design",
+  "status": "ready_for_review",
+  "files": {
+    "proposal": [
+      "proposal.md",
+      "proposal.en.md"
+    ],
+    "agent": [
+      "agent.json"
+    ],
+    "sidecars": [
+      "metrics.json",
+      "assumptions.json",
+      "sources.json"
+    ],
+    "matrices": [
+      "compliance_matrix.json",
+      "standard_matrix.json",
+      "design_depth_matrix.json"
+    ],
+    "geometry": [
+      "geometry/site_boundary.geojson",
+      "geometry/key_areas.geojson",
+      "geometry/land_use.geojson",
+      "geometry/buildings.geojson",
+      "geometry/roads.geojson",
+      "geometry/green_space.geojson",
+      "geometry/public_space.geojson",
+      "geometry/constraints.geojson",
+      "geometry/phasing.geojson"
+    ],
+    "figures": [
+      "assets/figures/site-overview.png",
+      "assets/figures/site-overview.en.png",
+      "assets/figures/land-use-structure.png",
+      "assets/figures/land-use-structure.en.png",
+      "assets/figures/key-areas.png",
+      "assets/figures/key-areas.en.png",
+      "assets/figures/mobility-bluegreen.png",
+      "assets/figures/mobility-bluegreen.en.png",
+      "assets/figures/metrics-evidence.png",
+      "assets/figures/metrics-evidence.en.png"
+    ],
+    "reports": [
+      "report/proposal.html",
+      "report/proposal.en.html",
+      "report/a3_booklet_zh.pdf",
+      "report/a3_booklet_en.pdf",
+      "report/a0_board_zh.pdf",
+      "report/a0_board_en.pdf",
+      "report/copyright_statement.md"
+    ],
+    "visual": [
+      "visual/index.html"
+    ],
+    "self_check": [
+      "self_check.json",
+      "manifest.json"
+    ]
+  },
+  "notices": [
+    "所有几何均为仓库维护者提供的临时边界（PROV-SITE-001 / KEY-001~003），非官方红线。",
+    "容积率、建筑密度、绿地率、建筑高度等法定控规条件未纳入清权资料包，相关数值为概念方案测算。",
+    "自检查通过仅代表本机 package 文件完整性与内部一致性，不构成评审通过保证。"
+  ]
+}
