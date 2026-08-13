@@ -21,6 +21,83 @@ Pending the release of official precise boundaries, this proposal uses `brief/si
 
 ![Site overview and existing conditions](assets/figures/site-overview.en.png)
 
+## Site Context & Resource Analysis
+
+This chapter answers "why this corridor, what is its current state, and what assets do we hold" — existing problems are the starting point of planning, and resource endowment is the foundation of the proposal [depth:existing_conditions_diagnosis] [data:geometry/site_boundary.geojson#SITE-001].
+
+### Historical Development: A Railway Materializing "Self-Innovation"
+
+- **1909**: Zhan Tianyou led the construction of the Jing-Zhang Railway — China's first trunk line independently designed and built; the "Ren-shape" switchback conquered the 33‰ Guantou steep grade, opening the first year of Chinese self-innovation; the Ren-shape is both an engineering achievement and national memory of "overcoming technical obstacles with Chinese wisdom" [source:AGENT-TASKBOOK].
+- **Qinghua Garden Station (1910 red-brick)**: a historical coordinate of the imperial-exam journey to Beijing and a physical witness of Chinese railway modernization — a dual landmark of revolutionary culture and modernization.
+- **2016–2019**: the old line went underground and the Jing-Zhang HSR opened; the retired line freed a continuous ~9km corridor now being built into the Jing-Zhang Railway Heritage Park — the railway transformed from transport tool into urban public space and cultural memory carrier, a landmark renewal event.
+- **Dazhongsi (Ming-dynasty temple)**: anchor of ancient-city memory; together with railway heritage and Zhongguancun innovation culture, it forms the "triple heritage".
+
+### Current Conditions: The Highest-Density "Intelligence Corridor" in China
+
+- **Mobility**: Qinghe Station (Jing-Zhang HSR hub) at the north and Xizhimen at the south form national-grade twin high-speed-rail gateways; Lines 13, 15 and Changping run in parallel — the most distinctive strategic asset of the area [depth:traffic_rail_slow_parking].
+- **Facility maturity**: 30+ universities and institutes (Tsinghua, Peking, Beihang, BUPT, BJTU, CAS) line the corridor — the highest education/research density in the country; healthcare, commerce and cultural facilities are complete; the urban service base is mature.
+- **Industry and business**: within 3km² of the AI Origin Community — 1,000+ AI scientists, developer population (per AGENT-TASKBOOK background, awaits official confirmation), enterprise count (per AGENT-TASKBOOK background, awaits official confirmation), young student population (per AGENT-TASKBOOK background, awaits official confirmation), ~180 OPC one-person companies; Dazhongsi is iterating from low-efficiency commerce to smart consumption (1733 anchor ignited); Wudaokou concentrates youth consumption — **the renewal engine is already alight; what is missing is the spatial carrier that threads them into an innovation network** [source:AGENT-TASKBOOK].
+- **Renewal status**: industrial-heritage activation (old factories, locomotive depots, signal towers) runs in parallel with obsolete-building renewal; tapping stock space is the main path.
+
+### Policy Setting: The Policy Window Is Fully Open
+
+- **Beijing AI Innovation Highland Action Plan (Jan 2026)**: grow core AI industry scale past one trillion yuan within about two years, build a "one core, multi-point" layout centered on Haidian; Haidian's "Origin Community" was selected among the first 4 AI innovation blocks.
+- **Haidian "Two Zones One Belt" comprehensive plan**: Origin Community, Beiwei Community and the **Century-Old Jing-Zhang AI Innovation Belt** as core anchors; the Beijing Zhihui AI Application Cooperation Center (hosting the SCO AI Application Cooperation Center operation) was established.
+- **Block control plan approved (Aug 12, 2026)**: the *Jing-Zhang Railway Heritage Park Corridor Block Control Detailed Plan (2024–2035)* — the most authoritative and direct planning basis — gives the official "One Belt, One Axis, Two Cores, Multi-Points" structure, leading urban renewal with green public space, supporting AI innovation block construction, and developing large models, agents and embodied intelligence [source:PROCESSED-FACT-PACK].
+
+> **Planner's judgment**: this is a golden site where "historical depth × industrial density × renewal momentum × policy window" stack together. The control plan is the chassis; this proposal is a conceptual deepening on top of it — it must echo the control-plan structure while connecting the already-alight industries through AI scenarios and public space.
+
+### Resource Analysis: Three Asset Types Supporting the Proposal
+
+| Resource | Content | Support to the proposal |
+|---|---|---|
+| **Heritage & culture** | Jing-Zhang Railway (Ren-shape/Zhan Tianyou), Qinghua Garden Station (exam origin), Dazhongsi (ancient-city memory), Zhongguancun (reform-and-opening innovation culture) — triple heritage | Culture anchors the soul: "Access—Origin—Echo" three-stage storyline + 4 pilgrimage landmarks |
+| **Innovation** | 30+ universities/institutes, AI Origin Community (1,000+ scientists/developer population (per AGENT-TASKBOOK background, awaits official confirmation)/enterprise count (per AGENT-TASKBOOK background, awaits official confirmation)), Zhongzhi Park, Zhongguancun Science City | Innovation empowers: One-Core-Three-Circles ecosystem + full-stack self-innovation system + 12 scenario cards |
+| **Youth & people** | young student population (per AGENT-TASKBOOK background, awaits official confirmation), developer population (per AGENT-TASKBOOK background, awaits official confirmation), OPC entrepreneurs, 450,000 residents along the corridor | Vitality gathers people: 6 persona groups shape function and space — read people first, then ignite points |
+
+### Problem Diagnosis (Six Dimensions)
+
+| Dimension | Existing problem | Proposal response |
+|---|---|---|
+| Mobility | Twin HSR gateways + three lines, but slow-mobility gaps and weak station-city links | Hub activation, three-paths-one-green system, gap stitching |
+| Facilities | Dense but east-west split (Line 13 viaduct barrier) | People stitching, under-viaduct activation, ground-floor openness |
+| Business | 1733 anchor ignited, but lacks AI-native containers | Format iteration, AI-native commerce sandbox |
+| Heritage | Triple heritage coexists, lacks contemporary translation | Heritage catalyst, pilgrimage landmarks, wayfinding symbols |
+| Industry | Lacks space containers for the full-stack innovation chain | Scenario weaving, Stack Sanctuary, safety sandbox |
+| Ecology | Thin green belt, blue-green network not systemic | Blue-green stitching, fishbone network, 20-minute park plan |
+
+## Narrative Thread: From One Railway to an Intelligence Net
+
+The full narrative of this proposal runs on a single thread: **how a railway independently built a century ago grows on this land into an intelligence net serving the future**. Three sentences tell the thread:
+
+1. **Origin (heritage)**: In 1909, Zhan Tianyou's "Ren-shape" switchback enabled China's first independently built trunk line to conquer the Guantou steep pass — the spirit of self-innovation took root here;
+2. **Spark (present)**: today, within 3km² of the AI Origin Community — 1,000+ AI scientists, developer population (per AGENT-TASKBOOK background, awaits official confirmation), enterprise count (per AGENT-TASKBOOK background, awaits official confirmation) and young student population (per AGENT-TASKBOOK background, awaits official confirmation) — the spark of innovation is already alight;
+3. **Translation (future)**: translating the self-innovation spirit of the "Ren-shape Railway" into the "Ren-shape Intelligence Net" — along the 9km Jing-Zhang Railway Heritage Park green corridor, AI spills from buildings to streets and from laboratories into daily life, ultimately activating the 43.6km² study scope.
+
+The thread is organized by the "four elements", unfolded by "one activation path", and delivered by "six agent tasks"; every chapter is one link of the thread:
+
+| Thread link | Corresponding chapter | Organizing logic |
+|---|---|---|
+| Why here (heritage + spark) | Overall Concept / Three-Level Scope | Culture anchors the soul · Innovation empowers |
+| How to organize (catalyst network) | Overall Spatial Structure | One Corridor · Three Cores · Two Wings · Multi-Points |
+| For whom (people-driven) | AI Ecosystem / Personas | Vitality gathers people |
+| How to deliver (scenarios + implementation) | Scenario Cards / Renewal / Events | Innovation empowers · Quality builds the base |
+| How to sustain (indicators + compliance) | Indicators / Compliance | Traceable, growable |
+
+> **In one sentence**: renewal is not igniting from zero, but connecting pipelines to industries already alight — every design in this proposal is the spatial expression of such a "pipeline".
+
+### Planning Objectives (Responding to the Three Positionings and Five Functions)
+
+Building on the diagnosis, the proposal sets three progressive objectives, each responding to the announcement's positioning and functions [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]:
+
+| Objective layer | Content | Positioning/function |
+|---|---|---|
+| **Objective 1: Culture** | Make the Century-Old Jing-Zhang Culture Belt "perceivable" — triple heritage forms a complete narrative and pilgrimage system | Culture belt · Cultural-center function |
+| **Objective 2: Industry** | Make the AI Integration Innovation Belt "growable" — closed full-stack innovation chain from origin to application | Innovation belt · Full-stack self-innovation / world-class ecosystem |
+| **Objective 3: Life** | Make the Urban AI Life Experience Belt "experienceable" — AI scenarios land in streets, parks and daily life | Experience belt · AI+ scenarios / vital city / governance voice |
+
+The three objectives map one-to-one onto the spatial structure: culture anchors "two gateways + 4 pilgrimage landmarks", industry anchors "three-core innovation chain", life anchors "two wings + multi-points + 12 scenario cards". All objectives are conceptual and delivered progressively through phasing.
+
 ## Overall Concept: Jing-Zhang Intelligence Artery (JZ-IA)
 
 ### Naming System and Design Motif
@@ -61,9 +138,30 @@ Echoing the approved Jing-Zhang Railway Heritage Park corridor regulatory detail
 | **Two wings** | Zhongguancun Service Wing (west) / Xiaoyue River Scenario Wing (east) | Three-areas-two-wings synergy loop |
 | **Multiple nodes** | 12 nodes incl. Qinghe Station, Zhongzhi Park, Tsinghua Garden Station×Origin Tower, Dazhongsi, Zhichun Road, Sidaokou | Secondary catalysts that activate the belt into an area |
 
-**Activation path**: taking the AI Origin Community (an already-lit spark: 1,000+ AI scientists, 13,000 developers and 400+ enterprises within 3 km²) as the first catalyst → conducting along the 9 km corridor north and south → Zhongzhi Park carries origination and Dazhongsi carries application → the two wings and multiple nodes bring innovation into communities and streets → finally activating the 43.6 km² coordinated research area [source:AGENT-TASKBOOK].
+**Activation path**: taking the AI Origin Community (an already-lit spark: 1,000+ AI scientists, developer population (per AGENT-TASKBOOK background, awaits official confirmation) and enterprise count (per AGENT-TASKBOOK background, awaits official confirmation) within 3 km²) as the first catalyst → conducting along the 9 km corridor north and south → Zhongzhi Park carries origination and Dazhongsi carries application → the two wings and multiple nodes bring innovation into communities and streets → finally activating the 43.6 km² coordinated research area [source:AGENT-TASKBOOK].
 
 ![Land use and spatial structure](assets/figures/land-use-structure.en.png)
+
+### Visual Identity & Logo Concept Exploration
+
+The master brand "JZ-IA / Jing-Zhang Intelligence Artery" is presented through three candidate directions — each is an AI-assisted **concept exploration**, not a registered mark. Professional design and legal teams must refine before any official use.
+
+![JZ-IA three visual-identity directions (concept exploration)](assets/figures/c06_logo_three_directions.png)
+
+**Direction A — Ren-shape Typographic Mark**: two slanted gold lines crossing in the shape of the Chinese character "人" (ren), fusing the JZ ligature with the Ren-shape railway motif. Suitable for headlines and signage.
+
+**Direction B — Corridor Lantern**: a vertical Intelligence Corridor axis with fish-bone lateral spurs and a green crown for the 9 km green belt. Suitable for continuous wayfinding and night-shadowing installations.
+
+**Direction C — Dialogue Knot**: two interlocking frames evoke the "origin of the examination × origin of innovation" dialogue (1910 Qinghua Garden Station × 2026 Origin Building). Suitable for pilgrimage landmarks and memorial inscriptions.
+
+**Minimum usage guidelines (draft)**:
+
+- Master palette: INK #112235 (deep blue) + GOLD #C79838 (gold) + three-color functional zoning (blue / green / orange)
+- Do not overlay low-contrast grey backgrounds on a master-color background; wayfinding text at 5 m viewing distance must be ≥ 30 mm tall
+- Text hierarchy (draft): Title / Subtitle / Body / Caption, with size ratio 4:3:2:1.5
+- Alignment with the planned district wayfinding system to be coordinated during refinement
+
+**Visual extensions** (concept only, not implemented): an open-source Wayfinding Kit, road banners, poster templates, and the memorial inscription system (rail-tie stones / pavers) — to be expanded in the refinement phase.
 
 ## Three-Level Scope Framework
 
@@ -79,7 +177,7 @@ The proposal is organized by the three levels defined in the announcement: the c
 
 The core task of the coordinated research area is to build a world-class AI innovation ecosystem. The proposal maps Haidian's universities, leading enterprises, computing-power/data elements, incubation platforms and technology service resources, and proposes a spatial synergy framework for the AI innovation chain, industry chain, talent chain and urban service chain [source:AGENT-TASKBOOK] [standard:MOHURD-URBAN-DESIGN-MEASURES].
 
-**AI Innovation Ecosystem Map (one core, three rings)**: the talent ring (30+ universities and institutes incl. Tsinghua, Peking University and CAS; 1,000+ AI scientists; 13,000 developers; 100,000 students; ~180 OPC one-person companies), the capital ring (venture funds, Dongsheng Cup / Origin Cup competitions, five-party-six-force conversion mechanism, Qingzhi Park with valuation over ¥30 billion), and the scenario ring (Xiaoyue River wing + full-belt scenario cards) revolve around the AI Origin Community, forming an eight-factor closed loop: land, space, industry, capital, talent, computing power, data and scenarios [source:AGENT-TASKBOOK] [metric:key_area_count].
+**AI Innovation Ecosystem Map (one core, three rings)**: the talent ring (30+ universities and institutes incl. Tsinghua, Peking University and CAS; 1,000+ AI scientists; developer population (per AGENT-TASKBOOK background, awaits official confirmation); 100,000 students; ~180 OPC one-person companies), the capital ring (venture funds, Dongsheng Cup / Origin Cup competitions, five-party-six-force conversion mechanism, Qingzhi Park with valuation over ¥30 billion), and the scenario ring (Xiaoyue River wing + full-belt scenario cards) revolve around the AI Origin Community, forming an eight-factor closed loop: land, space, industry, capital, talent, computing power, data and scenarios [source:AGENT-TASKBOOK] [metric:key_area_count].
 
 **Future urban form**: AI transport systems, continuous green space, innovation service facilities and an internationalized living-working atmosphere are implemented as locatable functional zones, nodes, corridors and scenarios; global AI innovation events, developer communities, open scenarios and pilgrimage routes are all framed as "conceptual suggestions / reference schemes / material for professional teams to deepen", not as confirmed government activities [source:AGENT-TASKBOOK].
 
@@ -109,9 +207,53 @@ Detailed design of the three key areas is mandatory, covering functional formats
 | Beijing AI Origin Community (104.3 ha) | Near-campus conversion and talent community (Conversion Core·Origin Dialogue Axis) | Stitch campus-park-block slow traffic; 300 m time-space dialogue axis from Tsinghua Garden Station to Origin Tower | Open-source community, results release, OPC hub, talent zone, near-campus incubation |
 | Dazhongsi AI Industry Cluster (72.0 ha) | Intelligent economy and international exchange block (Application Core·Ancient Bell New Wave) | Dazhongsi station integration, four-quadrant pedestrian connectivity, Ancient Bell Museum×1733×Lanjing Lijia composite anchor | Agent and terminal display, AI-native commerce, data elements, international roadshows |
 
+### Design Analysis of the Three Key Districts (from design thinking to spatial moves)
+
+**① Zhongzhi Park · Source Core "Stack Sanctuary" (192.1 ha)**
+
+- **Design thinking**: organized as "One Core, Two Belts, Three Clusters" — the core is the central "Stack Sanctuary", a white streamlined exhibition cluster with the Ren-shape topological motif, hosting the open-source consortium HQ, AI 4S exhibition and going-global services; two belts are the Qinghe innovation interface belt (waterfront terraces + setback buildings) and the north vitality belt of the Intelligence Corridor; three clusters are R&D, testing and service.
+- **Key spatial moves**: strengthen the Qinghe interface, industrial exhibition and low-carbon innovation exchange; carry open testing and standards-governance display with green space; equip an open test ground and AI safety sandbox to achieve full-stack self-reliance from computing to chip adaptation [data:geometry/key_areas.geojson#PROV-KEY-001].
+- **Rendering**: E2 Stack Sanctuary (pedestrian view).
+
+![E2 Stack Sanctuary rendering (pedestrian view, concept)](assets/figures/render-e2-sanctuary.png)
+
+**② AI Origin Community · Transform Core "Origin Dialogue Axis" (104.3 ha)**
+
+- **Design thinking**: organized as "One Axis, Two Zones, Multi-Points" — the 300m "Origin Dialogue Axis" faces Qinghua Garden Station at the west end (1910 red-brick, origin of the exam) against the Origin Building at the east end (origin of innovation) across time; an elevated pedestrian bridge over Metro Line 13 stitches the east-west split; two zones are the north near-campus translation zone (shared labs + roadshow halls) and the south young-talent life zone (apartments + youth co-creation street); multi-points include the OPC hub station and open-source community square.
+- **Key spatial moves**: campus-park-block slow-mobility stitching, activating the "origin of exam × origin of innovation" dialogue; OPC one-person-company full-lifecycle services absorbing 100,000 students' low-cost startup needs [data:geometry/key_areas.geojson#PROV-KEY-002].
+- **Rendering**: E3 Origin Dialogue Axis (pedestrian view).
+
+![E3 Origin Dialogue Axis rendering (pedestrian view, concept)](assets/figures/render-e3-origin-axis.png)
+
+**③ Dazhongsi · Apply Core "Ancient Bell New Wave" (72.0 ha)**
+
+- **Design thinking**: organized as "One Core, Two Streets, Three Quadrants" — the core is the Ancient Bell Museum cultural anchor (heritage untouched, 300m quiet plaza + AI light-art installations); two streets are the AI-native commercial street (1733 direction: unmanned retail, robot coffee) and the international-exchange street (Lanjing Lijia direction: exchange center + roadshow hall); three quadrants are the Dazhongsi station transit-oriented, consumption-experience and heritage-view corridor quadrants.
+- **Key spatial moves**: Dazhongsi station integrated development and four-quadrant pedestrian connectivity; an "Ancient Bell × AI New Wave" urban living room hosting agent/terminal display and global AI roadshows [data:geometry/key_areas.geojson#PROV-KEY-003].
+- **Rendering**: E4 Ancient Bell New Wave (pedestrian view).
+
+![E4 Ancient Bell New Wave rendering (pedestrian view, concept)](assets/figures/render-e4-ancient-bell.png)
+
+The three districts are seriated along the 9km Intelligence Corridor — Zhongzhi (Origin) → AI Origin (Transform) → Dazhongsi (Apply) — forming a complete AI innovation chain; the design language is unified (Ren-shape motif / three-color system / AI station kit), and the scale transitions north-to-south from large industrial blocks to human-scale commercial streets.
+
 ![Key areas detailed design](assets/figures/key-areas.en.png)
 
 ## AI Innovation Ecosystem, Talent Personas and AI+ Scenarios
+
+### Global AI Innovation Ecosystem Benchmarks (7 cases)
+
+To locate this proposal within the known sample lineage, the following 7 globally recognised AI innovation ecosystem cases are referenced (data from public sources; in-depth benchmarking and quantitative calibration must await refinement):
+
+| Case | Country/City | Type | Core strategy | Correspondence to this proposal |
+|---|---|---|---|---|
+| **King's Cross Knowledge Quarter** | UK · London | Old railway industrial district conversion | 9 research institutions + Google DeepMind + Meta + British Library, 300 000 m² TOD | Intelligence Corridor (rail heritage + AI cluster) |
+| **Mission Bay, San Francisco** | USA · SF | University-anchored tech park | Around UCSF + SF Port brownfield regeneration | Zhongzhi Park (Tsinghua/PKU + brownfield) |
+| **Shenzhen Nanshan Smart Park / Tech Park** | China · Shenzhen | Government-led end-to-end park | 30+ national incubators + 300 000 m² offices | AI Origin Community (Qinghua Campus + incubation) |
+| **Suzhou Industrial Park BioBAY/CDA** | China · Suzhou | Gov + state-owned + intl capital | 7 km² park + overseas partnerships | All factors (community + industry + state partnership) |
+| **Hefei USTC Silicon Valley** | China · Hefei | Mega-science facilities + city-level brand | 4 quantum/fusion mega-science facilities + 10 000 PhDs | One corridor + three cores of mega-science linkage |
+| **Singapore One-North** | Singapore | Government-enterprise knowledge city | 200 ha + JTC platform + cross-border R&D | Twin HSR gateways + global recruitment |
+| **London St Pancras / King's Cross RSSB** | UK · London | Railway heritage regeneration | Old rail hub + education/offices | Jing-Zhang Heritage Park (rail heritage) |
+
+**Conclusion (concept phase)**: Global AI innovation belts share five legs — government-led + university/research core + old industrial brownfield regeneration + metro/HSR gateway + global capital/technology linkage. This proposal's five elements (Source / Transform / Apply + 9 km corridor + two HSR gateways) align structurally. **However, the quantitative comparators — industry size, TAM, capital scale — must be re-validated in the refinement phase against official data.**
 
 ### User Personas (6 types, scenario-oriented; ≥5 required)
 
@@ -123,6 +265,20 @@ Detailed design of the three key areas is mandatory, covering functional formats
 | D Reserve force (students) | Research training, consumption and social | Red classroom, tech market | Learning + experience + low-cost living |
 | E Life foundation (450,000 residents) | Daily commute, wellness and leisure | Health pod, corridor navigation, legal station | Affordable, convenient, safe |
 | F Mobile vitality (commuters/visitors) | Transit, check-in, experience | Smart shuttle, Ancient Bell, market | Convenient, cultural, novel |
+
+### External Regional Synergy (linkages with Beijing AI strategy + Jing-Jin-Ji)
+
+While the proposal focuses on Haidian's 43.6 km², it must structurally echo the capital-wide AI layout and the Jing-Jin-Ji coordinated-development strategy, avoiding internal closure:
+
+| Cluster | Strategic positioning | This proposal's channels and reciprocal benefits |
+|---|---|---|
+| **Beizhi Community (Zhongguancun Science City North)** | Mega-science facilities + space + AI fundamental research | Source Core + Intelligence Corridor extends north via Metro Line 13 as a secondary research-spin-off platform |
+| **Future Science City (Changping)** | State-owned enterprises + energy + medicine | AI + energy/medicine joint lab scenarios; governance-experience exchange |
+| **Huairou Science City** | Mega-science facility cluster | "South-publish, North-display" dual-centre structure for science popularisation / launches |
+| **Yizhuang (Beijing ETDA)** | AI manufacturing, autonomous driving | Algorithm → compute → manufacturing chain; autonomous-driving open test zone extends from Zhongzhi Park |
+| **Tianjin / Hebei (Jing-Jin-Ji coordination)** | Compute, equipment, foreign trade | Intelligence Corridor extends along Jing-Zhang HSR; AI compute scheduling and AI-equipment going-global linked via Qinghe / Xizhimen gateways |
+
+**Coordination principles** (conceptual): respect each cluster's official boundary and primary authority. This proposal only delivers three things — channels, linkages, co-creation mechanisms — it does not overstep authority, compete for primacy, or duplicate construction. All data come from public planning documents; this proposal does not constitute a commitment or judgement regarding other clusters.
 
 ### AI Scenario Cards (12 cards; ≥10 required)
 
@@ -141,6 +297,29 @@ Detailed design of the three key areas is mandatory, covering functional formats
 | S11 | Robot station | Wudaokou | Embodied-intelligence experience, robot coffee/guide |
 | S12 | Safety sandbox·AI governance test field | Zhongzhi Park | Model evaluation, safety testing, standards pilot |
 
+### Scenario–Space–Operation Mapping Matrix (12 scenarios × nodes × operations × phasing)
+
+Each scenario card is anchored to a concrete spatial node with a conceptual operation entity and phasing, forming a "scenario–space–operation" closed loop rather than slogans [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]:
+
+| Scenario | Space | Node | Operation entity (concept) | Phase |
+|---|---|---|---|---|
+| S1 Smart transit | North corridor | A1 Gateway of Jing-Zhang | Public-private pilot | Near |
+| S2 Ren-shape classroom | Qinghua Garden Station | B2 Origin Dialogue Axis | Heritage + education | Near |
+| S3 Full-stack open source | Zhongzhi Park | B1 Stack Sanctuary | Open-source community + enterprises | Near |
+| S4 OPC launch hall | Origin Community | B2 Origin Dialogue Axis | Park operator | Near |
+| S5 Health pod | Community stations | C-type nodes | Health + enterprises | Near |
+| S6 Corridor smart guide | Whole corridor | All along | Park operator | Near-Mid |
+| S7 Neighborhood legal aid | Dazhongsi/community | B3/C5 | Legal aid + law firms | Mid |
+| S8 Unmanned delivery | Xiaoyue River wing | C6 scenario test field | Platform enterprises | Mid |
+| S9 Environmental watch | Blue-green network | C1 waterfront station | Municipal + eco enterprises | Mid |
+| S10 Sci-tech market | Sidaokou | C5 railway memory | Market brand | Mid |
+| S11 Robot station | Wudaokou | C3 youth co-creation | Enterprises + incubators | Mid |
+| S12 Safety sandbox | Zhongzhi Park | B1 Stack Sanctuary | Research institute + standards body | Mid-Far |
+
+Mapping logic: near-phase scenarios land first on the already-ignited "Origin–Zhongzhi" core and the corridor backbone (light start); mid-phase scenarios spread along the two wings and support nodes (balanced rollout); all operation entities are conceptual, subject to professional deepening.
+
+![E6 Youth Co-Creation Block rendering (Wudaokou, pedestrian view, concept)](assets/figures/render-e6-youth.png)
+
 ### AI Industry Test-and-Validate Scenarios (3; ≥3 required)
 
 - **T1 Xiaoyue River embodied-intelligence test field**: real-scenario testing of embodied-intelligence robots, AI+healthcare/film scenario validation;
@@ -151,7 +330,7 @@ All three test scenarios are clearly labeled "test-and-validate, not approved op
 
 ## Land Use, Building Scale and Retain/Renovate/Demolish
 
-The land use plan follows public standards for territorial survey, planning and use-control classification, forming a complete, closed, seamless land use division [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [data:geometry/land_use.geojson#LU-001]. The building plan distinguishes retain/renovate/renew/new/pending objects and clarifies building footprints, functions, scale and character suggestions [depth:height_massing_character] [depth:retain_renovate_demolish] [metric:building_footprint_area_sqm]. Where existing buildings, ownership, regulatory plans or engineering conditions are missing, only methods and a calibration checklist are proposed — no fabricated retain/renovate/demolish conclusions; where no official conditions exist for building scale, FAR or height, status is uniformly `unknown` with the pending conditions and recalculation path explained [depth:metrics_recalculation].
+The land use plan follows public standards for territorial survey, planning and use-control classification, forming a complete and gapless land use division [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [data:geometry/land_use.geojson#LU-001]. The building plan distinguishes retain/renovate/renew/new/pending objects and clarifies building footprints, functions, scale and character suggestions [depth:height_massing_character] [depth:retain_renovate_demolish] [metric:building_footprint_area_sqm]. Where existing buildings, ownership, regulatory plans or engineering conditions are missing, only methods and a calibration checklist are proposed — no fabricated retain/renovate/demolish conclusions; where no official conditions exist for building scale, FAR or height, status is uniformly `unknown` with the pending conditions and recalculation path explained [depth:metrics_recalculation].
 
 ## Transport, Rail, Municipal and Public Services
 
@@ -159,15 +338,19 @@ The transport plan responds to requirements for station integration, road micro-
 
 ![Mobility and blue-green system](assets/figures/mobility-bluegreen.en.png)
 
+![E5 Intelligence Corridor rendering (9km green corridor, pedestrian view, concept)](assets/figures/render-e5-corridor.png)
+
 ## Blue-Green Space, Public Space and Urban Character
 
 The blue-green space plan takes the Jing-Zhang Heritage Park vitality belt as the spine, integrating Qinghe, Xiaoyue River and the mobility needs of universities, enterprises and communities, proposing a north-south through and east-west connected pedestrian and cycling network [depth:blue_green_public_space] [data:geometry/green_space.geojson#GREEN-001] [data:geometry/public_space.geojson#PUBLIC-001] [metric:public_space_ratio].
 
 **AI public space "a heritage corridor that tells stories"**: the 9 km corridor is organized in three themed segments — north "Connect" (Qinghe–Shangdi), middle "Origin" (Wudaokou–Zhichun Road), south "Echo" (Dazhongsi–Xizhimen); conceptual facilities include a switchback plaza, sleeper-path story points (history + AI dual display every 500 m), AI stations and a forest theater.
 
-**East-west stitching and north-south connection**: a "fishbone" network of connector routes with the corridor as spine (9 branch roads opened in phase 2, suggested to be densified further), activation of space under the Metro Line 13 viaduct, ground-floor opening of parks to streets, and barrier-free connection; north-south continuity via a seamless corridor, dual gateways (Qinghe Station/Xizhimen) and water-system connectivity.
+**East-west stitching and north-south connection**: a "fishbone" network of connector routes with the corridor as spine (9 branch roads opened in phase 2, suggested to be densified further), activation of space under the Metro Line 13 viaduct, ground-floor opening of parks to streets, and barrier-free connection; north-south continuity via a continuous corridor, dual gateways (Qinghe Station/Xizhimen) and water-system connectivity.
 
 **Urban character**: integrating Jing-Zhang railway history, Zhongguancun innovation culture and AI new culture, using Tsinghua Garden Station and other cultural resources to guide urban tone, architectural character, roofline, massing and street frontage [standard:MOHURD-URBAN-DESIGN-MEASURES]. Cultural expression is restrained and implicit — the triple heritage forms a "Connect–Origin–Echo" storyline along the belt, letting the spirit grow naturally in space.
+
+![E1 Gateway of Jing-Zhang rendering (Qinghe Station front plaza, pedestrian view, concept)](assets/figures/render-e1-gateway.png)
 
 **Pilgrimage landmarks and honor display**: four AI pilgrimage landmarks — Qinghe Station "Jing-Zhang Gate", Zhongzhi Park "Full-Stack Temple", Tsinghua Garden Station×Origin Tower "Origin Dialogue Axis", Dazhongsi "Ancient Bell New Wave"; the honor display system has three layers — historical glory (railway history), contemporary glory ("Artery Star" annual selection) and future glory (young innovators) — with open-source attribution culture embedded in public space (contributor names on sleeper stones/bricks). All brands, fonts, images, portraits and enterprise marks have rights-cleared sources [source:SITE-PACKAGE].
 
@@ -188,6 +371,26 @@ The implementation plan forms a reviewable renewal project list with location, t
 
 **Annual event system and long-term operation** (conceptual): Artery Open Source Day (monthly), Origin Launch Hall (biweekly), Jing-Zhang Smart Track Experience Week (quarterly), Artery Star Annual Ceremony (annual), Jing-Zhang AI Innovation Belt International Forum (annual), Ancient Bell New Wave Art Season (annual); operation mechanisms include a unified JZ-IA brand IP, multi-stakeholder governance, self-sustaining revenue (space rent + service fees + event operation + investment returns), lightweight startup, and global linkage via the dual high-speed-rail gateways and the SCO AI Application Cooperation Center [source:AGENT-TASKBOOK].
 
+### Implementation Recommendations
+
+Implementation follows an "ignite first, then weave the network, then scale the area" logic, aligned with the phasing plan [depth:phasing_implementation] [data:geometry/phasing.geojson#PHASE-001]:
+
+**① Implementation path (three steps)**
+
+| Step | Period | Key actions | Projects |
+|---|---|---|---|
+| Step 1 · Ignite | 1–3 yrs | Origin Community 2.0 upgrade + corridor scenario weaving; connect already-alight industries first | JZ-01 gap stitching, JZ-03 translation street, JZ-05 AI public-service node |
+| Step 2 · Weave | 3–5 yrs | Zhongzhi Park opening + Dazhongsi renewal; three-core chain formed; 12 scenario cards phased in | JZ-02 Qinghe interface, JZ-04 four-quadrant connectivity |
+| Step 3 · Scale | 5–10 yrs | Two wings expansion + whole-belt activation; 43.6km² study scope linked | JZ-06 global activity-week public route |
+
+**② Safeguard mechanisms (conceptual)**
+
+- **Planning alignment**: the spatial structure strictly echoes the approved Aug 2026 control plan "One Belt, One Axis, Two Cores, Multi-Points"; once official polygons are released, recalculate fully in EPSG:4548 and map each item after statutory conditions arrive [source:PROCESSED-FACT-PACK].
+- **Implementing actors**: suggest government-enterprise-academia multi-stakeholder governance — government leads public space and landmarks, enterprises lead industrial scenarios and operations, universities/institutes lead source innovation and talent, operators lead events and branding.
+- **Funding and self-sustenance**: a diversified revenue model of space rent + service fees + event operation + investment returns, reducing one-time fiscal dependence.
+- **Data and governance**: all scenarios observe privacy and human-review boundaries; AI-generated content labeled, human-review backstops, manual channels for vulnerable groups [source:AGENT-TASKBOOK].
+- **Risk control**: conclusions on height, intensity, road red lines and ownership are all "pending official control-plan conditions"; events and operations are stated as conceptual, not government commitments.
+
 ## Indicators, Area Recalculation and Compliance Matrix
 
 The indicator system at minimum covers overall design area, key area areas, green/public space ratios, building footprint, number of renewal projects, AI scenario nodes, slow-traffic connectivity, industrial space, talent services and self-check status [depth:metrics_recalculation]. All known indicators must be recalculable from GeoJSON or trusted sources; unknown indicators must state the reason and prerequisites for formal submission. Indicators fall into three classes: spatial indicators directly recalculable from submitted geometry (boundary area, green ratio, public space ratio, building footprint, phasing area); regulatory indicators requiring official conditions (FAR, building height, density, setbacks, road red lines); performance indicators requiring ongoing operation data (AI innovation index, talent density, event participation, scenario usage). The three classes enter `metrics.json`, `assumptions.json` and `compliance_matrix.json` respectively [metric:site_area_sqm] [metric:key_area_count] [metric:green_ratio] [metric:public_space_ratio] [metric:building_footprint_area_sqm].
@@ -195,6 +398,38 @@ The indicator system at minimum covers overall design area, key area areas, gree
 ![Metrics recalculation and evidence chain](assets/figures/metrics-evidence.en.png)
 
 The compliance matrix is the master control for task responsiveness. Every announcement task and agent_taskbook task must map to report sections, layers, metrics, drawings, HTML pages, sources, assumptions and self-check items. Failure to cover any mandatory task in announcement Sections 1.3, 1.4, 1.5 or agent.1–agent.6 disqualifies the proposal from formal professional scoring.
+
+## Inclusion & Human-Centered Safeguards
+
+The renewal proposal must serve not only innovation industries but also safeguard the **four groups most often overlooked**:
+
+**1. Elderly / Age-friendly design**
+- 9 km Intelligence Corridor with seating-and-armrest rest nodes every ≤ 200 m
+- Public restrooms every 500 m with accessible stalls
+- Signals and signage in a high-contrast large-print version (yellow background, deep blue text)
+- Public activity spaces with semi-enclosed wind-and-rain porches (to cope with Beijing winter)
+
+**2. People with disabilities / Accessibility**
+- Fully accessible ramps (slope ≤ 1:12); tactile paving and Braille wayfinding nodes at each key junction
+- Smart hubs with low-position counters and sign-language video inquiry
+- Service robots in auto mode must yield to the manual-path priority (the **manual channel has higher priority** to prevent disabled users from being isolated by automation)
+
+**3. Children and parents**
+- One child-safe play area per key area, with shade and a parent-accompanied waiting zone
+- The 9 km corridor's cycling and walking segments are physically separated to avoid children straying into the fast lane
+- All smart signage includes a children-height reading version
+
+**4. Low-income and floating populations**
+- Affordable food service (morning stalls / night stalls + public toilets) at ≥ 10 locations along the corridor
+- Low-cost-startup tier for OPC companies (the '180' figure is the existing background, the specific scale awaits official confirmation), targeting ≥ 50% of workstation rent ≤ 100 RMB/workstation/day (conceptual target, awaiting detailed cost calculation)
+- Apartment typologies retain a defined share of affordable units (proportion awaits alignment with official housing policy)
+
+**Co-creation procedure (draft)**:
+- 'Corridor Open Day' (biannual) inviting corridor residents, tenants, shop owners and small developers to participate in design-review and adjustment
+- 'Elderly + children experience review panel' evaluating each iteration of smart facilities, with a veto clause
+- All data collection follows four boundaries: data minimization, purpose specification, manual channel, deletion right (referencing PRC PIPL and AI service standards)
+
+**Quantifiable equity indicators (draft, awaiting refinement)**: affordable workstation share ≥ 30%; continuous accessibility ≥ 95%; service facilities within 5-minute reach ≥ 90%; annual acceptance of elderly/children co-creation proposals ≥ 3.
 
 ## Risk, Copyright and Compliance
 
