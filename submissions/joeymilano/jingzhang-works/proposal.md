@@ -42,7 +42,9 @@ iteration: "v1.7"
 
 规则还需要一间能被搭出来的房间。“好用服务间”把 U05-A 六步任务压进一处 6.0 米乘 4.8 米的试装范围。1.8 米普通通行带始终可以直接穿过。先问门槛先摆纸卡和服务状态，柜台做成 0.75 米与 1.05 米两种试装高度。结果台交付带来源和到期日的纸张，安静复核位预留 1.5 米回转范围，接手与改进墙放在出口前。这里的数字来自设计试装，尚未经过场地测量、无障碍、消防或疏散复核，不能写成合规尺寸。场地未授权，运营人也没有任命。[source:V17-WORKS-BAY] [metric:works_bay_design_area_sqm] [metric:works_bay_spatial_zone_count]
 
-这本 A3 手册也按独立评图重新排过。十六页各自回答一个问题，每页只承担一个判断，并同时给出直接证据和边界。中英文正文、首屏、五组核心图、A3 与 A0 另做十三组作者等义审计。审计能证明这些项目逐项核对过，不能代替独立译审或公众理解测试。[source:V17-JUROR-PATH] [source:V17-BILINGUAL-AUDIT] [metric:bilingual_audited_pair_count]
+纸质结果不是一句口号。空白模板固定七栏，分别记录要办的事、公开来源和发布日期、材料清单、线下下一步、需要重查的日期、人工核对人与时间、问题编号。AI 可以从有日期的公开资料中提取候选字段，起草短句和双语版本，也可以提示缺项。它不能判断资格、补造来源、替工作人员签字或保存个人画像。来源、到期日、线下去向和人工签字少一项，柜台就不出单。当前模板没有填写任何真实公共服务答案，也没有真实签字或问题编号。[source:V13-COMPLETE-TASK-RECEIPT] [metric:paper_result_required_field_count]
+
+这本 A3 手册也按独立评图重新排过。十六页各自回答一个问题，每页只承担一个判断，并同时给出直接证据和边界。中英文正文、首屏、六组核心图、A3 与 A0 另做十四组作者等义审计。审计能证明这些项目逐项核对过，不能代替独立译审或公众理解测试。[source:V17-JUROR-PATH] [source:V17-BILINGUAL-AUDIT] [metric:bilingual_audited_pair_count]
 
 ## 设计依据与资料清单
 
@@ -255,7 +257,7 @@ iteration: "v1.7"
 
 `reviewer_evidence_index.json` 留在结构化附件中，不再承担方案叙事。正文和图件先说明人怎样完成任务，索引只在需要核对来源时提供路径。它不替评审打分，也不会把概括当成新的事实。[source:V12-REVIEWER-EVIDENCE-INDEX]
 
-双语等义由一份作者审计台账逐项记录。十三组配对覆盖正文关键章节、离线首屏、五组核心图、十六页 A3 和三页 A0，核对主张、数字、单位、图题、图例、证据边界与图位。作者已经逐项核完十三组，独立人工译审仍未完成，不能用 13/13 替代译者或目标读者的判断。[source:V17-BILINGUAL-AUDIT] [metric:bilingual_audited_pair_count]
+双语等义由一份作者审计台账逐项记录。十四组配对覆盖正文关键章节、离线首屏、六组核心图、十六页 A3 和三页 A0，核对主张、数字、单位、图题、图例、证据边界与图位。作者已经逐项核完十四组，独立人工译审仍未完成，不能用 14/14 替代译者或目标读者的判断。[source:V17-BILINGUAL-AUDIT] [metric:bilingual_audited_pair_count]
 
 ![设计演练 U05-A，不用手机完整办成一件事](assets/figures/metrics-evidence.png)
 

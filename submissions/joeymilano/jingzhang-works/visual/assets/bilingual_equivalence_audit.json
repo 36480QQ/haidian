@@ -188,11 +188,26 @@
       },
       "author_note_zh": "总体、三区与开门前排演三块展板在中英文中保持同一阅读顺序。",
       "author_note_en": "The overall, three-Works, and pre-opening rehearsal boards keep the same reading order."
+    },
+    {
+      "id": "BE-14",
+      "artifact_zh": "assets/figures/paper-result-receipt.png",
+      "artifact_en": "assets/figures/paper-result-receipt.en.png",
+      "scope": "blank_paper_result_receipt",
+      "checks": {
+        "seven_required_fields": "aligned",
+        "AI_may_and_must_not": "aligned",
+        "release_gate": "aligned",
+        "blank_template_boundary": "aligned",
+        "files_not_byte_identical": true
+      },
+      "author_note_zh": "七栏空白回执、AI 权限边界、人工签发门槛和零真实答案在两版中逐项对应。",
+      "author_note_en": "The seven blank receipt fields, AI limits, human release gate, and zero-real-answer boundary correspond item by item."
     }
   ],
   "summary": {
-    "audited_pair_count": 13,
-    "aligned_pair_count": 13,
+    "audited_pair_count": 14,
+    "aligned_pair_count": 14,
     "open_semantic_differences": 0,
     "independent_human_review_completed": false
   },

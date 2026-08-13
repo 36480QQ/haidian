@@ -365,7 +365,7 @@
   },
   "bilingual_audited_pair_count": {
     "status": "known",
-    "value": 13,
+    "value": 14,
     "unit": "artifact_pair",
     "source_files": [
       "visual/assets/bilingual_equivalence_audit.json"
@@ -388,6 +388,18 @@
     "confidence": "high",
     "assumptions": [],
     "claim_boundary": "Navigation coverage, not a score or proof that a juror understood the package."
+  },
+  "paper_result_required_field_count": {
+    "status": "known",
+    "value": 7,
+    "unit": "field",
+    "source_files": [
+      "visual/assets/complete_task_receipt.json"
+    ],
+    "formula": "count(paper_result_contract.required_fields)",
+    "confidence": "high_for_blank_template_only",
+    "assumptions": [],
+    "claim_boundary": "Fields in a blank paper-result template; no real receipt has been issued."
   }
 }
 }

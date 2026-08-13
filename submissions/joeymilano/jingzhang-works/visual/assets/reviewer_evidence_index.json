@@ -32,11 +32,13 @@
     {
       "dimension_id": "ai_planning_innovation",
       "question_zh": "AI 怎样改变空间、交通、公共服务和产业测试的共同决策",
-      "answer_zh": "每项技术测试必须服务一项公共任务，并在受控环境、街道复演和公开退役之间留下同一任务编号",
+      "answer_zh": "每项技术测试必须服务一项公共任务；在好用服务间里，AI 只能把有日期的公开资料整理成双语纸质结果草稿，缺来源、到期日、线下去向或人工签字时不得出单",
       "evidence_refs": [
         "proposal.md#AI-创新生态人才画像与-AI-场景",
         "visual/assets/ecosystem_resource_map.json",
-        "geometry/phasing.geojson"
+        "geometry/phasing.geojson",
+        "visual/assets/complete_task_receipt.json",
+        "assets/figures/paper-result-receipt.png"
       ],
       "known_limit": "technology performance and statutory planning conditions remain unverified"
     },
@@ -80,7 +82,7 @@
     {
       "dimension_id": "expression_completeness",
       "question_zh": "中英文读者如何核对同一结论",
-      "answer_zh": "十六页 A3 各登记一个判断、直接证据和边界；十三组中英成果另做作者等义审计",
+      "answer_zh": "十六页 A3 各登记一个判断、直接证据和边界；十四组中英成果另做作者等义审计",
       "evidence_refs": [
         "proposal.en.md",
         "visual/index.en.html",

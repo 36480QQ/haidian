@@ -21,7 +21,7 @@
     {"page": 12, "question_zh": "产业测试怎样停下来", "question_en": "How do industry tests stop", "judgement": "four_controlled_tests_with_hard_stops", "evidence": "robot_delivery_sensor_and_twin_stop_rules", "boundary": "no_device_test_claim"},
     {"page": 13, "question_zh": "一条路线怎样算完整", "question_en": "What makes a route complete", "judgement": "arrival_to_exit_is_one_service", "evidence": "six_step_receipt", "boundary": "route_measurement_pending"},
     {"page": 14, "question_zh": "空间规划有没有越界", "question_en": "Does the spatial plan overclaim", "judgement": "relationships_known_controls_unknown", "evidence": "topology_and_unknown_regulatory_metrics", "boundary": "not_statutory_planning"},
-    {"page": 15, "question_zh": "一件事怎样完整办成", "question_en": "How is one task completed end to end", "judgement": "U05_A_paper_result_journey", "evidence": "six_actions_and_stop_conditions", "boundary": "design_rehearsal_not_executed"},
+    {"page": 15, "question_zh": "一件事怎样完整办成", "question_en": "How is one task completed end to end", "judgement": "U05_A_paper_result_journey", "evidence": "six_actions_stop_conditions_and_blank_paper_result_contract", "boundary": "design_rehearsal_not_executed"},
     {"page": 16, "question_zh": "下一步缺什么", "question_en": "What remains next", "judgement": "structure_ready_field_unknown", "evidence": "12_of_12_contracts_and_zero_field_results", "boundary": "real_users_operators_and_professionals_required"}
   ],
   "summary": {

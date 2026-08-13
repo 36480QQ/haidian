@@ -52,7 +52,11 @@
       "name_en": "Paper result table",
       "action_zh": "拿到写有来源、到期日、线下去向和问题编号的纸质结果。",
       "action_en": "Receive a paper result with source, expiry, offline destination, and issue number.",
-      "personal_information_default": false
+      "personal_information_default": false,
+      "output_contract": "visual/assets/complete_task_receipt.json#paper_result_contract",
+      "blank_template_zh": "assets/figures/paper-result-receipt.png",
+      "blank_template_en": "assets/figures/paper-result-receipt.en.png",
+      "issue_gate": "dated public source, offline next step, expiry and human sign-off are all present"
     },
     {
       "order": 5,
