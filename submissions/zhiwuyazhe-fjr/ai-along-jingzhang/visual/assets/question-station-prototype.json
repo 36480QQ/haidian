@@ -15,5 +15,22 @@
   "physical_stop": "remove_power_and_close_digital_intake_while_staffed_counter_remains",
   "restoration_checklist": ["remove_freestanding_fixture", "restore_clear_route", "remove_temporary_power", "publish_question_disposition", "confirm_no_attachment_or_surface_damage"],
   "required_approvals_and_inputs": ["official_heritage_control_map", "property_consent", "measured_survey", "heritage_impact_review", "fire_and_crowd_review", "accessibility_review", "operating_owner", "restoration_fund"],
-  "field_claims": null
+  "field_claims": null,
+  "raci_status": "proposed_roles_pending_confirmation",
+  "raci": {
+    "accountable": "proposed_public_space_and_heritage_joint_owner_pending_confirmation",
+    "responsible": "proposed_question_station_duty_officer_pending_confirmation",
+    "consulted": ["heritage_professional", "property_owner", "fire_and_crowd_professional", "accessibility_reviewer", "community_representative"],
+    "informed": ["ordinary_route_users", "question_submitters", "nearby_residents"]
+  },
+  "human_signoff_points": [
+    "heritage_and_property_clearance_before_fixture_installation",
+    "accessibility_fire_and_crowd_acceptance_before_public_opening",
+    "daily_staffed_counter_and_clear_route_check_before_activation",
+    "public_receipt_review_before_status_publication"
+  ],
+  "stop_authority": ["heritage_or_property_owner_for_heritage_risk", "site_safety_controller_for_physical_risk", "question_station_duty_officer_for_service_or_data_risk"],
+  "restoration_acceptance": ["fixture_and_power_removed", "ordinary_and_accessible_route_reopened", "heritage_surface_inspected", "question_disposition_published", "joint_owner_signoff_recorded"],
+  "data_expiry_owner": "proposed_question_station_duty_officer_pending_confirmation",
+  "data_expiry_action": "close_digital_intake_archive_or_delete_by_declared_schedule_keep_staffed_paper_route"
 }
