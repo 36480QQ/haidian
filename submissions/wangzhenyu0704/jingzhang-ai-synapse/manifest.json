@@ -18,7 +18,7 @@
       "path": "manifest.json",
       "role": "manifest",
       "required": true,
-      "bytes": 9939
+      "bytes": 9993
     },
     {
       "path": "proposal.md",
@@ -59,8 +59,8 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "f7233a2e62a14ee49e5f2fab5644f1d2ecb425232b570ba62fba04bc2280fdc7",
-      "bytes": 2477
+      "sha256": "4336133a24beccd85f094a0a45eda5304ed75409ea3e0afe14e3b6e4b44200b6",
+      "bytes": 10514
     },
     {
       "path": "compliance_matrix.json",
@@ -317,6 +317,7 @@
   ],
   "validation_claim": {
     "self_checked": true,
+    "readiness_contract": "persisted-self-check-v1",
     "known_blockers": [],
     "data_confidence": "high"
   }
