@@ -100,8 +100,28 @@ def display_path(path: Path) -> str:
         return path.as_posix()
 
 
+def is_symlink_free_contained_path(path: Path, root: Path) -> bool:
+    try:
+        relative = path.relative_to(root)
+    except ValueError:
+        return False
+    current = root
+    for part in relative.parts:
+        current /= part
+        if current.is_symlink():
+            return False
+    return path.resolve().is_relative_to(root.resolve())
+
+
 def submission_dirs(repo_root: Path, only: list[str]) -> list[Path]:
-    dirs = sorted(path.parent for path in (repo_root / "submissions").glob("*/*/proposal.md"))
+    submissions_root = repo_root / "submissions"
+    if submissions_root.is_symlink():
+        raise ValueError(f"submissions root must not be a symbolic link: {submissions_root}")
+    dirs = sorted(
+        path.parent
+        for path in submissions_root.glob("*/*/proposal.md")
+        if is_symlink_free_contained_path(path, submissions_root)
+    )
     if not only:
         return dirs
     wanted = set(only)
@@ -596,7 +616,10 @@ def main() -> int:
     parser.add_argument("--force", action="store_true")
     args = parser.parse_args()
     repo_root = args.repo_root.resolve()
-    dirs = submission_dirs(repo_root, args.only)
+    try:
+        dirs = submission_dirs(repo_root, args.only)
+    except ValueError as exc:
+        parser.error(str(exc))
     changed = 0
     if args.mode in {"figures", "all"}:
         zh_to_en, en_to_zh = load_glossary(repo_root / "docs" / "terminology-glossary.md")
