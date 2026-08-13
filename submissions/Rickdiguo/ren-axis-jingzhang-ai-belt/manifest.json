@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "ddfaa5bec08d6a187e2f590414d11b362931c46e9f13c8f379922d5eee2f2dfe"
+      "sha256": "090389d2bc55da472b297e89522d87f7681a9d50fe29216a95148e54ea2eea9f"
     },
     {
       "path": "agent.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "19c54f3555cecc494e0ee27352daf486d5916754e018f2ed5b9df7c5b0c6acf9"
+      "sha256": "d24fd27b9ae6287012f9e2049b28c0754909f41f240603a682e57679cf7f873b"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "e4035edf5f2437094d3f1a2ecc3893b729e14c74928d5aabfe83e6bbacc920f4"
+      "sha256": "bf458021e9af5f95dc2bcd484ed50290f93cb4d2d1cfcdffa591179c1ed57981"
     },
     {
       "path": "report/narrative.md",
@@ -93,7 +93,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "8c71242d732c60dc9653276678861ef323287b4004c907a7d9ca0a861b6a445e"
+      "sha256": "3fd27a2b92e4c464c9c8871163e60cbf4d0957eadee7822aa8b91b25cc7c8573"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -114,7 +114,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "802b00775f5dac829e402f31768400b4ed862d218efdc1e236211c59456acf1d"
+      "sha256": "e984e0091562c97768f75359b871232709685b2f844a4a09e2684ab727dbcb9d"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "029bb14a9ac692efb1ec762afa32105024343f3f2757e89b6d8fa7aae56943fa"
+      "sha256": "452727dfd78eb808f61987aaad7620a39d18141622baf7e2d328ff1185d7c173"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "bcc39a0fbfd0e57d9260473c8fb6ad51b5a168bead6d4f323094c4468958a6b8"
+      "sha256": "fafd8b76e36c3ab31fca280182e54926a1ad79b606fd244ea500b724f04240d5"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "6f6a28bea0fa6ccab7a863833e38f079c5a87a1ef0e7335d54fd382eabb7b50e"
+      "sha256": "a06a1667062ad58326ae7a0630434ea57f50951a2e795b42667fdb78769e1e35"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -292,6 +292,30 @@
       "title_zh": "人字·智轴概念封面",
       "title_en": "REN-Axis concept cover",
       "sha256": "3470830eeea70df5828d98b123a7aaba22c7e6250c8875720b9151504d12a365"
+    },
+    {
+      "path": "assets/media/scene-park.webp",
+      "role": "media_poster",
+      "required": false,
+      "title_zh": "京张遗址公园活力带（黄昏）",
+      "title_en": "Heritage Park vitality belt (dusk)",
+      "sha256": "476c2b5f395536b8a18b1e660fe6395d9713a53369b0894dd5d99a6b10dbb683"
+    },
+    {
+      "path": "assets/media/scene-source.webp",
+      "role": "media_poster",
+      "required": false,
+      "title_zh": "源栈·花园型全栈自主创新街区",
+      "title_en": "Source-Stack garden innovation district",
+      "sha256": "0fe1ffa3c1aadc21cea39b1bfdecb10417d3fc150bb1a6ab3ee75376f4480ef0"
+    },
+    {
+      "path": "assets/media/scene-bell.webp",
+      "role": "media_poster",
+      "required": false,
+      "title_zh": "钟塔·站城一体智能经济夜景",
+      "title_en": "Bell-Hub station-city night",
+      "sha256": "13428a9f6627bb8c32e7729e7996944ccfefb4468d9c431db424680adbb9f382"
     }
   ],
   "validation_claim": {
