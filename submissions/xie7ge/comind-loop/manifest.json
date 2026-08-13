@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "package_id": "comind-loop",
   "project_id": "centennial-jingzhang-ai-belt",
   "site_package_version": "0.1.0",
@@ -57,7 +57,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "b7468799e4d24ab7932f56be8ef4878231cd52386b2f692d31c910ed609a4f4f"
+      "sha256": "dfe9edba548b50e112207119e4e415bb6b3dedf5d28cce97181f07be7e9993b0"
     },
     {
       "path": "compliance_matrix.json",
@@ -295,8 +295,8 @@
   ],
   "validation_claim": {
     "self_checked": true,
+    "readiness_contract": "persisted-self-check-v1",
     "known_blockers": [],
-    "data_confidence": "medium",
-    "readiness_contract": "persisted-self-check-v1"
+    "data_confidence": "medium"
   }
 }
