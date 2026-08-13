@@ -1559,12 +1559,12 @@ node visual/assets/verify.js
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-当前 **62 条**。按发现者分：
+当前 **63 条**。按发现者分：
 
 | 发现者 | 条数 | 这说明什么 |
 |---|---|---|
 | 独立审计 | 25 | 委托的审计对象是随包产物，不是草稿 |
-| 作者自查 | 28 | 本轮工作中发现 |
+| 作者自查 | 29 | 本轮工作中发现 |
 | 本包自己的闸门 | 5 | 构建时被抓出——这是闸门本该做的事 |
 | **包外评审** | **4** | [@anselasimov-web](https://github.com/anselasimov-web) 在 PR #1002、[@147228](https://github.com/147228) 在 PR #1065、[@Sonike](https://github.com/Sonike) 在 Issue #950、[@147228](https://github.com/147228) 在 Issue #950 / PR #1190 |
 
@@ -1600,6 +1600,7 @@ node visual/assets/verify.js
 | 表列六类而剖分已是七类 | 1 |
 | 把一个专业术语用在它不适用的地方 | 1 |
 | 表格不再是表格 | 1 |
+| 两条自订规则在某个条件下互相取消 | 1 |
 
 <!-- ERRATA:SHAPES:END -->
 

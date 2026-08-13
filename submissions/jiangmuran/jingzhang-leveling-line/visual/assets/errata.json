@@ -4,12 +4,12 @@
  "note_en": "A register of this package's own errors. Not a changelog: a changelog says what changed, this says what was wrong, what shape the error had, who found it, and which commit fixed it. Every entry names a commit, and the build verifies that commit exists and touched the file blamed. An errata register that cannot be joined to the repository is the defect it records.",
  "why_zh": "全场 351 份方案中没有一份勘误、撤回或作者自述的复盘。一个主张城市应当公开自身误差的方案，不能自己呈现一个无瑕的表面：它提出的整套机制都建立在「看不见失败的测量不值得信任」之上，文档同理。",
  "counts": {
-  "total": 62,
+  "total": 63,
   "by_found_by": {
    "audit": 25,
    "own-gate": 5,
    "external-reviewer": 4,
-   "self": 28
+   "self": 29
   },
   "by_shape": {
    "reference-does-not-resolve": 4,
@@ -25,6 +25,7 @@
    "six-classes-for-a-seven-class-partition": 1,
    "the-table-stopped-being-a-table": 1,
    "index-that-does-not-index": 1,
+   "two-of-our-own-rules-collide-under-a-condition": 1,
    "rule-applied-to-others-but-not-to-self": 2,
    "claim-that-cannot-be-checked-by-construction": 1,
    "constraint-that-cannot-be-failed": 1,
@@ -478,6 +479,16 @@
    "what_zh": "图纸索引上方写「共十二张图纸，FIG.00–FIG.11 连续编号」，下方的表只有九行（FIG.01–FIG.09）。缺 FIG.00（全文开篇那张）、FIG.10（人视街道剖面）与 FIG.11（区域协同接口）——**而正文在 L531 按编号引用了 FIG.11**，把读者指向一个不含它的索引。同一处的复核清单则编号成 1…10、8、9，十二项用了十个号。",
    "why_zh": "两个语种带着同样的九行，所以这不是翻译疏漏，是**完整性声明写在表格上方那句话里、而不是由表格本身承担**。清单的编号是看得见的那个缺陷，危险的是另一个：清单上每一项都指名一个路径，一份把评审指向不存在文件的清单，比没有清单更糟。",
    "fix_zh": "两者都改为生成：索引由 `build_figure_index.py` 从随包 PNG 生成，句中的份数写自 `len(FIGURES)`，并断言每张随包图有编号、每个编号有文件、正文引用的每个 FIG.NN 都能解析到行；清单由 `enumerate` 编号，且十二项声明的 17 条路径必须全部在包内解析。"
+  },
+  {
+   "id": "E63",
+   "commit": "ba1587cc",
+   "file": "visual/assets/operations.json",
+   "found_by": "self",
+   "shape": "two-of-our-own-rules-collide-under-a-condition",
+   "what_zh": "KIT-01 要求标石与地面齐平、不构成绊倒风险；FIG.16 把这条约束落成公差 ±5 mm。而齐平嵌进**平**铺装的标志，就坐在铺装积起来的水里——结冰之后，那个「为了不让人绊倒」而规定的东西，成为人行道上唯一一块冰。**三个三等点每月复测，也就是一月也要读，而包内从没说过那要付出什么。**",
+   "why_zh": "**这不是与别人的规则冲突，也不是自己没做到自己的要求（E50、E60 是那两型）；是本方案自己写的两条约束，在一个此前没有被想到的条件下互相取消。** 两条单独看都对：齐平是对的，公差是对的；合起来在零度以下就是错的。更值得记的是它为什么这么久没被发现——**图上每一个尺寸都满足**，而缺的那个量（四周找坡）根本不在任何一张图的尺寸表里，因此没有任何闸门会问它。本册此前记过的缺陷都能由「量错了」或「没量」概括；这一条是**量对了，但少量了一个维度**。",
+   "fix_zh": "标石改为**局部高点**：与紧邻铺装齐平（±5 mm 不变），铺装自标石向外找坡 ≥ 1%、维持 ≥ 1 m；不设保护环——凹环是水盆，凸环正是 KIT-01 明令禁止的绊倒风险；面层透水或密缝，不得有向内的接缝低槽。冬季读数增加三步：清面、查排水痕迹、在记录中标注冬季条件与是否清面（清过与未清的读数不可直接比较）。KIT-01 的硬约束文本写明这处冲突并指向 FIG.22。**图上还写明了一件让这条缺陷难被发现的事**：1% 在 1 m 上是 10 mm，按真实比例几乎看不见——看不见的坡度现场也没有人会去查。另记一处相容：FIG.19 的表面式标志无基础、随季节位移，而它早已因「不得钻入遗址本体」被限定为仅三等且每次与埋入式点联测——**这是本包里唯一一处两条约束未经协调就已经相容。**"
   },
   {
    "id": "E62",

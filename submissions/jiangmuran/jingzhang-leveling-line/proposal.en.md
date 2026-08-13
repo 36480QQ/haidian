@@ -1452,12 +1452,12 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-62 entries. By finder:
+63 entries. By finder:
 
 | Found by | Count | What it says |
 |---|---|---|
 | Independent audit | 25 | The audit was run against the shipped package, not a draft |
-| The author | 28 | Found while working |
+| The author | 29 | Found while working |
 | This package's own gate | 5 | Caught at build time — which is what a gate is for |
 | **Reviewers outside this proposal** | **4** | [@anselasimov-web](https://github.com/anselasimov-web) on PR #1002; [@147228](https://github.com/147228) on PR #1065; [@Sonike](https://github.com/Sonike) on Issue #950; [@147228](https://github.com/147228) on Issue #950 / PR #1190 |
 
@@ -1493,6 +1493,7 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 | Six classes listed for a seven-class partition | 1 |
 | A term of art applied where it does not hold | 1 |
 | The table stopped being a table | 1 |
+| Two of our own rules cancelling each other under a condition | 1 |
 
 <!-- ERRATA:SHAPES:END -->
 
