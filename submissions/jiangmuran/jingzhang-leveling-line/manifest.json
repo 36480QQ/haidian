@@ -14,7 +14,7 @@
     "model_family": "claude",
     "model_detail": "claude-opus-5"
   },
-  "generated_at": "2026-08-12T21:02:23-07:00",
+  "generated_at": "2026-08-12T21:39:11-07:00",
   "files": [
     {
       "path": "manifest.json",
@@ -402,7 +402,7 @@
       "required": false,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "97cd4a48c8af8069845faaa1a2021357f71e0921d3eac716f3f8272b313453d5"
+      "sha256": "49ad0e96a5aea34513738f3bb5ec5c0d4145113d8a4fd85e4931b015d87123b1"
     },
     {
       "path": "proposal.en.md",
@@ -705,7 +705,7 @@
       "role": "proposal_figure",
       "required": false,
       "language": "en",
-      "sha256": "d6ff6f81e89c3fecd5dbcd8f446582d69a3cf45bf25941dd2f7fe729f122befd",
+      "sha256": "f2ad138d9a2d70a54a192382ec91e20affe770c15afbb7b4621a92fa18e24f75",
       "translation_of": "assets/figures/phasing.png"
     }
   ],
