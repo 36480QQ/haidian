@@ -80,6 +80,7 @@
         "submissions/sierhaha/jingzhang-ai-commons/self_check.json",
         "submissions/sierhaha/jingzhang-ai-commons/sources.json",
         "submissions/sierhaha/jingzhang-ai-commons/standard_matrix.json",
+        "submissions/sierhaha/jingzhang-ai-commons/visual/assets/bilingual-audit.json",
         "submissions/sierhaha/jingzhang-ai-commons/visual/assets/jz05-pilot-evidence.json",
         "submissions/sierhaha/jingzhang-ai-commons/visual/assets/run_jz05_pilot.js",
         "submissions/sierhaha/jingzhang-ai-commons/visual/index.en.html",
@@ -88,7 +89,7 @@
       "ai_package_stages": {
         "submissions/sierhaha/jingzhang-ai-commons": "formal"
       },
-      "total_bytes": 7521029,
+      "total_bytes": 10494752,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -153,7 +154,7 @@
         "site_area_sqm": 11412825.39,
         "key_area_count": 3.0,
         "building_count": 14.0,
-        "road_length_m": 41555.39,
+        "road_length_m": 42110.58,
         "scenario_node_count": 12.0,
         "persona_count": 5.0,
         "test_scenario_count": 3.0,
@@ -177,7 +178,7 @@
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 7,
+          "source": 9,
           "standard": 3,
           "depth": 15,
           "data": 19,

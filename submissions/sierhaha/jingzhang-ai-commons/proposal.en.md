@@ -27,11 +27,11 @@ scenarios: ["ai-cultural-guide", "enterprise-service-copilot", "ai-traffic-walka
 
 ## Design Basis and Source Inventory
 
-This proposal takes the Qualification Prequalification Announcement of the Centennial Jing-Zhang AI Innovation Belt International Urban Design Open Call, issued by the Haidian Branch of the Beijing Municipal Commission of Planning and Natural Resources, as its primary basis, and the registered provisional boundaries, key areas, enums, ranges, and source lists in `brief/site-package/` as its machine-readable basis [source:OFFICIAL-ANNOUNCEMENT] [source:SITE-PACKAGE]. The agent-facing open-call taskbook (agent.1–agent.6) is the direct source of the six required tasks of this proposal [source:AGENT-TASKBOOK].
+This proposal takes the Qualification Prequalification Announcement of the Centennial Jing-Zhang AI Innovation Belt International Urban Design Open Call, issued by the Haidian Branch of the Beijing Municipal Commission of Planning and Natural Resources, as its primary basis, and the registered provisional boundaries, key areas, enums, ranges, and source lists in `brief/site-package/` as its machine-readable basis [source:OFFICIAL-ANNOUNCEMENT] [source:SITE-PACKAGE]. The agent-facing open-call taskbook (agent.1–agent.6) is the direct source of the six required tasks of this proposal [source:AGENT-TASKBOOK]. The overview and spatial-structure figures use an OpenStreetMap basemap (roads/waterways/railways/parks, with on-figure attribution © OpenStreetMap contributors, ODbL); all other figures are agent-generated; the offline HTML embeds Noto Sans CJK SC font subsets [source:OSM-BASEMAP] [source:FONT-NOTO-CJK].
 
 The public source registry distinguishes formal-ready, background, provisional-only, and needs-review material; formal claims rely only on `usable_for_formal="yes"` or separately cleared sources, while background and provisional material is used as context only [source:SOURCE-REGISTRY]. Since official `SITE_BOUNDARY` and `KEY_AREA` redlines are not yet available, this proposal uses `brief/site-package/geometry/provisional_boundaries.geojson` as provisional constraint ranges, fully labeled in narrative, geometry, metrics, and self-check, and recalculates once official polygons are published [source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE].
 
-![Site context and boundary evidence](assets/figures/site-overview.png)
+![Site context and boundary evidence](assets/figures/site-overview.en.png)
 
 Mandatory professional standards are read from the local snapshots in `standards/references/`; a `source_url` alone is not evidence [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [standard:MOHURD-URBAN-DESIGN-MEASURES]. The narrative follows v2 format: readable judgments sit beside evidence anchors, while complete sources, metrics, matrices, and layer indexes live in the structured files [depth:existing_conditions_diagnosis].
 
@@ -41,7 +41,7 @@ The proposal is organized around the three scopes defined by the announcement: t
 
 The common spine of all three levels is the "double helix" spatial concept: a **Heritage helix (H-strand)** carries the century-long Jing-Zhang railway, Zhongguancun entrepreneurship culture, and the emerging AI culture; an **Innovation helix (I-strand)** carries university discovery, open-source collaboration, enterprise translation, applied scenarios, and global governance. The two strands wind along the Jing-Zhang Heritage Park corridor and interlock at three "gene nodes" in the key areas — every node is locatable and verifiable in plan and metrics [depth:overall_spatial_structure] [data:geometry/land_use.geojson#LU-001].
 
-![Three-level scope and double-helix spatial structure](assets/figures/land-use-structure.png)
+![Three-level scope and double-helix spatial structure](assets/figures/land-use-structure.en.png)
 
 | Level | Design question | Proposal answer | Data anchor |
 | --- | --- | --- | --- |
@@ -89,7 +89,7 @@ Building scale and intensity are governed by official regulatory conditions: FAR
 
 The three key areas are the three gene nodes of the double helix, carrying the detailed design of autonomy, origin & open-source, and application & experience respectively [data:geometry/key_areas.geojson#PROV-KEY-001] [data:geometry/key_areas.geojson#PROV-KEY-002] [data:geometry/key_areas.geojson#PROV-KEY-003].
 
-![Detailed design index of the three key areas](assets/figures/key-areas.png)
+![Detailed design index of the three key areas](assets/figures/key-areas.en.png)
 
 | Key area | Design positioning | Spatial moves | AI industry & operation scenarios |
 | --- | --- | --- | --- |
@@ -161,7 +161,7 @@ The tree guarantees: no existing building lacking ownership/engineering/approval
 
 The transport plan uses the Jing-Zhang Heritage Park slow-mobility spine (about 9.7 km) as its backbone, coordinated with the Innovation Service spine, the Xueyuan Road eastern arterial, and east–west connectors, forming a "dual-spine, multi-connector" network; the three key areas organize integrated transfer and four-quadrant pedestrian links around rail stations [data:geometry/roads.geojson#ROAD-001] [depth:traffic_rail_slow_parking]. Existing expressways, rail heritage, and water systems are locked as constraint layers, without overstepping into engineering feasibility conclusions [data:geometry/constraints.geojson#CONSTRAINT-001] [data:geometry/constraints.geojson#CONSTRAINT-004].
 
-![Transport - slow mobility - blue-green public space system](assets/figures/mobility-bluegreen.png)
+![Transport - slow mobility - blue-green public space system](assets/figures/mobility-bluegreen.en.png)
 
 Municipal and new infrastructure covers AI industry services, innovation platforms, talent life services, distributed energy, edge compute, and integration with traditional municipal systems [depth:municipal_new_infrastructure]. The Qinghe and Xiaoyuehe rivers are included in the blue-green system as blue-line constraints; pipeline, energy, drainage, flood, and fire engineering conditions are listed as prerequisites for formal deepening [data:geometry/constraints.geojson#CONSTRAINT-002] [data:geometry/constraints.geojson#CONSTRAINT-003].
 
@@ -280,7 +280,7 @@ Metrics fall into three classes: spatial metrics directly reproducible from the 
 
 All known metrics are reproducible from the GeoJSON under EPSG:4548; complete values, formulas, source files, and confidence are stored in `metrics.json`; unknown metrics give reasons and formal-submission prerequisites [data:geometry/site_boundary.geojson#SITE-001] [metric:key_area_count].
 
-![Core metric recalculation and evidence chain](assets/figures/metrics-evidence.png)
+![Core metric recalculation and evidence chain](assets/figures/metrics-evidence.en.png)
 
 The compliance matrix is the master control of task responsiveness: every task in announcement sections 1.3, 1.4, and 1.5 and every agent task agent.1–agent.6 is mapped to report sections, layers, metrics, drawings, HTML pages, sources, assumptions, and self-checks in `compliance_matrix.json`; professional standard responses are in `standard_matrix.json`; design-depth responses are in `design_depth_matrix.json` [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK].
 
