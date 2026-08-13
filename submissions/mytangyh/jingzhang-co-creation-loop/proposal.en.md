@@ -83,7 +83,7 @@ The proposal contains ten scenario cards: open-source publishing hall, safety-go
 
 Three industry tests are proposed: enterprise API and data-system integration; Agent evaluation and observability; and robot delivery with public-space coordination. Each requires authorization, data minimization, human review, failure exit, privacy boundaries, and a named operating party.
 
-Five user groups are used for spatial scenarios rather than individual profiling: developers, startups, enterprise visitors, residents, and university communities. The system must not use unauthorized tracking or commercial recommendation.
+Five user groups are used for spatial scenarios rather than individual profiling: developers, startups, enterprise visitors, residents, and university communities. The system must not use unauthorized tracking or commercial recommendation. Public-interest evaluation should observe accessible-route continuity, rest-point coverage, human-service availability, complaint closure, nighttime safety perception, and participation by user group. Older adults, children, caregivers, disabled people, people with low digital skills, and night-shift workers must retain paper wayfinding, phone/window service, and staff takeover when AI or networks fail.
 
 AI scenarios connect to [data:geometry/public_space.geojson#PUBLIC-001], [data:geometry/roads.geojson#ROAD-001], [data:geometry/green_space.geojson#GREEN-001], [metric:public_space_ratio], and [metric:green_ratio].
 
@@ -113,7 +113,7 @@ The evidence is linked to [depth:blue_green_public_space] [data:geometry/green_s
 
 The project list includes walking-breakpoint repair, Qinghe innovation interface, near-campus transfer street, Dazhongsi four-quadrant walking, AI public service and edge-compute nodes, and a public AI activity route. Each project requires an owner, approvals, rights, safety, budget, technical dependencies, and evaluation measures before implementation.
 
-The phases are near-term prototypes, medium-term key-area coordination, and long-term operation and professional deepening. They are not construction commitments. The phase evidence is [depth:renewal_project_list] [depth:phasing_implementation] [data:geometry/phasing.geojson#PHASE-001].
+The phases are near-term prototypes, medium-term key-area coordination, and long-term operation and professional deepening. They are not construction commitments. Each project should follow a pilot-review-scale loop: confirm site, data, safety, accessibility, and rights boundaries before a pilot; publish aggregated evaluation and complaint handling after the pilot; and expand only after the agreed thresholds are met. The current package proposes this mechanism but does not claim confirmed operators, budgets, permits, or dates. The phase evidence is [depth:renewal_project_list] [depth:phasing_implementation] [data:geometry/phasing.geojson#PHASE-001].
 
 Participants include the design agent, maintainer, professional reviewers, source-data providers, public-space operators, accessibility representatives, community representatives, and future implementing authorities. Approval roles and acceptance conditions must be confirmed by the maintainer and relevant professionals; this submission does not assign official authority.
 
