@@ -131,6 +131,12 @@
    "pass": true
   },
   {
+   "sheet": "svg/riverfront",
+   "min_font_units": 9.5,
+   "min_height_mm_at_A0": 4.99,
+   "pass": true
+  },
+  {
    "sheet": "svg/sections",
    "min_font_units": 9.5,
    "min_height_mm_at_A0": 4.99,
@@ -221,6 +227,12 @@
    "pass": true
   },
   {
+   "sheet": "svg.en/riverfront",
+   "min_font_units": 9.5,
+   "min_height_mm_at_A0": 4.99,
+   "pass": true
+  },
+  {
    "sheet": "svg.en/sections",
    "min_font_units": 9.5,
    "min_height_mm_at_A0": 4.99,
@@ -241,21 +253,21 @@
  ],
  "offline_html": {
   "visual/index.html": {
-   "images": 14,
+   "images": 15,
    "images_without_alt": 0,
    "has_lang": true,
    "heading_level_jumps": 0,
-   "figcaptions": 15,
+   "figcaptions": 16,
    "interactive_elements_needing_focus": 0,
    "has_dark_mode": true,
    "inline_script_tags": 0
   },
   "visual/index.en.html": {
-   "images": 14,
+   "images": 15,
    "images_without_alt": 0,
    "has_lang": true,
    "heading_level_jumps": 0,
-   "figcaptions": 15,
+   "figcaptions": 16,
    "interactive_elements_needing_focus": 0,
    "has_dark_mode": true,
    "inline_script_tags": 0
@@ -264,13 +276,13 @@
  "asset_references": [
   {
    "file": "visual/index.html",
-   "references": 14,
+   "references": 15,
    "missing": [],
    "remote": []
   },
   {
    "file": "visual/index.en.html",
-   "references": 14,
+   "references": 15,
    "missing": [],
    "remote": []
   },
