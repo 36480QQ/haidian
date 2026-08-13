@@ -43,6 +43,12 @@
       "status": "conceptual_siting_rule",
       "statement": "The 12 service nodes and 5 staffed fallback points are concept locations selected by endpoint, turning, staying, crossing, public-entry, heat/rain-risk and event-flow rules.",
       "impact": "They explain the Round 1 urban-design network and visual package; they are not existing facility inventories and must be surveyed before construction or operation."
+    },
+    {
+      "id": "A-FIELD-VERIFICATION-WORKFLOW-001",
+      "status": "verification_workflow_baseline",
+      "statement": "The V2 verification ledger is deterministically derived from the existing Noonline SLA route conditions and evidence gaps. Every generated task starts unknown and no AI actor may write observed, verified or rejected field-evidence states.",
+      "impact": "The ledger can explain why Verified SLA remains B, structure authorized human field verification and permit a subsequent SLA-A gate recheck only after all mandatory evidence is human-verified with verifier, timestamp and evidence reference. It is not evidence that any existing facility, path, shade, water point, seat, entry, crossing or staffed service has been observed."
     }
   ]
 }
