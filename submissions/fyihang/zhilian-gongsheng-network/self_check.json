@@ -20,6 +20,8 @@
       ],
       "changed_files": [
         "submissions/fyihang/zhilian-gongsheng-network/agent.json",
+        "submissions/fyihang/zhilian-gongsheng-network/assets/figures/ai-evidence-loop.en.svg",
+        "submissions/fyihang/zhilian-gongsheng-network/assets/figures/ai-evidence-loop.svg",
         "submissions/fyihang/zhilian-gongsheng-network/assets/figures/key-area-01.en.png",
         "submissions/fyihang/zhilian-gongsheng-network/assets/figures/key-area-01.png",
         "submissions/fyihang/zhilian-gongsheng-network/assets/figures/key-area-02.en.png",
@@ -64,6 +66,7 @@
         "submissions/fyihang/zhilian-gongsheng-network/self_check.json",
         "submissions/fyihang/zhilian-gongsheng-network/sources.json",
         "submissions/fyihang/zhilian-gongsheng-network/standard_matrix.json",
+        "submissions/fyihang/zhilian-gongsheng-network/visual/assets/ai_spatial_evaluation_matrix.json",
         "submissions/fyihang/zhilian-gongsheng-network/visual/assets/implementation_nodes.json",
         "submissions/fyihang/zhilian-gongsheng-network/visual/assets/implementation_register.json",
         "submissions/fyihang/zhilian-gongsheng-network/visual/assets/implementation_spatial_register.json",
@@ -75,7 +78,7 @@
       "ai_package_stages": {
         "submissions/fyihang/zhilian-gongsheng-network": "formal"
       },
-      "total_bytes": 12617204,
+      "total_bytes": 12635446,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -156,7 +159,7 @@
           "source": 4,
           "standard": 6,
           "depth": 15,
-          "data": 14,
+          "data": 15,
           "metric": 7
         }
       }
