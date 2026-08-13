@@ -167,6 +167,12 @@
    "pass": true
   },
   {
+   "sheet": "svg/steplink",
+   "min_font_units": 9.0,
+   "min_height_mm_at_A0": 4.73,
+   "pass": true
+  },
+  {
    "sheet": "svg/street-eye-level",
    "min_font_units": 9.0,
    "min_height_mm_at_A0": 4.73,
@@ -269,6 +275,12 @@
    "pass": true
   },
   {
+   "sheet": "svg.en/steplink",
+   "min_font_units": 9.0,
+   "min_height_mm_at_A0": 4.73,
+   "pass": true
+  },
+  {
    "sheet": "svg.en/street-eye-level",
    "min_font_units": 9.0,
    "min_height_mm_at_A0": 4.73,
@@ -277,21 +289,21 @@
  ],
  "offline_html": {
   "visual/index.html": {
-   "images": 17,
+   "images": 18,
    "images_without_alt": 0,
    "has_lang": true,
    "heading_level_jumps": 0,
-   "figcaptions": 18,
+   "figcaptions": 19,
    "interactive_elements_needing_focus": 0,
    "has_dark_mode": true,
    "inline_script_tags": 0
   },
   "visual/index.en.html": {
-   "images": 17,
+   "images": 18,
    "images_without_alt": 0,
    "has_lang": true,
    "heading_level_jumps": 0,
-   "figcaptions": 18,
+   "figcaptions": 19,
    "interactive_elements_needing_focus": 0,
    "has_dark_mode": true,
    "inline_script_tags": 0
@@ -300,13 +312,13 @@
  "asset_references": [
   {
    "file": "visual/index.html",
-   "references": 17,
+   "references": 18,
    "missing": [],
    "remote": []
   },
   {
    "file": "visual/index.en.html",
-   "references": 17,
+   "references": 18,
    "missing": [],
    "remote": []
   },
