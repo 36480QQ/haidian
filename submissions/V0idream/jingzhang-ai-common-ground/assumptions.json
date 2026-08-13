@@ -1,0 +1,61 @@
+{
+  "schema_version": "0.1.0",
+  "assumptions": [
+    {
+      "id": "A-BOUNDARY-001",
+      "status": "pending_official_data",
+      "statement": "总体设计范围和三处重点区采用仓库 provisional_rough polygon；它们不构成官方红线或精确面积依据。",
+      "statement_en": "The overall design area and three key areas use repository provisional_rough polygons; they are neither official boundaries nor precise-area evidence.",
+      "impact": "官方多边形发布后，全部几何、指标、图件、PDF、HTML和证据矩阵必须整体重算。"
+    },
+    {
+      "id": "A-KEY003-OFFSET-001",
+      "status": "open_upstream_issue",
+      "statement": "Issue #1029 记录 PROV-KEY-003 尚未锚定大钟寺站，当前不由参赛方自行平移。",
+      "statement_en": "Issue #1029 records that PROV-KEY-003 is not anchored to Dazhongsi Station; the participant does not move it independently.",
+      "impact": "大钟寺章节按公告任务提出方向，空间落位只作为占位概念，待官方边界统一修订。"
+    },
+    {
+      "id": "A-CONTROLS-001",
+      "status": "pending_professional_confirmation",
+      "statement": "容积率、建筑高度、建筑密度、绿地率、退线和四线等法定控制条件缺失。",
+      "statement_en": "Statutory controls including FAR, height, building coverage, green ratio, setbacks, and control lines are missing.",
+      "impact": "开发强度、体量和风貌均只提出方法与待核条件。"
+    },
+    {
+      "id": "A-BUILDING-001",
+      "status": "pending_survey_and_rights",
+      "statement": "现状建筑轮廓、年代、用途、结构安全和权属资料缺失。",
+      "statement_en": "Cleared data on existing footprints, age, use, structural safety, and ownership are missing.",
+      "impact": "建筑图层仅为适应性更新原型，不是具体拆改留结论。"
+    },
+    {
+      "id": "A-ROAD-001",
+      "status": "pending_official_transport_data",
+      "statement": "道路红线、断面、轨道出入口、市政管线和交通流量资料缺失。",
+      "statement_en": "Official road redlines, cross-sections, station entrances, utilities, and traffic counts are missing.",
+      "impact": "慢行与站城联系只表达概念连接关系，不构成工程线位。"
+    },
+    {
+      "id": "A-HERITAGE-001",
+      "status": "pending_heritage_control",
+      "statement": "京张铁路遗址、公园和相关文物保护范围及建设控制地带资料缺失。",
+      "statement_en": "Official heritage-protection and construction-control boundaries for the Jing-Zhang corridor are missing.",
+      "impact": "地标与活动采用可逆、低扰动方式，需文保专业复核。"
+    },
+    {
+      "id": "A-IMPLEMENTATION-001",
+      "status": "conceptual_sequence",
+      "statement": "分期表示决策顺序与依赖，不是已批准建设时序、资金安排或政府承诺。",
+      "statement_en": "Phasing expresses decision order and dependencies, not an approved schedule, funding plan, or government commitment.",
+      "impact": "每阶段须经权属、审批、安全、运营与公众程序复核。"
+    },
+    {
+      "id": "A-CASE-TRANSFER-001",
+      "status": "background_only",
+      "statement": "六个全球案例仅用于提炼机制，不能证明其可直接复制或支持本项目法定控制。",
+      "statement_en": "Six global cases are used only to extract mechanisms; they do not prove direct transferability or support statutory local controls.",
+      "impact": "所有转化建议必须通过本地试点、人工复核和专业深化。"
+    }
+  ]
+}

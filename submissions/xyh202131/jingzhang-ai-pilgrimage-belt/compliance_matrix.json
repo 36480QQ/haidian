@@ -770,9 +770,9 @@
         "geometry/key_areas.geojson",
         "geometry/public_space.geojson"
       ],
-        "evidence_files": [
-          "visual/assets/site-grounding-register.json",
-          "visual/assets/implementation-handoff-matrix.json"
+      "evidence_files": [
+        "visual/assets/site-grounding-register.json",
+        "visual/assets/implementation-handoff-matrix.json"
       ],
       "metrics": [
         "gateway_count",
@@ -813,14 +813,14 @@
         "三层范围工作框架",
         "统筹研究范围产业与未来城市研究"
       ],
-        "geojson_layers": [
-          "geometry/key_areas.geojson",
-          "geometry/constraints.geojson",
-          "geometry/land_use.geojson"
-        ],
-        "evidence_files": [
-          "visual/assets/implementation-handoff-matrix.json"
-        ],
+      "geojson_layers": [
+        "geometry/key_areas.geojson",
+        "geometry/constraints.geojson",
+        "geometry/land_use.geojson"
+      ],
+      "evidence_files": [
+        "visual/assets/implementation-handoff-matrix.json"
+      ],
       "metrics": [
         "ai_service_zone_count",
         "mapped_scenario_node_count",
@@ -866,10 +866,10 @@
         "visual/assets/pilot-readiness-register.json",
         "visual/assets/non-ai-parity-contract.json",
         "visual/assets/g1-preregistration-register.json",
-          "visual/assets/g0-offline-enterprise-service-baseline.json",
-          "visual/assets/t02-g0-g1-replay-fixtures.json",
-          "visual/assets/t02-g0-g1-replay-result.json",
-          "visual/assets/implementation-handoff-matrix.json"
+        "visual/assets/g0-offline-enterprise-service-baseline.json",
+        "visual/assets/t02-g0-g1-replay-fixtures.json",
+        "visual/assets/t02-g0-g1-replay-result.json",
+        "visual/assets/implementation-handoff-matrix.json"
       ],
       "metrics": [
         "scenario_count",
@@ -923,10 +923,15 @@
         "geometry/green_space.geojson",
         "geometry/constraints.geojson"
       ],
-        "evidence_files": [
-          "visual/assets/site-grounding-register.json",
-          "visual/assets/innovation-register.json",
-          "visual/assets/implementation-handoff-matrix.json"
+      "evidence_files": [
+        "visual/assets/site-grounding-register.json",
+        "visual/assets/innovation-register.json",
+        "visual/assets/implementation-handoff-matrix.json",
+        "visual/assets/ordinary-life-media-register.json",
+        "assets/media/ordinary-life-scenes.md",
+        "visual/assets/reversible-component-restoration-register.json",
+        "assets/figures/reversible-components.svg",
+        "assets/figures/reversible-components.en.svg"
       ],
       "metrics": [
         "public_space_node_count",
@@ -968,13 +973,13 @@
         "重点区域详细设计",
         "蓝绿空间、公共空间与城市风貌"
       ],
-        "geojson_layers": [
-          "geometry/public_space.geojson",
-          "geometry/constraints.geojson"
-        ],
-        "evidence_files": [
-          "visual/assets/implementation-handoff-matrix.json"
-        ],
+      "geojson_layers": [
+        "geometry/public_space.geojson",
+        "geometry/constraints.geojson"
+      ],
+      "evidence_files": [
+        "visual/assets/implementation-handoff-matrix.json"
+      ],
       "metrics": [
         "public_space_node_count",
         "mapped_scenario_node_count"
@@ -1015,10 +1020,10 @@
       "evidence_files": [
         "visual/assets/pilot-readiness-register.json",
         "visual/assets/site-grounding-register.json",
-          "visual/assets/g1-preregistration-register.json",
-          "visual/assets/g0-offline-enterprise-service-baseline.json",
-          "visual/assets/t02-g0-g1-replay-result.json",
-          "visual/assets/implementation-handoff-matrix.json"
+        "visual/assets/g1-preregistration-register.json",
+        "visual/assets/g0-offline-enterprise-service-baseline.json",
+        "visual/assets/t02-g0-g1-replay-result.json",
+        "visual/assets/implementation-handoff-matrix.json"
       ],
       "metrics": [
         "phase_count",
@@ -1058,5 +1063,16 @@
         "G0_T02_SYNTHETIC_REPLAY"
       ]
     }
-  ]
+  ],
+  "round_14_review_entry": {
+    "paths": [
+      "visual/review-walk.html",
+      "visual/review-walk.en.html",
+      "visual/assets/review-walkthrough.json"
+    ],
+    "presentation_only": true,
+    "remote_resources": 0,
+    "maturity_effect": "none",
+    "boundary": "G0; provisional; professional may revise/reject/delete; major gaps remain NO-GO"
+  }
 }

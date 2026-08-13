@@ -1,0 +1,995 @@
+{
+  "schema_version": "0.1.0",
+  "items": [
+    {
+      "item_id": "existing_conditions_diagnosis",
+      "title_zh": "现状诊断图与资料缺口",
+      "professional_dimension": "规划",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": [
+        "三层范围工作框架",
+        "总体设计范围城市更新与控规深度城市设计",
+        "重点区域详细设计",
+        "风险、版权与合规说明"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/buildings.geojson",
+        "geometry/roads.geojson",
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson",
+        "geometry/constraints.geojson",
+        "geometry/phasing.geojson",
+        "geometry/scenario_nodes.geojson"
+      ],
+      "metric_refs": [
+        "site_area_sqm",
+        "building_footprint_area_sqm",
+        "green_ratio",
+        "public_space_ratio",
+        "key_area_count",
+        "scenario_node_count",
+        "test_validation_scenario_count",
+        "landmark_count"
+      ],
+      "source_ids": [
+        "SITE-PACKAGE",
+        "SOURCE-REGISTRY",
+        "PROCESSED-FACT-PACK",
+        "OFFICIAL-ANNOUNCEMENT",
+        "AGENT-TASKBOOK",
+        "BOUNDARY-SOURCE",
+        "KEY-AREA-SOURCE"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-KEY003-OFFSET-001",
+        "A-CONTROLS-001",
+        "A-BUILDING-001",
+        "A-ROAD-001",
+        "A-HERITAGE-001",
+        "A-IMPLEMENTATION-001",
+        "A-CASE-TRANSFER-001"
+      ],
+      "self_check_ids": [
+        "BOUNDARY_TRUST",
+        "KEY_AREAS_TRUST",
+        "LAND_USE_TOPOLOGY",
+        "VISUAL_STATIC"
+      ],
+      "evidence_summary_zh": "existing_conditions_diagnosis 由京张译场的具体设计判断、双语图纸、GeoJSON、指标公式、风险假设和四门自检共同支撑；临时几何与资料缺口均未升级为正式结论。",
+      "evidence_summary_en": "existing_conditions_diagnosis is evidenced by design judgments, bilingual drawings, GeoJSON, metric formulas, risk assumptions, and four-gate checks without upgrading provisional data into formal claims."
+    },
+    {
+      "item_id": "three_level_scope_framework",
+      "title_zh": "三层范围工作框架",
+      "professional_dimension": "规划",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": [
+        "三层范围工作框架",
+        "总体设计范围城市更新与控规深度城市设计",
+        "重点区域详细设计",
+        "风险、版权与合规说明"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/buildings.geojson",
+        "geometry/roads.geojson",
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson",
+        "geometry/constraints.geojson",
+        "geometry/phasing.geojson",
+        "geometry/scenario_nodes.geojson"
+      ],
+      "metric_refs": [
+        "site_area_sqm",
+        "building_footprint_area_sqm",
+        "green_ratio",
+        "public_space_ratio",
+        "key_area_count",
+        "scenario_node_count",
+        "test_validation_scenario_count",
+        "landmark_count"
+      ],
+      "source_ids": [
+        "SITE-PACKAGE",
+        "SOURCE-REGISTRY",
+        "PROCESSED-FACT-PACK",
+        "OFFICIAL-ANNOUNCEMENT",
+        "AGENT-TASKBOOK",
+        "BOUNDARY-SOURCE",
+        "KEY-AREA-SOURCE"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-KEY003-OFFSET-001",
+        "A-CONTROLS-001",
+        "A-BUILDING-001",
+        "A-ROAD-001",
+        "A-HERITAGE-001",
+        "A-IMPLEMENTATION-001",
+        "A-CASE-TRANSFER-001"
+      ],
+      "self_check_ids": [
+        "BOUNDARY_TRUST",
+        "KEY_AREAS_TRUST",
+        "LAND_USE_TOPOLOGY",
+        "VISUAL_STATIC"
+      ],
+      "evidence_summary_zh": "three_level_scope_framework 由京张译场的具体设计判断、双语图纸、GeoJSON、指标公式、风险假设和四门自检共同支撑；临时几何与资料缺口均未升级为正式结论。",
+      "evidence_summary_en": "three_level_scope_framework is evidenced by design judgments, bilingual drawings, GeoJSON, metric formulas, risk assumptions, and four-gate checks without upgrading provisional data into formal claims."
+    },
+    {
+      "item_id": "overall_spatial_structure",
+      "title_zh": "总体空间结构",
+      "professional_dimension": "城市设计",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": [
+        "三层范围工作框架",
+        "总体设计范围城市更新与控规深度城市设计",
+        "重点区域详细设计",
+        "风险、版权与合规说明"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/buildings.geojson",
+        "geometry/roads.geojson",
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson",
+        "geometry/constraints.geojson",
+        "geometry/phasing.geojson",
+        "geometry/scenario_nodes.geojson"
+      ],
+      "metric_refs": [
+        "site_area_sqm",
+        "building_footprint_area_sqm",
+        "green_ratio",
+        "public_space_ratio",
+        "key_area_count",
+        "scenario_node_count",
+        "test_validation_scenario_count",
+        "landmark_count"
+      ],
+      "source_ids": [
+        "SITE-PACKAGE",
+        "SOURCE-REGISTRY",
+        "PROCESSED-FACT-PACK",
+        "OFFICIAL-ANNOUNCEMENT",
+        "AGENT-TASKBOOK",
+        "BOUNDARY-SOURCE",
+        "KEY-AREA-SOURCE"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-KEY003-OFFSET-001",
+        "A-CONTROLS-001",
+        "A-BUILDING-001",
+        "A-ROAD-001",
+        "A-HERITAGE-001",
+        "A-IMPLEMENTATION-001",
+        "A-CASE-TRANSFER-001"
+      ],
+      "self_check_ids": [
+        "BOUNDARY_TRUST",
+        "KEY_AREAS_TRUST",
+        "LAND_USE_TOPOLOGY",
+        "VISUAL_STATIC"
+      ],
+      "evidence_summary_zh": "overall_spatial_structure 由京张译场的具体设计判断、双语图纸、GeoJSON、指标公式、风险假设和四门自检共同支撑；临时几何与资料缺口均未升级为正式结论。",
+      "evidence_summary_en": "overall_spatial_structure is evidenced by design judgments, bilingual drawings, GeoJSON, metric formulas, risk assumptions, and four-gate checks without upgrading provisional data into formal claims."
+    },
+    {
+      "item_id": "land_use_layout",
+      "title_zh": "用地布局",
+      "professional_dimension": "规划",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": [
+        "三层范围工作框架",
+        "总体设计范围城市更新与控规深度城市设计",
+        "重点区域详细设计",
+        "风险、版权与合规说明"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/buildings.geojson",
+        "geometry/roads.geojson",
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson",
+        "geometry/constraints.geojson",
+        "geometry/phasing.geojson",
+        "geometry/scenario_nodes.geojson"
+      ],
+      "metric_refs": [
+        "site_area_sqm",
+        "building_footprint_area_sqm",
+        "green_ratio",
+        "public_space_ratio",
+        "key_area_count",
+        "scenario_node_count",
+        "test_validation_scenario_count",
+        "landmark_count"
+      ],
+      "source_ids": [
+        "SITE-PACKAGE",
+        "SOURCE-REGISTRY",
+        "PROCESSED-FACT-PACK",
+        "OFFICIAL-ANNOUNCEMENT",
+        "AGENT-TASKBOOK",
+        "BOUNDARY-SOURCE",
+        "KEY-AREA-SOURCE"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-KEY003-OFFSET-001",
+        "A-CONTROLS-001",
+        "A-BUILDING-001",
+        "A-ROAD-001",
+        "A-HERITAGE-001",
+        "A-IMPLEMENTATION-001",
+        "A-CASE-TRANSFER-001"
+      ],
+      "self_check_ids": [
+        "BOUNDARY_TRUST",
+        "KEY_AREAS_TRUST",
+        "LAND_USE_TOPOLOGY",
+        "VISUAL_STATIC"
+      ],
+      "evidence_summary_zh": "land_use_layout 由京张译场的具体设计判断、双语图纸、GeoJSON、指标公式、风险假设和四门自检共同支撑；临时几何与资料缺口均未升级为正式结论。",
+      "evidence_summary_en": "land_use_layout is evidenced by design judgments, bilingual drawings, GeoJSON, metric formulas, risk assumptions, and four-gate checks without upgrading provisional data into formal claims."
+    },
+    {
+      "item_id": "development_intensity_controls",
+      "title_zh": "开发强度或待确认控规条件",
+      "professional_dimension": "控规",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": [
+        "三层范围工作框架",
+        "总体设计范围城市更新与控规深度城市设计",
+        "重点区域详细设计",
+        "风险、版权与合规说明"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/buildings.geojson",
+        "geometry/roads.geojson",
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson",
+        "geometry/constraints.geojson",
+        "geometry/phasing.geojson",
+        "geometry/scenario_nodes.geojson"
+      ],
+      "metric_refs": [
+        "site_area_sqm",
+        "building_footprint_area_sqm",
+        "green_ratio",
+        "public_space_ratio",
+        "key_area_count",
+        "scenario_node_count",
+        "test_validation_scenario_count",
+        "landmark_count"
+      ],
+      "source_ids": [
+        "SITE-PACKAGE",
+        "SOURCE-REGISTRY",
+        "PROCESSED-FACT-PACK",
+        "OFFICIAL-ANNOUNCEMENT",
+        "AGENT-TASKBOOK",
+        "BOUNDARY-SOURCE",
+        "KEY-AREA-SOURCE"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-KEY003-OFFSET-001",
+        "A-CONTROLS-001",
+        "A-BUILDING-001",
+        "A-ROAD-001",
+        "A-HERITAGE-001",
+        "A-IMPLEMENTATION-001",
+        "A-CASE-TRANSFER-001"
+      ],
+      "self_check_ids": [
+        "BOUNDARY_TRUST",
+        "KEY_AREAS_TRUST",
+        "LAND_USE_TOPOLOGY",
+        "VISUAL_STATIC"
+      ],
+      "evidence_summary_zh": "development_intensity_controls 由京张译场的具体设计判断、双语图纸、GeoJSON、指标公式、风险假设和四门自检共同支撑；临时几何与资料缺口均未升级为正式结论。",
+      "evidence_summary_en": "development_intensity_controls is evidenced by design judgments, bilingual drawings, GeoJSON, metric formulas, risk assumptions, and four-gate checks without upgrading provisional data into formal claims."
+    },
+    {
+      "item_id": "height_massing_character",
+      "title_zh": "建筑高度、体量与风貌控制",
+      "professional_dimension": "建筑",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": [
+        "三层范围工作框架",
+        "总体设计范围城市更新与控规深度城市设计",
+        "重点区域详细设计",
+        "风险、版权与合规说明"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/buildings.geojson",
+        "geometry/roads.geojson",
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson",
+        "geometry/constraints.geojson",
+        "geometry/phasing.geojson",
+        "geometry/scenario_nodes.geojson"
+      ],
+      "metric_refs": [
+        "site_area_sqm",
+        "building_footprint_area_sqm",
+        "green_ratio",
+        "public_space_ratio",
+        "key_area_count",
+        "scenario_node_count",
+        "test_validation_scenario_count",
+        "landmark_count"
+      ],
+      "source_ids": [
+        "SITE-PACKAGE",
+        "SOURCE-REGISTRY",
+        "PROCESSED-FACT-PACK",
+        "OFFICIAL-ANNOUNCEMENT",
+        "AGENT-TASKBOOK",
+        "BOUNDARY-SOURCE",
+        "KEY-AREA-SOURCE"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-KEY003-OFFSET-001",
+        "A-CONTROLS-001",
+        "A-BUILDING-001",
+        "A-ROAD-001",
+        "A-HERITAGE-001",
+        "A-IMPLEMENTATION-001",
+        "A-CASE-TRANSFER-001"
+      ],
+      "self_check_ids": [
+        "BOUNDARY_TRUST",
+        "KEY_AREAS_TRUST",
+        "LAND_USE_TOPOLOGY",
+        "VISUAL_STATIC"
+      ],
+      "evidence_summary_zh": "height_massing_character 由京张译场的具体设计判断、双语图纸、GeoJSON、指标公式、风险假设和四门自检共同支撑；临时几何与资料缺口均未升级为正式结论。",
+      "evidence_summary_en": "height_massing_character is evidenced by design judgments, bilingual drawings, GeoJSON, metric formulas, risk assumptions, and four-gate checks without upgrading provisional data into formal claims."
+    },
+    {
+      "item_id": "retain_renovate_demolish",
+      "title_zh": "建筑拆改留分类",
+      "professional_dimension": "建筑",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": [
+        "三层范围工作框架",
+        "总体设计范围城市更新与控规深度城市设计",
+        "重点区域详细设计",
+        "风险、版权与合规说明"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/buildings.geojson",
+        "geometry/roads.geojson",
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson",
+        "geometry/constraints.geojson",
+        "geometry/phasing.geojson",
+        "geometry/scenario_nodes.geojson"
+      ],
+      "metric_refs": [
+        "site_area_sqm",
+        "building_footprint_area_sqm",
+        "green_ratio",
+        "public_space_ratio",
+        "key_area_count",
+        "scenario_node_count",
+        "test_validation_scenario_count",
+        "landmark_count"
+      ],
+      "source_ids": [
+        "SITE-PACKAGE",
+        "SOURCE-REGISTRY",
+        "PROCESSED-FACT-PACK",
+        "OFFICIAL-ANNOUNCEMENT",
+        "AGENT-TASKBOOK",
+        "BOUNDARY-SOURCE",
+        "KEY-AREA-SOURCE"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-KEY003-OFFSET-001",
+        "A-CONTROLS-001",
+        "A-BUILDING-001",
+        "A-ROAD-001",
+        "A-HERITAGE-001",
+        "A-IMPLEMENTATION-001",
+        "A-CASE-TRANSFER-001"
+      ],
+      "self_check_ids": [
+        "BOUNDARY_TRUST",
+        "KEY_AREAS_TRUST",
+        "LAND_USE_TOPOLOGY",
+        "VISUAL_STATIC"
+      ],
+      "evidence_summary_zh": "retain_renovate_demolish 由京张译场的具体设计判断、双语图纸、GeoJSON、指标公式、风险假设和四门自检共同支撑；临时几何与资料缺口均未升级为正式结论。",
+      "evidence_summary_en": "retain_renovate_demolish is evidenced by design judgments, bilingual drawings, GeoJSON, metric formulas, risk assumptions, and four-gate checks without upgrading provisional data into formal claims."
+    },
+    {
+      "item_id": "traffic_rail_slow_parking",
+      "title_zh": "道路、轨道、慢行与停车组织",
+      "professional_dimension": "交通",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": [
+        "三层范围工作框架",
+        "总体设计范围城市更新与控规深度城市设计",
+        "重点区域详细设计",
+        "风险、版权与合规说明"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/buildings.geojson",
+        "geometry/roads.geojson",
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson",
+        "geometry/constraints.geojson",
+        "geometry/phasing.geojson",
+        "geometry/scenario_nodes.geojson"
+      ],
+      "metric_refs": [
+        "site_area_sqm",
+        "building_footprint_area_sqm",
+        "green_ratio",
+        "public_space_ratio",
+        "key_area_count",
+        "scenario_node_count",
+        "test_validation_scenario_count",
+        "landmark_count"
+      ],
+      "source_ids": [
+        "SITE-PACKAGE",
+        "SOURCE-REGISTRY",
+        "PROCESSED-FACT-PACK",
+        "OFFICIAL-ANNOUNCEMENT",
+        "AGENT-TASKBOOK",
+        "BOUNDARY-SOURCE",
+        "KEY-AREA-SOURCE"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-KEY003-OFFSET-001",
+        "A-CONTROLS-001",
+        "A-BUILDING-001",
+        "A-ROAD-001",
+        "A-HERITAGE-001",
+        "A-IMPLEMENTATION-001",
+        "A-CASE-TRANSFER-001"
+      ],
+      "self_check_ids": [
+        "BOUNDARY_TRUST",
+        "KEY_AREAS_TRUST",
+        "LAND_USE_TOPOLOGY",
+        "VISUAL_STATIC"
+      ],
+      "evidence_summary_zh": "traffic_rail_slow_parking 由京张译场的具体设计判断、双语图纸、GeoJSON、指标公式、风险假设和四门自检共同支撑；临时几何与资料缺口均未升级为正式结论。",
+      "evidence_summary_en": "traffic_rail_slow_parking is evidenced by design judgments, bilingual drawings, GeoJSON, metric formulas, risk assumptions, and four-gate checks without upgrading provisional data into formal claims."
+    },
+    {
+      "item_id": "municipal_new_infrastructure",
+      "title_zh": "市政与新型基础设施策略",
+      "professional_dimension": "市政",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": [
+        "三层范围工作框架",
+        "总体设计范围城市更新与控规深度城市设计",
+        "重点区域详细设计",
+        "风险、版权与合规说明"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/buildings.geojson",
+        "geometry/roads.geojson",
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson",
+        "geometry/constraints.geojson",
+        "geometry/phasing.geojson",
+        "geometry/scenario_nodes.geojson"
+      ],
+      "metric_refs": [
+        "site_area_sqm",
+        "building_footprint_area_sqm",
+        "green_ratio",
+        "public_space_ratio",
+        "key_area_count",
+        "scenario_node_count",
+        "test_validation_scenario_count",
+        "landmark_count"
+      ],
+      "source_ids": [
+        "SITE-PACKAGE",
+        "SOURCE-REGISTRY",
+        "PROCESSED-FACT-PACK",
+        "OFFICIAL-ANNOUNCEMENT",
+        "AGENT-TASKBOOK",
+        "BOUNDARY-SOURCE",
+        "KEY-AREA-SOURCE"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-KEY003-OFFSET-001",
+        "A-CONTROLS-001",
+        "A-BUILDING-001",
+        "A-ROAD-001",
+        "A-HERITAGE-001",
+        "A-IMPLEMENTATION-001",
+        "A-CASE-TRANSFER-001"
+      ],
+      "self_check_ids": [
+        "BOUNDARY_TRUST",
+        "KEY_AREAS_TRUST",
+        "LAND_USE_TOPOLOGY",
+        "VISUAL_STATIC"
+      ],
+      "evidence_summary_zh": "municipal_new_infrastructure 由京张译场的具体设计判断、双语图纸、GeoJSON、指标公式、风险假设和四门自检共同支撑；临时几何与资料缺口均未升级为正式结论。",
+      "evidence_summary_en": "municipal_new_infrastructure is evidenced by design judgments, bilingual drawings, GeoJSON, metric formulas, risk assumptions, and four-gate checks without upgrading provisional data into formal claims."
+    },
+    {
+      "item_id": "blue_green_public_space",
+      "title_zh": "蓝绿系统与公共空间",
+      "professional_dimension": "景观",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": [
+        "三层范围工作框架",
+        "总体设计范围城市更新与控规深度城市设计",
+        "重点区域详细设计",
+        "风险、版权与合规说明"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/buildings.geojson",
+        "geometry/roads.geojson",
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson",
+        "geometry/constraints.geojson",
+        "geometry/phasing.geojson",
+        "geometry/scenario_nodes.geojson"
+      ],
+      "metric_refs": [
+        "site_area_sqm",
+        "building_footprint_area_sqm",
+        "green_ratio",
+        "public_space_ratio",
+        "key_area_count",
+        "scenario_node_count",
+        "test_validation_scenario_count",
+        "landmark_count"
+      ],
+      "source_ids": [
+        "SITE-PACKAGE",
+        "SOURCE-REGISTRY",
+        "PROCESSED-FACT-PACK",
+        "OFFICIAL-ANNOUNCEMENT",
+        "AGENT-TASKBOOK",
+        "BOUNDARY-SOURCE",
+        "KEY-AREA-SOURCE"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-KEY003-OFFSET-001",
+        "A-CONTROLS-001",
+        "A-BUILDING-001",
+        "A-ROAD-001",
+        "A-HERITAGE-001",
+        "A-IMPLEMENTATION-001",
+        "A-CASE-TRANSFER-001"
+      ],
+      "self_check_ids": [
+        "BOUNDARY_TRUST",
+        "KEY_AREAS_TRUST",
+        "LAND_USE_TOPOLOGY",
+        "VISUAL_STATIC"
+      ],
+      "evidence_summary_zh": "blue_green_public_space 由京张译场的具体设计判断、双语图纸、GeoJSON、指标公式、风险假设和四门自检共同支撑；临时几何与资料缺口均未升级为正式结论。",
+      "evidence_summary_en": "blue_green_public_space is evidenced by design judgments, bilingual drawings, GeoJSON, metric formulas, risk assumptions, and four-gate checks without upgrading provisional data into formal claims."
+    },
+    {
+      "item_id": "three_key_area_detailed_design",
+      "title_zh": "三大重点片区详细设计",
+      "professional_dimension": "城市设计",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": [
+        "三层范围工作框架",
+        "总体设计范围城市更新与控规深度城市设计",
+        "重点区域详细设计",
+        "风险、版权与合规说明"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/buildings.geojson",
+        "geometry/roads.geojson",
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson",
+        "geometry/constraints.geojson",
+        "geometry/phasing.geojson",
+        "geometry/scenario_nodes.geojson"
+      ],
+      "metric_refs": [
+        "site_area_sqm",
+        "building_footprint_area_sqm",
+        "green_ratio",
+        "public_space_ratio",
+        "key_area_count",
+        "scenario_node_count",
+        "test_validation_scenario_count",
+        "landmark_count"
+      ],
+      "source_ids": [
+        "SITE-PACKAGE",
+        "SOURCE-REGISTRY",
+        "PROCESSED-FACT-PACK",
+        "OFFICIAL-ANNOUNCEMENT",
+        "AGENT-TASKBOOK",
+        "BOUNDARY-SOURCE",
+        "KEY-AREA-SOURCE"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-KEY003-OFFSET-001",
+        "A-CONTROLS-001",
+        "A-BUILDING-001",
+        "A-ROAD-001",
+        "A-HERITAGE-001",
+        "A-IMPLEMENTATION-001",
+        "A-CASE-TRANSFER-001"
+      ],
+      "self_check_ids": [
+        "BOUNDARY_TRUST",
+        "KEY_AREAS_TRUST",
+        "LAND_USE_TOPOLOGY",
+        "VISUAL_STATIC"
+      ],
+      "evidence_summary_zh": "three_key_area_detailed_design 由京张译场的具体设计判断、双语图纸、GeoJSON、指标公式、风险假设和四门自检共同支撑；临时几何与资料缺口均未升级为正式结论。",
+      "evidence_summary_en": "three_key_area_detailed_design is evidenced by design judgments, bilingual drawings, GeoJSON, metric formulas, risk assumptions, and four-gate checks without upgrading provisional data into formal claims."
+    },
+    {
+      "item_id": "renewal_project_list",
+      "title_zh": "更新项目清单",
+      "professional_dimension": "实施",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": [
+        "三层范围工作框架",
+        "总体设计范围城市更新与控规深度城市设计",
+        "重点区域详细设计",
+        "风险、版权与合规说明"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/buildings.geojson",
+        "geometry/roads.geojson",
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson",
+        "geometry/constraints.geojson",
+        "geometry/phasing.geojson",
+        "geometry/scenario_nodes.geojson"
+      ],
+      "metric_refs": [
+        "site_area_sqm",
+        "building_footprint_area_sqm",
+        "green_ratio",
+        "public_space_ratio",
+        "key_area_count",
+        "scenario_node_count",
+        "test_validation_scenario_count",
+        "landmark_count"
+      ],
+      "source_ids": [
+        "SITE-PACKAGE",
+        "SOURCE-REGISTRY",
+        "PROCESSED-FACT-PACK",
+        "OFFICIAL-ANNOUNCEMENT",
+        "AGENT-TASKBOOK",
+        "BOUNDARY-SOURCE",
+        "KEY-AREA-SOURCE"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-KEY003-OFFSET-001",
+        "A-CONTROLS-001",
+        "A-BUILDING-001",
+        "A-ROAD-001",
+        "A-HERITAGE-001",
+        "A-IMPLEMENTATION-001",
+        "A-CASE-TRANSFER-001"
+      ],
+      "self_check_ids": [
+        "BOUNDARY_TRUST",
+        "KEY_AREAS_TRUST",
+        "LAND_USE_TOPOLOGY",
+        "VISUAL_STATIC"
+      ],
+      "evidence_summary_zh": "renewal_project_list 由京张译场的具体设计判断、双语图纸、GeoJSON、指标公式、风险假设和四门自检共同支撑；临时几何与资料缺口均未升级为正式结论。",
+      "evidence_summary_en": "renewal_project_list is evidenced by design judgments, bilingual drawings, GeoJSON, metric formulas, risk assumptions, and four-gate checks without upgrading provisional data into formal claims."
+    },
+    {
+      "item_id": "phasing_implementation",
+      "title_zh": "分期实施计划",
+      "professional_dimension": "实施",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": [
+        "三层范围工作框架",
+        "总体设计范围城市更新与控规深度城市设计",
+        "重点区域详细设计",
+        "风险、版权与合规说明"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/buildings.geojson",
+        "geometry/roads.geojson",
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson",
+        "geometry/constraints.geojson",
+        "geometry/phasing.geojson",
+        "geometry/scenario_nodes.geojson"
+      ],
+      "metric_refs": [
+        "site_area_sqm",
+        "building_footprint_area_sqm",
+        "green_ratio",
+        "public_space_ratio",
+        "key_area_count",
+        "scenario_node_count",
+        "test_validation_scenario_count",
+        "landmark_count"
+      ],
+      "source_ids": [
+        "SITE-PACKAGE",
+        "SOURCE-REGISTRY",
+        "PROCESSED-FACT-PACK",
+        "OFFICIAL-ANNOUNCEMENT",
+        "AGENT-TASKBOOK",
+        "BOUNDARY-SOURCE",
+        "KEY-AREA-SOURCE"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-KEY003-OFFSET-001",
+        "A-CONTROLS-001",
+        "A-BUILDING-001",
+        "A-ROAD-001",
+        "A-HERITAGE-001",
+        "A-IMPLEMENTATION-001",
+        "A-CASE-TRANSFER-001"
+      ],
+      "self_check_ids": [
+        "BOUNDARY_TRUST",
+        "KEY_AREAS_TRUST",
+        "LAND_USE_TOPOLOGY",
+        "VISUAL_STATIC"
+      ],
+      "evidence_summary_zh": "phasing_implementation 由京张译场的具体设计判断、双语图纸、GeoJSON、指标公式、风险假设和四门自检共同支撑；临时几何与资料缺口均未升级为正式结论。",
+      "evidence_summary_en": "phasing_implementation is evidenced by design judgments, bilingual drawings, GeoJSON, metric formulas, risk assumptions, and four-gate checks without upgrading provisional data into formal claims."
+    },
+    {
+      "item_id": "metrics_recalculation",
+      "title_zh": "指标复算",
+      "professional_dimension": "校核",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": [
+        "三层范围工作框架",
+        "总体设计范围城市更新与控规深度城市设计",
+        "重点区域详细设计",
+        "风险、版权与合规说明"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/buildings.geojson",
+        "geometry/roads.geojson",
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson",
+        "geometry/constraints.geojson",
+        "geometry/phasing.geojson",
+        "geometry/scenario_nodes.geojson"
+      ],
+      "metric_refs": [
+        "site_area_sqm",
+        "building_footprint_area_sqm",
+        "green_ratio",
+        "public_space_ratio",
+        "key_area_count",
+        "scenario_node_count",
+        "test_validation_scenario_count",
+        "landmark_count"
+      ],
+      "source_ids": [
+        "SITE-PACKAGE",
+        "SOURCE-REGISTRY",
+        "PROCESSED-FACT-PACK",
+        "OFFICIAL-ANNOUNCEMENT",
+        "AGENT-TASKBOOK",
+        "BOUNDARY-SOURCE",
+        "KEY-AREA-SOURCE"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-KEY003-OFFSET-001",
+        "A-CONTROLS-001",
+        "A-BUILDING-001",
+        "A-ROAD-001",
+        "A-HERITAGE-001",
+        "A-IMPLEMENTATION-001",
+        "A-CASE-TRANSFER-001"
+      ],
+      "self_check_ids": [
+        "BOUNDARY_TRUST",
+        "KEY_AREAS_TRUST",
+        "LAND_USE_TOPOLOGY",
+        "VISUAL_STATIC"
+      ],
+      "evidence_summary_zh": "metrics_recalculation 由京张译场的具体设计判断、双语图纸、GeoJSON、指标公式、风险假设和四门自检共同支撑；临时几何与资料缺口均未升级为正式结论。",
+      "evidence_summary_en": "metrics_recalculation is evidenced by design judgments, bilingual drawings, GeoJSON, metric formulas, risk assumptions, and four-gate checks without upgrading provisional data into formal claims."
+    },
+    {
+      "item_id": "risk_missing_data",
+      "title_zh": "风险与缺资料清单",
+      "professional_dimension": "合规",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": [
+        "三层范围工作框架",
+        "总体设计范围城市更新与控规深度城市设计",
+        "重点区域详细设计",
+        "风险、版权与合规说明"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/buildings.geojson",
+        "geometry/roads.geojson",
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson",
+        "geometry/constraints.geojson",
+        "geometry/phasing.geojson",
+        "geometry/scenario_nodes.geojson"
+      ],
+      "metric_refs": [
+        "site_area_sqm",
+        "building_footprint_area_sqm",
+        "green_ratio",
+        "public_space_ratio",
+        "key_area_count",
+        "scenario_node_count",
+        "test_validation_scenario_count",
+        "landmark_count"
+      ],
+      "source_ids": [
+        "SITE-PACKAGE",
+        "SOURCE-REGISTRY",
+        "PROCESSED-FACT-PACK",
+        "OFFICIAL-ANNOUNCEMENT",
+        "AGENT-TASKBOOK",
+        "BOUNDARY-SOURCE",
+        "KEY-AREA-SOURCE"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-KEY003-OFFSET-001",
+        "A-CONTROLS-001",
+        "A-BUILDING-001",
+        "A-ROAD-001",
+        "A-HERITAGE-001",
+        "A-IMPLEMENTATION-001",
+        "A-CASE-TRANSFER-001"
+      ],
+      "self_check_ids": [
+        "BOUNDARY_TRUST",
+        "KEY_AREAS_TRUST",
+        "LAND_USE_TOPOLOGY",
+        "VISUAL_STATIC"
+      ],
+      "evidence_summary_zh": "risk_missing_data 由京张译场的具体设计判断、双语图纸、GeoJSON、指标公式、风险假设和四门自检共同支撑；临时几何与资料缺口均未升级为正式结论。",
+      "evidence_summary_en": "risk_missing_data is evidenced by design judgments, bilingual drawings, GeoJSON, metric formulas, risk assumptions, and four-gate checks without upgrading provisional data into formal claims."
+    }
+  ]
+}

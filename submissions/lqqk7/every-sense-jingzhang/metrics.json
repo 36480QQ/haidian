@@ -232,6 +232,72 @@
         "recalculation_trigger": "revision of the scenario-node feature collection"
       }
     },
+    "ai_off_declared_network_length_m": {
+      "status": "known",
+      "value": 17322.014,
+      "unit": "m",
+      "source_files": ["geometry/roads.geojson"],
+      "formula": "sum(length(centreline)) over features whose design_role declares independence from AI, matched against the token list in visual/assets/seb-op04-chain-data.json (ai_off_edge_rule.declared_tokens)",
+      "confidence": "medium",
+      "assumptions": [
+        "Which centrelines remain usable once AI is off is read from each feature's own design_role declaration, not judged by the computing tool; two of the five submitted centrelines carry such a declaration.",
+        "Centrelines express relationships on provisional working geometry. The figure is not a built length, a right-of-way, a gradient-checked walking route, or an engineering quantity."
+      ],
+      "calculation_metadata": {
+        "method_source": "PACKAGE-SPATIAL-RECALCULATION-METHOD",
+        "projection": "EPSG:4548",
+        "verified_on": "2026-08-12",
+        "rounding": "0.001 m",
+        "responsible_role": "spatial-analysis professional",
+        "recalculation_trigger": "revision of any road centreline or of its design_role declaration",
+        "reproduction_command": "node seb-op04-chain-run.js (in visual/assets)"
+      }
+    },
+    "ai_off_network_component_count": {
+      "status": "known",
+      "value": 2,
+      "unit": "count",
+      "source_files": ["geometry/roads.geojson"],
+      "formula": "count(connected components) of the graph formed by AI-off declared centrelines, noded at their mutual intersections",
+      "confidence": "medium",
+      "assumptions": [
+        "A value above 1 means the routes declared equivalent once AI is off do not form a single connected network. Here the two declared lines run parallel north-south and their only connections are three cross links, none of which carries such a declaration.",
+        "The count describes the submitted conceptual geometry, not the existing street network, and may not be read as a statement about real-world connectivity in the area."
+      ],
+      "calculation_metadata": {
+        "method_source": "PACKAGE-SPATIAL-RECALCULATION-METHOD",
+        "projection": "EPSG:4548",
+        "verified_on": "2026-08-12",
+        "rounding": "integer count",
+        "responsible_role": "spatial-analysis professional",
+        "recalculation_trigger": "revision of any road centreline or of its design_role declaration",
+        "reproduction_command": "node seb-op04-chain-run.js (in visual/assets)"
+      }
+    },
+    "op04_ai_off_unreachable_same_area_node_count": {
+      "status": "known",
+      "value": 2,
+      "unit": "count",
+      "denominator_note": "Denominator is 2, the other scenario nodes inside the same provisional key area PROV-KEY-003, namely OP-08 and OP-09.",
+      "source_files": ["geometry/roads.geojson", "geometry/constraints.geojson"],
+      "formula": "count(nodes in the same key area with no finite shortest network trip from OP-04 on the AI-off edge set), denominator = count(other nodes in that key area)",
+      "confidence": "medium",
+      "assumptions": [
+        "Unreachable here means the submitted geometry holds no continuous route independent of AI between the two nodes; it is a property of the conceptual network, not a survey finding about the site.",
+        "Each node attaches to the network by a straight access stub assumed walkable. That assumption has been audited by nobody and is the largest source of uncertainty in this reading.",
+        "This is a spatial count. It is neither a reading for ai_off_service_equivalence_gap nor a substitute for one; that metric stays unknown and can only come from an ethically run paired test with real participants."
+      ],
+      "calculation_metadata": {
+        "method_source": "PACKAGE-SPATIAL-RECALCULATION-METHOD",
+        "projection": "EPSG:4548",
+        "verified_on": "2026-08-12",
+        "rounding": "integer count",
+        "responsible_role": "spatial-analysis professional",
+        "recalculation_trigger": "revision of any road centreline, of its design_role declaration, or of the node positions in that key area",
+        "reproduction_command": "node seb-op04-chain-run.js (in visual/assets)",
+        "change_receipt_id": "CR-2026-08-12-003"
+      }
+    },
     "work_package_count": {
       "status": "known",
       "value": 6,

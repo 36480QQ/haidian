@@ -4,9 +4,9 @@
  "note_en": "A register of this package's own errors. Not a changelog: a changelog says what changed, this says what was wrong, what shape the error had, who found it, and which commit fixed it. Every entry names a commit, and the build verifies that commit exists and touched the file blamed. An errata register that cannot be joined to the repository is the defect it records.",
  "why_zh": "全场 351 份方案中没有一份勘误、撤回或作者自述的复盘。一个主张城市应当公开自身误差的方案，不能自己呈现一个无瑕的表面：它提出的整套机制都建立在「看不见失败的测量不值得信任」之上，文档同理。",
  "counts": {
-  "total": 46,
+  "total": 49,
   "by_found_by": {
-   "audit": 20,
+   "audit": 23,
    "own-gate": 2,
    "external-reviewer": 4,
    "self": 20
@@ -14,7 +14,7 @@
   "by_shape": {
    "reference-does-not-resolve": 4,
    "number-outlived-the-sentence-holding-it": 4,
-   "two-copies-of-one-thing-drifted": 3,
+   "two-copies-of-one-thing-drifted": 4,
    "check-measured-the-convenient-thing": 11,
    "geometry-does-not-mean-what-it-says": 4,
    "term-of-art-misapplied": 1,
@@ -25,8 +25,9 @@
    "six-classes-for-a-seven-class-partition": 1,
    "the-table-stopped-being-a-table": 1,
    "index-that-does-not-index": 1,
-   "claim-outlived-the-corpus": 1,
-   "number-with-no-file-behind-it": 1
+   "attribution-to-a-file-that-refuses-it": 1,
+   "number-with-no-file-behind-it": 2,
+   "claim-outlived-the-corpus": 1
   }
  },
  "found_by_meaning_zh": {
@@ -473,6 +474,36 @@
    "what_zh": "图纸索引上方写「共十二张图纸，FIG.00–FIG.11 连续编号」，下方的表只有九行（FIG.01–FIG.09）。缺 FIG.00（全文开篇那张）、FIG.10（人视街道剖面）与 FIG.11（区域协同接口）——**而正文在 L531 按编号引用了 FIG.11**，把读者指向一个不含它的索引。同一处的复核清单则编号成 1…10、8、9，十二项用了十个号。",
    "why_zh": "两个语种带着同样的九行，所以这不是翻译疏漏，是**完整性声明写在表格上方那句话里、而不是由表格本身承担**。清单的编号是看得见的那个缺陷，危险的是另一个：清单上每一项都指名一个路径，一份把评审指向不存在文件的清单，比没有清单更糟。",
    "fix_zh": "两者都改为生成：索引由 `build_figure_index.py` 从随包 PNG 生成，句中的份数写自 `len(FIGURES)`，并断言每张随包图有编号、每个编号有文件、正文引用的每个 FIG.NN 都能解析到行；清单由 `enumerate` 编号，且十二项声明的 17 条路径必须全部在包内解析。"
+  },
+  {
+   "id": "E49",
+   "commit": "04458578",
+   "file": "sources.json",
+   "found_by": "audit",
+   "shape": "two-copies-of-one-thing-drifted",
+   "what_zh": "`BOUNDARY-SOURCE` 与 `KEY-AREA-SOURCE` 记为 `evidence_class: official_context`，而两条的 `source_type` 都是 `agent_inferred_from_public_data`；上游 `data/source_registry.json` 对同一份 geometry 记为 `review_status: provisional`、`usable_for_formal: provisional_only`、`authority_level: PROVISIONAL_REPOSITORY`，并把「精确面积计算」列入 prohibited_uses。另有 `MOHURD-ARCH-DESIGN-DEPTH-2016` 记为 `regulatory_baseline`，而它的 `retrieved_at` 是「未取得」。",
+   "why_zh": "**三份文件对同一个来源给出三种等级，其中两份评审会同时收到**——本包的 sources.json 与仓库的 source_registry 摘要。更难堪的是第三份：本包自己的 metrics.json 把全部边界派生指标都记为 `provisional`，也就是**同一个包在两个文件里对同一件事给了两个答案**，而且是本包上一轮刚建起证据上限机制之后。「一份没有被读过的文件充当法规基线」则是另一回事：它高估的不是来源，是本包的功课。",
+   "fix_zh": "两条边界来源降为 `provisional`，并写明上游登记 id 与降级理由；未取得的那份降为 `background_only`。`sources_qa` 新增一条规则：记录不得声称它自己其余字段排除掉的等级——`agent_inferred_*` 不能是 official_context 或 regulatory_baseline，`retrieved_at` 为「未取得」不能是 regulatory_baseline。两条都用重新植入原值自测过。"
+  },
+  {
+   "id": "E47",
+   "commit": "766eb216",
+   "file": "design_depth_matrix.json",
+   "found_by": "audit",
+   "shape": "attribution-to-a-file-that-refuses-it",
+   "what_zh": "三份矩阵的 44 条 evidence_summary_zh 里，有 22 条给它指名的每一条指标都缀上「（由 visual/assets/verify.js 独立重算）」。而 verify.js 只重算 metrics.json 标为 class 1 的 17 条，并在结构性结论第 16 条里断言**它不多算一条**。最糟的一处是 `floor_area_ratio（由 verify.js 独立重算）`——该指标 value 为 null、status 为 unknown，而 verify.js 里唯一提到它的地方，正是断言它**保持** unknown。",
+   "why_zh": "**一个 null 被描述成独立重算出来的数值，出现在一份以「可复算」为论点的包里，而评审手上握着抓出这一点所需要的每一个文件。** proposal.md 的核对清单第 1 条逐字引用了 verify.js 的覆盖范围断言，因此这条矛盾**只靠正文就能被发现**。这条不是数字过期，是**把一件别的文件明确拒绝做的事安在它头上**——这类声明在停止为真之后，还会长期显得合理。",
+   "fix_zh": "摘要不再统一缀那句话，改为按 `metric_class` 逐条如实归属：class 1 写「由 verify.js 独立重算」，class 2 写「须官方控规支撑，verify.js 断言的是它保持 unknown，不是它的取值」，包内自计数写「由构建从随包产物重算，不在 verify.js 覆盖范围内」。`matrix_refs_qa` 新增第 6 条规则：任何摘要都不得把「独立重算」安到非 class 1 的指标上；用重新植入 floor_area_ratio 那句做过自测。"
+  },
+  {
+   "id": "E48",
+   "commit": "766eb216",
+   "file": "proposal.md",
+   "found_by": "audit",
+   "shape": "number-with-no-file-behind-it",
+   "what_zh": "摘要 front matter 写「做了十二次可重跑普查」，而 `reading_log.json` 是 14 次，正文两处（第 74 行与第 220 行）也都写 14。",
+   "why_zh": "**这个数被手工改过一次**——它原来是「五次」，在建起读数日志的同一次提交里被改成「十二次」，然后下一次普查就又错了。而两行之外那句是生成的，一直是对的。**一个被手工改对过一次的数字，就是一个还会再错的数字。** 双语对等闸门看不见它（它比的是字数密度），普查闸门也看不见（「十二次」不在它跟踪的 14 项事实里）。",
+   "fix_zh": "做成 `build_live_numbers.py` 的第 11 个锚点槽位，从 `reading_log.json` 的 `reading_count` 取值并转成中文数字；锚点匹配不到或匹配到两次都会让构建失败。"
   },
   {
    "id": "E45",
