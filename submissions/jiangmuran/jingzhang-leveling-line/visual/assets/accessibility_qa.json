@@ -215,6 +215,12 @@
    "pass": true
   },
   {
+   "sheet": "svg/third",
+   "min_font_units": 9.0,
+   "min_height_mm_at_A0": 4.73,
+   "pass": true
+  },
+  {
    "sheet": "svg/visit",
    "min_font_units": 2.0,
    "min_height_mm_at_A0": 1.05,
@@ -383,6 +389,12 @@
    "pass": true
   },
   {
+   "sheet": "svg.en/third",
+   "min_font_units": 9.0,
+   "min_height_mm_at_A0": 4.73,
+   "pass": true
+  },
+  {
    "sheet": "svg.en/visit",
    "min_font_units": 9.0,
    "min_height_mm_at_A0": 4.73,
@@ -409,21 +421,21 @@
  ],
  "offline_html": {
   "visual/index.html": {
-   "images": 28,
+   "images": 29,
    "images_without_alt": 0,
    "has_lang": true,
    "heading_level_jumps": 0,
-   "figcaptions": 29,
+   "figcaptions": 30,
    "interactive_elements_needing_focus": 0,
    "has_dark_mode": true,
    "inline_script_tags": 0
   },
   "visual/index.en.html": {
-   "images": 28,
+   "images": 29,
    "images_without_alt": 0,
    "has_lang": true,
    "heading_level_jumps": 0,
-   "figcaptions": 29,
+   "figcaptions": 30,
    "interactive_elements_needing_focus": 0,
    "has_dark_mode": true,
    "inline_script_tags": 0
@@ -432,13 +444,13 @@
  "asset_references": [
   {
    "file": "visual/index.html",
-   "references": 28,
+   "references": 29,
    "missing": [],
    "remote": []
   },
   {
    "file": "visual/index.en.html",
-   "references": 28,
+   "references": 29,
    "missing": [],
    "remote": []
   },
