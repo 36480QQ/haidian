@@ -484,6 +484,33 @@
      ]
     ]
    }
+  },
+  {
+   "type": "Feature",
+   "id": "ROAD-018",
+   "properties": {
+    "id": "ROAD-018",
+    "layer": "ROAD_CENTERLINE",
+    "source_type": "agent_generated_design",
+    "confidence": "medium",
+    "geometry_role": "design_proposal",
+    "road_class": "local_access",
+    "name_zh": "众智园能源调度通道",
+    "length_m_declared": 832.79
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      116.3485,
+      40.0145
+     ],
+     [
+      116.3485,
+      40.022
+     ]
+    ]
+   }
   }
  ]
 }
