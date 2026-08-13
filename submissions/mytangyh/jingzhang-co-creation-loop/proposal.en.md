@@ -170,6 +170,41 @@ The proposal translates the connective spirit of the Jing-Zhang Railway into pub
 
 Near-term work focuses on wayfinding, open publishing, walking-breakpoint diagnosis, and public-service prototypes. Medium-term work coordinates the three key areas and blue-green public space. Long-term work develops communities, open scenarios, international communication, and professional refinement. Official planning, investment, ownership, approval, and municipal conditions remain pending.
 
+
+### Global references, ecosystem map and transfer limits
+
+The following cases are comparative references only. They do not mean that the local proposal has adopted the same programmes or has official approval: [source:GLOBAL-SINGAPORE-AI] [source:GLOBAL-BARCELONA-DECIDIM] [source:GLOBAL-HELSINKI-KALASATAMA] [source:GLOBAL-SEOUL-DIGITAL-TWIN] [source:GLOBAL-DUBAI-SMART-CITY]
+
+| Case | Transferable mechanism | Limit for this proposal |
+| --- | --- | --- |
+| Singapore National AI Strategy / Smart Nation | Government AI adoption, service delivery and AI literacy | Referenced as a service-and-capability model only; no equivalent national platform is claimed here |
+| Barcelona Decidim | Open-source participatory governance and proposal workflows | Translated into scenario open days and community feedback, not approval voting |
+| Helsinki Smart Kalasatama | Living lab, agile pilots and resident co-creation | Translated into a pilot-review-scale loop in public space |
+| Seoul Digital Twin Lab / S-Map | Spatial data, simulation and secure data zones | Translated into an authorized data sandbox and professional review, not access to non-public spatial data |
+| Dubai smart sustainable city services | Cross-department digital services and infrastructure applications | Translated into a service-integration checklist, not a promised government platform |
+
+The ecosystem map is organized around six interfaces: land and space, industry actors, funding and operations, talent communities, compute/data, and open scenarios. Zhongzhiyuan anchors model evaluation, open-source collaboration and safety governance. AI Origin Community anchors university transfer, talent life and near-campus services. Dazhongsi anchors international display, commercial services and data-governance salons. The two wings are advisory interfaces toward Future Science City/Huairou/Jing-Jin-Ji research-manufacturing links and Jingkai/regional AI application links. All cross-regional links require future confirmed entities, agreements and data authorization.
+
+### Concept identity and wayfinding limits
+
+This package does not submit an official logo or trademark. The concept identity only defines constraints for later professional work: Jing-Zhang rail orange `#c2410c`, Haidian civic-tech teal `#0f766e`, warning color for provisional boundaries, system Noto Sans CJK / sans-serif fonts, and symbols based on loop, three anchors, two wings and open nodes. It uses no third-party enterprise logos, portraits, base maps or unauthorized imagery. Any public release must go through rights clearance and maintainer or organizer confirmation.
+
+### Ten AI scenario cards: responsibility and KPIs
+
+| Scenario | Place | Data input | Human review | Responsibility boundary | KPI |
+| --- | --- | --- | --- | --- | --- |
+| Open-source hall | Zhongzhiyuan | Event agenda, model evaluation outputs | Host and technical reviewers | Only authorized materials are published | Event count, developer participation |
+| Safety-governance sandbox | Zhongzhiyuan | Authorized test data, risk list | Safety and compliance roles | Unauthorized data is excluded | Issue closure, false-positive review |
+| Edge-compute stop | AI Origin Community | Device status, aggregated energy data | Operators | No personal content collection | Uptime, energy anomaly response |
+| AI walking navigation | Jing-Zhang path | Public roads, manual survey, accessibility feedback | Field inspectors | Advice does not replace traffic management | Fewer gaps, accessibility complaint closure |
+| Dazhongsi roadshow lounge | Dazhongsi | Bookings and enterprise needs | Operator | No investment outcome is promised | Roadshows, leads |
+| Qinghe low-carbon corridor | Green/public space | Aggregated environment and flow indicators | Community representatives | No individual tracking | Satisfaction, thermal-comfort feedback |
+| Near-campus transfer street | AI Origin Community | University-enterprise needs, space bookings | University/enterprise contacts | Does not replace agreements | Matches, space utilization |
+| Data-governance salon | Dazhongsi | Authorized data catalogue, compliance tags | Data steward | No non-authorized data is opened | Compliant datasets |
+| AI daily-service street | Community service zone | Aggregated service requests | Human service window | Offline service remains | Fallback response time |
+| Global AI activity route | Three-anchor route | Event permits, safety plan | Event owner | No implementation without permits | Zero safety incident, participant coverage |
+
+
 ### Boundary statement
 
 SITE_BOUNDARY and KEY_AREA are provisional constraints. Their areas are machine-recalculated values from submitted geometry, not official redlines, statutory areas, or approval bases. When official polygons, controls, ownership, municipal, safety, heritage, and engineering data arrive, the agent must regenerate GeoJSON, metrics, drawings, HTML, translations, and manifest hashes.
