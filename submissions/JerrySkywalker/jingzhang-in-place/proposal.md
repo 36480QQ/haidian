@@ -8,7 +8,7 @@ translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以证据状态与条件更新行动组织京张既有城市，使三个不等片区在普通城市完整的前提下承载有限而实质的 AI 创新。"
 tracks: ["enterprise-services-ecosystem", "ai-traffic-walkability", "civic-agent-governance"]
-scenarios: ["bounded-validation", "public-side-project-room", "staffed-adoption-review"]
+scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
 
 <!-- FORMAL-BASELINE-V0.1: structurally real production baseline; not ready for formal review. -->
@@ -27,7 +27,7 @@ scenarios: ["bounded-validation", "public-side-project-room", "staffed-adoption-
 
 ## 设计依据与资料清单
 
-任务边界以公告、官方设计任务书和面向智能体任务书为准 [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK]。京张遗址公园、站点、水系、更新平台和院校开放状态只在公开来源支持的范围内使用 [source:PARK-PHASE1] [source:PARK-PHASE2] [source:DAZHONGSI-RENEWAL] [source:CAMPUS-ACCESS]。来源的发布者、日期、用途、限制和复用条件见 `sources.json`；不确定项见 `assumptions.json`。
+任务边界以公告、官方设计任务书和面向智能体任务书为准 [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK]。京张遗址公园的开放/工程状态只在一手来源支持的范围内使用 [source:PARK-PHASE1] [source:PARK-PHASE2]。大钟寺更新和校园开放状态另由各自来源约束 [source:DAZHONGSI-RENEWAL] [source:CAMPUS-ACCESS]。来源的发布者、日期、用途、限制和复用条件见 `sources.json`；不确定项见 `assumptions.json`。
 
 当前 `SITE_BOUNDARY` 与三处 `KEY_AREA` 均来自组织方仓库的临时粗略约束 [source:BOUNDARY-SOURCE]。它们仅用于概念生成、拓扑检查和可视化，`official_boundary=false`，不得解释为道路红线、地块、产权、控规、审批或精确工程条件。尤其临时大钟寺矩形与公开语境锚点存在距离警示 [assumption:A-GEOMETRY-002]。官方精确图形一旦发布，九类 GeoJSON、指标和全部图件必须整套复算。
 
@@ -46,6 +46,8 @@ scenarios: ["bounded-validation", "public-side-project-room", "staffed-adoption-
 ![状态—行动总体空间结构](assets/figures/land-use-structure.png)
 
 每个控制 patch 必须记录：`STATUS / SOURCE / CURRENT LIMIT / ACTION / TRIGGER / USERS / SECTION / RESPONSIBLE ROLE / STOP-GO / EXIT-REUSE`。状态本身不授权行动；例如“更新单元内存在低效建筑类型”不能推出某栋建筑低效或可拆。
+
+本三层框架逐级落实公告范围任务，并以临时总体边界和三个重点区对象维持机器可读关联 [source:OFFICIAL-ANNOUNCEMENT] [data:geometry/site_boundary.geojson#SITE-001] [metric:key_area_count]。
 
 ## 统筹研究范围产业与未来城市研究
 
@@ -73,6 +75,8 @@ scenarios: ["bounded-validation", "public-side-project-room", "staffed-adoption-
 | P-C1 已实施工程接口 | `BUILT_OPERATING` 或 `APPROVED_OR_IN_DELIVERY` | 各段开放/性能须逐项核实 | 先协调再补缺；不重复建设 | 所有公众、维护者；公园/水系/城市路/施工维护边界 | 既有项目责任方与城市管理专业方 | 与既有工程冲突即 STOP；临时构件可撤、原系统继续运行 |
 
 用地和建筑图层今晚只表达概念分区/原型，不能表达现状权属或可拆建筑。开发强度、高度、道路红线、停车、市政容量、地下空间和工程断面均标为待官方/专业确认。
+
+总体结构的图层落点分别是概念功能分区、公共联系、公共侧界面和调查优先的阶段范围 [data:geometry/land_use.geojson#LU-001] [data:geometry/roads.geojson#ROAD-001] [depth:overall_spatial_structure]。
 
 ## 重点区域详细设计
 
@@ -117,13 +121,17 @@ AI-off 时，公共路径、混合城市、更新、蓝绿、社区/工作房间
 | S11 | 活动容量与安静边界 | 帮助排期、噪光和退出管理 | 不做人脸识别；居民/管理者有停止权 |
 | S12 | 证据状态变更审阅 | 比较有来源/版本的更新选项 | 只作规划辅助，不能自动拆建或开校园 |
 
-`*` 为至少三项产业测试/验证场景。高深度 Task-to-Space 包分别记录任务、状态、TTL、最小资源、普通空间充足性、空间后果/NO-BUILD、人工/离线替代和退出复用。结构化卡片见 `scenarios.json`。
+`*` 为至少三项产业测试/验证场景。高深度 Task-to-Space 包分别记录任务、状态、TTL、最小资源、普通空间充足性、空间后果/NO-BUILD、人工/离线替代和退出复用。结构化卡片见 `simulation.json`。
+
+该场景架构回应任务书对场景、产业测试和用户画像的数量/治理要求，同时用结构化计数而非宣传语言自检 [source:AGENT-TASKBOOK] [metric:ai_scenario_count] [metric:industry_validation_scenario_count]。
 
 ## 用地、建筑规模与拆改留方案
 
 土地利用采用合法分类表达整体功能方向，但当前概念分区不是现状用地或法定调整。建筑调查矩阵包含用途、结构、消防、文保、无障碍、层深/采光、机电、产权/使用者、装卸/邻里、迁置与复用条件。未核实的建筑一律 `SURVEY REQUIRED`，不标低效、空置、可拆或可改。
 
 更新顺序为：保留已工作系统；修复已证明缺陷；在不破坏安全/权利时开放边缘；按真实断点细分/重连；最后才是适应性改造或填补。可逆构件必须在 AI 退出后恢复普通学习、工作、社区或专业服务。填补仅修复已证明的空间/功能缺口。现有居民、商户和工作人员的连续使用、咨询申诉、施工安排和收益分配进入每个项目 STOP/GO 门；不虚构租金和搬迁数量。
+
+土地分类和逐栋判断的边界分别受允许分类与调查缺口约束 [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [data:geometry/buildings.geojson#BLDG-001] [assumption:A-BUILDING-001]。
 
 ## 交通、轨道、市政与公共服务设施
 
@@ -134,6 +142,8 @@ AI-off 时，公共路径、混合城市、更新、蓝绿、社区/工作房间
 市政与新型基础设施采用“先容量证明、再最小建设”。电力、供热、给排水、地下空间、通信和算力容量未知 [assumption:A-INFRA-001]；任何设备测试或数据协作首先使用现有合格资源。确需新增时，由专业单位提供容量、消防、能耗、噪声、维护和退出方案。本方案不提出区域数据中心、余热网络或地下物流等未证实巨构。
 
 公共服务包含普通厕所、饮水/休息、照护转介、无障碍人工帮助、可负担学习/工作房间、食物与日常商业。数字系统故障时仍可通过固定导视、纸面/电话、值守人员和物理替代路线运行。
+
+交通建议只在概念公共联系与官方/运营事实的证据上限内表达 [data:geometry/roads.geojson#ROAD-001] [source:QINGHE-HUB] [assumption:A-ACCESS-001]。
 
 ## 蓝绿空间、公共空间与城市风貌
 
@@ -155,6 +165,8 @@ Living Systems Gate 对每个 patch 检查土壤/根域、排水、树冠、遮�
 
 责任角色包括公共管理/规划协调、产权与使用权主体、运营者、结构消防交通景观等专业方、社区/使用者代表、数据与 AI 责任人。责任角色不等于已承诺单位。每一阶段保留暂停、撤销和普通用途复用路径。
 
+阶段图层只用于表达 G0/G1 的调查与可撤试点门，不是批准项目范围 [data:geometry/phasing.geojson#PHASE-001] [depth:phasing_implementation]。
+
 ## 指标体系、面积复算与合规矩阵
 
 ![指标、证据状态与生产缺口](assets/figures/metrics-evidence.png)
@@ -163,12 +175,16 @@ Living Systems Gate 对每个 patch 检查土壤/根域、排水、树冠、遮�
 
 `compliance_matrix.json` 映射公告 1.3—1.5 与 agent.1—agent.6；`standard_matrix.json` 明确 mandatory 标准；`design_depth_matrix.json` 的未完成项保持 `in_progress`/`data_gap`，不把 v0.1 误报为完整专业深度。
 
+可复算的当前计数包括三个临时重点区、十二个场景和八类人物，但法定面积/强度仍受临时边界和调查缺口限制 [metric:key_area_count] [metric:ai_scenario_count] [assumption:A-GEOMETRY-001]。
+
 ## 风险、版权与合规说明
 
 核心风险是：证据—行动图退化为普通“保留/修复/开放/改造”色块；三片区退化成同模块 ×3；AI 退化为分析工具或租户标签；临时图形被误读为法定边界；更新侵害居民/商户连续性；实施依赖未知产权、巨额基础设施或普遍开放校园。对应控制分别是 patch 合同、三种断面、Task-to-Space 与 NO-BUILD、全图精度警示、公共利益 STOP 门和 survey-first 分期。
 
 所有文本、概念几何与本地生成图件由申报者指挥下的 AI/Codex 辅助生产；引用事实来自 `sources.json` 的公开来源。没有商业地图瓦片、远程字体、CDN、私有数据或未清权媒体进入包。Owner 负责候选方向、约束和决策；AI/Codex 承担研究、生成、工程实现和验证。未宣称未获证实的专业资质、官方背书或实施承诺。
 
+风险状态与专业深度缺口在假设、来源和矩阵中交叉记录，任何工具 PASS 都不得覆盖这些人工判断 [assumption:A-CONTROLS-001] [source:SOURCE-REGISTRY] [depth:risk_missing_data]。
+
 ## 参考资料
 
-正文只显示稳定 source id；完整标题、发布者、URL、日期、检索日期、权威性、空间范围、支持内容、不支持内容、复用条件和设计后果均在 `sources.json`。本基线仍为 `FORMAL-BASELINE-V0.1`，不是 ready-for-review，也未创建官方 PR。
+正文只显示稳定 source id；完整标题、发布者、URL、日期、检索日期、权威性、空间范围、支持内容、不支持内容、复用条件和设计后果均在 `sources.json`。第一组是官方竞赛合同与仓库输入，用于界定三层范围、Agent 任务和临时几何；第二组是规划、更新法规与进度记录，用于约束“先调查、后行动”和非拆除优先；第三组是公园、水系、站点、校园与更新平台的一手资料，用于区分已建、实施、受控与未知状态。它们只支持相应空间尺度的判断，不支持地块权属、建筑条件、工程容量、机构承诺或政府审批。本基线的引用索引从 [source:OFFICIAL-ANNOUNCEMENT] 和 [source:BOUNDARY-SOURCE] 开始，所有未知项必须回接 `assumptions.json`；当任何来源状态或官方几何改变时，相关图层、指标、图件与文本必须一起更新。本基线仍为 `FORMAL-BASELINE-V0.1`，不是 ready-for-review，也未创建官方 PR。

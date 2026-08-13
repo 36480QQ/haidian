@@ -1,4 +1,6 @@
-# Production notes
+# 方案迭代记录
+
+## v0.1 - 2026-08-13
 
 State: `FORMAL-BASELINE-V0.1 / NOT READY FOR REVIEW`  
 Working candidate: `京张续城 / Jing-Zhang In Place`  
@@ -9,7 +11,7 @@ The package is intentionally reversible. It uses the organizer's provisional geo
 ## Build
 
 ```powershell
-.\.venv\Scripts\python.exe submissions\JerrySkywalker\jingzhang-in-place\tools\build_baseline_artifacts.py
+# Run the pinned builder from the design-lab production-readiness workspace.
 .\.venv\Scripts\python.exe scripts\render_proposal_html.py submissions\JerrySkywalker\jingzhang-in-place
 .\.venv\Scripts\python.exe scripts\refresh_submission_manifest.py submissions\JerrySkywalker\jingzhang-in-place
 ```

@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1.0",
-  "status": "formal_baseline_v0.1",
+  "status": "formal_baseline_v0.1_scenario_architecture_not_simulated_result",
   "personas": [
     "residents_and_local_businesses",
     "children_and_caregivers",
@@ -12,6 +12,21 @@
     "visitors"
   ],
   "operating_conditions": ["weekday", "evening", "weekend", "heat_or_rain", "event", "facility_down", "digital_down"],
+  "task_count": 12,
+  "tasks": [
+    {"id":"S01","outcome":"not_run_baseline"},
+    {"id":"S02","outcome":"not_run_baseline"},
+    {"id":"S03","outcome":"not_run_baseline"},
+    {"id":"S04","outcome":"not_run_baseline"},
+    {"id":"S05","outcome":"not_run_baseline"},
+    {"id":"S06","outcome":"not_run_baseline"},
+    {"id":"S07","outcome":"not_run_baseline"},
+    {"id":"S08","outcome":"not_run_baseline"},
+    {"id":"S09","outcome":"not_run_baseline"},
+    {"id":"S10","outcome":"not_run_baseline"},
+    {"id":"S11","outcome":"not_run_baseline"},
+    {"id":"S12","outcome":"not_run_baseline"}
+  ],
   "scenarios": [
     {"id":"S01","title_zh":"有界模型/设备验证","title_en":"Bounded model/equipment validation","area":"north","industry_validation":true,"state":"SETUP-READY-RUNNING-SAFE-REVIEWED-RESET","ttl":"session","spatial_delta":"controlled test envelope, service/reset edge and supervised observation","ordinary_sufficiency":"planning, code review and simulation use ordinary rooms","human_offline":"qualified supervisor, emergency stop and manual inspection","privacy":"task authorization only; no public surveillance","stop":"stale authorization, unsafe state or public-route conflict","exit":"remove equipment and reuse as ordinary training/work"},
     {"id":"S02","title_zh":"真实环境鲁棒性验证","title_en":"Real-environment robustness validation","area":"north","industry_validation":true,"state":"AUTHORIZED-WEATHER_WINDOW-TEST-REVIEW-CLOSE","ttl":"test window","spatial_delta":"time-bounded buffer and weather/noise operating envelope in a verified carrier","ordinary_sufficiency":"non-physical testing has NO-BUILD outcome","human_offline":"manual weather/safety decision and shutdown","privacy":"no bystander identification","stop":"unverified carrier or environmental/public harm","exit":"remove temporary boundary and restore carrier"},

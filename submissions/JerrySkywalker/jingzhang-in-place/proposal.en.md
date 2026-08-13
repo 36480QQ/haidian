@@ -8,7 +8,7 @@ translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "An evidence-status and conditional-action framework that renews unequal existing fabrics while keeping the ordinary city complete and giving bounded AI tasks real spatial consequences."
 tracks: ["enterprise-services-ecosystem", "ai-traffic-walkability", "civic-agent-governance"]
-scenarios: ["bounded-validation", "public-side-project-room", "staffed-adoption-review"]
+scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
 
 <!-- FORMAL-BASELINE-V0.1: semantic-parity production baseline; not ready for formal review. -->
@@ -97,7 +97,7 @@ With AI off, public routes, mixed uses, renewal, blue-green systems, community/w
 
 Users include residents and businesses; children and carers; older and disabled people; students/researchers; start-ups and independent workers; enterprise/professional-service staff; maintenance/delivery workers; and visitors. Each is tested across weekday, evening, weekend, heat/rain, events, facility outage and digital outage.
 
-The twelve structured scenarios are: S01 bounded equipment/model validation; S02 real-world robustness validation; S03 safety evaluation with human review; S04 time-limited controlled project room; S05 open learning/model explanation; S06 talent/community service coordination; S07 staffed adoption/compliance review; S08 accessible interchange assistance; S09 park maintenance and post-rain inspection; S10 accessibility-facility status notice; S11 event capacity and quiet-boundary management; and S12 source/version-aware renewal-option review. S01–S03 are the three industry test/validation scenarios. Each card includes location, users, state, TTL, minimum resources, spatial delta, human/offline mode, privacy, stop and exit. See `scenarios.json`.
+The twelve structured scenarios are: S01 bounded equipment/model validation; S02 real-world robustness validation; S03 safety evaluation with human review; S04 time-limited controlled project room; S05 open learning/model explanation; S06 talent/community service coordination; S07 staffed adoption/compliance review; S08 accessible interchange assistance; S09 park maintenance and post-rain inspection; S10 accessibility-facility status notice; S11 event capacity and quiet-boundary management; and S12 source/version-aware renewal-option review. S01–S03 are the three industry test/validation scenarios. Each card includes location, users, state, TTL, minimum resources, spatial delta, human/offline mode, privacy, stop and exit. See `simulation.json`.
 
 ## Land use, buildings and renewal
 
