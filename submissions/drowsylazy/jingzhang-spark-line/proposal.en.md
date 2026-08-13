@@ -87,6 +87,29 @@ Unlike same-theme entries that focus on a single mechanism (clock-sync, heat reu
 
 The planning method insists on "human-AI co-creation with professional final judgment": AI is responsible for reproduction, recalculation and alternative generation, while statutory conclusions are confirmed by professional teams and government authorities [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]; every "spark" landmark and operation mechanism is labelled as a concept suggestion for professional teams to deepen, not approved construction or a settled arrangement [depth:risk_missing_data].
 
+To move "original" and "verifiable" into mechanisms, the proposal translates its core concepts into four reviewable AI-native design mechanisms. Each mechanism states its spatial carrier, operating logic, human-in-the-loop boundary and verification method, so reviewers can judge validity without relying on narrative:
+
+| Original mechanism | Spatial carrier | Operating logic | Human boundary & verification |
+| --- | --- | --- | --- |
+| Spark-Line "three axes in one" | Jing-Zhang Heritage Park green axis | History, slow-mobility and innovation-scenario axes compound in one linear public space | Stitching, accessibility and peak flows verified by traffic simulation; concept-level, not a statutory green line |
+| FOUNDRY-SEED-MARKET full-stack chain | Three zones laid out north-to-south | "Basic research → incubation → capital/scenario" spatialized along the innovation chain | Zone extents are provisional_constraint; inter-zone capacity calibrated by industry and transport studies |
+| "Ignite-Nurture-Spread" node network | Ignition Plaza, Spark Origin Plaza, Spread Plaza | Three public scenarios map to outcome launching, spark memory, and milestone display | Venue capacity and evacuation verified by operation and fire-safety studies |
+| Two-wing INPUT-OUTPUT loop | Zhongguancun service wing / Xiaoyue River scenario wing | Spatial closed loop of factor input and scenario output | Cross-zone effectiveness assessed by scenario launch rate and factor concentration |
+
+All mechanisms keep a "reversible and deepenable" boundary: any of them can be adopted, adjusted or vetoed separately by professional review, and none is bound as a settled plan [depth:overall_spatial_structure] [depth:three_key_area_detailed_design].
+
+**Original-concept identification table.** To make the "originality" boundary auditable rather than rhetorical, each original concept carries its naming source, distinctive point, difference from same-theme entries, and a reviewable delivery item:
+
+| Original concept | Naming source | Distinctive point | Difference from same-theme entries | Reviewable delivery item |
+| --- | --- | --- | --- | --- |
+| JING-ZHANG SPARK LINE | The Jing-Zhang Railway's "spark of self-driven innovation" | "From one spark to a prairie fire" threads spatial and cultural lines together | Chooses a complete innovation chain as the single thread rather than a single mechanism motif | Three-zone two-wing structure + cultural narrative |
+| FOUNDRY-SEED-MARKET chain | An industrial-image group of nozzle/seed/market | The whole journey "basic research → incubation → capital/scenario" spatialized | Maps the full-stack chain rather than strengthening a single zone | Three key-area designs + scenario cards |
+| Spark-Line "three axes in one" | The composite value of the heritage-park green axis itself | History, slow mobility and innovation scenarios share one axis | Both memory and innovation are carried by the same spine | Slow-mobility stitching + blue-green public space |
+| INPUT/OUTPUT two wings | The loop of factor input and scenario output | Zhongguancun and Xiaoyue River form a functional dual | Makes the two wings a design-governance closed loop | Scenario launch rate and factor concentration evaluation |
+| Citizen compact of sparks | The "spark" meaning made public | Four rights of knowledge, participation, appeal and exit for AI public services | Turns digital inclusion from soft promise into a rights item | All-age and digital-inclusion floors + risk register |
+
+The table lets reviewers trace each original concept along "naming source → distinctive point → difference → delivery item", and question or veto any concept separately without being bound by package-level naming monopsony [depth:overall_spatial_structure] [depth:three_key_area_detailed_design].
+
 ### AI-Era Industry and Employment Study (data-supported chapter)
 
 This proposal uses authoritative 2025 and 2026H1 public data to argue AI-era industry development, employment creation and life scenarios. All data is registered in `sources.json` with institution/URL/year/access date and cited in prose via `[source:...]` [source:CNNIC-LATEST]:
@@ -114,6 +137,19 @@ The overall design area requires regulatory-detailed-planning urban-design depth
 **Urban renewal framework.** A four-dimensional screen (land-use efficiency - building age - ownership complexity - rail-station accessibility) identifies renewal objects, distinguishing retain / renovate / renew / new-build; this package gives no parcel-level demolition/renovation conclusions [depth:retain_renovate_demolish]. Building scale and intensity: `geometry/buildings.geojson` expresses concept-level footprints [data:geometry/buildings.geojson#BLDG-001] [metric:building_footprint_area_sqm]; FAR, height, density, setbacks and road redlines are recorded as `status=unknown` until official regulatory conditions arrive, with recalculation paths in `assumptions.json` [depth:development_intensity_controls].
 
 **Integrated-capacity assessment.** An evaluation framework for rail passenger flow, public-service radius, municipal load and slow-mobility capacity is proposed [depth:municipal_new_infrastructure]. Missing utility, energy, drainage, flood and fire engineering data are listed as formal deepening prerequisites; new infrastructure is framed around distributed energy, edge compute and smart public facilities.
+
+**Role chain of AI across the full urban-planning workflow.** To show that "AI is a planning method, not a drawing tool", the proposal organizes AI participation in urban planning as a six-step closed loop from data to monitoring, with the AI responsibility and human/professional checkpoints stated for each step [depth:metrics_recalculation]:
+
+| Step | AI responsibility (concept) | Human / professional checkpoint |
+| --- | --- | --- |
+| Data registration | Auto-collect, normalize, deduplicate and register public data | Source credibility and usage boundary confirmed by humans |
+| Problem identification | Identify site bottlenecks and opportunities from facts and data | Cross-checked with professional intuition to avoid misreading |
+| Alternative generation | Generate multiple spatial/metric alternatives with rationale | Professional team compares to form a recommendation |
+| Simulation and evaluation | Quick recalculation and capacity/accessibility checks | Statutory conclusions still decided by professionals and government |
+| Scheme expression | Generate drawings and visualizations with traceable evidence | Charts never supersede the authoritative GeoJSON/metrics layer |
+| Monitoring and re-check | Auto-recalculate when official data arrives, trigger deepening | Execute "rebuild topology - verify per building - specialist review" |
+
+The loop responds to the "AI and urban-planning innovation" dimension and turns "human-AI co-creation with professional final judgment" into a reviewable process; AI output at any step can be independently reproduced or vetoed by professional teams [depth:metrics_recalculation] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
 
 ## Key Areas: Detailed Design
 
@@ -163,6 +199,37 @@ At least 10 scenario cards are provided, including 3 industry test/validation sc
 
 These scenarios anchor to specific layers: public-space scenarios cite [data:geometry/public_space.geojson#PUBLIC-001], mobility scenarios cite [data:geometry/roads.geojson#ROAD-001], open-space scenarios cite [data:geometry/green_space.geojson#GREEN-001]. The three industry test/validation scenarios (low-speed autonomous driving test corridor, open-source model evaluation field, AI instant-retail/logistics delivery test belt) all follow the "limited range, low speed supervised, human takeover" boundary.
 
+**All-age and digital-inclusion design floors.** So that "intelligence-native" excludes no group, the proposal makes digital inclusion a mandatory gate for every scenario card rather than an option. Four floors are specified [source:BARRIER-FREE-LAW]:
+
+- **Non-algorithm consumption channels**: instant retail, mobility wayfinding and roadshow booking are all reachable through human counters, telephone and physical signage; anyone can get equivalent service without a phone or app [depth:blue_green_public_space];
+- **Low digital-literacy friendly**: public-space interactive devices offer large-print, voice and human-assistance modes, and complex operations never appear on mandatory routes;
+- **All-age accessible**: gap stitching and crossing-node schemes include wheelchair, pram and senior walking-circle checks; spark landmarks provide tactile and audible guidance [source:BARRIER-FREE-LAW];
+- **High-sensitivity-person protection**: any scenario requiring facial or behavioural recognition is "informed first, avoidable, with a non-recognition alternative path", and physical exclusion zones are set for children and high-sensitivity groups [depth:risk_missing_data].
+
+These floors enter the verification methods of renewal projects and scenario cards as common acceptance items, making them an auditable public-interest commitment rather than a stand-in for statutory accessibility standards [depth:renewal_project_list].
+
+**Spark-Line AI public-service assurance mechanism (disclosure - participation - fallback).** To make AI public services both transparent and inclusive, the proposal establishes three assurance mechanisms based on current statutory systems, as default preconditions for all AI scenarios [source:PIPL] [source:GENERATIVE-AI-MEASURES]:
+
+| Assurance mechanism | Statutory anchor (current law/norm) | Implemented content (concept) | Spatial and governance delivery |
+| --- | --- | --- | --- |
+| Information disclosure and notice | PIPL notice rules; Interim Measures on Generative-AI Service Management labelling duties | State the purpose and impact when a service uses AI; explain complex decisions | Scenario-card "data source & governance boundary" column mandatory; observable signage |
+| Participation and public notice | Regulatory-planning publicity and hearing under the Urban and Rural Planning Law; Barrier-Free Environment Law | Publish schemes and collect opinions; set public-collection stages for scenario choice, test scope and acceptance criteria | Planning publicity, scenario open days, Spark Open Week, regular public testing [source:PLA] |
+| Fallback and feedback | Beijing 12345 hotline, "immediate response" (Jiesuji); government-service "good/bad reviews" | Complaints about AI services get human review; no forced use; human and non-algorithm alternative channels provided | Human service desks, complaint and feedback entries, non-algorithm channels, identification-avoidance zones [source:BARRIER-FREE-LAW] |
+
+The three mechanisms do not replace statutory remedies but turn "transparency, participation and fallback" into measurable scenario-acceptance conditions: any scenario card that cannot satisfy all three at once may not advance to the next deepening stage [depth:blue_green_public_space] [depth:renewal_project_list].
+
+**Spark-Line MCP service collection (concept direction).** To let the public scenarios above be accessed uniformly by people, enterprises and future agents, the proposal offers a "Spark-Line MCP service collection" as a concept for the service-access layer. MCP refers to open model-context protocols (a family of open access standards for tools/data/services) [source:MCP-STANDARD]; the proposal borrows the "unified protocolized service interface" idea to compose a set of city public-service interfaces. Everything is stated as a concept suggestion - no particular built system or vendor dependency is promised [source:AGENT-TASKBOOK] [depth:municipal_new_infrastructure]:
+
+| Service interface (concept) | Related public scenario | Unified access content | Use and governance boundary |
+| --- | --- | --- | --- |
+| Livelihood-services interface | AI instant retail, health station, life services | Query and booking of nearby instant retail / life services | Order data anonymized-aggregated; human counters and non-algorithm channels kept |
+| Mobility-and-space interface | AI slow-mobility navigation, slow gaps, public space | Slow-path query, accessibility info, opening hours | Gap data requires human review; privacy minimized |
+| Launch-and-roadshow interface | Open-source launch hall, international roadshow lounge, outcome-transformation street | Roadshow/launch schedule query and booking | Business data confidential; corporate cases require clearance |
+| Test-and-evaluation interface | Safety-governance sandbox, open-source model evaluation field | Controlled test and evaluation application, result release | Authorization and audit required; test data controlled |
+| Event-and-feedback interface | Spark Open Week, activity route, complaints | Event registration, route guidance, opinion and complaint submission | Activity data aggregated; Jiesuji (immediate-response) channel merged into feedback |
+
+The collection upgrades "scenario cards" from one-time displays into continuously accessible service interfaces, letting residents, enterprises and agents use public services over one common specification; no interface waives the existing assurance mechanisms (disclosure - participation - fallback) or the four governance defence lines [depth:municipal_new_infrastructure] [depth:risk_missing_data]. Interface design, permission model, security and data-compliance approaches must be deepened by professional teams and licensed before implementation; the proposal claims no completed system integration or other commitment [source:AGENT-TASKBOOK].
+
 ## Land Use, Building Scale, and Retain / Renovate / Demolish
 
 Land use follows the Guidelines for Classification of Land for National Territorial-Spatial Survey, Planning and Use Control, complete, closed and gapless [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]. `geometry/land_use.geojson` divides the overall design area into research, education, culture, commercial, residential, local-service, park green, protective green and reserve parcels - 18 zones covering the full submitted boundary without overlap [data:geometry/land_use.geojson#LU-001]. Green and public-space ratios support innovation exchange and ecological quality [metric:green_ratio].
@@ -202,6 +269,18 @@ The proposal forms an auditable renewal project list [depth:renewal_project_list
 
 Phasing proposes near-term pilots, mid-term renewal and long-term governance [depth:phasing_implementation]: near-term (P1) starts with a Spark-Line pilot segment and lightweight operation facilities; mid-term (P2) advances Dazhongsi-Origin synergy renewal; long-term (P3) implements the Zhongzhiyuan self-driven innovation governance framework. For task 06, the proposal designs a "Spark Open Week" annual event system, scenario open days, developer-community operation, international communication and acquisition-conversion mechanism, all expressed as concept suggestions or deepening directions, never as confirmed government arrangements; concrete bodies, budgets and schedules must be finalized by professional teams and government review [source:AGENT-TASKBOOK].
 
+**Implementation governance and stakeholder framework (concept).** To give the eight renewal projects actionable governance handles, the proposal provides an initial mapping of stakeholders and decision links. All roles are concept suggestions for later governance study:
+
+| Stage | Main stakeholders | Concept responsibility | Decision & prerequisites |
+| --- | --- | --- | --- |
+| Zhongzhiyuan accelerators | Science City council, park operator, AI startups | Carrier supply, evaluation admittance, compute & energy | Ownership consolidation, compute study, energy assessment |
+| Origin shared labs | University consortium, research management, campuses | Equipment onboarding, outcome transfer, talent services | Campus boundaries, data-compliance agreements |
+| Dazhongsi roadshow & market | Rail company, operator, international host | Station-city integration, venue operation, clearance | Station works, event safety, copyright clearance |
+| Spark-Line public life | Street office, transport, heritage, community | Gap stitching, accessibility, digital-inclusion floors | Road redlines, heritage review, resident participation |
+| Long-term governance & operation | Government review, professional teams, dev community | Final decision, list re-verification, continuous monitoring | Every renewal project closed-loop checked by "implementing body + verification method" [depth:renewal_project_list] [depth:phasing_implementation] |
+
+The mechanism stresses a three-way division of "AI proposes, professionals argue, government decides": this package provides complete evidence and alternatives without replacing statutory decisions; every renewal project can be traced back to its implementing body and service targets, forming an auditable delivery chain.
+
 ## Indicator System, Area Recalculation and Compliance
 
 The indicator system covers overall-design-area area, key-area area, green and public-space ratios, building footprint, renewal-project count, AI scenario nodes, mobility connectivity, industry space and talent-service indicators [depth:metrics_recalculation]. All known indicators are recomputed from submitted geometry in EPSG:4548 in `metrics.json`; unknown indicators state their reason and formal-submission prerequisites.
@@ -224,6 +303,29 @@ This proposal provides complete bilingual deliverables, with `proposal.md` as th
 
 This proposal does not claim official approval, approved regulatory planning, final land ownership, final building scale or guaranteed implementation. The AI agent is responsible for facts, sources, copyright, spatial data, indicators and expression. Data such as the 5-million AI talent gap is an industry estimate, marked low-confidence in `sources.json` and cited at reduced level.
 
+**Explicit unmitigated-risk register.** To avoid "blank-slate-as-disclaimer" wording, the proposal lists the core risks that remain unmitigated and require professional and official intervention, with accountability direction [depth:risk_missing_data]:
+
+| Unmitigated risk | Current status | Trigger / responsible engine | Mitigation path |
+| --- | --- | --- | --- |
+| Official boundary and controls unpublished | All areas/metrics provisional | Official polygons released | Recompute in EPSG:4548 and rebuild topology |
+| Existing buildings and ownership missing | No demolition/renovation conclusion | Building survey and ownership data arrive | Review by "retain-renovate-renew-new build" |
+| Rail/municipal engineering conditions unknown | Concept networks and interfaces pending | Specialist engineering reports | Rail interface, utility, flood and fire specialties |
+| Compute and energy load assumptions | Edge/distributed energy are concept directions | Energy and network study | Revise against measured load |
+| Data compliance and clearance duties | All scenarios carry governance boundaries | Clearance before scenario start | Clear copyright/portrait/privacy item by item [depth:risk_missing_data] [source:SOURCE-REGISTRY] |
+
+This register lets review and later deepening close out items one by one, avoiding unproven claims being treated as settled facts.
+
+**Four defence lines of AI governance.** As a positive construction of the risk-compliance dimension, the proposal puts four governance defence lines across all AI scenarios, each with its carrier and implementation conditions [depth:risk_missing_data] [source:GENERATIVE-AI-MEASURES]:
+
+| Defence line | Requirement (concept) | Spatial/governance carrier | Implementation prerequisites |
+| --- | --- | --- | --- |
+| Data compliance | Data collection and use need disclosure, authorization and auditability | Data-element salon, data-compliance agreement templates | Data-source registration, permission tiers, audit logs |
+| Explainability | AI behaviour and decisions can be understood by non-expert users | Explainable wayfinding in paths like AI slow-mobility navigation | Explanation-layer design, plain-language terminology |
+| Human takeover | Humans can take over at any time in complex or risky scenarios | Operations/safety desks, human service counters | Duty staffing, takeover plans and drills |
+| Accountability | Every AI service has a clear responsible body | Scenario-card responsible-party statement, decision links | Service registration, responsibility matrix, review mechanism |
+
+The four lines are consistent with the spirit of current governance requirements such as the Interim Measures on Generatorative Artificial-Intelligence Service Management, but are expressed as concept suggestions; no line waives legal obligations or replaces regulatory approval [source:GENERATIVE-AI-MEASURES] [depth:risk_missing_data].
+
 ## References
 
 - Qualification Pre-Announcement for the Centennial Jing-Zhang AI Innovation Belt International Urban Design Open Call (Haidian BPNR, 2026-05-09)
@@ -241,6 +343,11 @@ This proposal does not claim official approval, approved regulatory planning, fi
 - Dida Chuxing, 2025 Carpool Commute Observation Report (Langfang-Beijing cross-city commute)
 - Xinhua × Meituan Research Institute, 2025 Life-Service Consumption Trend Insight (Beijing top-10 young-people cities)
 - Meituan Research Institute, 2024 China Night-Economy Development Report (Beijing night-time dining #2)
+- Law of the People's Republic of China on Building an Accessible Environment (entered into force 2023-09-01; official public text) [source:BARRIER-FREE-LAW]
+- Interim Measures on Generative Artificial-Intelligence Service Management (CAC and six other bodies; entered into force 2023-08-15; official public text) [source:GENERATIVE-AI-MEASURES]
+- Personal Information Protection Law of the People's Republic of China (in force since 2021-11-01; official public text) [source:PIPL]
+- Urban and Rural Planning Law of the People's Republic of China (2019 amendment; official public text; publicity-hearing procedure) [source:PLA]
+- Model Context Protocol public specification (open tool/service-integration standard led by Anthropic; official specification site, public) [source:MCP-STANDARD]
 - Urban Design Management Measures; Regulatory Detailed Planning Measures; National Land-Use Classification Guidelines
 - Full machine index: `sources.json`, `metrics.json`, `compliance_matrix.json`, `standard_matrix.json`, `design_depth_matrix.json`
 - Copyright and licensing: `report/copyright_statement.md`

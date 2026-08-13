@@ -329,6 +329,39 @@
       "not_usable_for": "road redline",
       "public_status": "confirmed-public",
       "usage_boundary": "road redline"
+    },
+    {
+      "id": "PIPL",
+      "title_zh": "《中华人民共和国个人信息保护法》（自2021-11-01施行）",
+      "title_en": "Personal Information Protection Law of the People's Republic of China (in force since 2021-11-01)",
+      "url": "https://www.gov.cn/xinwen/2021-08/20/content_5632486.htm",
+      "source_type": "official_standard",
+      "published_date": "2021-08-20",
+      "usage": "Disclosure/notice, informed-consent and complaint basis for AI public-service scenarios.",
+      "public_status": "confirmed-public",
+      "usage_boundary": "Disclosure/notice, informed-consent and complaint basis for AI public-service scenarios."
+    },
+    {
+      "id": "PLA",
+      "title_zh": "《中华人民共和国城乡规划法》（2019年修正）",
+      "title_en": "Urban and Rural Planning Law of the People's Republic of China (2019 amendment)",
+      "url": "https://www.gov.cn/xinwen/2019-05/15/content_5391995.htm",
+      "source_type": "official_standard",
+      "published_date": "2019-05-15",
+      "usage": "Statutory basis for planning publicity, public notice and opinion collection.",
+      "public_status": "confirmed-public",
+      "usage_boundary": "Statutory basis for planning publicity, public notice and opinion collection."
+    },
+    {
+      "id": "MCP-STANDARD",
+      "title_zh": "Model Context Protocol（模型上下文协议）公开规范（Anthropic 主导的开放工具接入标准）",
+      "title_en": "Model Context Protocol (MCP), the open tool/service-integration standard led by Anthropic",
+      "url": "https://modelcontextprotocol.io",
+      "source_type": "open_standard",
+      "published_date": "2024-11-25",
+      "usage": "Concept reference for a unified protocolized city public-service interface layer; not planning evidence or an implementation commitment.",
+      "public_status": "confirmed-public",
+      "usage_boundary": "Concept reference for a unified protocolized city public-service interface layer; not planning evidence or an implementation commitment."
     }
   ]
 }
