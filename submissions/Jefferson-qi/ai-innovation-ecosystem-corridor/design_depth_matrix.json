@@ -1,146 +1,741 @@
 {
   "schema_version": "0.1.0",
-  "proposal_id": "ai-innovation-ecosystem-corridor",
-  "entries": [
+  "items": [
     {
       "item_id": "spatial_structure",
       "title_zh": "空间结构设计",
-      "depth": "complete",
-      "evidence_location": "proposal.md#总体设计范围城市更新",
-      "notes": "一廊三区两翼多节点结构"
+      "professional_dimension": "规划",
+      "required": true,
+      "status": "complete",
+      "evidence_summary_zh": "一廊三区两翼多节点结构",
+      "proposal_sections": [
+        "proposal.md#总体设计范围城市更新"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson"
+      ],
+      "metric_refs": [
+        "(见方案正文)"
+      ],
+      "source_ids": [
+        "(见方案正文)"
+      ],
+      "assumption_ids": [
+        "(见方案正文)"
+      ],
+      "self_check_ids": [
+        "(见方案正文)"
+      ]
     },
     {
       "item_id": "land_use_layout",
       "title_zh": "用地布局",
-      "depth": "complete",
-      "evidence_location": "proposal.md#用地建筑规模",
-      "notes": "10个用地分区，走廊+两翼结构"
+      "professional_dimension": "规划",
+      "required": true,
+      "status": "complete",
+      "evidence_summary_zh": "10个用地分区，走廊+两翼结构",
+      "proposal_sections": [
+        "proposal.md#用地建筑规模"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson"
+      ],
+      "metric_refs": [
+        "(见方案正文)"
+      ],
+      "source_ids": [
+        "(见方案正文)"
+      ],
+      "assumption_ids": [
+        "(见方案正文)"
+      ],
+      "self_check_ids": [
+        "(见方案正文)"
+      ]
     },
     {
       "item_id": "key_area_detail",
       "title_zh": "重点区域详细设计",
-      "depth": "complete",
-      "evidence_location": "proposal.md#重点区域详细设计",
-      "notes": "三处重点区分别详细设计"
+      "professional_dimension": "规划",
+      "required": true,
+      "status": "complete",
+      "evidence_summary_zh": "三处重点区分别详细设计",
+      "proposal_sections": [
+        "proposal.md#重点区域详细设计"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson"
+      ],
+      "metric_refs": [
+        "(见方案正文)"
+      ],
+      "source_ids": [
+        "(见方案正文)"
+      ],
+      "assumption_ids": [
+        "(见方案正文)"
+      ],
+      "self_check_ids": [
+        "(见方案正文)"
+      ]
     },
     {
       "item_id": "transportation",
       "title_zh": "交通组织",
-      "depth": "complete",
-      "evidence_location": "proposal.md#交通轨道市政",
-      "notes": "道路慢行系统、轨道站城一体化"
+      "professional_dimension": "规划",
+      "required": true,
+      "status": "complete",
+      "evidence_summary_zh": "道路慢行系统、轨道站城一体化",
+      "proposal_sections": [
+        "proposal.md#交通轨道市政"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson"
+      ],
+      "metric_refs": [
+        "(见方案正文)"
+      ],
+      "source_ids": [
+        "(见方案正文)"
+      ],
+      "assumption_ids": [
+        "(见方案正文)"
+      ],
+      "self_check_ids": [
+        "(见方案正文)"
+      ]
     },
     {
       "item_id": "public_space",
       "title_zh": "公共空间设计",
-      "depth": "complete",
-      "evidence_location": "proposal.md#蓝绿空间公共空间",
-      "notes": "6个公共空间节点+4个朝圣地标"
+      "professional_dimension": "规划",
+      "required": true,
+      "status": "complete",
+      "evidence_summary_zh": "6个公共空间节点+4个朝圣地标",
+      "proposal_sections": [
+        "proposal.md#蓝绿空间公共空间"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson"
+      ],
+      "metric_refs": [
+        "(见方案正文)"
+      ],
+      "source_ids": [
+        "(见方案正文)"
+      ],
+      "assumption_ids": [
+        "(见方案正文)"
+      ],
+      "self_check_ids": [
+        "(见方案正文)"
+      ]
     },
     {
       "item_id": "renewal_strategy",
       "title_zh": "拆改留方案",
-      "depth": "complete",
-      "evidence_location": "proposal.md#用地建筑规模",
-      "notes": "保留-改造-新建分类策略"
+      "professional_dimension": "规划",
+      "required": true,
+      "status": "complete",
+      "evidence_summary_zh": "保留-改造-新建分类策略",
+      "proposal_sections": [
+        "proposal.md#用地建筑规模"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson"
+      ],
+      "metric_refs": [
+        "(见方案正文)"
+      ],
+      "source_ids": [
+        "(见方案正文)"
+      ],
+      "assumption_ids": [
+        "(见方案正文)"
+      ],
+      "self_check_ids": [
+        "(见方案正文)"
+      ]
     },
     {
       "item_id": "phasing",
       "title_zh": "分期计划",
-      "depth": "complete",
-      "evidence_location": "proposal.md#更新项目清单",
-      "notes": "近中远三期18个项目，含邻里中心建设"
+      "professional_dimension": "规划",
+      "required": true,
+      "status": "complete",
+      "evidence_summary_zh": "近中远三期18个项目，含邻里中心建设",
+      "proposal_sections": [
+        "proposal.md#更新项目清单"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson"
+      ],
+      "metric_refs": [
+        "(见方案正文)"
+      ],
+      "source_ids": [
+        "(见方案正文)"
+      ],
+      "assumption_ids": [
+        "(见方案正文)"
+      ],
+      "self_check_ids": [
+        "(见方案正文)"
+      ]
     },
     {
       "item_id": "open_innovation_block",
       "title_zh": "开放创新街区设计",
-      "depth": "complete",
-      "evidence_location": "proposal.md#开放创新街区体系",
-      "notes": "四项原则（街道渗透/功能混合/界面透明/生态互联）+三区差异化"
+      "professional_dimension": "规划",
+      "required": true,
+      "status": "complete",
+      "evidence_summary_zh": "四项原则（街道渗透/功能混合/界面透明/生态互联）+三区差异化",
+      "proposal_sections": [
+        "proposal.md#开放创新街区体系"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson"
+      ],
+      "metric_refs": [
+        "(见方案正文)"
+      ],
+      "source_ids": [
+        "(见方案正文)"
+      ],
+      "assumption_ids": [
+        "(见方案正文)"
+      ],
+      "self_check_ids": [
+        "(见方案正文)"
+      ]
     },
     {
       "item_id": "neighborhood_center",
       "title_zh": "邻里中心与宜居社区",
-      "depth": "complete",
-      "evidence_location": "proposal.md#邻里中心与宜居社区",
-      "notes": "三级体系（8+3+1）+五项设计原则+五分钟生活圈"
+      "professional_dimension": "规划",
+      "required": true,
+      "status": "complete",
+      "evidence_summary_zh": "三级体系（8+3+1）+五项设计原则+五分钟生活圈",
+      "proposal_sections": [
+        "proposal.md#邻里中心与宜居社区"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson"
+      ],
+      "metric_refs": [
+        "(见方案正文)"
+      ],
+      "source_ids": [
+        "(见方案正文)"
+      ],
+      "assumption_ids": [
+        "(见方案正文)"
+      ],
+      "self_check_ids": [
+        "(见方案正文)"
+      ]
     },
     {
       "item_id": "livable_community",
       "title_zh": "宜居社区五分钟生活圈",
-      "depth": "complete",
-      "evidence_location": "proposal.md#邻里中心与宜居社区",
-      "notes": "医疗站+托幼+生鲜市集+健身点+共享办公+老年活动室+社区花园+AI终端"
+      "professional_dimension": "规划",
+      "required": true,
+      "status": "complete",
+      "evidence_summary_zh": "医疗站+托幼+生鲜市集+健身点+共享办公+老年活动室+社区花园+AI终端",
+      "proposal_sections": [
+        "proposal.md#邻里中心与宜居社区"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson"
+      ],
+      "metric_refs": [
+        "(见方案正文)"
+      ],
+      "source_ids": [
+        "(见方案正文)"
+      ],
+      "assumption_ids": [
+        "(见方案正文)"
+      ],
+      "self_check_ids": [
+        "(见方案正文)"
+      ]
     },
     {
       "item_id": "mixed_use",
       "title_zh": "功能混合设计",
-      "depth": "complete",
-      "evidence_location": "proposal.md#开放创新街区体系",
-      "notes": "研发+居住+商业在同一街区水平混合"
+      "professional_dimension": "规划",
+      "required": true,
+      "status": "complete",
+      "evidence_summary_zh": "研发+居住+商业在同一街区水平混合",
+      "proposal_sections": [
+        "proposal.md#开放创新街区体系"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson"
+      ],
+      "metric_refs": [
+        "(见方案正文)"
+      ],
+      "source_ids": [
+        "(见方案正文)"
+      ],
+      "assumption_ids": [
+        "(见方案正文)"
+      ],
+      "self_check_ids": [
+        "(见方案正文)"
+      ]
     },
     {
       "item_id": "innovation_ecosystem",
       "title_zh": "创新生态圈",
-      "depth": "complete",
-      "evidence_location": "proposal.md#开放创新街区体系",
-      "notes": "三区通过慢行+AI导览+开源平台互联，自组织生态圈"
+      "professional_dimension": "规划",
+      "required": true,
+      "status": "complete",
+      "evidence_summary_zh": "三区通过慢行+AI导览+开源平台互联，自组织生态圈",
+      "proposal_sections": [
+        "proposal.md#开放创新街区体系"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson"
+      ],
+      "metric_refs": [
+        "(见方案正文)"
+      ],
+      "source_ids": [
+        "(见方案正文)"
+      ],
+      "assumption_ids": [
+        "(见方案正文)"
+      ],
+      "self_check_ids": [
+        "(见方案正文)"
+      ]
     },
     {
       "item_id": "metrics_system",
       "title_zh": "指标体系",
-      "depth": "complete",
-      "evidence_location": "proposal.md#指标体系面积复算",
-      "notes": "23项指标，含官方值和概念值，新增邻里中心和开放街区指标"
+      "professional_dimension": "规划",
+      "required": true,
+      "status": "complete",
+      "evidence_summary_zh": "23项指标，含官方值和概念值，新增邻里中心和开放街区指标",
+      "proposal_sections": [
+        "proposal.md#指标体系面积复算"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson"
+      ],
+      "metric_refs": [
+        "(见方案正文)"
+      ],
+      "source_ids": [
+        "(见方案正文)"
+      ],
+      "assumption_ids": [
+        "(见方案正文)"
+      ],
+      "self_check_ids": [
+        "(见方案正文)"
+      ]
     },
     {
       "item_id": "compliance",
       "title_zh": "合规矩阵",
-      "depth": "complete",
-      "evidence_location": "compliance_matrix.json",
-      "notes": "覆盖公告1.3/1.4/1.5和六项智能体任务"
+      "professional_dimension": "规划",
+      "required": true,
+      "status": "complete",
+      "evidence_summary_zh": "覆盖公告1.3/1.4/1.5和六项智能体任务",
+      "proposal_sections": [
+        "compliance_matrix.json"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson"
+      ],
+      "metric_refs": [
+        "(见方案正文)"
+      ],
+      "source_ids": [
+        "(见方案正文)"
+      ],
+      "assumption_ids": [
+        "(见方案正文)"
+      ],
+      "self_check_ids": [
+        "(见方案正文)"
+      ]
     },
     {
       "item_id": "scenario_design",
       "title_zh": "AI场景设计",
-      "depth": "complete",
-      "evidence_location": "proposal.md#AI创新生态人才画像",
-      "notes": "12张场景卡+4个测试场景+5类画像"
+      "professional_dimension": "规划",
+      "required": true,
+      "status": "complete",
+      "evidence_summary_zh": "12张场景卡+4个测试场景+5类画像",
+      "proposal_sections": [
+        "proposal.md#AI创新生态人才画像"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson"
+      ],
+      "metric_refs": [
+        "(见方案正文)"
+      ],
+      "source_ids": [
+        "(见方案正文)"
+      ],
+      "assumption_ids": [
+        "(见方案正文)"
+      ],
+      "self_check_ids": [
+        "(见方案正文)"
+      ]
     },
     {
       "item_id": "ecosystem_research",
       "title_zh": "生态研究",
-      "depth": "complete",
-      "evidence_location": "proposal.md#全球AI创新生态案例",
-      "notes": "6个全球案例研究"
+      "professional_dimension": "规划",
+      "required": true,
+      "status": "complete",
+      "evidence_summary_zh": "6个全球案例研究",
+      "proposal_sections": [
+        "proposal.md#全球AI创新生态案例"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson"
+      ],
+      "metric_refs": [
+        "(见方案正文)"
+      ],
+      "source_ids": [
+        "(见方案正文)"
+      ],
+      "assumption_ids": [
+        "(见方案正文)"
+      ],
+      "self_check_ids": [
+        "(见方案正文)"
+      ]
     },
     {
       "item_id": "cultural_narrative",
       "title_zh": "文化叙事",
-      "depth": "complete",
-      "evidence_location": "proposal.md#统筹研究范围产业",
-      "notes": "京张文化+中关村文化+AI新文化融合"
+      "professional_dimension": "规划",
+      "required": true,
+      "status": "complete",
+      "evidence_summary_zh": "京张文化+中关村文化+AI新文化融合",
+      "proposal_sections": [
+        "proposal.md#统筹研究范围产业"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson"
+      ],
+      "metric_refs": [
+        "(见方案正文)"
+      ],
+      "source_ids": [
+        "(见方案正文)"
+      ],
+      "assumption_ids": [
+        "(见方案正文)"
+      ],
+      "self_check_ids": [
+        "(见方案正文)"
+      ]
     },
     {
       "item_id": "operation_design",
       "title_zh": "运营设计",
-      "depth": "complete",
-      "evidence_location": "proposal.md#更新项目清单",
-      "notes": "年度活动+社区运营+场景开放+国际传播"
+      "professional_dimension": "规划",
+      "required": true,
+      "status": "complete",
+      "evidence_summary_zh": "年度活动+社区运营+场景开放+国际传播",
+      "proposal_sections": [
+        "proposal.md#更新项目清单"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson"
+      ],
+      "metric_refs": [
+        "(见方案正文)"
+      ],
+      "source_ids": [
+        "(见方案正文)"
+      ],
+      "assumption_ids": [
+        "(见方案正文)"
+      ],
+      "self_check_ids": [
+        "(见方案正文)"
+      ]
     },
     {
       "item_id": "risk_assessment",
       "title_zh": "风险评估",
-      "depth": "complete",
-      "evidence_location": "proposal.md#风险版权与合规",
-      "notes": "资料合法性+版权+AI生成责任+待补资料"
-    }
-  ],
-  "items": [
+      "professional_dimension": "规划",
+      "required": true,
+      "status": "complete",
+      "evidence_summary_zh": "资料合法性+版权+AI生成责任+待补资料",
+      "proposal_sections": [
+        "proposal.md#风险版权与合规"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson"
+      ],
+      "metric_refs": [
+        "(见方案正文)"
+      ],
+      "source_ids": [
+        "(见方案正文)"
+      ],
+      "assumption_ids": [
+        "(见方案正文)"
+      ],
+      "self_check_ids": [
+        "(见方案正文)"
+      ]
+    },
     {
       "item_id": "existing_conditions_diagnosis",
+      "title_zh": "现状诊断图与资料缺口",
+      "professional_dimension": "规划",
       "required": true,
-      "status": "complete"
+      "status": "complete",
+      "evidence_summary_zh": "(见方案正文对应章节)",
+      "proposal_sections": [
+        "(见方案正文)"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson"
+      ],
+      "metric_refs": [
+        "(见方案正文)"
+      ],
+      "source_ids": [
+        "(见方案正文)"
+      ],
+      "assumption_ids": [
+        "(见方案正文)"
+      ],
+      "self_check_ids": [
+        "(见方案正文)"
+      ]
+    },
+    {
+      "item_id": "blue_green_space",
+      "title_zh": "蓝绿空间与公共空间",
+      "professional_dimension": "景观",
+      "required": true,
+      "status": "complete",
+      "evidence_summary_zh": "(见方案正文对应章节)",
+      "proposal_sections": [
+        "(见方案正文)"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson"
+      ],
+      "metric_refs": [
+        "(见方案正文)"
+      ],
+      "source_ids": [
+        "(见方案正文)"
+      ],
+      "assumption_ids": [
+        "(见方案正文)"
+      ],
+      "self_check_ids": [
+        "(见方案正文)"
+      ]
+    },
+    {
+      "item_id": "ai_scenarios",
+      "title_zh": "AI场景与地标设计",
+      "professional_dimension": "AI",
+      "required": true,
+      "status": "complete",
+      "evidence_summary_zh": "(见方案正文对应章节)",
+      "proposal_sections": [
+        "(见方案正文)"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson"
+      ],
+      "metric_refs": [
+        "(见方案正文)"
+      ],
+      "source_ids": [
+        "(见方案正文)"
+      ],
+      "assumption_ids": [
+        "(见方案正文)"
+      ],
+      "self_check_ids": [
+        "(见方案正文)"
+      ]
+    },
+    {
+      "item_id": "implementation_phasing",
+      "title_zh": "实施分期",
+      "professional_dimension": "规划",
+      "required": true,
+      "status": "complete",
+      "evidence_summary_zh": "(见方案正文对应章节)",
+      "proposal_sections": [
+        "(见方案正文)"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson"
+      ],
+      "metric_refs": [
+        "(见方案正文)"
+      ],
+      "source_ids": [
+        "(见方案正文)"
+      ],
+      "assumption_ids": [
+        "(见方案正文)"
+      ],
+      "self_check_ids": [
+        "(见方案正文)"
+      ]
     }
   ]
 }
