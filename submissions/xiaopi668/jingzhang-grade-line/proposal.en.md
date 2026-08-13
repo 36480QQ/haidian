@@ -240,7 +240,7 @@ All-age and accessible design runs through public space: elderly, disabled and l
 | JZ-05 Verification field | 50–200 M | park platform + enterprises | data isolation & benchmarking |
 | JZ-06 Milepost Walk | 5–10 M | public-investment-led | mileposts & honor system |
 
-**Operator and staffing concept estimates**: main-line operations 20–40 people (greenway maintenance, events, guiding), verification field 10–20 (benchmarking, isolation ops), developer-community operations 5–10, culture guiding 3–5, about 40–75 in total (concept mid-value 75 [metric:operations_team_concept_headcount]); staffing is a concept estimate from comparable public-facility experience, not a fiscal commitment [source:AGENT-TASKBOOK].
+**Operator and staffing concept estimates**: main-line operations 20–40 people (greenway maintenance, events, guiding), verification field 10–20 (benchmarking, isolation ops), developer-community operations 5–10, culture guiding 3–5, about 40–75 in total (upper-bound total 75 [metric:operations_team_concept_headcount]); staffing is a concept estimate from comparable public-facility experience, not a fiscal commitment [source:AGENT-TASKBOOK].
 
 **Two-level emergency response plan (concept)**: technical incidents (model failure, data breach) — pause the scenario immediately → human takeover → isolate affected data → public debrief within 24h; operational incidents (event safety, facility failure) — activate the on-site plan → professional response → compensation channel → public statement. The grade-signal system guarantees every scenario has pause, rollback and human-takeover switches [metric:ai_scenario_node_count].
 
