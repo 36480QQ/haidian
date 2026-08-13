@@ -1,5 +1,13 @@
 # 方案迭代记录
 
+## v0.5 - 2026-08-13
+
+- Reframed the veranda around Haidian everyday life: a 500–600 m lunch walk from offices near Changping Line Xuezhiyuan Station into the already-open railway park.
+- Named the east-west gate as narrow sidewalks and high planters that currently keep Xueqing Road from feeling the park exists.
+- Specified a park program of separated walking/running, 1–2 full basketball courts at wider openings, safety runoff and benches instead of a grandstand, and children/caregivers plus permitted pet walkers as ordinary users.
+- Tightened AI scenes to buy-water, a staffed separated-child response with no photo or facial recognition by default, and human-verified lost-item handling, rejecting a startup-campus or driverless special zone.
+- Recorded contributor lived observation as non-survey evidence, with official metro opening notice as station-name context only.
+
 ## v0.4 - 2026-08-13
 
 - Added a four-level implementation-feasibility verdict with owner types, relative cost, dependencies, acceptance evidence and stop conditions.

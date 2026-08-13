@@ -1025,6 +1025,48 @@
       "required": true,
       "status": "complete",
       "evidence_summary_zh": "用R1—R4证据成熟度、责任类型、相对成本、依赖、验收和停止条件区分可立即审计、有条件试点与当前不可施工内容。"
+    },
+    {
+      "item_id": "haidian_everyday_life",
+      "title_zh": "海淀日常：午饭步行、公园生活与克制的AI",
+      "professional_dimension": "公共生活与空间体验",
+      "proposal_sections": [
+        "居住者观察：午饭走得到，才叫门廊",
+        "六门",
+        "AI 创新生态、人才画像与 AI+ 场景",
+        "蓝绿空间、公共空间与城市风貌"
+      ],
+      "metric_refs": [
+        "east_west_link_count",
+        "public_space_ratio"
+      ],
+      "source_ids": [
+        "BJ-METRO-CHANGPING-SOUTH-2023",
+        "JINGZHANG-PHASE1-OPEN-2023",
+        "AGENT-TASKBOOK"
+      ],
+      "assumption_ids": [
+        "A-LIVED-001",
+        "A-COURT-001",
+        "A-TRANSPORT-001"
+      ],
+      "drawing_refs": [
+        "assets/figures/existing-conditions.png",
+        "assets/figures/mobility-bluegreen.png",
+        "assets/figures/bluegreen-publicrealm.png",
+        "assets/renders/lunch-walk-park.jpg"
+      ],
+      "geometry_refs": [
+        "geometry/roads.geojson",
+        "geometry/public_space.geojson",
+        "geometry/green_space.geojson"
+      ],
+      "self_check_ids": [
+        "PROFESSIONAL_EVIDENCE"
+      ],
+      "required": true,
+      "status": "complete",
+      "evidence_summary_zh": "以学知园站公开位置、一期已开放公园和投稿者观察，把500–600米午饭半径、窄人行道、分流步道、少量全场篮球，以及买水、人工协寻与遗失物登记的克制AI写成可检查的生活门廊，而不是创业园或特区。"
     }
   ]
 }

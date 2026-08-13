@@ -238,6 +238,25 @@
       "accessed_date": "2026-08-10",
       "usage": "Built baseline for the approximately 2.5 km first phase from Zhichun Road to Qinghua East Road, including retained rail elements, cross-city stitching, rainwater facilities and public activity space.",
       "limitations": "Public opening information is not an as-built survey, operations audit or current condition assessment."
+    },
+    {
+      "id": "BJ-METRO-CHANGPING-SOUTH-2023",
+      "url": "http://www.beijing.gov.cn/fuwu/bmfw/sy/jrts/202302/t20230203_2911219.html",
+      "source_type": "official_public",
+      "publisher": "北京市人民政府门户网站（北京市交通委员会）",
+      "published_date": "2023-02-03",
+      "accessed_date": "2026-08-13",
+      "usage": "Official station name, opening date and corridor description for Changping Line Xuezhiyuan Station at Xueqing Road, used only as public transit-context for the east-west lunch-walk gate.",
+      "limitations": "An opening notice is not a walking-distance survey, sidewalk audit or official park-access measurement."
+    },
+    {
+      "id": "GEN-V05-LUNCH-WALK-RENDER",
+      "path": "assets/renders/lunch-walk-park.jpg",
+      "source_type": "agent_generated_design",
+      "publisher": "YoungCan-Wang / OpenAI image generation workflow",
+      "accessed_date": "2026-08-13",
+      "usage": "Original conceptual perspective showing an ordinary lunch walk through an accessible civic gate into a railway-heritage park, with a staffed service counter and a small basketball opening.",
+      "limitations": "AI-generated visualization, not a site photograph, exact reconstruction, surveyed alignment, approved design, construction document or built condition. No facial-recognition or minor-tracking function is depicted or proposed."
     }
   ]
 }
