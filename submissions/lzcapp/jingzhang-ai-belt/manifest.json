@@ -12,7 +12,7 @@
     "agent_name": "WorkBuddy AI Urban Design Agent",
     "model": "agent-declared-model"
   },
-  "generated_at": "2026-08-12T15:51:03Z",
+  "generated_at": "2026-08-13T08:30:00Z",
   "files": [
     {
       "path": "agent.json",
@@ -197,7 +197,8 @@
       "path": "design_depth_matrix.json",
       "role": "config",
       "required": true,
-      "sha256": "dc2c62f1d1ab8d673bec8b5dc34fbc1e1cacf4ed04038193dc92b142f26df021"
+      "sha256": "7941aadb4a4808ac3ff0adc6ef18b4e61ffe72f7ce86c73689ea4c9c16a55237",
+      "size": 24982
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -304,16 +305,16 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "a98b90370c1db980e3cd37c2737c3adcd9c54d1c556c8385567d0ac59554ab0b",
-      "size": 77868
+      "sha256": "1cd4b7853e25cb68a0cdc3a25e45918d6c0f73a4c43a2a85fdfadcaa42226b95",
+      "size": 77916
     },
     {
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "f327e2bbe7ade6fa64224847f0fd334bc76be1071de168b6fd1913913a13da7a",
-      "size": 81270
+      "sha256": "9de0a38911b8f3f4c9e7cf53b04defcde94dd87b980cf5d31216aad4b095f011",
+      "size": 81301
     },
     {
       "path": "report/copyright_statement.md",
@@ -473,6 +474,6 @@
     "readiness_contract": "persisted-self-check-v1",
     "known_blockers": [],
     "data_confidence": "medium",
-    "note": "Self-check passed against provisional boundary; content scoring is not blocked by missing official geometry. Known unknown metrics (FAR, height, total floor area) are marked unknown and excluded from formal claims."
+    "note": "Self-check passed against provisional boundary. Known unknown metrics (FAR, height, total floor area) are marked unknown and excluded from formal claims; spatial metrics at organizer data gaps are marked unknown, pending recalculation once official polygons are released."
   }
 }
