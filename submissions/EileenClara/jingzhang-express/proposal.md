@@ -46,6 +46,8 @@ iteration: "v0.4"
 本方案以“创新产线”为隐喻，把三个层次转译成一组递进的铁路段：统筹层回答“整条产线往哪里开”，总体层回答“编组、路网和站城关系如何组织”，重点层回答“三个站点各自造什么、怎么落地”。创新链从源头研究、转化孵化到市场集聚的节奏，恰好沿京张铁路方向自北向南延伸：众智园承载基础研究与全栈自主创新，北京AI原点社区承载孵化与转化，大钟寺承载市场、资本与全球交往，因此三层范围不是互相割裂的图纸集合，而是同一产线在不同分辨率下的表达 [depth:three_level_scope_framework]。
 
 ![总体概念与空间结构总览（临时边界）](assets/figures/site-overview.png)
+图注：图中清河、小月河水系与 13 号线轨道线位均为公开示意叠加，仅用于空间锚定，不作官方红线或交通规划承诺 [source:DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509]。
+
 
 三层范围的面积与图层证据如下：总体设计范围以提交包中的 `geometry/site_boundary.geojson#SITE-001` 表达，复算面积为 11,412,825.386 平方米，与公告约 11.4 平方公里一致（差值来自临时边界推定的精度误差）；重点区域范围为三处 KEY_AREA 之和，数量指标 `key_area_count` 为 3 [data:geometry/site_boundary.geojson#SITE-001] [metric:site_area_sqm] [metric:key_area_count]。任何由提交几何复算的面积、比例、建筑规模或项目数量，都只能在“临时边界”口径下讨论，官方 polygon 到位后需按替换触发的复算流程整体重算 [depth:metrics_recalculation]。
 
