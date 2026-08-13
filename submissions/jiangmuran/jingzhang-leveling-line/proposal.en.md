@@ -490,6 +490,10 @@ The leveling network's answer is elevation transfer: each station's reading depe
 
 - **BM-1 Zhongzhiyuan** carries the full-stack autonomous AI innovation system and the global-discourse positioning: it is where tolerance F is set — the **tolerance datum**. This used to say "datum of origin", which is the wrong term: in surveying the datum of origin is the point heights are carried from, and here that is BM-0, which the shipped `check_closure.js` requires every circuit to depart from. Where the standard is set and where measurement starts are two things and cannot share one word.
 - **BM-0 the AI Origin Community** carries the world-class AI innovation ecosystem: it is both the network's starting point and the point at which closure is computed, and it is the physical landing place for the public knowledge base this call has produced.
+
+![FIG.25 BM-0, the origin: the place both routes have to return to](assets/figures/origin.en.png)
+
+**That "physical landing place" had been a name and nothing else.** BM-0 appears on nearly every sheet here and had never been drawn — which is not a presentation problem, because what it carries is itself a spatial property. **A reading is published the moment it is taken, and evidence is only as public as the door in front of it**: hang the closure record in a hall with opening hours and the origin is shut at the instant the reading lands, and "anyone can walk up to a benchmark and take a reading" quietly becomes "during opening hours". So FIG.25 puts the record outside, facing the footway, at the reading-plate height FIG.16 already fixed. It gives the setup circle a real size — ⌀ 2,400 mm, a 1,200 mm tripod spread plus the operator's ring — and checks that it does not eat the accessible clear width: **the same 1,500 mm FIG.24 protects from devices, because this package does not get a looser number for its own surveyors**, and the build refuses if the two sheets disagree. What it displays is network closure, not local failure; a point's own failure belongs at that point (errata E50).
 - **BM-2 Dazhongsi** carries AI-native new activity: high-frequency consumer and business scenarios take their readings here.
 - **The Zhongguancun services wing** supplies factors and capital and is the route's **support system**; **the Xiaoyuehe scenario wing** supplies real users and is therefore the route's **source of reading density**.
 
@@ -1539,11 +1543,11 @@ An authorisation statement a reviewer cannot verify is not a statement. Each row
 
 <!-- LEDGERCOUNT:BEGIN -->
 
-**The file-level ledger sits outside the review input, so its result is brought in here.** `build_review_input` sends `proposal.md` and eight JSON files; neither `report/copyright_statement.md` nor `visual/assets/rights_ledger.json` is among them. **A rights ledger the reviewer structurally cannot open is, from the reviewer's position, exactly the unverifiable assertion this package objects to elsewhere.** All **116 shipped files** carry a clearance class; a file without one fails the build:
+**The file-level ledger sits outside the review input, so its result is brought in here.** `build_review_input` sends `proposal.md` and eight JSON files; neither `report/copyright_statement.md` nor `visual/assets/rights_ledger.json` is among them. **A rights ledger the reviewer structurally cannot open is, from the reviewer's position, exactly the unverifiable assertion this package objects to elsewhere.** All **118 shipped files** carry a clearance class; a file without one fails the build:
 
 | Clearance class | Files |
 |---|---|
-| `author-originated` | 94 |
+| `author-originated` | 96 |
 | `provisional-only-with-stated-limit` | 9 |
 | `author-originated-measurement` | 8 |
 | `author-originated-with-embedded-fonts` | 4 |
@@ -1598,7 +1602,7 @@ One point of citation discipline deserves stating plainly: **the cases are used 
 
 <!-- FIGINDEX:BEGIN -->
 
-There are 25 sheets, numbered FIG.00 to FIG.24. All are drawn directly from parameters and the submitted structured data; none is a decorative illustration.
+There are 26 sheets, numbered FIG.00 to FIG.25. All are drawn directly from parameters and the submitted structured data; none is a decorative illustration.
 
 | Sheet | Content | What to read on it |
 |---|---|---|
@@ -1627,6 +1631,7 @@ There are 25 sheets, numbered FIG.00 to FIG.24. All are drawn directly from para
 | FIG.22 | Winter: water, ice, and two of this package's rules in collision | The three community points are read monthly, which means read in January. KIT-01 requires the stone flush with no trip hazard and FIG.16 gave that ±5 mm — **and a mark set flush into level paving sits in whatever the paving collects: the tolerance that makes it safe in September is what makes it dangerous in January**. The answer is a local high point, not a ring |
 | FIG.23 | Finding the nearest benchmark: which way, and how far | Markers appear only inside the stretches FIG.21 marks as failing — 48 of them at 150 m spacing, on the existing KIT-04, nothing new built. The face answers four things: direction, distance, P5's time, and the id. **And it states what signage cannot do — it does not make 1,111 m near; this is mitigation, not the fix** |
 | FIG.24 | The device envelope: what exactly goes in those 18 m² | FIG.12 fixed the device reservoir at ≥ 18 m² and this package had never drawn a device or said how big one is. An envelope, not a product: 1,200 × 700 × 1,300 mm, 1,800 mm turning circle, ≤ 120 kg. Each of seven dimensions is marked with what bounds it, and **three are bounded by nothing but this proposal — those are the ones to attack first**. The envelope puts 8 devices in the 18 m² |
+| FIG.25 | BM-0, the origin: the place both routes have to return to | BM-0 appears on nearly every sheet here and had never been drawn. A 2,400 mm setup circle, an approach sightline cone for each closing route, and the closure record outside the door facing the footway at the plate geometry FIG.16 fixed. **A reading is published the moment it is taken, and evidence is only as public as the door** — hang it in a hall with opening hours and the origin is shut when the reading lands. It shows network closure, not local failure (errata E50) |
 
 <!-- FIGINDEX:END -->
 
