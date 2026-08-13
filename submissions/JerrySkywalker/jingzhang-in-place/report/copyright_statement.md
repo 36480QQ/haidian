@@ -10,7 +10,7 @@ Public sources are indexed in `sources.json`. Facts are paraphrased and cited by
 
 ## Fonts and technical assets
 
-The output is rendered with installed Windows system fonts during export; no font file is redistributed. Visual and report HTML are offline and contain no CDN, remote font, API, tracker, iframe, form, remote media or online map dependency.
+The output is rendered with installed Windows system fonts during export. PDFs may contain display-only subset fonts for legible local rendering, but no standalone font file is redistributed. Visual and report HTML are offline and contain no CDN, remote font, API, tracker, iframe, form, remote media or online map dependency.
 
 ## AI and human responsibility
 
