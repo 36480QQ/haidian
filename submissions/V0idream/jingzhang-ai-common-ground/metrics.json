@@ -178,6 +178,87 @@
       "confidence": "medium",
       "assumptions": []
     },
+    "proofing_gate_count": {
+      "status": "known",
+      "value": 6,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/six-gate-proofing.schema.json"
+      ],
+      "formula": "count(required boolean gates in the original Six-Gate Civic Proofing schema)",
+      "confidence": "high",
+      "assumptions": [
+        "A-PROOFING-001"
+      ]
+    },
+    "synthetic_proof_case_count": {
+      "status": "known",
+      "value": 7,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/synthetic-proof-cases.json"
+      ],
+      "formula": "count(anonymous synthetic paths: one complete plus six single-gate failures)",
+      "confidence": "high",
+      "assumptions": [
+        "A-PROOFING-001"
+      ]
+    },
+    "synthetic_proof_pass_count": {
+      "status": "known",
+      "value": 7,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/six-gate-proof-evidence.json"
+      ],
+      "formula": "count(synthetic paths where actual rule decision equals expected decision)",
+      "confidence": "high",
+      "assumptions": [
+        "A-PROOFING-001"
+      ]
+    },
+    "proofing_pilot_duration_weeks": {
+      "status": "known",
+      "value": 12,
+      "unit": "weeks",
+      "source_files": [
+        "proposal.md",
+        "geometry/phasing.geojson"
+      ],
+      "formula": "2 baseline + 3 offline translation + 3 parallel service + 3 public proofing + 1 decision week",
+      "confidence": "medium",
+      "assumptions": [
+        "A-IMPLEMENTATION-001",
+        "A-PROOFING-001"
+      ]
+    },
+    "proofing_stop_condition_count": {
+      "status": "known",
+      "value": 6,
+      "unit": "count",
+      "source_files": [
+        "proposal.md",
+        "visual/assets/six-gate-proofing.schema.json"
+      ],
+      "formula": "count(non-compensatory provenance, consent, access, review, rollback, and stewardship stop conditions)",
+      "confidence": "medium",
+      "assumptions": [
+        "A-PROOFING-001"
+      ]
+    },
+    "regional_interface_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count(conceptual taskbook interfaces: Beiwei, Future Science City, Huairou Science City, BDA, Jing-Jin-Ji)",
+      "confidence": "medium",
+      "assumptions": [
+        "A-REGIONAL-INTERFACE-001"
+      ]
+    },
     "floor_area_ratio": {
       "status": "unknown",
       "value": null,

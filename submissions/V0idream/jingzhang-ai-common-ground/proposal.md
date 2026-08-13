@@ -5,6 +5,7 @@ language: "zh"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
+iteration: "v2.0"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以一条翻译绿脊、三座译院、六道公共门和十二个AI场景，把技术—知识—产品—日常连接成可验证、可退出、有人兜底的城市公共价值链。空间表达基于临时边界，不替代正式规划。"
 tracks: ["enterprise-services-ecosystem", "civic-agent-governance", "ai-traffic-walkability"]
@@ -14,6 +15,24 @@ scenarios: ["enterprise-service-copilot", "public-safety-operations-review", "ai
 # 京张译场 JING-ZHANG TRANSLATION GROUNDS
 
 > 把前沿智能翻译成可验证的城市公共价值。所有空间落地建议均为概念建议与参考方案，可供专业团队深化研究；不替代正式规划，不构成政府审定结论。
+
+## 评委一页结论：让每项 AI 先成为可纠错的城市校样
+
+京张译场 V2 的核心不是再增加一个 AI 展示带，而是建立原创的“六门校译法”：任何 AI 服务进入公共空间前，必须依次说明**来源、同意、可达、复核、回退、维护**。六项互不补偿；任一项缺失，服务返回“重译”，普通人工服务继续运行。三座译院分别负责协议验证、知识转化和公众采用，六道公共门把抽象治理变成可触摸、可询问、可停止的城市界面 [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [depth:overall_spatial_structure] [data:geometry/public_space.geojson#PUBLIC-001]。
+
+本轮以 SCN-05“跨语城市服务台”为最小可复跑样例：在本地、零联网环境中，用 1 条完整路径和 6 条单门失败路径验证“全部通过才形成校样、任一失败即返回重译”。结果为 7/7 合成路径符合预期；这只证明规则逻辑可复跑，不证明现场安全、居民同意、运营绩效或部署获批 [metric:proofing_gate_count] [metric:synthetic_proof_case_count] [metric:synthetic_proof_pass_count]。
+
+### 策略比选
+
+| 选项 | 主要收益 | 主要风险 | 判断 |
+| --- | --- | --- | --- |
+| 单一科技展示带 | 传播直接 | AI 成为装饰，失败与退出不可见 | 不选 |
+| 三个独立产业园 | 招商叙事清楚 | 三地割裂，公共利益难以传递 | 不选 |
+| 京张译场与六门校译法 | 同一公共协议贯穿研发—转化—采用，允许重译和退场 | 需要运营主体与现场基线进一步确认 | 采用为概念建议 |
+
+### 五个区域协同接口
+
+北纬社区提供社区问题与日常服务反馈；未来科学城提供基础研究议题；怀柔科学城提供科学装置与科研场景需求；经开区提供制造验证与供应链问题；京津冀节点提供跨区域公共服务与成果转化问题。京张译场只接收公开或清权的问题卡、最小测试需求和可撤回反馈，输出带来源、责任、限制和退出条件的“城市校样”；不声称已有合作、数据共享、采购或结果互认 [source:AGENT-TASKBOOK] [depth:three_level_scope_framework]。
 
 ## 设计依据与资料清单
 
@@ -57,6 +76,14 @@ scenarios: ["enterprise-service-copilot", "public-safety-operations-review", "ai
 
 大钟寺临时 polygon 尚未锚定大钟寺站；Issue #1029 的复核表明当前位置存在约 2.26 公里的站点关系疑问。本方案不自行平移上游几何，也不把四象限连通画成已确定工程；公告任务在文字上保留，所有空间依赖待官方 polygon 到位后整体重算 [source:ISSUE-1029] [metric:key_area_count]。
 
+三地采用同一校译协议，但空间职责不可互换：众智园的“模型门诊—隔离测试庭—失败展廊—协议签发台”先形成失败可见的技术证据；AI 原点的“成果街—权利台—共享中试—开放发布阶”把证据编成可维护的知识包；大钟寺的“普通服务台—平行校译台—公众校样庭—申诉回退廊”决定采用、重译或退场。概念断面分别预留 2.4 米清晰通行带、1.8 米服务/设备带和 2.4 米停留带；尺寸仅为无障碍与运营深化的检查起点，不是施工尺寸 [depth:three_key_area_detailed_design] [standard:MOHURD-URBAN-DESIGN-MEASURES]。
+
+| 译院 | 第一份可核证据 | 唯一责任角色 | 禁入/停止条件 | 无 AI 基线 |
+| --- | --- | --- | --- | --- |
+| 协议译院 | 失败样本、接口说明、复测条件 | 测试负责人（待指派） | 来源不清、测试隔离或安全责任缺失 | 人工登记与线下技术评审 |
+| 知识译院 | 来源—贡献—许可—撤回版本链 | 知识维护人（待指派） | 权利不清、撤回无响应、维护责任缺失 | 纸质咨询与普通公共展廊 |
+| 采用译院 | 人工接管和服务恢复演练记录 | 服务运营人（待指派） | 转人工失败、申诉不通、普通通道受阻 | 有人值守的普通服务台 |
+
 ![三座译院差异化设计](assets/figures/key-areas.png)
 
 ## AI 创新生态、人才画像与 AI+ 场景
@@ -79,6 +106,12 @@ scenarios: ["enterprise-service-copilot", "public-safety-operations-review", "ai
 12. 国际演示—社区回译场：外部演示必须回应本地使用者问题并公开改动记录。
 
 三个 AI 朝圣地标不是高耗能奇观：北段“公开协议塔”展示标准与失败记录；中段“百年一公里档案门”把铁路里程、创新贡献和公共记忆并置；南段“城市翻译厅”呈现产品如何被采用、质疑、修正和退出 [metric:landmark_count]。
+
+### SCN-05 六门校译记录：12 周可退出试验
+
+第 1—2 周只记录普通人工服务基线；第 3—5 周用合成问题离线校译；第 6—8 周在保留人工主通道的前提下做平行服务；第 9—11 周公开校样、申诉和回退演练；第 12 周只允许“采纳、限期重译、退场”三种结论。任一阶段若出现来源无法追溯、告知/撤回失效、无障碍或非数字路径中断、人工接管失败、回退失败或维护责任空缺，即恢复普通服务 [metric:proofing_pilot_duration_weeks] [metric:proofing_stop_condition_count]。
+
+责任采用原创的 T/R/C/W 分工：Translator 负责把问题译成服务规则，Reviewer 负责专业与权利复核，Community witness 见证可达、申诉和退出，Steward 负责版本、维护与退场。当前四类角色均未由真实机构指派。资源只分等级而不虚构金额：R0 为流程、人员和纸质材料；R1 为可撤离家具、标识与离线终端；R2 涉及建筑、市政或系统接口，必须等待专业深化和审批 [depth:phasing_implementation] [source:AGENT-TASKBOOK]。
 
 ## 用地、建筑规模与拆改留方案
 
@@ -112,6 +145,8 @@ scenarios: ["enterprise-service-copilot", "public-safety-operations-review", "ai
 | T-04 大钟寺采用译院 | 服务首问、终端循环、国际回译 | 官方重点区与站点锚定确认 |
 | T-05 六道公共门 | 来源、同意、可达、复核、回退、维护 | 道路红线与无障碍专项确认 |
 | T-06 十二场景轮换计划 | 90 天测试—公开复盘—续期/停止 | 数据授权、人工责任人、投诉渠道 |
+
+每个项目在进入下一阶段前提交六项“校样包”：问题卡、空间卡、数据/权利卡、人工责任卡、停止恢复卡和维护退场卡。T-01、T-05 属 R1 可逆组件；T-06 从 R0 流程开始；T-02—T-04 只有在建筑、权属、消防、市政和运营主体确认后才可能从 R1 进入 R2。资金只在后续由专业团队形成成本区间，本稿不编造投资额或财政承诺。
 
 第一阶段只做可逆标签、服务流程和临时场景；第二阶段在调查后进行三译院适应性更新；第三阶段等待官方边界和专项条件后再决定系统性建设。阶段一图形面积只表示依赖顺序，不是开工范围 [metric:phase_1_area_sqm] [depth:renewal_project_list] [depth:phasing_implementation]。
 
