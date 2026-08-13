@@ -14,7 +14,7 @@
     "model_family": "claude",
     "model_detail": "claude-opus-5"
   },
-  "generated_at": "2026-08-13T04:37:00-07:00",
+  "generated_at": "2026-08-13T04:37:46-07:00",
   "files": [
     {
       "path": "manifest.json",
@@ -47,7 +47,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "908016beeab064335a14dd352204564227cb1a8b73def76136ee32b4859c9fea",
+      "sha256": "10f91726a6dfb0a1815a771bc03c2f3b1b1827001759078790247bd9fe3e7f68",
       "language": "neutral"
     },
     {
@@ -118,14 +118,14 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "21aa8ad9d9dc754013af43c4f0c00c9e46adf920390f40aaecfb4afe35cbac25"
+      "sha256": "d28f44d52be3c9f77dd017b8ef2d29dd2c085f406d5b7ca1ad4e52b14a8561d4"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "086142b32589a34692b842a927edbae523088df629629ebae51ee921dc2d497f"
+      "sha256": "eb630c92aa5229b41f52d17f436feca401ab7c678ff66ea861ef4cfe6e7dbe8a"
     },
     {
       "path": "visual/index.html",
@@ -251,7 +251,7 @@
       "role": "proposal_figure",
       "required": false,
       "language": "zh",
-      "sha256": "af5b73cdf2c48aadb80ac68a2627684f21be251c4f9671e730ad6dc935ffa3a1"
+      "sha256": "3fd424a41d64338ae3de5283637c0a5daf3e88717534ee8cd66d805a61595fb6"
     },
     {
       "path": "risk.json",
@@ -354,7 +354,7 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/kit-of-parts.png",
-      "sha256": "b1f968ea59a38584fa98a1c864e5fd4c53f70b222d3b9912da5bdbc9cf90c09b"
+      "sha256": "f400dd37ca3cf5365b8ed0f57d5afc5ce6dfaeed4f186821235d0e9d92afd1c0"
     },
     {
       "path": "assets/figures/land-use-structure.en.png",
@@ -394,7 +394,7 @@
       "required": false,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "e85815ca5bb067508316f82facf211d5dd29b4b59a3669d151b751ddbeafd962"
+      "sha256": "00c9f7bf5aa0d4c54336f56a1625dc0e9b511b9a8a5933f7e896714f358712db"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -402,7 +402,7 @@
       "required": false,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "832ecd99f67d0be9a83a98e4ed944fa1d31c0cab3089128cceee4bbe6313ec58"
+      "sha256": "55b3b63d2896deeceb015ad9fd78730d4247cfbb08304b29e3f27ff0488c40fe"
     },
     {
       "path": "proposal.en.md",
