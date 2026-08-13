@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "d8c475cb8f03990ebee9004fce00a4b7212f10e3ecc386245c596419e507b7a2"
+      "sha256": "28c2bffb78bde98465410009a63e26fdbddcfe5d935be44013af8e82ff301586"
     },
     {
       "path": "agent.json",
@@ -50,13 +50,13 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "72d10938d01a69b3c48c3daff32629db09af030d6539c92766d0156b87db12d1"
+      "sha256": "34f9b2047c0abab00263b5f57fc5809ca8a323896b9b39b0c129b56d0c123392"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "c3e8ec3ff58485f29482c2779b6b633274007186734c033deba8cc1f1d96fb75"
+      "sha256": "d72a1d8ba81dabdfa867c1552bcd3592ce3479d74486a6a81804fa5a52f252c8"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "7e17b7fa2e3741ce1c7e7809dbce069baa6346d9e2bfd67df46e2ff800eb0641"
+      "sha256": "9d7d47d89848f97b8b28e1ec62711fa0fbe94269dc90115d05b1ae3240e2ddc6"
     },
     {
       "path": "report/narrative.md",
@@ -93,21 +93,21 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "66c98b739d2d16791e682ff4edef8f5b8cbd5760b3c2b509bf1823e2c45b21f7"
+      "sha256": "a97ec4f957c889bd2fc92822a63e0fb89a61bc70f4ef7a75d095892b3737d099"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "c1dd785eeed9cae86494e2b943bf93fb816400f9ed5508a4a9e3f4e765702f2f"
+      "sha256": "e894c419d86ec16f9f0de137dac3e980687e4da094be4371a70ec6d23834dc17"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "e2dca8706eab1dab5bf36e8a54dbb473ad42e89c78d620cc2da3fbcd48b5c71d"
+      "sha256": "2530e7702c70ec72fb66abefefb67d35153003e7c5b88d35eb52130ee6b603e4"
     },
     {
       "path": "visual/index.html",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "875ab906e79e4675e5cbd9cf7bf9caca8d5faa6dc9b6b35d105c22c5baf1c5a2"
+      "sha256": "1a180b84d3ff7fc76d6eaad00038286d33b3d082950ab3d71cba6a76b8effe4f"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "f7e6128184b26691842af94ceb5b16b1ea4b712ccc5a2d7e31755d7f4d3d97d8"
+      "sha256": "c1d39168ef0a7f1e1892dd6aa0dd7d92b3be65badfb94641b9a45884835525f8"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -227,7 +227,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "64010d5ec52f8b1ef8eabde0f9cdd0a2fe8427d6f7ac9fea46e7963a58b63910"
+      "sha256": "7d1d51c43e11c8d69d6fbcbf546d648477a1c4252997930b31c63a0ff760d50f"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -235,7 +235,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "021ce0b96aa0ff01f6f3609a08e7b14a0a533a5587012573b28e6066a9da9ce1"
+      "sha256": "129a663c90687558c2ca8c3f7c49c28d8882be46a20e8645227af6dbebfe394e"
     },
     {
       "path": "visual/index.en.html",
@@ -301,17 +301,6 @@
       "sha256": "eceba167d7ccaa0b2d47bae38613484a702fbe02bdf5bd9b59101715a8b0933b"
     },
     {
-      "path": "assets/media/cover.png",
-      "role": "media_poster",
-      "required": false,
-      "language": "neutral",
-      "title_zh": "京张·星火带概念封面",
-      "title_en": "JING-ZHANG SPARK LINE Concept Cover",
-      "description_zh": "由提交包几何图层在本地确定性合成的概念封面，不代表现场现状或官方方案。",
-      "description_en": "A deterministic local synthesis from submitted geometry; not a site observation or official plan.",
-      "sha256": "00da1a6b9c67a32a2222cf3a72c620b4f8a805cfd6568c7c57e896db191e97c7"
-    },
-    {
       "path": "assets/figures/constraints-diagnosis.png",
       "role": "proposal_figure",
       "required": false,
@@ -333,5 +322,5 @@
     "data_confidence": "high",
     "readiness_contract": "persisted-self-check-v1"
   },
-  "cover_image": "assets/media/cover.png"
+  "cover_image": null
 }
