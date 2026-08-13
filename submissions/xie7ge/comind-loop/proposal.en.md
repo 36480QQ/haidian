@@ -98,6 +98,23 @@ The three areas share an “open interface—adaptive building—operational aud
 
 Each area receives a project passport recording location, responsible body, version, open hours, named human lead, pause condition and next review date. When official polygons, building surveys, ownership and engineering evidence arrive, professional teams should restart from geometry and building investigation—not merely replace diagram titles [data:geometry/key_areas.geojson#PROV-KEY-002] [depth:three_key_area_detailed_design].
 
+### One receipt, three fifteen-minute spatial journeys
+
+This iteration turns the protocol into five spatial moments: arrival, threshold, core, review and exit. **Zhongzhiyuan** enters from the Qinghe greenway into a shaded responsibility court: visitors see limits and failure records before reaching a staffed parsing desk, while a quiet route provides a paper receipt without entering the digital process. **AI Origin** enters from both community and campus into a shared ground floor; people choose named, pseudonymous or withdrawn contribution at the license counter, compile at movable workbenches, and hand maintenance to the next operator. **Dazhongsi** enters from a safe surface crossing into a consent lounge, passes small reversible pilot booths to a public correction terrace, and ends in return, staffed fallback or retirement [metric:station_spatial_sequence_coverage_ratio] [depth:three_key_area_detailed_design].
+
+| Spatial moment | Zhongzhiyuan | AI Origin | Dazhongsi |
+| --- | --- | --- | --- |
+| Arrival edge | Qinghe greenway and rain garden | Campus—park—community porch | Four-quadrant transit crossing |
+| Threshold | Limits and failure display | License, credit and withdrawal counter | Consent lounge and quiet waiting room |
+| Core | Reversible responsibility court | Open workshop and maintenance library | Time-bounded pilot booths and question bell |
+| Public review | Face-to-face human parsing | Contributor—maintainer handover table | Correction and complaint terrace |
+| Exit | Paper receipt and non-digital bypass | Equivalent staffed path and withdrawal | Return, pause or complete retirement |
+| Day/night | Co-creation by day; verified display at night | Workshop by day; quiet learning at night | Commuter trials; low-luminance evening feedback |
+
+All three begin with six demountable, repairable CoMind components: shade frame, staffed receipt desk, accessible backed bench, consent curtain/quiet room, low-luminance status light, and a maintainable service trench paired with rain gardens. Every component needs a maintenance owner, cleaning/fire/electrical inspection cycle and retirement destination. Continuous equivalent routes, day/night scripts and reversible-component schedules are design acceptance requirements—not claims about current performance [metric:accessible_equivalent_path_key_area_ratio] [metric:day_night_operation_key_area_ratio] [metric:reversible_component_project_ratio].
+
+Three users receive different but equivalent journeys. A resident can pose a question and leave with a paper receipt without installing an app. A developer enters with version, energy and failure evidence and leaves only after naming a maintainer. An international visitor uses a bilingual project passport to understand that testing is not procurement and can find human review and exit. AI-assisted concept scenes express spatial intent only; their people and buildings are not records of existing conditions. Final design requires survey, public co-design, accessibility, transport, flood, fire and structural review.
+
 ### Five public translation rights
 
 CTP makes public value inspectable through five spatial rights: **intelligibility** (understand the service without technical documentation), **equivalent choice** (human and non-digital paths remain equally visible), **correction** (errors and objections enter the return archive), **local pause** (affected groups can trigger review and temporary pause), and **public return** (every trial leaves open knowledge, spatial improvement or a reusable service). These are conceptual design principles; formal rights, duties and procedures must be established lawfully by authorities, operators and the public [standard:BARRIER-FREE-ENVIRONMENT-LAW] [depth:three_key_area_detailed_design].
