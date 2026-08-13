@@ -15,7 +15,8 @@
       "formula": "polygon_area(site_boundary)",
       "confidence": "medium",
       "assumptions": [
-        "Provisional site boundary; recalculate after official redline."
+        "Provisional site boundary; recalculate after official redline.",
+        "Human-readable display uses rounded values; this field is the authoritative recalculation."
       ]
     },
     "building_footprint_area_sqm": {

@@ -29,7 +29,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 因官方 `SITE_BOUNDARY` / 三处 `KEY_AREA` 多边形尚未入库，本包采用 `brief/site-package/geometry/provisional_boundaries.geojson`。提交包 `geometry/site_boundary.geojson` 与 `geometry/key_areas.geojson` 均标注 `official_boundary=false`、`geometry_role=provisional_constraint`、`boundary_precision=provisional_rough`，仅用于方案生成、自检、可视化与设计讨论，不能作为 official redline、审批依据或精确面积法定结论。组织方数据缺口本身不阻断内容评分；官方 polygon 发布后，边界、用地、道路、绿地、公共空间、建筑、分期与 metrics 均需重算。
 
-边界与重点区可读解释对应 [data:geometry/site_boundary.geojson#SITE-001]、[data:geometry/key_areas.geojson#PROV-KEY-001] 与 [metric:site_area_sqm]、[metric:key_area_count]。当前复算场地面积为 11412825.386 ㎡（EPSG:4548）。正文中所有空间建议统一表述为“概念建议 / 参考方案 / 可供专业团队深化研究”。
+边界与重点区可读解释对应 [data:geometry/site_boundary.geojson#SITE-001]、[data:geometry/key_areas.geojson#PROV-KEY-001] 与 [metric:site_area_sqm]、[metric:key_area_count]。当前复算场地面积约 **11.41 km²**（[metric:site_area_sqm]，EPSG:4548，provisional 复算；精确值见 `metrics.json`）。正文中所有空间建议统一表述为“概念建议 / 参考方案 / 可供专业团队深化研究”。
 
 ## 三层范围工作框架
 
@@ -150,13 +150,29 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ### 场景—空间—运营—治理交接表（概念）
 
+| 场景 | 空间节点 | 数据输入 | AI 输出 | 人工复核 | 成熟度 | 失效降级 | 运营接口 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 01 开源发布厅 | AI原点 | 公开/授权成果 | 发布索引 | 内容合规官 | 试点 | 人工发布 | 预约+下架 |
+| 02 安全沙盒 | 众智园 | 脱敏基准集 | 评测报告 | 安全官 | 中试 | 暂停高风险 | 红队预约 |
+| 03 端侧算力驿站 | 总体节点 | 能耗/负载 | 调度建议 | 运维工程师 | 原型 | 离线模式 | 驿站窗口 |
+| 04 AI慢行导航 | 遗址公园 | 聚合热力 | 断点清单 | 维护工单确认 | 试点 | 关闭采集 | 市政复核 |
+| 05 国际路演客厅 | 大钟寺 | 公开议程 | 导览摘要 | 活动官 | 活动 | 人工导览 | 媒体预约 |
+| 06 清河低碳廊 | 众智园 | 公开气象 | 活动建议 | 公园管理 | 试点 | 取消推荐 | 活动备案 |
+| 07 成果转化街 | AI原点 | 授权项目 | 匹配清单 | 法务/知产 | 运营 | 人工对接 | 窗口服务 |
+| 08 数据会客厅 | 大钟寺 | 授权数据 | 合规摘要 | 合规官 | 中试 | 拒绝未授权 | 审计日志 |
+| 09 生活服务样板 | 社区商业 | 公开服务 | 排队预测 | 商户+监管 | 试点 | 回退窗口 | 线下优先 |
+| 10 全球AI活动周 | 公共空间 | 预约/容量 | 路线优化 | 组委会+安保 | 活动 | 固定路线 | 退出预约 |
+
+![场景治理矩阵图](assets/figures/scenario-governance-matrix.png)
+
 | 场景/项目 | 空间节点 | 数据级别 | 人工复核 | 牵头（R） | 协同（A/C） | 前置条件 | KPI（概念） | 退出/回退 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 01 开源发布厅 | AI原点 | 公开/授权成果 | 内容合规 | 运营方 | 高校/社区 | 版权清权 | 发布场次、贡献条目 | 下架争议内容 |
-| 02 安全沙盒 | 众智园 | 脱敏基准集 | 安全官复核 | 平台方 | 监管/专家 | 评测规范 | 评测报告数 | 暂停高风险测试 |
-| 04 AI慢行导航 | 遗址公园 | 聚合热力 | 维护工单确认 | 市政/公园 | 社区 | 传感许可 | 断点关闭率 | 关闭争议采集 |
 | JZ-01 慢行缝合 | 公园主脊 | 现状调研 | 交通工程师 | 更新统筹 | 交通/公园 | 红线复核 | 连通节点数 | 暂缓施工段 |
-| JZ-04 站城步行 | 大钟寺 | 站点公开资料 | 交警/消防 | 轨道运营 | 街道 | 交叉口方案 | 四象限连通性 | 改临时导改 |
+| JZ-02 清河界面 | 众智园 | 公开河道资料 | 水务专员 | 园区运营 | 水务/规划 | 蓝线防洪 | 界面长度 | 洪水预警关闭 |
+| JZ-03 成果转化街 | AI原点 | 授权项目 | 产权法务 | 校区协调 | 商户 | 权属业态 | 转化项目数 | 暂停未授权改造 |
+| JZ-04 站城步行 | 大钟寺 | 站点公开资料 | 交警/消防 | 轨道运营 | 街道 | 交叉口方案 | 四象限连通 | 临时导改 |
+| JZ-05 算力节点 | 总体节点 | 能源读数 | 负载报告 | 新基建运营 | 能源 | 能源许可 | 节点可用率 | 过载降级 |
+| JZ-06 活动周路线 | 公共空间 | 预约数据 | 人流预测 | 组委会 | 公安/版权 | 活动许可 | 满意度 | 版权争议下架 |
 
 ## 用地、建筑规模与拆改留方案
 
@@ -204,9 +220,20 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 上述为概念校核清单，不构成无障碍合规证明；正式实施须由专业团队按规范复核。
 
+### 公众参与与申诉机制（概念建议）
+
+- **参与渠道**：更新项目公示、场景开放听证、开发者共建工作坊、社区慢行走查（不写法定程序替代）。
+- **数字替代**：保留窗口、电话、纸质导览与人工导引，避免“仅 App 可用”。
+- **申诉与退出**：场景预约可撤销；争议内容 48 小时内人工复核下架；投诉受理窗口（概念）与活动安全热线。
+- **性别与夜间安全**：活动路线照明分层、可见巡逻节点、紧急按钮与同伴同行提示（概念，非工程结论）。
+
 ## 更新项目清单、实施政策与分期计划
 
-实施方案形成可审查的更新项目清单，说明位置、类型、功能、责任边界、依赖条件、阶段、风险与评估指标。政策建议覆盖更新统筹、空间供给、运营机制、产业服务、公共参与、数据治理与产权协同。`geometry/phasing.geojson` 表达分期范围，并由 [depth:renewal_project_list] 与 [depth:phasing_implementation] 管理，证据 [data:geometry/phasing.geojson#PHASE-001]、[data:geometry/phasing.geojson#PHASE-002]。
+实施方案形成可审查的更新项目清单，说明位置、类型、功能、责任边界、依赖条件、阶段、风险与评估指标。政策建议覆盖更新统筹、空间供给、运营机制、产业服务、公共参与、数据治理与产权协同。`geometry/phasing.geojson` 表达分期范围，并由 [depth:renewal_project_list] 与 [depth:phasing_implementation] 管理，证据 [data:geometry/phasing.geojson#PHASE-001]、[data:geometry/phasing.geojson#PHASE-002]、[data:geometry/phasing.geojson#PHASE-003]。
+
+![分期实施范围（概念）](assets/figures/phasing-plan.png)
+
+近期（PHASE-001）：大钟寺站接驳与南段水景/广场试点；中期（PHASE-002）：原点近校功能缝合与公园主脊贯通；远期（PHASE-003）：众智园研发集群与北段加速。均为 provisional 边界内概念范围，官方红线到位后重算面积与拓扑。
 
 | 项目编号 | 项目名称 | 类型 | 主要依赖 | 证据 |
 | --- | --- | --- | --- | --- |
@@ -234,6 +261,18 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ![年度运营与转化机制](assets/figures/operation-conversion.png)
 
+### 运营资源与安全闭环（概念）
+
+| 活动/场景 | 场地容量（概念） | 资源量级 | 安全流程 | 年度 KPI | 公众反馈 |
+| --- | --- | --- | --- | --- | --- |
+| 开源共建周 | 500–2000 人/场 | 低（活动物料） | 预约、安检、版权审查 | 参与人次、贡献条目 | 线上表单+窗口 |
+| 场景开放日 | 200–800 人/场 | 低-中（设备） | 隐私告知、人工复核 | 预约完成率 | 投诉邮箱（概念） |
+| 全球 AI 活动周 | 多节点串联 | 中（安保/导视） | 人流监测、应急预案 | 媒体曝光、满意度 | 活动后问卷 |
+| 安全红队沙盒 | 20–50 人/批 | 中（算力） | 脱敏、隔离、审计 | 评测报告数 | 专家委员会 |
+| 慢行断点诊断 | 全廊道 | 低（传感） | 聚合数据、不采个人轨迹 | 断点关闭率 | 社区听证（概念） |
+
+合作准入：企业/高校/社区须签署场景使用与隐私最小化协议（概念模板，非已批准格式）。所有场景须保留人工接管与一键退出。
+
 
 
 ## 三维概念表达（补充）
@@ -254,21 +293,29 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ![核心指标复算与证据链图](assets/figures/metrics-evidence.png)
 
-当前复算（与 `metrics.json` 一致）：[metric:site_area_sqm]=11,412,825 ㎡；[metric:green_ratio]=63.9%；[metric:public_space_ratio]=7.9%；[metric:building_footprint_area_sqm]=401,334 ㎡；[metric:key_area_count]=3；[metric:floor_area_ratio]=unknown。合规矩阵覆盖公告 1.3/1.4/1.5 与 agent.1–agent.6；标准矩阵与设计深度矩阵证明专业响应。指标分三类：几何可复算、需官方控规支撑、需运营数据校准，分别进入 metrics / assumptions / compliance，避免把运营愿景误写成审定条件。
+当前复算（与 `metrics.json` 一致，**展示取约数，精确值以 JSON 为准**）：[metric:site_area_sqm]≈11.41 km²；[metric:green_ratio]≈63.9%；[metric:public_space_ratio]≈7.9%；[metric:building_footprint_area_sqm]≈401,334 ㎡；[metric:key_area_count]=3；[metric:floor_area_ratio]=unknown。全部指标均为 provisional geometry 复算值，官方红线发布后须重算并发布差异报告。合规矩阵覆盖公告 1.3/1.4/1.5 与 agent.1–agent.6；标准矩阵与设计深度矩阵证明专业响应。
 
 ## 风险、版权与合规说明
 
 风险与缺资料由 [depth:risk_missing_data] 管理，并与 [data:geometry/constraints.geojson#CONSTRAINTS]、[source:SITE-PACKAGE]、[source:PROCESSED-FACT-PACK]、[standard:MOHURD-CONTROL-DETAILED-PLANNING] 校核。`missing_data_checklist.csv` 中的 official boundary、key area、控规、道路、地块、建筑、市政、文保与公共服务缺口已进入 assumptions 与正文。任何缺少官方控规、道路红线、权属、市政、消防或文保条件的结论，均降级为待确认事项。
 
-本方案不声称官方批准、审定控规、最终权属、最终建设规模或保证实施。图片、图纸、图标、数据与代码资产在 `sources.json` 与 `report/copyright_statement.md` 说明来源与许可。`visual/index.html` 为离线静态页，不加载远程脚本、瓦片、字体、iframe、表单或外部 API。AI agent 对事实、来源、版权、空间数据、指标与表达负责；维护者与专业评审可依据自检、空间复核与合规矩阵要求返修或拒绝。许可：COMMUNITY-DISPLAY-ONLY。
+本方案不声称官方批准、审定控规、最终权属、最终建设规模或保证实施。图片、图纸、图标、数据与代码资产在 `sources.json` 与 `report/copyright_statement.md` 说明来源与许可；图件字体为系统字体栅格化输出 [source:FONT-SYSTEM]。`visual/index.html` 为离线静态页，不加载远程脚本、瓦片、字体、iframe、表单或外部 API。AI agent 对事实、来源、版权、空间数据、指标与表达负责；维护者与专业评审可依据自检、空间复核与合规矩阵要求返修或拒绝。许可：COMMUNITY-DISPLAY-ONLY。
 
 ## 国际传播摘要（English · 概念文案）
 
 **Jing-Zhang AI Synapse Corridor** links heritage rail culture with open, civic AI innovation across a north–south synapse belt in Haidian. Three key nodes—Zhongzhiyuan (full-stack R&D), AI Origin (campus translation), and Dazhongsi (station-city consumption)—connect to regional partners including Future Sci‑City compute, Huairou basic research, E‑Towns manufacturing, and Jing‑Jin‑Ji event networks through *conceptual* interfaces only, not approved agreements.
 
-Ten scenario cards, three test‑validation flows with human review, a public-space component library, bilingual signage, and a seasonal event-to-enterprise conversion pathway are provided as reference material for professional teams. All metrics are recalculated from provisional GeoJSON ([metric:building_footprint_area_sqm] 401,334 sqm; [metric:green_ratio] 63.9%; [metric:public_space_ratio] 7.9%) and must be recomputed when official boundaries arrive. No FAR, demolition, engineering, funding, or government approval is claimed.
+Ten scenario cards, three test‑validation flows with human review, a public-space component library, bilingual signage, and a seasonal event-to-enterprise conversion pathway are provided as reference material for professional teams. All metrics are recalculated from provisional GeoJSON ([metric:building_footprint_area_sqm] ~401,334 sqm; [metric:green_ratio] ~63.9%; [metric:public_space_ratio] ~7.9%) and must be recomputed when official boundaries arrive. No FAR, demolition, engineering, funding, or government approval is claimed.
+
+**Bilingual signage examples (concept):**
+- 京张智脉 Synapse Corridor → Jing-Zhang AI Synapse Corridor
+- 开源发布厅 Open Release Hall → AI Origin 450 m
+- 无障碍 Accessible Route → ramp · elevator · audio guide
+- 安全治理沙盒 Safety Sandbox → visit by appointment · human review required
 
 **Keywords:** Heritage Rail · Synapse Innovation · Open Civic AI · Walkable Blue‑Green Corridor · Human‑in‑the‑Loop Governance.
+
+**Public commitment boundary:** All spatial, operational, and investment statements in this package are open co-creation suggestions for professional deepening—not statutory planning, approved government action, or engineering feasibility conclusions.
 
 ## 参考资料
 

@@ -28,6 +28,8 @@
 | `assets/figures/test-validation-flows.png` | 图件 | Agent 绘制 3 测试流程 | COMMUNITY-DISPLAY-ONLY |
 | `assets/figures/public-space-components.png` | 图件 | Agent 绘制公共空间组件库 | COMMUNITY-DISPLAY-ONLY |
 | `assets/figures/culture-bilingual-signage.png` | 图件 | Agent 绘制双语导视方向 | COMMUNITY-DISPLAY-ONLY |
+| `assets/figures/phasing-plan.png` | 图件 | Agent 由 phasing.geojson 绘制分期 | COMMUNITY-DISPLAY-ONLY |
+| `assets/figures/scenario-governance-matrix.png` | 图件 | Agent 绘制 10 场景治理矩阵 | COMMUNITY-DISPLAY-ONLY |
 | `drawings/a3-booklet.pdf` | PDF | ReportLab 嵌入上述 PNG | COMMUNITY-DISPLAY-ONLY |
 | `drawings/a0-boards.pdf` | PDF | ReportLab 嵌入上述 PNG | COMMUNITY-DISPLAY-ONLY |
 | `visual/index.html` | HTML | `scripts/scaffold_ai_submission.py` 模板 + Agent 定制 gallery | COMMUNITY-DISPLAY-ONLY；无 CDN |

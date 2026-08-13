@@ -72,6 +72,12 @@
       "url": "https://maria.io/",
       "source_type": "official_public",
       "usage": "Public reference for startup community operations (agent.2 case study)."
+    },
+    {
+      "id": "FONT-SYSTEM",
+      "path": "System fonts (PingFang / STHeiti on macOS)",
+      "source_type": "system_font",
+      "usage": "Rasterized into PNG/PDF figures only; no embedded font redistribution."
     }
   ]
 }
