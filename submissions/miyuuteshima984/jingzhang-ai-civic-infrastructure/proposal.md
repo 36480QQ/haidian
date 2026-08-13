@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以城市完整度作为百年京张AI创新带的空间审查方法：居、学、护、行、绿、工、交七项普通城市能力先形成长期可用的日常底盘，AI作为可选增强层进入科研、社区、交通和商业。总体形成一条公共绿脊、六段完整度片区、六条东西缝合联系与三处重点区；爽粉堡垒仅作为AI原点社区中的社区命名彩蛋。"
 tracks: ["ai-origin-community", "ai-public-services", "ai-traffic-walkability"]
 scenarios: ["ai-traffic-walkability", "robot-delivery-low-speed", "enterprise-service-copilot", "ai-cultural-guide", "ai-health-service-navigation"]
-iteration: "v0.6"
+iteration: "v0.7"
 ---
 
 # 京张城市完整度 / JING-ZHANG CITY COMPLETENESS
@@ -115,6 +115,18 @@ v0.6 再从十个场景中抽出三个**旗舰试点协议**，让评审看到�
 ![三个旗舰试点协议：前置条件—测试—收据—GO/REVISE/STOP](assets/figures/flagship-pilot-protocols.svg)
 
 场景治理遵守同一底线：不用 App 仍能通行与获得基本服务；不参加测试不会失去社区权益；高风险判断转人工；设备或模型退出后，基本城市功能仍在。这既是技术鲁棒性，也是公共空间的公平性要求。
+
+### v0.7 三条日常城市链：把协议重新变成空间
+
+v0.7 不再把“评审索引”当作第一视觉，而从三类真实日常路径重新组织重点区：众智园的研究者与服务劳动者从到达、研发、吃饭休息走到受控测试；AI 原点的老人、照护者与无手机使用者从家门、休息、照护走到公共客厅；大钟寺的通勤者、国际访客与服务劳动者从到达、换乘、普通商业走到京张遗产公共界面。每条路径都先要求物理空间完整，再允许 AI 作为可关闭的增强层。
+
+![三条日常城市链：普通城市基线—空间补齐—可选 AI—退出后仍可用](assets/figures/everyday-journey-sections.svg)
+
+### AI 如何改变城市形态，而不是只增加屏幕
+
+AI 对城市形态的影响被压缩为六类可逆空间原型：测试口袋、无障碍求助节点、连续站城到达界面、可替换小型服务节点、人优先的公共首层，以及“观察—小范围原型—公共/专业复核—合并或回退”的可回退空间版本链。这回答的是 AI 如何改变空间组织和规划方法，而不是如何给既有空间附加更多数字界面。
+
+![AI 如何改变城市形态：六类可逆物理接口](assets/figures/ai-urban-form-change.svg)
 
 ## 用地、建筑规模与拆改留方案
 
@@ -222,11 +234,7 @@ v0.6 在此基础上增加**资源数量基础 + RACI + 维护频率 + 启动证
 
 ![城市完整度指标与资料缺口](assets/figures/metrics-evidence.png)
 
-v0.6 不把新增证据继续藏在附件末端，而新增“评审证据总表”和“评审证据索引”：前者把核心指标、三个旗舰试点、9 类人群、实施证据门和主张边界推到离线 visual 首屏；后者把七项公开 rubric 与 agent.1–agent.6 一跳映射到 proposal、图件、JSON、GeoJSON 和权利/来源证据。两者都不是自评分，也不把机器 gate PASS 解释为现场或法定有效性。
-
-![v0.6 评审证据总表](assets/figures/review-evidence-dashboard.svg)
-
-![七维 rubric 与 agent.1–agent.6 评审证据索引](assets/figures/reviewer-evidence-index.svg)
+v0.7 将 v0.6 的 reviewer evidence dashboard / index 降为后部追溯附件，不再作为设计叙事或首屏主视觉；评分、gate 与设计内容继续分离。
 
 ## 风险、版权与合规说明
 

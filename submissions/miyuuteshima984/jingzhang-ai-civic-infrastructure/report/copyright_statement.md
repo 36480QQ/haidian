@@ -96,3 +96,8 @@ The declared model for the submission agent is recorded in `agent.json`. AI-gene
 When official site/key-area polygons, regulatory controls, existing-building surveys, heritage boundaries, transport interfaces or municipal data become available, all affected geometry, metrics, figures, HTML and PDFs must be regenerated and revalidated before any professional or statutory use.
 
 Any future third-party image, font, code library, map layer, institutional logo or media asset must be added to this ledger with author/publisher, source, retrieval date, license/reuse term, transformation record, embedded/not-embedded state and reviewer note before it enters the formal package.
+
+## v0.7 design-first spatial diagrams
+
+- `assets/figures/everyday-journey-sections.svg` / `.en.svg`: submission-original / AI-assisted vector diagram; no third-party logo, image, map tile, font file, identifiable person or proprietary diagram is embedded. Conceptual storyboard only, not observed user behavior.
+- `assets/figures/ai-urban-form-change.svg` / `.en.svg`: submission-original / AI-assisted vector diagram; no third-party logo, image, map tile, font file or proprietary diagram is embedded. Spatial interfaces require later verification against official geometry, field surveys and professional requirements.
