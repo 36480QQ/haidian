@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Using the Jing-Zhang railway heritage as the spatial backbone, this proposal maps the three stages of the innovation chain — origin, transformation, market — onto three stations (Zhongzhiyuan, Beijing AI Origin Community, and Dazhongsi), forming an innovation production-line structure of "One Main Line, Three Stations, and Two Wings". The names of the three key areas and the three thematic belts belong to the official planning-naming layer, while "JINGZHANG EXPRESS" is a branding-and-narrative layer that does not replace official names. All spatial suggestions are conceptual recommendations generated on the basis of the provisional boundary, subject to recalculation once official data is completed."
 tracks: ["jingzhang-heritage-narrative","ai-origin-community","ai-public-services"]
 scenarios: ["ai-cultural-guide","ai-health-service-navigation","ai-traffic-walkability","enterprise-service-copilot","public-safety-operations-review","robot-delivery-low-speed"]
-iteration: "v0.1"
+iteration: "v0.4"
 ---
 
 # JINGZHANG EXPRESS: Turning the Centennial Jing-Zhang Railway into an Innovation Production Line
@@ -24,6 +24,21 @@ All machine-readable evidence is stored in the submission package's `geometry/*.
 
 The source list in this section falls into five categories: official announcements and task books, professional standards and local references, structured site data, processed-layer navigation materials, and temporary boundaries and assumptions. Every section retains the qualifiers "conceptual recommendation / reference scheme / subject to professional deepening"; any statement involving regulatory-plan indicators, building heights, demolition-renovation-retention, road planning boundaries, municipal pipelines, investment estimates, development sequencing, or event arrangements is written within these boundaries and must not be written as confirmed government decisions or implementation arrangements [source:DATA-SRC-AGENT-TASKBOOK-20260518].
 
+### Evidence Grading
+
+To help professional teams judge what each evidence layer can and cannot support, this proposal grades the package evidence into six levels below. This grading works with the recalculation rules and replacement-trigger logic of [depth:metrics_recalculation]; the upper bound of formal evidence is the announcement and task book [source:DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509] [source:DATA-SRC-AGENT-TASKBOOK-20260518].
+
+| Evidence level | Instances in this package | Can support | Cannot support |
+| --- | --- | --- | --- |
+| Tasks and professional standards (formal) | official announcement / rights-clearing task book / planning and regulatory-plan standards | task coverage, outcome depth, professional review principles | official polygons, ownership, engineering conditions, permits, or government commitments |
+| Registered formally usable sources | sources.json / source_registry.json | source usage, mechanism mapping, accountability back-linking | upgrading case performance or registry records into Haidian implementation facts |
+| Provisional spatial basis | site_boundary / key_areas / conceptual functional belts | conceptual siting, relative relationships, topological self-checks, and whole-replacement triggers | statutory land use, road planning boundaries, exact areas, building controls, or ownership |
+| In-package derived reasoning | GeoJSON / metrics.json / parametric candidate sets | recomputable trade-offs, node actions, version dependencies, and audit interfaces | as-built surveys, resident needs, facility capacity, AI capabilities, or formal recommendations |
+| Administrative/open background | statistics, policies, public cases, OSM schematics | calibrating questions, supplementary-data collection priorities, uncertainty notes | corridor demand, on-site performance, siting, partnership facts, or investment commitments |
+| Synthetic scenarios and governance methods | scenario cards, release gates, value compact | human-override, stop, exit, appeal, and follow-up verification design | on-site accessibility, public consent, professional seals, implementation permits, or competition scores |
+
+The grading does not change the existing "conceptual recommendation / reference scheme" qualifiers in any section: any judgment requiring statutory control, ownership, engineering, or investment support awaits official data and confirmation by professional teams before its conclusion can be upgraded [depth:metrics_recalculation].
+
 ## Three-Level Scope Framework
 
 The three-level scope is the working skeleton established by the announcement: the Coordinated Research Area covers approximately 43.6 square kilometers and is responsible for systematic research on the AI industrial ecosystem, strategic positioning, the innovation chain, and future city forms; the Overall Design Area covers approximately 11.4 square kilometers and is responsible for the overall urban renewal framework, industrial spatial layout, transport and municipal support, and urban character control, reaching the urban design depth of a regulatory detailed plan; and the Key-Area Detailed Design Area covers approximately 368.4 hectares and is responsible for detailed design of the three key areas, reaching the urban design depth of an integrated planning implementation plan [standard:PROJECT-OFFICIAL-ANNOUNCEMENT].
@@ -31,6 +46,8 @@ The three-level scope is the working skeleton established by the announcement: t
 Using the "innovation production line" as a metaphor, this proposal translates the three levels into a set of progressive railway segments: the coordinated level answers "where the entire production line is headed", the overall level answers "how marshalling, road networks, and station-city relationships are organized", and the key-area level answers "what each of the three stations builds and how it lands". The rhythm of the innovation chain from origin research, through transformation and incubation, to market agglomeration extends naturally from north to south along the Jing-Zhang railway: Zhongzhiyuan carries basic research and full-stack independent innovation, the Beijing AI Origin Community carries incubation and transformation, and Dazhongsi carries market, capital, and global exchange. The three levels are therefore not a disconnected set of drawings but the same production line expressed at different resolutions [depth:three_level_scope_framework].
 
 ![Overall concept and spatial structure overview (provisional boundary)](assets/figures/site-overview.en.png)
+Caption: the Qinghe and Xiaoyue rivers and the Metro Line 13 corridor shown are public schematic overlays for spatial anchoring only; they are not official redlines or transport-planning commitments [source:DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509].
+
 
 The area and layer evidence for the three-level scope is as follows: the Overall Design Area is expressed by `geometry/site_boundary.geojson#SITE-001` in the submission package, with a recalculated area of 11,412,825.386 square meters, consistent with the announced approximate 11.4 square kilometers (the difference stems from the precision error of the temporary boundary inference); the Key-Area Detailed Design Area is the sum of the three KEY_AREAs, and the quantity metric `key_area_count` is 3 [data:geometry/site_boundary.geojson#SITE-001] [metric:site_area_sqm] [metric:key_area_count]. Any area, proportion, building scale, or project count recalculated from the submitted geometry may only be discussed under the "provisional boundary" basis; after official polygons arrive, the entire set must be recalculated according to the replacement-triggered recalculation flow [depth:metrics_recalculation].
 
@@ -104,6 +121,35 @@ The objects of urban renewal are mainly inefficient spaces and areas flanking th
 ### Land-Use Structure
 
 The land-use structure is expressed by `geometry/land_use.geojson` (12 design parcels; codes follow the semantics of the Ministry of Natural Resources' *Guidelines for Land Use and Sea Use Classification for Territorial Spatial Survey, Planning, and Use Control*). Key codes and proportions (recalculated from metrics.json; all in design terms) are as follows: research land (0802) accounts for 25.4%, forming the main body of Zhongzhiyuan AI R&D and robot pilot R&D; park and green land (1401) accounts for 21.8%, i.e., the Jing-Zhang Heritage Park vitality belt; commercial services land (05) accounts for 12.7%, concentrated in Dazhongsi station-city commerce and AI-native consumption; healthcare and medical land (0806) accounts for 11.3%, supporting the Xiaoyue River wing's AI+ healthcare scenarios; urban community service facility land (0702) accounts for 10.2%; education land (0804) accounts for 7.8%; cultural land (0803) accounts for 6.4%; and urban residential land (0701) accounts for 4.4% [data:geometry/land_use.geojson#LU-001] [data:geometry/land_use.geojson#LU-006]. The quantitative support for the above proportions is given by [metric:land_use_share_0802], cross-checked against [metric:land_use_share_1401] and the park-green-land area. The complete areas and proportions of the land-use layout are in `metrics.json`; this section extracts only its design implications. All land parcels are design suggestions and do not constitute an approved land-use layout [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [depth:land_use_layout].
+
+### Parametric Candidate Sets: A Recomputable Spatial Trade-off Process
+
+This proposal frames the land-use structure as a set of **recomputable trade-off studies** rather than a single fixed answer: taking the 8 submitted land-use codes (05/0701/0702/0802/0803/0804/0806/1401) and the Overall Design Area area as inputs, it defines 3 transparent parameter groups — **People-First** (more green and community land, slightly less research), **Balanced** (small fine-tuning, structure unchanged), and **Machine-Synergy** (more research and commercial land, slightly less green and community land). Each group shifts the shares of only a few key categories by small deltas of ±0.2 to ±1.6 percentage points, keeping the other categories at their baseline shares; each candidate is recalculated as `area = share × site_area`, where the site area is taken from [metric:site_area_sqm] and the research and green baselines from [metric:land_use_share_0802] and [metric:land_use_share_1401], consistent with the recalculation rules of [depth:metrics_recalculation] [source:DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509].
+
+The shares and area deltas of the three parameter-group candidates are shown below. All candidates are **concept-level decision illustrations** with low confidence: they do not modify any submitted geometry, metric, or official statement, and serve only as a reference tool for professional teams weighing spatial trade-offs before the formal regulatory plan and ownership data arrive, expressed entirely as conceptual recommendations and reference schemes [source:DATA-SRC-AGENT-TASKBOOK-20260518] [depth:land_use_layout].
+
+| Candidate | Description | Research 0802 | Green 1401 | Commercial 05 | Community/Residential 0701+0702 | Others 0803/0804/0806 | Recalculated research 0802 area (m²) | Recalculated green 1401 area (m²) | Key deltas (Δpp) |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Baseline | Submitted current state (metrics recalculation) | 25.4% | 21.8% | 12.7% | 14.6% | 25.5% | 2,898,858 | 2,487,996 | — |
+| People-First | More green (+1.0) and community (+0.6), slightly less research (-1.6) | 23.8% | 22.8% | 12.7% | 15.2% | 25.5% | 2,716,252 | 2,602,124 | Research -1.6 / Green +1.0 / Community +0.6 |
+| Balanced | Small fine-tuning, structure unchanged | 25.2% | 22.0% | 12.7% | 14.6% | 25.5% | 2,876,032 | 2,510,822 | Research -0.2 / Green +0.2 |
+| Machine-Synergy | More research (+1.6) and commercial (+1.0), slightly less green (-1.3) and community (-1.3) | 27.0% | 20.5% | 13.7% | 13.3% | 25.5% | 3,081,463 | 2,339,629 | Research +1.6 / Commercial +1.0 / Green -1.3 / Community -1.3 |
+
+Note: each candidate row totals 100.0% (rounded to 0.1 percentage points); recalculated area = share × 11,412,825.386 m² [metric:site_area_sqm]. For the two most representative candidates (People-First and Machine-Synergy), the per-code deltas versus baseline are given below (area delta = Δpp × 11,412,825.386 m²) [metric:land_use_share_1401].
+
+| Land-use code | Category | Baseline | People-First | Δpp | Area delta (m²) | Machine-Synergy | Δpp | Area delta (m²) |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 0802 | Research | 25.4% | 23.8% | -1.6 | -182,605 | 27.0% | +1.6 | +182,605 |
+| 1401 | Park and green | 21.8% | 22.8% | +1.0 | +114,128 | 20.5% | -1.3 | -148,367 |
+| 05 | Commercial services | 12.7% | 12.7% | 0.0 | 0 | 13.7% | +1.0 | +114,128 |
+| 0702 | Urban community service facilities | 10.2% | 10.8% | +0.6 | +68,477 | 8.9% | -1.3 | -148,367 |
+| 0701 | Urban residential | 4.4% | 4.4% | 0.0 | 0 | 4.4% | 0.0 | 0 |
+| 0803 | Cultural | 6.4% | 6.4% | 0.0 | 0 | 6.4% | 0.0 | 0 |
+| 0804 | Education | 7.8% | 7.8% | 0.0 | 0 | 7.8% | 0.0 | 0 |
+| 0806 | Healthcare and medical | 11.3% | 11.3% | 0.0 | 0 | 11.3% | 0.0 | 0 |
+| Total | — | 100.0% | 100.0% | — | — | 100.0% | — | — |
+
+The candidate sets above are **concept-level decision illustrations**: low confidence, with no change to the submitted geometry, metrics, or official statements; once the official boundaries and regulatory-plan conditions (including official land-use and road planning boundaries) arrive, this candidate set will be fully recalculated through the replacement-triggered flow as a reference for professional teams [depth:metrics_recalculation] [data:geometry/land_use.geojson#LU-001].
 
 ### Development Intensity and Pending Regulatory-Plan Conditions
 
