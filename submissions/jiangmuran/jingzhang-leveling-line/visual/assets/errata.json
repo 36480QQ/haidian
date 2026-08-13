@@ -4,12 +4,12 @@
  "note_en": "A register of this package's own errors. Not a changelog: a changelog says what changed, this says what was wrong, what shape the error had, who found it, and which commit fixed it. Every entry names a commit, and the build verifies that commit exists and touched the file blamed. An errata register that cannot be joined to the repository is the defect it records.",
  "why_zh": "全场 351 份方案中没有一份勘误、撤回或作者自述的复盘。一个主张城市应当公开自身误差的方案，不能自己呈现一个无瑕的表面：它提出的整套机制都建立在「看不见失败的测量不值得信任」之上，文档同理。",
  "counts": {
-  "total": 65,
+  "total": 67,
   "by_found_by": {
    "audit": 25,
    "own-gate": 5,
    "external-reviewer": 4,
-   "self": 31
+   "self": 33
   },
   "by_shape": {
    "reference-does-not-resolve": 4,
@@ -25,6 +25,8 @@
    "six-classes-for-a-seven-class-partition": 1,
    "the-table-stopped-being-a-table": 1,
    "index-that-does-not-index": 1,
+   "the-fix-repeated-the-defect-one-row-lower": 1,
+   "a-claim-pointing-at-a-total-that-excludes-what-it-claims": 1,
    "number-read-off-a-drawing-instead-of-computed": 1,
    "recorded-where-it-was-found-not-where-it-is-looked-for": 1,
    "two-of-our-own-rules-collide-under-a-condition": 1,
@@ -481,6 +483,26 @@
    "what_zh": "图纸索引上方写「共十二张图纸，FIG.00–FIG.11 连续编号」，下方的表只有九行（FIG.01–FIG.09）。缺 FIG.00（全文开篇那张）、FIG.10（人视街道剖面）与 FIG.11（区域协同接口）——**而正文在 L531 按编号引用了 FIG.11**，把读者指向一个不含它的索引。同一处的复核清单则编号成 1…10、8、9，十二项用了十个号。",
    "why_zh": "两个语种带着同样的九行，所以这不是翻译疏漏，是**完整性声明写在表格上方那句话里、而不是由表格本身承担**。清单的编号是看得见的那个缺陷，危险的是另一个：清单上每一项都指名一个路径，一份把评审指向不存在文件的清单，比没有清单更糟。",
    "fix_zh": "两者都改为生成：索引由 `build_figure_index.py` 从随包 PNG 生成，句中的份数写自 `len(FIGURES)`，并断言每张随包图有编号、每个编号有文件、正文引用的每个 FIG.NN 都能解析到行；清单由 `enumerate` 编号，且十二项声明的 17 条路径必须全部在包内解析。"
+  },
+  {
+   "id": "E67",
+   "commit": "41c6c16e",
+   "file": "visual/assets/operations.json",
+   "found_by": "self",
+   "shape": "the-fix-repeated-the-defect-one-row-lower",
+   "what_zh": "E66 把维护工时并进了年运营总表。**紧接在那张表下面的一行没有跟着改**：「补齐十五分钟规则所需的新增年运营」按 9 个三等点、每月复测算工时与耗材，不含这 9 个点每年 12.8 件的标准件更换与 6.4 h 安装工时。于是同一份文件里，上表按修正后的模型计价，下表按修正前的模型计价，而两者本来是要放在一起比的——**这正是它们并排的唯一理由**。",
+   "why_zh": "**修一个缺陷的那次提交，把同一个缺陷留在了低一行的地方。** 这比原缺陷更值得记：E66 是一个模型从没有覆盖过维护；E67 是模型已经覆盖了，而复用它的第二处调用没有一起改。缺陷不在数学里，在**「同一个模型」这句话的作用范围**里——`annual_cost()` 与 `_reach_shortfall()` 都自称按同一模型计价，而其中一个的「同一模型」是修正前那一版。方向也一致地对本方案有利：现状网络的成本涨了 5%，合规网络的成本本该涨得更多（新点全是三等、全按月度复测），少算之后，**「补齐要多花多少」这个数偏小**，而那正是本图用来证明自己诚实的数。",
+   "fix_zh": "`_reach_shortfall()` 调用 `maintenance_load(9)`，把 6.4 h 安装工时并入新增工时；新增年运营 21,240–74,700 元 → **22,005–76,358 元**，新增专业工时 162–270 h → **168–276 h**；中英两版的补齐表各加一行「新增年更换件」，把件数与安装工时摆在明处，而不是只让它进总数。函数 docstring 写明这次遗漏，理由与 E60 相同：**下一个改这段代码的人需要知道「同一模型」这句话曾经有过一次不成立**。"
+  },
+  {
+   "id": "E66",
+   "commit": "41c6c16e",
+   "file": "visual/assets/operations.json",
+   "found_by": "self",
+   "shape": "a-claim-pointing-at-a-total-that-excludes-what-it-claims",
+   "what_zh": "FIG.18 把各标准件的更换周期加起来，得到全线每年约 11.3 件更换、约 5.7 h 工时，然后写：**「这落在已公布的年运营区间之内，所以维护不是这套机制的隐藏成本——它已经在表里了。」** 它不在表里。年运营表的工时口径是「年复测次数 × 人数 × 每次工时」——**只有复测**。耗材区间涵盖件本身，但没有任何一格涵盖把件装上去的人工。",
+   "why_zh": "**一张图指着一个数说「它包含这个」，而那个数恰恰不包含这个。** 本册记过的缺陷多是数错或没数；这一条是数是对的、话是错的，而错的方式最难被发现——它不制造矛盾，只制造一次没有人去做的核对。位置也值得记：说这话的是**专门讲维护的那张图**。如果连它都不去核对自己指向的总数，那么「已经在表里」这类句子在包内任何地方都不能被当作已核。**代价方向对本方案有利**（总额偏低），这与 E65 的采样偏差同向，是本册开始注意的一类：**便利的方向的错误更容易活下来。**",
+   "fix_zh": "改模型，不改句子——因为那句话描述的是表**应该**是什么样。`REPLACEMENTS_PER_YEAR` 与 `HOURS_PER_SWAP` 从 `fig_maintenance.py` 移入 `build_operations.py`，新增 `maintenance_load()`，年表分列「复测工时」与「维护工时」；付费工时 133–214 h → **139–220 h**，年运营 18,760–62,440 元 → **19,444–63,922 元**。FIG.18 改为陈述发生了什么，而不是它希望的情况：那些工时当时不在表里，现在在了，以及它使总额移动了多少。**本条由「交叉核对计算同一量的两处产物」这一做法查出**，与 E65 同法；见 E67——修它的那次提交本身又漏了一处。"
   },
   {
    "id": "E65",

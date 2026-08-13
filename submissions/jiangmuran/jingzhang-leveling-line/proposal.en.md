@@ -1184,14 +1184,15 @@ Sessions per year are converted from the re-survey cadence each point declares i
 | BM-303 | third | 12 | the sub-district office or residents' committee | 18–30 | 36–60 | 200–500 | community governance service procurement — sub-district |
 | **Total** | — | **47** | — | **139–220** | **148–244** | **2,800–6,800** | — |
 
-The table above prices the network **as laid out**. FIG.21 measures the worst walk on the line at 1,111 m — 30.9 minutes for P5 — and finds six of nine segments failing this proposal's own fifteen-minute rule; closing it needs nine more third-order points. **That is not the same table**: a compliant network costs the following again, on the same model. Letting the as-laid-out figure stand in for the compliant one is the substitution this package would flag in someone else's.
+The table above prices the network **as laid out**. FIG.21 measures the worst walk on the line at 1,111 m — 30.9 minutes for P5 — and finds six of nine segments failing this proposal's own fifteen-minute rule; closing it needs nine more third-order points. **That is not the same table**: a compliant network costs the following again, on the same model — re-survey hours, consumables, and the yearly part swaps and fitting labour for nine more kits (errata E67: this row counted re-survey only, the same omission the table above had just been corrected for, one row lower). Letting the as-laid-out figure stand in for the compliant one is the substitution this package would flag in someone else's.
 
 | To close the gap | |
 |---|---|
 | More third-order points | 9 |
 | More re-surveys a year | 108 |
-| More paid hours | 162–270 |
-| More annual cost | CNY 21,240–74,700 |
+| More part swaps a year | 12.8 (6.4 h to fit) |
+| More paid hours | 168–276 |
+| More annual cost | CNY 22,005–76,358 |
 
 **Volunteer hours are counted and not priced.** Pricing them would inflate a cost nobody pays; omitting them would pretend they are free. They are the hours this mechanism asks of residents each year, and that is a quantity to see before agreeing to it.
 
@@ -1452,12 +1453,12 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-65 entries. By finder:
+67 entries. By finder:
 
 | Found by | Count | What it says |
 |---|---|---|
 | Independent audit | 25 | The audit was run against the shipped package, not a draft |
-| The author | 31 | Found while working |
+| The author | 33 | Found while working |
 | This package's own gate | 5 | Caught at build time — which is what a gate is for |
 | **Reviewers outside this proposal** | **4** | [@anselasimov-web](https://github.com/anselasimov-web) on PR #1002; [@147228](https://github.com/147228) on PR #1065; [@Sonike](https://github.com/Sonike) on Issue #950; [@147228](https://github.com/147228) on Issue #950 / PR #1190 |
 
@@ -1483,6 +1484,7 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 | A measurement answering a question it cannot answer | 2 |
 | A number with no file behind it | 2 |
 | A rule applied to others but not to itself | 2 |
+| A claim pointing at a total that excludes the very thing it claims | 1 |
 | Attributed to a file that refuses to do it | 1 |
 | A claim outlived the corpus | 1 |
 | A claim this medium makes uncheckable in principle | 1 |
@@ -1494,6 +1496,7 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 | A requirement with nobody to execute it | 1 |
 | Six classes listed for a seven-class partition | 1 |
 | A term of art applied where it does not hold | 1 |
+| The commit that fixed a defect left the same defect one row lower | 1 |
 | The table stopped being a table | 1 |
 | Two of our own rules cancelling each other under a condition | 1 |
 
