@@ -636,18 +636,20 @@ This proposal creates no new administrative body, no new charge and no new manda
 
 #### 5.4 Alignment with global AI governance
 
-The "Temporal Commons + Transparency + Failure Records" model proposed by Jingzhang Rising echoes yet differs from international precedents [source:INTERNATIONAL-GOVERNANCE] [metric:governance_innovation_count]:
+The "Temporal Commons + Transparency + Failure Records" model proposed by Jingzhang Rising echoes yet differs from **publicly known categories of international governance practice**. The paradigms listed here are widely recognised international governance approaches, cited to situate this proposal's relative position - they are not performance-data citations of any specific project and are not treated as recomputable metrics:
 
-| Precedent | Location | Core mechanism | Jingzhang innovation |
+| Governance paradigm | Representative regions | Core mechanism | Jingzhang innovation |
 |-----------|----------|-----------------|---------------------|
-| Open Data Movement | Global | Public data opening | Jingzhang adds "application data return" (enterprises must contribute) + "failure record transparency" (not only successes) |
-| Regulatory Sandbox | Singapore, UK | Controlled experimentation | Jingzhang adds "temporal progression" (sandbox is not just short-term trial, but long-term ecosystem) |
-| AI Ethics Board | EU, California | Ethical review | Jingzhang adds "human fallback" (review findings translate to human-channel design) |
-| Data Commons | India, Kenya | Community data commons | Jingzhang adds "three-colour visualization" (governance becomes public landscape, not just backend data) |
+| Open Data Movement | Globally common practice | Public data opening | Jingzhang adds "application data return" (enterprises must contribute) + "failure record transparency" (not only successes) |
+| Regulatory Sandbox | Common regulatory tool used in Singapore, the UK, and elsewhere | Controlled experimentation | Jingzhang adds "temporal progression" (sandbox is not just short-term trial, but long-term ecosystem) |
+| AI Ethics Board | Common governance form in the EU, California, and elsewhere | Ethical review | Jingzhang adds "human fallback" (review findings translate to human-channel design) |
+| Data Commons | Common community practice in India, Kenya, and elsewhere | Community data commons | Jingzhang adds "three-colour visualization" (governance becomes public landscape, not just backend data) |
+
+**Necessary declaration**: the table above is a general comparison of governance-paradigm categories; it does not represent that this team has verified the official data or performance metrics of any specific project. Citing specific case data would require separate verification with a traceable, citable source.
 
 #### 5.5 Risk and boundaries of the temporal commons
 
-**Necessary declarations** of limit and assumption [assumption:A-TIMELANDS-001]:
+**Necessary declarations** of limit and assumption [assumption:A-CONTROLS-001]:
 
 1. **Data security and privacy legal boundaries**: All data sharing and publication in this proposal must strictly comply with PRC *Data Security Law* and *Personal Information Protection Law*; any data practice must be professionally assessed and approved by regulators.
 2. **Enterprise data property boundaries**: Ownership, use rights and benefit rights over enterprise-generated application data must be clearly defined in tenancy contracts; this proposal does not arbitrate property disputes.
