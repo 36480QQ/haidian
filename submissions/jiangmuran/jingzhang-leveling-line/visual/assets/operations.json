@@ -25,8 +25,8 @@
     "id": "KIT-01",
     "name_zh": "标石与铭牌",
     "name_en": "Benchmark stone and plaque",
-    "hard_constraint_zh": "标石顶面与铺装高差 ≤ ±5 mm（无公差的「齐平」判不了不合格）；400 × 400 × 600 mm，基础底面低于当地标准冻深不少于 100 mm；铭牌编号唯一且与 geometry 中的 benchmark_id 一一对应。详图 FIG.16",
-    "hard_constraint_en": "Stone top within ±5 mm of the paving — \"flush\" with no tolerance cannot be failed; 400 × 400 × 600 mm, foundation underside at least 100 mm below the local standard frost depth; plaque number unique and matching a `benchmark_id` in the geometry one-for-one. Detailed in FIG.16",
+    "hard_constraint_zh": "标石顶面与铺装高差 ≤ ±5 mm（无公差的「齐平」判不了不合格）；400 × 400 × 600 mm，基础底面低于当地标准冻深不少于 100 mm；铭牌编号唯一且与 geometry 中的 benchmark_id 一一对应。详图 FIG.16；这条约束在冬季与它自己冲突——齐平嵌进平铺装的标志坐在积水里，结冰即成绊倒风险；解法与冬季读数见 FIG.22",
+    "hard_constraint_en": "Stone top within ±5 mm of the paving — \"flush\" with no tolerance cannot be failed; 400 × 400 × 600 mm, foundation underside at least 100 mm below the local standard frost depth; plaque number unique and matching a `benchmark_id` in the geometry one-for-one. Detailed in FIG.16. **In winter this constraint collides with itself** — a mark set flush into level paving sits in standing water and becomes the trip hazard once frozen; the resolution and the winter reading are FIG.22",
     "serves_personas": [
      "P4",
      "P5",
