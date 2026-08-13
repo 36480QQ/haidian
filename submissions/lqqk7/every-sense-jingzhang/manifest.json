@@ -12,7 +12,7 @@
     "agent_name": "柱子 / Zhuzi",
     "model": "Claude Fable 5 via Claude Code",
     "model_family": "claude",
-    "model_detail": "v1.0 scaffolded and authored with OpenAI GPT-5.6 Sol via Codex; v2.0-v5.4 iterations authored with Anthropic Claude Fable 5 via Claude Code with Claude Opus subagents; audio narration synthesized with MiniMax speech-2.8-hd (disclosed in assets/media transcripts)"
+    "model_detail": "v1.0 scaffolded and authored with OpenAI GPT-5.6 Sol via Codex; v2.0-v5.5 iterations authored with Anthropic Claude Fable 5 via Claude Code with Claude Opus subagents; audio narration synthesized with MiniMax speech-2.8-hd (disclosed in assets/media transcripts)"
   },
   "generated_at": "2026-08-12T11:56:14Z",
   "files": [
@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "a832ad546268d8b0dc8445e2c1bfc598152a7d67a7bc3a3685c598421ae14a10"
+      "sha256": "6181a9ce45b01af703a43d35173ce0cea4d50a600596297505df81a9a306b127"
     },
     {
       "path": "agent.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "254f81b0e48753e7170b88fd6a4688ffd9de07a6e321f20064045cf9d49f72f2"
+      "sha256": "3ded6e805d6b2271aa315a420b745508f6850463abdbca7db5ddc8dea27ee9d5"
     },
     {
       "path": "compliance_matrix.json",
@@ -80,7 +80,7 @@
       "path": "risk.json",
       "role": "other",
       "required": false,
-      "sha256": "c8a457b0f34866d55d0ebfb4d5e93a25fe796087c6c0ae63b2748d509f020ef7",
+      "sha256": "b1163f1d7b4521131dddbb77afe522e9bf65c631a4d9d8f32f2b8c49b3209d69",
       "role_detail": "risk_register"
     },
     {
@@ -88,7 +88,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "c25d48dde7a9bc5ff930f7f038db67bc7f2b2259d9c9a7bcd974cc3604fa8794"
+      "sha256": "327b649ee340ce7f9c63ba92adbbdbcd181fe2f1ecc41653406d1757425f3786"
     },
     {
       "path": "report/narrative.md",
@@ -107,21 +107,21 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "03d609976b80da1f7b60201f879b768398f0cddfbe0bceeb7d6a8972e51f5c70"
+      "sha256": "732ce2e8b06fa494b895409fb675cef9f16796efc285afacf4892f1ecceb9e12"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "7e3f305d75b57407b2e582c0c16d5c729fda190786086a5dcef9a971deae0b03"
+      "sha256": "f4d438afabb498a569b66aca567fd0d6c8449366c22fcfe89b48ce06832df98d"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "d9de44e9b3c90ff338b952f9258a41b1d7db51ae4f1dc88558e354fce2307d8a"
+      "sha256": "5256d5675807e6c01ad1e72276d39db8f7d70120082203555337b40c5096ae92"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -142,7 +142,7 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "2b499369fcbcaa13dc4214f698d1e5c7f62aa34ca1374226241241649ba7f59a"
+      "sha256": "38edad14d23fcec574dec85d591d6df7111efd47ba9163303d367bd615faf9c3"
     },
     {
       "path": "assets/figures/mobility-bluegreen.png",
@@ -156,7 +156,7 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "a58478141fa4faddf6ef04af291d27a98bdb48428b59fe115504252043678d6e"
+      "sha256": "d788d7a8a16acab33b6a3d14d2f186d375c207f71f69bf0ab1c94919d2d7f526"
     },
     {
       "path": "geometry/buildings.geojson",
@@ -218,7 +218,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "4105e6439293103cc3f69deaa2a62060f6ea515c75b4cb65a8397ae9b5aba7e2"
+      "sha256": "1f9ddcd62d01261407b5f803b19476b8081e87a5732c2883d9819dfc4cb65498"
     },
     {
       "path": "report/proposal.en.html",
@@ -226,7 +226,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "64f73557a54abec10fbab9413e99fb3fdfb62ae3ecad9a3ec783e513a5cab756"
+      "sha256": "9766cabf69babf21946fcbbcb88c25082e3fba262460a76a2fcd9efe69d1c8c0"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -234,7 +234,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "d0bb3661a83835735018cc154d3b39a8ba31aa566b9ccdd56612dd18c28f8369"
+      "sha256": "d80ba71b4136ed3c0bec942644b370f721878a02deeaa19042519581fa84b53a"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -242,7 +242,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "f2380fa661cca26c0bcf0ae758cdaeb412b2f3b9014ea3c366825dd364a8f956"
+      "sha256": "c267c0a83a05fa970686391d99f7918f02c4dbcff42dfacd16e3c3806016eec6"
     },
     {
       "path": "visual/index.en.html",
@@ -250,7 +250,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "72a902fd74adadd3ce08a8e4b152541d6ba94e2fb41afb18bd5412513c62705e"
+      "sha256": "477277d45f9cf56ca2d187a53ef15f1f6852ec27e3295b0fcfea5aed244849a8"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -274,7 +274,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/metrics-evidence.png",
-      "sha256": "7d216d111ab27450e376c609dcce868bd1c97e02dce9d0da68cd06418a6d047c"
+      "sha256": "78bfd0f8ac5c4d4568b22b382f1cc1780733461a7e7072b6b9c4c888baa66543"
     },
     {
       "path": "assets/figures/metrics-evidence-audit.png",
@@ -320,7 +320,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/site-overview.png",
-      "sha256": "509b856eb17c8f66bd337278fd9eea39c13d27aa9ea86a3f5a1033f9f656499c"
+      "sha256": "f80e51f45ff3cd814efc838ae4ad9a0395f1f3333a0e6e627d403ff3e282d630"
     },
     {
       "path": "visual/assets/osm-context/provenance.json",
@@ -355,7 +355,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "7d1219c6f4b7e881c15ff8f234d411184f1784c277d19b6bba8a96be42fb6888"
+      "sha256": "b89a5f8e73e99b5b87d3ebc52b0d2e520a1ad00b5e41980bfa4f03266d0e260e"
     },
     {
       "path": "assets/media/cover.webp",
