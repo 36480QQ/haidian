@@ -12,7 +12,7 @@
     "agent_name": "柱子 / Zhuzi",
     "model": "Claude Fable 5 via Claude Code",
     "model_family": "claude",
-    "model_detail": "v1.0 scaffolded and authored with OpenAI GPT-5.6 Sol via Codex; v2.0-v5.6 iterations authored with Anthropic Claude Fable 5 via Claude Code with Claude Opus subagents; audio narration synthesized with MiniMax speech-2.8-hd (disclosed in assets/media transcripts)"
+    "model_detail": "v1.0 scaffolded and authored with OpenAI GPT-5.6 Sol via Codex; v2.0-v5.7 iterations authored with Anthropic Claude Fable 5 via Claude Code with Claude Opus subagents; audio narration synthesized with MiniMax speech-2.8-hd (disclosed in assets/media transcripts)"
   },
   "generated_at": "2026-08-12T11:56:14Z",
   "files": [
@@ -26,13 +26,13 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "2909f978fca5f239d11901dfa4df411fc45b0524238db2f883234e332e282456"
+      "sha256": "4a01334ca14e3a0770e0ca91a23a19190c3a343dc3fac92890682e5d7de24809"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "255e439bcf114c43f757c245befac0d8706f2b939b8b87e56cb5cbceb4f4ffbb"
+      "sha256": "c6c42aea1fb205b20eb342269c1d93cfcf200a53266cd9437bcd1d33a9b3b939"
     },
     {
       "path": "metrics.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "9a417023e60fd3060f88b0d4fa62ea583b85cd5dacc2ab9ba8e805a85b48a2cb"
+      "sha256": "0a00f37f1685c340578b80306da53e07fa0a9e873473b0c4a0fe535975d6df27"
     },
     {
       "path": "compliance_matrix.json",
@@ -88,7 +88,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "327b649ee340ce7f9c63ba92adbbdbcd181fe2f1ecc41653406d1757425f3786"
+      "sha256": "565d2d0bf2d52f674c7088f1b479f4be29f49027b730f75b8691f106489fd9df"
     },
     {
       "path": "report/narrative.md",
@@ -100,21 +100,21 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "aace5ac7d4e7716df61332b01aec9685fe85b2f68f261389d28f80290ce7b9d7"
+      "sha256": "21c3df3c7f2b2a3167adb7e6be3d266fa2a1a83258a0047d13d0829abd5346c2"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "71ec689801d29a25579c445f322c641435e860c95d3d06a874ad7045c29f7225"
+      "sha256": "e151eceb8b78bcf25b823e28913abdf9ecb99c2cc36f6e204b6c4a5106e986c4"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "5b3eaddfc224da91122062de4161f397338c5fb047543ce6c323274651ff80de"
+      "sha256": "ea16bd84789c09b92f65f085e46708f7293affb9865c56b81102061fda0aec00"
     },
     {
       "path": "visual/index.html",
@@ -128,7 +128,7 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "72d2366d67428e307f9915cbea9c2f601888ca9ce00eadb5a994f9bfc0642627"
+      "sha256": "9e31093aeda42274fc4fbedd822f63892fd57064c51cb9b5614e908bf3ec72fc"
     },
     {
       "path": "assets/figures/land-use-structure.png",
@@ -149,7 +149,7 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "96a7aeee0d666445a78143ad0a3efb7c9a28651a403dd5dd29ecace271ef4a88"
+      "sha256": "c19685158959cb565061ade697f7095ab15230afdbda95e98b0b08a98c1b50e9"
     },
     {
       "path": "assets/figures/site-overview.png",
@@ -218,7 +218,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "540ce7203f1f8868c22b1db0b592eef7acfbc79b2225518ec84ee1ac3fc66ea9"
+      "sha256": "aa86fc86e14505aaa65b91aea258a995c1475149132d785e1b92d5c312124ffc"
     },
     {
       "path": "report/proposal.en.html",
@@ -226,7 +226,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "9766cabf69babf21946fcbbcb88c25082e3fba262460a76a2fcd9efe69d1c8c0"
+      "sha256": "7801f35879cddce8b28c77e64517e0c0c426f2bab23793594e5ca2679e231145"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -234,7 +234,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "95cae3d94f771d7c9463a38edca9273d3971d96259a72ae279e1d8331056ac0d"
+      "sha256": "63f4e0cb705b1d2466f4e3d6ca7676682efc7487cc719a668575c10c18e6573c"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -242,7 +242,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "e18e184662be2ecc76ba95634bf123aa34d60560b59285c0fd8348b1697b8d6a"
+      "sha256": "9ca7393a20a34c04770bf548964b81536e059455635609fd9323066c8014b7ea"
     },
     {
       "path": "visual/index.en.html",
@@ -258,7 +258,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/key-areas.png",
-      "sha256": "3af2d8ab6ecfa2c703ab741784dfeab5c27a484021e3d0bdf4164e5c942b480b"
+      "sha256": "15754c22ea0ff2e508c84bfaceb4057048478a83c8c0ac3470a2d4c22516d8e6"
     },
     {
       "path": "assets/figures/land-use-structure.en.png",
@@ -297,7 +297,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/mobility-bluegreen.png",
-      "sha256": "060908ab2e0da2ba7366a4d4930fecb9ab3423d3c8edf9543f430a1e97045c04"
+      "sha256": "07d224a4a1a6df7add73aa52d01c864e10233d57e8becb5b574666c8bde092c7"
     },
     {
       "path": "assets/figures/mobility-bluegreen-audit.png",
@@ -355,7 +355,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "8bf29388c4febb732399ac8306c13c80cde415f5160a6890dc46e58cd99a9407"
+      "sha256": "ce1ebe89c6d09449a1409639fa47db0e008878cbfe7f0c5eaa86455fb02f4323"
     },
     {
       "path": "assets/media/cover.webp",
@@ -479,6 +479,15 @@
       "description_zh": "七个镜头的分镜与画面文字（中英）对照、旁白全文（含时间码）、与 proposal.md 的来源对应表、画面渲染与交互场景逐帧录制的方法记录、语音合成与权利声明、已知限制。同时论证看／听／读三条通道承载相同内容，是方案 AI ON = AI OFF 等价路径原则在自身交付物上的应用。",
       "description_en": "A shot-by-shot storyboard with bilingual on-screen text, the full narration with time codes, a source mapping to proposal.md, the production record for frame rendering and for the frame-accurate capture of the interactive scene, the synthesis and rights statement, and known limitations. It also documents that watching, listening and reading carry identical content, applying the proposal's own AI ON = AI OFF equivalence principle to its own deliverable.",
       "sha256": "a8819cf8fb0283cb9c4cb69245eee1b39ad233028ee5b10d6b6e04e2ea3680f5"
+    },
+    {
+      "path": "visual/assets/ethics-protocol.json",
+      "role": "sources",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "伦理与同意协议包（模板 · 未执行）",
+      "title_en": "Ethics and consent protocol pack (templates, not executed)",
+      "sha256": "be11b607996eccbf08f0e89647389671b8d3b4c85e283967c9e07c5eb299f4fb"
     },
     {
       "path": "visual/assets/seb-spec.json",
