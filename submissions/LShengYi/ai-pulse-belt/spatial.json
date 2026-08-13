@@ -285,6 +285,22 @@
         "mode": "concept",
         "label": "总体设计区南端，见 LU-001"
       }
+    },
+    {
+      "id": "node-safety-review",
+      "type": "node",
+      "title": "公共安全AI运营评审点",
+      "summary": "公共安全类 AI 应用（应急调度辅助、事件检测提示等）仅做运营评审研究、不替代人工复核的治理节点，对应官方场景注册 public-safety-operations-review。",
+      "source": "geometry/public_space.geojson#PUBLIC-013",
+      "public_level": "public",
+      "linked_scenarios": [
+        "public-safety-operations-review"
+      ],
+      "order": 19,
+      "geometry": {
+        "mode": "concept",
+        "label": "公共安全运营评审节点（概念），详见 PUBLIC-013"
+      }
     }
   ]
 }

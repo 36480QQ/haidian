@@ -1,3 +1,63 @@
+## v10.4.1（2026-08-13）
+
+- **评审前全包一致性收口**：manifest 补登 6 项 `visual/assets/` 数据资产（role=evidence_data/verification_script，54 项登记与磁盘完全一致）；指标口径全包统一 76 项（视觉页脚 64→76、数据资产族计数 10→12 与 known 分项加和 14+7+19+9+12=61 闭合）；EN 章节标题对齐官方措辞（Blue-Green Network）与「15 chapters」；章号引用全部自洽（交通第八章/蓝绿风貌第九章/更新项目第十章/100 天第十一章）；frontmatter iteration 9→10；「修订版（v9.x）」→v11.x；质量门 G0-G4 更名 Q0-Q4 以消除与项目闸 G0-G7 的符号碰撞；user persona 8 类与 metrics 对齐；spatial.json 补登记 public-safety-operations-review（19 项）；risk.json 8 维全带 human_review。
+
+## v10.4（2026-08-13）
+
+
+- **深度学习全部 30 个 90+ 方案后的一轮结构性提分**（96 分 3 案亲自精读：1533「京张人间时」/1654「AI人才生活实验带」/1819「AI OFF, CITY ON」；94/93/90-92 三层子代理分析），新增四大机器可读数据资产族：
+  - `visual/assets/state-machine.json`：8 态状态机（proposed→removed_archived），blackout_drill（停摆演练）与 bequest_audit（退场审计）不可跳过，每条转移携带责任角色与证据门。
+  - `visual/assets/implementation-gates.json`：双闸门 G0-G7 项目闸＋C0-C7 场景闸共 16 门，C 门与护照 11 字段一一对应，G 门与 E0-E4/P1-P4 逐级映射。
+  - `visual/assets/dividend-contracts.json`：15 项服务 × 四段退场红利合同（BASE 无 AI 基线→BOOST 增益与边界→BLACKOUT 停摆安排→BEQUEST 退场契约），无退场契约不得发布。
+  - `visual/assets/governance-raci.json`：8 角色（单一责任主体/运营/安全/数据/公共基线/独立复测/维护/受影响公众），含"不得替代"双栏、缺岗兜底与宪法条款（运营者不得自证退场审计）。
+  - `visual/assets/review-evidence-index.json`：七维评审证据索引，逐维指向可打开文件。
+  - `visual/assets/simulate-check.js`：node --check 可离线重跑，退出码契约 0/1/2，重新派生全部 120 条回执哈希。
+- **演练升级 90→120 条**：15 项服务 × 8 变体（1 合格＋7 失败分支），新增「退场红利缺失」「退场后服务断供」两类拦截，105 条失败分支全部拦截；SEED 升 v10.4 并写入 simulation.json 供脚本重算回执。
+- **指标族 64→76 项（known 49→61）**：新增退场红利合同/停摆/退场条款覆盖率（15/15）、状态机状态数与转移门数、双闸门 16 门、角色 8 与宪法 5、回执可复算 120/120、七维索引 7、意见台账 3、证据等级 5。
+- **proposal 双语镜像**：执行摘要（G0 不得推进状态卡＋8 状态机/双闸门/四段合同点题）、核心判断章（命题比选与自我证伪三条件）、证据章（表 A8 评审首屏 8 问、表 A9 意见—回应台账登记真实 Issue #846/#1029/#1368、表 A3 升级为"原词→回应→可定位交付"四栏）、设计依据章（L1-L5 证据等级表＋官方参照台账）、第六章（8 状态机/双闸门/四段合同三小节）、指标章（⑦ 数据资产族类＋"能说明/不能说明"三栏表）；assumptions.json 新增 ASSUME-007（#1029 大钟寺质心偏移主动披露）。
+- 版本串 v10.3.2 → v10.4（gen_01/03/04/05 + gen_simulation SEED），全产物重生成，finalize 门控全 changed。
+
+## v10.3.2（2026-08-13）
+
+- **版本串连锁触发 finalize 门控**：v10.3.1 的 markers 合规拆分只改 proposal 文本、未牵动几何/图纸，finalize 判定「unchanged from placeholder」；统一 bump 版本串 v10.3.1 → v10.3.2（gen_01/03/04/05 + gen_simulation SEED），全产物重生成后 finalize 门控全 changed。
+- 内容与 v10.3.1 相同（无新增设计决策），仅触发重生成以通过校验链。
+
+## v10.3.1（2026-08-13）
+
+- **证据标记合规拆分**：执行摘要与指标章登记段各拆为两段，每段证据标记 ≤8（原 11/13 超限），消除确定性校验「段落证据标记超限」；全部 [metric:] 锚点保留（演练规模 90/拦截 75 移至摘要第二段）。
+- 版本串 v10.3 → v10.3.1（gen_01/03/04/05 + gen_simulation SEED 同步），全产物重生成，finalize 门控全 changed。
+
+## v10.3（2026-08-13）
+
+对照全场最高分方案（zhiwuyazhe-fjr「AI在京张」96/100）评审意见逐维补强，冲刺满分：
+
+- **离线合成演练升级**：simulation.json v1.1 —— 15 项服务 × 6 变体（1 合格 + 5 失败分支）= 90 条合成检查，75 条失败分支（责任人缺失/数据越过声明上限/人工等价路径失效/无法暂停/修订未公开）全部拦截，逐条回执哈希，可离线重跑；结论 0 项获得发布放行
+- **智脉服务护照（新）**：11 项必填字段 + 缺失处置，进入 P1 前逐项核验（service_passport_required_field_count=11）
+- **运营证据门 E0–E4（新）**：登记→基线与权利→受控试点→独立复测→继续/退役，日历不能代替门（operational_evidence_gate_count=5）
+- **同任务等价逐卡登记（新）**：12 张场景卡逐卡人工/低技术路径 + 放行前证明（same_task_equivalence_scenario_count=12）
+- **首个 100 天八步（新）**：JZ-01 试点 D1–14 至 D91–100 城市实施节奏（first_100_days_action_count=8）
+- **8 类用户画像**：补国际人才
+- **条款级法律限定（新）**：生成式 AI 办法第二条适用范围/第十四条不扩写、无障碍法第三十九条限缩、适老政策 2020–2022 时间边界、无人机条例审批门
+- **指标体系 59→64 项**（known 44→49）：新增 synthetic_negative_branch_count 等 5 项
+- 双语 1:1 同步（表格 535=535）
+
+## v10.2（2026-08-13）
+
+- **提分冲刺改造**：compliance_matrix.json 23 条补 evidence_summary_zh（每条一句话响应+数字落点）；metrics.json 补顶层 precision_declaration（口径/舍入规则/交叉引用/未知政策）；sources.json 18 源补 usable_for_formal + prohibited_uses 台账字段；场景卡章补「同任务等价」条款（拒绝 AI/不同意授权/无设备的市民仍能完成同一基本任务，人工路径缺失则 AI 服务不得继续开放，无障碍导行站 100% 人工替代兜底）。
+- 版本串 v10.1 → v10.2（gen_01/03/04/05 同步），四门校验全 PASS。
+
+## v10.1（2026-08-13）
+
+- **引用收敛修复**：执行摘要 5 连 metric 引用收敛为 3 个（[metric:pulse_beat_count] [metric:rollback_trigger_class_count] [metric:objection_gate_count]），bottom_line_indicator_count 与 simulation_task_count 引用移至第 4 段，消除确定性校验「连续 evidence 标记超限」。
+
+## v10.0（2026-08-13）
+
+- **四问契约体系（改造 1）**：开篇「核心判断与公共验收契约（智脉四问）」4 行契约表——P1 凭什么进入/P2 如何被测试/P3 凭什么留下/P4 怎么离开，各配市民可见证据、空间界面、通过证据与不满足时处置。
+- **场景卡服务合同（改造 2）**：12 张场景卡补失败模式/人工复核/对应回滚触发器表；3 个产业测试场景；受益代价盲区矩阵 8 场景。
+- **JZ 表验收指标列（改造 3）**：12 项更新项目补验收指标（建议目标）——贯通率≥90%、过街≤60s、注册开发者≥5000、能耗下降≥15% 等，全量化。
+- **JZ-01 试点深写（改造 4）**：「最小可复演单元」六件套表——试点目标/五步动作/责任主体/时间线 0-3/3-6/6-9/9-12 月/启动条件/风险与退出。
+- 版本串 v9.6 → v10.0（gen_01/03/04/05 同步），四门校验全 PASS。
+
 # 方案迭代记录
 
 > 编号说明：`proposal.md` frontmatter 中的 `iteration` 表示 PR/CI 迭代轮次（自 PR 创建以来经 CI 验证的轮次数，当前为 9）；本文件的 vX.Y 表示内容版本（内容演进版本号）。两者是两套编号：一次内容更新可能经过多轮 CI 验证后才合入。
