@@ -6,7 +6,7 @@ bilingual_contract_version: "1"
 language: "en"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "Formal AI urban design package generated on a provisional boundary and structured self-check requirements; precision caveats and recalculation requirements are retained, but organizer data gaps do not block content scoring."
+summary: "Using the Jing-Zhang Railway's 'twin-track parallel' tradition as method: every AI city service must have a parallel non-AI track—human handoff, paper-completable, resident-exitable, no degradation when AI is off. City intelligence is measured by 'whether the city still works after the AI layer is removed.'"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
