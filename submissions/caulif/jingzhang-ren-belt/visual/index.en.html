@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>REN BELT visual overview</title>
+<style>
+:root{--ink:#162033;--muted:#667085;--paper:#fff;--soft:#f4f1ea;--line:#d7dee8;--navy:#19324a}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,"PingFang SC","Microsoft YaHei",sans-serif;background:#e8edf2;color:var(--ink);line-height:1.55}
+.wrap{max-width:1280px;margin:auto}header{background:var(--navy);color:#fff}
+.hero{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:24px;padding:28px 22px}
+h1{font-size:30px;margin:0 0 10px}h2{font-size:20px;margin:0 0 8px}h3{font-size:16px;margin:0 0 6px}p{margin:0 0 8px}
+.hero-copy{color:#d5e0ea;font-size:15px}
+.status-box{border:1px solid rgba(255,255,255,.22);border-radius:8px;padding:14px;background:rgba(255,255,255,.06)}
+.pill-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.pill{border:1px solid rgba(255,255,255,.26);border-radius:999px;padding:5px 10px;font-size:12px}
+main{padding:18px 16px 40px}
+.sheet{background:var(--paper);border:1px solid var(--line);border-radius:8px;margin:0 auto 16px;overflow:hidden}
+.sheet-head{padding:16px 18px;border-bottom:1px solid #e6ebf2}
+.fig{display:block;width:100%;height:auto;border-bottom:1px solid var(--line)}
+.metric{display:flex;justify-content:space-between;border-bottom:1px dashed #e2e8f0;padding:6px 0}
+.matrix,.scenario-grid,.implementation-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;padding:16px}
+.card{border:1px solid var(--line);border-radius:8px;padding:12px;background:var(--soft);font-size:13px}
+.risk{border:1px solid #e6b8b3;background:#fdf2f0;border-radius:8px;padding:12px;margin:16px}
+.note{font-size:12px;color:#94a3b8;padding:0 16px 14px}
+@media(max-width:900px){.hero,.matrix,.scenario-grid,.implementation-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header><div class="wrap hero"><div>
+<p class="pill-row"><span class="pill">three scopes</span><span class="pill">key areas</span><span class="pill">land use</span><span class="pill">slow travel</span><span class="pill">blue-green</span></p>
+<h1>Centennial Jing-Zhang REN BELT</h1>
+<p class="hero-copy">The main visual is a 9 km heritage corridor and three civic nodes, not equal-weight rectangles. This page is offline. Numbers still come from GeoJSON and metrics.json.</p>
+</div>
+<aside class="status-box"><strong>Self-check</strong>
+<p>Four gates are re-run after finalize. Boundary is provisional, not a legal redline.</p>
+<p>#1029 Dazhongsi box is ~2.26 km from the metro. #846 provisional site does not meet the OSM park.</p>
+</aside></div></header>
+<main class="wrap">
+<section class="sheet"><div class="sheet-head"><h2>Overview map</h2></div>
+<img class="fig" src="../assets/figures/site-overview.en.png" alt="Overview">
+<div class="risk"><h3>Metrics</h3>
+<div class="metric"><span>site_area_sqm</span><strong data-metric="site_area_sqm" data-value="11412825.386">11412825.386</strong></div>
+<div class="metric"><span>green_ratio</span><strong data-metric="green_ratio" data-value="0.239667">0.239667</strong></div>
+<div class="metric"><span>public_space_ratio</span><strong data-metric="public_space_ratio" data-value="0.104222">0.104222</strong></div>
+</div></section>
+<section class="sheet"><div class="sheet-head"><h2>Three scopes / key areas / land use / mobility</h2></div>
+<img class="fig" src="../assets/figures/key-areas.en.png" alt="Key areas">
+<img class="fig" src="../assets/figures/land-use-structure.en.png" alt="Land use">
+<img class="fig" src="../assets/figures/mobility-bluegreen.en.png" alt="Mobility">
+<img class="fig" src="../assets/figures/metrics-evidence.en.png" alt="Metrics">
+</section>
+<section class="sheet"><div class="sheet-head"><h2>Twelve scenes and twelve delivery cards</h2></div>
+<div class="scenario-grid">
+<article class="card"><h3>S01–S04</h3><p>Publish hall, safety sandbox, edge compute, slow guide.</p></article>
+<article class="card"><h3>S05–S08</h3><p>Pitch hall, Qinghe corridor, transfer street, data parlour.</p></article>
+<article class="card"><h3>S09–S12</h3><p>Living street, AI Week, memory guide, Origin art.</p></article>
+</div>
+<div class="implementation-grid">
+<article class="card"><h3>JZ-01 / JZ-07</h3><p>Walk continuity now; four-quadrant walk waits official polygon.</p></article>
+<article class="card"><h3>Inclusion</h3><p>No smartphone gate. Paper, phone and staff stay open.</p></article>
+<article class="card"><h3>Q1–Q4</h3><p>Lab, repair week, AI Week, public audit walk.</p></article>
+</div>
+<p class="note">Sources in sources.json. No CDN, iframe, form or fetch.</p>
+</section>
+</main>
+</body>
+</html>
