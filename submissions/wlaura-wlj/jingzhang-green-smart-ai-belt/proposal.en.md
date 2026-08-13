@@ -240,29 +240,40 @@ Aligned with the "Green & Smart" theme, five core user personas are defined [age
 
 5. **Green Guardian**: Community operators, environmental volunteers, and resident representatives. Core needs: participatory governance, environmental data transparency, community belonging. Spatial preferences: community gardens, participatory planning workshops, environmental monitoring platforms.
 
-### AI+ Scenario Cards (10 Cards)
+### AI+ Scenario Cards (10 Full Scenarios + 3 Test Scenarios)
 
-The following summarizes 10 AI scenario cards [agent:3]. Complete details are in the scenario registry under `scenarios/`.
+The following presents all 13 AI scenario cards in a unified format [agent:3]. Because the current package schema does not support a separate `scenarios/` directory, the complete scenario registry is provided here for reviewer verification.
 
-**Scenario 1: Green Vein AI Slow-Mobility Navigation System** — Location: full length of Jing-Zhang Heritage Park Smart Slow Lane. Users: all. Data sources: environmental sensors, pedestrian flow cameras, anonymized mobile signaling. Privacy: no facial recognition, edge-processed data. Operation: municipal public infrastructure.
+#### Full Scenarios
 
-**Scenario 2: Qinghe AI Water Quality-Ecology Digital Twin** — Location: Zhongzhiyuan segment of Qinghe wetlands. Users: researchers, public. Data sources: water quality sensors, cameras, weather stations. Test Validation Scenario #1.
+| ID | Scenario | Location | Users | Problem Addressed | Core Capability | Data Sources | Privacy / Security Controls | Key Indicators | Operation Model |
+|---|---|---|---|---|---|---|---|---|---|
+| S01 | Green Vein AI Slow-Mobility Navigation | Full length of Jing-Zhang Heritage Park smart slow-mobility lane | Citizens, visitors | Unclear slow-mobility routes and poor green-vein accessibility | Real-time optimal routing, congestion prompts, accessible paths | Environmental sensors, pedestrian-flow cameras, anonymized mobile signaling | No facial recognition; edge processing; aggregated heatmaps only | Green-vein usage up ≥20%; satisfaction ≥4.2/5 | Municipal public infrastructure |
+| S02 | Qinghe AI Water Quality-Ecology Digital Twin | Zhongzhiyuan segment of Qinghe wetlands | Researchers, public | Opaque water quality and ecological status | Real-time water monitoring, digital twin, anomaly alerts | Water-quality sensors, cameras, weather stations | Environmental video for ecological observation only; no face capture | Water-quality compliance rate; public education visits | Government + research institutions |
+| S03 | AI Energy Microgrid Dispatch | All three key areas | Building managers, grid operators | Renewable energy volatility and low energy efficiency | PV-storage-load coordination, demand response | PV generation, building energy use, electricity price signals | Building-level aggregated data; no resident personal information | Renewable energy share ≥20%; peak-load reduction ≥10% | AI energy management service provider |
+| S04 | Community AI Waste Sorting & Carbon Credits | Innovation Living Communities | Residents | Low waste-sorting participation and hard-to-quantify carbon reduction | Smart sorting guidance, carbon-credit incentives, reduction statistics | Smart bin sensors, carbon-credit system | Resident identity linked via anonymous ID; revocable authorization | Sorting accuracy ≥85%; household carbon-credit growth | Community operator + third-party carbon accounting |
+| S05 | Dazhongsi AI Retail Experience Navigator | Dazhongsi AI MALL | Consumers, merchants | Insufficient commercial vitality and homogeneous experience | Indoor AR navigation, personalized recommendations, merchant linkage | Product databases, anonymized user behavior | Behavioral data minimized; optional consent; deletable | Visitor conversion rate; merchant satisfaction | Commercial operation |
+| S06 | Wudaokou Autonomous Delivery Network | AI Origin Community | Community residents, merchants | Low last-mile delivery efficiency and road conflicts | Low-speed autonomous delivery using green-vein lane | Route data, delivery orders | Order information encrypted; addresses obfuscated | Delivery on-time rate; incident rate; merchant coverage | Logistics operator + property management |
+| S07 | Green Vein AR Time-Travel Tour | Full length of Jing-Zhang Heritage Park | Visitors, citizens | Weak historical-cultural perception and low interaction | AR overlay of historical railway imagery, AI commentary | Historical imagery, 3D models, GPS/Bluetooth positioning | Positioning limited to scenario needs; no trajectory upload | Tour usage rate; cultural satisfaction | Cultural operation |
+| S08 | AI Public Space Vitality Monitoring & Adaptive Management | All public spaces | Space managers, public | Unbalanced space use and lagging facility dispatch | Real-time occupancy, adaptive facility dispatch | Thermal sensors, anonymized Wi-Fi probes | MAC hashes deleted within 24 h; only aggregated occupancy output | Space utilization; facility response time | Municipal public management |
+| S09 | AI-Assisted Participatory Planning Platform | Community centers, online platform | Local residents, planners | Few public-participation channels and hard-to-implement feedback | Plan visualization, opinion collection, impact simulation | Resident feedback, spatial data | Real-name or anonymous optional; de-identified before disclosure | Participants; suggestion adoption rate | Community co-governance |
+| S10 | Carbon-Neutral AI MRV System | Entire area | Government, enterprises, public | Difficult carbon accounting and high verification cost | Multi-source data fusion, automated MRV, public reporting | Energy, transport, building, green-space data | Enterprise data encrypted; personal data excluded from MRV | Carbon emission intensity reduction; verification coverage | Regional carbon management platform |
 
-**Scenario 3: AI Energy Microgrid Dispatch System** — Location: all three key areas. Users: building managers, grid operators. Data sources: PV generation, building energy consumption, electricity price signals. Operation: AI energy management service provider.
+#### Test Scenarios
 
-**Scenario 4: Community AI Waste Sorting with Carbon Credits** — Location: Innovation Living Communities. Users: residents. Data sources: smart bin sensors, carbon credit system. Test Validation Scenario #2.
+| ID | Scenario | Location | Test Objective | Validation Content | Exit Criteria |
+|---|---|---|---|---|---|
+| T01 | Qinghe AI Water Quality-Ecology Digital Twin (pilot) | Zhongzhiyuan segment of Qinghe wetlands | Verify sensor density and model accuracy | Real-time water parameters and digital-twin visualization | ≥95% data completeness for 30 consecutive days; public comprehensibility ≥80% |
+| T02 | Community AI Waste Sorting & Carbon Credits (pilot) | 1–2 Innovation Living Communities | Verify resident willingness and incentive effects | Sorting accuracy, credit redemption rate, privacy acceptance | Pilot community sorting accuracy ≥80%; participation rate ≥60% |
+| T03 | Wudaokou Autonomous Delivery Network (pilot) | Local area of AI Origin Community | Verify low-speed AV coordination with slow-mobility lane | Operational safety,通行效率, resident acceptance | Zero at-fault incidents during pilot; on-time delivery rate ≥90% |
 
-**Scenario 5: Dazhongsi AI Retail Experience Navigator** — Location: Dazhongsi AI MALL. Users: consumers, merchants. Data sources: product databases, anonymized user behavior. Operation: commercial operation.
+#### Scenario-Space-Operation Mapping
 
-**Scenario 6: Wudaokou Autonomous Delivery Network** — Location: AI Origin Community. Users: community residents, merchants. Data sources: route data, delivery orders. Test Validation Scenario #3.
-
-**Scenario 7: Green Vein AR Time-Travel Tour** — Location: Jing-Zhang Heritage Park full length. Users: visitors, citizens. Data sources: historical imagery, 3D models. Operation: cultural operation.
-
-**Scenario 8: AI Public Space Vitality Monitoring & Adaptive Management** — Location: all public spaces. Users: space managers, public. Data sources: thermal sensors, anonymized Wi-Fi probes. Operation: municipal public management.
-
-**Scenario 9: AI-Assisted Participatory Planning Platform** — Location: community centers, online platform. Users: local residents, planners. Data sources: resident feedback, spatial data. Operation: community co-governance.
-
-**Scenario 10: Carbon-Neutral AI MRV (Monitoring-Reporting-Verification) System** — Location: entire area. Users: government, enterprises, public. Data sources: energy, transport, building, and green space data. Operation: regional carbon management platform.
+- **Zhongzhiyuan AI Independent Innovation Acceleration Area**: S02/T01, S03, S09, S10
+- **Beijing AI Origin Community (~104.3 ha)**: S06/T03, S04/T02, S09
+- **Dazhongsi AI Industry Cluster (~72.0 ha)**: S05, S07
+- **Jing-Zhang Green Vein public space**: S01, S07, S08
+- **Area-wide / regional platforms**: S03, S10
 
 ### Privacy and Ethics Boundaries
 
