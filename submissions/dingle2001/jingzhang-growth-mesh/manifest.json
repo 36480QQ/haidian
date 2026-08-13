@@ -25,7 +25,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "5e8235c6a1a916e6100e968671069df737ab12e7517b5750a302c5da79325db5"
+      "sha256": "b16b92839994f9d05df117e384add5ef2ca42f0d3bd1a947256852e2039bb624"
     },
     {
       "path": "agent.json",
@@ -80,7 +80,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "ce8c44f96ff61c580a7fdf91c523d6a45aba521d10e29a806c892dd8250730d8"
+      "sha256": "3838e2c1a539017f630e07a4d4e3be14cf754ded70e8c91d16cc84165bbdecca"
     },
     {
       "path": "report/narrative.md",
@@ -99,21 +99,21 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "9e51afaae5aec7f4a20176362bf60bcc6fc6dda80560b2548de955b6628d2ffa"
+      "sha256": "ef8a50f235fd22cfadefd0d758e0c1545214526452f98918a7a6008e9c66995e"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "317f10ea6e85b6e08de549c32f97a888c93914fad1c0e40271131c36b782b8c5"
+      "sha256": "9de7858dfa4ed5ad9c9274b5649f86143b2983b12772d428762fe2db73759973"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "f85f467e873876c127aee2c5c36442689b06916077d2ff2d69b0e6e048f012ec"
+      "sha256": "d81922adfcd66602ab9172eedb9cfed1f6d3c1cbaf28a22416abbe7a3ddc8ed1"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -134,7 +134,7 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "d8ff7f747335a8e7cba0d07cf2df6a0a780a253d3820ea4d340ea16fd5a4939b"
+      "sha256": "e1cc5bdf068f207bfc76554ed2eb486ac60e5bad843a0a518e6dbab70284fd7a"
     },
     {
       "path": "assets/figures/mobility-bluegreen.png",
@@ -210,7 +210,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "a8ed7da20c6043f4c407163d6dcbf1e9df40f0069475ba126302c21b3fa4581d"
+      "sha256": "900078523192c953ecd101cdaa6ac7eee847d28c1a5d10b9577a403406355f51"
     },
     {
       "path": "visual/index.en.html",
@@ -218,7 +218,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "dca82fa65cd01c0fc9d1035cf4e654c4aed46b98005929cc32fece85672a1f42"
+      "sha256": "22540ad8547cea20fafe2b3b1a90d56c9d428e8d0250e046076e9024e198359e"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -226,7 +226,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "7915687bebde21b94b1f17aadaca0bc43381422d5c018f0376982f719ec86b09"
+      "sha256": "a3ffc016aa1bf55945a1ff16c4f8d740b6341fc817e63a30071e6a2770f80c2c"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -234,7 +234,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "63a9fdf274d33cce90a5c5a288716ea1c5f0bd53edcf7e5d0fb979d46d7e8c91"
+      "sha256": "dd76eb0c7673a747ad75a6b792a75c6dd61fc044cdddc3346eb1861115806bb8"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -258,7 +258,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/metrics-evidence.png",
-      "sha256": "0c88a79d74686b7542a40dff90f053f0c362168e3cdc22f3153eec6186ed8762"
+      "sha256": "26ddb60e05f528a5ee264ad19606891e3341a5819003f0f7cdf00f9894453084"
     },
     {
       "path": "assets/figures/mobility-bluegreen.en.png",
@@ -282,7 +282,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "f3e2529e0d0afbf2f8e3408f6479464bb93aad3a395092ff719b2aa41cce50b4"
+      "sha256": "e06322188ee4ee1ba3c1358907706c4f8c445e8600b3891e4c40841d563e5a08"
     },
     {
       "path": "assets/figures/concept-dazhongsi-ai.jpg",
@@ -316,7 +316,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "1f2fa120de3ffe3741fb50c1f9150896c53182bccb7fd01194eabd0d32c3d2ee"
+      "sha256": "2b466e5592a7b7b5c560edd0eb2c69df71f3ce353490ca2e15f581b207cd6aca"
     },
     {
       "path": "assets/figures/concept-dazhongsi-ai.en.jpg",
