@@ -1,117 +1,156 @@
 ---
-title: "RailCode Commons: A Verifiable Urban Innovation Belt for the Centennial Jing-Zhang Corridor"
+title: "RailCode Commons v1.2: A Public Validation Operating System"
 author_github: "296277"
 language: "en"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "Railway heritage becomes shared civic code; three AI districts become testable nodes in a walkable, accountable innovation commons."
+summary: "A heritage civic spine becomes a public validation operating system: three distinct urban prototypes, twelve scenario contracts, a reversible 90-day pilot, and sign-off-ready delivery gates."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
+iteration: "v1.2"
 ---
 
-# RailCode Commons
+# RailCode Commons v1.2
 
-> One heritage civic spine, three validation districts, and twelve everyday scenarios. AI is treated as an explainable, reversible public capability with human review—not as a futuristic shell.
+**Put responsibility, opt-out, and public value into space before AI enters the city.**
+
+**Four reviewer checks, answered up front:**
+
+| Check | Auditable package evidence | Current state |
+| --- | --- | --- |
+| Does it answer the Jing-Zhang AI innovation-belt brief? | One public version spine, three differentiated prototypes, 12 scenario cards, two wings, and task matrices | Package-level design response complete |
+| Can the concept move into a controlled pilot? | G0-G4 evidence gates, RC-01—RC-06 delivery contracts, 90-day cadence, and six stop lines | Proposed only; not authorised and not field-run |
+| Who can pause or resume a trial? | Pause authority, resume evidence, dual sign-off, and actor-role type on every contract | Role types defined; institutions unconfirmed |
+| Which numbers are not existing conditions or budgets? | Provisional boundary, unknown controls, L0-L2 cost bands, and rights ledger | Provisional / unknown limits retained |
+
+Version 1.2 frames the Jing-Zhang corridor as a public validation operating system rather than a technology display belt. Railway heritage is the continuous civic base; Zhongzhiyuan, AI Origin Community, and Dazhongsi become three distinct validation prototypes; every AI scenario must carry spatial, data, accountability, human-fallback, pause, and exit contracts. The original contribution is to translate open-source versioning, testing, rollback, and public review into an urban experience that people can walk through, inspect, and challenge.
 
 ## Design Basis and Source List
 
-The proposal uses only public or cleared material registered in the repository. The official announcement and Agent taskbook establish the three scales, three key areas, and participation boundary. Official polygons are absent, so maintainer-provided provisional rough geometry is used only for concept generation, topology checks, and content review—not as a statutory red line, survey, or approval basis [source:OFFICIAL-ANNOUNCEMENT] [source:BOUNDARY-SOURCE] [depth:existing_conditions_diagnosis].
+The announcement establishes the scope, approximate scale, three key areas, and deliverables; the cleared Agent taskbook establishes three positions, five functions, two wings and three zones, and tasks agent.1—agent.6 [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]. Official site and key-area polygons remain unavailable. Maintainer-provided rough polygons stay marked `official_boundary=false` and `geometry_role=provisional_constraint`; they support concept generation and review only, not statutory boundaries, surveys, regulatory plans, or approvals [source:BOUNDARY-SOURCE] [data:geometry/site_boundary.geojson#SITE-001] [depth:existing_conditions_diagnosis].
 
-![RailCode Commons overview](assets/figures/site-overview.en.png)
+Evidence has three powers: official text determines what must be answered; provisional geometry provides a replaceable testing container; Agent design proposes how it might work. Ownership, buildings, heritage, road red lines, rail protection, utilities, fire, flood, movement, and engineering remain unknown. Any official geometry must trigger coordinated recalculation of nine GeoJSON layers, metrics, figures, HTML, and PDFs [source:SITE-PACKAGE] [source:SOURCE-REGISTRY] [depth:risk_missing_data].
 
-Evidence is separated into official textual facts, replaceable provisional constraints, and Agent-generated reference design. Official polygons, regulatory plans, buildings, ownership, road red lines, utilities, heritage, and engineering data must trigger a coordinated recalculation [data:geometry/site_boundary.geojson#SITE-001] [metric:site_area_sqm].
+![RailCode Commons v1.2 overview](assets/figures/site-overview.en.png)
 
 ## Three-Level Scope Framework
 
-The 43.6 km² coordinated research area sets ecosystem strategy; the 11.4 km² overall design area structures renewal; the 368.4 ha key-area scope tests three nodes. Together they form a strategy–space–validation chain [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [depth:three_level_scope_framework].
+The 43.6 km² coordinated layer handles regional innovation; the approximate 11.4 km² overall layer structures the civic spine and renewal; the 368.4 ha key-area layer tests three urban prototypes. One problem–space–contract–evidence chain links all three [depth:three_level_scope_framework].
 
-![Land use and scope structure](assets/figures/land-use-structure.en.png)
+The structure is **one public version spine + three urban prototypes + two collaboration interfaces + twelve scenario contracts**. Jing-Zhang Heritage Park is the historic base that can receive accountable updates; Zhongzhiyuan tests safety and hard technology; AI Origin translates open-source outcomes into daily life; Dazhongsi tests public services and international communication [depth:overall_spatial_structure] [data:geometry/land_use.geojson#LU-001].
 
-The spatial grammar is one spine, three commons, two wings, and multiple service stacks: the Jing-Zhang Heritage Park civic spine; Zhongzhiyuan, AI Origin Community, and Dazhongsi validation commons; the Zhongguancun technology-service and Xiaoyue River scenario wings; and portable service stacks. This is a comparison framework, not a new planning boundary [data:geometry/land_use.geojson#LU-001] [depth:overall_spatial_structure].
+![Three scales and five-step validation loop](assets/figures/land-use-structure.en.png)
 
-## Coordinated Research Area: Industry and Future City Research
+## Coordinated Research Area: Industry and Future City
 
-“RailCode” links railway infrastructure memory with open-source collaboration; “Commons” foregrounds public interest and maintenance. The identity direction pairs parallel rail lines with an open bracket, using railway navy, brick red, vegetation green, and safety amber. Final logos and fonts require rights review [source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
+The submission identity is an original participant-authored system with horizontal, stacked, monochrome, and minimum-size states. A rail carries infrastructure memory, an open bracket permits challenge and patches, and a version node requires responsibility, evidence, and exit. Heritage navy, civic green, brick red, and validation amber form its fixed palette. The wordmark uses Noto Sans SC under the SIL Open Font License 1.1; only rasterised output and the licence text are distributed. This identity is cleared for this repository submission and community display, but is not an official brand, registered trademark, or government endorsement; any third-party formal adoption requires separate brand and trademark review.
 
-Six public precedents provide bounded lessons: Toronto MaRS, Boston Kendall Square, Paris Station F, Barcelona 22@, Helsinki Jätkäsaari Mobility Lab, and Seoul Digital Media City. They are background comparisons, not rankings or templates; current operations and transferability require verification [source:SOURCE-REGISTRY] [depth:industry_future_city_strategy].
+![RailCode Commons brand and civic component system](assets/figures/brand-system.en.png)
 
-The ecosystem loop is research origin—open collaboration—safety evaluation—enterprise translation—urban trial—public feedback. Spaces support low-threshold collaboration, bookable sandboxes, release events, enterprise services, minimal-data trials, and appeal channels. No investment, attraction, or policy commitment is claimed [data:geometry/public_space.geojson#PUBLIC-001] [depth:overall_spatial_structure].
+The identity combines rail, an open bracket, and version nodes: infrastructure memory, permission to challenge, and traceable urban trials. The ecosystem loop is **problem intake—capability team—isolated validation—public acceptance—limited scaling**. Each stage names beneficiaries, roles, data permission, evidence, and an exit route. Regional collaboration is expressed as portable contracts, not unsupported institutional commitments [depth:industry_future_city_strategy].
 
-## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
+Six international references test transfer limits rather than form a success list: Helsinki Kalasatama foregrounds resident time in living labs; Singapore Punggol Digital District links district, university, and digital infrastructure; Barcelona 22@ warns that innovation districts need mixed daily life and social infrastructure; Toronto Quayside shows why data governance must precede space and procurement; Montréal Mila connects research, talent, and community responsibility; Singapore AI Verify offers a reproducible testing toolchain. Promotional performance figures are not reused, and no governance, land, or funding model is assumed transferable. Full provenance and non-transferable conditions are in `visual/assets/global_case_studies.json`.
 
-A complete four-part partition covers the provisional boundary: R&D innovation, park/open space, industry/commerce, and community support. The civic spine crosses these areas without asserting statutory land-use change. Building footprints are morphology samples rather than surveyed conditions or parcel decisions [data:geometry/land_use.geojson#LU-001] [standard:MOHURD-CONTROL-DETAILED-PLANNING] [depth:land_use_layout].
+![Six references and eight ecosystem contracts](assets/figures/ecosystem-map.en.png)
 
-Renewal follows “assess value before action”: retain cultural, use, structural, or carbon value; prioritise reversible ground-floor, energy, and accessibility upgrades; discuss demolition or new build only after survey, ownership, and professional assessment. FAR, height, density, setbacks, and road red lines remain pending official data [data:geometry/buildings.geojson#BLDG-001] [depth:retain_renovate_demolish].
+Eight factors become accountability contracts, not an investment list: land, space, industry, funding, talent, compute, data, and scenarios each identify an input, accountable actor type, admission gate, public return, and exit method. Details are in `visual/assets/ecosystem_contracts.json`. The nearby Beiwei community is proposed as a daily-life and accessible co-test interface; Future Science City and Huairou may contribute research questions and methods; the Beijing Economic-Technological Development Area may connect engineering validation; Jing-Jin-Ji cities may reuse cards and audit formats. These are interfaces, not confirmed partnerships.
+
+Five reviewable but unconfirmed collaboration contracts now specify an issue-owner type, input, permission, output, failure handling, and openness level. Beiwei would produce a de-identified daily-life/access barrier list; Future Science City and Huairou would contribute research questions, methods, or evaluation protocols; Beijing E-Town would receive only G2-cleared engineering-validation packages; Jing-Jin-Ji reuse would retain scenario, provenance, stop, and exit records. No interface activates without partner confirmation, permission evidence, and a named role. See `visual/assets/regional_collaboration_contracts.json`.
+
+## Overall Design Area: Renewal and Regulatory-Plan-Level Design
+
+Renewal prioritises retention and adaptation, then public ground floors and reversible components; permanent additions remain last. Three replicable components make the proposal spatial: a 6 m explanation porch, an 18 m co-test court, and a 30 m public ground-floor band. These are relative design prototypes—not road lines, setbacks, or engineering dimensions. Every real building requires heritage, structure/fire, ownership/use, and carbon/economic evidence before any action [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [data:geometry/buildings.geojson#BLDG-001] [depth:land_use_layout] [depth:retain_renovate_demolish] [depth:development_intensity_controls] [depth:height_massing_character].
 
 ## Detailed Design of Key Areas
 
-All three areas retain provisional polygons and are developed through spatial move, scenario, operation, and prerequisite—not as approval drawings [data:geometry/key_areas.geojson#PROV-KEY-001] [depth:three_key_area_detailed_design].
+The three areas now use distinct spatial gradients, delivery contracts, and stop rules while retaining provisional boundaries [data:geometry/key_areas.geojson#PROV-KEY-001] [depth:three_key_area_detailed_design].
 
-![Three provisional key areas with distinct strategies: trustworthy innovation at Zhongzhiyuan, open translation at AI Origin Community, and an urban living room at Dazhongsi](assets/figures/key-areas.en.png)
+![Three differentiated urban prototypes](assets/figures/key-areas.en.png)
 
-| Area | Reference role | Spatial move | First validation |
-| --- | --- | --- | --- |
-| Zhongzhiyuan | Full-stack trustworthy innovation garden | Qinghe ecological edge, bookable test courts, standards gallery, low-impact service loop | model red-teaming, edge-device interoperability, low-carbon compute |
-| AI Origin Community | Near-campus open-source translation community | open ground floors, walking stitches, shared release hall, talent-life hub | contribution passport, translation copilot, accessible-route co-testing |
-| Dazhongsi | Urban intelligent-economy living room | rail arrival, four-quadrant walking interfaces, content workshops, night commons | smart terminals, consented data sandbox, multilingual roadshows |
+### Zhongzhiyuan — Trust Court
 
-Bridges, tunnels, underground links, water works, rail integration, and private-property changes remain professional studies [data:geometry/key_areas.geojson#PROV-KEY-003] [depth:phasing_implementation].
+Public river garden—transparent observation gallery—controlled test court—research back-of-house. Visitors never cross equipment logistics; the gallery makes time, responsibility, human stewards, and physical emergency stops visible. Ownership/river/fire review, isolation and stop drills, and limited appointments are sequential gates. A serious incident, over-collection, or failed stop closes the trial.
 
-## AI Innovation Ecosystem, Personas, and AI+ Scenarios
+![Zhongzhiyuan Trust Court: locally code-drawn concept board, not a site photograph](assets/media/v1.1/zhongzhiyuan-trust-court.png)
 
-Six personas are open-source developers, startups, university communities, enterprise/international visitors, residents, and older/disabled users. Each pairs a goal with a refusal: collaboration without continuous tracking; convenience without commercial profiling; accessible routes with non-digital alternatives [standard:BARRIER-FREE-ENVIRONMENT-LAW] [depth:public_service_facilities].
+### AI Origin Community — Open-Ground-Floor Weave
 
-Twelve cards cover an open-source release hall, safety sandbox, device interoperability field, low-carbon compute station, walking navigation, accessible co-test route, university translation desk, enterprise-service copilot, data-consent room, multilingual city living room, Jing-Zhang memory guide, and Global AI Open Week. Every card requires notice, minimisation, human review, opt-out, and retention limits [data:geometry/public_space.geojson#PUBLIC-001] [standard:GENERATIVE-AI-INTERIM-MEASURES] [depth:ai_scenario_service_nodes].
+Campus/park pores—open-results street—contributors’ living room—near-campus daily-life lanes. Publication, licensing, incubation, childcare, health, and evening collaboration alternate rather than forming an office monoculture. Every result node displays provenance, licence, a human contact, and withdrawal. Fire, ownership, or resident consultation gaps prevent activation.
 
-Three industry sandboxes test model safety/red-teaming, device interoperability/accessibility, and consent/withdrawal for data use. A test is never represented as approved operation; each has a responsible human, stop control, incident log, and feedback window [data:geometry/constraints.geojson#CONSTRAINTS] [depth:risk_missing_data].
+![AI Origin open ground floor: locally code-drawn concept board, not a site photograph](assets/media/v1.1/ai-origin-open-ground-floor.png)
 
-## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
+### Dazhongsi — Public Acceptance Street
 
-Shared cut lines create a gap-free partition recalculated in EPSG:4548. The approximate 1,141.28 ha boundary is only an internal consistency check; green, public-space, and footprint ratios are design-layer measures, not official conditions [metric:green_ratio] [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [depth:metrics_recalculation].
+A relative 100 m sequence—not a surveyed road—moves through notice (0–20 m), parallel human and AI service (20–45 m), inclusive co-testing (45–75 m), and appeal/rollback (75–100 m). A continuous accessible path connects all four; equipment is removable and may not obstruct basic movement [depth:public_service_facilities].
 
-Four evidence gates precede building action: heritage, structure, use/ownership, and carbon/economic comparison. Current footprints show adaptive-reuse prototypes only [data:geometry/buildings.geojson#BLDG-001] [depth:development_intensity_controls].
+![Dazhongsi Public Acceptance Street: locally code-drawn concept board, not a site photograph](assets/media/v1.1/dazhongsi-public-acceptance-street.png)
 
-## Transport, Rail, Municipal Infrastructure, and Public Services
+Across all three prototypes, space exposes accountability first: without an app, a visitor should understand purpose, data, responsible human, fallback, and exit within thirty seconds.
 
-Walking, cycling, and rail transfer continuity comes first: a north–south civic spine and three east–west urban stitches. Safe at-grade optimisation is tested before grade separation; bridge, tunnel, or rail works remain options for professional comparison [data:geometry/roads.geojson#ROAD-001] [depth:traffic_rail_slow_parking].
+## AI Ecosystem, Personas, and AI+ Scenarios
 
-![Mobility and blue-green network](assets/figures/mobility-bluegreen.en.png)
+Six personas—open-source researchers, startups, industry engineers, university communities, residents, and older/disabled users—are task-driven hypotheses, not tracked profiles. Twelve contracts cover an open-source hall, model-safety sandbox, edge-device field, low-carbon compute station, walking navigation, accessible co-testing, translation desk, enterprise copilot, data-consent room, multilingual living room, heritage guide, and Global Open Week. Each contract specifies minimum data, accountable human, success gate, and stop condition. High-impact outcomes require 100% human final confirmation; default biometric and continuous personal tracking are zero; basic services retain non-digital paths [standard:GENERATIVE-AI-INTERIM-MEASURES] [standard:BARRIER-FREE-ENVIRONMENT-LAW] [depth:ai_scenario_service_nodes].
 
-Replaceable service stacks co-locate power, communications, edge compute, sensing, and maintenance, while every AI service retains a human desk, static wayfinding, and offline fallback. Load, drainage, flood, fire, utilities, and service radii await specialist review [data:geometry/constraints.geojson#CONSTRAINTS] [depth:municipal_new_infrastructure].
+Agent.5 is backed by a cultural-evidence matrix rather than a generic heritage label. Rail infrastructure history, Dazhongsi context, Xueyuan Road science-and-education memory, open-source contribution history, and community everyday memory each connect a narrative theme to a spatial carrier, source, rights basis, and verified/pending/creative state. Only rights-checked public facts enter guidance; creative interpretations stay labelled and may not invent people or events. See `visual/assets/cultural_evidence_matrix.json`.
 
-## Blue-Green Network, Public Space, and Urban Character
+The pre-field accessibility plan requires at least 12 consented route tasks across at least three access-need groups, including older, mobility, sensory, cognitive/low-digital-literacy, or no-smart-device users, plus two independent professional reviewer types. Participation may not be exchanged for service entitlement; only de-identified barriers, task outcome, and correction evidence are retained, and withdrawal remains available. A continuous-route, alternative-information, keyboard-access, or human-fallback failure pauses the activity. No recruitment or field test is claimed. Package-level human checks are recorded separately in `visual/assets/accessibility_qa.json`.
 
-The heritage park remains the cultural and ecological subject. Existing traces, brick, weathering steel, and seasonal planting form a subdued base; small amber information points mark services. Giant screens, neon towers, and heritage-dominating objects are excluded [data:geometry/green_space.geojson#GREEN-001] [standard:MOHURD-URBAN-DESIGN-MEASURES] [depth:blue_green_public_space].
+![AI governance loop from input to rollback](assets/figures/ai-governance-loop.en.png)
 
-Four pilgrimage/honour nodes are an Open Contribution Archive, Jing-Zhang Zero-Mile Algorithm Gauge, AI Public-Interest Repair Desk, and Annual Open-Source Long Table. They display verifiable contribution and failure learning rather than celebrity worship. Names, marks, papers, and portraits require permission [source:AGENT-TASKBOOK] [depth:height_massing_character].
+## Land Use, Building Scale, and Action Strategy
 
-The cultural story is infrastructure expanding cooperation: rail connected the city, Zhongguancun connected knowledge, and open AI can connect reusable civic capacity. Wayfinding includes Chinese/English, tactile/high-contrast information, and phone-free routes.
+The package recalculates an approximate 11.41 km² provisional boundary, 12.34% design green layer, 7.33% design public-space layer, and about 310,800 m² of concept footprints. These are internal GeoJSON consistency measures—not existing or approved controls [metric:site_area_sqm] [metric:green_ratio] [metric:public_space_ratio]. No real building receives a retain, renovate, or demolish decision.
 
-## Renewal Projects, Implementation Policy, and Phasing
+## Mobility, Rail, Utilities, and Public Services
 
-Years 0–2 prioritise reversible co-testing: wayfinding, accessibility audits, open-data catalogues, ethics review, and event prototypes. Years 3–5 may advance ground-floor openness, public-space stitches, and adaptive reuse after conditions are confirmed. Permanent works depend on official planning, performance, and public feedback [data:geometry/phasing.geojson#PHASE-001] [depth:renewal_project_list] [depth:phasing_implementation].
+Mobility uses a north–south civic spine, three east–west stitches, and two professional interfaces. Ground-level continuity, safe crossings, cycling, accessibility, and rail interchange precede bridge, tunnel, or underground speculation [data:geometry/roads.geojson#ROAD-001] [depth:traffic_rail_slow_parking]. Plug-in service stacks combine maintainable power, communications, edge compute, sensing, and fallback interfaces; capacity remains unknown pending engineering data [data:geometry/constraints.geojson#CONSTRAINTS] [depth:municipal_new_infrastructure].
 
-Long-term operation uses one council, one issue library, one annual week, and four seasonal cycles: a quarterly public-interest council, maintained open issue library, Global AI Open Week, and seasonal safety, accessibility, low-carbon, and archive programmes. These are suggestions, not government schedules, fiscal commitments, or attraction results [source:AGENT-TASKBOOK] [depth:implementation_policy].
+![Mobility, blue-green, and service-stack section](assets/figures/mobility-bluegreen.en.png)
 
-## Metrics, Area Recalculation, and Compliance Matrix
+## Blue-Green Space, Public Realm, and Character
 
-Known values support package consistency only: provisional boundary about 11,412,825 m², three key areas, design green ratio about 12.34%, public-space ratio about 7.33%, 12 scenario cards, six personas, three industry sandboxes, and four honour nodes. All areas and ratios must be recalculated when official polygons arrive [metric:site_area_sqm] [metric:key_area_count] [depth:metrics_recalculation].
+The heritage park is the first meeting room. Historic traces and quiet materials form the daily base; tests appear only as reversible amber nodes. Blue-green space supports movement, cooling, rain, rest, and public review, never an exemption from safety or heritage constraints [data:geometry/green_space.geojson#GREEN-001] [depth:blue_green_public_space].
 
-![Tiered metrics and evidence: provisional boundary, three key areas, design green and public-space ratios, plus scenario, persona, sandbox, and honour-node counts](assets/figures/metrics-evidence.en.png)
+Three pilgrimage landmarks are public learning facilities, not oversized attractions: Zhongzhiyuan's **Trust Observation Ring** exposes safety boundaries, versions, and a physical stop; AI Origin's **Open Version Zero** records provenance, licence, and withdrawal through a tactile rail/open-bracket marker; Dazhongsi's **Public Acceptance Table** places human service, AI demonstration, co-testing, and appeal side by side. All are reversible, keep basic access clear, and have a maintenance owner type and stop rule. See `visual/assets/landmark_component_library.json`.
 
-The compliance matrix covers announcement tasks 1.3–1.5 and Agent tasks 1–6; standards and design-depth matrices preserve exhaustive mappings. Prose keeps only claim-adjacent anchors [standard:MOHURD-ARCH-DESIGN-DEPTH-2016] [depth:professional_standard_response].
+![Three learning landmarks and four reversible components](assets/figures/landmark-library.en.png)
 
-## Risk, Copyright, and Compliance
+## Project List, Delivery Policy, and Phasing
 
-The primary risk is misreading provisional geometry as official. Every figure, PDF, and offline page labels it as a provisional constraint/concept suggestion. The requested gpt-image-2 service returned no available channel, so this version uses only local data-driven graphics and does not present synthetic imagery as site evidence [source:BOUNDARY-SOURCE] [depth:risk_missing_data].
+Five gates govern delivery: G0 data/rights clearance; G1 ownership, heritage, transport, utilities, fire, and accessibility review; G2 sandbox, accountable human, stop, and appeal drills; G3 a 90-day reversible pilot; G4 independent adapt/scale/exit decision [data:geometry/phasing.geojson#PHASE-001] [depth:phasing_implementation]. Six minimum delivery contracts cover the acceptance street, trust court, open-ground-floor weave, accessible co-test line, consent room, and contribution archive. Each has 0–30, 31–60, and 61–90 day outputs, one accountable operator, L1/L2 cost bands, and explicit stop conditions.
 
-Missing inputs include official polygons, buildings/parcels, regulatory plans, ownership, road red lines, utilities, fire/flood, heritage, footfall, and operations. Personal or enterprise-private data, unlicensed marks, faces, fonts, and media are excluded. No recommendation replaces formal planning or constitutes approval, investment, feasibility, or parcel action [data:geometry/constraints.geojson#CONSTRAINTS] [standard:BARRIER-FREE-ENVIRONMENT-LAW].
+Baseline methods, minimum samples, acceptance records, evidence-retention periods, and actor-confirmation status for RC-01—RC-06 are recorded in `visual/assets/delivery_contracts.json`. Version 1.2 adds preflight evidence, pause authority, resume evidence, and dual sign-off to every contract. An operating role may pause first; resumption requires closure of the failed condition, a retained record, and joint sign-off by the accountable role type and an independent professional reviewer type. Every actor remains a **proposed role type, not a confirmed institution**; the common state is **not authorised and not field-run**. No L1/L2 contract may enter budgeting or procurement discussion before G1 professional checks, a bill of quantities, and separate capital, operating, maintenance, removal, and reinstatement costs.
+
+Each contract also carries an `implementation_preflight` review sheet for site/rights evidence, actor-confirmation method, required professions, authorisation documents, baseline/sample, capital/operating/maintenance/removal-and-reinstatement costs, and closure condition. Every field remains `not_started` or `unconfirmed`; no institution or invented amount is inserted.
+
+`visual/assets/implementation_readiness.json` aligns each G0-G4 decision and record with RC-01—RC-06. All five gates are `not_started`. This is an explicit reality state, not an omitted deliverable: no operation, approval, or achieved-performance claim may be inferred.
+
+Six red-line KPIs are project targets: 100% notice before activation; 100% human final decision for high impact; zero mandatory phone/account/face gates for basic service; ≤30-second human fallback target; appeal acknowledgement in one working day and target response in five; zero severe safety incidents. Any red-line failure pauses the pilot [metric:pilot_duration_days] [metric:redline_kpi_count] [metric:delivery_contract_count].
+
+Cost bands enable comparison rather than claim a quotation: **L0** changes operations or rules without new equipment; **L1** adds signs, furniture, light edge devices, or removable components; **L2** requires limited site, MEP, fire-safety, or specialist integration. Before any L1/L2 contract passes G1, a bill-of-quantities estimate must separate capital, annual operations, maintenance responsibility, removal, and reinstatement. No RMB total is invented without site dimensions, equipment lists, and market quotations.
+
+![90 days, five gates, six delivery contracts](assets/figures/implementation-contract.en.png)
+
+![Pause authority, resume evidence, and dual sign-off for six contracts](assets/figures/implementation-readiness.en.png)
+
+An annual “one repository, two reviews, four seasons” cycle keeps problem and failure records open, separates quarterly public-interest review from annual professional review, and runs contribution, co-testing, international comparison, and archival seasons. A committee never replaces the one named accountable operator or statutory authority [depth:implementation_policy] [depth:renewal_project_list].
+
+Agent.6 uses a five-stage developer conversion funnel: **join—co-create—test—publish—reuse**. Join records capability, conduct, and conflicts; co-create outputs a problem contract; test retains sandbox, stop, and evaluation receipts; publish requires provenance, licence, human review, and withdrawal; reuse preserves version, responsibility, limitations, and failure history. Each stage defines owner type, resources, output evidence, review cadence, and stop rule in `visual/assets/developer_conversion_funnel.json`. No developer membership, event organiser, international recruitment, or conversion performance is claimed.
+
+## Metrics, Recalculation, and Compliance
+
+Spatial metrics derive from projected GeoJSON; non-spatial metrics count located cards, contracts, and gates. The package records 3 key areas, 12 scenarios, 6 personas, 3 industrial test types, 4 contribution nodes, 6 delivery contracts, 5 implementation gates, and 6 red-line KPIs [metric:key_area_count] [metric:scenario_card_count] [metric:persona_count] [metric:implementation_gate_count] [depth:metrics_recalculation]. Complete evidence sits in the compliance, standard, and design-depth matrices [depth:professional_standard_response] [depth:formal_package_completeness].
+
+![v1.2 metrics, contracts, and evidence](assets/figures/metrics-evidence.en.png)
+
+## Risk, Rights, and Compliance
+
+Provisional boundaries must not be mistaken for statutory evidence. AI services retain human fallback, stopping, appeal, correction, and deletion. The cover and three scenes are original Python/Pillow drawings derived from the proposal contracts; no image-generation service, site photograph, resident evidence, or third-party visual asset is used. They are not boundaries, approvals, or engineering proof, and structured evidence prevails. No commercial map screenshot, news photo, private enterprise data, unauthorised trademark, or identifiable real person is used. Nothing in this proposal constitutes government endorsement, investment, feasibility, procurement, or implementation schedule.
+
+The asset-level chain is in `visual/assets/asset_rights_ledger.json`: narratives, diagrams, PDFs, offline pages, cover, and three scenes are participant-authored; the four scene assets are local Python/Pillow drawings; Noto Sans SC is rasterised under SIL OFL 1.1, with the licence text retained and no font file distributed; six cases retain public links and original mechanism summaries only, with no copied page text, image, logo, or promotional performance claim; the local generator is excluded from the submission.
 
 ## References
 
-- Official announcement and repository snapshot [source:OFFICIAL-ANNOUNCEMENT]
-- Agent open-call taskbook [source:AGENT-TASKBOOK]
-- Site package, source registry, and local standards snapshots [source:SITE-PACKAGE] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]
-- Geometry, metrics, assumptions, sources, and matrices are the machine-audit layer; this report and drawings are the human-reading layer [depth:formal_package_completeness]
+The announcement, cleared Agent taskbook, and repository standards are the formal task basis; provisional boundaries remain review containers [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [source:KEY-AREA-SOURCE]. Machine evidence comprises GeoJSON, metrics, three matrices, task-specific JSON records, manifest, sources, assumptions, and self-check; human-facing evidence comprises bilingual narratives, ten figure pairs, three synthetic scenes, offline HTML, A3 booklet, and A0 boards.

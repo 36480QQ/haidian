@@ -1,12 +1,13 @@
 ---
-title: "京张日用 / EVERYDAY JING-ZHANG：城市先好用，AI 再上场"
+title: "京张日用 / EVERYDAY JING-ZHANG：一岗一铃一册，人始终负责"
 author_github: "007xf"
 language: "zh"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "以七件城市小事、三个有人工服务的公共房间和一条连续日用线完成存量更新；AI 仅作为工作人员可撤回的检索、翻译、归纳、分类、比对与校对工具，自动公共决定为零。"
+iteration: "v2.0"
+summary: "以一条连续日用线、一间常设房与两间弹性房起步；每项服务执行“一岗一铃一册”，AI 仅作为工作人员可撤回的后场工具，自动公共决定为零。"
 tracks: ["ai-traffic-walkability", "youth-friendly-public-space", "enterprise-services-ecosystem"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "ai-cultural-guide", "public-safety-operations-review"]
 ---
@@ -15,11 +16,11 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "ai-cultural
 
 > 城市先好用，AI 再上场。
 >
-> 七件城市小事 + 六个工作人员工具 + 零项自动公共决定。
+> 一岗、一铃、一册；七件城市小事 + 六个工作人员工具 + 零项自动公共决定。
 
 “京张日用”不是一座由 AI 控制的城市，也不是把未来感等同于无人化、机器人、全息屏或超高成本巨构。它先解决居民每天能够感知的七件小事：**走得连续、晒雨有遮、累了能坐、标识看懂、有人可问、坏了能修、昼夜可用**。空间和人工服务完成之后，六类现阶段成熟的工具——检索、翻译、归纳、分类、比对、一致性检查——才可在工作人员后场进入影子测试；它们只生成草稿、提示或候选，不作公共决定，不直接控制设备，随时可以移除。
 
-总体结构为“一条日用线、三个有人工服务的房间、十二个服务单元、十条公共联系、十二个场景点”。一条连续慢行与服务路径串联众智园“修理花园”、北京 AI 原点“公共长桌”和大钟寺“日夜客厅”；所有公共任务均可通过实体空间、纸本、电话和工作人员完成。设计的核心不是押注某项技术，而是把**小尺度更新、人员编制、维护工单、采购边界、人民币概念区间、验收阈值和退出责任**写进同一套空间合同。[metric:everyday_urban_move_count] [metric:mature_staff_tool_capability_count] [metric:automated_public_decision_count]
+总体结构为“一条日用线、三个有人工服务的房间、十二个服务单元、十条公共联系、十二个场景点”。一条连续慢行与服务路径串联众智园“修理花园”、北京 AI 原点“公共长桌”和大钟寺“日夜客厅”；首期不一次性常开三间房，而是以**一间常设锚点 + 两间按表弹性房**起步。所有公共任务均可通过实体空间、纸本、电话和工作人员完成。设计的核心不是押注某项技术，而是把**小尺度更新、值守工时、维护工单、采购边界、人民币概念区间、验收阈值和停用复开责任**写进同一套空间与班次合同。[metric:everyday_urban_move_count] [metric:mature_staff_tool_capability_count] [metric:automated_public_decision_count]
 
 | 评审维度 | 本方案的直接回答 | 可核验证据 |
 | --- | --- | --- |
@@ -30,6 +31,18 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "ai-cultural
 | 技术成熟 | 只用六类成熟工作人员工具；不含机器人、开放道路自动驾驶和城市自动控制 | 四模式工具合同、八类禁止决定 |
 | 公众接受 | 免登录、非数字等价路径、七类用户共测、三条压力旅程 | 8—12 周人工基线 |
 | 专业证据 | 已知、假设、待补和禁止外推分层；双语数字、来源、版权与图纸逐项复核 | 指标表、来源表、自检结果 |
+
+### 评审一页索引：一个可执行的设计判断
+
+**先修通一条能每天使用的路，再开一间常设房和两间弹性房；只有当每项服务都有具名岗位、实体求助铃和可交接台账时，可撤回的 AI 工作人员工具才能进入后场。**
+
+“一岗一铃一册”是本版本的原创运营构造，把京张铁路的班次、联络与交接纪律转译成日常公共服务，而不是复制铁路设备或造型：
+
+- **一岗**：每一个服务有唯一可追责的具名值守角色，由人判断、签字和决定复开。
+- **一铃**：每一个服务有实体铃、电话或人工台，无需 App、登录、人脸或 AI 也能求助。
+- **一册**：每一次开班、停用、报修、交接和复开都留下纸本与可导出记录，不让责任留在黑箱里。
+
+七项评分维度到正文、指标和机器证据的完整路由另存于评审证据索引；该索引只导航，不替代本正文。[source:PACKAGE-REVIEWER-EVIDENCE-INDEX] [metric:duty_shift_contract_count] [metric:duty_shift_contract_field_count]
 
 ![日常公共空间概念氛围：连续无障碍路径、遮阴座椅、人工服务长桌与维修工具](assets/figures/service-duty-hall-atmosphere.png)
 
@@ -156,6 +169,18 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "ai-cultural
 
 三处都采用低层、存量优先、耐久可修和低眩光原则；建筑高度、层数、立面、消防和结构不作无依据数值承诺。[depth:height_massing_character]
 
+### 一间常设、两间弹性：不用假设三套班子同时到位
+
+三间房是长期空间网络，不是首日必须同时常开的三个场馆。首期以 AI 原点公共长桌为一间常设锚点，众智园和大钟寺在已确认场地、人员、安全与维护时按表弹性开放。若最终运营方、权属或官方边界不支持该锚点，三者按同一筛选表重排，不把概念点位写成批准事实。
+
+| 开放筛选 | 必须已有的证据 | 缺失时的动作 |
+| --- | --- | --- |
+| 可到达 | 连续无障碍路线、雨热避护、夜间识别 | 不开放或转为有人快闪服务 |
+| 可值守 | 具名岗位、交接人、公布时段、联系电话 | 不开工作人员辅助服务 |
+| 可维护 | 资产号、备件人、SLA、隔离和复开流程 | 危险部位关闭，安全普通服务继续 |
+| 可撤回 | 纸本/电话等价路径和开放导出 | 工具回退 SHADOW 或 REMOVED |
+| 可被公众否决 | 七类代表性用户走查与未解决排斥清单 | 不将“可进场排练”升级为对外开放 |
+
 ## AI 创新生态、人才画像与 AI+ 场景
 
 ### 七类用户与共测
@@ -190,6 +215,27 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "ai-cultural
 禁止工具自动作出八类决定：规划审批/红线/土地权利，执法处罚或监控行动，资格/福利/录取/服务优先级，物理或数字门禁，医疗/法律/应急判断，交通信号/车辆调度/路线控制，安全认证或应急派遣，价格/投资/腾退/产权决定。[metric:prohibited_automated_decision_count]
 
 工具进入工作人员辅助前必须同时通过六门：普通任务无需工具也能完成；输入 100% 来自批准来源且不含不必要敏感数据；至少 200 条影子样本 100% 人工复核；发布输出 100% 可追溯来源或差异；自动公共决定和直接控制为零；相对人工基线至少节省 20% 工作人员时间且抽样错误不变差。最后一项是设计阈值，不是已取得绩效；失败即移除工具。[metric:human_signoff_coverage_ratio] [metric:non_ai_alternative_coverage_ratio]
+
+### 一岗一铃一册：十二份值守班合同
+
+十二张场景卡各自变成一份八字段合同：**任务、服务地点/时段、具名值守角色、普通非 AI 路径、允许来源、工具输出权限、立即停用触发、交接与复开证据**。任意一字段缺失，工作人员辅助服务不得开班；普通空间和安全的人工服务可按已批准范围继续。[source:PACKAGE-DUTY-SHIFT-CONTRACT] [metric:duty_shift_contract_count] [metric:duty_shift_contract_field_count]
+
+合同的创新点不是让 AI 多做决定，而是让每个技术输出都能被一个人接住：有职责、有非数字通道、有停键、有复开门、有交接记录。它将“人在回路”从一句原则变成空间、班表、采购和工单能共同执行的设计单元。
+
+### 开门前 140 例合成班次排演
+
+在没有官方边界、真实班表和场地授权时，方案不伪造“实地通过”。它先执行可重现的包级排演：
+
+| 排演组 | 算式 | 期望行为 | 结果 |
+| --- | ---: | --- | ---: |
+| 完整合同×三班 | 12 × 3 | 仅标记“可进场人员排练” | 36/36 匹配 |
+| 故意删去一必填字段 | 12 × 8 | 阻断工作人员辅助开班 | 96/96 匹配 |
+| 跨房故障注入 | 8 | 回退普通服务或安全关闭 | 8/8 匹配 |
+| **合计** | **140** | **不声称任何现场验收** | **140/140 匹配** |
+
+三班是晴天日常、雨热压力、夜间断网；八张故障卡是路线阻断、值守缺岗、来源过期、翻译冲突、个人信息出现、断网/工具失效、维修超时和供应商/模型变更。结果可用包内脚本重现，140 例全部符合预期。[source:PACKAGE-PREOPENING-SHIFT-REHEARSAL] [metric:preopening_synthetic_case_count] [metric:preopening_expected_match_count]
+
+该排演只证明文件合同自洽，现场通过声称为零；现场安全、无障碍、人员能力和公众接受必须另行实地验证。[metric:preopening_field_pass_claim_count]
 
 ### AI如何参与规划：六项工作人员辅助，不代替任何公共决定
 
@@ -233,7 +279,7 @@ AI 可协助经批准文档检索、中英草稿、会议纪要归纳、去标�
 | --- | --- | ---: | --- | --- |
 | E1 | 基线走查与普通服务清单；街道/社区 | 8—15 万元 | 权限清单与七类用户走查 | 场地或服务责任不明则停；交基线/权利/问题台账 |
 | E2 | 连续路线、遮阴座椅与导视；设计工程团队 | 30—75 万元 | 无障碍与雨热路线通过 | 文保、消防、路权冲突则停；交竣工资产和维护表 |
-| E3 | 三个有人工服务的房间；运营方 | 15—30 万元 | 公布时段，纸本/电话/人工可完成 | 无编制或 OPEX 则不开；交房间、班表、服务手册 |
+| E3 | 一间常设锚点、两间按表弹性房；运营方 | 15—30 万元 | 公布时段，纸本/电话/人工可完成 | 无人员或 OPEX 则不开；交房间、班表、服务手册 |
 | E4 | 修理与开放工单；维护团队 | 7—15 万元 | 紧急路线和样本工单闭环 | 无 SLA 或备件人则停；交资产、备件、工单导出 |
 | E5 | 清权遗产与日常活动；社区/策展 | 6—15 万元 | 来源、权利、双语、无障碍审计 | 权利或文保待审则不发布；交内容和活动台账 |
 | E6 | 工作人员工具影子沙盒；数据安全负责人 | 12—30 万元 | 六道工具门全部通过，公共决定为零 | 隐私、来源、价值或错误门失败即删；交开放导出和删除证明 |
@@ -249,11 +295,15 @@ AI 可协助经批准文档检索、中英草稿、会议纪要归纳、去标�
 
 公共路线、维护和有人帮助不能依赖工具赞助、用户画像、数据交换或付费优先。每个采购包须有开放导出、资产/备件、培训、责任人和退出证明，避免供应商锁定。
 
-### 首100日与运营人力
+### 首100日、运营人力与开门第一天
 
 0—10 日确认场地、权利、运营者、文保和用户组；11—30 日走查、资产清单、方案冻结和小额采购；31—60 日安装可逆部件、开放有人房间并启动人工基线；61—100 日继续 8—12 周基线（时间不足则顺延）、修补缺陷并公开证据，工作人员工具仍只处于 SHADOW。[data:geometry/phasing.geojson#PHASE-001] [metric:phase_count] [depth:phasing_implementation]
 
-有人房间开放时原则上安排不少于两名受训人员，具体须服从未来运营单位用工制度；公布服务时段、维护值班、紧急路线和工单时限。培训至少包括无障碍、文保/版权、隐私安全、投诉升级和工具移除。没有年度人员与维护预算，不开放相应房间。
+人力不用“三间房各两人”的虚构编制，而用可复核公式：**一周前线工时 = Σ（各房公布开放小时 × 同时值守岗位）+ 20% 交接/培训/休假替班余量**。为检验量级，假设锚点 24 小时/周、两间弹性房各 8 小时/周，得前线 48 工时/周；因交接、休假和需两人安全作业的情形，韧性班表至少需两名可轮替人员。这只是规模测算，不是批准班表、工资或 OPEX；最终由运营方和区级协调者确认。[metric:illustrative_frontline_hours_per_week] [metric:pilot_anchor_room_count] [metric:pilot_pop_up_room_count]
+
+概念建设费 85—195 万元不含长期工资、水电、租赁/资产移交、法定专业费用和重型工程；这些必须在采购前列为单独 OPEX 与专业工作流，不能用低价概念区间掩盖。
+
+开门第一天按班次而不按发布会运行：08:30 具名班表、路线和资产开班检查；09:00 纸本、电话和人工服务先开；12:00 交接未结工单、危险、来源和工具状态；15:00 见证一项代表性用户任务和一张维修工单；18:00 关班或交班，公布未解事项、责任人和时限。当日只注入一张不影响真实公众权益的故障卡；工具永远不能关闭工单或签署复开。
 
 ### 四个活动品牌与长期运营
 
@@ -285,6 +335,9 @@ AI 可协助经批准文档检索、中英草稿、会议纪要归纳、去标�
 | 生态与体验 | 8 要素、7 组件、5 叙事站 | [metric:ecosystem_factor_count] [metric:public_component_count] [metric:culture_story_stop_count] |
 | 转化与验证 | 5 门、4 活动、3 压力旅程 | [metric:innovation_conversion_gate_count] [metric:event_brand_count] [metric:public_evidence_journey_count] |
 | 完整性 | 人工签字覆盖率 1.0，非 AI 等价覆盖率 1.0 | [metric:human_signoff_coverage_ratio] [metric:non_ai_alternative_coverage_ratio] |
+| 值守合同 | 12 份合同、8 个必填字段、3 种压力班次 | [metric:duty_shift_contract_count] [metric:duty_shift_contract_field_count] [metric:service_shift_state_count] |
+| 开门前排演 | 140 例包级合成检查，140 例预期匹配，0 例声称现场通过 | [metric:preopening_synthetic_case_count] [metric:preopening_expected_match_count] [metric:preopening_field_pass_claim_count] |
+| 首期资源 | 1 间常设锚点 + 2 间按表弹性房；示意 48 前线工时/周 | [metric:pilot_anchor_room_count] [metric:pilot_pop_up_room_count] [metric:illustrative_frontline_hours_per_week] |
 
 容积率、建筑高度、拆除面积均为 unknown，等待官方边界、控规和调查后复算。合规矩阵逐条连接公告、任务书、正文、图纸、GeoJSON、指标、来源、假设和自检；不以数字多代替证据质量。[standard:MOHURD-CONTROL-DETAILED-PLANNING]
 
@@ -296,9 +349,11 @@ AI 可协助经批准文档检索、中英草稿、会议纪要归纳、去标�
 
 生成式工具只在工作人员后场处理公开或经批准材料，默认不做人脸识别、个人画像、强制 App 和强制登录；投诉、人工复核、信息保护和停止使用必须在试点前落实。[standard:GENERATIVE-AI-INTERIM-MEASURES]
 
+个人信息和数据处理的控制性底线以中国法律为准：工具输入不收集非必要个人信息，目的、来源、访问和保存期在影子测试前获批；发生事件时先隔离、留存处置与删除证据，再讨论是否恢复；供应商、模型或重要配置一变更，工具自动退回 SHADOW 或 REMOVED。这是设计控制而不是法律合规批准，正式实施仍须专业复核。[source:PIPL-2021] [source:DATA-SECURITY-LAW-2021]
+
 无障碍不是附加模块。连续路线、多模态导视、传统服务方式和代表性用户共测是开门条件；工具不得降低老年人、残障人士、儿童照护者和临时访客的服务等级。[source:STANDARD-BARRIER-FREE] [source:STANDARD-ELDERLY-TECH]
 
-本提交的文字、图表、图形、图纸排版、Logo 和机器结构由提交者与 AI 协作原创；来源网页仅作事实与方法引用，不复制受版权保护的图片、Logo、平面或大段文本。概念氛围图为 AI 生成并在版权说明中登记；场地边界来自仓库公开/许可资料，第三方内容的权利状态逐项保存在来源与版权文件中。
+本提交的文字、图表、图形、图纸排版、Logo 和机器结构由提交者与 AI 协作原创；来源网页仅作事实与方法引用，不复制受版权保护的图片、Logo、平面或大段文本。概念氛围图为 AI 生成并在版权说明中登记。总图和交通蓝绿图只使用带显著署名的 OpenStreetMap 矢量语境帮助评审定向，不从中推导官方红线、地块、权属、文保、规划或工程事实；原始地图提取不进入提交包。第三方内容的权利状态逐项保存在来源、溯源与资产权利台账中。[source:OSM-BACKGROUND-CONTEXT-20260813] [source:PACKAGE-ASSET-RIGHTS-LEDGER]
 
 完整包满足用地分类、城市设计、控规深度提醒、建筑深化缺口、无障碍、适老和生成式 AI 边界的分层响应；但不构成政府背书、实施批准、法定规划、施工图、投资承诺或安全认证。[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [standard:MOHURD-ARCH-DESIGN-DEPTH-2016]
 
@@ -336,5 +391,10 @@ AI 可协助经批准文档检索、中英草稿、会议纪要归纳、去标�
 | 北京实践 | 学院路公共空间 [source:XUEYUAN-PUBLIC-SPACE-2026] |
 | 治理参考 | NIST AI 风险管理框架，仅作背景 [source:NIST-AI-RMF] |
 | 治理参考 | 英国算法透明记录标准，仅作背景 [source:UK-ALGORITHMIC-TRANSPARENCY] |
+| 中国法律 | 个人信息保护法 [source:PIPL-2021] |
+| 中国法律 | 数据安全法 [source:DATA-SECURITY-LAW-2021] |
+| 地图语境 | OpenStreetMap 贡献者，ODbL，仅作带署名的定向背景 [source:OSM-BACKGROUND-CONTEXT-20260813] |
+| 包内证据 | 值守班合同与故障卡 [source:PACKAGE-DUTY-SHIFT-CONTRACT] |
+| 包内证据 | 140 例开门前包级排演 [source:PACKAGE-PREOPENING-SHIFT-REHEARSAL] |
 
 完整机器索引见 sources.json、metrics.json、compliance_matrix.json、standard_matrix.json、design_depth_matrix.json 和 self_check.json。正式深化前必须补官方边界、权属、地形、建筑与管线调查、文保控制、控规、交通和运营预算。

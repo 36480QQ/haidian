@@ -7,6 +7,29 @@ on the PR. It does not call AI services or execute contributor code. The trusted
 scripts also rerun the spatial, visual, and professional gates against the
 hydrated package so a contributor-owned self_check.json is not treated as
 independent execution provenance.
+
+Security model
+--------------
+- Runs only from the trusted default branch checkout (``github.event.repository.default_branch``).
+- Downloads changed files from the PR head via the GitHub Contents API as inert data blobs.
+- Never executes contributor-supplied code; the validator binary is always the
+  trusted branch copy.
+- Comments on the PR with the validation result and retries on transient API
+  errors (429, 500-504) up to ``MAX_API_ATTEMPTS`` times.
+
+Environment variables
+---------------------
+- ``GITHUB_TOKEN`` — required; needs ``pull-requests: write`` permission.
+- ``GITHUB_REPOSITORY`` — required; ``owner/repo`` format.
+- ``GITHUB_EVENT_PATH`` — path to the GitHub Actions event JSON.
+
+Usage
+-----
+Intended to be called by the ``submission-validation.yml`` GitHub Actions
+workflow, not manually. For local testing, pass ``--pr`` to specify the PR
+number and ensure ``GITHUB_TOKEN`` is set.
+
+Exit code is 0 when the PR passes validation and 1 when it fails or errors.
 """
 
 from __future__ import annotations

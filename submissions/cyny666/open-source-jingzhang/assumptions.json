@@ -30,6 +30,24 @@
       "status": "design_recommendation",
       "statement": "Named operators and governance roles in the proposal are recommended responsibility types, not confirmed institutional commitments.",
       "impact": "Each pilot requires a written mandate, data agreement, accessibility review, safety review, and accountable human owner before launch."
+    },
+    {
+      "id": "A-DATA-GOVERNANCE-001",
+      "status": "proposed_control",
+      "statement": "No personal, classified, internal, or non-public spatial data is included; future pilots must prefer aggregate, anonymous, synthetic, or actively submitted data and document purpose, retention, access, deletion, and appeal.",
+      "impact": "Any identity, imagery, trace, sensitive-data, enforcement, approval, penalty, or resource-allocation use pauses the pilot for legal, data-owner, and named professional human review."
+    },
+    {
+      "id": "A-RIGHTS-001",
+      "status": "participant_cleared_scope",
+      "statement": "The submission uses participant-created figures and layouts plus registered textual sources; it does not copy case-study images, maps, marks, or extended prose.",
+      "impact": "Every later asset must record author, licence, attribution, redistribution scope, and generation method before release; material without adequate clearance must be removed or replaced."
+    },
+    {
+      "id": "A-REGIONAL-COLLABORATION-001",
+      "status": "interface_proposal_only",
+      "statement": "Beiwei Community, Future Science City, Huairou Science City, Beijing E-Town, and Beijing-Tianjin-Hebei links are proposed protocol interfaces rather than confirmed partnerships.",
+      "impact": "No named institution is represented as participating or committed; real collaboration requires separate confirmation, provenance, authorisation, accountable ownership, and an exit record."
     }
   ]
 }

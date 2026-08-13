@@ -1,5 +1,56 @@
 # 方案迭代记录 / Changelog
 
+## v17.0 - 2026-08-13
+
+**Site-grounded reading and editorial subtraction / 场地锚定阅读与表达减重**
+
+- 新增 30 秒／3 分钟／15 分钟双语阅读漏斗，首屏先说明“公园已报告开放，本案只做不打断普通生活的可逆增量”，再展开双轨语法；完整证据仍保留在可展开的 15 分钟证据库中。
+- Added a bilingual 30-second / 3-minute / 15-minute reading funnel. The first screen now states that the park is publicly reported open and the proposal addresses only reversible increments that do not interrupt ordinary life, before explaining the twin-track grammar; the full evidence remains available in the expandable 15-minute library.
+- 把场地表达明确拆为三框：公开背景定位、仓库临时设计容器、方案设计关系。三者不得叠合成伪精确总图；既有 OSM 背景差异与 `PROV-KEY-003` 未锚定大钟寺站均保留为未裁决重算触发，本轮不平移 geometry。
+- Split site representation into three explicit frames: published background orientation, the repository provisional design container, and proposal-defined design relationships. They must not be merged into a false-precision master map. The existing OSM background divergence and unanchored `PROV-KEY-003` remain unresolved recalculation triggers; this round does not shift geometry.
+- 重绘五组中英文核心图：三框场地读取、36 概念单元的空间职责、三处不可互换换轨场、普通慢行与蓝绿维护净空、D01—D08 证据成熟度。每组同时保留 SVG 可编辑源与 1800×1100 PNG 展示导出。
+- Redrew five bilingual core figure families: three-frame site reading, spatial duties of the 36 concept units, three non-interchangeable switchyards, ordinary mobility and blue-green maintenance clear zones, and D01–D08 evidence maturity. Each family retains editable SVG sources and 1800×1100 PNG display exports.
+- 删除页首 V1/V2 版本复盘表和重复总图调用，统一 `Zhongzhiyuan`、一厅一人工台、公共任务经济及规划术语；评审主导航只显示六个高价值入口，其余合同进入可展开证据库。
+- Removed the front-loaded V1/V2 retrospective table and a duplicate overview call, standardized `Zhongzhiyuan`, one hall plus one staffed desk, Public Mission Economy, and planning terms, and reduced the primary jury navigation to six high-value entries with the remaining contracts in an expandable evidence library.
+- 修复无锚点打开时旧脚本自动写入 `#step-1`、跳过首屏的问题；主导航提前到 30 秒入口之后，新增中英文切换、键盘跳转、表格列语义和移动端图内横向阅读／等价三框文字卡片。以上是可访问性设计意图，不是认证。
+- Fixed the legacy script that wrote `#step-1` and skipped the first view on unanchored loads. Primary navigation now follows the 30-second entry, with bilingual switching, keyboard skip, table-column semantics, and small-screen in-figure scrolling plus equivalent three-frame text cards. These are accessibility intentions, not certification.
+- 将可见指标拆成包内对象计数、临时几何派生值和现实证据，移除会被误读为场地绩效的可见 HIGH；重建中英文 14 页 A3 和 8 页 A0，44 页全检为空白页 0、替换字形 0、越界文本块 0。最终投稿清单与逐文件权利台账目标同步为 134/134，独立清权仍为 0。
+- Split visible metrics into package-object counts, provisional-geometry derivations, and reality evidence, removing visible HIGH labels that could be mistaken for site performance. Rebuilt 14-page A3 and 8-page A0 publications in both languages; all 44 pages have 0 blank pages, 0 replacement glyphs, and 0 out-of-page text blocks. The final manifest and file-rights ledger target 134/134 paths, while independent clearance remains 0.
+- 新增 `A-SITE-READING-020` 与 `JZ-SITE-READING-R17` 结构化合同。12 场景、8 项目、3 重点区、36 概念用地单元、geometry、metrics、G0、NO-GO、现实结果 0 与 `not_fully_cleared` 均不变；图件、PDF、机器 PASS 或 PR 合并不构成现场、专业、规划、建设、运营或权利批准。
+- Added the structured `A-SITE-READING-020` and `JZ-SITE-READING-R17` contracts. Twelve scenes, eight projects, three key areas, 36 concept land-use units, geometry, metrics, G0, NO-GO, zero real results, and `not_fully_cleared` remain unchanged. No figure, PDF, machine PASS, or PR merge creates site, professional, planning, construction, operating, or rights approval.
+- 在 `JZ-SITE-READING-R17` 内固化 10 个 geometry／metrics 输入哈希、389 个唯一空间 ID、12／8／3 编号数量、44 页出版、双语浏览器、134 项清单／权利和 T02 回放的包级回归期望；该合同只阻止文件与表达倒退，不升级任何现实成熟度。
+- Embedded package-level regression expectations in `JZ-SITE-READING-R17`: ten frozen geometry/metrics hashes; 389 unique spatial IDs; 12/8/3 identifier counts; 44 publication pages; bilingual browser behavior; 134 manifest/rights paths; and the T02 replay. This contract prevents file and presentation regressions only and upgrades no real-world maturity.
+
+## v16.0 - 2026-08-13
+
+**Jury-first convergence and trusted delivery migration / 评审收束与可信交付迁移**
+
+- 将前台唯一身份收束为“双轨京张 / Twin-Track Jing-Zhang”，并把旧投稿名移出首屏；JZ-AIOS、G0—G3、证据门、权利边界仍为后台内核。页首元数据压缩为 3 条评审轨道和 6 个官方场景族，但 12 个结构化场景节点、8 个项目、3 个重点区及其编号全部保留。
+- Converged the sole front-stage identity on Twin-Track Jing-Zhang and removed the legacy submission name from the first screen. JZ-AIOS, G0–G3, evidence gates and rights boundaries remain the back-stage kernel. Front-matter metadata is compressed to three review tracks and six official scenario families while all twelve structured scene nodes, eight projects, three key areas and identifiers remain intact.
+- 新增用户启动、静音、48 秒的普通—验证—故障—恢复评审动态；无 JavaScript 时四张卡完整可读，减少动态时改为逐态按钮。动态不采集数据、不自动播放，也不构成现场事故、恢复时长、人员或运营证据。
+- Added a user-started, silent 48-second ordinary–proof–failure–recovery review motion. All four cards remain complete without JavaScript, and reduced-motion mode advances discretely. It collects no data, never autoplays, and creates no field-incident, recovery-duration, staffing or operating evidence.
+- 重建双语封面、14 页 A3 评审册和 8 张 A0 核心板：每个可见单元只承担一个判断，并在统一证据带中披露 12/12 文档覆盖、现场结果 0、GO/批准 0、G0、临时几何和 `not_fully_cleared`。长文 References 保持最后章节。
+- Rebuilt the bilingual cover, fourteen-page A3 jury booklets and eight A0 core boards. Each visible unit carries one judgement and a shared evidence strip discloses 12/12 document coverage, zero field results, zero GO/approval, G0, provisional geometry and `not_fully_cleared`. References remain the final long-form section.
+- 把 manifest 迁移到严格 0.2.x：非规范旧角色无损保存在 `role=other` + `role_detail`，旧翻译、校验、权利和发布声明移入带版本扩展；新增封面入口。迁移不改变权利阻断或现实成熟度。
+- Migrated the manifest to strict 0.2.x: non-canonical legacy roles are preserved losslessly as `role=other` plus `role_detail`; legacy translation, validation, rights and release claims move into versioned extensions; the cover entry is added. Migration changes neither the rights gate nor real-world maturity.
+- 现场采集、批准、GO、真实故障、恢复验收、人员、排班、预算、客流和逐文件独立清权仍为 0 或 unknown；临时边界与三项空间提示保持不变。
+- Field collection, approvals, GO, real failures, restoration acceptances, staffing, rosters, budgets, footfall and independent file-level rights clearance remain 0 or unknown. Provisional boundaries and the three spatial notices remain unchanged.
+
+## v15.0 - 2026-08-13
+
+**Field evidence intake and replacement pack / 现场证据采集与替换包**
+
+- 将既有 D01—D08 和 H01—H07 转成双语空白采集、保管链和专业处置合同；八包均为 `not_collected`、材料 0、现场值 `null`、接收用于复算 0、批准 0。模板完整不等于证据、批准或 G1 升级。
+- Turned existing D01-D08 and H01-H07 into a bilingual empty collection, custody and professional-disposition contract. All eight packets remain `not_collected`, with 0 artifacts, `null` field values, 0 acceptances for recalculation and 0 approvals. Template completeness is not evidence, approval or a G1 upgrade.
+- 新增三条不可互换的未来采集路：众智园核对设备隔离/停止/还场，原点核对同意撤回/居民日常/保障，大钟寺核对高峰连续/来源版本/纠错；完成走查均为 0。
+- Added three non-interchangeable future routes: Zhongzhiyuan for equipment isolation/stop/restoration, Origin for consent withdrawal/daily life/safeguarding, and Dazhongsi for peak continuity/source version/correction. Completed route walks remain 0.
+- #2266 只提供公众可读的保留/修改/暂停/归还处置方法，并被规范化到本包已有术语；未复制其品牌、空间构图、几何、指标、图件、媒体或现实结论。
+- PR #2266 contributes public keep/modify/pause/return disposition method only, normalized into this package's existing vocabulary. No brand, spatial composition, geometry, metric, figure, media or real-world claim is copied.
+- 追加当前态一致性审计：把正文、来源新鲜度策略和双语权利声明中的旧轮次计数统一为最终 125 个路径、50 条来源与 24 个 SVG；历史固定点仍作为带轮次标识的历史记录保留。
+- Added a current-state consistency audit: synchronized stale round-era counts in the narrative, freshness policy and bilingual rights statement to the final 125 paths, 50 sources and 24 SVG files; explicitly versioned historical fixed points remain historical records.
+- 12 场景、8 项目、3 重点区、99 槽、geometry、metrics、全部 G0、临时边界、NO-GO 和 `not_fully_cleared` 保持不变。
+- Twelve scenes, eight projects, three key areas, 99 slots, geometry, metrics, all-G0 status, provisional boundaries, NO-GO and `not_fully_cleared` remain unchanged.
+
 ## v14.0 - 2026-08-13
 
 **Accessible offline review walk and final convergence / 可访问离线评审漫游与终局收束**

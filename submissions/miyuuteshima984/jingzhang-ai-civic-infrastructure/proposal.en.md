@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Uses City Completeness as the spatial review method for the Centennial Jing-Zhang AI Innovation Belt: seven ordinary-city capabilities—HOME, LEARN, CARE, MOVE, GREEN, WORK and COMMON LIFE—form a durable everyday base first, while AI enters research, community, mobility and commerce as an optional enhancement layer. The structure is one public green spine, six completeness segments, six east-west stitching links and three key areas; Shuangfen Fortress remains only a community-name easter egg inside AI Origin Community."
 tracks: ["ai-origin-community", "ai-public-services", "ai-traffic-walkability"]
 scenarios: ["ai-traffic-walkability", "robot-delivery-low-speed", "enterprise-service-copilot", "ai-cultural-guide", "ai-health-service-navigation"]
-iteration: "v0.6"
+iteration: "v0.8"
 ---
 
 # JING-ZHANG CITY COMPLETENESS
@@ -96,6 +96,8 @@ Public exchange space accompanies all three tasks: an open exchange yard in Zhon
 
 ![C7 gaps and design tasks in the three key areas](assets/figures/key-areas.en.png)
 
+The v0.7 fixed key-area figure is no longer a task card alone. It draws the three distinct ground-floor/public-space sections side by side: a research campus with a physically bounded test pocket; a long-term neighborhood with home—care—rest—commons continuity; and a station-city arrival chain with fixed bilingual signs, staffed help, accessible interchange, ordinary retail and heritage public realm.
+
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
 v0.6 expands the former five grouped personas into nine explicit design-test groups: long-term residents/families; older residents; disabled, mobility-limited or sensory-limited users; children/caregivers; students/researchers; founders/company employees; service workers/commuters; visitors/international users; and people with no smartphone, no account or a deliberate opt-out from digital services. These are used to test benefit, burden, exclusion risk and human fallback, not to claim demographic statistics. [metric:persona_count]
@@ -115,6 +117,34 @@ v0.6 then selects three **flagship pilot protocols** from the ten scenarios so a
 ![Three flagship pilot protocols: precondition—test—receipt—GO/REVISE/STOP](assets/figures/flagship-pilot-protocols.en.svg)
 
 All scenarios share a governance floor: basic circulation and services work without an app; non-participation does not remove community rights; high-risk decisions escalate to humans; and basic urban functions survive when a model, device, account or platform is withdrawn. This is both technological robustness and public-space equity.
+
+### v0.7 Three Everyday Journeys: Turn Protocols Back into Space
+
+v0.7 no longer treats a reviewer index as the first visual. The three key areas are reorganized around everyday journeys: a researcher and service worker in Zhongzhiyuan move from arrival to R&D, food/rest and a bounded test yard; an older resident, carer and no-phone user in AI Origin move from home to rest, care and civic commons; a commuter, international visitor and service worker in Dazhongsi move from arrival and interchange through ordinary retail to the Jing-Zhang heritage public interface. Each journey requires a complete physical city first; AI is only a switchable enhancement layer.
+
+![Three everyday journeys: ordinary-city baseline—physical repair—optional AI—functioning exit state](assets/figures/everyday-journey-sections.en.svg)
+
+### How AI Changes Urban Form, Not Just Screens
+
+The spatial effect of AI is reduced to six reversible prototypes: test pockets, accessible help nodes, continuous station-city arrival interfaces, replaceable small service nodes, people-first public ground floors, and a reversible spatial version chain—observe, bounded prototype, public/professional review, merge or rollback. This answers how AI changes spatial organization and planning method rather than merely attaching more digital interfaces to existing space.
+
+![How AI changes urban form: six reversible physical interfaces](assets/figures/ai-urban-form-change.en.svg)
+
+<!-- V08-PROTOTYPE-START -->
+### v0.8 | One 1:1 urban prototype from six interfaces: C7 CIVIC STATION
+
+v0.8 is a **prototype-first parallel candidate** branched from the v0.7 exact head. Instead of adding another reviewer dashboard, it converges the six reversible interfaces into one public-space prototype that can be read on one page and later developed against real site conditions: **C7 CIVIC STATION**. It is not an “AI kiosk”; it is a spatial sequence in which the ordinary city works first and AI enters only as an optional layer. [metric:flagship_physical_prototype_count]
+
+The prototype always has five parts: **(1) ordinary-city base** (shade, seating, continuous accessibility, fixed bilingual wayfinding and ordinary passage) → **(2) staffed service** (no-account counter, paper/telephone entry and human takeover) → **(3) optional AI** (multilingual Q&A, route assistance and service matching) → **(4) controlled test pocket** (physically separated from public passage, closable and removable) → **(5) AI-OFF recovery state** (basic passage, help, staying and service remain available after shutdown). Its three operating states are DAILY / CONTROLLED TEST / AI-OFF. A test may never displace ordinary passage, accessibility or basic public service. [metric:civic_station_operating_state_count]
+
+![C7 CIVIC STATION: one reversible and recoverable 1:1 urban prototype](assets/figures/c7-civic-station-prototype.en.svg)
+
+The same prototype is embedded differently in the three key areas. Zhongzhiyuan separates controlled testing from the ordinary paths of workers and visitors; AI Origin prioritizes no-phone and care journeys before optional AI; Dazhongsi prioritizes fixed bilingual arrival and staffed interchange before dynamic information. The fixed `key-areas.en.png` is rebuilt to show these three distinct embeddings rather than another governance matrix.
+
+### v0.8 | Fifteen preregistered observation slots, with no fabricated field values
+
+Each key area receives five stable observation categories—**arrival continuity, no-account/staffed equivalence, accessibility and staying, test boundary, shutdown/recovery and maintenance**—for 15 `observation_id` values in total. [metric:preregistered_observation_slot_count] All are currently `not_measured`; coordinates, sample sizes, thresholds, field readings, permission and named responsible entities remain pending real survey and professional confirmation. This is a future field-work package, not field evidence. See `visual/assets/field-observation-register.json`.
+<!-- V08-PROTOTYPE-END -->
 
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
@@ -222,11 +252,7 @@ The empty constraints layer is itself an auditable data gap. Official heritage, 
 
 ![City Completeness metrics and evidence gaps](assets/figures/metrics-evidence.en.png)
 
-v0.6 stops hiding new evidence at the end of supplemental files. A **review evidence dashboard** moves core metrics, three flagship pilots, nine user groups, implementation gates and claim boundaries into the first viewport of the offline visual; a **reviewer evidence index** maps all seven public rubric dimensions and agent.1–agent.6 directly to proposal, figure, JSON, GeoJSON and rights/source evidence. Neither is a self-score, and neither turns a machine gate PASS into field or statutory validity.
-
-![v0.6 review evidence dashboard](assets/figures/review-evidence-dashboard.en.svg)
-
-![Seven-dimension rubric and agent.1–agent.6 reviewer evidence index](assets/figures/reviewer-evidence-index.en.svg)
+v0.7 demotes the v0.6 reviewer evidence dashboard/index to a back-of-package traceability appendix. It is no longer part of the design narrative or first-screen visual; scoring, gates and design content remain separate.
 
 ## Risk, Copyright, and Compliance
 

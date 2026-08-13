@@ -4,6 +4,31 @@
 >
 > This file applies only to `submissions/xyh202131/jingzhang-ai-pilgrimage-belt/`. It is a package-local copy reference, not a repository-level reusable template, public PR template, or maintainer policy. No `[x]` may be inherited when it is copied into another submission or later PR.
 
+## Round 17 site grounding and expression reduction / 第 17 轮场地锚定与表达减重
+
+第 17 轮只重组评审阅读和证据责任，不改变方案实体。前台现在按“公开背景定位—临时设计容器—可深化设计关系”三框分读，禁止套准成一张现实总图：背景只说明报道方向，`PROV-SITE-001` / `PROV-KEY-*` 只组织资料接收与概念关系，双轨只表达普通任务、旁侧验证、人工交接、停止、恢复和退出。Issue #846 记录的 OSM 背景 0% 相交／约 412.5m 差异只作为复核报警，不是几何平移依据；Issue #1029 尚未证明 `PROV-KEY-003` 的大钟寺车站、道路、地块或建筑锚点，因此图中“四向”只表示服务与移动关系。geometry、`metrics.json`、12 个场景、8 个项目、三处重点区、G0、公共权利与 `not_fully_cleared` 均不变；现场资料、现场结果、GO、批准和新增责任接受均为 0。
+
+Round 17 reorganizes jury reading and evidence responsibility only; it changes no plan entity. The front stage now separates published background orientation, the provisional design container, and design relationships, and forbids their co-registration as one site-truth map. Background supports reported orientation only; `PROV-SITE-001` / `PROV-KEY-*` organize intake and conceptual relationships only; Twin-Track expresses ordinary tasks, adjacent proof, staffed handover, stop, recovery and exit only. The Issue #846 OSM-background discrepancy—0% overlap and approximately 412.5m—remains a review alarm, not a geometry-shift instruction. Issue #1029 does not establish a Dazhongsi station, road, parcel or building anchor for `PROV-KEY-003`; “four-way” therefore denotes service and movement relationships only. Geometry, `metrics.json`, 12 scenes, 8 projects, three key areas, G0, public rights and `not_fully_cleared` remain unchanged; field inputs, field results, GO, approval and newly accepted duties remain 0.
+
+双语 visual 入口采用 30 秒／3 分钟／15 分钟漏斗；无锚点打开不再自动写入 `#step-1` 或跳过首屏，六项主导航位于入口后，完整证据库折叠保留。五组重建核心图分别承担三框场地读取、36 个功能信封／三类空间责任、三处不可互换原型、普通慢行与维护净空、包内计数与现实零状态；15 组包内自编双语 SVG 源和 1 组仓库临时衍生 SVG 源均保留，PNG 只作离线显示导出。移动端在图内横向浏览，并由紧邻三框卡片提供等价文字读法；表格可键盘聚焦并显式声明列标题。上述可访问性措施是设计意图，不是独立认证。
+
+The bilingual visual entry uses a 30-second / 3-minute / 15-minute funnel. An unanchored load no longer writes `#step-1` or skips the first view; six primary links follow the entry, while the full evidence library remains expandable. Five rebuilt core figures carry distinct duties: three-frame site reading; 36 functional envelopes and three spatial duties; three non-interchangeable prototypes; ordinary movement and maintenance clearance; and package counts versus reality-zero evidence. Fifteen package-authored bilingual SVG pairs and one repository-provisional pair remain checked in, with PNG used only as offline display exports. Small screens scroll within the figure and receive an adjacent equivalent three-card text reading; tables are keyboard-focusable with explicit column headers. These accessibility measures are design intent, not independent certification.
+
+四份出版物由两个新 Python 进程以固定输入顺序、固定元数据、`invariant=1`、页压缩和本机 `NotoSansSC-VF.ttf` 静态 500/700 字重重建，逐文件字节一致。中英文 A3 各 14 页、A0 各 8 页，共 44 页；PyMuPDF 全页检查得到空白页 0、替换字形 0、越界文本块 0，四份 PDF 的可搜索文字跨度仅使用 `NotoSansSC-Medium` / `NotoSansSC-Bold`。本地联系表和关键页视觉复核未见裁切；出版 QA 只证明文件可读和当前环境可复现，不证明现场、批准、建设、运营、G1 或清权。
+
+Two fresh Python processes rebuilt all four publications with fixed input order, fixed metadata, `invariant=1`, page compression, and static 500/700 weights from local `NotoSansSC-VF.ttf`; every file was byte-identical across runs. Each language has a 14-page A3 booklet and an 8-page A0 set, for 44 pages total. Full PyMuPDF inspection found 0 blank pages, 0 replacement glyphs, and 0 out-of-page text blocks; searchable spans in all four PDFs use only `NotoSansSC-Medium` / `NotoSansSC-Bold`. Local contact sheets and targeted page renders showed no clipping. Publication QA proves file readability and current-environment reproducibility only; it proves no field condition, approval, construction, operation, G1 status or rights clearance.
+
+`visual/assets/site-grounding-register.json#jury_reading_contract.package_validation_contract` 固化本轮的专项回归期望：10 个 geometry／metrics 输入哈希、389 个唯一空间 ID、12 场景／8 项目／3 重点区、44 页出版、双语浏览器与无 JavaScript 降级、134 项清单／权利路径和 T02 精确回放。它可供最终提交或后续轮次重放，只验证投稿文件和表达合同；即使全部通过，现场调查、专业验收、批准、运营和清权仍为 0 或未完成。
+
+`visual/assets/site-grounding-register.json#jury_reading_contract.package_validation_contract` freezes the round-specific regression expectations: ten geometry/metrics input hashes; 389 unique spatial IDs; 12 scenes, eight projects and three key areas; 44 publication pages; bilingual browser and no-JavaScript fallback behavior; 134 manifest/rights paths; and exact T02 replay. It can be replayed against the final commit or a later round, but validates package files and presentation contracts only. A complete PASS still leaves fieldwork, professional acceptance, approval, operation and rights clearance at 0 or incomplete.
+
+| 文件 / File | 页数与版式 / Pages and format | SHA-256 |
+|---|---:|---|
+| `drawings/a3-booklet.pdf` | 14 / A3 landscape | `44541e0ae62faad8dd0e5180f92c6197788ced3f885c043283bb1b90cef98eb9` |
+| `drawings/a3-booklet.en.pdf` | 14 / A3 landscape | `0ae1b081157bc940933b04dd24cbfe3782ad4b7a93f7f9e1ad6e9254c4307d5c` |
+| `drawings/a0-boards.pdf` | 8 / A0 landscape | `66a325709cfc36de7a9e8c86c7beafce645dca630b94dcd0d1f4e0ce4316c0e4` |
+| `drawings/a0-boards.en.pdf` | 8 / A0 landscape | `103918c52bed55325c1fa8c98de803afafaa86ca5fcaaac23bd59758791c33b3` |
+
 ## 方案叙事摘要 / Narrative summary
 
 AI 朝圣·铁轨新生带当前方案将百年京张定义为一条可审计的 AI 公共创新生产线。小月河场景赋能翼提出真实问题，AI 原点社区共创，众智园验证，大钟寺发布与服务，中关村科技服务翼提供建议性的合规与转化支持，公众反馈和失败证据回流下一年度。
@@ -653,3 +678,24 @@ Two fresh deterministic builds produced the same four SHA-256 values. Page-size,
 - `a0-boards.pdf`: 18 pages; SHA-256 `32d9f5e9c0eec2140d8057b58c68ce92bb74e6710a28a0318ff9833804a7712f`
 - `a3-booklet.en.pdf`: 73 pages; SHA-256 `0e4bc3aae048eddbeb39aaa9211e7a4a3158396405cc52b3d4d7630b76022932`
 - `a3-booklet.pdf`: 69 pages; SHA-256 `d225e095cf5c95a2ccdd83c37d5f8ecba30a8fb647f74ddd902673d975bbafd5`
+
+## Round 15 field-evidence intake / 第15轮现场证据采集与替换
+
+第15轮只把既有 D01—D08 与 H01—H07 转成空白资料包、保管链、最低质量门和专业处置状态。八包均为 `not_collected`、材料 0、现场值 `null`、接收用于复算 0、批准 0；三处未来采集路线完成数 0。众智园针对隔离、停止和还场；原点针对同意撤回、保障和居民日常；大钟寺针对高峰连续、来源版本和纠错。模板、字段覆盖、文件 PASS、PR 审查或合并都不是现场证据、专业接受或 G1 授权。
+
+Round 15 turns existing D01-D08 and H01-H07 into empty packets, custody, minimum-quality gates and professional dispositions only. All eight packets remain `not_collected`, with 0 artifacts, `null` field values, 0 acceptances for recalculation and 0 approvals; completed future route walks remain 0. Zhongzhiyuan focuses on isolation, stop and restoration; Origin on consent withdrawal, safeguarding and resident daily life; Dazhongsi on peak continuity, source version and correction. A template, field coverage, file PASS, PR review or merge is not field evidence, professional acceptance or G1 authorization.
+
+[source:SOURCE-JZ-COMMONS-LOOP-METHOD-R15] PR #2266 contributes public disposition semantics only. The package normalizes them into retaining the ordinary baseline, returning a packet, applying NO-GO/conflict hold, and restoring ordinary use or retiring an overlay. No Commons Loop brand, composition, geometry, metric, figure, media or claim is imported.
+
+The final publications were built twice in fresh Python processes with a fixed font timestamp and produced identical file bytes. Layout QA must still be read together with the G0 and rights boundaries; publication determinism proves no field fact.
+
+| PDF | Pages / format | SHA-256 |
+|---|---|---|
+| `drawings/a3-booklet.pdf` | 66 / A3 portrait | `8f6b8bea4f9c2b458876a99a4642660e1954dd8d8b45291801db137b2c20a035` |
+| `drawings/a3-booklet.en.pdf` | 71 / A3 portrait | `524d6ca44aaa9820658855c256aa4152dce18e9694536a4bcc6364a62edaa7e4` |
+| `drawings/a0-boards.pdf` | 18 / A0 landscape | `686a2524d9d6f72486d32fbc3e13da3feb1e3f1d5e7f298c6ba9ce89559d47aa` |
+| `drawings/a0-boards.en.pdf` | 18 / A0 landscape | `540a4da7756ee2ff4ccf5cf6f55013c03a12ef7a7caf4ba796bde1f2694e490f` |
+
+本轮新增 1 个双语图对、1 个结构化合同和 1 个基线哈希记录；12 场景、8 项目、3 重点区、99 槽、geometry、metrics、全部 G0、临时边界、NO-GO 与 `not_fully_cleared` 不变。基线记录证明文件字节冻结，不证明其中空间信息已成为官方或现实真值。
+
+This round adds one bilingual figure pair, one structured contract and one baseline-hash record. Twelve scenes, eight projects, three key areas, 99 slots, geometry, metrics, all-G0 status, provisional boundaries, NO-GO and `not_fully_cleared` remain unchanged. The baseline record freezes file bytes; it does not make their spatial content official or true in the field.

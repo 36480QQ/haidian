@@ -1,11 +1,14 @@
 # 版权与生成说明 / Copyright and Generation Statement
 
-- 正文、翻译、空间策略与场景卡由 OpenAI Codex（GPT-5 系列；不声称具体部署变体）生成并由本地校验脚本审计。
-- 五张中英图、封面、A3/A0 与离线页面由 `tools/build_railcode_submission.py` 从提交包 GeoJSON/metrics 本地绘制；无第三方图片、远程字体、商标或人物肖像。
-- 按用户指定调用全局 ImageGen CLI 与 `gpt-image-2`。用户更新 image 分组 Key 后生成 `assets/media/cover.webp`（2048×1152，high quality，WebP）；封面为合成概念表现，不是现场照片或获批效果图。
-- 所有图面均为概念表达，不是场地照片、正式红线、测绘成果、获批规划或建设承诺。
-- 项目依据、来源与许可边界见 `sources.json`；公开展示遵循提交包声明的 `COMMUNITY-DISPLAY-ONLY`。
+- v1.2 中英文正文、空间策略、场景合同、实施门和图表由 OpenAI Codex（GPT-5 系列；不声称具体部署变体）生成与本地复核。
+- 技术图件、网页、A3/A0 由 `tools/build_railcode_v11.py` 从提交包数据和设计合同本地绘制。
+- 封面与三张场景板由 `tools/build_railcode_v11.py` 使用 Python/Pillow 和本方案空间合同本地原创绘制；不调用图像生成服务，不使用现场照片、第三方视觉素材、品牌或真实人物身份。它们是概念场景板，不是居民意见、边界、审批或工程证据。
+- 图件使用 Noto Sans SC 本机字体按 SIL Open Font License 1.1 栅格化；许可证来源、适用条件和本机文件哈希见 `visual/assets/noto_sans_sc_license.json`，字体文件不随包分发。
+- 其余来源和许可边界见 `sources.json`；不使用商业地图截图、新闻图片、远程字体、商标或个人隐私。
+- 逐资产作者、工具、第三方状态、再分发范围与限制见 `visual/assets/asset_rights_ledger.json`；案例只保留链接和原创机制摘要，不复制网页文字、图片、Logo 或宣传绩效。
 
 ## English
 
-Text, translation, spatial strategies, and scenario cards were generated with OpenAI Codex (GPT-5 family; exact deployment variant not asserted). Five bilingual figures, PDFs, and offline pages were locally rendered from package GeoJSON/metrics. The participant cover `assets/media/cover.webp` was generated through the configured global ImageGen CLI with `gpt-image-2` at 2048×1152, high quality, WebP, after the user enabled the image group. No third-party image was supplied as an input. All visuals are concepts, not site photographs, official red lines, surveys, approvals, or delivery commitments.
+The bilingual v1.2 narrative, spatial strategies, scenario contracts, gates, and diagrams were generated with OpenAI Codex (GPT-5 family). Technical figures, offline pages, A3/A0 outputs, cover, and three scene boards were locally drawn with Python/Pillow from the proposal's spatial contracts. No image-generation service, site photograph, third-party visual asset, brand, or real identity is used. The scenes are concepts—not consultation evidence, boundaries, approvals, or engineering proof. Noto Sans SC is rasterised under SIL OFL 1.1; the licence text is included and no font file is distributed.
+
+Asset-by-asset authorship, tool, third-party status, redistribution boundary, and limitations are recorded in `visual/assets/asset_rights_ledger.json`. Case references retain links and original mechanism summaries only; no page text, image, logo, or promotional performance claim is copied.

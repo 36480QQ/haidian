@@ -9,14 +9,14 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Before AI enters the street, it must pass public acceptance: one Public Acceptance Passport governs a Safety Acceptance Garden, Rights & Contribution Arcade, and 100-metre Public Acceptance Street, while an exit-ready pilot and zero-network runner turn twelve scenarios into testable civic contracts."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v3.1"
+iteration: "v3.2"
 ---
 
 # Intelligence in Common: The Jing-Zhang Open Intelligence Commons
 
 **Before AI enters the street, it must pass public acceptance.** This is the proposal's shortest and most testable civic claim. The Centennial Jing-Zhang AI Innovation Belt does not need an AI showcase visible only during festivals. It needs an urban public protocol that operates year-round, welcomes everyone, allows every technology to be questioned, and lets failure exit. The proposal reads the Jing-Zhang Railway Heritage Park as a memory and public-intelligence spine. Zhongzhiyuan, the Beijing AI Origin Community, and Dazhongsi become three distinct urban laboratories for safety governance, open-source translation, and AI-Native everyday life. The Zhongguancun Technology Services Wing and Xiaoyue River Scenario Enablement Wing connect capital, legal services, compute, data, and real urban problems.
 
-Version 3.1 compresses this protocol into an internationally legible urban identity: **NO PASS, NO AI**. PASS is the proposal's shorthand for Public Acceptance & Safe-Street Standard and its four non-compensable admission conditions: **P / Purpose visible**, **A / Accountable owner**, **S / Staffed handover**, and **S / Stop-safe restoration**. Zhongzhiyuan's Safety Acceptance Garden proves that a trial can stop. The AI Origin Community's Rights & Contribution Arcade proves that a contribution can be withdrawn. Dazhongsi's 100-metre Public Acceptance Street proves that everyday service can be handed back to people. If one PASS condition fails, AI does not activate and the place returns to its ordinary no-AI garden, arcade, or staffed street baseline. PASS is an original concept protocol, not a statutory standard, government certification, or real railway signalling system.
+Version 3.2 compresses this protocol into an internationally legible urban identity: **NO PASS, NO AI**. PASS is the proposal's shorthand for Public Acceptance & Safe-Street Standard and its four non-compensable admission conditions: **P / Purpose visible**, **A / Accountable owner**, **S / Staffed handover**, and **S / Stop-safe restoration**. Zhongzhiyuan's Safety Acceptance Garden proves that a trial can stop. The AI Origin Community's Rights & Contribution Arcade proves that a contribution can be withdrawn. Dazhongsi's 100-metre Public Acceptance Street proves that everyday service can be handed back to people. If one PASS condition fails, AI does not activate and the place returns to its ordinary no-AI garden, arcade, or staffed street baseline. PASS is an original concept protocol, not a statutory standard, government certification, or real railway signalling system.
 
 ## One-Page Jury Conclusion: From an Existing Park to an Acceptable AI City
 
@@ -26,15 +26,15 @@ Urban space and AI operate in sequence. **Layer one is the permanent ordinary-ci
 
 The three key areas are deliberately non-interchangeable. Zhongzhiyuan sequences public garden, interpretation porch, controlled test loop, and logistics to manage safety gradients. The AI Origin Community sequences campus and park pores, Open Outputs Street, shared ground floors, and everyday lanes to connect open-source translation with daily life. Dazhongsi sequences station-city foyer, four-quadrant ground stitching, the 100-metre acceptance street, and an international living room to serve high everyday footfall. They share PASS, but their plans, sections, people flows, logistics, and failure-recovery baselines are different.
 
-### Strategy Test: Why Not a Showcase Belt or Three Isolated Test Yards?
+### Strategy Choice: Why Not a Showcase Belt or Three Isolated Test Yards?
 
-| Strategy | Everyday public value | Site fit | Failure recovery | Tri-area synergy | Transferability | Decision |
-|---|---:|---:|---:|---:|---:|---|
-| A Technology showcase belt | 2 | 3 | 2 | 2 | 2 | Festival visibility risks reducing citizens to spectators |
-| B Three isolated test yards | 1 | 2 | 3 | 1 | 2 | Professional control severs the public spine and everyday life |
-| **C PASS public-acceptance city** | **5** | **5** | **5** | **5** | **5** | **The ordinary city is permanent; AI is time-limited; admission evidence travels** |
+| Strategy | Structural problem identified | Required city-making action | Verifiable output | Choice |
+|---|---|---|---|---|
+| Technology showcase belt | Festival visibility risks reducing citizens to spectators | Add year-round ordinary public service and an after-use | Continuous no-AI route and staffed service | Not the primary strategy |
+| Three isolated test yards | Professional control severs the public spine and everyday life | Connect heritage mobility, cross-stitches and shared ground floors | Independent acceptance per area and comparable evidence | Retain only controlled back-of-house testing |
+| **PASS public-acceptance city** | AI responsibility and failure recovery are usually invisible | **Keep the ordinary city permanent; admit AI only to a reversible service band** | **Four conditions, project owner, field rehearsal and stop receipt** | **Adopt** |
 
-Scores from 1–5 are qualitative design-team rankings for option selection, not measured performance, jury scoring, or government conclusions. Strategy C wins because it answers both “how does public space improve?” and “how does the city continue when AI fails?”
+PASS wins not because the design team awards itself points, but because it answers how the place works without AI, where AI enters, who accepts it, and how the city restores after failure.
 
 ### Identity, Regional Interfaces, and International Communication
 
@@ -96,6 +96,8 @@ Regulatory-plan-level depth is controlled through three columns: known, recommen
 
 All three areas share one Public Acceptance Passport but never copy one spatial form. The passport is their common governance interface; the three prototypes are the urban design. Zhongzhiyuan makes stoppability spatial through a garden, observation gallery, and test loop. AI Origin makes provenance and withdrawal spatial through an outputs street, rights desk, and Contributors' Living Room. Dazhongsi makes staffed access and appeal spatial through four thresholds in a station-city living room. The four conditions are not a weighted score. If any condition remains open, AI stays off and the site restores its ordinary walking, staffed service, or non-AI display baseline.
 
+The three detailed-design sheets use approximate 1:1000 conditional prototypes. They do not turn rough provisional boundaries, unknown station exits, or unknown buildings into existing facts. Each sheet delivers six kinds of evidence together: a low-contrast concept base; separation of ordinary public circulation and test logistics; one building–ground floor–public-realm section; locations for staffed service, physical stop, and appeal; three states—`no AI / time-limited run / failure recovery`; and the project's owner, cost band, gate, first evidence, and exit condition. Spatial relationships are ready for professional deepening; field placement still requires official data and sitework.
+
 ### Zhongzhiyuan: Safety Governance Commons
 
 Zhongzhiyuan is positioned as “visible full-stack independence and safety governance.” Within provisional area [data:geometry/key_areas.geojson#PROV-KEY-001], it forms one loop, one hall, and three platforms: a Qinghe innovation-garden loop; a model-safety and standards interpretation hall; and validation platforms for model evaluation, embodied intelligence, and urban services. Reversible pavilions, canopies, outdoor test markings, and bookable trials are preferred along the Qinghe interface without presuming river control lines or engineering conditions. The building strategy prioritizes retain-and-adapt and uses ground floors and public space to connect standards formation, testing, explanation, and appeal. External connections indicate directions only until Fifth Ring Road, street, and fire-safety information is available.
@@ -103,6 +105,8 @@ Zhongzhiyuan is positioned as “visible full-stack independence and safety gove
 Its spatial prototype is a four-level gradient: public garden edge, observation and interpretation gallery, controlled test loop, and secure research back-of-house. Public circulation never crosses test logistics. The observation gallery carries accountability signage, staffed supervision, emergency stops, and exits. The test loop opens only with booking, enclosure, and a safety officer. Three initial Conceptual Recommendations are a safety-governance foyer, removable test surfacing, and a public review table on the Qinghe edge. They pass through G1 professional review, G2 safety sandbox, and G3 time-limited pilot. Unclear river, fire, or ownership conditions trigger exit.
 
 Its acceptance prototype is the **Safety Acceptance Garden**. A 2.4-metre rain-garden buffer, 3.0-metre continuous step-free clear route, 1.8-metre controlled service bay, and 2.4-metre observation porch are self-imposed concept targets—not surveyed sections or engineering standards. The site operator is the sole A; the test safety officer leads on-site R. The first acceptable evidence is not a robot demonstration video, but a dual-path rehearsal co-observed by a disabled-person representative in which the physical pause signal works and ordinary garden passage stays open. Loss of control, obstruction, or an absent owner restores the no-AI public garden.
+
+![Zhongzhiyuan key area: concept plan, section, three states, and project contract](assets/figures/key-area-zhongzhiyuan.en.png)
 
 ### Beijing AI Origin Community: Open-Source Translation Commons
 
@@ -112,11 +116,15 @@ The stitching grammar is campus and park pores, the Open Outputs Street, shared 
 
 Its acceptance prototype is the **Rights & Contribution Arcade**. One side is an outputs window with visible source, licence, and version; the centre is a staffed rights desk; the other side is a long co-acceptance table for contributors and the public. Ordinary passage and paper consultation always remain open. The park operator is the sole A; a rights editor and accessible-session host carry content and on-site R. The first acceptable evidence is one test output completing provenance check, public challenge, contributor correction or withdrawal, and version logging. Unclear rights, failed withdrawal, or blocked passage restores a public arcade without AI recommendation.
 
+![AI Origin key area: concept plan, section, three states, and project contract](assets/figures/key-area-origin.en.png)
+
 ### Dazhongsi: AI-Native Living Commons
 
 Within [data:geometry/key_areas.geojson#PROV-KEY-003], Dazhongsi combines a four-quadrant station forecourt living room, a **100-metre Public Acceptance Street**, and an international demonstration hall. The four quadrants prioritize the ground plane, continuous crossings, cycle order, and accessibility without preselecting bridges or tunnels. The 100-metre street is a transferable representative sequence, not a claim about an existing street, parcel, or engineering alignment. The hall connects enterprises, developers, city-problem owners, and international visitors. [depth:three_key_area_detailed_design] coordinates the evidence; engineering and investment remain material for professional deepening.
 
 The site operator is the sole A and the staffed-service lead carries R. The first acceptable evidence is one participant completing an ordinary service without a phone, account, or face recognition, transferring to a person within the self-imposed 30-second target, and receiving an appeal and rollback receipt. A failed digital entrance, unattended human desk, or unlogged exit immediately restores fully staffed dual-desk service.
+
+![Dazhongsi key area: 100-metre street concept plan, section, three states, and project contract](assets/figures/key-area-dazhongsi.en.png)
 
 ![Three areas, three prototypes: plan sequence, conceptual section, first evidence, and exit](assets/figures/key-area-prototypes.en.png)
 
@@ -189,15 +197,25 @@ Twelve scenario nodes and four conceptual pilgrimage or honour landmarks organiz
 
 Heritage navy, commons teal, and verification orange unify the character. Interfaces prioritize visible ground floors, indoor-outdoor collaboration, and restrained night-time presence. History is not technical decoration: the Jing-Zhang Railway asks how cities connect; Zhongguancun asks how knowledge translates; AI culture asks how technology is publicly governed. Wayfinding displays place, scenario purpose, data boundary, accountable party, and appeal route, making visual identity part of trustworthy operation.
 
+![Six-part conditional Centennial Jing-Zhang spatial narrative: connect, learn, open, audit, and coexist](assets/figures/heritage-spatial-narrative.en.png)
+
+The Centennial Jing-Zhang spatial narrative uses a continuous ground datum, paper archive cards, year or mileage markers, and human historical editing across six conditional segments. It uses only verified facts about the nine-kilometre plan and open first phase. Specific relic locations, heritage controls, and engineering relationships await official inventories and professional review. PASS borrows the logic of an interlock as a contemporary public-governance translation—an open condition cannot be cleared—and never claims to be railway signalling engineering.
+
+![Three building–public-realm interfaces: safety bay, shared ground floor, and dual-service foyer](assets/figures/building-public-realm-interfaces.en.png)
+
 ## Renewal Projects, Implementation Policy, and Phasing
 
 Eight Conceptual Recommendation projects form a minimum viable combination of space and operation [metric:renewal_project_count]: JZ-01 continuity diagnosis of the commons spine; JZ-02 three Zhongzhiyuan safety test platforms; JZ-03 AI Origin Open Outputs Street; JZ-04 Dazhongsi four-quadrant ground-priority study; JZ-05 twelve-scenario governance protocol; JZ-06 four contribution and honour nodes; JZ-07 public data-consent and appeal living room; and JZ-08 annual Open Intelligence Commons program. Every project first requires missing ownership, road, heritage, municipal, safety, or operating conditions. The list is not project approval or investment commitment.
+
+Version 3.2 upgrades that list into eight project-specific delivery contracts in `visual/assets/renewal-projects.json`. Each one separately declares project type, place, scope in and out, sole A, R/C roles, G0-G4 entry gate, L1/L2/L3 cost band, days 0–30 / 31–60 / 61–90 deliverables, acceptance KPI, acceptable evidence, dependency, and stop-and-restore action. Cost bands describe workload and quotation conditions, never invented currency investment. No project may borrow another project's performance or an overall average to pass.
+
+![Eight-project responsibility, cost, gate, deliverable, KPI, and exit matrix](assets/figures/metrics-evidence.en.png)
 
 Phasing is a risk sequence, not a construction timetable: protocol first, network second, renewal later. [data:geometry/phasing.geojson#PHASE-001] covers reversible pilots in the three key areas, with review jurisdiction area [metric:phase_1_area_sqm]. PHASE-002 connects the commons spine, with area [metric:phase_2_area_sqm]. PHASE-003 considers adaptive district renewal only after official data and professional review, with area [metric:phase_3_area_sqm]. [metric:phase_count] recalculates the three stages; [depth:renewal_project_list] and [depth:phasing_implementation] connect projects, dependencies, and evidence.
 
 The first executable move is not district-scale construction but a **90-day travelling public-acceptance pilot** in which all three areas begin together but qualify independently [metric:pilot_duration_days]. Days 0–30 establish each ordinary-service baseline, conduct accessible walk-throughs, and complete accountability and data registers with no AI activated. Days 31–60 build one removable prototype per area; staff lead offline simulations of pause, fallback, withdrawal, and appeal. Days 61–90 admit only prototypes whose own four conditions and red lines all pass, with daily review and weekly independent acceptance. Zhongzhiyuan first proves “stoppable,” AI Origin “withdrawable,” and Dazhongsi “supported.” Six red-line KPIs are: 100% notice before activation; 100% human-final high-impact outputs; zero mandatory phone, account, or face gates for basic access; human fallback within 30 seconds; appeal acknowledgement in one business day and target response in five; and a target of zero serious safety incidents [metric:pilot_redline_kpi_count]. A failure pauses only that prototype and restores its ordinary baseline; averages, the other sites, or promotional value cannot conceal harm.
 
-The site operator is the single accountable A. Human service, accessibility, safety, data, and legal teams are responsible R. Residents, older and disabled people's representatives, and an independent evaluator co-accept as C. Cost uses bands only: L1 for operations, furniture, and wayfinding; L2 for temporary structures and local systems. No currency estimate is invented. Procurement requires open interfaces, data minimization, no vendor lock-in, and an exit clause. Permanent L3 works wait for official polygons, streets, utilities, heritage, fire, and statutory procedures.
+Every project has its own sole A instead of hiding responsibility inside one global RACI: JZ-01 corridor programme lead; JZ-02 Zhongzhiyuan site operator; JZ-03 AI Origin campus operator; JZ-04 Dazhongsi street operator; JZ-05 public-acceptance programme office; JZ-06 heritage interpretation curator; JZ-07 independent appeal-office lead; and JZ-08 commons programme secretariat. Human service, accessibility, safety, data, and legal teams take R by project. Residents, older and disabled representatives, maintenance workers, and an independent evaluator co-accept as C where affected. Cost uses L1 for operations, furniture, and wayfinding; L2 for temporary structures, ground-floor adaptation, and local systems; and L3 only after official conditions. No currency estimate is invented. Procurement requires open interfaces, data minimization, no vendor lock-in, and an exit clause.
 
 ![Ninety-day exit-ready pilot: stages, red-line KPIs, accountability, and cost bands](assets/figures/implementation-readiness.en.png)
 

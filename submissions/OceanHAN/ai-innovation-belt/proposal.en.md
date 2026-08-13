@@ -15,6 +15,26 @@ iteration: "v0.4"
 
 # JINGZHANG MAINLINE — Urban Renewal, Delivered as Pull Requests for the First Time
 
+## First Screen: One Memorable Proposition
+
+**"Merge must be reversible."** JINGZHANG MAINLINE treats urban renewal as a continuously evolving city mainline: every time AI merges in, it must first prove ordinary no-AI service works (baseline), pass an unplug test (exit), and leave a public dividend usable without models, accounts, or network after exit (bequest). The open-source collaboration semantics answer "how to make renewal public, reversible, and auditable"; the verifiable public semantics answer "what remains of the city after AI departs, and who is responsible".
+
+> **Honest enum for this project: not authorized · not field-run / 未获授权 · 未现场运行.** All spatial proposals and scenarios are conceptual suggestions or signable mechanisms, not confirmed government arrangements; live performance remains unknown.
+
+## Reviewer Question Table (first screen)
+
+| Review dimension | One-sentence answer (memorable judgment) | Evidence anchor |
+| --- | --- | --- |
+| Taskbook alignment | Directly addresses "Centennial Jing-Zhang + Haidian + AI innovation belt + urban governance"; three positionings / five functions / three areas two wings mapped item by item | three-level scope table + compliance_matrix |
+| Originality | Unique "urban renewal as Pull Requests" metaphor + "Merge must be reversible" double-track proposition | executive summary + mainline-pipeline.json |
+| AI≈planning innovation | Each AI scenario has a four-part contract (no-AI baseline / AI gain / immediate exit / exit dividend), backed by governance roles RACI | mainline-contracts.json + mainline-raci.json |
+| Implementability | Project G0–G7 × scenario C0–C7 dual gates + 12 scenarios × 5-branch synthetic tabletop + 8-state machine | mainline-gates.json + mainline-tabletop.json + mainline-state-machine.json |
+| Public interest | Offline public-dividend safety net—walk, rest, and ask without AI; accessibility and vulnerable groups prioritized | public-interest chapter [source:AGENT-TASKBOOK] |
+| Risk & compliance | Hard-stop conditions (no-AI path / no human / cannot unplug / sensitive-data overreach / dividend without owner) ; live performance stays unknown | risk.json + compliance chapter |
+| Expression completeness | Bilingual proposal + 5 figures + 2 HTML + 6 machine evidence assets, all recheckable | submission package + visual + machine assets |
+
+> Note: the table is for quick orientation; per-dimension evidence is detailed in each chapter and `compliance_matrix.json`. All conceptual suggestions are consistently marked "not authorized · not field-run"; nothing is fabricated as approved or committed to implementation.
+
 ## Executive Summary and the Double-Track Verification Proposition
 
 The Jing-Zhang Railway, built 1905–1909, was the first trunk railway independently designed and constructed by Chinese engineers. v0.4 re-reads this century-old mainline as **one city mainline with two operating semantics**: the **open-source collaboration semantics**—urban renewal flows like commit, review, and merge: public, traceable, and reversible; and the **verifiable public semantics**—before any AI scenario merges into the mainline, it must first prove that ordinary no-AI service still works, pass an unplug test, and leave the public a dividend that remains usable after the technology departs.
@@ -270,7 +290,7 @@ v0.5 quantifies double-track verification into a five-stage mainline acceptance 
 
 ### Reproducible Synthetic Tabletop Simulation (conceptual evidence, not live performance)
 
-To make "implementable" visible and reviewable, v0.4 provides a purely switch-style synthetic table `visual/assets/mainline-tabletop.json` (sample synthetic data; no real individuals sampled). It runs 5 branches for each of the 12 scenario cards: **no no-AI baseline / no human review / no unplug capability / no exit dividend / forbidden data present**. Any missing branch is marked `blocked` and may not advance; only the 12 "dividend usable after exit" branches enter `bequest` archiving. The result is a reproducible check of contract logic—**not real device, personnel, or site performance**; live indicators stay `unknown` until licensed, methoded, sampled, and reviewed [assumption:A-TABLETOP-001].
+To make "implementable" visible and reviewable, v0.4 provides a purely switch-style synthetic table `visual/assets/mainline-tabletop.json` (sample synthetic data; no real individuals sampled). It runs 5 branches for each of the 12 scenario cards: **no no-AI baseline / no human review / no unplug capability / no exit dividend / forbidden data present**. Any missing branch is marked `blocked` and may not advance; only the 12 "dividend usable after exit" branches enter `bequest` archiving. The result is a reproducible check of contract logic—**not real device, personnel, or site performance**; live indicators stay `unknown` until licensed, methoded, sampled, and reviewed (honest enum: not authorized · not field-run / 未获授权 · 未现场运行) [assumption:A-TABLETOP-001].
 
 ### Governance State Machine and Audit Independence (conceptual)
 
@@ -290,7 +310,7 @@ Core indicators (full 25 in `metrics.json`): overall design area 1141.3 ha [metr
 
 ![Core metrics and evidence chain](assets/figures/metrics-evidence.png)
 
-`compliance_matrix.json` covers 23 mandatory tasks—announcement 1.3 (3), 1.4 (3), 1.5 (8), and agent tasks agent.1–agent.6—each mapped to report sections, layers, metrics, drawings, HTML, and sources; `standard_matrix.json` covers 6 locally snapshotted standards (5 mandatory); `design_depth_matrix.json` marks all 15 depth items complete [depth:metrics_recalculation]. Three indicator tiers: spatial indicators recalculated from geometry; regulatory indicators pending official controls; performance indicators (AI innovation index, talent density, event participation) calibrated during operation—operational visions are not presented as approved planning conditions.
+`compliance_matrix.json` covers 23 mandatory tasks—announcement 1.3 (3), 1.4 (3), 1.5 (8), and agent tasks agent.1–agent.6—each mapped to report sections, layers, metrics, drawings, HTML, and sources; `standard_matrix.json` covers 6 locally snapshotted standards (5 mandatory); `design_depth_matrix.json` marks all 15 depth items complete [depth:metrics_recalculation]. Three indicator tiers: spatial indicators recalculated from geometry; regulatory indicators pending official controls; performance indicators (AI innovation index, talent density, event participation) calibrated during operation—operational visions are not presented as approved planning conditions. **Honest enum: not authorized · not field-run / 未获授权 · 未现场运行**—performance and live outcomes stay unknown until licensed, methoded, sampled, and reviewed; no estimates are fabricated.
 
 ## Risk, Copyright, and Compliance
 

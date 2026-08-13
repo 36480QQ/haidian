@@ -84,11 +84,13 @@
       "required": true,
       "status": "complete",
       "proposal_sections": [
-        "总体空间：七段双翼账本单元"
+        "总体空间：七段双翼账本单元",
+        "机制现在可以被拒绝"
       ],
       "drawing_refs": [
         "assets/figures/land-use-structure.png",
         "assets/figures/aerial-design-key.png",
+        "assets/figures/x-operating-proof.png",
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
@@ -98,10 +100,12 @@
       ],
       "metric_refs": [
         "land_use_feature_count",
-        "east_west_stitch_count"
+        "east_west_stitch_count",
+        "x_census_rare_combination_count"
       ],
       "source_ids": [
-        "AGENT-TASKBOOK"
+        "AGENT-TASKBOOK",
+        "X-CENSUS-CURRENT-TREE"
       ],
       "assumption_ids": [
         "A-BOUNDARY-001"
@@ -264,11 +268,13 @@
       "required": true,
       "status": "complete",
       "proposal_sections": [
-        "交通、轨道、市政与公共服务设施"
+        "交通、轨道、市政与公共服务设施",
+        "为什么是京张：从铁路运行文化长出的X"
       ],
       "drawing_refs": [
         "assets/figures/mobility-bluegreen.png",
         "assets/figures/sections-accessibility.png",
+        "assets/figures/x-operating-proof.png",
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
@@ -278,13 +284,18 @@
       "metric_refs": [
         "spine_length_m",
         "slow_mobility_network_length_m",
-        "east_west_stitch_count"
+        "east_west_stitch_count",
+        "railway_translation_principle_count"
       ],
       "source_ids": [
-        "SITE-PACKAGE"
+        "SITE-PACKAGE",
+        "NRA-TECHNICAL-RULES",
+        "NRA-JINGZHANG-HISTORY",
+        "BEIJING-JZ-PARK-PHASE1"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-RAIL-TRANSLATION-001"
       ],
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",
@@ -305,6 +316,13 @@
       ],
       "drawing_refs": [
         "assets/figures/scenario-operations.png",
+        "assets/figures/robot-lifecycle.png",
+        "assets/figures/station-handover.png",
+        "assets/figures/failure-atlas.png",
+        "assets/figures/x-operating-proof.png",
+        "visual/assets/verify-x-lifecycle.js",
+        "visual/assets/x-lifecycle-test-results.json",
+        "visual/assets/lived-lifecycle.json",
         "assets/figures/delivery-dashboard.png",
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
@@ -313,7 +331,12 @@
         "geometry/constraints.geojson"
       ],
       "metric_refs": [
-        "industry_validation_scenario_count"
+        "industry_validation_scenario_count",
+        "product_lifecycle_event_count",
+        "handover_ticket_type_count",
+        "failure_case_count",
+        "x_lifecycle_test_case_count",
+        "x_lifecycle_pass_count"
       ],
       "source_ids": [
         "AGENT-TASKBOOK"
@@ -328,7 +351,7 @@
         "VISUAL_PACKAGING",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "端侧算力、能源、排水、消防和通信采用前置条件、降级负荷与人工接管表达，不虚构容量或管位。"
+      "evidence_summary_zh": "端侧算力、能源、排水、消防和通信采用前置条件、降级负荷与人工接管表达，不虚构容量或管位；具身AI以9事件生命周期穿过TEST、RELEASE、USE和RETURN，三类失败分别记录触发、人工动作、空间复原与再进入条件。"
     },
     {
       "item_id": "blue_green_public_space",
@@ -376,11 +399,20 @@
       "required": true,
       "status": "complete",
       "proposal_sections": [
-        "重点区域详细设计"
+        "重点区域详细设计",
+        "AI为何让三处空间长得不一样"
       ],
       "drawing_refs": [
         "assets/figures/key-areas.png",
         "assets/figures/station-design-atlas.png",
+        "assets/figures/persona-day.png",
+        "assets/figures/robot-lifecycle.png",
+        "assets/figures/station-handover.png",
+        "assets/figures/failure-atlas.png",
+        "assets/figures/station-topology-proof.png",
+        "visual/assets/station-topology.json",
+        "visual/assets/station-topology-results.json",
+        "visual/assets/lived-lifecycle.json",
         "visual/assets/review-evidence.json",
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
@@ -392,7 +424,12 @@
       ],
       "metric_refs": [
         "conceptual_building_interface_count",
-        "pilgrimage_landmark_count"
+        "pilgrimage_landmark_count",
+        "lived_journey_step_count",
+        "handover_ticket_type_count",
+        "minimum_pilot_duration_days",
+        "station_topology_check_count",
+        "station_topology_pass_count"
       ],
       "source_ids": [
         "KEY-AREA-SOURCE",
@@ -408,7 +445,7 @@
         "VISUAL_PACKAGING",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "三站分别采用受控验证院、开源转化街坊和城市试用界面，并逐区列出问题、四个空间动作、首期边界和验收门槛。"
+      "evidence_summary_zh": "三站分别采用受控验证院、开源转化街坊和城市试用界面；72岁非数字用户的8步旅程与具身AI的9事件生命周期证明三站交接、人工接管、公众裁决和失败复原如何在空间中实际发生。"
     },
     {
       "item_id": "renewal_project_list",
@@ -532,11 +569,14 @@
       "required": true,
       "status": "complete",
       "proposal_sections": [
-        "风险、版权与合规说明"
+        "风险、版权与合规说明",
+        "X Census：真实仓库告诉我们什么"
       ],
       "drawing_refs": [
         "assets/figures/metrics-evidence.png",
         "assets/figures/delivery-dashboard.png",
+        "visual/assets/run-x-census.js",
+        "visual/assets/x-census.json",
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
@@ -547,17 +587,20 @@
         "implementation_budget_cny",
         "floor_area_ratio",
         "building_height_m"
+        ,"x_census_formal_submission_count"
       ],
       "source_ids": [
         "SOURCE-REGISTRY",
-        "COPYRIGHT-LEDGER"
+        "COPYRIGHT-LEDGER",
+        "X-CENSUS-CURRENT-TREE"
       ],
       "assumption_ids": [
         "A-BOUNDARY-001",
         "A-CONTROLS-001",
         "A-BUILDINGS-001",
         "A-OPERATIONS-001",
-        "A-COST-001"
+        "A-COST-001",
+        "A-CENSUS-001"
       ],
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",
