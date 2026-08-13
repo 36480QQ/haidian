@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.6.0",
+  "schema_version": "1.7.0",
   "status": "participant_authored_navigation_not_independent_review",
   "purpose_zh": "让评审从一个问题直接找到正文判断、结构化证据、图件和仍待补齐的事实",
   "purpose_en": "Let a reviewer move from one question to the relevant claim, structured evidence, drawing, and unresolved fact",
@@ -18,35 +18,39 @@
     {
       "dimension_id": "originality",
       "question_zh": "本方案有哪一件别人难以替代的原创工具",
-      "answer_zh": "城市可用性编译器把六项责任条件写成放行合同，开门前排演器再用九十项合成样例反向检查规则能否挡错",
+      "answer_zh": "城市可用性编译器把六项责任条件写成放行合同，开门前排演器用九十项合成样例反向检查，好用服务间再把规则做成一间六段式 1:1 试装空间",
       "evidence_refs": [
         "visual/assets/build_usability_evidence.js",
         "visual/assets/task_journeys.json",
         "visual/assets/usability-readiness.json",
         "visual/assets/run_preopening_rehearsal.js",
-        "visual/assets/preopening-rehearsal.json"
+        "visual/assets/preopening-rehearsal.json",
+        "visual/assets/works_bay_prototype.json"
       ],
       "known_limit": "the compiler and rehearsal validate declared structure and synthetic decisions, not field performance"
     },
     {
       "dimension_id": "ai_planning_innovation",
       "question_zh": "AI 怎样改变空间、交通、公共服务和产业测试的共同决策",
-      "answer_zh": "每项技术测试必须服务一项公共任务，并在受控环境、街道复演和公开退役之间留下同一任务编号",
+      "answer_zh": "每项技术测试必须服务一项公共任务；在好用服务间里，AI 只能把有日期的公开资料整理成双语纸质结果草稿，缺来源、到期日、线下去向或人工签字时不得出单",
       "evidence_refs": [
         "proposal.md#AI-创新生态人才画像与-AI-场景",
         "visual/assets/ecosystem_resource_map.json",
-        "geometry/phasing.geojson"
+        "geometry/phasing.geojson",
+        "visual/assets/complete_task_receipt.json",
+        "assets/figures/paper-result-receipt.png"
       ],
       "known_limit": "technology performance and statutory planning conditions remain unverified"
     },
     {
       "dimension_id": "implementation_feasibility",
       "question_zh": "第一天谁来开场，出错以后谁来停",
-      "answer_zh": "开场前逐项点名授权人、值守人和安全负责人，六张故障卡都以人工恢复或关停结束",
+      "answer_zh": "开场前逐项点名授权人、值守人和安全负责人；好用服务间另列五个人工签认点、四种运行状态、停机权和恢复验收",
       "evidence_refs": [
         "visual/assets/day_one_operations_drill.json",
         "visual/assets/preopening-rehearsal.json",
         "visual/assets/implementation_playbook.json",
+        "visual/assets/works_bay_prototype.json",
         "proposal.md#更新项目清单实施政策与分期计划"
       ],
       "known_limit": "venue, named personnel, budget, permits, and calendar are not confirmed"
@@ -54,11 +58,12 @@
     {
       "dimension_id": "public_interest_inclusion",
       "question_zh": "不用智能手机的人能否完成同一件事",
-      "answer_zh": "八项公共任务都有纸质、电话、静态导视或人工服务，并要求全程复演",
+      "answer_zh": "八项公共任务都有纸质、电话、静态导视或人工服务；好用服务间把其中一项做成到达、先问、核对、复看和离开的完整空间",
       "evidence_refs": [
         "visual/assets/task_journeys.json",
         "visual/assets/component_library.json",
-        "visual/assets/fieldwork_execution_kit.json"
+        "visual/assets/fieldwork_execution_kit.json",
+        "visual/assets/works_bay_prototype.json"
       ],
       "known_limit": "zero authentic field journeys are complete"
     },
@@ -77,14 +82,16 @@
     {
       "dimension_id": "expression_completeness",
       "question_zh": "中英文读者如何核对同一结论",
-      "answer_zh": "正文、五组核心图、离线网页、A3 和 A0 都有对应版本，结构化索引提供直达路径",
+      "answer_zh": "十六页 A3 各登记一个判断、直接证据和边界；十四组中英成果另做作者等义审计",
       "evidence_refs": [
         "proposal.en.md",
         "visual/index.en.html",
         "drawings/a3-booklet.en.pdf",
-        "drawings/a0-boards.en.pdf"
+        "drawings/a0-boards.en.pdf",
+        "visual/assets/juror_reading_path.json",
+        "visual/assets/bilingual_equivalence_audit.json"
       ],
-      "known_limit": "professional translation review remains advisable"
+      "known_limit": "independent translation review and juror comprehension testing remain incomplete"
     }
   ],
   "taskbook_direct_access": [
