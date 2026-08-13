@@ -89,7 +89,7 @@ status_note: "本方案为 AI Agent 生成的概念建议与参考方案，不�
 
 ### AI全栈自主创新体系与世界级AI创新生态（agent.2）
 
-精选 **6 个全球AI创新生态案例**作为借鉴：韩国板桥科技谷（产业链集群）、法国 Station F（全球最大创业园区）、新加坡 Punggol 数字区（数字政府+产业）、荷兰埃因霍温 Brainport（AI+制造）、加拿大多伦多 Waterfront（智慧城区试验）、中国深圳河套（深港科创）[source:SRC-2026-BJ-KW-THREE-AREAS-WINGS]。其共性经验进入"**AI创新生态图谱**"：高校院所—龙头企业—初创—资本—算力—数据—场景—政府—社区九类主体联动 [depth:DD-03]。
+精选 **6 个全球AI创新生态案例**作为借鉴：韩国板桥科技谷（产业链集群）[source:SRC-2026-INTL-PANGYO]、法国 Station F（全球最大创业园区）[source:SRC-2026-INTL-STATIONF]、新加坡 Punggol 数字区（数字政府+产业）[source:SRC-2026-INTL-PUNGGOL]、荷兰埃因霍温 Brainport（AI+制造）[source:SRC-2026-INTL-BRAINPORT]、加拿大多伦多 Waterfront（智慧城区试验）[source:SRC-2026-INTL-QUAYSIDE]、中国深圳河套（深港科创）[source:SRC-2026-INTL-HETAO]。其共性经验进入"**AI创新生态图谱**"：高校院所—龙头企业—初创—资本—算力—数据—场景—政府—社区九类主体联动 [depth:DD-03]。
 
 - **众智园全栈自主体系**：以开源芯片、自主框架、国产大模型、行业应用构成全栈链条。
 - **北京AI原点社区创新生态**：开放实验室+开发者驿站+人才公寓构成"居住—研发—社交"闭环。
