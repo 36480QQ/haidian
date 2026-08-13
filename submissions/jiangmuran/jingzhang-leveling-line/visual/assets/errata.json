@@ -4,10 +4,10 @@
  "note_en": "A register of this package's own errors. Not a changelog: a changelog says what changed, this says what was wrong, what shape the error had, who found it, and which commit fixed it. Every entry names a commit, and the build verifies that commit exists and touched the file blamed. An errata register that cannot be joined to the repository is the defect it records.",
  "why_zh": "全场 351 份方案中没有一份勘误、撤回或作者自述的复盘。一个主张城市应当公开自身误差的方案，不能自己呈现一个无瑕的表面：它提出的整套机制都建立在「看不见失败的测量不值得信任」之上，文档同理。",
  "counts": {
-  "total": 68,
+  "total": 69,
   "by_found_by": {
    "audit": 25,
-   "own-gate": 5,
+   "own-gate": 6,
    "external-reviewer": 4,
    "self": 34
   },
@@ -15,7 +15,7 @@
    "reference-does-not-resolve": 4,
    "number-outlived-the-sentence-holding-it": 4,
    "two-copies-of-one-thing-drifted": 7,
-   "check-measured-the-convenient-thing": 14,
+   "check-measured-the-convenient-thing": 15,
    "geometry-does-not-mean-what-it-says": 4,
    "term-of-art-misapplied": 1,
    "claim-outlived-the-package": 3,
@@ -483,6 +483,16 @@
    "what_zh": "图纸索引上方写「共十二张图纸，FIG.00–FIG.11 连续编号」，下方的表只有九行（FIG.01–FIG.09）。缺 FIG.00（全文开篇那张）、FIG.10（人视街道剖面）与 FIG.11（区域协同接口）——**而正文在 L531 按编号引用了 FIG.11**，把读者指向一个不含它的索引。同一处的复核清单则编号成 1…10、8、9，十二项用了十个号。",
    "why_zh": "两个语种带着同样的九行，所以这不是翻译疏漏，是**完整性声明写在表格上方那句话里、而不是由表格本身承担**。清单的编号是看得见的那个缺陷，危险的是另一个：清单上每一项都指名一个路径，一份把评审指向不存在文件的清单，比没有清单更糟。",
    "fix_zh": "两者都改为生成：索引由 `build_figure_index.py` 从随包 PNG 生成，句中的份数写自 `len(FIGURES)`，并断言每张随包图有编号、每个编号有文件、正文引用的每个 FIG.NN 都能解析到行；清单由 `enumerate` 编号，且十二项声明的 17 条路径必须全部在包内解析。"
+  },
+  {
+   "id": "E69",
+   "commit": "ef974925",
+   "file": "proposal.en.md",
+   "found_by": "own-gate",
+   "shape": "check-measured-the-convenient-thing",
+   "what_zh": "`figure_citation_qa.py` 有两条规则：每张图必须在目录之外被引用，以及七个随包成品必须在正文里被指名。第一条逐版检查；**第二条把中英两版拼成一个字符串再搜索**。于是只在中文版出现过的成品即算通过，而闸门照旧报「7 个全部已指名」。英文评审读的是英文版：那份文件对他而言不存在，而检查说它存在。",
+   "why_zh": "**这条不是人查出来的，是新建的变异测试在第一次运行时查出来的。** 同一道闸门的两条规则，一条按版检查、一条按并集检查，而两条都通过时输出完全一样——**缺陷在闸门持续通过的状态下不可见**。这正是 `gate_mutation_qa.py` 存在的理由：本包十二道闸门此前全都只被看见通过过，而「从不失败」与「不会失败」产生的证据完全相同（同型见 E57、E68）。把 personas.json 从英文版里改名，是为了检验闸门会不会响；它没有响。",
+   "fix_zh": "成品指名改为逐版检查，输出改写为「每一版各自指名」。并新增 `gate_mutation_qa.py` 进入构建：对四道闸门制造五处已知损坏，要求它们**既非零退出、又在输出里指名损坏所在**——只退出不指名等于把评审打发去翻整个包（同 E50：坏消息属于它发生的地方）；原始字节在 finally 中恢复；**有一处损坏未被抓住即构建失败**。结果随包为 `visual/assets/gate_mutation.json`。另记一处**变异本身写错了**：第一版把 `FIG.21` 只替换首次出现，剩下的引用仍然成立，闸门保持沉默是对的——报告里写的却是「闸门没抓住」。**一个测试用例可以自己是错的，而它报出的失败看起来和真失败一模一样**，这一点也写进了那个文件。"
   },
   {
    "id": "E68",
