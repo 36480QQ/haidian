@@ -30,6 +30,12 @@
       "status": "conceptual",
       "statement": "Building footprints are schematic placeholders for spatial discussion, not survey-accurate footprints.",
       "impact": "Building density and footprint area are concept references; official survey data is required for formal values."
+    },
+    {
+      "id": "A-SPACE-001",
+      "status": "conceptual",
+      "statement": "星地协同专题一期不造星、不运营、不发射，复用现役商业遥感源；全部试点为概念建议（provisional），验证边界限定为硬件在环等效复现，不构成对任何卫星产品、企业或发射/运营安排的承诺与性能背书。",
+      "impact": "第 13 张场景卡与星地协同小节均按演示级可校验口径表述；应急信息经授权渠道发布；时延指标仅登记口径，待硬件在环基线化后回填实测值。"
     }
   ]
 }
