@@ -1,3 +1,7 @@
+## v10.5.2（2026-08-13）
+
+- **CI 哈希修复**：v10.5.1 在 finalize 之后追加 changelog 条目，违反「finalize 是内容轮最后写文件步骤」纪律，导致 manifest 声明与磁盘 changelog.md 哈希不一致（CI deterministic FAIL）。修复：版本串连锁 v10.5.1 → v10.5.2（gen_01/02/02b/03/04/05 + gen_simulation SEED 全重生成），changelog 编辑并入 finalize 轮内，四门重校验全 PASS。
+
 ## v10.5.1（2026-08-13）
 
 - **评审前补写修正**：EN 重点区表格行、三区小方案标题的协议原型具名补齐（此前脚本中途退出未落盘，实际只落 2 处）；「v10.4 数据资产族」标记随版本演进为 v10.5；PDF 元数据加版本戳；版本串连锁 v10.5.0 → v10.5.1（gen_01/02/02b/03/04/05 + gen_simulation SEED 全重生成），四门校验全 PASS。
