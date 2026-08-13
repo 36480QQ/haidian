@@ -1680,6 +1680,8 @@ node visual/assets/verify.js
 
 ### 图纸索引与阅读方式
 
+**这些图纸随包以哪几种形式存在。** 二十一张单页同时被排进两份成品：`drawings/a3-booklet.pdf`（A3 文册，逐页阅读）与 `drawings/a0-boards.pdf`（A0 展板，站着看）。正文另有两种可直接打开的渲染：`report/proposal.html` 是本文的网页版，`visual/index.html` 是把随包结构化数据串起来的可视索引；`report/narrative.md` 是不含表格与门禁记录的连续叙述版，供只想读论证的人。图纸背后的两份数据文件也随包：`visual/assets/personas.json` 定义九个画像并使正文与场景卡里每一个 P 编号可被逐个断言，`visual/assets/score_correlates.json` 保存本方案对全场评分相关性的自采统计。**列出它们不是清单癖：一件没有被正文指名的成品，等于没有人被告知它存在。**
+
 <!-- FIGINDEX:BEGIN -->
 
 本方案共二十一张图纸，FIG.00–FIG.20 连续编号；均由参数与提交的结构化数据直接绘制，非示意性配图：
