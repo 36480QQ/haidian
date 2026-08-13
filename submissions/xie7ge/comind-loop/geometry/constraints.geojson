@@ -1,0 +1,282 @@
+{
+  "type": "FeatureCollection",
+  "name": "comind_scenarios",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "SCENE-01",
+      "properties": {
+        "id": "SCENE-01",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "模型责任测试",
+        "name_en": "Responsible model testing",
+        "scenario_type": "industry_test",
+        "human_review": "required",
+        "deployment_status": "concept_only"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.34845814120177,
+          40.01137494977345
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SCENE-02",
+      "properties": {
+        "id": "SCENE-02",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "端侧算力预约",
+        "name_en": "Edge-compute booking",
+        "scenario_type": "industry_test",
+        "human_review": "required",
+        "deployment_status": "concept_only"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.34841628240355,
+          40.005999899546886
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SCENE-03",
+      "properties": {
+        "id": "SCENE-03",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "开源贡献译站",
+        "name_en": "Open contribution translation",
+        "scenario_type": "public_service",
+        "human_review": "required",
+        "deployment_status": "concept_only"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.34826421842155,
+          40.0006287474208
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SCENE-04",
+      "properties": {
+        "id": "SCENE-04",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "无障碍双通道",
+        "name_en": "Accessible dual-channel service",
+        "scenario_type": "public_service",
+        "human_review": "required",
+        "deployment_status": "concept_only"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.34792620273674,
+          39.99526417264792
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SCENE-05",
+      "properties": {
+        "id": "SCENE-05",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "慢行断点诊疗",
+        "name_en": "Slow-mobility gap clinic",
+        "scenario_type": "public_service",
+        "human_review": "required",
+        "deployment_status": "concept_only"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.34758818705194,
+          39.98989959787504
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SCENE-06",
+      "properties": {
+        "id": "SCENE-06",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "城市问题路演",
+        "name_en": "Urban challenge demo",
+        "scenario_type": "industry_test",
+        "human_review": "required",
+        "deployment_status": "concept_only"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.34766991784379,
+          39.984530795536564
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SCENE-07",
+      "properties": {
+        "id": "SCENE-07",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "数字内容共创",
+        "name_en": "Digital content co-creation",
+        "scenario_type": "public_service",
+        "human_review": "required",
+        "deployment_status": "concept_only"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3478998150164,
+          39.97916050090898
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SCENE-08",
+      "properties": {
+        "id": "SCENE-08",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "AI消费试验橱窗",
+        "name_en": "AI retail test window",
+        "scenario_type": "public_service",
+        "human_review": "required",
+        "deployment_status": "concept_only"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.348129712189,
+          39.9737902062814
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SCENE-09",
+      "properties": {
+        "id": "SCENE-09",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "数据授权会客厅",
+        "name_en": "Data consent lounge",
+        "scenario_type": "public_service",
+        "human_review": "required",
+        "deployment_status": "concept_only"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.34835960936162,
+          39.96841991165382
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SCENE-10",
+      "properties": {
+        "id": "SCENE-10",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "文化档案导览",
+        "name_en": "Cultural archive guide",
+        "scenario_type": "public_service",
+        "human_review": "required",
+        "deployment_status": "concept_only"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.34841468034956,
+          39.963045413930516
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SCENE-11",
+      "properties": {
+        "id": "SCENE-11",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "公共服务人工兜底",
+        "name_en": "Human fallback desk",
+        "scenario_type": "public_service",
+        "human_review": "required",
+        "deployment_status": "concept_only"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.34844312023304,
+          39.957670275953674
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SCENE-12",
+      "properties": {
+        "id": "SCENE-12",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "年度共智交接礼",
+        "name_en": "Annual CoMind handover",
+        "scenario_type": "public_service",
+        "human_review": "required",
+        "deployment_status": "concept_only"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.34847156011652,
+          39.95229513797684
+        ]
+      }
+    }
+  ]
+}
