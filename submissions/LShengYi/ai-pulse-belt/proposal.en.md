@@ -4,7 +4,7 @@ author_github: "LShengYi"
 language: "en"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
-iteration: "10"
+iteration: "11"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "AI Pulse Belt: the engineering tradition of the centennial Jing-Zhang Railway 'iron pulse' — inspectable, verifiable, retired — is translated into a public protocol for the AI-era 'digital pulse belt': before any AI service enters public space it must be declarable, testable, releasable, and retirable (P1-P4); an 11-field AI Pulse service passport gates admission and five operational evidence gates E0-E4 gate progress, overlaid with an 8-state machine (blackout drill and bequest audit not skippable), dual gateways G0-G7/C0-C7 and four-stage dividend contracts; an offline synthetic rehearsal of 15 services × 8 variants (120 checks) blocks all 105 failure branches with zero direct releases (all services currently at G0 no-go: not authorized, not field-run); the flat-line archive wall publicly exhibits every retired service as governance evidence. The three-level scope, the three zones & two wings, and 76 recomputable metrics (61 known) fully respond to announcement clauses 1.4/1.5."
@@ -140,6 +140,8 @@ This section provides review-dimension evidence indexes and response checklists;
 
 ## Design Basis and Source List
 
+**The judgment of this chapter**: the basis determines the boundary — the announcement and the taskbook decide "what must be answered", the repo's provisional geometry decides "where this round is tested", and the submission itself only expresses "how it suggests organizing" — the three kinds of basis are never conflated in the text, layers, metrics, and drawings.
+
 This formal proposal takes the *Pre-Qualification Announcement for the International Urban-Design Solicitation of the Centennial Jing-Zhang AI Innovation Belt* issued by the Haidian Branch of the Beijing Municipal Commission of Planning and Natural Resources as its primary basis, and the provisional boundaries, key areas, enums, metrics, and source inventory maintained in `brief/site-package/` as machine-readable basis. Before generating the design, the AI agent read `design_brief.json`, `allowed_design_space.json`, `sources.json`, `enums/`, `ranges/`, `schemas/`, `data/source_registry.json`, and `data/processed/agent_fact_pack.md`, and built task, scope, source-use, and gap checklists from `project_scope_summary.csv`, `agent_task_requirements.csv`, `source_use_matrix.csv`, and `missing_data_checklist.csv`. Every design judgment is decomposed into traceable sources, reproducible metrics, verifiable layers, and human-reviewable assumptions. The announcement requires control-detailed-planning-level urban design and integrated-implementation-plan-level urban design depth; narrative text therefore does not replace the GeoJSON layers, metrics tables, A3 booklet, A0 boards, and HTML presentation deliverables [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [depth:existing_conditions_diagnosis].
 
 The source registry is used with the following boundaries [source:SOURCE-REGISTRY]:
@@ -164,6 +166,8 @@ Since the official `SITE_BOUNDARY` and the three `KEY_AREA` polygons are not yet
 **Official reference ledger (accessed one by one, registered truthfully, never cited beyond use)**: `sources.json` registers for every official reference its access status, usability and usage boundary; materials "read but not constituting design basis" are truthfully registered as background_only/provisional_only rather than dressing background reading as design basis. Where official geometry is absent this proposal uses provisional boundaries with the fit deviation disclosed (ASSUME-002); where an official key-area geometry is suspected of offset (public issue #1029) it is actively cited and its handling declared (ASSUME-007).
 
 ## Three-Level Scope Framework
+
+**The judgment of this chapter**: the three-level scope is first a working depth, not three approved red lines — the coordination layer answers "how innovation and public life co-work", the overall layer answers "how responsibility enters renewal and land use", and the key-area layer answers "how the same rule is validated under three responsibility profiles".
 
 The proposal organizes work in the three scopes defined by the announcement: the **coordinated research scope** of 43.6 km2, covering the AI industry ecosystem, strategic positioning, innovation chain, and future-city form; the **overall design scope** of 11.4 km2, producing the urban-renewal framework, industrial spatial layout, transport-utility support, and Urban Character control; and the **key-area scope** of 368.4 ha across three detailed-design areas, specifying functions, spatial moves, public-space connectivity, and transport organization. The three scopes are mapped one-to-one in `compliance_matrix.json`, guaranteeing that mandatory tasks 1.3, 1.4, 1.5 and agent.1–agent.6 each carry sections, layers, metrics, drawings, and HTML evidence [depth:three_level_scope_framework] [depth:overall_spatial_structure] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT].
 
@@ -290,7 +294,7 @@ The overall design scope (measured 11.413 km2) requires control-detailed-plannin
 
 ## Detailed Design of Key Areas
 
-The judgment of this chapter: the three key areas are not the same pattern enlarged three times — each validates one responsibility profile: Zhongzhiyuan validates "controlled testing", Origin Community validates "near-campus translation", and Dazhongsi validates "station-city operation"; the agent.3 scenario anchors and agent.4 pilgrimage landmarks are placed accordingly (cross-check Table A2). The three key areas reach integrated-implementation-plan design depth [depth:three_key_area_detailed_design], each anchored in [data:geometry/key_areas.geojson#PROV-KEY-001], [data:geometry/key_areas.geojson#PROV-KEY-002], [data:geometry/key_areas.geojson#PROV-KEY-003].
+The judgment of this chapter: the three key areas are not the same pattern enlarged three times — they are the three spatial prototypes of the four protocol beats: **Zhongzhiyuan = Test-Sandbox Quarter (P2 testable), Origin Community = Release-Lounge Quarter (P3 releasable), Dazhongsi = Bequest-Acceptance Quarter (P4 accept-and-retire)**; P1 (declarable) is carried by the Greenway Declaration Desk, and the four interface types chain along the belt — **Greenway Declaration Desk (P1) → Test-Sandbox Quarter (P2) → Release-Lounge Quarter (P3) → Bequest-Acceptance Quarter (P4)**. Walking along the 260 m greenway, citizens can read the complete lifecycle of one public AI service; each area simultaneously validates one responsibility profile — Zhongzhiyuan validates "controlled testing", Origin Community validates "near-campus translation", and Dazhongsi validates "station-city operation and retirement restoration". The agent.3 scenario anchors and agent.4 pilgrimage landmarks are placed accordingly (cross-check Table A2). The three key areas reach integrated-implementation-plan design depth [depth:three_key_area_detailed_design], each anchored in [data:geometry/key_areas.geojson#PROV-KEY-001], [data:geometry/key_areas.geojson#PROV-KEY-002], [data:geometry/key_areas.geojson#PROV-KEY-003].
 
 | Key area | Design positioning | Spatial moves | AI industry & operation scenarios | Evidence |
 | --- | --- | --- | --- | --- |
@@ -587,6 +591,8 @@ All 12 scenario cards, 3 industrial test-and-verification scenarios, annual even
 
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
+**The judgment of this chapter**: land use and buildings express "re-checkable capacity and sequence", never fabricated status quo or conclusions — 155 parcels seamless coverage, 84 conceptual buildings, and the three-tier retain-renovate-renew order are all re-checkable against public sources, and wherever current data is missing it is explicitly marked pending verification.
+
 The land-use plan follows public land-use survey, planning, and regulation classification standards, forming complete, closed, seamless zoning [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [data:geometry/land_use.geojson#LU-001]. Of the 13 classes, research 0802 dominates (14 parcels), with commercial 05 (10), residential 0701 (6), education 0804 (6), medical 0806 (6), culture 0803 (3), sports 0805 (1), community service 0702 (1), park green 1401 (12), protective green 1402 (9), plaza 1403 (2), road 1207 (81), and reserve 16 (4) — 155 parcels total, seamless [depth:land_use_layout].
 
 The building plan distinguishes retained, renovated, renewed, new, and to-be-confirmed objects: because existing buildings, ownership, control plans, and engineering conditions are absent, the proposal provides only a **method framework and to-be-calibrated checklist, without fabricating retain-renovate-demolish conclusions** [depth:retain_renovate_demolish] [depth:height_massing_character] [standard:MOHURD-ARCH-DESIGN-DEPTH-2016]. All 84 conceptual buildings in `geometry/buildings.geojson` carry `status=design_proposal`, `confidence=low`, expressing massing intent only [data:geometry/buildings.geojson#BLDG-001] [metric:building_footprint_area_sqm]. Total building scale, FAR, height, and density are uniformly `status=unknown` pending official conditions (see [metric:floor_area_ratio], whose `reason` states the missing conditions and recomputation path).
@@ -602,6 +608,8 @@ The building plan distinguishes retained, renovated, renewed, new, and to-be-con
 The ranking is anchored to the `phasing.geojson` three-phase boundaries and `land_use.geojson` parcels, all marked pending recheck, and managed under `assumptions.json` (A-CONTROLS-001, ASSUME-005); the point of a ranking is to give subsequent deepening a recheckable direction rather than to pre-empt the existing-condition survey — the honest declaration of absent official data is itself a boundary reviewers can verify.
 
 ## Transport, Rail, Municipal Infrastructure, and Public Services
+
+**The judgment of this chapter**: transport and municipal systems are the operating skeleton of the protocol — rail stations are testing entries, the slow-traffic greenway is the state-reading interface, and municipal facilities carry the computing and energy boundaries; wherever engineering conditions are missing they are listed as deepening preconditions.
 
 The transport plan responds to the announcement's requirements on station integration, road micro-circulation, slow-traffic gaps, external access, parking, non-motorized parking, and green transport [depth:traffic_rail_slow_parking] [data:geometry/roads.geojson#ROAD-001] [data:geometry/public_space.geojson#PUBLIC-001]:
 
@@ -648,6 +656,7 @@ The north-south narrative sequence (concept): the north segment (Zhongzhiyuan) p
 | Nodes | Scenario nodes, AI pilgrimage landmarks, slow-traffic network nodes | Public-space component library and scenario-card anchoring |
 | Project level | JZ-01—JZ-12 | Renewal project list |
 | Scenario level | Scenario cards 01–12, 3 industry test scenarios | Pulse Protocol operating objects |
+| Protocol prototype | Test-Sandbox Quarter (P2) → Release-Lounge Quarter (P3) → Bequest-Acceptance Quarter (P4) | Four protocol beats chain along the belt: P1 Greenway Declaration Desk + three area prototypes = complete lifecycle interface |
 
 **Visual identity (VI) specification (conceptual recommendation)**: the logo centers on the "脉" character with the rail—waveform motif, specifying minimum usage sizes (screen ≥24 px, print ≥10 mm), safety zone (no less than 1/4 character-height clearance), black-and-white and reversed versions, standard colors #4A5560 (Jing-Zhang iron grey) and #0FA3B1 (AI cyan) plus auxiliary tones; the font-license list and vector files are in `report/copyright_statement.md`. VI elements and the wayfinding system require official approval before implementation; this specification is a conceptual recommendation.
 
@@ -789,6 +798,8 @@ All magnitudes are concept ranges: the 11 one-off construction items in the tabl
 
 ## 100-Day Campaign Action Plan
 
+**The judgment of this chapter**: 100 days is a pacing constraint for submission and review, not an implementation promise — first-phase actions complete the baseline survey and protocol registration with zero dependency on official data, and the release of official data triggers a P4 recalculation.
+
 The solicitation window (100 days) is the delivery and review time constraint and is strictly distinct from implementation phasing (near/mid/far-term): the former constrains deliverable cadence, the latter is the urban-renewal rollout path. After submission, the following action plan governs continued participation until review and public display complete; any official release (boundary, control plan, existing-condition survey) triggers the P4 recomputation procedure.
 
 **Table B1 100-day action list (concept)**
@@ -828,6 +839,8 @@ The solicitation window (100 days) is the delivery and review time constraint an
 | P3 far-term | Reserve flexible land activates | Official conditions confirmed | RES-01..04 |
 
 ## Metrics, Area Recalculation, and Compliance Matrix
+
+**The judgment of this chapter**: metrics are commitments, not decoration — 76 metrics with 61 known values are re-calculable one by one, and the 15 unknown values state their recalculation path openly; where official conditions are missing, estimation is never disguised as approval.
 
 The indicator system (`metrics.json`) has **76 metrics** in seven classes (all 76 are listed with values in the table below):
 
@@ -989,6 +1002,8 @@ The compliance matrix covers all mandatory tasks of announcement clauses 1.3, 1.
 | Long-term operation value | Chapter 6 funnel table + brand IP + landmark operation cards | Annual event system, conversion funnel, honor ladder, three-source funding, governance structure | Closed | Operating data calibrated annually |
 
 ## Risk, Copyright, and Compliance
+
+**The judgment of this chapter**: the risk chapter answers "what happens if it cannot stop" — five classes of rollback triggers, three objection gates, and the data-deletion protocol form an executable stopping path, and every regulation distinguishes "statutory basis / self-designed by this proposal".
 
 **Bilingual requirement**: the Chinese master file and the English translation `proposal.en.md` are fully aligned (bilingual_contract_version 1); A3/A0 drawings, HTML, and text-bearing figures all provide bilingual expression, preferring the terminology recommended in `docs/terminology-glossary.md`. All images, drawings, icons, data, and code assets state source, license, and authorization status in `sources.json` and `report/copyright_statement.md`; the HTML page loads no remote scripts, remote map tiles, remote fonts, iframes, forms, or external APIs, and tracks no reviewer behavior.
 

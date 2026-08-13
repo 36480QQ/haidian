@@ -1,6 +1,6 @@
 {
   "schema_version": "1.2",
-  "seed": "v10.4.2-aipulsebelt-rehearsal",
+  "seed": "v10.5.0-aipulsebelt-rehearsal",
   "simulation_type": "synthetic_public_acceptance_rule_rehearsal",
   "status": "offline_complete_field_not_authorized_not_run",
   "task_count": 120,
@@ -70,7 +70,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "7513133cb4627e9b95dbf237ee7eaf4d415f027343b8a9f28f0bbc8fb7db1dfb"
+      "receipt_sha256": "29c2c8c1142a3d2fd5f45cd112fa7f6091072969778c3dea00dea81636c88066"
     },
     {
       "task_id": "card-01::missing_responsible_role",
@@ -85,7 +85,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "e2a0947dce1fcd70d01bcd1ce25eac4a53ae239e736731ffda5cbd1206e842e9"
+      "receipt_sha256": "da8f0ce202ff307f749d125669adc3da0b27dc0e5f7ea3bd0550c081919129fd"
     },
     {
       "task_id": "card-01::data_exceeds_declared_ceiling",
@@ -100,7 +100,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "b94a1103d13c03088d61309482d86cba40dc9fbd7bd96e575e47fee40ad32d07"
+      "receipt_sha256": "f9af24516da6bb99afb24add124a8e821a47e2db299cc2bff923bafba15163d4"
     },
     {
       "task_id": "card-01::same_task_human_route_unavailable",
@@ -115,7 +115,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "e146f8a6e3b818d0d11edfe1763e503627c0d2e53975cbf468fa9dbd3150d732"
+      "receipt_sha256": "f7b1147589833351f977c5e452b036f20a9456e0c6fe42281fca01908f5dda8a"
     },
     {
       "task_id": "card-01::cannot_pause",
@@ -130,7 +130,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "44467d073c6f43cb3ca800534509139cb97dc1345a26092bd60cbbc177dd0f16"
+      "receipt_sha256": "f4c8f4aacae2d4c1584a349afd04ec035fdd98a00b4cc1ab4cb304ff58c0bca4"
     },
     {
       "task_id": "card-01::revision_not_public",
@@ -145,7 +145,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "576a7dc7378ce60f8a18eff1baa20064bda304251068cc98a5fffbb96e9e772e"
+      "receipt_sha256": "b6078dff50743f6e024ff0f66dd095a3372e46419689ebb54b6774b774c9204f"
     },
     {
       "task_id": "card-01::bequest_dividend_missing",
@@ -160,7 +160,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "c8d946e58f5ff266fc83f3b32686e9d61ef67f5025026415a022827598eecfca"
+      "receipt_sha256": "9fcd917d399648b9ffc58b37ae1c5093de8e7b08cc0428b99e1897b4b491c1c6"
     },
     {
       "task_id": "card-01::post_exit_service_lapses",
@@ -175,7 +175,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "d7175473e79b83cd9c0fe8aed17511a72652d2485456dddee8aee1633fd3bc83"
+      "receipt_sha256": "c7274cf5610c999dc7cde07e3e5e776c45514f71f7a4f68770253d01b8410d80"
     },
     {
       "task_id": "card-02::qualified",
@@ -188,7 +188,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "2dbbcbfd8ae2862942e99dc00fece2ee1d039fdb296665b7478cb40125fd22cd"
+      "receipt_sha256": "bf4671190ddf3261556db7f62cd1e723db81fb434f4e99fda6f0a2b36177e0d7"
     },
     {
       "task_id": "card-02::missing_responsible_role",
@@ -203,7 +203,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "ed10b5426b127029d9d4284cd7985f297cf7ea66be93f6ff57ecc1d539c283fe"
+      "receipt_sha256": "3651af150398ba6ad4d66c55fa4cd5fb743d271f141a9b3fc74b638dad0e4290"
     },
     {
       "task_id": "card-02::data_exceeds_declared_ceiling",
@@ -218,7 +218,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "92941778f6e1ba1a1ac63349daaaceaa95d50c0a96762d58d3aa4bb2c351ced9"
+      "receipt_sha256": "676885f1a4f5fc456714519ff15363565bf6c4dc99710b4c336cef22b3a2a8f6"
     },
     {
       "task_id": "card-02::same_task_human_route_unavailable",
@@ -233,7 +233,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "53a275d2c35a647d423f513e9dc5b80e90f9b66145ac1ef16747af8d2394222e"
+      "receipt_sha256": "e3520f6487143ed336013ce33ce39134ecc1556e9dcaaf349b96e2160ea06a50"
     },
     {
       "task_id": "card-02::cannot_pause",
@@ -248,7 +248,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "e6a67e6eb8854db415ca3035317dcca3dcb3ce880bdc19e41733ee6592b34521"
+      "receipt_sha256": "155ef0e0764b5ff058ef2c7adfb6f6c1f4a1f82fe224d0ffb6da22df4557faba"
     },
     {
       "task_id": "card-02::revision_not_public",
@@ -263,7 +263,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "3636caec7c7e0d1ca78015199fd54e512f759bf810541a7eccc496ca851a5566"
+      "receipt_sha256": "b57a5e83faabc2da561cd1dc6e2d465a911b9f0519c4ffef263f7345fc35b0f8"
     },
     {
       "task_id": "card-02::bequest_dividend_missing",
@@ -278,7 +278,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "16d17077511c488fe6960e376d9338e099f867b082a32064d89baf788a1fe68c"
+      "receipt_sha256": "ed052b94661a180ee8caced7a33e0ff8ecd988fb36493e2414100f93064615be"
     },
     {
       "task_id": "card-02::post_exit_service_lapses",
@@ -293,7 +293,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "18961b835fb93e7cb0f4d134e09b3eebbcf4f2dffcecfc4b839412d6f8452870"
+      "receipt_sha256": "6e5e3bb6c4983882c8cc241c3549161fa057d30b75edf8e24fd0addb36d6b18f"
     },
     {
       "task_id": "card-03::qualified",
@@ -306,7 +306,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "1a55cdf14cb740a52e17e32e7b8bdc23d7cdcb48b674db3c43b1961030c715fc"
+      "receipt_sha256": "721e47d40e107ac76a8bd9f730891b8e86911d619ac935774067372d280f74da"
     },
     {
       "task_id": "card-03::missing_responsible_role",
@@ -321,7 +321,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "8a445b25ca2b24dfda53eab7853bbb86097b69fd20b68ceee1aa90f486a96a36"
+      "receipt_sha256": "b4cc7c01ff37bb744f758b57c32fc31c607651d8f83fae64b7cc6fad872b9be1"
     },
     {
       "task_id": "card-03::data_exceeds_declared_ceiling",
@@ -336,7 +336,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "c49811b94f5f876b661ce83a910a359a513e26181b4a50c12d1e354b32e77c21"
+      "receipt_sha256": "bdd037b0d3736d44c2760cbf5558b70f0a0288f632f89cb4ce0689c5b6ebd6bb"
     },
     {
       "task_id": "card-03::same_task_human_route_unavailable",
@@ -351,7 +351,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "9ac0773a24a3db61b9f5c3f7e5d2adc690867973db5c3ca97b3caefecbbf0ac4"
+      "receipt_sha256": "1eddcbc64c1bd80f4f52dff40aaa2b840cab9d13e3d24ebde268f54a714b3333"
     },
     {
       "task_id": "card-03::cannot_pause",
@@ -366,7 +366,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "20d252cd30743418c4fc98b9ec3802fbb6201f3d6c6cb102200c857ad2e16cff"
+      "receipt_sha256": "81bd3ec1127ec0e13aded020cbb60397baae2f4e9915f3d67068bae8545f826a"
     },
     {
       "task_id": "card-03::revision_not_public",
@@ -381,7 +381,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "5069b697f98e88063046d6e714754b53168f49a06e3f7bc24727fbdaaef065ba"
+      "receipt_sha256": "2dc611e2d4946dbe6871124f8a729ca91088ab8ab658c80f5ae7fb7ae93f7d4d"
     },
     {
       "task_id": "card-03::bequest_dividend_missing",
@@ -396,7 +396,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "74b815fa90d9b1f14b5f8475e99b7b12c5a0f6ff4925ed3bdeded1c3dd3aeb98"
+      "receipt_sha256": "2ae70bc5168a8c90d4cd482a8b3d63132375a903c071b163267c876bbe16db07"
     },
     {
       "task_id": "card-03::post_exit_service_lapses",
@@ -411,7 +411,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "2eb6f06766ff149d308ce95df5b227b05538c9accd1c4e43a57d78e24e197f14"
+      "receipt_sha256": "8453136554e08d56e04cec6c136d0cce1188039a5e48e4e1e46ad076a2515f2e"
     },
     {
       "task_id": "card-04::qualified",
@@ -424,7 +424,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "4d8b84ca2595474e5863bc90fca5a7bf9292064fe2f432f81975f880f3849e41"
+      "receipt_sha256": "337ee8a53a2dfa35db4ab7b41c8fea7a80480bbaa3cc89525ba62c758470ab8b"
     },
     {
       "task_id": "card-04::missing_responsible_role",
@@ -439,7 +439,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "6bbbce47c55a77ce1b0c6cd0409c668bde7f617612562301e470a57ba8f98e5f"
+      "receipt_sha256": "006871598420b9fca8cfecab78c4eac98c8f7f4b481a5335b6c3d8359d3181ab"
     },
     {
       "task_id": "card-04::data_exceeds_declared_ceiling",
@@ -454,7 +454,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "b6aa1e85434825e7ee7f1b41a59aaf7156b2071f7e42ea96a3f333e5cf70e9e3"
+      "receipt_sha256": "7e8da68e736050cc01dda41b73868ec7643f2a36f4e887e12deea1bfd907f323"
     },
     {
       "task_id": "card-04::same_task_human_route_unavailable",
@@ -469,7 +469,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "a490ef785eafa9f98a82a1be682a14955af00190530b0192d3284c6eaf07321a"
+      "receipt_sha256": "2d0415ad0e8858ac7de3e24d540f2fafc39c99995ecb8725c0918c6fdc232e28"
     },
     {
       "task_id": "card-04::cannot_pause",
@@ -484,7 +484,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "defaa51f88f467b041b34a647d8fa919181c404270a07478cd915cb4623db579"
+      "receipt_sha256": "585d88bca47c0854031283ed1261845ab54c8b3fd86a1642fc7db0f5a9017560"
     },
     {
       "task_id": "card-04::revision_not_public",
@@ -499,7 +499,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "9c0f3fbc1573bba4eae217f64aac1797998f28930ba4f2a594d85e83bb08ff7e"
+      "receipt_sha256": "030d28e57ce73f250387b8986ba6d949f70201f9bae3155b1d9cb4b751252f05"
     },
     {
       "task_id": "card-04::bequest_dividend_missing",
@@ -514,7 +514,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "a865ea98844725c911bd40c00b83657832a91a86b40db7a160cf5490c6f0376c"
+      "receipt_sha256": "ea75e5619f7d35dcb0a5af70a0dbec1ddbc5771e556fec1a983aa2e92203a3ce"
     },
     {
       "task_id": "card-04::post_exit_service_lapses",
@@ -529,7 +529,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "8aa8e78eb0f83a14db7d0289ac596be81a347d5fb23fd1a218d13e977009d605"
+      "receipt_sha256": "e9ff2a59f1f12bd165209a815dd4d81bf249fd62fda75c9b26f7c65818fe7b45"
     },
     {
       "task_id": "card-05::qualified",
@@ -542,7 +542,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "5628d1e05e2e9242378712f28fd3d865d0e302b254aea0196e38cfe21626f498"
+      "receipt_sha256": "58e30ee3475c2a38be21c8b078616eaa79aab961f37a5e70e9e029db13b7164e"
     },
     {
       "task_id": "card-05::missing_responsible_role",
@@ -557,7 +557,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "fd9b5297e7271215545c7d4739c9b835c28488b28afab48f43f935f6f28fbd4e"
+      "receipt_sha256": "45077275862092213128f0e909c90e850cb2a048ec077dc54eeca18a018f0226"
     },
     {
       "task_id": "card-05::data_exceeds_declared_ceiling",
@@ -572,7 +572,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "600c5da6c156c83bba4e38af9b8de8e67863431730c3a624b8211792f107e5b7"
+      "receipt_sha256": "235faaebcb9a308f5bb8f0bc077d72d86f9e82aa45ffd373154ef7fcbdd881b8"
     },
     {
       "task_id": "card-05::same_task_human_route_unavailable",
@@ -587,7 +587,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "f148f8af0e757a0b7dc47e06a5a861e697e3e924173606a74cf0cd39c0984604"
+      "receipt_sha256": "29c9f68c8bc9d5118bd92ebe72bb12fdaf1f340b471d5f6f13cf913d0fb84a86"
     },
     {
       "task_id": "card-05::cannot_pause",
@@ -602,7 +602,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "dcbfc94d6cf3d06e1738b4b9f408cef45589e17dfcc441c9036c77ea443a18a9"
+      "receipt_sha256": "7d46d7050c0754e3a9b66d57701a6a249b9e41ddba153caa52238c817b264510"
     },
     {
       "task_id": "card-05::revision_not_public",
@@ -617,7 +617,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "f324c344f16e941fd0950ac7f2494c4b88821eb8395692e2d2df6a55c8887cb6"
+      "receipt_sha256": "6bde9f1f2efd555a37ce576e0006bcec9be356f14989bf887aaf899784f60f6c"
     },
     {
       "task_id": "card-05::bequest_dividend_missing",
@@ -632,7 +632,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "150cfc4b9b10468e17131ce907d3ce25158a46ba7e52d84e746f7db480556c25"
+      "receipt_sha256": "386317c28884f90f9ee4e9ed7cc3f6273bdec8c9183738bbbbb4f5234341b8d9"
     },
     {
       "task_id": "card-05::post_exit_service_lapses",
@@ -647,7 +647,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "d21a0ac62d55083bfa6578a03baf894811933294f812ad790dc55c6c530d1bce"
+      "receipt_sha256": "fbca18995e10c16ac25334de18ec804d2e353323762671e37fd0f1ee8b7fb6ae"
     },
     {
       "task_id": "card-06::qualified",
@@ -660,7 +660,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "a88e5607bc81b047798f96bb0ab4ddaabe5b6f94f25f56c06fe646da5e28acae"
+      "receipt_sha256": "d36d770628794326a894b441019913ad32a52f2d5adc5fddfd790f27c9a13239"
     },
     {
       "task_id": "card-06::missing_responsible_role",
@@ -675,7 +675,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "52ccc799f41452032135589ee918b6089e51cab88bf8658cfd31b12b8cf9c4ee"
+      "receipt_sha256": "3caefee50fffc1926d702c65febde00d5677032acca9898803ef7283f701e65b"
     },
     {
       "task_id": "card-06::data_exceeds_declared_ceiling",
@@ -690,7 +690,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "37ddd07336267520d7d4d0d395a638de086b61817fa7cb3e2aef976d59d3825c"
+      "receipt_sha256": "35c4929a3b65633f040e958d4b5ef5330c0c7cd904a6d9fe2670892eadae15e7"
     },
     {
       "task_id": "card-06::same_task_human_route_unavailable",
@@ -705,7 +705,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "3dd6ac3869b0768a5aa9120d326f877cc275f39cad97f292090275043aa8fc27"
+      "receipt_sha256": "89d1b6a5fa0dd26f949395c59291feb42234430862e48935dd8e4ffdf0abc66d"
     },
     {
       "task_id": "card-06::cannot_pause",
@@ -720,7 +720,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "893887dc75a393ab585ad9b1097181fec09e430588bcd732d2fb98539c168a10"
+      "receipt_sha256": "c552eb577971de4a8467543770322845442e5af7ba730cb6cd1050c78cd58f1e"
     },
     {
       "task_id": "card-06::revision_not_public",
@@ -735,7 +735,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "1b6337a4e18435cd62c9009644741a1bba2296ab8ce710711ce66a40333c941e"
+      "receipt_sha256": "f6a0fab70a150d8ef47f4a7c24f3dba9df83ed1676b54fce9ebbc6070949c22f"
     },
     {
       "task_id": "card-06::bequest_dividend_missing",
@@ -750,7 +750,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "1be015d915aa20505c4c8693d6fc7f9a07cc8538ea8e86e51cbae44bd90e2702"
+      "receipt_sha256": "83f36d1acc7ff7ad8cd3305e18667fc5ebba252b45c2251a45789dd38ea147c6"
     },
     {
       "task_id": "card-06::post_exit_service_lapses",
@@ -765,7 +765,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "bfd6fca378c71843881b3db7647c93f126d1892030aebdf0fccb3cf02fe19087"
+      "receipt_sha256": "2b5cb7a40f95c610f5e87038eb5ff6241340db85bd2a62460d72ffac785450f7"
     },
     {
       "task_id": "card-07::qualified",
@@ -778,7 +778,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "6fe9aeadeddc5f33441181dbd1bc57ce41938f08926cd317bf2c017c35a19117"
+      "receipt_sha256": "6ccf8e7f2cbae91891c3b9d90855df18b7c355005a7af732be74c6a2d6f5a5dd"
     },
     {
       "task_id": "card-07::missing_responsible_role",
@@ -793,7 +793,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "56e4149a28a131fd861ad03811d766a22c845685eff7a20c7b9608bc07920396"
+      "receipt_sha256": "d9001786b5e1a4cd36dc8b6e7dba0ea6f21ec7306e5f6dd7888cc1a7d63ff973"
     },
     {
       "task_id": "card-07::data_exceeds_declared_ceiling",
@@ -808,7 +808,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "2c285e63e6d128093522c3a647f72c694ee6c40c08700ee618e9bca199da71e4"
+      "receipt_sha256": "d9b913dc4c49219d2f2c34d573a0ffe256b8118d25c56dfbc050d606d1d9b2f6"
     },
     {
       "task_id": "card-07::same_task_human_route_unavailable",
@@ -823,7 +823,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "69e927d1e2516f76573e0e258d0026d0c61aa8345239e763176c5cb912a75e58"
+      "receipt_sha256": "dd8f3dfb21d9e2581b06e66c74cdb39fd98cfb7fcf812d0ef5debeb3a125d121"
     },
     {
       "task_id": "card-07::cannot_pause",
@@ -838,7 +838,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "d47485e2c785e07476e3e8d4c892c371c9cb47fa1ebf769955926df1b42d137c"
+      "receipt_sha256": "e318eb9caebd4df543c0e6103a7a347acfab52573477827e85159025f43a177a"
     },
     {
       "task_id": "card-07::revision_not_public",
@@ -853,7 +853,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "1ff9f42ffb6f973732bf42cc0e8c22f3355cc4d1dea4f6af5fa5c29eab5745dd"
+      "receipt_sha256": "b623d8220131f3191e74deaae5eab1ff6f5dcb5a3755ff70aed7ac3411c837d8"
     },
     {
       "task_id": "card-07::bequest_dividend_missing",
@@ -868,7 +868,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "57875554a206f4747dff6342103c7da308146d8a34ce8b23aa7057f726e61dcf"
+      "receipt_sha256": "23ac0eb286fc4b7bed0e1d6b137da464cab51dec505792d32d58ca6ed8510bed"
     },
     {
       "task_id": "card-07::post_exit_service_lapses",
@@ -883,7 +883,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "f620b691988f1bef4f00941929b5b2da1960a93775002a9746cd158e0d1adba6"
+      "receipt_sha256": "c0c3d9a8777f14a6a34ba7da0511f12f46dce631a4bcc1e8484c1fc6c2ddbb93"
     },
     {
       "task_id": "card-08::qualified",
@@ -896,7 +896,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "a9e5c418cf55cbdca673ad9e059e3f7ea5f539226fc520e3fad8a52e659b66af"
+      "receipt_sha256": "f026aa75a5ba6469dab77c99f21ab1b611543c0266244850d8600ecfaf6e0c14"
     },
     {
       "task_id": "card-08::missing_responsible_role",
@@ -911,7 +911,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "3288916847d3bb753bcd48f8ffae695ad86361b7b11285f93e9201324afadd51"
+      "receipt_sha256": "10b10bf526a37259421c3917072ba33eedaec62870c9864389f37aba4df1738d"
     },
     {
       "task_id": "card-08::data_exceeds_declared_ceiling",
@@ -926,7 +926,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "30815c6b2b841fd5cb867fab17855cac7de15457de6cb1f4050d4018dc726d74"
+      "receipt_sha256": "fdc23ad64ef0fef75bd101574a1b19cf907bbbd01dc4b48c30a6e1e463264463"
     },
     {
       "task_id": "card-08::same_task_human_route_unavailable",
@@ -941,7 +941,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "a00ea0eba452ce9aea3f99f714cbd5153824eda97a1599a4735dea91720b4124"
+      "receipt_sha256": "0de9b6a09372fb3dc073f9907cb97d66f4bd3f2824e803532549e418a6130e83"
     },
     {
       "task_id": "card-08::cannot_pause",
@@ -956,7 +956,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "1bacc6826be1cd954a6c179935a93586574916dfde2137b689bc4148820582f2"
+      "receipt_sha256": "a122b45f8efdba7947fd40471c8d09cda0367c7e69ea83d7725a3ba59d6edd39"
     },
     {
       "task_id": "card-08::revision_not_public",
@@ -971,7 +971,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "69c3341e50ade6aa46cd54a8869c7cfdbbe64197102216666288bbb55379df78"
+      "receipt_sha256": "edf958acfb7092e58656cf99b543d16b6b2180f34823025c52a224a05b8ffff7"
     },
     {
       "task_id": "card-08::bequest_dividend_missing",
@@ -986,7 +986,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "7e20de62a27aeeefd0dee9901af94ff9a82f3e90bc38c0eb350e7c5832ff5aa3"
+      "receipt_sha256": "5c5214e145a1ad3176a425963c46a8f746edb3e53d088aecf5a9df6d4125c097"
     },
     {
       "task_id": "card-08::post_exit_service_lapses",
@@ -1001,7 +1001,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "dbe52517e6da9548f3a68dcb6b50ef019c81b67757cb35014246ba7bc06aa9dd"
+      "receipt_sha256": "3916b2c0b12ff6f6b118e7476db01578302da7d3cd6ad47af2e80a5845f4edb2"
     },
     {
       "task_id": "card-09::qualified",
@@ -1014,7 +1014,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "192d644c3e98744ef7bbe57f845358210fb7590e6a21bd2bd0643abbad7010ee"
+      "receipt_sha256": "44e41608f953ce02b53f3d2d7ebc84810636ec4b9154aa9cbf3b1de04996ef90"
     },
     {
       "task_id": "card-09::missing_responsible_role",
@@ -1029,7 +1029,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "7d8e6fb2f2bf750742d433a440a6d69ae24af7e03b5dbea2a24cd965a366f7d2"
+      "receipt_sha256": "c75b018af5432335563f1379341aa3a4381896a8f5d478913274b941e1b55be2"
     },
     {
       "task_id": "card-09::data_exceeds_declared_ceiling",
@@ -1044,7 +1044,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "c669da2f1f237d49ef648688420a6bed83deac7443f85821a7ec91607260d67f"
+      "receipt_sha256": "e492e2ddaad42da10506a78353ce73894257fe9792f3d0253775f0fe77dba65b"
     },
     {
       "task_id": "card-09::same_task_human_route_unavailable",
@@ -1059,7 +1059,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "45d5e07853ebabaefffd5ecdab58f42da69fb93f845ba8206de04d53fc7156e2"
+      "receipt_sha256": "34dae95bb05fdb438028af5f5155505926eb4d2137a63abdabc62dd9489f4104"
     },
     {
       "task_id": "card-09::cannot_pause",
@@ -1074,7 +1074,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "6abf39cd9c3e5ce5c49c69bcd9ad9123fd6b2ee442430f703f03f52d1983064d"
+      "receipt_sha256": "f5009778782f376a858101b45f81f31a29c1d73975ad069c3e58d612f82e588d"
     },
     {
       "task_id": "card-09::revision_not_public",
@@ -1089,7 +1089,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "4271857f00b47a9d3afcdbddd4de821dac51116a7d1cfdcfb2a2a305aaa72ff5"
+      "receipt_sha256": "9a0581bdcbdabcef643d4e9e1da53813d4228bb84d7ad7fbf4747fd8867ae263"
     },
     {
       "task_id": "card-09::bequest_dividend_missing",
@@ -1104,7 +1104,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "ea2a5e4d45c0ea48cbfb0a623ebfc9c8de592ac81854e8c90fb850daa58cd8ba"
+      "receipt_sha256": "5eca7562c4f87ad0a00f1ce9595d43963b983a0a031edb8e35dc45fa7ff2f7a2"
     },
     {
       "task_id": "card-09::post_exit_service_lapses",
@@ -1119,7 +1119,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "65b557c716b360783c4365dde6dd7dfb304e667fada0a24b5cf5c9039dbf9e76"
+      "receipt_sha256": "faad58c7cc3081367ad63f305740bf771572d8253a4cfd34cd426863af4e1183"
     },
     {
       "task_id": "card-10::qualified",
@@ -1132,7 +1132,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "4027a7049a45606a70159ed3249793acc198c825ac7826005792c9267975f13a"
+      "receipt_sha256": "2a7b93f9c3ec21c973892e064721406d27f061cffc6eeb5d0b3f7d4cdbce531b"
     },
     {
       "task_id": "card-10::missing_responsible_role",
@@ -1147,7 +1147,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "ed7d975702b1a933cb3618db2f82770a8b6b59e479cf276f2aece65b2208ef78"
+      "receipt_sha256": "1c62f8c014d7068ee9a893cf9d032b346f807cf7a5e8514daa1fe2af0d56ef0b"
     },
     {
       "task_id": "card-10::data_exceeds_declared_ceiling",
@@ -1162,7 +1162,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "972858ecf4b0110f3488cc74a6c2dab3eab5c0b0f6673e001db3f3faf424303f"
+      "receipt_sha256": "4b86a44793d8758974795cd7eaea3b118f6bf9f887d98f6b06d51ba7d4f13888"
     },
     {
       "task_id": "card-10::same_task_human_route_unavailable",
@@ -1177,7 +1177,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "9a54658c625a53c122c1c11b7a492a719da901eeef70c57e726508359af8b103"
+      "receipt_sha256": "912e1ae8df5640791d7211f9b2a192ef270b12181dacc353714cc95e1199d376"
     },
     {
       "task_id": "card-10::cannot_pause",
@@ -1192,7 +1192,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "e89d1ea707dc3fd780a079ac44176fc6a3ef86297bb0a9bc70b8be6d3234d3b6"
+      "receipt_sha256": "b4ca8f1a5171f6838ef6c05cf4e94a3ba7c5aa518ad50a36e60f3baae1645493"
     },
     {
       "task_id": "card-10::revision_not_public",
@@ -1207,7 +1207,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "d93eae21e2419b9127b2a5b43b811b4c54e9b6b3d69ceac5af941100eb95d9a1"
+      "receipt_sha256": "dc22257c16535db3463d7321fb049b837d0718cc813e9dab076cdc9fc779862d"
     },
     {
       "task_id": "card-10::bequest_dividend_missing",
@@ -1222,7 +1222,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "d6ad820982f9ba5936d8e05f62efb8cb39ade7a41e3a1527bf4acbe69c943702"
+      "receipt_sha256": "d2608f953b149d8b07146eb9148d7092fe9df05c562f474e5d77227191ba7de5"
     },
     {
       "task_id": "card-10::post_exit_service_lapses",
@@ -1237,7 +1237,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "ce5d07a78c238468a61305fa25f0ea1922d89db29a151dec447b8c6b1aec8fa4"
+      "receipt_sha256": "17ccceab00e23e3fb2cf83da47a61541acaa85c0ed0e78e67e26d0ce571d923a"
     },
     {
       "task_id": "card-11::qualified",
@@ -1250,7 +1250,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "9115aff40ace6ff00e922851e68a1cf4f8c71a61edd620de3049f6e6af3a5449"
+      "receipt_sha256": "00d9c195edba97cb06ac68d98dd82026a14bcfab65f6d1485d2a414b0d38cee9"
     },
     {
       "task_id": "card-11::missing_responsible_role",
@@ -1265,7 +1265,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "89aee3fbc3c22053d7d0e442d7c03c99eb62ef6b9421502f9c3a14647ffe9f29"
+      "receipt_sha256": "5b47690249fe87022642ed16a93ffc8a45a5111dc9f00734c91ce6a7ab4991dd"
     },
     {
       "task_id": "card-11::data_exceeds_declared_ceiling",
@@ -1280,7 +1280,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "c550bef29832d1bff33791a391df29487ad9bef48ffdc7e2fe2a9de5db9d6498"
+      "receipt_sha256": "87d275b2d53e0a0beb46840397b969360da9236d181c71449420942fd4e601ed"
     },
     {
       "task_id": "card-11::same_task_human_route_unavailable",
@@ -1295,7 +1295,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "0cd255d38b664faf1a4ad40c2877fd336837cc377be6cd9f231006d72ae26efa"
+      "receipt_sha256": "cfe8993b186f0da12e1a72b62d80a69d42f9f5a76da93017c41a821398cb5bad"
     },
     {
       "task_id": "card-11::cannot_pause",
@@ -1310,7 +1310,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "cbdc7008b77cbd0506a557cdeebf7cb4ab8a617fdddf05c9a956f15c0085d1f0"
+      "receipt_sha256": "731c615166c1786fe45b9207cc82f01e99f1c65c72703509ecc0dd135a697bc3"
     },
     {
       "task_id": "card-11::revision_not_public",
@@ -1325,7 +1325,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "b400ccc05bc759a024160626b4d8b8aa40982910e3867a55b0943a09cf077be2"
+      "receipt_sha256": "440558197ff6e7501ba5f729966a3e19334a72575f08181222e247141392361e"
     },
     {
       "task_id": "card-11::bequest_dividend_missing",
@@ -1340,7 +1340,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "d8e65854ee1487fee1ed909139da399e6d5ba7cf221850b88a2e243b3828581e"
+      "receipt_sha256": "bdee30e62dc45a95e9314594d4a12a9042bdd8ad2402b64e92273669cc0eba91"
     },
     {
       "task_id": "card-11::post_exit_service_lapses",
@@ -1355,7 +1355,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "adf154635e8f71edd119b821f56b1970f11625292b777497b0769cb127e4350f"
+      "receipt_sha256": "4f8f1d57bfc0ab0e90e4d90a05c0edd4c8e59cfd450bb279aeb572700733c226"
     },
     {
       "task_id": "card-12::qualified",
@@ -1368,7 +1368,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "8ca01cf609bbb926f1acd05945fb655b440f2dbf400f28cee045e128068ab014"
+      "receipt_sha256": "e84dc33dd6a200b161f1ffae059daeb953f8c1b184649e5beafa4461811379dc"
     },
     {
       "task_id": "card-12::missing_responsible_role",
@@ -1383,7 +1383,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "c1191e9998353d6aae7260c3cff3cd430e1d96ba8614d31f529ea732a96d19df"
+      "receipt_sha256": "5f5fd2a9a279c96fc4e9899d7a14a86755275c0ea8d1ee14a74e719aaf22f8c5"
     },
     {
       "task_id": "card-12::data_exceeds_declared_ceiling",
@@ -1398,7 +1398,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "1f5cdf80b1db78978b2c3f35423586b8eea115c835108eb2ddac63d59ccfa3d4"
+      "receipt_sha256": "725e402bff01deadeb64590aa5908865d3f0520f3aa84423ad90a82e468e6626"
     },
     {
       "task_id": "card-12::same_task_human_route_unavailable",
@@ -1413,7 +1413,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "ffa90f0af1c40a0e39368377ab09fa91ed1f0f3c60a0c9017869118531539464"
+      "receipt_sha256": "57056f64381e65e9cc89f8e1b3b7ea6d76f9bad87c03505ce8289f3e84276a03"
     },
     {
       "task_id": "card-12::cannot_pause",
@@ -1428,7 +1428,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "7a0763fea62de950c56bceaf52c543d405c4fd42ae9adad4d4bb797067dfaeaf"
+      "receipt_sha256": "3637fc8b8653848d89ca1377a596d8f9d34fb71f0a08f87a8c7ae4a2b8323edc"
     },
     {
       "task_id": "card-12::revision_not_public",
@@ -1443,7 +1443,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "edf3ec54bc5b0fbe9648628e3690415431e58efb749429daed12df07ac37fc32"
+      "receipt_sha256": "5b0b04e03f3bb1b2e0eb6d6700121977cc3bdc0d0d2bfb73cc789866c8aa72f4"
     },
     {
       "task_id": "card-12::bequest_dividend_missing",
@@ -1458,7 +1458,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "7a0e057a13fbcdd0fd657740cb0d4fbf9398f653c628e8c7dd7631602aa7dd0f"
+      "receipt_sha256": "b2ff913c8d012a3c7ae089b8667dfad196fb3744fb806357abf4e9890c0a261e"
     },
     {
       "task_id": "card-12::post_exit_service_lapses",
@@ -1473,7 +1473,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "67e5be36498b21bb70d2a275f799cac2f20e0913a6ed39ccedf475f444e0176e"
+      "receipt_sha256": "b5a6a446cc5d2c3045ffedee52813317bfe363fe457cf95403b68941a389a2b0"
     },
     {
       "task_id": "test-v2x::qualified",
@@ -1486,7 +1486,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "b210371b032ce22778263ffe1e9fe614f3afebf12e09b9ff5d63e2164cd182a7"
+      "receipt_sha256": "3039619e60e384ed6f13df74dfb6c32497715b176f91ca45fbb09f9d66e85f9d"
     },
     {
       "task_id": "test-v2x::missing_responsible_role",
@@ -1501,7 +1501,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "147a0c6abf28e9d8226999548dbdf74b0a32b5d89fb4d5c024c0cea5913a1001"
+      "receipt_sha256": "08c7e082a41fc514dc1c6cbd660ea2534dbe6fda3296c9d447b63aac7a2f91d6"
     },
     {
       "task_id": "test-v2x::data_exceeds_declared_ceiling",
@@ -1516,7 +1516,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "96d1fc58adcd38cdad3718982b635a33df03b88eca018181bcb1579b2c1129c6"
+      "receipt_sha256": "b4e08165093ceb4ca5686b532286d36a371cc7fe3fb79f168a7f8cf799c1e26a"
     },
     {
       "task_id": "test-v2x::same_task_human_route_unavailable",
@@ -1531,7 +1531,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "c17ca62d35a5c548cf555e8e880e485b62f3c3287df85d0d74d85cf7723743e2"
+      "receipt_sha256": "54c44d1ac10902028e185a06f0b6a4a1cb951a23ad3795616ce8293f90525ce9"
     },
     {
       "task_id": "test-v2x::cannot_pause",
@@ -1546,7 +1546,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "0f72bc146f18f075df93b91522778870fc884d38db30561d9b87ea08dd722bfc"
+      "receipt_sha256": "f57b06033d86ca11bd0185ed9ef5e98eb6728658e9c07575ebfb1b45ef2a3c28"
     },
     {
       "task_id": "test-v2x::revision_not_public",
@@ -1561,7 +1561,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "45499e5a3e7b3ce464d620805128b0b281f6bcf1a75a409232b8c494f5242f24"
+      "receipt_sha256": "6e9ff409e7962a72612eb6a41b6b7f8b6c6b1a2c2f164a72ab72dc5c95482bbb"
     },
     {
       "task_id": "test-v2x::bequest_dividend_missing",
@@ -1576,7 +1576,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "bcbe2fb57bf195a7a23306cda1657386e937e377a3e0f4aeb21a14b6c13cd156"
+      "receipt_sha256": "e6f9cbdaf09c4b89aa94bb9f7011dc4717215b892a37a4e937665e8835f70800"
     },
     {
       "task_id": "test-v2x::post_exit_service_lapses",
@@ -1591,7 +1591,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "af4ce2822622e5a7883d69668f5dfd2887e1b7747209d0cfa00de69d6e6420f7"
+      "receipt_sha256": "7223d01fa9a34baf62cd0ef17393a0a02a303ed044292a2a6201619ebffb3b33"
     },
     {
       "task_id": "test-delivery::qualified",
@@ -1604,7 +1604,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "0afb6e1eba9a2d1a633077b6bba039c8533571d7e3c5fa08228832df23916f16"
+      "receipt_sha256": "77ce9d5954b17a4ebc110d4d36ebb78154e28ba6b66bbc5722e2104dabdd3f83"
     },
     {
       "task_id": "test-delivery::missing_responsible_role",
@@ -1619,7 +1619,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "d043ecd8261c2930928b5f3f1208557eaec4d6c57718a0f0b45d5cc0e35d1b89"
+      "receipt_sha256": "05e865e4362db85427a1e8cad4fab2111705303ec0ff3dc8755a116559973e07"
     },
     {
       "task_id": "test-delivery::data_exceeds_declared_ceiling",
@@ -1634,7 +1634,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "728dba4405b00a935c0240fdbaac008172c9808dc074d29bca127bb0ab0392b2"
+      "receipt_sha256": "4d091340fdbe7cf334f36df1ac6ed552ae30585b105d0a5c5201f5638624ac9b"
     },
     {
       "task_id": "test-delivery::same_task_human_route_unavailable",
@@ -1649,7 +1649,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "b637442d4f450fbee44457472fe0ed141273da7d0ba566d10c48dc8d3047cb59"
+      "receipt_sha256": "04a43f7d02cc0681970974195ecd46e68037a930ae081494723f2a5e1cbeaacd"
     },
     {
       "task_id": "test-delivery::cannot_pause",
@@ -1664,7 +1664,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "694a8e28d181f643b416a18438913f505fd9ee381f72a32f33f38d61b015581c"
+      "receipt_sha256": "e2c3c30ff79150bcb3e645ba9875ca9cc2b9b6399c031cd9c307715329fbe6cd"
     },
     {
       "task_id": "test-delivery::revision_not_public",
@@ -1679,7 +1679,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "a30f06e46c7f09af8348720b70623be0895d71e1535c3eef78a53137e47d775b"
+      "receipt_sha256": "72edb9356ad6727644ff0706687805a8a236f1e67513a0a83dda2f321ff06ea0"
     },
     {
       "task_id": "test-delivery::bequest_dividend_missing",
@@ -1694,7 +1694,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "6ec70f1dd834ea7b952652bf44fa99c8c07d909fa9bf12db5dc1033763cdfbf0"
+      "receipt_sha256": "de336e26ee892891b507d20db98f80eaf28fc7ff73167262c8b72b26e73f216c"
     },
     {
       "task_id": "test-delivery::post_exit_service_lapses",
@@ -1709,7 +1709,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "9fd916342573f2a45aa4537fa255008faab89101c7b0c26fc781da3e6ed0c11a"
+      "receipt_sha256": "ebaeea88cb3c459734abe73e2fc62a88d25a757594fa5a81765aa00c272d7f30"
     },
     {
       "task_id": "test-wayfinding::qualified",
@@ -1722,7 +1722,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "29cbfe4b45718aeced1adde895cb7d15173482ee95f05055e9b66ddf15a36ec8"
+      "receipt_sha256": "b641e5940a24233fef6ff5a62ad4611025d332dc4d7eb9fb760c1b5a62e41249"
     },
     {
       "task_id": "test-wayfinding::missing_responsible_role",
@@ -1737,7 +1737,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "3f220d4f065e4c9c9ee594a32538b0cf74baf96ec3d03a5eb73fa23571cc243c"
+      "receipt_sha256": "4c675ea416c6370f9d7fb4b8919aa99b1c7cc1e66971d03b5f4c67ffa50d6fd6"
     },
     {
       "task_id": "test-wayfinding::data_exceeds_declared_ceiling",
@@ -1752,7 +1752,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "72e50fe060b74bdf98b334d10c67e9272d412e69a624be6f56486403935ced8f"
+      "receipt_sha256": "48fbe2a3c7f080e88d41bf2b8a763b1d989c4c1b53cd81528a882edf50f93e9b"
     },
     {
       "task_id": "test-wayfinding::same_task_human_route_unavailable",
@@ -1767,7 +1767,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "8bb86dc205bc94d3c4e5b7eb9295b6e0b43684692bab83ab4f9d23cb44603212"
+      "receipt_sha256": "1882141b00ef4e50ea44f3a7a521df3fde9ae6f202abccd1e6049ccb384e24a0"
     },
     {
       "task_id": "test-wayfinding::cannot_pause",
@@ -1782,7 +1782,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "fd4781cdff672293698446785ee9377a8e90b8afa062a12e8e4f8c833c807ee6"
+      "receipt_sha256": "9dffafb4671316c7535b8b033342a58521995d581ee548f48daadd43d39890c3"
     },
     {
       "task_id": "test-wayfinding::revision_not_public",
@@ -1797,7 +1797,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "ec5648007e401b9b4ab24a7733c834e99a7d85d5322eaf2ecb8b0a88059778e3"
+      "receipt_sha256": "a97d2d31c696230142d6ec26361c97ef59240ba71a85b0140f5f2e7d159cbde4"
     },
     {
       "task_id": "test-wayfinding::bequest_dividend_missing",
@@ -1812,7 +1812,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "d8a654f311739f8cb8302eb0cb8c99e9f7db986554069df2eca512a1d6aa0ea6"
+      "receipt_sha256": "df9982a10691820b81005b0bbd9bddeb7a0dbef08869f2a9bdb1ac93ed1ae76b"
     },
     {
       "task_id": "test-wayfinding::post_exit_service_lapses",
@@ -1827,7 +1827,7 @@
       "audit_complete": true,
       "synthetic": true,
       "field_run": false,
-      "receipt_sha256": "4f91e3e9511f11fb812fe5fc107c0b861b0b20cdbcffa5734c62e13a134d8547"
+      "receipt_sha256": "c93a47c80864aea563e82acd1c7fe972d5c5ea5c64c0c6070bab7703778536c0"
     }
   ]
 }
