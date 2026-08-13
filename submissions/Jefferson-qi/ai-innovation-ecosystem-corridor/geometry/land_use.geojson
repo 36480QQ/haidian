@@ -101,7 +101,7 @@
         "layer": "LAND_USE",
         "source_type": "agent_inferred_from_public_data",
         "confidence": "medium",
-        "geometry_role": "design_concept",
+        "geometry_role": "design_proposal",
         "name_zh": "教育科研配套",
         "land_use_type": "education",
         "official_boundary": false
@@ -206,7 +206,7 @@
         "layer": "LAND_USE",
         "source_type": "agent_inferred_from_public_data",
         "confidence": "medium",
-        "geometry_role": "design_concept",
+        "geometry_role": "design_proposal",
         "name_zh": "交通接驳与社区服务",
         "land_use_type": "community_service",
         "official_boundary": false
@@ -371,7 +371,7 @@
         "layer": "LAND_USE",
         "source_type": "agent_inferred_from_public_data",
         "confidence": "medium",
-        "geometry_role": "design_concept",
+        "geometry_role": "design_proposal",
         "name_zh": "京张遗址公园绿廊",
         "land_use_type": "green_space",
         "official_boundary": false
@@ -556,7 +556,7 @@
         "layer": "LAND_USE",
         "source_type": "agent_inferred_from_public_data",
         "confidence": "medium",
-        "geometry_role": "design_concept",
+        "geometry_role": "design_proposal",
         "name_zh": "文化展示与公共空间",
         "land_use_type": "cultural",
         "official_boundary": false
@@ -661,7 +661,7 @@
         "layer": "LAND_USE",
         "source_type": "agent_inferred_from_public_data",
         "confidence": "medium",
-        "geometry_role": "design_concept",
+        "geometry_role": "design_proposal",
         "name_zh": "AI研发与孵化",
         "land_use_type": "ai_r_and_d",
         "official_boundary": false
@@ -766,7 +766,7 @@
         "layer": "LAND_USE",
         "source_type": "agent_inferred_from_public_data",
         "confidence": "medium",
-        "geometry_role": "design_concept",
+        "geometry_role": "design_proposal",
         "name_zh": "实验室与加速器",
         "land_use_type": "lab",
         "official_boundary": false
@@ -871,7 +871,7 @@
         "layer": "LAND_USE",
         "source_type": "agent_inferred_from_public_data",
         "confidence": "medium",
-        "geometry_role": "design_concept",
+        "geometry_role": "design_proposal",
         "name_zh": "AI混合功能核心",
         "land_use_type": "mixed_use",
         "official_boundary": false
@@ -976,7 +976,7 @@
         "layer": "LAND_USE",
         "source_type": "agent_inferred_from_public_data",
         "confidence": "medium",
-        "geometry_role": "design_concept",
+        "geometry_role": "design_proposal",
         "name_zh": "人才公寓与社区",
         "land_use_type": "talent_apartment",
         "official_boundary": false
@@ -1081,7 +1081,7 @@
         "layer": "LAND_USE",
         "source_type": "agent_inferred_from_public_data",
         "confidence": "medium",
-        "geometry_role": "design_concept",
+        "geometry_role": "design_proposal",
         "name_zh": "AI产业办公",
         "land_use_type": "office",
         "official_boundary": false
@@ -1186,7 +1186,7 @@
         "layer": "LAND_USE",
         "source_type": "agent_inferred_from_public_data",
         "confidence": "medium",
-        "geometry_role": "design_concept",
+        "geometry_role": "design_proposal",
         "name_zh": "智能商业服务",
         "land_use_type": "retail",
         "official_boundary": false
@@ -1766,7 +1766,11 @@
         "land_use_type": "uncategorized",
         "land_use_type_zh": "未分类用地",
         "description": "Remaining site area",
-        "geometry_role": "design_proposal"
+        "geometry_role": "design_proposal",
+        "id": "LU-011",
+        "layer": "LAND_USE",
+        "source_type": "agent_inferred_from_public_data",
+        "confidence": "medium"
       }
     }
   ]
