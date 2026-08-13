@@ -6,8 +6,8 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-iteration: "1.0.0"
-summary: "以京张铁路“人字形”展线为空间母题，提出“京张人字线 · 智脉共生带”总体概念：一条南北主脊（京张遗址公园AI创新中轴）、两翼（中关村科技服务翼、小月河场景赋能翼）、三处重点区（众智园·AI原点社区·大钟寺）、三处朝圣地标与12张AI场景卡。全部几何基于 provisional boundary 生成并在 EPSG:4548 下复算，指标可追溯、官方数据发布后整包重算。"
+iteration: "1.1.0-v3-jury-edition"
+summary: "以京张铁路“人字形”展线为空间母题，提出“京张人字线 · 智脉共生带”总体概念：一条南北主脊、两翼、三处重点区、三处朝圣地标与12张AI场景卡。V3 增设独立评委首读册、遗产—服务—治理四重规则、概念性慢行锚点、AI 场景驿站服务蓝图、包容性用户旅程与可退出决策门。全部几何基于 provisional boundary 生成并在 EPSG:4548 下复算；数字服务不接入真实个人数据，正式资料发布后整包重算。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
@@ -157,6 +157,16 @@ AI+ 场景围绕公告提出的交通、服务、消费、医疗、教育、法�
 
 AI 场景卡与画像共 12 张与 5 类 [metric:scenario_card_count] [metric:persona_count]，全部进入结构化图层或合规矩阵，便于评审者看到它们与产业、空间和公共利益之间的关系。agent 生成的 AI 治理建议遵守数据最小化、公开来源、可解释和人工复核原则：城市智能体可辅助识别慢行断点、公共空间热力、设施维护、企业服务需求和活动安全风险，但不能替代规划审批、不能输出未经授权的个人画像、不能声称获得官方实施承诺 [depth:risk_missing_data] [source:AGENT-TASKBOOK]。
 
+### V3 评委首读规则：遗产—服务—治理四重转换
+
+V3 将“京张人字线”从视觉母题进一步转译为可审查的公共服务规则：任何被称为 AI 公共服务节点的空间，均须同时给出 **遗产解释、非数字替代、最小数据与人工责任** 四项条件。遗产解释优先于装饰性科技符号；纸质导览、静态标识和人工咨询保证不使用数字设备的访客仍能获得基本信息；任何数字功能仅处理达到目的所必需的非个人化输入；现场人员、专业责任和法定标识优先于算法建议。缺少其中任一条件时，节点只应作为一般公共空间讨论，不应被包装为“已部署的智慧场景”。
+
+![遗产—服务—治理四重转换规则](assets/figures/jury-transformation-rule.png)
+
+V3 的主场景是“遗址慢行导航与 AI 场景驿站”的低风险概念原型，而非自动驾驶、公共监控或真实数据系统。访客可在纸质卡、双语导视、人工咨询或可选数字界面之间选择“少台阶、遮荫、历史解释、亲子休息”等导览偏好；数字建议只可读取经人工核验的公共设施状态，不能采集人脸、身份或连续个人轨迹。临时封闭、安全提示与路线开放均由人员和现场标识最终确认；数据过期、投诉异常或安全事件发生时，数字建议必须关闭，并回退为静态导视、人工咨询和现场巡查。该场景只定义服务和治理边界，不声称准确率、响应时间、真实采集能力或已经获批的部署状态 [depth:risk_missing_data]。
+
+![AI 场景驿站服务蓝图与人工兜底](assets/figures/jury-service-blueprint.png)
+
 ## 总体设计范围城市更新与控规深度城市设计
 
 总体设计范围要求达到控制性详细规划的城市设计深度 [standard:MOHURD-CONTROL-DETAILED-PLANNING]。方案提出城市更新总体空间结构、低效空间识别、更新项目清单、实施政策建议、产业功能比例、空间组织模式、建筑总规模和综合承载能力评估。`geometry/land_use.geojson` 完整覆盖设计边界且无缝隙 [data:geometry/land_use.geojson#LU-0701-0] [depth:land_use_layout]，`geometry/buildings.geojson` 表达 104 幢概念建筑基底 [data:geometry/buildings.geojson#BLDG-001] [metric:building_footprint_area_sqm]，`geometry/roads.geojson` 表达微循环、慢行与轨道接驳关系 [data:geometry/roads.geojson#ROAD-001] [metric:road_centerline_length_m]，`metrics.json` 复算核心面积与比例 [depth:metrics_recalculation]。
@@ -248,6 +258,16 @@ AI 场景卡与画像共 12 张与 5 类 [metric:scenario_card_count] [metric:pe
 
 城市风貌以“百年京张与 AI 未来共生”为主题：保留遗址公园与轨道历史意象，鼓励研发与创新建筑采用人字线屋顶与轨道肌理母题，控制临轨、临水与遗址界面高度与退线，营造“看得见铁轨、记得住历史、感受得到未来”的场所氛围 [depth:height_massing_character] [depth:overall_spatial_structure]。风貌控制细则（色彩、材质、屋顶形式、店招与夜景）作为待深化设计指引提出，具体以正式城市设计与控规条件为准；涉及历史建筑与文保单位处，方案仅表达“保留与活化”意向，不改变其保护要求 [data:geometry/constraints.geojson#CONSTRAINT-HERITAGE] [depth:risk_missing_data]。
 
+### V3 概念性遗址慢行锚点与用户旅程
+
+为使总体策略能够接受独立评审，V3 从主脊中抽取一段 **约 800 m 的概念性工作带**，而不是新增法定线位、产权界线或工程放样。工作带以北端“历史解释/人工咨询”、中段“遮荫/无障碍休息”、南端“场景驿站/回退导视”三类节点演示空间—服务—治理的最小闭环。它必须先经空间/文保、数据、运营和公众四类条件复核，才可能进入后续专业论证；在任何条件缺失时，方案只保留纸质导览和人工服务建议 [data:geometry/green_space.geojson#GREEN-G_SPINE-0] [depth:blue_green_public_space]。
+
+![约 800 m 概念性遗址慢行锚点](assets/figures/jury-corridor-anchor.png)
+
+包容性不以抽象人群标签结束，而以可完成的服务旅程检验。老年使用者应可在不使用手机的情况下获得大字版路线、坐席和人工指引；视障或行动不便者应能识别连续无障碍路径、替代路线和风险提示；数字排斥使用者拒绝任何数据输入后，仍应获得与数字用户不劣的基本信息。上述是待共创和专业无障碍核验的设计假设，并不替代现场测试或法定设施验收 [depth:blue_green_public_space]。
+
+![三类包容性用户旅程与非数字回退](assets/figures/jury-user-journeys.png)
+
 ## 更新项目清单、实施政策与分期计划
 
 更新项目清单以 8 个更新项目为载体，覆盖三处重点区与主脊关键节点，包括众智园产业提质、原点社区缝合更新、大钟寺站城一体化、遗址公园贯通、清河滨水更新、小月河场景节点、主脊慢行贯通与社区服务补短板 [metric:renewal_project_count] [depth:renewal_project_list]。每个项目说明更新目标、空间范围、功能业态与实施依赖，并映射到 `geometry/phasing.geojson` 的分期图层 [data:geometry/phasing.geojson#PHASE-001] [data:geometry/phasing.geojson#PHASE-002] [data:geometry/phasing.geojson#PHASE-003]；分期面积由指标核对 [metric:phasing_area_sqm]，深度项见 [depth:phasing_implementation]。
@@ -268,6 +288,12 @@ AI 场景卡与画像共 12 张与 5 类 [metric:scenario_card_count] [metric:pe
 | 品牌资产治理 | 季度资产盘点、年度使用审计与可访问性检查；统一 Logo、色彩、语调和来源标注。 | 资产权利人、许可期限、翻译责任、合作方使用范围和撤回机制均需登记。 | 允许授权合作方在明确范围内使用概念标识；未经书面授权不得衍生注册、商业背书或数据营销。 |
 
 包容性设计方面，公共空间强调全龄友好与无障碍：儿童活动空间沿主脊慢行系统设置安全游乐节点，配置适龄设施与监护视线；老年服务设施在社区级公共服务中嵌入日间照料、健康监测与慢行辅助，站点周边设置无障碍坡道与休息座椅；残障人士通道覆盖全脊慢行系统，配置盲道、语音导航与无障碍卫生间；数字困难群体保留人工服务窗口、纸质导览与现场咨询，不依赖智能设备作为唯一服务渠道；照护者空间在公共节点设置哺乳室与亲子卫生间。上述需求以设计假设形式提出，待本地调查与公开统计数据验证 [depth:blue_green_public_space] [metric:public_space_ratio]。
+
+### V3 决策门：可暂停、可复盘、可退出
+
+V3 不把分期写成线性的“落地承诺”，而采用四道决策门和三阶段建议。空间/文保门要求正式范围、文保影响、轨道安全、消防和无障碍条件；数据门要求公共设施状态来源、目的限定、控制责任与保留期限；运营门要求值守、维护、投诉响应和无障碍复核；公众门要求与老年、残障及数字排斥使用者共同检验。责任均以“规划/文保/交通/无障碍专业复核”“数据控制与安全复核”“场地运营与社区服务”等类型表达，避免虚构已确认合作方。没有任一门的证据时，不得进入施工、真实数据采集或对外试点；应暂停、回到纸质和人工服务，或在补证后重新讨论 [depth:phasing_implementation] [depth:risk_missing_data]。
+
+![概念到试点的四道决策门](assets/figures/jury-decision-gates.png)
 
 ## 指标体系、面积复算与合规矩阵
 
@@ -294,6 +320,14 @@ AI 场景卡与画像共 12 张与 5 类 [metric:scenario_card_count] [metric:pe
 实施与机制类深度项包括交通市政与更新项目 [depth:traffic_rail_slow_parking] [depth:municipal_new_infrastructure] [depth:renewal_project_list]，分期实施见 [depth:phasing_implementation]；指标复算与数据缺口分别在对应章节核对 [depth:metrics_recalculation] [depth:risk_missing_data]。
 
 ![指标证据链图](assets/figures/metrics-evidence.png)
+
+### V3 首读册与评审导航
+
+V3 新增中英文各 12 页的评委首读册：[`drawings/jury-booklet.pdf`](drawings/jury-booklet.pdf) 与 [`drawings/jury-booklet.en.pdf`](drawings/jury-booklet.en.pdf)。首读册并不替代原有 A0 展板、A3 技术文册、HTML、GeoJSON、指标表和矩阵；其作用是以“总判断—转换规则—最小锚点—服务蓝图—用户旅程—实施门—指标边界—下一步”的顺序，使评审者在独立阅读时能够回溯每一类判断。首读册中的所有图形都由包内几何、指标、原创概念图形和已登记的 VI 资产离线生成，不加载在线底图、地图瓦片、第三方照片、企业标识或音视频素材。
+
+![V3 可复算事实与不可主张未知值仪表盘](assets/figures/jury-evidence-dashboard.png)
+
+指标中可复算的场地面积、重点区面积、绿地率、公共空间占比、道路长度和结构化数量，仍以 V2 的 `metrics.json` 与 EPSG:4548 图层为唯一依据 [metric:site_area_sqm]。容积率、建筑高度、密度、产权、法定道路红线和现场服务性能仍保持 `unknown` 或待核验状态 [metric:floor_area_ratio] [metric:building_height_m] [metric:building_density]。正式 polygon、控规、权属、专项或现场资料到位后，必须依次重算 geometry、metrics、图件、HTML/PDF、SHA-256 与四门自检，不能只在首读册或正文内替换单个数字。
 
 ## 风险、版权与合规说明
 

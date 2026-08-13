@@ -6,7 +6,8 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "Using the 'Z-shaped' zigzag alignment of the Jing-Zhang Railway as a spatial motif, the proposal presents 'Jing-Zhang Ren-Line: Smart Growth Belt': one north-south spine (Jing-Zhang Heritage Park AI Innovation Axis), two wings (Zhongguancun Technology Services Wing, Xiaoyue River Scenario Enablement Wing), three key areas (Zhongzhi Park, AI Origin Community, Dazhongsi), three pilgrimage landmarks, and 12 AI scenario cards. All geometry derives from the provisional boundary and is recalculated in EPSG:4548; metrics are traceable and will be fully recomputed once official data is published."
+iteration: "1.1.0-v3-jury-edition"
+summary: "Using the Jing-Zhang Railway herringbone alignment as a spatial motif, the proposal presents one north-south spine, two wings, three key areas, three pilgrimage landmarks, and 12 AI scenario cards. V3 adds an independent jury first-read booklet, a four-part heritage–service–governance rule, a conceptual active-travel anchor, an AI scenario-station service blueprint, inclusive user journeys, and exit-ready decision gates. All geometry derives from the provisional boundary and is recalculated in EPSG:4548; digital service uses no real personal data, and the full package is recomputed when formal data are published."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
@@ -69,6 +70,16 @@ London, Qianhai, and Shibuya are likewise verifiable mechanism comparisons. The 
 | Tokyo Shibuya Stream | Tokyo Convention & Visitors Bureau; 2025-12-11. | Former-railway redevelopment linked with river promenade, squares, and mixed-use facilities. | Page images carry copyright; no images, marks, or drawings reproduced. |
 
 Applicability is this proposal's original interpretation of mechanisms. It requires revalidation against Haidian's official boundaries, regulations, property rights, public engagement, and professional advice [depth:existing_conditions_diagnosis] [depth:risk_missing_data].
+
+### V3 Jury First-Read Rule: Four-Part Heritage–Service–Governance Transformation
+
+V3 translates the Jing-Zhang Ren-Line from a visual motif into a reviewable public-service rule. Every place described as an AI public-service node must jointly provide **heritage meaning, non-digital parity, minimum data, and human accountability**. Heritage meaning takes priority over decorative technology; paper guides, static signs, and human assistance keep basic information available to visitors who do not use digital tools; any digital function handles only non-personal input necessary for its purpose; and site staff, professional responsibility, and statutory signs prevail over algorithmic advice. If any one condition is absent, the place remains ordinary public space and must not be packaged as a deployed smart scenario.
+
+![Four-part heritage–service–governance transformation rule](assets/figures/jury-transformation-rule.en.png)
+
+The V3 primary scenario is a low-risk conceptual prototype for heritage-walk guidance and an AI scenario station—not autonomous driving, public surveillance, or a real-data system. Visitors may use a paper card, bilingual signs, human assistance, or an optional digital interface to select guidance preferences such as fewer steps, shade, heritage interpretation, or family rest. Digital advice may only read human-verified public-facility status; it must not collect face data, identity, or continuous personal routes. Staff and site signs make final calls on temporary closure, safety messages, and route opening. Stale data, anomalous complaints, or safety incidents require digital advice to switch off and fall back to static signs, human assistance, and site checks. This scenario defines service and governance boundaries only; it makes no claim of accuracy, response time, real collection capability, or approved deployment [depth:risk_missing_data].
+
+![AI scenario station service blueprint and human fallback](assets/figures/jury-service-blueprint.en.png)
 
 ## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
 
@@ -146,6 +157,16 @@ The heritage-resource system follows six steps: identify, grade, protect, adapti
 
 Urban character is themed as century-old Jing-Zhang coexisting with the AI future: heritage park and railway imagery are retained, innovation buildings are encouraged to adopt the Ren-Line roof and railway-motif language, and height and setback controls near rail, water, and heritage interfaces are managed to create a place where rails remain visible, history is remembered, and the future can be felt [depth:height_massing_character] [depth:overall_spatial_structure]. Character controls (color, material, roof form, signage, nightscape) are proposed as design guidance to be deepened under formal urban design and regulatory conditions; at heritage-protection locations the proposal only expresses retain-and-revitalize intention without altering protection requirements [data:geometry/constraints.geojson#CONSTRAINT-HERITAGE] [depth:risk_missing_data].
 
+### V3 Concept Heritage-Walk Anchor and User Journeys
+
+To make the overall strategy independently reviewable, V3 selects an **approximately 800 m conceptual working strip** from the spine rather than adding a statutory alignment, property line, or construction set-out. North heritage interpretation/human help, middle shade/accessible rest, and south scenario station/fallback signs demonstrate a minimum space–service–governance loop. The working strip can only move to further professional analysis after space/heritage, data, operations, and public conditions have been reviewed; if any condition is absent, only paper guidance and human-service recommendations remain [data:geometry/green_space.geojson#GREEN-G_SPINE-0] [depth:blue_green_public_space].
+
+![Approximate 800 m conceptual heritage-walk anchor](assets/figures/jury-corridor-anchor.en.png)
+
+Inclusion does not stop at abstract user labels; it is tested through a service journey that can be completed. An older visitor should obtain a large-print route, seating, and human guidance without a phone. A blind or mobility-limited visitor should be able to identify a continuous accessible route, alternatives, and risk notices. A digitally excluded visitor who declines all data entry should still receive basic information that is no worse than the information available to a digital user. These are design assumptions awaiting co-design and professional accessibility review; they do not replace field tests or statutory facility acceptance [depth:blue_green_public_space].
+
+![Three inclusive user journeys and non-digital fallback](assets/figures/jury-user-journeys.en.png)
+
 ## Renewal Projects, Implementation Policy, and Phasing
 
 The renewal project list carries 8 projects covering the three key areas and spine nodes, including Zhongzhi industrial upgrading, Origin Community stitching renewal, Dazhongsi station-city integration, Heritage Park connection, Qinghe waterfront renewal, Xiaoyue River scenario nodes, spine slow-traffic connection, and community service gap-filling [metric:renewal_project_count] [depth:renewal_project_list]. Each project states its renewal goal, scope, functional mix, and implementation dependencies, mapped to `geometry/phasing.geojson` phases [data:geometry/phasing.geojson#PHASE-001] [data:geometry/phasing.geojson#PHASE-002] [data:geometry/phasing.geojson#PHASE-003]; phasing area is checked by [metric:phasing_area_sqm], with depth in [depth:phasing_implementation].
@@ -160,6 +181,12 @@ The annual activity, developer community, and brand assets follow a proposed pub
 | Developer community | Monthly technical exchange, quarterly open-source maintenance day, and annual public-problem challenge. | Open-source licence, IP ownership, code of conduct, and youth protection; personal data are minimized. | Reusable tools, open-source contributions, and problem validation form portfolios; authorized entities may then connect incubation, training, or procurement. |
 | Open scenario operation | Five steps: submit, risk-screen, small sandbox, independent review, expand or exit. | Data classification, purpose limitation, human review, public complaint channel, cyber security, and procurement/approval prerequisites. | Only prototypes that pass safety, public-interest, and feasibility review proceed to further professional analysis. |
 | Brand-asset governance | Quarterly asset inventory; annual use audit and accessibility check; common logo, palette, tone, and source acknowledgement. | Asset owner, licence period, translation responsibility, partner scope, and withdrawal mechanism are registered. | Authorized partners may use the concept identity within a clear scope; no derivative registration, commercial endorsement, or data marketing without written authorization. |
+
+### V3 Decision Gates: Pausable, Reviewable, Exit-Ready
+
+V3 does not frame phasing as a linear delivery promise. It uses four gates and a three-stage recommendation. The space/heritage gate requires formal extent, heritage impact, rail safety, fire, and accessibility conditions. The data gate requires a public-facility source, purpose limitation, control responsibility, and retention period. The operations gate requires staffing, upkeep, complaint response, and access review. The public gate requires review with older, disabled, and digitally excluded users. Responsibilities are expressed as types—planning/heritage/transport/access review, data-control and security review, or venue operation and community service—rather than invented confirmed partners. Without evidence at any gate, the proposal must not proceed to construction, real-data collection, or public piloting; it pauses, restores paper and human service, or returns for evidence completion [depth:phasing_implementation] [depth:risk_missing_data].
+
+![Four decision gates from concept to pilot](assets/figures/jury-decision-gates.en.png)
 
 ## Metrics, Area Recalculation, and Compliance Matrix
 
@@ -182,6 +209,14 @@ Area recalculation follows a provisional-boundary-first, official-data-priority-
 Compliance mapping is kept in `compliance_matrix.json`, mapping every requirement under announcement items 1.3.1-1.5.3 and agent.1-agent.6 to section, layer, metric, drawing, and HTML evidence [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [standard:MOHURD-URBAN-DESIGN-MEASURES] [standard:MOHURD-CONTROL-DETAILED-PLANNING]; professional standards and depth regulation are [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [standard:MOHURD-ARCH-DESIGN-DEPTH-2016], with recalculation and data gaps covered by [depth:metrics_recalculation] [depth:risk_missing_data]. Design depth is recorded in `design_depth_matrix.json` across spatial and functional depth items including diagnosis, three-level framework, and overall structure [depth:existing_conditions_diagnosis] [depth:three_level_scope_framework] [depth:overall_spatial_structure]; land use is [depth:land_use_layout]; intensity and massing are [depth:development_intensity_controls] [depth:height_massing_character], retain/renovate/demolish and blue-green public space are [depth:retain_renovate_demolish] [depth:blue_green_public_space], plus [depth:three_key_area_detailed_design], and across implementation and mechanism items including transport, municipal, and renewal projects [depth:traffic_rail_slow_parking] [depth:municipal_new_infrastructure] [depth:renewal_project_list]; phasing is [depth:phasing_implementation], and data gaps are covered in the risks section [depth:risk_missing_data].
 
 ![Metrics evidence chain](assets/figures/metrics-evidence.png)
+
+### V3 First-Read Booklet and Review Navigation
+
+V3 adds a 12-page jury first-read booklet in each language: [`drawings/jury-booklet.pdf`](drawings/jury-booklet.pdf) and [`drawings/jury-booklet.en.pdf`](drawings/jury-booklet.en.pdf). The first-read booklets do not replace the existing A0 boards, A3 technical booklets, HTML, GeoJSON, metrics, or matrices. Their purpose is to sequence the core judgement, transformation rule, minimum anchor, service blueprint, user journeys, implementation gates, metric boundary, and next steps so an independent reader can trace each type of claim. All booklet graphics are generated offline from package geometry, metrics, original conceptual graphics, and registered identity assets. They load no online basemap, map tile, third-party photograph, enterprise mark, or audiovisual material.
+
+![V3 dashboard of recomputable facts and non-claimable unknowns](assets/figures/jury-evidence-dashboard.en.png)
+
+Recomputable site area, key-area area, green share, public-space share, road length, and structured counts remain grounded solely in V2 `metrics.json` and EPSG:4548 layers [metric:site_area_sqm]. FAR, building height, density, property/tenure, statutory road lines, and field-service performance remain `unknown` or pending verification [metric:floor_area_ratio] [metric:building_height_m] [metric:building_density]. When formal polygons, regulatory controls, tenure, specialist, or field material become available, geometry, metrics, figures, HTML/PDF, SHA-256, and all four self-check gates must be recomputed in sequence; a single number in the booklet or proposal must never be swapped in isolation.
 
 ## Risk, Copyright, and Compliance
 
