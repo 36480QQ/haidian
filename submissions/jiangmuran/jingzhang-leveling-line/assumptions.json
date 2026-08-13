@@ -284,6 +284,27 @@
       "affects_metric_count": 0,
       "carries_no_metric_note_zh": "**本包没有任何已发布的数字建立在这条假设上。** 这不是疏漏，是这条假设的性质：它若失效，`metrics.json` 里不会有任何一个值改变，因此**任何对数字的检查都抓不到它**。上面的 `if_wrong_zh` 说明了失效会长什么样；能发现它的只有外部判断，不是本包的闸门。把它单列并写明这一点，是本方案能对它做的全部。",
       "carries_no_metric_note_en": "**No published number in this package rests on this assumption.** That is not an oversight but the nature of it: if it fails, no value in `metrics.json` changes, so **no check on the numbers can catch it**. `if_wrong_zh` above says what failure would look like; only outside judgement can detect it, not this package's gates. Listing it separately and saying so is the whole of what this proposal can do about it."
+    },
+    {
+      "id": "A-DEVICE-002",
+      "status": "chosen_by_this_proposal",
+      "statement": "FIG.26 的停止距离 2.59 m 由 FIG.24 的场地速度 ≤ 6 km/h 算出，其中反应时间 1.0 s 与减速度 1.5 m/s² 两项由本方案自定，未取得低速设备制动性能的可核来源。",
+      "impact": "停止距离决定观测前沿前方必须留空的地面长度。取小了，场景在前沿末端停不住；取大了，前沿前方多留一段无法他用的地面。",
+      "derivation_zh": "停止距离 = 反应段 + 减速段 = v·t + v²/(2a)，v 取 FIG.24 已定的 6 km/h = 1.667 m/s，t = 1.0 s，a = 1.5 m/s²，得 1.67 + 0.93 = **2.59 m**。**v 有出处（地方管理规定，FIG.24 已登记），t 与 a 没有**：1.0 s 取一般人机反应量级，1.5 m/s² 取载物设备的舒适减速度。两项都写着理由，而理由不是来源。公式随图公布，换一组取值即可重算。",
+      "derivation_en": "Halt distance = reaction + braking = v·t + v²/(2a), with v the 6 km/h = 1.667 m/s FIG.24 already fixes, t = 1.0 s and a = 1.5 m/s², giving 1.67 + 0.93 = **2.59 m**. **v has a source — local regulation, registered with FIG.24 — and t and a do not**: one second is the order of a human reaction, 1.5 m/s² a comfortable deceleration for a loaded device. Both carry reasoning, and reasoning is not a source. The formula ships with the sheet, so substituting your own figures recomputes the ground.",
+      "if_wrong_zh": "**取小了的后果落在人身上**：场景在观测前沿末端停不住，而前沿末端之后正是本图允许设置固定物与等候区的地方。取大了只是多留一段无法他用的地面。**误差不对称，因此这段距离按上限取而不是按典型值取**——与 A-GEOTECH-001 的冻深写成下限是同一条纪律。",
+      "if_wrong_en": "**Too small and the cost lands on a person**: the scenario fails to stop at the end of the observed frontage, which is exactly where this sheet permits fixed objects and waiting areas to begin. Too large only reserves ground that could have been used for something else. **The error is asymmetric, so the distance is taken at a bound rather than at a typical value** — the same discipline as writing the frost depth as a lower bound in A-GEOTECH-001.",
+      "what_would_close_it_zh": "取得拟接入设备类型的制动性能数据，或地方对低速设备制动距离的规定。",
+      "what_would_close_it_en": "Obtain braking-performance data for the device types intended here, or local rules on stopping distance for low-speed devices.",
+      "owner": "participant",
+      "next_action_zh": "本包缺口：取得低速设备制动性能数据或地方制动距离规定；在此之前 2.59 m 按上限取值，且不得写成规范值。",
+      "next_action_en": "This package's gap: obtain braking-performance data or a local stopping-distance rule. Until then 2.59 m is taken at a bound, and is never written up as a standard.",
+      "owner_means_zh": "本方案自己能关、或每次构建都在关",
+      "owner_means_en": "this package can close it, or closes it on every build",
+      "affects_metrics": [],
+      "affects_metric_count": 0,
+      "carries_no_metric_note_zh": "**本包没有任何已发布的数字建立在这条假设上。** 这不是疏漏，是这条假设的性质：它若失效，`metrics.json` 里不会有任何一个值改变，因此**任何对数字的检查都抓不到它**。上面的 `if_wrong_zh` 说明了失效会长什么样；能发现它的只有外部判断，不是本包的闸门。把它单列并写明这一点，是本方案能对它做的全部。",
+      "carries_no_metric_note_en": "**No published number in this package rests on this assumption.** That is not an oversight but the nature of it: if it fails, no value in `metrics.json` changes, so **no check on the numbers can catch it**. `if_wrong_zh` above says what failure would look like; only outside judgement can detect it, not this package's gates. Listing it separately and saying so is the whole of what this proposal can do about it."
     }
   ],
   "note_zh": "**本文件是评审模型整份读取的九个文件之一，而 `geometry/` 与 `visual/assets/` 不是**（见 `scripts/review_submission.py::build_review_input`）。因此每条假设除了陈述，还写出：`derivation_zh`——这个读数实际是怎么得出的；`if_wrong_zh`——如果它错了，本方案的哪个结论会变、哪个不会；`what_would_close_it_zh`——什么能让它不再是假设；以及 `affects_metrics`——**由 metrics.json 的 assumption_ids 反向索引算出**，使读这份文件的人能看出每条假设承载了多少个数字。一条没有写出后果的假设是免责声明，不是假设。",
@@ -293,9 +314,9 @@
     "not_applicable": 1,
     "operator_after_award": 2,
     "organizer": 3,
-    "participant": 4,
+    "participant": 5,
     "permanently_open": 1
   },
-  "ownership_note_zh": "**每条假设除了「什么能关闭它」，还写明「谁能关闭它」。** 一份只说条件不说责任的登记表，会把两种情况混成一种：本方案还没做的，和本方案做不了的。本册 12 条的归属为 mixed 1、not_applicable 1、operator_after_award 2、organizer 3、participant 4、permanently_open 1。仓库的评审脚本只把以 `组织方：`／`主办方：` 开头的动作视为外部所有，其余一律 fail-closed 归还参与方（`is_organizer_owned_action`）；本包因此只在三条确属主管部门发布的项上使用该前缀，**A-CONTROLS-001 拆开写而不整条认领，A-LIGHTING-001 记为本方案自己的欠缺**——没拿到一份已公开的标准，不是别人的问题。",
-  "ownership_note_en": "**Each assumption states who can close it, not only what would close it.** A register that gives the condition but not the responsibility merges two different things: what this package has not done, and what this package cannot do. Across 12 records the split is mixed 1, not_applicable 1, operator_after_award 2, organizer 3, participant 4, permanently_open 1. The repository's review script treats an action as externally owned only when it begins `组织方：`/`主办方：` and returns everything else fail-closed to the participant (`is_organizer_owned_action`), so that prefix is used here for the three items that are genuinely an authority's publication and for nothing else — **A-CONTROLS-001 is split rather than claimed whole, and A-LIGHTING-001 is booked as this package's own shortfall**, because not having obtained a published standard is nobody else's fault."
+  "ownership_note_zh": "**每条假设除了「什么能关闭它」，还写明「谁能关闭它」。** 一份只说条件不说责任的登记表，会把两种情况混成一种：本方案还没做的，和本方案做不了的。本册 13 条的归属为 mixed 1、not_applicable 1、operator_after_award 2、organizer 3、participant 5、permanently_open 1。仓库的评审脚本只把以 `组织方：`／`主办方：` 开头的动作视为外部所有，其余一律 fail-closed 归还参与方（`is_organizer_owned_action`）；本包因此只在三条确属主管部门发布的项上使用该前缀，**A-CONTROLS-001 拆开写而不整条认领，A-LIGHTING-001 记为本方案自己的欠缺**——没拿到一份已公开的标准，不是别人的问题。",
+  "ownership_note_en": "**Each assumption states who can close it, not only what would close it.** A register that gives the condition but not the responsibility merges two different things: what this package has not done, and what this package cannot do. Across 13 records the split is mixed 1, not_applicable 1, operator_after_award 2, organizer 3, participant 5, permanently_open 1. The repository's review script treats an action as externally owned only when it begins `组织方：`/`主办方：` and returns everything else fail-closed to the participant (`is_organizer_owned_action`), so that prefix is used here for the three items that are genuinely an authority's publication and for nothing else — **A-CONTROLS-001 is split rather than claimed whole, and A-LIGHTING-001 is booked as this package's own shortfall**, because not having obtained a published standard is nobody else's fault."
 }
