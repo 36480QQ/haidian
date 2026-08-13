@@ -1,5 +1,5 @@
 ---
-title: "AI Pilgrimage · Rail Rebirth Belt — Jing-Zhang Auditable Scenario Line"
+title: "Twin-Track Jing-Zhang — Continuous Civic Track and Intermittent Proof Track"
 author_github: "xyh202131"
 language: "en"
 translation_of: "proposal.md"
@@ -10,25 +10,33 @@ summary: "Use a continuous civic track and an intermittent proof track as the fr
 tracks:
   - ai-traffic-walkability
   - jingzhang-heritage-narrative
-  - ai-origin-community
-  - public-interest-ai-governance
+  - civic-agent-governance
 scenarios:
   - ai-cultural-guide
-  - accessibility-route-assistant
-  - slow-mobility-crowding
-  - robot-delivery-sandbox
+  - ai-health-service-navigation
+  - ai-traffic-walkability
   - enterprise-service-copilot
-  - open-source-collaboration
-  - public-space-energy
-  - community-health-navigation
-  - education-workshop
-  - safety-human-review
+  - public-safety-operations-review
+  - robot-delivery-low-speed
 ---
 
-# AI Pilgrimage · Rail Rebirth Belt
+# Twin-Track Jing-Zhang
 
-- English name: Jing-Zhang AI Pilgrimage & Proof Line
+- Chinese name: 双轨京张
 - Core system: JZ-AIOS (Jing-Zhang Auditable Innovation Operating System)
+
+> **One judgement:** the continuous civic track first lets anyone complete an ordinary task without registration, QR code, or AI. The intermittent proof track is then added beside it as a voluntary, announced, bounded, stoppable, and removable overlay. Three switchyards handle co-creation, verification, and publication; the failure siding handles stop, staffed takeover, and place restoration; the civic timetable states what is possible now. JZ-AIOS, G0–G3, evidence gates, and rights boundaries remain the back-stage governance kernel.
+
+![Twin-Track Jing-Zhang: continuous civic track, intermittent proof track, three switchyards, failure siding, four states, and civic timetable; G0 concept, provisional geometry, not to scale](assets/figures/site-overview.en.png)
+
+| First jury question | Reviewable answer now | Reality boundary |
+|---|---|---|
+| Does ordinary life work first? | The continuous civic track, staffed station, screen-free node, complete non-AI task, and legible exit come first. | Accessibility continuity remains design intent pending survey and co-testing; completed field checks are 0. |
+| Are the three places genuinely different? | Zhongzhiyuan is an equipment-isolated parallel proof court; Origin is one street, two courts, and four nodes; Dazhongsi is four-quadrant commuting plus one hall and one desk. | All three are conceptual relationships inside provisional key areas, not existing buildings, exact locations, or approved renovation. |
+| Does the ordinary task survive failure? | Automation stops first while staffed takeover, non-AI bypass, and exit continue; recovery restores the ordinary route and service before proof can return. | Real incidents, rosters, recovery duration, place acceptance, and restart decisions are 0 or unknown. |
+| What still cannot proceed? | D01–D08 real inputs and H01–H07 professional judgements are unclosed; any major gap remains NO-GO. | Official redline, control plan, rights, specialist constraints, operating duty, budget, and file-level rights clearance are unconfirmed. |
+
+The package retains twelve existing machine-readable scenes, eight projects, and three key areas. The front-matter `scenarios` list now uses the repository’s six current scenario-registry families only as discovery metadata; it deletes, renumbers, and advances no `SCENE-*` object. Chinese and English prose, structured evidence, figures, and the offline entry share one conclusion: **document completeness is not field maturity, and PR merge is not approval.** [assumption:A-JURY-CONVERGENCE-019]
 
 ## Design Basis and Source List
 
@@ -91,7 +99,9 @@ The evidence is organized into four tiers, each limited to a role consistent wit
 The professional response separates standards by question instead of stacking identifiers behind one conclusion:
 
 - The open-call announcement and agent taskbook constrain the project and agent tasks [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
+
 - The urban-design scope and regulatory-planning process boundary are constrained by two housing and urban-rural development references [standard:MOHURD-URBAN-DESIGN-MEASURES] [standard:MOHURD-CONTROL-DETAILED-PLANNING].
+
 - Land-use terminology and the architectural-depth gap are recorded separately; a gap record is not represented as a verified clause [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [standard:MOHURD-ARCH-DESIGN-DEPTH-2016].
 
 Precise red lines, existing buildings, ownership, regulatory-plan indicators, municipal infrastructure, traffic engineering, and heritage controls have not yet been obtained. `geometry/site_boundary.geojson` and the three key areas continue to use provisional repository extents for conceptual review only [data:geometry/site_boundary.geojson#SITE-001] [source:DATA-SRC-PROVISIONAL-BOUNDARIES-20260605]. They must not be used for approval, land acquisition, precise area calculation, or engineering implementation; boundary and control assumptions remain explicit [assumption:A-BOUNDARY-001] [assumption:A-CONTROLS-001].
@@ -122,7 +132,7 @@ The three scope levels address different questions at different levels of precis
 
 ### The Single Core Mechanism
 
-The century-old Jing-Zhang corridor is not a technology corridor on which AI products are placed. It is a public AI innovation production line that transforms urban problems into outcomes that are **co-creatable, verifiable, pausable, reproducible, and deliverable to society**. “AI Pilgrimage” does not mean worshipping technology. It describes a knowledge journey on which the public can “understand history → raise a problem → participate in joint testing → witness failure → leave a credited contribution.” **Proof** in the English name refers simultaneously to spatial evidence, technical verification, and proof of public value.
+The century-old Jing-Zhang corridor is not a technology corridor on which AI products are placed. It is a public AI innovation production line that transforms urban problems into outcomes that are **co-creatable, verifiable, pausable, reproducible, and deliverable to society**. The public may follow a knowledge journey—understand history, raise a problem, join a test, witness failure and leave a credited contribution—but the front-stage spatial judgement remains singular: Twin-Track Jing-Zhang, with the continuous civic track first and the intermittent proof track beside it. **Proof** means spatial evidence, technical verification and proof of public value.
 
 The overall structure evolves from “one spine, three anchors, six interfaces, and multiple nodes” to “one proof line, three state stations, two supply wings, and six urban interfaces.” The three state stations are not three homogeneous parks. Beijing AI Origin Community is responsible for co-creation and public deliberation; Zhongzhiyuan AI Independent Innovation Acceleration Area (Zhongzhiyuan) is responsible for technical, safety, and governance verification; and Dazhongsi is responsible for public release, urban services, and outcome transformation. The Xiaoyue River Scenario Enablement Wing supplies real problems and experiential feedback, while the Zhongguancun Technology Services Wing offers proposed support in intellectual property, compliance, talent, capital, and transformation. Every role assigned to an external organization is a planning recommendation and does not mean that cooperation has been secured [assumption:A-EXTERNAL-COLLAB-005] [depth:overall_spatial_structure].
 
@@ -558,7 +568,7 @@ All area ratios using the provisional boundary as their denominator have `low` c
 - AI and data risk: Bias, hallucination, privacy leakage, unauthorized automation, and vendor lock-in are controlled through data minimization, retention at source, logging, human responsibility, retesting, expiry, and retirement. Automated enforcement, diagnosis, and substitution for formal approval are prohibited.
 - Safety and resilience risk: Robot, vehicle, and equipment testing occurs only within authorized areas. Physical emergency stops, on-site safety officers, offline human operation, and L0/L1/L2 degradation must remain available. Energy and recovery indicators remain unknown until measured.
 - Cultural and historical risk: Historical facts, people, artifacts, and engineering materials require verification through official, archival, or rights-cleared sources. AI-generated content receives explicit and metadata labels; disputed content can be corrected, removed, and traced [assumption:A-CULTURE-CONTENT-006].
-- Copyright and branding risk: The final file set contains 125 manifest paths, including 124 non-manifest content files; its 125 file-level asset records and 50 source-evidence records prove disclosure and link closure only. Coverage completeness becomes valid only after the manifest and rights ledger are refreshed from the final Git blobs and pass validation. Completed independent file-level clearance audits remain at 0 and the overall status is `not_fully_cleared`. `submission-use-rights-matrix.json` now records the current decision for announcement clause 8.1, repository review, organizer project use, entrant external display, cross-project reuse, and third-party components, but the package does not prove that the formal announcement terms apply identically to this GitHub open Agent call. The complete `COMMUNITY-DISPLAY-ONLY` terms, written consent, OSM ODbL obligations, PDF fonts, Node.js runtime and generation-tool terms, and logo/landmark trademark status still require review; the package must not claim full clearance [data:visual/assets/rights-clearance-ledger.json#RIGHTS-01] [data:visual/assets/submission-use-rights-matrix.json#JZ-SUBMISSION-USE-RIGHTS-V1].
+- Copyright and branding risk: The final file set contains 127 manifest paths, including 126 non-manifest content files; its 127 file-level asset records and 50 source-evidence records prove disclosure and link closure only. Coverage completeness becomes valid only after the manifest and rights ledger are refreshed from the final Git blobs and pass validation. Completed independent file-level clearance audits remain at 0 and the overall status is `not_fully_cleared`. `submission-use-rights-matrix.json` now records the current decision for announcement clause 8.1, repository review, organizer project use, entrant external display, cross-project reuse, and third-party components, but the package does not prove that the formal announcement terms apply identically to this GitHub open Agent call. The complete `COMMUNITY-DISPLAY-ONLY` terms, written consent, OSM ODbL obligations, PDF fonts, Node.js runtime and generation-tool terms, and logo/landmark trademark status still require review; the package must not claim full clearance [data:visual/assets/rights-clearance-ledger.json#RIGHTS-01] [data:visual/assets/submission-use-rights-matrix.json#JZ-SUBMISSION-USE-RIGHTS-V1].
 - External-coordination risk: Future Science City, Huairou Science City, the Beijing Economic-Technological Development Area, other innovation districts, and Beijing–Tianjin–Hebei are only optional retest roles. Without written confirmation, none may be described as a partner, investor, or committed implementation party [assumption:A-EXTERNAL-COLLAB-005].
 - Operations and equity risk: Event popularity cannot replace resident satisfaction, accessibility, fairness, or complaint closure. Recognition for contributions must not be used for traffic rankings, employment screening, or administrative evaluation.
 - Tool and evidence risk: Machine checks verify only structure, topology, references, and consistency. They do not replace professional judgment in planning, architecture, transport, municipal engineering, landscape, ecology, fire safety, railway safety, data security, accessibility, community engagement, or law [depth:risk_missing_data].
@@ -638,7 +648,7 @@ Ten cultural metrics remain unknown or 0; field coverage must not be passed off 
 
 Geometry, existing SCENE/JZ/T IDs, eight projects, all G0 status, provisional boundaries, and `not_fully_cleared` remain unchanged. Official archives, confirmed accountable operators, independent retests, approval, or operating results remain 0.
 
-[back to top](#ai-pilgrimage-belt)
+[back to top](#twin-track-jing-zhang)
 ## Mission Economy: Problem-Led Industry and Talent Translation
 
 > This section is the Round 9 (JZ-FUTURE-08) industry-and-talent mechanism increment, inheriting prior public-rights, evidence-type, failure-writeback and century-time-museum contracts; it creates no duplicate "validation-ticket" brand and invents no enterprise, investment, procurement or partnership.
@@ -699,7 +709,7 @@ The bilingual `industry-public-value-state.{svg,png}` industry–public value st
 
 Geometry, existing SCENE/JZ/T IDs, the eight projects, all G0 gates, provisional boundaries and `not_fully_cleared` are unchanged. Responsible roles (publication, entry, retest, stop, recovery) all remain roles-to-be-confirmed; real tasks, small teams, retests, exit events and written confirmations are all 0.
 
-[back to top](#ai-pilgrimage-belt)
+[back to top](#twin-track-jing-zhang)
 
 
 
@@ -723,18 +733,18 @@ Geometry, existing SCENE/JZ/T IDs, the eight projects, all G0 gates, provisional
 
 **Time boundary.** The inherited 22:00–07:00 quiet, low-stimulation and screen-free priority remains an earlier G0 design covenant only. It is not a real opening time, staffed night shift, statutory noise limit, lighting value or operating commitment. Real opening hours, staffed presence, shifts, headcount, backup roles, budget, noise, lighting and footfall remain `unknown` or `not_measured`; the conceptual timetable must not impersonate a confirmed roster.
 
-### One Resident Task across Day / Night / Failure / Recovery
+### One Resident Task across Ordinary / Proof / Failure / Recovery
 
-The same person, start/end and task continue through four windows: a corridor resident enters through an existing public access, follows the ordinary route, reads service status, submits or follows a neighbourhood question, and leaves. This is not a new scene; the exact access and route remain limited by provisional geometry [data:visual/assets/civic-operations-contract.json#resident_four_window_journey].
+The same person, start/end and task continue through four states: a corridor resident enters through an existing public access, follows the ordinary route, reads service status, submits or follows a neighbourhood question, and leaves. Day, night, low-staff and extreme-weather conditions label the states; they do not replace the operating sequence. This is not a new scene; the exact access and route remain limited by provisional geometry [data:visual/assets/civic-operations-contract.json#resident_four_window_journey].
 
-| Window | Path and service | Staffed state | Proof overlay and writeback |
+| State | Path and service | Staffed state | Proof overlay and writeback |
 |---|---|---|---|
-| Day ordinary | Ordinary/accessibility-intent route first; bilingual paper information identifies the same-task non-AI path | Must truthfully show online, offline or unknown; currently unknown | Off by default; any future activation remains voluntary, bounded and separately authorized |
-| Night or low-staff | Ordinary route, safe exit and screen-free information continue; resident quiet takes priority | No invented night shift; offline or unknown state publishes a non-digital next-contact route and never impersonates a person through AI | Off; events, broadcast, screens and proof yield |
-| Failure stop | Proof overlay isolates or exits; resident continues through the ordinary non-AI path or receives a safe refusal when future confirmed staff exist | Stop and handoff remain unconfirmed role types | Scene passport, civic timetable and evidence matrix prepare one conservative same-event writeback |
-| Recovery | Restore ordinary route, screen-free information, quiet conditions and the same basic task first | Restoration acceptance and public-update roles remain unconfirmed; real completions 0 | Stay off until root cause, responsibility, independent retest, place restoration and three-carrier consistency close; G0 and authorization do not auto-advance |
+| S0 Ordinary | Ordinary/accessibility-intent route first; bilingual paper information identifies the same-task non-AI path. At night or under low staffing, safe exit, screen-free information and resident quiet still take priority | Must truthfully show online, offline or unknown; currently unknown, with no invented night shift | Off by default; events, broadcast, screens and proof yield to ordinary life |
+| S1 Proof / optional aid | The same ordinary task and non-AI control path continue while proof appears only in a bounded side zone | Future responsible, takeover and stop roles must be confirmed before showing staffed presence | Voluntary, announced, withdrawable and separately authorized; prepare the same event for three-carrier writeback |
+| S2 Failure / stop | Proof overlay isolates or exits; resident continues through the ordinary non-AI path or receives a safe refusal when future confirmed staff exist | Stop and handoff remain unconfirmed role types | Scene passport, civic timetable and evidence matrix record one conservative same event |
+| S3 Recovery | Restore ordinary route, screen-free information, quiet conditions and the same basic task first | Restoration acceptance and public-update roles remain unconfirmed; real completions 0 | Stay off until root cause, responsibility, independent retest, place restoration and three-carrier consistency close; G0 and authorization do not auto-advance |
 
-Seven public rights remain visible in every window: account-free/QR-free entry, complete non-AI path, continuous accessibility intent, truthful staffed-state notice, consent withdrawal, correction/appeal, and a screen-free quiet option. Opening hours, shifts, noise, lighting, footfall, complaint closure and recovery duration remain typed unknowns rather than effects-rendered numbers.
+Seven public rights remain visible in every state: account-free/QR-free entry, complete non-AI path, continuous accessibility intent, truthful staffed-state notice, consent withdrawal, correction/appeal, and a screen-free quiet option. Opening hours, shifts, noise, lighting, footfall, complaint closure and recovery duration remain typed unknowns rather than effects-rendered numbers.
 
 ### Quiet, Screen-Free and Resident-Priority Covenant
 
@@ -803,7 +813,7 @@ The bilingual `year-round-civic-operations.{svg,png}` figure places A year-round
 
 This section and figure constitute no site, construction, fire-safety, railway-protection, municipal, operational, procurement or other specialist approval and prove no rights clearance, real service, accessibility compliance, public value, international partnership or deployment authorization.
 
-[back to top](#ai-pilgrimage-belt)
+[back to top](#twin-track-jing-zhang)
 
 ## Review Synthesis and Professional Handoff: Freeze the Grammar, Replace Real-World Gaps
 
@@ -855,24 +865,7 @@ Current authoritative replacement artifacts: 0; accepted professional duties: 0;
 
 This round changes none of the twelve scenes, eight projects, three key areas, geometry or metrics. Every object remains G0, provisional and `not_fully_cleared`. This section constitutes no formal plan, government decision, site, control-plan, architecture, transport, railway, heritage, municipal, fire, accessibility, data, operating, rights or deployment authorization.
 
-[back to top](#ai-pilgrimage-belt)
-
-
-## References
-
-The primary project basis comprises [source:DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509], the Beijing Municipal Commission of Planning and Natural Resources open-call announcement; [source:AGENT-TASKBOOK], the repository agent taskbook; [source:SITE-PACKAGE], the site package; [source:SOURCE-REGISTRY], the source registry; and [source:PROCESSED-FACT-PACK], the processing guide. The provisional spatial basis is [source:DATA-SRC-PROVISIONAL-BOUNDARIES-20260605], used only for generation, presentation, and informal review.
-
-The direct entry to the repository’s public-information index is `brief/public-brief.md`; public boundary and use limitations are described in `brief/README.md`. Both provide only public task context and data boundaries and cannot generate statutory control values.
-
-Local professional materials include `brief/site-package/standards/standards.json` and its references: [source:STD-URBAN-DESIGN] for urban-design administration, [source:STD-CONTROL-PLAN] for the preparation and approval of detailed regulatory plans, [source:STD-LAND-USE] for territorial spatial land-and-sea-use classification, and [source:STD-ARCH-DEPTH-GAP] as a data-gap record for the required depth of architectural design documents. These materials are cited to constrain the depth of representation and define risk boundaries. They do not make this proposal a statutory plan, and a gap record cannot be treated as a verified provision.
-
-Recent policy and site context comprises [source:BEIJING-AI-ORIGIN-2026], 2026 public information from the Beijing Municipal Commission of Development and Reform on Origin Community and the century-old Jing-Zhang corridor; [source:BEIJING-AI-DISTRICTS-2026], the “one core, multiple points” context for Beijing’s first AI innovation districts; [source:HAIDIAN-JZ-PHASE2-OPEN-2026], August 2026 reporting on the opening of Phase II; [source:HAIDIAN-AI-TRIAL-FIELD-2026], context on Haidian’s AI test field and Origin Community; [source:HAIDIAN-JZ-MIDTERM-2026], midterm outcomes and objectives for three priority groups and five-minute life support; and [source:HAIDIAN-15FYP-2026], district-level directions for AI, urban renewal, and public services in Haidian’s Fifteenth Five-Year Plan. The latter four come from this round of public-web desk research and support only a real-world baseline, policy intent, and questions for verification—not a site survey, as-built proof, parcel approval, or institutional commitment.
-
-Governance and method context also includes [source:NATIONAL-DATA-INFRA-2025], the National Data Infrastructure Construction Guidelines; [source:AI-CONTENT-LABEL-2025], the Measures for Labeling AI-Generated and Synthetic Content; [source:AI-PLUS-2025], the State Council’s “AI+” opinion; [source:JZ-PARK-2023], public information on Phase I of the Jing-Zhang Railway Heritage Park; and [source:JZ-COCREATION-2021], material on public co-creation and professional continuity for the Jing-Zhang Railway Heritage Park. They support only direction, method, and governance boundaries; they create no project approval, funding, partnership, or control value.
-
-The global comparison set includes [source:CASE-KENDALL], [source:CASE-ONE-NORTH], and [source:CASE-22AT]. The same set also includes [source:CASE-KINGS-CROSS], [source:CASE-STATION-F], and [source:CASE-MARS]. Existing directional context is [source:OSM-CONTEXT]. Its ODbL data is used only to identify roads, railways, and waterways and cannot serve as an official boundary or engineering basis.
-
-Generation method: the spatial design is derived from the public provisional boundary, project enumerations, OSM context, and deterministic scripts. Areas and lengths are recalculated in EPSG:4548. Scenario passports, service zones, public-space modes, and phase gates are recorded as GeoJSON attributes. PNG, A3/A0, and offline HTML are explanatory layers, while `geometry/*.geojson`, `metrics.json`, the three matrices, and `self_check.json` are the evidence layer. `COMMUNITY-DISPLAY-ONLY` is recorded only as the current license label because its complete terms are not included. File-level status, unresolved items, and use limitations are stated in `visual/assets/rights-clearance-ledger.json` and `report/copyright_statement.md`.
+[back to top](#twin-track-jing-zhang)
 
 
 ## Three reversible assembly and restoration packs
@@ -904,13 +897,13 @@ Generation method: the spatial design is derived from the public provisional bou
 
 For every component, `TYPE / DIMENSION / MATERIAL / CONNECTION / SPECIALIST CLEARANCE / EXACT LOCATION / INSTALLATION METHOD / RESTORATION DURATION` remain `null / unknown`. D01-D08 govern real boundary, survey, control, accessibility co-test, peak transport, specialist constraints, duties and rights; H01-H07 govern authority, approval scope, baseline, data/safety, stop/recovery, public parity and independent retest. When professional evidence conflicts, ordinary public rights prevail and the proof overlay stops. Professionals may revise, reject or delete a component concept; official evidence must never be altered to preserve the drawing. Installations, approved details, accepted duties, inspections, real removals and restoration acceptances remain 0. All objects remain G0, provisional and `not_fully_cleared`.
 
-## Round 14 convergence: five-minute accessible offline review walk
+## Five-minute accessible offline review walk
 
 Open `visual/index.en.html#accessible-review-walk` and follow five steps: twin-track spatial grammar → three non-interchangeable prototypes → an ordinary non-AI task → failure and recovery → real-input replacement and professional NO-GO. The page is fully offline and requires no account, QR code, remote resource or AI. With JavaScript disabled, all five narratives, limitations and evidence backlinks remain readable in document order. Keyboard enhancement only adds direct, previous/next and Home/End navigation; print exposes everything. These are accessibility intentions and review presentation—not WCAG certification or new evidence.
 
 This round adds **0** concepts, scenes, projects, geometry, approvals, field tests, operations, accepted professional duties or rights clearance. Twelve scenes, eight projects, three key areas, 99 closure slots, G0, provisional boundaries, D01–D08, H01–H07 and `not_fully_cleared` remain unchanged. Professionals may revise, reject or delete the concept; major evidence, ordinary-rights or rights gaps retain NO-GO.
 
-## Round 15: Field evidence intake and replacement pack
+## Field evidence intake and replacement pack
 
 ### Not “more data”, but a rule for entry, return and rejection
 
@@ -948,3 +941,19 @@ The same contributor's separate [source:SOURCE-JZ-COMMONS-LOOP-METHOD-R15] PR #2
 ![Field evidence intake and replacement pack: eight empty packets, custody, professional dispositions and three differentiated future field routes; field collection, approval and duty acceptance all remain 0](assets/figures/field-evidence-intake.en.png)
 
 This round keeps 12 scenes, 8 projects, 3 key areas, 99 slots and every geometry and metrics byte unchanged. Every object remains G0, provisional, NO-GO and `not_fully_cleared`. The contract is not a field brief, procurement order, survey result, professional opinion, approval record or implementation authorization.
+
+## References
+
+The primary project basis comprises [source:DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509], the Beijing Municipal Commission of Planning and Natural Resources open-call announcement; [source:AGENT-TASKBOOK], the repository agent taskbook; [source:SITE-PACKAGE], the site package; [source:SOURCE-REGISTRY], the source registry; and [source:PROCESSED-FACT-PACK], the processing guide. The provisional spatial basis is [source:DATA-SRC-PROVISIONAL-BOUNDARIES-20260605], used only for generation, presentation, and informal review.
+
+The direct entry to the repository’s public-information index is `brief/public-brief.md`; public boundary and use limitations are described in `brief/README.md`. Both provide only public task context and data boundaries and cannot generate statutory control values.
+
+Local professional materials include `brief/site-package/standards/standards.json` and its references: [source:STD-URBAN-DESIGN] for urban-design administration, [source:STD-CONTROL-PLAN] for the preparation and approval of detailed regulatory plans, [source:STD-LAND-USE] for territorial spatial land-and-sea-use classification, and [source:STD-ARCH-DEPTH-GAP] as a data-gap record for the required depth of architectural design documents. These materials constrain representation depth and risk boundaries; they do not make this proposal a statutory plan, and a gap record cannot be treated as a verified provision.
+
+Recent policy and site context comprises [source:BEIJING-AI-ORIGIN-2026], [source:BEIJING-AI-DISTRICTS-2026], [source:HAIDIAN-JZ-PHASE2-OPEN-2026], [source:HAIDIAN-AI-TRIAL-FIELD-2026], [source:HAIDIAN-JZ-MIDTERM-2026], and [source:HAIDIAN-15FYP-2026]. These public-web desk sources support only a reported baseline, policy intent, and questions for verification—not a site survey, as-built proof, parcel approval, or institutional commitment.
+
+Governance and method context also includes [source:NATIONAL-DATA-INFRA-2025], [source:AI-CONTENT-LABEL-2025], [source:AI-PLUS-2025], [source:JZ-PARK-2023], and [source:JZ-COCREATION-2021]. They support only direction, method, and governance boundaries; they create no project approval, funding, partnership, or control value.
+
+Innovation-district mechanism comparisons include [source:CASE-KENDALL], [source:CASE-ONE-NORTH], and [source:CASE-22AT]. Heritage-renewal and operating mechanisms additionally reference [source:CASE-KINGS-CROSS], [source:CASE-STATION-F], and [source:CASE-MARS]. Existing directional context is [source:OSM-CONTEXT]. Its ODbL data is used only to identify roads, railways, and waterways and cannot serve as an official boundary or engineering basis.
+
+Generation method: the spatial design is derived from the public provisional boundary, project enumerations, OSM context, and deterministic scripts. Areas and lengths are recalculated in EPSG:4548. Scenario passports, service zones, public-space modes, and phase gates are recorded as GeoJSON attributes. PNG, A3/A0, offline HTML, and the user-started four-state motion journey are explanatory layers, while `geometry/*.geojson`, `metrics.json`, the three matrices, and `self_check.json` are the evidence layer. `COMMUNITY-DISPLAY-ONLY` is recorded only as the current license label because its complete terms are not included. File-level status, unresolved items, and use limitations are stated in `visual/assets/rights-clearance-ledger.json` and `report/copyright_statement.md`.
