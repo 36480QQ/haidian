@@ -654,7 +654,8 @@
    "metrics": [
     "phase_1_area_sqm",
     "phase_2_area_sqm",
-    "phase_3_area_sqm"
+    "phase_3_area_sqm",
+    "land_use_residential_sqm"
    ],
    "drawings": [
     "drawings/a3-booklet.pdf",
@@ -692,7 +693,9 @@
    ],
    "assumption_ids": [
     "A-PHASE-001",
-    "A-OWNERSHIP-001"
+    "A-OWNERSHIP-001",
+    "A-COST-001",
+    "A-EQUITY-001"
    ],
    "self_check_ids": [
     "BOUNDARY_TRUST",
@@ -1551,7 +1554,9 @@
    "metrics": [
     "phase_1_area_sqm",
     "phase_2_area_sqm",
-    "phase_3_area_sqm"
+    "phase_3_area_sqm",
+    "operations_team_concept_headcount",
+    "daily_visitors_concept_mid"
    ],
    "drawings": [
     "drawings/a3-booklet.pdf",
@@ -1588,7 +1593,10 @@
     "SRC-GLOBAL-CASES"
    ],
    "assumption_ids": [
-    "A-OPERATION-001"
+    "A-OPERATION-001",
+    "A-COST-001",
+    "A-STAFF-001",
+    "A-EMERGENCY-001"
    ],
    "self_check_ids": [
     "BOUNDARY_TRUST",

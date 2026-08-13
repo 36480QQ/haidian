@@ -26,6 +26,15 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ![资料证据链与提交包关系图](assets/figures/site-overview.png)
 
+### AI 原生工作流与方法论
+
+本方案由 AI agent 全流程生成，工作流本身构成规划方法论创新的一部分 [source:AGENT-TASKBOOK]。
+
+1. **程序化几何与拓扑校验**：land_use 由同一线网 polygonize 切分，天然无缝无重叠，面积在 EPSG:4548 自动复算 [data:geometry/land_use.geojson#LU-001]。
+2. **数据驱动制图**：10 张图件从 GeoJSON 与 metrics 直接生成，图文数值一致 [metric:site_area_sqm]。
+3. **多模态模拟评审闭环**：以官方评审提示词镜像做严格轮模拟评审，逐条修复后再提交；本轮补强即来自该闭环。
+4. **分析型 AI 应用概念**：慢行可达性等值线、客流需求推断、场景数据回环（反馈侧线）作为分析型 AI 在规划中的落点 [metric:road_total_length_m]。
+
 ## 三层范围工作框架
 
 方案按公告确定的三层范围组织工作 [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]：统筹研究范围（43.6 km²）回答"AI 创新生态与未来城市形态如何组织"；总体设计范围（11.41 km²，以京张遗址公园周边 1–2 公里城市地区和产业区为走廊）回答"产业空间、城市更新、交通市政与风貌如何落图"；重点区域范围（三处合计 368.4 公顷）回答"三处片区如何达到详细设计深度"。三层范围在 `compliance_matrix.json` 中逐条映射，覆盖公告 1.3、1.4、1.5 与 agent.1–agent.6 的全部必选任务 [depth:three_level_scope_framework]。
@@ -193,6 +202,17 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 地标、导视与荣誉系统均为概念方向，不涉及未授权人物、企业标识或商标 [source:SOURCE-REGISTRY]；文化叙事以史实为底线，不得把概念地标写成已批准建设 [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [depth:blue_green_public_space]。
 
+### 社区保护与可负担性（公共利益保障）
+
+AI 创新带的高强度更新可能带来绅士化与居住成本上升风险，本方案以四项机制回应 [source:AGENT-TASKBOOK]：
+
+1. **留改提优先**：两翼腹地以保留、改造、提升为主，减少动迁；居住用地概念分区约 249.9 万 m² [metric:land_use_residential_sqm]。
+2. **社区收益共享**：场景运营与公共空间活动收益按概念机制回馈社区服务（社区自习室、托育、食堂），具体机制待专业深化。
+3. **可负担性监测**：依托公开数据建立租金与生活成本监测概念指标，超标即触发更新节奏复核。
+4. **保障性住房与人才公寓**：研究坡与加速坡配置人才公寓概念，社区腹地保留混合居住结构（比例待控规确认）。
+
+全龄与无障碍设计贯穿公共空间：老年、残障与低收入群体服务由 SC-03 无障碍出行助手与坡脚数字素养培训站承接 [metric:public_space_ratio]。以上均为概念机制，不构成住房政策承诺。
+
 ## 更新项目清单、实施政策与分期计划
 
 ### 项目包（可独立暂停的 6 项）
@@ -206,9 +226,28 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 | JZ-05 | 全栈自主验证场（测试#3） | 产业服务 | 加速坡 | 数据隔离、专业评审 | [data:geometry/land_use.geojson#LU-003] |
 | JZ-06 | 主脊千米标步道 | 文化/运营 | 全带 | 公园管理、文化清权 | [data:geometry/phasing.geojson#PHASE-001] |
 
+### 实施深度：成本量级、运营主体与应急响应
+
+**成本量级估算（概念区间，非法定测算）**：以下量级仅用于检验实施可行性，依据同类公共空间与园区项目公开经验推断，不构成投资测算、财政承诺或审批依据 [source:SRC-GLOBAL-CASES]。
+
+| 项目包 | 概念成本量级（人民币） | 主要来源 | 说明 |
+| --- | --- | --- | --- |
+| JZ-01 展线广场 | 1–3 千万 | 公共投资引导 | 广场改造与导视系统 |
+| JZ-02 场景超市 | 5 百万–1 千万 | 运营平台+社会资本 | 轻量设施先行 |
+| JZ-03 代码花园 | 3–8 百万 | 开源社区赞助 | 低维护公共空间 |
+| JZ-04 快闪实验室 | 1–3 千万 | 高校+孵化器 | 可逆轻改造 |
+| JZ-05 验证场 | 5 千万–2 亿 | 园区平台+企业 | 数据隔离与评测设施 |
+| JZ-06 千米标步道 | 5 百万–1 千万 | 公共投资引导 | 里程标与荣誉系统 |
+
+**运营主体与人力编制概念测算**：主脊运营团队 20–40 人（绿道维护、活动、导览）、验证场 10–20 人（评测、隔离运维）、开发者社区运营 5–10 人、文化导览 3–5 人，合计约 40–75 人；编制为概念测算，按同类公共设施公开经验推断，非财政承诺 [source:AGENT-TASKBOOK]。
+
+**两级应急响应预案（概念）**：技术事故级（模型故障、数据泄露）——立即暂停相关场景→人工接管→隔离受影响数据→24 小时复盘公开说明；运营事故级（活动安全、设施故障）——启动现场预案→专业处置→受影响者补偿通道→公开说明。坡度信号体系保证每个场景均有可暂停、可回滚、可人工接管开关 [metric:ai_scenario_node_count]。
+
+**客流与通勤概念测算**：应用坡日客流约 2–4 万人次、研究坡 1–2 万、加速坡 3–5 万（园区通勤），为公开资料推断的低置信度区间，待现场调研与官方数据校准 [source:SRC-BEIJING-SCIENCE-CENTER]。
+
 ### 准入闸门与分期
 
-实施遵循 **C0–C7 八级闸门**（概念→权属确认→专业深化→试点→评估→扩展→常态化→治理回顾），任何一级未通过即暂停，确保可撤回、可复盘 [depth:phasing_implementation]。分期与提交周期无关：**近期（2026–2028）**以应用坡与研究坡的轻量试点与场景运营先行（约 625.0 万 m² [metric:phase_1_area_sqm]），**中期（2028–2031）**推进过渡带与加速坡南延（约 287.9 万 m² [metric:phase_2_area_sqm]），**远期（2031–2035）**形成加速坡全域（约 224.8 万 m² [metric:phase_3_area_sqm]）[data:geometry/phasing.geojson#PHASE-002]。每期均设置退出条件与专业复核节点，待正式控规、市政、交通与权属条件确认后方可进入工程深化 [depth:renewal_project_list]。
+实施遵循 **C0–C7 八级闸门**（概念→权属确认→专业深化→试点→评估→扩展→常态化→治理回顾），任何一级未通过即暂停，确保可撤回、可复盘 [depth:phasing_implementation]。分期与提交周期无关：**近期（2026–2028）**以应用坡与研究坡先行，分期多边形覆盖两坡带全域约 625.0 万 m² [metric:phase_1_area_sqm]，其中仅轻量试点与场景运营先启动（约 5% 的近期范围，由 C0–C2 闸门控制），其余待条件成熟递进；**中期（2028–2031）**推进过渡带与加速坡南延（约 287.9 万 m² [metric:phase_2_area_sqm]），**远期（2031–2035）**形成加速坡全域（约 224.8 万 m² [metric:phase_3_area_sqm]）[data:geometry/phasing.geojson#PHASE-002]。每期均设置退出条件与专业复核节点，待正式控规、市政、交通与权属条件确认后方可进入工程深化 [depth:renewal_project_list]。
 
 ### 运营机制（回应 agent.6）
 
@@ -218,7 +257,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 指标分三类管理 [depth:metrics_recalculation]：第一类可由提交几何直接复算（面积、比例、数量，见 `metrics.json`）；第二类需官方控规与任务书附件支撑的管控指标（容积率、高度、密度等）统一记为 unknown 并附复算触发条件 [metric:floor_area_ratio]；第三类运营绩效指标（创新指数、活动参与等）在 `assumptions.json` 中说明校准路径。本方案 26 项指标全部明确 status、formula、source_files 与 confidence，known 指标均可从 GeoJSON 或可信来源复核 [metric:key_area_total_sqm] [metric:road_total_length_m]。
 
-绿地比例（24.4%）支撑研究坡与加速坡的"呼吸型"创新环境；公共空间比例（2.9%）聚焦展线节点与广场的锚点效应而非摊大饼 [metric:green_ratio] [metric:public_space_ratio]；建筑基底（139.8 万 m²）用于检验产业空间供给能力而非审批依据 [metric:building_footprint_area_sqm]。三处重点区合计 369.3 万 m²（与公告 368.4 公顷一致 [metric:key_area_total_sqm]），坡度带结构通过科研、商业、绿地三类用地的空间配比落实 [metric:land_use_research_sqm] [metric:land_use_commercial_sqm] [metric:land_use_green_sqm]。
+绿地比例（24.4%）支撑研究坡与加速坡的"呼吸型"创新环境；公共空间比例（2.9%）聚焦展线节点与广场的锚点效应而非摊大饼 [metric:green_ratio] [metric:public_space_ratio]；建筑基底（139.8 万 m²）用于检验产业空间供给能力而非审批依据 [metric:building_footprint_area_sqm]。三处重点区合计 369.3 万 m²（约等于公告 368.4 公顷，差 0.24%，属 provisional 精度 [metric:key_area_total_sqm]），坡度带结构通过科研、商业、绿地三类用地的空间配比落实 [metric:land_use_research_sqm] [metric:land_use_commercial_sqm] [metric:land_use_green_sqm]。
 
 合规矩阵（23 项）逐条覆盖公告 1.3、1.4、1.5 与 agent.1–agent.6 [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]。标准矩阵（9 项）覆盖城市设计、控规深度、用地分类、道路设计、居住区标准与设计深度等专业维度 [standard:MOHURD-CONTROL-DETAILED-PLANNING] [standard:MOHURD-URBAN-DESIGN-MANAGEMENT] [standard:GB-50180-URBAN-RESIDENTIAL-AREA]。设计深度矩阵 15 项全部标记 complete 或 data_gap 并附证据摘要 [standard:CJJ-37-URBAN-ROAD-DESIGN] [standard:MOHURD-ARCH-DESIGN-DEPTH-2016]。自检状态以 `self_check.json` 为准 [source:SITE-PACKAGE]。
 
