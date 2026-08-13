@@ -30,8 +30,8 @@ status_note: "本方案为 AI Agent 生成的概念建议与参考方案，不�
 ## 三层范围工作框架
 
 - **统筹研究范围** 43.6 km²：北至北五环路、东至京藏高速、南至西直门外大街、西至万泉河路，作为区域战略背景框架 [source:SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT]。
-- **总体设计范围** 11.35 km²（临时边界复算值，公告约 11.4 km²）：以京张遗址公园周边 1–2 公里城市与产业地区为设计对象 [metric:site_area_sqm] [data:geometry/site_boundary.geojson#SITE-001]。
-- **重点区域范围** 368.4 ha：自北向南为众智园AI自主创新加速区（约 192.1 ha）、北京AI原点社区（约 104.3 ha）、大钟寺AI产业集聚区（约 72.0 ha）[metric:key_detailed_design_area] [data:geometry/key_areas.geojson#KEY-zhongzhiyuan_ai_acceleration_area]。
+- **总体设计范围** 11.41 km²（临时边界复算值；公告约 11.4 km²）：以京张遗址公园周边 1–2 公里城市与产业地区为设计对象 [metric:site_area_sqm] [data:geometry/site_boundary.geojson#SITE-001]。
+- **重点区域范围** 367.19 ha：自北向南为众智园AI自主创新加速区（约 192.1 ha）、北京AI原点社区（约 104.3 ha）、大钟寺AI产业集聚区（约 72.0 ha）[metric:key_detailed_design_area] [data:geometry/key_areas.geojson#KEY-zhongzhiyuan_ai_acceleration_area]。
 
 临时边界以淡色虚线标注，强调设计意图而非法定红线 [depth:DD-02]。
 
@@ -101,7 +101,7 @@ status_note: "本方案为 AI Agent 生成的概念建议与参考方案，不�
 
 ## 蓝绿空间、公共空间与城市风貌
 
-蓝绿系统以京张遗址公园绿廊为骨架，叠加口袋公园与广场节点，形成连续贯通的绿色网络，临时测算绿地率约 0.086、公共空间率约 0.03，待官方绿地系统确认 [metric:green_ratio] [metric:public_space_ratio] [data:geometry/green_space.geojson#GREEN-SPINE]。蓝绿空间强调遗产公园的南北缝合与东西渗透，串联重点片区公共活动 [data:geometry/public_space.geojson#PUB-001]。城市风貌以"之字母题+钢灰/遗产绿/AI蓝"色彩体系，统筹建筑高度、体量、风格与色彩控制，塑造统一而可识别的 AI 创新带形象 [standard:MOHURD-URBAN-DESIGN-MEASURES] [depth:DD-06]。
+蓝绿系统以京张遗址公园绿廊为骨架，叠加口袋公园与广场节点，形成连续贯通的绿色网络，临时测算绿地率约 0.0808、公共空间率约 0.03，待官方绿地系统确认 [metric:green_ratio] [metric:public_space_ratio] [data:geometry/green_space.geojson#GREEN-SPINE]。蓝绿空间强调遗产公园的南北缝合与东西渗透，串联重点片区公共活动 [data:geometry/public_space.geojson#PUB-001]。城市风貌以"之字母题+钢灰/遗产绿/AI蓝"色彩体系，统筹建筑高度、体量、风格与色彩控制，塑造统一而可识别的 AI 创新带形象 [standard:MOHURD-URBAN-DESIGN-MEASURES] [depth:DD-06]。
 
 ## 百年京张文化、中关村文化与AI新文化融合叙事（agent.5）
 
