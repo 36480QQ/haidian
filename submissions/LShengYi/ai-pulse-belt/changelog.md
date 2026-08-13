@@ -373,3 +373,13 @@
 
 - **开篇引用收敛**：契约段连续 evidence 标记由 5 个收敛为 3 个（`pulse_beat_count`/`rollback_trigger_class_count`/`objection_gate_count`），满足确定性校验「单段≤3 个连续标记」约束；被裁的两个计数在开篇其余段已有引用，信息不丢失。
 - 版本串 v10.0 → v10.1（gen_01/03/04/05 同步），全产物重生成，finalize 门控全 changed。
+
+## v10.2 - 2026-08-13
+
+### 改动摘要
+
+- **compliance_matrix.json 23 条补 `evidence_summary_zh`**：每条一句话说明如何被回应（含关键机制与数字落点），评审无需翻正文即知该条响应方式（对齐 85 分方案做法）。
+- **metrics.json 补 `precision_declaration` 复算日志块**：声明全部指标为概念几何派生、官方多边形发布后必须按 P4 重算、取整规则、跨产物引用同一 metrics.json 防口径漂移、unknown 政策。
+- **sources.json 18 源补 `usable_for_formal` + `prohibited_uses`**：来源台账与 85 分方案同构（approved/background/provisional 三级 + 每源禁止用途），强化风险合规可审计性。
+- **场景卡章新增「同任务等价」条款（zh+en）**：拒绝 AI/不同意非必要数据授权/无智能设备的市民仍能通过人工低技术路径完成同一基本任务；人工路径缺失/额外收费/长期不可用则对应 AI 服务不得继续开放——与「服务合同」构成包容性验收双规则。
+- 版本串 v10.1 → v10.2（gen_01/03/04/05 同步），全产物重生成，finalize 门控全 changed。
