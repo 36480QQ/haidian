@@ -15,6 +15,14 @@ scenarios: ["enterprise-service-copilot", "ai-traffic-walkability", "robot-deliv
 
 > **Core proposition: universities and leading firms are anchors, the district is an incubator, and community is infrastructure.** Haidian does not lack innovation sources; it needs urban interfaces that turn talent relations into projects, projects into firms, and growing firms into the next round of shared capacity.
 
+## Decision brief | evidence, plan, contract and acceptance
+
+The proposal begins with public problem evidence rather than impression. E0 official material confirms complex rail and cross movement, breaks, multiple actors and segment differences. Actual flows, accessibility barriers, building safety, rights and fire interfaces remain E3 pending verification and cannot trigger permanent works. Spatially, a public innovation axis connects verification at Zhongzhiyuan, incubation at AI Origin and conversion at Dazhongsi; fifteen projects and six east-west stitches use the same provisional GeoJSON system. Delivery starts with a reversible 90-day pilot for Z1 shared validation, O1 open-project clinic and D1 first-order centre, followed by a human decision to continue, adjust or exit.
+
+![First-phase delivery, project contracts, acceptance and exit](assets/figures/metrics-evidence.en.png)
+
+Every project contract binds the spatial task, operator, professional sign-off, quantity and cost method, deliverable, acceptance evidence and stop gate. Public safeguards include anonymous passage, at least two resident seats, at least 20% affordable opening hours, accessibility sign-off and no service-for-data exchange. AI only recommends and aggregates; release always retains human authorization, appeal, shutdown and an audit trail. This is a reading entry, not a self-score or construction commitment.
+
 ## Design Basis and Source List
 
 The proposal combines the public brief, repository site package, professional references and reproducible provisional geometry with the author's original Mars Plan theories: park-city-network evolution, the five-stage growth loop and enterprise lifecycle observation. Local research supplies methods only; no internal Chaoyang market-regulation data is copied. Facts about Alibaba Beijing headquarters, incubation and creator communities are rechecked against public primary district sources.[source:OFFICIAL-ANNOUNCEMENT] [source:MARS-THEORY]
