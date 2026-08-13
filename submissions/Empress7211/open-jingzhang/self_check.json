@@ -67,6 +67,14 @@
         "submissions/Empress7211/open-jingzhang/visual/assets/alt-text.json",
         "submissions/Empress7211/open-jingzhang/visual/assets/asset-rights-ledger.json",
         "submissions/Empress7211/open-jingzhang/visual/assets/current-main-run.json",
+        "submissions/Empress7211/open-jingzhang/visual/assets/first-100-days-evidence-plan.json",
+        "submissions/Empress7211/open-jingzhang/visual/assets/issue-router-tabletop/README.json",
+        "submissions/Empress7211/open-jingzhang/visual/assets/issue-router-tabletop/contract.json",
+        "submissions/Empress7211/open-jingzhang/visual/assets/issue-router-tabletop/fixtures.negative.json",
+        "submissions/Empress7211/open-jingzhang/visual/assets/issue-router-tabletop/fixtures.positive.json",
+        "submissions/Empress7211/open-jingzhang/visual/assets/issue-router-tabletop/receipts.json",
+        "submissions/Empress7211/open-jingzhang/visual/assets/issue-router-tabletop/run_tabletop.js",
+        "submissions/Empress7211/open-jingzhang/visual/assets/issue-router-tabletop/test_tabletop.js",
         "submissions/Empress7211/open-jingzhang/visual/assets/maintenance-followup.json",
         "submissions/Empress7211/open-jingzhang/visual/index.en.html",
         "submissions/Empress7211/open-jingzhang/visual/index.html"
@@ -74,7 +82,7 @@
       "ai_package_stages": {
         "submissions/Empress7211/open-jingzhang": "formal"
       },
-      "total_bytes": 5685473,
+      "total_bytes": 5651950,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -148,7 +156,7 @@
       "summary": {
         "standard_matrix_items": 6,
         "design_depth_items": 15,
-        "known_metric_refs_required": 11,
+        "known_metric_refs_required": 14,
         "proposal_format_version": "1",
         "evidence_contract": "legacy-exhaustive-inline",
         "proposal_reference_counts": {
@@ -156,7 +164,7 @@
           "standard": 6,
           "depth": 15,
           "data": 27,
-          "metric": 12
+          "metric": 15
         }
       }
     },
