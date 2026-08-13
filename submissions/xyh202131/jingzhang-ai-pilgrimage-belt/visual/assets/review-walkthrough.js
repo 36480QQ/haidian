@@ -67,8 +67,9 @@
     show(destinations[event.key], true);
   });
 
-  // Preserve pre-existing dashboard deep links such as #baseline.
-  show(current, false, !initialHash || valid.has(initialHash));
+  // Preserve valid review-step deep links, but never create one on an
+  // unanchored page load: the Round 17 jury entry must remain the first view.
+  show(current, false, Boolean(initialHash) && valid.has(initialHash));
 })();
 
 (() => {
