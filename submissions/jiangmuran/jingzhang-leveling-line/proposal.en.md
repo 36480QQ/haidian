@@ -1500,11 +1500,11 @@ An authorisation statement a reviewer cannot verify is not a statement. Each row
 
 <!-- LEDGERCOUNT:BEGIN -->
 
-**The file-level ledger sits outside the review input, so its result is brought in here.** `build_review_input` sends `proposal.md` and eight JSON files; neither `report/copyright_statement.md` nor `visual/assets/rights_ledger.json` is among them. **A rights ledger the reviewer structurally cannot open is, from the reviewer's position, exactly the unverifiable assertion this package objects to elsewhere.** All **100 shipped files** carry a clearance class; a file without one fails the build:
+**The file-level ledger sits outside the review input, so its result is brought in here.** `build_review_input` sends `proposal.md` and eight JSON files; neither `report/copyright_statement.md` nor `visual/assets/rights_ledger.json` is among them. **A rights ledger the reviewer structurally cannot open is, from the reviewer's position, exactly the unverifiable assertion this package objects to elsewhere.** All **102 shipped files** carry a clearance class; a file without one fails the build:
 
 | Clearance class | Files |
 |---|---|
-| `author-originated` | 78 |
+| `author-originated` | 80 |
 | `provisional-only-with-stated-limit` | 9 |
 | `author-originated-measurement` | 8 |
 | `author-originated-with-embedded-fonts` | 4 |
@@ -1557,7 +1557,7 @@ One point of citation discipline deserves stating plainly: **the cases are used 
 
 <!-- FIGINDEX:BEGIN -->
 
-There are 18 sheets, numbered FIG.00 to FIG.17. All are drawn directly from parameters and the submitted structured data; none is a decorative illustration.
+There are 19 sheets, numbered FIG.00 to FIG.18. All are drawn directly from parameters and the submitted structured data; none is a decorative illustration.
 
 | Sheet | Content | What to read on it |
 |---|---|---|
@@ -1579,6 +1579,7 @@ There are 18 sheets, numbered FIG.00 to FIG.17. All are drawn directly from para
 | FIG.15 | Phasing: advanced by closure results, not by dates | `phasing.geojson` has shipped for a long time, been repaired once, and enters the recompute path — **and no drawing had ever shown it**. The three increments, the benchmarks each adds, the condition that opens it (a number, not a year), and **what each phase costs to run**: the near term holds BM-0 alone, on one session a year |
 | FIG.16 | The benchmark and its reading plate, as a construction detail | The whole proposal rests on one object and **not one dimension appeared anywhere in the package**. Plan at 1:20, section and elevation at 1:10, nine dimensions each with the reason it is that number; **the one figure left blank is the frost depth D** — a local geotechnical value with no verifiable source here, so the sheet gives the rule and not the number |
 | FIG.17 | The step-free link from the origin community to the heritage park | FIG.13's section says this place exists to put a 1:12 ramp where the steps are, and no drawing had shown it. One design decision: **the ramp sits on the desire line and the steps beside it** — the usual arrangement offsets the ramp and charges its user twice that offset every trip, while nobody on the steps walks a metre further |
+| FIG.18 | Maintenance: putting the wear on the parts that can be swapped | A monthly re-survey is a maintenance problem first. The sheet turns on one asymmetry: **the stone is the only part that must never be replaced and the only one a person cannot carry** (about 230 kg) — a benchmark that moves is not the same benchmark — so the wear is placed on the face, post, seat and guidance strip; the last block states what happens when a stone is lost anyway |
 
 <!-- FIGINDEX:END -->
 

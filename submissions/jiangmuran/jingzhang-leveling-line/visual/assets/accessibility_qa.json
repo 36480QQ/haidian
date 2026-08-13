@@ -119,6 +119,12 @@
    "pass": true
   },
   {
+   "sheet": "svg/maintenance",
+   "min_font_units": 9.5,
+   "min_height_mm_at_A0": 4.99,
+   "pass": true
+  },
+  {
    "sheet": "svg/metrics-evidence",
    "min_font_units": 9.5,
    "min_height_mm_at_A0": 4.99,
@@ -233,6 +239,12 @@
    "pass": true
   },
   {
+   "sheet": "svg.en/maintenance",
+   "min_font_units": 9.5,
+   "min_height_mm_at_A0": 4.99,
+   "pass": true
+  },
+  {
    "sheet": "svg.en/metrics-evidence",
    "min_font_units": 9.5,
    "min_height_mm_at_A0": 4.99,
@@ -289,21 +301,21 @@
  ],
  "offline_html": {
   "visual/index.html": {
-   "images": 18,
+   "images": 19,
    "images_without_alt": 0,
    "has_lang": true,
    "heading_level_jumps": 0,
-   "figcaptions": 19,
+   "figcaptions": 20,
    "interactive_elements_needing_focus": 0,
    "has_dark_mode": true,
    "inline_script_tags": 0
   },
   "visual/index.en.html": {
-   "images": 18,
+   "images": 19,
    "images_without_alt": 0,
    "has_lang": true,
    "heading_level_jumps": 0,
-   "figcaptions": 19,
+   "figcaptions": 20,
    "interactive_elements_needing_focus": 0,
    "has_dark_mode": true,
    "inline_script_tags": 0
@@ -312,13 +324,13 @@
  "asset_references": [
   {
    "file": "visual/index.html",
-   "references": 18,
+   "references": 19,
    "missing": [],
    "remote": []
   },
   {
    "file": "visual/index.en.html",
-   "references": 18,
+   "references": 19,
    "missing": [],
    "remote": []
   },
