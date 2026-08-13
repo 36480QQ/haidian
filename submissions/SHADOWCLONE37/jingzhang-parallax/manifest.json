@@ -27,7 +27,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "49396feb4c36cdd9cd9a725b39b755c4efd5ec71ddee2da3f1b5b1ccc4707e25"
+      "sha256": "175a0e69c2df34e2bb868d39d9e53d9a16f3c1a7e84bd2d20a2748be483fe781"
     },
     {
       "path": "agent.json",
@@ -57,7 +57,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "21236ab9de158b938d455ff385167651486d7aced3f631227e31c346f061d0b4"
+      "sha256": "5136b4140f2506b8c82e988a1dd8a8e504fc555d07f3ce224516fb557b26852c"
     },
     {
       "path": "compliance_matrix.json",
@@ -82,7 +82,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "ccd7ac7f526dc5131b077bb9923f779695d7345a0908b69217d584359ee755c3"
+      "sha256": "213430d3cf6d250d3270ce1f3948737212939578e20d5e37abb7245d307cee48"
     },
     {
       "path": "report/narrative.md",
@@ -94,21 +94,21 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "46aad0d233e2a54280f00667d533912583073b7e5726a8f2dc53638437b21fd0"
+      "sha256": "67ea0ffeaae6407214449b12241aaa6e22bfe52b1c505d136e7dfbf38c2157ce"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "b581757e99a4a84a06472d50cd286052d1793dd1ecee019f3381738897ba0dba"
+      "sha256": "59c6a5ddf6879bdcc3e627be93099f0f162004ecab41566b73fd1c9d06ca1a39"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "dc926be1f2537ebf5570e0f55b9d2387349bf380661bd1aa4d0454c2ec200a36"
+      "sha256": "4c7913bde341a8993ef2b7a87ecaf4893a53c1e07044e9c8ff6d2b54a4ba5b3c"
     },
     {
       "path": "visual/index.html",
@@ -210,7 +210,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "65d7a7d24b7ee0ef4249efd9cf536d2f23a195f57acd698c8d6b79bed9215607"
+      "sha256": "dda8d8ac0d0306735dd967971ff0ad301f9aeba48979d202d51aa76918fcffeb"
     },
     {
       "path": "proposal.en.md",
@@ -218,7 +218,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "89c3e237ad45730c91d01efc3a15acc11617f0c04fd531964b1acf9b98d0a194"
+      "sha256": "e8186b0c28592f5305dd74b25c049bb62d71b5abe0495a5ec627ed10fdc030cb"
     },
     {
       "path": "report/proposal.en.html",
@@ -226,7 +226,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "9d2fab46257003cea8568056de7a45a50a0d6aaa8432e5d0f1145199bdad6327"
+      "sha256": "002b47598c205f5485a36b0342621b8e670923ec946536f4d6e98771ab100cb2"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -234,7 +234,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "40f44dfa74aead55e7f67b7b12a18041efaaf3c9591fb83183e124f9fdb2c55c"
+      "sha256": "c156946c6067581860868f3533a61016efc8f358f80ddde34b6ee04439e1afd5"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -242,7 +242,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "aae3e9f8a7134965edb3e053e530937a92c15fc75bcf42743e6437dc8e7136da"
+      "sha256": "d1d9b88797e367cae5fdaec13b69ff24e5b3dfb5326a57c4ce1428851aca7751"
     },
     {
       "path": "visual/index.en.html",
@@ -297,11 +297,11 @@
       "role": "media_poster",
       "required": false,
       "language": "neutral",
-      "title_zh": "京张视差概念性空间主视觉",
-      "title_en": "Parallax Jing-Zhang conceptual spatial hero",
-      "description_zh": "AI 生成的概念性空间想象，用于解释模型线、生活线与三座多解场；不代表现状、审批方案或公众意见。",
-      "description_en": "AI-generated conceptual spatial visualization of the model line, lived line, and three plural-futures yards; not existing conditions, an approved plan, or evidence of public opinion.",
-      "sha256": "46a04ecc5f9c210db75009abbf89fa6feb58b55fe07177a3d8155e90227a990b"
+      "title_zh": "京张视差程序化封面",
+      "title_en": "Parallax Jing-Zhang programmatic cover",
+      "description_zh": "由本地程序绘制并从新版 A3 封面导出的缩略图，以双轨、横向校准杆和坐标网格表达视差方法；不代表现状或审批方案。",
+      "description_en": "Locally drawn thumbnail exported from the revised A3 cover; dual tracks, cross-check bars, and a coordinate grid express the parallax method. It does not depict existing or approved conditions.",
+      "sha256": "4d21a49993078eb83e59448942faddaf677d3cfe6e9d92e237d41fca729191c8"
     }
   ],
   "validation_claim": {
