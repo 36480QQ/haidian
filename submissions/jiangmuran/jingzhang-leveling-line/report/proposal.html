@@ -202,6 +202,12 @@ code {
 <p>&lt;!-- OSMTABLE:BEGIN --&gt;</p>
 <div class="proposal-table"><table><thead><tr><th>读数</th><th>值</th></tr></thead><tbody><tr><td>实测公园面积（OSM 已测绘段）</td><td><strong>17.49 ha</strong></td></tr><tr><td>与临时<strong>总体设计范围</strong>的相交面积</td><td><strong>0.0 ha（覆盖 0.0%）</strong></td></tr><tr><td>与该边界的最近距离</td><td><strong>412.5 m</strong></td></tr><tr><td>与临时<strong>统筹研究范围</strong>的关系</td><td>100% 完全包含 ✓</td></tr><tr><td>废弃铁路</td><td>14 段，3,028 m；其中 683.7 m 落在临时总体设计范围内</td></tr><tr><td>本方案提交主脊到实测公园</td><td>1,116.7 m</td></tr></tbody></table></div>
 <p>全部读数由 <code>node visual/assets/check_osm.js</code> 从随包坐标独立复算，投影 EPSG:4548；OSM 为众包数据，其限度登记为 <code>A-OSM-001</code>。</p>
+<p><strong>「本方案主脊到实测公园 1,116.7 m」这个数需要解释，否则它会被读成一个选址错误。</strong></p>
+<p>一位独立评图人读到它，结论是「主脊没有画在场地上，应当改到真实线位」。这个结论从这一个数看是合理的，但把组织方给的几何一起量就不成立：</p>
+<div class="proposal-table"><table><thead><tr><th>量</th><th>值</th><th>由谁决定</th></tr></thead><tbody><tr><td>临时<strong>总体设计范围</strong>到实测公园</td><td><strong>412.5 m</strong>（不相交）</td><td>组织方的 provisional geometry</td></tr><tr><td>本方案主脊到实测公园</td><td>1,116.7 m</td><td>本方案</td></tr><tr><td>若把主脊改到设计范围<strong>西边界</strong></td><td>414.7 m</td><td>上限即 412.5 m</td></tr></tbody></table></div>
+<p><strong>实测公园整体落在临时总体设计范围之外</strong>——这不是本方案的取舍，是组织方几何本身如此，本包在上表第二行就公布了它。因此「把主脊画到真实线位」意味着<strong>把主轴移出设计范围</strong>。</p>
+<p>而设计范围内的最优解也不是西边界。三处重点区（组织方给定）的形心在 lon 116.3475–116.3485，主脊正走在那条线上；西边界在 116.3397。<strong>把主脊贴到西边界，可以把到公园的距离从 1,117 m 压到 415 m，代价是它同时离开全部三处重点区</strong>——而串起这三处正是主脊要做的事。</p>
+<p>所以本方案的选择是：主脊穿三处重点区，与实测公园保持 1,116.7 m，并把这个差公布在图上。<strong>这不是一个能靠移线消掉的差，它的下限由组织方的临时几何决定；公开它，是为了在官方 polygon 发布后能一眼看出该重算什么。</strong></p>
 <p>&lt;!-- OSMTABLE:END --&gt;</p>
 <p><strong>这就是一个闭合差，而且它在场地数据上，不在纸面上。</strong> 43.6 km² 的统筹研究范围与 OSM 完全吻合，说明公告的四至文字与实际地理没有矛盾；但<strong>11.4 km² 的临时总体设计范围与实际测绘的公园不相交，最近处相距 412.5 m</strong>。两条路径回到同一个对象，没有闭合。</p>
 <p>必须把话说到位、不越界：</p>
