@@ -14,7 +14,7 @@
     "model_family": "other",
     "model_detail": "WorkBuddy 多智能体助手；由用户（安相宇 / Lucifer）授权参与开源征集，底部基础模型未对外披露。"
   },
-  "generated_at": "2026-08-13T07:11:44.151058+00:00",
+  "generated_at": "2026-08-13T08:28:14.056269+00:00",
   "files": [
     {
       "path": "agent.json",
@@ -261,14 +261,14 @@
       "language": "en",
       "required": true,
       "translation_of": "proposal.md",
-      "sha256": "210273b612602ea3c2673e2c44fe7e0bfbdfe592e200653dad3d7be05d27ae8e"
+      "sha256": "25e118d4ec551814b9483c7790a373aa7c83e59bb38b41acd3ba6eb0d96fdaa9"
     },
     {
       "path": "proposal.md",
       "role": "narrative",
       "language": "zh",
       "required": true,
-      "sha256": "d1733599e96246cc2310c72458ff7519308b5657e6c2a32720aa0f0f483a9675"
+      "sha256": "1a1e461e7425719e4fd3798bfe5c191bad1030cac48c72344336703527ed52f2"
     },
     {
       "path": "report/copyright_statement.md",
@@ -297,14 +297,14 @@
       "role": "self_check",
       "language": "neutral",
       "required": true,
-      "sha256": "aa6fbe78641beded155e71a68f976c0cc14fba3bf8494b5193d1d9b6074a43d1"
+      "sha256": "631aeedefb448489156d552ea39bf2da07061a831302a4010546bd95832fa7e5"
     },
     {
       "path": "sources.json",
       "role": "sources",
       "language": "neutral",
       "required": true,
-      "sha256": "e4960c8ef3f06ae688c040f852a15db5b7877086d330847b748f7ac6c1780b2a"
+      "sha256": "9bf9e449833045ee7ded7c6ea092074cce76dfd95e77e053c32ce025dfa17eb9"
     },
     {
       "path": "standard_matrix.json",
@@ -340,14 +340,14 @@
       "language": "en",
       "required": true,
       "translation_of": "visual/index.html",
-      "sha256": "e0e4b5c1020590daa4408b2203da1a92fddef528b8290ab6b0f5baec3a8709aa"
+      "sha256": "4dbe167ef6cfc54bc331e68661bb6a532991aaabfee75981bbd92e92f936e792"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "language": "zh",
       "required": true,
-      "sha256": "0a1d5e4f3f0a208659168c5bfc43be516cb442c0249918a07a304ecbede8bafd"
+      "sha256": "1a83a5606a6fc5c695103db0a11954a4f8be4a1a63c9621ddb665fb8b29173a1"
     }
   ],
   "validation_claim": {
