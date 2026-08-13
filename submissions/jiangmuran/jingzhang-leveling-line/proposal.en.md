@@ -1119,10 +1119,10 @@ One unique numbered plaque per contributor; once assigned, a number is never rec
 
 | Id | Component | The hard constraint — the one that can fail on site | Serves |
 |---|---|---|---|
-| KIT-01 | Benchmark stone and plaque | Stone flush with the ground, no trip hazard; plaque number unique and matching a `benchmark_id` in the geometry one-for-one | P4, P5, P7 |
-| KIT-02 | Reading plate | Current f and tolerance F both visible, with the re-survey date; a stale value counts as not posted | P2, P3, P4 |
-| KIT-03 | Seating that permits staying | Armrests, so getting up is possible; sited within sight of the reading plate, so taking a reading needs no standing wait | P5, P7 |
-| KIT-04 | Accessible wayfinding | Continuous with no break; tactile and visual channels both; the approach may not be by steps alone | P5, P6, P7 |
+| KIT-01 | Benchmark stone and plaque | Stone top within ±5 mm of the paving — "flush" with no tolerance cannot be failed; 400 × 400 × 600 mm, foundation underside at least 100 mm below the local standard frost depth; plaque number unique and matching a `benchmark_id` in the geometry one-for-one. Detailed in FIG.16 | P4, P5, P7 |
+| KIT-02 | Reading plate | Current f and tolerance F both visible, with the re-survey date; a stale value counts as not posted. Face 600 × 450 mm raked 15°, lower edge 900 mm and upper edge 1,350 mm — the band a seated and a standing reader share; the face is replaceable without the post. Detailed in FIG.16 | P2, P3, P4 |
+| KIT-03 | Seating that permits staying | Seat 450 mm high with armrests, so getting up is possible; within 2,000 mm of the reading plate and in sight of it, so taking a reading needs no standing wait. Detailed in FIG.16 | P5, P7 |
+| KIT-04 | Accessible wayfinding | Guidance strip 300 mm wide and continuous, stopping 300 mm short of the stone so it does not lead onto it; tactile and visual channels both; Ø1,500 mm turning space with 2,100 mm headroom at the reading position; the approach may not be by steps alone. Detailed in FIG.16 | P5, P6, P7 |
 | KIT-05 | Appeal point | **Must offer both a QR code and a phone or in-person route** — a QR code alone excludes anyone without a smartphone from appealing, which makes persona P4 unworkable | P4, P5, P6 |
 
 Organised by re-survey cycle rather than by festival calendar, so that an event is a governance action and not a publicity one.
@@ -1423,12 +1423,12 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-55 entries. By finder:
+56 entries. By finder:
 
 | Found by | Count | What it says |
 |---|---|---|
 | Independent audit | 25 | The audit was run against the shipped package, not a draft |
-| The author | 23 | Found while working |
+| The author | 24 | Found while working |
 | This package's own gate | 3 | Caught at build time — which is what a gate is for |
 | **Reviewers outside this proposal** | **4** | [@anselasimov-web](https://github.com/anselasimov-web) on PR #1002; [@147228](https://github.com/147228) on PR #1065; [@Sonike](https://github.com/Sonike) on Issue #950; [@147228](https://github.com/147228) on Issue #950 / PR #1190 |
 
@@ -1455,6 +1455,7 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 | A number with no file behind it | 2 |
 | Attributed to a file that refuses to do it | 1 |
 | A claim outlived the corpus | 1 |
+| A hard constraint nothing could fail | 1 |
 | The gate reported and was ignored | 1 |
 | An index that does not index | 1 |
 | A requirement with nobody to execute it | 1 |

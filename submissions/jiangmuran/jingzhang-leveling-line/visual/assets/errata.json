@@ -4,12 +4,12 @@
  "note_en": "A register of this package's own errors. Not a changelog: a changelog says what changed, this says what was wrong, what shape the error had, who found it, and which commit fixed it. Every entry names a commit, and the build verifies that commit exists and touched the file blamed. An errata register that cannot be joined to the repository is the defect it records.",
  "why_zh": "全场 351 份方案中没有一份勘误、撤回或作者自述的复盘。一个主张城市应当公开自身误差的方案，不能自己呈现一个无瑕的表面：它提出的整套机制都建立在「看不见失败的测量不值得信任」之上，文档同理。",
  "counts": {
-  "total": 55,
+  "total": 56,
   "by_found_by": {
    "audit": 25,
    "own-gate": 3,
    "external-reviewer": 4,
-   "self": 23
+   "self": 24
   },
   "by_shape": {
    "reference-does-not-resolve": 4,
@@ -25,6 +25,7 @@
    "six-classes-for-a-seven-class-partition": 1,
    "the-table-stopped-being-a-table": 1,
    "index-that-does-not-index": 1,
+   "constraint-that-cannot-be-failed": 1,
    "requirement-with-nobody-to-execute-it": 1,
    "rule-applied-to-others-but-not-to-self": 1,
    "attribution-to-a-file-that-refuses-it": 1,
@@ -476,6 +477,16 @@
    "what_zh": "图纸索引上方写「共十二张图纸，FIG.00–FIG.11 连续编号」，下方的表只有九行（FIG.01–FIG.09）。缺 FIG.00（全文开篇那张）、FIG.10（人视街道剖面）与 FIG.11（区域协同接口）——**而正文在 L531 按编号引用了 FIG.11**，把读者指向一个不含它的索引。同一处的复核清单则编号成 1…10、8、9，十二项用了十个号。",
    "why_zh": "两个语种带着同样的九行，所以这不是翻译疏漏，是**完整性声明写在表格上方那句话里、而不是由表格本身承担**。清单的编号是看得见的那个缺陷，危险的是另一个：清单上每一项都指名一个路径，一份把评审指向不存在文件的清单，比没有清单更糟。",
    "fix_zh": "两者都改为生成：索引由 `build_figure_index.py` 从随包 PNG 生成，句中的份数写自 `len(FIGURES)`，并断言每张随包图有编号、每个编号有文件、正文引用的每个 FIG.NN 都能解析到行；清单由 `enumerate` 编号，且十二项声明的 17 条路径必须全部在包内解析。"
+  },
+  {
+   "id": "E56",
+   "commit": "4c496904",
+   "file": "assets/figures/detail.png",
+   "found_by": "self",
+   "shape": "constraint-that-cannot-be-failed",
+   "what_zh": "组件库 KIT-01…05 有一列叫「硬约束——可被现场判定不合格的那一条」，而其中没有一条带数值：「与地面齐平」没有公差，「可停留座具」没有面高与距离，「无障碍引导」没有宽度，「读数牌」没有安装高度。**整包没有出现过一个毫米。**",
+   "why_zh": "**这一列的标题声称它可以被判定不合格，而它写成的样子判不了。** 「齐平」不带公差时，合格与否等于浇筑的人自己的看法；「在视线内」不带距离时，验收方无从否决。更难堪的是次序：本包上一轮刚发布了年运营成本表——**它给一个从未标注过尺寸的物件定了价**，而耗材那一格的区间正是按那个没有尺寸的物件估的。这不是数字过期，是**一份把自己写成规格书的清单，其实是一组形容词**。",
+   "fix_zh": "新增 FIG.16：1:20 平面与 1:10 剖面、立面，九项尺寸逐项给出并各写明「为什么是这个数」——齐平公差 ≤ ±5 mm、牌面下沿 900 / 上沿 1,350 mm（坐姿与立姿共同可读区）、申诉三路画成三块面板（缺一即验收不通过）、座具面高 450 mm 且距牌面 ≤ 2,000 mm。**唯一不填的是标准冻深 D**：那是当地岩土数值，包内无可核来源，图上给规则（基础底面低于 D 不少于 100 mm）不给数，由工程勘察填。实测栏留空，牌面数值标明为示例。"
   },
   {
    "id": "E55",
