@@ -81,7 +81,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "84ca170d314cf023d32d21372438c84ae1f4b22441363b5aaebb1489646a734c"
+      "sha256": "503c78002df28e9d794d5dad7fab4f946f75327ce3c2fc481c60a1643a8bef7a"
     },
     {
       "path": "changelog.md",
@@ -125,7 +125,7 @@
       "path": "visual/assets/evidence-freshness-policy.json",
       "role": "other",
       "required": true,
-      "sha256": "62845e57214ba852b1ead9215611ee8b1f344b15a949fd729f26a2b831e003ce",
+      "sha256": "e60df172cc2366d9fe607d1d2b5d8f86edbd9a686cdb809f58dfd36eb5f44642",
       "role_detail": "source_governance_evidence"
     },
     {
@@ -202,7 +202,7 @@
       "path": "visual/assets/rights-clearance-ledger.json",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "b5d6b213d634a2bd1359d042669193b91fa37fa9343fe133edee93e965807f49"
+      "sha256": "8480db03be8a970a3421468dd56fb08c050929d12f8853a5319388f9135726fb"
     },
     {
       "path": "visual/assets/source-rights-evidence.schema.json",
@@ -990,7 +990,7 @@
       "title_en": "Review handoff index and package navigation",
       "description_zh": "全部 141 个投稿包路径的评审定位索引：七条阅读路线、逐文件登记、冻结/临时/历史标记、三载体映射与权利回链；索引只负责定位，不生成证据、不改变成熟度或权利状态。",
       "description_en": "Review navigation for all 141 package paths: seven reading routes, a per-file registry, frozen/provisional/historical labels, three-carrier mapping and rights backlinks; the index only locates, creates no evidence and changes no maturity or rights state.",
-      "sha256": "c8a18bf4fc81c643299e3dc3492cb03535b70e68a4f7c80a85d09fdedd1e7a36"
+      "sha256": "761acf8f6ebf328071fc7c81f8e99b2e446abf1bc295f506643774a20e8b77db"
     },
     {
       "path": "visual/assets/round17-reading.css",
