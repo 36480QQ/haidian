@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "package_id": "jingzhang-ai-commons",
   "project_id": "centennial-jingzhang-ai-belt",
   "site_package_version": "0.1.0",
@@ -10,9 +10,12 @@
   "agent": {
     "agent_id": "crailstubler-wq",
     "agent_name": "Codex 城市智能体",
-    "model": "OpenAI Codex (GPT-5)"
+    "model": "OpenAI Codex (GPT-5)",
+    "model_family": "gpt",
+    "model_detail": "OpenAI Codex (GPT-5) with a DeepSeek API adversarial-review pass"
   },
-  "generated_at": "2026-08-11T08:35:38Z",
+  "generated_at": "2026-08-14T03:21:07Z",
+  "cover_image": "assets/media/cover.webp",
   "files": [
     {
       "path": "manifest.json",
@@ -23,13 +26,22 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "3ba927f706e54529dba2ad4932c4876988f8b6912abb6d28c2beea3e02769378"
+      "sha256": "3006bf859a735843a443f1d8c0eba41c2ae18df3ef4aaa8369c2285e4efef133",
+      "language": "zh"
+    },
+    {
+      "path": "proposal.en.md",
+      "role": "narrative",
+      "required": true,
+      "sha256": "2c9e5e2bd591ddbf1dbd960175b194ea852762e83b2422dcfb5fbb6bcc31e474",
+      "language": "en",
+      "translation_of": "proposal.md"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "4318ea37c742d2272080b9f3d14cce53fc2e7697e9fd456b92a657a874bb8ac6"
+      "sha256": "c73982b89843699b8d834eaf1eac54ec3f987bc67809436b99a9c79b1d97a2d6"
     },
     {
       "path": "metrics.json",
@@ -53,7 +65,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "22fb384bd00bd73602981a56beed11e3e8ba704c358e542449e183c5c7797343"
+      "sha256": "df66a82b7ddf2cd3d7e3fae62d765409781668d42b4b30d9632b885d248c8895"
     },
     {
       "path": "compliance_matrix.json",
@@ -77,97 +89,226 @@
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "e256eb201035142385a332c51e69e19bccd0e1d4164b8b946e5071d0b40bcc6d"
+      "sha256": "986ef5479816792c54e9577c43fd8febda6eb5352f3d65c0d4623de9222c3c6c",
+      "language": "zh"
+    },
+    {
+      "path": "report/proposal.en.html",
+      "role": "rendered_proposal_html",
+      "required": true,
+      "sha256": "54d9e72d19c3fca926e266fbaf1070600632cd70485f8bdde22fb03bcde56771",
+      "language": "en",
+      "translation_of": "report/proposal.html"
     },
     {
       "path": "report/narrative.md",
       "role": "narrative",
       "required": false,
-      "sha256": "0d611a25649bcc134be2abc3140b7473c5706676a0bc63f108704c824432c682"
+      "sha256": "0d611a25649bcc134be2abc3140b7473c5706676a0bc63f108704c824432c682",
+      "language": "zh"
     },
     {
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "e9a5dc6b70dbd252fe0e1eff45492e2b3289cd4bf0e92d0b664a4d003cae1c8c"
-    },
-    {
-      "path": "drawings/a3-booklet.pdf",
-      "role": "drawing",
-      "required": true,
-      "sha256": "affed3bf36a472f174f14f48c6d92d91d13712413ac67f9f215ee82c2f7d3b01"
+      "sha256": "d99580e839a7f235b53f8104a32a1002265dfae7f24f32d0e586c9caaab65ec2",
+      "language": "zh"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "898248f75dfe7ab3cf4997eaf25bf4fedc6dc8e0c3254a59023e9ae46057a0ce"
+      "sha256": "19e7dc0195276501e5f32556d5f273c0c37fe0854a347e9cee4ac9f56d382766",
+      "language": "zh"
+    },
+    {
+      "path": "drawings/a0-boards.en.pdf",
+      "role": "drawing",
+      "required": true,
+      "sha256": "9d0a869c8c7f239b4a2cdfffd79e5e0a14d12f1e15cca8884eaf63ae63cd9933",
+      "language": "en",
+      "translation_of": "drawings/a0-boards.pdf"
+    },
+    {
+      "path": "drawings/a3-booklet.pdf",
+      "role": "drawing",
+      "required": true,
+      "sha256": "f52c0a52159c54f052804d9336416f64900085e697f03186a1a5df70a298c70e",
+      "language": "zh"
+    },
+    {
+      "path": "drawings/a3-booklet.en.pdf",
+      "role": "drawing",
+      "required": true,
+      "sha256": "a2f868e6e1315aec35e9f36e0e5d7705b345feae9c02e79c9120f5b86bac8bdb",
+      "language": "en",
+      "translation_of": "drawings/a3-booklet.pdf"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
-      "sha256": "b4c5128f4ae326a4b50f8053fee6ecd3e4441ac67bd6ff4270d38b0368ba7d53"
+      "sha256": "daace35487b47c7dcd963ff57b2df35a2caa7cba44727f1d21c5c214a69a8f30",
+      "language": "zh"
     },
     {
-      "path": "assets/figures/key-areas.png",
-      "role": "proposal_figure",
+      "path": "visual/index.en.html",
+      "role": "visualization",
       "required": true,
-      "sha256": "7e2d87ea9adf65df76c006cdd220afd958200020242dbcb34c311d9fe0655de8"
+      "sha256": "39754d43d03db3add62f1a17fa5638aaf88b64f89525e6a814860a1763ea9521",
+      "language": "en",
+      "translation_of": "visual/index.html"
     },
     {
-      "path": "assets/figures/land-use-structure.png",
-      "role": "proposal_figure",
+      "path": "visual/assets/source-han-sans.css",
+      "role": "asset",
       "required": true,
-      "sha256": "24c85892a36ab751ae0c3f382c17dc2f5c58f3200e4d9bc0adcdfb247ef1b1f1"
+      "sha256": "90add41bfc19c56ff19607b7436158097f79f5a45ad483414b3abd5d3096bea6",
+      "language": "neutral"
     },
     {
-      "path": "assets/figures/metrics-evidence.png",
-      "role": "proposal_figure",
-      "required": true,
-      "sha256": "9d92612deb25fdbb8d9e6ee371a6fcb6200263fba46d90c79c490346782ba1a3"
-    },
-    {
-      "path": "assets/figures/mobility-bluegreen.png",
-      "role": "proposal_figure",
-      "required": true,
-      "sha256": "bcc598a2e7b094c74a94178ebb9956a9624f3eecb77d84e0037fd24b83186fd7"
+      "path": "assets/media/cover.webp",
+      "role": "media_poster",
+      "required": false,
+      "sha256": "5d97976306f300f4573bf81ddd75c0c7397a21fc77b12a4ff061cf5cf3c6f0d1",
+      "language": "neutral",
+      "title_zh": "京张新一站居民生活场景",
+      "title_en": "Next Stop Jingzhang civic-life scene",
+      "description_zh": "参赛团队制作的居民场景设计想象图封面",
+      "description_en": "Participant-authored cover using a resident-life design impression"
     },
     {
       "path": "assets/figures/site-overview.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "d0378c43e25b933f5a818ad38fadda2b425b120047194e9cd42f88387fd17123"
+      "sha256": "d0378c43e25b933f5a818ad38fadda2b425b120047194e9cd42f88387fd17123",
+      "language": "zh"
+    },
+    {
+      "path": "assets/figures/site-overview.en.png",
+      "role": "proposal_figure",
+      "required": true,
+      "sha256": "eae66646f5cbf334c093cc873c13f46f37923458f020aa4fac1c351f84b734ef",
+      "language": "en",
+      "translation_of": "assets/figures/site-overview.png"
+    },
+    {
+      "path": "assets/figures/land-use-structure.png",
+      "role": "proposal_figure",
+      "required": true,
+      "sha256": "24c85892a36ab751ae0c3f382c17dc2f5c58f3200e4d9bc0adcdfb247ef1b1f1",
+      "language": "zh"
+    },
+    {
+      "path": "assets/figures/land-use-structure.en.png",
+      "role": "proposal_figure",
+      "required": true,
+      "sha256": "dd4aa156c1509e3d026885df823ce58ba506ecb1687c8379135eb96ec7f34488",
+      "language": "en",
+      "translation_of": "assets/figures/land-use-structure.png"
+    },
+    {
+      "path": "assets/figures/key-areas.png",
+      "role": "proposal_figure",
+      "required": true,
+      "sha256": "7e2d87ea9adf65df76c006cdd220afd958200020242dbcb34c311d9fe0655de8",
+      "language": "zh"
+    },
+    {
+      "path": "assets/figures/key-areas.en.png",
+      "role": "proposal_figure",
+      "required": true,
+      "sha256": "7d28f0a149084aef550f7891b62bf486004c8acfc79888e64873e80769092b1a",
+      "language": "en",
+      "translation_of": "assets/figures/key-areas.png"
+    },
+    {
+      "path": "assets/figures/mobility-bluegreen.png",
+      "role": "proposal_figure",
+      "required": true,
+      "sha256": "bcc598a2e7b094c74a94178ebb9956a9624f3eecb77d84e0037fd24b83186fd7",
+      "language": "zh"
+    },
+    {
+      "path": "assets/figures/mobility-bluegreen.en.png",
+      "role": "proposal_figure",
+      "required": true,
+      "sha256": "336586243b891e6c4e3d4a1c2bdad7283f653f5bd2de76de85c4077a971a4ed6",
+      "language": "en",
+      "translation_of": "assets/figures/mobility-bluegreen.png"
+    },
+    {
+      "path": "assets/figures/metrics-evidence.png",
+      "role": "proposal_figure",
+      "required": true,
+      "sha256": "9d92612deb25fdbb8d9e6ee371a6fcb6200263fba46d90c79c490346782ba1a3",
+      "language": "zh"
+    },
+    {
+      "path": "assets/figures/metrics-evidence.en.png",
+      "role": "proposal_figure",
+      "required": true,
+      "sha256": "99b0404915ce0a0fb1dfae71373a957c070a93c175697b4196fe1f92286e94e0",
+      "language": "en",
+      "translation_of": "assets/figures/metrics-evidence.png"
+    },
+    {
+      "path": "assets/figures/spatial-prototypes.png",
+      "role": "proposal_figure",
+      "required": true,
+      "sha256": "c0734d0e97d7a3f9051c41c12f4ab0befbe93804491d830a9d782d02890f82f4",
+      "language": "zh"
+    },
+    {
+      "path": "assets/figures/spatial-prototypes.en.png",
+      "role": "proposal_figure",
+      "required": true,
+      "sha256": "343d1f27a19f159e25b2189f5063edaa17c620ebcece824e4950a0b5242da220",
+      "language": "en",
+      "translation_of": "assets/figures/spatial-prototypes.png"
+    },
+    {
+      "path": "assets/figures/regional-synergy.png",
+      "role": "proposal_figure",
+      "required": true,
+      "sha256": "0fee64708fb5b222b2a777ed4b6de09b2c2665c41a8f7aee30d29aa66d170616",
+      "language": "zh"
+    },
+    {
+      "path": "assets/figures/regional-synergy.en.png",
+      "role": "proposal_figure",
+      "required": true,
+      "sha256": "f1cee8de53b86bbdd0aaad9585364341f7a3175cc47f8edd9a08be74985498db",
+      "language": "en",
+      "translation_of": "assets/figures/regional-synergy.png"
     },
     {
       "path": "assets/figures/concept-hero-resident-life-v1.jpg",
       "role": "proposal_figure",
       "required": false,
-      "sha256": "0f5f934736a6d235af61b4a9ab4b40534012529e319a94416bf97e4a690e78b9"
+      "sha256": "0f5f934736a6d235af61b4a9ab4b40534012529e319a94416bf97e4a690e78b9",
+      "language": "neutral"
     },
     {
       "path": "assets/figures/concept-zhongzhiyuan-safe-garden-v1.jpg",
       "role": "proposal_figure",
       "required": false,
-      "sha256": "4fd3390ab9bc6e4c5b54156f3170b0458177abd19f0e172f2076d512427c88a4"
+      "sha256": "4fd3390ab9bc6e4c5b54156f3170b0458177abd19f0e172f2076d512427c88a4",
+      "language": "neutral"
     },
     {
       "path": "assets/figures/concept-ai-origin-co-creation-v1.jpg",
       "role": "proposal_figure",
       "required": false,
-      "sha256": "12e46dbc1f85ac1a4fa4af79ca3c8dedf86cf02d54e050691eff16991520a40d"
+      "sha256": "12e46dbc1f85ac1a4fa4af79ca3c8dedf86cf02d54e050691eff16991520a40d",
+      "language": "neutral"
     },
     {
       "path": "assets/figures/concept-dazhongsi-service-living-room-v1.jpg",
       "role": "proposal_figure",
       "required": false,
-      "sha256": "966a3da2c451f31d5607c8b769ff9847ba3292c891f270b4fcf9cff3dc682160"
-    },
-    {
-      "path": "visual/assets/source-han-sans.css",
-      "role": "visualization",
-      "required": false,
-      "sha256": "6240aa0c30f852ba481cf36853da4053e685bc20fdcea3e8da88a58d2746ac23"
+      "sha256": "966a3da2c451f31d5607c8b769ff9847ba3292c891f270b4fcf9cff3dc682160",
+      "language": "neutral"
     },
     {
       "path": "geometry/buildings.geojson",
@@ -227,6 +368,7 @@
   "validation_claim": {
     "self_checked": true,
     "known_blockers": [],
-    "data_confidence": "high"
+    "data_confidence": "mixed_provisional_and_conceptual",
+    "readiness_contract": "persisted-self-check-v1"
   }
 }
