@@ -31,6 +31,9 @@
         "submissions/EthanHuangEbor/jingzhang-everyday-loop/assets/figures/site-overview.en.png",
         "submissions/EthanHuangEbor/jingzhang-everyday-loop/assets/figures/site-overview.png",
         "submissions/EthanHuangEbor/jingzhang-everyday-loop/assets/media/concept-everyday-corridor.png",
+        "submissions/EthanHuangEbor/jingzhang-everyday-loop/assets/media/dazhongsi-spatial-view.png",
+        "submissions/EthanHuangEbor/jingzhang-everyday-loop/assets/media/origin-community-spatial-view.png",
+        "submissions/EthanHuangEbor/jingzhang-everyday-loop/assets/media/zhongzhiyuan-spatial-view.png",
         "submissions/EthanHuangEbor/jingzhang-everyday-loop/assumptions.json",
         "submissions/EthanHuangEbor/jingzhang-everyday-loop/changelog.md",
         "submissions/EthanHuangEbor/jingzhang-everyday-loop/compliance_matrix.json",
@@ -59,13 +62,24 @@
         "submissions/EthanHuangEbor/jingzhang-everyday-loop/self_check.json",
         "submissions/EthanHuangEbor/jingzhang-everyday-loop/sources.json",
         "submissions/EthanHuangEbor/jingzhang-everyday-loop/standard_matrix.json",
+        "submissions/EthanHuangEbor/jingzhang-everyday-loop/visual/assets/accessibility-audit.json",
+        "submissions/EthanHuangEbor/jingzhang-everyday-loop/visual/assets/annual-program.json",
+        "submissions/EthanHuangEbor/jingzhang-everyday-loop/visual/assets/asset-rights-ledger.json",
+        "submissions/EthanHuangEbor/jingzhang-everyday-loop/visual/assets/bilingual-equivalence.json",
+        "submissions/EthanHuangEbor/jingzhang-everyday-loop/visual/assets/case-studies.json",
+        "submissions/EthanHuangEbor/jingzhang-everyday-loop/visual/assets/competition.css",
+        "submissions/EthanHuangEbor/jingzhang-everyday-loop/visual/assets/design-system.json",
+        "submissions/EthanHuangEbor/jingzhang-everyday-loop/visual/assets/professional-evidence.json",
+        "submissions/EthanHuangEbor/jingzhang-everyday-loop/visual/assets/repair-matrix.json",
+        "submissions/EthanHuangEbor/jingzhang-everyday-loop/visual/assets/scenarios.json",
+        "submissions/EthanHuangEbor/jingzhang-everyday-loop/visual/assets/stations.json",
         "submissions/EthanHuangEbor/jingzhang-everyday-loop/visual/index.en.html",
         "submissions/EthanHuangEbor/jingzhang-everyday-loop/visual/index.html"
       ],
       "ai_package_stages": {
         "submissions/EthanHuangEbor/jingzhang-everyday-loop": "formal"
       },
-      "total_bytes": 24904964,
+      "total_bytes": 22566471,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -143,11 +157,11 @@
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 1,
-          "standard": 0,
-          "depth": 1,
-          "data": 0,
-          "metric": 1
+          "source": 14,
+          "standard": 4,
+          "depth": 14,
+          "data": 10,
+          "metric": 5
         }
       }
     },
