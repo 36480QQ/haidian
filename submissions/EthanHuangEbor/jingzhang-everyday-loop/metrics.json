@@ -79,6 +79,60 @@
       "confidence": "high",
       "assumptions": []
     },
+    "prototype_spatial_moment_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": ["visual/assets/origin-life-service-station.json"],
+      "formula": "count(spatial_moments)",
+      "confidence": "high",
+      "assumptions": ["Concept prototype; not authorized or run in the field."]
+    },
+    "synthetic_tabletop_check_count": {
+      "status": "known",
+      "value": 72,
+      "unit": "count",
+      "source_files": ["visual/assets/public-acceptance-tabletop/receipts.json"],
+      "formula": "12 scenario contracts * (1 qualified + 5 negative variants)",
+      "confidence": "high",
+      "assumptions": ["Deterministic synthetic checks; not field performance."]
+    },
+    "qualified_tabletop_release_count": {
+      "status": "known",
+      "value": 12,
+      "unit": "count",
+      "source_files": ["visual/assets/public-acceptance-tabletop/receipts.json"],
+      "formula": "count(release_decision == release_for_tabletop_only)",
+      "confidence": "high",
+      "assumptions": ["Tabletop-only release is not implementation approval."]
+    },
+    "blocked_negative_case_count": {
+      "status": "known",
+      "value": 60,
+      "unit": "count",
+      "source_files": ["visual/assets/public-acceptance-tabletop/receipts.json"],
+      "formula": "count(negative case and release_decision == block_release)",
+      "confidence": "high",
+      "assumptions": ["Deterministic synthetic checks; not field performance."]
+    },
+    "evidence_gate_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": ["visual/assets/first-100-days.json"],
+      "formula": "count(unique gate G0 through G4)",
+      "confidence": "high",
+      "assumptions": ["Proposed gates; real signatories remain unconfirmed."]
+    },
+    "first_100_days_package_count": {
+      "status": "known",
+      "value": 8,
+      "unit": "count",
+      "source_files": ["visual/assets/first-100-days.json"],
+      "formula": "count(programme)",
+      "confidence": "high",
+      "assumptions": ["Proposed work packages; programme has not started."]
+    },
     "floor_area_ratio": {
       "status": "unknown",
       "value": null,

@@ -1,0 +1,654 @@
+{
+  "schema_version": "1.0",
+  "model": "gpt-image-2",
+  "visible_page_policy": "All 34 visible PDF pages were generated or edited only with gpt-image-2. Packaging added no visible text, line, shape, diagram, or annotation.",
+  "page_count": 34,
+  "pages": [
+    {
+      "page_id": "A0-ZH-01",
+      "family": "a0",
+      "language": "zh",
+      "model": "gpt-image-2",
+      "visual_authoring": "image2_only",
+      "image2_workflow": "generation_or_image2_edit_of_current_project_output",
+      "input_policy": "current-project-owned Image-2 output and structured facts only",
+      "excluded_inputs": [
+        "PR #2247 images",
+        "PR #2247 diagrams",
+        "PR #2247 prose",
+        "third-party brand assets"
+      ],
+      "source_image_sha256": "3297d8d7c97c069c3e597347f3c269b67c7ec9b1fa769afc3bf0a56bf5385b2e",
+      "delivery": "drawings/a0-boards.pdf#page=1",
+      "human_review": "accepted_after_original-resolution_text_count_warning_and_visual_review",
+      "non_claim": "concept proposal; not field performance or implementation approval"
+    },
+    {
+      "page_id": "A0-ZH-02",
+      "family": "a0",
+      "language": "zh",
+      "model": "gpt-image-2",
+      "visual_authoring": "image2_only",
+      "image2_workflow": "generation_or_image2_edit_of_current_project_output",
+      "input_policy": "current-project-owned Image-2 output and structured facts only",
+      "excluded_inputs": [
+        "PR #2247 images",
+        "PR #2247 diagrams",
+        "PR #2247 prose",
+        "third-party brand assets"
+      ],
+      "source_image_sha256": "c3a7be07fd4f590ac0688ad9b757804bbf1318c83195111b4a9b39584b707e4e",
+      "delivery": "drawings/a0-boards.pdf#page=2",
+      "human_review": "accepted_after_original-resolution_text_count_warning_and_visual_review",
+      "non_claim": "concept proposal; not field performance or implementation approval"
+    },
+    {
+      "page_id": "A0-ZH-03",
+      "family": "a0",
+      "language": "zh",
+      "model": "gpt-image-2",
+      "visual_authoring": "image2_only",
+      "image2_workflow": "generation_or_image2_edit_of_current_project_output",
+      "input_policy": "current-project-owned Image-2 output and structured facts only",
+      "excluded_inputs": [
+        "PR #2247 images",
+        "PR #2247 diagrams",
+        "PR #2247 prose",
+        "third-party brand assets"
+      ],
+      "source_image_sha256": "ab5620bf18f0fab5421b19c79d4d562f987c5f6f66730dc8efd45f548acdc4e1",
+      "delivery": "drawings/a0-boards.pdf#page=3",
+      "human_review": "accepted_after_original-resolution_text_count_warning_and_visual_review",
+      "non_claim": "concept proposal; not field performance or implementation approval"
+    },
+    {
+      "page_id": "A0-ZH-04",
+      "family": "a0",
+      "language": "zh",
+      "model": "gpt-image-2",
+      "visual_authoring": "image2_only",
+      "image2_workflow": "generation_or_image2_edit_of_current_project_output",
+      "input_policy": "current-project-owned Image-2 output and structured facts only",
+      "excluded_inputs": [
+        "PR #2247 images",
+        "PR #2247 diagrams",
+        "PR #2247 prose",
+        "third-party brand assets"
+      ],
+      "source_image_sha256": "71b43a8c7016844fe8c315ad237ed4f7524e5b6fa4d6083e98f91aac1c9a6242",
+      "delivery": "drawings/a0-boards.pdf#page=4",
+      "human_review": "accepted_after_original-resolution_text_count_warning_and_visual_review",
+      "non_claim": "concept proposal; not field performance or implementation approval"
+    },
+    {
+      "page_id": "A0-ZH-05",
+      "family": "a0",
+      "language": "zh",
+      "model": "gpt-image-2",
+      "visual_authoring": "image2_only",
+      "image2_workflow": "generation_or_image2_edit_of_current_project_output",
+      "input_policy": "current-project-owned Image-2 output and structured facts only",
+      "excluded_inputs": [
+        "PR #2247 images",
+        "PR #2247 diagrams",
+        "PR #2247 prose",
+        "third-party brand assets"
+      ],
+      "source_image_sha256": "1aec6745094e2ba583c19e7d33e3c4c4ac4c6d1f173a99d5768fbd12801a0f86",
+      "delivery": "drawings/a0-boards.pdf#page=5",
+      "human_review": "accepted_after_original-resolution_text_count_warning_and_visual_review",
+      "non_claim": "concept proposal; not field performance or implementation approval"
+    },
+    {
+      "page_id": "A0-EN-01",
+      "family": "a0",
+      "language": "en",
+      "model": "gpt-image-2",
+      "visual_authoring": "image2_only",
+      "image2_workflow": "generation_or_image2_edit_of_current_project_output",
+      "input_policy": "current-project-owned Image-2 output and structured facts only",
+      "excluded_inputs": [
+        "PR #2247 images",
+        "PR #2247 diagrams",
+        "PR #2247 prose",
+        "third-party brand assets"
+      ],
+      "source_image_sha256": "7bf87e3e59047c6cabd94d890d0e306a77d7cc25e778893b6e18b800db3233e3",
+      "delivery": "drawings/a0-boards.en.pdf#page=1",
+      "human_review": "accepted_after_original-resolution_text_count_warning_and_visual_review",
+      "non_claim": "concept proposal; not field performance or implementation approval"
+    },
+    {
+      "page_id": "A0-EN-02",
+      "family": "a0",
+      "language": "en",
+      "model": "gpt-image-2",
+      "visual_authoring": "image2_only",
+      "image2_workflow": "generation_or_image2_edit_of_current_project_output",
+      "input_policy": "current-project-owned Image-2 output and structured facts only",
+      "excluded_inputs": [
+        "PR #2247 images",
+        "PR #2247 diagrams",
+        "PR #2247 prose",
+        "third-party brand assets"
+      ],
+      "source_image_sha256": "36fabc1b83b574a9a7702440f957b9d02aef3b54a1a815f2707031289b9733fa",
+      "delivery": "drawings/a0-boards.en.pdf#page=2",
+      "human_review": "accepted_after_original-resolution_text_count_warning_and_visual_review",
+      "non_claim": "concept proposal; not field performance or implementation approval"
+    },
+    {
+      "page_id": "A0-EN-03",
+      "family": "a0",
+      "language": "en",
+      "model": "gpt-image-2",
+      "visual_authoring": "image2_only",
+      "image2_workflow": "generation_or_image2_edit_of_current_project_output",
+      "input_policy": "current-project-owned Image-2 output and structured facts only",
+      "excluded_inputs": [
+        "PR #2247 images",
+        "PR #2247 diagrams",
+        "PR #2247 prose",
+        "third-party brand assets"
+      ],
+      "source_image_sha256": "345a035c46674aafa2eccabbeb6cc6a3e0e5105525d10ab0834984731045f90c",
+      "delivery": "drawings/a0-boards.en.pdf#page=3",
+      "human_review": "accepted_after_original-resolution_text_count_warning_and_visual_review",
+      "non_claim": "concept proposal; not field performance or implementation approval"
+    },
+    {
+      "page_id": "A0-EN-04",
+      "family": "a0",
+      "language": "en",
+      "model": "gpt-image-2",
+      "visual_authoring": "image2_only",
+      "image2_workflow": "generation_or_image2_edit_of_current_project_output",
+      "input_policy": "current-project-owned Image-2 output and structured facts only",
+      "excluded_inputs": [
+        "PR #2247 images",
+        "PR #2247 diagrams",
+        "PR #2247 prose",
+        "third-party brand assets"
+      ],
+      "source_image_sha256": "36175ead189b2f6e9e2fc4ff14695c07a348f393a205c4362a7a20a1956d6d3d",
+      "delivery": "drawings/a0-boards.en.pdf#page=4",
+      "human_review": "accepted_after_original-resolution_text_count_warning_and_visual_review",
+      "non_claim": "concept proposal; not field performance or implementation approval"
+    },
+    {
+      "page_id": "A0-EN-05",
+      "family": "a0",
+      "language": "en",
+      "model": "gpt-image-2",
+      "visual_authoring": "image2_only",
+      "image2_workflow": "generation_or_image2_edit_of_current_project_output",
+      "input_policy": "current-project-owned Image-2 output and structured facts only",
+      "excluded_inputs": [
+        "PR #2247 images",
+        "PR #2247 diagrams",
+        "PR #2247 prose",
+        "third-party brand assets"
+      ],
+      "source_image_sha256": "1d6bae246f071a34536463ab7eb4271b43c124c4e1d8a0e8b92b575ce8fb57f3",
+      "delivery": "drawings/a0-boards.en.pdf#page=5",
+      "human_review": "accepted_after_original-resolution_text_count_warning_and_visual_review",
+      "non_claim": "concept proposal; not field performance or implementation approval"
+    },
+    {
+      "page_id": "A3-ZH-01",
+      "family": "a3",
+      "language": "zh",
+      "model": "gpt-image-2",
+      "visual_authoring": "image2_only",
+      "image2_workflow": "generation_or_image2_edit_of_current_project_output",
+      "input_policy": "current-project-owned Image-2 output and structured facts only",
+      "excluded_inputs": [
+        "PR #2247 images",
+        "PR #2247 diagrams",
+        "PR #2247 prose",
+        "third-party brand assets"
+      ],
+      "source_image_sha256": "ffc1202824072f086620f7d3f5046a1d77c651b65e9212da88068d3e2fd3e63a",
+      "delivery": "drawings/a3-booklet.pdf#page=1",
+      "human_review": "accepted_after_original-resolution_text_count_warning_and_visual_review",
+      "non_claim": "concept proposal; not field performance or implementation approval"
+    },
+    {
+      "page_id": "A3-ZH-02",
+      "family": "a3",
+      "language": "zh",
+      "model": "gpt-image-2",
+      "visual_authoring": "image2_only",
+      "image2_workflow": "generation_or_image2_edit_of_current_project_output",
+      "input_policy": "current-project-owned Image-2 output and structured facts only",
+      "excluded_inputs": [
+        "PR #2247 images",
+        "PR #2247 diagrams",
+        "PR #2247 prose",
+        "third-party brand assets"
+      ],
+      "source_image_sha256": "58eade69de1fa963c21805f1c6e7877014ee5106a09c89bbf98e8f4ce8f6dce5",
+      "delivery": "drawings/a3-booklet.pdf#page=2",
+      "human_review": "accepted_after_original-resolution_text_count_warning_and_visual_review",
+      "non_claim": "concept proposal; not field performance or implementation approval"
+    },
+    {
+      "page_id": "A3-ZH-03",
+      "family": "a3",
+      "language": "zh",
+      "model": "gpt-image-2",
+      "visual_authoring": "image2_only",
+      "image2_workflow": "generation_or_image2_edit_of_current_project_output",
+      "input_policy": "current-project-owned Image-2 output and structured facts only",
+      "excluded_inputs": [
+        "PR #2247 images",
+        "PR #2247 diagrams",
+        "PR #2247 prose",
+        "third-party brand assets"
+      ],
+      "source_image_sha256": "c9d27e97a27db69bae897054910481900c6a7f0440d9bcfde74b098da6cd24fb",
+      "delivery": "drawings/a3-booklet.pdf#page=3",
+      "human_review": "accepted_after_original-resolution_text_count_warning_and_visual_review",
+      "non_claim": "concept proposal; not field performance or implementation approval"
+    },
+    {
+      "page_id": "A3-ZH-04",
+      "family": "a3",
+      "language": "zh",
+      "model": "gpt-image-2",
+      "visual_authoring": "image2_only",
+      "image2_workflow": "generation_or_image2_edit_of_current_project_output",
+      "input_policy": "current-project-owned Image-2 output and structured facts only",
+      "excluded_inputs": [
+        "PR #2247 images",
+        "PR #2247 diagrams",
+        "PR #2247 prose",
+        "third-party brand assets"
+      ],
+      "source_image_sha256": "b34d2fe88660b0d934960664536c537a8660420d72456215c1275ff47bba6a2b",
+      "delivery": "drawings/a3-booklet.pdf#page=4",
+      "human_review": "accepted_after_original-resolution_text_count_warning_and_visual_review",
+      "non_claim": "concept proposal; not field performance or implementation approval"
+    },
+    {
+      "page_id": "A3-ZH-05",
+      "family": "a3",
+      "language": "zh",
+      "model": "gpt-image-2",
+      "visual_authoring": "image2_only",
+      "image2_workflow": "generation_or_image2_edit_of_current_project_output",
+      "input_policy": "current-project-owned Image-2 output and structured facts only",
+      "excluded_inputs": [
+        "PR #2247 images",
+        "PR #2247 diagrams",
+        "PR #2247 prose",
+        "third-party brand assets"
+      ],
+      "source_image_sha256": "7705e29846cf97e0ccf788f5ff5d61ce5f6a3aed42248bfcce1f65d9b2998738",
+      "delivery": "drawings/a3-booklet.pdf#page=5",
+      "human_review": "accepted_after_original-resolution_text_count_warning_and_visual_review",
+      "non_claim": "concept proposal; not field performance or implementation approval"
+    },
+    {
+      "page_id": "A3-ZH-06",
+      "family": "a3",
+      "language": "zh",
+      "model": "gpt-image-2",
+      "visual_authoring": "image2_only",
+      "image2_workflow": "generation_or_image2_edit_of_current_project_output",
+      "input_policy": "current-project-owned Image-2 output and structured facts only",
+      "excluded_inputs": [
+        "PR #2247 images",
+        "PR #2247 diagrams",
+        "PR #2247 prose",
+        "third-party brand assets"
+      ],
+      "source_image_sha256": "9bbce817594224848d50a4f68030e9f43891e193542f79954ff8d0487ff1b8ed",
+      "delivery": "drawings/a3-booklet.pdf#page=6",
+      "human_review": "accepted_after_original-resolution_text_count_warning_and_visual_review",
+      "non_claim": "concept proposal; not field performance or implementation approval"
+    },
+    {
+      "page_id": "A3-ZH-07",
+      "family": "a3",
+      "language": "zh",
+      "model": "gpt-image-2",
+      "visual_authoring": "image2_only",
+      "image2_workflow": "generation_or_image2_edit_of_current_project_output",
+      "input_policy": "current-project-owned Image-2 output and structured facts only",
+      "excluded_inputs": [
+        "PR #2247 images",
+        "PR #2247 diagrams",
+        "PR #2247 prose",
+        "third-party brand assets"
+      ],
+      "source_image_sha256": "a30a35f21b44b67e27bf48fbaadbb1811ae72463bbeb303d5bdc33773ae26514",
+      "delivery": "drawings/a3-booklet.pdf#page=7",
+      "human_review": "accepted_after_original-resolution_text_count_warning_and_visual_review",
+      "non_claim": "concept proposal; not field performance or implementation approval"
+    },
+    {
+      "page_id": "A3-ZH-08",
+      "family": "a3",
+      "language": "zh",
+      "model": "gpt-image-2",
+      "visual_authoring": "image2_only",
+      "image2_workflow": "generation_or_image2_edit_of_current_project_output",
+      "input_policy": "current-project-owned Image-2 output and structured facts only",
+      "excluded_inputs": [
+        "PR #2247 images",
+        "PR #2247 diagrams",
+        "PR #2247 prose",
+        "third-party brand assets"
+      ],
+      "source_image_sha256": "d0ead6cda27444a6b1a9bf765b52f595410c2274143be8bc0a80e77593a2bd64",
+      "delivery": "drawings/a3-booklet.pdf#page=8",
+      "human_review": "accepted_after_original-resolution_text_count_warning_and_visual_review",
+      "non_claim": "concept proposal; not field performance or implementation approval"
+    },
+    {
+      "page_id": "A3-ZH-09",
+      "family": "a3",
+      "language": "zh",
+      "model": "gpt-image-2",
+      "visual_authoring": "image2_only",
+      "image2_workflow": "generation_or_image2_edit_of_current_project_output",
+      "input_policy": "current-project-owned Image-2 output and structured facts only",
+      "excluded_inputs": [
+        "PR #2247 images",
+        "PR #2247 diagrams",
+        "PR #2247 prose",
+        "third-party brand assets"
+      ],
+      "source_image_sha256": "211fff387945a94b5a1cbb947603314ecb424bc80843c96f40263bdd2e64080a",
+      "delivery": "drawings/a3-booklet.pdf#page=9",
+      "human_review": "accepted_after_original-resolution_text_count_warning_and_visual_review",
+      "non_claim": "concept proposal; not field performance or implementation approval"
+    },
+    {
+      "page_id": "A3-ZH-10",
+      "family": "a3",
+      "language": "zh",
+      "model": "gpt-image-2",
+      "visual_authoring": "image2_only",
+      "image2_workflow": "generation_or_image2_edit_of_current_project_output",
+      "input_policy": "current-project-owned Image-2 output and structured facts only",
+      "excluded_inputs": [
+        "PR #2247 images",
+        "PR #2247 diagrams",
+        "PR #2247 prose",
+        "third-party brand assets"
+      ],
+      "source_image_sha256": "62f31d7a0441c8e2492031efbda93051ea9d34b7711c62879264b2f98d016947",
+      "delivery": "drawings/a3-booklet.pdf#page=10",
+      "human_review": "accepted_after_original-resolution_text_count_warning_and_visual_review",
+      "non_claim": "concept proposal; not field performance or implementation approval"
+    },
+    {
+      "page_id": "A3-ZH-11",
+      "family": "a3",
+      "language": "zh",
+      "model": "gpt-image-2",
+      "visual_authoring": "image2_only",
+      "image2_workflow": "generation_or_image2_edit_of_current_project_output",
+      "input_policy": "current-project-owned Image-2 output and structured facts only",
+      "excluded_inputs": [
+        "PR #2247 images",
+        "PR #2247 diagrams",
+        "PR #2247 prose",
+        "third-party brand assets"
+      ],
+      "source_image_sha256": "e45adaeff3aadbbed0d102af938fd61554acb743b0d2da015f4c5e235b5f6da6",
+      "delivery": "drawings/a3-booklet.pdf#page=11",
+      "human_review": "accepted_after_original-resolution_text_count_warning_and_visual_review",
+      "non_claim": "concept proposal; not field performance or implementation approval"
+    },
+    {
+      "page_id": "A3-ZH-12",
+      "family": "a3",
+      "language": "zh",
+      "model": "gpt-image-2",
+      "visual_authoring": "image2_only",
+      "image2_workflow": "generation_or_image2_edit_of_current_project_output",
+      "input_policy": "current-project-owned Image-2 output and structured facts only",
+      "excluded_inputs": [
+        "PR #2247 images",
+        "PR #2247 diagrams",
+        "PR #2247 prose",
+        "third-party brand assets"
+      ],
+      "source_image_sha256": "dfa08e2e610fc734db48c5077cee234c14a670d111ae920597dbf5c7e8a07479",
+      "delivery": "drawings/a3-booklet.pdf#page=12",
+      "human_review": "accepted_after_original-resolution_text_count_warning_and_visual_review",
+      "non_claim": "concept proposal; not field performance or implementation approval"
+    },
+    {
+      "page_id": "A3-EN-01",
+      "family": "a3",
+      "language": "en",
+      "model": "gpt-image-2",
+      "visual_authoring": "image2_only",
+      "image2_workflow": "generation_or_image2_edit_of_current_project_output",
+      "input_policy": "current-project-owned Image-2 output and structured facts only",
+      "excluded_inputs": [
+        "PR #2247 images",
+        "PR #2247 diagrams",
+        "PR #2247 prose",
+        "third-party brand assets"
+      ],
+      "source_image_sha256": "3414f42cfb0c2e0cb63b7968a8ac9a4049e55f250c192dd36da6ececdb057901",
+      "delivery": "drawings/a3-booklet.en.pdf#page=1",
+      "human_review": "accepted_after_original-resolution_text_count_warning_and_visual_review",
+      "non_claim": "concept proposal; not field performance or implementation approval"
+    },
+    {
+      "page_id": "A3-EN-02",
+      "family": "a3",
+      "language": "en",
+      "model": "gpt-image-2",
+      "visual_authoring": "image2_only",
+      "image2_workflow": "generation_or_image2_edit_of_current_project_output",
+      "input_policy": "current-project-owned Image-2 output and structured facts only",
+      "excluded_inputs": [
+        "PR #2247 images",
+        "PR #2247 diagrams",
+        "PR #2247 prose",
+        "third-party brand assets"
+      ],
+      "source_image_sha256": "5b0923ca95b4e6801568a0a41b7d25e53489d828785c6f3827ab25a0b76d24d7",
+      "delivery": "drawings/a3-booklet.en.pdf#page=2",
+      "human_review": "accepted_after_original-resolution_text_count_warning_and_visual_review",
+      "non_claim": "concept proposal; not field performance or implementation approval"
+    },
+    {
+      "page_id": "A3-EN-03",
+      "family": "a3",
+      "language": "en",
+      "model": "gpt-image-2",
+      "visual_authoring": "image2_only",
+      "image2_workflow": "generation_or_image2_edit_of_current_project_output",
+      "input_policy": "current-project-owned Image-2 output and structured facts only",
+      "excluded_inputs": [
+        "PR #2247 images",
+        "PR #2247 diagrams",
+        "PR #2247 prose",
+        "third-party brand assets"
+      ],
+      "source_image_sha256": "480e5676fb952d7e2bcdee7276a16e3b4b43a2bcb0183d3b1daba856fab1fb43",
+      "delivery": "drawings/a3-booklet.en.pdf#page=3",
+      "human_review": "accepted_after_original-resolution_text_count_warning_and_visual_review",
+      "non_claim": "concept proposal; not field performance or implementation approval"
+    },
+    {
+      "page_id": "A3-EN-04",
+      "family": "a3",
+      "language": "en",
+      "model": "gpt-image-2",
+      "visual_authoring": "image2_only",
+      "image2_workflow": "generation_or_image2_edit_of_current_project_output",
+      "input_policy": "current-project-owned Image-2 output and structured facts only",
+      "excluded_inputs": [
+        "PR #2247 images",
+        "PR #2247 diagrams",
+        "PR #2247 prose",
+        "third-party brand assets"
+      ],
+      "source_image_sha256": "4bef935cdc3938a44909146ca9305fe9e0ff9078c2ac487edb5d2975df2dd71b",
+      "delivery": "drawings/a3-booklet.en.pdf#page=4",
+      "human_review": "accepted_after_original-resolution_text_count_warning_and_visual_review",
+      "non_claim": "concept proposal; not field performance or implementation approval"
+    },
+    {
+      "page_id": "A3-EN-05",
+      "family": "a3",
+      "language": "en",
+      "model": "gpt-image-2",
+      "visual_authoring": "image2_only",
+      "image2_workflow": "generation_or_image2_edit_of_current_project_output",
+      "input_policy": "current-project-owned Image-2 output and structured facts only",
+      "excluded_inputs": [
+        "PR #2247 images",
+        "PR #2247 diagrams",
+        "PR #2247 prose",
+        "third-party brand assets"
+      ],
+      "source_image_sha256": "f7c2e849d2bacdc7ff66073eeeec884464ec071b162ba6d645e89184b009bd8a",
+      "delivery": "drawings/a3-booklet.en.pdf#page=5",
+      "human_review": "accepted_after_original-resolution_text_count_warning_and_visual_review",
+      "non_claim": "concept proposal; not field performance or implementation approval"
+    },
+    {
+      "page_id": "A3-EN-06",
+      "family": "a3",
+      "language": "en",
+      "model": "gpt-image-2",
+      "visual_authoring": "image2_only",
+      "image2_workflow": "generation_or_image2_edit_of_current_project_output",
+      "input_policy": "current-project-owned Image-2 output and structured facts only",
+      "excluded_inputs": [
+        "PR #2247 images",
+        "PR #2247 diagrams",
+        "PR #2247 prose",
+        "third-party brand assets"
+      ],
+      "source_image_sha256": "f6ab3a5f0753c317f455fd747c24636e0dcc757ccbb7d3cb309dc0ad9a66cedc",
+      "delivery": "drawings/a3-booklet.en.pdf#page=6",
+      "human_review": "accepted_after_original-resolution_text_count_warning_and_visual_review",
+      "non_claim": "concept proposal; not field performance or implementation approval"
+    },
+    {
+      "page_id": "A3-EN-07",
+      "family": "a3",
+      "language": "en",
+      "model": "gpt-image-2",
+      "visual_authoring": "image2_only",
+      "image2_workflow": "generation_or_image2_edit_of_current_project_output",
+      "input_policy": "current-project-owned Image-2 output and structured facts only",
+      "excluded_inputs": [
+        "PR #2247 images",
+        "PR #2247 diagrams",
+        "PR #2247 prose",
+        "third-party brand assets"
+      ],
+      "source_image_sha256": "b244490ac5fcde30472f392a7686db9bf14289d9c71b574f53a9590716ce0f61",
+      "delivery": "drawings/a3-booklet.en.pdf#page=7",
+      "human_review": "accepted_after_original-resolution_text_count_warning_and_visual_review",
+      "non_claim": "concept proposal; not field performance or implementation approval"
+    },
+    {
+      "page_id": "A3-EN-08",
+      "family": "a3",
+      "language": "en",
+      "model": "gpt-image-2",
+      "visual_authoring": "image2_only",
+      "image2_workflow": "generation_or_image2_edit_of_current_project_output",
+      "input_policy": "current-project-owned Image-2 output and structured facts only",
+      "excluded_inputs": [
+        "PR #2247 images",
+        "PR #2247 diagrams",
+        "PR #2247 prose",
+        "third-party brand assets"
+      ],
+      "source_image_sha256": "a50e56e432fb958c7ce5d3c6e6116d3ff2e241ddb68697a1c163ff0de8918cbe",
+      "delivery": "drawings/a3-booklet.en.pdf#page=8",
+      "human_review": "accepted_after_original-resolution_text_count_warning_and_visual_review",
+      "non_claim": "concept proposal; not field performance or implementation approval"
+    },
+    {
+      "page_id": "A3-EN-09",
+      "family": "a3",
+      "language": "en",
+      "model": "gpt-image-2",
+      "visual_authoring": "image2_only",
+      "image2_workflow": "generation_or_image2_edit_of_current_project_output",
+      "input_policy": "current-project-owned Image-2 output and structured facts only",
+      "excluded_inputs": [
+        "PR #2247 images",
+        "PR #2247 diagrams",
+        "PR #2247 prose",
+        "third-party brand assets"
+      ],
+      "source_image_sha256": "dcea42f8954de4df538c8166122a70a0dbca2a5f8e5d88e8840d0e9cd6b581db",
+      "delivery": "drawings/a3-booklet.en.pdf#page=9",
+      "human_review": "accepted_after_original-resolution_text_count_warning_and_visual_review",
+      "non_claim": "concept proposal; not field performance or implementation approval"
+    },
+    {
+      "page_id": "A3-EN-10",
+      "family": "a3",
+      "language": "en",
+      "model": "gpt-image-2",
+      "visual_authoring": "image2_only",
+      "image2_workflow": "generation_or_image2_edit_of_current_project_output",
+      "input_policy": "current-project-owned Image-2 output and structured facts only",
+      "excluded_inputs": [
+        "PR #2247 images",
+        "PR #2247 diagrams",
+        "PR #2247 prose",
+        "third-party brand assets"
+      ],
+      "source_image_sha256": "d1618d2eacc84a38c1682d4f144687462debb5b2ad8dc8cb3d6b71610442a695",
+      "delivery": "drawings/a3-booklet.en.pdf#page=10",
+      "human_review": "accepted_after_original-resolution_text_count_warning_and_visual_review",
+      "non_claim": "concept proposal; not field performance or implementation approval"
+    },
+    {
+      "page_id": "A3-EN-11",
+      "family": "a3",
+      "language": "en",
+      "model": "gpt-image-2",
+      "visual_authoring": "image2_only",
+      "image2_workflow": "generation_or_image2_edit_of_current_project_output",
+      "input_policy": "current-project-owned Image-2 output and structured facts only",
+      "excluded_inputs": [
+        "PR #2247 images",
+        "PR #2247 diagrams",
+        "PR #2247 prose",
+        "third-party brand assets"
+      ],
+      "source_image_sha256": "0389ff4b5896e42752ecc51051a60fd20cd2d3aa047190ec011a6a011fc4e288",
+      "delivery": "drawings/a3-booklet.en.pdf#page=11",
+      "human_review": "accepted_after_original-resolution_text_count_warning_and_visual_review",
+      "non_claim": "concept proposal; not field performance or implementation approval"
+    },
+    {
+      "page_id": "A3-EN-12",
+      "family": "a3",
+      "language": "en",
+      "model": "gpt-image-2",
+      "visual_authoring": "image2_only",
+      "image2_workflow": "generation_or_image2_edit_of_current_project_output",
+      "input_policy": "current-project-owned Image-2 output and structured facts only",
+      "excluded_inputs": [
+        "PR #2247 images",
+        "PR #2247 diagrams",
+        "PR #2247 prose",
+        "third-party brand assets"
+      ],
+      "source_image_sha256": "cd935172d6b2bcc5b86ee9dfde939c1c60af274408fbe43abe4b34e4ad96f8f7",
+      "delivery": "drawings/a3-booklet.en.pdf#page=12",
+      "human_review": "accepted_after_original-resolution_text_count_warning_and_visual_review",
+      "non_claim": "concept proposal; not field performance or implementation approval"
+    }
+  ]
+}

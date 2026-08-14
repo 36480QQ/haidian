@@ -436,6 +436,26 @@
       "qualifier": "not official survey, redline or approval precision"
     }
   ],
+  "origin_life_iteration": {
+    "prototype_id": "OLS-1TO1-001",
+    "status": "not_authorized_not_run",
+    "spatial_moment_count": 5,
+    "scenario_contract_count": 12,
+    "synthetic_tabletop_check_count": 72,
+    "qualified_tabletop_release_count": 12,
+    "blocked_negative_case_count": 60,
+    "evidence_gates": ["G0", "G1", "G2", "G3", "G4"],
+    "first_100_days_package_count": 8,
+    "evidence_paths": [
+      "visual/assets/origin-life-service-station.json",
+      "visual/assets/public-acceptance-tabletop/scenario-contracts.json",
+      "visual/assets/public-acceptance-tabletop/receipts.json",
+      "visual/assets/first-100-days.json",
+      "visual/assets/raci-and-signoff.json",
+      "simulation.json"
+    ],
+    "limitation": "synthetic tabletop evidence only; not a field test, approval, procurement decision, or operator commitment"
+  },
   "source_use_rules": {
     "formal": "may support a bounded claim with precise marker",
     "background_only": "context only; cannot support site or approval fact",
