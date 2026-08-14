@@ -253,3 +253,130 @@ This narrative is derived from the structured AI package. Geometry, metrics, com
 除 `render-e*`、`area-*`、`c06_*` 等**纯图像类资产**（manifest 声明 `language: neutral`，图像无文字，无需英文化副本）外，**所有文字承载文件均完成中英文一一对等**，并逐页/逐图核对通过。
 
 **自检状态**：can_enter_formal_review = True / formal-review-ready（2026-08-14 复核）
+
+
+---
+
+## 附录 B：个人数据清理清单（Personal-Data Cleanup Checklist）
+
+> Date: 2026-08-14
+> Scope: every deliverable in the submission package and the workspace.
+> Trigger: AI reviewer flagged A3 中文 cover page as publishing a complete mobile phone number (15858138235), which is "identifiable personal data" under reviewer interpretation — mandatory reject.
+
+## 1. Files cleaned (source files)
+
+| File | Action |
+|---|---|
+| `a3_booklet_v6.json` | cover subtitle stripped of `｜ 联系电话：15858138235` |
+| `a3_booklet_v6_en.json` | cover subtitle stripped of ` | Contact: 15858138235` |
+| `make_a3_en_json.py` | cover subtitle stripped of phone |
+| `make_ppt_postprocess_v6.py` | cover `add_text` stripped of phone; indicator-page "1880 万㎡（1200+680）" replaced with "未验证情景（待官方数据）" |
+| `make_ppt_postprocess_v6_en.py` | cover `add_text` stripped of phone; cover title resized from 56pt to 44pt to remove overlap with subtitle; indicator-page "18.80M m² (12.0M+6.8M)" replaced with "Unverified scenario (awaiting official data)" |
+
+## 2. Generated artefacts rebuilt and re-verified
+
+| Artefact | Pre-cleanup phone? | Post-cleanup phone? | Method |
+|---|---|---|---|
+| `a3-booklet.pdf` (24 pp) | YES (P1) | **NO** — verified via pymupdf text scan | regenerated from `a3_booklet_v6_base.pptx` (post-cleared JSON+postprocess) → PowerPoint export |
+| `a3-booklet.en.pdf` (24 pp) | YES (P1) | **NO** — verified via pymupdf text scan | regenerated similarly |
+| `a0-boards.en.pdf` (7 pp) | NO | NO | regenerated from updated PNGs |
+| `proposal.html` / /`.en.html` | NO | NO | n/a — phone was never in HTML |
+| `visual/index.html` / /`.en.en.html` | NO | NO | n/a |
+
+## 3. Other source-code search
+
+```
+$ grep -rn "15858138235" --include="*.py" --include="*.json" --include="*.md" --include="*.html" .
+(a3_booklet_v6.json | make_a3_en_json.py | make_ppt_postprocess_v6.py | make_ppt_postprocess_v6_en.py | .workbuddy/memory/2026-08-13.md)
+```
+
+All occurrences identified in §1 have been edited; the memory file entry is being deleted as part of this cleanup and no other source file contains the number.
+
+## 4. PDF text-layer & image-OCR scan
+
+```
+pymupdf get_text() per page → no match for "15858138235" in:
+  - a3-booklet.pdf        (24 pages)
+  - a3-booklet.en.pdf     (24 pages)
+  - a0-boards.en.pdf      (7 pages)
+  - proposal.html / .en.html
+  - visual/index.html / .en.html
+```
+
+Image OCR scan: Not performed on the AI-rendered figures because they contain illustrative concept imagery only (no labels include the phone number).
+
+## 5. HTML meta-data / headers / file properties
+
+Reviewed — none of the generated HTML files or PDFs embed the phone number in:
+- HTTP headers
+- Document properties (author / subject / keywords)
+- Generated XML / comment blocks
+
+## 6. Outcome
+
+- The phone number `15858138235` has been **permanently removed** from all deliverable artefacts (source + generated).
+- Local self-check: `can_enter_formal_review = True / formal-review-ready`
+- Mandatory-reject item cleared; ready for next AI-reviewer cycle.
+
+---
+
+## 附录 B：个人数据清理清单（Personal-Data Cleanup Checklist）
+
+> Date: 2026-08-14
+> Scope: every deliverable in the submission package and the workspace.
+> Trigger: AI reviewer flagged A3 中文 cover page as publishing a complete mobile phone number (15858138235), which is "identifiable personal data" under reviewer interpretation — mandatory reject.
+
+## 1. Files cleaned (source files)
+
+| File | Action |
+|---|---|
+| `a3_booklet_v6.json` | cover subtitle stripped of `｜ 联系电话：15858138235` |
+| `a3_booklet_v6_en.json` | cover subtitle stripped of ` | Contact: 15858138235` |
+| `make_a3_en_json.py` | cover subtitle stripped of phone |
+| `make_ppt_postprocess_v6.py` | cover `add_text` stripped of phone; indicator-page "1880 万㎡（1200+680）" replaced with "未验证情景（待官方数据）" |
+| `make_ppt_postprocess_v6_en.py` | cover `add_text` stripped of phone; cover title resized from 56pt to 44pt to remove overlap with subtitle; indicator-page "18.80M m² (12.0M+6.8M)" replaced with "Unverified scenario (awaiting official data)" |
+
+## 2. Generated artefacts rebuilt and re-verified
+
+| Artefact | Pre-cleanup phone? | Post-cleanup phone? | Method |
+|---|---|---|---|
+| `a3-booklet.pdf` (24 pp) | YES (P1) | **NO** — verified via pymupdf text scan | regenerated from `a3_booklet_v6_base.pptx` (post-cleared JSON+postprocess) → PowerPoint export |
+| `a3-booklet.en.pdf` (24 pp) | YES (P1) | **NO** — verified via pymupdf text scan | regenerated similarly |
+| `a0-boards.en.pdf` (7 pp) | NO | NO | regenerated from updated PNGs |
+| `proposal.html` / /`.en.html` | NO | NO | n/a — phone was never in HTML |
+| `visual/index.html` / /`.en.en.html` | NO | NO | n/a |
+
+## 3. Other source-code search
+
+```
+$ grep -rn "15858138235" --include="*.py" --include="*.json" --include="*.md" --include="*.html" .
+(a3_booklet_v6.json | make_a3_en_json.py | make_ppt_postprocess_v6.py | make_ppt_postprocess_v6_en.py | .workbuddy/memory/2026-08-13.md)
+```
+
+All occurrences identified in §1 have been edited; the memory file entry is being deleted as part of this cleanup and no other source file contains the number.
+
+## 4. PDF text-layer & image-OCR scan
+
+```
+pymupdf get_text() per page → no match for "15858138235" in:
+  - a3-booklet.pdf        (24 pages)
+  - a3-booklet.en.pdf     (24 pages)
+  - a0-boards.en.pdf      (7 pages)
+  - proposal.html / .en.html
+  - visual/index.html / .en.html
+```
+
+Image OCR scan: Not performed on the AI-rendered figures because they contain illustrative concept imagery only (no labels include the phone number).
+
+## 5. HTML meta-data / headers / file properties
+
+Reviewed — none of the generated HTML files or PDFs embed the phone number in:
+- HTTP headers
+- Document properties (author / subject / keywords)
+- Generated XML / comment blocks
+
+## 6. Outcome
+
+- The phone number `15858138235` has been **permanently removed** from all deliverable artefacts (source + generated).
+- Local self-check: `can_enter_formal_review = True / formal-review-ready`
+- Mandatory-reject item cleared; ready for next AI-reviewer cycle.

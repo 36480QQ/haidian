@@ -19,11 +19,11 @@
   {
    "id": "A-TOTAL-VOLUME-001",
    "status": "conceptual_target",
-   "statement": "Total building volume 18.80M m² (retained 12.0M + new 6.8M) is a planning target, NOT recomputed from public data.",
+   "statement": "Total building volume 18.80M m² (retained 12.0M + new 6.8M) is an UNVERIFIED SCENARIO with an arithmetic conflict: building_footprint_area_sqm (310,807 m²) × FAR 4.0 ≈ 1.243M m², which does not equal the retained 12.0M m². All three figures are to be re-derived after official floor-area census and FAR control are published.",
    "basis": "Retained 12.0M m² is an estimate (existing footprints × hypothetical FAR 4.0); new 6.8M is a planning increment awaiting official FAR control.",
    "formula": "retained_existing + new_increment (to be recomputed once official FAR control and floor-area census are published)",
    "confidence": "low",
-   "impact": "Do not cite 18.80M m² as an official metric; treat as target until official controls exist."
+   "impact": "Do not treat 12.0M / 6.8M / 18.80M as computable metrics. Mark as unverified scenarios until official data."
   },
   {
    "id": "A-COVERAGE-001",
