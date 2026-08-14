@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "package_id": "jingzhang-gauge-line",
   "project_id": "centennial-jingzhang-ai-belt",
   "site_package_version": "0.1.0",
@@ -51,7 +51,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "20731e4b13015220ab0e604b91486df77cd74da4efa49ae5af5326df0a5e57ff"
+      "sha256": "a3e49e3e423fa69062ae0aa842d7022c08e949232fc6fa0128326b25d362e48a"
     },
     {
       "path": "compliance_matrix.json",
@@ -221,7 +221,7 @@
       "role": "visualization",
       "required": true,
       "language": "en",
-      "sha256": "28a1f1560a56f5f51b931c2bea526a19f610b9db755715bb96489389f7e93200",
+      "sha256": "011b992dfba71728658c05f846d4a2e4ef54ca840503a56033a3cc4b5833f336",
       "translation_of": "visual/index.html"
     },
     {
@@ -247,8 +247,9 @@
     }
   ],
   "validation_claim": {
-    "self_checked": false,
+    "self_checked": true,
     "known_blockers": [],
-    "data_confidence": "high"
+    "data_confidence": "high",
+    "readiness_contract": "persisted-self-check-v1"
   }
 }

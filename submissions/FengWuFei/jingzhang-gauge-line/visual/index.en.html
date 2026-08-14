@@ -34,6 +34,32 @@ main{padding:22px 22px 36px}.sheet{background:#fff;border:1px solid var(--line);
 <header><div class="wrap hero"><div><div class="eyebrow">Visual Index · Centennial Jingzhang AI Innovation Belt</div><h1>Jingzhang The Gauge Line</h1><p class="hero-copy"><b>Motif: the dual gauge (Dual Gauge, not Slogan).</b> Not another software belt, but a real spatial belt that can be measured, walked into and implemented — translating AI from slogans into land-use ratios, street cross-sections, public-space scales and building-renewal actions. Authoritative data lives in GeoJSON, metrics.json, the matrices and self-check results.</p><div class="pill-row"><span class="pill">Three vertical belts</span><span class="pill">Three key areas</span><span class="pill">Pedestrian spine</span><span class="pill">12 scenario cards</span><span class="pill">4 pilgrimage landmarks</span><span class="pill">Bilingual</span></div></div><aside class="status-box"><strong>Provisional intake</strong><p>Provisional boundary; intake display and discussion only — recalculate when official polygons arrive. Organizer data gaps do not block content scoring.</p></aside></div></header>
 <main class="wrap">
 
+<section class="sheet"><div class="sheet-head"><div><h2>Overview map</h2><p>One shared evidence map: the three land-use belts, the slow-mobility spine, the blue-green public-space network, buildings and renewal projects, and AI scenario nodes. The three scopes (strategic research / overall design / key areas) cascade onto layers and core metrics.</p></div><span class="tag">geometry + metrics</span></div><div class="body-pad">
+<div style="border:1px solid #b9c4d3;border-radius:8px;background:#f8fafc;padding:10px">
+<svg viewBox="0 0 1120 480" role="img" aria-label="Jingzhang The Gauge Line overview map" style="display:block;width:100%;height:auto">
+<rect x="40" y="30" width="1040" height="420" rx="10" fill="#ffffff" stroke="#94a3b8" stroke-width="2" stroke-dasharray="8 6"/>
+<text x="560" y="22" text-anchor="middle" font-size="13" fill="#94a3b8">Provisional boundary (dashed) · not an official redline · schematic, not to scale</text>
+<rect x="80" y="50" width="300" height="380" fill="#8C5A2B" fill-opacity="0.12" stroke="#8C5A2B" stroke-width="1.5"/><text x="230" y="75" text-anchor="middle" font-size="16" fill="#8C5A2B" font-weight="bold">West · Heritage Belt</text>
+<text x="230" y="250" text-anchor="middle" font-size="11" fill="#8C5A2B">culture / residential / community</text>
+<rect x="380" y="50" width="330" height="380" fill="#1B7F5C" fill-opacity="0.10" stroke="#1B7F5C" stroke-width="1.5"/><text x="545" y="75" text-anchor="middle" font-size="16" fill="#1B7F5C" font-weight="bold">Center · AI Life Belt</text>
+<rect x="480" y="90" width="130" height="340" fill="#7fc97f" fill-opacity="0.45" stroke="#3a7d3a" stroke-width="1"/><text x="545" y="130" text-anchor="middle" font-size="12" fill="#1f5130">heritage-park</text>
+<text x="545" y="148" text-anchor="middle" font-size="12" fill="#1f5130">green axis</text>
+<text x="545" y="240" text-anchor="middle" font-size="11" fill="#1f5130">pedestrian spine</text>
+<rect x="710" y="50" width="330" height="380" fill="#2D5BA8" fill-opacity="0.12" stroke="#2D5BA8" stroke-width="1.5"/><text x="875" y="75" text-anchor="middle" font-size="16" fill="#2D5BA8" font-weight="bold">East · Innovation Belt</text>
+<text x="875" y="250" text-anchor="middle" font-size="11" fill="#2D5BA8">R&amp;D / commercial / white land</text>
+<line x1="80" y1="262" x2="1040" y2="262" stroke="#334155" stroke-width="3" opacity="0.7"/>
+<text x="110" y="232" font-size="10" fill="#334155">east-west stitching road</text>
+<circle cx="230" cy="160" r="26" fill="#8a6a28"/><text x="230" y="166" text-anchor="middle" fill="#fff" font-size="11" font-weight="bold">众</text>
+<text x="230" y="202" text-anchor="middle" font-size="10" fill="#8a6a28">Zhongzhiyuan</text>
+<circle cx="545" cy="360" r="26" fill="#1B7F5C"/><text x="545" y="366" text-anchor="middle" fill="#fff" font-size="11" font-weight="bold">原</text>
+<text x="545" y="402" text-anchor="middle" font-size="10" fill="#1B7F5C">AI Origin Community</text>
+<circle cx="875" cy="140" r="26" fill="#2D5BA8"/><text x="875" y="146" text-anchor="middle" fill="#fff" font-size="11" font-weight="bold">大</text>
+<text x="875" y="182" text-anchor="middle" font-size="10" fill="#2D5BA8">Dazhongsi</text>
+<text x="560" y="466" text-anchor="middle" font-size="11" fill="#475569">Three belts + three key areas + pedestrian spine + blue-green network · derived from GeoJSON/metrics</text>
+</svg></div>
+<div class="source-line">geometry/site_boundary.geojson · land_use.geojson · roads.geojson · green_space.geojson · buildings.geojson</div>
+</div></div></section>
+
 <section class="sheet"><div class="sheet-head"><div><h2>Core metrics (recomputed, EPSG:4548)</h2><p>Spatial metrics are recomputed from submitted geometry; control metrics (FAR/height) are marked unknown pending official controls — admitting ignorance is closer to real engineering than fabricating a false number.</p></div><span class="tag">metrics.json</span></div><div class="body-pad"><div class="metric-grid">
 <div class="metric"><span>site_area</span><strong>11,411,445</strong><span style="font-size:10px">sqm · site_boundary.geojson</span></div>
 <div class="metric"><span>green_ratio</span><strong>24.6%</strong><span style="font-size:10px">green_space.geojson</span></div>
@@ -65,7 +91,18 @@ main{padding:22px 22px 36px}.sheet{background:#fff;border:1px solid var(--line);
 <div class="landmark"><b>Jingzhang Starting Plaza</b><p>Pilgrimage forecourt, human-scale gathering, Global AI Week opening.</p></div>
 <div class="landmark"><b>Agent Contribution Honor Wall</b><p>Dazhongsi forecourt, recording outstanding agents and contributors.</p></div>
 <div class="landmark"><b>Open-Source Display Gallery</b><p>Zhongzhiyuan, contributions and standards as a walkable interface.</p></div>
-<div class="landmark"><b>Centennial Milestone Plaza</b><p>Jingzhang terminus, dialogue of Zhan Tianbao's heritage and new AI culture.</p></div>
+<div class="landmark"><b>Centennial Milestone Plaza</b><p>Jingzhang terminus, dialogue of Zhan Tianyou's engineering heritage and new AI culture.</p></div>
+</div></div></section>
+
+<section class="sheet"><div class="sheet-head"><div><h2>Renewal projects &amp; phasing</h2><p>Renewal projects JZ-01~06 cover slow-mobility stitching, blue-green frontage, near-campus conversion, station connection, new infrastructure and event operations — phased near / mid / long term, with phasing extents in phasing.geojson.</p></div><span class="tag">phasing.geojson</span></div><div class="body-pad"><div class="scenario-grid">
+<div class="scenario-card"><b>JZ-01 Spine stitching</b><p>Heritage-park slow-mobility breakpoints · near term</p></div>
+<div class="scenario-card"><b>JZ-02 Qinghe innovation frontage</b><p>Zhongzhiyuan blue-green showcase · mid term</p></div>
+<div class="scenario-card"><b>JZ-03 Near-campus conversion st.</b><p>Origin Community renewal · mid term</p></div>
+<div class="scenario-card"><b>JZ-04 Dazhongsi connection</b><p>Station four-quadrant walking · long term</p></div>
+<div class="scenario-card"><b>JZ-05 Edge-compute nodes</b><p>New-infrastructure public service · mid term</p></div>
+<div class="scenario-card"><b>JZ-06 AI Week route</b><p>Global AI event operations · long term</p></div>
+<div class="scenario-card"><b>Near-term pilots</b><p>Pedestrian spine + public-space activation</p></div>
+<div class="scenario-card"><b>Long-term governance</b><p>Zhongzhiyuan + Dazhongsi industry deepening</p></div>
 </div></div></section>
 
 <section class="sheet"><div class="sheet-head"><div><h2>AI scenario cards (12, incl. 3 test/validation)</h2><p>Each scenario lands on a concrete layer and node, with privacy and human-review boundaries.</p></div><span class="tag">scenario cards</span></div><div class="body-pad"><div class="scenario-grid">
