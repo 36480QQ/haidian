@@ -226,7 +226,8 @@ Seven personas anchor the system. Each is bound to a spatial carrier, a scenario
 | Students and researchers | Clear translation and licensing boundaries | Campus research relay, open release hall | SCN-07 | Licence completeness, withdrawal response time |
 | Residents and older people | Equal service without a smart device | Human desks, community collaboration rooms | SCN-06, SCN-09 | No-AI equivalent coverage |
 | Disabled and temporarily impaired people | Verified continuous accessible routes | Accessible-route copilot, tactile maps | SCN-05 | Route verification pass rate, break repair time |
-| International visitors | Multilingual explanation and human help | Public translation desk, Manual Override Pavilion | SCN-06, SCN-12 | Human-help response time, paper multilingual coverage |
+| Young talent | Low-threshold trial and error, an attributable contribution record, and a reason to stay | Shared test courts, community collaboration houses, mixed talent-housing communities | SCN-01, SCN-07 | Interval from first contribution to reproduction, share of attributable entries |
+| International visitors and tourists | Multilingual explanation, human help, and a visit completable without installing an app | Public translation desk, Manual Override Pavilion, oral-history booth | SCN-06, SCN-11, SCN-12 | Human-help response time, multilingual paper coverage, app-free access availability |
 
 Twelve nodes [metric:scenario_node_count] are encoded from [data:geometry/public_space.geojson#SCN-01], including four controlled industry-validation scenarios [metric:industry_validation_scenario_count]. Every row states the minimum data, the duty owner, manual takeover, the no-AI equivalent and the exit condition. The shared rule is that loss of connection, a scope breach, a risk threshold or any person's objection stops the smart function immediately while the basic service continues on the duty logbook.
 
@@ -263,6 +264,51 @@ The table above answers what is done, on what data and who takes over. The table
 | SCN-12 Global Handover Week route | Belt-wide public ground | Event organiser + volunteers | Once a year | Temporary, fully removed afterwards | All movement restored |
 
 Four ledgers govern operation: a data ledger says what is and is not used; a duty ledger names the owner and on-site person; a takeover ledger sets thresholds and response time; an exit ledger records shutdown, deletion and service continuity. A system goes offline when it loses connection, breaches scope, crosses a risk threshold or is challenged by a person. The basic service continues.
+
+### Eight shared stacks: factor provision as interfaces that can be taken up and taken back, not a tenant list
+
+The commonest way industrial policy fails is to write an ecosystem as a list of tenants — if the named parties do not come, the whole spatial arrangement is left empty. This proposal names no company and presumes no occupant. Factors are provided as **eight shared stacks**, each one "a reversible piece of space plus a rule of access plus a checkable record": whoever meets the rule gets in, whoever stops meeting it leaves, and the space returns to public use. The stacks are not a new invention; their spatial carriers are the four typologies among the twenty renewal trial cells [data:geometry/buildings.geojson#BLDG-001] and the land-use zones [data:geometry/land_use.geojson#LU-001].
+
+| Shared stack | What it supplies | Spatial carrier (cell typology / land use) | Rule of access | **Explicitly not promised** | Checkable record |
+| --- | --- | --- | --- | --- | --- |
+| Land | Reversible right of use: time slots first, tenure later | All four typologies; LU-008 full-stack R&D and trial land | Apply for slots and removable fittings; discuss conversion only once the need is proven | No tenure, rent discount or long-term exclusive use | Occupancy and removal log |
+| Space | 5 open research courts, 5 verification workshops, 5 shared service stacks, 5 community collaboration houses | BLDG-004/008/012/016/020 and the other three typologies | Match use to cell typology; ground floors stay continuously enterable | No floor-area quota or new-build volume | Cell use and opening-hours ledger |
+| Industry | Interface specifications between models, chips, robots and vertical applications | Verification workshops; LU-009 / LU-010 model-validation and industrial collaboration land | Publish the spec and its failure boundary before opening it for connection | No choice of technology path, no supply-chain guarantee | Interface version and change log |
+| Capital | A transparent application entry and service navigation | Shared service stacks; LU-007 technology service and translation land | Explain process and materials only; applications still run through existing channels | **No subsidy, investment, tax relief or scoring advantage** | Aggregate enquiry counts and routing |
+| Talent | Post and collaboration interfaces among universities, developers, maintainers and residents | Community collaboration houses; LU-006 education and open-source learning land | Post specification precedes the person; the eight role specs publish qualifications and no-cover conditions | No household registration, staffing quota, title or pay arrangement | Role-spec version and duty status |
+| Compute | Edge metering and on-demand access | Edge compute energy test station SCN-03 inside the verification workshops | Meter independently first, connect second; energy or temperature thresholds stop it | No compute quota, price or priority | Independent meter readings and shutdown records |
+| Data | Consent, minimisation, withdrawal and audit as one set | Data consent rehearsal SCN-04; the open-source handover ground | No consent, no collection; withdrawal means deletion, and deletion must be verifiable | No scope of data opening, and no adjudication of data ownership | Consent slips, withdrawal receipts, deletion checks |
+| Scenario | City problems, test rules, and both positive and negative results with exit records | All twelve scenario nodes [data:geometry/public_space.geojson#SCN-01] | Publish the problem first, write the rule first, release positive and negative results together | No number of scenarios opened, no pass rate | Twelve shift ledgers and the rule-check report |
+
+The eight are not a parallel menu of services but **an ordered chain of access**: land and space decide whether you can get in; industry, compute and data decide whether the work is possible; talent and capital decide whether it can be sustained; scenario decides whether the result counts. Reverse the order and the familiar failure appears — subsidies and tenure negotiated first, rules and records added later, and in the end nobody can say why a service went live or who is able to stop it.
+
+### What teams of different sizes actually get here
+
+An ecosystem is usable only if its smallest unit can stand on its own. The table below is organised by team size rather than by company directory, and every row points at an existing spatial carrier and scenario node. Thresholds and exit conditions share one discipline with the twelve scenarios; they are neither relaxed nor tightened by the size of the party.
+
+| Team type | Core need | Main location | Stacks most used | Entry threshold | Exit and recovery |
+| --- | --- | --- | --- | --- | --- |
+| Individual developers and students | One desk that reproduces, one record that can be cited | Campus research relay SCN-07, public handover tables | Scenario, Data | Submit a reproducibility note and licence labelling | Records retained; the desk is released at any time |
+| Start-ups (trial stage) | Cheap trials, a compliance entry, and failure that is not fatal | Verification workshops, shared service stacks | Space, Compute, Capital | Slot application, minimum-data declaration, shutdown procedure | Fittings removed when the slot ends; the space is back the same day |
+| Growth-stage firms (productisation) | Real-scenario validation with clear accountability | Model red-team desk SCN-01, robot right-of-way sandbox SCN-02 | Industry, Scenario | Version, risk items and a named human owner all present | An unresolved risk means exit; the sandbox perimeter is dismantled |
+| Established firms and institutes | Standards, open results, long-term collaboration | Open research courts, the open-source handover ground | Industry, Talent | Publish the interface spec — and the failures as well | Withdrawal must also withdraw the parties depending on that interface |
+| Operators and maintainers | Faults, versions and duty made visible | Visible maintenance stop SCN-08, century duty logbook | Talent, Scenario | Logbook sign-off and work-order closure | Items left open at handover may not disappear |
+
+**This table deliberately does not say "attract N firms, incubate M teams".** Numbers of that kind require targets from the competent industrial authorities and real investment arrangements; this proposal has neither the authority nor the evidence for them. What it can be accountable for is that every type of team can point at one specific cell and one specific scenario and state where it enters, under what rule it works, what it leaves behind, and under what condition it must go. The content of Haidian's "1+X+1" industrial system is defined by the competent authorities [source:HAIDIAN-2025-STATISTICAL-BULLETIN]; this proposal only offers spatial interfaces and verification tools along its "AI+" direction, and represents no agreement by any party to take part.
+
+### Industrial stages and spatial supply: five stages, four cell typologies, one loop
+
+Innovation is not a straight line from research to application, and the two stages in the middle — validation and open sourcing — are the ones most often left without space: they belong neither to the laboratory nor to the market, so conventional supply has no slot for them. This proposal gives those two stages space of their own.
+
+| Stage | What is missing | Spatial supply here | Land use | Reversibility |
+| --- | --- | --- | --- | --- |
+| Research | Not missing (universities and institutes already have it) | No duplicate building; interfaces only | LU-008 | — |
+| **Validation** | A test site an independent party can see into | 5 verification workshops + three industrial validation scenarios | LU-009 / LU-010 | Perimeter and equipment removable |
+| **Open sourcing** | A public table for handing results over | Open-source handover ground + campus research relay | LU-006 / LU-007 | Display units movable |
+| Application | Real city scenarios that can still be exited | Twelve scenario nodes | LU-003 / LU-005 | Public use restored on exit |
+| Feedback | A route for problems to travel back to research | Century duty logbook + dual-control shift ledger | Whole belt | Records not revocable |
+
+The relation between the four cell typologies and the five stages is therefore explicit: **open research courts** carry the handover from research to validation, **verification workshops** carry validation itself, **shared service stacks** carry open sourcing and factor access, and **community collaboration houses** carry application and feedback. The combined footprint of the twenty cells is 221,014.099 m² [metric:building_footprint_area_sqm], used **only to compare types of spatial supply — it does not state existing floor area, demolition targets or approved new-build volume**.
 
 ### Self-selected area: five "AI+" vertical scenarios
 
@@ -381,6 +427,28 @@ Delivery bodies follow "whoever benefits, maintains and can stop it", not projec
 Every role carries `assignment_status: unassigned`, constrained in the schema as a constant — a specification is not an appointment. The proposal names no organisation or individual and claims no partnership, mandate or contract; assignment rests with the competent authorities. Three structural constraints are enforced by validation rather than asserted in prose: stop authority is distributed across several roles instead of concentrated in the operator, the second reviewer may never be the role itself, and the last step of every escalation path returns the judgement to a qualified human team.
 
 Four annual shifts support long-term operation: Open Shift in spring, Maintainers’ Night in summer, Global Handover Week in autumn and Annual Review Shift in winter. The developer community follows issue ticket → transparent selection → minimum reproduction → bounded validation → maintainer handover → reusable artifact, with a duty role and licence at every step. Talent and enterprise conversion follows visit → problem match → controlled trial → public positive/negative results → professional referral → local partnership or explicit exit; no subsidy, procurement, investment or government commitment is claimed. International communication publishes bilingual protocol cards, a 90-second accessible route guide and an annual failure/repair digest, making the global AI industry highland and pilgrimage objective externally reviewable rather than merely photographable.
+
+### Long-term operating value: brand assets, event mechanisms and partnership channels, written separately
+
+The taskbook splits long-term operating value into three things — **brand assets, event mechanisms and partnership channels**. The commonest confusion is to treat brand as a logo, events as one opening ceremony a year, and partnership as a signing ceremony; on that reading the assets go to zero the day the design team leaves. This proposal organises all three around one question: can they keep running without us?
+
+| Element | What is deposited | Who can keep using it without us | Failure condition |
+| --- | --- | --- | --- |
+| **Brand assets** | An extensible, licensable and **revocable** identity system: name, four-colour semantics, five always-present fields (station number / shift / version / duty owner / update time), component library and publication rules | Any operator can produce wayfinding and publications from the same rules; missing any one field means the mark is incomplete, and no adjudication by us is required | Any use implying government endorsement, or commercial use without a separate grant |
+| **Event mechanisms** | The four-season roster: spring *Open-Source Shift Change*, summer *Night Maintainers' Evening*, autumn **Global Handover Week**, winter *Annual Review Shift* — each with its own visual motif over one shared identity system | Organisers run them against the P06 action pack's opening thresholds and strike-down checks; publishing negative results alongside positive ones is non-negotiable | Any of subject, permit, sustained budget, safety, staffing or strike-down being unclear means it shrinks or is cancelled |
+| **Partnership channels** | Five standing interfaces (Beiwei community, Future Science City, Huairou Science City, Beijing Economic-Technological Development Area, Jing-Jin-Ji nodes) plus developer problem tickets and the campus research relay — each stating **the minimum exchangeable output and its refusal conditions** | Partners connect against the interface spec without first concluding a framework agreement with anyone | No siting until subject and permit are confirmed; unclear IP, test liability or scope of applicability means no acceptance |
+
+**All three share one floor: every one of them is revocable.** A brand licence can be withdrawn, an event can be scaled down or cancelled, a partnership channel can refuse and can be exited. A partnership that cannot be exited is not a channel but a binding; a licence that cannot be withdrawn is not an asset but a liability.
+
+### International communication: build **global attention** on checkable records, not slogans
+
+To raise the belt's global attention and recognisability, this proposal relies not on adjectives but on three things that are not easy to copy elsewhere:
+
+1. **A published record of failure.** The annual failure/repair digest and every shutdown reason are published item by item — most urban AI projects publish only successes, and a line willing to state what it stopped and why is itself the distinguishing mark.
+2. **A protocol anyone can check.** Bilingual protocol cards, the dual-control shift ledger schema and twelve scenario instances ship with the package, so peers abroad can reuse the rules and point out faults without visiting.
+3. **A site that needs neither ticket nor app.** Visitors follow the accessible route to see successes, failures and repairs; **declining AI still yields an equivalent basic service** — which holds equally for international visitors and local residents.
+
+Fixed outputs are the bilingual protocol card, a 90-second accessible-route description and the annual failure/repair digest. Communication must not imply government endorsement, procurement commitment or statutory implementation.
 
 ### Correctable honour record and public knowledge deposit
 

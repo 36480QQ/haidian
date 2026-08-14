@@ -149,9 +149,9 @@ tracks:
 
 Four proposals write it that way, so the tracks they declare **were never seen by any count**, and six of the eight tracks were undercounted. The shipped `field_map.json` had been signalling it all along: `proposals_declaring_no_known_track` read 14 where the true value was 10, and the four extra were exactly those files — **when a reading is wrong, the data usually already holds a line that does not add up, and nobody followed it.** The reader is fixed, and the census now reads the local git tree rather than the GitHub API: the API rate-limits, and a census skipped at 403 is where stale numbers begin.
 
-Both tracks have thickened across every measurement, and their **relative position has not moved**: robotics is still the thinnest of the eight and AI public services sits beside youth-friendly public space just above it. Current counts are in the track table above, not repeated here — **the specific figures in this sentence went stale repeatedly, because it copied the values out of that generated table.** The wording moves with the data in both directions: an earlier revision wrote "tied for second-thinnest" and a later measurement separated them again. **An ordering that the next measurement can change should not be written as a fixed conclusion.**
+Both tracks have thickened across every measurement, and their **relative position has not moved**: robotics is still the thinnest of the eight and AI public services sits beside youth-friendly public space just above it. Counts are in the track table above, not repeated — **the figures here went stale repeatedly because this sentence copied that generated table.** The wording moves with the data both ways: an earlier revision wrote "tied for second-thinnest" and a later measurement separated them. **An ordering that the next measurement can change should not be written as a fixed conclusion.**
 
-Labels are not coverage, and that distinction matters. Reading every proposal in those two tracks showed both directions of error: one declares the robotics track while its "robots" are ecological sensing devices, and another substantively treats ground robots, tiered autonomous-vehicle admission and low-altitude delivery corridors while never declaring the track at all. So the precise statement is: **thinnest of the eight by label, slightly more in substance, and thinnest either way** (the count is in the track table above) — which is itself a useful reading for the organisers, because track labels currently cannot serve as a coverage measure.
+Labels are not coverage, and that distinction matters. Reading every proposal in those two tracks showed error both ways: one declares the robotics track while its "robots" are ecological sensors; another treats ground robots, tiered autonomous-vehicle admission and low-altitude delivery corridors without declaring the track. So the precise statement is: **thinnest of the eight by label, slightly more in substance, and thinnest either way** (the count is in the track table above) — which is itself a useful reading for the organisers, because track labels currently cannot serve as a coverage measure.
 
 **Reading three: the "machine-readable" disclosure field is not machine-readable.**
 
@@ -1493,12 +1493,12 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-95 entries. By finder:
+96 entries. By finder:
 
 | Found by | Count | What it says |
 |---|---|---|
 | Independent audit | 25 | The audit was run against the shipped package, not a draft |
-| The author | 57 | Found while working |
+| The author | 58 | Found while working |
 | This package's own gate | 9 | Caught at build time — which is what a gate is for |
 | **Reviewers outside this proposal** | **4** | [@anselasimov-web](https://github.com/anselasimov-web) on PR #1002; [@147228](https://github.com/147228) on PR #1065; [@Sonike](https://github.com/Sonike) on Issue #950; [@147228](https://github.com/147228) on Issue #950 / PR #1190 |
 
@@ -1518,9 +1518,9 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 | **Two copies of one thing drifted** | **13** |
 | **A deliverable was not looked at before shipping** | **12** |
 | **A claim outlived the package** | **8** |
+| **A reference did not resolve** | **5** |
 | Geometry did not mean what it said | 4 |
 | A number outlived the sentence holding it | 4 |
-| A reference did not resolve | 4 |
 | A claim outlived the corpus | 3 |
 | A hard constraint nothing could fail | 3 |
 | A number with no file behind it | 3 |
