@@ -16,15 +16,15 @@
     {
       "path_or_glob": "assets/figures/*.png",
       "author": "Codex Urban Design Agent",
-      "creation_method": "deterministic code drawing plus audited text-free image-2 inserts",
-      "tool_model": "OpenAI image-2 for spatial inserts; Pillow for labels",
+      "creation_method": "visible page generated and, where needed, edited only with OpenAI gpt-image-2",
+      "tool_model": "OpenAI gpt-image-2",
       "license": "OpenAI output subject to applicable terms; submission author directs and reviews use",
       "redistribution_rights": "project submission",
       "web_embed_rights": true,
       "pdf_embed_rights": true,
       "distributed": true,
       "license_status": "cleared",
-      "evidence_note": "No external image input; all labels are code rendered."
+      "evidence_note": "Only current-project owned generation outputs and structured facts are used. PR #2247 images, diagrams, text and brand assets are explicitly excluded from generation inputs."
     },
     {
       "path_or_glob": "inline Noto Sans SC web/PDF subset",
@@ -77,7 +77,7 @@
     {
       "path_or_glob": "drawings/*.pdf|visual/assets/competition.css",
       "author": "Codex Urban Design Agent for EthanHuangEbor",
-      "creation_method": "ReportLab vector text/image composition; fontTools WOFF2 subsetting; local CSS",
+      "creation_method": "unchanged Image-2 pages placed one-per-page in PDF; local HTML references the accepted images",
       "tool_model": "ReportLab, fontTools and Pillow local dependencies",
       "license": "project submission; dependencies retain their licenses",
       "redistribution_rights": "generated outputs may be distributed within this submission",
