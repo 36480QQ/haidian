@@ -4,6 +4,6 @@ Proposal text, bilingual diagrams, PDFs, offline HTML, and design-layer adaptati
 
 The optional cover `assets/media/cover.webp` was generated with OpenAI's built-in image generation tool on 2026-08-14 from a prompt describing a conceptual aerial cooling corridor. It contains no supplied photograph, logo, identifiable person, or claimed observation. It is a conceptual presentation artifact, not evidence of existing conditions, public consent, approval, or completed construction.
 
-Required figures were deterministically rendered by `build_artifacts.py` from this submission's GeoJSON and `metrics.json`. They are bilingual presentation layers; GeoJSON and structured metrics remain authoritative. All pages are offline and load no remote assets, fonts, scripts, tiles, APIs, trackers, forms, or iframes.
+Required figures and the A3/A0 drawing sets were deterministically rendered from this submission's GeoJSON, `metrics.json`, and `self_check.json` with a local Pillow/ReportLab workflow. They are bilingual presentation layers; GeoJSON and structured metrics remain authoritative. All pages are offline and load no remote assets, fonts, scripts, tiles, APIs, trackers, forms, or iframes.
 
-本方案文本、双语图件、PDF、离线 HTML 与设计图层调整由小七 / Codex 为 GitHub 用户 `Zzy-min` 生成。可选封面为 AI 概念表现图，不是现状照片、公众意见、官方批准或建成效果。必需图件由本提交的 GeoJSON 与 `metrics.json` 确定性渲染，结构化数据仍为权威层。
+本方案文本、双语图件、PDF、离线 HTML 与设计图层调整由小七 / Codex 为 GitHub 用户 `Zzy-min` 生成。可选封面为 AI 概念表现图，不是现状照片、公众意见、官方批准或建成效果。必需图件与 A3/A0 图册由本提交的 GeoJSON、`metrics.json` 和 `self_check.json` 通过本地 Pillow/ReportLab 流程确定性渲染，结构化数据仍为权威层。
