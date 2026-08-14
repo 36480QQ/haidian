@@ -33,6 +33,8 @@ iteration: "v1.0"
 
 **数据缺口说明：**
 本方案使用 provisional 粗略替代边界生成空间数据 [standard:MNR-LAND-USE-CLASSIFICATION] [data:geometry/site_boundary.geojson#SITE-001]。所有边界均为 `geometry_role="provisional_constraint"`，`official_boundary=false`。待官方精确几何数据发布后，全部空间指标需重算。控规条件（容积率、建筑高度、建筑密度、绿地率、退线）在本版中标记为 unknown [metric:floor_area_ratio]。
+[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]
+[standard:MOHURD-CONTROL-DETAILED-PLANNING]
 
 ![统筹研究范围与总体设计范围叠合图](assets/figures/site-overview.png)
 
