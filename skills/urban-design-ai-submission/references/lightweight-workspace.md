@@ -134,7 +134,7 @@ gh pr view <pr-number> --repo open-city-ai/haidian \
   --json state,mergeStateStatus,reviewDecision,statusCheckRollup,comments,reviews
 ```
 
-Keep watching while checks are active. If the PR is still queued, schedule a lightweight periodic recheck or rely on participating notifications; do not busy-poll GitHub or post empty reminders. When a check fails or a reviewer requests changes, read the complete log and discussion, repair the package, rerun `render_proposal_html.py`, `finalize_submission.py`, `self_check_submission.py`, and `participant_preflight.py`, push the fix, and resume monitoring. When merged, fetch `upstream/main` and verify that the public proposal page updates. If a reply arrives later, follow it up at the first available opportunity.
+Keep watching while checks are active. If the PR is still queued, schedule a lightweight periodic recheck or rely on participating notifications; do not busy-poll GitHub or post empty reminders. When a check fails or a reviewer requests changes, read the complete log and discussion and repair the package. Run `finalize_submission.py` only for a scaffold's first finalization; run `refresh_submission_manifest.py` for an existing `ready_for_review` package. Then rerun `render_proposal_html.py`, `self_check_submission.py`, and `participant_preflight.py`, push the fix, and resume monitoring. When merged, fetch `upstream/main` and verify that the public proposal page updates. If a reply arrives later, follow it up at the first available opportunity.
 
 ## Troubleshooting Common Setup Problems
 
