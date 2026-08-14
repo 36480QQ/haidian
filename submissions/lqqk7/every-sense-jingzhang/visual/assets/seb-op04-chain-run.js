@@ -29,17 +29,31 @@
  * the structured gate_binding in seb-spec.json. None of the three lives in this file.
  *
  * 本复演的节点判定是 seb-spec.json 的第二个独立实现，与 seb-tabletop-run.js 不共享
- * 任何代码。两个实现在同一份规范下得到同一判定，是基准可被取走就用的一次检验。
+ * 任何代码；两实现共用基准的违例码登记表与附加词合格性判据（v0.3.1 起——此前本实现
+ * 未执行合格性校验且自编判定码，该不等价登记于 CR-2026-08-15-005）。
  * The node ruling here is a second, independent implementation of seb-spec.json that
- * shares no code with seb-tabletop-run.js. Two implementations agreeing under one
- * specification is a test of whether the baseline can be picked up and used as is.
+ * shares no code with seb-tabletop-run.js; both implementations share the baseline's
+ * violation-code registry and lexicon-eligibility criteria (from v0.3.1 — previously
+ * this one ran no eligibility check and improvised its own codes, a divergence
+ * registered in CR-2026-08-15-005).
+ *
+ * 范围声明 / Scope statement
+ * 本工具是本提交包专用的复演器，不是通用 SEB 运行器：几何文件路径、节点与道路 id
+ * 绑定本包档案；LineString 仅支持两点线段，更长的折线拒绝运行而不是静默截断。
+ * This tool is a replayer specific to this package, not a general SEB runner: geometry
+ * paths and node/road ids are bound to this package's archive; LineStrings support
+ * two-point segments only, and longer polylines refuse the run instead of being
+ * silently truncated.
  *
  * 用法 / Usage: node seb-op04-chain-run.js
- * 零依赖，仅使用 Node 内置模块，无网络访问，只读取本包内文件。
- * Zero dependencies, Node built-ins only, no network access, reads only this package.
- * 退出码 0 = 全部一致；1 = 有读数不符或判定不通过；2 = 基准版本不足或前置校验器未通过。
- * Exit 0 = all agree; 1 = a figure or a verdict disagrees; 2 = the baseline version is
- * insufficient or the prerequisite checker did not pass, and no verdict is issued.
+ * 零依赖，仅使用 Node 内置模块（Node >= 18），无网络访问，只读取本包内文件；本工具版本 0.3.1。
+ * Zero dependencies, Node built-ins only (Node >= 18), no network access, reads only
+ * this package; runner version 0.3.1.
+ * 退出码 0 = 全部一致；1 = 有读数不符或判定不通过；2 = 兼容失败（基准版本不足、词表
+ * 不合格、几何超出支持范围或前置校验器未通过），不作任何判定。
+ * Exit 0 = all agree; 1 = a figure or a verdict disagrees; 2 = compatibility failure
+ * (baseline too low, ineligible lexicon, unsupported geometry, or a failed
+ * prerequisite checker) with no verdict issued.
  */
 
 "use strict";
@@ -219,14 +233,57 @@ console.log("                  and no inclusion performance value");
 console.log("");
 
 /* --- 版本闸门 --- */
-const need = arc.baseline_spec.required_version.split(".").map(Number);
-const have = spec.version.split(".").map(Number);
-const lower = have[0] < need[0] || (have[0] === need[0] && (have[1] < need[1] || (have[1] === need[1] && have[2] < need[2])));
+// 版本解析与 seb-tabletop-run.js 同一兜底语义：缺段按 0 处理，两段式版本号不再误放行。
+// Version parsing shares the tabletop runner's fallback: missing parts count as 0, so a
+// two-part version string can no longer slip past the gate.
+const parseV = (s) => String(s || "0").split(".").map((x) => parseInt(x, 10) || 0);
+const need = parseV(arc.baseline_spec.required_version);
+const have = parseV(spec.version);
+const lower = (have[0] || 0) < need[0] || (have[0] === need[0] && ((have[1] || 0) < need[1] || (have[1] === need[1] && (have[2] || 0) < need[2])));
 if (spec.spec_id !== arc.baseline_spec.spec_id || lower) {
   console.log("[!] 基准与档案不匹配，不作任何判定 / baseline and archive disagree; no verdict is issued");
   console.log("    需要 / required : " + arc.baseline_spec.spec_id + " >= " + arc.baseline_spec.required_version);
   console.log("    实际 / found    : " + spec.spec_id + " " + spec.version);
   process.exit(2);
+}
+
+// v0.3.1：附加词合格性判据读自基准条文，与桌面校验器同一行为——违例整次拒绝。
+// 此前本实现只过滤非空字符串，不合格词可经档案词表进入并集（CR-2026-08-15-005）。
+// v0.3.1: lexicon eligibility is read from baseline text with the same behaviour as the
+// tabletop checker — violations refuse the whole run. Previously this implementation
+// only filtered non-empty strings, letting ineligible tokens join the union through the
+// archive lexicon (CR-2026-08-15-005).
+let ARC_LEXICON = [];
+{
+  const lexDecl = arc.adopter_lexicon;
+  const lexEvidence = arc.adopter_lexicon_evidence;
+  if (lexDecl !== undefined && (Array.isArray(lexDecl) ? lexDecl.length > 0 : true)) {
+    const problems = [];
+    const schemaC = spec.components.find((c) => c.component_id === "node_schema");
+    const roleF = schemaC.required_fields.find((f) => f.constraint_machine_rule && f.constraint_machine_rule.type === "required_role_token");
+    const elig = roleF && roleF.constraint_machine_rule.adopter_lexicon_eligibility_rule;
+    if (!Array.isArray(lexDecl) || (lexEvidence !== undefined && (typeof lexEvidence !== "object" || lexEvidence === null || Array.isArray(lexEvidence)))) {
+      problems.push("ADOPTER_LEXICON_MALFORMED");
+    } else if (!elig) {
+      problems.push("ADOPTER_LEXICON_MALFORMED: 基准缺附加词合格性判据（需 v0.3.1 及以上）/ baseline states no eligibility criteria (v0.3.1+ required)");
+    } else {
+      const tokens = lexDecl.filter((t) => typeof t === "string" && t.trim().length > 0);
+      if (tokens.length !== lexDecl.length) problems.push("ADOPTER_LEXICON_MALFORMED");
+      const badSuffix = tokens.filter((t) => elig.forbidden_suffixes.some((suf) => t.toLowerCase().endsWith(String(suf).toLowerCase())));
+      if (badSuffix.length) problems.push("ADOPTER_LEXICON_INVALID_TOKEN: " + badSuffix.join(", "));
+      const noEv = tokens.filter((t) => {
+        const e = lexEvidence ? lexEvidence[t] : undefined;
+        return typeof e !== "string" || e.trim().length === 0;
+      });
+      if (noEv.length) problems.push("ADOPTER_LEXICON_EVIDENCE_MISSING: " + noEv.join(", "));
+      if (!problems.length) ARC_LEXICON = tokens;
+    }
+    if (problems.length) {
+      console.log("[!] 词表兼容校验未通过，不作任何判定 / lexicon compatibility failed; no verdict is issued");
+    problems.forEach((p) => console.log("    " + p));
+      process.exit(2);
+    }
+  }
 }
 
 /* --- [P] 前置：真实执行既有桌面校验器 --- */
@@ -275,7 +332,19 @@ console.log("");
 
 /* --- [1] 环节一：开放数据基线 --- */
 console.log("[1] 环节一 开放数据基线 / Stage 1 open-data baseline");
-const roads = geo("roads").features.map((f) => ({
+const roadFeatures = geo("roads").features;
+// 几何范围守卫：本复演器只支持两点线段；更长的折线在此拒绝运行，而不是静默取前两点
+// 截断（截断会让全部长度与比值读数失真却照常退出 0）。
+// Geometry guard: this replayer supports two-point segments only; longer polylines
+// refuse the run here instead of being silently truncated to their first two points
+// (truncation would distort every length and ratio while still exiting 0).
+const tooLong = roadFeatures.filter((f) => f.geometry.type !== "LineString" || f.geometry.coordinates.length !== 2);
+if (tooLong.length) {
+  console.log("[!] 几何超出本复演器支持范围，不作任何判定 / geometry outside this replayer's support; no verdict is issued");
+  tooLong.forEach((f) => console.log(`    ${f.properties.id}: ${f.geometry.type} · ${f.geometry.coordinates.length} 点 / points（仅支持两点 LineString / two-point LineString only）`));
+  process.exit(2);
+}
+const roads = roadFeatures.map((f) => ({
   id: f.properties.id,
   role: f.properties.design_role || "",
   a: project(f.geometry.coordinates[0][0], f.geometry.coordinates[0][1]),
@@ -413,23 +482,37 @@ const levelById = {};
 levels.levels.forEach((l) => { levelById[l.level_id] = l; });
 
 function ruleNode(claim) {
+  // 与桌面校验器同一语义（违例码登记表）：字段须为非空字符串——严格类型，不做字符串
+  // 强转（此前 String(v) 会把数字放行）；缺字段不再短路其余判据，逐条报全。
+  // Same semantics as the tabletop checker (violation-code registry): fields must be
+  // non-empty strings — strict typing, no coercion (String(v) used to let numbers
+  // through); a missing field no longer short-circuits the rest, every reason reports.
   const reasons = [];
+  const valid = {};
   for (const f of nodeSchema.required_fields) {
     const v = claim.node[f.field];
-    if (v === undefined || v === null || String(v).trim() === "") reasons.push("REQUIRED_FIELD_MISSING:" + f.field);
+    if (typeof v !== "string" || v.trim() === "") reasons.push("NODE_FIELD_MISSING:" + f.field);
+    else valid[f.field] = v;
   }
-  if (reasons.length === 0) {
-    const p = String(claim.node.ai_off_path).toLowerCase();
+  if (valid.ai_off_path) {
+    const p = valid.ai_off_path.toLowerCase();
     if (forb.forbidden_targets.some((x) => p.includes(String(x).toLowerCase()))) reasons.push(forb.violation_code);
-    const h = String(claim.node.human_handoff).toLowerCase();
-    if (!roleRule.required_tokens.some((x) => h.includes(String(x).toLowerCase()))) reasons.push(roleRule.violation_code);
-    const gid = claim.node.gate_id;
-    const enumField = nodeSchema.required_fields.find((f) => f.field === "gate_id");
-    if (enumField.allowed_values.indexOf(gid) === -1) reasons.push("ENUM_VALUE_INVALID:gate_id");
-    const lvl = levelById[claim.claimed_level];
-    if (!lvl) reasons.push("LEVEL_UNKNOWN:" + claim.claimed_level);
-    else if (lvl.gate_binding.gate_id !== "none" && lvl.gate_binding.gate_id !== gid) reasons.push(levels.gate_violation_code);
   }
+  if (valid.human_handoff) {
+    const h = valid.human_handoff.toLowerCase();
+    // v0.3.1：与 seb-tabletop-run.js 同一并集语义，词表已在版本闸门后按条文完成合格性校验。
+    // v0.3.1: same union semantics as the tabletop checker; the lexicon passed the
+    // text-stated eligibility check right after the version gate.
+    const roleTokens = ARC_LEXICON.length ? roleRule.required_tokens.concat(ARC_LEXICON) : roleRule.required_tokens;
+    if (!roleTokens.some((x) => h.includes(String(x).toLowerCase()))) reasons.push(roleRule.violation_code);
+  }
+  if (valid.gate_id) {
+    const enumField = nodeSchema.required_fields.find((f) => f.field === "gate_id");
+    if (enumField.allowed_values.indexOf(valid.gate_id) === -1) reasons.push("NODE_ENUM_INVALID:gate_id");
+  }
+  const lvl = levelById[claim.claimed_level];
+  if (!lvl) reasons.push("LEVEL_UNKNOWN:" + claim.claimed_level);
+  else if (valid.gate_id && lvl.gate_binding.gate_id !== "none" && lvl.gate_binding.gate_id !== valid.gate_id) reasons.push(levels.gate_violation_code);
   return { verdict: reasons.length ? "REJECT" : "ACCEPT", reasons };
 }
 

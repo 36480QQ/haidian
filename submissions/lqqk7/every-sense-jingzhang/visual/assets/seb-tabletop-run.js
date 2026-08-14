@@ -18,22 +18,31 @@
  * 自基准 v0.2 起，本工具不再持有任何私有词表、私有正则或私有适用范围推导：拒绝
  * 词表读自 node_schema 各字段的 constraint_machine_rule，闸门比对读自
  * level_definitions 的结构化 gate_binding，分母完整性的适用范围读自
- * denominator_integrity_applies_to。工具只负责执行，判据的内容一律由基准条文规定；
- * 三处升格的经过见变更回执 CR-2026-08-12-002。
+ * denominator_integrity_applies_to。v0.3.1 起附加词合格性判据（禁用后缀表与证据
+ * 要求）与来源对齐规则同样读自基准条文，判定码一律取自基准的违例码登记表。
+ * 工具只负责执行，判据的内容一律由基准条文规定；升格经过见变更回执
+ * CR-2026-08-12-002 与 CR-2026-08-15-005。
  * From baseline v0.2 this tool holds no private word list, no private pattern and no
  * private scope inference: the refusal lists come from constraint_machine_rule on the
  * node_schema fields, the gate comparison comes from the structured gate_binding of
  * level_definitions, and the scope of denominator integrity comes from
- * denominator_integrity_applies_to. The tool only executes; the baseline states every
- * criterion. The promotion of all three is recorded in change receipt CR-2026-08-12-002.
+ * denominator_integrity_applies_to. From v0.3.1 the lexicon-eligibility criteria
+ * (forbidden-suffix list and evidence requirement) and the source-alignment rule are
+ * read from the baseline text as well, and every verdict code comes from the baseline's
+ * violation-code registry. The tool only executes; the baseline states every criterion.
+ * The promotions are recorded in change receipts CR-2026-08-12-002 and CR-2026-08-15-005.
  *
  * 用法 / Usage: node seb-tabletop-run.js
- * 零依赖，仅使用 Node 内置模块 / Zero dependencies, Node built-ins only.
- * 退出码 0 表示全部样例的判定与 expected_verdict 一致。
- * Exit code 0 means every fixture verdict matched its expected_verdict.
- * 退出码 2 表示基准版本过低或基准与样例不一致，此时不作任何判定。
- * Exit code 2 means the baseline version is too low or baseline and fixtures disagree,
- * and no verdict is issued.
+ * 零依赖，仅使用 Node 内置模块（Node >= 18）；本工具版本 0.3.1。
+ * Zero dependencies, Node built-ins only (Node >= 18); runner version 0.3.1.
+ * 退出码 / Exit codes:
+ *   0 — 全部样例的判定与 expected_verdict 一致 / every verdict matched its expectation
+ *   1 — 至少一条样例的判定与期望不一致 / at least one verdict missed its expectation
+ *   2 — 兼容失败，不作任何判定：基准版本过低、版本不匹配、词表不合格、
+ *       声明的来源文件不可读，或基准声明了本工具未支持的规则类型
+ *       compatibility failure, no verdict issued: baseline too low, version mismatch,
+ *       ineligible lexicon, an unreadable declared source file, or a rule type this
+ *       tool does not support
  */
 
 "use strict";
@@ -44,7 +53,11 @@ const path = require("path");
 const HERE = __dirname;
 const SPEC_PATH = path.join(HERE, "seb-spec.json");
 const FIXTURES_PATH = path.join(HERE, "seb-tabletop-fixtures.json");
-const NODE_SOURCE_PATH = path.join(HERE, "..", "..", "geometry", "constraints.geojson");
+// 节点来源文件不再硬编码：由 fixtures 的 consumes.node_source_of_record 声明，
+// 相对 fixtures 文件所在目录解析（v0.3.0 采用方声明制在实现侧的落地）。
+// The node source file is no longer hard-coded: the fixtures declare it in
+// consumes.node_source_of_record, resolved relative to the fixtures file's directory
+// (the v0.3.0 adopter-declared location landing in the implementation).
 
 // 本工具要求的最低基准版本。低于此版本的基准把 ai_off_path 的拒绝依据、等级闸门与
 // 分母完整性的适用范围留给实现自行解释，本工具拒绝在那种条件下作出判定。
@@ -116,8 +129,22 @@ function checkCompatibility(spec, fixtureFile) {
         + `${spec.version} is below the required ${MIN_SPEC_VERSION.join(".")}`
     );
   }
+  const schema = component(spec, "node_schema");
+  // 规则类型支持性属兼容问题：基准声明了本工具未支持的规则类型时整次拒绝，
+  // 而不是把不支持记成样例违例（违例码登记表对 RULE_TYPE_UNSUPPORTED 的明文语义）。
+  // Rule-type support is a compatibility matter: a rule type this tool does not support
+  // refuses the whole run instead of being recorded as a per-fixture violation (the
+  // registry's stated semantics for RULE_TYPE_UNSUPPORTED).
+  const SUPPORTED_RULE_TYPES = ["forbidden_dependency", "required_role_token"];
+  for (const field of schema.required_fields) {
+    const rule = field.constraint_machine_rule;
+    if (rule && !SUPPORTED_RULE_TYPES.includes(rule.type)) {
+      problems.push(`RULE_TYPE_UNSUPPORTED:${rule.type} — 基准声明了本工具尚未实现的规则类型，不作判定 / the baseline declares a rule type this tool does not implement, so no verdict is issued`);
+    }
+  }
+  const roleField = schema.required_fields.find((f) => f.constraint_machine_rule && f.constraint_machine_rule.type === "required_role_token");
+  problems.push(...lexiconProblems(roleField && roleField.constraint_machine_rule, fixtureFile));
   const declared = fixtureFile.consumes && fixtureFile.consumes.spec_version;
-  setAdopterLexicon(fixtureFile.adopter_lexicon);
   if (declared !== spec.version) {
     problems.push(
       `样例声明的基准版本 ${declared} 与基准文件的 ${spec.version} 不一致 / `
@@ -165,8 +192,63 @@ function checkSpecConsistency(scoring) {
 // declared (optionally) at the top of the fixtures file; with no declaration the behaviour
 // is byte-identical to v0.2.
 let ADOPTER_LEXICON = [];
-function setAdopterLexicon(list) {
-  ADOPTER_LEXICON = Array.isArray(list) ? list.filter((t) => typeof t === "string" && t.length > 0) : [];
+// v0.3.1：附加词合格性校验按基准条文执行——判据（禁用后缀表、后缀语义、证据要求）
+// 读自 constraint_machine_rule.adopter_lexicon_eligibility_rule，本工具不持有词表副本。
+// 后缀按词尾匹配而非子串匹配：v0.3.1 初稿曾用子串匹配，误拒 officer、community steward
+// 一类合法角色词（officer 甚至是基准本体词表成员），该误伤登记于 CR-2026-08-15-005。
+// 任一违例以退出码 2 拒绝整次运行，词表扩展因此不能绕过 human_handoff 硬判据。
+// v0.3.1: token eligibility is enforced per baseline text — the criteria (forbidden-suffix
+// list, suffix semantics, evidence requirement) are read from
+// constraint_machine_rule.adopter_lexicon_eligibility_rule and this tool keeps no copy.
+// Suffixes match at the end of the token, not as substrings: an early v0.3.1 draft used
+// substring matching and falsely refused legitimate role words such as officer or
+// community steward (officer is itself in the baseline's own token list) — registered in
+// CR-2026-08-15-005. Any violation refuses the whole run at exit code 2, so the lexicon
+// can never bypass the human_handoff hard test.
+function lexiconProblems(rule, fixtureFile) {
+  const lex = fixtureFile.adopter_lexicon;
+  const evidence = fixtureFile.adopter_lexicon_evidence;
+  const problems = [];
+  if (lex === undefined || (Array.isArray(lex) && lex.length === 0)) {
+    if (Array.isArray(lex)) ADOPTER_LEXICON = [];
+    return problems;
+  }
+  if (!Array.isArray(lex) || (evidence !== undefined && (typeof evidence !== "object" || evidence === null || Array.isArray(evidence)))) {
+    problems.push("ADOPTER_LEXICON_MALFORMED: adopter_lexicon 须为数组、adopter_lexicon_evidence 须为对象 / adopter_lexicon must be an array and adopter_lexicon_evidence an object");
+    return problems;
+  }
+  const elig = rule && rule.adopter_lexicon_eligibility_rule;
+  if (!elig) {
+    problems.push("ADOPTER_LEXICON_MALFORMED: 基准缺附加词合格性判据（需 v0.3.1 及以上），声明了词表即不得运行 / the baseline states no lexicon-eligibility criteria (v0.3.1+ required); with a lexicon declared the run may not proceed");
+    return problems;
+  }
+  const badType = lex.filter((t) => typeof t !== "string" || t.trim().length === 0);
+  if (badType.length) {
+    problems.push(`ADOPTER_LEXICON_MALFORMED: 附加词须为非空字符串 / tokens must be non-empty strings (${badType.length})`);
+  }
+  const tokens = lex.filter((t) => typeof t === "string" && t.trim().length > 0);
+  const badSuffix = tokens.filter((t) => {
+    const low = t.toLowerCase();
+    return elig.forbidden_suffixes.some((suf) => low.endsWith(String(suf).toLowerCase()));
+  });
+  if (badSuffix.length) {
+    problems.push(
+      `ADOPTER_LEXICON_INVALID_TOKEN: 附加角色词不合格（机构名、系统名或泛称不得入词表）/ `
+        + `ineligible adopter lexicon tokens: ${badSuffix.join(", ")}`
+    );
+  }
+  const noEvidence = tokens.filter((t) => {
+    const entry = evidence ? evidence[t] : undefined;
+    return typeof entry !== "string" || entry.trim().length === 0;
+  });
+  if (noEvidence.length) {
+    problems.push(
+      `ADOPTER_LEXICON_EVIDENCE_MISSING: 附加词缺少非空证据条目（岗位名与可被找到的位置）/ `
+        + `tokens without a non-empty evidence entry: ${noEvidence.join(", ")}`
+    );
+  }
+  ADOPTER_LEXICON = problems.length ? [] : tokens;
+  return problems;
 }
 function applyMachineRule(value, rule) {
   if (!rule) return null;
@@ -234,8 +316,14 @@ function checkDenominator(declaration, scoring) {
 // comparison reads gate_binding.gate_id directly instead of extracting it from free
 // text; where gate_id is none, no comparison is made.
 function checkLevel(claim, levels, node) {
-  const level = levels.levels.find((item) => item.level_id === (claim && claim.level_id));
-  if (!level) return [`LEVEL_UNKNOWN:${claim ? claim.level_id : "none"}`];
+  // 组件级采用：未申报等级的样例不适用本组件（reuse_examples 的预期形态），
+  // 不再判 LEVEL_UNKNOWN:none——那是把「没有申报」误当「申报了未知等级」。
+  // Component-level adoption: a fixture claiming no level does not engage this
+  // component (the form reuse_examples expects); it is no longer LEVEL_UNKNOWN:none,
+  // which mistook "no claim" for "an unknown claim".
+  if (!claim) return [];
+  const level = levels.levels.find((item) => item.level_id === claim.level_id);
+  if (!level) return [`LEVEL_UNKNOWN:${claim.level_id}`];
   const reasons = [];
   for (const field of levels.level_binding_fields) {
     const value = claim[field];
@@ -254,6 +342,12 @@ function checkLevel(claim, levels, node) {
 // Component 4: decision rules. A triggered stop condition stops the work, and
 // resumption requires submitted evidence rather than a promise.
 function checkDecision(decision, rules) {
+  // 组件级采用：未声明 decision 块的样例不适用本组件；此前这里未设防，
+  // 第三方样例缺该块会裸抛 TypeError（登记于 CR-2026-08-15-005）。
+  // Component-level adoption: a fixture without a decision block does not engage this
+  // component; previously this path was unguarded and a third-party fixture missing
+  // the block crashed with a bare TypeError (registered in CR-2026-08-15-005).
+  if (!decision) return [];
   const reasons = [];
   const known = new Set(rules.risk_entries.map((item) => item.risk_id));
   for (const riskId of decision.risk_ids || []) {
@@ -273,8 +367,21 @@ function checkDecision(decision, rules) {
 // Step 0: any fixture naming a source of record must match the five required fields
 // of the same node in constraints.geojson, verbatim.
 function checkSourceAlignment(fixture, schema, nodeSource) {
-  const record = fixture.source_of_record;
-  if (!record || !nodeSource) return { reasons: [], line: null };
+  if (!nodeSource) return { reasons: [], line: null };
+  let record = fixture.source_of_record;
+  // 强制对齐：样例节点 id 与来源文件中的 feature id 相同时，即使未声明
+  // source_of_record 也须逐字对齐——真实节点 id 不得携带被改写的字段值
+  //（source_alignment_rule 的条文语义；此前对齐可以靠不声明来源而松开）。
+  // Forced alignment: where the fixture's node id equals a feature id in the source,
+  // verbatim alignment applies even without a source_of_record declaration — a real
+  // node id may not carry rewritten field values (the stated semantics of
+  // source_alignment_rule; previously alignment could be loosened by not declaring).
+  if (!record && fixture.node && typeof fixture.node.id === "string"
+      && nodeSource.features.some((item) => item.properties.id === fixture.node.id)) {
+    record = { file: nodeSource.__source_label || "node source", feature_id: fixture.node.id };
+  }
+  if (!record) return { reasons: [], line: null };
+  if (!fixture.node) return { reasons: [`SOURCE_MISMATCH:${record.feature_id}`], line: null };
   const feature = nodeSource.features.find((item) => item.properties.id === record.feature_id);
   if (!feature) return { reasons: [`SOURCE_MISMATCH:${record.feature_id}`], line: null };
   const reasons = [];
@@ -300,10 +407,14 @@ function evaluate(fixture, parts, nodeSource) {
     ...checkDecision(fixture.decision, parts.rules),
   ];
   const unique = [...new Set(reasons)];
+  const skipped = [];
+  if (!fixture.level_claim) skipped.push("level_definitions");
+  if (!fixture.decision) skipped.push("decision_rules");
   return {
     verdict: unique.length === 0 ? "accept" : "reject",
     reasons: unique,
     alignmentLine: alignment.line,
+    skipped,
   };
 }
 
@@ -334,6 +445,14 @@ function provenanceLines(parts) {
       + `${applies.included_metric_ids.length} in scope, ${applies.excluded_metric_ids.length} out, `
       + `${applies.excluded_external_metric_ids.length} file-completeness metrics excluded`
   );
+  const roleField = parts.schema.required_fields.find((f) => f.constraint_machine_rule && f.constraint_machine_rule.type === "required_role_token");
+  const elig = roleField && roleField.constraint_machine_rule.adopter_lexicon_eligibility_rule;
+  if (elig) {
+    lines.push(
+      `    附加词合格性 / Lexicon eligibility : ${elig.type} · ${elig.forbidden_suffixes.length} 项禁用后缀与证据要求来自基准条文 / `
+        + `${elig.forbidden_suffixes.length} forbidden suffixes and the evidence requirement from baseline text`
+    );
+  }
   lines.push("    本工具不持有任何私有词表、私有正则或私有适用范围推导");
   lines.push("    this tool holds no private word list, no private pattern and no private scope inference");
   return lines;
@@ -364,11 +483,27 @@ function main() {
     return 2;
   }
 
+  // 来源文件三态（source_alignment_rule 的条文语义）：未声明→不适用；声明且可读→执行；
+  // 声明但不可读→SOURCE_FILE_UNREADABLE 整次拒绝——不再静默跳过后打印与事实相反的说明。
+  // Three source-file states (the stated semantics of source_alignment_rule): undeclared →
+  // not applicable; declared and readable → executed; declared but unreadable →
+  // SOURCE_FILE_UNREADABLE refusing the whole run — no more silent skip behind a message
+  // that contradicted the facts.
+  const declaredSource = fixtureFile.consumes && fixtureFile.consumes.node_source_of_record;
   let nodeSource = null;
-  try {
-    nodeSource = readJson(NODE_SOURCE_PATH);
-  } catch (error) {
-    nodeSource = null;
+  if (declaredSource) {
+    try {
+      nodeSource = readJson(path.resolve(HERE, declaredSource));
+      nodeSource.__source_label = declaredSource;
+    } catch (error) {
+      process.stderr.write("兼容校验未通过，不作任何判定 / compatibility gate failed, no verdict issued\n");
+      process.stderr.write(
+        `    SOURCE_FILE_UNREADABLE: 样例声明的节点来源文件不可读（${declaredSource}），`
+          + `声明了来源即不得静默跳过对齐 / the declared node source file is unreadable, and a`
+          + ` declared source may not be silently skipped\n`
+      );
+      return 2;
+    }
   }
 
   const out = [];
@@ -394,8 +529,10 @@ function main() {
     results.push({ fixture, result });
     if (result.alignmentLine) alignmentLines.push(result.alignmentLine);
   }
-  if (alignmentLines.length === 0) {
-    out.push("    未找到可对齐的来源声明 / no source-of-record declaration found");
+  if (!nodeSource) {
+    out.push("    样例未声明节点来源文件，来源对齐不适用 / no node source file declared; source alignment not applicable");
+  } else if (alignmentLines.length === 0) {
+    out.push(`    来源文件已读（${declaredSource}），无样例命中对齐 / source file read; no fixture engaged alignment`);
   } else {
     alignmentLines.forEach((line) => out.push(line));
   }
@@ -410,6 +547,9 @@ function main() {
     if (agree) matched += 1;
     out.push(`[${index}] ${fixture.fixture_id}  ${fixture.title_zh} / ${fixture.title_en}`);
     out.push(`    判定 / verdict : ${result.verdict.toUpperCase()}   期望 / expected : ${fixture.expected_verdict.toUpperCase()}   ${agree ? "一致 / match" : "不一致 / MISMATCH"}`);
+    if (result.skipped.length) {
+      out.push(`    组件 / components : ${result.skipped.join("、")} 未声明，按组件级采用跳过 / not declared, skipped as component-level adoption`);
+    }
     for (const code of result.reasons) {
       const [zh, en] = explain(code);
       out.push(`    理由 / reason  : ${code}`);
