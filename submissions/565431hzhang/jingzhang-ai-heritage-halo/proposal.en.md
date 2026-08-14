@@ -13,27 +13,17 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 # 京张智脉·光晕 / Jing-Zhang AI Heritage Halo
 
-## Design Concept: Light Track
+## Design Concept: 京张智脉·光晕 (Jing-Zhang AI Pulse · Heritage Halo)
 
-The Jing-Zhang Railway was the first railway designed by Chinese engineers. Its engineering tradition is not speed, but signal — whether each train may pass is determined by the signal gate. Zhan Tianyou transformed the steep-slope challenge into a zigzag switchback, using engineering wisdom to make the impossible possible. This proposal inherits that tradition: not injecting AI into the city, but using signal-system logic to control when AI may pass and when it must stop [source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
+**"智脉" / AI Pulse**: Using the Jing-Zhang Railway Heritage Park as the historical and public-space main artery, this concept reshapes the century-old railway line into a north–south "digital artery." The railway itself carries the memory of history, while the urban space on both sides is energized by AI innovation—like a pulse signal traveling along a nerve pathway.
 
-**Every AI service is a light track — it runs along the Heritage Park, leaving a visible trace, an auditable path, and a retractable exit.**
+**"光晕" / Heritage Halo**: The three key areas—众智园 (Zhongzhi Park), AI Origin Community, and 大钟寺 (Dazhongsi)—act as three "luminous nodes." Each node radiates AI innovation energy into the surrounding urban neighborhoods, forming three concentric "halos"—an innovation-acceleration halo, a talent-ecosystem halo, and an industry-cluster halo. The halos are design-level radiation ranges, not new red lines.
 
-"Light Track" has three layers:
-- **Physical**: The slow-mobility belt of the Heritage Park is the continuation of the historical track. Rails became walkways, sleepers became seats, signal towers became public inquiry booths.
-- **Digital**: AI services run along this track. Each service has an ID (SC-01 to SC-10), an auditable data trail, and a signal light (green = released, yellow = pilot, red = halted).
-- **Public**: Residents can see each AI service's status at street-corner "signal booths" — which is running, which is piloting, which was paused and why. This is not a dashboard; it is street furniture.
+**"双轨共生" / Twin-Track Symbiosis**:
+- Track One (Historical Pulse): the centennial Jing-Zhang cultural belt—heritage protection, slow-mobility connectivity, public space, and cultural narrative.
+- Track Two (Digital Pulse): the AI-integration innovation belt—AI innovation ecosystem, intelligent infrastructure, and future economic forms.
 
-**Jing-Zhang Four Gates** (G0-G3) are the signal rules of the light track. G0 Readiness is the precondition for green; G1 Pilot is yellow (90-day trial); G2 Release is green (Go/No-Go); G3 Retirement is the light dimming (exit trail). Missing any gate, the signal stays red [depth:phasing_implementation].
-
-**One line**: The Jing-Zhang Railway used signals to control train passage; the Jing-Zhang AI Belt uses four gates to control intelligent service release. AI is added only where the city benefits; where it doesn't, the city stays as it is.
-
-Three key areas are three "signal stations" on the light track:
-- **Zhongzhi Park** (Innovation Signal Station): AI technology is tested here under control; only after passing four gates does it enter public space
-- **AI Origin Community** (Talent Signal Station): Open-source collaboration and tech transfer converge here, cultivating people who can master AI
-- **Dazhongsi** (Industry Signal Station): AI products that passed four gates are showcased and disseminated here, connecting to global markets
-
-The light track is not a new red line, not a development-volume commitment, not a technology vision. It is a verification method: whether the city still works after the AI layer is removed is the sole acceptance criterion.
+The two tracks run in parallel and reinforce each other, forming a distinctive urban-renewal paradigm of "anchored by history, winged by AI, and centered on people."
 
 ## Design Basis and Source Inventory
 
