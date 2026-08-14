@@ -636,6 +636,19 @@
       "assumptions": [
         "13 张场景卡全部覆盖；阈值待 G4 标定"
       ]
+    },
+    "visual_interactive_gate_count": {
+      "status": "known",
+      "value": 7,
+      "unit": "count",
+      "source_files": [
+        "visual/index.html"
+      ],
+      "formula": "count of expandable gate details in visual",
+      "confidence": "high",
+      "assumptions": [
+        "纯 HTML details/summary 零脚本,满足离线约束"
+      ]
     }
   }
 }
