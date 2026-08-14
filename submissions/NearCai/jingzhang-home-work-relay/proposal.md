@@ -8,7 +8,7 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-iteration: "1.0.0"
+iteration: "1.5.0"
 summary: "沿京张遗址公园建立一条可步行、可停留、可换工位的居业主线；三站以住研庭院、家庭檐廊和站前公共门厅承接项目、家庭与抵达转换，建筑以保留结构、可拆内装和连续公私阈值支持四种居住状态。"
 tracks: ["youth-friendly-public-space", "ai-public-services", "ai-origin-community"]
 scenarios: ["enterprise-service-copilot", "ai-health-service-navigation", "ai-traffic-walkability", "ai-cultural-guide"]
@@ -21,6 +21,55 @@ scenarios: ["enterprise-service-copilot", "ai-health-service-navigation", "ai-tr
 “行”是沿京张廊道抵达、转岗、迁居与再出发，“止”是在一段人生和一项事业中获得安顿，“有居”要求住处、工位、照护与公共服务在转换中保持连续。方案把铁路的“编组、换挂、直通”转译为空间与服务秩序：一条公共主线串联三站，三种门槛组织抵达、项目和家庭，四种居住状态通过同一套服务核心与可拆装内装渐进转换。方案署名为 **NearCai × OpenAI Codex**，面向公共讨论与专业深化。
 
 设计先从可感知的场所动作开始。北部众智园以住研庭院容纳项目扩缩，中部 AI 原点以照护檐廊和可变住宅回应家庭阶段，南部大钟寺以首层公共门厅承接抵达、短住和换乘。街道—共享门厅—半公共庭院—住户门槛—室内形成连续公私梯度；服务与设备沿可检修的公共边布置，私宅默认由住户掌握入口。六项接力由结构化合同支持，九态流程和三道人工复核闸门把责任、同意、普通路径、停止与回流写入每一次空间转换 [metric:relay_contract_count] [metric:relay_state_count] [metric:relay_gate_count]。
+
+## 一页评分证据索引
+
+本节不是新的设计口号，而是给 Review Agent 和人工复核者的导航页：七个评分维度、七条证据路径和八步 100 天行动包均登记为包内可数对象 [metric:review_score_dimension_count] [metric:review_evidence_map_item_count] [metric:first_100_days_action_count]。72 条桌面负例另在场景负例分母中计数 [metric:scenario_negative_fixture_branch_count]。完整索引见 `visual/assets/review-score-evidence-map.json`、`visual/assets/score-sprint-100-days.json` 和 `visual/assets/scenario-negative-fixtures.json`；这些文件只证明证据链已被组织，不证明任何现场授权、预算、入住资格、租金、容量或实施成效 [data:visual/assets/review-score-evidence-map.json#dimensions] [data:visual/assets/score-sprint-100-days.json#actions] [data:visual/assets/scenario-negative-fixtures.json#negative_branches]。
+
+| 评分维度 | 权重 | 本包直接给出的可审查证据 | 硬边界 |
+|---|---:|---|---|
+| 任务书相关性 | 20 | 三层范围、三处重点区、agent.1-agent.6、三条赛道、六项任务在正文、`compliance_matrix.json`、`design_depth_matrix.json`、图层和图件中交叉定位 [metric:key_area_count] | provisional geometry 只支持 intake 与内容讨论，不是 official redline |
+| 可实施性 | 20 | G0-G4 五道委托前证据门、100 天八步行动、六类 RACI 角色、停止/恢复/退役条件进入同一张行动表 [metric:commissioning_gate_count] [metric:raci_role_type_count] | 当前没有采购、预算、任命、许可、现场小试或施工 |
+| AI 规划创新 | 15 | 六份接力合同、九态流程、三闸门和三项产业验证把 AI 限定为解释、提醒、排错和证据整理 [metric:relay_contract_count] [metric:relay_state_count] [metric:relay_gate_count]；十二场景合同另单列计数 [metric:scene_contract_count] | AI 不决定资格、租金、住房分配、工位准入、安全、医疗或法律事项 |
+| 表达完整度 | 15 | 双语 Markdown、HTML、A3/A0、核心图、离线展示、manifest、自检、来源/假设/版权文件形成同一交付链 | HTML 不加载 CDN、远程字体、地图瓦片、iframe、表单、API 或跟踪代码 |
+| 原创性 | 10 | “居业接力”把铁路编组、换挂、直通转成住房、工位、服务和回流的责任协议；三地标、年度接力周和 cover 均为本包原创 | 国际案例只作背景比较，不复制同伴文本、图件、几何、数据或字段表 |
+| 公共利益与包容 | 10 | 六类用户、十二张场景卡、六条公平验收规则、AI-off、人工复核、无障碍、夜间和多语路径纳入同一分母 [metric:scenario_card_count] [metric:equity_acceptance_rule_count] | 公平等价、真实可负担性、真实容量和留驻率全部保持 unknown |
+| 风险与合规 | 10 | 风险矩阵、假设清单、72 条负例、`not_authorized_not_run`、unknown 不是 pass、失败和退出资产都在正文可见 | 不声明官方背书、获奖、建成、审批、合作、真实成效或专业签字 |
+
+### G0-G4：100天八步冲刺行动包
+
+100 天行动包把“能否继续深化”拆成八个案头动作，而不是承诺开工。G0 只检查包内一致性；G1 等待官方和权利前置；G2 只做合同、负例、AI-off 和专业案头审查；G3 必须在真实任命、许可、预算、保险、基线和场地授权后才可能现场小试；G4 决定继续、修订或退役。当前状态统一为 `not_authorized_not_run` 或 `role_type_only`，没有任何一步可自动越过人工决定 [metric:commissioning_gate_count] [metric:first_100_days_action_count] [depth:phasing_implementation]。
+
+| 步骤 | 时间 | Gate | 最小输入 | 验收证据 | no-go / 退出 |
+|---|---|---|---|---|---|
+| A01 证据索引冻结 | Day 0-7 | G0 | 正文、指标、矩阵、manifest、自检 | 路径、hash、双语映射一致 | 文件缺失或 hash 失配即停 |
+| A02 官方底图与控规再基线 | Day 8-18 | G1 | official boundary、重点区、控规、文保、道路资料 | 替换清单与复算记录 | 官方数据未到位，不进入精确红线/强度判断 |
+| A03 权属/许可/公众沟通案头筛查 | Day 19-30 | G1 | 权属、文保、消防、无障碍、隐私、劳动、住房政策问题 | 角色类型与不可触发事项清单 | 未授权不得联系住户、改合同或装设备 |
+| A04 十二场景合同桌面回放 | Day 31-42 | G2 | 12 场景合同与 72 条合成负例 | 失败保留、普通路径、退出资产、人工接收回执 | 任一负例未拒绝即退回合同修订 |
+| A05 可逆内装与住研邻接专业审查 | Day 43-55 | G2 | 房间授权、构件、噪声/安全阈值、恢复方法 | go/no-go 表、恢复清单、人工签字模板 | 无授权场地、无校准仪器或无恢复条件即停 |
+| A06 门内默认禁入与 AI-off 审查 | Day 56-68 | G2 | 设备、数据流、撤回、断网、纸本/人工路径 | 未授权传输零容忍条件、撤回后基本功能 | 出现个人/家庭评分、隐性分配或无 AI 路径缺失即停 |
+| A07 三站重点区交接包 | Day 69-84 | G3-pre | 三站入口、动线、责任、未知项 | 站点回执、暂停/恢复条件、外部输入清单 | 无真实机构接收或现场条件，不进入 G3 |
+| A08 公开复核、退役或限定深化 | Day 85-100 | G4 | 失败、异议、撤回、成本、容量、普通路径分母 | 继续/修订/退役/重开登记决定 | 不能公开失败或退出资产不完整即退役 |
+
+### 十二场景合同与负例分母
+
+十二张场景卡被重述为“场景合同”而不是体验故事：每张卡必须有触发、最小数据、RACI、成功证据、停止线和退出资产 [metric:scene_contract_count]。每张卡再配六条合成负例：来源不可证、同意/撤回缺失、AI 越权决定、普通路径缺失、责任/安全/回执缺失、退出/删除/恢复/失败分母缺失；合计 72 条，全部只是桌面拒绝分支，不是现场测试结果 [metric:scenario_negative_fixture_branch_count] [depth:risk_missing_data]。
+
+| 场景 | 最小数据 | RACI 接收 | 成功证据 | 必拒负例 |
+|---|---|---|---|---|
+| S01 抵达选项解释 | 到达方式、语言、便利需求 | 抵达服务/人工台 | 选项说明与普通路径回执 | AI 直接分配住房或工位 |
+| S02 住源人工核验 | 住源编号、来源版本 | 核验人员/住房决定角色 | 权利、费用、时效分别确认 | 来源不可证仍推荐 |
+| S03 租期转换 | 当前期限、希望期限 | 个案协调/合同角色 | 交出与接收双回执 | 费用/资格冲突被跳过 |
+| S04 可变户型预约 | 功能需求、准入范围 | 内装/产权/安全角色 | 基线、同意、恢复共同签字 | 撤回后仍继续改造 |
+| S05 伴侣/转岗接口 | 服务类别、联系选择 | 就业转介/服务角色 | 不读取住房家庭信息的接收回执 | 读取家庭或雇佣评分 |
+| S06 共享实验室预约 | 空间类型、培训状态 | 空间协调/实验室准入 | 安全、设备、交还记录 | 培训/设备不明仍放行 |
+| S07 门到桌慢行链 | 起终类型、便利需求 | 路线维护/公共空间角色 | 现场走查与中断说明 | 无障碍断点被隐藏 |
+| S08 照护接力 | 服务类别、沟通便利 | 服务导航/合格服务角色 | 人工接收或明确拒绝 | 紧急情况被自动分流 |
+| S09 私宅数据撤回 | 设备、用途、同意状态 | 同意登记/数据责任角色 | 权限关闭、删除、普通功能可用 | 撤回后仍传输数据 |
+| S10 维修与断网降级 | 设备号、故障现象 | 维修值守/设施安全角色 | 人工接管和恢复记录 | 无机械或人工入口 |
+| S11 离开/回流交接 | 关闭范围、联系选择 | 关闭协调/档案责任角色 | 权限、删除、保留双回执 | 无人接收仍自动回流 |
+| S12 聚合居业账本 | 聚合口径、版本、分母 | 数据维护/独立审计角色 | 失败退出入分母、无小样本识别 | 可重识别或用途漂移 |
+
 
 ## 设计依据与资料清单
 
