@@ -15,7 +15,7 @@ bilingual_contract_version: "1"
 
 > **Proposition: AI public services in the city should run like trains on a published timetable — punctuality is verifiable, changes require public notice, suspensions are announced in advance, delays come with compensation, and cross-service transfers are connected by schedule.**
 >
-> Version: v1.0 | 2026-08-13 | YuanYii | will be v1.0 at submission
+> Version: v1.0 | 2026-08-13 | YuanYii | first submission (PR #2415)
 >
 > One Diagram, Nine Stations, One Spine: the Jing-Zhang Railway Heritage Park serves as the operating-diagram main line (9.5 km spine), forming a three-tier spatial control system (regional study — overall design — key areas); the Urban Operating Diagram is the governance core — every AI service commitment is drawn on the diagram.
 

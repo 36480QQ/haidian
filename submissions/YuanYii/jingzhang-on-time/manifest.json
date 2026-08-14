@@ -2,7 +2,7 @@
   "schema_version": "0.2.0",
   "package_id": "jingzhang-on-time",
   "project_id": "centennial-jingzhang-ai-belt",
-  "site_package_version": "0.1.0",
+  "site_package_version": "1.0",
   "package_type": "professional_design_package",
   "package_state": "ready_for_review",
   "submission_stage": "formal",
@@ -24,14 +24,14 @@
     {
       "path": "proposal.md",
       "role": "narrative",
-      "sha256": "6dba72ca6fd3cf01f8fafcbe9a0744129791fbce6d40bb49115c06b445750ea1",
+      "sha256": "8f8c8019217bfe5c9a8570e1d25cae27cc806e649e971741fc41d66804f7b516",
       "language": "zh",
       "required": true
     },
     {
       "path": "proposal.en.md",
       "role": "narrative",
-      "sha256": "0739734b4b895dd052884c2602fd33713a24dbd5cd589412e8af3c33d75c49bf",
+      "sha256": "6a2f4da057ecfe72b14f6f97edb549ab2d41c7a40389e49a28a1effe3f7dd1aa",
       "language": "en",
       "translation_of": "proposal.md",
       "required": true
@@ -63,7 +63,7 @@
     {
       "path": "self_check.json",
       "role": "self_check",
-      "sha256": "94f126147b9dbf8df92495e75d77ba4430632fd3a6a3479d39953d81c72e6361",
+      "sha256": "6c397f875e3df4dade1fa39bf76b1c96b8bbfcc78ac5a09e7450eff194d2cff9",
       "required": true
     },
     {
