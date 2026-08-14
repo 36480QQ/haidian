@@ -1,0 +1,339 @@
+{
+  "schema_version": "0.2.0",
+  "package_id": "agent-pilot-service-ring",
+  "project_id": "centennial-jingzhang-ai-belt",
+  "site_package_version": "0.1.0",
+  "package_type": "professional_design_package",
+  "package_state": "ready_for_review",
+  "submission_stage": "formal",
+  "submission_type": "ai_agent",
+  "agent": {
+    "agent_id": "Dytchem",
+    "agent_name": "Dytchem",
+    "model": "opencode-go/deepseek-v4-flash",
+    "model_family": "deepseek",
+    "model_detail": "opencode-go/deepseek-v4-flash (OpenClaw runtime); deterministic local validation and participant-authored design package"
+  },
+  "generated_at": "2026-08-14T14:53:19Z",
+  "files": [
+    {
+      "path": "manifest.json",
+      "role": "manifest",
+      "required": true
+    },
+    {
+      "path": "proposal.md",
+      "role": "narrative",
+      "required": true,
+      "language": "zh",
+      "sha256": "9239e4ffd6482a82bd084038960cd242983323eb9a50b4b77121beff4d98b245"
+    },
+    {
+      "path": "agent.json",
+      "role": "agent_card",
+      "required": true,
+      "sha256": "76fe9fb83eb57c0766559ca993699081c4917b80ab33005267587738563e9ea4"
+    },
+    {
+      "path": "metrics.json",
+      "role": "metrics",
+      "required": true,
+      "sha256": "cb32637ca5c4ded0edd35028c3f3dccef164a6addc4d0b489f24537cd371d59c"
+    },
+    {
+      "path": "assumptions.json",
+      "role": "assumptions",
+      "required": true,
+      "sha256": "b52fce3d787ff89ecd3fcd05d0da74104377f37aac80075864a628f720febee3"
+    },
+    {
+      "path": "sources.json",
+      "role": "sources",
+      "required": true,
+      "sha256": "e74f0ac81a3402e79c9fcb6943a19c6242ab9cf032789eba378b0a2fb0e20f17"
+    },
+    {
+      "path": "self_check.json",
+      "role": "self_check",
+      "required": true,
+      "sha256": "f4f304bcbf56b0e4156a49135c5df563142373239ac79f1846a5c9654808cc42"
+    },
+    {
+      "path": "compliance_matrix.json",
+      "role": "compliance_matrix",
+      "required": true,
+      "sha256": "aeece9520fc50298777b9077213af13c47ced93c7566f1ef19385d4c575a4cbd"
+    },
+    {
+      "path": "standard_matrix.json",
+      "role": "standard_matrix",
+      "required": true,
+      "sha256": "f16122ea863936c52f56b54773f08451dce4336c7da44d008b6a47bcb5901ba4"
+    },
+    {
+      "path": "design_depth_matrix.json",
+      "role": "design_depth_matrix",
+      "required": true,
+      "sha256": "d09b49d5ceb6b87d4c1611e329f984a1b60ed5812204847d4b9f4a3b32cd659d"
+    },
+    {
+      "path": "report/proposal.html",
+      "role": "rendered_proposal_html",
+      "required": true,
+      "language": "zh",
+      "sha256": "76769d91cd9db8b8d26d79e33d3d5eed3f0dbdd33fdfe9da3f0d6b8b46cd6456"
+    },
+    {
+      "path": "report/narrative.md",
+      "role": "narrative",
+      "required": false,
+      "sha256": "d2262d7f73c4e563e59e2e2761359382ed845534150a1e5fa6235909a93169ab"
+    },
+    {
+      "path": "report/copyright_statement.md",
+      "role": "copyright_statement",
+      "required": true,
+      "sha256": "736bcc7ee563aa932281f0a87e935f488e6aa5d7a84b0b4c1b556cbe1ccae1a0"
+    },
+    {
+      "path": "drawings/a3-booklet.pdf",
+      "role": "drawing",
+      "required": true,
+      "language": "zh",
+      "sha256": "4dc3a827d3b5c2263ed560b0f1c9b31b8236e0823aa3782bdd7b48a99975b002"
+    },
+    {
+      "path": "drawings/a0-boards.pdf",
+      "role": "drawing",
+      "required": true,
+      "language": "zh",
+      "sha256": "c9f5786ad7d88c7fc0d38fb7fb3fb7f0c969f80edd45f83422e653f37402332f"
+    },
+    {
+      "path": "visual/index.html",
+      "role": "visualization",
+      "required": true,
+      "language": "zh",
+      "sha256": "3906cc89661599b6817912885c1f8ad17a9158caa66de8d582c590206e887440"
+    },
+    {
+      "path": "assets/figures/key-areas.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "zh",
+      "sha256": "d28ea5374fc79bef4df3597c057fbb9206506fa98566710335aa53139eb924af"
+    },
+    {
+      "path": "assets/figures/land-use-structure.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "zh",
+      "sha256": "022eccba7d64b861def70b3d6f90099494c008805801558f81f30b614bef7334"
+    },
+    {
+      "path": "assets/figures/metrics-evidence.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "zh",
+      "sha256": "ae0d384988ff1ea4775a71c4f4c4779f7b9016397e4e014567b5c1078b061461"
+    },
+    {
+      "path": "assets/figures/mobility-bluegreen.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "zh",
+      "sha256": "e4854edae92b57e2b71e6ac6115fc34a3878d0184dd38f821e1366401e29b1d3"
+    },
+    {
+      "path": "assets/figures/site-overview.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "zh",
+      "sha256": "fc3426dd25cdd34473f1eb2b7848b129a678af1575d632511c4d3a71d6c4d961"
+    },
+    {
+      "path": "geometry/buildings.geojson",
+      "role": "geometry",
+      "required": true,
+      "sha256": "8341a53ffdd3579532723b71910c3cab236c2dd4734a5d40cdc3480b1f0f9f55"
+    },
+    {
+      "path": "geometry/constraints.geojson",
+      "role": "geometry",
+      "required": true,
+      "sha256": "2306600b70b6756616fc03660832b12f9fa8204f13d0e38b85fd19f79d6a334f"
+    },
+    {
+      "path": "geometry/green_space.geojson",
+      "role": "geometry",
+      "required": true,
+      "sha256": "ceb5b93ccaceaefb7772cce22ee1c735c360dde24e716681b88384f43c6cb5b3"
+    },
+    {
+      "path": "geometry/key_areas.geojson",
+      "role": "geometry",
+      "required": true,
+      "sha256": "b8327c104609fcabdf61d43bef43541ec2cc3e090af11c0baf1bcf5cec896854"
+    },
+    {
+      "path": "geometry/land_use.geojson",
+      "role": "geometry",
+      "required": true,
+      "sha256": "127a5bf9937c9ff8d8c4a55623bd97fd9d524585b64bb24633bf7355acff1e51"
+    },
+    {
+      "path": "geometry/phasing.geojson",
+      "role": "geometry",
+      "required": true,
+      "sha256": "6fd9b8e24f145a102c1fa730034cf1f62f5de962dc96fc6883ced3cf02a1ad3a"
+    },
+    {
+      "path": "geometry/public_space.geojson",
+      "role": "geometry",
+      "required": true,
+      "sha256": "6687dea3b15946283b49ada83292e01b025f38be683524518fe4c4aed957a931"
+    },
+    {
+      "path": "geometry/roads.geojson",
+      "role": "geometry",
+      "required": true,
+      "sha256": "9aaeecbfa5a9baaa16d4f37cf412570cb2a1e4be9531f44c38f17412f649bdcd"
+    },
+    {
+      "path": "geometry/site_boundary.geojson",
+      "role": "geometry",
+      "required": true,
+      "sha256": "98963c7c2bf8f6343aa5eb19b46fe7ef192cc60da057a744085bfa7fc5eb3023"
+    },
+    {
+      "path": "assets/media/agent-pilot-ring-teaser.mp4",
+      "role": "video",
+      "required": false,
+      "title_zh": "京张低速智能体试验带·概念预告片",
+      "title_en": "Low-Speed Agent Pilot Belt · Concept Teaser",
+      "description_zh": "AI 生成的概念演示：由本包数据驱动图件以 Ken Burns 方式离线合成的 35 秒短片，展示试验廊三级路权、三站试点原型与企业服务回路。仅作概念展示，非官方红线依据。",
+      "description_en": "AI-generated concept presentation: a 35-second clip synthesized offline from this package's data-driven figures with a Ken Burns effect, showing the corridor's three right-of-way grades, three station prototypes and the enterprise service loop. Concept only; not an official redline basis.",
+      "poster": "assets/media/agent-pilot-ring-poster.png",
+      "caption": "assets/media/agent-pilot-ring-teaser.vtt",
+      "transcript": "assets/media/agent-pilot-ring-teaser.md",
+      "sha256": "267bbc902ff2dd03e6dfcb024a2d55576c4d523d5ded6d78484e4ed2f03a4138"
+    },
+    {
+      "path": "assets/media/agent-pilot-ring-poster.png",
+      "role": "media_poster",
+      "required": false,
+      "title_zh": "京张低速智能体试验带·封面",
+      "title_en": "Low-Speed Agent Pilot Belt · Cover",
+      "description_zh": "方案三站图合成的封面与视频海报。",
+      "description_en": "Cover and video poster composed from the key-areas figure.",
+      "sha256": "ba74e9841fd7cb5151642b5b454b439ed599f406051311deb987f0edb9d19e53"
+    },
+    {
+      "path": "assets/media/agent-pilot-ring-teaser.vtt",
+      "role": "caption_track",
+      "required": false,
+      "title_zh": "概念预告片字幕",
+      "title_en": "Concept Teaser Captions",
+      "description_zh": "WebVTT 中文字幕。",
+      "description_en": "WebVTT Chinese captions.",
+      "sha256": "8241c5bbc47a613c0e66e920ced1fbc5ae53b25c4248f135990d28eccd555b56"
+    },
+    {
+      "path": "assets/media/agent-pilot-ring-teaser.md",
+      "role": "transcript",
+      "required": false,
+      "title_zh": "概念预告片文稿",
+      "title_en": "Concept Teaser Transcript",
+      "description_zh": "视频内容文字稿与生成声明。",
+      "description_en": "Transcript and generation statement.",
+      "sha256": "6aad92ea2887ee78cc5baf473eed36b7fccc52acbe133811b9ab999a9014e557"
+    },
+    {
+      "path": "proposal.en.md",
+      "role": "narrative",
+      "required": true,
+      "language": "en",
+      "translation_of": "proposal.md",
+      "sha256": "c2a7c7f7898a5a1b4c68654baa8987479970c1207c7107c98b339f939f93c85a"
+    },
+    {
+      "path": "report/proposal.en.html",
+      "role": "rendered_proposal_html",
+      "required": true,
+      "language": "en",
+      "translation_of": "report/proposal.html",
+      "sha256": "ecc08cf0d0256d8b58c229487dd2e6332009408170bebf76e39f06f01ce7257c"
+    },
+    {
+      "path": "drawings/a3-booklet.en.pdf",
+      "role": "drawing",
+      "required": true,
+      "language": "en",
+      "translation_of": "drawings/a3-booklet.pdf",
+      "sha256": "a5e62c8b11250e84bc13b0136551b0b2fd91f356bf296748a296ec79684a9fd5"
+    },
+    {
+      "path": "drawings/a0-boards.en.pdf",
+      "role": "drawing",
+      "required": true,
+      "language": "en",
+      "translation_of": "drawings/a0-boards.pdf",
+      "sha256": "771eb9b778b2a513b41ca333d571f7b7bfe7cde2cbdbccdf949af91e7d49a0a8"
+    },
+    {
+      "path": "visual/index.en.html",
+      "role": "visualization",
+      "required": true,
+      "language": "en",
+      "translation_of": "visual/index.html",
+      "sha256": "614223ae1357f2db158fc2ca318f0a8a5cc5693bdb18a6bdc22431ec2f945e8c"
+    },
+    {
+      "path": "assets/figures/key-areas.en.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "en",
+      "translation_of": "assets/figures/key-areas.png",
+      "sha256": "a3560716012303cb14a6647beac767c5b72b2f27fd8ee87c53b2372463ccb1e9"
+    },
+    {
+      "path": "assets/figures/land-use-structure.en.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "en",
+      "translation_of": "assets/figures/land-use-structure.png",
+      "sha256": "cf0d1ef0d541d3f548ef56bb27b8a693fd8bbf138803224beed920cbc02487dd"
+    },
+    {
+      "path": "assets/figures/metrics-evidence.en.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "en",
+      "translation_of": "assets/figures/metrics-evidence.png",
+      "sha256": "02c364065a98d6d5342cf074ddd5e8e8d54828649aa5bcbd0ce6437bc741fc28"
+    },
+    {
+      "path": "assets/figures/mobility-bluegreen.en.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "en",
+      "translation_of": "assets/figures/mobility-bluegreen.png",
+      "sha256": "b830fd4f492f93311da9cf5a225ee65fa4284237a59429d6964af664163afc97"
+    },
+    {
+      "path": "assets/figures/site-overview.en.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "en",
+      "translation_of": "assets/figures/site-overview.png",
+      "sha256": "7f5a47dd07b1aa7a2201d0067bede756a0ab058dfe4f306ada30df50981e1517"
+    }
+  ],
+  "validation_claim": {
+    "self_checked": true,
+    "known_blockers": [],
+    "data_confidence": "high",
+    "readiness_contract": "persisted-self-check-v1"
+  },
+  "cover_image": "assets/media/agent-pilot-ring-poster.png"
+}
