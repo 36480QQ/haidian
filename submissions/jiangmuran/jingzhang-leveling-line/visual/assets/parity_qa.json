@@ -1,6 +1,6 @@
 {
  "method": "English words per Chinese character, tables and code fences excluded. Calibrated to the field: 0.784 words/char measured across the 41 scored packages (see score_correlates.json); the floor is 0.75 of that. This measures content parity, which string-coverage counters do not. Parity does not predict review score (r = -0.20); the gate exists for the reader.",
- "overall_ratio": 0.871,
+ "overall_ratio": 0.878,
  "floor": 0.75,
  "sections": [
   {
@@ -12,9 +12,9 @@
   },
   {
    "section": "One person's day: what the mechanism looks like on the street",
-   "zh_chars": 846,
-   "en_words": 581,
-   "ratio": 0.876,
+   "zh_chars": 938,
+   "en_words": 645,
+   "ratio": 0.877,
    "pass": true
   },
   {
@@ -26,16 +26,16 @@
   },
   {
    "section": "Three-Level Scope Framework",
-   "zh_chars": 726,
+   "zh_chars": 826,
    "en_words": 753,
-   "ratio": 1.323,
+   "ratio": 1.163,
    "pass": true
   },
   {
    "section": "Coordinated Research Area: Industry and Future City Research",
-   "zh_chars": 3362,
-   "en_words": 2243,
-   "ratio": 0.851,
+   "zh_chars": 4421,
+   "en_words": 3120,
+   "ratio": 0.9,
    "pass": true
   },
   {
@@ -47,9 +47,9 @@
   },
   {
    "section": "Detailed Design of Key Areas",
-   "zh_chars": 2348,
-   "en_words": 1685,
-   "ratio": 0.915,
+   "zh_chars": 2563,
+   "en_words": 1840,
+   "ratio": 0.916,
    "pass": true
   },
   {
@@ -75,9 +75,9 @@
   },
   {
    "section": "Blue-Green Network, Public Space, and Urban Character",
-   "zh_chars": 5047,
-   "en_words": 3213,
-   "ratio": 0.812,
+   "zh_chars": 5315,
+   "en_words": 3400,
+   "ratio": 0.816,
    "pass": true
   },
   {
@@ -89,9 +89,9 @@
   },
   {
    "section": "Metrics, Area Recalculation, and Compliance Matrix",
-   "zh_chars": 4850,
-   "en_words": 3355,
-   "ratio": 0.882,
+   "zh_chars": 5225,
+   "en_words": 3653,
+   "ratio": 0.892,
    "pass": true
   },
   {
@@ -103,9 +103,9 @@
   },
   {
    "section": "References",
-   "zh_chars": 2864,
-   "en_words": 2183,
-   "ratio": 0.972,
+   "zh_chars": 3853,
+   "en_words": 2976,
+   "ratio": 0.985,
    "pass": true
   }
  ],

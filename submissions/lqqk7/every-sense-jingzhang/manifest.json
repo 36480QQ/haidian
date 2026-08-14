@@ -12,7 +12,7 @@
     "agent_name": "柱子 / Zhuzi",
     "model": "Claude Fable 5 via Claude Code",
     "model_family": "claude",
-    "model_detail": "v1.0 scaffolded and authored with OpenAI GPT-5.6 Sol via Codex; v2.0-v5.6 iterations authored with Anthropic Claude Fable 5 via Claude Code with Claude Opus subagents; audio narration synthesized with MiniMax speech-2.8-hd (disclosed in assets/media transcripts)"
+    "model_detail": "v1.0 scaffolded and authored with OpenAI GPT-5.6 Sol via Codex; v2.0-v5.13 iterations authored with Anthropic Claude Fable 5 via Claude Code with Claude Opus subagents; audio narration synthesized with MiniMax speech-2.8-hd (disclosed in assets/media transcripts)"
   },
   "generated_at": "2026-08-12T11:56:14Z",
   "files": [
@@ -26,13 +26,13 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "2909f978fca5f239d11901dfa4df411fc45b0524238db2f883234e332e282456"
+      "sha256": "47e163ba9c160c82fc384c766d38d178ee0e0370f03c6f44bd129a43d14c5f24"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "255e439bcf114c43f757c245befac0d8706f2b939b8b87e56cb5cbceb4f4ffbb"
+      "sha256": "84ce31dd5944156e7aad6ad188ff9f6f2e2fec509094e22a443918487f1b8e4e"
     },
     {
       "path": "metrics.json",
@@ -50,13 +50,13 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "8f018e0b2af14a4f3ea1cd07e04c150b1856105eeb9349612f11a727af4520e4"
+      "sha256": "d26e8f3e2914736d6df12bf484a355299395dd788aff1a3c8a6b18d2ad5ac201"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "9a417023e60fd3060f88b0d4fa62ea583b85cd5dacc2ab9ba8e805a85b48a2cb"
+      "sha256": "41a57cffc44cbd55546c80974d4170c007af99a4e0dd52df2401ced71581d9bd"
     },
     {
       "path": "compliance_matrix.json",
@@ -88,7 +88,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "327b649ee340ce7f9c63ba92adbbdbcd181fe2f1ecc41653406d1757425f3786"
+      "sha256": "f7397fb89f8cca0b12f8ff472d9cd546e3833dce4393b1ce40cd51c919b9d340"
     },
     {
       "path": "report/narrative.md",
@@ -100,35 +100,35 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "aace5ac7d4e7716df61332b01aec9685fe85b2f68f261389d28f80290ce7b9d7"
+      "sha256": "bfe7fdfbc4f8d50461ec231b0d76a5de723544608c0deb118d99bc3dc2ae73e3"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "71ec689801d29a25579c445f322c641435e860c95d3d06a874ad7045c29f7225"
+      "sha256": "e1639a3b08313d92f7723b96b71ad1885706a0108e8fc6a99cd93a19f0e14113"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "5b3eaddfc224da91122062de4161f397338c5fb047543ce6c323274651ff80de"
+      "sha256": "5e8fe8fa10bdedad0b745948ff63ac7e52986797d78415b0c2bb6ce3277ca563"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "5256d5675807e6c01ad1e72276d39db8f7d70120082203555337b40c5096ae92"
+      "sha256": "c00c8b379f758afc0b974e0324191b367b7fffbde7283ebba1839fabf704b462"
     },
     {
       "path": "assets/figures/key-areas.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "72d2366d67428e307f9915cbea9c2f601888ca9ce00eadb5a994f9bfc0642627"
+      "sha256": "9e31093aeda42274fc4fbedd822f63892fd57064c51cb9b5614e908bf3ec72fc"
     },
     {
       "path": "assets/figures/land-use-structure.png",
@@ -149,7 +149,7 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "96a7aeee0d666445a78143ad0a3efb7c9a28651a403dd5dd29ecace271ef4a88"
+      "sha256": "c19685158959cb565061ade697f7095ab15230afdbda95e98b0b08a98c1b50e9"
     },
     {
       "path": "assets/figures/site-overview.png",
@@ -218,7 +218,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "540ce7203f1f8868c22b1db0b592eef7acfbc79b2225518ec84ee1ac3fc66ea9"
+      "sha256": "aaf21cf162e496b53b8c6d5d6f264db5b02243dce7269fa2acd3250a399747fa"
     },
     {
       "path": "report/proposal.en.html",
@@ -226,7 +226,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "9766cabf69babf21946fcbbcb88c25082e3fba262460a76a2fcd9efe69d1c8c0"
+      "sha256": "38f669c338eedfe301cb6189a4a19af852818de9c76a7104eb2908f2127a69ca"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -234,7 +234,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "95cae3d94f771d7c9463a38edca9273d3971d96259a72ae279e1d8331056ac0d"
+      "sha256": "4da7cb025b3bf0ad8bc386f477c62115fd898e0bb05cd0dd68663fbac41e0624"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -242,7 +242,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "e18e184662be2ecc76ba95634bf123aa34d60560b59285c0fd8348b1697b8d6a"
+      "sha256": "efcdec9992eab930da55c247ee7221c85865da6c6aff1a72f2e1a9b5a76c8490"
     },
     {
       "path": "visual/index.en.html",
@@ -250,7 +250,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "477277d45f9cf56ca2d187a53ef15f1f6852ec27e3295b0fcfea5aed244849a8"
+      "sha256": "512809271ed5ba102ce871fbc748260005c07dfb67b4b9ec576c27182c819aea"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -258,7 +258,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/key-areas.png",
-      "sha256": "3af2d8ab6ecfa2c703ab741784dfeab5c27a484021e3d0bdf4164e5c942b480b"
+      "sha256": "15754c22ea0ff2e508c84bfaceb4057048478a83c8c0ac3470a2d4c22516d8e6"
     },
     {
       "path": "assets/figures/land-use-structure.en.png",
@@ -297,7 +297,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/mobility-bluegreen.png",
-      "sha256": "060908ab2e0da2ba7366a4d4930fecb9ab3423d3c8edf9543f430a1e97045c04"
+      "sha256": "07d224a4a1a6df7add73aa52d01c864e10233d57e8becb5b574666c8bde092c7"
     },
     {
       "path": "assets/figures/mobility-bluegreen-audit.png",
@@ -320,7 +320,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/site-overview.png",
-      "sha256": "f80e51f45ff3cd814efc838ae4ad9a0395f1f3333a0e6e627d403ff3e282d630"
+      "sha256": "53bb872d4c3d58e3288bd89f0a3abaef7daef7652541566c4a0f831d469bcc06"
     },
     {
       "path": "visual/assets/osm-context/provenance.json",
@@ -341,7 +341,7 @@
       "role": "proposal_figure",
       "required": false,
       "language": "zh",
-      "sha256": "6233ae3f4b539605d814b06eeff0d475d7c717bdbc5f2bca5ae418f04dd99df2"
+      "sha256": "c9670804f63a6304793390ffa3cf9305b8f0c2cce987964839ce9cf3084363e7"
     },
     {
       "path": "assets/figures/brand-system.en.png",
@@ -349,13 +349,13 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/brand-system.png",
-      "sha256": "71ce4dae65d64c991822f5d50b134531523d4c665712b79999aba1c1a958afe2"
+      "sha256": "d9523c4a1bc87bfc472ff173b023198b0d2cd3e420ae4293d3e7c5eeae3b8b2d"
     },
     {
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "8bf29388c4febb732399ac8306c13c80cde415f5160a6890dc46e58cd99a9407"
+      "sha256": "4b13e9ea75c1fd7105df3a0d031e212e850bbffda6ca4947cf35696fe641eb45"
     },
     {
       "path": "assets/media/cover.webp",
@@ -387,7 +387,7 @@
       "title_en": "Audio guide transcript and rights note",
       "description_zh": "导览旁白全文（含时间码）、与 proposal.md 的来源对应表、生成工具与制作方法记录、合成声明与权利边界、已知限制。同时论证听/看/读三条通道承载相同内容，是方案 AI OFF 等价路径原则在自身交付物上的应用。",
       "description_en": "Full narration text with time codes, a source mapping to proposal.md, the generation method and tooling record, the synthesis and rights statement, and known limitations. It also documents that listening, captions, and reading carry identical content, applying the proposal's own AI-OFF equivalence principle to its own deliverable.",
-      "sha256": "9a67033022d54490bb9088c8cd9e0510b1cfa41a7732db51adafa5a5003431db"
+      "sha256": "74fefa8822519295dac86f008b95c5240d7fbca699e76da2d03475faeea08b9f"
     },
     {
       "path": "assets/media/audio-guide.vtt",
@@ -414,7 +414,7 @@
       "role": "visualization",
       "required": false,
       "language": "neutral",
-      "sha256": "2c7abf371b0c89b4fe63aa14c9f2a205d512b7f491d3389a8b269f5d42a321f1"
+      "sha256": "ea071c8a54894ea5d81bbf77ba47209973c517d3d8452bab558eb06adc804642"
     },
     {
       "path": "visual/assets/scene.css",
@@ -448,7 +448,7 @@
       "poster": "assets/media/journey-poster.webp",
       "caption": "assets/media/journey.vtt",
       "transcript": "assets/media/journey.md",
-      "sha256": "5b8bca9aefb98d0c1ed89fe1b25b0237375d51633ffe7337d6ffda627ed0453c"
+      "sha256": "7ae591d33c636ef435b9676e34b60ee0284c9f3603fcc4c77fc076142de7e968"
     },
     {
       "path": "assets/media/journey-poster.webp",
@@ -478,7 +478,25 @@
       "title_en": "Multimodal short film storyboard, transcript and rights note",
       "description_zh": "七个镜头的分镜与画面文字（中英）对照、旁白全文（含时间码）、与 proposal.md 的来源对应表、画面渲染与交互场景逐帧录制的方法记录、语音合成与权利声明、已知限制。同时论证看／听／读三条通道承载相同内容，是方案 AI ON = AI OFF 等价路径原则在自身交付物上的应用。",
       "description_en": "A shot-by-shot storyboard with bilingual on-screen text, the full narration with time codes, a source mapping to proposal.md, the production record for frame rendering and for the frame-accurate capture of the interactive scene, the synthesis and rights statement, and known limitations. It also documents that watching, listening and reading carry identical content, applying the proposal's own AI ON = AI OFF equivalence principle to its own deliverable.",
-      "sha256": "a8819cf8fb0283cb9c4cb69245eee1b39ad233028ee5b10d6b6e04e2ea3680f5"
+      "sha256": "560f218021a61bda04979e4f95e578dda0cf8a1b85cd4f0e2d8a35e999387003"
+    },
+    {
+      "path": "visual/assets/ethics-protocol.json",
+      "role": "sources",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "伦理与同意协议包（模板 · 未执行）",
+      "title_en": "Ethics and consent protocol pack (templates, not executed)",
+      "sha256": "be11b607996eccbf08f0e89647389671b8d3b4c85e283967c9e07c5eb299f4fb"
+    },
+    {
+      "path": "visual/assets/qa-proofing-record.json",
+      "role": "sources",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "输出质量校样与可及性走查记录（方案方自查）",
+      "title_en": "Output Proofing and Accessibility Walkthrough Record (Proposer's Self-Check)",
+      "sha256": "a4c98754846ff7e3651caeb0f8e9dd181f884d2c59a7fc6a8a6843e270b46e7d"
     },
     {
       "path": "visual/assets/seb-spec.json",

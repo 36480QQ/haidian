@@ -1,12 +1,13 @@
 ---
-title: "EVERYDAY JING-ZHANG: Make the City Work First. Add AI Only When Useful."
+title: "EVERYDAY JING-ZHANG: One Post, One Bell, One Logbook. People Remain in Charge."
 author_github: "007xf"
 language: "en"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "A reuse-first urban renewal proposal built around seven ordinary urban moves, three staffed public rooms and one continuous everyday line. AI is limited to removable staff-side search, translation, summarisation, classification, comparison and consistency checking; automated public decisions remain zero."
+iteration: "v2.0"
+summary: "A reuse-first urban renewal proposal that begins with one continuous Everyday Line, one anchor room and two scheduled pop-up rooms. Every service follows One Post, One Bell, One Logbook; AI remains a removable back-office staff tool and automated public decisions remain zero."
 tracks: ["ai-traffic-walkability", "youth-friendly-public-space", "enterprise-services-ecosystem"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "ai-cultural-guide", "public-safety-operations-review"]
 ---
@@ -15,11 +16,11 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "ai-cultural
 
 > Make the city work first. Add AI only when useful.
 >
-> Seven ordinary urban moves + six staff tools + zero automated public decisions.
+> One post, one bell, one logbook; seven ordinary urban moves + six staff tools + zero automated public decisions.
 
 EVERYDAY JING-ZHANG is not a city controlled by AI. It does not equate the future with driverless spectacle, robots, holographic screens or unaffordable megastructures. It first resolves seven things people can feel every day: **walk continuously, find shelter, sit when tired, read the signs, ask a person, repair what breaks, and use the place by day and night**. Only after space and staffed service work may six currently mature capabilities—search, translation, summarisation, classification, comparison and consistency checking—enter a staff-only shadow test. They produce drafts, flags or candidates; they make no public decision, control no device, and can be removed.
 
-The spatial framework is one Everyday Line, three staffed rooms, twelve service cells, ten public-service links and twelve scenario points. A continuous slow-mobility and service line connects the Zhongzhiyuan Repair Garden, the AI Origin Common Table and the Dazhongsi Day-Night Living Room. Every public task remains complete through physical space, paper, telephone and staff. Small renewal works, staffing, maintenance tickets, procurement boundaries, conceptual CNY bands, acceptance thresholds and exit ownership form one delivery contract.[metric:everyday_urban_move_count] [metric:mature_staff_tool_capability_count] [metric:automated_public_decision_count]
+The spatial framework is one Everyday Line, three staffed rooms, twelve service cells, ten public-service links and twelve scenario points. A continuous slow-mobility and service line connects the Zhongzhiyuan Repair Garden, the AI Origin Common Table and the Dazhongsi Day-Night Living Room. The pilot does not pretend that three full-time teams appear at once: it begins with **one anchor room plus two scheduled pop-up rooms**. Every public task remains complete through physical space, paper, telephone and staff. Small renewal works, duty hours, maintenance tickets, procurement boundaries, conceptual CNY bands, acceptance thresholds and stop/reopen ownership form one spatial and shift contract.[metric:everyday_urban_move_count] [metric:mature_staff_tool_capability_count] [metric:automated_public_decision_count]
 
 | Review dimension | Direct response | Verifiable evidence |
 | --- | --- | --- |
@@ -30,6 +31,18 @@ The spatial framework is one Everyday Line, three staffed rooms, twelve service 
 | Maturity | Six mature staff capabilities only; no robots, open-road autonomy or city control | Four-mode tool contract and eight prohibited decisions |
 | Acceptance | No-login and non-digital parity, seven user groups and three stress journeys | 8–12 week human baseline |
 | Professional evidence | Known, assumed, pending and prohibited inference are separated; bilingual numbers, sources, rights and drawings are audited | Metrics, sources and self-check |
+
+### One-page review index: one executable design judgment
+
+**First repair one route that works every day; then open one anchor room and two pop-up rooms. Only when every service has a named post, a physical help bell and a handover logbook may a removable AI staff tool enter the back office.**
+
+“One Post, One Bell, One Logbook” is the original operating construct of this revision. It translates the railway disciplines of shifts, communication and handover into everyday public service without copying railway hardware or style:
+
+- **One Post:** each service has one accountable named duty role; a person decides, signs and authorises reopening.
+- **One Bell:** each service has a physical bell, telephone or staffed counter, so help never requires an app, login, face or AI.
+- **One Logbook:** every opening, stop, repair, handover and reopening leaves a paper and exportable record; responsibility cannot disappear into a black box.
+
+A machine-readable reviewer evidence index routes each of the seven published scoring dimensions to proposal sections, metrics and evidence. It is navigation only and does not replace this proposal.[source:PACKAGE-REVIEWER-EVIDENCE-INDEX] [metric:duty_shift_contract_count] [metric:duty_shift_contract_field_count]
 
 ![Achievable public-realm atmosphere with a continuous accessible path, shade, seating, staffed common table and repair tools](assets/figures/service-duty-hall-atmosphere.en.png)
 
@@ -152,6 +165,18 @@ This is an arrival, rest, small-business and maintenance interface. Daytime uses
 
 All three are low-rise in principle, reuse-first, durable, repairable and low-glare. Height, floors, facade, structure and fire design await proper evidence.[depth:height_massing_character]
 
+### One anchor and two pop-ups: do not invent three full-time teams
+
+The three rooms are a long-term spatial network, not three venues that must all operate full-time on day one. The pilot begins with the AI Origin Common Table as one anchor and opens Zhongzhiyuan and Dazhongsi on a published pop-up schedule only when site, staff, safety and maintenance are confirmed. If the operator, ownership or official geometry does not support that anchor, all three are re-ranked through the same selection sheet; a conceptual point is never presented as an approval fact.
+
+| Opening screen | Evidence required before opening | Action when missing |
+| --- | --- | --- |
+| Reachable | Continuous accessible route, rain-heat shelter and night identification | Do not open, or use a staffed mobile service |
+| Staffable | Named post, relief person, published window and telephone | Do not open staff-assisted service |
+| Maintainable | Asset ID, spares owner, SLA, isolation and reopen process | Close hazard; safe ordinary service may continue |
+| Removable | Paper/phone equivalent and open export | Return tool to SHADOW or REMOVED |
+| Vetoable by the public | Seven-group walk and unresolved-exclusion list | Do not promote staff rehearsal to public opening |
+
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
 ### Seven user groups and co-testing
@@ -186,6 +211,25 @@ The six capabilities are bounded search, translation drafting, summary drafting,
 Eight decision classes are prohibited: planning approval/redline/land right; enforcement or surveillance action; eligibility/benefit/admission/service priority; access control; medical/legal/emergency judgment; traffic signal/vehicle dispatch/route control; safety certification/emergency dispatch; and price/investment/displacement/property decision.[metric:prohibited_automated_decision_count]
 
 Six release gates must all pass: ordinary completion without a tool; 100% approved sources and no unnecessary sensitive data; at least 200 shadow items with 100% human review; 100% traceability for released output; zero automated public decisions and direct control; and at least 20% staff-time saving with no worse sampled error than the human baseline. The final value test is a design threshold, not a claimed result. Failure removes the tool.[metric:human_signoff_coverage_ratio] [metric:non_ai_alternative_coverage_ratio]
+
+### One Post, One Bell, One Logbook: twelve duty-shift contracts
+
+Each scenario card becomes an eight-field contract: **task; service place/time; named duty role; ordinary non-AI path; approved input; tool-output authority; immediate stop trigger; handover and reopen evidence**. If any field is absent, staff-assisted service cannot open. Ordinary space and safe human service may continue only within their separately approved scope.[source:PACKAGE-DUTY-SHIFT-CONTRACT] [metric:duty_shift_contract_count] [metric:duty_shift_contract_field_count]
+
+The innovation is not more automated decisions. It is making sure a person can catch every technical output: there is a duty, a non-digital channel, a stop key, a reopening gate and a handover record. “Human in the loop” becomes a unit executable by space, roster, procurement and ticket—not a slogan.
+
+### 140-case synthetic preopening shift rehearsal
+
+Without official geometry, a real roster and site authorisation, the proposal does not invent a “field pass.” It first runs a reproducible package-level rehearsal:
+
+| Test group | Formula | Expected behaviour | Result |
+| --- | ---: | --- | ---: |
+| Complete contract across three shifts | 12 × 3 | Label only as ready for on-site staff rehearsal | 36/36 matched |
+| Deliberately remove one required field | 12 × 8 | Block staff-assisted opening | 96/96 matched |
+| Inject cross-room fault | 8 | Revert to ordinary service or safe closure | 8/8 matched |
+| **Total** | **140** | **Claim no field acceptance** | **140/140 matched** |
+
+The shifts are ordinary day, rain-heat stress and night outage. The fault cards are route blockage, absent duty role, expired source, translation conflict, personal data, network/tool outage, missed repair SLA and vendor/model change. The result is reproducible using the package script, but proves only contract consistency. Field safety, accessibility, staff competence and public acceptance still require physical rehearsal.[source:PACKAGE-PREOPENING-SHIFT-REHEARSAL] [metric:preopening_synthetic_case_count] [metric:preopening_expected_match_count] [metric:preopening_field_pass_claim_count]
 
 ### How AI assists planning without replacing public decisions
 
@@ -229,7 +273,7 @@ The design learns interface clarity from Shenzhen and continuous experience from
 | --- | --- | ---: | --- | --- |
 | E1 | Baseline walk and ordinary-service inventory; street/community | CNY 80k–150k | Rights inventory and seven-group walk | Stop if site/service owner unclear; hand over baseline, rights and issues |
 | E2 | Continuous route, shade, seats and signs; design/engineering | CNY 300k–750k | Accessible and rain-heat route pass | Stop for heritage, fire or right-of-way conflict; hand over asset/maintenance register |
-| E3 | Three staffed rooms; operator | CNY 150k–300k | Published hours and complete paper/phone/staff route | No staff or OPEX means no opening; hand over room, roster and service manual |
+| E3 | One anchor plus two scheduled pop-up rooms; operator | CNY 150k–300k | Published hours and complete paper/phone/staff route | No staff or OPEX means no opening; hand over room, roster and service manual |
 | E4 | Repair and open tickets; maintenance team | CNY 70k–150k | Urgent route and sample tickets close | Stop without SLA or spares owner; hand over asset, spares and ticket export |
 | E5 | Cleared heritage and everyday programme; community/curation | CNY 60k–150k | Source, rights, bilingual and accessibility audit | Do not publish while rights/heritage pending; hand over content/event register |
 | E6 | Staff-tool shadow sandbox; data-security owner | CNY 120k–300k | All six gates pass; zero public decisions | Delete on privacy, source, value or error failure; hand over export and deletion proof |
@@ -245,11 +289,15 @@ The district coordinator owns cross-department scope; street/community owns dail
 
 Public routes, maintenance and staffed help cannot depend on tool sponsorship, profiling, data exchange or paid priority. Every procurement package needs open export, an asset/spares register, training, a named owner and exit proof.
 
-### First 100 days and operating labour
+### First 100 days, operating labour and opening day
 
 Days 0–10 confirm site, rights, operator, heritage and user panel. Days 11–30 deliver walks, inventory, design freeze and small procurement. Days 31–60 install reversible components, open staffed rooms and begin the human baseline. Days 61–100 continue the 8–12 week baseline where timing allows, repair defects and publish evidence; staff tools remain SHADOW.[data:geometry/phasing.geojson#PHASE-001] [metric:phase_count] [depth:phasing_implementation]
 
-Where a staffed room is open, the concept assumes at least two trained people, subject to the future operator’s workforce rules. Published hours, on-call maintenance, urgent routing and ticket deadlines are mandatory. Training covers accessibility, heritage/rights, privacy/security, complaint escalation and tool removal. No annual staffing and maintenance budget means no room opening.
+Labour is not hidden behind a fictional assumption of two people in each of three rooms. It uses a reviewable formula: **weekly frontline hours = Σ(room published hours × simultaneous duty posts) + 20% handover/training/leave-relief allowance**. A scale test assumes a 24-hour/week anchor and two 8-hour/week pop-ups, producing 48 frontline hours/week. Because handover, leave and some two-person safety tasks require resilience, the roster needs at least two interchangeable people. This is a sizing assumption, not an approved roster, wage or OPEX; the operator and district coordinator must confirm it.[metric:illustrative_frontline_hours_per_week] [metric:pilot_anchor_room_count] [metric:pilot_pop_up_room_count]
+
+The CNY 0.85–1.95 million concept range excludes permanent payroll, utilities, rent or asset transfer, statutory professional fees and heavy works. These must be separate OPEX and professional workstreams before procurement; a low concept band cannot conceal them.
+
+Opening day operates as a shift, not a launch event: 08:30 named roster, route and asset check; 09:00 paper, telephone and staffed service opens first; 12:00 hand over unresolved tickets, hazards, sources and tool state; 15:00 witness one representative-user task and one repair ticket; 18:00 close or hand over, publishing unresolved items, owners and deadlines. One fault card may be injected only where no real public right is affected. A tool can never close a ticket or sign a reopening.
 
 ### Four event brands and long-term operation
 
@@ -281,6 +329,9 @@ Values are separated into known quantities recomputable from geometry/structured
 | Ecosystem/experience | 8 factors, 7 components and 5 story stops | [metric:ecosystem_factor_count] [metric:public_component_count] [metric:culture_story_stop_count] |
 | Conversion/evidence | 5 gates, 4 events and 3 stress journeys | [metric:innovation_conversion_gate_count] [metric:event_brand_count] [metric:public_evidence_journey_count] |
 | Completeness | human sign-off 1.0; non-AI alternative 1.0 | [metric:human_signoff_coverage_ratio] [metric:non_ai_alternative_coverage_ratio] |
+| Duty contracts | 12 contracts, 8 mandatory fields and 3 stress shifts | [metric:duty_shift_contract_count] [metric:duty_shift_contract_field_count] [metric:service_shift_state_count] |
+| Preopening rehearsal | 140 synthetic package checks, 140 expected matches and 0 field passes claimed | [metric:preopening_synthetic_case_count] [metric:preopening_expected_match_count] [metric:preopening_field_pass_claim_count] |
+| Pilot resource | 1 anchor + 2 scheduled pop-ups; illustrative 48 frontline hours/week | [metric:pilot_anchor_room_count] [metric:pilot_pop_up_room_count] [metric:illustrative_frontline_hours_per_week] |
 
 FAR, height and demolition area remain unknown until official boundaries, controls and surveys arrive. The compliance matrix links the announcement, taskbook, prose, drawings, geometry, metrics, sources, assumptions and self-check. A high number of claims never substitutes for evidence quality.[standard:MOHURD-CONTROL-DETAILED-PLANNING]
 
@@ -292,9 +343,11 @@ The leading risks are not insufficient technological novelty. They are misreadin
 
 Generative tools operate only in staff back-of-house on public or approved material. Facial recognition, profiling, compulsory apps and compulsory login are excluded by default. Complaints, human review, information protection and removal must be in place before any trial.[standard:GENERATIVE-AI-INTERIM-MEASURES]
 
+Chinese law controls the floor for personal information and data handling. No unnecessary personal information enters a tool; purpose, source, access and retention are approved before shadow use. An incident triggers isolation and documented handling/deletion before any restart decision. A vendor, model or material configuration change automatically returns the tool to SHADOW or REMOVED. These are design controls, not legal approval; professional review remains mandatory.[source:PIPL-2021] [source:DATA-SECURITY-LAW-2021]
+
 Accessibility is an opening condition, not an add-on. Continuous routes, multimodal information, traditional service and representative-user tests preserve service for older people, disabled people, caregivers and temporary visitors.[source:STANDARD-BARRIER-FREE] [source:STANDARD-ELDERLY-TECH]
 
-The submission’s writing, diagrams, drawings, layout, logo and machine structures are original human–AI collaborative work. Referenced web pages support facts or methods; protected images, logos, plans and substantial text are not copied. The atmosphere image is AI-generated and registered in the copyright statement. Boundary geometry comes from public or cleared repository material, with rights state recorded per source.
+The submission’s writing, diagrams, drawings, layout, logo and machine structures are original human–AI collaborative work. Referenced web pages support facts or methods; protected images, logos, plans and substantial text are not copied. The atmosphere image is AI-generated and registered in the copyright statement. Site-overview and mobility-bluegreen use prominently attributed OpenStreetMap vector context solely for reviewer orientation; no official redline, parcel, ownership, heritage, planning or engineering fact is derived from it, and no raw map extract enters the package. Rights are recorded in source, provenance and asset-rights ledgers.[source:OSM-BACKGROUND-CONTEXT-20260813] [source:PACKAGE-ASSET-RIGHTS-LEDGER]
 
 The package gives layered responses to land-use classification, urban design, regulatory-plan depth, architectural evidence gaps, accessibility, older-user service and generative-AI boundaries. It is not government endorsement, implementation approval, a statutory plan, construction drawing, investment commitment or safety certification.[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [standard:MOHURD-ARCH-DESIGN-DEPTH-2016]
 
@@ -332,5 +385,10 @@ This is the readable index of machine-registered evidence. URLs, publishers, ret
 | Beijing practice | Xueyuan Road public space [source:XUEYUAN-PUBLIC-SPACE-2026] |
 | Governance background | NIST AI RMF [source:NIST-AI-RMF] |
 | Governance background | UK algorithmic transparency record [source:UK-ALGORITHMIC-TRANSPARENCY] |
+| Chinese law | Personal Information Protection Law [source:PIPL-2021] |
+| Chinese law | Data Security Law [source:DATA-SECURITY-LAW-2021] |
+| Map context | OpenStreetMap contributors, ODbL, attributed orientation background only [source:OSM-BACKGROUND-CONTEXT-20260813] |
+| Package evidence | Duty-shift contracts and fault cards [source:PACKAGE-DUTY-SHIFT-CONTRACT] |
+| Package evidence | 140-case synthetic preopening rehearsal [source:PACKAGE-PREOPENING-SHIFT-REHEARSAL] |
 
 The complete machine index is in sources.json, metrics.json, compliance_matrix.json, standard_matrix.json, design_depth_matrix.json and self_check.json. Professional development requires official boundaries, ownership, terrain, building and utility surveys, heritage controls, regulatory planning, transport evidence and operating budgets.

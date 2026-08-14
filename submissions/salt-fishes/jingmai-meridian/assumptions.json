@@ -4,7 +4,7 @@
     {
       "id": "PROVISIONAL-BOUNDARY",
       "status": "pending_official_boundary",
-      "statement": "三层范围（统筹研究范围 43.6 km²、总体设计范围 11.4 km²、重点区域范围 3.684 km²）的面积与边界文字描述均基于 brief/site-package/design_brief.json 的 official_text_area_and_boundary_description；当前 geometry 中 polygon 为临时粗略替代边界（official_boundary=false, geometry_role=provisional_constraint），依据公告文字四至和约面积推定。provisional geometry 的面积计算值（area_sqm_calculated，如 site_area_calculated_sqm=11425715.145）与公告声明值（area_sqm_declared=11400000）存在微小差异（约 0.23%），源于临时矩形 polygon 的粗略性。官方精界 polygon 到达后，所有面积、图层和指标须替换并重算。",
+      "statement": "三层范围（统筹研究范围 43.6 km²、总体设计范围 11.4 km²、重点区域范围 3.684 km²）的面积与边界文字描述均基于 brief/site-package/design_brief.json 的 official_text_area_and_boundary_description；当前 geometry 中 polygon 为临时粗略替代边界（official_boundary=false, geometry_role=provisional_constraint），依据公告文字四至和约面积推定。provisional geometry 的面积计算值（area_sqm_calculated，如 site_area_calculated_sqm=11412825.386）与公告声明值（area_sqm_declared=11400000）存在微小差异（约 0.11%），源于临时矩形 polygon 的粗略性。官方精界 polygon 到达后，所有面积、图层和指标须替换并重算。",
       "impact": "所有空间图层、指标和面积复算均为临时值，不得作为 official redline、审批依据或精确面积依据；site_area_sqm 等指标置信度为 medium。"
     },
     {

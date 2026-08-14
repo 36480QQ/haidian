@@ -78,6 +78,24 @@
       "status": "background_only",
       "statement": "Official park, heritage, renewal and public-space pages improve local grounding but do not supply the official submission boundary or site survey.",
       "impact": "The proposal uses verified principles while avoiding exact overlap, parcel, engineering or approval claims."
+    },
+    {
+      "id": "A-SHIFT-REHEARSAL-013",
+      "status": "synthetic_package_check_only",
+      "statement": "The 140-case preopening rehearsal checks contract completeness and deterministic stop/reversion behavior in the package; it is not a field test.",
+      "impact": "Opening still requires official geometry, operator authorization, real staff, engineering checks and representative-user rehearsal."
+    },
+    {
+      "id": "A-OPERATING-HOURS-014",
+      "status": "pending_operator_confirmation",
+      "statement": "The illustrative 24-hour anchor plus two 8-hour pop-up weekly windows produce 48 frontline staff-hours after a 20% handover/training/relief allowance.",
+      "impact": "This is a resource formula, not an approved roster, wage, operating budget or service promise."
+    },
+    {
+      "id": "A-OSM-CONTEXT-015",
+      "status": "background_only",
+      "statement": "OpenStreetMap vector context is used only to help reviewers orient the provisional concept figures.",
+      "impact": "No official boundary, parcel, ownership, heritage control, planning control or engineering conclusion is derived from OSM."
     }
   ]
 }

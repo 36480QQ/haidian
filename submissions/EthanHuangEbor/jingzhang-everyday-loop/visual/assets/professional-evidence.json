@@ -1,0 +1,462 @@
+{
+  "schema_version": "1.0",
+  "status": "competition_grade_concept_evidence_not_approval",
+  "positionings": [
+    {
+      "id": "POS-01",
+      "zh": "全球AI创新策源与开放研究",
+      "en": "Global AI innovation source and open research",
+      "functions": [
+        "FUN-01",
+        "FUN-02"
+      ],
+      "areas": [
+        "zhongzhiyuan",
+        "zhongguancun_service_wing"
+      ],
+      "space_types": [
+        "open-research ground floor",
+        "trusted test court"
+      ],
+      "responsible_role": "proposed research-public-service coordination; real entity unconfirmed",
+      "mechanism": "open release, documented evaluation and public-interest review",
+      "metrics": [
+        "service_station_count",
+        "scenario_card_count"
+      ]
+    },
+    {
+      "id": "POS-02",
+      "zh": "AI原点公共生活与人才社区",
+      "en": "AI-origin public life and talent community",
+      "functions": [
+        "FUN-03",
+        "FUN-04"
+      ],
+      "areas": [
+        "ai_origin_community",
+        "beiwei"
+      ],
+      "space_types": [
+        "shared ground floor",
+        "care and learning commons"
+      ],
+      "responsible_role": "proposed community-public-service coordination; real entity unconfirmed",
+      "mechanism": "staffed access, co-creation and affordable basic service",
+      "metrics": [
+        "service_station_count"
+      ]
+    },
+    {
+      "id": "POS-03",
+      "zh": "百年京张场景转化与文化门户",
+      "en": "Centennial Jing-Zhang scenario translation and cultural gateway",
+      "functions": [
+        "FUN-04",
+        "FUN-05"
+      ],
+      "areas": [
+        "dazhongsi",
+        "xiaoyuehe_scenario_wing"
+      ],
+      "space_types": [
+        "scenario launch hall",
+        "heritage gateway and transfer commons"
+      ],
+      "responsible_role": "proposed culture-mobility-scenario coordination; real entity unconfirmed",
+      "mechanism": "governed test, public record, human fallback and exit",
+      "metrics": [
+        "scenario_card_count",
+        "key_area_count"
+      ]
+    }
+  ],
+  "functions": [
+    {
+      "id": "FUN-01",
+      "zh": "基础研究与开源协作",
+      "en": "Research and open collaboration"
+    },
+    {
+      "id": "FUN-02",
+      "zh": "可信评测与受控试验",
+      "en": "Trusted evaluation and governed testing"
+    },
+    {
+      "id": "FUN-03",
+      "zh": "人才生活、社区照护与共享学习",
+      "en": "Talent life, community care and shared learning"
+    },
+    {
+      "id": "FUN-04",
+      "zh": "AI公共服务与城市文化",
+      "en": "AI public service and urban culture"
+    },
+    {
+      "id": "FUN-05",
+      "zh": "场景首发、招引与证据化转化",
+      "en": "Scenario launch, attraction and evidence-led translation"
+    }
+  ],
+  "regional_synergies": [
+    {
+      "interface_id": "zhongguancun_service_wing",
+      "name_zh": "中关村科技服务翼",
+      "exchange": "research, evaluation, legal and technology-transfer services",
+      "public_value": "public-interest service list and conflict disclosure",
+      "governance_gate": "official data, responsible entity, rights and procurement path must be confirmed",
+      "non_commitment": true
+    },
+    {
+      "interface_id": "xiaoyuehe_scenario_wing",
+      "name_zh": "小月河场景赋能翼",
+      "exchange": "reversible public-space tests and blue-green monitoring",
+      "public_value": "public problem gate, short-cycle review and restoration",
+      "governance_gate": "official data, responsible entity, rights and procurement path must be confirmed",
+      "non_commitment": true
+    },
+    {
+      "interface_id": "beiwei",
+      "name_zh": "北纬社区",
+      "exchange": "care, community learning and resident co-creation",
+      "public_value": "real community agreement and affordability check required",
+      "governance_gate": "official data, responsible entity, rights and procurement path must be confirmed",
+      "non_commitment": true
+    },
+    {
+      "interface_id": "future_science_city",
+      "name_zh": "未来科学城",
+      "exchange": "research exchange and test-method comparison",
+      "public_value": "no land, finance or procurement commitment",
+      "governance_gate": "official data, responsible entity, rights and procurement path must be confirmed",
+      "non_commitment": true
+    },
+    {
+      "interface_id": "huairou_science_city",
+      "name_zh": "怀柔科学城",
+      "exchange": "scientific-instrument and public-science exchange",
+      "public_value": "data and IP permission checked case by case",
+      "governance_gate": "official data, responsible entity, rights and procurement path must be confirmed",
+      "non_commitment": true
+    },
+    {
+      "interface_id": "beijing_economic_technological_development_area",
+      "name_zh": "北京经济技术开发区",
+      "exchange": "scenario supply-chain and engineering interface",
+      "public_value": "no supplier preference; open and reviewable entry",
+      "governance_gate": "official data, responsible entity, rights and procurement path must be confirmed",
+      "non_commitment": true
+    },
+    {
+      "interface_id": "jingjinji",
+      "name_zh": "京津冀",
+      "exchange": "inter-city heritage, talent and public-service knowledge exchange",
+      "public_value": "no claim of a committed regional programme",
+      "governance_gate": "official data, responsible entity, rights and procurement path must be confirmed",
+      "non_commitment": true
+    }
+  ],
+  "ecosystem_elements": [
+    {
+      "id": "land",
+      "zh": "土地",
+      "carrier": "provisional study interface only",
+      "gate": "official redline, ownership and planning condition"
+    },
+    {
+      "id": "space",
+      "zh": "空间",
+      "carrier": "shared ground floor, public spine and reversible pavilion",
+      "gate": "access, heritage, structure and fire-safety review"
+    },
+    {
+      "id": "industry",
+      "zh": "产业",
+      "carrier": "research, evaluation and scenario programmes",
+      "gate": "public value and no exclusivity"
+    },
+    {
+      "id": "capital",
+      "zh": "资本",
+      "carrier": "future transparent funding interface",
+      "gate": "no investment claim; funding and procurement to be confirmed"
+    },
+    {
+      "id": "talent",
+      "zh": "人才",
+      "carrier": "open workshop, learning commons and developer programme",
+      "gate": "fair access and no biometric entry"
+    },
+    {
+      "id": "compute",
+      "zh": "算力",
+      "carrier": "future tiered test environment",
+      "gate": "security, energy, cost and supplier interoperability review"
+    },
+    {
+      "id": "data",
+      "zh": "数据",
+      "carrier": "minimum necessary, permissioned evidence",
+      "gate": "purpose, consent, retention, appeal and deletion"
+    },
+    {
+      "id": "scenario",
+      "zh": "场景",
+      "carrier": "twelve cards and three reversible pilots",
+      "gate": "public problem, human review, evidence and stop rule"
+    }
+  ],
+  "ecosystem_edges": [
+    {
+      "from": "land",
+      "to": "space",
+      "exchange": "verified planning condition",
+      "public_return": "continuous accessible public interface",
+      "governance_gate": "official condition required"
+    },
+    {
+      "from": "space",
+      "to": "scenario",
+      "exchange": "reversible test carrier",
+      "public_return": "evidence before permanence",
+      "governance_gate": "safety and public-interest review"
+    },
+    {
+      "from": "talent",
+      "to": "industry",
+      "exchange": "research and service capability",
+      "public_return": "open explanation and local learning",
+      "governance_gate": "fair entry and conflict disclosure"
+    },
+    {
+      "from": "compute",
+      "to": "data",
+      "exchange": "controlled processing",
+      "public_return": "auditable service",
+      "governance_gate": "security, minimisation and deletion"
+    },
+    {
+      "from": "capital",
+      "to": "scenario",
+      "exchange": "potential future support",
+      "public_return": "transparent evidence and no automatic procurement",
+      "governance_gate": "funding source and procurement path unconfirmed"
+    }
+  ],
+  "landmarks": [
+    {
+      "id": "LM-01",
+      "name_zh": "开放模型工坊",
+      "name_en": "Open Model Workshop",
+      "area": "zhongzhiyuan",
+      "public_space_prototype": "open research ground floor and reversible test court",
+      "programme": "open model explanation and trusted evaluation",
+      "constraints": "heritage interface, public access and reversible insertion",
+      "concept_only": true
+    },
+    {
+      "id": "LM-02",
+      "name_zh": "原点城市客厅",
+      "name_en": "Origin Urban Commons",
+      "area": "ai_origin_community",
+      "public_space_prototype": "care and learning shared ground floor",
+      "programme": "community deliberation, care referral and intergenerational learning",
+      "constraints": "affordability, accessible route and resident decision rights",
+      "concept_only": true
+    },
+    {
+      "id": "LM-03",
+      "name_zh": "百年京张记忆门廊",
+      "name_en": "Centennial Jing-Zhang Memory Gateway",
+      "area": "dazhongsi",
+      "public_space_prototype": "cultural gateway and transit commons",
+      "programme": "heritage interpretation, multilingual service and scenario launch",
+      "constraints": "no invented historic replica; real heritage facts and rail safety await confirmation",
+      "concept_only": true
+    }
+  ],
+  "honor_system": {
+    "eligible_contributions": [
+      "verified public-interest test",
+      "accessible component improvement",
+      "cleared heritage contribution",
+      "documented human-fallback practice"
+    ],
+    "consent_required": true,
+    "verification": "cross-role evidence review",
+    "public_record": "contribution, evidence, limitation and decision",
+    "appeal": "staffed and written channel",
+    "removal": "on withdrawal, error, harm or rights concern",
+    "no_ranking_implication": true,
+    "prohibited_uses": [
+      "unlicensed person name or portrait",
+      "enterprise logo without permission",
+      "claim of official award or endorsement"
+    ]
+  },
+  "components": [
+    {
+      "id": "CMP-01",
+      "name_zh": "连续遮荫单元",
+      "use": "shade",
+      "accessibility": "clear headroom, resting interval and cane-detectable edge",
+      "install_interface": "bolt-on dry interface",
+      "maintenance": "seasonal inspection",
+      "reversibility": "remove without irreversible heritage damage; restore surface",
+      "data_boundary": "no data"
+    },
+    {
+      "id": "CMP-02",
+      "name_zh": "带扶手坐凳",
+      "use": "seating",
+      "accessibility": "backrest, arm support and wheelchair companion space",
+      "install_interface": "reversible baseplate",
+      "maintenance": "daily cleaning and monthly fixing check",
+      "reversibility": "remove without irreversible heritage damage; restore surface",
+      "data_boundary": "no data"
+    },
+    {
+      "id": "CMP-03",
+      "name_zh": "照护等候模块",
+      "use": "care",
+      "accessibility": "step-free, privacy option and caregiver adjacency",
+      "install_interface": "modular floor cassette",
+      "maintenance": "staff check before opening",
+      "reversibility": "remove without irreversible heritage damage; restore surface",
+      "data_boundary": "no biometric or health record by default"
+    },
+    {
+      "id": "CMP-04",
+      "name_zh": "三层文化导视",
+      "use": "signage",
+      "accessibility": "visual, tactile and plain-language hierarchy",
+      "install_interface": "replaceable rail",
+      "maintenance": "content and contrast review",
+      "reversibility": "remove without irreversible heritage damage; restore surface",
+      "data_boundary": "no tracking"
+    },
+    {
+      "id": "CMP-05",
+      "name_zh": "人工服务台",
+      "use": "human service",
+      "accessibility": "low counter, seating and hearing-support readiness",
+      "install_interface": "mobile powered desk",
+      "maintenance": "staff rota and daily opening log",
+      "reversibility": "remove without irreversible heritage damage; restore surface",
+      "data_boundary": "minimum voluntary service log"
+    },
+    {
+      "id": "CMP-06",
+      "name_zh": "低位交互界面",
+      "use": "low-height interface",
+      "accessibility": "keyboard reach, audio alternative and 200% zoom",
+      "install_interface": "reversible mount",
+      "maintenance": "monthly content and device review",
+      "reversibility": "remove without irreversible heritage damage; restore surface",
+      "data_boundary": "opt-in only; no face requirement"
+    },
+    {
+      "id": "CMP-07",
+      "name_zh": "活动电源接口",
+      "use": "event power",
+      "accessibility": "protected cable route and clear manoeuvring space",
+      "install_interface": "lockable temporary point",
+      "maintenance": "pre/post event safety check",
+      "reversibility": "remove without irreversible heritage damage; restore surface",
+      "data_boundary": "no data"
+    },
+    {
+      "id": "CMP-08",
+      "name_zh": "可逆传感接口",
+      "use": "reversible sensor interface",
+      "accessibility": "not placed in required clear path",
+      "install_interface": "time-limited mount",
+      "maintenance": "calibration and removal record",
+      "reversibility": "remove without irreversible heritage damage; restore surface",
+      "data_boundary": "non-identifying sensing preferred; purpose and retention posted"
+    }
+  ],
+  "culture_signage": {
+    "layers": [
+      {
+        "id": "heritage",
+        "purpose": "verified Jing-Zhang history and place memory"
+      },
+      {
+        "id": "innovation",
+        "purpose": "research, evaluation and ecosystem route"
+      },
+      {
+        "id": "ai_public_culture",
+        "purpose": "plain-language capability, limit, human help and exit"
+      }
+    ],
+    "rules": [
+      "stable station IDs",
+      "arrow plus text plus colour; never colour alone",
+      "Chinese-English title parity",
+      "plain-language and tactile alternative where verified",
+      "concept proposal under review; never selected, approved or built"
+    ],
+    "international_copy_status": "concept proposal under review"
+  },
+  "inclusion_protocol": {
+    "co_creation_status": "planned; no fabricated participant sample",
+    "co_creation_plan": [
+      "walk audit with disabled users and caregivers",
+      "multilingual terminology check",
+      "youth and older-user paper prototype",
+      "public response and dissent log"
+    ],
+    "accessible_route_audit": "planned field audit; current diagram is not certification",
+    "language_rules": [
+      "Chinese-English parity",
+      "plain language",
+      "human interpretation route",
+      "do not hide risk in image-only text"
+    ],
+    "cognitive_rules": [
+      "one action per step",
+      "visible back and exit",
+      "explain why information is requested",
+      "paper and staffed alternative"
+    ],
+    "affordability_rule": "basic navigation, help, shade, seating and public information are not exchanged for data or paid membership",
+    "vulnerable_group_decision_rights": "affected-group review can require redesign or stop before expansion",
+    "appeal": "staffed, telephone, paper and voluntary digital channels",
+    "human_channel": "available throughout public opening hours; real staffing agreement pending"
+  },
+  "human_precision_rules": [
+    {
+      "metric_id": "site_area_sqm",
+      "machine_value": 11412825.386,
+      "human_display_zh": "约11.41 km²（临时几何复算）",
+      "human_display_en": "about 11.41 km² (provisional geometry)",
+      "confidence": "provisional_only",
+      "qualifier": "not official survey, redline or approval precision"
+    }
+  ],
+  "source_use_rules": {
+    "formal": "may support a bounded claim with precise marker",
+    "background_only": "context only; cannot support site or approval fact",
+    "provisional_only": "intake, offline visualisation and recalculation only; must carry provisional warning",
+    "needs_review": "not used for substantive claim until cleared"
+  },
+  "scenario_open_process": [
+    "public problem and application",
+    "rights and conflict screening",
+    "data and privacy review",
+    "reversible sandbox",
+    "human review and staffed fallback",
+    "public-interest and accessibility review",
+    "public evidence record",
+    "expand, revise or exit"
+  ],
+  "non_commitments": [
+    "no official redline",
+    "no committed operator",
+    "no funding or procurement promise",
+    "no FAR, height, demolition, engineering or investment conclusion",
+    "no legal trademark or accessibility certification"
+  ]
+}

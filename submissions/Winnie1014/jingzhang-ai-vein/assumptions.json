@@ -6,7 +6,7 @@
       "gap_id": "GAP-BOUNDARY-001",
       "status": "pending_official_attachment",
       "statement": "三层范围（统筹研究范围、总体设计范围、重点区域范围）的官方精确 polygon 尚未取得；公告仅提供文字四至与约面积。本次提交以 provisional 粗略边界生成方案、可视化与自检，不将其作为 official redline、审批依据或精确面积依据。",
-      "impact": "面积、分区、道路、分期等所有空间结论均随官方边界替换而需重算；组织方数据缺口不阻断内容评分，但正式专业评分需官方/清权几何。",
+      "impact": "面积、分区、道路、分期等所有精度敏感结论均随官方边界替换而需重算；组织方资料缺失只限制红线、精确面积、审批与工程结论，不阻断内容评分，也不应导致参与者因缺数扣分。",
       "allowed_uses": [
         "AI 生成与展示",
         "intake 自检",
@@ -16,7 +16,7 @@
         "official boundary",
         "审批依据",
         "精确面积复算依据",
-        "正式专业评分依据"
+        "正式红线、精确面积或审批依据"
       ],
       "data_source_to_fill": "资格预审文件附件、正式任务书附件、补遗答疑、清权 CAD/GIS/PDF（公告指引征集组织机构为北京科技园拍卖招标有限公司）",
       "recalc_trigger": "官方 SITE_BOUNDARY / 三层范围 polygon 到位并登记后，全部图层与指标统一复算。"
@@ -36,7 +36,7 @@
       "forbidden_conclusions": [
         "official redline",
         "法定控规",
-        "正式评分依据",
+        "正式红线、精确面积或审批依据",
         "精确面积依据"
       ],
       "data_source_to_fill": "资格预审文件附件中的官方 SITE_BOUNDARY 或清权 GIS/CAD",
@@ -47,7 +47,7 @@
       "gap_id": "GAP-BOUNDARY-002",
       "status": "provisional_in_use",
       "statement": "三处重点区（众智园AI自主创新加速区、北京AI原点社区、大钟寺AI产业聚集区）仅以公告名称、自北向南顺序和约面积在临时总体设计范围内粗略定位，矩形边不得解释为地块或道路红线。",
-      "impact": "重点区只能做临时详细设计表达与面积校核，不能作为官方片区边界或正式评分依据。",
+      "impact": "重点区可用于概念原型、相对关系表达与临时面积校核，但不能作为官方片区边界、宗地/道路红线、精确面积、审批或工程依据；该缺口不阻断内容评分。",
       "allowed_uses": [
         "重点区详细设计表达",
         "面积校核（provisional）",
@@ -56,7 +56,7 @@
       "forbidden_conclusions": [
         "official KEY_AREA polygon",
         "审批依据",
-        "正式评分依据"
+        "正式红线、精确面积或审批依据"
       ],
       "data_source_to_fill": "资格预审文件附件中的 official KEY_AREA polygons 或清权 GIS/CAD",
       "recalc_trigger": "official KEY_AREA polygons 到位后重算三处面积与重点区相关指标。"
