@@ -1,6 +1,6 @@
 {
  "method": "English words per Chinese character, tables and code fences excluded. Calibrated to the field: 0.784 words/char measured across the 41 scored packages (see score_correlates.json); the floor is 0.75 of that. This measures content parity, which string-coverage counters do not. Parity does not predict review score (r = -0.20); the gate exists for the reader.",
- "overall_ratio": 0.877,
+ "overall_ratio": 0.876,
  "floor": 0.75,
  "sections": [
   {
@@ -54,9 +54,9 @@
   },
   {
    "section": "AI Innovation Ecosystem, Personas, and AI+ Scenarios",
-   "zh_chars": 10960,
-   "en_words": 7177,
-   "ratio": 0.835,
+   "zh_chars": 10992,
+   "en_words": 7190,
+   "ratio": 0.834,
    "pass": true
   },
   {
@@ -68,9 +68,9 @@
   },
   {
    "section": "Transport, Rail, Municipal Infrastructure, and Public Services",
-   "zh_chars": 1434,
-   "en_words": 960,
-   "ratio": 0.854,
+   "zh_chars": 1451,
+   "en_words": 961,
+   "ratio": 0.845,
    "pass": true
   },
   {
@@ -90,8 +90,8 @@
   {
    "section": "Metrics, Area Recalculation, and Compliance Matrix",
    "zh_chars": 5238,
-   "en_words": 3652,
-   "ratio": 0.889,
+   "en_words": 3656,
+   "ratio": 0.89,
    "pass": true
   },
   {

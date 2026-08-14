@@ -832,7 +832,7 @@ This rule turns governance into a spatial design problem, which is why it belong
 
 **First, what is not this proposal's increment.** Reading every proposal in these two tracks confirms that <!-- BASELINE6:BEGIN -->
 
-These six are now de facto standard. The figures in brackets are measured counts across the 793-proposal corpus: scenario-level suspension and exit conditions (476); a non-AI equivalent path (358); an on-site safety officer (324); remote and physical e-stop (171); speed limits (96); event logs (65). The thinnest is at 65, the thickest at 476. **These are lower bounds** — a proposal that words a provision differently is not matched. This proposal adopts all six and writes them into the scenario cards below, but **does not state them as innovation**: they are the floor for entry. Selling the floor as a feature shows you have not read the field.
+These six are now de facto standard. The figures in brackets are measured counts across the 793-proposal corpus: scenario-level suspension and exit conditions (478); a non-AI equivalent path (361); an on-site safety officer (325); remote and physical e-stop (171); speed limits (97); event logs (66). The thinnest is at 66, the thickest at 478. **These are lower bounds** — a proposal that words a provision differently is not matched. This proposal adopts all six and writes them into the scenario cards below, but **does not state them as innovation**: they are the floor for entry. Selling the floor as a feature shows you have not read the field.
 
 <!-- BASELINE6:END -->
 
@@ -913,7 +913,7 @@ This section is not a corporate-responsibility statement. It is part of the clos
 
 **The equivalent non-AI path (non-waivable).** Every function a robot service covers must also exist as a human path. Public service may not be interrupted when robots stop — this is both a public-interest requirement and the precondition that makes the network-wide suspension rule executable in practice. If suspension would interrupt service, the rule will be circumvented.
 
-**Explicitly not done:** this proposal gives no robot model, supplier, or speed-limit figure, and no road redline or cross-section conclusion — the former are procurement and industrial decisions, the latter statutory control [standard:MOHURD-CONTROL-DETAILED-PLANNING]. What it gives is **what to measure, where, by whom, and what happens when tolerance is exceeded.** S06's controlled pilot boundary is [data:geometry/constraints.geojson#CONSTRAINT-002] (23.75 ha). This sentence previously cited CONSTRAINT-001, which is the S11 test field at 5.30 ha — a different scenario on a different piece of ground, 4.5 times smaller.
+**Explicitly not done:** this proposal gives no robot model, supplier, or statutory speed limit (FIG.24's ≤ 6 km/h site speed is this proposal's own, registered A-DEVICE-001), and no road redline or cross-section conclusion — the former are procurement and industrial decisions, the latter statutory control [standard:MOHURD-CONTROL-DETAILED-PLANNING]. What it gives is **what to measure, where, by whom, and what happens when tolerance is exceeded.** S06's controlled pilot boundary is [data:geometry/constraints.geojson#CONSTRAINT-002] (23.75 ha). This sentence previously cited CONSTRAINT-001, which is the S11 test field at 5.30 ha — a different scenario on a different piece of ground, 4.5 times smaller.
 
 ### Main front two: AI public services — health, education, legal, daily life (agent.3, F1/F2)
 
@@ -1139,7 +1139,7 @@ Municipal and new infrastructure [depth:municipal_new_infrastructure] follows th
 
 Public-service facility baselines are a current data gap. This proposal invents no counts and supplies only the re-survey convention: facility accessibility is judged by the **actual walking time** of persona P4, not by straight-line distance, and that walking time must be measured with a sample that includes older people and wheelchair users rather than converted from an average walking speed.
 
-**Not decided here:** road redlines, specific section dimensions, intersection channelisation schemes, bridge/tunnel and underground feasibility, device speed limits, and bus and rail operating arrangements. All of these must follow statutory regulatory planning, specialist engineering review and the decisions of the responsible authorities [standard:MOHURD-CONTROL-DETAILED-PLANNING].
+**Not decided here:** road redlines, specific section dimensions, intersection channelisation schemes, bridge/tunnel and underground feasibility, statutory device speed limits, and bus and rail operating arrangements. All of these must follow statutory regulatory planning, specialist engineering review and the decisions of the responsible authorities [standard:MOHURD-CONTROL-DETAILED-PLANNING].
 
 ## Blue-Green Network, Public Space, and Urban Character
 
@@ -1289,7 +1289,7 @@ A proposal that claims to do heritage narrative without naming a single heritage
 
 Out of scope: **Qinglongqiao Station and the switchback**, tens of kilometres away near Badaling. This needs saying, because it concerns a common practice. The switchback is the line's most recognisable symbol and <!-- ZIGZAG:BEGIN -->
 
-Of the 793 submissions, **55** name it in the title or summary and **201** mention it anywhere in the body [source:FIELD-CENSUS-2026-08]. The two readings are given separately because “core meta-symbol” asks about naming, not mention; both are recomputed from the bodies by `analysis/field_extras.py`.
+Of the 793 submissions, **55** name it in the title or summary and **202** mention it anywhere in the body [source:FIELD-CENSUS-2026-08]. The two readings are given separately because “core meta-symbol” asks about naming, not mention; both are recomputed from the bodies by `analysis/field_extras.py`.
 
 <!-- ZIGZAG:END -->. Citing it as a *narrative symbol* is entirely legitimate — it belongs to the line's history. But it is a **specific engineering structure outside this 43.6 km² design area.** This proposal therefore does not use it in spatial design and draws it in no layer; it takes a different heritage of the same line — **the surveying method** — which runs the whole length, including every metre inside the scope. This is not a judgement of other proposals; it is this proposal's own boundary of use: **a symbol can be borrowed; a site cannot.**
 
@@ -1463,7 +1463,7 @@ All 63 answered. Recomputing the floors rather than declaring them means that if
 
 The repository's `validate_submission.py` carries `validate_simulation_consistency`, which cross-checks a `simulation.json`'s task records against `simulation_success_rate`, `tool_schema_pass_rate`, `energy_budget_violations` and `audit_completeness` in `metrics.json`. <!-- SIMJSON:BEGIN -->
 
-**21 of 793** submissions ship one; the roster is in `simulation_json.keys` in the shipped `visual/assets/field_extras.json`, checkable entry by entry. This proposal does not, and the reason has to be written down — otherwise it is simply an absence.
+**24 of 793** submissions ship one; the roster is in `simulation_json.keys` in the shipped `visual/assets/field_extras.json`, checkable entry by entry. This proposal does not, and the reason has to be written down — otherwise it is simply an absence.
 
 <!-- SIMJSON:END -->
 
@@ -1481,9 +1481,9 @@ The repository's `validate_submission.py` carries `validate_simulation_consisten
 
 **This paragraph used to read “not one submission in the field ships an erratum.” Re-measured, that is false, so it is corrected here.**
 
-Of the current 793, **6** ship a standalone errata file — this proposal and `147228`, `felix-lhz`, `lqqk7`, `wocaonimaworinixi-collab`, `youngkermit8-coder` — and **11** use self-correction language in the body. When this proposal first wrote that sentence the figure was 1, itself. It is not any more.
+Of the current 793, **8** ship a standalone errata file — this proposal and `147228`, `LShengYi`, `dingle2001`, `felix-lhz`, `lqqk7`, `wocaonimaworinixi-collab`, `youngkermit8-coder` — and **12** use self-correction language in the body. When this proposal first wrote that sentence the figure was 1, itself. It is not any more.
 
-It is corrected rather than left standing because **the sentence is an instance of this proposal’s own argument**: an assertion that stopped being true when the corpus changed goes on reading as true unless its author re-measures it. The errata file in `147228`, `felix-lhz`, `lqqk7`, `wocaonimaworinixi-collab`, `youngkermit8-coder` — `visual/assets/errata.json` under that submission, readable in the same repository — carries `found_by` and `shape` fields whose shape vocabulary overlaps this register’s closely (`two_copies_drifted`, `known_value_not_recomputed`), **which says the notation travels and is not this proposal’s property**. **So this proposal no longer claims nobody else does this. It claims something narrower and more checkable: an errata register should be generated by the build and held by a gate to ‘every entry joins back to the repository’, not maintained by hand.** `build_errata.py` verifies at build time that each entry’s commit exists and actually touched the file it blames. That is a difference an outsider can check; a count of entries is not.
+It is corrected rather than left standing because **the sentence is an instance of this proposal’s own argument**: an assertion that stopped being true when the corpus changed goes on reading as true unless its author re-measures it. The errata file in `147228`, `LShengYi`, `dingle2001`, `felix-lhz`, `lqqk7`, `wocaonimaworinixi-collab`, `youngkermit8-coder` — `visual/assets/errata.json` under that submission, readable in the same repository — carries `found_by` and `shape` fields whose shape vocabulary overlaps this register’s closely (`two_copies_drifted`, `known_value_not_recomputed`), **which says the notation travels and is not this proposal’s property**. **So this proposal no longer claims nobody else does this. It claims something narrower and more checkable: an errata register should be generated by the build and held by a gate to ‘every entry joins back to the repository’, not maintained by hand.** `build_errata.py` verifies at build time that each entry’s commit exists and actually touched the file it blames. That is a difference an outsider can check; a count of entries is not.
 
 <!-- SELFCORRECTION:END -->
 
@@ -1493,12 +1493,12 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-91 entries. By finder:
+92 entries. By finder:
 
 | Found by | Count | What it says |
 |---|---|---|
 | Independent audit | 25 | The audit was run against the shipped package, not a draft |
-| The author | 53 | Found while working |
+| The author | 54 | Found while working |
 | This package's own gate | 9 | Caught at build time — which is what a gate is for |
 | **Reviewers outside this proposal** | **4** | [@anselasimov-web](https://github.com/anselasimov-web) on PR #1002; [@147228](https://github.com/147228) on PR #1065; [@Sonike](https://github.com/Sonike) on Issue #950; [@147228](https://github.com/147228) on Issue #950 / PR #1190 |
 
@@ -1517,7 +1517,7 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 | **The check measured the convenient thing** | **19** |
 | **Two copies of one thing drifted** | **12** |
 | **A deliverable was not looked at before shipping** | **11** |
-| **A claim outlived the package** | **7** |
+| **A claim outlived the package** | **8** |
 | Geometry did not mean what it said | 4 |
 | A number outlived the sentence holding it | 4 |
 | A reference did not resolve | 4 |
