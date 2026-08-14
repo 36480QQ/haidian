@@ -662,6 +662,19 @@
       "assumptions": [
         "图上逐廊标注名,转辙廊为最重视觉元素"
       ]
+    },
+    "land_use_compatibility_rule_count": {
+      "status": "known",
+      "value": 8,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count of temporary-use compatibility rules (4 compatible + 2 conditional + 2 incompatible)",
+      "confidence": "high",
+      "assumptions": [
+        "留白验证区配套；不改法定用地性质"
+      ]
     }
   }
 }
