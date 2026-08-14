@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "4849c20c61739af53265f20aa7950b9be2be9c3eda917675ac33e0c350245011"
+      "sha256": "caeb67e144d2b43b608914c7f2710e88bc39114f70f332117591ac66487620cc"
     },
     {
       "path": "proposal.en.md",
@@ -34,7 +34,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "a4a0f238b458754e5ec61ace836f9eeed55f483669d0601aea1be55862878479"
+      "sha256": "66e111911ebccc35e212430435de89f1703a03e4c6dfd4f27ea7fcce9dc31a49"
     },
     {
       "path": "agent.json",
@@ -52,7 +52,7 @@
       "path": "assumptions.json",
       "role": "assumptions",
       "required": true,
-      "sha256": "18571751f268e1c775aa2b39823b99167f1b0f465c3fccca713f13e9c6c4493b"
+      "sha256": "73094d4c9948ed8503decf83fb47fa3c12c1d4c82b05dd41f2f3b76923a3f985"
     },
     {
       "path": "sources.json",
@@ -64,13 +64,13 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "d2c079c4c66bc2f518c51ccf39cdb4a7d488914c32a8d83c422265e571fdc666"
+      "sha256": "0800c49973100bf1a7433714e8da7e5250bb2cace4cd24f7f38ec574385042c1"
     },
     {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "a69d175855459636a080f8a2b41ca1fe0286867f14f377c6783c3b0578cbb8b1"
+      "sha256": "5b477a365dfe51cd41d90c8ff9b0ee5a5362fbf2b3d7446bc54b82044bfea15d"
     },
     {
       "path": "standard_matrix.json",
@@ -146,7 +146,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "c8c38bd86d6647a8b356af7c647a783a61d09614e5f7112c96c7a5a0544ce4a8"
+      "sha256": "d1a5dca42004ab4481460b19f8aa7cbe88c72a492442443041aebe311b9ddc5d"
     },
     {
       "path": "visual/index.en.html",
@@ -154,7 +154,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "e44a7ba5c9143153e17784651be43c361bcc66e4551ea866b38fd03950367db3"
+      "sha256": "f54a0f460499cffb21c4218a362ef328888abadf29f1f98e4ca49e2733524225"
     },
     {
       "path": "assets/figures/site-overview.png",

@@ -5,49 +5,13 @@
       "id": "A-CONTROLS-001",
       "status": "pending_professional_confirmation",
       "statement": "Detailed regulatory controls, road redlines, ownership, municipal utilities, and engineering constraints must be confirmed from official attachments before statutory use.",
-      "impact": "Statutory controls need professional confirmation."
+      "impact": "The package can be reviewed as a formal AI submission only for provided official boundaries and submitted design layers; statutory controls still need professional confirmation."
     },
     {
       "id": "A-GATE-001",
       "status": "design_principle",
-      "statement": "京张四闸实施放行机制：每个项目必须依次通过G0资格闸、G1试点闸、G2放行闸、G3退役闸。缺任一闸则项目保持halted。",
-      "impact": "四闸为概念框架，待主管部门确认标准。"
-    },
-    {
-      "id": "A-BOUNDARY-001",
-      "status": "pending_official_data",
-      "statement": "Official precise polygon not published. Repository provides provisional rough boundaries.",
-      "impact": "All geometry files provisional_constraint, not official redline."
-    },
-    {
-      "id": "A-FIELD-001",
-      "status": "not_authorized",
-      "statement": "No field survey conducted. All AI scenario performance marked unverified.",
-      "impact": "No operational claims without field evidence."
-    },
-    {
-      "id": "A-BUILDING-001",
-      "status": "pending_current_conditions_survey",
-      "statement": "Building counts, heights, function ratios are conceptual estimates.",
-      "impact": "B-level parameters, pending official survey."
-    },
-    {
-      "id": "A-DAZHONGSI-001",
-      "status": "pending_verification",
-      "statement": "Public Issue #1029 notes Dazhongsi provisional key area may be misaligned.",
-      "impact": "Treated as relocatable design container only."
-    },
-    {
-      "id": "A-INVESTMENT-001",
-      "status": "concept_level",
-      "statement": "Investment estimates concept-level (50%). Six projects total 10.4-21.6B RMB.",
-      "impact": "Formal estimates require professional consultancy."
-    },
-    {
-      "id": "A-OPERATION-001",
-      "status": "concept_level",
-      "statement": "Operations governance and phased implementation are conceptual frameworks.",
-      "impact": "C-level assumptions. Pilots should precede capital-intensive construction."
+      "statement": "京张四闸实施放行机制：每个项目必须依次通过G0资格闸（权属/资金/审批/运营主体）、G1试点闸（轻量先行90天）、G2放行闸（Go/No-Go评审）、G3退役闸（退役记录）。缺任一闸则项目保持halted。",
+      "impact": "四闸为概念框架，待主管部门和运营主体确认闸门标准和评审流程。"
     }
   ]
 }
