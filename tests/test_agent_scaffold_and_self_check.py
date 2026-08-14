@@ -341,6 +341,43 @@ class AgentScaffoldAndSelfCheckTests(unittest.TestCase):
                 result["next_command_note"],
             )
 
+    def test_ready_package_manifest_refresh_restores_missing_hashes(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            write_official_site_package(root)
+            submission_dir = root / "submissions" / "alice" / "refresh-missing-hashes"
+            self.assertEqual(run_scaffold(submission_dir, cwd=root).returncode, 0)
+            self.assertEqual(complete_scaffold(submission_dir).returncode, 0)
+            self.assertEqual(mark_self_checked(submission_dir).returncode, 0)
+
+            manifest_path = submission_dir / "manifest.json"
+            manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+            for item in manifest["files"]:
+                item.pop("sha256", None)
+            manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+            completed = subprocess.run(
+                [
+                    sys.executable,
+                    str(REPO_ROOT / "scripts" / "refresh_submission_manifest.py"),
+                    str(submission_dir),
+                    "--json",
+                ],
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            self.assertEqual(completed.returncode, 0, completed.stdout + completed.stderr)
+            refreshed = json.loads(manifest_path.read_text(encoding="utf-8"))
+            self.assertTrue(refreshed["files"])
+            self.assertTrue(
+                all(item.get("sha256") for item in refreshed["files"] if item.get("path") != "manifest.json")
+            )
+            self.assertFalse(refreshed["validation_claim"]["self_checked"])
+
+            checked = mark_self_checked(submission_dir)
+            self.assertEqual(checked.returncode, 0, checked.stdout + checked.stderr)
+
     def test_manifest_refresh_next_command_quotes_space_in_path(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             submission_dir = Path(tmp) / "workspace with spaces" / "submission"

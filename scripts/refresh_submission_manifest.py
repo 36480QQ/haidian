@@ -38,17 +38,19 @@ def refresh_manifest(root: Path) -> tuple[bool, str, list[str]]:
     refreshed: list[str] = []
     seen: set[str] = set()
     for item in files:
-        if not isinstance(item, dict) or "sha256" not in item:
-            continue
+        if not isinstance(item, dict):
+            return False, "every manifest file entry must be an object", []
         rel = item.get("path")
         if not isinstance(rel, str) or not rel:
-            return False, "every hashed manifest entry must have a non-empty path", []
+            return False, "every manifest file entry must have a non-empty path", []
         pure = PurePosixPath(rel)
         if pure.is_absolute() or ".." in pure.parts or rel in seen:
             return False, f"unsafe or duplicate manifest path: {rel}", []
         seen.add(rel)
         if rel == "manifest.json":
-            return False, "manifest.json cannot declare a hash for itself", []
+            if "sha256" in item:
+                return False, "manifest.json cannot declare a hash for itself", []
+            continue
         target = (root / Path(*pure.parts)).resolve()
         if not target.is_relative_to(root) or not target.is_file():
             return False, f"listed file is missing or outside the submission: {rel}", []
@@ -56,7 +58,7 @@ def refresh_manifest(root: Path) -> tuple[bool, str, list[str]]:
         refreshed.append(rel)
 
     if not refreshed:
-        return False, "manifest.json has no declared file hashes to refresh", []
+        return False, "manifest.json has no declared files to refresh", []
     claim["self_checked"] = False
 
     encoded = (json.dumps(manifest, ensure_ascii=False, indent=2) + "\n").encode("utf-8")
