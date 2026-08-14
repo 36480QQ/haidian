@@ -532,6 +532,19 @@
       "assumptions": [
         "四坊与 G0-G4 门闸一一对应，深化为概念分区"
       ]
+    },
+    "ai_origin_hall_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count of AI origin halls (纪元/共创/起居)",
+      "confidence": "high",
+      "assumptions": [
+        "三厅分别承接场景 07/11/10"
+      ]
     }
   }
 }
