@@ -67,7 +67,7 @@
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "3408a9f28202f861235ef545067173285da51dfd1b7e27b7473329847b4ca493"
+      "sha256": "faba7bcacd96994342bea37c75434a57aeaf002038cec334e35be256828a7126"
     },
     {
       "path": "design_depth_matrix.json",
@@ -176,14 +176,14 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "1bdbc3b3c95e658dbeb01d326c40346fc79d0cf90ee5a4093c3b67c3a9ae920b"
+      "sha256": "105bdd0c821fb72bb369a0d7b1b62c1169c40a5c8d7e2e97df766d2b0ad9b0a0"
     },
     {
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "34a28a37311eaed83d8f9fa570dda1a6900d1836f9b362e87abc887a5e70b568"
+      "sha256": "bfc1c42cdd5166470dc65c80ca5974b2c834130fd3898b552a47e69486bea561"
     },
     {
       "path": "report/copyright_statement.md",
@@ -203,20 +203,20 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "9e0ff825e402fd3e0bee2915c4ee0df36f874f7783d7b04af7ee7cc5949154c2"
+      "sha256": "0ed5b7ed6952a5e7b766d5f064a8b10732385e67a078ee41f150528282ea995b"
     },
     {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "a9e74e69af5556e2af7c3d5c38ebfa3d8b867574f9cd63fa68b28ca7894f7474"
+      "sha256": "892483eb7b14269121a4a859fcbe71570980f1eb4108ad046c41c721eaa97fa9"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "a4b31a861295ac010e5908eaa0d80bfd9549009f11e2ad478a88b4e0f9421541"
+      "sha256": "3e917c24d2ec05ad469f7b1f0ac8c11c5c80f05fd758763e6c99760f150b98c3"
     },
     {
       "path": "sources.json",
@@ -236,14 +236,14 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "fdf9c55e2b5800c3c0ff721c2d2f064d42030f814861cc50fb4acd9a16d41178"
+      "sha256": "b887184955712d3a7457ccbb6a797218f2349061e3c97dd8024cc7a970703f11"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "3c3a028be1545cd61641fe86a46826a114c43bbeb52ffc2d779ed8a7a30a52ed"
+      "sha256": "bfe19c32c5b6cafeeef628caa8d88e840544d7554cee5bb0fe538ac09cde6f66"
     }
   ],
   "validation_claim": {

@@ -38,7 +38,34 @@ Regionally, the Echo Line is framed as an interface to a wider Beijing–Tianjin
 
 For agent.1, the concept is **THE ECHO LINE**: the heritage park is a two-way public innovation line—upstream runs deploy models and services; downstream runs must return public echoes: slow-mobility repair, open-source artifacts, skills, culture and audit logs [source:AGENT-TASKBOOK] [depth:overall_spatial_structure]. Naming: 京张回响线 / THE ECHO LINE; Echo Station, Echo Loop, Echo Protocol. Visual identity: dual arrow of rail soundwave + echo waveform in rail grey, echo teal and Zhongguancun red.
 
-For agent.2, six transferable mechanisms from global cases [source:AGENT-TASKBOOK]: campus–park–street stack; open-source + safety evaluation; scenario openness with data minimization; energy–compute–model corridor as a mechanism reference only; talent + transfer services; international demo/dev-festival branding. All are concept references, not commitments. Future-city form requires explainable, pauseable, rollbackable governance alongside productivity [depth:metrics_recalculation].
+For agent.2, six transferable mechanisms from global cases [source:AGENT-TASKBOOK]: campus–park–street stack; open-source + safety evaluation; scenario openness with data minimization; energy–compute–model corridor as a mechanism reference only; talent + transfer services; international demo/dev-festival branding. All are concept references, not commitments.
+
+
+### Positioning × function closed loop (agent.1 / agent.2)
+
+| Positioning / function | Spatial anchor | Operating action | Public-echo KPI (concept) |
+| --- | --- | --- | --- |
+| Jingzhang culture belt | Heritage green + memory trail | Guided days, contribution wall | Open cultural nodes / events |
+| Urban AI living belt | Xiaoyuehe wing + Dazhongsi experience | Open days, night demos | Scenario use / resident participation |
+| AI fusion innovation belt | Zhongzhiyuan verify + Origin open-source | Eval days, release days | Eval jobs / open-source entries |
+| Full-stack autonomy | Verification station | Safety range, standards workshop | Red-team sessions |
+| World-class ecosystem | Origin + ZGC service wing | Demo days, financing meetups | Transfer lounge sessions |
+| AI+ scenario paradigm | 10 scenario cards | 3 industry sandboxes | Scenario–space mapping completeness |
+| Intelligent lively city | Echo Loop mobility | Break diagnosis & repair | Breaks fixed |
+| AI governance voice | Governance showcase + international demos | Public standards days | Public eval reports |
+
+### agent.2 ecosystem map
+
+Zhongzhiyuan = autonomy + evaluation; Origin = open source + campus transfer; Dazhongsi = intelligent economy + international hosting; ZGC wing = capital/IP/compute access; Xiaoyuehe wing = living/care scenarios. Space uses land_use/public_space interfaces; people use five personas; scenarios use ten cards; data governance is minimized, explainable and human-reviewed.
+
+### agent.4 components and honors
+
+Component kit: Echo Beacon, Evaluation Ark, Intelligent Sound Plaza, contribution wall, wayfinding bollards. Honors record aggregated public contributions only, never personal trajectories.
+
+### agent.6 annual ops loop
+
+Concept calendar: spring open-source week, summer scenario month, autumn governance day, winter international demo week; monthly developer walk. Roles: space operator, scenario host, data steward, human reviewer. Events are pauseable/rollbackable and not funded commitments.
+ Future-city form requires explainable, pauseable, rollbackable governance alongside productivity [depth:metrics_recalculation].
 
 ![Land-use structure figure](assets/figures/land-use-structure.png)
 
