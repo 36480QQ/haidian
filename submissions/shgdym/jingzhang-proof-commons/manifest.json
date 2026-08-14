@@ -12,7 +12,7 @@
     "agent_name": "OpenAI Codex for shgdym",
     "model": "OpenAI GPT-5 family via Codex; participant-supplied web-generated concept illustrations with provider/model metadata unavailable; local Shapely, PyProj, Pillow, CairoSVG, PPT Master and LibreOffice"
   },
-  "generated_at": "2026-08-14T07:47:17Z",
+  "generated_at": "2026-08-14T08:07:07Z",
   "files": [
     {
       "path": "agent.json",
@@ -564,7 +564,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "fd2d254b1b7c51bf1448306b90c9eb9a91fecafcaa715b43d9ea49082ba3baff"
+      "sha256": "244c57a60ca458ec51133f3b17e94328736acdb04202b569775516c4a1c13d14"
     },
     {
       "path": "sources.json",
@@ -714,7 +714,7 @@
       "path": "visual/index.en.html",
       "role": "visualization",
       "required": true,
-      "sha256": "23cbf553cfa43fd8a885b93442f01220288727c77684f83a015df678bf761be7",
+      "sha256": "a1b289ece35dd3d27f2309c3be761c4799ab090536f593efab566b8dc41ba4bf",
       "language": "en",
       "translation_of": "visual/index.html"
     },
@@ -722,7 +722,7 @@
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
-      "sha256": "bf734c6ee75e1ed1308571658be58fb9b184d955047aed9c7f93c1bc2fbcbc5b",
+      "sha256": "85339e74aae005b091df131c4eb95e58c2981602d047ceb961ed9d8dd552381c",
       "language": "zh"
     }
   ],
