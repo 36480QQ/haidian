@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0.0",
+  "claim_level": "synthetic_rule_replay",
+  "purpose": "Check that the participant-authored R0-R5 rules stop or divert known negative branches.",
+  "field_runs": 0,
+  "fixture_count": 8,
+  "matched_expected_decisions": 8,
+  "expected_match_rate": 1,
+  "all_matched": true,
+  "cases": [
+    {
+      "fixture_id": "T01",
+      "expected": "HOLD_R1",
+      "actual": "HOLD_R1",
+      "matched": true
+    },
+    {
+      "fixture_id": "T02",
+      "expected": "QUALIFIED_HANDOVER_R2",
+      "actual": "QUALIFIED_HANDOVER_R2",
+      "matched": true
+    },
+    {
+      "fixture_id": "T03",
+      "expected": "HOLD_R3",
+      "actual": "HOLD_R3",
+      "matched": true
+    },
+    {
+      "fixture_id": "T04",
+      "expected": "REJECT_PART_R3",
+      "actual": "REJECT_PART_R3",
+      "matched": true
+    },
+    {
+      "fixture_id": "T05",
+      "expected": "HOLD_R5",
+      "actual": "HOLD_R5",
+      "matched": true
+    },
+    {
+      "fixture_id": "T06",
+      "expected": "RETURN_TO_SERVICE_R5",
+      "actual": "RETURN_TO_SERVICE_R5",
+      "matched": true
+    },
+    {
+      "fixture_id": "T07",
+      "expected": "HOLD_R4",
+      "actual": "HOLD_R4",
+      "matched": true
+    },
+    {
+      "fixture_id": "T08",
+      "expected": "HOLD_R2",
+      "actual": "HOLD_R2",
+      "matched": true
+    }
+  ],
+  "not_proven": [
+    "field safety",
+    "device performance",
+    "institutional authorization",
+    "public acceptance",
+    "professional approval"
+  ]
+}
