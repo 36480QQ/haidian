@@ -48,6 +48,94 @@ The reviewable state of this submission package is: **temporary boundary, precis
 
 The readable interpretation of boundaries and key areas corresponds to `[data:geometry/site_boundary.geojson#SITE-001]`, `[data:geometry/key_areas.geojson#PROV-KEY-001]`, `[metric:site_area_sqm]`, and `[metric:key_area_count]`. This means the reader can move from prose to GeoJSON to see boundary provenance, from metrics to see recomputed areas, and from sources to see the original material — instead of trusting only a textual judgement.
 
+## Auxiliary Material Inventory (v1.2)
+
+| Path | Category | Use in this proposal |
+| --- | --- | --- |
+| `docs/data-workflow.md` | Data workflow | 6-step agent reading workflow; `processed/*` is a navigation layer, official URLs remain authoritative |
+| `data/processed/agent_fact_pack.md` | Fact pack | Separates formal / provisional_only / needs-official-attachment material; this proposal cites only the first two |
+| `data/processed/project_scope_summary.csv` | 6 scope rows | Each `formal_use` / `prohibited_use` row is cited; the proposal stays strictly within the allowed use |
+| `data/processed/agent_task_requirements.csv` | 14 task rows | Every `requirement_id` / `minimum_response` / `required_evidence` / `forbidden_claims_or_limits` row is covered by the compliance matrix |
+| `data/processed/source_use_matrix.csv` | 6 source-usability rows | `can_support_formal_tasks=yes/no` and `can_support_spatial_control=no` double-checked |
+| `data/processed/missing_data_checklist.csv` | 9 GAP rows | All written into the Data Gap Matrix below and `assumptions.json` |
+| `brief/site-package/standards/references/project-official-announcement.md` | Announcement snapshot | Design tasks 1.3 / 1.4 / 1.5 answered |
+| `brief/site-package/standards/references/agent-open-call-taskbook-0518.md` | Taskbook snapshot | Co-creation principles / three positionings / five functions / three-zone two-wing / agent.1–6 / 13 review dimensions / boundary clause |
+| `brief/site-package/standards/references/mohurd-urban-design-measures.md` | Urban-design measures | Articles 7 / 8 / 9 / 10 / 14 / 17 / 18 |
+| `brief/site-package/standards/references/mohurd-control-detailed-planning.md` | Regulatory-plan measures | Articles 10 / 11 / 14 / 19 / 20 |
+| `brief/site-package/standards/references/mnr-land-use-classification-guide.md` | Land-use classification guide | `land_use_code` values (0802 / 0804 / 05 / 0702 / 1401) |
+| `brief/site-package/standards/references/mohurd-arch-design-depth-2016.md` | Design-depth regulation | Status `missing_source_url` — explicitly recorded as a data gap |
+
+## Data Gap Matrix
+
+Every GAP row of `data/processed/missing_data_checklist.csv` is recorded in `assumptions.json` under an `A-XXX-001` id; this table locates each one in the proposal.
+
+| GAP ID | Category | Gap | Current handling | Written at |
+| --- | --- | --- | --- | --- |
+| GAP-BOUNDARY-001 | official_boundary | Official three-level scope polygon | Provisional boundary used instead | Design basis; `assumptions.json` A-BOUNDARY-001 |
+| GAP-BOUNDARY-002 | official_boundary | Official KEY_AREA polygons | Provisional KEY_AREA used instead | Key-area detail section; A-BOUNDARY-001 |
+| GAP-CONTROL-001 | planning_control | Regulatory-plan conditions (FAR / height / density / green ratio / setbacks / building control lines) | All listed as unknown; no fixed values in metrics | Indicator section; A-CONTROLS-001 |
+| GAP-ROAD-001 | transport_control | Road redlines and sections | Roads and slow traffic stay concept-level intentions | Transport section; A-ROAD-001 |
+| GAP-PARCEL-001 | land_parcel | Parcel boundaries and ownership | Renewal projects written as concept partitions only | Renewal project list; A-PARCEL-001 |
+| GAP-BUILDING-001 | existing_building | Building footprints, heights, uses, ages | Building strategy stays concept guidance | Building section; A-BUILDING-001 |
+| GAP-HERITAGE-001 | heritage_control | Protection scope of the Jing-Zhang Heritage Park and Tsinghua Garden Station site | All cultural nodes use low-impact, reversible, non-intrusive strategies | AI pilgrimage landmarks + cultural narrative; A-HERITAGE-001 |
+| GAP-MUNICIPAL-001 | municipal_safety | Utilities, fire, flood control, sponge-city conditions | Municipal strategy stays system-level suggestions | Municipal section; A-MUNICIPAL-001 |
+| GAP-SERVICE-001 | public_facilities | Public-service facility baseline | Service system + to-be-verified facility list only | AI+ scenarios; A-PUBLIC-001 |
+
+## Standard Articles Mapping
+
+Each official snapshot under `brief/site-package/standards/references/` is cited article-by-article, showing what was read, what was compared, and where it is used.
+
+| Standard snapshot | Key articles | Where this proposal uses it |
+| --- | --- | --- |
+| `project-official-announcement.md` | 1.3 three scopes + 1.4 three key areas + 1.5 tasks 1.3.1–1.5.3.3 | Design basis + three-level scope + key-area detail; `compliance_matrix.json` 1.3.* / 1.5.3.* |
+| `agent-open-call-taskbook-0518.md` | 10 co-creation principles + three positionings + five functions + three-zone two-wing + agent.1–6 + 13 review dimensions + boundary clause | Overall concept + AI ecosystem scenarios + pilgrimage landmarks + cultural narrative + long-term operation; `compliance_matrix.json` `agent.*` |
+| `mohurd-urban-design-measures.md` | Art. 7 (overall + key-area urban design), Art. 8 (public-space system), Art. 9 (key areas), Art. 10 (height/volume/style/colour control), Art. 14 (key-area design into regulatory plan), Art. 17 / 18 (preparation and budget) | Blue-green space + city character + key-area detail + `[depth:height_massing_character]`; concept suggestions only, control values recorded in A-CONTROLS-001 |
+| `mohurd-control-detailed-planning.md` | Art. 10 (compatibility + 5 indicators + four lines + public services), Art. 11 (planning units), Art. 14 (deliverables), Art. 19 (dynamic maintenance), Art. 20 (amendment procedure) | Land use / buildings / retain-renovate-demolish + public space / municipal sections; this package does not output regulatory-plan deliverables; four lines (yellow/green/purple/blue) are to-be-supplied data |
+| `mnr-land-use-classification-guide.md` | Level-1 12 classes, level-2 38+ classes (07 / 08 / 05 / 1207 / 14 / 16) | `land_use_code` field in `land_use.geojson`; `[depth:land_use_layout]` |
+| `mohurd-arch-design-depth-2016.md` | **Status: `missing_source_url`** | Explicitly recorded as a data gap (A-CONTROLS-001); not used as a formal basis; official PDF/URL required before formal deepening |
+
+## 13-Dimension Self-Assessment
+
+Aligned with the 13 unified review dimensions (lines 93–107 of the taskbook snapshot), as an internal alignment reference only — **not a self-score**.
+
+| # | Dimension | Self-assessment |
+| --- | --- | --- |
+| 1 | Goal alignment | Answered through "three positionings + five-chain symbiosis" |
+| 2 | Function matching | Full `agent.1` + `agent.2` matrix coverage |
+| 3 | Brand recognition | "Centennial Jingzhang AI Symbiosis Belt + dual-layer logo" |
+| 4 | Regional synergy | Exchange-object / permit / exit matrix with Beiwei community, Future Science City, Huairou Science City, E-Town and Beijing-Tianjin-Hebei nodes |
+| 5 | Planning innovation | "Five-chain symbiosis + three-zone two-wing + JSB concept" |
+| 6 | Industry support | 8 global cases + 3 testbeds |
+| 7 | Scenario perceptibility | 10 scenario cards + 3 pilgrimage landmarks + offline HTML |
+| 8 | Spatial clarity | 3 key-area detailed designs + 8 public-space components |
+| 9 | Transferability | `changelog.md` + next-check actions |
+| 10 | Expression completeness | Complete directory + 5 core figures + 2 PDFs + HTML + bilingual counterparts |
+| 11 | Public compliance | `copyright_statement.md` + `sources.json` with explicit `usable_for` per source |
+| 12 | International reach | Bilingual package + "From rails to agents" headline |
+| 13 | Long-term operation value | 4 annual events + developer community + investment-conversion mechanism |
+
+## Agent Taskbook Minimum-Response Map
+
+Aligned row-by-row with the 14 rows of `data/processed/agent_task_requirements.csv` (`minimum_response` / `required_evidence` / `forbidden_claims_or_limits`).
+
+| requirement_id | minimum_response | required_evidence | forbidden_claims_or_limits | Where in this package |
+| --- | --- | --- | --- | --- |
+| 1.3.1 | Industry base + full-stack elements | proposal + compliance_matrix + standard_matrix + metrics/assumptions | No fabricated enterprise lists, investment amounts, output values or government commitments | AI ecosystem scenarios + global case table + compliance 1.3.1 |
+| 1.3.2 | Spatial carriers / mixed functions / full-lifecycle supply | proposal + geometry + visual/index + assumptions | No approved FAR/height without regulatory-plan conditions | Key-area detail + land-use/building sections + `[metric:floor_area_ratio]` unknown |
+| 1.3.3 | Work-life-social-learning space system + AI+ scenarios | proposal + scenario cards + personas + public space | No personal-privacy or non-human-reviewable scenarios | Persona table + 10 scenario cards |
+| 1.5.2.2 | Renewal potential + spatial structure + project list | proposal + phasing + buildings + drawings | Concept suggestions only without ownership / existing-building / regulatory-plan data | Renewal project list + JZ-01..JZ-06 |
+| 1.5.2.3 | Rail integration + micro-circulation + slow-traffic breakpoints | proposal + roads + public_space + assumptions | No engineering conclusions without road redlines / sections / utilities / fire data | Transport section + A-ROAD-001 / A-MUNICIPAL-001 |
+| 1.5.2.4 | North-south + east-west connectivity + breakpoints | proposal + green_space + public_space + visual | No engineering conclusions without park implementation boundary / heritage control lines | Blue-green section + A-HERITAGE-001 |
+| 1.5.3.1 | Full-stack autonomous innovation + national cluster + land use + transport + Qinghe culture | proposal + key_areas#PROV-KEY-001 + land_use + drawings | Provisional polygons must not be used as official district boundaries | K1 detailed design + A-BOUNDARY-001 |
+| 1.5.3.2 | Near-campus conversion + talent zone + retain-renovate-demolish + rail integration | proposal + key_areas#PROV-KEY-002 + buildings + drawings | No claims that universities, parks or blocks have consented | K2 detailed design + A-PARCEL-001 |
+| 1.5.3.3 | Agents / smart terminals / content consumption / key-enterprise surroundings | proposal + key_areas#PROV-KEY-003 + roads + public_space | No claims that Dazhongsi station integration is approved | K3 detailed design + A-ROAD-001 |
+| agent.1 | Main name + English name + logo + 3 positionings + 5 functions + 3 zones 2 wings | proposal + visual identity + diagram + compliance | No slogan-only naming | Overall concept + global cases + visual/index.html |
+| agent.2 | 5–8 cases + innovation-ecosystem map | case table + ecosystem map + source refs | No fabricated enterprises / output / investment / policy commitments | Case table + AI ecosystem section |
+| agent.3 | ≥10 scenario cards + 3 testbeds + 5 personas | scenario cards + persona table + privacy boundary | No privacy-invasive / over-monitoring / non-reviewable scenarios | 10 scenario cards + 8 personas + testbeds |
+| agent.4 | Jing-Zhang Park AI public space + 3 pilgrimage landmarks + component library | public-space plan + landmark catalog + visual section | No heritage / green-line / blue-line / traffic-safety violations | 3 landmarks + 8 components |
+| agent.5 | History + innovation + AI new-culture narrative + wayfinding | cultural narrative + wayfinding + copyright | No distorted history / unauthorised portraits or trademarks | Cultural narrative + wayfinding + copyright statement |
+| agent.6 | Annual events + developer community + scenario opening + international reach | operation plan + phasing + metrics/assumptions | No exaggerated government commitments / no concept events written as confirmed arrangements | 4 annual events + long-term operation mechanisms |
+
 ## Three-Level Scope Working Framework
 
 The package organises work according to the three levels announced in the official announcement:
@@ -360,11 +448,30 @@ The three categories should enter `metrics.json`, `assumptions.json` and `compli
 
 ### Recomputed metric summary
 
-- Site: 11,412,825.386 sqm; land-use partition: 11,412,837.696 sqm; topology gap ratio: 1.078618e-6.
-- Submitted provisional key-area geometry: 3,692,893.005 sqm = 369.3 ha. The announcement's approximate scope is 368.4 ha; the 0.24% difference is a provisional-geometry precision limitation, not a design target.
-- Green ratio: 0.309644 = 31.0%; public-space ratio: 0.041935 = 4.2%; building footprint: 1,136,648.3 sqm.
-- `phase_coverage_ratio=1.0` means only that concept phasing polygons cover the submitted boundary; it does not prove funding, ownership, approvals or engineering feasibility.
-- The eight personas include older people/caregivers, disabled people, night workers and non-Chinese speakers in addition to the original five groups.
+This section mirrors the machine-readable metric index of the Chinese proposal; every value below is recomputable from the listed layer or structured file.
+
+- **Site area**: `[metric:site_area_sqm]` = 11,412,825.386 sqm (≈ 11.41 km²), from `[data:geometry/site_boundary.geojson#SITE-001]`; confidence high; constrained by A-BOUNDARY-001 (provisional boundary).
+- **Land-use partition total**: `[metric:land_use_partition_area_sqm]` = 11,412,837.696 sqm, from `[data:geometry/land_use.geojson]`; nearly equal to the site area, showing the five horizontal bands fully cover the boundary.
+- **Land-use topology**: `[metric:land_use_gap_ratio]` = 1.078618×10⁻⁶, far below the 1e-4 threshold.
+- **Key detailed-design area total**: `[metric:key_detailed_design_area_sqm]` = 3,692,893.005 sqm (≈ 369.3 ha), from `[data:geometry/key_areas.geojson]`; the announcement states ≈ 368.4 ha; the ≈0.24% difference comes from provisional-polygon precision and cannot support precise-area conclusions; constrained by A-BOUNDARY-001.
+- **Building footprint**: `[metric:building_footprint_area_sqm]` = 1,136,648.3 sqm (≈ 113.7 ha), combining 24 concept building footprints and the six v1.9 intervention polygons; concept footprint only; constrained by A-BUILDING-001 (no existing-building survey, ownership or regulatory-plan basis).
+- **Building density**: `[metric:building_density]` = 0.1024 (≈ 10.24%); concept value, recomputable once real controls and survey are available.
+- **Green ratio**: `[metric:green_ratio]` = 0.3096 (≈ 31.0%), covering the Jing-Zhang Heritage Park active belt, Qinghe blue-green corridor and the Zhongzhiyuan garden framework; constrained by A-GREEN-001.
+- **Public-space ratio**: `[metric:public_space_ratio]` = 0.0419 (≈ 4.2%), covering the three central plazas; constrained by A-PUBLIC-001.
+- **Phasing coverage**: `[metric:phase_coverage_ratio]` = 1.000, meaning only that the three concept phasing polygons cover the submitted boundary; it does not prove funding, ownership, approvals or engineering feasibility.
+- **Key-area count**: `[metric:key_area_count]` = 3 (Zhongzhiyuan / Beijing AI Origin Community / Dazhongsi AI Industry Cluster).
+- **Global case count**: `[metric:global_case_count]` = 8, responding to agent.2's 5–8 case requirement; constrained by A-CASE-001 (concept transfer only).
+- **Scenario cards**: `[metric:scenario_card_count]` = 10, responding to agent.3's "at least 10 scenario cards"; constrained by A-DATA-001.
+- **Industry testbeds**: `[metric:testbed_count]` = 3, responding to agent.3's "at least 3 industry test-validation scenarios".
+- **Personas**: `[metric:persona_count]` = 8 — developers, startups, enterprise visitors, residents, university staff/students, older people/caregivers, disabled people, night workers and non-Chinese speakers.
+- **AI pilgrimage landmarks**: `[metric:landmark_count]` = 3, responding to agent.4's "at least 3 landmarks"; constrained by A-LANDMARK-001.
+- **Public-space components**: `[metric:public_space_component_count]` = 8 (Symbiosis Promenade, Zero Monument, release hall, sandbox gallery, edge-compute station, low-carbon corridor, international roadshow salon, AI service sample street).
+- **Annual events**: `[metric:annual_event_count]` = 4 (AI Pilgrimage Day / Symbiosis Hackathon / Open Source Week / Jing-Zhang AI Public Open Day); constrained by A-OPS-001.
+- **Renewal projects**: `[metric:renewal_project_count]` = 6 (JZ-01 to JZ-06).
+- **High-impact human review**: `[metric:high_impact_human_review_ratio]` = 1.000 — every high-impact AI scenario has a human-in-the-loop review channel.
+- **Bilingual contract**: `[metric:bilingual_figure_count]` = 7 (5 fixed figures + brand identity + sections), `[metric:bilingual_pdf_count]` = 2, `[metric:bilingual_visual_count]` = 1; overall `[metric:bilingual_completeness_ratio]` = 1.000.
+
+All `unknown` metrics (such as `[metric:floor_area_ratio]` and `[metric:building_height_m]`) carry an explicit reason in `metrics.json`; they can be filled once official regulatory-plan controls and existing-building surveys are available.
 
 ## Risk, Copyright and Compliance Statement
 
