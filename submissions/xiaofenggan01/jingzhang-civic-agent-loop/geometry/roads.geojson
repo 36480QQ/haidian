@@ -151,7 +151,9 @@
         "role": "stitch_corridor",
         "stitch_direction": "east_west",
         "stitch_note": "大钟寺 AI 产业聚集区东西缝合",
-        "official_boundary": false
+        "official_boundary": false,
+        "child_friendly_route": true,
+        "all_age_nodes": 2
       },
       "geometry": {
         "type": "LineString",
@@ -181,7 +183,9 @@
         "role": "stitch_corridor",
         "stitch_direction": "east_west",
         "stitch_note": "知春路沿线东西缝合",
-        "official_boundary": false
+        "official_boundary": false,
+        "child_friendly_route": true,
+        "all_age_nodes": 2
       },
       "geometry": {
         "type": "LineString",
@@ -211,7 +215,9 @@
         "role": "stitch_corridor",
         "stitch_direction": "east_west",
         "stitch_note": "AI 原点社区东西缝合",
-        "official_boundary": false
+        "official_boundary": false,
+        "child_friendly_route": true,
+        "all_age_nodes": 2
       },
       "geometry": {
         "type": "LineString",
@@ -241,7 +247,9 @@
         "role": "stitch_corridor",
         "stitch_direction": "east_west",
         "stitch_note": "众智园东西缝合",
-        "official_boundary": false
+        "official_boundary": false,
+        "child_friendly_route": true,
+        "all_age_nodes": 2
       },
       "geometry": {
         "type": "LineString",
@@ -271,7 +279,9 @@
         "role": "stitch_corridor",
         "stitch_direction": "east_west",
         "stitch_note": "北段高校区东西缝合",
-        "official_boundary": false
+        "official_boundary": false,
+        "child_friendly_route": true,
+        "all_age_nodes": 2
       },
       "geometry": {
         "type": "LineString",

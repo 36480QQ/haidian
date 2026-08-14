@@ -480,6 +480,32 @@
       "assumptions": [
         "截光+暖色温制度，非亮度数值"
       ]
+    },
+    "child_friendly_route_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": [
+        "geometry/roads.geojson"
+      ],
+      "formula": "count of stitch corridors with child_friendly_route",
+      "confidence": "high",
+      "assumptions": [
+        "通学动线与转辙廊复合，不新增占地"
+      ]
+    },
+    "all_age_node_count": {
+      "status": "known",
+      "value": 10,
+      "unit": "count",
+      "source_files": [
+        "geometry/roads.geojson"
+      ],
+      "formula": "sum of all_age_nodes across 5 corridors",
+      "confidence": "high",
+      "assumptions": [
+        "每廊 2 处概念节点，选址待公众参与确认"
+      ]
     }
   }
 }
