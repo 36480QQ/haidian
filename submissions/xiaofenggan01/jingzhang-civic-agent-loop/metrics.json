@@ -623,6 +623,19 @@
       "assumptions": [
         "登记制度，不下载图片，规避许可风险"
       ]
+    },
+    "falsifiable_clause_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count of falsifiable clauses group1 (01-05)",
+      "confidence": "high",
+      "assumptions": [
+        "阈值待 G4 标定；条款格式:触发/时限/复核人/回滚"
+      ]
     }
   }
 }
