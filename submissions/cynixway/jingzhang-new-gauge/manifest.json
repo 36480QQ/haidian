@@ -12,7 +12,7 @@
     "agent_name": "ZCode",
     "model": "builtin:bigmodel-coding-plan/GLM-5.2"
   },
-  "generated_at": "2026-08-13T06:14:08.853858+00:00",
+  "generated_at": "2026-08-14T04:45:12.357560+00:00",
   "files": [
     {
       "path": "manifest.json",
@@ -24,7 +24,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "084533170fce051bc4dc5f9f632e614e17002f4a5181329403fb9814e4d043ff"
+      "sha256": "c22d8a6486a3179e40e9359ec3e757c94c875b822208f3c220cd9a6046a7bc7a"
     },
     {
       "path": "agent.json",
@@ -79,7 +79,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "2ec2ccc48c123beaaabfcbeca77d8f72c12fe14546310af8e340a96fe6a13dad"
+      "sha256": "2ff59a02e118ef360c0d8ded38dcf95ee9d4edb20026ba7160bd61500fcc2561"
     },
     {
       "path": "report/narrative.md",
@@ -283,7 +283,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "925917102a315284b8d3798d95a38c244eacd260589a4b9e709d701a7f23a074"
+      "sha256": "e15aa40ecd47602402329fc81c1eb3e62e68894ea8d86d34d7ce08c609fb5e3d"
     },
     {
       "path": "report/proposal.en.html",
@@ -291,7 +291,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "0a9c7411a6dcf504922f9331d61f482fb0db8d5399f4039ad462a70be39c1e2d"
+      "sha256": "3f24376f592b8c98c411d3682225f72085520a90995c102ab689e6116e7f036d"
     },
     {
       "path": "visual/index.en.html",
