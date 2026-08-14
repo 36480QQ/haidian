@@ -88,45 +88,19 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ## 统筹研究范围产业与未来城市研究
 
-统筹研究范围（43.6 km²）的核心任务是构建世界级AI创新生态体系 [source:OFFICIAL-ANNOUNCEMENT]。本方案提出"五段创新链"组织海淀的AI产业资源 [source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]：
+统筹研究范围的核心任务是构建世界级 AI 创新生态体系。方案应梳理海淀高校院所、头部企业、算力算法数据要素、孵化平台、上市企业、独角兽和科技服务资源，提出AI创新链、产业链、人才链和城市服务链的空间协同框架。命名方案和 logo 设计应服务于“百年京张文化带、都市AI生活体验带、AI融合创新带”的整体辨识度，不能只停留在口号，应说明与产业生态、公共空间和文化资源的关联。面向智能体任务书还要求回应“五大功能”和“三区两翼”协同，形成可继续深化的命名系统、视觉识别、总体空间结构图、场景开放和运营机制；本节必须用 [source:AGENT-TASKBOOK] 与 [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] 标注这些要求来自 agent 开源征集任务，而不是法定规划控制。
 
-| 创新链段 | 功能 | 空间载体 | 主体 | 当前状态 |
-| --- | --- | --- | --- | --- |
-| ①高校策源 | 基础研究、前沿探索 | 清华、北大、北航等高校实验室 | 高校院所 | 已有基础 |
-| ②开源协作 | 知识共享、社区建设 | 原点社区开源发布厅、代码墙 | 开源社区 | 概念建议 |
-| ③企业转化 | 产品化、市场化 | 众智园孵化器、大钟寺路演中心 | 企业+孵化器 | 概念建议 |
-| ④公共体验 | 场景开放、居民参与 | 小月河场景翼、公共空间节点 | 社区+运营方 | 概念建议 |
-| ⑤国际传播 | 全球对话、品牌输出 | 大钟寺国际路演、AI活动周 | 活动组委会 | 概念建议 |
+统筹研究并不新增伪精确红线；它通过 [standard:MOHURD-URBAN-DESIGN-MEASURES] 要求的城市风貌、公共空间和建筑布局统筹，回接 [data:geometry/land_use.geojson#LU-001]、[data:geometry/public_space.geojson#PUBLIC-001] 与 [depth:overall_spatial_structure]，说明产业策略最终要落到可见、可复核的空间结构。
 
-"三区两翼"布局：三区（众智园→原点社区→大钟寺）形成"研发→转化→产业"南北主轴；中关村科技服务翼（西）提供IP、资本、标准服务；小月河场景翼（东）提供场景、数据、公共测试 [depth:overall_spatial_structure]。
-
-未来城市形态研究聚焦AI如何改变六类日常活动 [source:PROCESSED-FACT-PACK]：
-
-| 活动类型 | AI介入方式 | 空间响应 | 检验边界 |
-| --- | --- | --- | --- |
-| 工作 | 智能体辅助、远程协作 | 共享办公、夜间协作空间 | 保留实体会议和纸质通道 |
-| 生活 | AI生活服务、便民终端 | AI生活服务样板街 | 人工柜台兜底 |
-| 社交 | 活动匹配、社区连接 | 原点广场、弹性活动场地 | 不推荐算法干预社交选择 |
-| 学习 | AI教育体验、开源学习 | AI教育科普基地、代码展示柱 | 不替代教师和课堂 |
-| 交通 | 慢行导航、无障碍引导 | 慢行AI导航、无障碍导引带 | 静态地图和人工问询等价 |
-| 公共服务 | 服务预约、需求预测 | AI公共服务站、数据要素会客厅 | 电话和纸本通道等价 |
-
-> 以上为概念建议，不表示已确定产业政策或合作安排。产业战略指标、AI创新指数和人才密度待正式数据校准。
+未来城市形态研究应回答人工智能如何改变工作、生活、社交、学习、交通和公共服务。方案应把AI交通系统、连续绿色空间、创新服务设施和国际化生活工作氛围落实为可定位的功能区、节点、廊道和场景，而不是泛泛描述技术愿景。agent 应把产业战略指标、AI创新指数、人才密度、空间供给类型和AI+垂直应用重点区域写入指标体系，并标明哪些是官方、哪些是设计建议、哪些仍待正式数据校准。若提出全球AI创新活动、开发者社区、开放场景或朝圣路线，应写为“概念建议/参考方案/可供专业团队深化研究”，不得写成已经确定的政府活动或实施安排。
 
 ## 总体设计范围城市更新与控规深度城市设计
 
-总体设计范围（11.4 km²，面积 11,412,825 m² [metric:site_area_sqm]）要求达到控制性详细规划的城市设计深度。本方案提出"一带三核两翼一环"的总体空间结构 [depth:land_use_layout]：
+总体设计范围要求达到控制性详细规划的城市设计深度。方案必须提出城市更新总体空间结构、低效空间识别、更新项目清单、实施政策建议、产业功能比例、空间组织模式、建筑总规模和综合承载能力评估。`geometry/land_use.geojson` 应完整覆盖设计边界且无重叠，`geometry/buildings.geojson` 应表达更新建筑基底或保留建筑基底，`geometry/roads.geojson` 应表达微循环、慢行和轨道接驳关系，`metrics.json` 应复算核心面积、比例和图层数量。
 
-| 结构要素 | 范围 | 功能 | 图层证据 |
-| --- | --- | --- | --- |
-| 一带 | 京张遗址公园活力带（~9km） | 历史记忆+慢行+公共空间+AI体验 | [data:geometry/land_use.geojson#LU-001] |
-| 三核 | 众智园(192.9ha)+原点社区(104.3ha)+大钟寺(72.1ha) | 研发→转化→产业 | [data:geometry/key_areas.geojson#PROV-KEY-001] |
-| 两翼 | 中关村科技服务翼+小月河场景翼 | 服务+测试 | [depth:overall_spatial_structure] |
-| 一环 | 蓝绿慢行复合环 | 慢行+生态+活动 | [data:geometry/green_space.geojson#GREEN-001] |
+本节按照 [standard:MOHURD-CONTROL-DETAILED-PLANNING] 把控规深度内容拆成可审查对象：[data:geometry/land_use.geojson#LU-001] 表达用地结构，[data:geometry/buildings.geojson#BLDG-001] 表达建筑基底，[data:geometry/roads.geojson#ROAD-001] 表达交通组织，[metric:building_footprint_area_sqm] 用于复核建筑基底面积，[depth:land_use_layout] 与 [depth:development_intensity_controls] 约束成果深度。
 
-用地分区14宗，覆盖率100% [metric:land_use_coverage_ratio]。建筑基底648,798 m²，129栋 [metric:building_footprint_area_sqm] [metric:building_count]。道路网络42.3km [metric:road_network_total_length_m]。
-
-控规深度内容按 [standard:MOHURD-CONTROL-DETAILED-PLANNING] 拆成可审查对象：用地结构 [data:geometry/land_use.geojson#LU-001]、建筑基底 [data:geometry/buildings.geojson#BLDG-001]、交通组织 [data:geometry/roads.geojson#ROAD-001]、开发强度 [depth:development_intensity_controls]。容积率、建筑高度、建筑密度为unknown（待正式控规条件确认），不得用推测值冒充审定指标 [depth:height_massing_character]。
+总体设计还必须支撑交通、轨道、市政和配套设施。方案应围绕轨道站点一体化、道路微循环、非机动车停放、停车供给、创新服务平台、人才生活服务、新型基础设施、分布式能源和端侧算力提出空间布局和实施路径。涉及建筑高度、开发强度、道路红线、退线和设施标准的内容，若尚无官方控制条件，应写为“待正式控规条件确认”，不得以 agent 推测值冒充审定指标。
 
 ## 重点区域详细设计
 
@@ -591,72 +565,29 @@ Logo 以"∞"（无限符号）与铁路轨道的形态融合，双轨线分别�
 
 ## 用地、建筑规模与拆改留方案
 
-用地分类依据 [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]，完整覆盖设计边界，无重叠无缝隙。本方案用地分区 14 宗 [data:geometry/land_use.geojson#LU-001]，覆盖率 100% [metric:land_use_coverage_ratio]。建筑基底面积 648,798 m²，共 129 栋 [metric:building_footprint_area_sqm] [metric:building_count]。
+用地方案应依据国土空间调查、规划、用途管制分类等公开标准表达，形成完整、闭合、无缝的用地分区。建筑方案应区分保留、改造、更新、新建或待确认对象，明确建筑基底、功能、规模、风貌、屋顶、体量和高度控制的建议层级。若缺少现状建筑、权属、控规和工程条件，方案只能提出方法和待校准清单，不能编造拆改留结论。
 
-| 用地类型 | 占比 | 主要分布 | 数据来源 |
-| --- | --- | --- | --- |
-| AI研发与产业用地 | ~30% | 众智园核心区、大钟寺站周边 | 概念分配，待控规确认 |
-| 公共服务设施用地 | ~12% | 三核中心区、沿慢行带 | 概念分配 |
-| 居住与人才公寓用地 | ~15% | 原点社区、大钟寺外围 | 概念分配 |
-| 绿地与广场用地 | ~35% | 京张遗址公园、清河滨水、小月河 | [data:geometry/green_space.geojson#GREEN-001] |
-| 交通设施用地 | ~8% | 道路、慢行、轨道接驳 | [data:geometry/roads.geojson#ROAD-001] |
+用地分类依据 [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]，建筑高度、体量、界面和风貌控制由 [depth:height_massing_character] 管理，拆改留方法由 [depth:retain_renovate_demolish] 管理。用地和建筑的主要证据是 [data:geometry/land_use.geojson#LU-001]、[data:geometry/buildings.geojson#BLDG-001] 和 [metric:building_footprint_area_sqm]。
 
-> 用地比例为概念分配（B级），绿地率 48.7% 为结构化复算（A级）[metric:green_ratio]。
-
-拆改留采用"微更新+节点激活"原则，避免大拆大建。分类为概念假设（B级），待现状建筑质量鉴定与结构安全评估 [depth:retain_renovate_demolish]：
-
-| 类别 | 比例 | 适用条件 | 前置确认 |
-| --- | --- | --- | --- |
-| 保留 | ~35% | 现状结构良好、功能适配 | 现状建筑质量鉴定 |
-| 改造升级 | ~40% | 结构可更新、功能需调整 | 结构安全评估 |
-| 新建 | ~25% | 用地条件许可、功能缺口 | 控规条件、权属确认 |
-
-建筑高度控制分三档（概念建议，待控规高度分区与文保高度控制确认）：众智园沿河 60-80m、内部 4-6 层低密花园式；原点社区 3-5 层近校过渡、6-8 层骨干路；大钟寺站周边 80-100m TOD、外围 6-8 层 [depth:height_massing_character]。容积率、建筑密度、退线为 unknown（待正式控规条件确认）[depth:development_intensity_controls]。
+建筑规模和强度指标必须与 `metrics.json` 和图层一致。若总建筑规模、容积率、建筑高度、建筑密度、绿地率、退线和建筑控制线缺少官方条件，应在指标体系中列为 unknown 或 pending_control，不得用固定数值制造精确感。A3 文册应给出更新项目清单和指标复核表，A0 展板应把关键空间结构和重点片区表达清楚，HTML 页面应提供指标和图层联动查看。
 
 ## 交通、轨道、市政与公共服务设施
 
-本方案交通系统以慢行优先为原则，构建"一条主轴+三条横向联系+节点接驳"的路网结构 [data:geometry/roads.geojson#ROAD-001]。道路网络总长 42.3km [metric:road_network_total_length_m]。
+交通方案应回应公告对轨道站点一体化、道路微循环、慢行断点、对外交通、停车、非机动车停放和绿色交通系统的要求。重点应覆盖北五环、京张遗址公园跨环路节点、五道口、清华东路西口、大钟寺站及重点企业周边交通联系。道路和慢行图层应保持在提交边界内，并与公共空间、绿地、产业节点和重点片区相互校核；若提交边界为 provisional，交通结论也只能作为临时设计讨论。
 
-| 交通层 | 功能 | 空间表达 | 状态 |
-| --- | --- | --- | --- |
-| 慢行主轴 | 京张遗址公园南北贯通，9km连续步道+骑行道 | [data:geometry/roads.geojson#ROAD-001] | 概念建议，待道路红线确认 |
-| 横向联系 | 3条校区-园区-社区慢行缝合通道 | [data:geometry/public_space.geojson#PUBLIC-001] | 概念建议，待断点调查 |
-| 轨道接驳 | 大钟寺站TOD一体化、原点社区接驳巴士、众智园共享单车点 | [data:geometry/constraints.geojson#CONSTRAINTS] | 概念建议，待轨道工程确认 |
-| 微循环 | 三处重点区内部共享街道，慢行覆盖率≥90% | [data:geometry/roads.geojson#ROAD-001] | 概念目标 |
-
-慢行断点识别：京张遗址公园跨环路节点（北五环）、五道口交叉口、大钟寺路口为三处关键断点。概念方案提出先期缝合2-3处（对应JZ-01），以临时设施验证通行需求后再正式工程 [depth:traffic_rail_slow_parking]。
-
-市政与公共服务设施融合布局 [depth:municipal_new_infrastructure]：
-
-| 设施类型 | 布局原则 | 服务半径 | 运营模式 | 依赖条件 |
-| --- | --- | --- | --- | --- |
-| 端侧算力节点 | 公共空间嵌入，5-10个节点 | 500m | 市政+运营商合作 | 能源、网络、安全 |
-| AI公共服务站 | 三核各1处，沿慢行带布点 | 800m | 社区运营 | 场地协议 |
-| 分布式能源 | 结合绿地和建筑屋顶 | 片区级 | 市政+企业 | 能源规划 |
-| 传统市政 | 道路、管线、排水、防洪 | 标准服务 | 市政部门 | 管线物探、防洪评估 |
-
-> 管线、消防、排水、防洪等工程资料缺失时，列为正式深化前置条件，不编造市政结论。
-
-## 蓝绿空间、公共空间与城市风貌
-
-蓝绿空间以京张遗址公园活力带为骨架，形成"一轴三廊多节点"的绿地系统 [data:geometry/green_space.geojson#GREEN-001]。绿地面积 5,561,347 m²，绿地率 48.7% [metric:green_space_area_sqm] [metric:green_ratio]。公共空间面积 279,961 m²，占比 2.5% [metric:public_space_area_sqm] [metric:public_space_ratio]。
-
-| 蓝绿层 | 构成 | 功能 | 数据来源 |
-| --- | --- | --- | --- |
-| 一轴 | 京张遗址公园活力带（9km南北贯通） | 慢行+生态+文化+AI体验 | [data:geometry/green_space.geojson#GREEN-001] |
-| 三廊 | 清河滨水廊、小月河生态廊、校区绿廊 | 雨洪+生态+休闲+产业展示 | [data:geometry/green_space.geojson#GREEN-001] |
-| 多节点 | 原点广场、清河创新走廊、大钟寺四象限绿地 | 公共活动+展示+交往 | [data:geometry/public_space.geojson#PUBLIC-001] |
-
-慢行与蓝绿系统重叠率目标≥60%，实现"走在绿中、行在景中" [depth:blue_green_public_space]。
+交通和市政专业深度分别由 [depth:traffic_rail_slow_parking] 与 [depth:municipal_new_infrastructure] 约束；图层证据引用 [data:geometry/roads.geojson#ROAD-001]、[data:geometry/public_space.geojson#PUBLIC-001] 和 [data:geometry/constraints.geojson#CONSTRAINTS]。当道路红线、管线、消防和市政条件缺失时，应通过 assumptions 说明待补，而不是把策略写成审定条件。
 
 ![交通慢行与蓝绿公共空间复合系统图](assets/figures/mobility-bluegreen.png)
 
-城市风貌融合三层文化 [standard:MOHURD-URBAN-DESIGN-MEASURES]：
-- **底层（铁路遗产）**：清华园车站旧址、铁轨与枕木记忆、铁路信号亭造型导视
-- **中层（中关村精神）**：从电子一条街到AI策源地的创新者故事、代码展示柱、贡献墙
-- **顶层（AI新文化）**：开源共享、人机协作、数字艺术展示墙
+市政和公共服务设施应覆盖AI产业服务设施、创新服务平台、人才生活服务设施、新型基础设施、分布式能源、端侧算力和传统市政设施融合。方案应说明设施标准、空间布局、服务半径、运营模式和分期实施逻辑。缺少管线、能源、排水、防洪、消防等工程资料时，应列为正式深化前置条件。
 
-风貌控制分三档：文保建筑及周边风貌协调区（严格保护，待文保范围确认）、一般建成区（风貌引导，待控规确认）、新建区（设计建议，弹性控制）。所有品牌、字体、图像、肖像和企业标识须有清权来源。
+## 蓝绿空间、公共空间与城市风貌
+
+蓝绿空间方案应以京张遗址公园活力带为骨架，统筹清河、小月河、周边高校、企业、社区出行需求，提出南北贯通、东西连通的步道、骑行道和绿色空间体系。方案应识别慢行断点、上跨环路节点、公园南端和北端景观节点，提出停车、体育、创新交往、科技测试、应用展示和公共服务复合利用策略。
+
+蓝绿公共空间由设计深度项和绿地、公共空间图层共同校核 [depth:blue_green_public_space] [data:geometry/green_space.geojson#GREEN-001] [data:geometry/public_space.geojson#PUBLIC-001]。绿地与公共空间比例在正文解释设计意义，完整复算保存在 `metrics.json`；城市风貌、公共空间和建筑控制的统筹则回到专业标准矩阵 [standard:MOHURD-URBAN-DESIGN-MEASURES]。
+
+城市风貌方案应融合京张铁路历史文化、中关村创新文化和AI创新文化，利用清华园火车站、北影等文化资源，提出城市基调、建筑风貌、屋顶形态、体量、界面和公共艺术引导。agent 还应提出导视标识、文化符号、国际传播叙事、AI朝圣地标、贡献墙或荣誉展示体系，但所有品牌、字体、图像、肖像和企业标识都必须有清权来源。风貌控制应分清官方管控、设计建议和待确认条件，严禁在没有文保或控规依据时给出伪精确控制线。
 
 ## 更新项目清单、实施政策与分期计划
 
