@@ -1,0 +1,103 @@
+{
+  "schema_version": "0.1.0",
+  "concept": "市民服务执照 (Civic Service License)",
+  "scenario_count": 12,
+  "scenarios": [
+    {
+      "id": "SCN-01",
+      "short_id": "CS-01",
+      "title_zh": "政务一站式导航",
+      "title_en": "政务一站式导航",
+      "service_class": "delivery",
+      "raci": {
+        "A": "ROLE-ACCOUNTABLE-LEAD",
+        "R": "ROLE-OPERATIONS"
+      },
+      "non_ai_equivalent_zh": "无AI也能完成的政务办理与健康法律咨询",
+      "stop_condition_zh": "服务中断或投诉超阈值",
+      "status": "not_authorized_not_run",
+      "bequest_dividend_zh": "政务公示牌、纸面申请表、社区服务窗口",
+      "is_test_validation": false
+    },
+    {
+      "id": "SCN-02",
+      "short_id": "CS-02",
+      "title_zh": "健康服务导航",
+      "title_en": "健康服务导航",
+      "service_class": "delivery",
+      "raci": {
+        "A": "ROLE-ACCOUNTABLE-LEAD",
+        "R": "ROLE-OPERATIONS"
+      },
+      "non_ai_equivalent_zh": "无AI也能完成的政务办理与健康法律咨询",
+      "stop_condition_zh": "服务中断或投诉超阈值",
+      "status": "not_authorized_not_run",
+      "bequest_dividend_zh": "政务公示牌、纸面申请表、社区服务窗口",
+      "is_test_validation": false
+    },
+    {
+      "id": "SCN-03",
+      "short_id": "CS-04",
+      "title_zh": "法律援助咨询",
+      "title_en": "法律援助咨询",
+      "service_class": "delivery",
+      "raci": {
+        "A": "ROLE-ACCOUNTABLE-LEAD",
+        "R": "ROLE-OPERATIONS"
+      },
+      "non_ai_equivalent_zh": "无AI也能完成的政务办理与健康法律咨询",
+      "stop_condition_zh": "服务中断或投诉超阈值",
+      "status": "not_authorized_not_run",
+      "bequest_dividend_zh": "政务公示牌、纸面申请表、社区服务窗口",
+      "is_test_validation": false
+    },
+    {
+      "id": "SCN-04",
+      "short_id": "CS-05",
+      "title_zh": "夜间安全巡逻",
+      "title_en": "夜间安全巡逻",
+      "service_class": "delivery",
+      "raci": {
+        "A": "ROLE-ACCOUNTABLE-LEAD",
+        "R": "ROLE-OPERATIONS"
+      },
+      "non_ai_equivalent_zh": "无AI也能完成的政务办理与健康法律咨询",
+      "stop_condition_zh": "服务中断或投诉超阈值",
+      "status": "not_authorized_not_run",
+      "bequest_dividend_zh": "政务公示牌、纸面申请表、社区服务窗口",
+      "is_test_validation": false
+    },
+    {
+      "id": "SCN-05",
+      "short_id": "★CS-09",
+      "title_zh": "服务中断恢复测试",
+      "title_en": "服务中断恢复测试",
+      "service_class": "delivery",
+      "raci": {
+        "A": "ROLE-ACCOUNTABLE-LEAD",
+        "R": "ROLE-OPERATIONS"
+      },
+      "non_ai_equivalent_zh": "无AI也能完成的政务办理与健康法律咨询",
+      "stop_condition_zh": "服务中断或投诉超阈值",
+      "status": "not_authorized_not_run",
+      "bequest_dividend_zh": "政务公示牌、纸面申请表、社区服务窗口",
+      "is_test_validation": false
+    },
+    {
+      "id": "SCN-06",
+      "short_id": "★CS-12",
+      "title_zh": "远程接管演练",
+      "title_en": "远程接管演练",
+      "service_class": "delivery",
+      "raci": {
+        "A": "ROLE-ACCOUNTABLE-LEAD",
+        "R": "ROLE-OPERATIONS"
+      },
+      "non_ai_equivalent_zh": "无AI也能完成的政务办理与健康法律咨询",
+      "stop_condition_zh": "服务中断或投诉超阈值",
+      "status": "not_authorized_not_run",
+      "bequest_dividend_zh": "政务公示牌、纸面申请表、社区服务窗口",
+      "is_test_validation": false
+    }
+  ]
+}
