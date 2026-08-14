@@ -456,7 +456,7 @@ The naming system is an extensible numbering grammar rather than a slogan:
 
 ![FIG.28 Third order: the most numerous tier, and more than one reader](assets/figures/third.en.png)
 
-**This is the most numerous tier and the only one never drawn.** The origin has FIG.25 and the second order FIG.26, while the tier a resident actually stands at is the third. It also inherits what FIG.27 left open: that sheet's 3.0 m viewing distance is **one person's** position, and a point in a neighbourhood is not read by one person. From a 600 mm plate and a 30° off-axis limit the legible cone is **3.46 m** wide and **5 people** can read at once — this package's answer to its own unanswered question. A class of 30 then takes **6 rounds, about 4 minutes**: **what exceeds the cone is not solved by widening the ground but by taking turns, and turns cost time.** That number is written down because unwritten it gets discovered on site in the form of "this point is awkward". A queue runs parallel to the kerb and never pushes into the 1,500 mm clear width; no railing and no dedicated waiting area — a third-order point sits in a neighbourhood, and fencing it stops it being something you can read in passing. The off-axis angle, the shoulder width and the per-reading time are chosen by this proposal and registered as `A-READ-001` in the same commit.
+**This is the most numerous tier, and when this sheet was made it had not been drawn.** The origin has FIG.25 and the second order FIG.26, while the tier a resident actually stands at is the third. It also inherits what FIG.27 left open: that sheet's 3.0 m viewing distance is **one person's** position, and a point in a neighbourhood is not read by one person. From a 600 mm plate and a 30° off-axis limit the legible cone is **3.46 m** wide and **5 people** can read at once — this package's answer to its own unanswered question. A class of 30 then takes **6 rounds, about 4 minutes**: **what exceeds the cone is not solved by widening the ground but by taking turns, and turns cost time.** That number is written down because unwritten it gets discovered on site in the form of "this point is awkward". A queue runs parallel to the kerb and never pushes into the 1,500 mm clear width; no railing and no dedicated waiting area — a third-order point sits in a neighbourhood, and fencing it stops it being something you can read in passing. The off-axis angle, the shoulder width and the per-reading time are chosen by this proposal and registered as `A-READ-001` in the same commit.
 | Route | Connecting route | RT-N, RT-S | The one-way path a scenario is validated along: departs BM-0, terminates at a first-order point |
 | Reading | Closure error / tolerance | f / F | The measure of trust, and its threshold |
 
@@ -507,7 +507,7 @@ The leveling network's answer is elevation transfer: each station's reading depe
 
 ![FIG.26 BM-2x, the second order: a scenario has to be stoppable, and that takes ground](assets/figures/wing.en.png)
 
-**The two wings carry the second order, and the second order had never been drawn.** It appears in the naming table, the cost table and the resource table — the one tier of this network that never reached a sheet. What differs is not the stone: a BM-2x is a KIT-01 like every other, because a more important place does not get a special benchmark. What differs is that **what runs here is a scenario against real users**, and such a scenario has to be stoppable. FIG.26 turns "stoppable" into a dimension: from the ≤ 6 km/h site speed FIG.24 already fixes, 1.0 s of reaction covers 1.67 m and decelerating at 1.5 m/s² covers 0.93 m, giving a **halt distance of 2.59 m** — and no fixed object or waiting area may stand in that ground ahead of the observed frontage. **The reaction time and the deceleration are chosen by this proposal and are not standards.** Both are registered as `A-DEVICE-002` in the same commit as the sheet, with derivation, direction of error, closure condition and owner: the error is asymmetric — too small and the cost lands on a person — so the distance is taken at a bound rather than at a typical value.
+**The two wings carry the second order, and when this sheet was made it had not been drawn.** It appears in the naming table, the cost table and the resource table, but had not reached a sheet. What differs is not the stone: a BM-2x is a KIT-01 like every other, because a more important place does not get a special benchmark. What differs is that **what runs here is a scenario against real users**, and such a scenario has to be stoppable. FIG.26 turns "stoppable" into a dimension: from the ≤ 6 km/h site speed FIG.24 already fixes, 1.0 s of reaction covers 1.67 m and decelerating at 1.5 m/s² covers 0.93 m, giving a **halt distance of 2.59 m** — and no fixed object or waiting area may stand in that ground ahead of the observed frontage. **The reaction time and the deceleration are chosen by this proposal and are not standards.** Both are registered as `A-DEVICE-002` in the same commit as the sheet, with derivation, direction of error, closure condition and owner: the error is asymmetric — too small and the cost lands on a person — so the distance is taken at a bound rather than at a typical value.
 
 The five functions are consequently not five parallel slogans but five positions on one circuit: set the datum (Zhongzhiyuan) → depart (Origin Community) → take readings (Dazhongsi and the two wings) → return to the origin and compute (Origin Community) → re-measure if over tolerance. The spatial expression is [data:geometry/public_space.geojson#PUBLIC-001], and the overall structure corresponds to [depth:overall_spatial_structure].
 
@@ -1493,12 +1493,12 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-88 entries. By finder:
+89 entries. By finder:
 
 | Found by | Count | What it says |
 |---|---|---|
 | Independent audit | 25 | The audit was run against the shipped package, not a draft |
-| The author | 50 | Found while working |
+| The author | 51 | Found while working |
 | This package's own gate | 9 | Caught at build time — which is what a gate is for |
 | **Reviewers outside this proposal** | **4** | [@anselasimov-web](https://github.com/anselasimov-web) on PR #1002; [@147228](https://github.com/147228) on PR #1065; [@Sonike](https://github.com/Sonike) on Issue #950; [@147228](https://github.com/147228) on Issue #950 / PR #1190 |
 
@@ -1517,7 +1517,7 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 | **The check measured the convenient thing** | **19** |
 | **Two copies of one thing drifted** | **12** |
 | **A deliverable was not looked at before shipping** | **11** |
-| **A claim outlived the package** | **6** |
+| **A claim outlived the package** | **7** |
 | Geometry did not mean what it said | 4 |
 | A number outlived the sentence holding it | 4 |
 | A reference did not resolve | 4 |

@@ -16,6 +16,18 @@
       "why_en": "This is the condition the gate was built for — fourteen of twenty-one sheets were once cited nowhere but the index. If it cannot catch the same condition introduced deliberately, the fourteen it once reported were not evidence either."
     },
     {
+      "id": "M17",
+      "gate": "figure_citation_qa.py",
+      "target": "proposal.md",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "抽掉一句「从没有被画过」里的时点词，句子照样通顺，对它描述的那一刻照样为真，而对画全了四级的成品不再为真。",
+      "what_en": "Strip the moment-marker from one 'never been drawn' claim. The sentence stays grammatical and stays true of the moment it describes, and stops being true of a finished package that draws all four tiers.",
+      "why_zh": "E89 里三句这样的话互相矛盾地共存过，而当时任何闸门都看不见——「唯一」不是算得出的量。若人为造出同一句而闸门不响，那次通读的收获就只停在被改好的那四句上，不构成往后的保障。",
+      "why_en": "Three such sentences once coexisted here contradicting one another, and no gate could see them because 「only」 is not a computable quantity. If the same sentence reintroduced deliberately draws no objection, that reading fixed four sentences and guarantees nothing about the next one."
+    },
+    {
       "id": "M2",
       "gate": "assumption_refs_qa.py",
       "target": "metrics.json",
@@ -198,7 +210,7 @@
       "why_en": "This package checks its own drawings with the legible-height ratio and reports a 4.73 mm minimum, all passing. **FIG.27 has just pointed that same ratio at the plate** — which makes whether the ratio itself has ever been shown to fail a question that has to be answered."
     }
   ],
-  "caught": 16,
+  "caught": 17,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
