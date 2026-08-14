@@ -558,6 +558,32 @@
       "assumptions": [
         "三市与四时段基线对应；夜市须满足暗夜友好照明制度"
       ]
+    },
+    "developer_walkway_length_km": {
+      "status": "known",
+      "value": 9,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "遗址公园全线长度(公开数据,km)",
+      "confidence": "medium",
+      "assumptions": [
+        "公开报道口径，非测绘值；散步道复合于绿廊不新增占地"
+      ]
+    },
+    "pilgrimage_route_color_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count of pilgrimage route colors (治理/文化/生态)",
+      "confidence": "high",
+      "assumptions": [
+        "三色动线与品牌色系一致"
+      ]
     }
   }
 }

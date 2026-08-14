@@ -6,7 +6,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以铁路转辙器为母题（转辙即路由决策即 agent 编排），把四环协作（资料/推演/反馈/复核）落成机器可读治理制品——Civic Agent Receipt 收据 + G0-G6 门闸状态机 + 验线四步。环会自转：每次干预可审计、可回滚、可证伪。所有空间建议为开放共创建议，不替代正式规划。"
 tracks: ["civic-agent-governance", "ai-public-services", "jingzhang-heritage-narrative"]
 scenarios: ["ai-cultural-guide", "ai-health-service-navigation", "ai-traffic-walkability"]
-iteration: "v16.0"
+iteration: "v17.0"
 ---
 
 # 京张·转辙 · 城市智能体验证带
@@ -109,7 +109,7 @@ iteration: "v16.0"
 
 **蓝网与海绵制度**：以小月河、清河两条蓝廊为东西基底（蓝网 2 条 `[metric:blueway_corridor_count]`），与南北遗址公园绿廊十字相交；全部公园绿地地块挂海绵制度（渗、蓄、净、用、排优先 + 雨水回用要求）`[metric:sponge_policy_parcel_count]`——制度先行，渗透率数值待 G4 实测回填，不捏造。蓝绿空间以京张铁路遗址公园活力带为骨架 `[depth:blue_green_public_space]`。本方案布局公园绿地占比 31.19% `[metric:green_ratio]` `[data:geometry/green_space.geojson]`，广场与公共空间占比 11.34% `[metric:public_space_ratio]` `[data:geometry/public_space.geojson]`，以支撑人才生活、创新交往与公共活动。绿地比例让创新工作者步行五分钟可达高质量公共空间，公共空间比例保证展示、活动与测试场所承接 AI 场景。
 
-**声光与夜间设计制度**：全域地块挂声环境分区（科研/教育/住宅=低噪区、广场=活动允许区、其余=缓冲区，三类 `[metric:acoustic_zone_type_count]`）与暗夜友好照明制度（截光灯具、暖色温，覆盖全部 40 地块 `[metric:dark_friendly_lighting_parcel_count]`）；服务劳动者的夜间四要素（有人/有光/有水/有退路）升格为全域夜间设计通则——声光数值由 G4 实测回填，不捏造。城市风貌以「转辙蓝 + 京张红 + 蓝绿 + 宣纸底」为基调，建筑体量围绕遗址公园梯度控制，靠近公园与公共空间偏低层、向外适度提高，具体高度受限于未公开控规。导视、标识与符号系统延续**转辙器母题**与四环 Logo，区分整体 Logo 系统与文化标识系统。公共空间组件库包括可移动座椅、遮阴、夜间照明、活动接口、可移动测试设备、数据反馈屏，以及面向服务劳动者的低速驿站与充电接口。所有空间建议为概念建议，违反文保、绿地、蓝线或交通安全的方案不予采纳，桥隧、地下空间与工程可行性结论不在范围。
+**声光与夜间设计制度**：全域地块挂声环境分区（科研/教育/住宅=低噪区、广场=活动允许区、其余=缓冲区，三类 `[metric:acoustic_zone_type_count]`）与暗夜友好照明制度（截光灯具、暖色温，覆盖全部 40 地块 `[metric:dark_friendly_lighting_parcel_count]`）；服务劳动者的夜间四要素（有人/有光/有水/有退路）升格为全域夜间设计通则——声光数值由 G4 实测回填，不捏造。城市风貌以「转辙蓝 + 京张红 + 蓝绿 + 宣纸底」为基调，建筑体量围绕遗址公园梯度控制，靠近公园与公共空间偏低层、向外适度提高，具体高度受限于未公开控规。导视、标识与符号系统延续**转辙器母题**与四环 Logo，区分整体 Logo 系统与文化标识系统。沿遗址公园 9 公里绿廊设**开发者散步道**（真实数据 9km `[source:SITE-PARK-FACTS]` `[metric:developer_walkway_length_km]`），串起三处朝圣地标与五条转辙廊；散步道配**三色朝圣动线**（转辙蓝=治理动线·看门闸与 Receipt、京张红=文化动线·看京张谱系、蓝绿=生态动线·看蓝网海绵，三色 `[metric:pilgrimage_route_color_count]`）。公共空间组件库包括可移动座椅、遮阴、夜间照明、活动接口、可移动测试设备、数据反馈屏，以及面向服务劳动者的低速驿站与充电接口。所有空间建议为概念建议，违反文保、绿地、蓝线或交通安全的方案不予采纳，桥隧、地下空间与工程可行性结论不在范围。
 
 ## 更新项目清单、实施政策与分期计划
 
