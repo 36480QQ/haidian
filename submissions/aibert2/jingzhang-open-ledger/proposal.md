@@ -7,8 +7,8 @@ summary: 以“每一项AI部署都有公共凭证”为核心的概念性城市
 proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_file: proposal.en.md
-version: 1.3.0
-iteration: v1.3
+version: 1.4.0
+iteration: v1.4
 ---
 
 # 京张开源账本：可回查的 AI 公共回报带
@@ -21,9 +21,9 @@ iteration: v1.3
 
 **一句话：** 京张开源账本把百年京张的慢行—气候—服务主线，组织为众智园的验证、AI原点的转译和大钟寺的回报三种公共关系；每项拟议AI服务均需携带“源、测、发、审、返”五张凭据。
 
-**v1.3 新增的可核验证据：** 一套零依赖离线桌面复演规则接受1个合成、无个人数据的记录，并拒绝6个来源、人工替代、独立复核、有效期或返回机制缺失的记录；五个区域接口只列明待确认的交换内容；90天零阶段只交付资料、协议、走读、复原与独立复核条件。它们均不构成真实服务、合作、预算、建设或批准。
+**v1.4 新增的可核验证据：** 一套零依赖离线桌面复演规则接受1个合成、无个人数据的记录，并拒绝6个来源、人工替代、独立复核、有效期或返回机制缺失的记录；五个区域接口只列明待确认的交换内容；90天零阶段只交付资料、协议、走读、复原与独立复核条件。新增的三联概念场景图则把三处公地的日常公共关系与其结构化的非主张、停用门和后续专业前提并列呈现。它们均不构成真实服务、合作、预算、建设或批准。
 
-**快速核验入口：** `assets/figures/ledger-proof.png`、`visual/assets/open-ledger-tabletop-result.json`、`visual/assets/regional-exchange-contracts.json`、`visual/assets/zero-phase-readiness.json` 与 `visual/assets/review-evidence-map.json`。
+**快速核验入口：** `assets/figures/ledger-proof.png`、`visual/assets/open-ledger-tabletop-result.json`、`visual/assets/regional-exchange-contracts.json`、`visual/assets/zero-phase-readiness.json`、`visual/assets/civic-scene-evidence.json` 与 `visual/assets/review-evidence-map.json`。
 
 ## 设计依据与资料清单
 
@@ -68,6 +68,12 @@ iteration: v1.3
 三座AI朝圣地标被设计为接口而非孤立雕塑：可验证之窗显示范围、责任和复核时点；转译钟廊收集问题并给出人工回应入口；回报驿站记录服务、维护和反馈。所有位置、基底和形式均为概念建议，未声明现状、保护等级、权属或建设批准。 [depth:three_key_area_detailed_design] · [metric:ai_pilgrimage_landmark_count] · [data:geometry/public_space.geojson]
 
 ![三处重点区域的验证、翻译与回报公地示意。](assets/figures/key-areas.png)
+
+### 三处公地的概念走读意象
+
+v1.4 以一张原创三联概念图把三处公地分别呈现为可到达并看懂的验证边缘、可停留并共编的转译廊下、以及可看见并返还的街道前台。它只帮助读者感知这些公共关系，不描绘海淀现状，也不提供地点、尺度、工程、文保、运营或批准结论；每一处仍须与重点区图、场景卡、五张凭据和后续专业/使用者复核共同阅读。 [source:SRC-AI-GENERATED-THREE-COMMONS-20260814] · [data:visual/assets/civic-scene-evidence.json] · [depth:three_key_area_detailed_design]
+
+![三处公地概念走读意象：验证、转译与回报三种日常公共关系；为原创生成视觉，不代表真实或已批准场景。](assets/figures/three-commons-concept-v14.png)
 
 ## AI 创新生态、人才画像与 AI+ 场景
 
@@ -137,7 +143,7 @@ iteration: v1.3
 
 ## 参考资料
 
-本方案的来源与使用边界、国际案例的操作/本地转译/不照搬条件，以及 v1.0→v1.2 的评审诊断均见 `sources.json` 与 `report/narrative.md`。
+本方案的来源与使用边界、国际案例的操作/本地转译/不照搬条件，以及 v1.0→v1.4 的评审诊断均见 `sources.json` 与 `report/narrative.md`。
 
 [source:SRC-OFFICIAL-ANNOUNCEMENT] 百年京张AI创新带公开征集公告与资料包范围、任务和交付说明。
 

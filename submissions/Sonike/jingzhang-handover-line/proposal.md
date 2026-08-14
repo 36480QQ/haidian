@@ -20,19 +20,23 @@ iteration: "v1.15"
 
 ## 一页执行摘要 / Executive Brief
 
+**一句话检验标准：这条带上的任何一项AI服务，不用AI也能办成同一件事——办不成，就不上线。**
+
+这不是补充条款，是整个方案的判据。它把"智能城市"从设备数量、自动化率这类无法被普通人核验的指标，换成一个每个人都能自己验的问题：**我不用手机、不会中文、看不见屏幕、或者就是不想用AI，我还能不能办成这件事？**答案是否，服务就不该开；答案是是，智能层才有资格叠加上去。铁路交接班之所以是这条带上最可靠的制度，正因为它从不假设下一班一定接得住——它假设接不住，所以必须有人当面签收。
+
 | 评审问题 | 京张交接线的回答 | 可核验成果 |
 | --- | --- | --- |
+| 公共底线 | 任何人可在不使用AI的前提下获得等价基础服务，并能触发停用与申诉；十二个场景各自写明人工兜底渠道与退出条件 | 组件库十项、接管亭物理停用入口、公开值班簿、十二条双联交接账实例 |
 | 核心命题 | 把铁路交接班转译为城市AI协议：能力可以流动，责任必须有人签收 | 双联交接账 0.3 与十二张可逆场景卡 |
 | 空间响应 | 一条交接线、三座交接场、两翼支撑、八条缝合支线、二十个更新类型单元 | 九类 GeoJSON、十一张证据图、A3 图册与 A0 展板 |
 | 合规锚点 | “可停用、可投诉、无AI等价服务”中，法定出处与本方案自设标准逐行分列；自设标准不写成普遍法定义务 | 合规基线表四列对照；生成式AI服务管理暂行办法、无障碍环境建设法、老年人智能技术方案（来源登记见下段） |
 | 实施起点 | 先做协议、导视与低风险人工主导试点；三期是三道合并门槛，不是时间表 | 六个行动包、三道条件闸门、[metric:phase_count] |
-| 公共价值 | 任何人可在不使用AI的前提下获得等价基础服务，并能触发停用与申诉 | 组件库十项、接管亭物理停用入口、公开值班簿 |
 | 证据状态 | 几何与指标在 EPSG:4548 可复算；区级公开统计只校准问题，不进入指标 | 场地面积指标与海淀区统计公报（来源登记见下段） |
 | 决策边界 | 全部空间、品牌、活动、时限与角色安排均为概念建议，不是法定规划或政府承诺 | 风险章节、退出条件、assumptions.json |
 
 上表「合规锚点」一行对应 [source:GENERATIVE-AI-INTERIM-MEASURES]、[source:BARRIER-FREE-ENVIRONMENT-LAW] 与 [source:ELDERLY-SMART-TECH-PLAN]；「证据状态」一行对应 [metric:site_area_sqm] 与 [source:HAIDIAN-2025-STATISTICAL-BULLETIN]。此处引用键写在表下而非单元格内，是因为该表每行承载多条锚点，逐格标注反而割裂阅读；本包其余表格（如用地面积、专业深度）则每行只挂一个引用键，直接写在单元格里。两种写法在离线 HTML 中都渲染为证据条，不会出现未渲染的原始标记。
 
-English brief — Jing-Zhang Handover Line translates the railway shift-handover — the most ordinary and most rigorous institution the line ever produced — into an urban protocol for AI. Capability may move from research to validation, from validation to open source, and from open source to daily public service; accountability may not move without a named person signing for it. One continuous handover line links three Handover Grounds, two supporting wings and twelve reversible scenarios, each carrying human takeover, a non-AI equivalent service and an exit condition. Every geometry is a recomputable conceptual proposal; every statutory control awaits confirmation by qualified professionals and government bodies.
+English brief — **One test decides everything here: for any AI service on this belt, the same task must also be completable without AI. If it is not, the service does not open.** Jing-Zhang Handover Line translates the railway shift-handover — the most ordinary and most rigorous institution the line ever produced — into an urban protocol for AI. Capability may move from research to validation, from validation to open source, and from open source to daily public service; accountability may not move without a named person signing for it. One continuous handover line links three Handover Grounds, two supporting wings and twelve reversible scenarios, each carrying human takeover, a non-AI equivalent service and an exit condition. Every geometry is a recomputable conceptual proposal; every statutory control awaits confirmation by qualified professionals and government bodies.
 
 ## 设计依据与资料清单
 
@@ -173,6 +177,12 @@ English brief — Jing-Zhang Handover Line translates the railway shift-handover
 ### 双联交接账：交出与接入必须是两次独立判断
 
 为了让“交接”不停在字段数量上，v1.6新增原创的《双联交接账 0.3》：交出班必须登记适用范围、版本、输入、已知故障和无AI服务底线；接入班必须独立复现并明确选择“接收”或“拒收”，任何未决项都不能在换班中消失。机器可读契约见 [data:visual/assets/governance/shift-ledger.schema.json]，最小样例选择低风险的SCN-05无障碍路径副驾，只用合成障碍卡，不含个人数据、不连接真实服务，`deployment_mode=sandbox_only`、人工角色待授权、性能结果保持 `null` [data:visual/assets/governance/example-scn05-shift-ledger.json]。该样例已通过JSON Schema结构校验 [metric:machine_readable_shift_protocol_count] [metric:schema_valid_synthetic_shift_count] [metric:shift_protocol_validation_error_count]，校验记录见 [data:visual/assets/governance/validation-report.json]；“0个结构错误”只证明这份合成样例可被机器解析，不证明路径正确、服务可用、法律合规或可以投入现场。
+
+**本版把这份协议实例化到全部十二个场景，并且让它接受缺陷注入检验。** 此前只有 SCN-05 一条实例，协议因此无法被逐场景核验——一套只跑通一个例子的规则，看不出它在别的场景是否也成立。现在十二个场景各有一条交接账 [data:visual/assets/governance/shift-ledger-suite.json]，全部字段由 `geometry/public_space.geojson` 已登记的场景属性推出（`human_fallback`、`exit_condition`、`accountable_role`、`acceptance_gate`、`rollback_state`），**未新增任何设计主张**；唯一的设计决策是双联角色对的拆分——协议要求交出与接入由不同角色判断，而部分场景的 `accountable_role` 只写了一方，接入方按该场景 `exit_condition` 指认（例如 SCN-09 社区照护排班桌的首要停用条件是「当事人拒绝算法分配」，接入方因此是照护当事人代表而非服务方）。十二条实例全部通过 JSON Schema 结构校验，错误 0 处 [metric:schema_valid_synthetic_shift_count]。
+
+**协议的七条规则逐条做了缺陷注入。** 规则本身不是新写的，是把已有约束显式化：交出与接入必须由不同角色判断（R1）；人工等价服务必须先于智能层存在，且至少一条渠道在智能层关闭时仍可用（R2）；存在未闭合的阻塞性未决项时智能层必须保持关闭（R3）；回滚演练未被观察到通过前不得进入限定试用（R4）；合成记录不得触碰真实服务、不得含个人数据（R5）；拒收必须给出可复核的理由（R6）；角色未指派时双联状态不得标记为已共同签认（R7）。检验方式是对每条交接账先跑一次基线、再逐条注入对应缺陷，共 **96 条**（12 基线 + 12 场景 × 7 规则）[metric:shift_protocol_rule_check_count]：基线全部不触发任何规则，84 条注入**全部被拦截**，漏检 0 条 [metric:shift_protocol_rule_check_miss_count]，逐条结果见 [data:visual/assets/governance/rule-check-report.json]。
+
+**这只证明规则闭合，不证明现场绩效、安全、合规或获批。** 十二条实例的 `receiver_disposition` 一律是 `refused`、`smart_layer_state_after_decision` 一律是 `off`——因为三条验收门（场地权利与责任主体、人工接管与无AI等价服务演练、数据最小化与公共利益评估）在任何场景都尚未满足。**协议在纸面上正确地拒绝了它自己的全部十二个场景**，这正是它应有的行为：先证明拒收路径可靠，再谈放行。
 
 ![双联交接账：交出班与接入班分别判断，未决项不得在换班中消失](assets/figures/shift-ledger.png)
 
@@ -426,7 +436,7 @@ English brief — Jing-Zhang Handover Line translates the railway shift-handover
 | 更新类型单元 | 20个；不等于现状建筑清单 | [metric:renewal_cell_count] |
 | 用地要素 | 11个；拓扑联合覆盖场地 | [metric:land_use_zone_count] |
 | 版本接口目录 | 32个；是待授权的概念对象，不是32个已验证系统 | [metric:versioned_asset_count] |
-| 机器可读双联交接账 | 1套JSON Schema + 1份SCN-05合成样例 | [metric:machine_readable_shift_protocol_count] [metric:schema_valid_synthetic_shift_count] |
+| 机器可读双联交接账 | 1套JSON Schema + 12条场景实例 + 96条规则检查（84条缺陷注入全部拦截） | [metric:machine_readable_shift_protocol_count] [metric:schema_valid_synthetic_shift_count] |
 | 结构校验错误 | 0个；仅代表样例可解析，不代表真实性能通过 | [metric:shift_protocol_validation_error_count] |
 | 概念分期 | 3期；由条件触发而非自动实施 | [metric:phase_count] |
 
@@ -509,21 +519,17 @@ compliance_matrix.json逐条覆盖公告1.3、1.4、1.5和agent.1—agent.6；st
 | 几何与指标 | 九类 GeoJSON 与 metrics.json | 由本包程序化生成，公式与源文件逐项登记 | 按 metrics.json 的 `formula` 与 `source_file` 在 EPSG:4548 复算 | 生成脚本不在包内，故**只主张指标可独立复算，不主张逐字节可复现** |
 | 许可标识 | `COMMUNITY-DISPLAY-ONLY` | 是 `schema/proposal.schema.json` 的 `license` 枚举值之一（另两项为 CC-BY-4.0、CC-BY-SA-4.0） | `git show HEAD:schema/proposal.schema.json` 查该枚举 | 仓库未发布该标识的规范条款文本，故本包按下段自述其含义，不冒充标准许可证 |
 
-**中文字体这一项本版才真正合上。** v1.10 及更早版本的中文按 Adobe 标准 CID 字体名引用而不嵌入，上表这一行当时写的是"阅读器需自带中文字体包，否则中文可能不显示"——这是一个由我方自己记录、却一直没有关闭的阅读依赖。本版把四套 PDF 的中文字体程序换成子集嵌入的 Noto Serif SC，理由不是外观，而是**可移植性与权利可证明性必须同时成立**：OFL-1.1 是少数明文允许把字体子集嵌进文档并随文档再分发的许可，因此嵌入这一动作本身有据可依，不必依赖"我们认为可以"。替换只改字体程序，不动内容流，故断行、字位与页面尺寸与上一版逐项一致，内嵌图件经提取比对为逐像素相同；编码与字符集仍沿用 Adobe 预定义 CMap `UniGB-UCS2-H` 与 Adobe-GB1 [source:FONT-ADOBE-CID]，那一条来源因此由"字体来源"降为"编码声明"。PDF 内的字体名对象也同步由 `STSong-Light` 改为 `NotoSerifSC`，避免出现"自述是甲、嵌的是乙"的溯源矛盾。拉丁文字仍不嵌入：基础十四款字体由 PDF 规范要求阅读器自备，若为了让 `pdffonts` 全行显示 `emb=yes` 而嵌入某个仿制实现并继续挂 Helvetica 之名，反而是更差的溯源。
+**中文字体在 v1.11 才真正合上。** v1.10 及更早版本按 Adobe 标准 CID 字体名引用而不嵌入，上表这一行当时写的是「阅读器需自带中文字体包，否则中文可能不显示」——一个由我方自己记录、却一直没关闭的阅读依赖。改为子集嵌入 Noto Serif SC 的理由不是外观，而是**可移植性与权利可证明性必须同时成立**：OFL-1.1 明文允许把字体子集嵌进文档并随文档再分发，因此嵌入这一动作本身有据可依。编码与字符集仍沿用 Adobe 预定义 CMap `UniGB-UCS2-H` 与 Adobe-GB1 [source:FONT-ADOBE-CID]，那一条来源因此由「字体来源」降为「编码声明」。拉丁文字仍不嵌入——基础十四款字体由 PDF 规范要求阅读器自备，若为了让 `pdffonts` 全行显示 `emb=yes` 而嵌入某个仿制实现并继续挂 Helvetica 之名，反而是更差的溯源。
 
 本包对 `COMMUNITY-DISPLAY-ONLY` 的自述含义：允许为本次开源征集的评审、公开展示、教学与知识沉淀而复制与引用本包内容，须保留出处；不授予商业使用、不授予将本包内容表述为法定规划或政府决定的权利；第三方进一步使用时仍须自行核验其中每一条外部来源的原始权利状态。
 
-**构建溯源。** 自 v1.9 起**全包只有一个版本号**：26 张图件、38 页图纸与两个离线页面的页脚一律为 `JING-ZHANG HANDOVER LINE / PACKAGE v1.15`（图纸另附页码，如 `01-13`）。此前 v1.8 及更早版本存在三套并存的页脚（正文 v1.9、图纸 v1.6、图件 v1.0），原因是后两类内容未变而未重新渲染；v1.9 改为重建而非重刷，其后各版沿用同一工艺整体重刷版本印记，故全包不存在跨载体的版本号并存。**本版按载体分三条路径重建，每条各有可核验口径**：① 5 张核心图件由生成器重出，与上一版逐像素比对，差异**只落在页脚版本印记带**（`y=962–972`），`key-areas` 另有面积数字行（`y=690–710`），无其他图面变化；② 其余 8 张图件（16 个文件）走重印，14 张 PNG 在声明矩形外**逐像素零变化**，2 张 JPEG 沿用原量化表重新编码，矩形外均值偏差 0.043；③ 四套 PDF 中，A0 前 3 页因面积改写而重建（新页单独经 Ghostscript 子集嵌入 Noto Serif SC，不让整份重蒸馏而波及保留页的内嵌图件），A3 全部 13 页保留原页，两者的内嵌图件按灰度指纹匹配后整流替换、页脚版本印记按**等长替换**写入。页数与 `PACKAGE v1.15` 命中数逐套相等（13/13、13/13、6/6、6/6），`PACKAGE v1.14` 残留计数逐套为 **0**，`qpdf --check` 四套 PASS，`pdffonts` 四套仍为 `<子集前缀>+NotoSerifSC / CID TrueType / UniGB-UCS2-H / emb=yes`。
+**构建溯源。** 自 v1.9 起**全包只有一个版本号**：26 张图件、38 页图纸与两个离线页面的页脚一律为 `JING-ZHANG HANDOVER LINE / PACKAGE v1.15`（图纸另附页码，如 `01-13`）。可核验口径是**页脚一致性**——页数与 `PACKAGE v1.15` 命中数逐套相等（13/13、13/13、6/6、6/6），旧版本号残留逐套为 0，`qpdf --check` 四套 PASS，`pdffonts` 四套均为 `<子集前缀>+NotoSerifSC / CID TrueType / UniGB-UCS2-H / emb=yes`。各版重建的具体路径与逐像素比对结果记在 `changelog.md`，不在此复述。
 
-编号体系同时分成两个互不冲突的命名空间：图纸页用 `JZ / NN`（A3 图册）与 `B / NN`（A0 展板），图件用 `F / NN`。此前 A0 第 3 张页头 `JZ/03` 与其内嵌图件自带的 `JZ/06` 冲突、`JZ/08` 超出 `01-06` 套系、`spatial-prototype` 与 `handover-scene` 同为 `JZ/10` 等问题因此一并消除。
 
-图纸前三页（A3 `JZ/01`–`JZ/03`、A0 `B/01`–`B/03`）本轮由矢量原生重排：此前这些页面把已自带图框、标题与页脚的整张图件缩小嵌入页面图框，形成图中图与同页双版本号，内层小字在评审分辨率下不可读；现在内容直接排在页面上，全页只有一层页眉页脚。其余页面保留原图面，仅重印页脚，并把内嵌图件替换为与 `assets/figures/` 同源的新版本，使同一张图在独立文件与图纸内逐字节一致。
 
-**本版又修掉一处图件缺陷，是把评审实际收到的每一张图逐张过了一遍才发现的。** `mobility-bluegreen` 底部的「沿线定位示意，非道路红线」小注被卡片下边框切掉了下沿——地图块底边 827 px、小注顶边 881 px、13 px 字行高约 18 px，底端落到约 899 px，而卡片下边框在 895 px。**中英两版同源，因此都被切**，而这张图是评审直接看到的五张图件之一。修法是把地图块高度由 560 px 收到 545 px 让出空间，比压缩比例尺与小注的间距更稳（后者已无余量）。同一轮逐张复核了五张核心图件的中英两版与四张离线页面截图，**其余未发现同类缺陷**；`key-areas.en.png` 的「Along the line」到卡片边框余量 6 px（中文 28 px）偏紧但并未重叠，未作改动。
 
-**本版修掉 A0 首版面的一处标注碰撞，并把该处文字提到 WCAG AA 对比度。** A0 `B/01` 左侧总平面上三个交接场的标注此前直接落在地图上：流向文字的基线设在节点中心下方 12pt，而 21pt 字的大写高约 15pt，正好跨过节点所在的横向缝合支线，`BUILD→VERIFY` 的前几个字母被引线与节点圆点横穿；`SHARE→SERVE` 更是浅黄字压在黄色地块上。现改为与 A3 `JZ/01` 同一做法——引线止于卡片边缘、底衬卡片完全遮住其下线条与色块、节点圆点最后绘制。**对比度按实测而非目视调整**：三个节点色直接落在卡面（#faf7ef）上的对比度分别为红 3.72:1、青 2.79:1、黄 1.50:1，**全部低于 WCAG AA 的 4.5:1**；卡片内的流向文字因此改用同色相压暗后的 #D4301F / #007E79 / #8B6C0B（实测 4.62 / 4.60 / 4.62:1），既达标又保留颜色编码，地图上的节点色点仍用原色。此前只有黄色被肉眼看出问题，红与青是量过之后才发现同样不达标。
 
-**两项图件事实一并写在正文，不再只放在 `self_check.json`：** 其一，**包内 26 张图件全部由 PIL / reportlab 程序化绘制，无任何生成式图像素材**——v1.6.2–v1.6.3 曾有一张 gpt-image-2 概念表现图，自 v1.6.4 起其内容已整体替换为程序化绘制的《交接断面》（F/13）。其二，**三处重点区卡片按 `key_areas.geojson` 的真实轮廓、同一比例尺绘制**：此前它们复用同一抽象场地剪影、仅以色块区分，无法反映 2.7 倍的面积差与地理位置差异；现在附主轴与缝合支线、沿线定位条、指北针与比例尺，并标注 `metrics.json` 的复算面积（1,929,201.877 / 1,043,236.909 / 720,454.219 m²）。
+**两项图件事实一并写在正文，不再只放在 `self_check.json`：** 其一，**包内 26 张图件全部由 PIL / reportlab 程序化绘制，无任何生成式图像素材**——v1.6.2–v1.6.3 曾有一张 gpt-image-2 概念表现图，自 v1.6.4 起其内容已整体替换为程序化绘制的《交接断面》（F/13）。其二，**三处重点区卡片按 `key_areas.geojson` 的真实轮廓、同一比例尺绘制**，附主轴与缝合支线、沿线定位条、指北针与比例尺；卡片上的复算面积按 km² 表示到 0.01，精确值留在 `metrics.json`——这些面积算在临时边界上，在图面最醒目处写到平方米小数位会造成与边界置信度不符的精度印象。
 
 判断某一成果是否仍然有效，仍应以 manifest 的 sha256 与 changelog 的逐版记录为准；一旦官方边界发布触发全量重算，全部成果将再次在同一次构建中统一。本轮的确定性渲染脚本（图件样式底座、图纸版式底座、几何管线、图件与图纸页生成、图件重印、图纸总装）**未随包提交**：仓库的 `validate_submission.py` 只允许投稿目录内出现数据与素材类文件，`.py` 不在允许扩展名内。因此本版仍如上一版一样，只主张**指标可独立复算**，不主张产物逐字节可复现；脚本可按任务书 `continuous_participation.issue_collaboration_zh` 的约定另开 Issue 附补丁提供。
 

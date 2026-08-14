@@ -25,7 +25,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "0e8448cbb86bc592a17a24b0757b03fd238b8814b8cd25dbfa2cdc38cfcfbc2c"
+      "sha256": "6113864be0f2df798e7193e4f9ad99c70e06d80885809b5e68788876893d6a6d"
     },
     {
       "path": "agent.json",
@@ -37,7 +37,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "0d4c96f4b0bcc2c90f9244a10f0e82d1e56a9828cc63ed502edb5c53f7abc392"
+      "sha256": "059a5fb8b160209b5a242b5ae21bd143c9d76a6eef87b0d6227bcc2bf4302972"
     },
     {
       "path": "assumptions.json",
@@ -55,7 +55,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "7716b42121c1ef82b8277d3b70fe193d92b4fb09a55bc80e4f060fcc3d2516e5"
+      "sha256": "453d0bd42b79e4150ae72bd1ec51479edc44114a3ae7835d5549e8391d33fc0e"
     },
     {
       "path": "compliance_matrix.json",
@@ -80,7 +80,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "a101db490a359935b2b8aac69d99e70682f644d30fd6ee96e645f7c53c9d2ef6"
+      "sha256": "3b39fee47f3d360a65b8ec8f82f3ac2b6d73c0872e3b9ea6bfcf648d69ce9585"
     },
     {
       "path": "report/narrative.md",
@@ -210,7 +210,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "83d8278325870f39294c340434dd804263aa7e85857fda0ec94a71c0bb2d19bd"
+      "sha256": "ca08eda2ed33a4181f6dbb6e3ac68109b20a8ab1eb680c8b5d1192c641d3e8c7"
     },
     {
       "path": "report/proposal.en.html",
@@ -218,7 +218,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "5ff20d82065d8deeb7b1546ea92400682179b0c2e74f9bbb980f8add94e416a3"
+      "sha256": "d976dcde963b1f2ae70fff6dfdac26f575884c40f89d506d45bc5f3d6735091e"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -349,7 +349,7 @@
       "role": "narrative",
       "required": false,
       "language": "neutral",
-      "sha256": "7a87027c763ce6cd8c0746d9c6d974176e6b9b007de875ce6d9ff39eada5d244"
+      "sha256": "b5042a76983e0b0c9512767a70663a11450ca753c428ffbd31216a5d539d5d7b"
     },
     {
       "path": "assets/figures/spatial-prototype.png",
@@ -398,6 +398,18 @@
       "role": "governance_validation",
       "required": false,
       "sha256": "f3a9f8e926245459ec552780e26bb0841b21a56b81112f0272ddf71ebee5f84d"
+    },
+    {
+      "path": "visual/assets/governance/shift-ledger-suite.json",
+      "role": "governance_protocol_instances",
+      "required": false,
+      "sha256": "a15ed5285cb5402693dcfce8c116be0d2495df884c0f2117bfe0bb201d9d054d"
+    },
+    {
+      "path": "visual/assets/governance/rule-check-report.json",
+      "role": "governance_validation",
+      "required": false,
+      "sha256": "5406b1f1d692a1ed326934549d0d471843ba121c2caa3f2234a0d692d0d11412"
     },
     {
       "path": "assets/figures/shift-ledger.png",

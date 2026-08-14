@@ -7,8 +7,8 @@ summary: A concept urban-design package in which every AI deployment carries a p
 proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_of: proposal.md
-version: 1.3.0
-iteration: v1.3
+version: 1.4.0
+iteration: v1.4
 ---
 
 # Jing-Zhang Open Ledger: A Traceable AI Public-Return Belt
@@ -21,9 +21,9 @@ iteration: v1.3
 
 **In one sentence:** Jing-Zhang Open Ledger turns the centennial Jing-Zhang slow-mobility, climate, and service spine into three civic relations—verification at Zhongzhiyuan, translation at AI Origin, and return at Dazhongsi—and asks every proposed AI service to carry five receipts: source, test, release, review, return.
 
-**New verifiable v1.3 evidence:** a zero-dependency offline tabletop rule accepts one synthetic non-personal record and rejects six records missing source, human alternative, independent review, active expiry, or return closure; five regional interfaces state only pending exchange content; a 90-day zero phase only delivers evidence, protocol, walkthrough, restoration, and independent-review conditions. None authorizes a real service, partnership, budget, construction, or approval.
+**New verifiable v1.4 evidence:** a zero-dependency offline tabletop rule accepts one synthetic non-personal record and rejects six records missing source, human alternative, independent review, active expiry, or return closure; five regional interfaces state only pending exchange content; a 90-day zero phase only delivers evidence, protocol, walkthrough, restoration, and independent-review conditions. A new triptych makes the three commons legible as everyday public relations while pairing that image with structured non-claims, pause gates, and later professional prerequisites. None authorizes a real service, partnership, budget, construction, or approval.
 
-**Fast evidence entry points:** `assets/figures/ledger-proof.en.png`, `visual/assets/open-ledger-tabletop-result.json`, `visual/assets/regional-exchange-contracts.json`, `visual/assets/zero-phase-readiness.json`, and `visual/assets/review-evidence-map.json`.
+**Fast evidence entry points:** `assets/figures/ledger-proof.en.png`, `visual/assets/open-ledger-tabletop-result.json`, `visual/assets/regional-exchange-contracts.json`, `visual/assets/zero-phase-readiness.json`, `visual/assets/civic-scene-evidence.json`, and `visual/assets/review-evidence-map.json`.
 
 ## Design Basis and Source List
 
@@ -56,6 +56,12 @@ The overall strategy is readable track trace, pause-able threshold, and visible 
 Zhongzhiyuan is a Verification Commons. A Verifiable Window, test garden, and audit workshop put model scope, energy note, red-team review, and learning at a walkable public edge. Beijing AI Origin is a Translation Commons. A Translation Arcade, bookable collaboration tables, quiet corners, and multilingual wayfinding make research language understandable and contestable to students, residents, and service staff. Dazhongsi is a Return Commons. A Return Station, accessible help desk, small-business tool cabinet, and maintenance learning point make return visible in service and care rather than only in display. The three landmarks are civic interfaces, not isolated sculptures. Locations, footprints, form, ownership, and access remain conceptual pending official geometry and professional review. [depth:three_key_area_detailed_design] · [metric:ai_pilgrimage_landmark_count] · [data:geometry/public_space.geojson]
 
 ![Three key-area commons for verification, translation, and return.](assets/figures/key-areas.en.png)
+
+### Concept walkthrough of the three commons
+
+v1.4 uses one original conceptual triptych to make the three commons legible as a Verification edge to arrive and understand, a Translation arcade to pause and co-edit, and a street-level Return front room to see and return. It only helps a reader sense those public relations; it does not depict a Haidian condition or supply a site, scale, engineering, heritage, operator, or approval conclusion. Each scene must still be read with the key-area diagram, scenario cards, five receipts, and later professional/user review. [source:SRC-AI-GENERATED-THREE-COMMONS-20260814] · [data:visual/assets/civic-scene-evidence.json] · [depth:three_key_area_detailed_design]
+
+![Concept walkthrough of three commons: Verification, Translation, and Return as everyday civic relations; original generated visual, not a real or approved condition.](assets/figures/three-commons-concept-v14.png)
 
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
@@ -107,7 +113,7 @@ The key spatial risk is the absence of a cleared exact redline and baseline surv
 
 ## References
 
-`sources.json` records provenance and use limits; `sources.json` and `report/narrative.md` record provenance, local translations, non-copying cautions, and the v1.0-to-v1.2 design review record.
+`sources.json` records provenance and use limits; `sources.json` and `report/narrative.md` record provenance, local translations, non-copying cautions, and the v1.0-to-v1.4 design review record.
 
 [source:SRC-OFFICIAL-ANNOUNCEMENT] Public call and repository site package.
 
