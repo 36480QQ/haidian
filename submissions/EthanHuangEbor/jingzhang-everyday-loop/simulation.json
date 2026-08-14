@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0",
+  "simulation_id": "OLS-TABLETOP-001",
+  "prototype_id": "OLS-1TO1-001",
+  "status": "synthetic_tabletop_only_not_field_test",
+  "runner": "visual/assets/public-acceptance-tabletop/run_tabletop.js",
+  "contracts": "visual/assets/public-acceptance-tabletop/scenario-contracts.json",
+  "receipts": "visual/assets/public-acceptance-tabletop/receipts.json",
+  "cases": 72,
+  "qualified_tabletop_releases": 12,
+  "negative_cases_blocked": 60,
+  "network_required": false,
+  "field_claim": false
+}
