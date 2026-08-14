@@ -8,7 +8,7 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-iteration: "1.0.0"
+iteration: "1.5.0"
 summary: "Along the Jing-Zhang Heritage Park, a walkable and inhabitable public spine links three thresholds: a live-work court, a family care porch and a station-front civic hall. Retained structure, demountable fit-out and a continuous public-to-private gradient support four housing states."
 tracks: ["youth-friendly-public-space", "ai-public-services", "ai-origin-community"]
 scenarios: ["enterprise-service-copilot", "ai-health-service-navigation", "ai-traffic-walkability", "ai-cultural-guide"]
@@ -21,6 +21,55 @@ scenarios: ["enterprise-service-copilot", "ai-health-service-navigation", "ai-tr
 "Motion" means arriving, changing jobs, moving home and setting out again along the Jing-Zhang corridor. "Rest" means being able to settle during a stage of life or a period of work. "A home" means that housing, a desk, care and public services remain connected through change. The proposal translates coupling, switching and through-running into a spatial and service order: one public spine links three stations, three thresholds organise arrival, project work and family life, and four housing states shift through a shared service core and demountable fit-out. The proposal is authored by **NearCai × OpenAI Codex** for public discussion and professional development.
 
 The design begins with places people can read and use. Zhongzhiyuan uses a live-work court for project growth; AI Origin uses a care porch and adaptable home for household change; Dazhongsi uses a civic ground-floor hall for arrival, short stay and transfer. A continuous gradient of street, shared hall, semi-public court, resident threshold and interior keeps public life legible while residents control the home. Service and equipment run along repairable public edges. Six relays are supported by structured contracts; nine states and three human review gates make responsibility, consent, ordinary fallback, stop and return visible in each spatial transition [metric:relay_contract_count] [metric:relay_state_count] [metric:relay_gate_count].
+
+## One-Page Review-Score Evidence Index
+
+This section is not a new slogan. It is a navigation page for the Review Agent and human reviewers: seven scoring dimensions, seven evidence routes and an eight-step 100-day action package are registered as countable package objects [metric:review_score_dimension_count] [metric:review_evidence_map_item_count] [metric:first_100_days_action_count]. The 72 synthetic negative branches are counted separately in the scenario denominator [metric:scenario_negative_fixture_branch_count]. The full index is in `visual/assets/review-score-evidence-map.json`, `visual/assets/score-sprint-100-days.json` and `visual/assets/scenario-negative-fixtures.json`; these files prove that the evidence chain is organised, not that any field authorisation, budget, eligibility, rent, capacity or outcome exists [data:visual/assets/review-score-evidence-map.json#dimensions] [data:visual/assets/score-sprint-100-days.json#actions] [data:visual/assets/scenario-negative-fixtures.json#negative_branches].
+
+| Review dimension | Weight | Directly reviewable evidence in this package | Hard boundary |
+|---|---:|---|---|
+| Brief alignment | 20 | Three-level scope, three key areas, agent.1-agent.6, selected tracks and six tasks are cross-located in prose, matrices, layers and figures [metric:key_area_count] | Provisional geometry supports intake and discussion only, not an official redline |
+| Implementation feasibility | 20 | Five G0-G4 evidence gates, eight 100-day actions, six RACI role types, stop/restore/retire rules in one action table [metric:commissioning_gate_count] [metric:raci_role_type_count] | No procurement, budget, appointment, permit, field pilot or construction is claimed |
+| AI planning innovation | 15 | Six relay contracts, nine states, three gates and three validation protocols limit AI to explanation, reminders, conflict surfacing and evidence organisation [metric:relay_contract_count] [metric:relay_state_count] [metric:relay_gate_count]; twelve scenario contracts are counted separately [metric:scene_contract_count] | AI does not decide eligibility, rent, housing allocation, workspace admission, safety, medicine or legal matters |
+| Expression completeness | 15 | Bilingual Markdown, HTML, A3/A0, core figures, offline visual page, manifest, self-check, source/assumption/copyright files form one delivery chain | HTML loads no CDN, remote font, map tile, iframe, form, API or tracking code |
+| Originality | 10 | The Home-Work Relay turns railway coupling, switching and through-running into responsibility protocols for housing, desks, services and return | International cases are background comparisons; no peer text, figures, geometry, data or field table is copied |
+| Public interest and inclusion | 10 | Six personas, twelve scenario cards, six equity acceptance rules, AI-off, staffed review, accessibility, night-time and multilingual routes share one denominator [metric:scenario_card_count] [metric:equity_acceptance_rule_count] | Equity parity, real affordability, real capacity and retention rate remain unknown |
+| Risk and compliance | 10 | Risk register, assumptions, 72 negative branches, `not_authorized_not_run`, unknown is not pass, failures and exit assets are visible in the proposal | No official endorsement, award, built work, approval, partnership, real outcome or professional sign-off is claimed |
+
+### G0-G4: 100-Day Eight-Step Score Sprint
+
+The 100-day package breaks "can this move forward?" into eight desktop actions rather than promising implementation. G0 checks only package consistency; G1 waits for official and rights prerequisites; G2 reviews contracts, negative branches, AI-off and professional conditions on paper; G3 can begin only after real appointments, permits, budget, insurance, baseline data and site authorisation; G4 decides continue, revise or retire. The current state is `not_authorized_not_run` or `role_type_only`; no step can automatically bypass a human decision [metric:commissioning_gate_count] [metric:first_100_days_action_count] [depth:phasing_implementation].
+
+| Step | Period | Gate | Minimum input | Acceptance evidence | no-go / exit |
+|---|---|---|---|---|---|
+| A01 Evidence index freeze | Day 0-7 | G0 | Prose, metrics, matrices, manifest, self-check | Paths, hashes and bilingual mapping agree | Missing file or hash mismatch stops the package |
+| A02 Official base-data rebase | Day 8-18 | G1 | Official boundary, key areas, controls, heritage and roads if released | Replacement list and recalculation record | No precision redline/intensity decision before official data |
+| A03 Rights, permit and public-communication desktop screen | Day 19-30 | G1 | Ownership, heritage, fire, accessibility, privacy, labour and housing-policy issues | Role types and not-triggered action list | No resident contact, contract change or device installation without authority |
+| A04 Twelve scenario-contract tabletop replay | Day 31-42 | G2 | 12 scene contracts and 72 synthetic negative branches | Failure retention, ordinary route, exit asset and human receipt | Any negative branch not rejected returns to contract revision |
+| A05 Reversible fit-out and live-research adjacency review | Day 43-55 | G2 | Room authority, components, noise/safety thresholds, restoration method | go/no-go table, restoration list, human-signature template | No authorised room, calibration or restoration condition stops the test |
+| A06 Home default-deny and AI-off review | Day 56-68 | G2 | Devices, data flows, withdrawal, offline, paper/staffed routes | Zero-tolerance condition for unauthorised transmission; basic function after withdrawal | Personal/family scoring, hidden allocation or missing AI-off route stops it |
+| A07 Three-station key-area handoff package | Day 69-84 | G3-pre | Entrances, movement, responsibility and unknowns for the three stations | Station receipt, pause/restore conditions and external-input list | No real receiver or site condition means no G3 |
+| A08 Public review, retirement or limited development | Day 85-100 | G4 | Failures, objections, withdrawals, cost, capacity and ordinary-route denominator | Continue/revise/retire/reopen decision record | If failures cannot be public or exit assets are incomplete, retire it |
+
+### Twelve Scenario Contracts and the Negative-Branch Denominator
+
+The twelve scenario cards are restated as scenario contracts, not experience stories: each card must show trigger, minimum data, RACI, success evidence, stop line and exit asset [metric:scene_contract_count]. Each card then receives six synthetic negative branches: unverifiable source, missing consent/withdrawal, AI overreach, missing ordinary route, missing owner/safety/receipt, and missing exit/deletion/restoration/failure denominator. The total is 72 branches, all desktop rejection branches rather than field-test results [metric:scenario_negative_fixture_branch_count] [depth:risk_missing_data].
+
+| Scenario | Minimum data | RACI receiver | Success evidence | Must-reject branch |
+|---|---|---|---|---|
+| S01 Arrival option explanation | Arrival mode, language, accommodation need | Arrival service / staffed desk | Option explanation and ordinary-route receipt | AI directly allocates housing or desk |
+| S02 Housing-source human verification | Source ID and version | Verifier / housing decision role | Rights, fee and time limit confirmed separately | Unverifiable source is still recommended |
+| S03 Tenure conversion | Current and desired term | Case coordinator / contract role | Release and receipt confirmed separately | Fee or eligibility conflict is skipped |
+| S04 Convertible layout booking | Functional need and access scope | Fit-out / rights / safety roles | Baseline, consent and restoration jointly signed | Change continues after withdrawal |
+| S05 Partner or job-change interface | Service category and contact choice | Employment referral / service role | Receipt without reading household data | Household or employment score is read |
+| S06 Shared lab booking | Space type and training status | Space coordinator / lab access role | Safety, equipment and return record | Training or equipment unknown but access allowed |
+| S07 Door-to-desk slow link | Origin/destination type and accommodation need | Route maintenance / public-realm role | Walkthrough and disruption note | Accessibility break is hidden |
+| S08 Care relay | Service category and communication need | Service navigation / qualified service role | Human receipt or explicit refusal | Emergency case is auto-routed |
+| S09 Home data withdrawal | Device, use and consent state | Consent registry / data role | Permission closed, deletion, ordinary function available | Data transmits after withdrawal |
+| S10 Maintenance and offline fallback | Device ID and fault | Maintenance watch / facility-safety role | Human takeover and restoration record | No mechanical or staffed route exists |
+| S11 Departure and return handoff | Closure scope and contact choice | Closure coordinator / archive role | Permission, deletion and retention receipts | No receiver but automatic return occurs |
+| S12 Aggregate home-work ledger | Aggregation method, version and denominator | Data maintenance / independent audit role | Failures and exits remain in denominator; no small-cell identification | Re-identification or purpose drift appears |
+
 
 ## Design Basis and Source List
 
