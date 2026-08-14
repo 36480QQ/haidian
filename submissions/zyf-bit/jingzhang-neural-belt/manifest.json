@@ -12,7 +12,7 @@
     "agent_name": "TraeWork Agent",
     "model": "TraeWork"
   },
-  "generated_at": "2026-08-13T10:00:00+08:00",
+  "generated_at": "2026-08-14T22:00:00+08:00",
   "files": [
     {
       "path": "manifest.json",
@@ -41,7 +41,7 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "86307c8dcbbb4e7aaee5c13c0a69c96c5f288cb7d55171c07b888d418068d494"
+      "sha256": "cd7c586f494315bfe6e2d8eba3f040652eae038a7b77d04fa873432803309126"
     },
     {
       "path": "self_check.json",
@@ -53,19 +53,19 @@
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "20ffa943eaef885eb121552c602e9b182a7c32afcc3787f50f9d43a82d6bd476"
+      "sha256": "3a1ad819828669e6b1d45fc86aec06534b2d9204be2e9db981f61e5a0fa38042"
     },
     {
       "path": "standard_matrix.json",
       "role": "standard_matrix",
       "required": true,
-      "sha256": "c6f1f8e542c553182b0f14d6e91cc818a82dbcaf5c43f80ff61003c4a20b1792"
+      "sha256": "b31078524f704e5197716daaf3b7828a91bced8475f8172f356a0af6de5ccbc5"
     },
     {
       "path": "design_depth_matrix.json",
       "role": "design_depth_matrix",
       "required": true,
-      "sha256": "f7bda80f9d68715718960b9506a17fe32e1e3b147d3ed24ae47be50c3526fd1c"
+      "sha256": "f3cb84232e6ed1b2897ac064f4bfbb4120ee42f499b8836becabf9eb331cebc2"
     },
     {
       "path": "proposal.md",
@@ -91,7 +91,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "a729126453351ff05f2e6a389cbe4d96267417c5f7d17a1b967be34e00099fc1"
+      "sha256": "23b594c17e8e427d3df90bedfb062859f154c9480bf8841dcbc47f014c152e4a"
     },
     {
       "path": "visual/index.html",
