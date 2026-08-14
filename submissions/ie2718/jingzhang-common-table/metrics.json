@@ -158,7 +158,7 @@
     },
     "scenario_node_count": {
       "status": "known",
-      "value": 12,
+      "value": 16,
       "unit": "count",
       "source_files": [
         "geometry/public_space.geojson"
@@ -169,7 +169,7 @@
     },
     "testbed_scenario_count": {
       "status": "known",
-      "value": 4,
+      "value": 6,
       "unit": "count",
       "source_files": [
         "geometry/public_space.geojson"
@@ -180,7 +180,7 @@
     },
     "persona_count": {
       "status": "known",
-      "value": 6,
+      "value": 7,
       "unit": "count",
       "source_files": [
         "proposal.md"
@@ -202,14 +202,64 @@
     },
     "renewal_project_count": {
       "status": "known",
-      "value": 9,
+      "value": 14,
       "unit": "count",
       "source_files": [
         "proposal.md"
       ],
-      "formula": "count(project_rows P01-P09)",
+      "formula": "count(project_rows P01-P14)",
       "confidence": "high",
       "assumptions": []
+    },
+    "technology_layer_count": {
+      "status": "known",
+      "value": 6,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count(future_infrastructure_layers L1-L6)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "civic_right_count": {
+      "status": "known",
+      "value": 6,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count(non_derogable_civic_ai_rights)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "human_fallback_coverage_ratio": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/public_space.geojson",
+        "proposal.md"
+      ],
+      "formula": "scenarios_with_equivalent_human_fallback / all_scenarios",
+      "confidence": "high",
+      "assumptions": [
+        "Design commitment, not a measured operational result."
+      ]
+    },
+    "physical_stop_coverage_ratio": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/public_space.geojson",
+        "proposal.md"
+      ],
+      "formula": "bounded_machine_scenarios_with_physical_stop / all_bounded_machine_scenarios",
+      "confidence": "high",
+      "assumptions": [
+        "Pilot acceptance requirement, subject to professional safety verification."
+      ]
     },
     "building_prototype_count": {
       "status": "known",
