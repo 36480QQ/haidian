@@ -174,6 +174,12 @@ English brief — Jing-Zhang Handover Line translates the railway shift-handover
 
 为了让“交接”不停在字段数量上，v1.6新增原创的《双联交接账 0.3》：交出班必须登记适用范围、版本、输入、已知故障和无AI服务底线；接入班必须独立复现并明确选择“接收”或“拒收”，任何未决项都不能在换班中消失。机器可读契约见 [data:visual/assets/governance/shift-ledger.schema.json]，最小样例选择低风险的SCN-05无障碍路径副驾，只用合成障碍卡，不含个人数据、不连接真实服务，`deployment_mode=sandbox_only`、人工角色待授权、性能结果保持 `null` [data:visual/assets/governance/example-scn05-shift-ledger.json]。该样例已通过JSON Schema结构校验 [metric:machine_readable_shift_protocol_count] [metric:schema_valid_synthetic_shift_count] [metric:shift_protocol_validation_error_count]，校验记录见 [data:visual/assets/governance/validation-report.json]；“0个结构错误”只证明这份合成样例可被机器解析，不证明路径正确、服务可用、法律合规或可以投入现场。
 
+**本版把这份协议实例化到全部十二个场景，并且让它接受缺陷注入检验。** 此前只有 SCN-05 一条实例，协议因此无法被逐场景核验——一套只跑通一个例子的规则，看不出它在别的场景是否也成立。现在十二个场景各有一条交接账 [data:visual/assets/governance/shift-ledger-suite.json]，全部字段由 `geometry/public_space.geojson` 已登记的场景属性推出（`human_fallback`、`exit_condition`、`accountable_role`、`acceptance_gate`、`rollback_state`），**未新增任何设计主张**；唯一的设计决策是双联角色对的拆分——协议要求交出与接入由不同角色判断，而部分场景的 `accountable_role` 只写了一方，接入方按该场景 `exit_condition` 指认（例如 SCN-09 社区照护排班桌的首要停用条件是「当事人拒绝算法分配」，接入方因此是照护当事人代表而非服务方）。十二条实例全部通过 JSON Schema 结构校验，错误 0 处 [metric:schema_valid_synthetic_shift_count]。
+
+**协议的七条规则逐条做了缺陷注入。** 规则本身不是新写的，是把已有约束显式化：交出与接入必须由不同角色判断（R1）；人工等价服务必须先于智能层存在，且至少一条渠道在智能层关闭时仍可用（R2）；存在未闭合的阻塞性未决项时智能层必须保持关闭（R3）；回滚演练未被观察到通过前不得进入限定试用（R4）；合成记录不得触碰真实服务、不得含个人数据（R5）；拒收必须给出可复核的理由（R6）；角色未指派时双联状态不得标记为已共同签认（R7）。检验方式是对每条交接账先跑一次基线、再逐条注入对应缺陷，共 **96 条**（12 基线 + 12 场景 × 7 规则）[metric:shift_protocol_rule_check_count]：基线全部不触发任何规则，84 条注入**全部被拦截**，漏检 0 条 [metric:shift_protocol_rule_check_miss_count]，逐条结果见 [data:visual/assets/governance/rule-check-report.json]。
+
+**这只证明规则闭合，不证明现场绩效、安全、合规或获批。** 十二条实例的 `receiver_disposition` 一律是 `refused`、`smart_layer_state_after_decision` 一律是 `off`——因为三条验收门（场地权利与责任主体、人工接管与无AI等价服务演练、数据最小化与公共利益评估）在任何场景都尚未满足。**协议在纸面上正确地拒绝了它自己的全部十二个场景**，这正是它应有的行为：先证明拒收路径可靠，再谈放行。
+
 ![双联交接账：交出班与接入班分别判断，未决项不得在换班中消失](assets/figures/shift-ledger.png)
 
 三期不是时间表，而是三道合并门槛——资料、权属与专业评估通过才允许合并，未通过就回滚到上一个可用状态。可进化的前提是可回滚，这正是组件库要求全部可撤除、建筑四步判定里“可逆插入 I”必须排在“待核 D”之前的原因。一座不能撤销自己决定的城市，不可能自适应。
@@ -426,7 +432,7 @@ English brief — Jing-Zhang Handover Line translates the railway shift-handover
 | 更新类型单元 | 20个；不等于现状建筑清单 | [metric:renewal_cell_count] |
 | 用地要素 | 11个；拓扑联合覆盖场地 | [metric:land_use_zone_count] |
 | 版本接口目录 | 32个；是待授权的概念对象，不是32个已验证系统 | [metric:versioned_asset_count] |
-| 机器可读双联交接账 | 1套JSON Schema + 1份SCN-05合成样例 | [metric:machine_readable_shift_protocol_count] [metric:schema_valid_synthetic_shift_count] |
+| 机器可读双联交接账 | 1套JSON Schema + 12条场景实例 + 96条规则检查（84条缺陷注入全部拦截） | [metric:machine_readable_shift_protocol_count] [metric:schema_valid_synthetic_shift_count] |
 | 结构校验错误 | 0个；仅代表样例可解析，不代表真实性能通过 | [metric:shift_protocol_validation_error_count] |
 | 概念分期 | 3期；由条件触发而非自动实施 | [metric:phase_count] |
 
