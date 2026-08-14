@@ -573,6 +573,23 @@ Blue-green public space is jointly verified by the design depth item and the gre
 
 The urban character scheme should integrate the historical culture of the Jing-Zhang Railway, the innovation culture of Zhongguancun, and AI new culture, utilize cultural resources such as Qinghuayuan Railway Station and the Beijing Film Academy, and propose guidance on urban tone, building character, roof form, massing, interface, and public art. The agent should also propose signage and wayfinding, cultural symbols, international communication narratives, AI pilgrimage landmarks, and a contribution wall or honor-display system. However, all brands, fonts, images, portraits, and corporate logos must have rights-cleared sources. Character controls should clearly distinguish official controls, design suggestions, and pending-confirmation conditions; falsely precise control lines must not be given without heritage-protection or regulatory-plan basis.
 
+### Light Track Station: Public Space Signal Furniture
+
+The Jing-Zhang Railway's signal towers once controlled train passage. This proposal transforms signal towers into street furniture — **Light Track Stations** — where residents can see AI service status from the street [standard:MOHURD-URBAN-DESIGN-MEASURES] [depth:blue_green_public_space].
+
+| Station type | Form | Function | Placement | Non-digital alternative |
+| --- | --- | --- | --- | --- |
+| Signal tower | 2-3m tall, railway signal tower form, tri-color light on top (green/yellow/red) | Shows gate status (G0-G3) of AI scenario cards in the area | 1-2 per key area | Paper bulletin board + human inquiry |
+| Inquiry desk | Wooden long table, sleeper form, embedded stone map | Staffed, answers AI service questions, collects resident feedback | Every 800m on main slow-mobility path | This IS the non-digital option |
+| Contribution wall | Weathering steel wall, rail texture | Displays data contributors, open-source contributors, community participants | 1 each in Zhongzhi, Origin, Dazhongsi | Paper quarterly honor roll |
+| Retirement column | Cast iron cylinder, 1.5m tall | Records retired AI services: name, run duration, retirement reason | Along Heritage Park | Engraved inscription |
+
+**Design language**: Warm white (building base), coal black (rail memory), signal orange (operational status), cobalt blue (AI technology). All installations are original vector designs, no corporate logos or third-party photos. Materials prioritize weathering steel, fair-face concrete, and recycled sleepers. Removable, relocatable, recyclable.
+
+**Public verification rule**: At any signal tower, residents can see three things: ① which AI services are running (green light) ② which are piloting (yellow light) ③ which were paused and why (red light). If a service's status is not visible, it hasn't passed G0 and isn't live. This is not a dashboard; it is street furniture — no smartphone needed [data:geometry/public_space.geojson#PUBLIC-001].
+
+> Light Track Stations are conceptual designs, pending confirmation of placement and maintenance responsibility by public space operators and community co-building committees.
+
 ## Renewal Project List, Implementation Policies, and Phasing Plan
 
 The implementation plan should form a reviewable renewal project list, specifying project location, type, function, responsible entity, dependency conditions, implementation phase, risks, and evaluation metrics. Policy recommendations should cover urban-renewal coordinated implementation, spatial supply, operation mechanisms, industry services, public participation, data governance, and property-rights coordination. `geometry/phasing.geojson` should express the phased scope, and `compliance_matrix.json` should link each task to the corresponding phase and drawing.
