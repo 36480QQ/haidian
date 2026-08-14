@@ -2,7 +2,7 @@
   "schema_version": "0.2.0",
   "package_id": "jingzhang-on-time",
   "project_id": "centennial-jingzhang-ai-belt",
-  "site_package_version": "1.0",
+  "site_package_version": "2.0",
   "package_type": "professional_design_package",
   "package_state": "ready_for_review",
   "submission_stage": "formal",
@@ -24,14 +24,14 @@
     {
       "path": "proposal.md",
       "role": "narrative",
-      "sha256": "8f8c8019217bfe5c9a8570e1d25cae27cc806e649e971741fc41d66804f7b516",
+      "sha256": "7d22fa243115682d503c1e877e1e1be0f8b1139090f57482ec7a1e531dc02fee",
       "language": "zh",
       "required": true
     },
     {
       "path": "proposal.en.md",
       "role": "narrative",
-      "sha256": "6a2f4da057ecfe72b14f6f97edb549ab2d41c7a40389e49a28a1effe3f7dd1aa",
+      "sha256": "9901a21c70cb9acf5672429f5619916543d05e7ab1f78bc25a65ba5228fe4539",
       "language": "en",
       "translation_of": "proposal.md",
       "required": true
@@ -63,7 +63,7 @@
     {
       "path": "self_check.json",
       "role": "self_check",
-      "sha256": "6c397f875e3df4dade1fa39bf76b1c96b8bbfcc78ac5a09e7450eff194d2cff9",
+      "sha256": "451fb56ce9ab9a1cbd50dfea55ddeb3554dce1b9171d6870407b6b7081750e1b",
       "required": true
     },
     {
@@ -154,21 +154,21 @@
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
-      "sha256": "fc5b9b611be4b9798777738e74e446ba01c7bf7ff276a9c8587c08f272f9263d",
+      "sha256": "429c0e3c54cbbb8d933fab63a124fdba7ab34ceb2e9738f1281bfb3f7baf9590",
       "language": "zh",
       "required": true
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
-      "sha256": "a57aac15ca1a24524080294d5873eb0b6fd2c2ea6b7d145702d186864e8f54e4",
+      "sha256": "8e88946e9b3f5b0848ebf3177a85f8db0a79da9b7950050b95a03be8ee923bb8",
       "language": "zh",
       "required": true
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
-      "sha256": "ec56bb24f6020457afc215b4487832e60b19b44d01e86e9971964b255d6d2e8f",
+      "sha256": "6cd5edbd56146b5c40f5cf93b0ec3126aa39bec2172be32f1b5807fc24914fca",
       "language": "zh",
       "required": true
     },
@@ -260,7 +260,7 @@
       "role": "visualization",
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "30cd73cc8890f1e32bd22b9e44a8badea8250ec7aa5e83c50691cefb6d900cbd",
+      "sha256": "2f40e60c0e1810e343e8ca467381cf82c0ec123cd6f0aa0b5ec4ec02ff644542",
       "required": true
     },
     {
@@ -268,7 +268,7 @@
       "role": "drawing",
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "cc702b145f0b2abf3185669684b46a0a4473ae1c8db46e6361e97c3a7408f3f8",
+      "sha256": "ab23949bd09157dd6f49a799a72189a9b5dc5f9ac67699daee3044e6f98f24ac",
       "required": true
     },
     {
@@ -276,7 +276,7 @@
       "role": "drawing",
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "f77a1c9af702c54a1f4b9f642074d8b355626e52f6eaace69bcd20db847c726f",
+      "sha256": "6210225fa2ec65f42f8f38016757ad05a998e3fcb2dca55b347902207935a0e2",
       "required": true
     },
     {
@@ -293,6 +293,18 @@
       "language": "en",
       "translation_of": "assets/figures/overall-design-dark.png",
       "required": true
+    },
+    {
+      "path": "visual/assets/logs_schema.json",
+      "role": "evidence_data",
+      "required": true,
+      "sha256": "cd676ee3ed4e1671a7fb38855629bbe9ffa45780d8029b2f781ac65d8c6a7b5c"
+    },
+    {
+      "path": "visual/assets/baseline_registry.json",
+      "role": "evidence_data",
+      "required": true,
+      "sha256": "c1377761e61bf181d6d5d2d04d1ff27af8f3a694fe92938d29656242f65e29b9"
     }
   ],
   "validation_claim": {
