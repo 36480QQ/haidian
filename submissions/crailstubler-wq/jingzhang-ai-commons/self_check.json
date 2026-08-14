@@ -6,35 +6,80 @@
       "result": "pass",
       "severity": "major",
       "target": "geometry/site_boundary.geojson",
-      "message": "Provisional boundary is disclosed and does not block content scoring; replace it with the official redline before precision-dependent conclusions."
+      "message": "临时场地边界明确标为 provisional、非官方且不支撑精确规划结论。",
+      "evidence": "Task 3 spatial review PASS"
     },
     {
       "check_id": "KEY_AREAS_TRUST",
       "result": "pass",
       "severity": "major",
       "target": "geometry/key_areas.geojson",
-      "message": "Three required key areas are disclosed as provisional and do not block content scoring; replace them before precision-dependent conclusions."
+      "message": "三处重点区数量齐全且显著披露为临时边界；真实地名焦点与 polygon 不混用。",
+      "evidence": "Task 3 spatial review PASS; Task 6 figure review"
     },
     {
       "check_id": "LAND_USE_TOPOLOGY",
       "result": "pass",
       "severity": "major",
       "target": "geometry/land_use.geojson",
-      "message": "Initial land-use polygons are derived from site boundary partitioning."
+      "message": "待核留白用地完整覆盖临时场地，无重叠、无缝隙、自相交或越界。",
+      "evidence": "scripts/spatial_review.py formal PASS"
     },
     {
-      "check_id": "VISUAL_STATIC",
+      "check_id": "SPATIAL_REVIEW",
       "result": "pass",
-      "severity": "info",
-      "target": "visual/index.html",
-      "message": "Static HTML visualization is generated without external dependencies."
+      "severity": "major",
+      "target": "geometry/",
+      "message": "EPSG:4548 空间复算通过；只保留三处 KEY_AREA_PROVISIONAL 提示。",
+      "evidence": "design/production/verification/task3-spatial-review.md"
+    },
+    {
+      "check_id": "SOURCE_TRACEABILITY",
+      "result": "pass",
+      "severity": "major",
+      "target": "sources.json",
+      "message": "18 条来源均进入 proposal 机器引用；六案例和红色历史使用机构一手页面。",
+      "evidence": "validate_submission.py reference coverage; Task 2 research"
     },
     {
       "check_id": "PROFESSIONAL_EVIDENCE",
       "result": "pass",
       "severity": "major",
       "target": "proposal.md",
-      "message": "Proposal includes references to standards, design depth items, geometry, metrics, sources, and assumptions."
+      "message": "13 章节、标准、深度、空间、指标和来源引用已由验证器确认齐全。",
+      "evidence": "Task 5 validation; manifest hash drift intentionally pending"
+    },
+    {
+      "check_id": "FIGURE_READABILITY",
+      "result": "pass",
+      "severity": "major",
+      "target": "assets/figures/",
+      "message": "五张 1800×1125 核心空间图与四张居民场景设计想象图已人工检查；想象图均明确标注非现状、非审批依据。",
+      "evidence": "design/production/verification/task6-figure-review.md; 2026-08-11 concept imagery review"
+    },
+    {
+      "check_id": "VISUAL_STATIC",
+      "result": "pass",
+      "severity": "major",
+      "target": "visual/index.html",
+      "message": "离线 HTML 已通过上游视觉封装检查，并在 1440px 桌面与 390px 手机真实浏览器中确认思源黑体加载、九张图片完整、无溢出、破图、外部请求或控制台问题。",
+      "evidence": "design/production/verification/task8-browser-review.md; 2026-08-11 font and concept imagery browser check"
+    },
+    {
+      "check_id": "PDF_RENDER",
+      "result": "pass",
+      "severity": "major",
+      "target": "drawings/",
+      "message": "A3 文册 11 页与 A0 展板 3 页均以正确纸张尺寸生成；思源黑体离线子集已真实加载，无外部请求、破图或脚本，并已栅格化人工检查。",
+      "evidence": "design/production/verification/task9-pdf-review.md; 2026-08-11 font-loaded PDF export"
+    },
+    {
+      "check_id": "PACKAGE_FINALIZATION",
+      "result": "pass",
+      "severity": "major",
+      "target": "manifest.json",
+      "message": "正式 Git 真源已完成 manifest 哈希刷新与完整自检；deterministic、spatial、visual、professional evidence 全部通过，仅保留三处预期 provisional 提示。",
+      "evidence": "design/production/verification/task10-package-review.md"
     }
   ]
 }

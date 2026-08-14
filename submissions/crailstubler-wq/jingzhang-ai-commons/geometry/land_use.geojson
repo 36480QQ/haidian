@@ -1,6 +1,6 @@
 {
   "type": "FeatureCollection",
-  "name": "land_use_topology_partition",
+  "name": "resident_first_concept_partition",
   "features": [
     {
       "type": "Feature",
@@ -8,151 +8,45 @@
       "properties": {
         "id": "LU-001",
         "layer": "LAND_USE",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "land_use_code": "0802",
-        "name_zh": "AI研发创新用地",
-        "area_sqm_declared": 2674562.492
+        "source_type": "unknown",
+        "confidence": "unknown",
+        "geometry_role": "analysis_helper",
+        "source_ids": [
+          "BOUNDARY-SOURCE",
+          "KEY-AREA-SOURCE"
+        ],
+        "assumption_ids": [
+          "A-CONTROLS-001",
+          "A-OSM-CONTEXT-001"
+        ],
+        "usage_note": "未取得正式控规、权属和道路红线前保持留白，不在本次概念方案中预设法定用途。",
+        "land_use_code": "16",
+        "name_zh": "待核条件留白区",
+        "area_sqm_declared": 11412825.386
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3407,
-              39.939
+              116.34070000000001,
+              39.93899999999999
             ],
             [
               116.3397,
               39.975
             ],
             [
-              116.3417,
-              40.006
+              116.34169999999999,
+              40.00600000000001
             ],
             [
-              116.3427,
-              40.0265
+              116.34270000000001,
+              40.026500000000006
             ],
-            [
-              116.344068,
-              40.0265
-            ],
-            [
-              116.344068,
-              39.939
-            ],
-            [
-              116.3407,
-              39.939
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "LU-002",
-      "properties": {
-        "id": "LU-002",
-        "layer": "LAND_USE",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "land_use_code": "1401",
-        "name_zh": "公园绿地与开敞空间",
-        "area_sqm_declared": 2589339.239
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.344068,
-              39.939
-            ],
-            [
-              116.344068,
-              40.0265
-            ],
-            [
-              116.347188,
-              40.0265
-            ],
-            [
-              116.347188,
-              39.939
-            ],
-            [
-              116.344068,
-              39.939
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "LU-003",
-      "properties": {
-        "id": "LU-003",
-        "layer": "LAND_USE",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "land_use_code": "05",
-        "name_zh": "产业服务与商业服务用地",
-        "area_sqm_declared": 3366138.181
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.347188,
-              39.939
-            ],
-            [
-              116.347188,
-              40.0265
-            ],
-            [
-              116.351244,
-              40.0265
-            ],
-            [
-              116.351244,
-              39.939
-            ],
-            [
-              116.347188,
-              39.939
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "LU-004",
-      "properties": {
-        "id": "LU-004",
-        "layer": "LAND_USE",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "land_use_code": "0702",
-        "name_zh": "社区服务与配套用地",
-        "area_sqm_declared": 2782792.823
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
             [
               116.3553,
-              40.0265
+              40.02649999999999
             ],
             [
               116.3533,
@@ -167,16 +61,8 @@
               39.939
             ],
             [
-              116.351244,
-              39.939
-            ],
-            [
-              116.351244,
-              40.0265
-            ],
-            [
-              116.3553,
-              40.0265
+              116.34070000000001,
+              39.93899999999999
             ]
           ]
         ]
