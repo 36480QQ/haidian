@@ -88,6 +88,18 @@
       "why_en": "This is the condition the gate was built for: the English edition once carried 39.6%, 30.0% and a whole 0.24% paragraph the Chinese did not. If the same condition introduced deliberately goes unreported, catching those three was luck."
     },
     {
+      "id": "M14",
+      "gate": "computed_value_qa.py",
+      "target": "proposal.md",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把正文里手写的 RT-N 路线长度改掉一位数字。",
+      "what_en": "Transpose two digits in the hand-written RT-N route length in the prose.",
+      "why_zh": "FIG.29 的全部论证是「这些数不是手写的，是几何算的」——而宣布这件事的那段正文把六个数全手写了一遍。闸门必须抓住其中任何一个走样，否则那段话只是自我表扬。",
+      "why_en": "FIG.29's whole argument is that these numbers are not hand-written but derived from geometry — and the prose announcing it hand-wrote all six. The gate has to catch any one of them drifting, or that sentence is just self-congratulation."
+    },
+    {
       "id": "M8",
       "gate": "stale_corpus_qa.py",
       "target": "proposal.md",
@@ -162,7 +174,7 @@
       "why_en": "This package checks its own drawings with the legible-height ratio and reports a 4.73 mm minimum, all passing. **FIG.27 has just pointed that same ratio at the plate** — which makes whether the ratio itself has ever been shown to fail a question that has to be answered."
     }
   ],
-  "caught": 13,
+  "caught": 14,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
