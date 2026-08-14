@@ -406,15 +406,6 @@
    "confidence": "high",
    "assumptions": []
   },
-  "announced_key_areas_total_ha": {
-   "status": "known",
-   "value": 3684000,
-   "unit": "sqm",
-   "source_files": [],
-   "formula": "公告三处重点区面积之和 368.4 ha（SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT）",
-   "confidence": "high",
-   "assumptions": []
-  },
   "annual_event_system_count": {
    "status": "known",
    "value": 4,
@@ -461,6 +452,54 @@
    "confidence": "low",
    "assumptions": [],
    "reason": "Official regulatory planning conditions and local green-space/heritage/municipal data are not yet published; values stay unknown pending approved controls (see planning_limits.json)."
+  },
+  "spine_series_total_area_sqm": {
+   "status": "known",
+   "value": 4149474.5,
+   "unit": "sqm",
+   "source_files": [
+    "geometry/land_use.geojson"
+   ],
+   "formula": "sum(LU-SPINE-* 用地面积)",
+   "confidence": "medium",
+   "assumptions": [
+    "Calculated from provisional boundary geometry; not suitable for official area claims."
+   ]
+  },
+  "pilot_corridor_1401_area_sqm": {
+   "status": "known",
+   "value": 3872380.1,
+   "unit": "sqm",
+   "source_files": [
+    "geometry/land_use.geojson"
+   ],
+   "formula": "sum(LU-SPINE-* 中 land_use_code=1401 面积)",
+   "confidence": "medium",
+   "assumptions": [
+    "Calculated from provisional boundary geometry; not suitable for official area claims."
+   ]
+  },
+  "gateway_plaza_area_sqm": {
+   "status": "known",
+   "value": 277094.4,
+   "unit": "sqm",
+   "source_files": [
+    "geometry/land_use.geojson"
+   ],
+   "formula": "area(LU-SPINE-DZS)",
+   "confidence": "medium",
+   "assumptions": [
+    "Calculated from provisional boundary geometry; not suitable for official area claims."
+   ]
+  },
+  "announced_key_areas_total_sqm": {
+   "status": "known",
+   "value": 3684000,
+   "unit": "sqm",
+   "source_files": [],
+   "formula": "公告三处重点区面积之和 368.4 ha（SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT）",
+   "confidence": "high",
+   "assumptions": []
   }
  },
  "units": {

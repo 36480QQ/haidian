@@ -12,7 +12,7 @@
     "geometry_role": "provisional_constraint",
     "official_boundary": false,
     "boundary_precision": "provisional_rough",
-    "name_zh": "场景赋能主路（南北贯通）",
+    "name_zh": "低速智能体试验廊主路（概念线位）",
     "road_class_zh": "城市次干路（概念线位）",
     "label_zh": "低速智能体试验廊主路",
     "label_en": "Pilot corridor main road"
@@ -50,7 +50,7 @@
     "geometry_role": "provisional_constraint",
     "official_boundary": false,
     "boundary_precision": "provisional_rough",
-    "name_zh": "众智园东西连接路",
+    "name_zh": "众智园东西连接路（概念线位）",
     "road_class_zh": "城市支路（概念线位）",
     "label_zh": "试验廊连接路(接入轨道与公交)",
     "label_en": "Corridor connector (rail & bus access)"
@@ -80,7 +80,7 @@
     "geometry_role": "provisional_constraint",
     "official_boundary": false,
     "boundary_precision": "provisional_rough",
-    "name_zh": "原点社区东西连接路",
+    "name_zh": "原点社区东西连接路（概念线位）",
     "road_class_zh": "城市支路（概念线位）",
     "label_zh": "试验廊连接路(接入轨道与公交)",
     "label_en": "Corridor connector (rail & bus access)"
@@ -110,7 +110,7 @@
     "geometry_role": "provisional_constraint",
     "official_boundary": false,
     "boundary_precision": "provisional_rough",
-    "name_zh": "大钟寺东西连接路",
+    "name_zh": "大钟寺东西连接路（概念线位）",
     "road_class_zh": "城市支路（概念线位）",
     "label_zh": "试验廊连接路(接入轨道与公交)",
     "label_en": "Corridor connector (rail & bus access)"
@@ -141,7 +141,8 @@
     "road_class": "secondary",
     "label_zh": "AI 企业服务回路",
     "label_en": "AI Enterprise Service Loop",
-    "role_zh": "沿场地内缘 260m 等距回路的服务回路(概念线位),串联三站与中关村科技服务翼"
+    "role_zh": "沿场地内缘 260m 等距回路的服务回路(概念线位),串联三站与中关村科技服务翼",
+    "name_zh": "AI 企业服务回路（沿场地内缘，概念线位）"
    },
    "geometry": {
     "type": "LineString",
