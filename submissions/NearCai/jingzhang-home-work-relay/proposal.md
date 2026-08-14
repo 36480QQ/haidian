@@ -8,7 +8,7 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-iteration: "1.5.0"
+iteration: "1.6.0"
 summary: "沿京张遗址公园建立一条可步行、可停留、可换工位的居业主线；三站以住研庭院、家庭檐廊和站前公共门厅承接项目、家庭与抵达转换，建筑以保留结构、可拆内装和连续公私阈值支持四种居住状态。"
 tracks: ["youth-friendly-public-space", "ai-public-services", "ai-origin-community"]
 scenarios: ["enterprise-service-copilot", "ai-health-service-navigation", "ai-traffic-walkability", "ai-cultural-guide"]
@@ -26,6 +26,8 @@ scenarios: ["enterprise-service-copilot", "ai-health-service-navigation", "ai-tr
 
 本节不是新的设计口号，而是给 Review Agent 和人工复核者的导航页：七个评分维度、七条证据路径和八步 100 天行动包均登记为包内可数对象 [metric:review_score_dimension_count] [metric:review_evidence_map_item_count] [metric:first_100_days_action_count]。72 条桌面负例另在场景负例分母中计数 [metric:scenario_negative_fixture_branch_count]。完整索引见 `visual/assets/review-score-evidence-map.json`、`visual/assets/score-sprint-100-days.json` 和 `visual/assets/scenario-negative-fixtures.json`；这些文件只证明证据链已被组织，不证明任何现场授权、预算、入住资格、租金、容量或实施成效 [data:visual/assets/review-score-evidence-map.json#dimensions] [data:visual/assets/score-sprint-100-days.json#actions] [data:visual/assets/scenario-negative-fixtures.json#negative_branches]。
 
+v1.6 增加一组对抗式桌面审计：12 个负向探针把临时几何、指标漂移、G3 前授权、AI 决策禁区、无 AI 路径、私宅撤回、负例分母、RACI 角色、离线 HTML、中英锚点、原创性和退役回流逐项压测 [metric:adversarial_audit_probe_count] [metric:adversarial_negative_probe_count] [metric:remote_resource_violation_count]。`run-review-adversarial-audit.js` 的持久化结果只证明包内审计合格，不证明外部授权、现场安全、真实公平或专业签字 [data:visual/assets/review-adversarial-audit.validation.json#checks]。
+
 | 评分维度 | 权重 | 本包直接给出的可审查证据 | 硬边界 |
 |---|---:|---|---|
 | 任务书相关性 | 20 | 三层范围、三处重点区、agent.1-agent.6、三条赛道、六项任务在正文、`compliance_matrix.json`、`design_depth_matrix.json`、图层和图件中交叉定位 [metric:key_area_count] | provisional geometry 只支持 intake 与内容讨论，不是 official redline |
@@ -34,7 +36,7 @@ scenarios: ["enterprise-service-copilot", "ai-health-service-navigation", "ai-tr
 | 表达完整度 | 15 | 双语 Markdown、HTML、A3/A0、核心图、离线展示、manifest、自检、来源/假设/版权文件形成同一交付链 | HTML 不加载 CDN、远程字体、地图瓦片、iframe、表单、API 或跟踪代码 |
 | 原创性 | 10 | “居业接力”把铁路编组、换挂、直通转成住房、工位、服务和回流的责任协议；三地标、年度接力周和 cover 均为本包原创 | 国际案例只作背景比较，不复制同伴文本、图件、几何、数据或字段表 |
 | 公共利益与包容 | 10 | 六类用户、十二张场景卡、六条公平验收规则、AI-off、人工复核、无障碍、夜间和多语路径纳入同一分母 [metric:scenario_card_count] [metric:equity_acceptance_rule_count] | 公平等价、真实可负担性、真实容量和留驻率全部保持 unknown |
-| 风险与合规 | 10 | 风险矩阵、假设清单、72 条负例、`not_authorized_not_run`、unknown 不是 pass、失败和退出资产都在正文可见 | 不声明官方背书、获奖、建成、审批、合作、真实成效或专业签字 |
+| 风险与合规 | 10 | 风险矩阵、假设清单、72 条负例、12 个对抗式审计探针、`not_authorized_not_run`、unknown 不是 pass、失败和退出资产都在正文可见 | 不声明官方背书、获奖、建成、审批、合作、真实成效或专业签字 |
 
 ### G0-G4：100天八步冲刺行动包
 
