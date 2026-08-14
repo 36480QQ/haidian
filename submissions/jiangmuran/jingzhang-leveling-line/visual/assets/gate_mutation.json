@@ -64,6 +64,18 @@
       "why_en": "This is how E93's three gaps slipped through: the list held seven names and the three missing files were not on it, the largest of them present in Chinese only. **`scripts/review_submission.py` does not read `visual/assets/` at all**, so a sentence in the prose is the only route by which a reviewer learns these exist — and if one can be deleted without objection, nothing guards that route."
     },
     {
+      "id": "M22",
+      "gate": "computed_value_qa.py",
+      "target": "metrics.json",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把 metrics.json 里的勘误条数改回 92，而随包 errata.json 与两版正文都是 93。",
+      "what_en": "Set the shipped errata count back to 92 while errata.json and both editions of the prose say 93.",
+      "why_zh": "这正是本包实际发出去的状态。`metrics.json` 与 `proposal.md` **同在评审模型整份读取的九个文件里**，所以这处矛盾不需要评审多打开任何东西就能看见。而它不是笔误，是次序：十一个指标数的是随包产物，而那些产物都在 `recompute_metrics.py` 之后才写出来。若这一处能被改回而没有东西反对，那道次序就没有任何东西守着。",
+      "why_en": "This is the state the package actually shipped in. `metrics.json` and `proposal.md` are **both among the nine files the review pipeline reads whole**, so the contradiction needed no extra file to become visible. It was not a typo but an ordering: eleven metrics count shipped artifacts, and every one of those artifacts is written after `recompute_metrics.py` runs. If it can be set back with nothing objecting, nothing guards that ordering."
+    },
+    {
       "id": "M2",
       "gate": "assumption_refs_qa.py",
       "target": "metrics.json",
@@ -259,7 +271,7 @@
       "why_en": "This package checks its own drawings with the legible-height ratio and reports a 4.73 mm minimum, all passing. **FIG.27 has just pointed that same ratio at the plate** — which makes whether the ratio itself has ever been shown to fail a question that has to be answered."
     }
   ],
-  "caught": 21,
+  "caught": 22,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
