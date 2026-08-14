@@ -1,192 +1,148 @@
 {
-  "type": "FeatureCollection",
-  "name": "PHASE",
-  "crs": {
-    "type": "name",
-    "properties": {
-      "name": "urn:ogc:def:crs:OGC::CRS84"
-    }
+ "type": "FeatureCollection",
+ "name": "phasing",
+ "features": [
+  {
+   "type": "Feature",
+   "id": "phase_1",
+   "properties": {
+    "id": "phase_1",
+    "layer": "PHASE",
+    "phase": 1,
+    "name_zh": "一期（2027-2030）近期启动",
+    "source_type": "agent_generated_design",
+    "confidence": "high",
+    "geometry_role": "design_proposal",
+    "official_boundary": false,
+    "area_sqm_declared": 3423847.6
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.35372277083671,
+       39.997718432842774
+      ],
+      [
+       116.34116098188458,
+       39.99764770399871
+      ],
+      [
+       116.34169999999999,
+       40.00600000000001
+      ],
+      [
+       116.34270000000001,
+       40.0265
+      ],
+      [
+       116.3553,
+       40.0265
+      ],
+      [
+       116.35372277083671,
+       39.997718432842774
+      ]
+     ]
+    ]
+   }
   },
-  "features": [
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "phase_001",
-        "layer": "PHASE",
-        "name": "一期建设区（2027-2030）",
-        "name_en": "Phase I Construction Zone (2027-2030)",
-        "phase": 1,
-        "period": "2027-2030",
-        "area_km2": 14.7,
-        "priority": "high",
-        "description": "基础设施、中关村核心区启动、AI源头社区框架",
-        "source_type": "agent_generated_design",
-        "confidence": "high",
-        "geometry_role": "design_proposal",
-        "official_boundary": false
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.33,
-              39.985
-            ],
-            [
-              116.355,
-              39.985
-            ],
-            [
-              116.355,
-              40.02
-            ],
-            [
-              116.33,
-              40.02
-            ],
-            [
-              116.33,
-              39.985
-            ]
-          ]
-        ]
-      },
-      "id": "phase_001"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "phase_002",
-        "layer": "PHASE",
-        "name": "二期建设区（2030-2035）",
-        "name_en": "Phase II Construction Zone (2030-2035)",
-        "phase": 2,
-        "period": "2030-2035",
-        "area_km2": 5.8,
-        "priority": "medium",
-        "description": "大钟寺产业集群、产业应用全面铺开、开源社区成熟",
-        "source_type": "agent_generated_design",
-        "confidence": "high",
-        "geometry_role": "design_proposal",
-        "official_boundary": false
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.335,
-              39.965
-            ],
-            [
-              116.36,
-              39.965
-            ],
-            [
-              116.36,
-              39.985
-            ],
-            [
-              116.335,
-              39.985
-            ],
-            [
-              116.335,
-              39.965
-            ]
-          ]
-        ]
-      },
-      "id": "phase_002"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "phase_003",
-        "layer": "PHASE",
-        "name": "三期建设区（2035-2040）",
-        "name_en": "Phase III Construction Zone (2035-2040)",
-        "phase": 3,
-        "period": "2035-2040",
-        "area_km2": 23.1,
-        "priority": "low",
-        "description": "品质提升、两翼完善、品牌塑造",
-        "source_type": "agent_generated_design",
-        "confidence": "high",
-        "geometry_role": "design_proposal",
-        "official_boundary": false
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.325,
-              39.96
-            ],
-            [
-              116.365,
-              39.96
-            ],
-            [
-              116.365,
-              39.965
-            ],
-            [
-              116.36,
-              39.965
-            ],
-            [
-              116.36,
-              39.985
-            ],
-            [
-              116.355,
-              39.985
-            ],
-            [
-              116.355,
-              39.965
-            ],
-            [
-              116.335,
-              39.965
-            ],
-            [
-              116.335,
-              39.985
-            ],
-            [
-              116.33,
-              39.985
-            ],
-            [
-              116.33,
-              40.02
-            ],
-            [
-              116.325,
-              40.02
-            ],
-            [
-              116.325,
-              39.96
-            ]
-          ]
-        ]
-      },
-      "id": "phase_003"
-    }
-  ],
-  "metadata": {
-    "created_at": "2026-08-12T23:10:00+08:00",
-    "created_by": "zihanCui1215",
-    "agent_name": "WorkBuddy AI Agent",
-    "source": "derived from design proposal",
-    "coordinate_system": "WGS84",
-    "total_features": 3,
-    "total_area_km2": 43.6,
-    "note": "三期实施分区"
+  {
+   "type": "Feature",
+   "id": "phase_2",
+   "properties": {
+    "id": "phase_2",
+    "layer": "PHASE",
+    "phase": 2,
+    "name_zh": "二期（2030-2035）全面推进",
+    "source_type": "agent_generated_design",
+    "confidence": "high",
+    "geometry_role": "design_proposal",
+    "official_boundary": false,
+    "area_sqm_declared": 4565130.2
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.3533,
+       39.989999999999995
+      ],
+      [
+       116.3553,
+       39.965
+      ],
+      [
+       116.35530000425732,
+       39.96320161864294
+      ],
+      [
+       116.340030265111,
+       39.963115690161054
+      ],
+      [
+       116.3397,
+       39.975
+      ],
+      [
+       116.34116098188458,
+       39.99764770399871
+      ],
+      [
+       116.35372277083671,
+       39.997718432842774
+      ],
+      [
+       116.3533,
+       39.989999999999995
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "phase_3",
+   "properties": {
+    "id": "phase_3",
+    "layer": "PHASE",
+    "phase": 3,
+    "name_zh": "三期（2035-2040）远期完善",
+    "source_type": "agent_generated_design",
+    "confidence": "high",
+    "geometry_role": "design_proposal",
+    "official_boundary": false,
+    "area_sqm_declared": 3423847.6
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.34070000000001,
+       39.93899999999999
+      ],
+      [
+       116.340030265111,
+       39.963115690161054
+      ],
+      [
+       116.35530000425732,
+       39.96320161864294
+      ],
+      [
+       116.3553,
+       39.939
+      ],
+      [
+       116.34070000000001,
+       39.93899999999999
+      ]
+     ]
+    ]
+   }
   }
+ ]
 }

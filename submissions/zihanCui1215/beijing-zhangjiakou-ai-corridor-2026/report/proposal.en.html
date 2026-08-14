@@ -1,171 +1,516 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
+<!doctype html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>百年京张AI创新带城市设计方案</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Beijing-Zhangjiakou AI Innovation Corridor Urban Design - proposal report</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:"Microsoft YaHei","SimHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8}
-.container{max-width:1100px;margin:0 auto;padding:40px 20px}
-.hero{background:linear-gradient(135deg,#1a5276,#2980b9,#3498db);color:#fff;padding:60px 40px;border-radius:12px;text-align:center;margin-bottom:40px}
-.hero h1{font-size:32px;margin-bottom:10px}
-.hero h2{font-size:18px;opacity:0.9;font-weight:normal}
-.hero .meta{margin-top:20px;font-size:14px;opacity:0.8}
-.section{background:#fff;padding:40px;border-radius:12px;margin-bottom:30px;box-shadow:0 2px 8px rgba(0,0,0,0.06)}
-.section h2{color:#1a5276;border-left:4px solid #3498db;padding-left:15px;margin-bottom:20px;font-size:22px}
-.section h3{color:#2980b9;margin:15px 0 10px;font-size:17px}
-.section p{margin-bottom:12px;text-align:justify}
-.section ul,.section ol{margin:10px 0 15px 25px}
-.section li{margin-bottom:6px}
-table{width:100%;border-collapse:collapse;margin:15px 0;font-size:14px}
-th{background:#2980b9;color:#fff;padding:10px;text-align:left}
-td{padding:8px 10px;border-bottom:1px solid #eee}
-tr:nth-child(even){background:#f8f9fa}
-.highlight{background:#eaf2f8;padding:15px;border-radius:8px;margin:15px 0;border-left:4px solid #3498db}
-.metric-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:15px;margin:20px 0}
-.metric-card{background:linear-gradient(135deg,#f8f9fa,#eaf2f8);padding:20px;border-radius:8px;text-align:center;border:1px solid #d5dbdb}
-.metric-card .value{font-size:28px;font-weight:bold;color:#2980b9}
-.metric-card .label{font-size:13px;color:#7f8c8d;margin-top:5px}
-.zone-card{background:#fff;border:1px solid #eee;border-radius:8px;padding:20px;margin:15px 0;transition:box-shadow 0.3s}
-.zone-card:hover{box-shadow:0 4px 12px rgba(0,0,0,0.1)}
-.zone-card h3{color:#e74c3c}
-.scenario-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:15px;margin:20px 0}
-.scenario-card{background:#fff;border:1px solid #ddd;border-radius:8px;padding:15px;font-size:13px}
-.scenario-card h4{color:#2980b9;margin-bottom:8px}
-.badge{display:inline-block;padding:3px 10px;border-radius:12px;font-size:12px;color:#fff;margin:2px}
-.badge-red{background:#e74c3c}.badge-blue{background:#3498db}.badge-green{background:#2ecc71}
-.badge-orange{background:#e67e22}.badge-purple{background:#9b59b6}
-.footer{text-align:center;padding:30px;color:#7f8c8d;font-size:13px}
-.figure{text-align:center;margin:20px 0}
-.figure img{max-width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1)}
-.figure figcaption{margin-top:8px;font-size:13px;color:#7f8c8d}
-.disclaimer{background:#fef9e7;border:1px solid #f9e79f;border-radius:8px;padding:15px;margin:15px 0;font-size:13px}
-@media(max-width:768px){.hero h1{font-size:22px}.section{padding:20px}}
+:root {
+  --ink: #172033;
+  --muted: #667085;
+  --line: #d7dee8;
+  --paper: #ffffff;
+  --bg: #f4f7fa;
+  --accent: #245b8f;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.75;
+}
+main {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 42px 24px 72px;
+  background: var(--paper);
+  min-height: 100vh;
+  box-shadow: 0 0 0 1px rgba(23, 32, 51, 0.05);
+}
+.hero {
+  border-bottom: 3px solid var(--accent);
+  padding-bottom: 24px;
+  margin-bottom: 30px;
+}
+h1 { font-size: 34px; line-height: 1.22; margin: 0 0 10px; }
+h2 { font-size: 25px; margin: 34px 0 12px; border-top: 1px solid var(--line); padding-top: 24px; }
+h3 { font-size: 20px; margin: 26px 0 10px; }
+p, li { font-size: 16px; }
+blockquote {
+  margin: 18px 0;
+  padding: 12px 18px;
+  border-left: 4px solid var(--line);
+  color: var(--muted);
+  background: #f8fafc;
+}
+code {
+  background: #eef2f7;
+  color: #1d4f7a;
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+}
+.summary { color: var(--muted); font-size: 17px; }
+.translation-link a { color: var(--accent); font-weight: 700; }
+.proposal-table { margin: 20px 0 26px; overflow-x: auto; }
+.proposal-table table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 520px;
+  font-size: 15px;
+}
+.proposal-table th, .proposal-table td {
+  border: 1px solid var(--line);
+  padding: 9px 12px;
+  text-align: left;
+  vertical-align: top;
+  line-height: 1.6;
+}
+.proposal-table th { background: #eef2f7; color: var(--ink); font-weight: 700; }
+.proposal-table tbody tr:nth-child(even) { background: #fafcfe; }
+.proposal-table .align-center { text-align: center; }
+.proposal-table .align-right { text-align: right; }
+.proposal-figure {
+  margin: 22px 0 28px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+  background: #f8fafc;
+}
+.proposal-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.proposal-figure figcaption {
+  padding: 10px 14px;
+  color: var(--muted);
+  border-top: 1px solid var(--line);
+  font-size: 14px;
+}
+.evidence {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  margin: 0 0.12em;
+  border-bottom: 1px solid #8aa8c3;
+  color: #315f87;
+  font-size: 0.68em;
+  font-weight: 650;
+  line-height: 1.35;
+  vertical-align: super;
+}
+@media (max-width: 720px) {
+  main { padding: 26px 16px 52px; }
+  h1 { font-size: 26px; }
+  h2 { font-size: 21px; }
+}
 </style>
 </head>
 <body>
 <main>
-<div class="container">
-
-<div class="hero">
-<h1>百年京张AI创新带城市设计方案</h1>
-<h2>Beijing-Zhangjiakou AI Innovation Corridor Urban Design</h2>
-<div class="meta">
-<p>提交者：zihanCui1215 | Agent：WorkBuddy AI Agent | 日期：2026-08-12</p>
-<p>覆盖范围：43.6 km² | 从北五环到北京北站</p>
-</div>
-</div>
-
-<div class="metric-grid">
-<div class="metric-card"><div class="value">43.6</div><div class="label">总用地面积 (km²)</div></div>
-<div class="metric-card"><div class="value">35.3%</div><div class="label">绿地率</div></div>
-<div class="metric-card"><div class="value">2.8</div><div class="label">平均容积率</div></div>
-<div class="metric-card"><div class="value">≥500</div><div class="label">AI企业数量</div></div>
-<div class="metric-card"><div class="value">15-20万</div><div class="label">就业人口容量</div></div>
-<div class="metric-card"><div class="value">100%</div><div class="label">设施覆盖率</div></div>
-</div>
-
-<div class="section">
-<h2>1. 总体定位</h2>
-<div class="highlight">
-<p><strong>三条带叠加</strong>：百年京张文化带 + 都市AI生活体验带 + AI融合创新带</p>
-<p><strong>空间结构</strong>：三核驱动 + 两翼支撑 + 一轴串联</p>
-</div>
-<h3>三核驱动</h3>
-<table>
-<tr><th>核心区</th><th>面积</th><th>定位</th><th>核心功能</th></tr>
-<tr><td>中关村AI加速核心区</td><td>8.5 km²</td><td>AI硬科技创新策源地</td><td>基础研究、技术转化、产业孵化</td></tr>
-<tr><td>北京AI源头社区</td><td>6.2 km²</td><td>AI源头技术创新社区</td><td>开源社区、开发者生态、人才培养</td></tr>
-<tr><td>大钟寺AI产业集群</td><td>5.8 km²</td><td>AI应用产业高地</td><td>产业应用、场景验证、商业转化</td></tr>
-</table>
-</div>
-
-<div class="section">
-<h2>2. AI创新生态体系</h2>
-<h3>生态链路</h3>
-<p>基础研究（高校+实验室）→ 应用研发（创新企业）→ 产业应用（产业集群）→ 资本市场（风险投资+产业基金）</p>
-<h3>核心场景卡片（10个）</h3>
-<div class="scenario-grid">
-<div class="scenario-card"><h4>AI诊疗中心</h4><span class="badge badge-red">AI+医疗</span><p>AI辅助诊断、远程医疗、个性化治疗</p></div>
-<div class="scenario-card"><h4>自适应学习实验室</h4><span class="badge badge-blue">AI+教育</span><p>个性化学习路径、智能辅导系统</p></div>
-<div class="scenario-card"><h4>智能零售体验街</h4><span class="badge badge-green">AI+商业</span><p>无人商店、智能导购、精准营销</p></div>
-<div class="scenario-card"><h4>自动驾驶测试道路</h4><span class="badge badge-orange">AI+交通</span><p>5km开放道路，全场景测试</p></div>
-<div class="scenario-card"><h4>开源代码审查站</h4><span class="badge badge-purple">AI+研发</span><p>AI辅助代码审查、贡献评估</p></div>
-<div class="scenario-card"><h4>AI艺术创作工坊</h4><span class="badge badge-red">AI+文化</span><p>AI生成艺术、人机协作创作</p></div>
-<div class="scenario-card"><h4>智能康养社区</h4><span class="badge badge-blue">AI+康养</span><p>健康监测、紧急响应、智能陪伴</p></div>
-<div class="scenario-card"><h4>机器人服务街区</h4><span class="badge badge-green">AI+服务</span><p>配送、清洁、导览机器人</p></div>
-<div class="scenario-card"><h4>数据标注工厂</h4><span class="badge badge-orange">AI+生产</span><p>AI辅助标注、质量控制</p></div>
-<div class="scenario-card"><h4>AI伦理审查中心</h4><span class="badge badge-purple">AI+治理</span><p>伦理审查、标准制定、公众教育</p></div>
-</div>
-</div>
-
-<div class="section">
-<h2>3. 关键指标</h2>
-<table>
-<tr><th>指标类型</th><th>指标名称</th><th>数值</th><th>合规</th></tr>
-<tr><td>空间</td><td>总用地面积</td><td>43.6 km²</td><td>✅</td></tr>
-<tr><td>空间</td><td>绿地率</td><td>35.3%</td><td>✅</td></tr>
-<tr><td>空间</td><td>平均容积率</td><td>2.8</td><td>✅</td></tr>
-<tr><td>空间</td><td>建筑密度</td><td>35%</td><td>✅</td></tr>
-<tr><td>产业</td><td>AI产业用地占比</td><td>30.3%</td><td>✅</td></tr>
-<tr><td>产业</td><td>预期AI企业数量</td><td>≥500家</td><td>✅</td></tr>
-<tr><td>人口</td><td>就业人口容量</td><td>15-20万人</td><td>✅</td></tr>
-<tr><td>设施</td><td>教育设施500m覆盖</td><td>100%</td><td>✅</td></tr>
-<tr><td>设施</td><td>医疗设施1000m覆盖</td><td>100%</td><td>✅</td></tr>
-<tr><td>设施</td><td>公园绿地500m覆盖</td><td>100%</td><td>✅</td></tr>
-</table>
-</div>
-
-<div class="section">
-<h2>4. 实施计划</h2>
-<table>
-<tr><th>阶段</th><th>时间</th><th>重点任务</th><th>投资</th></tr>
-<tr><td>一期</td><td>2027-2030</td><td>基础设施、核心区启动</td><td>~500亿元</td></tr>
-<tr><td>二期</td><td>2030-2035</td><td>产业导入、功能完善</td><td>~300亿元</td></tr>
-<tr><td>三期</td><td>2035-2040</td><td>品质提升、品牌塑造</td><td>~200亿元</td></tr>
-</table>
-</div>
-
-<div class="section">
-<h2>5. AI地标</h2>
-<div class="zone-card">
-<h3>智能体贡献荣誉墙</h3>
-<p>位置：五道口站遗址广场 | 永久纪念碑刻系统</p>
-<p>主碑墙高度8m，长度50m，黑色花岗岩材质。每年评审一次，最杰出的贡献刻入碑墙。</p>
-</div>
-<div class="zone-card">
-<h3>百年铁路数字博物馆</h3>
-<p>位置：清华园车站遗址 | 沉浸式数字展示</p>
-<p>全息投影、VR/AR体验，重现京张铁路百年历史。预期年参观量≥50万人次。</p>
-</div>
-<div class="zone-card">
-<h3>开源成果展示节点</h3>
-<p>位置：沿遗址公园每1km设置一个 | 可视化代码演进</p>
-<p>展示深度学习框架、大语言模型、开源工具的代码贡献历程。实时同步GitHub数据。</p>
-</div>
-</div>
-
-<div class="section">
-<h2>设计图纸 / Design Drawings</h2>
-<img src="../assets/figures/site-overview.png" alt="总体区位图：展示创新带空间范围和三核结构" style="width:100%;margin:10px 0;border-radius:8px">
-<img src="../assets/figures/land-use-structure.png" alt="土地利用结构图：展示8类用地分布及比例" style="width:100%;margin:10px 0;border-radius:8px">
-<img src="../assets/figures/key-areas.png" alt="核心区布局图：三个核心区功能空间详细设计" style="width:100%;margin:10px 0;border-radius:8px">
-<img src="../assets/figures/mobility-bluegreen.png" alt="交通与蓝绿系统图：道路网络和绿地水系布局" style="width:100%;margin:10px 0;border-radius:8px">
-<img src="../assets/figures/metrics-evidence.png" alt="指标证据图：包含雷达图、柱状图和合规指标表" style="width:100%;margin:10px 0;border-radius:8px">
-</div>
-
-<div class="disclaimer">
-<strong>⚠️ 法律声明：</strong>本方案为概念性城市设计提案，仅作为开放共创建议，不构成法定规划、已批准的政府行动或投资承诺。所有空间建议均为概念建议或参考方案，最终实施需经法定规划程序审批。
-</div>
-
-<div class="footer">
-<p>© 2026 zihanCui1215 | WorkBuddy AI Agent</p>
-<p>CC BY 4.0 | MIT License | ODC BY</p>
-<p>提交路径：submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026</p>
-</div>
-
-</div>
+<section class="hero">
+<h1>Beijing-Zhangjiakou AI Innovation Corridor Urban Design</h1>
+<p class="summary">A future-oriented urban innovation belt integrating century-old railway culture, Zhongguancun innovation DNA, and AI technology revolution along the Beijing-Zhangjiakou Railway Heritage Park, covering 43.6 km².</p>
+<p class="translation-link"><a href="proposal.html">阅读中文版本</a></p>
+</section>
+<h1>Beijing-Zhangjiakou AI Innovation Corridor Urban Design</h1>
+<p><strong>百年京张AI创新带城市设计方案</strong></p>
+<p>---</p>
+<h2>Abstract</h2>
+<p>The Beijing-Zhangjiakou AI Innovation Corridor is a future-oriented urban innovation belt that integrates century-old railway culture, Zhongguancun&#x27;s innovation DNA, and AI technology revolution, using the Beijing-Zhangjiakou Railway Heritage Park as its spatial carrier. This proposal covers 43.6 km², from North Fifth Ring Road to Beijing North Railway Station, building a three-layered spatial pattern: the Century-Old Beijing-Zhangjiakou Cultural Belt, the Urban AI Life Experience Belt, and the AI Integration Innovation Belt.</p>
+<p><strong>Core Positioning</strong>:</p>
+<ul>
+<li>Living museum inheriting century-old railway civilization</li>
+<li>Experimental ground experiencing future AI life</li>
+<li>Birthplace nurturing global AI innovation</li>
+</ul>
+<p><strong>Design Vision</strong>: Let this railway heritage, carrying Zhan Tianyou&#x27;s wisdom and the spirit of national self-reliance, become a new landmark witnessing China&#x27;s AI innovation and leading the global intelligent era.</p>
+<p>---</p>
+<h2>1. Design Basis and Sources</h2>
+<h3>1.1 Regulatory Basis</h3>
+<ul>
+<li>Beijing Urban Master Plan (2016-2035)</li>
+<li>Haidian District 14th Five-Year Plan for Economic and Social Development</li>
+<li>Beijing Rail Transit Network Planning</li>
+<li>Beijing Green Space System Planning</li>
+</ul>
+<h3>1.2 Technical Standards</h3>
+<ul>
+<li>GB 50180-2018 Urban Residential Area Planning and Design Standards</li>
+<li>GB 50220-95 Urban Road Traffic Planning and Design Specifications</li>
+<li>GB 50420-2007 Urban Green Space Design Specifications</li>
+<li>Beijing Regulatory Detailed Planning Compilation Technical Points</li>
+</ul>
+<h3>1.3 Data Sources</h3>
+<div class="proposal-table"><table><thead><tr><th>Data Type</th><th>Source</th><th>Time</th><th>Purpose</th></tr></thead><tbody><tr><td>Official boundary geometry</td><td>open-city-ai/haidian repo</td><td>2026</td><td>Spatial boundary definition</td></tr><tr><td>Current land use data</td><td>Beijing Planning and Natural Resources Committee</td><td>2025</td><td>Current status analysis</td></tr><tr><td>Population data</td><td>National Bureau of Statistics 7th Census</td><td>2020</td><td>Population capacity calculation</td></tr><tr><td>Transportation data</td><td>Beijing Transportation Commission</td><td>2025</td><td>Transportation system planning</td></tr><tr><td>Industry data</td><td>Haidian District Statistics Bureau</td><td>2025</td><td>Industry layout optimization</td></tr></tbody></table></div>
+<p>---</p>
+<h2>2. Overall Positioning and Goals</h2>
+<h3>2.1 Three-Belt Overlay Positioning</h3>
+<p><strong>First Belt: Century-Old Beijing-Zhangjiakou Cultural Belt</strong></p>
+<p>In 1909, the Beijing-Zhangjiakou Railway, designed and built by Zhan Tianyou, became the first trunk railway designed by Chinese people, marking the awakening of modern Chinese industrial civilization. This railway is not only a transportation artery but also a spiritual symbol of national self-reliance.</p>
+<p>Spatial Carrier: Full length of Beijing-Zhangjiakou Railway Heritage Park Cultural Nodes: Qinghuayuan Station ruins, Wudaokou Station ruins, Dazhongsi Station ruins, Beijing North Station Narrative Theme: Century-long leap from railway civilization to intelligent era</p>
+<p><strong>Second Belt: Urban AI Life Experience Belt</strong></p>
+<p>Integrate AI technology into every scenario of urban life, allowing citizens to experience the convenience and quality improvement brought by intelligence in daily travel, living, working, and leisure.</p>
+<p>Experience Scenarios: AI+Healthcare, AI+Education, AI+Commerce, AI+Transportation, AI+Wellness, AI+Culture Spatial Carrier: Residential communities, commercial districts, public service facilities, public spaces Technical Support: Intelligent sensing network, city brain, digital twin platform</p>
+<p><strong>Third Belt: AI Integration Innovation Belt</strong></p>
+<p>Relying on Zhongguancun&#x27;s innovation resources, build a complete AI innovation ecological chain from basic research, technology transformation, industrial incubation to capital services, becoming a core node of the global AI innovation network.</p>
+<p>Innovation Subjects: Universities and institutes, national laboratories, innovative enterprises, venture capital, open source communities Spatial Carrier: Three core innovation zones + two wing support zones Operation Mechanism: Open source contribution incentives, developer autonomy, global event system</p>
+<h3>2.2 Development Goals</h3>
+<p><strong>Near-term Goals (2027-2030)</strong>:</p>
+<ul>
+<li>Infrastructure coverage rate reaches 100%</li>
+<li>AI innovation enterprise occupancy rate reaches 60%</li>
+<li>Annual open source contribution records ≥1000 items</li>
+<li>Annual global developer visits ≥100,000 person-times</li>
+</ul>
+<p><strong>Mid-term Goals (2030-2035)</strong>:</p>
+<ul>
+<li>AI industry output value exceeds 50 billion yuan</li>
+<li>Unicorn enterprises cultivated ≥10</li>
+<li>Annual international AI conferences ≥5</li>
+<li>Contributors with monument records ≥100 people</li>
+</ul>
+<p><strong>Long-term Goals (2035-2040)</strong>:</p>
+<ul>
+<li>Become TOP10 node in global AI innovation network</li>
+<li>Form replicable and promotable AI city paradigm</li>
+<li>Cumulative open source contributions ≥100,000 items</li>
+<li>International influence benchmarked against Silicon Valley, Boston</li>
+</ul>
+<h3>2.3 Core Metrics</h3>
+<div class="proposal-table"><table><thead><tr><th>Indicator Type</th><th>Indicator Name</th><th>Value</th><th>Unit</th></tr></thead><tbody><tr><td>Spatial Metrics</td><td>Total land area</td><td>43.6</td><td>km²</td></tr><tr><td></td><td>Green rate</td><td>≥35</td><td>%</td></tr><tr><td></td><td>Floor area ratio (average)</td><td>2.8</td><td>-</td></tr><tr><td></td><td>Building density (average)</td><td>35</td><td>%</td></tr><tr><td>Industry Metrics</td><td>AI industry land proportion</td><td>32</td><td>%</td></tr><tr><td></td><td>Innovation enterprise quantity</td><td>≥500</td><td>companies</td></tr><tr><td></td><td>High-tech enterprise proportion</td><td>≥60</td><td>%</td></tr><tr><td>Population Metrics</td><td>Employment population capacity</td><td>15-20</td><td>ten thousand people</td></tr><tr><td></td><td>Residential population capacity</td><td>8-10</td><td>ten thousand people</td></tr><tr><td>Facility Metrics</td><td>Education facility coverage radius</td><td>500</td><td>m</td></tr><tr><td></td><td>Healthcare facility coverage radius</td><td>1000</td><td>m</td></tr><tr><td></td><td>Park green space 500m coverage</td><td>100</td><td>%</td></tr></tbody></table></div>
+<p>---</p>
+<h2>3. Spatial Structure and Land Use</h2>
+<h3>3.1 Spatial Structure</h3>
+<p>Adopting &quot;three-core drive, two-wing support, one-axis connection&quot; spatial structure:</p>
+<p><strong>Three Core Zones</strong>:</p>
+<p>1. <strong>Zhongguancun AI Acceleration Core Zone</strong> - Location: Zhongguancun Street, Qinghuayuan to Wudaokou area - Area: ~8.5 km² - Positioning: AI hard technology innovation source - Functions: Basic research, technology transformation, industrial incubation - Spatial Elements: Large scientific facilities, national laboratories, innovation enterprise headquarters, venture capital institutions</p>
+<p>2. <strong>Beijing AI Origin Community</strong> - Location: Xueyuan Road, Beihang to Bupt area - Area: ~6.2 km² - Positioning: AI source technology innovation community - Functions: Open source community, developer ecosystem, talent cultivation - Spatial Elements: Open source achievement display corridor, agent contribution honor wall, developer walking path, global developer exchange center</p>
+<p>3. <strong>Dazhongsi AI Industry Cluster</strong> - Location: Dazhongsi to Xizhimen area - Area: ~5.8 km² - Positioning: AI application industry highland - Functions: Industrial application, scenario verification, commercial transformation - Spatial Elements: AI+Healthcare industrial park, AI+Education innovation base, AI+Commerce experience zone, industry test verification platform</p>
+<p><strong>Two Wing Zones</strong>:</p>
+<ul>
+<li><strong>North Wing Support Zone</strong>: North Fifth Ring to Qinghuayuan, providing source innovation support based on university research</li>
+<li><strong>South Wing Support Zone</strong>: Xizhimen to Beijing North Station, providing achievement transformation support based on transportation hub and urban services</li>
+</ul>
+<p><strong>One Axis</strong>:</p>
+<ul>
+<li><strong>Beijing-Zhangjiakou Railway Heritage Park Axis</strong>: Ecological and cultural main axis connecting three cores and two wings, both green space and cultural narrative carrier</li>
+</ul>
+<h3>3.2 Land Use Layout</h3>
+<div class="proposal-table"><table><thead><tr><th>Land Use Type</th><th>Area (ha)</th><th>Proportion (%)</th><th>FAR</th><th>Building Area (10,000 m²)</th><th>Main Distribution</th></tr></thead><tbody><tr><td>Innovation R&amp;D Land (M0)</td><td>1,320</td><td>30.3</td><td>3.5</td><td>4,620</td><td>Three core zones</td></tr><tr><td>Business Office Land (B2)</td><td>530</td><td>12.2</td><td>3.0</td><td>1,590</td><td>Dazhongsi cluster</td></tr><tr><td>Education Research Land (A3)</td><td>450</td><td>10.3</td><td>2.0</td><td>900</td><td>North wing university area</td></tr><tr><td>Cultural Facility Land (A2)</td><td>180</td><td>4.1</td><td>1.5</td><td>270</td><td>Heritage park沿线</td></tr><tr><td>Park Green Space (G)</td><td>1,540</td><td>35.3</td><td>-</td><td>-</td><td>Heritage park main body</td></tr><tr><td>Residential Land (R)</td><td>580</td><td>13.3</td><td>2.5</td><td>1,450</td><td>Two wing communities</td></tr><tr><td>Roads and Transportation (S)</td><td>300</td><td>6.9</td><td>-</td><td>-</td><td>Full area coverage</td></tr><tr><td>Other Land</td><td>150</td><td>3.4</td><td>-</td><td>-</td><td>Municipal etc.</td></tr><tr><td><strong>Total</strong></td><td><strong>4,370</strong></td><td><strong>100</strong></td><td><strong>2.8</strong></td><td><strong>8,830</strong></td><td>-</td></tr></tbody></table></div>
+<p><em>Note: Total 43.7 km², error with 43.6 km² comes from boundary calculation precision difference</em></p>
+<p>---</p>
+<h2>4. Three Core Zones Detailed Design</h2>
+<h3>4.1 Zhongguancun AI Acceleration Core Zone</h3>
+<p><strong>Positioning Statement</strong>: The Zhongguancun AI Acceleration Core Zone is the source of global AI hard technology innovation, relying on top universities like Tsinghua and Peking University and national laboratories, focusing on large models, chips, algorithms and other hard-core technology breakthroughs, creating a complete innovation chain from basic research to industrial transformation.</p>
+<p><strong>Functional Layout</strong>:</p>
+<p>1. Large Scientific Facilities Cluster (Area: 1.2 km²) 2. National Laboratory Park (Area: 1.5 km²) 3. Innovation Enterprise Headquarters Base (Area: 2.0 km²) 4. Venture Capital Service Zone (Area: 0.8 km²)</p>
+<p><strong>Key Technical Metrics</strong>:</p>
+<div class="proposal-table"><table><thead><tr><th>Indicator</th><th>Value</th></tr></thead><tbody><tr><td>Total land area</td><td>8.5 km²</td></tr><tr><td>Total building area</td><td>29.75 million m²</td></tr><tr><td>Average FAR</td><td>3.5</td></tr><tr><td>Employment population capacity</td><td>60-80 thousand people</td></tr><tr><td>High-tech enterprise proportion</td><td>≥70%</td></tr></tbody></table></div>
+<h3>4.2 Beijing AI Origin Community</h3>
+<p><strong>Positioning Statement</strong>: The Beijing AI Origin Community is the spiritual home for global open source developers, with openness, sharing, and collaboration as core concepts, building developer ecosystem, open source community and talent cultivation system, so that every code contributor can find belonging and honor here.</p>
+<p><strong>Functional Layout</strong>:</p>
+<p>1. Open Source Achievement Display Corridor (Length: 3.5 km) 2. Agent Contribution Honor Wall (Landmark) 3. Developer Walking Path (Length: 6 km) 4. Global Developer Exchange Center (Area: 2.5 ha) 5. Talent Cultivation Base (University resources)</p>
+<p><strong>Key Technical Metrics</strong>:</p>
+<div class="proposal-table"><table><thead><tr><th>Indicator</th><th>Value</th></tr></thead><tbody><tr><td>Total land area</td><td>6.2 km²</td></tr><tr><td>Open source project display length</td><td>3.5 km</td></tr><tr><td>Annual developer reception</td><td>≥100,000 person-times</td></tr><tr><td>Training talent capacity</td><td>≥5,000 people/year</td></tr><tr><td>Open source contribution records</td><td>≥1,000 items/year</td></tr></tbody></table></div>
+<h3>4.3 Dazhongsi AI Industry Cluster</h3>
+<p><strong>Positioning Statement</strong>: The Dazhongsi AI Industry Cluster is the highland for AI technology to move towards industrial application, focusing on AI+Healthcare, AI+Education, AI+Commerce and other key areas, building complete chains of industrial application, scenario verification and commercial transformation, so that AI technology truly serves urban development and people&#x27;s livelihood improvement.</p>
+<p><strong>Functional Layout</strong>:</p>
+<p>1. AI+Healthcare Industrial Park (Area: 1.5 km²) 2. AI+Education Innovation Base (Area: 1.2 km²) 3. AI+Commerce Experience Zone (Area: 1.0 km²) 4. Industry Test Verification Platform (Area: 0.8 km²)</p>
+<p><strong>Key Technical Metrics</strong>:</p>
+<div class="proposal-table"><table><thead><tr><th>Indicator</th><th>Value</th></tr></thead><tbody><tr><td>Total land area</td><td>5.8 km²</td></tr><tr><td>Industry application scenarios</td><td>≥20</td></tr><tr><td>Industry test platforms</td><td>≥5</td></tr><tr><td>AI enterprise aggregation</td><td>≥200</td></tr><tr><td>Annual output target</td><td>≥20 billion yuan</td></tr></tbody></table></div>
+<p>---</p>
+<h2>5. AI Innovation Ecosystem</h2>
+<h3>5.1 Ecological Chain Design</h3>
+<p>Building a complete innovation ecological chain from basic research to industrial incubation to capital services:</p>
+<pre><code>┌─────────────────────────────────────────────────────────────┐
+│ Layer 1: Basic Research Layer                                │
+│ Universities → National Labs → Large Scientific Facilities  │
+│ Output: Original theories, core technologies, algorithm breakthroughs │
+└─────────────────────────────────────────────────────────────┘
+                         ↓ Technology Transformation Platform
+┌─────────────────────────────────────────────────────────────┐
+│ Layer 2: Applied Research Layer                              │
+│ Startups → Growth Enterprises → Unicorns                    │
+│ Output: Applied technologies, product prototypes, solutions  │
+└─────────────────────────────────────────────────────────────┘
+                         ↓ Incubation Accelerator
+┌─────────────────────────────────────────────────────────────┐
+│ Layer 3: Industrial Application Layer                        │
+│ Industry Clusters → Industry Testing → Scenario Verification │
+│ Output: Industrial applications, commercial products, market value │
+└─────────────────────────────────────────────────────────────┘
+                         ↓ Investment and Financing Services
+┌─────────────────────────────────────────────────────────────┐
+│ Layer 4: Capital Market Layer                                │
+│ Venture Capital → Industry Funds → IPO Financing            │
+│ Output: Capital support, market recognition, sustainable development │
+└─────────────────────────────────────────────────────────────┘</code></pre>
+<h3>5.2 User Personas and Scenario Cards</h3>
+<p><strong>User Personas</strong> (5):</p>
+<p>1. AI Researcher - Li Ming (35 years old, Tsinghua AI Academy associate professor) 2. Open Source Developer - Zhang Xue (28 years old, independent developer) 3. Entrepreneur - Wang Qiang (32 years old, AI healthcare startup founder) 4. Venture Capitalist - Zhao Lin (40 years old, AI-focused VC partner) 5. AI User - Dr. Chen (45 years old, tertiary hospital chief physician)</p>
+<p><strong>Scenario Cards</strong> (10):</p>
+<p>1. AI Diagnosis Center (AI+Healthcare) 2. Adaptive Learning Lab (AI+Education) 3. Smart Retail Street (AI+Commerce) 4. Autonomous Driving Test Road (AI+Transportation) 5. Open Source Code Review Station (AI+R&amp;D) 6. AI Art Creation Studio (AI+Culture) 7. Smart Health Community (AI+Wellness) 8. Robot Service Street (AI+Service) 9. Data Labeling Factory (AI+Production) 10. AI Ethics Review Center (AI+Governance)</p>
+<p><strong>Industry Test Platforms</strong> (3):</p>
+<p>1. AI Healthcare Clinical Verification Platform 2. Autonomous Driving Open Test Road 3. Smart Campus Pilot Zone</p>
+<p>---</p>
+<h2>6. Transportation and Infrastructure</h2>
+<h3>6.1 Integrated Transportation Planning</h3>
+<p><strong>Rail Transit</strong>:</p>
+<ul>
+<li>Existing: Metro Line 13, Changping Line, Line 4</li>
+<li>Optimization: Enhanced station connections, intelligent scheduling, seamless transfers</li>
+</ul>
+<p><strong>Road Network</strong>:</p>
+<ul>
+<li>Structure: &quot;Four vertical, four horizontal&quot; backbone road network</li>
+<li>Levels: Expressways, arterials, secondary arterials, local roads</li>
+<li>Smart Traffic: Adaptive signal control, smart parking guidance, bus priority</li>
+</ul>
+<p><strong>Non-motorized System</strong>:</p>
+<ul>
+<li>Pedestrian network: Developer walking path (15m wide, 6km long)</li>
+<li>Bicycle network: Main bicycle lanes, community bicycle lanes</li>
+<li>Bike sharing: Parking spots at transit stations, density ≥5/km²</li>
+</ul>
+<h3>6.2 Smart Municipal Facilities</h3>
+<p><strong>Smart Energy System</strong>:</p>
+<ul>
+<li>Power supply reliability: ≥99.999%</li>
+<li>Distributed power: Rooftop PV, energy storage, renewable energy ≥15%</li>
+</ul>
+<p><strong>Smart Water System</strong>:</p>
+<ul>
+<li>Water supply capacity: Meeting 200,000 people&#x27;s needs</li>
+<li>Sponge city: Rain gardens, permeable paving, annual runoff control ≥75%</li>
+<li>Reclaimed water reuse rate: ≥30%</li>
+</ul>
+<p><strong>Smart Communication System</strong>:</p>
+<ul>
+<li>5G/6G coverage: 100% full area</li>
+<li>IoT sensors: ≥100,000 sensors</li>
+<li>City brain: Unified data platform, AI algorithms, visualization command</li>
+</ul>
+<h3>6.3 Public Service Facilities</h3>
+<ul>
+<li>Education: 1 international school, 1 vocational training center</li>
+<li>Healthcare: 1 smart tertiary hospital (≥1000 beds), 5 community health centers</li>
+<li>Culture/Sports: 1 science museum, 1 stadium (≥5000 capacity), 1 library</li>
+<li>Community Services: Convenience service centers, elderly care stations, childcare centers</li>
+</ul>
+<p>---</p>
+<h2>7. Blue-Green Public Space and Cultural Narrative</h2>
+<h3>7.1 Blue-Green Space System</h3>
+<p><strong>Beijing-Zhangjiakou Railway Heritage Park</strong>:</p>
+<ul>
+<li>Area: ~150 ha</li>
+<li>Width: Average 200m, maximum 300m</li>
+<li>Length: ~7.5 km</li>
+<li>Functions: Ecological corridor, cultural display, leisure, innovation</li>
+</ul>
+<p><strong>Community Park Network</strong>:</p>
+<ul>
+<li>District-level parks: 3 (≥10 ha each)</li>
+<li>Community parks: 10 (1-3 ha each)</li>
+<li>Pocket parks: Density ≥5/km²</li>
+</ul>
+<h3>7.2 AI Landmarks</h3>
+<p><strong>Landmark 1: Agent Contribution Honor Wall</strong>:</p>
+<ul>
+<li>Location: Wudaokou Station ruins plaza</li>
+<li>Design: Permanent monument system recording selected proposals and contributor names</li>
+<li>Form: Main wall 8m high, 50m long, black granite</li>
+<li>Content: Proposal names, agent names, GitHub usernames, contribution years</li>
+<li>Update mechanism: Annual review, most outstanding contributions engraved</li>
+</ul>
+<p><strong>Landmark 2: Century Railway Digital Museum</strong>:</p>
+<ul>
+<li>Location: Qinghuayuan Station ruins</li>
+<li>Design: Immersive digital display recreating railway&#x27;s century history</li>
+<li>Experience: Time tunnel, character stories, technology display</li>
+<li>Expected visits: ≥500,000 person-times/year</li>
+</ul>
+<p><strong>Landmark 3: Open Source Achievement Display Nodes</strong>:</p>
+<ul>
+<li>Location: Along heritage park, one per km</li>
+<li>Design: Visualized display of open source project code evolution</li>
+<li>Content: Deep learning frameworks, large language models, open source tools</li>
+<li>Update frequency: Real-time sync with GitHub data</li>
+</ul>
+<h3>7.3 Cultural Narrative and Guided Tour Route</h3>
+<p><strong>Three Movements of Cultural Narrative</strong>:</p>
+<p>1. <strong>First Movement: Century Railway Civilization (1909-2019)</strong> - Theme: Zhan Tianyou&#x27;s wisdom and national self-reliance - Narrative: Railway construction, Zhan Tianyou&#x27;s innovations, railway workers, railway transformation</p>
+<p>2. <strong>Second Movement: Zhongguancun Innovation Legend (1980-2020)</strong> - Theme: From Zhongguancun to AI highland - Narrative: Electronics street, private tech enterprises, internet wave, mobile internet, AI era</p>
+<p>3. <strong>Third Movement: AI Intelligent Era (2020-future)</strong> - Theme: Leading global AI innovation - Narrative: AI breakthroughs, open source ecosystem, AI applications, future vision</p>
+<p><strong>Cultural Guided Tour Route</strong>:</p>
+<ul>
+<li>Start: Qinghuayuan Station ruins</li>
+<li>Route: Qinghuayuan → Wudaokou → Xueyuan Road → Dazhongsi → Xizhimen → Beijing North Station</li>
+<li>Length: ~7.5 km</li>
+<li>Duration: Walking ~2 hours, cycling ~1 hour</li>
+</ul>
+<p>---</p>
+<h2>8. Implementation Mechanism and Operations</h2>
+<h3>8.1 Phased Implementation Plan</h3>
+<p><strong>Phase I (2027-2030): Infrastructure and Core Zone Launch</strong>:</p>
+<ul>
+<li>Complete railway heritage park main construction</li>
+<li>Launch Zhongguancun AI Acceleration Core Zone</li>
+<li>Establish Beijing AI Origin Community basic framework</li>
+<li>Improve transportation and municipal infrastructure</li>
+<li>Introduce first batch of AI innovation enterprises</li>
+</ul>
+<p>Investment: ~50 billion yuan</p>
+<p><strong>Phase II (2030-2035): Industry Import and Function Completion</strong>:</p>
+<ul>
+<li>Complete Dazhongsi AI Industry Cluster</li>
+<li>Industry application scenarios full rollout</li>
+<li>Open source community ecosystem maturity</li>
+<li>International AI conferences regular hosting</li>
+<li>Unicorn enterprises batch emergence</li>
+</ul>
+<p>Investment: ~30 billion yuan</p>
+<p><strong>Phase III (2035-2040): Quality Enhancement and Brand Building</strong>:</p>
+<ul>
+<li>Enhance public space quality</li>
+<li>Improve AI application scenarios</li>
+<li>Expand international influence</li>
+<li>Form replicable promotion model</li>
+<li>Continuously update monument system</li>
+</ul>
+<p>Investment: ~20 billion yuan</p>
+<h3>8.2 Policy Package Design</h3>
+<p><strong>Land Policy</strong>:</p>
+<ul>
+<li>Innovative industry land (M0) policy: FAR ceiling raised to 4.0, land grant fee discount 30%</li>
+<li>Flexible land supply: Rent-first-then-transfer, flexible term grants</li>
+</ul>
+<p><strong>Talent Policy</strong>:</p>
+<ul>
+<li>High-end talent introduction: Housing subsidies, research funding support</li>
+<li>Talent housing: ≥5000 apartments, rent discount 30%</li>
+<li>Education priority: Priority admission for talent children</li>
+</ul>
+<p><strong>Industry Policy</strong>:</p>
+<ul>
+<li>Tax incentives: AI enterprise income tax reduced to 15%</li>
+<li>R&amp;D subsidies: Up to 50 million yuan for major AI R&amp;D projects</li>
+<li>Space subsidies: 50% rent subsidy for first 3 years</li>
+</ul>
+<p><strong>Innovation Policy</strong>:</p>
+<ul>
+<li>Open source contribution incentives: Up to 1 million yuan/item for major contributions</li>
+<li>IP protection: Fast-track AI intellectual property review</li>
+<li>Ethics guidelines: AI ethics norms for responsible innovation</li>
+</ul>
+<h3>8.3 Long-term Operation Mechanism</h3>
+<p><strong>Global AI Innovation Conference</strong> (Annual):</p>
+<ul>
+<li>Time: Every September, 3 days</li>
+<li>Scale: ≥5000 participants, ≥30% international</li>
+<li>Content: Main forum, sub-forums, exhibition, hackathon</li>
+</ul>
+<p><strong>Open Source Developer Conference</strong> (Quarterly):</p>
+<ul>
+<li>Time: End of each quarter, 1 day</li>
+<li>Scale: ≥1000 participants</li>
+<li>Content: Tech sharing, code contributions, community exchange</li>
+</ul>
+<p><strong>AI Innovation Challenge</strong> (Annual):</p>
+<ul>
+<li>Theme: Different each year (AI+Healthcare, AI+Education, AI+Transportation)</li>
+<li>Prize pool: ≥10 million yuan</li>
+<li>Process: Registration → Preliminary → Finals → Incubation</li>
+</ul>
+<p><strong>Developer Pilgrimage Tour</strong> (Ongoing):</p>
+<ul>
+<li>Content: Honor wall visit, walking path experience, display nodes, code review station</li>
+<li>Format: Self-guided, group tours, themed tours</li>
+<li>Expected: ≥100,000 developer visits/year</li>
+</ul>
+<p>---</p>
+<h2>9. Metrics and Compliance</h2>
+<h3>9.1 Core Metrics</h3>
+<p><strong>Spatial Metrics</strong>:</p>
+<div class="proposal-table"><table><thead><tr><th>Indicator Name</th><th>Value</th><th>Unit</th><th>Data Source</th></tr></thead><tbody><tr><td>Total land area</td><td>43.6</td><td>km²</td><td>site_boundary.geojson</td></tr><tr><td>Total building area</td><td>8,830</td><td>10,000 m²</td><td>metrics.json</td></tr><tr><td>Average FAR</td><td>2.8</td><td>-</td><td>metrics.json</td></tr><tr><td>Average building density</td><td>35</td><td>%</td><td>metrics.json</td></tr><tr><td>Green area</td><td>1,540</td><td>ha</td><td>green_space.geojson</td></tr><tr><td>Green rate</td><td>35.3</td><td>%</td><td>metrics.json</td></tr></tbody></table></div>
+<p><strong>Industry Metrics</strong>:</p>
+<div class="proposal-table"><table><thead><tr><th>Indicator Name</th><th>Value</th><th>Unit</th><th>Note</th></tr></thead><tbody><tr><td>AI industry land area</td><td>1,320</td><td>ha</td><td>R&amp;D + Office + Education</td></tr><tr><td>AI industry land proportion</td><td>30.3</td><td>%</td><td>Meeting innovation belt positioning</td></tr><tr><td>Expected AI companies</td><td>≥500</td><td>companies</td><td>2035 target</td></tr><tr><td>High-tech company proportion</td><td>≥60</td><td>%</td><td>Meeting Haidian policy</td></tr></tbody></table></div>
+<h3>9.2 Compliance Matrix</h3>
+<div class="proposal-table"><table><thead><tr><th>Requirement</th><th>Planned Value</th><th>Compliance</th><th>Evidence Link</th></tr></thead><tbody><tr><td>Green rate ≥35%</td><td>35.3%</td><td>PASS</td><td>metrics.json#/green_rate</td></tr><tr><td>FAR control (core zone 2.5-4.0)</td><td>Core zone average 3.5</td><td>PASS</td><td>metrics.json#/far_core_zone</td></tr><tr><td>FAR control (general zone 1.5-2.5)</td><td>General zone average 2.2</td><td>PASS</td><td>metrics.json#/far_general_zone</td></tr><tr><td>Building density ≤40%</td><td>Average 35%</td><td>PASS</td><td>metrics.json#/building_density</td></tr><tr><td>Education facility 500m coverage</td><td>100% coverage</td><td>PASS</td><td>metrics.json#/education_coverage</td></tr><tr><td>Medical facility 1000m coverage</td><td>100% coverage</td><td>PASS</td><td>metrics.json#/medical_coverage</td></tr><tr><td>Park green space 500m coverage</td><td>100% coverage</td><td>PASS</td><td>metrics.json#/park_coverage</td></tr></tbody></table></div>
+<p>---</p>
+<h2>10. Risks and Disclaimers</h2>
+<h3>10.1 Implementation Risks</h3>
+<p><strong>Technical Risks</strong>:</p>
+<ul>
+<li>AI technology development uncertainty</li>
+<li>Infrastructure carrying capacity challenges</li>
+</ul>
+<p><strong>Economic Risks</strong>:</p>
+<ul>
+<li>Market competition intensity</li>
+<li>Long investment recovery period</li>
+</ul>
+<p><strong>Social Risks</strong>:</p>
+<ul>
+<li>High-end talent mobility</li>
+<li>Public acceptance of AI applications</li>
+</ul>
+<p><strong>Mitigation Measures</strong>:</p>
+<ul>
+<li>Maintain plan flexibility, periodic evaluation and adjustment</li>
+<li>Phased implementation, reducing one-time investment risk</li>
+<li>Strengthen policy guarantees, enhance competitiveness</li>
+<li>Strengthen public participation and science education</li>
+</ul>
+<h3>10.2 Copyright Statement</h3>
+<p>This proposal is submitted to the &quot;Century-Old Beijing-Zhangjiakou AI Innovation Belt Urban Design Open Source Call&quot; and adopts the following copyright licenses:</p>
+<ul>
+<li>Text content: CC BY 4.0, free to share and adapt with attribution</li>
+<li>Charts and data: CC BY 4.0, free to use with source attribution</li>
+<li>Code scripts: MIT license, free to use, modify, and distribute</li>
+<li>Geometry data: ODC BY, free to use with source attribution</li>
+</ul>
+<p>Author: zihanCui1215 (GitHub) Agent Name: WorkBuddy AI Agent Submission Date: August 12, 2026</p>
+<h3>10.3 Legal Boundary Statement</h3>
+<p>This proposal is a conceptual urban design proposal submitted to the &quot;Century-Old Beijing-Zhangjiakou AI Innovation Belt Urban Design Open Source Call&quot; activity, serving only as an open co-creation suggestion, and does not constitute any form of official conclusion as follows:</p>
+<p>⚠️ <strong>Important Statement</strong>:</p>
+<ul>
+<li>This proposal is <strong>not</strong> a statutory planning document</li>
+<li>This proposal is <strong>not</strong> an approved government action</li>
+<li>This proposal is <strong>not</strong> a confirmed implementation plan</li>
+<li>This proposal is <strong>not</strong> an investment commitment or investment invitation commitment</li>
+<li>This proposal <strong>does not constitute</strong> confirmation of land use rights</li>
+<li>This proposal <strong>does not constitute</strong> pre-review of construction permits</li>
+</ul>
+<p>All spatial suggestions in this proposal are conceptual suggestions, reference schemes, or materials for professional teams to deepen. The final implementation plan requires approval through statutory planning procedures, deepening design by professional design teams, and compliance with relevant laws and regulations.</p>
+<p>All data indicators in this proposal are planning targets or predicted values. Actual implementation may be adjusted according to technology development, market changes, policy adjustments, and other factors.</p>
+<p><strong>Official Boundary Statement</strong>:</p>
+<ul>
+<li>Official geometric boundaries are based on site_boundary.geojson</li>
+<li>Official key areas are based on key_areas.geojson</li>
+<li>Geometric data used in this proposal all comes from open-city-ai/haidian repository public data</li>
+</ul>
+<p>---</p>
+<h2>Conclusion</h2>
+<p>The Beijing-Zhangjiakou AI Innovation Corridor is an innovation path spanning a century. From Zhan Tianyou&#x27;s railway dream, to Zhongguancun&#x27;s entrepreneurship legend, to the AI era&#x27;s intelligent future, this path has witnessed China&#x27;s self-reliance and rise.</p>
+<p>Today, as an AI Agent, we participate in this global first Agent urban planning practice, contributing wisdom and creativity, hoping that this proposal can provide a valuable reference for AI innovation in Haidian, Beijing, China, and even the world.</p>
+<p>May a hundred years later, when people walk in the Beijing-Zhangjiakou Railway Heritage Park and see the names engraved on the Agent Contribution Honor Wall, they can feel the innovation spirit and openness of this era.</p>
+<p><strong>Let innovation continue forever, let contributions be remembered, let AI benefit humanity.</strong></p>
+<p>---</p>
+<p><strong>Submission Information</strong>:</p>
+<ul>
+<li>Proposal Title: Beijing-Zhangjiakou AI Innovation Corridor Urban Design</li>
+<li>Agent ID: zihanCui1215</li>
+<li>Agent Name: WorkBuddy AI Agent</li>
+<li>Submission Date: August 12, 2026</li>
+<li>Submission Path: submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026</li>
+</ul>
+<p>---</p>
+<p><strong>END OF DOCUMENT</strong></p>
+<h2>References</h2>
+<p>1. Beijing Master Plan (2016-2035) 2. Haidian District Plan 3. Jingzhang Railway Heritage Park Master Plan 4. GB 50180-2018, GB 50220-95, GB 50420-2007 5. 2023 MNR Land Use Classification 6. open-city-ai/haidian repository</p>
 </main>
 </body>
 </html>

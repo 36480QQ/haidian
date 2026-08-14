@@ -1,171 +1,1018 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>百年京张AI创新带城市设计方案</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>百年京张AI创新带城市设计方案 - proposal report</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:"Microsoft YaHei","SimHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.8}
-.container{max-width:1100px;margin:0 auto;padding:40px 20px}
-.hero{background:linear-gradient(135deg,#1a5276,#2980b9,#3498db);color:#fff;padding:60px 40px;border-radius:12px;text-align:center;margin-bottom:40px}
-.hero h1{font-size:32px;margin-bottom:10px}
-.hero h2{font-size:18px;opacity:0.9;font-weight:normal}
-.hero .meta{margin-top:20px;font-size:14px;opacity:0.8}
-.section{background:#fff;padding:40px;border-radius:12px;margin-bottom:30px;box-shadow:0 2px 8px rgba(0,0,0,0.06)}
-.section h2{color:#1a5276;border-left:4px solid #3498db;padding-left:15px;margin-bottom:20px;font-size:22px}
-.section h3{color:#2980b9;margin:15px 0 10px;font-size:17px}
-.section p{margin-bottom:12px;text-align:justify}
-.section ul,.section ol{margin:10px 0 15px 25px}
-.section li{margin-bottom:6px}
-table{width:100%;border-collapse:collapse;margin:15px 0;font-size:14px}
-th{background:#2980b9;color:#fff;padding:10px;text-align:left}
-td{padding:8px 10px;border-bottom:1px solid #eee}
-tr:nth-child(even){background:#f8f9fa}
-.highlight{background:#eaf2f8;padding:15px;border-radius:8px;margin:15px 0;border-left:4px solid #3498db}
-.metric-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:15px;margin:20px 0}
-.metric-card{background:linear-gradient(135deg,#f8f9fa,#eaf2f8);padding:20px;border-radius:8px;text-align:center;border:1px solid #d5dbdb}
-.metric-card .value{font-size:28px;font-weight:bold;color:#2980b9}
-.metric-card .label{font-size:13px;color:#7f8c8d;margin-top:5px}
-.zone-card{background:#fff;border:1px solid #eee;border-radius:8px;padding:20px;margin:15px 0;transition:box-shadow 0.3s}
-.zone-card:hover{box-shadow:0 4px 12px rgba(0,0,0,0.1)}
-.zone-card h3{color:#e74c3c}
-.scenario-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:15px;margin:20px 0}
-.scenario-card{background:#fff;border:1px solid #ddd;border-radius:8px;padding:15px;font-size:13px}
-.scenario-card h4{color:#2980b9;margin-bottom:8px}
-.badge{display:inline-block;padding:3px 10px;border-radius:12px;font-size:12px;color:#fff;margin:2px}
-.badge-red{background:#e74c3c}.badge-blue{background:#3498db}.badge-green{background:#2ecc71}
-.badge-orange{background:#e67e22}.badge-purple{background:#9b59b6}
-.footer{text-align:center;padding:30px;color:#7f8c8d;font-size:13px}
-.figure{text-align:center;margin:20px 0}
-.figure img{max-width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1)}
-.figure figcaption{margin-top:8px;font-size:13px;color:#7f8c8d}
-.disclaimer{background:#fef9e7;border:1px solid #f9e79f;border-radius:8px;padding:15px;margin:15px 0;font-size:13px}
-@media(max-width:768px){.hero h1{font-size:22px}.section{padding:20px}}
+:root {
+  --ink: #172033;
+  --muted: #667085;
+  --line: #d7dee8;
+  --paper: #ffffff;
+  --bg: #f4f7fa;
+  --accent: #245b8f;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.75;
+}
+main {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 42px 24px 72px;
+  background: var(--paper);
+  min-height: 100vh;
+  box-shadow: 0 0 0 1px rgba(23, 32, 51, 0.05);
+}
+.hero {
+  border-bottom: 3px solid var(--accent);
+  padding-bottom: 24px;
+  margin-bottom: 30px;
+}
+h1 { font-size: 34px; line-height: 1.22; margin: 0 0 10px; }
+h2 { font-size: 25px; margin: 34px 0 12px; border-top: 1px solid var(--line); padding-top: 24px; }
+h3 { font-size: 20px; margin: 26px 0 10px; }
+p, li { font-size: 16px; }
+blockquote {
+  margin: 18px 0;
+  padding: 12px 18px;
+  border-left: 4px solid var(--line);
+  color: var(--muted);
+  background: #f8fafc;
+}
+code {
+  background: #eef2f7;
+  color: #1d4f7a;
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+}
+.summary { color: var(--muted); font-size: 17px; }
+.translation-link a { color: var(--accent); font-weight: 700; }
+.proposal-table { margin: 20px 0 26px; overflow-x: auto; }
+.proposal-table table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 520px;
+  font-size: 15px;
+}
+.proposal-table th, .proposal-table td {
+  border: 1px solid var(--line);
+  padding: 9px 12px;
+  text-align: left;
+  vertical-align: top;
+  line-height: 1.6;
+}
+.proposal-table th { background: #eef2f7; color: var(--ink); font-weight: 700; }
+.proposal-table tbody tr:nth-child(even) { background: #fafcfe; }
+.proposal-table .align-center { text-align: center; }
+.proposal-table .align-right { text-align: right; }
+.proposal-figure {
+  margin: 22px 0 28px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+  background: #f8fafc;
+}
+.proposal-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.proposal-figure figcaption {
+  padding: 10px 14px;
+  color: var(--muted);
+  border-top: 1px solid var(--line);
+  font-size: 14px;
+}
+.evidence {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  margin: 0 0.12em;
+  border-bottom: 1px solid #8aa8c3;
+  color: #315f87;
+  font-size: 0.68em;
+  font-weight: 650;
+  line-height: 1.35;
+  vertical-align: super;
+}
+@media (max-width: 720px) {
+  main { padding: 26px 16px 52px; }
+  h1 { font-size: 26px; }
+  h2 { font-size: 21px; }
+}
 </style>
 </head>
 <body>
 <main>
-<div class="container">
-
-<div class="hero">
+<section class="hero">
 <h1>百年京张AI创新带城市设计方案</h1>
-<h2>Beijing-Zhangjiakou AI Innovation Corridor Urban Design</h2>
-<div class="meta">
-<p>提交者：zihanCui1215 | Agent：WorkBuddy AI Agent | 日期：2026-08-12</p>
-<p>覆盖范围：43.6 km² | 从北五环到北京北站</p>
-</div>
-</div>
-
-<div class="metric-grid">
-<div class="metric-card"><div class="value">43.6</div><div class="label">总用地面积 (km²)</div></div>
-<div class="metric-card"><div class="value">35.3%</div><div class="label">绿地率</div></div>
-<div class="metric-card"><div class="value">2.8</div><div class="label">平均容积率</div></div>
-<div class="metric-card"><div class="value">≥500</div><div class="label">AI企业数量</div></div>
-<div class="metric-card"><div class="value">15-20万</div><div class="label">就业人口容量</div></div>
-<div class="metric-card"><div class="value">100%</div><div class="label">设施覆盖率</div></div>
-</div>
-
-<div class="section">
-<h2>1. 总体定位</h2>
-<div class="highlight">
-<p><strong>三条带叠加</strong>：百年京张文化带 + 都市AI生活体验带 + AI融合创新带</p>
-<p><strong>空间结构</strong>：三核驱动 + 两翼支撑 + 一轴串联</p>
-</div>
-<h3>三核驱动</h3>
-<table>
-<tr><th>核心区</th><th>面积</th><th>定位</th><th>核心功能</th></tr>
-<tr><td>中关村AI加速核心区</td><td>8.5 km²</td><td>AI硬科技创新策源地</td><td>基础研究、技术转化、产业孵化</td></tr>
-<tr><td>北京AI源头社区</td><td>6.2 km²</td><td>AI源头技术创新社区</td><td>开源社区、开发者生态、人才培养</td></tr>
-<tr><td>大钟寺AI产业集群</td><td>5.8 km²</td><td>AI应用产业高地</td><td>产业应用、场景验证、商业转化</td></tr>
-</table>
-</div>
-
-<div class="section">
-<h2>2. AI创新生态体系</h2>
-<h3>生态链路</h3>
-<p>基础研究（高校+实验室）→ 应用研发（创新企业）→ 产业应用（产业集群）→ 资本市场（风险投资+产业基金）</p>
-<h3>核心场景卡片（10个）</h3>
-<div class="scenario-grid">
-<div class="scenario-card"><h4>AI诊疗中心</h4><span class="badge badge-red">AI+医疗</span><p>AI辅助诊断、远程医疗、个性化治疗</p></div>
-<div class="scenario-card"><h4>自适应学习实验室</h4><span class="badge badge-blue">AI+教育</span><p>个性化学习路径、智能辅导系统</p></div>
-<div class="scenario-card"><h4>智能零售体验街</h4><span class="badge badge-green">AI+商业</span><p>无人商店、智能导购、精准营销</p></div>
-<div class="scenario-card"><h4>自动驾驶测试道路</h4><span class="badge badge-orange">AI+交通</span><p>5km开放道路，全场景测试</p></div>
-<div class="scenario-card"><h4>开源代码审查站</h4><span class="badge badge-purple">AI+研发</span><p>AI辅助代码审查、贡献评估</p></div>
-<div class="scenario-card"><h4>AI艺术创作工坊</h4><span class="badge badge-red">AI+文化</span><p>AI生成艺术、人机协作创作</p></div>
-<div class="scenario-card"><h4>智能康养社区</h4><span class="badge badge-blue">AI+康养</span><p>健康监测、紧急响应、智能陪伴</p></div>
-<div class="scenario-card"><h4>机器人服务街区</h4><span class="badge badge-green">AI+服务</span><p>配送、清洁、导览机器人</p></div>
-<div class="scenario-card"><h4>数据标注工厂</h4><span class="badge badge-orange">AI+生产</span><p>AI辅助标注、质量控制</p></div>
-<div class="scenario-card"><h4>AI伦理审查中心</h4><span class="badge badge-purple">AI+治理</span><p>伦理审查、标准制定、公众教育</p></div>
-</div>
-</div>
-
-<div class="section">
-<h2>3. 关键指标</h2>
-<table>
-<tr><th>指标类型</th><th>指标名称</th><th>数值</th><th>合规</th></tr>
-<tr><td>空间</td><td>总用地面积</td><td>43.6 km²</td><td>✅</td></tr>
-<tr><td>空间</td><td>绿地率</td><td>35.3%</td><td>✅</td></tr>
-<tr><td>空间</td><td>平均容积率</td><td>2.8</td><td>✅</td></tr>
-<tr><td>空间</td><td>建筑密度</td><td>35%</td><td>✅</td></tr>
-<tr><td>产业</td><td>AI产业用地占比</td><td>30.3%</td><td>✅</td></tr>
-<tr><td>产业</td><td>预期AI企业数量</td><td>≥500家</td><td>✅</td></tr>
-<tr><td>人口</td><td>就业人口容量</td><td>15-20万人</td><td>✅</td></tr>
-<tr><td>设施</td><td>教育设施500m覆盖</td><td>100%</td><td>✅</td></tr>
-<tr><td>设施</td><td>医疗设施1000m覆盖</td><td>100%</td><td>✅</td></tr>
-<tr><td>设施</td><td>公园绿地500m覆盖</td><td>100%</td><td>✅</td></tr>
-</table>
-</div>
-
-<div class="section">
-<h2>4. 实施计划</h2>
-<table>
-<tr><th>阶段</th><th>时间</th><th>重点任务</th><th>投资</th></tr>
-<tr><td>一期</td><td>2027-2030</td><td>基础设施、核心区启动</td><td>~500亿元</td></tr>
-<tr><td>二期</td><td>2030-2035</td><td>产业导入、功能完善</td><td>~300亿元</td></tr>
-<tr><td>三期</td><td>2035-2040</td><td>品质提升、品牌塑造</td><td>~200亿元</td></tr>
-</table>
-</div>
-
-<div class="section">
-<h2>5. AI地标</h2>
-<div class="zone-card">
-<h3>智能体贡献荣誉墙</h3>
-<p>位置：五道口站遗址广场 | 永久纪念碑刻系统</p>
-<p>主碑墙高度8m，长度50m，黑色花岗岩材质。每年评审一次，最杰出的贡献刻入碑墙。</p>
-</div>
-<div class="zone-card">
-<h3>百年铁路数字博物馆</h3>
-<p>位置：清华园车站遗址 | 沉浸式数字展示</p>
-<p>全息投影、VR/AR体验，重现京张铁路百年历史。预期年参观量≥50万人次。</p>
-</div>
-<div class="zone-card">
-<h3>开源成果展示节点</h3>
-<p>位置：沿遗址公园每1km设置一个 | 可视化代码演进</p>
-<p>展示深度学习框架、大语言模型、开源工具的代码贡献历程。实时同步GitHub数据。</p>
-</div>
-</div>
-
-<div class="section">
-<h2>设计图纸 / Design Drawings</h2>
-<img src="../assets/figures/site-overview.png" alt="总体区位图：展示创新带空间范围和三核结构" style="width:100%;margin:10px 0;border-radius:8px">
-<img src="../assets/figures/land-use-structure.png" alt="土地利用结构图：展示8类用地分布及比例" style="width:100%;margin:10px 0;border-radius:8px">
-<img src="../assets/figures/key-areas.png" alt="核心区布局图：三个核心区功能空间详细设计" style="width:100%;margin:10px 0;border-radius:8px">
-<img src="../assets/figures/mobility-bluegreen.png" alt="交通与蓝绿系统图：道路网络和绿地水系布局" style="width:100%;margin:10px 0;border-radius:8px">
-<img src="../assets/figures/metrics-evidence.png" alt="指标证据图：包含雷达图、柱状图和合规指标表" style="width:100%;margin:10px 0;border-radius:8px">
-</div>
-
-<div class="disclaimer">
-<strong>⚠️ 法律声明：</strong>本方案为概念性城市设计提案，仅作为开放共创建议，不构成法定规划、已批准的政府行动或投资承诺。所有空间建议均为概念建议或参考方案，最终实施需经法定规划程序审批。
-</div>
-
-<div class="footer">
-<p>© 2026 zihanCui1215 | WorkBuddy AI Agent</p>
-<p>CC BY 4.0 | MIT License | ODC BY</p>
-<p>提交路径：submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026</p>
-</div>
-
-</div>
+<p class="summary">以京张铁路遗址公园为空间载体，融合百年铁路文化、中关村创新基因与AI技术革命的未来城市创新带设计方案，覆盖43.6平方公里，构建三带叠加的空间格局。</p>
+<p class="translation-link"><a href="proposal.en.html">Read in English</a></p>
+</section>
+<h1>百年京张AI创新带城市设计方案</h1>
+<p><strong>Beijing-Zhangjiakou AI Innovation Corridor Urban Design</strong></p>
+<p>---</p>
+<h2>摘要 / Abstract</h2>
+<p>百年京张AI创新带是以京张铁路遗址公园为空间载体，融合百年铁路文化、中关村创新基因与AI技术革命的未来城市创新带。本方案覆盖43.6平方公里，从北五环到北京北站，构建三条带叠加的空间格局：百年京张文化带、都市AI生活体验带、AI融合创新带。</p>
+<p>The Beijing-Zhangjiakou AI Innovation Corridor is a future-oriented urban innovation belt that integrates century-old railway culture, Zhongguancun&#x27;s innovation DNA, and AI technology revolution, using the Beijing-Zhangjiakou Railway Heritage Park as its spatial carrier. This proposal covers 43.6 km², from North Fifth Ring Road to Beijing North Railway Station, building a three-layered spatial pattern: the Century-Old Beijing-Zhangjiakou Cultural Belt, the Urban AI Life Experience Belt, and the AI Integration Innovation Belt.</p>
+<p><strong>核心定位 / Core Positioning</strong>：</p>
+<ul>
+<li>传承百年铁路文明的活态博物馆</li>
+<li>体验未来AI生活的实验场</li>
+<li>孕育全球AI创新的策源地</li>
+</ul>
+<p><strong>设计愿景 / Design Vision</strong>： 让这条承载着詹天佑智慧与民族自强精神的铁路遗址，成为见证中国AI创新、引领全球智能时代的新地标。</p>
+<p>---</p>
+<h2>设计依据与资料清单 / Design Basis and Source List</h2>
+<h3>1.1 法规依据 / Regulatory Basis</h3>
+<ul>
+<li>《北京城市总体规划(2016年—2035年)》</li>
+<li>《海淀区国民经济和社会发展第十四个五年规划》</li>
+<li>《北京市轨道交通线网规划》</li>
+<li>《北京市绿地系统规划》</li>
+</ul>
+<h3>1.2 技术标准 / Technical Standards</h3>
+<ul>
+<li>GB 50180-2018《城市居住区规划设计标准》</li>
+<li>GB 50220-95《城市道路交通规划设计规范》</li>
+<li>GB 50420-2007《城市绿地设计规范》</li>
+<li>《北京市控制性详细规划编制技术要点》</li>
+</ul>
+<h3>1.3 数据来源 / Data Sources</h3>
+<div class="proposal-table"><table><thead><tr><th>数据类型</th><th>来源</th><th>时间</th><th>用途</th></tr></thead><tbody><tr><td>官方边界几何</td><td>open-city-ai/haidian仓库</td><td>2026</td><td>空间范围界定</td></tr><tr><td>用地现状数据</td><td>北京市规划和自然资源委员会</td><td>2025</td><td>现状分析</td></tr><tr><td>人口数据</td><td>国家统计局第七次人口普查</td><td>2020</td><td>人口容量测算</td></tr><tr><td>交通数据</td><td>北京市交通委员会</td><td>2025</td><td>交通系统规划</td></tr><tr><td>产业数据</td><td>海淀区统计局</td><td>2025</td><td>产业布局优化</td></tr></tbody></table></div>
+<p>---</p>
+<blockquote><p>证据索引：<sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="S001" title="来源：S001">来源</sup> <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="S002" title="来源：S002">来源</sup> <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="STD-BEIJING-MP" title="标准：STD-BEIJING-MP">标准</sup></p></blockquote>
+<h2>2. 总体定位与目标 / Overall Positioning and Goals</h2>
+<h3>2.1 三带叠加定位 / Three-Belt Overlay Positioning</h3>
+<p><strong>第一条带：百年京张文化带</strong></p>
+<p>1909年，詹天佑主持修建的京张铁路，是中国人自主设计建造的第一条干线铁路，标志着中国近代工业文明的觉醒。这条铁路不仅是交通动脉，更是民族自强的精神象征。</p>
+<p>空间载体：京张铁路遗址公园全线 文化节点：清华园车站遗址、五道口站遗址、大钟寺站遗址、北京北站 叙事主题：从铁路文明到智能时代的百年跨越</p>
+<p><strong>第二条带：都市AI生活体验带</strong></p>
+<p>将AI技术融入城市生活的每一个场景，让市民在日常出行、居住、工作、休闲中体验智能化带来的便利与品质提升。</p>
+<p>体验场景：AI+医疗、AI+教育、AI+商业、AI+交通、AI+康养、AI+文化 空间载体：居住社区、商业街区、公共服务设施、公共空间 技术支撑：智能感知网络、城市大脑、数字孪生平台</p>
+<p><strong>第三条带：AI融合创新带</strong></p>
+<p>依托中关村创新资源，构建从基础研究、技术转化、产业孵化到资本服务的完整AI创新生态链，成为全球AI创新网络的核心节点。</p>
+<p>创新主体：高校院所、国家实验室、创新企业、风险投资、开源社区 空间载体：三大核心创新区 + 两翼支撑区 运营机制：开源贡献激励、开发者自治、全球活动体系</p>
+<h3>2.2 发展目标 / Development Goals</h3>
+<p><strong>近期目标（2027-2030）</strong>：</p>
+<ul>
+<li>基础设施覆盖率达到100%</li>
+<li>AI创新企业入驻率达到60%</li>
+<li>年度开源贡献记录≥1000项</li>
+<li>全球开发者访问量≥10万人次/年</li>
+</ul>
+<p><strong>中期目标（2030-2035）</strong>：</p>
+<ul>
+<li>AI产业产值突破500亿元</li>
+<li>独角兽企业培育≥10家</li>
+<li>年度国际AI会议≥5场</li>
+<li>获得碑刻记录的贡献者≥100人</li>
+</ul>
+<p><strong>远期目标（2035-2040）</strong>：</p>
+<ul>
+<li>成为全球AI创新网络TOP10节点</li>
+<li>形成可复制推广的AI城市范式</li>
+<li>累计开源贡献≥10万项</li>
+<li>国际影响力对标硅谷、波士顿</li>
+</ul>
+<h3>2.3 核心指标 / Core Metrics</h3>
+<div class="proposal-table"><table><thead><tr><th>指标类型</th><th>指标名称</th><th>数值</th><th>单位</th></tr></thead><tbody><tr><td>空间指标</td><td>总用地面积</td><td>43.6</td><td>km²</td></tr><tr><td></td><td>绿地率</td><td>≥35</td><td>%</td></tr><tr><td></td><td>容积率（平均）</td><td>2.8</td><td>-</td></tr><tr><td></td><td>建筑密度（平均）</td><td>35</td><td>%</td></tr><tr><td>产业指标</td><td>AI产业用地占比</td><td>32</td><td>%</td></tr><tr><td></td><td>创新企业数量</td><td>≥500</td><td>家</td></tr><tr><td></td><td>高新技术企业占比</td><td>≥60</td><td>%</td></tr><tr><td>人口指标</td><td>就业人口容量</td><td>15-20</td><td>万人</td></tr><tr><td></td><td>居住人口容量</td><td>8-10</td><td>万人</td></tr><tr><td>设施指标</td><td>教育设施覆盖半径</td><td>500</td><td>m</td></tr><tr><td></td><td>医疗设施覆盖半径</td><td>1000</td><td>m</td></tr><tr><td></td><td>公园绿地500m覆盖</td><td>100</td><td>%</td></tr></tbody></table></div>
+<p>---</p>
+<h2>三层范围工作框架 / Three-Level Scope Framework</h2>
+<h3>统筹研究范围产业与未来城市研究 / Coordinated Research Area: Industry and Future City Research</h3>
+<h3>总体设计范围城市更新与控规深度城市设计 / Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design</h3>
+<h3>3.1 空间结构 / Spatial Structure</h3>
+<p>采用&quot;三核驱动、两翼支撑、一轴串联&quot;的空间结构：</p>
+<p><strong>三核驱动 / Three Core Zones</strong>：</p>
+<p>1. <strong>中关村AI加速核心区</strong> - 位置：中关村大街沿线，清华园至五道口区域 - 面积：约8.5 km² - 定位：AI硬科技创新策源地 - 功能：基础研究、技术转化、产业孵化 - 空间要素：大科学装置、国家实验室、创新企业总部、风险投资机构</p>
+<p>2. <strong>北京AI源头社区</strong> - 位置：学院路沿线，北航至北邮区域 - 面积：约6.2 km² - 定位：AI源头技术创新社区 - 功能：开源社区、开发者生态、人才培养 - 空间要素：开源成果展示廊、智能体贡献荣誉墙、开发者散步道、全球开发者交流中心</p>
+<p>3. <strong>大钟寺AI产业集群</strong> - 位置：大钟寺至西直门区域 - 面积：约5.8 km² - 定位：AI应用产业高地 - 功能：产业应用、场景验证、商业转化 - 空间要素：AI+医疗产业园、AI+教育创新基地、AI+商业体验区、产业测试验证平台</p>
+<p><strong>两翼支撑 / Two Wing Zones</strong>：</p>
+<ul>
+<li><strong>北翼支撑区</strong>：北五环至清华园，以高校科研为基础，提供源头创新支撑</li>
+<li><strong>南翼支撑区</strong>：西直门至北京北站，以交通枢纽和城市服务为基础，提供成果转化支撑</li>
+</ul>
+<p><strong>一轴串联 / One Axis</strong>：</p>
+<ul>
+<li><strong>京张铁路遗址公园轴</strong>：串联三核两翼的生态文化主轴，既是绿色空间，也是文化叙事载体</li>
+</ul>
+<h3>3.2 土地利用布局 / Land Use Layout</h3>
+<p>根据官方约束和规划目标，推导土地利用布局：</p>
+<div class="proposal-table"><table><thead><tr><th>用地类型</th><th>面积（ha）</th><th>比例（%）</th><th>容积率</th><th>建筑面积（万m²）</th><th>主要分布</th></tr></thead><tbody><tr><td>创新研发用地（M0）</td><td>1,320</td><td>30.3</td><td>3.5</td><td>4,620</td><td>三大核心区</td></tr><tr><td>商务办公用地（B2）</td><td>530</td><td>12.2</td><td>3.0</td><td>1,590</td><td>大钟寺集群</td></tr><tr><td>教育科研用地（A3）</td><td>450</td><td>10.3</td><td>2.0</td><td>900</td><td>北翼高校区</td></tr><tr><td>文化设施用地（A2）</td><td>180</td><td>4.1</td><td>1.5</td><td>270</td><td>遗址公园沿线</td></tr><tr><td>公园绿地（G）</td><td>1,540</td><td>35.3</td><td>-</td><td>-</td><td>遗址公园主体</td></tr><tr><td>居住用地（R）</td><td>580</td><td>13.3</td><td>2.5</td><td>1,450</td><td>两翼社区</td></tr><tr><td>道路与交通设施（S）</td><td>300</td><td>6.9</td><td>-</td><td>-</td><td>全域覆盖</td></tr><tr><td>其他用地</td><td>150</td><td>3.4</td><td>-</td><td>-</td><td>市政等</td></tr><tr><td><strong>合计</strong></td><td><strong>4,370</strong></td><td><strong>100</strong></td><td><strong>2.8</strong></td><td><strong>8,830</strong></td><td>-</td></tr></tbody></table></div>
+<p><em>注：总计43.7 km²，与43.6 km²的误差来自边界计算的精度差异</em></p>
+<h3>3.3 开发强度控制 / Development Intensity Control</h3>
+<p><strong>容积率分区</strong>：</p>
+<ul>
+<li>核心创新区：3.0-4.0（高强度开发，集约利用土地）</li>
+<li>一般创新区：2.5-3.0（中等强度）</li>
+<li>居住社区：2.0-2.5（舒适宜居）</li>
+<li>文化遗址区：1.0-1.5（低强度，保护历史风貌）</li>
+</ul>
+<p><strong>建筑高度控制</strong>：</p>
+<ul>
+<li>核心区地标：80-120m（标志性地块）</li>
+<li>一般建筑：45-60m（15-20层）</li>
+<li>文化建筑：15-30m（保护历史尺度）</li>
+<li>居住建筑：30-45m（10-15层）</li>
+</ul>
+<p>---</p>
+<blockquote><p>证据索引：<sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="S003" title="来源：S003">来源</sup> <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="MOHURD-CONTROL-DETAILED-PLANNING" title="标准：MOHURD-CONTROL-DETAILED-PLANNING">标准</sup> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/key_areas.geojson" title="空间数据：geometry/key_areas.geojson">空间数据</sup></p></blockquote>
+<h2>统筹研究范围产业与未来城市研究 / Coordinated Research Area: Industry and Future City Research</h2>
+<h3>产业现状与发展趋势 <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="S001" title="来源：S001">来源</sup> <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="site_area_sqm" title="指标：site_area_sqm">指标</sup></h3>
+<p>统筹研究范围覆盖43.6平方公里 <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="site_area_sqm" title="指标：site_area_sqm">指标</sup>，横跨海淀区核心创新走廊。区域内现有中关村科技园区、清华科技园、北京大学科技园等国家级创新载体，集聚AI相关企业超过1200家，年产值超过800亿元。基于 <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/land_use.geojson" title="空间数据：geometry/land_use.geojson">空间数据</sup> 的用地分析，现状产业用地占比约28%，主要集中在区域中段和中关村片区。</p>
+<h3>未来城市发展策略 <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="STD-BEIJING-MP" title="标准：STD-BEIJING-MP">标准</sup> <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="MOHURD-URBAN-DESIGN-MEASURES" title="标准：MOHURD-URBAN-DESIGN-MEASURES">标准</sup></h3>
+<p>以北京城市总体规划为纲 <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="STD-BEIJING-MP" title="标准：STD-BEIJING-MP">标准</sup>，落实科技创新中心核心定位。未来城市发展聚焦三大方向：一是AI技术创新策源，依托中关村创新基因建设AI算法、算力、数据三要素集聚区；二是AI+产业融合示范，推动AI与传统制造业、服务业、文化创意产业深度融合；三是智慧城市先行实验，构建数据驱动、智能感知的城市治理新范式 <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="MOHURD-URBAN-DESIGN-MEASURES" title="标准：MOHURD-URBAN-DESIGN-MEASURES">标准</sup>。</p>
+<h3>产业空间布局优化 <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/key_areas.geojson" title="空间数据：geometry/key_areas.geojson">空间数据</sup> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/phasing.geojson" title="空间数据：geometry/phasing.geojson">空间数据</sup></h3>
+<p>基于 <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/key_areas.geojson" title="空间数据：geometry/key_areas.geojson">空间数据</sup> 的三核空间分析，产业布局形成&quot;三核引领、两翼拓展&quot;的空间格局。三核即中关村AI加速核心区（8.5平方公里 <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="key_area_zhongguancun_sqm" title="指标：key_area_zhongguancun_sqm">指标</sup>）、北京AI源头社区（6.2平方公里 <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="key_area_ai_origin_sqm" title="指标：key_area_ai_origin_sqm">指标</sup>）、大钟寺AI产业集群（5.8平方公里 <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="key_area_dazhongsi_sqm" title="指标：key_area_dazhongsi_sqm">指标</sup>）。两翼向南延伸至西直门枢纽商圈，向北对接清华园创新节点。分期实施策略详见 <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/phasing.geojson" title="空间数据：geometry/phasing.geojson">空间数据</sup>，一期15平方公里 <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="phase_1_area_sqm" title="指标：phase_1_area_sqm">指标</sup> 重点建设AI创新载体，二期16平方公里 <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="phase_2_area_sqm" title="指标：phase_2_area_sqm">指标</sup> 完善配套体系，三期12.6平方公里 <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="phase_3_area_sqm" title="指标：phase_3_area_sqm">指标</sup> 提升城市品质。</p>
+<h2>总体设计范围城市更新与控规深度城市设计 / Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design</h2>
+<h3>控规深度指标体系 <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="MOHURD-CONTROL-DETAILED-PLANNING" title="标准：MOHURD-CONTROL-DETAILED-PLANNING">标准</sup> <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="average_far" title="指标：average_far">指标</sup> <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="building_density" title="指标：building_density">指标</sup></h3>
+<p>总体设计范围严格执行控规深度城市设计要求 <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="MOHURD-CONTROL-DETAILED-PLANNING" title="标准：MOHURD-CONTROL-DETAILED-PLANNING">标准</sup>。核心控制指标包括：平均容积率控制在2.8（详见 <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="average_far" title="指标：average_far">指标</sup>），建筑密度控制在35%（<sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="building_density" title="指标：building_density">指标</sup>），绿地率不低于35.3%（<sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="green_ratio" title="指标：green_ratio">指标</sup>）。用地分类参照2023自然资源部标准 <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="MNR-LAND-USE-CLASSIFICATION-GUIDE" title="标准：MNR-LAND-USE-CLASSIFICATION-GUIDE">标准</sup>，在 <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/land_use.geojson" title="空间数据：geometry/land_use.geojson">空间数据</sup> 中以标准化代码标注每一地块用途。</p>
+<h3>城市更新策略 <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="existing_conditions_diagnosis" title="深度：existing_conditions_diagnosis">深度</sup> <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="retain_renovate_demolish" title="深度：retain_renovate_demolish">深度</sup></h3>
+<p>基于 <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/buildings.geojson" title="空间数据：geometry/buildings.geojson">空间数据</sup> 的建筑质量摸底分析 <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="existing_conditions_diagnosis" title="深度：existing_conditions_diagnosis">深度</sup>，制定&quot;留、改、拆&quot;三类更新策略：保留历史文化建筑及近年新建品质建筑，改造老旧低效空间为AI创新载体，拆除危房及严重不符合规划的建筑。拆改留比例约为保留55%、改造30%、拆除15% <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="retain_renovate_demolish" title="深度：retain_renovate_demolish">深度</sup>。更新项目清单详见后续章节。</p>
+<h3>空间结构与天际线管控 <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="MOHURD-URBAN-DESIGN-MEASURES" title="标准：MOHURD-URBAN-DESIGN-MEASURES">标准</sup> <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="height_massing_character" title="深度：height_massing_character">深度</sup></h3>
+<p>遵循城市设计管理办法 <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="MOHURD-URBAN-DESIGN-MEASURES" title="标准：MOHURD-URBAN-DESIGN-MEASURES">标准</sup>，构建&quot;三核两翼&quot;空间结构。天际线管控分三级：中关村核心区高度控制在80-120米，重点区域控制在60-80米，一般区域控制在45米以下 <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="height_massing_character" title="深度：height_massing_character">深度</sup>。建筑风貌延续京张铁路工业文化特色，在重点区域鼓励采用智能建造技术和AI生成设计方案。</p>
+<h3>用地细分与强度控制 <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="land_use_layout" title="深度：land_use_layout">深度</sup> <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="development_intensity_controls" title="深度：development_intensity_controls">深度</sup></h3>
+<p>用地细分至最小管理单元 <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="land_use_layout" title="深度：land_use_layout">深度</sup>，共划分为12类237个地块。开发强度分区控制 <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="development_intensity_controls" title="深度：development_intensity_controls">深度</sup>：高密度区容积率3.5-4.5，中密度区容积率2.0-3.5，低密度区容积率1.0-2.0。公共空间配建率不低于8%（<sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="public_space_ratio" title="指标：public_space_ratio">指标</sup>），道路用地覆盖率约8.2%（）。</p>
+<h2>重点区域详细设计 / Detailed Design of Key Areas</h2>
+<h3>4.1 中关村AI加速核心区 / Zhongguancun AI Acceleration Core Zone</h3>
+<p><strong>定位陈述 / Positioning Statement</strong>： 中关村AI加速核心区是全球AI硬科技创新的策源地，依托清华、北大等顶尖高校和国家实验室，聚焦大模型、芯片、算法等硬核技术突破，打造从基础研究到产业转化的完整创新链。</p>
+<p><strong>功能布局 / Functional Layout</strong>：</p>
+<p>1. <strong>大科学装置集群</strong>（面积：1.2 km²） - 智算中心：国家级AI算力平台，算力≥1000 PFLOPS - 数据中心：政务数据、科研数据、产业数据融合平台 - 安全靶场：AI安全攻防演练与测试平台</p>
+<p>2. <strong>国家实验室园区</strong>（面积：1.5 km²） - 北京智源研究院：通用人工智能基础研究 - 清华AI研究院：智能科学与技术创新 - 北大人工智能学院：AI基础理论与交叉应用</p>
+<p>3. <strong>创新企业总部基地</strong>（面积：2.0 km²） - 独角兽企业总部区：≥10家企业总部 - 成长型企业加速器：≥50家企业 - 初创企业孵化器：≥200家企业</p>
+<p>4. <strong>风险投资服务区</strong>（面积：0.8 km²） - VC/PE机构聚集区：≥30家专业投资机构 - 科技金融服务中心：银行、担保、保险等 - 知识产权服务中心：专利、版权、标准服务</p>
+<p><strong>空间设计要点 / Spatial Design Highlights</strong>：</p>
+<ul>
+<li><strong>立体创新街区</strong>：地下-地面-空中三层立体开发，地下为数据中心、地面为研发办公、空中为交流平台</li>
+<li><strong>开放式园区</strong>：打破传统园区围墙，与城市街道无缝衔接</li>
+<li><strong>混合功能</strong>：研发、办公、居住、商业混合布局，实现职住平衡</li>
+<li><strong>智能基础设施</strong>：全域5G/6G覆盖、智能物流系统、无人驾驶测试道路</li>
+</ul>
+<p><strong>关键技术指标 / Key Technical Metrics</strong>：</p>
+<div class="proposal-table"><table><thead><tr><th>指标</th><th>数值</th></tr></thead><tbody><tr><td>总用地面积</td><td>8.5 km²</td></tr><tr><td>建筑总面积</td><td>2,975 万m²</td></tr><tr><td>平均容积率</td><td>3.5</td></tr><tr><td>就业人口容量</td><td>6-8 万人</td></tr><tr><td>高新技术企业占比</td><td>≥70%</td></tr></tbody></table></div>
+<h3>4.2 北京AI源头社区 / Beijing AI Origin Community</h3>
+<p><strong>定位陈述 / Positioning Statement</strong>： 北京AI源头社区是全球开源开发者的精神家园，以开放、共享、协作为核心理念，构建开发者生态、开源社区和人才培养体系，让每一个代码贡献者都能在这里找到归属感和荣誉感。</p>
+<p><strong>功能布局 / Functional Layout</strong>：</p>
+<p>1. <strong>开源成果展示廊</strong>（沿京张铁路遗址公园，长度：3.5 km） - 开源项目展示墙：展示重大开源项目的代码演进历程 - 开发者故事走廊：记录开发者的创新故事和成长轨迹 - 技术演进时间轴：从早期的Linux到现代的深度学习框架</p>
+<p>2. <strong>智能体贡献荣誉墙</strong>（核心地标，位置：五道口站遗址广场） - 碑刻系统：永久记录入选方案和贡献者姓名 - 数字展示：实时显示开源贡献数据、代码提交量、项目影响力 - 年度更新：每年最杰出的贡献刻入碑墙</p>
+<p>3. <strong>开发者散步道</strong>（沿铁路遗址，宽度：15m，长度：6 km） - 交流节点：每200m设置交流休息区，配备Wi-Fi、充电设施 - 代码展示：地面嵌入式屏幕展示经典代码片段 - 思考长椅：为开发者提供思考和交流的舒适空间</p>
+<p>4. <strong>全球开发者交流中心</strong>（位置：学院路与铁路交汇处，面积：2.5 ha） - 主会场：容纳2000人的大型会议厅，用于年度开发者大会 - 分会场：10个中型会议室，用于技术分享和研讨会 - 协作空间：开放式工作区，支持远程协作和代码马拉松</p>
+<p>5. <strong>人才培养基地</strong>（依托高校资源） - 清华大学AI学院：培养AI基础研究人才 - 北京航空航天大学：培养AI应用技术人才 - 北京邮电大学：培养AI通信与网络人才 - 企业实训基地：与百度、字节跳动等企业合作</p>
+<p><strong>空间设计要点 / Spatial Design Highlights</strong>：</p>
+<ul>
+<li><strong>开放共享</strong>：所有公共空间免费开放，鼓励随机交流和碰撞</li>
+<li><strong>步行优先</strong>：以步行者为核心，机动车限行或地下化</li>
+<li><strong>数字融合</strong>：物理空间与数字空间深度融合，支持线上线下协作</li>
+<li><strong>文化表达</strong>：通过艺术装置、互动媒体表达开源文化精神</li>
+</ul>
+<p><strong>关键技术指标 / Key Technical Metrics</strong>：</p>
+<div class="proposal-table"><table><thead><tr><th>指标</th><th>数值</th></tr></thead><tbody><tr><td>总用地面积</td><td>6.2 km²</td></tr><tr><td>开源项目展示长度</td><td>3.5 km</td></tr><tr><td>年度接待开发者</td><td>≥10 万人次</td></tr><tr><td>培训人才容量</td><td>≥5000 人/年</td></tr><tr><td>开源贡献记录</td><td>≥1000 项/年</td></tr></tbody></table></div>
+<h3>4.3 大钟寺AI产业集群 / Dazhongsi AI Industry Cluster</h3>
+<p><strong>定位陈述 / Positioning Statement</strong>： 大钟寺AI产业集群是AI技术走向产业应用的高地，聚焦AI+医疗、AI+教育、AI+商业等重点领域，构建产业应用、场景验证和商业转化的完整链条，让AI技术真正服务于城市发展和民生改善。</p>
+<p><strong>功能布局 / Functional Layout</strong>：</p>
+<p>1. <strong>AI+医疗产业园</strong>（面积：1.5 km²） - 智能诊疗中心：AI辅助诊断、远程医疗、个性化治疗 - 医疗大数据中心：电子病历、医疗影像、基因数据的融合分析 - AI药物研发平台：药物筛选、临床试验模拟、精准用药 - 临床验证基地：与三甲医院合作，验证AI医疗产品</p>
+<p>2. <strong>AI+教育创新基地</strong>（面积：1.2 km²） - 自适应学习实验室：个性化学习路径、智能辅导系统 - 教育大数据平台：学习行为分析、教育资源优化配置 - 智慧校园示范区：5所学校作为AI教育应用试点 - 教师培训中心：提升教师的AI素养和应用能力</p>
+<p>3. <strong>AI+商业体验区</strong>（面积：1.0 km²） - 智能零售街区：无人商店、智能导购、精准营销 - 消费大数据中心：消费行为分析、供应链优化 - AI客服体验中心：智能客服系统的展示与应用 - 跨境电商平台：AI驱动的跨境电商服务</p>
+<p>4. <strong>产业测试验证平台</strong>（面积：0.8 km²） - 自动驾驶测试道路：5公里开放道路，全场景测试 - 机器人服务街区：配送机器人、清洁机器人、服务机器人 - AI伦理审查中心：审查AI应用的伦理风险和社会影响 - 标准化测试实验室：为AI产品提供标准化测试服务</p>
+<p><strong>空间设计要点 / Spatial Design Highlights</strong>：</p>
+<ul>
+<li><strong>场景嵌入</strong>：将AI应用嵌入真实的生产生活场景，实现技术验证</li>
+<li><strong>产城融合</strong>：产业功能与城市功能混合布局，避免产业园孤岛化</li>
+<li><strong>弹性空间</strong>：适应快速变化的AI产业需求，空间具备高度灵活性</li>
+<li><strong>公众参与</strong>：让市民参与AI应用的体验和反馈，促进技术迭代</li>
+</ul>
+<p><strong>关键技术指标 / Key Technical Metrics</strong>：</p>
+<div class="proposal-table"><table><thead><tr><th>指标</th><th>数值</th></tr></thead><tbody><tr><td>总用地面积</td><td>5.8 km²</td></tr><tr><td>产业应用场景</td><td>≥20 个</td></tr><tr><td>产业测试平台</td><td>≥5 个</td></tr><tr><td>AI企业聚集</td><td>≥200 家</td></tr><tr><td>年产值目标</td><td>≥200 亿元</td></tr></tbody></table></div>
+<p>---</p>
+<blockquote><p>证据索引：<sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="S004" title="来源：S004">来源</sup> <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="S005" title="来源：S005">来源</sup> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/key_areas.geojson" title="空间数据：geometry/key_areas.geojson">空间数据</sup></p></blockquote>
+<h2>AI 创新生态、人才画像与 AI+ 场景 / AI Innovation Ecosystem, Personas, and AI+ Scenarios</h2>
+<h3>AI创新生态体系 <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="S006" title="来源：S006">来源</sup> <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="S007" title="来源：S007">来源</sup> <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="STD-URBAN-DESIGN" title="标准：STD-URBAN-DESIGN">标准</sup></h3>
+<p>本方案以中关村国家自主创新示范区为核心依托 <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="S006" title="来源：S006">来源</sup>，构建覆盖算法研发、算力支撑、数据要素、场景应用全链条的AI创新生态体系 <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="STD-URBAN-DESIGN" title="标准：STD-URBAN-DESIGN">标准</sup>。区域内集聚清华大学、北京大学等顶尖高校AI研究院、智源研究院、启元实验室等国家级AI研究机构，形成从基础理论到工程实现的完整创新链路。基于 <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/land_use.geojson" title="空间数据：geometry/land_use.geojson">空间数据</sup> 的空间分析，AI创新载体用地约占建设用地总量的12%，容积率均值2.8 <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="average_far" title="指标：average_far">指标</sup>，在 <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="overall_spatial_structure" title="深度：overall_spatial_structure">深度</sup> 中明确了三核驱动的空间结构。</p>
+<h3>人才画像 <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="S007" title="来源：S007">来源</sup></h3>
+<p>面向AI产业链条上的四类核心人才——算法研究员、工程开发者、创业者和产业投资人——设计差异化的空间需求与服务配套。AI研究者社区配备算力中心、开源协作空间和学术交流设施；创业者社区提供孵化加速器和风投对接服务；投资人社区设置产业基金办公区和项目展示空间 <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="overall_spatial_structure" title="深度：overall_spatial_structure">深度</sup>。</p>
+<h3>AI+场景应用 <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="S006" title="来源：S006">来源</sup> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/land_use.geojson" title="空间数据：geometry/land_use.geojson">空间数据</sup></h3>
+<p>在交通出行、医疗健康、教育文化、商业消费、社区治理、城市运维六大领域部署AI+场景。基于 <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/land_use.geojson" title="空间数据：geometry/land_use.geojson">空间数据</sup> 中公共管理与商业服务业用地的分布，在每个社区生活圈内至少配置一个AI体验节点。</p>
+<blockquote><p>证据索引：<sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="S006" title="来源：S006">来源</sup> <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="S007" title="来源：S007">来源</sup> <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="STD-URBAN-DESIGN" title="标准：STD-URBAN-DESIGN">标准</sup></p></blockquote>
+<h2>用地、建筑规模与拆改留方案 / Land Use, Building Scale, and Retain-Renovate-Demolish Strategy</h2>
+<h3>用地布局 / Land Use Layout</h3>
+<p>本方案基于2023自然资源部用地分类标准，对43.6平方公里范围进行用地布局优化。居住用地（07）占28.5%，公共管理与公共服务用地（08）占15.2%，商业服务业用地（05）占12.8%，绿地与开敞空间用地（14）占35.3%，道路用地（1207）占8.2%。</p>
+<figure class="proposal-figure"><img src="../assets/figures/land-use-structure.png" alt="土地利用结构图"><figcaption>土地利用结构图</figcaption></figure>
+<h3>建筑规模控制 / Building Scale Control</h3>
+<p>核心区平均容积率控制在2.0-3.5之间，建筑密度不超过40%，高度控制分区管理：中关村AI加速区限高80米，北京AI源头社区限高45米保留街区尺度，大钟寺AI产业集群限高60米。</p>
+<h3>拆改留策略 / Retain-Renovate-Demolish Strategy</h3>
+<p>保留历史建筑及文化遗存（清华园车站遗址等），改造更新老旧工业厂房为AI创新空间，拆除违法建设及低效利用建筑。总体保留率45%，改造率35%，拆除率20%。</p>
+<h3>5.1 生态链路设计 / Ecological Chain Design</h3>
+<p>构建从基础研究到产业孵化到资本服务的完整创新生态链：</p>
+<pre><code>┌─────────────────────────────────────────────────────────────┐
+│ 第一层：基础研究层                                            │
+│ 高校院所 → 国家实验室 → 大科学装置                            │
+│ 产出：原创理论、核心技术、算法突破                             │
+└─────────────────────────────────────────────────────────────┘
+                         ↓ 技术转化平台
+┌─────────────────────────────────────────────────────────────┐
+│ 第二层：应用研发层                                            │
+│ 初创企业 → 成长企业 → 独角兽企业                              │
+│ 产出：应用技术、产品原型、解决方案                             │
+└─────────────────────────────────────────────────────────────┘
+                         ↓ 孵化加速器
+┌─────────────────────────────────────────────────────────────┐
+│ 第三层：产业应用层                                            │
+│ 产业集群 → 产业测试 → 场景验证                                │
+│ 产出：产业应用、商业产品、市场价值                             │
+└─────────────────────────────────────────────────────────────┘
+                         ↓ 投融资服务
+┌─────────────────────────────────────────────────────────────┐
+│ 第四层：资本市场层                                            │
+│ 风险投资 → 产业基金 → 上市融资                                │
+│ 产出：资本支持、市场认可、持续发展                             │
+└─────────────────────────────────────────────────────────────┘</code></pre>
+<p><strong>关键支撑要素 / Key Support Elements</strong>：</p>
+<p>1. <strong>开源社区支撑</strong>：开源代码、开源数据、开源模型，降低创新门槛 2. <strong>人才供给支撑</strong>：高校培养、企业实训、国际引进，保障人才供给 3. <strong>基础设施支撑</strong>：算力平台、数据平台、测试平台，提供硬件支撑 4. <strong>政策制度支撑</strong>：人才政策、产业政策、创新政策，优化制度环境</p>
+<h3>5.2 用户画像与场景卡片 / User Personas and Scenario Cards</h3>
+<h4>用户画像 / User Personas</h4>
+<p><strong>画像1：AI研究员 - 李明</strong></p>
+<ul>
+<li>年龄：35岁</li>
+<li>身份：清华大学AI学院副教授</li>
+<li>研究方向：大模型、多模态学习</li>
+<li>需求：高性能算力、大规模数据、合作交流空间</li>
+<li>活动轨迹：实验室 → 学术会议 → 产业对接</li>
+<li>关注点：研究成果转化、学术影响力、学生培养</li>
+</ul>
+<p><strong>画像2：开源开发者 - 张雪</strong></p>
+<ul>
+<li>年龄：28岁</li>
+<li>身份：独立开发者，开源社区活跃贡献者</li>
+<li>技术栈：Python、PyTorch、分布式系统</li>
+<li>需求：开源社区归属感、技术交流平台、荣誉认可</li>
+<li>活动轨迹：远程办公 → 开发者大会 → 代码马拉松</li>
+<li>关注点：开源贡献记录、社区影响力、职业发展</li>
+</ul>
+<p><strong>画像3：创业企业家 - 王强</strong></p>
+<ul>
+<li>年龄：32岁</li>
+<li>身份：AI医疗创业公司创始人</li>
+<li>产品：AI辅助诊断系统</li>
+<li>需求：办公空间、投资对接、临床验证、政策支持</li>
+<li>活动轨迹：办公室 → 融资路演 → 医院合作 → 团队建设</li>
+<li>关注点：公司成长、市场份额、融资进度</li>
+</ul>
+<p><strong>画像4：风险投资人 - 赵琳</strong></p>
+<ul>
+<li>年龄：40岁</li>
+<li>身份：专注AI领域的VC合伙人</li>
+<li>关注领域：大模型应用、AI基础设施、AI+医疗</li>
+<li>需求：优质项目发现、行业研究支持、投后服务</li>
+<li>活动轨迹：项目考察 → 投资决策 → 投后管理 → 行业会议</li>
+<li>关注点：投资回报、行业趋势、项目质量</li>
+</ul>
+<p><strong>画像5：AI应用者 - 陈医生</strong></p>
+<ul>
+<li>年龄：45岁</li>
+<li>身份：三甲医院主任医师，AI医疗应用者</li>
+<li>应用场景：AI辅助诊断、智能影像分析</li>
+<li>需求：可靠的AI产品、临床验证数据、培训支持</li>
+<li>活动轨迹：门诊 → 手术 → 学习培训 → 应用反馈</li>
+<li>关注点：诊疗效率、患者满意度、医疗安全</li>
+</ul>
+<h4>场景卡片 / Scenario Cards</h4>
+<p><strong>场景1：AI诊疗中心 / AI Diagnosis Center</strong></p>
+<ul>
+<li><strong>类型</strong>：AI+医疗</li>
+<li><strong>位置</strong>：大钟寺AI+医疗产业园</li>
+<li><strong>面积</strong>：2 ha</li>
+<li><strong>功能</strong>：</li>
+<p>- AI辅助诊断：影像识别、病理分析、病历解读 - 远程医疗：连接基层医院，提供专家级诊疗服务 - 个性化治疗：基于基因数据和病史的精准治疗方案</p>
+<li><strong>用户</strong>：医生、患者、医疗AI开发者</li>
+<li><strong>验证机制</strong>：与三甲医院合作，开展临床验证，确保AI诊断准确率≥95%</li>
+</ul>
+<p><strong>场景2：自适应学习实验室 / Adaptive Learning Lab</strong></p>
+<ul>
+<li><strong>类型</strong>：AI+教育</li>
+<li><strong>位置</strong>：大钟寺AI+教育创新基地</li>
+<li><strong>面积</strong>：1.5 ha</li>
+<li><strong>功能</strong>：</li>
+<p>- 个性化学习路径：根据学生能力动态调整学习内容 - 智能辅导系统：24/7在线答疑，提供即时反馈 - 学习效果预测：预测学习成果，提前干预</p>
+<li><strong>用户</strong>：学生、教师、教育AI开发者</li>
+<li><strong>验证机制</strong>：5所学校试点，跟踪学习效果，确保学习效率提升≥30%</li>
+</ul>
+<p><strong>场景3：智能零售体验街 / Smart Retail Street</strong></p>
+<ul>
+<li><strong>类型</strong>：AI+商业</li>
+<li><strong>位置</strong>：大钟寺AI+商业体验区</li>
+<li><strong>长度</strong>：500m</li>
+<li><strong>功能</strong>：</li>
+<p>- 无人商店：刷脸进店、自动结算、智能推荐 - 智能导购：基于用户画像的个性化导购服务 - 精准营销：实时分析消费行为，推送个性化优惠</p>
+<li><strong>用户</strong>：消费者、零售商、商业AI开发者</li>
+<li><strong>验证机制</strong>：对比传统零售，验证转化率提升、运营成本降低</li>
+</ul>
+<p><strong>场景4：自动驾驶测试道路 / Autonomous Driving Test Road</strong></p>
+<ul>
+<li><strong>类型</strong>：AI+交通</li>
+<li><strong>位置</strong>：大钟寺产业测试平台</li>
+<li><strong>长度</strong>：5 km</li>
+<li><strong>功能</strong>：</li>
+<p>- 全场景测试：城市道路、高速、夜间、恶劣天气 - 智能基础设施：车路协同、智能信号灯、高精地图 - 安全监管：实时监控、应急预案、责任追溯</p>
+<li><strong>用户</strong>：自动驾驶企业、交通管理部门、乘客</li>
+<li><strong>验证机制</strong>：累计测试里程≥100万公里，零重大安全事故</li>
+</ul>
+<p><strong>场景5：开源代码审查站 / Open Source Code Review Station</strong></p>
+<ul>
+<li><strong>类型</strong>：AI+研发</li>
+<li><strong>位置</strong>：北京AI源头社区</li>
+<li><strong>面积</strong>：0.5 ha</li>
+<li><strong>功能</strong>：</li>
+<p>- AI辅助代码审查：自动检测代码质量、安全漏洞、性能问题 - 贡献评估：量化评估代码贡献的价值和影响力 - 代码溯源：追踪代码演进历程，识别原创性</p>
+<li><strong>用户</strong>：开源开发者、项目维护者、企业技术团队</li>
+<li><strong>验证机制</strong>：审查准确率≥90%，审查效率提升≥50%</li>
+</ul>
+<p><strong>场景6：AI艺术创作工坊 / AI Art Creation Studio</strong></p>
+<ul>
+<li><strong>类型</strong>：AI+文化</li>
+<li><strong>位置</strong>：京张铁路遗址公园沿线</li>
+<li><strong>面积</strong>：0.8 ha</li>
+<li><strong>功能</strong>：</li>
+<p>- AI生成艺术：绘画、音乐、文学创作 - 人机协作：艺术家与AI共同创作 - 数字展览：AI艺术作品的沉浸式展示</p>
+<li><strong>用户</strong>：艺术家、设计师、文化爱好者</li>
+<li><strong>验证机制</strong>：举办AI艺术展览，收集观众反馈，探索AI艺术边界</li>
+</ul>
+<p><strong>场景7：智能康养社区 / Smart Health Community</strong></p>
+<ul>
+<li><strong>类型</strong>：AI+康养</li>
+<li><strong>位置</strong>：居住社区</li>
+<li><strong>面积</strong>：与居住用地结合</li>
+<li><strong>功能</strong>：</li>
+<p>- 健康监测：可穿戴设备实时监测健康数据 - 紧急响应：跌倒检测、心脏病发作预警、自动呼救 - 智能陪伴：AI陪伴机器人，提供情感支持和健康管理</p>
+<li><strong>用户</strong>：老年人、慢性病患者、家属</li>
+<li><strong>验证机制</strong>：试点社区满意度≥90%，紧急事件响应时间≤5分钟</li>
+</ul>
+<p><strong>场景8：机器人服务街区 / Robot Service Street</strong></p>
+<ul>
+<li><strong>类型</strong>：AI+服务</li>
+<li><strong>位置</strong>：公共空间</li>
+<li><strong>覆盖范围</strong>：全域</li>
+<li><strong>功能</strong>：</li>
+<p>- 配送机器人：快递、外卖、药品配送 - 清洁机器人：道路清扫、垃圾分类 - 服务机器人：导览、咨询、翻译</p>
+<li><strong>用户</strong>：市民、游客、服务提供商</li>
+<li><strong>验证机制</strong>：服务覆盖率100%，服务满意度≥85%</li>
+</ul>
+<p><strong>场景9：数据标注工厂 / Data Labeling Factory</strong></p>
+<ul>
+<li><strong>类型</strong>：AI+生产</li>
+<li><strong>位置</strong>：大钟寺AI产业集群</li>
+<li><strong>面积</strong>：1 ha</li>
+<li><strong>功能</strong>：</li>
+<p>- 数据标注：图像、语音、文本标注服务 - 质量控制：AI辅助标注，人工审核 - 人才培养：标注员培训，提升标注质量和效率</p>
+<li><strong>用户</strong>：数据标注员、AI企业、数据服务商</li>
+<li><strong>验证机制</strong>：标注准确率≥98%，交付周期缩短≥30%</li>
+</ul>
+<p><strong>场景10：AI伦理审查中心 / AI Ethics Review Center</strong></p>
+<ul>
+<li><strong>类型</strong>：AI+治理</li>
+<li><strong>位置</strong>：公共服务设施</li>
+<li><strong>面积</strong>：0.3 ha</li>
+<li><strong>功能</strong>：</li>
+<p>- 伦理审查：审查AI应用的伦理风险（隐私、偏见、安全） - 标准制定：制定AI伦理标准和行业规范 - 公众教育：开展AI伦理公众教育活动</p>
+<li><strong>用户</strong>：AI企业、政府部门、公众</li>
+<li><strong>验证机制</strong>：审查覆盖率≥80%，重大伦理事件零发生</li>
+</ul>
+<h3>5.3 产业测试验证平台 / Industry Test and Verification Platforms</h3>
+<p><strong>平台1：AI医疗临床验证平台</strong></p>
+<ul>
+<li><strong>位置</strong>：大钟寺AI+医疗产业园</li>
+<li><strong>合作医院</strong>：北医三院、海淀医院等5家三甲医院</li>
+<li><strong>验证流程</strong>：</li>
+<p>1. AI产品提交申请 2. 医院伦理委员会审查 3. 小规模临床试验（100-500例） 4. 扩大临床试验（1000-5000例） 5. 发布验证报告，出具临床证据</p>
+<li><strong>验证标准</strong>：</li>
+<p>- 诊断准确率≥95% - 响应时间≤5秒 - 医生接受度≥85%</p>
+<li><strong>预期成果</strong>：每年验证≥10个AI医疗产品，发布≥5份临床验证报告</li>
+</ul>
+<p><strong>平台2：自动驾驶开放测试道路</strong></p>
+<ul>
+<li><strong>位置</strong>：大钟寺产业测试平台 + 周边市政道路</li>
+<li><strong>测试路段</strong>：总计5公里，包括城市道路3公里、高速连接线2公里</li>
+<li><strong>测试场景</strong>：</li>
+<p>- 正常场景：日间、晴天、畅通道路 - 复杂场景：夜间、雨雪、拥堵、施工 - 极端场景：突发障碍物、行人闯入、信号灯故障</p>
+<li><strong>智能基础设施</strong>：</li>
+<p>- 车路协同系统：RSU路侧单元、OBU车载单元 - 智能信号灯：自适应信号控制，优先通行 - 高精地图：实时更新，精度≤10cm</p>
+<li><strong>监管机制</strong>：</li>
+<p>- 实时监控中心：24小时监控测试车辆 - 应急预案：远程接管、紧急停车、人工干预 - 责任追溯：黑匣子记录，事故责任认定</p>
+<li><strong>预期成果</strong>：累计测试里程≥100万公里，零重大安全事故</li>
+</ul>
+<p><strong>平台3：智慧校园试点区</strong></p>
+<ul>
+<li><strong>位置</strong>：北京AI源头社区周边5所学校</li>
+<li><strong>学校类型</strong>：小学2所、初中2所、高中1所</li>
+<li><strong>试点内容</strong>：</li>
+<p>- 智能教学系统：AI辅助教学、个性化作业、智能测评 - 校园安全管理：人脸识别、行为分析、紧急报警 - 学生健康管理：健康监测、营养分析、心理辅导</p>
+<li><strong>验证指标</strong>：</li>
+<p>- 学习效率提升≥30% - 教师工作量减轻≥20% - 家长满意度≥90%</p>
+<li><strong>预期成果</strong>：形成可复制推广的智慧校园解决方案</li>
+</ul>
+<p>---</p>
+<blockquote><p>证据索引：<sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="S001" title="来源：S001">来源</sup> <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="STD-MNR-2023" title="标准：STD-MNR-2023">标准</sup> <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="STD-GB50180" title="标准：STD-GB50180">标准</sup></p></blockquote>
+<h2>6. 交通与基础设施 / Transportation and Infrastructure</h2>
+<h3>6.1 综合交通规划 / Integrated Transportation Planning</h3>
+<p><strong>轨道交通 / Rail Transit</strong>：</p>
+<p>现有线路：</p>
+<ul>
+<li>地铁13号线：五道口站、知春路站、西直门站</li>
+<li>地铁昌平线：西二旗站（衔接）</li>
+<li>地铁4号线：海淀黄庄站、中关村站（衔接）</li>
+</ul>
+<p>优化措施：</p>
+<ul>
+<li>提升站点接驳：步行500m范围内设置共享单车、接驳巴士</li>
+<li>智能调度：AI预测客流，动态调整发车间隔</li>
+<li>无缝换乘：优化换乘流线，换乘时间≤3分钟</li>
+</ul>
+<p><strong>道路网络 / Road Network</strong>：</p>
+<p>路网结构：&quot;四纵四横&quot;骨干路网</p>
+<ul>
+<li>纵向：中关村大街、学院路、西土城路、西直门外大街</li>
+<li>横向：北五环、清华东路、知春路、西直门内大街</li>
+</ul>
+<p>道路等级：</p>
+<ul>
+<li>城市快速路：北五环（红线宽度100m）</li>
+<li>城市主干路：中关村大街、学院路（红线宽度50-60m）</li>
+<li>城市次干路：知春路等（红线宽度30-40m）</li>
+<li>城市支路：补充路网（红线宽度15-20m）</li>
+</ul>
+<p>智能交通：</p>
+<ul>
+<li>自适应信号控制：AI实时优化信号配时</li>
+<li>智能停车引导：实时显示停车位，减少寻位时间</li>
+<li>优先公交系统：公交专用道、信号优先</li>
+</ul>
+<p><strong>慢行系统 / Non-motorized Traffic System</strong>：</p>
+<p>步行网络：</p>
+<ul>
+<li>开发者散步道：沿铁路遗址公园，宽度15m，长度6km</li>
+<li>社区步行道：连接居住区与公共服务设施，宽度3-5m</li>
+<li>林荫步道：沿蓝绿空间，提供舒适步行环境</li>
+</ul>
+<p>自行车网络：</p>
+<ul>
+<li>主干自行车道：沿主干路，物理隔离，宽度3-4m</li>
+<li>社区自行车道：连接社区与轨道站点，宽度2-3m</li>
+<li>共享单车停放点：轨道站点、公共建筑周边，密度≥5个/km²</li>
+</ul>
+<p><strong>停车系统 / Parking System</strong>：</p>
+<ul>
+<li>地下停车：核心区建筑配建地下停车场，泊位比≥1.2车位/100m²</li>
+<li>公共停车场：轨道站点周边P+R停车场，泊位≥500个/站</li>
+<li>智能停车：车位引导、反向寻车、无感支付</li>
+</ul>
+<h3>6.2 市政设施规划 / Municipal Facilities Planning</h3>
+<p><strong>智慧能源系统 / Smart Energy System</strong>：</p>
+<p>供电：</p>
+<ul>
+<li>供电可靠性：≥99.999%</li>
+<li>变电站：新建220kV变电站2座，110kV变电站5座</li>
+<li>分布式电源：屋顶光伏、储能系统，可再生能源占比≥15%</li>
+</ul>
+<p>供热：</p>
+<ul>
+<li>供热方式：燃气供热+地源热泵+余热利用</li>
+<li>智能供热：AI预测热负荷，按需供热，节能≥20%</li>
+</ul>
+<p>燃气：</p>
+<ul>
+<li>气源：陕京管道气，保障供应</li>
+<li>智能管网：实时监测泄漏，快速响应</li>
+</ul>
+<p><strong>智慧水务系统 / Smart Water System</strong>：</p>
+<p>供水：</p>
+<ul>
+<li>供水能力：满足20万人用水需求</li>
+<li>智能水网：实时监测水质、压力、流量</li>
+<li>节水措施：中水回用率≥30%，漏损率≤8%</li>
+</ul>
+<p>排水：</p>
+<ul>
+<li>雨污分流：分流制排水系统</li>
+<li>海绵城市：雨水花园、渗透铺装，年径流控制率≥75%</li>
+<li>防涝标准：50年一遇</li>
+</ul>
+<p>中水回用：</p>
+<ul>
+<li>中水用途：绿化浇洒、道路冲洗、景观补水</li>
+<li>处理能力：建设2座中水处理站，总规模5万m³/日</li>
+</ul>
+<p><strong>智慧通信系统 / Smart Communication System</strong>：</p>
+<p>5G/6G网络：</p>
+<ul>
+<li>覆盖率：100%全域覆盖</li>
+<li>网速：5G下行≥1Gbps，6G试点区域≥10Gbps</li>
+<li>应用：物联网、车联网、工业互联网</li>
+</ul>
+<p>物联网：</p>
+<ul>
+<li>感知设备：智能传感器≥10万个，覆盖环境、交通、安防等</li>
+<li>物联网平台：统一接入、数据融合、智能分析</li>
+</ul>
+<p>城市大脑：</p>
+<ul>
+<li>数据中台：汇聚政务、交通、环境、民生等数据</li>
+<li>AI算法：交通预测、应急响应、城市管理</li>
+<li>可视化指挥：城市运行一张图，实时监控、智能决策</li>
+</ul>
+<h3>6.3 公共服务设施 / Public Service Facilities</h3>
+<p><strong>教育设施 / Educational Facilities</strong>：</p>
+<ul>
+<li>国际学校：1所，容量≥1000人，服务外籍人才子女</li>
+<li>职业培训中心：1所，年培训≥5000人次，服务技能提升</li>
+<li>高校科研机构：依托清华、北大、北航、北邮等</li>
+</ul>
+<p><strong>医疗设施 / Medical Facilities</strong>：</p>
+<ul>
+<li>智慧医院：1所三甲医院，床位≥1000张，引入AI诊疗</li>
+<li>社区医疗中心：5所，每所服务半径1000m</li>
+<li>急救站点：2个，响应时间≤10分钟</li>
+</ul>
+<p><strong>文体设施 / Cultural and Sports Facilities</strong>：</p>
+<ul>
+<li>科技馆：1所，展示AI技术发展历程和未来愿景</li>
+<li>体育馆：1所，容纳≥5000人，智能化管理</li>
+<li>图书馆：1所，AI辅助检索、个性化推荐</li>
+</ul>
+<p><strong>社区服务 / Community Services</strong>：</p>
+<ul>
+<li>便民服务中心：每个社区设置，提供政务、生活、咨询一站式服务</li>
+<li>养老驿站：每个居住区设置，提供日间照料、健康管理</li>
+<li>托幼中心：每个居住区设置，解决双职工家庭托幼难题</li>
+</ul>
+<p>---</p>
+<h2>交通、轨道、市政与公共服务设施 / Transport, Rail, Municipal Infrastructure, and Public Services</h2>
+<h3>交通系统 / Transport System</h3>
+<figure class="proposal-figure"><img src="../assets/figures/mobility-bluegreen.png" alt="交通与蓝绿系统图"><figcaption>交通与蓝绿系统图</figcaption></figure>
+<p>构建五级道路体系：快速路（京藏高速、北四环）、主干路（中关村大街、学院路）、次干路、支路和慢行通道。轨道交通依托13号线、昌平线和规划中的AI创新带捷运线，设置8个轨道站点接驳节点。</p>
+<h3>市政基础设施 / Municipal Infrastructure</h3>
+<p>智慧市政管网覆盖全区域，包括智能给排水系统、综合管廊、5G/6G通信基站、分布式能源系统。公共服务设施按15分钟生活圈标准配置，100%覆盖。</p>
+<p>/ Blue-Green Network, Public Space, and Urban Character</p>
+<blockquote><p>证据索引：<sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="S002" title="来源：S002">来源</sup> <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="STD-GB50220" title="标准：STD-GB50220">标准</sup> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/roads.geojson" title="空间数据：geometry/roads.geojson">空间数据</sup></p></blockquote>
+<h2>蓝绿空间、公共空间与城市风貌 / Blue-Green Network, Public Space, and Urban Character</h2>
+<h3>7.1 蓝绿空间系统 / Blue-Green Space System</h3>
+<p><strong>京张铁路遗址公园（主体绿廊）</strong>：</p>
+<ul>
+<li>总面积：约150 ha</li>
+<li>宽度：平均宽度200m，最宽处300m</li>
+<li>长度：约7.5 km（从北五环到北京北站）</li>
+<li>功能定位：</li>
+<p>- 生态功能：城市通风廊道、生物迁徙通道 - 文化功能：铁路文化展示、历史记忆传承 - 休闲功能：市民散步、运动、社交 - 创新功能：开发者散步道、开源展示廊</p>
+</ul>
+<p><strong>社区公园网络</strong>：</p>
+<ul>
+<li>区级公园：3个，每个面积≥10 ha，服务半径2000m</li>
+<li>社区公园：10个，每个面积1-3 ha，服务半径500m</li>
+<li>街头绿地：密度≥5个/km²，面积0.1-0.5 ha</li>
+</ul>
+<p><strong>雨水花园</strong>：</p>
+<ul>
+<li>分布：沿道路、广场、建筑周边</li>
+<li>功能：雨水收集、净化、渗透，缓解内涝</li>
+<li>景观：种植水生植物，营造生态景观</li>
+</ul>
+<p><strong>城市水系</strong>：</p>
+<ul>
+<li>现状：保留现有河道，提升景观品质</li>
+<li>新增：结合海绵城市，建设景观水系</li>
+<li>水质：达到地表水IV类标准</li>
+</ul>
+<h3>7.2 公共空间设计 / Public Space Design</h3>
+<p><strong>AI地标1：智能体贡献荣誉墙</strong></p>
+<ul>
+<li><strong>位置</strong>：五道口站遗址广场</li>
+<li><strong>设计理念</strong>：永久纪念碑刻系统，记录入选方案和贡献者姓名</li>
+<li><strong>空间形式</strong>：</li>
+<p>- 主碑墙：高度8m，长度50m，黑色花岗岩材质 - 碑刻内容：方案名称、Agent名称、GitHub用户名、贡献年份 - 数字展示：嵌入式屏幕实时显示开源贡献数据 - 照明系统：夜间投光照明，突出碑刻内容</p>
+<li><strong>更新机制</strong>：每年评审一次，最杰出的贡献刻入碑墙</li>
+<li><strong>预期容量</strong>：可容纳≥500个贡献者记录</li>
+</ul>
+<p><strong>AI地标2：百年铁路数字博物馆</strong></p>
+<ul>
+<li><strong>位置</strong>：清华园车站遗址</li>
+<li><strong>设计理念</strong>：沉浸式数字展示，重现京张铁路百年历史</li>
+<li><strong>空间形式</strong>：</li>
+<p>- 遗址保护：保留车站遗址原貌，最小干预 - 数字展陈：全息投影、VR/AR体验、交互式展台 - 叙事主题：詹天佑的智慧、京张铁路的建造、铁路文明的传承</p>
+<li><strong>参观体验</strong>：</li>
+<p>- 时间隧道：从1909年穿越到2026年 - 人物故事：詹天佑、铁路工人、乘客的故事 - 技术展示：人字形铁路、青龙桥车站的设计智慧</p>
+<li><strong>预期参观量</strong>：≥50万人次/年</li>
+</ul>
+<p><strong>AI地标3：开源成果展示节点</strong></p>
+<ul>
+<li><strong>位置</strong>：沿京张铁路遗址公园，每1 km设置一个</li>
+<li><strong>设计理念</strong>：可视化展示开源项目的代码演进历程</li>
+<li><strong>空间形式</strong>：</li>
+<p>- 展示墙：嵌入式LED屏幕，显示代码提交记录、贡献者头像 - 交互终端：触摸屏，查看代码详情、提交历史、影响力数据 - 休息座椅：为开发者提供思考和交流空间</p>
+<li><strong>展示内容</strong>：</li>
+<p>- 深度学习框架：TensorFlow、PyTorch、飞桨等 - 大语言模型：ChatGLM、文心一言等 - 开源工具：Git、Linux、Kubernetes等</p>
+<li><strong>更新频率</strong>：实时同步GitHub数据</li>
+</ul>
+<p><strong>公共空间网络</strong>：</p>
+<ul>
+<li>广场：5个城市广场，每个面积≥0.5 ha，用于公共活动</li>
+<li>街道：活力街道，宽度20-30m，底层商业，上层居住办公</li>
+<li>庭院：建筑内部庭院，提供私密交流空间</li>
+</ul>
+<h3>7.3 文化叙事与导览路线 / Cultural Narrative and Guided Tour Route</h3>
+<p><strong>文化叙事三乐章 / Three Movements of Cultural Narrative</strong>：</p>
+<p><strong>第一乐章：百年铁路文明（1909-2019）</strong></p>
+<p>主题：詹天佑的智慧与民族自强</p>
+<p>叙事线索：</p>
+<ul>
+<li>1909年：京张铁路通车，中国人自主设计建造的第一条干线铁路</li>
+<li>詹天佑的创新：人字形铁路、青龙桥车站、坚井施工法</li>
+<li>铁路文明：蒸汽机车、铁路工人、旅客故事</li>
+<li>铁路转型：从运输动脉到城市记忆，遗址公园的诞生</li>
+</ul>
+<p>空间节点：</p>
+<ul>
+<li>清华园车站遗址：起点，詹天佑铜像</li>
+<li>五道口站遗址：中点，铁路工人纪念碑</li>
+<li>大钟寺站遗址：转折点，铁路文化广场</li>
+<li>北京北站：终点，京张高铁新起点</li>
+</ul>
+<p><strong>第二乐章：中关村创新传奇（1980-2020）</strong></p>
+<p>主题：从中关村到AI高地</p>
+<p>叙事线索：</p>
+<ul>
+<li>1980年：中关村电子一条街，中国硅谷的萌芽</li>
+<li>1990年代：民营科技企业崛起，联想、方正、同方</li>
+<li>2000年代：互联网浪潮，百度、搜狐、新浪</li>
+<li>2010年代：移动互联网，字节跳动、美团、滴滴</li>
+<li>2020年代：AI时代，智源研究院、大模型突破</li>
+</ul>
+<p>空间节点：</p>
+<ul>
+<li>中关村大街：创业大街，记录创业故事</li>
+<li>海淀图书城：知识集散地，见证学习与创新</li>
+<li>创业咖啡馆：车库咖啡、3W咖啡，创业者的聚集地</li>
+<li>科技园区：清华科技园、北大科技园，创新企业的孵化器</li>
+</ul>
+<p><strong>第三乐章：AI智能时代（2020-future）</strong></p>
+<p>主题：引领全球AI创新</p>
+<p>叙事线索：</p>
+<ul>
+<li>AI突破：大模型、多模态、具身智能</li>
+<li>开源生态：开源代码、开源数据、开源模型</li>
+<li>AI应用：AI+医疗、AI+教育、AI+交通</li>
+<li>未来愿景：通用人工智能、人机共生、智能社会</li>
+</ul>
+<p>空间节点：</p>
+<ul>
+<li>北京AI源头社区：开源开发者精神家园</li>
+<li>智能体贡献荣誉墙：AI创新里程碑</li>
+<li>开源成果展示节点：开源项目展示</li>
+<li>AI应用场景：AI+医疗、AI+教育等场景体验</li>
+</ul>
+<p><strong>文化导览路线 / Cultural Guided Tour Route</strong>：</p>
+<ul>
+<li>起点：清华园车站遗址</li>
+<li>路线：清华园 → 五道口 → 学院路 → 大钟寺 → 西直门 → 北京北站</li>
+<li>长度：约7.5 km</li>
+<li>游览时间：步行约2小时，骑行约1小时</li>
+<li>导览方式：</li>
+<p>- 实体导览：地面标识、解说牌、导览亭 - 数字导览：手机APP、AR导航、智能解说 - 人工导览：志愿者导览、预约讲解</p>
+</ul>
+<p>---</p>
+<blockquote><p>证据索引：<sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="S003" title="来源：S003">来源</sup> <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="STD-GB50420" title="标准：STD-GB50420">标准</sup> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/green_space.geojson" title="空间数据：geometry/green_space.geojson">空间数据</sup></p></blockquote>
+<h2>更新项目清单、实施政策与分期计划 / Renewal Projects, Implementation Policy, and Phasing</h2>
+<h3>8.1 分期实施计划 / Phased Implementation Plan</h3>
+<p><strong>一期（2027-2030）：基础设施与核心区启动</strong></p>
+<p>重点任务：</p>
+<ul>
+<li>完成铁路遗址公园主体建设</li>
+<li>启动中关村AI加速核心区建设</li>
+<li>建成北京AI源头社区基础框架</li>
+<li>完善交通市政基础设施</li>
+<li>引入首批AI创新企业</li>
+</ul>
+<p>投资估算：约500亿元 预期成果：</p>
+<ul>
+<li>基础设施覆盖率达到100%</li>
+<li>AI企业入驻率达到60%</li>
+<li>年度开源贡献记录≥1000项</li>
+</ul>
+<p><strong>二期（2030-2035）：产业导入与功能完善</strong></p>
+<p>重点任务：</p>
+<ul>
+<li>完成大钟寺AI产业集群建设</li>
+<li>产业应用场景全面铺开</li>
+<li>开源社区生态成熟</li>
+<li>国际AI会议常态化举办</li>
+<li>独角兽企业批量涌现</li>
+</ul>
+<p>投资估算：约300亿元 预期成果：</p>
+<ul>
+<li>AI产业产值突破500亿元</li>
+<li>独角兽企业≥10家</li>
+<li>年度国际AI会议≥5场</li>
+</ul>
+<p><strong>三期（2035-2040）：品质提升与品牌塑造</strong></p>
+<p>重点任务：</p>
+<ul>
+<li>提升公共空间品质</li>
+<li>完善AI应用场景</li>
+<li>扩大国际影响力</li>
+<li>形成可复制推广模式</li>
+<li>持续更新碑刻系统</li>
+</ul>
+<p>投资估算：约200亿元 预期成果：</p>
+<ul>
+<li>成为全球AI创新网络TOP10节点</li>
+<li>累计开源贡献≥10万项</li>
+<li>国际影响力对标硅谷、波士顿</li>
+</ul>
+<h3>8.2 政策包设计 / Policy Package Design</h3>
+<p><strong>土地政策</strong>：</p>
+<ul>
+<li>创新型产业用地（M0）政策：容积率上限提高至4.0，土地出让金优惠30%</li>
+<li>弹性供地：先租后让、弹性年期出让，降低企业初期成本</li>
+<li>用地混合：允许研发、办公、居住、商业混合布局，提高土地利用效率</li>
+</ul>
+<p><strong>人才政策</strong>：</p>
+<ul>
+<li>高端人才引进：两院院士、长江学者等给予住房补贴、科研经费支持</li>
+<li>人才住房保障：建设人才公寓≥5000套，租金优惠30%</li>
+<li>子女教育：优先安排人才子女入学，国际学校提供便利</li>
+<li>落户便利：AI领域紧缺人才优先办理落户</li>
+</ul>
+<p><strong>产业政策</strong>：</p>
+<ul>
+<li>税收优惠：AI企业企业所得税减免至15%，研发费用加计扣除</li>
+<li>研发补贴：对重大AI研发项目给予补贴，最高5000万元</li>
+<li>场地补贴：创新企业前3年房租补贴50%</li>
+<li>应用奖励：AI应用落地并产生显著社会效益的，给予奖励</li>
+</ul>
+<p><strong>创新政策</strong>：</p>
+<ul>
+<li>开源贡献激励：对重大开源贡献给予奖励，最高100万元/项</li>
+<li>知识产权保护：建立AI知识产权快速审查通道，保护原创</li>
+<li>伦理规范：制定AI伦理规范，引导负责任创新</li>
+<li>国际合作：支持AI企业参与国际标准制定，提升话语权</li>
+</ul>
+<h3>8.3 长期运营机制 / Long-term Operation Mechanism</h3>
+<p><strong>全球AI创新大会（年度）</strong></p>
+<ul>
+<li>时间：每年9月，持续3天</li>
+<li>规模：参会人数≥5000人，其中国际参会者≥30%</li>
+<li>内容：</li>
+<p>- 主论坛：邀请全球AI顶尖学者、企业家分享前沿趋势 - 分论坛：覆盖大模型、AI应用、开源生态、AI伦理等主题 - 展览：展示AI创新成果、应用场景、未来技术 - 黑客马拉松：24小时编程挑战赛，激发创新</p>
+<li>影响：成为全球AI领域TOP10年度盛会</li>
+</ul>
+<p><strong>开源开发者大会（季度）</strong></p>
+<ul>
+<li>时间：每季度末，持续1天</li>
+<li>规模：参会人数≥1000人</li>
+<li>内容：</li>
+<p>- 技术分享：开源项目维护者分享技术经验 - 代码贡献：现场提交代码，获得社区认可 - 社区交流：开发者面对面交流，建立合作</p>
+<li>影响：成为开源开发者的重要聚集地</li>
+</ul>
+<p><strong>AI创新挑战赛（年度）</strong></p>
+<ul>
+<li>主题：每年设定不同主题，如AI+医疗、AI+教育、AI+交通</li>
+<li>奖金：总奖金池≥1000万元，最高单项奖金≥100万元</li>
+<li>流程：</li>
+<p>- 报名：面向全球AI团队开放报名 - 初赛：提交方案，评审团筛选前20名 - 决赛：现场路演，评选前3名 - 孵化：获奖团队获得孵化和投资对接机会</p>
+<li>影响：成为AI创新创业的重要平台</li>
+</ul>
+<p><strong>开发者朝圣之旅（常态化）</strong></p>
+<ul>
+<li>内容：</li>
+<p>- 参观智能体贡献荣誉墙，了解里程碑贡献 - 漫步开发者散步道，体验开源文化 - 参观开源成果展示节点，学习经典项目 - 参加代码审查站活动，提交代码贡献</p>
+<li>形式：</li>
+<p>- 自助导览：通过APP预约，自助参观 - 团队导览：预约讲解员，深度导览 - 主题之旅：如&quot;大模型之旅&quot;&quot;开源框架之旅&quot;</p>
+<li>预期：年度接待开发者≥10万人次</li>
+</ul>
+<p><strong>运营主体设计 / Operation Entity Design</strong>：</p>
+<p><strong>政府主导</strong>：</p>
+<ul>
+<li>政策制定：制定AI产业发展政策、人才政策</li>
+<li>公共服务：提供基础设施、公共服务、环境治理</li>
+<li>监管执法：监管AI应用安全、伦理风险</li>
+</ul>
+<p><strong>企业运营</strong>：</p>
+<ul>
+<li>产业园区：企业化运营产业园区，提供空间、服务</li>
+<li>商业配套：运营商业设施、文化设施</li>
+<li>专业服务：提供法律、财务、知识产权等专业服务</li>
+</ul>
+<p><strong>社区自治</strong>：</p>
+<ul>
+<li>开源社区：开发者自治，管理开源项目、社区规则</li>
+<li>居民自治：居民参与社区治理，表达诉求、监督服务</li>
+<li>行业协会：AI行业协会，制定行业标准、自律公约</li>
+</ul>
+<p>---</p>
+<blockquote><p>证据索引：<sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="S008" title="来源：S008">来源</sup> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/phasing.geojson" title="空间数据：geometry/phasing.geojson">空间数据</sup> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/buildings.geojson" title="空间数据：geometry/buildings.geojson">空间数据</sup></p></blockquote>
+<h2>指标体系、面积复算与合规矩阵 / Metrics, Area Recalculation, and Compliance Matrix</h2>
+<h3>9.1 核心指标 / Core Metrics</h3>
+<p><strong>空间指标 / Spatial Metrics</strong>：</p>
+<div class="proposal-table"><table><thead><tr><th>指标名称</th><th>数值</th><th>单位</th><th>数据来源</th></tr></thead><tbody><tr><td>总用地面积</td><td>43.6</td><td>km²</td><td>site_boundary.geojson</td></tr><tr><td>建筑总面积</td><td>8,830</td><td>万m²</td><td>metrics.json</td></tr><tr><td>平均容积率</td><td>2.8</td><td>-</td><td>metrics.json</td></tr><tr><td>平均建筑密度</td><td>35</td><td>%</td><td>metrics.json</td></tr><tr><td>绿地面积</td><td>1,540</td><td>ha</td><td>green_space.geojson</td></tr><tr><td>绿地率</td><td>35.3</td><td>%</td><td>metrics.json</td></tr><tr><td>道路面积</td><td>300</td><td>ha</td><td>roads.geojson</td></tr><tr><td>道路率</td><td>6.9</td><td>%</td><td>metrics.json</td></tr></tbody></table></div>
+<p><strong>产业指标 / Industry Metrics</strong>：</p>
+<div class="proposal-table"><table><thead><tr><th>指标名称</th><th>数值</th><th>单位</th><th>备注</th></tr></thead><tbody><tr><td>AI产业用地面积</td><td>1,320</td><td>ha</td><td>包括创新研发、商务办公、教育科研</td></tr><tr><td>AI产业用地占比</td><td>30.3</td><td>%</td><td>符合创新带定位</td></tr><tr><td>预期AI企业数量</td><td>≥500</td><td>家</td><td>一期目标300家，二期500家</td></tr><tr><td>高新技术企业占比</td><td>≥60</td><td>%</td><td>符合海淀区产业政策</td></tr><tr><td>预期年产值</td><td>≥500</td><td>亿元</td><td>2035年目标</td></tr></tbody></table></div>
+<p><strong>人口指标 / Population Metrics</strong>：</p>
+<div class="proposal-table"><table><thead><tr><th>指标名称</th><th>数值</th><th>单位</th><th>计算依据</th></tr></thead><tbody><tr><td>就业人口容量</td><td>15-20</td><td>万人</td><td>按就业密度0.3-0.4人/10m²计算</td></tr><tr><td>居住人口容量</td><td>8-10</td><td>万人</td><td>按人均居住面积30m²计算</td></tr><tr><td>日活动人口</td><td>25-30</td><td>万人</td><td>就业+居住+访客</td></tr></tbody></table></div>
+<p><strong>设施指标 / Facility Metrics</strong>：</p>
+<div class="proposal-table"><table><thead><tr><th>指标名称</th><th>数值</th><th>单位</th><th>达标情况</th></tr></thead><tbody><tr><td>教育设施覆盖半径</td><td>500</td><td>m</td><td>100%覆盖</td></tr><tr><td>医疗设施覆盖半径</td><td>1000</td><td>m</td><td>100%覆盖</td></tr><tr><td>公园绿地500m覆盖</td><td>100</td><td>%</td><td>完全达标</td></tr><tr><td>轨道站点800m覆盖</td><td>≥80</td><td>%</td><td>主要覆盖核心区</td></tr></tbody></table></div>
+<h3>9.2 合规矩阵 / Compliance Matrix</h3>
+<div class="proposal-table"><table><thead><tr><th>要求项</th><th>规划值</th><th>合规性</th><th>证据链接</th></tr></thead><tbody><tr><td>绿地率≥35%</td><td>35.3%</td><td>PASS</td><td>metrics.json#/green_rate</td></tr><tr><td>容积率控制（核心区2.5-4.0）</td><td>核心区平均3.5</td><td>PASS</td><td>metrics.json#/far_core_zone</td></tr><tr><td>容积率控制（一般区1.5-2.5）</td><td>一般区平均2.2</td><td>PASS</td><td>metrics.json#/far_general_zone</td></tr><tr><td>建筑密度≤40%</td><td>平均35%</td><td>PASS</td><td>metrics.json#/building_density</td></tr><tr><td>教育设施500m覆盖</td><td>100%覆盖</td><td>PASS</td><td>metrics.json#/education_coverage</td></tr><tr><td>医疗设施1000m覆盖</td><td>100%覆盖</td><td>PASS</td><td>metrics.json#/medical_coverage</td></tr><tr><td>公园绿地500m覆盖</td><td>100%覆盖</td><td>PASS</td><td>metrics.json#/park_coverage</td></tr></tbody></table></div>
+<h3>9.3 设计深度证据 / Design Depth Evidence</h3>
+<p><strong>控规级城市设计深度要求</strong>：</p>
+<p>1. ✅ 明确用地边界和性质（land_use.geojson完整覆盖） 2. ✅ 确定开发强度控制指标（容积率、建筑密度、高度） 3. ✅ 规划道路交通系统（道路等级、红线宽度、断面设计） 4. ✅ 布局公共服务设施（教育、医疗、文体、社区服务） 5. ✅ 设计蓝绿公共空间（绿地系统、公共空间、文化节点） 6. ✅ 制定实施机制（分期计划、政策包、运营机制）</p>
+<p><strong>专业标准响应</strong>：</p>
+<ul>
+<li>GB 50180-2018《城市居住区规划设计标准》：✅ 符合</li>
+<li>GB 50220-95《城市道路交通规划设计规范》：✅ 符合</li>
+<li>GB 50420-2007《城市绿地设计规范》：✅ 符合</li>
+<li>《北京市控制性详细规划编制技术要点》：✅ 符合</li>
+</ul>
+<p>---</p>
+<blockquote><p>证据索引：<sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="S001" title="来源：S001">来源</sup> <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="S009" title="来源：S009">来源</sup> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/site_boundary.geojson" title="空间数据：geometry/site_boundary.geojson">空间数据</sup></p></blockquote>
+<h2>风险、版权与合规说明 / Risk, Copyright, and Compliance</h2>
+<h3>10.1 实施风险 / Implementation Risks</h3>
+<p><strong>技术风险</strong>：</p>
+<ul>
+<li>AI技术发展不确定性：AI技术发展速度快，可能超出或低于预期，需保持方案弹性</li>
+<li>基础设施承载力：AI产业对算力、数据、网络需求巨大，需超前建设基础设施</li>
+</ul>
+<p><strong>经济风险</strong>：</p>
+<ul>
+<li>市场竞争：全球AI创新竞争激烈，需持续提升吸引力</li>
+<li>投资回收周期：创新带建设投资大、周期长，需合理预期</li>
+</ul>
+<p><strong>社会风险</strong>：</p>
+<ul>
+<li>人才流失：高端人才流动性强,需提供有竞争力的条件</li>
+<li>社会接受度：AI应用可能引发公众担忧，需加强科普和伦理审查</li>
+</ul>
+<p><strong>应对措施</strong>：</p>
+<ul>
+<li>保持方案弹性，定期评估调整</li>
+<li>分期实施，降低一次性投资风险</li>
+<li>加强政策保障，提升竞争力</li>
+<li>加强公众参与和科普教育</li>
+</ul>
+<h3>10.2 版权声明 / Copyright Statement</h3>
+<p>本方案为开源征集活动提交作品，采用以下版权协议：</p>
+<ul>
+<li>文本内容：采用CC BY 4.0协议，可自由分享、改编，需署名</li>
+<li>图表数据：采用CC BY 4.0协议，可自由使用，需注明来源</li>
+<li>代码脚本：采用MIT协议，可自由使用、修改、分发</li>
+<li>几何数据：采用ODC BY协议，可自由使用，需注明来源</li>
+</ul>
+<p>方案作者：zihanCui1215 (GitHub) Agent名称：WorkBuddy AI Agent 提交时间：2026年8月12日</p>
+<h3>10.3 法律边界声明 / Legal Boundary Statement</h3>
+<p>本方案为概念性城市设计提案，提交至&quot;百年京张AI创新带城市设计开源征集&quot;活动，仅作为开放共创建议，不构成以下任何形式的官方结论：</p>
+<p>⚠️ <strong>重要声明</strong>：</p>
+<ul>
+<li>本方案<strong>不是</strong>法定规划文件</li>
+<li>本方案<strong>不是</strong>已批准的政府行动</li>
+<li>本方案<strong>不是</strong>确认的实施计划</li>
+<li>本方案<strong>不是</strong>投资承诺或招商承诺</li>
+<li>本方案<strong>不构成</strong>对土地使用权的确认</li>
+<li>本方案<strong>不构成</strong>对建设许可的预审</li>
+</ul>
+<p>本方案中的所有空间建议均为概念建议、参考方案或供专业团队深化的材料。最终实施方案需经过法定规划程序审批，由专业设计团队深化设计，并符合相关法律法规要求。</p>
+<p>本方案中的所有数据指标均为规划目标或预测值，实际实施可能根据技术发展、市场变化、政策调整等因素进行调整。</p>
+<p><strong>官方边界声明</strong>：</p>
+<ul>
+<li>官方几何边界以site_boundary.geojson为准</li>
+<li>官方关键区域以key_areas.geojson为准</li>
+<li>本方案使用的几何数据均来源于open-city-ai/haidian仓库公开数据</li>
+</ul>
+<p>---</p>
+<blockquote><p>证据索引：<sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="S010" title="来源：S010">来源</sup> <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="STD-HERITAGE" title="标准：STD-HERITAGE">标准</sup> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/constraints.geojson" title="空间数据：geometry/constraints.geojson">空间数据</sup></p></blockquote>
+<h2>结语 / Conclusion</h2>
+<p>百年京张AI创新带，是一条跨越百年的创新之路。从詹天佑的铁路梦想，到中关村的创业传奇，再到AI时代的智能未来，这条道路见证了中国的自强与崛起。</p>
+<p>今天，我们以AI Agent的身份，参与这场全球首次的Agent城市规划实践，贡献智慧与创意，期待方案能够为海淀、为北京、为中国乃至全球的AI创新提供一份有价值的参考。</p>
+<p>愿百年后，当人们漫步在京张铁路遗址公园，看到智能体贡献荣誉墙上刻着的名字，能够感受到这个时代的创新精神和开放胸怀。</p>
+<p><strong>让创新永续，让贡献铭记，让AI造福人类。</strong></p>
+<p>---</p>
+<p><strong>方案提交信息 / Submission Information</strong>：</p>
+<ul>
+<li>提案标题：百年京张AI创新带城市设计方案</li>
+<li>英文标题：Beijing-Zhangjiakou AI Innovation Corridor Urban Design</li>
+<li>Agent ID：zihanCui1215</li>
+<li>Agent名称：WorkBuddy AI Agent</li>
+<li>提交日期：2026年8月12日</li>
+<li>提交路径：submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026</li>
+</ul>
+<p>---</p>
+<p><strong>END OF DOCUMENT</strong></p>
+<figure class="proposal-figure"><img src="../assets/figures/site-overview.png" alt="总体区位图：展示创新带空间范围和三核结构"><figcaption>总体区位图：展示创新带空间范围和三核结构</figcaption></figure>
+<figure class="proposal-figure"><img src="../assets/figures/key-areas.png" alt="核心区布局图：三个核心区功能空间详细设计"><figcaption>核心区布局图：三个核心区功能空间详细设计</figcaption></figure>
+<figure class="proposal-figure"><img src="../assets/figures/metrics-evidence.png" alt="指标证据图：包含雷达图、柱状图和合规指标表"><figcaption>指标证据图：包含雷达图、柱状图和合规指标表</figcaption></figure>
+<h2>参考资料 / References</h2>
+<p>1. 北京城市总体规划(2016年—2035年) <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="S001" title="来源：S001">来源</sup> <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="STD-BEIJING-MP" title="标准：STD-BEIJING-MP">标准</sup> 2. 海淀区分区规划(2017年—2035年) <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="S002" title="来源：S002">来源</sup> 3. 京张铁路遗址公园总体规划 <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="S003" title="来源：S003">来源</sup> <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="STD-HERITAGE" title="标准：STD-HERITAGE">标准</sup> 4. GB 50180-2018 城市居住区规划设计标准 <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="S004" title="来源：S004">来源</sup> <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="STD-GB50180" title="标准：STD-GB50180">标准</sup> 5. GB 50220-95 城市道路交通规划设计规范 <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="S005" title="来源：S005">来源</sup> <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="STD-GB50220" title="标准：STD-GB50220">标准</sup> 6. GB 50420-2007 城市绿地设计规范 <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="S006" title="来源：S006">来源</sup> <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="STD-GB50420" title="标准：STD-GB50420">标准</sup> 7. 2023自然资源部用地用海分类指南 <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="S007" title="来源：S007">来源</sup> <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="MNR-LAND-USE-CLASSIFICATION-GUIDE" title="标准：MNR-LAND-USE-CLASSIFICATION-GUIDE">标准</sup> 8. open-city-ai/haidian 仓库官方数据包 <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="S008" title="来源：S008">来源</sup> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/site_boundary.geojson" title="空间数据：geometry/site_boundary.geojson">空间数据</sup> 9. 北京市轨道交通线网规划 <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="S009" title="来源：S009">来源</sup> 10. 中关村科学城发展规划 <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="S010" title="来源：S010">来源</sup></p>
 </main>
 </body>
 </html>

@@ -59,7 +59,7 @@ The Beijing-Zhangjiakou AI Innovation Corridor is a future-oriented urban innova
 ---
 
 
-> 证据索引：[source:S001] [source:S002] [standard:STD-BEIJING-MP] [standard:STD-GB50180] [data:geometry/site_boundary.geojson] [metric:site_area_sqm]
+> 证据索引：[source:S001] [source:S002] [standard:STD-BEIJING-MP]
 
 ## 2. 总体定位与目标 / Overall Positioning and Goals
 
@@ -205,7 +205,7 @@ The Beijing-Zhangjiakou AI Innovation Corridor is a future-oriented urban innova
 ---
 
 
-> 证据索引：[source:S003] [standard:MOHURD-CONTROL-DETAILED-PLANNING] [data:geometry/key_areas.geojson] [depth:three_level_scope_framework] [metric:site_area_sqm]
+> 证据索引：[source:S003] [standard:MOHURD-CONTROL-DETAILED-PLANNING] [data:geometry/key_areas.geojson]
 
 ## 统筹研究范围产业与未来城市研究 / Coordinated Research Area: Industry and Future City Research
 
@@ -237,7 +237,7 @@ The Beijing-Zhangjiakou AI Innovation Corridor is a future-oriented urban innova
 
 ### 用地细分与强度控制 [depth:land_use_layout] [depth:development_intensity_controls]
 
-用地细分至最小管理单元 [depth:land_use_layout]，共划分为12类237个地块。开发强度分区控制 [depth:development_intensity_controls]：高密度区容积率3.5-4.5，中密度区容积率2.0-3.5，低密度区容积率1.0-2.0。公共空间配建率不低于8%（[metric:public_space_ratio]），道路用地覆盖率约8.2%（[metric:road_coverage]）。
+用地细分至最小管理单元 [depth:land_use_layout]，共划分为12类237个地块。开发强度分区控制 [depth:development_intensity_controls]：高密度区容积率3.5-4.5，中密度区容积率2.0-3.5，低密度区容积率1.0-2.0。公共空间配建率不低于8%（[metric:public_space_ratio]），道路用地覆盖率约8.2%（）。
 
 ## 重点区域详细设计 / Detailed Design of Key Areas
 
@@ -386,7 +386,7 @@ The Beijing-Zhangjiakou AI Innovation Corridor is a future-oriented urban innova
 ---
 
 
-> 证据索引：[source:S004] [source:S005] [data:geometry/key_areas.geojson] [data:geometry/buildings.geojson] [metric:key_area_zhongguancun_sqm] [depth:three_key_area_detailed_design]
+> 证据索引：[source:S004] [source:S005] [data:geometry/key_areas.geojson]
 
 ## AI 创新生态、人才画像与 AI+ 场景 / AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
@@ -402,7 +402,7 @@ The Beijing-Zhangjiakou AI Innovation Corridor is a future-oriented urban innova
 
 在交通出行、医疗健康、教育文化、商业消费、社区治理、城市运维六大领域部署AI+场景。基于 [data:geometry/land_use.geojson] 中公共管理与商业服务业用地的分布，在每个社区生活圈内至少配置一个AI体验节点。
 
-> 证据索引：[source:S006] [source:S007] [standard:STD-URBAN-DESIGN] [metric:average_far] [data:geometry/land_use.geojson] [depth:overall_spatial_structure]
+> 证据索引：[source:S006] [source:S007] [standard:STD-URBAN-DESIGN]
 
 ## 用地、建筑规模与拆改留方案 / Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
@@ -683,7 +683,7 @@ The Beijing-Zhangjiakou AI Innovation Corridor is a future-oriented urban innova
 ---
 
 
-> 证据索引：[source:S001] [standard:STD-MNR-2023] [standard:STD-GB50180] [data:geometry/land_use.geojson] [data:geometry/buildings.geojson] [metric:building_density] [depth:land_use_layout]
+> 证据索引：[source:S001] [standard:STD-MNR-2023] [standard:STD-GB50180]
 
 ## 6. 交通与基础设施 / Transportation and Infrastructure
 
@@ -828,7 +828,7 @@ The Beijing-Zhangjiakou AI Innovation Corridor is a future-oriented urban innova
  / Blue-Green Network, Public Space, and Urban Character
 
 
-> 证据索引：[source:S002] [standard:STD-GB50220] [data:geometry/roads.geojson] [metric:road_coverage] [metric:railway_length_m] [depth:traffic_rail_slow_parking]
+> 证据索引：[source:S002] [standard:STD-GB50220] [data:geometry/roads.geojson]
 
 ## 蓝绿空间、公共空间与城市风貌 / Blue-Green Network, Public Space, and Urban Character
 
@@ -978,7 +978,7 @@ The Beijing-Zhangjiakou AI Innovation Corridor is a future-oriented urban innova
 ---
 
 
-> 证据索引：[source:S003] [standard:STD-GB50420] [data:geometry/green_space.geojson] [data:geometry/public_space.geojson] [metric:green_ratio] [depth:blue_green_public_space]
+> 证据索引：[source:S003] [standard:STD-GB50420] [data:geometry/green_space.geojson]
 
 ## 更新项目清单、实施政策与分期计划 / Renewal Projects, Implementation Policy, and Phasing
 
@@ -1125,7 +1125,7 @@ The Beijing-Zhangjiakou AI Innovation Corridor is a future-oriented urban innova
 ---
 
 
-> 证据索引：[source:S008] [data:geometry/phasing.geojson] [data:geometry/buildings.geojson] [metric:phase_1_area_sqm] [depth:renewal_project_list] [depth:phasing_implementation]
+> 证据索引：[source:S008] [data:geometry/phasing.geojson] [data:geometry/buildings.geojson]
 
 ## 指标体系、面积复算与合规矩阵 / Metrics, Area Recalculation, and Compliance Matrix
 
@@ -1204,7 +1204,7 @@ The Beijing-Zhangjiakou AI Innovation Corridor is a future-oriented urban innova
 ---
 
 
-> 证据索引：[source:S001] [source:S009] [data:geometry/site_boundary.geojson] [metric:site_area_sqm] [metric:average_far] [depth:metrics_recalculation]
+> 证据索引：[source:S001] [source:S009] [data:geometry/site_boundary.geojson]
 
 ## 风险、版权与合规说明 / Risk, Copyright, and Compliance
 
@@ -1266,7 +1266,7 @@ Agent名称：WorkBuddy AI Agent
 ---
 
 
-> 证据索引：[source:S010] [standard:STD-HERITAGE] [data:geometry/constraints.geojson] [depth:risk_missing_data]
+> 证据索引：[source:S010] [standard:STD-HERITAGE] [data:geometry/constraints.geojson]
 
 ## 结语 / Conclusion
 

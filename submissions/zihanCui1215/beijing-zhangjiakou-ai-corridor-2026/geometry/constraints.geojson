@@ -1,147 +1,47 @@
 {
-  "type": "FeatureCollection",
-  "name": "HERITAGE_PROTECTION",
-  "crs": {
-    "type": "name",
-    "properties": {
-      "name": "urn:ogc:def:crs:OGC::CRS84"
-    }
-  },
-  "features": [
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "con_001",
-        "layer": "HERITAGE_PROTECTION",
-        "name": "京张铁路遗址保护线",
-        "name_en": "Beijing-Zhangjiakou Railway Heritage Protection Line",
-        "type": "文物保护约束",
-        "constraint_type": "heritage_protection",
-        "source_type": "official_open_data",
-        "confidence": "high",
-        "geometry_role": "official_constraint",
-        "official_boundary": true,
-        "description": "铁路遗址保护范围，限制开发活动"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.334,
-              40.02
-            ],
-            [
-              116.336,
-              40.02
-            ],
-            [
-              116.336,
-              39.96
-            ],
-            [
-              116.334,
-              39.96
-            ],
-            [
-              116.334,
-              40.02
-            ]
-          ]
-        ]
-      },
-      "id": "con_001"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "con_002",
-        "layer": "HERITAGE_PROTECTION",
-        "name": "高校保护区",
-        "name_en": "University Protection Zone",
-        "type": "教育用地保护",
-        "constraint_type": "education_protection",
-        "source_type": "official_open_data",
-        "confidence": "high",
-        "geometry_role": "official_constraint",
-        "official_boundary": true,
-        "description": "高校周边用地控制，保障教育科研功能"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.33,
-              40.01
-            ],
-            [
-              116.345,
-              40.01
-            ],
-            [
-              116.345,
-              40.02
-            ],
-            [
-              116.33,
-              40.02
-            ],
-            [
-              116.33,
-              40.01
-            ]
-          ]
-        ]
-      },
-      "id": "con_002"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "con_003",
-        "layer": "HERITAGE_PROTECTION",
-        "name": "轨道交通控制线",
-        "name_en": "Rail Transit Control Line",
-        "type": "交通设施控制",
-        "constraint_type": "transit_buffer",
-        "source_type": "official_open_data",
-        "confidence": "high",
-        "geometry_role": "official_constraint",
-        "official_boundary": true,
-        "description": "地铁13号线沿线开发控制"
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            116.335,
-            40.015
-          ],
-          [
-            116.335,
-            40.0
-          ],
-          [
-            116.335,
-            39.985
-          ],
-          [
-            116.335,
-            39.97
-          ]
-        ]
-      },
-      "id": "con_003"
-    }
-  ],
-  "metadata": {
-    "created_at": "2026-08-12T23:10:00+08:00",
-    "created_by": "zihanCui1215",
-    "agent_name": "WorkBuddy AI Agent",
-    "source": "official + derived",
-    "coordinate_system": "WGS84",
-    "total_features": 3,
-    "note": "约束图层，包含遗址保护、教育保护和交通控制"
+ "type": "FeatureCollection",
+ "name": "constraints",
+ "features": [
+  {
+   "type": "Feature",
+   "id": "constraint_jingzhang_heritage",
+   "properties": {
+    "id": "constraint_jingzhang_heritage",
+    "layer": "HERITAGE_PROTECTION",
+    "name_zh": "京张铁路遗址保护控制带",
+    "source_type": "agent_inferred_from_public_data",
+    "confidence": "medium",
+    "geometry_role": "provisional_constraint",
+    "official_boundary": false,
+    "constraint_type": "heritage_protection"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.34878601371503,
+       39.939000227162566
+      ],
+      [
+       116.34738202509818,
+       39.93900022818007
+      ],
+      [
+       116.34654897125563,
+       40.026500145341444
+      ],
+      [
+       116.34795475198031,
+       40.026500166549894
+      ],
+      [
+       116.34878601371503,
+       39.939000227162566
+      ]
+     ]
+    ]
+   }
   }
+ ]
 }

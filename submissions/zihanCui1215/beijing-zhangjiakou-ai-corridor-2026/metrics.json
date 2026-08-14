@@ -7,7 +7,7 @@
   "metrics": {
     "site_area_sqm": {
       "status": "known",
-      "value": 43600000,
+      "value": 11412825.386,
       "unit": "sqm",
       "source_files": [
         "geometry/site_boundary.geojson"
@@ -16,11 +16,13 @@
       "confidence": "high",
       "assumptions": [
         "ASSUME-001"
-      ]
+      ],
+      "label_zh": "总体设计范围面积",
+      "source": "geometry/site_boundary.geojson（EPSG:4548重算）"
     },
     "green_ratio": {
       "status": "known",
-      "value": 0.353,
+      "value": 0.444153,
       "unit": "ratio",
       "source_files": [
         "geometry/green_space.geojson",
@@ -30,11 +32,13 @@
       "confidence": "medium",
       "assumptions": [
         "ASSUME-002"
-      ]
+      ],
+      "label_zh": "绿地率",
+      "source": "green_space_area/site_area"
     },
     "public_space_ratio": {
       "status": "known",
-      "value": 0.082,
+      "value": 0.082411,
       "unit": "ratio",
       "source_files": [
         "geometry/public_space.geojson",
@@ -44,7 +48,9 @@
       "confidence": "medium",
       "assumptions": [
         "ASSUME-003"
-      ]
+      ],
+      "label_zh": "公共空间配建率",
+      "source": "public_space_area/site_area"
     },
     "building_density": {
       "status": "known",
@@ -72,19 +78,6 @@
         "ASSUME-005"
       ]
     },
-    "road_coverage": {
-      "status": "known",
-      "value": 0.082,
-      "unit": "ratio",
-      "source_files": [
-        "geometry/roads.geojson"
-      ],
-      "formula": "road_area / site_area",
-      "confidence": "medium",
-      "assumptions": [
-        "ASSUME-006"
-      ]
-    },
     "key_area_zhongguancun_sqm": {
       "status": "known",
       "value": 8500000,
@@ -98,25 +91,29 @@
     },
     "key_area_ai_origin_sqm": {
       "status": "known",
-      "value": 6200000,
+      "value": 1043236.909,
       "unit": "sqm",
       "source_files": [
         "geometry/key_areas.geojson"
       ],
       "formula": "Key area polygon area",
       "confidence": "high",
-      "assumptions": []
+      "assumptions": [],
+      "label_zh": "重点片区面积（几何重算）",
+      "source": "geometry/key_areas.geojson beijing_ai_origin_community"
     },
     "key_area_dazhongsi_sqm": {
       "status": "known",
-      "value": 5800000,
+      "value": 720454.219,
       "unit": "sqm",
       "source_files": [
         "geometry/key_areas.geojson"
       ],
       "formula": "Key area polygon area",
       "confidence": "high",
-      "assumptions": []
+      "assumptions": [],
+      "label_zh": "重点片区面积（几何重算）",
+      "source": "geometry/key_areas.geojson dazhongsi_ai_industry_cluster"
     },
     "heritage_sites_count": {
       "status": "known",
@@ -126,17 +123,6 @@
         "geometry/constraints.geojson"
       ],
       "formula": "Count of heritage protection features",
-      "confidence": "high",
-      "assumptions": []
-    },
-    "railway_length_m": {
-      "status": "known",
-      "value": 9300,
-      "unit": "m",
-      "source_files": [
-        "geometry/constraints.geojson"
-      ],
-      "formula": "Length of heritage railway alignment",
       "confidence": "high",
       "assumptions": []
     },
@@ -172,6 +158,34 @@
       "formula": "Phase 3 polygon area",
       "confidence": "high",
       "assumptions": []
+    },
+    "green_space_area_sqm": {
+      "value": 5069037.118,
+      "unit": "sqm",
+      "status": "known",
+      "label_zh": "绿地面积",
+      "source": "geometry/green_space.geojson（EPSG:4548重算）"
+    },
+    "public_space_area_sqm": {
+      "value": 940541.836,
+      "unit": "sqm",
+      "status": "known",
+      "label_zh": "公共空间面积",
+      "source": "geometry/public_space.geojson（EPSG:4548重算）"
+    },
+    "building_footprint_area_sqm": {
+      "value": 1384282.091,
+      "unit": "sqm",
+      "status": "known",
+      "label_zh": "建筑基底面积",
+      "source": "geometry/buildings.geojson（EPSG:4548重算）"
+    },
+    "key_area_zhongzhiyuan_sqm": {
+      "value": 1929201.877,
+      "unit": "sqm",
+      "status": "known",
+      "label_zh": "重点片区面积（几何重算）",
+      "source": "geometry/key_areas.geojson zhongzhiyuan_ai_acceleration_area"
     }
   }
 }

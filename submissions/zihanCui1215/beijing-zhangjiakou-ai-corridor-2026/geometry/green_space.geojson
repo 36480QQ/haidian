@@ -1,150 +1,338 @@
 {
-  "type": "FeatureCollection",
-  "name": "GREEN_SPACE",
-  "crs": {
-    "type": "name",
-    "properties": {
-      "name": "urn:ogc:def:crs:OGC::CRS84"
-    }
+ "type": "FeatureCollection",
+ "name": "green_space",
+ "features": [
+  {
+   "type": "Feature",
+   "id": "green_jingzhang_heritage_park",
+   "properties": {
+    "id": "green_jingzhang_heritage_park",
+    "layer": "GREEN_SPACE",
+    "name_zh": "京张铁路遗址公园带",
+    "green_type": "heritage_park",
+    "source_type": "agent_generated_design",
+    "confidence": "high",
+    "geometry_role": "design_proposal",
+    "official_boundary": false
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.34980952315975,
+       39.93900021570546
+      ],
+      [
+       116.34700154582058,
+       39.93900022552764
+      ],
+      [
+       116.34616800631905,
+       40.02650013665677
+      ],
+      [
+       116.3489795678744,
+       40.02650017126245
+      ],
+      [
+       116.34980952315975,
+       39.93900021570546
+      ]
+     ]
+    ]
+   }
   },
-  "features": [
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "green_001",
-        "layer": "GREEN_SPACE",
-        "name": "京张铁路遗址公园",
-        "name_en": "Beijing-Zhangjiakou Railway Heritage Park",
-        "type": "公园绿地",
-        "area_ha": 150,
-        "source_type": "agent_generated_design",
-        "confidence": "high",
-        "geometry_role": "design_proposal",
-        "note": "主体绿廊"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.333,
-              40.02
-            ],
-            [
-              116.337,
-              40.02
-            ],
-            [
-              116.337,
-              39.96
-            ],
-            [
-              116.333,
-              39.96
-            ],
-            [
-              116.333,
-              40.02
-            ]
-          ]
-        ]
-      },
-      "id": "green_001"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "green_002",
-        "layer": "GREEN_SPACE",
-        "name": "社区公园1",
-        "name_en": "Community Park 1",
-        "type": "社区公园",
-        "area_ha": 2.5,
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.342,
-              40.015
-            ],
-            [
-              116.345,
-              40.015
-            ],
-            [
-              116.345,
-              40.017
-            ],
-            [
-              116.342,
-              40.017
-            ],
-            [
-              116.342,
-              40.015
-            ]
-          ]
-        ]
-      },
-      "id": "green_002"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "green_003",
-        "layer": "GREEN_SPACE",
-        "name": "街头绿地1",
-        "name_en": "Pocket Park 1",
-        "type": "街头绿地",
-        "area_ha": 0.3,
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.35,
-              39.995
-            ],
-            [
-              116.351,
-              39.995
-            ],
-            [
-              116.351,
-              39.996
-            ],
-            [
-              116.35,
-              39.996
-            ],
-            [
-              116.35,
-              39.995
-            ]
-          ]
-        ]
-      },
-      "id": "green_003"
-    }
-  ],
-  "metadata": {
-    "created_at": "2026-08-12T23:00:00+08:00",
-    "created_by": "zihanCui1215",
-    "agent_name": "WorkBuddy AI Agent",
-    "source": "derived from design proposal",
-    "coordinate_system": "WGS84",
-    "total_features": 3,
-    "total_area_ha": 1540,
-    "green_rate": "35.3%",
-    "note": "绿地系统，包含遗址公园、社区公园、街头绿地"
+  {
+   "type": "Feature",
+   "id": "green_corridor_1",
+   "properties": {
+    "id": "green_corridor_1",
+    "layer": "GREEN_SPACE",
+    "name_zh": "AI生活绿廊1",
+    "green_type": "corridor",
+    "source_type": "agent_generated_design",
+    "confidence": "high",
+    "geometry_role": "design_proposal",
+    "official_boundary": false
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.34416687606254,
+       39.93900016646039
+      ],
+      [
+       116.34332971827729,
+       40.02650003252643
+      ],
+      [
+       116.3447354984671,
+       40.026500092790926
+      ],
+      [
+       116.34557086414732,
+       39.93900020437878
+      ],
+      [
+       116.34416687606254,
+       39.93900016646039
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "green_corridor_2",
+   "properties": {
+    "id": "green_corridor_2",
+    "layer": "GREEN_SPACE",
+    "name_zh": "AI生活绿廊2",
+    "green_type": "corridor",
+    "source_type": "agent_generated_design",
+    "confidence": "high",
+    "geometry_role": "design_proposal",
+    "official_boundary": false
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.35156172065797,
+       39.93900017511598
+      ],
+      [
+       116.35073400195043,
+       40.02650015828991
+      ],
+      [
+       116.35213978336103,
+       40.026500128725466
+      ],
+      [
+       116.35296570995722,
+       39.93900012348179
+      ],
+      [
+       116.35156172065797,
+       39.93900017511598
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "green_way_1",
+   "properties": {
+    "id": "green_way_1",
+    "layer": "GREEN_SPACE",
+    "name_zh": "慢行绿道1",
+    "green_type": "greenway",
+    "source_type": "agent_generated_design",
+    "confidence": "high",
+    "geometry_role": "design_proposal",
+    "official_boundary": false
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.33998402521681,
+       39.964779904191
+      ],
+      [
+       116.33996150668143,
+       39.96559032924401
+      ],
+      [
+       116.3552459129731,
+       39.96567634965817
+      ],
+      [
+       116.3553,
+       39.965
+      ],
+      [
+       116.3553000003388,
+       39.964866096787965
+      ],
+      [
+       116.33998402521681,
+       39.964779904191
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "green_way_2",
+   "properties": {
+    "id": "green_way_2",
+    "layer": "GREEN_SPACE",
+    "name_zh": "慢行绿道2",
+    "green_type": "greenway",
+    "source_type": "agent_generated_design",
+    "confidence": "high",
+    "geometry_role": "design_proposal",
+    "official_boundary": false
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.34084867065462,
+       39.99280748069974
+      ],
+      [
+       116.34090098708407,
+       39.99361832763837
+      ],
+      [
+       116.35350206800634,
+       39.993689302120636
+      ],
+      [
+       116.35345765789671,
+       39.99287850462733
+      ],
+      [
+       116.34084867065462,
+       39.99280748069974
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "green_park_zhongzhiyuan",
+   "properties": {
+    "id": "green_park_zhongzhiyuan",
+    "layer": "GREEN_SPACE",
+    "name_zh": "众智园中央科学公园",
+    "green_type": "urban_park",
+    "source_type": "agent_generated_design",
+    "confidence": "high",
+    "geometry_role": "design_proposal",
+    "official_boundary": false
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.34504140226719,
+       40.01405112486972
+      ],
+      [
+       116.34499017744902,
+       40.01940903578283
+      ],
+      [
+       116.35195888120037,
+       40.019448215937246
+      ],
+      [
+       116.3520095611269,
+       40.01409029763329
+      ],
+      [
+       116.34504140226719,
+       40.01405112486972
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "green_park_beijing_ai_o",
+   "properties": {
+    "id": "green_park_beijing_ai_o",
+    "layer": "GREEN_SPACE",
+    "name_zh": "AI原点开源公园",
+    "green_type": "urban_park",
+    "source_type": "agent_generated_design",
+    "confidence": "high",
+    "geometry_role": "design_proposal",
+    "official_boundary": false
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.34496331521156,
+       39.986519925289016
+      ],
+      [
+       116.34492576288866,
+       39.990451267202666
+      ],
+      [
+       116.35003683030365,
+       39.990480041947635
+      ],
+      [
+       116.35007408968356,
+       39.98654869605042
+      ],
+      [
+       116.34496331521156,
+       39.986519925289016
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "green_park_dazhongsi_ai",
+   "properties": {
+    "id": "green_park_dazhongsi_ai",
+    "layer": "GREEN_SPACE",
+    "name_zh": "大钟寺智慧园林",
+    "green_type": "urban_park",
+    "source_type": "agent_generated_design",
+    "confidence": "high",
+    "geometry_role": "design_proposal",
+    "official_boundary": false
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.34639118824565,
+       39.945273107477604
+      ],
+      [
+       116.34636006593402,
+       39.94854326001059
+      ],
+      [
+       116.35060890632832,
+       39.94856713765075
+      ],
+      [
+       116.35063982637108,
+       39.945296982367346
+      ],
+      [
+       116.34639118824565,
+       39.945273107477604
+      ]
+     ]
+    ]
+   }
   }
+ ]
 }

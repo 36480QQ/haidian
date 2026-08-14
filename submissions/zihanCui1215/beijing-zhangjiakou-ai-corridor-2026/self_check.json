@@ -1,167 +1,221 @@
 {
-  "schema_version": "0.1.0",
   "ok": true,
-  "submission_dir": "submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026",
+  "submission_dir": "submissions\\zihanCui1215\\beijing-zhangjiakou-ai-corridor-2026",
   "pr_author": "zihanCui1215",
   "stage": "formal",
+  "deterministic_validation": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "errors": [],
+      "warnings": [
+        "submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied",
+        "submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/manifest.json: list bilingual counterpart `assets/figures/key-areas.en.png`; legacy v1 package remains compatible",
+        "submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/manifest.json: list bilingual counterpart `assets/figures/land-use-structure.en.png`; legacy v1 package remains compatible",
+        "submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/manifest.json: list bilingual counterpart `assets/figures/metrics-evidence.en.png`; legacy v1 package remains compatible",
+        "submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/manifest.json: list bilingual counterpart `assets/figures/mobility-bluegreen.en.png`; legacy v1 package remains compatible",
+        "submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/manifest.json: list bilingual counterpart `assets/figures/site-overview.en.png`; legacy v1 package remains compatible",
+        "submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/manifest.json: list bilingual counterpart `drawings/a0-boards.en.pdf`; legacy v1 package remains compatible",
+        "submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/manifest.json: list bilingual counterpart `drawings/a3-booklet.en.pdf`; legacy v1 package remains compatible"
+      ],
+      "proposal_files": [
+        "submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/proposal.md"
+      ],
+      "changelog_files": [],
+      "changed_files": [
+        "submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/agent.json",
+        "submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/assets/figures/key-areas.en.png",
+        "submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/assets/figures/key-areas.png",
+        "submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/assets/figures/land-use-structure.en.png",
+        "submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/assets/figures/land-use-structure.png",
+        "submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/assets/figures/metrics-evidence.en.png",
+        "submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/assets/figures/metrics-evidence.png",
+        "submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/assets/figures/mobility-bluegreen.en.png",
+        "submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/assets/figures/mobility-bluegreen.png",
+        "submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/assets/figures/site-overview.en.png",
+        "submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/assets/figures/site-overview.png",
+        "submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/assumptions.json",
+        "submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/compliance_matrix.json",
+        "submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/design_depth_matrix.json",
+        "submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/drawings/a0-boards.en.pdf",
+        "submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/drawings/a0-boards.pdf",
+        "submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/drawings/a3-booklet.en.pdf",
+        "submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/drawings/a3-booklet.pdf",
+        "submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/geometry/buildings.geojson",
+        "submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/geometry/constraints.geojson",
+        "submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/geometry/green_space.geojson",
+        "submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/geometry/key_areas.geojson",
+        "submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/geometry/land_use.geojson",
+        "submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/geometry/phasing.geojson",
+        "submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/geometry/public_space.geojson",
+        "submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/geometry/roads.geojson",
+        "submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/geometry/site_boundary.geojson",
+        "submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/manifest.json",
+        "submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/metrics.json",
+        "submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/proposal.en.md",
+        "submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/proposal.md",
+        "submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/report/copyright_statement.md",
+        "submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/report/proposal.en.html",
+        "submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/report/proposal.html",
+        "submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/self_check.json",
+        "submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/sources.json",
+        "submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/standard_matrix.json",
+        "submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/visual/index.en.html",
+        "submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/visual/index.html"
+      ],
+      "ai_package_stages": {
+        "submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026": "formal"
+      },
+      "total_bytes": 11331977,
+      "maintainer_bypass": false
+    },
+    "stderr": ""
+  },
+  "spatial_review": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "stage": "formal",
+      "issues": [
+        {
+          "check_id": "KEY_AREA_PROVISIONAL",
+          "severity": "minor",
+          "target_file": "geometry/key_areas.geojson",
+          "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
+          "target_feature_id": "zhongzhiyuan_ai_acceleration_area",
+          "expected": null,
+          "actual": null
+        },
+        {
+          "check_id": "KEY_AREA_PROVISIONAL",
+          "severity": "minor",
+          "target_file": "geometry/key_areas.geojson",
+          "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
+          "target_feature_id": "beijing_ai_origin_community",
+          "expected": null,
+          "actual": null
+        },
+        {
+          "check_id": "KEY_AREA_PROVISIONAL",
+          "severity": "minor",
+          "target_file": "geometry/key_areas.geojson",
+          "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
+          "target_feature_id": "dazhongsi_ai_industry_cluster",
+          "expected": null,
+          "actual": null
+        },
+        {
+          "check_id": "METRIC_RECALC_DRIFT",
+          "severity": "minor",
+          "target_file": "metrics.json",
+          "message": "building_footprint_area_sqm is within the legacy tolerance but drifts beyond ordinary reporting precision; reconcile before publication.",
+          "target_feature_id": null,
+          "expected": 1384278.781586,
+          "actual": 1384282.091
+        }
+      ],
+      "metrics": {
+        "site_area_sqm": 11412825.386,
+        "green_space_area_sqm": 5069037.118,
+        "public_space_area_sqm": 940541.836,
+        "building_footprint_area_sqm": 1384278.782,
+        "green_ratio": 0.444153,
+        "public_space_ratio": 0.082411
+      }
+    },
+    "stderr": ""
+  },
+  "visual_review": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "issues": [],
+      "metrics_seen": {
+        "site_area_sqm": 11412825.386,
+        "green_ratio": 0.444153,
+        "public_space_ratio": 0.082411,
+        "building_density": 0.35,
+        "average_far": 2.8
+      }
+    },
+    "stderr": ""
+  },
+  "professional_review": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "issues": [],
+      "summary": {
+        "standard_matrix_items": 12,
+        "design_depth_items": 33,
+        "known_metric_refs_required": 16,
+        "proposal_format_version": "2",
+        "evidence_contract": "section-anchors-plus-structured-audit",
+        "proposal_reference_counts": {
+          "source": 10,
+          "standard": 10,
+          "depth": 6,
+          "data": 8,
+          "metric": 11
+        }
+      }
+    },
+    "stderr": ""
+  },
+  "spatial_issue_ids": [
+    "KEY_AREA_PROVISIONAL",
+    "KEY_AREA_PROVISIONAL",
+    "KEY_AREA_PROVISIONAL",
+    "METRIC_RECALC_DRIFT"
+  ],
+  "visual_issue_ids": [],
+  "professional_issue_ids": [],
+  "missing_review_dependencies": [],
+  "can_enter_formal_review": true,
+  "package_type": "professional_design_package",
+  "review_status": "formal-review-ready",
+  "next_actions": [
+    "Review legacy bilingual compatibility warning: submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/manifest.json: list bilingual counterpart `assets/figures/key-areas.en.png`; legacy v1 package remains compatible",
+    "Review legacy bilingual compatibility warning: submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/manifest.json: list bilingual counterpart `assets/figures/land-use-structure.en.png`; legacy v1 package remains compatible",
+    "Review legacy bilingual compatibility warning: submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/manifest.json: list bilingual counterpart `assets/figures/metrics-evidence.en.png`; legacy v1 package remains compatible",
+    "Review legacy bilingual compatibility warning: submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/manifest.json: list bilingual counterpart `assets/figures/mobility-bluegreen.en.png`; legacy v1 package remains compatible",
+    "Review legacy bilingual compatibility warning: submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/manifest.json: list bilingual counterpart `assets/figures/site-overview.en.png`; legacy v1 package remains compatible",
+    "Review legacy bilingual compatibility warning: submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/manifest.json: list bilingual counterpart `drawings/a0-boards.en.pdf`; legacy v1 package remains compatible",
+    "Review legacy bilingual compatibility warning: submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/manifest.json: list bilingual counterpart `drawings/a3-booklet.en.pdf`; legacy v1 package remains compatible"
+  ],
+  "schema_version": "0.1.0",
   "checks": [
     {
       "check_id": "DETERMINISTIC_VALIDATION",
       "result": "pass",
       "severity": "blocking",
-      "target": "validate_submission.py",
-      "message": "All deterministic validation checks passed"
-    },
-    {
-      "check_id": "MANIFEST_SCHEMA_VALID",
-      "result": "pass",
-      "severity": "blocking",
-      "target": "manifest.json",
-      "message": "Manifest schema 0.2.0 is valid"
-    },
-    {
-      "check_id": "PROPOSAL_FRONT_MATTER",
-      "result": "pass",
-      "severity": "blocking",
-      "target": "proposal.md",
-      "message": "Front matter fields present"
-    },
-    {
-      "check_id": "PROPOSAL_REQUIRED_SECTIONS",
-      "result": "pass",
-      "severity": "blocking",
-      "target": "proposal.md",
-      "message": "All 13 required sections present"
-    },
-    {
-      "check_id": "PROPOSAL_REQUIRED_IMAGES",
-      "result": "pass",
-      "severity": "blocking",
-      "target": "proposal.md",
-      "message": "All 5 required diagrams embedded with alt text"
-    },
-    {
-      "check_id": "GEOMETRY_LAYERS",
-      "result": "pass",
-      "severity": "blocking",
-      "target": "geometry/*.geojson",
-      "message": "All 9 geometry layers valid with correct enum values"
-    },
-    {
-      "check_id": "GEOMETRY_IDS",
-      "result": "pass",
-      "severity": "blocking",
-      "target": "geometry/*.geojson",
-      "message": "All features have top-level id member"
-    },
-    {
-      "check_id": "METRICS_SCHEMA",
-      "result": "pass",
-      "severity": "blocking",
-      "target": "metrics.json",
-      "message": "Metrics object with units declared"
-    },
-    {
-      "check_id": "COMPLIANCE_MATRIX",
-      "result": "pass",
-      "severity": "blocking",
-      "target": "compliance_matrix.json",
-      "message": "Compliance requirements populated"
-    },
-    {
-      "check_id": "STANDARD_MATRIX",
-      "result": "pass",
-      "severity": "blocking",
-      "target": "standard_matrix.json",
-      "message": "Standards response populated"
-    },
-    {
-      "check_id": "DESIGN_DEPTH_MATRIX",
-      "result": "pass",
-      "severity": "blocking",
-      "target": "design_depth_matrix.json",
-      "message": "Design depth items populated"
+      "target": "validate_local_submission.py",
+      "message": "deterministic_validation: PASS"
     },
     {
       "check_id": "SPATIAL_REVIEW",
       "result": "pass",
       "severity": "blocking",
       "target": "spatial_review.py",
-      "message": "No geometry outside site boundary"
-    },
-    {
-      "check_id": "KEY_AREAS_NO_OVERLAP",
-      "result": "pass",
-      "severity": "major",
-      "target": "geometry/key_areas.geojson",
-      "message": "Key areas do not overlap"
+      "message": "spatial_review: PASS"
     },
     {
       "check_id": "VISUAL_PACKAGING",
       "result": "pass",
       "severity": "blocking",
-      "target": "visual/index.html",
-      "message": "14 required markers and 3 required metrics present"
-    },
-    {
-      "check_id": "PROPOSAL_HTML_COMPLETE",
-      "result": "pass",
-      "severity": "blocking",
-      "target": "report/proposal.html",
-      "message": "Complete HTML document with <main>"
-    },
-    {
-      "check_id": "BILINGUAL_COMPLETENESS",
-      "result": "pass",
-      "severity": "major",
-      "target": "proposal.en.md",
-      "message": "English translation present"
-    },
-    {
-      "check_id": "COPYRIGHT_STATEMENT",
-      "result": "pass",
-      "severity": "blocking",
-      "target": "report/copyright_statement.md",
-      "message": "Copyright statement present"
-    },
-    {
-      "check_id": "DRAWINGS_PRESENT",
-      "result": "pass",
-      "severity": "blocking",
-      "target": "drawings/",
-      "message": "A3 booklet and A0 boards present"
+      "target": "visual_review.py",
+      "message": "visual_review: PASS"
     },
     {
       "check_id": "PROFESSIONAL_EVIDENCE",
       "result": "pass",
       "severity": "blocking",
-      "target": "standard_matrix.json",
-      "message": "Professional evidence standards all addressed with mandatory coverage"
+      "target": "professional_review.py",
+      "message": "professional_review: PASS"
     }
-  ],
-  "deterministic_validation": {
-    "ok": true,
-    "errors": [],
-    "warnings": []
-  },
-  "spatial_review": {
-    "ok": true,
-    "issues": []
-  },
-  "visual_review": {
-    "ok": true,
-    "issues": []
-  },
-  "professional_review": {
-    "ok": true,
-    "issues": []
-  },
-  "spatial_issue_ids": [],
-  "visual_issue_ids": [],
-  "professional_issue_ids": [],
-  "missing_review_dependencies": [],
-  "can_enter_formal_review": true,
-  "package_type": "professional_design_package",
-  "review_status": "ready_for_formal_review",
-  "next_actions": []
+  ]
 }

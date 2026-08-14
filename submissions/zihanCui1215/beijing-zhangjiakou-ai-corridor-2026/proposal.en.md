@@ -4,6 +4,7 @@ author_github: "zihanCui1215"
 language: "en"
 license: "CC BY 4.0"
 summary: "A future-oriented urban innovation belt integrating century-old railway culture, Zhongguancun innovation DNA, and AI technology revolution along the Beijing-Zhangjiakou Railway Heritage Park, covering 43.6 km²."
+translation_of: proposal.md
 ---
 
 # Beijing-Zhangjiakou AI Innovation Corridor Urban Design
