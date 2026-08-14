@@ -35,7 +35,7 @@ AI generation does not establish factual authority, accessibility compliance, us
 
 # 逐资产权利台账 / Per-Asset Rights Ledger
 
-The ledger below restates, asset by asset, what the sections above declare in prose. It covers all 81 file entries registered in `manifest.json`. Every row is compiled from a record that already exists inside this package — no new rights fact, tool record, or licence claim is introduced here — and the last column of each table names the file the entry was compiled from, so any row can be checked word for word against its source. Tables are written in Chinese with bilingual headings; where a field is not registered anywhere in the package, the entry reads「包内未登记」rather than a guessed value, and all such gaps are listed in the final section.
+The ledger below restates, asset by asset, what the sections above declare in prose. It covers all 82 file entries registered in `manifest.json`. Every row is compiled from a record that already exists inside this package — no new rights fact, tool record, or licence claim is introduced here — and the last column of each table names the file the entry was compiled from, so any row can be checked word for word against its source. Tables are written in Chinese with bilingual headings; where a field is not registered anywhere in the package, the entry reads「包内未登记」rather than a guessed value, and all such gaps are listed in the final section.
 
 ## 一、编制口径 / Compilation rule
 
@@ -53,7 +53,7 @@ The ledger below restates, asset by asset, what the sections above declare in pr
 | C 图版 | 16 | 由本包 GeoJSON、指标、矩阵、风险、假设与自撰标签本地生成 | Python、SVG、`rsvg-convert`/Cairo | 本文件 |
 | D 图纸 PDF | 4 | 同上，并合并为册 | Python、SVG、`rsvg-convert`/Cairo、`pdfunite` | 本文件 |
 | E 几何 | 9 | 基于仓库临时边界与本方案概念几何 | 复算投影 EPSG:4548（`scripts/spatial_review.py`） | 本文件 · `sources.json` · `metrics.json` |
-| F 离线展示与随包代码 | 17 | 原创手写，自含离线 | 无第三方依赖；仅 Node 内置模块 | 本文件 · `proposal.md` |
+| F 离线展示与随包代码 | 18 | 原创手写，自含离线 | 无第三方依赖；仅 Node 内置模块 | 本文件 · `proposal.md` |
 | G 媒体 | 11 | 手写 HTML/SVG 渲染 + 语音合成 + 本包页面逐帧实录 | Playwright/Chromium、MiniMax `speech-2.8-hd`（`mmx` 1.0.7）、x264/AAC、Pillow | `journey.md` · `audio-guide.md` · `cover.md` |
 | H 品牌标志 | 1 | 原创矢量几何 | 手写 SVG | 本文件 · `cover.md` |
 | I 场景概念图 | 6 | AI 图像生成 + 包内标注层排版合成 | OpenAI 图像生成（经 Codex CLI 原生图像生成工具，GPT-5.6 Sol 智能体调用）；标注层为手写 HTML 经 Chromium（Playwright）渲染 | 本文件 · `sources.json` |
@@ -129,7 +129,7 @@ The ledger below restates, asset by asset, what the sections above declare in pr
 | `visual/assets/seb-tabletop-run.js` | 原创撰写的校验器 | 零依赖离线文件，仅使用 Node 内置 `fs`、`path` | `proposal.md`「OP-01 桌面配对试点档案」章 |
 | `visual/assets/seb-op04-chain-run.js` | 原创撰写的复演器 | 零依赖离线文件，仅使用 Node 内置 `fs`、`path`、`child_process`；投影以纯 Node 内置数学实现 | `proposal.md`「OP-04 配对试点全过程证据链」章 |
 | `visual/assets/seb-spec.json` | 原创编制的机器可读规范 v0.2.0 | 建议许可 CC BY-SA 4.0，状态 `recommended_not_yet_granted`；托管主体与发布渠道待授权主体确认 | `seb-spec.json` `license` 与 `provenance` |
-| `visual/assets/seb-tabletop-fixtures.json` · `seb-change-receipt-sample.json` · `seb-op04-chain-data.json` · `seb-change-receipt-op04.json` · `ethics-protocol.json` · `qa-proofing-record.json` | 原创编制的样例、回执、链路档案、协议模板与自查记录 | 随包整体许可；均不含任何参与者数据 | `proposal.md` 对应各章 |
+| `visual/assets/seb-tabletop-fixtures.json` · `seb-change-receipt-sample.json` · `seb-op04-chain-data.json` · `seb-change-receipt-op04.json` · `ethics-protocol.json` · `qa-proofing-record.json` · `scene-provenance.json` | 原创编制的样例、回执、链路档案、协议模板、自查记录与场景图生成档案 | 随包整体许可；均不含任何参与者数据 | `proposal.md` 对应各章 |
 | `visual/assets/osm-context/provenance.json` | OSM 取数与处理的来源登记 | 仅分发来源元数据，不分发原始或派生数据库 | 该文件 `package_distribution` 字段 |
 
 ### G 媒体 / Media assets
@@ -151,7 +151,7 @@ The ledger below restates, asset by asset, what the sections above declare in pr
 
 ### I 场景概念图 / Concept scene images
 
-六件场景概念图（三题材 × 中英双版）为 AI 图像生成产物：底图由 OpenAI 图像生成能力产出（经 Codex CLI 原生图像生成工具、GPT-5.6 Sol 智能体调用，生成日 2026-08-14），随后由本包自制标注层（手写 HTML，经 Chromium/Playwright 渲染合成）叠加双语题注、标注卡与「概念意象 · AI 生成 · 非工程依据」徽章。权利依据《OpenAI Terms of Use》（OpenAI OpCo, LLC，生效日 2026-01-01，官方稳定地址 openai.com/policies/terms-of-use，访问核验日 2026-08-14）：其「Content」节明文约定用户保留输入所有权并**享有输出所有权**（"you (a) retain your ownership rights in Input and (b) own the Output"，并载明 OpenAI 将其就输出享有的权利让与用户）；其禁止行为清单要求**不得将非人类生成的输出虚假陈述为人类生成**——本包在每件图上直接印刷 AI 生成徽章并于此登记生成方式，即该义务之履行。条款同时载明输出在不同用户间未必唯一，本包如实登记该限制。图内一切地名、方位与距离标注按真实坐标推算（见 proposal 图注），但地标形体与城市肌理为概念意象，非测绘复原；图面不构成工程、规划或达标依据。
+六件场景概念图（三题材 × 中英双版）为 AI 图像生成产物：底图由 OpenAI 图像生成能力产出（经 Codex CLI 原生图像生成工具、GPT-5.6 Sol 智能体调用，生成日 2026-08-14），随后由本包自制标注层（手写 HTML，经 Chromium/Playwright 渲染合成）叠加双语题注、标注卡与「概念意象 · AI 生成 · 非工程依据」徽章。权利依据《OpenAI Terms of Use》（OpenAI OpCo, LLC，生效日 2026-01-01，官方稳定地址 openai.com/policies/terms-of-use，访问核验日 2026-08-14）：其「Content」节明文约定用户保留输入所有权并**享有输出所有权**（"you (a) retain your ownership rights in Input and (b) own the Output"，并载明 OpenAI 将其就输出享有的权利让与用户）；其禁止行为清单要求**不得将非人类生成的输出虚假陈述为人类生成**——本包在每件图上直接印刷 AI 生成徽章并于此登记生成方式，即该义务之履行。条款同时载明输出在不同用户间未必唯一，本包如实登记该限制。图内一切地名、方位与距离标注按真实坐标推算（见 proposal 图注），但地标形体与城市肌理为概念意象，非测绘复原；图面不构成工程、规划或达标依据。条款原文的 Wayback 存档快照已登记于 `sources.json` 对应条目的 archive_url（快照 2026-08-13，经逐字核验含上引条款）；六件图的提示词全文、候选与选定、后处理链与输出哈希登记于 `visual/assets/scene-provenance.json`，该档案同时如实登记"生成服务不提供逐次调用的第三方签名回执"这一限制。
 
 | 文件路径 | 作者或生成方式 | 工具及版本 | 署名与复用限制 | 登记出处 |
 | --- | --- | --- | --- | --- |
@@ -221,8 +221,8 @@ The ledger below restates, asset by asset, what the sections above declare in pr
 | 申报主体 | GitHub 用户 `lqqk7` 指导下的申报智能体「柱子 / Zhuzi」，角色 `ai_agent_submission_author` | `agent.json` |
 | 撰写模型 | Claude Fable 5 via Claude Code；v1.0 阶段由 GPT-5.6 Sol via Codex 搭建与撰写；后续迭代含 Claude Opus 子代理 | `agent.json` `model_detail` |
 | 初始化脚本 | `scripts/scaffold_ai_submission.py` | `agent.json` `generated_with` |
-| 语音合成 | MiniMax 语音合成服务，模型 `speech-2.8-hd`，经官方命令行工具 `mmx` 1.0.7 调用；预置合成音色 `Chinese (Mandarin)_Reliable_Executive`；非声音克隆、非对任何自然人声音的复制。依据《MiniMax Open Platform Terms of Service》（Nanonoble Pte Ltd.，生效日 2026-03-30，官方稳定地址 platform.minimax.io/protocol/terms-of-service，访问核验日 2026-08-14）：其「Intellectual Property (Non-Transfer)」节明文约定客户保留输入与生成内容的所有权（"you retain your ownership rights in Client input and generated content"），并含平台对第三方知识产权索赔的辩护条款；其「User Rights and Obligations」节要求深度合成内容作显著标识——本包在音频、短片、文字稿与片尾声明中通篇标注合成语音性质，即该义务之履行 | `audio-guide.md` §四；`journey.md` §五 |
-| 图像生成模型 | **仅用于 `assets/figures` 六件场景概念图**（scene-dual-state / scene-interface-yard / scene-corridor-aerial，中英双版）：OpenAI 图像生成能力经 Codex CLI 原生图像生成工具（GPT-5.6 Sol 智能体）调用，生成日 2026-08-14。依据《OpenAI Terms of Use》（OpenAI OpCo, LLC，生效日 2026-01-01，访问核验日 2026-08-14）：其「Content」节约定用户享有输出所有权并获平台权利让与；其禁止行为清单要求不得将非人类生成输出虚假陈述为人类生成——每件图上直接印刷「概念意象 · AI 生成 · 非工程依据」徽章并在台账登记生成方式，即该义务之履行。封面、短片画面、其余图版与品牌标志不含图像生成模型产物 | 本文件 §三 I 类；`sources.json` `OPENAI-TERMS-OF-USE-20260814` |
+| 语音合成 | MiniMax 语音合成服务，模型 `speech-2.8-hd`，经官方命令行工具 `mmx` 1.0.7 调用；预置合成音色 `Chinese (Mandarin)_Reliable_Executive`；非声音克隆、非对任何自然人声音的复制。依据《MiniMax Open Platform Terms of Service》（Nanonoble Pte Ltd.，生效日 2026-03-30，官方稳定地址 platform.minimax.io/protocol/terms-of-service，访问核验日 2026-08-14）：其「Intellectual Property (Non-Transfer)」节明文约定客户保留输入与生成内容的所有权（"you retain your ownership rights in Client input and generated content"），并含平台对第三方知识产权索赔的辩护条款；其「User Rights and Obligations」节要求深度合成内容作显著标识——本包在音频、短片、文字稿与片尾声明中通篇标注合成语音性质，即该义务之履行；条款存档快照见 `sources.json` archive_url，输入台本与参数指针汇总于 `visual/assets/scene-provenance.json` | `audio-guide.md` §四；`journey.md` §五 |
+| 图像生成模型 | **仅用于 `assets/figures` 六件场景概念图**（scene-dual-state / scene-interface-yard / scene-corridor-aerial，中英双版）：OpenAI 图像生成能力经 Codex CLI 原生图像生成工具（GPT-5.6 Sol 智能体）调用，生成日 2026-08-14。依据《OpenAI Terms of Use》（OpenAI OpCo, LLC，生效日 2026-01-01，访问核验日 2026-08-14）：其「Content」节约定用户享有输出所有权并获平台权利让与；其禁止行为清单要求不得将非人类生成输出虚假陈述为人类生成——每件图上直接印刷「概念意象 · AI 生成 · 非工程依据」徽章并在台账登记生成方式，即该义务之履行。条款存档快照与逐图生成档案（提示词全文、输出哈希）分别见 `sources.json` archive_url 与 `visual/assets/scene-provenance.json`。封面、短片画面、其余图版与品牌标志不含图像生成模型产物 | 本文件 §三 I 类；`sources.json` `OPENAI-TERMS-OF-USE-20260814`；`visual/assets/scene-provenance.json` |
 | 生成式影像 | 未使用于短片。`journey.mp4` 画面全部由排版代码、包内自制图件与包内交互页面的真实运行结果构成；六件静态场景概念图另行登记于上行与 §三 I 类 | `journey.md` §五 |
 | 责任边界 | 见本文件 §AI-generation responsibility | 本文件 |
 

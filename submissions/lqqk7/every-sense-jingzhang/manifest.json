@@ -12,7 +12,7 @@
     "agent_name": "柱子 / Zhuzi",
     "model": "Claude Fable 5 via Claude Code",
     "model_family": "claude",
-    "model_detail": "v1.0 scaffolded and authored with OpenAI GPT-5.6 Sol via Codex; v2.0-v5.15 iterations authored with Anthropic Claude Fable 5 via Claude Code with Claude Opus subagents; audio narration synthesized with MiniMax speech-2.8-hd (disclosed in assets/media transcripts)"
+    "model_detail": "v1.0 scaffolded and authored with OpenAI GPT-5.6 Sol via Codex; v2.0-v5.16 iterations authored with Anthropic Claude Fable 5 via Claude Code with Claude Opus subagents; audio narration synthesized with MiniMax speech-2.8-hd (disclosed in assets/media transcripts)"
   },
   "generated_at": "2026-08-12T11:56:14Z",
   "files": [
@@ -26,13 +26,13 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "2d89b2e3fc8498a4b61c22a31e1389e02dde6500fce4ff2dd701da28e0959ecb"
+      "sha256": "460086546e8091e23762d72a3bc3c4e00abfe296a90b003678d97ba85e048c39"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "c34227cfaefc062a9093b12a1f4f50a7d94eb512307808aa130c091d6d26a23c"
+      "sha256": "64e20b83273bcc1ed87fc2ac64ce9f00f2a09ead262a3263fe3cdded60ee65f2"
     },
     {
       "path": "metrics.json",
@@ -50,13 +50,13 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "9114551df5c67cd155496ef1ba628221530846618a4ac1e7844304e5a1942a56"
+      "sha256": "1cd59d0fad0a8017ed0cdae7fd249e2567b0668f9a75287beed76e65e30a4d8e"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "1088a309f6c8ddc005fbfd79d40b2c901beea0c3923f24335eea18ec757bfc55"
+      "sha256": "106cb42ce420046a823c3947105dfaeee21fd8176178d7d6b6763a0a960f92af"
     },
     {
       "path": "compliance_matrix.json",
@@ -88,7 +88,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "c11eaae25f85c087416c0b749cc9d3cddc38eeddc394ac0740b030f580887601"
+      "sha256": "90e9901cfa3e89f21ec8ff9ef6219a7aad25729c3bfa1badca79d8974f7bb144"
     },
     {
       "path": "report/narrative.md",
@@ -100,7 +100,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "934840204b7c79f7bcce9a6390657ae32d9aacb9e58ce4b26b10b9118de1fb13"
+      "sha256": "603027180823fb0f052337fd6d9cfb186f5409b52ff94047a5e15820845d8bfc"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -218,7 +218,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "b332432c397957fc3739bdea09d2a784712706b4cd0b3c1ed02c078c26f26a63"
+      "sha256": "2d4f80a8e803dca00cf5939e63fad63a22e74592735779da13d6aaffa1b1d1fa"
     },
     {
       "path": "report/proposal.en.html",
@@ -226,7 +226,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "0911e4537ee141b0d1d8db08c538af1a7b1d3e9c625e37d09382846298fc85fd"
+      "sha256": "27c7108fa5556012fe042a17690c3abc0b18c74b60cdfafb981eb60a2dd19d4c"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -400,7 +400,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "e8f59b972f9cf2845321268ea94ae0ad0f09ae594b362383f94bf6b45d3a2e6b"
+      "sha256": "2ffa65834a9d1d69b855447c0ceb36e5c25aafdc6cce51752709b798e2cca33a"
     },
     {
       "path": "assets/media/cover.webp",
@@ -541,7 +541,16 @@
       "language": "neutral",
       "title_zh": "输出质量校样与可及性走查记录（方案方自查）",
       "title_en": "Output Proofing and Accessibility Walkthrough Record (Proposer's Self-Check)",
-      "sha256": "a0552b0c9f381315226768500edfcb9a88bf0adad2d50eece35c77ff2ab08060"
+      "sha256": "c977bc6e3da2023c71d1012d13ad0785703c8cfb55f3ae15e1cd196a1d4d70e9"
+    },
+    {
+      "path": "visual/assets/scene-provenance.json",
+      "role": "sources",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "场景概念图生成档案（提示词全文、工具链、输出哈希）",
+      "title_en": "Concept Scene Image Provenance (full prompts, tool chain, output hashes)",
+      "sha256": "7fa77e267c6a11d644bb524e0604db6b1ec0ee24c0f2c8bb9fe871a9180b296b"
     },
     {
       "path": "visual/assets/seb-spec.json",
