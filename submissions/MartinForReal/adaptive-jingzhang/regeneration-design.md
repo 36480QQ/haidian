@@ -239,13 +239,13 @@ Every stop or propagation condition resolves to a state-variable record with: st
 
 **(f) Human selection authority.** Algorithms may compare options only. **Human and legally accountable institutional authority must remain explicit for system boundaries, goals, nodes, candidate edges, weights, thresholds, evidence sufficiency, gates, pilots, stops, recovery, propagation, and final action.** This sentence is published verbatim in both languages, generated from the bilingual source of truth, and is repeated in the governance section of each lab.
 
-**(g) Review cadence across seasons and disruptions.** Every lab and every public-space component has a matrix covering: high heat and shade failure; heavy rain and drainage clearance; snow, ice, and heating-season configuration; wind and dust; standing-water and insect effects; night lighting and noise; cleaning and waste; maintenance access; and equipment, power, or digital-service failure. Each row names the state variable, observation method and cadence, operator, approved threshold or `null`, manual fallback, stop action, and recovery state. Expansion requires evidence from at least one summer heat/rain condition and one winter snow/ice condition; a 90-day pilot alone cannot establish year-round operation.
+**(g) Review cadence across seasons and disruptions.** Every lab and every public-space component has a matrix covering: high heat and shade failure; heavy rain and drainage clearance; snow, ice, and heating-season configuration; wind and dust; standing-water and insect effects; night lighting and noise; cleaning and waste; maintenance access; and equipment, power, or digital-service failure. Each row names the state variable, observation method and cadence, operator, approved threshold or `null`, manual fallback, stop action, and recovery state. Evidence from at least one qualifying summer heat/rain condition and one qualifying winter snow/ice condition may be required only for a year-round-operation claim or propagation review; a 90-day pilot alone cannot establish either. Seasonal qualification never delays ordinary decisions within an already authorized pilot, immediate stop, make-safe action, restoration, or verified closure.
 
 **(h) Public, versioned memory.** Every decision, observation, threshold change, stop, and restoration is recorded in a public, versioned, machine-readable record with a stable identifier, a timestamp, the deciding role, the evidence relied upon, and the dissent recorded. Memory is append-only; corrections are new records that reference the superseded record.
 
 **(i) Stop and restore behaviour.** Every lab publishes stop conditions. A stop condition, when met, halts the pilot without requiring further authorization; **restarting** requires authorization. Every stop is followed by a published restoration verification.
 
-**(j) Cross-scale propagation.** A result may propagate from lab scale to site scale only when: the result held across a full seasonal cycle; it was reproduced under at least one materially different operating condition; the accountable role for the larger scale is evidenced; and the human authorizer for the larger scale has signed. Propagation is never automatic, and never triggered by a model output.
+**(j) Cross-scale propagation.** A result may propagate from lab scale to site scale only when: the result satisfied the approved D13 seasonal-qualification criteria; it was reproduced under at least one materially different operating condition; the accountable role for the larger scale is evidenced; and the human authorizer for the larger scale has signed. Propagation is never automatic, and never triggered by a model output.
 
 ### 3.5 The computation, named truthfully
 
@@ -568,7 +568,7 @@ Every figure declares alt text and an extended description. Alt text is unique p
 
 **Closed plate paths.** Use the area stems `key-area-zhongzhiyuan`, `key-area-ai-origin-community`, and `key-area-dazhongsi`; and the plate stems `01-situation-claim-limits`, `02-program-flows`, `03-reversible-module-sections`, `04-access-operations-seasons`, and `05-governance-stop-evidence`. Each Chinese path is `assets/figures/{area-stem}-{plate-stem}.png`; each English twin inserts `.en` before `.png`. Stable plate IDs `ZZY-01`–`ZZY-05`, `AIO-01`–`AIO-05`, and `DZS-01`–`DZS-05` map one-to-one to the exact 30 paths enumerated in Section 9.5.
 
-**Closed sheet placement.** The Chinese and English A3 booklets each contain exactly 16 content pages: page 1 is the language-matched existing synoptic figure; pages 2–6 are Lab 1 plates 01–05; pages 7–11 are Lab 2 plates 01–05; pages 12–16 are Lab 3 plates 01–05. The Chinese and English A0 PDFs each contain exactly four boards: board 1 is the language-matched synoptic figure; boards 2, 3, and 4 place the five registered plates for Labs 1, 2, and 3 respectively in five frozen vertical zones. Every placement rectangle is stored in the program registry. A missing rectangle remains `null` with `decision_status: human_approval_required` and blocks build; an implementation agent may not choose it.
+**Closed sheet placement.** The Chinese and English A3 booklets each contain exactly 16 content pages: page 1 is the language-matched existing synoptic figure; pages 2–6 are Lab 1 plates 01–05; pages 7–11 are Lab 2 plates 01–05; pages 12–16 are Lab 3 plates 01–05. The Chinese and English A0 PDFs each contain exactly four boards: board 1 is the language-matched synoptic figure; boards 2, 3, and 4 place the five registered plates for Labs 1, 2, and 3 respectively using the exact five-zone placement geometry frozen in Section 14.7. Every placement rectangle is stored in the program registry. A missing rectangle remains `null` with `decision_status: human_approval_required` and blocks build; an implementation agent may not choose it.
 
 **Drawings** (`drawings/`, PDF only):
 
@@ -717,9 +717,13 @@ The final implementation change set may modify **only** `submissions/MartinForRe
 | `assets/figures/` | `.png .jpg .jpeg .webp .gif .svg` |
 | `assets/media/` | Permitted image formats plus `.mp4 .webm .mp3 .m4a .ogg .vtt`, and manifest-valid `.md` sidecars |
 | `visual/` root | Localized index HTML only |
-| `visual/assets/**` | `.css .js .json .svg .png .jpg .jpeg .webp` — at arbitrary subdirectory depth, filenames unconstrained |
+| `visual/assets/**` | `.css .js .json .svg .png .jpg .jpeg .webp` — at arbitrary subdirectory depth; every manifest-declared relative path remains constrained by the path grammar below |
 
-**Forbidden anywhere in the package:** `.py`, `.txt`, `.ttf`, `.otf`, `.woff`, `.woff2`, `.mjs`.
+This table is a **per-directory allowlist with catch-all rejection**. A file is admissible only when both its location or exact path class and its extension or exact filename are explicitly allowed for that location. Every unlisted path or extension is rejected, even if that extension is permitted in another directory.
+
+**Illustrative rejections, not a complete blacklist:** `.py`, `.txt`, `.ttf`, `.otf`, `.woff`, `.woff2`, `.mjs`. The governing rule is the per-directory allowlist and catch-all rejection above.
+
+Every `manifest.files[].path` must match the exact grammar `^[A-Za-z0-9_./-]+$`. `role_detail` is required if and only if `role == "other"`; it is forbidden whenever `role != "other"`.
 
 Builders, tests, and the reproducer are **standard-library JavaScript** under `visual/assets/**`. Structured registries are `visual/assets/*.json` and each stays ≤ 512 KiB. The selected font payload carrier is explicitly JavaScript under `visual/assets/**` and stays ≤ 5 MiB; no font carrier is misclassified as registry JSON.
 
@@ -746,7 +750,7 @@ In addition to per-class caps, target all 30 plate PNGs at ≤ 400 KiB each and 
 |---|---|
 | Nine root JSON files | Regenerated from the source of truth and the registries; identifiers preserved; state invariants preserved |
 | `proposal.md`, `proposal.en.md` | Regenerate Chinese primary and English companion only; preserve `language: zh` on the primary, `language: en` and `translation_of: proposal.md` on the companion; do not add `proposal.zh.md`. |
-| `changelog.md` | **Created.** Must contain the literal title `# 方案迭代记录` and at least the version heading `## v0.1 - 2026-08-14` |
+| `changelog.md` | **Updated in place; it already exists before implementation.** Preserve the literal title `# 方案迭代记录` and the existing version history. It is the one existing entry in the 56-entry final addition set, not a newly created file. |
 | Ten existing figures | Regenerated deterministically; alt text and extended descriptions added; duplicate alt text eliminated |
 | Thirty new key-area plate files (15 Chinese + 15 English twins) | Add from the closed path rule; regenerate existing `key-areas.png` / `key-areas.en.png` in place. |
 | Four PDFs | Rebuilt with embedded fonts, valid character mapping, and verified extraction |
@@ -757,11 +761,11 @@ In addition to per-class caps, target all 30 plate PNGs at ≤ 400 KiB each and 
 | New builders, tests, registries, and the single font carrier | Added under `visual/assets/**` as `.js` and `.json` |
 | Two viewers | Regenerated; language switch made two-way; structural parity between the two viewers enforced; untranslated strings eliminated |
 | Rights document | `report/copyright_statement.md` carries the verbatim licence and notice text and the attribution |
-| Approval artifact | `regeneration-design.md` exists **only** at the approval checkpoint and is removed before implementation (Section 13) |
+| Approval artifact | `regeneration-design.md` exists **only** at the approval checkpoint. After explicit approval, the implementation plan and validator-admissible requirement records must first capture the approved specification; then remove this artifact before any contract-test, package-build, render, self-check, preflight, or repository-validator run (Sections 13 and 14.9). |
 
-**Every added file's exact final path is listed in this approval specification and repeated without change in the implementation plan before any file is written.** A path not on the closed list in Section 9.5 is not created.
+**Every final-addition-set entry's exact path is listed in this approval specification and repeated without change in the implementation plan before any new file is written.** No new path outside the closed list in Section 9.5 is created.
 
-Before manifest refresh, insert every added artifact into `manifest.files` with exact `path`, canonical `role` (or `other` plus `role_detail`), `required`, and bilingual `language` / `translation_of` metadata where applicable; every non-manifest file also carries `sha256`. Refresh updates hashes only for already-declared entries and resets `validation_claim.self_checked=false`; it does not invent entries. Never refresh after the marked self-check.
+Before manifest refresh, declare all 56 final-addition-set entries—55 new files plus the already-existing `changelog.md`—in `manifest.files` with exact `path`, canonical `role` (or `other` plus required `role_detail`), `required`, and bilingual `language` / `translation_of` metadata where applicable; every non-manifest file also carries `sha256`. A canonical role forbids `role_detail`. Refresh updates hashes only for already-declared entries and resets `validation_claim.self_checked=false`; it does not invent entries. Never refresh after the marked self-check.
 
 ### 9.4 Reference density and format constraints
 
@@ -900,7 +904,7 @@ geometry/phasing.geojson
 
 #### 9.5.3 Closed final addition set
 
-The final implementation adds exactly **56 validator-admissible files**: one participant ledger, 30 bilingual key-area plate files, 15 JSON registries/evidence outputs, and 10 standard-library JavaScript builder/test/font-carrier files. `regeneration-design.md` is approval-only and excluded from this final count.
+The final addition set contains exactly **56 validator-admissible entries**: the already-existing participant ledger `changelog.md`, updated in place, plus exactly **55 new files** comprising 30 bilingual key-area plate files, 15 JSON registries/evidence outputs, and 10 standard-library JavaScript builder/test/font-carrier files. `regeneration-design.md` is approval-only and excluded from the final addition set.
 
 Participant ledger:
 
@@ -1002,7 +1006,7 @@ The reproducer receives the verification-only amendment. The two JSON data asset
 - Registry, ablation, and deterministic test-report JSON: `role: evidence_data`, `required: true`, normally `language: neutral`.
 - Builder and test JavaScript: `role: verification_script`, `required: true`, normally `language: neutral`.
 - `visual/assets/noto-sans-sc-subset.js`: `role: asset`, `required: true`, `language: neutral`.
-- Preserve the existing reproducer role or migrate it explicitly to `verification_script`; never leave an invalid `other` role without `role_detail`.
+- Preserve the existing reproducer role or migrate it explicitly to `verification_script`; never leave an invalid `other` role without `role_detail`, and never attach `role_detail` to a canonical non-`other` role.
 - Every non-manifest file receives its final SHA-256 after generation; `manifest.json` never hashes itself.
 
 ---
@@ -1074,7 +1078,7 @@ Failing participant-local JavaScript contract tests are written **first**, then 
 | Test group | Asserts |
 |---|---|
 | Frozen invariants | Both canonical titles; package type, state, boundary, geometry role, precision; the four self-check identifiers with pass and blocking; `S01`–`S10`; `P00`–`P11`; the persona registry |
-| Gate contract | Every gate list in every artifact has exactly seven members in canonical order with canonical bilingual labels |
+| Gate contract | Every `human_design_gate` list has exactly the seven `G1`–`G7` members in canonical order and canonical bilingual labels; external evidence gates use the `D` namespace, explicit human approval uses the `H` namespace, and machine self-check gates use their own identifiers, so no `D`, `H`, or machine-gate list is tested against the seven-member `G` set |
 | Vocabulary separation | "Four gates" refers only to the machine-enforced set; the seven-gate set is never called four; no mechanical single-character substitution has corrupted ordinary compounds |
 | Computation facts | Every frozen value in Section 3.6, asserted against the published frozen assets |
 | Threshold sensitivity | The four-row sensitivity table, the knife-edge pair and its exact margin, and the presence of the knife-edge disclosure adjacent to every four-component statement |
@@ -1217,10 +1221,10 @@ Fabricating completion in any class — particularly writing a professional dete
 
 ### 13.4 Post-approval sequence
 
-This sequence is **specified, not authorized**. It executes only after the explicit human approval in Section 13.6.
+This sequence is **specified, not authorized**. It executes only after `H01` is satisfied by explicit human approval of Section 14.12 / v0.2. Section 14.12 supersedes Section 13.6.
 
-1. Invoke the writing-plan skill and decompose this specification into an implementation plan that repeats the exact closed path list.
-2. Write failing participant-local JavaScript contract tests first; then implement.
+1. Create an implementation plan that captures this approved specification and repeats the exact closed path list.
+2. Migrate every approved requirement into validator-admissible source, registry, and test-plan records; remove `regeneration-design.md` and verify it is absent; resolve and record the interpreter; satisfy the dependency prerequisite; only then write and run failing participant-local JavaScript contract tests before implementation.
 3. Run syntax checks, the participant-local suite, and the reproducer:
 
 ```bash
@@ -1234,19 +1238,20 @@ node submissions/MartinForReal/adaptive-jingzhang/visual/assets/reproduce_physar
 
 4. Require the reproducer acceptance contract: `PASS`, `633 comparisons`, `7/7 derived metrics checked`, `0 mismatches`.
 5. Build all structured, spatial, bilingual, visual, HTML, and PDF artifacts deterministically; run parity, offline, accessibility, rights, font, renderer, size, and clean-build tests.
-6. Run the repository lifecycle in this exact order:
+6. Run the repository lifecycle in this exact order. `<PYTHON_ARGV>` means the recorded argument vector selected by Section 14.9 (`python3`, `python`, or `py -3`), not a hard-coded executable or an unquoted shell string. The manifest-edit step must explicitly add or update the already-existing `changelog.md` entry before refresh:
 
-```bash
-python3 -m pip install -r requirements-review.txt
-python3 scripts/render_proposal_html.py submissions/MartinForReal/adaptive-jingzhang
-python3 scripts/refresh_submission_manifest.py submissions/MartinForReal/adaptive-jingzhang
-python3 scripts/self_check_submission.py submissions/MartinForReal/adaptive-jingzhang --pr-author MartinForReal --mark-self-checked --json
-python3 scripts/participant_preflight.py submissions/MartinForReal/adaptive-jingzhang --pr-author MartinForReal --check-push
+```text
+<PYTHON_ARGV> scripts/render_proposal_html.py submissions/MartinForReal/adaptive-jingzhang
+<MANIFEST_EDIT> add-or-update changelog.md with its canonical role, required metadata, and current SHA-256
+<PYTHON_ARGV> scripts/refresh_submission_manifest.py submissions/MartinForReal/adaptive-jingzhang
+<PYTHON_ARGV> scripts/self_check_submission.py submissions/MartinForReal/adaptive-jingzhang --pr-author MartinForReal --mark-self-checked --json
+<PYTHON_ARGV> scripts/participant_preflight.py submissions/MartinForReal/adaptive-jingzhang --pr-author MartinForReal --check-push
+<PYTHON_ARGV> scripts/validate_local_submission.py submissions/MartinForReal/adaptive-jingzhang --pr-author MartinForReal --strict-manifest --json
 git diff --check
 ```
 
 7. Audit LF endings, package-only change scope, changed blobs, per-file and total size, PDF pages/fonts, offline references, forbidden extensions, unresolved authoring sentinels, and manifest hashes against working files, staged blobs, and committed head.
-8. Only after `regeneration-design.md` has been removed and every gate passes: push a separate branch, open a new pull request, and monitor CI/review/merge to an explicit terminal outcome.
+8. Only after `regeneration-design.md` has been removed and every local gate passes may a separately authorized GitHub phase push a separate branch, open a new pull request, and monitor CI/review/merge to an explicit terminal outcome. `H01` does not itself authorize that GitHub phase.
 
 **Lifecycle ordering, non-negotiable.** The package is already in the review-ready state. After regeneration, use the **manifest refresh** script; do **not** use the finalize script unless the package is deliberately returned to the scaffold lifecycle. **Manifest refresh resets the self-check claim to false**, so the marked self-check must run **after** the refresh — and the manifest must **never** be refreshed after the marked self-check, because doing so silently invalidates it.
 
@@ -1280,3 +1285,453 @@ Nothing in this document authorizes implementation, building, committing, pushin
 | 12 | The post-approval sequence of Section 13.4, which may not begin without this approval |
 
 **Awaiting explicit human approval. No implementation, push, or pull request may proceed until it is given.**
+
+---
+
+## 14. Opus 5 unresolved-target resolution amendment (v0.2)
+
+### 14.1 Status, provenance, and precedence
+
+This amendment records the max-effort, read-only Claude Code review performed with `claude-opus-5` on 2026-08-14 and reconciled with independent validator, Beijing-systems, complex-adaptive-systems, and source audits. Its private, non-repository ledger externally reports 42 verified findings and reduces 188 raw flags to 75 stable items: 23 evidence-resolvable items, 18 reversible design decisions, 14 post-approval implementation tasks, 17 external evidence gates, and 3 obsolete or merged items. Those counts are provenance metadata, not validator-enforced repository facts.
+
+The Claude session ID is `23ac6173-5b4d-4f62-ba2c-f67845a40ad5`. At handoff, the private plan digest was SHA-256 `73AF3F8199AE26C8C3AD37BD96A985BD1912CD58F1CF162817FE73ACBE46247E` and the private transcript digest was SHA-256 `3738DBECAB28DAA80BDB243E87EDA297043029EEC3562E8ACEAD74AE21877C52`. These digests allow later comparison without embedding an absolute machine path or treating a private artifact as part of the submission.
+
+This amendment is part of the approval artifact and supersedes any conflicting sentence in Sections 1–13. It resolves specification ambiguity only. The document text by itself authorizes nothing — not implementation, building, dependency installation, deletion of this approval artifact, pushing, or GitHub activity. The user's separate approval and submission authorization, and their exact scopes, are recorded in Section 14.14. All post-approval implementation tasks remain unchecked here and all external evidence gates remain open.
+
+The current commit subject, `docs: approve adaptive jingzhang regeneration design`, is not evidence of user approval. The document text, this amendment, and the task ledger all control: explicit user approval is still pending. A later corrective documentation commit must not be interpreted as approval either.
+
+The five ledger classes are now closed:
+
+| Class | Meaning | May this documentation checkpoint close it? |
+|---|---|---|
+| `A_RESOLVED_EVIDENCE` | Repository or credible primary evidence supplies a defensible answer | Yes, by recording the answer and its limits |
+| `B_RESOLVED_DESIGN_FOR_APPROVAL` | A reversible design choice is frozen for human review | Yes, as a proposal awaiting approval |
+| `C_POST_APPROVAL_IMPLEMENTATION` | Package artifacts, builders, tests, and generated outputs must change | No; every item remains unchecked |
+| `D_EXTERNAL_EVIDENCE_GATE` | A public authority, survey, professional review, budget owner, operator, or actual observation must supply evidence | No; implementation cannot check it off |
+| `E_OBSOLETE_OR_MERGED` | A duplicate or false target is removed only after its replacement is recorded | Yes |
+
+### 14.2 Direction resolved for approval
+
+The core direction remains: **C — staged commitment is the decision spine; A — reversible shearing-layer interventions are the physical payload; D — the two-doors and maximum-blank-frontage-run rules are testable exercise gates.** The official brief's slow-movement, green-space, four-quadrant pedestrian-connection, and cycle-parking tasks are the public-realm anchor for that payload.
+
+**B — the maintenance commons is a prewritten contingency register, not a presently instantiated governance arrangement.** At this checkpoint, zero maintenance units have cleared evidence for tenure, right of way or access, maintenance duty, operating authority, and budget. The unit map, seam band, charter, provisioning obligation, reserved seats, void clause, and activation tests remain specified, but no unit is activated or described as existing. A unit may activate only after the corresponding external records arrive, are independently verified, and resolve `A-TENURE-001`.
+
+If any activation prerequisite is absent, no maintenance unit, seam band, cast marker, charter, reserved seat, provisioning obligation, or cost-sharing duty is instantiated or shown as committed. Duties and costs may not default to residents, cleaners, carers, small frontage operators, or adjacent occupiers. Loss of authority, lawful access, right of way, maintainer, maintenance budget, or restoration funding after activation is an automatic stop: permit no expansion or new public exposure, remove the fast layer, restore the registered recovery state, and retain residual liability with the named sponsor or implementer until restoration verification is published. If no baseline operator is evidenced, public opening remains blocked.
+
+This is a scoping correction, not a redesign. It changes no frozen geometry, computation input, identifier, lab, plate inventory, or gate. It removes an unsupported present-tense governance claim while preserving the instrument for later use.
+
+The learning labs are a **proposed CAS operating contract**, not evidence that an urban complex adaptive system is already operating. The graph probe has no memory, agency, feedback loop, or decision authority. The labs may be coupled only through: (1) comparable evidence recorded in the same grammar when the phenomenon is genuinely comparable; (2) comparable governance using the same `G1`–`G7`, stop, rollback, restoration, and human-authorization semantics; and (3) human-authorized re-testing. A portfolio review may nominate a hypothesis or reversible component for another lab, but the receiving lab treats it as a new variation, establishes a local baseline, reapplies all gates, and approves its own authority, budget, threshold, stop, and recovery records. No success claim, evidence status, threshold, authorization, or program transfers automatically.
+
+A “materially different operating condition” means a separately authorized deployment with a different lab, site, or configuration and at least one different dominant user group, season, load, or disruption state. The probe's `0.70` and `0.35` analytical classification parameters may never be copied into an operational state variable, pilot stop condition, or propagation decision without an independently approved measurement method, unit, baseline, authority, and action contract.
+
+### 14.3 Seven formerly unclear design choices are now frozen proposals
+
+| # | Resolved proposal for approval | Reason and limit |
+|---|---|---|
+| 1 | Treat the maintenance commons as the contingency register defined in Section 14.2 | No unit currently satisfies its activation evidence |
+| 2 | Continue publishing `28.07%` and `17.48%` against the provisional geometric denominator `11,412,825.386 m²` | The separately published overall area is approximate at `11.4 km²`. A nominal conversion to `11,400,000 m²` gives an arithmetic difference of about `12,825.386 m²` or `1.28 ha`, but source precision does not support calling this a measured boundary discrepancy. Using that nominal denominator would yield about `28.11%` and `17.50%`. Both bases and the choice must be disclosed; official polygons trigger recalculation |
+| 3 | Add `title`, `author_or_issuer`, and `year` to **every** source record under the approved schema; if an item has no personal author, record the issuing body rather than inventing one. This covers the 27 records that exist today, the eight contextual and five primary public-evidence records required by Section 14.8, and the single meteorological record required by Section 14.6, for the closed final total of exactly **41** fixed in Section 14.13.1. Acceptance verifies `41/41`, preserves all 27 legacy IDs, resolves every frozen new stable ID/URL, and leaves zero records in the legacy field shape | The current issue is a missing bibliographic field shape across all 27 existing records, not a few blanks; `27/27` cannot describe the post-migration inventory. The target is a fixed count, not an open-ended `N`: C06 registers exactly one meteorological record, and if a second qualifying source were ever needed the count contract is reopened and restated rather than left elastic |
+| 4 | Fold all audit corrections into this amendment and the expanded gate in Section 14.12 | An implementation agent may not reinterpret or silently vary them |
+| 5 | Replace the unsupported `2.26 km` precision with an explicitly contextual `approximately 2.2 km` concern derived from public OSM/Wikidata station positions, carrying ODbL, two-node spread of about 130 m, and non-official/no-survey caveats | This supports only a negative warning about the provisional polygon. It does not establish an entrance, station boundary, crossing, walking route, or official station relationship. `PROV-KEY-003` remains unchanged and no station geometry is drawn |
+| 6 | Register `GB 55019-2021` and `DB11/T 2209-2023` with issuing authority, status, URL, and limitations | Registration does not prove site compliance or authorize remembered clause values. A dimension may be typed `standards-derived minimum` only when the exact applicable clause text is held in the repository and professional applicability is recorded |
+| 7 | Freeze the exact A3 and A0 placement rectangles in Section 14.7 | These values will close the existing `null + human_approval_required` build blocker after explicit human approval; until then their status remains `human_approval_required` |
+
+**B03 complete denominator disclosure.** The nominal conversion from `11,412,825.386 m²` to `11,400,000 m²` differs by about `12,825.386 m²` or `1.28 ha`, approximately `0.1125%` of the nominal denominator. The underlying ratios would shift by approximately `+0.03` and `+0.02` percentage points, producing displayed changes `28.07% → 28.11%` and `17.48% → 17.50%`. The numerator geometry and the current denominator share the same provisional geometric basis; the approximate published `11.4 km²` value is not an exact substitute boundary. The provisional geometric denominator therefore remains the selected working basis pending official polygons. Every dependent display discloses both bases, these shifts, this rationale, and the official-polygon recalculation trigger; none describes a measured boundary discrepancy. Every numeral quoted in this paragraph is a display string governed by the deterministic decimal contract in Section 14.13.3: computed at full precision with no intermediate rounding, then rendered once under decimal `ROUND_HALF_UP` — two decimal places with trailing zeroes preserved for the shares, the percentage-point shifts, and the `1.28` ha difference, and four decimal places for the `0.1125%` figure. The word "approximately" here reflects the approximate published `11.4 km²` input, not slack in the rendering; the strings themselves are exact and are asserted as strings by the C07 test.
+
+### 14.4 Computation truth contract
+
+Physarum or slime mould is retained only as historical methodological lineage. The package does **not** run a biological simulation, model flux-conductivity dynamics, represent an urban complex adaptive system by itself, estimate movement or demand, discover city structure, or make autonomous decisions. The implemented method is a **seeded Kruskal minimum-spanning-tree topology/disagreement sensitivity probe** over hand-declared nodes, edges, weights, proxies, and jitter. It carries no state between runs. Its output may inform a human pilot question; it may never trigger a pilot, stop, propagation, or statutory decision.
+
+The frozen primary facts are:
+
+- 10 nodes, 24 candidate edges, 64 runs using seeds `0..63`, and 11 selected edges per run;
+- 704 selected-edge tokens; 22 candidates selected at least once; `E06` and `E24` never selected;
+- 14 edges at or above the literal `0.35` cutoff, comprising 6 persistent and 8 disagreement edges;
+- persistent edges: `E02 E03 E09 E10 E18 E20`;
+- disagreement edges: `E01 E05 E08 E12 E13 E16 E17 E19`;
+- 10 edges below `0.35`; disagreement share `8 / 14 = 0.571429`.
+
+Any phrase claiming “57.1% of selected edges” is false because 22 edges were ever selected. The bilingual publication target is exactly: **8 of the 14 edges qualifying at or above 0.35 are in the disagreement band**. Generated HTML is regenerated from the corrected Markdown; generated reports are never hand-edited.
+
+The frequency thresholds remain literal `persistent >= 0.70` and `disagreement >= 0.35 and < 0.70`, while their attainable 64-run count thresholds are also published: persistent is counts 45–64; disagreement is counts 23–44; not selected is counts 0–22. Persistence first occurs at `45 / 64 = 0.703125`; qualification first occurs at `23 / 64 = 0.359375`; the largest not-selected frequency is `22 / 64 = 0.343750`. `E05` and `E13` are each `44 / 64 = 0.6875`, exactly one selecting run below persistence. The four-room grammar is therefore a threshold-conditioned presentation, not a site diagnosis.
+
+Machine values remain `persistent_candidate`, `disagreement_candidate`, and `discarded_in_this_reference_run`. Their public labels are `Persistent / 持久`, `Disagreement / 分歧`, and `Not selected / 未入选`. `pruned / 修剪` is a deprecated display alias only and may not imply an adaptive mechanism.
+
+The two added derived metrics use only the 14 edges whose primary frequency is at least `0.35`, with `length_m` as the edge weight, and all 45 unordered pairs of the 10 nodes:
+
+1. Reconstruct conceptual projected node coordinates as `(x_normalized × 1374.006827, y_normalized × 9723.469847)` metres. These spans are the six-decimal least-squares reconstruction from all 24 frozen edge lengths; they have no survey authority.
+2. `mean_pair_detour_factor` is the equal-weight arithmetic mean of `qualified_graph_shortest_path_length / conceptual_projected_straight_line_distance` across all 45 pairs. Its frozen six-decimal value is `1.022722`.
+3. Baseline global efficiency is the equal-weight mean of `1 / shortest_path_length` across all 45 pairs; a disconnected pair contributes zero.
+4. Delete each of the 14 qualified edges separately, recompute global efficiency, divide by baseline efficiency, and take the equal-weight mean of the 14 ratios. `single_edge_loss_efficiency_retention` is `0.955284`.
+5. Full precision is retained through each computation and rounding occurs only at the published six-decimal boundary.
+
+The reproducer acceptance test reads JSON fields rather than matching a prose line: `status == "PASS"`, `comparisons == 633`, `derived_metrics == 7`, and `mismatch_count == 0`. `physarum-inputs.json` and `physarum-runs.json` remain byte-identical.
+
+### 14.5 Zero-jitter ablation contract
+
+The zero-jitter ablation reuses seeds `0..63`, keeps the same five normalized weight draws, forces only the edge-jitter contribution to zero, retains the Kruskal-plus-two selector and stable edge-ID tie-break, and defines each delta as `zero_jitter_frequency - primary_frequency`. Values serialize to six decimals.
+
+Expected frequencies in `E01` through `E24` order are:
+
+```json
+[
+  0.031250, 0.968750, 1.000000, 0.000000,
+  1.000000, 0.000000, 0.000000, 1.000000,
+  1.000000, 1.000000, 0.000000, 0.000000,
+  1.000000, 0.000000, 0.000000, 0.203125,
+  0.875000, 1.000000, 0.921875, 1.000000,
+  0.000000, 0.000000, 0.000000, 0.000000
+]
+```
+
+The exact primary selected counts, zero-jitter selected counts, and `zero_jitter - primary` count deltas in the same edge order are:
+
+```json
+{
+  "primary_selected_counts": [29, 46, 57, 21, 44, 0, 5, 41, 45, 60, 2, 35, 44, 2, 21, 32, 31, 61, 42, 50, 6, 11, 19, 0],
+  "zero_jitter_selected_counts": [2, 62, 64, 0, 64, 0, 0, 64, 64, 64, 0, 0, 64, 0, 0, 13, 56, 64, 59, 64, 0, 0, 0, 0],
+  "delta_selected_counts": [-27, 16, 7, -21, 20, 0, -5, 23, 19, 4, -2, -35, 20, -2, -21, -19, 25, 3, 17, 14, -6, -11, -19, 0]
+}
+```
+
+Each ablation record contains `edge_id`, both counts, both six-decimal frequencies, both statuses, `delta_selected_count`, and `delta_frequency`. The artifact also records the method ID, run count, seed policy, weight policy, primary and ablation jitter policies, both classification rules, summary, and bilingual interpretation.
+
+Under this ablation there are 11 persistent edges, zero disagreement edges, and the persistence graph is connected. This demonstrates that the four-working-rooms grammar is conditional on the jitter term and threshold. It does not validate or invalidate a Beijing spatial condition.
+
+### 14.6 Threshold, lifecycle, and reversibility grammar
+
+Every proposed threshold has exactly one `threshold_kind`:
+
+```text
+categorical_zero_tolerance
+baseline_relative
+standard_derived
+capacity_derived
+proposed_process_target
+```
+
+`standard_derived` requires the registered exact clause and applicability record. `capacity_derived` requires the responsible professional's signed capacity basis. `baseline_relative` requires a completed and quality-checked baseline. Until those prerequisites exist, the value remains `null` and blocks public opening where the state variable is safety-, rights-, accessibility-, privacy-, budget-, rollback-, or recovery-critical.
+
+Before public opening, absence of a named operator, stop authority, incident-responsibility assignment, maintenance budget, rollback method, or recovery state is a **readiness blocker**. It blocks the transition from `evidence_ready` to `authorized`; it is not a stop event because no operation is active yet.
+
+The following categorical stops require no invented numerical threshold:
+
+- any confirmed near miss involving a person;
+- any failed human takeover during an active test;
+- any privacy breach or unconsented identification;
+- obstruction of the declared step-free route without a verified equivalent;
+- loss of the non-digital fallback while the digital service remains active;
+- loss during active operation of the operator, stop authority, incident-responsibility assignment, maintenance budget, rollback method, or recovery state that supported authorization.
+
+The following are proposed process targets for the v0.2 approval decision, not claims about an existing institution. A registry stores them as `proposed_target`; the operational `authorized_target` remains `null` until the named operator and approval role accept the clock basis, start event, lapse default, and downstream transition:
+
+| Process | Target |
+|---|---:|
+| Complaint acknowledgement | 1 operating day |
+| Complete complaint disposition | 5 working days |
+| Confirmed categorical stop | Immediate |
+| Make-safe or isolation | Before public use resumes |
+| Restoration plan after a stop | 1 working day |
+| Restart decision after a complete restart record | Target 5 working days |
+| Continue or modify decision after a complete review packet | 10 working days |
+| Cross-scale propagation decision after a complete dossier | 20 working days |
+
+The proposed minimum lifecycle is: readiness with no time limit until authority, budget, rollback, and evidence gates close; baseline for at least 30 consecutive operating days; controlled commissioning for at least 5 operating days; a public reversible pilot for 90 consecutive calendar days; formal reviews on days 7, 30, and 90 and after every qualifying disruption; and seasonal evidence for at least 365 consecutive days with actual summer and winter exposure. These are approval-pending design values; each authorized operational duration remains `null` until its owner and approval role accept it. A 90-day pilot alone cannot support year-round propagation.
+
+**B16 partial specification and remaining in-repository action.** The 365-day duration and the need for actual summer and winter exposure are frozen as a proposed design direction, but this document deliberately does not invent the meteorological source or a qualifying heat/rain or snow/ice threshold. Existing Class C task C06 must register exactly one appropriate public meteorological source in `sources.json`, under the stable ID `BEIJING-METEOROLOGICAL-SEASONAL-QUALIFICATION` frozen by Sections 14.8 and 14.13.2 and subject to the admissibility rules stated there, and encode source-backed, falsifiable summer heat/rain and winter snow/ice qualification criteria in `visual/assets/state-variable-registry.json`. Each criterion records source ID, variable, unit, spatial and temporal coverage, event or window rule, missing-data treatment, `proposed_target`, and `authorized_target: null`; the latter remains `null` until a named operator and competent authority accept it. A meteorological record can qualify the external condition but cannot substitute for on-site evidence: a physically present named operator must record the qualifying exposure. Completing C06 does not close D13; D13 remains a non-checkable external observation gate and may hold only a year-round-operation claim or propagation review. The phrase “year-round propagation” in the preceding lifecycle paragraph has only those two separate meanings and creates no broader hold.
+
+The state grammar branches; a stopped and closed run never progresses into propagation:
+
+- operating branch: `proposed → evidence_ready → authorized → active → modify_or_hold`; return from `modify_or_hold` to `active` requires a recorded decision and the same authorization prerequisites must still hold. An `active` or `modify_or_hold` run that has never entered the stop-and-closure branch may create a new versioned `qualified_active_result` record only after a named operator and a separate human reviewer sign a complete evidence packet covering authorization, baseline, approved observation window, event and incident log, source-qualified seasonal exposure, and reproduction under a materially different operating condition;
+- stop-and-closure branch: `active` or `modify_or_hold → stopped → restore → restoration_verified → verified_closed`; `verified_closed` is terminal for that run, any restart begins a new `proposed` record and requires new signed authorization, and no state or record on this branch may create `qualified_active_result`;
+- propagation branch: `qualified_active_result → propagation_review_eligible → separately_authorized`; the versioned `qualified_active_result` and its signed evidence packet are the only entry to this branch. Closure alone never creates propagation eligibility, and no stopped, restored, restoration-verified, or verified-closed run may use this transition;
+
+`observation_window` and `decision_window` are separate fields. Readiness blockers prevent opening; active stop conditions halt an already authorized operation. Immediate stop, make-safe action, restoration, and verified closure never wait for a seasonal observation window.
+
+Removal classes are frozen proposals for **fast-layer intervention payloads**:
+
+- `R0 movable`: two people, no tools, at most 15 minutes;
+- `R1 hand-tool demountable`: two people, hand tools, at most 4 hours;
+- any fast-layer payload slower than `R1` is non-deployable until a professional removal and restoration method is approved.
+
+These times and classes remain proposed targets pending operator and authority acceptance; every fast-layer component's `authorized_removal_target_time` remains `null` until the operator, maintainer, and any relevant professional or authority approve it. Intentionally durable slow-layer support is outside `R0`/`R1`: it may proceed only under the evidence conditions in Principle 3 and must instead carry an approved decommissioning/remediation method, responsibility, funding, residual-liability record, and `authorized_decommissioning_target` that remains `null` until accepted. Durable support must not be described as reversible. No numerical takeover, noise, crowding, capacity, gradient, cross-fall, detour, snow-clearance, stormwater, affordability, displacement, station, frontage, road, or access value is invented by this amendment.
+
+### 14.7 Closed A3 and A0 placement geometry
+
+All placement coordinates are millimetres from a top-left origin. Every image uses `fit: contain`, `crop: false`, preserves aspect ratio, and centres unused space. Chinese and English twins use identical geometry.
+
+For every ISO A3 landscape page (`420 × 297 mm`), including the synoptic page, the placement rectangle is:
+
+```json
+[15, 15, 390, 267]
+```
+
+For every ISO A0 landscape board (`1189 × 841 mm`), reserve the header band `y = 0..55 mm` and footer or margin band `y = 806..841 mm`. Board 1 uses:
+
+```json
+[35, 70, 1119, 736]
+```
+
+Boards 2–4 each use the same five placement zones: Plate 01 is the full-height left anchor and Plates 02–05 form a two-by-two right-hand grid. This exact arrangement supersedes the earlier shorthand “five frozen vertical zones.”
+
+| Plate | `[x_mm, y_mm, width_mm, height_mm]` |
+|---|---|
+| 01 | `[35, 70, 425, 736]` |
+| 02 | `[475, 70, 332, 360.5]` |
+| 03 | `[822, 70, 332, 360.5]` |
+| 04 | `[475, 445.5, 332, 360.5]` |
+| 05 | `[822, 445.5, 332, 360.5]` |
+
+Contract tests assert exact media dimensions, finite and in-bounds rectangles, no overlap, exact inventory and order, bilingual geometry parity, contain/no-crop behaviour, and zero `null` placement rectangles.
+
+### 14.8 Source and standards resolution
+
+The bibliography must distinguish contextual or methodological background from site evidence, planning standards, professional determinations, and implementation authority. Contextual sources never prove that self-organization is desirable or that a site condition exists.
+
+Add the following **eight** contextual records. Every one of these eight identifiers was checked against the current 27-record file at this checkpoint and is **absent**, so all eight are net additions to the record count:
+
+| ID | Identifier | Use limit |
+|---|---|---|
+| `OPEN-BUILDING-HABRAKEN-2021` | DOI `10.4324/9781003014713` | Open-building and support/infill context |
+| `SHEARING-LAYERS-BRAND-1994` | ISBN `0670835153` | Change-rate context |
+| `OSTROM-COMMONS-1990` | DOI `10.1017/CBO9780511807763` | Commons governance context |
+| `OSTROM-POLYCENTRIC-2010` | DOI `10.1257/aer.100.3.641` | Polycentric governance context |
+| `REAL-OPTIONS-NEUFVILLE-2003` | DOI `10.1076/iaij.4.1.26.16461` | Real-options context |
+| `HOLLING-ADAPTIVE-CYCLE-2001` | DOI `10.1007/s10021-001-0101-5` | Adaptive-cycle context |
+| `PORTUGALI-SELF-ORGANIZING-1997` | DOI `10.1016/S0016-3287(97)00022-0` | Urban self-organization context |
+| `CAS-DYNAMIC-CITIES-2018` | DOI `10.1080/13563475.2018.1439370` | Urban CAS context |
+
+Five further records are **reused in place and do not increase the record count**: `SCHELLING-1971`, `PHYSARUM-MODEL-2007`, `PHYSARUM-TOKYO-2010`, `PHYSARUM-MAZE-2000`, and `HOLLING-1973`.
+
+A correction to the earlier drafting of this paragraph: all five already carry exactly the intended DOI as their `url` value — `https://doi.org/10.1080/0022250X.1971.9989794`, `https://doi.org/10.1016/j.jtbi.2006.07.015`, `https://doi.org/10.1126/science.1177894`, `https://doi.org/10.1038/35035159`, and `https://doi.org/10.1146/annurev.es.04.110173.000245` respectively. There is therefore **no DOI to add** to `PHYSARUM-MAZE-2000` or `HOLLING-1973`; the earlier instruction to "enrich them with DOI" described work that is already done. The only enrichment these five actually require is the bibliographic field shape of Section 14.3 row 3, which every record in the file requires equally. The genuinely absent intellectual bodies remain shearing-layer/support-and-infill, polycentric commons, and real-options literature; `SCHELLING-1971` and `HOLLING-1973` already exist and must not be described as missing.
+
+Register the following **five** primary/public evidence records with narrow allowed uses. Each stable ID below is **frozen by this amendment** so that implementation does not choose it (Section 14.13.2). Every one of these five URLs was compared verbatim against the 21 URLs already present in `sources.json` at this checkpoint and **none is a duplicate**, so all five are net additions to the record count:
+
+| Frozen stable ID | Record | Final URL |
+|---|---|---|
+| `BLUEVIEW-DISPOSITION-2025` | Blueview public-comment disposition/adoption notice | `https://ghzrzyw.beijing.gov.cn/chengxiangguihua/ghlgg/hd_ghlgg/202506/t20250606_4107444.html` |
+| `BLUEVIEW-RENEWAL-CASE-2026` | Blueview renewal case | `https://ghzrzyw.beijing.gov.cn/zhengwuxinxi/zxzt/csgx/csgxfjszt/fjsztalzs/202606/t20260612_4698370.html` |
+| `GB-55019-2021-OFFICIAL` | Official `GB 55019-2021` announcement | `https://www.gov.cn/zhengce/zhengceku/2022-03/30/content_5682480.htm` |
+| `DB11-T-2209-2023-OFFICIAL` | `DB11/T 2209-2023` landing page, already seeded in `brief/auto-crawl-sources.md` | `https://ghzrzyw.beijing.gov.cn/biaozhunguanli/bz/szjgdjt/202405/t20240531_3700152.html` |
+| `BEIJING-RESPONSIBILITY-PLANNER-2024` | Beijing responsibility-planner instrument, 京规自发〔2024〕56号 | `https://www.beijing.gov.cn/zhengce/zhengcefagui/202403/t20240308_3583459.html` |
+
+C06 registers **exactly one** public meteorological record, under the frozen stable ID `BEIJING-METEOROLOGICAL-SEASONAL-QUALIFICATION`. Freezing the ID does not select a publisher, dataset, threshold, or operational value; the admissibility rules constraining that selection are in Section 14.13.2. The post-migration inventory is therefore **closed at exactly 41 records** — 27 existing, eight contextual additions, five primary public-evidence additions, and one meteorological addition — as fixed in Section 14.13.1. C08 verifies `41/41`, preserves every frozen ID and URL, and requires the approved field shape across all 41; it must not hard-code `27/27` and must not substitute an open-ended `N`. If review ever established that a single meteorological record cannot carry the criterion, the count contract is reopened and restated by amendment under `H01` — never silently widened during implementation.
+
+`DB11-T-2209-2023-OFFICIAL` deliberately drops the solidus from the published designation `DB11/T 2209-2023` so that the identifier stays within a plain alphanumeric-and-hyphen character set; the published designation with its solidus is carried in the record's `title` field, not in its ID.
+
+Every new source record must contain: stable ID; canonical title; issuing authority; publication date and, where applicable, effective date; accessed date; final URL; source/status class; allowed uses; prohibited inferences; and temporal and parcel scope. It must then use exactly one local-evidence state: (a) a non-null repository-relative cleared `local_reference_path` plus the local file's SHA-256; or (b) `local_reference_path: null`, `local_reference_status: url_only_not_cleared`, a retrieval-time `retrieved_content_sha256`, and a reason the content is not a cleared repository reference. State (b) is provenance metadata only: it cannot support clause-derived dimensions, formal controls, site compliance, or implementation authorization.
+
+The first Blueview page is registered as a public-comment disposition or adoption notice, not merely a comment notice. The 2025 `HD00-1603-03` and 2026 `HD00-1603-03A` statements remain temporally and parcel scoped and are never conflated. Public objections mentioning `60 m` or `36 m` are not approved height controls. For `GB 55019-2021`, implementation registers the official announcement, effective date, final PDF URL, and retrieval-time PDF SHA-256 `EE78B16E1DEC13B83F2361FB4A1BD6A07EB6320B6F82D9082FDBCB9F8C7416BB`; it may record a non-null local-reference path only if the exact standard text already exists in a cleared, validator-admissible repository location. Until then the record remains `url_only_not_cleared`, and no clause or dimension becomes standards-derived. Exact clause text and a professional applicability record are both required before that status can change.
+
+Blueview evidence supports only a narrow, time-bounded `HD00-1603` parcel context. It does not resolve the competition's 72 ha polygon, key-area polygons, station entrances, exact station distance, road or rail jurisdiction, project-wide tenure, FAR, height, or other controls. Registering `GB 55019-2021` establishes that the mandatory national code exists and has been effective since 2022-04-01; it does not establish route compliance. Clause applicability, survey, and professional accessibility review remain external. Registration of `DB11/T 2209-2023` likewise does not establish applicability: D08 remains open until a competent mobility/transport professional records applicability against the exact cleared edition and cited clauses, with dependent route, road, and crossing artifacts held.
+
+Retention of every currently registered mandatory standard is a preservation rule, not a completeness claim. The package does not claim that its standards register is exhaustive for detailed design, professional review, construction, or operation.
+
+Source identifiers containing `PHYSARUM`, their cross-references, and frozen filenames remain unchanged because they identify real sources and frozen artifacts. Biological mechanism language is removed only from explanatory prose. The obsolete “missing-and” English-title sweep is removed because it has zero live occurrences; only the five live extra-`The` occurrences in `proposal.en.md` and generated `report/proposal.en.html` are migration targets.
+
+### 14.9 Finite-coordinate and deterministic lifecycle corrections
+
+Every coordinate emitted by a JavaScript builder is checked with `Number.isFinite` before `JSON.stringify`. Coordinate arrays may not contain `null`, `NaN`, `Infinity`, booleans, strings, or any other non-numeric value. Final GeoJSON must pass the repository validator's finite WGS84 coordinate rule. A post-serialization search for `NaN` is insufficient because JavaScript serializes `NaN` and infinities as `null`.
+
+The current package baseline is 9 GeoJSON files, 45 features, 1,677 coordinate pairs, zero non-finite values, zero null coordinate values, and zero `NaN` or `Infinity` tokens. This is a verified baseline, not permission for builders to omit the pre-serialization guard.
+
+Dependency installation is a labelled prerequisite outside the ordered artifact lifecycle. The lifecycle first resolves a Python interpreter by actually running `--version` in this order: `python3`, `python`, then `py -3`; it accepts only exit code zero and records the selected command and version in the build transcript. A PATH hit alone is insufficient because this machine's `python3` may be a nonfunctional Windows Store alias.
+
+After explicit approval, the lifecycle order is: capture the approved specification in the implementation plan; migrate every approved requirement into validator-admissible source, registry, and test-plan records; remove `regeneration-design.md`; resolve and record the interpreter; satisfy the dependency prerequisite; write and run failing-first participant contract tests; build authored and generated artifacts; render proposal HTML; add or update `changelog.md` in the manifest; refresh the manifest; run marked self-check; run participant preflight with `--check-push`; run the repository validator; then inspect hashes, encodings, line endings, PDF structure, staged scope, and committed scope. No contract-test, package-build, render, self-check, preflight, or repository-validator run occurs before the approval artifact is removed, and the manifest is never refreshed after marked self-check.
+
+### 14.10 Known live defects become exact post-approval targets
+
+The following facts are resolved now, but their package repairs remain Class C and unchecked:
+
+- both generated HTML reports expose 10 literal `[assumption:*]` markers because the trusted renderer recognizes only five evidence-marker kinds; source Markdown must use supported syntax and generated reports must contain zero `[assumption:` occurrences;
+- all 15 design-depth records currently say `complete`, although `three_key_area_detailed_design` is non-conformant until the 30 bilingual plates and related artifacts exist; regeneration must reset the affected record and cascade counts, self-check, and hashes;
+- each of the four shipped PDFs currently has zero embedded font programs and zero `/ToUnicode` maps; each rebuilt PDF must have at least one of each and pass bilingual text extraction;
+- each generated report currently contains two top-level `<h1>` elements; each must contain exactly one;
+- 11 of the 13 English H2 headings differ from the required set; the final H2 set must equal `REQUIRED_SECTIONS_EN` exactly;
+- `visual/index.en.html` omits `P00` and retitles `P01`–`P04`; both viewers must use canonical registry titles;
+- `BARRIER-FREE-ENVIRONMENT-LAW`, `ELDERLY-SMART-TECH-PLAN-2020-45`, and `GENERATIVE-AI-INTERIM-MEASURES` are dangling from `standard_matrix.json` and must be added;
+- the 19-metric preservation ledger must use the live `network_detour_factor` unit `index`, unless implementation deliberately migrates the metric and walks the complete cascade;
+- `floor_area_ratio` and `approved_height_limit_m` currently have only the reason field from the five-field unknown contract; they must also name resolver or profession, responsible authority role, recalculation trigger, and downstream artifacts;
+- all 27 source records currently lack the `title`/`author_or_issuer`/`year` bibliographic field shape. `27` is the correct count of the present defect; the acceptance target is the closed final total of `41` fixed in Section 14.13.1, because the 14 records added under Section 14.8 and task C06 must carry the same field shape from the moment they are written;
+- the v0.1 changelog implementation rows did not name exact paths, tests, and acceptance conditions; the v0.2 ledger now fixes their specification without checking any implementation task off;
+- the English geometry warning for `PROV-KEY-003` is less explicit than the Chinese warning and must be reconciled under the approximately-2.2-km contextual-warning rule;
+- the current four-gate PASS transcript is stale while this approval artifact is present. It is not hand-corrected. The final lifecycle regenerates it only after the approval artifact is removed.
+
+### 14.11 External evidence matrix with conditional progress
+
+No row below is an implementation checkbox. “Conditional progress” permits preparation of a clearly provisional drawing, protocol, or record; it does not close the gate or authorize public operation.
+
+Evidence resolves only the field, entrance, parcel, clause, utility, route, component, or role it actually covers; partial evidence never closes an entire row by implication. Each composite row is field-addressable: `D04` carries non-road tenure and lawful right-of-way; `D05` separates surveyed levels from utility, drainage, and service-operator connection or jurisdiction evidence; `D06` separates structural/civil admissibility from the competent authority's existing-building retain/retrofit/demolition determination; `D07` separates design-stage accessibility review from the as-built or pre-opening measured audit; `D08` separates road jurisdiction and road right-of-way from the traffic/crossing assessment; `D10` carries emergency roles and restoration verification but never component-removal performance; and `D12` separately names the maintainer, maintenance duty, restoration funding, and residual-liability holder. A row remains open for every uncovered field. Explicit user approval is the separate `H01` gate defined in Section 14.12, not an external professional dependency.
+
+`D03` supersedes the older Section 12 station row: station evidence re-evaluates only Lab 3's Dazhongsi arrival, four-quadrant assignment, and station assumptions; it never changes Lab 2's conditional slow-link status. The slow link uses field-addressed gates without adding `D18`: `D04` holds institutional-edge tenure and lawful right of way, `D05` holds the surveyed route and affected service interfaces, `D12` holds the named operator/maintainer, maintenance duty, budget, restoration funding, and residual liability, and `D16` holds the institutional-edge interface decision plus the specific Lab 2 human authorization event. `D08` also applies to any slow-link segment that touches a road or crossing. Each of those rows names the slow link in its downstream hold; partial evidence closes only its covered field. No campus gate, ownership boundary, access-control point, right of way, route, operator, budget, or authorization is inferred beyond registered evidence.
+
+Accessibility has two distinct records: design-stage code applicability and route review, then as-built or pre-opening measured audit. Component removal and human takeover are also distinct operations. Emergency coordination covers access, incident command, human takeover, evacuation, make-safe action, and restoration responsibility; it does not substitute a removal-time test. Seasonal evidence may hold year-round operation or propagation, but never delays an immediate stop, make-safe action, restoration, or verified closure.
+
+| ID | External gate | Responsible role and minimum acceptable evidence | Downstream hold | Conditional progress permitted |
+|---|---|---|---|---|
+| `D01` | Official site-boundary polygon | Planning authority; downloadable polygon in a named CRS | `SITE-001`, dependent metrics, matrices, figures, plates, PDFs, viewers, report | Draw conditionally with `official_boundary: false`; no official-area claim |
+| `D02` | Official key-area polygons | Planning authority; per-area downloadable polygons in a named CRS | Key-area geometry and all dependants | Draw conditionally; official names and published areas may be recorded separately from polygons |
+| `D03` | Station interface | Rail station authority; entrances and numbering, level changes, vertical circulation, gate lines, station land boundary, and crossing arrangement in a named CRS | Lab 3 plates, synoptic figure, scenario and project records | Draw all ten Lab 3 plates conditionally using only non-station provisional design geometry; keep every station field `unknown` or `null`, and draw or claim no station geometry, entrance, number, gate line, level change, station land boundary, distance, crossing, or positive station relationship |
+| `D04` | Cadastre, tenure, right of way, maintenance duty | Land administration or registration authority; stamped cadastral/tenure record naming rights and duties | Maintenance-contingency activation, conditional ground-floor/frontage proposals, the Lab 2 slow link, and role registry | Draw non-georeferenced modules and a clearly conditional slow-link protocol only; make no parcel, right-of-way, access, or governance claim |
+| `D05` | Topographic, utility, drainage, and service-interface evidence | Licensed surveyor: signed levels in named vertical and horizontal datums; relevant utility, drainage, fire-service, or other service operator/authority: surveyed connection location plus written capacity and jurisdiction statement for each affected interface | Sections, route drawings, the Lab 2 slow-link route, cut/fill, drainage, utility, and service-interface claims | Draw with an assumed local datum clearly labelled; make no gradient, drainage, route, utility, fire-service connection, capacity, or jurisdiction claim for an uncovered field |
+| `D06` | Structural/civil assessment and existing-building determination | Licensed structural/civil professional: signed, sealed assessment naming load cases, geotechnical basis, wind/snow basis, and admissibility; competent planning/building/ownership authority: verified existing-building inventory and parcel- or component-specific retain/retrofit/demolition determination | Module sections, plates 3 and 5, installation, existing-building classification | Draw proposed modules and inventory hypotheses only; installation and any authorized retain/retrofit/demolition claim remain blocked |
+| `D07` | Accessibility design review and as-built/pre-opening audit | Qualified accessibility professional/body: design-stage code-applicability and route review against an exact cleared code edition; separately, measured as-built or pre-opening route audit with instruments and segment results | Route design, equivalent text, `G5`, public opening | Develop conditionally with `verified: false` and `G5: pending`; public opening remains blocked until the separate measured audit passes |
+| `D08` | Road jurisdiction, road right-of-way, traffic, crossing, and mobility-standard applicability | Competent road/traffic authority: written jurisdiction and lawful road right-of-way or crossing decision; qualified assessor: accepted assessment with counted movements and survey date/duration; competent mobility/transport professional: applicability record against the exact cleared `DB11/T 2209-2023` edition and cited clauses | Lab 3 plates, any Lab 2 slow-link segment touching a road or crossing, road/crossing geometry and dimensions, scenario registry | Draw all ten Lab 3 plates conditionally while keeping uncovered station, road, crossing, and applicability fields `unknown` or `null`; make no road-jurisdiction, lawful-crossing, dimensional, geometry, safe-crossing, or standards-applicability claim for an uncovered field |
+| `D09` | Heritage determination | Heritage authority; formal boundary and intervention determination in a named CRS | Heritage layers, `G3`, interventions | Draw a clearly labelled hypothesis; no intervention in an undetermined control zone |
+| `D10` | Emergency-service coordination and restoration verification | Fire, ambulance, implementing entities, named operator/stop authority, and restoration verifier; written responsibility for access, incident command, human takeover, evacuation, make-safe action, restoration, and closure verification | All public pilots, `G1`, stop/restore/verified-closure records | Specify an emergency and human-takeover protocol only; component-removal performance remains a separate contract test, and no fire-route-maintained or verified-restoration claim is permitted before evidence |
+| `D11` | Privacy and data determination | Data-protection counsel; PIPIA when sensing or personal data is proposed | Lab records and `G6` | Use non-personal manual counts and paper protocols; any camera, sensor, identification, or app remains blocked |
+| `D12` | Cost, maintenance, restoration funding, and residual liability | Sponsoring or implementing entity; written funding source, budget line, owner, named maintainer and duty, annual amount, term, restoration funding, residual-liability holder | Pilot start, the Lab 2 slow link, maintenance activation and obligations, restoration capacity, `G4` | Publish a costed schedule with `funding_status: unfunded`; pilot start, slow-link authorization, and maintenance-unit activation remain fully blocked |
+| `D13` | Seasonal observation | Named operator and authorizer; after C06 establishes source-backed qualification criteria, at least 365 days of qualifying actual summer and winter exposure under the accepted protocol, recorded on site by a physically present named operator | Year-round-operation claim and propagation review only | Complete the protocol and seasonal configurations; observation itself remains open and non-checkable, while stop, make-safe action, restoration, verified closure, and ordinary decisions within an already authorized pilot remain available without 365-day evidence |
+| `D14` | Approved height control | Planning authority; approved parcel-specific height control | `approved_height_limit_m` and all dependants | Value fully blocked and remains `null` |
+| `D15` | Floor area ratio | Planning authority; approved parcel-specific FAR | `floor_area_ratio` and all dependants | Value fully blocked and remains `null` |
+| `D16` | Site-specific responsibility-planner remit or other operating authority | Competent public body; formal remit covering the relevant geography and action; for the Lab 2 slow link, a written institutional-edge interface decision and a signed Lab 2 authorization event naming scope, term, and responsible role | Role and decision-authority registry, institutional-edge interface, Lab 2 slow link | Register a general institution or instrument only; do not identify a post-holder, claim site authority, or activate the slow link without the specific records |
+| `D17` | Public weighting review and distributional data | Named authorizer or data holder; documented public review and fit-for-purpose equity dataset | Weight declarations and equity claims | Publish weights as declared inputs, never findings |
+
+The official announcement supplies approximate published areas of about `192.1 ha`, `104.3 ha`, and `72.0 ha`, and two published spelling variants, `集聚` and `聚集`. Records preserve the original unit, displayed precision, and `approximate: true`. They are authoritative published quantities but are not exact polygon-derived areas, exact denominators, or proof of official polygons. Any arithmetic comparison with provisional geometry is labelled a nominal comparison against an approximate published value, not a measured boundary discrepancy. The polygon gates remain open and the spelling inconsistency is not silently normalized.
+
+**A11 implementation target assigned to C14.** C14 must add three records to `metrics.json`: `official_key_area_area_sqm_001`, `official_key_area_area_sqm_002`, and `official_key_area_area_sqm_003`. Their respective numeric unit conversions are `1921000`, `1043000`, and `720000` with `unit: "sqm"`, `status: "known"`, `confidence: "high"`, and `approximate: true`. High confidence applies only to faithful transcription and unit conversion of the published approximate quantities. Each record and every dependent matrix or display preserves the original published unit and displayed precision exactly as `about 192.1 ha`, `about 104.3 ha`, and `about 72.0 ha`. No record or display may describe these values as polygon-derived, an exact denominator, or proof of an official polygon; all official-polygon evidence gates remain open.
+
+### 14.12 Expanded human approval gate
+
+This gate supersedes Section 13.6. Explicit human approval is required for the complete specification, including all of the following as one coherent revision:
+
+| Gate ID | Authority | Acceptable evidence | Scope and version | Downstream effect |
+|---|---|---|---|---|
+| `H01` | User commissioning regeneration | A new, explicit, unambiguous message approving “Section 14.12 / v0.2” after the amended specification is presented; “continue,” a commit subject, silence, or approval of an older version is not evidence | This complete v0.2 architecture only; any material change to the decisions below reopens `H01` | Permits only local planning and execution of the 14 Class C tasks in the fixed lifecycle; it does not close any Class D gate, certify a professional finding, authorize public operation, prove implementation success, authorize push or pull-request creation, rerun CI, or authorize any other GitHub action. Section 13.4 step 8 and Section 13.5 remain specified but separately authorized |
+
+1. staged commitment as spine, reversible shearing layers as payload, and the two exercise gates;
+2. the maintenance-commons contingency-register status and zero currently qualifying units;
+3. the provisional geometric denominator, the complete nominal difference and ratio-shift disclosure, and the rationale for retaining the same-basis working denominator pending official polygons;
+4. the seeded Kruskal claim ceiling, threshold quantization, exact two-metric algorithms, and zero-jitter expectations;
+5. the five threshold kinds, categorical stops, proposed process targets, lifecycle minimums, the guarded `active`/`modify_or_hold → qualified_active_result` transition, separation of the stop/closure branch, fast-layer `R0`/`R1` removal classes, durable slow-layer decommissioning/remediation contract, and B16's explicitly partial seasonal criterion delegated to C06 without closing D13;
+6. the exact A3/A0 placement rectangles and geometry tests;
+7. contextual approximately-2.2-km Dazhongsi warning with no station geometry or positive relationship claim;
+8. the eight contextual IDs, five primary public-evidence IDs/URLs, reserved meteorological source ID, source-use limitations, and the rule that standards registration does not close D07 or D08 applicability gates;
+9. the two-register rule preserving bibliographic IDs and frozen filenames while removing biological mechanism prose;
+10. all 27 existing source records plus every Section 14.8 and C06 addition receiving the same bibliographic field shape, against the closed final total of exactly 41 records fixed in Section 14.13.1 — `41/41` migration, never a fixed `27/27` target, and never an open-ended `N`; if `sources.json` is altered before implementation by any change other than this specification, the target recomputes as observed records plus 14 and the discrepancy is reported rather than absorbed;
+11. the finite-coordinate pre-serialization contract and revised interpreter/lifecycle order;
+12. the 14 exact post-approval implementation tasks in `changelog.md`, all still unchecked, including 55-new-plus-existing-changelog accounting, literal exact-path and allowlist/role contracts, the `A-TENURE-001` unknown-record owner, G/D/H/machine gate namespaces, two-decimal half-up denominator display, spelling-variant preservation, three official approximate-area metrics, and the seasonal-source criterion action;
+13. the 17 external gates and their conditional-progress limits, none implementation-completable;
+14. the approval-only artifact lifecycle and acknowledgement that the current and corrective commit subjects are not approval;
+15. the rule that local Class C implementation and deletion of this approval artifact may begin only after new explicit approval of Section 14.12 / v0.2; push, pull-request creation, CI rerun, and every other GitHub action require further separate explicit authorization that `H01` does not grant;
+16. the closed source-inventory count contract of Section 14.13.1 — exactly `27 + 8 + 5 + 1 = 41` final records, with the five reused works adding nothing to the count — together with the fourteen frozen stable identifiers of Sections 14.8 and 14.13.2, including `BEIJING-METEOROLOGICAL-SEASONAL-QUALIFICATION`, whose admissibility rules are frozen while its publisher is deliberately not chosen and may not be invented;
+17. the deterministic decimal display contract of Section 14.13.3 — full precision with no intermediate rounding, decimal `ROUND_HALF_UP`, two decimal places with trailing zeroes preserved for green shares, percentage-point shifts, and the nominal hectare difference, four decimal places for the nominal denominator-difference percentage, and exact-display-string assertions in the denominator-discipline test;
+18. the literal-path contract of Section 14.13.4 — the rejection of the canonical-block-reference option on lifecycle grounds, and the direct enumeration of every implementation-task path in `changelog.md`, including C06's closed set of 84 distinct paths.
+
+### 14.13 Second-pass contract corrections
+
+This section is part of the same v0.2 amendment and is covered by the same `H01` gate. It repairs three contract defects found by an independent second-pass audit of Sections 14.1–14.12, and records what that pass deliberately left open. It resolves specification ambiguity only; it authorizes nothing.
+
+#### 14.13.1 Closed source-inventory count contract
+
+The final `sources.json` must contain **exactly 41 records**:
+
+| Term | Count | Authority |
+|---|---:|---|
+| Records present at this checkpoint | 27 | Verified directly against `sources.json` |
+| New contextual records | 8 | Section 14.8 table; every ID verified absent |
+| New primary/public evidence records | 5 | Section 14.8 table; every URL verified non-duplicate |
+| New public meteorological record | 1 | Section 14.6 B16, delegated to Class C task C06 |
+| **Closed final total** | **41** | This section |
+
+`SCHELLING-1971`, `PHYSARUM-MODEL-2007`, `PHYSARUM-TOKYO-2010`, `PHYSARUM-MAZE-2000`, and `HOLLING-1973` are reused and enriched in place and **add nothing to the count**; an earlier reading that treated them as additions was wrong.
+
+Two different numbers are both true and must not be conflated. **27** is a statement about the package as it stands now — it is the correct denominator for every "currently lacks the bibliographic field shape" finding, including the one in Section 14.10 and item `A02` of the ledger. **41** is the closed contract for the regenerated file — it is the correct denominator for every acceptance test. Any ledger entry that states `27/27` as a *final* acceptance target is defective and is corrected to `41/41`.
+
+The 41 is fixed against this checkpoint. If `sources.json` is altered before implementation begins by any change other than this specification, the contract recomputes as *observed records* + 14, and the discrepancy is reported rather than absorbed silently.
+
+#### 14.13.2 Frozen stable identifiers for added source records
+
+All fourteen added identifiers are frozen here so that no implementation agent selects one. The eight contextual IDs are frozen by the Section 14.8 table; the five primary/public IDs are frozen by the Section 14.8 table as amended; the meteorological ID is frozen below.
+
+| Frozen stable ID | Class | Selection status |
+|---|---|---|
+| `BEIJING-METEOROLOGICAL-SEASONAL-QUALIFICATION` | Public meteorological | ID frozen here and in Section 14.8; the **publisher and URL are not chosen by this document** |
+
+The identifier is frozen; the source is not, and this document does not invent one. C06 must select a source that satisfies every one of the following, and may not relax any of them:
+
+- it is **public and citable**, published by a meteorological authority or as an official open dataset, and reachable at a stable URL;
+- it publishes the actual variables the qualification criteria use, at a stated station or grid cell, whose location is stated and whose relationship to the site is declared **approximate and non-surveyed**;
+- it carries the same eleven fields Section 14.8 requires of every new source record, and exactly one of the two local-evidence states defined there;
+- its **allowed use is the external seasonal condition only**;
+- its **prohibited inferences** are recorded explicitly: it never evidences on-site exposure, never substitutes for a physically present named operator, never closes `D13`, and never authorizes a year-round-operation claim or a propagation review.
+
+If no source satisfying all of the above can be registered from public primary evidence, **C06 is not completed and no record is fabricated**: the criterion stays unwritten, the gap is reported in the ledger, and `D13` remains open exactly as it already is. A missing meteorological record is an honest incomplete task, never a reason to invent a threshold.
+
+The qualification criteria's own field shape is already frozen in Section 14.6 under B16 and is not restated here.
+
+#### 14.13.3 Deterministic decimal display contract
+
+The arithmetic in Section 14.3 and in the B03 disclosure is correct, but neither stated a rounding rule, which left every published percentage open to renderer-dependent drift. One rule now governs, everywhere the denominator disclosure is published, in both languages:
+
+1. **Retain full precision throughout. No intermediate rounding.** Every quotient, difference, and percentage-point shift is computed from the exact stored operands `3204005.256`, `1995497.923`, `11412825.386`, and `11400000`. Rounding happens once, at the display boundary, never before.
+2. **Rounding mode is decimal `ROUND_HALF_UP`** — decimal, not binary floating-point, and half-up, not banker's rounding.
+3. **Human-facing green shares, percentage-point shifts, and the hectare difference render at exactly two decimal places, with trailing zeroes preserved.** `17.50%` is published as `17.50%`, never as `17.5%`.
+4. **The nominal denominator-difference percentage renders at exactly four decimal places**, producing `0.1125%`.
+
+The complete closed set of display strings:
+
+| Quantity | Exact value at six decimals | Published display string |
+|---|---:|---:|
+| Land-use-1401 green share, provisional denominator | `28.073725%` | `28.07%` |
+| Land-use-1401 green share, nominal denominator | `28.105309%` | `28.11%` |
+| Land-use-1401 share shift | `0.031584` pp | `0.03` pp |
+| Designed green network share, provisional denominator | `17.484697%` | `17.48%` |
+| Designed green network share, nominal denominator | `17.504368%` | `17.50%` |
+| Designed green network share shift | `0.019671` pp | `0.02` pp |
+| Nominal denominator difference, area | `1.282539` ha | `1.28` ha |
+| Nominal denominator difference, share of nominal denominator | `0.112503%` | `0.1125%` |
+
+The six-decimal column is a cross-check for the test author, not a publication target. The test computes at full precision and asserts the **exact display strings** in the right-hand column — string equality, not numeric tolerance — so that a dropped trailing zero or a banker's-rounding renderer fails the build.
+
+This rule does not disturb Section 5.1. Section 5.1 governs **areas**, which round to `0.1` ha, and **shares**, which round to `0.01` percentage point; the two-decimal rule above is the same `0.01`-percentage-point precision for shares, and applies two decimals to the nominal *difference* `1.28` ha, which is a difference and not one of the reported areas. The reported areas remain `320.4` ha, `199.5` ha, and `1,141.3` ha at one decimal.
+
+The denominator-discipline test in C07 asserts this table. The rule changes no stored value, no metric, and no frozen computation fact.
+
+#### 14.13.4 Literal-path contract for implementation tasks
+
+`B07` requires that every implementation task name exact paths, exact tests, and observable acceptance. A second-pass sweep of the ledger found category aliases, globs, bare basenames, and count-only references still standing in several tasks. All are replaced by literal enumeration in the ledger.
+
+One option was considered and **rejected**: defining a single canonical numbered literal path block in this document and having the contract test parse that block. It fails on this package's own lifecycle. Sections 13.1, 13.4, and 14.9 all require that `regeneration-design.md` be **removed before any contract test runs**. A test that parsed a block in this file could therefore never execute. The block-reference option is unavailable, so the ledger enumerates every path directly, in `changelog.md` — a permanent package artifact that survives the removal of this one, and that Section 9.5.4 declares in the regenerated `manifest.json` as `role: changelog`, `required: true`. `changelog.md` carries no manifest entry at this checkpoint; it acquires one as part of the closed final addition set.
+
+The closed literal path set for C06 is **84 distinct paths**, composed as:
+
+| Group | Count | Where enumerated |
+|---|---:|---|
+| Participant ledger `changelog.md` | 1 | Section 9.5.3 |
+| Key-area plate files | 30 | Section 9.5.3 |
+| JSON registries and evidence outputs | 15 | Section 9.5.3 |
+| Standard-library JavaScript files | 10 | Section 9.5.3 |
+| **Subtotal — closed final addition set** | **56** | Section 9.5.3 |
+| Root JSON files | 9 | Section 9.5.2 |
+| GeoJSON files | 9 | Section 9.5.2 |
+| Existing required figures | 10 | Section 9.5.2 |
+| **Subtotal — existing files under test** | **28** | Section 9.5.2 |
+| **Total distinct literal paths** | **84** | Ledger task C06 |
+
+`sources.json` is already one of the nine root JSON files and `visual/assets/state-variable-registry.json` is already one of the fifteen JSON registries. An earlier drafting named both a second time alongside the groups that already contained them; they are members, not additions, and the total remains 84.
+
+#### 14.13.5 What this second pass did not resolve
+
+Recorded so that absence is visible rather than inferred:
+
+- the meteorological **source** is not selected, for the reasons in 14.13.2; only its identifier and its admissibility rules are frozen;
+- all seventeen external gates `D01`–`D17` remain open and non-checkable, unchanged by this section;
+- `H01` was open throughout this section's drafting; nothing *in this section* is approval, and the corrective commit subject that carries it is not approval either. Approval arrived afterwards as a separate explicit user message and is recorded in Section 14.14 and in `changelog.md`;
+- the official-source spelling variants `集聚` and `聚集` remain deliberately un-normalized, as Section 14.11 requires, because choosing one would silently correct an official publication;
+- `regeneration-design.md` remains outside the closed package grammar and undeclared in `manifest.json` by design; that is the intended state of an approval-only artifact, not a defect to repair.
+
+### 14.14 Recorded approval and separate submission authorization
+
+`H01` is **closed**. On 2026-08-14 the commissioning user sent a separate, explicit, unambiguous message approving the complete v0.2 architecture as amended by Section 14.13, in a local Claude Code session recorded as `d3daa4e5-ef55-4d4c-8734-5ecd72148652` running `claude-opus-5` at maximum effort. That message is the approval evidence; no commit subject, silence, or continuation instruction is relied upon.
+
+The same message carried **two distinct grants, which must never be derived from one another**:
+
+| Grant | What it authorizes | What it does not authorize |
+|---|---|---|
+| `H01` approval of Section 14.12 / v0.2 | Local planning and execution of the 14 Class C implementation tasks, and removal of this approval artifact at the lifecycle point specified in Sections 13.1, 13.4, and 14.9 | Closing any Class D gate, certifying a professional finding, authorizing public operation, proving implementation success, or any GitHub action whatsoever |
+| Separate submission authorization | Pushing the current branch to the user's fork; creating one new ready replacement pull request against `open-city-ai/haidian:main`; after that PR is created and verified, closing an existing pull request only if it is clearly the obsolete predecessor of this same proposal, with one concise supersession note | Touching, closing, editing, or commenting on merged PR #2396; closing unrelated work; modifying `submissions-data.js`, gallery publication data, other submissions, shared validators, or repository-wide materials |
+
+No new external or professional evidence accompanied the approval. All seventeen external gates `D01`–`D17` therefore remain open and non-checkable, exactly as Section 14.11 leaves them. Approval closes one gate — `H01` — and checks off no Class C task: each task is checked only after its named artifacts exist and its named tests pass.
+
+**Approved. Local Class C implementation and removal of this approval artifact may proceed under the fixed lifecycle; push and pull-request activity proceed under the separate authorization recorded above.**
