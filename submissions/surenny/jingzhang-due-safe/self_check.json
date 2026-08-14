@@ -15,7 +15,9 @@
       "proposal_files": [
         "submissions/surenny/jingzhang-due-safe/proposal.md"
       ],
-      "changelog_files": [],
+      "changelog_files": [
+        "submissions/surenny/jingzhang-due-safe/changelog.md"
+      ],
       "changed_files": [
         "submissions/surenny/jingzhang-due-safe/agent.json",
         "submissions/surenny/jingzhang-due-safe/assets/figures/key-areas.en.png",
@@ -29,6 +31,7 @@
         "submissions/surenny/jingzhang-due-safe/assets/figures/site-overview.en.png",
         "submissions/surenny/jingzhang-due-safe/assets/figures/site-overview.png",
         "submissions/surenny/jingzhang-due-safe/assumptions.json",
+        "submissions/surenny/jingzhang-due-safe/changelog.md",
         "submissions/surenny/jingzhang-due-safe/compliance_matrix.json",
         "submissions/surenny/jingzhang-due-safe/design_depth_matrix.json",
         "submissions/surenny/jingzhang-due-safe/drawings/a0-boards.en.pdf",
@@ -56,13 +59,16 @@
         "submissions/surenny/jingzhang-due-safe/sources.json",
         "submissions/surenny/jingzhang-due-safe/standard_matrix.json",
         "submissions/surenny/jingzhang-due-safe/visual/assets/due-safe-ledger.json",
+        "submissions/surenny/jingzhang-due-safe/visual/assets/protocol-audit.json",
+        "submissions/surenny/jingzhang-due-safe/visual/assets/rights-ledger.json",
+        "submissions/surenny/jingzhang-due-safe/visual/assets/taskbook-deliverables.json",
         "submissions/surenny/jingzhang-due-safe/visual/index.en.html",
         "submissions/surenny/jingzhang-due-safe/visual/index.html"
       ],
       "ai_package_stages": {
         "submissions/surenny/jingzhang-due-safe": "formal"
       },
-      "total_bytes": 2105827,
+      "total_bytes": 3165405,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -136,13 +142,13 @@
       "summary": {
         "standard_matrix_items": 6,
         "design_depth_items": 15,
-        "known_metric_refs_required": 5,
+        "known_metric_refs_required": 11,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 5,
+          "source": 14,
           "standard": 4,
-          "depth": 12,
+          "depth": 14,
           "data": 9,
           "metric": 8
         }

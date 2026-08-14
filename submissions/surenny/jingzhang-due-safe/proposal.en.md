@@ -1,106 +1,124 @@
 ---
-title: "京张保期台 / JINGZHANG DUE-SAFE DESK"
+title: "JINGZHANG DUE-SAFE DESK / 京张保期台"
 author_github: "surenny"
 language: "en"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "把公共服务的原始收件日与排队位置从自动核验中隔离出来：保期台先发人工回执，再让 AI 做可撤材料提示；失败不自动逾期，退出后实体受理继续。"
+summary: "Protect the first receipt event and queue position from automated verification failure: a human issues a minimal receipt before removable AI assistance, conflicts enter human HOLD, and the staffed route survives AI exit."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
 
-# 京张保期台 / JINGZHANG DUE-SAFE DESK
+# JINGZHANG DUE-SAFE DESK / 京张保期台
 
-## 设计依据与资料清单
+## Design Basis and Source List
 
-本方案是面向专业团队深化的 formal 概念包。它使用公告、智能体任务书、来源登记、标准快照和临时几何；临时边界只用于 intake 讨论，不能作为红线、审批、面积或真实服务点依据。[source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [data:geometry/site_boundary.geojson#SITE-001]
+This is a formal conceptual package for professional development. It uses the official announcement, the cleared Agent Taskbook, the public source registry, local standards snapshots, and repository provisional geometry. The rough boundary supports intake discussion only; it is not a redline, approval basis, precise area, or real service location. [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [data:geometry/site_boundary.geojson#SITE-001]
 
-公共问题不是“AI 够不够快”，而是一次机器核验失败、断网、字段不一致或供应商退出，是否会吞掉人的原始收件日、队列位置和补正机会。保期台不承诺行政期限暂停、资格结果或赔偿；它提出一条可审计的空间—服务链：先收件、再提示、人工决定、失败不自动失权、退出仍可人工受理。[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [depth:risk_missing_data]
+The public problem is not whether AI is fast. It is whether a verification failure, outage, field mismatch, or vendor exit can erase a person's first receipt event, queue position, and correction opportunity. The proposal makes no promise of statutory deadline suspension, eligibility, acceptance, or compensation. It proposes an auditable chain: receive first, assist second, assign the decision to a competent person, prevent adverse automation during conflict, and preserve a staffed route after AI exits. [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [depth:risk_missing_data]
 
-![保期台空间与证据链](assets/figures/site-overview.png)
+![Due-safe spatial and evidence chain](assets/figures/site-overview.en.png)
 
-## 三层范围工作框架
+## Three-Level Scope Framework
 
-统筹研究范围研究公共时间权、AI 创新生态和机构责任；总体设计范围把保期台组织为“保期脊”，由实体取号桌、无屏等候、人工补正、独立复核和副本撤换清单组成；重点区域范围分别承载合成桌演、人工受理和失败复盘。三层范围仍须在正式边界发布后重算。[source:PROCESSED-FACT-PACK] [depth:three_level_scope_framework] [metric:site_area_sqm]
+The coordinated research area studies public time, AI innovation, and institutional responsibility. The overall design area forms a Due-Safe Spine of receipt desk, no-screen waiting, staffed correction, independent review, and channel-closeout register. The key areas host synthetic validation, public-service experience, and version closeout. Research asks who bears time loss; the overall layer makes responsibility visible in front- and back-of-house space; key-area prototypes test whether receipt, correction, review, and exit work in practice. All submitted areas are calculations from rough provisional polygons and must be recomputed from official geometry. [source:PROCESSED-FACT-PACK] [depth:three_level_scope_framework] [metric:site_area_sqm]
 
-![三层范围与用地结构](assets/figures/land-use-structure.png)
+![Three-level scope and functional structure](assets/figures/land-use-structure.en.png)
 
-## 统筹研究范围产业与未来城市研究
+![Three conceptual key areas](assets/figures/key-areas.en.png)
 
-保期台把高校、企业、社区、公共服务机构、无障碍与法律专业者组织成“公开规则—人工回执—可撤提示—专业决定—退出复原”的创新链。AI 最小角色是比较经授权的公开文本/字段，标记渠道、版本、责任人和适用范围不一致，生成供人工修改的副本地图；AI 不判断资格、诚信、紧急程度、谁应占名额或哪份规则具有法律效力。[source:SOURCE-REGISTRY] [standard:GENERATIVE-AI-INTERIM-MEASURES]
+## Coordinated Research Area: Industry and Future City Research
 
-命名识别使用“站台回执”视觉语汇：纸票形状、金色日期线和蓝色人工入口；Logo 仅为本方案原创方向，不使用他人字体、图片、商标或标识。国际传播、年度活动和开发者社区均为概念建议，不是已确定活动。[depth:overall_spatial_structure]
+Universities, enterprises, communities, public-service institutions, accessibility reviewers, and legal/domain professionals form an open-rule → human-receipt → removable-assistance → professional-decision → exit-restoration chain. AI may compare authorized public rules, fields, versions, owners, and scopes, and draft an editable copy map. It may not determine eligibility, honesty, urgency, priority, legal effect, or the authoritative rule. [source:SOURCE-REGISTRY] [standard:GENERATIVE-AI-INTERIM-MEASURES]
 
-## 总体设计范围城市更新与控规深度城市设计
+### Agent.1 — Identity and the Three Areas–Two Wings Loop
 
-保期脊优先嵌入既有首层、社区服务前厅或公共空间边缘，不新增道路红线，不指认真实机构。空间顺序固定为：普通入口 → 纸面/电话回执 → 无屏等候 → 人工补正 → 独立复核 → 后场副本清单。任何数字入口都不能位于人工入口之前；退出时撤去临时设备，保留纸票、电话、人工版本表和去标识台账。[data:geometry/public_space.geojson#PUBLIC-001] [data:geometry/buildings.geojson#BLDG-001] [depth:overall_spatial_structure]
+The original mark combines two parallel rails with one open receipt notch. The rails represent the ordinary human path and removable AI assistance; the notch means a competent human decision is still open. It never means acceptance, entitlement, or automatic deadline suspension. The Centennial Jing-Zhang Culture Belt contributes timetable, handover, and safe-stop discipline; the Urban AI Life Experience Belt makes the no-screen and staffed routes tangible; the AI Convergence Innovation Belt opens synthetic fixtures to universities and enterprises. Zhongzhiyuan validates, AI Origin Community demonstrates, Dazhongsi reviews closeout, Zhongguancun Technology Service Wing supports professional services, and Xiaoyuehe Scenario Empowerment Wing carries an accessible public experience route. External regional links remain research invitations, not confirmed partnerships. [source:TASKBOOK-DELIVERABLES] [depth:overall_spatial_structure]
 
-用地、建筑、道路、绿地、公共空间和分期图层均是设计提案，不是法定控制。FAR、高度、权属、道路红线、消防、文保和市政条件保持 unknown，待正式资料和专业复核后再决定保留、改造、移位或删除。[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [depth:retain_renovate_demolish]
+### Agent.2 — Comparative Cases and Full-Stack Ecosystem
 
-## 重点区域详细设计
+Six first-party institutional references ask mechanism questions only: time-bounded urban experiments in Smart Kalasatama; public purpose, impact, and contact in the Amsterdam Algorithm Register; and system cards and feedback in the Helsinki AI Register. [source:CASE-SMART-KALASATAMA] [source:CASE-AMSTERDAM-ALGORITHM-REGISTER] [source:CASE-HELSINKI-AI-REGISTER] UK Government Design Principles add user needs, Punggol Digital District adds district–education–community integration, and NIST AI RMF adds a continuing risk lifecycle. [source:CASE-UK-GOVERNMENT-DESIGN-PRINCIPLES] [source:CASE-PUNGGOL-DIGITAL-DISTRICT] [source:CASE-NIST-AI-RMF] They remain background comparisons and cannot support local facts, performance, or institutional transfer.
 
-| 区域 | 概念任务 | 失败后的公共结果 |
+The translated ecosystem is public rule → synthetic fixture → small/offline comparison → accessibility and legal review → controlled prototype → version closeout. Space uses reversible interior components; capital is only a milestone-gated concept; talent pairs service, accessibility, legal, and engineering roles; compute remains small and offline; data is limited to public rules and synthetic records; scenes remain sandboxed until an institution-approved pilot exists. [source:TASKBOOK-DELIVERABLES] [depth:renewal_project_list]
+
+## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
+
+The Due-Safe Spine fits existing ground floors, service foyers, or public-space edges without proposing a road redline or real institution. Its fixed sequence is ordinary entrance → paper/telephone receipt → no-screen waiting → staffed correction → independent review → back-office channel register. A digital entrance cannot precede the human entrance. On exit, temporary devices disappear while paper, telephone, a human version table, and a de-identified register remain. [data:geometry/public_space.geojson#PUBLIC-001] [data:geometry/buildings.geojson#BLDG-001] [depth:overall_spatial_structure]
+
+Land use, buildings, roads, green/public space, and phasing are conceptual design layers, not statutory controls. FAR, height, ownership, redlines, fire, heritage, utilities, and capacity remain unknown pending official data and professional review. [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [depth:retain_renovate_demolish]
+
+## Detailed Design of Key Areas
+
+| Area | Conceptual task | Public result after failure |
 |---|---|---|
-| 众智园AI自主创新加速区 | 规则冲突与供应商退出的无个人数据桌演；比较网页、纸表、热线、机器人、API 六类副本 | 冲突期间保持 HOLD，不自动退回；无法核清则人工/纸面办理 |
-| 北京AI原点社区 | 保期回执台、无屏补正桌、电话入口与争议封存柜；让无手机和跨语言者完成同一受理步骤 | 原始收到时间和队列号保留，补正由具名责任人处理 |
-| 大钟寺AI产业聚集区 | 独立复核间、机构副本撤换清单和去标识失败年鉴 | 逐项关闭下游副本；AI 退出后实体受理继续 |
+| Zhongzhiyuan AI Acceleration Area | Synthetic conflict and vendor-exit tabletop across signage, paper, hotline, web/app, robot, and API copies | Conflict enters human HOLD; unresolved authority falls back to paper/staffed service |
+| Beijing AI Origin Community | Receipt desk, no-screen correction, telephone route, and dispute envelope for no-device and cross-language users | The first receipt event and queue number remain visible; a named person handles correction |
+| Dazhongsi AI Industry Cluster | Independent review room, institutional copy-closeout register, and de-identified failure annual | Known downstream copies close one by one; a staffed route survives AI exit |
 
-三处区域是 `provisional_constraint` 概念载体，不是实际窗口、权属或施工点。[data:geometry/key_areas.geojson#PROV-KEY-001] [data:geometry/key_areas.geojson#PROV-KEY-002] [data:geometry/key_areas.geojson#PROV-KEY-003] [depth:three_key_area_detailed_design]
+All three are provisional conceptual carriers, not actual counters, ownership, or construction sites. [data:geometry/key_areas.geojson#PROV-KEY-001] [data:geometry/key_areas.geojson#PROV-KEY-002] [data:geometry/key_areas.geojson#PROV-KEY-003] [depth:three_key_area_detailed_design]
 
-## AI 创新生态、人才画像与 AI+ 场景
+## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
-受影响者包括无手机居民、跨语言使用者、残障人士、照护者、夜间劳动者、一线受理员、专业审核人、维护人员和未来接手机构。具名决定角色是当班受理责任人、事项专业责任人、规则发布责任人和独立复核人；AI、供应商、普通前台和单一标牌不得单独改变资格或期限。[metric:human_role_count] [depth:public_service_facilities]
+Personas include residents without smartphones, cross-language users, disabled people, carers, night workers, frontline intake staff, professional reviewers, maintainers, and future successor institutions. Named roles are intake owner, professional decider, rule publisher, and independent reviewer. AI, a vendor, ordinary frontline staff, or a single sign may not change eligibility or deadlines alone. [metric:human_role_count] [depth:public_service_facilities]
 
-| 场景卡 | 空间载体 | 机制与人工底线 |
+| Card | Spatial carrier | Mechanism and human floor |
 |---|---|---|
-| 01 保期回执台 | AI 原点社区 | 收到时间、队列号、缺口说明先由人工签发 |
-| 02 规则冲突桌演 | 众智园 | 合成六类渠道冲突，暂停不利自动动作 |
-| 03 无屏补正桌 | AI 原点社区 | 纸面、电话、多语和人工与数字入口同队列 |
-| 04 队列保全演练 | AI 原点社区 | 重复提交、字段冲突不重置原始队列号 |
-| 05 独立复核间 | 大钟寺 | 专业人员决定补正、转介、受理或拒绝 |
-| 06 副本撤换清单 | 大钟寺 | 现场、网页、热线、机器人和 API 逐项回执 |
-| 07 争议封存柜 | AI 原点社区 | 最小必要纸面记录，不公开个人事项 |
-| 08 服务退出桌 | 三处重点区 | 关闭 AI 后复原人工、电话和纸面路径 |
-| 09 多语缺口卡 | AI 原点社区 | AI 翻译可编辑，责任人确认内容 |
-| 10 机构复盘年鉴 | 大钟寺 | 只公开去标识失败类型和恢复进度 |
-| 11 无手机同入口 | AI 原点社区 | 不因拒绝数字入口降低服务等级 |
-| 12 截止前拥堵桌演 | 众智园 | 先收件、后补正，不以自动拒绝换速度 |
+| 01 Minimal receipt desk | AI Origin Community | A human issues receipt class, queue ID, and gap note |
+| 02 Rule-conflict tabletop | Zhongzhiyuan | Synthetic channel conflicts pause adverse automation |
+| 03 No-screen correction | AI Origin Community | Paper, telephone, language, and staffed routes share the queue |
+| 04 Queue-preservation test | AI Origin Community | Duplicate/field conflict cannot reset the first queue event |
+| 05 Independent review room | Dazhongsi | A competent person decides correction, referral, acceptance, or refusal |
+| 06 Copy-closeout register | Dazhongsi | Signage, web, hotline, robot, and API copies close individually |
+| 07 Dispute envelope | AI Origin Community | Minimal paper evidence without publishing the matter |
+| 08 Service-exit table | All three | Disable AI and repeat the same task by staff/telephone/paper |
+| 09 Multilingual gap card | AI Origin Community | Machine translation remains editable and human-approved |
+| 10 Institutional learning annual | Dazhongsi | Publish de-identified failure types and restoration progress only |
+| 11 Same entrance without a phone | AI Origin Community | Rejecting digital service cannot lower service level |
+| 12 Deadline-queue tabletop | Zhongzhiyuan | Receive first and correct later; never trade adverse rejection for speed |
 
-其中 02、04、05 是产业/专业测试验证场景。最小原型使用六个合成人物和六类合成渠道，不使用真实案件、身份、服务记录或个人轨迹。[metric:synthetic_case_count] [metric:channel_closeout_fixture_count] [depth:ai_scenario_system]
+Cards 02, 04, and 05 are industry/professional validation scenes. Six synthetic personas and 42 channel fixtures contain no real identity, case, service record, or trace. Xiaoyuehe Scenario Empowerment Wing becomes a reversible public journey: inspect a synthetic receipt, complete a no-screen gap card, then disable AI and repeat the task. Participation must remain voluntary and removable. [metric:synthetic_case_count] [metric:channel_closeout_fixture_count] [source:PROTOCOL-AUDIT] [depth:ai_scenario_system]
 
-## 用地、建筑规模与拆改留方案
+## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
-保期台优先“留”既有人工服务前厅，按“改”加入无障碍桌、纸票柜、版本墙和隔音复核间，只有在专业确认后才讨论“新”建可逆组件。`metrics.json` 中的面积和比例只从提交 GeoJSON 复算；强度、容量、高度、产权和工程结论保持 unknown。[data:geometry/land_use.geojson#LU-001] [metric:building_footprint_area_sqm] [depth:development_intensity_controls]
+Retain existing staffed foyers; renovate them with an accessible desk, paper cabinet, version wall, and acoustic review booth; discuss new reversible components only after professional confirmation. Geometry areas and ratios are low-confidence calculations from participant design layers and the rough provisional boundary. They are not buildable quantity or planning-control indicators. Height, ownership, seismic, fire, heritage, utilities, and engineering remain unknown. [data:geometry/land_use.geojson#LU-001] [metric:building_footprint_area_sqm] [depth:development_intensity_controls]
 
-## 交通、轨道、市政与公共服务设施
+## Transport, Rail, Municipal Infrastructure, and Public Services
 
-保期脊与慢行、轨道站点和普通服务入口相接，但不让排队侵入无障碍净通行。纸面、电话、人工和静态导视形成断网时的同任务路径；设备、电源和网络均为可拆、可替换组件。任何紧急安全处置仍由适用的专业责任人决定。[data:geometry/roads.geojson#ROAD-001] [depth:traffic_rail_slow_parking]
+The spine connects walking, rail interfaces, and ordinary service entrances without placing queues in an accessible clear path. Paper, telephone, staff, and static signs complete the same task during an outage. Devices, power, and networking are removable components and cannot leave a new barrier, gate, or exclusive sign. Roads express relationships only; no engineering alignment, station flow, fire clearance, utility, lighting, drainage, or timetable claim is made. [data:geometry/roads.geojson#ROAD-001] [depth:traffic_rail_slow_parking]
 
-![交通与蓝绿公共空间](assets/figures/mobility-bluegreen.png)
+![Mobility, accessibility, and blue-green public space](assets/figures/mobility-bluegreen.en.png)
 
-## 蓝绿空间、公共空间与城市风貌
+## Blue-Green Network, Public Space, and Urban Character
 
-公共空间表达“排队不占常路、回执不暴露个人、AI 关闭仍能找到人”。纸票金线、蓝色人工入口和低对比度状态牌构成克制的京张识别系统；不把屏幕、摄像头或数据柱当作地标。[data:geometry/green_space.geojson#GREEN-001] [data:geometry/public_space.geojson#PUBLIC-001] [depth:blue_green_public_space]
+Public space communicates three rules: queues do not occupy the ordinary path, receipts do not expose personal matters, and people can still find a person when AI is off. Three reversible conceptual landmarks support this: FIRST RECEIPT explains receipt/advice/decision in Zhongzhiyuan; HUMAN ENTRY BEACON marks the no-screen staffed route in AI Origin Community; CLOSEOUT CLOCK shows de-identified copy closure and unresolved ownership in Dazhongsi. The component library contains a paper receipt rail, no-screen bench, accessible correction desk, version wall, independent booth, and removable beacon. East–west stitching and north–south continuity are only accessible walking and staffed-service relationships pending heritage, green-space, traffic, and ownership review. [source:TASKBOOK-DELIVERABLES] [data:geometry/green_space.geojson#GREEN-001] [depth:blue_green_public_space]
 
-## 更新项目清单、实施政策与分期计划
+The cultural narrative translates railway timetable, handover, and safe stop into public-service accountability: one visible route, a named owner at each handover, and a safe HOLD when evidence is insufficient. Zhongguancun culture contributes open validation; AI culture requires removable models, human judgment, and correctable versions. The international line is “Keep the receipt. Name the decision. Preserve the human route.” It avoids claims that the project can freeze a legal clock. [source:TASKBOOK-DELIVERABLES] [depth:height_massing_character]
 
-近期先做合成桌演和纸面协议；中期由机构、专业团队和受影响者共同确认真实程序、权属、消防、无障碍、隐私和运营责任；长期才可能讨论小范围受控试验。项目必须有到期日、人工接管、删除/退出步骤和独立复核；没有这些条件就保持 OFF。分期仅是概念路径，不是投资、审批或实施承诺。[data:geometry/phasing.geojson#PHASE-001] [depth:phasing_implementation]
+## Renewal Projects, Implementation Policy, and Phasing
 
-## 指标体系、面积复算与合规矩阵
+Near term: synthetic tabletop and paper protocol. Middle term: institutions, professionals, and affected people confirm procedure, authority, fire, accessibility, privacy, retention, and operations. Long term: a small controlled pilot may be discussed only after those gates. Every project needs an owner, due date, human takeover, deletion/exit, independent review, and de-identified outcome. Otherwise it remains OFF. [data:geometry/phasing.geojson#PHASE-001] [depth:phasing_implementation]
 
-结构化指标包括六个合成案例、42 个渠道夹具、7 类渠道、4 个具名人工角色、100% 合成离线完成和 100% 不利自动动作隔离；这些是桌演协议断言，不是现场绩效或法律效果。[metric:synthetic_case_count] [metric:channel_type_count] [metric:human_role_count] [metric:offline_completion_rate] [metric:adverse_action_isolation_rate]
+The conceptual annual loop is Q1 public-rule inventory clinic, Q2 synthetic failure tabletop, Q3 accessible prototype week, and Q4 version-closeout forum. Each has a stop gate. Developers maintain synthetic fixtures, not applications; scene opening requires institution, accessibility, and independent review; international exchange shares reproducible methods only. The conversion path is public problem → synthetic validation → professional review → removable prototype → public correction, not a commitment to funding, recruitment, events, or partnership. [source:TASKBOOK-DELIVERABLES] [depth:phasing_implementation]
 
-五字段差异审计确认：服务对象是可能因机器失败失去公共时间的人；完整任务新增原始日期/队列保全和机构副本撤换；空间载体是实体回执—补正—复核链；权利把“判断哪份是真的”的成本移回发布机构；失败结果是待人工而非自动逾期。当前未发现合并方案完整覆盖此链，但投稿前仍须复跑最新 main、Issue 与 PR 审计。[depth:metrics_recalculation]
+## Metrics, Area Recalculation, and Compliance Matrix
 
-![指标与证据关系](assets/figures/metrics-evidence.png)
+Structured protocol metrics are six synthetic cases, 42 channel fixtures, seven channel types, four named roles, 100% tabletop AI-off completion, and 100% isolation from adverse automation. They are protocol assertions, not field performance or legal effect. Spatial values are low-confidence recomputations from participant layers and provisional rough geometry; they must be replaced with official polygons and field data. [metric:synthetic_case_count] [metric:channel_type_count] [metric:human_role_count]
 
-## 风险、版权与合规说明
+The prototype applies only to low-risk appointment requests, public-program expressions of interest, and general information correction. Emergency dispatch, law enforcement, medical triage, statutory deadline determination, benefit eligibility, and safety-critical authorization are excluded. Its state machine is ARRIVED → HOLD_FOR_HUMAN → CORRECTION_REQUESTED / REFERRED → DECIDED → CLOSED_OUT. ARRIVED is a minimal receipt event, not legal receipt or entitlement. RACI, a 30-day synthetic-log deletion rule, forbidden fields, emergency exception, complaint route, and six exit conditions are in `protocol-audit.json`; one failed condition stops the experiment. [source:PROTOCOL-AUDIT] [depth:risk_missing_data]
 
-若回执成为新的举证门槛、无法区分伪造材料、冲突隔离妨碍紧急安全、责任人无法关闭下游副本，或专业者认为不能普遍保护期限，方案立即缩小或拒绝。不得把“保期”写成法律上的信赖保护、期限恢复、福利资格或赔偿。所有图件由本包合成生成，数据来自仓库公开/清权资料；无外部人物、案件、敏感空间或未授权标识。[standard:BARRIER-FREE-ENVIRONMENT-LAW] [standard:GENERATIVE-AI-INTERIM-MEASURES] [depth:risk_missing_data]
+The five-field convergence audit distinguishes affected users, end-to-end task, spatial carrier, named right/decision, and failure result. Current evidence found no merged package covering this full chain, but latest main, Issues, and PRs must be searched before every revision. [depth:metrics_recalculation]
 
-## 参考资料
+![Metrics, confidence, and audit relationship](assets/figures/metrics-evidence.en.png)
+
+## Risk, Copyright, and Compliance
+
+Stop or narrow the concept if the receipt becomes a new proof burden, forgery cannot be handled, HOLD obstructs urgent safety, a named owner cannot close downstream copies, or professional review rejects generalized time protection. “Due-safe” does not mean reliance protection, deadline restoration, eligibility, acceptance, or compensation. A competent professional decides emergency safety under the applicable procedure. [standard:BARRIER-FREE-ENVIRONMENT-LAW] [standard:GENERATIVE-AI-INTERIM-MEASURES] [depth:risk_missing_data]
+
+All diagrams are original deterministic outputs. Pillow 12.3.0 uses Noto Sans CJK SC and DejaVu Sans; WeasyPrint 69.0 derives the PDFs. Author, tool, version, date, license, and external-material status are listed in `rights-ledger.json`. Chinese and English Markdown, HTML, PDFs, and text-bearing figures are generated separately and checked for script and non-identical hashes. [source:RIGHTS-LEDGER]
+
+## References
 
 - `brief/site-package/design_brief.json`
 - `brief/site-package/agent_taskbook.json`
@@ -108,3 +126,8 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 - `docs/review-rubric.md`
 - `docs/formal-submission-guide.md`
 - `brief/site-package/standards/references/`
+- `visual/assets/due-safe-ledger.json`: synthetic cases and channel fixtures only.
+- `visual/assets/taskbook-deliverables.json`: original identity, ecosystem, landmark, culture, regional, and annual-operation design.
+- `visual/assets/protocol-audit.json`: synthetic applicability, state, RACI, privacy, emergency, retention, complaint, and exit contract.
+- `visual/assets/rights-ledger.json`: author/tool/font/license/dependency record.
+- Missing evidence remains official boundaries, precise key-area polygons, redlines, surveyed buildings, ownership, utilities, fire, heritage, real procedures, and affected-user testing. These gaps require recomputation and professional confirmation.
