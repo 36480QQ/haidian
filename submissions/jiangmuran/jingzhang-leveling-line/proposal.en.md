@@ -447,6 +447,10 @@ The naming system is an extensible numbering grammar rather than a slogan:
 | Network | Jing-Zhang leveling network | JZ-NET | The governance network of the whole line |
 | Origin | Origin benchmark | **BM-0** | Public evidence hub; the network's starting elevation |
 | First order | First-order benchmark | BM-1, BM-2 (the origin BM-0 is listed separately) | The three key areas, re-measured annually |
+
+![FIG.29 The annual first-order closure: how long a route actually takes](assets/figures/closure.en.png)
+
+**The first order was the last tier without a sheet, and it is not really a place but an event.** Once a year a closing route is run, and everything this proposal asks to be trusted on comes out of that run; every stone, every kerb and every cost row exists so that it can happen and be believed. So FIG.29 draws the run, and does something no sheet here had done: **it derives a duration from geometry and checks it against the cost table.** The 4.0–6.0 h for a first-order session in `operations.json` was written into the model by hand. The route lengths were not — RT-N's 5,401.8 m and RT-S's 5,177.0 m come out of the shipped geometry. Divided by a 50 m sight into 55 and 52 setups, at 5 minutes each, plus the walk back along the spine, they come to **5.8 h and 5.5 h — inside that band and tight against its upper edge**. The build asserts it: lengthen the geometry or edit the band and it stops. **Before this sheet, the hours in the cost table rested on nothing but their author.** The sight distance and the minutes per setup are chosen and registered as `A-SURVEY-001` in the same commit.
 | Second order | Second-order benchmark | BM-2x | Nodes in the two wings, re-measured quarterly |
 | Third order | Third-order benchmark | BM-3xx | Community and station level, re-measured monthly |
 
@@ -1473,12 +1477,12 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-75 entries. By finder:
+76 entries. By finder:
 
 | Found by | Count | What it says |
 |---|---|---|
 | Independent audit | 25 | The audit was run against the shipped package, not a draft |
-| The author | 38 | Found while working |
+| The author | 39 | Found while working |
 | This package's own gate | 8 | Caught at build time — which is what a gate is for |
 | **Reviewers outside this proposal** | **4** | [@anselasimov-web](https://github.com/anselasimov-web) on PR #1002; [@147228](https://github.com/147228) on PR #1065; [@Sonike](https://github.com/Sonike) on Issue #950; [@147228](https://github.com/147228) on Issue #950 / PR #1190 |
 
@@ -1496,7 +1500,7 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 |---|---|
 | **The check measured the convenient thing** | **16** |
 | **A deliverable was not looked at before shipping** | **11** |
-| **Two copies of one thing drifted** | **9** |
+| **Two copies of one thing drifted** | **10** |
 | Geometry did not mean what it said | 4 |
 | A number outlived the sentence holding it | 4 |
 | A reference did not resolve | 4 |
@@ -1555,11 +1559,11 @@ An authorisation statement a reviewer cannot verify is not a statement. Each row
 
 <!-- LEDGERCOUNT:BEGIN -->
 
-**The file-level ledger sits outside the review input, so its result is brought in here.** `build_review_input` sends `proposal.md` and eight JSON files; neither `report/copyright_statement.md` nor `visual/assets/rights_ledger.json` is among them. **A rights ledger the reviewer structurally cannot open is, from the reviewer's position, exactly the unverifiable assertion this package objects to elsewhere.** All **124 shipped files** carry a clearance class; a file without one fails the build:
+**The file-level ledger sits outside the review input, so its result is brought in here.** `build_review_input` sends `proposal.md` and eight JSON files; neither `report/copyright_statement.md` nor `visual/assets/rights_ledger.json` is among them. **A rights ledger the reviewer structurally cannot open is, from the reviewer's position, exactly the unverifiable assertion this package objects to elsewhere.** All **126 shipped files** carry a clearance class; a file without one fails the build:
 
 | Clearance class | Files |
 |---|---|
-| `author-originated` | 102 |
+| `author-originated` | 104 |
 | `provisional-only-with-stated-limit` | 9 |
 | `author-originated-measurement` | 8 |
 | `author-originated-with-embedded-fonts` | 4 |
@@ -1614,7 +1618,7 @@ One point of citation discipline deserves stating plainly: **the cases are used 
 
 <!-- FIGINDEX:BEGIN -->
 
-There are 29 sheets, numbered FIG.00 to FIG.28. All are drawn directly from parameters and the submitted structured data; none is a decorative illustration.
+There are 30 sheets, numbered FIG.00 to FIG.29. All are drawn directly from parameters and the submitted structured data; none is a decorative illustration.
 
 | Sheet | Content | What to read on it |
 |---|---|---|
@@ -1647,6 +1651,7 @@ There are 29 sheets, numbered FIG.00 to FIG.28. All are drawn directly from para
 | FIG.26 | BM-2x, the second order: a scenario has to be stoppable, and that takes ground | The two wings carry the second order — it appears in the naming table, the cost table and the resource table, and had never been drawn. The difference is not the stone (KIT-01, as everywhere) but that what runs here is a scenario against real users, so it has to be stoppable. From FIG.24's ≤ 6 km/h the halt distance is **2.59 m**, and no fixed object or waiting area may stand within it. **The reaction time and deceleration are chosen by this proposal and registered as A-DEVICE-002 in the same commit** |
 | FIG.27 | One reading: where a person stands, and whether they block the way | The whole participation argument rests on anyone being able to walk up to a benchmark and take a reading, and no sheet had drawn the four minutes that person spends standing there. Working back from the legible-height ratio this package already publishes, a 12 mm cap height gives a **3.0 m** reading distance, clear of the 1,500 mm route. At 6 mm it falls to 1.5 m and the reader stands in the path — **the plate stays legible and the footway stops working**. Cap height chosen, registered as A-PLATE-001 in the same commit |
 | FIG.28 | Third order: the most numerous tier, and more than one reader | The origin and the second order each have a sheet; the third did not — and it is the most numerous tier and the one an ordinary resident actually stands at. It also inherits the question FIG.27 opened and left: that sheet's 3.0 m distance is **one person's** position. From a 600 mm plate and a 30° off-axis limit the legible cone is **3.46 m** and **5 people** can read at once; a class of 30 takes 6 rounds, about 4 minutes — **that part is solved by taking turns, not by ground**. Three chosen inputs, registered as A-READ-001 in the same commit |
+| FIG.29 | The annual first-order closure: how long a route actually takes | The first order was the last tier without a sheet — and it is not a place but **an event**. From the shipped geometry, a 50 m sight and 5 minutes a setup, RT-N needs **55 setups** and RT-S **52**, together with the walk back **5.5–5.8 h** — **inside the 4.0–6.0 h the cost table publishes, and tight against its upper edge**. The build asserts the two stay compatible: lengthen the geometry or edit the band and it stops. Two chosen inputs registered as A-SURVEY-001 |
 
 <!-- FIGINDEX:END -->
 
