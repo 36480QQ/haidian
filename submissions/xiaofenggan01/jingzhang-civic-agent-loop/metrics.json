@@ -610,6 +610,19 @@
       "assumptions": [
         "与 risk.json schema 八个固定维度一一对应"
       ]
+    },
+    "photo_register_field_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": [
+        "report/narrative.md"
+      ],
+      "formula": "count of photo register required fields",
+      "confidence": "high",
+      "assumptions": [
+        "登记制度，不下载图片，规避许可风险"
+      ]
     }
   }
 }
