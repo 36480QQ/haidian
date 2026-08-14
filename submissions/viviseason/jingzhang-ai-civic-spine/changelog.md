@@ -1,5 +1,23 @@
 # 方案迭代记录
 
+## v0.3 - 2026-08-14
+
+### 改动摘要
+
+- 已核验 `viviseason/haidian` 为 `open-city-ai/haidian` 的 fork，远端投稿分支存在，并创建 Draft PR [#2573](https://github.com/open-city-ai/haidian/pull/2573)。Draft 状态下 `submission-validation` 被跳过，不把该状态误记为独立 CI 通过。
+- 将最新 `upstream/main`（`67539db2`）无冲突合并到投稿分支。合并输出中的数千文件是上游累计更新；相对最新上游的 PR 差异仍仅为本投稿目录中的 41 个文件。
+- 修复上游同步后投稿目录被 sparse checkout 隐藏的问题，并将 `submissions/viviseason/jingzhang-ai-civic-spine` 固定加入本地稀疏检出范围。
+- 使用上游最新脚本刷新 manifest 的 Git blob 哈希并重跑自检：确定性、空间、视觉和专业证据四道门禁均为 PASS；本地 participant preflight 为 PASS，`--check-push` 仅因当前执行环境无法访问 GitHub 而失败。
+
+### 暂未解决或待复核事项
+
+- Draft PR 仍需从可访问 GitHub 的 VPN 终端推送本轮上游合并与验证更新，然后复核远端分支 SHA 和 PR 状态。
+- 正式英文等义翻译、专业 A3/A0 图纸、五张专业证据图、三处重点区深化及官方边界资料仍是正式专业评分前的已知阻塞项；本轮未改变其状态。
+
+### 公开资料与合规说明
+
+- 本轮只同步仓库规则和验证元数据，未新增外部事实资料，也未提升 provisional 数据的权威等级。
+
 ## v0.2 - 2026-08-14
 
 ### 改动摘要
