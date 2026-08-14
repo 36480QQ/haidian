@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JINGZHANG KEEP APART / 京张不并人 - proposal report</title>
+<style>
+:root {
+  --ink: #172033;
+  --muted: #667085;
+  --line: #d7dee8;
+  --paper: #ffffff;
+  --bg: #f4f7fa;
+  --accent: #245b8f;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.75;
+}
+main {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 42px 24px 72px;
+  background: var(--paper);
+  min-height: 100vh;
+  box-shadow: 0 0 0 1px rgba(23, 32, 51, 0.05);
+}
+.hero {
+  border-bottom: 3px solid var(--accent);
+  padding-bottom: 24px;
+  margin-bottom: 30px;
+}
+h1 { font-size: 34px; line-height: 1.22; margin: 0 0 10px; }
+h2 { font-size: 25px; margin: 34px 0 12px; border-top: 1px solid var(--line); padding-top: 24px; }
+h3 { font-size: 20px; margin: 26px 0 10px; }
+p, li { font-size: 16px; }
+blockquote {
+  margin: 18px 0;
+  padding: 12px 18px;
+  border-left: 4px solid var(--line);
+  color: var(--muted);
+  background: #f8fafc;
+}
+code {
+  background: #eef2f7;
+  color: #1d4f7a;
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+}
+.summary { color: var(--muted); font-size: 17px; }
+.translation-link a { color: var(--accent); font-weight: 700; }
+.proposal-table { margin: 20px 0 26px; overflow-x: auto; }
+.proposal-table table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 520px;
+  font-size: 15px;
+}
+.proposal-table th, .proposal-table td {
+  border: 1px solid var(--line);
+  padding: 9px 12px;
+  text-align: left;
+  vertical-align: top;
+  line-height: 1.6;
+}
+.proposal-table th { background: #eef2f7; color: var(--ink); font-weight: 700; }
+.proposal-table tbody tr:nth-child(even) { background: #fafcfe; }
+.proposal-table .align-center { text-align: center; }
+.proposal-table .align-right { text-align: right; }
+.proposal-figure {
+  margin: 22px 0 28px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+  background: #f8fafc;
+}
+.proposal-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.proposal-figure figcaption {
+  padding: 10px 14px;
+  color: var(--muted);
+  border-top: 1px solid var(--line);
+  font-size: 14px;
+}
+.evidence {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  margin: 0 0.12em;
+  border-bottom: 1px solid #8aa8c3;
+  color: #315f87;
+  font-size: 0.68em;
+  font-weight: 650;
+  line-height: 1.35;
+  vertical-align: super;
+}
+@media (max-width: 720px) {
+  main { padding: 26px 16px 52px; }
+  h1 { font-size: 26px; }
+  h2 { font-size: 21px; }
+}
+</style>
+</head>
+<body>
+<main>
+<section class="hero">
+<h1>JINGZHANG KEEP APART / 京张不并人</h1>
+<p class="summary">A conceptual public-service and spatial prototype that keeps two people on separate local service paths when machine identity linkage is uncertain.</p>
+<p class="translation-link"><a href="proposal.html">阅读中文版本</a></p>
+</section>
+<h1>JINGZHANG KEEP APART / 京张不并人</h1>
+<h2>Summary: Keep two paths when the machine is uncertain</h2>
+<p>This proposal addresses a narrow but serious public-service risk: two people can be merged by a system because of a shared name, shared contact, transliteration, name change, or an incorrectly associated device. A reused link can carry one person&#x27;s missing documents, complaint, appointment, or risk signal into another person&#x27;s service journey. <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="AGENT-TASKBOOK" title="Source: AGENT-TASKBOOK">Source</sup> <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="public_interest" title="Depth: public_interest">Depth</sup></p>
+<p>The concept is not a universal identity centre or stronger authentication. It is a reversible spatial-service prototype: a person can say “this record is not mine”; a frontline worker freezes the disputed cross-service link and new automated actions without deleting either source record; each source-record owner checks only their own provenance; an independent reviewer decides whether to split or keep the records separate; known downstream recipients receive correction or withdrawal receipts; and both people retain local human, paper, and telephone service. <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/public_space.geojson#KEEP-APART-001" title="Spatial data: geometry/public_space.geojson#KEEP-APART-001">Spatial data</sup> <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="record_separation_node_count" title="Metric: record_separation_node_count">Metric</sup></p>
+<p>The safe default is temporary duplication rather than merging two people into one. AI may flag conflicts, draw an authorised data-flow map, and draft a downstream list for human editing. Paper provenance cards, separation receipts, and named service owners still work when AI is switched off. All spatial moves are conceptual suggestions for professional teams, not identity rules, administrative remedies, approvals, or implementation commitments.</p>
+<h2>Five-field public chain and minimum prototype</h2>
+<div class="proposal-table"><table><thead><tr><th>Field</th><th>Verifiable definition</th><th>Public result after failure</th></tr></thead><tbody><tr><td>Problem and affected people</td><td>Two people&#x27;s records were linked by name, contact, transliteration, or device clues; both people, carers, frontline staff, and service owners can be harmed.</td><td>Do not presume impersonation or fraud; do not require face, voice, gait, or family graphs.</td></tr><tr><td>End-to-end task</td><td>Dispute → freeze the link and new automation → two source owners check provenance → split or stay separate → send downstream corrections → each service owner decides separately.</td><td>If unresolved, stay separate and stop new propagation; the disputed link cannot be the sole basis for denial, penalty, eligibility, or credit.</td></tr><tr><td>Spatial carrier</td><td>Ordinary front desk, camera-free private separation room, two source-owner seats, and local service desks.</td><td>No universal identity centre; provisional polygons do not name real institutions or counters.</td></tr><tr><td>Named decision or right</td><td>The person raises the dispute; each source owner checks its own record; the service professional decides the matter; an independent reviewer handles link disputes.</td><td>AI, a vendor, a front desk, or the other person cannot declare identity, merge/delete records, or decide the matter alone.</td></tr><tr><td>Exit result</td><td>Disconnect the shared matching layer, hand back lawful local records and an open correction list, and restore an ordinary privacy service room.</td><td>A high-risk matter may pause, but basic human, paper, and local service for both people must not disappear together.</td></tr></tbody></table></div>
+<p>The synthetic red-team uses eight record pairs: same name and birthday, shared family phone, transliteration, name change, wrong device association, an offline source, a downstream adverse action, and vendor withdrawal. It checks freezing, privacy-safe summaries, itemised downstream receipts, and two local paths after AI shutdown—not match rate. <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="record_separation_node_count" title="Metric: record_separation_node_count">Metric</sup> <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="downstream_correction_receipt_count" title="Metric: downstream_correction_receipt_count">Metric</sup></p>
+<p>If a professional review finds that a safe summary is impossible, that separation requires biometric escalation, or that both basic services stop, the prototype enters <code>HOLD/RETURN</code> and never becomes a public-service pilot. <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="ISSUE-1974-FUNCTIONAL-AUDIT" title="Source: ISSUE-1974-FUNCTIONAL-AUDIT">Source</sup> <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="risk_missing_data" title="Depth: risk_missing_data">Depth</sup></p>
+<h2>Design Basis and Source List</h2>
+<p>The package uses the official announcement, the cleared agent taskbook, the repository source registry, and the repository&#x27;s provisional rough geometry. Only public or cleared materials are used; synthetic people and records are not real people, institutions, or field observations. <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="OFFICIAL-ANNOUNCEMENT" title="Source: OFFICIAL-ANNOUNCEMENT">Source</sup> <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="AGENT-TASKBOOK" title="Source: AGENT-TASKBOOK">Source</sup> <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="SOURCE-REGISTRY" title="Source: SOURCE-REGISTRY">Source</sup></p>
+<p>The provisional boundary is an intake and discussion constraint only. It is not an official redline, ownership boundary, planning control, or precise area basis. Replace it with official polygons and recompute every geometry, metric, figure, drawing, and HTML view. <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/site_boundary.geojson#SITE-001" title="Spatial data: geometry/site_boundary.geojson#SITE-001">Spatial data</sup> <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="site_area_sqm" title="Metric: site_area_sqm">Metric</sup></p>
+<h2>Three-Level Scope Framework</h2>
+<p>The coordinated research area frames an AI ecosystem that does not make residents default data sources. The overall design area turns the separation chain into readable public interfaces, ordinary service ground, and reversible rooms. The three key areas act as TEST, COMPOSE, and DELIVER: synthetic pressure testing, two-sided provenance work, and downstream correction with ordinary service continuity. <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/key_areas.geojson#PROV-KEY-001" title="Spatial data: geometry/key_areas.geojson#PROV-KEY-001">Spatial data</sup> <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="three_level_scope_framework" title="Depth: three_level_scope_framework">Depth</sup></p>
+<h2>Coordinated Research Area: Industry and Future City Research</h2>
+<p>The proposed ecosystem supports privacy engineering, records stewardship, accessibility, service design, red-team testing, correction tools, and human fallback rather than a cross-service identity graph. Six personas—people with shared contact details, carers, frontline receivers, source-record owners, service professionals, and independent reviewers—are recruitment hypotheses, not observed profiles. <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="persona_count" title="Metric: persona_count">Metric</sup></p>
+<h2>Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design</h2>
+<p>The spatial idea is a visible pair of local service paths: an ordinary front desk, a quiet separation room, source-owner seats, and a downstream receipt checkpoint. Buildings, land use, roads, and public space remain reversible concept layers. Height, FAR, ownership, redlines, utilities, fire safety, heritage, and engineering conditions remain unknown pending official evidence. <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="MOHURD-CONTROL-DETAILED-PLANNING" title="Standard: MOHURD-CONTROL-DETAILED-PLANNING">Standard</sup> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/roads.geojson#KEEP-ROAD-001" title="Spatial data: geometry/roads.geojson#KEEP-ROAD-001">Spatial data</sup></p>
+<h2>Detailed Design of Key Areas</h2>
+<p>The northern conceptual TEST role uses synthetic records and no real identity data. The middle COMPOSE role lets source owners, service professionals, accessibility representatives, and reviewers edit a paper workflow. The southern DELIVER role rehearses downstream correction and ordinary service continuity. These are roles, not selected sites or confirmed institutions. <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/key_areas.geojson#PROV-KEY-002" title="Spatial data: geometry/key_areas.geojson#PROV-KEY-002">Spatial data</sup></p>
+<h2>AI Innovation Ecosystem, Personas, and AI+ Scenarios</h2>
+<p>Ten scenario cards cover a separation request, source provenance check, private summary, local service continuation, downstream correction, translation support, accessibility support, vendor exit, public explanation, and a synthetic industry test. At least three are industry validation scenes; all use synthetic or public data and named human review. AI never decides identity, eligibility, fraud, or service outcome. <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="AGENT-TASKBOOK" title="Source: AGENT-TASKBOOK">Source</sup> <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="scenario_card_count" title="Metric: scenario_card_count">Metric</sup></p>
+<h2>Land Use, Building Scale, and Retain-Renovate-Demolish Strategy</h2>
+<p>The submitted layers describe two small conceptual service rooms and two parallel local paths. They do not classify real parcels, buildings, ownership, demolition, or construction. Reuse of staffed ordinary service rooms and movable furniture is preferred; any permanent work requires official controls, professional safety review, rights clearance, and public participation. <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="MNR-LAND-USE-CLASSIFICATION-GUIDE" title="Standard: MNR-LAND-USE-CLASSIFICATION-GUIDE">Standard</sup> <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="retain_renovate_demolish" title="Depth: retain_renovate_demolish">Depth</sup></p>
+<h2>Transport, Rail, Municipal Infrastructure, and Public Services</h2>
+<p>Mobility remains ordinary and non-identifying. Walking, paper, telephone, accessible guidance, and staffed desks remain available across the two paths. Rail, road redlines, utilities, parking, fire access, and station integration are only relationships for professional study, not engineering conclusions. <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="traffic_rail_slow_parking" title="Depth: traffic_rail_slow_parking">Depth</sup></p>
+<h2>Blue-Green Network, Public Space, and Urban Character</h2>
+<p>Public space carries only neutral states such as “local service,” “separation in progress,” “human review,” and “closed.” It does not display names, reasons, or the other person&#x27;s data. A quiet room and source-owner seats are conceptual components that must be checked for accessibility, fire safety, heritage, ownership, and acoustic privacy. <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="blue_green_public_space" title="Depth: blue_green_public_space">Depth</sup> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/public_space.geojson#KEEP-APART-002" title="Spatial data: geometry/public_space.geojson#KEEP-APART-002">Spatial data</sup></p>
+<h2>Renewal Projects, Implementation Policy, and Phasing</h2>
+<p>Phase 1 is a synthetic tabletop test; Phase 2 is a professional and affected-person review; Phase 3 is a bounded conceptual demonstration only after responsibilities, rights, capacity, and safeguards are confirmed. A failure, missing source owner, unresolved downstream recipient, or vendor exit holds the work and restores ordinary service. No phase is a government schedule or implementation promise. <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/phasing.geojson#PHASE-001" title="Spatial data: geometry/phasing.geojson#PHASE-001">Spatial data</sup></p>
+<h2>Metrics, Area Recalculation, and Compliance Matrix</h2>
+<p>Known metrics are recomputable from the submitted geometry and scenario ledger: provisional site area, green and public-space ratios, four separation nodes, four receipt checkpoints, ten scenario cards, six persona hypotheses, and full manual-fallback coverage for the synthetic prototype. FAR and statutory controls remain unknown. <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="manual_fallback_coverage_ratio" title="Metric: manual_fallback_coverage_ratio">Metric</sup> <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="metrics_recalculation" title="Depth: metrics_recalculation">Depth</sup></p>
+<h2>Risk, Copyright, and Compliance</h2>
+<p>No real personal, health, housing, employment, phone, identity-document, or institutional record is included. The package does not claim approval, legal identity, a final planning control, a confirmed institution, or implementation. AI-generated text, geometry, diagrams, PDFs, and static HTML are authored for this package; public and cleared sources are listed in <code>sources.json</code>. The package is bilingual and offline. If the five-field chain is not safe for both people, it remains <code>HOLD/RETURN</code>.</p>
+<h2>References</h2>
+<p>See <code>sources.json</code>, <code>metrics.json</code>, <code>assumptions.json</code>, <code>compliance_matrix.json</code>, <code>standard_matrix.json</code>, and <code>design_depth_matrix.json</code> for the complete machine-readable evidence layer. The functional audit method is documented in Issue #1974; its evidence is a review prompt, not an originality score.</p>
+</main>
+</body>
+</html>
