@@ -1879,6 +1879,34 @@
       "files": [
         {
           "language": "neutral",
+          "path": "visual/assets/review-handoff-index.json",
+          "role": "evidence_data",
+          "role_detail": null,
+          "translation_of": null
+        }
+      ],
+      "group_id": "va-review-handoff-index.json",
+      "human_surface_refs": [
+        "proposal.en.md",
+        "proposal.md",
+        "report/proposal.en.html",
+        "report/proposal.html",
+        "visual/index.en.html",
+        "visual/index.html"
+      ],
+      "kind": "evidence_data",
+      "latest_rebuild_round": 20,
+      "notes": {
+        "en": "Self-registered: the index itself is the 141st registered path and locates the other 140 package files; the index only locates, creates no evidence and changes no maturity or rights state.",
+        "zh": "本索引自登记：索引自身是第 141 个登记路径，负责定位其余 140 个投稿包文件；索引只负责定位，不生成证据、不改变成熟度或权利状态。"
+      },
+      "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
+      "status": "current"
+    },
+    {
+      "files": [
+        {
+          "language": "neutral",
           "path": "visual/assets/review-walkthrough.css",
           "role": "asset",
           "role_detail": null,
