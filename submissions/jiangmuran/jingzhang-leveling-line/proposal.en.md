@@ -6,7 +6,7 @@ translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
-summary: "Leveling is not about measuring accurately once; it is about measuring back. Depart from a datum, run the circuit, return — and the closure error decides whether the whole line is trusted. This proposal applies that hundred-year-old rule where a wrong reading injures someone: low-speed robots, autonomous shuttles, and AI health, education, legal and daily services. The same instrument, turned on this open call and on the site itself, produced measured findings that are reported here including the ones that count against this submission. Concept advice on provisional boundaries; not a substitute for statutory planning."
+summary: "Leveling is not about measuring accurately once; it is about measuring back. Depart from a datum, run the circuit, return — and the closure error decides whether the whole line is trusted. This proposal applies that hundred-year-old rule where a wrong reading injures someone: low-speed robots, autonomous shuttles, and AI health, education, legal and daily services. The same instrument, turned on this open call, made seventeen re-runnable censuses (184→793 proposals), every reading shipped — including findings that count against this submission. Concept advice on provisional boundaries; not a substitute for statutory planning."
 tracks: ["robotics-autonomous-mobility", "ai-public-services", "civic-agent-governance"]
 scenarios: ["robot-delivery-low-speed", "ai-health-service-navigation", "ai-traffic-walkability", "public-safety-operations-review", "enterprise-service-copilot", "ai-cultural-guide"]
 ---
@@ -1493,12 +1493,12 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-94 entries. By finder:
+95 entries. By finder:
 
 | Found by | Count | What it says |
 |---|---|---|
 | Independent audit | 25 | The audit was run against the shipped package, not a draft |
-| The author | 56 | Found while working |
+| The author | 57 | Found while working |
 | This package's own gate | 9 | Caught at build time — which is what a gate is for |
 | **Reviewers outside this proposal** | **4** | [@anselasimov-web](https://github.com/anselasimov-web) on PR #1002; [@147228](https://github.com/147228) on PR #1065; [@Sonike](https://github.com/Sonike) on Issue #950; [@147228](https://github.com/147228) on Issue #950 / PR #1190 |
 
@@ -1522,11 +1522,11 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 | A number outlived the sentence holding it | 4 |
 | A reference did not resolve | 4 |
 | A claim outlived the corpus | 3 |
+| A hard constraint nothing could fail | 3 |
 | A number with no file behind it | 3 |
 | Recorded where it was found, not where anyone would look | 3 |
 | A claim this medium makes uncheckable in principle | 2 |
 | A source was claimed and could not be named | 2 |
-| A hard constraint nothing could fail | 2 |
 | A measurement answering a question it cannot answer | 2 |
 | A rule applied to others but not to itself | 2 |
 | A claim pointing at a total that excludes the very thing it claims | 1 |
