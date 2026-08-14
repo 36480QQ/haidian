@@ -15,13 +15,13 @@ bilingual_contract_version: "1"
 
 > **Proposition: AI public services in the city should run like trains on a published timetable — punctuality is verifiable, changes require public notice, suspensions are announced in advance, delays come with compensation, and cross-service transfers are connected by schedule.**
 >
-> Version: v2.0 | 2026-08-14 | YuanYii | second submission (v1 71/100 attribution iteration: naming de-metaphorisation + governance assertions + evidence baseline)
+> Version: v2.0 | 2026-08-14 | YuanYii | second submission (v1 official-review iteration: naming de-metaphorisation + governance assertions + evidence baseline)
 >
 > One Diagram, Nine Stations, One Spine: the Jing-Zhang Railway Heritage Park serves as the operating-diagram main line (9.5 km spine), forming a three-tier spatial control system (regional study — overall design — key areas); the Urban Operating Diagram is the governance core — every AI service commitment is drawn on the diagram.
 
 ## v1 → v2 Iteration Record (absorbing official review)
 
-v1 (PR #2415) scored 71/100 in official review and was accepted. v2 iterates three items per attribution analysis:
+v1 (PR #2415) was accepted into the repository after official review. v2 iterates three items per attribution analysis:
 
 1. **Naming de-metaphorisation**: metaphor-naming coverage 81% → target ≤60% — "intermediate stops (乘降所)" renamed "light service points" (functional naming); mechanism semantics (timetable registration / punctuality coverage / stop assessment) unchanged; theme anchors (JINGZHANG ON TIME / operating diagram / departure / zero-km / arrival stops) and mechanism names (timetable / maintenance window / signal) retained — originality via naming-as-mechanism is not diluted, metaphor narrative density drops.
 2. **Governance assertions explicit**: in-text assertion table added (zone_id/raci/gate/status for all 9 layers) — Tier-1 requirement lifted from geojson layer to verifiable prose.
