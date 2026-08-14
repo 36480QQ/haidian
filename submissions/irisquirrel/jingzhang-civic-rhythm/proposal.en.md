@@ -70,6 +70,18 @@ Four phases are used: 0 baseline and evidence; 1 reversible 90-day pilot; 2 cond
 
 Policy tools include short-term site permission, milestone micro-procurement, model/data cards, community-impact register, non-digital alternatives, independent red teams, resident observers, and staged loss limits. Funding follows evidence and milestones rather than being precommitted to large construction.
 
+The first deliverable is deliberately smaller than the innovation belt: **a 100-200 m public-takeover line and one no-phone human service point in Z2**, with the precise location subject to site verification. Days 0-15 close the need, non-AI baseline, minimum data, roles, and accessibility co-test plan. Days 16-30 verify clear width, fire, ownership, power, and neighbourhood effects. Days 31-45 rehearse faults, physical disconnection, human takeover, deletion, and place recovery. Only days 46-75 may host a limited, staffed public trial. Days 76-90 force a continue, repair, or remove decision; renewal is never automatic. Failure at any gate returns the project to tabletop rehearsal, relocation, reduction, or cancellation [data:visual/assets/implementation-contract.json#first_90_days].
+
+The conceptual RACI names functions without fabricating appointments. Public-realm design, data stewardship, site management, and independent evaluation perform the work; site, data, operation, and authorisation accountability remains unassigned; accessibility co-testers, fire/engineering, legal/privacy, frontline staff, and residents are consulted; affected publics are informed. Each of JZ-01-JZ-06 registers a cost band, dependency, acceptance test, and exit action. Cost bands guide procurement form only and are not quotations [data:visual/assets/implementation-contract.json#projects].
+
+## Twelve Operating Contracts
+
+The scenarios are not a technology menu. Twelve contracts cover accessibility obstruction repair, child-readable test explanation, red-team safety rehearsal, cross-vendor verification, no-phone public service, resident problem-setting, accountable procurement drafting, equivalent accessible publication, conservative walking guidance, bilingual public explanation, data-rights requests, and night-service labour/neighbour impacts.
+
+Every contract uses the same nine-field control: place; user; problem; non-AI baseline; minimum data; bounded AI role; human release; metric; stop and recovery. Child-facing SC-02 collects no image or voice; low-digital-literacy SC-05 requires no account; SC-08 does not infer disability type; SC-12 records sound level bands but never residential audio content. A missing field keeps the scenario at tabletop stage [data:visual/assets/operating-contracts.json#contracts].
+
+Z1 concentrates controlled verification: public understanding, red-team rehearsal, and cross-vendor reproducibility. Z2 concentrates co-creation and translation: no-phone service, resident agenda setting, procurement responsibility, and accessible publication. Z3 concentrates everyday adoption and accountability: conservative walking, international explanation, data rights, and night operation. Shared rights are notice, refusal, human takeover, correction, appeal, and exit, but risk, logging, permission, and recovery differ by contract.
+
 ## Inclusive Journeys and Public Rights
 
 Six journeys cover older and low-digital-literacy users, children and guardians, mobility-disabled users, sight/hearing-disabled users, low-income frontline workers, and international visitors. Every service supports notice, refusal, human takeover, correction, appeal, and exit. Information uses text, sound, touch, numbering, and human support rather than colour, QR code, or voice alone. Severe misleading accessibility advice is a safety incident.

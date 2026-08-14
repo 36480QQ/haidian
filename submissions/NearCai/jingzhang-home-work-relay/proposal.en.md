@@ -8,7 +8,7 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-iteration: "1.5.0"
+iteration: "1.6.0"
 summary: "Along the Jing-Zhang Heritage Park, a walkable and inhabitable public spine links three thresholds: a live-work court, a family care porch and a station-front civic hall. Retained structure, demountable fit-out and a continuous public-to-private gradient support four housing states."
 tracks: ["youth-friendly-public-space", "ai-public-services", "ai-origin-community"]
 scenarios: ["enterprise-service-copilot", "ai-health-service-navigation", "ai-traffic-walkability", "ai-cultural-guide"]
@@ -26,6 +26,8 @@ The design begins with places people can read and use. Zhongzhiyuan uses a live-
 
 This section is not a new slogan. It is a navigation page for the Review Agent and human reviewers: seven scoring dimensions, seven evidence routes and an eight-step 100-day action package are registered as countable package objects [metric:review_score_dimension_count] [metric:review_evidence_map_item_count] [metric:first_100_days_action_count]. The 72 synthetic negative branches are counted separately in the scenario denominator [metric:scenario_negative_fixture_branch_count]. The full index is in `visual/assets/review-score-evidence-map.json`, `visual/assets/score-sprint-100-days.json` and `visual/assets/scenario-negative-fixtures.json`; these files prove that the evidence chain is organised, not that any field authorisation, budget, eligibility, rent, capacity or outcome exists [data:visual/assets/review-score-evidence-map.json#dimensions] [data:visual/assets/score-sprint-100-days.json#actions] [data:visual/assets/scenario-negative-fixtures.json#negative_branches].
 
+v1.6 adds an adversarial desktop audit: twelve negative probes stress-test provisional geometry, metric drift, pre-G3 authorisation, AI decision bans, non-AI routes, home-consent withdrawal, negative denominators, RACI role types, offline HTML, bilingual anchors, originality and retirement/return [metric:adversarial_audit_probe_count] [metric:adversarial_negative_probe_count] [metric:remote_resource_violation_count]. The persisted result from `run-review-adversarial-audit.js` proves only internal audit consistency, not external authorisation, field safety, real equity or professional sign-off [data:visual/assets/review-adversarial-audit.validation.json#checks].
+
 | Review dimension | Weight | Directly reviewable evidence in this package | Hard boundary |
 |---|---:|---|---|
 | Brief alignment | 20 | Three-level scope, three key areas, agent.1-agent.6, selected tracks and six tasks are cross-located in prose, matrices, layers and figures [metric:key_area_count] | Provisional geometry supports intake and discussion only, not an official redline |
@@ -34,7 +36,7 @@ This section is not a new slogan. It is a navigation page for the Review Agent a
 | Expression completeness | 15 | Bilingual Markdown, HTML, A3/A0, core figures, offline visual page, manifest, self-check, source/assumption/copyright files form one delivery chain | HTML loads no CDN, remote font, map tile, iframe, form, API or tracking code |
 | Originality | 10 | The Home-Work Relay turns railway coupling, switching and through-running into responsibility protocols for housing, desks, services and return | International cases are background comparisons; no peer text, figures, geometry, data or field table is copied |
 | Public interest and inclusion | 10 | Six personas, twelve scenario cards, six equity acceptance rules, AI-off, staffed review, accessibility, night-time and multilingual routes share one denominator [metric:scenario_card_count] [metric:equity_acceptance_rule_count] | Equity parity, real affordability, real capacity and retention rate remain unknown |
-| Risk and compliance | 10 | Risk register, assumptions, 72 negative branches, `not_authorized_not_run`, unknown is not pass, failures and exit assets are visible in the proposal | No official endorsement, award, built work, approval, partnership, real outcome or professional sign-off is claimed |
+| Risk and compliance | 10 | Risk register, assumptions, 72 negative branches, twelve adversarial audit probes, `not_authorized_not_run`, unknown is not pass, failures and exit assets are visible in the proposal | No official endorsement, award, built work, approval, partnership, real outcome or professional sign-off is claimed |
 
 ### G0-G4: 100-Day Eight-Step Score Sprint
 

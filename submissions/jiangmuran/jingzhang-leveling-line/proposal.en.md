@@ -1493,13 +1493,13 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-96 entries. By finder:
+102 entries. By finder:
 
 | Found by | Count | What it says |
 |---|---|---|
 | Independent audit | 25 | The audit was run against the shipped package, not a draft |
-| The author | 58 | Found while working |
-| This package's own gate | 9 | Caught at build time — which is what a gate is for |
+| The author | 63 | Found while working |
+| This package's own gate | 10 | Caught at build time — which is what a gate is for |
 | **Reviewers outside this proposal** | **4** | [@anselasimov-web](https://github.com/anselasimov-web) on PR #1002; [@147228](https://github.com/147228) on PR #1065; [@Sonike](https://github.com/Sonike) on Issue #950; [@147228](https://github.com/147228) on Issue #950 / PR #1190 |
 
 <!-- ERRATA:COUNT:END -->
@@ -1514,15 +1514,15 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 
 | Shape | Count |
 |---|---|
-| **The check measured the convenient thing** | **19** |
+| **The check measured the convenient thing** | **22** |
 | **Two copies of one thing drifted** | **13** |
 | **A deliverable was not looked at before shipping** | **12** |
 | **A claim outlived the package** | **8** |
+| **A hard constraint nothing could fail** | **6** |
 | **A reference did not resolve** | **5** |
 | Geometry did not mean what it said | 4 |
 | A number outlived the sentence holding it | 4 |
 | A claim outlived the corpus | 3 |
-| A hard constraint nothing could fail | 3 |
 | A number with no file behind it | 3 |
 | Recorded where it was found, not where anyone would look | 3 |
 | A claim this medium makes uncheckable in principle | 2 |

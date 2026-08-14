@@ -6,10 +6,10 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "Uses City Completeness as the spatial review method for the Centennial Jing-Zhang AI Innovation Belt: seven ordinary-city capabilities—HOME, LEARN, CARE, MOVE, GREEN, WORK and COMMON LIFE—form a durable everyday base first, while AI enters research, community, mobility and commerce as an optional enhancement layer. The structure is one public green spine, six completeness segments, six east-west stitching links and three key areas; Shuangfen Fortress remains only a community-name easter egg inside AI Origin Community."
+summary: "Uses City Completeness as the spatial review method for the Centennial Jing-Zhang AI Innovation Belt: seven ordinary-city capabilities—HOME, LEARN, CARE, MOVE, GREEN, WORK and COMMON LIFE—form a durable everyday base first, while AI enters research, community, mobility and commerce as an optional enhancement layer. The structure is one public green spine, six completeness segments, six east-west stitching links and three key areas; the three key areas bind three dual-track spatial contracts: ARRIVE WITHOUT APP, CARE WITHOUT ACCOUNT and TEST WITHOUT BLOCKING; Shuangfen Fortress remains only a community-name easter egg inside AI Origin Community."
 tracks: ["ai-origin-community", "ai-public-services", "ai-traffic-walkability"]
 scenarios: ["ai-traffic-walkability", "robot-delivery-low-speed", "enterprise-service-copilot", "ai-cultural-guide", "ai-health-service-navigation"]
-iteration: "v0.10"
+iteration: "v0.12"
 ---
 
 # JING-ZHANG CITY COMPLETENESS
@@ -146,15 +146,46 @@ v0.10 keeps the **design-first** hierarchy of the 86-point v0.7 baseline and abs
 All five response rules are machine-readable in `visual/assets/reality-constraint-register.json`. The fixed `mobility-bluegreen.en.png` is rebuilt to distinguish ordinary stitching, the underpass/vertical-continuity condition, people-first green-corridor frontage, station-city arrival, and the future official-data recomputation trigger.
 <!-- V09-REALITY-END -->
 
-<!-- V010-PROMISES-START -->
-### v0.10 | Three public promises: show how people use the city before showing evidence machinery
+<!-- V012-CONTRACTS-START -->
+### v0.12.g | Three Public Promises as Dual-Track Spatial Contracts: From Ethical Principles to Spatial Bylaws
 
-v0.10 keeps v0.7's design-first hierarchy and compresses the three key areas into three questions anyone can test: **ARRIVE WITHOUT APP, CARE WITHOUT ACCOUNT, TEST WITHOUT BLOCKING**. Each promise requires an ordinary-city baseline, a spatial move, optional AI, failure recovery and a reality constraint. If one is missing, the urban task is not complete. [metric:public_promise_count]
+v0.12.g formally elevates the three public urban promises into binding **Dual-Track Spatial Contracts**. The core principle is: **the physical, analog city base (the C7 baseline) retains absolute, non-negotiable physical fail-safe priority over soft algorithmic scheduling (the optional AI layer)**. The spatial contracts anchor ethical rights directly to key-area cross-sections, physical clearances, accountable actors, and circuit-breaker triggers. [depth:three_key_area_detailed_design] [metric:public_promise_count]
 
-![Three public promises](assets/figures/three-public-promises.en.svg)
+![Three Dual-Track Spatial Contracts and Physical Circuit-Breaker Protocols](assets/figures/three-public-promises.en.svg)
 
-The machine-readable contract is `visual/assets/public-promises-contract.json`. It is not field evidence and does not upgrade public plot conditions, draft-plan material or a green-corridor case into proposal approvals; those sources appear only where they change a spatial decision.
-<!-- V010-PROMISES-END -->
+#### Contract SC-01 | ARRIVE WITHOUT APP (Station-City Zero-Friction Arrival Contract)
+* **Anchor Key Area & Spatial Typology**: Dazhongsi Key Area | High-density multi-level transit concourse and railway heritage seam.
+* **Ordinary City Baseline**: Continuous, barrier-free physical pedestrian corridors; continuous high-contrast optical retroreflective/photoluminescent wayfinding visible from 20m; a permanently staffed physical information kiosk within 50m of faregates; and wide accessible turnstiles with 0% dependency on smartphones or apps. [source:HD-URBAN-RENEWAL-GUIDE-2025]
+* **Spatial Prerequisite & Clearances**: Minimum 4.5m unobstructed transfer concourse width; minimum 2.5m vertical signage clearance; direct line-of-sight between primary decision nodes; zero advertising or commercial encroachment into the wayfinding envelope.
+* **Optional AI Layer**: Predictive crowd density forecasting, public display routing guidance, and opt-in web-based accessible navigation.
+* **Human Takeover & Exit SLA**: Instant physical fallback upon network blackout or digital display latency (>2s): digital screens cut off within $\le 0.1\text{s}$, and 100% of peak transfer throughput (12,000 pph) is maintained via passive signs and human transit stewards.
+* **Accountable Actor**: Beijing Subway / Line 13 Operations + Beixiaoguan Sub-district Office + Station-City Operating Consortium.
+* **Implementation Phasing**: Phase 1 establishes 100% physical wayfinding and staffed kiosks; subsequent phases enable dynamic routing.
+* **Acceptance & GO/STOP Trigger**: 100% arrival success rate for non-smartphone users; if digital display latency $>2\text{s}$ or bottleneck pedestrian density $>2.5\text{ p/m}^2$, the system triggers a STOP, disabling dynamic scheduling and reverting to pure physical throughput.
+
+#### Contract SC-02 | CARE WITHOUT ACCOUNT (Zero-Account All-Age Community Living Room Contract)
+* **Anchor Key Area & Spatial Typology**: AI Origin Community | Fine-grained living street (Woonerf) and all-age community care core.
+* **Ordinary City Baseline**: A 400m continuous shaded, barrier-free pedestrian corridor connecting homes to the community clinic; full-service analog community kiosks spaced every 200m providing paper-based workflows, tactile push-button public phones, and direct copper-wire emergency alarms to neighborhood care desks—free of accounts, biometric scans, or profiling. [source:HD-AI-DISTRICT-PROGRESS-2025Q4]
+* **Spatial Prerequisite & Clearances**: Minimum $15\text{m}^2$ physical footprint per analog civic kiosk; minimum 2.5m clear sidewalk width; continuous handrails and ramps (slope $\le 1:12$).
+* **Optional AI Layer**: Opt-in chronic disease wellness monitoring, shared space algorithmic scheduling, and AI voice companionship.
+* **Human Takeover & Exit SLA**: Citizens opting out or experiencing algorithm downtime receive 100% direct human care via neighborhood community aides and family doctors.
+* **Accountable Actor**: Zhongguancun Sub-district Office + Community Residents Committee + Haidian Community Health Service Center.
+* **Implementation Phasing**: Phase 1 constructs the 400m shaded corridor and analog kiosks; Phase 2 introduces opt-in wellness sandboxes.
+* **Acceptance & GO/STOP Trigger**: 100% coverage of public services via non-digital channels; any unauthorized data breach or $\ge 2$ false emergency alerts/month triggers a STOP, suspending the algorithmic interface pending a civic hearing.
+
+#### Contract SC-03 | TEST WITHOUT BLOCKING (Physical Test Sandbox Isolation & Circuit-Breaker Contract)
+* **Anchor Key Area & Spatial Typology**: Zhongzhiyuan Key Area | Porous campus courtyard grid and linear research test loop.
+* **Ordinary City Baseline**: Researchers, students, and campus service workers maintain independent, 100% unobstructed daily mobility, dining, and green space; everyday public corridors never become involuntary test grounds. [source:AGENT-TASKBOOK]
+* **Spatial Prerequisite & Clearances**: Dedicated autonomous delivery/robot lanes are physically grade-separated from pedestrian paths (+15cm raised curb or landscaped buffer); minimum 1.8m one-way test lane width; automatic pneumatic drop-bollards at intersections; physical red emergency stop (E-Stop) buttons spaced every 50m.
+* **Optional AI Layer**: Low-speed automated delivery, embodied AI outdoor perception benchmarking, and shared computing time-sharing.
+* **Human Takeover & Exit SLA**: Pressing any E-Stop or triggering a safety alarm raises mechanical bollards within $\le 0.5\text{s}$, cutting drive power; the test zone returns to ordinary pedestrian space within 10 minutes of test termination.
+* **Accountable Actor**: Zhongguancun Science City Administrative Committee + Campus Property Management + Enterprise AI Testing Consortium.
+* **Implementation Phasing**: Phase 1 is restricted to enclosed courtyards; Phase 2 opens dedicated loop lanes only after physical grade-separation passes inspection.
+* **Acceptance & GO/STOP Trigger**: 0% pedestrian delay caused by testing; any autonomous vehicle boundary violation or pedestrian obstruction $\ge 1$ time/week immediately triggers a STOP, revoking the testing permit and restoring campus public space.
+
+#### Dual-Track Spatial Governance & Black-Sky Resilience Protocol
+The proposal institutes a "Dual-Track Normal Operations, Instant Physical Fail-Safe" standard: a quarterly regional "AI-OFF Black-Sky Drill" simulates a 48-hour total network/power blackout to ensure 100% physical reliability for Dazhongsi transit evacuation, AI Origin emergency care, and Zhongzhiyuan campus mobility.
+<!-- V012-CONTRACTS-END -->
 
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
