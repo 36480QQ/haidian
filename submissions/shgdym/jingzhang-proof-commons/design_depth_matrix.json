@@ -428,6 +428,8 @@
         "lived_journey_step_count",
         "handover_ticket_type_count",
         "minimum_pilot_duration_days",
+        "reversible_pilot_kit_type_count",
+        "minimum_pilot_shift_role_count",
         "station_topology_check_count",
         "station_topology_pass_count"
       ],
@@ -570,7 +572,7 @@
       "status": "complete",
       "proposal_sections": [
         "风险、版权与合规说明",
-        "X Census：真实仓库告诉我们什么"
+        "附录：X Census赛道词汇检查"
       ],
       "drawing_refs": [
         "assets/figures/metrics-evidence.png",
