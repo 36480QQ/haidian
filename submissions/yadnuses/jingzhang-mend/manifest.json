@@ -282,7 +282,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "b2b821d1999e92d3f7490bd65c001a9732abf145f8dcb2feb54a1f39a56e5281"
+      "sha256": "6414d898a13b0bfcefadba7ed53439aaa8f1d7e2faf14385c30352bc47596e90"
     },
     {
       "path": "proposal.en.md",
@@ -290,14 +290,14 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "0b2557ccdf506edfac06f2698e3f403b0a81a93c21dadc54a8b6518e7af96394"
+      "sha256": "cba3fc5b7b1ab01e6916dcfc57be4e1f6684dc1bf3a1cca667d1cb0ba7464257"
     },
     {
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "cab80d908d3e6b924d2851b651078b4c6b78bcfc1d2bafacaf0bac24ec620fce"
+      "sha256": "8846b16abc92a8050f71d34dd0aba4cd774f0af90b1aeacc5056a85c1a980d34"
     },
     {
       "path": "report/copyright_statement.md",
@@ -317,26 +317,26 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "0e9d61572dc7fe09fbaf486ee8f1d14ca64fd2a865f668740b3ce4a9a9f93de2"
+      "sha256": "8ab73a2c6def80c26cda5887dcc94c16de3248a6a27f22366a6da9f875d39779"
     },
     {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "03327b9024763cf4f15eb83432377bd6472770397ec539966343cd19b22db714"
+      "sha256": "c4b42e16969f731989b50b025b2169478fbc62fb08f2dd6ac09b8961a9e0a399"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "6c6aa658b99d3138e081f05a72eacf65fbe02176337c0164c89e9f052032ba92"
+      "sha256": "6d6fc14156618e423ee194d7af0e9f3d0d4a9d82bba60dc20dd2cf6f6c44ab83"
     },
     {
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "704afafe4427f74fa8e048fcde9e84bd8535ba65d63f1b6a752a2f63fd67f2aa"
+      "sha256": "34c8f7a9090b5427a5f558f32006c094c630a4668b0b704a2f172720266a6dee"
     },
     {
       "path": "standard_matrix.json",
@@ -349,7 +349,7 @@
       "role": "machine_artifact",
       "required": false,
       "language": "neutral",
-      "sha256": "baaf82a399482195c7371d07d12e2ee0f41d940d948296c723e72baa51a3503f"
+      "sha256": "16f8771eb3f425710ea10facf14a8ebf54cf97a862946b98871d59182432d99e"
     },
     {
       "path": "visual/index.en.html",

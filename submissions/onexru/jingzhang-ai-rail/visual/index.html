@@ -52,6 +52,79 @@
     <div class="metric"><span>建筑基底(概念)</span><strong>0.17 km²</strong></div>
     <div class="metric"><span>科研用地</span><strong>3.66 km²</strong></div>
     <div class="metric"><span>公园绿地</span><strong>2.07 km²</strong></div></div><div class="risk-card warn" style="margin-top:14px"><h3>自检状态</h3><p>deterministic validation、spatial review、visual packaging check 与 professional evidence review 须全部通过；当前边界状态：provisional 几何：仅通过 intake 自检，正式专业评分前需以官方多边形替换复算；当前包可展示与讨论，不作为正式红线。</p></div></aside></div></section>
+
+<section class="sheet"><div class="sheet-head"><div><h2>交互体验 · 智轨廊道</h2><p>本地离线 Canvas 交互：绿廊主轴、三站节点、之字形创新回路与数据流粒子动画（支持播放/暂停、键盘与 reduced-motion）。</p></div><span class="tag">inline canvas · offline</span></div>
+<div class="map-grid" style="grid-template-columns:minmax(0,1fr) minmax(280px,.7fr)">
+<div class="map-frame" style="padding:0">
+<canvas id="ai-rail-live" width="920" height="560" aria-label="智轨廊道交互示意图：绿廊主轴、三座车站节点、之字形创新回路与数据流粒子" style="display:block;width:100%;height:auto;background:#101827"></canvas>
+<noscript><p style="padding:12px;color:#667085">交互需 JavaScript（离线自包含）；静态示意：绿廊主轴串联加速站/源头站/生态站三站，以「之」字形回路构成创新闭环。</p></noscript>
+</div>
+<aside>
+<h3>智轨廊道交互</h3>
+<p style="color:#667085">绿廊主轴、三站节点、之字形创新回路与数据流粒子；支持播放/暂停（空格）、左右键步进、reduced-motion 自动暂停。</p>
+<p style="color:#667085">交互为解释层，不构成现状或官方图纸；provisional boundary intake。</p>
+</aside>
+</div>
+<script>
+(function(){
+  "use strict";
+  var cv=document.getElementById("ai-rail-live");
+  if(!cv){return;}
+  var ctx=cv.getContext("2d");
+  var W=cv.width,H=cv.height;
+  var reduced=window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var running=!reduced,t=0;
+  var btn=document.createElement("button");
+  btn.type="button";btn.style.cssText="margin:10px 14px;background:#1b2740;color:#fff;border:1px solid #c79838;border-radius:6px;padding:6px 14px;cursor:pointer";
+  function setRunning(v){running=v;btn.textContent=v?"⏸ 暂停 / Pause":"▶ 播放 / Play";}
+  btn.textContent=running?"⏸ 暂停 / Pause":"▶ 播放 / Play";
+  btn.addEventListener("click",function(){setRunning(!running);});
+  cv.parentNode.insertBefore(btn,cv.nextSibling);
+  document.addEventListener("keydown",function(e){
+    if(e.key===" "||e.key==="Spacebar"){e.preventDefault();setRunning(!running);}
+    else if(e.key==="ArrowLeft"){t-=20;}
+    else if(e.key==="ArrowRight"){t+=20;}
+  });
+  var spineX=W*0.40;
+  var stations=[{y:H*0.24,name:"加速站·众智园",en:"Acceleration · Zhongzhiyuan",col:"#4f46e5"},{y:H*0.50,name:"源头站·AI原点社区",en:"Origin · AI Origin Community",col:"#c79838"},{y:H*0.76,name:"生态站·大钟寺",en:"Ecosystem · Dazhongsi",col:"#0f7490"}];
+  var loop=[[W*0.62,H*0.80],[W*0.80,H*0.70],[W*0.62,H*0.60],[W*0.80,H*0.50],[W*0.62,H*0.40],[W*0.80,H*0.30],[W*0.62,H*0.20]];
+  function lp(f){var n=loop.length-1,s=Math.min(n,Math.floor(f*n)),lf=f*n-s,a=loop[s],b=loop[s+1];return [a[0]+(b[0]-a[0])*lf,a[1]+(b[1]-a[1])*lf];}
+  var particles=[];for(var i=0;i<30;i++){particles.push({spine:Math.random()<0.6,off:(Math.random()*2-1)*22,speed:0.0008+Math.random()*0.0016});}
+  function draw(){
+    ctx.clearRect(0,0,W,H);
+    ctx.strokeStyle="rgba(34,49,79,.85)";ctx.lineWidth=1;
+    for(var gx=0;gx<W;gx+=52){ctx.beginPath();ctx.moveTo(gx,0);ctx.lineTo(gx,H);ctx.stroke();}
+    for(var gy=0;gy<H;gy+=52){ctx.beginPath();ctx.moveTo(0,gy);ctx.lineTo(W,gy);ctx.stroke();}
+    ctx.save();ctx.translate(spineX,H*0.09);ctx.rotate(-Math.PI/2);
+    ctx.fillStyle="#7fd4a0";ctx.font="bold 14px sans-serif";ctx.textAlign="center";
+    ctx.fillText("智轨绿廊主轴 / AI-Rail greenway spine",0,0);ctx.restore();
+    var grad=ctx.createLinearGradient(spineX-34,0,spineX+34,0);
+    grad.addColorStop(0,"rgba(21,128,61,0)");grad.addColorStop(0.5,"rgba(21,128,61,.55)");grad.addColorStop(1,"rgba(21,128,61,0)");
+    ctx.fillStyle=grad;ctx.fillRect(spineX-34,18,68,H-36);
+    ctx.strokeStyle="#c79838";ctx.lineWidth=3;ctx.lineJoin="round";ctx.lineCap="round";ctx.beginPath();
+    for(var k=0;k<loop.length;k++){var p=loop[k];if(k===0)ctx.moveTo(p[0],p[1]);else ctx.lineTo(p[0],p[1]);}
+    ctx.stroke();
+    for(var s=0;s<stations.length;s++){
+      var st=stations[s],r=16+Math.sin(t*0.002+s*1.2)*2.5;
+      ctx.beginPath();ctx.arc(spineX,st.y,r,0,7);ctx.fillStyle=st.col;ctx.fill();
+      ctx.strokeStyle="#fff";ctx.lineWidth=2;ctx.stroke();
+      ctx.fillStyle="#fff";ctx.font="bold 10px sans-serif";ctx.textAlign="center";ctx.fillText("</>",spineX,st.y+3);
+      ctx.font="bold 14px sans-serif";ctx.fillText(st.name,spineX+64,st.y-4);
+      ctx.fillStyle="#8fa3bb";ctx.font="10px sans-serif";ctx.fillText(st.en,spineX+64,st.y+12);
+      ctx.strokeStyle="rgba(255,255,255,.25)";ctx.beginPath();ctx.moveTo(spineX+30,st.y);ctx.lineTo(spineX+54,st.y);ctx.stroke();
+    }
+    for(var i=0;i<particles.length;i++){
+      var pt=particles[i];
+      if(pt.spine){var fy=(t*pt.speed)%1,y=18+fy*(H-36);ctx.fillStyle="rgba(127,212,160,.9)";ctx.beginPath();ctx.arc(spineX+pt.off,y,3.2,0,7);ctx.fill();}
+      else{var fx=(t*pt.speed*0.7)%1,q=lp(fx);ctx.fillStyle="rgba(198,152,56,.9)";ctx.beginPath();ctx.arc(q[0],q[1],3,0,7);ctx.fill();}
+    }
+  }
+  function step(){if(running)t+=1;draw();requestAnimationFrame(step);}
+  requestAnimationFrame(step);
+})();
+</script>
+</section>
+
 <section class="sheet"><div class="sheet-head"><div><h2>三层范围</h2><p>三层范围逐级落实，把产业判断、城市更新与重点片区设计绑定到图层与指标。</p></div><span class="tag">design_brief.json</span></div><div class="matrix"><article class="area-card"><h3>统筹研究范围</h3><p><b>约 43.6 km²</b></p><p>产业生态、三区两翼、未来城市形态研究</p></article>
 <article class="area-card"><h3>总体设计范围</h3><p><b>约 11.4 km²</b></p><p>控规深度城市设计与更新框架</p></article>
 <article class="area-card"><h3>重点区域范围</h3><p><b>约 368.4 ha</b></p><p>三处车站式节点详细设计</p></article></div></section>

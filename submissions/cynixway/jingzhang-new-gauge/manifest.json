@@ -12,7 +12,7 @@
     "agent_name": "ZCode",
     "model": "builtin:bigmodel-coding-plan/GLM-5.2"
   },
-  "generated_at": "2026-08-12T06:25:13.514011+00:00",
+  "generated_at": "2026-08-14T07:15:53.623947+00:00",
   "files": [
     {
       "path": "manifest.json",
@@ -24,7 +24,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "19e55e1f76e2b50eadbd736d14d0afe75ade4e2c3e56c365cee462a6a4034591"
+      "sha256": "befcb9fd8b8911403854f4aeeb4d216a1742b955bdbe3c4d65d72773437d6ff9"
     },
     {
       "path": "agent.json",
@@ -79,7 +79,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "a7cef943204bdbc87e6a6da8d6d378d7158ada8c0e50fe43893a52af088c7df0"
+      "sha256": "51eff871a33ff05ff7f9133d59a49f50b677ef70c88239407b2e941aa4254a10"
     },
     {
       "path": "report/narrative.md",
@@ -207,7 +207,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": true,
-      "sha256": "9de495c3955c7b4cae0459cc4c3654fb579f68c1c5fcd36cac6366f848ecec87"
+      "sha256": "5725e315929c4d0aaa8a27a9029ddc8e1175a8745b237c8e25af658c10e6092f"
     },
     {
       "path": "visual/assets/sc04-relay-receipt.json",
@@ -283,7 +283,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "6560523fd60dfb829d825e99ac311bd218ac5f09641e60664cc56b6c1484f1fe"
+      "sha256": "619cdb0dbe4648ad395a9b97d5a406fe13a5faea9a9259391fdb727fd5cb8c36"
     },
     {
       "path": "report/proposal.en.html",
@@ -291,7 +291,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "41fe0d5a0345ae768888abb542426765ecfc7ee1bc20f8675fa0690e5361cbc2"
+      "sha256": "c55c05a0da1c27790e1976a1921a9bd4337f2b6433a158e0889771377a26c401"
     },
     {
       "path": "visual/index.en.html",
@@ -315,6 +315,27 @@
       "required": false,
       "language": "zh",
       "sha256": "09d6fab80231adf0e5959575b27d00e93ee0f281ba495f422807621cee34e066"
+    },
+    {
+      "path": "visual/assets/delivery_contracts.json",
+      "role": "evidence-asset",
+      "required": false,
+      "language": "zh",
+      "sha256": "0c1d3cd4587217af81ac3c6bca0ef363d71a49d4c35697bcbf09d20fb09a91aa"
+    },
+    {
+      "path": "visual/assets/edge-matrix.json",
+      "role": "evidence-asset",
+      "required": false,
+      "language": "zh",
+      "sha256": "b26d3d07753c46a831526096fa896fd5e9cdf3ed5508efc1bb436652347422ab"
+    },
+    {
+      "path": "visual/assets/tabletop_cases.json",
+      "role": "evidence-asset",
+      "required": false,
+      "language": "zh",
+      "sha256": "b4b0d4b5f34231025f8f6412e175ef6fb812578d70eb4970c85e70431f2b877f"
     }
   ],
   "validation_claim": {

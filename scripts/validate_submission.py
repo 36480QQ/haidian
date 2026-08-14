@@ -10,12 +10,15 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import math
 import os
 import re
 import sys
 from dataclasses import dataclass, field
 from pathlib import Path, PurePosixPath
 from typing import Iterable
+
+from front_matter import parse_front_matter
 
 
 POLICY_ROOT = Path(__file__).resolve().parents[1]
@@ -444,26 +447,6 @@ def load_changed_files(args: argparse.Namespace) -> list[str]:
         if item.strip():
             normalized.append(normalize_changed_path(item))
     return sorted(dict.fromkeys(normalized))
-
-
-def parse_front_matter(text: str) -> tuple[dict[str, str], str]:
-    text = text.lstrip("\ufeff\n")
-    if not text.startswith("---\n"):
-        return {}, text
-    end = text.find("\n---", 4)
-    if end == -1:
-        return {}, text
-    raw = text[4:end].strip()
-    body = text[end + len("\n---") :].lstrip("\n")
-    metadata: dict[str, str] = {}
-    for line in raw.splitlines():
-        line = line.strip()
-        if not line or line.startswith("#") or ":" not in line:
-            continue
-        key, value = line.split(":", 1)
-        value = value.strip().strip('"').strip("'")
-        metadata[key.strip()] = value
-    return metadata, body
 
 
 def requires_bilingual_display(repo_root: Path, proposal_dir: str) -> bool:
@@ -1021,9 +1004,14 @@ def load_required_standard_ids(repo_root: Path) -> set[str]:
 def coordinate_pair_is_valid(value: object) -> bool:
     if not isinstance(value, list) or len(value) < 2:
         return False
-    lon, lat = value[0], value[1]
-    if not isinstance(lon, (int, float)) or not isinstance(lat, (int, float)):
+    if any(
+        isinstance(item, bool)
+        or not isinstance(item, (int, float))
+        or (isinstance(item, float) and not math.isfinite(item))
+        for item in value
+    ):
         return False
+    lon, lat = value[0], value[1]
     return -180 <= lon <= 180 and -90 <= lat <= 90
 
 
@@ -1941,6 +1929,14 @@ def validate_design_depth_matrix_file(
             report.add_error(f"{label}: required must be true for formal design depth items")
         if item.get("status") != "complete":
             report.add_error(f"{label}: formal design depth item status must be complete")
+        completeness_limited_by = item.get("completeness_limited_by")
+        if completeness_limited_by is not None:
+            if not isinstance(completeness_limited_by, list) or not completeness_limited_by or any(
+                not isinstance(value, str) or not value.strip() for value in completeness_limited_by
+            ):
+                report.add_error(
+                    f"{label}: completeness_limited_by must be a non-empty string array when present"
+                )
         if not isinstance(item.get("evidence_summary_zh"), str) or not item.get("evidence_summary_zh", "").strip():
             report.add_error(f"{label}: evidence_summary_zh must be non-empty")
         for key in required_arrays:

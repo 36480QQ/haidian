@@ -10,27 +10,50 @@
       "ok": true,
       "errors": [],
       "warnings": [
-        "submissions/296277/railcode-commons/proposal.md: 可能涉及非公开或敏感资料; maintainer review required",
         "submissions/296277/railcode-commons/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied"
       ],
       "proposal_files": [
         "submissions/296277/railcode-commons/proposal.md"
       ],
-      "changelog_files": [],
+      "changelog_files": [
+        "submissions/296277/railcode-commons/changelog.md"
+      ],
       "changed_files": [
         "submissions/296277/railcode-commons/agent.json",
+        "submissions/296277/railcode-commons/assets/figures/ai-governance-loop.en.png",
+        "submissions/296277/railcode-commons/assets/figures/ai-governance-loop.png",
+        "submissions/296277/railcode-commons/assets/figures/brand-system.en.png",
+        "submissions/296277/railcode-commons/assets/figures/brand-system.png",
+        "submissions/296277/railcode-commons/assets/figures/brief-to-site.en.png",
+        "submissions/296277/railcode-commons/assets/figures/brief-to-site.png",
+        "submissions/296277/railcode-commons/assets/figures/ecosystem-map.en.png",
+        "submissions/296277/railcode-commons/assets/figures/ecosystem-map.png",
+        "submissions/296277/railcode-commons/assets/figures/implementation-contract.en.png",
+        "submissions/296277/railcode-commons/assets/figures/implementation-contract.png",
+        "submissions/296277/railcode-commons/assets/figures/implementation-readiness.en.png",
+        "submissions/296277/railcode-commons/assets/figures/implementation-readiness.png",
         "submissions/296277/railcode-commons/assets/figures/key-areas.en.png",
         "submissions/296277/railcode-commons/assets/figures/key-areas.png",
         "submissions/296277/railcode-commons/assets/figures/land-use-structure.en.png",
         "submissions/296277/railcode-commons/assets/figures/land-use-structure.png",
+        "submissions/296277/railcode-commons/assets/figures/landmark-library.en.png",
+        "submissions/296277/railcode-commons/assets/figures/landmark-library.png",
         "submissions/296277/railcode-commons/assets/figures/metrics-evidence.en.png",
         "submissions/296277/railcode-commons/assets/figures/metrics-evidence.png",
         "submissions/296277/railcode-commons/assets/figures/mobility-bluegreen.en.png",
         "submissions/296277/railcode-commons/assets/figures/mobility-bluegreen.png",
+        "submissions/296277/railcode-commons/assets/figures/pre-g3-commissioning.en.png",
+        "submissions/296277/railcode-commons/assets/figures/pre-g3-commissioning.png",
+        "submissions/296277/railcode-commons/assets/figures/scenario-professional-review.en.png",
+        "submissions/296277/railcode-commons/assets/figures/scenario-professional-review.png",
         "submissions/296277/railcode-commons/assets/figures/site-overview.en.png",
         "submissions/296277/railcode-commons/assets/figures/site-overview.png",
         "submissions/296277/railcode-commons/assets/media/cover.webp",
+        "submissions/296277/railcode-commons/assets/media/v1.1/ai-origin-open-ground-floor.png",
+        "submissions/296277/railcode-commons/assets/media/v1.1/dazhongsi-public-acceptance-street.png",
+        "submissions/296277/railcode-commons/assets/media/v1.1/zhongzhiyuan-trust-court.png",
         "submissions/296277/railcode-commons/assumptions.json",
+        "submissions/296277/railcode-commons/changelog.md",
         "submissions/296277/railcode-commons/compliance_matrix.json",
         "submissions/296277/railcode-commons/design_depth_matrix.json",
         "submissions/296277/railcode-commons/drawings/a0-boards.en.pdf",
@@ -57,13 +80,37 @@
         "submissions/296277/railcode-commons/self_check.json",
         "submissions/296277/railcode-commons/sources.json",
         "submissions/296277/railcode-commons/standard_matrix.json",
+        "submissions/296277/railcode-commons/visual/assets/accessibility_qa.json",
+        "submissions/296277/railcode-commons/visual/assets/asset_rights_ledger.json",
+        "submissions/296277/railcode-commons/visual/assets/bilingual_qa.json",
+        "submissions/296277/railcode-commons/visual/assets/cultural_evidence_matrix.json",
+        "submissions/296277/railcode-commons/visual/assets/delivery_contracts.json",
+        "submissions/296277/railcode-commons/visual/assets/developer_conversion_funnel.json",
+        "submissions/296277/railcode-commons/visual/assets/ecosystem_contracts.json",
+        "submissions/296277/railcode-commons/visual/assets/global_case_studies.json",
+        "submissions/296277/railcode-commons/visual/assets/implementation_readiness.json",
+        "submissions/296277/railcode-commons/visual/assets/key_area_handoff.json",
+        "submissions/296277/railcode-commons/visual/assets/landmark_component_library.json",
+        "submissions/296277/railcode-commons/visual/assets/noto_sans_sc_license.json",
+        "submissions/296277/railcode-commons/visual/assets/official_brief_trace.json",
+        "submissions/296277/railcode-commons/visual/assets/pre_g3_commissioning_plan.json",
+        "submissions/296277/railcode-commons/visual/assets/quantity_cost_method.json",
+        "submissions/296277/railcode-commons/visual/assets/rc-tabletop/README.json",
+        "submissions/296277/railcode-commons/visual/assets/rc-tabletop/contract.json",
+        "submissions/296277/railcode-commons/visual/assets/rc-tabletop/fixtures.json",
+        "submissions/296277/railcode-commons/visual/assets/rc-tabletop/receipts.json",
+        "submissions/296277/railcode-commons/visual/assets/rc-tabletop/run_tabletop.js",
+        "submissions/296277/railcode-commons/visual/assets/regional_collaboration_contracts.json",
+        "submissions/296277/railcode-commons/visual/assets/render_audit.json",
+        "submissions/296277/railcode-commons/visual/assets/review_evidence_map.json",
+        "submissions/296277/railcode-commons/visual/assets/scenario_professional_review_matrix.json",
         "submissions/296277/railcode-commons/visual/index.en.html",
         "submissions/296277/railcode-commons/visual/index.html"
       ],
       "ai_package_stages": {
         "submissions/296277/railcode-commons": "formal"
       },
-      "total_bytes": 8305321,
+      "total_bytes": 15826872,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -123,8 +170,7 @@
       "metrics_seen": {
         "site_area_sqm": 11412825.386,
         "green_ratio": 0.123423,
-        "public_space_ratio": 0.073281,
-        "key_area_count": 3.0
+        "public_space_ratio": 0.073281
       }
     },
     "stderr": ""
@@ -138,15 +184,15 @@
       "summary": {
         "standard_matrix_items": 6,
         "design_depth_items": 15,
-        "known_metric_refs_required": 9,
+        "known_metric_refs_required": 34,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 5,
-          "standard": 8,
+          "source": 6,
+          "standard": 4,
           "depth": 21,
-          "data": 10,
-          "metric": 3
+          "data": 9,
+          "metric": 14
         }
       }
     },

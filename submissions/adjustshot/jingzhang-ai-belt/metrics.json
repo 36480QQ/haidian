@@ -1,0 +1,153 @@
+{
+ "schema_version": "0.2.0",
+ "units": {
+  "length": "m",
+  "area": "sqm"
+ },
+ "geometry_basis": {
+  "status": "known",
+  "source": "geometry/site_boundary.geojson (submitted, based on public data, not official)",
+  "policy": "All area/ratio metrics below are derived from the submitted geometry, not from officially approved boundary. They are subject to recalculation once the official boundary is published."
+ },
+ "metrics": {
+  "site_area_sqm": {
+   "status": "known",
+   "value": 11412825.386,
+   "unit": "sqm",
+   "source_files": [
+    "geometry/site_boundary.geojson"
+   ],
+   "formula": "polygon_area(submitted_boundary)",
+   "confidence": "medium",
+   "assumptions": [
+    "Boundary derived from public data; official boundary not provided in the public site package."
+   ]
+  },
+  "building_footprint_area_sqm": {
+   "status": "known",
+   "value": 310807.184,
+   "unit": "sqm",
+   "source_files": [
+    "geometry/buildings.geojson"
+   ],
+   "formula": "sum(polygon_area(building_footprints))",
+   "confidence": "medium",
+   "assumptions": [
+    "Footprint based on submitted provisional geometry."
+   ]
+  },
+  "green_ratio": {
+   "status": "known",
+   "value": 0.123423,
+   "unit": "ratio",
+   "source_files": [
+    "geometry/green_space.geojson",
+    "geometry/site_boundary.geojson"
+   ],
+   "formula": "green_space_area_sqm / site_area_sqm",
+   "confidence": "medium",
+   "assumptions": [
+    "Denominator is provisional boundary, not official."
+   ]
+  },
+  "public_space_ratio": {
+   "status": "known",
+   "value": 0.073281,
+   "unit": "ratio",
+   "source_files": [
+    "geometry/public_space.geojson",
+    "geometry/site_boundary.geojson"
+   ],
+   "formula": "public_space_area_sqm / site_area_sqm",
+   "confidence": "medium",
+   "assumptions": [
+    "Denominator is provisional boundary, not official."
+   ]
+  },
+  "key_area_count": {
+   "status": "known",
+   "value": 3,
+   "unit": "count",
+   "source_files": [
+    "geometry/key_areas.geojson"
+   ],
+   "formula": "count(key_detailed_design_areas)",
+   "confidence": "high",
+   "assumptions": [
+    "Three required detailed-design key areas per AGENT-TASKBOOK."
+   ]
+  },
+  "road_network_density_km_per_km2": {
+   "status": "unknown",
+   "value": null,
+   "unit": "km/km2",
+   "source_files": [],
+   "formula": "sum(road_centerline_length_m) / site_area_sqm * 1e-3",
+   "confidence": "low",
+   "assumptions": [],
+   "reason": "Conceptual planning target; will be re-derived after official road-network GIS is published."
+  },
+  "blue_green_ratio_target": {
+   "status": "unknown",
+   "value": null,
+   "unit": "ratio",
+   "source_files": [],
+   "formula": "(green + water + public space) / site_area_sqm",
+   "confidence": "low",
+   "assumptions": [],
+   "reason": "Design target combining green + public space + water; revised once field-survey data is available."
+  },
+  "public_service_coverage_target": {
+   "status": "unknown",
+   "value": null,
+   "unit": "ratio",
+   "source_files": [],
+   "formula": "households_within_5min_life_circle / total_households",
+   "confidence": "low",
+   "assumptions": [],
+   "reason": "Conceptual target requiring official facility GIS; cannot be recomputed from the public package."
+  },
+  "total_building_volume_sqm_target": {
+   "status": "unknown",
+   "value": null,
+   "unit": "sqm",
+   "source_files": [],
+   "formula": "retained_existing + new_increment (UNVERIFIED)",
+   "confidence": "low",
+   "assumptions": [],
+   "reason": "ARITHMETIC CONFLICT: building_footprint_area_sqm=310,807.184 m² × assumed FAR 4.0 ≈ 1.243M m², which does NOT reconcile with the previously cited retained 12.0M m². The 12.0M/6.8M/18.80M figures are UNVERIFIED SCENARIOS requiring official floor-area census and FAR control. All three numbers must be re-derived once official data is published; do not treat as computable."
+  },
+  "retained_floor_area_sqm_target": {
+   "status": "unknown",
+   "value": null,
+   "unit": "sqm",
+   "source_files": [],
+   "formula": "sum(footprint * FAR) — UNVERIFIED, awaiting official floor-area census",
+   "confidence": "low",
+   "assumptions": [],
+   "reason": "UNVERIFIED SCENARIO: footprint 310,807 m² × FAR 4.0 = 1.243M m² (not 12.0M m²). Value subject to official census; retained figure to be recalculated."
+  },
+  "new_floor_area_sqm_target": {
+   "status": "unknown",
+   "value": null,
+   "unit": "sqm",
+   "source_files": [],
+   "formula": "(target_FAR * key_area_area) - retained (UNVERIFIED)",
+   "confidence": "low",
+   "assumptions": [],
+   "reason": "UNVERIFIED SCENARIO: new-increment 6.8M m² cannot be recomputed before official FAR control is published. Awaiting official data."
+  },
+  "floor_area_ratio_control": {
+   "status": "unknown",
+   "value": null,
+   "unit": "ratio",
+   "source_files": [
+    "brief/site-package/ranges/planning_limits.json"
+   ],
+   "formula": "total_floor_area_sqm / official_site_area_sqm",
+   "confidence": "unknown",
+   "assumptions": [],
+   "reason": "Approved FAR controls and official site boundary are not present in the public site package."
+  }
+ }
+}

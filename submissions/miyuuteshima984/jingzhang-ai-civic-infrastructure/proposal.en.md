@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Uses City Completeness as the spatial review method for the Centennial Jing-Zhang AI Innovation Belt: seven ordinary-city capabilities—HOME, LEARN, CARE, MOVE, GREEN, WORK and COMMON LIFE—form a durable everyday base first, while AI enters research, community, mobility and commerce as an optional enhancement layer. The structure is one public green spine, six completeness segments, six east-west stitching links and three key areas; Shuangfen Fortress remains only a community-name easter egg inside AI Origin Community."
 tracks: ["ai-origin-community", "ai-public-services", "ai-traffic-walkability"]
 scenarios: ["ai-traffic-walkability", "robot-delivery-low-speed", "enterprise-service-copilot", "ai-cultural-guide", "ai-health-service-navigation"]
-iteration: "v0.5"
+iteration: "v0.10"
 ---
 
 # JING-ZHANG CITY COMPLETENESS
@@ -96,9 +96,13 @@ Public exchange space accompanies all three tasks: an open exchange yard in Zhon
 
 ![C7 gaps and design tasks in the three key areas](assets/figures/key-areas.en.png)
 
+The v0.7 fixed key-area figure is no longer a task card alone. It draws the three distinct ground-floor/public-space sections side by side: a research campus with a physically bounded test pocket; a long-term neighborhood with home—care—rest—commons continuity; and a station-city arrival chain with fixed bilingual signs, staffed help, accessible interchange, ordinary retail and heritage public realm.
+
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
-Five design personas are used: long-term residents and families; students and researchers; founders and company employees; international developers and visiting scholars; and service workers, commuters and visitors. They are tests of whether the design excludes ordinary life, not demographic statistics. [metric:persona_count]
+v0.6 expands the former five grouped personas into nine explicit design-test groups: long-term residents/families; older residents; disabled, mobility-limited or sensory-limited users; children/caregivers; students/researchers; founders/company employees; service workers/commuters; visitors/international users; and people with no smartphone, no account or a deliberate opt-out from digital services. These are used to test benefit, burden, exclusion risk and human fallback, not to claim demographic statistics. [metric:persona_count]
+
+![Nine-persona benefit—burden—non-AI equivalent—appeal matrix](assets/figures/inclusion-burden-matrix.en.svg)
 
 Ten AI+ scenarios answer the same questions: who uses it, where, what real problem exists, what AI does, what the non-AI baseline is, who is accountable, how a human takes over on failure, and how success is evaluated. They are: controlled low-speed robotics in Zhongzhiyuan; shared research equipment and compute; university-result-to-city-problem translation; an accessibility assistant in Shuangfen Fortress; voluntary home-robot tests; community shared-space scheduling; multilingual Jing-Zhang heritage interpretation; complex-transfer and walking assistance; time-limited AI-native retail pilots; and a C7 completeness audit assistant. [metric:ai_scenario_count] [metric:non_ai_baseline_coverage_ratio]
 
@@ -108,7 +112,49 @@ v0.5 expands those ten items from a one-line list into complete scenario cards. 
 
 SCN-01, SCN-05 and SCN-09 provide technology, living-environment and market validation respectively, following “small scope, stoppable, reviewable, then consider expansion”. [metric:industry_test_scenario_count] Three public honour/pilgrimage nodes—Open Test Yard, City Commons Hall and Jing-Zhang Civic Station—must have real public functions before image-making value. [metric:pilgrimage_landmark_count]
 
+v0.6 then selects three **flagship pilot protocols** from the ten scenarios so a reviewer can see how a pilot starts, stops and leaves an evidence receipt: controlled low-speed robotics in Zhongzhiyuan, accessibility/care navigation in AI Origin, and transfer/multilingual guidance in Dazhongsi. Each specifies a non-AI baseline, concept quantity basis, prerequisite evidence gates, a test window, KPI direction, stop threshold, exit receipt and accountability structure. Real permits, contracts, insurance, currency budgets and field performance remain UNKNOWN until verified. [metric:flagship_pilot_count]
+
+![Three flagship pilot protocols: precondition—test—receipt—GO/REVISE/STOP](assets/figures/flagship-pilot-protocols.en.svg)
+
 All scenarios share a governance floor: basic circulation and services work without an app; non-participation does not remove community rights; high-risk decisions escalate to humans; and basic urban functions survive when a model, device, account or platform is withdrawn. This is both technological robustness and public-space equity.
+
+### v0.7 Three Everyday Journeys: Turn Protocols Back into Space
+
+v0.7 no longer treats a reviewer index as the first visual. The three key areas are reorganized around everyday journeys: a researcher and service worker in Zhongzhiyuan move from arrival to R&D, food/rest and a bounded test yard; an older resident, carer and no-phone user in AI Origin move from home to rest, care and civic commons; a commuter, international visitor and service worker in Dazhongsi move from arrival and interchange through ordinary retail to the Jing-Zhang heritage public interface. Each journey requires a complete physical city first; AI is only a switchable enhancement layer.
+
+![Three everyday journeys: ordinary-city baseline—physical repair—optional AI—functioning exit state](assets/figures/everyday-journey-sections.en.svg)
+
+### How AI Changes Urban Form, Not Just Screens
+
+The spatial effect of AI is reduced to six reversible prototypes: test pockets, accessible help nodes, continuous station-city arrival interfaces, replaceable small service nodes, people-first public ground floors, and a reversible spatial version chain—observe, bounded prototype, public/professional review, merge or rollback. This answers how AI changes spatial organization and planning method rather than merely attaching more digital interfaces to existing space.
+
+![How AI changes urban form: six reversible physical interfaces](assets/figures/ai-urban-form-change.en.svg)
+
+<!-- V09-REALITY-START -->
+### v0.10 | DESIGN-FIRST + REALITY: evidence appears only when it changes space
+
+v0.10 keeps the **design-first** hierarchy of the 86-point v0.7 baseline and absorbs only reality anchors that change a spatial decision; the story still starts with everyday public tasks, not evidence indexing or scoring structure. It applies a narrower rule: a public source enters the main design narrative only when it changes a section, interface, node, or the precision of an unknown. This round registers three official-public reality anchors and five explicit design-response rules. [metric:official_constraint_anchor_count] [metric:design_response_rule_count]
+
+![How reality constraints change spatial design rather than becoming a bibliography](assets/figures/reality-constraint-design-response.en.svg)
+
+**Zhichun Road:** the official public response to the draft control plan records this railway-related segment as underpassing the railway and unsuitable for an at-grade junction. [source:HD00-1601-DRAFT-RESPONSE-V09] The proposal therefore stops drawing every east-west stitch as the same surface crossing. Zhichun Road becomes a **vertical-continuity problem to be resolved**, with pedestrian continuity, level changes, accessibility and engineering conditions left for professional verification. No bridge/tunnel alignment or feasibility is claimed.
+
+**Jing-Zhang green edge:** the official planning-response material for Lanjinglijia calls for integration with the Jing-Zhang railway green corridor and improved spatial quality. [source:HD-LANJINGLIJIA-INTEGRATED-RESPONSE-V09] The design response is people-first: continuous walking, staying and public frontage precede AI equipment, logistics and replaceable service modules. The case is not transferred as a parcel control.
+
+**Reality scale references:** three published planning-condition documents cover seven plots, with reference FAR values of 2.20–5.00 and reference height controls of 24–80 m; some also publish density and green-ratio conditions. [source:HD-PLOT-CONDITIONS-REFERENCE-V09] These values answer only “what has appeared in approved plot conditions nearby”; they do not answer “what this proposal should receive”. Proposal `approved_*` metrics remain unknown. [metric:reference_plot_condition_count]
+
+All five response rules are machine-readable in `visual/assets/reality-constraint-register.json`. The fixed `mobility-bluegreen.en.png` is rebuilt to distinguish ordinary stitching, the underpass/vertical-continuity condition, people-first green-corridor frontage, station-city arrival, and the future official-data recomputation trigger.
+<!-- V09-REALITY-END -->
+
+<!-- V010-PROMISES-START -->
+### v0.10 | Three public promises: show how people use the city before showing evidence machinery
+
+v0.10 keeps v0.7's design-first hierarchy and compresses the three key areas into three questions anyone can test: **ARRIVE WITHOUT APP, CARE WITHOUT ACCOUNT, TEST WITHOUT BLOCKING**. Each promise requires an ordinary-city baseline, a spatial move, optional AI, failure recovery and a reality constraint. If one is missing, the urban task is not complete. [metric:public_promise_count]
+
+![Three public promises](assets/figures/three-public-promises.en.svg)
+
+The machine-readable contract is `visual/assets/public-promises-contract.json`. It is not field evidence and does not upgrade public plot conditions, draft-plan material or a green-corridor case into proposal approvals; those sources appear only where they change a spatial decision.
+<!-- V010-PROMISES-END -->
 
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
@@ -166,6 +212,10 @@ v0.5 further engineers implementation as **project—space—proposed role—pre
 
 ![Implementation and long-term operations matrix](assets/figures/implementation-operations-matrix.en.svg)
 
+v0.6 adds **resource quantity basis + RACI + maintenance cadence + prerequisite evidence gates**. Each flagship pilot states concept equipment/interface quantity, A/R/C/I responsibility types, daily/weekly/monthly maintenance rhythms, and pre-start checks for permits, safety, insurance, staffed fallback and data governance; all use a shared `PRECONDITION → TEST → RECEIPT → GO/REVISE/STOP` chain. S/M are concept resource bands, not currency budgets; final FTE, procurement, insurance, contracts and named institutions remain pending real-world confirmation.
+
+![Implementation resource, RACI, maintenance cadence and prerequisite gates](assets/figures/implementation-resource-raci.en.svg)
+
 ## Metrics, Area Recalculation, and Compliance Matrix
 
 Metrics are separated into announced approximate values, conceptual design quantities recalculated from submitted geometry, and statutory/engineering quantities that remain unknown because formal data are missing. Every known metric records formula, source file, confidence and assumptions. Every provisional derived value is recalculated when official polygons become available. [depth:metrics_recalculation]
@@ -202,6 +252,7 @@ Metrics are separated into announced approximate values, conceptual design quant
 | Persona count | [metric:persona_count] |
 | AI+ scenario count | [metric:ai_scenario_count] |
 | Industry test-scenario count | [metric:industry_test_scenario_count] |
+| v0.6 flagship pilot-protocol count | [metric:flagship_pilot_count] |
 | Public honour/pilgrimage node count | [metric:pilgrimage_landmark_count] |
 | Non-AI baseline coverage | [metric:non_ai_baseline_coverage_ratio] |
 
@@ -210,6 +261,8 @@ All nine spatial evidence layers remain traceable: site and key areas are provis
 The empty constraints layer is itself an auditable data gap. Official heritage, road, municipal or other constraints must add features and trigger package-wide review when they arrive. [data:geometry/constraints.geojson#metadata] [metric:constraints_feature_count]
 
 ![City Completeness metrics and evidence gaps](assets/figures/metrics-evidence.en.png)
+
+v0.7 demotes the v0.6 reviewer evidence dashboard/index to a back-of-package traceability appendix. It is no longer part of the design narrative or first-screen visual; scoring, gates and design content remain separate.
 
 ## Risk, Copyright, and Compliance
 
@@ -221,7 +274,7 @@ v0.5 moves privacy principles down to scenario-level data flows. Location/route,
 
 The empty `constraints.geojson` is an active disclosure and does not mean “there are no constraints”. Statutory FAR, height and road area remain unknown; schema sanity bounds or conceptual models are not used to fill them. Figures use locally generated graphics and public/cleared material without commercial map tiles, remote fonts, unlicensed imagery or third-party trademarks. [data:geometry/constraints.geojson#metadata]
 
-AI assisted public-source research, peer scanning, structured writing, GeoJSON, figures, HTML/PDF and validation work. The participant remains responsible for the conceptual direction, the Shuangfen Fortress naming easter egg and the final public submission. `report/copyright_statement.md` now contains a v0.5 per-asset rights and generation ledger covering core PNGs, new SVGs, HTML, PDFs, GeoJSON, font/icon/code status and AI participation. The six international cases in `sources.json` now record access date, intended use, reuse status, limitations, collection and transformation notes. Any real implementation still requires statutory planning, professional design, public participation and competent-authority procedures that this package cannot replace.
+AI assisted public-source research, peer scanning, structured writing, GeoJSON, figures, HTML/PDF and validation work. The participant remains responsible for the conceptual direction, the Shuangfen Fortress naming easter egg and the final public submission. `report/copyright_statement.md` now contains a v0.5/v0.6 per-asset rights and generation ledger covering core PNGs, all new SVGs, HTML, PDFs, GeoJSON, font/icon/code status and AI participation. The v0.6 flagship-pilot, inclusion/burden, RACI, reviewer-index and above-fold dashboard assets are submission-original/AI-assisted SVGs with no embedded third-party logos, images, maps or font files. The six international cases in `sources.json` retain access date, intended use, reuse status, limitations, collection and transformation notes. Any real implementation still requires statutory planning, professional design, public participation and competent-authority procedures that this package cannot replace.
 
 ## References
 

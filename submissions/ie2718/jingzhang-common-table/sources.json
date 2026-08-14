@@ -1,0 +1,163 @@
+{
+  "schema_version": "0.1.0",
+  "sources": [
+    {
+      "id": "SITE-PACKAGE",
+      "title": "Centennial Jing-Zhang AI Belt site package",
+      "publisher": "Open City AI / open-city-ai/haidian",
+      "path": "brief/site-package/design_brief.json",
+      "source_type": "official_public",
+      "accessed_at": "2026-08-14",
+      "license_or_terms": "Repository terms; use only within stated status fields.",
+      "usage": "Task scope, enums, schemas, limits and missing-data status.",
+      "limitations": "Does not provide statutory survey-grade geometry or complete controls."
+    },
+    {
+      "id": "SOURCE-REGISTRY",
+      "title": "Public source registry",
+      "publisher": "Open City AI",
+      "path": "data/source_registry.json",
+      "source_type": "repository_public_registry",
+      "accessed_at": "2026-08-14",
+      "license_or_terms": "Per-record reuse status governs.",
+      "usage": "Distinguishes formal, background and provisional material.",
+      "limitations": "Registry is a navigation and rights layer, not a new authority."
+    },
+    {
+      "id": "PROCESSED-FACT-PACK",
+      "title": "Agent fact pack",
+      "publisher": "Open City AI",
+      "path": "data/processed/agent_fact_pack.md",
+      "source_type": "repository_processed_reference",
+      "accessed_at": "2026-08-14",
+      "license_or_terms": "Repository terms.",
+      "usage": "Navigation across scope and data gaps.",
+      "limitations": "Must be traced back to registered primary sources."
+    },
+    {
+      "id": "BOUNDARY-SOURCE",
+      "title": "Provisional rough overall boundary",
+      "publisher": "Open City AI",
+      "path": "brief/site-package/geometry/provisional_boundaries.geojson",
+      "source_type": "agent_inferred_from_public_data",
+      "accessed_at": "2026-08-14",
+      "license_or_terms": "Concept generation and validation only.",
+      "usage": "Temporary topology and visualization envelope.",
+      "limitations": "Not an official redline, approval basis, precise-area source or parcel boundary."
+    },
+    {
+      "id": "KEY-AREA-SOURCE",
+      "title": "Provisional rough key-area boundaries",
+      "publisher": "Open City AI",
+      "path": "brief/site-package/geometry/provisional_boundaries.geojson",
+      "source_type": "agent_inferred_from_public_data",
+      "accessed_at": "2026-08-14",
+      "license_or_terms": "Concept generation and validation only.",
+      "usage": "Temporary location of three required key areas.",
+      "limitations": "Rectangular edges do not represent roads, parcels or official limits."
+    },
+    {
+      "id": "OFFICIAL-ANNOUNCEMENT",
+      "title": "Centennial Jing-Zhang AI Innovation Belt urban design qualification announcement",
+      "publisher": "Haidian Branch, Beijing Municipal Commission of Planning and Natural Resources",
+      "url": "https://ghzrzyw.beijing.gov.cn/zhengwuxinxi/tzgg/hd/202605/t20260509_4643047.html",
+      "source_type": "official_public",
+      "published_at": "2026-05-09",
+      "accessed_at": "2026-08-14",
+      "license_or_terms": "Public government notice; cite and summarize, no page assets copied.",
+      "usage": "Official tasks, three scope levels and announced approximate areas.",
+      "limitations": "Announcement text does not provide survey-grade polygons or approved controls."
+    },
+    {
+      "id": "AGENT-TASKBOOK",
+      "title": "Agent open-call taskbook",
+      "publisher": "Open City AI",
+      "path": "brief/site-package/agent_taskbook.json",
+      "source_type": "user_provided_cleared",
+      "accessed_at": "2026-08-14",
+      "license_or_terms": "Cleared repository summary.",
+      "usage": "Agent tasks, co-creation charter, scenarios, branding and operations.",
+      "limitations": "Concept taskbook; cannot be read as a government implementation promise."
+    },
+    {
+      "id": "CASE-PUNGGOL",
+      "title": "Punggol Digital District",
+      "publisher": "JTC Corporation, Singapore",
+      "url": "https://www.jtc.gov.sg/punggoldigitaldistrict/",
+      "source_type": "official_public",
+      "accessed_at": "2026-08-14",
+      "license_or_terms": "Copyright retained by publisher; text summarized with citation; no image or code reused.",
+      "usage": "Case mechanism: university-industry-community co-location, open district platform and real-world testbed.",
+      "limitations": "Different land, governance and procurement context; figures are not transferred to Beijing."
+    },
+    {
+      "id": "CASE-BARCELONA",
+      "title": "Science and Innovation",
+      "publisher": "Barcelona City Council",
+      "url": "https://www.barcelona.cat/promocioeconomica/en/what-we-do/employment-business-entrepreneurship-and-innovation/science-and-innovation",
+      "source_type": "official_public",
+      "accessed_at": "2026-08-14",
+      "license_or_terms": "Copyright retained by publisher; text summarized only.",
+      "usage": "Case mechanism: knowledge transfer, public-private governance and 22@ innovation renewal.",
+      "limitations": "No Barcelona target or performance figure is applied to this site."
+    },
+    {
+      "id": "CASE-MARS",
+      "title": "About MaRS",
+      "publisher": "MaRS Discovery District",
+      "url": "https://www.marsdd.com/about/",
+      "source_type": "official_public",
+      "accessed_at": "2026-08-14",
+      "license_or_terms": "Copyright retained by publisher; text summarized only.",
+      "usage": "Case mechanism: connect startups to capital, customers, talent, space and adoption.",
+      "limitations": "Self-reported organizational information; no brand, tenant list or outcome number is reused."
+    },
+    {
+      "id": "CASE-KALASATAMA",
+      "title": "Smart Kalasatama final report overview",
+      "publisher": "Forum Virium Helsinki, City of Helsinki innovation company",
+      "url": "https://forumvirium.fi/en/publication/smartkalasatama-final-report/",
+      "source_type": "official_public",
+      "published_at": "2021-11-16",
+      "accessed_at": "2026-08-14",
+      "license_or_terms": "Copyright retained by publisher; method summarized only.",
+      "usage": "Case mechanism: agile pilots with city, firms, residents and researchers in real environments.",
+      "limitations": "Pilot model requires localization; no pilot result is asserted for Beijing."
+    },
+    {
+      "id": "CASE-SEOUL-AI-CENTER",
+      "title": "Seoul AI Smart City Center opens",
+      "publisher": "Smart City Korea / Seoul AI Foundation",
+      "url": "https://smartcity.go.kr/2025/06/13/%ED%95%9C%EB%88%88%EC%97%90-ai-%EB%AF%B8%EB%9E%98%EB%8F%84%EC%8B%9C-%EC%84%9C%EC%9A%B8%EC%9D%84-%EB%B3%B4%EB%8B%A4-%EC%84%9C%EC%9A%B8ai%EC%8A%A4%EB%A7%88%ED%8A%B8%EC%8B%9C%ED%8B%B0%EC%84%BC%ED%84%B0/",
+      "source_type": "official_public",
+      "published_at": "2025-06-13",
+      "accessed_at": "2026-08-14",
+      "license_or_terms": "Copyright retained by publisher; text summarized only.",
+      "usage": "Case mechanism: free public interpretation of AI in administration and enterprise solutions.",
+      "limitations": "No exhibit design, image or application list is copied."
+    },
+    {
+      "id": "CASE-ROTTERDAM-SENSOR-LAB",
+      "title": "Living Lab Sensible Sensor",
+      "publisher": "City of Rotterdam",
+      "url": "https://www.rotterdam.nl/living-lab-sensible-sensor",
+      "source_type": "official_public",
+      "accessed_at": "2026-08-14",
+      "license_or_terms": "Copyright retained by publisher; text summarized only.",
+      "usage": "Case mechanism: neighbourhood testing of public-space sensors with residents.",
+      "limitations": "Use does not imply endorsement of a particular sensor or data practice."
+    },
+    {
+      "id": "AI-COVER-GENERATION",
+      "title": "Common Table concept cover generation record",
+      "publisher": "OpenAI built-in image generation, directed by Codex",
+      "path": "submissions/ie2718/jingzhang-common-table/assets/media/common-table-cover.png",
+      "source_type": "agent_generated_design",
+      "generated_at": "2026-08-14",
+      "accessed_at": "2026-08-14",
+      "license_or_terms": "Original generated concept asset for this submission; community display under proposal license.",
+      "usage": "Atmospheric cover and public-life concept illustration.",
+      "limitations": "Not observed site evidence, not a photograph, not an engineering rendering; people and buildings are synthetic."
+    }
+  ]
+}

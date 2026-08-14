@@ -26,8 +26,12 @@
         "submissions/lqqk7/every-sense-jingzhang/assets/figures/key-areas.png",
         "submissions/lqqk7/every-sense-jingzhang/assets/figures/land-use-structure.en.png",
         "submissions/lqqk7/every-sense-jingzhang/assets/figures/land-use-structure.png",
+        "submissions/lqqk7/every-sense-jingzhang/assets/figures/metrics-evidence-audit.en.png",
+        "submissions/lqqk7/every-sense-jingzhang/assets/figures/metrics-evidence-audit.png",
         "submissions/lqqk7/every-sense-jingzhang/assets/figures/metrics-evidence.en.png",
         "submissions/lqqk7/every-sense-jingzhang/assets/figures/metrics-evidence.png",
+        "submissions/lqqk7/every-sense-jingzhang/assets/figures/mobility-bluegreen-audit.en.png",
+        "submissions/lqqk7/every-sense-jingzhang/assets/figures/mobility-bluegreen-audit.png",
         "submissions/lqqk7/every-sense-jingzhang/assets/figures/mobility-bluegreen.en.png",
         "submissions/lqqk7/every-sense-jingzhang/assets/figures/mobility-bluegreen.png",
         "submissions/lqqk7/every-sense-jingzhang/assets/figures/site-overview.en.png",
@@ -73,13 +77,18 @@
         "submissions/lqqk7/every-sense-jingzhang/self_check.json",
         "submissions/lqqk7/every-sense-jingzhang/sources.json",
         "submissions/lqqk7/every-sense-jingzhang/standard_matrix.json",
+        "submissions/lqqk7/every-sense-jingzhang/visual/assets/ethics-protocol.json",
         "submissions/lqqk7/every-sense-jingzhang/visual/assets/osm-context/provenance.json",
+        "submissions/lqqk7/every-sense-jingzhang/visual/assets/qa-proofing-record.json",
         "submissions/lqqk7/every-sense-jingzhang/visual/assets/scene-data.js",
         "submissions/lqqk7/every-sense-jingzhang/visual/assets/scene-fallback.en.png",
         "submissions/lqqk7/every-sense-jingzhang/visual/assets/scene-fallback.png",
         "submissions/lqqk7/every-sense-jingzhang/visual/assets/scene.css",
         "submissions/lqqk7/every-sense-jingzhang/visual/assets/scene.js",
+        "submissions/lqqk7/every-sense-jingzhang/visual/assets/seb-change-receipt-op04.json",
         "submissions/lqqk7/every-sense-jingzhang/visual/assets/seb-change-receipt-sample.json",
+        "submissions/lqqk7/every-sense-jingzhang/visual/assets/seb-op04-chain-data.json",
+        "submissions/lqqk7/every-sense-jingzhang/visual/assets/seb-op04-chain-run.js",
         "submissions/lqqk7/every-sense-jingzhang/visual/assets/seb-spec.json",
         "submissions/lqqk7/every-sense-jingzhang/visual/assets/seb-tabletop-fixtures.json",
         "submissions/lqqk7/every-sense-jingzhang/visual/assets/seb-tabletop-run.js",
@@ -89,7 +98,7 @@
       "ai_package_stages": {
         "submissions/lqqk7/every-sense-jingzhang": "formal"
       },
-      "total_bytes": 40222270,
+      "total_bytes": 31662889,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -171,15 +180,15 @@
       "summary": {
         "standard_matrix_items": 9,
         "design_depth_items": 15,
-        "known_metric_refs_required": 18,
+        "known_metric_refs_required": 21,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
           "source": 32,
           "standard": 9,
           "depth": 15,
-          "data": 27,
-          "metric": 28
+          "data": 29,
+          "metric": 30
         }
       }
     },

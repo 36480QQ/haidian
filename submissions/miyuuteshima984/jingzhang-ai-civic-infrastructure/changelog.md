@@ -1,5 +1,42 @@
 # 方案迭代记录
 
+
+
+## v0.10 - 2026-08-13
+
+- Returned to the 86-point v0.7 design-first package baseline, then absorbed only the v0.9 reality anchors that materially change spatial decisions.
+- Added three memorable public-space promises: ARRIVE WITHOUT APP, CARE WITHOUT ACCOUNT, and TEST WITHOUT BLOCKING.
+- Rebuilt the fixed `site-overview*.png` reviewer input so the overall structure is read through ordinary urban tasks and AI-OFF recovery rather than a reviewer-facing dashboard.
+- Kept the v0.7 key-area spatial sections, added reality-aware mobility logic, and preserved all provisional/unknown statutory boundaries.
+
+## v0.9 - 2026-08-13
+
+- reality-anchored 并行候选：只把能改变空间判断的公开原始证据放入主叙事。
+- 新增 3 组官方现实锚点与 5 条“现实约束 → 空间响应”规则。
+- 登记 7 个公开规划条件地块作不可外推的现实强度参照；本案 approved FAR/height 继续 unknown。
+- 重建固定 `mobility-bluegreen*.png`，区分普通缝合、知春路竖向连续性、绿廊人优先界面和站城到达。
+
+## v0.7 - 2026-08-13
+
+- Added three current official Haidian public sources (2025 Urban Renewal Guide, 2025 implementation guide, and 2025 Q4 AI-district progress) and split implementation into reversible low-disturbance actions versus changes that require real project generation, implementation-plan review and permitting.
+- Rebuilt the mandatory bilingual `key-areas.png` core figure as three actual spatial sections—innovation campus, long-term neighborhood and station-city everyday district—so the Review Agent fixed visual packet sees spatial differentiation directly rather than reviewer-oriented task cards.
+- Reversed the v0.6 rubric-first presentation after #2143 merged at Review Agent 76/100 despite all four gates passing: the above-fold reviewer dashboard is demoted to traceability and the first visual returns to actual urban experience.
+- Added bilingual three everyday journey diagrams for Zhongzhiyuan, AI Origin and Dazhongsi: ordinary-city baseline, physical repair, optional AI enhancement and a functioning failure/exit route.
+- Added bilingual AI-urban-form prototypes: bounded test pockets, accessible help thresholds, continuous arrival interfaces, replaceable service nodes, people-first public ground floors and reversible spatial versioning.
+- Started from upstream main `0f051ddb5b91bf5e1992a1b32b8c3b2763978fc8` to inherit the latest validator/schema changes.
+
+## v0.6 - 2026-08-12
+
+- Started from merged v0.5 exact head `caa654366f5ecbd3b7ab2e782ec65fe3192af0cf`, whose upstream PR #2062 was accepted at Review Agent 83/100 with mandatory rejection and all four local gates passed.
+- Added bilingual **three flagship pilot protocols** for Zhongzhiyuan low-speed robot testing, AI Origin accessibility/care navigation and Dazhongsi transfer/multilingual guidance. Each protocol now exposes a non-AI baseline, quantity basis, prerequisite evidence gates, test window, KPI direction, stop threshold, exit receipt and accountable-role structure without inventing real permits, contracts, budgets or field performance.
+- Added a bilingual **nine-persona inclusion and burden matrix** covering long-term residents/families, older people, disabled or sensory-limited users, children/caregivers, students/researchers, founders/firms, service workers/commuters, visitors/international users and no-smartphone/no-account/opt-out users. Each row records benefit, burden/exclusion risk, non-AI equivalent and human help/appeal path.
+- Added bilingual **implementation resource + RACI evidence gates** with concept quantity basis, A/R/C/I responsibility, maintenance cadence, prerequisite gates and a shared PRECONDITION → TEST → RECEIPT → GO/REVISE/STOP decision chain. Currency cost, final FTE, procurement, insurance and named institutional responsibility remain UNKNOWN until verified.
+- Added a bilingual **reviewer evidence index** mapping the seven public rubric dimensions and mandatory agent.1–agent.6 tasks to inspectable proposal/figure/JSON/GeoJSON evidence and explicit claim boundaries. The index is traceability infrastructure, not a self-score.
+- Added a bilingual **review evidence dashboard** and moved it above the fold of both offline visual pages so the Review Agent's HTML screenshot can directly see core metrics, three flagship pilots, inclusion, implementation gates and claim limits instead of relying on supplemental assets hidden far below the first viewport.
+- Corrected the offline visual self-check wording: v0.5 official PASS/merge is now recorded accurately, while v0.6 does not pre-claim final PASS until manifest refresh and persisted self-check are rerun on the final exact head.
+- Expanded visible task coverage from five generic personas to nine explicit user groups and from broad operations language to RACI, quantity basis, maintenance cadence, prerequisite gates and stop receipts.
+- Current v0.6 remains in design integration. Proposal narrative, report HTML, A3/A0 first pages, manifest hashes and persisted self-check must still be synchronized before a v0.6 PR is opened.
+
 ## v0.5 - 2026-08-12
 
 - Follow-up enhancement after merged upstream PR #1954, whose final intake decision recorded Review Agent score 71/100 with mandatory rejection and all four local gates passed.

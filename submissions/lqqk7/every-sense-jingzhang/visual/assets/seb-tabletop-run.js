@@ -14,10 +14,26 @@
  * performance metric value. It demonstrates one thing only: whether the criteria
  * can be executed by a machine, item by item.
  *
+ * 判据来源 / Where the criteria come from
+ * 自基准 v0.2 起，本工具不再持有任何私有词表、私有正则或私有适用范围推导：拒绝
+ * 词表读自 node_schema 各字段的 constraint_machine_rule，闸门比对读自
+ * level_definitions 的结构化 gate_binding，分母完整性的适用范围读自
+ * denominator_integrity_applies_to。工具只负责执行，判据的内容一律由基准条文规定；
+ * 三处升格的经过见变更回执 CR-2026-08-12-002。
+ * From baseline v0.2 this tool holds no private word list, no private pattern and no
+ * private scope inference: the refusal lists come from constraint_machine_rule on the
+ * node_schema fields, the gate comparison comes from the structured gate_binding of
+ * level_definitions, and the scope of denominator integrity comes from
+ * denominator_integrity_applies_to. The tool only executes; the baseline states every
+ * criterion. The promotion of all three is recorded in change receipt CR-2026-08-12-002.
+ *
  * 用法 / Usage: node seb-tabletop-run.js
  * 零依赖，仅使用 Node 内置模块 / Zero dependencies, Node built-ins only.
  * 退出码 0 表示全部样例的判定与 expected_verdict 一致。
  * Exit code 0 means every fixture verdict matched its expected_verdict.
+ * 退出码 2 表示基准版本过低或基准与样例不一致，此时不作任何判定。
+ * Exit code 2 means the baseline version is too low or baseline and fixtures disagree,
+ * and no verdict is issued.
  */
 
 "use strict";
@@ -30,29 +46,12 @@ const SPEC_PATH = path.join(HERE, "seb-spec.json");
 const FIXTURES_PATH = path.join(HERE, "seb-tabletop-fixtures.json");
 const NODE_SOURCE_PATH = path.join(HERE, "..", "..", "geometry", "constraints.geojson");
 
-// 把 node_schema 中"不得填写仍依赖同一系统的路径"这句自然语言约束实现为可执行的
-// 拒绝词表。词表是本推演工具的解释，不是基准条文本身，见变更回执 CR-2026-08-12-001。
-// Machine-executable deny list standing in for the natural-language constraint
-// "must not name a route that still depends on the same system". The list is this
-// tool's interpretation, not baseline text; see change receipt CR-2026-08-12-001.
-const SAME_SYSTEM_PATTERNS = [
-  "线上办理", "在线办理", "网上办理", "扫码", "二维码", "小程序",
-  "下载应用", "关注公众号", "注册账户", "登录账号",
-  "online service", "scan the qr", "download the app", "register an account",
-];
-
-// 把"须写明可被找到的角色，不得只写机构名称"实现为角色词表。
-// Machine-executable role lexicon for "must name a findable role, not only an organisation".
-const ROLE_TOKENS = [
-  "人员", "值守", "岗位", "主持人", "代表", "专员", "维护者", "服务员",
-  "operator", "officer", "steward", "attendant", "staff",
-];
-
-// 分母完整性规则要求与完成数一并报告的失败类别。
-// Failure categories the denominator-integrity rule requires alongside completions.
-const REQUIRED_DENOMINATOR_CATEGORIES = [
-  "completed", "withdrawn", "technical_fault", "non_completion_other",
-];
+// 本工具要求的最低基准版本。低于此版本的基准把 ai_off_path 的拒绝依据、等级闸门与
+// 分母完整性的适用范围留给实现自行解释，本工具拒绝在那种条件下作出判定。
+// Minimum baseline version. Below it the baseline leaves the ground for refusing an
+// ai_off_path value, the level gates and the scope of denominator integrity to the
+// implementation, and this tool refuses to rule under those conditions.
+const MIN_SPEC_VERSION = [0, 2, 0];
 
 // 拒绝理由的双语解释 / Bilingual explanation of each rejection reason.
 const REASON_TEXT = {
@@ -60,8 +59,9 @@ const REASON_TEXT = {
   NODE_ENUM_INVALID: ["字段取值不在允许集合内", "field value falls outside the allowed set"],
   "NODE_CONSTRAINT_VIOLATION:ai_off_path": ["AI 关闭后的路径仍依赖同一系统，等价性不成立", "the AI-off route still depends on the same system, so equivalence does not hold"],
   "NODE_CONSTRAINT_VIOLATION:human_handoff": ["人工接管只写了机构，没有可被找到的角色", "human takeover names an organisation, not a findable role"],
+  RULE_TYPE_UNSUPPORTED: ["基准声明了本工具尚未实现的规则类型，不作判定", "the baseline declares a rule type this tool does not implement, so no verdict is issued"],
   DENOMINATOR_SAMPLE_DROPPED: ["分母删除了失败样本，该次测量作废", "a failed sample was dropped from the denominator, voiding that measurement"],
-  METRIC_ID_UNKNOWN: ["指标不在基准评分口径内", "the metric lies outside the baseline scoring definitions"],
+  METRIC_ID_UNKNOWN: ["指标既不在适用清单也不在排除清单内，归属须由基准登记", "the metric appears in neither the included nor the excluded list, and only the baseline may register where it belongs"],
   LEVEL_UNKNOWN: ["等级不在基准定义内", "the level is not defined by the baseline"],
   LEVEL_BINDING_MISSING: ["等级绑定字段不齐，四项缺一即不得升级", "a level binding field is missing; all four are required before any upgrade"],
   LEVEL_GATE_MISMATCH: ["申报等级与节点所处闸门不一致", "the claimed level and the node gate disagree"],
@@ -81,15 +81,94 @@ function component(spec, componentId) {
 
 function containsAny(value, patterns) {
   const text = String(value).toLowerCase();
-  return patterns.some((pattern) => text.includes(pattern.toLowerCase()));
+  return patterns.some((pattern) => text.includes(String(pattern).toLowerCase()));
 }
 
 function explain(code) {
   return REASON_TEXT[code] || REASON_TEXT[code.split(":")[0]] || ["", ""];
 }
 
-// 组件一：节点 schema 五个必填字段与两条取值约束。
-// Component 1: the five required node fields and the two value constraints.
+function parseVersion(value) {
+  return String(value || "0").split(".").map((part) => parseInt(part, 10) || 0);
+}
+
+function versionAtLeast(value, minimum) {
+  const actual = parseVersion(value);
+  for (let i = 0; i < minimum.length; i += 1) {
+    const left = actual[i] || 0;
+    if (left > minimum[i]) return true;
+    if (left < minimum[i]) return false;
+  }
+  return true;
+}
+
+// 兼容校验：基准版本须达到 v0.2，样例须声明与之相同的基准版本。任一不满足即停止，
+// 不作任何判定——这一步本身就是版本治理的执行，不是可选的礼貌检查。
+// Compatibility gate: the baseline must be at least v0.2 and the fixtures must declare
+// the same baseline version. Either failure stops the run before any verdict, which is
+// version governance being executed rather than a courtesy check.
+function checkCompatibility(spec, fixtureFile) {
+  const problems = [];
+  if (!versionAtLeast(spec.version, MIN_SPEC_VERSION)) {
+    problems.push(
+      `基准版本 ${spec.version} 低于本工具要求的 ${MIN_SPEC_VERSION.join(".")}；`
+        + `v0.2 之前的基准未给出机器可读的拒绝依据与闸门绑定 / baseline version `
+        + `${spec.version} is below the required ${MIN_SPEC_VERSION.join(".")}`
+    );
+  }
+  const declared = fixtureFile.consumes && fixtureFile.consumes.spec_version;
+  if (declared !== spec.version) {
+    problems.push(
+      `样例声明的基准版本 ${declared} 与基准文件的 ${spec.version} 不一致 / `
+        + `fixtures declare baseline ${declared} but the baseline file is ${spec.version}`
+    );
+  }
+  return problems;
+}
+
+// 基准自洽检查，规则本身写在 denominator_integrity_applies_to.completeness_rule 中：
+// 适用与排除清单的并集须恰好等于评分口径的指标集合，外部排除项须全部不在其中。
+// Baseline self-consistency, required by denominator_integrity_applies_to.completeness_rule:
+// the union of the included and excluded lists must equal the metric set exactly, and no
+// externally excluded metric may appear in it.
+function checkSpecConsistency(scoring) {
+  const applies = scoring.denominator_integrity_applies_to;
+  const problems = [];
+  const known = new Set(scoring.metrics.map((item) => item.metric_id));
+  const listed = new Set([
+    ...applies.included_metric_ids,
+    ...applies.excluded_metric_ids.map((item) => item.metric_id),
+  ]);
+  for (const id of known) {
+    if (!listed.has(id)) problems.push(`评分口径中的 ${id} 未在适用或排除清单中登记 / ${id} is registered in neither list`);
+  }
+  for (const id of listed) {
+    if (!known.has(id)) problems.push(`清单中的 ${id} 不在评分口径内 / ${id} is listed but is not a scoring definition`);
+  }
+  for (const item of applies.excluded_external_metric_ids) {
+    if (known.has(item.metric_id)) {
+      problems.push(`${item.metric_id} 被登记为外部指标，却出现在评分口径内 / ${item.metric_id} is registered as external yet appears in the definitions`);
+    }
+  }
+  return problems;
+}
+
+// 组件一：节点 schema。必填字段的存在性与枚举由 schema 本身规定，取值约束一律来自
+// 字段自带的 constraint_machine_rule；不带该字段的字段不施加任何取值约束。
+// Component 1: node schema. Presence and enumeration come from the schema itself, every
+// value constraint comes from the field's own constraint_machine_rule, and a field
+// without one carries no value constraint at all.
+function applyMachineRule(value, rule) {
+  if (!rule) return null;
+  if (rule.type === "forbidden_dependency") {
+    return containsAny(value, rule.forbidden_targets) ? rule.violation_code : null;
+  }
+  if (rule.type === "required_role_token") {
+    return containsAny(value, rule.required_tokens) ? null : rule.violation_code;
+  }
+  return `RULE_TYPE_UNSUPPORTED:${rule.type}`;
+}
+
 function checkNodeSchema(node, schema) {
   const reasons = [];
   for (const field of schema.required_fields) {
@@ -101,41 +180,48 @@ function checkNodeSchema(node, schema) {
     if (field.type === "enum" && !field.allowed_values.includes(value)) {
       reasons.push(`NODE_ENUM_INVALID:${field.field}`);
     }
-    if (field.field === "ai_off_path" && containsAny(value, SAME_SYSTEM_PATTERNS)) {
-      reasons.push("NODE_CONSTRAINT_VIOLATION:ai_off_path");
-    }
-    if (field.field === "human_handoff" && !containsAny(value, ROLE_TOKENS)) {
-      reasons.push("NODE_CONSTRAINT_VIOLATION:human_handoff");
-    }
+    const violation = applyMachineRule(value, field.constraint_machine_rule);
+    if (violation) reasons.push(violation);
   }
   return reasons;
 }
 
-// 组件二：评分口径的分母完整性。适用范围由分母文字推导——凡分母写明"有效"样本或
-// "成对测试样本"的指标，都属于参与者任务型测量，必须保留失败样本。
-// Component 2: denominator integrity. Scope is derived from the denominator wording:
-// any metric whose denominator names "valid" samples or paired-test samples is a
-// participant-task measurement and must keep its failed samples.
+// 组件二：评分口径的分母完整性。适用范围与必报类别都读自基准，工具不再从分母文字
+// 推导范围；排除清单内的指标（含两项文件完整性型指标）直接放行，两个清单都没有的
+// 指标报 METRIC_ID_UNKNOWN，交由基准登记而不是由工具决定。
+// Component 2: denominator integrity. Both the scope and the categories that must be
+// reported come from the baseline, so the tool no longer infers scope from denominator
+// wording. A metric on the excluded list, including the two file-completeness metrics,
+// passes straight through; a metric on neither list is reported as METRIC_ID_UNKNOWN and
+// left for the baseline to register rather than for the tool to decide.
 function checkDenominator(declaration, scoring) {
   if (!declaration) return [];
+  const applies = scoring.denominator_integrity_applies_to;
+  const metricId = declaration.metric_id;
+  const excluded = new Set([
+    ...applies.excluded_metric_ids.map((item) => item.metric_id),
+    ...applies.excluded_external_metric_ids.map((item) => item.metric_id),
+  ]);
+  if (excluded.has(metricId)) return [];
+  if (!applies.included_metric_ids.includes(metricId)) return [`METRIC_ID_UNKNOWN:${metricId}`];
+
   const reasons = [];
-  const metric = scoring.metrics.find((item) => item.metric_id === declaration.metric_id);
-  if (!metric) return [`METRIC_ID_UNKNOWN:${declaration.metric_id}`];
-  const denominator = metric.denominator_zh || "";
-  if (!denominator.includes("有效") && !denominator.includes("成对测试样本")) return reasons;
+  const code = scoring.denominator_integrity_violation_code;
   const declared = new Set(declaration.denominator_categories_declared || []);
-  for (const category of REQUIRED_DENOMINATOR_CATEGORIES) {
-    if (!declared.has(category)) reasons.push(`DENOMINATOR_SAMPLE_DROPPED:${category}`);
+  for (const entry of scoring.denominator_integrity_required_categories) {
+    if (!declared.has(entry.category)) reasons.push(`${code}:${entry.category}`);
   }
   for (const category of declaration.denominator_categories_excluded || []) {
-    reasons.push(`DENOMINATOR_SAMPLE_DROPPED:${category}`);
+    reasons.push(`${code}:${category}`);
   }
-  return reasons;
+  return [...new Set(reasons)];
 }
 
-// 组件三：等级定义。四项绑定字段缺一不可，且申报等级须与节点所处闸门一致。
-// Component 3: level definitions. All four binding fields are required, and the
-// claimed level must agree with the gate the node sits at.
+// 组件三：等级定义。四项绑定字段缺一不可；闸门比对直接取结构化的 gate_binding.gate_id，
+// 不再从自由文本抽取，gate_id 为 none 时不比对。
+// Component 3: level definitions. All four binding fields are required, and the gate
+// comparison reads gate_binding.gate_id directly instead of extracting it from free
+// text; where gate_id is none, no comparison is made.
 function checkLevel(claim, levels, node) {
   const level = levels.levels.find((item) => item.level_id === (claim && claim.level_id));
   if (!level) return [`LEVEL_UNKNOWN:${claim ? claim.level_id : "none"}`];
@@ -146,9 +232,9 @@ function checkLevel(claim, levels, node) {
       reasons.push(`LEVEL_BINDING_MISSING:${field}`);
     }
   }
-  const expectedGate = (String(level.gate).match(/G[0-3]/) || [])[0];
-  if (expectedGate && node && node.gate_id && node.gate_id !== expectedGate) {
-    reasons.push("LEVEL_GATE_MISMATCH");
+  const binding = level.gate_binding || {};
+  if (binding.gate_id && binding.gate_id !== "none" && node && node.gate_id && node.gate_id !== binding.gate_id) {
+    reasons.push(levels.gate_violation_code);
   }
   return reasons;
 }
@@ -210,15 +296,62 @@ function evaluate(fixture, parts, nodeSource) {
   };
 }
 
+// 判据来源摘要：把本次判定所依据的条文出处直接打印出来，读者不必读代码即可确认
+// 每一条规则来自基准而不是来自工具。
+// Rule provenance: print where each criterion applied in this run comes from, so a
+// reader can confirm without reading the code that the rules are the baseline's.
+function provenanceLines(parts) {
+  const lines = [];
+  for (const field of parts.schema.required_fields) {
+    const rule = field.constraint_machine_rule;
+    if (!rule) continue;
+    const terms = rule.forbidden_targets || rule.required_tokens || [];
+    lines.push(
+      `    ${field.field.padEnd(13)} : ${rule.type} · ${terms.length} 项词表来自基准条文 / `
+        + `${terms.length} terms from baseline text`
+    );
+  }
+  const l4 = parts.levels.levels.find((item) => item.level_id === "L4");
+  lines.push(
+    `    等级闸门 / Level gates : 结构化 gate_binding，L4 = ${l4.gate_binding.gate_id} `
+      + `${l4.gate_binding.timing} 由基准明文规定 / stated by the baseline, not inferred`
+  );
+  const applies = parts.scoring.denominator_integrity_applies_to;
+  lines.push(
+    `    分母完整性 / Denominator integrity : 适用 ${applies.included_metric_ids.length} 项、`
+      + `排除 ${applies.excluded_metric_ids.length} 项，另排除 ${applies.excluded_external_metric_ids.length} 项文件完整性型指标 / `
+      + `${applies.included_metric_ids.length} in scope, ${applies.excluded_metric_ids.length} out, `
+      + `${applies.excluded_external_metric_ids.length} file-completeness metrics excluded`
+  );
+  lines.push("    本工具不持有任何私有词表、私有正则或私有适用范围推导");
+  lines.push("    this tool holds no private word list, no private pattern and no private scope inference");
+  return lines;
+}
+
 function main() {
   const spec = readJson(SPEC_PATH);
   const fixtureFile = readJson(FIXTURES_PATH);
+
+  const compatibility = checkCompatibility(spec, fixtureFile);
+  if (compatibility.length > 0) {
+    process.stderr.write("兼容校验未通过，不作任何判定 / compatibility gate failed, no verdict issued\n");
+    compatibility.forEach((line) => process.stderr.write(`    ${line}\n`));
+    return 2;
+  }
+
   const parts = {
     schema: component(spec, "node_schema"),
     scoring: component(spec, "scoring_definitions"),
     levels: component(spec, "level_definitions"),
     rules: component(spec, "decision_rules"),
   };
+
+  const consistency = checkSpecConsistency(parts.scoring);
+  if (consistency.length > 0) {
+    process.stderr.write("基准自洽检查未通过，不作任何判定 / baseline self-consistency failed, no verdict issued\n");
+    consistency.forEach((line) => process.stderr.write(`    ${line}\n`));
+    return 2;
+  }
 
   let nodeSource = null;
   try {
@@ -233,6 +366,13 @@ function main() {
   out.push(`样例 / Fixtures : ${fixtureFile.fixtures_id} v${fixtureFile.version} · ${fixtureFile.fixtures.length} 条 / items`);
   out.push("性质 / Nature   : 方法学演示，无真实参与者，不产生任何绩效指标数值");
   out.push("                  methodology demonstration, no real participant, no performance metric value");
+  out.push("");
+  out.push("[R] 判据来源 / Rule provenance");
+  provenanceLines(parts).forEach((line) => out.push(line));
+  out.push("");
+  out.push("[S] 基准自洽 / Baseline self-consistency");
+  out.push(`    适用与排除清单的并集 = 评分口径 ${parts.scoring.metrics.length} 项指标 / the two lists cover all ${parts.scoring.metrics.length} metric ids`);
+  out.push("    文件完整性型指标不在评分口径内，按基准明文排除 / the file-completeness metrics lie outside the definitions and are excluded by baseline text");
   out.push("");
   out.push("[0] 节点数据对齐 / Node-data alignment");
 
