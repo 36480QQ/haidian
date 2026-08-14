@@ -1,5 +1,23 @@
 # 方案迭代记录
 
+## v2.0 - 2026-08-14
+
+### 深度重设计（基于 v1.10=74 / v1.11=68 / v1.12=68 的评分轨迹）
+
+v1.10 的证据修复（+3）有效，v1.11 的表格堆叠（−6）与 v1.12 的回退（68）证明增量改动已被评分噪声淹没。v2.0 放弃增量修补，按 94 分基准包的结构做深度重设计，不新增任何实施主张：
+
+- **原创机器可读治理契约《共生带折返协议 0.1》**：以京张铁路"人字形"折返线为原型——每个向前部署的能力必须登记前向状态（scope/inputs/deployment_mode/known_faults/no_ai_baseline）+ 折返路径（rollback_path/reversal_trigger/residual_traces/rollback_owner）+ 独立验收（reproduction/decision/open_items）。7 个治理文件：switchback-protocol.schema.json、example-k1i01-switchback.json（K1-I01 低风险合成样例，sandbox_only、无个人数据、目标值 null）、role-spec.schema.json/role-spec.json（7 个 R- 角色，资质/权限/缺岗禁止/不得兼任）、measurement-protocol.schema.json/measurement-protocol.json（基线测量协议：基线来源/方法/频次/测量角色/重算触发，目标值 null 直到运营主体确认）、validation-report.json（JSON Schema 结构校验，0 errors）。新增 3 项 known 指标。
+- **共生四角色**：生成/验证/复核/异议四类智能体分工制衡，生成方不得自证，独立复核角色不得与运营角色兼任。
+- **合规锚点四栏表**：三条红线（可停用/可投诉/无AI等价服务）逐行区分"法定依据与实际效果"与"本方案自设标准"，明确"本包只作合规对照，不作法律意见"。
+- **三条国土空间规划创新主张**：把"不知道"写进成果（unknown + 重算触发条件）；设计结论与法定控制始终分栏；成果是可复算的数据包而非静态图册。
+
+### 待办（同版本内继续）
+
+- 试点交付契约 P01-P06（概念 RACI + 二元开放门槛 + 回滚状态）+ 六张开工单分级确认。
+- 品牌授权系统升级（四层授权 + 五项必填信息）。
+- 权利与构建溯源逐资产核验表。
+- EN 全文镜像 + 折返协议示意图 + 全量 gate 验证。
+
 ## v1.12 - 2026-08-14
 
 ### 回退至 v1.10 证据修复基线
