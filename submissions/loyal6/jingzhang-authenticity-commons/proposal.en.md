@@ -37,6 +37,15 @@ The direct basis is the official call, Agent taskbook, repository source registr
 
 Eleven official or first-party cases support provenance, blind testing, risk governance, public registers, procurement clauses, engineering handover, media literacy and industrial-heritage reuse, but none supplies a universal trust template. C2PA verifies association with a provenance claim, not factual truth; NIST OpenMFC and AI RMF support multiple measures, monitoring and human oversight; Helsinki and Amsterdam offer register, feedback and procurement-lifecycle lessons; Zollverein shows industrial heritage as working civic infrastructure. JZAC's original increment is to organize these mechanisms as a spatial loop with urban correction rights and same-channel recovery [source:CASE-C01] [source:CASE-C04] [source:CASE-C10].
 
+### How JZAC Differs from an Ordinary Verification Center
+
+| Dimension | Ordinary verification center | JZAC |
+| --- | --- | --- |
+| Objective | Produce a true/false conclusion | Govern evidence, ownership, correction and recovery |
+| Space | Back-office test or single counter | Four-stage service prototypes across three areas |
+| Rights | Submit and wait for a result | Know basis, reach a human, pause for review and recover through the same channel |
+| Exit | Continue after a model update | Inject failure, repair and retest, or retire |
+
 | Case | Transferable mechanism | Jing-Zhang application | Explicit non-transfer |
 | --- | --- | --- | --- |
 | C01 C2PA Content Credentials | Signed provenance, edit history and revocation | Provenance receipts for heritage and creative work | Valid provenance does not establish factual truth |
@@ -143,6 +152,13 @@ Long-term operation is not continuous exhibition but a cycle of problem call, au
 
 The 0–18 month phase starts with S–M resource projects in existing service spaces: JZAC-01 screenless service protocol, JZAC-02 licensed multimodal benchmark, JZAC-04 same-channel correction and JZAC-06 media-literacy course. The first 90 days have four stages: days 1–15 establish ownership, authority and channel baselines; days 16–45 run heritage, health and procurement relay chains; days 46–70 inject missing source, missing owner, human-channel outage, correction-return failure and deletion-proof failure; days 71–90 independently adopt, modify or retire. The pilot stops immediately without an owner, lawful or synthetic material, or a correction-return channel [metric:pilot_duration_days] [data:geometry/phasing.geojson#PHASE-001].
 
+| PILOT-A stage | Accountable role | Deliverable | Indicator | Stop condition |
+| --- | --- | --- | --- | --- |
+| Days 1–15 | Site owner / pilot lead | Authorized material, channel inventory and baseline | Owner and lawful material confirmed | Stop if either is absent |
+| Days 16–45 | Test and review team | Failure dossier and review receipt | Human review of adverse conclusions | Stop if review is unavailable |
+| Days 46–70 | Channel owner | Failure-injection and return log | Correction returns to original channel | Pause if return fails |
+| Days 71–90 | Independent review role | Adopt, modify or retire decision | Recovery evidence complete | Do not continue without recovery evidence |
+
 During months 18–36, only after official geometry, ownership, building, fire, structure, access and cost evidence, JZAC-03 adapts the three prototypes and six stations, JZAC-05 builds procurement dossiers and JZAC-07 builds creator/heritage records. During months 36–60, JZAC-08 corridor governance and annual rights audit proceed only with independent impact evidence, stable public funding and competent statutory procedure. Every phase has entry conditions, accountable roles, acceptance evidence, stop triggers and asset/data recovery [data:geometry/phasing.geojson#PHASE-002] [depth:phasing_implementation].
 
 No monetary range is fabricated. Projects use S (existing counter, staff training and paper/telephone workflow), M (reversible fit-out, isolation equipment and access improvement) and L (multi-organization evaluation facility) resource bands, with staffing, fit-out, equipment, data, accessibility, audit and recovery cost components. Monetary ranges require quantities, ownership conditions and authoritative local cost references. Core public screenless service remains free; selling case data and monetizing opaque scoring are prohibited [source:CASE-C07] [depth:renewal_project_list].
@@ -158,6 +174,8 @@ Operational baselines remain pending: human handover time, same-channel correcti
 ## Risk, Rights, Copyright and Compliance
 
 The highest risk is false authority: packaging a drifting detector as a final verdict may deny service, damage reputation and exclude people. JZAC has no universal truth score, automated blacklist, content-removal power or claim of government certification. Provenance, forensic detection, external evidence and human judgement remain separate. High-impact adverse conclusions require two-person review; every result has purpose, expiry, revocation and appeal; there is no cross-service profiling, face database or automatic denial of health, education, civic or business service [depth:risk_missing_data] [source:C2PA-HARMS].
+
+The compliance boundary is explicit and parallel: public material stays within licensed use, privacy uses minimization and scenario isolation, copyright retains source/permission/revocation records, approval remains uncertain, and every high-impact adverse conclusion requires human review.
 
 The main report, HTML, A3, A0 and five text-bearing figures have English counterparts. The offline visual loads no CDN, remote map, font, form, iframe, tracker or network request. The AI-generated cover is disclosed. The five figures derive from the package GeoJSON, metrics and structured protocols; the PDFs use the same figures and have been rendered page by page for visual inspection. Short video is deferred and does not reduce the completeness of the static professional package. Every spatial move is conceptual material for professional deepening, not approved planning, final ownership, committed investment or guaranteed delivery.
 

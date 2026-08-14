@@ -2,6 +2,9 @@
 
 ## v1.2.0 - 2026-08-14
 
+- Positioned this release as a visibility-and-consistency repair: synchronized v1.2 labels, added a four-line originality comparison, explicit implementation gates and one parallel compliance boundary statement.
+- Rebuilt only the bilingual key-area figure as three spatial service prototypes with people/material flows, daily-test-recovery states, accessible human handover, owners, pause points and recovery exits.
+- Added the bilingual PILOT-A heritage digital-content mislabeling execution card to the offline visual and all four drawing PDFs; operating KPI baselines remain pending field measurement.
 - Restored the v1.0 breadth of global cases, taskbook alignment, industry ecosystem, cultural identity and long-term operation without removing the v1.1 correction-and-recovery core.
 - Added a bilingual one-page taskbook map and an 11-case transfer/non-transfer table to the main narrative.
 - Made regional synergy explicit as five proposed interfaces while clearly avoiding claims of existing partnerships.
