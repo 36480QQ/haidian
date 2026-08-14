@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "e844175c7366d30b937124809b4f514bf9aadaffa8e273da89a2cb491ac4afc1"
+      "sha256": "d32b5bfbd463e90892a5acaa2ba10f73527dd238a8905774a9c0a12cfd8c44a9"
     },
     {
       "path": "agent.json",
@@ -56,13 +56,13 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "8ca5bc10ddfe1bf74717ff5231853ebfe59a70475da4aa39c34160bff5e82145"
+      "sha256": "d83153a0ab95e09b821458610c7fda8b10ddbd22e2965fbcbba9d1b844a542f9"
     },
     {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "55c7c20d71f36938fbae966d03f8c1734d252c0d1b1263d3761dcffcb824a2a2"
+      "sha256": "f852cce552816705b8151df2869892d7318e50c4d7caeddb3035864da2c240d0"
     },
     {
       "path": "standard_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "0381611c65bbdeac687fe896a03eb8a0eb48ce0322aae9b9c1f24c73248fac49"
+      "sha256": "19c6c909779fcfeca7c144ee7357f0a5a354c6e82bcfeaffcaca5575e75bcf59"
     },
     {
       "path": "report/narrative.md",
@@ -93,7 +93,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "168e53399c3620ceff658a836574ecba635a192bd0a9a9400578c457bef82cb6"
+      "sha256": "807d35303653b45982417eba53f5b2a9f05a1522fa1316c52cc5e467a2d45b3a"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -114,7 +114,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "1ce26b3869b142e6167ee30532ff3c35292423adcb9199555bb1e57388f8289a"
+      "sha256": "04905eaefa7b04ea1554b92ebcf5538f03fa48f024cb729123d8b30e5ab4365d"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -218,7 +218,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "53d8be1c71ab7d59d07bca272e36972cd05739a1b10397bfe548963b11f6d67e"
+      "sha256": "0e5eadf3d1c8dc4568b6286af919ea18a0a368e975d3af63e96c4555c1904d6b"
     },
     {
       "path": "report/proposal.en.html",
@@ -226,7 +226,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "1c0762703edfec115936905f14bc7ca078c7e6337df83ae4c131f87a1a0900fb"
+      "sha256": "6c7a570030cd742e04e9530dda71489f61fac32e8b7e858705f1b5034755e9a4"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -250,7 +250,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "b76b878ab5700bbb1e8862554b96b476864ddf1d257dc72dc3010283fd71880c"
+      "sha256": "80231cf82d3d70b24787540bc1377507deca48dff1bc32e39373ddde3fad93ee"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -389,6 +389,61 @@
       "description_zh": "英文版短片封面帧。",
       "description_en": "English film poster frame.",
       "sha256": "7e9bfd3754fe2e6d968d29538e55f4307ec991ff0b453bd7e50c960c349fed5f"
+    },
+    {
+      "path": "visual/assets/answer-sheet/contracts.json",
+      "role": "evidence_data",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "十二份 AI 场景合同",
+      "title_en": "Twelve AI scenario contracts",
+      "description_zh": "F1-F6 公开答卷、H1-H5 人工兜底与 G0-G5 证据门的机器可读合同；全部保持未授权、未现场运行。",
+      "description_en": "Machine-readable F1-F6 report cards, H1-H5 human fallback and G0-G5 gates; all remain not authorised and not operating on site.",
+      "sha256": "bcf14bd0163061aeca0c67b758823b36cda9012af73cdd9ad27554287187e3e0"
+    },
+    {
+      "path": "visual/assets/answer-sheet/cases.json",
+      "role": "evidence_data",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "AI 赶考合成案例",
+      "title_en": "AI Examination synthetic cases",
+      "description_zh": "12 条完整协议与 72 条删项负例；只测试校验逻辑。",
+      "description_en": "Twelve complete protocols and seventy-two field-removal negatives; tests validator logic only.",
+      "sha256": "6d31f95b35e5568efcdfb4abf46bf7ec378e13d99d2a7b935df388de547942d7"
+    },
+    {
+      "path": "visual/assets/answer-sheet/results.json",
+      "role": "evidence_data",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "AI 赶考机器回执",
+      "title_en": "AI Examination machine receipts",
+      "description_zh": "84 条合成案例的预期与实际分类、失败原因及输入/校验器 SHA-256。",
+      "description_en": "Expected and actual classifications for 84 synthetic cases, failure reasons, and input/validator SHA-256.",
+      "sha256": "706e007e7ddb5842878d7bffc410bc53281f5356212799cfd7fc3045a4006aa8"
+    },
+    {
+      "path": "visual/assets/answer-sheet/validate.js",
+      "role": "verification_script",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "AI 赶考离线校验器",
+      "title_en": "AI Examination offline validator",
+      "description_zh": "无网络、无外部依赖的合同完整性校验脚本。",
+      "description_en": "No-network, dependency-free contract-completeness validator.",
+      "sha256": "a6e0fc22a7a212458be18763b142b21c848b047373f991ddf2dcf290c020a39a"
+    },
+    {
+      "path": "visual/assets/answer-sheet/data.js",
+      "role": "asset",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "AI 赶考交互数据包",
+      "title_en": "AI Examination interactive data bundle",
+      "description_zh": "供 file:// 离线交互页读取的合同与回执镜像。",
+      "description_en": "Contract and receipt mirror for file:// offline interaction.",
+      "sha256": "172299a3d2a825db72c6d3368211ba1f601e36f2b6848544bfd63a1d0363a8a6"
     }
   ],
   "validation_claim": {

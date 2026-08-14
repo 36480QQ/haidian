@@ -1,0 +1,832 @@
+{
+  "schema_version": "1.0",
+  "status": "synthetic_protocol_rehearsal_only",
+  "limits_zh": "仅验证答卷字段、人工通道和证据门的协议完整性；不证明现场安全、有效、合规或获批。",
+  "limits_en": "Tests protocol completeness only; it does not prove site safety, efficacy, compliance or approval.",
+  "contracts_sha256": "4e82d9510ca89a72b85f304462e137525361a18bdef94cc37aabf388d7b8072b",
+  "cases_sha256": "67e3236cd46c0bd2b746455fdc0e65799bc4e0ff55662ffd906ef1e333871447",
+  "validator_sha256": "d1ecfefed6effacdc4db8e26efda15822d7c9378dca0050fd7ea2492d07e9034",
+  "total_cases": 84,
+  "passed_cases": 84,
+  "protocol_ready_cases": 12,
+  "blocked_negative_cases": 72,
+  "unexpected_cases": 0,
+  "receipts": [
+    {
+      "case_id": "SCN-01-valid",
+      "scenario_id": "SCN-01",
+      "expected": "protocol_ready_not_authorized",
+      "actual": "protocol_ready_not_authorized",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "case_id": "SCN-01-missing_responsibility",
+      "scenario_id": "SCN-01",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true,
+      "failures": [
+        "responsibility_missing"
+      ]
+    },
+    {
+      "case_id": "SCN-01-missing_data_provenance",
+      "scenario_id": "SCN-01",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true,
+      "failures": [
+        "F2_missing"
+      ]
+    },
+    {
+      "case_id": "SCN-01-missing_failure_record",
+      "scenario_id": "SCN-01",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true,
+      "failures": [
+        "F4_missing"
+      ]
+    },
+    {
+      "case_id": "SCN-01-missing_exit_condition",
+      "scenario_id": "SCN-01",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true,
+      "failures": [
+        "F6_missing"
+      ]
+    },
+    {
+      "case_id": "SCN-01-missing_same_place_human_lane",
+      "scenario_id": "SCN-01",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true,
+      "failures": [
+        "H1_missing"
+      ]
+    },
+    {
+      "case_id": "SCN-01-missing_switchability",
+      "scenario_id": "SCN-01",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true,
+      "failures": [
+        "H5_missing"
+      ]
+    },
+    {
+      "case_id": "SCN-02-valid",
+      "scenario_id": "SCN-02",
+      "expected": "protocol_ready_not_authorized",
+      "actual": "protocol_ready_not_authorized",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "case_id": "SCN-02-missing_responsibility",
+      "scenario_id": "SCN-02",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true,
+      "failures": [
+        "responsibility_missing"
+      ]
+    },
+    {
+      "case_id": "SCN-02-missing_data_provenance",
+      "scenario_id": "SCN-02",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true,
+      "failures": [
+        "F2_missing"
+      ]
+    },
+    {
+      "case_id": "SCN-02-missing_failure_record",
+      "scenario_id": "SCN-02",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true,
+      "failures": [
+        "F4_missing"
+      ]
+    },
+    {
+      "case_id": "SCN-02-missing_exit_condition",
+      "scenario_id": "SCN-02",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true,
+      "failures": [
+        "F6_missing"
+      ]
+    },
+    {
+      "case_id": "SCN-02-missing_same_place_human_lane",
+      "scenario_id": "SCN-02",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true,
+      "failures": [
+        "H1_missing"
+      ]
+    },
+    {
+      "case_id": "SCN-02-missing_switchability",
+      "scenario_id": "SCN-02",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true,
+      "failures": [
+        "H5_missing"
+      ]
+    },
+    {
+      "case_id": "SCN-03-valid",
+      "scenario_id": "SCN-03",
+      "expected": "protocol_ready_not_authorized",
+      "actual": "protocol_ready_not_authorized",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "case_id": "SCN-03-missing_responsibility",
+      "scenario_id": "SCN-03",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true,
+      "failures": [
+        "responsibility_missing"
+      ]
+    },
+    {
+      "case_id": "SCN-03-missing_data_provenance",
+      "scenario_id": "SCN-03",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true,
+      "failures": [
+        "F2_missing"
+      ]
+    },
+    {
+      "case_id": "SCN-03-missing_failure_record",
+      "scenario_id": "SCN-03",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true,
+      "failures": [
+        "F4_missing"
+      ]
+    },
+    {
+      "case_id": "SCN-03-missing_exit_condition",
+      "scenario_id": "SCN-03",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true,
+      "failures": [
+        "F6_missing"
+      ]
+    },
+    {
+      "case_id": "SCN-03-missing_same_place_human_lane",
+      "scenario_id": "SCN-03",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true,
+      "failures": [
+        "H1_missing"
+      ]
+    },
+    {
+      "case_id": "SCN-03-missing_switchability",
+      "scenario_id": "SCN-03",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true,
+      "failures": [
+        "H5_missing"
+      ]
+    },
+    {
+      "case_id": "SCN-04-valid",
+      "scenario_id": "SCN-04",
+      "expected": "protocol_ready_not_authorized",
+      "actual": "protocol_ready_not_authorized",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "case_id": "SCN-04-missing_responsibility",
+      "scenario_id": "SCN-04",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true,
+      "failures": [
+        "responsibility_missing"
+      ]
+    },
+    {
+      "case_id": "SCN-04-missing_data_provenance",
+      "scenario_id": "SCN-04",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true,
+      "failures": [
+        "F2_missing"
+      ]
+    },
+    {
+      "case_id": "SCN-04-missing_failure_record",
+      "scenario_id": "SCN-04",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true,
+      "failures": [
+        "F4_missing"
+      ]
+    },
+    {
+      "case_id": "SCN-04-missing_exit_condition",
+      "scenario_id": "SCN-04",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true,
+      "failures": [
+        "F6_missing"
+      ]
+    },
+    {
+      "case_id": "SCN-04-missing_same_place_human_lane",
+      "scenario_id": "SCN-04",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true,
+      "failures": [
+        "H1_missing"
+      ]
+    },
+    {
+      "case_id": "SCN-04-missing_switchability",
+      "scenario_id": "SCN-04",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true,
+      "failures": [
+        "H5_missing"
+      ]
+    },
+    {
+      "case_id": "SCN-05-valid",
+      "scenario_id": "SCN-05",
+      "expected": "protocol_ready_not_authorized",
+      "actual": "protocol_ready_not_authorized",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "case_id": "SCN-05-missing_responsibility",
+      "scenario_id": "SCN-05",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true,
+      "failures": [
+        "responsibility_missing"
+      ]
+    },
+    {
+      "case_id": "SCN-05-missing_data_provenance",
+      "scenario_id": "SCN-05",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true,
+      "failures": [
+        "F2_missing"
+      ]
+    },
+    {
+      "case_id": "SCN-05-missing_failure_record",
+      "scenario_id": "SCN-05",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true,
+      "failures": [
+        "F4_missing"
+      ]
+    },
+    {
+      "case_id": "SCN-05-missing_exit_condition",
+      "scenario_id": "SCN-05",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true,
+      "failures": [
+        "F6_missing"
+      ]
+    },
+    {
+      "case_id": "SCN-05-missing_same_place_human_lane",
+      "scenario_id": "SCN-05",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true,
+      "failures": [
+        "H1_missing"
+      ]
+    },
+    {
+      "case_id": "SCN-05-missing_switchability",
+      "scenario_id": "SCN-05",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true,
+      "failures": [
+        "H5_missing"
+      ]
+    },
+    {
+      "case_id": "SCN-06-valid",
+      "scenario_id": "SCN-06",
+      "expected": "protocol_ready_not_authorized",
+      "actual": "protocol_ready_not_authorized",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "case_id": "SCN-06-missing_responsibility",
+      "scenario_id": "SCN-06",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true,
+      "failures": [
+        "responsibility_missing"
+      ]
+    },
+    {
+      "case_id": "SCN-06-missing_data_provenance",
+      "scenario_id": "SCN-06",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true,
+      "failures": [
+        "F2_missing"
+      ]
+    },
+    {
+      "case_id": "SCN-06-missing_failure_record",
+      "scenario_id": "SCN-06",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true,
+      "failures": [
+        "F4_missing"
+      ]
+    },
+    {
+      "case_id": "SCN-06-missing_exit_condition",
+      "scenario_id": "SCN-06",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true,
+      "failures": [
+        "F6_missing"
+      ]
+    },
+    {
+      "case_id": "SCN-06-missing_same_place_human_lane",
+      "scenario_id": "SCN-06",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true,
+      "failures": [
+        "H1_missing"
+      ]
+    },
+    {
+      "case_id": "SCN-06-missing_switchability",
+      "scenario_id": "SCN-06",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true,
+      "failures": [
+        "H5_missing"
+      ]
+    },
+    {
+      "case_id": "SCN-07-valid",
+      "scenario_id": "SCN-07",
+      "expected": "protocol_ready_not_authorized",
+      "actual": "protocol_ready_not_authorized",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "case_id": "SCN-07-missing_responsibility",
+      "scenario_id": "SCN-07",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true,
+      "failures": [
+        "responsibility_missing"
+      ]
+    },
+    {
+      "case_id": "SCN-07-missing_data_provenance",
+      "scenario_id": "SCN-07",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true,
+      "failures": [
+        "F2_missing"
+      ]
+    },
+    {
+      "case_id": "SCN-07-missing_failure_record",
+      "scenario_id": "SCN-07",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true,
+      "failures": [
+        "F4_missing"
+      ]
+    },
+    {
+      "case_id": "SCN-07-missing_exit_condition",
+      "scenario_id": "SCN-07",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true,
+      "failures": [
+        "F6_missing"
+      ]
+    },
+    {
+      "case_id": "SCN-07-missing_same_place_human_lane",
+      "scenario_id": "SCN-07",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true,
+      "failures": [
+        "H1_missing"
+      ]
+    },
+    {
+      "case_id": "SCN-07-missing_switchability",
+      "scenario_id": "SCN-07",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true,
+      "failures": [
+        "H5_missing"
+      ]
+    },
+    {
+      "case_id": "SCN-08-valid",
+      "scenario_id": "SCN-08",
+      "expected": "protocol_ready_not_authorized",
+      "actual": "protocol_ready_not_authorized",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "case_id": "SCN-08-missing_responsibility",
+      "scenario_id": "SCN-08",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true,
+      "failures": [
+        "responsibility_missing"
+      ]
+    },
+    {
+      "case_id": "SCN-08-missing_data_provenance",
+      "scenario_id": "SCN-08",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true,
+      "failures": [
+        "F2_missing"
+      ]
+    },
+    {
+      "case_id": "SCN-08-missing_failure_record",
+      "scenario_id": "SCN-08",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true,
+      "failures": [
+        "F4_missing"
+      ]
+    },
+    {
+      "case_id": "SCN-08-missing_exit_condition",
+      "scenario_id": "SCN-08",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true,
+      "failures": [
+        "F6_missing"
+      ]
+    },
+    {
+      "case_id": "SCN-08-missing_same_place_human_lane",
+      "scenario_id": "SCN-08",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true,
+      "failures": [
+        "H1_missing"
+      ]
+    },
+    {
+      "case_id": "SCN-08-missing_switchability",
+      "scenario_id": "SCN-08",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true,
+      "failures": [
+        "H5_missing"
+      ]
+    },
+    {
+      "case_id": "SCN-09-valid",
+      "scenario_id": "SCN-09",
+      "expected": "protocol_ready_not_authorized",
+      "actual": "protocol_ready_not_authorized",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "case_id": "SCN-09-missing_responsibility",
+      "scenario_id": "SCN-09",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true,
+      "failures": [
+        "responsibility_missing"
+      ]
+    },
+    {
+      "case_id": "SCN-09-missing_data_provenance",
+      "scenario_id": "SCN-09",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true,
+      "failures": [
+        "F2_missing"
+      ]
+    },
+    {
+      "case_id": "SCN-09-missing_failure_record",
+      "scenario_id": "SCN-09",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true,
+      "failures": [
+        "F4_missing"
+      ]
+    },
+    {
+      "case_id": "SCN-09-missing_exit_condition",
+      "scenario_id": "SCN-09",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true,
+      "failures": [
+        "F6_missing"
+      ]
+    },
+    {
+      "case_id": "SCN-09-missing_same_place_human_lane",
+      "scenario_id": "SCN-09",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true,
+      "failures": [
+        "H1_missing"
+      ]
+    },
+    {
+      "case_id": "SCN-09-missing_switchability",
+      "scenario_id": "SCN-09",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true,
+      "failures": [
+        "H5_missing"
+      ]
+    },
+    {
+      "case_id": "SCN-10-valid",
+      "scenario_id": "SCN-10",
+      "expected": "protocol_ready_not_authorized",
+      "actual": "protocol_ready_not_authorized",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "case_id": "SCN-10-missing_responsibility",
+      "scenario_id": "SCN-10",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true,
+      "failures": [
+        "responsibility_missing"
+      ]
+    },
+    {
+      "case_id": "SCN-10-missing_data_provenance",
+      "scenario_id": "SCN-10",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true,
+      "failures": [
+        "F2_missing"
+      ]
+    },
+    {
+      "case_id": "SCN-10-missing_failure_record",
+      "scenario_id": "SCN-10",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true,
+      "failures": [
+        "F4_missing"
+      ]
+    },
+    {
+      "case_id": "SCN-10-missing_exit_condition",
+      "scenario_id": "SCN-10",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true,
+      "failures": [
+        "F6_missing"
+      ]
+    },
+    {
+      "case_id": "SCN-10-missing_same_place_human_lane",
+      "scenario_id": "SCN-10",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true,
+      "failures": [
+        "H1_missing"
+      ]
+    },
+    {
+      "case_id": "SCN-10-missing_switchability",
+      "scenario_id": "SCN-10",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true,
+      "failures": [
+        "H5_missing"
+      ]
+    },
+    {
+      "case_id": "SCN-11-valid",
+      "scenario_id": "SCN-11",
+      "expected": "protocol_ready_not_authorized",
+      "actual": "protocol_ready_not_authorized",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "case_id": "SCN-11-missing_responsibility",
+      "scenario_id": "SCN-11",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true,
+      "failures": [
+        "responsibility_missing"
+      ]
+    },
+    {
+      "case_id": "SCN-11-missing_data_provenance",
+      "scenario_id": "SCN-11",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true,
+      "failures": [
+        "F2_missing"
+      ]
+    },
+    {
+      "case_id": "SCN-11-missing_failure_record",
+      "scenario_id": "SCN-11",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true,
+      "failures": [
+        "F4_missing"
+      ]
+    },
+    {
+      "case_id": "SCN-11-missing_exit_condition",
+      "scenario_id": "SCN-11",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true,
+      "failures": [
+        "F6_missing"
+      ]
+    },
+    {
+      "case_id": "SCN-11-missing_same_place_human_lane",
+      "scenario_id": "SCN-11",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true,
+      "failures": [
+        "H1_missing"
+      ]
+    },
+    {
+      "case_id": "SCN-11-missing_switchability",
+      "scenario_id": "SCN-11",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true,
+      "failures": [
+        "H5_missing"
+      ]
+    },
+    {
+      "case_id": "SCN-12-valid",
+      "scenario_id": "SCN-12",
+      "expected": "protocol_ready_not_authorized",
+      "actual": "protocol_ready_not_authorized",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "case_id": "SCN-12-missing_responsibility",
+      "scenario_id": "SCN-12",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true,
+      "failures": [
+        "responsibility_missing"
+      ]
+    },
+    {
+      "case_id": "SCN-12-missing_data_provenance",
+      "scenario_id": "SCN-12",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true,
+      "failures": [
+        "F2_missing"
+      ]
+    },
+    {
+      "case_id": "SCN-12-missing_failure_record",
+      "scenario_id": "SCN-12",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true,
+      "failures": [
+        "F4_missing"
+      ]
+    },
+    {
+      "case_id": "SCN-12-missing_exit_condition",
+      "scenario_id": "SCN-12",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true,
+      "failures": [
+        "F6_missing"
+      ]
+    },
+    {
+      "case_id": "SCN-12-missing_same_place_human_lane",
+      "scenario_id": "SCN-12",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true,
+      "failures": [
+        "H1_missing"
+      ]
+    },
+    {
+      "case_id": "SCN-12-missing_switchability",
+      "scenario_id": "SCN-12",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true,
+      "failures": [
+        "H5_missing"
+      ]
+    }
+  ]
+}
