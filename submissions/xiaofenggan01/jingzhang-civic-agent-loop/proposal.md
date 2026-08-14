@@ -6,7 +6,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以铁路转辙器为母题（转辙即路由决策即 agent 编排），把四环协作（资料/推演/反馈/复核）落成机器可读治理制品——Civic Agent Receipt 收据 + G0-G6 门闸状态机 + 验线四步。环会自转：每次干预可审计、可回滚、可证伪。所有空间建议为开放共创建议，不替代正式规划。"
 tracks: ["civic-agent-governance", "ai-public-services", "jingzhang-heritage-narrative"]
 scenarios: ["ai-cultural-guide", "ai-health-service-navigation", "ai-traffic-walkability"]
-iteration: "v13.0"
+iteration: "v14.0"
 ---
 
 # 京张·转辙 · 城市智能体验证带
@@ -41,7 +41,7 @@ iteration: "v13.0"
 
 ## 重点区域详细设计
 
-重点区域范围对三处重点区开展详细设计 `[depth:three_key_area_detailed_design]`。众智园 AI 自主创新加速区（provisional 192.1 公顷）定位 AI 全栈自主创新策源地 `[data:geometry/key_areas.geojson#zhongzhiyuan_ai_acceleration_area]`，布局算力枢纽、研发实验、孵化加速与开放测试，设第一处 AI 朝圣地标「转辙枢纽塔」——以转辙器为形：一座 agent 编排观测台，公众可在此看到智能体如转辙器般把资料、方案、反馈路由到对应的处理股道，是四环与门闸的可视化中枢。北京 AI 原点社区（provisional 104.3 公顷）定位世界级 AI 创新生态原点 `[data:geometry/key_areas.geojson#beijing_ai_origin_community]`，布局 AI 起源博物馆、开发者社区与青年第三空间，设第二处朝圣地标「京张 AI 纪元馆」——以詹天佑自主设计精神串联 AI 起源叙事。大钟寺 AI 产业聚集区（provisional 72.0 公顷）定位智能原生新业态 `[data:geometry/key_areas.geojson#dazhongsi_ai_industry_cluster]`，设第三处朝圣地标「钟鸣智环」——civic feedback 广场。朝圣地标数量见指标 `[metric:ai_landmark_count]`，分期起点见图层 `[data:geometry/phasing.geojson#PHASE-001]` `[metric:key_area_count]`。若 polygon 为 provisional，上述结论仅作方向性设计。
+重点区域范围对三处重点区开展详细设计 `[depth:three_key_area_detailed_design]`。众智园 AI 自主创新加速区（provisional 192.1 公顷）定位 AI 全栈自主创新策源地 `[data:geometry/key_areas.geojson#zhongzhiyuan_ai_acceleration_area]`，布局**四坊**（算力枢纽坊 / 研发实验坊 / 孵化加速坊 / 开放测试坊 `[metric:zhongzhiyuan_workshop_count]`），四坊对应门闸节律：算力坊服务 G0 资料与 G1 推演（分级配额制度）、研发坊承接 G2 反馈迭代、孵化坊走 G3 锁闭申请、开放测试坊即 G4 验通场地；设第一处 AI 朝圣地标「转辙枢纽塔」——以转辙器为形：一座 agent 编排观测台，公众可在此看到智能体如转辙器般把资料、方案、反馈路由到对应的处理股道，是四环与门闸的可视化中枢。北京 AI 原点社区（provisional 104.3 公顷）定位世界级 AI 创新生态原点 `[data:geometry/key_areas.geojson#beijing_ai_origin_community]`，布局 AI 起源博物馆、开发者社区与青年第三空间，设第二处朝圣地标「京张 AI 纪元馆」——以詹天佑自主设计精神串联 AI 起源叙事。大钟寺 AI 产业聚集区（provisional 72.0 公顷）定位智能原生新业态 `[data:geometry/key_areas.geojson#dazhongsi_ai_industry_cluster]`，设第三处朝圣地标「钟鸣智环」——civic feedback 广场。朝圣地标数量见指标 `[metric:ai_landmark_count]`，分期起点见图层 `[data:geometry/phasing.geojson#PHASE-001]` `[metric:key_area_count]`。若 polygon 为 provisional，上述结论仅作方向性设计。
 
 ![三处重点区域索引与设计任务](assets/figures/key-areas.png)
 

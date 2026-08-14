@@ -519,6 +519,19 @@
       "assumptions": [
         "区域分工为概念建议，机制待市级统筹确认"
       ]
+    },
+    "zhongzhiyuan_workshop_count": {
+      "status": "known",
+      "value": 4,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count of zhongzhiyuan workshops (算力/研发/孵化/开放测试)",
+      "confidence": "high",
+      "assumptions": [
+        "四坊与 G0-G4 门闸一一对应，深化为概念分区"
+      ]
     }
   }
 }
