@@ -7,7 +7,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以铁路转辙器为母题（转辙即路由决策即 agent 编排），把四环协作（资料/推演/反馈/复核）落成机器可读治理制品——Civic Agent Receipt 收据 + G0-G6 门闸状态机 + 验线四步。环会自转：每次干预可审计、可回滚、可证伪。所有空间建议为开放共创建议，不替代正式规划。"
 tracks: ["civic-agent-governance", "ai-public-services", "jingzhang-heritage-narrative"]
 scenarios: ["ai-cultural-guide", "ai-health-service-navigation", "ai-traffic-walkability"]
-iteration: "v4.0"
+iteration: "v6.0"
 ---
 
 # 京张·转辙 · 城市智能体验证带
@@ -24,7 +24,7 @@ iteration: "v4.0"
 
 工作范围遵循公告三层结构：统筹研究范围 43.6 平方公里承担世界级 AI 创新生态体系研究；总体设计范围 11.4 平方公里承担控规深度总体城市设计；重点区域范围 3.684 平方公里承担三处重点区详细设计 `[depth:three_level_scope_framework]`。三层范围通过四环协作逐级落实，四环不是并列步骤而是**循环回路**：资料环为推演环供料、推演环为反馈环提供可比方案、反馈环为复核环提供证据、复核环又回头校正资料环——这正是"环"区别于"门"的本质 `[standard:PROJECT-OFFICIAL-ANNOUNCEMENT]`。
 
-方案命名「京张·转辙 · 城市智能体验证带」（Jing-Zhang Switch）以**铁路转辙器（switch）为母题**——转辙器在铁路上决定列车走哪条股道，在城市智能体里决定数据/方案/反馈走哪条处理路径，是唯一能同时隐喻"铁路"与"agent 路由决策"的物件；图形为四环嵌套的同心轨道叠加转辙器岔心，主色转辙蓝 #1F4E79 与京张红 #B4402B，延展色取蓝绿 #2E8B57 与宣纸底 #F5F2EC。三区两翼协同回路以众智园、AI 原点社区、大钟寺为三核，中关村科技服务翼与小月河场景赋能翼为两翼 `[data:geometry/key_areas.geojson]`，总体范围面积 `[metric:site_area_sqm]`。三层范围几何均为 provisional，重点区面积仅供方向性参考。
+方案命名「京张·转辙 · 城市智能体验证带」（Jing-Zhang Switch）以**铁路转辙器（switch）为母题**——取其完整工程动作：**转辙（路由）→ 锁闭（防错）→ 验通（验证）**。转辙器在铁路上决定列车走哪条股道、转辙后必须锁闭以防列车走上错误股道、道岔验通才许通行；在城市智能体里对应三环路由（转辙）、人工复核上锁（锁闭）、受控测试验通（验通），是唯一能同时隐喻"铁路"与"agent 路由决策"的物件；图形为四环嵌套的同心轨道叠加转辙器岔心，主色转辙蓝 #1F4E79 与京张红 #B4402B，延展色取蓝绿 #2E8B57 与宣纸底 #F5F2EC。三区两翼协同回路以众智园、AI 原点社区、大钟寺为三核，中关村科技服务翼与小月河场景赋能翼为两翼 `[data:geometry/key_areas.geojson]`，总体范围面积 `[metric:site_area_sqm]`。三层范围几何均为 provisional，重点区面积仅供方向性参考。
 
 ![三层范围与空间工作框架](assets/figures/land-use-structure.png)
 
@@ -74,7 +74,9 @@ iteration: "v4.0"
 
 **Civic Agent Receipt 收据**（`report/narrative.md § Receipt Schema`）定义每次干预的字段：证据引用、人工责任（写角色不指派真实政府部门）、最差组优先（受影响最大群体）、申诉通道、处置结果（pending / pass / fail / rollback / exit）、运行状态（sandbox_only / not_run / controlled_test / public_pilot / retired）、性能结果（null 表示未运行，不冒充已测试）。收据字段数见指标 `[metric:receipt_schema_field_count]`。
 
-**G0-G6 七道门闸状态机**（`report/narrative.md § Gate State Machine`）把四环落成可复核门闸 `[metric:governance_gate_count]`：G0 资料就绪→G1 推演生成→G2 反馈接入→G3 人工复核（申请）→G4 受控测试（验证）→G5 公开试点（开放）→G6 退役迭代（退役）。每道门闸有进入条件、可复核状态、未通过处理、人签。**环会自转——任何一道未过都回流上游环，而非顺序终止**。验线四步（申请→验证→开放→退役）映射 G3→G6，每个场景卡自带**可证伪三问**（能否被证伪、退出后空间如何处置、公众能否独立触发暂停），三问数见指标 `[metric:falsifiability_question_count]`。
+**G0-G6 七道门闸状态机**（`report/narrative.md § Gate State Machine`）是转辙器三动作的状态机展开：G0-G2 转辙（三环路由）、G3 锁闭（人工复核上锁，未锁不得进入公开空间）、G4 验通（受控测试，验不通退回 G1 重转辙）、G5-G6 开放与退役。它把四环落成可复核门闸 `[metric:governance_gate_count]`：G0 资料就绪→G1 推演生成→G2 反馈接入→G3 人工复核（申请）→G4 受控测试（验证）→G5 公开试点（开放）→G6 退役迭代（退役）。每道门闸有进入条件、可复核状态、未通过处理、人签。**环会自转——任何一道未过都回流上游环，而非顺序终止**。验线四步（申请→验证→开放→退役）映射 G3→G6，每个场景卡自带**可证伪三问**（能否被证伪、退出后空间如何处置、公众能否独立触发暂停），三问数见指标 `[metric:falsifiability_question_count]`。
+
+**留白验证区（临时用途机制）**：AI 场景用地作为按生命周期管理的临时用途（申请→验证→开放→退役），退出后按用途兼容清单处置、**不改变法定用地性质**——可直接被控规采用的制度接口，与 G5 开放授权、G6 退出处置闭环衔接。
 
 **示例收据**（`report/narrative.md § Example Receipt`）演示用地合规自动复核场景的 G3 收据，明确标 sandbox_only / not_run / performance_results=null——不冒充已运行。真实运行须先在 G4 受控测试场取得闭合合格、三问过关，方可进 G5 公开试点；G6 到期或失败触发即退役，退出空间按用途兼容清单处置（不改变法定用地性质）。这套制品把本方案的"失败档案复盘"年度仪式落成每个场景自带的、可证伪的闭环。
 
@@ -86,11 +88,15 @@ iteration: "v4.0"
 
 本方案为每个地块叠加**四时段基线**——07-10 通勤 / 10-18 研发 / 18-22 共学 / 22-07 必要低噪——作为时段利用率的待调查假设，检验存量空间能否在更多时间服务更多人，而非仅画终局蓝图。保留 / 改造 / 楔入 × 四时段开放矩阵，使 40 个地块多出一维可证伪的实证指标 `[metric:temporal_segment_count]`。
 
+### Receipt 物质面（出处签下沉到空间对象）
+
+每个地块与建筑足迹在 renewal_action 与 governance_ring 之外再挂三个物质面字段 `[metric:material_traceability_field_count]`：material_origin（材料优先本地 / 再生的设计承诺）、carbon_audit_required（碳边界审计要求——不捏造碳数据，只立审计制度）、maintenance_contributors（保洁 / 安保 / 绿化养护 / 网格巡查四类维护贡献者署名）。这把「公共贡献账本」从 agent 行为层**下沉到空间对象的物质层** `[data:geometry/land_use.geojson#LU-090]` `[data:geometry/buildings.geojson]`，让隐形劳动在数据层被署名。
+
 建筑规模与拆改留遵循「保留先行、改造为主、谨慎拆除、复合新建」`[depth:retain_renovate_demolish]`：现状科研与教育建筑优先保留与改造提升，新增建筑足迹集中在科研、文化、教育、居住与社区服务用地 `[data:geometry/buildings.geojson]`，建筑基底约 2083289.604 平方米 `[metric:building_footprint_area_sqm]`。开发强度受限于 site-package 中容积率、建筑高度、密度、绿地率（控规）与退让五项均 missing `[depth:development_intensity_controls]`，本方案不给出具体数值。建筑基底、拆改留分类与开发强度均属概念建议，待官方控规与现状建筑、权属资料公开后由专业团队复核。
 
 ## 交通、轨道、市政与公共服务设施
 
-交通组织回应公告对轨道接驳、慢行断点、无障碍与新型基础设施的要求 `[depth:traffic_rail_slow_parking]`。本方案以京张铁路遗址公园为南北慢行主廊道，串联三重点区，布设横向联系道路缝合东西 `[data:geometry/roads.geojson]`。慢行系统以「可达、可停、可换乘」为标准；自动驾驶接驳、机器人配送与无人巡检只在明确边界、低速、可监管的公开试点范围讨论，并为服务劳动者预留低速驿站与设备充电接口。### 无障碍工程制度
+交通组织回应公告对轨道接驳、慢行断点、无障碍与新型基础设施的要求 `[depth:traffic_rail_slow_parking]`。本方案以京张铁路遗址公园为南北慢行主廊道，串联三重点区，布设横向联系道路缝合东西 `[data:geometry/roads.geojson]`。针对铁路长墙的百年东西割裂，本方案布设五条**东西向转辙廊** `[metric:stitch_corridor_count]` `[data:geometry/roads.geojson#STITCH-001]`——转辙器把列车从一股道转到另一股道，转辙廊把人流从铁路西侧转到东侧：大钟寺、知春路、原点、众智、北段各一条 `[data:geometry/roads.geojson#STITCH-003]`，廊道同时承载慢行、公共空间与 AI 场景 `[data:geometry/roads.geojson]`。慢行系统以「可达、可停、可换乘」为标准；自动驾驶接驳、机器人配送与无人巡检只在明确边界、低速、可监管的公开试点范围讨论，并为服务劳动者预留低速驿站与设备充电接口。### 无障碍工程制度
 
 本方案的无障碍不止于通道，而是可验收的工程制度：**盲道连贯率**采用月度盲测口径（不测瞬时状态）、**修复导向 KPI**（工单平均处置时长 + 复检合格率）、占用类型 × 责任单位 × 处置时限 × 核查方式**接单责任矩阵**（落入既有接诉即办 / 网格平台，不自建派单）、**开源触觉模型库**（符号化派生模型 + 验收测试卡 + 版本召回），以及店铺功能牌考核“盲文与实际业态一致率”而非挂牌率；无障碍连贯率监测作为场景卡 13 落地 `[metric:accessibility_checkpoint_count]`。
 
@@ -114,7 +120,7 @@ iteration: "v4.0"
 
 ## 指标体系、面积复算与合规矩阵
 
-指标体系围绕目标契合度、功能匹配度、产业支撑度、场景可感知度与公开合规性构建。除几何指标外，本方案独有**四环治理指标**（证据锚点数 `[metric:data_evidence_anchor_count]`、场景卡数 `[metric:scenario_card_count]`、画像数 `[metric:persona_count]`、人工复核检查点数 `[metric:human_review_checkpoint_count]`、退出机制数 `[metric:exit_mechanism_count]`、朝圣地标数 `[metric:ai_landmark_count]`）与**门闸制品指标**（门闸数 `[metric:governance_gate_count]`、收据字段数 `[metric:receipt_schema_field_count]`、可证伪三问数 `[metric:falsifiability_question_count]`），以及**按用地代码的面积分解**（0802 / 1401 / 0803 / 1403 / 0804 / 0701 / 0702 / 0806）。几何指标在 EPSG:4548 复算 `[depth:metrics_recalculation]`：总体范围面积 `[metric:site_area_sqm]`、公园绿地比例 `[metric:green_ratio]`、公共空间比例 `[metric:public_space_ratio]`、建筑基底面积 `[metric:building_footprint_area_sqm]`、重点区数量 `[metric:key_area_count]`。容积率因 planning_limits missing 标 unknown。
+指标体系围绕目标契合度、功能匹配度、产业支撑度、场景可感知度与公开合规性构建。除几何指标外，本方案独有**四环治理指标**（证据锚点数 `[metric:data_evidence_anchor_count]`、场景卡数 `[metric:scenario_card_count]`、画像数 `[metric:persona_count]`、人工复核检查点数 `[metric:human_review_checkpoint_count]`、退出机制数 `[metric:exit_mechanism_count]`、朝圣地标数 `[metric:ai_landmark_count]`）与**门闸制品指标**（门闸数 `[metric:governance_gate_count]`、收据字段数 `[metric:receipt_schema_field_count]`、可证伪三问数 `[metric:falsifiability_question_count]`），、**空间-物质指标**（转辙廊数 `[metric:stitch_corridor_count]`、物质面字段数 `[metric:material_traceability_field_count]`），以及**按用地代码的面积分解**（0802 / 1401 / 0803 / 1403 / 0804 / 0701 / 0702 / 0806）。几何指标在 EPSG:4548 复算 `[depth:metrics_recalculation]`：总体范围面积 `[metric:site_area_sqm]`、公园绿地比例 `[metric:green_ratio]`、公共空间比例 `[metric:public_space_ratio]`、建筑基底面积 `[metric:building_footprint_area_sqm]`、重点区数量 `[metric:key_area_count]`。容积率因 planning_limits missing 标 unknown。
 
 合规矩阵覆盖公告 1.3 / 1.4 / 1.5 与任务书 agent.1—agent.6 全部六项；专业标准矩阵覆盖五项强制标准与一项可选标准（建筑工程设计文件编制深度规定 2016，data_gap）`[standard:MOHURD-ARCH-DESIGN-DEPTH-2016]`；设计深度矩阵覆盖十五项必填深度项。面积复算与四重自检状态见证据图与 visual 仪表盘，provisional 几何精度警示均已披露。
 
@@ -136,4 +142,4 @@ iteration: "v4.0"
 - 京张铁路历史文化、中关村创新文化与 AI 新文化公开叙事
 - 机器可读治理制品：`report/narrative.md`（Receipt Schema + Gate 状态机 + 示例收据）
 
-本方案以「京张·转辙」收束：把百年前詹天佑的自主设计精神，延续为一组会自转、可审计、可被下一个智能体继承的城市智能体验证带。转辙器决定列车走哪条股道，四环与七道门闸决定城市走哪条迭代路径——环之所以是环，正在于它能回头校正自己，这是门做不到的事。
+本方案以「京张·转辙」收束：把百年前詹天佑的自主设计精神，延续为一组会自转、可审计、可被下一个智能体继承的城市智能体验证带。转辙器转辙、锁闭、验通，四环与七道门闸决定城市走哪条迭代路径——环之所以是环，正在于它能回头校正自己，这是门做不到的事。

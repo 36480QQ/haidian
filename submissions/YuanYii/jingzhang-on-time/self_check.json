@@ -33,8 +33,10 @@
         "submissions/YuanYii/jingzhang-on-time/assumptions.json",
         "submissions/YuanYii/jingzhang-on-time/compliance_matrix.json",
         "submissions/YuanYii/jingzhang-on-time/design_depth_matrix.json",
+        "submissions/YuanYii/jingzhang-on-time/drawings/a0-boards-en.pdf",
         "submissions/YuanYii/jingzhang-on-time/drawings/a0-boards.en.pdf",
         "submissions/YuanYii/jingzhang-on-time/drawings/a0-boards.pdf",
+        "submissions/YuanYii/jingzhang-on-time/drawings/a3-booklet-en.pdf",
         "submissions/YuanYii/jingzhang-on-time/drawings/a3-booklet.en.pdf",
         "submissions/YuanYii/jingzhang-on-time/drawings/a3-booklet.pdf",
         "submissions/YuanYii/jingzhang-on-time/geometry/buildings.geojson",
@@ -56,13 +58,15 @@
         "submissions/YuanYii/jingzhang-on-time/self_check.json",
         "submissions/YuanYii/jingzhang-on-time/sources.json",
         "submissions/YuanYii/jingzhang-on-time/standard_matrix.json",
+        "submissions/YuanYii/jingzhang-on-time/visual/assets/baseline_registry.json",
+        "submissions/YuanYii/jingzhang-on-time/visual/assets/logs_schema.json",
         "submissions/YuanYii/jingzhang-on-time/visual/index.en.html",
         "submissions/YuanYii/jingzhang-on-time/visual/index.html"
       ],
       "ai_package_stages": {
         "submissions/YuanYii/jingzhang-on-time": "formal"
       },
-      "total_bytes": 8689454,
+      "total_bytes": 15084066,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -143,7 +147,7 @@
           "source": 5,
           "standard": 1,
           "depth": 1,
-          "data": 11,
+          "data": 10,
           "metric": 7
         }
       }

@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Uses City Completeness as the spatial review method for the Centennial Jing-Zhang AI Innovation Belt: seven ordinary-city capabilities—HOME, LEARN, CARE, MOVE, GREEN, WORK and COMMON LIFE—form a durable everyday base first, while AI enters research, community, mobility and commerce as an optional enhancement layer. The structure is one public green spine, six completeness segments, six east-west stitching links and three key areas; Shuangfen Fortress remains only a community-name easter egg inside AI Origin Community."
 tracks: ["ai-origin-community", "ai-public-services", "ai-traffic-walkability"]
 scenarios: ["ai-traffic-walkability", "robot-delivery-low-speed", "enterprise-service-copilot", "ai-cultural-guide", "ai-health-service-navigation"]
-iteration: "v0.91"
+iteration: "v0.10"
 ---
 
 # JING-ZHANG CITY COMPLETENESS
@@ -131,9 +131,9 @@ The spatial effect of AI is reduced to six reversible prototypes: test pockets, 
 ![How AI changes urban form: six reversible physical interfaces](assets/figures/ai-urban-form-change.en.svg)
 
 <!-- V09-REALITY-START -->
-### v0.91 | REALITY-ANCHORED: a source enters the design story only if it changes a spatial decision
+### v0.10 | DESIGN-FIRST + REALITY: evidence appears only when it changes space
 
-v0.91 continues the **reality-anchored** design line and ties each constraint back to an ordinary public task; source count is not treated as design quality. It applies a narrower rule: a public source enters the main design narrative only when it changes a section, interface, node, or the precision of an unknown. This round registers three official-public reality anchors and five explicit design-response rules. [metric:official_constraint_anchor_count] [metric:design_response_rule_count]
+v0.10 keeps the **design-first** hierarchy of the 86-point v0.7 baseline and absorbs only reality anchors that change a spatial decision; the story still starts with everyday public tasks, not evidence indexing or scoring structure. It applies a narrower rule: a public source enters the main design narrative only when it changes a section, interface, node, or the precision of an unknown. This round registers three official-public reality anchors and five explicit design-response rules. [metric:official_constraint_anchor_count] [metric:design_response_rule_count]
 
 ![How reality constraints change spatial design rather than becoming a bibliography](assets/figures/reality-constraint-design-response.en.svg)
 
@@ -146,13 +146,15 @@ v0.91 continues the **reality-anchored** design line and ties each constraint ba
 All five response rules are machine-readable in `visual/assets/reality-constraint-register.json`. The fixed `mobility-bluegreen.en.png` is rebuilt to distinguish ordinary stitching, the underpass/vertical-continuity condition, people-first green-corridor frontage, station-city arrival, and the future official-data recomputation trigger.
 <!-- V09-REALITY-END -->
 
-<!-- V091-PUBLIC-TASK-START -->
-### v0.91 | Tie reality constraints back to ordinary public tasks
+<!-- V010-PROMISES-START -->
+### v0.10 | Three public promises: show how people use the city before showing evidence machinery
 
-This small revision adds no reviewer dashboard. It tests only three things: **arrival still works when AI fails; the green corridor serves walking and staying before devices; and reality-scale references are not rewritten as proposal controls.** The three chains are machine-readable in `visual/assets/reality-to-public-task-register.json`, each with an ordinary task, spatial response, optional AI and a fact boundary. [metric:reality_public_task_bridge_count]
+v0.10 keeps v0.7's design-first hierarchy and compresses the three key areas into three questions anyone can test: **ARRIVE WITHOUT APP, CARE WITHOUT ACCOUNT, TEST WITHOUT BLOCKING**. Each promise requires an ordinary-city baseline, a spatial move, optional AI, failure recovery and a reality constraint. If one is missing, the urban task is not complete. [metric:public_promise_count]
 
-![Reality constraints must return to public tasks](assets/figures/reality-to-public-task.en.svg)
-<!-- V091-PUBLIC-TASK-END -->
+![Three public promises](assets/figures/three-public-promises.en.svg)
+
+The machine-readable contract is `visual/assets/public-promises-contract.json`. It is not field evidence and does not upgrade public plot conditions, draft-plan material or a green-corridor case into proposal approvals; those sources appear only where they change a spatial decision.
+<!-- V010-PROMISES-END -->
 
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0",
+  "status": "roles_proposed_pending_confirmation",
+  "items": [
+    {"id": "RACI-01", "scope": "ordinary_and_human_route", "accountable": "public_service_client_pending", "responsible": "staffed_service_lead_pending", "consulted": ["accessibility_users", "site_manager"], "signoff": "same_task_route_available"},
+    {"id": "RACI-02", "scope": "ai_service_and_data_ceiling", "accountable": "public_service_client_pending", "responsible": "service_product_lead_pending", "consulted": ["privacy_adviser", "scenario_owner"], "signoff": "declared_inputs_only"},
+    {"id": "RACI-03", "scope": "physical_safety_and_stop", "accountable": "site_rights_holder_pending", "responsible": "site_safety_controller_pending", "consulted": ["fire_safety", "accessibility_reviewer"], "signoff": "physical_stop_operable"},
+    {"id": "RACI-04", "scope": "restoration_and_data_expiry", "accountable": "public_service_client_pending", "responsible": "restoration_lead_pending", "consulted": ["site_manager", "independent_reviewer"], "signoff": "restoration_and_disposition_accepted"}
+  ],
+  "rule": "真实主体未确认前，不得把 proposed 角色写成既定运营者或政府承诺。"
+}
