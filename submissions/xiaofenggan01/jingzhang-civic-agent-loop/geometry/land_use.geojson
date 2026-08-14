@@ -26,7 +26,9 @@
           "安保",
           "绿化养护",
           "网格巡查"
-        ]
+        ],
+        "acoustic_zone": "buffered",
+        "night_light_policy": "dark_friendly"
       },
       "geometry": {
         "type": "Polygon",
@@ -80,7 +82,9 @@
           "安保",
           "绿化养护",
           "网格巡查"
-        ]
+        ],
+        "acoustic_zone": "buffered",
+        "night_light_policy": "dark_friendly"
       },
       "geometry": {
         "type": "Polygon",
@@ -134,7 +138,9 @@
           "安保",
           "绿化养护",
           "网格巡查"
-        ]
+        ],
+        "acoustic_zone": "buffered",
+        "night_light_policy": "dark_friendly"
       },
       "geometry": {
         "type": "Polygon",
@@ -191,7 +197,9 @@
         ],
         "compute_quota_policy": "tiered_priority",
         "energy_audit_required": true,
-        "green_compute_priority": true
+        "green_compute_priority": true,
+        "acoustic_zone": "low_noise",
+        "night_light_policy": "dark_friendly"
       },
       "geometry": {
         "type": "Polygon",
@@ -245,7 +253,9 @@
           "安保",
           "绿化养护",
           "网格巡查"
-        ]
+        ],
+        "acoustic_zone": "low_noise",
+        "night_light_policy": "dark_friendly"
       },
       "geometry": {
         "type": "Polygon",
@@ -299,7 +309,9 @@
           "安保",
           "绿化养护",
           "网格巡查"
-        ]
+        ],
+        "acoustic_zone": "buffered",
+        "night_light_policy": "dark_friendly"
       },
       "geometry": {
         "type": "Polygon",
@@ -353,7 +365,9 @@
           "安保",
           "绿化养护",
           "网格巡查"
-        ]
+        ],
+        "acoustic_zone": "buffered",
+        "night_light_policy": "dark_friendly"
       },
       "geometry": {
         "type": "Polygon",
@@ -407,7 +421,9 @@
           "安保",
           "绿化养护",
           "网格巡查"
-        ]
+        ],
+        "acoustic_zone": "low_noise",
+        "night_light_policy": "dark_friendly"
       },
       "geometry": {
         "type": "Polygon",
@@ -464,7 +480,9 @@
         ],
         "compute_quota_policy": "tiered_priority",
         "energy_audit_required": true,
-        "green_compute_priority": true
+        "green_compute_priority": true,
+        "acoustic_zone": "low_noise",
+        "night_light_policy": "dark_friendly"
       },
       "geometry": {
         "type": "Polygon",
@@ -518,7 +536,9 @@
           "安保",
           "绿化养护",
           "网格巡查"
-        ]
+        ],
+        "acoustic_zone": "buffered",
+        "night_light_policy": "dark_friendly"
       },
       "geometry": {
         "type": "Polygon",
@@ -572,7 +592,9 @@
           "安保",
           "绿化养护",
           "网格巡查"
-        ]
+        ],
+        "acoustic_zone": "activity_allowed",
+        "night_light_policy": "dark_friendly"
       },
       "geometry": {
         "type": "Polygon",
@@ -626,7 +648,9 @@
           "安保",
           "绿化养护",
           "网格巡查"
-        ]
+        ],
+        "acoustic_zone": "buffered",
+        "night_light_policy": "dark_friendly"
       },
       "geometry": {
         "type": "Polygon",
@@ -687,7 +711,9 @@
         ],
         "compute_quota_policy": "tiered_priority",
         "energy_audit_required": true,
-        "green_compute_priority": true
+        "green_compute_priority": true,
+        "acoustic_zone": "low_noise",
+        "night_light_policy": "dark_friendly"
       },
       "geometry": {
         "type": "Polygon",
@@ -741,7 +767,9 @@
           "安保",
           "绿化养护",
           "网格巡查"
-        ]
+        ],
+        "acoustic_zone": "buffered",
+        "night_light_policy": "dark_friendly"
       },
       "geometry": {
         "type": "Polygon",
@@ -798,7 +826,9 @@
         ],
         "compute_quota_policy": "tiered_priority",
         "energy_audit_required": true,
-        "green_compute_priority": true
+        "green_compute_priority": true,
+        "acoustic_zone": "low_noise",
+        "night_light_policy": "dark_friendly"
       },
       "geometry": {
         "type": "Polygon",
@@ -852,7 +882,9 @@
           "安保",
           "绿化养护",
           "网格巡查"
-        ]
+        ],
+        "acoustic_zone": "buffered",
+        "night_light_policy": "dark_friendly"
       },
       "geometry": {
         "type": "Polygon",
@@ -906,7 +938,9 @@
           "安保",
           "绿化养护",
           "网格巡查"
-        ]
+        ],
+        "acoustic_zone": "buffered",
+        "night_light_policy": "dark_friendly"
       },
       "geometry": {
         "type": "Polygon",
@@ -964,7 +998,9 @@
           "安保",
           "绿化养护",
           "网格巡查"
-        ]
+        ],
+        "acoustic_zone": "buffered",
+        "night_light_policy": "dark_friendly"
       },
       "geometry": {
         "type": "Polygon",
@@ -1018,7 +1054,9 @@
           "安保",
           "绿化养护",
           "网格巡查"
-        ]
+        ],
+        "acoustic_zone": "activity_allowed",
+        "night_light_policy": "dark_friendly"
       },
       "geometry": {
         "type": "Polygon",
@@ -1072,7 +1110,9 @@
           "安保",
           "绿化养护",
           "网格巡查"
-        ]
+        ],
+        "acoustic_zone": "low_noise",
+        "night_light_policy": "dark_friendly"
       },
       "geometry": {
         "type": "Polygon",
@@ -1126,7 +1166,9 @@
           "安保",
           "绿化养护",
           "网格巡查"
-        ]
+        ],
+        "acoustic_zone": "low_noise",
+        "night_light_policy": "dark_friendly"
       },
       "geometry": {
         "type": "Polygon",
@@ -1180,7 +1222,9 @@
           "安保",
           "绿化养护",
           "网格巡查"
-        ]
+        ],
+        "acoustic_zone": "buffered",
+        "night_light_policy": "dark_friendly"
       },
       "geometry": {
         "type": "Polygon",
@@ -1237,7 +1281,9 @@
         ],
         "compute_quota_policy": "tiered_priority",
         "energy_audit_required": true,
-        "green_compute_priority": true
+        "green_compute_priority": true,
+        "acoustic_zone": "low_noise",
+        "night_light_policy": "dark_friendly"
       },
       "geometry": {
         "type": "Polygon",
@@ -1291,7 +1337,9 @@
           "安保",
           "绿化养护",
           "网格巡查"
-        ]
+        ],
+        "acoustic_zone": "low_noise",
+        "night_light_policy": "dark_friendly"
       },
       "geometry": {
         "type": "Polygon",
@@ -1349,7 +1397,9 @@
           "安保",
           "绿化养护",
           "网格巡查"
-        ]
+        ],
+        "acoustic_zone": "low_noise",
+        "night_light_policy": "dark_friendly"
       },
       "geometry": {
         "type": "Polygon",
@@ -1403,7 +1453,9 @@
           "安保",
           "绿化养护",
           "网格巡查"
-        ]
+        ],
+        "acoustic_zone": "buffered",
+        "night_light_policy": "dark_friendly"
       },
       "geometry": {
         "type": "Polygon",
@@ -1457,7 +1509,9 @@
           "安保",
           "绿化养护",
           "网格巡查"
-        ]
+        ],
+        "acoustic_zone": "activity_allowed",
+        "night_light_policy": "dark_friendly"
       },
       "geometry": {
         "type": "Polygon",
@@ -1511,7 +1565,9 @@
           "安保",
           "绿化养护",
           "网格巡查"
-        ]
+        ],
+        "acoustic_zone": "buffered",
+        "night_light_policy": "dark_friendly"
       },
       "geometry": {
         "type": "Polygon",
@@ -1565,7 +1621,9 @@
           "安保",
           "绿化养护",
           "网格巡查"
-        ]
+        ],
+        "acoustic_zone": "low_noise",
+        "night_light_policy": "dark_friendly"
       },
       "geometry": {
         "type": "Polygon",
@@ -1623,7 +1681,9 @@
           "安保",
           "绿化养护",
           "网格巡查"
-        ]
+        ],
+        "acoustic_zone": "buffered",
+        "night_light_policy": "dark_friendly"
       },
       "geometry": {
         "type": "Polygon",
@@ -1680,7 +1740,9 @@
         ],
         "compute_quota_policy": "tiered_priority",
         "energy_audit_required": true,
-        "green_compute_priority": true
+        "green_compute_priority": true,
+        "acoustic_zone": "low_noise",
+        "night_light_policy": "dark_friendly"
       },
       "geometry": {
         "type": "Polygon",
@@ -1737,7 +1799,9 @@
         ],
         "compute_quota_policy": "tiered_priority",
         "energy_audit_required": true,
-        "green_compute_priority": true
+        "green_compute_priority": true,
+        "acoustic_zone": "low_noise",
+        "night_light_policy": "dark_friendly"
       },
       "geometry": {
         "type": "Polygon",
@@ -1794,7 +1858,9 @@
         ],
         "compute_quota_policy": "tiered_priority",
         "energy_audit_required": true,
-        "green_compute_priority": true
+        "green_compute_priority": true,
+        "acoustic_zone": "low_noise",
+        "night_light_policy": "dark_friendly"
       },
       "geometry": {
         "type": "Polygon",
@@ -1848,7 +1914,9 @@
           "安保",
           "绿化养护",
           "网格巡查"
-        ]
+        ],
+        "acoustic_zone": "buffered",
+        "night_light_policy": "dark_friendly"
       },
       "geometry": {
         "type": "Polygon",
@@ -1902,7 +1970,9 @@
           "安保",
           "绿化养护",
           "网格巡查"
-        ]
+        ],
+        "acoustic_zone": "activity_allowed",
+        "night_light_policy": "dark_friendly"
       },
       "geometry": {
         "type": "Polygon",
@@ -1959,7 +2029,9 @@
         ],
         "compute_quota_policy": "tiered_priority",
         "energy_audit_required": true,
-        "green_compute_priority": true
+        "green_compute_priority": true,
+        "acoustic_zone": "low_noise",
+        "night_light_policy": "dark_friendly"
       },
       "geometry": {
         "type": "Polygon",
@@ -2016,7 +2088,9 @@
         ],
         "compute_quota_policy": "tiered_priority",
         "energy_audit_required": true,
-        "green_compute_priority": true
+        "green_compute_priority": true,
+        "acoustic_zone": "low_noise",
+        "night_light_policy": "dark_friendly"
       },
       "geometry": {
         "type": "Polygon",
@@ -2070,7 +2144,9 @@
           "安保",
           "绿化养护",
           "网格巡查"
-        ]
+        ],
+        "acoustic_zone": "buffered",
+        "night_light_policy": "dark_friendly"
       },
       "geometry": {
         "type": "Polygon",
@@ -2124,7 +2200,9 @@
           "安保",
           "绿化养护",
           "网格巡查"
-        ]
+        ],
+        "acoustic_zone": "buffered",
+        "night_light_policy": "dark_friendly"
       },
       "geometry": {
         "type": "Polygon",
@@ -2181,7 +2259,9 @@
         ],
         "compute_quota_policy": "tiered_priority",
         "energy_audit_required": true,
-        "green_compute_priority": true
+        "green_compute_priority": true,
+        "acoustic_zone": "low_noise",
+        "night_light_policy": "dark_friendly"
       },
       "geometry": {
         "type": "Polygon",

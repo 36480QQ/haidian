@@ -454,6 +454,32 @@
       "assumptions": [
         "制度字段，渗透率数值待 G4 实测"
       ]
+    },
+    "acoustic_zone_type_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "count of acoustic zone types (low_noise/activity_allowed/buffered)",
+      "confidence": "high",
+      "assumptions": [
+        "分贝限值待 G4 实测与标准确认"
+      ]
+    },
+    "dark_friendly_lighting_parcel_count": {
+      "status": "known",
+      "value": 40,
+      "unit": "count",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "count of parcels with night_light_policy=dark_friendly",
+      "confidence": "high",
+      "assumptions": [
+        "截光+暖色温制度，非亮度数值"
+      ]
     }
   }
 }

@@ -23,7 +23,7 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "c6c2e060b90ccd59fc7887fe8865643306f855418363eb7b85d4ff78d55201cc"
+      "sha256": "f8830241ef1738f7bb063d9f748be64a1897c26c44efe8e7d2ca026ec6f2cebd"
     },
     {
       "path": "agent.json",
@@ -35,7 +35,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "506b428e9f7e1dc7ecbad0cb23c8de618bb67ec3efb2162239d4a74c99ec515d"
+      "sha256": "abd1e6a67f2cf1ed3eeeda0a519854e1ee610b843702671489ca705707dabe8d"
     },
     {
       "path": "assumptions.json",
@@ -77,7 +77,7 @@
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "2ba2c88d38902039c77253629ab2af8e6c975ec56544e1c597fa7c00807d4470"
+      "sha256": "6644e120179e977b2860be220c9b3b94aee4bf2b458662e058c53e8f13dd1f37"
     },
     {
       "path": "report/narrative.md",
@@ -167,7 +167,7 @@
       "path": "geometry/land_use.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "e277de156291b1fe74acb6d9573fcaad8a4518df60105e17fbbbda4111cc6cf8"
+      "sha256": "6fb4da3a99c155ee49a8dd048c084295bd780b51764f6d9529726e47cf0b37cb"
     },
     {
       "path": "geometry/phasing.geojson",
