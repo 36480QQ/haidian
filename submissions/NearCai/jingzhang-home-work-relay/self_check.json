@@ -84,7 +84,10 @@
         "submissions/NearCai/jingzhang-home-work-relay/visual/assets/relay-contract.schema.json",
         "submissions/NearCai/jingzhang-home-work-relay/visual/assets/relay-contract.validation.json",
         "submissions/NearCai/jingzhang-home-work-relay/visual/assets/relay-contracts.json",
+        "submissions/NearCai/jingzhang-home-work-relay/visual/assets/review-score-evidence-map.json",
         "submissions/NearCai/jingzhang-home-work-relay/visual/assets/run-relay-contract-validation.js",
+        "submissions/NearCai/jingzhang-home-work-relay/visual/assets/scenario-negative-fixtures.json",
+        "submissions/NearCai/jingzhang-home-work-relay/visual/assets/score-sprint-100-days.json",
         "submissions/NearCai/jingzhang-home-work-relay/visual/assets/station-service-blueprints.json",
         "submissions/NearCai/jingzhang-home-work-relay/visual/index.en.html",
         "submissions/NearCai/jingzhang-home-work-relay/visual/index.html"
@@ -92,7 +95,7 @@
       "ai_package_stages": {
         "submissions/NearCai/jingzhang-home-work-relay": "formal"
       },
-      "total_bytes": 13746432,
+      "total_bytes": 13861561,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -150,6 +153,9 @@
       "ok": true,
       "issues": [],
       "metrics_seen": {
+        "review_score_dimension_count": 7.0,
+        "first_100_days_action_count": 8.0,
+        "scenario_negative_fixture_branch_count": 72.0,
         "site_area_sqm": 11412825.386,
         "green_ratio": 0.088346,
         "public_space_ratio": 0.026285,
@@ -169,15 +175,15 @@
       "summary": {
         "standard_matrix_items": 6,
         "design_depth_items": 15,
-        "known_metric_refs_required": 43,
+        "known_metric_refs_required": 50,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
           "source": 19,
           "standard": 4,
           "depth": 15,
-          "data": 23,
-          "metric": 27
+          "data": 26,
+          "metric": 34
         }
       }
     },
