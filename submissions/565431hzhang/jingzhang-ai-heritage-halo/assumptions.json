@@ -12,6 +12,42 @@
       "status": "design_principle",
       "statement": "京张四闸实施放行机制：每个项目必须依次通过G0资格闸（权属/资金/审批/运营主体）、G1试点闸（轻量先行90天）、G2放行闸（Go/No-Go评审）、G3退役闸（退役记录）。缺任一闸则项目保持halted。",
       "impact": "四闸为概念框架，待主管部门和运营主体确认闸门标准和评审流程。"
+    },
+    {
+      "id": "A-BOUNDARY-001",
+      "status": "pending_official_data",
+      "statement": "Official precise polygon, CAD, or GIS redline has not been published. The announcement gives three-level scope areas and text descriptions, but prequalification package requires download password. Repository provides provisional rough boundaries.",
+      "impact": "All geometry files labeled provisional_constraint, official_boundary=false. Usable for generation and discussion only, not as official redline or precise area calculation."
+    },
+    {
+      "id": "A-FIELD-001",
+      "status": "not_authorized",
+      "statement": "No field survey or on-site observation has been authorized or conducted. All AI scenario performance is marked as unverified.",
+      "impact": "Scenario card performance uniformly registered as unverified. No operational claims without field evidence."
+    },
+    {
+      "id": "A-BUILDING-001",
+      "status": "pending_current_conditions_survey",
+      "statement": "Building counts, heights, function ratios, and retain/renovate/demolish ratios are conceptual estimates based on industry positioning, not current-condition surveys.",
+      "impact": "All building-level parameters are B-level (conceptual). Official current-condition survey and structural safety assessment required before demolition or renovation."
+    },
+    {
+      "id": "A-DAZHONGSI-001",
+      "status": "pending_verification",
+      "statement": "Public Issue #1029 notes Dazhongsi provisional key area may be misaligned with actual station. This package treats the area as a relocatable design container, not as basis for precise station-entrance claims.",
+      "impact": "Dazhongsi key area polygon used for design container checking only, not for precise siting or development volume claims."
+    },
+    {
+      "id": "A-INVESTMENT-001",
+      "status": "concept_level",
+      "statement": "Investment estimates are concept-level (±50% precision) based on comparable public projects. Six projects total 10.4-21.6 billion RMB.",
+      "impact": "Formal estimates require professional cost consultancy after detailed design, engineering geology, market conditions, and approval pathways confirmed."
+    },
+    {
+      "id": "A-OPERATION-001",
+      "status": "concept_level",
+      "statement": "Operations governance, funding model, and phased implementation are conceptual frameworks. No operator selected, no funding committed, no approval pathway confirmed.",
+      "impact": "All operational and financial parameters are C-level (implementation assumptions). Light-weight pilots should precede capital-intensive construction."
     }
   ]
 }
