@@ -597,6 +597,19 @@
       "assumptions": [
         "概念日历，具体档期待运营方确认"
       ]
+    },
+    "risk_dimension_count": {
+      "status": "known",
+      "value": 8,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count of risk matrix dimensions",
+      "confidence": "high",
+      "assumptions": [
+        "与 risk.json schema 八个固定维度一一对应"
+      ]
     }
   }
 }

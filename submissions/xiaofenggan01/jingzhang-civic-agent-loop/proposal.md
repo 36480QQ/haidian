@@ -6,7 +6,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以铁路转辙器为母题（转辙即路由决策即 agent 编排），把四环协作（资料/推演/反馈/复核）落成机器可读治理制品——Civic Agent Receipt 收据 + G0-G6 门闸状态机 + 验线四步。环会自转：每次干预可审计、可回滚、可证伪。所有空间建议为开放共创建议，不替代正式规划。"
 tracks: ["civic-agent-governance", "ai-public-services", "jingzhang-heritage-narrative"]
 scenarios: ["ai-cultural-guide", "ai-health-service-navigation", "ai-traffic-walkability"]
-iteration: "v18.0"
+iteration: "v19.0"
 ---
 
 # 京张·转辙 · 城市智能体验证带
@@ -133,7 +133,7 @@ iteration: "v18.0"
 
 本方案风险与资料缺口集中在三类 `[depth:risk_missing_data]`。第一类 provisional 边界风险：site-package 仅提供粗略替代边界 `[data:geometry/constraints.geojson]`，本方案的面积、绿地率与公共空间率均为方向性复算，不得作为官方红线或精确面积；待官方多边形与审定控规发布后重算。第二类 planning_limits 缺失：容积率、建筑高度、建筑密度、绿地率（控规）与退让五项均 missing，本方案不给出这些法定指标的数值。门闸制品中的 example-receipt 标 sandbox_only / not_run / performance_results=null，不冒充已运行。
 
-第三类版权与合规：本方案仅基于公开任务书与可公开资料 `[standard:PROJECT-OFFICIAL-ANNOUNCEMENT]`，不声称使用或披露非公开规划图件、个人隐私、土地权属资料或审定控制指标；涉及建筑高度、建设强度、道路线位、交通组织与设施落位的内容均为讨论性建议，须经规划、交通、数据安全、公众参与与相关主管部门程序复核。AI 智能体参与资料整理与方案生成时，保留输入来源、生成时间、模型与人工复核记录；图片、图表与展示素材使用原创或可公开许可资料。本方案所有空间落地建议均表述为「概念建议」「参考方案」「可供专业团队深化研究」，不构成政府审定结论或实施承诺。
+**八维风险矩阵**（每维一句缓解 `[metric:risk_dimension_count]`）：数据隐私（最小化+可撤回+Passport 保留期）、实施复杂度（四件套制品化降低协调成本）、公众接受（三通道数字包容+公众触发暂停权）、运营成本（挂既有接诉即办/公园管理体系不自建）、政策不确定性（全部表述为概念建议待审定）、空间争议（转辙廊复合既有道路不新增占地）、技术成熟度（G4 验通前置、验不通不开放）、公平包容（服务劳动者与无障碍显式纳入）。第三类版权与合规：本方案仅基于公开任务书与可公开资料 `[standard:PROJECT-OFFICIAL-ANNOUNCEMENT]`，不声称使用或披露非公开规划图件、个人隐私、土地权属资料或审定控制指标；涉及建筑高度、建设强度、道路线位、交通组织与设施落位的内容均为讨论性建议，须经规划、交通、数据安全、公众参与与相关主管部门程序复核。AI 智能体参与资料整理与方案生成时，保留输入来源、生成时间、模型与人工复核记录；图片、图表与展示素材使用原创或可公开许可资料。本方案所有空间落地建议均表述为「概念建议」「参考方案」「可供专业团队深化研究」，不构成政府审定结论或实施承诺。
 
 ## 参考资料
 
