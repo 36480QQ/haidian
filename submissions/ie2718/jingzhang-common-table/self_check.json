@@ -15,9 +15,19 @@
       "proposal_files": [
         "submissions/ie2718/jingzhang-common-table/proposal.md"
       ],
-      "changelog_files": [],
+      "changelog_files": [
+        "submissions/ie2718/jingzhang-common-table/changelog.md"
+      ],
       "changed_files": [
         "submissions/ie2718/jingzhang-common-table/agent.json",
+        "submissions/ie2718/jingzhang-common-table/assets/figures/civic-rights.en.png",
+        "submissions/ie2718/jingzhang-common-table/assets/figures/civic-rights.png",
+        "submissions/ie2718/jingzhang-common-table/assets/figures/future-tech-stack.en.png",
+        "submissions/ie2718/jingzhang-common-table/assets/figures/future-tech-stack.png",
+        "submissions/ie2718/jingzhang-common-table/assets/figures/implementation-roadmap.en.png",
+        "submissions/ie2718/jingzhang-common-table/assets/figures/implementation-roadmap.png",
+        "submissions/ie2718/jingzhang-common-table/assets/figures/key-area-atlas.en.png",
+        "submissions/ie2718/jingzhang-common-table/assets/figures/key-area-atlas.png",
         "submissions/ie2718/jingzhang-common-table/assets/figures/key-areas.en.png",
         "submissions/ie2718/jingzhang-common-table/assets/figures/key-areas.png",
         "submissions/ie2718/jingzhang-common-table/assets/figures/land-use-structure.en.png",
@@ -28,9 +38,18 @@
         "submissions/ie2718/jingzhang-common-table/assets/figures/mobility-bluegreen.png",
         "submissions/ie2718/jingzhang-common-table/assets/figures/site-overview.en.png",
         "submissions/ie2718/jingzhang-common-table/assets/figures/site-overview.png",
-        "submissions/ie2718/jingzhang-common-table/assets/media/common-table-cover.png",
-        "submissions/ie2718/jingzhang-common-table/assets/media/common-table-symbol.png",
+        "submissions/ie2718/jingzhang-common-table/assets/figures/street-climate-details.en.png",
+        "submissions/ie2718/jingzhang-common-table/assets/figures/street-climate-details.png",
+        "submissions/ie2718/jingzhang-common-table/assets/media/civic-intelligence-academy.webp",
+        "submissions/ie2718/jingzhang-common-table/assets/media/civic-neural-spine-detail.webp",
+        "submissions/ie2718/jingzhang-common-table/assets/media/compute-climate-winter-garden.webp",
+        "submissions/ie2718/jingzhang-common-table/assets/media/future-life-exchange.webp",
+        "submissions/ie2718/jingzhang-common-table/assets/media/jingzhang-resonance-cover.webp",
+        "submissions/ie2718/jingzhang-common-table/assets/media/jingzhang-resonance-symbol.png",
+        "submissions/ie2718/jingzhang-common-table/assets/media/night-open-city-festival.webp",
+        "submissions/ie2718/jingzhang-common-table/assets/media/physical-ai-foundry.webp",
         "submissions/ie2718/jingzhang-common-table/assumptions.json",
+        "submissions/ie2718/jingzhang-common-table/changelog.md",
         "submissions/ie2718/jingzhang-common-table/compliance_matrix.json",
         "submissions/ie2718/jingzhang-common-table/design_depth_matrix.json",
         "submissions/ie2718/jingzhang-common-table/drawings/a0-boards.en.pdf",
@@ -63,7 +82,7 @@
       "ai_package_stages": {
         "submissions/ie2718/jingzhang-common-table": "formal"
       },
-      "total_bytes": 20732442,
+      "total_bytes": 30195712,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -123,8 +142,7 @@
       "metrics_seen": {
         "site_area_sqm": 11412825.386,
         "green_ratio": 0.083336,
-        "public_space_ratio": 0.033484,
-        "scenario_node_count": 12.0
+        "public_space_ratio": 0.033484
       }
     },
     "stderr": ""
@@ -138,15 +156,15 @@
       "summary": {
         "standard_matrix_items": 9,
         "design_depth_items": 15,
-        "known_metric_refs_required": 28,
+        "known_metric_refs_required": 32,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 13,
-          "standard": 7,
-          "depth": 14,
-          "data": 14,
-          "metric": 9
+          "source": 27,
+          "standard": 5,
+          "depth": 9,
+          "data": 8,
+          "metric": 12
         }
       }
     },
