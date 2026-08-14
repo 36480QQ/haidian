@@ -57,6 +57,17 @@ class GitBlobHashTests(unittest.TestCase):
             self.assertNotEqual(expected, hashlib.sha256(proposal.read_bytes()).hexdigest())
             self.assertEqual(0, self.git(root, "diff", "--cached", "--quiet").returncode)
 
+    def test_ignored_path_fails_closed_inside_git_repository(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            self.assertEqual(0, self.git(root, "init").returncode)
+            (root / ".gitignore").write_text("ignored.md\n", encoding="utf-8")
+            ignored = root / "ignored.md"
+            ignored.write_text("must not use raw bytes\n", encoding="utf-8")
+
+            with self.assertRaisesRegex(RuntimeError, "could not stage manifest paths"):
+                git_blob_sha256([ignored], cwd=root)
+
     def test_manifest_validation_uses_the_same_git_blob_bytes(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)

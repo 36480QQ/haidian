@@ -1576,7 +1576,11 @@ def validate_manifest_file(report: ValidationReport, repo_root: Path, proposal_d
             listed_file = repo_root / proposal_dir / safe_path
             if listed_file.is_file():
                 manifest_files.append(listed_file)
-        git_digests = git_blob_sha256(manifest_files, cwd=repo_root)
+        try:
+            git_digests = git_blob_sha256(manifest_files, cwd=repo_root)
+        except RuntimeError as exc:
+            report.add_error(f"{proposal_dir}/manifest.json: cannot hash pending Git blobs: {exc}")
+            git_digests = {}
     if not isinstance(files, list) or not files:
         report.add_error(f"{proposal_dir}/manifest.json: files must be a non-empty array")
     else:

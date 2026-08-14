@@ -266,7 +266,11 @@ def main() -> int:
         and item.get("path") != "manifest.json"
         and (root / str(item["path"])).is_file()
     ]
-    hashes = manifest_digests(root, hash_paths)
+    try:
+        hashes = manifest_digests(root, hash_paths)
+    except RuntimeError as exc:
+        print(f"Submission cannot be finalized: {exc}")
+        return 1
     for item in manifest_files:
         if not isinstance(item, dict):
             continue

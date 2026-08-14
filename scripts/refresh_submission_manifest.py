@@ -58,7 +58,7 @@ def refresh_manifest(root: Path) -> tuple[bool, str, list[str]]:
         return False, "manifest.json has no declared files to refresh", []
     try:
         hashes = manifest_digests(root, [rel for _item, rel in refresh_items])
-    except ValueError as exc:
+    except (ValueError, RuntimeError) as exc:
         return False, f"unsafe manifest path: {exc}", []
     for item, rel in refresh_items:
         item["sha256"] = hashes[rel]
