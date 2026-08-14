@@ -151,5 +151,49 @@
       "provisional boundaries not official redlines",
       "official data pending"
     ]
+  },
+  "pdf_package_verification": {
+    "result": "pass",
+    "method": "Paired page IDs, page labels, transcript order, language metadata and extracted approved text were checked for all 17 Chinese-English page pairs.",
+    "pair_count": 17,
+    "artifact_pairs": [
+      [
+        "drawings/a0-boards.pdf",
+        "drawings/a0-boards.en.pdf"
+      ],
+      [
+        "drawings/a3-booklet.pdf",
+        "drawings/a3-booklet.en.pdf"
+      ]
+    ],
+    "a0_iso_geometry": {
+      "result": "pass",
+      "paired_page_count": 5,
+      "source_size": [
+        2400,
+        1697
+      ],
+      "placement": "same isotropic centred-cover/full-bleed rule for Chinese and English A0 pairs"
+    },
+    "warning": "Machine and human-assisted equivalence checks are not a legal or professional accessibility certification."
+  },
+  "a0_repository_png_encoding_chain": {
+    "verification_date": "2026-08-15",
+    "pair_count": 5,
+    "language_or_fact_change": "none",
+    "relative_html_asset_paths_unchanged": true,
+    "html_sha256": {
+      "report/proposal.html": "019151de2321b3bc0c4515ce09f22718739f56f2af8da1b179a0d966bcaed93b",
+      "report/proposal.en.html": "122df0d493516d6639005235196d8b2275406dfbb1e111c115cdaaa1bca1f3a6",
+      "visual/index.html": "1e8031c845e04873a611b4e089cb2118e2fdb43fb87ed6d6c7bc160319f6e4ed",
+      "visual/index.en.html": "9dc499d281412c3f130ca9724eff9bbfd08de91b8127628aaae5ba37fd6994bf"
+    },
+    "a0_pdf_bytes_unchanged_during_png_optimization": true,
+    "a0_pdf_visible_dct_and_ctm_unchanged_after_semantic_refresh": true,
+    "a0_pdf_sha256_current": {
+      "a0-boards.pdf": "d570a37ae5d359a095bed8b94faf37a4eaaf06b89df4571d781ea207a7186814",
+      "a0-boards.en.pdf": "39e0cdb72fdd9231bf46df88ef774f22f813200329c510023b5076c897523cd4"
+    },
+    "production_record": "visual/assets/image2-production-record.json#a0_delivery_encoding_optimization"
   }
 }

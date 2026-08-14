@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "scenarios": [
     {
       "id": "SC-01",
@@ -43,7 +43,20 @@
         "成功抵达率",
         "退出可用率"
       ],
-      "rollback": "任一高风险失败重复出现、人工兜底不可用或用户无法退出时停用模型，保留人工服务"
+      "rollback": "任一高风险失败重复出现、人工兜底不可用或用户无法退出时停用模型，保留人工服务",
+      "public_ai_record_id": "SC-01",
+      "version_status": "concept_not_procured",
+      "same_task_human_route": "现场人员与纸质路线卡",
+      "station_ids": [
+        "AOC-02"
+      ],
+      "spatial_moment_ids": [
+        "P01",
+        "P02",
+        "P03",
+        "P04",
+        "P05"
+      ]
     },
     {
       "id": "SC-02",
@@ -86,7 +99,28 @@
         "人工响应时间",
         "求助完成率"
       ],
-      "rollback": "任一高风险失败重复出现、人工兜底不可用或用户无法退出时停用模型，保留人工服务"
+      "rollback": "任一高风险失败重复出现、人工兜底不可用或用户无法退出时停用模型，保留人工服务",
+      "public_ai_record_id": "SC-02",
+      "version_status": "concept_not_procured",
+      "same_task_human_route": "电话、广播与现场值守",
+      "station_ids": [
+        "ZZY-01",
+        "ZZY-02",
+        "ZZY-03",
+        "AOC-01",
+        "AOC-02",
+        "AOC-03",
+        "DZS-01",
+        "DZS-02",
+        "DZS-03"
+      ],
+      "spatial_moment_ids": [
+        "P01",
+        "P02",
+        "P03",
+        "P04",
+        "P05"
+      ]
     },
     {
       "id": "SC-03",
@@ -129,7 +163,20 @@
         "转接完成率",
         "人工纠错率"
       ],
-      "rollback": "任一高风险失败重复出现、人工兜底不可用或用户无法退出时停用模型，保留人工服务"
+      "rollback": "任一高风险失败重复出现、人工兜底不可用或用户无法退出时停用模型，保留人工服务",
+      "public_ai_record_id": "SC-03",
+      "version_status": "concept_not_procured",
+      "same_task_human_route": "人工转接台与纸质目录",
+      "station_ids": [
+        "AOC-02"
+      ],
+      "spatial_moment_ids": [
+        "P01",
+        "P02",
+        "P03",
+        "P04",
+        "P05"
+      ]
     },
     {
       "id": "SC-04",
@@ -172,7 +219,21 @@
         "来源展示率",
         "人工更正数"
       ],
-      "rollback": "任一高风险失败重复出现、人工兜底不可用或用户无法退出时停用模型，保留人工服务"
+      "rollback": "任一高风险失败重复出现、人工兜底不可用或用户无法退出时停用模型，保留人工服务",
+      "public_ai_record_id": "SC-04",
+      "version_status": "concept_not_procured",
+      "same_task_human_route": "纸质时间线与人工讲解",
+      "station_ids": [
+        "AOC-03",
+        "DZS-02"
+      ],
+      "spatial_moment_ids": [
+        "P01",
+        "P02",
+        "P03",
+        "P04",
+        "P05"
+      ]
     },
     {
       "id": "SC-05",
@@ -215,7 +276,28 @@
         "选项完整率",
         "人工纠错率"
       ],
-      "rollback": "任一高风险失败重复出现、人工兜底不可用或用户无法退出时停用模型，保留人工服务"
+      "rollback": "任一高风险失败重复出现、人工兜底不可用或用户无法退出时停用模型，保留人工服务",
+      "public_ai_record_id": "SC-05",
+      "version_status": "concept_not_procured",
+      "same_task_human_route": "纸质换乘卡与人工问询",
+      "station_ids": [
+        "ZZY-01",
+        "ZZY-02",
+        "ZZY-03",
+        "AOC-01",
+        "AOC-02",
+        "AOC-03",
+        "DZS-01",
+        "DZS-02",
+        "DZS-03"
+      ],
+      "spatial_moment_ids": [
+        "P01",
+        "P02",
+        "P03",
+        "P04",
+        "P05"
+      ]
     },
     {
       "id": "SC-06",
@@ -258,7 +340,20 @@
         "传感核验率",
         "舒适反馈"
       ],
-      "rollback": "任一高风险失败重复出现、人工兜底不可用或用户无法退出时停用模型，保留人工服务"
+      "rollback": "任一高风险失败重复出现、人工兜底不可用或用户无法退出时停用模型，保留人工服务",
+      "public_ai_record_id": "SC-06",
+      "version_status": "concept_not_procured",
+      "same_task_human_route": "人工指引与纸质热舒适图",
+      "station_ids": [
+        "ZZY-03"
+      ],
+      "spatial_moment_ids": [
+        "P01",
+        "P02",
+        "P03",
+        "P04",
+        "P05"
+      ]
     },
     {
       "id": "SC-07",
@@ -301,7 +396,20 @@
         "冲突解决率",
         "申诉处理率"
       ],
-      "rollback": "任一高风险失败重复出现、人工兜底不可用或用户无法退出时停用模型，保留人工服务"
+      "rollback": "任一高风险失败重复出现、人工兜底不可用或用户无法退出时停用模型，保留人工服务",
+      "public_ai_record_id": "SC-07",
+      "version_status": "concept_not_procured",
+      "same_task_human_route": "电话、纸表与人工审批点",
+      "station_ids": [
+        "ZZY-01"
+      ],
+      "spatial_moment_ids": [
+        "P01",
+        "P02",
+        "P03",
+        "P04",
+        "P05"
+      ]
     },
     {
       "id": "SC-08",
@@ -344,7 +452,21 @@
         "有效会谈数",
         "拒绝理由公开率"
       ],
-      "rollback": "任一高风险失败重复出现、人工兜底不可用或用户无法退出时停用模型，保留人工服务"
+      "rollback": "任一高风险失败重复出现、人工兜底不可用或用户无法退出时停用模型，保留人工服务",
+      "public_ai_record_id": "SC-08",
+      "version_status": "concept_not_procured",
+      "same_task_human_route": "公开项目墙与人工会谈台",
+      "station_ids": [
+        "ZZY-01",
+        "DZS-01"
+      ],
+      "spatial_moment_ids": [
+        "P01",
+        "P02",
+        "P03",
+        "P04",
+        "P05"
+      ]
     },
     {
       "id": "SC-09",
@@ -387,7 +509,20 @@
         "少数意见保留率",
         "人工复核率"
       ],
-      "rollback": "任一高风险失败重复出现、人工兜底不可用或用户无法退出时停用模型，保留人工服务"
+      "rollback": "任一高风险失败重复出现、人工兜底不可用或用户无法退出时停用模型，保留人工服务",
+      "public_ai_record_id": "SC-09",
+      "version_status": "concept_not_procured",
+      "same_task_human_route": "圆桌、匿名纸卡与人工记录",
+      "station_ids": [
+        "AOC-01"
+      ],
+      "spatial_moment_ids": [
+        "P01",
+        "P02",
+        "P03",
+        "P04",
+        "P05"
+      ]
     },
     {
       "id": "SC-10",
@@ -430,7 +565,20 @@
         "专名正确率",
         "人工转接率"
       ],
-      "rollback": "任一高风险失败重复出现、人工兜底不可用或用户无法退出时停用模型，保留人工服务"
+      "rollback": "任一高风险失败重复出现、人工兜底不可用或用户无法退出时停用模型，保留人工服务",
+      "public_ai_record_id": "SC-10",
+      "version_status": "concept_not_procured",
+      "same_task_human_route": "双语纸卡与人工口译转接",
+      "station_ids": [
+        "DZS-03"
+      ],
+      "spatial_moment_ids": [
+        "P01",
+        "P02",
+        "P03",
+        "P04",
+        "P05"
+      ]
     },
     {
       "id": "SC-11",
@@ -473,7 +621,28 @@
         "权威来源率",
         "更新时间"
       ],
-      "rollback": "任一高风险失败重复出现、人工兜底不可用或用户无法退出时停用模型，保留人工服务"
+      "rollback": "任一高风险失败重复出现、人工兜底不可用或用户无法退出时停用模型，保留人工服务",
+      "public_ai_record_id": "SC-11",
+      "version_status": "concept_not_procured",
+      "same_task_human_route": "广播、纸质应急卡与现场人员",
+      "station_ids": [
+        "ZZY-01",
+        "ZZY-02",
+        "ZZY-03",
+        "AOC-01",
+        "AOC-02",
+        "AOC-03",
+        "DZS-01",
+        "DZS-02",
+        "DZS-03"
+      ],
+      "spatial_moment_ids": [
+        "P01",
+        "P02",
+        "P03",
+        "P04",
+        "P05"
+      ]
     },
     {
       "id": "SC-12",
@@ -516,7 +685,28 @@
         "无障碍检查率",
         "参与多样性"
       ],
-      "rollback": "任一高风险失败重复出现、人工兜底不可用或用户无法退出时停用模型，保留人工服务"
+      "rollback": "任一高风险失败重复出现、人工兜底不可用或用户无法退出时停用模型，保留人工服务",
+      "public_ai_record_id": "SC-12",
+      "version_status": "concept_not_procured",
+      "same_task_human_route": "纸质申请、人工说明与公开评议",
+      "station_ids": [
+        "ZZY-01",
+        "ZZY-02",
+        "ZZY-03",
+        "AOC-01",
+        "AOC-02",
+        "AOC-03",
+        "DZS-01",
+        "DZS-02",
+        "DZS-03"
+      ],
+      "spatial_moment_ids": [
+        "P01",
+        "P02",
+        "P03",
+        "P04",
+        "P05"
+      ]
     }
   ],
   "pilots": [
@@ -578,5 +768,32 @@
       "expand_or_stop": "无来源回答或严重误译即停用",
       "non_certification": true
     }
-  ]
+  ],
+  "public_ai_governance": {
+    "register": "visual/assets/public-ai-register.json",
+    "record_ids": [
+      "SC-01",
+      "SC-02",
+      "SC-03",
+      "SC-04",
+      "SC-05",
+      "SC-06",
+      "SC-07",
+      "SC-08",
+      "SC-09",
+      "SC-10",
+      "SC-11",
+      "SC-12"
+    ],
+    "version_status": "concept_not_procured",
+    "same_task_staffed_route_required": true,
+    "spatial_moment_ids": [
+      "P01",
+      "P02",
+      "P03",
+      "P04",
+      "P05"
+    ],
+    "station_assignment_status": "conceptual_not_authorized"
+  }
 }

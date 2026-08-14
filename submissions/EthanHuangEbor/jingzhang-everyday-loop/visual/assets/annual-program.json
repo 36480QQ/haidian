@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "months": [
     {
       "month": 1,
@@ -227,5 +227,53 @@
       "exit": "归档但不部署",
       "non_commitment": "无投资或招商承诺"
     }
-  ]
+  ],
+  "status": "annual_concept_programme_not_started_not_authorized",
+  "carrier_id": "M",
+  "cost_model_ref": "visual/assets/cost-and-procurement.json",
+  "procurement_clause_ids": [
+    "PC-01",
+    "PC-02",
+    "PC-03",
+    "PC-04",
+    "PC-05",
+    "PC-06",
+    "PC-07",
+    "PC-08",
+    "PC-09",
+    "PC-10",
+    "PC-11",
+    "PC-12",
+    "PC-13"
+  ],
+  "delivery_checkpoints": [
+    {
+      "id": "M03",
+      "gate": "G4",
+      "decision": "continue, revise, pause or exit",
+      "required_evidence": "three-month public-value, equity, incident, cost and maintenance receipts",
+      "default_if_not_accepted": "pause affected service",
+      "responsible_role": "public_client_and_independent_reviewer_pending",
+      "status": "future_conditional_gate"
+    },
+    {
+      "id": "M12",
+      "gate": "G4",
+      "decision": "renew scope and funding or exit",
+      "required_evidence": "annual accessibility, procurement, data, asset and co-design audit",
+      "default_if_not_accepted": "no silent renewal; execute exit",
+      "responsible_role": "public_client_and_funding_authority_pending",
+      "status": "future_conditional_gate"
+    },
+    {
+      "id": "M36",
+      "gate": "G4",
+      "decision": "new authorization or full restoration",
+      "required_evidence": "whole-life cost, disposition, deletion and restoration record",
+      "default_if_not_accepted": "full exit and public close-out",
+      "responsible_role": "asset_owner_and_independent_reviewer_pending",
+      "status": "future_conditional_gate"
+    }
+  ],
+  "non_commitment": "No event, participant, programme operator, budget or outcome is confirmed."
 }

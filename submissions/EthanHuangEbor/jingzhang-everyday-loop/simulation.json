@@ -6,11 +6,16 @@
   "runner": "visual/assets/public-acceptance-tabletop/run_tabletop.js",
   "contracts": "visual/assets/public-acceptance-tabletop/scenario-contracts.json",
   "receipts": "visual/assets/public-acceptance-tabletop/receipts.json",
+  "public_ai_register": "visual/assets/public-ai-register.json",
+  "public_ai_record_count": 12,
   "task_count": 72,
   "qualified_tabletop_releases": 12,
   "negative_cases_blocked": 60,
   "network_required": false,
   "field_claim": false,
+  "real_user_data_used": false,
+  "supplier_or_procurement_claim": false,
+  "authorization_claim": false,
   "tasks": [
     {
       "task_id": "SC-01-qualified",
@@ -19,6 +24,7 @@
       "outcome": "expectation_success",
       "release_decision": "release_for_tabletop_only",
       "dispatch_schema_valid": true,
+      "register_contract_valid": true,
       "audit_complete": true
     },
     {
@@ -28,6 +34,7 @@
       "outcome": "expectation_success",
       "release_decision": "block_release",
       "dispatch_schema_valid": true,
+      "register_contract_valid": true,
       "audit_complete": true
     },
     {
@@ -37,6 +44,7 @@
       "outcome": "expectation_success",
       "release_decision": "block_release",
       "dispatch_schema_valid": true,
+      "register_contract_valid": true,
       "audit_complete": true
     },
     {
@@ -46,6 +54,7 @@
       "outcome": "expectation_success",
       "release_decision": "block_release",
       "dispatch_schema_valid": true,
+      "register_contract_valid": true,
       "audit_complete": true
     },
     {
@@ -55,6 +64,7 @@
       "outcome": "expectation_success",
       "release_decision": "block_release",
       "dispatch_schema_valid": true,
+      "register_contract_valid": true,
       "audit_complete": true
     },
     {
@@ -64,6 +74,7 @@
       "outcome": "expectation_success",
       "release_decision": "block_release",
       "dispatch_schema_valid": true,
+      "register_contract_valid": true,
       "audit_complete": true
     },
     {
@@ -73,6 +84,7 @@
       "outcome": "expectation_success",
       "release_decision": "release_for_tabletop_only",
       "dispatch_schema_valid": true,
+      "register_contract_valid": true,
       "audit_complete": true
     },
     {
@@ -82,6 +94,7 @@
       "outcome": "expectation_success",
       "release_decision": "block_release",
       "dispatch_schema_valid": true,
+      "register_contract_valid": true,
       "audit_complete": true
     },
     {
@@ -91,6 +104,7 @@
       "outcome": "expectation_success",
       "release_decision": "block_release",
       "dispatch_schema_valid": true,
+      "register_contract_valid": true,
       "audit_complete": true
     },
     {
@@ -100,6 +114,7 @@
       "outcome": "expectation_success",
       "release_decision": "block_release",
       "dispatch_schema_valid": true,
+      "register_contract_valid": true,
       "audit_complete": true
     },
     {
@@ -109,6 +124,7 @@
       "outcome": "expectation_success",
       "release_decision": "block_release",
       "dispatch_schema_valid": true,
+      "register_contract_valid": true,
       "audit_complete": true
     },
     {
@@ -118,6 +134,7 @@
       "outcome": "expectation_success",
       "release_decision": "block_release",
       "dispatch_schema_valid": true,
+      "register_contract_valid": true,
       "audit_complete": true
     },
     {
@@ -127,6 +144,7 @@
       "outcome": "expectation_success",
       "release_decision": "release_for_tabletop_only",
       "dispatch_schema_valid": true,
+      "register_contract_valid": true,
       "audit_complete": true
     },
     {
@@ -136,6 +154,7 @@
       "outcome": "expectation_success",
       "release_decision": "block_release",
       "dispatch_schema_valid": true,
+      "register_contract_valid": true,
       "audit_complete": true
     },
     {
@@ -145,6 +164,7 @@
       "outcome": "expectation_success",
       "release_decision": "block_release",
       "dispatch_schema_valid": true,
+      "register_contract_valid": true,
       "audit_complete": true
     },
     {
@@ -154,6 +174,7 @@
       "outcome": "expectation_success",
       "release_decision": "block_release",
       "dispatch_schema_valid": true,
+      "register_contract_valid": true,
       "audit_complete": true
     },
     {
@@ -163,6 +184,7 @@
       "outcome": "expectation_success",
       "release_decision": "block_release",
       "dispatch_schema_valid": true,
+      "register_contract_valid": true,
       "audit_complete": true
     },
     {
@@ -172,6 +194,7 @@
       "outcome": "expectation_success",
       "release_decision": "block_release",
       "dispatch_schema_valid": true,
+      "register_contract_valid": true,
       "audit_complete": true
     },
     {
@@ -181,6 +204,7 @@
       "outcome": "expectation_success",
       "release_decision": "release_for_tabletop_only",
       "dispatch_schema_valid": true,
+      "register_contract_valid": true,
       "audit_complete": true
     },
     {
@@ -190,6 +214,7 @@
       "outcome": "expectation_success",
       "release_decision": "block_release",
       "dispatch_schema_valid": true,
+      "register_contract_valid": true,
       "audit_complete": true
     },
     {
@@ -199,6 +224,7 @@
       "outcome": "expectation_success",
       "release_decision": "block_release",
       "dispatch_schema_valid": true,
+      "register_contract_valid": true,
       "audit_complete": true
     },
     {
@@ -208,6 +234,7 @@
       "outcome": "expectation_success",
       "release_decision": "block_release",
       "dispatch_schema_valid": true,
+      "register_contract_valid": true,
       "audit_complete": true
     },
     {
@@ -217,6 +244,7 @@
       "outcome": "expectation_success",
       "release_decision": "block_release",
       "dispatch_schema_valid": true,
+      "register_contract_valid": true,
       "audit_complete": true
     },
     {
@@ -226,6 +254,7 @@
       "outcome": "expectation_success",
       "release_decision": "block_release",
       "dispatch_schema_valid": true,
+      "register_contract_valid": true,
       "audit_complete": true
     },
     {
@@ -235,6 +264,7 @@
       "outcome": "expectation_success",
       "release_decision": "release_for_tabletop_only",
       "dispatch_schema_valid": true,
+      "register_contract_valid": true,
       "audit_complete": true
     },
     {
@@ -244,6 +274,7 @@
       "outcome": "expectation_success",
       "release_decision": "block_release",
       "dispatch_schema_valid": true,
+      "register_contract_valid": true,
       "audit_complete": true
     },
     {
@@ -253,6 +284,7 @@
       "outcome": "expectation_success",
       "release_decision": "block_release",
       "dispatch_schema_valid": true,
+      "register_contract_valid": true,
       "audit_complete": true
     },
     {
@@ -262,6 +294,7 @@
       "outcome": "expectation_success",
       "release_decision": "block_release",
       "dispatch_schema_valid": true,
+      "register_contract_valid": true,
       "audit_complete": true
     },
     {
@@ -271,6 +304,7 @@
       "outcome": "expectation_success",
       "release_decision": "block_release",
       "dispatch_schema_valid": true,
+      "register_contract_valid": true,
       "audit_complete": true
     },
     {
@@ -280,6 +314,7 @@
       "outcome": "expectation_success",
       "release_decision": "block_release",
       "dispatch_schema_valid": true,
+      "register_contract_valid": true,
       "audit_complete": true
     },
     {
@@ -289,6 +324,7 @@
       "outcome": "expectation_success",
       "release_decision": "release_for_tabletop_only",
       "dispatch_schema_valid": true,
+      "register_contract_valid": true,
       "audit_complete": true
     },
     {
@@ -298,6 +334,7 @@
       "outcome": "expectation_success",
       "release_decision": "block_release",
       "dispatch_schema_valid": true,
+      "register_contract_valid": true,
       "audit_complete": true
     },
     {
@@ -307,6 +344,7 @@
       "outcome": "expectation_success",
       "release_decision": "block_release",
       "dispatch_schema_valid": true,
+      "register_contract_valid": true,
       "audit_complete": true
     },
     {
@@ -316,6 +354,7 @@
       "outcome": "expectation_success",
       "release_decision": "block_release",
       "dispatch_schema_valid": true,
+      "register_contract_valid": true,
       "audit_complete": true
     },
     {
@@ -325,6 +364,7 @@
       "outcome": "expectation_success",
       "release_decision": "block_release",
       "dispatch_schema_valid": true,
+      "register_contract_valid": true,
       "audit_complete": true
     },
     {
@@ -334,6 +374,7 @@
       "outcome": "expectation_success",
       "release_decision": "block_release",
       "dispatch_schema_valid": true,
+      "register_contract_valid": true,
       "audit_complete": true
     },
     {
@@ -343,6 +384,7 @@
       "outcome": "expectation_success",
       "release_decision": "release_for_tabletop_only",
       "dispatch_schema_valid": true,
+      "register_contract_valid": true,
       "audit_complete": true
     },
     {
@@ -352,6 +394,7 @@
       "outcome": "expectation_success",
       "release_decision": "block_release",
       "dispatch_schema_valid": true,
+      "register_contract_valid": true,
       "audit_complete": true
     },
     {
@@ -361,6 +404,7 @@
       "outcome": "expectation_success",
       "release_decision": "block_release",
       "dispatch_schema_valid": true,
+      "register_contract_valid": true,
       "audit_complete": true
     },
     {
@@ -370,6 +414,7 @@
       "outcome": "expectation_success",
       "release_decision": "block_release",
       "dispatch_schema_valid": true,
+      "register_contract_valid": true,
       "audit_complete": true
     },
     {
@@ -379,6 +424,7 @@
       "outcome": "expectation_success",
       "release_decision": "block_release",
       "dispatch_schema_valid": true,
+      "register_contract_valid": true,
       "audit_complete": true
     },
     {
@@ -388,6 +434,7 @@
       "outcome": "expectation_success",
       "release_decision": "block_release",
       "dispatch_schema_valid": true,
+      "register_contract_valid": true,
       "audit_complete": true
     },
     {
@@ -397,6 +444,7 @@
       "outcome": "expectation_success",
       "release_decision": "release_for_tabletop_only",
       "dispatch_schema_valid": true,
+      "register_contract_valid": true,
       "audit_complete": true
     },
     {
@@ -406,6 +454,7 @@
       "outcome": "expectation_success",
       "release_decision": "block_release",
       "dispatch_schema_valid": true,
+      "register_contract_valid": true,
       "audit_complete": true
     },
     {
@@ -415,6 +464,7 @@
       "outcome": "expectation_success",
       "release_decision": "block_release",
       "dispatch_schema_valid": true,
+      "register_contract_valid": true,
       "audit_complete": true
     },
     {
@@ -424,6 +474,7 @@
       "outcome": "expectation_success",
       "release_decision": "block_release",
       "dispatch_schema_valid": true,
+      "register_contract_valid": true,
       "audit_complete": true
     },
     {
@@ -433,6 +484,7 @@
       "outcome": "expectation_success",
       "release_decision": "block_release",
       "dispatch_schema_valid": true,
+      "register_contract_valid": true,
       "audit_complete": true
     },
     {
@@ -442,6 +494,7 @@
       "outcome": "expectation_success",
       "release_decision": "block_release",
       "dispatch_schema_valid": true,
+      "register_contract_valid": true,
       "audit_complete": true
     },
     {
@@ -451,6 +504,7 @@
       "outcome": "expectation_success",
       "release_decision": "release_for_tabletop_only",
       "dispatch_schema_valid": true,
+      "register_contract_valid": true,
       "audit_complete": true
     },
     {
@@ -460,6 +514,7 @@
       "outcome": "expectation_success",
       "release_decision": "block_release",
       "dispatch_schema_valid": true,
+      "register_contract_valid": true,
       "audit_complete": true
     },
     {
@@ -469,6 +524,7 @@
       "outcome": "expectation_success",
       "release_decision": "block_release",
       "dispatch_schema_valid": true,
+      "register_contract_valid": true,
       "audit_complete": true
     },
     {
@@ -478,6 +534,7 @@
       "outcome": "expectation_success",
       "release_decision": "block_release",
       "dispatch_schema_valid": true,
+      "register_contract_valid": true,
       "audit_complete": true
     },
     {
@@ -487,6 +544,7 @@
       "outcome": "expectation_success",
       "release_decision": "block_release",
       "dispatch_schema_valid": true,
+      "register_contract_valid": true,
       "audit_complete": true
     },
     {
@@ -496,6 +554,7 @@
       "outcome": "expectation_success",
       "release_decision": "block_release",
       "dispatch_schema_valid": true,
+      "register_contract_valid": true,
       "audit_complete": true
     },
     {
@@ -505,6 +564,7 @@
       "outcome": "expectation_success",
       "release_decision": "release_for_tabletop_only",
       "dispatch_schema_valid": true,
+      "register_contract_valid": true,
       "audit_complete": true
     },
     {
@@ -514,6 +574,7 @@
       "outcome": "expectation_success",
       "release_decision": "block_release",
       "dispatch_schema_valid": true,
+      "register_contract_valid": true,
       "audit_complete": true
     },
     {
@@ -523,6 +584,7 @@
       "outcome": "expectation_success",
       "release_decision": "block_release",
       "dispatch_schema_valid": true,
+      "register_contract_valid": true,
       "audit_complete": true
     },
     {
@@ -532,6 +594,7 @@
       "outcome": "expectation_success",
       "release_decision": "block_release",
       "dispatch_schema_valid": true,
+      "register_contract_valid": true,
       "audit_complete": true
     },
     {
@@ -541,6 +604,7 @@
       "outcome": "expectation_success",
       "release_decision": "block_release",
       "dispatch_schema_valid": true,
+      "register_contract_valid": true,
       "audit_complete": true
     },
     {
@@ -550,6 +614,7 @@
       "outcome": "expectation_success",
       "release_decision": "block_release",
       "dispatch_schema_valid": true,
+      "register_contract_valid": true,
       "audit_complete": true
     },
     {
@@ -559,6 +624,7 @@
       "outcome": "expectation_success",
       "release_decision": "release_for_tabletop_only",
       "dispatch_schema_valid": true,
+      "register_contract_valid": true,
       "audit_complete": true
     },
     {
@@ -568,6 +634,7 @@
       "outcome": "expectation_success",
       "release_decision": "block_release",
       "dispatch_schema_valid": true,
+      "register_contract_valid": true,
       "audit_complete": true
     },
     {
@@ -577,6 +644,7 @@
       "outcome": "expectation_success",
       "release_decision": "block_release",
       "dispatch_schema_valid": true,
+      "register_contract_valid": true,
       "audit_complete": true
     },
     {
@@ -586,6 +654,7 @@
       "outcome": "expectation_success",
       "release_decision": "block_release",
       "dispatch_schema_valid": true,
+      "register_contract_valid": true,
       "audit_complete": true
     },
     {
@@ -595,6 +664,7 @@
       "outcome": "expectation_success",
       "release_decision": "block_release",
       "dispatch_schema_valid": true,
+      "register_contract_valid": true,
       "audit_complete": true
     },
     {
@@ -604,6 +674,7 @@
       "outcome": "expectation_success",
       "release_decision": "block_release",
       "dispatch_schema_valid": true,
+      "register_contract_valid": true,
       "audit_complete": true
     },
     {
@@ -613,6 +684,7 @@
       "outcome": "expectation_success",
       "release_decision": "release_for_tabletop_only",
       "dispatch_schema_valid": true,
+      "register_contract_valid": true,
       "audit_complete": true
     },
     {
@@ -622,6 +694,7 @@
       "outcome": "expectation_success",
       "release_decision": "block_release",
       "dispatch_schema_valid": true,
+      "register_contract_valid": true,
       "audit_complete": true
     },
     {
@@ -631,6 +704,7 @@
       "outcome": "expectation_success",
       "release_decision": "block_release",
       "dispatch_schema_valid": true,
+      "register_contract_valid": true,
       "audit_complete": true
     },
     {
@@ -640,6 +714,7 @@
       "outcome": "expectation_success",
       "release_decision": "block_release",
       "dispatch_schema_valid": true,
+      "register_contract_valid": true,
       "audit_complete": true
     },
     {
@@ -649,6 +724,7 @@
       "outcome": "expectation_success",
       "release_decision": "block_release",
       "dispatch_schema_valid": true,
+      "register_contract_valid": true,
       "audit_complete": true
     },
     {
@@ -658,6 +734,7 @@
       "outcome": "expectation_success",
       "release_decision": "block_release",
       "dispatch_schema_valid": true,
+      "register_contract_valid": true,
       "audit_complete": true
     }
   ]

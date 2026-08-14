@@ -9,8 +9,7 @@
       "review_status": "addressed",
       "proposal_sections": [
         "设计依据与资料清单",
-        "三层范围工作框架",
-        "指标体系、面积复算与合规矩阵"
+        "三层范围工作框架"
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
@@ -53,7 +52,7 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "正文“设计依据与资料清单”将该依据转化为可读判断，矩阵和结构化文件保存逐项证据与限制。"
+      "evidence_summary_zh": "正文仅在该依据允许的范围内支持设计判断；缺少个案条件或专业核验时保持资料缺口，不声明合规、审批或认证。"
     },
     {
       "standard_id": "PROJECT-AGENT-OPEN-CALL-TASKBOOK",
@@ -62,9 +61,8 @@
       "mandatory": true,
       "review_status": "addressed",
       "proposal_sections": [
-        "统筹研究范围产业与未来城市研究",
-        "AI 创新生态、人才画像与 AI+ 场景",
-        "更新项目清单、实施政策与分期计划"
+        "设计依据与资料清单",
+        "统筹研究范围产业与未来城市研究"
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
@@ -107,7 +105,7 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "正文“统筹研究范围产业与未来城市研究”将该依据转化为可读判断，矩阵和结构化文件保存逐项证据与限制。"
+      "evidence_summary_zh": "正文仅在该依据允许的范围内支持设计判断；缺少个案条件或专业核验时保持资料缺口，不声明合规、审批或认证。"
     },
     {
       "standard_id": "MOHURD-URBAN-DESIGN-MEASURES",
@@ -160,7 +158,7 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "正文“总体设计范围城市更新与控规深度城市设计”将该依据转化为可读判断，矩阵和结构化文件保存逐项证据与限制。"
+      "evidence_summary_zh": "正文仅在该依据允许的范围内支持设计判断；缺少个案条件或专业核验时保持资料缺口，不声明合规、审批或认证。"
     },
     {
       "standard_id": "MOHURD-CONTROL-DETAILED-PLANNING",
@@ -213,7 +211,7 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "正文“总体设计范围城市更新与控规深度城市设计”将该依据转化为可读判断，矩阵和结构化文件保存逐项证据与限制。"
+      "evidence_summary_zh": "正文仅在该依据允许的范围内支持设计判断；缺少个案条件或专业核验时保持资料缺口，不声明合规、审批或认证。"
     },
     {
       "standard_id": "MNR-LAND-USE-CLASSIFICATION-GUIDE",
@@ -222,6 +220,7 @@
       "mandatory": true,
       "review_status": "addressed",
       "proposal_sections": [
+        "总体设计范围城市更新与控规深度城市设计",
         "用地、建筑规模与拆改留方案"
       ],
       "drawing_refs": [
@@ -265,7 +264,7 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "正文“用地、建筑规模与拆改留方案”将该依据转化为可读判断，矩阵和结构化文件保存逐项证据与限制。"
+      "evidence_summary_zh": "正文仅在该依据允许的范围内支持设计判断；缺少个案条件或专业核验时保持资料缺口，不声明合规、审批或认证。"
     },
     {
       "standard_id": "MOHURD-ARCH-DESIGN-DEPTH-2016",
@@ -274,7 +273,7 @@
       "mandatory": false,
       "review_status": "data_gap",
       "proposal_sections": [
-        "用地、建筑规模与拆改留方案",
+        "重点区域详细设计",
         "风险、版权与合规说明"
       ],
       "drawing_refs": [
@@ -318,7 +317,7 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "仅登记为待补官方文件的深化提醒；不据此宣称建筑专业深度或个案合规已经完成。"
+      "evidence_summary_zh": "正文仅在该依据允许的范围内支持设计判断；缺少个案条件或专业核验时保持资料缺口，不声明合规、审批或认证。"
     }
   ]
 }

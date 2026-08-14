@@ -303,7 +303,14 @@
       "install_interface": "bolt-on dry interface",
       "maintenance": "seasonal inspection",
       "reversibility": "remove without irreversible heritage damage; restore surface",
-      "data_boundary": "no data"
+      "data_boundary": "no data collection",
+      "name_en": "Continuous Shade Unit",
+      "dimension_or_range": "continuous segment; final clearances pending professional verification",
+      "maintenance_daily": "check clear passage, shade condition and cane-detectable edge",
+      "maintenance_monthly": "inspect anchors, fabric and surface protection",
+      "removal_tool": "hand tools and approved anchor-release kit",
+      "reuse_route": "inspect, catalogue and reuse in an authorized future reversible kit",
+      "restoration_acceptance": "remove shade unit; restore and photograph surface; verify ordinary passage"
     },
     {
       "id": "CMP-02",
@@ -313,7 +320,14 @@
       "install_interface": "reversible baseplate",
       "maintenance": "daily cleaning and monthly fixing check",
       "reversibility": "remove without irreversible heritage damage; restore surface",
-      "data_boundary": "no data"
+      "data_boundary": "no data collection",
+      "name_en": "Armrest Seating",
+      "dimension_or_range": "seat and companion-space arrangement; final layout pending accessibility review",
+      "maintenance_daily": "clean seating and keep adjacent wheelchair companion space clear",
+      "maintenance_monthly": "check fixings, arm support and surface wear",
+      "removal_tool": "hand tools and baseplate-release kit",
+      "reuse_route": "inspect and redeploy as public seating after authorization",
+      "restoration_acceptance": "remove seating and baseplate; repair surface; verify clear route"
     },
     {
       "id": "CMP-03",
@@ -323,7 +337,14 @@
       "install_interface": "modular floor cassette",
       "maintenance": "staff check before opening",
       "reversibility": "remove without irreversible heritage damage; restore surface",
-      "data_boundary": "no biometric or health record by default"
+      "data_boundary": "no biometric or health record by default",
+      "name_en": "Care and Waiting Module",
+      "dimension_or_range": "modular care/waiting bay; final turning and transfer clearances pending review",
+      "maintenance_daily": "check privacy option, step-free approach and caregiver adjacency",
+      "maintenance_monthly": "inspect cassette joints and wear surfaces",
+      "removal_tool": "cassette lift handles and hand tools",
+      "reuse_route": "inspect and reuse as a non-digital care/waiting module",
+      "restoration_acceptance": "lift cassette; restore finish; verify ordinary public-service use"
     },
     {
       "id": "CMP-04",
@@ -333,47 +354,82 @@
       "install_interface": "replaceable rail",
       "maintenance": "content and contrast review",
       "reversibility": "remove without irreversible heritage damage; restore surface",
-      "data_boundary": "no tracking"
+      "data_boundary": "no tracking",
+      "name_en": "Three-layer Cultural Wayfinding",
+      "dimension_or_range": "three-layer sign rail; final type size and tactile detail pending verification",
+      "maintenance_daily": "check legibility, obstruction and damage",
+      "maintenance_monthly": "review content, contrast and tactile attachment condition",
+      "removal_tool": "rail release key and hand tools",
+      "reuse_route": "archive approved content and reuse rail for ordinary wayfinding",
+      "restoration_acceptance": "remove rail; patch interface; retain only cleared ordinary-service signage"
     },
     {
       "id": "CMP-05",
       "name_zh": "人工服务台",
       "use": "human service",
       "accessibility": "low counter, seating and hearing-support readiness",
-      "install_interface": "mobile powered desk",
+      "install_interface": "mobile powered desk with dry connector",
       "maintenance": "staff rota and daily opening log",
       "reversibility": "remove without irreversible heritage damage; restore surface",
-      "data_boundary": "minimum voluntary service log"
+      "data_boundary": "minimum voluntary service log only",
+      "name_en": "Staffed Service Desk",
+      "dimension_or_range": "mobile staffed desk with seated service position; final counter geometry pending review",
+      "maintenance_daily": "open staffed route, test telephone referral and check clear approach",
+      "maintenance_monthly": "review rota, cable protection and service-log minimisation",
+      "removal_tool": "locking caster release and dry power disconnect",
+      "reuse_route": "retain as ordinary staffed public-service desk",
+      "restoration_acceptance": "disconnect power, remove desk or retain as ordinary service; verify no digital dependency"
     },
     {
       "id": "CMP-06",
       "name_zh": "低位交互界面",
       "use": "low-height interface",
       "accessibility": "keyboard reach, audio alternative and 200% zoom",
-      "install_interface": "reversible mount",
+      "install_interface": "reversible mount and isolated data connector",
       "maintenance": "monthly content and device review",
       "reversibility": "remove without irreversible heritage damage; restore surface",
-      "data_boundary": "opt-in only; no face requirement"
+      "data_boundary": "opt-in only; no face requirement",
+      "name_en": "Low-height Interaction Interface",
+      "dimension_or_range": "low-height interaction point; final reach range pending accessibility review",
+      "maintenance_daily": "check keyboard, audio alternative and staffed transfer notice",
+      "maintenance_monthly": "review content, device condition and opt-in notice",
+      "removal_tool": "mount-release key and isolated data disconnect",
+      "reuse_route": "return device to supplier or convert mount to non-digital information panel",
+      "restoration_acceptance": "disconnect data and power; remove device; preserve staffed and printed route"
     },
     {
       "id": "CMP-07",
       "name_zh": "活动电源接口",
       "use": "event power",
       "accessibility": "protected cable route and clear manoeuvring space",
-      "install_interface": "lockable temporary point",
+      "install_interface": "lockable temporary point with dry connection",
       "maintenance": "pre/post event safety check",
       "reversibility": "remove without irreversible heritage damage; restore surface",
-      "data_boundary": "no data"
+      "data_boundary": "no data collection",
+      "name_en": "Event Power Interface",
+      "dimension_or_range": "lockable temporary event-power point; final load and cable design pending review",
+      "maintenance_daily": "check cable protection and clear manoeuvring space before use",
+      "maintenance_monthly": "inspect enclosure, connector and isolation label",
+      "removal_tool": "qualified electrical isolation and enclosure-release tools",
+      "reuse_route": "retain for authorized temporary public events or return to supplier",
+      "restoration_acceptance": "qualified isolation, remove temporary point and restore protective finish"
     },
     {
       "id": "CMP-08",
       "name_zh": "可逆传感接口",
       "use": "reversible sensor interface",
       "accessibility": "not placed in required clear path",
-      "install_interface": "time-limited mount",
+      "install_interface": "time-limited mount with isolated power/data connector",
       "maintenance": "calibration and removal record",
       "reversibility": "remove without irreversible heritage damage; restore surface",
-      "data_boundary": "non-identifying sensing preferred; purpose and retention posted"
+      "data_boundary": "non-identifying sensing preferred; purpose and retention posted",
+      "name_en": "Reversible Sensor and Data Interface",
+      "dimension_or_range": "time-limited sensor/data interface outside required clear path",
+      "maintenance_daily": "check posted purpose, expiry date and no obstruction",
+      "maintenance_monthly": "review calibration, retention and removal record",
+      "removal_tool": "mount-release key plus isolated power/data shutdown",
+      "reuse_route": "return to supplier or retain only after separate authorized review",
+      "restoration_acceptance": "shut down, export or delete per authorized record, remove interface and restore surface"
     }
   ],
   "culture_signage": {
@@ -401,14 +457,69 @@
     "international_copy_status": "concept proposal under review"
   },
   "inclusion_protocol": {
-    "co_creation_status": "planned; no fabricated participant sample",
-    "co_creation_plan": [
-      "walk audit with disabled users and caregivers",
-      "multilingual terminology check",
-      "youth and older-user paper prototype",
-      "public response and dissent log"
+    "status": "planned_not_run",
+    "actual_sessions": [],
+    "evidence_path": "visual/assets/co-design-and-equity.json",
+    "preferred_carrier_id": "M",
+    "persona_group_ids": [
+      "nearby_residents_and_carers",
+      "researchers_and_developers",
+      "startup_and_sme_teams",
+      "commuters_and_international_visitors",
+      "public_service_and_site_operations_staff"
     ],
-    "accessible_route_audit": "planned field audit; current diagram is not certification",
+    "scenario_ids": [
+      "SC-01",
+      "SC-02",
+      "SC-03",
+      "SC-04",
+      "SC-05",
+      "SC-06",
+      "SC-07",
+      "SC-08",
+      "SC-09",
+      "SC-10",
+      "SC-11",
+      "SC-12"
+    ],
+    "stage_ids": [
+      "walk_and_barrier_audit",
+      "scenario_tabletop",
+      "public_decision_jury"
+    ],
+    "recruitment_target_ids": [
+      "older_people",
+      "disabled_users",
+      "carers_and_children",
+      "non_smartphone_users",
+      "service_staff",
+      "site_and_maintenance_staff",
+      "independent_reviewers"
+    ],
+    "hybrid_participation": "offline, telephone and online routes have equal evidence and response status",
+    "compensation_and_affordability_rule": "Budget participation time, travel, access support, interpretation and carer/companion costs before recruitment; participation is free and basic public service is never conditional on attendance, payment, membership or data surrender.",
+    "accessible_materials": [
+      "plain-language Chinese and English summary",
+      "large-print and high-contrast paper",
+      "structured keyboard-readable digital copy",
+      "read-aloud, interpretation, tactile/raised-line or seated map review on request",
+      "advance issue of materials with breaks and companion participation"
+    ],
+    "vulnerable_group_decision_rights": {
+      "rights_holder": "affected users and their chosen representative or access supporter",
+      "topics": [
+        "same_task_human_service",
+        "route_accessibility",
+        "complaint_handling",
+        "unsafe_data_use"
+      ],
+      "authority": "modify_or_stop_before_release",
+      "override_rule": "A sponsor, supplier or facilitator cannot override an unresolved affected-user safety or rights stop; reopening requires published corrective evidence and renewed affected-user review."
+    },
+    "conflict_disclosure": "Facilitators, authors, sponsor/site roles, suppliers and reviewers disclose interests before evidence review; material conflicts trigger recusal and are recorded in the published decision log.",
+    "complaints": "Accept staffed, telephone, paper and optional digital complaints without requiring the disputed system; acknowledge, assign an independent review role, publish the route and preserve appeal and anti-retaliation protections.",
+    "output_publication": "Publish the method, recruitment target and gaps, accessible anonymised evidence, accepted/rejected/deferred changes with reasons, dissent, conflicts, decision and next gate; never imply that a planned session occurred.",
+    "accessible_route_audit": "planned_not_run; the current M-carrier drawing is a concept and not a field audit or certification",
     "language_rules": [
       "Chinese-English parity",
       "plain language",
@@ -421,10 +532,9 @@
       "explain why information is requested",
       "paper and staffed alternative"
     ],
-    "affordability_rule": "basic navigation, help, shade, seating and public information are not exchanged for data or paid membership",
-    "vulnerable_group_decision_rights": "affected-group review can require redesign or stop before expansion",
     "appeal": "staffed, telephone, paper and voluntary digital channels",
-    "human_channel": "available throughout public opening hours; real staffing agreement pending"
+    "human_channel": "required throughout public opening hours; real staffing agreement and service level remain pending",
+    "evidence_boundary": "No attendance, participant quotation, vote, resident approval, field result, authorization or accessibility certification is claimed."
   },
   "human_precision_rules": [
     {
@@ -444,7 +554,13 @@
     "synthetic_tabletop_check_count": 72,
     "qualified_tabletop_release_count": 12,
     "blocked_negative_case_count": 60,
-    "evidence_gates": ["G0", "G1", "G2", "G3", "G4"],
+    "evidence_gates": [
+      "G0",
+      "G1",
+      "G2",
+      "G3",
+      "G4"
+    ],
     "first_100_days_package_count": 8,
     "evidence_paths": [
       "visual/assets/origin-life-service-station.json",
@@ -452,9 +568,30 @@
       "visual/assets/public-acceptance-tabletop/receipts.json",
       "visual/assets/first-100-days.json",
       "visual/assets/raci-and-signoff.json",
-      "simulation.json"
+      "simulation.json",
+      "visual/assets/carrier-typologies.json",
+      "visual/assets/stations.json",
+      "visual/assets/co-design-and-equity.json",
+      "visual/assets/accessibility-audit.json"
     ],
-    "limitation": "synthetic tabletop evidence only; not a field test, approval, procurement decision, or operator commitment"
+    "limitation": "synthetic tabletop evidence only; not a field test, approval, procurement decision, or operator commitment",
+    "carrier_id": "M",
+    "carrier_selection_status": "preferred_competition_prototype_not_site_selection",
+    "spatial_moment_ids": [
+      "P01",
+      "P02",
+      "P03",
+      "P04",
+      "P05"
+    ],
+    "prototype_interfaces": {
+      "continuous_step_free_bypass": true,
+      "two_independent_exits": "assumption_pending_fire_review",
+      "staff_maintenance_access": true,
+      "isolated_power_data_shutdown": true,
+      "demountable_dry_connections": true,
+      "end_state": "restore_to_ordinary_service"
+    }
   },
   "source_use_rules": {
     "formal": "may support a bounded claim with precise marker",
@@ -478,5 +615,22 @@
     "no funding or procurement promise",
     "no FAR, height, demolition, engineering or investment conclusion",
     "no legal trademark or accessibility certification"
-  ]
+  ],
+  "carrier_typology_summary": {
+    "carrier_ids": [
+      "S",
+      "M",
+      "L"
+    ],
+    "preferred_prototype": "M",
+    "area_unit": "m2_design_assumption",
+    "not_site_measurements": true,
+    "implementation_module_ids": [
+      "M03",
+      "M04",
+      "M05",
+      "M06",
+      "M07"
+    ]
+  }
 }

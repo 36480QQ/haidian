@@ -271,6 +271,111 @@
       ],
       "source_type": "official_public_precedent",
       "usage": "Mechanism comparison only; no Beijing site, approval or implementation claim."
+    },
+    {
+      "id": "HAIDIAN-URBAN-RENEWAL-2025",
+      "title": "海淀区城市更新导则（2025年版）与实施指引（2025年版）",
+      "publisher": "北京市海淀区人民政府",
+      "published_date": "2025-07-01",
+      "effective_date": "2025-07-01",
+      "url": "https://zyk.bjhd.gov.cn/zwdt/zcwj/202507/t20250716_4779051.shtml",
+      "accessed_date": "2026-08-14",
+      "authority_level": "official_current_policy",
+      "source_type": "official_current_policy",
+      "status": "formal",
+      "usable_for": [
+        "urban-renewal direction",
+        "implementation modules",
+        "department referral path"
+      ],
+      "not_usable_for": [
+        "site authorization",
+        "operator commitment",
+        "funding approval"
+      ],
+      "usage": "Formal policy and implementation-path alignment only."
+    },
+    {
+      "id": "UNHABITAT-PEOPLE-CENTRED-2025",
+      "title": "A Step-by-Step Guide for a People-Centred Smart City Strategy",
+      "publisher": "UN-Habitat",
+      "published_date": "2025",
+      "url": "https://unhabitat.org/a-step-by-step-guide-for-a-people-centred-smart-city-strategy-a-playbook-for-national-regional-and-local-governments",
+      "accessed_date": "2026-08-14",
+      "authority_level": "international_normative_guidance",
+      "source_type": "official_public_guidance",
+      "status": "background_only",
+      "usable_for": [
+        "co-design method",
+        "digital inclusion",
+        "public-value evaluation"
+      ],
+      "not_usable_for": [
+        "Chinese legal compliance",
+        "local authorization"
+      ],
+      "usage": "Method comparison only."
+    },
+    {
+      "id": "UK-ATRS-2.1",
+      "title": "Algorithmic Transparency Recording Standard v2.1",
+      "publisher": "UK Government Digital Service",
+      "published_date": "2023-01-05",
+      "last_updated_date": "2025-05-08",
+      "url": "https://www.gov.uk/government/collections/algorithmic-transparency-recording-standard-hub",
+      "accessed_date": "2026-08-14",
+      "authority_level": "official_foreign_standard",
+      "source_type": "official_public_guidance",
+      "status": "background_only",
+      "usable_for": [
+        "public algorithm record structure",
+        "owner and procurement disclosure"
+      ],
+      "not_usable_for": [
+        "Chinese legal compliance"
+      ],
+      "usage": "Governance pattern comparison only."
+    },
+    {
+      "id": "AMSTERDAM-ALGORITHM-REGISTER",
+      "title": "Algorithm Register of the Dutch Government",
+      "publisher": "Government of the Netherlands",
+      "published_date": null,
+      "url": "https://algoritmes.overheid.nl/en",
+      "accessed_date": "2026-08-14",
+      "authority_level": "official_foreign_register",
+      "source_type": "official_public_precedent",
+      "status": "background_only",
+      "usable_for": [
+        "public register interface",
+        "impactful-algorithm disclosure"
+      ],
+      "not_usable_for": [
+        "Chinese legal compliance",
+        "local system approval"
+      ],
+      "usage": "Register mechanism comparison only."
+    },
+    {
+      "id": "BARCELONA-DECIDIM",
+      "title": "Decidim Barcelona",
+      "publisher": "Barcelona City Council",
+      "published_date": null,
+      "url": "https://ajuntament.barcelona.cat/digital/en/technology-accessible-everyone/accessible-and-participatory/accessible-and-participatory-5",
+      "accessed_date": "2026-08-14",
+      "authority_level": "official_city_programme",
+      "source_type": "official_public_precedent",
+      "status": "background_only",
+      "usable_for": [
+        "hybrid participation",
+        "traceable proposals",
+        "public feedback"
+      ],
+      "not_usable_for": [
+        "Chinese statutory participation",
+        "local consultation outcome"
+      ],
+      "usage": "Participation mechanism comparison only."
     }
   ],
   "accessed_date": "2026-08-14",
