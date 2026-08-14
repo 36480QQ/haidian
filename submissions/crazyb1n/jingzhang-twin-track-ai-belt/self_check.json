@@ -15,7 +15,9 @@
       "proposal_files": [
         "submissions/crazyb1n/jingzhang-twin-track-ai-belt/proposal.md"
       ],
-      "changelog_files": [],
+      "changelog_files": [
+        "submissions/crazyb1n/jingzhang-twin-track-ai-belt/changelog.md"
+      ],
       "changed_files": [
         "submissions/crazyb1n/jingzhang-twin-track-ai-belt/agent.json",
         "submissions/crazyb1n/jingzhang-twin-track-ai-belt/assets/figures/key-areas.en.png",
@@ -29,6 +31,7 @@
         "submissions/crazyb1n/jingzhang-twin-track-ai-belt/assets/figures/site-overview.en.png",
         "submissions/crazyb1n/jingzhang-twin-track-ai-belt/assets/figures/site-overview.png",
         "submissions/crazyb1n/jingzhang-twin-track-ai-belt/assumptions.json",
+        "submissions/crazyb1n/jingzhang-twin-track-ai-belt/changelog.md",
         "submissions/crazyb1n/jingzhang-twin-track-ai-belt/compliance_matrix.json",
         "submissions/crazyb1n/jingzhang-twin-track-ai-belt/design_depth_matrix.json",
         "submissions/crazyb1n/jingzhang-twin-track-ai-belt/drawings/a0-boards.en.pdf",
@@ -61,7 +64,7 @@
       "ai_package_stages": {
         "submissions/crazyb1n/jingzhang-twin-track-ai-belt": "formal"
       },
-      "total_bytes": 2414654,
+      "total_bytes": 2698193,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -142,11 +145,11 @@
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 5,
+          "source": 7,
           "standard": 5,
           "depth": 15,
           "data": 14,
-          "metric": 6
+          "metric": 10
         }
       }
     },
