@@ -6,7 +6,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以铁路转辙器为母题（转辙即路由决策即 agent 编排），把四环协作（资料/推演/反馈/复核）落成机器可读治理制品——Civic Agent Receipt 收据 + G0-G6 门闸状态机 + 验线四步。环会自转：每次干预可审计、可回滚、可证伪。所有空间建议为开放共创建议，不替代正式规划。"
 tracks: ["civic-agent-governance", "ai-public-services", "jingzhang-heritage-narrative"]
 scenarios: ["ai-cultural-guide", "ai-health-service-navigation", "ai-traffic-walkability"]
-iteration: "v12.0"
+iteration: "v13.0"
 ---
 
 # 京张·转辙 · 城市智能体验证带
@@ -29,7 +29,7 @@ iteration: "v12.0"
 
 ## 统筹研究范围产业与未来城市研究
 
-统筹研究范围回应公告 1.5（1）关于世界级 AI 创新生态体系的要求 `[source:AGENT-TASKBOOK]`。本方案研究全球 AI 创新生态并提出可转化机制，每个案例附公开核查入口与"借鉴机制 / 不照搬边界"两列：硅谷沙丘路、伦敦 King's Cross、首尔 DMC、阿姆斯特丹 Marineterrein、深圳湾、波士顿 Kendall Square、东京柏叶、巴塞罗那 22@。案例后专门设**失败教训对照**（如多伦多 Quayside 因数据主权争议搁浅），反推场景卡"数据来源 / 隐私边界 / 人工复核 / 失败回退"四要素。
+统筹研究范围回应公告 1.5（1）关于世界级 AI 创新生态体系的要求 `[source:AGENT-TASKBOOK]`。本方案研究全球 AI 创新生态并提出可转化机制，每个案例附公开核查入口与"借鉴机制 / 不照搬边界"两列：硅谷沙丘路、伦敦 King's Cross、首尔 DMC、阿姆斯特丹 Marineterrein、深圳湾、波士顿 Kendall Square、东京柏叶、巴塞罗那 22@。**区域协同回路**（京津冀四向 `[metric:regional_synergy_loop_count]`）：海淀做原创策源（本带）—怀柔科学城做大科学装置与基础研究接力—北京经济技术开发区（亦庄）做智能制造成果转化—天津/雄安做场景放大与区域复制，形成"原创→装置→转化→放大"的四向分工回路；本带的转辙枢纽塔即回路的可视化调度台。案例后专门设**失败教训对照**（如多伦多 Quayside 因数据主权争议搁浅），反推场景卡"数据来源 / 隐私边界 / 人工复核 / 失败回退"四要素。
 
 现状诊断基于公开资料与真实数据锚点 `[source:SITE-PARK-FACTS]` `[source:HAIDIAN-AI-FACTS]`：京张铁路遗址公园二期已于 2026-08-06 全面开放，全线约 9 公里、约 53 公顷，服务沿线近 70 个社区、约 45 万居民、9 个街镇与 10 余所高校科研院所；海淀区聚集 AI 企业超 2000 家、AI 核心产值超 3500 亿元（约占全国 30%）、AI 人才约 9 万、AI 产业占全区 GDP 约 40%。本方案识别的典型问题：公共空间被交通与用地切割、东西缝合与南北到达不足、面向青年与中小团队的低门槛公共界面稀缺、AI 场景丰富但缺少持续记录资料与反馈的开放机制 `[depth:existing_conditions_diagnosis]`。用地结构以网格化分区重构总体设计范围 `[data:geometry/land_use.geojson#LU-090]`，统筹与总体范围关系见指标 `[metric:site_area_sqm]`。未来城市形态提出"agent-readable city"方向：所有空间建议都附带机器可读图层、指标、置信边界、拆改留与主导环标注，使后续智能体直接继承迭代。
 

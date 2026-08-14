@@ -506,6 +506,19 @@
       "assumptions": [
         "每廊 2 处概念节点，选址待公众参与确认"
       ]
+    },
+    "regional_synergy_loop_count": {
+      "status": "known",
+      "value": 4,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count of regional synergy loops (海淀原创/怀柔装置/亦庄转化/区域放大)",
+      "confidence": "medium",
+      "assumptions": [
+        "区域分工为概念建议，机制待市级统筹确认"
+      ]
     }
   }
 }
