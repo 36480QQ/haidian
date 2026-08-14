@@ -303,21 +303,22 @@ While the proposal focuses on Haidian's 43.6 km², it must structurally echo the
 
 Each scenario card is anchored to a concrete spatial node with a conceptual operation entity and phasing, forming a "scenario–space–operation" closed loop rather than slogans [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]:
 
-| Scenario | Space | Node | Operation entity (concept) | Phase |
-|---|---|---|---|---|
-| S1 Smart transit | North corridor | A1 Gateway of Jing-Zhang | Public-private pilot | Near |
-| S2 Ren-shape classroom | Qinghua Garden Station | B2 Origin Dialogue Axis | Heritage + education | Near |
-| S3 Full-stack open source | Zhongzhi Park | B1 Stack Sanctuary | Open-source community + enterprises | Near |
-| S4 OPC launch hall | Origin Community | B2 Origin Dialogue Axis | Park operator | Near |
-| S5 Health pod | Community stations | C-type nodes | Health + enterprises | Near |
-| S6 Corridor smart guide | Whole corridor | All along | Park operator | Near-Mid |
-| S7 Neighborhood legal aid | Dazhongsi/community | B3/C5 | Legal aid + law firms | Mid |
-| S8 Unmanned delivery | Xiaoyue River wing | C6 scenario test field | Platform enterprises | Mid |
-| S9 Environmental watch | Blue-green network | C1 waterfront station | Municipal + eco enterprises | Mid |
-| S10 Sci-tech market | Sidaokou | C5 railway memory | Market brand | Mid |
-| S11 Robot station | Wudaokou | C3 youth co-creation | Enterprises + incubators | Mid |
-| S12 Safety sandbox | Zhongzhi Park | B1 Stack Sanctuary | Research institute + standards body | Mid-Far |
+| Scenario | Location | Node | Operator (concept) | Data governance / Model responsibility | Failure fallback | Verification threshold | KPI (draft) | Phase |
+|---|---|---|---|---|---|---|---|---|
+| S1 Smart transit | Corridor north | A1 Gateway | Government-enterprise pilot | OD-anonymised only; explainability audit | Auto → manual takeover | 3-month trial safety data | Punctuality ≥95% | Near |
+| S2 Ren-shape classroom | Qinghua Garden Station | B2 Dialogue Axis | Museum + education | No biometrics of children | On-site guide fallback | Curriculum review | Annual ≥10,000 visits | Near |
+| S3 Full-stack open-source | Zhongzhi Park | B1 Stack Sanctuary | OSS community + enterprise | Public attribution; container isolation | Community review / rollback | Biweekly release + review | Monthly active contributors ≥200 | Near |
+| S4 OPC Launch Hall | Origin Community | B2 Dialogue Axis | Park operator | Data stays in domain; purpose contract | Manual appeal window | Platform review | Monthly roadshows ≥30 | Near |
+| S5 Health pod | Community station | C nodes | Health authority + enterprise | Health data minimisation + consent | On-site nurse | Medical-grade compliance | Anomaly response ≤15 min | Near |
+| S6 Corridor navigation | Whole corridor | Whole | Park operator | Camera auto-masking; 7-day retention | Volunteer patrol | Monthly audit | Accessibility pass ≥95% | Near-mid |
+| S7 Neighbourhood legal post | Dazhongsi / community | B3/C5 | Justice office + law firm | Case encryption + access trail | Human lawyer review | Legal compliance | Annual ≥5,000 consultations | Mid |
+| S8 Unmanned delivery | Xiaoyue River wing | C6 trial field | Platform enterprise | Route anonymisation | Manual delivery fallback | Road permit + trial | Delivery time −30% | Mid |
+| S9 Environmental watch | Blue-green network | C1 waterfront | Municipal + eco enterprise | Coordinates + timestamp only | On-site handler | Data quality check | Anomalies ≤24h report | Mid |
+| S10 Sci-tech market | Sidaokou | C5 Rail Memory | Market brand | Transaction de-identification | On-site staff | Venue safety permit | Annual ≥1M visitors | Mid |
+| S11 Robot station | Wudaokou | C3 Youth Co-creation | Enterprise + incubator | No identity; real-time erase | Manual channel priority | Safety assessment | Response ≤30s | Mid |
+| S12 Safety sandbox | Zhongzhi Park | B1 Stack Sanctuary | Institute + standards body | Test-set de-identification; isolated net | Isolated rollback | Pass 3-country standards | Vulnerability closure ≤90 days | Mid-long |
 
+Mapping logic: near-phase scenarios land first on the already-ignited "Origin–Zhongzhi" core and the corridor backbone (light start); mid-phase scenarios spread along the two wings and support nodes (balanced rollout); all operators, KPIs and governance mechanisms are conceptual, subject to professional deepening.
 Mapping logic: near-phase scenarios land first on the already-ignited "Origin–Zhongzhi" core and the corridor backbone (light start); mid-phase scenarios spread along the two wings and support nodes (balanced rollout); all operation entities are conceptual, subject to professional deepening.
 
 ![E6 Youth Co-Creation Block rendering (Wudaokou, pedestrian view, concept)](assets/figures/render-e6-youth.png)
@@ -377,16 +378,14 @@ The blue-green space plan takes the Jing-Zhang Heritage Park vitality belt as th
 ## Renewal Project List, Implementation Policy and Phasing
 
 The implementation plan forms a reviewable renewal project list with location, type, function, responsible body, dependencies, phase, risks and evaluation metrics [depth:renewal_project_list] [depth:phasing_implementation] [data:geometry/phasing.geojson#PHASE-001].
-
-| No. | Project | Type | Key dependencies |
-|---|---|---|---|
-| JZ-01 | Jing-Zhang Heritage Park slow-traffic gap repair | Public space/transport | Road red lines, under-viaduct space, traffic review |
-| JZ-02 | Zhongzhi Park Qinghe innovation frontage | Blue-green/industry display | River blue line, ecology and flood conditions |
-| JZ-03 | Origin Community near-campus conversion street | Renewal/industry services | Campus boundary, ownership, ground-floor uses |
-| JZ-04 | Dazhongsi station four-quadrant connectivity | Station integration/slow traffic | Rail station, intersections, municipal pipelines |
-| JZ-05 | AI public services and edge-computing nodes | New infrastructure/services | Energy, computing, safety and operators |
-| JZ-06 | Global AI week public route | Operation/brand | Public space permits, event safety, rights clearance |
-
+| Code | Project | Type | Key dependencies | Responsible entity (concept) | Cost class | Privacy/safety review | Public-benefit KPI (draft) | Exit/fallback |
+|---|---|---|---|---|---|---|---|---|
+| JZ-01 | Heritage Park slow-mobility gap stitching | Public space / transport | Road redlines, under-viaduct space, traffic organisation review | Municipal parks centre + subdistrict | Medium (sub-100M ¥) | Medium: camera auto-masking | Pedestrian connectivity ≥95% | 5-yr under-target triggers revision |
+| JZ-02 | Zhongzhi Qinghe innovation interface | Blue-green / industry | River blue line, ecology & flood conditions | Park authority + municipal water bureau | Medium-high | Low: open public realm | Tenant enterprises ≥60 | Occupancy <30% triggers adjustment |
+| JZ-03 | Origin near-campus translation street | Renewal / industry services | Campus boundary, ownership, ground-floor formats | Subdistrict + university + state capital | Medium (light retrofit) | High: data stays in domain | OPC registrations ≥50/yr | <50 in 3 yrs triggers reassignment |
+| JZ-04 | Dazhongsi 4-quadrant pedestrian link | Transit-oriented / slow mobility | Station, intersections, municipal utilities | Municipal rail + Dazhongsi operator | High (incl. connection deck) | Low: emergency camera only | Transfer time −≥30% | Unused 6 months triggers rectification |
+| JZ-05 | AI public service & edge-compute node | New infrastructure / public service | Energy, compute, safety, operator | Municipal S&T commission + enterprise | Medium-high | High: state-level test requirements | Compute-hours / unit energy | Compliance breach → immediate suspension |
+| JZ-06 | Global AI activity-week public route | Operation / brand | Public-space permit, event safety, copyright clearance | Municipal foreign affairs + park | Medium (annual) | Low: public event | Annual registered foreign guests ≥500 | 2 consecutive years under-target → cancellation |
 **Phasing**: near term (1–3 years) Origin Community 2.0 + corridor scenario weaving; mid term (3–5 years) Zhongzhi Park opening + Dazhongsi renewal; long term (5–10 years) wing expansion + full-area activation.
 
 **Annual event system and long-term operation** (conceptual): Artery Open Source Day (monthly), Origin Launch Hall (biweekly), Jing-Zhang Smart Track Experience Week (quarterly), Artery Star Annual Ceremony (annual), Jing-Zhang AI Innovation Belt International Forum (annual), Ancient Bell New Wave Art Season (annual); operation mechanisms include a unified JZ-IA brand IP, multi-stakeholder governance, self-sustaining revenue (space rent + service fees + event operation + investment returns), lightweight startup, and global linkage via the dual high-speed-rail gateways and the SCO AI Application Cooperation Center [source:AGENT-TASKBOOK].
