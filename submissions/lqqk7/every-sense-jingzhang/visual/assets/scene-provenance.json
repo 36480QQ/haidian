@@ -1,0 +1,80 @@
+{
+ "id": "scene-image-provenance",
+ "title_zh": "场景概念图生成档案（提示词全文、工具链、输出哈希）",
+ "title_en": "Concept Scene Image Provenance (full prompts, tool chain, output hashes)",
+ "generated_date": "2026-08-14",
+ "purpose_zh": "为六件场景概念图提供可独立核对的生成输入清单与交易过程登记：提示词全文、工具调用链、候选与选定、后处理链与最终输出哈希。配合 sources.json 中 OPENAI-TERMS-OF-USE-20260814 的条款存档快照，权利主张的每一环均可在包内或存档页面复核。",
+ "purpose_en": "An independently checkable generation record for the six concept scene images: full prompts, tool chain, candidates and selection, post-processing chain and final output hashes. Together with the archived terms snapshot registered under OPENAI-TERMS-OF-USE-20260814 in sources.json, every link of the rights claim can be verified inside the package or on the archived page.",
+ "generation_chain": {
+  "base_image_tool": "OpenAI image generation, invoked through the Codex CLI native image generation tool by the GPT-5.6 Sol agent (codex exec, workspace-write sandbox)",
+  "prompt_language": "English",
+  "candidates_per_scene": 2,
+  "annotation_layer": "Hand-written HTML overlay (package design system: header band, bilingual title, coral badge 概念意象 · AI 生成 · 非工程依据, annotation cards, footer rights pointer), rendered with Chromium via Playwright at device scale factor 4",
+  "post_processing": "PIL/Pillow: resize to 3000 px wide (LANCZOS), encode WebP quality 88 method 6",
+  "no_third_party_material": "Prompts reference no third-party image, artwork or style name; the only image input to any generation call was the package's own site-overview.png figure (scene 3, as geographic layout reference)."
+ },
+ "scenes": [
+  {
+   "scene_id": "S1",
+   "name": "scene-dual-state",
+   "title_zh": "双态并置：遗址公园通用可达底线，AI 开启 = AI 关闭",
+   "prompt_full": "Photorealistic eye-level architectural visualization … generate ONE image split vertically down the exact center into two equal panels by a thin clean seam, showing THE SAME PLACE from THE SAME VIEWPOINT at the same dusk moment — a linear public greenway promenade in a historic Beijing railway heritage park (red-brick industrial rail buildings, preserved tracks to one side, mature trees, distant skyline). LEFT PANEL — smart systems ON: a soft teal light-guidance strip embedded flush in the paving glows gently and leads forward; slim ambient information totems softly lit; the scene feels calmly assisted. RIGHT PANEL — the exact same space with ALL smart systems OFF: no glow, totem screens dark; the space still works through permanent physical design — a low stone wayfinding wall with engraved lettering and a brass braille strip (abstract, non-legible, out of focus), a high-contrast tactile paving band, large fixed directional signage (abstract non-legible), a small staffed help point with warm conventional lighting. SAME people appear in both panels completing the same journey: an elderly man with a white cane walking ON the tactile paving band, a woman in a wheelchair on the SMOOTH paved lane (never on tactile paving), a child on a bicycle. Conventional street lighting is present in both panels (lighting is not a smart system). Hard constraints: no readable text anywhere, no logos, no watermarks, no UI overlays, no people looking at camera. Dusk warm-cool contrast, cinematic but restrained, true-to-life materials.",
+   "selected_candidate": "a",
+   "files": {
+    "zh": {
+     "path": "assets/figures/scene-dual-state.webp",
+     "sha256": "343d6c7cbaf6be3376327a51ac1393309fd597207e5b92d5f37c9139592ab101"
+    },
+    "en": {
+     "path": "assets/figures/scene-dual-state.en.webp",
+     "sha256": "d6361d7575d73cd8a5a9e39cbfbfa3be02bbae154e3b9bb7909cf947f8fb3ec8"
+    }
+   }
+  },
+  {
+   "scene_id": "S2",
+   "name": "scene-interface-yard",
+   "title_zh": "众智园通用接口实验院：接口在公开测试中",
+   "prompt_full": "Photorealistic eye-level architectural visualization, wide landscape: the inner courtyard of a 'universal interface testing yard' inside a Beijing tech-park campus (contemporary low-rise lab buildings with brick-and-glass facades around a calm courtyard). The courtyard is a public testing ground where city service interfaces are tested in the open: a ring of small freestanding interface stations at human scale (ticket-gate, kiosk, door, wayfinding post prototypes), each approachable from a continuous smooth accessible route; one clearly visible staffed HUMAN TAKEOVER point: a small warm-lit counter with a person present, positioned within the same line of sight as the stations; a continuous high-contrast equivalent-route band painted on the ground linking every station to the human counter — one calm teal-grey band, clearly a designed system, within one line of sight; a handful of diverse testers interacting: an older woman at a kiosk, a blind man with a white cane at a tactile model, a wheelchair user at a lowered counter, an engineer observing with a clipboard; status flags or small banners near stations kept ABSTRACT — plain colour markers (teal / amber / coral), no readable text. Late afternoon light, honest working atmosphere (a place being tested, not a showroom), true-to-life materials. Hard constraints: no readable text anywhere, no logos, no watermarks, no screens with legible UI.",
+   "selected_candidate": "a",
+   "files": {
+    "zh": {
+     "path": "assets/figures/scene-interface-yard.webp",
+     "sha256": "bb402c82480482c7a91aeb1e05a8d0ea1792c1c8fec0e541c38f9cbc8928826c"
+    },
+    "en": {
+     "path": "assets/figures/scene-interface-yard.en.webp",
+     "sha256": "cacf019a84f4fd2ec85d8f302dac39b5ce02604ee419d88f6be7645c7d2963ae"
+    }
+   }
+  },
+  {
+   "scene_id": "S3",
+   "name": "scene-corridor-aerial",
+   "title_zh": "走廊鸟瞰：一条底线穿过真实的北京，地标各在其位",
+   "prompt_full": "The attached image is the official site-structure map of our proposal (a north-south heritage railway corridor park in Haidian, Beijing, from the Wudaokou area in the north down to Xizhimen in the south). Use it ONLY as a geographic layout reference for the corridor's shape, its three key areas and its two flanking wings.\n\nUse your native image generation tool. Generate 2 candidate images, saved as scene3-geo-a.png and scene3-geo-b.png in the current working directory.\n\nImage spec — photorealistic aerial architectural visualization of REAL Beijing at dusk, wide landscape, highest quality. Camera hovers about 500 m above the Wudaokou section of the Jingzhang railway heritage corridor, looking SOUTH along the corridor axis. Geographic program (bearings verified against real coordinates — follow strictly):\n\n- FOREGROUND (bottom of frame): the preserved century-old Tsinghua-yuan railway station building (small grey-brick historic station with pitched roof) beside a green linear heritage park with preserved tracks and a generous accessible promenade with warm path lighting and small repeated node canopies.\n- MID-GROUND CENTER-RIGHT at 2.8 km: the Dazhongsi area — a courtyard compound with a distinctive traditional Chinese bell-tower hall (Big Bell Temple) with sweeping tiled roofs, gently lit, next to a market-hall district.\n- NEAR RIGHT at about 2 km: the Zhongguancun tech cluster — contemporary mid-rise and high-rise office towers with lit facades.\n- NEAR LEFT: the small Xiaoyue River waterway running parallel to the corridor through everyday residential fabric, with a lit riverside path.\n- FAR END OF CORRIDOR, CENTER at 5.5 km: Beijing North railway station with its arched roof and a fan of tracks, beside the three curved Xizhimen towers.\n- DISTANT LEFT HORIZON at about 14 km: the Beijing CBD skyline cluster — CITIC Tower (China Zun, the tallest, its distinctive tapered vase silhouette) with the stepped China World Trade Center Tower III and surrounding cluster, hazy in dusk light.\n- DISTANT RIGHT at about 9.5 km: the Central Radio and TV Tower — slender needle with a spherical observation pod, silhouetted.\n- EXTREME RIGHT HORIZON: the soft dark ridge of the Western Hills (Xishan).\n- The rest of the fabric: authentic Haidian mid-rise academic and residential blocks (Beijing's real grain: slab housing, tree-lined ring roads, an elevated ring road crossing the corridor mid-distance).\n\nThe corridor itself reads as ONE continuous calm lit ribbon (warm consistent lighting, ten small evenly spaced node canopies as subtle pools of light). No invented mega-landmarks, no fictional towers. Blue-hour sky, restrained realistic city lighting, true Beijing atmosphere.\n\nHard constraints: no readable text, no logos, no watermarks. After generating both, print SCENE3GEO-DONE.\n",
+   "selected_candidate": "a (geo-programmed regeneration)",
+   "geo_program_note_zh": "提示词中的地标方位与距离由真实 WGS84 坐标推算（视点五道口段 39.992N 116.337E，镜头朝向约 167°）；图注与标注层同口径声明为概念意象、非测绘复原。",
+   "files": {
+    "zh": {
+     "path": "assets/figures/scene-corridor-aerial.webp",
+     "sha256": "9db04a184b8cfa555644caec5033876cb9b633cb86355ab0b687f390fc0a51ff"
+    },
+    "en": {
+     "path": "assets/figures/scene-corridor-aerial.en.webp",
+     "sha256": "c7eff7c450b08e65ec7e2deacf77a646a234415ef3dfac8140b38d2fd9d23298"
+    }
+   }
+  }
+ ],
+ "speech_synthesis_cross_reference": {
+  "note_zh": "合成语音的输入清单与交易参数此前已随包登记，此处汇总指针以便一处核对：输入台本为 assets/media/audio-guide.md §三（26 句逐句台本，与 VTT 逐字同源）与 journey.md §二（11 句分镜台本）；模型、音色、调用工具与拼接参数登记于 audio-guide.md §四 与 journey.md §五；条款存档快照见 sources.json MINIMAX-PLATFORM-TOS-20260814 的 archive_url。",
+  "inputs": [
+   "assets/media/audio-guide.md",
+   "assets/media/journey.md"
+  ],
+  "terms_snapshot_source_id": "MINIMAX-PLATFORM-TOS-20260814"
+ },
+ "rights_source_id": "OPENAI-TERMS-OF-USE-20260814",
+ "limitations_zh": "生成服务本身不提供逐次调用的第三方签名回执；本档案登记的是方案方可提供的全部输入与输出证据（提示词、工具链、哈希、条款快照），不构成平台出具的交易凭证。"
+}
