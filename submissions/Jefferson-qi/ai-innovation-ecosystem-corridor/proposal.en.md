@@ -6,10 +6,10 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_file: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "Using the Jing-Zhang Railway heritage corridor as the 'intelligence vein' main axis, connecting three major nodes — Zhongzhiyuan AI Acceleration Zone, Beijing AI Origin Community, and Dazhongsi AI Industry Zone — to build a world-class AI innovation ecosystem corridor integrating full-stack AI R&D, scenario empowerment, public space, cultural narrative, and long-term operation."
+summary: "Using the Jing-Zhang Railway heritage corridor as the 'intelligence vein' main axis, connecting three major nodes — Zhongzhiyuan AI Acceleration Zone, Beijing AI Origin Community, and Dazhongsi AI Industry Zone — to build a world-class AI innovation ecosystem corridor integrating full-stack AI R&D, scenario empowerment, public space, cultural narrative, and long-term operation. Core concept 'Iron Pulse, Smart Link · Innovative Symbiosis' (IPSIS), five design principles, phased implementation in three stages: Foundation — Chain — Ecosystem."
 tracks: ["ai-traffic-walkability", "jingzhang-heritage", "ai-origin-community", "enterprise-service", "ai-public-service"]
 scenarios: ["ai-traffic-walkability", "ai-medical", "robot-delivery", "ai-guide", "enterprise-service", "public-safety"]
-iteration: "v1.0"
+iteration: "v5.0"
 ---
 
 # AI Innovation Ecosystem Corridor: The Intelligent Rebirth of the Century-Old Jing-Zhang Railway
@@ -55,11 +55,86 @@ This proposal operates across three spatial tiers, strictly corresponding to the
 
 ![Three-Tier Scope and Spatial Working Framework](assets/figures/land-use-structure.png)
 
+## Site Current Condition Analysis
+
+Having established the three-tier scope working framework in the preceding chapter, this chapter further conducts a systematic analysis of the site's current conditions, establishing a "current state — target — gap" logical chain to provide data support and problem-oriented design strategies.
+
+### Current Land Use Structure
+
+The site's current land use is dominated by residential, industrial, and transportation facility land, with a low proportion of public green space and plazas. Within the coordinated research scope (43.6 km²), urban construction land accounts for approximately 68%, of which residential land accounts for about 35%, industrial and warehouse land about 22%, and transportation facility land about 11%; non-construction land (water bodies, farmland, forest, etc.) accounts for about 32%. Within the overall design scope (11.4 km²), the Jing-Zhang Railway heritage corridor contains significant underutilized industrial land and inefficient warehouse land, providing substantial existing space for urban renewal.
+
+| Land Use Type | Current Share (Estimated) | Design Target Share | Gap Analysis |
+|----------|-----------------|-------------|----------|
+| Residential land | ~35% | ~30% | Moderately control scale, upgrade quality |
+| Industrial/Warehouse land | ~22% | ~10% | Substantially reduce, convert to R&D/mixed-use |
+| Transportation facility land | ~11% | ~8% | Optimize structure, release public space |
+| Public green space & plazas | ~5% | ≥12% | Substantially increase, fill the gap |
+| Commercial/service land | ~8% | ~12% | Moderately increase, serve innovation demographics |
+| Other land | ~19% | ~8% | Optimize utilization |
+
+> Note: The above current data is estimated from public sources and is not official survey data. Re-verification is required once official precise boundaries and current condition survey data become available.
+
+### Current Transportation Infrastructure Analysis
+
+The site's current transportation is vehicle-dominated, with discontinuous pedestrian/cycling systems and insufficient public transit coverage. The Jing-Zhang Railway heritage corridor severs east-west transportation connections. The North Fifth Ring Road to the north and Xizhimenwai Street to the south serve as main north-south corridors, but internal road network density is low, with severe deficiencies in secondary roads. Current secondary road density is approximately 6 km/km², far below the design target of ≥10 km/km². Urban design depth around rail transit stations (Line 13 Dazhongsi Station, Line 4/16 National Library Station, etc.) within 500m radius is insufficient, with low transit-oriented development integration.
+
+### Current Public Service Facility Coverage Analysis
+
+The site's current public service facilities are predominantly traditional community services, with severe insufficiency in internationalized and intelligent services for AI innovation talent. Educational facilities are mainly primary and secondary schools, lacking facilities for lifelong learning and science/technology education; medical facilities are mainly community health service centers, lacking demonstration sites for AI+smart healthcare; commercial facilities are mainly traditional ground-floor shops, lacking composite commercial spaces for young tech-savvy demographics. In terms of public space, the Jing-Zhang Railway corridor lacks systematic public spaces, the Xiaoyue River waterfront is not fully accessible, and green space service radius coverage is low.
+
+### Current Problem Diagnosis
+
+Based on the above analysis, this proposal identifies five core problems facing the site, with corresponding design strategies:
+
+| No. | Core Problem | Description | Corresponding Design Strategy |
+|------|----------|----------|-------------|
+| 1 | Railway heritage severs the city | Jing-Zhang Railway heritage physically isolates east-west urban areas, discontinuous pedestrian flow | Transform railway heritage into linear park, stitch east-west fabric |
+| 2 | Severe public space deficit | Green coverage approximately 18%, far below livability standards | Increase green coverage to ≥35%, build blue-green network |
+| 3 | Low road network density | Secondary road density approximately 6 km/km², oversized block scale | Densify secondary road network to ≥10 km/km², open small blocks |
+| 4 | Mismatched public services | Facilities are predominantly traditional, lacking AI talent services | Build three-tier neighborhood center system + AI-empowered services |
+| 5 | Inefficient industrial space | Large amounts of underutilized industrial/warehouse land | Convert to AI R&D, incubation, and mixed-use functions |
+
+## Design Principles
+
+This proposal presents five overarching design principles to guide all spatial design decisions. Specific design strategies in subsequent chapters are derived from these principles; the principles themselves will not be repeated except where necessary to reference the corresponding principle number.
+
+**Principle 1: Ecology First, Water Systems Lead**
+
+The ecological baseline is the foundation and substrate of urban design. Site preparation must prioritize water system protection and restoration, with sponge city facilities deployed before any construction. Blue-green space is not ornamentation but infrastructure — the design target for green coverage is no less than 35%, green coverage rate no less than 45%, and annual runoff volume capture rate no less than 80%. Water-first means: establish ecological baselines before arranging functional layouts; weave green networks before constructing buildings.
+
+**Principle 2: Open Permeation, Block Mending**
+
+This proposal opposes the traditional enclosed technology park model. All three zones are designed as open innovation blocks. Secondary road network density is no less than 10 km/km², block scale is controlled at 80-120 meters, ensuring that any point is within a 5-minute walk to public transit. Building ground floors maintain transparent and open interfaces — innovation activities become part of the streetscape. Openness is not absence of management, but replacing walls and gates with landscape elements and building setbacks, replacing functional isolation with functional mixing.
+
+**Principle 3: Culture as Soul, Memory Continuation**
+
+The Jing-Zhang Railway is the site's most identifiable cultural asset. Railway heritage is prioritized for preservation and adaptive reuse, translating rails, sleepers, switches, and other elements into urban furniture and paving patterns. Cultural narrative is not museum-style static display, but perceptible experience integrated into daily life — developer walking paths, open-source achievement galleries, and AI agent contribution honor walls are all vehicles for cultural narrative.
+
+**Principle 4: Scenario-Driven, AI-Native**
+
+AI is not an add-on function but urban infrastructure. Each neighborhood center embeds AI+ community service scenarios, with 12 AI scenario nodes covering transportation, healthcare, education, commerce, safety, and other life dimensions. AI services must provide non-digital alternative channels, ensuring that non-digital users, persons with disabilities, and the elderly can equally access services. AI-native means: cities consider AI data collection, processing, and application from the planning stage, rather than retrofitting afterward.
+
+**Principle 5: Phased Implementation, Adaptive Flexibility**
+
+Renewal projects are implemented in phases. Near-term (2026-2028) uses public space and AI scenario pilots as the foundation-building "Foundation" phase; mid-term (2028-2030) uses the R&D-community-industry innovation chain as the main thread for the "Chain" phase; long-term (2030-2035) targets AI innovation ecosystem and international influence for the "Ecosystem" phase. Buildings use large-span column-free spaces and movable partitions — serving as community service facilities during the day and converting to maker markets, cultural performances, and other uses on evenings and weekends, increasing space utilization from 40% for traditional community centers to over 80%.
+
+> Statement: The above design principles are conceptual frameworks, requiring professional team deepening and confirmation during official regulatory planning conditions and detailed design phases.
+
+![Site Current Condition Analysis](assets/figures/site-analysis.png)
+
 ## Coordinated Research Scope: Industry and Future City Research
 
-### Overall Belt Concept: AI Innovation Ecosystem Corridor
+Having established the design principles, this chapter conducts industry and future city research at the coordinated research scope (43.6 km²) level, proposing the overall belt concept and global case references.
 
-**Naming System**: This proposal proposes "AI Innovation Ecosystem Corridor" (AIEC) as the overall name for the belt. "Corridor" responds to the century-old identity of the Jing-Zhang Railway as a transportation corridor, while expressing the spatial logic of AI innovation ecosystem as a linear growth system — the corridor is not a closed park, but an open, permeable, continuously growing innovation ecosystem. The English abbreviation "AIEC" is pronounced similar to "AI-Eco," providing recognition and communicability in both Chinese and English.
+**Core Concept: "Iron Pulse, Smart Link · Innovative Symbiosis" (IPSIS)**
+
+This proposal refines "Iron Pulse, Smart Link · Innovative Symbiosis" as the overarching design concept, with the English abbreviation "IPSIS" (Iron Pulse · Smart Innovation Symbiosis). The concept is deconstructed as follows:
+
+- **Iron Pulse**: Responds to the century-old historical lineage of the Jing-Zhang Railway; the rails are the site's physical skeleton and cultural DNA
+- **Smart Link**: The AI innovation ecosystem links the three zones and two wings like a neural network, forming an intelligent innovation chain
+- **Innovative Symbiosis**: R&D, community, and industry are not isolated functional zones, but a symbiotic and mutually flourishing innovation ecosystem
+
+"Corridor" responds to the century-old identity of the Jing-Zhang Railway as a transportation corridor, while expressing the spatial logic of AI innovation ecosystem as a linear growth system — the corridor is not a closed park, but an open, permeable, continuously growing innovation ecosystem. The English abbreviation "AIEC" is pronounced similar to "AI-Eco," providing recognition and communicability in both Chinese and English.
 
 **Visual Identity and Logo Direction**: The logo uses the parallel lines of the Jing-Zhang Railway tracks as its skeleton, incorporating neural network node topology to form the visual metaphor of "tracks as nerves." The primary colors are tech blue (#3B7DD8) symbolizing AI innovation, railway orange (#E8923C) echoing Jing-Zhang history, and eco green (#5BAE6F) representing sustainable development. The logo can be extended into a corridor node identification system, scenario card visual templates, and public space wayfinding system. This direction is a conceptual suggestion; actual logo design requires deepening by a professional visual design team with font and image rights clearance.
 
@@ -80,6 +155,13 @@ This proposal operates across three spatial tiers, strictly corresponding to the
 **International Communication Visual Strategy**: All VI elements are designed with simultaneous Chinese-English bilingual adaptation in mind, ensuring visual consistency in international communication scenarios. The English abbreviation "AIEC" serves as the primary international communication identifier, pronounced similarly to "AI-Eco" for ease of international recall and dissemination.
 
 **VI System Statement**: The above visual identity system is a conceptual framework. Formal design, font clearance, and image copyright confirmation by a professional visual design team are required before implementation.
+
+**Concept Derivation: From "Iron Pulse, Smart Link · Innovative Symbiosis" to Spatial Structure**
+
+The core concept "Iron Pulse, Smart Link · Innovative Symbiosis" directly derives the spatial structure:
+- **Iron Pulse** → The Jing-Zhang Railway heritage corridor serves as the "intelligence vein" main axis, connecting the three zones and two wings
+- **Smart Link** → The "one corridor, three zones, two wings, multiple nodes" spatial structure forms the innovation chain
+- **Innovative Symbiosis** → The three zones and two wings are not isolated functional zones, but a "R&D — community — industry" symbiotic circuit
 
 **Three Positioning Synergies**: The Centennial Jing-Zhang Cultural Belt positioning is realized through railway heritage preservation, Zhan Tianyou innovation spirit inheritance, and cultural narrative system; the Urban AI Life Experience Belt positioning is realized through AI+ scenario cards, public space experience routes, and future life blocks; the AI Convergence Innovation Belt positioning is realized through full-stack R&D, industrial acceleration, and ecosystem service systems [source:AGENT-TASKBOOK].
 
@@ -543,7 +625,13 @@ Urban landscape control follows the "historical base, technological accent, ecol
 
 ## Renewal Project List, Implementation Policy, and Phasing Plan
 
-### Renewal Project List
+### Renewal Project List and Phased Implementation
+
+This proposal's phased implementation follows the "Foundation — Chain — Ecosystem" three-stage narrative logic, with 18 renewal projects advanced through a phase gate mechanism, ensuring each investment has clear preconditions, stop conditions, and exit mechanisms:
+
+- **Near-term (Foundation Phase, 2026-2028)**: Open the corridor, activate nodes — led by public space and AI scenario pilots, prioritizing the Jing-Zhang Corridor southern section public space, Dazhongsi core renovation, and AI scenario testing plaza to create demonstration effects.
+- **Mid-term (Chain Phase, 2028-2030)**: Connect three zones, form a closed loop — using the R&D-community-industry innovation chain as the main thread, completing the neighborhood center network, talent apartments, and developer plaza to form three-zone linkage.
+- **Long-term (Ecosystem Phase, 2030-2035)**: Global radiation, sustained operation — targeting AI innovation ecosystem and international influence, constructing the Zhongzhiyuan R&D core zone, corridor neighborhood hub, and full-domain AI scenario network.
 
 Near-term projects (2026-2028) [data:geometry/phasing.geojson#PH-001]:
 1. Dazhongsi AI Industry Zone core building renovation
