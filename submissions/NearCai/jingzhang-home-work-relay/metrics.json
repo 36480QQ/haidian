@@ -698,6 +698,49 @@
         "A-VALIDATION-001"
       ]
     },
+    "adversarial_audit_probe_count": {
+      "status": "known",
+      "value": 12,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/review-adversarial-audit.json"
+      ],
+      "formula": "count(review-adversarial-audit.json.probes)",
+      "confidence": "medium",
+      "assumptions": [
+        "A-ADVERSARIAL-AUDIT-001",
+        "A-SCORE-SPRINT-001"
+      ]
+    },
+    "adversarial_negative_probe_count": {
+      "status": "known",
+      "value": 12,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/review-adversarial-audit.json"
+      ],
+      "formula": "count(review-adversarial-audit.json.probes where probe_type = negative_guardrail)",
+      "confidence": "medium",
+      "assumptions": [
+        "A-ADVERSARIAL-AUDIT-001",
+        "A-VALIDATION-001"
+      ]
+    },
+    "remote_resource_violation_count": {
+      "status": "known",
+      "value": 0,
+      "unit": "count",
+      "source_files": [
+        "visual/index.html",
+        "visual/index.en.html",
+        "visual/assets/review-adversarial-audit.validation.json"
+      ],
+      "formula": "count(remote script/font/tile/CDN/iframe/form/API/tracking patterns in visual HTML)",
+      "confidence": "medium",
+      "assumptions": [
+        "A-ADVERSARIAL-AUDIT-001"
+      ]
+    },
     "total_floor_area_sqm": {
       "status": "unknown",
       "value": null,
