@@ -1,5 +1,11 @@
 # 方案迭代记录
 
+## v1.6 - 2026-08-15
+
+- 新增 `visual/assets/review-adversarial-audit.json`、`run-review-adversarial-audit.js` 和持久化结果 `review-adversarial-audit.validation.json`，把临时几何、指标漂移、授权边界、AI 决策禁区、无 AI 路径、私宅撤回、负例分母、RACI、离线 HTML、中英锚点、原创性和退役回流做成 12 个可运行负向探针。
+- 新增 `adversarial_audit_probe_count`、`adversarial_negative_probe_count`、`remote_resource_violation_count` 三项指标，并在中英 proposal 与离线展示页显式呈现；审计结果 PASS 只证明包内一致性，不证明现场安全、公平、容量、预算、审批或专业签字。
+- 修订评分证据 map、假设清单和 v1.5 评分资产版本号，使 v1.6 的“可审计证据链”在 Markdown、HTML、metrics、assumptions、manifest 和验证脚本之间保持可追踪。
+
 ## v1.5 - 2026-08-14
 
 - 按 Review Agent 七维评分机制前置“评分证据索引”：把任务书相关性、可实施性、AI规划创新、表达完整度、原创性、公共利益包容、风险合规逐项连接到正文、矩阵、指标、图件、HTML 和结构化证据文件。
