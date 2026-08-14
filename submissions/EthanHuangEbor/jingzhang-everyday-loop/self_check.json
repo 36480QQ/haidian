@@ -19,7 +19,6 @@
         "submissions/EthanHuangEbor/jingzhang-everyday-loop/changelog.md"
       ],
       "changed_files": [
-        "submissions/EthanHuangEbor/jingzhang-everyday-loop/agent.json",
         "submissions/EthanHuangEbor/jingzhang-everyday-loop/assets/figures/key-areas.en.png",
         "submissions/EthanHuangEbor/jingzhang-everyday-loop/assets/figures/key-areas.png",
         "submissions/EthanHuangEbor/jingzhang-everyday-loop/assets/figures/land-use-structure.en.png",
@@ -42,15 +41,6 @@
         "submissions/EthanHuangEbor/jingzhang-everyday-loop/drawings/a0-boards.pdf",
         "submissions/EthanHuangEbor/jingzhang-everyday-loop/drawings/a3-booklet.en.pdf",
         "submissions/EthanHuangEbor/jingzhang-everyday-loop/drawings/a3-booklet.pdf",
-        "submissions/EthanHuangEbor/jingzhang-everyday-loop/geometry/buildings.geojson",
-        "submissions/EthanHuangEbor/jingzhang-everyday-loop/geometry/constraints.geojson",
-        "submissions/EthanHuangEbor/jingzhang-everyday-loop/geometry/green_space.geojson",
-        "submissions/EthanHuangEbor/jingzhang-everyday-loop/geometry/key_areas.geojson",
-        "submissions/EthanHuangEbor/jingzhang-everyday-loop/geometry/land_use.geojson",
-        "submissions/EthanHuangEbor/jingzhang-everyday-loop/geometry/phasing.geojson",
-        "submissions/EthanHuangEbor/jingzhang-everyday-loop/geometry/public_space.geojson",
-        "submissions/EthanHuangEbor/jingzhang-everyday-loop/geometry/roads.geojson",
-        "submissions/EthanHuangEbor/jingzhang-everyday-loop/geometry/site_boundary.geojson",
         "submissions/EthanHuangEbor/jingzhang-everyday-loop/manifest.json",
         "submissions/EthanHuangEbor/jingzhang-everyday-loop/metrics.json",
         "submissions/EthanHuangEbor/jingzhang-everyday-loop/proposal.en.md",
@@ -67,16 +57,22 @@
         "submissions/EthanHuangEbor/jingzhang-everyday-loop/visual/assets/annual-program.json",
         "submissions/EthanHuangEbor/jingzhang-everyday-loop/visual/assets/asset-rights-ledger.json",
         "submissions/EthanHuangEbor/jingzhang-everyday-loop/visual/assets/bilingual-equivalence.json",
+        "submissions/EthanHuangEbor/jingzhang-everyday-loop/visual/assets/carrier-typologies.json",
         "submissions/EthanHuangEbor/jingzhang-everyday-loop/visual/assets/case-studies.json",
+        "submissions/EthanHuangEbor/jingzhang-everyday-loop/visual/assets/co-design-and-equity.json",
         "submissions/EthanHuangEbor/jingzhang-everyday-loop/visual/assets/competition.css",
+        "submissions/EthanHuangEbor/jingzhang-everyday-loop/visual/assets/cost-and-procurement.json",
         "submissions/EthanHuangEbor/jingzhang-everyday-loop/visual/assets/design-system.json",
         "submissions/EthanHuangEbor/jingzhang-everyday-loop/visual/assets/first-100-days.json",
         "submissions/EthanHuangEbor/jingzhang-everyday-loop/visual/assets/image2-production-record.json",
+        "submissions/EthanHuangEbor/jingzhang-everyday-loop/visual/assets/implementation-dossier.json",
         "submissions/EthanHuangEbor/jingzhang-everyday-loop/visual/assets/origin-life-service-station.json",
+        "submissions/EthanHuangEbor/jingzhang-everyday-loop/visual/assets/page-transcripts.json",
         "submissions/EthanHuangEbor/jingzhang-everyday-loop/visual/assets/professional-evidence.json",
         "submissions/EthanHuangEbor/jingzhang-everyday-loop/visual/assets/public-acceptance-tabletop/receipts.json",
         "submissions/EthanHuangEbor/jingzhang-everyday-loop/visual/assets/public-acceptance-tabletop/run_tabletop.js",
         "submissions/EthanHuangEbor/jingzhang-everyday-loop/visual/assets/public-acceptance-tabletop/scenario-contracts.json",
+        "submissions/EthanHuangEbor/jingzhang-everyday-loop/visual/assets/public-ai-register.json",
         "submissions/EthanHuangEbor/jingzhang-everyday-loop/visual/assets/raci-and-signoff.json",
         "submissions/EthanHuangEbor/jingzhang-everyday-loop/visual/assets/repair-matrix.json",
         "submissions/EthanHuangEbor/jingzhang-everyday-loop/visual/assets/scenarios.json",
@@ -87,7 +83,7 @@
       "ai_package_stages": {
         "submissions/EthanHuangEbor/jingzhang-everyday-loop": "formal"
       },
-      "total_bytes": 27743814,
+      "total_bytes": 41368238,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -165,11 +161,11 @@
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 14,
-          "standard": 4,
-          "depth": 14,
-          "data": 15,
-          "metric": 6
+          "source": 16,
+          "standard": 5,
+          "depth": 11,
+          "data": 31,
+          "metric": 7
         }
       }
     },
@@ -193,7 +189,7 @@
       "check_id": "DETERMINISTIC_VALIDATION",
       "result": "pass",
       "severity": "blocking",
-      "target": "validate_local_submission.py",
+      "target": "validate_submission.py",
       "message": "deterministic_validation: PASS"
     },
     {
