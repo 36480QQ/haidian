@@ -1,9 +1,9 @@
 {
   "fixtures_id": "seb-tabletop-fixtures",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "consumes": {
     "spec": "visual/assets/seb-spec.json",
-    "spec_version": "0.2.0",
+    "spec_version": "0.3.0",
     "node_source_of_record": "geometry/constraints.geojson",
     "runner": "visual/assets/seb-tabletop-run.js"
   },

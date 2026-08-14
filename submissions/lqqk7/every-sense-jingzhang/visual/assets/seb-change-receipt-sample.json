@@ -1,6 +1,6 @@
 {
   "receipt_schema_id": "seb-change-receipt",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "status": "draft_concept_recommendation",
   "purpose_zh": "把「意见—修改—未采纳理由」写成可带走、可核对的固定格式。回执的作用不是记录已经做了什么，而是让提出意见的人能够查到自己那一条的结论；没有结论的意见视同该点位本轮未通过复核。",
   "purpose_en": "A fixed, portable format for the opinion-change-refusal record. A receipt does not exist to log what was done; it exists so that whoever raised a point can look up the ruling on that point. An opinion left without a ruling counts as a node failing that round of review.",

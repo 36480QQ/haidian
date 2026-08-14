@@ -117,6 +117,7 @@ function checkCompatibility(spec, fixtureFile) {
     );
   }
   const declared = fixtureFile.consumes && fixtureFile.consumes.spec_version;
+  setAdopterLexicon(fixtureFile.adopter_lexicon);
   if (declared !== spec.version) {
     problems.push(
       `样例声明的基准版本 ${declared} 与基准文件的 ${spec.version} 不一致 / `
@@ -158,13 +159,23 @@ function checkSpecConsistency(scoring) {
 // Component 1: node schema. Presence and enumeration come from the schema itself, every
 // value constraint comes from the field's own constraint_machine_rule, and a field
 // without one carries no value constraint at all.
+// v0.3：required_role_token 判据按「规范本体词表 ∪ 采用方 adopter_lexicon」的并集匹配。
+// 采用方可在 fixtures 顶层以 adopter_lexicon 数组声明附加角色词；未声明时行为与 v0.2 完全一致。
+// From v0.3 the role-token check matches the union of the spec list and the adopter_lexicon
+// declared (optionally) at the top of the fixtures file; with no declaration the behaviour
+// is byte-identical to v0.2.
+let ADOPTER_LEXICON = [];
+function setAdopterLexicon(list) {
+  ADOPTER_LEXICON = Array.isArray(list) ? list.filter((t) => typeof t === "string" && t.length > 0) : [];
+}
 function applyMachineRule(value, rule) {
   if (!rule) return null;
   if (rule.type === "forbidden_dependency") {
     return containsAny(value, rule.forbidden_targets) ? rule.violation_code : null;
   }
   if (rule.type === "required_role_token") {
-    return containsAny(value, rule.required_tokens) ? null : rule.violation_code;
+    const tokens = ADOPTER_LEXICON.length ? rule.required_tokens.concat(ADOPTER_LEXICON) : rule.required_tokens;
+    return containsAny(value, tokens) ? null : rule.violation_code;
   }
   return `RULE_TYPE_UNSUPPORTED:${rule.type}`;
 }

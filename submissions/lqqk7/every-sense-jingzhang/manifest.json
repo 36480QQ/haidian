@@ -12,7 +12,7 @@
     "agent_name": "柱子 / Zhuzi",
     "model": "Claude Fable 5 via Claude Code",
     "model_family": "claude",
-    "model_detail": "v1.0 scaffolded and authored with OpenAI GPT-5.6 Sol via Codex; v2.0-v5.21 iterations authored with Anthropic Claude Fable 5 via Claude Code with Claude Opus subagents; audio narration synthesized with MiniMax speech-2.8-hd (disclosed in assets/media transcripts)"
+    "model_detail": "v1.0 scaffolded and authored with OpenAI GPT-5.6 Sol via Codex; v2.0-v5.22 iterations authored with Anthropic Claude Fable 5 via Claude Code with Claude Opus subagents; audio narration synthesized with MiniMax speech-2.8-hd (disclosed in assets/media transcripts)"
   },
   "generated_at": "2026-08-14T14:42:57Z",
   "files": [
@@ -26,13 +26,13 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "02d588b9a09ffcd470b11bf1140f97f5246dd0283ee9e27861efb967ef2e8471"
+      "sha256": "946a6776ead526f0d6ab517dc49a52b94a4f564c3163d725524a642ac36f6cef"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "e1284be935e97ba0a0ed3f0f2e0ca21786aa63e5af3df6b101ad2e6dd1e1a150"
+      "sha256": "ee0db21618b50dcc76307b7ce74dfe75464b8e32fa7ce8046dd39cfcda5435e9"
     },
     {
       "path": "metrics.json",
@@ -56,13 +56,13 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "ae96713c8f83e1db67a8f4c307d24a97feea5b2372f197de9718b41fab05e855"
+      "sha256": "048f8d89f458d296db19f6e5065221bcd63f15e4d4b971a9b9a4606eb8a67297"
     },
     {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "b11e5a90e1c376fae4397b20096ed25ea2779780cb62c4d439104399a8bf61e8"
+      "sha256": "941b7f0a3e92ae7be970eb24ac138ca0c5a9de1e583fbcacbe02926e736ff763"
     },
     {
       "path": "standard_matrix.json",
@@ -88,7 +88,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "4774e8d454f16db6603f8a771bb9edbe4d7c9dab467de7567a8696d97e7ab542"
+      "sha256": "4b8bc59f189d958a153a7e47684293a7b26f1f373add9b5c97405f3dfebb7eba"
     },
     {
       "path": "report/narrative.md",
@@ -218,7 +218,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "135fd530c2597b3436bd029def0b9105d30f2aab803bbb58c96df37c6d70e967"
+      "sha256": "7eb986212f927811e013efddbb5bfe8dfd761bb874a2e3de176003b62ae6346e"
     },
     {
       "path": "report/proposal.en.html",
@@ -226,7 +226,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "1ee6ff0c56b732c4e8db11942c786978131bc3c7d42c645519cd19f82483ea72"
+      "sha256": "c3383f7d651ee6a9448dc420faaaad0edc99085357c558ec7d177ae079b532af"
     },
     {
       "path": "visual/assets/font-license-ofl.json",
@@ -454,7 +454,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "faf796b4eb5df6164e07d36c3caa70e113da0b4dc79e5010b2244ad03bb74466"
+      "sha256": "981238ba2d72e74bffca2d49ef3e0b8c2cd15548a87b8699d8c4c8f256981dc1"
     },
     {
       "path": "assets/media/cover.webp",
@@ -586,7 +586,7 @@
       "language": "neutral",
       "title_zh": "伦理与同意协议包（模板 · 未执行）",
       "title_en": "Ethics and consent protocol pack (templates, not executed)",
-      "sha256": "ed09f25d9c1fba6ac1d06405d5418d4b1c3d718705cf918438fa6898b695fad2"
+      "sha256": "f7bf69e2b812e6db17a14c8bead1a98de564cb7ebb813f2e19a9e0de15bec383"
     },
     {
       "path": "visual/assets/qa-proofing-record.json",
@@ -595,7 +595,7 @@
       "language": "neutral",
       "title_zh": "输出质量校样与可及性走查记录（方案方自查）",
       "title_en": "Output Proofing and Accessibility Walkthrough Record (Proposer's Self-Check)",
-      "sha256": "f56568ffdee3bb6353d821aae0125e07304f8b654314050023786ff7b17abe7b"
+      "sha256": "69e0cf4e9d8eba88637292253f242cd2f1daca682e9c5fb4516cf74fec63072b"
     },
     {
       "path": "visual/assets/scene-provenance.json",
@@ -613,7 +613,7 @@
       "language": "neutral",
       "title_zh": "服务等价基准 SEB v0.2 机器可读规范",
       "title_en": "Service Equivalence Baseline (SEB) v0.2 machine-readable spec",
-      "sha256": "f131dbe80e37beca317375d9a9cb86eab72f2297977bd1195955c4b15d5350ea"
+      "sha256": "67200f3e981703ea82af1bde4dd778d4329ee943eea00db6efe371a6c6a59b54"
     },
     {
       "path": "visual/assets/seb-tabletop-run.js",
@@ -622,7 +622,7 @@
       "language": "neutral",
       "title_zh": "SEB 桌面配对推演校验器(方法学演示)",
       "title_en": "SEB tabletop pairing validator (methodology demonstration)",
-      "sha256": "6da2b508d7def1f4cb9b8a50c039e9b4e7cbd613be443590825a7701d4529691"
+      "sha256": "f003db189bbccd4cd1eafbce4128e9ee6f8ce170d36a3149759c4d362653841a"
     },
     {
       "path": "visual/assets/seb-tabletop-fixtures.json",
@@ -631,7 +631,7 @@
       "language": "neutral",
       "title_zh": "SEB 桌面推演正反样例十二条",
       "title_en": "SEB tabletop fixtures, five positive and seven negative",
-      "sha256": "ef0abe713b9aef20213b891a829c4b27e1259cb414ae73f17c3cbcba888db0d7"
+      "sha256": "49031bca8a5121c9298c37406a5c9c7adc8a8cca7f1007e8c99ab2664853716b"
     },
     {
       "path": "visual/assets/seb-change-receipt-sample.json",
@@ -640,7 +640,7 @@
       "language": "neutral",
       "title_zh": "变更回执格式与两条回执",
       "title_en": "Change-receipt schema and two receipts",
-      "sha256": "9ba55925d42f3d9b6fbc44b0361c7b420e38813f7f089cea39e68af9e89aad5a"
+      "sha256": "7d6f445382d866b45eab3fccd78651634cc0b75f9046e17486a634e76ac7917f"
     },
     {
       "path": "visual/assets/seb-op04-chain-data.json",
@@ -649,7 +649,7 @@
       "language": "neutral",
       "title_zh": "OP-04 配对试点全过程链路数据档案(桌面复演)",
       "title_en": "OP-04 paired-pilot full-process chain archive (tabletop replay)",
-      "sha256": "3363f3392abfce14908f9660e69b984e358572f798a7c47772f6fb3b6dde4474"
+      "sha256": "6e2707952df2cb51bfc8601e344ebe5730bce15f0f2bca375b69b2853489d7fc"
     },
     {
       "path": "visual/assets/seb-op04-chain-run.js",
