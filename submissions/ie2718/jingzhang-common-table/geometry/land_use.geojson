@@ -1,0 +1,381 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "LU-01",
+      "properties": {
+        "id": "LU-01",
+        "layer": "LAND_USE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "land_use_code": "05",
+        "name_zh": "大钟寺市场与采用服务",
+        "name_en": "Dazhongsi market and adoption services",
+        "program_role": "market_adoption",
+        "statutory_status": "concept_only_pending_official_controls",
+        "recalculation_trigger": "official_site_boundary_or_regulatory_plan_update",
+        "area_sqm_declared": 1469351.181
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3407,
+              39.939
+            ],
+            [
+              116.34040833333333,
+              39.9495
+            ],
+            [
+              116.3553,
+              39.9495
+            ],
+            [
+              116.3553,
+              39.939
+            ],
+            [
+              116.3407,
+              39.939
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "LU-02",
+      "properties": {
+        "id": "LU-02",
+        "layer": "LAND_USE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "land_use_code": "0803",
+        "name_zh": "京张文化与公共展示",
+        "name_en": "Jing-Zhang culture and public display",
+        "program_role": "heritage_culture",
+        "statutory_status": "concept_only_pending_official_controls",
+        "recalculation_trigger": "official_site_boundary_or_regulatory_plan_update",
+        "area_sqm_declared": 1498188.064
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3553,
+              39.9495
+            ],
+            [
+              116.34040833333333,
+              39.9495
+            ],
+            [
+              116.34011666666666,
+              39.96
+            ],
+            [
+              116.3553,
+              39.96
+            ],
+            [
+              116.3553,
+              39.9495
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "LU-03",
+      "properties": {
+        "id": "LU-03",
+        "layer": "LAND_USE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "land_use_code": "0702",
+        "name_zh": "社区服务与照护支持",
+        "name_en": "Community service and care support",
+        "program_role": "community_service",
+        "statutory_status": "concept_only_pending_official_controls",
+        "recalculation_trigger": "official_site_boundary_or_regulatory_plan_update",
+        "area_sqm_declared": 1515535.332
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3553,
+              39.965
+            ],
+            [
+              116.3553,
+              39.96
+            ],
+            [
+              116.34011666666666,
+              39.96
+            ],
+            [
+              116.33982499999999,
+              39.9705
+            ],
+            [
+              116.35486,
+              39.9705
+            ],
+            [
+              116.3553,
+              39.965
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "LU-04",
+      "properties": {
+        "id": "LU-04",
+        "layer": "LAND_USE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "land_use_code": "0802",
+        "name_zh": "AI 原点开源研发",
+        "name_en": "AI Origin open-source research",
+        "program_role": "open_source_research",
+        "statutory_status": "concept_only_pending_official_controls",
+        "recalculation_trigger": "official_site_boundary_or_regulatory_plan_update",
+        "area_sqm_declared": 1569529.013
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35486,
+              39.9705
+            ],
+            [
+              116.33982499999999,
+              39.9705
+            ],
+            [
+              116.3397,
+              39.975
+            ],
+            [
+              116.34014354838709,
+              39.981875
+            ],
+            [
+              116.35395,
+              39.981875
+            ],
+            [
+              116.35486,
+              39.9705
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "LU-05",
+      "properties": {
+        "id": "LU-05",
+        "layer": "LAND_USE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "land_use_code": "1401",
+        "name_zh": "公共长桌与连续公园",
+        "name_en": "Common Table and continuous park",
+        "program_role": "common_table_park",
+        "statutory_status": "concept_only_pending_official_controls",
+        "recalculation_trigger": "official_site_boundary_or_regulatory_plan_update",
+        "area_sqm_declared": 1407543.282
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3533,
+              39.99
+            ],
+            [
+              116.35395,
+              39.981875
+            ],
+            [
+              116.34014354838709,
+              39.981875
+            ],
+            [
+              116.34087741935484,
+              39.993249999999996
+            ],
+            [
+              116.35347808219178,
+              39.993249999999996
+            ],
+            [
+              116.3533,
+              39.99
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "LU-06",
+      "properties": {
+        "id": "LU-06",
+        "layer": "LAND_USE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "land_use_code": "0804",
+        "name_zh": "教育转化与人才服务",
+        "name_en": "Education transfer and talent services",
+        "program_role": "education_transfer",
+        "statutory_status": "concept_only_pending_official_controls",
+        "recalculation_trigger": "official_site_boundary_or_regulatory_plan_update",
+        "area_sqm_declared": 1456782.086
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35347808219178,
+              39.993249999999996
+            ],
+            [
+              116.34087741935484,
+              39.993249999999996
+            ],
+            [
+              116.34166774193548,
+              40.0055
+            ],
+            [
+              116.3541493150685,
+              40.0055
+            ],
+            [
+              116.35347808219178,
+              39.993249999999996
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "LU-07",
+      "properties": {
+        "id": "LU-07",
+        "layer": "LAND_USE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "land_use_code": "0701",
+        "name_zh": "人才与混合生活支持",
+        "name_en": "Talent and mixed living support",
+        "program_role": "talent_living",
+        "statutory_status": "concept_only_pending_official_controls",
+        "recalculation_trigger": "official_site_boundary_or_regulatory_plan_update",
+        "area_sqm_declared": 1348932.466
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3541493150685,
+              40.0055
+            ],
+            [
+              116.34166774193548,
+              40.0055
+            ],
+            [
+              116.3417,
+              40.006
+            ],
+            [
+              116.34223048780487,
+              40.016875
+            ],
+            [
+              116.35477260273973,
+              40.016875
+            ],
+            [
+              116.3541493150685,
+              40.0055
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "LU-08",
+      "properties": {
+        "id": "LU-08",
+        "layer": "LAND_USE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "land_use_code": "0802",
+        "name_zh": "众智园全栈研发测试",
+        "name_en": "Zhongzhiyuan full-stack R&D testing",
+        "program_role": "full_stack_test",
+        "statutory_status": "concept_only_pending_official_controls",
+        "recalculation_trigger": "official_site_boundary_or_regulatory_plan_update",
+        "area_sqm_declared": 1146977.389
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35477260273973,
+              40.016875
+            ],
+            [
+              116.34223048780487,
+              40.016875
+            ],
+            [
+              116.3427,
+              40.0265
+            ],
+            [
+              116.3553,
+              40.0265
+            ],
+            [
+              116.35477260273973,
+              40.016875
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}
