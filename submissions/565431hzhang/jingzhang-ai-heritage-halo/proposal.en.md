@@ -88,45 +88,19 @@ The overall concept proposed by this package is the "Jing-Zhang AI Pulse Symbiot
 
 ## Coordinated Research Scope: Industry and Future-City Study
 
-The coordinated research scope (43.6 km²) focuses on building a world-class AI innovation ecosystem [source:OFFICIAL-ANNOUNCEMENT]. This proposal organizes Haidian's AI industry resources through a "five-segment innovation chain" [source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]:
+The core task of the coordinated research scope is to build a world-class AI innovation ecosystem. The proposal should survey Haidian's university research institutes, leading enterprises, computing-power/algorithm/data factors, incubation platforms, listed companies, unicorns, and technology-service resources, and propose a spatial coordination framework for the AI innovation chain, industry chain, talent chain, and urban-service chain. The naming scheme and logo design should serve the overall identity of the "Centennial Jing-Zhang Cultural Belt, Urban AI Lifestyle Experience Belt, and AI Integration Innovation Belt," and must not remain at the slogan level; the connection to the industry ecosystem, public space, and cultural resources must be explained. The agent-facing taskbook also requires responses to the "five functions" and "three-zone two-wing" coordination, forming a naming system, visual identity, overall spatial structure diagram, scenario-opening, and operation mechanism that can be further deepened. This section must use [source:AGENT-TASKBOOK] and [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] to mark these requirements as originating from the agent open-call taskbook, not as statutory planning controls.
 
-| Chain segment | Function | Spatial carrier | Actors | Current status |
-| --- | --- | --- | --- | --- |
-| ① University sourcing | Basic research, frontier exploration | Tsinghua, PKU, BUAA labs | Universities | Existing |
-| ② Open-source collaboration | Knowledge sharing, community | Origin Community open-source hall, code wall | Open-source community | Conceptual |
-| ③ Enterprise conversion | Productization, market | Zhongzhi Park incubator, Dazhongsi roadshow | Enterprise + incubator | Conceptual |
-| ④ Public experience | Scenario opening, resident participation | Xiaoyuehe scenario wing, public nodes | Community + operator | Conceptual |
-| ⑤ International communication | Global dialogue, brand output | Dazhongsi roadshow, AI Week | Event committee | Conceptual |
+The coordinated research does not add falsely precise red lines; it coordinates urban character, public space, and building layout as required by [standard:MOHURD-URBAN-DESIGN-MEASURES], and connects back to [data:geometry/land_use.geojson#LU-001], [data:geometry/public_space.geojson#PUBLIC-001], and [depth:overall_spatial_structure], demonstrating that the industry strategy ultimately lands on visible, verifiable spatial structure.
 
-"Three zones, two wings" layout: three zones (Zhongzhi Park → Origin Community → Dazhongsi) form a north-south "R&D → conversion → industry" axis; Zhongguancun service wing (west) provides IP, capital, standards; Xiaoyuehe scenario wing (east) provides scenarios, data, public testing [depth:overall_spatial_structure].
-
-Future city form research focuses on how AI changes six types of daily activities [source:PROCESSED-FACT-PACK]:
-
-| Activity type | AI intervention | Spatial response | Check boundary |
-| --- | --- | --- | --- |
-| Work | Agent assistance, remote collaboration | Shared office, night collab space | Physical meetings and paper channels preserved |
-| Life | AI life services, convenience terminals | AI life service street | Human counter fallback |
-| Social | Activity matching, community connection | Origin Plaza, flexible event space | No algorithmic intervention in social choice |
-| Learning | AI education, open-source learning | AI education base, code display | Does not replace teachers/classrooms |
-| Transport | Slow-mobility nav, accessibility | AI walkability nav, accessibility guide | Static map and human inquiry equivalent |
-| Public service | Service booking, demand prediction | AI service station, data parlor | Phone and paper channels equivalent |
-
-> The above are conceptual suggestions, not confirmed industrial policies or cooperation arrangements. Industry strategy indicators, AI innovation index, and talent density require formal data calibration.
+The future-city form study should address how artificial intelligence transforms work, life, social interaction, learning, transport, and public services. The proposal should translate AI transport systems, continuous green space, innovation-service facilities, and an internationalized work-life atmosphere into locatable functional zones, nodes, corridors, and scenarios, rather than generically describing a technological vision. The agent should enter industry-strategy metrics, AI innovation indices, talent density, spatial-supply typologies, and AI+ vertical application priorities into the metric system, and mark which are official, which are design suggestions, and which still await formal data calibration. If global AI innovation activities, developer communities, open scenarios, or pilgrimage routes are proposed, they must be worded as "conceptual suggestions / reference schemes subject to further study by professional teams," and must not be presented as confirmed government activities or implementation arrangements.
 
 ## Overall Design Scope: Urban Renewal at Regulatory-Detailed-Plan Urban Design Depth
 
-The overall design scope (11.4 km², area 11,412,825 m² [metric:site_area_sqm]) requires urban design depth at the regulatory-detailed-plan level. This proposal presents a "one belt, three cores, two wings, one ring" spatial structure [depth:land_use_layout]:
+The overall design scope must reach the urban design depth of a regulatory detailed plan. The proposal must present an overall urban-renewal spatial structure, inefficient-space identification, a renewal project list, implementation policy recommendations, industrial-function ratios, spatial organization models, total building scale, and comprehensive carrying-capacity assessment. `geometry/land_use.geojson` must fully cover the design boundary without gaps, `geometry/buildings.geojson` must express the renewal or retained building footprints, `geometry/roads.geojson` must express micro-circulation, slow mobility, and rail-station feeder relationships, and `metrics.json` must recalculate core areas, ratios, and layer counts.
 
-| Structure element | Scope | Function | Layer evidence |
-| --- | --- | --- | --- |
-| One belt | Jing-Zhang Heritage Park vitality belt (~9km) | History + slow-mobility + public space + AI | [data:geometry/land_use.geojson#LU-001] |
-| Three cores | Zhongzhi Park (192.9ha) + Origin Community (104.3ha) + Dazhongsi (72.1ha) | R&D → conversion → industry | [data:geometry/key_areas.geojson#PROV-KEY-001] |
-| Two wings | Zhongguancun service wing + Xiaoyuehe scenario wing | Service + testing | [depth:overall_spatial_structure] |
-| One ring | Blue-green slow-mobility composite ring | Slow-mobility + ecology + activities | [data:geometry/green_space.geojson#GREEN-001] |
+This section follows [standard:MOHURD-CONTROL-DETAILED-PLANNING], breaking the regulatory-depth content into reviewable objects: [data:geometry/land_use.geojson#LU-001] expresses the land-use structure, [data:geometry/buildings.geojson#BLDG-001] expresses building footprints, [data:geometry/roads.geojson#ROAD-001] expresses transport organization, [metric:building_footprint_area_sqm] is used to verify building footprint area, and [depth:land_use_layout] and [depth:development_intensity_controls] govern the depth of deliverables.
 
-Land use: 14 parcels, 100% coverage [metric:land_use_coverage_ratio]. Building footprint: 648,798 m², 129 buildings [metric:building_footprint_area_sqm] [metric:building_count]. Road network: 42.3km [metric:road_network_total_length_m].
-
-Regulatory-depth content per [standard:MOHURD-CONTROL-DETAILED-PLANNING]: land use structure [data:geometry/land_use.geojson#LU-001], building footprint [data:geometry/buildings.geojson#BLDG-001], transport [data:geometry/roads.geojson#ROAD-001], development intensity [depth:development_intensity_controls]. FAR, building height, density are unknown (pending official regulatory confirmation) [depth:height_massing_character].
+The overall design must also support transport, rail, municipal services, and supporting facilities. The proposal should propose spatial layouts and implementation pathways around rail-station TOD integration, road micro-circulation, bicycle parking, parking supply, innovation-service platforms, talent-life services, new infrastructure, distributed energy, and edge computing. Where official control conditions for building height, development intensity, road red lines, setbacks, and facility standards are not yet available, they must be stated as "pending official regulatory-plan conditions" and must not be used to substitute an agent's estimated values for approved indicators.
 
 ## Key-Area Detailed Design
 
@@ -575,72 +549,29 @@ The five functions proposed by the agent taskbook are mapped below to spatial an
 
 ## Land Use, Building Scale, and Retain/Renovate/Demolish Scheme
 
-Land use classification per [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE], fully covering the design boundary with no gaps or overlaps. 14 land parcels [data:geometry/land_use.geojson#LU-001], coverage 100% [metric:land_use_coverage_ratio]. Building footprint 648,798 m², 129 buildings [metric:building_footprint_area_sqm] [metric:building_count].
+The land-use scheme should be expressed in accordance with public standards such as the national territorial-survey, planning, and land-use classification, forming a complete, closed, gapless land-use zoning. The building scheme should distinguish retained, renovated, renewed, new-build, or pending-confirmation objects, and clearly state the proposed hierarchy for building footprint, function, scale, character, roof form, massing, and height control. Where existing building, ownership, regulatory-plan, and engineering conditions are lacking, the proposal can only present methods and a pending-calibration checklist; it must not fabricate retain/renovate/demolish conclusions.
 
-| Land use type | Ratio | Main distribution | Data source |
-| --- | --- | --- | --- |
-| AI R&D and industry | ~30% | Zhongzhi Park core, Dazhongsi station area | Conceptual, pending regulatory confirmation |
-| Public service facilities | ~12% | Three-core centers, along slow-mobility belt | Conceptual |
-| Residential and talent housing | ~15% | Origin Community, Dazhongsi periphery | Conceptual |
-| Green space and plazas | ~35% | Heritage Park, Qinghe waterfront, Xiaoyuehe | [data:geometry/green_space.geojson#GREEN-001] |
-| Transport facilities | ~8% | Roads, slow-mobility, rail access | [data:geometry/roads.geojson#ROAD-001] |
+Land-use classification follows [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]; building height, massing, interface, and character control are managed by [depth:height_massing_character]; the retain/renovate/demolish approach is managed by [depth:retain_renovate_demolish]. The primary evidence for land use and buildings is [data:geometry/land_use.geojson#LU-001], [data:geometry/buildings.geojson#BLDG-001], and [metric:building_footprint_area_sqm].
 
-> Ratios are conceptual (B-level); green ratio 48.7% is structurally recalculated (A-level) [metric:green_ratio].
-
-Retain/renovate/demolish follows "micro-renewal + node activation" principle [depth:retain_renovate_demolish]:
-
-| Category | Ratio | Applicable condition | Prerequisite |
-| --- | --- | --- | --- |
-| Retain | ~35% | Good existing structure, compatible function | Condition survey |
-| Renovate | ~40% | Structure updatable, function needs adjustment | Structural safety assessment |
-| New build | ~25% | Land available, function gap | Regulatory conditions, ownership |
-
-Building height: three tiers (conceptual, pending regulatory height zoning): Zhongzhi Park riverside 60-80m, interior 4-6 story low-density; Origin Community 3-5 story campus transition, 6-8 story arterial; Dazhongsi station 80-100m TOD, periphery 6-8 story [depth:height_massing_character]. FAR, density, setbacks are unknown [depth:development_intensity_controls].
+Building-scale and intensity metrics must be consistent with `metrics.json` and the layers. Where total building scale, FAR, building height, building density, green ratio, setbacks, and building control lines lack official conditions, they should be listed as `unknown` or `pending_control` in the metric system, and fixed values must not be used to create a false sense of precision. The A3 booklet should provide a renewal project list and metric verification table; the A0 boards should clearly express the key spatial structure and key areas; and the HTML page should provide linked viewing of metrics and layers.
 
 ## Transport, Rail, Municipal Services, and Public Facilities
 
-Transport system follows slow-mobility priority, forming a "one axis + three lateral connections + node access" road network [data:geometry/roads.geojson#ROAD-001]. Total road network: 42.3km [metric:road_network_total_length_m].
+The transport proposal should respond to the announcement's requirements for rail-station TOD integration, road micro-circulation, slow-mobility gaps, external transport, parking, bicycle parking, and green transport systems. The focus should cover the North Fifth Ring Road, Jing-Zhang Heritage Park crossing nodes at ring-road intersections, Wudaokou, Qinghuadonglu West Gate, Dazhongsi Station, and transport connections around key enterprises. Road and slow-mobility layers should remain within the submitted boundary and be cross-checked against public space, green space, industry nodes, and key areas. If the submitted boundary is provisional, transport conclusions can only be treated as temporary design discussion.
 
-| Transport layer | Function | Spatial expression | Status |
-| --- | --- | --- | --- |
-| Slow-mobility axis | Heritage Park north-south, 9km continuous | [data:geometry/roads.geojson#ROAD-001] | Conceptual, pending redline |
-| Lateral connections | 3 campus-park-community stitching channels | [data:geometry/public_space.geojson#PUBLIC-001] | Conceptual, pending gap survey |
-| Rail access | Dazhongsi TOD, Origin shuttle, Zhongzhi bike | [data:geometry/constraints.geojson#CONSTRAINTS] | Conceptual, pending rail engineering |
-| Micro-circulation | Shared streets within three key areas, ≥90% coverage | [data:geometry/roads.geojson#ROAD-001] | Conceptual target |
+Professional depth for transport and municipal services is governed respectively by [depth:traffic_rail_slow_parking] and [depth:municipal_new_infrastructure]; layer evidence references [data:geometry/roads.geojson#ROAD-001], [data:geometry/public_space.geojson#PUBLIC-001], and [data:geometry/constraints.geojson#CONSTRAINTS]. Where road red lines, utility lines, fire-safety, and municipal conditions are missing, they should be noted via assumptions as pending, rather than presenting strategies as approved conditions.
 
-Key slow-mobility gaps: North 5th Ring crossing, Wudaokou intersection, Dazhongsi intersection. Conceptual plan: stitch 2-3 gaps first (JZ-01), validate with temporary facilities [depth:traffic_rail_slow_parking].
+![Slow-mobility and blue-green public-space composite system](assets/figures/mobility-bluegreen.png)
 
-Municipal and public service facilities [depth:municipal_new_infrastructure]:
-
-| Facility type | Layout principle | Service radius | Operations | Dependencies |
-| --- | --- | --- | --- | --- |
-| Edge compute nodes | Embedded in public space, 5-10 nodes | 500m | Municipal + operator | Energy, network, safety |
-| AI service stations | 1 per core, along slow-mobility belt | 800m | Community operator | Venue agreement |
-| Distributed energy | Combined with green space and rooftops | District-level | Municipal + enterprise | Energy planning |
-| Traditional municipal | Roads, pipelines, drainage, flood control | Standard | Municipal dept. | Utility survey, flood assessment |
-
-> Missing pipeline, fire, drainage, flood data are listed as formal deepening prerequisites.
+Municipal and public-service facilities should cover AI industry service facilities, innovation-service platforms, talent-life service facilities, new infrastructure, distributed energy, edge computing, and integration with traditional municipal facilities. The proposal should describe facility standards, spatial layout, service radius, operation model, and phased implementation logic. Where utility-line, energy, drainage, flood-control, and fire-safety engineering data are missing, they should be listed as prerequisites for formal deepening.
 
 ## Blue-Green Space, Public Space, and Urban Character
 
-Blue-green space uses the Heritage Park vitality belt as backbone, forming a "one axis, three corridors, multiple nodes" green system [data:geometry/green_space.geojson#GREEN-001]. Green area: 5,561,347 m², green ratio 48.7% [metric:green_space_area_sqm] [metric:green_ratio]. Public space: 279,961 m², ratio 2.5% [metric:public_space_area_sqm] [metric:public_space_ratio].
+The blue-green space scheme should take the Jing-Zhang Heritage Park vitality corridor as the backbone, coordinate the Qinghe River, Xiaoyue River, and surrounding universities, enterprises, and community travel needs, and propose a north–south through, east–west connected pedestrian, cycling, and green-space system. The scheme should identify slow-mobility gaps, elevated ring-road crossing nodes, and landscape nodes at the southern and northern ends of the park, and propose composite-use strategies for parking, sports, innovation interaction, technology testing, application display, and public services.
 
-| Blue-green layer | Composition | Function | Data source |
-| --- | --- | --- | --- |
-| One axis | Heritage Park vitality belt (9km north-south) | Slow-mobility + ecology + culture + AI | [data:geometry/green_space.geojson#GREEN-001] |
-| Three corridors | Qinghe waterfront, Xiaoyuehe eco-corridor, campus green corridor | Stormwater + ecology + leisure + industry display | [data:geometry/green_space.geojson#GREEN-001] |
-| Multiple nodes | Origin Plaza, Qinghe innovation corridor, Dazhongsi quadrant green | Public activity + display + social | [data:geometry/public_space.geojson#PUBLIC-001] |
+Blue-green public space is jointly verified by the design depth item and the green-space and public-space layers [depth:blue_green_public_space] [data:geometry/green_space.geojson#GREEN-001] [data:geometry/public_space.geojson#PUBLIC-001]. The ratios of green space and public space are explained in the narrative for their design significance; the complete recalculation is preserved in `metrics.json`. The coordination of urban character, public space, and building control returns to the professional standards matrix [standard:MOHURD-URBAN-DESIGN-MEASURES].
 
-Slow-mobility and blue-green overlap target ≥60% [depth:blue_green_public_space].
-
-![Mobility and blue-green public space composite system](assets/figures/mobility-bluegreen.png)
-
-Urban character blends three cultural layers [standard:MOHURD-URBAN-DESIGN-MEASURES]:
-- **Base (railway heritage)**: Qinghuayuan Station site, rail and sleeper memory, signal-tower wayfinding
-- **Middle (Zhongguancun spirit)**: From electronics street to AI hub, innovator stories, code display columns, contribution walls
-- **Top (AI new culture)**: Open-source sharing, human-machine collaboration, digital art walls
-
-Character control: three tiers — heritage protection (strict, pending designation), built area (guidance, pending regulatory), new area (design suggestion, flexible). All brands, fonts, images, portraits, and logos require cleared rights.
+The urban character scheme should integrate the historical culture of the Jing-Zhang Railway, the innovation culture of Zhongguancun, and AI new culture, utilize cultural resources such as Qinghuayuan Railway Station and the Beijing Film Academy, and propose guidance on urban tone, building character, roof form, massing, interface, and public art. The agent should also propose signage and wayfinding, cultural symbols, international communication narratives, AI pilgrimage landmarks, and a contribution wall or honor-display system. However, all brands, fonts, images, portraits, and corporate logos must have rights-cleared sources. Character controls should clearly distinguish official controls, design suggestions, and pending-confirmation conditions; falsely precise control lines must not be given without heritage-protection or regulatory-plan basis.
 
 ## Renewal Project List, Implementation Policies, and Phasing Plan
 
