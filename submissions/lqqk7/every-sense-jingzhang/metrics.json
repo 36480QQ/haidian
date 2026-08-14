@@ -251,7 +251,7 @@
         "proposal.md",
         "geometry/constraints.geojson"
       ],
-      "formula": "count(distinct scenario cards S01-S16 in the proposal scenario table); S01-S10 are additionally cross-checked against count(distinct scenario_card_id on SCENARIO_NODE features), while S11 and S12 declare no scenario node of their own",
+      "formula": "count(distinct scenario cards S01-S16 in the proposal scenario table); S01-S10 are additionally cross-checked against count(distinct scenario_card_id on SCENARIO_NODE features), while S11-S16 declare no scenario node of their own",
       "confidence": "high",
       "assumptions": [
         "The count describes declared design scenarios inside this package, not approved pilots, deployed services, or completed user research.",
@@ -282,7 +282,12 @@
         "The reading 0/7 is the honest starting registration of the ecosystem completeness test, not a failure score; it updates stage by stage as records are obtained, with the September pilot as the first expected update point.",
         "The denominator 7 is fixed; this metric is a registry reading outside both the ten structural counts and the kept-unknown list."
       ],
-      "display": "0 / 7"
+      "display": "0 / 7",
+      "calculation_metadata": {
+        "method_source": "PACKAGE-STRUCTURED-EVIDENCE",
+        "recalculation_trigger": "Any ecosystem stage obtaining a checkable record of a real named operator, a real authorisation and a real run updates the numerator; the September pilot is the first expected update point.",
+        "last_recalculated": "2026-08-15"
+      }
     },
     "persona_count": {
       "status": "known",
