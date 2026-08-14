@@ -43,6 +43,8 @@ from html.parser import HTMLParser
 from pathlib import Path
 from typing import Any
 
+from metric_types import is_json_number
+
 
 REQUIRED_TEXT_MARKERS = [
     "总览地图",
@@ -215,7 +217,7 @@ def review_visual(submission_dir: Path) -> VisualReport:
             )
             continue
         expected = metric.get("value")
-        if not isinstance(expected, (int, float)):
+        if not is_json_number(expected):
             report.add(
                 "VISUAL_METRIC_SOURCE_MISSING",
                 "major",
