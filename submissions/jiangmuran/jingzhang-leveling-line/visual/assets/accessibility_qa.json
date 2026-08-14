@@ -215,6 +215,12 @@
    "pass": true
   },
   {
+   "sheet": "svg/station",
+   "min_font_units": 9.0,
+   "min_height_mm_at_A0": 4.73,
+   "pass": true
+  },
+  {
    "sheet": "svg/steplink",
    "min_font_units": 9.0,
    "min_height_mm_at_A0": 4.73,
@@ -413,6 +419,12 @@
    "pass": true
   },
   {
+   "sheet": "svg.en/station",
+   "min_font_units": 9.0,
+   "min_height_mm_at_A0": 4.73,
+   "pass": true
+  },
+  {
    "sheet": "svg.en/steplink",
    "min_font_units": 9.0,
    "min_height_mm_at_A0": 4.73,
@@ -469,21 +481,21 @@
  ],
  "offline_html": {
   "visual/index.html": {
-   "images": 33,
+   "images": 34,
    "images_without_alt": 0,
    "has_lang": true,
    "heading_level_jumps": 0,
-   "figcaptions": 34,
+   "figcaptions": 35,
    "interactive_elements_needing_focus": 0,
    "has_dark_mode": true,
    "inline_script_tags": 0
   },
   "visual/index.en.html": {
-   "images": 33,
+   "images": 34,
    "images_without_alt": 0,
    "has_lang": true,
    "heading_level_jumps": 0,
-   "figcaptions": 34,
+   "figcaptions": 35,
    "interactive_elements_needing_focus": 0,
    "has_dark_mode": true,
    "inline_script_tags": 0
@@ -492,25 +504,25 @@
  "asset_references": [
   {
    "file": "visual/index.html",
-   "references": 33,
+   "references": 34,
    "missing": [],
    "remote": []
   },
   {
    "file": "visual/index.en.html",
-   "references": 33,
+   "references": 34,
    "missing": [],
    "remote": []
   },
   {
    "file": "report/proposal.html",
-   "references": 26,
+   "references": 27,
    "missing": [],
    "remote": []
   },
   {
    "file": "report/proposal.en.html",
-   "references": 26,
+   "references": 27,
    "missing": [],
    "remote": []
   }

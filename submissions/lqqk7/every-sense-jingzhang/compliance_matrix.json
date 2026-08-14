@@ -165,7 +165,7 @@
       "geojson_layers": ["geometry/roads.geojson", "geometry/public_space.geojson", "geometry/constraints.geojson", "geometry/phasing.geojson"], "geometry_feature_ids": ["ROAD-001", "PUBLIC-001", "PUBLIC-002", "PUBLIC-003", "PUBLIC-004", "PUBLIC-005", "PUBLIC-006", "PUBLIC-007", "PUBLIC-008", "PUBLIC-009", "PUBLIC-010", "OP-01", "OP-02", "OP-03", "OP-04", "OP-05", "OP-06", "OP-07", "OP-08", "OP-09", "OP-10", "PHASE-001", "PHASE-002", "PHASE-003"],
       "metrics": ["independent_task_completion_rate", "multichannel_information_coverage", "ai_off_service_equivalence_gap", "forced_abandonment_rate", "human_handover_success_rate", "human_handover_response_time_seconds", "sensory_load_exceedance_point_count", "co_design_role_coverage_ratio"], "drawings": ["drawings/a3-booklet.pdf", "drawings/a0-boards.pdf"], "visual_sections": ["AI 场景", "交通慢行", "核心指标"],
       "source_ids": ["AGENT-TASKBOOK", "W3C-ACCESSIBILITY-PRINCIPLES", "WHO-DISABILITY-HEALTH"], "assumption_ids": ["A-ACCESS-BASELINE-001", "A-CO-DESIGN-001", "A-IMPLEMENTATION-001", "A-OPERATION-NODES-001"], "self_check_ids": ["SPATIAL_REVIEW", "PROFESSIONAL_EVIDENCE", "DETERMINISTIC_VALIDATION"],
-      "risk_ids": ["R-01", "R-03", "R-04", "R-07", "R-08"], "scenario_ids": ["S01", "S05", "S08", "S11", "S12"], "work_package_ids": ["JZ-01", "JZ-02", "JZ-03", "JZ-04", "JZ-05"], "gate_ids": ["G0", "G1", "G2", "G3"]
+      "risk_ids": ["R-01", "R-03", "R-04", "R-07", "R-08"], "scenario_ids": ["S01", "S05", "S08", "S11", "S12", "S13", "S14", "S15", "S16"], "work_package_ids": ["JZ-01", "JZ-02", "JZ-03", "JZ-04", "JZ-05"], "gate_ids": ["G0", "G1", "G2", "G3"]
     },
     {
       "requirement_id": "agent.4", "title_zh": "AI公共空间、智能原生新业态与朝圣地标设计", "mandatory": true,

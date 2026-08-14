@@ -22,6 +22,8 @@
         "submissions/lqqk7/every-sense-jingzhang/agent.json",
         "submissions/lqqk7/every-sense-jingzhang/assets/figures/brand-system.en.png",
         "submissions/lqqk7/every-sense-jingzhang/assets/figures/brand-system.png",
+        "submissions/lqqk7/every-sense-jingzhang/assets/figures/ecosystem-map.en.png",
+        "submissions/lqqk7/every-sense-jingzhang/assets/figures/ecosystem-map.png",
         "submissions/lqqk7/every-sense-jingzhang/assets/figures/key-areas.en.png",
         "submissions/lqqk7/every-sense-jingzhang/assets/figures/key-areas.png",
         "submissions/lqqk7/every-sense-jingzhang/assets/figures/land-use-structure.en.png",
@@ -34,6 +36,12 @@
         "submissions/lqqk7/every-sense-jingzhang/assets/figures/mobility-bluegreen-audit.png",
         "submissions/lqqk7/every-sense-jingzhang/assets/figures/mobility-bluegreen.en.png",
         "submissions/lqqk7/every-sense-jingzhang/assets/figures/mobility-bluegreen.png",
+        "submissions/lqqk7/every-sense-jingzhang/assets/figures/scene-corridor-aerial.en.webp",
+        "submissions/lqqk7/every-sense-jingzhang/assets/figures/scene-corridor-aerial.webp",
+        "submissions/lqqk7/every-sense-jingzhang/assets/figures/scene-dual-state.en.webp",
+        "submissions/lqqk7/every-sense-jingzhang/assets/figures/scene-dual-state.webp",
+        "submissions/lqqk7/every-sense-jingzhang/assets/figures/scene-interface-yard.en.webp",
+        "submissions/lqqk7/every-sense-jingzhang/assets/figures/scene-interface-yard.webp",
         "submissions/lqqk7/every-sense-jingzhang/assets/figures/site-overview.en.png",
         "submissions/lqqk7/every-sense-jingzhang/assets/figures/site-overview.png",
         "submissions/lqqk7/every-sense-jingzhang/assets/logo.svg",
@@ -83,6 +91,7 @@
         "submissions/lqqk7/every-sense-jingzhang/visual/assets/scene-data.js",
         "submissions/lqqk7/every-sense-jingzhang/visual/assets/scene-fallback.en.png",
         "submissions/lqqk7/every-sense-jingzhang/visual/assets/scene-fallback.png",
+        "submissions/lqqk7/every-sense-jingzhang/visual/assets/scene-provenance.json",
         "submissions/lqqk7/every-sense-jingzhang/visual/assets/scene.css",
         "submissions/lqqk7/every-sense-jingzhang/visual/assets/scene.js",
         "submissions/lqqk7/every-sense-jingzhang/visual/assets/seb-change-receipt-op04.json",
@@ -98,7 +107,7 @@
       "ai_package_stages": {
         "submissions/lqqk7/every-sense-jingzhang": "formal"
       },
-      "total_bytes": 31662889,
+      "total_bytes": 37564387,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -160,7 +169,7 @@
         "building_footprint_area_sqm": 373402.48,
         "green_ratio": 0.213097,
         "public_space_ratio": 0.181788,
-        "scenario_card_count": 12.0,
+        "scenario_card_count": 16.0,
         "op_node_count": 10.0,
         "key_area_count": 3.0,
         "work_package_count": 6.0,
@@ -187,7 +196,7 @@
           "source": 32,
           "standard": 9,
           "depth": 15,
-          "data": 29,
+          "data": 30,
           "metric": 30
         }
       }

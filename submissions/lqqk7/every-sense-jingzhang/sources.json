@@ -332,9 +332,11 @@
       "accessed_date": "2026-08-14",
       "effective_date": "2026-03-30",
       "source_type": "official_public",
-      "usage": "Rights basis for the synthesized narration in assets/media (model speech-2.8-hd, preset voice, via official mmx CLI): the Intellectual Property (Non-Transfer) section states the client retains ownership rights in client input and generated content; the User Rights and Obligations section requires prominent marking of deep-synthesis content, which this package fulfils through its synthetic-voice declarations in the media transcripts, captions and end cards. Registered for verification; not a claim beyond the terms' own wording.",
+      "usage": "Rights basis for the synthesized narration in assets/media (model speech-2.8-hd, preset voice, via official mmx CLI): the Intellectual Property (Non-Transfer) section states the client retains ownership rights in client input and generated content; the User Rights and Obligations section requires prominent marking of deep-synthesis content, which this package fulfils through its synthetic-voice declarations in the media transcripts, captions and end cards. Registered for verification; not a claim beyond the terms' own wording. A Wayback Machine snapshot of the terms is registered in archive_url (snapshot 2026-08-01, verified 2026-08-14 to contain the quoted ownership clause and the prominent-marking duty verbatim), so the clause basis can be verified independently of later edits to the live page.",
       "license": "Vendor terms of service (contractual basis, not a content licence)",
-      "license_url": "https://platform.minimax.io/protocol/terms-of-service"
+      "license_url": "https://platform.minimax.io/protocol/terms-of-service",
+      "archive_url": "https://web.archive.org/web/20260801054220/https://platform.minimax.io/protocol/terms-of-service",
+      "archive_snapshot_date": "2026-08-01"
     },
     {
       "id": "SOURCE-HAN-SANS-OFL",
@@ -346,6 +348,20 @@
       "usage": "The only font family whose subsets are embedded in the four drawing PDFs (Regular/Medium/Bold), from a locally installed copy; a full-book font audit (pypdf traversal of page and XObject resources) confirms zero non-OFL embedded entries. OFL 1.1 permits embedding and redistribution of subset font programs within documents.",
       "license": "SIL Open Font License 1.1",
       "license_url": "https://openfontlicense.org/open-font-license-official-text/"
+    },
+    {
+      "id": "OPENAI-TERMS-OF-USE-20260814",
+      "title": "OpenAI Terms of Use (image generation output rights basis)",
+      "publisher": "OpenAI OpCo, LLC",
+      "url": "https://openai.com/policies/terms-of-use",
+      "accessed_date": "2026-08-14",
+      "effective_date": "2026-01-01",
+      "source_type": "official_public",
+      "usage": "Rights basis for the six AI-generated concept scene images in assets/figures (scene-dual-state, scene-interface-yard, scene-corridor-aerial, zh/en pairs, generated via the Codex CLI native image generation tool, GPT-5.6 Sol agent): the Content ownership section states the user retains ownership rights in Input and owns the Output, with OpenAI assigning all its right, title and interest in Output to the user; the prohibited-conduct list forbids representing non-human-generated output as human-generated, which this package fulfils by printing a CONCEPT IMAGE / AI-GENERATED badge on every scene image and registering the generation method in the rights ledger. The terms note output may not be unique across users. Registered for verification; not a claim beyond the terms' own wording. A Wayback Machine snapshot of the terms as applicable at generation time is registered in archive_url (snapshot 2026-08-13, verified 2026-08-14 to contain the quoted ownership and no-misrepresentation clauses verbatim), so the clause basis can be verified independently of later edits to the live page.",
+      "license": "Vendor terms of use (contractual basis, not a content licence)",
+      "license_url": "https://openai.com/policies/terms-of-use",
+      "archive_url": "https://web.archive.org/web/20260813014217/https://openai.com/policies/terms-of-use/",
+      "archive_snapshot_date": "2026-08-13"
     }
   ]
 }

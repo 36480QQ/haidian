@@ -74,6 +74,22 @@ Seven global references contribute methods. Barcelona Superblocks demonstrates s
 
 The identity combines two rings moving at different speeds with five calibration marks. The outer ring moves annually; the inner ring turns quarterly. The marks appear on baseline markers, soil windows, route signs, and the annual ledger as a screen-independent public language.
 
+## Regional Synergy Interfaces: How the Slow-Variable Method Leaves the Corridor
+
+The two clocks do not run inside this corridor alone. The taskbook writes regional synergy into its review dimensions, naming the Beiwei Community, Future Science City, Huairou Science City, the Beijing Economic-Technological Development Area, and the Beijing–Tianjin–Hebei region [source:AGENT-TASKBOOK]. Beijing's innovation geography is not a single point either. In implementing the municipal master plan, the "three science cities and one area" are designated key functional zones: Zhongguancun Science City covers the whole of Haidian, Future Science City focuses on shared-technology platforms in fields such as energy and materials, Huairou Science City hosts major scientific facilities, and the Economic-Technological Development Area carries innovative industry clusters and manufacturing conversion [source:SRC-THREE-CITIES-ONE-ZONE]. The Jing-Zhang corridor sits inside Zhongguancun Science City. It is not a sixth pole outside that structure, but the segment responsible for everyday urban verification within it.
+
+In the language of slow variables, synergy has only one honest form: exchange reviewable methods, never unverified conclusions. What the corridor exports is not "success stories" but the four release gates, the slow-variable baseline method, the annual ledger format, and retirement records. Other regions may take the ruler; they may not take the readings. What the corridor receives is real questions: the need to translate scientific results into urban use, the need to retest under manufacturing conditions, and the need to compare commuting and public services across cities.
+
+| Synergy partner (named by the taskbook) | What the corridor can offer | What the corridor can receive | Boundaries kept |
+|---|---|---|---|
+| Beiwei Community | Slow-variable checklists and human-review procedures for community services | Resident usage problems and accessibility feedback | No fabricated joint operation or resident mandate |
+| Future Science City | Urban-problem lists and the gated pilot mechanism | Urbanisation test methods for shared-technology results and expert review | Research conclusions never presented as deployable products |
+| Huairou Science City | A deliberation table and narrative method for translating scientific results to the public | Measurement and calibration methods, cross-disciplinary validation advice | No access to non-public research or facility data |
+| E-Town (BDA) | Engineering question lists for scenarios that passed all four gates | Manufacturing-condition retest records and safety requirements | No fabricated firms, orders, or production-line cooperation |
+| Beijing–Tianjin–Hebei | Delocalised slow-variable method packs, failure records, and version differences | Cross-city public-service comparison and off-site retesting along the Beijing–Zhangjiakou HSR [source:SRC-JINGZHANG-35-350] | No export of local coordinates, personal data, or approval conclusions |
+
+Receiving is written with the same restraint. The corridor absorbs commuter flows, industrial spillover, and research-translation demand from neighbouring plates, but receiving is not absorbing. Whether a firm, a rail line, or a facility enters the corridor depends on statutory procedure and inter-regional negotiation, not on this proposal. This chapter is entirely a concept proposal; it does not masquerade as statutory planning or a regional agreement. Every interface remains "pending negotiation" until the counterpart confirms, and data permission and responsibility boundaries are written down [source:AGENT-TASKBOOK].
+
 ## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
 
 The overall design begins with an ordinary afternoon rather than a spectacular masterplan. A person walks south under intermittent shade, encounters water after rain, crosses an east-west interface where wheelchairs and bicycles each have a continuous place, and eventually reaches a staffed service counter beside shops that remain in use.
@@ -137,7 +153,33 @@ Twelve scenario cards fall into four groups. The first three are controlled indu
 | Rules | 11 Public-contract explainer | Explain public clauses and named responsibilities | No case-specific legal conclusion |
 | Annual | 12 Slow-variable jury | Publish aggregated evidence and protected dissent | Jury may reject expansion |
 
-Four release gates govern expansion. G1 checks data and safety. G2 requires on-site human review. G3 handles public objection. G4 verifies that none of the five slow variables deteriorates. Failure means reduction, pause, or retirement [source:AGENT-TASKBOOK] [data:geometry/public_space.geojson#PUBLIC-001] [depth:risk_missing_data].
+Beyond action and boundary, every card completes six operating fields: who runs it, what data is collected, how often, who reviews, when it stops, and what counts as success. A card missing any field does not enter the site.
+
+| Scenario | Operator | Data fields | Collection frequency | Human review | Exit threshold | KPI |
+|---|---|---|---|---|---|---|
+| 01* Shade digital twin | Zhongzhiyuan baseline lab, with landscape maintenance unit | Canopy model values, measured shade hours | Quarterly modelling plus summer field review | Landscape professional and maintenance worker co-sign comparison records | Model and field values diverge beyond the agreed band for two consecutive seasons | Measured shade continuity improves; all deviations published |
+| 02* Post-rain permeability | Zhongzhiyuan baseline lab, with municipal maintenance | Soil moisture, ponding depth and recession time | After every rain, with monthly manual sections | Opened section and sensor readings archived side by side | Readings and sections conflict repeatedly; the point's conclusions are voided | Post-rain recovery time verifiably shortens or holds stable |
+| 03* Accessible co-routing | Accessibility audit desk at AI Origin | Route gaps, gradients, traversal times | Monthly co-walk | Wheelchair users and auditors co-sign confirmation | Gaps unrepaired for two consecutive months; related route recommendations pause | Gap repair rate and participant re-test pass rate |
+| 04 Child independent mobility | AI Origin, with school and community volunteer network | Staged independent distance, crossing event types | Weekly during school terms | On-site responders and carers review jointly | Any participant withdraws or a safety incident occurs; testing stops | Independent segments grow; no invisible tracking throughout |
+| 05 Small-business continuity | Dazhongsi delivery yard, merchants opt in | Revenue bands, self-reported rent pressure, service needs | Quarterly voluntary reporting | Merchant representatives confirm each entry before it enters the ledger | Data used for rent, acquisition, or credit purposes; the service goes fully offline | Survival rate of participating merchants comparable year over year |
+| 06 Human-counter queue | Operator of the Dazhongsi public-service point | Anonymous queue length, waiting time | Real-time aggregation, daily summary | Staff take over at any time and review anomalies | Any sign of removing human counters; the assistant is switched off | Average time for older users falls; offline channel fully retained |
+| 07 Open red-team garden | Zhongzhiyuan, co-run with the developer community | Vulnerabilities and reviews on synthetic or cleared data | Each version iteration | Security researchers review by tier before disclosure | Real personal data appears; the garden is cleared and closed | Public review rate of vulnerabilities and mean fix time |
+| 08 Walking and cycling gap audit | Transport maintenance unit, device vendor assisting | Edge-aggregated gap events | Real-time aggregation, weekly field verification | Transport staff confirm on site before entries are stored | Any use for individual-track enforcement; equipment removed | Gap confirmation rate and mean repair time |
+| 09 Low-disturbance lighting | Block property and lighting maintenance | Ambient illuminance, complaint records | Continuous reading, complaint-triggered review | Night patrol staff confirm downgrade execution | Complaints keep rising or homes are intruded upon; downgrade or shutdown | Complaint rate falls while functional illuminance holds |
+| 10 Jing-Zhang audio guide | Heritage park operator, historian review group | Content pack versions, location-free usage statistics | Quarterly content review | Historians verify each entry before release | A factual error left uncorrected; the entry is taken down | Location-free availability and review pass rate |
+| 11 Public-contract explainer | Dazhongsi delivery yard, with legal volunteers | Public clause texts, explainer versions | Review on every clause update | Legal volunteers and named clause owners co-confirm | Cited as case-specific legal advice; service pauses for correction | Coverage completeness of public clauses and correction response time |
+| 12 Slow-variable jury | Annual jury, operators submit evidence | Aggregated evidence, objection records, exit decisions | Annual | Jurors question publicly; disagreements recorded verbatim | Evidence cannot be verified; all expansion for the year is rejected | Share of jury rejections actually enforced |
+
+Four release gates govern expansion. The default disposition is one sentence: whenever any condition is unmet, the default is no release. The burden of proof sits with the project, not the public. Passing is not permanent safety; every gate keeps its stop conditions.
+
+| Gate | What it checks | Default disposition (condition unmet) | Stop conditions (still apply after passing) |
+|---|---|---|---|
+| G1 Data and safety | Data minimisation, de-identification, safety assessment | No release by default; return with further evidence | Out-of-scope collection or a safety incident stops the project |
+| G2 Human review | On-site human review genuinely operating | No release by default; remain at pilot scale | Review absent, hollowed out, or bypassed stops the project |
+| G3 Public objection | Objections recorded, answered, and open to re-appeal | No release by default; no scaling with open objections | Unresolved major objections pause expansion |
+| G4 Slow-variable check | None of the five slow variables deteriorates | No release by default; reduce, pause, or retire | Deterioration of any slow variable triggers reduction or exit |
+
+Failure at any gate means reduction, pause, or retirement [source:AGENT-TASKBOOK] [data:geometry/public_space.geojson#PUBLIC-001] [depth:risk_missing_data].
 
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
@@ -165,7 +207,17 @@ Conceptual green space equals 12.34% and conceptual public space equals 7.39% of
 
 Blue-green performance returns to the body. Is summer shade continuous? How long does a place take to recover after rain? Can a wheelchair avoid ponding? Can a child understand a continuous route? Devices may assist measurement, but people still walk, sit, and inspect.
 
-Three pilgrimage nodes avoid technological spectacle. The Baseline Marker publishes method and failure. The Dissent Platform preserves minority views and revisions. The Ten-Year Ledger Wall shows durable benefits and retired pilots. Honours reward reproducibility, public contribution, and timely withdrawal rather than investment or traffic [source:AGENT-TASKBOOK] [depth:blue_green_public_space].
+The taskbook requires at least three AI pilgrimage landmarks. The proposal establishes five, listed separately: two anchored in real history and three of its own slow-variable landmarks. None is a giant technological sculpture [source:AGENT-TASKBOOK] [depth:blue_green_public_space].
+
+| No. | Pilgrimage landmark | Location | Reason for pilgrimage |
+|---|---|---|---|
+| L1 | Qinghuayuan Station heritage site | Beside AI Origin | The 1910 station house and Zhan Tianyou's inscribed nameboard remain on site [source:SRC-QINGHUAYUAN-STATION-2023]. The first self-built railway is physical evidence that speed bows to slope; AI-era pilgrimage starts here |
+| L2 | Baseline Marker Zero | North end of Zhongzhiyuan | Publishes every slow variable's method and failure record. The object of pilgrimage is not a technical miracle but the method of measuring before speaking |
+| L3 | Dissent Platform | AI Origin | Preserves minority views and revisions. Visitors come to see how a city takes disagreement seriously |
+| L4 | Dazhongsi Ten-Year Ledger Wall | Dazhongsi | Beside the ancient bell, the wall shows kept projects, retired projects, and delivered promises year by year. The quality of a "centre" is checked in a bowl of rice and a queue |
+| L5 | Release-Gate Signal Group | Four gate positions along the spine | Each gate passed lights one railway signal. Walking the spine, a pilgrim reads every condition under which a project was allowed to accelerate |
+
+Honours reward reproducibility, public contribution, and timely withdrawal rather than investment or traffic. All five landmarks are concept proposals; siting awaits ownership and heritage-review procedures.
 
 ## Renewal Projects, Implementation Policy, and Phasing
 
@@ -185,7 +237,7 @@ After one year, each slow variable receives five fields: baseline, target, repea
 
 A first set of candidate measurement points has been circled from public material; all locations await field confirmation. Shade observation goes to the heritage park greenway and Tayuan Urban Forest Park. Soil permeability is compared against the Xiaoyuehe reach beside the corridor's east edge, where waterfront works starting in 2026 offer a before-and-after window [source:SRC-XIAOYUEHE-2026]. Accessibility audits begin with the Xizhimen interchange and Tayuan Park — the official park register itself notes Tayuan as "barrier-free conditions not yet available", an existing gap [source:SRC-TAYUAN-PARK-2022]. Children's independent-route trials draw on the school-bus pilot experience; among Haidian's first pilot schools, Shangdi Experimental Primary School sits toward the corridor's north end, while coverage of schools along the corridor remains unverified [source:SRC-TONGXUE-BUS-2023]. Retail-continuity surveys take Wudakou as the reference node: the garment market closed in 2019 has since become a new-format venue, and the difference between survival and replacement must be measured in street-front shops, not in malls; Haidian's 92 completed quarter-hour neighbourhood-life circles provide the sampling frame [source:SRC-WUDAKOU-MARKET-2022] [source:SRC-15MIN-HAIDIAN-2025].
 
-Process quantities are already explicit: 12 scenario cards, 3 industry tests, 7 user groups, 3 pilgrimage nodes, and 4 release gates. Dedicated matrices record task, standard, and design-depth completeness. The narrative explains why; structured files prove whether coverage is complete.
+Process quantities are already explicit: 12 scenario cards each carrying six operating fields, 3 industry tests, 7 user groups, 5 pilgrimage landmarks, and 4 release gates each with a default disposition and stop conditions. Dedicated matrices record task, standard, and design-depth completeness. The narrative explains why; structured files prove whether coverage is complete.
 
 ![Metrics and decisions | from one-year baseline to ten-year public ledger](assets/figures/metrics-evidence.en.png)
 

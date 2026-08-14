@@ -2,6 +2,15 @@
 
 ## v0.5 - 2026-08-13–14
 
+- Reframed four provisional-boundary messages as one explicit evidence gap; added a four-grade evidence board and a deterministic official-geometry replacement chain without promoting public context into official redlines.
+
+- Locked the review thesis to one sentence: lunch gate first, AI second. Real park gates must be walkable and still usable without power; AI only buys water, calls a staffed search, or logs a lost item, then hands off to a person.
+- Redrew the five core review figures so each answers that sentence: real lunch doors, the same rule at three official scales, three everyday gate tests, G5 dual-scale evidence, and lunch-gate acceptance before area ratios.
+- Kept Xuezhiyuan/Xueqing Road only in sources and assumptions as an off-corridor workplace observation. Qinghua East Road West, Wudaokou and Dazhongsi remain the named gates.
+
+
+- Replaced the text-card core review path with real geographic masterplan, land-use, key-area and mobility drawings; paired AI-on/AI-off plans use identical public-data bases and keep routes, staffed help and ordinary uses viable after shutdown.
+
 - Constrained the provisional 11.4 km² envelope by the official four-side limits: Xizhimen Outer Street, North Fifth Ring, Xueyuan/Xitucheng Roads, and Dazhongsi East/Heqing Roads; removed out-of-scope northern and eastern workplace anchors from the review path.
 
 - Corrected the masterplan to the real Jing-Zhang heritage spine: Beijing North–Dazhongsi–Zhichun Road–Wudaokou–Qinghua East Road West–North Fifth Ring/Qinghe south edge, with key areas and six gates in their real north–south order.

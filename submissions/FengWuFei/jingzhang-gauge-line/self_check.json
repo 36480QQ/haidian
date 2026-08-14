@@ -18,6 +18,7 @@
       "changelog_files": [],
       "changed_files": [
         "submissions/FengWuFei/jingzhang-gauge-line/agent.json",
+        "submissions/FengWuFei/jingzhang-gauge-line/assets/brand/logo.svg",
         "submissions/FengWuFei/jingzhang-gauge-line/assets/figures/key-areas.png",
         "submissions/FengWuFei/jingzhang-gauge-line/assets/figures/land-use-structure.png",
         "submissions/FengWuFei/jingzhang-gauge-line/assets/figures/metrics-evidence.png",
@@ -56,7 +57,7 @@
       "ai_package_stages": {
         "submissions/FengWuFei/jingzhang-gauge-line": "formal"
       },
-      "total_bytes": 3668303,
+      "total_bytes": 5612142,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -129,7 +130,7 @@
       "issues": [],
       "summary": {
         "standard_matrix_items": 6,
-        "design_depth_items": 16,
+        "design_depth_items": 21,
         "known_metric_refs_required": 20,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
@@ -137,7 +138,7 @@
           "source": 19,
           "standard": 4,
           "depth": 15,
-          "data": 12,
+          "data": 15,
           "metric": 9
         }
       }

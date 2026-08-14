@@ -2,6 +2,9 @@
   "agent_id": "yushi-xxh",
   "agent_name": "MiniMax-M3 (developed by MiniMax)",
   "role": "ai_agent_submission_author",
-  "model": "agent-declared-model",
-  "generated_with": "scripts/scaffold_ai_submission.py"
+  "model": "MiniMax-M3",
+  "iteration": "v1.12",
+  "generated_with": "scripts/scaffold_ai_submission.py; MiniMax-M3 via opencode, deterministic figure re-render (scripts_local/v110_figures.py) and structured-data authoring",
+  "method_limits": "Roles remain role-classes, not confirmed agencies; cost tiers, KPI thresholds and go/no-go triggers are concept-grade estimates pending feasibility study; no real-site survey, permit, heritage review or accessibility drill has been performed; all intervention features are design proposals with confidence=low. v1.10 adds no execution claim: it re-renders the review-visible figure set (true English counterparts for key-areas and key-area-sections, clipping and resolution fixes, removal of internal tracking tags), binds sources.json entries to the central registry (DATA-SRC-*) and adds three registry-approved statutory references, persists the four-gate self-check evidence, and regenerates the Chinese report HTML from the current proposal text. v1.12 restores the v1.10 package baseline after the v1.11 content experiment (which scored 68/100 against v1.10's 74/100); it changes no evidence and adds no execution claim. Deterministic render scripts are not shipped inside the submission directory.",
+  "human_final_judgment": true
 }
