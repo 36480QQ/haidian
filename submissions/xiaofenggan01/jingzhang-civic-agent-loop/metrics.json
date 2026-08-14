@@ -428,6 +428,32 @@
       "assumptions": [
         "制度字段数，非能耗数值"
       ]
+    },
+    "blueway_corridor_count": {
+      "status": "known",
+      "value": 2,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count of blueway corridors (小月河/清河)",
+      "confidence": "medium",
+      "assumptions": [
+        "规划概念层蓝廊，边界待官方水系蓝线确认"
+      ]
+    },
+    "sponge_policy_parcel_count": {
+      "status": "known",
+      "value": 11,
+      "unit": "count",
+      "source_files": [
+        "geometry/green_space.geojson"
+      ],
+      "formula": "count of green parcels with sponge_policy",
+      "confidence": "high",
+      "assumptions": [
+        "制度字段，渗透率数值待 G4 实测"
+      ]
     }
   }
 }
