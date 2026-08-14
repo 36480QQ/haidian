@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "package_id": "jingzhang-open-intelligence-commons",
   "project_id": "centennial-jingzhang-ai-belt",
   "site_package_version": "0.1.0",
@@ -54,7 +54,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "82522730ac72675050632fa1ea1e2f8af128564373ba3d11add0e7ce93284f5b"
+      "sha256": "1d6b93846d9ee0fba54988f99980038c8560d07870c3568be0f33ae368d1a01d"
     },
     {
       "path": "compliance_matrix.json",
@@ -287,6 +287,7 @@
   "validation_claim": {
     "self_checked": true,
     "known_blockers": [],
-    "data_confidence": "medium"
+    "data_confidence": "medium",
+    "readiness_contract": "persisted-self-check-v1"
   }
 }
