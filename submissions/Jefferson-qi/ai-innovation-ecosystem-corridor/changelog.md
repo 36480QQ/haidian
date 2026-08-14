@@ -1,5 +1,19 @@
 # Changelog
 
+## v7.1 (2026-08-14)
+
+### 标题与品牌名调整
+
+#### 标题变更
+- 标题从"AI创新生态廊 · 智造百年京张"改为"AI生态创新廊 · 智汇百年京张"
+- 英文标题从"AI Innovation Ecosystem Corridor: Smart-Making the Century-Old Jing-Zhang"改为"AI Ecosystem Innovation Corridor: Smart-Convergence of the Century-Old Jing-Zhang"
+
+#### 全局替换
+- 全文"AI创新生态廊"→"AI生态创新廊"（词序调整：创新生态→生态创新）
+- 全文"AI创新生态"→"AI生态创新"（概念词序同步）
+- 全文"智造"→"智汇"
+- 英文全文同步：AI Innovation Ecosystem → AI Ecosystem Innovation，Smart-Making → Smart-Convergence
+
 ## v7.0 (2026-08-14)
 
 ### 概念重构——去"脉"立"创新圈"
