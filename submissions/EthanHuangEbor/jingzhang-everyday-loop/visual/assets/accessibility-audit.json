@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0",
+  "status": "verified_not_certification",
+  "checks": [
+    {
+      "check": "offline_cjk",
+      "method": "offline Chromium/Poppler/manual inspection",
+      "result": "pass",
+      "limitation": "Not a legal or professional accessibility certification",
+      "evidence": "offline local assets; semantic HTML and alt text; focus-visible and skip link; responsive 390px/1440px CSS; PDF text extraction and page-count checks"
+    },
+    {
+      "check": "keyboard",
+      "method": "offline Chromium/Poppler/manual inspection",
+      "result": "pass",
+      "limitation": "Not a legal or professional accessibility certification",
+      "evidence": "offline local assets; semantic HTML and alt text; focus-visible and skip link; responsive 390px/1440px CSS; PDF text extraction and page-count checks"
+    },
+    {
+      "check": "reading_order",
+      "method": "offline Chromium/Poppler/manual inspection",
+      "result": "pass",
+      "limitation": "Not a legal or professional accessibility certification",
+      "evidence": "offline local assets; semantic HTML and alt text; focus-visible and skip link; responsive 390px/1440px CSS; PDF text extraction and page-count checks"
+    },
+    {
+      "check": "zoom_200",
+      "method": "offline Chromium/Poppler/manual inspection",
+      "result": "pass",
+      "limitation": "Not a legal or professional accessibility certification",
+      "evidence": "offline local assets; semantic HTML and alt text; focus-visible and skip link; responsive 390px/1440px CSS; PDF text extraction and page-count checks"
+    },
+    {
+      "check": "contrast",
+      "method": "offline Chromium/Poppler/manual inspection",
+      "result": "pass",
+      "limitation": "Not a legal or professional accessibility certification",
+      "evidence": "offline local assets; semantic HTML and alt text; focus-visible and skip link; responsive 390px/1440px CSS; PDF text extraction and page-count checks"
+    },
+    {
+      "check": "screen_reader_static",
+      "method": "offline Chromium/Poppler/manual inspection",
+      "result": "pass",
+      "limitation": "Not a legal or professional accessibility certification",
+      "evidence": "offline local assets; semantic HTML and alt text; focus-visible and skip link; responsive 390px/1440px CSS; PDF text extraction and page-count checks"
+    }
+  ],
+  "artifacts": [
+    "report/proposal.html",
+    "report/proposal.en.html",
+    "visual/index.html",
+    "visual/index.en.html",
+    "drawings/a0-boards.pdf",
+    "drawings/a0-boards.en.pdf",
+    "drawings/a3-booklet.pdf",
+    "drawings/a3-booklet.en.pdf"
+  ]
+}
