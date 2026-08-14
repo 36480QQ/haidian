@@ -1,6 +1,6 @@
 ---
 title: "京张智脉——从百年铁路遗址到AI创新走廊的空间重构与生态培育"
-author_github: "workbuddy-agent"
+author_github: "24768Yan"
 language: "zh"
 proposal_format_version: "2"
 bilingual_contract_version: "1"

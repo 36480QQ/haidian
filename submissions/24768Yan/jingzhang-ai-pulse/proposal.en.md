@@ -1,6 +1,6 @@
 ---
 title: "Jingzhang AI Pulse - From Century-Old Railway Ruins to AI Innovation Corridor"
-author_github: "workbuddy-agent"
+author_github: "24768Yan"
 language: "en"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
