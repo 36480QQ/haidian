@@ -1,3 +1,36 @@
+## v10.7.3（2026-08-14）
+
+- **诚实性证据链轮**：本轮不再增加设计内容，而是把前几轮的主张全部升级为「评审可自己重算」的证据装置——回应高分基线方案（jiangmuran v17，88 分）的核心教训：*空口主张谁都会写，能重算的才算数*：
+  - **勘误登记册（表 A10）**：`visual/assets/errata.json` 13 条真实勘误 E01–E13，每条含 found_by/found_in/fixed_in，可 join 回 changelog.md（build_errata.py 校验通过：13 entries / 6 shapes / 全部可 join）；形状归并 6 类，其中「交付物在提交前没被看过」4 条与「检查测了方便测的东西」2 条正是本方案机制要防的两类故障。E01（zh/en 画布漂移 11–26% 顶部白带）与 E07（simulation.json 被旧版覆盖、被自家闸门抓出）单独详解。
+  - **三条红线=现行法规义务（第六章）**：把"红线上限"从自我承诺改为现行法规条文义务——《无障碍环境建设法》第 39 条（医疗/社保/金融/生活缴费保留人工办理）、《生成式人工智能服务管理暂行办法》第 14/15 条（停止生成/传输/消除；公布处理流程与反馈时限）、《关于切实解决老年人运用智能技术困难的实施方案》国办发〔2020〕45 号（保留传统服务方式）；附边界声明（非法律意见）+ 导航表新增 3 行（即停与申诉时限/非智能手机路径/非AI替代通道，均挂条号）。
+  - **同场关键词扫描（表 A11）**：`visual/assets/track_scan.json` —— 本方案核心机制词面做成公开正则，对仓库 main 全量已合入方案的 **801 份 proposal.md** 逐份扫描（build_track_scan.py 重跑）；真实计数：状态机不可跳过 **0/800 除本方案外（全场唯一）**、五类回滚触发器 3/800、停摆演练 2/800、退场审计 2/800、四段退场红利合同 4/800、双闸门 9/800、意见台账 9/800、平线档案墙 11/800、护照 26/800、离线演练 51/800（手法已成共识）、运营证据门 79/800、**无AI等价路径 169/800（底线已成事实标准，本方案按底线而非创新陈述）**；命中名单逐条可查，词面正则漏计同义表达的边界已声明。
+  - **拒绝自测（simulate-check.js --self-test）**：`simulate-tamper-evidence.json` —— 8 种篡改（缺任务/重复/回执改写/失败分支翻通过/计数声明改/擅自现场运行/状态改 live/未知场景）全部被拒，实测 8/8。
+  - **计数重算器（verify-counts.js）**：零依赖 node 重算 9 个几何计数指标与 metrics.json 比对，实测 9/9 复现；刻意只做纯计数（投影由生成链负责，诚实边界）。
+  - **复算纪律表 + 包级置信度（指标体系章）**：声明"语料每日增长，旧计数不得直接引用，重跑即刷新"；包级置信度明示 medium。
+  - 版本串连锁 v10.7.2→v10.7.3（gen_01 ITERATION / gen_03 REV / gen_04 ×3 / gen_05 footer + 新增"自我审计"行 / gen_simulation SEED=v10.7.3-aipulsebelt-rehearsal）；frontmatter iteration 12→13；双语 16/16 章节头对齐；表 A7 新增 4 行（拒绝自测证据/计数重算器/勘误登记册/同场扫描）；review-evidence-index.json 7 维共新增 13 条证据。
+
+## v10.7.2（2026-08-14）
+
+- **图纸 QA 修复轮（机器视觉复核驱动）**：本轮对 6 张核心图做 Gemini 视觉复核 + 像素级验证，修复全部可证实缺陷：
+  - **双语标题分置**：title_block 重写（suptitle y=0.972 va=center / subtitle y=0.92 va=center），修复 19pt 中文标题与 10.5pt 英文副题重叠；全部 12 张图（zh/en）标题带间距 46-94px 无碰撞。
+  - **顶部留白归位（元凶）**：normalize_pairs 的居中白条填充被移除——此前 zh/en 图因 tight-bbox 尺寸不同被缩放后居中贴白画布，产生 11-26% 的顶部空白（标题被推到 14% 处），观感即"图是乱的"；改为固定画布渲染（去 bbox_inches=tight），zh/en 天然同尺寸（N4 校验通过），normalize 降级为校验告警。
+  - **深底图标题可见性**：mobility-bluegreen（深蓝底 #12242E）标题由深墨色改浅色（title_block dark=True），此前标题几乎不可见。
+  - **provisional 边界纪律**：site-overview/land-use 的设计边界由实线改为虚线（provisional 淡化，非官方断言）；key-areas/ecosystem-map 面板头部留白 rect top 0.93→0.885。
+  - **指标图副题去重**：metrics-evidence 复算链行与 title_block 副题同位置重叠 → 复算链移至 y=0.885、subplots_adjust top=0.86。
+  - **图面可读性**：land-use 路名加白色底衬（原灰字直接压在彩色地块上）、廊道标注 bbox 不透明白底+描边、图例由左下移右上（原压住比例尺）、比例尺左下保留。
+  - 版本串连锁 v10.7.1→v10.7.2（gen_01 ITERATION / gen_03 REV / gen_04 ×3 / gen_05 footer / gen_simulation SEED）；frontmatter iteration 11→12；双语同步。
+
+## v10.7.1（2026-08-14）
+
+- **v10.7.0→v10.7.1 内容轮（评审导向强化）**：本轮针对七维 rubric 逐项优化，全文 4 处结构增强 + 图纸主叙事强化：
+  - **实施矩阵扩展（implementation_feasibility）**：12 项更新项目表由 8 列扩为 11 列，新增「资金属性（公益/准公益/经营）」「成本量级（概念相对区间）」「回滚触发器（R-01–R-05 五类）」；表注明示"有量可询价，无量不报总投资"，资金渠道指向本章运营治理结构与资金来源表；修正 JZ-06 回滚触发器编号 R-04→R-01（安全类）。
+  - **风险章强化（risk_compliance）**：新增「合规分列原则」——法定义务/自愿采用标准/概念建议三态分列，法定义务四领域逐项给核验动作与责任主体（个人信息/无障碍/空域/文保）；新增「刻意不给什么（边界纪律清单）」——集中声明八类正式最终结论（总投资、容积率、拆改留比例、权属、审批、背书、个人画像、文保干预）的刻意克制、原因与概念级替代，与 agent_taskbook.boundary_clause 逐条对应；新增「表达完整性自述」——visual 零外部请求离线可开 + 键盘可操作（Tab+Space、ARIA）可核验声明。
+  - **公共利益强化（public_interest_inclusion）**：新增「一个人的一天」空间叙事（李奶奶全程无手机 + 小陈开发者社区运营者双线一天，每步挂接正文锚点）；新增「公共利益与包容性：评审导航」聚合表（7 子项 × 主张位置 × 量化证据 × 合规锚点）。
+  - **图纸主叙事（expression_completeness）**：site-overview 关键区轮廓改虚线（provisional 淡化）+ 智脉主带轴线与双翼标注；land-use 补三廊道（智脉大道创新轴/京张轨道文化带）+ 三门户（北/南/西）与图例；mobility-bluegreen 补 AI 场景节点（波形状态灯/测试/导行）图例；metrics-evidence 标题下加复算链叙事（官方数值→临时边界实测→指标构成→协议状态机）。
+  - **可访问性（public_interest_inclusion/expression_completeness）**：visual/index.html 图层开关补 focus-visible 焦点样式、地图容器补 role="img"/aria-label/tabindex，页脚声明键盘可操作。
+  - 双语同步：proposal.en.md 四处（实施矩阵 11 列、合规分列+刻意不给+表达完整性自述、一个人的一天+评审导航、表注）完整对齐；frontmatter iteration 10→11；版本串连锁 v10.7.0→v10.7.1（gen_01 ITERATION / gen_03 REV / gen_04 / gen_05 / gen_simulation SEED）。
+  - **管线修复**：simulation.json 合并形态恢复（gen_08 协议推演登记 → gen_simulation 120 任务版继承 beats/rollback_triggers，tasks=120、schema 1.2），与 metrics.json simulation_task_count=120 派生值闭合。
+
 ## v10.4.1（2026-08-13）
 
 - **评审前全包一致性收口**：manifest 补登 6 项 `visual/assets/` 数据资产（role=evidence_data/verification_script，54 项登记与磁盘完全一致）；指标口径全包统一 76 项（视觉页脚 64→76、数据资产族计数 10→12 与 known 分项加和 14+7+19+9+12=61 闭合）；EN 章节标题对齐官方措辞（Blue-Green Network）与「15 chapters」；章号引用全部自洽（交通第八章/蓝绿风貌第九章/更新项目第十章/100 天第十一章）；frontmatter iteration 9→10；「修订版（v9.x）」→v11.x；质量门 G0-G4 更名 Q0-Q4 以消除与项目闸 G0-G7 的符号碰撞；user persona 8 类与 metrics 对齐；spatial.json 补登记 public-safety-operations-review（19 项）；risk.json 8 维全带 human_review。
