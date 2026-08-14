@@ -42,6 +42,13 @@
       "severity": "major",
       "target": "proposal.md",
       "message": "Claims carry adjacent source, data, metric, standard and depth anchors."
+    },
+    {
+      "check_id": "MATRIX_PROVENANCE_AUTHORIZATION",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "report/copyright_statement.md",
+      "message": "Waterfak3r explicitly authorized PR #909 to copy, modify, redistribute and publicly display the three inherited matrix files with attribution to PR #863 and @Waterfak3r; the permanent comment URL is registered in sources.json."
     }
   ]
 }
