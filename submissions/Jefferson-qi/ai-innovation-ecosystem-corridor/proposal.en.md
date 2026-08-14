@@ -1,22 +1,22 @@
 ---
-title: "AI Innovation Ecosystem Corridor: Smart-Making the Century-Old Jing-Zhang"
+title: "AI Ecosystem Innovation Corridor: Smart-Convergence the Century-Old Jing-Zhang"
 author_github: "Jefferson-qi"
 language: "en"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_file: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "Using the Jing-Zhang Railway heritage corridor as the innovation main axis, connecting three cores — Wisdom Valley (Zhongzhiyuan), Source Community (AI Origin), and Bell Boundary (Dazhongsi) — to build a world-class AI innovation ecosystem corridor integrating full-stack AI R&D, scenario empowerment, public space, cultural narrative, and long-term operation. Core concept 'Innovation Circle' — universities are innovation sources, the corridor connects innovation sources, three cores are innovation agglomeration nodes, three rings (blue-green slow-mobility ring + innovation liaison ring + AI service ring) form the innovation circulation circle, and AI scenarios are intelligent perception terminals. Spatial structure 'one corridor, three cores, two wings, three rings', urban renewal 'retain-renovate-demolish-new' four-tier classification, phased implementation in three stages: Foundation — Chain — Ecosystem."
+summary: "Using the Jing-Zhang Railway heritage corridor as the innovation main axis, connecting three cores — Wisdom Valley (Zhongzhiyuan), Source Community (AI Origin), and Bell Boundary (Dazhongsi) — to build a world-class AI ecosystem innovation corridor integrating full-stack AI R&D, scenario empowerment, public space, cultural narrative, and long-term operation. Core concept 'Innovation Circle' — universities are innovation sources, the corridor connects innovation sources, three cores are innovation agglomeration nodes, three rings (blue-green slow-mobility ring + innovation liaison ring + AI service ring) form the innovation circulation circle, and AI scenarios are intelligent perception terminals. Spatial structure 'one corridor, three cores, two wings, three rings', urban renewal 'retain-renovate-demolish-new' four-tier classification, phased implementation in three stages: Foundation — Chain — Ecosystem."
 tracks: ["ai-traffic-walkability", "jingzhang-heritage", "ai-origin-community", "enterprise-service", "ai-public-service"]
 scenarios: ["ai-traffic-walkability", "ai-medical", "robot-delivery", "ai-guide", "enterprise-service", "public-safety"]
 iteration: "v7.0"
 ---
 
-# AI Innovation Ecosystem Corridor: Smart-Making the Century-Old Jing-Zhang
+# AI Ecosystem Innovation Corridor: Smart-Convergence the Century-Old Jing-Zhang
 
 ## Executive Summary
 
-This proposal uses the Jing-Zhang Railway heritage corridor as the innovation main axis, connecting three cores — Wisdom Valley/Zhongzhiyuan AI Acceleration Zone (192.1 ha), Source Community/Beijing AI Origin Community (104.3 ha), and Bell Boundary/Dazhongsi AI Industry Zone (72.0 ha) — to build a world-class AI innovation ecosystem corridor within a 43.6 km² coordinated research scope, integrating full-stack AI R&D, scenario empowerment, public space, cultural narrative, and long-term operation.
+This proposal uses the Jing-Zhang Railway heritage corridor as the innovation main axis, connecting three cores — Wisdom Valley/Zhongzhiyuan AI Acceleration Zone (192.1 ha), Source Community/Beijing AI Origin Community (104.3 ha), and Bell Boundary/Dazhongsi AI Industry Zone (72.0 ha) — to build a world-class AI ecosystem innovation corridor within a 43.6 km² coordinated research scope, integrating full-stack AI R&D, scenario empowerment, public space, cultural narrative, and long-term operation.
 
 **Core Concept — "Innovation Circle"**: Universities are innovation sources, the corridor connects innovation sources, three cores are innovation agglomeration nodes, three rings (blue-green slow-mobility ring + innovation liaison ring + AI service ring) form the innovation circulation circle, and AI scenarios are intelligent perception terminals. This concept is not decorative naming but the logic of spatial organization — innovation resources originate from universities, flow along the corridor, converge at nodes, radiate through wings, and connect as a whole via the innovation circle.
 
@@ -50,7 +50,7 @@ At the standards level, this proposal follows the professional requirements of t
 
 This proposal operates across three spatial tiers, strictly corresponding to the three-tier scope defined in the announcement [source:SITE-PACKAGE].
 
-**Coordinated Research Scope (43.6 km2)**: Bounded by the North Fifth Ring Road to the north, the Jingzang Expressway to the east, Xizhimenwai Street to the south, and Wanquanhe Road to the west [data:geometry/site_boundary.geojson#PROV-RESEARCH-001]. Within this scope, world-class AI innovation ecosystem research, industrial chain synergy analysis, three-core-two-wing regional coordination research, and future AI city morphology research are conducted. Work depth: strategic research and industrial coordination.
+**Coordinated Research Scope (43.6 km2)**: Bounded by the North Fifth Ring Road to the north, the Jingzang Expressway to the east, Xizhimenwai Street to the south, and Wanquanhe Road to the west [data:geometry/site_boundary.geojson#PROV-RESEARCH-001]. Within this scope, world-class AI ecosystem innovation research, industrial chain synergy analysis, three-core-two-wing regional coordination research, and future AI city morphology research are conducted. Work depth: strategic research and industrial coordination.
 
 **Overall Design Scope (11.4 km2)**: The urban area and industrial area within 1-2 km of the Jing-Zhang Heritage Park serve as the planning and design scope [data:geometry/site_boundary.geojson#PROV-SITE-001]. Within this scope, urban design at the regulatory detailed planning depth is conducted, including functional layout, land use structure, urban renewal framework, transportation organization, municipal supporting facilities, public space system, and urban landscape control. Work depth: regulatory planning urban design.
 
@@ -111,7 +111,7 @@ This proposal opposes the traditional enclosed technology park model. All three 
 
 **Principle 3: Culture Forges the Soul, Memory Continuation**
 
-The Jing-Zhang Railway is the site's most identifiable cultural asset and the historical gene of the "Innovation Circle" concept. Railway heritage is prioritized for preservation and adaptive reuse, translating rails, sleepers, switches, and other elements into urban furniture and paving patterns. Cultural narrative is not museum-style static display, but perceptible experience integrated into daily life — developer walking paths, open-source achievement galleries, and AI agent contribution honor walls are all vehicles for cultural narrative. From Zhan Tianyou's self-designed Jing-Zhang Railway in 1909 to the smart-making renewal of the AI Innovation Belt in 2026, the corridor carries the century-old gene of Chinese indigenous innovation.
+The Jing-Zhang Railway is the site's most identifiable cultural asset and the historical gene of the "Innovation Circle" concept. Railway heritage is prioritized for preservation and adaptive reuse, translating rails, sleepers, switches, and other elements into urban furniture and paving patterns. Cultural narrative is not museum-style static display, but perceptible experience integrated into daily life — developer walking paths, open-source achievement galleries, and AI agent contribution honor walls are all vehicles for cultural narrative. From Zhan Tianyou's self-designed Jing-Zhang Railway in 1909 to the smart-convergence renewal of the AI Innovation Belt in 2026, the corridor carries the century-old gene of Chinese indigenous innovation.
 
 **Principle 4: Scenario-Driven, AI-Native**
 
@@ -119,7 +119,7 @@ AI is not an add-on function but urban infrastructure. Each neighborhood center 
 
 **Principle 5: Phased Implementation, Adaptive Flexibility**
 
-Renewal projects are implemented in phases. Near-term (2026-2028) uses public space and AI scenario pilots as the foundation-building "Foundation" phase; mid-term (2028-2030) uses the R&D-community-industry innovation chain as the main thread for the "Chain" phase; long-term (2030-2035) targets AI innovation ecosystem and international influence for the "Ecosystem" phase. Buildings use large-span column-free spaces and movable partitions — serving as community service facilities during the day and converting to maker markets, cultural performances, and other uses on evenings and weekends, increasing space utilization from 40% for traditional community centers to over 80%.
+Renewal projects are implemented in phases. Near-term (2026-2028) uses public space and AI scenario pilots as the foundation-building "Foundation" phase; mid-term (2028-2030) uses the R&D-community-industry innovation chain as the main thread for the "Chain" phase; long-term (2030-2035) targets AI ecosystem innovation and international influence for the "Ecosystem" phase. Buildings use large-span column-free spaces and movable partitions — serving as community service facilities during the day and converting to maker markets, cultural performances, and other uses on evenings and weekends, increasing space utilization from 40% for traditional community centers to over 80%.
 
 > Statement: The above design principles are conceptual frameworks, requiring professional team deepening and confirmation during official regulatory planning conditions and detailed design phases.
 
@@ -172,7 +172,7 @@ The core concept "Innovation Circle" directly derives the "one corridor, three c
 
 **Three Positioning Synergies**: The Centennial Jing-Zhang Cultural Belt positioning is realized through railway heritage preservation, Zhan Tianyou innovation spirit inheritance, and cultural narrative system; the Urban AI Life Experience Belt positioning is realized through AI+ scenario cards, public space experience routes, and future life blocks; the AI Convergence Innovation Belt positioning is realized through full-stack R&D, industrial acceleration, and ecosystem service systems [source:AGENT-TASKBOOK].
 
-**Five Function Mappings**: The AI full-stack indigenous innovation system is anchored by Wisdom Valley; the world-class AI innovation ecosystem uses three-core linkage as its skeleton; the AI+ scenario empowerment paradigm uses the West Wing Experience as its testing ground; the intelligent AI vibrant city is expressed through the public space network and smart-native new business formats; AI governance global discourse is carried by open-source co-governance mechanisms and the agent contribution honor system.
+**Five Function Mappings**: The AI full-stack indigenous innovation system is anchored by Wisdom Valley; the world-class AI ecosystem innovation uses three-core linkage as its skeleton; the AI+ scenario empowerment paradigm uses the West Wing Experience as its testing ground; the intelligent AI vibrant city is expressed through the public space network and smart-native new business formats; AI governance global discourse is carried by open-source co-governance mechanisms and the agent contribution honor system.
 
 **Three-Core Two-Wing Innovation Circuit**: Three cores (Wisdom Valley, Source Community, Bell Boundary) are connected north-south along the Jing-Zhang corridor, forming a "R&D — community — industry" innovation chain [data:geometry/key_areas.geojson]. Among the two wings, the East Wing Catalysis extends toward Zhongguancun to provide capital, IP, and factor allocation services, while the West Wing Experience expands toward Xiaoyue River to provide AI scenario testing and urban vitality injection. The key to the innovation circuit is: Wisdom Valley produces technology → Source Community provides talent and living scenarios → Bell Boundary achieves industrial transformation → East Wing provides capital and IP services → West Wing provides scenario validation → returns to Wisdom Valley forming a closed loop. Meanwhile, Tsinghua, BUAA, USTB, BUPT, BJTU and other universities continuously inject innovation sources into the circuit — basic research outputs, technical talent, entrepreneurial teams, and patented technologies flow from universities through the corridor into the three cores for accelerated transformation, forming a complete "universities → corridor → three cores → two wings → return to universities" innovation circle.
 
@@ -192,9 +192,9 @@ This proposal's regional synergy is not limited to the internal three cores and 
 
 **Synergy Guarantee Statement**: The above regional synergy content is all conceptual suggestions or deepening directions, and shall not be represented as confirmed government arrangements or institutional commitments. All cooperation, investment, funding, and institutional arrangements require formal cooperation agreements, transportation feasibility studies, and industrial complementarity analysis before proceeding [source:AGENT-TASKBOOK].
 
-### Global AI Innovation Ecosystem Case Studies
+### Global AI Ecosystem Innovation Case Studies
 
-The following six global AI innovation ecosystem cases provide reference for the spatial and operational mechanism design of the innovation belt [source:AGENT-TASKBOOK]:
+The following six global AI ecosystem innovation cases provide reference for the spatial and operational mechanism design of the innovation belt [source:AGENT-TASKBOOK]:
 
 | Case | Location | Core Experience | Spatial Translation Insight |
 |------|----------|-----------------|---------------------------|
@@ -205,7 +205,7 @@ The following six global AI innovation ecosystem cases provide reference for the
 | Tokyo Shibuya Stream | Tokyo, Japan | Rail hub station-city integration, AI scenarios embedded in daily life | Rail station surroundings should deploy AI life scenario experience functions |
 | Paris Station F | Paris, France | Old train station transformed into world's largest startup campus, open innovation platform | Jing-Zhang Railway heritage buildings can be transformed into AI accelerators and open labs |
 
-The common insight from these cases: successful AI innovation ecosystems are not isolated tech parks, but urban areas deeply embedded in the city, with historical continuity, open public space, and complete industry chains. The spatial design of the AI Innovation Ecosystem Corridor should follow this logic.
+The common insight from these cases: successful AI ecosystem innovations are not isolated tech parks, but urban areas deeply embedded in the city, with historical continuity, open public space, and complete industry chains. The spatial design of the AI Ecosystem Innovation Corridor should follow this logic.
 
 ### International Science City Case Studies — Reference from Taihu Science City
 
@@ -345,7 +345,7 @@ The ecosystem scale of New York's Silicon Alley with 8,000+ startups and 360,000
 
 This proposal proposes the "One Corridor, Three Cores, Two Wings, Three Rings" overall spatial structure [depth:spatial_structure]. This structure is embodied in land-use zoning in `geometry/land_use.geojson`, in the road network in `geometry/roads.geojson`, and in blue-green and public spaces in `geometry/green_space.geojson` and `geometry/public_space.geojson`.
 
-**One Corridor**: The Jing-Zhang heritage park innovation main axis, running 11.4 km north-south, connecting three cores, is a composite carrier of cultural narrative, public space, and slow-mobility transportation [data:geometry/land_use.geojson#LU-007]. The corridor is not only green public space but the spatial main axis of the AI innovation ecosystem — with AI scenario nodes, open-source display galleries, developer walking paths, and agent contribution honor walls deployed along its length. The corridor's primary function is to connect university innovation sources (Tsinghua, BUAA, USTB, BUPT, BJTU) with the three cores' industrial transformation spaces, enabling innovation resources to flow and converge.
+**One Corridor**: The Jing-Zhang heritage park innovation main axis, running 11.4 km north-south, connecting three cores, is a composite carrier of cultural narrative, public space, and slow-mobility transportation [data:geometry/land_use.geojson#LU-007]. The corridor is not only green public space but the spatial main axis of the AI ecosystem innovation — with AI scenario nodes, open-source display galleries, developer walking paths, and agent contribution honor walls deployed along its length. The corridor's primary function is to connect university innovation sources (Tsinghua, BUAA, USTB, BUPT, BJTU) with the three cores' industrial transformation spaces, enabling innovation resources to flow and converge.
 
 **Three Cores**: Wisdom Valley/Zhongzhiyuan AI Acceleration Zone (north), Source Community/AI Origin Community (center), and Bell Boundary/Dazhongsi AI Industry Zone (south), connected north-south along the corridor [data:geometry/key_areas.geojson]. The three cores respectively bear R&D acceleration, life community, and industrial transformation functions — three innovation agglomeration nodes.
 
@@ -389,7 +389,7 @@ The slow-mobility system uses the Jing-Zhang corridor as its core, extending eas
 
 ### Source Community · Beijing AI Origin Community
 
-**Positioning**: The community carrier of the world-class AI innovation ecosystem, a high-quality life district that AI talent aspires to.
+**Positioning**: The community carrier of the world-class AI ecosystem innovation, a high-quality life district that AI talent aspires to.
 
 **Spatial Structure**: Organized as "Community Center + Life Blocks + Interaction Nodes" [data:geometry/key_areas.geojson#PROV-KEY-002]. The Community Center is located around the rail station, deploying mixed-use core functions [data:geometry/buildings.geojson#BLD-005]. Life Blocks are primarily talent apartments [data:geometry/buildings.geojson#BLD-007], embedding AI+life service scenarios. Interaction Nodes center on the AI Developer Plaza [data:geometry/public_space.geojson#PS-001], promoting informal innovation interaction.
 
@@ -413,7 +413,7 @@ The slow-mobility system uses the Jing-Zhang corridor as its core, extending eas
 
 ![Three Key Area Index and Design Tasks](assets/figures/key-areas.png)
 
-## AI Innovation Ecosystem, User Personas, and AI+ Scenarios
+## AI Ecosystem Innovation, User Personas, and AI+ Scenarios
 
 ### User Personas (5 Types)
 
@@ -431,7 +431,7 @@ Based on the future user groups of the AI Innovation Belt, this proposal present
 
 ### AI Scenario Cards (10+)
 
-The following 12 AI scenario cards are deployed along the AI Innovation Ecosystem Corridor [source:AGENT-TASKBOOK]:
+The following 12 AI scenario cards are deployed along the AI Ecosystem Innovation Corridor [source:AGENT-TASKBOOK]:
 
 **Scenario Card 1 - AI+Autonomous Driving Shuttle** [data:geometry/public_space.geojson#PS-005]
 - Location: Zhongzhiyuan Northern Testing Field
@@ -644,7 +644,7 @@ All municipal capacity and engineering feasibility conclusions are subject to pr
 
 ### Jing-Zhang Heritage Park Vitality Belt — "Innovation's Spine"
 
-The Jing-Zhang Heritage Park is the green main axis of the AI Innovation Ecosystem Corridor [data:geometry/green_space.geojson#GS-001]. The park is not only leisure green space but also the public experience space of the AI innovation ecosystem — the Developer Walking Path, Open-Source Achievement Display Gallery, Agent Contribution Honor Wall, AI Scenario Testing Plaza, and Jing-Zhang Cultural Experience Plaza are deployed along its length [data:geometry/public_space.geojson].
+The Jing-Zhang Heritage Park is the green main axis of the AI Ecosystem Innovation Corridor [data:geometry/green_space.geojson#GS-001]. The park is not only leisure green space but also the public experience space of the AI ecosystem innovation — the Developer Walking Path, Open-Source Achievement Display Gallery, Agent Contribution Honor Wall, AI Scenario Testing Plaza, and Jing-Zhang Cultural Experience Plaza are deployed along its length [data:geometry/public_space.geojson].
 
 Park design follows the "east-west stitching, north-south connection" strategy: east-west direction stitches the urban fabric on both sides of the railway through slow-mobility corridors and public space nodes; north-south direction connects the three cores through continuous green corridors and slow-mobility paths.
 
@@ -684,7 +684,7 @@ This proposal's phased implementation follows the "Foundation — Chain — Ecos
 
 - **Near-term (Foundation Phase, 2026-2028)**: Open the corridor, activate nodes — led by public space and AI scenario pilots, prioritizing the Jing-Zhang Corridor southern section public space, Dazhongsi core renovation, and AI scenario testing plaza to create demonstration effects.
 - **Mid-term (Chain Phase, 2028-2030)**: Connect three cores, form a closed loop — using the R&D-community-industry innovation chain as the main thread, completing the neighborhood center network, talent apartments, and developer plaza to form three-core linkage.
-- **Long-term (Ecosystem Phase, 2030-2035)**: Global radiation, sustained operation — targeting AI innovation ecosystem and international influence, constructing the Zhongzhiyuan R&D core zone, corridor neighborhood hub, and full-domain AI scenario network.
+- **Long-term (Ecosystem Phase, 2030-2035)**: Global radiation, sustained operation — targeting AI ecosystem innovation and international influence, constructing the Zhongzhiyuan R&D core zone, corridor neighborhood hub, and full-domain AI scenario network.
 
 Near-term projects (2026-2028) [data:geometry/phasing.geojson#PH-001]:
 1. Dazhongsi AI Industry Zone core building renovation
@@ -797,7 +797,7 @@ All policy suggestions are conceptual and are not represented as confirmed gover
 ### Global AI Innovation Activity System and Long-Term Operation
 
 **Annual Activity System** [source:AGENT-TASKBOOK]:
-- Jing-Zhang AI Innovation Conference (every autumn): Annual global AI innovation ecosystem event, releasing the Innovation Belt's annual achievements
+- Jing-Zhang AI Innovation Conference (every autumn): Annual global AI ecosystem innovation event, releasing the Innovation Belt's annual achievements
 - Open-Source Contributor Week (every spring): Open-source contribution showcase and community activities for global developers
 - AI Scenario Hackathon (quarterly): AI scenario innovation competition, open to enterprises and entrepreneurs
 - Jing-Zhang Culture and Technology Festival (every summer): Public experience event fusing century-old railway culture and AI new culture
