@@ -39,7 +39,7 @@
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",
         "SPATIAL_REVIEW",
-        "PROFESSIONAL_EVIDENCE_REVIEW"
+        "PROFESSIONAL_EVIDENCE"
       ],
       "evidence_summary_zh": "23 条必选任务在 compliance_matrix.json 中逐条映射；三层范围分别采用不同结论强度；重点区域给出概念子区、项目 footprint、典型断面参数带与 gate，实际达到 conceptual_detailed_design_level，仍低于可审批的规划综合实施方案深度；与目标深度（规划综合实施方案的城市设计深度）的差距由 design_depth_matrix.json 的 attained_depth 如实登记。法定控制条件未公开的部分明确标注为待确认，不伪装为审定结论。"
     },
@@ -89,8 +89,8 @@
       ],
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",
-        "PROFESSIONAL_EVIDENCE_REVIEW",
-        "VISUAL_PACKAGING_CHECK"
+        "PROFESSIONAL_EVIDENCE",
+        "VISUAL_PACKAGING"
       ],
       "evidence_summary_zh": "12 张场景卡、4 个测试验证场景、6 类人才画像、4 个朝圣地标、7 个全球案例，均在正文可读展开而非仅在 JSON 打勾；全部空间建议表述为概念建议、参考方案或可供专业团队深化研究。"
     },
@@ -130,7 +130,7 @@
       ],
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",
-        "VISUAL_PACKAGING_CHECK",
+        "VISUAL_PACKAGING",
         "SPATIAL_REVIEW"
       ],
       "evidence_summary_zh": "公共空间体系由 public_space 与 green_space 图层承载并复算比例；风貌与体量给出引导性建议，因控规条件未公开不给定量控制结论。"
@@ -175,7 +175,7 @@
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",
         "SPATIAL_REVIEW",
-        "PROFESSIONAL_EVIDENCE_REVIEW"
+        "PROFESSIONAL_EVIDENCE"
       ],
       "evidence_summary_zh": "floor_area_ratio、building_height_m、building_density、official_green_ratio_control、road_area_ratio、total_floor_area_sqm 六项保持 status=unknown；ROAD_AREA/1207 只作概念道路预留候选，不升格为官方红线，并逐条转为「现在可做／补齐后可做／补齐后重算」的设计条件。"
     },
@@ -251,7 +251,7 @@
       ],
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",
-        "PROFESSIONAL_EVIDENCE_REVIEW"
+        "PROFESSIONAL_EVIDENCE"
       ],
       "evidence_summary_zh": "本方案不把该规定写成已满足的权威依据。buildings 图层仅为研究体量示意，confidence=low；达到建筑专业深度需先取得该规定官方文本与现状建筑底数。"
     }

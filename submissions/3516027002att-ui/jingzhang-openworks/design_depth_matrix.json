@@ -126,7 +126,7 @@
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",
         "SPATIAL_REVIEW",
-        "VISUAL_PACKAGING_CHECK"
+        "VISUAL_PACKAGING"
       ],
       "evidence_summary_zh": "一轴三缝三区两翼：开物主轴沿京张遗址公园南北贯通 9.59 km，三条开物横缝在三处重点区跨轴缝合东西，三区构成源码—编译—发行创新生产链。"
     },
@@ -216,7 +216,7 @@
       ],
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",
-        "PROFESSIONAL_EVIDENCE_REVIEW"
+        "PROFESSIONAL_EVIDENCE"
       ],
       "evidence_summary_zh": "容积率、建筑密度与绿地率控制指标未公开，六项法定指标保持 unknown 不予推定；本项只给功能比例与空间组织建议，并给出补齐后的重算清单。",
       "depth_limit_zh": "缺已批准控规的强度条件。本项的实质产出是缺口的三段式转化（现在可做／补齐后可做／补齐后重算），而非强度控制结论。"
@@ -256,7 +256,7 @@
       ],
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",
-        "PROFESSIONAL_EVIDENCE_REVIEW"
+        "PROFESSIONAL_EVIDENCE"
       ],
       "evidence_summary_zh": "高度与体量只给引导性建议：以京张铁路人字形与工业遗存尺度为母题，沿主轴保持低界面、向东西两侧递增，中小体量组合优于大体量单体。建筑高度控制（含文保、景观视廊、航空限高）未公开，保持 unknown。",
       "depth_limit_zh": "缺已批准高度控制、文保范围与建设控制地带 GIS、景观视廊与航空限高条件。本项只给形态关系与设计意向，不给任何高度、强度、密度数值。"
@@ -297,7 +297,7 @@
       ],
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",
-        "PROFESSIONAL_EVIDENCE_REVIEW"
+        "PROFESSIONAL_EVIDENCE"
       ],
       "evidence_summary_zh": "本项**未**给出拆改留分类，只给出概念体量的处置方向建议（massing_treatment：可逆轻构方向／适应性利用体量意向）。buildings 图层为 agent 生成的概念体量，不对应任何现状建筑。",
       "depth_limit_zh": "缺现状建筑轮廓、高度、层数、用途、建成年代与权属状态，无法做保留／改造／拆除／新建的法定分类。可逆性是干预属性，不能替代该分类。取得现状建筑底数与权属资料后须重建 buildings 图层并另行编制拆改留专项方案。"
@@ -376,7 +376,7 @@
       ],
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",
-        "PROFESSIONAL_EVIDENCE_REVIEW"
+        "PROFESSIONAL_EVIDENCE"
       ],
       "evidence_summary_zh": "给出四类设施（AI产业服务／创新服务平台／人才生活服务／新型基础设施）各自的分层结构、服务半径口径的建议依据与落位规则，补齐设施底数后可直接转为配置标准；不给任何工程测算。",
       "depth_limit_zh": "缺管线、排水、电力、燃气、消防、防洪排涝、海绵城市指标、能源负荷与市政容量底数，以及各类公共服务设施现状规模与分布。本项只给体系结构与落位规则，不给规模指标与容量测算。"
@@ -419,7 +419,7 @@
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",
         "SPATIAL_REVIEW",
-        "VISUAL_PACKAGING_CHECK"
+        "VISUAL_PACKAGING"
       ],
       "evidence_summary_zh": "绿地 268.4 公顷、公共空间 179.1 公顷，两项比例均复算自图层并明确为设计建议值；两者在主轴上重叠，因此不可直接相加。"
     },
@@ -516,7 +516,7 @@
       ],
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",
-        "PROFESSIONAL_EVIDENCE_REVIEW"
+        "PROFESSIONAL_EVIDENCE"
       ],
       "evidence_summary_zh": "8 项更新项目按版本归属、可逆性、位置、内容、gate、回滚与恢复标准列出；PF-R01–PF-R08 提供非官方概念作用范围与逐项替换字段，不构成开发时序、征拆、投资或审批结论。"
     },
@@ -655,7 +655,7 @@
         "DETERMINISTIC_VALIDATION",
         "BOUNDARY_TRUST",
         "KEY_AREA_PROVISIONAL",
-        "PROFESSIONAL_EVIDENCE_REVIEW"
+        "PROFESSIONAL_EVIDENCE"
       ],
       "evidence_summary_zh": "资料缺口不写成免责声明，而是逐条转为「现在可做／补齐后才能做／补齐后要重算」的三段式设计条件，并给出取得官方红线后的完整复算清单。"
     }

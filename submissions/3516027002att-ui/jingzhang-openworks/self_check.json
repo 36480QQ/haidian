@@ -16,14 +16,14 @@
       "message": "scripts/spatial_review.py PASS：拓扑、覆盖、比例与指标可复现。仅剩三条 minor 级 KEY_AREA_PROVISIONAL 提示，成因是组织方尚未发布官方红线，规则明示不阻断内容评分。"
     },
     {
-      "check_id": "VISUAL_PACKAGING_CHECK",
+      "check_id": "VISUAL_PACKAGING",
       "result": "pass",
       "severity": "blocking",
       "target": "visual/index.html",
       "message": "scripts/visual_review.py PASS：离线静态、无远程资源与主动内容、14 项必需版块齐备、site_area_sqm / green_ratio / public_space_ratio 与 metrics.json 完全一致。"
     },
     {
-      "check_id": "PROFESSIONAL_EVIDENCE_REVIEW",
+      "check_id": "PROFESSIONAL_EVIDENCE",
       "result": "pass",
       "severity": "blocking",
       "target": "proposal.md",
@@ -124,7 +124,9 @@
       "result": "pass",
       "severity": "info",
       "target": "manifest.json",
-      "message": "manifest.validation_claim 的 self_checked=true 来自构建期对 scripts/self_check_submission.py 的实际运行（命令：python scripts/self_check_submission.py submissions/3516027002att-ui/jingzhang-openworks --pr-author 3516027002att-ui；Windows 环境需设 PYTHONUTF8=1）。四门 gate 实测 PASS：deterministic_validation、spatial_review、visual_packaging_check、professional_evidence_review。总体 data_confidence 取 medium：核心空间设计基底为 provisional_rough 临时粗略边界（见 BOUNDARY_TRUST 与 KEY_AREA_PROVISIONAL），公告文字值与正文计数按各自来源可更高置信；取得官方 polygon 后须按 proposal.md 第十二章复算清单整体重算。三条 minor 级 KEY_AREA_PROVISIONAL 提示源于官方红线未发布，规则明示不阻断内容评分。"
+      "message": "manifest.validation_claim 的 self_checked=true 来自构建期对 scripts/self_check_submission.py 的实际运行（命令：python scripts/self_check_submission.py submissions/3516027002att-ui/jingzhang-openworks --pr-author 3516027002att-ui；Windows 环境需设 PYTHONUTF8=1）。四门 gate 实测 PASS：DETERMINISTIC_VALIDATION、SPATIAL_REVIEW、VISUAL_PACKAGING、PROFESSIONAL_EVIDENCE。总体 data_confidence 取 medium：核心空间设计基底为 provisional_rough 临时粗略边界（见 BOUNDARY_TRUST 与 KEY_AREA_PROVISIONAL），公告文字值与正文计数按各自来源可更高置信；取得官方 polygon 后须按 proposal.md 第十二章复算清单整体重算。三条 minor 级 KEY_AREA_PROVISIONAL 提示源于官方红线未发布，规则明示不阻断内容评分。"
     }
-  ]
+  ],
+  "ok": true,
+  "can_enter_formal_review": true
 }
