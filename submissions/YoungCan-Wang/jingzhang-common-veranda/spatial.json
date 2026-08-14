@@ -371,22 +371,41 @@
   },
   "everyday_civic_brief": {
     "observation_status": "contributor_lived_observation_not_a_survey",
-    "metro_station": "Xuezhiyuan Station, Changping Line, Xueqing Road / Yuequan Road",
-    "lunch_walk_target_m": "500-600",
+    "workplace_observation": "Xuezhiyuan Station, Changping Line, Xueqing Road / Yuequan Road; not the park front door",
+    "phase1_park": "Zhichun Road to Qinghua East Road along the old Jing-Zhang linear space",
+    "named_lunch_gate": "west end of Qinghua East Road; also Zhichun Road, North Fourth Ring under-bridge, Chengfu Road / Wudaokou",
+    "lunch_walk_target_m": "500-600 around Phase 1 gates, not station-to-park",
     "pedestrian_defects": [
-      "narrow sidewalks",
-      "high planters"
+      "narrow sidewalks on Xueqing Road as workplace observation",
+      "high planters on Xueqing Road as workplace observation"
     ],
     "park_program": {
-      "separated_run_and_walk": true,
-      "full_courts": "1-2 at wider civic openings; one more possible at Dazhongsi",
-      "spectator": "standing runoff 1-2 rings plus flat benches; no grandstand"
+      "separated_run_and_walk": "separate only where verified clear width permits; keep accessible walking continuous",
+      "basketball_baseline": "audit the two reported existing Phase 1 courts first",
+      "additional_courts": "none by default; consider only a reversible addition after demand, noise, lighting, clear-width, access and operating audits",
+      "spectator": "standing runoff plus flat benches outside safety clearance; no grandstand"
     },
     "ai_intents": [
       "buy water",
       "contact a staffed help desk for a separated child without photo upload or facial recognition by default",
       "register and collect a lost item through human verification"
     ],
-    "claim_limit": "Not a pedestrian survey, measured office-to-park GIS average, sports-facility approval or government endorsement."
+    "claim_limit": "Not a pedestrian survey, measured Xuezhiyuan-to-park route, sports-facility approval or government endorsement. Xuezhiyuan Station is workplace context only."
+  },
+  "geography_review": {
+    "version": "v0.5",
+    "reviewed_at": "2026-08-14",
+    "true_spine": "Beijing North—Dazhongsi—Zhichun Road—Wudaokou—Qinghua East Road—North Fifth Ring",
+    "excluded_core_anchor": "Xuezhiyuan is an off-corridor lived observation, not a park gate",
+    "six_gates": [
+      "Dazhongsi four quadrants",
+      "Zhichun Road south gate",
+      "North Fourth Ring heritage bridge",
+      "Chengfu Road/Wudaokou",
+      "Qinghua East Road West",
+      "North Fifth Ring/Qinghe south edge"
+    ],
+    "movement_rule": "active rail exclusive; walk continuous; run/cycle separate only where width permits; city-street cycle bypass; service vehicles time- and speed-controlled; activity pockets off through-flow",
+    "sports_rule": "audit two existing basketball courts first; no duplication without demand/noise/width/operations evidence"
   }
 }

@@ -1,22 +1,21 @@
 ---
-title: "Jing-Zhang Common Veranda v0.5: Make the Belt a Place Where Ordinary Life Comes First"
+title: "Jing-Zhang Common Veranda: Make the Belt a Place Where Ordinary Life Comes First"
 author_github: "YoungCan-Wang"
 language: "en"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "On top of one spine, three verandas, six gates and an exit-ready delivery system, the veranda is narrowed to Haidian daily life: a 500–600 m lunch walk from offices near Xuezhiyuan Station into the built railway park; walking, running and watching basketball; AI only for buying water, finding a child or a lost item—not a startup campus."
+summary: "The Common Veranda follows the real overall-design limits from Xizhimen Outer Street to the North Fifth Ring and the Jing-Zhang heritage spine from Beijing North through Dazhongsi, Zhichun, Wudaokou and Qinghua East Road West. Six real city gates connect lunch walking, sport, community life and restrained AI services; every boundary, capacity and engineering move remains verifiable and reversible."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v0.5"
 ---
 
-# Jing-Zhang Common Veranda v0.5
+# Jing-Zhang Common Veranda
 
 **JING-ZHANG COMMON VERANDA** is neither a street lined with AI exhibits, nor a closed startup campus beside a historic railway, nor a special zone reserved for driverless vehicles. It treats the Jing-Zhang corridor as Haidian's civic veranda for the future: a place to walk after lunch, watch basketball, bring children and animals, and still see what data an AI scenario uses, who is responsible, when it pauses and how a person can exit.
 
-v0.5 keeps one spine, three verandas, six gates, twelve scenarios and the test–accept–pause–exit delivery system, but shifts the emphasis from institutional completeness to everyday life. The belt should first restore human atmosphere in Haidian. Offices around Changping Line Xuezhiyuan Station should reach the already-open railway park in about **500–600 m**. The park separates running from walking, places a few full basketball courts only at wider openings, and uses standing runoff plus benches rather than a grandstand. AI handles buy-water, find-a-child and find-a-lost-item intents, with staffed takeover by default. Every move remains a Conceptual Recommendation, not statutory planning, institutional authorization or government approval.
+The proposal follows two real geographic layers. The overall-design scope runs from Xizhimen Outer Street to the North Fifth Ring, with Xueyuan/Xitucheng Roads to the east and Dazhongsi East/Heqing Roads to the west. Within it, the Jing-Zhang heritage spine runs from Beijing North through Dazhongsi, Zhichun Road, Wudaokou and Qinghua East Road West to the North Fifth Ring. Six gates anchor to existing stations, streets, under-bridge space, approved public-realm work and the Phase 2 interface. Operating rail keeps an exclusive safety edge; walking remains continuous; running and cycling separate only where width permits; service vehicles are controlled; courts, queues and seats stay off through-routes. Every move is a Conceptual Recommendation, not statutory planning, institutional authorization or government approval.
 
 ![Overall urban design](assets/figures/site-overview.en.png)
 
@@ -25,13 +24,13 @@ v0.5 keeps one spine, three verandas, six gates, twelve scenarios and the test�
 ### Evidence hierarchy
 
 1. **Task layer:** the official announcement defines the project, the 43.6 km² coordinated research scope, the approximate 11.4 km² overall design scope and the 368.4 ha key-area scope. The Agent taskbook defines six required tasks: identity, ecosystem, scenarios, landmarks, culture and operations. [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK]
-2. **Context layer:** v0.5 extracts public OpenStreetMap roads, rail, water, green space, amenities and key-area building footprints to improve spatial orientation. Completeness and accuracy are not equivalent to an official survey. The location of Changping Line Xuezhiyuan Station follows the municipal opening notice and is not a redline or measured walking distance. [source:OSM-CONTEXT-20260810] [source:BJ-METRO-CHANGPING-SOUTH-2023]
+2. **Context layer:** the proposal extracts public OpenStreetMap roads, rail, water, green space, amenities and key-area building footprints for orientation; completeness and accuracy are not equivalent to official survey. Phase 1 follows the published Zhichun–Qinghua East extent. The official textual limits constrain the concept envelope but are not reverse-engineered into a precise redline. [source:OSM-CONTEXT-20260810] [source:JINGZHANG-PHASE1-OPEN-2023] [source:OFFICIAL-ANNOUNCEMENT]
 3. **Design layer:** the spine, six gates, civic nodes, green layer, program bands, building prototypes and twelve scenarios are Agent-generated Conceptual Recommendations. [data:geometry/roads.geojson#ROAD-001] [data:geometry/public_space.geojson#PUBLIC-001]
 4. **Presentation layer:** three key-area perspectives and one “Lunch Walk into the Park” scene are original AI-generated concept images. They communicate spatial character and user relationships; they are not site photographs, exact-condition reconstructions or delivery commitments. [source:GEN-V02-CONCEPT-RENDERS] [source:GEN-V05-LUNCH-WALK-RENDER]
 
 The site and three key-area polygons remain repository-provisional. The submitted polygon recalculates to approximately **11.41 km²** in EPSG:4548 and is used only for internal comparison. All GeoJSON, metrics, drawings, HTML and PDFs must be regenerated when the official polygon arrives. [source:BOUNDARY-SOURCE] [metric:site_area_sqm]
 
-![Existing context and six tensions](assets/figures/existing-conditions.en.png)
+![Real Jing-Zhang corridor and delivery status](assets/figures/existing-conditions.en.png)
 
 ### Six spatial tensions
 
@@ -39,34 +38,32 @@ The site and three key-area polygons remain repository-provisional. The submitte
 - **Innovation versus civic access:** research resources are concentrated, yet residents and visitors rarely see how research produces public value.
 - **Transit versus the last kilometre:** rail and arterial access are strong, but walking, cycling and accessible connections from stations to campuses and communities need site-by-site verification.
 - **Heritage versus daily life:** rail, Zhongguancun and AI narratives are rich but lack one everyday shared carrier.
-- **Office versus living:** east of Xueyuan Road, jobs and housing already mix, yet sidewalks are narrow, planters are high, and the built railway park still feels like another world. At the everyday interfaces addressed by this proposal, the missing layer is not another office concept but a public realm that connects existing work, housing, commerce and park life.
+- **Office versus living:** universities, campuses, communities and commerce already mix inside the overall-design scope. The real stitching points are Zhichun Road, Chengfu Road, Qinghua East Road West and the four Dazhongsi quadrants. The missing layer is not another office concept but an everyday public realm with continuous walking, safe crossing, stopping and staffed help at those real interfaces.
 - **Intelligence versus accountability:** AI scenarios are expanding, while clear human owners, explanation desks, pause conditions and appeal routes remain spatially absent. [depth:existing_conditions_diagnosis]
 
-### Lived observation: a veranda is a lunch walk that actually arrives
+### Everyday-life principle: a veranda is a lunch walk that actually arrives
 
-This section is a contributor observation from someone who lives in Beijing and works near Haidian's Xuezhiyuan Station. It is not a resident survey, a traffic count or an approved walking-distance measurement. [assumption:A-LIVED-001]
-
-Xuezhiyuan Station opened on 4 February 2023 on the Changping Line southern extension, at Xueqing Road and Yuequan Road, named after the Xuezhiyuan neighbourhood. Offices and housing already coexist, but the street does not treat people as pedestrians: sidewalks are too narrow and planters too high. The contributor's own office is only about 100–200 m from the station; that is a single-building exception. For nearby offices to the railway park, the design target is a **500–600 m** lunch-and-dinner walk. Phase 1 already opened to the west, from Zhichun Road to Qinghua East Road. If Xueqing Road still feels as if “there is no railway park nearby,” the park is not missing—the ground does not yet invite people across. [source:BJ-METRO-CHANGPING-SOUTH-2023] [source:JINGZHANG-PHASE1-OPEN-2023] [depth:haidian_everyday_life]
-
-This personal observation rewrites the Urban AI Living Experience Belt as ordinary life. Eating, cinema and board games around Liudaokou and Wudaokou, together with shopping and community life around Dazhongsi and the North Fourth Ring home-furnishing belt, are already part of the corridor's civic life. This is neither a preference survey nor proof of why a shop survives. It is evidence of a design question: student shops, furniture malls, community services and the “AI innovation belt” should not remain separate worlds. If the belt contains only startups and robots, it becomes a campus or a special zone, not a city. The definition therefore tightens: keep daily life, then fold AI into it. [source:AGENT-TASKBOOK] [assumption:A-LIVED-001]
+The **500–600 m** figure is only a target service radius around real Phase 1 city gates, not a completed walking survey. Field audit must test Zhichun Road, the North Fourth Ring under-bridge, Chengfu Road/Wudaokou and Qinghua East Road West: can offices, campuses and communities reach the park through continuous sidewalks, signalised crossings and accessible entrances? Student life around Liudaokou and Wudaokou, commercial and community services around Dazhongsi, and existing Phase 1 sports facilities show that the innovation belt must first support ordinary life. This is not a preference survey or traffic-count conclusion. [source:JINGZHANG-PHASE1-OPEN-2023] [depth:haidian_everyday_life]
 
 ### Translating Beijing and Haidian evidence into design moves
 
-v0.5 translates public policy into checkable constraints. Haidian's 15th Five-Year Plan frames the Jing-Zhang AI Innovation Belt, north-south AI cores, tangible benchmark scenarios, open ecosystems and safe controllability; the design therefore organizes test—transfer—adoption—public return rather than a display corridor. Haidian's innovation-scenario guidance asks for a host, a defined need, technical indicators, space/facilities, ethical safety and replicable outcomes; the flagship tabletop therefore locks responsibility and exit before technology operation. [source:HAIDIAN-15TH-FIVE-YEAR-PLAN-2026] [source:HAIDIAN-INNOVATION-SCENARIO-GUIDE-2025]
+The proposal translates public policy into checkable constraints. Haidian's 15th Five-Year Plan frames the Jing-Zhang AI Innovation Belt, north-south AI cores, tangible benchmark scenarios, open ecosystems and safe controllability; the design therefore organizes test—transfer—adoption—public return rather than a display corridor. Haidian's innovation-scenario guidance asks for a host, a defined need, technical indicators, space/facilities, ethical safety and replicable outcomes; the flagship tabletop therefore locks responsibility and exit before technology operation. [source:HAIDIAN-15TH-FIVE-YEAR-PLAN-2026] [source:HAIDIAN-INNOVATION-SCENARIO-GUIDE-2025]
 
 The Beijing Urban Renewal Regulation becomes a rights-holder and co-governance gate. The Accessibility Law becomes continuous physical/information access, staffed equivalence and co-review with disabled and older users. Beijing sponge-city guidance supports visible rain gardens and maintenance, but is not used to invent a site runoff target. [source:BEIJING-URBAN-RENEWAL-REGULATION] [source:CHINA-ACCESSIBILITY-LAW-2023] [source:BEIJING-SPONGE-CITY-2017]
 
 ### Existing delivery baseline and control-plan draft alignment
 
-The proposal does not begin from a blank site. Official public information records that an approximately 2.5 km first phase from Zhichun Road to Qinghua East Road opened in 2023, retaining rail and bridge memory while adding rainwater facilities, under-bridge activity and east-west stitching. v0.5 therefore treats it as an existing public asset: the six-gate audit, continuous accessibility, accountability interfaces, lunch-walk radius and operations receipts are an overlay, not duplicate landscape construction. [source:JINGZHANG-PHASE1-OPEN-2023]
+The proposal does not begin from a blank site. Official public information records that an approximately 2.5 km first phase from Zhichun Road to Qinghua East Road opened in 2023, retaining rail and bridge memory while adding rainwater facilities, under-bridge activity and east-west stitching. The proposal treats it as an existing public asset: the six-gate audit, continuous accessibility, accountability interfaces, lunch-walk radius and operations receipts are an overlay, not duplicate landscape construction. [source:JINGZHANG-PHASE1-OPEN-2023]
+
+Phase 1 information also lists one standard football pitch, one five-a-side pitch, two basketball courts and separate running, walking and cycling facilities. The Qinghua East Road south-side public-realm project is approved and includes station bicycle parking and a station–park–street interface, while Phase 2 remains under construction. The proposal therefore treats sports and blue-green facilities as baseline rather than promising duplicates: G5 adds access audit, staffed accountability and operating receipts; G6 makes no continuity claim before Phase 2 completion and acceptance. [source:JINGZHANG-PHASE1-FACILITIES-2024] [source:QINGHUA-EAST-PUBLIC-SPACE-2026] [source:JINGZHANG-PHASE2-2026]
 
 The 2024 public-consultation draft for HD00-1601 and related blocks sets out “one belt, one axis, two centres and multiple nodes”: the Jing-Zhang innovation-exchange belt, Zhongguancun Avenue innovation axis, Dazhongsi and Wudaokou centres, and multiple nodes. One spine, three verandas, six gates and twelve scenarios form a civic-service and accountability layer over that structure; they do not replace it. Published 2035 population, land, floor-area, facility and transport figures belong only to the draft scope, are not copied into `metrics.json`, and are not used to reverse-engineer an official vector redline from an image. [source:JINGZHANG-CONTROL-PLAN-DRAFT-2024] [depth:public_plan_alignment]
 
-The official 2021 implementation interpretation already identified breaks, multiple rights holders and phased delivery, and described chief-planner/engineer and “urban partner” coordination. v0.5 translates these into work-package leads, professional acceptance, quarterly receipts and retirement decisions without claiming that any organization has accepted a role. The final approved text and reusable GIS/CAD remain unavailable, so every submission boundary, key area and area figure stays provisional. [source:JINGZHANG-PLAN-INTERPRETATION-2021]
+The official 2021 implementation interpretation already identified breaks, multiple rights holders and phased delivery, and described chief-planner/engineer and “urban partner” coordination. The proposal translates these into work-package leads, professional acceptance, quarterly receipts and retirement decisions without claiming that any organization has accepted a role. The final approved text and reusable GIS/CAD remain unavailable, so every submission boundary, key area and area figure stays provisional. [source:JINGZHANG-PLAN-INTERPRETATION-2021]
 
 ## Three-Level Scope Framework
 
-The 43.6 km² coordinated research scope asks how the innovation ecosystem collaborates. The approximate 11.4 km² overall design scope asks how civic space, mobility, industry and daily life are organised. The three key areas ask how prototypes can be handed to professional teams. One civic-value contract connects all three: public access, explained responsibility, minimum data, human review and exit.
+The 43.6 km² coordinated research scope runs from the North Fifth Ring to Xizhimen Outer Street and from the Beijing–Tibet Expressway to Wanquanhe Road; it asks how the innovation ecosystem collaborates. The approximate 11.4 km² overall design scope runs from Xizhimen Outer Street to the North Fifth Ring, from Xueyuan/Xitucheng Roads in the east to Dazhongsi East/Heqing Roads in the west; it asks how civic space, mobility, industry and daily life are organised. The approximately 368.4 ha key-area scope runs north to south through Zhongzhiyuan, AI Origin and Dazhongsi; it asks how prototypes can be handed to professional teams. One civic-value contract connects all three: public access, explained responsibility, minimum data, human review and exit.
 
 ![Three scopes and six program bands](assets/figures/land-use-structure.en.png)
 
@@ -110,17 +107,21 @@ The civic spine combines rail heritage interpretation, all-weather slow mobility
 
 Six east-west city gates turn crossings of rail, roads, walls and campus edges into six independent verification tasks. Each gate needs continuous walking, cycle parking, accessible ramps, night lighting, legible signs, staffed help and stormwater buffering. Bridges, tunnels and structural works remain subject to professional investigation. [metric:east_west_link_count]
 
-The ground link from Xuezhiyuan Station to Phase 1 is one gate that must be named. The target is not abstract stitching: offices on Xueqing Road should reach the already-open railway park within a **500–600 m** lunch radius. The first job is to turn narrow sidewalks and high planters into a continuous walking layer where people are not pushed into traffic. Without that invitation, even a complete park belongs only to the other side. [depth:haidian_everyday_life] [assumption:A-LIVED-001]
+The lunch scenario attaches only to east-west streets where Phase 1 already meets the city. This proposal enlarges **Qinghua East Road West**: campuses and offices to the east reach a signalised crossing, station cycle parking and the park entrance along the real street. Its first job is a continuous ground layer for walking, crossing and stopping without pushing people into traffic. Walking time, clear width, volume and accessibility all require field audit. [depth:haidian_everyday_life]
+
+`mobility-bluegreen` keeps the north–south slow-traffic system and enlarges the west end of Qinghua East Road: city east — east–west street — park gate — rail remnant. **500–600 m** is a service-radius target around those real gates, not a surveyed route. At the gate, a closable restrained-AI protocol covers buy-water, staffed separated-person help and lost-item registry, with no photo upload by default and human handover on failure.
 
 ![Conceptual lunch walk into the railway park](assets/renders/lunch-walk-park.jpg)
 
-![Mobility and slow-traffic system](assets/figures/mobility-bluegreen.en.png)
+![Corridor slow-traffic system and Qinghua East Road west-end city gate](assets/figures/mobility-bluegreen.en.png)
 
 ### Six program bands and building renewal
 
 Program bands express dominant civic relationships, not statutory zoning. Buildings follow a five-level handoff: retain value, open the ground floor, adaptively reuse, add reversibly, or mark pending confirmation. Valuable existing fabric is retained. Suitable research, education and commercial ground floors gain public interfaces. New veranda components remain separate, maintainable and replaceable. Buildings without ownership or structural evidence receive no demolition conclusion. [depth:retain_renovate_demolish]
 
 The 22 building footprints remain conceptual prototypes, totalling approximately **12.67 ha**. They are not an existing-condition inventory or a confirmed development scale. [metric:building_footprint_area_sqm]
+
+![Existing building context and conceptual renewal capacity](assets/figures/building-context.en.png)
 
 ## Detailed Design of the Three Key Areas
 
@@ -152,7 +153,7 @@ The six nodes are the release gate, public learning steps, research-to-civic tab
 
 ![90-day Veranda Receipt tabletop](assets/figures/veranda-receipt.en.png)
 
-Rather than deepening all twelve scenarios at once, v0.5 chooses one public-learning request at AI Origin. Five synthetic fixtures exercise source lookup, staffed explanation and an evidence receipt; a paper request, printed sources, in-person explanation and appeal remain available. Status is **tabletop only / not authorized / not run**. The evidence proves the G0—G6 sequence, four stop branches and five-step rollback structure; it does not prove site safety, model performance, acceptance, permission or endorsement. [depth:veranda_receipt_pilot]
+Rather than deepening all twelve scenarios at once, the proposal chooses one public-learning request at AI Origin. Five synthetic fixtures exercise source lookup, staffed explanation and an evidence receipt; a paper request, printed sources, in-person explanation and appeal remain available. Status is **tabletop only / not authorized / not run**. The evidence proves the G0—G6 sequence, four stop branches and five-step rollback structure; it does not prove site safety, model performance, acceptance, permission or endorsement. [depth:veranda_receipt_pilot]
 
 The gates cover mandate, place/access, minimum data, rights/provenance, human control, public notice/non-AI service, and receipt/appeal/exit. One positive control passes and four negatives stop at personal data, unresolved rights, missing steward and missing exit; 5/5 current machine outcomes match expectation. A real pilot must reassign every accountable role and obtain site and professional authorization. [metric:tabletop_expected_outcome_match_rate] [source:CAC-AI-CONTENT-LABEL-2025]
 
@@ -168,7 +169,7 @@ The six nodes are the transit arrival living room, responsible retail desk, elde
 
 ## AI Ecosystem, Personas and AI+ Scenarios
 
-Six principal user groups remain researchers, startups, university students, nearby families, elderly and disabled users, and city operations/public-service staff. v0.5 does not invent an overlapping seventh category. Instead, it adds previously overlooked everyday states to those six profiles: nearby workers taking lunch or dinner walks; students and residents eating, seeing a film or playing board games on weekends; children with caregivers; and people walking with pets where site rules permit. Each gains a public capability that does not require being an industry insider: quiet staying, accessible arrival, explanation, appeal, pause or continued participation.
+Six principal user groups remain researchers, startups, university students, nearby families, elderly and disabled users, and city operations/public-service staff. The proposal does not invent an overlapping seventh category. Instead, it adds previously overlooked everyday states to those six profiles: nearby workers taking lunch or dinner walks; students and residents eating, seeing a film or playing board games on weekends; children with caregivers; and people walking with pets where site rules permit. Each gains a public capability that does not require being an industry insider: quiet staying, accessible arrival, explanation, appeal, pause or continued participation.
 
 ![Twelve accountable scenarios](assets/figures/scenario-atlas.en.png)
 
@@ -184,7 +185,9 @@ Renewal begins with existing value and civic-interface potential. Rail, brick, i
 
 ## Mobility, Rail, Utilities and Public Facilities
 
-Mobility has four levels: transit gateways; six east-west city gates; a continuous walking, cycling and accessible spine; and local loops completing the last kilometre. Any crossing of rail, express roads, bridges, tunnels or underground links remains a conceptual question rather than an engineering-feasibility claim. [depth:traffic_rail_slow_parking]
+Mobility is layered by risk and speed: operating rail keeps an exclusive safety interface; the six city gates use only existing or professionally verified crossings; walking and access remain continuous; running separates only in wide segments; cycling moves to city streets where clear width fails; service and emergency vehicles are time- and speed-controlled under pedestrian priority. Any crossing of rail, express roads, bridges, tunnels or underground links remains a conceptual question rather than an engineering-feasibility claim. [depth:traffic_rail_slow_parking]
+
+![Layered relationship among people, vehicles, running, cycling and rail](assets/figures/mobility-separation.en.png)
 
 Utilities follow a low-tech base + removable smart layer. Seating, shade, ramps, drinking water and signs work without power. Sensors, edge compute, metering and lighting controls have separate power, permission and manual shutdown. Public services do not depend on collecting more data, and high-impact decisions hand off to a person. [depth:municipal_new_infrastructure]
 
@@ -192,7 +195,7 @@ Utilities follow a low-tech base + removable smart layer. Seating, shade, ramps,
 
 ![Blue-green civic-realm system](assets/figures/bluegreen-publicrealm.en.png)
 
-Continuous canopy, permeable paving, bioswales and visible rain gardens form the ecological base. Within the provisional polygon, design green is approximately **12.1%** and civic space approximately **2.2%**. These values compare internal concept allocation only and are not statutory green or public-space controls. [metric:green_ratio] [metric:public_space_ratio]
+Continuous canopy, permeable paving, bioswales and visible rain gardens form the ecological base. Within the provisional polygon, design green is approximately **12.1%** and civic space approximately **2.1%**. These values compare internal concept allocation only and are not statutory green or public-space controls. [metric:green_ratio] [metric:public_space_ratio]
 
 ![Concept section and component kit](assets/figures/public-realm-section.en.png)
 
@@ -247,7 +250,7 @@ No smart layer opens without an operations owner, maintenance/spares window, sta
 
 Metrics have three classes: spatial values recalculable from GeoJSON; statutory controls waiting for official plans; and performance metrics accumulated through operations. The first carries current values, the second remains unknown, and the third defines collection method, accountable owner and privacy boundary. [depth:metrics_recalculation]
 
-Spatial metrics are recalculated in EPSG:4548 from the site boundary, green-space, public-space and building layers. The provisional design envelope is approximately **11.41 km²**, concept green space approximately **12.1%**, and concept public space approximately **2.2%**. These values check internal consistency and map directly to the methods, source layers and status fields in `metrics.json`; because the boundary and key areas remain provisional, none is presented as a statutory site area or planning ratio. [metric:site_area_sqm] [metric:green_ratio] [metric:public_space_ratio]
+Spatial metrics are recalculated in EPSG:4548 from the site boundary, green-space, public-space and building layers. The provisional design envelope is approximately **11.41 km²**, concept green space approximately **12.1%**, and concept public space approximately **2.1%**. These values check internal consistency and map directly to the methods, source layers and status fields in `metrics.json`; because the boundary and key areas remain provisional, none is presented as a statutory site area or planning ratio. [metric:site_area_sqm] [metric:green_ratio] [metric:public_space_ratio]
 
 Statutory FAR, height, development capacity, parking, utility capacity and heritage controls remain `unknown`; visual estimation is not used to fill gaps. New official evidence triggers a full chain: replace boundaries, recalculate intersecting layers, redraw Chinese and English figures, regenerate PDF/HTML and rerun self-check. The compliance matrix responds to the announcement and agent.1—agent.6, while the standards and design-depth matrices record judgement, evidence and gaps. Passing machine validation only permits content review; it is not spatial-quality approval, selection, planning approval or engineering feasibility. [data:geometry/site_boundary.geojson#SITE-001] [standard:MOHURD-URBAN-DESIGN-MEASURES]
 
@@ -263,7 +266,7 @@ Every spatial, policy, recruitment, event and operating move remains a Conceptua
 
 - Beijing Municipal Commission of Planning and Natural Resources, Haidian Branch: official prequalification announcement. [source:OFFICIAL-ANNOUNCEMENT]
 - Cleared Agent taskbook summary, Site Package and professional-standard snapshots. [source:AGENT-TASKBOOK]
-- Beijing Municipal Commission of Transport: Changping Line southern-extension opening notice, including Xuezhiyuan Station. [source:BJ-METRO-CHANGPING-SOUTH-2023]
+- Beijing Municipal Commission of Transport: Changping Line southern-extension opening notice, including Xuezhiyuan Station as workplace-observation context only, not a park-gate location. [source:BJ-METRO-CHANGPING-SOUTH-2023]
 - OpenStreetMap public roads, rail, water, green, amenities and buildings, ODbL 1.0. [source:OSM-CONTEXT-20260810]
 - Official JTC one-north, City of Cambridge Kendall Square and MaRS pages. [source:CASE-ONE-NORTH] [source:CASE-KENDALL] [source:CASE-MARS]
 - Official Knowledge Quarter London, Mila and STATION F pages. [source:CASE-KQ] [source:CASE-MILA] [source:CASE-STATION-F]
