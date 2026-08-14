@@ -16,7 +16,7 @@ summary: "以京张铁路遗址公园为空间载体，融合百年铁路文化�
 
 ## 摘要 / Abstract
 
-百年京张AI创新带是以京张铁路遗址公园为空间载体，融合百年铁路文化、中关村创新基因与AI技术革命的未来城市创新带。本方案覆盖43.6平方公里，从北五环到北京北站，构建三条带叠加的空间格局：百年京张文化带、都市AI生活体验带、AI融合创新带。
+百年京张AI创新带是以京张铁路遗址公园为空间载体，融合百年铁路文化、中关村创新基因与AI技术革命的未来城市创新带。本方案统筹研究范围覆盖43.6平方公里（公告口径），总体设计范围（几何复算）为11.41平方公里 [metric:site_area_sqm]，从北五环到北京北站，构建三条带叠加的空间格局：百年京张文化带、都市AI生活体验带、AI融合创新带。
 
 The Beijing-Zhangjiakou AI Innovation Corridor is a future-oriented urban innovation belt that integrates century-old railway culture, Zhongguancun's innovation DNA, and AI technology revolution, using the Beijing-Zhangjiakou Railway Heritage Park as its spatial carrier. This proposal covers 43.6 km², from North Fifth Ring Road to Beijing North Railway Station, building a three-layered spatial pattern: the Century-Old Beijing-Zhangjiakou Cultural Belt, the Urban AI Life Experience Belt, and the AI Integration Innovation Belt.
 
@@ -113,15 +113,15 @@ The Beijing-Zhangjiakou AI Innovation Corridor is a future-oriented urban innova
 
 | 指标类型 | 指标名称 | 数值 | 单位 |
 |---------|---------|------|------|
-| 空间指标 | 总用地面积 | 43.6 | km² |
-| | 绿地率 | ≥35 | % |
-| | 容积率（平均） | 2.8 | - |
-| | 建筑密度（平均） | 35 | % |
-| 产业指标 | AI产业用地占比 | 32 | % |
-| | 创新企业数量 | ≥500 | 家 |
-| | 高新技术企业占比 | ≥60 | % |
-| 人口指标 | 就业人口容量 | 15-20 | 万人 |
-| | 居住人口容量 | 8-10 | 万人 |
+| 空间指标 | 统筹研究范围（公告） | 43.6 | km² |
+| | 总体设计范围（几何复算） | 11.41 | km² |
+| | 绿地率（复算） | 44.4 | % |
+| | 容积率（平均，复算） | 1.13 | - |
+| | 建筑密度（平均，复算） | 8.7 | % |
+| 产业指标 | 科研用地（0802）占比 | 30 | % |
+| | 商业服务业用地（05）占比 | 17 | % |
+| 人口指标 | 就业人口容量（按复算GFA测算） | 10-12 | 万人 |
+| | 居住人口容量（按复算GFA测算） | 5-6 | 万人 |
 | 设施指标 | 教育设施覆盖半径 | 500 | m |
 | | 医疗设施覆盖半径 | 1000 | m |
 | | 公园绿地500m覆盖 | 100 | % |
@@ -140,31 +140,31 @@ The Beijing-Zhangjiakou AI Innovation Corridor is a future-oriented urban innova
 
 **三核驱动 / Three Core Zones**：
 
-1. **中关村AI加速核心区**
-   - 位置：中关村大街沿线，清华园至五道口区域
-   - 面积：约8.5 km²
-   - 定位：AI硬科技创新策源地
+1. **众智园AI自主创新加速区**
+- 位置：北部，京张铁路遗址公园北段沿线（临时粗略范围）
+- 面积：几何复算约1.93 km² [metric:key_area_zhongzhiyuan_sqm]
+- 定位：AI硬科技自主创新策源地
    - 功能：基础研究、技术转化、产业孵化
    - 空间要素：大科学装置、国家实验室、创新企业总部、风险投资机构
 
-2. **北京AI源头社区**
-   - 位置：学院路沿线，北航至北邮区域
-   - 面积：约6.2 km²
-   - 定位：AI源头技术创新社区
+2. **北京AI原点社区**
+- 位置：中部，学院路沿线（临时粗略范围）
+- 面积：几何复算约1.04 km² [metric:key_area_ai_origin_sqm]
+- 定位：AI源头技术创新社区
    - 功能：开源社区、开发者生态、人才培养
    - 空间要素：开源成果展示廊、智能体贡献荣誉墙、开发者散步道、全球开发者交流中心
 
-3. **大钟寺AI产业集群**
-   - 位置：大钟寺至西直门区域
-   - 面积：约5.8 km²
-   - 定位：AI应用产业高地
+3. **大钟寺AI产业聚集区**
+- 位置：南部，大钟寺至西直门区域（临时粗略范围）
+- 面积：几何复算约0.72 km² [metric:key_area_dazhongsi_sqm]
+- 定位：AI应用产业高地
    - 功能：产业应用、场景验证、商业转化
    - 空间要素：AI+医疗产业园、AI+教育创新基地、AI+商业体验区、产业测试验证平台
 
 **两翼支撑 / Two Wing Zones**：
 
-- **北翼支撑区**：北五环至清华园，以高校科研为基础，提供源头创新支撑
-- **南翼支撑区**：西直门至北京北站，以交通枢纽和城市服务为基础，提供成果转化支撑
+- **中关村科技服务翼**：北五环至清华园，以高校科研为基础，提供源头创新支撑
+- **小月河场景赋能翼**：西直门至北京北站，以交通枢纽和城市服务为基础，沿小月河植入AI生活场景，提供成果转化支撑
 
 **一轴串联 / One Axis**：
 
@@ -174,33 +174,38 @@ The Beijing-Zhangjiakou AI Innovation Corridor is a future-oriented urban innova
 
 根据官方约束和规划目标，推导土地利用布局：
 
-| 用地类型 | 面积（ha） | 比例（%） | 容积率 | 建筑面积（万m²） | 主要分布 |
-|---------|-----------|----------|--------|-----------------|---------|
-| 创新研发用地（M0） | 1,320 | 30.3 | 3.5 | 4,620 | 三大核心区 |
-| 商务办公用地（B2） | 530 | 12.2 | 3.0 | 1,590 | 大钟寺集群 |
-| 教育科研用地（A3） | 450 | 10.3 | 2.0 | 900 | 北翼高校区 |
-| 文化设施用地（A2） | 180 | 4.1 | 1.5 | 270 | 遗址公园沿线 |
-| 公园绿地（G） | 1,540 | 35.3 | - | - | 遗址公园主体 |
-| 居住用地（R） | 580 | 13.3 | 2.5 | 1,450 | 两翼社区 |
-| 道路与交通设施（S） | 300 | 6.9 | - | - | 全域覆盖 |
-| 其他用地 | 150 | 3.4 | - | - | 市政等 |
-| **合计** | **4,370** | **100** | **2.8** | **8,830** | - |
+以下用地表依据 [data:geometry/land_use.geojson]（2023自然资源部《国土空间调查、规划、用途管制用地用海分类指南》代码），在总体设计范围11.41 km²（1141.28 ha）内以水平条带划分，合计100%：
 
-*注：总计43.7 km²，与43.6 km²的误差来自边界计算的精度差异*
+| 用地代码 | 用地名称 | 面积（ha） | 比例（%） | 自北向南区位 |
+|---------|---------|-----------|----------|-------------|
+| 0802 | 科研用地（北部创新源·众智园） | 228.3 | 20.0 | 北部，众智园AI自主创新加速区主体 |
+| 16 | 留白用地（战略预留） | 57.1 | 5.0 | 北部下缘 |
+| 0701 | 城镇住宅用地 | 148.4 | 13.0 | 中北部 |
+| 0802 | 科研用地（AI原点社区） | 114.1 | 10.0 | 中部，北京AI原点社区主体 |
+| 1401 | 公园绿地（中部） | 148.4 | 13.0 | 中部绿带 |
+| 0803 | 文化用地 | 57.1 | 5.0 | 中部偏南 |
+| 0804 | 教育用地 | 57.1 | 5.0 | 中南部 |
+| 0805 | 体育用地 | 34.2 | 3.0 | 中南部 |
+| 05 | 商业服务业用地（中部） | 57.1 | 5.0 | 南部过渡 |
+| 1207 | 城镇村道路用地 | 112.2 | 9.8 | 南部带状 |
+| 05 | 商业服务业用地（南部·大钟寺产业带） | 137.0 | 12.0 | 南部，大钟寺AI产业聚集区主体 |
+| **合计** | **-** | **1141.3** | **100.0** | - |
+
+*注：表中面积按 EPSG:4548 投影对 [data:geometry/land_use.geojson] 逐条带复算，条带无缝覆盖总体设计范围（gap=0），与 [metric:site_area_sqm] 一致。*
 
 ### 3.3 开发强度控制 / Development Intensity Control
 
-**容积率分区**：
-- 核心创新区：3.0-4.0（高强度开发，集约利用土地）
-- 一般创新区：2.5-3.0（中等强度）
-- 居住社区：2.0-2.5（舒适宜居）
-- 文化遗址区：1.0-1.5（低强度，保护历史风貌）
+**容积率分区**（按 [data:geometry/buildings.geojson] 复算值校核 [metric:average_far]）：
+- 众智园AI自主创新加速区：复算容积率 1.89（研发中高强度）
+- 大钟寺AI产业聚集区：复算容积率 2.30（商办高强度）
+- 北京AI原点社区：复算容积率 0.63（街区尺度，低强度）
+- 全域平均：复算容积率 1.13，低于传统高强度开发区，保留大量开放空间
 
-**建筑高度控制**：
-- 核心区地标：80-120m（标志性地块）
-- 一般建筑：45-60m（15-20层）
-- 文化建筑：15-30m（保护历史尺度）
-- 居住建筑：30-45m（10-15层）
+**建筑高度控制**（与 [data:geometry/buildings.geojson] height_m 字段一致）：
+- 众智园AI自主创新加速区：45-95m（地标研发建筑）
+- 大钟寺AI产业聚集区：35-80m（商办建筑）
+- 北京AI原点社区：18-45m（保留街区尺度）
+- 铁路遗产保护线两侧100m内：≤24m（维护历史尺度）
 
 ---
 
@@ -211,7 +216,7 @@ The Beijing-Zhangjiakou AI Innovation Corridor is a future-oriented urban innova
 
 ### 产业现状与发展趋势 [source:S001] [metric:site_area_sqm]
 
-统筹研究范围覆盖43.6平方公里 [metric:site_area_sqm]，横跨海淀区核心创新走廊。区域内现有中关村科技园区、清华科技园、北京大学科技园等国家级创新载体，集聚AI相关企业超过1200家，年产值超过800亿元。基于 [data:geometry/land_use.geojson] 的用地分析，现状产业用地占比约28%，主要集中在区域中段和中关村片区。
+统筹研究范围覆盖43.6平方公里 [metric:site_area_sqm]，横跨海淀区核心创新走廊。区域内现有中关村科技园区、清华科技园、北京大学科技园等国家级创新载体（名单见来源清单 S006）。企业数量与产值等产业统计口径需以官方年度统计公报为准，本方案不作未经核验的具体数值断言，仅在情景假设层面讨论产业集聚趋势（见 assumptions.json A002）。基于 [data:geometry/land_use.geojson] 的用地分析，现状产业用地占比约28%，主要集中在区域中段和中关村片区。
 
 ### 未来城市发展策略 [standard:STD-BEIJING-MP] [standard:MOHURD-URBAN-DESIGN-MEASURES]
 
@@ -219,13 +224,13 @@ The Beijing-Zhangjiakou AI Innovation Corridor is a future-oriented urban innova
 
 ### 产业空间布局优化 [data:geometry/key_areas.geojson] [data:geometry/phasing.geojson]
 
-基于 [data:geometry/key_areas.geojson] 的三核空间分析，产业布局形成"三核引领、两翼拓展"的空间格局。三核即中关村AI加速核心区（8.5平方公里 [metric:key_area_zhongguancun_sqm]）、北京AI源头社区（6.2平方公里 [metric:key_area_ai_origin_sqm]）、大钟寺AI产业集群（5.8平方公里 [metric:key_area_dazhongsi_sqm]）。两翼向南延伸至西直门枢纽商圈，向北对接清华园创新节点。分期实施策略详见 [data:geometry/phasing.geojson]，一期15平方公里 [metric:phase_1_area_sqm] 重点建设AI创新载体，二期16平方公里 [metric:phase_2_area_sqm] 完善配套体系，三期12.6平方公里 [metric:phase_3_area_sqm] 提升城市品质。
+基于 [data:geometry/key_areas.geojson] 的三核空间分析，产业布局形成"三核引领、两翼拓展"的空间格局。三核即众智园AI自主创新加速区（几何复算约1.93 km² [metric:key_area_zhongzhiyuan_sqm]）、北京AI原点社区（约1.04 km² [metric:key_area_ai_origin_sqm]）、大钟寺AI产业聚集区（约0.72 km² [metric:key_area_dazhongsi_sqm]）——三处范围均为依据公告面积约数形成的临时粗略范围（provisional），待组织方发布正式边界后重算。两翼为中关村科技服务翼（向北对接清华园创新节点）与小月河场景赋能翼（向南延伸至西直门枢纽商圈）。分期实施策略详见 [data:geometry/phasing.geojson]，一期约3.42 km² [metric:phase_1_area_sqm] 重点建设AI创新载体，二期约4.57 km² [metric:phase_2_area_sqm] 完善配套体系，三期约3.42 km² [metric:phase_3_area_sqm] 提升城市品质。
 
 ## 总体设计范围城市更新与控规深度城市设计 / Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
 
 ### 控规深度指标体系 [standard:MOHURD-CONTROL-DETAILED-PLANNING] [metric:average_far] [metric:building_density]
 
-总体设计范围严格执行控规深度城市设计要求 [standard:MOHURD-CONTROL-DETAILED-PLANNING]。核心控制指标包括：平均容积率控制在2.8（详见 [metric:average_far]），建筑密度控制在35%（[metric:building_density]），绿地率不低于35.3%（[metric:green_ratio]）。用地分类参照2023自然资源部标准 [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]，在 [data:geometry/land_use.geojson] 中以标准化代码标注每一地块用途。
+总体设计范围参照控规深度城市设计方法组织指标体系 [standard:MOHURD-CONTROL-DETAILED-PLANNING]（本方案为概念性城市设计建议，非法定控规成果）。核心指标均按 EPSG:4548 投影对几何数据复算：平均容积率 1.13（详见 [metric:average_far]），建筑密度 8.7%（[metric:building_density]），绿地率 44.4%（[metric:green_ratio]），公共空间配建率 8.2%（[metric:public_space_ratio]）。用地分类参照2023自然资源部标准 [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]，在 [data:geometry/land_use.geojson] 中以标准化代码标注每一地块用途。
 
 ### 城市更新策略 [depth:existing_conditions_diagnosis] [depth:retain_renovate_demolish]
 
@@ -233,22 +238,22 @@ The Beijing-Zhangjiakou AI Innovation Corridor is a future-oriented urban innova
 
 ### 空间结构与天际线管控 [standard:MOHURD-URBAN-DESIGN-MEASURES] [depth:height_massing_character]
 
-遵循城市设计管理办法 [standard:MOHURD-URBAN-DESIGN-MEASURES]，构建"三核两翼"空间结构。天际线管控分三级：中关村核心区高度控制在80-120米，重点区域控制在60-80米，一般区域控制在45米以下 [depth:height_massing_character]。建筑风貌延续京张铁路工业文化特色，在重点区域鼓励采用智能建造技术和AI生成设计方案。
+遵循城市设计管理办法 [standard:MOHURD-URBAN-DESIGN-MEASURES]，构建"三核两翼"空间结构（三核：众智园AI自主创新加速区、北京AI原点社区、大钟寺AI产业聚集区；两翼：中关村科技服务翼、小月河场景赋能翼）。天际线管控分三级：众智园区高度控制在45-95米，大钟寺区控制在35-80米，AI原点社区控制在18-45米，铁路遗产保护线两侧100米内控制在24米以下 [depth:height_massing_character]。建筑风貌延续京张铁路工业文化特色，在重点区域鼓励采用智能建造技术和AI生成设计方案。
 
 ### 用地细分与强度控制 [depth:land_use_layout] [depth:development_intensity_controls]
 
-用地细分至最小管理单元 [depth:land_use_layout]，共划分为12类237个地块。开发强度分区控制 [depth:development_intensity_controls]：高密度区容积率3.5-4.5，中密度区容积率2.0-3.5，低密度区容积率1.0-2.0。公共空间配建率不低于8%（[metric:public_space_ratio]），道路用地覆盖率约8.2%（）。
+用地按2023自然资源部标准代码划分 [depth:land_use_layout]，共11类条带分区（见 [data:geometry/land_use.geojson]）。开发强度分区控制 [depth:development_intensity_controls]：大钟寺产业带复算容积率约2.30，众智园约1.89，AI原点社区约0.63，全域平均1.13。公共空间配建率8.2%（[metric:public_space_ratio]），道路用地（1207）占比约9.8%。
 
 ## 重点区域详细设计 / Detailed Design of Key Areas
 
-### 4.1 中关村AI加速核心区 / Zhongguancun AI Acceleration Core Zone
+### 4.1 众智园AI自主创新加速区 / Zhongzhiyuan AI Self-Innovation Acceleration Area
 
 **定位陈述 / Positioning Statement**：
-中关村AI加速核心区是全球AI硬科技创新的策源地，依托清华、北大等顶尖高校和国家实验室，聚焦大模型、芯片、算法等硬核技术突破，打造从基础研究到产业转化的完整创新链。
+众智园AI自主创新加速区（原正文称"中关村AI加速核心区"，现按任务书与官方边界文件统一命名为"众智园AI自主创新加速区"）是AI硬科技创新的策源地，依托清华、北大等顶尖高校和国家实验室，聚焦大模型、芯片、算法等硬核技术突破，打造从基础研究到产业转化的完整创新链。
 
 **功能布局 / Functional Layout**：
 
-1. **大科学装置集群**（面积：1.2 km²）
+1. **大科学装置集群**（面积：约0.4 km²）
    - 智算中心：国家级AI算力平台，算力≥1000 PFLOPS
    - 数据中心：政务数据、科研数据、产业数据融合平台
    - 安全靶场：AI安全攻防演练与测试平台
@@ -279,16 +284,16 @@ The Beijing-Zhangjiakou AI Innovation Corridor is a future-oriented urban innova
 
 | 指标 | 数值 |
 |-----|------|
-| 总用地面积 | 8.5 km² |
-| 建筑总面积 | 2,975 万m² |
-| 平均容积率 | 3.5 |
-| 就业人口容量 | 6-8 万人 |
+| 总用地面积（几何复算） | 1.93 km² |
+| 建筑总面积（复算） | 364 万m² |
+| 平均容积率（复算） | 1.89 |
+| 就业人口容量（情景测算） | 3-4 万人 |
 | 高新技术企业占比 | ≥70% |
 
-### 4.2 北京AI源头社区 / Beijing AI Origin Community
+### 4.2 北京AI原点社区 / Beijing AI Origin Community
 
 **定位陈述 / Positioning Statement**：
-北京AI源头社区是全球开源开发者的精神家园，以开放、共享、协作为核心理念，构建开发者生态、开源社区和人才培养体系，让每一个代码贡献者都能在这里找到归属感和荣誉感。
+北京AI原点社区是全球开源开发者的精神家园，以开放、共享、协作为核心理念，构建开发者生态、开源社区和人才培养体系，让每一个代码贡献者都能在这里找到归属感和荣誉感。
 
 **功能布局 / Functional Layout**：
 
@@ -329,20 +334,20 @@ The Beijing-Zhangjiakou AI Innovation Corridor is a future-oriented urban innova
 
 | 指标 | 数值 |
 |-----|------|
-| 总用地面积 | 6.2 km² |
-| 开源项目展示长度 | 3.5 km |
+| 总用地面积（几何复算） | 1.04 km² |
+| 开源项目展示长度（沿遗址公园） | 3.5 km |
 | 年度接待开发者 | ≥10 万人次 |
 | 培训人才容量 | ≥5000 人/年 |
 | 开源贡献记录 | ≥1000 项/年 |
 
-### 4.3 大钟寺AI产业集群 / Dazhongsi AI Industry Cluster
+### 4.3 大钟寺AI产业聚集区 / Dazhongsi AI Industry Cluster
 
 **定位陈述 / Positioning Statement**：
-大钟寺AI产业集群是AI技术走向产业应用的高地，聚焦AI+医疗、AI+教育、AI+商业等重点领域，构建产业应用、场景验证和商业转化的完整链条，让AI技术真正服务于城市发展和民生改善。
+大钟寺AI产业聚集区是AI技术走向产业应用的高地，聚焦AI+医疗、AI+教育、AI+商业等重点领域，构建产业应用、场景验证和商业转化的完整链条，让AI技术真正服务于城市发展和民生改善。
 
 **功能布局 / Functional Layout**：
 
-1. **AI+医疗产业园**（面积：1.5 km²）
+1. **AI+医疗产业园**（面积：约0.15 km²）
    - 智能诊疗中心：AI辅助诊断、远程医疗、个性化治疗
    - 医疗大数据中心：电子病历、医疗影像、基因数据的融合分析
    - AI药物研发平台：药物筛选、临床试验模拟、精准用药
@@ -356,7 +361,7 @@ The Beijing-Zhangjiakou AI Innovation Corridor is a future-oriented urban innova
 
 3. **AI+商业体验区**（面积：1.0 km²）
    - 智能零售街区：无人商店、智能导购、精准营销
-   - 消费大数据中心：消费行为分析、供应链优化
+   - 消费大数据中心：匿名聚合消费洞察（数据最小化，不涉及个体画像）、供应链优化
    - AI客服体验中心：智能客服系统的展示与应用
    - 跨境电商平台：AI驱动的跨境电商服务
 
@@ -377,11 +382,13 @@ The Beijing-Zhangjiakou AI Innovation Corridor is a future-oriented urban innova
 
 | 指标 | 数值 |
 |-----|------|
-| 总用地面积 | 5.8 km² |
+| 总用地面积（几何复算） | 0.72 km² |
 | 产业应用场景 | ≥20 个 |
 | 产业测试平台 | ≥5 个 |
-| AI企业聚集 | ≥200 家 |
-| 年产值目标 | ≥200 亿元 |
+| 建筑总面积（复算） | 166 万m² |
+| 平均容积率（复算） | 2.30 |
+
+*注：企业数量与产值目标属于情景假设（见 assumptions.json），不构成招商或投资承诺。*
 
 ---
 
@@ -408,17 +415,17 @@ The Beijing-Zhangjiakou AI Innovation Corridor is a future-oriented urban innova
 
 ### 用地布局 / Land Use Layout
 
-本方案基于2023自然资源部用地分类标准，对43.6平方公里范围进行用地布局优化。居住用地（07）占28.5%，公共管理与公共服务用地（08）占15.2%，商业服务业用地（05）占12.8%，绿地与开敞空间用地（14）占35.3%，道路用地（1207）占8.2%。
+本方案基于2023自然资源部用地分类标准，对总体设计范围11.41平方公里 [metric:site_area_sqm] 进行用地布局优化（统筹研究范围43.6平方公里仅作战略研究，不做用地平衡）。按 [data:geometry/land_use.geojson] 复算：科研用地（0802）占30.0%，商业服务业用地（05）占17.0%，公园绿地（1401）占13.0%，城镇住宅用地（0701）占13.0%，文化（0803）5.0%、教育（0804）5.0%、体育（0805）3.0%，道路用地（1207）占9.8%，留白用地（16）占5.0%，合计100%。
 
 ![土地利用结构图](assets/figures/land-use-structure.png)
 
 ### 建筑规模控制 / Building Scale Control
 
-核心区平均容积率控制在2.0-3.5之间，建筑密度不超过40%，高度控制分区管理：中关村AI加速区限高80米，北京AI源头社区限高45米保留街区尺度，大钟寺AI产业集群限高60米。
+全域复算平均容积率1.13（[metric:average_far]），建筑密度8.7%（[metric:building_density]）。高度分区管理：众智园AI自主创新加速区45-95米，北京AI原点社区18-45米保留街区尺度，大钟寺AI产业聚集区35-80米，铁路遗产保护线两侧100米内≤24米。
 
 ### 拆改留策略 / Retain-Renovate-Demolish Strategy
 
-保留历史建筑及文化遗存（清华园车站遗址等），改造更新老旧工业厂房为AI创新空间，拆除违法建设及低效利用建筑。总体保留率45%，改造率35%，拆除率20%。
+保留历史建筑及文化遗存（清华园车站遗址等），改造更新老旧工业厂房为AI创新空间，拆除违法建设及低效利用建筑。总体拆改留比例与总体设计范围更新策略一致：保留约55%（历史建筑及品质建筑）、改造约30%（老旧低效空间）、拆除约15%（危房及违法建设），详见 [depth:retain_renovate_demolish]。
 
 
 
@@ -540,7 +547,7 @@ The Beijing-Zhangjiakou AI Innovation Corridor is a future-oriented urban innova
 - **位置**：大钟寺AI+商业体验区
 - **长度**：500m
 - **功能**：
-  - 无人商店：刷脸进店、自动结算、智能推荐
+  - 无人商店：手机扫码/APP自动结算、智能货架推荐（不使用生物识别，保留人工收银通道）
   - 智能导购：基于用户画像的个性化导购服务
   - 精准营销：实时分析消费行为，推送个性化优惠
 - **用户**：消费者、零售商、商业AI开发者
@@ -561,7 +568,7 @@ The Beijing-Zhangjiakou AI Innovation Corridor is a future-oriented urban innova
 **场景5：开源代码审查站 / Open Source Code Review Station**
 
 - **类型**：AI+研发
-- **位置**：北京AI源头社区
+- **位置**：北京AI原点社区
 - **面积**：0.5 ha
 - **功能**：
   - AI辅助代码审查：自动检测代码质量、安全漏洞、性能问题
@@ -609,7 +616,7 @@ The Beijing-Zhangjiakou AI Innovation Corridor is a future-oriented urban innova
 **场景9：数据标注工厂 / Data Labeling Factory**
 
 - **类型**：AI+生产
-- **位置**：大钟寺AI产业集群
+- **位置**：大钟寺AI产业聚集区
 - **面积**：1 ha
 - **功能**：
   - 数据标注：图像、语音、文本标注服务
@@ -668,11 +675,11 @@ The Beijing-Zhangjiakou AI Innovation Corridor is a future-oriented urban innova
 
 **平台3：智慧校园试点区**
 
-- **位置**：北京AI源头社区周边5所学校
+- **位置**：北京AI原点社区周边5所学校
 - **学校类型**：小学2所、初中2所、高中1所
 - **试点内容**：
   - 智能教学系统：AI辅助教学、个性化作业、智能测评
-  - 校园安全管理：人脸识别、行为分析、紧急报警
+  - 校园安全管理：电子门禁（卡片/非生物）、异常事件AI辅助预警、紧急报警（不做学生面部识别与行为画像，详见 visual/assets/privacy_review_matrix.json）
   - 学生健康管理：健康监测、营养分析、心理辅导
 - **验证指标**：
   - 学习效率提升≥30%
@@ -959,7 +966,7 @@ The Beijing-Zhangjiakou AI Innovation Corridor is a future-oriented urban innova
 - 未来愿景：通用人工智能、人机共生、智能社会
 
 空间节点：
-- 北京AI源头社区：开源开发者精神家园
+- 北京AI原点社区：开源开发者精神家园
 - 智能体贡献荣誉墙：AI创新里程碑
 - 开源成果展示节点：开源项目展示
 - AI应用场景：AI+医疗、AI+教育等场景体验
@@ -988,8 +995,8 @@ The Beijing-Zhangjiakou AI Innovation Corridor is a future-oriented urban innova
 
 重点任务：
 - 完成铁路遗址公园主体建设
-- 启动中关村AI加速核心区建设
-- 建成北京AI源头社区基础框架
+- 启动众智园AI自主创新加速区建设
+- 建成北京AI原点社区基础框架
 - 完善交通市政基础设施
 - 引入首批AI创新企业
 
@@ -1002,7 +1009,7 @@ The Beijing-Zhangjiakou AI Innovation Corridor is a future-oriented urban innova
 **二期（2030-2035）：产业导入与功能完善**
 
 重点任务：
-- 完成大钟寺AI产业集群建设
+- 完成大钟寺AI产业聚集区建设
 - 产业应用场景全面铺开
 - 开源社区生态成熟
 - 国际AI会议常态化举办
@@ -1135,13 +1142,13 @@ The Beijing-Zhangjiakou AI Innovation Corridor is a future-oriented urban innova
 
 | 指标名称 | 数值 | 单位 | 数据来源 |
 |---------|------|------|---------|
-| 总用地面积 | 43.6 | km² | site_boundary.geojson |
-| 建筑总面积 | 8,830 | 万m² | metrics.json |
-| 平均容积率 | 2.8 | - | metrics.json |
+| 总体设计范围面积 | 11.41 | km² | site_boundary.geojson |
+| 建筑总面积 | 1,289 | 万m² | metrics.json#total_gfa_sqm |
+| 平均容积率 | 1.13 | - | metrics.json |
 | 平均建筑密度 | 35 | % | metrics.json |
-| 绿地面积 | 1,540 | ha | green_space.geojson |
-| 绿地率 | 35.3 | % | metrics.json |
-| 道路面积 | 300 | ha | roads.geojson |
+| 绿地面积 | 506.9 | ha | green_space.geojson |
+| 绿地率 | 44.4 | % | metrics.json#green_ratio |
+| 道路面积 | 112.2 | ha | land_use.geojson(1207) |
 | 道路率 | 6.9 | % | metrics.json |
 
 **产业指标 / Industry Metrics**：
@@ -1175,9 +1182,8 @@ The Beijing-Zhangjiakou AI Innovation Corridor is a future-oriented urban innova
 
 | 要求项 | 规划值 | 合规性 | 证据链接 |
 |-------|--------|--------|---------|
-| 绿地率≥35% | 35.3% | PASS | metrics.json#/green_rate |
-| 容积率控制（核心区2.5-4.0） | 核心区平均3.5 | PASS | metrics.json#/far_core_zone |
-| 容积率控制（一般区1.5-2.5） | 一般区平均2.2 | PASS | metrics.json#/far_general_zone |
+| 绿地率≥35%（情景目标） | 44.4%（复算） | 复算达标，待专业复核 | metrics.json#green_ratio |
+| 平均容积率（设计情景） | 1.13（复算） | 与几何一致，待专业复核 | metrics.json#average_far |
 | 建筑密度≤40% | 平均35% | PASS | metrics.json#/building_density |
 | 教育设施500m覆盖 | 100%覆盖 | PASS | metrics.json#/education_coverage |
 | 医疗设施1000m覆盖 | 100%覆盖 | PASS | metrics.json#/medical_coverage |
@@ -1258,10 +1264,11 @@ Agent名称：WorkBuddy AI Agent
 
 本方案中的所有数据指标均为规划目标或预测值，实际实施可能根据技术发展、市场变化、政策调整等因素进行调整。
 
-**官方边界声明**：
-- 官方几何边界以site_boundary.geojson为准
-- 官方关键区域以key_areas.geojson为准
-- 本方案使用的几何数据均来源于open-city-ai/haidian仓库公开数据
+**边界与数据性质声明**：
+- 本方案使用的总体设计范围与三处重点区边界，均来自 open-city-ai/haidian 仓库的**临时粗略范围**（provisional boundary，DATA-SRC-PROVISIONAL-BOUNDARIES-20260605），注册表明确其仅可用于临时自检，不得作为法定红线、审批依据或精确面积依据；
+- 组织方正式边界发布后，所有面积、覆盖率和空间位置指标需统一重算；
+- key_areas.geojson 中 official_boundary=false、geometry_role=provisional_constraint 即为该性质的机读标注；
+- 本方案不声称拥有任何官方边界的最终解释权。
 
 ---
 

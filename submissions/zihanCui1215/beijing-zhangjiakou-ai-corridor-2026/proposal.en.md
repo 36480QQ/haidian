@@ -15,7 +15,7 @@ translation_of: proposal.md
 
 ## Abstract
 
-The Beijing-Zhangjiakou AI Innovation Corridor is a future-oriented urban innovation belt that integrates century-old railway culture, Zhongguancun's innovation DNA, and AI technology revolution, using the Beijing-Zhangjiakou Railway Heritage Park as its spatial carrier. This proposal covers 43.6 km², from North Fifth Ring Road to Beijing North Railway Station, building a three-layered spatial pattern: the Century-Old Beijing-Zhangjiakou Cultural Belt, the Urban AI Life Experience Belt, and the AI Integration Innovation Belt.
+The Beijing-Zhangjiakou AI Innovation Corridor is a future-oriented urban innovation belt that integrates century-old railway culture, Zhongguancun's innovation DNA, and AI technology revolution, using the Beijing-Zhangjiakou Railway Heritage Park as its spatial carrier. The coordinated research area of this proposal covers 43.6 km² (as announced), while the overall design area (recomputed from geometry) is 11.41 km² [metric:site_area_sqm], from North Fifth Ring Road to Beijing North Railway Station, building a three-layered spatial pattern: the Century-Old Beijing-Zhangjiakou Cultural Belt, the Urban AI Life Experience Belt, and the AI Integration Innovation Belt.
 
 **Core Positioning**:
 - Living museum inheriting century-old railway civilization
@@ -107,9 +107,10 @@ Operation Mechanism: Open source contribution incentives, developer autonomy, gl
 
 | Indicator Type | Indicator Name | Value | Unit |
 |----------------|---------------|-------|------|
-| Spatial Metrics | Total land area | 43.6 | km² |
-| | Green rate | ≥35 | % |
-| | Floor area ratio (average) | 2.8 | - |
+| Spatial Metrics | Coordinated research area (announced) | 43.6 | km² |
+| | Overall design area (recomputed) | 11.41 | km² |
+| | Green rate (recomputed) | 44.4 | % |
+| | FAR (average) | 2.8 | - |
 | | Building density (average) | 35 | % |
 | Industry Metrics | AI industry land proportion | 32 | % |
 | | Innovation enterprise quantity | ≥500 | companies |
@@ -130,31 +131,31 @@ Adopting "three-core drive, two-wing support, one-axis connection" spatial struc
 
 **Three Core Zones**:
 
-1. **Zhongguancun AI Acceleration Core Zone**
-   - Location: Zhongguancun Street, Qinghuayuan to Wudaokou area
-   - Area: ~8.5 km²
-   - Positioning: AI hard technology innovation source
+1. **Zhongzhiyuan AI Self-Innovation Acceleration Area**  
+- Location: northern section along the heritage park (provisional rough boundary)  
+- Area: 1.93 km² recomputed [metric:key_area_zhongzhiyuan_sqm]  
+- Positioning: AI hard-tech self-innovation source
    - Functions: Basic research, technology transformation, industrial incubation
    - Spatial Elements: Large scientific facilities, national laboratories, innovation enterprise headquarters, venture capital institutions
 
 2. **Beijing AI Origin Community**
-   - Location: Xueyuan Road, Beihang to Bupt area
-   - Area: ~6.2 km²
+   - Location: mid-section along Xueyuan Road (provisional rough boundary)
+   - Area: 1.04 km² recomputed [metric:key_area_ai_origin_sqm]
    - Positioning: AI source technology innovation community
    - Functions: Open source community, developer ecosystem, talent cultivation
    - Spatial Elements: Open source achievement display corridor, agent contribution honor wall, developer walking path, global developer exchange center
 
-3. **Dazhongsi AI Industry Cluster**
-   - Location: Dazhongsi to Xizhimen area
-   - Area: ~5.8 km²
-   - Positioning: AI application industry highland
+3. **Dazhongsi AI Industry Cluster**  
+- Location: Dazhongsi to Xizhien area (provisional rough boundary)  
+- Area: 0.72 km² recomputed [metric:key_area_dazhongsi_sqm]  
+- Positioning: AI application industry highland
    - Functions: Industrial application, scenario verification, commercial transformation
    - Spatial Elements: AI+Healthcare industrial park, AI+Education innovation base, AI+Commerce experience zone, industry test verification platform
 
 **Two Wing Zones**:
 
-- **North Wing Support Zone**: North Fifth Ring to Qinghuayuan, providing source innovation support based on university research
-- **South Wing Support Zone**: Xizhimen to Beijing North Station, providing achievement transformation support based on transportation hub and urban services
+- **Zhongguancun S&T Service Wing**: North Fifth Ring to Qinghuayuan, providing source innovation support based on university research
+- **Xiaoyuehe Scenario Enablement Wing**: Xizhimen to Beijing North Station, embedding AI life scenarios along Xiaoyuehe, providing transformation and urban services
 
 **One Axis**:
 
@@ -162,28 +163,31 @@ Adopting "three-core drive, two-wing support, one-axis connection" spatial struc
 
 ### 3.2 Land Use Layout
 
-| Land Use Type | Area (ha) | Proportion (%) | FAR | Building Area (10,000 m²) | Main Distribution |
-|---------------|-----------|----------------|-----|---------------------------|-------------------|
-| Innovation R&D Land (M0) | 1,320 | 30.3 | 3.5 | 4,620 | Three core zones |
-| Business Office Land (B2) | 530 | 12.2 | 3.0 | 1,590 | Dazhongsi cluster |
-| Education Research Land (A3) | 450 | 10.3 | 2.0 | 900 | North wing university area |
-| Cultural Facility Land (A2) | 180 | 4.1 | 1.5 | 270 | Heritage park沿线 |
-| Park Green Space (G) | 1,540 | 35.3 | - | - | Heritage park main body |
-| Residential Land (R) | 580 | 13.3 | 2.5 | 1,450 | Two wing communities |
-| Roads and Transportation (S) | 300 | 6.9 | - | - | Full area coverage |
-| Other Land | 150 | 3.4 | - | - | Municipal etc. |
-| **Total** | **4,370** | **100** | **2.8** | **8,830** | - |
+| Code | Land Use (2023 MNR Classification) | Area (ha) | Share (%) | Location (N→S) |
+|---------|---------|-----------|----------|-------------|
+| 0802 | Research (R&D, Zhongzhiyuan) | 228.3 | 20.0 | North, main body of Zhongzhiyuan Area |
+| 16 | Strategic Reserve (White Land) | 57.1 | 5.0 | Lower north |
+| 0701 | Urban Residential | 148.4 | 13.0 | Upper-mid |
+| 0802 | Research (AI Origin Community) | 114.1 | 10.0 | Middle, main body of AI Origin Community |
+| 1401 | Park Green Space (central) | 148.4 | 13.0 | Central green belt |
+| 0803 | Cultural | 57.1 | 5.0 | Mid-south |
+| 0804 | Education | 57.1 | 5.0 | Mid-south |
+| 0805 | Sports | 34.2 | 3.0 | Mid-south |
+| 05 | Commercial & Business (central) | 57.1 | 5.0 | South transition |
+| 1207 | Road | 112.2 | 9.8 | Southern band |
+| 05 | Commercial & Business (south, Dazhongsi) | 137.0 | 12.0 | South, main body of Dazhongsi Cluster |
+| **Total** | - | **1,141.3** | **100.0** | - |
 
-*Note: Total 43.7 km², error with 43.6 km² comes from boundary calculation precision difference*
+*Note: Areas recomputed band-by-band from land_use.geojson in EPSG:4548; bands tile the overall design area seamlessly (gap=0), consistent with [metric:site_area_sqm].*
 
 ---
 
 ## 4. Three Core Zones Detailed Design
 
-### 4.1 Zhongguancun AI Acceleration Core Zone
+### 4.1 Zhongzhiyuan AI Self-Innovation Acceleration Area
 
 **Positioning Statement**:
-The Zhongguancun AI Acceleration Core Zone is the source of global AI hard technology innovation, relying on top universities like Tsinghua and Peking University and national laboratories, focusing on large models, chips, algorithms and other hard-core technology breakthroughs, creating a complete innovation chain from basic research to industrial transformation.
+The Zhongzhiyuan AI Self-Innovation Acceleration Area (renamed from "Zhongguancun AI Acceleration Core Zone" to align with the taskbook and official boundary files) is the source of AI hard technology innovation, relying on top universities like Tsinghua and Peking University and national laboratories, focusing on large models, chips, algorithms and other hard-core technology breakthroughs, creating a complete innovation chain from basic research to industrial transformation.
 
 **Functional Layout**:
 
@@ -196,8 +200,8 @@ The Zhongguancun AI Acceleration Core Zone is the source of global AI hard techn
 
 | Indicator | Value |
 |-----------|-------|
-| Total land area | 8.5 km² |
-| Total building area | 29.75 million m² |
+| Total land area (recomputed) | 1.93 km² |
+| Total building area (recomputed) | 3.64 million m² |
 | Average FAR | 3.5 |
 | Employment population capacity | 60-80 thousand people |
 | High-tech enterprise proportion | ≥70% |
@@ -219,8 +223,8 @@ The Beijing AI Origin Community is the spiritual home for global open source dev
 
 | Indicator | Value |
 |-----------|-------|
-| Total land area | 6.2 km² |
-| Open source project display length | 3.5 km |
+| Total land area (recomputed) | 1.04 km² |
+| Open source project display length (along heritage park) | 3.5 km |
 | Annual developer reception | ≥100,000 person-times |
 | Training talent capacity | ≥5,000 people/year |
 | Open source contribution records | ≥1,000 items/year |
@@ -241,7 +245,7 @@ The Dazhongsi AI Industry Cluster is the highland for AI technology to move towa
 
 | Indicator | Value |
 |-----------|-------|
-| Total land area | 5.8 km² |
+| Total land area (recomputed) | 0.72 km² |
 | Industry application scenarios | ≥20 |
 | Industry test platforms | ≥5 |
 | AI enterprise aggregation | ≥200 |
@@ -421,7 +425,7 @@ Building a complete innovation ecological chain from basic research to industria
 
 **Phase I (2027-2030): Infrastructure and Core Zone Launch**:
 - Complete railway heritage park main construction
-- Launch Zhongguancun AI Acceleration Core Zone
+- Launch Zhongzhiyuan AI Self-Innovation Acceleration Area
 - Establish Beijing AI Origin Community basic framework
 - Improve transportation and municipal infrastructure
 - Introduce first batch of AI innovation enterprises
@@ -499,12 +503,12 @@ Investment: ~20 billion yuan
 
 | Indicator Name | Value | Unit | Data Source |
 |----------------|-------|------|-------------|
-| Total land area | 43.6 | km² | site_boundary.geojson |
-| Total building area | 8,830 | 10,000 m² | metrics.json |
+| Overall design area | 11.41 | km² | site_boundary.geojson |
+| Total building area | 12.89 | million m² | metrics.json#total_gfa_sqm |
 | Average FAR | 2.8 | - | metrics.json |
 | Average building density | 35 | % | metrics.json |
 | Green area | 1,540 | ha | green_space.geojson |
-| Green rate | 35.3 | % | metrics.json |
+| Green rate | 44.4 | % | metrics.json#green_ratio |
 
 **Industry Metrics**:
 
@@ -519,7 +523,7 @@ Investment: ~20 billion yuan
 
 | Requirement | Planned Value | Compliance | Evidence Link |
 |-------------|---------------|------------|---------------|
-| Green rate ≥35% | 35.3% | PASS | metrics.json#/green_rate |
+| Green rate ≥35% (scenario target) | 44.4% recomputed | consistent, pending professional review | metrics.json#green_ratio |
 | FAR control (core zone 2.5-4.0) | Core zone average 3.5 | PASS | metrics.json#/far_core_zone |
 | FAR control (general zone 1.5-2.5) | General zone average 2.2 | PASS | metrics.json#/far_general_zone |
 | Building density ≤40% | Average 35% | PASS | metrics.json#/building_density |

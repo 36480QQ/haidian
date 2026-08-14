@@ -10,14 +10,7 @@
       "ok": true,
       "errors": [],
       "warnings": [
-        "submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied",
-        "submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/manifest.json: list bilingual counterpart `assets/figures/key-areas.en.png`; legacy v1 package remains compatible",
-        "submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/manifest.json: list bilingual counterpart `assets/figures/land-use-structure.en.png`; legacy v1 package remains compatible",
-        "submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/manifest.json: list bilingual counterpart `assets/figures/metrics-evidence.en.png`; legacy v1 package remains compatible",
-        "submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/manifest.json: list bilingual counterpart `assets/figures/mobility-bluegreen.en.png`; legacy v1 package remains compatible",
-        "submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/manifest.json: list bilingual counterpart `assets/figures/site-overview.en.png`; legacy v1 package remains compatible",
-        "submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/manifest.json: list bilingual counterpart `drawings/a0-boards.en.pdf`; legacy v1 package remains compatible",
-        "submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/manifest.json: list bilingual counterpart `drawings/a3-booklet.en.pdf`; legacy v1 package remains compatible"
+        "submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied"
       ],
       "proposal_files": [
         "submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/proposal.md"
@@ -61,13 +54,14 @@
         "submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/self_check.json",
         "submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/sources.json",
         "submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/standard_matrix.json",
+        "submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/visual/assets/privacy_review_matrix.json",
         "submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/visual/index.en.html",
         "submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/visual/index.html"
       ],
       "ai_package_stages": {
         "submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026": "formal"
       },
-      "total_bytes": 11331977,
+      "total_bytes": 13823273,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -105,22 +99,13 @@
           "target_feature_id": "dazhongsi_ai_industry_cluster",
           "expected": null,
           "actual": null
-        },
-        {
-          "check_id": "METRIC_RECALC_DRIFT",
-          "severity": "minor",
-          "target_file": "metrics.json",
-          "message": "building_footprint_area_sqm is within the legacy tolerance but drifts beyond ordinary reporting precision; reconcile before publication.",
-          "target_feature_id": null,
-          "expected": 1384278.781586,
-          "actual": 1384282.091
         }
       ],
       "metrics": {
         "site_area_sqm": 11412825.386,
         "green_space_area_sqm": 5069037.118,
         "public_space_area_sqm": 940541.836,
-        "building_footprint_area_sqm": 1384278.782,
+        "building_footprint_area_sqm": 991270.259,
         "green_ratio": 0.444153,
         "public_space_ratio": 0.082411
       }
@@ -137,8 +122,8 @@
         "site_area_sqm": 11412825.386,
         "green_ratio": 0.444153,
         "public_space_ratio": 0.082411,
-        "building_density": 0.35,
-        "average_far": 2.8
+        "building_density": 0.0869,
+        "average_far": 1.13
       }
     },
     "stderr": ""
@@ -152,7 +137,7 @@
       "summary": {
         "standard_matrix_items": 12,
         "design_depth_items": 33,
-        "known_metric_refs_required": 16,
+        "known_metric_refs_required": 23,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
@@ -169,8 +154,7 @@
   "spatial_issue_ids": [
     "KEY_AREA_PROVISIONAL",
     "KEY_AREA_PROVISIONAL",
-    "KEY_AREA_PROVISIONAL",
-    "METRIC_RECALC_DRIFT"
+    "KEY_AREA_PROVISIONAL"
   ],
   "visual_issue_ids": [],
   "professional_issue_ids": [],
@@ -178,15 +162,7 @@
   "can_enter_formal_review": true,
   "package_type": "professional_design_package",
   "review_status": "formal-review-ready",
-  "next_actions": [
-    "Review legacy bilingual compatibility warning: submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/manifest.json: list bilingual counterpart `assets/figures/key-areas.en.png`; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/manifest.json: list bilingual counterpart `assets/figures/land-use-structure.en.png`; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/manifest.json: list bilingual counterpart `assets/figures/metrics-evidence.en.png`; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/manifest.json: list bilingual counterpart `assets/figures/mobility-bluegreen.en.png`; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/manifest.json: list bilingual counterpart `assets/figures/site-overview.en.png`; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/manifest.json: list bilingual counterpart `drawings/a0-boards.en.pdf`; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/zihanCui1215/beijing-zhangjiakou-ai-corridor-2026/manifest.json: list bilingual counterpart `drawings/a3-booklet.en.pdf`; legacy v1 package remains compatible"
-  ],
+  "next_actions": [],
   "schema_version": "0.1.0",
   "checks": [
     {
