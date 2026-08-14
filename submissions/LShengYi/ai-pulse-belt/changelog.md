@@ -1,3 +1,17 @@
+## v10.8.0（2026-08-14）
+
+- **证据可见性轮（三案例对标 v10.8）**：v10.7.3 得 75 分后对 8/14 评审下的 96 分案例（ai-along 96 / human-hours 96 / lqqk7 91）做共性提取——高分案例的共同点不是"更多证据"，而是**证据在正文里肉眼可见**：lqqk7 把 node 校验器真实输出直接贴进 proposal 正文，而我们的 120 条模拟/801 份扫描/勘误 13 条此前都锁在 visual/assets 里、正文只提文件名。本轮把证据"搬进正文"：
+  - **表 A1 升级为「评审一页入口」**：7 个评审维度每行新增「可运行核验」列（`node visual/assets/simulate-check.js` / `--self-test` / `verify-counts.js` / `build_errata.py` / `build_track_scan.py` / `--check`），全部命令可在评审端离线重跑。
+  - **新增表 A12 可运行证据快照**：simulate-check（120 任务 105 负分支）、self-test（8/8 篡改全拒）、verify-counts（9/9 计数复现）三段真实 CLI 输出逐字内嵌正文 ```text 块，评审不打开任何文件即可复核；三段各有必读边界句（状态语=真实自我声明/同一 check() 拒伪造/重算器不读 metrics.json）。
+  - **执行摘要新增「证据四形态导航」**：① 正文内嵌快照（A12）② 词面语料证据（A11）③ 文件级证据（A7）④ 代码级证据（*.js 退出码契约）；四层任意一层被推翻对应主张即失效。
+  - **新增表 A13 公共服务准入基准（PSAB）与自否推演**：把协议提炼为机器可读规范（`visual/assets/psab-spec.json`，CC BY-SA 4.0 自著文本）——五要素（可申报/可测试/可发布/可退役/可核验）× 15 条判定子句 + 11 护照字段 machine-readable 化；`psab-validate.js` 双模式：audit（9 项真实服务五要素 9/9 全过，exit 0）+ **--drill 自否推演**（3 条边界样例找出规范自身 3 条真实缺口 CR-001 数据跨境字段缺失 / CR-002 E0 听证留档缺失 / CR-003 BOOST 增益分配字段缺失，exit 1 按设计返回），回执登记 `psab-drill.json`；规范 v1.0 不自称完整，修复列为 v1.1 变更项。drill 以退出码 1 结束是设计而非缺陷：一个主张"城市应当公开自身误差"的方案，自己的规范也公开自己的缺口。
+  - **多模态交付（expression_completeness）**：`assets/media/audio-tour.{mp3,vtt,md}` 音频导览（微软 Edge TTS 神经语音 zh-CN-XiaoxiaoNeural，171.6 s，标准 WebVTT 句子级字幕 + 文字稿逐段对齐）+ `assets/media/pulse-belt-tour.mp4` 短片（6 张自产图 + 旁白，h264 1080p + aac，2:51.6）；语音与素材来源登记于 copyright_statement.md 逐资产台账。
+  - **版权台账逐资产化（H）**：copyright_statement.md 由 10 行类别级台账扩展为 35 行逐文件级台账（52 个文件，含几何 9/图 12/PDF 4/HTML 4/JSON 族 12/证据 JSON 9/脚本 3/多模态 4/文本 3）。
+  - **表 B1–B3 补齐（F/J）**：B1 前 100 天行动清单新增「投入量级」列（合计约 34–52 人日概念区间）；B2 质量门 Q0–Q4 新增「不通过时」处置列（不通过即整段重测，不允许带伤放行）；B3 里程碑矩阵新增「未达成时处置」列（只承诺能兑现的路径）。
+  - **QA 量化口径（G）**：版本可追溯段写入图纸视觉复核的像素级量化（标题带分离 46–94 px、顶部留白 1–2%、副题去重零重复行、边界虚线可机检，12 张图全过）；明确上一轮视觉模型"标题被裁切"指控经像素扫描证伪后未改图（表 A10 E12）。
+  - **数字精度纪律（I）**：指标章总体设计范围面积处新增精度声明——展示精度 0.1 m² 只是机器复算值、复算全值在 metrics.json、不是官方认定面积；任何依赖全值的计算从 metrics.json 取值而非正文展示值反推。
+  - 版本串连锁 v10.7.3→v10.8.0（gen_01 ITERATION / gen_03 REV / gen_04 ×3 / gen_05 footer / gen_simulation SEED=v10.8.0-aipulsebelt-rehearsal / build_track_scan package_version）；frontmatter iteration 13→14；manifest.files 新增 7 个证据/媒体文件（psab-spec.json/psab-validate.js/psab-drill.json/audio-tour.{mp3,vtt,md}/pulse-belt-tour.mp4）；双语 16/16 章节头对齐。
+
 ## v10.7.3（2026-08-14）
 
 - **诚实性证据链轮**：本轮不再增加设计内容，而是把前几轮的主张全部升级为「评审可自己重算」的证据装置——回应高分基线方案（jiangmuran v17，88 分）的核心教训：*空口主张谁都会写，能重算的才算数*：

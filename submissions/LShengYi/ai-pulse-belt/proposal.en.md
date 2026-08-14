@@ -4,7 +4,7 @@ author_github: "LShengYi"
 language: "en"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
-iteration: "13"
+iteration: "14"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "AI Pulse Belt: the engineering tradition of the centennial Jing-Zhang Railway 'iron pulse' — inspectable, verifiable, retired — is translated into a public protocol for the AI-era 'digital pulse belt': before any AI service enters public space it must be declarable, testable, releasable, and retirable (P1-P4); an 11-field AI Pulse service passport gates admission and five operational evidence gates E0-E4 gate progress, overlaid with an 8-state machine (blackout drill and bequest audit not skippable), dual gateways G0-G7/C0-C7 and four-stage dividend contracts; an offline synthetic rehearsal of 15 services × 8 variants (120 checks) blocks all 105 failure branches with zero direct releases (all services currently at G0 no-go: not authorized, not field-run); the flat-line archive wall publicly exhibits every retired service as governance evidence. The three-level scope, the three zones & two wings, and 76 recomputable metrics (61 known) fully respond to announcement clauses 1.4/1.5."
@@ -21,6 +21,8 @@ Under the protocol sit two machine-readable rigid boundaries: an **8-state machi
 The **offline synthetic rehearsal** of 15 services × 8 variants concludes: **120/120 rule checks pass, with all 105 failure branches (missing responsible role / data exceeding the declared ceiling / same-task human route unavailable / cannot pause / revision not public / bequest dividend missing / post-exit service lapses) blocked and the 15 qualified samples receiving desktop rehearsal only; 0 services receive release** — no service may enter public space directly, and all services currently sit at **G0 no-go**: not authorized, not field-run. The rehearsal proves only that the rules close; it does not prove a service safe, effective, compliant, or approved (simulation.json is re-runnable offline, with per-task receipt hashes and the `node simulate-check.js` exit-code contract [metric:simulation_rerun_receipt_ratio]).
 
 When a model is retired and a vendor leaves, what do citizens still get? Rehearsal scale and interception results: [metric:simulation_task_count] [metric:synthetic_negative_branch_count]. The **flat-line archive wall** publicly exhibits every retired service as governance evidence, turning retirement from a technical end into a public resource. The space proves its progress not by an ever-beating pulse but by leaving, at every stop, an auditable record, a restorable site, and a life that continues [metric:site_area_sqm] [metric:key_area_count]. The three-level scope (43.6 km² / 11.4 km² / 368.4 ha) and the "one belt, three cores, two wings, multiple points" structure respond to announcement clauses 1.4/1.5, with area deviations and data gaps disclosed item by item (Table A6). All content is conceptual recommendation; once official boundaries, control conditions, and surveys are released, everything is recomputed under the P4 procedure.
+
+**Evidence-four-forms navigation**: this package's evidence is layered in four forms, and a reviewer can start with the cheapest one — ① **embedded snapshots** (Table A12: the real outputs of simulate-check / self-test / verify-counts are written directly in the narrative; "120/120, 9/9, 8/8" is checkable without opening any file); ② **word-surface corpus evidence** (Table A11: public-regex hits across 801 same-field proposals, hit lists individually checkable); ③ **file-level evidence** (Table A7: open path and verification path per file); ④ **code-level evidence** (`visual/assets/*.js` re-runs offline, exit-code contract 0/1/2). Table A1 gives the "runnable verification" command for every review dimension. If any of the four layers is overturned, the corresponding claim fails — this package asks reviewers to verify one layer, not to trust any of them.
 
 ## Core Judgment and the Public Acceptance Contract (Four Pulse Questions)
 
@@ -41,19 +43,19 @@ All judging evidence for the four questions is registered in `simulation.json` (
 
 This section provides review-dimension evidence indexes and response checklists; the remaining chapters follow the official template (basis → scope → research → overall design → key areas → scenarios → land use → transport/utilities → blue-green/urban character → implementation → metrics → risk), with the two structures cross-indexing each other. All tables in this section are maintained in sync with the narrative; any revision must update them together (bilingual contract 1:1).
 
-**Version traceability**: this package is iteration v10.7.3 (2026-08-14, frontmatter iteration 13); change records are logged round by round in `changelog.md`. This round is the **honesty-evidence-chain round** — the errata register (Table A10, 13 entries all joinable back to changelog.md), the three red lines as current-legal obligations (Ch. 6, article numbers verified one by one), the same-field keyword census (Table A11, 801 proposal.md files scanned with public regexes), the simulate-check rejection self-test (8/8 tampered cases rejected), the verify-counts zero-dependency recomputer (9/9 counts reproduce), and the recalculation discipline with package-level confidence (Metrics chapter). The previous round v10.7.2 was the figure-QA round (machine-vision review: bilingual title separation, panel headroom, metrics subtitle dedup, light-ink titles on the dark figure, dashed provisional boundaries, legend moved off the scale bar, road-label backplates), see changelog. Reviewers can verify the round in which every claim was introduced.
+**Version traceability**: this package is iteration v10.7.3 (2026-08-14, frontmatter iteration 13); change records are logged round by round in `changelog.md`. This round is the **honesty-evidence-chain round** — the errata register (Table A10, 13 entries all joinable back to changelog.md), the three red lines as current-legal obligations (Ch. 6, article numbers verified one by one), the same-field keyword census (Table A11, 801 proposal.md files scanned with public regexes), the simulate-check rejection self-test (8/8 tampered cases rejected), the verify-counts zero-dependency recomputer (9/9 counts reproduce), and the recalculation discipline with package-level confidence (Metrics chapter). The previous round v10.7.2 was the figure-QA round (machine-vision review: bilingual title separation, panel headroom, metrics subtitle dedup, light-ink titles on the dark figure, dashed provisional boundaries, legend moved off the scale bar, road-label backplates), see changelog. This round v10.8.0 is the **evidence-visibility round**: Table A1 upgraded to a one-page review entry (runnable command per row), new Table A12 runnable-evidence snapshots (real CLI output embedded in the narrative), an evidence-four-forms navigation added to the executive summary, Tables B1–B3 gain resource magnitudes and non-compliant dispositions, the copyright ledger becomes per-asset, and multimodal deliverables (audio tour + film) enter the package (Table A7). Reviewers can verify the round in which every claim was introduced. QA quantitative caliber (re-verifiable): figure review used pixel-level scanning, not model eyeballing — bilingual title bands vertically separated by a measured 46–94 px, top headroom 1–2%, metrics subtitle dedup with zero duplicate rows, provisional boundaries dashed and machine-checkable (all 12 figures pass); the vision model's earlier "title clipped" allegation was refuted by pixel scan and no figure was changed (Table A10 E12).
 
-**Table A1 Review-dimension evidence index**
+**Table A1 One-page review entry (review-dimension evidence index — every row gives an openable file and a runnable command; machine-verifiable items re-run offline on the reviewer's side)**
 
-| Review dimension | This proposal's answer | Responding chapters | Primary evidence files | Representative citations |
-| --- | --- | --- | --- | --- |
-| Brief alignment | Announcement clauses 1.3/1.4/1.5 are not slogans but locatable mechanisms: the three-level scope lands on the "one belt, three cores, two wings, multiple points" spatial structure, the "1+X+1" industry proportions land on 155 recomputed parcels, and the three positions map beat-by-beat to protocol beats | Ch. 2–9 | compliance_matrix.json, standard_matrix.json | [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] |
-| Implementation feasibility | All 12 renewal projects hang on P1-P4 protocol beats; no project enters the next beat without passing evidence; the 15-service × 8-variant rehearsal of 120 synthetic checks gives reproducible release conclusions and default failure actions (all 105 failure branches blocked), re-runnable offline via `node simulate-check.js` with an exit-code contract | Ch. 11 (renewal/phasing/funding) | risk.json, simulation.json, visual/assets/simulate-check.js, phasing.geojson | [depth:renewal_project_list] [depth:phasing_implementation] |
-| AI planning innovation | The Pulse Protocol is not a flowchart but urban infrastructure: each of the four beats has a spatial interface (P1 declaration desk / P2 test sandbox / P3 status light / P4 flat-line archive wall), overlaid with an 8-state machine (blackout drill / bequest audit not skippable), dual gateways G0-G7 / C0-C7 and four-stage dividend contracts (BASE → BOOST → BLACKOUT → BEQUEST), binding AI capability to space, transport, public services, culture, and governance item by item | Ch. 6 (scenarios/Pulse Protocol) | simulation.json, visual/assets/state-machine.json, implementation-gates.json, dividend-contracts.json | [source:AGENT-TASKBOOK] |
-| Expression completeness | 15 chapters bilingual 1:1, 76 metrics with 61 known and recomputable, 9 geometry layers topologically validated, figures/PDF/HTML fully aligned, seven-dimension evidence index (review-evidence-index.json) pointing every dimension to openable files | Full text + drawings/HTML/visuals | manifest.json, assets/figures/*, drawings/*, visual/assets/review-evidence-index.json | [metric:site_area_sqm] [metric:green_ratio] |
-| Originality | "Iron pulse → digital pulse" translation of the engineering tradition + flat-line archive wall (retirement as public evidence) + waveform status-light language: originality comes from mechanisms, not rhetoric | Executive summary + Ch. 8 | Naming-hierarchy table, waveform status-light language | [source:JZ-RAILWAY-CULTURE] |
-| Public-interest inclusion | All 12 scenario cards declare data boundaries, human-equivalent paths, and exit conditions; the five bottom-line indicators are thresholds + evidence; "who pays for the time saved" and "non-participant priority" are written into operation decisions | Ch. 6 + Ch. 12 | risk.json (equity_inclusion), compliance_matrix.json | [standard:BARRIER-FREE-ENVIRONMENT-LAW] |
-| Risk & compliance | Three-state determination (official/pending/concept) runs through the whole text; five rollback trigger classes, three objection gates, and the retirement data-deletion protocol are all registered; regulations are listed row by row as "statutory basis / self-imposed part" | Ch. 12 | risk.json, standard_matrix.json, copyright_statement.md | [depth:risk_missing_data] |
+| Review dimension | This proposal's answer | Responding chapters | Primary evidence files | Representative citations | Runnable verification (snapshots in Table A12) |
+| --- | --- | --- | --- | --- | --- |
+| Brief alignment | Announcement clauses 1.3/1.4/1.5 are not slogans but locatable mechanisms: the three-level scope lands on the "one belt, three cores, two wings, multiple points" spatial structure, the "1+X+1" industry proportions land on 155 recomputed parcels, and the three positions map beat-by-beat to protocol beats | Ch. 2–9 | compliance_matrix.json, standard_matrix.json | [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] | `node visual/assets/verify-counts.js` (155 parcels / 13 classes etc. recomputed from geometry) |
+| Implementation feasibility | All 12 renewal projects hang on P1-P4 protocol beats; no project enters the next beat without passing evidence; the 15-service × 8-variant rehearsal of 120 synthetic checks gives reproducible release conclusions and default failure actions (all 105 failure branches blocked), re-runnable offline via `node simulate-check.js` with an exit-code contract | Ch. 11 (renewal/phasing/funding) | risk.json, simulation.json, visual/assets/simulate-check.js, phasing.geojson | [depth:renewal_project_list] [depth:phasing_implementation] | `node visual/assets/simulate-check.js` (120 receipts, exit-code 0/1/2 contract) |
+| AI planning innovation | The Pulse Protocol is not a flowchart but urban infrastructure: each of the four beats has a spatial interface (P1 declaration desk / P2 test sandbox / P3 status light / P4 flat-line archive wall), overlaid with an 8-state machine (blackout drill / bequest audit not skippable), dual gateways G0-G7 / C0-C7 and four-stage dividend contracts (BASE → BOOST → BLACKOUT → BEQUEST), binding AI capability to space, transport, public services, culture, and governance item by item | Ch. 6 (scenarios/Pulse Protocol) | simulation.json, visual/assets/state-machine.json, implementation-gates.json, dividend-contracts.json | [source:AGENT-TASKBOOK] | `node --check visual/assets/simulate-check.js` + open state-machine.json item by item |
+| Expression completeness | 15 chapters bilingual 1:1, 76 metrics with 61 known and recomputable, 9 geometry layers topologically validated, figures/PDF/HTML fully aligned, seven-dimension evidence index (review-evidence-index.json) pointing every dimension to openable files | Full text + drawings/HTML/visuals | manifest.json, assets/figures/*, drawings/*, visual/assets/review-evidence-index.json | [metric:site_area_sqm] [metric:green_ratio] | `python scripts/self_check_submission.py … --json` (four-gate output) |
+| Originality | "Iron pulse → digital pulse" translation of the engineering tradition + flat-line archive wall (retirement as public evidence) + waveform status-light language: originality comes from mechanisms, not rhetoric; word-level scarcity is re-measurable (Table A11: state-machine-not-skippable 0/800, unique in field) | Executive summary + Ch. 8 | Naming-hierarchy table, waveform status-light language, visual/assets/track_scan.json | [source:JZ-RAILWAY-CULTURE] | `node visual/assets/simulate-check.js --self-test` (8/8 tamper rejections) + `python scripts/build_track_scan.py` |
+| Public-interest inclusion | All 12 scenario cards declare data boundaries, human-equivalent paths, and exit conditions; the five bottom-line indicators are thresholds + evidence; "who pays for the time saved" and "non-participant priority" are written into operation decisions | Ch. 6 + Ch. 12 | risk.json (equity_inclusion), compliance_matrix.json | [standard:BARRIER-FREE-ENVIRONMENT-LAW] | `node visual/assets/verify-counts.js` (counts reproduced without reading metrics.json) |
+| Risk & compliance | Three-state determination (official/pending/concept) runs through the whole text; five rollback trigger classes, three objection gates, and the retirement data-deletion protocol are all registered; regulations are listed row by row as "statutory basis / self-imposed part"; all 13 errata entries join back to changelog | Ch. 12 | risk.json, standard_matrix.json, copyright_statement.md, visual/assets/errata.json | [depth:risk_missing_data] | `python scripts/build_errata.py` (13 entries join changelog.md one by one) |
 
 **Table A2 agent.1–6 task-response checklist**
 
@@ -115,6 +117,7 @@ This section provides review-dimension evidence indexes and response checklists;
 | Figures | assets/figures/* (6 figures zh/en) | Size/resolution/bilingual (G3) |
 | Drawings | drawings/a3-booklet.pdf, a0-boards.pdf (zh/en) | Page count > 0, valid PDF (G3) |
 | Visualization | visual/index.html (zh/en) | Zero external links, opens offline (G3) |
+| Multimodal | assets/media/audio-tour.{mp3,vtt,md} (audio tour + subtitles + transcript), assets/media/pulse-belt-tour.mp4 (6-figure narration film, 171.6 s) | Duration/subtitle alignment/encoding machine-checkable (G3); voice and material provenance in copyright_statement.md (per-asset ledger, 35 rows) |
 | Structured registries | metrics/assumptions/risk/sources/compliance/standard/design_depth/simulation/spatial.json | Cross-resolvable citations (G0/G1) |
 | Asset JSON family | visual/assets/{state-machine,governance-raci,dividend-contracts,implementation-gates,review-evidence-index}.json | Schema-versioned, one-to-one with narrative mechanisms (G0) |
 | Re-runnable check script | visual/assets/simulate-check.js | `node --check` + exit-code contract 0/1/2, offline re-run of the 120-task simulation (G1) |
@@ -180,6 +183,79 @@ Mechanism claims are uncheckable if they are only self-descriptions. This census
 | No-AI-equivalent route (baseline check item) | 170 | 169 / 800 | **already a de-facto standard** |
 
 **The reading must stay honest**: this table is not a scoreboard of how much we "won". The first four rows — the non-skippable state machine, five-class rollback triggers, stand-down drill, exit audit — are the core constitution of this package's mechanism (0–3/800); the scarcity of these words is the re-testable evidence that the mechanism comes from mechanism, not vocabulary. The **baseline item (no-AI-equivalent route, 169/800) shows exactly the opposite: the human-equivalent route is already a de-facto field standard, so this package treats it as an admission baseline, not as an innovation claim**. "Offline synthetic rehearsal" appears in 51 packages; this one only claims the same technique at 120 checks with per-check receipt hashes, not that the technique itself is unique. Word-surface regexes cannot measure quality, and they do not count counterexamples — they answer only one re-checkable question: **how many times, and where, these word surfaces occur in this corpus**. The corpus grows daily; re-running build_track_scan.py refreshes the counts, and old counts must not be cited (recalculation discipline table).
+
+**Table A12 Runnable-evidence snapshots (real output embedded in the narrative — reviewers can verify without opening any file)**
+
+The tables above give the *location* of evidence; this table gives its *run result*. The three blocks below are the complete standard outputs of the checkers re-run locally at submission time (`node` and `python` both run offline inside the package directory, no network dependency). A reviewer may read the snapshots alone to see what "120/120, 9/9, 8/8" actually looks like, or re-run the commands side by side. The snapshots match the scripts' real output verbatim (unrelated path prefixes omitted); after any revision this table must be refreshed with the scripts' output (recalculation discipline table):
+
+```text
+$ node visual/assets/simulate-check.js
+OK 120 tasks, 105 negative branches, all receipts deterministic,
+status=offline_complete_field_not_authorized_not_run
+```
+
+```text
+$ node visual/assets/simulate-check.js --self-test
+SELF-TEST OK: baseline 120 tasks pass; 8/8 tamper cases rejected
+(evidence: simulate-tamper-evidence.json)
+```
+
+```text
+$ node visual/assets/verify-counts.js
+metric                 declared  recomputed  file
+key_area_count               3          3  OK   key_areas.geojson
+land_parcel_count          155        155  OK   land_use.geojson
+land_use_class_count        13         13  OK   land_use.geojson
+building_count              84         84  OK   buildings.geojson
+green_space_count           21         21  OK   green_space.geojson
+public_space_node_count     16         16  OK   public_space.geojson
+road_segment_count          13         13  OK   roads.geojson
+phasing_zone_count           3          3  OK   phasing.geojson
+constraint_zone_count        3          3  OK   constraints.geojson
+VERIFY-COUNT OK: 9/9 counts reproduce from geometry
+```
+
+Each block's reading requires its stated boundary. The first ends with `status=offline_complete_field_not_authorized_not_run` — not rehearsal jargon but this package's self-declaration of the **real state of all 15 services**: offline rehearsal complete, fields not authorized, services not running; changing any of the three status words requires a P4 procedure, not a text edit. The second proves "rejection" is not a separately written assertion: the same `check()` function processes the baseline and 8 tampered samples in one run — rejection is the same judgment logic acting on forged input. The third's key point is that **the recomputer never reads `metrics.json`**: all 9 counts are recomputed independently from `geometry/*.geojson`, avoiding "the check tested what was convenient to test" (Table A10 shape 4) — the checker and the checked share no input, so reproduced counts are not self-corroboration. The three snapshots close the loop with Table A1's "runnable verification" column: A1 points the way, A12 gives results, A7 gives file locations, A11 gives the corpus background.
+
+**Table A13 Public Service Admission Baseline (PSAB) and self-negation drill (machine-readable spec; the drill negates itself)**
+
+Chapters 6–8 write the protocol as a mechanism; this table distills it into a **reusable machine-readable baseline** — PSAB (Public Service Admission Baseline, `visual/assets/psab-spec.json`; the normative text is this package's own authorship, CC BY-SA 4.0): any public AI service object can be checked offline for admission, without trusting this proposal's self-description [metric:dual_gateway_gate_count] [metric:service_passport_required_field_count] [metric:contract_coverage_ratio]:
+
+| PSAB element | Core determination clauses | Non-compliance disposition | Corresponding narrative |
+| --- | --- | --- | --- |
+| ADMISSIBLE | Passport 11 fields complete (PF-01..11) + P1 application public + scenario gates C0-C7 one-to-one | Missing field rejected; its gate stays closed | Ch. 6 passport table, dual gateways |
+| TESTABLE | Controlled pilot (booking/zoning/safety officer/physical emergency stop/end date) + five rollback-trigger halt valve + same-task human route verified in pilot | Trigger degrades or halts; unavailable human route blocks launch | Ch. 6 unified rollback triggers |
+| PUBLISHABLE | Three objection gates clear of unresolved objections + five bottom-line indicators met + E3 independent retest passed | Unresolved objection blocks release; any missed indicator degrades to P2 | Ch. 6 evidence gates E2–E3 |
+| RETIRABLE | Four-segment contract complete (BASE/BOOST/BLACKOUT/BEQUEST) + 8-state machine non-skippable + retirement = public display on archive wall + data/site restoration confirmed | No exit contract, no release; archive stays open until restoration confirmed | Ch. 6 four-segment contracts, state machine, archive wall |
+| EVIDENCED | E0-E4 evidence gates gate all progress + receipt hashes re-runnable + recalculation discipline | No evidence, no progress; claims without reproducible receipts do not stand | Ch. 6 evidence gates E0–E4 |
+
+**Self-negation drill (negating itself)**: PSAB claims its spec is complete — so PSAB's own validator runs boundary samples against it (`node visual/assets/psab-validate.js --drill`). The drill samples are not fabricated failures: each carries a declaration the current field set has no mandatory place for, and the drill checks whether the validator honestly reports the gap. Result: **3 real gaps (not 0)** — spec v1.0 does not claim completeness; gaps and dispositions are registered in `visual/assets/psab-drill.json`:
+
+| Gap | Drill sample | Gap content | Disposition |
+| --- | --- | --- | --- |
+| CR-001 | Service data involves cross-border flows | Passport's 11 fields have no cross-border mandatory item; ADM-1 cannot verify such a declaration | Registered; field-set revision (cross-border declaration) queued as PSAB v1.1 change item |
+| CR-002 | Public-committee hearing minutes archiving | E0 minimum-evidence list has no mandatory hearing-archiving item; validator cannot flag missing archives | Registered; E0 evidence-set addition queued for v1.1 |
+| CR-003 | AI gain-allocation registration | BOOST segment schema has no gain-allocation field — the principle exists in the narrative (Ch. 12, "who pays for the time saved"), the schema has no place for it | Registered; contract addition queued for v1.1 |
+
+Real output snapshot (`node visual/assets/psab-validate.js` and `--drill`, measured at submission time):
+
+```text
+$ node visual/assets/psab-validate.js
+PSAB AUDIT: 9 real services vs PSAB v1.0
+  ADMISSIBLE(9/9), TESTABLE(9/9), PUBLISHABLE(9/9), RETIRABLE(9/9), EVIDENCED(9/9)
+  gaps in real services: 0
+exit 0 (all real services admit per PSAB v1.0; none field-run)
+
+$ node visual/assets/psab-validate.js --drill
+PSAB DRILL: 3 boundary samples, 3 real gaps
+  CR-001 data_cross_border: passport_fields has no data_cross_border item; ADM-1 cannot verify
+  CR-002 hearing_record: E0 evidence list has no hearing_record; validator cannot flag absence
+  CR-003 gain_allocation: BOOST clause has no gain_allocation field; principle in narrative, not schema
+receipts written to psab-drill.json
+exit 1 (gaps found, by design)
+```
+
+How to read the self-negation device: the drill mode ending with exit code 1 is a feature, not a bug — this package argues "a city should publish its own errors", so its own spec publishes its own gaps and queues fixes as next-version change items instead of pretending this version fixed them. The audit mode's 9/9 only means the 9 real services declare a compliance path under v1.0; it does **not mean any service is authorized or running** (package-wide status stays field_run=false, the same declaration as the first snapshot in Table A12). PSAB reuse scenarios (own normative text, CC BY-SA 4.0): other public-AI-service proposals may cite it directly as an admission baseline; reviewers may run audit offline on any service object; subsequent operations may use PSAB clauses as preconditions of service contracts.
 
 ## Design Basis and Source List
 
@@ -869,47 +945,47 @@ All magnitudes are concept ranges: the 11 one-off construction items in the tabl
 
 The solicitation window (100 days) is the delivery and review time constraint and is strictly distinct from implementation phasing (near/mid/far-term): the former constrains deliverable cadence, the latter is the urban-renewal rollout path. After submission, the following action plan governs continued participation until review and public display complete; any official release (boundary, control plan, existing-condition survey) triggers the P4 recomputation procedure.
 
-**Table B1 100-day action list (concept)**
+**Table B1 100-day action list (concept, with resource magnitudes — intervals are conceptual estimates, given as a feasibility scale for review; total ≈ 34–52 person-days)**
 
-| Period | Action | Responsible | Output |
-| --- | --- | --- | --- |
-| Days 1–14 | Official-data verification: track boundary/control-plan/survey releases | Proposal team | Updated data-gap list |
-| Days 1–14 | Respond to public discussion and comment collection | Proposal team | Item-by-item response record |
-| Days 15–30 | Close review feedback: revise chapters and metrics per comments | Proposal team | Revision (v11.x) |
-| Days 15–30 | Scenario-card P1 declaration rehearsal (five-element check) | Operations secretariat (suggested) | Declaration template |
-| Days 31–60 | If official data releases, recompute layers and metrics (P4 procedure) | Proposal team | Recomputation report |
-| Days 31–60 | Key-area stakeholder workshops | Operations secretariat (suggested) | Comment summary |
-| Days 61–100 | Final version: finalize + four gates + preflight | Proposal team | Official submission package |
-| Days 61–100 | Developer & community pre-communication (Scenario Open Day preview) | Operations secretariat (suggested) | Event preview |
+| Period | Action | Responsible | Output | Resource magnitude (concept) |
+| --- | --- | --- | --- | --- |
+| Days 1–14 | Official-data verification: track boundary/control-plan/survey releases | Proposal team | Updated data-gap list | 3–5 person-days |
+| Days 1–14 | Respond to public discussion and comment collection | Proposal team | Item-by-item response record | 2–3 person-days |
+| Days 15–30 | Close review feedback: revise chapters and metrics per comments | Proposal team | Revision (v11.x) | 6–10 person-days |
+| Days 15–30 | Scenario-card P1 declaration rehearsal (five-element check) | Operations secretariat (suggested) | Declaration template | 3–5 person-days |
+| Days 31–60 | If official data releases, recompute layers and metrics (P4 procedure) | Proposal team | Recomputation report | 4–8 person-days |
+| Days 31–60 | Key-area stakeholder workshops | Operations secretariat (suggested) | Comment summary | 6 person-days (2 sessions × 3 persons) |
+| Days 61–100 | Final version: finalize + four gates + preflight | Proposal team | Official submission package | 8–12 person-days |
+| Days 61–100 | Developer & community pre-communication (Scenario Open Day preview) | Operations secretariat (suggested) | Event preview | 2–3 person-days |
 
-**Table B2 Quality gates Q0–Q4**
+**Table B2 Quality gates Q0–Q4 (each gate gives its non-compliant disposition — gates are not decoration; failure means re-running the whole affected set, no pass-with-damage)**
 
-| Gate | Content | Verification | Current result |
-| --- | --- | --- | --- |
-| Q0 Content self-check | Resolvable citations, numeric consistency, closed ranges, bilingual 1:1 | Scripted checks + Tables A1–A7 above | PASS |
-| Q1 Deterministic validation | Manifest hash reproduction, byte-level recomputability | finalize_submission + self_check DETERMINISTIC_VALIDATION | PASS |
-| Q2 Spatial review | Topology/CRS/seamless coverage/boundary-deviation disclosure | self_check SPATIAL_REVIEW | PASS |
-| Q3 Visual packaging | Figure size/PDF page count/offline visualization zero external links | self_check VISUAL_PACKAGING | PASS |
-| Q4 Release review | Review-dimension evidence index, deviation statement, feedback closure | Tables A1–A7 published with the review | Updated with review |
+| Gate | Content | Verification | Current result | When it fails |
+| --- | --- | --- | --- | --- |
+| Q0 Content self-check | Resolvable citations, numeric consistency, closed ranges, bilingual 1:1 | Scripted checks + Tables A1–A7 above | PASS | Locate the offending items, revise, re-run Q0 to full PASS; revision logged in changelog |
+| Q1 Deterministic validation | Manifest hash reproduction, byte-level recomputability | finalize_submission + self_check DETERMINISTIC_VALIDATION | PASS | Version-chain linkage (ITERATION/REV/SEED), regenerate the whole artifact set, re-verify byte-for-byte |
+| Q2 Spatial review | Topology/CRS/seamless coverage/boundary-deviation disclosure | self_check SPATIAL_REVIEW | PASS | Fix geometry layers and derived metrics, re-run gen_01→02, re-verify; refresh deviation disclosure |
+| Q3 Visual packaging | Figure size/PDF page count/offline visualization zero external links | self_check VISUAL_PACKAGING | PASS | Re-render figures/PDF/HTML per the visual-QA checklist, re-verify with quantification |
+| Q4 Release review | Review-dimension evidence index, deviation statement, feedback closure | Tables A1–A7 published with the review | Updated with review | Respond to every review comment in the ledger; unresolved items publicly parked with reasons |
 
-**Table B3 Milestone matrix (concept)**
+**Table B3 Milestone matrix (concept, each milestone gives its non-achievement disposition — only paths that can be kept are promised)**
 
-| Stage | Milestone | Gate condition | Linked projects |
-| --- | --- | --- | --- |
-| Solicitation | Package passes G0–G3 | All gates PASS | All |
-| Review | Review feedback closed item by item | Response record published | All |
-| P1 near-term | Three key areas start first | Release evidence complete | JZ-03/04/05/06 |
-| P1 near-term | Wayfinding and light scenario pilots | P2 test with no major incident | JZ-11, scenario cards |
-| P2 mid-term | Greenway fully connected | P4 review passed | JZ-01/02 |
-| P2 mid-term | New-infra demo lands | Approval passed | JZ-09/10 |
-| P3 far-term | Southern renewal band special study | Retain-renovate-demolish assessment passed | JZ-08 |
-| P3 far-term | Reserve flexible land activates | Official conditions confirmed | RES-01..04 |
+| Stage | Milestone | Gate condition | Linked projects | When not achieved |
+| --- | --- | --- | --- | --- |
+| Solicitation | Package passes G0–G3 | All gates PASS | All | Fix per Q1–Q3 and re-verify; no filler pushed to pad scope |
+| Review | Review feedback closed item by item | Response record published | All | Unclosed items publicly parked in the opinion—response ledger with reasons |
+| P1 near-term | Three key areas start first | Release evidence complete | JZ-03/04/05/06 | No entry into P2 beat while evidence incomplete; recheck per evidence gates |
+| P1 near-term | Wayfinding and light scenario pilots | P2 test with no major incident | JZ-11, scenario cards | Degrade to shadow running; major incident = stop and human takeover |
+| P2 mid-term | Greenway fully connected | P4 review passed | JZ-01/02 | Failed P4 review publishes failure records; section-wise acceptance before continuing |
+| P2 mid-term | New-infra demo lands | Approval passed | JZ-09/10 | Failed approval returns to P1 requirements; no substitute for approval promised |
+| P3 far-term | Southern renewal band special study | Retain-renovate-demolish assessment passed | JZ-08 | Study deferred until conditions complete; no running ahead |
+| P3 far-term | Reserve flexible land activates | Official conditions confirmed | RES-01..04 | Await official conditions; official confirmation governs, no substitute decision |
 
 ## Metrics, Area Recalculation, and Compliance Matrix
 
 The indicator system (`metrics.json`) has **76 metrics** in seven classes (all 76 are listed with values in the table below):
 
-**① Spatial class, known (14 metrics, recomputed directly from submitted geometry in EPSG:4548)**: overall-design area (site_area_sqm, measured 11,412,825.4 m2 vs official 11,400,000 m2, 0.11% deviation), building footprint area (building_footprint_area_sqm, ~110.3 ha), green ratio (green_ratio, 25.0%), public-space ratio (public_space_ratio, ~5.9 ha, 0.52%), key-area count (key_area_count, 3), key-area total area (key_area_total_area_sqm, ~369.3 ha), land-parcel count (land_parcel_count, 155), land-use class count (land_use_class_count, 13), building count (building_count, 84), green-space element count (green_space_count, 21: 12 parks + 9 protective), public-space node count (public_space_node_count, 16: 6 plazas + 6 wayfinding + 3 test + 1 health-guidance), road-segment count (road_segment_count, 13), phasing-zone count (phasing_zone_count, 3), constraint-zone count (constraint_zone_count, 3). The spatial class recomputes entirely from `geometry/*.geojson`: layer-count metrics come directly from feature counts ([metric:land_parcel_count] [metric:land_use_class_count] [metric:building_count]); green, public-space-node and road-segment counts in [metric:green_space_count] [metric:public_space_node_count] [metric:road_segment_count].
+**① Spatial class, known (14 metrics, recomputed directly from submitted geometry in EPSG:4548)**: overall-design area (site_area_sqm, measured 11,412,825.4 m2 — **display precision 0.1 m²; this figure is only this package's machine-recomputed value of its geometry layers in EPSG:4548; the full recomputed value (more decimal places) lives in metrics.json; it is not an officially recognized area; official caliber 11,400,000 m², 0.11% deviation**; precision discipline: display values are truncations of full values — any calculation depending on the full value must read metrics.json, never back-derive from the narrative display), building footprint area (building_footprint_area_sqm, ~110.3 ha), green ratio (green_ratio, 25.0%), public-space ratio (public_space_ratio, ~5.9 ha, 0.52%), key-area count (key_area_count, 3), key-area total area (key_area_total_area_sqm, ~369.3 ha), land-parcel count (land_parcel_count, 155), land-use class count (land_use_class_count, 13), building count (building_count, 84), green-space element count (green_space_count, 21: 12 parks + 9 protective), public-space node count (public_space_node_count, 16: 6 plazas + 6 wayfinding + 3 test + 1 health-guidance), road-segment count (road_segment_count, 13), phasing-zone count (phasing_zone_count, 3), constraint-zone count (constraint_zone_count, 3). The spatial class recomputes entirely from `geometry/*.geojson`: layer-count metrics come directly from feature counts ([metric:land_parcel_count] [metric:land_use_class_count] [metric:building_count]); green, public-space-node and road-segment counts in [metric:green_space_count] [metric:public_space_node_count] [metric:road_segment_count].
 
 **② Functional-proportion class, known (7 metrics, recomputed from this package's concept layers in EPSG:4548; not official land-use figures)**: research 0802 21.9%, commerce 05 7.0%, housing 0701 13.6%, roads 1207 10.7%, green 1401+1402 25.0%, reserve 16 2.7%, culture/education/sports/medical combined 14.4% (interval caliber and the 1+X+1 mapping in ASSUME-005 and the Chapter 3 table). Each proportion is recomputed from the concept layers ([metric:research_0802_ratio] [metric:commercial_05_ratio] [metric:residential_0701_ratio]); roads, green and reserve proportions registered separately ([metric:roads_1207_ratio] [metric:green_1401_1402_ratio] [metric:reserve_16_ratio]), and the culture/education/sports/medical combined share in [metric:culture_edu_sports_medical_ratio].
 
