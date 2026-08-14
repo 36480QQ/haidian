@@ -7,8 +7,8 @@ summary: 以“每一项AI部署都有公共凭证”为核心的概念性城市
 proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_file: proposal.en.md
-version: 1.0.0
-iteration: v1.0
+version: 1.2.0
+iteration: v1.2
 ---
 
 # 京张开源账本：可回查的 AI 公共回报带
@@ -21,7 +21,7 @@ iteration: v1.0
 
 本方案以公开征集公告、资料包任务书、允许设计空间、暂定范围、国家/行业参考和公开政策为起点。官方公告明确了43.6平方公里统筹研究范围、约11.4平方公里总体设计范围和三处重点区域的工作层级；公开资料没有提供可作为法定红线使用的精确矢量附件。因此，所有图层均被明确为“暂定约束 + 概念建议”，而不是现状测绘、产权界线、法定分区、工程图或审批结论。面积仅在 EPSG:4548 下复算，用于内部一致性；正式边界、既有建筑、道路红线、管线、权属、保护控制和工程条件到位后，必须替换、复算并由专业团队复核。
 
-本轮 v1.0 将 75 分的公开评审反馈转成可被验证的升级：不再只用文字声称“生态、场景、品牌、实施”，而以身份系统、生态接口、场景协议、实施阶梯和交互走读逐项呈现。资料、假设、方法案例和生成资产均在 `sources.json`、`report/narrative.md` 和版权声明中记录用途与限制。 [source:SRC-OFFICIAL-ANNOUNCEMENT] · [source:SRC-PROVISIONAL-BOUNDARY] · [source:SRC-HAIDIAN-1X1-2026] · [data:geometry/site_boundary.geojson]
+本轮 v1.2 将三处重点区的核心表达重构为“空间—服务—凭据”同屏证据板：每处明确公共界面、在场者、人工责任、暂停门与可交接物，避免以氛围图代替空间机制。资料、假设、方法案例和生成资产均在 `sources.json`、`report/narrative.md` 和版权声明中记录用途与限制。 [source:SRC-OFFICIAL-ANNOUNCEMENT] · [source:SRC-PROVISIONAL-BOUNDARY] · [source:SRC-HAIDIAN-1X1-2026] · [data:geometry/site_boundary.geojson]
 
 ## 全球案例的转译而非复制
 
@@ -129,7 +129,7 @@ iteration: v1.0
 
 ## 参考资料
 
-本方案的来源与使用边界、国际案例的操作/本地转译/不照搬条件，以及 v1.0 的评审诊断均见 `sources.json` 与 `report/narrative.md`。
+本方案的来源与使用边界、国际案例的操作/本地转译/不照搬条件，以及 v1.0→v1.2 的评审诊断均见 `sources.json` 与 `report/narrative.md`。
 
 [source:SRC-OFFICIAL-ANNOUNCEMENT] 百年京张AI创新带公开征集公告与资料包范围、任务和交付说明。
 

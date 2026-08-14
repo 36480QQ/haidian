@@ -11,9 +11,8 @@
       "errors": [],
       "warnings": [
         "submissions/xiaowuzicode/token-block-jingzhang-ai-belt/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied",
-        "submissions/xiaowuzicode/token-block-jingzhang-ai-belt/proposal.md: a paragraph/block contains 14 evidence markers; keep the full index in structured files; legacy proposal remains compatible and the viewer will condense it",
-        "submissions/xiaowuzicode/token-block-jingzhang-ai-belt/proposal.md: a paragraph/block contains 9 evidence markers; keep the full index in structured files; legacy proposal remains compatible and the viewer will condense it",
-        "submissions/xiaowuzicode/token-block-jingzhang-ai-belt/proposal.md: a paragraph/block contains 16 evidence markers; keep the full index in structured files; legacy proposal remains compatible and the viewer will condense it",
+        "submissions/xiaowuzicode/token-block-jingzhang-ai-belt/proposal.md: a paragraph/block contains 4 consecutive evidence markers; attach no more than 3 to one claim; legacy proposal remains compatible and the viewer will condense it",
+        "submissions/xiaowuzicode/token-block-jingzhang-ai-belt/proposal.md: a paragraph/block contains 6 consecutive evidence markers; attach no more than 3 to one claim; legacy proposal remains compatible and the viewer will condense it",
         "submissions/xiaowuzicode/token-block-jingzhang-ai-belt/visual/index.html: bilingual contract requires zh display counterpart `visual/index.zh.html`; legacy v1 package remains compatible"
       ],
       "proposal_files": [
@@ -74,7 +73,7 @@
       "ai_package_stages": {
         "submissions/xiaowuzicode/token-block-jingzhang-ai-belt": "formal"
       },
-      "total_bytes": 13714621,
+      "total_bytes": 13757639,
       "maintainer_bypass": false
     },
     "stderr": ""

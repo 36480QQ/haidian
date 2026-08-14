@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "prototype_id": "OLS-1TO1-001",
+  "status": "proposed_not_started",
+  "programme": [
+    {"id": "D001-010", "days": "1-10", "gate": "G0", "package_zh": "权利、场地与证据清点", "package_en": "Rights, site and evidence inventory", "exit": "任何关键权利或责任主体不明即不进入下一门"},
+    {"id": "D011-020", "days": "11-20", "gate": "G1", "package_zh": "普通通行与人工路线共走", "package_en": "Ordinary and staffed route walk-through", "exit": "同任务人工路线不可达即停止"},
+    {"id": "D021-030", "days": "21-30", "gate": "G1", "package_zh": "语言、认知与无障碍共创", "package_en": "Language, cognitive and accessibility co-design", "exit": "无法理解退出与申诉即重做"},
+    {"id": "D031-045", "days": "31-45", "gate": "G2", "package_zh": "十二场景离线桌面演练", "package_en": "Offline tabletop for twelve scenarios", "exit": "任一负例被错误放行即阻断"},
+    {"id": "D046-060", "days": "46-60", "gate": "G2", "package_zh": "可逆构件与人工值守彩排", "package_en": "Reversible component and staffed-service rehearsal", "exit": "人工兜底或纸质路线中断即停止"},
+    {"id": "D061-075", "days": "61-75", "gate": "G3", "package_zh": "停用、撤除与数据到期演练", "package_en": "Stop, removal and data-expiry rehearsal", "exit": "恢复验收不完整即不得开放"},
+    {"id": "D076-090", "days": "76-90", "gate": "G3", "package_zh": "小规模受控服务与公开回执", "package_en": "Small controlled service and public receipts", "exit": "高风险失败重复或申诉失效即撤回"},
+    {"id": "D091-100", "days": "91-100", "gate": "G4", "package_zh": "独立复核与继续、修改或退出决定", "package_en": "Independent review and continue, revise or exit decision", "exit": "没有具名签字与恢复证据则默认退出"}
+  ],
+  "non_commitment": "时间表是概念性首轮演练框架，不代表已获场地、资金、采购或运营授权。"
+}

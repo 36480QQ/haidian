@@ -323,6 +323,33 @@
       "assumptions": [
         "可验收的无障碍工程承诺"
       ]
+    },
+    "stitch_corridor_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": [
+        "geometry/roads.geojson"
+      ],
+      "formula": "count of role=stitch_corridor features (东西向转辙廊)",
+      "confidence": "high",
+      "assumptions": [
+        "对铁路长墙东西割裂的空间回应；转辙器母题的物理化身"
+      ]
+    },
+    "material_traceability_field_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "geometry/land_use.geojson",
+        "geometry/buildings.geojson"
+      ],
+      "formula": "count of material provenance fields (material_origin/carbon_audit_required/maintenance_contributors)",
+      "confidence": "high",
+      "assumptions": [
+        "Receipt 物质面：出处签下沉到空间对象；值为设计承诺与制度要求，不捏造碳数据"
+      ]
     }
   }
 }

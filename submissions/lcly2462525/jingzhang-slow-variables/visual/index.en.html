@@ -1,0 +1,877 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>THE SLOW VARIABLES · How a City Decides How Fast AI May Go</title>
+<meta name="description" content="The Slow Variables: a concept urban-design proposal in which five slow variables and four exit gates govern AI expansion. Provisional, conceptual, pending professional confirmation.">
+<style>
+:root{
+  --ink:#0D2137; --ink2:#123050; --ink3:#0A1A2C;
+  --paper:#EDE4D3; --paper-dim:#C7BCA6; --mute:#9FB4C8;
+  --brass:#C9A227; --brass-hi:#E6C153;
+  --cyan:#7FC4D6; --brick:#C0503C; --pine:#63A375; --ochre:#C08552; --violet:#9A89B8;
+  --sig-g:#46B978; --sig-a:#E0B53A; --sig-r:#D5483B;
+  --serif:'Songti SC','STSong',serif;
+  --sans:'PingFang SC','Hiragino Sans GB','Microsoft YaHei',system-ui,sans-serif;
+  --mono:'Menlo','Courier New',monospace;
+}
+*{box-sizing:border-box;min-width:0}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--ink);color:var(--paper);font-family:var(--sans);
+  font-size:16px;line-height:1.75;overflow-x:hidden;
+  background-image:
+    linear-gradient(rgba(127,196,214,.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(127,196,214,.05) 1px, transparent 1px),
+    linear-gradient(rgba(127,196,214,.028) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(127,196,214,.028) 1px, transparent 1px);
+  background-size:120px 120px,120px 120px,24px 24px,24px 24px;
+}
+::selection{background:var(--brass);color:var(--ink)}
+a{color:var(--cyan)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--brass-hi);outline-offset:3px;border-radius:2px}
+.skip{position:absolute;left:-9999px;top:0;background:var(--brass);color:var(--ink);padding:10px 18px;z-index:99;font-family:var(--mono);text-decoration:none}
+.skip:focus{left:12px;top:12px}
+.mono{font-family:var(--mono)}
+.serif{font-family:var(--serif)}
+.wrap{max-width:1240px;margin:0 auto;padding:0 clamp(18px,4vw,56px)}
+
+/* ---------- top bar ---------- */
+.topbar{
+  position:sticky;top:0;z-index:50;display:flex;align-items:center;gap:14px;
+  padding:10px clamp(14px,3vw,40px);
+  background:rgba(13,33,55,.92);backdrop-filter:blur(10px);
+  border-bottom:1px solid rgba(201,162,39,.35);
+}
+.topbar .mark{flex:none;display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--paper)}
+.chev{width:30px;height:18px;flex:none}
+.topbar .mark b{font-family:var(--serif);font-size:17px;letter-spacing:.06em;white-space:nowrap}
+.topbar .mark small{font-family:var(--mono);font-size:10px;color:var(--brass-hi);letter-spacing:.18em;display:block;line-height:1;white-space:nowrap}
+.topbar nav{flex:1;min-width:0;margin-left:auto;display:flex;justify-content:flex-start;gap:2px;overflow-x:auto;scrollbar-width:none}
+.topbar nav::-webkit-scrollbar{display:none}
+.topbar nav a{
+  flex:none;color:var(--mute);text-decoration:none;font-size:13px;white-space:nowrap;
+  padding:7px 11px;border:1px solid transparent;border-radius:3px;font-family:var(--mono);
+}
+.topbar nav a:hover{color:var(--brass-hi);border-color:rgba(201,162,39,.4)}
+.lang{
+  flex:none;font-family:var(--mono);font-size:12px;color:var(--ink);background:var(--brass);
+  text-decoration:none;padding:6px 12px;border-radius:3px;letter-spacing:.08em;font-weight:700;
+}
+
+/* ---------- crop marks ---------- */
+.frame{position:relative}
+.frame::before,.frame::after,
+.frame .cm::before,.frame .cm::after{
+  content:"";position:absolute;width:22px;height:22px;pointer-events:none;
+  border:0 solid var(--brass);opacity:.85;
+}
+.frame::before{top:14px;left:14px;border-top-width:1.5px;border-left-width:1.5px}
+.frame::after{top:14px;right:14px;border-top-width:1.5px;border-right-width:1.5px}
+.frame .cm::before{bottom:14px;left:14px;border-bottom-width:1.5px;border-left-width:1.5px}
+.frame .cm::after{bottom:14px;right:14px;border-bottom-width:1.5px;border-right-width:1.5px}
+
+/* ---------- hero ---------- */
+.hero{min-height:100svh;display:flex;flex-direction:column;border-bottom:1px solid rgba(201,162,39,.35)}
+.hero-grid{
+  flex:1;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);
+  gap:clamp(24px,4vw,64px);align-items:center;
+  padding:clamp(48px,7vh,90px) clamp(18px,4vw,56px) clamp(28px,4vh,48px);
+  max-width:1360px;margin:0 auto;width:100%;
+}
+.kicker{font-family:var(--mono);font-size:12px;letter-spacing:.3em;color:var(--brass-hi);margin:0 0 18px}
+.kicker .sep{color:var(--mute);letter-spacing:.1em}
+h1{
+  font-family:var(--serif);font-weight:900;
+  font-size:clamp(56px,8.4vw,124px);line-height:1.02;margin:0;letter-spacing:.02em;
+  color:var(--paper);
+}
+h1 .en{
+  display:block;font-family:var(--mono);font-weight:400;
+  font-size:clamp(15px,1.9vw,26px);letter-spacing:.42em;color:var(--brass-hi);margin-top:16px;
+}
+.tagline{
+  font-family:var(--serif);font-size:clamp(21px,2.6vw,34px);color:var(--cyan);
+  margin:26px 0 14px;letter-spacing:.04em;
+}
+.hero-lead{max-width:56ch;color:var(--paper-dim);margin:0 0 26px}
+.badge-row{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 8px}
+.badge{
+  font-family:var(--mono);font-size:12px;letter-spacing:.1em;
+  border:1px dashed var(--sig-a);color:var(--sig-a);padding:7px 13px;border-radius:3px;
+  background:rgba(224,181,58,.06);
+}
+.badge.solid{border-style:solid;border-color:var(--brass);color:var(--brass-hi)}
+.hero-cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:26px}
+.btn{
+  font-family:var(--mono);font-size:13px;letter-spacing:.12em;text-decoration:none;
+  padding:12px 22px;border-radius:3px;border:1px solid var(--brass);color:var(--brass-hi);
+}
+.btn:hover{background:rgba(201,162,39,.12)}
+.btn.primary{background:var(--brass);color:var(--ink);font-weight:700}
+.btn.primary:hover{background:var(--brass-hi)}
+
+/* instrument */
+.instrument{position:relative;max-width:600px;margin:0 auto;width:100%}
+.instrument svg{display:block;width:100%;height:auto}
+.ticklbl{font-family:var(--mono);font-size:15px;fill:var(--mute);letter-spacing:.05em}
+.svlbl{font-family:var(--mono);font-size:13px;font-weight:700}
+.fast{transform-origin:300px 300px;animation:spin 12s linear infinite}
+.slow{transform-origin:300px 300px;animation:sway 26s ease-in-out infinite alternate}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes sway{from{transform:rotate(20deg)}to{transform:rotate(38deg)}}
+.dial-caption{
+  display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
+  font-family:var(--mono);font-size:11.5px;color:var(--mute);
+  border-top:1px solid rgba(237,228,211,.16);padding-top:10px;margin-top:6px;letter-spacing:.06em;
+}
+.dial-caption b{color:var(--brass-hi);font-weight:400}
+
+/* 1909 strip */
+.strip1909{
+  border-top:1px solid rgba(201,162,39,.35);
+  background:linear-gradient(90deg, rgba(201,162,39,.10), rgba(13,33,55,0) 65%);
+}
+.strip1909 .wrap{
+  display:flex;gap:clamp(16px,3vw,40px);align-items:center;
+  padding-top:20px;padding-bottom:20px;flex-wrap:wrap;
+}
+.strip1909 .yr{font-family:var(--mono);font-size:clamp(30px,4vw,46px);color:var(--brass-hi);letter-spacing:.1em;line-height:1}
+.strip1909 p{margin:0;max-width:72ch;color:var(--paper-dim);font-size:15px}
+.strip1909 p b{color:var(--paper);font-family:var(--serif);letter-spacing:.05em}
+
+/* ---------- ruler ---------- */
+.ruler{margin:0 0 14px}
+.ruler .ticks{
+  height:14px;
+  background:
+    repeating-linear-gradient(90deg, rgba(237,228,211,.5) 0 1px, transparent 1px 12px),
+    repeating-linear-gradient(90deg, rgba(237,228,211,.85) 0 1.5px, transparent 1.5px 60px);
+  background-size:100% 6px,100% 14px;background-position:bottom left;background-repeat:repeat-x;
+  border-bottom:1px solid rgba(237,228,211,.4);
+}
+.ruler .labels{display:flex;justify-content:space-between;font-family:var(--mono);font-size:10.5px;color:var(--mute);letter-spacing:.14em;margin-top:5px}
+
+/* ---------- sections ---------- */
+.sec{padding:clamp(56px,9vh,110px) 0;border-bottom:1px solid rgba(237,228,211,.12)}
+.sec-head{display:flex;align-items:baseline;gap:18px;flex-wrap:wrap;margin-bottom:8px}
+.sec-no{font-family:var(--mono);font-size:13px;color:var(--brass-hi);letter-spacing:.3em}
+h2{
+  font-family:var(--serif);font-weight:900;font-size:clamp(30px,4.4vw,54px);
+  line-height:1.15;margin:0;letter-spacing:.03em;
+}
+h2 .en{display:block;font-family:var(--mono);font-weight:400;font-size:12px;letter-spacing:.32em;color:var(--mute);margin-top:10px}
+.sec-lead{max-width:76ch;color:var(--paper-dim);font-size:clamp(16px,1.5vw,19px);margin:14px 0 0}
+.sec-lead b, .sec-lead strong{color:var(--brass-hi);font-weight:600}
+
+/* cards */
+.grid{display:grid;gap:16px;margin-top:36px}
+.g5{grid-template-columns:repeat(5,1fr)}
+.g4{grid-template-columns:repeat(4,1fr)}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g2{grid-template-columns:repeat(2,1fr)}
+.card{
+  background:linear-gradient(180deg, rgba(18,48,80,.66), rgba(10,26,44,.66));
+  border:1px solid rgba(237,228,211,.14);border-top:3px solid var(--brass);
+  border-radius:4px;padding:22px 20px;position:relative;
+}
+.card .code{font-family:var(--mono);font-size:12px;letter-spacing:.2em;color:var(--mute)}
+.card h3{font-family:var(--serif);font-size:22px;margin:8px 0 6px;letter-spacing:.04em}
+.card .period{font-family:var(--mono);font-size:13px;color:var(--brass-hi);margin:0 0 10px;letter-spacing:.06em}
+.card p{margin:0;font-size:14px;color:var(--paper-dim)}
+.card .note{font-size:12px;color:var(--mute);margin-top:10px;border-top:1px dashed rgba(237,228,211,.2);padding-top:8px}
+.sv01{border-top-color:var(--pine)} .sv02{border-top-color:var(--cyan)} .sv03{border-top-color:var(--brass-hi)}
+.sv04{border-top-color:var(--brick)} .sv05{border-top-color:var(--violet)}
+.sv01 .code{color:var(--pine)} .sv02 .code{color:var(--cyan)} .sv03 .code{color:var(--brass-hi)}
+.sv04 .code{color:#E08A78} .sv05 .code{color:var(--violet)}
+
+/* two clocks */
+.clocks{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:36px}
+.clock{
+  border:1px solid rgba(237,228,211,.14);border-radius:4px;padding:26px 24px;
+  background:linear-gradient(180deg, rgba(18,48,80,.66), rgba(10,26,44,.66));
+}
+.clock.fastc{border-top:3px solid var(--cyan)}
+.clock.slowc{border-top:3px solid var(--brass)}
+.clock h3{font-family:var(--serif);font-size:24px;margin:0 0 4px}
+.clock .rate{font-family:var(--mono);font-size:12.5px;letter-spacing:.14em;margin:0 0 12px}
+.clock.fastc .rate{color:var(--cyan)} .clock.slowc .rate{color:var(--brass-hi)}
+.clock ul{margin:0;padding-left:1.2em;color:var(--paper-dim);font-size:14.5px}
+.clock li{margin:5px 0}
+.verdict{
+  margin-top:18px;border:1px solid var(--brass);border-radius:4px;padding:20px 24px;
+  background:rgba(201,162,39,.08);font-family:var(--serif);font-size:clamp(17px,1.8vw,22px);
+  letter-spacing:.03em;color:var(--paper);
+}
+.verdict b{color:var(--brass-hi)}
+
+/* gates */
+.gates{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:36px}
+.gate{
+  border:1px solid rgba(237,228,211,.14);border-radius:4px;padding:22px 20px;
+  background:linear-gradient(180deg, rgba(18,48,80,.66), rgba(10,26,44,.66));
+  display:flex;gap:16px;align-items:flex-start;
+}
+.signal{flex:none;display:flex;flex-direction:column;gap:6px;background:#081627;border:1px solid rgba(237,228,211,.2);border-radius:12px;padding:9px 8px}
+.signal i{width:16px;height:16px;border-radius:50%;background:#1E3A57;display:block}
+.signal i.on-g{background:var(--sig-g);box-shadow:0 0 10px var(--sig-g)}
+.signal i.on-a{background:var(--sig-a);box-shadow:0 0 10px var(--sig-a)}
+.signal i.on-r{background:var(--sig-r);box-shadow:0 0 10px var(--sig-r)}
+.gate h3{font-family:var(--serif);font-size:20px;margin:0 0 4px}
+.gate .gcode{font-family:var(--mono);font-size:12px;letter-spacing:.2em;color:var(--brass-hi)}
+.gate p{margin:6px 0 0;font-size:13.5px;color:var(--paper-dim)}
+.track{
+  margin-top:30px;border:1px solid rgba(237,228,211,.16);border-radius:4px;padding:22px 22px 16px;
+  background:rgba(10,26,44,.5);
+}
+.track-line{display:flex;align-items:flex-start;justify-content:space-between;position:relative;gap:6px}
+.track-line::before{content:"";position:absolute;left:3%;right:3%;top:9px;border-top:2px solid rgba(237,228,211,.35)}
+.stop{position:relative;text-align:center;flex:1;min-width:0}
+.stop i{display:block;width:14px;height:14px;margin:2px auto 10px;border-radius:50%;background:var(--ink);border:2.5px solid var(--brass-hi);position:relative;z-index:1}
+.stop.gate-stop i{border-color:var(--cyan);border-radius:2px}
+.stop b{display:block;font-size:13.5px;color:var(--paper);font-family:var(--serif);letter-spacing:.04em}
+.stop span{display:block;font-family:var(--mono);font-size:10px;color:var(--mute);letter-spacing:.08em;margin-top:2px}
+.track-fail{margin:14px 0 0;font-family:var(--mono);font-size:12px;color:var(--sig-r);letter-spacing:.1em;text-align:right}
+
+/* figure */
+.figure{margin-top:36px;border:1px solid rgba(201,162,39,.4);border-radius:4px;overflow:hidden;background:var(--ink3)}
+.figure img{display:block;width:100%;height:auto}
+.figure figcaption{
+  padding:12px 18px;font-size:13px;color:var(--mute);border-top:1px solid rgba(201,162,39,.3);
+  font-family:var(--mono);letter-spacing:.04em;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
+}
+.figure figcaption b{color:var(--brass-hi);font-weight:400}
+
+/* workshops */
+.yard{border-top:3px solid var(--cyan)}
+.yard.y2{border-top-color:var(--brass)} .yard.y3{border-top-color:var(--brick)}
+.yard .role{font-family:var(--serif);font-size:15px;color:var(--brass-hi);margin:0 0 8px;letter-spacing:.1em}
+.wings{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
+.wing{
+  border:1px dashed rgba(201,162,39,.55);border-radius:4px;padding:18px 20px;
+  background:rgba(201,162,39,.05);
+}
+.wing b{font-family:var(--serif);font-size:17px;color:var(--brass-hi);letter-spacing:.05em}
+.wing p{margin:6px 0 0;font-size:13.5px;color:var(--paper-dim)}
+.pilgrim{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:16px}
+.pil{
+  border:1px solid rgba(127,196,214,.35);border-radius:4px;padding:18px 20px;background:rgba(127,196,214,.05);
+}
+.pil .km{font-family:var(--mono);font-size:11px;color:var(--cyan);letter-spacing:.16em}
+.pil b{display:block;font-family:var(--serif);font-size:18px;margin:6px 0 4px;letter-spacing:.05em}
+.pil p{margin:0;font-size:13.5px;color:var(--paper-dim)}
+
+/* scenario cards */
+.group-title{
+  grid-column:1/-1;display:flex;align-items:center;gap:14px;margin-top:14px;
+  font-family:var(--serif);font-size:19px;letter-spacing:.08em;color:var(--brass-hi);
+}
+.group-title::after{content:"";flex:1;border-top:1px dashed rgba(201,162,39,.45)}
+.group-title .gn{font-family:var(--mono);font-size:11px;color:var(--mute);letter-spacing:.2em}
+.scen{
+  border:1px solid rgba(237,228,211,.14);border-left:3px solid var(--cyan);border-radius:4px;
+  padding:16px 16px 14px;background:linear-gradient(180deg, rgba(18,48,80,.55), rgba(10,26,44,.55));
+}
+.scen.test{border-left-color:var(--sig-a)}
+.scen .shead{display:flex;align-items:baseline;gap:9px}
+.scen .num{font-family:var(--mono);font-size:13px;color:var(--brass-hi)}
+.scen h3{font-family:var(--serif);font-size:16.5px;margin:0;letter-spacing:.03em}
+.scen .tag{
+  margin-left:auto;font-family:var(--mono);font-size:10px;color:var(--sig-a);
+  border:1px solid var(--sig-a);border-radius:2px;padding:2px 6px;letter-spacing:.1em;white-space:nowrap;
+}
+.scen p{margin:8px 0 0;font-size:13px;color:var(--paper-dim)}
+.scen .bound{
+  margin-top:10px;font-size:12px;color:#E0A79C;border-top:1px dashed rgba(192,80,60,.45);padding-top:8px;
+}
+.scen .bound::before{content:"⛔ "}
+.persona-chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.chip{
+  font-size:13.5px;color:var(--paper);border:1px solid rgba(127,196,214,.5);border-radius:99px;
+  padding:8px 16px;background:rgba(127,196,214,.07);letter-spacing:.03em;
+}
+.chip i{font-style:normal;font-family:var(--mono);font-size:11px;color:var(--cyan);margin-right:7px}
+
+/* metrics */
+.metrics-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:36px}
+.metric{
+  border:1px solid rgba(237,228,211,.16);border-radius:4px;padding:18px 18px 14px;
+  background:linear-gradient(180deg, rgba(18,48,80,.66), rgba(10,26,44,.66));
+}
+.metric .val{font-family:var(--mono);font-size:clamp(24px,2.6vw,34px);color:var(--brass-hi);letter-spacing:.02em;line-height:1.1}
+.metric .lbl{font-size:13.5px;color:var(--paper);margin-top:6px;font-family:var(--serif);letter-spacing:.05em}
+.metric .sub{font-family:var(--mono);font-size:10.5px;color:var(--mute);margin-top:4px;letter-spacing:.06em}
+.metric.empty{border-style:dashed;border-color:rgba(224,181,58,.6);background:rgba(224,181,58,.05)}
+.metric.empty .val{color:var(--sig-a);font-size:clamp(17px,1.8vw,22px)}
+.metric.empty .lbl{color:var(--sig-a)}
+.m-honest{margin-top:16px;font-size:13px;color:var(--mute);font-family:var(--mono);letter-spacing:.04em}
+
+/* seasons */
+.seasons{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:36px;border:1px solid rgba(237,228,211,.16);border-radius:4px;overflow:hidden}
+.season{padding:24px 20px;background:rgba(10,26,44,.55);border-right:1px solid rgba(237,228,211,.12)}
+.season:last-child{border-right:0}
+.season .s-icon{font-family:var(--serif);font-size:26px;letter-spacing:.1em}
+.season.sp .s-icon{color:var(--pine)} .season.su .s-icon{color:var(--sig-a)}
+.season.au .s-icon{color:var(--ochre)} .season.wi .s-icon{color:var(--cyan)}
+.season b{display:block;font-family:var(--serif);font-size:18px;margin:8px 0 6px;letter-spacing:.05em}
+.season p{margin:0;font-size:13.5px;color:var(--paper-dim)}
+.phases{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:16px}
+.phase{border:1px solid rgba(237,228,211,.14);border-radius:4px;padding:20px;background:linear-gradient(180deg, rgba(18,48,80,.55), rgba(10,26,44,.55))}
+.phase .yrs{font-family:var(--mono);font-size:15px;color:var(--brass-hi);letter-spacing:.12em}
+.phase b{display:block;font-family:var(--serif);font-size:17px;margin:6px 0;letter-spacing:.05em}
+.phase p{margin:0;font-size:13.5px;color:var(--paper-dim)}
+
+/* honesty */
+.honesty{background:rgba(10,26,44,.45)}
+.honest-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:36px}
+.hcard{border:1px solid rgba(224,181,58,.5);border-radius:4px;padding:22px;background:rgba(224,181,58,.05)}
+.hcard h3{font-family:var(--serif);font-size:19px;margin:0 0 10px;color:var(--brass-hi);letter-spacing:.05em}
+.hcard ul{margin:0;padding-left:1.2em;font-size:14px;color:var(--paper-dim)}
+.hcard li{margin:7px 0}
+.hcard li b{color:var(--paper)}
+
+/* footer */
+footer{padding:clamp(48px,7vh,80px) 0 40px}
+.foot-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:28px;margin-top:8px}
+.foot-col h3{font-family:var(--mono);font-size:12px;letter-spacing:.26em;color:var(--brass-hi);margin:0 0 14px}
+.task{display:flex;gap:10px;margin:0 0 10px;font-size:13px;color:var(--paper-dim)}
+.task .tn{font-family:var(--mono);color:var(--cyan);flex:none}
+.gate-pass{display:flex;align-items:center;gap:10px;font-family:var(--mono);font-size:12.5px;margin:0 0 9px;color:var(--paper-dim)}
+.gate-pass i{width:10px;height:10px;border-radius:50%;background:var(--sig-g);box-shadow:0 0 8px var(--sig-g);flex:none}
+.gate-pass b{color:var(--paper);font-weight:400}
+.foot-note{font-size:12.5px;color:var(--mute);margin:12px 0 0}
+.colophon{
+  margin-top:44px;padding-top:18px;border-top:1px solid rgba(201,162,39,.35);
+  display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
+  font-family:var(--mono);font-size:11.5px;color:var(--mute);letter-spacing:.12em;
+}
+.colophon b{color:var(--brass-hi);font-weight:400}
+
+/* responsive */
+@media(max-width:1080px){
+  .g5{grid-template-columns:repeat(3,1fr)}
+  .g4,.metrics-grid,.gates,.seasons{grid-template-columns:repeat(2,1fr)}
+  .g3,.pilgrim,.phases{grid-template-columns:repeat(2,1fr)}
+  .season{border-bottom:1px solid rgba(237,228,211,.12)}
+}
+@media(max-width:860px){
+  .hero-grid{grid-template-columns:1fr;padding-top:40px}
+  .instrument{max-width:460px}
+  .clocks,.wings,.honest-grid,.g2{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr}
+}
+@media(max-width:600px){
+  .g5,.g4,.g3,.metrics-grid,.gates,.seasons,.pilgrim,.phases{grid-template-columns:1fr}
+  .track-line{flex-direction:column;gap:14px;align-items:stretch}
+  .track-line::before{display:none}
+  .stop{text-align:left;display:flex;align-items:center;gap:12px}
+  .stop i{margin:0}
+  .track-fail{text-align:left}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="hero frame" id="top">
+  <span class="cm" aria-hidden="true"></span>
+  <div class="topbar">
+    <a class="mark" href="#top">
+      <svg class="chev" viewBox="0 0 30 18" aria-hidden="true"><path d="M2 14 L9 4 L16 14 M14 14 L21 4 L28 14" fill="none" stroke="#C9A227" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span><b>The Slow Variables</b><small>JING-ZHANG · 京张慢变量</small></span>
+    </a>
+    <nav aria-label="Page navigation">
+      <a href="#clocks">Two Clocks</a>
+      <a href="#gates">Gates</a>
+      <a href="#structure">Structure</a>
+      <a href="#scenarios">Scenarios</a>
+      <a href="#metrics">Metrics</a>
+      <a href="#phasing">Seasons</a>
+      <a href="#honesty">Honesty</a>
+    </nav>
+    <a class="lang" href="index.html" lang="zh" hreflang="zh">中文</a>
+  </div>
+
+  <div class="hero-grid">
+    <div>
+      <p class="kicker">CENTENNIAL JING-ZHANG AI INNOVATION BELT <span class="sep">· CONCEPT PROPOSAL · V2.0</span></p>
+      <h1>The Slow<br>Variables<span class="en">京张慢变量 · JING-ZHANG</span></h1>
+      <p class="tagline">How a city decides how fast AI may go</p>
+      <p class="hero-lead">Two clocks run in the city at once. One is fast: models change every few months, and a pilot can scale within a quarter. One is slow: shade, soil, accessibility, shop survival and children walking alone take years to show. This proposal lets five slow variables and four exit gates speak for the slow clock — <b style="color:var(--brass-hi)">pilots may move fast; expansion must be reviewed slowly.</b></p>
+      <div class="badge-row" role="note" aria-label="Proposal status declaration">
+        <span class="badge solid">PROVISIONAL CONSTRAINTS</span>
+        <span class="badge">CONCEPT ADVICE · RETRACTABLE</span>
+        <span class="badge">PENDING PROFESSIONAL CONFIRMATION</span>
+        <span class="badge">NOT AN OFFICIAL REDLINE · NOT A GOVERNMENT COMMITMENT</span>
+      </div>
+      <div class="hero-cta">
+        <a class="btn primary" href="#clocks">Enter the proposal ↓</a>
+        <a class="btn" href="#honesty">Read honesty first</a>
+      </div>
+    </div>
+
+    <div class="instrument">
+      <svg viewBox="0 0 600 600" role="img" aria-label="Dual-speed instrument: the outer ring of 40 quarterly ticks is the fast clock; five coloured arcs are the five slow variables; the fast hand spins while the brass slow hand drifts">
+        <circle cx="300" cy="300" r="258" fill="none" stroke="#C9A227" stroke-width="2" opacity="0.85"/>
+        <circle cx="300" cy="300" r="265" fill="none" stroke="#C9A227" stroke-width="0.8" opacity="0.4"/>
+        <g aria-hidden="true">
+        <line x1="300.0" y1="74.0" x2="300.0" y2="50.0" stroke="#EDE4D3" stroke-width="2.6" opacity="0.95"/>
+        <text x="300.0" y="88.0" class="ticklbl" text-anchor="middle" dominant-baseline="middle">Y0</text>
+        <line x1="336.9" y1="66.9" x2="339.1" y2="53.1" stroke="#EDE4D3" stroke-width="1.2" opacity="0.55"/>
+        <line x1="372.9" y1="75.6" x2="377.3" y2="62.2" stroke="#EDE4D3" stroke-width="1.2" opacity="0.55"/>
+        <line x1="407.1" y1="89.7" x2="413.5" y2="77.2" stroke="#EDE4D3" stroke-width="1.2" opacity="0.55"/>
+        <line x1="432.8" y1="117.2" x2="446.9" y2="97.7" stroke="#EDE4D3" stroke-width="2.6" opacity="0.95"/>
+        <text x="424.6" y="128.5" class="ticklbl" text-anchor="middle" dominant-baseline="middle">Y1</text>
+        <line x1="466.9" y1="133.1" x2="476.8" y2="123.2" stroke="#EDE4D3" stroke-width="1.2" opacity="0.55"/>
+        <line x1="490.9" y1="161.3" x2="502.3" y2="153.1" stroke="#EDE4D3" stroke-width="1.2" opacity="0.55"/>
+        <line x1="510.3" y1="192.9" x2="522.8" y2="186.5" stroke="#EDE4D3" stroke-width="1.2" opacity="0.55"/>
+        <line x1="514.9" y1="230.2" x2="537.8" y2="222.7" stroke="#EDE4D3" stroke-width="2.6" opacity="0.95"/>
+        <text x="501.6" y="234.5" class="ticklbl" text-anchor="middle" dominant-baseline="middle">Y2</text>
+        <line x1="533.1" y1="263.1" x2="546.9" y2="260.9" stroke="#EDE4D3" stroke-width="1.2" opacity="0.55"/>
+        <line x1="536.0" y1="300.0" x2="550.0" y2="300.0" stroke="#EDE4D3" stroke-width="1.2" opacity="0.55"/>
+        <line x1="533.1" y1="336.9" x2="546.9" y2="339.1" stroke="#EDE4D3" stroke-width="1.2" opacity="0.55"/>
+        <line x1="514.9" y1="369.8" x2="537.8" y2="377.3" stroke="#EDE4D3" stroke-width="2.6" opacity="0.95"/>
+        <text x="501.6" y="365.5" class="ticklbl" text-anchor="middle" dominant-baseline="middle">Y3</text>
+        <line x1="510.3" y1="407.1" x2="522.8" y2="413.5" stroke="#EDE4D3" stroke-width="1.2" opacity="0.55"/>
+        <line x1="490.9" y1="438.7" x2="502.3" y2="446.9" stroke="#EDE4D3" stroke-width="1.2" opacity="0.55"/>
+        <line x1="466.9" y1="466.9" x2="476.8" y2="476.8" stroke="#EDE4D3" stroke-width="1.2" opacity="0.55"/>
+        <line x1="432.8" y1="482.8" x2="446.9" y2="502.3" stroke="#EDE4D3" stroke-width="2.6" opacity="0.95"/>
+        <text x="424.6" y="471.5" class="ticklbl" text-anchor="middle" dominant-baseline="middle">Y4</text>
+        <line x1="407.1" y1="510.3" x2="413.5" y2="522.8" stroke="#EDE4D3" stroke-width="1.2" opacity="0.55"/>
+        <line x1="372.9" y1="524.4" x2="377.3" y2="537.8" stroke="#EDE4D3" stroke-width="1.2" opacity="0.55"/>
+        <line x1="336.9" y1="533.1" x2="339.1" y2="546.9" stroke="#EDE4D3" stroke-width="1.2" opacity="0.55"/>
+        <line x1="300.0" y1="526.0" x2="300.0" y2="550.0" stroke="#EDE4D3" stroke-width="2.6" opacity="0.95"/>
+        <text x="300.0" y="512.0" class="ticklbl" text-anchor="middle" dominant-baseline="middle">Y5</text>
+        <line x1="263.1" y1="533.1" x2="260.9" y2="546.9" stroke="#EDE4D3" stroke-width="1.2" opacity="0.55"/>
+        <line x1="227.1" y1="524.4" x2="222.7" y2="537.8" stroke="#EDE4D3" stroke-width="1.2" opacity="0.55"/>
+        <line x1="192.9" y1="510.3" x2="186.5" y2="522.8" stroke="#EDE4D3" stroke-width="1.2" opacity="0.55"/>
+        <line x1="167.2" y1="482.8" x2="153.1" y2="502.3" stroke="#EDE4D3" stroke-width="2.6" opacity="0.95"/>
+        <text x="175.4" y="471.5" class="ticklbl" text-anchor="middle" dominant-baseline="middle">Y6</text>
+        <line x1="133.1" y1="466.9" x2="123.2" y2="476.8" stroke="#EDE4D3" stroke-width="1.2" opacity="0.55"/>
+        <line x1="109.1" y1="438.7" x2="97.7" y2="446.9" stroke="#EDE4D3" stroke-width="1.2" opacity="0.55"/>
+        <line x1="89.7" y1="407.1" x2="77.2" y2="413.5" stroke="#EDE4D3" stroke-width="1.2" opacity="0.55"/>
+        <line x1="85.1" y1="369.8" x2="62.2" y2="377.3" stroke="#EDE4D3" stroke-width="2.6" opacity="0.95"/>
+        <text x="98.4" y="365.5" class="ticklbl" text-anchor="middle" dominant-baseline="middle">Y7</text>
+        <line x1="66.9" y1="336.9" x2="53.1" y2="339.1" stroke="#EDE4D3" stroke-width="1.2" opacity="0.55"/>
+        <line x1="64.0" y1="300.0" x2="50.0" y2="300.0" stroke="#EDE4D3" stroke-width="1.2" opacity="0.55"/>
+        <line x1="66.9" y1="263.1" x2="53.1" y2="260.9" stroke="#EDE4D3" stroke-width="1.2" opacity="0.55"/>
+        <line x1="85.1" y1="230.2" x2="62.2" y2="222.7" stroke="#EDE4D3" stroke-width="2.6" opacity="0.95"/>
+        <text x="98.4" y="234.5" class="ticklbl" text-anchor="middle" dominant-baseline="middle">Y8</text>
+        <line x1="89.7" y1="192.9" x2="77.2" y2="186.5" stroke="#EDE4D3" stroke-width="1.2" opacity="0.55"/>
+        <line x1="109.1" y1="161.3" x2="97.7" y2="153.1" stroke="#EDE4D3" stroke-width="1.2" opacity="0.55"/>
+        <line x1="133.1" y1="133.1" x2="123.2" y2="123.2" stroke="#EDE4D3" stroke-width="1.2" opacity="0.55"/>
+        <line x1="167.2" y1="117.2" x2="153.1" y2="97.7" stroke="#EDE4D3" stroke-width="2.6" opacity="0.95"/>
+        <text x="175.4" y="128.5" class="ticklbl" text-anchor="middle" dominant-baseline="middle">Y9</text>
+        <line x1="192.9" y1="89.7" x2="186.5" y2="77.2" stroke="#EDE4D3" stroke-width="1.2" opacity="0.55"/>
+        <line x1="227.1" y1="75.6" x2="222.7" y2="62.2" stroke="#EDE4D3" stroke-width="1.2" opacity="0.55"/>
+        <line x1="263.1" y1="66.9" x2="260.9" y2="53.1" stroke="#EDE4D3" stroke-width="1.2" opacity="0.55"/>
+        </g>
+        <g aria-hidden="true">
+        <circle cx="300" cy="300" r="205" fill="none" stroke="#63A375" stroke-width="1" opacity="0.22"/>
+        <path d="M 126.2 191.4 A 205 205 0 0 1 389.9 115.7" fill="none" stroke="#63A375" stroke-width="9" stroke-linecap="round"/>
+        <text x="118.2" y="195.4" class="svlbl" fill="#63A375" text-anchor="end" dominant-baseline="middle">SV-01</text>
+        <circle cx="300" cy="300" r="180" fill="none" stroke="#7FC4D6" stroke-width="1" opacity="0.22"/>
+        <path d="M 147.4 204.6 A 180 180 0 0 1 343.5 125.3" fill="none" stroke="#7FC4D6" stroke-width="9" stroke-linecap="round"/>
+        <text x="139.4" y="208.6" class="svlbl" fill="#7FC4D6" text-anchor="end" dominant-baseline="middle">SV-02</text>
+        <circle cx="300" cy="300" r="155" fill="none" stroke="#E6C153" stroke-width="1" opacity="0.22"/>
+        <path d="M 168.6 217.9 A 155 155 0 0 1 316.2 145.8" fill="none" stroke="#E6C153" stroke-width="9" stroke-linecap="round"/>
+        <text x="160.6" y="221.9" class="svlbl" fill="#E6C153" text-anchor="end" dominant-baseline="middle">SV-03</text>
+        <circle cx="300" cy="300" r="130" fill="none" stroke="#C0503C" stroke-width="1" opacity="0.22"/>
+        <path d="M 189.8 231.1 A 130 130 0 0 1 295.5 170.1" fill="none" stroke="#C0503C" stroke-width="9" stroke-linecap="round"/>
+        <text x="181.8" y="235.1" class="svlbl" fill="#C0503C" text-anchor="end" dominant-baseline="middle">SV-04</text>
+        <circle cx="300" cy="300" r="105" fill="none" stroke="#9A89B8" stroke-width="1" opacity="0.22"/>
+        <path d="M 211.0 244.4 A 105 105 0 0 1 278.2 197.3" fill="none" stroke="#9A89B8" stroke-width="9" stroke-linecap="round"/>
+        <text x="203.0" y="248.4" class="svlbl" fill="#9A89B8" text-anchor="end" dominant-baseline="middle">SV-05</text>
+        </g>
+        <g class="slow" aria-hidden="true">
+          <line x1="300" y1="300" x2="300" y2="112" stroke="#E6C153" stroke-width="5" stroke-linecap="round"/>
+          <circle cx="300" cy="112" r="6" fill="#E6C153"/>
+        </g>
+        <g class="fast" aria-hidden="true">
+          <line x1="300" y1="300" x2="300" y2="66" stroke="#7FC4D6" stroke-width="2" opacity="0.18" transform="rotate(-12 300 300)"/>
+          <line x1="300" y1="300" x2="300" y2="66" stroke="#7FC4D6" stroke-width="2" opacity="0.35" transform="rotate(-6 300 300)"/>
+          <line x1="300" y1="300" x2="300" y2="60" stroke="#7FC4D6" stroke-width="2.6" stroke-linecap="round"/>
+          <circle cx="300" cy="60" r="4.5" fill="#7FC4D6"/>
+        </g>
+        <circle cx="300" cy="300" r="36" fill="#0D2137" stroke="#C9A227" stroke-width="2"/>
+        <text x="300" y="296" text-anchor="middle" font-family="Menlo, monospace" font-size="14" fill="#E6C153" letter-spacing="1">1909</text>
+        <path d="M291 310 L300 301 L309 310" fill="none" stroke="#E6C153" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <div class="dial-caption" aria-hidden="true">
+        <span>FAST CLOCK · <b>1 tick = 1 quarter</b> · 40 ticks</span>
+        <span>SLOW CLOCK · <b>1 ring ≈ 10 years</b> · 5 arcs = SV-01~05</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="strip1909">
+    <div class="wrap">
+      <span class="yr">1909</span>
+      <svg width="46" height="26" viewBox="0 0 46 26" aria-hidden="true"><path d="M3 21 L16 5 L29 21 M22 21 L35 5 L43 21" fill="none" stroke="#C9A227" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <p><b>Speed must bow to the slope.</b>When the Beijing–Zhangjiakou railway opened in 1909, Zhan Tianyou met a grade no locomotive could climb at Guan'gou. Instead of waiting for a stronger engine, he folded the line into a chevron and traded switchbacks for height. A century later AI enters the same corridor — the models are fast, the city is slow, and the slope is still here.</p>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- SEC.01 Two clocks & five slow variables -->
+<section class="sec" id="clocks" aria-labelledby="clocks-h">
+  <div class="wrap">
+    <div class="ruler" aria-hidden="true"><div class="ticks"></div><div class="labels"><span>K0+000</span><span>K1+000</span><span>K2+000</span><span>K3+000</span><span>K4+000</span></div></div>
+    <div class="sec-head"><span class="sec-no">SEC.01</span>
+      <h2 id="clocks-h">Two Clocks, Five Slow Variables<span class="en">TWO CLOCKS · FIVE SLOW VARIABLES</span></h2>
+    </div>
+    <p class="sec-lead">The fast clock can rush projects online — but who speaks for the slow one? The answer is five slow variables, <b>SV-01 to SV-05</b>: they emerge over years and are today only a <b>measurement framework</b> with no corridor baseline — one year of measuring comes before any threshold.</p>
+
+    <div class="clocks">
+      <div class="clock fastc">
+        <h3>The Fast Clock · AI's Time</h3>
+        <p class="rate">1 tick = 1 quarter · models change every few months</p>
+        <ul>
+          <li>Apps update every few weeks; a pilot can scale within a single quarter</li>
+          <li>The fast clock brings real energy for research, testing and enterprise services</li>
+          <li>Technical novelty only earns a project the right to a <b style="color:var(--cyan)">small pilot</b></li>
+        </ul>
+      </div>
+      <div class="clock slowc">
+        <h3>The Slow Clock · The City's Time</h3>
+        <p class="rate">1 ring ≈ 10 years · public value takes years to emerge</p>
+        <ul>
+          <li>Trees take many years to give shade; soil infiltration must survive several flood seasons</li>
+          <li>Accessibility, shop survival and children walking alone reveal themselves only in daily life</li>
+          <li>Long-term public value alone decides whether a project may <b style="color:var(--brass-hi)">stay</b></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="grid g5">
+      <article class="card sv01">
+        <span class="code">SV-01</span>
+        <h3>Tree Shade</h3>
+        <p class="period">Emergence · 8–15 years</p>
+        <p>Canopy models are checked against summer field re-surveys to see whether continuous shade truly forms.</p>
+        <p class="note">Method: canopy model + quarterly re-survey ｜ Baseline: pending one year of measurement</p>
+      </article>
+      <article class="card sv02">
+        <span class="code">SV-02</span>
+        <h3>Soil Infiltration</h3>
+        <p class="period">Emergence · 3–5 flood seasons</p>
+        <p>Whether rainwater actually sinks into the ground only becomes clear after several flood seasons.</p>
+        <p class="note">Method: sensors + manual soil profiles in parallel ｜ Baseline: pending one year of measurement</p>
+      </article>
+      <article class="card sv03">
+        <span class="code">SV-03</span>
+        <h3>Accessible Reach</h3>
+        <p class="period">Emergence · 2–3 years</p>
+        <p>Whether ramps, crossings and staffed counters truly work must be tested by different people, repeatedly.</p>
+        <p class="note">Method: co-audits by wheelchair, stroller and walking users ｜ Baseline: pending one year of measurement</p>
+      </article>
+      <article class="card sv04">
+        <span class="code">SV-04</span>
+        <h3>Shop Survival</h3>
+        <p class="period">Emergence · 5–10 years</p>
+        <p>Whether small street shops can stay — not displaced by new rents and new footfall — takes years to see.</p>
+        <p class="note">Method: voluntary merchant records ｜ Baseline: pending one year of measurement</p>
+      </article>
+      <article class="card sv05">
+        <span class="code">SV-05</span>
+        <h3>Children Walking Alone</h3>
+        <p class="period">Emergence · 1–3 years</p>
+        <p>Whether children can safely finish a route on their own is observed through staged letting-go walks.</p>
+        <p class="note">Method: staged accompanied letting-go trials ｜ Baseline: pending one year of measurement</p>
+      </article>
+    </div>
+
+    <p class="verdict">Technical novelty only earns the right to a small pilot — <b>long-term public value</b> alone decides whether a project may stay.</p>
+  </div>
+</section>
+
+<!-- SEC.02 Four exit gates -->
+<section class="sec" id="gates" aria-labelledby="gates-h">
+  <div class="wrap">
+    <div class="ruler" aria-hidden="true"><div class="ticks"></div><div class="labels"><span>K4+000</span><span>K5+000</span><span>K6+000</span><span>K7+000</span><span>K8+000</span></div></div>
+    <div class="sec-head"><span class="sec-no">SEC.02</span>
+      <h2 id="gates-h">Four Exit Gates<span class="en">FOUR EXIT GATES · G1–G4</span></h2>
+    </div>
+    <p class="sec-lead">Any AI scenario entering public space must pass four railway-signal gates in sequence before it may expand. <b>Fail any one, and the project scales down, pauses, or exits</b> — an exit record is not a stain of failure; it proves the city can stop an ineffective pilot in time.</p>
+
+    <div class="gates">
+      <article class="gate">
+        <span class="signal" aria-hidden="true"><i class="on-g"></i><i></i><i></i></span>
+        <div><span class="gcode">G1 · DATA SAFETY</span><h3>Data Safety</h3>
+        <p>Data boundaries in writing: faces and identifiable traces excluded by default; raw-data rights, retention and deletion published before any pilot.</p></div>
+      </article>
+      <article class="gate">
+        <span class="signal" aria-hidden="true"><i></i><i class="on-a"></i><i></i></span>
+        <div><span class="gcode">G2 · HUMAN REVIEW</span><h3>Human Review</h3>
+        <p>Field human review in place: when numbers conflict with on-site judgement, the better-looking record may not be used to apply for scale-up.</p></div>
+      </article>
+      <article class="gate">
+        <span class="signal" aria-hidden="true"><i></i><i class="on-a"></i><i></i></span>
+        <div><span class="gcode">G3 · PUBLIC DISSENT</span><h3>Public Dissent</h3>
+        <p>Dissent has a place to stop: record who objected, why, and how the plan was revised; the annual jury can veto expansion.</p></div>
+      </article>
+      <article class="gate">
+        <span class="signal" aria-hidden="true"><i></i><i></i><i class="on-r"></i></span>
+        <div><span class="gcode">G4 · NO DECLINE</span><h3>No Slow-Variable Decline</h3>
+        <p>All five slow variables are checked against the one-year baseline: decline in any one suspends the right to expand.</p></div>
+      </article>
+    </div>
+
+    <div class="track" role="img" aria-label="Six mandatory stations for a pilot: baseline, pilot, jury, scale-up, annual review, decade ledger, with four signal gates between stations">
+      <div class="track-line">
+        <div class="stop"><i></i><div><b>Baseline</b><span>01</span></div></div>
+        <div class="stop gate-stop"><i></i><div><b>G1</b><span>Data safety</span></div></div>
+        <div class="stop"><i></i><div><b>Pilot</b><span>02</span></div></div>
+        <div class="stop gate-stop"><i></i><div><b>G2</b><span>Human review</span></div></div>
+        <div class="stop"><i></i><div><b>Jury</b><span>03</span></div></div>
+        <div class="stop gate-stop"><i></i><div><b>G3</b><span>Public dissent</span></div></div>
+        <div class="stop"><i></i><div><b>Scale-up</b><span>04</span></div></div>
+        <div class="stop gate-stop"><i></i><div><b>G4</b><span>No decline</span></div></div>
+        <div class="stop"><i></i><div><b>Annual review</b><span>05</span></div></div>
+        <div class="stop"><i></i><div><b>Decade ledger</b><span>06</span></div></div>
+      </div>
+      <p class="track-fail">ANY GATE FAILED → SCALE DOWN · PAUSE · EXIT</p>
+    </div>
+  </div>
+</section>
+
+<!-- SEC.03 Spatial structure -->
+<section class="sec" id="structure" aria-labelledby="structure-h">
+  <div class="wrap">
+    <div class="ruler" aria-hidden="true"><div class="ticks"></div><div class="labels"><span>K8+000</span><span>K9+000</span><span>K10+000</span><span>K11+000</span><span>K12+000</span></div></div>
+    <div class="sec-head"><span class="sec-no">SEC.03</span>
+      <h2 id="structure-h">One Time Spine, Three Civic Yards<span class="en">ONE TIME SPINE · THREE CIVIC YARDS · TWO WINGS</span></h2>
+    </div>
+    <p class="sec-lead">Three scope levels do three different jobs: the <b>43.6 km²</b> coordination scope unifies measurement standards, the <b>11.4 km²</b> overall-design scope weaves a continuous spatial network, and the <b>368.4 ha</b> key scope carries on-site decisions. The north–south spine keeps long-term watch; three east–west interfaces stitch campus, community, rail and park back together. No pilot may skip the middle stop and jump straight from the lab to the whole city.</p>
+
+    <figure class="figure">
+      <img src="../assets/figures/land-use-structure.en.png" alt="Overall structure diagram: inside the pale dashed provisional boundary, a brass north–south time spine runs through three yards — 01 Zhongzhiyuan (measure), 02 AI Origin (negotiate), 03 Dazhongsi (deliver) — with three cyan east–west interfaces stitching both sides, and the Zhongguancun technology-service wing and Xiaoyuehe scenario wing feeding back">
+      <figcaption><span><b>FIG.01</b> Overview map and land-use zones — one time spine, three civic yards and two feedback wings</span><span>Concept expression · Provisional · Not an official redline</span></figcaption>
+    </figure>
+
+    <p class="group-title"><span class="gn">KEY AREAS</span>Three Civic Yards</p>
+    <div class="grid g3">
+      <article class="card yard">
+        <span class="code">YARD 01 · NORTH</span>
+        <h3>Zhongzhiyuan · Measure It Right</h3>
+        <p class="role">MEASURE ｜ sensors + human review</p>
+        <p>An open baseline laboratory, an ecological observation gallery toward Qinghe, a human-review hall and a garden of failed samples. Open does not mean publishing personal data — devices exclude faces and identifiable traces by default.</p>
+      </article>
+      <article class="card yard y2">
+        <span class="code">YARD 02 · MIDDLE</span>
+        <h3>AI Origin · Say It Clearly</h3>
+        <p class="role">NEGOTIATE ｜ public dissent + plan revision</p>
+        <p>A slow-variable reading room, a route co-drawing table, an accessibility audit bench and a non-digital feedback box. Disagreement is not rushed away — routes are drawn on the same table, objections and revisions recorded.</p>
+      </article>
+      <article class="card yard y3">
+        <span class="code">YARD 03 · SOUTH</span>
+        <h3>Dazhongsi · Deliver the Promise</h3>
+        <p class="role">DELIVER ｜ services, small shops and the annual ledger</p>
+        <p>A slow-variable ledger wall, a service appeal desk, an annual jury table and a small delivery market. The ledger shows the projects that stayed and the projects that exited, side by side.</p>
+      </article>
+    </div>
+
+    <div class="wings">
+      <div class="wing"><b>Zhongguancun Technology-Service Wing</b><p>Feeds universities, standards, legal, capital and talent support back into the three yards.</p></div>
+      <div class="wing"><b>Xiaoyuehe Scenario Wing</b><p>Feeds authorised real-world problems and everyday needs back into the three yards.</p></div>
+    </div>
+
+    <figure class="figure">
+      <img src="../assets/figures/mobility-bluegreen.en.png" alt="Slow-mobility and blue-green public-space diagram: four everyday speeds flow along the north–south spine — walking and wheelchairs, children's independent mobility, cycling, and delivery and servicing each hold a continuous place; three curved dashed east–west stitches reconnect both sides; continuous park green absorbs rainfall; when systems fail, static signs, a powerless route and human help remain">
+      <figcaption><span><b>FIG.02</b> Slow mobility and blue-green public space — continuous north–south, stitched east–west, walkable even when systems fail</span><span>Concept expression · Provisional · Not an official redline</span></figcaption>
+    </figure>
+
+    <div class="pilgrim">
+      <div class="pil"><span class="km">K0+000 · NORTH</span><b>Baseline Monument Zero</b><p>Publishes measurement methods and failure records; honour goes only to reproducible method.</p></div>
+      <div class="pil"><span class="km">K6+500 · MIDDLE</span><b>Dissent Platform</b><p>Preserves minority opinions and revised versions, turning disagreement into public archive.</p></div>
+      <div class="pil"><span class="km">K13+000 · SOUTH</span><b>Decade Ledger Wall</b><p>Shows long-term public gains and exited projects — never ranked by funding or traffic.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SEC.04 Scenarios & people -->
+<section class="sec" id="scenarios" aria-labelledby="scenarios-h">
+  <div class="wrap">
+    <div class="ruler" aria-hidden="true"><div class="ticks"></div><div class="labels"><span>K12+000</span><span>K13+000</span><span>K14+000</span><span>K15+000</span><span>K16+000</span></div></div>
+    <div class="sec-head"><span class="sec-no">SEC.04</span>
+      <h2 id="scenarios-h">Twelve Scenario Cards, Seven User Groups<span class="en">12 SCENARIO CARDS · 7 USER GROUPS</span></h2>
+    </div>
+    <p class="sec-lead">The first three cards (01*–03*) are controlled <b>industry tests</b>; the other nine enter daily service. Every card states its concrete action in the city and the <b>boundary it may never cross</b> — data stays voluntary, minimised, de-identified, human-reviewed and reversible.</p>
+
+    <div class="grid g3">
+      <p class="group-title"><span class="gn">GROUP</span>Watching the Land · Industry Tests</p>
+      <article class="scen test"><div class="shead"><span class="num">01*</span><h3>Shade Digital Twin</h3><span class="tag">INDUSTRY TEST</span></div>
+        <p>Compare canopy models with summer field re-surveys.</p><p class="bound">Modelled estimates must never pass as measured data</p></article>
+      <article class="scen test"><div class="shead"><span class="num">02*</span><h3>Post-Rain Infiltration Diagnosis</h3><span class="tag">INDUSTRY TEST</span></div>
+        <p>Sensor readings run in parallel with manual soil profiles.</p><p class="bound">Never substitutes for drainage engineering appraisal</p></article>
+
+      <p class="group-title"><span class="gn">GROUP</span>Watching the Streets</p>
+      <article class="scen test"><div class="shead"><span class="num">03*</span><h3>Accessible Route Co-Testing</h3><span class="tag">INDUSTRY TEST</span></div>
+        <p>Wheelchair, stroller and walking users walk the line together.</p><p class="bound">Voluntary participation; paper feedback always kept</p></article>
+      <article class="scen"><div class="shead"><span class="num">04</span><h3>Children Walking Alone, Accompanied</h3></div>
+        <p>Staged letting-go; crossings answered by on-site staff.</p><p class="bound">No facial recognition, no covert tracking</p></article>
+      <article class="scen"><div class="shead"><span class="num">08</span><h3>Slow-Mobility Gap Inspection</h3></div>
+        <p>Device-side aggregation; traffic staff confirm on site.</p><p class="bound">Personal traces never used for enforcement</p></article>
+
+      <p class="group-title"><span class="gn">GROUP</span>Watching the Blocks</p>
+      <article class="scen"><div class="shead"><span class="num">05</span><h3>Small-Shop Survival Assistant</h3></div>
+        <p>Merchants voluntarily record trading spans and service needs.</p><p class="bound">Never used for rent, demolition or credit scoring</p></article>
+      <article class="scen"><div class="shead"><span class="num">09</span><h3>Low-Disturbance Lighting</h3></div>
+        <p>Reads ambient illuminance; complaints trigger dimming.</p><p class="bound">No identity recognition; homes left undisturbed</p></article>
+
+      <p class="group-title"><span class="gn">GROUP</span>Watching Services · Research · The Year</p>
+      <article class="scen"><div class="shead"><span class="num">06</span><h3>Staffed-Counter Queue Assistant</h3></div>
+        <p>Anonymous queue hints; staff can take over at any moment.</p><p class="bound">Offline service channels always remain</p></article>
+      <article class="scen"><div class="shead"><span class="num">07</span><h3>Open-Source Model Red-Team Garden</h3></div>
+        <p>Public vulnerability reviews on synthetic or cleared data.</p><p class="bound">Vulnerabilities disclosed by severity grade</p></article>
+      <article class="scen"><div class="shead"><span class="num">10</span><h3>Jing-Zhang Heritage Audio Guide</h3></div>
+        <p>Local content packs with human historical review.</p><p class="bound">Usable without any location services</p></article>
+      <article class="scen"><div class="shead"><span class="num">11</span><h3>Public Contract Explainer</h3></div>
+        <p>Explains published clauses and names the responsible party.</p><p class="bound">Never gives case-specific legal conclusions</p></article>
+      <article class="scen"><div class="shead"><span class="num">12</span><h3>Annual Slow-Variable Jury</h3></div>
+        <p>Publishes aggregated evidence; dissent enters scale-up decisions.</p><p class="bound">The jury may veto expansion</p></article>
+    </div>
+
+    <div class="persona-chips" aria-label="Seven user groups">
+      <span class="chip"><i>U1</i>Nearby residents · quiet, shade, low-threshold passage</span>
+      <span class="chip"><i>U2</i>Children &amp; caregivers · can we let go, step by step</span>
+      <span class="chip"><i>U3</i>Seniors &amp; low digital literacy · they need real people</span>
+      <span class="chip"><i>U4</i>Frontline operators, couriers &amp; cleaners · they know where systems jam</span>
+      <span class="chip"><i>U5</i>Small merchants · can they keep trading</span>
+      <span class="chip"><i>U6</i>Developers &amp; startups · compliant testing</span>
+      <span class="chip"><i>U7</i>Reviewers &amp; operators · comparable evidence</span>
+    </div>
+  </div>
+</section>
+
+<!-- SEC.05 Metrics dashboard -->
+<section class="sec" id="metrics" aria-labelledby="metrics-h">
+  <div class="wrap">
+    <div class="ruler" aria-hidden="true"><div class="ticks"></div><div class="labels"><span>K16+000</span><span>K17+000</span><span>K18+000</span><span>K19+000</span><span>K20+000</span></div></div>
+    <div class="sec-head"><span class="sec-no">SEC.05</span>
+      <h2 id="metrics-h">Core Metrics: Re-computable, and Honestly Blank<span class="en">METRICS · RE-COMPUTABLE &amp; HONESTLY BLANK</span></h2>
+    </div>
+    <p class="sec-lead">Every figure below can be re-computed from <b>geometry/*.geojson</b> and <b>metrics.json</b>; all are <b>conceptual design quantities</b> inside the submitted geometry — not existing-condition surveys, not statutory indicators. Two slots stay deliberately empty: no estimates are filled in.</p>
+
+    <div class="metrics-grid">
+      <div class="metric" data-metric="site_area_sqm" data-value="11412825.386"><div class="val">11.41 km²</div><div class="lbl">Provisional Site Extent</div><div class="sub">SITE EXTENT · PROVISIONAL</div></div>
+      <div class="metric" data-metric="building_footprint_area_sqm" data-value="310807.184"><div class="val">310,800 m²</div><div class="lbl">Concept Building Footprint</div><div class="sub">CONCEPT FOOTPRINT</div></div>
+      <div class="metric" data-metric="green_ratio" data-value="0.123423"><div class="val">12.34%</div><div class="lbl">Concept Green Ratio</div><div class="sub">CONCEPT GREEN RATIO</div></div>
+      <div class="metric" data-metric="public_space_ratio" data-value="0.073944"><div class="val">7.39%</div><div class="lbl">Concept Public Space</div><div class="sub">CONCEPT PUBLIC SPACE</div></div>
+      <div class="metric" data-metric="scenario_card_count" data-value="12"><div class="val">12</div><div class="lbl">Scenario Cards</div><div class="sub">SCENARIO CARDS</div></div>
+      <div class="metric" data-metric="industry_test_count" data-value="3"><div class="val">3</div><div class="lbl">Industry Tests</div><div class="sub">INDUSTRY TESTS</div></div>
+      <div class="metric" data-metric="key_area_count" data-value="3"><div class="val">3</div><div class="lbl">Key Areas</div><div class="sub">KEY AREAS</div></div>
+      <div class="metric" data-metric="exit_gate_count" data-value="4"><div class="val">4</div><div class="lbl">Exit Gates</div><div class="sub">EXIT GATES</div></div>
+      <div class="metric empty" data-metric="floor_area_ratio" data-value="null"><div class="val">Pending official data</div><div class="lbl">Floor-Area Ratio · blank</div><div class="sub">Official boundary and control rules absent; no estimate filled</div></div>
+      <div class="metric empty" data-metric="slow_variable_baseline" data-value="null"><div class="val">Pending one-year baseline</div><div class="lbl">Slow-Variable Baseline · blank</div><div class="sub">No cleared corridor measurement; one year first</div></div>
+    </div>
+    <p class="m-honest">// Blank cells are quality control, not omission. Targets are set jointly by professional teams, users and operators — never generated by AI alone.</p>
+
+    <figure class="figure">
+      <img src="../assets/figures/metrics-evidence.en.png" alt="Metrics and decisions diagram: the upper half shows the six pilot stations and the four signal gates G1–G4; the lower annual ledger marks all five slow variables as pending the one-year baseline, with eight re-computable design quantities listed below">
+      <figcaption><span><b>FIG.02</b> Metrics &amp; decisions — from a one-year baseline to a decade public ledger</span><span>Concept expression · Provisional · Not an official redline</span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- SEC.06 Phasing as four seasons -->
+<section class="sec" id="phasing" aria-labelledby="phasing-h">
+  <div class="wrap">
+    <div class="ruler" aria-hidden="true"><div class="ticks"></div><div class="labels"><span>K20+000</span><span>K21+000</span><span>K22+000</span><span>K23+000</span><span>K24+000</span></div></div>
+    <div class="sec-head"><span class="sec-no">SEC.06</span>
+      <h2 id="phasing-h">Renewal Projects and Phasing, Written as Four Seasons<span class="en">PHASING AS FOUR SEASONS</span></h2>
+    </div>
+    <p class="sec-lead">Not a string of distant years, but four actions repeated every year. The phasing geometry expresses a first-stage discussion scope — <b>it implies no investment, no construction start, and no government arrangement</b>.</p>
+
+    <div class="seasons">
+      <div class="season sp"><span class="s-icon">SPRING</span><b>Watch the land</b><p>Zhongzhiyuan starts the canopy, soil and post-rain recovery baselines.</p></div>
+      <div class="season su"><span class="s-icon">SUMMER</span><b>Walk the routes</b><p>The three interfaces accept co-testing of heat comfort, accessibility and children's routes.</p></div>
+      <div class="season au"><span class="s-icon">AUTUMN</span><b>Watch the blocks</b><p>Dazhongsi records merchants, staffed services and public-space use.</p></div>
+      <div class="season wi"><span class="s-icon">WINTER</span><b>Open the ledger</b><p>Projects kept, revised and exited face the annual jury together.</p></div>
+    </div>
+
+    <div class="phases">
+      <div class="phase"><span class="yrs">Years 0–1</span><b>Measure, don't expand</b><p>Baseline, field audits and three reversible small pilots only.</p></div>
+      <div class="phase"><span class="yrs">Years 2–3</span><b>Expand only through the gates</b><p>Only scenarios that pass all four gates scale; the three cross-interfaces are repaired.</p></div>
+      <div class="phase"><span class="yrs">Years 4–10</span><b>The ledger decides</b><p>The annual ledger decides what is fixed in place, relocated, or removed.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SEC.07 Honesty & boundaries -->
+<section class="sec honesty" id="honesty" aria-labelledby="honesty-h">
+  <div class="wrap">
+    <div class="ruler" aria-hidden="true"><div class="ticks"></div><div class="labels"><span>K24+000</span><span>K25+000</span><span>K26+000</span><span>K27+000</span><span>K28+000</span></div></div>
+    <div class="sec-head"><span class="sec-no">SEC.07</span>
+      <h2 id="honesty-h">Honesty &amp; Boundaries<span class="en">HONESTY &amp; BOUNDARIES</span></h2>
+    </div>
+    <p class="sec-lead">This proposal is most easily misread in three places: <b>a provisional extent may be read as an official redline, future targets as current data, and conceptual operations as government commitments</b>. Every public version therefore keeps the labels "provisional constraint, concept advice, pending professional confirmation".</p>
+
+    <div class="honest-grid">
+      <div class="hcard">
+        <h3>Deliberate blanks · open to inspection</h3>
+        <ul>
+          <li><b>The constraints layer stays an empty set</b>: public materials provide no verifiable statutory redlines, heritage or municipal constraints.</li>
+          <li><b>FAR and building volume stay pending</b>: the official boundary and control rules have not arrived; no estimates are filled.</li>
+          <li><b>The five slow-variable baselines stay pending</b>: no cleared corridor-wide measurement exists; one year of measuring comes first.</li>
+          <li>These blanks are <b>quality control, not omission</b> — and no figure, illustration or narrative may fill them in.</li>
+        </ul>
+      </div>
+      <div class="hcard">
+        <h3>Boundaries that must not be crossed</h3>
+        <ul>
+          <li>The spatial extent is <b>provisional rough geometry</b> derived from announcement text and area checks; it cannot support demolition, ownership, engineering siting or statutory area conclusions.</li>
+          <li>Scenario images are concept illustrations — <b>not site photography, public opinion, or completion promises</b>; no site-survey data or resident interviews were fabricated.</li>
+          <li>Data touching children, accessibility, merchants and public services stays <b>voluntary, minimised, de-identified, human-reviewed and reversible</b>.</li>
+          <li>AI does not replace planning approval, legal opinion, engineering appraisal or public decision; <b>humans make the final judgement</b>.</li>
+          <li>Operations, phasing and scenarios are concept directions only; hosting, budgets, investment and policy <b>require later authorisation</b> — this proposal makes no government commitment.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="ruler" aria-hidden="true"><div class="ticks"></div><div class="labels"><span>K28+000</span><span>K29+000</span><span>K30+000</span><span>K31+000</span><span>END</span></div></div>
+    <div class="foot-grid">
+      <div class="foot-col">
+        <h3>TASK COVERAGE · SIX AGENT TASKS</h3>
+        <p class="task"><span class="tn">T1</span>Overall concept &amp; functional coordination: the two-clocks concept, naming and visual identity, and the three-areas-two-wings loop.</p>
+        <p class="task"><span class="tn">T2</span>Full-stack system &amp; innovation ecosystem: method references from seven global cases; the measure–research–scenario–service–governance chain.</p>
+        <p class="task"><span class="tn">T3</span>AI+ scenarios &amp; a lively city: 12 scenario cards, 3 industry tests, 7 user-group profiles.</p>
+        <p class="task"><span class="tn">T4</span>Public space &amp; pilgrimage landmarks: the north–south spine with east–west stitching, three pilgrimage nodes and an honour system.</p>
+        <p class="task"><span class="tn">T5</span>Cultural fusion narrative: the 1909 chevron translated into a brand motif and a screen-free public identity system.</p>
+        <p class="task"><span class="tn">T6</span>Event system &amp; long-term operation: open week, developer repair camps, citizen juries — all concept advice pending authorisation.</p>
+      </div>
+      <div class="foot-col">
+        <h3>SELF-CHECK STATUS</h3>
+        <p class="gate-pass"><i></i><b>DETERMINISTIC_VALIDATION</b> PASS</p>
+        <p class="gate-pass"><i></i><b>SPATIAL_REVIEW</b> PASS</p>
+        <p class="gate-pass"><i></i><b>VISUAL_PACKAGING</b> PASS</p>
+        <p class="gate-pass"><i></i><b>PROFESSIONAL_EVIDENCE</b> PASS</p>
+        <p class="foot-note">Stage formal · status formal-review-ready. Note: 3 minor flags — the three key areas are provisional geometry, not official redlines (KEY_AREA_PROVISIONAL). Authoritative record: self_check.json.</p>
+      </div>
+      <div class="foot-col">
+        <h3>SOURCES · ASSUMPTIONS · COPYRIGHT</h3>
+        <p class="foot-note">Facts come only from public or cleared materials listed in sources.json (the official announcement, the cleared taskbook excerpt, MOHURD and MNR documents, the Barrier-Free Environment Law); assumptions live in assumptions.json; all metrics re-computable from geometry/*.geojson and metrics.json.</p>
+        <p class="foot-note">Text, bilingual translation, figures, this offline HTML and the drawings were generated by Codex GPT-5.1 under a COMMUNITY-DISPLAY-ONLY licence; concept advice constitutes no official approval, investment commitment or statutory planning conclusion. See report/copyright_statement.md.</p>
+      </div>
+    </div>
+    <div class="colophon">
+      <span><b>THE SLOW VARIABLES · 京张慢变量 · V2.0</b></span>
+      <span>PROVISIONAL CONSTRAINT · CONCEPT ADVICE · PENDING PROFESSIONAL CONFIRMATION · NOT AN OFFICIAL REDLINE</span>
+      <span>Fully offline page · no external links · no analytics</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

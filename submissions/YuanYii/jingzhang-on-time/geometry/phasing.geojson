@@ -1,0 +1,50 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PH-01",
+    "phase": "P1",
+    "name": "90天首班车试点",
+    "period": "D0-D90",
+    "zone_id": "ZJ-02",
+    "raci": "R-TEST-SAFETY",
+    "gate": "G1_BASELINE",
+    "status": "registered",
+    "layer": "PHASE",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "provisional_constraint"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.331,
+       39.966
+      ],
+      [
+       116.3412,
+       39.966
+      ],
+      [
+       116.3412,
+       39.9735
+      ],
+      [
+       116.331,
+       39.9735
+      ],
+      [
+       116.331,
+       39.966
+      ]
+     ]
+    ]
+   },
+   "id": "PH-01"
+  }
+ ]
+}
