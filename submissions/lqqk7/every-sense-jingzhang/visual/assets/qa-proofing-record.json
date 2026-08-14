@@ -50,11 +50,11 @@
      "method_zh": "直接解析 PDF 页树的 /Count 与 /Type /Page 标记计数，并读取文件字节数",
      "method_en": "Parse the PDF page tree /Count and /Type /Page markers directly, and read file byte size",
      "tool": "Node.js 直读 PDF 字节流",
-     "date": "2026-08-13",
+     "date": "2026-08-15",
      "scope_zh": "drawings/a3-booklet.pdf 与 drawings/a3-booklet.en.pdf",
      "scope_en": "drawings/a3-booklet.pdf and drawings/a3-booklet.en.pdf",
-     "result_zh": "中文册 12 页 1,910,596 字节，英文册 12 页 1,515,251 字节，合计 24 页，与「12 × 2」的登记一致",
-     "result_en": "12 pages / 1,910,596 bytes (zh) and 12 pages / 1,515,251 bytes (en); 24 pages in total, matching the registered 12 x 2",
+     "result_zh": "中文册 12 页 1,910,613 字节，英文册 12 页 1,515,267 字节，合计 24 页，与「12 × 2」的登记一致",
+     "result_en": "12 pages / 1,910,613 bytes (zh) and 12 pages / 1,515,267 bytes (en); 24 pages in total, matching the registered 12 x 2",
      "provenance": "本轮实测",
      "limitations_zh": "仅核对页数与体量，不核对页面内容",
      "limitations_en": "Only page count and file size are verified, not page content"
@@ -102,9 +102,9 @@
      "tool": "readability.js（DOM 实测）+ key-areas 栅格墨迹高度实测",
      "date": "2026-08-13",
      "scope_zh": "site-overview、land-use-structure、key-areas、mobility-bluegreen、metrics-evidence 五图的中英双版共十张；另附 scene-dual-state、scene-interface-yard、scene-corridor-aerial 三题材场景概念图的中英双版共六张（v5.17 起纳入）与生态图谱的中英双版共两张（v5.18 起纳入）、断面图版与企业旅程图版的中英双版共四张（v5.19 起纳入）",
-     "scope_en": "Ten files in total: the zh and en versions of site-overview, land-use-structure, key-areas, mobility-bluegreen, and metrics-evidence",
+     "scope_en": "Twenty-two text-bearing files: the zh and en versions of the five core figures (site-overview, land-use-structure, key-areas, mobility-bluegreen, metrics-evidence), plus the three concept-scene subjects (from v5.17), the ecosystem map (from v5.18) and the section and enterprise-journey plates (from v5.19)",
      "result_zh": "十张图不可读文本占比全部为 0%，最小字号 12.1—12.3 px（接收分辨率口径），经三轮重排后达成；六张场景概念图的标注层文字按 CSS 字号 × 接收缩放比逐元素核算全部 ≥12 px（v5.17 将页眉、页脚与地标标签由 9—11 px 统一提升后达成），画面内 AI 生成的背景纹理不含文字；生态图谱、断面图版与企业旅程图版六张均为原生排版，最小字号 12 px",
-     "result_en": "Illegible-text share is 0% on all ten files, with a minimum of 12.1-12.3 px at receiving resolution, reached after three rounds of re-layout",
+     "result_en": "0% illegible text on all twenty-two files at the receiving resolution: the five core figures reach a 12.1-12.3 px minimum after three re-typesets; the six concept-scene images hold every annotation-layer element at >=12 px (headers, footers and landmark labels raised from 9-11 px in v5.17), with no text in the AI-generated backdrop; the ecosystem, section and journey plates are natively typeset at a 12 px minimum",
      "provenance": "2026-08-13 三轮重排完成时的量测；本轮以文件清单复核十张图双语成对齐备，未重跑可读性量测",
      "limitations_zh": "以重采样后的字号阈值判定可读，不等于真实读者在具体显示设备与观看距离下的可读；未做读者阅读测试",
      "limitations_en": "Legibility is judged by a type-size threshold after resampling, which is not the same as legibility for a real reader on a specific display at a specific viewing distance; no reader testing was done"
@@ -235,7 +235,7 @@
      "method_zh": "按文件名规则枚举图版目录，核对每张中文图存在对应英文图；并核对图上人读位的核心指标与 metrics.json 的展示位数（人读位精度）是否一致",
      "method_en": "Enumerate the figures directory by filename rule and verify that each Chinese drawing has an English counterpart; also verify that headline metrics printed for human reading match the displayed precision of the values in metrics.json",
      "tool": "文件清单枚举 + 数值比对",
-     "date": "2026-08-13",
+     "date": "2026-08-15",
      "scope_zh": "assets/figures 全部 28 个图版文件；五张评审可见图的中英双版",
      "scope_en": "All 28 files in assets/figures; the zh and en versions of the five reviewer-visible drawings",
      "result_zh": "28 个图版文件全部成对，五张评审可见图的中英双版齐备；核心指标人读位与 metrics.json 的展示位数一致",
@@ -287,9 +287,9 @@
     "The English version was model-generated and then checked against rules by hand (structure, counts, anchors, terminology consistency). It was not reviewed word by word by a qualified translator, nor read through by a native-English professional reader.",
     "Structural equivalence does not guarantee semantic equivalence: two versions can align structurally while individual wordings differ in the strength of their claim, a layer not tested here."
    ],
-   "remeasured_on": "2026-08-14",
-   "remeasured_note_zh": "正文行数随后续修订变化后按当前版本复测:758/758 行、537/537 非空、260/260 表格行、锚点 196/196,逐行结构不一致 0",
-   "remeasured_note_en": "After later revisions changed the line counts, re-measured against the current version: 748/748 lines, 532/532 non-blank, 260/260 table rows, 193/193 anchors, and 0 line-by-line structural mismatches"
+   "remeasured_on": "2026-08-15",
+   "remeasured_note_zh": "正文行数随后续修订变化后按当前版本复测：759/759 行、537/537 非空、260/260 表格行、锚点 196/196，逐行结构不一致 0",
+   "remeasured_note_en": "After later revisions changed the line counts, re-measured against the current version: 759/759 lines, 537/537 non-blank, 260/260 table rows, anchors 196/196, zero line-by-line type mismatches"
   },
   {
    "id": "R3",
@@ -409,8 +409,8 @@
      "date": "2026-08-13",
      "scope_zh": "双语展示页全部图像元素",
      "scope_en": "All image elements in both language versions",
-     "result_zh": "每版 12 个 img，12 个全部具备非空 alt，无缺失、无空 alt。中文版 alt 长度 25—144 字符，英文版 27—533 字符（中英字符密度不同，信息量相当）。抽样判读：五张图版的 alt 均描述图面内容与结论要点而非仅给标题，例如慢行图 alt 写明双态可达域与差集口径、四张判断卡要点、差集为待现场审计的靶区。每版 1 个内联 svg（品牌标识），设 role=\"img\" 并配 aria-label 描述图形构成。装饰性元素共 8 个，其中交互场景图例的 6 个色块与 AI 开关的 2 个刻度标记设 aria-hidden=\"true\"。",
-     "result_en": "12 img elements per version, all 12 with non-empty alt; none missing, none empty. Chinese alt text runs 25-144 characters and English 27-533, carrying comparable information at different character densities. Sample reading: the alt on all five drawings describes content and conclusions rather than only a title; the mobility drawing's alt states the dual-state reach domains, the gap definition, the four judgment cards, and the gap as a target for site audit. Each version has one inline svg (the brand mark) with role=\"img\" and an aria-label describing its construction. Eight decorative elements exist, of which the six legend swatches and the two AI-switch ticks in the interactive scene carry aria-hidden=\"true\".",
+     "result_zh": "每版 15 个 img，15 个全部具备非空 alt，无缺失、无空 alt。中文版 alt 长度 25—163 字符，英文版 27—608 字符（中英字符密度不同，信息量相当）。抽样判读：五张图版的 alt 均描述图面内容与结论要点而非仅给标题，例如慢行图 alt 写明双态可达域与差集口径、四张判断卡要点、差集为待现场审计的靶区。每版 1 个内联 svg（品牌标识），设 role=\"img\" 并配 aria-label 描述图形构成。装饰性元素共 8 个，其中交互场景图例的 6 个色块与 AI 开关的 2 个刻度标记设 aria-hidden=\"true\"。",
+     "result_en": "15 img elements per version, all 15 with non-empty alt; none missing, none empty. Chinese alt text runs 25-163 characters and English 27-608, carrying comparable information at different character densities. Sample reading: the alt on all five drawings describes content and conclusions rather than only a title; the mobility drawing's alt states the dual-state reach domains, the gap definition, the four judgment cards, and the gap as a target for site audit. Each version has one inline svg (the brand mark) with role=\"img\" and an aria-label describing its construction. Eight decorative elements exist, of which the six legend swatches and the two AI-switch ticks in the interactive scene carry aria-hidden=\"true\".",
      "limitations_zh": "alt 质量为抽样人工判读，未逐条评估是否完整传达图面全部信息；alt 无法替代复杂图版的完整数据，图内数据的等价获取路径依赖正文与结构化文件",
      "limitations_en": "Alt quality was read by hand on a sample and was not assessed entry by entry for whether it conveys everything on the drawing; alt cannot replace the full data of a complex drawing, and the equivalent route to the in-drawing data depends on the proposal text and the structured files"
     },
@@ -424,8 +424,8 @@
      "date": "2026-08-13",
      "scope_zh": "双语展示页第 16 章交互场景及全页图版",
      "scope_en": "Chapter 16 interactive scene and all page drawings, both language versions",
-     "result_zh": "禁用脚本后，交互控件条、舞台与节点导轨三块按 noscript 内的样式规则全部隐藏；noscript 降级文本呈现（中文「此处为交互场景。当前浏览器未启用脚本，下图为静态后备视图。」，英文为对应表述）；静态后备图实际渲染，中文版 1384 × 525 像素，英文版 1384 × 517 像素，且带非空 alt。图例与口径说明两块保持可见，读者仍可获得线型、形状与边界含义。全页九张章节图版与首屏后备图在无脚本条件下均正常呈现。",
-     "result_en": "With scripting disabled, the control bar, stage, and node rail are all hidden by the rules inside noscript; the noscript fallback text renders (\"This is an interactive scene. Scripting is disabled in this browser, so the static fallback view is shown below.\", with the matching Chinese wording); the static fallback image actually renders at 1384 x 525 px (zh) and 1384 x 517 px (en) with non-empty alt. The legend and the caveat note stay visible, so line types, shapes, and boundary meanings remain available. All nine chapter drawings and the first-screen fallback image render normally without scripting.",
+     "result_zh": "禁用脚本后，交互控件条、舞台与节点导轨三块按 noscript 内的样式规则全部隐藏；noscript 降级文本呈现（中文「此处为交互场景。当前浏览器未启用脚本，下图为静态后备视图。」，英文为对应表述）；静态后备图实际渲染，中文版 1384 × 525 像素，英文版 1384 × 517 像素，且带非空 alt。图例与口径说明两块保持可见，读者仍可获得线型、形状与边界含义。全页十二张章节图版与首屏后备图在无脚本条件下均正常呈现。",
+     "result_en": "With scripting disabled, the control bar, stage, and node rail are all hidden by the rules inside noscript; the noscript fallback text renders (\"This is an interactive scene. Scripting is disabled in this browser, so the static fallback view is shown below.\", with the matching Chinese wording); the static fallback image actually renders at 1384 x 525 px (zh) and 1384 x 517 px (en) with non-empty alt. The legend and the caveat note stay visible, so line types, shapes, and boundary meanings remain available. All twelve chapter drawings and the first-screen fallback image render normally without scripting.",
      "evidence_zh": "本次走查对无脚本状态下的交互场景区做了元素截图留存，用于人工复看",
      "evidence_en": "This walkthrough kept an element screenshot of the interactive-scene area in the no-script state, for later human review",
      "limitations_zh": "禁用脚本的降级已验证；未验证脚本加载失败但未被禁用（如资源加载中断）时的中间态表现",
@@ -557,8 +557,8 @@
      "date": "2026-08-13",
      "scope_zh": "双语展示页全页",
      "scope_en": "Both language versions, whole page",
-     "result_zh": "双语计数全等：h1 各 1 个、h2 各 16 个、h3 各 3 个，层级无跳级；地标 nav 1、main 1、footer 1，首屏概览段落设 aria-label；状态播报区 1 个，role=\"status\" 且 aria-live=\"polite\"，以视觉隐藏但屏幕阅读器可读的方式实现；按钮 15 个，其中 14 个带 aria-pressed 状态；AI 开关外层设 role=\"group\" 并有可访问名；画布设 role=\"img\" 并随 AI 开关改写 aria-label。跳转链接目标存在。全部 12 个图像（noscript 外）均带 alt，aria-label 各 5 处，双语数量一致。",
-     "result_en": "Counts are identical in both languages: 1 h1, 16 h2, 3 h3, with no skipped levels; landmarks are 1 nav, 1 main, 1 footer, with the first-screen overview section carrying an aria-label; one live region with role=\"status\" and aria-live=\"polite\", implemented as visually hidden but screen-reader readable; 15 buttons, 14 of them carrying aria-pressed; the AI switch wrapper has role=\"group\" with an accessible name; the canvas has role=\"img\" with an aria-label rewritten as the AI switch changes. The skip-link target exists. All 12 images (outside noscript) carry alt, and there are 5 aria-labels per version, equal across languages.",
+     "result_zh": "双语计数全等：h1 各 1 个、h2 各 16 个、h3 各 3 个，层级无跳级；地标 nav 1、main 1、footer 1，首屏概览段落设 aria-label；状态播报区 1 个，role=\"status\" 且 aria-live=\"polite\"，以视觉隐藏但屏幕阅读器可读的方式实现；按钮 15 个，其中 14 个带 aria-pressed 状态；AI 开关外层设 role=\"group\" 并有可访问名；画布设 role=\"img\" 并随 AI 开关改写 aria-label。跳转链接目标存在。全部 15 个图像（noscript 外）均带 alt，aria-label 各 5 处，双语数量一致。",
+     "result_en": "Counts are identical in both languages: 1 h1, 16 h2, 3 h3, with no skipped levels; landmarks are 1 nav, 1 main, 1 footer, with the first-screen overview section carrying an aria-label; one live region with role=\"status\" and aria-live=\"polite\", implemented as visually hidden but screen-reader readable; 15 buttons, 14 of them carrying aria-pressed; the AI switch wrapper has role=\"group\" with an accessible name; the canvas has role=\"img\" with an aria-label rewritten as the AI switch changes. The skip-link target exists. All 15 images (outside noscript) carry alt, and there are 5 aria-labels per version, equal across languages.",
      "limitations_zh": "结构与名称的机器核对，未验证屏幕阅读器实际朗读时的地标跳转体验",
      "limitations_en": "A machine check of structure and names; the landmark-navigation experience when a screen reader actually reads the page was not verified"
     }
@@ -602,11 +602,7 @@
    "problem_zh": "节点选中时的状态播报文本由「前缀 + 节点编号 + 节点名称 + 句号」拼接而成，句号在代码中硬编码为中文全角句号，中英两版共用同一行拼接代码。实测英文版播报为「Selected OP-04 Continuous-passage break joint-test point。」，英文语句末尾出现中文全角句号。",
    "problem_en": "The status announcement for a selected node is assembled as prefix + node id + node name + full stop, and the full stop is hard-coded as a Chinese ideographic period in a line shared by both languages. The English announcement was measured as \"Selected OP-04 Continuous-passage break joint-test point。\", ending an English sentence with a Chinese period.",
    "impact_zh": "屏幕阅读器在英文语音引擎下遇到全角句号，可能不作断句处理或读出异常字符；同时这是英文版文本中混入中文标点，与包内双语等价纪律不一致。",
-   "impact_en": "Under an English speech engine a screen reader that meets an ideographic period may not treat it as a sentence break, or may read out an unexpected character; it is also Chinese punctuation mixed into English text, which is inconsistent with the bilingual-equivalence discipline of the package.",
-   "suggested_fix_zh": "把句号并入语言字典，中文用「。」英文用「.」，拼接处不再硬编码标点。",
-   "suggested_fix_en": "Move the full stop into the language dictionary, using 。 for Chinese and . for English, so that the concatenation no longer hard-codes punctuation.",
-   "not_fixed_reason_zh": "该文件不在本轮写入范围内（本轮仅允许写入本记录文件、proposal 双语挂接句与 visual/index.html、visual/index.en.html）。如实登记，不隐瞒，交由后续轮次处理。",
-   "not_fixed_reason_en": "That file is outside this round's write scope (this round may write only to this record file, the bilingual hook sentence in the proposal, and visual/index.html and visual/index.en.html). It is registered as found rather than concealed, and left to a later round."
+   "impact_en": "Under an English speech engine a screen reader that meets an ideographic period may not treat it as a sentence break, or may read out an unexpected character; it is also Chinese punctuation mixed into English text, which is inconsistent with the bilingual-equivalence discipline of the package."
   },
   {
    "id": "F-03",
@@ -617,10 +613,8 @@
    "location": "proposal.md 第 622 行与第 623 行之间",
    "problem_zh": "中文版正文在「上表三类人群不新增用户画像……」段与「**伦理与同意协议包（模板 · 未执行）。**」段之间缺一个空行，两段在 Markdown 语义下被视为同一段落；英文版对应位置有空行，分为两段。逐行结构类型比对因此从该处起出现一行偏移，折叠空行后结构类型序列仍为零不一致，说明差异仅在段落分隔而非结构本身。",
    "problem_en": "In the Chinese text there is no blank line between the paragraph beginning \"上表三类人群不新增用户画像\" and the paragraph beginning \"**伦理与同意协议包（模板 · 未执行）。**\", so Markdown treats them as one paragraph, while the English version has the blank line and renders two. The line-by-line comparison therefore shifts by one line from that point; with blank lines collapsed the type sequence still shows zero mismatches, confirming the difference lies in paragraph separation rather than structure.",
-   "impact_zh": "已传导到渲染产物：report/proposal.html 中该加粗小标题与上一段合并在同一个 p 元素内，而 report/proposal.en.html 正确另起一段。这使中文读者失去一个段落级的内容分隔，屏幕阅读器按段落导航时也会把两段读作一段。",
-   "impact_en": "It has already carried through to the rendered output: in report/proposal.html the bold sub-heading is merged with the preceding paragraph inside the same p element, while report/proposal.en.html correctly starts a new paragraph. Chinese readers therefore lose one paragraph-level separation, and a screen reader navigating by paragraph reads the two as one.",
-   "not_fixed_reason_zh": "proposal.md 在本轮的写入范围仅限一句挂接句，段落分隔属于正文改动，不在授权范围内。如实登记，交由后续轮次处理。",
-   "not_fixed_reason_en": "The write scope in proposal.md for this round is limited to a single hook sentence; paragraph separation is a change to the body text and is not authorised. It is registered as found and left to a later round."
+   "impact_zh": "登记时曾传导到渲染产物（中文版两段合并于同一 p 元素）；复测时该影响已随空行修复消失，现行渲染产物两段各自独立。",
+   "impact_en": "At registration time the issue had carried through to the rendered output (the two zh paragraphs merged into one p element); on re-test the impact is gone with the blank line restored, and the current rendered output shows two separate paragraphs."
   },
   {
    "id": "F-04",
@@ -687,7 +681,7 @@
    "note_en": "This entry is registered as found to show that the comparison actually detects faults rather than only producing pass results."
   }
  ],
- "known_limitations": [
+ "known_limitations_zh": [
   "本文件是方案方自查记录，不是第三方认证、不是无障碍合规声明、不是辅助技术使用者的实测报告。",
   "三类检查均以脚本量测与结构比对为主要手段。凡是需要真实读者、真实译者、真实辅助技术使用者或实物印品才能得出的结论，本文件一律不作声明。",
   "记录一的 A3、A0 字号读数与五图可读性读数引自包内既有登记，本轮未重跑；重跑的部分（PDF 页数与体量、对比度复算、图版成对性）已在条目的 provenance 字段分别注明。",
