@@ -45,6 +45,7 @@
       "evidence_refs": [
         "proposal.md#蓝绿空间、公共空间与城市风貌",
         "assets/figures/key-areas.png",
+        "visual/assets/civic-scene-evidence.json",
         "visual/assets/open-ledger-tabletop-fixtures.json"
       ]
     },
@@ -64,6 +65,7 @@
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf",
         "visual/index.html",
+        "assets/figures/three-commons-concept-v14.png",
         "metrics.json",
         "compliance_matrix.json"
       ]
@@ -103,12 +105,12 @@
     {
       "id": "scenario_perceptibility",
       "title_zh": "场景可感知度",
-      "primary_evidence_ref": "assets/figures/scenario-protocol.png"
+      "primary_evidence_ref": "visual/assets/civic-scene-evidence.json"
     },
     {
       "id": "spatial_clarity",
       "title_zh": "空间明确性",
-      "primary_evidence_ref": "assets/figures/key-areas.png"
+      "primary_evidence_ref": "visual/assets/civic-scene-evidence.json"
     },
     {
       "id": "transferability",
