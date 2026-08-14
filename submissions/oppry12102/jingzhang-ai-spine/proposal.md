@@ -13,6 +13,8 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 # 京张智脊：百年京张AI创新带城市设计方案
 
+> 京张最不缺算力，最缺让创新可被信任的公共界面：每一处都算得清，每一个 AI 都停得下，每一个项目都问得着。
+
 ## 设计依据与资料清单
 
 本方案以北京市规划和自然资源委员会海淀分局发布的《百年京张AI创新带城市设计国际方案征集资格预审公告》为第一依据，并以 `brief/site-package/` 中经维护者登记的临时粗略边界、重点区域、枚举、指标和来源清单为机器可读依据。方案从 `design_brief.json`、`allowed_design_space.json`、`sources.json`、`enums/`、`ranges/`、`schemas/`、`data/source_registry.json` 与 `data/processed/agent_fact_pack.md` 读取任务与范围，并用 `project_scope_summary.csv`、`agent_task_requirements.csv`、`source_use_matrix.csv`、`missing_data_checklist.csv` 建立任务、范围、资料用途和缺口清单 [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [depth:existing_conditions_diagnosis]。所有设计判断都拆分为可追溯来源、可复算指标、可校验图层和可人工复核假设；公告要求达到控制性详细规划与规划综合实施方案的城市设计深度，因此文本叙述与 GeoJSON、指标表、A3 文册、A0 展板和 HTML 电子展示共同构成成果，不互相替代。
@@ -48,9 +50,9 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 本方案的总体概念为"**京张智脊**"，并把"脊"从单纯的形态隐喻转译为一套贯穿全篇的**三可机制**：**可复算（Recalculable）—可停（Stoppable）—可问责（Accountable）**。
 
-- **可复算**：每一条空间结论（面积、比例、图层数量、场景节点）都能从 `geometry/*.geojson` 与 `metrics.json` 独立复算；正文只引用可复算指标与可定位图层，不写无法从结构化数据复算的伪精确数字 [data:geometry/site_boundary.geojson#SITE-001] [metric:site_area_sqm]。
-- **可停**：每一个 AI 场景都带"无 AI 等价路径"与停止条件——人工替代、数据边界、服务窗口或安全底线任一不满足时，场景关闭而非降级硬撑 [metric:public_space_ratio] [depth:metrics_recalculation]。
-- **可问责**：每一个更新项目都有牵头/参与角色、前置条件、KPI、人工回退与治理接口；缺主体责任或预算即列为未激活，不写成落地承诺 [depth:renewal_project_list]。
+- **可复算**：每一条空间结论（面积、比例、图层数量、场景节点）都能从 `geometry/*.geojson` 与 `metrics.json` 独立复算；正文只引用可复算指标与可定位图层，不写无法从结构化数据复算的伪精确数字 [data:geometry/site_boundary.geojson#SITE-001] [metric:site_area_sqm]。任何一个走进这条走廊的人，都看得到每一个数字的来源与公式。
+- **可停**：每一个 AI 场景都带"无 AI 等价路径"与停止条件——人工替代、数据边界、服务窗口或安全底线任一不满足时，场景关闭而非降级硬撑 [metric:public_space_ratio] [depth:metrics_recalculation]。任何一个普通人在系统停掉之后，仍能靠人工窗口办成同一件事。
+- **可问责**：每一个更新项目都有牵头/参与角色、前置条件、KPI、人工回退与治理接口；缺主体责任或预算即列为未激活，不写成落地承诺 [depth:renewal_project_list]。任何一个受了损失的人，都找得到名字、找得到申诉、找得到兜底。
 
 这条"智脊"的空间本底是一条**纵贯全国最密集高校院所集群的约 9 公里绿廊**：南端西直门紧邻北京交通大学，中段学院路沿线依次分布八大学院与中国科学院多家院所，北段五道口汇聚清华大学、北京大学 [source:DATA-ALONG-UNIVERSITIES]。三可机制的意义，是把这条"存量高密度"的创新要素走廊转译为一条"可复算、可停、可问责"的公共创新界面——不是在要素密集处简单扩张研发建筑量，而是在要素最高频相遇处，把验证、开放与问责做成公共产品。
 
