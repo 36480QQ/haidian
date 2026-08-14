@@ -553,7 +553,7 @@ The correspondence between industry and space lands in [data:geometry/land_use.g
 
 ![FIG.32 How many people: the cheapest roster is the one that empties the instrument](assets/figures/roster.en.png)
 
-**And FIG.31 scheduled hours without asking how many people that is.** The year needs **88 community attendances**, and the cheapest way to cover them is eight people at one attendance a month. **That is exactly the failure `A-CLOSURE-002` describes** — this package's own most fragile assumption states that if the parties taking readings are not independent, the closure error comes out systematically small and the mechanism reports "within tolerance" having measured nothing. It fails invisibly, and in the direction that looks like success. **So the cheapest staffing answer is the one that empties the instrument.** FIG.32 turns that into a number: at any benchmark, no single person may attend more than half its readings in a year — a third-order point's 12 readings need at least 4 distinct readers, a second-order point's 4 need 4 as well, giving a **network floor of 20 people**. Not a target but a floor: below it, the independence this mechanism rests on stops being arguable. The half is chosen here and registered as `A-ROSTER-001`; the 88 attendances are not — they follow from the cadences and the crew model in `A-STAFF-001`.
+**And FIG.31 scheduled hours without asking how many people that is.** The year needs **88 community attendances**, and the cheapest way to cover them is eight people at one attendance a month. **That is exactly the failure `A-CLOSURE-002` describes** — this package's own most fragile assumption states that if the parties taking readings are not independent, the closure error comes out systematically small and the mechanism reports "within tolerance" having measured nothing. It fails invisibly, and in the direction that looks like success. **So the cheapest staffing answer is the one that empties the instrument.** FIG.32 turns that into a number: at any benchmark, no single person may attend more than half its readings in a year — a third-order point's 24 attendances need at least 6 distinct readers and a second-order point's 8 need 2, giving a **network floor of 22 people**. Not a target but a floor: below it, the independence this mechanism rests on stops being arguable. **That cap is not chosen here**: no community reader is asked for more than four attendances a year, read from the quarterly rhythm `personas.json` already states (P3 the mainstay of the quarterly open days, P8 executing the quarterly re-survey, nobody described as coming more often). An earlier version chose it as half a point's sessions, which would have asked third-order readers to turn up every two months — **more than this package says they give** — so the correction asks for more people, not fewer (errata E83).
 
 ![FIG.08 Innovation ecosystem and element mechanisms](assets/figures/ecosystem.en.png)
 
@@ -1489,12 +1489,12 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-82 entries. By finder:
+83 entries. By finder:
 
 | Found by | Count | What it says |
 |---|---|---|
 | Independent audit | 25 | The audit was run against the shipped package, not a draft |
-| The author | 45 | Found while working |
+| The author | 46 | Found while working |
 | This package's own gate | 8 | Caught at build time — which is what a gate is for |
 | **Reviewers outside this proposal** | **4** | [@anselasimov-web](https://github.com/anselasimov-web) on PR #1002; [@147228](https://github.com/147228) on PR #1065; [@Sonike](https://github.com/Sonike) on Issue #950; [@147228](https://github.com/147228) on Issue #950 / PR #1190 |
 
@@ -1517,12 +1517,12 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 | Geometry did not mean what it said | 4 |
 | A number outlived the sentence holding it | 4 |
 | A reference did not resolve | 4 |
+| A number with no file behind it | 3 |
 | Recorded where it was found, not where anyone would look | 3 |
 | A claim outlived the corpus | 2 |
 | A claim this medium makes uncheckable in principle | 2 |
 | A hard constraint nothing could fail | 2 |
 | A measurement answering a question it cannot answer | 2 |
-| A number with no file behind it | 2 |
 | A rule applied to others but not to itself | 2 |
 | A claim pointing at a total that excludes the very thing it claims | 1 |
 | Attributed to a file that refuses to do it | 1 |

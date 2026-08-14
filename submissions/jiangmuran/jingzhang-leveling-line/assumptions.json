@@ -406,12 +406,12 @@
     },
     {
       "id": "A-ROSTER-001",
-      "status": "chosen_by_this_proposal",
-      "statement": "FIG.32 用「同一个人在任一水准点一年不得出席该点一半以上的读数」反推最少读数人名册，其中「一半」由本方案自定，无外部依据；全年 88 次社区出勤与各点次数由 spatial.json 的复测周期与 A-STAFF-001 的班组模型算出，不是自定的。",
-      "impact": "这个比例决定独立性下限（20 人）。取松了，下限下降，最省的 8 人名册可能通过而 A-CLOSURE-002 描述的失效照样发生；取紧了，招募难度上升但机制更稳。",
-      "derivation_zh": "最少读数人 = ⌈该点年出勤 ÷ (年读数次 × 一半)⌉。三等点 12 次读数、24 次出勤 → 4 人；二等点 4 次读数、8 次出勤 → 4 人；五个有社区名额的点合计 **20 人**。**自定的只有「一半」**：出勤次数由复测周期与班组模型算出。选一半的理由是它把「同一个人读遍某点一整年」直接排除，而不必先定义什么叫「太多」。",
+      "status": "derived_from_shipped_content",
+      "statement": "FIG.32 用「一位社区读数人一年最多被要求出席 4 次」反推最少读数人名册。该上限不是本图自定的：personas.json 描述 P3 为季度开放日主力、P8 执行季度复测，全表没有任何人被描述为来得更勤，4 次/年因此是本包自己写下的社区参与上限。全年 88 次社区出勤与各点次数由 spatial.json 的复测周期与 A-STAFF-001 的班组模型算出。",
+      "impact": "该上限决定独立性下限（22 人）。若人物志日后描述出更高频的参与者，下限随之下降；若社区参与实际低于季度，下限上升而名册不足。本条登记的是一条引用关系，不是一个自定值——上一版曾把上限自定为「该点次数的一半」，那会让三等点读数人每两个月来一次，比本包自己说他们会来的更勤。",
+      "derivation_zh": "最少读数人 = ⌈该点年出勤 ÷ 每人每年最多 4 次⌉。三等点 24 次出勤 → 6 人；二等点 8 次 → 2 人；五个有社区名额的点合计 **22 人**。**这一条没有自定值**：出勤次数由复测周期与班组模型算出，而 4 次/年读自 `personas.json`——P3 是季度开放日主力、P8 执行季度复测，全表没有人被描述为来得更勤。**上一版把上限自定为「该点次数的一半」**，那会要求三等点读数人每两个月来一次，比本包自己写下的节奏更勤——在已有可引的数时另定一个数，是本册反复记过的那型。",
       "derivation_en": "Minimum readers = ⌈attendances ÷ (sessions × one half)⌉. A third-order point runs 12 sessions and 24 attendances → 4 people; a second-order point runs 4 and 8 → 4 as well; across the five points carrying community places, **20**. **Only the half is chosen** — the attendance counts follow from the cadences and the crew model. A half is picked because it rules out one person reading a point's whole year without first having to define what 「too much」 means.",
-      "if_wrong_zh": "取松了后果具体且隐蔽：下限下降，最省的 8 人名册可以通过，而 `A-CLOSURE-002` 描述的失效照常发生——闭合差系统性偏小，机制报「合格」而什么都没测到。**放松这个比例不会让机制报错，它会让机制继续报对**，这正是它危险的原因。取紧了只是招募更难，代价落在实施而不落在证据上。",
+      "if_wrong_zh": "上限取松了后果具体且隐蔽：下限下降，最省的 8 人名册可以通过，而 `A-CLOSURE-002` 描述的失效照常发生——闭合差系统性偏小，机制报「合格」而什么都没测到。**放松这个比例不会让机制报错，它会让机制继续报对**，这正是它危险的原因。取紧了只是招募更难，代价落在实施而不落在证据上。",
       "if_wrong_en": "Loosening it is both consequential and quiet: the floor drops, the cheapest eight-person roster passes, and the failure `A-CLOSURE-002` describes proceeds anyway — closure error systematically small, the mechanism reporting 「within tolerance」 having measured nothing. **Relaxing this ratio does not make the mechanism report a problem; it makes the mechanism keep reporting success**, which is exactly what makes it dangerous. Tightening it only makes recruitment harder — a cost that lands on delivery rather than on the evidence.",
       "what_would_close_it_zh": "取得公众参与或陪审类制度中对同一人参与频次上限的既有规定，或首轮试验的实际名册数据。",
       "what_would_close_it_en": "Obtain an existing participation or jury-service rule limiting how often one person may serve, or the actual roster from the first closure trial.",
@@ -422,8 +422,8 @@
       "owner_means_en": "this package can close it, or closes it on every build",
       "affects_metrics": [],
       "affects_metric_count": 0,
-      "depends_outside_metrics_zh": "**反向索引只看得见 `metrics.json`。** 本条不挂任何 metric，但下列已发布内容建立在它上面：FIG.32 的独立性下限 20 人与各点最少读数人。「不挂 metric」在这里不等于「没有东西依赖它」——只等于「metrics.json 里没有东西依赖它」。",
-      "depends_outside_metrics_en": "**The reverse index can only see `metrics.json`.** This record carries no metric, and the following published material rests on it: FIG.32's floor of twenty community readers and its per-point minimums. Carrying no metric does not mean nothing depends on it — only that nothing in `metrics.json` does."
+      "depends_outside_metrics_zh": "**反向索引只看得见 `metrics.json`。** 本条不挂任何 metric，但下列已发布内容建立在它上面：FIG.32 的独立性下限 22 人与各点最少读数人。「不挂 metric」在这里不等于「没有东西依赖它」——只等于「metrics.json 里没有东西依赖它」。",
+      "depends_outside_metrics_en": "**The reverse index can only see `metrics.json`.** This record carries no metric, and the following published material rests on it: FIG.32's floor of twenty-two community readers and its per-point minimums. Carrying no metric does not mean nothing depends on it — only that nothing in `metrics.json` does."
     }
   ],
   "note_zh": "**本文件是评审模型整份读取的九个文件之一，而 `geometry/` 与 `visual/assets/` 不是**（见 `scripts/review_submission.py::build_review_input`）。因此每条假设除了陈述，还写出：`derivation_zh`——这个读数实际是怎么得出的；`if_wrong_zh`——如果它错了，本方案的哪个结论会变、哪个不会；`what_would_close_it_zh`——什么能让它不再是假设；以及 `affects_metrics`——**由 metrics.json 的 assumption_ids 反向索引算出**，使读这份文件的人能看出每条假设承载了多少个数字。一条没有写出后果的假设是免责声明，不是假设。",
