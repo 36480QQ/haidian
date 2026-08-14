@@ -234,3 +234,5 @@ This proposal does not claim official approval, approved regulatory plans, final
 - Historical basis: *The Jing-Zhang Railway Works Photographic Record* (China Documentary Heritage, 2002), publicly available biography of Zhan Tianyou, *Illustrated Century of the Jing-Zhang Railway* (Wenjin Publishing, 2023), materials compiled by the National Library of China map collection
 - Classical basis: *The Doctrine of the Mean*; *The Analects*; *The Book of Rites·Record on Learning*; Zhang Hua's *Records of the Investigation of Things*; Han Yu's *On the Way*; Su Shi's *Letter on Sending Zhang Hu off to Farm*; Ban Gu's *History of the Han·Biography of the Prince of Chuyuan*
 - Full machine index: see `sources.json`, `metrics.json`, `compliance_matrix.json`, `standard_matrix.json`, and `design_depth_matrix.json` [source:SITE-PACKAGE]
+
+<!-- five-bo-lf2 -->

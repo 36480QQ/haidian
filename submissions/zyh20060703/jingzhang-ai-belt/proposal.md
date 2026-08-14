@@ -234,3 +234,5 @@ scenarios: ["ai-cultural-guide", "ai-health-service-navigation", "public-safety-
 - 史实依据：《京张路工撮影》（中国档案文献遗产工程，2002年入选）、詹天佑生平公开资料、《图说京张铁路百年变迁》（文津出版社，2023年）、国家图书馆舆图组整理资料
 - 典故依据：《中庸》《论语》《礼记·学记》、张华《博物志》、韩愈《原道》、苏轼《稼说送张琥》、班固《汉书·楚元王传赞》
 - 完整机器索引：见 `sources.json`、`metrics.json`、`compliance_matrix.json`、`standard_matrix.json` 与 `design_depth_matrix.json` [source:SITE-PACKAGE]
+
+<!-- five-bo-lf2 -->
