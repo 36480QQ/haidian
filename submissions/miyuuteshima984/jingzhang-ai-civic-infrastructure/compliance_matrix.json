@@ -602,7 +602,8 @@
       "title_zh": "重点区域范围详细设计必选项",
       "mandatory": true,
       "report_sections": [
-        "重点区域详细设计"
+        "重点区域详细设计",
+        "v0.12.g｜三条公共承诺作为双轨空间合同：从伦理宣示到空间规约"
       ],
       "geojson_layers": [
         "geometry/key_areas.geojson",
@@ -613,7 +614,8 @@
       "metrics": [
         "key_area_count",
         "conceptual_building_count",
-        "public_space_count"
+        "public_space_count",
+        "public_promise_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -642,7 +644,8 @@
       "mandatory": true,
       "report_sections": [
         "重点区域详细设计",
-        "AI 创新生态、人才画像与 AI+ 场景"
+        "AI 创新生态、人才画像与 AI+ 场景",
+        "v0.12.g｜三条公共承诺作为双轨空间合同：从伦理宣示到空间规约"
       ],
       "geojson_layers": [
         "geometry/key_areas.geojson",
@@ -650,7 +653,8 @@
         "geometry/public_space.geojson"
       ],
       "metrics": [
-        "industry_test_scenario_count"
+        "industry_test_scenario_count",
+        "public_promise_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -676,7 +680,8 @@
       "mandatory": true,
       "report_sections": [
         "重点区域详细设计",
-        "用地、建筑规模与拆改留方案"
+        "用地、建筑规模与拆改留方案",
+        "v0.12.g｜三条公共承诺作为双轨空间合同：从伦理宣示到空间规约"
       ],
       "geojson_layers": [
         "geometry/key_areas.geojson",
@@ -687,7 +692,8 @@
       "metrics": [
         "land_use_residential_sqm",
         "land_use_community_service_sqm",
-        "land_use_education_sqm"
+        "land_use_education_sqm",
+        "public_promise_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -717,7 +723,8 @@
       "mandatory": true,
       "report_sections": [
         "重点区域详细设计",
-        "交通、轨道、市政与公共服务设施"
+        "交通、轨道、市政与公共服务设施",
+        "v0.12.g｜三条公共承诺作为双轨空间合同：从伦理宣示到空间规约"
       ],
       "geojson_layers": [
         "geometry/key_areas.geojson",
@@ -726,7 +733,8 @@
       ],
       "metrics": [
         "land_use_commercial_service_sqm",
-        "east_west_stitch_count"
+        "east_west_stitch_count",
+        "public_promise_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -851,7 +859,8 @@
       "mandatory": true,
       "report_sections": [
         "AI 创新生态、人才画像与 AI+ 场景",
-        "v0.9｜REALITY-ANCHORED：只有能改变空间判断的资料才进入主叙事"
+        "v0.9｜REALITY-ANCHORED：只有能改变空间判断的资料才进入主叙事",
+        "v0.12.g｜三条公共承诺作为双轨空间合同：从伦理宣示到空间规约"
       ],
       "geojson_layers": [
         "geometry/public_space.geojson",
@@ -864,7 +873,8 @@
         "non_ai_baseline_coverage_ratio",
         "official_constraint_anchor_count",
         "reference_plot_condition_count",
-        "design_response_rule_count"
+        "design_response_rule_count",
+        "public_promise_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -907,7 +917,8 @@
       "report_sections": [
         "AI 创新生态、人才画像与 AI+ 场景",
         "蓝绿空间、公共空间与城市风貌",
-        "v0.9｜REALITY-ANCHORED：只有能改变空间判断的资料才进入主叙事"
+        "v0.9｜REALITY-ANCHORED：只有能改变空间判断的资料才进入主叙事",
+        "v0.12.g｜三条公共承诺作为双轨空间合同：从伦理宣示到空间规约"
       ],
       "geojson_layers": [
         "geometry/public_space.geojson",
@@ -919,7 +930,8 @@
         "pilgrimage_landmark_count",
         "official_constraint_anchor_count",
         "reference_plot_condition_count",
-        "design_response_rule_count"
+        "design_response_rule_count",
+        "public_promise_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
