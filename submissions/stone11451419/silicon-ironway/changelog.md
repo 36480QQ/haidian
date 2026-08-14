@@ -20,3 +20,16 @@
 - 官方 SITE_BOUNDARY / KEY_AREA polygon 发布后：替换几何并重算全部指标、图纸与 HTML
 - 现状建筑、权属、市政管线、文保控制线等资料到位后：更新拆改留、市政与风貌章节
 - 持续关注上游 Issues/PR 与评审意见，按反馈迭代
+
+## v1.1 - 2026-08-14
+
+### 变更内容
+
+- 迁移 manifest 至 schema_version 0.2.0（新包必须采用 0.2.x 的前向契约，CI 门禁）
+- 按提交 blob（LF）刷新全部 41 个文件的 sha256（修复 CI sha256 mismatch：此前在 Windows autocrlf 环境下从 CRLF 工作文件计算的哈希与 git 存储的 LF blob 不一致）
+- 重跑四门自检并回写 self_check.json（deterministic/spatial/visual/professional 全部 PASS，can_enter_formal_review=true）
+
+### 待跟进（Pending follow-up）
+
+- 官方 SITE_BOUNDARY / KEY_AREA polygon 发布后：替换几何并重算全部指标、图纸与 HTML
+- 持续关注上游 Issues/PR 与评审意见，按反馈迭代
