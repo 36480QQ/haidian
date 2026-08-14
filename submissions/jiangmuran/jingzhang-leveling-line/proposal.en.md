@@ -543,6 +543,10 @@ The re-survey cell for funding is **deliberately empty**: investment arrangement
 
 The correspondence between industry and space lands in [data:geometry/land_use.geojson#LU-001], with metric conventions in [metric:key_area_count]. The full chain of custody and the six-case comparison are drawn below — **the funding row's re-survey cell is a blank box in the drawing, and that is a judgement rather than an oversight.**
 
+![FIG.30 The year: where forty-seven readings fall](assets/figures/year.en.png)
+
+**The cost table prices a year, and no sheet had drawn the year.** Drawn, it shows something an annual total cannot: three third-order points read monthly, two second-order quarterly, three annual points once each — and if every cadence starts in the same month the year is not flat. **83.5 h falls in one month against 7.5 h in each of eight others, eleven to one.** The 139–220 h total is exactly right and completely unable to expose this: a team sized for the average cannot do that month, and a team sized for that month is idle for eleven. FIG.30's conclusion is that **this belongs to the calendar and not to resourcing**: separating the three annual readings into three months drops the peak to **31.5 h** — the same 47 sessions, the same hours, the same cost table, no change to the work at all. The arrangement is searched by enumeration rather than asserted, and **the search corrected the guess that produced the sheet**: intuition said stagger the quarterly points, and the search leaves them in place and separates the annual ones, because a datum session is 24 h against a third-order session's 2.5 h and the peak is made almost entirely by annual points landing together. If separating them did not materially beat the obvious arrangement, the build would refuse.
+
 ![FIG.08 Innovation ecosystem and element mechanisms](assets/figures/ecosystem.en.png)
 
 ### Regional coordination: extending the network into a regional one (agent.1)
@@ -1477,12 +1481,12 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-79 entries. By finder:
+80 entries. By finder:
 
 | Found by | Count | What it says |
 |---|---|---|
 | Independent audit | 25 | The audit was run against the shipped package, not a draft |
-| The author | 42 | Found while working |
+| The author | 43 | Found while working |
 | This package's own gate | 8 | Caught at build time — which is what a gate is for |
 | **Reviewers outside this proposal** | **4** | [@anselasimov-web](https://github.com/anselasimov-web) on PR #1002; [@147228](https://github.com/147228) on PR #1065; [@Sonike](https://github.com/Sonike) on Issue #950; [@147228](https://github.com/147228) on Issue #950 / PR #1190 |
 
@@ -1498,7 +1502,7 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 
 | Shape | Count |
 |---|---|
-| **The check measured the convenient thing** | **16** |
+| **The check measured the convenient thing** | **17** |
 | **A deliverable was not looked at before shipping** | **11** |
 | **Two copies of one thing drifted** | **10** |
 | **A claim outlived the package** | **5** |
@@ -1559,11 +1563,11 @@ An authorisation statement a reviewer cannot verify is not a statement. Each row
 
 <!-- LEDGERCOUNT:BEGIN -->
 
-**The file-level ledger sits outside the review input, so its result is brought in here.** `build_review_input` sends `proposal.md` and eight JSON files; neither `report/copyright_statement.md` nor `visual/assets/rights_ledger.json` is among them. **A rights ledger the reviewer structurally cannot open is, from the reviewer's position, exactly the unverifiable assertion this package objects to elsewhere.** All **126 shipped files** carry a clearance class; a file without one fails the build:
+**The file-level ledger sits outside the review input, so its result is brought in here.** `build_review_input` sends `proposal.md` and eight JSON files; neither `report/copyright_statement.md` nor `visual/assets/rights_ledger.json` is among them. **A rights ledger the reviewer structurally cannot open is, from the reviewer's position, exactly the unverifiable assertion this package objects to elsewhere.** All **128 shipped files** carry a clearance class; a file without one fails the build:
 
 | Clearance class | Files |
 |---|---|
-| `author-originated` | 104 |
+| `author-originated` | 106 |
 | `provisional-only-with-stated-limit` | 9 |
 | `author-originated-measurement` | 8 |
 | `author-originated-with-embedded-fonts` | 4 |
@@ -1618,7 +1622,7 @@ One point of citation discipline deserves stating plainly: **the cases are used 
 
 <!-- FIGINDEX:BEGIN -->
 
-There are 30 sheets, numbered FIG.00 to FIG.29. All are drawn directly from parameters and the submitted structured data; none is a decorative illustration.
+There are 31 sheets, numbered FIG.00 to FIG.30. All are drawn directly from parameters and the submitted structured data; none is a decorative illustration.
 
 | Sheet | Content | What to read on it |
 |---|---|---|
@@ -1652,6 +1656,7 @@ There are 30 sheets, numbered FIG.00 to FIG.29. All are drawn directly from para
 | FIG.27 | One reading: where a person stands, and whether they block the way | The whole participation argument rests on anyone being able to walk up to a benchmark and take a reading, and no sheet had drawn the four minutes that person spends standing there. Working back from the legible-height ratio this package already publishes, a 12 mm cap height gives a **3.0 m** reading distance, clear of the 1,500 mm route. At 6 mm it falls to 1.5 m and the reader stands in the path — **the plate stays legible and the footway stops working**. Cap height chosen, registered as A-PLATE-001 in the same commit |
 | FIG.28 | Third order: the most numerous tier, and more than one reader | The origin and the second order each have a sheet; the third did not — and it is the most numerous tier and the one an ordinary resident actually stands at. It also inherits the question FIG.27 opened and left: that sheet's 3.0 m distance is **one person's** position. From a 600 mm plate and a 30° off-axis limit the legible cone is **3.46 m** and **5 people** can read at once; a class of 30 takes 6 rounds, about 4 minutes — **that part is solved by taking turns, not by ground**. Three chosen inputs, registered as A-READ-001 in the same commit |
 | FIG.29 | The annual first-order closure: how long a route actually takes | The first order was the last tier without a sheet — and it is not a place but **an event**. From the shipped geometry, a 50 m sight and 5 minutes a setup, RT-N needs **55 setups** and RT-S **52**, together with the walk back **5.5–5.8 h** — **inside the 4.0–6.0 h the cost table publishes, and tight against its upper edge**. The build asserts the two stay compatible: lengthen the geometry or edit the band and it stops. Two chosen inputs registered as A-SURVEY-001 |
+| FIG.30 | The year: where forty-seven readings fall | FIG.29 priced one closure and the cost table prices a year; no sheet had drawn the year. With every cadence starting in the same month the peak is **83.5 h** against a **7.5 h** trough — eleven to one. A team sized for the average cannot do the peak month; one sized for the peak is idle the rest of the year. Separating the three annual readings drops the peak to **31.5 h** with **no change to the work at all**. The arrangement is searched, and **the search corrected the guess that produced the sheet** |
 
 <!-- FIGINDEX:END -->
 

@@ -251,6 +251,12 @@
    "pass": true
   },
   {
+   "sheet": "svg/year",
+   "min_font_units": 9.0,
+   "min_height_mm_at_A0": 4.73,
+   "pass": true
+  },
+  {
    "sheet": "svg.en/closure",
    "min_font_units": 9.0,
    "min_height_mm_at_A0": 4.73,
@@ -429,25 +435,31 @@
    "min_font_units": 9.0,
    "min_height_mm_at_A0": 4.73,
    "pass": true
+  },
+  {
+   "sheet": "svg.en/year",
+   "min_font_units": 9.0,
+   "min_height_mm_at_A0": 4.73,
+   "pass": true
   }
  ],
  "offline_html": {
   "visual/index.html": {
-   "images": 30,
+   "images": 31,
    "images_without_alt": 0,
    "has_lang": true,
    "heading_level_jumps": 0,
-   "figcaptions": 31,
+   "figcaptions": 32,
    "interactive_elements_needing_focus": 0,
    "has_dark_mode": true,
    "inline_script_tags": 0
   },
   "visual/index.en.html": {
-   "images": 30,
+   "images": 31,
    "images_without_alt": 0,
    "has_lang": true,
    "heading_level_jumps": 0,
-   "figcaptions": 31,
+   "figcaptions": 32,
    "interactive_elements_needing_focus": 0,
    "has_dark_mode": true,
    "inline_script_tags": 0
@@ -456,13 +468,13 @@
  "asset_references": [
   {
    "file": "visual/index.html",
-   "references": 30,
+   "references": 31,
    "missing": [],
    "remote": []
   },
   {
    "file": "visual/index.en.html",
-   "references": 30,
+   "references": 31,
    "missing": [],
    "remote": []
   },
