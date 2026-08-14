@@ -6,7 +6,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以铁路转辙器为母题（转辙即路由决策即 agent 编排），把四环协作（资料/推演/反馈/复核）落成机器可读治理制品——Civic Agent Receipt 收据 + G0-G6 门闸状态机 + 验线四步。环会自转：每次干预可审计、可回滚、可证伪。所有空间建议为开放共创建议，不替代正式规划。"
 tracks: ["civic-agent-governance", "ai-public-services", "jingzhang-heritage-narrative"]
 scenarios: ["ai-cultural-guide", "ai-health-service-navigation", "ai-traffic-walkability"]
-iteration: "v26.0"
+iteration: "v27.0"
 ---
 
 # 京张·转辙 · 城市智能体验证带
@@ -134,6 +134,8 @@ iteration: "v26.0"
 本方案对征集生态做了一次可复现普查（GitHub Trees API 全量 + 40 份随机抽样，种子 42）：截至本版，仓库已合并方案 **833 份** `[metric:ecosystem_merged_proposal_count]`，其中申报 civic-agent-governance 赛道的抽样占比 **67.5%**（27/40）`[metric:governance_track_sample_share]`——治理赛道是本征集最拥挤的主战场。本方案的应对策略是避开概念宣言层（最饱和），占据**治理制品化子路线**：Receipt / 门闸三动作 / Passport / 物质面四件套 + 真实数据 + 无障碍 + 时段 + 转辙廊，用可复算的制品而非新概念竞争。普查脚本与读数随方案迭代更新。
 
 ![核心指标复算与证据链](assets/figures/metrics-evidence.png)
+
+全量指标速查见**指标字典**（`report/narrative.md § 指标字典`，与 metrics.json 一一对应自动生成 `[metric:metric_dictionary_entry_count]`）。
 
 ## 风险、版权与合规说明
 

@@ -675,6 +675,20 @@
       "assumptions": [
         "留白验证区配套；不改法定用地性质"
       ]
+    },
+    "metric_dictionary_entry_count": {
+      "status": "known",
+      "value": 52,
+      "unit": "count",
+      "source_files": [
+        "report/narrative.md",
+        "metrics.json"
+      ],
+      "formula": "count of dictionary rows = count of metrics.json entries",
+      "confidence": "high",
+      "assumptions": [
+        "字典由资料环自动生成，与 metrics.json 同步"
+      ]
     }
   }
 }
