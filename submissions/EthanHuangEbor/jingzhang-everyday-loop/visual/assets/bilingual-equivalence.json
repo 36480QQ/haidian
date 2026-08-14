@@ -1,0 +1,138 @@
+{
+  "schema_version": "1.0",
+  "review_status": "planned_until_final_render",
+  "reviewer_type": "human_plus_agent",
+  "board_pairs": [
+    {
+      "primary": "assets/figures/site-overview.png",
+      "translation": "assets/figures/site-overview.en.png",
+      "checks": [
+        "title",
+        "numbers",
+        "ids",
+        "legend",
+        "warnings",
+        "layout"
+      ]
+    },
+    {
+      "primary": "assets/figures/land-use-structure.png",
+      "translation": "assets/figures/land-use-structure.en.png",
+      "checks": [
+        "title",
+        "numbers",
+        "ids",
+        "legend",
+        "warnings",
+        "layout"
+      ]
+    },
+    {
+      "primary": "assets/figures/key-areas.png",
+      "translation": "assets/figures/key-areas.en.png",
+      "checks": [
+        "title",
+        "numbers",
+        "ids",
+        "legend",
+        "warnings",
+        "layout"
+      ]
+    },
+    {
+      "primary": "assets/figures/mobility-bluegreen.png",
+      "translation": "assets/figures/mobility-bluegreen.en.png",
+      "checks": [
+        "title",
+        "numbers",
+        "ids",
+        "legend",
+        "warnings",
+        "layout"
+      ]
+    },
+    {
+      "primary": "assets/figures/metrics-evidence.png",
+      "translation": "assets/figures/metrics-evidence.en.png",
+      "checks": [
+        "title",
+        "numbers",
+        "ids",
+        "legend",
+        "warnings",
+        "layout"
+      ]
+    }
+  ],
+  "pdf_page_pairs": [
+    {
+      "primary": "A0-1",
+      "translation": "A0-EN-1"
+    },
+    {
+      "primary": "A0-2",
+      "translation": "A0-EN-2"
+    },
+    {
+      "primary": "A0-3",
+      "translation": "A0-EN-3"
+    },
+    {
+      "primary": "A0-4",
+      "translation": "A0-EN-4"
+    },
+    {
+      "primary": "A0-5",
+      "translation": "A0-EN-5"
+    },
+    {
+      "primary": "A3-1",
+      "translation": "A3-EN-1"
+    },
+    {
+      "primary": "A3-2",
+      "translation": "A3-EN-2"
+    },
+    {
+      "primary": "A3-3",
+      "translation": "A3-EN-3"
+    },
+    {
+      "primary": "A3-4",
+      "translation": "A3-EN-4"
+    },
+    {
+      "primary": "A3-5",
+      "translation": "A3-EN-5"
+    },
+    {
+      "primary": "A3-6",
+      "translation": "A3-EN-6"
+    },
+    {
+      "primary": "A3-7",
+      "translation": "A3-EN-7"
+    },
+    {
+      "primary": "A3-8",
+      "translation": "A3-EN-8"
+    },
+    {
+      "primary": "A3-9",
+      "translation": "A3-EN-9"
+    },
+    {
+      "primary": "A3-10",
+      "translation": "A3-EN-10"
+    },
+    {
+      "primary": "A3-11",
+      "translation": "A3-EN-11"
+    },
+    {
+      "primary": "A3-12",
+      "translation": "A3-EN-12"
+    }
+  ],
+  "disposition": "pending final visual inspection"
+}

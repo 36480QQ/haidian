@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "status": "pending final render",
+  "checks": [
+    {
+      "check": "offline_cjk",
+      "method": "offline Chromium/Poppler/manual inspection",
+      "result": "pending",
+      "limitation": "Not a legal or professional accessibility certification"
+    },
+    {
+      "check": "keyboard",
+      "method": "offline Chromium/Poppler/manual inspection",
+      "result": "pending",
+      "limitation": "Not a legal or professional accessibility certification"
+    },
+    {
+      "check": "reading_order",
+      "method": "offline Chromium/Poppler/manual inspection",
+      "result": "pending",
+      "limitation": "Not a legal or professional accessibility certification"
+    },
+    {
+      "check": "zoom_200",
+      "method": "offline Chromium/Poppler/manual inspection",
+      "result": "pending",
+      "limitation": "Not a legal or professional accessibility certification"
+    },
+    {
+      "check": "contrast",
+      "method": "offline Chromium/Poppler/manual inspection",
+      "result": "pending",
+      "limitation": "Not a legal or professional accessibility certification"
+    },
+    {
+      "check": "screen_reader_static",
+      "method": "offline Chromium/Poppler/manual inspection",
+      "result": "pending",
+      "limitation": "Not a legal or professional accessibility certification"
+    }
+  ]
+}
