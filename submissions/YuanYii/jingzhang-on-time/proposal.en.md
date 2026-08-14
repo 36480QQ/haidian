@@ -15,9 +15,20 @@ bilingual_contract_version: "1"
 
 > **Proposition: AI public services in the city should run like trains on a published timetable — punctuality is verifiable, changes require public notice, suspensions are announced in advance, delays come with compensation, and cross-service transfers are connected by schedule.**
 >
-> Version: v1.0 | 2026-08-13 | YuanYii | will be v1.0 at submission
+> Version: v2.0 | 2026-08-14 | YuanYii | second submission (v1 official-review iteration: naming de-metaphorisation + governance assertions + evidence baseline)
 >
 > One Diagram, Nine Stations, One Spine: the Jing-Zhang Railway Heritage Park serves as the operating-diagram main line (9.5 km spine), forming a three-tier spatial control system (regional study — overall design — key areas); the Urban Operating Diagram is the governance core — every AI service commitment is drawn on the diagram.
+
+## v1 → v2 Iteration Record (absorbing official review)
+
+v1 (PR #2415) was accepted into the repository after official review. v2 iterates three items per attribution analysis:
+
+1. **Naming de-metaphorisation**: metaphor-naming coverage 81% → target ≤60% — "intermediate stops (乘降所)" renamed "light service points" (functional naming); mechanism semantics (timetable registration / punctuality coverage / stop assessment) unchanged; theme anchors (JINGZHANG ON TIME / operating diagram / departure / zero-km / arrival stops) and mechanism names (timetable / maintenance window / signal) retained — originality via naming-as-mechanism is not diluted, metaphor narrative density drops.
+2. **Governance assertions explicit**: in-text assertion table added (zone_id/raci/gate/status for all 9 layers) — Tier-1 requirement lifted from geojson layer to verifiable prose.
+3. **Execution evidence strengthened**: Phase-1 2.5km operation cited + logs schema contract + pre-pilot baseline registry — R4 evidence upgraded from plan-level to measured-current + contract-first.
+4. **Provisional discount hedge**: recalculation registry explicit, six categories registered.
+
+Iteration principle: mechanism mainline (M1-M5) untouched; only expression and evidence layers change; all edits keep bilingual parity and five-gate compliance.
 
 ## 01 Design Basis and Source Register
 
@@ -25,11 +36,42 @@ The formal package follows the announcement and agent taskbook as the primary au
 
 **Proposition rationale (evidence-based choice).** The core proposition — AI public services should run like trains on a published timetable — was stress-tested against four top-scoring propositions (AI ON = AI OFF; Unplug the City; Time Justice; Four Slopes) across the seven official rubric dimensions. Its originality dimension ties with the highest-scoring propositions; its construction logic (verifiable / exitable / measurable / name-as-mechanism) absorbs each validated strength; the identified gaps lie in expression and implementation evidence, which this package closes through drawings, text and data files. See WP-01 stress test report.
 
+## Recalculation Registry for Official Data (provisional explicit)
+
+| Category | Item | v1 status | v2 handling |
+|---|---|---|---|
+| Boundary | overall boundary / key-area polygons | provisional | registered; full-package recalculation after official release (no partial fixes) |
+| Metrics | green 300m coverage / TOD 500m union | EPSG:4548 recalculated | basis unchanged; recalculated after official redline |
+| Transport | road/rail/stop data | synthetic scenario | pending on-site verification, registered |
+| Buildings | building survey / FAR | unknown | status=unknown registered; not a governance basis |
+| Connectors | Dazhongsi/Wudaokou aerial connector | pending municipal feasibility | feasibility gate JZ-04; abandoned if not passed |
+| KPIs | 6 operating-diagram KPIs | unknown pre-pilot | log contract first; produced after pilot |
+
 ## 02 Site Analysis and Data Boundaries
 
 All claims are reversible and reviewable. Drawings are generated on provisional constraint boundaries and do not constitute statutory control red lines. Official polygons, building census, FAR and real road networks are not yet published — all areas are provisional (official_boundary=false), buildings.geojson keeps status=unknown, and the demolition-retention-reconstruction proposal is a conceptual draft (confidence=low). Operating-diagram KPIs remain unknown until the first-service pilot: design blueprints are never presented as measured performance.
 
 **Verified context (public sources):** the ~9 km corridor with the first 2.5 km / 16.8 ha phase open; Qinghuayuan Station as a century-old anchor; 37 universities along the corridor; TOD stations (Wudaokou / Qinghua East Road West / Dazhongsi); ~15 main-spine pedestrian gaps (EPSG:4548 measured basis carried over).
+
+## Governance Attribute Assertions (Tier-1 requirement)
+
+[data:geometry/key_areas.geojson#KA-001] [data:geometry/phasing.geojson#PH-01]
+
+Governance objects passing the mechanism triple-check (input / decision logic / state-and-stop conditions) must carry attribute assertions on geographic layers; otherwise they are not counted in the governance tier. All 9 geojson layers assert zone_id / raci / gate / status:
+
+| Layer | zone_id | raci | gate | status | Assertion |
+|---|---|---|---|---|---|
+| site_boundary.geojson | ZN-PUB | R-DESIGN | G0 | active | Overall boundary (provisional, official_boundary=false) |
+| key_areas.geojson | ZN-PUB/ZN-KA | R-DESIGN/R-PLAN | G1 | active | Three key areas (KA-001/002/003) |
+| land_use.geojson | ZN-KA | R-PLAN | G1 | active | Four land-use classes, full coverage |
+| green_space.geojson | ZN-PUB | R-GREEN | G1 | active | 10 green patches, 3.55 km² |
+| public_space.geojson | ZN-PUB | R-COMMUNITY-CARE | G2 | active | Public-space nodes |
+| roads.geojson | ZN-KA | R-MOBILITY | G2 | active | Spine 5-band & slow-traffic concept lines |
+| buildings.geojson | ZN-KA | R-PLAN | G3 | unknown | Building survey unpublished — status=unknown registered |
+| constraints.geojson | ZN-PUB | R-DESIGN | G3 | active | Empty constraint set (official constraints unpublished) |
+| phasing.geojson | ZN-KA | R-DELIVERY | G1 | active | Six renewal projects phased (PH-01) |
+
+Rule: any layer with status=unknown is not a basis for governance effect; objects below gate G1 are not registered on the operating diagram (linked to T-01); raci roles map one-to-one to scenario-card responsibility fields (R-STATION-OPS / R-COMMUNITY-CARE / R-DELIVERY). Since v2 the in-text assertion table and geojson properties are cross-checked bidirectionally; layers missing any element do not enter mechanism triple-check.
 
 ## 03 Three-Tier Working Framework
 
@@ -113,6 +155,18 @@ Three landmarks: the JZ AI Meridian Coordinate Tower (heritage park × Qinghua E
 Six renewal projects run inside the diagram Proof-Mile loop (verify small first, scale on evidence): JZ-01 gap stitching (near term, connectivity KPI), JZ-02 signal-post + timetable-board samples (near term, online rate >95%), JZ-03 factory conversion (mid term, occupancy >80%), JZ-04 elevated links (mid term, flow KPI), JZ-05 edge computing nodes (long term, PUE <1.2), JZ-06 window maintenance system (near term, 100% execution).
 
 **90-day first service.** D0–30 diagram registration and samples; D31–60 trial operation of the demonstration interval; D61–90 punctuality assessment and G3 decision. Cost estimate 405–820k RMB (BOM basis, not a budget commitment); recruitment targets (10 most-disadvantaged volunteers / 30 general testers / 6 interns) stated as not-yet-recruited; resource release tied to gates (10/25/25/25/15%). Suspension is a qualified outcome — the first phase succeeds by completing three falsifiable judgements, not by launching three AIs.
+
+## Execution Evidence and Log Baseline
+
+[data:geometry/phasing.geojson#PH-01] [metric:punctuality_rate]
+
+**Verifiable current evidence (v2)**: Phase-1 of the Jing-Zhang Heritage Park corridor (2.5 km / 16.8 ha) is already in operation (publicly verifiable) — the physical basis and ridership anchor of the diagram main line; the 15 current spine gaps are EPSG:4548 measured (registered as baseline); 37 universities and the TOD skeleton (Wudaokou / East Qinghua Rd W. / Dazhongsi) are publicly verifiable.
+
+**Log contract (v2, code-level)**: visual/assets/logs_schema.json defines 6 event types (registration / trial / on-time / delay / suspension / compensation) with fields (service_id / time / stop / status code / human-takeover flag / evidence hash), isomorphic with check_timetable.js — logs start at pilot; KPIs use logs as the single source of truth; **pre-pilot stays unknown, no fabrication** (v1 commitment kept).
+
+**Pre-pilot baseline registry (v2)**: visual/assets/baseline_registry.json registers 3 baselines — operating corridor (2.5km/16.8ha), current gaps (15), TOD stop circles (3) — each with source and measurement basis; the pilot 90-day D61-D90 punctuality gate compares directly against them.
+
+**Evidence layering (v2)**: measured current (existing) → in-package recalculation (existing) → operation logs (post-pilot, contract first) → official-data recalculation (after release). Four layers, no mixing.
 
 ## 12 Indicator System and Compliance Matrix
 

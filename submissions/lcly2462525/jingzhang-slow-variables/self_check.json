@@ -15,7 +15,9 @@
       "proposal_files": [
         "submissions/lcly2462525/jingzhang-slow-variables/proposal.md"
       ],
-      "changelog_files": [],
+      "changelog_files": [
+        "submissions/lcly2462525/jingzhang-slow-variables/changelog.md"
+      ],
       "changed_files": [
         "submissions/lcly2462525/jingzhang-slow-variables/agent.json",
         "submissions/lcly2462525/jingzhang-slow-variables/assets/figures/key-areas.en.png",
@@ -31,6 +33,7 @@
         "submissions/lcly2462525/jingzhang-slow-variables/assets/figures/slow-variable-section.en.png",
         "submissions/lcly2462525/jingzhang-slow-variables/assets/figures/slow-variable-section.png",
         "submissions/lcly2462525/jingzhang-slow-variables/assumptions.json",
+        "submissions/lcly2462525/jingzhang-slow-variables/changelog.md",
         "submissions/lcly2462525/jingzhang-slow-variables/compliance_matrix.json",
         "submissions/lcly2462525/jingzhang-slow-variables/design_depth_matrix.json",
         "submissions/lcly2462525/jingzhang-slow-variables/drawings/a0-boards.en.pdf",
@@ -63,7 +66,7 @@
       "ai_package_stages": {
         "submissions/lcly2462525/jingzhang-slow-variables": "formal"
       },
-      "total_bytes": 14485992,
+      "total_bytes": 15468268,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -146,7 +149,7 @@
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 18,
+          "source": 19,
           "standard": 8,
           "depth": 15,
           "data": 9,

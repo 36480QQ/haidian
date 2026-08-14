@@ -10,9 +10,9 @@
         "source_type": "agent_generated_design",
         "confidence": "low",
         "geometry_role": "design_proposal",
-        "name_zh": "京张共桌公共界面",
-        "name_en": "Jing-Zhang Common Table public interface",
-        "access_principle": "step_free_non_consumption_space_human_service",
+        "name_zh": "京张和鸣公共界面",
+        "name_en": "Jing-Zhang Resonance public interface",
+        "access_principle": "step_free_non_consumption_space_human_service_quiet_lane",
         "area_sqm_declared": 382145.716
       },
       "geometry": {
@@ -884,18 +884,22 @@
         "source_type": "agent_generated_design",
         "confidence": "low",
         "geometry_role": "design_proposal",
-        "name_zh": "看得懂的 AI 柜台",
-        "name_en": "Understandable AI Counter",
-        "scenario_card_id": "T01",
-        "scenario_type": "public_service",
-        "governance": "visible_purpose_minimum_data_human_review_exit_retrospective",
+        "name_zh": "世界模型沙盒",
+        "name_en": "World Model Sandbox",
+        "scenario_card_id": "N01",
+        "scenario_type": "industry_testbed",
+        "technology_layer": "world_model",
+        "maturity_band": "R1",
+        "governance": "know_refuse_human_service_minimum_data_appeal_energy_disclosure",
+        "human_fallback": "equivalent_human_service_and_physical_stop_required",
+        "stop_condition": "safety_rights_energy_or_accessibility_gate_failed",
         "location_status": "concept_node_pending_site_survey"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          116.34793134538307,
-          39.9439431324186
+          116.34794809041159,
+          39.94273749036528
         ]
       }
     },
@@ -908,18 +912,22 @@
         "source_type": "agent_generated_design",
         "confidence": "low",
         "geometry_role": "design_proposal",
-        "name_zh": "步行机器人共路测试",
-        "name_en": "Shared-path Robot Test",
-        "scenario_card_id": "T02",
+        "name_zh": "具身智能实景实训环",
+        "name_en": "Physical AI Real-scene Training Loop",
+        "scenario_card_id": "N02",
         "scenario_type": "industry_testbed",
-        "governance": "visible_purpose_minimum_data_human_review_exit_retrospective",
+        "technology_layer": "physical_ai",
+        "maturity_band": "R2",
+        "governance": "know_refuse_human_service_minimum_data_appeal_energy_disclosure",
+        "human_fallback": "equivalent_human_service_and_physical_stop_required",
+        "stop_condition": "safety_rights_energy_or_accessibility_gate_failed",
         "location_status": "concept_node_pending_site_survey"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          116.3478332673589,
-          39.95100475015946
+          116.34787393385673,
+          39.948076762315694
         ]
       }
     },
@@ -932,18 +940,22 @@
         "source_type": "agent_generated_design",
         "confidence": "low",
         "geometry_role": "design_proposal",
-        "name_zh": "无障碍共测桌",
-        "name_en": "Accessibility Co-test",
-        "scenario_card_id": "T03",
-        "scenario_type": "public_service",
-        "governance": "visible_purpose_minimum_data_human_review_exit_retrospective",
+        "name_zh": "机器人安全认证街段",
+        "name_en": "Robot Safety Certification Street",
+        "scenario_card_id": "N03",
+        "scenario_type": "industry_testbed",
+        "technology_layer": "physical_ai",
+        "maturity_band": "R2",
+        "governance": "know_refuse_human_service_minimum_data_appeal_energy_disclosure",
+        "human_fallback": "equivalent_human_service_and_physical_stop_required",
+        "stop_condition": "safety_rights_energy_or_accessibility_gate_failed",
         "location_status": "concept_node_pending_site_survey"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          116.34773518933471,
-          39.95806636790032
+          116.34779977730184,
+          39.9534160342661
         ]
       }
     },
@@ -956,18 +968,22 @@
         "source_type": "agent_generated_design",
         "confidence": "low",
         "geometry_role": "design_proposal",
-        "name_zh": "社区照护助手",
-        "name_en": "Community Care Assistant",
-        "scenario_card_id": "T04",
+        "name_zh": "算力—余热冬季花园",
+        "name_en": "Compute-to-Climate Winter Garden",
+        "scenario_card_id": "N04",
         "scenario_type": "public_service",
-        "governance": "visible_purpose_minimum_data_human_review_exit_retrospective",
+        "technology_layer": "energy",
+        "maturity_band": "R2",
+        "governance": "know_refuse_human_service_minimum_data_appeal_energy_disclosure",
+        "human_fallback": "equivalent_human_service_and_physical_stop_required",
+        "stop_condition": "safety_rights_energy_or_accessibility_gate_failed",
         "location_status": "concept_node_pending_site_survey"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          116.34761604911466,
-          39.96512732742868
+          116.34772562074698,
+          39.9587553062165
         ]
       }
     },
@@ -980,18 +996,22 @@
         "source_type": "agent_generated_design",
         "confidence": "low",
         "geometry_role": "design_proposal",
-        "name_zh": "开源贡献诊所",
-        "name_en": "Open-source Clinic",
-        "scenario_card_id": "T05",
-        "scenario_type": "public_service",
-        "governance": "visible_purpose_minimum_data_human_review_exit_retrospective",
+        "name_zh": "城市维护机群库",
+        "name_en": "Municipal Robot Depot",
+        "scenario_card_id": "N05",
+        "scenario_type": "industry_testbed",
+        "technology_layer": "physical_ai",
+        "maturity_band": "R2",
+        "governance": "know_refuse_human_service_minimum_data_appeal_energy_disclosure",
+        "human_fallback": "equivalent_human_service_and_physical_stop_required",
+        "stop_condition": "safety_rights_energy_or_accessibility_gate_failed",
         "location_status": "concept_node_pending_site_survey"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          116.34725408330142,
-          39.972180319302666
+          116.34765146419213,
+          39.96409457816691
         ]
       }
     },
@@ -1004,18 +1024,22 @@
         "source_type": "agent_generated_design",
         "confidence": "low",
         "geometry_role": "design_proposal",
-        "name_zh": "模型安全沙盒",
-        "name_en": "Model Safety Sandbox",
-        "scenario_card_id": "T06",
-        "scenario_type": "industry_testbed",
-        "governance": "visible_purpose_minimum_data_human_review_exit_retrospective",
+        "name_zh": "开放语义孪生室",
+        "name_en": "Open Semantic Twin Room",
+        "scenario_card_id": "C01",
+        "scenario_type": "public_service",
+        "technology_layer": "digital_twin",
+        "maturity_band": "R3",
+        "governance": "know_refuse_human_service_minimum_data_appeal_energy_disclosure",
+        "human_fallback": "equivalent_human_service_and_physical_stop_required",
+        "stop_condition": "safety_rights_energy_or_accessibility_gate_failed",
         "location_status": "concept_node_pending_site_survey"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          116.34706718412689,
-          39.97923871694334
+          116.34740025892931,
+          39.96942818481674
         ]
       }
     },
@@ -1028,18 +1052,22 @@
         "source_type": "agent_generated_design",
         "confidence": "low",
         "geometry_role": "design_proposal",
-        "name_zh": "AI 慢行伴侣",
-        "name_en": "AI Walking Companion",
-        "scenario_card_id": "T07",
+        "name_zh": "公民 AI 议会",
+        "name_en": "Civic AI Assembly",
+        "scenario_card_id": "C02",
         "scenario_type": "public_service",
-        "governance": "visible_purpose_minimum_data_human_review_exit_retrospective",
+        "technology_layer": "governance",
+        "maturity_band": "R3",
+        "governance": "know_refuse_human_service_minimum_data_appeal_energy_disclosure",
+        "human_fallback": "equivalent_human_service_and_physical_stop_required",
+        "stop_condition": "safety_rights_energy_or_accessibility_gate_failed",
         "location_status": "concept_node_pending_site_survey"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          116.34701250990366,
-          39.98630080410976
+          116.34712997962247,
+          39.97476110495992
         ]
       }
     },
@@ -1052,18 +1080,22 @@
         "source_type": "agent_generated_design",
         "confidence": "low",
         "geometry_role": "design_proposal",
-        "name_zh": "多语言城市客厅",
-        "name_en": "Multilingual City Living Room",
-        "scenario_card_id": "T08",
+        "name_zh": "人工兜底服务院",
+        "name_en": "Human Service Court",
+        "scenario_card_id": "C03",
         "scenario_type": "public_service",
-        "governance": "visible_purpose_minimum_data_human_review_exit_retrospective",
+        "technology_layer": "governance",
+        "maturity_band": "R4",
+        "governance": "know_refuse_human_service_minimum_data_appeal_energy_disclosure",
+        "human_fallback": "equivalent_human_service_and_physical_stop_required",
+        "stop_condition": "safety_rights_energy_or_accessibility_gate_failed",
         "location_status": "concept_node_pending_site_survey"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          116.34718414088843,
-          39.99335711726328
+          116.34706051653869,
+          39.980099947085584
         ]
       }
     },
@@ -1076,18 +1108,22 @@
         "source_type": "agent_generated_design",
         "confidence": "low",
         "geometry_role": "design_proposal",
-        "name_zh": "端侧算力与能耗台",
-        "name_en": "Edge Compute and Energy Desk",
-        "scenario_card_id": "T09",
-        "scenario_type": "industry_testbed",
-        "governance": "visible_purpose_minimum_data_human_review_exit_retrospective",
+        "name_zh": "无障碍共测工坊",
+        "name_en": "Inclusive Co-test Workshop",
+        "scenario_card_id": "C04",
+        "scenario_type": "public_service",
+        "technology_layer": "mobility",
+        "maturity_band": "R3",
+        "governance": "know_refuse_human_service_minimum_data_appeal_energy_disclosure",
+        "human_fallback": "equivalent_human_service_and_physical_stop_required",
+        "stop_condition": "safety_rights_energy_or_accessibility_gate_failed",
         "location_status": "concept_node_pending_site_survey"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          116.34760469695345,
-          40.00040688300499
+          116.34701917749186,
+          39.98543957396752
         ]
       }
     },
@@ -1100,18 +1136,22 @@
         "source_type": "agent_generated_design",
         "confidence": "low",
         "geometry_role": "design_proposal",
-        "name_zh": "社区维修协同台",
-        "name_en": "Community Repair Desk",
-        "scenario_card_id": "T10",
+        "name_zh": "开源贡献档案馆",
+        "name_en": "Open Contribution Archive",
+        "scenario_card_id": "C05",
         "scenario_type": "public_service",
-        "governance": "visible_purpose_minimum_data_human_review_exit_retrospective",
+        "technology_layer": "governance",
+        "maturity_band": "R3",
+        "governance": "know_refuse_human_service_minimum_data_appeal_energy_disclosure",
+        "human_fallback": "equivalent_human_service_and_physical_stop_required",
+        "stop_condition": "safety_rights_energy_or_accessibility_gate_failed",
         "location_status": "concept_node_pending_site_survey"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          116.3480114197727,
-          40.00745744007364
+          116.34703027891342,
+          39.99077793467485
         ]
       }
     },
@@ -1124,18 +1164,22 @@
         "source_type": "agent_generated_design",
         "confidence": "low",
         "geometry_role": "design_proposal",
-        "name_zh": "智能终端采用门诊",
-        "name_en": "Smart-device Adoption Clinic",
-        "scenario_card_id": "T11",
-        "scenario_type": "industry_testbed",
-        "governance": "visible_purpose_minimum_data_human_review_exit_retrospective",
+        "name_zh": "城市技能学院",
+        "name_en": "Urban Skills Academy",
+        "scenario_card_id": "C06",
+        "scenario_type": "public_service",
+        "technology_layer": "governance",
+        "maturity_band": "R3",
+        "governance": "know_refuse_human_service_minimum_data_appeal_energy_disclosure",
+        "human_fallback": "equivalent_human_service_and_physical_stop_required",
+        "stop_condition": "safety_rights_energy_or_accessibility_gate_failed",
         "location_status": "concept_node_pending_site_survey"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          116.34837907607546,
-          40.01451015931529
+          116.34734826032845,
+          39.99610824535761
         ]
       }
     },
@@ -1148,18 +1192,134 @@
         "source_type": "agent_generated_design",
         "confidence": "low",
         "geometry_role": "design_proposal",
-        "name_zh": "公共空间气候桌",
-        "name_en": "Public-space Climate Table",
-        "scenario_card_id": "T12",
+        "name_zh": "辅助科技图书馆",
+        "name_en": "Assistive Technology Library",
+        "scenario_card_id": "S01",
         "scenario_type": "public_service",
-        "governance": "visible_purpose_minimum_data_human_review_exit_retrospective",
+        "technology_layer": "mobility",
+        "maturity_band": "R3",
+        "governance": "know_refuse_human_service_minimum_data_appeal_energy_disclosure",
+        "human_fallback": "equivalent_human_service_and_physical_stop_required",
+        "stop_condition": "safety_rights_energy_or_accessibility_gate_failed",
         "location_status": "concept_node_pending_site_survey"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          116.34874432544284,
-          40.02156300677688
+          116.34766624174345,
+          40.00143855604037
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SCENE-13",
+      "properties": {
+        "id": "SCENE-13",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "name_zh": "空间计算生活街",
+        "name_en": "Spatial Computing Everyday Street",
+        "scenario_card_id": "S02",
+        "scenario_type": "industry_testbed",
+        "technology_layer": "edge_network",
+        "maturity_band": "R2",
+        "governance": "know_refuse_human_service_minimum_data_appeal_energy_disclosure",
+        "human_fallback": "equivalent_human_service_and_physical_stop_required",
+        "stop_condition": "safety_rights_energy_or_accessibility_gate_failed",
+        "location_status": "concept_node_pending_site_survey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.34797374988374,
+          40.00676946584386
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SCENE-14",
+      "properties": {
+        "id": "SCENE-14",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "name_zh": "智能终端采用诊所",
+        "name_en": "Smart Device Adoption Clinic",
+        "scenario_card_id": "S03",
+        "scenario_type": "industry_testbed",
+        "technology_layer": "edge_network",
+        "maturity_band": "R2",
+        "governance": "know_refuse_human_service_minimum_data_appeal_energy_disclosure",
+        "human_fallback": "equivalent_human_service_and_physical_stop_required",
+        "stop_condition": "safety_rights_energy_or_accessibility_gate_failed",
+        "location_status": "concept_node_pending_site_survey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3482543567793,
+          40.012101869938164
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SCENE-15",
+      "properties": {
+        "id": "SCENE-15",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "name_zh": "四象限站城大厅",
+        "name_en": "Four-quadrant Transit Hall",
+        "scenario_card_id": "S04",
+        "scenario_type": "public_service",
+        "technology_layer": "mobility",
+        "maturity_band": "R3",
+        "governance": "know_refuse_human_service_minimum_data_appeal_energy_disclosure",
+        "human_fallback": "equivalent_human_service_and_physical_stop_required",
+        "stop_condition": "safety_rights_energy_or_accessibility_gate_failed",
+        "location_status": "concept_node_pending_site_survey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.34853052093511,
+          40.017434510701804
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SCENE-16",
+      "properties": {
+        "id": "SCENE-16",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "name_zh": "全球未来城市季",
+        "name_en": "Global Future City Season",
+        "scenario_card_id": "S05",
+        "scenario_type": "public_service",
+        "technology_layer": "governance",
+        "maturity_band": "R3",
+        "governance": "know_refuse_human_service_minimum_data_appeal_energy_disclosure",
+        "human_fallback": "equivalent_human_service_and_physical_stop_required",
+        "stop_condition": "safety_rights_energy_or_accessibility_gate_failed",
+        "location_status": "concept_node_pending_site_survey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.34880668509092,
+          40.02276715146545
         ]
       }
     },
@@ -1172,8 +1332,8 @@
         "source_type": "agent_generated_design",
         "confidence": "low",
         "geometry_role": "design_proposal",
-        "name_zh": "验证钟",
-        "name_en": "Validation Clock",
+        "name_zh": "工程回声塔",
+        "name_en": "Engineering Echo Tower",
         "node_type": "contribution_landmark",
         "content_rule": "permissioned_retractable_process_not_celebrity"
       },
@@ -1194,8 +1354,8 @@
         "source_type": "agent_generated_design",
         "confidence": "low",
         "geometry_role": "design_proposal",
-        "name_zh": "贡献长卷",
-        "name_en": "Contribution Scroll",
+        "name_zh": "求真开源廊",
+        "name_en": "Open Inquiry Gallery",
         "node_type": "contribution_landmark",
         "content_rule": "permissioned_retractable_process_not_celebrity"
       },
@@ -1216,8 +1376,8 @@
         "source_type": "agent_generated_design",
         "confidence": "low",
         "geometry_role": "design_proposal",
-        "name_zh": "采用回声",
-        "name_en": "Adoption Echo",
+        "name_zh": "钟律生活环",
+        "name_en": "Bell-Rhythm Life Rings",
         "node_type": "contribution_landmark",
         "content_rule": "permissioned_retractable_process_not_celebrity"
       },

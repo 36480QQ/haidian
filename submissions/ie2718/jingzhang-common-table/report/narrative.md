@@ -1,4 +1,4 @@
-# 京张共桌 / JING-ZHANG COMMON TABLE
+# 京张和鸣 / JING-ZHANG RESONANCE
 
 完整双语叙事见 `../proposal.md` 与 `../proposal.en.md`。
 
