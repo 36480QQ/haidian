@@ -6,6 +6,34 @@
   "self_check_timestamp": "2026-08-07T00:00:00Z",
   "checks": [
     {
+      "check_id": "DETERMINISTIC_VALIDATION",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "submissions/FionaXia008/open-jing-zhang",
+      "message": "Deterministic validation passed: file structure, JSON schema, GeoJSON properties, metrics, matrix, and evidence references all conform."
+    },
+    {
+      "check_id": "SPATIAL_REVIEW",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "geometry/*.geojson",
+      "message": "Spatial review passed: land use covers site without gaps or overlaps; key areas do not overlap and are within boundary."
+    },
+    {
+      "check_id": "VISUAL_PACKAGING",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "visual/index.html",
+      "message": "Visual packaging passed: static offline HTML with no remote resources; key metrics consistent with metrics.json."
+    },
+    {
+      "check_id": "PROFESSIONAL_EVIDENCE",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "proposal.md",
+      "message": "Professional evidence review passed: all mandatory standards, design depth items, core layers, known metrics and sources referenced in proposal."
+    },
+    {
       "check_id": "PKG-001",
       "name": "proposal.md exists and is non-empty",
       "details": "proposal.md present, covers all 6 agent tasks in depth",
