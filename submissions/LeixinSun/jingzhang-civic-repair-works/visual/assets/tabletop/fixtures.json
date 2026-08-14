@@ -1,10 +1,12 @@
 {
   "schema_version": "1.0.0",
+  "package_version": "v1.2",
   "claim_level": "synthetic_rule_replay",
   "field_runs": 0,
   "fixtures": [
     {
       "id": "T01",
+      "rule_family": "release_gate",
       "facts": {
         "intake_safe": true,
         "ownership_clear": false
@@ -13,6 +15,7 @@
     },
     {
       "id": "T02",
+      "rule_family": "release_gate",
       "facts": {
         "intake_safe": true,
         "ownership_clear": true,
@@ -23,6 +26,7 @@
     },
     {
       "id": "T03",
+      "rule_family": "release_gate",
       "facts": {
         "intake_safe": true,
         "ownership_clear": true,
@@ -33,6 +37,7 @@
     },
     {
       "id": "T04",
+      "rule_family": "release_gate",
       "facts": {
         "intake_safe": true,
         "ownership_clear": true,
@@ -44,6 +49,7 @@
     },
     {
       "id": "T05",
+      "rule_family": "release_gate",
       "facts": {
         "intake_safe": true,
         "ownership_clear": true,
@@ -58,6 +64,7 @@
     },
     {
       "id": "T06",
+      "rule_family": "release_gate",
       "facts": {
         "intake_safe": true,
         "ownership_clear": true,
@@ -74,6 +81,7 @@
     },
     {
       "id": "T07",
+      "rule_family": "release_gate",
       "facts": {
         "intake_safe": true,
         "ownership_clear": true,
@@ -86,6 +94,7 @@
     },
     {
       "id": "T08",
+      "rule_family": "release_gate",
       "facts": {
         "intake_safe": true,
         "ownership_clear": true,
@@ -93,6 +102,61 @@
         "qualified_route": false
       },
       "expected": "HOLD_R2"
+    },
+    {
+      "id": "T09",
+      "rule_family": "ai_authority_boundary",
+      "facts": {
+        "intake_safe": true,
+        "ownership_clear": true,
+        "hazard_suspected": false,
+        "repair_authorized": true,
+        "ai_action": "part_recommendation",
+        "part_evidence_complete": false
+      },
+      "expected": "REJECT_AI_RECOMMENDATION_R3"
+    },
+    {
+      "id": "T10",
+      "rule_family": "ai_authority_boundary",
+      "facts": {
+        "intake_safe": true,
+        "ownership_clear": true,
+        "hazard_suspected": false,
+        "repair_authorized": true,
+        "part_evidence_complete": true,
+        "retest_passed": true,
+        "ai_action": "release_decision",
+        "ai_confidence": 0.42
+      },
+      "expected": "HOLD_AI_AUTHORITY_R5"
+    },
+    {
+      "id": "T11",
+      "rule_family": "ai_authority_boundary",
+      "facts": {
+        "intake_safe": true,
+        "ownership_clear": true,
+        "ai_action": "data_request",
+        "data_scope_exceeded": true
+      },
+      "expected": "REJECT_DATA_REQUEST_R1"
+    },
+    {
+      "id": "T12",
+      "rule_family": "ai_authority_boundary",
+      "facts": {
+        "intake_safe": true,
+        "ownership_clear": true,
+        "hazard_suspected": false,
+        "repair_authorized": true,
+        "part_evidence_complete": true,
+        "retest_passed": true,
+        "erasure_required": false,
+        "accountable_signoff": false,
+        "independent_signoff": false
+      },
+      "expected": "HOLD_R5"
     }
   ]
 }

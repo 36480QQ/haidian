@@ -28,6 +28,8 @@
         "submissions/LeixinSun/jingzhang-civic-repair-works/assets/figures/metrics-evidence.png",
         "submissions/LeixinSun/jingzhang-civic-repair-works/assets/figures/mobility-bluegreen.en.png",
         "submissions/LeixinSun/jingzhang-civic-repair-works/assets/figures/mobility-bluegreen.png",
+        "submissions/LeixinSun/jingzhang-civic-repair-works/assets/figures/service-replay.en.png",
+        "submissions/LeixinSun/jingzhang-civic-repair-works/assets/figures/service-replay.png",
         "submissions/LeixinSun/jingzhang-civic-repair-works/assets/figures/site-overview.en.png",
         "submissions/LeixinSun/jingzhang-civic-repair-works/assets/figures/site-overview.png",
         "submissions/LeixinSun/jingzhang-civic-repair-works/assumptions.json",
@@ -59,6 +61,7 @@
         "submissions/LeixinSun/jingzhang-civic-repair-works/self_check.json",
         "submissions/LeixinSun/jingzhang-civic-repair-works/sources.json",
         "submissions/LeixinSun/jingzhang-civic-repair-works/standard_matrix.json",
+        "submissions/LeixinSun/jingzhang-civic-repair-works/visual/assets/ai_human_authority_matrix.json",
         "submissions/LeixinSun/jingzhang-civic-repair-works/visual/assets/asset_return_contract.json",
         "submissions/LeixinSun/jingzhang-civic-repair-works/visual/assets/asset_rights_ledger.json",
         "submissions/LeixinSun/jingzhang-civic-repair-works/visual/assets/interchangeability_test_registry.json",
@@ -78,7 +81,7 @@
       "ai_package_stages": {
         "submissions/LeixinSun/jingzhang-civic-repair-works": "formal"
       },
-      "total_bytes": 6881277,
+      "total_bytes": 8228423,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -155,7 +158,7 @@
       "summary": {
         "standard_matrix_items": 9,
         "design_depth_items": 15,
-        "known_metric_refs_required": 35,
+        "known_metric_refs_required": 37,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
@@ -163,7 +166,7 @@
           "standard": 5,
           "depth": 13,
           "data": 17,
-          "metric": 22
+          "metric": 24
         }
       }
     },

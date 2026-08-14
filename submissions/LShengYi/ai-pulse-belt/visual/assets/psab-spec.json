@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "psab_version": "1.0",
-  "package_version": "v10.8.0",
+  "package_version": "v10.9.0",
   "name": "Public Service Admission Baseline",
   "name_zh": "公共服务准入基准",
   "intended_use": "把公共 AI 服务的进入/测试/发布/退役判定提炼为机器可读、可复用的准入基准：任何服务对象可离线核验，判定不依赖方案自述。PSAB 由本方案的智脉四问（P1 可申报/P2 可测试/P3 可发布/P4 可退役）、11 字段服务护照、E0-E4 证据门、双闸门 G0-G7/C0-C7、8 状态机与四段退场红利合同提炼而成，作为与正文机制一一对应的机器可读规范。",
