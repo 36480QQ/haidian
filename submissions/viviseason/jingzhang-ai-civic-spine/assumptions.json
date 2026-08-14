@@ -2,10 +2,16 @@
   "schema_version": "0.1.0",
   "assumptions": [
     {
+      "id": "A-BOUNDARY-001",
+      "status": "provisional_constraint",
+      "statement": "The submitted site and key-area polygons are provisional rough constraints supplied for generation, visualization and intake review; they are not official planning boundaries.",
+      "impact": "All area values and ratios are reproducible only against the submitted temporary geometry and must not be used as statutory, approval, parcel, investment or engineering evidence. Replace the polygons and recalculate every dependent layer and metric when official geometry is supplied."
+    },
+    {
       "id": "A-CONTROLS-001",
       "status": "pending_professional_confirmation",
       "statement": "Detailed regulatory controls, road redlines, ownership, municipal utilities, and engineering constraints must be confirmed from official attachments before statutory use.",
-      "impact": "The package can be reviewed as a formal AI submission only for provided official boundaries and submitted design layers; statutory controls still need professional confirmation."
+      "impact": "The package can be reviewed as an AI-generated conceptual design using submitted provisional constraints; statutory controls and implementation conclusions still require official data and professional confirmation."
     }
   ]
 }

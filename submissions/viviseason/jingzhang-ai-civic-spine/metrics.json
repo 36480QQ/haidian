@@ -13,9 +13,9 @@
         "geometry/site_boundary.geojson"
       ],
       "formula": "polygon_area(submitted_site_boundary)",
-      "confidence": "high",
+      "confidence": "medium",
       "assumptions": [
-        "Trusted official boundary is present in the site package."
+        "The submitted site boundary is a provisional rough constraint derived from the repository site package, not an official planning boundary; the value is reproducible only for this temporary geometry and must be recalculated when official polygons are supplied."
       ]
     },
     "building_footprint_area_sqm": {
@@ -39,7 +39,9 @@
       ],
       "formula": "green_space_area_sqm / site_area_sqm",
       "confidence": "medium",
-      "assumptions": []
+      "assumptions": [
+        "The denominator uses the submitted provisional site boundary and is not an official planning-area ratio."
+      ]
     },
     "public_space_ratio": {
       "status": "known",
@@ -51,7 +53,9 @@
       ],
       "formula": "public_space_area_sqm / site_area_sqm",
       "confidence": "medium",
-      "assumptions": []
+      "assumptions": [
+        "The denominator uses the submitted provisional site boundary and is not an official planning-area ratio."
+      ]
     },
     "floor_area_ratio": {
       "status": "unknown",

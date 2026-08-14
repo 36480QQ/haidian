@@ -38,13 +38,13 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "f428db35c1e39e24853d1d9175264269ee2263ea6609208b99c67edd177482bb"
+      "sha256": "958484e0ee69c17c481dbd6ce9df71c12c8d5373a5230b368941c0e43c38fae9"
     },
     {
       "path": "assumptions.json",
       "role": "assumptions",
       "required": true,
-      "sha256": "f9b5f67c3a6d397d9465f8aa88dfe4d42929dacdc1d77255b139268c0f27cf9d"
+      "sha256": "ad1cd10120e1dfc9f113e4f14b068a792d7a61f2d8c9758f46ba16a5adcb1451"
     },
     {
       "path": "sources.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "5bcc7c98275a9199c7959b4be81cbd5ac73c37b531c3b7a9689e657bb031090b"
+      "sha256": "fa54e180659f62cec782cda8eb82948cc0b4bed0106c1f9eb47a6e0f9adb938d"
     },
     {
       "path": "compliance_matrix.json",
@@ -288,8 +288,11 @@
   ],
   "validation_claim": {
     "self_checked": true,
-    "known_blockers": [],
-    "data_confidence": "high",
+    "known_blockers": [
+      "The English narrative, text-bearing figures, A3/A0 drawings and visual HTML are structural placeholders and require complete equivalent English production before final submission.",
+      "The current A3/A0 drawings and five required figures are validation baselines rather than professionally resolved urban-design deliverables."
+    ],
+    "data_confidence": "mixed_provisional_and_conceptual",
     "readiness_contract": "persisted-self-check-v1"
   }
 }

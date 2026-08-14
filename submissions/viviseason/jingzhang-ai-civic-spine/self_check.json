@@ -10,12 +10,15 @@
       "ok": true,
       "errors": [],
       "warnings": [
+        "submissions/viviseason/jingzhang-ai-civic-spine/manifest.json: known_blockers present; submission may pass intake but cannot enter formal professional scoring until resolved",
         "submissions/viviseason/jingzhang-ai-civic-spine/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied"
       ],
       "proposal_files": [
         "submissions/viviseason/jingzhang-ai-civic-spine/proposal.md"
       ],
-      "changelog_files": [],
+      "changelog_files": [
+        "submissions/viviseason/jingzhang-ai-civic-spine/changelog.md"
+      ],
       "changed_files": [
         "submissions/viviseason/jingzhang-ai-civic-spine/agent.json",
         "submissions/viviseason/jingzhang-ai-civic-spine/assets/figures/key-areas.en.png",
@@ -29,6 +32,7 @@
         "submissions/viviseason/jingzhang-ai-civic-spine/assets/figures/site-overview.en.png",
         "submissions/viviseason/jingzhang-ai-civic-spine/assets/figures/site-overview.png",
         "submissions/viviseason/jingzhang-ai-civic-spine/assumptions.json",
+        "submissions/viviseason/jingzhang-ai-civic-spine/changelog.md",
         "submissions/viviseason/jingzhang-ai-civic-spine/compliance_matrix.json",
         "submissions/viviseason/jingzhang-ai-civic-spine/design_depth_matrix.json",
         "submissions/viviseason/jingzhang-ai-civic-spine/drawings/a0-boards.en.pdf",
@@ -61,7 +65,7 @@
       "ai_package_stages": {
         "submissions/viviseason/jingzhang-ai-civic-spine": "formal"
       },
-      "total_bytes": 701722,
+      "total_bytes": 713959,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -160,7 +164,9 @@
   "can_enter_formal_review": true,
   "package_type": "professional_design_package",
   "review_status": "formal-review-ready",
-  "next_actions": [],
+  "next_actions": [
+    "Resolve formal-readiness warning: submissions/viviseason/jingzhang-ai-civic-spine/manifest.json: known_blockers present; submission may pass intake but cannot enter formal professional scoring until resolved"
+  ],
   "schema_version": "0.1.0",
   "checks": [
     {
