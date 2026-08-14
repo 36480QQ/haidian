@@ -9,26 +9,24 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 tracks: ["civic-agent-governance", "jingzhang-heritage-narrative", "ai-origin-community"]
 scenarios: ["public-safety-operations-review", "robot-delivery-low-speed", "ai-traffic-walkability", "enterprise-service-copilot", "ai-cultural-guide"]
-iteration: "v2.9"
+iteration: "v3.0"
 ---
 
 # X京张 X JINGZHANG
 
-> X不是装饰符号，而是城市把冲突公开摆出来的地方。两臂都同意，AI才前进；任一臂不同意，空间立即HOLD或RETURN。TEST → RELEASE → USE → RETURN。
+> 同一件AI产品必须带着同一版本和连续证据走完三站；任何一次失败都让产品返回测试，而不是让城市迁就产品。TEST → RELEASE → USE → RETURN。
 
-## 三分钟读懂：一件产品、三个X、三次城市决定
+## 三分钟读懂：一件产品如何被城市允许，又被城市退回
 
-`X = Crossing + Cross-examination`。每一站都把一对通常被技术叙事遮住的矛盾放在同一个公共界面上：众智园把**机器自主 × 行人路权**放在受控交叉口；AI原点把**开放创新 × 权利来源**放在同一发布立面；大钟寺把**AI效率 × 拒绝AI仍可平等获得服务**放在同一到达链。两臂证据和人工责任同时成立才放行；任一臂不同意，冲突不被后台消化，而以HOLD、关闭和恢复普通用途公开呈现。[data:visual/assets/station-topology.json]
+一台低速具身服务原型以0.8版进入众智园。09:17，它在“行人意外穿越”工况中越界，现场人员5秒内急停，Test Receipt记为FAIL；机器撤出，公众院落继续开放。0.9版完成复测后取得新的Test Receipt，在AI原点公开对应版本、许可、责任人与撤回办法，才取得有期限的Release Ticket。它随后进入大钟寺限定试用；72岁的周阿姨不需要手机即可指出设备和排队影响无障碍主链，Public Verdict立即变为RETURN。试用关闭、人工服务继续，0.10版带着新工况返回众智园。[data:visual/assets/x-lifecycle-valid-example.json] [data:visual/assets/lived-lifecycle.json]
 
-公众正线、AI侧线和人工道岔仍是空间安全底线，但不再冒充本方案的唯一原创性。真正的X是三个不可互换的城市冲突，以及它们各自逼出的空间决定：测试口袋只能通过有人控制且公众优先的交叉点接近公共边缘；发布、权利与撤回必须在同一可见界面；无AI人工路径不得比可选AI路径更曲折。[data:visual/assets/station-topology-results.json] [metric:station_topology_pass_count]
+这就是X：不是一个Logo，也不是一串后台审批，而是产品每进入下一段城市空间时都要接受一次公开交叉核对。技术PASS不能替代权利判断，Release Ticket不能替代公众决定，新版本PASS也不能覆盖0.8版的失败历史。[data:visual/assets/verify-x-lifecycle.js] [metric:x_lifecycle_test_case_count]
 
-同一台低速具身服务原型以0.8版进入众智园测试侧线，在意外穿越工况中FAIL；0.9版复测后取得 Test Receipt，在AI原点补齐权利链后取得限定 Release Ticket，再进入大钟寺城市试用侧线。周阿姨不需要手机即可提出无障碍通行异议，Public Verdict随即改为RETURN：试用侧线关闭，人工服务和公众正线继续；0.10版带着新工况折返众智园。新PASS不能覆盖0.8版失败历史，技术PASS也不能替代权利判断或公众决定。[data:visual/assets/x-lifecycle-valid-example.json] [metric:x_lifecycle_test_case_count]
-
-| X站 | 公开交叉的两臂 | 不可退让的空间决定 | 运行凭证 | 不成立时 |
+| 城市决定 | 这一站只回答什么 | 公众能看见什么 | 运行凭证 | 失败后城市怎样继续 |
 | --- | --- | --- | --- | --- |
-| 众智园 TEST | 机器自主 × 行人路权 | 机器只能经有人值守、公众优先、无旁路的受控交叉点进入测试口袋 | Test Receipt | TEST不开；机器撤出，院落与公共主链继续 |
-| AI原点 RELEASE | 开放创新 × 权利来源 | 方法、许可状态和撤回动作必须在同一公共发布界面可见 | Release Ticket | RELEASE不开；撤下发布，教学与协作继续 |
-| 大钟寺 USE | AI效率 × 平等拒绝权 | 人工非AI路径不长于AI试用路径，投诉点与试用口袋同接公共主链 | Public Verdict | USE不开；设备折返，商业、休息与人工服务继续 |
+| 众智园 TEST | 这个精确版本能否在声明边界内安全工作？ | 测试口袋、值守人、物理急停、失败记录 | Test Receipt | 机器撤出；院落、步行与开放绿地继续 |
+| AI原点 RELEASE | 这个版本是否有权被公开和有限使用？ | 方法、许可状态、责任人与撤回动作 | Release Ticket | 撤下发布；教学、协作与普通展览继续 |
+| 大钟寺 USE | 公众是否愿意让它继续留在城市服务中？ | 有限试用、人工等价服务、匿名投诉与RETURN状态 | Public Verdict | 设备折返；商业、休息、人工服务与无障碍主链继续 |
 
 ![X京张一件产品、三站、三张票与RETURN运行总图](assets/figures/x-operating-proof.png)
 
@@ -138,23 +136,23 @@ Barcelona 22@ 提供产业、公共空间和生活混合更新；Toronto Port La
 
 众智园形成“研发院—红队花园—具身试场—清河复原带”。测试空间与公众慢行通过绿化缓冲、低速界面和人工接管点分离；测试失败时设备撤场、数据冻结、围界拆除并恢复日常开放。首层展示只呈现可公开的测试方法、失败记录和安全边界，不展示攻击细节或未授权企业材料。前置依赖为官方边界、河道与防洪、交通、安全、噪声、能源和运营主体。
 
-这里的X不是图案，而是一处必须由空间解决的路权冲突。机器测试口袋只有一个受控连接点；连接点必须同时具备有人值守、物理急停和公众优先三种状态，且移除该点后机器路径不能绕行抵达公共边缘。若正式落位无法形成这种“无旁路交叉”，TEST不开放，而不是让公众绕开测试。[data:visual/assets/station-topology.json#ZHONGZHI_TEST]
+首期只做一个机器测试口袋和一个受控连接点。连接点必须同时具备有人值守、物理急停和公众优先，且移除连接点后机器不存在抵达公共边缘的旁路。正式落位若无法形成这种关系，TEST不开放，而不是让公众绕开测试。[data:visual/assets/station-topology.json#ZHONGZHI_TEST]
 
 ### 6.2 AI原点：开源转化街坊
 
 AI原点形成“成果披露前台—开源协作首层—人才生活庭院—公共问题桌”。高校成果进入城市前先记录权利状态、证据等级和适用边界；夜间协作空间与居民安静界面分区；南北两条慢行缝合连接校园、园区和社区。争议项目不得进入荣誉展示，撤回授权后贡献信息按期限移除。
 
-这里的X是一条双向发布立面：一侧让公众看见方法、版本与适用边界，另一侧让公众看见许可、责任与撤回动作，末端直接接入可恢复为普通教学的协作工作室。三者不能分散到互不相见的后台；若“发布”可见而“撤回”不可见，RELEASE不开放。[data:visual/assets/station-topology.json#AI_ORIGIN_RELEASE]
+首期发布界面采用一条双面立面：一侧显示方法、版本与适用边界，另一侧显示许可、责任与撤回动作，末端直接接入可恢复为普通教学的协作工作室。三者不能分散到互不相见的后台；若“发布”可见而“撤回”不可见，RELEASE不开放。[data:visual/assets/station-topology.json#AI_ORIGIN_RELEASE]
 
 ### 6.3 大钟寺：城市试用界面
 
 大钟寺形成“轨道到达厅—智能终端试用街—数据权利会客厅—国际路演客厅”。四象限步行联系是概念目标，具体过街和竖向形式待轨道、道路和管线资料确认。公众可在明确告知、有人服务和无AI等价通道下试用产品；试用不等于采购、认证或永久收集数据。
 
-这里的X把可选试用与普通城市服务放在同一起点。人工非AI服务必须从公共主链直接到达，拓扑步数不得多于AI试用；投诉点同时邻接公共主链和试用口袋，使异议无需进入产品界面即可触发RETURN。若等价路径更远、需要扫码或投诉点藏在后台，USE不开放。[data:visual/assets/station-topology.json#DAZHONGSI_USE]
+首期把可选试用与普通城市服务放在同一起点。人工非AI服务从公共主链直接到达，拓扑步数不得多于AI试用；投诉点同时邻接公共主链和试用口袋，使异议无需进入产品界面即可触发RETURN。若等价路径更远、需要扫码或投诉点藏在后台，USE不开放。[data:visual/assets/station-topology.json#DAZHONGSI_USE]
 
 ![三站概念性空间体验：设备撤离后仍可服务日常公共生活](assets/figures/station-experiences.png)
 
-三张效果图表达的是不同的普通城市生活，不是三处AI展厅：众智园首先是一座可穿行的测试庭院，AI原点首先是可学习和协作的开放首层，大钟寺首先是可到达、休息和获得人工服务的城市客厅。X只在冲突发生处显形；没有冲突时，空间不要求公众持续观看技术。
+三张效果图表达的是不同的普通城市生活，不是三处AI展厅：众智园首先是一座可穿行的测试庭院，AI原点首先是可学习和协作的开放首层，大钟寺首先是可到达、休息和获得人工服务的城市客厅。AI设备只占用可关闭的局部；普通使用不要求公众持续观看技术。
 
 ![三处重点区概念总平、场景布点与实施依赖](assets/figures/key-areas.png)
 
@@ -304,7 +302,7 @@ SC-03不再停留在“具身智能”标签，而采用可执行的 X Receipt �
 
 AI原点是**发布侧线**：“方法台—权利台—撤回界面”依次接入首层公众正线。方法教学和协作空间属于正线，权利失败只撤下产品状态，不关闭学习与合作；旧票据到期后不再亮灯。大钟寺是**城市试用侧线**：“有限试用口袋”与人工/非AI服务带平行，公众不穿过试用区也能到达商业、休息和交通目的地；异议发生后工作人员在不关闭主链的情况下清空设备与排队。三种侧线分别容纳技术失败、权利失败和公众使用失败；围界可拆、标志可换、服务并行和通道永久开放不是装饰语言，而是RETURN能否执行的空间条件。
 
-三站拓扑被表达为节点、连接、AI依赖、无障碍属性、可独立关闭和RETURN恢复用途，而不是虚构尺寸。验证器逐站关闭全部AI节点，检查公众主链、侧袋隔离、无AI服务、无障碍独立性和三站差异，并进一步检查三个X的开场硬门槛。历史首次运行曾以 `22/23` 拒绝AI原点的恢复用途；v2.9在保留该修复的基础上加入六项冲突合同与站点专属检查，当前为 `29/29 PASS`。[data:visual/assets/station-topology.json] [data:visual/assets/station-topology-results.json]
+三站拓扑被表达为节点、连接、AI依赖、无障碍属性、可独立关闭和RETURN恢复用途，而不是虚构尺寸。验证器逐站关闭全部AI节点，检查公众主链、侧袋隔离、无AI服务、无障碍独立性和三站差异，再检查众智园无旁路、AI原点撤回共可见和大钟寺非AI路径等价。历史首次运行曾以 `22/23` 拒绝AI原点的恢复用途；修复并补齐站点专属检查后当前为 `29/29 PASS`。该结果只进入专业附录，不作为现场证据或首层价值主张。[data:visual/assets/station-topology.json] [data:visual/assets/station-topology-results.json]
 
 ![三座X站在AI关闭与RETURN状态下的概念拓扑验证](assets/figures/station-topology-proof.png)
 

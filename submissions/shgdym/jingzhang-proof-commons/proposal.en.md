@@ -10,26 +10,24 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 tracks: ["civic-agent-governance", "jingzhang-heritage-narrative", "ai-origin-community"]
 scenarios: ["public-safety-operations-review", "robot-delivery-low-speed", "ai-traffic-walkability", "enterprise-service-copilot", "ai-cultural-guide"]
-iteration: "v2.9"
+iteration: "v3.0"
 ---
 
 # X JINGZHANG
 
-> X is not decoration. It is where the city makes a conflict public. AI moves only when both arms agree; disagreement makes the place HOLD or RETURN. TEST → RELEASE → USE → RETURN.
+> The same AI product must carry the same version and a continuous evidence chain through three stations. Any failure returns the product to TEST; the city does not adapt itself around product failure. TEST → RELEASE → USE → RETURN.
 
-## Understand it in three minutes: one product, three Xs, three city decisions
+## Understand it in three minutes: how one product is admitted, then returned by the city
 
-`X = Crossing + Cross-examination`. Each station places two claims that technology narratives usually separate onto one public interface. Zhongzhi crosses **machine autonomy x pedestrian right-of-way**. AI Origin crosses **open innovation x rights provenance**. Dazhongsi crosses **AI efficiency x equal service when a person refuses AI**. Both arms and their accountable people must agree before movement. Disagreement is not absorbed by a backend process; it appears publicly as HOLD, closure and restoration of ordinary use. [data:visual/assets/station-topology.json]
+A low-speed embodied-service prototype enters Zhongzhi as version 0.8. At 09:17 it crosses its envelope during an unexpected-pedestrian fixture; staff stop it within five seconds and the Test Receipt records FAIL. The machine leaves while the court remains open. Version 0.9 passes a new test, then exposes its exact version, licence, accountable people and withdrawal action at AI Origin before receiving a time-limited Release Ticket. During bounded use at Dazhongsi, 72-year-old Ms Zhou objects without a smartphone because equipment and a queue affect the accessible chain. The Public Verdict becomes RETURN. Trial closes, staffed service continues, and version 0.10 travels back to Zhongzhi with a new fixture. [data:visual/assets/x-lifecycle-valid-example.json] [data:visual/assets/lived-lifecycle.json]
 
-The civic main line, AI siding and staffed turnout remain spatial safety rules, but no longer claim to be the project's sole originality. The actual X is three non-interchangeable urban conflicts and the spatial decisions they force: a machine pocket reaches the public edge only through a staffed, public-priority crossing; method, rights and withdrawal share one visible release frontage; and the staffed non-AI route cannot be less direct than optional AI use. [data:visual/assets/station-topology-results.json] [metric:station_topology_pass_count]
+This is X: not a logo or a chain of invisible approvals, but a public cross-check whenever a product seeks entry to the next section of city space. Technical PASS cannot substitute for rights, a Release Ticket cannot substitute for public judgment, and a new PASS cannot erase version 0.8's failure history. [data:visual/assets/verify-x-lifecycle.js] [metric:x_lifecycle_test_case_count]
 
-The same low-speed embodied-service prototype enters Zhongzhi's test siding as version 0.8 and FAILS an unexpected-crossing fixture. Version 0.9 passes retesting, receives a Test Receipt, closes its rights chain at AI Origin and receives a limited Release Ticket. During limited use on Dazhongsi's urban-trial siding, Ms Zhou can raise an accessible-route objection without a smartphone. The Public Verdict becomes RETURN: the siding closes, staffed service and the civic main line continue, and version 0.10 returns to Zhongzhi with a new fixture. Its new PASS cannot erase the 0.8 failure, and technical PASS cannot substitute for rights or public judgment. [data:visual/assets/x-lifecycle-valid-example.json] [metric:x_lifecycle_test_case_count]
-
-| X station | Two arms made public | Non-negotiable spatial decision | Operating ticket | When it fails |
+| City decision | The station answers only | What the public can see | Operating ticket | How the city continues after failure |
 | --- | --- | --- | --- | --- |
-| Zhongzhi TEST | Machine autonomy x pedestrian right-of-way | Machine access passes one staffed, public-priority crossing with no bypass | Test Receipt | TEST stays closed; machine leaves while court and civic spine continue |
-| AI Origin RELEASE | Open innovation x rights provenance | Method, licence status and withdrawal action share one public release frontage | Release Ticket | RELEASE stays closed; publication leaves while learning and collaboration continue |
-| Dazhongsi USE | AI efficiency x equal refusal | Staffed non-AI route is no longer than AI use; complaint touches the same public chain | Public Verdict | USE stays closed; device returns while commerce, rest and staffed service continue |
+| Zhongzhi TEST | Can this exact version work within its declared envelope? | Test pocket, named staff, physical stop and failure record | Test Receipt | Machine leaves; court, walking and open green continue |
+| AI Origin RELEASE | May this version be made public and used within limits? | Method, licence status, accountable people and withdrawal action | Release Ticket | Publication leaves; learning, collaboration and ordinary display continue |
+| Dazhongsi USE | Does the public accept its continued presence in city service? | Limited trial, staffed equivalent, anonymous complaint and RETURN status | Public Verdict | Device returns; commerce, rest, staffed service and accessible chain continue |
 
 ![One product, three stations, three tickets and the RETURN operating loop](assets/figures/x-operating-proof.en.png)
 
@@ -139,23 +137,23 @@ The three key areas share one evidence template but use distinct prototypes: Zho
 
 Zhongzhi Park combines R&D courts, a red-team garden, an embodied-AI test field, and a Qinghe restoration edge. Green buffers, low-speed interfaces, and staffed takeover points separate testing from public walking. Failure triggers equipment removal, data freeze, enclosure removal, and return to ordinary use. Public displays show methods, failures, and safety boundaries rather than attack details or unauthorised enterprise material. Official boundary, flood, traffic, safety, noise, energy, and operating responsibility are prerequisites.
 
-Here X is not a graphic but a right-of-way conflict that space must resolve. The machine pocket has one controlled connection. It must combine staff presence, physical stop and public priority; removing that node must leave no bypass from machine movement to the public edge. If formal design cannot create this no-bypass crossing, TEST does not open rather than making people detour. [data:visual/assets/station-topology.json#ZHONGZHI_TEST]
+The first stage builds one machine test pocket with one controlled connection. It combines staff presence, physical stop and public priority; removing that node leaves no bypass from machine movement to the public edge. If formal design cannot create this relation, TEST does not open rather than making people detour. [data:visual/assets/station-topology.json#ZHONGZHI_TEST]
 
 ### 6.2 AI Origin: open-source translation block
 
 AI Origin combines a disclosure front desk, open collaboration ground floors, talent courtyards, and public problem tables. University outputs record rights, evidence level, and applicability before entering the city. Night collaboration and quiet residential edges are separated. Two east-west stitches connect campus, park, and neighbourhood. Disputed projects cannot enter the honour display, and withdrawn contributions are removed within the stated period.
 
-Here X is a two-sided release frontage. One side exposes method, version and scope; the other exposes licence, responsibility and withdrawal. The end connects directly to a studio that returns to ordinary learning after closure. These actions cannot be hidden in separate back offices. If publication is visible but withdrawal is not, RELEASE does not open. [data:visual/assets/station-topology.json#AI_ORIGIN_RELEASE]
+The first-stage release interface is a two-sided frontage. One side exposes method, version and scope; the other exposes licence, responsibility and withdrawal. The end connects directly to a studio that returns to ordinary learning after closure. These actions cannot be hidden in separate back offices. If publication is visible but withdrawal is not, RELEASE does not open. [data:visual/assets/station-topology.json#AI_ORIGIN_RELEASE]
 
 ### 6.3 Dazhongsi: urban trial interface
 
 Dazhongsi combines a transit arrival hall, intelligent-device trial street, data-rights salon, and international demo lounge. Four-quadrant pedestrian connection remains a concept target pending transit, road, and utility evidence. People test products with clear notice, staffed service, and a non-AI channel. Trial does not mean purchase, certification, or permanent data capture.
 
-Here X places optional trial and ordinary city service at the same start. Staffed non-AI service connects directly to the civic spine and cannot require more topology steps than AI use. A complaint point touches both the civic spine and trial pocket, so objection can trigger RETURN without entering the product interface. If equivalence is longer, requires a scan, or hides complaint backstage, USE does not open. [data:visual/assets/station-topology.json#DAZHONGSI_USE]
+The first stage places optional trial and ordinary city service at the same start. Staffed non-AI service connects directly to the civic spine and cannot require more topology steps than AI use. A complaint point touches both the civic spine and trial pocket, so objection can trigger RETURN without entering the product interface. If equivalence is longer, requires a scan, or hides complaint backstage, USE does not open. [data:visual/assets/station-topology.json#DAZHONGSI_USE]
 
 ![Concept experiences at three stations: civic life remains after equipment leaves](assets/figures/station-experiences.en.png)
 
-The images describe three kinds of ordinary city life, not three AI showrooms. Zhongzhi is first a traversable test court, AI Origin an open place to learn and collaborate, and Dazhongsi an urban room for arrival, rest and staffed service. X becomes visible only where a conflict occurs; otherwise the public is not required to keep watching technology.
+The images describe three kinds of ordinary city life, not three AI showrooms. Zhongzhi is first a traversable test court, AI Origin an open place to learn and collaborate, and Dazhongsi an urban room for arrival, rest and staffed service. AI equipment occupies only a closable local area; ordinary use does not require the public to keep watching technology.
 
 ![Three key-area plans, scene locations and dependencies](assets/figures/key-areas.en.png)
 
@@ -305,7 +303,7 @@ Without X, the three key areas could collapse into a laboratory, launch hall and
 
 AI Origin is a **release siding**: methods table, rights table and withdrawal interface join the ground-floor civic main line in sequence. Learning and collaboration belong to the main line, so a rights failure withdraws the product without closing either. Dazhongsi is an **urban-use siding**: its limited trial pocket runs parallel to staffed/non-AI service; people reach commerce, rest and transport without crossing it, and staff clear devices and queues without closing the main line. The three sidings absorb technical, rights and public-use failures respectively. Removable edges, replaceable status, parallel service and permanent movement are therefore the spatial conditions for RETURN, not visual motifs.
 
-The three station plans are encoded as nodes, links, AI dependency, accessibility, independent closure and ordinary RETURN uses, without invented dimensions. The verifier closes every AI node and checks civic continuity, pocket isolation, non-AI service, accessibility independence and distinct graphs, then tests the three X-specific opening gates. The historical first run rejected AI Origin at `22/23` for missing recovery use. Version 2.9 retains that repair and adds six conflict-contract and station-specific checks; the current result is `29/29 PASS`. [data:visual/assets/station-topology.json] [data:visual/assets/station-topology-results.json]
+The three station plans are encoded as nodes, links, AI dependency, accessibility, independent closure and ordinary RETURN uses, without invented dimensions. The verifier closes every AI node and checks civic continuity, pocket isolation, non-AI service, accessibility independence and distinct graphs, then checks Zhongzhi no-bypass access, co-visible withdrawal at AI Origin and non-AI route parity at Dazhongsi. The historical first run rejected AI Origin at `22/23` for missing recovery use; after repair and station-specific checks the current result is `29/29 PASS`. This remains professional appendix evidence, not a field claim or first-layer value proposition. [data:visual/assets/station-topology.json] [data:visual/assets/station-topology-results.json]
 
 ![Concept topology of the three X stations under AI closure and RETURN](assets/figures/station-topology-proof.en.png)
 
