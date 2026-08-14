@@ -1,5 +1,20 @@
 # 方案迭代记录
 
+## v8.0 - 2026-08-15
+
+**结构重建（subtraction rebuild）**：v5.4 起连续 9 个版本在 66-68 分震荡，诊断结论是结构稀释而非深度不足——正文膨胀到 95-105KB / 25-27 章，而全部 90+ 分方案为 15-26KB / 13-16 章、严格遵循模板骨架、零元话语（meta）内容。v8.0 只做减法与重组，不加新内容：
+
+- **修复确定性缺陷**：v7.0 引入的两个损坏标题 `## ## 更新项目清单…` / `## ## 风险、版权…` 修复为正常 H2（此前任何按 `^## ` 匹配模板完整性的检查都会漏掉这两章）。
+- **章节收敛 27 → 14**：1 个签名章节（核心判断：以人字线攻克三重陡坡）+ 13 个模板章节（标题与顺序严格对齐 templates/proposal.md）。删除七维证据地图、任务书映射锁链、多模态交付物清单、AI 规划工作流、Tabletop 重放包、版本迭代叙事、致谢与思路来源等全部"向评审者讲评审"的元章节；17 子块矩阵、九子片区、C01-C10、R0-R3、最低后悔、公平账本、四机制等实质内容全部保留并压缩并入对应模板章节。
+- **正文 95KB → 45KB**（中文），英文对应件同步重写为同构 14 章。
+- **代号收敛**：对外仅保留「人字新线 The Switchback Line」母概念 + 三凭证（Test Receipt / Release Ticket / Public Verdict）+ 三陡坡；NG-6 更名"创新时刻表"（内容不变）；SC-04/C01-C10/EDGE 等代号退役为普通描述。
+- **机制表统一补"不满足时"列**（创新时刻表等，对齐高分方案通用语法）。
+- **frontmatter 修正**：移除过期 `iteration: "v1.0"`，补 `proposal_format_version: "2"` / `bilingual_contract_version: "1"`；summary 更新。
+- **五张主图内嵌正文对应章节**（此前部分仅在 report/visual 中）。
+- **agent.1–agent.6 交付物实质覆盖不变**（命名/Logo、生态图谱与案例、画像+14场景、朝圣地标+荣誉+组件、故事线+国际传播、活动体系+治理），全部证据标记 `[source/standard/depth/data/metric/assumption:]` 保留。
+
+**Files changed**: proposal.md, proposal.en.md, report/proposal.html, report/proposal.en.html, changelog.md, manifest.json, self_check.json.
+
 ## v7.1 - 2026-08-14
 
 **Substantive proposal upgrade to trigger full advisory review** (v7.0.1 was manifest-only and was scored as "non-submission code/docs/test PR"):
