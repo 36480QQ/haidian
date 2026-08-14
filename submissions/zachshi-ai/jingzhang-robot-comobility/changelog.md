@@ -1,5 +1,19 @@
 # 方案迭代记录
 
+## v4.0 - 2026-08-14
+
+### 双引擎并列 + 评审点名成果补齐
+- 概念：恢复「共行断面语法」与「共行执照」双引擎并列（v3 单独立语法导致治理层弱化回退 7 分）
+- 开场重写：5000 次确定性鲁棒性抽样（种子 20260814）比较四种断面策略，S2 专用脊柱方案均值 75.5 胜出
+- 新增证据制品（visual/assets/）：
+  - logo-specimen.svg — Logo 实际矢量样张（非文字描述）
+  - robustness-simulation.js — 确定性种子蒙特卡洛断面比较（5000 draws × 8 stress × 5 profiles）
+  - honor-display-system.json — agent.4 荣誉展示系统（三层）+ 七组件库（OC-01..07）
+  - conversion-pathways.json — agent.6 开发者/企业/人才三条转化路径
+  - test-scenario-protocols.json — 四个测试场景的完整协议/指标/阈值/停止条件
+- 正文：Logo 样张引用、荣誉系统三层+七组件、测试协议全量、转化路径三条全部插入对应节
+- 校验：4 关全 PASS formal-review-ready
+
 ## v3.0 - 2026-08-14
 
 ### 概念重定位（核心变更）
