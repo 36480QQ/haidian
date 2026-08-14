@@ -1,5 +1,30 @@
 # 方案迭代记录 / Changelog
 
+## v19.0 - 2026-08-14
+
+**Final-grade quality-only convergence and judgement-first reading / 终稿级纯质量收束与判断优先阅读**
+
+- 第 19 轮只重建四类高影响资产族：封面、普通生活三联图、双语重点区平面、双语重点区剖面。前台 visual、双语 proposal 与固定页数出版物收束为 judgement-first／判断优先阅读；没有新增品牌、机制、场景、项目、重点区或治理合同。
+- Round 19 rebuilds only four high-impact asset families: cover, ordinary-life triptych, bilingual key-area plans, and bilingual key-area sections. The front-stage visual, bilingual proposals and fixed-size publications converge on judgement-first reading; no brand, mechanism, scene, project, key area or governance contract is added.
+- 出版规格保持不变：中文/英文 A3 均为 14 页（14/14），中文/英文 A0 均为 8 页（8/8）。这些页数只记录包内出版结构，不是实施规模、现场成熟度或审批进度。
+- Publication sizes remain unchanged: Chinese/English A3 are 14/14 pages and Chinese/English A0 are 8/8 boards. These counts describe package publication structure only, not implementation scale, field maturity or approval progress.
+- 两个最终全新进程构建逐文件字节一致。PDF 内摄影型概念媒体以像素无损 JPX 收束；A0 在逐像素一致的审阅层上叠加 7200 像素宽的同源 JPX 印刷层。四份 PDF 均小于 10 MiB，participant preflight 记录包总量为 40,403,277 bytes；这些只是交付体积与可复制构建事实，不是现场、视觉认证或成熟度证明。
+- Two final fresh-process builds are byte-identical file by file. Photographic concept-media streams inside the PDFs use pixel-lossless JPX, while A0 overlays same-source 7200-pixel-wide JPX print layers above pixel-identical review layers. All four PDFs are below 10 MiB and participant preflight records 40,403,277 package bytes. These are delivery-size and reproducible-build facts only, not field, visual-certification or maturity evidence.
+- 冻结项保持不变：全部 geometry、`metrics.json`、12 个场景、8 个项目、3 个重点区、36 个概念用地单元、G0、NO-GO、临时边界、非 AI 同任务权利、失败停止/恢复优先和专业方修改/拒绝/删除权。
+- Frozen items remain unchanged: all geometry, `metrics.json`, 12 scenes, 8 projects, 3 key areas, 36 conceptual land-use units, G0, NO-GO, provisional boundaries, same-task non-AI rights, failure-stop/recovery-first rules, and professional power to revise, reject or delete.
+- 现实结果、现场采集、人员、排班、批准、GO、已建状态、无障碍结果、居民反馈和成熟度变化仍为 0 或 `unknown`；质量、清晰度、PDF、图件、机器 PASS 或本日志均不得把这些状态升级。
+- Real results, field collection, staff, rosters, approvals, GO, built state, accessibility outcomes, resident feedback and maturity changes remain 0 or `unknown`; quality, clarity, PDFs, figures, machine PASS results and this log cannot upgrade them.
+- 生成媒体只记录三个候选的判断历史：普通生活图接受；第一版封面因 map-pin/site-truth 风险拒绝；修正版封面接受。工具仅能确认为 OpenAI built-in image generation，exact serving snapshot not asserted，zero external image inputs；候选尝试不计为新增贡献、资产族或事实来源。
+- Generated-media history records three candidate judgements only: ordinary accepted; first cover rejected for map-pin/site-truth risk; corrected cover accepted. The available tool detail is OpenAI built-in image generation, exact serving snapshot not asserted, with zero external image inputs. Candidate attempts are not counted as contributions, asset families or factual sources.
+- 两个最终媒体均为 RGB WebP：普通生活图 1774×887，只做确定性编码且无构图编辑；封面 1600×900，由接受的合成底图与确定性本地叠层构成。两者检查时均无 EXIF/GPS/XMP/ICC；它们不是现场证据、批准设计、已建状态、无障碍结果、居民反馈或公共/专业复用许可。
+- Both final media files are RGB WebP: the 1774×887 ordinary image received deterministic encoding only and no compositional edit; the 1600×900 cover combines an accepted synthetic base with a deterministic local overlay. Neither final file showed EXIF/GPS/XMP/ICC at inspection. Neither is field evidence, an approved design, a built state, an accessibility result, resident feedback or a public/professional reuse licence.
+- `sources.json` 与 source-rights 继续保持 50/50，manifest 与逐文件权利路径集合继续保持 140/140；没有新增外部事实来源或远程请求。四个 Firecrawl 本地摘要/捕获摘要不是发布者签名，完成 freshness audit 仍为 0。
+- `sources.json` and source-rights remain 50/50, while manifest and file-rights path sets remain 140/140. No new external factual source or remote request is added. The four local Firecrawl summary/capture digests are not publisher signatures, and completed freshness audits remain 0.
+- 总体权利状态继续为 `not_fully_cleared`；逐文件独立清权审计完成数为 0，`audit_records` 为空，公开或专业复用继续 blocked。文件路径闭环、生成记录、字体嵌入或摘要一致均不等于权利许可。
+- Overall rights remain `not_fully_cleared`; completed independent file-level audits remain 0, `audit_records` remains empty, and public or professional reuse remains blocked. Path closure, generation records, font embedding or digest agreement do not create a reuse licence.
+- 本轮是 quality-only 包内表达迭代，不是实施、现场验证、规划/工程/无障碍批准、GO、专业接受、运营证明或清权；最终字节摘要只在并行审阅通过后统一锁定。
+- This quality-only package iteration is not implementation, field validation, planning/engineering/accessibility approval, GO, professional acceptance, operating evidence or rights clearance. Final byte digests are locked only after parallel review passes.
+
 ## v18.0 - 2026-08-13
 
 **Public Signal Interface and readable civic timetable / 公共信号界面与可读时刻表**
