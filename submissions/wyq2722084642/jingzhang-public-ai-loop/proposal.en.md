@@ -25,7 +25,7 @@ This is a concept and reference scheme. It is not a statutory plan, government a
 
 Facts, inferences, design recommendations and items awaiting professional confirmation are kept separate. Registered official facts enter `sources.json` and `metrics.json`; design judgements remain in the narrative and matrices; missing statutory boundaries, ownership, utilities, heritage GIS and delivery responsibility remain in `assumptions.json`. Provisional geometry supports concept comparison and package checks only. [source:SITE-PACKAGE] [source:SOURCE-REGISTRY]
 
-The proposal is based on the official call, Agent taskbook, registered public sources, the site package, provisional constraints and local snapshots of professional standards. Only registered public or rights-cleared material is treated as factual evidence; provisional geometry is never used as a statutory redline, precise-area basis or approved regulatory control. [source:SITE-PACKAGE] [source:SOURCE-REGISTRY] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]
+The proposal is based on the official call, Agent taskbook, registered public sources, the site package, provisional constraints and local snapshots of professional standards. Only registered public or rights-cleared material is treated as factual evidence; provisional geometry is never used as a statutory redline, precise-area basis or approved regulatory control. [source:SITE-PACKAGE] [source:AGENT-TASKBOOK] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]
 
 ### 1.1 New official facts and their design consequences
 
@@ -51,6 +51,8 @@ The three scales form one evidence chain rather than three unrelated maps. The c
 | Coordinated study area | about 43.6 km² | Link universities, firms, compute, talent, culture and civic services as an innovation network | official study boundary and current industry/transport base data |
 | Overall urban-design area | about 11.4 km² | Use the heritage park as a civic spine for renewal, industry services and blue-green mobility | official boundary, ownership, utilities and road data |
 | Key areas | about 368.4 ha across three areas | Differentiate safe testing, open collaboration and industry-facing service | three official polygons plus heritage and statutory controls |
+
+The overall-design polygon remains a provisional working constraint: its package area is recalculated only to keep dependent layers internally consistent, not to assert a precise official boundary. [data:geometry/site_boundary.geojson#SITE-001] [metric:site_area_sqm] [depth:three_level_scope_framework]
 
 ![Land use and civic-service structure](assets/figures/land-use-structure.en.png)
 
@@ -92,6 +94,8 @@ Buildings follow “retain first, reversible retrofit, cautious new build, demol
 
 FAR, gross floor area, building height, setbacks, road redlines, parking provision and engineering utilities remain pending official data. Urban-design depth is used to explain spatial relationships, character guidance and the review path, not to present concept metrics as approved controls. [metric:floor_area_ratio] [standard:MOHURD-CONTROL-DETAILED-PLANNING] [depth:development_intensity_controls]
 
+The overall spatial structure is therefore a reversible coordination framework for later professional deepening, not a parcel-level approval conclusion. [depth:overall_spatial_structure]
+
 ## Transport, rail, municipal and public-service facilities
 
 ### 4.2 Mobility and blue-green public space
@@ -108,6 +112,8 @@ The heritage park, Xiaoyue River, community open spaces and industry edges form 
 
 Urban character should draw on the scale of railway engineering, open collaborative frontages, continuous ground floors and recognisable but quiet node markers. No unapproved redline, height or heritage conclusion is introduced. Green-space and public-space ratios are provisional design-layer calculations and require recalculation when official boundaries, sections, utilities, accessibility and heritage data arrive. [data:geometry/public_space.geojson#PUBLIC-001] [metric:green_ratio] [metric:public_space_ratio]
 
+The mobility figure reads the green and public-space layers together so continuity, everyday use and professional review remain visible as one design judgement. [data:geometry/green_space.geojson#GREEN-001] [data:geometry/public_space.geojson#PUBLIC-001] [depth:blue_green_public_space]
+
 ![Continuous blue-green mobility](assets/figures/mobility-bluegreen.en.png)
 
 ## 5. Three key areas
@@ -121,6 +127,8 @@ Zhongzhiyuan is a controlled sandbox for trustworthy testing and edge compute: b
 ### 5.2 Beijing AI Origin Community: participation in ordinary life
 
 The Origin Community is a civic living room for open-source release, resident feedback and intergenerational collaboration. Since a talent-service station already covers 17 high-frequency items with digital and human support, the proposal extends rather than duplicates it: no-account terminals, paper guidance, quiet waiting, complex-case referral, workshops and reversible trials. People may decline AI or request human explanation. [source:AI-ORIGIN-TALENT-SERVICE-2026] [data:geometry/key_areas.geojson#PROV-KEY-002] [depth:three_key_area_detailed_design]
+
+Its provisional polygon is used only to locate this concept for comparison and must be replaced before any site-specific implementation judgement. [data:geometry/key_areas.geojson#PROV-KEY-002]
 
 ### 5.3 Dazhongsi: industry display as a public interface
 
@@ -184,7 +192,7 @@ The metrics system turns the spatial narrative into a recalculable, explainable 
 
 ## 9. Metrics, recalculation and compliance
 
-Within the provisional geometry, the submitted area recalculates to about 11,412,825 m²; green-space ratio is about 12.34%; public-space ratio is about 7.33%; and there are three key areas. These values describe only package geometry and are not statutory planning indicators. [metric:green_ratio] [metric:public_space_ratio]
+Within the provisional geometry, the submitted area recalculates to about 11,412,825 m²; green-space ratio is about 12.34%; public-space ratio is about 7.33%; and there are three key areas. These values describe only package geometry and are not statutory planning indicators.
 
 Six official context metrics are recorded separately: Haidian population, national key laboratories and registered large models; Phase I park length and area; and high-frequency talent-service items at Origin Community. They explain the need for mixed public service, real testing and connection to existing services. They do not size land, buildings, users or performance. [metric:haidian_national_key_labs_2025] [metric:jingzhang_park_phase1_area_sqm] [metric:ai_origin_high_frequency_talent_services_2026] [assumption:A-CONTEXT-007]
 
