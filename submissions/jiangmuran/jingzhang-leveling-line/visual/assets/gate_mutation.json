@@ -28,6 +28,18 @@
       "why_en": "Three such sentences once coexisted here contradicting one another, and no gate could see them because 「only」 is not a computable quantity. If the same sentence reintroduced deliberately draws no objection, that reading fixed four sentences and guarantees nothing about the next one."
     },
     {
+      "id": "M20",
+      "gate": "sources_qa.py",
+      "target": "proposal.md",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "删掉「不决定的事项」里对 FIG.24 场地速度的那句限定，恢复成本方案既声称不决定设备限速、又在图上把它定下来。",
+      "what_en": "Remove the qualifier that reconciles the out-of-scope list with FIG.24, restoring a package that both declares it does not decide device speed and fixes it on a sheet.",
+      "why_zh": "**这一处是 E90 自己的修复造成的**：改标签之前三句彼此相符，改完之后两句变假，而做这次修改的那一 tick 正看着其中一句，记下的却是「已核，无需再改」。改一个值的归属，等于改变全包关于该值的每一句范围声明——若这条缝没人看着，下一次改分类还会同样地无声撕开。",
+      "why_en": "**E90's own fix caused this.** Before the relabel the three sentences agreed; after it two were false, and the tick that made the change looked straight at one of them and recorded that it had survived scrutiny. Relabelling a value changes what every scope declaration about it means, and if nothing watches that seam the next reclassification tears it open just as quietly."
+    },
+    {
       "id": "M19",
       "gate": "sources_qa.py",
       "target": "proposal.md",
@@ -38,6 +50,30 @@
       "what_en": "Remove the admission from the noise row, restoring an instruction to use the national standard value without naming the standard.",
       "why_zh": "E90 之后把同一个问题指向正文，只找到这一处，而这一处是**给别人执行的指令**：该行存在的理由正是「定性的『噪声扰民』无法判定超限」，而「取国家标准值」不指名标准，同样无法执行。本包在别处逐条指名法律名称、条号并挂可解析标签——这不是惯例问题，是这一处失守。",
       "why_en": "Pointing E90's question at the prose turned up exactly this one, and this one is an instruction **for someone else to carry out**: the row exists because the field's qualitative 「noise nuisance」 cannot determine exceedance, and 「use the national standard value」 with no standard named cannot either. The package names law, article and a resolving tag everywhere else."
+    },
+    {
+      "id": "M21",
+      "gate": "figure_citation_qa.py",
+      "target": "proposal.en.md",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把英文版里对 `gate_mutation.json` 的唯一一次指名删掉，中文版保持不动。",
+      "what_en": "Delete this edition's only mention of `gate_mutation.json`, leaving the Chinese one intact.",
+      "why_zh": "E93 的三处缺口正是这样躲过去的：清单只有七项，而漏掉的三份不在清单上，其中最大的一份只在中文里出现过。**`scripts/review_submission.py` 根本不读 `visual/assets/`**——正文里的一句话是评审得知这些文件存在的唯一途径，若删掉一句而闸门不响，这条唯一途径就没有任何东西守着。",
+      "why_en": "This is how E93's three gaps slipped through: the list held seven names and the three missing files were not on it, the largest of them present in Chinese only. **`scripts/review_submission.py` does not read `visual/assets/` at all**, so a sentence in the prose is the only route by which a reviewer learns these exist — and if one can be deleted without objection, nothing guards that route."
+    },
+    {
+      "id": "M22",
+      "gate": "computed_value_qa.py",
+      "target": "metrics.json",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把 metrics.json 里的勘误条数改回 92，而随包 errata.json 与两版正文都是 93。",
+      "what_en": "Set the shipped errata count back to 92 while errata.json and both editions of the prose say 93.",
+      "why_zh": "这正是本包实际发出去的状态。`metrics.json` 与 `proposal.md` **同在评审模型整份读取的九个文件里**，所以这处矛盾不需要评审多打开任何东西就能看见。而它不是笔误，是次序：十一个指标数的是随包产物，而那些产物都在 `recompute_metrics.py` 之后才写出来。若这一处能被改回而没有东西反对，那道次序就没有任何东西守着。",
+      "why_en": "This is the state the package actually shipped in. `metrics.json` and `proposal.md` are **both among the nine files the review pipeline reads whole**, so the contradiction needed no extra file to become visible. It was not a typo but an ordering: eleven metrics count shipped artifacts, and every one of those artifacts is written after `recompute_metrics.py` runs. If it can be set back with nothing objecting, nothing guards that ordering."
     },
     {
       "id": "M2",
@@ -235,7 +271,7 @@
       "why_en": "This package checks its own drawings with the legible-height ratio and reports a 4.73 mm minimum, all passing. **FIG.27 has just pointed that same ratio at the plate** — which makes whether the ratio itself has ever been shown to fail a question that has to be answered."
     }
   ],
-  "caught": 19,
+  "caught": 22,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",

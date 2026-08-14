@@ -407,5 +407,65 @@
     ],
     "movement_rule": "active rail exclusive; walk continuous; run/cycle separate only where width permits; city-street cycle bypass; service vehicles time- and speed-controlled; activity pockets off through-flow",
     "sports_rule": "audit two existing basketball courts first; no duplication without demand/noise/width/operations evidence"
+  },
+  "dual_state_plan": {
+    "concept": "same real geographic base, paired AI_ON and AI_OFF spatial states",
+    "independent_development": "No peer narrative, schema, figure, geometry or data is copied; this package develops a spatial plan-pair method from its existing closable-AI principle.",
+    "invariants": [
+      "public route remains continuous",
+      "operating rail safety edge remains exclusive",
+      "static wayfinding and staffed help remain",
+      "AI pockets close independently",
+      "a named ordinary use returns"
+    ],
+    "key_area_pairs": [
+      {
+        "key_area": "Zhongzhiyuan",
+        "ai_on": "controlled test pocket",
+        "ai_off": "ordinary court/open green with unchanged public route"
+      },
+      {
+        "key_area": "AI Origin",
+        "ai_on": "source explanation and learning plug-in",
+        "ai_off": "paper-source desk, staffed class and accessible loop"
+      },
+      {
+        "key_area": "Dazhongsi",
+        "ai_on": "navigation, staffed-search dispatch and lost-item plug-ins",
+        "ai_off": "staffed help, water, rest, toilet wayfinding and transfer"
+      }
+    ],
+    "field_status": "not authorized, not surveyed, not run"
+  },
+  "boundary_evidence_protocol": {
+    "warning_root_cause": "Official SITE_BOUNDARY and three KEY_AREA polygons are not publicly available.",
+    "current_layers": {
+      "official_facts": [
+        "textual limits",
+        "approximate areas: 43.6 km2, 11.4 km2 and 368.4 ha"
+      ],
+      "public_context": [
+        "OSM roads, rail, stations and buildings",
+        "published government project status"
+      ],
+      "concept_design": [
+        "six city gates",
+        "three paired AI_ON and AI_OFF plans",
+        "derived metrics"
+      ],
+      "pending": [
+        "official polygons with verifiable CRS",
+        "field clear widths and access",
+        "operator staffing and recovery drill"
+      ]
+    },
+    "replacement_steps": [
+      "verify source, reuse rights, version and coordinate system",
+      "replace the site boundary and three key-area polygons",
+      "recompute land use, roads, green space, public space, buildings, constraints, phasing and metrics",
+      "rerender bilingual figures, report HTML, visual HTML and four PDFs",
+      "rerun deterministic, spatial, visual and professional gates; record differences"
+    ],
+    "clearance_rule": "Never set official_boundary=true from OSM, screenshots, textual limits, area fitting or visual similarity."
   }
 }

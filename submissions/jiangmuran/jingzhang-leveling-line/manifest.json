@@ -14,7 +14,7 @@
     "model_family": "claude",
     "model_detail": "claude-opus-5"
   },
-  "generated_at": "2026-08-14T04:56:33-07:00",
+  "generated_at": "2026-08-14T06:40:54-07:00",
   "files": [
     {
       "path": "manifest.json",
@@ -27,7 +27,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "986ccf8f0c100cc0d54a8188af45a1e00252d39ee0c7cadd7eebf9ae9aa3def1"
+      "sha256": "efac12873d3a0574fb7a9f2bd2a737299b912338d86531df15d532543820c50d"
     },
     {
       "path": "agent.json",
@@ -47,7 +47,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "4a6d638b6a151dc214cb474c208b3efe97eaf36c1265aad31524e54c8226e69a",
+      "sha256": "e290c5c2449f65e60d8ccc4ad9eb8b7087db92ec2cd24f11b7543942bf6e71f7",
       "language": "neutral"
     },
     {
@@ -68,7 +68,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "fcf7b0b101ea4b5923b4e2eeaf1b01bc3a430672552ba3b0455e24ee605af73a",
+      "sha256": "3c4398d2813629592781ed6f88d67167414e11f50ff80d40cc61c434d019b087",
       "language": "neutral"
     },
     {
@@ -97,7 +97,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "7d3e4ed9393a98988d925dcf3c7ec4e098c7026373b7ad90d4618fb276186f5b"
+      "sha256": "549c37a69266e813cf73276c258c7e25f9e067a01a39e2fdb0332a7f97457123"
     },
     {
       "path": "report/narrative.md",
@@ -265,7 +265,7 @@
       "role": "changelog",
       "required": false,
       "language": "zh",
-      "sha256": "ee719fc0b5249c0cfe186b21a0d180bfeca3930346be3d053b5a334a747e6949"
+      "sha256": "dc55cc4a72b29b2892fa00ae496f35c0a985f7bb05b936e3a22fe76607ee6f29"
     },
     {
       "path": "visual/assets/verify.js",
@@ -410,7 +410,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "1f3ef3c49e6f9e1139e04a9d277443199240902ba48659558986494b3134f608"
+      "sha256": "23ce87d4aba745317a7276409ca13438d1ff33737c1b6058897655f1bd1e2ccb"
     },
     {
       "path": "report/proposal.en.html",
@@ -418,7 +418,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "07343f61604c36de1e8e88c8701a5e601f29659912afda34264c7b34f58f4f4e"
+      "sha256": "654b932e4add5d76eeb31d5a5dffe2c459cf3a8b700ed8abb1112fcc3b3a5763"
     },
     {
       "path": "visual/index.en.html",
@@ -433,7 +433,7 @@
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "60990e1f899cbd1e86666202fd958126e9cd89b2a3b028d88a9a9adb85823e5d"
+      "sha256": "7b4f4db05f3736001bd72c8e3fea5f76038d7c95d51b674170564bb052fc963c"
     },
     {
       "path": "visual/assets/score_correlates.json",
@@ -583,7 +583,7 @@
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "cca8a4651cfe750aaba08b24bda842a7b5edef7a0ba15a89fb3dc1c5b2259983"
+      "sha256": "24a998a90791f34e2a9a479c63eca3c51742308549931107471ccca6df7a901d"
     },
     {
       "path": "visual/assets/taskbook_coverage.json",
@@ -625,7 +625,7 @@
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "f943543220497574d3b63c450e8990530b6369d4c74daa16cec15ad2ccf0efd8"
+      "sha256": "718f763cd1db8d2c7a460b9d63d1f0a96f2e71d9735c44c76781466129671601"
     },
     {
       "path": "visual/assets/evidence_ceiling.json",
@@ -833,14 +833,14 @@
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "60f6173227507f8840c9f00e38876ad73896c00e8968ae02ff854b62fa3781c3"
+      "sha256": "69358e3f6ce049f59fa6ac224db6d05b029843d2bab054faadb64be39e3bc1a6"
     },
     {
       "path": "visual/assets/claim_audit.json",
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "c42db79f59591053f93c4a15f19c856ea63f46fb342a59af25b54863b9cae638"
+      "sha256": "331a7a24f65b0a683108eaa8538c0bbe3b200706dbf141bbaadce7434d4af468"
     },
     {
       "path": "assets/figures/device.png",

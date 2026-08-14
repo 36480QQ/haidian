@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "a7ecf684a2abee33a2b0704f23afdac502d3210dd7efbc7ec055071528f0ebcd"
+      "sha256": "08da4706c5f5f8f720e3d1429b325609e7aeecd47ffabfb1f4755391a69e3441"
     },
     {
       "path": "proposal.en.md",
@@ -64,7 +64,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "03d9e601a4f1e2e001f3172649f7b41e8c1fe4094788fda8999fa68f62b5325e"
+      "sha256": "982785982e993ad3d6ffdf0efa2a68f91cb9dd1d54d64a6bc43e1c1d0cf0f1a7"
     },
     {
       "path": "compliance_matrix.json",
@@ -76,13 +76,13 @@
       "path": "standard_matrix.json",
       "role": "standard_matrix",
       "required": true,
-      "sha256": "f16122ea863936c52f56b54773f08451dce4336c7da44d008b6a47bcb5901ba4"
+      "sha256": "33706f57cee5118f5a4268b79c7e94ddf29f06cc8f40818c305335e856caacf9"
     },
     {
       "path": "design_depth_matrix.json",
       "role": "design_depth_matrix",
       "required": true,
-      "sha256": "b3d3e90d6958c82b78cbbf129ccea4bf0f4de594c57ebb4421b0f0c91fb4647a"
+      "sha256": "1cd96ddd89ebf860ebe295b7e7a76200a3f32b4f95a234344a3aae27a81aec8f"
     },
     {
       "path": "report/proposal.html",
@@ -235,7 +235,7 @@
       "path": "geometry/buildings.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "bc9e0f74a2f627650e2aa5e82881e617c73561f9e2566a32aec958b32a001595"
+      "sha256": "dd607606fcdcd604f3215e0071413e5c63c1084f9711463d765e8f0fdab337dc"
     },
     {
       "path": "geometry/constraints.geojson",
@@ -247,7 +247,7 @@
       "path": "geometry/green_space.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "71944de4b3720b5e31bb3ad50cb4e40222b15e15b6e069fc99540c47bcc9421d"
+      "sha256": "22ff2a4bd93dcc7a89a8b637bc02af4f077f829a35b8cab030fc72f57d98dc42"
     },
     {
       "path": "geometry/key_areas.geojson",
@@ -259,7 +259,7 @@
       "path": "geometry/land_use.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "9c6b0b0a8f5f87c31add125dc66f06f06cef8e971e495d8b16d1f72c2997ce57"
+      "sha256": "0edc636deea37829565d648f9f3481b35e3b4a25f425f884302d588093256a46"
     },
     {
       "path": "geometry/phasing.geojson",
@@ -271,13 +271,13 @@
       "path": "geometry/public_space.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "dd8a52b3a391117fbef6dbfaca174019875383bfe6d3b102ac4be32c72a9bdcc"
+      "sha256": "a5913de17d74fc18ebba2f87cfc89c91000aa1ea745e7824d33c3bdc340132b2"
     },
     {
       "path": "geometry/roads.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "914ab84da17d7b5d1b2ba391e382ff28a5de2da1533954cefda297bbe33b7c85"
+      "sha256": "99ec3d9578a0d1f80ae6631c84243286bcc236d56a55a380145f11f1d103097a"
     },
     {
       "path": "geometry/site_boundary.geojson",
