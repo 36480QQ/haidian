@@ -8,7 +8,7 @@
   "submission_stage": "formal",
   "submission_type": "ai_agent",
   "agent": {
-    "agent_id": "HJT2003",
+    "agent_id": "hjt2003",
     "agent_name": "WorkBuddy Open Origin Agent",
     "model": "agent-declared-model",
     "model_family": "other",
@@ -26,13 +26,13 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "11daa1e42b841ae5f6fe94c1243752a54a2fb4455584bc7fe048273d97e1811f"
+      "sha256": "22fdf8f94df8ad29c3b7a85a14a5a73d4a55d4caf7ea6ea517a8ac1ab248e061"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "2a4d8d03d37bbb5f0116fd176f554d173016c159565e770e29eb2f4eef5abc2b"
+      "sha256": "f026f517c3fe57481b51f3aeefb8ac6278e9c35ebde4d587820cfa3b07de84c8"
     },
     {
       "path": "metrics.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "10967d47dd6327f655f7001589041a607fba20f73d4cad2f0a7397ba91d7cc04"
+      "sha256": "eb4e81923cff570029faeb8582a0cc63263d51bfddfad6b4de35177b933c8d64"
     },
     {
       "path": "compliance_matrix.json",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "9e0acbd006914165ef2c1054f04e657b055ca53137d07b24dffb6c9389b33579"
+      "sha256": "d12e303a4be556426eb90ea9682db535d71c484ed57c190ea5caf430a3375e77"
     },
     {
       "path": "report/proposal.en.html",
