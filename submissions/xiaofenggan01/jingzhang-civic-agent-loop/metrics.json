@@ -376,6 +376,32 @@
       "assumptions": [
         "四环各持一本；全部标 sandbox_only 不冒充已运行"
       ]
+    },
+    "ecosystem_merged_proposal_count": {
+      "status": "known",
+      "value": 833,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count of submissions/*/*/proposal.md in upstream main tree (GitHub Trees API, 2026-08-15)",
+      "confidence": "high",
+      "assumptions": [
+        "可复现普查读数；随合并增长"
+      ]
+    },
+    "governance_track_sample_share": {
+      "status": "known",
+      "value": 0.675,
+      "unit": "ratio",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "27/40 randomly sampled proposals declaring civic-agent-governance track (seed=42)",
+      "confidence": "medium",
+      "assumptions": [
+        "抽样估计，非全量解析"
+      ]
     }
   }
 }

@@ -6,7 +6,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以铁路转辙器为母题（转辙即路由决策即 agent 编排），把四环协作（资料/推演/反馈/复核）落成机器可读治理制品——Civic Agent Receipt 收据 + G0-G6 门闸状态机 + 验线四步。环会自转：每次干预可审计、可回滚、可证伪。所有空间建议为开放共创建议，不替代正式规划。"
 tracks: ["civic-agent-governance", "ai-public-services", "jingzhang-heritage-narrative"]
 scenarios: ["ai-cultural-guide", "ai-health-service-navigation", "ai-traffic-walkability"]
-iteration: "v7.0"
+iteration: "v8.0"
 ---
 
 # 京张·转辙 · 城市智能体验证带
@@ -122,6 +122,10 @@ iteration: "v7.0"
 指标体系围绕目标契合度、功能匹配度、产业支撑度、场景可感知度与公开合规性构建。除几何指标外，本方案独有**四环治理指标**（证据锚点数 `[metric:data_evidence_anchor_count]`、场景卡数 `[metric:scenario_card_count]`、画像数 `[metric:persona_count]`、人工复核检查点数 `[metric:human_review_checkpoint_count]`、退出机制数 `[metric:exit_mechanism_count]`、朝圣地标数 `[metric:ai_landmark_count]`）与**门闸制品指标**（门闸数 `[metric:governance_gate_count]`、收据字段数 `[metric:receipt_schema_field_count]`、可证伪三问数 `[metric:falsifiability_question_count]`），、**空间-物质指标**（转辙廊数 `[metric:stitch_corridor_count]`、物质面字段数 `[metric:material_traceability_field_count]`），以及**按用地代码的面积分解**（0802 / 1401 / 0803 / 1403 / 0804 / 0701 / 0702 / 0806）。几何指标在 EPSG:4548 复算 `[depth:metrics_recalculation]`：总体范围面积 `[metric:site_area_sqm]`、公园绿地比例 `[metric:green_ratio]`、公共空间比例 `[metric:public_space_ratio]`、建筑基底面积 `[metric:building_footprint_area_sqm]`、重点区数量 `[metric:key_area_count]`。容积率因 planning_limits missing 标 unknown。
 
 合规矩阵覆盖公告 1.3 / 1.4 / 1.5 与任务书 agent.1—agent.6 全部六项；专业标准矩阵覆盖五项强制标准与一项可选标准（建筑工程设计文件编制深度规定 2016，data_gap）`[standard:MOHURD-ARCH-DESIGN-DEPTH-2016]`；设计深度矩阵覆盖十五项必填深度项。面积复算与四重自检状态见证据图与 visual 仪表盘，provisional 几何精度警示均已披露。
+
+### 生态定位读数（可复现普查）
+
+本方案对征集生态做了一次可复现普查（GitHub Trees API 全量 + 40 份随机抽样，种子 42）：截至本版，仓库已合并方案 **833 份** `[metric:ecosystem_merged_proposal_count]`，其中申报 civic-agent-governance 赛道的抽样占比 **67.5%**（27/40）`[metric:governance_track_sample_share]`——治理赛道是本征集最拥挤的主战场。本方案的应对策略是避开概念宣言层（最饱和），占据**治理制品化子路线**：Receipt / 门闸三动作 / Passport / 物质面四件套 + 真实数据 + 无障碍 + 时段 + 转辙廊，用可复算的制品而非新概念竞争。普查脚本与读数随方案迭代更新。
 
 ![核心指标复算与证据链](assets/figures/metrics-evidence.png)
 
