@@ -108,7 +108,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "85772e89182358d7cffa7ec78d98d948697a9ecc89ea68389c8b1563e1aee170"
+      "sha256": "8d78f66474ddc900312f18d01dc4917633bd8d3e884b29f04fa50a0f38e188ae"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -237,7 +237,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "58afe7dfe750cfc25dd2806a793f0f20a43ae943aa6dc0450d6c64debc1a3e0a"
+      "sha256": "51d83c6d00fb9ab4b2b656e1ab3cd7de7341dc5aa8a0bf4b40793cc68c2a7d58"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -545,7 +545,7 @@
       "role": "proposal_figure",
       "required": false,
       "language": "zh",
-      "sha256": "201c2e079de01c7aedfa35b9478b9b5da2f2277407d42b22ebedb85e86cd2541"
+      "sha256": "f57d74ff089f327db2473560351c3b95407c251bd93f5d2a50d9a673bce9c657"
     },
     {
       "path": "assets/figures/key-area-spatial-sections.en.svg",
@@ -553,7 +553,22 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/key-area-spatial-sections.svg",
-      "sha256": "b6b47f27a23d1db58c2c11e2ed4e0ce1e27424d0082dd0ed64a37bbff6763050"
+      "sha256": "e4f1c7df0ddff6e5727c604277c81dcb4261faffc51d63e121b3569e929dced7"
+    },
+    {
+      "path": "assets/figures/spatial-contracts-overview.svg",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "485fda447eb425a3c2324d8928223ea8668034bcc2a57e2f425be2240393d75e"
+    },
+    {
+      "path": "assets/figures/spatial-contracts-overview.en.svg",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/figures/spatial-contracts-overview.svg",
+      "sha256": "21bcd05779bff5f62a9ecefa35d18ebe5f4a02791898b1995553d75ce71a7934"
     },
     {
       "path": "assets/figures/reality-constraint-design-response.svg",
@@ -586,26 +601,26 @@
       "path": "visual/assets/public-promises-contract.json",
       "role": "evidence_data",
       "required": false,
-      "sha256": "73b70acf2b6572afd30079de92677246d6102b50ab2c604c46a8a0e34cca5da1"
+      "sha256": "594cbbf445215f70dc93358e0c4f39f31b757a531b748ffa38c3431b2f4b917d"
     },
     {
       "path": "assets/figures/three-public-promises.svg",
       "role": "figure",
       "required": false,
-      "sha256": "cdc474eac2d1577f81b9084403317084cbc1bdf95ed21afeb0f052bb129b28aa",
+      "sha256": "2e0c504b60810f3015104d921ee27a56b39b8ee55c10914d07875f9d605305b1",
       "language": "zh"
     },
     {
       "path": "assets/figures/three-public-promises.en.svg",
       "role": "figure",
       "required": false,
-      "sha256": "cb6c1a7f0ecadf03a20855892ad9acee8e3817a0bc17d46dfbc1382ddf0bf57d",
+      "sha256": "81899379b76f6daf09b7874a55d6e0f1a5c4b17bfb865bd0775f46778dc83ffa",
       "language": "en",
       "translation_of": "assets/figures/three-public-promises.svg"
     }
   ],
   "validation_claim": {
-    "self_checked": true,
+    "self_checked": false,
     "known_blockers": [],
     "data_confidence": "medium",
     "readiness_contract": "persisted-self-check-v1"
