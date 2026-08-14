@@ -34,28 +34,28 @@
     {
       "check_id": "DETERMINISTIC_VALIDATION",
       "result": "pass",
-      "severity": "info",
+      "severity": "blocking",
       "target": "manifest.json",
       "message": "All changed files follow the allowed path whitelist; manifest sha256 values are consistent; bilingual counterparts are present."
     },
     {
       "check_id": "SPATIAL_REVIEW",
       "result": "pass",
-      "severity": "info",
+      "severity": "blocking",
       "target": "geometry/*.geojson",
       "message": "Spatial review passed; key-area provisional notes recorded as minor items."
     },
     {
       "check_id": "VISUAL_PACKAGING",
       "result": "pass",
-      "severity": "info",
+      "severity": "blocking",
       "target": "visual/index.html",
       "message": "Visual packaging review passed; report HTML and drawings are non-empty and within size limits."
     },
     {
       "check_id": "PROFESSIONAL_EVIDENCE",
       "result": "pass",
-      "severity": "major",
+      "severity": "blocking",
       "target": "proposal.md",
       "message": "Proposal references standards, design-depth items, geometry, metrics, sources, and assumptions; agent.1-agent.6 deliverables are embedded in proposal.md / proposal.en.md."
     }
