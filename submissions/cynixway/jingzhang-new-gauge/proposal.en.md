@@ -24,7 +24,7 @@ iteration: "v1.0"
 
 **Honest constraints** (unhidden): provisional boundary only `[source:PROVISIONAL-BOUNDARY]`; FAR / height = `unknown` (no official control plan `[metric:floor_area_ratio]`); all spatial content is conceptual.
 
-## NG-6 Innovation Compact + R0-R3 resilience states
+## NG-6 Innovation Compact
 
 Borrowing the openness and accountability of railway "timetables", this proposal puts forward an **NG-6 Innovation Compact** for every urban-AI service — translating abstract "AI governance" into a public compact that is visible in space, traceable in operations and accountable in governance `[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]` `[depth:phasing_implementation]`:
 
@@ -37,28 +37,6 @@ Borrowing the openness and accountability of railway "timetables", this proposal
 | **⑤ Review** | Allow appeal, correction and independent review | Appeal channel and review-record area | Timely appeal response |
 | **⑥ Sunset** | Pilots renew, shrink or terminate on a cycle | Sunset notice + data deletion / migration | Periodic evaluation; shrink or sunset if under-target |
 
-**R0-R3 resilience states** (NG-6's seventh step: graceful degradation) — the hallmark of mature infrastructure is not "maximum performance" but "graceful degradation under failure":
-
-| State | Trigger | AI service degradation | Minimum service standard | Recovery path |
-|---|---|---|---|---|
-| **R0 Normal** | Clear weather, network up, power up | All running | All NG-6 steps normal | — |
-| **R1 Rainy** | Rainfall > 50mm/24h | Shuttle / delivery / autonomous driving suspended | Physical signs + human delivery + shelter every 200m | After rain: human-check → resume |
-| **R2 Network-down** | Network outage > 30min | All AI scenarios suspend | Physical signs + human windows + offline maps | Network restored → re-verify → resume |
-| **R3 Power-down** | Power outage > 15min | All suspend + backup battery | Emergency lighting + human evacuation + e-stop triggerable | Power restored → self-check → resume |
-
-Resilience principles: minimum service non-negotiable; emergency stop outranks performance; recovery must pass Gates; annual drills `[assumption:A-GREEN-BLUE-CONCEPT-001]`.
-
-## One Day at the Switchback Line: 2030
-
-The compact above answers "how the system works"; this section answers "**what it feels like to live here**" `[depth:three_key_area_detailed_design]` `[depth:blue_green_public_space]` `[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]`.
-
-**7:00 AM — R&D engineer Xiao Li** leaves LIFE-D1 Talent Housing, cycles 8 min to INNO-A1 along the GRN-B1 heritage green belt. Submits benchmark tasks to INNO-A2 compute centre, watches the leaderboard from the observatory `[data:geometry/buildings.geojson#BLD-001]`. **This is AI overcoming the productivity grade in daily form.**
-
-**12:30 PM — Grandma Wang, 72, no smartphone**. Walks to LIFE-D2 community hub's **human window** (NG-6 ③ Handoff), gets health pre-screening. Presses a physical button on an AI wayfinding post, hears the 1909 Jing-Zhang Railway story. **No screen touched — AI overcoming the livability grade without leaving digital traces.** `[source:WHO-URBAN-HEALTH-AND-GREEN]`
-
-**10:00 PM — Delivery rider Old Zhang**. At 22:00 bollards rise for the robot lane. At 23:30 rainstorm triggers **R1 Rainy**: robot delivery suspends, SMS says "shelter every 200m". **Emergency stop outranks performance — the safety baseline when AI runs at night.** `[source:ISO-13482-SERVICE-ROBOT-SAFETY]`
-
-Three residents, three AI modes: **active breakthrough (R&D), passive benefit (health), occupational dependence (delivery)** — all unified by the NG-6 Innovation Compact.
 
 ## Design basis and source inventory
 
@@ -460,47 +438,19 @@ The wayfinding system is distinct from the belt's overall Logo system: the Logo 
 - International narrative: from Zhan Tianyou's engineering pioneering spirit to AI-era standards co-creation, emphasising the continuity of "Chinese engineers defining their own standards".
 - Communication-channel direction: international planning / AI conferences, developer communities, urban-design media (all conceptual suggestions, awaiting deepening by the communications team).
 
-## Four mechanisms by which AI shapes spatial form
+## Urban resilience and full-state graceful degradation (R0-R3 resilience states)
 
-The 14 AI scenario cards above answer "what does AI serve"; this section answers a more fundamental question: **how does AI change the physical form of space itself?** If AI is merely a service layer stuck onto traditional space, the city is no different for having AI. This proposal puts forward four mechanisms that take AI from "serving space" down to **"generating space"** `[depth:overall_spatial_structure]` `[depth:height_massing_character]` `[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]`.
+**R0-R3 resilience states** (NG-6's seventh step: graceful degradation) — the hallmark of mature infrastructure is not "maximum performance" but "graceful degradation under failure":
 
-### Mechanism 1: Compute undergrounding — underground space driven by AI needs
+| State | Trigger | AI service degradation | Minimum service standard | Recovery path |
+|---|---|---|---|---|
+| **R0 Normal** | Clear weather, network up, power up | All running | All NG-6 steps normal | — |
+| **R1 Rainy** | Rainfall > 50mm/24h | Shuttle / delivery / autonomous driving suspended | Physical signs + human delivery + shelter every 200m | After rain: human-check → resume |
+| **R2 Network-down** | Network outage > 30min | All AI scenarios suspend | Physical signs + human windows + offline maps | Network restored → re-verify → resume |
+| **R3 Power-down** | Power outage > 15min | All suspend + backup battery | Emergency lighting + human evacuation + e-stop triggerable | Power restored → self-check → resume |
 
-Traditional underground levels use parking as their primary function. In the "Switchback Line" proposal, the underground space of INNO-A2 (Shared Compute Centre) and INF-E2 (Compute Conduit + Edge Nodes) is driven by **AI compute-infrastructure needs**: the second basement level houses a district-scale liquid-cooled compute hall (requiring large floor-to-floor height 6-8 m, high load capacity, dedicated cooling-pipe routing); the first basement level houses edge-inference cabinet corridors and pedestrian maintenance passages; the ground level keeps only equipment-hatch openings and ventilation shafts, leaving valuable ground area for public space. This sectional design means **compute demand directly determines the building's underground form** — floor heights, load capacity, cooling and pipe routing are all organised around compute infrastructure, not squeezed in afterwards `[depth:municipal_new_infrastructure]`.
+Resilience principles: minimum service non-negotiable; emergency stop outranks performance; recovery must pass Gates; annual drills `[assumption:A-GREEN-BLUE-CONCEPT-001]`.
 
-### Mechanism 2: Dynamic space allocation — the same space switches function by time band
-
-AI scheduling allows the same physical space to carry different functions in different time bands. LIFE-D3 (Experiential Retail Belt) operates as a pedestrian commercial streetcape during the day (7:00-20:00); switches to a dedicated S8 low-speed robot delivery corridor at night (22:00-6:00) (retractable bollards rise automatically, separating a 2m-wide robot lane); and switches to a festival market plaza on weekends (modular stalls rise from ground-floor storage compartments). This mechanism requires the **spatial design itself to be "switchable"** — paving must embed sensors and retractable bollards, ground-floor frontages must reserve modular storage space, and lighting must support multi-scene presets. The "function" of space is no longer fixed but an **AI-scheduled time slice** `[depth:land_use_layout]`.
-
-### Mechanism 3: Robot-compatible streets — street sections designed for human-robot coexistence
-
-Scenarios S8 / S9 require street sections to be **designed from the outset for human and robot / low-speed-vehicle coexistence**, not separated by painted lines after the fact. The standard cross-section of INF-E1 (Spine Road) in this proposal is: a central 7m transit / slow-mobility mixed lane + 1.5m robot-exclusive low-speed lanes on each side (physically separated, charging interfaces embedded in light poles) + a 3m footway on the outer edge. A 0.3m physical kerb + tactile warning strip separates the robot lane from the footway, ensuring low-speed vehicles do not intrude into pedestrian space. Intersections have AI perception posts (not cameras; using lidar + mmWave radar) that provide traffic signals to robots but do not collect personal biometrics. This design means the **physical form of the street is directly shaped by the safety requirements of human-robot coexistence** `[depth:traffic_rail_slow_parking]`.
-
-### Mechanism 4: Screen retreat — physical / ambient interfaces replacing digital screens
-
-Traditional "smart city" approaches often plaster screens across urban surfaces. This proposal does the opposite — **screen retreat**, replacing digital screens with physical / ambient interfaces. The wayfinding of GRN-B1 (Heritage Park Spine) does not rely on screens but uses: thermo-sensitive paving (temperature changes mark routes), soundscape nodes (directional speakers tell historical stories), tactile maps (raised relief maps replace electronic maps), and weathering-steel interpretation boards (low-tech, high-durability, zero-energy). AI retreats to the backstage — it decides "when to trigger which soundscape node" and "when to adjust thermo-paving temperature", but **leaves no screens on the urban surface**. This principle means the **materiality of space is enhanced (smarter) rather than diminished (more virtual) by AI** `[depth:blue_green_public_space]`.
-
-The four mechanisms together take AI from an "added service layer" down to a "space-generation layer" — compute determines underground form, scheduling determines time-sliced function, coexistence determines street cross-sections, and retreat determines material interfaces. This is the spatial meaning of the "Switchback Line" concept: **the switchback approach is not an AI label on the urban surface, but AI reshaping the city's physical structure from within**.
-
-## One Day at the Switchback Line: 2030 experience narrative
-
-The mechanisms and matrices above answer "how the system works"; this section answers "**what it feels like to live here**". Three typical residents' days serve as the thread, letting the reviewer step into the space `[depth:three_key_area_detailed_design]` `[depth:blue_green_public_space]` `[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]`.
-
-### 7:00 AM — R&D engineer Xiao Li leaves the AI Origin Community
-
-Xiao Li lives in the LIFE-D1 Talent Housing and cycles 8 minutes to INNO-A1 Basic Research Cluster. At the apartment gate there is no face-recognition turnstile — the NG-6 ① Declare notice simply states "this area collects only anonymised passage counts, no personal identification", following data-minimisation principles `[assumption:A-AI-GOVERNANCE-001]`. Cycling along the GRN-B1 heritage-park green belt, he passes story segment ② "Standard Foundation" — the ground-embedded 1435mm physical-gauge incision gleams stainless-steel in the morning light. Arriving at the research cluster, he submits last night's benchmark task to the INNO-A2 Shared Compute Centre; the AI scheduling system queues GPU allocation, and he can sip coffee at the Benchmark-Testing Observatory (landmark ③) while watching the leaderboard on the display wall — this is the everyday form of scenario S1 `[data:geometry/buildings.geojson#BLD-001]`.
-
-### 12:30 PM — Retired teacher Grandma Wang picks up medicine at the AI Origin Community
-
-Grandma Wang is 72 and does not use a smartphone. She walks to the LIFE-D2 Mixed Community Hub's **human window** (the spatial implementation of NG-6 ③ Handoff), where a community worker helps her complete the S5 AI + Community Health Kiosk pre-screening — AI only assists pre-screening; diagnosis is by a doctor `[assumption:A-AI-SCENARIO-PILOT-001]`. Her data is **processed locally** and not transmitted out. After picking up her medicine she rests at the Origin Life Plaza, next to an AI wayfinding post (1.2m tall, with a physical button and large-type display) — she presses a button and hears the story of the Jing-Zhang Railway's 1909 opening (the physical-interface version of S10 Heritage AI Guide). Throughout, she touches no screen and downloads no app — the **screen-retreat principle** lets someone like her enjoy AI services too `[source:WHO-URBAN-HEALTH-AND-GREEN]`.
-
-### 10:00 PM — Delivery rider Old Zhang completes his last order on the Experiential Retail Belt
-
-Old Zhang is a night-shift delivery rider in the Dazhongsi IND-C2 Intelligent-Native Commercial zone. After 22:00, the LIFE-D3 Experiential Retail Belt's **retractable bollards rise automatically**, separating a 2m-wide robot delivery lane — the daily trigger of the "dynamic space allocation" mechanism. Old Zhang's e-bike travels in the INF-E1 spine road's **robot-exclusive low-speed lane** (1.5m wide, separated from the 3m footway by a 0.3m physical kerb), and the AI perception posts at intersections (lidar, not cameras) give him green signals `[source:ISO-13482-SERVICE-ROBOT-SAFETY]`. At 23:30 a sudden rainstorm hits — the resilience state auto-switches to **R1 Rainy**: S8 robot delivery suspends, and Old Zhang receives a text message (NG-6 ④ Notify): "Rainstorm warning, robot lane closed, please use the human delivery route, shelter points every 200m." He follows the physical wayfinding signs to the nearest shelter pavilion. At no point does AI failure create danger — **emergency stop outranks performance** `[depth:municipal_new_infrastructure]`.
-
-### What the three residents share
-
-Xiao Li, Grandma Wang and Old Zhang represent three fundamentally different ways of using AI: **active use (R&D), passive benefit (health), occupational dependence (delivery)**. But they all benefit from the same "switchback approach" — the NG-6 Innovation Compact ensures they can always switch to human, physical signs are always readable, and data minimisation is always in effect. This is the everyday urban manifestation of the Jing-Zhang spirit of "a standard that serves everyone".
 
 ## Public interest, accessibility and AI governance
 
@@ -593,7 +543,8 @@ Data gaps: existing buildings, property rights, underground space and municipal 
 - **Recruitment & translation channels**: talent (developer community → entrepreneurship), enterprise (benchmark testing → settlement), developer (contribution → honour → cooperation).
 - **Long-term maintenance responsibility**: each project clearly defines its operating entity and maintenance cycle (see table above); no fabricated operating budgets.
 
-### Prioritisation principle: minimum regret (minimax regret)
+## Minimum-regret prioritisation methodology
+ (minimax regret)
 
 Under provisional boundary + missing control plan + missing existing-conditions survey, "maximum on every metric" is neither verifiable nor implementable. This proposal adopts a **minimum-regret (minimax regret) prioritisation principle** — not pursuing single-indicator optimality, but ensuring **the weakest experience meets standard**, spending limited certainty on "avoiding the worst outcome" `[depth:phasing_implementation]` `[depth:risk_missing_data]`.
 
