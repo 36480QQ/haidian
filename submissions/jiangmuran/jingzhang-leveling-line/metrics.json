@@ -115,7 +115,9 @@
       ],
       "evidence_class": "official_context",
       "confidence_is_about": "reading",
-      "metric_class": 2
+      "metric_class": 2,
+      "reason_en": "Approved FAR controls and official site boundary are not present in the public site package.",
+      "reason_zh": "公开的场地资料包里既没有已批准的容积率控制指标，也没有官方场地边界。"
     },
     "existing_residential_floor_area_sqm": {
       "status": "unknown",
@@ -132,7 +134,9 @@
       "metric_class": 2,
       "evidence_class": null,
       "evidence_class_note": "无取值，因此没有可被高估的等级；所需数据（权属与现状测绘）未公开。空缺是刻意的，不是遗漏。",
-      "confidence_is_about": null
+      "confidence_is_about": null,
+      "evidence_class_note_en": "No value, so there is no grade that could be overstated; the data it would need — ownership records and an existing-conditions survey — is not public. The blank is deliberate, not an omission.",
+      "reason_en": "This proposal states a constraint — that talent housing must not reduce existing residential supply — while the existing residential floor area is not published and this package has not measured it. By this proposal's own standard a rule that cannot be checked is not yet a rule, so the quantity it constrains is listed separately as unknown with its precondition named: existing residential floor area or dwelling counts must come from ownership records and an existing-conditions survey, and until that data exists the constraint stands as a mandatory check at the next stage, not as a satisfied condition. Land-use codes 0701 (urban residential) and 0804 (education) do not appear in land_use.geojson because they fall inside the eleven deliberately blank blocks whose boundaries depend on that same unpublished data — a judgement, not an omission."
     },
     "key_area_count": {
       "status": "known",
@@ -586,7 +590,7 @@
     },
     "errata_entry_count": {
       "status": "known",
-      "value": 104,
+      "value": 105,
       "unit": "count",
       "assumption_ids": [
         "A-SELF-COUNT-001"
