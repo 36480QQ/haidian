@@ -264,6 +264,51 @@ The table above answers what is done, on what data and who takes over. The table
 
 Four ledgers govern operation: a data ledger says what is and is not used; a duty ledger names the owner and on-site person; a takeover ledger sets thresholds and response time; an exit ledger records shutdown, deletion and service continuity. A system goes offline when it loses connection, breaches scope, crosses a risk threshold or is challenged by a person. The basic service continues.
 
+### Eight shared stacks: factor provision as interfaces that can be taken up and taken back, not a tenant list
+
+The commonest way industrial policy fails is to write an ecosystem as a list of tenants — if the named parties do not come, the whole spatial arrangement is left empty. This proposal names no company and presumes no occupant. Factors are provided as **eight shared stacks**, each one "a reversible piece of space plus a rule of access plus a checkable record": whoever meets the rule gets in, whoever stops meeting it leaves, and the space returns to public use. The stacks are not a new invention; their spatial carriers are the four typologies among the twenty renewal trial cells [data:geometry/buildings.geojson#BLDG-001] and the land-use zones [data:geometry/land_use.geojson#LU-001].
+
+| Shared stack | What it supplies | Spatial carrier (cell typology / land use) | Rule of access | **Explicitly not promised** | Checkable record |
+| --- | --- | --- | --- | --- | --- |
+| Land | Reversible right of use: time slots first, tenure later | All four typologies; LU-008 full-stack R&D and trial land | Apply for slots and removable fittings; discuss conversion only once the need is proven | No tenure, rent discount or long-term exclusive use | Occupancy and removal log |
+| Space | 5 open research courts, 5 verification workshops, 5 shared service stacks, 5 community collaboration houses | BLDG-004/008/012/016/020 and the other three typologies | Match use to cell typology; ground floors stay continuously enterable | No floor-area quota or new-build volume | Cell use and opening-hours ledger |
+| Industry | Interface specifications between models, chips, robots and vertical applications | Verification workshops; LU-009 / LU-010 model-validation and industrial collaboration land | Publish the spec and its failure boundary before opening it for connection | No choice of technology path, no supply-chain guarantee | Interface version and change log |
+| Capital | A transparent application entry and service navigation | Shared service stacks; LU-007 technology service and translation land | Explain process and materials only; applications still run through existing channels | **No subsidy, investment, tax relief or scoring advantage** | Aggregate enquiry counts and routing |
+| Talent | Post and collaboration interfaces among universities, developers, maintainers and residents | Community collaboration houses; LU-006 education and open-source learning land | Post specification precedes the person; the eight role specs publish qualifications and no-cover conditions | No household registration, staffing quota, title or pay arrangement | Role-spec version and duty status |
+| Compute | Edge metering and on-demand access | Edge compute energy test station SCN-03 inside the verification workshops | Meter independently first, connect second; energy or temperature thresholds stop it | No compute quota, price or priority | Independent meter readings and shutdown records |
+| Data | Consent, minimisation, withdrawal and audit as one set | Data consent rehearsal SCN-04; the open-source handover ground | No consent, no collection; withdrawal means deletion, and deletion must be verifiable | No scope of data opening, and no adjudication of data ownership | Consent slips, withdrawal receipts, deletion checks |
+| Scenario | City problems, test rules, and both positive and negative results with exit records | All twelve scenario nodes [data:geometry/public_space.geojson#SCN-01] | Publish the problem first, write the rule first, release positive and negative results together | No number of scenarios opened, no pass rate | Twelve shift ledgers and the rule-check report |
+
+The eight are not a parallel menu of services but **an ordered chain of access**: land and space decide whether you can get in; industry, compute and data decide whether the work is possible; talent and capital decide whether it can be sustained; scenario decides whether the result counts. Reverse the order and the familiar failure appears — subsidies and tenure negotiated first, rules and records added later, and in the end nobody can say why a service went live or who is able to stop it.
+
+### What teams of different sizes actually get here
+
+An ecosystem is usable only if its smallest unit can stand on its own. The table below is organised by team size rather than by company directory, and every row points at an existing spatial carrier and scenario node. Thresholds and exit conditions share one discipline with the twelve scenarios; they are neither relaxed nor tightened by the size of the party.
+
+| Team type | Core need | Main location | Stacks most used | Entry threshold | Exit and recovery |
+| --- | --- | --- | --- | --- | --- |
+| Individual developers and students | One desk that reproduces, one record that can be cited | Campus research relay SCN-07, public handover tables | Scenario, Data | Submit a reproducibility note and licence labelling | Records retained; the desk is released at any time |
+| Start-ups (trial stage) | Cheap trials, a compliance entry, and failure that is not fatal | Verification workshops, shared service stacks | Space, Compute, Capital | Slot application, minimum-data declaration, shutdown procedure | Fittings removed when the slot ends; the space is back the same day |
+| Growth-stage firms (productisation) | Real-scenario validation with clear accountability | Model red-team desk SCN-01, robot right-of-way sandbox SCN-02 | Industry, Scenario | Version, risk items and a named human owner all present | An unresolved risk means exit; the sandbox perimeter is dismantled |
+| Established firms and institutes | Standards, open results, long-term collaboration | Open research courts, the open-source handover ground | Industry, Talent | Publish the interface spec — and the failures as well | Withdrawal must also withdraw the parties depending on that interface |
+| Operators and maintainers | Faults, versions and duty made visible | Visible maintenance stop SCN-08, century duty logbook | Talent, Scenario | Logbook sign-off and work-order closure | Items left open at handover may not disappear |
+
+**This table deliberately does not say "attract N firms, incubate M teams".** Numbers of that kind require targets from the competent industrial authorities and real investment arrangements; this proposal has neither the authority nor the evidence for them. What it can be accountable for is that every type of team can point at one specific cell and one specific scenario and state where it enters, under what rule it works, what it leaves behind, and under what condition it must go. The content of Haidian's "1+X+1" industrial system is defined by the competent authorities [source:HAIDIAN-2025-STATISTICAL-BULLETIN]; this proposal only offers spatial interfaces and verification tools along its "AI+" direction, and represents no agreement by any party to take part.
+
+### Industrial stages and spatial supply: five stages, four cell typologies, one loop
+
+Innovation is not a straight line from research to application, and the two stages in the middle — validation and open sourcing — are the ones most often left without space: they belong neither to the laboratory nor to the market, so conventional supply has no slot for them. This proposal gives those two stages space of their own.
+
+| Stage | What is missing | Spatial supply here | Land use | Reversibility |
+| --- | --- | --- | --- | --- |
+| Research | Not missing (universities and institutes already have it) | No duplicate building; interfaces only | LU-008 | — |
+| **Validation** | A test site an independent party can see into | 5 verification workshops + three industrial validation scenarios | LU-009 / LU-010 | Perimeter and equipment removable |
+| **Open sourcing** | A public table for handing results over | Open-source handover ground + campus research relay | LU-006 / LU-007 | Display units movable |
+| Application | Real city scenarios that can still be exited | Twelve scenario nodes | LU-003 / LU-005 | Public use restored on exit |
+| Feedback | A route for problems to travel back to research | Century duty logbook + dual-control shift ledger | Whole belt | Records not revocable |
+
+The relation between the four cell typologies and the five stages is therefore explicit: **open research courts** carry the handover from research to validation, **verification workshops** carry validation itself, **shared service stacks** carry open sourcing and factor access, and **community collaboration houses** carry application and feedback. The combined footprint of the twenty cells is 221,014.099 m² [metric:building_footprint_area_sqm], used **only to compare types of spatial supply — it does not state existing floor area, demolition targets or approved new-build volume**.
+
 ### Self-selected area: five "AI+" vertical scenarios
 
 Inside the overall design area but outside the three key areas, two segments are selected as vertical application trials: the education and software-dense stretch toward Xueyuan Road in the centre, and the daily-service and health-access stretch toward Xizhimenwai Street in the south. All five keep the same handover discipline — minimum data, duty owner, human takeover, no-AI equivalent, exit condition. A vertical sector does not relax it.
