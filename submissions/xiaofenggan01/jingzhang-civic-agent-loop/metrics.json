@@ -545,6 +545,19 @@
       "assumptions": [
         "三厅分别承接场景 07/11/10"
       ]
+    },
+    "dazhongsi_market_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count of dazhongsi markets (晨/日/夜)",
+      "confidence": "high",
+      "assumptions": [
+        "三市与四时段基线对应；夜市须满足暗夜友好照明制度"
+      ]
     }
   }
 }
