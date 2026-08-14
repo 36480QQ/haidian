@@ -12,7 +12,7 @@
     "agent_name": "ZCode",
     "model": "builtin:bigmodel-coding-plan/GLM-5.2"
   },
-  "generated_at": "2026-08-14T07:15:53.623947+00:00",
+  "generated_at": "2026-08-14T14:31:04.237323+00:00",
   "files": [
     {
       "path": "manifest.json",
@@ -24,7 +24,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "befcb9fd8b8911403854f4aeeb4d216a1742b955bdbe3c4d65d72773437d6ff9"
+      "sha256": "ba28aa414f6c313921962adef024802649bdf6b910dca37baed6c855bcf75f70"
     },
     {
       "path": "agent.json",
@@ -36,7 +36,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "d8fad339789d017a8b45466312a07b2d63c2c2b91d63f85b3996e7a560fb17d9"
+      "sha256": "a61006b511e06854da9d839a6d0b000ac2a821c3ccf4953fd78ed81d9062e0b0"
     },
     {
       "path": "assumptions.json",
@@ -79,7 +79,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "51eff871a33ff05ff7f9133d59a49f50b677ef70c88239407b2e941aa4254a10"
+      "sha256": "aeca56471afc01d3614cb372500c8d84e0e4a9e3dcdb44e35938694c3a2bda92"
     },
     {
       "path": "report/narrative.md",
@@ -207,7 +207,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": true,
-      "sha256": "5725e315929c4d0aaa8a27a9029ddc8e1175a8745b237c8e25af658c10e6092f"
+      "sha256": "d369bdd3d437a4ff494e98a85b18395fee0dc79ca23c1688784ae02a325d704f"
     },
     {
       "path": "visual/assets/sc04-relay-receipt.json",
@@ -283,7 +283,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "619cdb0dbe4648ad395a9b97d5a406fe13a5faea9a9259391fdb727fd5cb8c36"
+      "sha256": "fe03fc05d6db0c5b9c6e070a156affc5cc73b447e820def6ef895bc363ccf07c"
     },
     {
       "path": "report/proposal.en.html",
@@ -291,7 +291,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "c55c05a0da1c27790e1976a1921a9bd4337f2b6433a158e0889771377a26c401"
+      "sha256": "c999280be4fd68427eafcba9829cd47373e5a955bbec759377a70312862474b7"
     },
     {
       "path": "visual/index.en.html",
@@ -318,24 +318,27 @@
     },
     {
       "path": "visual/assets/delivery_contracts.json",
-      "role": "evidence-asset",
+      "role": "asset",
       "required": false,
       "language": "zh",
-      "sha256": "0c1d3cd4587217af81ac3c6bca0ef363d71a49d4c35697bcbf09d20fb09a91aa"
+      "sha256": "0c1d3cd4587217af81ac3c6bca0ef363d71a49d4c35697bcbf09d20fb09a91aa",
+      "role_detail": "evidence_asset"
     },
     {
       "path": "visual/assets/edge-matrix.json",
-      "role": "evidence-asset",
+      "role": "asset",
       "required": false,
       "language": "zh",
-      "sha256": "b26d3d07753c46a831526096fa896fd5e9cdf3ed5508efc1bb436652347422ab"
+      "sha256": "b26d3d07753c46a831526096fa896fd5e9cdf3ed5508efc1bb436652347422ab",
+      "role_detail": "evidence_asset"
     },
     {
       "path": "visual/assets/tabletop_cases.json",
-      "role": "evidence-asset",
+      "role": "asset",
       "required": false,
       "language": "zh",
-      "sha256": "b4b0d4b5f34231025f8f6412e175ef6fb812578d70eb4970c85e70431f2b877f"
+      "sha256": "b4b0d4b5f34231025f8f6412e175ef6fb812578d70eb4970c85e70431f2b877f",
+      "role_detail": "evidence_asset"
     }
   ],
   "validation_claim": {
