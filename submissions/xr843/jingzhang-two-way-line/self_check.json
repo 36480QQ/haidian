@@ -87,7 +87,7 @@
       "ai_package_stages": {
         "submissions/xr843/jingzhang-two-way-line": "formal"
       },
-      "total_bytes": 19474036,
+      "total_bytes": 19478382,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -145,6 +145,9 @@
       "ok": true,
       "issues": [],
       "metrics_seen": {
+        "greenway_length_m": 7829.5,
+        "crossing_node_count": 8.0,
+        "ai_scenario_card_count": 12.0,
         "site_area_sqm": 11400064.345,
         "key_area_total_sqm": 3683996.587,
         "key_area_zhongzhiyuan_sqm": 1921022.69,
@@ -152,8 +155,6 @@
         "key_area_dazhongsi_sqm": 719992.544,
         "land_use_area_sqm": 11399406.735,
         "road_length_m": 38092.4,
-        "greenway_length_m": 7829.5,
-        "crossing_node_count": 8.0,
         "road_area_ratio": 0.064998,
         "green_space_area_sqm": 1208541.249,
         "green_ratio": 0.106012,
@@ -166,7 +167,6 @@
         "phase_2_area_sqm": 2496922.474,
         "phase_3_area_sqm": 1693109.632,
         "ai_scenario_node_count": 12.0,
-        "ai_scenario_card_count": 12.0,
         "ai_test_scenario_count": 3.0,
         "user_persona_count": 7.0,
         "ai_pilgrimage_landmark_count": 4.0,
