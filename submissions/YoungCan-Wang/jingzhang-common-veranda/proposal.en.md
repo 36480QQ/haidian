@@ -1,23 +1,23 @@
 ---
-title: "Jing-Zhang Common Veranda: Make the Belt a Place Where Ordinary Life Comes First"
+title: "Jing-Zhang Common Veranda: Lunch Gate First, AI Second"
 author_github: "YoungCan-Wang"
 language: "en"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "The Common Veranda follows the real overall-design limits from Xizhimen Outer Street to the North Fifth Ring and the Jing-Zhang heritage spine from Beijing North through Dazhongsi, Zhichun, Wudaokou and Qinghua East Road West. Six real city gates connect lunch walking, sport, community life and restrained AI services; every boundary, capacity and engineering move remains verifiable and reversible."
+summary: "Lunch gate first, AI second. Real park gates at Qinghua East Road West, Wudaokou and Dazhongsi must be walkable and still usable without power; AI only buys water, calls a staffed search, or logs a lost item, then hands off to a person. Every boundary and engineering move stays verifiable and reversible."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
 
 # Jing-Zhang Common Veranda
 
-**JING-ZHANG COMMON VERANDA** is neither a street lined with AI exhibits, nor a closed startup campus beside a historic railway, nor a special zone reserved for driverless vehicles. It treats the Jing-Zhang corridor as Haidian's civic veranda for the future: a place to walk after lunch, watch basketball, bring children and animals, and still see what data an AI scenario uses, who is responsible, when it pauses and how a person can exit.
+**Lunch gate first, AI second.** The Common Veranda is not an exhibit street or a driverless enclave. A park gate must first let people walk in, cross the street and sit in the shade; seats, signs and a staffed desk still work when power is off. AI does only three closable jobs: buy water, call a staffed search, and log a lost item. No photo upload or facial recognition by default; failure goes to a person.
 
-The proposal follows two real geographic layers. The overall-design scope runs from Xizhimen Outer Street to the North Fifth Ring, with Xueyuan/Xitucheng Roads to the east and Dazhongsi East/Heqing Roads to the west. Within it, the Jing-Zhang heritage spine runs from Beijing North through Dazhongsi, Zhichun Road, Wudaokou and Qinghua East Road West to the North Fifth Ring. Six gates anchor to existing stations, streets, under-bridge space, approved public-realm work and the Phase 2 interface. Operating rail keeps an exclusive safety edge; walking remains continuous; running and cycling separate only where width permits; service vehicles are controlled; courts, queues and seats stay off through-routes. Every move is a Conceptual Recommendation, not statutory planning, institutional authorization or government approval.
+That rule sits on the real Jing-Zhang heritage spine: Beijing North—Dazhongsi—Zhichun Road—Wudaokou—Qinghua East Road West—North Fifth Ring. The enlarged test is a gate that already meets the city, especially **Qinghua East Road West**. 500–600 m is a target service radius around the gate, not a surveyed route. Every move is a Conceptual Recommendation, not statutory planning, institutional authorization or government approval.
 
-![Overall urban design](assets/figures/site-overview.en.png)
+![Lunch gate first: real doors and closable AI](assets/figures/site-overview.en.png)
 
 ## Design Basis and Source Inventory
 
@@ -41,9 +41,9 @@ The site and three key-area polygons remain repository-provisional. The submitte
 - **Office versus living:** universities, campuses, communities and commerce already mix inside the overall-design scope. The real stitching points are Zhichun Road, Chengfu Road, Qinghua East Road West and the four Dazhongsi quadrants. The missing layer is not another office concept but an everyday public realm with continuous walking, safe crossing, stopping and staffed help at those real interfaces.
 - **Intelligence versus accountability:** AI scenarios are expanding, while clear human owners, explanation desks, pause conditions and appeal routes remain spatially absent. [depth:existing_conditions_diagnosis]
 
-### Everyday-life principle: a veranda is a lunch walk that actually arrives
+### Everyday-life principle: lunch gate first, AI second
 
-The **500–600 m** figure is only a target service radius around real Phase 1 city gates, not a completed walking survey. Field audit must test Zhichun Road, the North Fourth Ring under-bridge, Chengfu Road/Wudaokou and Qinghua East Road West: can offices, campuses and communities reach the park through continuous sidewalks, signalised crossings and accessible entrances? Student life around Liudaokou and Wudaokou, commercial and community services around Dazhongsi, and existing Phase 1 sports facilities show that the innovation belt must first support ordinary life. This is not a preference survey or traffic-count conclusion. [source:JINGZHANG-PHASE1-OPEN-2023] [depth:haidian_everyday_life]
+One rule: the gate must be walkable and still usable without power before any closable AI is added. 500–600 m is a target service radius around real Phase 1 gates, not a completed survey. Audit Qinghua East Road West first, then Zhichun Road, Chengfu Road/Wudaokou and the Dazhongsi quadrants. AI only buys water, calls a staffed search, or logs a lost item. The two existing Phase 1 basketball courts are audited first; no new court is proposed by default. This is not a preference survey or traffic-count conclusion. [source:JINGZHANG-PHASE1-OPEN-2023] [depth:haidian_everyday_life]
 
 ### Translating Beijing and Haidian evidence into design moves
 
@@ -65,7 +65,7 @@ The official 2021 implementation interpretation already identified breaks, multi
 
 The 43.6 km² coordinated research scope runs from the North Fifth Ring to Xizhimen Outer Street and from the Beijing–Tibet Expressway to Wanquanhe Road; it asks how the innovation ecosystem collaborates. The approximate 11.4 km² overall design scope runs from Xizhimen Outer Street to the North Fifth Ring, from Xueyuan/Xitucheng Roads in the east to Dazhongsi East/Heqing Roads in the west; it asks how civic space, mobility, industry and daily life are organised. The approximately 368.4 ha key-area scope runs north to south through Zhongzhiyuan, AI Origin and Dazhongsi; it asks how prototypes can be handed to professional teams. One civic-value contract connects all three: public access, explained responsibility, minimum data, human review and exit.
 
-![Three scopes and six program bands](assets/figures/land-use-structure.en.png)
+![The same lunch-gate rule carried through three official scales](assets/figures/land-use-structure.en.png)
 
 The six bands are not gated districts. Along the civic spine, they share ground-floor access, open hours and service protocols: autonomy and validation, Qinghe blue-green sharing, open learning and transfer, community care and services, AI daily life and commerce, and rail memory and international communication. [depth:three_level_scope_framework]
 
@@ -107,13 +107,13 @@ The civic spine combines rail heritage interpretation, all-weather slow mobility
 
 Six east-west city gates turn crossings of rail, roads, walls and campus edges into six independent verification tasks. Each gate needs continuous walking, cycle parking, accessible ramps, night lighting, legible signs, staffed help and stormwater buffering. Bridges, tunnels and structural works remain subject to professional investigation. [metric:east_west_link_count]
 
-The lunch scenario attaches only to east-west streets where Phase 1 already meets the city. This proposal enlarges **Qinghua East Road West**: campuses and offices to the east reach a signalised crossing, station cycle parking and the park entrance along the real street. Its first job is a continuous ground layer for walking, crossing and stopping without pushing people into traffic. Walking time, clear width, volume and accessibility all require field audit. [depth:haidian_everyday_life]
+The lunch gate attaches only to east-west streets where Phase 1 already meets the city. The enlarged node is **Qinghua East Road West**: campuses and offices reach a signalised crossing, cycle parking and the park entrance. Its first job is a continuous ground layer that lets people walk, cross and stop without being pushed into traffic. Time, clear width, volume and accessibility all require field audit. [depth:haidian_everyday_life]
 
-`mobility-bluegreen` keeps the north–south slow-traffic system and enlarges the west end of Qinghua East Road: city east — east–west street — park gate — rail remnant. **500–600 m** is a service-radius target around those real gates, not a surveyed route. At the gate, a closable restrained-AI protocol covers buy-water, staffed separated-person help and lost-item registry, with no photo upload by default and human handover on failure.
+`mobility-bluegreen` proves the same sentence at two scales: the full north–south slow system on the left, the Qinghua East Road West lunch gate on the right, and the east-city—crossing—staffed desk—park—rail safety sequence below. **500–600 m** is only a gate-side service-radius target. The gate adds one closable AI layer: buy water, staffed search, lost-item registry; no photo upload by default; failure goes to a person.
 
 ![Conceptual lunch walk into the railway park](assets/renders/lunch-walk-park.jpg)
 
-![Corridor slow-traffic system and Qinghua East Road west-end city gate](assets/figures/mobility-bluegreen.en.png)
+![Lunch-gate evidence: full corridor, G5 and the east–west crossing](assets/figures/mobility-bluegreen.en.png)
 
 ### Six program bands and building renewal
 
@@ -125,9 +125,9 @@ The 22 building footprints remain conceptual prototypes, totalling approximately
 
 ## Detailed Design of the Three Key Areas
 
-Each key area uses the same grammar: existing context, civic axis, east-west gate, central commons, six program nodes and professional handoff conditions. Real building context supports orientation; coloured axes and nodes remain conceptual. [metric:key_area_count]
+The three key areas are first three everyday gate tests, then innovation prototypes: Zhongzhiyuan checks whether the Qinghe / Phase 2 interface is walkable (no premature promise of continuous opening); AI Origin checks the Qinghua East Road West lunch gate; Dazhongsi checks the station-quadrant living gate and staffed desk. Coloured axes and nodes remain conceptual. [metric:key_area_count]
 
-![Three key areas](assets/figures/key-areas.en.png)
+![Three key areas as three everyday gate tests](assets/figures/key-areas.en.png)
 
 ### 01 Zhongzhiyuan: Responsible Test Veranda
 
@@ -246,9 +246,9 @@ No smart layer opens without an operations owner, maintenance/spares window, sta
 
 ## Metrics, Recalculation and Compliance Matrix
 
-![Metrics, evidence and risk](assets/figures/metrics-evidence.en.png)
+![Lunch-gate acceptance: write numbers that recalculate, write triggers where they cannot](assets/figures/metrics-evidence.en.png)
 
-Metrics have three classes: spatial values recalculable from GeoJSON; statutory controls waiting for official plans; and performance metrics accumulated through operations. The first carries current values, the second remains unknown, and the third defines collection method, accountable owner and privacy boundary. [depth:metrics_recalculation]
+Accept the lunch-gate rule before reading area ratios. Gate-side service radius, audit-first courts, three closable AI jobs, and a low-tech layer that still works without power are the acceptance sentences this round must make visible. Area metrics still have three classes: spatial values recalculable from GeoJSON; statutory controls waiting for official plans; and performance metrics accumulated through operations. The first carries current values, the second remains unknown, and the third defines collection method, accountable owner and privacy boundary. [depth:metrics_recalculation]
 
 Spatial metrics are recalculated in EPSG:4548 from the site boundary, green-space, public-space and building layers. The provisional design envelope is approximately **11.41 km²**, concept green space approximately **12.1%**, and concept public space approximately **2.1%**. These values check internal consistency and map directly to the methods, source layers and status fields in `metrics.json`; because the boundary and key areas remain provisional, none is presented as a statutory site area or planning ratio. [metric:site_area_sqm] [metric:green_ratio] [metric:public_space_ratio]
 
