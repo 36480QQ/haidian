@@ -268,6 +268,8 @@ To locate this proposal within the known sample lineage, the following 7 globall
 
 ### External Regional Synergy (linkages with Beijing AI strategy + Jing-Jin-Ji)
 
+![External regional synergy (concept)](assets/figures/regional-synergy.png)
+
 While the proposal focuses on Haidian's 43.6 km², it must structurally echo the capital-wide AI layout and the Jing-Jin-Ji coordinated-development strategy, avoiding internal closure:
 
 | Cluster | Strategic positioning | This proposal's channels and reciprocal benefits |
@@ -328,6 +330,20 @@ Mapping logic: near-phase scenarios land first on the already-ignited "Origin–
 
 All three test scenarios are clearly labeled "test-and-validate, not approved operation" [source:AGENT-TASKBOOK]. All scenarios observe privacy and human-review boundaries: no excessive surveillance (environment-level/aggregate de-identified data only), human-review backstops (legal/medical scenarios), data consent, manual channels for vulnerable groups, and AI-generated content labeling.
 
+### Developer Community & International Recruitment-Conversion Path
+
+**Developer community operation (concept)**: an "open-source contribution → honor → growth" loop — developers contribute code via the Artery Open-Source Day / code marathon, earning three-tier honors (rail-tie stone inscription / Artery Star annual selection / young-innovator program); the growth path runs from "attending events" to "securing space" (free workstations / OPC full-lifecycle services) to "securing capital" (roadshow matchmaking / competition fast-track); community carriers are the Artery open-source community (online) plus AI stations / forest theatres (offline), with the open-source community square hosting regular events.
+
+**International recruitment-conversion path (concept)**: via the twin HSR gateways (Qinghe / Xizhimen) and the SCO AI Application Cooperation Center, a three-step "attract — retain — go-global" loop:
+
+| Step | Action | Carrier | Conversion indicator (draft) |
+|---|---|---|---|
+| Attract | Global AI Innovation Belt Forum + Jing-Zhang Smart Transit Week + overseas roadshows | International roadshow hall / Gateway of Jing-Zhang | registered foreign guests, MoUs signed |
+| Retain | OPC full-lifecycle services + test sandbox + unmanned-retail sandbox | AI Origin Community / Zhongzhi Park | overseas teams landed, OPC registrations |
+| Go-global | Going-global services + international launch stage + open-source showcase | Stack Sanctuary / International Exchange Center | going-global enterprises, international projects |
+
+All conversion mechanisms are **conceptual**, to be implemented in the refinement phase through multi-stakeholder governance (government, industry, academia, capital).
+
 ## Land Use, Building Scale and Retain/Renovate/Demolish
 
 The land use plan follows public standards for territorial survey, planning and use-control classification, forming a complete and gapless land use division [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [data:geometry/land_use.geojson#LU-001]. The building plan distinguishes retain/renovate/renew/new/pending objects and clarifies building footprints, functions, scale and character suggestions [depth:height_massing_character] [depth:retain_renovate_demolish] [metric:building_footprint_area_sqm]. Where existing buildings, ownership, regulatory plans or engineering conditions are missing, only methods and a calibration checklist are proposed — no fabricated retain/renovate/demolish conclusions; where no official conditions exist for building scale, FAR or height, status is uniformly `unknown` with the pending conditions and recalculation path explained [depth:metrics_recalculation].
@@ -347,6 +363,10 @@ The blue-green space plan takes the Jing-Zhang Heritage Park vitality belt as th
 **AI public space "a heritage corridor that tells stories"**: the 9 km corridor is organized in three themed segments — north "Connect" (Qinghe–Shangdi), middle "Origin" (Wudaokou–Zhichun Road), south "Echo" (Dazhongsi–Xizhimen); conceptual facilities include a switchback plaza, sleeper-path story points (history + AI dual display every 500 m), AI stations and a forest theater.
 
 **East-west stitching and north-south connection**: a "fishbone" network of connector routes with the corridor as spine (9 branch roads opened in phase 2, suggested to be densified further), activation of space under the Metro Line 13 viaduct, ground-floor opening of parks to streets, and barrier-free connection; north-south continuity via a continuous corridor, dual gateways (Qinghe Station/Xizhimen) and water-system connectivity.
+
+![Public-space component kit (concept)](assets/figures/component-kit.png)
+
+**Public-space component kit (6 reusable modules)**: ① AI Station (smart inquiry + AED + canopy + edge compute) ② Corridor Lantern (corridor lighting + wayfinding + event publishing) ③ Wayfinding Kit (open-source, large-print/Braille/children versions) ④ Rail-tie Pavers (retained rail ties; heritage+AI dual exhibit every 500 m) ⑤ Seating Node (bench + armrest + wind-rain porch, spacing ≤ 200 m) ⑥ Memorial Plaque (rail-tie stone / paver name inscriptions, open-source contribution honor wall). All modules share the Ren-shape motif and the three-color system for direct reuse in stations, the corridor and key districts.
 
 **Urban character**: integrating Jing-Zhang railway history, Zhongguancun innovation culture and AI new culture, using Tsinghua Garden Station and other cultural resources to guide urban tone, architectural character, roofline, massing and street frontage [standard:MOHURD-URBAN-DESIGN-MEASURES]. Cultural expression is restrained and implicit — the triple heritage forms a "Connect–Origin–Echo" storyline along the belt, letting the spirit grow naturally in space.
 

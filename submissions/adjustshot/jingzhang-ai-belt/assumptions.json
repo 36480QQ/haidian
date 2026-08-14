@@ -1,11 +1,56 @@
 {
-  "schema_version": "0.1.0",
-  "assumptions": [
-    {
-      "id": "A-CONTROLS-001",
-      "status": "pending_professional_confirmation",
-      "statement": "Detailed regulatory controls, road redlines, ownership, municipal utilities, and engineering constraints must be confirmed from official attachments before statutory use.",
-      "impact": "The package can be reviewed as a formal AI submission only for provided official boundaries and submitted design layers; statutory controls still need professional confirmation."
-    }
-  ]
+ "schema_version": "0.2.0",
+ "assumptions": [
+  {
+   "id": "A-CONTROLS-001",
+   "status": "pending_professional_confirmation",
+   "statement": "Detailed regulatory controls, road redlines, ownership, municipal utilities, and engineering constraints must be confirmed from official attachments before statutory use.",
+   "impact": "The package can be reviewed as a formal AI submission only for provided official boundaries and submitted design layers; statutory controls still need professional confirmation."
+  },
+  {
+   "id": "A-ROAD-DENSITY-001",
+   "status": "conceptual_target",
+   "statement": "Road network density 5.4 km/km² is a planning target, NOT recomputed from public data.",
+   "basis": "No official road-centerline GIS is in the public site package; 5.4 km/km² is the design goal for the overall design area (11.4 km²).",
+   "formula": "sum(road_centerline_length_m) / site_area_sqm * 1e-3 (to be recomputed once official road GIS is provided)",
+   "confidence": "low",
+   "impact": "Do not cite 5.4 km/km² as an official metric; treat as target until recalculation."
+  },
+  {
+   "id": "A-TOTAL-VOLUME-001",
+   "status": "conceptual_target",
+   "statement": "Total building volume 18.80M m² (retained 12.0M + new 6.8M) is a planning target, NOT recomputed from public data.",
+   "basis": "Retained 12.0M m² is an estimate (existing footprints × hypothetical FAR 4.0); new 6.8M is a planning increment awaiting official FAR control.",
+   "formula": "retained_existing + new_increment (to be recomputed once official FAR control and floor-area census are published)",
+   "confidence": "low",
+   "impact": "Do not cite 18.80M m² as an official metric; treat as target until official controls exist."
+  },
+  {
+   "id": "A-COVERAGE-001",
+   "status": "conceptual_target",
+   "statement": "Public service coverage 85% (5-minute life circle) is a planning target, NOT recomputed from public data.",
+   "basis": "Actual coverage requires official facility GIS and population distribution, both absent from the public package.",
+   "formula": "households_within_5min_life_circle / total_households (to be recomputed once official facility GIS is provided)",
+   "confidence": "low",
+   "impact": "Do not cite 85% as an official metric; treat as design goal until recalculation."
+  },
+  {
+   "id": "A-BLUEGREEN-001",
+   "status": "conceptual_target",
+   "statement": "Blue-green space ratio target 15.5% is a design goal; current computed green_ratio is 12.34% and public_space_ratio 7.33% on provisional geometry.",
+   "basis": "Computed green_ratio / public_space_ratio derive from submitted provisional geometry; the 15.5% target combines green + water + public space pending field survey.",
+   "formula": "(green + water + public space) / site_area_sqm (to be revised once field survey data is available)",
+   "confidence": "low",
+   "impact": "Do not cite 15.5% as an official metric; treat as target until field survey."
+  },
+  {
+   "id": "A-BOUNDARY-001",
+   "status": "provisional_only",
+   "statement": "All area and ratio values in metrics.json are based on the submitted geometry (provisional boundary derived from public data), NOT the official boundary.",
+   "basis": "Official boundary polygons are not provided in the public site package (DATA-SRC-PROVISIONAL-BOUNDARIES-20260605 is provisional_only).",
+   "formula": "polygon_area(submitted_boundary)",
+   "confidence": "medium",
+   "impact": "Any area/ratio figure may change after the official boundary is published; recalculation method documented in metrics.json."
+  }
+ ]
 }
