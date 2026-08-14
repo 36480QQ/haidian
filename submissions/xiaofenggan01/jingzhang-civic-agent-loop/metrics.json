@@ -649,6 +649,19 @@
       "assumptions": [
         "纯 HTML details/summary 零脚本,满足离线约束"
       ]
+    },
+    "stitch_corridor_map_annotation_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": [
+        "assets/figures/mobility-bluegreen.png"
+      ],
+      "formula": "count of annotated stitch corridors in mobility figure",
+      "confidence": "high",
+      "assumptions": [
+        "图上逐廊标注名,转辙廊为最重视觉元素"
+      ]
     }
   }
 }

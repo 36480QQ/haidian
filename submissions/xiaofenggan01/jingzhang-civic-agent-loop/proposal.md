@@ -6,7 +6,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以铁路转辙器为母题（转辙即路由决策即 agent 编排），把四环协作（资料/推演/反馈/复核）落成机器可读治理制品——Civic Agent Receipt 收据 + G0-G6 门闸状态机 + 验线四步。环会自转：每次干预可审计、可回滚、可证伪。所有空间建议为开放共创建议，不替代正式规划。"
 tracks: ["civic-agent-governance", "ai-public-services", "jingzhang-heritage-narrative"]
 scenarios: ["ai-cultural-guide", "ai-health-service-navigation", "ai-traffic-walkability"]
-iteration: "v24.0"
+iteration: "v25.0"
 ---
 
 # 京张·转辙 · 城市智能体验证带
@@ -101,7 +101,7 @@ iteration: "v24.0"
 
 ## 交通、轨道、市政与公共服务设施
 
-交通组织回应公告对轨道接驳、慢行断点、无障碍与新型基础设施的要求 `[depth:traffic_rail_slow_parking]`。本方案以京张铁路遗址公园为南北慢行主廊道，串联三重点区，布设横向联系道路缝合东西 `[data:geometry/roads.geojson]`。针对铁路长墙的百年东西割裂，本方案布设五条**东西向转辙廊** `[metric:stitch_corridor_count]` `[data:geometry/roads.geojson#STITCH-001]`——转辙器把列车从一股道转到另一股道，转辙廊把人流从铁路西侧转到东侧：大钟寺、知春路、原点、众智、北段各一条 `[data:geometry/roads.geojson#STITCH-003]`，廊道同时承载慢行、公共空间与 AI 场景，并复合**通学安全动线**（沿线 10 余所高校与社区中小学的儿童友好路径，五廊全覆盖 `[metric:child_friendly_route_count]`）与**全龄节点**（每廊 2 处适老适幼游戏与看护节点，共 `[metric:all_age_node_count]` 处） `[data:geometry/roads.geojson]`。慢行系统以「可达、可停、可换乘」为标准；自动驾驶接驳、机器人配送与无人巡检只在明确边界、低速、可监管的公开试点范围讨论，并为服务劳动者预留低速驿站与设备充电接口。### 无障碍工程制度
+交通组织回应公告对轨道接驳、慢行断点、无障碍与新型基础设施的要求 `[depth:traffic_rail_slow_parking]`。本方案以京张铁路遗址公园为南北慢行主廊道，串联三重点区，布设横向联系道路缝合东西 `[data:geometry/roads.geojson]`。针对铁路长墙的百年东西割裂，本方案布设五条**东西向转辙廊** `[metric:stitch_corridor_count]`（mobility 图逐廊标注 `[metric:stitch_corridor_map_annotation_count]`） `[data:geometry/roads.geojson#STITCH-001]`——转辙器把列车从一股道转到另一股道，转辙廊把人流从铁路西侧转到东侧：大钟寺、知春路、原点、众智、北段各一条 `[data:geometry/roads.geojson#STITCH-003]`，廊道同时承载慢行、公共空间与 AI 场景，并复合**通学安全动线**（沿线 10 余所高校与社区中小学的儿童友好路径，五廊全覆盖 `[metric:child_friendly_route_count]`）与**全龄节点**（每廊 2 处适老适幼游戏与看护节点，共 `[metric:all_age_node_count]` 处） `[data:geometry/roads.geojson]`。慢行系统以「可达、可停、可换乘」为标准；自动驾驶接驳、机器人配送与无人巡检只在明确边界、低速、可监管的公开试点范围讨论，并为服务劳动者预留低速驿站与设备充电接口。### 无障碍工程制度
 
 本方案的无障碍不止于通道，而是可验收的工程制度：**盲道连贯率**采用月度盲测口径（不测瞬时状态）、**修复导向 KPI**（工单平均处置时长 + 复检合格率）、占用类型 × 责任单位 × 处置时限 × 核查方式**接单责任矩阵**（落入既有接诉即办 / 网格平台，不自建派单）、**开源触觉模型库**（符号化派生模型 + 验收测试卡 + 版本召回），以及店铺功能牌考核“盲文与实际业态一致率”而非挂牌率；无障碍连贯率监测作为场景卡 13 落地 `[metric:accessibility_checkpoint_count]`。
 
