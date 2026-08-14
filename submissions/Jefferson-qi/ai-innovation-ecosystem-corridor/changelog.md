@@ -1,8 +1,108 @@
-# 方案迭代记录
-
 # Changelog
 
-## v1.2 - 2026-08-12
+## v4.0 (2026-08-14)
+
+### 针对评审58分→及格线的三大短板针对性提升
+
+#### 可实施性提升（2/5 → 目标3/5）
+- 新增"法律政策依据与实施路径"完整章节
+- 引用《北京市城市更新条例》（2023.3.1施行）6条具体条款：项目入库（第39-40条）、实施方案编制（第40条）、联合审查公示（第41条）、五年过渡期政策、实施单元统筹（第22条）、并联审批（第43条）
+- 引用海淀区AI产业政策5项：每年10亿+资金支持、200亿科技成长基金矩阵、40.24亿已投入专项资金、67万平米产业园更新、50万平米产业空间拓展
+- 新增"资金筹措机制建议"表（6类资金渠道×4列：渠道/范围/政策依据/金额量级）
+- 将实施政策建议从4条扩展至6条，每条标注具体政策依据
+- 引用《北京市城市更新实施方案编制工作指南》《北京市建设用地功能混合使用指导意见》
+
+#### 风险与合规意识提升（2/5 → 目标3/5）
+- 将"风险、版权与合规说明"从4小节扩展为完整合规框架
+- 新增"法律合规框架"：城市更新合规依据4部法规表、AI服务合规依据5部法规表、数据安全合规依据4部法规表
+- 新增"风险识别与应对矩阵"：5类风险（数据安全/AI算法/城市更新/社会稳定/技术安全）×详细子项表
+- 新增"AI场景合规审查清单"：12项审查标准表（算法备案/安全评估/内容标识/用户告知/单独同意/公共场所告知/投诉举报/人工复核/数据安全评估/科技伦理审查/无障碍/退出机制）
+- 每项均标注具体法律条款（如《暂行办法》第17条、《个人信息保护法》第26条等）
+- 待补资料从5项扩展至7项（新增算法备案报告、数据安全评估报告）
+
+#### 表达完整度提升（2/5 → 目标3/5）
+- 新增"执行摘要"章节（方案核心要点6条概览+重要声明）
+- 参考资料从10条扩展至27条，按5个分类组织（公告与任务书/城市更新法规/AI与数据安全法规/专业标准/海淀区AI政策/其他）
+- compliance_matrix.json新增4个合规条目（legal_policy_basis/risk_compliance_framework/ai_service_compliance/executive_summary）
+- sources.json新增7个法律来源（LAW-BJ-URBAN-RENEWAL-REGULATION等6部法规+SRC-2026-HAIDIAN-AI-POLICY政策）
+- 中英双语同步更新（proposal.en.md同步新增执行摘要、法律政策依据、风险合规框架、合规审查清单、扩展参考资料）
+
+## v3.0 (2026-08-14)
+
+### 基于AI Agent评审意见的系统性修复（58.0/100 → 目标提升）
+
+#### metrics.json 重构
+- 修复green_ratio重复问题：合并两个green_ratio条目，value设为null（unknown），新增target_value=35和target_status=design_target
+- 将35%绿地率、45%绿化覆盖率、80%径流控制率、90%生活圈覆盖率、10km/km²支路密度从design_concept改为design_target（明确标注为设计目标值，非已验证基线值）
+- 新增scope字段区分coordinated_research/overall_design/key_detail三层范围
+- 新增scope_definitions区块明确定义三层范围面积
+- 新增baseline_value和target_value分离
+
+#### sources.json 升级
+- 新增source_registry_summary区块，明确区分approved_formal_sources/user_provided_cleared/provisional/external_reference四类
+- 为波士顿/纽约、OPC、三区两翼、1+X+1及OSM逐项补充accessed_date、license、verification_status、not_usable_for
+- 将未进入approved_formal_sources的来源标注in_external_reference=true
+- 新增unverified_statistics_note声明波士顿/纽约统计数据未独立验证
+- 新增cross_reference交叉验证信息
+
+#### copyright_statement.md 升级
+- 从自述性声明升级为逐项版权与来源清单
+- 新增8个分类表格：字体、图标、地图、图片、数据、代码、外部文档、网页模板
+- 每项标注来源、许可状态和使用范围
+- 新增待清权事项清单
+
+#### proposal.md 内容增强
+- 新增"区域协同：从三区两翼到京津冀创新网络"章节（北纬社区、未来科学城、怀柔科学城、经开区、京津冀5个方向）
+- 新增"AI场景治理矩阵"（数据生命周期、模型审计、人工复核、申诉退出、事故暂停、无障碍替代、阶段KPI、运营主体类型、未获批准声明）
+- 新增"更新项目实施矩阵"（18项逐项列出前置条件、权属审批、成本量级、建设运维责任、阶段闸门、停止条件）
+- 新增"公共利益保障与包容性设计"章节（残障人士、儿童照护者、低收入租户、非数字用户、现有小商户5类群体+居民参与+影响评估+申诉救济+反排斥）
+- 完善Logo/VI视觉识别系统框架（7个VI要素+活动品牌系统+国际传播视觉策略）
+- 完善国际传播策略（6类国际对象的传播内容与转化路径+双语传播保障）
+- 软化确定性措辞：不得→建议不宜、禁止→建议避免、强制→建议优先、刚性控制→设计目标
+
+#### compliance_matrix.json 更新
+- 新增regional_synergy、scenario_governance、implementation_detail、public_interest、copyright_ledger、metric_classification六项覆盖映射
+
+#### 视觉交付物重新生成
+- 5套图集全部重新生成（site-overview/land-use-structure/key-areas/mobility-bluegreen/metrics-evidence）
+- 每套图集含CN/EN两个版本（hash不同）
+- 所有图集添加比例尺、指北针
+- 所有图集添加临时边界警示（provisional warning）
+- 图5重构：明确区分official/design_target/design_concept/unknown四类指标
+- A0展板重新设计：内容均匀分布，不再集中在顶部
+- A3图册更新：4栏摘要布局
+- 修复字体编码问题：使用SimHei/Microsoft YaHei系统字体
+
+#### proposal.en.md 英文版同步更新
+- 新增"Regional Synergy: From Three Zones and Two Wings to the Beijing-Tianjin-Hebei Innovation Network"章节
+- 新增"Boston and New York Science & Technology Ecosystem Comparative Study"章节
+- 新增"South Bank New Land OPC Innovation Community Model Reference"章节
+- 新增"Science and Technology Innovation Ecosystem Building Strategy"整章（四大支柱）
+- 新增"AI Scenario Governance Matrix"（9维治理矩阵+数据生命周期+模型审计+申诉退出细则）
+- 新增"Renewal Project Implementation Matrix"（18项实施矩阵+成本量级+阶段闸门+停止条件）
+- 新增"Public Interest Safeguards and Inclusive Design"整章（5类弱势群体+居民参与+影响评估+申诉救济+反排斥）
+- 完善VI视觉识别系统框架（7个VI要素+活动品牌+国际传播视觉策略）
+- 完善国际传播策略（6类国际对象传播内容与转化路径表+双语传播保障）
+- 更新指标表：新增邻里中心分类、五分钟生活圈覆盖率、区域协同节点
+- 更新项目清单从14项至18项
+- 软化确定性措辞与中文版保持一致
+
+#### proposal.html 重新生成
+- 包含全部新增内容（区域协同、场景治理、实施矩阵、公共利益）
+- 使用Microsoft YaHei字体确保中文正确渲染
+- 自包含CSS，无外部依赖
+
+### 视觉交付物v4更新（针对附图未更新问题）
+- **A0 Board 01**: 新增执行摘要条（顶部），新增"3.5 法律政策依据"和"3.6 资金筹措"两个章节
+- **A0 Board 02**: 新增"法律合规框架"(3类13部法规)、"风险识别矩阵"(5类风险)、"AI场景合规审查清单"(12项)
+- **A3图册**: 更新实施栏新增"法律合规/风险防控/AI合规清单/资金筹措"四项
+- **指标证据图(图5)**: 来源验证表从8项增至14项，新增6个法律来源（北京城市更新条例/生成式AI办法/个保法/数安法/算法规定/海淀AI政策）
+- **A0 Board 02**: 来源验证计数更新为"A0 10项(公告+3部法规+6部v4新增)"
+- **字体渲染修复**: 统一使用Microsoft YaHei替代SimHei，修复小字号中文方框缺字问题
+- **visual/index.html**: 更新至v4，标注新增内容
+
+## v1.2 (2026-08-11)
+
 ### Added
 - 新增"波士顿与纽约科创生态对比研究"章节：波士顿"要素优先妄想症"教训、纽约"五件套"策略、核心结论四条
 - 新增"南岸新地OPC创新社区模式借鉴"章节：OPC五大生态模块14类服务要素、五分钟生活圈、超级个体+AI模式
@@ -21,7 +121,8 @@
 - 海绵城市先行，年径流总量控制率不低于80%
 - 支路密度不低于10km/km²，街区尺度80-120米
 
-## v1.1 - 2026-08-11
+## v1.1 (2026-08-11)
+
 ### Added
 - 新增"开放创新街区体系"章节：四项设计原则（街道渗透、功能混合、界面透明、生态互联）和三区差异化设计
 - 新增"邻里中心与宜居社区"章节：三级邻里中心体系（8个一级+3个二级+1个三级）、五项设计原则、五分钟生活圈
@@ -37,7 +138,8 @@
 - 邻里中心参照新加坡淡滨尼天地（Our Tampines Hub）一站式枢纽模式
 - 开放街区参照柏林Silicon Allee、西雅图South Lake Union模式
 
-## v1.0 - 2026-08-11
+## v1.0 (2026-08-11)
+
 ### Added
 - 完整中文主方案 proposal.md，涵盖所有必需章节和六项智能体任务
 - 英文翻译 proposal.en.md
