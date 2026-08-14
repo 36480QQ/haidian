@@ -191,6 +191,12 @@
    "pass": true
   },
   {
+   "sheet": "svg/roster",
+   "min_font_units": 9.0,
+   "min_height_mm_at_A0": 4.73,
+   "pass": true
+  },
+  {
    "sheet": "svg/sections",
    "min_font_units": 9.0,
    "min_height_mm_at_A0": 4.73,
@@ -389,6 +395,12 @@
    "pass": true
   },
   {
+   "sheet": "svg.en/roster",
+   "min_font_units": 9.0,
+   "min_height_mm_at_A0": 4.73,
+   "pass": true
+  },
+  {
    "sheet": "svg.en/sections",
    "min_font_units": 9.0,
    "min_height_mm_at_A0": 4.73,
@@ -457,21 +469,21 @@
  ],
  "offline_html": {
   "visual/index.html": {
-   "images": 32,
+   "images": 33,
    "images_without_alt": 0,
    "has_lang": true,
    "heading_level_jumps": 0,
-   "figcaptions": 33,
+   "figcaptions": 34,
    "interactive_elements_needing_focus": 0,
    "has_dark_mode": true,
    "inline_script_tags": 0
   },
   "visual/index.en.html": {
-   "images": 32,
+   "images": 33,
    "images_without_alt": 0,
    "has_lang": true,
    "heading_level_jumps": 0,
-   "figcaptions": 33,
+   "figcaptions": 34,
    "interactive_elements_needing_focus": 0,
    "has_dark_mode": true,
    "inline_script_tags": 0
@@ -480,25 +492,25 @@
  "asset_references": [
   {
    "file": "visual/index.html",
-   "references": 32,
+   "references": 33,
    "missing": [],
    "remote": []
   },
   {
    "file": "visual/index.en.html",
-   "references": 32,
+   "references": 33,
    "missing": [],
    "remote": []
   },
   {
    "file": "report/proposal.html",
-   "references": 25,
+   "references": 26,
    "missing": [],
    "remote": []
   },
   {
    "file": "report/proposal.en.html",
-   "references": 25,
+   "references": 26,
    "missing": [],
    "remote": []
   }
