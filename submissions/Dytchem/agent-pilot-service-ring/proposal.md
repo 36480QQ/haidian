@@ -26,7 +26,7 @@ iteration: "v0.1"
 
 ## 三层范围工作框架
 
-三层范围按公告口径组织：统筹研究范围约 43.6 平方公里，回答"低速智能体与企业服务如何在京张走廊上组织成产业回路"；总体设计范围约 11.4 平方公里，落实"一廊一环三站两翼"的空间骨架与更新项目；重点区域范围约 368.4 公顷，把三处重点区做成三种试点原型——众智园是验证站、AI 原点社区是共学站、大钟寺是体验站 [metric:announced_research_area_sqkm] [metric:announced_overall_area_sqm] [metric:announced_key_areas_total_sqm]。
+三层范围按公告口径组织：统筹研究范围约 43.6 平方公里，回答"低速智能体与企业服务如何在京张走廊上组织成产业回路"；总体设计范围约 11.4 平方公里，落实"一廊一环三站两翼"的空间骨架与更新项目；重点区域范围约 368.4 公顷，把三处重点区做成三种试点原型——众智园是验证站、AI 原点社区是共学站、大钟寺是体验站 [metric:announced_research_area_sqm] [metric:announced_overall_area_sqm] [metric:announced_key_areas_total_sqm]。
 
 "一廊一环三站两翼"是本方案跨尺度的统一结构：**一廊**是京张低速智能体试验廊（沿遗址绿脊连续展开，由南向北依次为共享慢行段、分时隔离段与封闭测试段，其中 1401 绿地约 387 公顷，连同大钟寺试验门户广场共约 415 公顷），**一环**是 AI 企业服务回路（沿场地内缘约 260 米等距回路的服务线位，概念长度约 19.7 公里，串联三站与中关村科技服务翼），**三站**是众智园验证站、原点共学站、大钟寺体验站，**两翼**是中关村科技服务翼（要素配置与服务回路源头）与小月河场景赋能翼（生活场景侧翼）[data:geometry/roads.geojson#ROAD-RING] [metric:pilot_corridor_1401_area_sqm] [depth:three_level_scope_framework]。
 

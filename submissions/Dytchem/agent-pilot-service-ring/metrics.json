@@ -397,15 +397,6 @@
    "assumptions": [],
    "reason": "Official regulatory planning conditions and local green-space/heritage/municipal data are not yet published; values stay unknown pending approved controls (see planning_limits.json)."
   },
-  "announced_research_area_sqkm": {
-   "status": "known",
-   "value": 43600000,
-   "unit": "sqm",
-   "source_files": [],
-   "formula": "公告值 43.6 km²（SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT）",
-   "confidence": "high",
-   "assumptions": []
-  },
   "annual_event_system_count": {
    "status": "known",
    "value": 4,
@@ -498,6 +489,15 @@
    "unit": "sqm",
    "source_files": [],
    "formula": "公告三处重点区面积之和 368.4 ha（SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT）",
+   "confidence": "high",
+   "assumptions": []
+  },
+  "announced_research_area_sqm": {
+   "status": "known",
+   "value": 43600000,
+   "unit": "sqm",
+   "source_files": [],
+   "formula": "公告值 43.6 km²（SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT）",
    "confidence": "high",
    "assumptions": []
   }
