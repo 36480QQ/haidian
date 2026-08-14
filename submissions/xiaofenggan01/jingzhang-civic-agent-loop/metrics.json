@@ -689,6 +689,19 @@
       "assumptions": [
         "字典由资料环自动生成，与 metrics.json 同步"
       ]
+    },
+    "changelog_entry_count": {
+      "status": "known",
+      "value": 28,
+      "unit": "count",
+      "source_files": [
+        "changelog.md"
+      ],
+      "formula": "count of changelog version rows",
+      "confidence": "high",
+      "assumptions": [
+        "一版一主题的迭代史"
+      ]
     }
   }
 }
