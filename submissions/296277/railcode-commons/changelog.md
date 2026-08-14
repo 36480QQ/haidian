@@ -1,5 +1,12 @@
 # 方案迭代记录
 
+## v1.4 - 2026-08-14
+
+- 以官方任务书和 13 个官方评审维度为主线，新增 `official_brief_trace.json`：6 项任务逐项连接空间载体、RC 合同、G0-G4 和原始证据。
+- 新增 `key_area_handoff.json`，把众智园、AI 原点、大钟寺拆成 4 步空间序列，并登记角色类型、进入证据、暂停条件、恢复回执和缺失官方输入；不命名或暗示真实机构。
+- 重绘总体图和重点区图，新增双语 `brief-to-site` 首读图；拓扑空间、临时边界、合成逻辑和现实状态在同图中分开表达。
+- 同步双语正文、HTML、A3/A0、指标、权益台账、QA 和 manifest；不新增现场、授权、预算、机构、工程或绩效事实。
+
 ## v1.3 - 2026-08-14
 
 - Completed final 1440px/390px browser audit for both language versions; enabled safe wrapping for long evidence paths, with no horizontal overflow, broken images, or console errors.
