@@ -1,0 +1,23 @@
+{
+  "schema_version": "0.1.0",
+  "assumptions": [
+    {
+      "id": "A-CONTROLS-001",
+      "status": "pending_professional_confirmation",
+      "statement": "Detailed regulatory controls, road redlines, ownership, municipal utilities, and engineering constraints must be confirmed from official attachments before statutory use.",
+      "impact": "The package can be reviewed as a formal AI submission only for provided official boundaries and submitted design layers; statutory controls still need professional confirmation."
+    },
+    {
+      "id": "A-DUE-SAFE-001",
+      "status": "synthetic_protocol_only",
+      "statement": "The receipt date, queue number, adverse-action isolation, and offline completion figures are synthetic tabletop assertions, not legal effects or observed service performance.",
+      "impact": "A professional and legal review must define the applicable procedure, authority, retention period, accessibility route, and emergency exception before any real pilot."
+    },
+    {
+      "id": "A-DUE-SAFE-002",
+      "status": "pending_professional_confirmation",
+      "statement": "No real institution, public counter, claimant, case record, identity data, or operational channel is represented; provisional geometry is only a conceptual carrier.",
+      "impact": "Replace synthetic fixtures and provisional polygons with cleared, institution-approved evidence before implementation discussion."
+    }
+  ]
+}
