@@ -28,7 +28,7 @@ iteration: "v0.1"
 
 三层范围按公告口径组织：统筹研究范围约 43.6 平方公里，回答"低速智能体与企业服务如何在京张走廊上组织成产业回路"；总体设计范围约 11.4 平方公里，落实"一廊一环三站两翼"的空间骨架与更新项目；重点区域范围约 368.4 公顷，把三处重点区做成三种试点原型——众智园是验证站、AI 原点社区是共学站、大钟寺是体验站 [metric:announced_research_area_sqkm] [metric:announced_overall_area_sqm] [metric:announced_key_areas_total_sqm]。
 
-"一廊一环三站两翼"是本方案跨尺度的统一结构：**一廊**是京张低速智能体试验廊（沿遗址绿脊连续展开，由南向北依次为共享慢行段、分时隔离段与封闭测试段，其中 1401 绿地约 387 公顷，连同大钟寺试验门户广场共约 415 公顷），**一环**是 AI 企业服务回路（沿场地内缘等距回路的服务线位，概念长度约 19.7 公里，串联三站与中关村科技服务翼），**三站**是众智园验证站、原点共学站、大钟寺体验站，**两翼**是中关村科技服务翼（要素配置与服务回路源头）与小月河场景赋能翼（生活场景侧翼）[data:geometry/land_use.geojson#LU-SPINE-M] [metric:pilot_corridor_1401_area_sqm] [depth:three_level_scope_framework]。
+"一廊一环三站两翼"是本方案跨尺度的统一结构：**一廊**是京张低速智能体试验廊（沿遗址绿脊连续展开，由南向北依次为共享慢行段、分时隔离段与封闭测试段，其中 1401 绿地约 387 公顷，连同大钟寺试验门户广场共约 415 公顷），**一环**是 AI 企业服务回路（沿场地内缘约 260 米等距回路的服务线位，概念长度约 19.7 公里，串联三站与中关村科技服务翼），**三站**是众智园验证站、原点共学站、大钟寺体验站，**两翼**是中关村科技服务翼（要素配置与服务回路源头）与小月河场景赋能翼（生活场景侧翼）[data:geometry/roads.geojson#ROAD-RING] [metric:pilot_corridor_1401_area_sqm] [depth:three_level_scope_framework]。
 
 三层范围工作方式：研究层用产业与城市形态判断决定"试点带与服务环往哪走"；总体层用用地分区、路权分级与更新项目决定"试点带怎么落地"；重点区用建筑原型、公共空间与场景卡决定"单一场景如何登记、测试、纠错与退出"。每层结论都对应图层与指标，避免愿景悬空 [depth:overall_spatial_structure]。
 
@@ -54,7 +54,7 @@ iteration: "v0.1"
 
 ## 总体设计范围城市更新与控规深度城市设计
 
-总体结构：以试验廊为纵向主轴、服务回路为环向回路，东西向功能分区并辅以三条东西连接路完成"东西缝合"。西侧小月河水岸为蓝绿缓冲与滨水共享段（LU-WATER，概念分区约 303 公顷），中部遗址绿脊为试验廊（LU-SPINE 系列约 415 公顷，其中 1401 绿地 387 公顷、门户广场 28 公顷，含共享慢行段、分时隔离段与封闭测试段），东侧为功能发展带——自南向北依次为社区服务（LU-SOUTH-MIX）、大钟寺智能原生商业（LU-DZS-COMM）、南部居住（LU-S-RES）、原点教育科研（LU-ORI-EDU）、中段场景转换与企业服务枢纽（LU-MID-TRANS）、众智园研发测试（LU-ZZ-RES）[data:geometry/land_use.geojson#LU-ZZ-RES] [data:geometry/land_use.geojson#LU-DZS-COMM] [metric:spine_series_total_area_sqm]。
+总体结构：以试验廊为纵向主轴、服务回路为环向回路，东西向功能分区并辅以三条东西连接路完成"东西缝合"。西侧小月河水岸为蓝绿缓冲与滨水共享段（LU-WATER，概念分区约 303 公顷），中部遗址绿脊为试验廊（LU-SPINE 系列约 415 公顷，其中 1401 绿地 387 公顷、门户广场 28 公顷，含共享慢行段、分时隔离段与封闭测试段），东侧为功能发展带——自南向北依次为社区服务（LU-SOUTH-MIX）、大钟寺智能原生商业（LU-DZS-COMM）、南部居住（LU-S-RES）、原点教育科研（LU-ORI-EDU）、中段场景转换与企业服务枢纽（LU-MID-TRANS）、众智园研发测试（LU-ZZ-RES）[data:geometry/land_use.geojson#LU-ZZ-RES] [metric:spine_series_total_area_sqm] [metric:gateway_plaza_area_sqm]。
 
 路权分级是试验廊的核心设计动作：南段与原点段为**共享慢行段**（机器人限速、礼让行人、白天低密度运行），中段与北段连接段为**分时隔离段**（特定时段封闭部分路幅给试点运行），众智园段为**封闭测试段**（物理隔离、凭证进入）。分级不是把路让给机器，而是把"试点风险"限制在最小可审计的范围内 [data:geometry/land_use.geojson#LU-SPINE-S] [data:geometry/land_use.geojson#LU-SPINE-Z] [assumption:A-ROBOTICS-001]。
 

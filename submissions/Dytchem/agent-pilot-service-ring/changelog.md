@@ -1,5 +1,11 @@
 # 方案迭代记录 / Changelog
 
+## v0.2.0 - 2026-08-14
+
+- 独立复审两轮修复（评审维度：原创性/可实施性/风险合规/表达完整度）
+- 修复：design_depth 品牌项改"双轨回环"；悬空假设 A-PARCEL-001→A-EXISTING-001；387/415 公顷口径拆分并新增 spine/gateway 指标；geometry name_zh 残留清理；en 报告改用 .en.png 图件；术语对齐术语表
+- 补充：生态要素回路、东西缝合、公共空间组件库、导视符号系统、国际传播叙事；GLOBAL-CASES-2026 案例来源登记；A-REUSE-001 复用披露
+- 对齐：场景卡/更新项目措辞与实际模板；证据标记密度 ≤3；visual 指标值 192.9 ha；中英服务回路 260m 口径一致
 ## v0.1.0 - 2026-08-14
 
 - 初始正式提交包 (formal, package_state=ready_for_review, readiness_contract=persisted-self-check-v1)

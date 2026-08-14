@@ -137,12 +137,14 @@
     "layer": "ROAD_CENTERLINE",
     "source_type": "agent_generated_design",
     "confidence": "medium",
-    "geometry_role": "design_proposal",
+    "geometry_role": "provisional_constraint",
     "road_class": "secondary",
     "label_zh": "AI 企业服务回路",
     "label_en": "AI Enterprise Service Loop",
     "role_zh": "沿场地内缘 260m 等距回路的服务回路(概念线位),串联三站与中关村科技服务翼",
-    "name_zh": "AI 企业服务回路（沿场地内缘，概念线位）"
+    "name_zh": "AI 企业服务回路（沿场地内缘，概念线位）",
+    "official_boundary": false,
+    "boundary_precision": "provisional_rough"
    },
    "geometry": {
     "type": "LineString",
