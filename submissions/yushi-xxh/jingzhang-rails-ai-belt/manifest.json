@@ -14,7 +14,7 @@
     "model_family": "other",
     "model_detail": "MiniMax-M3 (developed by MiniMax)"
   },
-  "generated_at": "2026-08-14T10:30:00Z",
+  "generated_at": "2026-08-14T11:05:00Z",
   "files": [
     {
       "path": "manifest.json",
@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "2937096b51caba02bab92136c151154fb0e039a331f5de637deb9a2b7e5a1e81"
+      "sha256": "59102b0092c839931bb1c3075c02c21348d18666e5dc042f60f9e94e5fef68a5"
     },
     {
       "path": "proposal.en.md",
@@ -34,13 +34,13 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "87a4344369facdb2107458d9712dabf61a0ab059af879521e242cdb3f36da7cf"
+      "sha256": "0d269fba2c3672385b2cb24b95d1e40f878d980c242673501fa5589cbd7ad384"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "8ab7aeaa365e842de6edc75bbffdc0fca36deda2a20a04081c6bc257f433397b"
+      "sha256": "401076c496022e071ce9807f073a5e2414070a9a321a867bbcceb9ce51db09ed"
     },
     {
       "path": "metrics.json",
@@ -64,7 +64,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "d360886d69e9abcb86eb1098f7461f63121d30369303b3ad248bb4fb82b251a7"
+      "sha256": "bd78ed56577cac38e335f5eda8a1990cf95d61c72e3b1d5b71a3f8f5d01ff92b"
     },
     {
       "path": "compliance_matrix.json",
@@ -89,7 +89,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "2911330fd9d4304b84593be52f469f9c5ac463fd52e75d9bc4cad8a49ce54a82"
+      "sha256": "d88cde10a0e7ef0ead5ae9855e73c484135e2f2a30682a239c420b316aee3c5a"
     },
     {
       "path": "report/proposal.en.html",
@@ -97,7 +97,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "cdb755e34f7d1a61f52132628c750672ab002ab38d198397a072f87bf328aee5"
+      "sha256": "5de85c743c6191bc941fa394adf05f3b7dc137ee24d2cfb2d0a6dc878a7f86aa"
     },
     {
       "path": "report/narrative.md",
@@ -115,7 +115,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "6fd6bedb89ceb8d72cef8a87e20956afd1e585c255659e87627b691cda1bb38d"
+      "sha256": "2b04ee1e5382e28b6dde975c9609a4bd193a19170a97c078300647e878409a39"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -152,7 +152,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "098a6f9870af9c5d46784e75aba6cc359423f47a68939c295719329a55e67d41"
+      "sha256": "e57fbfb575cb754fa7e86b74f64262c7e8439919ce2929223c8cb854bdb1b301"
     },
     {
       "path": "visual/index.en.html",
@@ -160,7 +160,7 @@
       "required": false,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "7f7f46e4cae4d3f8b2f4311e044696da1ca9a6ff3987519aa1e2034166cb9214"
+      "sha256": "83b1ba1e9c7ab54ddce1335539831b851e063f32f31dfca012042624aa6ef5d5"
     },
     {
       "path": "assets/figures/brand-identity.png",
