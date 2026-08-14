@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Using the century-old Jingzhang Railway cultural axis as backbone, through AI innovation ecosystem cultivation, spatial reconstruction and scenario empowerment, transform 11.4 sq km of Haidian urban space into a global AI innovation landmark."
 tracks: ["ai-traffic-walkability", "jingzhang-heritage-narrative", "ai-origin-community"]
 scenarios: []
-iteration: "v1.0"
+iteration: "v1.1"
 ---
 
 # Jingzhang AI Pulse
@@ -98,6 +98,8 @@ The transmission mechanism operates as follows:
 ### 3.1 Regional Industry Baseline Analysis
 
 Haidian District's industrial baseline can be summarized as "two hearts": one is Zhongguancun — the heart of China's technology innovation; the other is the university cluster — the heart of China's basic research. [source:Zhongguancun Science City Plan] Between these two hearts, the Jingzhang Railway Heritage Park lies like a dormant blood vessel, waiting to be reactivated.
+
+Cross-validation with third-party public data further supports this judgment [source:THIRD-PARTY-HAIDIAN-STATS]: Haidian District's GDP exceeded RMB 1.3 trillion in 2025, generating nearly 26% of Beijing's total economic output on just 2.6% of the city's land; it hosts nearly 140,000 technology enterprises, around 10,000 national high-tech enterprises, roughly 50 unicorn companies, and 262 listed companies — leading all prefecture-level districts nationwide on multiple indicators. On the AI track, by the end of 2025 Haidian had over 1,900 AI enterprises and 123 registered large models, with 135 appearances among the AI2000 global top scholars — about 40% of the national total. These figures clarify the proposition of the Jingzhang corridor: not to cultivate innovation from scratch, but to provide a spatial interface for fusion and display for an already dense innovation stock — the data foundation of this proposal's spatial-mediator positioning.
 
 Design Judgment: The value of the Jingzhang Railway Heritage Park lies not in how much developable space it offers itself, but in its role as a **spatial intermediary** connecting the Zhongguancun core area with the Qinghe-Shangdi region. In the past, the Jingzhang Railway was a physical barrier that divided the city; after the railway went underground, the surface heritage became a rare **penetrating public space** with the capacity to restitch the divided city on both sides.
 
@@ -251,6 +253,8 @@ The above principles require numerical verification after the official regulator
 #### 5.1.1 Design Judgment
 
 Zhongzhiyuan is the "heart" of this proposal. At 192.1 hectares — equivalent to approximately 2.7 Summer Palaces — having such a scale of designable space in Haidian District's core area is exceptionally rare. Design Judgment: This area must not become an ordinary technology park — it must be a **full-stack space for AI indigenous innovation**, from basic research to application development, from industry incubation to governance dialogue, forming a complete innovation chain.
+
+The "full-stack" positioning is backed by a demonstrable talent and research stock [source:THIRD-PARTY-AI-TALENT]: Haidian District hosts 14 national key laboratories in AI and approximately 12,300 AI scholars; 21 of the 37 universities in the district have been approved for AI undergraduate programs. The university cluster adjacent to Zhongzhiyuan constitutes the upstream of the "basic research — talent cultivation — industrial transformation" chain. The proposed layout of AI R&D innovation land and industry incubation land is a design response that converts this existing potential into spatial carrying capacity.
 
 [metric:Zhongzhiyuan=192.1ha] The 192.1 hectares require clear functional zoning to avoid becoming "large but scattered." Conceptual recommendation divides Zhongzhiyuan into four sub-zones:
 
@@ -739,7 +743,11 @@ Directional recommendations:
 
 #### 8.1.2 Rail Transit Integration
 
-Design Judgment: Multiple rail transit lines serve the site, including Metro Lines 13 and 15. Rail transit is the backbone of regional transportation. Conceptual recommendations:
+Design Judgment: Multiple rail transit lines serve the site, including Metro Lines 13 and 15. Rail transit is the backbone of regional transportation. Third-party operational data profiles the load and evolution of this backbone [source:THIRD-PARTY-METRO-13]: Line 13 has served as the main northern Beijing commuter corridor with daily ridership ranking among the network's top ten; 17 of its 23 stations imposed morning-peak flow control (about 78%), and Xierqi Station once recorded the network's highest morning-peak egress volume — the rail corridor is an innovation-population corridor. With the Line 13 capacity upgrade underway (13A/13B split, and the spur line covering Software Park-Houchangcun opening at the end of 2025), transfer patterns and arrival flows along the corridor will be restructured; the station-connection design in this proposal reserves flexibility for this dynamic adjustment.
+
+Qinghe Station ridership on the Beijing-Zhangjiakou HSR validates the real-world vitality of the "Centennial Jingzhang" narrative [source:THIRD-PARTY-QINGHE-STATION]: daily passenger dispatch at Qinghe grew from 7,400 in 2020 to 23,700 in 2024, with over 23 million passengers dispatched cumulatively in five years and a record single-day high of 43,000 on May 1, 2025; after the 2025 timetable adjustment, Beijing North Station (including Qinghe) runs 126.5 scheduled train pairs. As the interchange node between the HSR and Line 13, Qinghe is the only dual gateway in the study area connecting both the "Centennial Jingzhang Cultural Belt" and the "Daily Commuting Innovation Belt"; Chapter 5 treats it as the northern anchor of the key-area detailed design.
+
+Conceptual recommendations:
 
 - Strengthen connections between rail station entrances/exits and Jingzhang Heritage Park public spaces. Conceptual recommendation: "Smart Pulse Portal" at station entrances — a micro-hub integrating information guidance, shared mobility, and community services.
 - Leverage the high accessibility around rail stations to place core functions of the three zones within a 10-minute walk of stations.
@@ -1174,6 +1182,17 @@ This proposal is a competition entry for the "Centennial Jingzhang AI Innovation
 8. Global AI innovation ecosystem case public materials (Silicon Valley, Cambridge Cluster, Station F, Cyberport, One-North, etc.)
 9. Zhan Tianyou and Jingzhang Railway historical public materials
 10. Zhongguancun development history public materials
+
+### Third-Party Public Data Citation List
+
+The following data come from statistics publicly released by official bodies or authoritative media, used for cross-validation of the official data package and not replacing any official data [source:THIRD-PARTY-HAIDIAN-STATS]:
+
+11. Haidian District industry and AI enterprise data: publicly released by Haidian District authorities (2025 GDP over RMB 1.3 trillion, nearly 140,000 tech enterprises, over 1,900 AI enterprises, 123 registered large models, 135 AI2000 global top scholars about 40% of the national total), per the Haidian special session release at the Shenzhen Cultural Expo (May 2026)
+12. Haidian AI talent and university data: People's Daily, "Beijing Haidian: Future Industries Gathering Momentum" (June 18, 2025) — 14 national key AI labs, 12,300 AI scholars, 21 of 37 universities with AI undergraduate programs [source:THIRD-PARTY-AI-TALENT]
+13. Beijing Metro Line 13 ridership and capacity upgrade data: Beijing Rail Transit Command Center monthly reports and public press coverage (2024-2025) — station flow-control ratio, Xierqi egress ranking, and the 13A/13B split scheme [source:THIRD-PARTY-METRO-13]
+14. Beijing-Zhangjiakou HSR and Qinghe Station ridership data: publicly released by China Railway Beijing Group (2024-2025) — daily dispatch volumes, five-year cumulative ridership, and 2025 scheduled train pairs [source:THIRD-PARTY-QINGHE-STATION]
+
+Third-party data usage boundary: the above data are used only for trend-level argumentation and cross-validation at the study-area tier; all spatial conclusions at the overall-design and key-area tiers remain based solely on the official data package and provisional boundaries, and third-party data do not enter area recomputation or the compliance matrix [depth:risk_missing_data].
 
 ---
 

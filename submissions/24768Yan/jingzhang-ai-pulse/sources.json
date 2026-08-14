@@ -42,6 +42,30 @@
       "path": "brief/site-package/agent_taskbook.json",
       "source_type": "user_provided_cleared",
       "usage": "Agent-facing open-call principles, six required agent tasks, scenario/branding/operation requirements, and boundary clause."
+    },
+    {
+      "id": "THIRD-PARTY-HAIDIAN-STATS",
+      "url": "https://hdb.bjhdnet.cn/hdb/content/202605/25/c62222.html",
+      "source_type": "official_open_data",
+      "usage": "Haidian District officially released industry statistics (GDP, tech enterprises, AI companies, registered large models, AI2000 scholars) for cross-validation of regional industrial base analysis; trend-level evidence only, not used in area recomputation."
+    },
+    {
+      "id": "THIRD-PARTY-AI-TALENT",
+      "url": "https://finance.people.com.cn/n1/2025/0618/c1004-40502910.html",
+      "source_type": "official_open_data",
+      "usage": "People's Daily report on Haidian AI talent base (14 national key AI labs, 12,300 AI scholars, 21 of 37 universities with AI undergraduate programs) supporting the Zhongzhiyuan full-stack innovation positioning."
+    },
+    {
+      "id": "THIRD-PARTY-METRO-13",
+      "url": "https://www.chinametro.net/index.php?aid=62391&id=539&m=mobilenewscon",
+      "source_type": "official_open_data",
+      "usage": "Beijing Rail Transit Command Center monthly reports and public press coverage (2024-2025) on Line 13 passenger flow ranking, station flow-control ratio, Xierqi egress volume ranking, and the 13A/13B capacity upgrade; used for rail-corridor demand evidence."
+    },
+    {
+      "id": "THIRD-PARTY-QINGHE-STATION",
+      "url": "https://finance.sina.com.cn/jjxw/2025-04-08/doc-inesnfym6783402.shtml",
+      "source_type": "official_open_data",
+      "usage": "China Railway Beijing Group published Qinghe Station ridership (daily dispatch 0.74w in 2020 to 2.37w in 2024, 23 million+ cumulative over five years, 126.5 train pairs after 2025 timetable adjustment) validating the Jingzhang corridor's vitality."
     }
   ]
 }
