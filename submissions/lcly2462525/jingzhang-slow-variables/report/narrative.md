@@ -6,9 +6,9 @@
 
 ---
 
-## 附录：中英等价与交付完整性审计（v1.1 自审）
+## 附录：中英等价与交付完整性审计（v1.2 自审）
 
-审计时间：2026-08-14 ｜ 审计人：排版与字体子任务代理
+审计时间：2026-08-14（v1.2 复核 A0 重排后）｜ 审计人：排版与字体子任务代理
 范围：`assets/figures/` 12 张图件、`visual/` 两份 HTML、`drawings/` 四份 PDF、`metrics.json` 与 `proposal.md` / `proposal.en.md` 的指标引用。
 所有行均给出验证方式，结果全部为 PASS。本文件可复核：每条验证方式都可原样重跑。
 
@@ -52,7 +52,9 @@ section id 序列完全一致（7 = 7）；副标题（英文 kicker）两版逐
 | a0-boards.pdf / .en.pdf | 2 = 2 | 1189.0×841.0 mm（A0 横版） | PASS |
 | a3-booklet.pdf / .en.pdf | 6 = 6 | 420.1×296.9 mm（A3 横版） | PASS |
 
-页面内容对应：A0-1 概念与结构 ↔ Concept & Structure；A0-2 深度与证据 ↔ Depth & Evidence；A3 P1–P6 概念/结构/工场/剖面/移动/指标分期逐页对应。四份文件均 ≤ 3MB（2.43–2.77MB）。
+页面内容对应：A0-1 概念与结构 ↔ Concept & Structure；A0-2 深度与证据 ↔ Depth & Evidence；A3 P1–P6 概念/结构/工场/剖面/移动/指标分期逐页对应。四份文件均 ≤ 3MB（1.77–2.58MB）。
+
+v1.2 备注：A0 两页经第二轮重排——页眉右区分别填入「指标速览 METRICS AT A GLANCE」（A0-1）与「合规快照 COMPLIANCE SNAPSHOT」（A0-2）面板，两只钟面板右半加总诀金句块、放行门/留白清单行右端加状态标签（默认否定 DEFAULT·NO / 待补 PENDING）；整页重栅格化 dpi 75→110，图流 JPEG 重压缩（pikepdf），面板正文与注记字号整体上调一档。重排后中英 4 页缩略图逐页复查无大留白、无裁切、无溢出。
 
 ## 4. metrics.json 指标在 proposal.md / proposal.en.md 中引用一致
 
