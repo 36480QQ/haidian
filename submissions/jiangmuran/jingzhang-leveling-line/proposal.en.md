@@ -727,6 +727,10 @@ This was a sentence and nothing else. FIG.12 draws it: holding areas in all four
 - **Traffic.** Dazhongsi station integration. Points here span **three jurisdictions** — municipal road, rail station and commercial property — making them the most complex on the line.
 - **Scenarios carried.** S03 agent business service desk, S05 data-factor authorisation chain, S09 daily-service demonstration street, mostly F2.
 
+![FIG.33 Dazhongsi: where the belt meets ground this network does not own](assets/figures/station.en.png)
+
+**Every other sheet assumes this network reaches its own points; at the station that ends** — the rail land has an owner who is not the city, a fare boundary and its own opening hours. The principle FIG.25 fixed, that **evidence is only as public as the door in front of it**, here meets a door somebody else holds the key to. Three rules follow. **No benchmark stands on controlled ground**: "anyone can walk up and take a reading" is false the moment it needs a ticket, so the build checks every point against every footprint, and the nearest — BM-302, 14.0 m clear of the hub — follows from the 14 m setback already fixed. **What crosses the boundary is the reading, not the instrument.** **If the operator declines, the segment is recorded unread** — not estimated, not interpolated: a visible hole in the closure record.
+
 ### Retain, renovate, demolish: principles common to all three
 
 Classification depends on the title and structural-safety assessment of existing buildings, and both are currently data gaps. This proposal therefore **offers no demolition conclusion for any specific parcel** [depth:retain_renovate_demolish] and gives only the classification principles:
@@ -1489,13 +1493,13 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-85 entries. By finder:
+86 entries. By finder:
 
 | Found by | Count | What it says |
 |---|---|---|
 | Independent audit | 25 | The audit was run against the shipped package, not a draft |
 | The author | 48 | Found while working |
-| This package's own gate | 8 | Caught at build time — which is what a gate is for |
+| This package's own gate | 9 | Caught at build time — which is what a gate is for |
 | **Reviewers outside this proposal** | **4** | [@anselasimov-web](https://github.com/anselasimov-web) on PR #1002; [@147228](https://github.com/147228) on PR #1065; [@Sonike](https://github.com/Sonike) on Issue #950; [@147228](https://github.com/147228) on Issue #950 / PR #1190 |
 
 <!-- ERRATA:COUNT:END -->
@@ -1513,7 +1517,7 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 | **The check measured the convenient thing** | **18** |
 | **Two copies of one thing drifted** | **12** |
 | **A deliverable was not looked at before shipping** | **11** |
-| **A claim outlived the package** | **5** |
+| **A claim outlived the package** | **6** |
 | Geometry did not mean what it said | 4 |
 | A number outlived the sentence holding it | 4 |
 | A reference did not resolve | 4 |
@@ -1571,11 +1575,11 @@ An authorisation statement a reviewer cannot verify is not a statement. Each row
 
 <!-- LEDGERCOUNT:BEGIN -->
 
-**The file-level ledger sits outside the review input, so its result is brought in here.** `build_review_input` sends `proposal.md` and eight JSON files; neither `report/copyright_statement.md` nor `visual/assets/rights_ledger.json` is among them. **A rights ledger the reviewer structurally cannot open is, from the reviewer's position, exactly the unverifiable assertion this package objects to elsewhere.** All **132 shipped files** carry a clearance class; a file without one fails the build:
+**The file-level ledger sits outside the review input, so its result is brought in here.** `build_review_input` sends `proposal.md` and eight JSON files; neither `report/copyright_statement.md` nor `visual/assets/rights_ledger.json` is among them. **A rights ledger the reviewer structurally cannot open is, from the reviewer's position, exactly the unverifiable assertion this package objects to elsewhere.** All **134 shipped files** carry a clearance class; a file without one fails the build:
 
 | Clearance class | Files |
 |---|---|
-| `author-originated` | 110 |
+| `author-originated` | 112 |
 | `provisional-only-with-stated-limit` | 9 |
 | `author-originated-measurement` | 8 |
 | `author-originated-with-embedded-fonts` | 4 |
@@ -1630,7 +1634,7 @@ One point of citation discipline deserves stating plainly: **the cases are used 
 
 <!-- FIGINDEX:BEGIN -->
 
-There are 33 sheets, numbered FIG.00 to FIG.32. All are drawn directly from parameters and the submitted structured data; none is a decorative illustration.
+There are 34 sheets, numbered FIG.00 to FIG.33. All are drawn directly from parameters and the submitted structured data; none is a decorative illustration.
 
 | Sheet | Content | What to read on it |
 |---|---|---|
@@ -1667,6 +1671,7 @@ There are 33 sheets, numbered FIG.00 to FIG.32. All are drawn directly from para
 | FIG.30 | The year: where forty-seven readings fall | FIG.29 priced one closure and the cost table prices a year; no sheet had drawn the year. With every cadence starting in the same month the peak is **83.5 h** against a **7.5 h** trough — eleven to one. A team sized for the average cannot do the peak month; one sized for the peak is idle the rest of the year. Separating the three annual readings drops the peak to **31.5 h** with **no change to the work at all**. The arrangement is searched, and **the search corrected the guess that produced the sheet** |
 | FIG.31 | The other year: the hours this network asks of people it does not pay | FIG.30 flattened **paid** hours and said the quarterly points need not move — and volunteers attend only the second and third order, which is exactly the tier it left alone. The volunteer year stayed at **31.0 h** against 15.0; separating them brings it to **23.0 h** at a cost of 2.0 h on the paid peak. **No arrangement minimises both, and this proposal takes the volunteer peak** — a paid peak is a procurement problem, a volunteer peak is a participation failure (errata E81) |
 | FIG.32 | How many people: the cheapest roster is the one that empties the instrument | FIG.31 scheduled volunteer **hours** and never asked how many **people**. The year needs 88 community attendances; the cheapest cover is **8 people once a month** — **which is exactly the failure A-CLOSURE-002 describes**: parties that are not independent make the closure error systematically small, and the mechanism reports success having measured nothing. The rule: nobody may attend more than half a benchmark's sessions in a year, giving a floor of **20 distinct community readers** |
+| FIG.33 | Dazhongsi: where the belt meets ground this network does not own | Every other sheet assumes the network can reach its own points; at the station that ends, because the rail land has an owner who is not the city. Three rules: **no benchmark on controlled ground** (BM-302 stands 14.0 m clear of the hub, following the setback already fixed, checked at build time); **what crosses the boundary is the reading, not the instrument**; and **if the operator declines, the segment is recorded unread** — not estimated, not interpolated, a visible hole in the closure record |
 
 <!-- FIGINDEX:END -->
 
