@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>京张复役厂｜离线设计与证据工作台</title>
+<style>
+:root{--ink:#171b1f;--paper:#f3f0e8;--paper2:#faf8f2;--steel:#68747b;--line:#c7cdd0;--red:#b34632;--yellow:#e4a72b;--green:#2d7d5b;}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.55}
+a{color:inherit}header{padding:40px clamp(22px,5vw,76px) 28px;border-bottom:1px solid var(--line);display:grid;grid-template-columns:1fr auto;gap:28px;align-items:end}
+h1{font-size:clamp(34px,5vw,68px);line-height:1.02;margin:0 0 12px;letter-spacing:-.025em}header p{max-width:830px;color:var(--steel);margin:0}
+.lang{border:1px solid var(--ink);padding:8px 14px;text-decoration:none;font-size:13px}nav{padding:14px clamp(22px,5vw,76px);display:flex;gap:18px;overflow:auto;border-bottom:1px solid var(--line);font-size:12px;text-transform:uppercase;letter-spacing:.08em}
+main{padding:32px clamp(16px,4vw,64px) 64px;max-width:1580px;margin:auto}.metrics{display:grid;grid-template-columns:repeat(6,minmax(120px,1fr));gap:10px;margin-bottom:28px}
+.metric{background:var(--paper2);border-top:4px solid var(--green);padding:15px;min-height:96px}.metric strong{display:block;font-size:22px}.metric span{color:var(--steel);font-size:12px}
+.panel{background:var(--paper2);border:1px solid var(--line);margin:0 0 24px;display:grid;grid-template-columns:minmax(220px,.32fr) 1fr;gap:20px;padding:18px;align-items:center}
+.panel img{width:100%;display:block;border:1px solid var(--line)}.panel-copy{padding:16px}.panel-copy p{color:var(--steel)}.kicker{color:var(--red);font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:13px}
+.audit{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:30px}.audit section{background:var(--ink);color:var(--paper2);padding:22px;min-height:170px}.audit h2{font-size:14px;color:var(--yellow);margin-top:0}.audit p{font-size:13px;color:#d3d7d8}
+.markers{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}footer{border-top:1px solid var(--line);padding:24px clamp(22px,5vw,76px);color:var(--steel);font-size:12px}
+@media(max-width:900px){.metrics{grid-template-columns:repeat(2,1fr)}.panel{grid-template-columns:1fr}.audit{grid-template-columns:1fr}header{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<span class="markers">总览地图 三层范围 重点区域 用地分区 交通慢行 蓝绿公共空间 建筑 更新项目 AI 场景 核心指标 任务覆盖 自检状态 来源 假设</span>
+<header><div><h1>京张复役厂｜离线设计与证据工作台</h1><p>城市 AI 设备的换件、再制造、复认证与重返运行基础设施<br>概念表达｜边界为临时粗略范围，不是官方红线</p></div><a class="lang" href="index.en.html">English</a></header>
+<nav><a href="#metrics">Metrics</a><a href="#s1">System</a><a href="#s2">Land use</a><a href="#s3">Key areas</a><a href="#s4">Mobility</a><a href="#s5">Evidence</a></nav>
+<main>
+<section class="metrics" id="metrics"><div class="metric" data-metric="site_area_sqm" data-value="11412825.386"><strong>11.413 km²</strong><span>总体设计量</span></div>
+<div class="metric" data-metric="green_ratio" data-value="0.104792"><strong>10.4792%</strong><span>绿地设计量</span></div>
+<div class="metric" data-metric="public_space_ratio" data-value="0.034662"><strong>3.4662%</strong><span>公共空间设计量</span></div>
+<div class="metric" data-metric="building_footprint_ratio" data-value="0.055315"><strong>5.5315%</strong><span>建筑基底设计量</span></div>
+<div class="metric" data-metric="road_centerline_length_m" data-value="24440.989"><strong>24.441 km</strong><span>道路中心线</span></div>
+<div class="metric" data-metric="building_count" data-value="15"><strong>15</strong><span>概念设备模块</span></div></section>
+<article class="panel" id="s1">
+          <div class="panel-copy"><span class="kicker">总览地图</span><p>前台、中台、后台与三组团的完整服务链。</p></div>
+          <img src="../assets/figures/site-overview.png" alt="总览地图" loading="lazy">
+        </article>
+<article class="panel" id="s2">
+          <div class="panel-copy"><span class="kicker">三层范围 · 用地分区</span><p>统筹研究—总体设计—重点区域从产业命题递进到可审查工位。</p></div>
+          <img src="../assets/figures/land-use-structure.png" alt="三层范围 · 用地分区" loading="lazy">
+        </article>
+<article class="panel" id="s3">
+          <div class="panel-copy"><span class="kicker">重点区域 · 建筑</span><p>三处临时重点区、十五个概念设备模块与三个公共地标。</p></div>
+          <img src="../assets/figures/key-areas.png" alt="重点区域 · 建筑" loading="lazy">
+        </article>
+<article class="panel" id="s4">
+          <div class="panel-copy"><span class="kicker">交通慢行 · 蓝绿公共空间</span><p>公众路线、普通设备物流和持证外运保持分流。</p></div>
+          <img src="../assets/figures/mobility-bluegreen.png" alt="交通慢行 · 蓝绿公共空间" loading="lazy">
+        </article>
+<article class="panel" id="s5">
+          <div class="panel-copy"><span class="kicker">核心指标 · 自检状态</span><p>已知、待补与运营指标各自保留证据边界。</p></div>
+          <img src="../assets/figures/metrics-evidence.png" alt="核心指标 · 自检状态" loading="lazy">
+        </article>
+<div class="audit">
+<section><h2>任务覆盖</h2><p>任务覆盖：公告 1.3、1.4、1.5 与 agent.1—agent.6 共 23 条均进入 compliance_matrix.json；15 项设计深度为 complete。</p></section>
+<section><h2>来源与自检状态</h2><p>来源：27 条包内来源记录、9 个 GeoJSON、metrics.json、三类矩阵和双语正文。自检状态在 finalization 后由 self_check.json 持久化。</p></section>
+<section><h2>假设与边界</h2><p>假设：总体边界与三处重点区均为 provisional rough geometry；容积率、高度、法定建筑密度、道路红线、权属、管线、消防、防洪、文保与站点关系待正式资料和专业复核。</p></section>
+</div>
+</main>
+<footer>JING-ZHANG RETURN-TO-SERVICE WORKS · COMMUNITY-DISPLAY-ONLY · 2026-08-14</footer>
+</body></html>
