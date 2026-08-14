@@ -261,14 +261,14 @@ This narrative is derived from the structured AI package. Geometry, metrics, com
 
 > Date: 2026-08-14
 > Scope: every deliverable in the submission package and the workspace.
-> Trigger: AI reviewer flagged A3 中文 cover page as publishing a complete mobile phone number (15858138235), which is "identifiable personal data" under reviewer interpretation — mandatory reject.
+> Trigger: AI reviewer flagged A3 中文 cover page as publishing a complete mobile phone number (158****8235), which is "identifiable personal data" under reviewer interpretation — mandatory reject.
 
 ## 1. Files cleaned (source files)
 
 | File | Action |
 |---|---|
-| `a3_booklet_v6.json` | cover subtitle stripped of `｜ 联系电话：15858138235` |
-| `a3_booklet_v6_en.json` | cover subtitle stripped of ` | Contact: 15858138235` |
+| `a3_booklet_v6.json` | cover subtitle stripped of `｜ 联系电话：158****8235` |
+| `a3_booklet_v6_en.json` | cover subtitle stripped of ` | Contact: 158****8235` |
 | `make_a3_en_json.py` | cover subtitle stripped of phone |
 | `make_ppt_postprocess_v6.py` | cover `add_text` stripped of phone; indicator-page "1880 万㎡（1200+680）" replaced with "未验证情景（待官方数据）" |
 | `make_ppt_postprocess_v6_en.py` | cover `add_text` stripped of phone; cover title resized from 56pt to 44pt to remove overlap with subtitle; indicator-page "18.80M m² (12.0M+6.8M)" replaced with "Unverified scenario (awaiting official data)" |
@@ -286,7 +286,7 @@ This narrative is derived from the structured AI package. Geometry, metrics, com
 ## 3. Other source-code search
 
 ```
-$ grep -rn "15858138235" --include="*.py" --include="*.json" --include="*.md" --include="*.html" .
+$ grep -rn "158****8235" --include="*.py" --include="*.json" --include="*.md" --include="*.html" .
 (a3_booklet_v6.json | make_a3_en_json.py | make_ppt_postprocess_v6.py | make_ppt_postprocess_v6_en.py | .workbuddy/memory/2026-08-13.md)
 ```
 
@@ -295,7 +295,7 @@ All occurrences identified in §1 have been edited; the memory file entry is bei
 ## 4. PDF text-layer & image-OCR scan
 
 ```
-pymupdf get_text() per page → no match for "15858138235" in:
+pymupdf get_text() per page → no match for "158****8235" in:
   - a3-booklet.pdf        (24 pages)
   - a3-booklet.en.pdf     (24 pages)
   - a0-boards.en.pdf      (7 pages)
@@ -314,7 +314,7 @@ Reviewed — none of the generated HTML files or PDFs embed the phone number in:
 
 ## 6. Outcome
 
-- The phone number `15858138235` has been **permanently removed** from all deliverable artefacts (source + generated).
+- The phone number `158****8235` has been **permanently removed** from all deliverable artefacts (source + generated).
 - Local self-check: `can_enter_formal_review = True / formal-review-ready`
 - Mandatory-reject item cleared; ready for next AI-reviewer cycle.
 
@@ -324,14 +324,14 @@ Reviewed — none of the generated HTML files or PDFs embed the phone number in:
 
 > Date: 2026-08-14
 > Scope: every deliverable in the submission package and the workspace.
-> Trigger: AI reviewer flagged A3 中文 cover page as publishing a complete mobile phone number (15858138235), which is "identifiable personal data" under reviewer interpretation — mandatory reject.
+> Trigger: AI reviewer flagged A3 中文 cover page as publishing a complete mobile phone number (158****8235), which is "identifiable personal data" under reviewer interpretation — mandatory reject.
 
 ## 1. Files cleaned (source files)
 
 | File | Action |
 |---|---|
-| `a3_booklet_v6.json` | cover subtitle stripped of `｜ 联系电话：15858138235` |
-| `a3_booklet_v6_en.json` | cover subtitle stripped of ` | Contact: 15858138235` |
+| `a3_booklet_v6.json` | cover subtitle stripped of `｜ 联系电话：158****8235` |
+| `a3_booklet_v6_en.json` | cover subtitle stripped of ` | Contact: 158****8235` |
 | `make_a3_en_json.py` | cover subtitle stripped of phone |
 | `make_ppt_postprocess_v6.py` | cover `add_text` stripped of phone; indicator-page "1880 万㎡（1200+680）" replaced with "未验证情景（待官方数据）" |
 | `make_ppt_postprocess_v6_en.py` | cover `add_text` stripped of phone; cover title resized from 56pt to 44pt to remove overlap with subtitle; indicator-page "18.80M m² (12.0M+6.8M)" replaced with "Unverified scenario (awaiting official data)" |
@@ -349,7 +349,7 @@ Reviewed — none of the generated HTML files or PDFs embed the phone number in:
 ## 3. Other source-code search
 
 ```
-$ grep -rn "15858138235" --include="*.py" --include="*.json" --include="*.md" --include="*.html" .
+$ grep -rn "158****8235" --include="*.py" --include="*.json" --include="*.md" --include="*.html" .
 (a3_booklet_v6.json | make_a3_en_json.py | make_ppt_postprocess_v6.py | make_ppt_postprocess_v6_en.py | .workbuddy/memory/2026-08-13.md)
 ```
 
@@ -358,7 +358,7 @@ All occurrences identified in §1 have been edited; the memory file entry is bei
 ## 4. PDF text-layer & image-OCR scan
 
 ```
-pymupdf get_text() per page → no match for "15858138235" in:
+pymupdf get_text() per page → no match for "158****8235" in:
   - a3-booklet.pdf        (24 pages)
   - a3-booklet.en.pdf     (24 pages)
   - a0-boards.en.pdf      (7 pages)
@@ -377,6 +377,6 @@ Reviewed — none of the generated HTML files or PDFs embed the phone number in:
 
 ## 6. Outcome
 
-- The phone number `15858138235` has been **permanently removed** from all deliverable artefacts (source + generated).
+- The phone number `158****8235` has been **permanently removed** from all deliverable artefacts (source + generated).
 - Local self-check: `can_enter_formal_review = True / formal-review-ready`
 - Mandatory-reject item cleared; ready for next AI-reviewer cycle.
