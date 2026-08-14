@@ -232,4 +232,28 @@
 }
 ```
 
+## Agent Passport Schema（agent 对城市可读）
+
+```json
+{
+  "schema_version": "0.1.0",
+  "required_fields": ["agent_identity", "capability_scope", "data_sources", "data_retention", "handover_role", "complaint_channels"],
+  "field_notes": {
+    "agent_identity": "是谁：环归属与职能名（角色，不冒充机构）",
+    "capability_scope": "能做什么：允许与禁止的操作边界",
+    "data_sources": "用什么数据：仅公开或授权聚合来源",
+    "data_retention": "保留多久：保留期与到期处置",
+    "handover_role": "谁能接管：人工接管角色与触发条件",
+    "complaint_channels": "如何投诉/删除：申诉通道与响应时限"
+  },
+  "ring_passports_example": {
+    "data_ring_agent": {"agent_identity": "资料环·资料中台 agent（角色）", "capability_scope": "整理/登记公开资料；禁止接触个人数据", "data_sources": "公开任务书+来源登记", "data_retention": "长期公开，可回滚版本", "handover_role": "资料委员会", "complaint_channels": "公示期异议+资料窗口", "run_status": "sandbox_only"},
+    "simulation_ring_agent": {"agent_identity": "推演环·沙盘 agent（角色）", "capability_scope": "多方案推演与指标复算；禁止直接写入公开空间", "data_sources": "公开统计+授权聚合", "data_retention": "推演版本保留至退役复核", "handover_role": "规划师", "complaint_channels": "推演作废申请+专家复核", "run_status": "sandbox_only"},
+    "feedback_ring_agent": {"agent_identity": "反馈环·反馈中台 agent（角色）", "capability_scope": "脱敏分类反馈；禁止存储个人身份", "data_sources": "授权反馈（脱敏）", "data_retention": "聚合保存，原始反馈按保留期删除", "handover_role": "社区代表", "complaint_channels": "反馈删除申请+社工窗口", "run_status": "sandbox_only"},
+    "review_ring_agent": {"agent_identity": "复核环·合规复核 agent（角色）", "capability_scope": "合规比对与风险提示；终审权在人工", "data_sources": "公开红线+标准库", "data_retention": "复核记录长期留存备查", "handover_role": "专家+部门角色", "complaint_channels": "复议+独立仲裁", "run_status": "sandbox_only"}
+  },
+  "note": "Receipt 让城市审计 agent 的每次干预；Passport 让城市识别 agent 本身——双向可读。所有护照标 sandbox_only，不冒充已运行。"
+}
+```
+
 注：示例收据标 sandbox_only / not_run / performance_results=null，不冒充已运行。真实运行须先在 G4 受控测试场取得闭合合格、三问过关。

@@ -350,6 +350,32 @@
       "assumptions": [
         "Receipt 物质面：出处签下沉到空间对象；值为设计承诺与制度要求，不捏造碳数据"
       ]
+    },
+    "agent_passport_field_count": {
+      "status": "known",
+      "value": 6,
+      "unit": "count",
+      "source_files": [
+        "report/narrative.md"
+      ],
+      "formula": "count of Agent Passport required fields",
+      "confidence": "high",
+      "assumptions": [
+        "是谁/能做什么/用什么数据/保留多久/谁能接管/如何投诉删除"
+      ]
+    },
+    "agent_passport_count": {
+      "status": "known",
+      "value": 4,
+      "unit": "count",
+      "source_files": [
+        "report/narrative.md"
+      ],
+      "formula": "count of ring passports (资料/推演/反馈/复核各一本)",
+      "confidence": "high",
+      "assumptions": [
+        "四环各持一本；全部标 sandbox_only 不冒充已运行"
+      ]
     }
   }
 }
