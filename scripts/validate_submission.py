@@ -19,6 +19,7 @@ from pathlib import Path, PurePosixPath
 from typing import Iterable
 
 from front_matter import parse_front_matter
+from git_blob_hashes import git_blob_sha256
 
 
 POLICY_ROOT = Path(__file__).resolve().parents[1]
@@ -1560,6 +1561,26 @@ def validate_manifest_file(report: ValidationReport, repo_root: Path, proposal_d
     strict_bilingual = requires_bilingual_display(repo_root, proposal_dir)
     files = data.get("files")
     listed_paths: set[str] = set()
+    git_digests: dict[Path, str] | None = None
+    if isinstance(files, list):
+        manifest_files: list[Path] = []
+        for item in files:
+            if not isinstance(item, dict) or not item.get("path"):
+                continue
+            try:
+                safe_path = normalize_changed_path(str(item["path"]))
+            except ValueError:
+                continue
+            if safe_path == "manifest.json":
+                continue
+            listed_file = repo_root / proposal_dir / safe_path
+            if listed_file.is_file():
+                manifest_files.append(listed_file)
+        try:
+            git_digests = git_blob_sha256(manifest_files, cwd=repo_root)
+        except RuntimeError as exc:
+            report.add_error(f"{proposal_dir}/manifest.json: cannot hash pending Git blobs: {exc}")
+            git_digests = {}
     if not isinstance(files, list) or not files:
         report.add_error(f"{proposal_dir}/manifest.json: files must be a non-empty array")
     else:
@@ -1604,12 +1625,38 @@ def validate_manifest_file(report: ValidationReport, repo_root: Path, proposal_d
                     f"{proposal_dir}/manifest.json: manifest.json must not declare sha256; remove the field"
                 )
             elif declared_digest:
-                actual_digest = hashlib.sha256(listed_file.read_bytes()).hexdigest()
+                raw = listed_file.read_bytes()
+                actual_digest = (
+                    git_digests.get(listed_file.resolve())
+                    if git_digests is not None
+                    else hashlib.sha256(raw).hexdigest()
+                )
                 if declared_digest != actual_digest:
                     message = (
                         f"{proposal_dir}/manifest.json: sha256 mismatch for `{safe_path}`; "
                         f"declared={declared_digest}, actual={actual_digest}"
                     )
+                    lf_raw = raw.replace(b"\r\n", b"\n")
+                    crlf_raw = lf_raw.replace(b"\n", b"\r\n")
+                    if (
+                        lf_raw != crlf_raw
+                        and actual_digest == hashlib.sha256(lf_raw).hexdigest()
+                        and declared_digest == hashlib.sha256(crlf_raw).hexdigest()
+                    ):
+                        message += (
+                            "; declared digest matches the CRLF form, but Git is validating LF bytes. "
+                            "Regenerate manifest.json from the exact bytes committed to Git (for example, "
+                            "use an LF checkout or repository-local core.autocrlf=false before a fresh checkout)"
+                        )
+                    elif (
+                        lf_raw != crlf_raw
+                        and actual_digest == hashlib.sha256(crlf_raw).hexdigest()
+                        and declared_digest == hashlib.sha256(lf_raw).hexdigest()
+                    ):
+                        message += (
+                            "; declared digest matches the LF form, but Git is validating CRLF bytes. "
+                            "Regenerate manifest.json from the exact bytes committed to Git"
+                        )
                     if translation_entry and not strict_bilingual:
                         report.add_warning(message + "; legacy bilingual metadata does not block review")
                     else:
