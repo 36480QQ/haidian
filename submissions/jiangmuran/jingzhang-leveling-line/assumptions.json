@@ -403,6 +403,27 @@
       "carries_no_metric_note_en": "**No published number in this package rests on this assumption.** That is not an oversight but the nature of it: if it fails, no value in `metrics.json` changes, so **no check on the numbers can catch it**. `if_wrong_zh` above says what failure would look like; only outside judgement can detect it, not this package's gates. Listing it separately and saying so is the whole of what this proposal can do about it.",
       "depends_outside_metrics_zh": "**反向索引只看得见 `metrics.json`。** 本条不挂任何 metric，但下列已发布内容建立在它上面：年运营成本表（19,444–63,922 元）、付费 139–220 h、志愿 148–244 h、FIG.29 的时长相容断言、FIG.30 的年度排布、FIG.31 的志愿取舍。「不挂 metric」在这里不等于「没有东西依赖它」——只等于「metrics.json 里没有东西依赖它」。",
       "depends_outside_metrics_en": "**The reverse index can only see `metrics.json`.** This record carries no metric, and the following published material rests on it: the annual operating table, both hour totals, FIG.29's compatibility assertion, FIG.30's calendar and FIG.31's volunteer trade. Carrying no metric does not mean nothing depends on it — only that nothing in `metrics.json` does."
+    },
+    {
+      "id": "A-ROSTER-001",
+      "status": "chosen_by_this_proposal",
+      "statement": "FIG.32 用「同一个人在任一水准点一年不得出席该点一半以上的读数」反推最少读数人名册，其中「一半」由本方案自定，无外部依据；全年 88 次社区出勤与各点次数由 spatial.json 的复测周期与 A-STAFF-001 的班组模型算出，不是自定的。",
+      "impact": "这个比例决定独立性下限（20 人）。取松了，下限下降，最省的 8 人名册可能通过而 A-CLOSURE-002 描述的失效照样发生；取紧了，招募难度上升但机制更稳。",
+      "derivation_zh": "最少读数人 = ⌈该点年出勤 ÷ (年读数次 × 一半)⌉。三等点 12 次读数、24 次出勤 → 4 人；二等点 4 次读数、8 次出勤 → 4 人；五个有社区名额的点合计 **20 人**。**自定的只有「一半」**：出勤次数由复测周期与班组模型算出。选一半的理由是它把「同一个人读遍某点一整年」直接排除，而不必先定义什么叫「太多」。",
+      "derivation_en": "Minimum readers = ⌈attendances ÷ (sessions × one half)⌉. A third-order point runs 12 sessions and 24 attendances → 4 people; a second-order point runs 4 and 8 → 4 as well; across the five points carrying community places, **20**. **Only the half is chosen** — the attendance counts follow from the cadences and the crew model. A half is picked because it rules out one person reading a point's whole year without first having to define what 「too much」 means.",
+      "if_wrong_zh": "取松了后果具体且隐蔽：下限下降，最省的 8 人名册可以通过，而 `A-CLOSURE-002` 描述的失效照常发生——闭合差系统性偏小，机制报「合格」而什么都没测到。**放松这个比例不会让机制报错，它会让机制继续报对**，这正是它危险的原因。取紧了只是招募更难，代价落在实施而不落在证据上。",
+      "if_wrong_en": "Loosening it is both consequential and quiet: the floor drops, the cheapest eight-person roster passes, and the failure `A-CLOSURE-002` describes proceeds anyway — closure error systematically small, the mechanism reporting 「within tolerance」 having measured nothing. **Relaxing this ratio does not make the mechanism report a problem; it makes the mechanism keep reporting success**, which is exactly what makes it dangerous. Tightening it only makes recruitment harder — a cost that lands on delivery rather than on the evidence.",
+      "what_would_close_it_zh": "取得公众参与或陪审类制度中对同一人参与频次上限的既有规定，或首轮试验的实际名册数据。",
+      "what_would_close_it_en": "Obtain an existing participation or jury-service rule limiting how often one person may serve, or the actual roster from the first closure trial.",
+      "owner": "participant",
+      "next_action_zh": "本包缺口：取得同类参与制度的频次上限规定，或用首轮试验的实际名册替换；在此之前「一半」是自定值。",
+      "next_action_en": "This package's gap: obtain a comparable participation-frequency rule, or replace it with the first trial's actual roster. Until then the half is chosen here.",
+      "owner_means_zh": "本方案自己能关、或每次构建都在关",
+      "owner_means_en": "this package can close it, or closes it on every build",
+      "affects_metrics": [],
+      "affects_metric_count": 0,
+      "depends_outside_metrics_zh": "**反向索引只看得见 `metrics.json`。** 本条不挂任何 metric，但下列已发布内容建立在它上面：FIG.32 的独立性下限 20 人与各点最少读数人。「不挂 metric」在这里不等于「没有东西依赖它」——只等于「metrics.json 里没有东西依赖它」。",
+      "depends_outside_metrics_en": "**The reverse index can only see `metrics.json`.** This record carries no metric, and the following published material rests on it: FIG.32's floor of twenty community readers and its per-point minimums. Carrying no metric does not mean nothing depends on it — only that nothing in `metrics.json` does."
     }
   ],
   "note_zh": "**本文件是评审模型整份读取的九个文件之一，而 `geometry/` 与 `visual/assets/` 不是**（见 `scripts/review_submission.py::build_review_input`）。因此每条假设除了陈述，还写出：`derivation_zh`——这个读数实际是怎么得出的；`if_wrong_zh`——如果它错了，本方案的哪个结论会变、哪个不会；`what_would_close_it_zh`——什么能让它不再是假设；以及 `affects_metrics`——**由 metrics.json 的 assumption_ids 反向索引算出**，使读这份文件的人能看出每条假设承载了多少个数字。一条没有写出后果的假设是免责声明，不是假设。",
@@ -412,9 +433,9 @@
     "not_applicable": 1,
     "operator_after_award": 2,
     "organizer": 3,
-    "participant": 9,
+    "participant": 10,
     "permanently_open": 1
   },
-  "ownership_note_zh": "**每条假设除了「什么能关闭它」，还写明「谁能关闭它」。** 一份只说条件不说责任的登记表，会把两种情况混成一种：本方案还没做的，和本方案做不了的。本册 17 条的归属为 mixed 1、not_applicable 1、operator_after_award 2、organizer 3、participant 9、permanently_open 1。仓库的评审脚本只把以 `组织方：`／`主办方：` 开头的动作视为外部所有，其余一律 fail-closed 归还参与方（`is_organizer_owned_action`）；本包因此只在三条确属主管部门发布的项上使用该前缀，**A-CONTROLS-001 拆开写而不整条认领，A-LIGHTING-001 记为本方案自己的欠缺**——没拿到一份已公开的标准，不是别人的问题。",
-  "ownership_note_en": "**Each assumption states who can close it, not only what would close it.** A register that gives the condition but not the responsibility merges two different things: what this package has not done, and what this package cannot do. Across 17 records the split is mixed 1, not_applicable 1, operator_after_award 2, organizer 3, participant 9, permanently_open 1. The repository's review script treats an action as externally owned only when it begins `组织方：`/`主办方：` and returns everything else fail-closed to the participant (`is_organizer_owned_action`), so that prefix is used here for the three items that are genuinely an authority's publication and for nothing else — **A-CONTROLS-001 is split rather than claimed whole, and A-LIGHTING-001 is booked as this package's own shortfall**, because not having obtained a published standard is nobody else's fault."
+  "ownership_note_zh": "**每条假设除了「什么能关闭它」，还写明「谁能关闭它」。** 一份只说条件不说责任的登记表，会把两种情况混成一种：本方案还没做的，和本方案做不了的。本册 18 条的归属为 mixed 1、not_applicable 1、operator_after_award 2、organizer 3、participant 10、permanently_open 1。仓库的评审脚本只把以 `组织方：`／`主办方：` 开头的动作视为外部所有，其余一律 fail-closed 归还参与方（`is_organizer_owned_action`）；本包因此只在三条确属主管部门发布的项上使用该前缀，**A-CONTROLS-001 拆开写而不整条认领，A-LIGHTING-001 记为本方案自己的欠缺**——没拿到一份已公开的标准，不是别人的问题。",
+  "ownership_note_en": "**Each assumption states who can close it, not only what would close it.** A register that gives the condition but not the responsibility merges two different things: what this package has not done, and what this package cannot do. Across 18 records the split is mixed 1, not_applicable 1, operator_after_award 2, organizer 3, participant 10, permanently_open 1. The repository's review script treats an action as externally owned only when it begins `组织方：`/`主办方：` and returns everything else fail-closed to the participant (`is_organizer_owned_action`), so that prefix is used here for the three items that are genuinely an authority's publication and for nothing else — **A-CONTROLS-001 is split rather than claimed whole, and A-LIGHTING-001 is booked as this package's own shortfall**, because not having obtained a published standard is nobody else's fault."
 }
