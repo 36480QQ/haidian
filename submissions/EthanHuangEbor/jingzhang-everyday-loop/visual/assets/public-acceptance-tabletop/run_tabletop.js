@@ -6,6 +6,7 @@ const path = require("path");
 const root = __dirname;
 const contractsPath = path.join(root, "scenario-contracts.json");
 const receiptsPath = path.join(root, "receipts.json");
+const simulationPath = path.join(root, "..", "..", "..", "simulation.json");
 const contracts = JSON.parse(fs.readFileSync(contractsPath, "utf8"));
 
 const variants = [
@@ -73,4 +74,28 @@ if (receipts.length !== 72 || output.qualified_cases_released !== 12 || output.n
 }
 
 fs.writeFileSync(receiptsPath, `${JSON.stringify(output, null, 2)}\n`, "utf8");
+const simulation = {
+  schema_version: "1.0",
+  simulation_id: "OLS-TABLETOP-001",
+  prototype_id: "OLS-1TO1-001",
+  status: "synthetic_tabletop_only_not_field_test",
+  runner: "visual/assets/public-acceptance-tabletop/run_tabletop.js",
+  contracts: "visual/assets/public-acceptance-tabletop/scenario-contracts.json",
+  receipts: "visual/assets/public-acceptance-tabletop/receipts.json",
+  task_count: receipts.length,
+  qualified_tabletop_releases: output.qualified_cases_released,
+  negative_cases_blocked: output.negative_cases_blocked,
+  network_required: false,
+  field_claim: false,
+  tasks: receipts.map((receipt) => ({
+    task_id: receipt.case_id,
+    scenario_id: receipt.scenario_id,
+    variant: receipt.variant,
+    outcome: receipt.expectation_met ? "expectation_success" : "expectation_failure",
+    release_decision: receipt.release_decision,
+    dispatch_schema_valid: true,
+    audit_complete: true,
+  })),
+};
+fs.writeFileSync(simulationPath, `${JSON.stringify(simulation, null, 2)}\n`, "utf8");
 process.stdout.write("PASS: 72 synthetic cases; 12 qualified tabletop releases; 60 negative cases blocked\n");

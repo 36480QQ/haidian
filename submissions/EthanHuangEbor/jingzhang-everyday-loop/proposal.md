@@ -142,7 +142,7 @@ AI 的空间可感知性来自清楚的选择，而非无处不在的屏幕：�
 
 数据治理采用目的限定、最小必要、短期保留、分区授权、人工复核和可退出原则。禁止以人脸识别作为公共空间准入，禁止为基本导航采集非必要精确轨迹，禁止未经告知建立跨场景画像。试验前需由真实责任主体完成数据保护、网络安全、伦理、无障碍与公共安全评估；本方案不作个案合规结论。
 
-本投稿的文字、表格、几何示意和代码绘制图层由智能体在公开或清权资料基础上生成。外部案例官网只用于事实核对和机制比较；JTC、Mila、STATION F、HTCE、DIFC 与 Helsinki 的图像、地图、Logo、页面版式均未复制。各网站许可边界、image-2 概念图、字体和构建工具披露见 `sources.json` 与版权声明。 [source:CASE-STATION-F] [source:CASE-DUBAI-AI-CAMPUS]
+本投稿的文字、表格和结构化证据由智能体在公开或清权资料基础上生成；34 个 PDF 可见页面全部由 OpenAI gpt-image-2 生成或定向编辑，PDF 打包过程未叠加可见文字、线条、图形或标注。外部案例官网只用于事实核对和机制比较；JTC、Mila、STATION F、HTCE、DIFC 与 Helsinki 的图像、地图、Logo、页面版式均未复制。各网站许可边界、Image-2 生产记录、字体和构建工具披露见 `sources.json`、`visual/assets/image2-production-record.json` 与版权声明。 [source:CASE-STATION-F] [source:CASE-DUBAI-AI-CAMPUS]
 
 中文和英文不是逐句替换：两版保持同一章节、事实状态、编号、指标和图位，但按各自语言重组论证。任何国际传播文案必须同时说明“投稿评审中的概念建议”，不得暗示入选、批准、投资或建成。
 

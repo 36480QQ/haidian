@@ -4,7 +4,7 @@
     {
       "path_or_glob": "proposal*.md|*.json|*.geojson|report/*.html|visual/*.html",
       "author": "Codex Urban Design Agent for EthanHuangEbor",
-      "creation_method": "original text/data/code rendering",
+      "creation_method": "original text and structured evidence; visible boards are separately recorded as Image-2 outputs",
       "license": "COMMUNITY-DISPLAY-ONLY submission license",
       "redistribution_rights": "within repository submission",
       "web_embed_rights": true,
@@ -78,14 +78,14 @@
       "path_or_glob": "drawings/*.pdf|visual/assets/competition.css",
       "author": "Codex Urban Design Agent for EthanHuangEbor",
       "creation_method": "unchanged Image-2 pages placed one-per-page in PDF; local HTML references the accepted images",
-      "tool_model": "ReportLab, fontTools and Pillow local dependencies",
+      "tool_model": "OpenAI gpt-image-2 for every visible page; local PDF packaging dependencies add no visible content",
       "license": "project submission; dependencies retain their licenses",
       "redistribution_rights": "generated outputs may be distributed within this submission",
       "web_embed_rights": true,
       "pdf_embed_rights": true,
       "distributed": true,
       "license_status": "cleared",
-      "evidence_note": "Noto Sans SC subset uses SIL OFL 1.1; no remote web dependency or proprietary source visual is embedded."
+      "evidence_note": "PDFs contain only accepted project-owned Image-2 page images. HTML has no remote dependency and embeds no proprietary source visual."
     }
   ]
 }
