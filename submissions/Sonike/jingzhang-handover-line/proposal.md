@@ -20,19 +20,23 @@ iteration: "v1.15"
 
 ## 一页执行摘要 / Executive Brief
 
+**一句话检验标准：这条带上的任何一项AI服务，不用AI也能办成同一件事——办不成，就不上线。**
+
+这不是补充条款，是整个方案的判据。它把"智能城市"从设备数量、自动化率这类无法被普通人核验的指标，换成一个每个人都能自己验的问题：**我不用手机、不会中文、看不见屏幕、或者就是不想用AI，我还能不能办成这件事？**答案是否，服务就不该开；答案是是，智能层才有资格叠加上去。铁路交接班之所以是这条带上最可靠的制度，正因为它从不假设下一班一定接得住——它假设接不住，所以必须有人当面签收。
+
 | 评审问题 | 京张交接线的回答 | 可核验成果 |
 | --- | --- | --- |
+| 公共底线 | 任何人可在不使用AI的前提下获得等价基础服务，并能触发停用与申诉；十二个场景各自写明人工兜底渠道与退出条件 | 组件库十项、接管亭物理停用入口、公开值班簿、十二条双联交接账实例 |
 | 核心命题 | 把铁路交接班转译为城市AI协议：能力可以流动，责任必须有人签收 | 双联交接账 0.3 与十二张可逆场景卡 |
 | 空间响应 | 一条交接线、三座交接场、两翼支撑、八条缝合支线、二十个更新类型单元 | 九类 GeoJSON、十一张证据图、A3 图册与 A0 展板 |
 | 合规锚点 | “可停用、可投诉、无AI等价服务”中，法定出处与本方案自设标准逐行分列；自设标准不写成普遍法定义务 | 合规基线表四列对照；生成式AI服务管理暂行办法、无障碍环境建设法、老年人智能技术方案（来源登记见下段） |
 | 实施起点 | 先做协议、导视与低风险人工主导试点；三期是三道合并门槛，不是时间表 | 六个行动包、三道条件闸门、[metric:phase_count] |
-| 公共价值 | 任何人可在不使用AI的前提下获得等价基础服务，并能触发停用与申诉 | 组件库十项、接管亭物理停用入口、公开值班簿 |
 | 证据状态 | 几何与指标在 EPSG:4548 可复算；区级公开统计只校准问题，不进入指标 | 场地面积指标与海淀区统计公报（来源登记见下段） |
 | 决策边界 | 全部空间、品牌、活动、时限与角色安排均为概念建议，不是法定规划或政府承诺 | 风险章节、退出条件、assumptions.json |
 
 上表「合规锚点」一行对应 [source:GENERATIVE-AI-INTERIM-MEASURES]、[source:BARRIER-FREE-ENVIRONMENT-LAW] 与 [source:ELDERLY-SMART-TECH-PLAN]；「证据状态」一行对应 [metric:site_area_sqm] 与 [source:HAIDIAN-2025-STATISTICAL-BULLETIN]。此处引用键写在表下而非单元格内，是因为该表每行承载多条锚点，逐格标注反而割裂阅读；本包其余表格（如用地面积、专业深度）则每行只挂一个引用键，直接写在单元格里。两种写法在离线 HTML 中都渲染为证据条，不会出现未渲染的原始标记。
 
-English brief — Jing-Zhang Handover Line translates the railway shift-handover — the most ordinary and most rigorous institution the line ever produced — into an urban protocol for AI. Capability may move from research to validation, from validation to open source, and from open source to daily public service; accountability may not move without a named person signing for it. One continuous handover line links three Handover Grounds, two supporting wings and twelve reversible scenarios, each carrying human takeover, a non-AI equivalent service and an exit condition. Every geometry is a recomputable conceptual proposal; every statutory control awaits confirmation by qualified professionals and government bodies.
+English brief — **One test decides everything here: for any AI service on this belt, the same task must also be completable without AI. If it is not, the service does not open.** Jing-Zhang Handover Line translates the railway shift-handover — the most ordinary and most rigorous institution the line ever produced — into an urban protocol for AI. Capability may move from research to validation, from validation to open source, and from open source to daily public service; accountability may not move without a named person signing for it. One continuous handover line links three Handover Grounds, two supporting wings and twelve reversible scenarios, each carrying human takeover, a non-AI equivalent service and an exit condition. Every geometry is a recomputable conceptual proposal; every statutory control awaits confirmation by qualified professionals and government bodies.
 
 ## 设计依据与资料清单
 
@@ -173,6 +177,12 @@ English brief — Jing-Zhang Handover Line translates the railway shift-handover
 ### 双联交接账：交出与接入必须是两次独立判断
 
 为了让“交接”不停在字段数量上，v1.6新增原创的《双联交接账 0.3》：交出班必须登记适用范围、版本、输入、已知故障和无AI服务底线；接入班必须独立复现并明确选择“接收”或“拒收”，任何未决项都不能在换班中消失。机器可读契约见 [data:visual/assets/governance/shift-ledger.schema.json]，最小样例选择低风险的SCN-05无障碍路径副驾，只用合成障碍卡，不含个人数据、不连接真实服务，`deployment_mode=sandbox_only`、人工角色待授权、性能结果保持 `null` [data:visual/assets/governance/example-scn05-shift-ledger.json]。该样例已通过JSON Schema结构校验 [metric:machine_readable_shift_protocol_count] [metric:schema_valid_synthetic_shift_count] [metric:shift_protocol_validation_error_count]，校验记录见 [data:visual/assets/governance/validation-report.json]；“0个结构错误”只证明这份合成样例可被机器解析，不证明路径正确、服务可用、法律合规或可以投入现场。
+
+**本版把这份协议实例化到全部十二个场景，并且让它接受缺陷注入检验。** 此前只有 SCN-05 一条实例，协议因此无法被逐场景核验——一套只跑通一个例子的规则，看不出它在别的场景是否也成立。现在十二个场景各有一条交接账 [data:visual/assets/governance/shift-ledger-suite.json]，全部字段由 `geometry/public_space.geojson` 已登记的场景属性推出（`human_fallback`、`exit_condition`、`accountable_role`、`acceptance_gate`、`rollback_state`），**未新增任何设计主张**；唯一的设计决策是双联角色对的拆分——协议要求交出与接入由不同角色判断，而部分场景的 `accountable_role` 只写了一方，接入方按该场景 `exit_condition` 指认（例如 SCN-09 社区照护排班桌的首要停用条件是「当事人拒绝算法分配」，接入方因此是照护当事人代表而非服务方）。十二条实例全部通过 JSON Schema 结构校验，错误 0 处 [metric:schema_valid_synthetic_shift_count]。
+
+**协议的七条规则逐条做了缺陷注入。** 规则本身不是新写的，是把已有约束显式化：交出与接入必须由不同角色判断（R1）；人工等价服务必须先于智能层存在，且至少一条渠道在智能层关闭时仍可用（R2）；存在未闭合的阻塞性未决项时智能层必须保持关闭（R3）；回滚演练未被观察到通过前不得进入限定试用（R4）；合成记录不得触碰真实服务、不得含个人数据（R5）；拒收必须给出可复核的理由（R6）；角色未指派时双联状态不得标记为已共同签认（R7）。检验方式是对每条交接账先跑一次基线、再逐条注入对应缺陷，共 **96 条**（12 基线 + 12 场景 × 7 规则）[metric:shift_protocol_rule_check_count]：基线全部不触发任何规则，84 条注入**全部被拦截**，漏检 0 条 [metric:shift_protocol_rule_check_miss_count]，逐条结果见 [data:visual/assets/governance/rule-check-report.json]。
+
+**这只证明规则闭合，不证明现场绩效、安全、合规或获批。** 十二条实例的 `receiver_disposition` 一律是 `refused`、`smart_layer_state_after_decision` 一律是 `off`——因为三条验收门（场地权利与责任主体、人工接管与无AI等价服务演练、数据最小化与公共利益评估）在任何场景都尚未满足。**协议在纸面上正确地拒绝了它自己的全部十二个场景**，这正是它应有的行为：先证明拒收路径可靠，再谈放行。
 
 ![双联交接账：交出班与接入班分别判断，未决项不得在换班中消失](assets/figures/shift-ledger.png)
 
@@ -426,7 +436,7 @@ English brief — Jing-Zhang Handover Line translates the railway shift-handover
 | 更新类型单元 | 20个；不等于现状建筑清单 | [metric:renewal_cell_count] |
 | 用地要素 | 11个；拓扑联合覆盖场地 | [metric:land_use_zone_count] |
 | 版本接口目录 | 32个；是待授权的概念对象，不是32个已验证系统 | [metric:versioned_asset_count] |
-| 机器可读双联交接账 | 1套JSON Schema + 1份SCN-05合成样例 | [metric:machine_readable_shift_protocol_count] [metric:schema_valid_synthetic_shift_count] |
+| 机器可读双联交接账 | 1套JSON Schema + 12条场景实例 + 96条规则检查（84条缺陷注入全部拦截） | [metric:machine_readable_shift_protocol_count] [metric:schema_valid_synthetic_shift_count] |
 | 结构校验错误 | 0个；仅代表样例可解析，不代表真实性能通过 | [metric:shift_protocol_validation_error_count] |
 | 概念分期 | 3期；由条件触发而非自动实施 | [metric:phase_count] |
 
