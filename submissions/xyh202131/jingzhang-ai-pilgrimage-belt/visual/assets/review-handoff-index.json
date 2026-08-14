@@ -53,10 +53,12 @@
       "group_id": "root-narrative",
       "human_surface_refs": [
         "proposal.en.md",
-        "proposal.md"
+        "proposal.md",
+        "visual/index.en.html",
+        "visual/index.html"
       ],
       "kind": "narrative",
-      "latest_rebuild_round": 19,
+      "latest_rebuild_round": 20,
       "notes": {},
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
@@ -74,7 +76,7 @@
       "group_id": "root-changelog",
       "human_surface_refs": [],
       "kind": "changelog",
-      "latest_rebuild_round": 19,
+      "latest_rebuild_round": 20,
       "notes": {},
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
@@ -95,7 +97,7 @@
         "visual/index.html"
       ],
       "kind": "manifest",
-      "latest_rebuild_round": 19,
+      "latest_rebuild_round": 20,
       "notes": {},
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
@@ -116,7 +118,7 @@
         "visual/index.html"
       ],
       "kind": "agent_card",
-      "latest_rebuild_round": 19,
+      "latest_rebuild_round": 20,
       "notes": {},
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
@@ -208,7 +210,7 @@
         "report/proposal.html"
       ],
       "kind": "self_check",
-      "latest_rebuild_round": 19,
+      "latest_rebuild_round": 20,
       "notes": {},
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
@@ -272,7 +274,7 @@
       "group_id": "report-html",
       "human_surface_refs": [],
       "kind": "rendered_proposal_html",
-      "latest_rebuild_round": 19,
+      "latest_rebuild_round": 20,
       "notes": {},
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
@@ -285,7 +287,23 @@
           "role": "copyright_statement",
           "role_detail": null,
           "translation_of": null
-        },
+        }
+      ],
+      "group_id": "report-copyright",
+      "human_surface_refs": [
+        "proposal.en.md",
+        "proposal.md",
+        "report/proposal.en.html",
+        "report/proposal.html"
+      ],
+      "kind": "copyright_statement",
+      "latest_rebuild_round": 19,
+      "notes": {},
+      "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
+      "status": "current"
+    },
+    {
+      "files": [
         {
           "language": "neutral",
           "path": "report/narrative.md",
@@ -294,15 +312,10 @@
           "translation_of": null
         }
       ],
-      "group_id": "report-records",
-      "human_surface_refs": [
-        "proposal.en.md",
-        "proposal.md",
-        "report/proposal.en.html",
-        "report/proposal.html"
-      ],
+      "group_id": "report-narrative",
+      "human_surface_refs": [],
       "kind": "report_records",
-      "latest_rebuild_round": 19,
+      "latest_rebuild_round": 20,
       "notes": {},
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
@@ -411,7 +424,7 @@
       "group_id": "drawings-a3",
       "human_surface_refs": [],
       "kind": "drawing",
-      "latest_rebuild_round": 19,
+      "latest_rebuild_round": 20,
       "notes": {},
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
@@ -1370,7 +1383,7 @@
       "group_id": "visual-pages",
       "human_surface_refs": [],
       "kind": "visualization",
-      "latest_rebuild_round": 19,
+      "latest_rebuild_round": 20,
       "notes": {},
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
@@ -1665,7 +1678,7 @@
         "visual/index.html"
       ],
       "kind": "evidence_data",
-      "latest_rebuild_round": 18,
+      "latest_rebuild_round": 20,
       "notes": {},
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
@@ -1917,7 +1930,7 @@
       "group_id": "va-review-walkthrough.json",
       "human_surface_refs": [],
       "kind": "evidence_data",
-      "latest_rebuild_round": 14,
+      "latest_rebuild_round": 20,
       "notes": {
         "en": "Structured contract of the Round 14 five-step accessible review walk; the page inlines equivalent content and this round adds a backlink to this index.",
         "zh": "R14 五步可访问评审漫游的结构化合同；页面内联等价内容，本轮加入指向本索引的回链。"
@@ -1945,7 +1958,7 @@
         "visual/index.html"
       ],
       "kind": "evidence_data",
-      "latest_rebuild_round": null,
+      "latest_rebuild_round": 20,
       "notes": {},
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
@@ -1961,7 +1974,14 @@
         }
       ],
       "group_id": "va-round15-baseline.json",
-      "human_surface_refs": [],
+      "human_surface_refs": [
+        "proposal.en.md",
+        "proposal.md",
+        "report/proposal.en.html",
+        "report/proposal.html",
+        "visual/index.en.html",
+        "visual/index.html"
+      ],
       "kind": "evidence_data",
       "latest_rebuild_round": 15,
       "notes": {
@@ -2030,7 +2050,7 @@
         "visual/index.html"
       ],
       "kind": "evidence_data",
-      "latest_rebuild_round": 17,
+      "latest_rebuild_round": 20,
       "notes": {},
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
@@ -2113,7 +2133,14 @@
         }
       ],
       "group_id": "va-t02-g0-g1-replay-fixtures.json",
-      "human_surface_refs": [],
+      "human_surface_refs": [
+        "proposal.en.md",
+        "proposal.md",
+        "report/proposal.en.html",
+        "report/proposal.html",
+        "visual/index.en.html",
+        "visual/index.html"
+      ],
       "kind": "evidence_data",
       "latest_rebuild_round": null,
       "notes": {
@@ -2398,7 +2425,7 @@
       "chapters": [
         {
           "evidence_markers": {
-            "data": 1,
+            "data": 2,
             "depth": 0,
             "metric": 0,
             "source": 0,
