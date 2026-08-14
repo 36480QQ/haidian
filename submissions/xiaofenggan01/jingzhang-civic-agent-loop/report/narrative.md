@@ -232,4 +232,91 @@
 }
 ```
 
+## Agent Passport Schema（agent 对城市可读）
+
+```json
+{
+  "schema_version": "0.1.0",
+  "required_fields": ["agent_identity", "capability_scope", "data_sources", "data_retention", "handover_role", "complaint_channels"],
+  "field_notes": {
+    "agent_identity": "是谁：环归属与职能名（角色，不冒充机构）",
+    "capability_scope": "能做什么：允许与禁止的操作边界",
+    "data_sources": "用什么数据：仅公开或授权聚合来源",
+    "data_retention": "保留多久：保留期与到期处置",
+    "handover_role": "谁能接管：人工接管角色与触发条件",
+    "complaint_channels": "如何投诉/删除：申诉通道与响应时限"
+  },
+  "ring_passports_example": {
+    "data_ring_agent": {"agent_identity": "资料环·资料中台 agent（角色）", "capability_scope": "整理/登记公开资料；禁止接触个人数据", "data_sources": "公开任务书+来源登记", "data_retention": "长期公开，可回滚版本", "handover_role": "资料委员会", "complaint_channels": "公示期异议+资料窗口", "run_status": "sandbox_only"},
+    "simulation_ring_agent": {"agent_identity": "推演环·沙盘 agent（角色）", "capability_scope": "多方案推演与指标复算；禁止直接写入公开空间", "data_sources": "公开统计+授权聚合", "data_retention": "推演版本保留至退役复核", "handover_role": "规划师", "complaint_channels": "推演作废申请+专家复核", "run_status": "sandbox_only"},
+    "feedback_ring_agent": {"agent_identity": "反馈环·反馈中台 agent（角色）", "capability_scope": "脱敏分类反馈；禁止存储个人身份", "data_sources": "授权反馈（脱敏）", "data_retention": "聚合保存，原始反馈按保留期删除", "handover_role": "社区代表", "complaint_channels": "反馈删除申请+社工窗口", "run_status": "sandbox_only"},
+    "review_ring_agent": {"agent_identity": "复核环·合规复核 agent（角色）", "capability_scope": "合规比对与风险提示；终审权在人工", "data_sources": "公开红线+标准库", "data_retention": "复核记录长期留存备查", "handover_role": "专家+部门角色", "complaint_channels": "复议+独立仲裁", "run_status": "sandbox_only"}
+  },
+  "note": "Receipt 让城市审计 agent 的每次干预；Passport 让城市识别 agent 本身——双向可读。所有护照标 sandbox_only，不冒充已运行。"
+}
+```
+
+## 照片证据登记板（photo-register 模板）
+
+现场照片是可核查的一手证据。本方案不下载任何图片（避免许可与体积风险），只登记**核查模板与建议条目**——每条照片证据须五字段齐全方可引用 `[metric:photo_register_field_count]`：拍摄地点 / 拍摄日期 / 作者 / 许可证（须 CC 系或公有领域）/ 原始文件页 URL。建议优先核查的公开影像条目（Wikimedia Commons 等自由许可库，登记前须逐条核验许可与现状）：青龙桥车站与人字形线路、京张铁路沿线遗存、遗址公园一期建成段、大钟寺周边街区。登记表随 G0 资料环滚动更新，未登记许可的照片一律不得进入本方案任何制品。
+
 注：示例收据标 sandbox_only / not_run / performance_results=null，不冒充已运行。真实运行须先在 G4 受控测试场取得闭合合格、三问过关。
+
+## 指标字典（全量速查）
+
+| 指标 | 单位 | 值 | 置信 |
+|---|---|---|---|
+| site_area_sqm | sqm | 11,412,825.386 | high |
+| building_footprint_area_sqm | sqm | 2,083,289.604 | medium |
+| green_ratio | ratio | 0.311944 | medium |
+| public_space_ratio | ratio | 0.113433 | medium |
+| floor_area_ratio | ratio | unknown | unknown |
+| key_area_count | count | 3 | high |
+| data_evidence_anchor_count | count | 18 | high |
+| scenario_card_count | count | 13 | high |
+| persona_count | count | 7 | high |
+| human_review_checkpoint_count | count | 13 | high |
+| exit_mechanism_count | count | 13 | high |
+| ai_landmark_count | count | 3 | high |
+| land_use_area_0702_sqm | sqm | 574,648.601 | high |
+| land_use_area_1401_sqm | sqm | 3,560,158.242 | high |
+| land_use_area_0803_sqm | sqm | 1,106,411.767 | high |
+| land_use_area_0802_sqm | sqm | 2,909,027.707 | high |
+| land_use_area_0701_sqm | sqm | 764,666.814 | high |
+| land_use_area_0806_sqm | sqm | 323,809.974 | high |
+| land_use_area_0804_sqm | sqm | 879,534.459 | high |
+| land_use_area_1403_sqm | sqm | 1,294,587.148 | high |
+| governance_gate_count | count | 7 | high |
+| receipt_schema_field_count | count | 8 | high |
+| falsifiability_question_count | count | 3 | high |
+| temporal_segment_count | count | 4 | high |
+| accessibility_checkpoint_count | count | 5 | high |
+| stitch_corridor_count | count | 5 | high |
+| material_traceability_field_count | count | 3 | high |
+| agent_passport_field_count | count | 6 | high |
+| agent_passport_count | count | 4 | high |
+| ecosystem_merged_proposal_count | count | 833 | high |
+| governance_track_sample_share | ratio | 0.675 | medium |
+| compute_governance_parcel_count | count | 11 | high |
+| energy_audit_field_count | count | 3 | high |
+| blueway_corridor_count | count | 2 | medium |
+| sponge_policy_parcel_count | count | 11 | high |
+| acoustic_zone_type_count | count | 3 | high |
+| dark_friendly_lighting_parcel_count | count | 40 | high |
+| child_friendly_route_count | count | 5 | high |
+| all_age_node_count | count | 10 | high |
+| regional_synergy_loop_count | count | 4 | medium |
+| zhongzhiyuan_workshop_count | count | 4 | high |
+| ai_origin_hall_count | count | 3 | high |
+| dazhongsi_market_count | count | 3 | high |
+| developer_walkway_length_km | count | 9 | medium |
+| pilgrimage_route_color_count | count | 3 | high |
+| annual_event_count | count | 4 | high |
+| risk_dimension_count | count | 8 | high |
+| photo_register_field_count | count | 5 | high |
+| falsifiable_clause_count | count | 13 | high |
+| visual_interactive_gate_count | count | 7 | high |
+| stitch_corridor_map_annotation_count | count | 5 | high |
+| land_use_compatibility_rule_count | count | 8 | high |
+
+字典与 metrics.json 一一对应，由资料环自动生成，随版本滚动更新。
