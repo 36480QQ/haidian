@@ -1,5 +1,18 @@
 # 方案迭代记录 / Changelog
 
+## v21.0 - 2026-08-14
+
+**Source freshness audit first execution / 来源新鲜度审计首次执行**
+
+- 第 21 轮只在第 20 轮 PR #2594 合并（merge SHA `89c5906bc298804f5f1d074b70606afc4e110eca` 进入 canonical `main@6bc9ae33b8676018a953ed3e86f21a603d525c59`）且 447 个开放 PR 文件级扫描无竞争后开始。本轮不新增来源、文件、页数、机制或成熟度，只首次执行 `evidence-freshness-policy.json` 自 R15 起声明但从未执行的审计机制。
+- Round 21 began only after Round 20 PR #2594 merged (merge SHA `89c5906bc298804f5f1d074b70606afc4e110eca` entered canonical `main@6bc9ae33b8676018a953ed3e86f21a603d525c59`) and a file-level scan of 447 open PRs found no competing PR. The round adds no source, file, page, mechanism or maturity; it only executes, for the first time, the audit mechanism that `evidence-freshness-policy.json` has declared since Round 15.
+- 50 条来源逐条复核并写入 `refresh_records`（每条 10 个必填字段）：48 条 `verified_current`（包内/仓库内路径 SHA-256 或 HTTP 重取摘要），2 条 `review_due`（CASE-22AT 证书校验失败、CASE-KINGS-CROSS HTTP 403；均按访问未确认冻结升级、不删除任何陈述）。
+- All 50 sources were re-checked and recorded in `refresh_records` (all ten required fields per record): 48 `verified_current` (local package/repository path SHA-256 or HTTP re-fetch digests) and 2 `review_due` (CASE-22AT certificate verification failure, CASE-KINGS-CROSS HTTP 403; both treated as access-not-confirmed, freezing upgrades and deleting nothing).
+- 摘要只固定本次复核所取字节，不是发布者签名；`review_due` 来源在下一门级推进前必须由责任角色重新复核。双语 proposal 第 1 章与双语版权声明的现行计数同步为 48 完成 / 2 待复核 / 50 已审计；`sources.json`（50 条）、manifest（141 路径）与四份 PDF 均未改，PDF 字节保持第 20 轮固定点。
+- Digests fix the bytes retrieved this pass only and are not publisher signatures; `review_due` sources must be re-checked by their responsible role before the next gate. The current-state counts in bilingual proposal chapter 1 and the bilingual copyright statement are synchronized to 48 completed / 2 review-due / 50 audited. `sources.json` (50 records), the manifest (141 paths) and all four PDFs are unchanged; PDF bytes keep the Round 20 fixed point.
+- 冻结项保持不变：geometry、metrics、12 场景、8 项目、3 重点区、36 概念用地单元、G0、NO-GO、临时边界、非 AI 权利与专业方修改/拒绝/删除权；现实结果、批准、GO 与成熟度仍为 0 或 `unknown`；`not_fully_cleared` 与独立逐文件清权 0 不变。审计记录、机器 PASS、PR 或合并不构成权威性、批准、运营或权利升级。
+- Frozen items remain unchanged: geometry, metrics, 12 scenes, 8 projects, 3 key areas, 36 conceptual land-use units, G0, NO-GO, provisional boundaries, non-AI rights and professional power to revise/reject/delete. Real results, approvals, GO and maturity remain 0 or `unknown`; `not_fully_cleared` and 0 completed independent file-level audits are unchanged. An audit record, machine PASS, PR or merge creates no authority, approval, operation or rights upgrade.
+
 ## v20.0 - 2026-08-14
 
 **Review handoff index and package navigation / 评审交接索引与包内导航**

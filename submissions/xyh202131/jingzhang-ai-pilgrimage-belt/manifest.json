@@ -51,13 +51,13 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "c75a08288049326057d7d0245e64b6b7087918413b9418d91b402ce74d5200c9"
+      "sha256": "e30b71a8150ac15e097e22392cb899cc915d52b18d4270ff0a87734bd6f40b05"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "d5b122aedb3a4915fa3d4a13c71cf1c7bb53c67be972b1193daac3fce7128986"
+      "sha256": "3a32b64c7dd7c810998c34392b43a6db192536ae11fb08df50218d6b4f313300"
     },
     {
       "path": "metrics.json",
@@ -81,13 +81,13 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "d41b406543888b04db142c7de4929802bae89a8cd4bcd586bf3472438edb5267"
+      "sha256": "503c78002df28e9d794d5dad7fab4f946f75327ce3c2fc481c60a1643a8bef7a"
     },
     {
       "path": "changelog.md",
       "role": "changelog",
       "required": true,
-      "sha256": "af06b288563af5db4a48167d73fa0ec5ad78e4aa41ad33d4d11a12ad5b0144d5"
+      "sha256": "6ba74abae46a30c34b093182ef83ca4737a3e362cbf993b5652993529481d37c"
     },
     {
       "path": "compliance_matrix.json",
@@ -125,7 +125,7 @@
       "path": "visual/assets/evidence-freshness-policy.json",
       "role": "other",
       "required": true,
-      "sha256": "5f2aa210e74077d512170cb227cc48f2b167f07530579bde13e6664c0b410ef8",
+      "sha256": "e60df172cc2366d9fe607d1d2b5d8f86edbd9a686cdb809f58dfd36eb5f44642",
       "role_detail": "source_governance_evidence"
     },
     {
@@ -202,7 +202,7 @@
       "path": "visual/assets/rights-clearance-ledger.json",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "203febbe1fa1d7587bbd95104ad0e4edc038eb81ac5c3c649614c6da17491ff8"
+      "sha256": "8480db03be8a970a3421468dd56fb08c050929d12f8853a5319388f9135726fb"
     },
     {
       "path": "visual/assets/source-rights-evidence.schema.json",
@@ -230,19 +230,19 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "dadfbcc69e66ac95f544ff5e2cee0c5a37da465c6f0cf40c7224fd1947f3048a"
+      "sha256": "a067d47f136549dfe286610c7818df930912c3c2e95d8c44d7644e57c348a75b"
     },
     {
       "path": "report/narrative.md",
       "role": "narrative",
       "required": false,
-      "sha256": "9260a802266fc5373b713903e9759234b349806e84a9d57df966f333043fad7c"
+      "sha256": "df83723cdb34c0ffbeb4f1108dfededbf8ca347c418f1046eef9ee36da0b9023"
     },
     {
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "217f9188013609aaa9ab90b627d99f2794da583ec1974df110c235b0fcf5c00a"
+      "sha256": "617aacf92c3ef739b63b4cfaeb6d4c828c77ba6e18180e3843c4efde5f0fd704"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -403,7 +403,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "3299902fd1c075476c06e9a9a1f9dce561686aab4d1a5ab649590baebd3d2be2"
+      "sha256": "36191c65a5e39bb8f0f31186e0ad4c9bc4f49167070cafb9662bc177f2dd73e4"
     },
     {
       "path": "report/proposal.en.html",
@@ -411,7 +411,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "111cc04f6774eac6275017459a0bca876d0c9011d07e1241d1c54c7eb938757b"
+      "sha256": "96afa39fb07301d964b3963afadfe21ea927fb7900dda94dbe758150842f34a8"
     },
     {
       "path": "visual/index.en.html",
@@ -990,7 +990,7 @@
       "title_en": "Review handoff index and package navigation",
       "description_zh": "全部 141 个投稿包路径的评审定位索引：七条阅读路线、逐文件登记、冻结/临时/历史标记、三载体映射与权利回链；索引只负责定位，不生成证据、不改变成熟度或权利状态。",
       "description_en": "Review navigation for all 141 package paths: seven reading routes, a per-file registry, frozen/provisional/historical labels, three-carrier mapping and rights backlinks; the index only locates, creates no evidence and changes no maturity or rights state.",
-      "sha256": "e20a3a36aabc2a72df859610bab04fac0b779ffbf7d9bc3009dee99fcf5c0b7c"
+      "sha256": "761acf8f6ebf328071fc7c81f8e99b2e446abf1bc295f506643774a20e8b77db"
     },
     {
       "path": "visual/assets/round17-reading.css",
