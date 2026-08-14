@@ -447,8 +447,16 @@ The naming system is an extensible numbering grammar rather than a slogan:
 | Network | Jing-Zhang leveling network | JZ-NET | The governance network of the whole line |
 | Origin | Origin benchmark | **BM-0** | Public evidence hub; the network's starting elevation |
 | First order | First-order benchmark | BM-1, BM-2 (the origin BM-0 is listed separately) | The three key areas, re-measured annually |
+
+![FIG.29 The annual first-order closure: how long a route actually takes](assets/figures/closure.en.png)
+
+**The first order was the last tier without a sheet, and it is not really a place but an event.** Once a year a closing route is run, and everything this proposal asks to be trusted on comes out of that run; every stone, every kerb and every cost row exists so that it can happen and be believed. So FIG.29 draws the run, and does something no sheet here had done: **it derives a duration from geometry and checks it against the cost table.** The 4.0–6.0 h for a first-order session in `operations.json` was written into the model by hand. The route lengths were not — RT-N's 5,401.8 m and RT-S's 5,177.0 m come out of the shipped geometry. Divided by a 50 m sight into 55 and 52 setups, at 5 minutes each, plus the walk back along the spine, they come to **5.8 h and 5.5 h — inside that band and tight against its upper edge**. The build asserts it: lengthen the geometry or edit the band and it stops. **Before this sheet, the hours in the cost table rested on nothing but their author.** The sight distance and the minutes per setup are chosen and registered as `A-SURVEY-001` in the same commit.
 | Second order | Second-order benchmark | BM-2x | Nodes in the two wings, re-measured quarterly |
 | Third order | Third-order benchmark | BM-3xx | Community and station level, re-measured monthly |
+
+![FIG.28 Third order: the most numerous tier, and more than one reader](assets/figures/third.en.png)
+
+**This is the most numerous tier and the only one never drawn.** The origin has FIG.25 and the second order FIG.26, while the tier a resident actually stands at is the third. It also inherits what FIG.27 left open: that sheet's 3.0 m viewing distance is **one person's** position, and a point in a neighbourhood is not read by one person. From a 600 mm plate and a 30° off-axis limit the legible cone is **3.46 m** wide and **5 people** can read at once — this package's answer to its own unanswered question. A class of 30 then takes **6 rounds, about 4 minutes**: **what exceeds the cone is not solved by widening the ground but by taking turns, and turns cost time.** That number is written down because unwritten it gets discovered on site in the form of "this point is awkward". A queue runs parallel to the kerb and never pushes into the 1,500 mm clear width; no railing and no dedicated waiting area — a third-order point sits in a neighbourhood, and fencing it stops it being something you can read in passing. The off-axis angle, the shoulder width and the per-reading time are chosen by this proposal and registered as `A-READ-001` in the same commit.
 | Route | Connecting route | RT-N, RT-S | The one-way path a scenario is validated along: departs BM-0, terminates at a first-order point |
 | Reading | Closure error / tolerance | f / F | The measure of trust, and its threshold |
 
@@ -490,8 +498,16 @@ The leveling network's answer is elevation transfer: each station's reading depe
 
 - **BM-1 Zhongzhiyuan** carries the full-stack autonomous AI innovation system and the global-discourse positioning: it is where tolerance F is set — the **tolerance datum**. This used to say "datum of origin", which is the wrong term: in surveying the datum of origin is the point heights are carried from, and here that is BM-0, which the shipped `check_closure.js` requires every circuit to depart from. Where the standard is set and where measurement starts are two things and cannot share one word.
 - **BM-0 the AI Origin Community** carries the world-class AI innovation ecosystem: it is both the network's starting point and the point at which closure is computed, and it is the physical landing place for the public knowledge base this call has produced.
+
+![FIG.25 BM-0, the origin: the place both routes have to return to](assets/figures/origin.en.png)
+
+**That "physical landing place" had been a name and nothing else.** BM-0 appears on nearly every sheet here and had never been drawn — which is not a presentation problem, because what it carries is itself a spatial property. **A reading is published the moment it is taken, and evidence is only as public as the door in front of it**: hang the closure record in a hall with opening hours and the origin is shut at the instant the reading lands, and "anyone can walk up to a benchmark and take a reading" quietly becomes "during opening hours". So FIG.25 puts the record outside, facing the footway, at the reading-plate height FIG.16 already fixed. It gives the setup circle a real size — ⌀ 2,400 mm, a 1,200 mm tripod spread plus the operator's ring — and checks that it does not eat the accessible clear width: **the same 1,500 mm FIG.24 protects from devices, because this package does not get a looser number for its own surveyors**, and the build refuses if the two sheets disagree. What it displays is network closure, not local failure; a point's own failure belongs at that point (errata E50).
 - **BM-2 Dazhongsi** carries AI-native new activity: high-frequency consumer and business scenarios take their readings here.
 - **The Zhongguancun services wing** supplies factors and capital and is the route's **support system**; **the Xiaoyuehe scenario wing** supplies real users and is therefore the route's **source of reading density**.
+
+![FIG.26 BM-2x, the second order: a scenario has to be stoppable, and that takes ground](assets/figures/wing.en.png)
+
+**The two wings carry the second order, and the second order had never been drawn.** It appears in the naming table, the cost table and the resource table — the one tier of this network that never reached a sheet. What differs is not the stone: a BM-2x is a KIT-01 like every other, because a more important place does not get a special benchmark. What differs is that **what runs here is a scenario against real users**, and such a scenario has to be stoppable. FIG.26 turns "stoppable" into a dimension: from the ≤ 6 km/h site speed FIG.24 already fixes, 1.0 s of reaction covers 1.67 m and decelerating at 1.5 m/s² covers 0.93 m, giving a **halt distance of 2.59 m** — and no fixed object or waiting area may stand in that ground ahead of the observed frontage. **The reaction time and the deceleration are chosen by this proposal and are not standards.** Both are registered as `A-DEVICE-002` in the same commit as the sheet, with derivation, direction of error, closure condition and owner: the error is asymmetric — too small and the cost lands on a person — so the distance is taken at a bound rather than at a typical value.
 
 The five functions are consequently not five parallel slogans but five positions on one circuit: set the datum (Zhongzhiyuan) → depart (Origin Community) → take readings (Dazhongsi and the two wings) → return to the origin and compute (Origin Community) → re-measure if over tolerance. The spatial expression is [data:geometry/public_space.geojson#PUBLIC-001], and the overall structure corresponds to [depth:overall_spatial_structure].
 
@@ -692,6 +708,10 @@ This link turns on one decision, drawn in FIG.17: **the ramp sits on the desire 
 ![FIG.12 Four-quadrant pedestrian connection and device queue reservoir at Dazhongsi](assets/figures/crossing.en.png)
 
 This was a sentence and nothing else. FIG.12 draws it: holding areas in all four quadrants, the device queue reservoir set behind the building line, and an as-measured column left deliberately empty — carrying capacity is computed on site from measured clear width.
+
+![FIG.24 The device envelope: what exactly goes in those 18 m²](assets/figures/device.en.png)
+
+**What goes inside those 18 m² had never been said either.** FIG.12 fixed a floor for the reservoir while this package had never drawn a device or stated how big one is — and an area is not a specification: two devices of equal footprint and different turning radii need different reservoirs. FIG.24 supplies an envelope rather than a product: no manufacturer, no model, only what a spatial proposal is entitled to fix — the volume a device may occupy and the clear width it must leave. Each of seven dimensions is marked with what bounds it, and **three are bounded by nothing but this proposal, marked in red on the sheet, because those are the ones to attack first**. On this envelope the 18 m² holds 8 devices, and the build refuses if the two sheets stop agreeing about the same piece of ground.
 - **Traffic.** Dazhongsi station integration. Points here span **three jurisdictions** — municipal road, rail station and commercial property — making them the most complex on the line.
 - **Scenarios carried.** S03 agent business service desk, S05 data-factor authorisation chain, S09 daily-service demonstration street, mostly F2.
 
@@ -1386,6 +1406,10 @@ Contrast (WCAG 2.1, ≥ 4.5 body text, ≥ 3.0 large text and graphical objects,
 
 Distance legibility: A0 is 841 mm across a 1600-unit canvas; by the signage convention *legible height ≈ viewing distance ÷ 250*, a 1 m reading distance requires ≥ 4.0 mm. The smallest actual type across all sheets is **4.73 mm**. Offline HTML: **every one of nine images carries alt text**, the language is declared, heading levels do not skip, there are ten figure captions, dark mode is supported, and there are **zero `<script>` tags**.
 
+![FIG.27 One reading: where a person stands, and whether they block the way](assets/figures/visit.en.png)
+
+**That ratio had never been pointed at the plate.** It has only ever been used to check this proposal's own drawings — and turned on the plate, what it yields is not a type size but **a place to stand**: a 12 mm cap height × 250 gives a 3.0 m reading distance, and 3.0 m falls outside the 1,500 mm accessible clear route, so the reader and the people walking past neither yield nor collide. At 6 mm the distance drops to 1.5 m and the reader stands in the middle of the path: **the plate is still legible and the footway no longer works** — precisely the substitution this package keeps finding, one measure satisfied and the cost moved onto another measure nobody wrote down. So FIG.27 draws "anyone can walk up to a benchmark and take a reading" as the ground each of its four steps takes: walking there (FIG.21 already measured that step as failing), standing, reading, and scanning to appeal — the last of which must come within 600 mm, so the code sits on the side away from the direction of travel: **the one action that must intrude does so at the edge rather than across the flow**. The 12 mm cap height is chosen by this proposal and registered as `A-PLATE-001` in the same commit; the ratio of 250 is not.
+
 **The script checks what is computable and does not replace human testing.** Screen-reader listening, reading by people with colour vision deficiency, and on-site legibility from a printed A0 must be done by people; this proposal does not claim to have done them, only that the computable part has been computed and can be re-run.
 
 ### Recomputation discipline
@@ -1453,13 +1477,13 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-71 entries. By finder:
+76 entries. By finder:
 
 | Found by | Count | What it says |
 |---|---|---|
 | Independent audit | 25 | The audit was run against the shipped package, not a draft |
-| The author | 35 | Found while working |
-| This package's own gate | 7 | Caught at build time — which is what a gate is for |
+| The author | 39 | Found while working |
+| This package's own gate | 8 | Caught at build time — which is what a gate is for |
 | **Reviewers outside this proposal** | **4** | [@anselasimov-web](https://github.com/anselasimov-web) on PR #1002; [@147228](https://github.com/147228) on PR #1065; [@Sonike](https://github.com/Sonike) on Issue #950; [@147228](https://github.com/147228) on Issue #950 / PR #1190 |
 
 <!-- ERRATA:COUNT:END -->
@@ -1474,25 +1498,25 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 
 | Shape | Count |
 |---|---|
-| **The check measured the convenient thing** | **15** |
+| **The check measured the convenient thing** | **16** |
 | **A deliverable was not looked at before shipping** | **11** |
-| **Two copies of one thing drifted** | **8** |
+| **Two copies of one thing drifted** | **10** |
 | Geometry did not mean what it said | 4 |
 | A number outlived the sentence holding it | 4 |
 | A reference did not resolve | 4 |
 | A claim outlived the package | 3 |
 | A claim outlived the corpus | 2 |
+| A hard constraint nothing could fail | 2 |
 | A measurement answering a question it cannot answer | 2 |
 | A number with no file behind it | 2 |
+| Recorded where it was found, not where anyone would look | 2 |
 | A rule applied to others but not to itself | 2 |
 | A claim pointing at a total that excludes the very thing it claims | 1 |
 | Attributed to a file that refuses to do it | 1 |
 | A claim this medium makes uncheckable in principle | 1 |
-| A hard constraint nothing could fail | 1 |
 | The gate reported and was ignored | 1 |
 | An index that does not index | 1 |
 | A number read off a drawing rather than computed | 1 |
-| Recorded where it was found, not where anyone would look | 1 |
 | A requirement with nobody to execute it | 1 |
 | Six classes listed for a seven-class partition | 1 |
 | A term of art applied where it does not hold | 1 |
@@ -1535,11 +1559,11 @@ An authorisation statement a reviewer cannot verify is not a statement. Each row
 
 <!-- LEDGERCOUNT:BEGIN -->
 
-**The file-level ledger sits outside the review input, so its result is brought in here.** `build_review_input` sends `proposal.md` and eight JSON files; neither `report/copyright_statement.md` nor `visual/assets/rights_ledger.json` is among them. **A rights ledger the reviewer structurally cannot open is, from the reviewer's position, exactly the unverifiable assertion this package objects to elsewhere.** All **114 shipped files** carry a clearance class; a file without one fails the build:
+**The file-level ledger sits outside the review input, so its result is brought in here.** `build_review_input` sends `proposal.md` and eight JSON files; neither `report/copyright_statement.md` nor `visual/assets/rights_ledger.json` is among them. **A rights ledger the reviewer structurally cannot open is, from the reviewer's position, exactly the unverifiable assertion this package objects to elsewhere.** All **126 shipped files** carry a clearance class; a file without one fails the build:
 
 | Clearance class | Files |
 |---|---|
-| `author-originated` | 92 |
+| `author-originated` | 104 |
 | `provisional-only-with-stated-limit` | 9 |
 | `author-originated-measurement` | 8 |
 | `author-originated-with-embedded-fonts` | 4 |
@@ -1594,7 +1618,7 @@ One point of citation discipline deserves stating plainly: **the cases are used 
 
 <!-- FIGINDEX:BEGIN -->
 
-There are 24 sheets, numbered FIG.00 to FIG.23. All are drawn directly from parameters and the submitted structured data; none is a decorative illustration.
+There are 30 sheets, numbered FIG.00 to FIG.29. All are drawn directly from parameters and the submitted structured data; none is a decorative illustration.
 
 | Sheet | Content | What to read on it |
 |---|---|---|
@@ -1622,6 +1646,12 @@ There are 24 sheets, numbered FIG.00 to FIG.23. All are drawn directly from para
 | FIG.21 | How far the nearest benchmark actually is: this proposal's own rule, applied to itself | This proposal argues repeatedly that review you must walk fifteen minutes to reach has not been given — and **nobody had measured the walk**. Measured: the worst place on the line is 1,111 m from the nearest benchmark, **30.9 minutes for P5, twice the limit this proposal holds others to**, and six of nine segments fail. The rule ships as a spacing requirement; the positions wait for the official alignment |
 | FIG.22 | Winter: water, ice, and two of this package's rules in collision | The three community points are read monthly, which means read in January. KIT-01 requires the stone flush with no trip hazard and FIG.16 gave that ±5 mm — **and a mark set flush into level paving sits in whatever the paving collects: the tolerance that makes it safe in September is what makes it dangerous in January**. The answer is a local high point, not a ring |
 | FIG.23 | Finding the nearest benchmark: which way, and how far | Markers appear only inside the stretches FIG.21 marks as failing — 48 of them at 150 m spacing, on the existing KIT-04, nothing new built. The face answers four things: direction, distance, P5's time, and the id. **And it states what signage cannot do — it does not make 1,111 m near; this is mitigation, not the fix** |
+| FIG.24 | The device envelope: what exactly goes in those 18 m² | FIG.12 fixed the device reservoir at ≥ 18 m² and this package had never drawn a device or said how big one is. An envelope, not a product: 1,200 × 700 × 1,300 mm, 1,800 mm turning circle, ≤ 120 kg. Each of seven dimensions is marked with what bounds it, and **three are bounded by nothing but this proposal — those are the ones to attack first**. The envelope puts 8 devices in the 18 m² |
+| FIG.25 | BM-0, the origin: the place both routes have to return to | BM-0 appears on nearly every sheet here and had never been drawn. A 2,400 mm setup circle, an approach sightline cone for each closing route, and the closure record outside the door facing the footway at the plate geometry FIG.16 fixed. **A reading is published the moment it is taken, and evidence is only as public as the door** — hang it in a hall with opening hours and the origin is shut when the reading lands. It shows network closure, not local failure (errata E50) |
+| FIG.26 | BM-2x, the second order: a scenario has to be stoppable, and that takes ground | The two wings carry the second order — it appears in the naming table, the cost table and the resource table, and had never been drawn. The difference is not the stone (KIT-01, as everywhere) but that what runs here is a scenario against real users, so it has to be stoppable. From FIG.24's ≤ 6 km/h the halt distance is **2.59 m**, and no fixed object or waiting area may stand within it. **The reaction time and deceleration are chosen by this proposal and registered as A-DEVICE-002 in the same commit** |
+| FIG.27 | One reading: where a person stands, and whether they block the way | The whole participation argument rests on anyone being able to walk up to a benchmark and take a reading, and no sheet had drawn the four minutes that person spends standing there. Working back from the legible-height ratio this package already publishes, a 12 mm cap height gives a **3.0 m** reading distance, clear of the 1,500 mm route. At 6 mm it falls to 1.5 m and the reader stands in the path — **the plate stays legible and the footway stops working**. Cap height chosen, registered as A-PLATE-001 in the same commit |
+| FIG.28 | Third order: the most numerous tier, and more than one reader | The origin and the second order each have a sheet; the third did not — and it is the most numerous tier and the one an ordinary resident actually stands at. It also inherits the question FIG.27 opened and left: that sheet's 3.0 m distance is **one person's** position. From a 600 mm plate and a 30° off-axis limit the legible cone is **3.46 m** and **5 people** can read at once; a class of 30 takes 6 rounds, about 4 minutes — **that part is solved by taking turns, not by ground**. Three chosen inputs, registered as A-READ-001 in the same commit |
+| FIG.29 | The annual first-order closure: how long a route actually takes | The first order was the last tier without a sheet — and it is not a place but **an event**. From the shipped geometry, a 50 m sight and 5 minutes a setup, RT-N needs **55 setups** and RT-S **52**, together with the walk back **5.5–5.8 h** — **inside the 4.0–6.0 h the cost table publishes, and tight against its upper edge**. The build asserts the two stay compatible: lengthen the geometry or edit the band and it stops. Two chosen inputs registered as A-SURVEY-001 |
 
 <!-- FIGINDEX:END -->
 

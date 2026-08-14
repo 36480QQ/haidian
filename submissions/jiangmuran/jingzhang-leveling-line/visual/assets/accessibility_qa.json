@@ -65,6 +65,12 @@
  ],
  "type_size_at_A0": [
   {
+   "sheet": "svg/closure",
+   "min_font_units": 9.0,
+   "min_height_mm_at_A0": 4.73,
+   "pass": true
+  },
+  {
    "sheet": "svg/crossing",
    "min_font_units": 9.0,
    "min_height_mm_at_A0": 4.73,
@@ -74,6 +80,12 @@
    "sheet": "svg/detail",
    "min_font_units": 8.5,
    "min_height_mm_at_A0": 4.47,
+   "pass": true
+  },
+  {
+   "sheet": "svg/device",
+   "min_font_units": 9.0,
+   "min_height_mm_at_A0": 4.73,
    "pass": true
   },
   {
@@ -149,6 +161,12 @@
    "pass": true
   },
   {
+   "sheet": "svg/origin",
+   "min_font_units": 9.0,
+   "min_height_mm_at_A0": 4.73,
+   "pass": true
+  },
+  {
    "sheet": "svg/phasing",
    "min_font_units": 9.0,
    "min_height_mm_at_A0": 4.73,
@@ -203,13 +221,37 @@
    "pass": true
   },
   {
+   "sheet": "svg/third",
+   "min_font_units": 9.0,
+   "min_height_mm_at_A0": 4.73,
+   "pass": true
+  },
+  {
+   "sheet": "svg/visit",
+   "min_font_units": 2.0,
+   "min_height_mm_at_A0": 1.05,
+   "pass": false
+  },
+  {
    "sheet": "svg/wayfind",
    "min_font_units": 9.0,
    "min_height_mm_at_A0": 4.73,
    "pass": true
   },
   {
+   "sheet": "svg/wing",
+   "min_font_units": 9.0,
+   "min_height_mm_at_A0": 4.73,
+   "pass": true
+  },
+  {
    "sheet": "svg/winter",
+   "min_font_units": 9.0,
+   "min_height_mm_at_A0": 4.73,
+   "pass": true
+  },
+  {
+   "sheet": "svg.en/closure",
    "min_font_units": 9.0,
    "min_height_mm_at_A0": 4.73,
    "pass": true
@@ -224,6 +266,12 @@
    "sheet": "svg.en/detail",
    "min_font_units": 8.5,
    "min_height_mm_at_A0": 4.47,
+   "pass": true
+  },
+  {
+   "sheet": "svg.en/device",
+   "min_font_units": 9.0,
+   "min_height_mm_at_A0": 4.73,
    "pass": true
   },
   {
@@ -299,6 +347,12 @@
    "pass": true
   },
   {
+   "sheet": "svg.en/origin",
+   "min_font_units": 9.0,
+   "min_height_mm_at_A0": 4.73,
+   "pass": true
+  },
+  {
    "sheet": "svg.en/phasing",
    "min_font_units": 9.0,
    "min_height_mm_at_A0": 4.73,
@@ -347,7 +401,25 @@
    "pass": true
   },
   {
+   "sheet": "svg.en/third",
+   "min_font_units": 9.0,
+   "min_height_mm_at_A0": 4.73,
+   "pass": true
+  },
+  {
+   "sheet": "svg.en/visit",
+   "min_font_units": 9.0,
+   "min_height_mm_at_A0": 4.73,
+   "pass": true
+  },
+  {
    "sheet": "svg.en/wayfind",
+   "min_font_units": 9.0,
+   "min_height_mm_at_A0": 4.73,
+   "pass": true
+  },
+  {
+   "sheet": "svg.en/wing",
    "min_font_units": 9.0,
    "min_height_mm_at_A0": 4.73,
    "pass": true
@@ -361,21 +433,21 @@
  ],
  "offline_html": {
   "visual/index.html": {
-   "images": 24,
+   "images": 30,
    "images_without_alt": 0,
    "has_lang": true,
    "heading_level_jumps": 0,
-   "figcaptions": 25,
+   "figcaptions": 31,
    "interactive_elements_needing_focus": 0,
    "has_dark_mode": true,
    "inline_script_tags": 0
   },
   "visual/index.en.html": {
-   "images": 24,
+   "images": 30,
    "images_without_alt": 0,
    "has_lang": true,
    "heading_level_jumps": 0,
-   "figcaptions": 25,
+   "figcaptions": 31,
    "interactive_elements_needing_focus": 0,
    "has_dark_mode": true,
    "inline_script_tags": 0
@@ -384,28 +456,30 @@
  "asset_references": [
   {
    "file": "visual/index.html",
-   "references": 24,
+   "references": 30,
    "missing": [],
    "remote": []
   },
   {
    "file": "visual/index.en.html",
-   "references": 24,
+   "references": 30,
    "missing": [],
    "remote": []
   },
   {
    "file": "report/proposal.html",
-   "references": 17,
+   "references": 23,
    "missing": [],
    "remote": []
   },
   {
    "file": "report/proposal.en.html",
-   "references": 17,
+   "references": 23,
    "missing": [],
    "remote": []
   }
  ],
- "failures": []
+ "failures": [
+  "svg/visit: smallest type 1.05 mm at A0 is below the 4.0 mm rule for a 1 m viewing distance"
+ ]
 }

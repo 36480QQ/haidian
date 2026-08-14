@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "ad79ef1d4f9cc08d5a64b070eae6e81913c0c7fa9938f0fbd91fa3fa2be9212d"
+      "sha256": "b32df095ebed3eda2e5ed1fa0afcc9482025f2fee9189337702e773a5f9656b3"
     },
     {
       "path": "compliance_matrix.json",
@@ -114,7 +114,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "ead8481aadc1a2c4281f64b59e8b65e92db8246f5f77e043b56a61e2fd9c9364"
+      "sha256": "be059e0f1ef0984cba780a393fd4e036330e3cec48d7016d0d845bfc4c962769"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "d340e4e481e7a91ed137d156cbba8249f4a8295c6cae07ac10f39e806656a273"
+      "sha256": "0f522cb9ad84754e3a1beedcd89b5ea6b5eb9b81882e5814cdd061e19ea77c30"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -284,6 +284,99 @@
       "language": "en",
       "translation_of": "assets/figures/site-overview.png",
       "sha256": "e6406950fb307aed423fdc0bfba9f6e160b2c52dc1d6037606731a1a9b8dc9cf"
+    },
+    {
+      "path": "assets/media/scene-v1_spine_aerial.mp4",
+      "role": "video",
+      "required": false,
+      "title_zh": "场景一：京张智脊·总体航拍",
+      "title_en": "Scene 1: Jing-Zhang AI Spine — Aerial Overview",
+      "description_zh": "航拍视角俯瞰京张铁路遗址公园沿线城市走廊，绿色智能廊道沿铁轨延伸，AI 创新带的现代科技建筑与历史工业遗产交融。表达方案“一脊串珠”的总体空间结构。",
+      "description_en": "Aerial drone view over the century-old Beijing–Zhangjiakou railway heritage park: a green smart corridor along the tracks, modern AI architecture blending with industrial heritage. Expresses the overall \"one spine linking pearls\" structure.",
+      "poster": "assets/media/scene-v1_spine_aerial-poster.jpg",
+      "caption": "assets/media/scene-v1_spine_aerial.vtt",
+      "transcript": "assets/media/scene-v1_spine_aerial.md",
+      "sha256": "b4049ee38ca34d00c7940cda8aba8bfd9052a074a78e673a3007a618b3721bb1"
+    },
+    {
+      "path": "assets/media/scene-v1_spine_aerial-poster.jpg",
+      "role": "media_poster",
+      "required": false,
+      "sha256": "8add04f6b283ccd4398b1f7c6ab3036722d81344fdc3b12953d83601f45f3f1d"
+    },
+    {
+      "path": "assets/media/scene-v1_spine_aerial.vtt",
+      "role": "caption_track",
+      "required": false,
+      "sha256": "6939877211b40edbe53a83e70cd420d598f29d5a00df92b0d834c1a081e7188b"
+    },
+    {
+      "path": "assets/media/scene-v1_spine_aerial.md",
+      "role": "transcript",
+      "required": false,
+      "sha256": "50165199bfa00dd619ee1cf8e24daab24590f15d710f4875a98d959e334b02b6"
+    },
+    {
+      "path": "assets/media/scene-v2_ai_walk.mp4",
+      "role": "video",
+      "required": false,
+      "title_zh": "场景二：AI 慢行导航·步行体验",
+      "title_en": "Scene 2: AI Walkability — Pedestrian POV",
+      "description_zh": "第一人称步行视角，两侧是 AI 科技园区与绿色开放空间，智能导引灯带、自动接驳无人车、数字信息亭依次出现。对应场景卡 04“AI 慢行导航”与更新项目 JZ-01 慢行断点缝合。",
+      "description_en": "First-person walking POV through the future smart pedestrian corridor: AI campus and green space, smart guidance lighting, autonomous shuttles and digital kiosks. Maps to scenario 04 \"AI walkability\" and project JZ-01.",
+      "poster": "assets/media/scene-v2_ai_walk-poster.jpg",
+      "caption": "assets/media/scene-v2_ai_walk.vtt",
+      "transcript": "assets/media/scene-v2_ai_walk.md",
+      "sha256": "7550d447aa3e67924aa4fb5448a28c1496f903c9e5b4724775371bdecc2fad79"
+    },
+    {
+      "path": "assets/media/scene-v2_ai_walk-poster.jpg",
+      "role": "media_poster",
+      "required": false,
+      "sha256": "bd6079da6932a3a82874ae299f9e2c249cf7d7beaa9ed8efc68d30c490f27b20"
+    },
+    {
+      "path": "assets/media/scene-v2_ai_walk.vtt",
+      "role": "caption_track",
+      "required": false,
+      "sha256": "76e20b3f5b7e56ff39626449605b72bfe8b935c9b46f57bd71ad287f20451f47"
+    },
+    {
+      "path": "assets/media/scene-v2_ai_walk.md",
+      "role": "transcript",
+      "required": false,
+      "sha256": "81724b26592e128bd46ece59c3ce63fd8009b22e96ae832dfa49bbe7a65639ba"
+    },
+    {
+      "path": "assets/media/scene-v3_transit_hub.mp4",
+      "role": "video",
+      "required": false,
+      "title_zh": "场景三：站城一体·智能交通枢纽",
+      "title_en": "Scene 3: TOD — Smart Transit Hub",
+      "description_zh": "智能交通枢纽内部：人流穿梭，实时数据可视化大屏、无障碍导引、自然采光中庭。对应场景卡 10“全球 AI 活动周路线”的轨道接口与 JZ-04 大钟寺站四象限步行连通。",
+      "description_en": "Inside the smart transit hub: crowds through real-time data walls, accessible wayfinding, naturally-lit atrium. Maps to the rail interface of scenario 10 and project JZ-04 four-quadrant connection.",
+      "poster": "assets/media/scene-v3_transit_hub-poster.jpg",
+      "caption": "assets/media/scene-v3_transit_hub.vtt",
+      "transcript": "assets/media/scene-v3_transit_hub.md",
+      "sha256": "63dea5e8148b37a77d36c2ab236e552b780ffbe13ce2ddea246468729345496b"
+    },
+    {
+      "path": "assets/media/scene-v3_transit_hub-poster.jpg",
+      "role": "media_poster",
+      "required": false,
+      "sha256": "50f2e3870b617bff4e18cb22d99db3ebb3ae6599b946f163035c9553b988e983"
+    },
+    {
+      "path": "assets/media/scene-v3_transit_hub.vtt",
+      "role": "caption_track",
+      "required": false,
+      "sha256": "8c1755cb44f044c4b323022ead92cceb3607b351ff783212c05b2a0102ac466a"
+    },
+    {
+      "path": "assets/media/scene-v3_transit_hub.md",
+      "role": "transcript",
+      "required": false,
+      "sha256": "8035ea8e9701cbeb529443a290ef55b5eaa93ecf82c7112864c628cc44301e9d"
     }
   ],
   "validation_claim": {

@@ -276,6 +276,17 @@
       "accessed_at": "2026-08-13",
       "use": "Reference only for project-book depth: location, evidence diagnosis, master plan, enlarged nodes, operations and quantity estimate structure.",
       "limitations": "No copied layout, data, drawing or image asset."
+    },
+    {
+      "id": "RIGHTS-NOTO-OFL",
+      "title": "Noto fonts licensing — SIL Open Font License 1.1",
+      "publisher": "Google Fonts",
+      "url": "https://fonts.google.com/noto/specimen/Noto+Sans+SC/license",
+      "accessed_date": "2026-08-12",
+      "source_type": "official_font_license",
+      "usage": "Rights basis for Noto Sans SC subsets embedded in all four finished PDFs.",
+      "license_note": "Noto Sans SC is licensed under the SIL Open Font License 1.1; the package embeds only the glyph subsets used by finished PDFs.",
+      "limitation": "The source font file is a build dependency and is not redistributed as a standalone asset in this submission."
     }
   ]
 }
