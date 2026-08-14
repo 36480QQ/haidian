@@ -547,6 +547,10 @@ The correspondence between industry and space lands in [data:geometry/land_use.g
 
 **The cost table prices a year, and no sheet had drawn the year.** Drawn, it shows something an annual total cannot: three third-order points read monthly, two second-order quarterly, three annual points once each — and if every cadence starts in the same month the year is not flat. **83.5 h falls in one month against 7.5 h in each of eight others, eleven to one.** The 139–220 h total is exactly right and completely unable to expose this: a team sized for the average cannot do that month, and a team sized for that month is idle for eleven. FIG.30's conclusion is that **this belongs to the calendar and not to resourcing**: separating the three annual readings into three months drops the peak to **31.5 h** — the same 47 sessions, the same hours, the same cost table, no change to the work at all. The arrangement is searched by enumeration rather than asserted, and **the search corrected the guess that produced the sheet**: intuition said stagger the quarterly points, and the search leaves them in place and separates the annual ones, because a datum session is 24 h against a third-order session's 2.5 h and the peak is made almost entirely by annual points landing together. If separating them did not materially beat the obvious arrangement, the build would refuse.
 
+![FIG.31 The other year: the hours this network asks of people it does not pay](assets/figures/volunteer.en.png)
+
+**And what FIG.30 flattened was only the paid hours.** Volunteers do not attend every session: the datum and first-order runs are professional work with no community places, and community readings fall on the second and third order — exactly the tier FIG.30 judged not worth moving. That judgement is true of the quantity it was measuring and false of this one: the volunteer year stayed at **31.0 h against a 15.0 h trough**. FIG.31 separates the quarterly points, bringing the volunteer peak to **23.0 h** at the cost of raising the paid peak from 31.5 h to 33.5 h. **No arrangement minimises both**, so this proposal states which it takes: **the volunteer peak**. A paid peak is a procurement problem — hire, subcontract, move a date. A volunteer peak is a participation failure: community readers cannot be scaled to a month, and that they turn up is the floor the whole argument stands on. The 2.0 h added to the paid peak is the price of that choice, stated rather than absorbed (errata E81).
+
 ![FIG.08 Innovation ecosystem and element mechanisms](assets/figures/ecosystem.en.png)
 
 ### Regional coordination: extending the network into a regional one (agent.1)
@@ -1481,12 +1485,12 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-80 entries. By finder:
+81 entries. By finder:
 
 | Found by | Count | What it says |
 |---|---|---|
 | Independent audit | 25 | The audit was run against the shipped package, not a draft |
-| The author | 43 | Found while working |
+| The author | 44 | Found while working |
 | This package's own gate | 8 | Caught at build time — which is what a gate is for |
 | **Reviewers outside this proposal** | **4** | [@anselasimov-web](https://github.com/anselasimov-web) on PR #1002; [@147228](https://github.com/147228) on PR #1065; [@Sonike](https://github.com/Sonike) on Issue #950; [@147228](https://github.com/147228) on Issue #950 / PR #1190 |
 
@@ -1502,7 +1506,7 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 
 | Shape | Count |
 |---|---|
-| **The check measured the convenient thing** | **17** |
+| **The check measured the convenient thing** | **18** |
 | **A deliverable was not looked at before shipping** | **11** |
 | **Two copies of one thing drifted** | **10** |
 | **A claim outlived the package** | **5** |
@@ -1563,11 +1567,11 @@ An authorisation statement a reviewer cannot verify is not a statement. Each row
 
 <!-- LEDGERCOUNT:BEGIN -->
 
-**The file-level ledger sits outside the review input, so its result is brought in here.** `build_review_input` sends `proposal.md` and eight JSON files; neither `report/copyright_statement.md` nor `visual/assets/rights_ledger.json` is among them. **A rights ledger the reviewer structurally cannot open is, from the reviewer's position, exactly the unverifiable assertion this package objects to elsewhere.** All **128 shipped files** carry a clearance class; a file without one fails the build:
+**The file-level ledger sits outside the review input, so its result is brought in here.** `build_review_input` sends `proposal.md` and eight JSON files; neither `report/copyright_statement.md` nor `visual/assets/rights_ledger.json` is among them. **A rights ledger the reviewer structurally cannot open is, from the reviewer's position, exactly the unverifiable assertion this package objects to elsewhere.** All **130 shipped files** carry a clearance class; a file without one fails the build:
 
 | Clearance class | Files |
 |---|---|
-| `author-originated` | 106 |
+| `author-originated` | 108 |
 | `provisional-only-with-stated-limit` | 9 |
 | `author-originated-measurement` | 8 |
 | `author-originated-with-embedded-fonts` | 4 |
@@ -1622,7 +1626,7 @@ One point of citation discipline deserves stating plainly: **the cases are used 
 
 <!-- FIGINDEX:BEGIN -->
 
-There are 31 sheets, numbered FIG.00 to FIG.30. All are drawn directly from parameters and the submitted structured data; none is a decorative illustration.
+There are 32 sheets, numbered FIG.00 to FIG.31. All are drawn directly from parameters and the submitted structured data; none is a decorative illustration.
 
 | Sheet | Content | What to read on it |
 |---|---|---|
@@ -1657,6 +1661,7 @@ There are 31 sheets, numbered FIG.00 to FIG.30. All are drawn directly from para
 | FIG.28 | Third order: the most numerous tier, and more than one reader | The origin and the second order each have a sheet; the third did not — and it is the most numerous tier and the one an ordinary resident actually stands at. It also inherits the question FIG.27 opened and left: that sheet's 3.0 m distance is **one person's** position. From a 600 mm plate and a 30° off-axis limit the legible cone is **3.46 m** and **5 people** can read at once; a class of 30 takes 6 rounds, about 4 minutes — **that part is solved by taking turns, not by ground**. Three chosen inputs, registered as A-READ-001 in the same commit |
 | FIG.29 | The annual first-order closure: how long a route actually takes | The first order was the last tier without a sheet — and it is not a place but **an event**. From the shipped geometry, a 50 m sight and 5 minutes a setup, RT-N needs **55 setups** and RT-S **52**, together with the walk back **5.5–5.8 h** — **inside the 4.0–6.0 h the cost table publishes, and tight against its upper edge**. The build asserts the two stay compatible: lengthen the geometry or edit the band and it stops. Two chosen inputs registered as A-SURVEY-001 |
 | FIG.30 | The year: where forty-seven readings fall | FIG.29 priced one closure and the cost table prices a year; no sheet had drawn the year. With every cadence starting in the same month the peak is **83.5 h** against a **7.5 h** trough — eleven to one. A team sized for the average cannot do the peak month; one sized for the peak is idle the rest of the year. Separating the three annual readings drops the peak to **31.5 h** with **no change to the work at all**. The arrangement is searched, and **the search corrected the guess that produced the sheet** |
+| FIG.31 | The other year: the hours this network asks of people it does not pay | FIG.30 flattened **paid** hours and said the quarterly points need not move — and volunteers attend only the second and third order, which is exactly the tier it left alone. The volunteer year stayed at **31.0 h** against 15.0; separating them brings it to **23.0 h** at a cost of 2.0 h on the paid peak. **No arrangement minimises both, and this proposal takes the volunteer peak** — a paid peak is a procurement problem, a volunteer peak is a participation failure (errata E81) |
 
 <!-- FIGINDEX:END -->
 
