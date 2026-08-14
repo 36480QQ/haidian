@@ -141,6 +141,29 @@ class SpatialReviewTests(unittest.TestCase):
         self.assertFalse(report.ok)
         self.assertIn("METRIC_VALUE_TYPE", {issue.check_id for issue in report.issues})
 
+    def test_huge_integer_metric_value_is_rejected_before_spatial_recalculation(self) -> None:
+        for value in (10**1000, -(10**1000)):
+            with self.subTest(sign=value > 0), tempfile.TemporaryDirectory() as tmp:
+                root = Path(tmp)
+                base = "submissions/alice/spatial-huge-integer-metric"
+                write_valid_spatial_package(root, base)
+                write_json(
+                    root,
+                    f"{base}/metrics.json",
+                    {
+                        "schema_version": "0.1.0",
+                        "units": {"length": "m", "area": "sqm"},
+                        "metrics": {
+                            "green_ratio": {"status": "known", "value": value, "unit": "ratio"},
+                        },
+                    },
+                )
+
+                report = review_submission(root / base, REPO_ROOT, "formal")
+
+            self.assertFalse(report.ok)
+            self.assertIn("METRIC_VALUE_TYPE", {issue.check_id for issue in report.issues})
+
     def test_nonfinite_metric_value_is_rejected_before_spatial_recalculation(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)

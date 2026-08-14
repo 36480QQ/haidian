@@ -9,8 +9,11 @@ def is_json_number(value: object) -> bool:
     """Return true only for JSON numbers, never for Python booleans."""
 
     # Python makes bool a subclass of int, but JSON booleans are not numbers.
-    return (
-        isinstance(value, (int, float))
-        and not isinstance(value, bool)
-        and math.isfinite(value)
-    )
+    if isinstance(value, bool) or not isinstance(value, (int, float)):
+        return False
+    if isinstance(value, int):
+        try:
+            value = float(value)
+        except OverflowError:
+            return False
+    return math.isfinite(value)

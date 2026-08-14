@@ -24,6 +24,33 @@ class MetricTypeTests(unittest.TestCase):
             with self.subTest(value=value):
                 self.assertFalse(is_json_number(value))
 
+    def test_huge_integers_are_not_json_numbers(self) -> None:
+        for value in (10**1000, -(10**1000)):
+            with self.subTest(sign=value > 0):
+                self.assertFalse(is_json_number(value))
+
+    def test_huge_integer_known_metric_fails_deterministic_validation(self) -> None:
+        for value in (10**1000, -(10**1000)):
+            with self.subTest(sign=value > 0), tempfile.TemporaryDirectory() as tmp:
+                path = Path(tmp) / "metrics.json"
+                path.write_text(
+                    json.dumps(
+                        {
+                            "schema_version": "0.1.0",
+                            "units": {"length": "m", "area": "sqm"},
+                            "metrics": {
+                                "green_ratio": {"status": "known", "value": value, "unit": "ratio"}
+                            },
+                        }
+                    ),
+                    encoding="utf-8",
+                )
+                report = ValidationReport()
+                validate_metrics_file(report, path, "metrics.json")
+
+            self.assertFalse(report.ok)
+            self.assertTrue(any("known metric needs numeric value" in error for error in report.errors))
+
     def test_boolean_known_metric_fails_deterministic_validation(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             path = Path(tmp) / "metrics.json"
