@@ -35,7 +35,7 @@ AI generation does not establish factual authority, accessibility compliance, us
 
 # 逐资产权利台账 / Per-Asset Rights Ledger
 
-The ledger below restates, asset by asset, what the sections above declare in prose. It covers all 88 file entries registered in `manifest.json`. Every row is compiled from a record that already exists inside this package — no new rights fact, tool record, or licence claim is introduced here — and the last column of each table names the file the entry was compiled from, so any row can be checked word for word against its source. Tables are written in Chinese with bilingual headings; where a field is not registered anywhere in the package, the entry reads「包内未登记」rather than a guessed value, and all such gaps are listed in the final section.
+The ledger below restates, asset by asset, what the sections above declare in prose. It covers all 89 file entries registered in `manifest.json`. Every row is compiled from a record that already exists inside this package — no new rights fact, tool record, or licence claim is introduced here — and the last column of each table names the file the entry was compiled from, so any row can be checked word for word against its source. Tables are written in Chinese with bilingual headings; where a field is not registered anywhere in the package, the entry reads「包内未登记」rather than a guessed value, and all such gaps are listed in the final section.
 
 ## 一、编制口径 / Compilation rule
 
@@ -53,7 +53,7 @@ The ledger below restates, asset by asset, what the sections above declare in pr
 | C 图版 | 22 | 由本包 GeoJSON、指标、矩阵、风险、假设与自撰标签本地生成 | Python、SVG、`rsvg-convert`/Cairo | 本文件 |
 | D 图纸 PDF | 4 | 同上，并合并为册 | Python、SVG、`rsvg-convert`/Cairo、`pdfunite` | 本文件 |
 | E 几何 | 9 | 基于仓库临时边界与本方案概念几何 | 复算投影 EPSG:4548（`scripts/spatial_review.py`） | 本文件 · `sources.json` · `metrics.json` |
-| F 离线展示与随包代码 | 18 | 原创手写，自含离线 | 无第三方依赖；仅 Node 内置模块 | 本文件 · `proposal.md` |
+| F 离线展示与随包代码 | 19 | 原创手写，自含离线 | 无第三方依赖；仅 Node 内置模块 | 本文件 · `proposal.md` |
 | G 媒体 | 11 | 手写 HTML/SVG 渲染 + 语音合成 + 本包页面逐帧实录 | Playwright/Chromium、MiniMax `speech-2.8-hd`（`mmx` 1.0.7）、x264/AAC、Pillow | `journey.md` · `audio-guide.md` · `cover.md` |
 | H 品牌标志 | 1 | 原创矢量几何 | 手写 SVG | 本文件 · `cover.md` |
 | I 场景概念图 | 6 | AI 图像生成 + 包内标注层排版合成 | OpenAI 图像生成（经 Codex CLI 原生图像生成工具，GPT-5.6 Sol 智能体调用）；标注层为手写 HTML 经 Chromium（Playwright）渲染 | 本文件 · `sources.json` |
@@ -163,7 +163,7 @@ The ledger below restates, asset by asset, what the sections above declare in pr
 
 | 使用场景 | 字体名称 | 来源 | 许可 | 嵌入与分发方式 | 登记出处 |
 | --- | --- | --- | --- | --- | --- |
-| 图纸 PDF（`drawings/*.pdf`） | Source Han Sans SC（Regular/Medium/Bold 三个子集） | 本地安装副本 | SIL Open Font License 1.1 | 子集嵌入 PDF；不作为独立资产随包分发。经全册字体审计（pypdf 遍历页面与 XObject 资源，2026-08-13）：非 OFL 字体条目为 0。此前版本的四册曾因浏览器打印管线的字体栈回退混入系统字体子集，本版已全部清除并加入构建期兜底与审计脚本防止回归 | 本文件 §Generated assets and software |
+| 图纸 PDF（`drawings/*.pdf`） | Source Han Sans SC（Regular/Medium/Bold 三个子集） | 本地安装副本；许可正本随包收录于 `visual/assets/font-license-ofl.json`（OFL 1.1 允许再分发许可文本） | SIL Open Font License 1.1 | 子集嵌入 PDF；不作为独立资产随包分发。经全册字体审计（pypdf 遍历页面与 XObject 资源，2026-08-13）：非 OFL 字体条目为 0。此前版本的四册曾因浏览器打印管线的字体栈回退混入系统字体子集，本版已全部清除并加入构建期兜底与审计脚本防止回归 | 本文件 §Generated assets and software |
 | 离线展示页（`visual/*.html`、`scene.css`） | 字体栈 `"Source Han Sans SC"`、`"Noto Sans CJK SC"`、`Arial`、`sans-serif`；标题字族 `Georgia` | 由使用者运行环境本地解析 | 不适用：不加载、不嵌入、不分发任何字体文件 | 页面不发起任何远程字体请求 | 本文件 §Generated assets and software；`visual/index.html` 内联样式 |
 | 多模态短片（`journey.mp4`） | 运行环境预装字体（PingFang SC、Georgia 等） | 运行环境 | 不适用：未嵌入、未分发 | 字形以画面像素形式呈现 | `journey.md` §五「字体」行、§六「图件与字体权利」 |
 | 方案封面（`cover.webp`） | 系统随附字体（中西文衬线、无衬线、等宽） | 运行环境 | 不适用：未嵌入、未分发 | 字形以位图形式呈现于图像中 | `cover.md` §二「字体」行 |

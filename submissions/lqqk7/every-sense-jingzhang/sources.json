@@ -336,7 +336,9 @@
       "license": "Vendor terms of service (contractual basis, not a content licence)",
       "license_url": "https://platform.minimax.io/protocol/terms-of-service",
       "archive_url": "https://web.archive.org/web/20260801054220/https://platform.minimax.io/protocol/terms-of-service",
-      "archive_snapshot_date": "2026-08-01"
+      "archive_snapshot_date": "2026-08-01",
+      "archive_sha256": "11ee67cf97d1a29cddc58d922eddc5769c62a26e203faadb656592e4578ea742",
+      "archive_sha256_method": "SHA-256 of the archived snapshot HTML as served by web.archive.org on 2026-08-15 (curl -sL | shasum -a 256); a point-in-time content fingerprint of the terms basis"
     },
     {
       "id": "SOURCE-HAN-SANS-OFL",
@@ -345,9 +347,12 @@
       "url": "https://github.com/adobe-fonts/source-han-sans",
       "accessed_date": "2026-08-14",
       "source_type": "official_public",
-      "usage": "The only font family whose subsets are embedded in the four drawing PDFs (Regular/Medium/Bold), from a locally installed copy; a full-book font audit (pypdf traversal of page and XObject resources) confirms zero non-OFL embedded entries. OFL 1.1 permits embedding and redistribution of subset font programs within documents.",
+      "usage": "The only font family whose subsets are embedded in the four drawing PDFs (Regular/Medium/Bold), from a locally installed copy; a full-book font audit (pypdf traversal of page and XObject resources) confirms zero non-OFL embedded entries. OFL 1.1 permits embedding and redistribution of subset font programs within documents. The licence text itself (Adobe's LICENSE.txt for Source Han Sans, containing SIL OFL 1.1, whose terms permit redistribution of the licence document) now ships inside the package at visual/assets/, so the font-rights basis is verifiable without any network access.",
       "license": "SIL Open Font License 1.1",
-      "license_url": "https://openfontlicense.org/open-font-license-official-text/"
+      "license_url": "https://openfontlicense.org/open-font-license-official-text/",
+      "local_copy": "visual/assets/font-license-ofl.json",
+      "local_copy_sha256": "fcac737e761ec63dbfbdce11030a1780161920d80315edba9c8beff1c2bac5a2",
+      "local_copy_note": "local_copy_sha256 is the SHA-256 of the rebuilt plain licence text (join the license_text array with newlines), matching plain_text_sha256 inside the file."
     },
     {
       "id": "OPENAI-TERMS-OF-USE-20260814",
@@ -361,7 +366,9 @@
       "license": "Vendor terms of use (contractual basis, not a content licence)",
       "license_url": "https://openai.com/policies/terms-of-use",
       "archive_url": "https://web.archive.org/web/20260813014217/https://openai.com/policies/terms-of-use/",
-      "archive_snapshot_date": "2026-08-13"
+      "archive_snapshot_date": "2026-08-13",
+      "archive_sha256": "ffb05d3e6ebbec51444fdab3689b19c5fdbb4071c15582135f8597af7d4e270d",
+      "archive_sha256_method": "SHA-256 of the archived snapshot HTML as served by web.archive.org on 2026-08-15 (curl -sL | shasum -a 256); a point-in-time content fingerprint of the terms basis"
     },
     {
       "id": "JINGZHANG-RAILWAY-QINGLONGQIAO-NRA",
