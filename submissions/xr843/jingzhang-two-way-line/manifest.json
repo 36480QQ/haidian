@@ -54,7 +54,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "facf9c9895b52ff142fe90e1f33f79d43e5b4c9270b1b12996255055707ade78"
+      "sha256": "af58e653418fd82209d5e16e6f15391532fb455c7072ed76671a5ebf74ae6539"
     },
     {
       "path": "compliance_matrix.json",
@@ -112,7 +112,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "104dcd3fa218888f26112cd359ef418f86dfc81e18f036f720ae30578cccc940"
+      "sha256": "13a0c1653d0e89d7cea5bad132fff8a466359da80cd355a1a8d61308f444b7bc"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -241,7 +241,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "61902f10e84db276a6f1623f733515f9f85cf9c453182dd4d6faeea36d5690ec"
+      "sha256": "9f0e646bffd254256133ae465fd8a456be79e82dd3323c3b05945321e42e1f20"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -287,7 +287,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "5f6a9cd57a671e05eaaf32935f47001fa030ac366d69eafe9031146989e5a736"
+      "sha256": "84bbbaf0979d49f2fa9e358a1d3a743386f332c1eeaa7c6d94c239580c19665c"
     },
     {
       "path": "risk.json",
@@ -329,13 +329,31 @@
       "path": "visual/assets/run_twoway_tabletop.js",
       "role": "visualization",
       "required": false,
-      "sha256": "ed92d352631677fd4aae3019b87347b082c27b94ec0140a5a0249a8e3ea0ae91"
+      "sha256": "8a3f8582d149f31e8eecf5d4b03807b9b966d0daf8616b1ca7638f35739d3ed7"
     },
     {
       "path": "visual/assets/twoway-tabletop-evidence.json",
       "role": "visualization",
       "required": false,
-      "sha256": "67f5bd0fafc76e47766854bb9038ca24f667ee324205d841ee128ad1acabbb35"
+      "sha256": "b6a952f9fb1897461997edbb2014a79186ffd6cce0b8b334127dbb9d2fe01acf"
+    },
+    {
+      "path": "visual/assets/twoway-rules.js",
+      "role": "visualization",
+      "required": false,
+      "sha256": "05b3e43bf54b73202805d598bd90af8699d637b3c81da7ac77c7a1bc28c1855f"
+    },
+    {
+      "path": "visual/assets/twoway-runbook.js",
+      "role": "visualization",
+      "required": false,
+      "sha256": "ef7406ad2b4716ef5c0db15298211fb295c464611730edcd1ba16a71fce4f600"
+    },
+    {
+      "path": "visual/assets/twoway-tabletop.js",
+      "role": "visualization",
+      "required": false,
+      "sha256": "c3b778541c10c5681fdd0706579d4158a57b1da79fcd413660285dafbad50e56"
     }
   ],
   "validation_claim": {

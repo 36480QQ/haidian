@@ -76,15 +76,18 @@
         "submissions/xr843/jingzhang-two-way-line/standard_matrix.json",
         "submissions/xr843/jingzhang-two-way-line/visual/assets/run_twoway_tabletop.js",
         "submissions/xr843/jingzhang-two-way-line/visual/assets/twoway-protocol.schema.json",
+        "submissions/xr843/jingzhang-two-way-line/visual/assets/twoway-rules.js",
+        "submissions/xr843/jingzhang-two-way-line/visual/assets/twoway-runbook.js",
         "submissions/xr843/jingzhang-two-way-line/visual/assets/twoway-runbook.json",
         "submissions/xr843/jingzhang-two-way-line/visual/assets/twoway-tabletop-evidence.json",
+        "submissions/xr843/jingzhang-two-way-line/visual/assets/twoway-tabletop.js",
         "submissions/xr843/jingzhang-two-way-line/visual/index.en.html",
         "submissions/xr843/jingzhang-two-way-line/visual/index.html"
       ],
       "ai_package_stages": {
         "submissions/xr843/jingzhang-two-way-line": "formal"
       },
-      "total_bytes": 19424412,
+      "total_bytes": 19474036,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -272,7 +275,7 @@
       "result": "pass",
       "severity": "info",
       "target": "visual/index.html",
-      "message": "visual/index.html and index.en.html are offline-static with zero scripts; every data-metric span matches metrics.json."
+      "message": "visual/index.html and index.en.html are offline self-contained: no remote requests, no iframe, no form and no tracking; every data-metric span matches metrics.json. The Two-Way Protocol tabletop section runs packaged scripts (twoway-rules.js + twoway-runbook.js + twoway-tabletop.js) locally in the page, and degrades to a noscript pointer to the Node runner and the recorded evidence file."
     },
     {
       "check_id": "BILINGUAL_PAIRING",
