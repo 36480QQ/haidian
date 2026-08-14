@@ -402,6 +402,32 @@
       "assumptions": [
         "抽样估计，非全量解析"
       ]
+    },
+    "compute_governance_parcel_count": {
+      "status": "known",
+      "value": 11,
+      "unit": "count",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "count of land_use code=0802 parcels with compute_quota_policy",
+      "confidence": "high",
+      "assumptions": [
+        "分级配额+绿电优先制度，数值待 G4 实测回填，不捏造"
+      ]
+    },
+    "energy_audit_field_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "count of compute/energy governance fields (quota/audit/green priority)",
+      "confidence": "high",
+      "assumptions": [
+        "制度字段数，非能耗数值"
+      ]
     }
   }
 }

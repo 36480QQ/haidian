@@ -6,7 +6,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以铁路转辙器为母题（转辙即路由决策即 agent 编排），把四环协作（资料/推演/反馈/复核）落成机器可读治理制品——Civic Agent Receipt 收据 + G0-G6 门闸状态机 + 验线四步。环会自转：每次干预可审计、可回滚、可证伪。所有空间建议为开放共创建议，不替代正式规划。"
 tracks: ["civic-agent-governance", "ai-public-services", "jingzhang-heritage-narrative"]
 scenarios: ["ai-cultural-guide", "ai-health-service-navigation", "ai-traffic-walkability"]
-iteration: "v8.0"
+iteration: "v9.0"
 ---
 
 # 京张·转辙 · 城市智能体验证带
@@ -101,7 +101,7 @@ iteration: "v8.0"
 
 轨道站点一体化强化站点与重点区、公共空间的步行衔接，具体线位与站点属工程范畴，本方案不给最终结论。
 
-市政与新型基础设施采用「端侧算力 + 分布式能源 + 传统市政融合」`[depth:municipal_new_infrastructure]`，众智园布局算力与数据中心配套，公共空间与建筑屋顶布局分布式能源与雨水回收。公共服务设施围绕七类用户画像配置 AI+医疗健康导航、AI+教育文化导览、AI+法律与企业服务咨询与人才生活服务，所有服务保留**数字 + 人工 + 纸质 / 静态替代**三通道回退（场景卡 12），确保数字包容与适老化，数据来源限定公开或授权聚合。
+**算力与能源审计制度**：全部科研用地（0802）地块挂分级算力配额（tiered_priority：公共服务 > 科研 > 商用）、能耗审计要求与绿电/余热优先制度 `[metric:compute_governance_parcel_count]` `[metric:energy_audit_field_count]`——不捏造能耗数值，只立审计制度与配额优先级，数值由 G4 受控测试阶段实测后回填。市政与新型基础设施采用「端侧算力 + 分布式能源 + 传统市政融合」`[depth:municipal_new_infrastructure]`，众智园布局算力与数据中心配套，公共空间与建筑屋顶布局分布式能源与雨水回收。公共服务设施围绕七类用户画像配置 AI+医疗健康导航、AI+教育文化导览、AI+法律与企业服务咨询与人才生活服务，所有服务保留**数字 + 人工 + 纸质 / 静态替代**三通道回退（场景卡 12），确保数字包容与适老化，数据来源限定公开或授权聚合。
 
 ![交通慢行与蓝绿公共空间复合系统](assets/figures/mobility-bluegreen.png)
 
