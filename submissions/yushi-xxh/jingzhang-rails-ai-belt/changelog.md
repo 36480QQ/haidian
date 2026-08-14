@@ -1,5 +1,22 @@
 # 方案迭代记录
 
+## v1.10 - 2026-08-14
+
+### AI Agent 复评分提分返修（基于 v1.9 评分 71/100）
+
+v1.9 的 71 分（与 v1.6 回退持平）说明仅增加内容量不推动 rubric；本轮改为**修复评审模型实际看到的证据**，不新增任何实施主张：
+
+- **图件（评审视觉输入）修复**：评审模型收到的 5 张固定图 + 品牌识别 + 剖面全部重绘。`key-areas.en.png` 与 `key-area-sections.en.png` 在 v1.9 中是中文版字节副本，本轮重绘为真实英文对照；`site-overview` 右栏"Data & Boundary Status"文字截断修复；`land-use-structure.png` 分辨率由 705×764 提升至可读；`mobility-bluegreen` 图内 `[depth:...]` / GAP 开发标记清除；中英文图件页脚统一为 2026-08-14 (v1.10)。
+- **来源登记绑定中央 registry**：`sources.json` 每条同源条目写入 `registry_source_id`（DATA-SRC-*）与 `registry_review_status`（verbatim 复制中央表）；新增 [source:BARRIER-FREE-LAW]（无障碍环境建设法）、[source:AI-GOVERNANCE-INTERIM-MEASURES]（生成式AI服务管理暂行办法）、[source:ELDERLY-SMART-TECH-PLAN]（老年人智能技术实施方案）三条 registry approved 法定来源；修复 PUB-PII-2021 的 URL（原为无障碍公约链接复制错误，改为《个人信息保护法》政府公开文本）。
+- **自检证据持久化**：`self_check.json` 由 legacy 格式升级为持久化四门 gate（DETERMINISTIC_VALIDATION / SPATIAL_REVIEW / VISUAL_PACKAGING / PROFESSIONAL_EVIDENCE），`ok=true`、`can_enter_formal_review=true`。
+- **正文一致性**：registry 摘要由过时的"5 条 formal"更正为读取时点的 8 approved + 1 provisional；v1.9 变化说明段落（20 个证据标记）拆分为逐项绑定表；`bilingual_figure_count` 6 → 7（5 固定图 + 品牌识别 + 剖面），`bilingual_completeness_ratio` 公式同步 (7+2+1)/(7+2+1)；`report/proposal.html`（中文）由当前正文重渲染。
+- **agent.json 充实**：新增 `iteration`、`method_limits`（逐项声明未完成事项与 v1.10 不做实施主张）、`human_final_judgment=true`。
+
+### 复评差距观察
+
+- 71 → 80 = +9 分。本轮不新增数量型内容，而是消除评审输入中的可观测缺陷：假英文图、截断/低分辨率图、registry 未绑定、legacy 自检、中文报告与正文不同步。
+- 官方边界、控规、道路红线、权属、文保、市政等官方资料仍缺；所有干预要素保持 `design_proposal`，任何 KPI 不得在限制解除前进入正式评分。
+
 ## v1.9 - 2026-08-12
 
 ### AI Agent 复评分提分返修（基于 v1.6 回退版评分 71/100）
