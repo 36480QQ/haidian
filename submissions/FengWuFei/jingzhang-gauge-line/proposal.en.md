@@ -48,6 +48,8 @@ The core spatial judgment is a **"three vertical belts" structure**: the overall
 
 **Primary name: Jingzhang The Gauge Line.** "Gauge" — the track gauge — is the most fundamental unit of railway engineering and a pun on "standard of measurement", echoing the proposal's "measurable" claim. The three lines are named **Gauge of Heritage**, **Gauge of Life** and **Gauge of Innovation**, unified under the "measurement" motif. The visual direction draws on railway engineering blueprints and precision ruler imagery: deep-blue ground, copper-gold ticks, white-line grid, avoiding atmospheric illustration and entertainment-style icons [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
 
+**Logo direction (agent.1 deliverable):** the primary mark is `assets/brand/logo.svg` — an original, pure-geometry, font-free figure: a deep-blue rounded square as blueprint ground; the gold **herringbone chevron** recalls the climbing switchback of Zhan Tianyou's Jingzhang Railway and reads equally as an open pair of compasses; below, the **solid white rail** is the "ruler of space" and the **dashed gold rail** is the "ruler of intelligence", with green sleepers and gauge ticks completing the motif. The mark works in monochrome, stays legible at 16 px, and extends to the four-level signage system, event sub-brands and digital interfaces; heritage memorial marks (e.g. Qinghuayuan Station) are layered separately from the primary logo and never mixed.
+
 Naming serves recognition rather than slogan: it explains the spatial logic of the proposal (everything returns to scale) and resonates with the engineering heritage of the Jingzhang Railway — Zhan Tianyou solved "how to make a railway climb Guan'gou within a given gradient"; this proposal solves "how to make AI truly enter every parcel of the city within a given boundary".
 
 ### Global AI Innovation Ecosystem Cases (agent.2)
@@ -68,6 +70,43 @@ These cases show that a world-class AI ecosystem relies not on algorithms alone 
 ### Haidian AI Industry Baseline (official data anchoring)
 
 The proposal does not invent an industry ecosystem from scratch but anchors it to Haidian's published baseline: Haidian AI core industry scale **282.2 billion yuan (2024, +30% YoY, ~80% of Beijing)**, ~1900 AI enterprises, 95 filed large models, and the city's first 10^16-FLOP (万P) intelligent-computing cluster [source:HAIDIAN-AI-INDUSTRY-STATS]; 92 national key labs in the district (63.4% of Beijing, 17.9% of China) and 51 unicorns [source:HAIDIAN-STATISTICS]. The strongest planning anchor is the **Zhongguancun AI Large-Model Industry Cluster core area (~9.5 km², east: Xueyuan Rd, south: Zhichun Rd, west: Wanquanhe Rd, north: Tsinghua West/East Rd)**, inaugurated 2023 — it overlaps the proposal's overall design scope [source:ZGC-LARGEMODEL-CLUSTER-OFFICIAL]. Two of the proposal's key areas — **Wudaokou (Beijing AI Origin Community) and Dazhongsi — are the two official pilot areas of Haidian's 53 km² AI Innovation Block** (released at the 2024 Zhongguancun Forum) [source:HAIDIAN-AI-INNOVATION-BLOCK]. This means the proposal does not "site the belt from nothing" but deepens space for pilot areas already officially recognized and already carrying industry momentum. All industry figures are official aggregate statistics (non-spatial), cited with year and caliber, not investment or recruitment commitments.
+
+### Regional Innovation Collaboration: Three Areas, Two Wings and Cross-District Loops (agent.1/agent.2)
+
+The three belts and three key areas are not islands. The taskbook calls for a "three areas, two wings" synergy loop; the proposal translates the two wings into two operable support mechanisms and maps collaboration directions with neighboring innovation poles (all mechanism-level conceptual suggestions, not government agreements or settled arrangements) [source:AGENT-TASKBOOK]:
+
+| Wing | Taskbook positioning | Spatial & mechanism translation |
+| --- | --- | --- |
+| Zhongguancun technology-service wing | Global factor allocation, Zhongguancun IP and capital empowerment | Carried by the Dazhongsi international roadshow living room and data-factor reception hall, hosting conceptual pathways for technology trading, IP services and cross-border capital matchmaking; wing functions land in the east belt's commercial (05) and white-land (16) elastic supply [data:geometry/land_use.geojson#LU-014] |
+| Xiaoyuehe scenario-empowerment wing | AI scenario enablement and intelligent vitality city | Carried by the Xiaoyuehe waterfront [data:geometry/constraints.geojson#WATER-OSM-001]: a "waterfront scenario test segment" where slow-mobility navigation, environmental sensing and night-vitality scenarios run continuously along the Xiaoyuehe–heritage-park axis, forming the public experience path of the 12 scenario cards [metric:scenario_card_count] |
+
+Cross-district collaboration loops (conceptual mechanisms, not settled arrangements):
+
+| Partner | Direction | Interface in this proposal |
+| --- | --- | --- |
+| Beiwei Community | Residential and community-service hinterland | West-belt residential/community land (0701/0702) stitched by the pedestrian spine |
+| Future Science City (Changping) | Hard-tech R&D and pilot-scale linkage | Conceptual channel from Zhongzhiyuan test/validation scenarios to pilot manufacturing [data:geometry/key_areas.geojson#PROV-KEY-001] |
+| Huairou Science City | Big-science facilities and basic research | Release and showcase mechanism of the open-source release hall |
+| Beijing E-Town (Yizhuang) | Intelligent manufacturing and industrialization | Conceptual matchmaking path of the Dazhongsi data-factor reception hall [data:geometry/key_areas.geojson#PROV-KEY-003] |
+| Beijing-Tianjin-Hebei city cluster | Jing-Zhang cultural corridor and regional brand resonance | Narrative extension of the Jingzhang memory route and Centennial Milestone Plaza — the railway itself is a cross-regional heritage |
+
+The synergy is two-way: the belt exports scenario and standard-setting display interfaces; its neighbors feed back research results, manufacturing capacity and visitors. All cross-district mechanisms are conceptual suggestions pending negotiation among the relevant bodies and official arrangement.
+
+### AI Innovation Ecosystem Map and Factor Mechanisms (agent.2)
+
+The eight factors required by the taskbook — land, space, industry, capital, talent, computing power, data, scenarios — are translated into a reviewable ecosystem map: each factor carries a public-fact anchor, a spatial placement and a mechanism suggestion, all traceable to layers or public sources [depth:overall_spatial_structure]:
+
+| Factor | Public-fact anchor | Spatial placement | Mechanism suggestion (conceptual) |
+| --- | --- | --- | --- |
+| Land / space | Large-Model Cluster core area ~9.5 km² overlapping this scope [source:ZGC-LARGEMODEL-CLUSTER-OFFICIAL] | 15 parcels across three belts | White land (16) as elastic supply; intensity pending official controls |
+| Industry | Haidian AI core industry 282.2 bn yuan, ~1900 firms [source:HAIDIAN-AI-INDUSTRY-STATS] | Dazhongsi AI Industry Cluster | Conceptual mechanism of roadshow display + data-factor circulation |
+| Capital | "Capital empowerment" positioning of the technology-service wing [source:AGENT-TASKBOOK] | International roadshow living room | Roadshow-matchmaking-conversion pathway; no funding commitments |
+| Talent | 19 universities and research institutes along the corridor [source:OSM-2026] | AI Origin Community | Near-campus incubation + talent-zone concept |
+| Computing power | Beijing's first 10^16-FLOP cluster in Haidian [source:HAIDIAN-AI-INDUSTRY-STATS] | Edge-compute relays | Distributed compute as public-service prototype (card 03) |
+| Data | Beijing open-data platform: 4457 datasets [source:BEIJING-OPEN-DATA-PLATFORM] | Data-factor reception hall | Compliant registry + audited-circulation concept (card 09) |
+| Scenarios | 53 ha heritage park + Xiaoyuehe/Qinghe waterfronts [source:JINGZHANG-PARK-OFFICIAL] | All 12 scenario cards placed | Scenario open days + test reservation concept |
+
+The map's judgment: Haidian lacks no factors — it lacks **spatial interfaces between them**. Capital sits next to universities without meeting places; computing power is strong but sealed in server rooms; data is abundant but lacks a trusted circulation interface. The three key areas answer exactly these three "missing interfaces".
 
 Future-city-form research answers "how AI changes work, life, learning, mobility and public service". This proposal's stance: **these changes ultimately land on changes in spatial scale** — remote collaboration changes office-space density demand, edge computing changes the symbiosis of server rooms and public-service facilities, autonomous driving changes curb-and-sidewalk allocation. The proposal translates these trends into concrete land-use ratios, street cross-sections and public-space scales rather than vague tech vision.
 
@@ -126,6 +165,21 @@ The proposal's "near-campus conversion" and personas rest on the corridor's real
 | Enterprise visitor | Display, business, reception, recruiting | Dazhongsi international roadshow living room, rail access, enterprise-adjacent public space | Enterprise logos and cases require clearance |
 | Resident | Commute, leisure, community service, low-disturbance renewal | Heritage park slow-mobility loop, embedded community service, graded night lighting | No resident profiling for commercial recommendation |
 | Faculty and student | Conversion, cross-campus collaboration, daily slow-mobility | Campus-park slow-mobility stitching, conversion station, AI education point | Campus data and research results require authorization |
+
+### Public Interest and All-Age Inclusive Design (agent.3 extension)
+
+Public interest is not an appendix but the starting point of scale. Beyond the five personas, a public innovation belt must also answer the groups most easily overlooked by technology narratives. The following are design guidance and conceptual suggestions, not engineering conclusions [standard:MOHURD-URBAN-DESIGN-MEASURES]:
+
+| Group | Core need | Spatial response (conceptual) |
+| --- | --- | --- |
+| Elderly | Digital divide, rest density, emergency safety | "Digital-recharge stations" in the heritage park where volunteers and service agents teach smart-service use; seating and shade guidance every 200–300 m along the spine; sensing nodes doubling as one-touch call points |
+| Children | Science education, safety, nature contact | "AI + railway" science nodes on the Jingzhang memory route (Qinghuayuan Station narrative); slow-mobility-priority segments and speed-limit suggestions near schools |
+| People with mobility impairments | Accessibility continuity | Spine gradient guidance (≤1/12); uninterrupted tactile paving; reserved accessible-lift suggestions at the Dazhongsi four-quadrant connection [data:geometry/public_space.geojson#PUBLIC-004] |
+| Night workers and women | Night-time travel safety | Graded night lighting linked with low-intrusion aggregate heat sensing — identifying only "where it is dark/empty", never persons [depth:multi_agent_governance] |
+| Low-income young talent | Affordable living and first startup steps | Low-cost desk concept in near-campus incubators; reserved affordable functions in community-service land (0702) |
+| Tourists and visitors | Legibility, multilingual, navigable | Four-level bilingual signage system; the memorial system lets visitors "read" the century dialogue of Jingzhang and AI |
+
+The governance meaning of inclusion: every agent service for these groups is bound by the Agent Operating Protocol — data minimization, human-in-the-loop, no substitution for statutory process; statutory standards for accessibility and elderly facilities follow formal design and acceptance.
 
 ### Multi-Agent Collaborative Governance: the Belt's "Agent Operating Protocol" (agent.3 deepening)
 
@@ -192,6 +246,31 @@ The proposal offers 3+ AI pilgrimage landmarks / honor-display nodes, echoing th
 
 Landmarks, signage, logo, fonts, images, portraits and enterprise logos must be cleared; no over-entertainment, and no conceptual landmark written as approved construction [standard:MOHURD-URBAN-DESIGN-MEASURES]. Urban character fuses Jingzhang railway history, Zhongguancun innovation culture and new AI culture, anchored to real cultural resources: **the Qinghuayuan Station site is a Beijing Municipal Cultural Heritage Protection Unit (9th batch, 2023)**, built 1910, its station name "清华園車站" calligraphed by Zhan Tianyou, and the first stop of the 1949 "进京赶考" [source:HERITAGE-QINGYUAN-OFFICIAL]; **Dazhongsi (Juesheng Temple) is a 4th-batch National Key Cultural Heritage Protection Unit (1996)**, now the Great Bell Temple Museum [source:DAZHONGSI-HERITAGE-OFFICIAL]. The "Centennial Milestone Plaza" and "Open-Source Display Gallery" should respond to the cultural weight of these two heritage sites, proposing city tone, building character, roof form, massing, interface and public-art guidance; heritage construction-control zones follow official heritage data, and this proposal gives only a directional location in `geometry/constraints.geojson` [data:geometry/constraints.geojson#HERITAGE-QHY-001].
 
+### Public-Space Component Library (agent.4)
+
+The landmarks and public-space system are delivered as a reusable component library — modularization lets the memorial system and smart services expand year by year, stay maintainable, and be deepened by professional teams. Conceptual specifications only; materials, appearance and suppliers must be cleared — not engineering selection conclusions:
+
+| Component | Function | Conceptual specification | Placement |
+| --- | --- | --- | --- |
+| Honor-wall module | Records contributors' GitHub IDs and outstanding agents | Modular cast-bronze nameplate unit (~1.2×2.4 m), extensible year by year | Dazhongsi forecourt, heritage-park nodes [data:geometry/public_space.geojson#PUBLIC-004] |
+| Smart bench | Rest + wireless charging + low-intrusion environmental sensing | Solar canopy; sensing aggregates environmental metrics only, never identifies persons | Along the pedestrian spine (guidance: every 200–300 m) |
+| Information kiosk | Wayfinding + event info + emergency call | Bilingual e-ink display, offline map, one-touch call | Rail-station interchanges and key-area entrances |
+| Wayfinding sign | Carrier of the four-level signage system | Gauge motif, bilingual, night-legible | Belt-wide (see signage direction) |
+| Micro compute kiosk | Edge inference node + public network | Co-located with edge-compute relays; energy data public | Card-03 nodes |
+| Accessibility kit | Ramps, tactile paving, tactile maps | Gradient ≤1/12; tactile guidance at nodes | Connection nodes and landmark forecourts |
+
+Component governance matches the scenario cards: any sensing component is bound by the Agent Operating Protocol; any signage or imagery component must be rights-cleared [source:AGENT-TASKBOOK].
+
+### Signage System Direction and International Communication Narrative (agent.5 deepening)
+
+**Signage system direction:** a four-level system — gateway signs (belt ends and key-area entrances), node signs (landmarks and scenario nodes), path signs (pedestrian spine and stitching roads), facility signs (components and service points). Fully bilingual (Chinese/English); the graphic motif is the "gauge" — twin parallel rails with tick teeth, deep-blue ground with copper-gold ticks and white-line grid, consistent with all drawings; the heritage segment may adopt aged-copper tones and early-industrial detailing, the AI segment stays geometric and clean. Cultural identity marks and the belt's primary logo belong to two separate layers and are never mixed; fonts, icons and symbols must be original or rights-cleared [standard:MOHURD-URBAN-DESIGN-MEASURES].
+
+**International communication narrative (ready-to-use concept copy):**
+
+> **The Gauge Line** — where a century of engineering precision meets the measurable city of AI. One corridor, two rulers: one measures how land is used, the other measures how intelligence is distributed, bounded and reviewed.
+
+The communication anchors are real cultural weight, not slogans: the Qinghuayuan Station site (1910, name calligraphed by Zhan Tianyou) and the engineering spirit of the Jingzhang herringbone switchback, together with the six-century bells of Dazhongsi (national heritage), form the twin anchors of the "Centennial Jingzhang × new AI culture" international narrative [source:HERITAGE-QINGYUAN-OFFICIAL] [source:DAZHONGSI-HERITAGE-OFFICIAL].
+
 ## Renewal Project List, Implementation Policy and Phasing
 
 | Project ID | Project name | Type | Key dependency | Evidence |
@@ -207,7 +286,24 @@ Phasing is distinguished from the 100-day call design cycle: the call cycle is t
 
 ### Global AI Innovation Activity System and Long-Term Operation (agent.6)
 
-The annual activity system includes: Global AI Week (opening at Jingzhang Starting Plaza), Developer Festival (developer walk), Scenario Open Day (Zhongzhiyuan public testbed), Competition Roadshow (Dazhongsi international roadshow living room) and City Experience Route (Jingzhang memory route). The activity brand continues the "Gauge Line" visual system; developer-community operation relies on the open-source release hall and contribution honor wall; scenario-open operation relies on the public testbed and edge-compute relay. All activity, investment, funding, policy and operation arrangements are written as conceptual suggestions or deepening directions, not as confirmed government commitments [source:AGENT-TASKBOOK].
+**Annual activity system** (conceptual suggestions, not settled arrangements; event safety, permits and copyright follow formal approval):
+
+| Season | Event brand | Spatial carrier | Operating mechanism (concept) |
+| --- | --- | --- | --- |
+| Spring | Open-Source Hackathon Season | AI Origin Community release hall | Hosted by the developer community, co-hosted with corridor universities |
+| Summer | Global AI Week | Opening at Jingzhang Starting Plaza + belt-wide experience route | Multilingual international communication, linked with scenario open days |
+| Autumn | Achievement Release Season | Dazhongsi international roadshow living room | Roadshow-matchmaking-conversion pathway |
+| Winter | Jingzhang Memory Light-Narrative Week | Heritage-park green axis | Cultural narrative + public art, assets cleared first |
+
+**Brand IP system:** the "Gauge Line" master brand and the four seasonal sub-brands share the gauge visual motif (deep-blue ground, copper-gold ticks, twin rails), extending to signage, cultural products and digital interfaces; all visual assets must be original or rights-cleared, and cultural identity marks are layered separately from the primary logo (see agent.5 signage direction).
+
+**Developer-community operation:** a conceptual loop of "open-source contribution → reputation accumulation → honor-wall engraving → near-campus incubation matchmaking" — contribution data is used only in aggregate; community governance is assisted by operations agents with final judgment by human teams (charter.7: humans make the final call) [source:AGENT-TASKBOOK].
+
+**Scenario-open operation:** the public testbed and safety-governance sandbox run on a "reservation + supervision" concept, with test/validation scenarios open to enterprise and university teams and results reviewed by humans; scenario open days turn testing itself into a visitable urban event.
+
+**Conversion pathway (recruitment funnel, conceptual mechanism):** visitor (heritage park and pilgrimage-landmark experience) → participant (AI Week / open days / hackathons) → developer (open-source community and reputation system) → founder/team (near-campus incubation, roadshow-lounge matchmaking) — every stage has an explicit spatial carrier and operating action, avoiding "events without retention". Follow-on conversion of talent, enterprises and developers relies on the conceptual capital-and-IP service mechanism of the Zhongguancun technology-service wing [source:AGENT-TASKBOOK].
+
+**International communication and recruitment:** the bilingual "dual gauge" narrative (agent.5 concept copy) + the annual event calendar + a rights-cleared communication visual kit support international attention; all investment, policy, funding and operation arrangements are written as conceptual suggestions, never as settled commitments.
 
 ## Indicator System, Area Recomputation and Compliance Matrix
 
