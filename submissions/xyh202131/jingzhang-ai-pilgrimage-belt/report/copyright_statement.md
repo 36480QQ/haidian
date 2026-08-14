@@ -2,7 +2,7 @@
 
 ## 中文
 
-截至 2026-08-14，本文件不声称投稿包已经完成清权。`visual/assets/rights-clearance-ledger.json` 保留 5 个兼容归组，并对 manifest 中 140 个路径建立 140 条逐文件资产记录（其中 139 个为非 manifest 内容文件）；`visual/assets/source-rights-evidence.json` 另以 schema 约束 50 条来源、120 个 OSM way、字体事实和外部取证请求。结构闭环只表示可审计披露，当前独立逐文件清权审计完成数仍为 **0**，`audit_records` 为空，公开或专业复用继续阻断，总体状态为 `not_fully_cleared`。
+截至 2026-08-14，本文件不声称投稿包已经完成清权。`visual/assets/rights-clearance-ledger.json` 保留 5 个兼容归组，并对 manifest 中 141 个路径建立 141 条逐文件资产记录（其中 140 个为非 manifest 内容文件，含第 20 轮评审交接索引）；`visual/assets/source-rights-evidence.json` 另以 schema 约束 50 条来源、120 个 OSM way、字体事实和外部取证请求。结构闭环只表示可审计披露，当前独立逐文件清权审计完成数仍为 **0**，`audit_records` 为空，公开或专业复用继续阻断，总体状态为 `not_fully_cleared`。
 
 - 文本、结构化记录与概念设计几何由声明的 AI Agent 为本投稿编制；其中事实、标准和空间依据仍受 `sources.json` 的权威等级与用途限制约束。
 - `geometry/site_boundary.geojson` 与 `geometry/key_areas.geojson` 继承仓库临时边界的非官方、低精度和再利用边界，不构成官方红线或审批依据。
@@ -24,7 +24,7 @@
 
 ## English
 
-As of 2026-08-14, this package does not claim that rights clearance is complete. `visual/assets/rights-clearance-ledger.json` retains five compatibility groups and records 140 file-level asset records for the 140 manifest paths (139 non-manifest content files). Schema-constrained `visual/assets/source-rights-evidence.json` separately records 50 sources, 120 OSM ways, font facts, and external evidence requests. Structural closure means audit-ready disclosure only: completed independent file-level clearance audits remain **0**, `audit_records` remains empty, public or professional reuse remains blocked, and the overall status remains `not_fully_cleared`.
+As of 2026-08-14, this package does not claim that rights clearance is complete. `visual/assets/rights-clearance-ledger.json` retains five compatibility groups and records 141 file-level asset records for the 141 manifest paths (140 non-manifest content files, including the Round 20 review handoff index). Schema-constrained `visual/assets/source-rights-evidence.json` separately records 50 sources, 120 OSM ways, font facts, and external evidence requests. Structural closure means audit-ready disclosure only: completed independent file-level clearance audits remain **0**, `audit_records` remains empty, public or professional reuse remains blocked, and the overall status remains `not_fully_cleared`.
 
 - Narrative, structured records, and conceptual design geometry were prepared for this submission by the declared AI agent; factual, professional, and spatial inputs remain governed by the authority and use limits in `sources.json`.
 - `geometry/site_boundary.geojson` and `geometry/key_areas.geojson` inherit the repository provisional boundary's non-official, low-precision, and reuse limits. They are not official redlines or approval evidence.

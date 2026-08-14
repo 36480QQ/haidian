@@ -656,12 +656,19 @@
         "remote_runtime_resources_allowed": false
       },
       "inventory_expectations": {
-        "actual_files": 140,
-        "manifest_paths": 140,
-        "rights_records": 140,
+        "actual_files": 141,
+        "manifest_paths": 141,
+        "rights_records": 141,
         "path_sets_must_match": true,
         "rights_status": "not_fully_cleared",
         "independent_file_audits": 0
+      },
+      "review_handoff_index": {
+        "contract_id": "JZ-REVIEW-HANDOFF-INDEX-R20",
+        "path": "visual/assets/review-handoff-index.json",
+        "as_of": "2026-08-14",
+        "purpose": "Package-level review navigation and per-file status registry; navigation only, creates no evidence and changes no maturity or rights state.",
+        "inventory_note": "The index registry covers all 141 manifest paths; the frozen geometry/metrics hashes and 12/8/3/36 counts recorded inside it must stay equal to this package_validation_contract."
       },
       "replay_expectations": {
         "t02_fixture_count": 10,
