@@ -589,14 +589,18 @@ def review_submission(submission_dir: Path, repo_root: Path, stage: str) -> Spat
 
     metrics = load_metrics(submission_dir)
     for name, metric in metrics.items():
-        if isinstance(metric, dict) and isinstance(metric.get("value"), bool):
+        if (
+            isinstance(metric, dict)
+            and metric.get("status") == "known"
+            and not is_json_number(metric.get("value"))
+        ):
             report.add(
                 SpatialIssue(
                     "METRIC_VALUE_TYPE",
                     "major",
                     "metrics.json",
-                    f"{name} must use a JSON number, not a boolean.",
-                    actual=metric["value"],
+                    f"{name} must use a finite JSON number.",
+                    actual=metric.get("value"),
                 )
             )
     check_metric_close(report, metrics, "site_area_sqm", site_area, "sqm")

@@ -141,6 +141,32 @@ class SpatialReviewTests(unittest.TestCase):
         self.assertFalse(report.ok)
         self.assertIn("METRIC_VALUE_TYPE", {issue.check_id for issue in report.issues})
 
+    def test_nonfinite_metric_value_is_rejected_before_spatial_recalculation(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            base = "submissions/alice/spatial-nonfinite-metric"
+            write_valid_spatial_package(root, base)
+            write_json(
+                root,
+                f"{base}/metrics.json",
+                {
+                    "schema_version": "0.1.0",
+                    "units": {"length": "m", "area": "sqm"},
+                    "metrics": {
+                        "green_ratio": {
+                            "status": "known",
+                            "value": float("nan"),
+                            "unit": "ratio",
+                        },
+                    },
+                },
+            )
+
+            report = review_submission(root / base, REPO_ROOT, "formal")
+
+        self.assertFalse(report.ok)
+        self.assertIn("METRIC_VALUE_TYPE", {issue.check_id for issue in report.issues})
+
     def test_land_use_gap_fails(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
