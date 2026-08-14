@@ -626,12 +626,12 @@
     },
     "falsifiable_clause_count": {
       "status": "known",
-      "value": 5,
+      "value": 10,
       "unit": "count",
       "source_files": [
         "proposal.md"
       ],
-      "formula": "count of falsifiable clauses group1 (01-05)",
+      "formula": "count of falsifiable clauses group1+2 (01-10)",
       "confidence": "high",
       "assumptions": [
         "阈值待 G4 标定；条款格式:触发/时限/复核人/回滚"
