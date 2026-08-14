@@ -1,27 +1,27 @@
 ---
-title: "Jing-Zhang Civic Intelligence Loop: Public Infrastructure for Trustworthy AI"
+title: "Jing-Zhang City as Agent: A Capable City, Governed by Its People"
 author_github: "www41818520-coder"
 language: "en"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "A conceptual urban-design proposal that turns the Jing-Zhang railway heritage into walkable civic infrastructure for visible, accountable AI contribution. All geometry is provisional and must be recalculated when organiser-owned official files are issued."
+summary: "A conceptual urban-design proposal that makes the Jing-Zhang corridor an enterable, understandable and human-governed city-scale Agent: people ask, the city responds. All geometry is provisional and must be recalculated when official files are issued."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
 
 <!-- PARTICIPANT-DESIGN: Jing-Zhang Civic Intelligence Loop. Prepared by Codex for www41818520-coder. All spatial moves are conceptual suggestions for professional deepening; provisional geometry is explicitly retained pending organiser-supplied official files. -->
 
-# Jing-Zhang Civic Intelligence Loop
+# Jing-Zhang City as Agent
 
 ## A public knowledge infrastructure for trustworthy AI
 
-**Core proposition:** Let Chinese AI contribution move from the laboratory into the city — and be remembered by the city.
+**Core proposition:** A capable city, governed by its people. People ask; the city responds.
 
 The proposal starts with the autonomous engineering spirit of the Jing-Zhang Railway. It does not treat that history as decoration. Railway engineering had to confront real terrain, real constraints, tests and responsibility. The corresponding proposition for AI is equally practical: research must be open to explanation; a system must show its boundary; a human must be able to review it; and the city must be allowed to correct it.
 
-`Jing-Zhang Civic Intelligence Loop` is therefore not a sealed AI park or a technology spectacle. It is a walkable civic knowledge infrastructure where research, collaboration, trustworthy verification, voluntary public experience, feedback and contribution archiving become visible. It gives global visitors a concise and honest encounter with a Chinese proposition: autonomous innovation is inseparable from engineering responsibility and public benefit.
+`Jing-Zhang City as Agent` is therefore not a sealed AI park or a technology spectacle. It is a walkable civic operating system where a problem becomes visible, tools can be called, action can be verified, responsibility can be traced and people can take over. Research, collaboration, trustworthy verification, voluntary public experience, feedback and contribution archiving become spatially legible. It gives global visitors a concise Chinese proposition: autonomous innovation is inseparable from engineering responsibility, public value and people's governance.
 
 The proposal follows the official announcement and the agent open-call taskbook. Its figures, matrices, machine-readable geometry and design depth form one reviewable package rather than a standalone vision statement. [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK]
 
@@ -33,11 +33,11 @@ The organiser-owned official boundary and key-area polygons are not available in
 
 ![One spine, three stations and two wings](assets/figures/site-overview.en.png)
 
-## Spatial concept: one spine, three stations, two wings
+## Spatial concept: one public baseline, three task platforms, nine civic interfaces
 
-The structure is called **One Spine, Three Stations, Two Wings — Visible Contribution**.
+The structure is called **One Public Baseline, Three Task Platforms and Nine Civic Interfaces**. The city is already a continuously operating public system; the design repairs its broken loops of sensing, task decomposition, tool use, collaboration, verification, action, feedback and memory. This is a spatial translation of Agent logic, not a software metaphor pasted onto the city.
 
-The **Jing-Zhang Contribution Walk** is the spine. The heritage park becomes a quiet, legible public route rather than an object to be consumed at speed. It joins three complementary stations:
+The **Jing-Zhang Contribution Walk** is the public baseline. The heritage park remains an easy-to-enter route for walking, resting, photographing and everyday life. A continuous but rhythmically expanding and contracting **Information Canopy** makes task state visible, routes work between participating units and shelters public workbenches. It joins three complementary task platforms:
 
 | Station | Place | Public role | Essential spatial components |
 | --- | --- | --- | --- |
@@ -45,7 +45,7 @@ The **Jing-Zhang Contribution Walk** is the spine. The heritage park becomes a q
 | Trustworthy Verification Gallery | Zhongzhiyuan | Testing and accountable review | Visible Test Bench, Standards-and-Boundary Wall, Human Review Window, calm engineering garden |
 | City Echo Field | Dazhongsi | Voluntary urban experience and correction | Optional Service Experience, Feedback Table, service-review desk, low-noise release corner |
 
-The **Zhongguancun Services Wing** connects results to intellectual-property support, capital services, international collaboration and release. The **Xiaoyuehe Scenario Wing** returns technology to ordinary urban life: optional experience, accessibility, human fallback and feedback. The two wings are not separate districts with invented boundaries; they are operational directions that coordinate with the three stations.
+The **Zhongguancun Services Wing** connects results to intellectual-property support, capital services, international collaboration and release. The **Xiaoyuehe Scenario Wing** returns technology to ordinary urban life: optional experience, accessibility, human fallback and feedback. The two wings are not separate districts with invented boundaries; they are operational directions that coordinate with the three platforms. Others display AI outcomes; here the public can see and participate in how the Agent works.
 
 The form borrows its restraint from railway components, test benches and archive cases: durable, readable and capable of repair. It deliberately avoids an iconic “AI landmark” disconnected from daily use.
 
@@ -116,6 +116,8 @@ A visitor should be able to understand the proposition without downloading an ap
 
 The walking, blue-green and accessibility network in the figure is experiential and conceptual; it is not a surveyed route or an engineering drawing. AI appears only when it is needed. Paper, physical signs and human assistance remain first-class choices.
 
+The **Information Platform** is the core spatial prototype. It is not an enclosed exhibition hall but a semi-open civic workplace embedded in shade, the heritage walk and ordinary street life. A continuous ribbon canopy uses reflective stainless steel, low-luminance blue information light and maintainable modular construction. Its soffit becomes a task-status surface: people can see whether a project is asking, collaborating, verifying, acting or receiving feedback, and authorised participants can route work to another unit. Ordinary seating, staffed help, non-digital wayfinding, step-free access and the right to leave remain available at all times.
+
 ![90-minute contribution walk](assets/figures/mobility-bluegreen.en.png)
 
 ## Ecosystem, culture and long-term operation
@@ -140,6 +142,8 @@ This is a reference operational framework, not an announced government programme
 ## Delivery, phasing and evidence
 
 The proposal prioritises a reversible, low-risk start: first make the narrative, signage, working table, feedback mechanism and contribution archive legible through light-touch installations and programmes; then deepen station interfaces after permissions, ownership, transport, heritage, municipal, safety and operating conditions are verified; only then consider physical construction or permanent service integration. The submitted phasing layer and implementation matrix identify dependencies rather than inventing approvals. [data:geometry/phasing.geojson#PHASE-001]
+
+The first physical test should therefore be one reversible, full-scale Information Platform at a public interface with clear operating responsibility and no intervention in the railway relic itself. It tests shade, lighting, noise, accessibility, legibility, task routing and human takeover. Only validated modules expand to the three key areas, and only after that can a corridor-wide task bus and annual contribution archive be considered. Expansion is judged by whether people can arrive, understand, ask for help and correct the system more easily - never by screen count or AI adoption alone. [depth:phasing_implementation]
 
 Evidence is organised as follows:
 
