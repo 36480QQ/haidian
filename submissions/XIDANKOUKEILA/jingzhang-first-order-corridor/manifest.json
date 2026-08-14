@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "package_id": "jingzhang-first-order-corridor",
   "project_id": "centennial-jingzhang-ai-belt",
   "site_package_version": "0.1.0",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "47d9778176674553b35b1d72332a3f771b8eb581a5a26f63dfc0ed0c15e08360"
+      "sha256": "85659416db56c92082df7979b7f4bb9a59fb1130849a41e0960960ddd9416d75"
     },
     {
       "path": "compliance_matrix.json",
@@ -100,14 +100,14 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "50600640c266d606c7517890b41fa7cc19f28031b8ed83fdc44a7138718e7cf4"
+      "sha256": "165bd9bcaeb0a8f4cd8d1259513f2c56b392a6f1c5ac62bc3dc667ed08a2e4d9"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "eb1946b37de3e476d033edfed17d360ec2aa5d7775ea1c56eea2cf6ab51dbff7"
+      "sha256": "ba6e42573d025ee47738a11c46296b2fd63c86e487853cfa1118600ff75afe9c"
     },
     {
       "path": "visual/index.html",
@@ -227,7 +227,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "a96a30cbe96d97880be26dbeb909807e2b41e08100a4b5b07d1314a3b8e4ca6c"
+      "sha256": "dfc6e80ed40cf7f033202d930078f635058311347e2b2af65f706bc88a4b7897"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -235,7 +235,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "55951bb4f79156895d730e37c831649953c8b59663afb6b9f89f58620c7f82a2"
+      "sha256": "c868447dce9740e9d639579b869723f0cc3e6bdcc9e60b14a7821ebf7d93d466"
     },
     {
       "path": "visual/index.en.html",
@@ -287,8 +287,9 @@
     }
   ],
   "validation_claim": {
-    "self_checked": false,
+    "self_checked": true,
     "known_blockers": [],
-    "data_confidence": "medium"
+    "data_confidence": "medium",
+    "readiness_contract": "persisted-self-check-v1"
   }
 }
