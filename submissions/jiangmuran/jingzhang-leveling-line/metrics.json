@@ -124,7 +124,7 @@
       "value": null,
       "unit": "sqm",
       "source_files": [],
-      "formula": "sum(existing_residential_floor_area) within the design scope",
+      "formula": "sum(existing_residential_floor_area)",
       "confidence": "unknown",
       "assumptions": [],
       "reason": "本方案写了一条约束——「人才公寓与既有居住的关系须以不减少现有居住供给为前提」——而现状居住建筑面积并未公开，本包也没有测它。按本方案自己的标准，一条无法核验的规则不算规则，因此这里把它约束的那个量单列为 unknown 并写明前置条件：现状居住建筑面积或户数须由权属与现状测绘数据给出，该数据到位前这条约束只能作为深化阶段的必检项，不能声称已满足。0701 城镇住宅与 0804 教育用地不出现在 land_use.geojson 里，是因为它们落在 11 个留白街区内且其边界依赖同一批未公开数据——这是判断，不是遗漏。",
@@ -136,7 +136,9 @@
       "evidence_class_note": "无取值，因此没有可被高估的等级；所需数据（权属与现状测绘）未公开。空缺是刻意的，不是遗漏。",
       "confidence_is_about": null,
       "evidence_class_note_en": "No value, so there is no grade that could be overstated; the data it would need — ownership records and an existing-conditions survey — is not public. The blank is deliberate, not an omission.",
-      "reason_en": "This proposal states a constraint — that talent housing must not reduce existing residential supply — while the existing residential floor area is not published and this package has not measured it. By this proposal's own standard a rule that cannot be checked is not yet a rule, so the quantity it constrains is listed separately as unknown with its precondition named: existing residential floor area or dwelling counts must come from ownership records and an existing-conditions survey, and until that data exists the constraint stands as a mandatory check at the next stage, not as a satisfied condition. Land-use codes 0701 (urban residential) and 0804 (education) do not appear in land_use.geojson because they fall inside the eleven deliberately blank blocks whose boundaries depend on that same unpublished data — a judgement, not an omission."
+      "reason_en": "This proposal states a constraint — that talent housing must not reduce existing residential supply — while the existing residential floor area is not published and this package has not measured it. By this proposal's own standard a rule that cannot be checked is not yet a rule, so the quantity it constrains is listed separately as unknown with its precondition named: existing residential floor area or dwelling counts must come from ownership records and an existing-conditions survey, and until that data exists the constraint stands as a mandatory check at the next stage, not as a satisfied condition. Land-use codes 0701 (urban residential) and 0804 (education) do not appear in land_use.geojson because they fall inside the eleven deliberately blank blocks whose boundaries depend on that same unpublished data — a judgement, not an omission.",
+      "formula_note": "范围限于本方案的设计范围之内。",
+      "formula_note_en": "Summed within this proposal's design scope."
     },
     "key_area_count": {
       "status": "known",
@@ -541,14 +543,16 @@
         "standard_matrix.json",
         "design_depth_matrix.json"
       ],
-      "formula": "count(references declared in the 14 reference fields of the three matrices); shares one definition with matrix_refs_qa.count_references",
+      "formula": "count(references declared in the 14 reference fields of the three matrices)",
       "confidence": "high",
       "assumptions": [
         "这是**被声明**的引用数；其中能被解析规则核对的那部分由 matrix_refs_qa 分别报出，两个数取自同一个定义，不再各算各的（此前二者相差 5）。每条条目的证据摘要由其自身引用生成，44 条互不相同。"
       ],
       "metric_class": "package_self_count",
       "evidence_class": "self_measured",
-      "confidence_is_about": "reading"
+      "confidence_is_about": "reading",
+      "formula_note": "与 `matrix_refs_qa.count_references` 共用同一份定义，两处不会各算各的。",
+      "formula_note_en": "Shares one definition with matrix_refs_qa.count_references, so the two cannot count differently."
     },
     "shipped_verification_script_count": {
       "status": "known",
@@ -590,7 +594,7 @@
     },
     "errata_entry_count": {
       "status": "known",
-      "value": 109,
+      "value": 110,
       "unit": "count",
       "assumption_ids": [
         "A-SELF-COUNT-001"
