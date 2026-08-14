@@ -12,7 +12,7 @@
     "agent_name": "柱子 / Zhuzi",
     "model": "Claude Fable 5 via Claude Code",
     "model_family": "claude",
-    "model_detail": "v1.0 scaffolded and authored with OpenAI GPT-5.6 Sol via Codex; v2.0-v5.20 iterations authored with Anthropic Claude Fable 5 via Claude Code with Claude Opus subagents; audio narration synthesized with MiniMax speech-2.8-hd (disclosed in assets/media transcripts)"
+    "model_detail": "v1.0 scaffolded and authored with OpenAI GPT-5.6 Sol via Codex; v2.0-v5.21 iterations authored with Anthropic Claude Fable 5 via Claude Code with Claude Opus subagents; audio narration synthesized with MiniMax speech-2.8-hd (disclosed in assets/media transcripts)"
   },
   "generated_at": "2026-08-14T14:42:57Z",
   "files": [
@@ -26,13 +26,13 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "62d9f41998accf4a608063a5f66ae6fa26b33108a7ea4fd355fcf12c035c7b86"
+      "sha256": "02d588b9a09ffcd470b11bf1140f97f5246dd0283ee9e27861efb967ef2e8471"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "685ff58432f5e65f9d44254b5658bdb4efe535ac8a862abd06c08f28704646d4"
+      "sha256": "e1284be935e97ba0a0ed3f0f2e0ca21786aa63e5af3df6b101ad2e6dd1e1a150"
     },
     {
       "path": "metrics.json",
@@ -50,13 +50,13 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "28f11b17f6bb3cfcff473c41572bdd074752d64ee6cbc11fbb8d5a20bcee1d3a"
+      "sha256": "4b4896a8830ed792520903eaefbe727edeb0875c5e290a826b1c908c40f52458"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "b45156f73d0a0f8416285a873eaabf78c66ad039c53b1c0d4afc47a8fbd4c958"
+      "sha256": "ae96713c8f83e1db67a8f4c307d24a97feea5b2372f197de9718b41fab05e855"
     },
     {
       "path": "compliance_matrix.json",
@@ -100,7 +100,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "6084037ebb90bbe4ac565732ec2effaa053e9b59f8e98f675e309aa03e51aa0c"
+      "sha256": "a586e56a56aa4ceb34f901e83cfcd452febd162ab42fd87cbce86d3db5148a05"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -218,7 +218,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "62a6bf39c478bba7d15a4103438d0c959ed3596565880a5d91de0ea01fd72f0a"
+      "sha256": "135fd530c2597b3436bd029def0b9105d30f2aab803bbb58c96df37c6d70e967"
     },
     {
       "path": "report/proposal.en.html",
@@ -227,6 +227,15 @@
       "language": "en",
       "translation_of": "report/proposal.html",
       "sha256": "1ee6ff0c56b732c4e8db11942c786978131bc3c7d42c645519cd19f82483ea72"
+    },
+    {
+      "path": "visual/assets/font-license-ofl.json",
+      "role": "sources",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "思源黑体许可正本（SIL OFL 1.1，随包收录）",
+      "title_en": "Source Han Sans licence text (SIL OFL 1.1, shipped in package)",
+      "sha256": "1ae0f8e6c06d32bdbc385aa574748d93b94672a19424526e62c5736cd2769cbe"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -311,7 +320,7 @@
       "role": "proposal_figure",
       "required": false,
       "language": "zh",
-      "sha256": "eaa5b714634b025b20ecbdad8861d96b39b77cf6613560605502ed0d36d46702"
+      "sha256": "29906be5e1bc6c28c52aa78c3f7284c5644daf730e8eff1039c7a45177818b29"
     },
     {
       "path": "assets/figures/section-profiles.en.png",
@@ -319,7 +328,7 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/section-profiles.png",
-      "sha256": "75777e1c0ef254180d84adb2ef3a6e363120c9e4521eddbb3974d908aa78625c"
+      "sha256": "1de7525fd29c4f6d5bae441480891c8166eb2fbb12ee7d0b3203efe5b5853e7f"
     },
     {
       "path": "assets/figures/enterprise-journey.png",
@@ -445,7 +454,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "44e524b19f357e5d72de65f28af6557430655c7d5838a188aaec9b12ee79c50f"
+      "sha256": "faf796b4eb5df6164e07d36c3caa70e113da0b4dc79e5010b2244ad03bb74466"
     },
     {
       "path": "assets/media/cover.webp",
@@ -586,7 +595,7 @@
       "language": "neutral",
       "title_zh": "输出质量校样与可及性走查记录（方案方自查）",
       "title_en": "Output Proofing and Accessibility Walkthrough Record (Proposer's Self-Check)",
-      "sha256": "a7bf39a8ee6ae09b1c0f36f6f0d04e36a597889697ae5982f4ba7849add32182"
+      "sha256": "f56568ffdee3bb6353d821aae0125e07304f8b654314050023786ff7b17abe7b"
     },
     {
       "path": "visual/assets/scene-provenance.json",
