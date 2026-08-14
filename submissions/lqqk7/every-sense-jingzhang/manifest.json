@@ -12,9 +12,9 @@
     "agent_name": "柱子 / Zhuzi",
     "model": "Claude Fable 5 via Claude Code",
     "model_family": "claude",
-    "model_detail": "v1.0 scaffolded and authored with OpenAI GPT-5.6 Sol via Codex; v2.0-v5.16 iterations authored with Anthropic Claude Fable 5 via Claude Code with Claude Opus subagents; audio narration synthesized with MiniMax speech-2.8-hd (disclosed in assets/media transcripts)"
+    "model_detail": "v1.0 scaffolded and authored with OpenAI GPT-5.6 Sol via Codex; v2.0-v5.17 iterations authored with Anthropic Claude Fable 5 via Claude Code with Claude Opus subagents; audio narration synthesized with MiniMax speech-2.8-hd (disclosed in assets/media transcripts)"
   },
-  "generated_at": "2026-08-12T11:56:14Z",
+  "generated_at": "2026-08-14T14:42:57Z",
   "files": [
     {
       "path": "manifest.json",
@@ -26,19 +26,19 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "460086546e8091e23762d72a3bc3c4e00abfe296a90b003678d97ba85e048c39"
+      "sha256": "738730f5e28371cd222a923338b3555a66f70e28778ebd6888461d82159c283f"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "64e20b83273bcc1ed87fc2ac64ce9f00f2a09ead262a3263fe3cdded60ee65f2"
+      "sha256": "8fafd25b13c744640040a75f37fd993aad69559987387bc9ada05a733ec28b5b"
     },
     {
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "6f57e563e5939e629ffa49c8cfe5bf47540e97142b5cfa10deb3823616e7273a"
+      "sha256": "f1ef4fe15b519c8d9327018a2946e32c8889f82ff867f55c8e5e24bdbd831f5f"
     },
     {
       "path": "assumptions.json",
@@ -56,13 +56,13 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "106cb42ce420046a823c3947105dfaeee21fd8176178d7d6b6763a0a960f92af"
+      "sha256": "654104006a7a436d23530dc4100c280cccb24c0a91a5a4271b28d75fb3a20937"
     },
     {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "d787325d1e2c5bf63a7a0529b60818e292607ea032504de08a2fe9d3c8108dc6"
+      "sha256": "4ee289609a3de317b087069f320c44ecfea2395d05b449b66e9017b12a50f86f"
     },
     {
       "path": "standard_matrix.json",
@@ -88,7 +88,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "90e9901cfa3e89f21ec8ff9ef6219a7aad25729c3bfa1badca79d8974f7bb144"
+      "sha256": "1cc37fa1e4625a160a384f1a03dcdb4fedf137624476386b3009e5783c1ebc9b"
     },
     {
       "path": "report/narrative.md",
@@ -100,28 +100,28 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "603027180823fb0f052337fd6d9cfb186f5409b52ff94047a5e15820845d8bfc"
+      "sha256": "af751b043944d7c205975e31a718d440573044351229e5793cd4e05407062b75"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "5c29f25c72464b26f55c6dba282a6d9fa55e81cc4f9fc57f8f3e0757223aab45"
+      "sha256": "a86958c1b392d9b64a905682e01ae4e8a62ed6312cdcb8ee3216afbaf1369a4d"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "d75e3ff90c86eec4ab5fe29d4cce9aafbaaa8537d2b026e7e17f0cf6914b99e2"
+      "sha256": "fe6c612e89d61d212bce07ce2c60b8748d16f24a2b1c7119964414a3a714b18f"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "39bba95d43bd1bd2433d1afe6e3f7ea4d8c99a38b3ce54e457e77a456aec6fe9"
+      "sha256": "ffc0b384bbe7d7276f234165c7ad0e3c5dfa5f67d3f8ca481c3a63f7082856e4"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -142,7 +142,7 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "38edad14d23fcec574dec85d591d6df7111efd47ba9163303d367bd615faf9c3"
+      "sha256": "9e54abeab8692eeabcbcdad51e1b512630cb23d31890772a0c5cbfb670880c41"
     },
     {
       "path": "assets/figures/mobility-bluegreen.png",
@@ -218,7 +218,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "2d4f80a8e803dca00cf5939e63fad63a22e74592735779da13d6aaffa1b1d1fa"
+      "sha256": "ac813ff8865e7f0f1ba3a6dcb2a39db2130baeba0413cf11e12cc2d51876a3d0"
     },
     {
       "path": "report/proposal.en.html",
@@ -226,7 +226,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "27c7108fa5556012fe042a17690c3abc0b18c74b60cdfafb981eb60a2dd19d4c"
+      "sha256": "37651b23e116840e1128f4807377c2b0e84365471740d9aa815f3175f285a1bb"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -234,7 +234,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "cef475f4d6744ef69600403480f23103be29facee14de994b2d2195cdc12ebe7"
+      "sha256": "406fea067372e0d65396a828550a9319f86548badc9d5c059f77cf8b6b0cb733"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -242,7 +242,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "69b5180ef1ad8564c9c27363382287f63dd8c35ed680fa947c3b33e388209d90"
+      "sha256": "7d52d103f575219b5d27ced5512e3ba07f6a0947fb035f556d8bb980f4ae1e94"
     },
     {
       "path": "visual/index.en.html",
@@ -250,7 +250,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "838222599ca87176e180ea8adf210d51510973470d148597a892acc7b4b67978"
+      "sha256": "80aedc7ba482a621ff8b1a8fcd737e6e403a199fbac781bfab9f9fe72ed4ddee"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -274,14 +274,14 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/metrics-evidence.png",
-      "sha256": "78bfd0f8ac5c4d4568b22b382f1cc1780733461a7e7072b6b9c4c888baa66543"
+      "sha256": "2a8c3b1922f2466b166a913c4d7c6f431c877d607795b459fe4bf6aec670f867"
     },
     {
       "path": "assets/figures/metrics-evidence-audit.png",
       "role": "proposal_figure",
       "required": false,
       "language": "zh",
-      "sha256": "7f975c694cca005b5d4e0710c0a1ab69a13cac0b5ed6c4560ad17649e7a742ca"
+      "sha256": "ff2779e818c69bb4d1d6aee4a49d4c638e3b20c03d2fc9fb957d460c1b29f495"
     },
     {
       "path": "assets/figures/metrics-evidence-audit.en.png",
@@ -289,7 +289,7 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/metrics-evidence-audit.png",
-      "sha256": "7b936a61b6ad98906c6965a1f51a68fda3e45fde93a01802d0eaec1f21738a15"
+      "sha256": "ef8771819183a5edbcf49e5be685ad039fb2e7d6ddcef3f8fc4d8ea16a9cd64b"
     },
     {
       "path": "assets/figures/mobility-bluegreen.en.png",
@@ -319,7 +319,7 @@
       "role": "proposal_figure",
       "required": false,
       "language": "zh",
-      "sha256": "343d6c7cbaf6be3376327a51ac1393309fd597207e5b92d5f37c9139592ab101"
+      "sha256": "52b249f32f331f1f28269922512c3034e16ddaf4cb220dcfe3425631b4c0f987"
     },
     {
       "path": "assets/figures/scene-dual-state.en.webp",
@@ -327,14 +327,14 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/scene-dual-state.webp",
-      "sha256": "d6361d7575d73cd8a5a9e39cbfbfa3be02bbae154e3b9bb7909cf947f8fb3ec8"
+      "sha256": "788a53ab616b0a4daee552b8720db76897295c6b0baa7e47a34cfdab5a0d66c5"
     },
     {
       "path": "assets/figures/scene-interface-yard.webp",
       "role": "proposal_figure",
       "required": false,
       "language": "zh",
-      "sha256": "bb402c82480482c7a91aeb1e05a8d0ea1792c1c8fec0e541c38f9cbc8928826c"
+      "sha256": "26da5b1616b96d212809ff43a9ea308b2af599590e1368c932925a71a6359255"
     },
     {
       "path": "assets/figures/scene-interface-yard.en.webp",
@@ -342,14 +342,14 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/scene-interface-yard.webp",
-      "sha256": "cacf019a84f4fd2ec85d8f302dac39b5ce02604ee419d88f6be7645c7d2963ae"
+      "sha256": "f21f4169a351c36af54019beba0325c2d57239f2f54f3a83172ea00205d7a774"
     },
     {
       "path": "assets/figures/scene-corridor-aerial.webp",
       "role": "proposal_figure",
       "required": false,
       "language": "zh",
-      "sha256": "9db04a184b8cfa555644caec5033876cb9b633cb86355ab0b687f390fc0a51ff"
+      "sha256": "f4600e56e6978ed0b2a13e951b56d20d7b58bc51681da95d9929d34954ec0679"
     },
     {
       "path": "assets/figures/scene-corridor-aerial.en.webp",
@@ -357,7 +357,7 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/scene-corridor-aerial.webp",
-      "sha256": "c7eff7c450b08e65ec7e2deacf77a646a234415ef3dfac8140b38d2fd9d23298"
+      "sha256": "e7da962be9870cbf8f43e14714398b0fcc53a1a212036eaaacb8e5f4117e1aa5"
     },
     {
       "path": "assets/figures/site-overview.en.png",
@@ -400,7 +400,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "2ffa65834a9d1d69b855447c0ceb36e5c25aafdc6cce51752709b798e2cca33a"
+      "sha256": "dcb43bc04d9cae8a54364c320b0e87b471b536bcec2429fd4b56da8b16baf29f"
     },
     {
       "path": "assets/media/cover.webp",
@@ -541,7 +541,7 @@
       "language": "neutral",
       "title_zh": "输出质量校样与可及性走查记录（方案方自查）",
       "title_en": "Output Proofing and Accessibility Walkthrough Record (Proposer's Self-Check)",
-      "sha256": "c977bc6e3da2023c71d1012d13ad0785703c8cfb55f3ae15e1cd196a1d4d70e9"
+      "sha256": "704bc05c408624c928641461d3cc97fd0c73ae3a3ad8443f3050d89622f374d8"
     },
     {
       "path": "visual/assets/scene-provenance.json",
@@ -550,7 +550,7 @@
       "language": "neutral",
       "title_zh": "场景概念图生成档案（提示词全文、工具链、输出哈希）",
       "title_en": "Concept Scene Image Provenance (full prompts, tool chain, output hashes)",
-      "sha256": "7fa77e267c6a11d644bb524e0604db6b1ec0ee24c0f2c8bb9fe871a9180b296b"
+      "sha256": "8334cefd6db49420e451a1373fe42ba3e173905288b437be71af20fee4790ff8"
     },
     {
       "path": "visual/assets/seb-spec.json",

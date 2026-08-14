@@ -52,8 +52,8 @@
      "date": "2026-08-13",
      "scope_zh": "drawings/a3-booklet.pdf 与 drawings/a3-booklet.en.pdf",
      "scope_en": "drawings/a3-booklet.pdf and drawings/a3-booklet.en.pdf",
-     "result_zh": "中文册 12 页 1,910,612 字节，英文册 12 页 1,515,262 字节，合计 24 页，与「12 × 2」的登记一致",
-     "result_en": "12 pages / 1,910,612 bytes (zh) and 12 pages / 1,515,262 bytes (en); 24 pages in total, matching the registered 12 x 2",
+     "result_zh": "中文册 12 页 1,910,596 字节，英文册 12 页 1,515,251 字节，合计 24 页，与「12 × 2」的登记一致",
+     "result_en": "12 pages / 1,910,596 bytes (zh) and 12 pages / 1,515,251 bytes (en); 24 pages in total, matching the registered 12 x 2",
      "provenance": "本轮实测",
      "limitations_zh": "仅核对页数与体量，不核对页面内容"
     },
@@ -97,9 +97,9 @@
      "method_en": "Resample each drawing to the reviewing channel's receiving resolution (short edge reduced to 768 px), compute the resulting size and legibility verdict for every text element, and tally the share of illegible text; key-areas additionally measured by raster ink height",
      "tool": "readability.js（DOM 实测）+ key-areas 栅格墨迹高度实测",
      "date": "2026-08-13",
-     "scope_zh": "site-overview、land-use-structure、key-areas、mobility-bluegreen、metrics-evidence 五图的中英双版共十张",
+     "scope_zh": "site-overview、land-use-structure、key-areas、mobility-bluegreen、metrics-evidence 五图的中英双版共十张；另附 scene-dual-state、scene-interface-yard、scene-corridor-aerial 三题材场景概念图的中英双版共六张（v5.17 起纳入）",
      "scope_en": "Ten files in total: the zh and en versions of site-overview, land-use-structure, key-areas, mobility-bluegreen, and metrics-evidence",
-     "result_zh": "十张图不可读文本占比全部为 0%，最小字号 12.1—12.3 px（接收分辨率口径），经三轮重排后达成",
+     "result_zh": "十张图不可读文本占比全部为 0%，最小字号 12.1—12.3 px（接收分辨率口径），经三轮重排后达成；六张场景概念图的标注层文字按 CSS 字号 × 接收缩放比逐元素核算全部 ≥12 px（v5.17 将页眉、页脚与地标标签由 9—11 px 统一提升后达成），画面内 AI 生成的背景纹理不含文字",
      "result_en": "Illegible-text share is 0% on all ten files, with a minimum of 12.1-12.3 px at receiving resolution, reached after three rounds of re-layout",
      "provenance": "2026-08-13 三轮重排完成时的量测；本轮以文件清单复核十张图双语成对齐备，未重跑可读性量测",
      "limitations_zh": "以重采样后的字号阈值判定可读，不等于真实读者在具体显示设备与观看距离下的可读；未做读者阅读测试"
@@ -150,8 +150,8 @@
      "date": "2026-08-13",
      "scope_zh": "proposal.md 与 proposal.en.md 全文",
      "scope_en": "The full text of proposal.md and proposal.en.md",
-     "result_zh": "非空行 495 行对 495 行，结构类型逐行不一致数为 0",
-     "result_en": "495 non-blank lines on each side, with zero line-by-line type mismatches",
+     "result_zh": "非空行 530 行对 530 行，结构类型逐行不一致数为 0",
+     "result_en": "530 non-blank lines on each side, with zero line-by-line type mismatches",
      "provenance": "本轮实测",
      "limitations_zh": "结构级比对，不判断译文是否准确、是否遗漏语义"
     },
@@ -180,8 +180,8 @@
      "date": "2026-08-13",
      "scope_zh": "proposal.md 与 proposal.en.md 全文",
      "scope_en": "The full text of proposal.md and proposal.en.md",
-     "result_zh": "表格行 229 对 229（含分隔行），数据行 163 对 163，逐行列数全等，列数不一致索引为空集（2026-08-14 按当前版本复测；首测时为 221/221 与 189/189）",
-     "result_en": "Table rows 229 vs 229 (separators included), data rows 163 vs 163, per-row column counts equal, mismatch index set empty (re-measured 2026-08-14 against the current version; first measured at 221/221 and 189/189)",
+     "result_zh": "表格行 260 对 260（含分隔行），数据行 188 对 188，逐行列数全等，列数不一致索引为空集（2026-08-14 按当前版本复测；首测时为 221/221 与 189/189）",
+     "result_en": "Table rows 260 vs 260 (separators included), data rows 188 vs 188, per-row column counts equal, mismatch index set empty (re-measured 2026-08-14 against the current version; first measured at 221/221 and 189/189)",
      "provenance": "本轮实测",
      "limitations_zh": "比对的是表格骨架，不比对单元格内容的译文对应"
     },
@@ -195,8 +195,8 @@
      "date": "2026-08-13",
      "scope_zh": "proposal.md 与 proposal.en.md 全文",
      "scope_en": "The full text of proposal.md and proposal.en.md",
-     "result_zh": "实际出现四类：metric 64 对 64、data 42 对 42、source 68 对 68、standard 12 对 12，合计 186 对 186，四类全部持平",
-     "result_en": "Four kinds are present: metric 64/64, data 42/42, source 68/68, standard 12/12, totalling 186/186, all balanced",
+     "result_zh": "实际出现四类：metric 64 对 64、data 46 对 46、source 70 对 70、standard 12 对 12，合计 192 对 192，四类全部持平",
+     "result_en": "Four kinds are present: metric 64/64, data 46/46, source 70/70, standard 12/12, totalling 192/192, all balanced",
      "provenance": "本轮实测（本记录文件的挂接句在双方各新增一个 data 锚点，改动后仍为双侧持平）",
      "limitations_zh": "计数持平只说明锚点未在翻译中丢失，不说明每个锚点指向的证据本身成立"
     },
@@ -274,7 +274,7 @@
     "Structural equivalence does not guarantee semantic equivalence: two versions can align structurally while individual wordings differ in the strength of their claim, a layer not tested here."
    ],
    "remeasured_on": "2026-08-14",
-   "remeasured_note_zh": "正文行数随后续修订变化后按当前版本复测:701/701 行、495/495 非空、230/230 表格行、锚点 186/186,逐行结构不一致 0"
+   "remeasured_note_zh": "正文行数随后续修订变化后按当前版本复测:744/744 行、530/530 非空、260/260 表格行、锚点 192/192,逐行结构不一致 0"
   },
   {
    "id": "R3",
@@ -402,8 +402,8 @@
      "date": "2026-08-13",
      "scope_zh": "双语展示页第 16 章交互场景及全页图版",
      "scope_en": "Chapter 16 interactive scene and all page drawings, both language versions",
-     "result_zh": "禁用脚本后，交互控件条、舞台与节点导轨三块按 noscript 内的样式规则全部隐藏；noscript 降级文本呈现（中文「此处为交互场景。当前浏览器未启用脚本，下图为静态后备视图。」，英文为对应表述）；静态后备图实际渲染，中文版 1384 × 525 像素，英文版 1384 × 517 像素，且带非空 alt。图例与口径说明两块保持可见，读者仍可获得线型、形状与边界含义。全页六张章节图版与首屏后备图在无脚本条件下均正常呈现。",
-     "result_en": "With scripting disabled, the control bar, stage, and node rail are all hidden by the rules inside noscript; the noscript fallback text renders (\"This is an interactive scene. Scripting is disabled in this browser, so the static fallback view is shown below.\", with the matching Chinese wording); the static fallback image actually renders at 1384 x 525 px (zh) and 1384 x 517 px (en) with non-empty alt. The legend and the caveat note stay visible, so line types, shapes, and boundary meanings remain available. All six chapter drawings and the first-screen fallback image render normally without scripting.",
+     "result_zh": "禁用脚本后，交互控件条、舞台与节点导轨三块按 noscript 内的样式规则全部隐藏；noscript 降级文本呈现（中文「此处为交互场景。当前浏览器未启用脚本，下图为静态后备视图。」，英文为对应表述）；静态后备图实际渲染，中文版 1384 × 525 像素，英文版 1384 × 517 像素，且带非空 alt。图例与口径说明两块保持可见，读者仍可获得线型、形状与边界含义。全页九张章节图版与首屏后备图在无脚本条件下均正常呈现。",
+     "result_en": "With scripting disabled, the control bar, stage, and node rail are all hidden by the rules inside noscript; the noscript fallback text renders (\"This is an interactive scene. Scripting is disabled in this browser, so the static fallback view is shown below.\", with the matching Chinese wording); the static fallback image actually renders at 1384 x 525 px (zh) and 1384 x 517 px (en) with non-empty alt. The legend and the caveat note stay visible, so line types, shapes, and boundary meanings remain available. All nine chapter drawings and the first-screen fallback image render normally without scripting.",
      "evidence_zh": "本次走查对无脚本状态下的交互场景区做了元素截图留存，用于人工复看",
      "limitations_zh": "禁用脚本的降级已验证；未验证脚本加载失败但未被禁用（如资源加载中断）时的中间态表现"
     },
@@ -507,8 +507,8 @@
      "date": "2026-08-13",
      "scope_zh": "双语展示页全页",
      "scope_en": "Both language versions, whole page",
-     "result_zh": "双语计数全等：h1 各 1 个、h2 各 16 个、h3 各 3 个，层级无跳级；地标 nav 1、main 1、footer 1，首屏概览段落设 aria-label；状态播报区 1 个，role=\"status\" 且 aria-live=\"polite\"，以视觉隐藏但屏幕阅读器可读的方式实现；按钮 15 个，其中 14 个带 aria-pressed 状态；AI 开关外层设 role=\"group\" 并有可访问名；画布设 role=\"img\" 并随 AI 开关改写 aria-label。跳转链接目标存在。全部 9 个图像均带 alt，aria-label 各 5 处，双语数量一致。",
-     "result_en": "Counts are identical in both languages: 1 h1, 16 h2, 3 h3, with no skipped levels; landmarks are 1 nav, 1 main, 1 footer, with the first-screen overview section carrying an aria-label; one live region with role=\"status\" and aria-live=\"polite\", implemented as visually hidden but screen-reader readable; 15 buttons, 14 of them carrying aria-pressed; the AI switch wrapper has role=\"group\" with an accessible name; the canvas has role=\"img\" with an aria-label rewritten as the AI switch changes. The skip-link target exists. All 9 images carry alt, and there are 5 aria-labels per version, equal across languages.",
+     "result_zh": "双语计数全等：h1 各 1 个、h2 各 16 个、h3 各 3 个，层级无跳级；地标 nav 1、main 1、footer 1，首屏概览段落设 aria-label；状态播报区 1 个，role=\"status\" 且 aria-live=\"polite\"，以视觉隐藏但屏幕阅读器可读的方式实现；按钮 15 个，其中 14 个带 aria-pressed 状态；AI 开关外层设 role=\"group\" 并有可访问名；画布设 role=\"img\" 并随 AI 开关改写 aria-label。跳转链接目标存在。全部 12 个图像（noscript 外）均带 alt，aria-label 各 5 处，双语数量一致。",
+     "result_en": "Counts are identical in both languages: 1 h1, 16 h2, 3 h3, with no skipped levels; landmarks are 1 nav, 1 main, 1 footer, with the first-screen overview section carrying an aria-label; one live region with role=\"status\" and aria-live=\"polite\", implemented as visually hidden but screen-reader readable; 15 buttons, 14 of them carrying aria-pressed; the AI switch wrapper has role=\"group\" with an accessible name; the canvas has role=\"img\" with an aria-label rewritten as the AI switch changes. The skip-link target exists. All 12 images (outside noscript) carry alt, and there are 5 aria-labels per version, equal across languages.",
      "limitations_zh": "结构与名称的机器核对，未验证屏幕阅读器实际朗读时的地标跳转体验"
     }
    ],

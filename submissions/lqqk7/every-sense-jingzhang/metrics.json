@@ -170,12 +170,12 @@
     },
     "scenario_card_count": {
       "status": "known",
-      "value": 12,
+      "value": 16,
       "unit": "count",
       "source_files": ["proposal.md", "geometry/constraints.geojson"],
-      "formula": "count(distinct scenario cards S01-S12 in the proposal scenario table); S01-S10 are additionally cross-checked against count(distinct scenario_card_id on SCENARIO_NODE features), while S11 and S12 declare no scenario node of their own",
+      "formula": "count(distinct scenario cards S01-S16 in the proposal scenario table); S01-S10 are additionally cross-checked against count(distinct scenario_card_id on SCENARIO_NODE features), while S11 and S12 declare no scenario node of their own",
       "confidence": "high",
-      "assumptions": ["The count describes declared design scenarios inside this package, not approved pilots, deployed services, or completed user research.", "S11 and S12 reuse existing scenario nodes (S11 on OP-09 and OP-10, S12 on OP-03 and OP-07) and add no spatial facility, so scenario_card_count and op_node_count are deliberately no longer equal."],
+      "assumptions": ["The count describes declared design scenarios inside this package, not approved pilots, deployed services, or completed user research.", "S11-S16 reuse existing scenario nodes (S11 on OP-09 and OP-10, S12 on OP-03 and OP-07, S13 on OP-03 and OP-06, S14 on OP-02 and OP-07, S15 on OP-05, S16 on OP-08) and add no spatial facility, so scenario_card_count and op_node_count are deliberately no longer equal."],
       "calculation_metadata": {
         "method_source": "PACKAGE-STRUCTURED-EVIDENCE-INDEX",
         "verified_on": "2026-08-11",

@@ -23,11 +23,11 @@
    "files": {
     "zh": {
      "path": "assets/figures/scene-dual-state.webp",
-     "sha256": "343d6c7cbaf6be3376327a51ac1393309fd597207e5b92d5f37c9139592ab101"
+     "sha256": "52b249f32f331f1f28269922512c3034e16ddaf4cb220dcfe3425631b4c0f987"
     },
     "en": {
      "path": "assets/figures/scene-dual-state.en.webp",
-     "sha256": "d6361d7575d73cd8a5a9e39cbfbfa3be02bbae154e3b9bb7909cf947f8fb3ec8"
+     "sha256": "788a53ab616b0a4daee552b8720db76897295c6b0baa7e47a34cfdab5a0d66c5"
     }
    }
   },
@@ -40,11 +40,11 @@
    "files": {
     "zh": {
      "path": "assets/figures/scene-interface-yard.webp",
-     "sha256": "bb402c82480482c7a91aeb1e05a8d0ea1792c1c8fec0e541c38f9cbc8928826c"
+     "sha256": "26da5b1616b96d212809ff43a9ea308b2af599590e1368c932925a71a6359255"
     },
     "en": {
      "path": "assets/figures/scene-interface-yard.en.webp",
-     "sha256": "cacf019a84f4fd2ec85d8f302dac39b5ce02604ee419d88f6be7645c7d2963ae"
+     "sha256": "f21f4169a351c36af54019beba0325c2d57239f2f54f3a83172ea00205d7a774"
     }
    }
   },
@@ -58,11 +58,11 @@
    "files": {
     "zh": {
      "path": "assets/figures/scene-corridor-aerial.webp",
-     "sha256": "9db04a184b8cfa555644caec5033876cb9b633cb86355ab0b687f390fc0a51ff"
+     "sha256": "f4600e56e6978ed0b2a13e951b56d20d7b58bc51681da95d9929d34954ec0679"
     },
     "en": {
      "path": "assets/figures/scene-corridor-aerial.en.webp",
-     "sha256": "c7eff7c450b08e65ec7e2deacf77a646a234415ef3dfac8140b38d2fd9d23298"
+     "sha256": "e7da962be9870cbf8f43e14714398b0fcc53a1a212036eaaacb8e5f4117e1aa5"
     }
    }
   }
@@ -76,5 +76,65 @@
   "terms_snapshot_source_id": "MINIMAX-PLATFORM-TOS-20260814"
  },
  "rights_source_id": "OPENAI-TERMS-OF-USE-20260814",
- "limitations_zh": "生成服务本身不提供逐次调用的第三方签名回执；本档案登记的是方案方可提供的全部输入与输出证据（提示词、工具链、哈希、条款快照），不构成平台出具的交易凭证。"
+ "limitations_zh": "生成服务本身不提供逐次调用的第三方签名回执；本档案登记的是方案方可提供的全部输入与输出证据（提示词、工具链、哈希、条款快照），不构成平台出具的交易凭证。",
+ "landmark_coordinate_table": {
+  "note_zh": "S3 图上地标标签的方位与距离依据下表 WGS84 坐标推算;视点 39.992N 116.337E(五道口段上空),镜头朝向约 167°。大钟寺条目指古钟博物馆古建本体(图中所绘对象),非本包大钟寺重点区临时多边形;按包内 geometry/key_areas.geojson 复算,大钟寺重点区质心距视点约 5.2 km、众智园重点区位于视点北侧(镜头后方,不在画面内),图内说明框与本表口径一致。",
+  "viewpoint": {
+   "lat": 39.992,
+   "lon": 116.337,
+   "heading_deg": 167
+  },
+  "landmarks": [
+   {
+    "label_zh": "中国尊 · 国贸三期",
+    "lat": 39.9085,
+    "lon": 116.4575,
+    "bearing_deg": 132,
+    "distance_km": 13.9,
+    "printed": "东南约 14 km"
+   },
+   {
+    "label_zh": "中央电视塔",
+    "lat": 39.9124,
+    "lon": 116.2953,
+    "bearing_deg": 202,
+    "distance_km": 9.5,
+    "printed": "西南约 9.5 km"
+   },
+   {
+    "label_zh": "北京北站 · 西直门",
+    "lat": 39.9447,
+    "lon": 116.3536,
+    "bearing_deg": 165,
+    "distance_km": 5.4,
+    "printed": "约 5.4 km"
+   },
+   {
+    "label_zh": "大钟寺(古钟博物馆古建本体)",
+    "lat": 39.9668,
+    "lon": 116.3374,
+    "bearing_deg": 179,
+    "distance_km": 2.8,
+    "printed": "约 2.8 km"
+   },
+   {
+    "label_zh": "中关村塔群",
+    "lat": 39.98,
+    "lon": 116.318,
+    "bearing_deg": 231,
+    "distance_km": 2.1,
+    "printed": "约 2.1 km"
+   },
+   {
+    "label_zh": "清华园车站旧址",
+    "lat": 39.9997,
+    "lon": 116.332,
+    "bearing_deg": 334,
+    "distance_km": 1.0,
+    "printed": "(近景,无距离标)"
+   }
+  ]
+ },
+ "placement_note_zh": "六件场景概念图的落位为 proposal 双语图引与离线展示页双语图版;有意不进入 A0 展板与 A3 图册,以保持四册图纸全部由包内数据与几何生成的血统单一性。该取舍在此登记。",
+ "post_processing_note_zh": "v5.17 起标注层全部文字提升至 CSS 12–17 像素;成图短边缩放至 768 像素接收口径时逐元素核算均 ≥12 像素,与五张核心图同一底线。"
 }
