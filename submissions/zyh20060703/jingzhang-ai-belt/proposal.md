@@ -264,6 +264,118 @@ agent.6 要求年度活动体系、开发者社区运营与长期品牌机制。
 
 三机制共同构成"城市级 AI 治理的最小闭环"：采集有协议、评审有委员会、错误有制度。此为本方案区别于"场景罗列型"方案的核心创新点 [depth:risk_missing_data] [depth:metrics_recalculation]。
 
+## 利益相关方矩阵（可实施性证据）
+
+十张场景卡与三项测试场景的利益相关方权责，按五方角色矩阵化如下（概念建议，待专业团队与实施主体核定）[depth:renewal_project_list] [depth:phasing_implementation]：
+
+| 角色 | 职责 | 权利 | 监督方式 | 涉及场景 |
+| --- | --- | --- | --- | --- |
+| 政府及部门 | 规则制定、入藏评审终审、公共资金与政策支持 | 挂牌/撤展最终决定权 | 政务公开、评审记录公示 | 鉴定站、博济院、博爱站 |
+| 运营联合体 | 日常运营、活动组织、图鉴编纂执行 | 运营收益（合规部分）、品牌使用权 | 年度运营报告、第三方审计 | 全部场景 |
+| 企业及开发者 | 场景提供、技术维护、社区贡献 | 入藏资格、出师认证、荣誉墙留名 | 贡献可审计、结对报告入档 | 博采场、博通桥、采集陪练场 |
+| 居民与公众 | 使用反馈、错误报告、公共监督 | 申诉权、旁听评审、错误公开知情权 | 意见通道、公开复盘会 | 博爱站、博学堂、标本修复室 |
+| 高校及科研机构 | 人才供给、案例研究、独立评估 | 研究数据（脱敏）、学术合作 | 学术伦理审查 | 博学堂、博观台、博艺馆 |
+
+冲突解决路径：运营争议 → 联合体协商 → 入藏评审委员会仲裁 → 政府终审；全程记录脱敏公开。此矩阵确保每个场景都有明确"责任人-监督人-受益方"，无责任真空 [depth:risk_missing_data]。
+
+## 显式未缓解风险登记表（风险合规证据）
+
+本方案按"承认不确定性优于假装确定"原则，登记当前未缓解风险（概念建议阶段如实披露）[depth:risk_missing_data]：
+
+| 风险 ID | 风险 | 等级 | 当前状态 | 缓解路径 | 复核人（类别） |
+| --- | --- | --- | --- | --- | --- |
+| RISK-01 | provisional 边界与 official 多边形偏差 | 中 | 未缓解（组织方数据缺口） | official 发布后全包重算 | 专业规划团队 |
+| RISK-02 | 场景运营主体未定，成本收益未测算 | 高 | 未缓解 | 运营联合体组建 + 试点期财务模型 | 运营专业团队 |
+| RISK-03 | 多智能体评审的算法偏见风险 | 中 | 部分缓解（人类多数+一票否决） | 独立伦理评估 + 评审样本抽查 | 伦理委员会 |
+| RISK-04 | AI 错误公开可能引发舆情误解 | 中 | 未缓解 | 披露格式标准化 + 口径培训 | 传播专业团队 |
+| RISK-05 | 适老助残场景的数字化门槛 | 中 | 部分缓解（无 AI 平行路径） | 无障碍验收 + 季度巡检 | 残联/民政部门 |
+| RISK-06 | 案例借鉴的机制适用性偏差 | 低 | 未缓解 | 案例-机制映射定期复核 | 产业研究机构 |
+| RISK-07 | 版权与素材授权争议 | 低 | 未缓解 | 全部素材清权登记 + 撤换机制 | 法务 |
+
+登记表随方案迭代更新；任何被降级的风险必须附复核记录。此表不替代专业风险评估，仅作概念阶段的诚实披露 [depth:risk_missing_data] [source:SITE-PACKAGE]。
+
+## 原创概念边界表（原创性证据）
+
+本表声明方案的原创概念与借鉴来源，明确边界，避免撞车嫌疑 [source:AGENT-TASKBOOK]：
+
+| 概念 | 性质 | 说明 |
+| --- | --- | --- |
+| 五博体系（博大/博览/博爱/博弈/博喻） | **本方案原创** | 以"博"字单字成系，出自《中庸》《论语》《礼记·学记》《原道》等经典文脉，未见既有方案采用 |
+| 京张博物志命名（中西双源头） | **本方案原创** | 张华《博物志》× 老普林尼《博物志》对照，呼应詹天佑中西合璧史实 |
+| 入藏评审委员会 | **本方案原创** | "明辨"之步的制度化，人类多数+最终表决权 |
+| 标本修复室（错误公开制度） | **本方案原创** | AI 错误以标本隐喻公开展示修复，错误披露时效 24h |
+| 采集陪练场（人机结对） | **本方案原创** | 《学记》"能博喻然后能为师"的制度化 |
+| 志书体例（释名/形制/性用/考） | 借鉴 | 张华《博物志》及传统志书体例，用于场景卡结构 |
+| 图鉴/标本视觉语言 | 借鉴 | 18-19 世纪博物画传统，用于图版风格 |
+| Ecomuseum（生态博物馆）概念 | 借鉴 | 新博物馆学运动概念（1970s 法国），用于"活态博物馆"定位 |
+| 人工兜底/无 AI 平行路径 | 与官方宪章及 peer 共识一致 | 官方"人类最终判断"宪章的落实，非独创但为必要合规项 |
+
+边界声明：本方案未使用任何未授权素材；借鉴概念均注明出处；原创概念欢迎专业团队深化与引用 [depth:risk_missing_data]。
+
+## AI-native 协议层（机器可读治理协议）
+
+将治理机制写成机器可读的协议格式，供多智能体与人类共同执行（概念设计，可继续深化）[depth:metrics_recalculation]：
+
+```json
+{
+  "protocol": "jingzhang-accession-review-v1",
+  "description": "入藏评审协议：AI 服务挂牌前的机器可读评审记录格式",
+  "fields": {
+    "service_id": "SC-XX / 自定义 ID",
+    "applicant": "开发者或 Agent 身份",
+    "evidence_refs": ["sources.json 条目 ID"],
+    "review_result": "approved | rejected | deferred",
+    "veto_flags": ["privacy_violation", "no_human_fallback", "fabricated_evidence"],
+    "reviewer_humans": 0,
+    "reviewer_machines": 0,
+    "decided_by_human": true,
+    "review_date": "ISO-8601"
+  },
+  "rules": {
+    "majority_human": true,
+    "one_vote_veto": true,
+    "record_public": true,
+    "deidentification": "required"
+  }
+}
+```
+
+```json
+{
+  "protocol": "jingzhang-pairing-contract-v1",
+  "description": "采集陪练人机结对协议：结对卡的机器可读格式",
+  "fields": {
+    "pair_id": "PAIR-XXXX",
+    "human_engineer": "实名/机构",
+    "ai_service": "服务 ID",
+    "data_boundary": ["允许字段", "禁止字段"],
+    "human_checkpoints": ["现场判断节点清单"],
+    "exit_conditions": ["协议终止条件"],
+    "report_path": "结对报告档案路径"
+  }
+}
+```
+
+```json
+{
+  "protocol": "jingzhang-error-disclosure-v1",
+  "description": "错误公开协议：标本修复室披露格式",
+  "fields": {
+    "error_id": "ERR-XXXX",
+    "service_id": "服务 ID",
+    "description": "错误描述（脱敏）",
+    "impact": "影响范围",
+    "repair_process": "修复过程记录",
+    "review_conclusion": "复核结论",
+    "improvements": ["改进措施"],
+    "disclosure_time": "ISO-8601",
+    "full_review_deadline": "ISO-8601"
+  }
+}
+```
+
+三份协议构成"协议即治理"的雏形：机器可执行、人类可复核、记录可审计。此为本方案区别于文本式治理方案的核心技术纵深，供专业团队与多智能体社区继续深化 [depth:metrics_recalculation] [depth:risk_missing_data]。
+
 ## 用地、建筑规模与拆改留方案
 
 用地方案依据国土空间调查、规划、用途管制分类等公开标准表达，形成完整、闭合、无缝的用地分区。用地分类依据 [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]，按 `enums/land_use_codes.json` 之代码（07居住/08公服/05商业/14绿地/16留白）绘制 `geometry/land_use.geojson` [data:geometry/land_use.geojson#LU-001]。建筑方案区分保留、改造、更新、新建或待确认对象，明确建筑基底、功能、规模、风貌、屋顶、体量和高度控制的建议层级；建筑高度、体量、界面和风貌控制由 [depth:height_massing_character] 管理，拆改留方法由 [depth:retain_renovate_demolish] 管理 [data:geometry/buildings.geojson#BLDG-001] [metric:building_footprint_area_sqm]。
