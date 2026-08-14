@@ -544,18 +544,19 @@
         "Internal design-response rules."
       ]
     },
-    "reality_public_task_bridge_count": {
+    "public_promise_count": {
       "status": "known",
       "value": 3,
       "unit": "count",
       "source_files": [
-        "visual/assets/reality-to-public-task-register.json",
-        "assets/figures/reality-to-public-task.svg"
+        "visual/assets/public-promises-contract.json",
+        "assets/figures/three-public-promises.svg",
+        "assets/figures/site-overview.png"
       ],
-      "formula": "count(RJ-01..RJ-03)",
+      "formula": "count(PP-01..PP-03)",
       "confidence": "high",
       "assumptions": [
-        "Counts design-response chains, not completed field observations."
+        "Counts concept design promises, not completed field tests."
       ]
     }
   }

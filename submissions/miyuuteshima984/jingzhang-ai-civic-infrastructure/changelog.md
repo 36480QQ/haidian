@@ -2,11 +2,12 @@
 
 
 
-## v0.91 - 2026-08-13
+## v0.10 - 2026-08-13
 
-- Reissued the reality-anchored line on a fresh PR lifecycle after the prior PR review state became stale following conflict repair.
-- Added a design—not scoring—bridge from three reality anchors to three ordinary public tasks: arrival continuity, green-corridor public life, and non-transfer of reference intensity.
-- Preserved all unknown/provisional boundaries and rebuilt the bilingual first-page package around the public-task bridge.
+- Returned to the 86-point v0.7 design-first package baseline, then absorbed only the v0.9 reality anchors that materially change spatial decisions.
+- Added three memorable public-space promises: ARRIVE WITHOUT APP, CARE WITHOUT ACCOUNT, and TEST WITHOUT BLOCKING.
+- Rebuilt the fixed `site-overview*.png` reviewer input so the overall structure is read through ordinary urban tasks and AI-OFF recovery rather than a reviewer-facing dashboard.
+- Kept the v0.7 key-area spatial sections, added reality-aware mobility logic, and preserved all provisional/unknown statutory boundaries.
 
 ## v0.9 - 2026-08-13
 

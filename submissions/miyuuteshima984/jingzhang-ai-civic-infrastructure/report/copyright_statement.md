@@ -111,6 +111,6 @@ Any future third-party image, font, code library, map layer, institutional logo 
 - `reference-plot-conditions.json` 只转录政府公开原件中的数值字段并明确不可外推；官方网页/原件链接保留在 `sources.json`。
 
 
-## v0.91 新增资产 / New assets
+## v0.10 新增资产 / New assets
 
-- `reality-to-public-task*.svg` and `visual/assets/reality-to-public-task-register.json`: submission-authored v0.91 design synthesis; no third-party visual asset embedded.
+- `three-public-promises*.svg`, rebuilt `site-overview*.png`, and `visual/assets/public-promises-contract.json`: submission-authored v0.10 design synthesis; no third-party visual asset embedded.

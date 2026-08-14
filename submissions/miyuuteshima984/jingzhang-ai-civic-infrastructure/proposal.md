@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以城市完整度作为百年京张AI创新带的空间审查方法：居、学、护、行、绿、工、交七项普通城市能力先形成长期可用的日常底盘，AI作为可选增强层进入科研、社区、交通和商业。总体形成一条公共绿脊、六段完整度片区、六条东西缝合联系与三处重点区；爽粉堡垒仅作为AI原点社区中的社区命名彩蛋。"
 tracks: ["ai-origin-community", "ai-public-services", "ai-traffic-walkability"]
 scenarios: ["ai-traffic-walkability", "robot-delivery-low-speed", "enterprise-service-copilot", "ai-cultural-guide", "ai-health-service-navigation"]
-iteration: "v0.91"
+iteration: "v0.10"
 ---
 
 # 京张城市完整度 / JING-ZHANG CITY COMPLETENESS
@@ -139,9 +139,9 @@ AI 对城市形态的影响被压缩为六类可逆空间原型：测试口袋�
 ![AI 如何改变城市形态：六类可逆物理接口](assets/figures/ai-urban-form-change.svg)
 
 <!-- V09-REALITY-START -->
-### v0.91｜REALITY-ANCHORED：只有能改变空间判断的资料才进入主叙事
+### v0.10｜DESIGN-FIRST + REALITY：现实资料只在改变空间时出现
 
-v0.91 延续 v0.9 的 **reality-anchored** 设计线，并把现实约束进一步接回普通人的城市任务；它不把来源数量当成设计质量。它把“来源更多”改成更窄的规则：**一条现实资料只有在改变断面、界面、节点或 unknown 的表达方式时，才进入设计主叙事。** 本轮登记 3 组官方公开现实锚点，并形成 5 条可检查的设计响应。[metric:official_constraint_anchor_count] [metric:design_response_rule_count]
+v0.10 以获得 86 分的 v0.7 **design-first** 结构为底座，只吸收会改变空间判断的现实锚点；主叙事仍从人的日常任务开始，而不是从证据目录或评分结构开始。它把“来源更多”改成更窄的规则：**一条现实资料只有在改变断面、界面、节点或 unknown 的表达方式时，才进入设计主叙事。** 本轮登记 3 组官方公开现实锚点，并形成 5 条可检查的设计响应。[metric:official_constraint_anchor_count] [metric:design_response_rule_count]
 
 ![现实约束如何改变空间设计，而不是变成参考文献堆](assets/figures/reality-constraint-design-response.svg)
 
@@ -154,13 +154,15 @@ v0.91 延续 v0.9 的 **reality-anchored** 设计线，并把现实约束进一�
 五条设计响应完整记录于 `visual/assets/reality-constraint-register.json`。本轮固定 `mobility-bluegreen.png` 重建为不同类型的现实接口：普通缝合、下穿节点竖向连续性、绿廊人优先界面、站城到达与 official-data 重算触发器，不再用同一种蓝色虚线代表所有问题。
 <!-- V09-REALITY-END -->
 
-<!-- V091-PUBLIC-TASK-START -->
-### v0.91｜把现实约束接回普通人的城市任务
+<!-- V010-PROMISES-START -->
+### v0.10｜三条公共城市承诺：评委先看到城市怎么被人使用
 
-这一小步不增加“评审索引”。它只检查三件事：**到达能不能在 AI 失效时继续、绿廊是不是先服务步行与停留、现实强度参照有没有被误写成本案控制值。** 三条链记录于 `visual/assets/reality-to-public-task-register.json`；每条都同时写出普通任务、空间响应、可选 AI 和不可越界的事实边界。[metric:reality_public_task_bridge_count]
+v0.10 不把 v0.7 的设计优先路线改回“证据仪表盘”。它把三处重点区压缩成三个任何人都能追问的空间承诺：**ARRIVE WITHOUT APP、CARE WITHOUT ACCOUNT、TEST WITHOUT BLOCKING**。每条承诺都必须有普通城市底座、明确空间动作、可选 AI、失败恢复和现实约束；任一项缺失，就不算完整。[metric:public_promise_count]
 
-![现实约束必须回到公共任务](assets/figures/reality-to-public-task.svg)
-<!-- V091-PUBLIC-TASK-END -->
+![三条公共城市承诺](assets/figures/three-public-promises.svg)
+
+机器可读合同见 `visual/assets/public-promises-contract.json`。它不是现场达标证明，也不把公开地块强度、控规草案或绿廊个案升级成本案审批条件；它只把这些现实资料放在真正会改变空间判断的位置。
+<!-- V010-PROMISES-END -->
 
 ## 用地、建筑规模与拆改留方案
 
