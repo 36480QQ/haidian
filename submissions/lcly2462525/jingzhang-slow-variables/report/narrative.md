@@ -1,3 +1,5 @@
-# Formal Narrative
+# 京张慢变量
 
-This narrative is derived from the structured AI package. Geometry, metrics, compliance matrix, drawings, and visual/index.html remain cross-checked deliverables.
+城市里同时走着两只钟。AI 按季度更新，树荫、土壤、无障碍、街区业态和儿童独立出行要用数年才显出变化。1909 年詹天佑用"人"字形线位让列车爬上关沟——速度要向坡度低头；今天 AI 进入同一条走廊，快的是模型，慢的是城市。本方案允许技术快速小试，只有通过 G1 数据安全、G2 现场人工复核、G3 公众异议处理、G4 慢变量不恶化四道放行门，才获得扩大资格。
+
+众智园负责把数字测准，AI 原点让异议停下来，大钟寺检查承诺有没有兑现。能复算的设计量全部给出，五类慢变量（SV-01 至 SV-05）保持"待一年基线"。完整判断、空间证据与数据边界见 `proposal.md`、GeoJSON、metrics、三份专业矩阵和双语图纸。
