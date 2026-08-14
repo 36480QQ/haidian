@@ -15,7 +15,7 @@
       "formula": "polygon_area(submitted_site_boundary)",
       "confidence": "high",
       "assumptions": [
-        "Trusted official boundary is present in the site package."
+        "The submitted site boundary is a provisional constraint and is used only for concept-stage recomputation; recalculate when official geometry is supplied."
       ]
     },
     "building_footprint_area_sqm": {

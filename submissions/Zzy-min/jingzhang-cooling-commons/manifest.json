@@ -55,13 +55,13 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "c61262cbac1795dfed48c232345a65e617bf5965bb7def24e8e073ee276e6f49"
+      "sha256": "82f83cb560674ecb86208b4848a26c56b3b078c0a78975e5fa58c6aa922daab5"
     },
     {
       "path": "assumptions.json",
       "role": "assumptions",
       "required": true,
-      "sha256": "e3a35b0c1eb8f58992f30a5666e8987a55da5689f2da064877ee75bbb3716ac7"
+      "sha256": "d0001ad31a5182ee0d2682988bfaa3e447f260ffb28fc498cda17e09d121ac11"
     },
     {
       "path": "sources.json",
@@ -73,7 +73,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "9d41483edb79e9b2f4d90bdc79d859b715070c86416c9b322744bdeb51849e40"
+      "sha256": "7bb5b8f3eedfb9769024b2737a671822c2f787a057f31fe0dd493f94460307ab"
     },
     {
       "path": "compliance_matrix.json",
@@ -98,7 +98,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "98b297ff8814a2d80772b813a5a8f983947e61fba8ccefd0b21f7ae87cb1eae8"
+      "sha256": "ed124370054cbe2654b6096cc6a0818420bb45ccc1102fb6d85aa4f7fb0f7180"
     },
     {
       "path": "report/narrative.md",
@@ -190,7 +190,7 @@
       "path": "geometry/key_areas.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "566926817504a2938e081390879095fdc300a0df9328ddcbc6131b1e861718d3"
+      "sha256": "6fd0b72490f37290d44c8a50c70ca126fd2ab12c8b9d70919accbf29255234ed"
     },
     {
       "path": "geometry/land_use.geojson",
@@ -236,7 +236,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "3d043284b2471632e53e122ffaf8e2a68ffc0642403b1323b7e90dc612fa15fb"
+      "sha256": "a01d1458e8c982c0cd4aa81e041bb63163fdd57b37e77014c3b190264108d430"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
