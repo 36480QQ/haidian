@@ -11,7 +11,7 @@ iteration: "v1.0"
 
 ## 设计依据与资料清单
 
-本方案基于以下公开和清权资料构建 [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [source:SRC-AGENT-TASKBOOK] [source:SRC-DESIGN-BRIEF] [source:SRC-PROJECT-ANNOUNCEMENT]：
+本方案基于以下公开和清权资料构建 [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [source:SRC-AGENT-TASKBOOK] [source:SRC-DESIGN-BRIEF] [source:SRC-PROJECT-ANNOUNCEMENT]：
 
 **官方公告与任务书：**
 - 百年京张AI创新带城市设计国际方案征集公告 [source:SRC-PROJECT-ANNOUNCEMENT]
@@ -576,6 +576,36 @@ iteration: "v1.0"
 | agent.4 公共空间与地标 | 本章「蓝绿空间、公共空间与城市风貌」 | 3朝圣地标、公共空间组件 |
 | agent.5 文化叙事 | 本章「统筹研究范围产业与未来城市研究」 | 三次开源叙事、导视方向 |
 | agent.6 活动与运营 | 本章「更新项目清单、实施政策与分期计划」 | 年度活动体系、社区运营 [metric:annual_events] |
+
+[depth:blue_green_public_space]
+
+[depth:development_intensity_controls]
+
+[depth:existing_conditions_diagnosis]
+
+[depth:height_massing_character]
+
+[depth:land_use_layout]
+
+[depth:metrics_recalculation]
+
+[depth:municipal_new_infrastructure]
+
+[depth:overall_spatial_structure]
+
+[depth:phasing_implementation]
+
+[depth:renewal_project_list]
+
+[depth:retain_renovate_demolish]
+
+[depth:risk_missing_data]
+
+[depth:three_key_area_detailed_design]
+
+[depth:three_level_scope_framework]
+
+[depth:traffic_rail_slow_parking]
 
 ## 风险、版权与合规说明
 

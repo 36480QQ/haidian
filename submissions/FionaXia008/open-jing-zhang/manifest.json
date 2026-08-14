@@ -1,6 +1,6 @@
 {
-  "schema_version": "0.1.0",
-  "package_id": "FionaXia008-open-jing-zhang",
+  "schema_version": "0.2.0",
+  "package_id": "fionaxia008-open-jing-zhang",
   "project_id": "centennial-jingzhang-ai-belt",
   "site_package_version": "0.1.0",
   "package_type": "professional_design_package",
@@ -23,7 +23,7 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "5731da98eb6d447cd0b7b4777dbf92c5155f1be2cc7d5a91fbc092019ab9334e"
+      "sha256": "ab53a3e49af6ad8844d7885405bc590733634364656207d375e6497f80a6cdf3"
     },
     {
       "path": "proposal.en.md",
@@ -65,13 +65,13 @@
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "ab4bbed33b583a65a9ca9917aaf100849927063502ac9c8cbb94e9f4e3b7fe8f"
+      "sha256": "d60b4b9d05bcb9215e7c3c51d4da48eb9f26553f618f57a8aa51547c2e6d1ca3"
     },
     {
       "path": "standard_matrix.json",
       "role": "standard_matrix",
       "required": true,
-      "sha256": "25cd1b7917b0c52edbce67c4a5a7f0c990394d7e5394ff1eeb9b8aadff7c3024"
+      "sha256": "1f60ef73ce0bd62303d6c9fefc648b3dd87375c65b37caf67ad7c95b2ed60c3d"
     },
     {
       "path": "design_depth_matrix.json",
@@ -195,6 +195,7 @@
     }
   ],
   "validation_claim": {
+    "readiness_contract": "persisted-self-check-v1",
     "self_checked": true,
     "known_blockers": [],
     "data_confidence": "medium"
