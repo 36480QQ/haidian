@@ -1,5 +1,13 @@
 # 方案迭代记录
 
+## v1.8 - 2026-08-14
+
+- 修正一处正文自相矛盾：§11 指标表原写「画像/地标/案例 6 类 / 4 处 / 7 例」，与 §6.1「七类用户画像」及 `metrics.json` 的 `user_persona_count=7` 冲突，且该格紧邻 `[metric:user_persona_count]` 引用。中英两版均已改为 7 类。这是 v1.6 把画像由六类扩为七类时漏改的一处，属证据链内部不一致，必须修。
+- 修复五条无法解析的证据引用（中英两版各五条，同一批）：`geometry/roads.geojson` 的四个引用写了不存在的要素编号（`RD-BSH`/`RD-CHENGFU`/`RD-HEQING`/`RD-ZHICHUN`），按图层实际编号改为 `RD-006`（北三环中路辅路段）/`RD-001`（成府路）/`RD-009`（荷清路）/`RD-003`（知春路）；`depth:building_scale_massing` 不在 `design_depth_matrix.json` 的 `item_id` 枚举内，改为实际存在的 `height_massing_character`。
+- 补齐此前完全空缺的「前提与边界／方案自检」证据层：正文新增 9 条 `[assumption:]` 与 11 条 `[self_check:]` 标记，分别指向 `assumptions.json` 的全部 9 条前提与 `self_check.json` 的全部 11 项自检，均挂在正文已在陈述该事实的位置（临时边界、边界东偏、跨区域协同不构成承诺、案例出处降级、清河湾道口与清华园车站两处范围外事实、能源未测算、OSM 精度、控规条件缺失，以及四门与包级自检结果）。此前该层为 0 条，正文声称的自检与前提无法从阅读端回读到结构化记录。
+- 结果：正文去重证据引用由 101 条增至 119 条，未解析由 5 条降为 0 条；最长连续标记 3，符合上限；中英两版标记序列逐项一致。
+- 未改动几何、指标数值、图纸、A3/A0、visual 展示页、许可声明或任何方案结论；未改动 `submissions-data.js`、`gallery-publication.json`，也未触碰其它投稿包。`report/proposal.html` 与 `proposal.en.html` 由 `scripts/render_proposal_html.py` 重新渲染；manifest 哈希与四门自检证据按官方脚本重跑，四门均 PASS，`review_status=formal-review-ready`。
+
 ## v1.7 - 2026-08-10
 
 - **五张图全部消除空白带**。此前逐图逐行扫描发现：`site-overview` 自身下半 30% 稀疏（行60–90% 仅 1.6/1.8/0.0%），而它是全包出现次数最多的一张图（正文§1、离线报告、展示页、A3 第三页、A0 第一板都用它）；另有四张图在行80–90% 存在同一条系统性裂口——那是内容底边与页脚注之间的固定间隙。本轮逐图重排后，**五张图近空行带全部清零**，平均墨迹 9.8% → 11.3%。
