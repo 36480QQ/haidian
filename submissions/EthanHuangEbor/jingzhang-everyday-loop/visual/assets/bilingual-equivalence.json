@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "review_status": "planned_until_final_render",
+  "review_status": "verified",
   "reviewer_type": "human_plus_agent",
   "board_pairs": [
     {
@@ -134,5 +134,22 @@
       "translation": "A3-EN-12"
     }
   ],
-  "disposition": "pending final visual inspection"
+  "disposition": "all fixed titles, counts, station/scenario IDs, legends, warnings and evidence boundaries match; deliberate layout differences are documented by shared semantic hierarchy",
+  "review_record": {
+    "method": "side-by-side human and machine-assisted comparison at original resolution",
+    "numbers_checked": [
+      "11.41 km²",
+      "9 stations",
+      "12 scenarios",
+      "3 key areas",
+      "1–9",
+      "1–12",
+      "A/B/C"
+    ],
+    "warnings_checked": [
+      "concept design",
+      "provisional boundaries not official redlines",
+      "official data pending"
+    ]
+  }
 }
