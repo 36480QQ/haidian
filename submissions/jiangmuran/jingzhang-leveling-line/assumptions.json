@@ -269,7 +269,7 @@
     {
       "id": "A-ORIGIN-001",
       "status": "chosen_by_this_proposal",
-      "statement": "FIG.25 的架站圈 ⌀ 2,400 mm 由三脚架张开 1,200 mm 与操作者外圈 600 mm 相加得出；两项取值均为本方案按一般水准仪作业估计，未取得仪器厂商规格或作业规程原文。",
+      "statement": "FIG.25 的架站圈 ⌀ 2,400 mm 由三脚架张开 1,200 mm 与操作者外圈 600 mm（= figures.PERSON_WIDTH_MM，与 FIG.28 的肩宽同一个量、同一处定义） 相加得出；两项取值均为本方案按一般水准仪作业估计，未取得仪器厂商规格或作业规程原文。",
       "impact": "架站圈决定原点场地的最小尺寸，以及它是否与无障碍通行净宽冲突。取小了，闭合作业实际会占用通行净宽——那正是本方案对设备的禁止事项。",
       "derivation_zh": "架站圈 = 三脚架张开 1,200 mm + 操作者外圈 600 mm × 2 = 2,400 mm。两个加数都是本方案按一般水准仪作业估计，**未取得任何仪器规格书或作业规程原文**。公式随图公布正是为此：换一组数，圈径与它对无障碍净宽的影响立即可重算。",
       "derivation_en": "Setup circle = 1,200 mm tripod spread + 600 mm operator ring × 2 = 2,400 mm. Both terms are this proposal's estimate for ordinary levelling work; **no instrument specification or working procedure was obtained**. The formula ships with the sheet for that reason — substitute your own figures and the circle, and its effect on the accessible width, recompute.",
@@ -338,7 +338,7 @@
     {
       "id": "A-READ-001",
       "status": "chosen_by_this_proposal",
-      "statement": "FIG.28 计算同时可读人数时，偏轴可读角取 30°、肩宽取 600 mm、单次读数取 40 秒，三项均由本方案自定；牌宽 600 mm 来自 FIG.16，视距 3.0 m 来自 FIG.27，通行净宽 1,500 mm 来自 FIG.24，这三项不是本图新定的。",
+      "statement": "FIG.28 计算同时可读人数时，偏轴可读角取 30°、肩宽取 600 mm（= figures.PERSON_WIDTH_MM，与 FIG.25 的操作者外圈同一个量、同一处定义）、单次读数取 40 秒，三项均由本方案自定；牌宽 600 mm 来自 FIG.16，视距 3.0 m 来自 FIG.27，通行净宽 1,500 mm 来自 FIG.24，这三项不是本图新定的。",
       "impact": "三项决定「同时可读 5 人」与「一班 30 人需 6 轮约 4 分钟」两个结论。偏轴角取大或肩宽取小，人数偏多，现场会出现读不清的人；反之人数偏少，轮次与时间被高估。",
       "derivation_zh": "可读锥宽 = 2 × 视距 × tan(偏轴角) = 2 × 3.0 × tan 30° = 3.46 m；同时可读人数 = 锥宽 ÷ 肩宽 = 3.46 ÷ 0.6 = 5 人。**三项自定：偏轴 30°、肩宽 600 mm、单次读数 40 秒。** 另外三项不是自定的——牌宽 600 mm 出自 FIG.16 的构造详图，视距 3.0 m 出自 FIG.27 用本包已发布比例算出的站位，通行净宽 1,500 mm 出自 FIG.24 并被后续各图共用。公式随图公布：换一组取值，人数与轮次立即可重算。",
       "derivation_en": "Legible cone = 2 × distance × tan(off-axis) = 2 × 3.0 × tan 30° = 3.46 m; readers abreast = cone ÷ shoulder = 3.46 ÷ 0.6 = 5. **Three values are chosen here: the 30° off-axis limit, the 600 mm shoulder and the 40 s reading.** Three are not: the 600 mm plate width comes from FIG.16's construction detail, the 3.0 m distance from FIG.27's use of a ratio this package already published, and the 1,500 mm clear width from FIG.24, shared by every sheet since. The formula ships with the drawing, so substituting your own figures recomputes both the count and the rounds.",
