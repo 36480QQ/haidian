@@ -197,6 +197,19 @@
       "why_en": "**This gate has caught more in this package than any other** — it has reported an English overrun on every sheet ever added. It had still never been shown to fail on demand, and \"it reports every time\" is not the same claim as \"it would report this\"."
     },
     {
+      "id": "M18",
+      "gate": "sources_qa.py",
+      "target": "fig_device.py",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "rendered": true,
+      "what_zh": "把 FIG.24 的场地速度改回 `regulation` 类，而不给出任何可解析的来源编号。",
+      "what_en": "Reclass FIG.24's site speed as fixed by regulation while citing no resolvable source id.",
+      "why_zh": "这正是 E90 记的那件事，而它在包里活了十张图：一个数被标成外部规定，规定却从未被指名，`A-DEVICE-002` 还据此加粗说 v「有出处」。**本包全部论证的底座是「无法核验的数字不构成证据」**——若同一处再被标成法规而闸门不响，这条底座就只适用于别人的数。",
+      "why_en": "This is what E90 records, and it lived here across ten sheets: a value labelled as fixed by an outside rule that was never named, with `A-DEVICE-002` saying in bold that v therefore had a source. **This package's entire argument rests on 「a number that cannot be verified is not evidence」** — if the same value can be relabelled a regulation with nothing objecting, that standard applies only to other people's numbers."
+    },
+    {
       "id": "M13",
       "gate": "accessibility_qa.py",
       "target": "fig_visit.py",
@@ -210,7 +223,7 @@
       "why_en": "This package checks its own drawings with the legible-height ratio and reports a 4.73 mm minimum, all passing. **FIG.27 has just pointed that same ratio at the plate** — which makes whether the ratio itself has ever been shown to fail a question that has to be answered."
     }
   ],
-  "caught": 17,
+  "caught": 18,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
