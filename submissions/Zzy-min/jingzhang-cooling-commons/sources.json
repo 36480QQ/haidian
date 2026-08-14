@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.1.0",
+  "sources": [
+    {
+      "id": "SITE-PACKAGE",
+      "path": "brief/site-package/",
+      "source_type": "official_public",
+      "usage": "Project brief, enums, allowed design space, ranges, and schemas."
+    },
+    {
+      "id": "SOURCE-REGISTRY",
+      "path": "data/source_registry.json",
+      "source_type": "repository_public_registry",
+      "usage": "Public/cleared/provisional source usability registry; distinguishes formal-ready, background-only, provisional-only, and needs-review materials."
+    },
+    {
+      "id": "PROCESSED-FACT-PACK",
+      "path": "data/processed/agent_fact_pack.md",
+      "source_type": "repository_processed_reference",
+      "usage": "Agent-readable navigation layer for scopes, required tasks, source-use boundaries, and missing-data checklist; not a new authority source."
+    },
+    {
+      "id": "BOUNDARY-SOURCE",
+      "path": "brief/site-package/geometry/provisional_boundaries.geojson",
+      "source_type": "agent_inferred_from_public_data",
+      "usage": "Submitted site boundary geometry source (provisional)."
+    },
+    {
+      "id": "KEY-AREA-SOURCE",
+      "path": "brief/site-package/geometry/provisional_boundaries.geojson",
+      "source_type": "agent_inferred_from_public_data",
+      "usage": "Three required detailed-design key area boundaries (provisional)."
+    },
+    {
+      "id": "OFFICIAL-ANNOUNCEMENT",
+      "url": "https://ghzrzyw.beijing.gov.cn/zhengwuxinxi/tzgg/hd/202605/t20260509_4643047.html",
+      "source_type": "official_public",
+      "usage": "Official announcement tasks, scope levels, key areas, language, and deliverable context."
+    },
+    {
+      "id": "AGENT-TASKBOOK",
+      "path": "brief/site-package/agent_taskbook.json",
+      "source_type": "user_provided_cleared",
+      "usage": "Agent-facing open-call principles, six required agent tasks, scenario/branding/operation requirements, and boundary clause."
+    },
+    {
+      "id": "BEIJING-MASTER-PLAN",
+      "title": "北京城市总体规划（2016年—2035年）",
+      "publisher": "北京市人民政府",
+      "url": "https://www.beijing.gov.cn/gongkai/guihua/wngh/csztgh/201907/t20190701_100008.html",
+      "published_date": "2017-09-29",
+      "accessed_date": "2026-08-14",
+      "source_type": "official_public",
+      "usage": "Background basis for connected greenways, ventilation corridors, blue networks, walking and cycling priority, and improved ecological-space quality.",
+      "license_summary": "Official public policy page cited by title, publisher, and URL; no reuse permission is inferred for page images or chrome.",
+      "limitations": "Citywide strategic policy, not a site-specific boundary, statutory parcel control, thermal-performance result, or implementation approval."
+    },
+    {
+      "id": "BEIJING-ECO-RESTORATION",
+      "title": "北京市国土空间生态修复规划",
+      "publisher": "北京市人民政府",
+      "url": "https://www.beijing.gov.cn/zhengce/gfxwj/sj/202206/W020220602627614477147.pdf",
+      "published_date": "2022-06-02",
+      "accessed_date": "2026-08-14",
+      "source_type": "official_public",
+      "usage": "Background basis for heat-island mitigation, shaded street networks, and connected ventilation, greenway, and blue-network systems.",
+      "license_summary": "Official public planning PDF cited by title, publisher, and URL; no reuse permission is inferred for embedded third-party imagery.",
+      "limitations": "Citywide planning source; it does not prove site-specific heat exposure, cooling performance, canopy coverage, or approved Jing-Zhang projects."
+    }
+  ]
+}
