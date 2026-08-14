@@ -57,7 +57,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "e6905af088f2e586bf112630b1667742492ca7a63c9aa6acbba398ef42841f5d"
+      "sha256": "197d7e4df1eb3c44186eb20677c29be40b16da3eb66d475dcbe11e5ef9bc0483"
     },
     {
       "path": "compliance_matrix.json",
@@ -94,7 +94,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "ca95570ee99f589443cd2750ec82a529f22c0743efab70ba901f52b1f0250ef3"
+      "sha256": "387b8550b235cfe58edac4e480870e32fb1f3668b593a5d79eacc29d17de0f8d"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -311,6 +311,42 @@
       "required": false,
       "language": "zh",
       "sha256": "4bb447e86f233577d644c0d2b1c3a5ed6ad547f32400ef16419101612152d8ab"
+    },
+    {
+      "path": "risk.json",
+      "role": "other",
+      "required": false,
+      "language": "zh",
+      "role_detail": "risk_register",
+      "sha256": "1bfe3c53ead5613839ff6854524e8fe032010def54498dddeadc314580800a67"
+    },
+    {
+      "path": "assets/media/experience.mp4",
+      "role": "video",
+      "required": false,
+      "language": "zh",
+      "title_zh": "京张·铭轨 概念短片",
+      "title_en": "Jing-Zhang Common Gauge concept clip",
+      "description_zh": "约6秒抽象概念动画，配双语字幕与转录。",
+      "description_en": "About 6 seconds abstract concept animation with bilingual captions and transcript.",
+      "poster": "assets/media/cover.webp",
+      "caption": "assets/media/experience.vtt",
+      "transcript": "assets/media/experience-video.md",
+      "sha256": "79a589e5221b0d047c249a8c3855a39cd6a6b9fa2451f9ea90e8778d8768d67f"
+    },
+    {
+      "path": "assets/media/experience.vtt",
+      "role": "caption_track",
+      "required": false,
+      "language": "zh",
+      "sha256": "083d59752180400e129f2bc140bc8e105e8537e1e7733217399191fac29fd12d"
+    },
+    {
+      "path": "assets/media/experience-video.md",
+      "role": "transcript",
+      "required": false,
+      "language": "zh",
+      "sha256": "c37cbcdd96bb8a17a955280f411f6247cc359781ff1f0bd8feb492d9022fb092"
     }
   ],
   "validation_claim": {
