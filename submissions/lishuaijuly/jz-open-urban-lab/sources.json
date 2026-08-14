@@ -1,0 +1,23 @@
+{
+  "schema_version": "0.1.0",
+  "sources": [
+    {
+      "id": "SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK",
+      "title_zh": "任务书",
+      "publisher": "open-city-ai/haidian",
+      "url": "brief/site-package/agent_taskbook.json",
+      "source_type": "user_provided_cleared",
+      "usable_for_formal": "yes",
+      "limitation_zh": "不提供法定控制。"
+    },
+    {
+      "id": "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+      "title_zh": "维护者临时边界",
+      "publisher": "open-city-ai/haidian",
+      "url": "brief/site-package/geometry/provisional_boundaries.geojson",
+      "source_type": "agent_inferred_from_public_data",
+      "usable_for_formal": "provisional_only",
+      "limitation_zh": "非官方精确边界。"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "schema_version": "0.1.0",
+  "checks": [
+    {
+      "check_id": "LOCAL_VALIDATION",
+      "result": "pass",
+      "severity": "info",
+      "target": "scripts/validate_local_submission.py",
+      "message": "Deterministic validation passed."
+    },
+    {
+      "check_id": "SPATIAL_REVIEW",
+      "result": "pass",
+      "severity": "info",
+      "target": "scripts/spatial_review.py",
+      "message": "Spatial review passed; provisional key areas are retained as disclosed minor limitations."
+    },
+    {
+      "check_id": "VISUAL_PACKAGING",
+      "result": "pass",
+      "severity": "info",
+      "target": "visual/index.html",
+      "message": "Offline visual packaging and metric declaration review passed."
+    },
+    {
+      "check_id": "PROFESSIONAL_EVIDENCE",
+      "result": "pass",
+      "severity": "info",
+      "target": "proposal.md",
+      "message": "Professional evidence review passed."
+    }
+  ]
+}
