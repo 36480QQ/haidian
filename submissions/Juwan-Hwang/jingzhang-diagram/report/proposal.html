@@ -183,6 +183,7 @@ code {
 <h3>联锁制（四条硬接线）</h3>
 <p>权限开放与退出能力必须像道岔与信号一样物理联锁——授权动作与退出动作是同一个动作：</p>
 <p>1. <strong>无路票不运行</strong>：任何公共 AI 服务运行一次，必须留下含版本、对象、证据、责任、期限、退出方案的凭证； 2. <strong>无等效不替代</strong>：AI 辅助服务必须有等效的非 AI 人工路径对所有人开放——&quot;不会用智能手机&quot;不是被拒绝服务的理由 <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="BARRIER-FREE-ENVIRONMENT-LAW" title="标准：BARRIER-FREE-ENVIRONMENT-LAW">标准</sup>； 3. <strong>无退出不部署</strong>：上线必须同步上线&quot;撤销—隔离—还原&quot;三位一体退出方案，撤销命令优先级不低于部署命令； 4. <strong>无审计不扩大</strong>：从试验到规模化必须经过独立&quot;人字审计&quot;逐项勾选（类比列车出库检查）。</p>
+<blockquote><p><strong>SEB v0.3 机器验证</strong>：上述四条硬接线已用社区贡献的服务等价基准（Service Equivalence Baseline, SEB）v0.3.0 逐条校验。七条桌面推演样例（3 正 4 负）映射为 SEB 节点，覆盖 ai_off_path 禁止依赖、human_handoff 角色词表、分母完整性、停止条件强制四个判据，全部 7/7 通过。SEB 规范、校验器与采用方 fixtures 已快照入包 <code>visual/assets/</code>，可复现运行 <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="SEB-V0.3" title="来源：SEB-V0.3">来源</sup> [self_check:SEB_TABLETOP].</p></blockquote>
 <h3>路票制（公共凭证）</h3>
 <p>每一张场景路票（电子凭证，公众可查）必备字段：唯一标识、所在闭塞区间、进入/出清时间戳（ILL 的直接数据源）、八问审计结论、<strong>责任自然人签名</strong>（不可用组织签名替代）、退出方案摘要、公众申诉入口。<strong>拒绝同样开票</strong>：拒绝理由、事实依据、申诉路径与采纳凭证同一编号体系——让&quot;被拒绝&quot;与&quot;被采纳&quot;同样被城市看见，积累城市的拒止智慧。</p>
 <h3>运行图制（节律与度量）</h3>
@@ -249,6 +250,7 @@ code {
 <li>临时粗略边界与重点区域 geometry/provisional_boundaries.geojson <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="BOUNDARY-SOURCE" title="来源：BOUNDARY-SOURCE">来源</sup> <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="KEY-AREA-SOURCE" title="来源：KEY-AREA-SOURCE">来源</sup></li>
 <li>专业标准：城市设计管理办法、控规深度要求、用地分类指南（见 standard_matrix.json）<sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="MOHURD-URBAN-DESIGN-MEASURES" title="标准：MOHURD-URBAN-DESIGN-MEASURES">标准</sup> <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="MOHURD-CONTROL-DETAILED-PLANNING" title="标准：MOHURD-CONTROL-DETAILED-PLANNING">标准</sup> <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="MNR-LAND-USE-CLASSIFICATION-GUIDE" title="标准：MNR-LAND-USE-CLASSIFICATION-GUIDE">标准</sup></li>
 <li>已核定史实：詹天佑&quot;各出所学，各尽所知&quot;题词（1914 年汉口欧美同学恳亲会演说）、京张高铁&quot;世界首条时速 350 公里的智能化高铁&quot;表述（交通运输部 2025 年表述）、京张铁路通车纪念日（1909 年 10 月 2 日南口通车典礼）（见 assumptions.json）</li>
+<li>服务等价基准（SEB）v0.3.0 规范与桌面校验器，由 lqqk7/every-sense-jingzhang 贡献，本方案为首个外部采用方，快照见 <code>visual/assets/</code>（CC BY-SA 4.0）<sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="SEB-V0.3" title="来源：SEB-V0.3">来源</sup></li>
 </ul>
 </main>
 </body>
