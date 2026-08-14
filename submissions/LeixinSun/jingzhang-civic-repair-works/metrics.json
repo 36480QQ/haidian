@@ -538,7 +538,7 @@
     },
     "release_replay_fixture_count": {
       "status": "known",
-      "value": 8,
+      "value": 12,
       "unit": "count",
       "source_files": [
         "visual/assets/tabletop/fixtures.json",
@@ -547,7 +547,7 @@
       "formula": "count(synthetic tabletop fixtures)",
       "confidence": "high",
       "assumptions": [
-        "Synthetic rule replay only; field_runs=0 and no device performance is represented."
+        "Synthetic rule replay only; eight release-gate branches and four AI-authority boundary branches are represented. field_runs=0 and no device performance is represented."
       ]
     },
     "release_replay_expected_match_rate": {
@@ -574,6 +574,34 @@
       "confidence": "high",
       "assumptions": [
         "The package intentionally contains no field run."
+      ]
+    },
+    "ai_authority_replay_fixture_count": {
+      "status": "known",
+      "value": 4,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/ai_human_authority_matrix.json",
+        "visual/assets/tabletop/fixtures.json",
+        "visual/assets/tabletop/results.json"
+      ],
+      "formula": "count(synthetic fixtures where rule_family = ai_authority_boundary)",
+      "confidence": "high",
+      "assumptions": [
+        "Synthetic deterministic policy replay only; it does not measure model accuracy, field safety, professional acceptance, or institutional authorization."
+      ]
+    },
+    "ai_authority_replay_expected_match_rate": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": [
+        "visual/assets/tabletop/results.json"
+      ],
+      "formula": "authority_boundary_matched / authority_boundary_fixture_count",
+      "confidence": "high",
+      "assumptions": [
+        "Measures whether four participant-authored AI overreach branches are refused or held as expected; it is not a model-performance result."
       ]
     },
     "service_continuity_rate": {
