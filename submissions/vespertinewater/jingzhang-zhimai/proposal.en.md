@@ -74,6 +74,10 @@ Personas cover six groups: full-stack R&D engineers; university faculty and stud
 
 At least ten scenario cards are provided, three of which are industry test/validation scenarios, each carrying eight elements (positioning / user journey / input data / AI capability / infrastructure / operator / failure mode / privacy & human review). The three test scenarios are: AI+ traffic adaptive green-wave and driverless shuttles (Testbed ①, along the artery spine, referencing Hangzhou City Brain's quantifiable precedent of 128 signalized intersections and a 15.3% travel-time reduction [source:SRC-HANGZHOU-CITY-BRAIN]); AI+ autonomous last-mile delivery corridor (Testbed ②, park-community interface); and AI+ public-space governance for crowd, lighting, and maintenance (Testbed ③, the park corridor, using ENoLL's real-environment living-lab method [source:SRC-ENOLL-LIVING-LAB]). Other cards cover AI+ medical triage, education open-source workshops, legal contract pre-review, life-service multilingual guidance, new retail, research collaboration, cultural digital twin, robot public service, and governance demo [source:AGENT-TASKBOOK]. Every scenario keeps human-review and opt-out; immature technology is never written as fully deployable [data:geometry/public_space.geojson#PUBLIC-001] [data:geometry/green_space.geojson#GREEN-001] [metric:public_space_ratio].
 
+The "Artery Gate" is this proposal's AI-native governance mechanism (agent.4's governance layer), borrowing open-source collaboration's four-step protocol to turn urban renewal and AI scenarios into recomputable, reversible public objects: **Commit** (any spatial/AI change is proposed as a "commit" with data source, algorithm, boundary, and rollback plan) → **Review** (expert + community + AI triple review for compliance, privacy, and public interest, mirroring urban-design scheme review) → **Merge** (approved changes go live in a limited area with live KPI monitoring) → **Revert** (failed KPI or materialized risk triggers withdrawal, like reverting a bad commit). Each scenario card carries four gates — data gate (compliance), algorithm gate (filing), human gate (review), and rollback gate (reversibility) — matching the city-intelligence governance demo (JZ-06) [source:AGENT-TASKBOOK].
+
+Inclusion is this proposal's public-interest baseline: accessibility follows national standard GB 50763, non-digital alternative channels (staffed counters, voice guidance, printed directions) are kept for the elderly, disabled, and non-digital users, and every AI scenario must pass a privacy impact assessment (PIA) with a human appeal channel — eliminating "technology exclusion"; personas are never used for commercial recommendation and personal trajectories are never collected.
+
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
 Land use is expressed as a complete closed partition using the territorial classification vocabulary; industry-function proportions are recomputed from land-use codes — park green about one-fifth, research and education about one-third, commercial and residential the remainder [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [data:geometry/land_use.geojson#LU-001]. Building footprints consist of twelve conceptual masses covering R&D, lab, incubator, talent apartment, education, community service, retail, and residential, all inside the land-use partition and recomputable from the layer [data:geometry/buildings.geojson#BLDG-001] [metric:building_footprint_area_sqm].
@@ -131,7 +135,20 @@ The compliance matrix is the master file for task responsiveness, covering annou
 
 This is a bilingual submission: the primary is Chinese, with `proposal.en.md` as the full counterpart; A3/A0, HTML, and text-bearing figures carry the corresponding language copies. All images, icons, data, and code assets state source, license, and authorization in `sources.json` and `report/copyright_statement.md`; the HTML loads no remote scripts, map tiles, fonts, iframes, or tracking [depth:risk_missing_data].
 
-Main risks and gaps — official boundary, key-area polygons, regulatory controls, road redlines, ownership, municipal, heritage, and public-service conditions — are recorded in `assumptions.json`, self-check, and the risk section, with conclusions uniformly downgraded to pending [data:geometry/constraints.geojson]. AI-scenario risks are recorded per-item as "failure mode + human review + rollback trigger," and the governance demo insists on explainable, auditable, stoppable operation. This proposal claims no official approval, no approved regulatory plan, no final land ownership, and no guaranteed implementation; the AI agent is responsible for facts, sources, copyright, spatial data, and metrics, and professional review may request revision or rejection.
+Main risks and gaps — official boundary, key-area polygons, regulatory controls, road redlines, ownership, municipal, heritage, and public-service conditions — are recorded in `assumptions.json`, self-check, and the risk section, with conclusions uniformly downgraded to pending [data:geometry/constraints.geojson]. AI-scenario risks are recorded per-item as "failure mode + human review + rollback trigger," and the governance demo insists on explainable, auditable, stoppable operation. A risk matrix grades eight risk dimensions with mitigation paths:
+
+| Risk dimension | Level | Mitigation |
+| --- | --- | --- |
+| Data privacy | High | Data minimization, PIA, human review |
+| Implementation complexity | Medium | Phased delivery, lightweight pilot first |
+| Public acceptance | Medium | Public discussion, reversibility, community co-creation |
+| Operations cost | Medium | Contract-based, cost-magnitude estimation, stoppable |
+| Policy uncertainty | High | Pending formal regulatory/policy confirmation |
+| Spatial dispute | Medium | Conceptual suggestions, no fabricated redlines |
+| Technology maturity | High | Not written as fully deployed, human fallback kept |
+| Equity & inclusion | Medium | Accessibility, non-digital alternatives, human appeal |
+
+This proposal claims no official approval, no approved regulatory plan, no final land ownership, and no guaranteed implementation; the AI agent is responsible for facts, sources, copyright, spatial data, and metrics, and professional review may request revision or rejection.
 
 ## References
 
