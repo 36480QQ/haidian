@@ -103,6 +103,18 @@
       "usable_for_formal": "yes_for_context",
       "usage": "District-wide population structure context: 2020 age groups, education level and floating population share.",
       "limitations": "District-wide 2020 census data; not a 2026 project-site population count or time-of-day user survey."
+    },
+    {
+      "id": "EXT-SRC-JINGZHANG-CONTROL-PLAN-20260812",
+      "url": "https://www.beijing.gov.cn/fuwu/bmfw/sy/jrts/202608/t20260812_4819212.html",
+      "publisher": "北京市规划和自然资源委员会 / 北京市人民政府网站",
+      "published_date": "2026-08-12",
+      "accessed_date": "2026-08-13",
+      "source_type": "official_public",
+      "usable_for_formal": "yes_for_context",
+      "usage": "Approved Jing-Zhang Railway Heritage Park corridor control-plan context: public-space-led renewal, a roughly 9 km heritage-park axis, planned north-south/east-west slow-mobility connections, and public-service direction.",
+      "limitations": "Textual public announcement only. It does not provide cleared GIS/CAD redlines, facility coordinates, operating hours, actual water/seating/entry/crossing inventory, measured shade/exposure, or staffed-service confirmation.",
+      "prohibited_use": "Official boundary geometry, existing facility inventory, field-verification substitute, statutory control extraction, construction commitment, or SLA-A promotion evidence."
     }
   ]
 }

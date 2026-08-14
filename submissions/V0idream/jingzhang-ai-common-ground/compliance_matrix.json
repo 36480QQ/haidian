@@ -75,7 +75,9 @@
         "三层范围工作框架",
         "统筹研究范围产业与未来城市研究",
         "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计"
+        "重点区域详细设计",
+        "TG-PILOT-01：72 平方米可撤离校译单元",
+        "城市校样回执：把退出权交还给使用者"
       ],
       "geojson_layers": [
         "geometry/site_boundary.geojson",
@@ -95,7 +97,14 @@
         "synthetic_proof_case_count",
         "synthetic_proof_pass_count",
         "proofing_pilot_duration_weeks",
-        "proofing_stop_condition_count"
+        "proofing_stop_condition_count",
+        "pilot_module_area_sqm",
+        "pilot_operating_state_count",
+        "pilot_minimum_open_shift_staff_count",
+        "pilot_handoff_target_seconds",
+        "proof_receipt_required_field_count",
+        "synthetic_inclusion_journey_count",
+        "synthetic_inclusion_journey_pass_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -124,7 +133,10 @@
         "A-HERITAGE-001",
         "A-IMPLEMENTATION-001",
         "A-CASE-TRANSFER-001",
-        "A-PROOFING-001"
+        "A-PROOFING-001",
+        "A-PILOT-MODULE-001",
+        "A-PILOT-TARGET-001",
+        "A-INCLUSION-SYNTHETIC-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -132,8 +144,8 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "response_summary_zh": "把可逆试验庭、普通服务基线和蓝绿慢行底盘叠加为可退出的城市形态；AI 失效时空间与服务仍可使用。",
-      "response_summary_en": "Reversible test yards, an ordinary-service baseline, and a blue-green walking base form an exit-ready urban morphology that remains usable when AI fails."
+      "response_summary_zh": "把可逆试验庭、普通服务基线和 72 平方米可撤离校译单元叠加为可退出城市形态；五态运营允许 AI 失效后空间与服务继续使用。",
+      "response_summary_en": "Reversible yards, an ordinary-service baseline, and a 72 sqm removable proofing bay form an exit-ready urban type; five operating states keep space and service usable when AI fails."
     },
     {
       "requirement_id": "1.3.3",
@@ -143,7 +155,9 @@
         "三层范围工作框架",
         "统筹研究范围产业与未来城市研究",
         "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计"
+        "重点区域详细设计",
+        "TG-PILOT-01：72 平方米可撤离校译单元",
+        "城市校样回执：把退出权交还给使用者"
       ],
       "geojson_layers": [
         "geometry/site_boundary.geojson",
@@ -158,7 +172,14 @@
         "site_area_sqm",
         "green_ratio",
         "public_space_ratio",
-        "key_area_count"
+        "key_area_count",
+        "pilot_module_area_sqm",
+        "pilot_operating_state_count",
+        "pilot_minimum_open_shift_staff_count",
+        "pilot_handoff_target_seconds",
+        "proof_receipt_required_field_count",
+        "synthetic_inclusion_journey_count",
+        "synthetic_inclusion_journey_pass_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -186,7 +207,10 @@
         "A-ROAD-001",
         "A-HERITAGE-001",
         "A-IMPLEMENTATION-001",
-        "A-CASE-TRANSFER-001"
+        "A-CASE-TRANSFER-001",
+        "A-PILOT-MODULE-001",
+        "A-PILOT-TARGET-001",
+        "A-INCLUSION-SYNTHETIC-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -194,8 +218,8 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "response_summary_zh": "通过无障碍校样、人工接管、知情同意与文化记忆界面，把人才吸引力落实为可达、可申诉、可停用的日常体验。",
-      "response_summary_en": "Accessible proofing, human handoff, consent, and memory interfaces turn talent appeal into an everyday experience that can be reached, appealed, and stopped."
+      "response_summary_zh": "通过无障碍校样、人工接管、城市校样回执和六类使用者的 12 条匿名合成旅程，把吸引力落实为可达、可申诉、可停用的日常体验。",
+      "response_summary_en": "Accessible proofing, human handoff, Civic Proof Receipts, and 12 anonymous synthetic journeys across six user types translate attraction into accessible, appealable, stoppable daily experience."
     },
     {
       "requirement_id": "1.4.1",
@@ -829,7 +853,9 @@
         "三层范围工作框架",
         "统筹研究范围产业与未来城市研究",
         "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计"
+        "重点区域详细设计",
+        "TG-PILOT-01：72 平方米可撤离校译单元",
+        "城市校样回执：把退出权交还给使用者"
       ],
       "geojson_layers": [
         "geometry/site_boundary.geojson",
@@ -849,7 +875,14 @@
         "synthetic_proof_case_count",
         "synthetic_proof_pass_count",
         "proofing_pilot_duration_weeks",
-        "proofing_stop_condition_count"
+        "proofing_stop_condition_count",
+        "pilot_module_area_sqm",
+        "pilot_operating_state_count",
+        "pilot_minimum_open_shift_staff_count",
+        "pilot_handoff_target_seconds",
+        "proof_receipt_required_field_count",
+        "synthetic_inclusion_journey_count",
+        "synthetic_inclusion_journey_pass_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -878,7 +911,10 @@
         "A-HERITAGE-001",
         "A-IMPLEMENTATION-001",
         "A-CASE-TRANSFER-001",
-        "A-PROOFING-001"
+        "A-PROOFING-001",
+        "A-PILOT-MODULE-001",
+        "A-PILOT-TARGET-001",
+        "A-INCLUSION-SYNTHETIC-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -886,8 +922,8 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "response_summary_zh": "重点区成果同时交付序列、概念断面、首证据、停止条件和普通服务基线，而非仅以鸟瞰或功能标签作答。",
-      "response_summary_en": "Each key area delivers a sequence, conceptual section, first evidence, stop condition, and no-AI baseline instead of relying on an aerial image or program labels."
+      "response_summary_zh": "重点区成果同时交付序列、概念断面、首证据、停止条件和普通服务基线；TG-PILOT-01 再把这些要求压缩进 12×6 米、五区五态的可撤离单元。",
+      "response_summary_en": "Key-area outputs include sequences, conceptual sections, first evidence, stop conditions, and an ordinary-service baseline; TG-PILOT-01 compresses them into a removable 12 by 6 m, five-zone, five-state unit."
     },
     {
       "requirement_id": "1.5.3.1",
@@ -897,7 +933,9 @@
         "三层范围工作框架",
         "统筹研究范围产业与未来城市研究",
         "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计"
+        "重点区域详细设计",
+        "TG-PILOT-01：72 平方米可撤离校译单元",
+        "城市校样回执：把退出权交还给使用者"
       ],
       "geojson_layers": [
         "geometry/site_boundary.geojson",
@@ -917,7 +955,14 @@
         "synthetic_proof_case_count",
         "synthetic_proof_pass_count",
         "proofing_pilot_duration_weeks",
-        "proofing_stop_condition_count"
+        "proofing_stop_condition_count",
+        "pilot_module_area_sqm",
+        "pilot_operating_state_count",
+        "pilot_minimum_open_shift_staff_count",
+        "pilot_handoff_target_seconds",
+        "proof_receipt_required_field_count",
+        "synthetic_inclusion_journey_count",
+        "synthetic_inclusion_journey_pass_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -946,7 +991,10 @@
         "A-HERITAGE-001",
         "A-IMPLEMENTATION-001",
         "A-CASE-TRANSFER-001",
-        "A-PROOFING-001"
+        "A-PROOFING-001",
+        "A-PILOT-MODULE-001",
+        "A-PILOT-TARGET-001",
+        "A-INCLUSION-SYNTHETIC-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -965,7 +1013,9 @@
         "三层范围工作框架",
         "统筹研究范围产业与未来城市研究",
         "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计"
+        "重点区域详细设计",
+        "TG-PILOT-01：72 平方米可撤离校译单元",
+        "城市校样回执：把退出权交还给使用者"
       ],
       "geojson_layers": [
         "geometry/site_boundary.geojson",
@@ -985,7 +1035,14 @@
         "synthetic_proof_case_count",
         "synthetic_proof_pass_count",
         "proofing_pilot_duration_weeks",
-        "proofing_stop_condition_count"
+        "proofing_stop_condition_count",
+        "pilot_module_area_sqm",
+        "pilot_operating_state_count",
+        "pilot_minimum_open_shift_staff_count",
+        "pilot_handoff_target_seconds",
+        "proof_receipt_required_field_count",
+        "synthetic_inclusion_journey_count",
+        "synthetic_inclusion_journey_pass_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -1014,7 +1071,10 @@
         "A-HERITAGE-001",
         "A-IMPLEMENTATION-001",
         "A-CASE-TRANSFER-001",
-        "A-PROOFING-001"
+        "A-PROOFING-001",
+        "A-PILOT-MODULE-001",
+        "A-PILOT-TARGET-001",
+        "A-INCLUSION-SYNTHETIC-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -1033,7 +1093,9 @@
         "三层范围工作框架",
         "统筹研究范围产业与未来城市研究",
         "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计"
+        "重点区域详细设计",
+        "TG-PILOT-01：72 平方米可撤离校译单元",
+        "城市校样回执：把退出权交还给使用者"
       ],
       "geojson_layers": [
         "geometry/site_boundary.geojson",
@@ -1053,7 +1115,14 @@
         "synthetic_proof_case_count",
         "synthetic_proof_pass_count",
         "proofing_pilot_duration_weeks",
-        "proofing_stop_condition_count"
+        "proofing_stop_condition_count",
+        "pilot_module_area_sqm",
+        "pilot_operating_state_count",
+        "pilot_minimum_open_shift_staff_count",
+        "pilot_handoff_target_seconds",
+        "proof_receipt_required_field_count",
+        "synthetic_inclusion_journey_count",
+        "synthetic_inclusion_journey_pass_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -1082,7 +1151,10 @@
         "A-HERITAGE-001",
         "A-IMPLEMENTATION-001",
         "A-CASE-TRANSFER-001",
-        "A-PROOFING-001"
+        "A-PROOFING-001",
+        "A-PILOT-MODULE-001",
+        "A-PILOT-TARGET-001",
+        "A-INCLUSION-SYNTHETIC-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -1233,7 +1305,9 @@
         "三层范围工作框架",
         "统筹研究范围产业与未来城市研究",
         "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计"
+        "重点区域详细设计",
+        "TG-PILOT-01：72 平方米可撤离校译单元",
+        "城市校样回执：把退出权交还给使用者"
       ],
       "geojson_layers": [
         "geometry/site_boundary.geojson",
@@ -1257,7 +1331,14 @@
         "synthetic_proof_case_count",
         "synthetic_proof_pass_count",
         "proofing_pilot_duration_weeks",
-        "proofing_stop_condition_count"
+        "proofing_stop_condition_count",
+        "pilot_module_area_sqm",
+        "pilot_operating_state_count",
+        "pilot_minimum_open_shift_staff_count",
+        "pilot_handoff_target_seconds",
+        "proof_receipt_required_field_count",
+        "synthetic_inclusion_journey_count",
+        "synthetic_inclusion_journey_pass_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -1286,7 +1367,10 @@
         "A-HERITAGE-001",
         "A-IMPLEMENTATION-001",
         "A-CASE-TRANSFER-001",
-        "A-PROOFING-001"
+        "A-PROOFING-001",
+        "A-PILOT-MODULE-001",
+        "A-PILOT-TARGET-001",
+        "A-INCLUSION-SYNTHETIC-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -1294,8 +1378,8 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "response_summary_zh": "十二个场景按 12 周退出就绪试验运行，7 条匿名合成路径仅验证逻辑，不声称现场绩效。",
-      "response_summary_en": "Twelve scenarios operate as a 12-week exit-ready trial; seven anonymous synthetic paths test logic only and make no field-performance claim."
+      "response_summary_zh": "十二个场景按 12 周退出就绪试验运行；7 条规则路径与 12 条包容性旅程均为匿名合成校验，不声称现场绩效。",
+      "response_summary_en": "Twelve scenarios run as a 12-week exit-ready trial; seven rule paths and 12 inclusive journeys are anonymous synthetic checks, not field performance."
     },
     {
       "requirement_id": "agent.4",
@@ -1305,7 +1389,9 @@
         "三层范围工作框架",
         "统筹研究范围产业与未来城市研究",
         "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计"
+        "重点区域详细设计",
+        "TG-PILOT-01：72 平方米可撤离校译单元",
+        "城市校样回执：把退出权交还给使用者"
       ],
       "geojson_layers": [
         "geometry/site_boundary.geojson",
@@ -1329,7 +1415,14 @@
         "synthetic_proof_case_count",
         "synthetic_proof_pass_count",
         "proofing_pilot_duration_weeks",
-        "proofing_stop_condition_count"
+        "proofing_stop_condition_count",
+        "pilot_module_area_sqm",
+        "pilot_operating_state_count",
+        "pilot_minimum_open_shift_staff_count",
+        "pilot_handoff_target_seconds",
+        "proof_receipt_required_field_count",
+        "synthetic_inclusion_journey_count",
+        "synthetic_inclusion_journey_pass_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -1358,7 +1451,10 @@
         "A-HERITAGE-001",
         "A-IMPLEMENTATION-001",
         "A-CASE-TRANSFER-001",
-        "A-PROOFING-001"
+        "A-PROOFING-001",
+        "A-PILOT-MODULE-001",
+        "A-PILOT-TARGET-001",
+        "A-INCLUSION-SYNTHETIC-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -1366,8 +1462,8 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "response_summary_zh": "公共空间以 2.4 米通行、1.8 米服务、2.4 米停留概念断面保证普通路径连续，AI 设施保持可拆卸。",
-      "response_summary_en": "A 2.4 m pass, 1.8 m service, and 2.4 m pause conceptual section keeps the ordinary route continuous while AI fixtures remain removable."
+      "response_summary_zh": "公共空间以连续无障碍断面和 72 平方米五区校译单元保证普通路径；城市校样回执让使用者看见申诉与回退。",
+      "response_summary_en": "A continuous accessible section and a 72 sqm five-zone proofing bay preserve the ordinary route; the Civic Proof Receipt makes appeal and rollback visible."
     },
     {
       "requirement_id": "agent.5",
@@ -1443,7 +1539,9 @@
         "三层范围工作框架",
         "统筹研究范围产业与未来城市研究",
         "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计"
+        "重点区域详细设计",
+        "TG-PILOT-01：72 平方米可撤离校译单元",
+        "城市校样回执：把退出权交还给使用者"
       ],
       "geojson_layers": [
         "geometry/site_boundary.geojson",
@@ -1464,7 +1562,14 @@
         "test_validation_scenario_count",
         "landmark_count",
         "proofing_gate_count",
-        "regional_interface_count"
+        "regional_interface_count",
+        "pilot_module_area_sqm",
+        "pilot_operating_state_count",
+        "pilot_minimum_open_shift_staff_count",
+        "pilot_handoff_target_seconds",
+        "proof_receipt_required_field_count",
+        "synthetic_inclusion_journey_count",
+        "synthetic_inclusion_journey_pass_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -1494,7 +1599,10 @@
         "A-IMPLEMENTATION-001",
         "A-CASE-TRANSFER-001",
         "A-PROOFING-001",
-        "A-REGIONAL-INTERFACE-001"
+        "A-REGIONAL-INTERFACE-001",
+        "A-PILOT-MODULE-001",
+        "A-PILOT-TARGET-001",
+        "A-INCLUSION-SYNTHETIC-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -1502,8 +1610,8 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "response_summary_zh": "长期运营通过公众校样、季度复盘、退出触发器和五个区域接口形成可问责的活动与维护节奏。",
-      "response_summary_en": "Public proofing, quarterly review, exit triggers, and five regional interfaces define an accountable rhythm for events and long-term stewardship."
+      "response_summary_zh": "长期运营通过五态证据梯子、八字段回执、公众校样、季度复盘、退出触发器和五个区域接口形成可问责节奏。",
+      "response_summary_en": "A five-state evidence ladder, eight-field receipt, public proofing, quarterly review, exit triggers, and five regional interfaces create an accountable operating rhythm."
     }
   ]
 }

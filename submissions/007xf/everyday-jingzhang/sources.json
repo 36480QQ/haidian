@@ -209,6 +209,54 @@
       "retrieved_date": "2026-08-11",
       "source_type": "official_public",
       "usage": "Background reference for structured owner, deployment context, data/model, human review and update/decommission records; no foreign legal arrangement imported."
+    },
+    {
+      "id": "PIPL-2021",
+      "url": "https://www.npc.gov.cn/npc/c2/c30834/202108/t20210820_313088.html",
+      "publisher": "全国人民代表大会",
+      "retrieved_date": "2026-08-13",
+      "source_type": "official_public",
+      "usage": "Controlling Chinese legal context for personal-information minimisation, purpose, rights and incident handling; this proposal does not provide legal advice or claim compliance approval."
+    },
+    {
+      "id": "DATA-SECURITY-LAW-2021",
+      "url": "https://www.miit.gov.cn/zwgk/zcwj/flfg/art/2022/art_284b390b84484f10b0e43eeafaad0f6d.html",
+      "publisher": "中华人民共和国工业和信息化部",
+      "retrieved_date": "2026-08-13",
+      "source_type": "official_public",
+      "usage": "Controlling Chinese legal context for data handling, security responsibility and incidents; professional legal and security review remains required."
+    },
+    {
+      "id": "OSM-BACKGROUND-CONTEXT-20260813",
+      "url": "https://www.openstreetmap.org/copyright",
+      "publisher": "OpenStreetMap contributors",
+      "retrieved_date": "2026-08-13",
+      "source_type": "background_only",
+      "usage": "Attributed ODbL vector context for visual orientation in two figures only; not an official redline, parcel, planning, heritage, ownership or engineering source. Provenance is stored in visual/assets/osm-context-provenance.json."
+    },
+    {
+      "id": "PACKAGE-DUTY-SHIFT-CONTRACT",
+      "path": "visual/assets/duty-shift-contracts.json",
+      "source_type": "agent_generated_design",
+      "usage": "Twelve machine-readable human duty-shift contracts with eight mandatory fields and eight cross-room fault cards."
+    },
+    {
+      "id": "PACKAGE-PREOPENING-SHIFT-REHEARSAL",
+      "path": "visual/assets/preopening-shift-rehearsal.json",
+      "source_type": "agent_generated_design",
+      "usage": "Deterministic 140-case package consistency result; explicitly not field evidence or opening approval."
+    },
+    {
+      "id": "PACKAGE-REVIEWER-EVIDENCE-INDEX",
+      "path": "visual/assets/reviewer-evidence-index.json",
+      "source_type": "agent_generated_design",
+      "usage": "Routes each published scoring dimension to proposal sections, metrics and machine-readable evidence."
+    },
+    {
+      "id": "PACKAGE-ASSET-RIGHTS-LEDGER",
+      "path": "visual/assets/asset-rights-ledger.json",
+      "source_type": "agent_generated_design",
+      "usage": "Records generation method, third-party context and attribution for figures, PDFs and HTML."
     }
   ]
 }

@@ -261,6 +261,64 @@ Spatial Perception Layer (edge agents) → aggregated environmental data → Sce
 
 **Human fallback principle**: All agent outputs remain "advisory" in nature. When any agent fails or malfunctions, the corresponding service downgrades to manual operation without interrupting public services. Residents have the right to choose not to use any agent service, switching to manual counters, telephone, or paper channels.
 
+### Digital Twin City OS
+
+The multi-agent collaboration mechanism above requires a unified technical foundation. This proposal introduces a **Digital Twin City Operating System (City OS)** conceptual framework as the integration platform for AI scenarios, spatial data, and operational governance (concept direction, subject to confirmation during detailed design by technical proposals and operating entities; does not constitute a confirmed system construction plan):
+
+**Four-layer Technical Architecture (Conceptual Framework):**
+
+| Layer | Name | Core Function | Data Sources | Suggested Tech Components | AI Scenario Linkage |
+| --- | --- | --- | --- | --- | --- |
+| L1 | Sensing | Real-time environmental sensing: pedestrian flow, space usage heatmap, environmental quality (temp/humidity/AQI/water quality), facility status, energy consumption, safety events | Edge sensors, IoT nodes, authorized city cameras, pedestrian counters | MQTT/CoAP gateways, edge compute nodes, sensor trust anchors | Provides real-time environmental data for all 10 scene cards |
+| L2 | Data | Data aggregation, cleaning, anonymization, storage, cataloging, and authorization management | L1 sensing data + public data + enterprise authorized data + open-source data | Data Lakehouse, data catalog, privacy computing (federated learning/differential privacy) | Data backbone for Data Element Hall and Safety Sandbox |
+| L3 | Model | AI model training, deployment, inference, monitoring, version management, red-teaming | L2 data + public model libraries + partner models | Model registry, MLOps platform, model inference gateway, adversarial testing framework | Powers AI capabilities for all scene cards |
+| L4 | Application | Scene services, city dashboard, operations management, public service interfaces | L3 model outputs + human review results | Open API gateway, scene service orchestration, digital twin visualization | Unified entry point for all 10 scene cards |
+
+**Digital Twin Visualization (Concept Direction):**
+- 3D spatial base built from submitted `geometry/*.geojson` and `metrics.json`
+- Real-time overlay of L1 sensing data (usage heatmap, environmental quality, pedestrian flow)
+- L3 model layer AI capability status (model health, inference latency, anomaly alerts)
+- Operations management interface integrating L4 application scene orchestration and human review workbench
+- Visualization uses open-source WebGL/Three.js tech stack, no commercial map services, no remote resource loading
+- All data display follows data minimization: only anonymous aggregated data, no personal trajectories or identifiable information
+
+**Data Privacy and Security Architecture (Conceptual Framework):**
+
+| Security Dimension | Technical Measures | Governance Requirements | Audit Mechanism |
+| --- | --- | --- | --- |
+| Data Collection | Sensor anonymization, differential privacy, minimal collection | Collection scope approved by Data Governance Committee | Collection log quarterly audit |
+| Data Transmission | TLS 1.3 encryption, end-to-end encryption | No PII transmitted | Transmission log monthly audit |
+| Data Storage | Data classification, encrypted storage, access control | Storage period regular cleanup | Storage audit annual audit |
+| Data Processing | Federated learning, secure multi-party computation, TEE | Processing requires data subject authorization | Processing log quarterly audit |
+| Model Security | Adversarial testing, model red-teaming, bias detection, backdoor detection | Pre-deployment security testing mandatory | Security test report annual audit |
+| Application Security | Input/output filtering, API authentication, rate limiting, WAF | Pre-release security review | Security incident response audit |
+
+**City OS Operational Principles (Conceptual Framework):**
+- **Open Standards**: Open APIs and open-source components to avoid vendor lock-in and ensure extensibility
+- **Data Sovereignty**: Resident data belongs to residents, enterprise data to enterprises, public data open to society (anonymized)
+- **Incremental Deployment**: No "big bang" launch; pilot with 1-2 scene cards, gradually expand
+- **Human-in-the-loop**: All City OS decisions and recommendations retain a "human confirmation" step
+- **Auditability**: All data flows, model decisions, and operational actions logged with immutable audit trails
+
+> The above Digital Twin City OS is a conceptual framework based on current technology trends and scenario requirements, not a formal system construction plan. Specific technology selection, deployment plans, investment estimates, and operating entities must be confirmed during detailed design.
+
+### AI Innovation Ecosystem KPIs (Concept Indicators)
+
+To quantify the "innovativeness" of the AI ecosystem, this proposal suggests the following conceptual indicator system (subject to verification by industry planning and operational data):
+
+| Indicator | Unit | Current Baseline | Near-term (3yr) | Mid-term (7yr) | Long-term (15yr) | Data Source | Confidence |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| AI Enterprise Density | enterprises/km² | Pending survey | 15-20 | 30-40 | 50-60 | Industry statistics | Low |
+| Open-source Project Activity | monthly contributors | Pending baseline | 500-1000 | 2000-5000 | 10000+ | GitHub public data | Medium |
+| Compute Coverage | edge nodes/1000 people | Pending baseline | 0.5 | 1.5 | 3.0 | Carrier data | Low |
+| Scene Open Rate | opened/planned scenes | 0/10 | 3/10 | 7/10 | 10/10 | Platform operations | Low |
+| Human Fallback Coverage | covered/total services | 0% | 100% | 100% | 100% | Operations audit | High (design guarantee) |
+| AI Ethics Review Coverage | reviewed/deployed models | 0% | 100% | 100% | 100% | Security audit | High (design guarantee) |
+| Data Element Transaction Volume | 10K CNY/year | Pending baseline | 1000-5000 | 10000-50000 | 100000+ | Data trading platform | Low |
+| International AI Event Frequency | events/year | 0 | 3-5 | 8-12 | 15-20 | Event records | Medium |
+
+> The above indicators are conceptual suggestions only, illustrating directions for quantifiable innovation ecosystem monitoring. All baselines must be confirmed by professional surveys during formal industry planning. Target values do not constitute binding indicators.
+
 ### Agent Task Responses
 
 **Agent.1 — Naming and Brand Identity System**
@@ -310,6 +368,65 @@ The proposal is named "京张智脉·光晕 / Jing-Zhang AI Heritage Halo." The 
 7. AI education experience and science popularization base (along the Jing-Zhang Heritage Park corridor)
 8. Global AI talent exchange and international roadshow center (Dazhongsi)
 
+### AI Innovation Ecosystem Map
+
+To respond to the taskbook's explicit requirement for an "AI ecosystem map," the following four-dimensional framework constructs this proposal's AI innovation ecosystem (conceptual, pending industrial planning and operational conditions) [source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]:
+
+**Dimension 1: Innovation Actors**
+
+| Actor Type | Role | Core Needs | Spatial Location | Interconnections | Estimated Count |
+| --- | --- | --- | --- | --- | --- |
+| Basic research institutions | AI knowledge production | Compute, data, cross-disciplinary collaboration | University labs, Future Science City | Supply frontier tech to incubators | 5-8 universities/institutes |
+| Technology incubators | Achievement transformation bridge | Early-stage investment, test scenarios, industry connections | Origin Community transformation street | Connect research institutions and startups | 3-5 incubators |
+| AI startups | Technology productization | Low-cost space, compute, testing, market | Zhongzhi Park, Origin Community | Enter acceleration zone after incubation | 50-100 enterprises |
+| AI anchor enterprises | Industry driving force | Display space, ecosystem collaboration, talent | Dazhongsi AI Cluster | Provide ecosystem entry for SMEs | 5-10 enterprises |
+| Testing/validation bodies | Safety & compliance gatekeeping | Standard test environment, model red-teaming | Zhongzhi test field, Dazhongsi | Serve all actors | 2-3 bodies |
+| Investment institutions | Capital enablement | Quality projects, exit pathways | Roadshow center, online platform | Provide funding at all stages | 10-20 institutions |
+| Community and users | Demand & feedback source | Public space, AI services, right to know | All public spaces | Provide real participation for scenarios | Surrounding residents + visitors |
+
+**Dimension 2: Factor Flows**
+
+| Factor Type | Supply Side | Demand Side | Flow Mechanism | Governance Boundary | Dependencies |
+| --- | --- | --- | --- | --- | --- |
+| Compute | Compute centers, edge nodes | R&D + enterprises | Public compute subsidy + market pricing | Data stays within domain, compute not for sensitive use | Compute network, energy assurance |
+| Data | Public data, enterprise authorization, user authorization | Training + testing + validation | Tiered authorization + compliance review | Data minimization, no personal trajectory collection | Data classification standards |
+| Talent | Universities, community, global | Enterprises + incubators | Joint training + talent programs + global recruitment | No discrimination, no exclusivity | Talent policy, housing |
+| Capital | Government guide fund + industry fund + VC | Startup + incubation + expansion | Equity investment + achievement transformation fund | Fair access, compliant exit | Fund establishment, exit mechanism |
+| Scenarios | Public space, community, enterprises | R&D + testing + display | Scenario open plan + public booking | Data minimization, human review | Scenario agreement, security review |
+| Standards | Standards bodies + governance alliance | Testing + certification + compliance | Standards participation + compliance self-assessment | Open transparent, multi-stakeholder | Standards initiation, organizational structure |
+
+**Dimension 3: Spatial Carriers**
+
+```
+Spatial hierarchy:    Master planning scope (43.6 km²)
+                           ↕
+                  Overall design scope (11.4 km²)
+                    ↕              ↕
+            West Wing (services) ←→ Three Cores (Zhongzhi→Origin→Dazhongsi) ←→ East Wing (scenarios)
+                    ↕              ↕
+            Zhongguancun Science City   Jing-Zhang Heritage Park (connector)
+```
+
+**Carrier–function mapping:**
+- Zhongzhi Park → Full-stack independent innovation (hardware + software + algorithms + standards)
+- Origin Community → Achievement transformation & open-source collaboration (research → prototype → market)
+- Dazhongsi → Intelligent economy & industry cluster (enterprise + display + transaction)
+- West Wing (Zhongguancun Avenue) → Fintech + IP + standards/testing
+- East Wing (Xiaoyuehe) → Scenario open + data empowerment + public testing
+- Jing-Zhang Heritage Park → Slow-mobility connection + public space + cultural narrative
+
+**Dimension 4: Governance Mechanisms**
+
+| Governance Level | Governance Object | Governance Mechanism | Responsible Body | Compliance Boundary |
+| --- | --- | --- | --- | --- |
+| Data governance | All factor data flows | Data classification + authorization + audit trail | Data governance committee | Data minimization, user authorization, no personal trajectory |
+| Model governance | AI service full lifecycle | Model red-teaming + fairness testing + security evaluation | Independent security audit body | Adversarial testing, bias detection, failure degradation |
+| Scenario governance | Scenario open and operation | Scenario access + human review + complaint/fallback | Community co-governance committee | Human service guarantee, non-smart-device channels |
+| Spatial governance | Public space use | Booking mechanism + conflict resolution + usage evaluation | Public space operator | Non-exclusive, non-encroachment on public interest |
+| Standards governance | Full-chain standards participation | Standards working group + compliance self-assessment + mutual recognition | Standards governance consortium | Open transparent, multi-stakeholder participation |
+
+> The above AI innovation ecosystem map is a conceptual framework based on public industrial planning and AI ecosystem development trends, not confirmed industrial policy or cooperative arrangements. Specific actors, factors, spaces, and governance mechanisms must be confirmed during the detailed design phase by industrial planning, spatial conditions, and operating entities.
+
 **Agent.3 — AI+ Scenario Empowerment Paradigm (10 Scenario Cards + 3 Industry Test/Validation Scenarios)**
 The 10 scenario cards are listed in the "AI+ Scenarios" chapter table. The 3 industry test/validation scenarios:
 1. Zhongzhi Park Security Governance Sandbox — AI model red-teaming and standard verification
@@ -324,21 +441,42 @@ The 10 scenario cards are listed in the "AI+ Scenarios" chapter table. The 3 ind
 3. **Dazhongsi · Digital Bell Tower**: Combine the historical bell of Dazhongsi with AI-generated sound art to create a sound landmark where "every chime is a dialogue between history and the future."
 
 **Public Space Component Library (conceptual design suggestions, to be verified during detailed design):**
-| Component | Type | Applicable Location | Description |
-| --- | --- | --- | --- |
-| Smart Wayfinding Kiosk | Information device | Heritage park entrances, transit station exits | Slow-mobility navigation, scenario activity info, multilingual service; design consistent with Jing-Zhang Railway elements |
-| Code Display Column | Public art | Zhongzhi Park, Origin Community, Dazhongsi | Transparent cylinder displaying open-source code snippets; QR code links to full repository |
-| Data Flow Speed-Read Screen | Digital interface | Zhongzhi Park, Dazhongsi | Real-time anonymized public data flow (energy efficiency, usage heatmap, event count); no personal data displayed |
-| Slow-Mobility Charging Post | Service facility | Heritage park trail | Integrated phone charging, Wi-Fi, environmental sensor; "smart sleeper" form factor |
-| Community Notice Board | Information device | Community–commerce intersections | Non-digital service guarantee: paper-readable board + manual updates, no smart device dependency |
-| Waterfront Rest Node | Spatial node | Qinghe and Xiaoyuehe banks | Combined stormwater management, ecological display, AI environmental interpretation, and seating |
+
+This component library is a set of basic modules for public space design, covering six categories: information, art, digital, service, nature, and accessibility. Components follow the principles of "composable, extensible, reversible" and can flexibly adapt to different site conditions. All components include non-digital alternatives.
+
+| Component | Category | Type | Applicable Location | Description | Non-Digital Alternative | Maintenance Responsibility |
+| --- | --- | --- | --- | --- | --- | --- |
+| Smart Wayfinding Kiosk | Information | Information device | Heritage park entrances, transit station exits | Slow-mobility navigation, scenario activity info, multilingual service; design consistent with Jing-Zhang Railway elements | Static map + human inquiry desk | Public space operator |
+| Code Display Column | Art | Public art | Zhongzhi Park, Origin Community, Dazhongsi | Transparent cylinder displaying open-source code snippets; QR code links to full repository | Printed exhibition panels | Community co-governance committee |
+| Data Flow Speed-Read Screen | Digital | Digital interface | Zhongzhi Park, Dazhongsi | Real-time anonymized public data flow (energy efficiency, usage heatmap, event count); no personal data displayed | Monthly printed data report | Data governance committee |
+| Slow-Mobility Charging Post | Service | Service facility | Heritage park trail | Integrated phone charging, Wi-Fi, environmental sensor; "smart sleeper" form factor | Manual charging station | Public space operator |
+| Community Notice Board | Information | Information device | Community–commerce intersections | Non-digital service guarantee: paper-readable board + manual updates, no smart device dependency | This component is itself the non-digital solution | Community committee |
+| Waterfront Rest Node | Nature | Spatial node | Qinghe and Xiaoyuehe banks | Combined stormwater management, ecological display, AI environmental interpretation, and seating | None (direct experience) | Municipal + landscape operator |
+| Accessibility Guidance Strip | Accessibility | Tactile facility | All public space main pathways | Tactile ground guidance + voice prompts, covering all key junctions and facility entrances | Human guidance | Public space operator |
+| AI Interactive Q&A Kiosk | Digital | Interactive device | One per key area | Voice and text responses to AI innovation belt questions; designed as Jing-Zhang railway signal booth | Printed Q&A brochure | University + operator |
+| Slow-Mobility Mileage Marker | Information | Signage system | Every 500m on main slow-mobility routes | Distance traveled, next node ahead, calories burned; designed as railway milepost | Traditional milepost | Public space operator |
+| Flexible Event Plaza | Space | Multi-purpose space | 1-2 per key area | Hardscape plaza switchable between market, exhibition, roadshow, community event, and emergency shelter | Fixed function area map | Zone operator |
+| Community Planting Box | Nature | Participatory facility | Community–public space boundary | Box-style gardening plots adoptable by residents; combined with stormwater management and community agriculture | Traditional community garden | Community committee |
+| Temporary Exhibition Frame | Art | Reversible facility | Heritage park trail, key area plazas | Lightweight, demountable exhibition system for student works, community outcomes, and AI prototypes | Exhibition boards + stands | Community + operator |
 
 **Honor Display System (conceptual design suggestions, subject to implementation plan):**
-- **Public Data Contributor Honor Wall**: Physical honor wall in Zhongzhi Park core area, rotating display of individuals/organizations contributing to public datasets and AI scenario open programs (with authorization)
-- **Open-Source Contributor Digital Display**: Digital screen in Origin Community open-source hall, showing open-source community code contributor leaderboard (from public repos, no personal privacy)
-- **AI Governance Pioneer Board**: Exhibition area in Dazhongsi International Roadshow Hall, recording exemplary contributions to AI safety governance, standard-setting, and ethical review (with contributor authorization)
-- **Annual AI Innovation Award**: Proposed for presentation during the annual Jing-Zhang AI Innovation Week, recognizing outstanding projects in AI urban applications, scenario openness, and public interest protection
-- **Operating Principles**: All content requires authorization; no personal sensitive information; annual refresh; content reviewed by community governance committee
+
+The honor display system covers five dimensions: **data contribution, open-source collaboration, governance innovation, AI art, and community participation**. Each dimension has a physical display carrier and operating rules:
+
+| Honor Dimension | Display Carrier | Location | Cycle | Content Source | Authorization Requirement | Operating Rules |
+| --- | --- | --- | --- | --- | --- | --- |
+| Data contribution | Public Data Contributor Honor Wall | Zhongzhi Park core | Rolling update | Public dataset and scenario open plan contributors | Individual/entity name must be authorized | Annual review; no personal sensitive information |
+| Open-source collaboration | Open-Source Contributor Digital Display | Origin Community open-source hall | Real-time update | Public repo code contribution data | Authorized use of GitHub public data | Only display authorized contributors |
+| Governance innovation | AI Governance Pioneer Board | Dazhongsi Roadshow Hall | Annual update | Safety governance, standard-setting, ethics review cases | Cases must be authorized | Community governance committee review |
+| AI art | Digital Art Display Wall | Jing-Zhang Heritage Park | Quarterly update | AI-generated artworks, student works | Creator authorization | Content review + copyright attribution |
+| Community participation | Community Contribution Board | Next to community notice board | Quarterly update | Volunteer, community activity participation records | Personal names must be authorized | No personal information displayed |
+
+**Operating Principles**:
+- All content requires authorization; no personal sensitive information
+- At least annual refresh; content reviewed by community governance committee
+- Digital screens must have printed quarterly honor booklets as non-digital alternatives
+- Honor display not used as commercial advertising or investment basis; no display fees charged
+- Any displayed entity may request removal within 5 business days
 
 **Agent.5 — Integrated Narrative of Centennial Jing-Zhang Culture, Zhongguancun Culture, and AI New Culture**
 Three-layer cultural integration narrative:
@@ -375,6 +513,24 @@ The five functions proposed by the agent taskbook are mapped below to spatial an
 - **Core zone (three cores)**: Zhongzhi Park (full-stack innovation) → AI Origin Community (achievement transformation) → Dazhongsi (intelligent economy), connected by the Jing-Zhang Heritage Park vitality belt, forming an "R&D–validation–display" industrial closed loop
 - **West wing (Zhongguancun Science & Technology Service Wing)**: extends south along Zhongguancun Avenue connecting the Zhongguancun Science City core, focusing on fintech, IP, standards/testing, and AI governance services; specific spatial nodes pending formal regulatory plan
 - **East wing (Xiaoyuehe Scenario Empowerment Wing)**: extends north along the Xiaoyuehe ecological corridor connecting university and research clusters, deploying AI open scenario labs, public data marketplaces, and community AI experience stations; specific sites pending Xiaoyuehe waterfront survey and regulatory plan
+
+**Xiaoyuehe Scenario Empowerment Wing Detailed Plan (conceptual, pending Xiaoyuehe waterfront survey and regulatory plan):**
+
+| Scenario Node | Location | Service Targets | Description | Space Requirements | Data Sources | Suggested Operator | Dependencies | Phase |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| SM-01 Open Scenario Lab | Near university cluster on Xiaoyuehe mid-section | University researchers, startups | Deploy AI research (NLP, CV, embodied AI) to real urban public space for A/B testing and user feedback collection | 200-500m² indoor+outdoor test space, sensor deployment points | Participant authorized data + anonymous aggregated environmental data | University + operator joint venture | Data authorization agreement, ethics review | Near-term (1-3yr) pilot |
+| SM-02 Public Data Marketplace | Xiaoyuehe-university boundary | Developers, data providers | Display, query, authorize, and download open datasets to foster AI training data ecosystem | ~100m² small display space, mirrored online platform | Only compliant open data + public data | Third-party data governance body | Data classification standards, authorization framework | Near-term (1-3yr) |
+| SM-03 Community AI Experience Station | Xiaoyuehe community nodes | Residents, elderly, children | Tangible AI application demos (image recognition, voice interaction, smart guide) with human service support | 50-100m², accessible from waterfront path | Only public demo data + local de-identified samples | Community + volunteer operator | Equipment safety, content compliance | Near-term (1-3yr) |
+| SM-04 Scenario Data Feedback Corridor | Full Xiaoyuehe slow-mobility system | All visitors | Anonymous data collection points (usage, environment, path) along the corridor, aggregated and de-identified data fed back to universities and R&D teams | Sensor nodes ~500m apart, landscape-integrated | Anonymous aggregated data (no personal trajectory) | Public space operator | Data minimization principle, privacy impact assessment | Mid-term (3-7yr) |
+| SM-05 Xiaoyuehe AI Dialogue Bank | Xiaoyuehe-Jing-Zhang Park intersection | All visitors | AI interactive installations along the waterfront responding to history, ecology, and AI knowledge queries; design language unified with Jing-Zhang railway elements | 3-5 interactive nodes, linear along water | Public knowledge base + anonymous interaction logs | University + public space operator | Content review mechanism, security review | Mid-term (3-7yr) |
+| SM-06 Industry-Education Test Field | Xiaoyuehe north section near university | Universities, enterprises | Field test site for university AI courses, where students can deploy and validate AI models in real urban environments | Flexible deployment, reusable public space | Education-purpose authorized data | University + enterprise joint venture | Curriculum agreement, security review | Long-term (7-15yr) |
+
+**Xiaoyuehe Scenario Wing Operating Mechanism (conceptual):**
+- **Data loop**: anonymous aggregated data from scenario nodes is fed back to universities for research; research results are validated in the scenario lab and returned, forming a "research→test→feedback→optimize" data loop
+- **Open access**: scenario nodes are open to universities, startups, and independent developers via a public booking system, with no access barrier but adherence to data minimization and privacy protocols
+- **Spatial flexibility**: scenario nodes use lightweight temporary facilities, leveraging existing public space ground floors and building ground floors without large-scale construction, ensuring reversibility
+- **Relationship with the three cores**: the east wing provides real-world scenario validation data for Zhongzhi Park's full-stack innovation, test space for Origin Community's achievement transformation, and user feedback for Dazhongsi's intelligent economy — "demand comes from scenarios, solutions come from cores"
+
 - **Synergy mechanism**: the three cores are physically connected by the Jing-Zhang Heritage Park slow-mobility system, while the east/west wings form a "service–scenario" loop through industrial complementarity and data sharing; the specific operating architecture, responsible entities, and KPIs must be jointly determined during the detailed design phase
 
 ### Regional Collaboration Framework
@@ -417,11 +573,49 @@ Blue-green public space is jointly verified by the design depth item and the gre
 
 The urban character scheme should integrate the historical culture of the Jing-Zhang Railway, the innovation culture of Zhongguancun, and AI new culture, utilize cultural resources such as Qinghuayuan Railway Station and the Beijing Film Academy, and propose guidance on urban tone, building character, roof form, massing, interface, and public art. The agent should also propose signage and wayfinding, cultural symbols, international communication narratives, AI pilgrimage landmarks, and a contribution wall or honor-display system. However, all brands, fonts, images, portraits, and corporate logos must have rights-cleared sources. Character controls should clearly distinguish official controls, design suggestions, and pending-confirmation conditions; falsely precise control lines must not be given without heritage-protection or regulatory-plan basis.
 
+### Light Track Station: Public Space Signal Furniture
+
+The Jing-Zhang Railway's signal towers once controlled train passage. This proposal transforms signal towers into street furniture — **Light Track Stations** — where residents can see AI service status from the street [standard:MOHURD-URBAN-DESIGN-MEASURES] [depth:blue_green_public_space].
+
+| Station type | Form | Function | Placement | Non-digital alternative |
+| --- | --- | --- | --- | --- |
+| Signal tower | 2-3m tall, railway signal tower form, tri-color light on top (green/yellow/red) | Shows gate status (G0-G3) of AI scenario cards in the area | 1-2 per key area | Paper bulletin board + human inquiry |
+| Inquiry desk | Wooden long table, sleeper form, embedded stone map | Staffed, answers AI service questions, collects resident feedback | Every 800m on main slow-mobility path | This IS the non-digital option |
+| Contribution wall | Weathering steel wall, rail texture | Displays data contributors, open-source contributors, community participants | 1 each in Zhongzhi, Origin, Dazhongsi | Paper quarterly honor roll |
+| Retirement column | Cast iron cylinder, 1.5m tall | Records retired AI services: name, run duration, retirement reason | Along Heritage Park | Engraved inscription |
+
+**Design language**: Warm white (building base), coal black (rail memory), signal orange (operational status), cobalt blue (AI technology). All installations are original vector designs, no corporate logos or third-party photos. Materials prioritize weathering steel, fair-face concrete, and recycled sleepers. Removable, relocatable, recyclable.
+
+**Public verification rule**: At any signal tower, residents can see three things: ① which AI services are running (green light) ② which are piloting (yellow light) ③ which were paused and why (red light). If a service's status is not visible, it hasn't passed G0 and isn't live. This is not a dashboard; it is street furniture — no smartphone needed [data:geometry/public_space.geojson#PUBLIC-001].
+
+> Light Track Stations are conceptual designs, pending confirmation of placement and maintenance responsibility by public space operators and community co-building committees.
+
 ## Renewal Project List, Implementation Policies, and Phasing Plan
 
 The implementation plan should form a reviewable renewal project list, specifying project location, type, function, responsible entity, dependency conditions, implementation phase, risks, and evaluation metrics. Policy recommendations should cover urban-renewal coordinated implementation, spatial supply, operation mechanisms, industry services, public participation, data governance, and property-rights coordination. `geometry/phasing.geojson` should express the phased scope, and `compliance_matrix.json` should link each task to the corresponding phase and drawing.
 
 Project list and phasing depth are managed by [depth:renewal_project_list] and [depth:phasing_implementation]; the spatial evidence for phasing is [data:geometry/phasing.geojson#PHASE-001]. Where ownership, funding, implementing entity, and approval pathways are absent, the proposal must present them as implementation risks, not as committed deliverables.
+
+### Jing-Zhang Four-Gate Release Protocol
+
+The Jing-Zhang Railway's signal system uses "gates" to control whether trains may pass. This proposal translates that engineering tradition into an implementation management rule: each project must pass through four gates in sequence; missing any gate keeps the project `halted` [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [depth:phasing_implementation].
+
+| Gate | Name | Conditions to confirm | If not passed | Corresponding milestone |
+| --- | --- | --- | --- | --- |
+| **G0 Readiness** | 资格闸 | Ownership boundary, funding source, approval pathway, operating entity — all four confirmed | Project stays `halted` | Pre-M1–M6 |
+| **G1 Pilot** | 试点闸 | Lightweight pilot completed: temporary facilities/operational activities/data collection running ≥90 days, pilot report produced | Does not enter formal construction | M1–M4 |
+| **G2 Release** | 放行闸 | Pilot report passes Go/No-Go review: social acceptance ≥ threshold, operational data meets targets, no unclosed community complaints | Does not enter phase 2; adjust and retry | M5–M6 → M7–M10 |
+| **G3 Retirement** | 退役闸 | Service/facility exit: public retirement record, reason stated, replacement provided, site restored | Cannot demolish or abandon | All projects' end-of-life |
+
+**Four-gate verification rules**:
+- **G0 Readiness** checks four conditions: ① ownership confirmed (government-issued), ② funding in place (fiscal + market), ③ approval pathway clear (planning + transport + municipal), ④ operating entity selected (public competition). Missing any one → `halted`.
+- **G1 Pilot** requires lightweight先行: before formal construction, run temporary facilities, operational activities, or service platforms for ≥90 days, collecting usage data, community feedback, and operational costs. Pilot report must include quantitative metrics (users, satisfaction, cost) and qualitative assessment (community opinions, safety incidents).
+- **G2 Release** is the Go/No-Go decision point: pilot report submitted to joint governance committee. Review criteria: social acceptance meets threshold (no unclosed complaints), operational data meets targets (users ≥50% of expectation, cost ≤120% of expectation), safety compliance (0 major incidents). All three pass = Go; any fail = No-Go (adjust and retry, do not force-push).
+- **G3 Retirement** requires exit trail: when any AI service or facility retires, record on public improvement wall: retirement reason, replacement plan, site restoration status, and resident feedback. Records retained ≥3 years, auditable and traceable.
+
+**One-line test**: If a project cannot produce any one of G0 readiness confirmation, G1 pilot report, G2 release decision, or G3 retirement plan, it is not ready to proceed to the next phase. (Assumption A-GATE-001)
+
+> The four gates are a conceptual framework, pending confirmation of gate standards and review processes by competent authorities and operating entities in the detailed design phase. Conceptual phasing does not constitute implementation commitment.
 
 | Project ID | Project name | Type | Key dependencies | Suggested phase | Investment level | Main risks | Evaluation metrics | Evidence reference |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -465,6 +659,117 @@ To avoid writing operational vision as mere promotional slogans, the proposal ad
 **Conversion pathway**: Three steps from "event-driven" to "industry precipitation"—① Pilot phase uses public events, developer communities, and scenario open days to attract people and data value; ② Converts event participation into enterprise service, achievement transformation, and talent service orders; ③ Precipitates service orders into industry investment, tax revenue, and employment indicators that back-fill Phase 2 construction. Each step sets measurable metrics (event participation → enterprise service signings → industry investment amount); failure to meet targets triggers strategy adjustment rather than scale-up.
 
 **Risk and fallback**: Operators are selected through public tendering/comparison, with contractual performance indicators and exit clauses. Every AI service retains human counter, telephone, and paper channels — basic public services are not interrupted by equipment failure. Public participation uses online + offline dual channels. Complaints are closed within 10 working days. Major adjustments require L1 committee deliberation.
+
+### Economic Feasibility & Funding Model
+
+The following is a conceptual economic analysis framework based on publicly comparable project data and industry experience. It does not constitute investment commitments or financial advice. Formal investment estimates must be completed by professional cost consultants following confirmation of regulatory plans, property rights, engineering geology, and design depth.
+
+**Investment Scale Framework (Conceptual, Project-level Estimates):**
+
+| Project ID | Project Name | Range (100M CNY) | Level | Comparable Reference | Core Assumption | Risk Adjustment |
+| --- | --- | --- | --- | --- | --- | --- |
+| JZ-01 | Slow-traffic gap stitching | 0.3-0.8 | Conceptual | Beijing similar slow-traffic upgrades | 6 gaps, including underpass and overpass | ±50% |
+| JZ-02 | Qinghe Innovation Frontage | 1.5-3.0 | Conceptual | Shanghai Huangpu Riverside | 1.5km waterfront, including eco-restoration | ±40% |
+| JZ-03 | Achievement Transformation Street | 5.0-10.0 | Conceptual | Shenzhen Nanshan Sci-Tech Park urban renewal | Ground-floor renovation and spatial upgrade | ±50% |
+| JZ-04 | Station-city pedestrian connectivity | 3.0-6.0 | Conceptual | Beijing station integration precedents | Underground connectivity + ground-level walking | ±50% |
+| JZ-05 | Edge compute nodes | 0.5-1.5 | Conceptual | Edge computing deployment cases | 5-10 nodes, including equipment and network | ±60% |
+| JZ-06 | Event week route | 0.1-0.3 | Conceptual | Beijing public event cases | Lightweight facilities, operations-focused | ±30% |
+| **Total** | | **10.4-21.6** | | | | |
+
+> The above estimates are conceptual (±50% precision), based on publicly comparable project experience. Formal estimates must be completed by professional cost consultants during the detailed design phase.
+
+**Funding Model (Conceptual Suggestions):**
+
+| Fund Type | Suggested Share | Source | Use | Exit Mechanism | Risk Allocation |
+| --- | --- | --- | --- | --- | --- |
+| Government guiding funds | 20-30% | District/municipal urban renewal funds | Infrastructure (roads, slow-traffic, utilities, public space) | Non-exit (public goods) | Government bears policy and approval risk |
+| Policy loans | 15-25% | China Development Bank / policy banks | Industrial park infrastructure | Installment repayment | Government + operator shared |
+| Industrial funds | 15-25% | Government guiding funds + social capital | AI incubation, accelerators, testbeds | Equity exit (IPO/M&A/buyback) | Market-based risk allocation |
+| Enterprise self-investment | 20-30% | Tenant enterprises | Headquarters/R&D center construction/renovation | Enterprise-owned assets | Enterprise bears market risk |
+| Operating revenue | 5-10% | Scene service fees, event sponsorship, data services | Public space maintenance, community services | Ongoing operations | Operator bears operational risk |
+
+**Cost-Benefit Analysis Framework (Conceptual):**
+
+| Benefit Type | Quantifiable Indicator | Estimation Method | Beneficiary | Realization Period |
+| --- | --- | --- | --- | --- |
+| Direct economic benefit | New AI enterprise revenue, tax contribution | Industry scale multiplier | Government, enterprises | Medium-term (3-7yr) |
+| Indirect economic benefit | Property value uplift, commercial vitality | Comparable case difference method | Owners, merchants | Medium-term (3-7yr) |
+| Social benefit | Job creation, community service coverage | Input-output analysis | Residents, community | Near-term (1-3yr) |
+| Environmental benefit | Green ratio increase, carbon reduction, slow-traffic mode share | Carbon accounting methods | Society | Long-term (7-15yr) |
+| Innovation benefit | AI innovation index, patent output, international influence | Innovation indicator system | City competitiveness | Long-term (7-15yr) |
+
+> The above cost-benefit analysis is a conceptual framework only. Formal economic evaluation must be completed by professional consultants during detailed design, including NPV, IRR, payback period, and social impact assessment.
+
+**Risk Mitigation — Funding Safeguard Mapping:**
+
+| Risk | Impact | Likelihood | Funding Mitigation |
+| --- | --- | --- | --- |
+| Land/property rights changes delay project | Cost increase 20-50% | High | Use lightweight reversible facilities first; defer formal engineering until conditions confirmed |
+| Industry attraction below expectations | Revenue decrease 30-50% | Medium | Phased development; Phase 1 focuses on public services and public spaces, reducing dependence on industrial revenue |
+| Interest rate/financing cost increase | Financial cost increase 10-20% | Medium | Prioritize policy loans and government funds; reduce reliance on commercial financing |
+| Community opposition/approval delay | Schedule extension 1-3yr | Medium | Community engagement upfront; major adjustments subject to community consultation |
+| Technology iteration obsoletes AI facilities | Facility value loss 20-40% | Medium | Modular, replaceable design; avoid one-time large-scale investment |
+
+### Implementation Roadmap
+
+Conceptual implementation roadmap based on the principle of "lightweight launch — rapid validation — gradual expansion" (conceptual phasing, subject to confirmation of regulatory plans, funding, property rights, and operational conditions):
+
+**Phase 1: Lightweight Launch & Demonstration (Conceptual 1-3yr)**
+
+| Milestone | Time Window | Key Tasks | Deliverables | Dependencies | Risk Node |
+| --- | --- | --- | --- | --- | --- |
+| M1 | Month 1-6 | Slow-traffic gap stitching (JZ-01) | 2-3 gap connection plans + construction | Road red line confirmation, traffic approval | Cross-department coordination |
+| M2 | Month 3-12 | Global AI event week route launch (JZ-06) | First event planning, route signage | Public space permit, safety review | Insufficient participation |
+| M3 | Month 6-18 | Edge compute pilot nodes (JZ-05 pilot) | 2 edge nodes deployed | Network access, equipment procurement, operator | Technical stability |
+| M4 | Month 12-24 | Origin community open-source launch hall | Space renovation, community team formation | Venue agreement, operator tender | Community engagement |
+| M5 | Month 18-30 | Safety governance sandbox Phase 1 | Model red-teaming room, standards workshop | Standards consortium, partner agreements | Safety compliance |
+| M6 | Month 24-36 | Data element hall pilot | Data display, compliance consulting, transaction matching | Data governance framework, authorization agreements | Compliance review |
+
+**Phase 1 Investment Estimate: 2-4 hundred million CNY (lightweight operations and public spaces, controlling capital expenditure)**
+
+**Phase 2: Three Zones Formed & Renewal (Conceptual 3-7yr)**
+
+| Milestone | Time Window | Key Tasks | Deliverables | Dependencies |
+| --- | --- | --- | --- | --- |
+| M7 | Year 3-4 | Qinghe Innovation Frontage completed (JZ-02) | 1.5km waterfront + eco-restoration | River blue line, flood assessment |
+| M8 | Year 3-5 | Achievement Transformation Street (JZ-03) | Ground-floor revamp, enterprise move-in | Property rights confirmation, relocation negotiation |
+| M9 | Year 4-6 | Station-city pedestrian connectivity (JZ-04) | Four-quadrant pedestrian network | Station agreement, utility relocation |
+| M10 | Year 5-7 | Three key area public spaces complete | Landscape nodes, public art, accessibility | Zoning detailed design |
+
+**Phase 2 Investment Estimate: 5-10 hundred million CNY (city renewal and public space construction)**
+
+**Phase 3: Ecosystem & Global Voice (Conceptual 7-15yr)**
+
+| Milestone | Time Window | Key Tasks | Deliverables | Dependencies |
+| --- | --- | --- | --- | --- |
+| M11 | Year 7-10 | Regional collaboration network formed | Computing collaboration, joint research, testing linkage | Regional cooperation agreements |
+| M12 | Year 7-12 | AI innovation ecosystem full chain operational | Complete R&D-to-commercialization loop | Ecosystem maturity |
+| M13 | Year 10-15 | Global AI pilgrimage landmark | International communication, AI pilgrimage route, honor display system | Brand accumulation, international influence |
+
+**Roadmap Risk Control Principles:**
+- **Go/No-Go checkpoints** at each phase transition: assess social acceptance, operational data, and industry feedback after Phase 1 before proceeding
+- **Low-cost pilot** for each project: validate feasibility with temporary facilities, operational events, or service platforms before formal engineering
+- **Dependency disclosure** for all milestones: automatic deferral if dependencies not met
+- Conceptual phasing does not constitute implementation commitments; formal implementation plans must be determined by competent authorities and operators during detailed design
+
+### Implementation Risk Register
+
+To address the "implementability" review dimension's risk management focus, the following is a systematic risk register (conceptual framework, requiring quantitative risk analysis during detailed design):
+
+| Risk ID | Category | Description | Likelihood | Impact | Mitigation | Contingency | Responsible | Monitoring Indicator |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| R01 | Policy | Urban renewal policy changes alter project scope | Medium | High | Phased implementation, modular design, flexible long-term projects | Reduce scope, focus on launched projects | Government | Policy tracking |
+| R02 | Property Rights | Complex ownership delays renewal projects | High | High | Survey upfront, owner negotiation mechanism, prioritize public space | Relocate projects to clear ownership areas | Government + developer | Survey completion rate |
+| R03 | Funding | Financing cost increase or funding shortfall | Medium | High | Diversified sources, policy loans priority, controlled launch scale | Reduce Phase 2/3, complete ongoing projects | Finance + banking | Funding availability, financing cost |
+| R04 | Industry | AI industry attraction below expectations | Medium | Medium | Phased development, public services first, industry fund guidance | Reduce industrial space ratio, increase flexible use | Investment team | Occupancy rate, vacancy rate |
+| R05 | Technology | AI technology iteration obsoletes facilities | Medium | Medium | Modular design, upgrade-ready interfaces, lightweight facilities first | Retrofit or replace obsolete facilities | Tech ops team | Technology refresh cycle |
+| R06 | Community | Community opposition or insufficient participation | Medium | Medium | Community engagement upfront, information disclosure, complaint channels | Pause controversial projects, community consultation | Community committee | Participation rate, complaint rate |
+| R07 | Engineering | Underground utilities/heritage discovery changes scope | Medium | High | Pre-construction survey, utility detection, design flexibility | Adjust plan, bypass sensitive areas | Engineering team | Survey completion rate |
+| R08 | Operations | Operator exit or insufficient capability | Low | Medium | Public tender, contract performance clauses, exit mechanism | Activate backup operator or government interim takeover | Ops regulator | Performance compliance rate |
+| R09 | Compliance | Data privacy or AI ethics compliance incident | Medium | High | Data minimization, human review, independent audit | Suspend services, human backup | Data governance committee | Compliance audit results |
+| R10 | Climate | Extreme weather impacts public space use and facility safety | Low | Medium | Flood-proof design, emergency plans | Activate emergency response, close affected areas | Public space operator | Extreme weather warnings |
+
+> The above risk register is a conceptual framework. Quantitative risk analysis (probability × impact) must be completed by professional risk consultants during detailed design. This register does not constitute a project-level risk management plan but illustrates the systematic risk identification and mitigation approach.
 
 ## Metrics, Area Recalculation, and Compliance Matrix
 

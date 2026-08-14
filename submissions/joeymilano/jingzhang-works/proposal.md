@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以城市可用性为总纲，把京张沿线组织成三座工场与两条服务链。每项 AI 服务都必须具备人工接手、无 App 等价路径、最少数据、责任主体、停止条件和公开改进记录。"
 tracks: ["ai-traffic-walkability", "ai-public-services", "enterprise-services-ecosystem"]
 scenarios: ["ai-traffic-walkability", "ai-health-service-navigation", "ai-cultural-guide", "enterprise-service-copilot", "robot-delivery-low-speed", "public-safety-operations-review"]
-iteration: "v1.5"
+iteration: "v1.7"
 ---
 
 # 京张好用 / JING-ZHANG WORKS
@@ -37,6 +37,14 @@ iteration: "v1.5"
 九十天试点现在有了一本能拿去开会的开工账。六行成本对象分别是现场基线、纸质服务、可移动公共界面、受控测试、值守运行和永久工程。每一行都写明按什么计量，哪些费用会反复发生，谁确认范围以后才准询价，撤场和数据删除也放在同一笔采购里。金额仍为空，因为场地、开放时段、责任采购人和三家可比报价尚未成立。这个空白会阻止虚假的总投资，也给专业团队留下可以接着算的清单。[source:V11-IMPLEMENTATION-PLAYBOOK] [metric:startup_cost_line_count]
 
 首日演练也补到五类停用情形。路线与生命安全、信息与网络、人员缺岗、隐私事件、供应商退出各有人工动作和重新开放证据。结构检查只能证明这些步骤已经写清，场地和人员签字之前仍然不能开场。[source:V12-DAY-ONE-DRILL] [metric:stop_drill_category_count]
+
+字段写全以后，还要看看规则会不会真的挡错。开门前排演器为十二项任务各保留一份完整合同，再依次拿掉责任主体、无 App 路径、最少数据、人工接手、停止条件和验证指标，得到八十四个合同样例。六张首日故障卡另跑六次，总计九十次离线检查。完整样例最多只能进入现场复核，七十二个缺项样例和六个故障样例都必须挡住 AI 开门或退回纸质与人工服务。当前九十项预期判断全部相符，现场结果仍为零。这只能说明规则能挡住这些合成错误，不能说明任何路线、人员或服务已经在现场有效。[source:V16-PREOPENING-REHEARSAL] [metric:preopening_synthetic_case_count] [metric:preopening_expected_match_count]
+
+规则还需要一间能被搭出来的房间。“好用服务间”把 U05-A 六步任务压进一处 6.0 米乘 4.8 米的试装范围。1.8 米普通通行带始终可以直接穿过。先问门槛先摆纸卡和服务状态，柜台做成 0.75 米与 1.05 米两种试装高度。结果台交付带来源和到期日的纸张，安静复核位预留 1.5 米回转范围，接手与改进墙放在出口前。这里的数字来自设计试装，尚未经过场地测量、无障碍、消防或疏散复核，不能写成合规尺寸。场地未授权，运营人也没有任命。[source:V17-WORKS-BAY] [metric:works_bay_design_area_sqm] [metric:works_bay_spatial_zone_count]
+
+纸质结果不是一句口号。空白模板固定七栏，分别记录要办的事、公开来源和发布日期、材料清单、线下下一步、需要重查的日期、人工核对人与时间、问题编号。AI 可以从有日期的公开资料中提取候选字段，起草短句和双语版本，也可以提示缺项。它不能判断资格、补造来源、替工作人员签字或保存个人画像。来源、到期日、线下去向和人工签字少一项，柜台就不出单。当前模板没有填写任何真实公共服务答案，也没有真实签字或问题编号。[source:V13-COMPLETE-TASK-RECEIPT] [metric:paper_result_required_field_count]
+
+这本 A3 手册也按独立评图重新排过。十六页各自回答一个问题，每页只承担一个判断，并同时给出直接证据和边界。中英文正文、首屏、六组核心图、A3 与 A0 另做十四组作者等义审计。审计能证明这些项目逐项核对过，不能代替独立译审或公众理解测试。[source:V17-JUROR-PATH] [source:V17-BILINGUAL-AUDIT] [metric:bilingual_audited_pair_count]
 
 ## 设计依据与资料清单
 
@@ -70,7 +78,7 @@ iteration: "v1.5"
 | 智能化 AI 活力城市 | 大钟寺日用工场 | 通勤、休息、学习和办事的完整任务路线 |
 | AI 治理全球话语权 | 三处工场共用协议 | 六字段放行、公开改进与退役记录 |
 
-区域协同只传递经过脱敏的任务模式、测试协议和版本化服务标准，不搬运个人记录或企业受限资料。北纬社区提供社区服务问题和复盘经验，未来科学城连接科研原型与测试方法，怀柔科学城连接科学设施应用与公共理解，经开区连接制造验证和规模化工程经验，京津冀网络承接可移植的双语服务标准。以上均为建议关系，不表示任何机构已经参与、出资或承诺采用。[source:V11-REGIONAL-COLLABORATION]
+区域合作只传递经过脱敏的任务模式、测试协议和版本化服务标准，不搬运个人记录或企业受限资料。北纬社区提供社区服务问题和复盘经验，未来科学城连接科研原型与测试方法，怀柔科学城连接科学设施应用与公共理解，经开区连接制造验证和规模化工程经验，京津冀网络承接可移植的双语服务标准。以上均为建议关系，不表示任何机构已经参与、出资或承诺采用。[source:V11-REGIONAL-COLLABORATION]
 
 ![一件公共任务如何穿过三座工场与两条服务链](assets/figures/site-overview.png)
 
@@ -110,6 +118,10 @@ iteration: "v1.5"
 
 三处原型的建筑策略均从“少动也能验证”开始。可移动组件负责第一轮，首层适应性改造负责第二轮，永久建设只在运营证据、公众反馈和专业条件共同支持时进入研究。任何一处若无具名运营者、无障碍连续路线或安全退出，均不得开场。[metric:public_node_count] [depth:height_massing_character]
 
+共学工场先深化一间“好用服务间”。它利用既有首层公共前厅，不预设新建筑。6.0 米乘 4.8 米的试装范围分成普通通行、先问门槛、双高度柜台、纸质结果、安静复核、接手与改进六段。人工服务具备时可以只开人工模式。六字段合同和开门前检查同时通过后，AI 才能有限加入。断网、模型或供应商出问题时退回人工模式；路线、人员、安全、隐私或关键信息出问题时整间关闭恢复。任何重新开放都要重新走通纸质任务并核对改进记录。[source:V17-WORKS-BAY]
+
+这间房目前只有图纸和责任接口。场地授权、实测平面、无障碍与消防疏散复核、信息责任人、值守班次、数据审查和撤场办法，八项少一项都不进入安装。建议责任角色也保持待确认，方案没有替任何机构任命运营者。[source:V17-WORKS-BAY] （假设 A-ACCESS-001）
+
 组件库把原型拆成六件可以单独安装、检查和撤走的工具。C01 先问台提供纸图、人工问路和问题登记。C02 人工接手亭设置可见标记、无障碍柜台、实体停止和离线联系人。C03 公开改进墙显示任务编号、负责人、期限、结果与退役记录。C04 无障碍测试道服务受控设备测试。C05 任务路线标记把纸图、编号和接手方向接起来。C06 安静休息点记录座椅、遮阴、安静和人工帮助状态。展示体系称为“好用记录”，只发布有证据通过、到期修改和已经退役三种状态，不颁发缺少证据的创新荣誉。[source:V11-COMPONENT-LIBRARY]
 
 ![三座工场的空间剖面与可迁移原型](assets/figures/key-areas.png)
@@ -136,6 +148,8 @@ iteration: "v1.5"
 | T04 | 数字孪生应急演练 | 用合成数据推演疏散和资源调度 | 桌面推演与纸质预案 | 应急专业人员负责；模型与预案冲突时以人工指挥为准 |
 
 城市可用性编译器读取 `visual/assets/task_journeys.json`。六项字段全部存在时输出 `ready_for_field_review`，缺失时输出具体原因，不会生成默认责任人或替代数据。编译结果写入 `visual/assets/usability-readiness.json`，输入哈希和版本写入同一文件，便于复演。它是责任完整性检查器，不是合规认证器。[source:USABILITY-COMPILER] [metric:compiler_required_field_count]
+
+`visual/assets/run_preopening_rehearsal.js` 继续做反向检查。每项任务先跑完整版本，再逐项删掉六个放行字段；六张故障卡则在开门前注入。脚本要求缺项和故障全部阻断 AI 开场，也要求所有 `field_result` 保持空值。结果连同两份输入哈希写入 `visual/assets/preopening-rehearsal.json`。这是一组可复演的合成规则测试，不是居民参与、专业审查或现场验收。[source:V16-PREOPENING-REHEARSAL] [metric:preopening_missing_case_blocked_count] [metric:preopening_fault_case_blocked_count]
 
 数据规则遵循最少、短期、可删除。路线服务不保存精确个人轨迹，公共信息服务不保存提问者身份，拥挤管理不使用人脸，测试场景只使用合成或明确授权数据。每个场景都有人工复核与投诉路径，拒绝 AI 不影响获得等价服务。[standard:GENAI-INTERIM-MEASURES] （假设 A-DATA-001）
 
@@ -242,6 +256,8 @@ iteration: "v1.5"
 `compliance_matrix.json` 对公告全部必选条款建立章节、图层、图纸、指标、来源、假设和自检映射。`standard_matrix.json` 记录正式标准的响应位置。`design_depth_matrix.json` 说明控规深度和综合实施方案深度如何被证据支撑。三份矩阵供机器复核，正文保留评审真正需要理解的判断。[standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [depth:existing_conditions_diagnosis]
 
 `reviewer_evidence_index.json` 留在结构化附件中，不再承担方案叙事。正文和图件先说明人怎样完成任务，索引只在需要核对来源时提供路径。它不替评审打分，也不会把概括当成新的事实。[source:V12-REVIEWER-EVIDENCE-INDEX]
+
+双语等义由一份作者审计台账逐项记录。十四组配对覆盖正文关键章节、离线首屏、六组核心图、十六页 A3 和三页 A0，核对主张、数字、单位、图题、图例、证据边界与图位。作者已经逐项核完十四组，独立人工译审仍未完成，不能用 14/14 替代译者或目标读者的判断。[source:V17-BILINGUAL-AUDIT] [metric:bilingual_audited_pair_count]
 
 ![设计演练 U05-A，不用手机完整办成一件事](assets/figures/metrics-evidence.png)
 

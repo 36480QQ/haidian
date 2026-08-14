@@ -593,6 +593,20 @@ Data gaps: existing buildings, property rights, underground space and municipal 
 - **Recruitment & translation channels**: talent (developer community → entrepreneurship), enterprise (benchmark testing → settlement), developer (contribution → honour → cooperation).
 - **Long-term maintenance responsibility**: each project clearly defines its operating entity and maintenance cycle (see table above); no fabricated operating budgets.
 
+### Prioritisation principle: minimum regret (minimax regret)
+
+Under provisional boundary + missing control plan + missing existing-conditions survey, "maximum on every metric" is neither verifiable nor implementable. This proposal adopts a **minimum-regret (minimax regret) prioritisation principle** — not pursuing single-indicator optimality, but ensuring **the weakest experience meets standard**, spending limited certainty on "avoiding the worst outcome" `[depth:phasing_implementation]` `[depth:risk_missing_data]`.
+
+**Criterion**: for every design decision on the 17 sub-blocks, the question is not "how good can it get" but "how bad can it get" — if the worst case is acceptable (has fallback, is rollback-able, does not harm vulnerable groups), proceed; if unacceptable (no fallback, irreversible, harms public interest), downgrade or stop.
+
+| Priority | Criterion | Example sub-blocks | Implementation strategy |
+|---|---|---|---|
+| **P-Ensure** | Worst = physical fallback, rollback-able, no harm to vulnerable groups | GRN-B1 heritage park (physical-guide fallback), LIFE-D2 community hub (human-window fallback) | Near-term priority; independent of AI maturity |
+| **P-Conditional** | Worst = AI failure degrades to human but needs extra operating cost | INNO-A2 compute centre, IND-C1 HQ base | Mid-term; precondition = operating entity + cost confirmed |
+| **P-Pilot** | Worst = AI failure with difficult human fallback, needs strict geofence | S8 robot delivery, S9 autonomous driving | SC-04 minimum pilot only; full G0-G6 passage before expansion |
+
+This mirrors Zhan Tianyou's '人'-shaped switchback engineering wisdom — he did not pursue the shortest path or the highest speed, but chose the **most reliable** solution to overcome the steep grade `[source:HISTORY-ZHAN-TIANYOU]`. The AI switchback line's first principle is the same: **most reliable, not highest performance**.
+
 ### Implementation timeline and responsibility matrix (agent.6 long-term-operations refinement)
 
 The P1-P6 project portfolio, the SC-04 pilot and the 17 sub-blocks are placed on a **three-year rolling timeline** (conceptual, pending entity and budget confirmation) `[depth:phasing_implementation]` `[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]`:

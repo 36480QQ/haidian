@@ -8,7 +8,7 @@
 | --- | --- | --- | --- |
 | 方案正文、译文和静态 HTML | `proposal.md`、`proposal.en.md`、`report/proposal*.html`、`visual/*.html` | 由申报智能体生成；哈希与 `agent.json`、`manifest.json` 关联。 | `COMMUNITY-DISPLAY-ONLY` 仅用于提交展示；不等于商业再许可。 |
 | 概念几何与指标 | `geometry/*.geojson`、`metrics.json` | 每层声明 `source_type`、置信度和临时边界提示；指标按 EPSG:4548 复算。 | 非官方红线、地籍、控规或审批依据；正式数据发布后整包重算。 |
-| 图件、图册与展板 | `assets/figures/*.png`、`drawings/*.pdf` | 基于包内 GeoJSON 和 metrics 的本地渲染结果；不加载在线底图或地图瓦片。 | 可用于方案评审；不主张真实测绘精度或已批准建设方案。 |
+| 图件、图册与展板（含 V3 首读册） | `assets/figures/*.png`、`drawings/*.pdf`、`drawings/jury-booklet*.html` | V3 的 12 张双语信息图和中英文 12 页首读册均由包内 GeoJSON/metrics、原创矢量关系图和已登记 VI 离线渲染；不加载在线底图、地图瓦片、第三方照片、企业标识或音视频素材。 | 可用于概念方案评审；不主张真实测绘精度、现场性能、已批准建设方案或已部署数字服务。 |
 | Logo 与 VI | `assets/identity/logo-lockup.*`、`assets/identity/brand-system.*` | 原创概念性矢量构图及可见 PNG 预览；未使用政府徽标、注册商标或既有企业标志。 | 仅供本提案；公共实施前需完成商标检索、导视审批与书面授权。 |
 | 字体 | SVG 内声明 Noto Sans CJK / DejaVu Sans；PNG 为本地渲染像素 | 不随包分发字体文件。 | 正式出版时由出版方确认嵌入或替换字体许可。 |
 | 代码与依赖 | 静态 HTML 无远程脚本、远程字体、iframe 或 API；生成依赖不打包。 | 离线 HTML 与 visual review 核验。 | 不把生成环境、密钥或第三方源代码作为提交资产。 |
@@ -37,7 +37,8 @@
 | 五组图件 | `assets/figures/*.png` | `assets/figures/*.en.png` | 同一 GeoJSON/metrics 生成；地图、图例、数据限制翻译对应。 |
 | 品牌与 VI | 品牌识别段、identity assets | Concept identity section、same identity assets | 颜色、标志语义、非官方/非注册边界一致。 |
 | 六案例证据 | 全球案例表、CASE-* | Six-case evidence table、CASE-* | 主体、时间、机制、许可处理和不背书声明一致。 |
-| 三验证场景 | 概念性试点卡表 | Conceptual pilot cards table | 数据、TRL、指标、空间、运营方、退出与人工兜底一致。 |
+| 三验证场景 | 概念性试点卡表、V3 服务蓝图 | Conceptual pilot cards table, V3 service blueprint | V3 主场景统一为低风险导览/无障碍服务原型；不采集人脸、身份或连续轨迹，算法仅建议，人员/静态导视优先，异常时关闭数字建议。 |
+| V3 首读规则与锚点 | 四重转换、约 800 m 概念工作带、决策门、用户旅程、首读册 | Four-part rule, approx. 800 m concept working strip, decision gates, user journeys, jury booklet | “约 800 m”为非测量、非工程工作带；四类门、三类用户旅程、首读顺序与所有概念/非承诺边界实质等值。 |
 | 组件、地标、历史与运营 | 公共空间、实施与分期章节 | Public Space, Renewal, and operating model sections | 组件库、三地标、历史解释、活动/开发者/场景开放/品牌治理内容对应。 |
 | 状态表述 | `manifest.json`、`self_check.json`、`visual/index.html` | same JSON、`visual/index.en.html` | 统一为 `ready_for_review` / “正式评审就绪 / Formal review ready”，不等于获奖、实施批准或政府背书。 |
 
@@ -52,4 +53,4 @@
 
 ## 5. 未清权或待决事项 / Unresolved Items
 
-官方边界、控规、产权、道路红线、市政、消防、文保和公共服务资料尚未作为可用于法定结论的数据提供。任何活动名称、合作方 Logo、奖项展示、商标、真实运营数据或个人数据，在使用前均需逐项书面授权、目的限定、数据最小化、网络安全与人工复核。未取得书面许可的外部案例图像、图纸、标志和数据库截图不得加入提交资产。
+官方边界、控规、产权、道路红线、市政、消防、文保和公共服务资料尚未作为可用于法定结论的数据提供。V3 约 800 m 概念工作带不是经测量的链长、法定线位、产权界线或工程放样；AI 场景驿站也不接入真实个人数据或声称现场性能。任何活动名称、合作方 Logo、奖项展示、商标、真实运营数据或个人数据，在使用前均需逐项书面授权、目的限定、数据最小化、网络安全与人工复核。未取得书面许可的外部案例图像、图纸、标志和数据库截图不得加入提交资产。

@@ -423,7 +423,10 @@
       "report_sections": [
         "总体设计范围城市更新与控规深度城市设计",
         "更新项目清单、实施政策与分期计划",
+        "实施门槛与公共价值契约（G0—G4）",
+        "G0 机构对接清单（概念）",
         "场景开放运营与轻量试点机制",
+        "AI 作用空间形态的工程链路（示例）",
         "全生命周期空间供给与运营策略",
         "用地、建筑规模与拆改留方案"
       ],
@@ -648,7 +651,9 @@
       "title_zh": "众智园AI自主创新加速区",
       "mandatory": true,
       "report_sections": [
-        "重点区域详细设计"
+        "重点区域详细设计",
+        "空间形态原型：低密测试院落",
+        "AI 作用空间形态的工程链路（示例）"
       ],
       "geojson_layers": [
         "geometry/key_areas.geojson",
@@ -665,7 +670,9 @@
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "drawings/a0-boards.pdf",
+        "assets/figures/key-area-zhongzhiyuan.png",
+        "assets/figures/key-area-zhongzhiyuan.en.png"
       ],
       "visual_sections": [
         "重点区域",
@@ -692,7 +699,9 @@
       "title_zh": "北京AI原点社区",
       "mandatory": true,
       "report_sections": [
-        "重点区域详细设计"
+        "重点区域详细设计",
+        "空间形态原型：斜向交换站厅",
+        "AI 作用空间形态的工程链路（示例）"
       ],
       "geojson_layers": [
         "geometry/key_areas.geojson",
@@ -709,7 +718,9 @@
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "drawings/a0-boards.pdf",
+        "assets/figures/key-area-origin.png",
+        "assets/figures/key-area-origin.en.png"
       ],
       "visual_sections": [
         "重点区域",
@@ -737,7 +748,9 @@
       "title_zh": "大钟寺AI产业聚集区",
       "mandatory": true,
       "report_sections": [
-        "重点区域详细设计"
+        "重点区域详细设计",
+        "空间形态原型：站城双厅",
+        "AI 作用空间形态的工程链路（示例）"
       ],
       "geojson_layers": [
         "geometry/key_areas.geojson",
@@ -754,7 +767,11 @@
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "drawings/a0-boards.pdf",
+        "assets/figures/key-area-dazhongsi.png",
+        "assets/figures/key-area-dazhongsi.en.png",
+        "assets/figures/section-dazhongsi.png",
+        "assets/figures/section-dazhongsi.en.png"
       ],
       "visual_sections": [
         "重点区域",
@@ -877,6 +894,7 @@
       "report_sections": [
         "AI 创新生态、人才画像与 AI+ 场景",
         "场景开放运营与轻量试点机制",
+        "AI 作用空间形态的工程链路（示例）",
         "全生命周期空间供给与运营策略",
         "交通、轨道、市政与公共服务设施",
         "蓝绿空间、公共空间与城市风貌"
@@ -930,7 +948,13 @@
       "report_sections": [
         "AI 创新生态、人才画像与 AI+ 场景",
         "蓝绿空间、公共空间与城市风貌",
-        "重点区域详细设计"
+        "重点区域详细设计",
+        "空间形态原型：低密测试院落",
+        "空间形态原型：斜向交换站厅",
+        "空间形态原型：站城双厅",
+        "实施门槛与公共价值契约（G0—G4）",
+        "G0 机构对接清单（概念）",
+        "AI 作用空间形态的工程链路（示例）"
       ],
       "geojson_layers": [
         "geometry/public_space.geojson",
@@ -948,7 +972,9 @@
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "drawings/a0-boards.pdf",
+        "assets/figures/section-dazhongsi.png",
+        "assets/figures/section-dazhongsi.en.png"
       ],
       "visual_sections": [
         "重点区域",
@@ -1020,7 +1046,10 @@
       "mandatory": true,
       "report_sections": [
         "更新项目清单、实施政策与分期计划",
+        "实施门槛与公共价值契约（G0—G4）",
+        "G0 机构对接清单（概念）",
         "场景开放运营与轻量试点机制",
+        "AI 作用空间形态的工程链路（示例）",
         "全生命周期空间供给与运营策略",
         "AI 创新生态、人才画像与 AI+ 场景",
         "统筹研究范围产业与未来城市研究"
