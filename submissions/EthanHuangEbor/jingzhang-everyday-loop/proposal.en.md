@@ -17,7 +17,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ### Current Haidian implementation guidance
 
-The implementation backbone is the current Haidian District Urban Renewal Guidelines (2025 Edition) (`《海淀区城市更新导则（2025年版）》`) and Haidian District Urban Renewal Implementation Guidelines (2025 Edition) (`《海淀区城市更新实施指引（2025年版）》`), effective 1 July 2025 (2025-07-01). These instruments connect four-zone coordination, the AI innovation district, the Jing-Zhang railway heritage corridor, third spaces, accessible slow mobility, project generation and public participation. Their named district, subdistrict/town and specialist-department roles are referral points to consult, not a signed project RACI. [source:HAIDIAN-URBAN-RENEWAL-2025] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]
+The current Haidian District Urban Renewal Guidelines (2025 Edition) (`《海淀区城市更新导则（2025年版）》`) and Haidian District Urban Renewal Implementation Guidelines (2025 Edition) (`《海淀区城市更新实施指引（2025年版）》`), effective 1 July 2025 (2025-07-01), are **pending repository source-registry review**. They are implementation-logic references, not approved formal sources. They connect four-zone coordination, the AI innovation district, the Jing-Zhang railway heritage corridor, third spaces, accessible slow mobility, project generation and public participation. Their named district, subdistrict/town and specialist-department roles are referral points to consult, not a signed project RACI; every critical claim remains independently supported by the approved call, taskbook or applicable standard. [source:HAIDIAN-URBAN-RENEWAL-2025] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]
 
 The Origin Commons Protocol is a competition concept mapped to that route. It is not an urban-renewal implementation filing, selected site, approval, investment decision or government endorsement. The call and taskbook define the three scales, three positionings, five functions, three areas and two wings, and agent.1-agent.6; provisional geometry is confined to offline composition and recalculation. [source:OFFICIAL-ANNOUNCEMENT] [data:geometry/site_boundary.geojson] [depth:risk_missing_data]
 
@@ -36,6 +36,29 @@ Research establishes mechanisms; overall design establishes spatial continuity; 
 ## Coordinated Research Area: Industry and Future City Research
 
 agent.2 replaces a company wish-list with an eight-input ecosystem in which each resource has access, public-value, responsibility, evaluation and exit rules. agent.1 holds the common concept; agent.3 turns scenarios into service contracts; agent.4 supplies stations, landmarks and components; agent.5 creates cultural wayfinding; agent.6 defines annual opening, developer-community and conversion gates. [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [depth:renewal_project_list]
+
+### Six-task auditable index
+
+| Task | Locatable competition output | Review gate |
+|---|---|---|
+| agent.1 | Three positionings, five functions, three zones, two wings and the two-way collaboration loop | Common IDs, public-value exchange and a no-commitment boundary |
+| agent.2 | Six global cases, eight ecosystem inputs and cross-regional interfaces | First-party sources, transfer limits and a Beijing translation |
+| agent.3 | Twelve public-AI service contracts and three reversible pilots | Same-task staffed route, appeal, stop and restoration |
+| agent.4 | Nine-station ledger, three carriers, three pilgrimage landmarks, component library and honour display protocol | Concept-only location, maintainability and consent/removal |
+| agent.5 | Brand and wayfinding specification and a three-layer cultural-resource system | Trademark search pending; no copied mark or official-signage implication |
+| agent.6 | Annual programme brand, developer community and talent and enterprise conversion pathway | Capacity, responsibility, public record, evaluation and exit |
+
+#### two-way collaboration loop
+
+The Zhongguancun technology-service wing can contribute research questions, model and engineering support, while the Xiaoyue River scenario-enablement wing can contribute bounded everyday public problems, staffed service and feedback. The return path sends evidence, unresolved risks and reusable components back to both wings. Beiwei Community, Future Science City, Huairou Science City, Beijing Economic-Technological Development Area and Jing-Jin-Ji remain invitation-only interfaces pending real mandates, parties, data authority and procurement rules; the diagram is not a signed collaboration network. [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [data:visual/assets/professional-evidence.json#/regional_synergies]
+
+#### Brand, landmarks, honours and cultural resources
+
+The **Brand and wayfinding specification** constructs the mark from two parallel heritage tracks and three open-loop segments, keeps one track-gauge unit of clear space, sets minima of 72 px / 18 mm, and supplies navy-on-ivory and ivory-on-navy monochrome use. It is a competition concept distinct from statutory or official signage, with trademark similarity search pending. The **three pilgrimage landmarks** are Open Model Workshop, Origin Urban Living Room and Centennial Jing-Zhang Memory Gateway Canopy. The **honour display protocol** requires consent, verification, public record, appeal and removal, and forbids unauthorized names, portraits, logos or civic ranking. The **cultural-resource system** records source, rights, verification status and public interpretation for heritage, innovation and public-AI layers. [data:visual/assets/design-system.json#/brand] [data:visual/assets/professional-evidence.json#/landmarks] [depth:blue_green_public_space]
+
+#### Annual opening, developer community and conversion
+
+The **annual programme brand**, Origin Commons Open Calendar, uses monthly S events (up to 30 people), M events (31-80) and L events only after site, fire, crowd, budget and operator approval. Annual finance, staffing capacity and outcome values remain unknown. The **developer community** admits a proposal only after public-problem, data/privacy, accessibility, human-review, public-benefit, incident and exit checks. The **talent and enterprise conversion pathway** links an evidenced prototype to mentoring, compliant test access and a public close-out record; it promises no investment, procurement, venue, visa, residency or government endorsement. [data:visual/assets/annual-program.json#/months] [data:visual/assets/annual-program.json#/developer_community]
 
 Six first-party precedents calibrate distinct mechanisms: Punggol Digital District for district platforms and university-industry coupling; Mila for research-community and responsible-AI governance; STATION F for programme admission and service density; High Tech Campus Eindhoven for shared technical-space ladders; Dubai AI Campus for bundled enterprise access; and Testbed Helsinki for public-problem-led controlled trials. [source:CASE-PUNGGOL-JTC] [source:CASE-MILA]
 
@@ -82,7 +105,13 @@ Supplier status is `concept_not_procured` and interfaces must be replaceable. Ex
 
 The 72-case offline exercise is a rule tabletop only: 12 qualified contracts reach `tabletop_only`, while 60 negative cases missing responsibility, a staffed route, data ceiling, stop authority or restoration evidence are blocked. It is not user research, field performance, accessibility review or proof of model effectiveness. [data:simulation.json#/cases] [metric:synthetic_tabletop_check_count]
 
+The future test ladder has five levels. T1 synthetic rule tabletop is complete but non-empirical; T2 user comprehension and same-task staffed route, T3 professional accessibility and route audit, T4 named algorithm/supplier/version evaluation, and T5 time-limited reversible field pilot all remain `future_pending_authorization`. Their gates respectively require accessible recruitment/compensation/consent, verified site and qualified audit, lawful data and incident ownership, or site/fire/structure/insurance/funding authority. Missing evidence blocks escalation; a T5 failure defaults to stop, deletion, removal and restoration of ordinary service. [data:visual/assets/professional-evidence.json#/future_test_ladder]
+
 Five core persona groups cover residents/carers, researchers/developers, startups/SMEs, commuters/international visitors, and public-service/site staff, with children, older people, disabled people and non-smartphone users as cross-cutting checks. Actual insight must come from the unrun co-design protocol, not persona inference. [data:visual/assets/co-design-and-equity.json#/persona_groups]
+
+### Twelve-scenario spatial binding
+
+SC-01 accessible navigation, SC-02 shade/rest, SC-03 care waiting and SC-04 staffed multilingual help bind to the AI Origin Community and the Xiaoyue River scenario-enablement wing. SC-05 open-model explanation, SC-06 controlled evaluation, SC-07 developer sandbox and SC-08 research-to-public translation bind to Zhongzhiyuan and the Zhongguancun technology-service wing. SC-09 heritage interpretation, SC-10 visitor transfer, SC-11 public launch and SC-12 incident/appeal close-out bind to Dazhongsi and the heritage public spine. These are concept allocations, not selected sites; each may move, shrink or stop when boundary, title, accessibility, heritage, fire or operator evidence conflicts. [data:visual/assets/scenarios.json#/scenarios] [metric:scenario_card_count]
 
 ![Twelve services, public AI and exit chain](assets/figures/mobility-bluegreen.en.png)
 
@@ -119,19 +148,23 @@ Affected users and their chosen supporters hold `modify_or_stop_before_release` 
 
 The blue-green network treats the Qinghe, Xiaoyue River, heritage line and neighbourhood green space as heat, stormwater and everyday-stay infrastructure. Approximately 12.34% conceptual green ratio and 2.04% conceptual nine-station footprint ratio are internal comparisons; conflicts with green, heritage, transport or title conditions require relocation, reduction or cancellation. [data:geometry/green_space.geojson] [metric:green_ratio]
 
+The CR-01-CR-06 cultural-resource register separates the task-confirmed Jing-Zhang heritage scope from research leads on railway engineering, community oral history, Zhongguancun innovation and Dazhongsi place memory, plus a future AI public-culture co-creation archive. Beyond the competition scope, no date, person, event, precise location, media right or participation result is pre-filled. Content without a primary source, location check and licence is not displayed and must be corrected or withdrawn when challenged. [data:visual/assets/professional-evidence.json#/cultural_resources]
+
 Cultural wayfinding has railway-heritage, Zhongguancun-innovation and public-AI layers, without corporate logos or ranking systems conferring civic authority. [standard:MOHURD-URBAN-DESIGN-MEASURES]
 
 ## Renewal Projects, Implementation Policy, and Phasing
 
 ### Cost, procurement and exit
 
-For the 230 m² midpoint M assumption, low/base/high totals are CNY 1,811,760 / 3,038,880 / 5,120,000. Twelve lines recompute as quantity × rate. Only the restoration-material line uses Beijing's official July 2026 tax-inclusive recycled paving-brick reference of CNY 44-50/m²; the other 11 categories are planning assumptions, not quotations. These totals are not a budget, tender control price or investment commitment. [data:visual/assets/cost-and-procurement.json#/totals_cny] [data:visual/assets/cost-and-procurement.json#/source_register]
+For the 230 m² midpoint M assumption, machine files retain low/base/high totals of CNY 1,811,760 / 3,038,880 / 5,120,000; human-facing text uses approximately CNY 1.81 / 3.04 / 5.12 million. Twelve lines recompute as quantity × rate. Only the restoration-material line cites the **needs-review** source `BEIJING-MATERIAL-RATE-2026-07`: the Beijing July 2026 market-reference PDF, p.56, product code **3605000403**, tax-inclusive recycled paving brick at **CNY 44-50/m²**. It excludes base course, labour, removal and transport. The other 11 categories are broad planning assumptions, not quotations. These totals are not a budget, tender control price or investment commitment. [source:BEIJING-MATERIAL-RATE-2026-07] [data:visual/assets/cost-and-procurement.json#/totals_cny]
 
 Procurement clauses cover public value, supplier disclosure, data access, interoperability, incidents, accessibility acceptance, audit, version change, continuity, exit support, return/deletion, component removal and surface restoration. Passing a pilot never triggers automatic procurement; unresolved rights, staffed service or restoration blocks release. [depth:phasing_implementation]
 
 ### 0-100 days and M03/M12/M36
 
 The 0-100-day route contains checkpoints D001-010 through D096-100 and five gates: G0 rights/site, G1 human equivalence, G2 controlled release, G3 stop/restoration, and G4 independent review. M03 can frame a reversible pilot only after authorization and evidence; M12 reviews service, equity and cost; M36 considers replication only after site, funding, operating and equity gates. Missing named responsibility, staffed fallback, removal or deletion evidence defaults to rollback. [data:visual/assets/first-100-days.json#/programme] [metric:evidence_gate_count]
+
+The annual organization defines only five unassigned roles: public client, programme steward, staffed-service lead, technical/data lead and independent reviewer. Authorized capacity, FTE, venue, annual budget and funding source remain `null/unknown`; eight KPIs define access, subgroup gap, feedback closure, incident, fallback, maintenance, exit and conversion-review measures without inventing outcomes. Four pathways cover talent, developers, research outputs and enterprises, with 3/6/12-month continue/revise/exit reasons and no promise of jobs, investment, procurement, visas or policy benefit. [data:visual/assets/annual-program.json#/organization] [data:visual/assets/annual-program.json#/conversion_pathways]
 
 The housing/urban-rural development lead, subdistrict/town, commerce, development/reform, disabled-persons federation, urban management, civil affairs, water, culture/tourism, planning/natural-resources and property roles are named referral points from the official route. None has committed to this project. [source:HAIDIAN-URBAN-RENEWAL-2025] [data:visual/assets/raci-and-signoff.json#/referral_roles]
 
@@ -151,11 +184,17 @@ The principal risk is converting concept evidence into real-world fact. No offic
 
 The 12 records and 72 synthetic cases prove rule structure only, the three-stage co-design process is unrun, and cost is a sensitivity model. Data governance uses purpose limitation, minimum necessity, human review, appeal, pause, deletion and reversible exit; actual deployment still requires the authorized parties' legal, cybersecurity, ethics, accessibility, fire and public-safety review. [source:UK-ATRS-2.1]
 
-Chinese and English use one factual skeleton but are edited independently. Titles, quantities, M/SC/P/CMP/G IDs, source status, warnings and figure positions are equivalent. External precedents supply facts and mechanisms only; no third-party image, map, trademark or page design is copied. [source:CASE-DUBAI-AI-CAMPUS]
+### Asset-by-asset rights summary
+
+**Noto Sans SC** is distributed under the **SIL Open Font License 1.1** and is subset/embedded only for offline Chinese text; DejaVu Sans is embedded under its bundled licence for the searchable layer. Image-2 visible pages are authored for this submission from text-only briefs and proposal-owned inputs; no page from PR #2247 is an input. Maps and GeoJSON are proposal geometry or explicitly provisional organizer inputs and cannot be read as official redlines. Code and local libraries remain governed by their own licences; no external case photograph, plan, icon, logo or trademark is redistributed. The structured rights ledger records file family, author/tool, input reference, licence, web/PDF embedding and review status. [data:visual/assets/asset-rights-ledger.json#/assets]
+
+### Bilingual substantive check pending named human sign-off
+
+Chinese and English use one factual skeleton but are edited independently. The agent-assisted systematic check compares **titles, numbers, evidence levels, source status, warnings and figure positions**, including 1/3/9, 12/72/12/60, carrier bands, cost bands and all M/SC/P/CMP/G IDs. Its status is `agent_checked_pending_named_human_signoff`; it does not claim completed human translation approval before a named reviewer signs. Layout differences are permitted only when they add no new fact, promise or present-condition claim. External precedents supply facts and mechanisms only; no third-party image, map, trademark or page design is copied. This record is a content-equivalence check, not certified translation. [source:CASE-DUBAI-AI-CAMPUS] [data:visual/assets/bilingual-equivalence.json#/pairs]
 
 ## References
 
-Primary anchors are the official call, taskbook, current Haidian 2025 renewal guidance, applicable standards and first-party institutional pages registered in `sources.json`. The Haidian instrument supports project generation, ten modules and referral routing, not a claim that this project has a site, entity, funding or approval. [source:HAIDIAN-URBAN-RENEWAL-2025] [source:OFFICIAL-ANNOUNCEMENT]
+Primary anchors are the official call, taskbook, applicable standards and registry-approved first-party institutional pages in `sources.json`. The Haidian 2025 renewal instruments and Beijing material-rate PDF remain `needs_review`; they are bounded implementation-logic and single-material price references, not approved formal sources and not evidence that this project has a site, entity, funding or approval. [source:HAIDIAN-URBAN-RENEWAL-2025] [source:BEIJING-MATERIAL-RATE-2026-07] [source:OFFICIAL-ANNOUNCEMENT]
 
 The six precedent owners are JTC, Mila, STATION F, High Tech Campus Eindhoven, DIFC and the City of Helsinki. Full URLs, access dates and use boundaries are in the source register. [source:CASE-HTCE] [source:CASE-TESTBED-HELSINKI]
 
