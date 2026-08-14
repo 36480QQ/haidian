@@ -1,0 +1,91 @@
+{
+  "schema_version": "1.0",
+  "assets": [
+    {
+      "path_or_glob": "proposal*.md|*.json|*.geojson|report/*.html|visual/*.html",
+      "author": "Codex Urban Design Agent for EthanHuangEbor",
+      "creation_method": "original text/data/code rendering",
+      "license": "COMMUNITY-DISPLAY-ONLY submission license",
+      "redistribution_rights": "within repository submission",
+      "web_embed_rights": true,
+      "pdf_embed_rights": true,
+      "distributed": true,
+      "license_status": "cleared",
+      "evidence_note": "No third-party prose, map tiles or diagrams copied."
+    },
+    {
+      "path_or_glob": "assets/figures/*.png",
+      "author": "Codex Urban Design Agent",
+      "creation_method": "deterministic code drawing plus audited text-free image-2 inserts",
+      "tool_model": "OpenAI image-2 for spatial inserts; Pillow for labels",
+      "license": "OpenAI output subject to applicable terms; submission author directs and reviews use",
+      "redistribution_rights": "project submission",
+      "web_embed_rights": true,
+      "pdf_embed_rights": true,
+      "distributed": true,
+      "license_status": "cleared",
+      "evidence_note": "No external image input; all labels are code rendered."
+    },
+    {
+      "path_or_glob": "inline Noto Sans SC web/PDF subset",
+      "author": "Google/Adobe Noto project",
+      "creation_method": "subset from Noto Sans SC",
+      "license": "SIL Open Font License 1.1",
+      "redistribution_rights": "allowed with license notice",
+      "web_embed_rights": true,
+      "pdf_embed_rights": true,
+      "distributed": true,
+      "license_status": "cleared",
+      "evidence_note": "Subset may be bundled and embedded; reserved font name rules respected."
+    },
+    {
+      "path_or_glob": "geometry/*.geojson",
+      "author": "Codex Urban Design Agent from repository provisional package",
+      "creation_method": "concept geometry and registered provisional constraints",
+      "license": "repository submission use",
+      "redistribution_rights": "within submission",
+      "web_embed_rights": true,
+      "pdf_embed_rights": true,
+      "distributed": true,
+      "license_status": "cleared",
+      "evidence_note": "Not official survey, redline or ownership data."
+    },
+    {
+      "path_or_glob": "Logo/JZ LOOP mark",
+      "author": "Codex Urban Design Agent",
+      "creation_method": "original parametric geometry",
+      "license": "COMMUNITY-DISPLAY-ONLY submission license",
+      "redistribution_rights": "within submission",
+      "web_embed_rights": true,
+      "pdf_embed_rights": true,
+      "distributed": true,
+      "license_status": "cleared",
+      "evidence_note": "Public keyword similarity screening only; not legal trademark clearance."
+    },
+    {
+      "path_or_glob": "case-study references",
+      "author": "respective official project operators",
+      "creation_method": "fact paraphrase and URL citation only",
+      "license": "source-specific; source visual assets not redistributed",
+      "redistribution_rights": "no third-party media copied",
+      "web_embed_rights": false,
+      "pdf_embed_rights": false,
+      "distributed": false,
+      "license_status": "cleared",
+      "evidence_note": "Names used nominatively for comparative research."
+    },
+    {
+      "path_or_glob": "drawings/*.pdf|visual/assets/competition.css",
+      "author": "Codex Urban Design Agent for EthanHuangEbor",
+      "creation_method": "ReportLab vector text/image composition; fontTools WOFF2 subsetting; local CSS",
+      "tool_model": "ReportLab, fontTools and Pillow local dependencies",
+      "license": "project submission; dependencies retain their licenses",
+      "redistribution_rights": "generated outputs may be distributed within this submission",
+      "web_embed_rights": true,
+      "pdf_embed_rights": true,
+      "distributed": true,
+      "license_status": "cleared",
+      "evidence_note": "Noto Sans SC subset uses SIL OFL 1.1; no remote web dependency or proprietary source visual is embedded."
+    }
+  ]
+}

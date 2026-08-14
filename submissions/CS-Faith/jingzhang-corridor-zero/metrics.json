@@ -334,6 +334,18 @@
       "confidence": "unknown",
       "assumptions": [],
       "reason": "Official road redlines are not in the public site package; road area remains pending official geometry."
+    },
+    "star_ground_product_latency_min": {
+      "status": "unknown",
+      "value": null,
+      "unit": "min",
+      "source_files": [
+        "brief/site-package/ranges/planning_limits.json"
+      ],
+      "formula": "T_product = T_onboard_identify_compress + T_downlink + T_ground_product_generation (single-scene, ending at human-review-ready product)",
+      "confidence": "low",
+      "assumptions": [],
+      "reason": "在轨计算星与三个试点均为概念建议阶段，无实测或硬件在环基线数据；仅登记口径与单位，待硬件在环基线化后回填 P50/P95。过境等待（revisit 单星 1-2 次/天）与人工复核段不含在本指标内，另列于正文。"
     }
   }
 }

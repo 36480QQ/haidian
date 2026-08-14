@@ -124,8 +124,8 @@
       "id": "PEER-INFLUENCE-LEDGER",
       "path": "visual/assets/peer_influence_ledger.json",
       "source_type": "participant_authored",
-      "usage": "Attributed general mechanisms and independent redesign.",
-      "accessed_date": "2026-08-11"
+      "usage": "Four exact-head, merged peer benchmarks with formal scores, file-level attribution, independent redesign, and structural-copying controls.",
+      "accessed_date": "2026-08-13"
     },
     {
       "id": "FIELD-OBSERVATIONS",
@@ -180,8 +180,8 @@
       "id": "V11-IMPLEMENTATION-PLAYBOOK",
       "path": "visual/assets/implementation_playbook.json",
       "source_type": "participant_authored",
-      "usage": "RACI, resource classes, five pilot gates, service targets, permissions, and adoption path.",
-      "accessed_date": "2026-08-11"
+      "usage": "RACI, service targets, permissions, adoption path, and a six-line startup cost ledger with quantity formulas, recurring-cost flags, quote gates, and no unauthorised total.",
+      "accessed_date": "2026-08-13"
     },
     {
       "id": "V11-FIELDWORK-KIT",
@@ -208,8 +208,8 @@
       "id": "V12-DAY-ONE-DRILL",
       "path": "visual/assets/day_one_operations_drill.json",
       "source_type": "participant_authored",
-      "usage": "Unexecuted day-one operating and fault-drill protocol with human actions and fail-closed outcomes.",
-      "accessed_date": "2026-08-12"
+      "usage": "Unexecuted day-one operating protocol: six fault cards grouped into five stop categories, with ordinary-service continuity, human action, and reopening evidence.",
+      "accessed_date": "2026-08-13"
     },
     {
       "id": "V13-COMPLETE-TASK-RECEIPT",
@@ -342,6 +342,34 @@
       "path": "https://commons.wikimedia.org/wiki/File:Reading_Room_For_SS_USTB_Library.jpg",
       "source_type": "external_open_licensed_photo",
       "usage": "learning_space_reference; Public domain dedication by the copyright holder; never field evidence.",
+      "accessed_date": "2026-08-13"
+    },
+    {
+      "id": "V16-PREOPENING-REHEARSAL",
+      "path": "visual/assets/preopening-rehearsal.json",
+      "source_type": "participant_generated_deterministic_evidence",
+      "usage": "Records ninety offline synthetic rule decisions from twelve task contracts, six one-field omissions per task, and six declared fault cards; never field evidence or professional certification.",
+      "accessed_date": "2026-08-13"
+    },
+    {
+      "id": "V17-WORKS-BAY",
+      "path": "visual/assets/works_bay_prototype.json",
+      "source_type": "participant_generated_design_package",
+      "usage": "Records the original Works Bay 1:1 trial envelope, six-zone spatial sequence, proposed operating states, responsibility interfaces, stop authority and restoration acceptance; never field measurement, built-facility evidence, compliance certification, appointment or service result.",
+      "accessed_date": "2026-08-13"
+    },
+    {
+      "id": "V17-BILINGUAL-AUDIT",
+      "path": "visual/assets/bilingual_equivalence_audit.json",
+      "source_type": "participant_authored_quality_assurance",
+      "usage": "Records thirteen itemised Chinese-English semantic checks across narrative, first screen, figures and PDFs; does not replace independent translation review or public-comprehension testing.",
+      "accessed_date": "2026-08-13"
+    },
+    {
+      "id": "V17-JUROR-PATH",
+      "path": "visual/assets/juror_reading_path.json",
+      "source_type": "participant_authored_review_navigation",
+      "usage": "Records one question, judgement, direct evidence and claim boundary for each of sixteen A3 pages; does not score the proposal or prove juror comprehension.",
       "accessed_date": "2026-08-13"
     }
   ]

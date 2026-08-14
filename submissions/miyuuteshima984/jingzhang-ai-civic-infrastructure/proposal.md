@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以城市完整度作为百年京张AI创新带的空间审查方法：居、学、护、行、绿、工、交七项普通城市能力先形成长期可用的日常底盘，AI作为可选增强层进入科研、社区、交通和商业。总体形成一条公共绿脊、六段完整度片区、六条东西缝合联系与三处重点区；爽粉堡垒仅作为AI原点社区中的社区命名彩蛋。"
 tracks: ["ai-origin-community", "ai-public-services", "ai-traffic-walkability"]
 scenarios: ["ai-traffic-walkability", "robot-delivery-low-speed", "enterprise-service-copilot", "ai-cultural-guide", "ai-health-service-navigation"]
-iteration: "v0.6"
+iteration: "v0.91"
 ---
 
 # 京张城市完整度 / JING-ZHANG CITY COMPLETENESS
@@ -94,7 +94,17 @@ v0.5 将任务书规定的结构从文字登记升级为显性设计闭环：**�
 
 三处重点区均配置可进入的公共交流空间：众智园开放交流场、AI 原点社区公共客厅与南段城市公共界面，首先解决日常使用，再承担传播功能。[data:geometry/public_space.geojson#PUBLIC-004] [metric:public_space_count]
 
+### v0.7 与海淀现行城市更新实施逻辑对齐
+
+城市完整度不是脱离现实政策的自造评价表。海淀区《城市更新导则（2025年版）》明确提出街区、校区、园区、社区“四区”融合，推动生活圈与创新圈融合，并把人工智能创新街区、轨道交通站点一体化、公共服务补充以及数智空间与城市功能融合作为重点方向。[source:HD-URBAN-RENEWAL-GUIDE-2025] 因此 C7 的作用，是把“产城融合”进一步翻译成居民、研究者、服务劳动者和访客每天能否完成 HOME / LEARN / CARE / MOVE / GREEN / WORK / COMMON LIFE，而不是另造一套法定规划指标。
+
+v0.7 同时把实施动作分成两条真实路径。**低扰动、可逆动作**——如遮阴/坐凳、实体导视、人工服务界面、受控测试边界标识、可拆换小型服务节点——仍需现场核验、权属/运营许可和安全检查，但概念阶段可以明确其“最小可用空间”和退出状态；**改变用地、建筑规模/高度、站城工程、市政容量或涉及公共利益/公共安全的重改造**，则必须进入真实项目生成、实施方案审查和后续行政许可路径，本包不越权预设。[source:HD-URBAN-RENEWAL-IMPLEMENTATION-2025]
+
+海淀公开的 2025 年四季度重点任务进展已把五道口 AI 原点社区和交通、教育、医疗、养老等“可感可及”场景列为现实工作语境。[source:HD-AI-DISTRICT-PROGRESS-2025Q4] 这只证明题目真实存在，不证明本方案的具体试点、位置、合作方、预算或许可已经获得确认。
+
 ![三处重点区域的 C7 缺口与补齐任务](assets/figures/key-areas.png)
+
+v0.7 的固定重点区核心图不再只是任务卡，而把三种不同的首层/公共空间关系并置画出：众智园是研发校园 + 与普通通行物理分离的测试口袋；AI 原点是家门—照护—休息—公共客厅连续的长期社区；大钟寺是固定双语导视—人工问询—无障碍换乘—普通商业—遗产公共界面组成的站城到达链。
 
 ## AI 创新生态、人才画像与 AI+ 场景
 
@@ -115,6 +125,42 @@ v0.6 再从十个场景中抽出三个**旗舰试点协议**，让评审看到�
 ![三个旗舰试点协议：前置条件—测试—收据—GO/REVISE/STOP](assets/figures/flagship-pilot-protocols.svg)
 
 场景治理遵守同一底线：不用 App 仍能通行与获得基本服务；不参加测试不会失去社区权益；高风险判断转人工；设备或模型退出后，基本城市功能仍在。这既是技术鲁棒性，也是公共空间的公平性要求。
+
+### v0.7 三条日常城市链：把协议重新变成空间
+
+v0.7 不再把“评审索引”当作第一视觉，而从三类真实日常路径重新组织重点区：众智园的研究者与服务劳动者从到达、研发、吃饭休息走到受控测试；AI 原点的老人、照护者与无手机使用者从家门、休息、照护走到公共客厅；大钟寺的通勤者、国际访客与服务劳动者从到达、换乘、普通商业走到京张遗产公共界面。每条路径都先要求物理空间完整，再允许 AI 作为可关闭的增强层。
+
+![三条日常城市链：普通城市基线—空间补齐—可选 AI—退出后仍可用](assets/figures/everyday-journey-sections.svg)
+
+### AI 如何改变城市形态，而不是只增加屏幕
+
+AI 对城市形态的影响被压缩为六类可逆空间原型：测试口袋、无障碍求助节点、连续站城到达界面、可替换小型服务节点、人优先的公共首层，以及“观察—小范围原型—公共/专业复核—合并或回退”的可回退空间版本链。这回答的是 AI 如何改变空间组织和规划方法，而不是如何给既有空间附加更多数字界面。
+
+![AI 如何改变城市形态：六类可逆物理接口](assets/figures/ai-urban-form-change.svg)
+
+<!-- V09-REALITY-START -->
+### v0.91｜REALITY-ANCHORED：只有能改变空间判断的资料才进入主叙事
+
+v0.91 延续 v0.9 的 **reality-anchored** 设计线，并把现实约束进一步接回普通人的城市任务；它不把来源数量当成设计质量。它把“来源更多”改成更窄的规则：**一条现实资料只有在改变断面、界面、节点或 unknown 的表达方式时，才进入设计主叙事。** 本轮登记 3 组官方公开现实锚点，并形成 5 条可检查的设计响应。[metric:official_constraint_anchor_count] [metric:design_response_rule_count]
+
+![现实约束如何改变空间设计，而不是变成参考文献堆](assets/figures/reality-constraint-design-response.svg)
+
+**第一条是知春路。** 海淀规自部门公开的控规草案采信通告明确，该铁路节点处知春路属于下穿段、不具备平交条件，并以分离式立交思路预留联通条件。[source:HD00-1601-DRAFT-RESPONSE-V09] 因此本案不再把六条东西缝合都画成同一种“地面横穿”：知春路改成**竖向连续性待解节点**，后续必须核实地面步行连续、上下层关系、无障碍和工程条件；当前不画桥隧线位、不声称工程可行。
+
+**第二条是京张绿廊界面。** 蓝景丽家相关官方规划综合实施方案采信信息要求其商业商务规划与东侧京张铁路绿廊衔接并提升空间品质。[source:HD-LANJINGLIJIA-INTEGRATED-RESPONSE-V09] 本案据此把绿廊侧的优先级写得更硬：连续步行、可停留公共界面和人优先首层在前，AI 设备、物流与可替换服务模块不得切断公共通行。该个案不被外推为本案地块条件。
+
+**第三条是现实强度标尺。** 三份公开《建设项目规划条件》覆盖 7 个地块，公开 FAR 参照为 2.20–5.00、建筑限高参照为 24–80m，部分地块另有密度与绿地率条件。[source:HD-PLOT-CONDITIONS-REFERENCE-V09] 这些数值只回答“现实里已经出现过什么量级”，绝不回答“本案应该批多少”。因此 `approved_floor_area_ratio`、`approved_building_height_m` 等继续保持 unknown，概念建筑也不套用任何相邻样本。[metric:reference_plot_condition_count]
+
+五条设计响应完整记录于 `visual/assets/reality-constraint-register.json`。本轮固定 `mobility-bluegreen.png` 重建为不同类型的现实接口：普通缝合、下穿节点竖向连续性、绿廊人优先界面、站城到达与 official-data 重算触发器，不再用同一种蓝色虚线代表所有问题。
+<!-- V09-REALITY-END -->
+
+<!-- V091-PUBLIC-TASK-START -->
+### v0.91｜把现实约束接回普通人的城市任务
+
+这一小步不增加“评审索引”。它只检查三件事：**到达能不能在 AI 失效时继续、绿廊是不是先服务步行与停留、现实强度参照有没有被误写成本案控制值。** 三条链记录于 `visual/assets/reality-to-public-task-register.json`；每条都同时写出普通任务、空间响应、可选 AI 和不可越界的事实边界。[metric:reality_public_task_bridge_count]
+
+![现实约束必须回到公共任务](assets/figures/reality-to-public-task.svg)
+<!-- V091-PUBLIC-TASK-END -->
 
 ## 用地、建筑规模与拆改留方案
 
@@ -222,11 +268,7 @@ v0.6 在此基础上增加**资源数量基础 + RACI + 维护频率 + 启动证
 
 ![城市完整度指标与资料缺口](assets/figures/metrics-evidence.png)
 
-v0.6 不把新增证据继续藏在附件末端，而新增“评审证据总表”和“评审证据索引”：前者把核心指标、三个旗舰试点、9 类人群、实施证据门和主张边界推到离线 visual 首屏；后者把七项公开 rubric 与 agent.1–agent.6 一跳映射到 proposal、图件、JSON、GeoJSON 和权利/来源证据。两者都不是自评分，也不把机器 gate PASS 解释为现场或法定有效性。
-
-![v0.6 评审证据总表](assets/figures/review-evidence-dashboard.svg)
-
-![七维 rubric 与 agent.1–agent.6 评审证据索引](assets/figures/reviewer-evidence-index.svg)
+v0.7 将 v0.6 的 reviewer evidence dashboard / index 降为后部追溯附件，不再作为设计叙事或首屏主视觉；评分、gate 与设计内容继续分离。
 
 ## 风险、版权与合规说明
 

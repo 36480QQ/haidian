@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Uses City Completeness as the spatial review method for the Centennial Jing-Zhang AI Innovation Belt: seven ordinary-city capabilities—HOME, LEARN, CARE, MOVE, GREEN, WORK and COMMON LIFE—form a durable everyday base first, while AI enters research, community, mobility and commerce as an optional enhancement layer. The structure is one public green spine, six completeness segments, six east-west stitching links and three key areas; Shuangfen Fortress remains only a community-name easter egg inside AI Origin Community."
 tracks: ["ai-origin-community", "ai-public-services", "ai-traffic-walkability"]
 scenarios: ["ai-traffic-walkability", "robot-delivery-low-speed", "enterprise-service-copilot", "ai-cultural-guide", "ai-health-service-navigation"]
-iteration: "v0.6"
+iteration: "v0.91"
 ---
 
 # JING-ZHANG CITY COMPLETENESS
@@ -96,6 +96,8 @@ Public exchange space accompanies all three tasks: an open exchange yard in Zhon
 
 ![C7 gaps and design tasks in the three key areas](assets/figures/key-areas.en.png)
 
+The v0.7 fixed key-area figure is no longer a task card alone. It draws the three distinct ground-floor/public-space sections side by side: a research campus with a physically bounded test pocket; a long-term neighborhood with home—care—rest—commons continuity; and a station-city arrival chain with fixed bilingual signs, staffed help, accessible interchange, ordinary retail and heritage public realm.
+
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
 v0.6 expands the former five grouped personas into nine explicit design-test groups: long-term residents/families; older residents; disabled, mobility-limited or sensory-limited users; children/caregivers; students/researchers; founders/company employees; service workers/commuters; visitors/international users; and people with no smartphone, no account or a deliberate opt-out from digital services. These are used to test benefit, burden, exclusion risk and human fallback, not to claim demographic statistics. [metric:persona_count]
@@ -115,6 +117,42 @@ v0.6 then selects three **flagship pilot protocols** from the ten scenarios so a
 ![Three flagship pilot protocols: precondition—test—receipt—GO/REVISE/STOP](assets/figures/flagship-pilot-protocols.en.svg)
 
 All scenarios share a governance floor: basic circulation and services work without an app; non-participation does not remove community rights; high-risk decisions escalate to humans; and basic urban functions survive when a model, device, account or platform is withdrawn. This is both technological robustness and public-space equity.
+
+### v0.7 Three Everyday Journeys: Turn Protocols Back into Space
+
+v0.7 no longer treats a reviewer index as the first visual. The three key areas are reorganized around everyday journeys: a researcher and service worker in Zhongzhiyuan move from arrival to R&D, food/rest and a bounded test yard; an older resident, carer and no-phone user in AI Origin move from home to rest, care and civic commons; a commuter, international visitor and service worker in Dazhongsi move from arrival and interchange through ordinary retail to the Jing-Zhang heritage public interface. Each journey requires a complete physical city first; AI is only a switchable enhancement layer.
+
+![Three everyday journeys: ordinary-city baseline—physical repair—optional AI—functioning exit state](assets/figures/everyday-journey-sections.en.svg)
+
+### How AI Changes Urban Form, Not Just Screens
+
+The spatial effect of AI is reduced to six reversible prototypes: test pockets, accessible help nodes, continuous station-city arrival interfaces, replaceable small service nodes, people-first public ground floors, and a reversible spatial version chain—observe, bounded prototype, public/professional review, merge or rollback. This answers how AI changes spatial organization and planning method rather than merely attaching more digital interfaces to existing space.
+
+![How AI changes urban form: six reversible physical interfaces](assets/figures/ai-urban-form-change.en.svg)
+
+<!-- V09-REALITY-START -->
+### v0.91 | REALITY-ANCHORED: a source enters the design story only if it changes a spatial decision
+
+v0.91 continues the **reality-anchored** design line and ties each constraint back to an ordinary public task; source count is not treated as design quality. It applies a narrower rule: a public source enters the main design narrative only when it changes a section, interface, node, or the precision of an unknown. This round registers three official-public reality anchors and five explicit design-response rules. [metric:official_constraint_anchor_count] [metric:design_response_rule_count]
+
+![How reality constraints change spatial design rather than becoming a bibliography](assets/figures/reality-constraint-design-response.en.svg)
+
+**Zhichun Road:** the official public response to the draft control plan records this railway-related segment as underpassing the railway and unsuitable for an at-grade junction. [source:HD00-1601-DRAFT-RESPONSE-V09] The proposal therefore stops drawing every east-west stitch as the same surface crossing. Zhichun Road becomes a **vertical-continuity problem to be resolved**, with pedestrian continuity, level changes, accessibility and engineering conditions left for professional verification. No bridge/tunnel alignment or feasibility is claimed.
+
+**Jing-Zhang green edge:** the official planning-response material for Lanjinglijia calls for integration with the Jing-Zhang railway green corridor and improved spatial quality. [source:HD-LANJINGLIJIA-INTEGRATED-RESPONSE-V09] The design response is people-first: continuous walking, staying and public frontage precede AI equipment, logistics and replaceable service modules. The case is not transferred as a parcel control.
+
+**Reality scale references:** three published planning-condition documents cover seven plots, with reference FAR values of 2.20–5.00 and reference height controls of 24–80 m; some also publish density and green-ratio conditions. [source:HD-PLOT-CONDITIONS-REFERENCE-V09] These values answer only “what has appeared in approved plot conditions nearby”; they do not answer “what this proposal should receive”. Proposal `approved_*` metrics remain unknown. [metric:reference_plot_condition_count]
+
+All five response rules are machine-readable in `visual/assets/reality-constraint-register.json`. The fixed `mobility-bluegreen.en.png` is rebuilt to distinguish ordinary stitching, the underpass/vertical-continuity condition, people-first green-corridor frontage, station-city arrival, and the future official-data recomputation trigger.
+<!-- V09-REALITY-END -->
+
+<!-- V091-PUBLIC-TASK-START -->
+### v0.91 | Tie reality constraints back to ordinary public tasks
+
+This small revision adds no reviewer dashboard. It tests only three things: **arrival still works when AI fails; the green corridor serves walking and staying before devices; and reality-scale references are not rewritten as proposal controls.** The three chains are machine-readable in `visual/assets/reality-to-public-task-register.json`, each with an ordinary task, spatial response, optional AI and a fact boundary. [metric:reality_public_task_bridge_count]
+
+![Reality constraints must return to public tasks](assets/figures/reality-to-public-task.en.svg)
+<!-- V091-PUBLIC-TASK-END -->
 
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
@@ -222,11 +260,7 @@ The empty constraints layer is itself an auditable data gap. Official heritage, 
 
 ![City Completeness metrics and evidence gaps](assets/figures/metrics-evidence.en.png)
 
-v0.6 stops hiding new evidence at the end of supplemental files. A **review evidence dashboard** moves core metrics, three flagship pilots, nine user groups, implementation gates and claim boundaries into the first viewport of the offline visual; a **reviewer evidence index** maps all seven public rubric dimensions and agent.1–agent.6 directly to proposal, figure, JSON, GeoJSON and rights/source evidence. Neither is a self-score, and neither turns a machine gate PASS into field or statutory validity.
-
-![v0.6 review evidence dashboard](assets/figures/review-evidence-dashboard.en.svg)
-
-![Seven-dimension rubric and agent.1–agent.6 reviewer evidence index](assets/figures/reviewer-evidence-index.en.svg)
+v0.7 demotes the v0.6 reviewer evidence dashboard/index to a back-of-package traceability appendix. It is no longer part of the design narrative or first-screen visual; scoring, gates and design content remain separate.
 
 ## Risk, Copyright, and Compliance
 

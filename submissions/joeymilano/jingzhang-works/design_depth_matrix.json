@@ -809,7 +809,10 @@
         "public_space_ratio",
         "scenario_ready_count",
         "complete_task_step_count",
-        "field_observation_count"
+        "field_observation_count",
+        "works_bay_design_area_sqm",
+        "works_bay_spatial_zone_count",
+        "works_bay_operating_state_count"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -829,7 +832,9 @@
         "V12-REVIEWER-EVIDENCE-INDEX",
         "V12-DAY-ONE-DRILL",
         "V13-COMPLETE-TASK-RECEIPT",
-        "V14-PHOTO-CREDITS"
+        "V14-PHOTO-CREDITS",
+        "V17-WORKS-BAY",
+        "V17-JUROR-PATH"
       ],
       "assumption_ids": [
         "A-BOUNDARY-001",
@@ -846,7 +851,7 @@
         "BILINGUAL_PARITY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "三处重点区各自列出入口、测试界面、人工接手、公共记录与可撤回组件。"
+      "evidence_summary_zh": "三处重点区各自列出入口、测试界面、人工接手、公共记录与可撤回组件；共学工场另有 28.8 平方米试装包、六个空间动作、四种运行状态和八项搭建前条件。"
     },
     {
       "item_id": "renewal_project_list",
@@ -886,7 +891,8 @@
         "public_space_ratio",
         "scenario_ready_count",
         "complete_task_step_count",
-        "field_observation_count"
+        "field_observation_count",
+        "works_bay_operating_state_count"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -906,7 +912,8 @@
         "V12-REVIEWER-EVIDENCE-INDEX",
         "V12-DAY-ONE-DRILL",
         "V13-COMPLETE-TASK-RECEIPT",
-        "V14-PHOTO-CREDITS"
+        "V14-PHOTO-CREDITS",
+        "V17-WORKS-BAY"
       ],
       "assumption_ids": [
         "A-BOUNDARY-001",
@@ -923,7 +930,7 @@
         "BILINGUAL_PARITY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "P0 至 P3 每阶段都列牵头角色、放行证据和回退动作，长期工程不会越过现场试点。"
+      "evidence_summary_zh": "P0 至 P3 每阶段都列牵头角色、放行证据和回退动作；好用服务间把人工开放、有限辅助、降级和关闭恢复写成四种可验收状态。"
     },
     {
       "item_id": "phasing_implementation",

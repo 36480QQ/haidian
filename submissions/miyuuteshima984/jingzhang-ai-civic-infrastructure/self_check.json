@@ -24,10 +24,14 @@
         "submissions/miyuuteshima984/jingzhang-ai-civic-infrastructure/assets/figures/ai-ecosystem-map.svg",
         "submissions/miyuuteshima984/jingzhang-ai-civic-infrastructure/assets/figures/ai-scenario-cards.en.svg",
         "submissions/miyuuteshima984/jingzhang-ai-civic-infrastructure/assets/figures/ai-scenario-cards.svg",
+        "submissions/miyuuteshima984/jingzhang-ai-civic-infrastructure/assets/figures/ai-urban-form-change.en.svg",
+        "submissions/miyuuteshima984/jingzhang-ai-civic-infrastructure/assets/figures/ai-urban-form-change.svg",
         "submissions/miyuuteshima984/jingzhang-ai-civic-infrastructure/assets/figures/brand-vi-direction.en.svg",
         "submissions/miyuuteshima984/jingzhang-ai-civic-infrastructure/assets/figures/brand-vi-direction.svg",
         "submissions/miyuuteshima984/jingzhang-ai-civic-infrastructure/assets/figures/case-study-comparison.en.svg",
         "submissions/miyuuteshima984/jingzhang-ai-civic-infrastructure/assets/figures/case-study-comparison.svg",
+        "submissions/miyuuteshima984/jingzhang-ai-civic-infrastructure/assets/figures/everyday-journey-sections.en.svg",
+        "submissions/miyuuteshima984/jingzhang-ai-civic-infrastructure/assets/figures/everyday-journey-sections.svg",
         "submissions/miyuuteshima984/jingzhang-ai-civic-infrastructure/assets/figures/flagship-pilot-protocols.en.svg",
         "submissions/miyuuteshima984/jingzhang-ai-civic-infrastructure/assets/figures/flagship-pilot-protocols.svg",
         "submissions/miyuuteshima984/jingzhang-ai-civic-infrastructure/assets/figures/implementation-operations-matrix.en.svg",
@@ -36,6 +40,8 @@
         "submissions/miyuuteshima984/jingzhang-ai-civic-infrastructure/assets/figures/implementation-resource-raci.svg",
         "submissions/miyuuteshima984/jingzhang-ai-civic-infrastructure/assets/figures/inclusion-burden-matrix.en.svg",
         "submissions/miyuuteshima984/jingzhang-ai-civic-infrastructure/assets/figures/inclusion-burden-matrix.svg",
+        "submissions/miyuuteshima984/jingzhang-ai-civic-infrastructure/assets/figures/key-area-spatial-sections.en.svg",
+        "submissions/miyuuteshima984/jingzhang-ai-civic-infrastructure/assets/figures/key-area-spatial-sections.svg",
         "submissions/miyuuteshima984/jingzhang-ai-civic-infrastructure/assets/figures/key-areas.en.png",
         "submissions/miyuuteshima984/jingzhang-ai-civic-infrastructure/assets/figures/key-areas.png",
         "submissions/miyuuteshima984/jingzhang-ai-civic-infrastructure/assets/figures/land-use-structure.en.png",
@@ -50,6 +56,10 @@
         "submissions/miyuuteshima984/jingzhang-ai-civic-infrastructure/assets/figures/privacy-data-governance.svg",
         "submissions/miyuuteshima984/jingzhang-ai-civic-infrastructure/assets/figures/public-space-components-wayfinding.en.svg",
         "submissions/miyuuteshima984/jingzhang-ai-civic-infrastructure/assets/figures/public-space-components-wayfinding.svg",
+        "submissions/miyuuteshima984/jingzhang-ai-civic-infrastructure/assets/figures/reality-constraint-design-response.en.svg",
+        "submissions/miyuuteshima984/jingzhang-ai-civic-infrastructure/assets/figures/reality-constraint-design-response.svg",
+        "submissions/miyuuteshima984/jingzhang-ai-civic-infrastructure/assets/figures/reality-to-public-task.en.svg",
+        "submissions/miyuuteshima984/jingzhang-ai-civic-infrastructure/assets/figures/reality-to-public-task.svg",
         "submissions/miyuuteshima984/jingzhang-ai-civic-infrastructure/assets/figures/regional-collaboration-matrix.en.svg",
         "submissions/miyuuteshima984/jingzhang-ai-civic-infrastructure/assets/figures/regional-collaboration-matrix.svg",
         "submissions/miyuuteshima984/jingzhang-ai-civic-infrastructure/assets/figures/review-evidence-dashboard.en.svg",
@@ -90,13 +100,16 @@
         "submissions/miyuuteshima984/jingzhang-ai-civic-infrastructure/sources.json",
         "submissions/miyuuteshima984/jingzhang-ai-civic-infrastructure/spatial.json",
         "submissions/miyuuteshima984/jingzhang-ai-civic-infrastructure/standard_matrix.json",
+        "submissions/miyuuteshima984/jingzhang-ai-civic-infrastructure/visual/assets/reality-constraint-register.json",
+        "submissions/miyuuteshima984/jingzhang-ai-civic-infrastructure/visual/assets/reality-to-public-task-register.json",
+        "submissions/miyuuteshima984/jingzhang-ai-civic-infrastructure/visual/assets/reference-plot-conditions.json",
         "submissions/miyuuteshima984/jingzhang-ai-civic-infrastructure/visual/index.en.html",
         "submissions/miyuuteshima984/jingzhang-ai-civic-infrastructure/visual/index.html"
       ],
       "ai_package_stages": {
         "submissions/miyuuteshima984/jingzhang-ai-civic-infrastructure": "formal"
       },
-      "total_bytes": 5403426,
+      "total_bytes": 7400032,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -170,15 +183,15 @@
       "summary": {
         "standard_matrix_items": 6,
         "design_depth_items": 15,
-        "known_metric_refs_required": 33,
+        "known_metric_refs_required": 40,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 19,
+          "source": 25,
           "standard": 6,
           "depth": 15,
           "data": 11,
-          "metric": 33
+          "metric": 37
         }
       }
     },

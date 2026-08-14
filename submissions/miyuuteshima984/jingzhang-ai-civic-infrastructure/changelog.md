@@ -1,5 +1,29 @@
 # 方案迭代记录
 
+
+
+## v0.91 - 2026-08-13
+
+- Reissued the reality-anchored line on a fresh PR lifecycle after the prior PR review state became stale following conflict repair.
+- Added a design—not scoring—bridge from three reality anchors to three ordinary public tasks: arrival continuity, green-corridor public life, and non-transfer of reference intensity.
+- Preserved all unknown/provisional boundaries and rebuilt the bilingual first-page package around the public-task bridge.
+
+## v0.9 - 2026-08-13
+
+- reality-anchored 并行候选：只把能改变空间判断的公开原始证据放入主叙事。
+- 新增 3 组官方现实锚点与 5 条“现实约束 → 空间响应”规则。
+- 登记 7 个公开规划条件地块作不可外推的现实强度参照；本案 approved FAR/height 继续 unknown。
+- 重建固定 `mobility-bluegreen*.png`，区分普通缝合、知春路竖向连续性、绿廊人优先界面和站城到达。
+
+## v0.7 - 2026-08-13
+
+- Added three current official Haidian public sources (2025 Urban Renewal Guide, 2025 implementation guide, and 2025 Q4 AI-district progress) and split implementation into reversible low-disturbance actions versus changes that require real project generation, implementation-plan review and permitting.
+- Rebuilt the mandatory bilingual `key-areas.png` core figure as three actual spatial sections—innovation campus, long-term neighborhood and station-city everyday district—so the Review Agent fixed visual packet sees spatial differentiation directly rather than reviewer-oriented task cards.
+- Reversed the v0.6 rubric-first presentation after #2143 merged at Review Agent 76/100 despite all four gates passing: the above-fold reviewer dashboard is demoted to traceability and the first visual returns to actual urban experience.
+- Added bilingual three everyday journey diagrams for Zhongzhiyuan, AI Origin and Dazhongsi: ordinary-city baseline, physical repair, optional AI enhancement and a functioning failure/exit route.
+- Added bilingual AI-urban-form prototypes: bounded test pockets, accessible help thresholds, continuous arrival interfaces, replaceable service nodes, people-first public ground floors and reversible spatial versioning.
+- Started from upstream main `0f051ddb5b91bf5e1992a1b32b8c3b2763978fc8` to inherit the latest validator/schema changes.
+
 ## v0.6 - 2026-08-12
 
 - Started from merged v0.5 exact head `caa654366f5ecbd3b7ab2e782ec65fe3192af0cf`, whose upstream PR #2062 was accepted at Review Agent 83/100 with mandatory rejection and all four local gates passed.
