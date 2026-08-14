@@ -32,7 +32,14 @@
       ],
       "source_ids": [
         "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
-        "DATA-SRC-AGENT-TASKBOOK-20260518"
+        "DATA-SRC-AGENT-TASKBOOK-20260518",
+        "DATA-SRC-CASE-KENDALL-CAMBRIDGE",
+        "DATA-SRC-CASE-KINGS-CROSS-CAMDEN",
+        "DATA-SRC-CASE-BARCELONA-22AT",
+        "DATA-SRC-CASE-ONE-NORTH-JTC",
+        "DATA-SRC-CASE-PANGYO-OFFICIAL",
+        "DATA-SRC-CASE-OTANIEMI-ESPOO",
+        "DATA-SRC-CASE-XILI-NANSHAN"
       ],
       "assumption_ids": [
         "A-CASE-001",
@@ -74,7 +81,8 @@
       ],
       "source_ids": [
         "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
-        "DATA-SRC-MNR-LAND-USE-CLASSIFICATION-202311"
+        "DATA-SRC-MNR-LAND-USE-CLASSIFICATION-202311",
+        "DATA-SRC-BJ-LAND-USE-CLASSIFICATION-GUIDE"
       ],
       "assumption_ids": [
         "A-RESERVE-001",
@@ -205,7 +213,7 @@
         "LAND_USE_COVERAGE",
         "METRIC_RECOMPUTATION"
       ],
-      "response_summary_zh": "提交边界即总体设计范围；146 个用地单元覆盖该边界。单元间重叠 0.000 sqm（真零）；边界内未覆盖 84.27 sqm、越界 103.03 sqm，对称差 187.30 sqm，约为场地面积的 1.6e-05，在仓库 1,141 sqm 容差内。"
+      "response_summary_zh": "提交边界即总体设计范围；146 个用地单元覆盖该边界。单元间重叠 0.000 sqm（真零）；剖分在 EPSG:4548 下构建、提交边界环参与构图，边界内未覆盖、越界与对称差均为构造性零，union 与提交边界拓扑相等。"
     },
     {
       "requirement_id": "1.4.3",
@@ -390,7 +398,9 @@
         "land_use_partition_area_sqm",
         "building_footprint_area_sqm",
         "building_coverage_ratio_study",
-        "phase_count"
+        "phase_count",
+        "project_footprint_count",
+        "project_footprint_union_area_sqm"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -415,7 +425,7 @@
         "SPATIAL_REVIEW",
         "LAND_USE_COVERAGE"
       ],
-      "response_summary_zh": "更新空间结构、用地布局与 8 项更新项目清单；建筑规模因现状底数缺失保持 unknown，只表达可逆性判断。"
+      "response_summary_zh": "更新空间结构、用地布局与 8 项更新项目清单；R01–R08 均建立非官方概念 project footprint，建筑规模因现状底数缺失保持 unknown，只表达可逆性判断。"
     },
     {
       "requirement_id": "1.5.2.3",
@@ -431,7 +441,9 @@
       ],
       "metrics": [
         "slow_mobility_network_length_m",
-        "public_space_area_sqm"
+        "public_space_area_sqm",
+        "conceptual_road_reservation_area_sqm",
+        "conceptual_road_reservation_ratio_study"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -453,7 +465,7 @@
         "DETERMINISTIC_VALIDATION",
         "SPATIAL_REVIEW"
       ],
-      "response_summary_zh": "微循环改善与站点一体化布局的概念建议；分布式能源与端侧算力等新型设施与传统三大设施的融合模式只作方向性建议，不给工程测算。"
+      "response_summary_zh": "微循环改善、站点一体化与 4 个 ROAD_AREA 概念道路预留面；官方 road_area_ratio 仍为 unknown。分布式能源与端侧算力等新型设施与传统三大设施的融合模式只作方向性建议，不给工程测算。"
     },
     {
       "requirement_id": "1.5.2.4",
@@ -560,7 +572,9 @@
         "key_area_zhongzhiyuan_ai_acceleration_area_sqm",
         "key_area_beijing_ai_origin_community_sqm",
         "key_area_dazhongsi_ai_industry_cluster_sqm",
-        "phase_count"
+        "phase_count",
+        "project_footprint_count",
+        "project_footprint_union_area_sqm"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -585,7 +599,7 @@
         "KEY_AREA_PROVISIONAL",
         "SPATIAL_REVIEW"
       ],
-      "response_summary_zh": "三处重点区域按「定位 + 空间结构 + 建筑更新 + 交通慢行 + 公共空间 + AI 场景 + 实施风险」分别成篇，达规划综合实施方案的城市设计深度。"
+      "response_summary_zh": "三处重点区域按「定位 + 空间分区 + 项目 footprint + 概念断面 + 建筑/公共空间界面 + gate」分别成篇；本轮达到 conceptual_detailed_design_level，形成可复核的概念详细设计证据，但仍未达到法定控规或规划综合实施方案的可审批深度，差距如实登记。"
     },
     {
       "requirement_id": "1.5.3.1",
@@ -598,12 +612,15 @@
         "geometry/key_areas.geojson",
         "geometry/land_use.geojson",
         "geometry/green_space.geojson",
-        "geometry/roads.geojson"
+        "geometry/roads.geojson",
+        "geometry/phasing.geojson"
       ],
       "metrics": [
         "key_area_zhongzhiyuan_ai_acceleration_area_sqm",
         "land_use_area_reserved_land_sqm",
-        "stage_v2_reference_district_sqm"
+        "stage_v2_reference_district_sqm",
+        "stage_v2_project_union_area_sqm",
+        "conceptual_road_reservation_area_sqm"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -626,7 +643,7 @@
         "DETERMINISTIC_VALIDATION",
         "KEY_AREA_PROVISIONAL"
       ],
-      "response_summary_zh": "源码区：花园型创新街区、北缝跨五环缝合、留白用地成组布置承接国家平台类需求、清河文化界面；归 v2 结构更新版，高不可逆性。"
+      "response_summary_zh": "源码区：A–D 四个子区、滨水 A–A 概念断面、R05/R07/R08 footprint 与逐项替换字段；花园型创新街区、北缝跨五环与清河界面归 v2，高不可逆性且须工程可行性论证。"
     },
     {
       "requirement_id": "1.5.3.2",
@@ -639,12 +656,15 @@
         "geometry/key_areas.geojson",
         "geometry/land_use.geojson",
         "geometry/roads.geojson",
-        "geometry/public_space.geojson"
+        "geometry/public_space.geojson",
+        "geometry/phasing.geojson"
       ],
       "metrics": [
         "key_area_beijing_ai_origin_community_sqm",
         "land_use_area_education_link_sqm",
-        "stage_v1_reference_district_sqm"
+        "stage_v1_reference_district_sqm",
+        "stage_v1_project_union_area_sqm",
+        "conceptual_road_reservation_area_sqm"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -667,7 +687,7 @@
         "DETERMINISTIC_VALIDATION",
         "KEY_AREA_PROVISIONAL"
       ],
-      "response_summary_zh": "编译区：近校型街区、中缝校区—园区慢行缝合、五道口与清华东路西口站点一体化、低扰动有机更新；归 v1 缝合联通版。"
+      "response_summary_zh": "编译区：A–D 四个子区、转化街 B–B 概念断面、R04/R05/R08 footprint 与逐项替换字段；中缝校区—园区慢行、站点一体化和低扰动有机更新归 v1，跨权属协议是硬 gate。"
     },
     {
       "requirement_id": "1.5.3.3",
@@ -680,12 +700,15 @@
         "geometry/key_areas.geojson",
         "geometry/land_use.geojson",
         "geometry/public_space.geojson",
-        "geometry/roads.geojson"
+        "geometry/roads.geojson",
+        "geometry/phasing.geojson"
       ],
       "metrics": [
         "key_area_dazhongsi_ai_industry_cluster_sqm",
         "land_use_area_commercial_service_sqm",
-        "stage_v0_reference_district_sqm"
+        "stage_v0_reference_district_sqm",
+        "stage_v0_project_union_area_sqm",
+        "conceptual_road_reservation_area_sqm"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -708,7 +731,7 @@
         "DETERMINISTIC_VALIDATION",
         "KEY_AREA_PROVISIONAL"
       ],
-      "response_summary_zh": "发行区：城市型街区、南缝四象限步行连通与非机动车静态交通组织、规划绿地复合利用；归 v0 可逆启动版，适合作全带首个可回滚试点。"
+      "response_summary_zh": "发行区：A–D 四个子区、站点 C–C 概念断面、R01/R03/R06/R08 footprint 与逐项替换字段；四象限连通、非机动车组织和绿地复合利用归 v0，但主管部门批准前不可启动。"
     },
     {
       "requirement_id": "agent.1",
@@ -782,7 +805,14 @@
         "用地分区"
       ],
       "source_ids": [
-        "DATA-SRC-AGENT-TASKBOOK-20260518"
+        "DATA-SRC-AGENT-TASKBOOK-20260518",
+        "DATA-SRC-CASE-KENDALL-CAMBRIDGE",
+        "DATA-SRC-CASE-KINGS-CROSS-CAMDEN",
+        "DATA-SRC-CASE-BARCELONA-22AT",
+        "DATA-SRC-CASE-ONE-NORTH-JTC",
+        "DATA-SRC-CASE-PANGYO-OFFICIAL",
+        "DATA-SRC-CASE-OTANIEMI-ESPOO",
+        "DATA-SRC-CASE-XILI-NANSHAN"
       ],
       "assumption_ids": [
         "A-CASE-001",

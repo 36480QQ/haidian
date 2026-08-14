@@ -41,7 +41,7 @@
         "SPATIAL_REVIEW",
         "PROFESSIONAL_EVIDENCE_REVIEW"
       ],
-      "evidence_summary_zh": "23 条必选任务在 compliance_matrix.json 中逐条映射；三层范围分别采用不同结论强度，重点区域达综合实施方案的城市设计深度。法定控制条件未公开的部分明确标注为待确认，不伪装为审定结论。"
+      "evidence_summary_zh": "23 条必选任务在 compliance_matrix.json 中逐条映射；三层范围分别采用不同结论强度；重点区域给出概念子区、项目 footprint、典型断面参数带与 gate，实际达到 conceptual_detailed_design_level，仍低于可审批的规划综合实施方案深度；与目标深度（规划综合实施方案的城市设计深度）的差距由 design_depth_matrix.json 的 attained_depth 如实登记。法定控制条件未公开的部分明确标注为待确认，不伪装为审定结论。"
     },
     {
       "standard_id": "PROJECT-AGENT-OPEN-CALL-TASKBOOK",
@@ -73,7 +73,14 @@
         "global_case_study_count"
       ],
       "source_ids": [
-        "DATA-SRC-AGENT-TASKBOOK-20260518"
+        "DATA-SRC-AGENT-TASKBOOK-20260518",
+        "DATA-SRC-CASE-KENDALL-CAMBRIDGE",
+        "DATA-SRC-CASE-KINGS-CROSS-CAMDEN",
+        "DATA-SRC-CASE-BARCELONA-22AT",
+        "DATA-SRC-CASE-ONE-NORTH-JTC",
+        "DATA-SRC-CASE-PANGYO-OFFICIAL",
+        "DATA-SRC-CASE-OTANIEMI-ESPOO",
+        "DATA-SRC-CASE-XILI-NANSHAN"
       ],
       "assumption_ids": [
         "A-SCENARIO-001",
@@ -157,7 +164,8 @@
         "slow_mobility_network_length_m"
       ],
       "source_ids": [
-        "DATA-SRC-MOHURD-CONTROL-DETAILED-PLANNING"
+        "DATA-SRC-MOHURD-CONTROL-DETAILED-PLANNING",
+        "DATA-SRC-BJ-CONTROL-PLAN-IMPLEMENTATION"
       ],
       "assumption_ids": [
         "A-CONTROLS-001",
@@ -169,7 +177,7 @@
         "SPATIAL_REVIEW",
         "PROFESSIONAL_EVIDENCE_REVIEW"
       ],
-      "evidence_summary_zh": "floor_area_ratio、building_height_m、building_density、official_green_ratio_control、road_area_ratio、total_floor_area_sqm 六项保持 status=unknown，并逐条转为「现在可做／补齐后可做／补齐后重算」的设计条件。"
+      "evidence_summary_zh": "floor_area_ratio、building_height_m、building_density、official_green_ratio_control、road_area_ratio、total_floor_area_sqm 六项保持 status=unknown；ROAD_AREA/1207 只作概念道路预留候选，不升格为官方红线，并逐条转为「现在可做／补齐后可做／补齐后重算」的设计条件。"
     },
     {
       "standard_id": "MNR-LAND-USE-CLASSIFICATION-GUIDE",
@@ -199,7 +207,8 @@
         "land_use_area_community_service_sqm"
       ],
       "source_ids": [
-        "DATA-SRC-MNR-LAND-USE-CLASSIFICATION-202311"
+        "DATA-SRC-MNR-LAND-USE-CLASSIFICATION-202311",
+        "DATA-SRC-BJ-LAND-USE-CLASSIFICATION-GUIDE"
       ],
       "assumption_ids": [
         "A-RESERVE-001",
@@ -211,7 +220,7 @@
         "LAND_USE_TOPOLOGY",
         "LAND_USE_COVERAGE"
       ],
-      "evidence_summary_zh": "8 类用地代码全部取自 enums/land_use_codes.json 的规范子集；本方案核心机制建立在法定「16 留白用地」类型之上，留白率作为建议指标口径提出，不写成审定指标。"
+      "evidence_summary_zh": "LAND_USE 的 8 类用地代码全部取自 enums/land_use_codes.json 的规范子集；ROAD_AREA 的 1207 标为 conceptual_candidate_pending_official_redline，且不切入 LAND_USE；本方案核心机制建立在法定「16 留白用地」类型之上，留白率作为建议指标口径提出，不写成审定指标。"
     },
     {
       "standard_id": "MOHURD-ARCH-DESIGN-DEPTH-2016",

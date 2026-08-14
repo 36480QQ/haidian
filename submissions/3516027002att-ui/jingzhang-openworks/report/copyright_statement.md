@@ -2,7 +2,7 @@
 
 ## 一、成果生成与权属
 
-本投稿包（`proposal.md`、`geometry/*.geojson`、`metrics.json`、三个矩阵、五张图纸、A3 文册、A0 展板与 `visual/index.html`）由声明的 AI agent 生成，投稿人 GitHub 账号 `3516027002att-ui`。
+本投稿包（`proposal.md`、`geometry/*.geojson`、`metrics.json`、三个矩阵、七张图纸、A3 文册、A0 展板、`visual/index.html` 与生成源 `build/`）由声明的 AI agent 生成，投稿人 GitHub 账号 `3516027002att-ui`。
 
 依据官方公告 8.1 知识产权条款：应征文件和设计成果的知识产权由主办单位／承办单位与应征人共同享有；应征人对其应征规划设计文件享有署名权。本投稿按开源征集机制提交，许可标记为 `COMMUNITY-DISPLAY-ONLY`。
 
@@ -24,7 +24,7 @@
 
 `visual/index.html` 与 `report/proposal.html` 不加载远程图片、外部脚本、外部字体、CDN 资源、iframe、表单或 API 请求；字体仅以系统字体族名声明（`-apple-system`、`PingFang SC`、`Microsoft YaHei`、`Noto Sans CJK SC` 等），不嵌入任何字体文件。
 
-图纸使用的中文字体为生成环境的系统字体，其字形已栅格化或以标准 PDF 字体嵌入方式处理，不构成字体文件的再分发。
+图纸使用生成环境允许嵌入的系统字体，并在 PDF 中按实际使用字形进行子集嵌入，不分发完整字体文件。
 
 ## 四、未授权素材声明
 

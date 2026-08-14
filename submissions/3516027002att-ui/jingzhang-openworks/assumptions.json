@@ -6,8 +6,8 @@
       "id": "A-BOUNDARY-001",
       "title_zh": "总体设计范围与重点区域采用临时粗略边界",
       "statement_zh": "组织方尚未发布官方精确红线。本方案的 site_boundary.geojson#SITE-001 与 key_areas.geojson#KEY-001/002/003 均由仓库 provisional_boundaries.geojson 导出，标记为 geometry_role=provisional_constraint、official_boundary=false、boundary_precision=provisional_rough。",
-      "impact_zh": "全部面积、比例与长度指标的绝对值受此限制，confidence 不高于 medium。重点区域复算面积与公告面积的差值即来自该精度。",
-      "recompute_zh": "取得官方 polygon 后须重算：site_boundary、key_areas、land_use、buildings、roads、green_space、public_space、constraints、phasing 九个图层，以及 metrics.json 全部 known 指标。",
+      "impact_zh": "由 provisional geometry 派生的空间面积、比例与长度指标的绝对值受此限制，confidence 不高于 medium；公告文字值与正文计数不受该边界替换影响。重点区域复算面积与公告面积的差值即来自该精度。",
+      "recompute_zh": "取得官方 polygon 后须重算：site_boundary、key_areas、land_use、buildings、roads、green_space、public_space、constraints、phasing 九个图层，以及 metrics.json 中全部 geometry-derived 空间指标；公告文字值与正文计数不随边界重算。",
       "gap_ids": [
         "GAP-BOUNDARY-001",
         "GAP-BOUNDARY-002"
@@ -23,8 +23,8 @@
     {
       "id": "A-CONTROLS-001",
       "title_zh": "法定控制指标未公开，不予推定",
-      "statement_zh": "已批准控规的容积率、建筑高度、建筑密度、绿地率控制指标与道路红线均未公开。本方案不推定上述任何数值。",
-      "impact_zh": "metrics.json 中 floor_area_ratio、building_height_m、building_density、official_green_ratio_control、road_area_ratio 保持 status=unknown；正文只给功能比例、空间组织与体量关系的概念建议。",
+      "statement_zh": "已批准控规的容积率、建筑高度、建筑密度、绿地率控制指标与道路红线均未公开。本方案不推定上述任何数值。roads.geojson 中的 ROAD_AREA 仅为根据概念慢行线位和设计参数生成的道路空间预留叠加面，land_use_code=1207 且classification_status=conceptual_candidate_pending_official_redline，不构成官方道路红线，也不切入 LAND_USE 法定分类。",
+      "impact_zh": "metrics.json 中 floor_area_ratio、building_height_m、building_density、official_green_ratio_control、road_area_ratio 保持 status=unknown；conceptual_road_reservation_area_sqm 与其研究比率只用于方案内部空间校核；正文只给功能比例、空间组织与体量关系的概念建议。",
       "recompute_zh": "取得控规条件后：将本方案 green_ratio 与审定绿地率比对并重算，补齐强度分区、高度分区与道路用地比例。",
       "gap_ids": [
         "GAP-CONTROL-001",
@@ -42,7 +42,7 @@
       "id": "A-BUILDING-001",
       "title_zh": "现状建筑底数缺失，建筑图层仅为研究体量",
       "statement_zh": "现状建筑轮廓、高度、层数、用途、建成年代与保留改造拆除状态均未取得。buildings.geojson 的 16 个 feature 是研究体量示意，confidence=low。",
-      "impact_zh": "building_footprint_area_sqm 与 building_coverage_ratio_study 只反映研究体量占地，不代表现状或规划建筑规模；total_floor_area_sqm 保持 unknown。拆改留分类只表达可逆性判断，不落到具体地块结论。",
+      "impact_zh": "building_footprint_area_sqm 与 building_coverage_ratio_study 只反映研究体量占地，不代表现状或规划建筑规模；total_floor_area_sqm 保持 unknown。massing_treatment 只表达概念体量的干预方向与可逆性，不是现状建筑的拆改留分类。",
       "recompute_zh": "取得现状建筑底数与权属资料后：重建 buildings 图层，重算基底面积与占地比，并据此形成可审定的拆改留方案。",
       "gap_ids": [
         "GAP-BUILDING-001",
@@ -59,7 +59,7 @@
       "id": "A-CRS-001",
       "title_zh": "坐标与面积复算口径",
       "statement_zh": "GeoJSON 交换坐标系 EPSG:4326（经度、纬度顺序）；面积与长度复算坐标系 EPSG:4548（CGCS2000 / 3 度带高斯-克吕格，中央经线 117°E），依 design_brief.json 的 coordinate_policy 指定。",
-      "impact_zh": "全部 known 指标可由 shapely + pyproj 在该坐标系下复现，并由 scripts/spatial_review.py 独立校验。",
+      "impact_zh": "空间派生指标可由 shapely + pyproj 在该坐标系下复现；scripts/spatial_review.py 输出 6 个数值、自动比对其中 3 项，并另做用地覆盖几何门检查。非空间计数回到正文或登记资料。",
       "recompute_zh": "正式使用前须与官方测绘基准和坐标系统说明核对。",
       "gap_ids": [
         "GAP-CRS-001"
@@ -90,8 +90,8 @@
     {
       "id": "A-VERSION-001",
       "title_zh": "城市版本化分期是工作方法建议，不是开发时序",
-      "statement_zh": "phasing.geojson 的 v0/v1/v2 按干预的不可逆性排序，并为每个版本预设回滚触发条件，属更新工作方法建议。",
-      "impact_zh": "phase_count、phase_v0/v1/v2_area_sqm 反映概念分期范围，不构成开发时序、投资测算、审批判断或实施承诺。",
+      "statement_zh": "phasing.geojson 的 v0/v1/v2 按干预的不可逆性排序，并为每个版本预设回滚触发条件，属更新工作方法建议。其中 PH-001/002/003 是阶段参照片区；PF-R01 至 PF-R08 是八项更新项目的概念作用范围，二者在 geometry_kind 字段中明确区分。",
+      "impact_zh": "project_footprint_count、project_footprint_area_sqm 与各阶段项目并集面积反映概念方案的空间落位，不代表征地、施工或投资范围；参照片区面积只用于解释三区和版本关系。两类面积均不构成开发时序、投资测算、审批判断或实施承诺。",
       "recompute_zh": "取得官方红线、控规条件与权属资料后，v2 版本的结构性更新内容必须重新论证后才可进入实施讨论。",
       "gap_ids": [
         "GAP-CONTROL-001",
@@ -122,13 +122,19 @@
     },
     {
       "id": "A-CASE-001",
-      "title_zh": "全球案例基于公开报道的常识性概括",
-      "statement_zh": "7 个全球 AI 创新生态案例的经验总结基于公开报道与公开研究的常识性概括，不含企业内部数据、投资额、产值或财政承诺数据。",
+      "title_zh": "全球案例采用逐案官方背景来源",
+      "statement_zh": "7 个全球 AI 创新生态案例分别登记所在地政府或官方运营机构的公开来源；来源只支撑案例基本事实，本方案的迁移判断明确作为设计推论。",
       "impact_zh": "global_case_study_count=7，满足任务书 5–8 个的要求。",
-      "recompute_zh": "若需引用具体数据，须另行取得可引用的公开统计来源并登记。",
+      "recompute_zh": "若需引用具体数据或因果效果，须另行取得对应统计或研究来源并登记。",
       "gap_ids": [],
       "source_ids": [
-        "DATA-SRC-AGENT-TASKBOOK-20260518"
+        "DATA-SRC-CASE-KENDALL-CAMBRIDGE",
+        "DATA-SRC-CASE-KINGS-CROSS-CAMDEN",
+        "DATA-SRC-CASE-BARCELONA-22AT",
+        "DATA-SRC-CASE-ONE-NORTH-JTC",
+        "DATA-SRC-CASE-PANGYO-OFFICIAL",
+        "DATA-SRC-CASE-OTANIEMI-ESPOO",
+        "DATA-SRC-CASE-XILI-NANSHAN"
       ],
       "confidence": "medium",
       "blocks_formal_scoring": false,

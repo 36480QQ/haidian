@@ -2,8 +2,9 @@
   "schema_version": "0.1.0",
   "registry_reference": "data/source_registry.json",
   "registry_updated_date": "2026-06-07",
-  "source_use_policy_zh": "本方案严格遵守 data/source_registry.json 的可用性分级：usable_for_formal=yes 的资料可支撑 formal 任务响应，但不能支撑空间控制结论；provisional_only 的资料只能支撑临时生成、可视化与入口自检；needs_official_file 的资料只作缺口披露。本方案不把背景资料或临时资料升级为法定依据。",
-  "formal_ready_count": 5,
+  "source_use_policy_zh": "本方案对 data/source_registry.json 已登记来源严格沿用其可用性分级：usable_for_formal=yes 的资料可支撑 formal 任务响应，但不能支撑空间控制结论；provisional_only 的资料只能支撑临时生成、可视化与入口自检；needs_official_file 的资料只作缺口披露。北京地方政策、站内先例与七个案例为 submission-level supplemental sources；因参赛者 PR 不得修改仓库级 data/source_registry.json，均标记为 pending maintainer registration。其中案例仅作 background_only，不把背景资料升级为法定或数值依据。",
+  "supplemental_source_count": 10,
+  "formal_ready_count": 8,
   "provisional_only_count": 1,
   "pending_official_file_count": 1,
   "sources": [
@@ -240,6 +241,311 @@
         "风险、版权与合规说明"
       ],
       "registry_notes_zh": "该 geometry 提供三层范围和三处重点区的临时粗略 polygon，只能让 agent 先跑通生成、自检和展示，不得升级为 official boundary。"
+    },
+    {
+      "id": "DATA-SRC-BJ-LAND-USE-CLASSIFICATION-GUIDE",
+      "title": "北京市国土空间调查、规划、用途管制用地分类指南（试行）",
+      "publisher": "北京市规划和自然资源委员会",
+      "source_kind": "official_standard",
+      "source_type": "official_public",
+      "url": "https://ghzrzyw.beijing.gov.cn/zhengwuxinxi/tzgg/sj/202204/P020220407391625108240.pdf",
+      "published_date": "2022-04",
+      "accessed_date": "2026-08-10",
+      "authority_level": "A0",
+      "public_access_status": "public_official_pdf",
+      "license_summary": "Official public standard published by the Beijing municipal planning authority.",
+      "review_status": "approved",
+      "usable_for_formal": "yes",
+      "local_paths": [],
+      "allowed_uses": [
+        "北京市留白用地二级分类（1601 战略留白 / 1602 动态留白）的定义与适用条件",
+        "北京市在国家分类基础上增加或调整的地类语义"
+      ],
+      "prohibited_uses": [
+        "地块级法定归类判定",
+        "临时建设或产业使用许可",
+        "替代控规条件或地块审批"
+      ],
+      "usage_zh": "本方案第七章弹性预留空间的制度接口分析直接引自该指南：1601 战略留白「实行城乡建设用地规模和建筑规模双控，原则上 2035 年前不予启用」；1602 动态留白「为促进建筑规模指标集约有效利用，在规划期内暂无实施计划」，且「容积率低于节地标准的用地可划为动态留白用地，引导建筑规模指标向重点地区集中」。",
+      "limit_zh": "该指南只提供分类语义与适用条件，不能替代地块级法定归类判定，也不自动赋予临时建设或产业使用许可。本方案据此提出三种待验证情景，不自行认定归类。",
+      "used_in_sections": [
+        "用地、建筑规模与拆改留方案",
+        "设计依据与资料清单"
+      ],
+      "verification_note_zh": "核实方式：下载官方 PDF（465 KB，62 页），用 pypdf 提取文字，定位「留白」17 处命中，逐字比对附录含义表与第 3.2 节增加二级类的说明。",
+      "registry_status": "supplemental_pending_maintainer_registration"
+    },
+    {
+      "id": "DATA-SRC-BJ-CONTROL-PLAN-IMPLEMENTATION",
+      "title": "北京市控制性详细规划实施管理办法（及官方政策解读）",
+      "publisher": "北京市人民政府 / 北京市规划和自然资源委员会",
+      "source_kind": "official_policy",
+      "source_type": "official_public",
+      "url": "https://ghzrzyw.beijing.gov.cn/zhengwuxinxi/zcwj/qtwj/202412/t20241231_3978227.html",
+      "published_date": "2024-12-31",
+      "accessed_date": "2026-08-10",
+      "authority_level": "A0",
+      "public_access_status": "public_official_page",
+      "license_summary": "Official public policy document.",
+      "review_status": "approved",
+      "usable_for_formal": "yes",
+      "local_paths": [],
+      "allowed_uses": [
+        "说明北京现行控规采用按需深化、动态运行的机制",
+        "说明街区控规与规划综合实施方案的分层衔接关系"
+      ],
+      "prohibited_uses": [
+        "声称本项目已有获批控规条件",
+        "推定容积率、高度、密度等具体控制值"
+      ],
+      "usage_zh": "用于纠正本方案早期稿把法定规划简化为静态 5–10 年周期的表述：北京现行机制已是按需深化、动态运行，本方案的机制建议应当嵌入该机制而非另起一套体系。",
+      "limit_zh": "该文件不含本项目的具体控规条件；本方案的六项法定指标仍保持 unknown。",
+      "used_in_sections": [
+        "设计依据与资料清单",
+        "更新项目清单、实施政策与分期计划"
+      ],
+      "verification_note_zh": "本条为政策机制层面的引用，用于限定本方案的表述边界，不用于支撑任何空间控制结论。",
+      "registry_status": "supplemental_pending_maintainer_registration"
+    },
+    {
+      "id": "DATA-SRC-SITE-PRECEDENT-PR1366",
+      "title": "站内先例：PR #1366《京张编译带 COMPILE JINGZHANG》",
+      "publisher": "open-city-ai/haidian 投稿者 Michael-Han0608",
+      "source_kind": "site_precedent",
+      "source_type": "public_repository_submission",
+      "url": "https://github.com/open-city-ai/haidian/pull/1366",
+      "published_date": "2026-08-10",
+      "accessed_date": "2026-08-10",
+      "authority_level": "PEER_SUBMISSION",
+      "public_access_status": "public_pull_request",
+      "license_summary": "Public pull request in the open call repository.",
+      "review_status": "approved",
+      "usable_for_formal": "yes",
+      "local_paths": [],
+      "allowed_uses": [
+        "原创性比较与差异说明"
+      ],
+      "prohibited_uses": [
+        "作为空间、政策或指标依据"
+      ],
+      "usage_zh": "用于本方案的站内先例声明。经 GitHub API 核实，该 PR 创建于 2026-08-10T07:56:31Z，早于本方案 162 分钟，已提出同构的软件生产链隐喻（源代码/编译/测试/评审/发布/回滚）与三区映射（测试坞/评审庭/发布台）。本方案据此撤回任何优先性断言，并说明实质差异：其回滚作用于 AI 场景运营，本方案作用于空间更新决策；其全文未涉及留白用地、不可逆性排序或产业代际缓冲。",
+      "limit_zh": "同类隐喻的出现不构成抄袭认定，也不构成对该方案的评价；本条仅用于说明本方案不主张首创。",
+      "used_in_sections": [
+        "设计依据与资料清单",
+        "统筹研究范围产业与未来城市研究"
+      ],
+      "verification_note_zh": "核实方式：GitHub API 读取 created_at 时间戳；下载其 proposal.md（34,242 字节）做关键词计数比对。",
+      "registry_status": "supplemental_pending_maintainer_registration"
+    },
+    {
+      "id": "DATA-SRC-CASE-KENDALL-CAMBRIDGE",
+      "title": "Kendall Square — City of Cambridge district profile",
+      "publisher": "City of Cambridge, Massachusetts",
+      "source_kind": "official_case_reference",
+      "source_type": "official_public",
+      "url": "https://www.cambridgema.gov/cdd/economicopportunityanddevelopment/aboutcambridge/kendallsq",
+      "published_date": null,
+      "accessed_date": "2026-08-11",
+      "authority_level": "A1",
+      "public_access_status": "public_official_page",
+      "license_summary": "Official public webpage; used as a background reference only.",
+      "review_status": "background_only",
+      "usable_for_formal": "background_only",
+      "local_paths": [],
+      "allowed_uses": [
+        "案例基本定位与公开空间/创新生态特征的定性说明"
+      ],
+      "prohibited_uses": [
+        "投资额、产值或因果效果结论",
+        "直接推定本项目空间指标"
+      ],
+      "usage_zh": "支撑肯戴尔广场由工业地区转为生物科技创新中心、并形成住房、酒店、餐饮与商业混合的基本描述。",
+      "limit_zh": "仅支撑案例事实描述；本方案的可转化经验与迁移限制属于设计推论，不得改写为该来源的评价结论。",
+      "used_in_sections": [
+        "统筹研究范围产业与未来城市研究"
+      ],
+      "verification_note_zh": "已核对官方公开页面；未引入企业内部数据或未公开材料。",
+      "registry_status": "supplemental_pending_maintainer_registration"
+    },
+    {
+      "id": "DATA-SRC-CASE-KINGS-CROSS-CAMDEN",
+      "title": "King's Cross Central",
+      "publisher": "Camden Council",
+      "source_kind": "official_case_reference",
+      "source_type": "official_public",
+      "url": "https://www.camden.gov.uk/kings-cross-central",
+      "published_date": null,
+      "accessed_date": "2026-08-11",
+      "authority_level": "A1",
+      "public_access_status": "public_official_page",
+      "license_summary": "Official public webpage; used as a background reference only.",
+      "review_status": "background_only",
+      "usable_for_formal": "background_only",
+      "local_paths": [],
+      "allowed_uses": [
+        "案例基本定位与公开空间/创新生态特征的定性说明"
+      ],
+      "prohibited_uses": [
+        "投资额、产值或因果效果结论",
+        "直接推定本项目空间指标"
+      ],
+      "usage_zh": "支撑国王十字作为大型更新地区、包含住房、社区设施、公园与开放空间的基本描述。",
+      "limit_zh": "仅支撑案例事实描述；本方案的可转化经验与迁移限制属于设计推论，不得改写为该来源的评价结论。",
+      "used_in_sections": [
+        "统筹研究范围产业与未来城市研究"
+      ],
+      "verification_note_zh": "已核对官方公开页面；未引入企业内部数据或未公开材料。",
+      "registry_status": "supplemental_pending_maintainer_registration"
+    },
+    {
+      "id": "DATA-SRC-CASE-BARCELONA-22AT",
+      "title": "Science and Innovation — 22@ innovation hub",
+      "publisher": "Barcelona City Council",
+      "source_kind": "official_case_reference",
+      "source_type": "official_public",
+      "url": "https://www.barcelona.cat/promocioeconomica/en/what-we-do/employment-business-entrepreneurship-and-innovation/science-and-innovation",
+      "published_date": null,
+      "accessed_date": "2026-08-11",
+      "authority_level": "A1",
+      "public_access_status": "public_official_page",
+      "license_summary": "Official public webpage; used as a background reference only.",
+      "review_status": "background_only",
+      "usable_for_formal": "background_only",
+      "local_paths": [],
+      "allowed_uses": [
+        "案例基本定位与公开空间/创新生态特征的定性说明"
+      ],
+      "prohibited_uses": [
+        "投资额、产值或因果效果结论",
+        "直接推定本项目空间指标"
+      ],
+      "usage_zh": "支撑巴塞罗那市将 22@ 作为经济活动与技术转移创新枢纽持续推进的基本描述。",
+      "limit_zh": "仅支撑案例事实描述；本方案的可转化经验与迁移限制属于设计推论，不得改写为该来源的评价结论。",
+      "used_in_sections": [
+        "统筹研究范围产业与未来城市研究"
+      ],
+      "verification_note_zh": "已核对官方公开页面；未引入企业内部数据或未公开材料。",
+      "registry_status": "supplemental_pending_maintainer_registration"
+    },
+    {
+      "id": "DATA-SRC-CASE-ONE-NORTH-JTC",
+      "title": "one-north",
+      "publisher": "JTC, Singapore",
+      "source_kind": "official_case_reference",
+      "source_type": "official_public",
+      "url": "https://www.jtc.gov.sg/find-land/jtc-key-estates/one-north?estate=one-north",
+      "published_date": null,
+      "accessed_date": "2026-08-11",
+      "authority_level": "A1",
+      "public_access_status": "public_official_page",
+      "license_summary": "Official public webpage; used as a background reference only.",
+      "review_status": "background_only",
+      "usable_for_formal": "background_only",
+      "local_paths": [],
+      "allowed_uses": [
+        "案例基本定位与公开空间/创新生态特征的定性说明"
+      ],
+      "prohibited_uses": [
+        "投资额、产值或因果效果结论",
+        "直接推定本项目空间指标"
+      ],
+      "usage_zh": "支撑 one-north 由 JTC 规划运营、汇集企业、研究机构和高等教育机构的基本描述。",
+      "limit_zh": "仅支撑案例事实描述；本方案的可转化经验与迁移限制属于设计推论，不得改写为该来源的评价结论。",
+      "used_in_sections": [
+        "统筹研究范围产业与未来城市研究"
+      ],
+      "verification_note_zh": "已核对官方公开页面；未引入企业内部数据或未公开材料。",
+      "registry_status": "supplemental_pending_maintainer_registration"
+    },
+    {
+      "id": "DATA-SRC-CASE-PANGYO-OFFICIAL",
+      "title": "Pangyo Techno Valley — Overview",
+      "publisher": "Pangyo Techno Valley / Gyeonggido Business & Science Accelerator",
+      "source_kind": "official_case_reference",
+      "source_type": "official_public",
+      "url": "https://www.pangyotechnovalley.org/eng/contents/view?contentsNo=31&menuLevel=3&menuNo=29",
+      "published_date": null,
+      "accessed_date": "2026-08-11",
+      "authority_level": "A1",
+      "public_access_status": "public_official_page",
+      "license_summary": "Official public webpage; used as a background reference only.",
+      "review_status": "background_only",
+      "usable_for_formal": "background_only",
+      "local_paths": [],
+      "allowed_uses": [
+        "案例基本定位与公开空间/创新生态特征的定性说明"
+      ],
+      "prohibited_uses": [
+        "投资额、产值或因果效果结论",
+        "直接推定本项目空间指标"
+      ],
+      "usage_zh": "支撑板桥科技谷以 IT/BT/CT 融合研发及产学研政协作为定位的基本描述。",
+      "limit_zh": "仅支撑案例事实描述；本方案的可转化经验与迁移限制属于设计推论，不得改写为该来源的评价结论。",
+      "used_in_sections": [
+        "统筹研究范围产业与未来城市研究"
+      ],
+      "verification_note_zh": "已核对官方公开页面；未引入企业内部数据或未公开材料。",
+      "registry_status": "supplemental_pending_maintainer_registration"
+    },
+    {
+      "id": "DATA-SRC-CASE-OTANIEMI-ESPOO",
+      "title": "Otaniemi — a unique innovation hub",
+      "publisher": "City of Espoo",
+      "source_kind": "official_case_reference",
+      "source_type": "official_public",
+      "url": "https://www.espoo.fi/en/otaniemi-unique-innovation-hub",
+      "published_date": null,
+      "accessed_date": "2026-08-11",
+      "authority_level": "A1",
+      "public_access_status": "public_official_page",
+      "license_summary": "Official public webpage; used as a background reference only.",
+      "review_status": "background_only",
+      "usable_for_formal": "background_only",
+      "local_paths": [],
+      "allowed_uses": [
+        "案例基本定位与公开空间/创新生态特征的定性说明"
+      ],
+      "prohibited_uses": [
+        "投资额、产值或因果效果结论",
+        "直接推定本项目空间指标"
+      ],
+      "usage_zh": "支撑奥塔涅米集聚大学、科研、就业、住房与轨道交通并持续演进的基本描述。",
+      "limit_zh": "仅支撑案例事实描述；本方案的可转化经验与迁移限制属于设计推论，不得改写为该来源的评价结论。",
+      "used_in_sections": [
+        "统筹研究范围产业与未来城市研究"
+      ],
+      "verification_note_zh": "已核对官方公开页面；未引入企业内部数据或未公开材料。",
+      "registry_status": "supplemental_pending_maintainer_registration"
+    },
+    {
+      "id": "DATA-SRC-CASE-XILI-NANSHAN",
+      "title": "南山区科技创新局2021年工作总结及2022年工作计划",
+      "publisher": "深圳市南山区科技创新局",
+      "source_kind": "official_case_reference",
+      "source_type": "official_public",
+      "url": "https://www.szns.gov.cn/xxgk/qzfxxgkml/ghjh/ndgzjhjzj/content/post_9514053.html",
+      "published_date": null,
+      "accessed_date": "2026-08-11",
+      "authority_level": "A1",
+      "public_access_status": "public_official_page",
+      "license_summary": "Official public webpage; used as a background reference only.",
+      "review_status": "background_only",
+      "usable_for_formal": "background_only",
+      "local_paths": [],
+      "allowed_uses": [
+        "案例基本定位与公开空间/创新生态特征的定性说明"
+      ],
+      "prohibited_uses": [
+        "投资额、产值或因果效果结论",
+        "直接推定本项目空间指标"
+      ],
+      "usage_zh": "支撑西丽湖国际科教城推进规划、跨部门协调和成果转化服务平台建设的基本描述。",
+      "limit_zh": "仅支撑案例事实描述；本方案的可转化经验与迁移限制属于设计推论，不得改写为该来源的评价结论。",
+      "used_in_sections": [
+        "统筹研究范围产业与未来城市研究"
+      ],
+      "verification_note_zh": "已核对官方公开页面；未引入企业内部数据或未公开材料。",
+      "registry_status": "supplemental_pending_maintainer_registration"
     },
     {
       "id": "DATA-SRC-MOHURD-ARCH-DESIGN-DEPTH-PENDING",
