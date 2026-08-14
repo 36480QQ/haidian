@@ -262,7 +262,9 @@
       "affects_metrics": [],
       "affects_metric_count": 0,
       "carries_no_metric_note_zh": "**本包没有任何已发布的数字建立在这条假设上。** 这不是疏漏，是这条假设的性质：它若失效，`metrics.json` 里不会有任何一个值改变，因此**任何对数字的检查都抓不到它**。上面的 `if_wrong_zh` 说明了失效会长什么样；能发现它的只有外部判断，不是本包的闸门。把它单列并写明这一点，是本方案能对它做的全部。",
-      "carries_no_metric_note_en": "**No published number in this package rests on this assumption.** That is not an oversight but the nature of it: if it fails, no value in `metrics.json` changes, so **no check on the numbers can catch it**. `if_wrong_zh` above says what failure would look like; only outside judgement can detect it, not this package's gates. Listing it separately and saying so is the whole of what this proposal can do about it."
+      "carries_no_metric_note_en": "**No published number in this package rests on this assumption.** That is not an oversight but the nature of it: if it fails, no value in `metrics.json` changes, so **no check on the numbers can catch it**. `if_wrong_zh` above says what failure would look like; only outside judgement can detect it, not this package's gates. Listing it separately and saying so is the whole of what this proposal can do about it.",
+      "depends_outside_metrics_zh": "**反向索引只看得见 `metrics.json`。** 本条不挂任何 metric，但下列已发布内容建立在它上面：FIG.24 的包络与「18 m² 容纳 8 台」。「不挂 metric」在这里不等于「没有东西依赖它」——只等于「metrics.json 里没有东西依赖它」。",
+      "depends_outside_metrics_en": "**The reverse index can only see `metrics.json`.** This record carries no metric, and the following published material rests on it: FIG.24's envelope and its finding that 18 m² holds 8 devices. Carrying no metric does not mean nothing depends on it — only that nothing in `metrics.json` does."
     },
     {
       "id": "A-ORIGIN-001",
@@ -283,7 +285,9 @@
       "affects_metrics": [],
       "affects_metric_count": 0,
       "carries_no_metric_note_zh": "**本包没有任何已发布的数字建立在这条假设上。** 这不是疏漏，是这条假设的性质：它若失效，`metrics.json` 里不会有任何一个值改变，因此**任何对数字的检查都抓不到它**。上面的 `if_wrong_zh` 说明了失效会长什么样；能发现它的只有外部判断，不是本包的闸门。把它单列并写明这一点，是本方案能对它做的全部。",
-      "carries_no_metric_note_en": "**No published number in this package rests on this assumption.** That is not an oversight but the nature of it: if it fails, no value in `metrics.json` changes, so **no check on the numbers can catch it**. `if_wrong_zh` above says what failure would look like; only outside judgement can detect it, not this package's gates. Listing it separately and saying so is the whole of what this proposal can do about it."
+      "carries_no_metric_note_en": "**No published number in this package rests on this assumption.** That is not an oversight but the nature of it: if it fails, no value in `metrics.json` changes, so **no check on the numbers can catch it**. `if_wrong_zh` above says what failure would look like; only outside judgement can detect it, not this package's gates. Listing it separately and saying so is the whole of what this proposal can do about it.",
+      "depends_outside_metrics_zh": "**反向索引只看得见 `metrics.json`。** 本条不挂任何 metric，但下列已发布内容建立在它上面：FIG.25 的 2,400 mm 架站圈与它对通行净宽的校验。「不挂 metric」在这里不等于「没有东西依赖它」——只等于「metrics.json 里没有东西依赖它」。",
+      "depends_outside_metrics_en": "**The reverse index can only see `metrics.json`.** This record carries no metric, and the following published material rests on it: FIG.25's 2,400 mm setup circle and its clear-width check. Carrying no metric does not mean nothing depends on it — only that nothing in `metrics.json` does."
     },
     {
       "id": "A-DEVICE-002",
@@ -304,7 +308,9 @@
       "affects_metrics": [],
       "affects_metric_count": 0,
       "carries_no_metric_note_zh": "**本包没有任何已发布的数字建立在这条假设上。** 这不是疏漏，是这条假设的性质：它若失效，`metrics.json` 里不会有任何一个值改变，因此**任何对数字的检查都抓不到它**。上面的 `if_wrong_zh` 说明了失效会长什么样；能发现它的只有外部判断，不是本包的闸门。把它单列并写明这一点，是本方案能对它做的全部。",
-      "carries_no_metric_note_en": "**No published number in this package rests on this assumption.** That is not an oversight but the nature of it: if it fails, no value in `metrics.json` changes, so **no check on the numbers can catch it**. `if_wrong_zh` above says what failure would look like; only outside judgement can detect it, not this package's gates. Listing it separately and saying so is the whole of what this proposal can do about it."
+      "carries_no_metric_note_en": "**No published number in this package rests on this assumption.** That is not an oversight but the nature of it: if it fails, no value in `metrics.json` changes, so **no check on the numbers can catch it**. `if_wrong_zh` above says what failure would look like; only outside judgement can detect it, not this package's gates. Listing it separately and saying so is the whole of what this proposal can do about it.",
+      "depends_outside_metrics_zh": "**反向索引只看得见 `metrics.json`。** 本条不挂任何 metric，但下列已发布内容建立在它上面：FIG.26 的停止距离 2.59 m 与前沿净空要求。「不挂 metric」在这里不等于「没有东西依赖它」——只等于「metrics.json 里没有东西依赖它」。",
+      "depends_outside_metrics_en": "**The reverse index can only see `metrics.json`.** This record carries no metric, and the following published material rests on it: FIG.26's 2.59 m halt distance and the clearance it requires. Carrying no metric does not mean nothing depends on it — only that nothing in `metrics.json` does."
     },
     {
       "id": "A-PLATE-001",
@@ -325,7 +331,9 @@
       "affects_metrics": [],
       "affects_metric_count": 0,
       "carries_no_metric_note_zh": "**本包没有任何已发布的数字建立在这条假设上。** 这不是疏漏，是这条假设的性质：它若失效，`metrics.json` 里不会有任何一个值改变，因此**任何对数字的检查都抓不到它**。上面的 `if_wrong_zh` 说明了失效会长什么样；能发现它的只有外部判断，不是本包的闸门。把它单列并写明这一点，是本方案能对它做的全部。",
-      "carries_no_metric_note_en": "**No published number in this package rests on this assumption.** That is not an oversight but the nature of it: if it fails, no value in `metrics.json` changes, so **no check on the numbers can catch it**. `if_wrong_zh` above says what failure would look like; only outside judgement can detect it, not this package's gates. Listing it separately and saying so is the whole of what this proposal can do about it."
+      "carries_no_metric_note_en": "**No published number in this package rests on this assumption.** That is not an oversight but the nature of it: if it fails, no value in `metrics.json` changes, so **no check on the numbers can catch it**. `if_wrong_zh` above says what failure would look like; only outside judgement can detect it, not this package's gates. Listing it separately and saying so is the whole of what this proposal can do about it.",
+      "depends_outside_metrics_zh": "**反向索引只看得见 `metrics.json`。** 本条不挂任何 metric，但下列已发布内容建立在它上面：FIG.27 的 3.0 m 读数站位。「不挂 metric」在这里不等于「没有东西依赖它」——只等于「metrics.json 里没有东西依赖它」。",
+      "depends_outside_metrics_en": "**The reverse index can only see `metrics.json`.** This record carries no metric, and the following published material rests on it: FIG.27's 3.0 m reading position. Carrying no metric does not mean nothing depends on it — only that nothing in `metrics.json` does."
     },
     {
       "id": "A-READ-001",
@@ -346,7 +354,9 @@
       "affects_metrics": [],
       "affects_metric_count": 0,
       "carries_no_metric_note_zh": "**本包没有任何已发布的数字建立在这条假设上。** 这不是疏漏，是这条假设的性质：它若失效，`metrics.json` 里不会有任何一个值改变，因此**任何对数字的检查都抓不到它**。上面的 `if_wrong_zh` 说明了失效会长什么样；能发现它的只有外部判断，不是本包的闸门。把它单列并写明这一点，是本方案能对它做的全部。",
-      "carries_no_metric_note_en": "**No published number in this package rests on this assumption.** That is not an oversight but the nature of it: if it fails, no value in `metrics.json` changes, so **no check on the numbers can catch it**. `if_wrong_zh` above says what failure would look like; only outside judgement can detect it, not this package's gates. Listing it separately and saying so is the whole of what this proposal can do about it."
+      "carries_no_metric_note_en": "**No published number in this package rests on this assumption.** That is not an oversight but the nature of it: if it fails, no value in `metrics.json` changes, so **no check on the numbers can catch it**. `if_wrong_zh` above says what failure would look like; only outside judgement can detect it, not this package's gates. Listing it separately and saying so is the whole of what this proposal can do about it.",
+      "depends_outside_metrics_zh": "**反向索引只看得见 `metrics.json`。** 本条不挂任何 metric，但下列已发布内容建立在它上面：FIG.28 的 3.46 m 可读锥、5 人同时可读与 30 人 6 轮。「不挂 metric」在这里不等于「没有东西依赖它」——只等于「metrics.json 里没有东西依赖它」。",
+      "depends_outside_metrics_en": "**The reverse index can only see `metrics.json`.** This record carries no metric, and the following published material rests on it: FIG.28's 3.46 m cone, five readers abreast and six rounds for thirty. Carrying no metric does not mean nothing depends on it — only that nothing in `metrics.json` does."
     },
     {
       "id": "A-SURVEY-001",
@@ -367,7 +377,32 @@
       "affects_metrics": [],
       "affects_metric_count": 0,
       "carries_no_metric_note_zh": "**本包没有任何已发布的数字建立在这条假设上。** 这不是疏漏，是这条假设的性质：它若失效，`metrics.json` 里不会有任何一个值改变，因此**任何对数字的检查都抓不到它**。上面的 `if_wrong_zh` 说明了失效会长什么样；能发现它的只有外部判断，不是本包的闸门。把它单列并写明这一点，是本方案能对它做的全部。",
-      "carries_no_metric_note_en": "**No published number in this package rests on this assumption.** That is not an oversight but the nature of it: if it fails, no value in `metrics.json` changes, so **no check on the numbers can catch it**. `if_wrong_zh` above says what failure would look like; only outside judgement can detect it, not this package's gates. Listing it separately and saying so is the whole of what this proposal can do about it."
+      "carries_no_metric_note_en": "**No published number in this package rests on this assumption.** That is not an oversight but the nature of it: if it fails, no value in `metrics.json` changes, so **no check on the numbers can catch it**. `if_wrong_zh` above says what failure would look like; only outside judgement can detect it, not this package's gates. Listing it separately and saying so is the whole of what this proposal can do about it.",
+      "depends_outside_metrics_zh": "**反向索引只看得见 `metrics.json`。** 本条不挂任何 metric，但下列已发布内容建立在它上面：FIG.29 由几何反算的 55/52 架站与 5.8/5.5 h。「不挂 metric」在这里不等于「没有东西依赖它」——只等于「metrics.json 里没有东西依赖它」。",
+      "depends_outside_metrics_en": "**The reverse index can only see `metrics.json`.** This record carries no metric, and the following published material rests on it: FIG.29's 55 and 52 setups and its 5.8 h and 5.5 h durations. Carrying no metric does not mean nothing depends on it — only that nothing in `metrics.json` does."
+    },
+    {
+      "id": "A-STAFF-001",
+      "status": "chosen_by_this_proposal",
+      "statement": "年运营成本模型的每次出勤人数与每次工时区间——原点 3 专业 0 社区 / 5–8 h，一等 3 / 0 / 4–6 h，二等 2 / 2 / 2.5–4 h，三等 1 / 2 / 1.5–2.5 h——全部由本方案自定，未取得测绘作业定额或同类项目的可核来源。",
+      "impact": "这组数支撑本包最多的下游结论：年运营 19,444–63,922 元、付费工时 139–220 h、志愿工时 148–244 h，以及 FIG.29 的时长核对、FIG.30 的年度排布与 FIG.31 的志愿取舍。人数取错，四张图与整张成本表同时失真；工时取错，FIG.29 的相容性断言失去意义。",
+      "derivation_zh": "每次出勤人数按作业最小可行班组取：一次水准作业至少要一人观测、一人扶尺才能推进，因此三等取 1 专业 + 2 社区（社区读数即扶尺与记录）；二等路线更长、转点更多，取 2 专业 + 2 社区；一等与原点是闭合作业，全程专业，取 3 人、无社区名额——**社区不参加一等与原点，正是 FIG.31 那条取舍的来源**。工时区间按一次出勤含到达、架站、观测、记录、撤收估计。**六组数字没有一个有外部来源。**",
+      "derivation_en": "Head counts are taken as the smallest crew that can actually advance the work: a levelling run needs one person observing and one holding the staff, so third order is 1 professional + 2 community (the community reading *is* holding the staff and recording); second order runs longer with more turning points, so 2 + 2; first order and the datum are closing runs, professional throughout, 3 with no community places — **and that absence is the origin of the trade FIG.31 states**. The hour bands estimate one attendance including travel, setup, observation, recording and packing up. **Not one of the six figures has an external source.**",
+      "if_wrong_zh": "**这是本包下游结论最多的一条假设。** 人数取错，年运营 19,444–63,922 元、付费 139–220 h、志愿 148–244 h 与 FIG.30、FIG.31 两张图同时失真；工时取错，FIG.29 由几何反算出的 5.5–5.8 h 与成本表 4.0–6.0 h 的相容断言失去意义——**那条断言核对的是两者一致，不是两者正确**。方向上，人数取少则成本偏低、志愿负担偏轻，两者都对本方案有利，因此这条应当被最先质疑。",
+      "if_wrong_en": "**More published conclusions rest on this than on any other assumption here.** Wrong head counts distort the annual cost, the paid and volunteer hour totals, and both FIG.30 and FIG.31 at once. Wrong hour bands empty out FIG.29's compatibility assertion — **that check establishes that two figures agree, not that either is right**. The direction matters: too few people understates both the cost and the burden asked of volunteers, and both errors flatter this proposal, which is why this record should be attacked first.",
+      "what_would_close_it_zh": "取得测绘作业定额中水准测量的班组配置与工时定额，或一个同规模既有项目的实测出勤记录。",
+      "what_would_close_it_en": "Obtain crew-composition and time norms for levelling from a surveying work-norm standard, or attendance records from one existing project of comparable size.",
+      "owner": "participant",
+      "next_action_zh": "本包缺口：取得水准测量的班组与工时定额，或一份同规模项目的出勤记录；在此之前六组数字均为自定，不得写成定额值。",
+      "next_action_en": "This package's gap: obtain crew and time norms for levelling, or one comparable project's attendance record. Until then all six figures are chosen here and none is written up as a norm.",
+      "owner_means_zh": "本方案自己能关、或每次构建都在关",
+      "owner_means_en": "this package can close it, or closes it on every build",
+      "affects_metrics": [],
+      "affects_metric_count": 0,
+      "carries_no_metric_note_zh": "**本包没有任何已发布的数字建立在这条假设上。** 这不是疏漏，是这条假设的性质：它若失效，`metrics.json` 里不会有任何一个值改变，因此**任何对数字的检查都抓不到它**。上面的 `if_wrong_zh` 说明了失效会长什么样；能发现它的只有外部判断，不是本包的闸门。把它单列并写明这一点，是本方案能对它做的全部。",
+      "carries_no_metric_note_en": "**No published number in this package rests on this assumption.** That is not an oversight but the nature of it: if it fails, no value in `metrics.json` changes, so **no check on the numbers can catch it**. `if_wrong_zh` above says what failure would look like; only outside judgement can detect it, not this package's gates. Listing it separately and saying so is the whole of what this proposal can do about it.",
+      "depends_outside_metrics_zh": "**反向索引只看得见 `metrics.json`。** 本条不挂任何 metric，但下列已发布内容建立在它上面：年运营成本表（19,444–63,922 元）、付费 139–220 h、志愿 148–244 h、FIG.29 的时长相容断言、FIG.30 的年度排布、FIG.31 的志愿取舍。「不挂 metric」在这里不等于「没有东西依赖它」——只等于「metrics.json 里没有东西依赖它」。",
+      "depends_outside_metrics_en": "**The reverse index can only see `metrics.json`.** This record carries no metric, and the following published material rests on it: the annual operating table, both hour totals, FIG.29's compatibility assertion, FIG.30's calendar and FIG.31's volunteer trade. Carrying no metric does not mean nothing depends on it — only that nothing in `metrics.json` does."
     }
   ],
   "note_zh": "**本文件是评审模型整份读取的九个文件之一，而 `geometry/` 与 `visual/assets/` 不是**（见 `scripts/review_submission.py::build_review_input`）。因此每条假设除了陈述，还写出：`derivation_zh`——这个读数实际是怎么得出的；`if_wrong_zh`——如果它错了，本方案的哪个结论会变、哪个不会；`what_would_close_it_zh`——什么能让它不再是假设；以及 `affects_metrics`——**由 metrics.json 的 assumption_ids 反向索引算出**，使读这份文件的人能看出每条假设承载了多少个数字。一条没有写出后果的假设是免责声明，不是假设。",
@@ -377,9 +412,9 @@
     "not_applicable": 1,
     "operator_after_award": 2,
     "organizer": 3,
-    "participant": 8,
+    "participant": 9,
     "permanently_open": 1
   },
-  "ownership_note_zh": "**每条假设除了「什么能关闭它」，还写明「谁能关闭它」。** 一份只说条件不说责任的登记表，会把两种情况混成一种：本方案还没做的，和本方案做不了的。本册 16 条的归属为 mixed 1、not_applicable 1、operator_after_award 2、organizer 3、participant 8、permanently_open 1。仓库的评审脚本只把以 `组织方：`／`主办方：` 开头的动作视为外部所有，其余一律 fail-closed 归还参与方（`is_organizer_owned_action`）；本包因此只在三条确属主管部门发布的项上使用该前缀，**A-CONTROLS-001 拆开写而不整条认领，A-LIGHTING-001 记为本方案自己的欠缺**——没拿到一份已公开的标准，不是别人的问题。",
-  "ownership_note_en": "**Each assumption states who can close it, not only what would close it.** A register that gives the condition but not the responsibility merges two different things: what this package has not done, and what this package cannot do. Across 16 records the split is mixed 1, not_applicable 1, operator_after_award 2, organizer 3, participant 8, permanently_open 1. The repository's review script treats an action as externally owned only when it begins `组织方：`/`主办方：` and returns everything else fail-closed to the participant (`is_organizer_owned_action`), so that prefix is used here for the three items that are genuinely an authority's publication and for nothing else — **A-CONTROLS-001 is split rather than claimed whole, and A-LIGHTING-001 is booked as this package's own shortfall**, because not having obtained a published standard is nobody else's fault."
+  "ownership_note_zh": "**每条假设除了「什么能关闭它」，还写明「谁能关闭它」。** 一份只说条件不说责任的登记表，会把两种情况混成一种：本方案还没做的，和本方案做不了的。本册 17 条的归属为 mixed 1、not_applicable 1、operator_after_award 2、organizer 3、participant 9、permanently_open 1。仓库的评审脚本只把以 `组织方：`／`主办方：` 开头的动作视为外部所有，其余一律 fail-closed 归还参与方（`is_organizer_owned_action`）；本包因此只在三条确属主管部门发布的项上使用该前缀，**A-CONTROLS-001 拆开写而不整条认领，A-LIGHTING-001 记为本方案自己的欠缺**——没拿到一份已公开的标准，不是别人的问题。",
+  "ownership_note_en": "**Each assumption states who can close it, not only what would close it.** A register that gives the condition but not the responsibility merges two different things: what this package has not done, and what this package cannot do. Across 17 records the split is mixed 1, not_applicable 1, operator_after_award 2, organizer 3, participant 9, permanently_open 1. The repository's review script treats an action as externally owned only when it begins `组织方：`/`主办方：` and returns everything else fail-closed to the participant (`is_organizer_owned_action`), so that prefix is used here for the three items that are genuinely an authority's publication and for nothing else — **A-CONTROLS-001 is split rather than claimed whole, and A-LIGHTING-001 is booked as this package's own shortfall**, because not having obtained a published standard is nobody else's fault."
 }
