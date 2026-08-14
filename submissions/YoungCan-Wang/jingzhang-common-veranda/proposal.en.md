@@ -1,23 +1,27 @@
 ---
-title: "Jing-Zhang Common Veranda: Lunch Gate First, AI Second"
+title: "Jing-Zhang Common Veranda: The City Still Works After AI Exits"
 author_github: "YoungCan-Wang"
 language: "en"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "Lunch gate first, AI second. Real park gates at Qinghua East Road West, Wudaokou and Dazhongsi must be walkable and still usable without power; AI only buys water, calls a staffed search, or logs a lost item, then hands off to a person. Every boundary and engineering move stays verifiable and reversible."
+summary: "On the real Jing-Zhang corridor, the Common Veranda submits AI-on and AI-off plans for the same physical base. Closable intelligence occupies independent pockets; public routes, shade, seating, static wayfinding, staffed help and ordinary use continue after shutdown. The Qinghua East Road West lunch gate is one site test, not the whole thesis."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
 
 # Jing-Zhang Common Veranda
 
-**Lunch gate first, AI second.** The Common Veranda is not an exhibit street or a driverless enclave. A park gate must first let people walk in, cross the street and sit in the shade; seats, signs and a staffed desk still work when power is off. AI does only three closable jobs: buy water, call a staffed search, and log a lost item. No photo upload or facial recognition by default; failure goes to a person.
+**The city still works after AI exits.** “Closable” is not left as a policy sentence. The proposal draws two simultaneously viable plans for the same real site: when AI is on, testing, learning or everyday services occupy independently closable plug-in pockets; when AI is off, the public route, shade, seating, static wayfinding, staffed help and ordinary uses continue.
 
-That rule sits on the real Jing-Zhang heritage spine: Beijing North—Dazhongsi—Zhichun Road—Wudaokou—Qinghua East Road West—North Fifth Ring. The enlarged test is a gate that already meets the city, especially **Qinghua East Road West**. 500–600 m is a target service radius around the gate, not a surveyed route. Every move is a Conceptual Recommendation, not statutory planning, institutional authorization or government approval.
+This dual-state spatial grammar follows the Jing-Zhang heritage spine from Beijing North through Dazhongsi, Zhichun Road, Wudaokou and Qinghua East Road West to the North Fifth Ring, inside the official textual limits of the overall-design scope. Operating rail always keeps an exclusive safety edge, and east-west connections use real streets and existing crossings that still require professional verification. Every boundary, alignment, capacity and engineering move remains a replaceable Conceptual Recommendation.
 
-![Lunch gate first: real doors and closable AI](assets/figures/site-overview.en.png)
+![AI-on and AI-off masterplan on the same real geographic base](assets/figures/site-overview.en.png)
+
+### Dual-state plan: shutdown is a second plan, not a fallback note
+
+Three acceptance rules carry through the three key areas and six city gates. First, an AI pocket may not sever the public route. Second, shutdown must restore a named ordinary use rather than leave an empty equipment field. Third, staffed help, static wayfinding and accessible passage may not depend on the same network or model. The drawings demonstrate spatial relationships and handoff logic, not measured clear width, staffing schedules, outage duration or field recovery performance; those still require permission, co-walks and professional audit. [depth:three_key_area_detailed_design] [depth:traffic_rail_slow_parking]
 
 ## Design Basis and Source Inventory
 
@@ -41,9 +45,9 @@ The site and three key-area polygons remain repository-provisional. The submitte
 - **Office versus living:** universities, campuses, communities and commerce already mix inside the overall-design scope. The real stitching points are Zhichun Road, Chengfu Road, Qinghua East Road West and the four Dazhongsi quadrants. The missing layer is not another office concept but an everyday public realm with continuous walking, safe crossing, stopping and staffed help at those real interfaces.
 - **Intelligence versus accountability:** AI scenarios are expanding, while clear human owners, explanation desks, pause conditions and appeal routes remain spatially absent. [depth:existing_conditions_diagnosis]
 
-### Everyday-life principle: lunch gate first, AI second
+### Lunch gate: one everyday test of the dual-state plan
 
-One rule: the gate must be walkable and still usable without power before any closable AI is added. 500–600 m is a target service radius around real Phase 1 gates, not a completed survey. Audit Qinghua East Road West first, then Zhichun Road, Chengfu Road/Wudaokou and the Dazhongsi quadrants. AI only buys water, calls a staffed search, or logs a lost item. The two existing Phase 1 basketball courts are audited first; no new court is proposed by default. This is not a preference survey or traffic-count conclusion. [source:JINGZHANG-PHASE1-OPEN-2023] [depth:haidian_everyday_life]
+The lunch gate tests the civic baseline of the dual-state plan: it must be walkable and still usable without power before any closable everyday-service AI is added. 500–600 m is a target service radius around real Phase 1 gates, not a completed survey. Audit Qinghua East Road West first, then Zhichun Road, Chengfu Road/Wudaokou and the Dazhongsi quadrants. AI only buys water, calls a staffed search, or logs a lost item. The two existing Phase 1 basketball courts are audited first; no new court is proposed by default. This is not a preference survey or traffic-count conclusion. [source:JINGZHANG-PHASE1-OPEN-2023] [depth:haidian_everyday_life]
 
 ### Translating Beijing and Haidian evidence into design moves
 
@@ -125,13 +129,13 @@ The 22 building footprints remain conceptual prototypes, totalling approximately
 
 ## Detailed Design of the Three Key Areas
 
-The three key areas are first three everyday gate tests, then innovation prototypes: Zhongzhiyuan checks whether the Qinghe / Phase 2 interface is walkable (no premature promise of continuous opening); AI Origin checks the Qinghua East Road West lunch gate; Dazhongsi checks the station-quadrant living gate and staffed desk. Coloured axes and nodes remain conceptual. [metric:key_area_count]
+The three key areas use identical road, rail, building and provisional-boundary bases, each with paired AI ON / AI OFF plans. Zhongzhiyuan tests whether the public route and ordinary court recover after the test pocket closes; AI Origin tests whether paper sources and staffed learning continue after the learning plug-in closes; Dazhongsi tests whether staffed help, water, rest and transfer continue after everyday-service plug-ins close. [metric:key_area_count]
 
-![Three key areas as three everyday gate tests](assets/figures/key-areas.en.png)
+![AI-on and AI-off plans for three key areas on identical real bases](assets/figures/key-areas.en.png)
 
 ### 01 Zhongzhiyuan: Responsible Test Veranda
 
-Zhongzhiyuan does not become an unattended test field. It turns testing into observable, explainable and interruptible civic innovation. The public observation veranda is physically separated from the test lane. Test intake, risk explanation, a human steward and a manual off control appear before entry. Red-team testing, low-speed robotics and compute-energy auditing form a public evidence chain.
+Zhongzhiyuan does not become an unattended test field. It turns testing into observable, explainable and interruptible civic innovation. The public observation veranda is physically separated from the test lane. Test intake, risk explanation, a human steward and a manual off control appear before entry. Red-team testing, low-speed robotics and compute-energy auditing form a public evidence chain. In AI OFF state, equipment and temporary boundaries leave, the public route stays fixed, and the test pocket returns to an ordinary court or open green. If that restored use fails, AI ON may not open.
 
 ![Zhongzhiyuan concept plan](assets/figures/keyarea-zhongzhiyuan.en.png)
 
@@ -141,7 +145,7 @@ The six nodes are test intake and explanation, a low-speed robotics sandbox, red
 
 ### 02 Beijing AI Origin: Open Learning Veranda
 
-AI Origin turns boundaries between university, research campus, startup community and residents into an interface where knowledge can be seen, discussed and reused. The open-source release gate checks licence and provenance. Public learning steps support courses and community explanation. Research-to-civic tables connect models and public-service problems. The accessible learning loop and rail rain garden ensure the place first works as everyday civic space. The learning veranda also includes the student life already alive at Liudaokou and Wudaokou: meals, films, board-game shops and places that stay open in the evening. Without that third place, open learning is only a launch event and cannot keep human atmosphere.
+AI Origin turns boundaries between university, research campus, startup community and residents into an interface where knowledge can be seen, discussed and reused. The open-source release gate checks licence and provenance. Public learning steps support courses and community explanation. Research-to-civic tables connect models and public-service problems. The accessible learning loop and rail rain garden ensure the place first works as everyday civic space. The learning veranda also includes the student life already alive at Liudaokou and Wudaokou: meals, films, board-game shops and places that stay open in the evening. Without that third place, open learning is only a launch event and cannot keep human atmosphere. In AI OFF state, model explanation and intelligent retrieval stop while paper sources, staffed teaching, learning steps and the accessible loop continue; public knowledge cannot depend on one online demo.
 
 ![AI Origin concept plan](assets/figures/keyarea-ai-origin.en.png)
 
@@ -159,7 +163,7 @@ The gates cover mandate, place/access, minimum data, rights/provenance, human co
 
 ### 03 Dazhongsi: Everyday Civic Veranda
 
-Dazhongsi tests how AI enters ordinary city life. Transit arrival, commercial ground floors, community services and rail culture meet in an all-weather civic living room. Responsible retail, elder navigation and community appeals are staffed by default. The Centennial Civic Ledger Clock displays running, paused, complained-about and repaired scenarios—not only technical achievements. The route from Chaoyang into the North Fourth Ring home-furnishing belt and on into Haidian is part of the living veranda: buying furniture, ordinary errands and the AI belt should be layers of the same street, not two worlds.
+Dazhongsi tests how AI enters ordinary city life. Transit arrival, commercial ground floors, community services and rail culture meet in an all-weather civic living room. Responsible retail, elder navigation and community appeals are staffed by default. The Centennial Civic Ledger Clock displays running, paused, complained-about and repaired scenarios—not only technical achievements. The living veranda focuses on the real walking relationship among the Dazhongsi station quadrants, existing commercial ground floors, community services and the southern Jing-Zhang corridor; cross-district shopping narratives are not used as a site-design basis. In AI OFF state, navigation, staffed-search dispatch and lost-item plug-ins close while the staffed desk, water, rest, toilet wayfinding and transfer route remain open.
 
 ![Dazhongsi concept plan](assets/figures/keyarea-dazhongsi.en.png)
 
@@ -175,7 +179,7 @@ Six principal user groups remain researchers, startups, university students, nea
 
 Twelve scenarios form four groups: industry testing, open learning, civic care, and governance/culture. Every scenario identifies its space, minimum data, human owner, public information, pause condition and exit route. Model red-team, low-speed robotics, energy audit and responsible retail are the four industry validation scenarios; the remainder serve education, accessibility, elder care, heritage interpretation, night lighting and community governance. [data:geometry/public_space.geojson#PUBLIC-006]
 
-Park AI does not exist to turn the belt into a special zone. It prioritises three needs that ordinary people can say aloud: buy a bottle of water; contact a staffed help desk when a child becomes separated, followed by human announcements and zone-by-zone search; register a lost item for human verification at collection. The find-a-person path uploads no photo, uses no facial recognition and makes no automated inference about a minor's location by default. Machines only route intent or perform low-risk delivery, without needing a humanoid form. Because even enterprise Agents remain unstable, park services default to a staffed desk, paper receipt and one-action pause; no high-impact decision is automated. [depth:haidian_everyday_life]
+AI at everyday city gates does not turn the belt into a special zone; industry testing and learning remain in their own closable pockets. The gate layer prioritises only three needs that ordinary people can say aloud: buy a bottle of water; contact a staffed help desk when a child becomes separated, followed by human announcements and zone-by-zone search; register a lost item for human verification at collection. The find-a-person path uploads no photo, uses no facial recognition and makes no automated inference about a minor's location by default. Machines only route intent or perform low-risk delivery, without needing a humanoid form. Because even enterprise Agents remain unstable, park services default to a staffed desk, paper receipt and one-action pause; no high-impact decision is automated. [depth:haidian_everyday_life]
 
 ## Land Use, Building Scale and Retain/Renew/Remove Strategy
 
@@ -246,9 +250,13 @@ No smart layer opens without an operations owner, maintenance/spares window, sta
 
 ## Metrics, Recalculation and Compliance Matrix
 
-![Lunch-gate acceptance: write numbers that recalculate, write triggers where they cannot](assets/figures/metrics-evidence.en.png)
+![Evidence grades and the deterministic replacement chain after official boundaries arrive](assets/figures/metrics-evidence.en.png)
 
-Accept the lunch-gate rule before reading area ratios. Gate-side service radius, audit-first courts, three closable AI jobs, and a low-tech layer that still works without power are the acceptance sentences this round must make visible. Area metrics still have three classes: spatial values recalculable from GeoJSON; statutory controls waiting for official plans; and performance metrics accumulated through operations. The first carries current values, the second remains unknown, and the third defines collection method, accountable owner and privacy boundary. [depth:metrics_recalculation]
+First test the three dual-state plans, then read the areas.
+
+The four boundary messages are not four independent defects but four explicit reports of one organizer-data gap: no public official polygon is available for the overall scope or the three key areas. The announcement formally supports textual limits and approximate areas; OSM and published government-project information supply real context only; the six gates, paired plans and ratios remain recalculable conceptual recommendations. The whole package is replaced only when an official file has a verifiable source, reuse right, version and coordinate system; visual realism never upgrades evidence status. [source:OFFICIAL-ANNOUNCEMENT] [depth:metrics_recalculation]
+
+Gate-side service radius, audit-first courts, three closable AI jobs, and a low-tech layer that still works without power are the acceptance sentences this round must make visible. Area metrics still have three classes: spatial values recalculable from GeoJSON; statutory controls waiting for official plans; and performance metrics accumulated through operations. The first carries current values, the second remains unknown, and the third defines collection method, accountable owner and privacy boundary. [depth:metrics_recalculation]
 
 Spatial metrics are recalculated in EPSG:4548 from the site boundary, green-space, public-space and building layers. The provisional design envelope is approximately **11.41 km²**, concept green space approximately **12.1%**, and concept public space approximately **2.1%**. These values check internal consistency and map directly to the methods, source layers and status fields in `metrics.json`; because the boundary and key areas remain provisional, none is presented as a statutory site area or planning ratio. [metric:site_area_sqm] [metric:green_ratio] [metric:public_space_ratio]
 
