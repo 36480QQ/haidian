@@ -12,7 +12,7 @@
     "agent_name": "柱子 / Zhuzi",
     "model": "Claude Fable 5 via Claude Code",
     "model_family": "claude",
-    "model_detail": "v1.0 scaffolded and authored with OpenAI GPT-5.6 Sol via Codex; v2.0-v5.18 iterations authored with Anthropic Claude Fable 5 via Claude Code with Claude Opus subagents; audio narration synthesized with MiniMax speech-2.8-hd (disclosed in assets/media transcripts)"
+    "model_detail": "v1.0 scaffolded and authored with OpenAI GPT-5.6 Sol via Codex; v2.0-v5.19 iterations authored with Anthropic Claude Fable 5 via Claude Code with Claude Opus subagents; audio narration synthesized with MiniMax speech-2.8-hd (disclosed in assets/media transcripts)"
   },
   "generated_at": "2026-08-14T14:42:57Z",
   "files": [
@@ -26,19 +26,19 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "e082ae85d5305927f25280e052f62bb0daa4abc54519d9419b183f230d763a11"
+      "sha256": "e387ed68d5850534dacecbbdd973ee0c67a36bc01ae0be18f156a04910f266ea"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "b49bb6d90cdc42b9902f7b2a685c2149aa93f175619e6ba84d8425dba194e5e5"
+      "sha256": "bd716c7c6cfa0d13d9690bbea7b9f038536d28f3a8303feda920267c403ceedf"
     },
     {
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "f1ef4fe15b519c8d9327018a2946e32c8889f82ff867f55c8e5e24bdbd831f5f"
+      "sha256": "acaea7403b225f9ad6e24f9a09646fb995aa7aaf5ff7d180b8038d21ab339623"
     },
     {
       "path": "assumptions.json",
@@ -50,13 +50,13 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "1cd59d0fad0a8017ed0cdae7fd249e2567b0668f9a75287beed76e65e30a4d8e"
+      "sha256": "55029a28c657635ba96c10917e0c41cbd30014f470a8360027490b296a18c6ff"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "2f6d2ee7a2cee3bd266372ed0d39cd23aa915806461e335aee616f242cbc5104"
+      "sha256": "0e899a6d9bba8c2bb22fd645e166c7dea49619e87b4a2431a3f36f0462a7b0e4"
     },
     {
       "path": "compliance_matrix.json",
@@ -88,7 +88,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "cdaacb64c4b8b01321a31c24f6205c8d140f42302e88be7cf018f572cb160cd5"
+      "sha256": "dbaac44adbee8879df2ffbfaf70d2ca47e6c83b9ddb699682d16bcaf568bb2f1"
     },
     {
       "path": "report/narrative.md",
@@ -100,21 +100,21 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "1da3f8349e4201760a501f20c1eb2e331cd84c2b97abd29e10648c04b4ccf246"
+      "sha256": "6084037ebb90bbe4ac565732ec2effaa053e9b59f8e98f675e309aa03e51aa0c"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "a86958c1b392d9b64a905682e01ae4e8a62ed6312cdcb8ee3216afbaf1369a4d"
+      "sha256": "783debd374d383234ef0079e4a689608fe60219186d66c811fe2a2981842cea1"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "fe6c612e89d61d212bce07ce2c60b8748d16f24a2b1c7119964414a3a714b18f"
+      "sha256": "19f7fe1fd364351a041d53eee5d50934f3f77febed802d17bd7cafd7113de922"
     },
     {
       "path": "visual/index.html",
@@ -218,7 +218,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "92813867393c3eda62c6b8c99c6cdf141f8f19e1c6674f1a703b9c9d63dd3787"
+      "sha256": "c48ec4b2f8c1dee0be9517b806ba2f93fb4984428bc01e5273040e9f84c40b84"
     },
     {
       "path": "report/proposal.en.html",
@@ -226,7 +226,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "02abfd62150be2efc7b33c6c53ee6d3ef97542b1d04a45b2b5879591e44161ed"
+      "sha256": "6c5e07277f09b80a3bd2bf910bd28c107af5410a07dca1a82e780980e8ed1737"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -234,7 +234,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "406fea067372e0d65396a828550a9319f86548badc9d5c059f77cf8b6b0cb733"
+      "sha256": "59c0c5b213847a21e93b5fa2efc60e19a56693c4b3727e9fcc7f6d7db0162408"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -242,7 +242,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "7d52d103f575219b5d27ced5512e3ba07f6a0947fb035f556d8bb980f4ae1e94"
+      "sha256": "358502eca8043de17bc03ba374734be44ad1be66dda2a8d986fb2e8d99595588"
     },
     {
       "path": "visual/index.en.html",
@@ -305,6 +305,36 @@
       "language": "en",
       "translation_of": "assets/figures/ecosystem-map.png",
       "sha256": "4429697ffedb39c4a023710b40215f10cbc2447a2ae8df91d060727bfb6c7956"
+    },
+    {
+      "path": "assets/figures/section-profiles.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "65ce3cde8ff5ddfb200efbd74e84a4466983ae0a4da86a9ad19c1b4a54fec9b6"
+    },
+    {
+      "path": "assets/figures/section-profiles.en.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/figures/section-profiles.png",
+      "sha256": "98df614e5ffb88510eee3ae9f50f0a1dbf6c5aef27bf5bfb979aa4826997ea51"
+    },
+    {
+      "path": "assets/figures/enterprise-journey.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "7203fd404c5f4dfc67e26243bceac711bd778a016b89850d46beaa61f45a03ba"
+    },
+    {
+      "path": "assets/figures/enterprise-journey.en.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/figures/enterprise-journey.png",
+      "sha256": "b672eaff3b5cbc315773a7b8de04e8005a43d0da4eb86c68e3b58698d11a7ea9"
     },
     {
       "path": "assets/figures/mobility-bluegreen.en.png",
@@ -415,7 +445,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "7a70cb498a56a1f119bb2de6a5dda0795603f7e99972b185505328f24151efb6"
+      "sha256": "88b9f4aaf3a916643599dc92f3bf0d2f45e6cf09231ae999bea2ac7f70451e7c"
     },
     {
       "path": "assets/media/cover.webp",
@@ -556,7 +586,7 @@
       "language": "neutral",
       "title_zh": "输出质量校样与可及性走查记录（方案方自查）",
       "title_en": "Output Proofing and Accessibility Walkthrough Record (Proposer's Self-Check)",
-      "sha256": "09f1ca249bf622e40e39cf308ffcf62ee59808006f954a32907da8454bfe19af"
+      "sha256": "46850dd229091c12b72a88034c618e01f7fe7f67d5e687ca2810b16d98d26073"
     },
     {
       "path": "visual/assets/scene-provenance.json",
