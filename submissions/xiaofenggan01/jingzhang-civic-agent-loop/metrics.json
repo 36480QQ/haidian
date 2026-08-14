@@ -584,6 +584,19 @@
       "assumptions": [
         "三色动线与品牌色系一致"
       ]
+    },
+    "annual_event_count": {
+      "status": "known",
+      "value": 4,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count of seasonal events (春夏秋冬)",
+      "confidence": "high",
+      "assumptions": [
+        "概念日历，具体档期待运营方确认"
+      ]
     }
   }
 }
