@@ -4,7 +4,6 @@
 from __future__ import annotations
 
 import argparse
-import hashlib
 import json
 import os
 import shlex
@@ -12,9 +11,7 @@ import tempfile
 from pathlib import Path, PurePosixPath
 from typing import Any
 
-
-def digest(path: Path) -> str:
-    return hashlib.sha256(path.read_bytes()).hexdigest()
+from finalize_submission import manifest_digests
 
 
 def refresh_manifest(root: Path) -> tuple[bool, str, list[str]]:
@@ -36,6 +33,7 @@ def refresh_manifest(root: Path) -> tuple[bool, str, list[str]]:
         return False, "manifest.json is missing validation_claim", []
 
     refreshed: list[str] = []
+    refresh_items: list[tuple[dict[str, Any], str]] = []
     seen: set[str] = set()
     for item in files:
         if not isinstance(item, dict):
@@ -54,11 +52,17 @@ def refresh_manifest(root: Path) -> tuple[bool, str, list[str]]:
         target = (root / Path(*pure.parts)).resolve()
         if not target.is_relative_to(root) or not target.is_file():
             return False, f"listed file is missing or outside the submission: {rel}", []
-        item["sha256"] = digest(target)
-        refreshed.append(rel)
+        refresh_items.append((item, rel))
 
-    if not refreshed:
+    if not refresh_items:
         return False, "manifest.json has no declared files to refresh", []
+    try:
+        hashes = manifest_digests(root, [rel for _item, rel in refresh_items])
+    except ValueError as exc:
+        return False, f"unsafe manifest path: {exc}", []
+    for item, rel in refresh_items:
+        item["sha256"] = hashes[rel]
+        refreshed.append(rel)
     claim["self_checked"] = False
 
     encoded = (json.dumps(manifest, ensure_ascii=False, indent=2) + "\n").encode("utf-8")
