@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "issued_on": "2026-08-12",
   "status": "draft_concept_recommendation",
-  "baseline_spec": { "spec_id": "service-equivalence-baseline", "required_version": "0.2.0" },
+  "baseline_spec": { "spec_id": "service-equivalence-baseline", "required_version": "0.3.0" },
   "nature": {
     "zh": "本档案是一次开放数据桌面复演，不是现场试点。它没有真实参与者、没有现场测量、没有任何一次真实运行记录，全部数值由提交包内的几何文件重算得出。它能够证明的是一条链路可以被完整执行并被第三方复算：现场数据基线、AI 分析、多个空间备选、AI 关闭反事实、机器与人工双重复核、变更回执。它不能证明任何一项包容性绩效已经达标，后者只能由取得伦理授权后的真实成对测试取得。",
     "en": "This archive records a desk replay over open data, not a field pilot. It has no real participant, no site measurement and no record of any real run; every figure is recomputed from the geometry files inside the submitted package. What it can demonstrate is that one chain can be executed end to end and recomputed by a third party: data baseline, AI analysis, several spatial alternatives, an AI-off counterfactual, machine and human review, and a change receipt. It demonstrates no inclusion performance whatsoever; that can only come from an ethically authorised paired test with real participants."

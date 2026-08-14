@@ -168,8 +168,8 @@
      "date": "2026-08-13",
      "scope_zh": "proposal.md 与 proposal.en.md 全文",
      "scope_en": "The full text of proposal.md and proposal.en.md",
-     "result_zh": "非空行 537 行对 537 行，结构类型逐行不一致数为 0",
-     "result_en": "537 non-blank lines on each side, with zero line-by-line type mismatches",
+     "result_zh": "非空行 538 行对 538 行，结构类型逐行不一致数为 0",
+     "result_en": "538 non-blank lines on each side, with zero line-by-line type mismatches",
      "provenance_zh": "本轮实测",
      "provenance_en": "Measured this round",
      "limitations_zh": "结构级比对，不判断译文是否准确、是否遗漏语义",
@@ -222,8 +222,8 @@
      "date": "2026-08-13",
      "scope_zh": "proposal.md 与 proposal.en.md 全文",
      "scope_en": "The full text of proposal.md and proposal.en.md",
-     "result_zh": "实际出现四类：metric 66 对 66、data 46 对 46、source 72 对 72、standard 12 对 12，合计 196 对 196，四类全部持平",
-     "result_en": "Four kinds are present: metric 66/66, data 46/46, source 72/72, standard 12/12, totalling 196/196, all balanced",
+     "result_zh": "实际出现四类：metric 66 对 66、data 47 对 47、source 72 对 72、standard 12 对 12，合计 197 对 197，四类全部持平",
+     "result_en": "Four kinds are present: metric 66/66, data 47/47, source 72/72, standard 12/12, totalling 197/197, all balanced",
      "provenance_zh": "本轮实测（本记录文件的挂接句在双方各新增一个 data 锚点，改动后仍为双侧持平）",
      "provenance_en": "Measured this round (the sentence attaching this record file adds one data anchor on each side, and the two sides remain balanced after the change)",
      "limitations_zh": "计数持平只说明锚点未在翻译中丢失，不说明每个锚点指向的证据本身成立",
@@ -315,8 +315,8 @@
     "Structural equivalence does not guarantee semantic equivalence: two versions can align structurally while individual wordings differ in the strength of their claim, a layer not tested here."
    ],
    "remeasured_on": "2026-08-15",
-   "remeasured_note_zh": "正文行数随后续修订变化后按当前版本复测：759/759 行、537/537 非空、260/260 表格行、锚点 196/196，逐行结构不一致 0",
-   "remeasured_note_en": "After later revisions changed the line counts, re-measured against the current version: 759/759 lines, 537/537 non-blank, 260/260 table rows, anchors 196/196, zero line-by-line type mismatches"
+   "remeasured_note_zh": "正文行数随后续修订变化后按当前版本复测：761/761 行、538/538 非空、260/260 表格行、锚点 197/197，逐行结构不一致 0",
+   "remeasured_note_en": "After later revisions changed the line counts, re-measured against the current version: 761/761 lines, 538/538 non-blank, 260/260 table rows, anchors 197/197, zero line-by-line type mismatches"
   },
   {
    "id": "R3",
