@@ -14,7 +14,7 @@
     "model_family": "glm",
     "model_detail": "ZCode agent powered by GLM-4 (glm-latest) for urban design proposal generation, geometry derivation, metrics recalculation, bilingual narrative authoring, visual production and evidence artifact construction; all factual claims traceable to sources.json, metrics.json and visual/assets/ evidence files"
   },
-  "generated_at": "2026-08-13T10:00:00Z",
+  "generated_at": "2026-08-14T02:00:00Z",
   "files": [
     {
       "path": "manifest.json",
@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "1234dc53d561386c463494d1c4edde0b0da5f5ccea1e0fa417c4b20b527d825b"
+      "sha256": "03147c5adc4850f3c4f265e3a6c1b805bdcafe00d9e610258a1d22c2539a7c5a"
     },
     {
       "path": "agent.json",
@@ -38,7 +38,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "7ca4f614f47a8e7795e3d8df53fb70f27392dc796d41c751d2fc377c2be82cb0"
+      "sha256": "3fecd07cad59689558264ca44797d554a6abe6ff867677fbe2726aceeb12d8fd"
     },
     {
       "path": "assumptions.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "cb15e16b55aa4326050063480a3f120fd3e9e53cb575ccd0a56187c9a45b808c"
+      "sha256": "8c1b85e7f7e489a96f4233e614758f71bc1f3750389c57c8515b7f20a5ce7c45"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "085f31d0106250dda1f6e6d900459fddc135806b63b1f4f7bc139b210f9f585c"
+      "sha256": "36442f16b4220a8beb930d60e64ffafbcb2dc758d98c675568ba3e57a1a374b0"
     },
     {
       "path": "report/narrative.md",
@@ -213,7 +213,7 @@
       "translation_of": "proposal.md",
       "title_zh": "京张AI低速机器人共行网（英文正式译文）",
       "title_en": "Jingzhang AI Low-Speed Robot Co-Mobility Network (English translation)",
-      "sha256": "ea26334321919936f88a64ede4a8cfaa86045fb67ecdcbd04571acaaf72b52d5"
+      "sha256": "7b3ce75c5efdd75f469e2c7f789270a9108693fba509ebf35354aaf776169fae"
     },
     {
       "path": "risk.json",
@@ -229,7 +229,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "d614bfc3fdaf93a4ea2e6142c0f3f2a8e6f6936913dcb4d0221a07df403b041b"
+      "sha256": "ddf4fcf7a30b834a7eaaefb875084e33f8a77768974482fb64172d6b3ca6f474"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -353,7 +353,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "f748763d4e96e727450afe615c862c6ff9154f3ea665255259f5968aec775955"
+      "sha256": "bbb5180ca3cda4f99a848e8b930dbbd75cd808ed9c1b7b044987262bea500799"
     },
     {
       "path": "simulation.json",
