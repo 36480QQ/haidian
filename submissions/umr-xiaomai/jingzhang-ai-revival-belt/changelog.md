@@ -1,5 +1,10 @@
 # 方案迭代记录
 
+## v0.1.1 - 2026-08-14
+
+- 迁移到上游 `persisted-self-check-v1` 契约：manifest 声明 `validation_claim.readiness_contract` 与 `self_checked=true`，`self_check.json` 持久化四门 gate 证据（DETERMINISTIC_VALIDATION / SPATIAL_REVIEW / VISUAL_PACKAGING / PROFESSIONAL_EVIDENCE）。
+- 将全部 manifest sha256 按提交字节（LF 规范化）重新计算，确保与 GitHub Actions 校验一致。
+
 ## v0.1 - 2026-08-10
 
 - 首版 formal 投稿包：京智带 JINGZHI BELT（铁轨·代码·生活）总体城市设计。

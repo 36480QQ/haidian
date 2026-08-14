@@ -1,77 +1,203 @@
 {
+  "ok": true,
+  "submission_dir": "submissions\\umr-xiaomai\\jingzhang-ai-revival-belt",
+  "pr_author": "umr-xiaomai",
+  "stage": "formal",
+  "deterministic_validation": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "errors": [],
+      "warnings": [
+        "submissions/umr-xiaomai/jingzhang-ai-revival-belt/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied"
+      ],
+      "proposal_files": [
+        "submissions/umr-xiaomai/jingzhang-ai-revival-belt/proposal.md"
+      ],
+      "changelog_files": [
+        "submissions/umr-xiaomai/jingzhang-ai-revival-belt/changelog.md"
+      ],
+      "changed_files": [
+        "submissions/umr-xiaomai/jingzhang-ai-revival-belt/agent.json",
+        "submissions/umr-xiaomai/jingzhang-ai-revival-belt/assets/figures/key-areas.en.png",
+        "submissions/umr-xiaomai/jingzhang-ai-revival-belt/assets/figures/key-areas.png",
+        "submissions/umr-xiaomai/jingzhang-ai-revival-belt/assets/figures/land-use-structure.en.png",
+        "submissions/umr-xiaomai/jingzhang-ai-revival-belt/assets/figures/land-use-structure.png",
+        "submissions/umr-xiaomai/jingzhang-ai-revival-belt/assets/figures/metrics-evidence.en.png",
+        "submissions/umr-xiaomai/jingzhang-ai-revival-belt/assets/figures/metrics-evidence.png",
+        "submissions/umr-xiaomai/jingzhang-ai-revival-belt/assets/figures/mobility-bluegreen.en.png",
+        "submissions/umr-xiaomai/jingzhang-ai-revival-belt/assets/figures/mobility-bluegreen.png",
+        "submissions/umr-xiaomai/jingzhang-ai-revival-belt/assets/figures/site-overview.en.png",
+        "submissions/umr-xiaomai/jingzhang-ai-revival-belt/assets/figures/site-overview.png",
+        "submissions/umr-xiaomai/jingzhang-ai-revival-belt/assumptions.json",
+        "submissions/umr-xiaomai/jingzhang-ai-revival-belt/changelog.md",
+        "submissions/umr-xiaomai/jingzhang-ai-revival-belt/compliance_matrix.json",
+        "submissions/umr-xiaomai/jingzhang-ai-revival-belt/design_depth_matrix.json",
+        "submissions/umr-xiaomai/jingzhang-ai-revival-belt/drawings/a0-boards.en.pdf",
+        "submissions/umr-xiaomai/jingzhang-ai-revival-belt/drawings/a0-boards.pdf",
+        "submissions/umr-xiaomai/jingzhang-ai-revival-belt/drawings/a3-booklet.en.pdf",
+        "submissions/umr-xiaomai/jingzhang-ai-revival-belt/drawings/a3-booklet.pdf",
+        "submissions/umr-xiaomai/jingzhang-ai-revival-belt/geometry/buildings.geojson",
+        "submissions/umr-xiaomai/jingzhang-ai-revival-belt/geometry/constraints.geojson",
+        "submissions/umr-xiaomai/jingzhang-ai-revival-belt/geometry/green_space.geojson",
+        "submissions/umr-xiaomai/jingzhang-ai-revival-belt/geometry/key_areas.geojson",
+        "submissions/umr-xiaomai/jingzhang-ai-revival-belt/geometry/land_use.geojson",
+        "submissions/umr-xiaomai/jingzhang-ai-revival-belt/geometry/phasing.geojson",
+        "submissions/umr-xiaomai/jingzhang-ai-revival-belt/geometry/public_space.geojson",
+        "submissions/umr-xiaomai/jingzhang-ai-revival-belt/geometry/roads.geojson",
+        "submissions/umr-xiaomai/jingzhang-ai-revival-belt/geometry/site_boundary.geojson",
+        "submissions/umr-xiaomai/jingzhang-ai-revival-belt/manifest.json",
+        "submissions/umr-xiaomai/jingzhang-ai-revival-belt/metrics.json",
+        "submissions/umr-xiaomai/jingzhang-ai-revival-belt/proposal.en.md",
+        "submissions/umr-xiaomai/jingzhang-ai-revival-belt/proposal.md",
+        "submissions/umr-xiaomai/jingzhang-ai-revival-belt/report/copyright_statement.md",
+        "submissions/umr-xiaomai/jingzhang-ai-revival-belt/report/narrative.md",
+        "submissions/umr-xiaomai/jingzhang-ai-revival-belt/report/proposal.en.html",
+        "submissions/umr-xiaomai/jingzhang-ai-revival-belt/report/proposal.html",
+        "submissions/umr-xiaomai/jingzhang-ai-revival-belt/self_check.json",
+        "submissions/umr-xiaomai/jingzhang-ai-revival-belt/sources.json",
+        "submissions/umr-xiaomai/jingzhang-ai-revival-belt/standard_matrix.json",
+        "submissions/umr-xiaomai/jingzhang-ai-revival-belt/visual/index.en.html",
+        "submissions/umr-xiaomai/jingzhang-ai-revival-belt/visual/index.html"
+      ],
+      "ai_package_stages": {
+        "submissions/umr-xiaomai/jingzhang-ai-revival-belt": "formal"
+      },
+      "total_bytes": 4121724,
+      "maintainer_bypass": false
+    },
+    "stderr": ""
+  },
+  "spatial_review": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "stage": "formal",
+      "issues": [
+        {
+          "check_id": "KEY_AREA_PROVISIONAL",
+          "severity": "minor",
+          "target_file": "geometry/key_areas.geojson",
+          "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
+          "target_feature_id": "PROV-KEY-001",
+          "expected": null,
+          "actual": null
+        },
+        {
+          "check_id": "KEY_AREA_PROVISIONAL",
+          "severity": "minor",
+          "target_file": "geometry/key_areas.geojson",
+          "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
+          "target_feature_id": "PROV-KEY-002",
+          "expected": null,
+          "actual": null
+        },
+        {
+          "check_id": "KEY_AREA_PROVISIONAL",
+          "severity": "minor",
+          "target_file": "geometry/key_areas.geojson",
+          "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
+          "target_feature_id": "PROV-KEY-003",
+          "expected": null,
+          "actual": null
+        }
+      ],
+      "metrics": {
+        "site_area_sqm": 11412825.386,
+        "green_space_area_sqm": 1822713.599,
+        "public_space_area_sqm": 554045.227,
+        "building_footprint_area_sqm": 438152.095,
+        "green_ratio": 0.159707,
+        "public_space_ratio": 0.048546
+      }
+    },
+    "stderr": ""
+  },
+  "visual_review": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "issues": [],
+      "metrics_seen": {
+        "site_area_sqm": 11412825.386,
+        "green_ratio": 0.159707,
+        "public_space_ratio": 0.048546,
+        "building_density": 0.038391,
+        "road_length_m": 48887.083,
+        "scenario_node_count": 12.0,
+        "key_area_count": 3.0,
+        "renewal_project_count": 10.0
+      }
+    },
+    "stderr": ""
+  },
+  "professional_review": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "issues": [],
+      "summary": {
+        "standard_matrix_items": 8,
+        "design_depth_items": 15,
+        "known_metric_refs_required": 35,
+        "proposal_format_version": "2",
+        "evidence_contract": "section-anchors-plus-structured-audit",
+        "proposal_reference_counts": {
+          "source": 8,
+          "standard": 7,
+          "depth": 11,
+          "data": 12,
+          "metric": 17
+        }
+      }
+    },
+    "stderr": ""
+  },
+  "spatial_issue_ids": [
+    "KEY_AREA_PROVISIONAL",
+    "KEY_AREA_PROVISIONAL",
+    "KEY_AREA_PROVISIONAL"
+  ],
+  "visual_issue_ids": [],
+  "professional_issue_ids": [],
+  "missing_review_dependencies": [],
+  "can_enter_formal_review": true,
+  "package_type": "professional_design_package",
+  "review_status": "formal-review-ready",
+  "next_actions": [],
   "schema_version": "0.1.0",
   "checks": [
     {
-      "check_id": "BOUNDARY_TRUST",
+      "check_id": "DETERMINISTIC_VALIDATION",
       "result": "pass",
-      "severity": "minor",
-      "target": "geometry/site_boundary.geojson",
-      "message": "使用 provisional 边界并完整披露；官方边界补齐后需重算。",
-      "suggested_fix": "官方 polygon 发布后替换并重算全部图层与指标。"
+      "severity": "blocking",
+      "target": "validate_local_submission.py",
+      "message": "deterministic_validation: PASS"
     },
     {
-      "check_id": "KEY_AREAS_TRUST",
+      "check_id": "SPATIAL_REVIEW",
       "result": "pass",
-      "severity": "minor",
-      "target": "geometry/key_areas.geojson",
-      "message": "三处重点区为 provisional constraint，位于总体设计范围内且互不重叠。",
-      "suggested_fix": "official key-area polygons 发布后替换。"
+      "severity": "blocking",
+      "target": "spatial_review.py",
+      "message": "spatial_review: PASS"
     },
     {
-      "check_id": "LAND_USE_TOPOLOGY",
+      "check_id": "VISUAL_PACKAGING",
       "result": "pass",
-      "severity": "major",
-      "target": "geometry/land_use.geojson",
-      "message": "用地完整覆盖设计范围，无缝隙、无重叠，共享边坐标。",
-      "suggested_fix": "无。"
+      "severity": "blocking",
+      "target": "visual_review.py",
+      "message": "visual_review: PASS"
     },
     {
-      "check_id": "GEOMETRY_VALIDITY",
+      "check_id": "PROFESSIONAL_EVIDENCE",
       "result": "pass",
-      "severity": "major",
-      "target": "geometry/*.geojson",
-      "message": "所有要素闭合、合法且位于场地范围内。",
-      "suggested_fix": "无。"
-    },
-    {
-      "check_id": "METRIC_RECALC",
-      "result": "pass",
-      "severity": "major",
-      "target": "metrics.json",
-      "message": "核心面积与比例指标与 EPSG:4548 空间复算一致。",
-      "suggested_fix": "无。"
-    },
-    {
-      "check_id": "VISUAL_STATIC",
-      "result": "pass",
-      "severity": "major",
-      "target": "visual/index.html",
-      "message": "HTML 离线静态，无远程资源、脚本、iframe、表单或API。",
-      "suggested_fix": "无。"
-    },
-    {
-      "check_id": "BILINGUAL_COMPLETE",
-      "result": "pass",
-      "severity": "major",
-      "target": "proposal.en.md",
-      "message": "中英双语正文、HTML、图件与图纸完整成对。",
-      "suggested_fix": "翻译等义性由维护者人工核对。"
-    },
-    {
-      "check_id": "SECTION_COVERAGE",
-      "result": "pass",
-      "severity": "major",
-      "target": "proposal.md",
-      "message": "13个必答章节全部存在且每节至少有一条机器可读证据引用。",
-      "suggested_fix": "无。"
-    },
-    {
-      "check_id": "SCENARIO_COVERAGE",
-      "result": "pass",
-      "severity": "major",
-      "target": "proposal.md",
-      "message": "12张AI场景卡、4个产业测试验证场景、6类画像与4个朝圣地标覆盖。",
-      "suggested_fix": "无。"
+      "severity": "blocking",
+      "target": "professional_review.py",
+      "message": "professional_review: PASS"
     }
   ]
 }
