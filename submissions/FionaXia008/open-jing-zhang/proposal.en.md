@@ -3,9 +3,7 @@ title: "Open Jing-Zhang — The First City Built with git"
 author_github: "FionaXia008"
 language: "en"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "Reinterpreting the century-old self-reliance history of the Beijing-Zhangjiakou Railway through the spirit of open-source collaboration, proposing the 'Open Jing-Zhang' brand system that designs the 43.6 km² innovation belt as a city-scale open-source project driven by the Git branching model, building a complete innovation compilation pipeline from Fork to Release, deploying 12 AI scenario cards, 5 user personas, 3 pilgrimage landmarks, and an annual event operation system."
-tracks: ["ai-innovation-ecosystem", "cultural-narrative", "open-source-city"]
-scenarios: ["ai-healthcare", "ai-education", "ai-commerce", "ai-transport", "ai-public-space"]
+summary: "Reinterpreting the century-old self-reliance history of the Beijing-Zhangjiakou Railway through the spirit of open-source collaboration, proposing the 'Open Jing-Zhang' brand system that designs the 43.6 km² innovation belt as a city-scale open-source project driven by the Git branching model, building a complete innovation compilation pipeline from Fork to Release, deploying 12 AI scenario cards, 5 user personas [metric:user_personas], 3 pilgrimage landmarks, and an annual event operation system."
 iteration: "v1.0"
 ---
 
@@ -505,7 +503,7 @@ The Xiaoyuehe riverside blue-green space forms the CD Wing's scenario deployment
 |---|---|---|---|
 | Fork District innovation carrier completion | Industrial Space | Fork District | Computing center, R&D space |
 | Release District commercial scenarios | Commercial Space | Release District | AI experiential consumption |
-| CD Wing AI scenarios full deployment | Scenarios | CD Wing | 12 scenario cards implemented |
+| CD Wing AI scenarios full deployment | Scenarios | CD Wing | 12 scenario cards [metric:scenario_cards] implemented |
 | Wall of Contributors construction | Landmark | Main District | Contributors honor wall |
 
 ### Long-term (2031-2036): Global Open-Source City Benchmark [data:geometry/phasing.geojson#PH-003]
@@ -545,7 +543,7 @@ This proposal covers all 6 tasks from agent_taskbook.json [source:SRC-AGENT-TASK
 |---|---|---|
 | agent.1 Overall Concept | "Coordinated Research Area: Industry and Future City Research" | Naming system, Logo direction, spatial structure |
 | agent.2 Innovation Ecosystem | "Coordinated Research Area: Industry and Future City Research" | 5-8 cases, ecosystem map, mechanism design |
-| agent.3 AI+ Scenarios | "AI Innovation Ecosystem, Talent Personas, and AI+ Scenarios" | 12 scenario cards, 5 user personas, spatial mapping |
+| agent.3 AI+ Scenarios | "AI Innovation Ecosystem, Talent Personas, and AI+ Scenarios" | 12 scenario cards [metric:scenario_cards], 5 user personas [metric:user_personas], spatial mapping |
 | agent.4 Public Space & Landmarks | "Blue-Green Space, Public Space, and Urban Form" | 3 pilgrimage landmarks, public space components |
 | agent.5 Cultural Narrative | "Coordinated Research Area: Industry and Future City Research" | Three open-source narratives, wayfinding direction |
 | agent.6 Activities & Operations | "Renewal Project List, Implementation Policies, and Phasing Plan" | Annual event system, community operations |

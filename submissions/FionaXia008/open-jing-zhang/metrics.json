@@ -5,7 +5,9 @@
       "status": "known",
       "value": 43600000,
       "unit": "sqm",
-      "source_files": ["brief/site-package/design_brief.json"],
+      "source_files": [
+        "brief/site-package/design_brief.json"
+      ],
       "formula": "official_announced_value",
       "confidence": "high",
       "assumptions": [],
@@ -15,7 +17,9 @@
       "status": "known",
       "value": 11400000,
       "unit": "sqm",
-      "source_files": ["brief/site-package/design_brief.json"],
+      "source_files": [
+        "brief/site-package/design_brief.json"
+      ],
       "formula": "official_announced_value",
       "confidence": "high",
       "assumptions": [],
@@ -25,7 +29,9 @@
       "status": "known",
       "value": 3684000,
       "unit": "sqm",
-      "source_files": ["brief/site-package/design_brief.json"],
+      "source_files": [
+        "brief/site-package/design_brief.json"
+      ],
       "formula": "official_announced_value",
       "confidence": "high",
       "assumptions": [],
@@ -35,7 +41,9 @@
       "status": "known",
       "value": 1921000,
       "unit": "sqm",
-      "source_files": ["brief/site-package/design_brief.json"],
+      "source_files": [
+        "brief/site-package/design_brief.json"
+      ],
       "formula": "official_announced_value",
       "confidence": "high",
       "assumptions": [],
@@ -45,7 +53,9 @@
       "status": "known",
       "value": 1043000,
       "unit": "sqm",
-      "source_files": ["brief/site-package/design_brief.json"],
+      "source_files": [
+        "brief/site-package/design_brief.json"
+      ],
       "formula": "official_announced_value",
       "confidence": "high",
       "assumptions": [],
@@ -55,7 +65,9 @@
       "status": "known",
       "value": 720000,
       "unit": "sqm",
-      "source_files": ["brief/site-package/design_brief.json"],
+      "source_files": [
+        "brief/site-package/design_brief.json"
+      ],
       "formula": "official_announced_value",
       "confidence": "high",
       "assumptions": [],
@@ -106,20 +118,27 @@
       "required_for_formal_submission": true
     },
     "green_space_area": {
-      "status": "estimated",
+      "status": "unknown",
       "value": 2500000,
       "unit": "sqm",
-      "source_files": ["geometry/green_space.geojson"],
+      "source_files": [
+        "geometry/green_space.geojson"
+      ],
       "formula": "estimated_from_green_space_geometry",
       "confidence": "low",
-      "assumptions": ["基于provisional geometry的粗略估算", "包含开源铁道主轴绿带和小月河蓝绿廊道"],
+      "assumptions": [
+        "基于provisional geometry的粗略估算",
+        "包含开源铁道主轴绿带和小月河蓝绿廊道"
+      ],
       "note": "概念性估算，待官方geometry确认后重算"
     },
     "public_space_nodes": {
       "status": "known",
       "value": 5,
       "unit": "count",
-      "source_files": ["geometry/public_space.geojson"],
+      "source_files": [
+        "geometry/public_space.geojson"
+      ],
       "formula": "count_of_public_space_features",
       "confidence": "high",
       "assumptions": [],
@@ -129,7 +148,9 @@
       "status": "known",
       "value": 12,
       "unit": "count",
-      "source_files": ["proposal.md"],
+      "source_files": [
+        "proposal.md"
+      ],
       "formula": "count_of_scenario_cards",
       "confidence": "high",
       "assumptions": [],
@@ -139,7 +160,9 @@
       "status": "known",
       "value": 5,
       "unit": "count",
-      "source_files": ["proposal.md"],
+      "source_files": [
+        "proposal.md"
+      ],
       "formula": "count_of_personas",
       "confidence": "high",
       "assumptions": [],
@@ -149,7 +172,9 @@
       "status": "known",
       "value": 3,
       "unit": "count",
-      "source_files": ["geometry/public_space.geojson"],
+      "source_files": [
+        "geometry/public_space.geojson"
+      ],
       "formula": "count_of_pilgrimage_landmarks",
       "confidence": "high",
       "assumptions": [],
@@ -159,7 +184,9 @@
       "status": "known",
       "value": 5,
       "unit": "count",
-      "source_files": ["proposal.md"],
+      "source_files": [
+        "proposal.md"
+      ],
       "formula": "count_of_annual_events",
       "confidence": "high",
       "assumptions": [],

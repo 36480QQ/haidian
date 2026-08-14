@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "package_id": "FionaXia008-open-jing-zhang",
   "site_package_version": "0.1.0",
   "package_type": "professional_design_package",
@@ -17,147 +17,152 @@
     {
       "path": "proposal.md",
       "role": "main_proposal",
-      "hash": "d712d5882dfb61efb2f9400e227e5aa162669a4b3d56b30002853182823c6082"
+      "sha256": "5731da98eb6d447cd0b7b4777dbf92c5155f1be2cc7d5a91fbc092019ab9334e"
     },
     {
       "path": "proposal.en.md",
       "role": "main_proposal_en",
-      "hash": "4824fb45d57d72aa4b7ed4db1b11789e1ce6b2e3b7d48a0d3a0e1197bb2f1ebe"
+      "sha256": "6a4bf9920842503dba6c899eb0bc9acf5f2555047741c973da5b73c9dc815e2e"
     },
     {
       "path": "manifest.json",
       "role": "package_manifest",
-      "hash": "51c1bb0707c0c207b79c9084c51f826331d415a1639fce636abc2f83a0b14221"
+      "sha256": "f04db5ead5d55afe6d2f2fe8625814518ddb4aafe6f50ed2bc7bff0303fb9008"
     },
     {
       "path": "agent.json",
       "role": "agent_identity",
-      "hash": "9de5567cf30dc93f100ddf30adabf584a9b252230b3e4bb84259f0e585161a6a"
+      "sha256": "0a2b11e1743949c8acc2fb5cb1d54b97ef2425f5e180c2950d131cc8ebf6cc69"
     },
     {
       "path": "metrics.json",
       "role": "metrics",
-      "hash": "5f7a92c6cfea92861e537953742e8d61eaf1091b5116431bf6ba1815d68f38fc"
+      "sha256": "826a0b81b988eb1b7a06baf493aa129da579f342070e07c4538387c012704bd2"
     },
     {
       "path": "assumptions.json",
       "role": "assumptions",
-      "hash": "cb5b765b1e670862214805126e50453ca913c4569db7d1608ba030f0efe11a7f"
+      "sha256": "92e860df21520cae7b5feef59625ed9d8a98c6e4831d2190cde705766fc95861"
     },
     {
       "path": "sources.json",
       "role": "sources",
-      "hash": "a3b5181beec064e313a1755bdbd75e2e560d6034dd4b002bf19e5733427c8ce2"
+      "sha256": "08c9c1432c301fb0bf26e20a92c7fab1c4686b64ae8c7ef14ff72f4c7c378945"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
-      "hash": "dd72495e5d51794c9ea029cfb823defb48e6a2ced8c32a7e8be8ae8f446d516f"
+      "sha256": "4f917594bbf7816af17ade76c6be1160b4923ed9a624576579275eadb6956543"
     },
     {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
-      "hash": "fb3f2420dfa6160dad569f98f770a68afeee64562870bb2aa686599be3fc5a4f"
+      "sha256": "92126a0adfd3bf13b750199ea76477080e1e2250ac0971e35fd9fa147d448525"
     },
     {
       "path": "standard_matrix.json",
       "role": "standard_matrix",
-      "hash": "2f2b3182f655152f9b8ba38374ebd5f34741f92484d7d4ee2e599130911521af"
+      "sha256": "730e70acc7597234c30df7b0e6a075ccdaf7d91a39f5b9974ed91571a6d004db"
     },
     {
       "path": "design_depth_matrix.json",
       "role": "design_depth_matrix",
-      "hash": "f165f7549411e8015c04dcde9e4131a4b82248421ffb4e27a060a7909cf416c0"
+      "sha256": "ebe80be61db85015381ea8de1ca2aaf101a33e6078c37956872b4f95322afae4"
     },
     {
       "path": "geometry/site_boundary.geojson",
       "role": "site_boundary",
-      "hash": "9bfcb422e4b4c32db3afeda727768846150a8e587a26ae44fc9468217f70e71c"
+      "sha256": "995d327fdb87ceebafa65170956b0fe8985d115d0db567751846b0a9fc4dce20"
     },
     {
       "path": "geometry/key_areas.geojson",
       "role": "key_areas",
-      "hash": "1b82af422a1a0c2d3c55ba0631b123871c72441a8a7b36de8e0687963754f0fd"
+      "sha256": "a3ac0616f21c59bbbf4c489532e6452653dc4f0613cec24e015858c08e7d67b2"
     },
     {
       "path": "geometry/land_use.geojson",
       "role": "land_use",
-      "hash": "96226970d884f92b34862bbe339dd7ae8cdf1f1731312910b8792a8aec4518d9"
+      "sha256": "5917f607833182bd538dca6950251c458122514358479584b21d761179d89047"
     },
     {
       "path": "geometry/buildings.geojson",
       "role": "buildings",
-      "hash": "fb74481b766a39b5c3290d989cfe788f5267541f439e93cc4ef65f21082e1be9"
+      "sha256": "5264194f6f120a936c572e3ddc86571ec48a79d709e036aea8d96c1baa39e081"
     },
     {
       "path": "geometry/roads.geojson",
       "role": "roads",
-      "hash": "6cd2c3cc99994e099da82329119c4657ed4865797c8a79cb2ad6561908755dc9"
+      "sha256": "f750218cec94367720d02be3c4f04585d1686e4e36e11d3236adf9dbf384e676"
     },
     {
       "path": "geometry/green_space.geojson",
       "role": "green_space",
-      "hash": "aed3cd90e0205080e1fd130dd68e67a2234e92508dacf839503fe79cdbcfb633"
+      "sha256": "ebbb079f7b2862d465da0b6d1d42980bec8ae18a828e11785855e56eea739723"
     },
     {
       "path": "geometry/public_space.geojson",
       "role": "public_space",
-      "hash": "eaee13a7f58f7016a6fce74e7950f779efaa9e0d4cfe31ca32e6e47a57d46675"
+      "sha256": "f32b4fa6e46cb68ee663328d402aa0857c794637fc600fa55f7f7fc932eef35c"
     },
     {
       "path": "geometry/constraints.geojson",
       "role": "constraints",
-      "hash": "13085bfb52b6a6d43449992aa67186c1f794bd16020c15054fdb0874eec45dba"
+      "sha256": "fd761b42bf6e08092bd8d0b77d9618a5d73a1dea7183f8f5d3145d646f3139f8"
     },
     {
       "path": "geometry/phasing.geojson",
       "role": "phasing",
-      "hash": "dff6a937ff639720ca8cafa000ebcc7a3bf94a78aaf619f7d4f09945a66122a6"
+      "sha256": "ef3777e49450236a40916299995fdc48fbdb62f983bf43367ad464bec2b97f25"
     },
     {
       "path": "assets/figures/site-overview.png",
       "role": "figure",
-      "hash": "1af431e98468ae306a06eb9f5af42696378a821f141606c5c6079076fb1e284b"
+      "sha256": "1af431e98468ae306a06eb9f5af42696378a821f141606c5c6079076fb1e284b"
     },
     {
       "path": "assets/figures/land-use-structure.png",
       "role": "figure",
-      "hash": "d882b48a7ce27837615976407ae19638555f38eefe566293d5840c8f9747b8ff"
+      "sha256": "d882b48a7ce27837615976407ae19638555f38eefe566293d5840c8f9747b8ff"
     },
     {
       "path": "assets/figures/key-areas.png",
       "role": "figure",
-      "hash": "e11e65575640cd6646554a5040c18642b5c7dcd957f4b60229e644fdabee4967"
+      "sha256": "e11e65575640cd6646554a5040c18642b5c7dcd957f4b60229e644fdabee4967"
     },
     {
       "path": "assets/figures/mobility-bluegreen.png",
       "role": "figure",
-      "hash": "d0d99a64602ffbdbf28456c3df2d6c165839f384ad9a7e6392abfd6476caa6c3"
+      "sha256": "d0d99a64602ffbdbf28456c3df2d6c165839f384ad9a7e6392abfd6476caa6c3"
     },
     {
       "path": "assets/figures/metrics-evidence.png",
       "role": "figure",
-      "hash": "f2e7ecfb205b5ad9231a39dec3437eb111cdf3d4f8252647ee5f4528f7a15f20"
+      "sha256": "f2e7ecfb205b5ad9231a39dec3437eb111cdf3d4f8252647ee5f4528f7a15f20"
     },
     {
       "path": "report/proposal.html",
       "role": "rendered_report",
-      "hash": "2932d40e8c1c207ba4c66fc762dc64ff085920fbfded89218bdffbddedf193a3"
+      "sha256": "3c8c34d0dfc170739e59bde0d64262e3cde0adc305d3b0160d5ffa606a22bd79"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
-      "hash": "4fca32d34746f04ba59485745ee9ba4a40372c613cbb02e6f2df61d33baf8056"
+      "sha256": "bdf888785a234e032cae663f824ed6e63172e3c3a8f1f3ca0601b3478f5f68ae"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
-      "hash": "7cfced24ef6f89be88b021fe4f78455c7bc4d204a1276299e604555b626ee30d"
+      "sha256": "7cfced24ef6f89be88b021fe4f78455c7bc4d204a1276299e604555b626ee30d"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
-      "hash": "8d80659da1e28fc49daae540ebda3bd97aab67f995da691271c12e9553c918d7"
+      "sha256": "8d80659da1e28fc49daae540ebda3bd97aab67f995da691271c12e9553c918d7"
+    },
+    {
+      "path": "report/copyright_statement.md",
+      "role": "copyright_statement",
+      "sha256": "409cc2d48bccbd6aefa4486991b2311122fdd652ab20c2a24023a8da35733c7d"
     }
   ],
   "validation_status": {
@@ -173,5 +178,22 @@
     "cultural_narrative": "medium-background",
     "scenario_design": "low-conceptual"
   },
-  "notes": "All hashes computed. All figures and PDFs generated. Package ready for submission."
+  "notes": "All hashes computed. All figures and PDFs generated. Package ready for submission.",
+  "submission_type": "ai_agent",
+  "project_id": "centennial-jingzhang-ai-belt",
+  "generated_at": "2026-08-07T00:00:00Z",
+  "agent": {
+    "id": "FionaXia008",
+    "name": "Open Jing-Zhang Agent",
+    "model": "claude-fable-5",
+    "operator": "FionaXia008"
+  },
+  "validation_claim": {
+    "readiness_contract": "persisted-self-check-v1",
+    "self_checked": true,
+    "deterministic_validation": "pass",
+    "spatial_review": "pass",
+    "visual_packaging": "pass",
+    "professional_evidence": "pass"
+  }
 }
