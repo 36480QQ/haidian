@@ -134,7 +134,10 @@ def run_scaffold(output_dir: Path, stage: str = "formal", cwd: Path = REPO_ROOT)
     )
 
 
-def complete_scaffold(output_dir: Path) -> subprocess.CompletedProcess:
+def complete_scaffold(
+    output_dir: Path,
+    synchronized_paths: tuple[str, ...] = (),
+) -> subprocess.CompletedProcess:
     proposal = output_dir / "proposal.md"
     proposal.write_text(
         proposal.read_text(encoding="utf-8").replace("SCAFFOLD-DRAFT", "PARTICIPANT-DESIGN")
@@ -204,6 +207,15 @@ def complete_scaffold(output_dir: Path) -> subprocess.CompletedProcess:
         target = source.with_name(f"{source.stem}.en{source.suffix}")
         if not target.exists():
             target.write_bytes(source.read_bytes())
+    if synchronized_paths:
+        manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+        items = {item["path"]: item for item in manifest["files"]}
+        for rel in synchronized_paths:
+            items[rel]["sha256"] = hashlib.sha256((output_dir / rel).read_bytes()).hexdigest()
+        manifest_path.write_text(
+            json.dumps(manifest, ensure_ascii=False, indent=2) + "\n",
+            encoding="utf-8",
+        )
     return subprocess.run(
         [sys.executable, str(REPO_ROOT / "scripts" / "finalize_submission.py"), str(output_dir)],
         capture_output=True,
@@ -487,6 +499,21 @@ class AgentScaffoldAndSelfCheckTests(unittest.TestCase):
             )
             self.assertNotEqual(0, finalized.returncode)
             self.assertIn("required bilingual counterpart is missing", finalized.stdout)
+
+    def test_finalize_accepts_nonempty_drawing_with_synchronized_scaffold_hash(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            output_dir = Path(tmp) / "submissions" / "alice" / "synchronized-drawing"
+            scaffold = run_scaffold(output_dir)
+            self.assertEqual(0, scaffold.returncode, scaffold.stdout + scaffold.stderr)
+
+            finalized = complete_scaffold(
+                output_dir,
+                synchronized_paths=("drawings/a0-boards.pdf",),
+            )
+
+            self.assertEqual(0, finalized.returncode, finalized.stdout + finalized.stderr)
+            manifest = json.loads((output_dir / "manifest.json").read_text(encoding="utf-8"))
+            self.assertEqual("ready_for_review", manifest["package_state"])
 
     def test_finalize_registers_existing_language_counterparts(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:

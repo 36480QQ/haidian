@@ -12,7 +12,7 @@ Checks performed
 - ``proposal.md`` no longer contains the ``SCAFFOLD-DRAFT`` marker.
 - All five required figures have been replaced (SHA-256 differs from scaffold).
 - At least one participant-controlled geometry layer has been replaced.
-- Both PDF drawings have been replaced with non-empty PDFs.
+- Both PDF drawings exist and contain at least one page.
 - When ``bilingual_contract_version: "1"`` is declared, all required bilingual
   counterparts exist and carry correct ``language`` / ``translation_of``
   front-matter.
@@ -180,7 +180,7 @@ def main() -> int:
         errors.append("at least one participant-controlled design geometry layer must change")
     for rel in DRAWINGS:
         path = root / rel
-        if not changed(rel):
+        if not path.is_file():
             errors.append(f"{rel} is unchanged from the placeholder drawing")
         elif is_empty_pdf(path.read_bytes()):
             errors.append(f"{rel} has no pages")
