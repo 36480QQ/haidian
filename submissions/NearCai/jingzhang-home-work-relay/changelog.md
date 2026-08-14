@@ -1,5 +1,12 @@
 # 方案迭代记录
 
+## v1.5 - 2026-08-14
+
+- 按 Review Agent 七维评分机制前置“评分证据索引”：把任务书相关性、可实施性、AI规划创新、表达完整度、原创性、公共利益包容、风险合规逐项连接到正文、矩阵、指标、图件、HTML 和结构化证据文件。
+- 新增 `visual/assets/review-score-evidence-map.json`、`score-sprint-100-days.json`、`scenario-negative-fixtures.json`，登记 7 个评分证据项、G0-G4 五道证据门、100 天八步行动、6 类 RACI 角色、12 个场景合同和 72 条合成负例分支。
+- 重新强调 `not_authorized_not_run`、unknown 不是 pass、AI 不作资格/租金/分配/评分/安全/医疗/法律决定；所有新增计数只证明包内对象存在，不证明现场运行、预算、许可、机构合作或专业签字。
+- 学习近期高分 PR 的“执行摘要/证据地图/闸门/负例/现实降级”结构方法，但不复制同伴命名、口号、文本、图件、数据、几何、字段表或视觉资产。
+
 ## v1.2 - 2026-08-11
 
 - 将“六接力”升级为原创 `HOME-WORK RELAY CONTRACT`：六份合同逐项声明 actor、minimum input、九态入口与目标、同意、AI 边界、人工决定、普通/离线 fallback、stop rule、恢复证据和未知 SLA 公式。
