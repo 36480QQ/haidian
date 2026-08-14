@@ -16,6 +16,42 @@
       "why_en": "This is the condition the gate was built for — fourteen of twenty-one sheets were once cited nowhere but the index. If it cannot catch the same condition introduced deliberately, the fourteen it once reported were not evidence either."
     },
     {
+      "id": "M17",
+      "gate": "figure_citation_qa.py",
+      "target": "proposal.md",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "抽掉一句「从没有被画过」里的时点词，句子照样通顺，对它描述的那一刻照样为真，而对画全了四级的成品不再为真。",
+      "what_en": "Strip the moment-marker from one 'never been drawn' claim. The sentence stays grammatical and stays true of the moment it describes, and stops being true of a finished package that draws all four tiers.",
+      "why_zh": "E89 里三句这样的话互相矛盾地共存过，而当时任何闸门都看不见——「唯一」不是算得出的量。若人为造出同一句而闸门不响，那次通读的收获就只停在被改好的那四句上，不构成往后的保障。",
+      "why_en": "Three such sentences once coexisted here contradicting one another, and no gate could see them because 「only」 is not a computable quantity. If the same sentence reintroduced deliberately draws no objection, that reading fixed four sentences and guarantees nothing about the next one."
+    },
+    {
+      "id": "M20",
+      "gate": "sources_qa.py",
+      "target": "proposal.md",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "删掉「不决定的事项」里对 FIG.24 场地速度的那句限定，恢复成本方案既声称不决定设备限速、又在图上把它定下来。",
+      "what_en": "Remove the qualifier that reconciles the out-of-scope list with FIG.24, restoring a package that both declares it does not decide device speed and fixes it on a sheet.",
+      "why_zh": "**这一处是 E90 自己的修复造成的**：改标签之前三句彼此相符，改完之后两句变假，而做这次修改的那一 tick 正看着其中一句，记下的却是「已核，无需再改」。改一个值的归属，等于改变全包关于该值的每一句范围声明——若这条缝没人看着，下一次改分类还会同样地无声撕开。",
+      "why_en": "**E90's own fix caused this.** Before the relabel the three sentences agreed; after it two were false, and the tick that made the change looked straight at one of them and recorded that it had survived scrutiny. Relabelling a value changes what every scope declaration about it means, and if nothing watches that seam the next reclassification tears it open just as quietly."
+    },
+    {
+      "id": "M19",
+      "gate": "sources_qa.py",
+      "target": "proposal.md",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把噪声行里「本包未取得该标准」的自认删掉，恢复成「限值取国家标准值」而不指名标准。",
+      "what_en": "Remove the admission from the noise row, restoring an instruction to use the national standard value without naming the standard.",
+      "why_zh": "E90 之后把同一个问题指向正文，只找到这一处，而这一处是**给别人执行的指令**：该行存在的理由正是「定性的『噪声扰民』无法判定超限」，而「取国家标准值」不指名标准，同样无法执行。本包在别处逐条指名法律名称、条号并挂可解析标签——这不是惯例问题，是这一处失守。",
+      "why_en": "Pointing E90's question at the prose turned up exactly this one, and this one is an instruction **for someone else to carry out**: the row exists because the field's qualitative 「noise nuisance」 cannot determine exceedance, and 「use the national standard value」 with no standard named cannot either. The package names law, article and a resolving tag everywhere else."
+    },
+    {
       "id": "M2",
       "gate": "assumption_refs_qa.py",
       "target": "metrics.json",
@@ -100,6 +136,30 @@
       "why_en": "FIG.29's whole argument is that these numbers are not hand-written but derived from geometry — and the prose announcing it hand-wrote all six. The gate has to catch any one of them drifting, or that sentence is just self-congratulation."
     },
     {
+      "id": "M16",
+      "gate": "computed_value_qa.py",
+      "target": "metrics.json",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把 metrics.json 里的主脊长度改掉，而正文不动——模拟一次几何变更之后句子没有跟上。",
+      "what_en": "Change the spine length in metrics.json and leave the prose alone, simulating a geometry change the sentences did not follow.",
+      "why_zh": "新增的历史比对不列举任何可疑值，它从 git 取上一版 metrics.json：凡是某个指标**曾经**持有、如今不再持有的数，若仍站在手写正文里，即为陈旧。这处变异让工作区与 HEAD 分叉，正文因此持有旧值——闸门必须认出来。",
+      "why_en": "The history comparison enumerates no suspicious values; it reads the previous `metrics.json` from git, and any value a metric **used to** hold that still stands in hand-written prose is stale by construction. This mutation makes the working tree diverge from HEAD so the prose holds the old value, and the gate has to notice."
+    },
+    {
+      "id": "M15",
+      "gate": "stale_corpus_qa.py",
+      "target": "proposal.md",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "追加一句「当前语料 555 份」——一个从未被记录过的数。",
+      "what_en": "Append a sentence claiming a current corpus of 555 — a number never recorded.",
+      "why_zh": "旧检查只认它记录过的语料规模，因此一个从没当过读数的数可以自称「当前」而不被看见（勘误 E87）。新检查认的是**说法**不是数值，这处变异证明它确实认得。",
+      "why_en": "The older check knew only the corpus sizes this package had recorded, so a number that was never a reading could call itself current and pass unseen (errata E87). The new check keys on the phrase rather than the value; this mutation proves it actually does."
+    },
+    {
       "id": "M8",
       "gate": "stale_corpus_qa.py",
       "target": "proposal.md",
@@ -161,6 +221,19 @@
       "why_en": "**This gate has caught more in this package than any other** — it has reported an English overrun on every sheet ever added. It had still never been shown to fail on demand, and \"it reports every time\" is not the same claim as \"it would report this\"."
     },
     {
+      "id": "M18",
+      "gate": "sources_qa.py",
+      "target": "fig_device.py",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "rendered": true,
+      "what_zh": "把 FIG.24 的场地速度改回 `regulation` 类，而不给出任何可解析的来源编号。",
+      "what_en": "Reclass FIG.24's site speed as fixed by regulation while citing no resolvable source id.",
+      "why_zh": "这正是 E90 记的那件事，而它在包里活了十张图：一个数被标成外部规定，规定却从未被指名，`A-DEVICE-002` 还据此加粗说 v「有出处」。**本包全部论证的底座是「无法核验的数字不构成证据」**——若同一处再被标成法规而闸门不响，这条底座就只适用于别人的数。",
+      "why_en": "This is what E90 records, and it lived here across ten sheets: a value labelled as fixed by an outside rule that was never named, with `A-DEVICE-002` saying in bold that v therefore had a source. **This package's entire argument rests on 「a number that cannot be verified is not evidence」** — if the same value can be relabelled a regulation with nothing objecting, that standard applies only to other people's numbers."
+    },
+    {
       "id": "M13",
       "gate": "accessibility_qa.py",
       "target": "fig_visit.py",
@@ -174,7 +247,7 @@
       "why_en": "This package checks its own drawings with the legible-height ratio and reports a 4.73 mm minimum, all passing. **FIG.27 has just pointed that same ratio at the plate** — which makes whether the ratio itself has ever been shown to fail a question that has to be answered."
     }
   ],
-  "caught": 14,
+  "caught": 20,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",

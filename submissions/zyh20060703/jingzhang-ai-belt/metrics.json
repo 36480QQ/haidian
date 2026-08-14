@@ -86,6 +86,39 @@
    "confidence": "unknown",
    "assumptions": [],
    "reason": "Approved FAR controls and official site boundary not present."
+  },
+  "pilgrimage_landmark_count": {
+   "status": "known",
+   "value": 3,
+   "unit": "count",
+   "source_files": [
+    "proposal.md"
+   ],
+   "formula": "count(AI pilgrimage landmarks)",
+   "confidence": "high",
+   "assumptions": []
+  },
+  "annual_event_count": {
+   "status": "known",
+   "value": 4,
+   "unit": "count",
+   "source_files": [
+    "proposal.md"
+   ],
+   "formula": "count(annual event system entries)",
+   "confidence": "high",
+   "assumptions": []
+  },
+  "accession_review_cadence": {
+   "status": "known",
+   "value": 4,
+   "unit": "times_per_year",
+   "source_files": [
+    "proposal.md"
+   ],
+   "formula": "design decision: quarterly accession review congress",
+   "confidence": "high",
+   "assumptions": []
   }
  }
 }

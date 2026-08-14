@@ -87,6 +87,17 @@ The announcement requires responses to the five functions (AI full-stack indepen
 
 The naming system and visual-identity direction serve the overall recognizability of "Centennial Jing-Zhang Culture Belt, Urban AI Life Experience Belt, AI-Integrated Innovation Belt": the logo is a "Bo"-character seal paired with a railway spike, in the form of a museum specimen tag (number + name + provenance); each of the three areas and two wings carries one "volume seal" forming a complete set with the master seal, designed for extension. Task requirements come from [source:AGENT-TASKBOOK], standards from [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]; spatial coordination returns to [standard:MOHURD-URBAN-DESIGN-MEASURES], with [data:geometry/land_use.geojson#LU-001] and [data:geometry/public_space.geojson#PUBLIC-001] as mapping layers and depth constrained by [depth:overall_spatial_structure]. All brands, typefaces, images, portraits, and enterprise marks are rights-cleared.
 
+### Logo Visual Direction: The Bo Seal and the Railway Spike
+
+The visual identity serves the overall recognizability of "Centennial Jing-Zhang Culture Belt, Urban AI Life Experience Belt, AI-Integrated Innovation Belt"; direction below is conceptual, pending professional design [source:AGENT-TASKBOOK]:
+
+- **Master seal**: "Bo" character in seal-script carving, strokes taking the cross-section of a rail - horizontal strokes as rails, vertical strokes as spikes; the semantic of "bridging past and present" in one seal; base lined with the abstracted Jing-Zhang Heritage Park main axis
+- **Accessory**: the railway spike - head as circle, body as bar; combined with the Bo seal into a "nailing time" narrative symbol (the railway once nailed a line's time; AI is nailing an era)
+- **Volume-seal system**: each of the three areas and two wings carries a volume seal (Gameplay/Imagery/Greatness/Erudition/Benevolence), used as a set with the master seal, extensible; strokes share the master's lineage
+- **Specimen-tag format**: all official displays use the museum tag layout "number + name + provenance + date", unified with the honor system (Accession Roster Wall)
+- **Extension rules**: master seal for belt-wide brand; volume seals for zonal wayfinding; specimen tags for service nodes; colors follow the Five-Bo mineral palette (ochre/blue-grey/gamboge/grey-brown/madder), ground in rice-paper tone
+- **Compliance**: all typefaces and marks are original design directions using no unauthorized materials; the final logo is deepened and rights-cleared by professional teams per this direction
+
 ### Future Urban Form: The Lifecycle of AI Services
 
 How does artificial intelligence change work, life, socializing, learning, transport, and public services? The answer of this proposal is a lifecycle methodology — **the five steps of classical learning equal the five steps of AI** — drawn from *The Doctrine of the Mean*: "Study broadly (bo xue), question carefully, think carefully, distinguish clearly, act resolutely."
@@ -154,6 +165,32 @@ Ten scenario cards are arranged as two per Bo, each written in the annals format
 | SC-09 | Bowugu Corridor (Imagery) | Railway × AI dialogue promenade | Heritage nodes along the Jing-Zhang Heritage Park | Dual-line narrative: physical railway relics as warp, AI knowledge as weft | Metric: annual content review; Fallback: physical signage; Disclosure: source annotations; Exit: removal on copyright dispute |
 | SC-10 | Bo Yi Hall (Imagery) | AI art and culture space | Exhibition node in Origin Community | Exhibition and discussion of AI-generated art and copyright dialogue | Metric: complete work authorizations; Fallback: curator system; Disclosure: generation methods; Exit: unlicensed works refused |
 
+### Examination Reinforcement: Responsible Parties, Launch Conditions, and Assessment Thresholds
+
+Each scenario card's "Examination" section adds three items to the four-item contract, forming six: responsible party (category-level), launch condition, assessment threshold. Examples below are proposed values pending professional and operator confirmation [depth:metrics_recalculation]:
+
+| Card | Responsible party (category) | Launch condition | Assessment threshold (proposed) |
+| --- | --- | --- | --- |
+| SC-01 Garden | Park authority + annals committee | First 3 AI services pass accession review | Exhibit refresh >=2/year; annual annals publication |
+| SC-02 Terrace | Data authority + third-party audit | All data sources registered, definitions public | Aggregation accuracy >=98%; 100% definition disclosure |
+| SC-03 Kiosk | Operation consortium + merchants | Footfall reaches launch threshold | Answer consistency >=90%; correction within 24h |
+| SC-04 School | University partners + community org | Paired instructors >=80% in place | Completion rate >=60%; senior docents >=30/year |
+| SC-05 Love Stn | Civil affairs/disability dept + community | Accessibility acceptance passed | Accessibility compliance >=95%; human response <=3 min |
+| SC-06 Public Hub | Public-service dept + professional orgs | Duty-window system established | Referral accuracy >=95%; 100% error review disclosure |
+| SC-07 Harvest Field | Open-source council + operator | Council charter effective | 100% auditable contributions; violation removal <=7 days |
+| SC-08 Bridge | Industry promotion dept + trade orgs | Collaboration agreement template released | Closed-loop rate >=80%; 100% de-identified records |
+| SC-09 Corridor | Heritage dept + cultural orgs | All sources rights-cleared | Annual content review; dispute removal <=7 days |
+| SC-10 Art Hall | Curator committee + copyright orgs | Generation-disclosure rules effective | 100% authorized works; 100% unlicensed refusal |
+
+### Public-Interest Details: Age-Friendliness, Accessibility, and the Intergenerational Digital Divide
+
+The Benevolence Volume is governed by "broad love benefiting all"; public interest is made measurable (proposed values) [source:AGENT-TASKBOOK]:
+
+- **Age-friendliness**: Bo Love Station provides large-type, voice, and one-touch-human channels; "senior volunteer docents" target >=30/year; age-friendly scenarios cover >=80% of seniors' high-frequency daily matters
+- **Accessibility**: every AI service point keeps an "AI-free parallel path" always available; accessibility compliance target >=95%; quarterly accessibility inspection
+- **Intergenerational digital divide**: Bo School pairing (youth x senior) target >=200 pairs/year; digital-literacy courses cover >=1000 person-times/year
+- **Privacy boundary**: all scenarios follow data minimization; resident personas aggregate-only, never for commercial recommendation; retention periods disclosed
+
 ### Three Industrial Test-and-Validation Scenario Cards
 
 | Plate | Name | Volume | Description | Validation goal |
@@ -165,6 +202,52 @@ Ten scenario cards are arranged as two per Bo, each written in the annals format
 ### Scenario–Space–Operation Mapping
 
 All scenarios must anchor to spatial and governance boundaries: public-space scenarios cite [data:geometry/public_space.geojson#PUBLIC-001], slow-mobility and transport scenarios cite [data:geometry/roads.geojson#ROAD-001], open-space scenarios cite [data:geometry/green_space.geojson#GREEN-001] and [metric:public_space_ratio], [metric:green_ratio]. At the operation level, each scenario card states its operator, responsible party, data sources, privacy boundary, human-review mechanism, and exit conditions; all scenario nodes enter the `geometry/AI_SERVICE_ZONE` and `geometry/SCENARIO_NODE` layers or the compliance matrix. AI-governance suggestions follow the principles of data minimization, public sources, explainability, and human review; they do not replace planning approval, do not output unauthorized personal profiles, and do not claim official implementation commitments.
+
+## AI Pilgrimage Landmarks and Honor System (agent.4 response)
+
+agent.4 requires at least 3 AI pilgrimage landmarks and an honor-display system. These annals establish three sanctuaries under the Five-Bo system, sited at SCENARIO_NODE layer nodes; spatial form and operation are conceptual suggestions [source:AGENT-TASKBOOK] [data:geometry/public_space.geojson#SC-01] [data:geometry/public_space.geojson#SC-02] [data:geometry/public_space.geojson#SC-03]:
+
+| Sanctuary | Volume | Site | Spatial form | Narrative | Operation |
+| --- | --- | --- | --- | --- | --- |
+| Natural-History Garden (Plate Sanctuary) | Greatness | Heritage Park core (SC-01) | Open-air plate gallery: AI services exhibited as numbered specimen plates | "Every AI service is a new species collected and identified" | Quarterly exhibit refresh, annual annals editing; permanent human docents |
+| Identification Station (Review Sanctuary) | Gameplay | Zhongzhiyuan (near SC-02) | Public review hall: accession reviews held openly, public seats | "Accession authority rests with humans - AI's graduation rite" | Quarterly review congress; results inscribed publicly |
+| Specimen Repair Room (Error-Disclosure Sanctuary) | Gameplay | Zhongzhiyuan (near SC-08) | Open repair workshop: AI errors shown as "damaged specimens" with public repair | "An error is not a stain; it is a specimen" | Disclosure within 24h; quarterly public review |
+
+The honor system links to the official "Agent Contribution Honor Wall / AI Milestones" mechanism: this proposal suggests merging the Five-Bo system with the official wall into an **"Accession Roster Wall"** - every AI service that passes Identification Station review is inscribed with name, developer (including Agent identity), accession date, and review conclusion, displayed alongside railway heritage, forming a two-layer time narrative of "industrial heritage - AI species." Conceptual suggestion, to be deepened by professional teams [depth:three_key_area_detailed_design].
+
+## Global AI Event System and Long-Term Operation (agent.6 response)
+
+agent.6 requires an annual event system, developer-community operation, and long-term brand mechanism. This proposal organizes events under the master concept of "annual annals editing"; all are conceptual suggestions [source:AGENT-TASKBOOK]:
+
+| Event | Frequency | Spatial carrier | Target | Conversion path |
+| --- | --- | --- | --- | --- |
+| Accession Review Congress | Quarterly | Identification Station | Developers, enterprises, public | Passed review > Roster Wall > plate publication |
+| Plate Release (Annual Editing Ceremony) | Annual | Natural-History Garden | Global developers, media | Annual annals publication > international material |
+| Developer Graduation Festival | Annual | Bo School, Bo Harvest Field | Developers, students | Certification > Bo Harvest Field membership |
+| Specimen Repair Open Day | Monthly | Specimen Repair Room | Citizens, students | Error review > trust capital |
+
+Developer-community operation (at Bo Harvest Field): contribution points (code, scenarios, review, docent - four contribution types), review-seat system (high-point developers enter the Accession Review Committee observer seats), apprenticeship levels (apprentice - assistant - graduate - master). The operator is suggested as a "belt operation consortium" (government-led, professional operator executed, community self-governance), pending professional deepening; not stated as a confirmed arrangement [depth:renewal_project_list] [depth:phasing_implementation].
+
+## Multi-Agent Collaboration and Urban AI Governance Mechanisms (AI-planning innovation)
+
+This proposal is generated by an AI Agent, so it writes "how multi-agents are governed" into the proposal itself, forming original depth. Three mechanisms, all conceptual:
+
+**Mechanism I: Accession Review Committee (institutionalizing the distinguish-clearly step)**
+- Composition: planning/operation/ethics/technology experts + public representatives + developer representatives; human members hold the majority and the final vote
+- Process: study broadly (collection) - question (inquiry) - think (independent assessment) - distinguish (vote) - act (license / reject / de-exhibit)
+- Rules: one-vote veto items (privacy violation, no human fallback, fabricated evidence); review records de-identified and public
+
+**Mechanism II: Field-Pairing Human-Machine Contract (institutionalizing the multi-metaphor teacher)**
+- Pairing: one human engineer + one AI service, signing a pairing card (data boundary, human-review checkpoints, exit conditions)
+- Process: joint real-site collection; human handles on-site judgment, AI records and pre-filters
+- Output: pairing report archived as evidence for accession review
+
+**Mechanism III: Error-Disclosure Regime (Specimen Repair Room)**
+- Format: error description, impact scope, repair process, review conclusion, improvement measures
+- Timeliness: initial disclosure within 24h, full review within 7 days
+- Boundary: privacy/safety/copyright content disclosed after de-identification
+
+The three mechanisms form a "minimum closed loop of city-level AI governance": collection has a contract, review has a committee, errors have a regime. This is the core innovation distinguishing this proposal from "scenario-listing" approaches [depth:risk_missing_data] [depth:metrics_recalculation].
 
 ## Land Use, Building Scale, and Retain–Renovate–Demolish
 

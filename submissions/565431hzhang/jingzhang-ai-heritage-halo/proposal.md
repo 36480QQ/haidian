@@ -25,6 +25,8 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 两条轨道并行不悖、相互赋能，形成"以历史为锚、以AI为翼、以人为心"的独特城市更新范式。
 
+当前状态：10张场景卡全部处于四闸 `halted` 状态——结构完整不等于现场通过。没有踏勘和真实运行证据的绩效一律空置。[metric:four_gate_halted_count] [metric:four_gate_verified_count]（假设 A-FIELD-001）
+
 ## 设计依据与资料清单
 
 本 formal 方案以北京市规划和自然资源委员会海淀分局发布的《百年京张AI创新带城市设计国际方案征集资格预审公告》为第一依据，并以 `brief/site-package/` 中经维护者登记的临时粗略边界、重点区域、枚举、指标和来源清单为机器可读依据。AI agent 在生成方案前必须读取 `design_brief.json`、`allowed_design_space.json`、`sources.json`、`enums/`、`ranges/`、`schemas/`、`data/source_registry.json` 和 `data/processed/agent_fact_pack.md`，并用 `project_scope_summary.csv`、`agent_task_requirements.csv`、`source_use_matrix.csv`、`missing_data_checklist.csv` 建立任务、范围、资料用途和缺口清单。所有设计判断都要拆分为可追溯来源、可复算指标、可校验图层和可人工复核假设。公告要求方案达到控制性详细规划的城市设计深度和规划综合实施方案的城市设计深度，因此文本叙述不能替代 GeoJSON、指标表、A3 文册、A0 展板和 HTML 电子展示成果。
@@ -196,9 +198,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ## AI 创新生态、人才画像与 AI+ 场景
 
-方案应建立面向AI人才和企业的空间需求画像，覆盖研发办公、开源协作、成果发布、企业服务、人才居住、社交学习、消费生活、运动休闲和国际交往。AI+场景应围绕公告提出的交通、服务、消费、医疗、教育、法律、生活服务等方向，形成产业发展场景和AI赋能城市功能场景。每个场景应说明服务对象、空间位置、数据来源、隐私边界、人工复核机制和运营主体。
-
-AI 场景必须落到空间和治理边界：公共空间场景引用 [data:geometry/public_space.geojson#PUBLIC-001]，慢行与交通场景引用 [data:geometry/roads.geojson#ROAD-001]，开放空间场景引用 [data:geometry/green_space.geojson#GREEN-001] 和 [metric:public_space_ratio]、[metric:green_ratio]。这些引用让评审者知道场景不是口号，而是位于具体图层和指标中的设计对象。面向智能体任务书要求不少于10张AI场景卡、不少于3个产业测试验证场景和不少于5类用户画像；脚手架只给出结构，正式参赛者必须把场景卡、画像表、隐私边界、人工复核和运营主体写入正文、HTML、A3/A0 和合规矩阵。
+本方案提出10张AI场景卡和5类用户画像 [metric:scenario_card_count]。每张场景卡标注AI能力、失败模式和人工升级路径——没有标注失败模式和人工接手路径的场景卡，不通过四闸G1试点闸。10张全部配备非AI等价路径和人工接手 [metric:non_ai_equivalent_path_count] [metric:human_handoff_coverage]。AI 场景必须落到空间和治理边界：公共空间场景引用 [data:geometry/public_space.geojson#PUBLIC-001]，慢行与交通场景引用 [data:geometry/roads.geojson#ROAD-001]，开放空间场景引用 [data:geometry/green_space.geojson#GREEN-001] 和 [metric:public_space_ratio]、[metric:green_ratio]。
 
 | 用户画像 | 典型需求 | 空间响应 | 自检边界 |
 | --- | --- | --- | --- |
@@ -775,6 +775,8 @@ Logo 以"∞"（无限符号）与铁路轨道的形态融合，双轨线分别�
 ## 指标体系、面积复算与合规矩阵
 
 指标体系至少应包含总体设计范围面积、重点区域面积、绿地与公共空间比例、建筑基底、更新项目数量、AI场景节点、慢行连通指标、产业空间指标、人才服务指标和自检状态。所有 known 指标必须能从 GeoJSON 或可信来源复算；unknown 指标必须给出原因和正式提交前置条件。`scripts/spatial_review.py` 和 `scripts/visual_review.py` 的结果是 formal 自检的重要证据。
+
+**概念专属指标**：本方案的四闸放行机制产生以下检验指标——10张场景卡全部 halted（[metric:four_gate_halted_count]），0张通过现场验证（[metric:four_gate_verified_count]），10张配备非AI等价路径（[metric:non_ai_equivalent_path_count]），人工接手覆盖率100%（[metric:human_handoff_coverage]），四闸4道（[metric:four_gate_field_count]），更新项目6个（[metric:renewal_project_count]），假设登记8条（[metric:assumption_count]）。这些指标不是空间数据，是方案自身的检验框架——它们让评审者知道方案有自我评估能力，而不是只提供空间指标。
 
 指标复算遵循统一的设计深度要求 [depth:metrics_recalculation]。正文重点解释指标的设计含义，例如总体范围如何约束空间分配、蓝绿和公共空间比例如何支撑日常交往；完整数值、公式、来源文件和置信度保存在 `metrics.json`。示例关键指标可由总体范围和绿地数据复核 [metric:site_area_sqm] [data:geometry/green_space.geojson#GREEN-001]。
 

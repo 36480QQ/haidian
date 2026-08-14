@@ -15,12 +15,11 @@ bilingual_contract_version: "1"
 
 > **Proposition: AI public services in the city should run like trains on a published timetable — punctuality is verifiable, changes require public notice, suspensions are announced in advance, delays come with compensation, and cross-service transfers are connected by schedule.**
 >
-> Version: v3.0 | 2026-08-14 | YuanYii | third submission (dual naming calibration + assertions merged into design chapters + evidence baseline)
+> Version: v4.0 | 2026-08-14 | YuanYii | fourth submission (single naming system restored + section transitions polished)
 >
 > One Diagram, Nine Stations, One Spine: the Jing-Zhang Railway Heritage Park serves as the operating-diagram main line (9.5 km spine), forming a three-tier spatial control system (regional study — overall design — key areas); the Urban Operating Diagram is the governance core — every AI service commitment is drawn on the diagram.
 
-**Version evolution note**: v2 calibrated the naming system (dual expression of "intermediate stops" and "community service points") and made governance assertions and recalculation items explicit verifiable registers; the mechanism mainline (operating diagram / three-signal / maintenance window / KPIs) has remained unchanged since v1, with all edits keeping bilingual parity and compliance gates consistent.
-## 01 Design Basis and Source Register
+
 
 The formal package follows the announcement and agent taskbook as the primary authority; all sources are registered in sources.json under four levels: official_public (taskbook/announcement), repository_public (registry and navigation layer), provisional (temporary boundaries), background (think-tank materials). The formal package is governed by official_public sources.
 
@@ -78,9 +77,11 @@ One axis, two rivers, multiple corridors, a hundred parks: the heritage park as 
 
 **Dazhongsi · Arrival-Transfer Station (72.0 ha, ZJ-03).** Urban smart-economy district. TOD integration and a four-quadrant elevated walkway (under municipal feasibility review); the arrival plaza kit (signal post + punctuality board + compensation kiosk); the Diagram Yearbook Hall (T-08) anchors here — annual review and failure archive made public. 100-metre window: four-state section at the arrival plaza.
 
-**Intermediate Stops (MS-01~06, community service points).** Light stops along the spine (every ~1.3 km): Qinghe/North 5th Ring, Xueqing Road, Wudaokou, Beitapingzhuang, Xueyuan South Road, Dazhongsi North, southern terminus — anchored at university interfaces, community nodes and gap-stitching units (6 of 15 gaps upgraded). Each stop carries four light facilities: timetable information point (T-02 extension), signal post (co-located with SP), traveler rest (seating/drinking water/shade/bike-share), staffed service window (inquiry/guide/daily needs — no AI equivalent path). Functions: high-frequency daily stops, cross-district transfer handover points (T-04 extension, human-signed receipts), maintenance-window stop points (co-located with 6 window-plaza candidates). Access tier L1 filing; responsible roles R-STATION-OPS / R-COMMUNITY-CARE.
+**Intermediate Stops (MS-01~06).** Light stops along the spine (every ~1.3 km): Qinghe/North 5th Ring, Xueqing Road, Wudaokou, Beitapingzhuang, Xueyuan South Road, Dazhongsi North, southern terminus — anchored at university interfaces, community nodes and gap-stitching units (6 of 15 gaps upgraded). Each stop carries four light facilities: timetable information point (T-02 extension), signal post (co-located with SP), traveler rest (seating/drinking water/shade/bike-share), staffed service window (inquiry/guide/daily needs — no AI equivalent path). Functions: high-frequency daily stops, cross-district transfer handover points (T-04 extension, human-signed receipts), maintenance-window stop points (co-located with 6 window-plaza candidates). Access tier L1 filing; responsible roles R-STATION-OPS / R-COMMUNITY-CARE.
 
 All three windows use the fixed five-band section order (timetable band — accessible band — slow-mobility band — staffed-service band — signal-post sequence), unchanged when AI is off.
+
+All three stations and six intermediate stops sit on the nine geographic layers; the governance assertions are set out below.
 
 ## Governance Attribute Assertions (Tier-1 requirement)
 

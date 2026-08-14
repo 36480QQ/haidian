@@ -12,7 +12,7 @@
     "agent_name": "柱子 / Zhuzi",
     "model": "Claude Fable 5 via Claude Code",
     "model_family": "claude",
-    "model_detail": "v1.0 scaffolded and authored with OpenAI GPT-5.6 Sol via Codex; v2.0-v5.14 iterations authored with Anthropic Claude Fable 5 via Claude Code with Claude Opus subagents; audio narration synthesized with MiniMax speech-2.8-hd (disclosed in assets/media transcripts)"
+    "model_detail": "v1.0 scaffolded and authored with OpenAI GPT-5.6 Sol via Codex; v2.0-v5.15 iterations authored with Anthropic Claude Fable 5 via Claude Code with Claude Opus subagents; audio narration synthesized with MiniMax speech-2.8-hd (disclosed in assets/media transcripts)"
   },
   "generated_at": "2026-08-12T11:56:14Z",
   "files": [
@@ -26,13 +26,13 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "e55aab3cadc73bc241e5adb87dbf8620d80ab6739961a5311c16bf05351bff82"
+      "sha256": "2d89b2e3fc8498a4b61c22a31e1389e02dde6500fce4ff2dd701da28e0959ecb"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "d51e76af686030172660f3d942927de3e0ddd14c6389a339fce65b5d60f88950"
+      "sha256": "c34227cfaefc062a9093b12a1f4f50a7d94eb512307808aa130c091d6d26a23c"
     },
     {
       "path": "metrics.json",
@@ -50,13 +50,13 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "d26e8f3e2914736d6df12bf484a355299395dd788aff1a3c8a6b18d2ad5ac201"
+      "sha256": "9114551df5c67cd155496ef1ba628221530846618a4ac1e7844304e5a1942a56"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "9ba91c6b3db47ec582e832c00c0b2f0c472565a105e116c088c8339db71d50c1"
+      "sha256": "1088a309f6c8ddc005fbfd79d40b2c901beea0c3923f24335eea18ec757bfc55"
     },
     {
       "path": "compliance_matrix.json",
@@ -88,7 +88,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "8149aad1da95be3a290d1e53f2f2cdaa6e5d21ef1da7b5c20b550b38ab78d756"
+      "sha256": "c11eaae25f85c087416c0b749cc9d3cddc38eeddc394ac0740b030f580887601"
     },
     {
       "path": "report/narrative.md",
@@ -100,28 +100,28 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "b2816a6e3e1df9f87f21b13e4bea4c2d1cb4f36ba0ee8b01b662e69bb0d4a285"
+      "sha256": "934840204b7c79f7bcce9a6390657ae32d9aacb9e58ce4b26b10b9118de1fb13"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "9cb119644a58ac6f71833bab83a1af2a9dd78fd87d22deaa0c748261835f942c"
+      "sha256": "5c29f25c72464b26f55c6dba282a6d9fa55e81cc4f9fc57f8f3e0757223aab45"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "5c037bbe52bc5fe9efd64b3668dc074040004d773f0a7082d05e686fb186607e"
+      "sha256": "d75e3ff90c86eec4ab5fe29d4cce9aafbaaa8537d2b026e7e17f0cf6914b99e2"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "38a7dcc674ce2adbb224f4b7b2c0d6aad8524daf5a4db1aada82b5675a572cef"
+      "sha256": "39bba95d43bd1bd2433d1afe6e3f7ea4d8c99a38b3ce54e457e77a456aec6fe9"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -218,7 +218,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "eede7b81823cd8c60927b039f474ee014476a48d7c104fdec251f7315886ed3b"
+      "sha256": "b332432c397957fc3739bdea09d2a784712706b4cd0b3c1ed02c078c26f26a63"
     },
     {
       "path": "report/proposal.en.html",
@@ -226,7 +226,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "1ab40d0d97f6771b9a544849c9cdf7fc925dd9fef3d48fb0844ffd060fde186c"
+      "sha256": "0911e4537ee141b0d1d8db08c538af1a7b1d3e9c625e37d09382846298fc85fd"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -234,7 +234,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "72c64c6c13ba4aaedbfb922688c6e07345f4336f7bfef9a0456be989c50e656d"
+      "sha256": "cef475f4d6744ef69600403480f23103be29facee14de994b2d2195cdc12ebe7"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -242,7 +242,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "02de4d8cecd169ce2526177984ada389ba0eb92a80a589b823671251441cb039"
+      "sha256": "69b5180ef1ad8564c9c27363382287f63dd8c35ed680fa947c3b33e388209d90"
     },
     {
       "path": "visual/index.en.html",
@@ -250,7 +250,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "2ae681484de4250f1d1ae4dd6d44c205ffb9f3d7d9b083d7b127e6a0908dfc25"
+      "sha256": "838222599ca87176e180ea8adf210d51510973470d148597a892acc7b4b67978"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -315,6 +315,51 @@
       "sha256": "cb7ccb9c79523fe633b09bf080b64b3a3c7f609d7dc0036175235e0ab0206158"
     },
     {
+      "path": "assets/figures/scene-dual-state.webp",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "343d6c7cbaf6be3376327a51ac1393309fd597207e5b92d5f37c9139592ab101"
+    },
+    {
+      "path": "assets/figures/scene-dual-state.en.webp",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/figures/scene-dual-state.webp",
+      "sha256": "d6361d7575d73cd8a5a9e39cbfbfa3be02bbae154e3b9bb7909cf947f8fb3ec8"
+    },
+    {
+      "path": "assets/figures/scene-interface-yard.webp",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "bb402c82480482c7a91aeb1e05a8d0ea1792c1c8fec0e541c38f9cbc8928826c"
+    },
+    {
+      "path": "assets/figures/scene-interface-yard.en.webp",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/figures/scene-interface-yard.webp",
+      "sha256": "cacf019a84f4fd2ec85d8f302dac39b5ce02604ee419d88f6be7645c7d2963ae"
+    },
+    {
+      "path": "assets/figures/scene-corridor-aerial.webp",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "9db04a184b8cfa555644caec5033876cb9b633cb86355ab0b687f390fc0a51ff"
+    },
+    {
+      "path": "assets/figures/scene-corridor-aerial.en.webp",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/figures/scene-corridor-aerial.webp",
+      "sha256": "c7eff7c450b08e65ec7e2deacf77a646a234415ef3dfac8140b38d2fd9d23298"
+    },
+    {
       "path": "assets/figures/site-overview.en.png",
       "role": "proposal_figure",
       "required": true,
@@ -355,7 +400,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "5523cac6dc351b33ad65da8c46bff8fa2fed1f86b2603b018814395fefa5cc3f"
+      "sha256": "e8f59b972f9cf2845321268ea94ae0ad0f09ae594b362383f94bf6b45d3a2e6b"
     },
     {
       "path": "assets/media/cover.webp",
@@ -496,7 +541,7 @@
       "language": "neutral",
       "title_zh": "输出质量校样与可及性走查记录（方案方自查）",
       "title_en": "Output Proofing and Accessibility Walkthrough Record (Proposer's Self-Check)",
-      "sha256": "17249a2cd932458ddca1ded89e0b0d0f8a7a803839da3a5209dc64b7e2abf624"
+      "sha256": "a0552b0c9f381315226768500edfcb9a88bf0adad2d50eece35c77ff2ab08060"
     },
     {
       "path": "visual/assets/seb-spec.json",
