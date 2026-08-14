@@ -226,7 +226,8 @@ Seven personas anchor the system. Each is bound to a spatial carrier, a scenario
 | Students and researchers | Clear translation and licensing boundaries | Campus research relay, open release hall | SCN-07 | Licence completeness, withdrawal response time |
 | Residents and older people | Equal service without a smart device | Human desks, community collaboration rooms | SCN-06, SCN-09 | No-AI equivalent coverage |
 | Disabled and temporarily impaired people | Verified continuous accessible routes | Accessible-route copilot, tactile maps | SCN-05 | Route verification pass rate, break repair time |
-| International visitors | Multilingual explanation and human help | Public translation desk, Manual Override Pavilion | SCN-06, SCN-12 | Human-help response time, paper multilingual coverage |
+| Young talent | Low-threshold trial and error, an attributable contribution record, and a reason to stay | Shared test courts, community collaboration houses, mixed talent-housing communities | SCN-01, SCN-07 | Interval from first contribution to reproduction, share of attributable entries |
+| International visitors and tourists | Multilingual explanation, human help, and a visit completable without installing an app | Public translation desk, Manual Override Pavilion, oral-history booth | SCN-06, SCN-11, SCN-12 | Human-help response time, multilingual paper coverage, app-free access availability |
 
 Twelve nodes [metric:scenario_node_count] are encoded from [data:geometry/public_space.geojson#SCN-01], including four controlled industry-validation scenarios [metric:industry_validation_scenario_count]. Every row states the minimum data, the duty owner, manual takeover, the no-AI equivalent and the exit condition. The shared rule is that loss of connection, a scope breach, a risk threshold or any person's objection stops the smart function immediately while the basic service continues on the duty logbook.
 
@@ -426,6 +427,28 @@ Delivery bodies follow "whoever benefits, maintains and can stop it", not projec
 Every role carries `assignment_status: unassigned`, constrained in the schema as a constant — a specification is not an appointment. The proposal names no organisation or individual and claims no partnership, mandate or contract; assignment rests with the competent authorities. Three structural constraints are enforced by validation rather than asserted in prose: stop authority is distributed across several roles instead of concentrated in the operator, the second reviewer may never be the role itself, and the last step of every escalation path returns the judgement to a qualified human team.
 
 Four annual shifts support long-term operation: Open Shift in spring, Maintainers’ Night in summer, Global Handover Week in autumn and Annual Review Shift in winter. The developer community follows issue ticket → transparent selection → minimum reproduction → bounded validation → maintainer handover → reusable artifact, with a duty role and licence at every step. Talent and enterprise conversion follows visit → problem match → controlled trial → public positive/negative results → professional referral → local partnership or explicit exit; no subsidy, procurement, investment or government commitment is claimed. International communication publishes bilingual protocol cards, a 90-second accessible route guide and an annual failure/repair digest, making the global AI industry highland and pilgrimage objective externally reviewable rather than merely photographable.
+
+### Long-term operating value: brand assets, event mechanisms and partnership channels, written separately
+
+The taskbook splits long-term operating value into three things — **brand assets, event mechanisms and partnership channels**. The commonest confusion is to treat brand as a logo, events as one opening ceremony a year, and partnership as a signing ceremony; on that reading the assets go to zero the day the design team leaves. This proposal organises all three around one question: can they keep running without us?
+
+| Element | What is deposited | Who can keep using it without us | Failure condition |
+| --- | --- | --- | --- |
+| **Brand assets** | An extensible, licensable and **revocable** identity system: name, four-colour semantics, five always-present fields (station number / shift / version / duty owner / update time), component library and publication rules | Any operator can produce wayfinding and publications from the same rules; missing any one field means the mark is incomplete, and no adjudication by us is required | Any use implying government endorsement, or commercial use without a separate grant |
+| **Event mechanisms** | The four-season roster: spring *Open-Source Shift Change*, summer *Night Maintainers' Evening*, autumn **Global Handover Week**, winter *Annual Review Shift* — each with its own visual motif over one shared identity system | Organisers run them against the P06 action pack's opening thresholds and strike-down checks; publishing negative results alongside positive ones is non-negotiable | Any of subject, permit, sustained budget, safety, staffing or strike-down being unclear means it shrinks or is cancelled |
+| **Partnership channels** | Five standing interfaces (Beiwei community, Future Science City, Huairou Science City, Beijing Economic-Technological Development Area, Jing-Jin-Ji nodes) plus developer problem tickets and the campus research relay — each stating **the minimum exchangeable output and its refusal conditions** | Partners connect against the interface spec without first concluding a framework agreement with anyone | No siting until subject and permit are confirmed; unclear IP, test liability or scope of applicability means no acceptance |
+
+**All three share one floor: every one of them is revocable.** A brand licence can be withdrawn, an event can be scaled down or cancelled, a partnership channel can refuse and can be exited. A partnership that cannot be exited is not a channel but a binding; a licence that cannot be withdrawn is not an asset but a liability.
+
+### International communication: build **global attention** on checkable records, not slogans
+
+To raise the belt's global attention and recognisability, this proposal relies not on adjectives but on three things that are not easy to copy elsewhere:
+
+1. **A published record of failure.** The annual failure/repair digest and every shutdown reason are published item by item — most urban AI projects publish only successes, and a line willing to state what it stopped and why is itself the distinguishing mark.
+2. **A protocol anyone can check.** Bilingual protocol cards, the dual-control shift ledger schema and twelve scenario instances ship with the package, so peers abroad can reuse the rules and point out faults without visiting.
+3. **A site that needs neither ticket nor app.** Visitors follow the accessible route to see successes, failures and repairs; **declining AI still yields an equivalent basic service** — which holds equally for international visitors and local residents.
+
+Fixed outputs are the bilingual protocol card, a 90-second accessible-route description and the annual failure/repair digest. Communication must not imply government endorsement, procurement commitment or statutory implementation.
 
 ### Correctable honour record and public knowledge deposit
 
