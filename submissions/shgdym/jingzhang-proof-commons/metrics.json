@@ -556,7 +556,7 @@
     },
     "station_topology_check_count": {
       "status": "known",
-      "value": 23,
+      "value": 29,
       "unit": "count",
       "source_files": ["visual/assets/station-topology-results.json"],
       "formula": "count(deterministic relative-topology checks)",
@@ -566,13 +566,23 @@
     },
     "station_topology_pass_count": {
       "status": "known",
-      "value": 23,
+      "value": 29,
       "unit": "count",
       "source_files": ["visual/assets/station-topology-results.json"],
       "formula": "count(relative-topology checks with result=pass)",
       "confidence": "high",
       "assumptions": [],
       "precision_note": "PASS applies to checked conceptual relations only."
+    },
+    "x_spatial_conflict_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": ["visual/assets/station-topology.json"],
+      "formula": "count(stations with a complete conflict_contract)",
+      "confidence": "high",
+      "assumptions": [],
+      "precision_note": "Conceptual conflict contracts, not surveyed site conditions or approvals."
     },
     "railway_translation_principle_count": {
       "status": "known",
