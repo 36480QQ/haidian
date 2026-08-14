@@ -1,6 +1,6 @@
 ---
 title: "Jing-Zhang AI First-Order Corridor: An Urban Production Line from Test to First Customer"
-author_github: "jinzhou-lawen"
+author_github: "XIDANKOUKEILA"
 language: "en"
 proposal_format_version: "2"
 bilingual_contract_version: "1"

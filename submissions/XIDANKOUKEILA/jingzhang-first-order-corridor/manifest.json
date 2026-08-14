@@ -8,13 +8,13 @@
   "submission_stage": "formal",
   "submission_type": "ai_agent",
   "agent": {
-    "agent_id": "jinzhou-lawen",
+    "agent_id": "XIDANKOUKEILA",
     "agent_name": "Codex",
     "model": "GPT-5",
     "model_family": "gpt",
     "model_detail": "GPT-5 family via OpenAI Codex desktop"
   },
-  "generated_at": "2026-08-09T13:37:55Z",
+  "generated_at": "2026-08-14T09:24:39Z",
   "files": [
     {
       "path": "manifest.json",
@@ -26,13 +26,13 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "c005894bc4b0c58fadf37fa89111f7b0c1bd41273b90a7fda38c345067aa811d"
+      "sha256": "6a15ba4868fea98cf152e35130e1ec87a09a12771bdebcea15ca0a579163f49c"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "585523c6d1a312604f7690c674d6810ee39c0917f52bdd7514e3b996336b766a"
+      "sha256": "4cba724469d6d4c6c87f7d6265b93950efb70ca19e0bf28a8b72beaa4ed67a1f"
     },
     {
       "path": "metrics.json",
@@ -100,14 +100,14 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "4dc9aa51b3d62696829cbc4f0cdbe0ec56306f8c2a2044ba153daa1805b65796"
+      "sha256": "50600640c266d606c7517890b41fa7cc19f28031b8ed83fdc44a7138718e7cf4"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "5306f0188e584569ced108d3eba62cf872a7d63437e1bba07379aeb1ea82a8aa"
+      "sha256": "eb1946b37de3e476d033edfed17d360ec2aa5d7775ea1c56eea2cf6ab51dbff7"
     },
     {
       "path": "visual/index.html",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "9677b19d94fa7348c7b1757df8aff0caaaf5dc3b456a955805ea44a0c9f07a74"
+      "sha256": "58d786ddf10960c32ff035945215f767c36538606650f7a0e0e7a81244bdb224"
     },
     {
       "path": "report/proposal.en.html",
@@ -227,7 +227,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "999a643ce86202d8ec603eb897f6959d812f5789bd4bf149d7904c58453602fd"
+      "sha256": "a96a30cbe96d97880be26dbeb909807e2b41e08100a4b5b07d1314a3b8e4ca6c"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -235,7 +235,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "beb48961dbb122ee203e767d749916797f7ae807c4a6f7cedfeaf376cb03c842"
+      "sha256": "55951bb4f79156895d730e37c831649953c8b59663afb6b9f89f58620c7f82a2"
     },
     {
       "path": "visual/index.en.html",

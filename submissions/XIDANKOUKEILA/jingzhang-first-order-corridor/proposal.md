@@ -1,6 +1,6 @@
 ---
 title: "京张AI首单走廊：从测试到首个真实客户的城市生产线"
-author_github: "jinzhou-lawen"
+author_github: "XIDANKOUKEILA"
 language: "zh"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
