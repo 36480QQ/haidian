@@ -41,11 +41,13 @@
   }
  },
  "english_coverage": {
-  "entries_with_english_summary": 40,
+  "entries_with_english_summary": 51,
   "entries_total": 79,
+  "found_from_outside_total": 29,
+  "found_from_outside_with_english": 29,
   "cited_in_english_edition_and_readable": true,
-  "note_zh": "**全部条目的正文（what/why/fix）目前只有中文。** 英文读者打开本文件，得到的是一份说明、一张形状直方图，以及逐条的编号、提交、文件与形状——没有正文。本包最常被称道的就是这份登记册，而它在英文里是一份读不到论证的目录。已写英文摘要的有 40 条 / 共 79 条；**其中英文正文按编号引用的每一条都必须有摘要，这一点由构建强制**——把读者指向他读不了的东西，不是翻译缺口，是一条恰好能解析的坏引用。全部翻译是真实的工作量，此处不假装已完成：报出分子与分母，而不是把做了一半的事说成做完了。",
-  "note_en": "**Every entry's body (what/why/fix) is currently Chinese only.** An English-reading reviewer opening this file gets a note, a shape histogram and rows of id, commit, file and shape with no text in them — and this register is the artifact this package is most often described by. 40 of 79 entries carry an English summary, and **every entry the English edition cites by number must carry one, enforced at build time**: pointing a reader at something they cannot read is not a translation gap but a broken reference that happens to resolve. Translating all of them is real work and is not pretended here — the numerator and the denominator are both published instead of a half-done job described as finished."
+  "note_zh": "**全部条目的正文（what/why/fix）目前只有中文。** 英文读者打开本文件，得到的是一份说明、一张形状直方图，以及逐条的编号、提交、文件与形状——没有正文。本包最常被称道的就是这份登记册，而它在英文里是一份读不到论证的目录。已写英文摘要的有 51 条 / 共 79 条；**其中英文正文按编号引用的每一条都必须有摘要，这一点由构建强制**——把读者指向他读不了的东西，不是翻译缺口，是一条恰好能解析的坏引用。全部翻译是真实的工作量，此处不假装已完成：报出分子与分母，而不是把做了一半的事说成做完了。",
+  "note_en": "**Every entry's body (what/why/fix) is currently Chinese only.** An English-reading reviewer opening this file gets a note, a shape histogram and rows of id, commit, file and shape with no text in them — and this register is the artifact this package is most often described by. 51 of 79 entries carry an English summary, and **every entry the English edition cites by number must carry one, enforced at build time**: pointing a reader at something they cannot read is not a translation gap but a broken reference that happens to resolve. Translating all of them is real work and is not pretended here — the numerator and the denominator are both published instead of a half-done job described as finished."
  },
  "found_by_meaning_zh": {
   "self": "作者在本轮工作中自查发现",
@@ -238,7 +240,8 @@
    "shape": "claim-outlived-the-package",
    "what_zh": "被引用八次的 412.5 m 闭合差，评审无法复算：只随包派生标量，不随包坐标，测量脚本在包外。",
    "why_zh": "本方案通篇主张无法复算的数不是证据，而它自己最重要的那个数正是如此。",
-   "fix_zh": "随包提交 275 个 OSM 顶点与无依赖的 check_osm.js，复算全部十个标量。"
+   "fix_zh": "随包提交 275 个 OSM 顶点与无依赖的 check_osm.js，复算全部十个标量。",
+   "summary_en": "The 412.5 m reading, cited eight times, could not be recomputed by a reviewer: the package shipped the derived scalar and not the coordinates, and the measuring script lived outside it."
   },
   {
    "id": "E18",
@@ -371,7 +374,8 @@
    "why_zh": "那份台账存在的全部意义就是防止手工清单与实际随包文件漂移——而描述这份台账的那段文字，它的计数是手打的，不在它自己的覆盖范围内。",
    "fix_zh": "该段与分类表改由 build_rights_ledger.py 从生成 JSON 的同一份列表 splice 进正文。",
    "found_by_name": "@147228",
-   "found_in": "PR #1065"
+   "found_in": "PR #1065",
+   "summary_en": "The manifest and the rights ledger both counted 80 files while the copyright statement said 77, and its own category table also totalled 77."
   },
   {
    "id": "E31",
@@ -393,7 +397,8 @@
    "why_zh": "与本方案在同一小时里指出 #950 的错误是同一个形状：拿一个测量去回答它回答不了的问题。对方八份样本证明「这八份里组织方项都在」，证不出「它是原因」；本方案 1,203 条证明「旧 prompt 下没人写这个前缀」，证不出「新 prompt 下不会命中」。**本方案用了不到两小时犯了同一个错。**",
    "fix_zh": "该条作为对 #957 的论据撤回，正文与随包 JSON 均标注为「旧口径下的必然值」；「0 个 PR 会翻到 featured」的结论依据改挂在另外两条上（汇总项、组织方项非唯一阻塞），而这两条被对方的 5 次采样独立印证。已在 Issue #950 与 PR #957 公开更正。",
    "found_by_name": "@Sonike",
-   "found_in": "Issue #950"
+   "found_in": "Issue #950",
+   "summary_en": "「The matcher in #957 is an empty set on the historical corpus — 1,203 actions, 0 matches, so it will never fire」. All 1,203 came from an older prompt that never asked for the prefix being counted; measuring a token's rate in a corpus that never required it can only return zero."
   },
   {
    "id": "E33",
@@ -434,7 +439,8 @@
    "shape": "deliverable-not-inspected-before-shipping",
    "what_zh": "compliance_matrix.json 里 1.5.3.1 众智园AI自主创新加速区指向「指标体系、面积复算与合规矩阵」，1.5.3.2 北京AI原点社区指向「风险、版权与合规说明」，1.4.1 与 1.4.2 各自指向下一条要求的章节。四条引用全部解析成功，因为那些标题确实存在。",
    "why_zh": "本包正文写着「三张矩阵的每一条引用都被校验过」，而校验的是**章节存在**，不是**章节对不对**。任务书里权重最高的两条要求，指着与它们无关的小节。",
-   "fix_zh": "matrix_refs_qa 增加第二条规则：某条要求的标题若命名了正文中确实存在的一个标题，该标题必须出现在这条要求的引用里；匹配须强（归一化标题整体落在归一化小节名内，且至少六字）。打开当场多抓出 1.4.1 与 1.4.2 两条错位，合计五处。"
+   "fix_zh": "matrix_refs_qa 增加第二条规则：某条要求的标题若命名了正文中确实存在的一个标题，该标题必须出现在这条要求的引用里；匹配须强（归一化标题整体落在归一化小节名内，且至少六字）。打开当场多抓出 1.4.1 与 1.4.2 两条错位，合计五处。",
+   "summary_en": "Four compliance-matrix references all resolved and all pointed at the wrong section — each to the chapter answering the *next* requirement. Resolution is not aim."
   },
   {
    "id": "E37",
@@ -444,7 +450,8 @@
    "shape": "check-measured-the-convenient-thing",
    "what_zh": "report/narrative.md 开篇写「228 份 … 69 份（30.3%）… 84 种 … 9 个模型家族」，assumptions.json#A-CORPUS-001 也写 228，而语料早已是 354 / 106（29.9%）/ 113 / 8；proposal.md 写权利台账枚举 77 个文件，实际 83。三处都在 census_claims_qa 报「14/14 全部当前」时随包发出。",
    "why_zh": "这道闸门本身就是为防止此类漂移而建的，它的**扫描范围**却只有两份 proposal——而本包在五份文件里陈述同一批读数。**范围是方便测的那一个，不是要判的那一个。**",
-   "fix_zh": "上下文模式改为扫描全部随包 markdown 加 assumptions.json，共 16 条模式覆盖 5 份文件。changelog.md 明确排除，且排除本身是要点：变更记录写的是某个版本**当时**的数，把 v0.6 条目里的「215 份已合入」改成 354 会让它说谎。"
+   "fix_zh": "上下文模式改为扫描全部随包 markdown 加 assumptions.json，共 16 条模式覆盖 5 份文件。changelog.md 明确排除，且排除本身是要点：变更记录写的是某个版本**当时**的数，把 v0.6 条目里的「215 份已合入」改成 354 会让它说谎。",
+   "summary_en": "The narrative opened with 228 proposals, 69 undisclosed, 84 strings, 9 model families, and the assumption register agreed — while the corpus had long since become 354 / 106 / 113 / 8."
   },
   {
    "id": "E38",
@@ -454,7 +461,8 @@
    "shape": "deliverable-not-inspected-before-shipping",
    "what_zh": "名为「三处重点区与水准点布设」的图里，三处重点区是三个空的红色虚线框。它是评审每次必收的五张图之一，也是任务书 1.5.3「重点区域详细设计」的成果图，而全部内容是一条旋转成水平的细长带子加三个方框。",
    "why_zh": "与 E34 同型第八次，而这次更贵：缺的不是一个面板，是这条任务书要求的**全部答复**。内容本来就在包里——每处重点区内有 7–8 个用地要素、1–2 个公共测点、1–2 栋建筑与 3–5 段道路，从未被画出来过。**又是把评审会看到的东西渲染出来读一遍才发现的。**",
-   "fix_zh": "上半幅改为三张同一尺度的 1500 m 见方窗口，各自从随包图层现绘用地剖分、主脊、道路、建筑基底与分级水准点；细长带子压成按里程线性展开的定位条。首次尝试用三处的最大范围做统一比例，结果最长的一处（2,061 m）把另两处压到槽宽的三分之一——改为等尺寸方窗；众智园超出窗口这一点写在图注里并在定位条上给出完整范围，而不是默默裁掉。"
+   "fix_zh": "上半幅改为三张同一尺度的 1500 m 见方窗口，各自从随包图层现绘用地剖分、主脊、道路、建筑基底与分级水准点；细长带子压成按里程线性展开的定位条。首次尝试用三处的最大范围做统一比例，结果最长的一处（2,061 m）把另两处压到槽宽的三分之一——改为等尺寸方窗；众智园超出窗口这一点写在图注里并在定位条上给出完整范围，而不是默默裁掉。",
+   "summary_en": "The sheet titled 「three key areas and benchmark layout」 drew the three key areas as three empty dashed boxes — one of the five figures the reviewer always receives, and the deliverable for the taskbook's detailed-design requirement."
   },
   {
    "id": "E39",
@@ -487,7 +495,8 @@
    "shape": "six-classes-for-a-seven-class-partition",
    "what_zh": "用地表列了 05、0702、0802、0803、1401、16 六类，而 `geometry/land_use.geojson` 的剖分是七类——漏掉的是 1207，站—点合一的轨道站厅接入段。两个语种同时漏。",
    "why_zh": "**这正是勘误册里已经记着的那一条，在描述它的那句话往后几节的正文里又犯了一次**——「FIG.01 的用地图例列六类而剖分已是七类」。一条被记录下来的缺陷形状，如果只修了它出现的那一处而没有建闸门，它会在同一份文件的别处原样重演。",
-   "fix_zh": "补上该行；`census_claims_qa` 现在从 `land_use.geojson` 读出全部代码，要求每一个都出现在两个语种的表里。这次是建闸门而不是改一处。"
+   "fix_zh": "补上该行；`census_claims_qa` 现在从 `land_use.geojson` 读出全部代码，要求每一个都出现在两个语种的表里。这次是建闸门而不是改一处。",
+   "summary_en": "The land-use table listed six classes against a seven-class partition in the shipped geometry; the missing one was the station-concourse connection, in both languages at once."
   },
   {
    "id": "E43",
@@ -497,7 +506,8 @@
    "shape": "the-table-stopped-being-a-table",
    "what_zh": "十一列的更新项目表，分隔行写成 `|---||---||---|…`——十一个 `|---|` 首尾相接，解析出 21 格对 11 列表头。任何 Markdown 渲染器都不会把它画成表格。",
    "why_zh": "**它就在「每一列都是必填的」这句话正下方**，也就是一张表最不该停止是表格的位置；而且只在英文版，因此比对分节**内容**的 parity 闸门放它过去了。本包有十一道闸门读散文说了什么，一道也没有读它能不能被解析。",
-   "fix_zh": "修好分隔行；新增 `markdown_structure_qa`：表格分隔行与每一行的格数必须与表头一致，有序列表必须严格递增。用重新植入这两处缺陷做过自测，它会点名 `proposal.en.md:1114` 与 `:1413` 并以 1 退出。"
+   "fix_zh": "修好分隔行；新增 `markdown_structure_qa`：表格分隔行与每一行的格数必须与表头一致，有序列表必须严格递增。用重新植入这两处缺陷做过自测，它会点名 `proposal.en.md:1114` 与 `:1413` 并以 1 退出。",
+   "summary_en": "An eleven-column table's separator was written as eleven `|---|` cells run together, parsing to 21 fields against an 11-column header, so no renderer draws it as a table."
   },
   {
    "id": "E44",
@@ -839,7 +849,8 @@
    "shape": "two-copies-of-one-thing-drifted",
    "what_zh": "`BOUNDARY-SOURCE` 与 `KEY-AREA-SOURCE` 记为 `evidence_class: official_context`，而两条的 `source_type` 都是 `agent_inferred_from_public_data`；上游 `data/source_registry.json` 对同一份 geometry 记为 `review_status: provisional`、`usable_for_formal: provisional_only`、`authority_level: PROVISIONAL_REPOSITORY`，并把「精确面积计算」列入 prohibited_uses。另有 `MOHURD-ARCH-DESIGN-DEPTH-2016` 记为 `regulatory_baseline`，而它的 `retrieved_at` 是「未取得」。",
    "why_zh": "**三份文件对同一个来源给出三种等级，其中两份评审会同时收到**——本包的 sources.json 与仓库的 source_registry 摘要。更难堪的是第三份：本包自己的 metrics.json 把全部边界派生指标都记为 `provisional`，也就是**同一个包在两个文件里对同一件事给了两个答案**，而且是本包上一轮刚建起证据上限机制之后。「一份没有被读过的文件充当法规基线」则是另一回事：它高估的不是来源，是本包的功课。",
-   "fix_zh": "两条边界来源降为 `provisional`，并写明上游登记 id 与降级理由；未取得的那份降为 `background_only`。`sources_qa` 新增一条规则：记录不得声称它自己其余字段排除掉的等级——`agent_inferred_*` 不能是 official_context 或 regulatory_baseline，`retrieved_at` 为「未取得」不能是 regulatory_baseline。两条都用重新植入原值自测过。"
+   "fix_zh": "两条边界来源降为 `provisional`，并写明上游登记 id 与降级理由；未取得的那份降为 `background_only`。`sources_qa` 新增一条规则：记录不得声称它自己其余字段排除掉的等级——`agent_inferred_*` 不能是 official_context 或 regulatory_baseline，`retrieved_at` 为「未取得」不能是 regulatory_baseline。两条都用重新植入原值自测过。",
+   "summary_en": "Two sources were graded `official_context` while both carried `source_type: agent_inferred_from_public_data` — the evidence class outranked the provenance it rested on."
   },
   {
    "id": "E47",
@@ -849,7 +860,8 @@
    "shape": "attribution-to-a-file-that-refuses-it",
    "what_zh": "三份矩阵的 44 条 evidence_summary_zh 里，有 22 条给它指名的每一条指标都缀上「（由 visual/assets/verify.js 独立重算）」。而 verify.js 只重算 metrics.json 标为 class 1 的 17 条，并在结构性结论第 16 条里断言**它不多算一条**。最糟的一处是 `floor_area_ratio（由 verify.js 独立重算）`——该指标 value 为 null、status 为 unknown，而 verify.js 里唯一提到它的地方，正是断言它**保持** unknown。",
    "why_zh": "**一个 null 被描述成独立重算出来的数值，出现在一份以「可复算」为论点的包里，而评审手上握着抓出这一点所需要的每一个文件。** proposal.md 的核对清单第 1 条逐字引用了 verify.js 的覆盖范围断言，因此这条矛盾**只靠正文就能被发现**。这条不是数字过期，是**把一件别的文件明确拒绝做的事安在它头上**——这类声明在停止为真之后，还会长期显得合理。",
-   "fix_zh": "摘要不再统一缀那句话，改为按 `metric_class` 逐条如实归属：class 1 写「由 verify.js 独立重算」，class 2 写「须官方控规支撑，verify.js 断言的是它保持 unknown，不是它的取值」，包内自计数写「由构建从随包产物重算，不在 verify.js 覆盖范围内」。`matrix_refs_qa` 新增第 6 条规则：任何摘要都不得把「独立重算」安到非 class 1 的指标上；用重新植入 floor_area_ratio 那句做过自测。"
+   "fix_zh": "摘要不再统一缀那句话，改为按 `metric_class` 逐条如实归属：class 1 写「由 verify.js 独立重算」，class 2 写「须官方控规支撑，verify.js 断言的是它保持 unknown，不是它的取值」，包内自计数写「由构建从随包产物重算，不在 verify.js 覆盖范围内」。`matrix_refs_qa` 新增第 6 条规则：任何摘要都不得把「独立重算」安到非 class 1 的指标上；用重新植入 floor_area_ratio 那句做过自测。",
+   "summary_en": "Twenty-two of forty-four evidence summaries appended 「independently recomputed by verify.js」 to every metric they named, while that script recomputes only the seventeen marked class 1 — a file credited with work it declines to do."
   },
   {
    "id": "E48",
@@ -859,7 +871,8 @@
    "shape": "number-with-no-file-behind-it",
    "what_zh": "摘要 front matter 写「做了十二次可重跑普查」，而 `reading_log.json` 是 14 次，正文两处（第 74 行与第 220 行）也都写 14。",
    "why_zh": "**这个数被手工改过一次**——它原来是「五次」，在建起读数日志的同一次提交里被改成「十二次」，然后下一次普查就又错了。而两行之外那句是生成的，一直是对的。**一个被手工改对过一次的数字，就是一个还会再错的数字。** 双语对等闸门看不见它（它比的是字数密度），普查闸门也看不见（「十二次」不在它跟踪的 14 项事实里）。",
-   "fix_zh": "做成 `build_live_numbers.py` 的第 11 个锚点槽位，从 `reading_log.json` 的 `reading_count` 取值并转成中文数字；锚点匹配不到或匹配到两次都会让构建失败。"
+   "fix_zh": "做成 `build_live_numbers.py` 的第 11 个锚点槽位，从 `reading_log.json` 的 `reading_count` 取值并转成中文数字；锚点匹配不到或匹配到两次都会让构建失败。",
+   "summary_en": "The front matter said twelve repeatable censuses had been run while the reading log held fourteen, and the body said fourteen twice."
   },
   {
    "id": "E45",
