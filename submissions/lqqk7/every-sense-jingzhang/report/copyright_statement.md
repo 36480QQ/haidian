@@ -39,7 +39,7 @@ The ledger below restates, asset by asset, what the sections above declare in pr
 
 ## 一、编制口径 / Compilation rule
 
-本台账汇编自以下八处既有登记：本文件（作者归属、许可选择、生成方法、字体许可、OSM 署名与用途限制）、`manifest.json`（文件清单、角色、语言、翻译关系、校验和）、`agent.json`（申报智能体与模型）、`sources.json`（三十二条来源的允许与禁止用途）、`visual/assets/osm-context/provenance.json`（OSM 取数与再分发状态）、`assets/media/audio-guide.md` 与 `journey.md` 与 `cover.md`（三件媒体资产的工具、方法与权利记录）、`metrics.json`（复算投影）、`proposal.md`（品牌字体策略、随包代码零依赖声明、基准许可建议）。
+本台账汇编自以下八处既有登记：本文件（作者归属、许可选择、生成方法、字体许可、OSM 署名与用途限制）、`manifest.json`（文件清单、角色、语言、翻译关系、校验和）、`agent.json`（申报智能体与模型）、`sources.json`（三十四条来源的允许与禁止用途）、`visual/assets/osm-context/provenance.json`（OSM 取数与再分发状态）、`assets/media/audio-guide.md` 与 `journey.md` 与 `cover.md`（三件媒体资产的工具、方法与权利记录）、`metrics.json`（复算投影）、`proposal.md`（品牌字体策略、随包代码零依赖声明、基准许可建议）。
 
 **许可总则：** 全包整体 `COMMUNITY-DISPLAY-ONLY`，仅用于本次征集的社区展示与评审场景；不放弃任何第三方权利。
 **署名总则：** 署名主体为 GitHub 用户 `lqqk7` 指导下的申报智能体「柱子 / Zhuzi」；模型与撰写工具见 `agent.json`，媒体合成工具在各自说明文件中单独披露。
@@ -53,7 +53,7 @@ The ledger below restates, asset by asset, what the sections above declare in pr
 | C 图版 | 16 | 由本包 GeoJSON、指标、矩阵、风险、假设与自撰标签本地生成 | Python、SVG、`rsvg-convert`/Cairo | 本文件 |
 | D 图纸 PDF | 4 | 同上，并合并为册 | Python、SVG、`rsvg-convert`/Cairo、`pdfunite` | 本文件 |
 | E 几何 | 9 | 基于仓库临时边界与本方案概念几何 | 复算投影 EPSG:4548（`scripts/spatial_review.py`） | 本文件 · `sources.json` · `metrics.json` |
-| F 离线展示与随包代码 | 15 | 原创手写，自含离线 | 无第三方依赖；仅 Node 内置模块 | 本文件 · `proposal.md` |
+| F 离线展示与随包代码 | 17 | 原创手写，自含离线 | 无第三方依赖；仅 Node 内置模块 | 本文件 · `proposal.md` |
 | G 媒体 | 11 | 手写 HTML/SVG 渲染 + 语音合成 + 本包页面逐帧实录 | Playwright/Chromium、MiniMax `speech-2.8-hd`（`mmx` 1.0.7）、x264/AAC、Pillow | `journey.md` · `audio-guide.md` · `cover.md` |
 | H 品牌标志 | 1 | 原创矢量几何 | 手写 SVG | 本文件 · `cover.md` |
 
@@ -156,7 +156,7 @@ The ledger below restates, asset by asset, what the sections above declare in pr
 | 离线展示页（`visual/*.html`、`scene.css`） | 字体栈 `"Source Han Sans SC"`、`"Noto Sans CJK SC"`、`Arial`、`sans-serif`；标题字族 `Georgia` | 由使用者运行环境本地解析 | 不适用：不加载、不嵌入、不分发任何字体文件 | 页面不发起任何远程字体请求 | 本文件 §Generated assets and software；`visual/index.html` 内联样式 |
 | 多模态短片（`journey.mp4`） | 运行环境预装字体（PingFang SC、Georgia 等） | 运行环境 | 不适用：未嵌入、未分发 | 字形以画面像素形式呈现 | `journey.md` §五「字体」行、§六「图件与字体权利」 |
 | 方案封面（`cover.webp`） | 系统随附字体（中西文衬线、无衬线、等宽） | 运行环境 | 不适用：未嵌入、未分发 | 字形以位图形式呈现于图像中 | `cover.md` §二「字体」行 |
-| 品牌落地字体策略 | 衬线标题、无衬线正文、等宽数据三分工，具体字体待定 | 待定 | 逐项核验授权，未清权字体不进入公开成果 | 品牌图版（`brand-system.png`）的字体策略区块已与清权后事实对齐：三种分工同出思源黑体一族（Medium/Bold/Regular，SIL OFL 1.1），与四册 PDF 实际嵌入的三个子集一一对应；Georgia、Helvetica Neue、SF Mono 等商业字体在图版上明示为未来深化候选，须逐项取得商用授权后方可引入。本包唯一嵌入字体程序的载体是四册 PDF（见首行），图版与页面均不分发字体文件 | `proposal.md` 品牌章与「版权与授权」段 |
+| 品牌落地字体策略 | 衬线标题、无衬线正文、等宽数据三分工，现阶段三种分工均由 Source Han Sans SC 一族承担（Medium/Bold/Regular） | Source Han Sans SC（SIL OFL 1.1）；商业字体候选待逐项清权 | 逐项核验授权，未清权字体不进入公开成果 | 品牌图版（`brand-system.png`）的字体策略区块已与清权后事实对齐：三种分工同出思源黑体一族（Medium/Bold/Regular，SIL OFL 1.1），与四册 PDF 实际嵌入的三个子集一一对应；Georgia、Helvetica Neue、SF Mono 等商业字体在图版上明示为未来深化候选，须逐项取得商用授权后方可引入。本包唯一嵌入字体程序的载体是四册 PDF（见首行），图版与页面均不分发字体文件 | `proposal.md` 品牌章与「版权与授权」段 |
 
 **一致口径：** 全包不以独立资产形式再分发任何字体文件；PDF 内的子集嵌入按 SIL OFL 1.1 进行；其余交付物均依赖运行环境本地字体。
 

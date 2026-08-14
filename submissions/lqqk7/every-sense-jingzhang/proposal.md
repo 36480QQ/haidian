@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以多感官通用设计为产业赛道与城市底线，让不同身体、感官和认知方式的人都能独立理解、选择、完成并退出同一项 AI 城市服务。"
 tracks: ["ai-traffic-walkability", "ai-public-services", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v5.13"
+iteration: "v5.14"
 ---
 
 # 万感京张：每一种身体都能独立使用的 AI 城市 / EVERY SENSE JING-ZHANG
@@ -197,7 +197,7 @@ W3C 的可感知、可操作、可理解与稳健原则用于检视数字和交�
 | 基准组件 | 规范内容 | 本包内的机器可读位置 | 复用时必须一并接受的约束 |
 | --- | --- | --- | --- |
 | 节点 schema | 每个服务点位必须声明五个字段：`ai_off_path` 为 AI 关闭后的等价路径，`human_handoff` 为人工接管角色，`gate_id` 为当前所处闸门，`operating_mode` 为运行方式，`responsible_role` 为责任专业；缺任一字段的点位不得计入服务覆盖 | `geometry/constraints.geojson` 中十个点位要素的属性表 [data:geometry/constraints.geojson#OP-04] | 五个字段为必填而非可选；`ai_off_path` 不得填写“引导至线上办理”一类仍依赖同一系统的路径，拒绝依据自 v0.2 起以机器可读的 `constraint_machine_rule` 写入基准，不再由校验实现自行解释 |
-| 评分口径 | 七项包容性指标各自的分子与分母定义，覆盖独立完成率、双通道信息冗余率、AI 开关服务等价差、被迫放弃率、人工接管成功率与耗时、感官负荷超限点、共同设计角色组覆盖率 | `metrics.json` 中七项指标的 `numerator_definition` 与 `denominator_definition` 字段 [metric:ai_off_service_equivalence_gap] | **分母不得删除失败样本**：撤回、技术故障与非完成原因必须与完成数一并报告，删除任何一类即视为该次测量作废；适用范围自 v0.2 起由 `applies_to` 明文界定，适用五项参与者任务型指标，两项文件完整性型覆盖率连同理由一并排除 |
+| 评分口径 | 七项包容性指标各自的分子与分母定义，覆盖独立完成率、双通道信息冗余率、AI 开关服务等价差、被迫放弃率、人工接管成功率与耗时、感官负荷超限点、共同设计角色组覆盖率 | `metrics.json` 中七项指标的 `numerator_definition` 与 `denominator_definition` 字段 [metric:ai_off_service_equivalence_gap] | **分母不得删除失败样本**：撤回、技术故障与非完成原因必须与完成数一并报告，删除任何一类即视为该次测量作废；适用范围自 v0.2 起由 `applies_to` 明文界定，适用五项参与者任务型指标，双通道信息冗余率、感官负荷超限点与共同设计角色组覆盖率三项枚举型指标连同理由排除，两项文件完整性型覆盖率亦连同理由一并排除 |
 | 等级定义 | L0 资料与许可、L1 可逆原型、L2 封闭成对测试、L3 限定开放、L4 采用与常态运行共五级，每级绑定准入条件、停止条件、恢复证据与责任主体 | 本文「更新项目清单、实施政策与分期计划」中的开放机制表 [depth:phasing_implementation] | 等级以“场景 × 点位”为单位，不以工作包或行政区为单位；允许降级，且降级不附加额外程序门槛；每级所处闸门自 v0.2 起以结构化的 `gate_binding` 声明，L4 与 G3 的关系由基准明文规定而非由工具推断 |
 | 判定规则 | R-01 至 R-08 八项风险条目各自的停止条件与恢复证据，构成“什么时候必须停、拿什么才能重开”的完整规则集 | `risk.json` 中八条 `stop_condition` 与 `resume_condition` [metric:risk_item_count] | 停止条件触发即停止，不以“限期整改”替代停止；恢复须提交证据而不是承诺 |
 
@@ -466,7 +466,7 @@ OP-04 配对试点全过程证据链复演 / OP-04 paired-pilot evidence-chain r
 
 下图不是效果表现，而是一次可核对的空间读取。图面只使用本包既有几何图层中的二十一个要素——五条道路中心线、六处绿地面与十处公共空间面——叠加十个独立完成点，再以两套色域画出同一组服务在 AI 开启与 AI 关闭两种状态下的可达范围。低刺激安静替代路线在 AI 关闭状态下承担主要连通职责，因此单独标注 [data:geometry/roads.geojson#ROAD-005]。**两个可达域的差集，就是 `ai_off_service_equivalence_gap` 这项指标的空间形态**：差集覆盖的位置，正是自动化一旦关闭就会失去等价服务的位置，也是首批现场审计与成对测试应当优先前往的位置 [metric:ai_off_service_equivalence_gap]。此处必须防止一种误读：等价是本方案承诺的服务底线；差集是承诺尚未兑现之处的审计靶区，不是现状达标声明。“AI ON = AI OFF”表述的是服务结果的目标等价，与之并列的差集面积与占比表述的是当前空间审计仍未闭合的部分，二者不得合读为覆盖已经等价。可达域按概念半径绘制，不代表实测步行时间、坡度、过街条件或真实服务覆盖，官方几何与现场审计到位后须整体重绘。
 
-![十节点服务可达域与蓝绿慢行系统图](assets/figures/mobility-bluegreen.png)
+![AI 关闭后，可达域收缩近一半：差集是审计靶区，不是达标声明](assets/figures/mobility-bluegreen.png)
 
 主图为评委整页阅读而设，只保留差集面积前三位的首批审计断点；十节点完整排序、可达域口径明细与责任方登记在同源附图《十节点差集审计明细》，两图数值同源、无差异。
 
