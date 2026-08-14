@@ -2,209 +2,559 @@
   "schema_version": "0.1.0",
   "items": [
     {
-      "depth_id": "overall_concept",
-      "title_zh": "总体概念与品牌体系",
+      "item_id": "existing_conditions_diagnosis",
+      "title_zh": "现状诊断图与资料缺口",
+      "professional_dimension": "规划",
+      "required": true,
       "status": "complete",
-      "evidence_files": [
-        "proposal.md"
+      "proposal_sections": [
+        "设计依据与资料清单",
+        "风险、版权与合规说明"
       ],
-      "key_content": "开源京张命名体系、Logo方向、视觉识别、三次开源叙事",
-      "notes": ""
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/buildings.geojson",
+        "geometry/roads.geojson"
+      ],
+      "metric_refs": [
+        "coordinated_research_area",
+        "overall_design_area",
+        "key_detailed_design_area"
+      ],
+      "source_ids": [
+        "SRC-AGENT-TASKBOOK",
+        "SRC-DESIGN-BRIEF",
+        "SRC-PROJECT-ANNOUNCEMENT"
+      ],
+      "assumption_ids": [
+        "A-CONTROLS-001"
+      ],
+      "self_check_ids": [
+        "PKG-001",
+        "GEO-001",
+        "MET-001"
+      ],
+      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
     },
     {
-      "depth_id": "three_positionings",
-      "title_zh": "三大定位",
+      "item_id": "three_level_scope_framework",
+      "title_zh": "三层范围工作框架",
+      "professional_dimension": "规划",
+      "required": true,
       "status": "complete",
-      "evidence_files": [
-        "proposal.md"
+      "proposal_sections": [
+        "统筹研究范围产业与未来城市研究",
+        "总体设计范围城市更新与控规深度城市设计",
+        "重点区域详细设计"
       ],
-      "key_content": "百年京张文化带、都市AI生活体验带、AI融合创新带的开源诠释",
-      "notes": ""
-    },
-    {
-      "depth_id": "five_functions",
-      "title_zh": "五大功能",
-      "status": "complete",
-      "evidence_files": [
-        "proposal.md"
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
       ],
-      "key_content": "AI全栈自主创新、世界级AI生态、AI+场景赋能、智能化城市、AI治理话语权",
-      "notes": ""
-    },
-    {
-      "depth_id": "three_areas_two_wings",
-      "title_zh": "三区两翼协同",
-      "status": "complete",
-      "evidence_files": [
-        "proposal.md",
+      "geometry_refs": [
+        "geometry/site_boundary.geojson",
         "geometry/key_areas.geojson"
       ],
-      "key_content": "Fork/Main/Release三区 + CI/CD两翼的编译流水线协同回路",
-      "notes": ""
+      "metric_refs": [
+        "coordinated_research_area",
+        "overall_design_area",
+        "key_detailed_design_area"
+      ],
+      "source_ids": [
+        "SRC-AGENT-TASKBOOK",
+        "SRC-DESIGN-BRIEF",
+        "SRC-PROJECT-ANNOUNCEMENT"
+      ],
+      "assumption_ids": [
+        "A-CONTROLS-001"
+      ],
+      "self_check_ids": [
+        "PKG-001",
+        "GEO-001",
+        "MET-001"
+      ],
+      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
     },
     {
-      "depth_id": "overall_spatial_structure",
+      "item_id": "overall_spatial_structure",
       "title_zh": "总体空间结构",
+      "professional_dimension": "规划",
+      "required": true,
       "status": "complete",
-      "evidence_files": [
-        "proposal.md",
-        "geometry/land_use.geojson",
-        "assets/figures/key-areas.png"
+      "proposal_sections": [
+        "统筹研究范围产业与未来城市研究",
+        "总体设计范围城市更新与控规深度城市设计"
       ],
-      "key_content": "一轴三区两翼多节点",
-      "notes": ""
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson"
+      ],
+      "metric_refs": [
+        "coordinated_research_area",
+        "overall_design_area",
+        "key_detailed_design_area"
+      ],
+      "source_ids": [
+        "SRC-AGENT-TASKBOOK",
+        "SRC-DESIGN-BRIEF",
+        "SRC-PROJECT-ANNOUNCEMENT"
+      ],
+      "assumption_ids": [
+        "A-CONTROLS-001"
+      ],
+      "self_check_ids": [
+        "PKG-001",
+        "GEO-001",
+        "MET-001"
+      ],
+      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
     },
     {
-      "depth_id": "land_use_layout",
+      "item_id": "land_use_layout",
       "title_zh": "用地布局",
+      "professional_dimension": "规划",
+      "required": true,
       "status": "complete",
-      "evidence_files": [
+      "proposal_sections": [
+        "总体设计范围城市更新与控规深度城市设计",
+        "用地、建筑规模与拆改留方案"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
         "geometry/land_use.geojson",
-        "proposal.md"
+        "geometry/buildings.geojson"
       ],
-      "key_content": "6个用地分区覆盖全带",
-      "notes": "控规指标为unknown"
+      "metric_refs": [
+        "floor_area_ratio",
+        "building_height_m",
+        "building_density",
+        "green_ratio"
+      ],
+      "source_ids": [
+        "SRC-AGENT-TASKBOOK",
+        "SRC-DESIGN-BRIEF",
+        "SRC-PROJECT-ANNOUNCEMENT"
+      ],
+      "assumption_ids": [
+        "A-CONTROLS-001"
+      ],
+      "self_check_ids": [
+        "PKG-001",
+        "GEO-001",
+        "MET-001"
+      ],
+      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
     },
     {
-      "depth_id": "transport_system",
+      "item_id": "traffic_rail_slow_parking",
       "title_zh": "交通系统",
+      "professional_dimension": "交通",
+      "required": true,
       "status": "complete",
-      "evidence_files": [
-        "proposal.md",
-        "geometry/roads.geojson",
-        "assets/figures/mobility-bluegreen.png"
+      "proposal_sections": [
+        "交通、轨道、市政与公共服务设施"
       ],
-      "key_content": "道路骨架、轨道站点一体化、三级慢行网络、东西缝合",
-      "notes": "不涉及工程可行性结论"
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/roads.geojson"
+      ],
+      "metric_refs": [
+        "floor_area_ratio"
+      ],
+      "source_ids": [
+        "SRC-AGENT-TASKBOOK",
+        "SRC-DESIGN-BRIEF",
+        "SRC-PROJECT-ANNOUNCEMENT"
+      ],
+      "assumption_ids": [
+        "A-CONTROLS-001"
+      ],
+      "self_check_ids": [
+        "PKG-001",
+        "GEO-001",
+        "MET-001"
+      ],
+      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
     },
     {
-      "depth_id": "blue_green_space",
-      "title_zh": "蓝绿空间",
+      "item_id": "blue_green_public_space",
+      "title_zh": "蓝绿空间与公共空间",
+      "professional_dimension": "景观",
+      "required": true,
       "status": "complete",
-      "evidence_files": [
+      "proposal_sections": [
+        "蓝绿空间、公共空间与城市风貌"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
         "geometry/green_space.geojson",
-        "proposal.md",
-        "assets/figures/mobility-bluegreen.png"
-      ],
-      "key_content": "开源铁道主轴绿带、小月河蓝绿廊道",
-      "notes": ""
-    },
-    {
-      "depth_id": "public_space",
-      "title_zh": "公共空间",
-      "status": "complete",
-      "evidence_files": [
-        "geometry/public_space.geojson",
-        "proposal.md"
-      ],
-      "key_content": "5个公共空间节点",
-      "notes": ""
-    },
-    {
-      "depth_id": "key_area_detail",
-      "title_zh": "重点区域详细设计",
-      "status": "complete",
-      "evidence_files": [
-        "proposal.md",
-        "geometry/key_areas.geojson"
-      ],
-      "key_content": "三处重点区各有定位+空间结构+建筑更新+交通+公共空间+AI场景+风险",
-      "notes": ""
-    },
-    {
-      "depth_id": "ai_ecosystem",
-      "title_zh": "AI创新生态",
-      "status": "complete",
-      "evidence_files": [
-        "proposal.md"
-      ],
-      "key_content": "五区编译链路、区域创新协同、空间产业融合",
-      "notes": ""
-    },
-    {
-      "depth_id": "scenario_cards",
-      "title_zh": "AI场景卡",
-      "status": "complete",
-      "evidence_files": [
-        "proposal.md"
-      ],
-      "key_content": "12张场景卡，含空间位置、服务对象、数据、隐私、人工复核、运营主体",
-      "notes": ""
-    },
-    {
-      "depth_id": "user_personas",
-      "title_zh": "用户画像",
-      "status": "complete",
-      "evidence_files": [
-        "proposal.md"
-      ],
-      "key_content": "5类用户画像",
-      "notes": ""
-    },
-    {
-      "depth_id": "cultural_narrative",
-      "title_zh": "文化叙事",
-      "status": "complete",
-      "evidence_files": [
-        "proposal.md"
-      ],
-      "key_content": "三次开源叙事、詹天佑精神、道岔=分支符号",
-      "notes": ""
-    },
-    {
-      "depth_id": "pilgrimage_landmarks",
-      "title_zh": "朝圣地标",
-      "status": "complete",
-      "evidence_files": [
-        "proposal.md",
         "geometry/public_space.geojson"
       ],
-      "key_content": "First Commit纪念碑、开源之墙、Fork广场",
-      "notes": ""
+      "metric_refs": [
+        "green_space_area",
+        "green_ratio",
+        "public_space_nodes"
+      ],
+      "source_ids": [
+        "SRC-AGENT-TASKBOOK",
+        "SRC-DESIGN-BRIEF",
+        "SRC-PROJECT-ANNOUNCEMENT"
+      ],
+      "assumption_ids": [
+        "A-CONTROLS-001"
+      ],
+      "self_check_ids": [
+        "PKG-001",
+        "GEO-001",
+        "MET-001"
+      ],
+      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
     },
     {
-      "depth_id": "event_system",
-      "title_zh": "活动体系",
+      "item_id": "height_massing_character",
+      "title_zh": "城市风貌",
+      "professional_dimension": "规划",
+      "required": true,
       "status": "complete",
-      "evidence_files": [
-        "proposal.md"
+      "proposal_sections": [
+        "蓝绿空间、公共空间与城市风貌"
       ],
-      "key_content": "5类年度活动、社区运营机制、国际传播、转化路径",
-      "notes": ""
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/buildings.geojson",
+        "geometry/public_space.geojson"
+      ],
+      "metric_refs": [
+        "building_height_m"
+      ],
+      "source_ids": [
+        "SRC-AGENT-TASKBOOK",
+        "SRC-DESIGN-BRIEF",
+        "SRC-PROJECT-ANNOUNCEMENT"
+      ],
+      "assumption_ids": [
+        "A-CONTROLS-001"
+      ],
+      "self_check_ids": [
+        "PKG-001",
+        "GEO-001",
+        "MET-001"
+      ],
+      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
     },
     {
-      "depth_id": "phasing",
-      "title_zh": "分期计划",
+      "item_id": "development_intensity_controls",
+      "title_zh": "开发强度与控规指标",
+      "professional_dimension": "规划",
+      "required": true,
       "status": "complete",
-      "evidence_files": [
-        "geometry/phasing.geojson",
-        "proposal.md"
+      "proposal_sections": [
+        "总体设计范围城市更新与控规深度城市设计",
+        "指标体系、面积复算与合规矩阵"
       ],
-      "key_content": "近中远三期，2026-2036",
-      "notes": ""
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/land_use.geojson",
+        "geometry/buildings.geojson"
+      ],
+      "metric_refs": [
+        "floor_area_ratio",
+        "building_height_m",
+        "building_density",
+        "green_ratio"
+      ],
+      "source_ids": [
+        "SRC-AGENT-TASKBOOK",
+        "SRC-DESIGN-BRIEF",
+        "SRC-PROJECT-ANNOUNCEMENT"
+      ],
+      "assumption_ids": [
+        "A-CONTROLS-001"
+      ],
+      "self_check_ids": [
+        "PKG-001",
+        "GEO-001",
+        "MET-001"
+      ],
+      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
     },
     {
-      "depth_id": "metrics",
-      "title_zh": "指标体系",
+      "item_id": "municipal_new_infrastructure",
+      "title_zh": "市政设施",
+      "professional_dimension": "市政",
+      "required": true,
       "status": "complete",
-      "evidence_files": [
-        "metrics.json",
-        "proposal.md",
-        "assets/figures/metrics-evidence.png"
+      "proposal_sections": [
+        "交通、轨道、市政与公共服务设施"
       ],
-      "key_content": "面积指标已知、控规指标标注unknown",
-      "notes": ""
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/roads.geojson"
+      ],
+      "metric_refs": [
+        "floor_area_ratio"
+      ],
+      "source_ids": [
+        "SRC-AGENT-TASKBOOK",
+        "SRC-DESIGN-BRIEF",
+        "SRC-PROJECT-ANNOUNCEMENT"
+      ],
+      "assumption_ids": [
+        "A-CONTROLS-001"
+      ],
+      "self_check_ids": [
+        "PKG-001",
+        "GEO-001",
+        "MET-001"
+      ],
+      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
     },
     {
-      "depth_id": "compliance",
-      "title_zh": "合规矩阵",
+      "item_id": "renewal_project_list",
+      "title_zh": "更新项目清单",
+      "professional_dimension": "规划",
+      "required": true,
       "status": "complete",
-      "evidence_files": [
-        "compliance_matrix.json",
-        "standard_matrix.json"
+      "proposal_sections": [
+        "更新项目清单、实施政策与分期计划"
       ],
-      "key_content": "覆盖agent.1-agent.6和公告1.3-1.5全部要求",
-      "notes": ""
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/phasing.geojson"
+      ],
+      "metric_refs": [
+        "annual_events"
+      ],
+      "source_ids": [
+        "SRC-AGENT-TASKBOOK",
+        "SRC-DESIGN-BRIEF",
+        "SRC-PROJECT-ANNOUNCEMENT"
+      ],
+      "assumption_ids": [
+        "A-CONTROLS-001"
+      ],
+      "self_check_ids": [
+        "PKG-001",
+        "GEO-001",
+        "MET-001"
+      ],
+      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+    },
+    {
+      "item_id": "phasing_implementation",
+      "title_zh": "分期实施计划",
+      "professional_dimension": "规划",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": [
+        "更新项目清单、实施政策与分期计划"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/phasing.geojson"
+      ],
+      "metric_refs": [
+        "annual_events"
+      ],
+      "source_ids": [
+        "SRC-AGENT-TASKBOOK",
+        "SRC-DESIGN-BRIEF",
+        "SRC-PROJECT-ANNOUNCEMENT"
+      ],
+      "assumption_ids": [
+        "A-CONTROLS-001"
+      ],
+      "self_check_ids": [
+        "PKG-001",
+        "GEO-001",
+        "MET-001"
+      ],
+      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+    },
+    {
+      "item_id": "retain_renovate_demolish",
+      "title_zh": "拆改留方案",
+      "professional_dimension": "规划",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": [
+        "用地、建筑规模与拆改留方案"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/buildings.geojson",
+        "geometry/constraints.geojson"
+      ],
+      "metric_refs": [
+        "floor_area_ratio"
+      ],
+      "source_ids": [
+        "SRC-AGENT-TASKBOOK",
+        "SRC-DESIGN-BRIEF",
+        "SRC-PROJECT-ANNOUNCEMENT"
+      ],
+      "assumption_ids": [
+        "A-CONTROLS-001"
+      ],
+      "self_check_ids": [
+        "PKG-001",
+        "GEO-001",
+        "MET-001"
+      ],
+      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+    },
+    {
+      "item_id": "metrics_recalculation",
+      "title_zh": "指标体系与面积复算",
+      "professional_dimension": "规划",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": [
+        "指标体系、面积复算与合规矩阵"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson"
+      ],
+      "metric_refs": [
+        "coordinated_research_area",
+        "overall_design_area",
+        "key_detailed_design_area",
+        "zhongzhiyuan_area",
+        "origin_community_area",
+        "dazhongsi_area"
+      ],
+      "source_ids": [
+        "SRC-AGENT-TASKBOOK",
+        "SRC-DESIGN-BRIEF",
+        "SRC-PROJECT-ANNOUNCEMENT"
+      ],
+      "assumption_ids": [
+        "A-CONTROLS-001"
+      ],
+      "self_check_ids": [
+        "PKG-001",
+        "GEO-001",
+        "MET-001"
+      ],
+      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+    },
+    {
+      "item_id": "risk_missing_data",
+      "title_zh": "风险与数据缺口",
+      "professional_dimension": "综合",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": [
+        "风险、版权与合规说明"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/site_boundary.geojson"
+      ],
+      "metric_refs": [
+        "floor_area_ratio"
+      ],
+      "source_ids": [
+        "SRC-AGENT-TASKBOOK",
+        "SRC-DESIGN-BRIEF",
+        "SRC-PROJECT-ANNOUNCEMENT"
+      ],
+      "assumption_ids": [
+        "A-CONTROLS-001"
+      ],
+      "self_check_ids": [
+        "PKG-001",
+        "GEO-001",
+        "MET-001"
+      ],
+      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+    },
+    {
+      "item_id": "three_key_area_detailed_design",
+      "title_zh": "三处重点区详细设计",
+      "professional_dimension": "规划",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": [
+        "重点区域详细设计"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/key_areas.geojson",
+        "geometry/buildings.geojson",
+        "geometry/roads.geojson",
+        "geometry/public_space.geojson"
+      ],
+      "metric_refs": [
+        "zhongzhiyuan_area",
+        "origin_community_area",
+        "dazhongsi_area",
+        "scenario_cards",
+        "public_space_nodes"
+      ],
+      "source_ids": [
+        "SRC-AGENT-TASKBOOK",
+        "SRC-DESIGN-BRIEF",
+        "SRC-PROJECT-ANNOUNCEMENT"
+      ],
+      "assumption_ids": [
+        "A-CONTROLS-001"
+      ],
+      "self_check_ids": [
+        "PKG-001",
+        "GEO-001",
+        "MET-001"
+      ],
+      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
     }
   ]
 }

@@ -11,7 +11,7 @@ iteration: "v1.0"
 
 ## 设计依据与资料清单
 
-本方案基于以下公开和清权资料构建 [source:SRC-AGENT-TASKBOOK] [source:SRC-DESIGN-BRIEF] [source:SRC-PROJECT-ANNOUNCEMENT]：
+本方案基于以下公开和清权资料构建 [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [source:SRC-AGENT-TASKBOOK] [source:SRC-DESIGN-BRIEF] [source:SRC-PROJECT-ANNOUNCEMENT]：
 
 **官方公告与任务书：**
 - 百年京张AI创新带城市设计国际方案征集公告 [source:SRC-PROJECT-ANNOUNCEMENT]
@@ -32,7 +32,7 @@ iteration: "v1.0"
 - 全球开源城市案例 [source:SRC-GLOBAL-OPEN-SOURCE]（背景引用）
 
 **数据缺口说明：**
-本方案使用 provisional 粗略替代边界生成空间数据 [data:geometry/site_boundary.geojson#SITE-001]。所有边界均为 `geometry_role="provisional_constraint"`，`official_boundary=false`。待官方精确几何数据发布后，全部空间指标需重算。控规条件（容积率、建筑高度、建筑密度、绿地率、退线）在本版中标记为 unknown [metric:floor_area_ratio]。
+本方案使用 provisional 粗略替代边界生成空间数据 [standard:MNR-LAND-USE-CLASSIFICATION] [data:geometry/site_boundary.geojson#SITE-001]。所有边界均为 `geometry_role="provisional_constraint"`，`official_boundary=false`。待官方精确几何数据发布后，全部空间指标需重算。控规条件（容积率、建筑高度、建筑密度、绿地率、退线）在本版中标记为 unknown [metric:floor_area_ratio]。
 
 ![统筹研究范围与总体设计范围叠合图](assets/figures/site-overview.png)
 
@@ -325,7 +325,7 @@ iteration: "v1.0"
 
 ### 用户画像
 
-本方案提出 5 类核心用户画像 [source:SRC-AGENT-TASKBOOK]：
+本方案提出 5 类核心用户画像 [metric:user_personas] [source:SRC-AGENT-TASKBOOK]：
 
 | 画像 | 描述 | 核心需求 | 主要活动空间 |
 |---|---|---|---|
@@ -337,7 +337,7 @@ iteration: "v1.0"
 
 ### AI 场景卡
 
-本方案提出 12 张 AI 场景卡，其中 4 张为 AI 产业测试验证场景 [source:SRC-AGENT-TASKBOOK]：
+本方案提出 12 张 AI 场景卡 [metric:scenario_cards]，其中 4 张为 AI 产业测试验证场景 [source:SRC-AGENT-TASKBOOK]：
 
 **场景卡 01：AI 辅助开源代码审查** ⭐ 产业测试验证场景
 - 空间位置：Main 区开源协作空间
@@ -433,7 +433,7 @@ iteration: "v1.0"
 
 ### 用地布局逻辑
 
-用地布局遵循「编译链路」的空间逻辑 [data:geometry/land_use.geojson]：
+用地布局遵循「编译链路」的空间逻辑 [data:geometry/buildings.geojson] [data:geometry/land_use.geojson]：
 
 - **Fork 区**（LU-001）：以新型产业用地（M0）为主，承载自主创新和算力设施
 - **Fork-Main 过渡区**（LU-002）：科研教育用地（A2），衔接高校科研与开源社区
@@ -575,7 +575,7 @@ iteration: "v1.0"
 | agent.3 AI+场景 | 本章「AI创新生态、人才画像与AI+场景」 | 12场景卡、5用户画像、空间映射 |
 | agent.4 公共空间与地标 | 本章「蓝绿空间、公共空间与城市风貌」 | 3朝圣地标、公共空间组件 |
 | agent.5 文化叙事 | 本章「统筹研究范围产业与未来城市研究」 | 三次开源叙事、导视方向 |
-| agent.6 活动与运营 | 本章「更新项目清单、实施政策与分期计划」 | 年度活动体系、社区运营 |
+| agent.6 活动与运营 | 本章「更新项目清单、实施政策与分期计划」 | 年度活动体系、社区运营 [metric:annual_events] |
 
 ## 风险、版权与合规说明
 

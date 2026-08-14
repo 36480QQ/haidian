@@ -119,7 +119,7 @@
     },
     "green_space_area": {
       "status": "unknown",
-      "value": 2500000,
+      "value": null,
       "unit": "sqm",
       "source_files": [
         "geometry/green_space.geojson"
@@ -130,7 +130,8 @@
         "基于provisional geometry的粗略估算",
         "包含开源铁道主轴绿带和小月河蓝绿廊道"
       ],
-      "note": "概念性估算，待官方geometry确认后重算"
+      "note": "概念性估算，待官方geometry确认后重算",
+      "reason": "基于provisional geometry的粗略估算，待官方geometry确认后重算"
     },
     "public_space_nodes": {
       "status": "known",

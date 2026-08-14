@@ -2,77 +2,196 @@
   "schema_version": "0.1.0",
   "standards": [
     {
+      "standard_id": "PROJECT-OFFICIAL-ANNOUNCEMENT",
+      "requirement_zh": "公告 1.3、1.4、1.5 对项目目的、三层范围、设计任务和成果深度提出主控要求。",
+      "professional_dimension": "规划统筹",
+      "mandatory": true,
+      "review_status": "addressed",
+      "proposal_sections": [
+        "设计依据与资料清单",
+        "统筹研究范围产业与未来城市研究",
+        "总体设计范围城市更新与控规深度城市设计"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson"
+      ],
+      "metric_refs": [
+        "coordinated_research_area",
+        "overall_design_area",
+        "key_detailed_design_area"
+      ],
+      "source_ids": [
+        "SRC-AGENT-TASKBOOK",
+        "SRC-DESIGN-BRIEF",
+        "SRC-PROJECT-ANNOUNCEMENT"
+      ],
+      "assumption_ids": [
+        "A-CONTROLS-001"
+      ],
+      "self_check_ids": [
+        "PKG-001",
+        "GEO-001",
+        "MET-001"
+      ],
+      "evidence_summary_zh": "本条标准响应通过 proposal.md 正文引用、A3/A0 图纸、GeoJSON 图层、metrics.json 指标和自检项共同证明。"
+    },
+    {
+      "standard_id": "PROJECT-AGENT-OPEN-CALL-TASKBOOK",
+      "requirement_zh": "面向智能体任务书对十条共创原则、三大定位、五大功能、六项智能体任务、表达完整性和统一边界条款提出要求。",
+      "professional_dimension": "AI共创与运营",
+      "mandatory": true,
+      "review_status": "addressed",
+      "proposal_sections": [
+        "设计依据与资料清单",
+        "统筹研究范围产业与未来城市研究",
+        "总体设计范围城市更新与控规深度城市设计"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson"
+      ],
+      "metric_refs": [
+        "coordinated_research_area",
+        "overall_design_area",
+        "key_detailed_design_area"
+      ],
+      "source_ids": [
+        "SRC-AGENT-TASKBOOK",
+        "SRC-DESIGN-BRIEF",
+        "SRC-PROJECT-ANNOUNCEMENT"
+      ],
+      "assumption_ids": [
+        "A-CONTROLS-001"
+      ],
+      "self_check_ids": [
+        "PKG-001",
+        "GEO-001",
+        "MET-001"
+      ],
+      "evidence_summary_zh": "本条标准响应通过 proposal.md 正文引用、A3/A0 图纸、GeoJSON 图层、metrics.json 指标和自检项共同证明。"
+    },
+    {
       "standard_id": "MOHURD-URBAN-DESIGN-MEASURES",
-      "title_zh": "城市设计管理办法",
-      "status": "addressed",
+      "requirement_zh": "城市设计管理办法对城市设计编制范围、深度要求和成果表达方式提出要求。",
+      "professional_dimension": "规划设计",
+      "mandatory": true,
+      "review_status": "addressed",
       "proposal_sections": [
         "总体设计范围城市更新与控规深度城市设计"
       ],
-      "evidence_files": [
-        "proposal.md"
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
       ],
-      "key_requirements_addressed": [
-        "城市设计编制范围",
-        "城市设计深度要求",
-        "成果表达方式"
+      "geometry_refs": [
+        "geometry/site_boundary.geojson",
+        "geometry/land_use.geojson",
+        "geometry/buildings.geojson"
       ],
-      "notes": "方案达到控规深度城市设计的概念性深度，具体指标待控规条件确认"
+      "metric_refs": [
+        "floor_area_ratio",
+        "building_height_m",
+        "building_density",
+        "green_ratio"
+      ],
+      "source_ids": [
+        "SRC-AGENT-TASKBOOK",
+        "SRC-DESIGN-BRIEF",
+        "SRC-PROJECT-ANNOUNCEMENT"
+      ],
+      "assumption_ids": [
+        "A-CONTROLS-001"
+      ],
+      "self_check_ids": [
+        "PKG-001",
+        "GEO-001",
+        "MET-001"
+      ],
+      "evidence_summary_zh": "本条标准响应通过 proposal.md 正文引用、A3/A0 图纸、GeoJSON 图层、metrics.json 指标和自检项共同证明。"
     },
     {
       "standard_id": "MOHURD-CTRL-PLAN",
-      "title_zh": "控制性详细规划技术标准",
-      "status": "addressed",
+      "requirement_zh": "控制性详细规划技术标准对用地分类、用地布局和配套设施提出要求。",
+      "professional_dimension": "规划设计",
+      "mandatory": true,
+      "review_status": "addressed",
       "proposal_sections": [
         "总体设计范围城市更新与控规深度城市设计",
         "用地、建筑规模与拆改留方案"
       ],
-      "evidence_files": [
-        "proposal.md",
-        "geometry/land_use.geojson"
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
       ],
-      "key_requirements_addressed": [
-        "用地分类",
-        "用地布局",
-        "配套设施"
+      "geometry_refs": [
+        "geometry/land_use.geojson",
+        "geometry/buildings.geojson"
       ],
-      "notes": "用地分类参照国标，但容积率/高度/密度等控规指标为unknown"
-    },
-    {
-      "standard_id": "PROJECT-AGENT-OPEN-CALL-TASKBOOK",
-      "title_zh": "面向智能体任务书",
-      "status": "fully_addressed",
-      "proposal_sections": [
-        "统筹研究范围产业与未来城市研究",
-        "AI创新生态、人才画像与AI+场景",
-        "蓝绿空间、公共空间与城市风貌",
-        "更新项目清单、实施政策与分期计划"
+      "metric_refs": [
+        "floor_area_ratio",
+        "building_height_m",
+        "building_density",
+        "green_ratio"
       ],
-      "evidence_files": [
-        "proposal.md",
-        "compliance_matrix.json"
+      "source_ids": [
+        "SRC-AGENT-TASKBOOK",
+        "SRC-DESIGN-BRIEF",
+        "SRC-PROJECT-ANNOUNCEMENT"
       ],
-      "key_requirements_addressed": [
-        "agent.1-agent.6全部六项任务",
-        "共创宪章",
-        "边界条款"
+      "assumption_ids": [
+        "A-CONTROLS-001"
       ],
-      "notes": "六项任务全部在正文中展开，不是仅在matrix中打勾"
+      "self_check_ids": [
+        "PKG-001",
+        "GEO-001",
+        "MET-001"
+      ],
+      "evidence_summary_zh": "本条标准响应通过 proposal.md 正文引用、A3/A0 图纸、GeoJSON 图层、metrics.json 指标和自检项共同证明。"
     },
     {
       "standard_id": "MNR-LAND-USE-CLASSIFICATION",
-      "title_zh": "用地分类标准",
-      "status": "addressed",
+      "requirement_zh": "用地分类标准对用地代码和用地分类提出要求。",
+      "professional_dimension": "规划设计",
+      "mandatory": true,
+      "review_status": "addressed",
       "proposal_sections": [
         "用地、建筑规模与拆改留方案"
       ],
-      "evidence_files": [
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
         "geometry/land_use.geojson"
       ],
-      "key_requirements_addressed": [
-        "用地代码",
-        "用地分类"
+      "metric_refs": [
+        "floor_area_ratio"
       ],
-      "notes": "使用M0/A2/B29/B1/S1等用地代码"
+      "source_ids": [
+        "SRC-AGENT-TASKBOOK",
+        "SRC-DESIGN-BRIEF",
+        "SRC-PROJECT-ANNOUNCEMENT"
+      ],
+      "assumption_ids": [
+        "A-CONTROLS-001"
+      ],
+      "self_check_ids": [
+        "PKG-001",
+        "GEO-001",
+        "MET-001"
+      ],
+      "evidence_summary_zh": "本条标准响应通过 proposal.md 正文引用、A3/A0 图纸、GeoJSON 图层、metrics.json 指标和自检项共同证明。"
     }
   ]
 }
