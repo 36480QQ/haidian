@@ -35,7 +35,7 @@ AI generation does not establish factual authority, accessibility compliance, us
 
 # 逐资产权利台账 / Per-Asset Rights Ledger
 
-The ledger below restates, asset by asset, what the sections above declare in prose. It covers all 82 file entries registered in `manifest.json`. Every row is compiled from a record that already exists inside this package — no new rights fact, tool record, or licence claim is introduced here — and the last column of each table names the file the entry was compiled from, so any row can be checked word for word against its source. Tables are written in Chinese with bilingual headings; where a field is not registered anywhere in the package, the entry reads「包内未登记」rather than a guessed value, and all such gaps are listed in the final section.
+The ledger below restates, asset by asset, what the sections above declare in prose. It covers all 84 file entries registered in `manifest.json`. Every row is compiled from a record that already exists inside this package — no new rights fact, tool record, or licence claim is introduced here — and the last column of each table names the file the entry was compiled from, so any row can be checked word for word against its source. Tables are written in Chinese with bilingual headings; where a field is not registered anywhere in the package, the entry reads「包内未登记」rather than a guessed value, and all such gaps are listed in the final section.
 
 ## 一、编制口径 / Compilation rule
 
@@ -50,7 +50,7 @@ The ledger below restates, asset by asset, what the sections above declare in pr
 | --- | --- | --- | --- | --- |
 | A 方案正文与结构化文件 | 13 | 申报智能体原创生成 | Claude Fable 5 via Claude Code（含 Claude Opus 子代理）；v1.0 阶段为 GPT-5.6 Sol via Codex | 本文件 · `agent.json` |
 | B 报告与说明文件 | 4 | 原创撰写；两份 HTML 由仓库脚本渲染 | `scripts/render_proposal_html.py` | 本文件 |
-| C 图版 | 16 | 由本包 GeoJSON、指标、矩阵、风险、假设与自撰标签本地生成 | Python、SVG、`rsvg-convert`/Cairo | 本文件 |
+| C 图版 | 18 | 由本包 GeoJSON、指标、矩阵、风险、假设与自撰标签本地生成 | Python、SVG、`rsvg-convert`/Cairo | 本文件 |
 | D 图纸 PDF | 4 | 同上，并合并为册 | Python、SVG、`rsvg-convert`/Cairo、`pdfunite` | 本文件 |
 | E 几何 | 9 | 基于仓库临时边界与本方案概念几何 | 复算投影 EPSG:4548（`scripts/spatial_review.py`） | 本文件 · `sources.json` · `metrics.json` |
 | F 离线展示与随包代码 | 18 | 原创手写，自含离线 | 无第三方依赖；仅 Node 内置模块 | 本文件 · `proposal.md` |
@@ -82,7 +82,7 @@ The ledger below restates, asset by asset, what the sections above declare in pr
 
 ### C 图版 / Figure plates
 
-十六个文件：`assets/figures/` 下 `site-overview`、`land-use-structure`、`key-areas`、`mobility-bluegreen`、`mobility-bluegreen-audit`、`metrics-evidence`、`metrics-evidence-audit`、`brand-system` 各中英两版（`*.png` 与 `*.en.png`）。
+十八个文件：`assets/figures/` 下 `site-overview`、`land-use-structure`、`key-areas`、`mobility-bluegreen`、`mobility-bluegreen-audit`、`metrics-evidence`、`metrics-evidence-audit`、`brand-system`、`ecosystem-map` 各中英两版（`*.png` 与 `*.en.png`）。生态图谱由统筹研究章内容排版生成（手写 HTML 经 Chromium 渲染），不含第三方素材。
 
 | 项目 | 登记内容 |
 | --- | --- |
