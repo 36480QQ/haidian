@@ -3,7 +3,7 @@
   "ledger_id": "RIGHTS-01",
   "title": "Jing-Zhang V2 file-level rights status ledger",
   "as_of": "2026-08-14",
-  "scope": "All 140 files declared by this submission, including manifest.json, the complete source-rights and file-rights evidence chain, merged Round 7–18 contracts and figures, and the Round 19 quality-only rebuild of the cover, ordinary-life triptych, bilingual key-area plans/sections, judgement-first visual/proposals, and fixed-size jury publications; 139 entries are non-manifest content files. Final SHA-256 locking for currently changed files is intentionally deferred until concurrent independent review stabilizes their bytes.",
+  "scope": "All 141 files declared by this submission, including manifest.json, the complete source-rights and file-rights evidence chain, merged Round 7–18 contracts and figures, the Round 19 quality-only rebuild of the cover, ordinary-life triptych, bilingual key-area plans/sections, judgement-first visual/proposals, and fixed-size jury publications, plus the Round 20 bilingual review handoff package index; 140 entries are non-manifest content files. Final SHA-256 locking for currently changed files is intentionally deferred until concurrent independent review stabilizes their bytes.",
   "evidence_contract": {
     "source_rights_schema": "source-rights-evidence.schema.json",
     "source_rights_instance": "source-rights-evidence.json",
@@ -29,8 +29,8 @@
     "pending_round19_final_bytes": "Round 19 provenance structure is recorded, but the stored digest is deliberately retained as a prior snapshot until concurrent review stabilizes the exact file bytes; it is not a final identity claim."
   },
   "file_coverage": {
-    "expected_manifest_entries": 140,
-    "expected_non_manifest_entries": 139,
+    "expected_manifest_entries": 141,
+    "expected_non_manifest_entries": 140,
     "coverage_rule": "Every manifest path appears in exactly one compatibility asset_group and exactly one asset_record. Path coverage and resolvable declared parent links do not equal an exhaustive dependency graph or legal clearance.",
     "asset_groups": [
       {
@@ -40,6 +40,7 @@
         "origin_basis": "Authored or assembled for this submission from the declared repository task package and sources.json records.",
         "paths": [
           "manifest.json",
+          "visual/assets/review-handoff-index.json",
           "agent.json",
           "metrics.json",
           "assumptions.json",
@@ -237,7 +238,7 @@
         ]
       }
     ],
-    "expected_manifest_file_count": 140,
+    "expected_manifest_file_count": 141,
     "expected_non_manifest_content_file_count": 139
   },
   "asset_records": [
@@ -7793,6 +7794,56 @@
       ],
       "release_effect": "inherits_blocked_public_or_professional_reuse_gate",
       "legacy_role_detail": "render"
+    },
+    {
+      "asset_id": "ASSET-141",
+      "path": "visual/assets/review-handoff-index.json",
+      "role": "evidence_data",
+      "language": "neutral",
+      "asset_class": "package_authored_structured_index",
+      "origin_status": "package_authored_pending_independent_review",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "287898e9f6abe5d4c59d9a49a640ccea2513d1e8d48e23d58bbcebf74950633e",
+        "digest_status": "matches_final_manifest_after_refresh",
+        "reason": "SHA-256 is computed from the final Round 20 file bytes and is refreshed into manifest.json after this ledger is finalized."
+      },
+      "source_lineage": {
+        "source_ids": [],
+        "parent_asset_refs": [
+          "manifest.json",
+          "review-walkthrough.json",
+          "key-area-evidence-matrix.json"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-PYTHON"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "package_external_generator_derived_from_manifest",
+        "evidence_ref": "../../manifest.json#files",
+        "limitation": "The index derives its path inventory from manifest.json plus hand-verified round metadata; it adds no field fact, site precision, approval or rights clearance."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-04"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate",
+      "legacy_role_detail": "review_handoff_index"
     }
   ],
   "third_party_and_tool_boundaries": [
