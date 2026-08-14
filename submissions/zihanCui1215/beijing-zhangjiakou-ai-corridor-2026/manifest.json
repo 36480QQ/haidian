@@ -32,25 +32,24 @@
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "ed48015534657361a5a2e57a12ba6b907241041789ac3f6e384f03b6887ce738"
+      "sha256": "e38faf3f5542b83098d9313a5310abec5ef30759b33e0278e140ed95c918badb"
     },
     {
       "path": "design_depth_matrix.json",
       "role": "design_depth_matrix",
       "required": true,
-      "sha256": "ab54d531572153af3b95052f4826ddd533629d4f0442549c68b667ae0eac70bb"
+      "sha256": "fddce8e87a9b62239539d4babe2159576ae849d77fe744e40974ce2fe524391b"
     },
     {
       "path": "manifest.json",
       "role": "manifest",
-      "required": true,
-      "sha256": "d3359ecfc55f6181572dd6a7ae64ba6bc6aa85cba3bf09088b35e585beac5fac"
+      "required": true
     },
     {
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "c269e40cb94552119206e5b90079c350b9cb5797f19c00b5a2971b34e710e9cc"
+      "sha256": "626554bcd4287816cd2d23a3c01cef12c7a8dd3db2695218e9c39ea87bbbb876"
     },
     {
       "path": "proposal.en.md",
@@ -64,14 +63,14 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "ca6d2f4755cfd01201c46a201d2d681d03ffa23d7bf204b397390e0e5da4afd9",
+      "sha256": "d70eedc1f34765f010ab7b2a556cd801229e26acf479ecad2e64d81c9115203e",
       "language": "zh"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "739ad0df5f86593b0024a02581b8487236ef54815c0f78a2884ca4670b5d75a6"
+      "sha256": "50a2ddc71b2c0ec1e584afbfa6f0bf6cd5a6552a005ddcff4c005f4262c5daeb"
     },
     {
       "path": "sources.json",
@@ -83,7 +82,7 @@
       "path": "standard_matrix.json",
       "role": "standard_matrix",
       "required": true,
-      "sha256": "f662d209f359a350e951905f6db36d603e0146aefea1307d6f7874dcbbc2eb07"
+      "sha256": "ed55f425c57ee0c4d2c4271ae37634fbd931d82e9a57ae37f1aa17d707e06381"
     },
     {
       "path": "assets/figures/key-areas.png",

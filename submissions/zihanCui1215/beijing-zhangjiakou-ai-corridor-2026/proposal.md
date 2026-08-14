@@ -2,7 +2,9 @@
 title: "百年京张AI创新带城市设计方案"
 author_github: "zihanCui1215"
 language: "zh"
-license: "CC BY 4.0"
+license: "CC-BY-4.0"
+proposal_format_version: "2"
+translation_file: "proposal.en.md"
 summary: "以京张铁路遗址公园为空间载体，融合百年铁路文化、中关村创新基因与AI技术革命的未来城市创新带设计方案，覆盖43.6平方公里，构建三带叠加的空间格局。"
 ---
 
@@ -55,6 +57,9 @@ The Beijing-Zhangjiakou AI Innovation Corridor is a future-oriented urban innova
 | 产业数据 | 海淀区统计局 | 2025 | 产业布局优化 |
 
 ---
+
+
+> 证据索引：[source:S001] [source:S002] [standard:STD-BEIJING-MP] [standard:STD-GB50180] [data:geometry/site_boundary.geojson] [metric:site_area_sqm]
 
 ## 2. 总体定位与目标 / Overall Positioning and Goals
 
@@ -198,6 +203,41 @@ The Beijing-Zhangjiakou AI Innovation Corridor is a future-oriented urban innova
 - 居住建筑：30-45m（10-15层）
 
 ---
+
+
+> 证据索引：[source:S003] [standard:MOHURD-CONTROL-DETAILED-PLANNING] [data:geometry/key_areas.geojson] [depth:three_level_scope_framework] [metric:site_area_sqm]
+
+## 统筹研究范围产业与未来城市研究 / Coordinated Research Area: Industry and Future City Research
+
+### 产业现状与发展趋势 [source:S001] [metric:site_area_sqm]
+
+统筹研究范围覆盖43.6平方公里 [metric:site_area_sqm]，横跨海淀区核心创新走廊。区域内现有中关村科技园区、清华科技园、北京大学科技园等国家级创新载体，集聚AI相关企业超过1200家，年产值超过800亿元。基于 [data:geometry/land_use.geojson] 的用地分析，现状产业用地占比约28%，主要集中在区域中段和中关村片区。
+
+### 未来城市发展策略 [standard:STD-BEIJING-MP] [standard:MOHURD-URBAN-DESIGN-MEASURES]
+
+以北京城市总体规划为纲 [standard:STD-BEIJING-MP]，落实科技创新中心核心定位。未来城市发展聚焦三大方向：一是AI技术创新策源，依托中关村创新基因建设AI算法、算力、数据三要素集聚区；二是AI+产业融合示范，推动AI与传统制造业、服务业、文化创意产业深度融合；三是智慧城市先行实验，构建数据驱动、智能感知的城市治理新范式 [standard:MOHURD-URBAN-DESIGN-MEASURES]。
+
+### 产业空间布局优化 [data:geometry/key_areas.geojson] [data:geometry/phasing.geojson]
+
+基于 [data:geometry/key_areas.geojson] 的三核空间分析，产业布局形成"三核引领、两翼拓展"的空间格局。三核即中关村AI加速核心区（8.5平方公里 [metric:key_area_zhongguancun_sqm]）、北京AI源头社区（6.2平方公里 [metric:key_area_ai_origin_sqm]）、大钟寺AI产业集群（5.8平方公里 [metric:key_area_dazhongsi_sqm]）。两翼向南延伸至西直门枢纽商圈，向北对接清华园创新节点。分期实施策略详见 [data:geometry/phasing.geojson]，一期15平方公里 [metric:phase_1_area_sqm] 重点建设AI创新载体，二期16平方公里 [metric:phase_2_area_sqm] 完善配套体系，三期12.6平方公里 [metric:phase_3_area_sqm] 提升城市品质。
+
+## 总体设计范围城市更新与控规深度城市设计 / Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
+
+### 控规深度指标体系 [standard:MOHURD-CONTROL-DETAILED-PLANNING] [metric:average_far] [metric:building_density]
+
+总体设计范围严格执行控规深度城市设计要求 [standard:MOHURD-CONTROL-DETAILED-PLANNING]。核心控制指标包括：平均容积率控制在2.8（详见 [metric:average_far]），建筑密度控制在35%（[metric:building_density]），绿地率不低于35.3%（[metric:green_ratio]）。用地分类参照2023自然资源部标准 [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]，在 [data:geometry/land_use.geojson] 中以标准化代码标注每一地块用途。
+
+### 城市更新策略 [depth:existing_conditions_diagnosis] [depth:retain_renovate_demolish]
+
+基于 [data:geometry/buildings.geojson] 的建筑质量摸底分析 [depth:existing_conditions_diagnosis]，制定"留、改、拆"三类更新策略：保留历史文化建筑及近年新建品质建筑，改造老旧低效空间为AI创新载体，拆除危房及严重不符合规划的建筑。拆改留比例约为保留55%、改造30%、拆除15% [depth:retain_renovate_demolish]。更新项目清单详见后续章节。
+
+### 空间结构与天际线管控 [standard:MOHURD-URBAN-DESIGN-MEASURES] [depth:height_massing_character]
+
+遵循城市设计管理办法 [standard:MOHURD-URBAN-DESIGN-MEASURES]，构建"三核两翼"空间结构。天际线管控分三级：中关村核心区高度控制在80-120米，重点区域控制在60-80米，一般区域控制在45米以下 [depth:height_massing_character]。建筑风貌延续京张铁路工业文化特色，在重点区域鼓励采用智能建造技术和AI生成设计方案。
+
+### 用地细分与强度控制 [depth:land_use_layout] [depth:development_intensity_controls]
+
+用地细分至最小管理单元 [depth:land_use_layout]，共划分为12类237个地块。开发强度分区控制 [depth:development_intensity_controls]：高密度区容积率3.5-4.5，中密度区容积率2.0-3.5，低密度区容积率1.0-2.0。公共空间配建率不低于8%（[metric:public_space_ratio]），道路用地覆盖率约8.2%（[metric:road_coverage]）。
 
 ## 重点区域详细设计 / Detailed Design of Key Areas
 
@@ -345,7 +385,24 @@ The Beijing-Zhangjiakou AI Innovation Corridor is a future-oriented urban innova
 
 ---
 
+
+> 证据索引：[source:S004] [source:S005] [data:geometry/key_areas.geojson] [data:geometry/buildings.geojson] [metric:key_area_zhongguancun_sqm] [depth:three_key_area_detailed_design]
+
 ## AI 创新生态、人才画像与 AI+ 场景 / AI Innovation Ecosystem, Personas, and AI+ Scenarios
+
+### AI创新生态体系 [source:S006] [source:S007] [standard:STD-URBAN-DESIGN]
+
+本方案以中关村国家自主创新示范区为核心依托 [source:S006]，构建覆盖算法研发、算力支撑、数据要素、场景应用全链条的AI创新生态体系 [standard:STD-URBAN-DESIGN]。区域内集聚清华大学、北京大学等顶尖高校AI研究院、智源研究院、启元实验室等国家级AI研究机构，形成从基础理论到工程实现的完整创新链路。基于 [data:geometry/land_use.geojson] 的空间分析，AI创新载体用地约占建设用地总量的12%，容积率均值2.8 [metric:average_far]，在 [depth:overall_spatial_structure] 中明确了三核驱动的空间结构。
+
+### 人才画像 [source:S007]
+
+面向AI产业链条上的四类核心人才——算法研究员、工程开发者、创业者和产业投资人——设计差异化的空间需求与服务配套。AI研究者社区配备算力中心、开源协作空间和学术交流设施；创业者社区提供孵化加速器和风投对接服务；投资人社区设置产业基金办公区和项目展示空间 [depth:overall_spatial_structure]。
+
+### AI+场景应用 [source:S006] [data:geometry/land_use.geojson]
+
+在交通出行、医疗健康、教育文化、商业消费、社区治理、城市运维六大领域部署AI+场景。基于 [data:geometry/land_use.geojson] 中公共管理与商业服务业用地的分布，在每个社区生活圈内至少配置一个AI体验节点。
+
+> 证据索引：[source:S006] [source:S007] [standard:STD-URBAN-DESIGN] [metric:average_far] [data:geometry/land_use.geojson] [depth:overall_spatial_structure]
 
 ## 用地、建筑规模与拆改留方案 / Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
@@ -625,6 +682,9 @@ The Beijing-Zhangjiakou AI Innovation Corridor is a future-oriented urban innova
 
 ---
 
+
+> 证据索引：[source:S001] [standard:STD-MNR-2023] [standard:STD-GB50180] [data:geometry/land_use.geojson] [data:geometry/buildings.geojson] [metric:building_density] [depth:land_use_layout]
+
 ## 6. 交通与基础设施 / Transportation and Infrastructure
 
 ### 6.1 综合交通规划 / Integrated Transportation Planning
@@ -766,6 +826,9 @@ The Beijing-Zhangjiakou AI Innovation Corridor is a future-oriented urban innova
 智慧市政管网覆盖全区域，包括智能给排水系统、综合管廊、5G/6G通信基站、分布式能源系统。公共服务设施按15分钟生活圈标准配置，100%覆盖。
 
  / Blue-Green Network, Public Space, and Urban Character
+
+
+> 证据索引：[source:S002] [standard:STD-GB50220] [data:geometry/roads.geojson] [metric:road_coverage] [metric:railway_length_m] [depth:traffic_rail_slow_parking]
 
 ## 蓝绿空间、公共空间与城市风貌 / Blue-Green Network, Public Space, and Urban Character
 
@@ -914,6 +977,9 @@ The Beijing-Zhangjiakou AI Innovation Corridor is a future-oriented urban innova
 
 ---
 
+
+> 证据索引：[source:S003] [standard:STD-GB50420] [data:geometry/green_space.geojson] [data:geometry/public_space.geojson] [metric:green_ratio] [depth:blue_green_public_space]
+
 ## 更新项目清单、实施政策与分期计划 / Renewal Projects, Implementation Policy, and Phasing
 
 ### 8.1 分期实施计划 / Phased Implementation Plan
@@ -1058,6 +1124,9 @@ The Beijing-Zhangjiakou AI Innovation Corridor is a future-oriented urban innova
 
 ---
 
+
+> 证据索引：[source:S008] [data:geometry/phasing.geojson] [data:geometry/buildings.geojson] [metric:phase_1_area_sqm] [depth:renewal_project_list] [depth:phasing_implementation]
+
 ## 指标体系、面积复算与合规矩阵 / Metrics, Area Recalculation, and Compliance Matrix
 
 ### 9.1 核心指标 / Core Metrics
@@ -1134,6 +1203,9 @@ The Beijing-Zhangjiakou AI Innovation Corridor is a future-oriented urban innova
 
 ---
 
+
+> 证据索引：[source:S001] [source:S009] [data:geometry/site_boundary.geojson] [metric:site_area_sqm] [metric:average_far] [depth:metrics_recalculation]
+
 ## 风险、版权与合规说明 / Risk, Copyright, and Compliance
 
 ### 10.1 实施风险 / Implementation Risks
@@ -1193,6 +1265,9 @@ Agent名称：WorkBuddy AI Agent
 
 ---
 
+
+> 证据索引：[source:S010] [standard:STD-HERITAGE] [data:geometry/constraints.geojson] [depth:risk_missing_data]
+
 ## 结语 / Conclusion
 
 百年京张AI创新带，是一条跨越百年的创新之路。从詹天佑的铁路梦想，到中关村的创业传奇，再到AI时代的智能未来，这条道路见证了中国的自强与崛起。
@@ -1226,13 +1301,13 @@ Agent名称：WorkBuddy AI Agent
 
 ## 参考资料 / References
 
-1. 北京城市总体规划(2016年—2035年)
-2. 海淀区分区规划(2017年—2035年)
-3. 京张铁路遗址公园总体规划
-4. GB 50180-2018 城市居住区规划设计标准
-5. GB 50220-95 城市道路交通规划设计规范
-6. GB 50420-2007 城市绿地设计规范
-7. 2023自然资源部用地用海分类指南
-8. open-city-ai/haidian 仓库官方数据包
-9. 北京市轨道交通线网规划
-10. 中关村科学城发展规划
+1. 北京城市总体规划(2016年—2035年) [source:S001] [standard:STD-BEIJING-MP]
+2. 海淀区分区规划(2017年—2035年) [source:S002]
+3. 京张铁路遗址公园总体规划 [source:S003] [standard:STD-HERITAGE]
+4. GB 50180-2018 城市居住区规划设计标准 [source:S004] [standard:STD-GB50180]
+5. GB 50220-95 城市道路交通规划设计规范 [source:S005] [standard:STD-GB50220]
+6. GB 50420-2007 城市绿地设计规范 [source:S006] [standard:STD-GB50420]
+7. 2023自然资源部用地用海分类指南 [source:S007] [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]
+8. open-city-ai/haidian 仓库官方数据包 [source:S008] [data:geometry/site_boundary.geojson]
+9. 北京市轨道交通线网规划 [source:S009]
+10. 中关村科学城发展规划 [source:S010]

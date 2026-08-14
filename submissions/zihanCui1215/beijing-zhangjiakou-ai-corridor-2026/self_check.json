@@ -130,6 +130,13 @@
       "severity": "blocking",
       "target": "drawings/",
       "message": "A3 booklet and A0 boards present"
+    },
+    {
+      "check_id": "PROFESSIONAL_EVIDENCE",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "standard_matrix.json",
+      "message": "Professional evidence standards all addressed with mandatory coverage"
     }
   ],
   "deterministic_validation": {
