@@ -20,13 +20,17 @@ The proposal translates a durable railway practice—shift handover—into a civ
 
 ## Executive Brief
 
+
+**One test decides everything here: for any AI service on this belt, the same task must also be completable without AI. If it cannot, the service does not open.**
+
+This is not a supplementary clause; it is the whole scheme's criterion. It replaces "smart city" metrics that no ordinary person can check — device counts, automation rates — with a question anyone can answer for themselves: **without a smartphone, without reading Chinese, without sight of a screen, or simply not wanting to use AI, can I still get this done?** If no, the service should not open; if yes, a smart layer has earned the right to sit on top of it. The railway shift-handover became the most reliable institution on this line precisely because it never assumed the next shift would catch what was thrown — it assumed the opposite, and required someone to sign in person.
 | Review question | The Handover Line's answer | Verifiable output |
 | --- | --- | --- |
+| Public floor | Anyone can obtain equivalent basic service without using AI, and can trigger shutdown and appeal; each of the twelve scenarios names its human fallback channel and exit condition | Ten-component library, physical stop control at takeover kiosks, public duty logbook |
 | Core proposition | The railway shift-handover becomes a civic AI protocol: capability may move, accountability must be signed for | Dual-Control Shift Ledger 0.3 and twelve reversible scenario cards |
 | Spatial response | One handover line, three Handover Grounds, two support wings, eight stitch links, twenty renewal typology cells | Nine GeoJSON layers, eleven evidence figures, A3 booklet and A0 boards |
 | Compliance anchor | Within "stoppable, contestable, with a no-AI equivalent", statutory basis and self-set standards are listed row by row; self-set standards are not written as general statutory duties | Four-column compliance baseline table; [source:GENERATIVE-AI-INTERIM-MEASURES] [source:BARRIER-FREE-ENVIRONMENT-LAW] [source:ELDERLY-SMART-TECH-PLAN] |
 | Implementation start | Protocols, wayfinding and low-risk human-led pilots first; the three phases are merge gates, not a timetable | Six action packages, three conditional gates, [metric:phase_count] |
-| Public value | Anyone can obtain equivalent basic service without using AI, and can trigger shutdown and appeal | Ten-component library, physical stop control at takeover kiosks, public duty logbook |
 | Evidence status | Geometry and metrics recompute in EPSG:4548; district statistics calibrate questions only and never enter the metrics | [metric:site_area_sqm], [source:HAIDIAN-2025-STATISTICAL-BULLETIN] |
 | Decision boundary | All spatial, brand, event, timing and role arrangements are conceptual advice, not statutory planning or a government commitment | Risk section, exit conditions, assumptions.json |
 
