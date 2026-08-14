@@ -100,6 +100,18 @@
       "why_en": "FIG.29's whole argument is that these numbers are not hand-written but derived from geometry — and the prose announcing it hand-wrote all six. The gate has to catch any one of them drifting, or that sentence is just self-congratulation."
     },
     {
+      "id": "M16",
+      "gate": "computed_value_qa.py",
+      "target": "metrics.json",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把 metrics.json 里的主脊长度改掉，而正文不动——模拟一次几何变更之后句子没有跟上。",
+      "what_en": "Change the spine length in metrics.json and leave the prose alone, simulating a geometry change the sentences did not follow.",
+      "why_zh": "新增的历史比对不列举任何可疑值，它从 git 取上一版 metrics.json：凡是某个指标**曾经**持有、如今不再持有的数，若仍站在手写正文里，即为陈旧。这处变异让工作区与 HEAD 分叉，正文因此持有旧值——闸门必须认出来。",
+      "why_en": "The history comparison enumerates no suspicious values; it reads the previous `metrics.json` from git, and any value a metric **used to** hold that still stands in hand-written prose is stale by construction. This mutation makes the working tree diverge from HEAD so the prose holds the old value, and the gate has to notice."
+    },
+    {
       "id": "M15",
       "gate": "stale_corpus_qa.py",
       "target": "proposal.md",
@@ -186,7 +198,7 @@
       "why_en": "This package checks its own drawings with the legible-height ratio and reports a 4.73 mm minimum, all passing. **FIG.27 has just pointed that same ratio at the plate** — which makes whether the ratio itself has ever been shown to fail a question that has to be answered."
     }
   ],
-  "caught": 15,
+  "caught": 16,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
