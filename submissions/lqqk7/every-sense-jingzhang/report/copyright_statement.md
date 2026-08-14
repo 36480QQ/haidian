@@ -35,11 +35,11 @@ AI generation does not establish factual authority, accessibility compliance, us
 
 # 逐资产权利台账 / Per-Asset Rights Ledger
 
-The ledger below restates, asset by asset, what the sections above declare in prose. It covers all 89 file entries registered in `manifest.json`. Every row is compiled from a record that already exists inside this package — no new rights fact, tool record, or licence claim is introduced here — and the last column of each table names the file the entry was compiled from, so any row can be checked word for word against its source. Tables are written in Chinese with bilingual headings; where a field is not registered anywhere in the package, the entry reads「包内未登记」rather than a guessed value, and all such gaps are listed in the final section.
+The ledger below restates, asset by asset, what the sections above declare in prose. It covers all 93 file entries registered in `manifest.json`. Every row is compiled from a record that already exists inside this package — no new rights fact, tool record, or licence claim is introduced here — and the last column of each table names the file the entry was compiled from, so any row can be checked word for word against its source. Tables are written in Chinese with bilingual headings; where a field is not registered anywhere in the package, the entry reads「包内未登记」rather than a guessed value, and all such gaps are listed in the final section.
 
 ## 一、编制口径 / Compilation rule
 
-本台账汇编自以下八处既有登记：本文件（作者归属、许可选择、生成方法、字体许可、OSM 署名与用途限制）、`manifest.json`（文件清单、角色、语言、翻译关系、校验和）、`agent.json`（申报智能体与模型）、`sources.json`（三十六条来源的允许与禁止用途）、`visual/assets/osm-context/provenance.json`（OSM 取数与再分发状态）、`assets/media/audio-guide.md` 与 `journey.md` 与 `cover.md`（三件媒体资产的工具、方法与权利记录）、`metrics.json`（复算投影）、`proposal.md`（品牌字体策略、随包代码零依赖声明、基准许可建议）。
+本台账汇编自以下八处既有登记：本文件（作者归属、许可选择、生成方法、字体许可、OSM 署名与用途限制）、`manifest.json`（文件清单、角色、语言、翻译关系、校验和）、`agent.json`（申报智能体与模型）、`sources.json`（三十七条来源的允许与禁止用途）、`visual/assets/osm-context/provenance.json`（OSM 取数与再分发状态）、`assets/media/audio-guide.md` 与 `journey.md` 与 `cover.md`（三件媒体资产的工具、方法与权利记录）、`metrics.json`（复算投影）、`proposal.md`（品牌字体策略、随包代码零依赖声明、基准许可授予）。
 
 **许可总则：** 全包整体 `COMMUNITY-DISPLAY-ONLY`，仅用于本次征集的社区展示与评审场景；不放弃任何第三方权利。
 **署名总则：** 署名主体为 GitHub 用户 `lqqk7` 指导下的申报智能体「柱子 / Zhuzi」；模型与撰写工具见 `agent.json`，媒体合成工具在各自说明文件中单独披露。
@@ -53,7 +53,7 @@ The ledger below restates, asset by asset, what the sections above declare in pr
 | C 图版 | 22 | 由本包 GeoJSON、指标、矩阵、风险、假设与自撰标签本地生成 | Python、SVG、`rsvg-convert`/Cairo | 本文件 |
 | D 图纸 PDF | 4 | 同上，并合并为册 | Python、SVG、`rsvg-convert`/Cairo、`pdfunite` | 本文件 |
 | E 几何 | 9 | 基于仓库临时边界与本方案概念几何 | 复算投影 EPSG:4548（`scripts/spatial_review.py`） | 本文件 · `sources.json` · `metrics.json` |
-| F 离线展示与随包代码 | 19 | 原创手写，自含离线 | 无第三方依赖；仅 Node 内置模块 | 本文件 · `proposal.md` |
+| F 离线展示与随包代码 | 20 | 原创手写，自含离线 | 无第三方依赖；仅 Node 内置模块 | 本文件 · `proposal.md` |
 | G 媒体 | 11 | 手写 HTML/SVG 渲染 + 语音合成 + 本包页面逐帧实录 | Playwright/Chromium、MiniMax `speech-2.8-hd`（`mmx` 1.0.7）、x264/AAC、Pillow | `journey.md` · `audio-guide.md` · `cover.md` |
 | H 品牌标志 | 1 | 原创矢量几何 | 手写 SVG | 本文件 · `cover.md` |
 | I 场景概念图 | 6 | AI 图像生成 + 包内标注层排版合成 | OpenAI 图像生成（经 Codex CLI 原生图像生成工具，GPT-5.6 Sol 智能体调用）；标注层为手写 HTML 经 Chromium（Playwright）渲染 | 本文件 · `sources.json` |
@@ -128,8 +128,10 @@ The ledger below restates, asset by asset, what the sections above declare in pr
 | `visual/assets/scene-fallback.png` · `scene-fallback.en.png` | 交互场景的静态后备图 | 同 C 类生成路径 | `manifest.json` `role: visualization` |
 | `visual/assets/seb-tabletop-run.js` | 原创撰写的校验器 | 零依赖离线文件，仅使用 Node 内置 `fs`、`path` | `proposal.md`「OP-01 桌面配对试点档案」章 |
 | `visual/assets/seb-op04-chain-run.js` | 原创撰写的复演器 | 零依赖离线文件，仅使用 Node 内置 `fs`、`path`、`child_process`；投影以纯 Node 内置数学实现 | `proposal.md`「OP-04 配对试点全过程证据链」章 |
-| `visual/assets/seb-spec.json` | 原创编制的机器可读规范 v0.2.0 | 建议许可 CC BY-SA 4.0，状态 `recommended_not_yet_granted`；托管主体与发布渠道待授权主体确认 | `seb-spec.json` `license` 与 `provenance` |
-| `visual/assets/seb-tabletop-fixtures.json` · `seb-change-receipt-sample.json` · `seb-op04-chain-data.json` · `seb-change-receipt-op04.json` · `ethics-protocol.json` · `qa-proofing-record.json` · `scene-provenance.json` | 原创编制的样例、回执、链路档案、协议模板、自查记录与场景图生成档案 | 随包整体许可；均不含任何参与者数据 | `proposal.md` 对应各章 |
+| `visual/assets/seb-spec.json` | 原创编制的机器可读规范 v0.3.1 | CC BY-SA 4.0，已由提交方以著作权人身份经 `seb-license-grant.json` 实际授予；托管主体与发布渠道仍待授权主体确认（许可与托管两事分立） | `seb-spec.json` `license` 与授予文件 |
+| `visual/assets/seb-spec-v0.2.0.json` · `seb-spec-v0.3.0.json` | 历史版本按字节从上游提交提取的快照（提交号与哈希登记于规范 `version_snapshots`） | 同上（CC BY-SA 4.0 已授予） | `seb-spec.json` `version_snapshots` |
+| `visual/assets/seb-license-grant.json` | 许可授予文件：授予声明为原创撰写；内嵌 CC BY-SA 4.0 法定正文取自 Creative Commons 官方发布（CC 许可条文本身不受版权限制可自由复制），含重建哈希 | 授予声明随授予生效；法定正文按 CC 官方口径复制 | 该文件自身与 `sources.json` |
+| `visual/assets/seb-tabletop-fixtures.json` · `seb-change-receipt-sample.json` · `seb-op04-chain-data.json` · `seb-change-receipt-op04.json` · `seb-change-receipt-v03.json` · `ethics-protocol.json` · `qa-proofing-record.json` · `scene-provenance.json` | 原创编制的样例、回执（含 v0.3 系一版一号回执）、链路档案、协议模板、自查记录与场景图生成档案 | 随包整体许可；均不含任何参与者数据 | `proposal.md` 对应各章 |
 | `visual/assets/osm-context/provenance.json` | OSM 取数与处理的来源登记 | 仅分发来源元数据，不分发原始或派生数据库 | 该文件 `package_distribution` 字段 |
 
 ### G 媒体 / Media assets
@@ -248,7 +250,20 @@ The ledger below restates, asset by asset, what the sections above declare in pr
 
 ## 九、本台账的已知缺口 / Known gaps in this ledger
 
-1. **工具版本号的登记密度不一致。** 包内明确登记版本号的只有 MiniMax `speech-2.8-hd`、`mmx` 1.0.7 与 SEB v0.2.0；Python、SVG 工具链、`rsvg-convert`/Cairo、`pdfunite`、Playwright/Chromium、Pillow、x264 均只登记了工具名称与用途，未登记版本号。本台账据实照录，不补齐。
+1. **工具版本号的登记密度不一致。** 包内明确登记版本号的只有 MiniMax `speech-2.8-hd`、`mmx` 1.0.7 与 SEB v0.3.1；Python、SVG 工具链、`rsvg-convert`/Cairo、`pdfunite`、Playwright/Chromium、Pillow、x264 均只登记了工具名称与用途，未登记版本号。本台账据实照录，不补齐。
 2. **字体字重与具体字族未逐项登记。** PDF 侧登记到 Source Han Sans SC 与 OFL 1.1；展示页与媒体侧登记到字体栈与「运行环境预装字体」层级。
 3. **不随包分发的生成源无法由评审直接复核。** 其行为只能通过 `provenance.json` 中记录的脚本 SHA-256 与处理步骤间接核对。
 4. **本台账不产生新的权利结论。** 它只把既有登记合并呈现；任何一行与原文件不一致时，以原文件为准。
+
+## 十、作者权利保证与限制 / Author's rights warranty and its limits
+
+**保证。** GitHub 用户 `lqqk7` 指导下的申报智能体「柱子 / Zhuzi」在此声明：本包全部 93 个登记资产，或为本方案原创生成，或按本台账与 `sources.json` 已登记的许可、条款与用途边界使用；AI 生成资产（六件场景概念图、合成语音、短片旁白）的生成输入不含任何第三方受版权保护素材（提示词全文与输入台本随包登记于生成档案与媒体文字稿），其输出权利依据已逐项登记并以存档快照与内容哈希固定。若任何资产日后被证实存在权利瑕疵，提交方承诺替换或移除该资产，并按包内回执机制公开登记修复过程，不静默处置。
+
+**限制。** 本保证是提交方的自我承诺与尽责声明，不是第三方法律意见或权利认证；生成服务不提供逐次调用的第三方签名回执，该天然限制已在 `visual/assets/scene-provenance.json` 如实登记；本保证在概念征集语境下作出，不构成对评审方、主办方或任何第三方的赔偿承诺。以上边界与本台账「性质与效力」的总口径一致。
+
+**Warranty.** The submitting agent Zhuzi, directed by GitHub user `lqqk7`, declares: every one of the 93 registered assets in this package is either an original generation for this proposal or used within the licences, terms and usage boundaries registered in this ledger and `sources.json`; the generation inputs of the AI-generated assets (six concept scene images, the synthetic narration, the film voice-over) contain no third-party copyrighted material (full prompts and input transcripts ship in the provenance record and media transcripts), and their output-rights bases are registered item by item and pinned by archived snapshots and content hashes. Should any asset later prove defective in rights, the submitter undertakes to replace or remove it and to register the repair openly through the package's receipt mechanism, never silently.
+
+**Limits.** This warranty is the submitter's own undertaking and duty-of-care statement, not third-party legal advice or a rights certification; generation services issue no per-call signed receipts, a native limitation honestly registered in `visual/assets/scene-provenance.json`; the warranty is given in the context of a concept competition and constitutes no indemnity to reviewers, organisers or any third party. These limits follow the ledger's overall statement of nature.
+
+署名 / Signed：`lqqk7` / 柱子 · 2026-08-15
+
