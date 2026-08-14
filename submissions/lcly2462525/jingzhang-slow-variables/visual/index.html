@@ -1,0 +1,877 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>京张慢变量 THE SLOW VARIABLES · 一座城市怎样决定 AI 可以走多快</title>
+<meta name="description" content="京张慢变量：五类慢变量与四道放行门约束 AI 扩张的概念城市设计方案。临时约束、概念建议、待专业确认。">
+<style>
+:root{
+  --ink:#0D2137; --ink2:#123050; --ink3:#0A1A2C;
+  --paper:#EDE4D3; --paper-dim:#C7BCA6; --mute:#9FB4C8;
+  --brass:#C9A227; --brass-hi:#E6C153;
+  --cyan:#7FC4D6; --brick:#C0503C; --pine:#63A375; --ochre:#C08552; --violet:#9A89B8;
+  --sig-g:#46B978; --sig-a:#E0B53A; --sig-r:#D5483B;
+  --serif:'Songti SC','STSong',serif;
+  --sans:'PingFang SC','Hiragino Sans GB','Microsoft YaHei',system-ui,sans-serif;
+  --mono:'Menlo','Courier New',monospace;
+}
+*{box-sizing:border-box;min-width:0}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--ink);color:var(--paper);font-family:var(--sans);
+  font-size:16px;line-height:1.75;overflow-x:hidden;
+  background-image:
+    linear-gradient(rgba(127,196,214,.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(127,196,214,.05) 1px, transparent 1px),
+    linear-gradient(rgba(127,196,214,.028) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(127,196,214,.028) 1px, transparent 1px);
+  background-size:120px 120px,120px 120px,24px 24px,24px 24px;
+}
+::selection{background:var(--brass);color:var(--ink)}
+a{color:var(--cyan)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--brass-hi);outline-offset:3px;border-radius:2px}
+.skip{position:absolute;left:-9999px;top:0;background:var(--brass);color:var(--ink);padding:10px 18px;z-index:99;font-family:var(--mono);text-decoration:none}
+.skip:focus{left:12px;top:12px}
+.mono{font-family:var(--mono)}
+.serif{font-family:var(--serif)}
+.wrap{max-width:1240px;margin:0 auto;padding:0 clamp(18px,4vw,56px)}
+
+/* ---------- top bar ---------- */
+.topbar{
+  position:sticky;top:0;z-index:50;display:flex;align-items:center;gap:14px;
+  padding:10px clamp(14px,3vw,40px);
+  background:rgba(13,33,55,.92);backdrop-filter:blur(10px);
+  border-bottom:1px solid rgba(201,162,39,.35);
+}
+.topbar .mark{flex:none;display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--paper)}
+.chev{width:30px;height:18px;flex:none}
+.topbar .mark b{font-family:var(--serif);font-size:17px;letter-spacing:.06em;white-space:nowrap}
+.topbar .mark small{font-family:var(--mono);font-size:10px;color:var(--brass-hi);letter-spacing:.18em;display:block;line-height:1;white-space:nowrap}
+.topbar nav{flex:1;min-width:0;margin-left:auto;display:flex;justify-content:flex-start;gap:2px;overflow-x:auto;scrollbar-width:none}
+.topbar nav::-webkit-scrollbar{display:none}
+.topbar nav a{
+  flex:none;color:var(--mute);text-decoration:none;font-size:13px;white-space:nowrap;
+  padding:7px 11px;border:1px solid transparent;border-radius:3px;font-family:var(--mono);
+}
+.topbar nav a:hover{color:var(--brass-hi);border-color:rgba(201,162,39,.4)}
+.lang{
+  flex:none;font-family:var(--mono);font-size:12px;color:var(--ink);background:var(--brass);
+  text-decoration:none;padding:6px 12px;border-radius:3px;letter-spacing:.08em;font-weight:700;
+}
+
+/* ---------- crop marks ---------- */
+.frame{position:relative}
+.frame::before,.frame::after,
+.frame .cm::before,.frame .cm::after{
+  content:"";position:absolute;width:22px;height:22px;pointer-events:none;
+  border:0 solid var(--brass);opacity:.85;
+}
+.frame::before{top:14px;left:14px;border-top-width:1.5px;border-left-width:1.5px}
+.frame::after{top:14px;right:14px;border-top-width:1.5px;border-right-width:1.5px}
+.frame .cm::before{bottom:14px;left:14px;border-bottom-width:1.5px;border-left-width:1.5px}
+.frame .cm::after{bottom:14px;right:14px;border-bottom-width:1.5px;border-right-width:1.5px}
+
+/* ---------- hero ---------- */
+.hero{min-height:100svh;display:flex;flex-direction:column;border-bottom:1px solid rgba(201,162,39,.35)}
+.hero-grid{
+  flex:1;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);
+  gap:clamp(24px,4vw,64px);align-items:center;
+  padding:clamp(48px,7vh,90px) clamp(18px,4vw,56px) clamp(28px,4vh,48px);
+  max-width:1360px;margin:0 auto;width:100%;
+}
+.kicker{font-family:var(--mono);font-size:12px;letter-spacing:.3em;color:var(--brass-hi);margin:0 0 18px}
+.kicker .sep{color:var(--mute);letter-spacing:.1em}
+h1{
+  font-family:var(--serif);font-weight:900;
+  font-size:clamp(56px,8.4vw,124px);line-height:1.02;margin:0;letter-spacing:.02em;
+  color:var(--paper);
+}
+h1 .en{
+  display:block;font-family:var(--mono);font-weight:400;
+  font-size:clamp(15px,1.9vw,26px);letter-spacing:.42em;color:var(--brass-hi);margin-top:16px;
+}
+.tagline{
+  font-family:var(--serif);font-size:clamp(21px,2.6vw,34px);color:var(--cyan);
+  margin:26px 0 14px;letter-spacing:.04em;
+}
+.hero-lead{max-width:56ch;color:var(--paper-dim);margin:0 0 26px}
+.badge-row{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 8px}
+.badge{
+  font-family:var(--mono);font-size:12px;letter-spacing:.1em;
+  border:1px dashed var(--sig-a);color:var(--sig-a);padding:7px 13px;border-radius:3px;
+  background:rgba(224,181,58,.06);
+}
+.badge.solid{border-style:solid;border-color:var(--brass);color:var(--brass-hi)}
+.hero-cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:26px}
+.btn{
+  font-family:var(--mono);font-size:13px;letter-spacing:.12em;text-decoration:none;
+  padding:12px 22px;border-radius:3px;border:1px solid var(--brass);color:var(--brass-hi);
+}
+.btn:hover{background:rgba(201,162,39,.12)}
+.btn.primary{background:var(--brass);color:var(--ink);font-weight:700}
+.btn.primary:hover{background:var(--brass-hi)}
+
+/* instrument */
+.instrument{position:relative;max-width:600px;margin:0 auto;width:100%}
+.instrument svg{display:block;width:100%;height:auto}
+.ticklbl{font-family:var(--mono);font-size:15px;fill:var(--mute);letter-spacing:.05em}
+.svlbl{font-family:var(--mono);font-size:13px;font-weight:700}
+.fast{transform-origin:300px 300px;animation:spin 12s linear infinite}
+.slow{transform-origin:300px 300px;animation:sway 26s ease-in-out infinite alternate}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes sway{from{transform:rotate(20deg)}to{transform:rotate(38deg)}}
+.dial-caption{
+  display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
+  font-family:var(--mono);font-size:11.5px;color:var(--mute);
+  border-top:1px solid rgba(237,228,211,.16);padding-top:10px;margin-top:6px;letter-spacing:.06em;
+}
+.dial-caption b{color:var(--brass-hi);font-weight:400}
+
+/* 1909 strip */
+.strip1909{
+  border-top:1px solid rgba(201,162,39,.35);
+  background:linear-gradient(90deg, rgba(201,162,39,.10), rgba(13,33,55,0) 65%);
+}
+.strip1909 .wrap{
+  display:flex;gap:clamp(16px,3vw,40px);align-items:center;
+  padding-top:20px;padding-bottom:20px;flex-wrap:wrap;
+}
+.strip1909 .yr{font-family:var(--mono);font-size:clamp(30px,4vw,46px);color:var(--brass-hi);letter-spacing:.1em;line-height:1}
+.strip1909 p{margin:0;max-width:72ch;color:var(--paper-dim);font-size:15px}
+.strip1909 p b{color:var(--paper);font-family:var(--serif);letter-spacing:.05em}
+
+/* ---------- ruler ---------- */
+.ruler{margin:0 0 14px}
+.ruler .ticks{
+  height:14px;
+  background:
+    repeating-linear-gradient(90deg, rgba(237,228,211,.5) 0 1px, transparent 1px 12px),
+    repeating-linear-gradient(90deg, rgba(237,228,211,.85) 0 1.5px, transparent 1.5px 60px);
+  background-size:100% 6px,100% 14px;background-position:bottom left;background-repeat:repeat-x;
+  border-bottom:1px solid rgba(237,228,211,.4);
+}
+.ruler .labels{display:flex;justify-content:space-between;font-family:var(--mono);font-size:10.5px;color:var(--mute);letter-spacing:.14em;margin-top:5px}
+
+/* ---------- sections ---------- */
+.sec{padding:clamp(56px,9vh,110px) 0;border-bottom:1px solid rgba(237,228,211,.12)}
+.sec-head{display:flex;align-items:baseline;gap:18px;flex-wrap:wrap;margin-bottom:8px}
+.sec-no{font-family:var(--mono);font-size:13px;color:var(--brass-hi);letter-spacing:.3em}
+h2{
+  font-family:var(--serif);font-weight:900;font-size:clamp(30px,4.4vw,54px);
+  line-height:1.15;margin:0;letter-spacing:.03em;
+}
+h2 .en{display:block;font-family:var(--mono);font-weight:400;font-size:12px;letter-spacing:.32em;color:var(--mute);margin-top:10px}
+.sec-lead{max-width:76ch;color:var(--paper-dim);font-size:clamp(16px,1.5vw,19px);margin:14px 0 0}
+.sec-lead b, .sec-lead strong{color:var(--brass-hi);font-weight:600}
+
+/* cards */
+.grid{display:grid;gap:16px;margin-top:36px}
+.g5{grid-template-columns:repeat(5,1fr)}
+.g4{grid-template-columns:repeat(4,1fr)}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g2{grid-template-columns:repeat(2,1fr)}
+.card{
+  background:linear-gradient(180deg, rgba(18,48,80,.66), rgba(10,26,44,.66));
+  border:1px solid rgba(237,228,211,.14);border-top:3px solid var(--brass);
+  border-radius:4px;padding:22px 20px;position:relative;
+}
+.card .code{font-family:var(--mono);font-size:12px;letter-spacing:.2em;color:var(--mute)}
+.card h3{font-family:var(--serif);font-size:22px;margin:8px 0 6px;letter-spacing:.04em}
+.card .period{font-family:var(--mono);font-size:13px;color:var(--brass-hi);margin:0 0 10px;letter-spacing:.06em}
+.card p{margin:0;font-size:14px;color:var(--paper-dim)}
+.card .note{font-size:12px;color:var(--mute);margin-top:10px;border-top:1px dashed rgba(237,228,211,.2);padding-top:8px}
+.sv01{border-top-color:var(--pine)} .sv02{border-top-color:var(--cyan)} .sv03{border-top-color:var(--brass-hi)}
+.sv04{border-top-color:var(--brick)} .sv05{border-top-color:var(--violet)}
+.sv01 .code{color:var(--pine)} .sv02 .code{color:var(--cyan)} .sv03 .code{color:var(--brass-hi)}
+.sv04 .code{color:#E08A78} .sv05 .code{color:var(--violet)}
+
+/* two clocks */
+.clocks{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:36px}
+.clock{
+  border:1px solid rgba(237,228,211,.14);border-radius:4px;padding:26px 24px;
+  background:linear-gradient(180deg, rgba(18,48,80,.66), rgba(10,26,44,.66));
+}
+.clock.fastc{border-top:3px solid var(--cyan)}
+.clock.slowc{border-top:3px solid var(--brass)}
+.clock h3{font-family:var(--serif);font-size:24px;margin:0 0 4px}
+.clock .rate{font-family:var(--mono);font-size:12.5px;letter-spacing:.14em;margin:0 0 12px}
+.clock.fastc .rate{color:var(--cyan)} .clock.slowc .rate{color:var(--brass-hi)}
+.clock ul{margin:0;padding-left:1.2em;color:var(--paper-dim);font-size:14.5px}
+.clock li{margin:5px 0}
+.verdict{
+  margin-top:18px;border:1px solid var(--brass);border-radius:4px;padding:20px 24px;
+  background:rgba(201,162,39,.08);font-family:var(--serif);font-size:clamp(17px,1.8vw,22px);
+  letter-spacing:.03em;color:var(--paper);
+}
+.verdict b{color:var(--brass-hi)}
+
+/* gates */
+.gates{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:36px}
+.gate{
+  border:1px solid rgba(237,228,211,.14);border-radius:4px;padding:22px 20px;
+  background:linear-gradient(180deg, rgba(18,48,80,.66), rgba(10,26,44,.66));
+  display:flex;gap:16px;align-items:flex-start;
+}
+.signal{flex:none;display:flex;flex-direction:column;gap:6px;background:#081627;border:1px solid rgba(237,228,211,.2);border-radius:12px;padding:9px 8px}
+.signal i{width:16px;height:16px;border-radius:50%;background:#1E3A57;display:block}
+.signal i.on-g{background:var(--sig-g);box-shadow:0 0 10px var(--sig-g)}
+.signal i.on-a{background:var(--sig-a);box-shadow:0 0 10px var(--sig-a)}
+.signal i.on-r{background:var(--sig-r);box-shadow:0 0 10px var(--sig-r)}
+.gate h3{font-family:var(--serif);font-size:20px;margin:0 0 4px}
+.gate .gcode{font-family:var(--mono);font-size:12px;letter-spacing:.2em;color:var(--brass-hi)}
+.gate p{margin:6px 0 0;font-size:13.5px;color:var(--paper-dim)}
+.track{
+  margin-top:30px;border:1px solid rgba(237,228,211,.16);border-radius:4px;padding:22px 22px 16px;
+  background:rgba(10,26,44,.5);
+}
+.track-line{display:flex;align-items:flex-start;justify-content:space-between;position:relative;gap:6px}
+.track-line::before{content:"";position:absolute;left:3%;right:3%;top:9px;border-top:2px solid rgba(237,228,211,.35)}
+.stop{position:relative;text-align:center;flex:1;min-width:0}
+.stop i{display:block;width:14px;height:14px;margin:2px auto 10px;border-radius:50%;background:var(--ink);border:2.5px solid var(--brass-hi);position:relative;z-index:1}
+.stop.gate-stop i{border-color:var(--cyan);border-radius:2px}
+.stop b{display:block;font-size:13.5px;color:var(--paper);font-family:var(--serif);letter-spacing:.04em}
+.stop span{display:block;font-family:var(--mono);font-size:10px;color:var(--mute);letter-spacing:.08em;margin-top:2px}
+.track-fail{margin:14px 0 0;font-family:var(--mono);font-size:12px;color:var(--sig-r);letter-spacing:.1em;text-align:right}
+
+/* figure */
+.figure{margin-top:36px;border:1px solid rgba(201,162,39,.4);border-radius:4px;overflow:hidden;background:var(--ink3)}
+.figure img{display:block;width:100%;height:auto}
+.figure figcaption{
+  padding:12px 18px;font-size:13px;color:var(--mute);border-top:1px solid rgba(201,162,39,.3);
+  font-family:var(--mono);letter-spacing:.04em;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
+}
+.figure figcaption b{color:var(--brass-hi);font-weight:400}
+
+/* workshops */
+.yard{border-top:3px solid var(--cyan)}
+.yard.y2{border-top-color:var(--brass)} .yard.y3{border-top-color:var(--brick)}
+.yard .role{font-family:var(--serif);font-size:15px;color:var(--brass-hi);margin:0 0 8px;letter-spacing:.1em}
+.wings{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
+.wing{
+  border:1px dashed rgba(201,162,39,.55);border-radius:4px;padding:18px 20px;
+  background:rgba(201,162,39,.05);
+}
+.wing b{font-family:var(--serif);font-size:17px;color:var(--brass-hi);letter-spacing:.05em}
+.wing p{margin:6px 0 0;font-size:13.5px;color:var(--paper-dim)}
+.pilgrim{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:16px}
+.pil{
+  border:1px solid rgba(127,196,214,.35);border-radius:4px;padding:18px 20px;background:rgba(127,196,214,.05);
+}
+.pil .km{font-family:var(--mono);font-size:11px;color:var(--cyan);letter-spacing:.16em}
+.pil b{display:block;font-family:var(--serif);font-size:18px;margin:6px 0 4px;letter-spacing:.05em}
+.pil p{margin:0;font-size:13.5px;color:var(--paper-dim)}
+
+/* scenario cards */
+.group-title{
+  grid-column:1/-1;display:flex;align-items:center;gap:14px;margin-top:14px;
+  font-family:var(--serif);font-size:19px;letter-spacing:.08em;color:var(--brass-hi);
+}
+.group-title::after{content:"";flex:1;border-top:1px dashed rgba(201,162,39,.45)}
+.group-title .gn{font-family:var(--mono);font-size:11px;color:var(--mute);letter-spacing:.2em}
+.scen{
+  border:1px solid rgba(237,228,211,.14);border-left:3px solid var(--cyan);border-radius:4px;
+  padding:16px 16px 14px;background:linear-gradient(180deg, rgba(18,48,80,.55), rgba(10,26,44,.55));
+}
+.scen.test{border-left-color:var(--sig-a)}
+.scen .shead{display:flex;align-items:baseline;gap:9px}
+.scen .num{font-family:var(--mono);font-size:13px;color:var(--brass-hi)}
+.scen h3{font-family:var(--serif);font-size:16.5px;margin:0;letter-spacing:.03em}
+.scen .tag{
+  margin-left:auto;font-family:var(--mono);font-size:10px;color:var(--sig-a);
+  border:1px solid var(--sig-a);border-radius:2px;padding:2px 6px;letter-spacing:.1em;white-space:nowrap;
+}
+.scen p{margin:8px 0 0;font-size:13px;color:var(--paper-dim)}
+.scen .bound{
+  margin-top:10px;font-size:12px;color:#E0A79C;border-top:1px dashed rgba(192,80,60,.45);padding-top:8px;
+}
+.scen .bound::before{content:"⛔ "}
+.persona-chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.chip{
+  font-size:13.5px;color:var(--paper);border:1px solid rgba(127,196,214,.5);border-radius:99px;
+  padding:8px 16px;background:rgba(127,196,214,.07);letter-spacing:.03em;
+}
+.chip i{font-style:normal;font-family:var(--mono);font-size:11px;color:var(--cyan);margin-right:7px}
+
+/* metrics */
+.metrics-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:36px}
+.metric{
+  border:1px solid rgba(237,228,211,.16);border-radius:4px;padding:18px 18px 14px;
+  background:linear-gradient(180deg, rgba(18,48,80,.66), rgba(10,26,44,.66));
+}
+.metric .val{font-family:var(--mono);font-size:clamp(24px,2.6vw,34px);color:var(--brass-hi);letter-spacing:.02em;line-height:1.1}
+.metric .lbl{font-size:13.5px;color:var(--paper);margin-top:6px;font-family:var(--serif);letter-spacing:.05em}
+.metric .sub{font-family:var(--mono);font-size:10.5px;color:var(--mute);margin-top:4px;letter-spacing:.06em}
+.metric.empty{border-style:dashed;border-color:rgba(224,181,58,.6);background:rgba(224,181,58,.05)}
+.metric.empty .val{color:var(--sig-a);font-size:clamp(17px,1.8vw,22px)}
+.metric.empty .lbl{color:var(--sig-a)}
+.m-honest{margin-top:16px;font-size:13px;color:var(--mute);font-family:var(--mono);letter-spacing:.04em}
+
+/* seasons */
+.seasons{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:36px;border:1px solid rgba(237,228,211,.16);border-radius:4px;overflow:hidden}
+.season{padding:24px 20px;background:rgba(10,26,44,.55);border-right:1px solid rgba(237,228,211,.12)}
+.season:last-child{border-right:0}
+.season .s-icon{font-family:var(--serif);font-size:26px;letter-spacing:.1em}
+.season.sp .s-icon{color:var(--pine)} .season.su .s-icon{color:var(--sig-a)}
+.season.au .s-icon{color:var(--ochre)} .season.wi .s-icon{color:var(--cyan)}
+.season b{display:block;font-family:var(--serif);font-size:18px;margin:8px 0 6px;letter-spacing:.05em}
+.season p{margin:0;font-size:13.5px;color:var(--paper-dim)}
+.phases{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:16px}
+.phase{border:1px solid rgba(237,228,211,.14);border-radius:4px;padding:20px;background:linear-gradient(180deg, rgba(18,48,80,.55), rgba(10,26,44,.55))}
+.phase .yrs{font-family:var(--mono);font-size:15px;color:var(--brass-hi);letter-spacing:.12em}
+.phase b{display:block;font-family:var(--serif);font-size:17px;margin:6px 0;letter-spacing:.05em}
+.phase p{margin:0;font-size:13.5px;color:var(--paper-dim)}
+
+/* honesty */
+.honesty{background:rgba(10,26,44,.45)}
+.honest-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:36px}
+.hcard{border:1px solid rgba(224,181,58,.5);border-radius:4px;padding:22px;background:rgba(224,181,58,.05)}
+.hcard h3{font-family:var(--serif);font-size:19px;margin:0 0 10px;color:var(--brass-hi);letter-spacing:.05em}
+.hcard ul{margin:0;padding-left:1.2em;font-size:14px;color:var(--paper-dim)}
+.hcard li{margin:7px 0}
+.hcard li b{color:var(--paper)}
+
+/* footer */
+footer{padding:clamp(48px,7vh,80px) 0 40px}
+.foot-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:28px;margin-top:8px}
+.foot-col h3{font-family:var(--mono);font-size:12px;letter-spacing:.26em;color:var(--brass-hi);margin:0 0 14px}
+.task{display:flex;gap:10px;margin:0 0 10px;font-size:13px;color:var(--paper-dim)}
+.task .tn{font-family:var(--mono);color:var(--cyan);flex:none}
+.gate-pass{display:flex;align-items:center;gap:10px;font-family:var(--mono);font-size:12.5px;margin:0 0 9px;color:var(--paper-dim)}
+.gate-pass i{width:10px;height:10px;border-radius:50%;background:var(--sig-g);box-shadow:0 0 8px var(--sig-g);flex:none}
+.gate-pass b{color:var(--paper);font-weight:400}
+.foot-note{font-size:12.5px;color:var(--mute);margin:12px 0 0}
+.colophon{
+  margin-top:44px;padding-top:18px;border-top:1px solid rgba(201,162,39,.35);
+  display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
+  font-family:var(--mono);font-size:11.5px;color:var(--mute);letter-spacing:.12em;
+}
+.colophon b{color:var(--brass-hi);font-weight:400}
+
+/* responsive */
+@media(max-width:1080px){
+  .g5{grid-template-columns:repeat(3,1fr)}
+  .g4,.metrics-grid,.gates,.seasons{grid-template-columns:repeat(2,1fr)}
+  .g3,.pilgrim,.phases{grid-template-columns:repeat(2,1fr)}
+  .season{border-bottom:1px solid rgba(237,228,211,.12)}
+}
+@media(max-width:860px){
+  .hero-grid{grid-template-columns:1fr;padding-top:40px}
+  .instrument{max-width:460px}
+  .clocks,.wings,.honest-grid,.g2{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr}
+}
+@media(max-width:600px){
+  .g5,.g4,.g3,.metrics-grid,.gates,.seasons,.pilgrim,.phases{grid-template-columns:1fr}
+  .track-line{flex-direction:column;gap:14px;align-items:stretch}
+  .track-line::before{display:none}
+  .stop{text-align:left;display:flex;align-items:center;gap:12px}
+  .stop i{margin:0}
+  .track-fail{text-align:left}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">跳到正文</a>
+
+<header class="hero frame" id="top">
+  <span class="cm" aria-hidden="true"></span>
+  <div class="topbar">
+    <a class="mark" href="#top">
+      <svg class="chev" viewBox="0 0 30 18" aria-hidden="true"><path d="M2 14 L9 4 L16 14 M14 14 L21 4 L28 14" fill="none" stroke="#C9A227" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span><b>京张慢变量</b><small>THE SLOW VARIABLES</small></span>
+    </a>
+    <nav aria-label="页面导航">
+      <a href="#clocks">两只钟</a>
+      <a href="#gates">放行门</a>
+      <a href="#structure">空间结构</a>
+      <a href="#scenarios">场景与人群</a>
+      <a href="#metrics">指标</a>
+      <a href="#phasing">四季分期</a>
+      <a href="#honesty">诚实与边界</a>
+    </nav>
+    <a class="lang" href="index.en.html" lang="en" hreflang="en">EN</a>
+  </div>
+
+  <div class="hero-grid">
+    <div>
+      <p class="kicker">CENTENNIAL JING-ZHANG AI INNOVATION BELT <span class="sep">· 百年京张 AI 创新带 · 概念方案</span></p>
+      <h1>京张慢变量<span class="en">THE SLOW VARIABLES</span></h1>
+      <p class="tagline">一座城市怎样决定 AI 可以走多快</p>
+      <p class="hero-lead">城市里同时走着两只钟。一只很快：模型几个月换一代，试点从发布到扩点只隔一个季度。一只很慢：树荫、土壤、无障碍、业态与儿童独行，要用数年才显出变化。本方案用五类慢变量与四道放行门替慢钟说话——<b style="color:var(--brass-hi)">项目可以快试，扩张必须慢审。</b></p>
+      <div class="badge-row" role="note" aria-label="方案属性声明">
+        <span class="badge solid">临时约束 PROVISIONAL</span>
+        <span class="badge">概念建议 · 可撤回</span>
+        <span class="badge">待专业确认</span>
+        <span class="badge">非正式红线 · 非政府承诺</span>
+      </div>
+      <div class="hero-cta">
+        <a class="btn primary" href="#clocks">进入方案 ↓</a>
+        <a class="btn" href="#honesty">先读诚实与边界</a>
+      </div>
+    </div>
+
+    <div class="instrument">
+      <svg viewBox="0 0 600 600" role="img" aria-label="双速仪表：外圈 40 格季度刻度是快钟，五圈彩色弧环是五类慢变量，快针旋转，黄铜慢针缓移">
+        <circle cx="300" cy="300" r="258" fill="none" stroke="#C9A227" stroke-width="2" opacity="0.85"/>
+        <circle cx="300" cy="300" r="265" fill="none" stroke="#C9A227" stroke-width="0.8" opacity="0.4"/>
+        <g aria-hidden="true">
+        <line x1="300.0" y1="74.0" x2="300.0" y2="50.0" stroke="#EDE4D3" stroke-width="2.6" opacity="0.95"/>
+        <text x="300.0" y="88.0" class="ticklbl" text-anchor="middle" dominant-baseline="middle">Y0</text>
+        <line x1="336.9" y1="66.9" x2="339.1" y2="53.1" stroke="#EDE4D3" stroke-width="1.2" opacity="0.55"/>
+        <line x1="372.9" y1="75.6" x2="377.3" y2="62.2" stroke="#EDE4D3" stroke-width="1.2" opacity="0.55"/>
+        <line x1="407.1" y1="89.7" x2="413.5" y2="77.2" stroke="#EDE4D3" stroke-width="1.2" opacity="0.55"/>
+        <line x1="432.8" y1="117.2" x2="446.9" y2="97.7" stroke="#EDE4D3" stroke-width="2.6" opacity="0.95"/>
+        <text x="424.6" y="128.5" class="ticklbl" text-anchor="middle" dominant-baseline="middle">Y1</text>
+        <line x1="466.9" y1="133.1" x2="476.8" y2="123.2" stroke="#EDE4D3" stroke-width="1.2" opacity="0.55"/>
+        <line x1="490.9" y1="161.3" x2="502.3" y2="153.1" stroke="#EDE4D3" stroke-width="1.2" opacity="0.55"/>
+        <line x1="510.3" y1="192.9" x2="522.8" y2="186.5" stroke="#EDE4D3" stroke-width="1.2" opacity="0.55"/>
+        <line x1="514.9" y1="230.2" x2="537.8" y2="222.7" stroke="#EDE4D3" stroke-width="2.6" opacity="0.95"/>
+        <text x="501.6" y="234.5" class="ticklbl" text-anchor="middle" dominant-baseline="middle">Y2</text>
+        <line x1="533.1" y1="263.1" x2="546.9" y2="260.9" stroke="#EDE4D3" stroke-width="1.2" opacity="0.55"/>
+        <line x1="536.0" y1="300.0" x2="550.0" y2="300.0" stroke="#EDE4D3" stroke-width="1.2" opacity="0.55"/>
+        <line x1="533.1" y1="336.9" x2="546.9" y2="339.1" stroke="#EDE4D3" stroke-width="1.2" opacity="0.55"/>
+        <line x1="514.9" y1="369.8" x2="537.8" y2="377.3" stroke="#EDE4D3" stroke-width="2.6" opacity="0.95"/>
+        <text x="501.6" y="365.5" class="ticklbl" text-anchor="middle" dominant-baseline="middle">Y3</text>
+        <line x1="510.3" y1="407.1" x2="522.8" y2="413.5" stroke="#EDE4D3" stroke-width="1.2" opacity="0.55"/>
+        <line x1="490.9" y1="438.7" x2="502.3" y2="446.9" stroke="#EDE4D3" stroke-width="1.2" opacity="0.55"/>
+        <line x1="466.9" y1="466.9" x2="476.8" y2="476.8" stroke="#EDE4D3" stroke-width="1.2" opacity="0.55"/>
+        <line x1="432.8" y1="482.8" x2="446.9" y2="502.3" stroke="#EDE4D3" stroke-width="2.6" opacity="0.95"/>
+        <text x="424.6" y="471.5" class="ticklbl" text-anchor="middle" dominant-baseline="middle">Y4</text>
+        <line x1="407.1" y1="510.3" x2="413.5" y2="522.8" stroke="#EDE4D3" stroke-width="1.2" opacity="0.55"/>
+        <line x1="372.9" y1="524.4" x2="377.3" y2="537.8" stroke="#EDE4D3" stroke-width="1.2" opacity="0.55"/>
+        <line x1="336.9" y1="533.1" x2="339.1" y2="546.9" stroke="#EDE4D3" stroke-width="1.2" opacity="0.55"/>
+        <line x1="300.0" y1="526.0" x2="300.0" y2="550.0" stroke="#EDE4D3" stroke-width="2.6" opacity="0.95"/>
+        <text x="300.0" y="512.0" class="ticklbl" text-anchor="middle" dominant-baseline="middle">Y5</text>
+        <line x1="263.1" y1="533.1" x2="260.9" y2="546.9" stroke="#EDE4D3" stroke-width="1.2" opacity="0.55"/>
+        <line x1="227.1" y1="524.4" x2="222.7" y2="537.8" stroke="#EDE4D3" stroke-width="1.2" opacity="0.55"/>
+        <line x1="192.9" y1="510.3" x2="186.5" y2="522.8" stroke="#EDE4D3" stroke-width="1.2" opacity="0.55"/>
+        <line x1="167.2" y1="482.8" x2="153.1" y2="502.3" stroke="#EDE4D3" stroke-width="2.6" opacity="0.95"/>
+        <text x="175.4" y="471.5" class="ticklbl" text-anchor="middle" dominant-baseline="middle">Y6</text>
+        <line x1="133.1" y1="466.9" x2="123.2" y2="476.8" stroke="#EDE4D3" stroke-width="1.2" opacity="0.55"/>
+        <line x1="109.1" y1="438.7" x2="97.7" y2="446.9" stroke="#EDE4D3" stroke-width="1.2" opacity="0.55"/>
+        <line x1="89.7" y1="407.1" x2="77.2" y2="413.5" stroke="#EDE4D3" stroke-width="1.2" opacity="0.55"/>
+        <line x1="85.1" y1="369.8" x2="62.2" y2="377.3" stroke="#EDE4D3" stroke-width="2.6" opacity="0.95"/>
+        <text x="98.4" y="365.5" class="ticklbl" text-anchor="middle" dominant-baseline="middle">Y7</text>
+        <line x1="66.9" y1="336.9" x2="53.1" y2="339.1" stroke="#EDE4D3" stroke-width="1.2" opacity="0.55"/>
+        <line x1="64.0" y1="300.0" x2="50.0" y2="300.0" stroke="#EDE4D3" stroke-width="1.2" opacity="0.55"/>
+        <line x1="66.9" y1="263.1" x2="53.1" y2="260.9" stroke="#EDE4D3" stroke-width="1.2" opacity="0.55"/>
+        <line x1="85.1" y1="230.2" x2="62.2" y2="222.7" stroke="#EDE4D3" stroke-width="2.6" opacity="0.95"/>
+        <text x="98.4" y="234.5" class="ticklbl" text-anchor="middle" dominant-baseline="middle">Y8</text>
+        <line x1="89.7" y1="192.9" x2="77.2" y2="186.5" stroke="#EDE4D3" stroke-width="1.2" opacity="0.55"/>
+        <line x1="109.1" y1="161.3" x2="97.7" y2="153.1" stroke="#EDE4D3" stroke-width="1.2" opacity="0.55"/>
+        <line x1="133.1" y1="133.1" x2="123.2" y2="123.2" stroke="#EDE4D3" stroke-width="1.2" opacity="0.55"/>
+        <line x1="167.2" y1="117.2" x2="153.1" y2="97.7" stroke="#EDE4D3" stroke-width="2.6" opacity="0.95"/>
+        <text x="175.4" y="128.5" class="ticklbl" text-anchor="middle" dominant-baseline="middle">Y9</text>
+        <line x1="192.9" y1="89.7" x2="186.5" y2="77.2" stroke="#EDE4D3" stroke-width="1.2" opacity="0.55"/>
+        <line x1="227.1" y1="75.6" x2="222.7" y2="62.2" stroke="#EDE4D3" stroke-width="1.2" opacity="0.55"/>
+        <line x1="263.1" y1="66.9" x2="260.9" y2="53.1" stroke="#EDE4D3" stroke-width="1.2" opacity="0.55"/>
+        </g>
+        <g aria-hidden="true">
+        <circle cx="300" cy="300" r="205" fill="none" stroke="#63A375" stroke-width="1" opacity="0.22"/>
+        <path d="M 126.2 191.4 A 205 205 0 0 1 389.9 115.7" fill="none" stroke="#63A375" stroke-width="9" stroke-linecap="round"/>
+        <text x="118.2" y="195.4" class="svlbl" fill="#63A375" text-anchor="end" dominant-baseline="middle">SV-01</text>
+        <circle cx="300" cy="300" r="180" fill="none" stroke="#7FC4D6" stroke-width="1" opacity="0.22"/>
+        <path d="M 147.4 204.6 A 180 180 0 0 1 343.5 125.3" fill="none" stroke="#7FC4D6" stroke-width="9" stroke-linecap="round"/>
+        <text x="139.4" y="208.6" class="svlbl" fill="#7FC4D6" text-anchor="end" dominant-baseline="middle">SV-02</text>
+        <circle cx="300" cy="300" r="155" fill="none" stroke="#E6C153" stroke-width="1" opacity="0.22"/>
+        <path d="M 168.6 217.9 A 155 155 0 0 1 316.2 145.8" fill="none" stroke="#E6C153" stroke-width="9" stroke-linecap="round"/>
+        <text x="160.6" y="221.9" class="svlbl" fill="#E6C153" text-anchor="end" dominant-baseline="middle">SV-03</text>
+        <circle cx="300" cy="300" r="130" fill="none" stroke="#C0503C" stroke-width="1" opacity="0.22"/>
+        <path d="M 189.8 231.1 A 130 130 0 0 1 295.5 170.1" fill="none" stroke="#C0503C" stroke-width="9" stroke-linecap="round"/>
+        <text x="181.8" y="235.1" class="svlbl" fill="#C0503C" text-anchor="end" dominant-baseline="middle">SV-04</text>
+        <circle cx="300" cy="300" r="105" fill="none" stroke="#9A89B8" stroke-width="1" opacity="0.22"/>
+        <path d="M 211.0 244.4 A 105 105 0 0 1 278.2 197.3" fill="none" stroke="#9A89B8" stroke-width="9" stroke-linecap="round"/>
+        <text x="203.0" y="248.4" class="svlbl" fill="#9A89B8" text-anchor="end" dominant-baseline="middle">SV-05</text>
+        </g>
+        <g class="slow" aria-hidden="true">
+          <line x1="300" y1="300" x2="300" y2="112" stroke="#E6C153" stroke-width="5" stroke-linecap="round"/>
+          <circle cx="300" cy="112" r="6" fill="#E6C153"/>
+        </g>
+        <g class="fast" aria-hidden="true">
+          <line x1="300" y1="300" x2="300" y2="66" stroke="#7FC4D6" stroke-width="2" opacity="0.18" transform="rotate(-12 300 300)"/>
+          <line x1="300" y1="300" x2="300" y2="66" stroke="#7FC4D6" stroke-width="2" opacity="0.35" transform="rotate(-6 300 300)"/>
+          <line x1="300" y1="300" x2="300" y2="60" stroke="#7FC4D6" stroke-width="2.6" stroke-linecap="round"/>
+          <circle cx="300" cy="60" r="4.5" fill="#7FC4D6"/>
+        </g>
+        <circle cx="300" cy="300" r="36" fill="#0D2137" stroke="#C9A227" stroke-width="2"/>
+        <text x="300" y="296" text-anchor="middle" font-family="Menlo, monospace" font-size="14" fill="#E6C153" letter-spacing="1">1909</text>
+        <path d="M291 310 L300 301 L309 310" fill="none" stroke="#E6C153" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <div class="dial-caption" aria-hidden="true">
+        <span>快钟 FAST · <b>1 格 = 1 季度</b> · 外圈 40 格</span>
+        <span>慢钟 SLOW · <b>1 圈 ≈ 10 年</b> · 五弧 = SV-01~05</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="strip1909">
+    <div class="wrap">
+      <span class="yr">1909</span>
+      <svg width="46" height="26" viewBox="0 0 46 26" aria-hidden="true"><path d="M3 21 L16 5 L29 21 M22 21 L35 5 L43 21" fill="none" stroke="#C9A227" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <p><b>速度要向坡度低头。</b>1909 年京张铁路通车，詹天佑在关沟遇上爬不上去的坡，没有等一台更有力的机车，而是把线路折成"人"字，用折返换高度。一百多年后 AI 进入同一条走廊——快的是模型，慢的是城市，坡还在这里。</p>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- SEC.01 两只钟与五类慢变量 -->
+<section class="sec" id="clocks" aria-labelledby="clocks-h">
+  <div class="wrap">
+    <div class="ruler" aria-hidden="true"><div class="ticks"></div><div class="labels"><span>K0+000</span><span>K1+000</span><span>K2+000</span><span>K3+000</span><span>K4+000</span></div></div>
+    <div class="sec-head"><span class="sec-no">SEC.01</span>
+      <h2 id="clocks-h">两只钟，五类慢变量<span class="en">TWO CLOCKS · FIVE SLOW VARIABLES</span></h2>
+    </div>
+    <p class="sec-lead">快钟可以催着项目上线，谁来替慢钟说话？答案是五类慢变量 <b>SV-01 至 SV-05</b>：它们按年显现，目前是没有沿线基线的<b>测量框架</b>——先测一年，再谈阈值。</p>
+
+    <div class="clocks">
+      <div class="clock fastc">
+        <h3>快钟 · AI 的时间</h3>
+        <p class="rate">1 格 = 1 季度 · 模型几个月换一代</p>
+        <ul>
+          <li>应用几周更新一次，试点从发布到扩点有时只隔一个季度</li>
+          <li>快钟带来研发、测试与企业服务的真实活力</li>
+          <li>技术是否新颖，只决定它有没有资格<b style="color:var(--cyan)">小试</b></li>
+        </ul>
+      </div>
+      <div class="clock slowc">
+        <h3>慢钟 · 城市的时间</h3>
+        <p class="rate">1 圈 ≈ 10 年 · 公共价值数年才显现</p>
+        <ul>
+          <li>树从栽下到成荫要许多年，土壤渗透要经历一轮轮汛期</li>
+          <li>无障碍、业态存续与儿童独行，要在日常生活里慢慢看出来</li>
+          <li>长期公共价值，才决定一个项目能不能<b style="color:var(--brass-hi)">留下</b></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="grid g5">
+      <article class="card sv01">
+        <span class="code">SV-01</span>
+        <h3>树荫</h3>
+        <p class="period">显现周期 · 8–15 年</p>
+        <p>树冠模型对照夏季现场复测，判断连续遮荫是否真实形成。</p>
+        <p class="note">测量方法：树冠数字模型 + 季度复测 ｜ 基线：待一年测量</p>
+      </article>
+      <article class="card sv02">
+        <span class="code">SV-02</span>
+        <h3>土壤渗透</h3>
+        <p class="period">显现周期 · 3–5 个汛期</p>
+        <p>雨水落到土地以后能不能渗下去，要经历一轮轮汛期才知道。</p>
+        <p class="note">测量方法：传感器 + 人工剖面并行 ｜ 基线：待一年测量</p>
+      </article>
+      <article class="card sv03">
+        <span class="code">SV-03</span>
+        <h3>无障碍可达</h3>
+        <p class="period">显现周期 · 2–3 年</p>
+        <p>坡道、路口和人工窗口是否真正好用，要等不同的人反复经过。</p>
+        <p class="note">测量方法：轮椅、推车与步行者共测审计 ｜ 基线：待一年测量</p>
+      </article>
+      <article class="card sv04">
+        <span class="code">SV-04</span>
+        <h3>业态存续</h3>
+        <p class="period">显现周期 · 5–10 年</p>
+        <p>沿街小店能否留下，不被新租金和新流量替换，要多年才看得清。</p>
+        <p class="note">测量方法：商户自愿记录 ｜ 基线：待一年测量</p>
+      </article>
+      <article class="card sv05">
+        <span class="code">SV-05</span>
+        <h3>儿童独行</h3>
+        <p class="period">显现周期 · 1–3 年</p>
+        <p>儿童能否自己安全走完一段路，在分段放手的陪测里慢慢看。</p>
+        <p class="note">测量方法：分段放手陪测 ｜ 基线：待一年测量</p>
+      </article>
+    </div>
+
+    <p class="verdict">技术是否新颖只决定它有没有资格小试，<b>长期公共价值</b>才决定它能不能留下。</p>
+  </div>
+</section>
+
+<!-- SEC.02 四道放行门 -->
+<section class="sec" id="gates" aria-labelledby="gates-h">
+  <div class="wrap">
+    <div class="ruler" aria-hidden="true"><div class="ticks"></div><div class="labels"><span>K4+000</span><span>K5+000</span><span>K6+000</span><span>K7+000</span><span>K8+000</span></div></div>
+    <div class="sec-head"><span class="sec-no">SEC.02</span>
+      <h2 id="gates-h">四道放行门<span class="en">FOUR EXIT GATES · G1–G4</span></h2>
+    </div>
+    <p class="sec-lead">任何进入公共空间的 AI 场景，扩张前必须依次通过四道铁路信号门。<b>任一未通过，项目缩小、暂停或退出</b>——退出不是失败污点，它证明城市有能力及时停止无效试点。</p>
+
+    <div class="gates">
+      <article class="gate">
+        <span class="signal" aria-hidden="true"><i class="on-g"></i><i></i><i></i></span>
+        <div><span class="gcode">G1 · DATA SAFETY</span><h3>数据安全</h3>
+        <p>数据边界写清：默认排除人脸与可识别轨迹，原始数据权限、保存期限和删除方式在试点前公开。</p></div>
+      </article>
+      <article class="gate">
+        <span class="signal" aria-hidden="true"><i></i><i class="on-a"></i><i></i></span>
+        <div><span class="gcode">G2 · HUMAN REVIEW</span><h3>人工复核</h3>
+        <p>现场人工复核在位：数字与现场判断冲突时，不能拿较好看的那一份去申请扩点。</p></div>
+      </article>
+      <article class="gate">
+        <span class="signal" aria-hidden="true"><i></i><i class="on-a"></i><i></i></span>
+        <div><span class="gcode">G3 · PUBLIC DISSENT</span><h3>公众异议</h3>
+        <p>异议有地方停下来：记录谁反对、为什么反对、最后怎样修改；年度陪审可以否决扩张。</p></div>
+      </article>
+      <article class="gate">
+        <span class="signal" aria-hidden="true"><i></i><i></i><i class="on-r"></i></span>
+        <div><span class="gcode">G4 · NO DECLINE</span><h3>慢变量不恶化</h3>
+        <p>对照一年基线检查五类慢变量：任何一类恶化，扩张资格即告中止。</p></div>
+      </article>
+    </div>
+
+    <div class="track" role="img" aria-label="试点必经六站：基线、小试、陪审、扩点、年审、十年总账，四道信号门设于站间">
+      <div class="track-line">
+        <div class="stop"><i></i><div><b>基线</b><span>BASELINE · 01</span></div></div>
+        <div class="stop gate-stop"><i></i><div><b>G1</b><span>数据安全</span></div></div>
+        <div class="stop"><i></i><div><b>小试</b><span>PILOT · 02</span></div></div>
+        <div class="stop gate-stop"><i></i><div><b>G2</b><span>人工复核</span></div></div>
+        <div class="stop"><i></i><div><b>陪审</b><span>JURY · 03</span></div></div>
+        <div class="stop gate-stop"><i></i><div><b>G3</b><span>公众异议</span></div></div>
+        <div class="stop"><i></i><div><b>扩点</b><span>SCALE-UP · 04</span></div></div>
+        <div class="stop gate-stop"><i></i><div><b>G4</b><span>慢变量不恶化</span></div></div>
+        <div class="stop"><i></i><div><b>年审</b><span>ANNUAL · 05</span></div></div>
+        <div class="stop"><i></i><div><b>十年总账</b><span>DECADE · 06</span></div></div>
+      </div>
+      <p class="track-fail">任一门未通过 → 缩小 SCALE DOWN · 暂停 PAUSE · 退出 EXIT</p>
+    </div>
+  </div>
+</section>
+
+<!-- SEC.03 空间结构 -->
+<section class="sec" id="structure" aria-labelledby="structure-h">
+  <div class="wrap">
+    <div class="ruler" aria-hidden="true"><div class="ticks"></div><div class="labels"><span>K8+000</span><span>K9+000</span><span>K10+000</span><span>K11+000</span><span>K12+000</span></div></div>
+    <div class="sec-head"><span class="sec-no">SEC.03</span>
+      <h2 id="structure-h">一条时间主脊，三座工场<span class="en">ONE TIME SPINE · THREE CIVIC YARDS · TWO WINGS</span></h2>
+    </div>
+    <p class="sec-lead">三层范围做三件不同的事：<b>43.6 km²</b> 统筹研究范围统一口径，<b>11.4 km²</b> 总体设计范围织成连续空间网络，<b>368.4 公顷</b>重点范围承担现场决策。南北主脊负责长期观察，三条东西接口把校园、社区、轨道和公园缝回来；任何试点都不能跳过中间一站，直接从实验室走向全城。</p>
+
+    <figure class="figure">
+      <img src="../assets/figures/land-use-structure.png" alt="总体结构图：淡色虚线临时边界内，黄铜色南北时间主脊贯穿三座工场——01 众智园（测量）、02 AI 原点（协商）、03 大钟寺（兑现），三条青色东西接口缝合两侧，中关村科技服务翼与小月河场景翼提供反馈">
+      <figcaption><span><b>FIG.01</b> 总览地图与用地分区｜一条时间主脊、三座工场与两翼反馈</span><span>概念表达 · 临时约束 · 非正式红线</span></figcaption>
+    </figure>
+
+    <p class="group-title"><span class="gn">KEY AREAS</span>重点区域｜三座工场</p>
+    <div class="grid g3">
+      <article class="card yard">
+        <span class="code">YARD 01 · 北</span>
+        <h3>众智园 · 把数字测准</h3>
+        <p class="role">测量 MEASURE ｜ 传感器 + 人工复核</p>
+        <p>开放基线实验室、清河方向生态观察廊、人工复核厅与失败样本园。开放不等于公开个人数据——设备默认排除人脸与可识别轨迹。</p>
+      </article>
+      <article class="card yard y2">
+        <span class="code">YARD 02 · 中</span>
+        <h3>AI 原点 · 把话说清</h3>
+        <p class="role">协商 NEGOTIATE ｜ 公众异议 + 方案修订</p>
+        <p>慢变量阅览室、路线共绘桌、无障碍审计台与非数字反馈箱。不急着消除分歧——把路线画在同一张桌上，记录反对与修改。</p>
+      </article>
+      <article class="card yard y3">
+        <span class="code">YARD 03 · 南</span>
+        <h3>大钟寺 · 把承诺兑现</h3>
+        <p class="role">兑现 DELIVER ｜ 服务、小店与年度总账</p>
+        <p>慢变量总账墙、服务申诉台、年度陪审桌与小规模兑现市集。总账同时展示留下的项目和退出的项目。</p>
+      </article>
+    </div>
+
+    <div class="wings">
+      <div class="wing"><b>中关村科技服务翼</b><p>提供高校、标准、法务、资金与人才支持，把专业能力送回三座工场。</p></div>
+      <div class="wing"><b>小月河场景翼</b><p>提供经授权的真实问题，把日常需求送回三座工场。</p></div>
+    </div>
+
+    <figure class="figure">
+      <img src="../assets/figures/mobility-bluegreen.png" alt="交通慢行与蓝绿公共空间图：南北主脊两侧四种日常速度流线——步行与轮椅、儿童独行、自行车、配送与运维各有连续位置，三条弧形虚线东西缝合接口，松绿连续公园绿地承接雨水，失效时静态标识、无电路线与人工求助仍可用">
+      <figcaption><span><b>FIG.02</b> 交通慢行与蓝绿公共空间｜南北连续、东西缝合，失效时仍可走</span><span>概念表达 · 临时约束 · 非正式红线</span></figcaption>
+    </figure>
+
+    <div class="pilgrim">
+      <div class="pil"><span class="km">K0+000 · 北端</span><b>零号基线碑</b><p>公开测量方法和失败记录，荣誉只授予可复现方法。</p></div>
+      <div class="pil"><span class="km">K6+500 · 中段</span><b>异议站台</b><p>保存少数意见与修订版本，让分歧成为公共档案。</p></div>
+      <div class="pil"><span class="km">K13+000 · 南端</span><b>十年总账墙</b><p>展示长期公共收益与已退出项目，不按融资额与流量排名。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SEC.04 场景与人群 -->
+<section class="sec" id="scenarios" aria-labelledby="scenarios-h">
+  <div class="wrap">
+    <div class="ruler" aria-hidden="true"><div class="ticks"></div><div class="labels"><span>K12+000</span><span>K13+000</span><span>K14+000</span><span>K15+000</span><span>K16+000</span></div></div>
+    <div class="sec-head"><span class="sec-no">SEC.04</span>
+      <h2 id="scenarios-h">十二张场景卡，七类使用者<span class="en">12 SCENARIO CARDS · 7 USER GROUPS</span></h2>
+    </div>
+    <p class="sec-lead">前三张（01*–03*）是受控<b>产业测试</b>，其余九张进入日常服务。每张卡都写清城市里的具体动作与<b>不能越过的边界</b>——数据坚持自愿、最小化、去标识、人工复核与可退出。</p>
+
+    <div class="grid g3">
+      <p class="group-title"><span class="gn">GROUP</span>看土地 · 产业测试</p>
+      <article class="scen test"><div class="shead"><span class="num">01*</span><h3>树荫数字孪生</h3><span class="tag">产业测试</span></div>
+        <p>比较树冠模型与夏季现场复测。</p><p class="bound">不用模型估值冒充实测</p></article>
+      <article class="scen test"><div class="shead"><span class="num">02*</span><h3>雨后渗透诊断</h3><span class="tag">产业测试</span></div>
+        <p>传感器读数与人工剖面并行。</p><p class="bound">不替代排水工程鉴定</p></article>
+
+      <p class="group-title"><span class="gn">GROUP</span>看道路</p>
+      <article class="scen test"><div class="shead"><span class="num">03*</span><h3>无障碍路线共测</h3><span class="tag">产业测试</span></div>
+        <p>轮椅、推车和步行者共同走线。</p><p class="bound">自愿参与，保留纸质反馈</p></article>
+      <article class="scen"><div class="shead"><span class="num">04</span><h3>儿童独行陪测</h3></div>
+        <p>分段放手，路口由现场人员响应。</p><p class="bound">不做人脸识别和隐形跟踪</p></article>
+      <article class="scen"><div class="shead"><span class="num">08</span><h3>慢行断点巡检</h3></div>
+        <p>设备侧聚合，交通人员现场确认。</p><p class="bound">不用个人轨迹执法</p></article>
+
+      <p class="group-title"><span class="gn">GROUP</span>看街区</p>
+      <article class="scen"><div class="shead"><span class="num">05</span><h3>小商户存续助手</h3></div>
+        <p>商户自愿记录经营区间和服务需求。</p><p class="bound">不用于租金、征拆与信用评分</p></article>
+      <article class="scen"><div class="shead"><span class="num">09</span><h3>低扰动照明</h3></div>
+        <p>读取环境照度，投诉触发降级。</p><p class="bound">不识别身份，不侵扰居住界面</p></article>
+
+      <p class="group-title"><span class="gn">GROUP</span>看服务 · 看研发 · 看全年</p>
+      <article class="scen"><div class="shead"><span class="num">06</span><h3>人工窗口排队助手</h3></div>
+        <p>匿名队列提示，工作人员随时接管。</p><p class="bound">始终保留线下办理</p></article>
+      <article class="scen"><div class="shead"><span class="num">07</span><h3>开源模型红队花园</h3></div>
+        <p>用合成或清权数据公开复盘漏洞。</p><p class="bound">漏洞按等级披露</p></article>
+      <article class="scen"><div class="shead"><span class="num">10</span><h3>京张遗产语音导览</h3></div>
+        <p>本地内容包与人工史料审校。</p><p class="bound">无定位也能使用</p></article>
+      <article class="scen"><div class="shead"><span class="num">11</span><h3>公共合同解释器</h3></div>
+        <p>解释公开条款并标出责任人。</p><p class="bound">不提供个案法律结论</p></article>
+      <article class="scen"><div class="shead"><span class="num">12</span><h3>年度慢变量陪审</h3></div>
+        <p>发布聚合证据，异议进入扩点决定。</p><p class="bound">陪审可否决扩张</p></article>
+    </div>
+
+    <div class="persona-chips" aria-label="七类使用者">
+      <span class="chip"><i>U1</i>周边居民 · 安静、遮荫与低门槛通行</span>
+      <span class="chip"><i>U2</i>儿童与照护者 · 能否逐步放手</span>
+      <span class="chip"><i>U3</i>老年人与低数字素养者 · 需要真人</span>
+      <span class="chip"><i>U4</i>一线运维、骑手与清洁人员 · 最清楚系统在哪里卡住</span>
+      <span class="chip"><i>U5</i>小商户 · 能否继续经营</span>
+      <span class="chip"><i>U6</i>开发者与初创团队 · 合规测试</span>
+      <span class="chip"><i>U7</i>专业审查与运营人员 · 可比较证据</span>
+    </div>
+  </div>
+</section>
+
+<!-- SEC.05 指标仪表盘 -->
+<section class="sec" id="metrics" aria-labelledby="metrics-h">
+  <div class="wrap">
+    <div class="ruler" aria-hidden="true"><div class="ticks"></div><div class="labels"><span>K16+000</span><span>K17+000</span><span>K18+000</span><span>K19+000</span><span>K20+000</span></div></div>
+    <div class="sec-head"><span class="sec-no">SEC.05</span>
+      <h2 id="metrics-h">核心指标｜指标仪表盘：能复算的与诚实留白的<span class="en">METRICS · RE-COMPUTABLE &amp; HONESTLY BLANK</span></h2>
+    </div>
+    <p class="sec-lead">以下数字全部可由 <b>geometry/*.geojson</b> 与 <b>metrics.json</b> 复算，均为提交几何内部的<b>概念设计量</b>——不是现状调查，也不是法定指标。两个空位保持待补，不填估值。</p>
+
+    <div class="metrics-grid">
+      <div class="metric" data-metric="site_area_sqm" data-value="11412825.386"><div class="val">11.41 km²</div><div class="lbl">临时总体范围</div><div class="sub">SITE EXTENT · PROVISIONAL</div></div>
+      <div class="metric" data-metric="building_footprint_area_sqm" data-value="310807.184"><div class="val">31.08 万㎡</div><div class="lbl">概念建筑基底</div><div class="sub">CONCEPT FOOTPRINT</div></div>
+      <div class="metric" data-metric="green_ratio" data-value="0.123423"><div class="val">12.34%</div><div class="lbl">概念绿地</div><div class="sub">CONCEPT GREEN RATIO</div></div>
+      <div class="metric" data-metric="public_space_ratio" data-value="0.073944"><div class="val">7.39%</div><div class="lbl">概念公共空间</div><div class="sub">CONCEPT PUBLIC SPACE</div></div>
+      <div class="metric" data-metric="scenario_card_count" data-value="12"><div class="val">12</div><div class="lbl">场景卡</div><div class="sub">SCENARIO CARDS</div></div>
+      <div class="metric" data-metric="industry_test_count" data-value="3"><div class="val">3</div><div class="lbl">产业测试</div><div class="sub">INDUSTRY TESTS</div></div>
+      <div class="metric" data-metric="key_area_count" data-value="3"><div class="val">3</div><div class="lbl">重点区</div><div class="sub">KEY AREAS</div></div>
+      <div class="metric" data-metric="exit_gate_count" data-value="4"><div class="val">4</div><div class="lbl">放行门</div><div class="sub">EXIT GATES</div></div>
+      <div class="metric empty" data-metric="floor_area_ratio" data-value="null"><div class="val">待正式数据</div><div class="lbl">容积率 FAR · 空位</div><div class="sub">正式边界与控规未到位，不填估值</div></div>
+      <div class="metric empty" data-metric="slow_variable_baseline" data-value="null"><div class="val">待一年基线</div><div class="lbl">慢变量基线 · 空位</div><div class="sub">无清权沿线实测，先测一年再定阈值</div></div>
+    </div>
+    <p class="m-honest">// 留白是质量控制，不是遗漏。目标由专业团队、使用者与运营者共同设定，不由 AI 单独生成。</p>
+
+    <figure class="figure">
+      <img src="../assets/figures/metrics-evidence.png" alt="指标与决定图：上半张为试点六站与 G1–G4 四道信号门，下半张年度总账中五类慢变量均标注待一年基线，底部列出八个可复算的设计量">
+      <figcaption><span><b>FIG.02</b> 指标与决定｜从一年基线到十年公共总账</span><span>概念表达 · 临时约束 · 非正式红线</span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- SEC.06 四季分期 -->
+<section class="sec" id="phasing" aria-labelledby="phasing-h">
+  <div class="wrap">
+    <div class="ruler" aria-hidden="true"><div class="ticks"></div><div class="labels"><span>K20+000</span><span>K21+000</span><span>K22+000</span><span>K23+000</span><span>K24+000</span></div></div>
+    <div class="sec-head"><span class="sec-no">SEC.06</span>
+      <h2 id="phasing-h">更新项目与分期｜把分期写成四季<span class="en">PHASING AS FOUR SEASONS</span></h2>
+    </div>
+    <p class="sec-lead">不是一串遥远年份，而是四个每年重复的动作。分期几何表达一期讨论范围，<b>不代表投资、开工或政府安排</b>。</p>
+
+    <div class="seasons">
+      <div class="season sp"><span class="s-icon">春</span><b>看土地</b><p>众智园启动树冠、土壤和雨后恢复基线。</p></div>
+      <div class="season su"><span class="s-icon">夏</span><b>去走路</b><p>三处接口接受热舒适、无障碍和儿童路线共测。</p></div>
+      <div class="season au"><span class="s-icon">秋</span><b>看街区</b><p>大钟寺记录商户、人工服务和公共空间使用。</p></div>
+      <div class="season wi"><span class="s-icon">冬</span><b>开总账</b><p>留下、修改和退出的项目一起接受年度陪审。</p></div>
+    </div>
+
+    <div class="phases">
+      <div class="phase"><span class="yrs">0–1 年</span><b>只测不扩</b><p>只做基线、现场审计和三项可逆小试。</p></div>
+      <div class="phase"><span class="yrs">2–3 年</span><b>过门才扩</b><p>只扩展通过四道门的场景，并修补三处横向接口。</p></div>
+      <div class="phase"><span class="yrs">4–10 年</span><b>总账决定</b><p>依据年度总账决定固化、迁移或撤除。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SEC.07 诚实与边界 -->
+<section class="sec honesty" id="honesty" aria-labelledby="honesty-h">
+  <div class="wrap">
+    <div class="ruler" aria-hidden="true"><div class="ticks"></div><div class="labels"><span>K24+000</span><span>K25+000</span><span>K26+000</span><span>K27+000</span><span>K28+000</span></div></div>
+    <div class="sec-head"><span class="sec-no">SEC.07</span>
+      <h2 id="honesty-h">诚实与边界<span class="en">HONESTY &amp; BOUNDARIES</span></h2>
+    </div>
+    <p class="sec-lead">本方案最容易被误读的有三处：<b>临时范围可能被看成正式红线，未来目标可能被看成现状数据，概念运营可能被看成政府承诺</b>。因此所有对外版本保留"临时约束、概念建议、待专业确认"。</p>
+
+    <div class="honest-grid">
+      <div class="hcard">
+        <h3>主动留白清单 · 愿意接受检查</h3>
+        <ul>
+          <li><b>约束图层保持空集</b>：公开材料没有提供可核验的法定红线、文保和市政约束。</li>
+          <li><b>容积率与建筑规模待补</b>：正式边界与控规没有到位，不填估值。</li>
+          <li><b>五类慢变量基线待补</b>：没有清权的沿线实测，先测一年。</li>
+          <li>这些空白是<b>质量控制，不是遗漏</b>，也不能被任何图件、插画或文字叙述补出来。</li>
+        </ul>
+      </div>
+      <div class="hcard">
+        <h3>不可越过的边界</h3>
+        <ul>
+          <li>空间范围来自公告文字与面积校核形成的<b>临时粗略几何</b>，不能支撑征拆、权属、工程定位或法定面积结论。</li>
+          <li>场景图为概念插画，<b>不是现场影像、公众意见或建成承诺</b>；方案未虚构现场踏勘数据与居民访谈。</li>
+          <li>涉及儿童、无障碍、商户和公共服务的数据坚持<b>自愿、最小化、去标识、人工复核和退出</b>。</li>
+          <li>AI 不替代规划审批、法律意见、工程鉴定和公共决策；<b>人类最终判断</b>。</li>
+          <li>运营活动、分期与场景均为概念方向；主办、预算、招商与政策<b>需后续授权</b>，本方案不作政府承诺。</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="ruler" aria-hidden="true"><div class="ticks"></div><div class="labels"><span>K28+000</span><span>K29+000</span><span>K30+000</span><span>K31+000</span><span>END</span></div></div>
+    <div class="foot-grid">
+      <div class="foot-col">
+        <h3>任务覆盖 · SIX AGENT TASKS</h3>
+        <p class="task"><span class="tn">T1</span>总体概念与功能统筹：两只钟概念、命名与视觉识别，三区两翼协同回路。</p>
+        <p class="task"><span class="tn">T2</span>全栈体系与创新生态：七个全球案例方法参照，测量—研发—场景—服务—治理链接。</p>
+        <p class="task"><span class="tn">T3</span>AI+场景与活力城市：12 张场景卡、3 项产业测试、7 类使用者画像。</p>
+        <p class="task"><span class="tn">T4</span>公共空间与朝圣地标：南北主脊与东西缝合，三处朝圣节点与荣誉体系。</p>
+        <p class="task"><span class="tn">T5</span>文化融合叙事：1909 人字形转译为品牌母题与不依赖屏幕的公共识别系统。</p>
+        <p class="task"><span class="tn">T6</span>活动体系与长期运营：开放周、开发者修复营、市民陪审团——均为待授权的概念建议。</p>
+      </div>
+      <div class="foot-col">
+        <h3>自检状态 · SELF-CHECK</h3>
+        <p class="gate-pass"><i></i><b>DETERMINISTIC_VALIDATION</b> PASS</p>
+        <p class="gate-pass"><i></i><b>SPATIAL_REVIEW</b> PASS</p>
+        <p class="gate-pass"><i></i><b>VISUAL_PACKAGING</b> PASS</p>
+        <p class="gate-pass"><i></i><b>PROFESSIONAL_EVIDENCE</b> PASS</p>
+        <p class="foot-note">阶段 formal · 状态 formal-review-ready。附注：3 条 minor 提示——三处重点区为临时几何，不作正式红线（KEY_AREA_PROVISIONAL）。以 self_check.json 为准。</p>
+      </div>
+      <div class="foot-col">
+        <h3>来源 · 假设 · 版权</h3>
+        <p class="foot-note">基础事实仅来自 sources.json 所列公开或清权材料（公告、任务书摘录、住建部与自然资源部文件、无障碍环境建设法）；假设见 assumptions.json；指标可用 geometry/*.geojson 与 metrics.json 复算。</p>
+        <p class="foot-note">正文、双语翻译、图件、离线 HTML 与图纸由 Codex GPT-5.1 生成，以 COMMUNITY-DISPLAY-ONLY 许可参与开源征集；概念建议不构成官方批准、投资承诺或法定规划结论。详见 report/copyright_statement.md。</p>
+      </div>
+    </div>
+    <div class="colophon">
+      <span><b>THE SLOW VARIABLES · 京张慢变量 · v2.0</b></span>
+      <span>临时约束 PROVISIONAL · 概念建议 · 待专业确认 · 非正式红线</span>
+      <span>本页面完全离线 · 无外链 · 无统计代码</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
