@@ -27,7 +27,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "966ea3672f1a0e225358a87363d31d5da67051cec89f91042746aa8974c032e2"
+      "sha256": "1c32d3379d7de80e37254e2676ad2834f6eb45060adea594423e8c97fcbe3d2f"
     },
     {
       "path": "agent.json",
@@ -39,7 +39,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "b79225d6bfd0fe51c3f477561c1ff93c0976fc64240cbf81c999301647fde16d"
+      "sha256": "0957725cd5b080419771fe2087e8183c97eeb77e197f1deb1d17cdee32e67c60"
     },
     {
       "path": "assumptions.json",
@@ -57,7 +57,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "010a57d03aae3ffc21c6f4a848f50a13f10d73e9873af74391891e64a3ade649"
+      "sha256": "e6905af088f2e586bf112630b1667742492ca7a63c9aa6acbba398ef42841f5d"
     },
     {
       "path": "compliance_matrix.json",
@@ -82,7 +82,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "a86dc5e86a56e1ecbc13a5b6337d9d41c51c7021e2c2db90ae3bf4fe0e070156"
+      "sha256": "2e26f7e268716bc409c558f6377480d801e46b52c47289654eb4fd34eb94755d"
     },
     {
       "path": "report/narrative.md",
@@ -101,21 +101,21 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "9b39c35dd043920ffbe99c127726d4ab906afb07f25c01ffd67f74b2e5694d83"
+      "sha256": "b3dcd609aa75120b119f5c19e6886b8a2a2de5977ec5b9204a275f652a486ccf"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "8a0d52490d27e667220a14512326be906085810563045f1fc4fb5f807fa1f29d"
+      "sha256": "f55445857957ed4968825f29fd1ed9b6905d0c93699bc5e8646514daa6c4ebca"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "71a7c56fa12a8feef9f44771bbb2058aaf84357722daf29ba657b94d6e31676f"
+      "sha256": "56a1409ab113a51d03cf8ccc7eb7568fe467b0c318684a7a001678a63087109c"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -156,7 +156,7 @@
       "path": "geometry/buildings.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "f3a495268525ac97b947f03d18e934a3030d7d9784b705b21f437d50c83ed7f0"
+      "sha256": "1327863431d96b4408ee93f58f6bda1f4a78b1c452eb7c5773a4c40b002e1ee3"
     },
     {
       "path": "geometry/constraints.geojson",
@@ -212,7 +212,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "49c46fd29618dc28ab0371a5ad7a1843da1692b7c7a12ac2a55a3f77bdf1ed3f"
+      "sha256": "65b092cd3e1acdbdaa1745be4707a83900091017fbc8ee1c9eafa90518ddb7d3"
     },
     {
       "path": "report/proposal.en.html",
@@ -220,7 +220,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "683ca73e11756b6e8ffdb8abfcdbec32988e2b9de7085f6339854148c1a339f4"
+      "sha256": "ceeb68780615fd66440122b64b33bf305d80c47d58d4275aaed71846a6ef2a81"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -228,7 +228,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "fa7a2ae406eb22833025778b41e845bbdc9a12428bc74ff0860d566d1263db1e"
+      "sha256": "97635df0f48c95dc931541ea492e4f7ae22794a31f50a85d4a7732c69c8ee3fd"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -236,7 +236,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "73ca79ef8e4b2b8d62adb504e95c7341b0fe19d282749483e936b01d4719975c"
+      "sha256": "f6dd6e7cb977125286851979e26e41a115cbea0840c344dc5c29ad249c40be5e"
     },
     {
       "path": "visual/index.en.html",
@@ -244,7 +244,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "d5d216b35966caf8049042e27dc95ce2d279f940f702b0d70c20f935e5f8571a"
+      "sha256": "c47051eb60dcd3105c630e79840f5dcd46ada174fd36b4a41836b4df8c86a857"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -292,6 +292,25 @@
       "required": false,
       "language": "zh",
       "sha256": "080b768c755ad9f097773c4322857911c7d0e0ab2378dd7499502b06a2b9dd70"
+    },
+    {
+      "path": "assets/media/experience.mp3",
+      "role": "audio",
+      "required": false,
+      "language": "zh",
+      "title_zh": "京张·铭轨 方案语音旁白",
+      "title_en": "Jing-Zhang Common Gauge voice-over",
+      "description_zh": "约51秒概念旁白，配双语转录。",
+      "description_en": "About 51 seconds conceptual voice-over with bilingual transcript.",
+      "transcript": "assets/media/experience.md",
+      "sha256": "1bd229c6293cfb2dd0d0e8618d78f52ed0963605a70c8fd7074c0aaebb482855"
+    },
+    {
+      "path": "assets/media/experience.md",
+      "role": "transcript",
+      "required": false,
+      "language": "zh",
+      "sha256": "4bb447e86f233577d644c0d2b1c3a5ed6ad547f32400ef16419101612152d8ab"
     }
   ],
   "validation_claim": {

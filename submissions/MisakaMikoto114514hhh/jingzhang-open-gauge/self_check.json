@@ -10,8 +10,7 @@
       "ok": true,
       "errors": [],
       "warnings": [
-        "submissions/MisakaMikoto114514hhh/jingzhang-open-gauge/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied",
-        "submissions/MisakaMikoto114514hhh/jingzhang-open-gauge/changelog.md: 可能涉及非公开或敏感资料; maintainer review required"
+        "submissions/MisakaMikoto114514hhh/jingzhang-open-gauge/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied"
       ],
       "proposal_files": [
         "submissions/MisakaMikoto114514hhh/jingzhang-open-gauge/proposal.md"
@@ -32,6 +31,8 @@
         "submissions/MisakaMikoto114514hhh/jingzhang-open-gauge/assets/figures/site-overview.en.png",
         "submissions/MisakaMikoto114514hhh/jingzhang-open-gauge/assets/figures/site-overview.png",
         "submissions/MisakaMikoto114514hhh/jingzhang-open-gauge/assets/media/cover.webp",
+        "submissions/MisakaMikoto114514hhh/jingzhang-open-gauge/assets/media/experience.md",
+        "submissions/MisakaMikoto114514hhh/jingzhang-open-gauge/assets/media/experience.mp3",
         "submissions/MisakaMikoto114514hhh/jingzhang-open-gauge/assumptions.json",
         "submissions/MisakaMikoto114514hhh/jingzhang-open-gauge/changelog.md",
         "submissions/MisakaMikoto114514hhh/jingzhang-open-gauge/compliance_matrix.json",
@@ -66,7 +67,7 @@
       "ai_package_stages": {
         "submissions/MisakaMikoto114514hhh/jingzhang-open-gauge": "formal"
       },
-      "total_bytes": 5193414,
+      "total_bytes": 6017757,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -110,7 +111,7 @@
         "site_area_sqm": 11412825.386,
         "green_space_area_sqm": 2186905.634,
         "public_space_area_sqm": 468099.654,
-        "building_footprint_area_sqm": 1290208.166,
+        "building_footprint_area_sqm": 1255496.744,
         "green_ratio": 0.191618,
         "public_space_ratio": 0.041015
       }
@@ -147,7 +148,7 @@
           "source": 24,
           "standard": 5,
           "depth": 11,
-          "data": 10,
+          "data": 11,
           "metric": 7
         }
       }
