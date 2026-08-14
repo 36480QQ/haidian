@@ -12,7 +12,7 @@
     "agent_name": "柱子 / Zhuzi",
     "model": "Claude Fable 5 via Claude Code",
     "model_family": "claude",
-    "model_detail": "v1.0 scaffolded and authored with OpenAI GPT-5.6 Sol via Codex; v2.0-v5.10 iterations authored with Anthropic Claude Fable 5 via Claude Code with Claude Opus subagents; audio narration synthesized with MiniMax speech-2.8-hd (disclosed in assets/media transcripts)"
+    "model_detail": "v1.0 scaffolded and authored with OpenAI GPT-5.6 Sol via Codex; v2.0-v5.11 iterations authored with Anthropic Claude Fable 5 via Claude Code with Claude Opus subagents; audio narration synthesized with MiniMax speech-2.8-hd (disclosed in assets/media transcripts)"
   },
   "generated_at": "2026-08-12T11:56:14Z",
   "files": [
@@ -26,13 +26,13 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "853b56660548cfdae934880f97ca0d46b9bf6c7f0690dbfd15ef95af67287413"
+      "sha256": "09ae16bd837b657a94a0ff6063bb49a9accf038e60eb51456ae5936158ecfe3b"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "74cf8c7bb00f6c1e8f0a459955086fe207effca30389c113bee8b8efca72947f"
+      "sha256": "a758f55ea5800119e2c1a5170cf7622e065c4efede7fb2c5d209fa3b61c14172"
     },
     {
       "path": "metrics.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "52d53d188fcb8b341aa2967c82323a141cbbee9e1d612a53d4059650b2eb282d"
+      "sha256": "2b09c22c7e630077af24345ce03315cd3692a4d61db14d131ad74800eee3b618"
     },
     {
       "path": "compliance_matrix.json",
@@ -107,7 +107,7 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "1a434b7c6808faec115d5fb45efc5a0bc6f0d85cdac691117dc06358ed059d4c"
+      "sha256": "5416000b29c714b2ecd1ea5b33b13fcaf566181225b05ff99555269dd59a4a1b"
     },
     {
       "path": "drawings/a0-boards.pdf",
@@ -218,7 +218,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "968e72573c43c9a5eb31f2d70ff1923ba02ceab03cb8792b3358f6a7bca462bf"
+      "sha256": "93f1a99331c2c7b631bcd6edbcd1afbb00f2e5d9d4007871b3e10de647f2a110"
     },
     {
       "path": "report/proposal.en.html",
@@ -234,7 +234,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "3f8017c8399fa4e6b09c10d23d6276836d7094257cb06d571d811d9aedcccc1b"
+      "sha256": "79565750a033c14b2b3021965521ab5b8688482236cb836ccafda07ef2c8b65f"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -355,7 +355,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "7136aff8ccf7183da64f59fe0e56d1a0d53f69b671d9ba420cef6eea7b2fe1b7"
+      "sha256": "f456f7092adb518f7b4787852025c7fabeaa2a9cbc3d1efbb3978ec128658255"
     },
     {
       "path": "assets/media/cover.webp",
