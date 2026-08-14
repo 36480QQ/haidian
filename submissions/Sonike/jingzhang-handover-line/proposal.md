@@ -7,7 +7,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "把铁路交接班转化为AI城市治理协议：一条连续交接线串联研发、验证、开源与公共服务，十二个可逆场景都设置人工接管、无AI等价服务与退出条件。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v1.16"
+iteration: "v1.15"
 ---
 
 # 京张交接线 / JING-ZHANG HANDOVER LINE
@@ -548,7 +548,7 @@ compliance_matrix.json逐条覆盖公告1.3、1.4、1.5和agent.1—agent.6；st
 
 隐私边界采用数据最小化、自愿参与、目的限定、可撤回、限时保存和人工申诉；不得使用秘密地图、非公开表格、未经授权个人数据、强制人脸识别或无法人工复核的权益决定。公平性以“无智能手机、不会中文、残障、老人和选择不用AI的人仍能获得等价基础服务”为底线。**其中只有涉及医疗健康、社会保障、金融业务、生活缴费等事项的公共服务场所，其人工办理下限由 [source:BARRIER-FREE-ENVIRONMENT-LAW] 第三十九条设定**；[source:ELDERLY-SMART-TECH-PLAN] 是政策要求而非法律义务。**把等价服务推广到全部十二个场景，以及“可停用、可申诉”两项，均为本方案自设标准。**技术失败时先保证照明、通行、求助和公共服务，再处理模型恢复；停止与投诉入口的配置对应 [source:GENERATIVE-AI-INTERIM-MEASURES] 第十四条与第十五条。
 
-版权声明见 report/copyright_statement.md。本包图形、Logo方向、地图符号、排版、文字、几何与PDF均为本次原创或基于仓库清权数据程序化生成；外部案例只作文字转述，未复制图片、地图、商标或受保护版式；**本版起，评审可见的全部交付物均由 OFL-1.1 授权的开源字体渲染。** 四套 PDF 子集嵌入 Noto Serif SC；26 张栅格图件的页脚版本图签、图号与指北针，以及五张核心图件（`site-overview`、`land-use-structure`、`key-areas`、`mobility-bluegreen`、`metrics-evidence`）中英两版的**全部文字**，改由 Noto Sans CJK SC 与 Noto Sans 渲染。此前用的是 macOS 专有系统字体（STHeiti / Helvetica）——产物虽只是像素、包内也不含字体文件，但**字形来源无法被第三方独立取得复核**，这与本包其余证据「都能自己验一遍」的口径不一致。改用 OFL 后，字体文件可凭 sources.json 登记的 URL 与 sha256 独立获取。**如实保留的一处历史残留**：其余 8 张非核心图件的图面内容文字仍是 v1.6 时期用 STHeiti 渲染的像素——那批图件的生成脚本已不存在，文字无法重排，本版只把它们的页脚图签与图号重印为开源字体。各类资产的权利依据与独立核验命令逐行见下表；**图纸 PDF 中的拉丁文字属于另一种情形**（按 PDF 规范的基础十四款字体名引用，全程不涉及任何字体文件），故单列一行。方案是开放共创的概念建议，不替代规划、建筑、交通、景观、市政、消防、文保、法律、隐私与工程专业服务，也不代表政府批准、投资、采购、招商或实施承诺。
+版权声明见 report/copyright_statement.md。本包图形、Logo方向、地图符号、排版、文字、几何与PDF均为本次原创或基于仓库清权数据程序化生成；外部案例只作文字转述，未复制图片、地图、商标或受保护版式；本包涉及三款需要单独说明义务的第三方字体：四套 PDF 子集嵌入 OFL-1.1 授权、明确允许嵌入与再分发的 Noto Serif SC；26 张栅格图件（24 张 PNG 与 2 张 JPEG）的**中文**由 macOS 系统字体 STHeiti、**拉丁文字与数字**由 macOS 系统字体 Helvetica，双双在本机渲染阶段栅格化为像素——包内不含任何字体文件，故均不构成再分发。三者的权利依据与独立核验命令逐行见下表；**图纸 PDF 中的拉丁文字属于第四种情形**（按 PDF 规范的基础十四款字体名引用，全程不涉及任何字体文件），与图件里那款同名字体不是一回事，故另列一行。方案是开放共创的概念建议，不替代规划、建筑、交通、景观、市政、消防、文保、法律、隐私与工程专业服务，也不代表政府批准、投资、采购、招商或实施承诺。
 
 ### 权利与构建溯源：逐项写明，且可用命令独立核验
 
@@ -558,8 +558,8 @@ compliance_matrix.json逐条覆盖公告1.3、1.4、1.5和agent.1—agent.6；st
 | --- | --- | --- | --- | --- |
 | 图纸 PDF 中的拉丁文字 | Helvetica 家族与 ZapfDingbats [source:FONT-PDF-BASE14] | PDF 规范内置基础字体，按字体名引用，**不嵌入、不再分发字体文件**；此行**只涵盖四套 PDF**，不涵盖栅格图件 | `pdffonts drawings/a3-booklet.pdf` → `Type 1 / WinAnsi / emb=no` | 字形由阅读器提供；与中文不同，这十四款字体是规范要求阅读器自备的，故不构成显示风险 |
 | 图纸中的中文文字 | Noto Serif SC Light，已子集嵌入四套 PDF [source:FONT-NOTO-SERIF-SC] | SIL Open Font License 1.1（读自字体 name 表 nameID 13/14），OFL 明确允许嵌入子集并随文档再分发 | 同上命令 → `CID TrueType / UniGB-UCS2-H / emb=yes`；字体名对象为 `<子集前缀>+NotoSerifSC` | 字体文件本身不随包提交（投稿目录不接受 `.ttf`），凭 sources.json 登记的 URL 与 sha256 可独立取得复核 |
-| **五张核心图件的全部文字 + 26 张图件的页脚图签与图号** | Noto Sans CJK SC 与 Noto Sans，经 Pillow 栅格化 [source:FONT-NOTO-SANS-RASTER] | SIL Open Font License 1.1（读自字体 name 表）；产物为像素，包内不含字体文件，故不承担再分发义务，而字形来源仍可独立复核 | `find assets -name '*.tt[cf]' -o -name '*.otf'` → 无结果；字体本身凭 sources.json 的 URL 与 sha256 取得比对 | 字形来源无法从栅格产物反查，本行属渲染阶段自述；可独立核验的是「包内无字体文件」与字体文件的 sha256 |
-| 其余 8 张图件的图面内容文字（历史像素） | macOS 系统字体 STHeiti 与 Helvetica，v1.6 时期渲染 [source:FONT-STHEITI-RASTER] [source:FONT-HELVETICA-RASTER] | 仅在当时的本机渲染阶段使用，产物为像素；包内不含任何字体文件，故不构成再分发。**自 v1.16 起不再用于任何新渲染** | 同上命令 → 无结果 | **如实披露的历史残留**：这 8 张的生成脚本已不存在，图面文字无法重排，故保持原像素；本版已把它们的页脚图签与图号重印为开源字体。评审直送的 5 张核心图件不含这类残留 |
+| 栅格图件中的中文文字（24 张 PNG 与 2 张 JPEG） | macOS 系统字体 STHeiti Medium.ttc，经 Pillow 栅格化 [source:FONT-STHEITI-RASTER] | 仅在本机渲染阶段使用，产物为字形像素；包内不含任何 `.ttc`/`.ttf`，故不构成字体再分发 | `find assets -name '*.tt[cf]'` → 无结果 | 在未装该字体的机器上重跑脚本会得到不同字形；这是与 PDF 中文字体不同的一类义务，故单列一行而不并入上一行 |
+| 栅格图件中的拉丁文字与数字（同上 26 张） | macOS 系统字体 Helvetica.ttc，经 Pillow 栅格化 [source:FONT-HELVETICA-RASTER] | 与上一行同性质：实际加载了随 macOS 分发的字体文件并用其字形生成像素，产物为像素而非字体程序；包内不含任何 `.ttc`/`.ttf`，故不构成再分发 | 同上命令 → 无结果 | **与第一行的 Helvetica 同名而不同性质**：PDF 内是按名引用、全程不碰字体文件，此处是真的加载了字体文件；字形来源无法从栅格产物反查，本行属渲染阶段自述，可独立核验的只有「包内无字体文件」这一半 |
 | 生成工具链 | Python 3.12.13(PSF)、reportlab 4.4.3(BSD)、Pillow 12.3.0(MIT-CMU)、shapely 2.1.2(BSD-3)、pyproj 3.7.2(MIT)、fontTools 4.60.1(MIT)、qpdf 12.3.2(Apache-2.0)、PyMuPDF 1.27.2.3(AGPL-3.0 或 Artifex 商业二选一)、Ghostscript 10.07.0(AGPL-3.0) [source:TOOLCHAIN-BUILD] | 版本与许可逐个读取各依赖自身的分发元数据或 `--version` 自述，非二手转述 | `python -c "import importlib.metadata as m; print(m.version('reportlab'), m.metadata('Pillow')['License-Expression'])"`、`gs --version` | PyMuPDF 与 Ghostscript 仅作**工具**在本机运行，未分发其代码、未链接进任何交付物；嵌入 PDF 的字体子集来自 OFL 字体，不来自任何 AGPL 组件 |
 | 几何与指标 | 九类 GeoJSON 与 metrics.json | 由本包程序化生成，公式与源文件逐项登记 | 按 metrics.json 的 `formula` 与 `source_file` 在 EPSG:4548 复算 | 生成脚本不在包内，故**只主张指标可独立复算，不主张逐字节可复现** |
 | 许可标识 | `COMMUNITY-DISPLAY-ONLY` | 是 `schema/proposal.schema.json` 的 `license` 枚举值之一（另两项为 CC-BY-4.0、CC-BY-SA-4.0） | `git show HEAD:schema/proposal.schema.json` 查该枚举 | 仓库未发布该标识的规范条款文本，故本包按下段自述其含义，不冒充标准许可证 |
@@ -568,7 +568,7 @@ compliance_matrix.json逐条覆盖公告1.3、1.4、1.5和agent.1—agent.6；st
 
 本包对 `COMMUNITY-DISPLAY-ONLY` 的自述含义：允许为本次开源征集的评审、公开展示、教学与知识沉淀而复制与引用本包内容，须保留出处；不授予商业使用、不授予将本包内容表述为法定规划或政府决定的权利；第三方进一步使用时仍须自行核验其中每一条外部来源的原始权利状态。
 
-**构建溯源。** 自 v1.9 起**全包只有一个版本号**：26 张图件、38 页图纸与两个离线页面的页脚一律为 `JING-ZHANG HANDOVER LINE / PACKAGE v1.16`（图纸另附页码，如 `01-13`）。可核验口径是**页脚一致性**——页数与 `PACKAGE v1.16` 命中数逐套相等（13/13、13/13、6/6、6/6），旧版本号残留逐套为 0，`qpdf --check` 四套 PASS，`pdffonts` 四套均为 `<子集前缀>+NotoSerifSC / CID TrueType / UniGB-UCS2-H / emb=yes`。各版重建的具体路径与逐像素比对结果记在 `changelog.md`，不在此复述。
+**构建溯源。** 自 v1.9 起**全包只有一个版本号**：26 张图件、38 页图纸与两个离线页面的页脚一律为 `JING-ZHANG HANDOVER LINE / PACKAGE v1.15`（图纸另附页码，如 `01-13`）。可核验口径是**页脚一致性**——页数与 `PACKAGE v1.15` 命中数逐套相等（13/13、13/13、6/6、6/6），旧版本号残留逐套为 0，`qpdf --check` 四套 PASS，`pdffonts` 四套均为 `<子集前缀>+NotoSerifSC / CID TrueType / UniGB-UCS2-H / emb=yes`。各版重建的具体路径与逐像素比对结果记在 `changelog.md`，不在此复述。
 
 
 
