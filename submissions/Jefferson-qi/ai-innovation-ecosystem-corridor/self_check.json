@@ -1,33 +1,240 @@
 {
-  "ok": true,
-  "can_enter_formal_review": true,
-  "submission_dir": "submissions/Jefferson-qi/ai-innovation-ecosystem-corridor",
-  "pr_author": "Jefferson-qi",
-  "stage": "formal",
-  "checks": [
-    {
-      "check_id": "DETERMINISTIC_VALIDATION",
-      "result": "pass",
-      "severity": "blocking",
-      "message": "All deterministic validation checks passed"
+  "schema_version": "0.1.0",
+  "proposal_id": "ai-innovation-ecosystem-corridor",
+  "check_date": "2026-08-14",
+  "self_checked": true,
+  "all_gates_pass": true,
+  "gates": {
+    "deterministic_validation": {
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "manifest_exists",
+          "status": "PASS"
+        },
+        {
+          "name": "agent_json_exists",
+          "status": "PASS"
+        },
+        {
+          "name": "metrics_json_exists",
+          "status": "PASS"
+        },
+        {
+          "name": "assumptions_json_exists",
+          "status": "PASS"
+        },
+        {
+          "name": "sources_json_exists",
+          "status": "PASS"
+        },
+        {
+          "name": "compliance_matrix_exists",
+          "status": "PASS"
+        },
+        {
+          "name": "standard_matrix_exists",
+          "status": "PASS"
+        },
+        {
+          "name": "design_depth_matrix_exists",
+          "status": "PASS"
+        },
+        {
+          "name": "proposal_md_exists",
+          "status": "PASS"
+        },
+        {
+          "name": "proposal_format_version_2",
+          "status": "PASS"
+        },
+        {
+          "name": "bilingual_contract_version_1",
+          "status": "PASS"
+        },
+        {
+          "name": "translation_file_declared",
+          "status": "PASS"
+        },
+        {
+          "name": "package_type_professional",
+          "status": "PASS"
+        },
+        {
+          "name": "package_state_ready_for_review",
+          "status": "PASS"
+        }
+      ]
     },
-    {
-      "check_id": "SPATIAL_REVIEW",
-      "result": "pass",
-      "severity": "blocking",
-      "message": "All spatial review checks passed"
+    "bilingual_packaging": {
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "primary_language_zh",
+          "status": "PASS"
+        },
+        {
+          "name": "translation_file_en_exists",
+          "status": "PASS"
+        },
+        {
+          "name": "report_html_exists",
+          "status": "PASS"
+        },
+        {
+          "name": "visual_index_html_exists",
+          "status": "PASS"
+        },
+        {
+          "name": "copyright_statement_exists",
+          "status": "PASS"
+        }
+      ]
     },
-    {
-      "check_id": "VISUAL_PACKAGING",
-      "result": "pass",
-      "severity": "blocking",
-      "message": "All visual packaging checks passed"
+    "spatial_review": {
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "site_boundary_geojson_exists",
+          "status": "PASS"
+        },
+        {
+          "name": "key_areas_geojson_exists",
+          "status": "PASS"
+        },
+        {
+          "name": "land_use_geojson_exists",
+          "status": "PASS"
+        },
+        {
+          "name": "buildings_geojson_exists",
+          "status": "PASS"
+        },
+        {
+          "name": "roads_geojson_exists",
+          "status": "PASS"
+        },
+        {
+          "name": "green_space_geojson_exists",
+          "status": "PASS"
+        },
+        {
+          "name": "public_space_geojson_exists",
+          "status": "PASS"
+        },
+        {
+          "name": "constraints_geojson_exists",
+          "status": "PASS"
+        },
+        {
+          "name": "phasing_geojson_exists",
+          "status": "PASS"
+        },
+        {
+          "name": "provisional_boundary_labeled",
+          "status": "PASS"
+        },
+        {
+          "name": "features_have_required_properties",
+          "status": "PASS"
+        }
+      ]
     },
-    {
-      "check_id": "PROFESSIONAL_EVIDENCE",
-      "result": "pass",
-      "severity": "blocking",
-      "message": "All professional evidence checks passed"
+    "visual_packaging": {
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "site_overview_png_exists",
+          "status": "PASS"
+        },
+        {
+          "name": "land_use_structure_png_exists",
+          "status": "PASS"
+        },
+        {
+          "name": "key_areas_png_exists",
+          "status": "PASS"
+        },
+        {
+          "name": "mobility_bluegreen_png_exists",
+          "status": "PASS"
+        },
+        {
+          "name": "metrics_evidence_png_exists",
+          "status": "PASS"
+        },
+        {
+          "name": "visual_index_offline",
+          "status": "PASS"
+        },
+        {
+          "name": "report_html_offline",
+          "status": "PASS"
+        }
+      ]
+    },
+    "professional_evidence": {
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "agent_tasks_covered_6_of_6",
+          "status": "PASS"
+        },
+        {
+          "name": "mandatory_standards_covered_5_of_5",
+          "status": "PASS"
+        },
+        {
+          "name": "design_depth_all_complete",
+          "status": "PASS"
+        },
+        {
+          "name": "scenario_cards_12_provided",
+          "status": "PASS"
+        },
+        {
+          "name": "user_personas_5_provided",
+          "status": "PASS"
+        },
+        {
+          "name": "test_scenarios_4_provided",
+          "status": "PASS"
+        },
+        {
+          "name": "landmarks_4_provided",
+          "status": "PASS"
+        },
+        {
+          "name": "ecosystem_cases_6_provided",
+          "status": "PASS"
+        },
+        {
+          "name": "provisional_boundary_disclosed",
+          "status": "PASS"
+        },
+        {
+          "name": "boundary_clause_stated",
+          "status": "PASS"
+        }
+      ]
+    },
+    "pr_scope": {
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "only_submission_directory_modified",
+          "status": "PASS"
+        },
+        {
+          "name": "no_submissions_data_js_modified",
+          "status": "PASS"
+        }
+      ]
     }
-  ]
+  },
+  "validation_claim": {
+    "self_checked": true,
+    "check_date": "2026-08-14",
+    "readiness_contract": "persisted-self-check-v1"
+  }
 }
