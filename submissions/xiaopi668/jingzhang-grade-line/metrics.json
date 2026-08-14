@@ -304,7 +304,7 @@
    "value": 75.0,
    "unit": "count",
    "source_files": [],
-   "formula": "concept staffing: main-line ops 20-40 + verification 10-20 + community 5-10 + guiding 3-5 (midpoint of upper bound)",
+   "formula": "concept staffing: sum of upper bounds (main-line ops 40 + verification 20 + community 10 + guiding 5)",
    "confidence": "low",
    "assumptions": [
     "Concept estimate from comparable public-facility experience; not a fiscal commitment."
@@ -312,10 +312,10 @@
   },
   "daily_visitors_concept_mid": {
    "status": "known",
-   "value": 30000.0,
+   "value": 42500.0,
    "unit": "count",
    "source_files": [],
-   "formula": "concept: midpoint of grade-band daily visitors (applied 20-40k, research 10-20k, acceleration 30-50k) summed and halved",
+   "formula": "concept: (band midpoints 30k+15k+40k) summed and halved = 42.5k daily visitors",
    "confidence": "low",
    "assumptions": [
     "Low-confidence range inferred from public data; calibrate by site survey and official data."

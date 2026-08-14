@@ -24,7 +24,19 @@ iteration: "v1.0"
 
 **Honest constraints** (unhidden): provisional boundary only `[source:PROVISIONAL-BOUNDARY]`; FAR / height = `unknown` (no official control plan `[metric:floor_area_ratio]`); all spatial content is conceptual.
 
-## NG-6 Innovation Compact + R0-R3 resilience states
+## Three-minute read: switchback line x three steep grades x three city decisions
+
+**In 1909, Zhan Tianyou invented the 'ren'-shaped switchback to conquer the Badaling grade; in 2026, we use AI as our generation's switchback to overcome three urban steep grades.**
+
+| Pole | Non-negotiable spatial decision | Operating receipt | If it fails |
+|---|---|---|---|
+| **Innovation Pole x Zhongzhiyuan** | AI compute may only approach the test area through controlled crossings guarded by humans, prioritising the public, with no bypass | Test Receipt | TEST closed; courtyard and public green belt continue |
+| **Life Pole x AI Origin** | Open-innovation methods, license status and withdrawal actions must all be visible on the same public release surface | Release Ticket | RELEASE closed; release pulled, teaching and collaboration continue |
+| **Industry Pole x Dazhongsi** | Non-AI human path is not longer than AI path; complaint point and trial zone connect to the same public mainline | Public Verdict | USE closed; equipment folds back; commerce, rest and human service continue |
+
+The three receipts (Test / Release / Public Verdict) do not substitute for each other: a technical PASS cannot cover a rights judgement or a public decision; an old FAIL cannot be erased by a new PASS — this matches the Jing-Zhang 'ren'-shaped switchback engineering logic: **changing direction does not erase the route behind, but folds back while preserving the previous state** `[source:HISTORY-ZHAN-TIANYOU]`.
+
+## NG-6 Innovation Compact
 
 Borrowing the openness and accountability of railway "timetables", this proposal puts forward an **NG-6 Innovation Compact** for every urban-AI service — translating abstract "AI governance" into a public compact that is visible in space, traceable in operations and accountable in governance `[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]` `[depth:phasing_implementation]`:
 
@@ -37,28 +49,6 @@ Borrowing the openness and accountability of railway "timetables", this proposal
 | **⑤ Review** | Allow appeal, correction and independent review | Appeal channel and review-record area | Timely appeal response |
 | **⑥ Sunset** | Pilots renew, shrink or terminate on a cycle | Sunset notice + data deletion / migration | Periodic evaluation; shrink or sunset if under-target |
 
-**R0-R3 resilience states** (NG-6's seventh step: graceful degradation) — the hallmark of mature infrastructure is not "maximum performance" but "graceful degradation under failure":
-
-| State | Trigger | AI service degradation | Minimum service standard | Recovery path |
-|---|---|---|---|---|
-| **R0 Normal** | Clear weather, network up, power up | All running | All NG-6 steps normal | — |
-| **R1 Rainy** | Rainfall > 50mm/24h | Shuttle / delivery / autonomous driving suspended | Physical signs + human delivery + shelter every 200m | After rain: human-check → resume |
-| **R2 Network-down** | Network outage > 30min | All AI scenarios suspend | Physical signs + human windows + offline maps | Network restored → re-verify → resume |
-| **R3 Power-down** | Power outage > 15min | All suspend + backup battery | Emergency lighting + human evacuation + e-stop triggerable | Power restored → self-check → resume |
-
-Resilience principles: minimum service non-negotiable; emergency stop outranks performance; recovery must pass Gates; annual drills `[assumption:A-GREEN-BLUE-CONCEPT-001]`.
-
-## One Day at the Switchback Line: 2030
-
-The compact above answers "how the system works"; this section answers "**what it feels like to live here**" `[depth:three_key_area_detailed_design]` `[depth:blue_green_public_space]` `[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]`.
-
-**7:00 AM — R&D engineer Xiao Li** leaves LIFE-D1 Talent Housing, cycles 8 min to INNO-A1 along the GRN-B1 heritage green belt. Submits benchmark tasks to INNO-A2 compute centre, watches the leaderboard from the observatory `[data:geometry/buildings.geojson#BLD-001]`. **This is AI overcoming the productivity grade in daily form.**
-
-**12:30 PM — Grandma Wang, 72, no smartphone**. Walks to LIFE-D2 community hub's **human window** (NG-6 ③ Handoff), gets health pre-screening. Presses a physical button on an AI wayfinding post, hears the 1909 Jing-Zhang Railway story. **No screen touched — AI overcoming the livability grade without leaving digital traces.** `[source:WHO-URBAN-HEALTH-AND-GREEN]`
-
-**10:00 PM — Delivery rider Old Zhang**. At 22:00 bollards rise for the robot lane. At 23:30 rainstorm triggers **R1 Rainy**: robot delivery suspends, SMS says "shelter every 200m". **Emergency stop outranks performance — the safety baseline when AI runs at night.** `[source:ISO-13482-SERVICE-ROBOT-SAFETY]`
-
-Three residents, three AI modes: **active breakthrough (R&D), passive benefit (health), occupational dependence (delivery)** — all unified by the NG-6 Innovation Compact.
 
 ## Design basis and source inventory
 
@@ -292,119 +282,35 @@ The nine sub-precincts together cover the full extent of the three key areas, an
 
 **AI scenario cards (agent.3, ≥10, of which ≥3 are industrial-test verification scenarios)** — each provides full fields: data flow, model boundary, operating entity, service blueprint, success metrics (KPIs), rollback mode, incident response, lifecycle cost `[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]` `[depth:blue_green_public_space]`:
 
-#### S1 Compute scheduling & benchmark testing (industrial validation)
-- **Spatial anchor**: Zhongzhiyuan Innovation Pole `[data:geometry/buildings.geojson#BLD-001]` · **Service target**: AI researchers, enterprise teams
-- **Data flow**: de-identified benchmark dataset → distributed compute → benchmark leaderboard (public) · **Model boundary**: processes only de-identified data, no personal data ingested
-- **Operating entity**: Zhongzhiyuan Compute Alliance (concept) · **Service blueprint**: submit benchmark task → schedule compute → human review results → publish leaderboard
-- **KPIs**: benchmark reproducibility ≥ 95%, compute utilisation ≥ 70%, human-review coverage 100%
-- **Rollback mode**: compute failure → degrade to local nodes; abnormal result → manual flag and rollback · **Incident response**: 30-min alert, 4-hr root-cause analysis, 24-hr fix
-- **Lifecycle cost**: compute hardware (high), operations (medium), power (high) — all conceptual, pending real cost accounting
+### Scenario-to-professional-responsibility lock (14 scenarios x 7 fields)
 
-#### S2 Open-source co-creation workshop (innovation)
-- **Spatial anchor**: Zhongzhiyuan · **Service target**: developers, entrepreneurs · **Data flow**: public repo → community contribution → code review → release
-- **Model boundary**: public data only, community governance · **Operating entity**: developer community (concept) · **KPIs**: active contributors, merged PRs, reproduction success rate
-- **Rollback mode**: disputed code → community vote → revocable · **Incident response**: community issue → maintainer response · **Lifecycle cost**: platform (low), community operations (medium)
+`visual/assets/scenario_professional_review_matrix.json` locks S1-S14 individually to: spatial prototype, minimum data, human final accountability, RC contract, G1 desktop professional role, G2 control / independent review role, measurable space / capacity proxy, conflict / failure scenario, pause line, recovery evidence. 14/14 have all fields filled, but all measured values remain `null`, real institutions confirmed = 0, field evidence = 0. "Can enter G1/G2" here means only that templates are sufficient for desktop review and drill design; G3 field piloting remains closed until property rights, measurement, professional conclusions, operating entities, budgets and authorisations are completed `[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]` `[depth:ai_scenario_service_nodes]`.
 
-#### S3 AI + rail shuttle navigation (mobility)
-- **Spatial anchor**: spine stations `[data:geometry/roads.geojson#RD-001]` · **Service target**: commuters, visitors
-- **Data flow**: anonymised footfall counts → shuttle suggestions → physical wayfinding (no identification) · **Model boundary**: only aggregated footfall, no personal tracking
-- **Operating entity**: transit operator (concept) · **KPIs**: shuttle waiting time reduction, accessible-route coverage · **Rollback mode**: system failure → physical signs and arrows `[assumption:A-TRANSPORT-CONCEPT-001]`
-- **Incident response**: congestion → human guidance · **Lifecycle cost**: sensors (medium), maintenance (medium)
+Compact lock table for the 14 scenario cards:
 
-#### S4 All-age friendly slow-mobility guidance (slow mobility · accessibility first)
-- **Spatial anchor**: Life Pole `[data:geometry/green_space.geojson#GR-001]` · **Service target**: residents, elderly, children, people with disabilities
-- **Data flow**: non-identifying environmental sensing → physical guidance (no camera tracking) · **Model boundary**: physical-first; no biometric collection
-- **Operating entity**: community + property (concept) · **KPIs**: accessible-path connectivity, reachable-node counts for elderly / disabled users · **Rollback mode**: system failure → physical paving and signs · **Lifecycle cost**: paving / signage (medium)
-
-#### S5 AI + community health kiosk (public services)
-- **Spatial anchor**: Life Pole · **Service target**: residents, elderly · **Data flow**: personal-health data processed locally (not transmitted out) → AI-assisted pre-screening → doctor review
-- **Model boundary**: only assists pre-screening; diagnosis by a doctor; data localised; explicit consent required · **Operating entity**: community-health institution (concept)
-- **KPIs**: pre-screening accuracy, resident satisfaction, localised-data compliance rate · **Rollback mode**: AI anomaly → direct doctor referral · **Incident response**: data leak → immediate isolation + report · **Lifecycle cost**: equipment (medium), medical staff (high)
-
-#### S6 AI + education convenience node (public services · child protection)
-- **Spatial anchor**: Life Pole · **Service target**: students, parents · **Data flow**: strict child-data protection (minimised, not transmitted) → AI-assisted learning → teacher / parent review
-- **Model boundary**: child data minimised, never used for commercial recommendation, deletable · **KPIs**: child-data compliance rate, learning-aid satisfaction · **Rollback mode**: AI failure → teacher-direct teaching · **Lifecycle cost**: equipment (medium), content (medium)
-
-#### S7 Intelligent-native consumption experience (industry)
-- **Spatial anchor**: Dazhongsi Industry Pole · **Service target**: consumers, merchants · **Data flow**: consumption records collected with consent (consent-based, deletable) → personalised recommendation → appealable
-- **Model boundary**: consumption data must be consent-based, appealable, deletable · **Operating entity**: merchants + platform (concept) · **KPIs**: consumption satisfaction, appeal-resolution rate · **Rollback mode**: abnormal recommendation → human service · **Lifecycle cost**: equipment (medium)
-
-#### S8 Low-speed robot delivery pilot (industrial validation)
-- **Spatial anchor**: three areas + spine `[data:geometry/public_space.geojson]` · **Service target**: merchants, residents
-- **Data flow**: route planning (no pedestrian tracking) → low-speed delivery → remote monitoring · **Model boundary**: low speed (≤ 15 km/h), geofence, continuous human-routable fallback preserved
-- **Operating entity**: delivery enterprise (concept, license required) · **KPIs**: delivery success rate, safety incidents (target 0), manual-takeover rate · **Rollback mode**: failure → remote stop + manual recovery `[assumption:A-AI-SCENARIO-PILOT-001]`
-- **Incident response**: collision → immediate stop + report + insurance · **Lifecycle cost**: robots (high), maintenance (medium), insurance (medium)
-
-#### S9 Autonomous-shuttle pilot (industrial validation)
-- **Spatial anchor**: spine · **Service target**: commuters · **Data flow**: sensing (no personal biometrics stored) → low-speed shuttle → manual-takeover channel
-- **Model boundary**: low-speed geofence, manual takeover at any time, does not replace accessible services · **Operating entity**: transit enterprise (concept, license required)
-- **KPIs**: safe mileage, manual-takeover rate, accessibility reach · **Rollback mode**: anomaly → pull over + manual · **Incident response**: stop within 10 seconds · **Lifecycle cost**: vehicles (high), roadside infrastructure (high)
-
-#### S10 Jing-Zhang heritage AI guide (culture)
-- **Spatial anchor**: heritage park · **Service target**: visitors, students · **Data flow**: public historical material → AI narration → multi-language · **Model boundary**: only public material; no sensitive data
-- **Operating entity**: cultural institution (concept) · **KPIs**: visitor satisfaction, historical-material accuracy · **Rollback mode**: system failure → human guide / physical exhibit · **Lifecycle cost**: content (low), equipment (low)
-
-#### S11 City-agent governance dashboard (governance)
-- **Spatial anchor**: co-creation platform · **Service target**: governors, the public · **Data flow**: public material → AI inference → risk prompts → human release → rollback-able
-- **Model boundary**: only public material; risk prompts are not decisions; human makes the final call; fully auditable · **Operating entity**: governance consortium (concept)
-- **KPIs**: risk-warning accuracy, human-review coverage, public auditability · **Rollback mode**: AI misjudgement → human correction + rollback · **Incident response**: misoperation → audit trail + rollback · **Lifecycle cost**: platform (medium)
-
-#### S12 Developer-community activity venue (operations)
-- **Spatial anchor**: public space · **Service target**: developers, entrepreneurs · **Data flow**: public-event registration → community operation → feedback
-- **Operating entity**: community organisation (concept) · **KPIs**: event count, participants, projects translated · **Rollback mode**: event cancelled → online alternative · **Lifecycle cost**: venue (low), operations (medium)
-
-12 scenario cards in total `[metric:scenario_node_count]`, of which S1 / S8 / S9 are industrial-test verification scenarios. All scenarios follow the co-creation charter: public-interest first, open-source boundary, conceptual-suggestion nature, AI-native innovation, human-in-the-loop `[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]`.
-
-### Scenario–space–operation mapping matrix (agent.3 scenario_space_operation_matrix)
-
-The taskbook requires delivering a `scenario_space_operation_matrix` — mapping each scenario card to a spatial location, operating entity and the NG-6 contract steps `[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]`:
-
-| Scenario | Spatial anchor (GeoJSON) | Operating entity | NG-6 Declare | NG-6 Time | NG-6 Handoff | NG-6 Sunset |
-|---|---|---|---|---|---|---|
-| S1 Compute benchmark testing | Zhongzhiyuan `[data:geometry/buildings.geojson#BLD-001]` | Compute Alliance | Service-boundary public registration | Benchmark-task time limit | Human review of results | Sub-target rate → degrade |
-| S2 Open-source co-creation workshop | Zhongzhiyuan | Developer community | Public-repo governance | PR-response time limit | Community review | Dispute → vote to revoke |
-| S3 Rail shuttle navigation | Spine stations `[data:geometry/roads.geojson]` | Transit operator | Anonymised-data statement | Shuttle-wait time limit | Physical-sign fallback | Failure → physical guidance |
-| S4 All-age slow-mobility guidance | Life Pole green belt `[data:geometry/green_space.geojson]` | Community + property | Non-identifying-environment statement | — | Physical-paving fallback | — |
-| S5 Community health kiosk | Life Pole | Community-health institution | Localised-data statement | Pre-screen response time limit | Doctor review | Anomaly → refer to doctor |
-| S6 Education convenience node | Life Pole | School + community | Child-data minimisation | — | Teacher / parent review | — |
-| S7 Intelligent-native consumption | Dazhongsi Industry Pole | Merchants + platform | Consumption-data compliance | Appeal-response time limit | Human service | Anomaly → human |
-| S8 Robot-delivery pilot | Three areas + spine `[data:geometry/public_space.geojson]` | Delivery enterprise (license req.) | Low-speed-geofence statement | Delivery time limit | Remote monitoring + manual recovery | Failure → remote stop |
-| S9 Autonomous-shuttle pilot | Spine | Transit enterprise (license req.) | Low-speed-geofence statement | Shuttle time limit | Manual-takeover channel | Anomaly → pull over |
-| S10 Heritage AI guide | Heritage park | Cultural institution | Public-material statement | — | Human guide / exhibit | Failure → human guide |
-| S11 Governance dashboard | Co-creation platform | Governance consortium | Public-material + risk-prompt | Warning-response time limit | Human release + auditable | Misjudgement → correction + rollback |
-| S12 Developer activity venue | Public space | Community organisation | Public-event statement | — | Online alternative | — |
-
-This matrix ensures each scenario has a clear spatial anchor, responsible entity and full NG-6 contract coverage — turning "the switchback approach" from a spatial concept into an operable service system `[depth:phasing_implementation]`.
-
-**14 scenario cards (agent.3 ≥10 + 3 industrial validation)** — on top of the original 12 cards, two new cards are added: **S13 (city-agent emergency rollback)** and **S14 (public-interest audit)**, corresponding to the agent.4 long-term-operations and agent.6 governance dimensions:
-
-| Scenario | Type | NG-6 Sunset | Public-interest-audit fields |
+| Scenario | Spatial prototype | Min data + human final accountability | Pause line / recovery evidence |
 |---|---|---|---|
-| S1–S12 | (see the scenario–space–operation matrix above) | See each card | See each card |
-| **S13 City-agent emergency rollback** | Governance | 5-step exit: revoke → isolate → switch to human → handle logs → publish record | High-temperature / network-loss / non-takeover / accessibility-break / near-miss triggers |
-| **S14 Public-interest audit** | Governance | Seasonal review + quarterly publication | Accessibility reach / low digital literacy / child protection / privacy minimisation |
+| **S1 Compute scheduling & benchmark** | INNO-A2 Shared Compute Centre | De-identified benchmark set; Compute Alliance rep human review | Compute failure -> degrade to local nodes; manual mark + roll back `[data:visual/assets/sc04-relay-receipt.json]` |
+| **S2 Open-source co-creation workshop** | INNO-A1 Research Cluster | Public repo; community governance | Disputed code -> vote revoke `[data:visual/assets/evidence-ledger.json]` |
+| **S3 AI + rail shuttle navigation** | INF-E1 Spine stations | Anonymised footfall; transit ops human review | High misdirection risk -> physical guidance fallback `[data:geometry/roads.geojson#RD-001]` |
+| **S4 All-age slow-mobility guidance** | GRN-B1 Green belt | Non-identifying environmental sensing; community + property | Accessible path broken -> stop `[data:geometry/green_space.geojson#GR-001]` |
+| **S5 AI + community health kiosk** | LIFE-D2 Community hub | Localised health data; community doctor review | AI anomaly -> direct doctor `[source:WHO-URBAN-HEALTH-AND-GREEN]` |
+| **S6 AI + education convenience node** | LIFE-D2 / D3 | Localised child data; teacher / parent review | Any auto decision triggered -> roll back `[assumption:A-AI-GOVERNANCE-001]` |
+| **S7 Intelligent-native consumption** | IND-C2 | Consent-collected consumption records; merchant + platform human | Recommendation anomaly -> human service `[metric:road_centerline_length_m]` |
+| **S8 Low-speed robot delivery pilot** | LIFE-D3 (night band) | No pedestrian tracking; delivery enterprise + duty officer | Any collision -> immediate stop `[source:ISO-13482-SERVICE-ROBOT-SAFETY]` |
+| **S9 Autonomous shuttle pilot** | INF-E1 Spine | No personal biometrics stored; transit enterprise | Anomaly -> pull over + manual takeover `[data:visual/assets/tabletop_cases.json#T09-REJ]` |
+| **S10 Jing-Zhang heritage AI guide** | GRN-B1 Story nodes 2-4 | Public historical material; cultural-relics editor review | Fictional person or event -> remove `[data:geometry/green_space.geojson#GR-001]` |
+| **S11 City-agent governance dashboard** | Co-creation platform | Public material + risk prompts; governance consortium | Mismove -> audit rewind + rollback `[data:visual/assets/evidence-ledger.json]` |
+| **S12 Developer community venue** | Public space (around IND-C3/C4) | Public event registration; community org human | Event cancelled -> online alternative `[depth:phasing_implementation]` |
+| **S13 City-agent emergency rollback** | Governance consortium duty | Triggers: heat / outage / non-takeover / accessibility block | 5-step exit + record `[metric:tabletop_case_count]` |
+| **S14 Public-interest audit** | Equity ledger review committee | Quarterly review + anonymised event log | Worst-20% experience degrades -> pause `[data:visual/assets/edge-matrix.json]` |
 
-A new evidence ledger `visual/assets/evidence-ledger.json` is added: each scenario card corresponds to one atomic record (synthetic_ticket_id, result_status, release_decision, rollback_steps, acceptance_checks). The SC-04 pilot's only verifiable goal is "the G0–G6 Gates can be independently re-run by a third party" — it makes no claims about benchmark performance or licensing approval `[assumption:A-EVIDENCE-001]`.
+Three public baselines run through all 14 scenarios:
 
-### Minimum-viable pilot: SC-04
+1. **High-impact decisions are 100% human-final-confirmed**
+2. **Default biometric and continuous individual trajectory retention = 0**
+3. **Basic services keep non-digital channels** (voice, button, paper, human window) `[depth:ai_governance_charter]`
 
-To prevent the 14 scenario cards from staying at the level of a "readable contract", this proposal converges **S1 (compute scheduling & benchmark testing)** into a single minimum-viable pilot **SC-04**, translating the NG-6 Innovation Compact from an abstract framework into a concrete runnable slice. The pilot **selects 3 boundary conditions from the 12 boundary conditions as the first targets to verify** (EDGE-01 wheelchair / white cane + EDGE-05 night / rain / glare + EDGE-09 weak network / disconnect), generating **1 synthetic ticket unit per boundary** (3 synthetic tickets + 1 control sample = 4 total). The synthetic tickets only trigger the corresponding boundary's human fallback and stop condition, do not connect to real services, do not process real personal data, do not send messages, and cannot approve / reject / close real matters. Spatial anchors remain provisional candidates; the real operating entity, duty roster, budget, on-site data, public-participation outcomes and service performance are all unknown `[assumption:A-OPERATIONS-001]` `[assumption:A-EDGE-START-001]`. The pilot's goal is upgraded from "verify 4 synthetic tickets can be re-run" to "verify 3 boundary conditions' human fallbacks can be re-run" — the latter directly addresses the core proposition of "what human fallback when AI fails".
-
-SC-04 expands the NG-6 six steps into a **ten-stage execution chain**: question → site → data → system permissions → human gate → testing → evidence → adopt/reject → feedback → rollback / sunset (the NG-6 Sunset step is expanded into the last two stages). Each stage has machine-readable fields, a responsibility state and a failure destination; if any gate lacks evidence, execution halts at the previous state — never skipping ahead via multi-agent voting or publicity metrics.
-
-The pilot has **seven operating gates, G0–G6** (these are not spatial phasing; each must be advanced only with evidence and a human signature):
-
-| Gate | Current reviewable status | Conditions for entering the next gate | Handling when not passed |
-|---|---|---|---|
-| G0 Topic | Draft | Public-issue definition; ethics / data / accessibility screening | Not entering G1; remains a draft |
-| G1 Site | Provisional | Site ownership confirmation; safety boundary confirmation | Stays provisional; not entering testing |
-| G2 Data | Unknown | Real-data necessity, compliance review, personal-data minimisation | Fall back to synthetic data; real data not opened |
-| G3 System permissions | Unknown | Subject, permission scope, network isolation | Stay in sandbox; not connect to real business |
-| G4 Human gate | Unknown | Duty subject, appeal mechanism, rollback action | No human gate → must not cross G4 |
-| G5 Limited trial | Not yet ready | G0–G4 all passed + insurance / appeal / maintenance / cost | Any unknown item → stay in sandbox |
-| G6 Rollback / Sunset | The 5-step exit actions have been written into the receipt; no real system yet needs to execute | Revoke / isolate / switch to human / handle logs / publish rollback record — all have completion evidence | A new version must open a new receipt and restart from G0 |
-
-The pilot's goal is to prove that **the "stop / exit / recover / non-trigger discrimination" logic is independently re-runnable by a third party** — not to prove benchmark-test passing. If any gate before G4 lacks evidence, the pilot must not cross G4; if any gate before G5 lacks evidence, the pilot does not enter real business; the G6 five-step exit actions must have complete written records. SC-04 is also dropped into `visual/assets/sc04-relay-receipt.json` as a machine-readable record, containing synthetic-ticket IDs, gate statuses, responsible subjects, failure destinations and rollback steps `[depth:metrics_recalculation]`.
 
 ## AI innovation ecosystem map and agent deliverables
 
@@ -460,47 +366,19 @@ The wayfinding system is distinct from the belt's overall Logo system: the Logo 
 - International narrative: from Zhan Tianyou's engineering pioneering spirit to AI-era standards co-creation, emphasising the continuity of "Chinese engineers defining their own standards".
 - Communication-channel direction: international planning / AI conferences, developer communities, urban-design media (all conceptual suggestions, awaiting deepening by the communications team).
 
-## Four mechanisms by which AI shapes spatial form
+## Urban resilience and full-state graceful degradation (R0-R3 resilience states)
 
-The 14 AI scenario cards above answer "what does AI serve"; this section answers a more fundamental question: **how does AI change the physical form of space itself?** If AI is merely a service layer stuck onto traditional space, the city is no different for having AI. This proposal puts forward four mechanisms that take AI from "serving space" down to **"generating space"** `[depth:overall_spatial_structure]` `[depth:height_massing_character]` `[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]`.
+**R0-R3 resilience states** (NG-6's seventh step: graceful degradation) — the hallmark of mature infrastructure is not "maximum performance" but "graceful degradation under failure":
 
-### Mechanism 1: Compute undergrounding — underground space driven by AI needs
+| State | Trigger | AI service degradation | Minimum service standard | Recovery path |
+|---|---|---|---|---|
+| **R0 Normal** | Clear weather, network up, power up | All running | All NG-6 steps normal | — |
+| **R1 Rainy** | Rainfall > 50mm/24h | Shuttle / delivery / autonomous driving suspended | Physical signs + human delivery + shelter every 200m | After rain: human-check → resume |
+| **R2 Network-down** | Network outage > 30min | All AI scenarios suspend | Physical signs + human windows + offline maps | Network restored → re-verify → resume |
+| **R3 Power-down** | Power outage > 15min | All suspend + backup battery | Emergency lighting + human evacuation + e-stop triggerable | Power restored → self-check → resume |
 
-Traditional underground levels use parking as their primary function. In the "Switchback Line" proposal, the underground space of INNO-A2 (Shared Compute Centre) and INF-E2 (Compute Conduit + Edge Nodes) is driven by **AI compute-infrastructure needs**: the second basement level houses a district-scale liquid-cooled compute hall (requiring large floor-to-floor height 6-8 m, high load capacity, dedicated cooling-pipe routing); the first basement level houses edge-inference cabinet corridors and pedestrian maintenance passages; the ground level keeps only equipment-hatch openings and ventilation shafts, leaving valuable ground area for public space. This sectional design means **compute demand directly determines the building's underground form** — floor heights, load capacity, cooling and pipe routing are all organised around compute infrastructure, not squeezed in afterwards `[depth:municipal_new_infrastructure]`.
+Resilience principles: minimum service non-negotiable; emergency stop outranks performance; recovery must pass Gates; annual drills `[assumption:A-GREEN-BLUE-CONCEPT-001]`.
 
-### Mechanism 2: Dynamic space allocation — the same space switches function by time band
-
-AI scheduling allows the same physical space to carry different functions in different time bands. LIFE-D3 (Experiential Retail Belt) operates as a pedestrian commercial streetcape during the day (7:00-20:00); switches to a dedicated S8 low-speed robot delivery corridor at night (22:00-6:00) (retractable bollards rise automatically, separating a 2m-wide robot lane); and switches to a festival market plaza on weekends (modular stalls rise from ground-floor storage compartments). This mechanism requires the **spatial design itself to be "switchable"** — paving must embed sensors and retractable bollards, ground-floor frontages must reserve modular storage space, and lighting must support multi-scene presets. The "function" of space is no longer fixed but an **AI-scheduled time slice** `[depth:land_use_layout]`.
-
-### Mechanism 3: Robot-compatible streets — street sections designed for human-robot coexistence
-
-Scenarios S8 / S9 require street sections to be **designed from the outset for human and robot / low-speed-vehicle coexistence**, not separated by painted lines after the fact. The standard cross-section of INF-E1 (Spine Road) in this proposal is: a central 7m transit / slow-mobility mixed lane + 1.5m robot-exclusive low-speed lanes on each side (physically separated, charging interfaces embedded in light poles) + a 3m footway on the outer edge. A 0.3m physical kerb + tactile warning strip separates the robot lane from the footway, ensuring low-speed vehicles do not intrude into pedestrian space. Intersections have AI perception posts (not cameras; using lidar + mmWave radar) that provide traffic signals to robots but do not collect personal biometrics. This design means the **physical form of the street is directly shaped by the safety requirements of human-robot coexistence** `[depth:traffic_rail_slow_parking]`.
-
-### Mechanism 4: Screen retreat — physical / ambient interfaces replacing digital screens
-
-Traditional "smart city" approaches often plaster screens across urban surfaces. This proposal does the opposite — **screen retreat**, replacing digital screens with physical / ambient interfaces. The wayfinding of GRN-B1 (Heritage Park Spine) does not rely on screens but uses: thermo-sensitive paving (temperature changes mark routes), soundscape nodes (directional speakers tell historical stories), tactile maps (raised relief maps replace electronic maps), and weathering-steel interpretation boards (low-tech, high-durability, zero-energy). AI retreats to the backstage — it decides "when to trigger which soundscape node" and "when to adjust thermo-paving temperature", but **leaves no screens on the urban surface**. This principle means the **materiality of space is enhanced (smarter) rather than diminished (more virtual) by AI** `[depth:blue_green_public_space]`.
-
-The four mechanisms together take AI from an "added service layer" down to a "space-generation layer" — compute determines underground form, scheduling determines time-sliced function, coexistence determines street cross-sections, and retreat determines material interfaces. This is the spatial meaning of the "Switchback Line" concept: **the switchback approach is not an AI label on the urban surface, but AI reshaping the city's physical structure from within**.
-
-## One Day at the Switchback Line: 2030 experience narrative
-
-The mechanisms and matrices above answer "how the system works"; this section answers "**what it feels like to live here**". Three typical residents' days serve as the thread, letting the reviewer step into the space `[depth:three_key_area_detailed_design]` `[depth:blue_green_public_space]` `[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]`.
-
-### 7:00 AM — R&D engineer Xiao Li leaves the AI Origin Community
-
-Xiao Li lives in the LIFE-D1 Talent Housing and cycles 8 minutes to INNO-A1 Basic Research Cluster. At the apartment gate there is no face-recognition turnstile — the NG-6 ① Declare notice simply states "this area collects only anonymised passage counts, no personal identification", following data-minimisation principles `[assumption:A-AI-GOVERNANCE-001]`. Cycling along the GRN-B1 heritage-park green belt, he passes story segment ② "Standard Foundation" — the ground-embedded 1435mm physical-gauge incision gleams stainless-steel in the morning light. Arriving at the research cluster, he submits last night's benchmark task to the INNO-A2 Shared Compute Centre; the AI scheduling system queues GPU allocation, and he can sip coffee at the Benchmark-Testing Observatory (landmark ③) while watching the leaderboard on the display wall — this is the everyday form of scenario S1 `[data:geometry/buildings.geojson#BLD-001]`.
-
-### 12:30 PM — Retired teacher Grandma Wang picks up medicine at the AI Origin Community
-
-Grandma Wang is 72 and does not use a smartphone. She walks to the LIFE-D2 Mixed Community Hub's **human window** (the spatial implementation of NG-6 ③ Handoff), where a community worker helps her complete the S5 AI + Community Health Kiosk pre-screening — AI only assists pre-screening; diagnosis is by a doctor `[assumption:A-AI-SCENARIO-PILOT-001]`. Her data is **processed locally** and not transmitted out. After picking up her medicine she rests at the Origin Life Plaza, next to an AI wayfinding post (1.2m tall, with a physical button and large-type display) — she presses a button and hears the story of the Jing-Zhang Railway's 1909 opening (the physical-interface version of S10 Heritage AI Guide). Throughout, she touches no screen and downloads no app — the **screen-retreat principle** lets someone like her enjoy AI services too `[source:WHO-URBAN-HEALTH-AND-GREEN]`.
-
-### 10:00 PM — Delivery rider Old Zhang completes his last order on the Experiential Retail Belt
-
-Old Zhang is a night-shift delivery rider in the Dazhongsi IND-C2 Intelligent-Native Commercial zone. After 22:00, the LIFE-D3 Experiential Retail Belt's **retractable bollards rise automatically**, separating a 2m-wide robot delivery lane — the daily trigger of the "dynamic space allocation" mechanism. Old Zhang's e-bike travels in the INF-E1 spine road's **robot-exclusive low-speed lane** (1.5m wide, separated from the 3m footway by a 0.3m physical kerb), and the AI perception posts at intersections (lidar, not cameras) give him green signals `[source:ISO-13482-SERVICE-ROBOT-SAFETY]`. At 23:30 a sudden rainstorm hits — the resilience state auto-switches to **R1 Rainy**: S8 robot delivery suspends, and Old Zhang receives a text message (NG-6 ④ Notify): "Rainstorm warning, robot lane closed, please use the human delivery route, shelter points every 200m." He follows the physical wayfinding signs to the nearest shelter pavilion. At no point does AI failure create danger — **emergency stop outranks performance** `[depth:municipal_new_infrastructure]`.
-
-### What the three residents share
-
-Xiao Li, Grandma Wang and Old Zhang represent three fundamentally different ways of using AI: **active use (R&D), passive benefit (health), occupational dependence (delivery)**. But they all benefit from the same "switchback approach" — the NG-6 Innovation Compact ensures they can always switch to human, physical signs are always readable, and data minimisation is always in effect. This is the everyday urban manifestation of the Jing-Zhang spirit of "a standard that serves everyone".
 
 ## Public interest, accessibility and AI governance
 
@@ -567,7 +445,70 @@ Data gaps: existing buildings, property rights, underground space and municipal 
 
 **Urban landscape**: anchored in engineering blue + amber, emphasising technical-illustration, dashboard and blueprint aesthetics, avoiding over-casual / "internet-celebrity" stylings `[standard:MOHURD-URBAN-DESIGN-MEASURES]`.
 
-## Renewal project list, implementation policy and phasing plan
+## C01-C10 commissionable, accept-or-reject work packages
+
+`visual/assets/delivery_contracts.json` converts real-world gaps into **C01-C10 ten commissionable, accept-or-reject work packages** — not confusing prepared commission scopes with achieved field evidence. Each package is independently activatable / pausable / exitable, working with the G0-G4 five gates. All quantities / institutions / amounts / authorisations remain `unconfirmed` / `null` / `not_started` `[depth:implementation_policy]` `[depth:renewal_project_list]`.
+
+| Package | Content | Responsible role type | No-go condition |
+|---|---|---|---|
+| **C01** | Official geometry and data request | Government planning authority | Official redline missing -> whole package HOLD |
+| **C02** | Responsible entity + authorisation | Government + enterprise alliance + community | Any entity unsigned -> G2 not activated |
+| **C03** | Property rights + cultural-relics + fire three-line check | Cultural-relics + fire + planning | Any conflict -> G1 not passed |
+| **C04** | Field measurement + accessible route audit | Independent professional team | Any of 6 accessibility groups below bar -> G3 not opened |
+| **C05** | Municipal, flood-control, energy network capacity | Municipal + energy company | Capacity short -> pilot not opened |
+| **C06** | Data privacy + AI safety review | Legal + ethics committee | Any scenario unreviewed -> G3 not activated |
+| **C07** | Public-interest co-test (6 population groups) | Resident + disability + elderly reps | Worst-20% experience worsens 2 consecutive weeks -> PAUSE |
+| **C08** | Quantity / spec / full-lifecycle cost | Engineering cost consultant | Field measurement + comparable bids <2 -> no budget calc |
+| **C09** | Procurement, insurance, operations, 5-area interfaces | Procurement + legal | Any unsigned -> G3 not opened |
+| **C10** | Composite Go/No-Go + G2 drill | Governance consortium | Any item missing -> whole package HOLD |
+
+**Readiness gradient** (clearly layered, no leap-frogging allowed):
+
+- **T0**: Rules and synthetic replay complete (current state)
+- **T1**: All C01-C10 NOT_BLOCKED, desktop review and drill design may begin
+- **T2**: Professional engagement, field measurement, conclusions, quantities, bidding and sign-off not yet started
+- **T3**: Procurement, construction, real data, recruitment and G3 field piloting closed — not entered until C01-C10 complete and G2 drill passes
+
+Each package also has a pre-implementation table — site / rights evidence, candidate-entity confirmation method, required professions, authorisation documents, baseline + minimum sample, capital / operations / maintenance / removal-restoration costs, close conditions. Table fields live in `visual/assets/delivery_contracts.json`'s `implementation_preflight`; all units remain `not_started` or `unconfirmed`; no institution names or fabricated amounts `[assumption:A-IMPLEMENTATION-001]`.
+
+## Switchback-line tabletop replay package
+
+`visual/assets/tabletop_cases.json` is a **zero-network + zero-personal-data + zero-field-input** offline tabletop replay package. Each scenario card (S1-S12) generates 1 full-field synthetic pass branch + 1 reject-or-pause branch — **12 scenario cards = 24 cases** `[depth:ai_scenario_service_nodes]`.
+
+```
+T01-PASS / T01-REJ   (S1 Compute scheduling & benchmark)
+T02-PASS / T02-REJ   (S2 Open-source co-creation workshop)
+T03-PASS / T03-REJ   (S3 AI + rail shuttle navigation)
+T04-PASS / T04-REJ   (S4 All-age slow-mobility guidance)
+T05-PASS / T05-REJ   (S5 AI + community health kiosk)
+T06-PASS / T06-REJ   (S6 AI + education convenience node)
+T07-PASS / T07-REJ   (S7 Intelligent-native consumption)
+T08-PASS / T08-REJ   (S8 Low-speed robot delivery pilot)
+T09-PASS / T09-REJ   (S9 Autonomous shuttle pilot)
+T10-PASS / T10-REJ   (S10 Jing-Zhang heritage AI guide)
+T11-PASS / T11-REJ   (S11 City-agent governance dashboard)
+T12-PASS / T12-REJ   (S12 Developer community venue)
+```
+
+**Each case includes**:
+
+- `inputs`: synthetic data source + isolated sandbox + human-gate principal (`unconfirmed`)
+- `expected_outcome`: PASS / REJECT / PAUSE / ESCALATE / STOP / ROLLBACK / REPLACE
+- `verifiable_fields`: machine-checkable fields (data provenance, human signoff, rollback path, pause / recovery evidence)
+- `evidence_artifacts`: pointable to specific artifacts (`sc04-relay-receipt.json`, `evidence-ledger.json`, `tabletop_cases.json`)
+
+**Execution environment hard constraints** (machine-verifiable):
+
+- `network`: `offline` (no network)
+- `real_personal_data`: `none` (no real personal data)
+- `real_field_data`: `none` (no real field data)
+- `real_services_connected`: `none` (no real services connected)
+- `messages_sent`: `none` (no messages sent)
+- `field_runs`: `0` (zero field runs)
+
+**Evidence boundary**: This package only proves that participant-authored rules and receipt formats are executable; **it does not prove field validation, accessibility compliance, product certification, government approval, or implementation authorisation** `[assumption:A-EVIDENCE-001]` `[assumption:A-OPERATIONS-001]`.
+
+## ## Renewal project list, implementation policy and phasing plan
 
 **Executable project portfolio (in place of abstract phased area-blocks)** — each project includes preconditions, potential subjects, cost level, dedicated review, KPIs, stop / rollback conditions and operational responsibility `[depth:phasing_implementation]` `[depth:renewal_project_list]`, corresponding to `geometry/phasing.geojson` `[data:geometry/phasing.geojson#PH-001]`. All projects are conceptual suggestions; no fabricated government / funding / approval commitments `[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]` `[assumption:A-IMPLEMENTATION-001]`:
 
@@ -593,7 +534,8 @@ Data gaps: existing buildings, property rights, underground space and municipal 
 - **Recruitment & translation channels**: talent (developer community → entrepreneurship), enterprise (benchmark testing → settlement), developer (contribution → honour → cooperation).
 - **Long-term maintenance responsibility**: each project clearly defines its operating entity and maintenance cycle (see table above); no fabricated operating budgets.
 
-### Prioritisation principle: minimum regret (minimax regret)
+## Minimum-regret prioritisation methodology
+ (minimax regret)
 
 Under provisional boundary + missing control plan + missing existing-conditions survey, "maximum on every metric" is neither verifiable nor implementable. This proposal adopts a **minimum-regret (minimax regret) prioritisation principle** — not pursuing single-indicator optimality, but ensuring **the weakest experience meets standard**, spending limited certainty on "avoiding the worst outcome" `[depth:phasing_implementation]` `[depth:risk_missing_data]`.
 
@@ -672,7 +614,23 @@ Coverage: `compliance_matrix.json` covers all 17 announcement items (1.3.1–1.5
 
 ![Core-indicator recomputation and evidence chain](assets/figures/metrics-evidence.en.png)
 
-## Risks, copyright and compliance notes
+## Seven-dimension evidence map (review traceability)
+
+Each of the 7 review dimensions points to **3 primary evidence entries** — total **21 traceable paths**. Every path is machine-verifiable in artifacts `[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]` `[depth:risk_missing_data]`:
+
+| Review dimension | Primary evidence 1 | Primary evidence 2 | Primary evidence 3 |
+|---|---|---|---|
+| **brief_alignment** | `proposal.md` section three-minute read | `visual/assets/tabletop_cases.json` | `manifest.json` |
+| **originality** | `proposal.md` section switchback concept | `visual/assets/sc04-relay-receipt.json` | `proposal.md` section C01-C10 |
+| **ai_planning_innovation** | `proposal.md` section scenario-to-professional lock | `proposal.md` section AI-shapes-spatial-form (in overall design) | `visual/assets/evidence-ledger.json` |
+| **implementation_feasibility** | `proposal.md` section C01-C10 | `proposal.md` section implementation timeline + RACI | `visual/assets/tabletop_cases.json` |
+| **public_interest_inclusion** | `proposal.md` section equity ledger | `visual/assets/edge-matrix.json` (12 boundary x 7 paths) | `proposal.md` section public-interest chapter |
+| **risk_compliance** | `proposal.md` section C10 no-go conditions | `proposal.md` section R0-R3 resilience states | `visual/assets/sc04-relay-receipt.json` |
+| **expression_completeness** | `proposal.md` section three-minute read | figures (6 images) + drawings (4 PDFs) | `visual/assets/tabletop_cases.json` |
+
+The seven-dimension evidence map **points to concrete artifacts** (3 entries per dimension); `design_depth_matrix.json` is the **self-declaration** — clear division of labour, no substitution. Each path is machine-traceable at review time back to the original JSON, GeoJSON, narrative, or drawings `[data:visual/assets/delivery_contracts.json]`.
+
+## ## Risks, copyright and compliance notes
 
 - **Source legitimacy**: entirely based on open / rights-cleared sources `[source:SITE-PACKAGE]`, with the provisional boundary explicitly flagged `[source:PROVISIONAL-BOUNDARY]` `[depth:risk_missing_data]`.
 - **No fabricated official commitments**: all spatial content is a conceptual suggestion / reference scheme; it does not replace formal planning and does not constitute a government-approved conclusion `[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]`.

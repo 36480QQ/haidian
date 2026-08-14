@@ -54,6 +54,14 @@ The Transfer Commons treats the innovation belt as a connected set of thresholds
 
 The public validation chain runs through propose, test, explain, review, and adopt or exit. Spatially, each scenario contains an open interface, a controlled test interface, and a human accountability interface. Operationally, each pilot has a time limit, data-minimisation list, exit mechanism, and retrospective record. [depth:overall_spatial_structure] [standard:MOHURD-URBAN-DESIGN-MEASURES]
 
+### Brand identity and taskbook alignment
+
+The paired Chinese and English names make “transfer” carry four meanings: transport interchange, technology transfer, social translation, and responsibility handoff. The visual identity uses a railway switch—two paths diverging and meeting again—as an original geometric motif. Deep navy represents trustworthy infrastructure, teal represents open collaboration, and orange marks a validation point entering public view. The system uses only self-drawn lines, planes, and generic fonts; it does not reuse railway, government, company, or competition marks. It can extend into node numbers, scenario-card frames, bilingual wayfinding, and event badges without being confused with an official logo for the Centennial Jing-Zhang AI Innovation Belt. [source:AGENT-TASKBOOK]
+
+The taskbook's three positionings become three public experiences. The Centennial Jing-Zhang Cultural Belt provides a walkable narrative of time and distance; the Metropolitan AI Life Experience Belt provides optional and exitable daily services; and the AI Integrated Innovation Belt provides a validation chain from research to adoption. The five functions are carried by full-stack validation at Zhongzhiyuan, the innovation ecosystem at AI Origin Community, AI-plus scenarios along Xiaoyuehe and public spaces, the intelligent-native urban interface at Dazhongsi, and a human-review governance protocol across all nodes. The Zhongguancun Technology Service Wing provides legal, intellectual-property, capital, and enterprise-service interfaces; the Xiaoyuehe Scenario Empowerment Wing hosts low-impact trials and public experience. Together with the three areas, they form an input–validation–adoption–feedback loop. [source:AGENT-TASKBOOK]
+
+Regional collaboration is expressed through reusable interfaces, not invented projects or company lists. Beiwei Community can share community-service evaluation protocols; Future Science City and Huairou Science City can connect research prototypes and test needs; Beijing E-Town can connect engineering and supply-chain validation; and Beijing–Tianjin–Hebei partners can reuse scenario cards, licence checklists, and failure-case formats. Every cross-regional collaboration requires separate confirmation from real participants and retains provenance, authorisation, an accountable person, and an exit record. This proposal suggests a collaboration mechanism; it does not claim that any institution already participates or has committed. [source:AGENT-TASKBOOK]
+
 ## Three-level scope framework
 
 ![Three scales and the transfer network](assets/figures/land-use-structure.en.png)
@@ -182,6 +190,18 @@ At the present geometry stage, the proposal retains only reversible and recalibr
 
 A project advances because official spatial data, an implementing body, funding, professional review, and public feedback are simultaneously verifiable—not because a concept is popular. [data:geometry/phasing.geojson#PHASE-001] [depth:phasing_implementation]
 
+### Annual operation and conversion loop
+
+Long-term operation follows quarterly small loops and an annual review. Every activity remains a proposed mechanism pending confirmation by an operator.
+
+| Cycle | Event brand | Place and participants | Verifiable output | Gate for the next step |
+| --- | --- | --- | --- | --- |
+| Quarterly | Transfer Open Day | Rotating among the three key areas; residents, developers, firms, and universities | Public problem list, scenario applications, accessibility feedback | Accountable operator, authorised inputs, and a non-AI alternative |
+| Half-yearly | Commons Test Week | Zhongzhiyuan and Xiaoyuehe interfaces; test teams and public observers | Test protocol, failure cases, human-review record | Safety, privacy, copyright, and site reviews passed |
+| Annual | Jing-Zhang Transfer Forum | AI Origin Community and Dazhongsi; domestic and international partners | Bilingual casebook, open-source outcome catalogue, next-year agenda | Fact and licence review; no investment-promotion or government promise |
+
+The conversion pathway is public challenge, compliance screening, small-scale test, public explanation, human evaluation, and procurement, incubation, or exit. The developer community maintains reproducible test templates and a problem library. Professional teams review space, safety, law, and accessibility. Operators record bookings, maintenance, complaints, and shutdowns. The public can submit problems, see aggregate results, and choose non-AI services. A scenario that misses safety, accessibility, correction, or public-understanding thresholds for two consecutive cycles returns for revision or exits; attendance does not substitute for public value. [source:AGENT-TASKBOOK]
+
 ## Metrics, area recomputation, and compliance matrix
 
 ### Metrics and review gates
@@ -212,6 +232,21 @@ This formal package provides nine GeoJSON layers, five bilingual figure pairs, b
 - rerender bilingual HTML, refresh manifest hashes, and rerun deterministic, spatial, visual, professional-evidence, and final preflight checks.
 
 The largest risk is not insufficient futurism. It is false precision in the absence of baseline data, or transferring public-service responsibility to automation before accountability exists. The proposal keeps those gaps as explicit gates. Any update to official boundaries, planning controls, ownership, roads, utilities, heritage, or public services triggers full-package recomputation rather than silent replacement. [depth:risk_missing_data]
+
+### Risk controls and human-review matrix
+
+The proposal uses only public repository material, registered public webpages, and participant-created conceptual layers. It uses no internal material, non-public spatial data, personal data, or classified information. Every output is an open co-creation proposal: it does not replace statutory planning or constitute a government review, approval, investment, or implementation decision. [source:AGENT-TASKBOOK]
+
+| Risk | Preventive control | Human review and trigger | Response and record |
+| --- | --- | --- | --- |
+| Provisional geometry is mistaken for a statutory redline | Pages, drawings, and GeoJSON retain provisional labels and `official_boundary=false` | When official polygons or a higher-confidence version arrive, planning and GIS staff verify provenance, coordinate system, and version | Recompute the whole package, retain the old version, and record the differences |
+| A scenario collects personal information or creates profiles | Prefer aggregate, anonymous, synthetic, or actively submitted data; minimise by purpose and set deletion periods | Pause when identity, imagery, traces, or sensitive information appears; data and legal owners review consent, retention, and access | Delete unnecessary data and retain non-AI, withdrawal, and appeal records |
+| AI advice is treated as a public decision | State capability limits; prohibit automated enforcement, approval, penalties, or denial of resources | A named professional reviews every output affecting safety, rights, or public resources | Record model version, input scope, human decision, correction, and shutdown reason |
+| Images, marks, cases, or code infringe rights | Use original figures, a generic layout, and registered sources; copy no case image, map, or extended prose | Before release, verify author, licence, credit, redistribution scope, and generation method for each new asset | Remove or replace anything that cannot be cleared; update `sources.json` and the copyright statement |
+| A pilot creates construction, fire, traffic, or operating risk | First-round tests are reversible, low-impact, and small-scale; no engineering-feasibility conclusion is claimed | Relevant professionals, the site owner/operator, and the public-safety owner approve before field use | Do not start if a gate fails; log incidents and decide correction, pause, or exit |
+| Bias, false alarms, or service exclusion harms users | Retain staffed desks, paper feedback, phone-free and accessible routes; compare errors and access across groups | Persistent errors, concentrated complaints, or exclusion of vulnerable users triggers independent review | Degrade to a human service, publish aggregate problems and a correction deadline, and never hide harm behind average accuracy |
+
+The proposed project owner updates the risk register quarterly. Any change involving privacy, copyright, public safety, heritage, ecology, or statutory planning receives human review before release. Public retrospectives disclose only aggregate results and cleared material; raw personal data, security details, and non-public professional material never enter the submission, website, or public knowledge base.
 
 ## References
 

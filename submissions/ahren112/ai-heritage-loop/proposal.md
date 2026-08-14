@@ -117,6 +117,16 @@ Logo 方向以**双线轨道与神经网络节点同构**为母题：两条平�
 | TS-02 | 机器人低速配送测试街区 | 大钟寺 | **测试验证** | 限定时段路段，人工监督 |
 | TS-03 | AI交通慢行协同实验段 | 小月河翼 | **测试验证** | 传感数据最小化，可退出 |
 
+### 三个产业测试验证场景深化（agent.3）
+
+三个测试验证场景从"空间落位—分期—参与主体—数据边界—人工复核—运营机制—风险"七个维度展开，均为概念建议与试点方向，不表述为已批准运营 [source:AGENT-TASKBOOK]。
+
+**TS-01 全栈模型安全测试场（众智园）**：作为自主模型、红队评测与标准制定的可参观测试节点。空间上依托众智园中部研发组团，改造一处存量测试空间为"安全评测沙盒"；近期试点以封闭测试为主，中期向预约制观摩开放。参与主体为入驻 AI 企业与标准制定机构，运营遵循申请-评估-试点-复盘四步；测试数据全程封闭、结果脱敏后仅发布聚合报告，人工复核为发布前置条件。风险在于评测能力与标准话语权的协调，需专业团队深化 [data:geometry/key_areas.geojson#PROV-KEY-001]。
+
+**TS-02 机器人低速配送测试街区（大钟寺）**：依托大钟寺站四象限步行连通改造，选取一条限定时段、限速路段作为低速配送测试走廊。近期试点以单一运营主体、低速无人配送车试行为主，配人工监督员；中期评估后决定是否扩展。数据仅采集配送轨迹与运行状态，不采集行人身份；路段开放时段与行人通道分离，异常事件由人工复核。风险在于人车冲突与公众接受度，需交通、市政与安全专项评估 [data:geometry/key_areas.geojson#PROV-KEY-003]。
+
+**TS-03 AI 慢行协同实验段（小月河翼）**：沿小月河慢行带选取一段作为交通慢行协同实验段，用低侵入传感辅助识别慢行断点、拥挤与无障碍需求。传感数据最小化、匿名化，用户可退出；信号优化建议仅作参考，经人工复核后由专业团队实施。近期以数据采集与问题识别为主，中期试点信号协同。风险在于隐私与数据边界，须遵循数据最小化与可退出原则 [data:geometry/roads.geojson#ROAD-001] [metric:scenario_node_count]。
+
 ### 场景-空间-运营映射
 
 每个场景节点进入 `geometry/` 对应图层（公共空间、绿地、道路或重点片区），并在 `compliance_matrix.json` 中登记；运营遵循"申请—评估—试点—复盘"四步机制，人工复核为必要环节 [data:geometry/public_space.geojson#PUBLIC-001] [metric:scenario_node_count]。所有场景均为概念建议与试点方向，不构成已批准运营安排。
@@ -203,10 +213,10 @@ Logo 方向以**双线轨道与神经网络节点同构**为母题：两条平�
 
 - 北京市规划和自然资源委员会海淀分局：《百年京张AI创新带城市设计国际方案征集资格预审公告》（2026-05-09）[source:OFFICIAL-ANNOUNCEMENT]
 - 《面向全球智能体开展百年京张AI创新带城市设计开源征集任务书摘录》（用户提供清权摘要，2026-05-18）[source:AGENT-TASKBOOK]
-- 住房和城乡建设部：《城市设计管理办法》（2023）；《城市、镇控制性详细规划编制审批办法》[standard:MOHURD-URBAN-DESIGN-MEASURES] [standard:MOHURD-CONTROL-DETAILED-PLANNING]
+- 住房和城乡建设部：《城市设计管理办法》（2023）[standard:MOHURD-URBAN-DESIGN-MEASURES]；《城市、镇控制性详细规划编制审批办法》[standard:MOHURD-CONTROL-DETAILED-PLANNING]
 - 自然资源部：《国土空间调查、规划、用途管制用地用海分类指南》（2023-11）[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]
-- 国家网信办等七部门：《生成式人工智能服务管理暂行办法》（2023-07）
-- 全国人大常委会：《中华人民共和国无障碍环境建设法》（2023-06）
-- 国务院办公厅：《关于切实解决老年人运用智能技术困难实施方案》（国办发〔2020〕45号）
-- 仓库场地资料：`brief/site-package/design_brief.json`、`allowed_design_space.json`、`geometry/provisional_boundaries.geojson`、`data/source_registry.json`、`data/processed/agent_fact_pack.md`
-- 完整机器索引：`sources.json`、`metrics.json`、`compliance_matrix.json`、`standard_matrix.json`、`design_depth_matrix.json`
+- 国家网信办等七部门：《生成式人工智能服务管理暂行办法》（2023-07）[source:GENERATIVE-AI-INTERIM-MEASURES]
+- 全国人大常委会：《中华人民共和国无障碍环境建设法》（2023-06）[source:BARRIER-FREE-ENVIRONMENT-LAW]
+- 国务院办公厅：《关于切实解决老年人运用智能技术困难实施方案》（国办发〔2020〕45号）[source:ELDERLY-SMART-TECH-PLAN]
+- 仓库场地资料：`brief/site-package/design_brief.json`、`allowed_design_space.json`、`geometry/provisional_boundaries.geojson`、`data/source_registry.json`、`data/processed/agent_fact_pack.md` [source:SITE-PACKAGE]
+- 完整机器索引：`sources.json`、`metrics.json`、`compliance_matrix.json`、`standard_matrix.json`、`design_depth_matrix.json` [source:SOURCE-REGISTRY]

@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0",
+  "prototype_id": "OLS-1TO1-001",
+  "name_zh": "原点生活服务站 1:1 公共原型",
+  "name_en": "Origin Life Service Station 1:1 Public Prototype",
+  "status": "not_authorized_not_run",
+  "concept_location": "北京 AI 原点社区内的概念选点，真实场地与运营主体待确认",
+  "spatial_moments": [
+    {"order": 1, "id": "ordinary_passage", "zh": "普通通行", "en": "Ordinary Passage", "ai_required": false},
+    {"order": 2, "id": "human_service_commons", "zh": "人工服务厅", "en": "Human Service Commons", "ai_required": false},
+    {"order": 3, "id": "voluntary_ai_alcove", "zh": "自愿 AI 小间", "en": "Voluntary AI Alcove", "ai_required": false},
+    {"order": 4, "id": "public_receipt_gallery", "zh": "公开回执廊", "en": "Public Receipt Gallery", "personal_information": false},
+    {"order": 5, "id": "quiet_restoration_garden", "zh": "安静恢复园", "en": "Quiet Restoration Garden", "screen": false}
+  ],
+  "required_inputs": [
+    "场地书面同意与消防、结构、无障碍专项复核",
+    "服务目录、纸质替代路线与人工排班",
+    "十二个场景的数据上限、申诉和停止脚本",
+    "可逆构件清单、拆除方法与恢复基线照片"
+  ],
+  "proposed_raci": {
+    "accountable": "公共服务委托方，真实主体待确认",
+    "responsible": "现场值守与场地管理联合角色，真实主体待确认",
+    "consulted": ["无障碍使用者代表", "数据与隐私顾问", "遗产与消防专业方"],
+    "informed": ["社区使用者", "场地权利人", "独立复核者"]
+  },
+  "human_signoffs": ["场地准入", "无障碍路线", "人工兜底", "数据最小化", "停止与恢复"],
+  "stop_authority": ["现场安全控制角色", "公共服务责任角色"],
+  "physical_stop_action": ["断开 AI 服务路径", "保留普通通行和人工服务", "封存当次审计回执", "移除临时接口"],
+  "restoration_acceptance": ["普通服务恢复", "临时构件移除", "表面与通行空间恢复", "资料处置留痕"],
+  "data_expiry_owner": "公共服务责任角色，真实主体待确认",
+  "non_commitment": "概念建议；非官方红线、非审批、非采购或实施承诺。"
+}

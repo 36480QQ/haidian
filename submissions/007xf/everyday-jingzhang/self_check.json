@@ -63,13 +63,19 @@
         "submissions/007xf/everyday-jingzhang/self_check.json",
         "submissions/007xf/everyday-jingzhang/sources.json",
         "submissions/007xf/everyday-jingzhang/standard_matrix.json",
+        "submissions/007xf/everyday-jingzhang/visual/assets/asset-rights-ledger.json",
+        "submissions/007xf/everyday-jingzhang/visual/assets/duty-shift-contracts.json",
+        "submissions/007xf/everyday-jingzhang/visual/assets/osm-context-provenance.json",
+        "submissions/007xf/everyday-jingzhang/visual/assets/preopening-shift-rehearsal.json",
+        "submissions/007xf/everyday-jingzhang/visual/assets/reviewer-evidence-index.json",
+        "submissions/007xf/everyday-jingzhang/visual/assets/run-shift-rehearsal.js",
         "submissions/007xf/everyday-jingzhang/visual/index.en.html",
         "submissions/007xf/everyday-jingzhang/visual/index.html"
       ],
       "ai_package_stages": {
         "submissions/007xf/everyday-jingzhang": "formal"
       },
-      "total_bytes": 21293935,
+      "total_bytes": 22169190,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -130,7 +136,7 @@
         "everyday_urban_move_count": 7.0,
         "mature_staff_tool_capability_count": 6.0,
         "automated_public_decision_count": 0.0,
-        "non_ai_alternative_coverage_ratio": 1.0,
+        "duty_shift_contract_count": 12.0,
         "site_area_sqm": 11412825.386,
         "green_ratio": 0.179931,
         "public_space_ratio": 0.002178
@@ -147,15 +153,15 @@
       "summary": {
         "standard_matrix_items": 9,
         "design_depth_items": 15,
-        "known_metric_refs_required": 38,
+        "known_metric_refs_required": 51,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 28,
+          "source": 35,
           "standard": 9,
           "depth": 14,
           "data": 15,
-          "metric": 38
+          "metric": 47
         }
       }
     },

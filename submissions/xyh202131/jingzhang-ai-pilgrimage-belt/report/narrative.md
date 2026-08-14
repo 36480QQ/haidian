@@ -4,6 +4,103 @@
 >
 > This file applies only to `submissions/xyh202131/jingzhang-ai-pilgrimage-belt/`. It is a package-local copy reference, not a repository-level reusable template, public PR template, or maintainer policy. No `[x]` may be inherited when it is copied into another submission or later PR.
 
+## Round 19 final-grade quality convergence / 第 19 轮终稿级质量收束
+
+第 19 轮只在第 18 轮 PR #2423 的 merge commit `88c5419bdda6eed5f0e96553fa69e0c424860a48` 已进入 canonical `main`、且同一投稿包没有其他开放 PR 后开始。它不增加品牌、场景、项目、重点区、治理合同或成熟度叙事，只把既有成果收束为 30 秒概念、3 分钟四态与 15 分钟证据/专业交接三层阅读。前台唯一总纲仍为“双轨京张 / Twin-Track Jing-Zhang”；众智园、原点社区和大钟寺仍是不可互换的验证、共创和发布/人工服务原型；JZ-AIOS、G0—G3、四轴、三载体、证据门和权利边界仍为后台内核。
+
+Round 19 began only after Round 18 PR #2423 merged into canonical `main` at `88c5419bdda6eed5f0e96553fa69e0c424860a48` and no other open PR touched this package. It adds no brand, scene, project, key area, governance contract or maturity narrative. It converges the existing work into a 30-second concept read, a three-minute four-state read, and a 15-minute evidence/professional-handoff trail. Twin-Track Jing-Zhang remains the sole front-stage thesis; Zhongzhiyuan, Origin Community and Dazhongsi remain non-interchangeable verification, co-creation and publishing/staffed-service prototypes; JZ-AIOS, G0–G3, four axes, three carriers, evidence gates and rights boundaries remain the backstage kernel.
+
+四类高影响资产在原路径重建：封面、普通生活三联图、双语重点区平面和双语重点区剖面。封面与普通生活图均是合成概念展示，不是现场照片、批准方案、已建状态、无障碍结果或居民反馈；三处图面分别以平行隔离验证庭、一街两院四节点、四向通勤十字加路外厅台建立不同空间骨架。离线 visual 的前台恰为封面—普通生活—四态旅程—三处空间—公共信号—专业交接六段；12 秒/态、48 秒总时长只表示用户启动的界面节奏，不表示现实故障或恢复时长。无 JavaScript、减少动态、打印和键盘/焦点路径均保留完整静态信息。
+
+Four high-impact asset families were rebuilt in place: cover, ordinary-life triptych, bilingual key-area plans and bilingual key-area sections. The generated images are synthetic concept presentations, not site photographs, approved designs, built conditions, accessibility results or resident feedback. The three spatial skeletons are a parallel isolated proof court, one street/two courts/four nodes, and a four-way commuting cross with an off-route hall and staffed desk. The offline visual has exactly six front-stage parts: cover, ordinary life, four-state journey, three places, public signals and professional handoff. Twelve seconds per state and 48 seconds total describe user-started interface pacing only, not a real incident or recovery duration. No-JavaScript, reduced-motion, print and keyboard/focus paths retain the complete static argument.
+
+中英文 proposal 均保留 13 个 formal 章节、21 张图、相同 H2/H3 结构、关键数字和证据标记族。故障只停止验证叠层；连续普通任务、完整非 AI 路径、人工交接、撤回与申诉继续。恢复先还普通使用，不等于授权、重启、批准或 G1。G0、NO-GO、临时边界、现实结果 0、`unknown`、`not_fully_cleared`、非 AI 权利、权利阻断和专业修改/拒绝/删除权均未删除。
+
+The Chinese and English proposals retain the same 13 formal chapters, 21 figures, H2/H3 structure, critical numbers and evidence-marker families. Failure stops only the proof overlay; the continuous ordinary task, complete non-AI path, staffed handoff, withdrawal and appeal continue. Recovery restores ordinary use first and is not authorization, restart, approval or G1. G0, NO-GO, provisional geometry, zero real results, `unknown`, `not_fully_cleared`, non-AI rights, rights blocks and professional power to revise/reject/delete remain explicit.
+
+### Round 19 fixed-size publication evidence / 第 19 轮固定页数出版证据
+
+中英文 A3 各 14 页横向：封面、三框场地、功能信封、三处平面、三处剖面、普通慢行与维护净空、非 AI 同任务路径、普通生活、四态、气候条件、现实零状态、公共信号、专业交接、现实边界。中英文 A0 各 8 页横向：三框场地；功能信封+普通慢行；三处平面；剖面+可逆恢复；非 AI+普通生活；四态+气候；包内计数+现场证据入口；公共信号+专业交接。每张 A0 只表达一条评审判断。
+
+Each language has 14 landscape A3 pages: cover, three-frame site reading, functional envelopes, three plans, three sections, ordinary movement/maintenance clearance, same-task non-AI route, ordinary life, four states, climate conditions, reality zero, public signals, professional handoff, and reality boundary. Each language has eight landscape A0 boards: three frames; envelopes plus ordinary movement; three plans; sections plus reversible restoration; non-AI plus ordinary life; four states plus climate; package counts plus field-evidence intake; public signals plus professional handoff. Every A0 board states one review judgement.
+
+两个全新 Python 进程分别从同一最终输入构建四份 PDF，逐文件字节一致。A3 页面为 1190.55 × 841.89 pt，A0 页面为 3370.39 × 2383.94 pt；A3/A0 最小可提取正文分别为 8.90/9.20 pt。ReportLab 5.0.0 使用 `invariant=1`、固定元数据、固定顺序和页压缩；fontTools 4.63.0 从 `C:/Windows/Fonts/NotoSansSC-VF.ttf`（SHA-256 `763146584cf0710223441356b4395e279021b0806c196614377a7a0174ae074a`）实例化 500/700 字重，静态字体 SHA-256 分别为 `3ef498f03c2b1c00f74907090970646494dda4da5bb7d5e23ffe4b750cad4fe8` 与 `6d633cfffc1537797454d7ad68511abc8e9956f8292e1f1d71eace723af1fa54`。PDF 可搜索文字只使用 `NotoSansSC-Medium` 与 `NotoSansSC-Bold`；资源字典中的 Helvetica 没有可见文字 span。字体嵌入不等于许可合规，独立字体权利审计仍未完成。
+
+Two fresh Python processes built the four PDFs from the same final inputs and produced byte-identical files. A3 pages are 1190.55 × 841.89 pt and A0 pages are 3370.39 × 2383.94 pt; minimum extracted body text is 8.90 pt on A3 and 9.20 pt on A0. ReportLab 5.0.0 used `invariant=1`, fixed metadata, fixed order and page compression. fontTools 4.63.0 instantiated 500/700 weights from `C:/Windows/Fonts/NotoSansSC-VF.ttf` (SHA-256 `763146584cf0710223441356b4395e279021b0806c196614377a7a0174ae074a`); the static-font SHA-256 values are `3ef498f03c2b1c00f74907090970646494dda4da5bb7d5e23ffe4b750cad4fe8` and `6d633cfffc1537797454d7ad68511abc8e9956f8292e1f1d71eace723af1fa54`. Searchable PDF text uses only `NotoSansSC-Medium` and `NotoSansSC-Bold`; Helvetica has no visible text spans. Font embedding does not establish licence compliance, and independent font-rights review remains incomplete.
+
+每张 A0 先嵌入与包内 PNG 像素完全一致的审阅层，再叠加 Chrome 离线渲染、以 JPEG2000 rate 300 确定性编码的同源 SVG 4× JPX 印刷层；PDF 内两张摄影型概念媒体另以像素无损 JPX 收束，包内 WebP 原件和解码像素均不改变。26 个可重渲染图层均按自身真实画布检查：24 个图层为 7200×4400，中文/英文 `reversible-components` 为完整的 7200×4800，没有裁去 1800×1200 源图底部。最终 26 层全幅下采样平均像素差最大 5.259。A3 第 4—5 页改用出版专用 live-vector 平面与四态关系图，三处的空间骨架、人工交接、故障范围和恢复对象在可搜索正文中直接表达；A0 普通生活图旁保留中英图像级“合成概念图／非现场照片”等披露。PyMuPDF 1.27.2.3 和 Pillow 12.2.0 对 44 页做页面数、尺寸、空白、替换字符、对象边界、源像素、4× 层、字体和可搜索标题检查，并在终局压缩后重新渲染全部全页、关键细节和彩色/灰度 contact sheets；没有发现黑块、裁切、语言错置、空页、越界或明显压缩退化。出版 QA 仍不证明现场事实、批准、G1、无障碍结果、权利清除或专业接受。
+
+Every A0 first embeds a review layer whose decoded pixels exactly match the package PNG, then overlays a 4x JPX print layer rendered offline from the corresponding SVG in Chrome and deterministically encoded at JPEG2000 rate 300. The two photographic concept-media streams inside the PDFs are separately compacted as pixel-lossless JPX; the checked-in WebP sources and their decoded pixels do not change. All 26 renderable layers were checked against their actual canvases: 24 layers are 7200×4400, while Chinese and English `reversible-components` are complete 7200×4800 renders of their 1800×1200 sources. No bottom strip is cropped. Maximum full-image downsample MAE across the final 26 layers is 5.259. A3 pages 4–5 use publication-specific live-vector plans and four-state relationships so the three spatial skeletons, staffed handoff, fault scope and restoration object remain directly searchable. The A0 ordinary-life board keeps an image-level bilingual disclosure identifying the image as synthetic and not a site photograph. PyMuPDF 1.27.2.3 and Pillow 12.2.0 checked page count, dimensions, blanks, replacement characters, object bounds, exact source pixels, 4x layers, fonts and searchable role titles across all 44 pages, then rerendered every page, key details and colour/grayscale contact sheets after final compression. No black block, clipping, wrong-language asset, blank page, out-of-bounds object or evident compression regression was found. Publication QA still proves no site fact, approval, G1, accessibility result, rights clearance or professional acceptance.
+
+| PDF | Pages / format | SHA-256 |
+|---|---|---|
+| `drawings/a3-booklet.pdf` | 14 / A3 landscape | `edaee9f6218ee59d5a332c0fbb6ced61be12c366a7c944c157b921c1137916ec` |
+| `drawings/a3-booklet.en.pdf` | 14 / A3 landscape | `25aa62ac9c4a46f6222c14fa40881f667589ddf1beabed7e978fbb02ded36127` |
+| `drawings/a0-boards.pdf` | 8 / A0 landscape | `6de5308769443898684ac63295251f68f087a8c75665796326a424357faf8749` |
+| `drawings/a0-boards.en.pdf` | 8 / A0 landscape | `ba14d5caa2d240809d541de94a4913b2f77dc4b5c8ea75478e8b3c84060275cd` |
+
+`report/proposal.html` 与 `report/proposal.en.html` 由最终 Markdown 重新生成并规范为 UTF-8/LF；两者均为本地资源，保留 20 个 H2（其中 13 个 formal 章节）、21 张图、证据链接和语言切换，无远程 URL、表单或追踪。全部 geometry 与 `metrics.json` 保持冻结；12 场景、8 项目、3 重点区、36 概念用地单元不变。
+
+`report/proposal.html` and `report/proposal.en.html` were regenerated from the final Markdown and normalized to UTF-8/LF. Both use local resources only and retain 20 H2 headings (including the 13 formal chapters), 21 figures, evidence links and language switching, with no remote URL, form or tracker. All geometry and `metrics.json` remain frozen; 12 scenes, eight projects, three key areas and 36 conceptual land-use units remain unchanged.
+
+最终 visual 由本地 Chrome 151.0.7922.109 在临时 `127.0.0.1` 地址完成 13 项双语浏览器矩阵：1440×900、390×844、禁用 JavaScript、减少动态、打印、键盘焦点／同页步骤和 12.25 秒首个状态边界。页面级横向溢出为 0；移动端只在已标注图件容器内保留局部横向阅读；无 JavaScript 与打印均显示五步后台证据，减少动态一次只推进一态。外部主机、HTTP 错误、失败请求、控制台 warning/error 和页面错误均为 0。该本地 headless 检查不是辅助技术认证、实体打样、现场证据或运行系统证明。
+
+The final visual passed a 13-case bilingual Browser matrix in local Chrome 151.0.7922.109 through one ephemeral `127.0.0.1` origin: 1440×900, 390×844, JavaScript disabled, reduced motion, print, keyboard focus/same-page steps, and the first state boundary at 12.25 seconds. Page-level horizontal overflow was 0; only the labelled mobile figure containers retain local horizontal reading. All five backstage steps remain visible without JavaScript and in print, while reduced motion advances one state per activation. External hosts, HTTP errors, failed requests, console warnings/errors and page errors were all 0. This local headless check is not assistive-technology certification, a physical proof, field evidence or an operating-system claim.
+
+## Round 18 public signal interface and readable civic timetable / 第 18 轮公共信号界面与可读时刻表
+
+第 18 轮在第 17 轮 PR #2369 合并并进入 `origin/main@5a284d177c9c6a7719378711d67514ac6c709f76` 后开始；开始编辑前，同一投稿包没有开放竞争 PR，GitHub 与 Git 作者身份均为 `xyh202131`。本轮不增加新品牌、场景、项目或规划方向，只把既有入口、时段、状态、人工、来源、退出六类城市信号，落实为三座换轨场在普通、验证、故障、恢复四态下的公共界面。
+
+Round 18 began after Round 17 PR #2369 merged into `origin/main@5a284d177c9c6a7719378711d67514ac6c709f76`. Before editing, no open PR competed for this package, and both GitHub and Git author identities were `xyh202131`. The round adds no brand, scene, project or planning direction. It turns the inherited entry, time, state, human, source and exit signals into a public interface for ordinary, proof, failure and recovery at the three switchyards.
+
+三处载体保持不可互换：众智园的连续观察绕行始终成立，设备与验证只在隔离边旁侧出现，故障只隔离验证边，恢复先核绕行；原点社区的一街两院保持居民日常，一次只候选一个可撤回节点，故障和恢复只落到受影响节点；大钟寺的四向步行保持通勤连续，一厅一台退到流线旁侧，故障关闭服务支线而不关闭步行交叉，恢复先核通勤。这里的载体、入口和状态都是设计关系，不是既建设施、现状街院、车站锚点、精确位置或场地批准。
+
+The carriers remain non-interchangeable. Zhongzhiyuan keeps the continuous observation bypass while equipment and proof stay at an isolated side edge; failure isolates that edge and recovery checks the bypass first. Origin keeps one street and two courts for resident daily life; only one withdrawable node may become a candidate, and failure/recovery stay with the affected node. Dazhongsi protects four-way commuting while the hall and desk remain off-route; failure closes the service siding rather than the walking crossing, and recovery checks commuting first. These carriers, entrances and states are design relationships—not built facilities, existing street/court records, station anchors, exact locations or site approvals.
+
+双语离线 visual 在 `#public-signal-interface` 提供三处 × 四态的选择器，但 JavaScript 只从同页 12 行静态 HTML 表读取六个字段，不联网、不存储、不采集、不调用 AI。选择器使用原生按钮；状态同时用编号、文字和线型表达，颜色只辅助。禁用 JavaScript 后，默认六问和 12 行合同仍全部可读。该可访问性和交互只是包内表达意图，不是独立认证、人工在线或运营系统。
+
+The bilingual offline visual provides a three-place × four-state selector at `#public-signal-interface`, but JavaScript only reads six fields from the same twelve-row static HTML table. It makes no network request, stores and collects nothing, and calls no AI. Native buttons are used; numbers, words and line styles carry state while colour is supplementary. Without JavaScript, the default six questions and all twelve rows remain readable. This accessibility and interaction work is package-level presentation intent, not independent certification, staffed presence or an operating system.
+
+结构化闭环位于 `visual/assets/key-area-evidence-matrix.json#public_signal_interface_round18` 与 `visual/assets/site-grounding-register.json#public_signal_interface_round18`，并回链非 AI 同权、全年运营、失败治理、可逆恢复和三框场地读取。真实起止时段、班次、位置、尺寸、责任接受与表现保持 `unknown`；人工在线、已确认窗口、现场测试、现实事故、恢复验收、批准与 GO 决定均为 0。geometry、`metrics.json`、12 场景、8 项目、3 重点区、全部 G0、临时边界、NO-GO 与 `not_fully_cleared` 均未改变。
+
+Structured closure sits in `visual/assets/key-area-evidence-matrix.json#public_signal_interface_round18` and `visual/assets/site-grounding-register.json#public_signal_interface_round18`, backlinking non-AI parity, year-round operations, failure governance, reversible restoration and three-frame site reading. Real times, rosters, locations, dimensions, accepted duties and performance remain `unknown`; staffed presence, confirmed windows, field tests, real incidents, restoration acceptances, approvals and GO decisions are all 0. Geometry, `metrics.json`, 12 scenes, 8 projects, 3 key areas, all-G0 status, provisional boundaries, NO-GO and `not_fully_cleared` do not change.
+
+四份出版物在两个新 Python 进程中用固定顺序、固定元数据、`invariant=1`、页压缩和同一静态字体参数重建，逐文件字节一致。中英文 A3 各 14 页、A0 各 8 页，共 44 页；第 18 轮公共信号图进入一页 A3 和最终 A0 公共信号/专业交接板。manifest、逐文件权利台账和实际文件集合目标为 140/140/140；独立逐文件清权仍为 0。确定性与版面 PASS 只证明当前文件可复核，不证明现场、专业、批准、运营、G1 或权利许可。
+
+Two fresh Python processes rebuilt all four publications with fixed order, fixed metadata, `invariant=1`, page compression and the same static-font parameters; every file was byte-identical. Each language retains fourteen A3 pages and eight A0 pages, 44 total. The Round 18 signal figure enters one A3 page and the final A0 public-signal/professional-handoff board. Manifest, file-rights and actual-file sets target 140/140/140, with 0 completed independent file-level rights audits. Determinism and layout PASS prove only that current files can be reviewed; they prove no field condition, professional acceptance, approval, operation, G1 status or rights licence.
+
+| 文件 / File | 页数与版式 / Pages and format | SHA-256 |
+|---|---:|---|
+| `drawings/a3-booklet.pdf` | 14 / A3 landscape | `1fd03fbdaae9946d908facd2215e6c164ca237015b250a1fd8bf5d05cbca0013` |
+| `drawings/a3-booklet.en.pdf` | 14 / A3 landscape | `3941565853498f0a909e22e4bbde08fff97f67d84d0b6921c98b2bebafdc767f` |
+| `drawings/a0-boards.pdf` | 8 / A0 landscape | `6b093ff0b1bcb7cafae8f4fa888a91b3f0ae8ea8e66eb96ccd904d73d5204c02` |
+| `drawings/a0-boards.en.pdf` | 8 / A0 landscape | `49b7a49ebd14e2cbc2110f801d9f85038ec0c9140875f67f4c45ee15a58bdf79` |
+
+## Round 17 site grounding and expression reduction / 第 17 轮场地锚定与表达减重
+
+第 17 轮只重组评审阅读和证据责任，不改变方案实体。前台现在按“公开背景定位—临时设计容器—可深化设计关系”三框分读，禁止套准成一张现实总图：背景只说明报道方向，`PROV-SITE-001` / `PROV-KEY-*` 只组织资料接收与概念关系，双轨只表达普通任务、旁侧验证、人工交接、停止、恢复和退出。Issue #846 记录的 OSM 背景 0% 相交／约 412.5m 差异只作为复核报警，不是几何平移依据；Issue #1029 尚未证明 `PROV-KEY-003` 的大钟寺车站、道路、地块或建筑锚点，因此图中“四向”只表示服务与移动关系。geometry、`metrics.json`、12 个场景、8 个项目、三处重点区、G0、公共权利与 `not_fully_cleared` 均不变；现场资料、现场结果、GO、批准和新增责任接受均为 0。
+
+Round 17 reorganizes jury reading and evidence responsibility only; it changes no plan entity. The front stage now separates published background orientation, the provisional design container, and design relationships, and forbids their co-registration as one site-truth map. Background supports reported orientation only; `PROV-SITE-001` / `PROV-KEY-*` organize intake and conceptual relationships only; Twin-Track expresses ordinary tasks, adjacent proof, staffed handover, stop, recovery and exit only. The Issue #846 OSM-background discrepancy—0% overlap and approximately 412.5m—remains a review alarm, not a geometry-shift instruction. Issue #1029 does not establish a Dazhongsi station, road, parcel or building anchor for `PROV-KEY-003`; “four-way” therefore denotes service and movement relationships only. Geometry, `metrics.json`, 12 scenes, 8 projects, three key areas, G0, public rights and `not_fully_cleared` remain unchanged; field inputs, field results, GO, approval and newly accepted duties remain 0.
+
+双语 visual 入口采用 30 秒／3 分钟／15 分钟漏斗；无锚点打开不再自动写入 `#step-1` 或跳过首屏，六项主导航位于入口后，完整证据库折叠保留。五组重建核心图分别承担三框场地读取、36 个功能信封／三类空间责任、三处不可互换原型、普通慢行与维护净空、包内计数与现实零状态；15 组包内自编双语 SVG 源和 1 组仓库临时衍生 SVG 源均保留，PNG 只作离线显示导出。移动端在图内横向浏览，并由紧邻三框卡片提供等价文字读法；表格可键盘聚焦并显式声明列标题。上述可访问性措施是设计意图，不是独立认证。
+
+The bilingual visual entry uses a 30-second / 3-minute / 15-minute funnel. An unanchored load no longer writes `#step-1` or skips the first view; six primary links follow the entry, while the full evidence library remains expandable. Five rebuilt core figures carry distinct duties: three-frame site reading; 36 functional envelopes and three spatial duties; three non-interchangeable prototypes; ordinary movement and maintenance clearance; and package counts versus reality-zero evidence. Fifteen package-authored bilingual SVG pairs and one repository-provisional pair remain checked in, with PNG used only as offline display exports. Small screens scroll within the figure and receive an adjacent equivalent three-card text reading; tables are keyboard-focusable with explicit column headers. These accessibility measures are design intent, not independent certification.
+
+四份出版物由两个新 Python 进程以固定输入顺序、固定元数据、`invariant=1`、页压缩和本机 `NotoSansSC-VF.ttf` 静态 500/700 字重重建，逐文件字节一致。中英文 A3 各 14 页、A0 各 8 页，共 44 页；PyMuPDF 全页检查得到空白页 0、替换字形 0、越界文本块 0，四份 PDF 的可搜索文字跨度仅使用 `NotoSansSC-Medium` / `NotoSansSC-Bold`。本地联系表和关键页视觉复核未见裁切；出版 QA 只证明文件可读和当前环境可复现，不证明现场、批准、建设、运营、G1 或清权。
+
+Two fresh Python processes rebuilt all four publications with fixed input order, fixed metadata, `invariant=1`, page compression, and static 500/700 weights from local `NotoSansSC-VF.ttf`; every file was byte-identical across runs. Each language has a 14-page A3 booklet and an 8-page A0 set, for 44 pages total. Full PyMuPDF inspection found 0 blank pages, 0 replacement glyphs, and 0 out-of-page text blocks; searchable spans in all four PDFs use only `NotoSansSC-Medium` / `NotoSansSC-Bold`. Local contact sheets and targeted page renders showed no clipping. Publication QA proves file readability and current-environment reproducibility only; it proves no field condition, approval, construction, operation, G1 status or rights clearance.
+
+`visual/assets/site-grounding-register.json#jury_reading_contract.package_validation_contract` 固化当前包的专项回归期望：10 个 geometry／metrics 输入哈希、389 个唯一空间 ID、12 场景／8 项目／3 重点区、44 页出版、双语浏览器与无 JavaScript 降级、140 项清单／权利路径和 T02 精确回放。它可供最终提交或后续轮次重放，只验证投稿文件和表达合同；即使全部通过，现场调查、专业验收、批准、运营和清权仍为 0 或未完成。
+
+`visual/assets/site-grounding-register.json#jury_reading_contract.package_validation_contract` freezes current-package regression expectations: ten geometry/metrics input hashes; 389 unique spatial IDs; 12 scenes, eight projects and three key areas; 44 publication pages; bilingual browser and no-JavaScript fallback behavior; 140 manifest/rights paths; and exact T02 replay. It can be replayed against the final commit or a later round, but validates package files and presentation contracts only. A complete PASS still leaves fieldwork, professional acceptance, approval, operation and rights clearance at 0 or incomplete.
+
+| 文件 / File | 页数与版式 / Pages and format | SHA-256 |
+|---|---:|---|
+| `drawings/a3-booklet.pdf` | 14 / A3 landscape | `44541e0ae62faad8dd0e5180f92c6197788ced3f885c043283bb1b90cef98eb9` |
+| `drawings/a3-booklet.en.pdf` | 14 / A3 landscape | `0ae1b081157bc940933b04dd24cbfe3782ad4b7a93f7f9e1ad6e9254c4307d5c` |
+| `drawings/a0-boards.pdf` | 8 / A0 landscape | `66a325709cfc36de7a9e8c86c7beafce645dca630b94dcd0d1f4e0ce4316c0e4` |
+| `drawings/a0-boards.en.pdf` | 8 / A0 landscape | `103918c52bed55325c1fa8c98de803afafaa86ca5fcaaac23bd59758791c33b3` |
+
 ## 方案叙事摘要 / Narrative summary
 
 AI 朝圣·铁轨新生带当前方案将百年京张定义为一条可审计的 AI 公共创新生产线。小月河场景赋能翼提出真实问题，AI 原点社区共创，众智园验证，大钟寺发布与服务，中关村科技服务翼提供建议性的合规与转化支持，公众反馈和失败证据回流下一年度。

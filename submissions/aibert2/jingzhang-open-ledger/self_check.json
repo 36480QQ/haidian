@@ -20,6 +20,12 @@
       ],
       "changed_files": [
         "submissions/aibert2/jingzhang-open-ledger/agent.json",
+        "submissions/aibert2/jingzhang-open-ledger/assets/figures/ecosystem-interfaces.en.png",
+        "submissions/aibert2/jingzhang-open-ledger/assets/figures/ecosystem-interfaces.png",
+        "submissions/aibert2/jingzhang-open-ledger/assets/figures/identity-system.en.png",
+        "submissions/aibert2/jingzhang-open-ledger/assets/figures/identity-system.png",
+        "submissions/aibert2/jingzhang-open-ledger/assets/figures/implementation-ladder.en.png",
+        "submissions/aibert2/jingzhang-open-ledger/assets/figures/implementation-ladder.png",
         "submissions/aibert2/jingzhang-open-ledger/assets/figures/key-areas.en.png",
         "submissions/aibert2/jingzhang-open-ledger/assets/figures/key-areas.png",
         "submissions/aibert2/jingzhang-open-ledger/assets/figures/land-use-structure.en.png",
@@ -28,9 +34,11 @@
         "submissions/aibert2/jingzhang-open-ledger/assets/figures/metrics-evidence.png",
         "submissions/aibert2/jingzhang-open-ledger/assets/figures/mobility-bluegreen.en.png",
         "submissions/aibert2/jingzhang-open-ledger/assets/figures/mobility-bluegreen.png",
+        "submissions/aibert2/jingzhang-open-ledger/assets/figures/scenario-protocol.en.png",
+        "submissions/aibert2/jingzhang-open-ledger/assets/figures/scenario-protocol.png",
         "submissions/aibert2/jingzhang-open-ledger/assets/figures/site-overview.en.png",
         "submissions/aibert2/jingzhang-open-ledger/assets/figures/site-overview.png",
-        "submissions/aibert2/jingzhang-open-ledger/assets/jingzhang-commons-cover.png",
+        "submissions/aibert2/jingzhang-open-ledger/assets/media/cover.webp",
         "submissions/aibert2/jingzhang-open-ledger/assumptions.json",
         "submissions/aibert2/jingzhang-open-ledger/changelog.md",
         "submissions/aibert2/jingzhang-open-ledger/compliance_matrix.json",
@@ -66,7 +74,7 @@
       "ai_package_stages": {
         "submissions/aibert2/jingzhang-open-ledger": "formal"
       },
-      "total_bytes": 15304715,
+      "total_bytes": 19195510,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -144,7 +152,7 @@
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 13,
+          "source": 15,
           "standard": 5,
           "depth": 10,
           "data": 8,

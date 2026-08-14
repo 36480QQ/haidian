@@ -238,8 +238,8 @@
       ],
       "not_usable_for": [
         "主张对该字体的任何权利",
-        "证明拉丁字形的来源（拉丁字形见 FONT-PDF-BASE14）",
-        "证明图件 PNG 的字形来源（PNG 字形见 FONT-STHEITI-RASTER）"
+        "证明拉丁字形的来源（PDF 内见 FONT-PDF-BASE14，栅格图件内见 FONT-HELVETICA-RASTER）",
+        "证明栅格图件的中文字形来源（见 FONT-STHEITI-RASTER）"
       ],
       "limitations": "PDF 内容流沿用原有排版，仅替换字体程序；字体名对象已同步由 STSong-Light 改为 NotoSerifSC，使文件自述与实际嵌入字形一致。字体文件本身不随包提交（投稿目录不接受 .ttf 扩展名），凭上述 URL 与 sha256 可独立取得并复核。",
       "registry_source_id": null,
@@ -260,13 +260,14 @@
       "spatial_coverage": "不适用",
       "temporal_coverage": "不适用",
       "license_or_reuse_terms": "PDF 规范规定的基础十四款字体，按字体名引用，不在文件中嵌入或再分发任何字体文件，因此本包不承载这部分字体的授权义务。",
-      "usage": "图纸中全部拉丁文字（页眉编号、页脚、英文标签）。",
+      "usage": "四套图纸 PDF 中全部拉丁文字（页眉编号、页脚、英文标签）。不含栅格图件——图件的拉丁文字见 FONT-HELVETICA-RASTER。",
       "usable_for": [
-        "证明拉丁文字与符号的排版不依赖任何需授权的第三方字体文件",
+        "证明四套 PDF 中的拉丁文字与符号不依赖任何需授权的第三方字体文件",
         "说明四套 PDF 中剩余 emb=no 条目的性质"
       ],
       "not_usable_for": [
         "证明 CJK 字形的来源",
+        "证明栅格图件中拉丁字形的来源（图件未走按名引用，而是加载系统字体文件栅格化，见 FONT-HELVETICA-RASTER）",
         "证明打印效果或字距在任意阅读器中一致"
       ],
       "limitations": "emb=no 意味着字形由阅读器提供。与中文字体不同，基础十四款字体是 PDF 规范要求符合规范的阅读器自行提供的，因此不构成显示风险；本包选择不嵌入其替代实现，以免在文件中以 Helvetica 之名承载另一铸字厂的字形。不同阅读器的度量差异可能造成拉丁文字的轻微字距差别。",
@@ -307,7 +308,7 @@
       "source_type": "standard_resource",
       "evidence_class": "build_toolchain",
       "authority_level": "T0",
-      "title": "macOS 系统字体 STHeiti Medium.ttc（仅用于栅格图件）",
+      "title": "macOS 系统字体 STHeiti Medium.ttc（仅用于栅格图件的中文文字）",
       "publisher": "随 macOS 分发的系统字体",
       "retrieved_at": "2026-08-09",
       "accessed_date": "2026-08-09",
@@ -315,15 +316,44 @@
       "spatial_coverage": "不适用",
       "temporal_coverage": "不适用",
       "license_or_reuse_terms": "仅在本机渲染阶段使用，输出为栅格像素；未复制、未嵌入、未再分发字体文件本身。",
-      "usage": "assets/figures/ 下全部 PNG 图件的文字。",
+      "usage": "assets/figures/ 下 26 张栅格图件中的中文文字。同批图件的拉丁文字与数字另见 FONT-HELVETICA-RASTER。",
       "usable_for": [
-        "说明图件文字的渲染来源"
+        "说明栅格图件中中文字形的渲染来源"
       ],
       "not_usable_for": [
         "主张对该字体的任何权利",
-        "在其他机器上复现完全一致的字形"
+        "在其他机器上复现完全一致的字形",
+        "证明同批图件中拉丁字形的来源（见 FONT-HELVETICA-RASTER）"
       ],
       "limitations": "在未安装该字体的机器上重跑生成脚本会得到不同字形；图件因此按当前栅格产物归档，而非按运行时重绘。",
+      "registry_source_id": null,
+      "registry_review_status": "not_in_central_registry",
+      "usable_for_formal": "not_a_factual_source",
+      "usable_for_formal_basis": "participant_self_assessed"
+    },
+    {
+      "id": "FONT-HELVETICA-RASTER",
+      "source_type": "standard_resource",
+      "evidence_class": "build_toolchain",
+      "authority_level": "T0",
+      "title": "macOS 系统字体 Helvetica.ttc（仅用于栅格图件的拉丁文字）",
+      "publisher": "随 macOS 分发的系统字体",
+      "retrieved_at": "2026-08-09",
+      "accessed_date": "2026-08-09",
+      "collection_method": "Pillow 在本机以系统字体路径 /System/Library/Fonts/Helvetica.ttc 加载并直接栅格化为像素；取 .ttc 内第 3 号字面（Bold Oblique）绘制页脚图签与左上角图号，另按需取常规与粗体字面绘制指北针字母与比例尺数字。生成物为字形图像，包内不含 .ttc/.ttf 文件。",
+      "spatial_coverage": "不适用",
+      "temporal_coverage": "不适用",
+      "license_or_reuse_terms": "仅在本机渲染阶段使用，输出为栅格像素；未复制、未嵌入、未再分发字体文件本身。与四套 PDF 中按名引用的基础十四款字体（FONT-PDF-BASE14）不是同一件事：那里不涉及任何字体文件，这里实际加载了随 macOS 分发的字体文件并用其字形生成像素。",
+      "usage": "assets/figures/ 下 26 张栅格图件中的拉丁文字与数字：页脚版本图签、左上角图号、指北针字母与比例尺数字。",
+      "usable_for": [
+        "说明栅格图件中拉丁字形与数字的渲染来源"
+      ],
+      "not_usable_for": [
+        "主张对该字体的任何权利",
+        "在其他机器上复现完全一致的字形",
+        "证明四套 PDF 中拉丁字形的来源（PDF 内为按名引用，见 FONT-PDF-BASE14）"
+      ],
+      "limitations": "字形来源无法从栅格产物反查，本条为渲染阶段的自述；可独立核验的只有「包内不含任何字体文件」这一半（`find submissions/Sonike/jingzhang-handover-line -name '*.tt[cf]'` 无结果）。在未安装该字体的机器上重跑生成脚本会得到不同字形；图件因此按当前栅格产物归档，而非按运行时重绘。",
       "registry_source_id": null,
       "registry_review_status": "not_in_central_registry",
       "usable_for_formal": "not_a_factual_source",

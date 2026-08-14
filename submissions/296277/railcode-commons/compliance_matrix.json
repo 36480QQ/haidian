@@ -1112,10 +1112,8 @@
       "title_zh": "百年京张文化、中关村文化与AI新文化融合叙事设计",
       "mandatory": true,
       "report_sections": [
-        "三层范围工作框架",
-        "统筹研究范围产业与未来城市研究",
-        "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计"
+        "AI 创新生态、人才画像与 AI+ 场景",
+        "蓝绿空间、公共空间与城市风貌"
       ],
       "geojson_layers": [
         "geometry/site_boundary.geojson",
@@ -1127,28 +1125,23 @@
         "geometry/phasing.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "key_area_count"
+        "cultural_evidence_record_count",
+        "honour_node_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "drawings/a0-boards.pdf",
+        "assets/figures/landmark-library.png"
       ],
       "visual_sections": [
-        "总览地图",
-        "任务覆盖",
-        "核心指标"
+        "文化资源证据矩阵",
+        "京张记忆导览",
+        "贡献档案协议"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "SITE-PACKAGE"
       ],
       "assumption_ids": [
         "A-CONTROLS-001"
@@ -1165,10 +1158,7 @@
       "title_zh": "一带全球AI创新活动体系与长期运营设计",
       "mandatory": true,
       "report_sections": [
-        "三层范围工作框架",
-        "统筹研究范围产业与未来城市研究",
-        "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计"
+        "更新项目清单、实施政策与分期计划"
       ],
       "geojson_layers": [
         "geometry/site_boundary.geojson",
@@ -1180,28 +1170,23 @@
         "geometry/phasing.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "key_area_count"
+        "developer_funnel_stage_count",
+        "delivery_contract_count",
+        "implementation_gate_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "drawings/a0-boards.pdf",
+        "assets/figures/implementation-contract.png",
+        "assets/figures/implementation-readiness.png"
       ],
       "visual_sections": [
-        "总览地图",
-        "任务覆盖",
-        "核心指标"
+        "加入—共创—测试—发布—复用",
+        "一库两会四季",
+        "实施前置表"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
-        "OFFICIAL-ANNOUNCEMENT",
-        "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "AGENT-TASKBOOK"
       ],
       "assumption_ids": [
         "A-CONTROLS-001"

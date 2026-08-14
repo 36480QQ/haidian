@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>京张复役厂｜复役放行与空间证据工作台</title>
+<style>
+:root{--ink:#171b1f;--paper:#f3f0e8;--paper2:#faf8f2;--steel:#68747b;--line:#c7cdd0;--red:#b34632;--yellow:#e4a72b;--green:#2d7d5b;}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.55}
+a{color:inherit}header{padding:40px clamp(22px,5vw,76px) 28px;border-bottom:1px solid var(--line);display:grid;grid-template-columns:1fr auto;gap:28px;align-items:end}
+h1{font-size:clamp(34px,5vw,68px);line-height:1.02;margin:0 0 12px;letter-spacing:-.025em}header p{max-width:830px;color:var(--steel);margin:0}
+.lang{border:1px solid var(--ink);padding:8px 14px;text-decoration:none;font-size:13px}nav{padding:14px clamp(22px,5vw,76px);display:flex;gap:18px;overflow:auto;border-bottom:1px solid var(--line);font-size:12px;text-transform:uppercase;letter-spacing:.08em}
+main{padding:32px clamp(16px,4vw,64px) 64px;max-width:1580px;margin:auto}header>div,.decision>div,.panel>*{min-width:0}h1,h2,p,.kicker,.gate span{overflow-wrap:anywhere}.metrics{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:10px;margin-bottom:28px}
+.decision{background:var(--ink);color:var(--paper2);padding:clamp(24px,4vw,52px);margin-bottom:20px;display:grid;grid-template-columns:1.05fr .95fr;gap:36px;align-items:center}.decision h2{font-size:clamp(28px,4vw,50px);line-height:1.08;margin:0 0 16px}.decision p{color:#d3d7d8;max-width:760px}.gates{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}.gate{border:1px solid #59636a;min-height:82px;padding:12px;display:flex;gap:9px;align-items:flex-start}.gate b{color:var(--yellow);font-size:20px}.gate span{font-size:12px}.reality{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:28px}.reality div{background:var(--paper2);border-top:4px solid var(--red);padding:15px}.reality span,.reality strong{display:block}.reality span{font-size:12px;color:var(--steel)}.reality strong{font-size:20px;margin-top:5px}
+.metric{background:var(--paper2);border-top:4px solid var(--green);padding:15px;min-height:96px}.metric strong{display:block;font-size:22px}.metric span{color:var(--steel);font-size:12px}
+.panel{background:var(--paper2);border:1px solid var(--line);margin:0 0 24px;display:grid;grid-template-columns:minmax(220px,.32fr) 1fr;gap:20px;padding:18px;align-items:center}
+.panel img{width:100%;display:block;border:1px solid var(--line)}.panel-copy{padding:16px}.panel-copy p{color:var(--steel)}.kicker{color:var(--red);font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:13px}
+.audit{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:30px}.audit section{background:var(--ink);color:var(--paper2);padding:22px;min-height:170px}.audit h2{font-size:14px;color:var(--yellow);margin-top:0}.audit p{font-size:13px;color:#d3d7d8}
+.markers{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}footer{border-top:1px solid var(--line);padding:24px clamp(22px,5vw,76px);color:var(--steel);font-size:12px}
+@media(max-width:900px){body{overflow-x:hidden}header{grid-template-columns:1fr;padding:28px 20px 22px}h1{font-size:clamp(30px,9vw,44px)}.lang{display:block;width:100%;text-align:left}nav{padding-left:20px;padding-right:20px}main{padding:32px 20px 52px}.decision{grid-template-columns:minmax(0,1fr);padding:24px}.gates{grid-template-columns:repeat(2,minmax(0,1fr))}.reality{grid-template-columns:repeat(2,minmax(0,1fr))}.metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.panel{grid-template-columns:minmax(0,1fr);padding:12px}.panel-copy{padding:12px}.audit{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:520px){.gates{grid-template-columns:minmax(0,1fr)}.gate{min-height:auto}.metrics{grid-template-columns:minmax(0,1fr)}}
+</style>
+</head>
+<body>
+<span class="markers">总览地图 三层范围 重点区域 用地分区 交通慢行 蓝绿公共空间 建筑 更新项目 AI 场景 核心指标 任务覆盖 自检状态 来源 假设 R0 R1 R2 R3 R4 R5 复役放行 责任合同 90天试点</span>
+<header><div><h1>京张复役厂｜复役放行与空间证据工作台</h1><p>城市 AI 设备的换件、再制造、复认证与重返运行基础设施<br>概念表达｜边界为临时粗略范围，不是官方红线</p></div><a class="lang" href="index.en.html">English</a></header>
+<nav><a href="#decision">Release</a><a href="#metrics">Metrics</a><a href="#s1">System</a><a href="#s2">Land use</a><a href="#s3">Key areas</a><a href="#s4">Mobility</a><a href="#s5">Evidence</a></nav>
+<main>
+<section class="decision" id="decision"><div><span class="kicker">复役放行协议 v1.1</span><h2>先恢复公共服务，再决定设备能否重返运行</h2><p>一台公共服务机器人从大钟寺人工受理出发，经 AI 原点补齐部件、校准与权利证据，在众智园完成整机回归，最后回到大钟寺由责任人与独立复核共同签发限定回执。缺证据即 HOLD；超出范围即资格交接。</p></div><div class="gates"><div class="gate"><b>R0</b><span>受理资格</span></div>
+<div class="gate"><b>R1</b><span>权属、保修与数据权限</span></div>
+<div class="gate"><b>R2</b><span>风险隔离与诊断基线</span></div>
+<div class="gate"><b>R3</b><span>维修授权与部件证据</span></div>
+<div class="gate"><b>R4</b><span>校准与回归复测</span></div>
+<div class="gate"><b>R5</b><span>人工放行与去向</span></div></div></section>
+<section class="reality"><div><span>概念空间</span><strong>已形成</strong></div>
+<div><span>官方 polygon</span><strong>待补</strong></div>
+<div><span>专业委托</span><strong>未启动</strong></div>
+<div><span>现场运行</span><strong>0</strong></div></section>
+<section class="metrics" id="metrics"><div class="metric" data-metric="site_area_sqm" data-value="11412825.386"><strong>11.413 km²</strong><span>总体设计量</span></div>
+<div class="metric" data-metric="green_ratio" data-value="0.104792"><strong>10.4792%</strong><span>绿地设计量</span></div>
+<div class="metric" data-metric="public_space_ratio" data-value="0.034662"><strong>3.4662%</strong><span>公共空间设计量</span></div>
+<div class="metric" data-metric="building_footprint_ratio" data-value="0.055315"><strong>5.5315%</strong><span>建筑基底设计量</span></div>
+<div class="metric" data-metric="road_centerline_length_m" data-value="24440.989"><strong>24.441 km</strong><span>道路中心线</span></div>
+<div class="metric" data-metric="building_count" data-value="15"><strong>15</strong><span>概念设备模块</span></div></section>
+<article class="panel" id="s1">
+          <div class="panel-copy"><span class="kicker">复役放行决定链</span><p>R0—R5 把故障设备分流到暂停、复测、资格交接或人工放行；现场运行仍为 0。</p></div>
+          <img src="../assets/figures/site-overview.png" alt="复役放行决定链" loading="lazy">
+        </article>
+<article class="panel" id="s2">
+          <div class="panel-copy"><span class="kicker">三层范围 · 用地分区</span><p>统筹研究—总体设计—重点区域从产业命题递进到可审查工位。</p></div>
+          <img src="../assets/figures/land-use-structure.png" alt="三层范围 · 用地分区" loading="lazy">
+        </article>
+<article class="panel" id="s3">
+          <div class="panel-copy"><span class="kicker">三重点区专业交接</span><p>每区明确进入证据、输出回执、暂停条件和恢复依据，任一区都不能单独放行。</p></div>
+          <img src="../assets/figures/key-areas.png" alt="三重点区专业交接" loading="lazy">
+        </article>
+<article class="panel" id="s4">
+          <div class="panel-copy"><span class="kicker">交通慢行 · 蓝绿公共空间</span><p>公众路线、普通设备物流和持证外运保持分流。</p></div>
+          <img src="../assets/figures/mobility-bluegreen.png" alt="交通慢行 · 蓝绿公共空间" loading="lazy">
+        </article>
+<article class="panel" id="s5">
+          <div class="panel-copy"><span class="kicker">现实状态 · 证据边界</span><p>概念空间已形成；官方 polygon 待补；专业委托未启动；现场运行为 0。</p></div>
+          <img src="../assets/figures/metrics-evidence.png" alt="现实状态 · 证据边界" loading="lazy">
+        </article>
+<div class="audit">
+<section><h2>任务覆盖</h2><p>任务覆盖：公告 1.3、1.4、1.5 与 agent.1—agent.6 共 23 条均进入 compliance_matrix.json；15 项设计深度为 complete。</p></section>
+<section><h2>来源与自检状态</h2><p>来源：27 条包内来源、9 个 GeoJSON、R0—R5 合同、12 场景责任矩阵与双语正文。案头回放 8/8，现场运行 0。</p></section>
+<section><h2>假设与边界</h2><p>假设：总体边界与三处重点区均为 provisional rough geometry；容积率、高度、法定建筑密度、道路红线、权属、管线、消防、防洪、文保与站点关系待正式资料和专业复核。</p></section>
+</div>
+</main>
+<footer>JING-ZHANG RETURN-TO-SERVICE WORKS · COMMUNITY-DISPLAY-ONLY · 2026-08-14</footer>
+</body></html>

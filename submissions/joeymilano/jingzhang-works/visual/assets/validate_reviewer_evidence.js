@@ -29,7 +29,7 @@ if ((drill.run_of_day || []).length !== 7) errors.push("day-one drill must conta
 if ((drill.fault_cards || []).length !== 6) errors.push("day-one drill must contain six fault cards");
 for (const key of ["site", "date", "people", "budget", "permit"]) if (drill.unconfirmed_fields?.[key] !== null) errors.push(`${key} must remain null until confirmed`);
 const output = {
-  validator_version: "1.6.0",
+  validator_version: "1.7.0",
   index_sha256: crypto.createHash("sha256").update(indexBytes).digest("hex"),
   drill_sha256: crypto.createHash("sha256").update(drillBytes).digest("hex"),
   summary: {rubric_questions: dimensions.length, taskbook_links: tasks.length, operating_actions: (drill.run_of_day || []).length, fault_cards: (drill.fault_cards || []).length, errors: errors.length},

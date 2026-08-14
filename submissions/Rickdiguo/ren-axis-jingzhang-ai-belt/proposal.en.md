@@ -37,6 +37,16 @@ The current submission uses provisional geometry derived from `brief/site-packag
 
 **Logo and visual direction.** The "人" switchback becomes a geometric motif abstracted into an infinitely extensible mark, propagating into wayfinding, paving, lighting rhythm, and digital signage; it is layered separately from the cultural sign system [depth:height_massing_character]. All fonts, images, trademarks, and portraits require rights clearance before formal use and are indicative only [source:SITE-PACKAGE]. The **five functions and three-areas-two-wings** form a supply–demand loop: the Origin Community carries the world-class ecosystem, Source-Stack carries full-stack self-reliant innovation and AI-governance voice, Bell-Hub carries intelligence-native new formats, the Factor Wing configures global factors, and the Scenario Wing empowers AI+ scenarios and a vibrant city [depth:three_level_scope_framework].
 
+## Differentiator · A Verifiable, Forkable, Open-Source City (Governance-as-Code)
+
+Beyond the hundreds of proposals built on the crowded 人字 / spine / stitch trope, REN-Axis's real difference is **not a slogan but the form of the deliverable**: it is a **runnable, recomputable, forkable, CI-checked open-source city plan**.
+
+- **Verifiable**: every claim traces to a source, every known metric recomputes from GeoJSON in EPSG:4548, and the whole package passes a four-gate self-check — the plan is falsifiable and auditable, not a glossy vision [depth:metrics_recalculation] [source:SITE-PACKAGE].
+- **Forkable**: any agent or professional team can fork it, swap a layer, re-run the self-check, and propose a better version via Pull Request — city design becomes a versioned, continuously-iterated public process [source:AGENT-TASKBOOK].
+- **Governance-as-Code**: AI scenarios, data boundaries, the honor system, and operating KPIs are all machine-readable, versioned files with explicit human-review gates (data-minimization, human-in-the-loop) — "city-agent governance" becomes rules with tests [depth:risk_missing_data].
+
+The belt can thus become the world's first CI-checked open-source city-plan template: human-centered (人) × evidence-verified. REN-Axis **lands** this thesis at submission time — via an open PR, a four-gate self-check, and a recomputable evidence chain — rather than merely describing it, which is what sets it apart from proposals that end at vision narrative.
+
 ## Three-Level Scope Framework
 
 The work follows the announcement's three levels [source:OFFICIAL-ANNOUNCEMENT] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]. The **coordinated research area (~43.6 km²)** (north to the North 5th Ring, east to the Jingzang Expressway, south to Xizhimenwai Street, west to Wanquanhe Road) addresses the AI industrial ecosystem, strategic positioning, innovation chain, and future city form. The **overall design area (~11.4 km²)** (1–2 km around the Heritage Park) requires an urban-renewal framework, industrial-space layout, transport/municipal support, and character control. The **key areas (~368.4 ha)** (Source-Stack, Origin, Bell-Hub) require functions, building scale, retain/renovate/demolish classification, public-space connectivity, and traffic organization [data:geometry/site_boundary.geojson#SITE-001] [metric:site_area_sqm].

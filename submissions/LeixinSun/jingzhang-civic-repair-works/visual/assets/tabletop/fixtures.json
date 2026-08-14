@@ -1,0 +1,98 @@
+{
+  "schema_version": "1.0.0",
+  "claim_level": "synthetic_rule_replay",
+  "field_runs": 0,
+  "fixtures": [
+    {
+      "id": "T01",
+      "facts": {
+        "intake_safe": true,
+        "ownership_clear": false
+      },
+      "expected": "HOLD_R1"
+    },
+    {
+      "id": "T02",
+      "facts": {
+        "intake_safe": true,
+        "ownership_clear": true,
+        "hazard_suspected": true,
+        "qualified_route": true
+      },
+      "expected": "QUALIFIED_HANDOVER_R2"
+    },
+    {
+      "id": "T03",
+      "facts": {
+        "intake_safe": true,
+        "ownership_clear": true,
+        "hazard_suspected": false,
+        "repair_authorized": false
+      },
+      "expected": "HOLD_R3"
+    },
+    {
+      "id": "T04",
+      "facts": {
+        "intake_safe": true,
+        "ownership_clear": true,
+        "hazard_suspected": false,
+        "repair_authorized": true,
+        "part_evidence_complete": false
+      },
+      "expected": "REJECT_PART_R3"
+    },
+    {
+      "id": "T05",
+      "facts": {
+        "intake_safe": true,
+        "ownership_clear": true,
+        "hazard_suspected": false,
+        "repair_authorized": true,
+        "part_evidence_complete": true,
+        "retest_passed": true,
+        "erasure_required": true,
+        "erasure_evidenced": false
+      },
+      "expected": "HOLD_R5"
+    },
+    {
+      "id": "T06",
+      "facts": {
+        "intake_safe": true,
+        "ownership_clear": true,
+        "hazard_suspected": false,
+        "repair_authorized": true,
+        "part_evidence_complete": true,
+        "retest_passed": true,
+        "erasure_required": true,
+        "erasure_evidenced": true,
+        "accountable_signoff": true,
+        "independent_signoff": true
+      },
+      "expected": "RETURN_TO_SERVICE_R5"
+    },
+    {
+      "id": "T07",
+      "facts": {
+        "intake_safe": true,
+        "ownership_clear": true,
+        "hazard_suspected": false,
+        "repair_authorized": true,
+        "part_evidence_complete": true,
+        "retest_passed": false
+      },
+      "expected": "HOLD_R4"
+    },
+    {
+      "id": "T08",
+      "facts": {
+        "intake_safe": true,
+        "ownership_clear": true,
+        "hazard_suspected": true,
+        "qualified_route": false
+      },
+      "expected": "HOLD_R2"
+    }
+  ]
+}
