@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "package_version": "v1.5-score-sprint",
+  "package_version": "v1.6-adversarial-audit",
   "purpose": "Reviewer navigation only; authoritative evidence remains in the referenced files.",
   "source_of_pattern": "Derived from public high-scoring PR structure patterns (executive evidence index, gate ladder, negative branches) without copying names, prose, figures, data or geometry.",
   "current_reality_state": "not_authorized_not_field_run",
@@ -137,10 +137,15 @@
         "risk.json",
         "assumptions.json",
         "visual/assets/scenario-negative-fixtures.json",
+        "visual/assets/review-adversarial-audit.json",
+        "visual/assets/review-adversarial-audit.validation.json",
         "proposal.md#风险、版权与合规说明"
       ],
       "metric_refs": [
         "scenario_negative_fixture_branch_count",
+        "adversarial_audit_probe_count",
+        "adversarial_negative_probe_count",
+        "remote_resource_violation_count",
         "private_home_unauthorized_transmission_events",
         "reversible_fitout_restoration_acceptance_ratio"
       ],
@@ -153,6 +158,9 @@
     "total_weight_percent": 100,
     "known_field_result_count": 0,
     "official_approval_count": 0,
+    "adversarial_audit_probe_count": 12,
+    "adversarial_negative_probe_count": 12,
+    "remote_resource_violation_count": 0,
     "gallery_publication_claim": false
   }
 }
