@@ -46,6 +46,7 @@
         "proposal.md#蓝绿空间、公共空间与城市风貌",
         "assets/figures/key-areas.png",
         "visual/assets/civic-scene-evidence.json",
+        "visual/assets/commons-walk-config.json",
         "visual/assets/open-ledger-tabletop-fixtures.json"
       ]
     },
@@ -64,7 +65,9 @@
       "evidence_refs": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf",
-        "visual/index.html",
+        "visual/index.html#concept-walk-lab",
+        "visual/assets/commons-walk-config.json",
+        "visual/assets/commons-walk.js",
         "assets/figures/three-commons-concept-v14.png",
         "metrics.json",
         "compliance_matrix.json"
@@ -105,12 +108,12 @@
     {
       "id": "scenario_perceptibility",
       "title_zh": "场景可感知度",
-      "primary_evidence_ref": "visual/assets/civic-scene-evidence.json"
+      "primary_evidence_ref": "visual/index.html#concept-walk-lab"
     },
     {
       "id": "spatial_clarity",
       "title_zh": "空间明确性",
-      "primary_evidence_ref": "visual/assets/civic-scene-evidence.json"
+      "primary_evidence_ref": "visual/assets/commons-walk-config.json"
     },
     {
       "id": "transferability",
@@ -120,7 +123,7 @@
     {
       "id": "expression_completeness",
       "title_zh": "表达完整性",
-      "primary_evidence_ref": "visual/index.html"
+      "primary_evidence_ref": "visual/index.html#concept-walk-lab"
     },
     {
       "id": "public_compliance",
