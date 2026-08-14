@@ -35,11 +35,11 @@ AI generation does not establish factual authority, accessibility compliance, us
 
 # 逐资产权利台账 / Per-Asset Rights Ledger
 
-The ledger below restates, asset by asset, what the sections above declare in prose. It covers all 75 file entries registered in `manifest.json`. Every row is compiled from a record that already exists inside this package — no new rights fact, tool record, or licence claim is introduced here — and the last column of each table names the file the entry was compiled from, so any row can be checked word for word against its source. Tables are written in Chinese with bilingual headings; where a field is not registered anywhere in the package, the entry reads「包内未登记」rather than a guessed value, and all such gaps are listed in the final section.
+The ledger below restates, asset by asset, what the sections above declare in prose. It covers all 81 file entries registered in `manifest.json`. Every row is compiled from a record that already exists inside this package — no new rights fact, tool record, or licence claim is introduced here — and the last column of each table names the file the entry was compiled from, so any row can be checked word for word against its source. Tables are written in Chinese with bilingual headings; where a field is not registered anywhere in the package, the entry reads「包内未登记」rather than a guessed value, and all such gaps are listed in the final section.
 
 ## 一、编制口径 / Compilation rule
 
-本台账汇编自以下八处既有登记：本文件（作者归属、许可选择、生成方法、字体许可、OSM 署名与用途限制）、`manifest.json`（文件清单、角色、语言、翻译关系、校验和）、`agent.json`（申报智能体与模型）、`sources.json`（三十二条来源的允许与禁止用途）、`visual/assets/osm-context/provenance.json`（OSM 取数与再分发状态）、`assets/media/audio-guide.md` 与 `journey.md` 与 `cover.md`（三件媒体资产的工具、方法与权利记录）、`metrics.json`（复算投影）、`proposal.md`（品牌字体策略、随包代码零依赖声明、基准许可建议）。
+本台账汇编自以下八处既有登记：本文件（作者归属、许可选择、生成方法、字体许可、OSM 署名与用途限制）、`manifest.json`（文件清单、角色、语言、翻译关系、校验和）、`agent.json`（申报智能体与模型）、`sources.json`（三十五条来源的允许与禁止用途）、`visual/assets/osm-context/provenance.json`（OSM 取数与再分发状态）、`assets/media/audio-guide.md` 与 `journey.md` 与 `cover.md`（三件媒体资产的工具、方法与权利记录）、`metrics.json`（复算投影）、`proposal.md`（品牌字体策略、随包代码零依赖声明、基准许可建议）。
 
 **许可总则：** 全包整体 `COMMUNITY-DISPLAY-ONLY`，仅用于本次征集的社区展示与评审场景；不放弃任何第三方权利。
 **署名总则：** 署名主体为 GitHub 用户 `lqqk7` 指导下的申报智能体「柱子 / Zhuzi」；模型与撰写工具见 `agent.json`，媒体合成工具在各自说明文件中单独披露。
@@ -53,9 +53,10 @@ The ledger below restates, asset by asset, what the sections above declare in pr
 | C 图版 | 16 | 由本包 GeoJSON、指标、矩阵、风险、假设与自撰标签本地生成 | Python、SVG、`rsvg-convert`/Cairo | 本文件 |
 | D 图纸 PDF | 4 | 同上，并合并为册 | Python、SVG、`rsvg-convert`/Cairo、`pdfunite` | 本文件 |
 | E 几何 | 9 | 基于仓库临时边界与本方案概念几何 | 复算投影 EPSG:4548（`scripts/spatial_review.py`） | 本文件 · `sources.json` · `metrics.json` |
-| F 离线展示与随包代码 | 15 | 原创手写，自含离线 | 无第三方依赖；仅 Node 内置模块 | 本文件 · `proposal.md` |
+| F 离线展示与随包代码 | 17 | 原创手写，自含离线 | 无第三方依赖；仅 Node 内置模块 | 本文件 · `proposal.md` |
 | G 媒体 | 11 | 手写 HTML/SVG 渲染 + 语音合成 + 本包页面逐帧实录 | Playwright/Chromium、MiniMax `speech-2.8-hd`（`mmx` 1.0.7）、x264/AAC、Pillow | `journey.md` · `audio-guide.md` · `cover.md` |
 | H 品牌标志 | 1 | 原创矢量几何 | 手写 SVG | 本文件 · `cover.md` |
+| I 场景概念图 | 6 | AI 图像生成 + 包内标注层排版合成 | OpenAI 图像生成（经 Codex CLI 原生图像生成工具，GPT-5.6 Sol 智能体调用）；标注层为手写 HTML 经 Chromium（Playwright）渲染 | 本文件 · `sources.json` |
 
 ## 三、逐资产登记 / Per-asset register
 
@@ -148,6 +149,16 @@ The ledger below restates, asset by asset, what the sections above declare in pr
 | --- | --- | --- | --- | --- |
 | `assets/logo.svg` | 原创几何：平行感知线、开放节点与原点，手写 SVG，含 `title` 与 `desc` 无障碍标注 | 手写 SVG，无图形素材来源 | 署名 `lqqk7` / 柱子；`COMMUNITY-DISPLAY-ONLY`；不借用企业商标、人物肖像或未清权字体 | 本文件 §Generated assets and software；`proposal.md` 品牌章 |
 
+### I 场景概念图 / Concept scene images
+
+六件场景概念图（三题材 × 中英双版）为 AI 图像生成产物：底图由 OpenAI 图像生成能力产出（经 Codex CLI 原生图像生成工具、GPT-5.6 Sol 智能体调用，生成日 2026-08-14），随后由本包自制标注层（手写 HTML，经 Chromium/Playwright 渲染合成）叠加双语题注、标注卡与「概念意象 · AI 生成 · 非工程依据」徽章。权利依据《OpenAI Terms of Use》（OpenAI OpCo, LLC，生效日 2026-01-01，官方稳定地址 openai.com/policies/terms-of-use，访问核验日 2026-08-14）：其「Content」节明文约定用户保留输入所有权并**享有输出所有权**（"you (a) retain your ownership rights in Input and (b) own the Output"，并载明 OpenAI 将其就输出享有的权利让与用户）；其禁止行为清单要求**不得将非人类生成的输出虚假陈述为人类生成**——本包在每件图上直接印刷 AI 生成徽章并于此登记生成方式，即该义务之履行。条款同时载明输出在不同用户间未必唯一，本包如实登记该限制。图内一切地名、方位与距离标注按真实坐标推算（见 proposal 图注），但地标形体与城市肌理为概念意象，非测绘复原；图面不构成工程、规划或达标依据。
+
+| 文件路径 | 作者或生成方式 | 工具及版本 | 署名与复用限制 | 登记出处 |
+| --- | --- | --- | --- | --- |
+| `assets/figures/scene-dual-state.webp` · `.en.webp` | AI 图像生成底图 + 包内标注层合成（双态并置：AI 开启 = AI 关闭） | OpenAI 图像生成 via Codex CLI；标注层 HTML/Chromium；Pillow 转 WebP q88 | 署名 `lqqk7` / 柱子；`COMMUNITY-DISPLAY-ONLY`；概念意象、非工程依据；图上印有 AI 生成徽章 | 本文件本节；`sources.json` `OPENAI-TERMS-OF-USE-20260814` |
+| `assets/figures/scene-interface-yard.webp` · `.en.webp` | 同上（众智园通用接口实验院） | 同上 | 同上 | 同上 |
+| `assets/figures/scene-corridor-aerial.webp` · `.en.webp` | 同上（走廊鸟瞰，地标按真实坐标推算方位与距离） | 同上 | 同上 | 同上 |
+
 ## 四、字体台账 / Font ledger
 
 | 使用场景 | 字体名称 | 来源 | 许可 | 嵌入与分发方式 | 登记出处 |
@@ -156,7 +167,7 @@ The ledger below restates, asset by asset, what the sections above declare in pr
 | 离线展示页（`visual/*.html`、`scene.css`） | 字体栈 `"Source Han Sans SC"`、`"Noto Sans CJK SC"`、`Arial`、`sans-serif`；标题字族 `Georgia` | 由使用者运行环境本地解析 | 不适用：不加载、不嵌入、不分发任何字体文件 | 页面不发起任何远程字体请求 | 本文件 §Generated assets and software；`visual/index.html` 内联样式 |
 | 多模态短片（`journey.mp4`） | 运行环境预装字体（PingFang SC、Georgia 等） | 运行环境 | 不适用：未嵌入、未分发 | 字形以画面像素形式呈现 | `journey.md` §五「字体」行、§六「图件与字体权利」 |
 | 方案封面（`cover.webp`） | 系统随附字体（中西文衬线、无衬线、等宽） | 运行环境 | 不适用：未嵌入、未分发 | 字形以位图形式呈现于图像中 | `cover.md` §二「字体」行 |
-| 品牌落地字体策略 | 衬线标题、无衬线正文、等宽数据三分工，具体字体待定 | 待定 | 逐项核验授权，未清权字体不进入公开成果 | 品牌图版（`brand-system.png`）的字体策略区块已与清权后事实对齐：三种分工同出思源黑体一族（Medium/Bold/Regular，SIL OFL 1.1），与四册 PDF 实际嵌入的三个子集一一对应；Georgia、Helvetica Neue、SF Mono 等商业字体在图版上明示为未来深化候选，须逐项取得商用授权后方可引入。本包唯一嵌入字体程序的载体是四册 PDF（见首行），图版与页面均不分发字体文件 | `proposal.md` 品牌章与「版权与授权」段 |
+| 品牌落地字体策略 | 衬线标题、无衬线正文、等宽数据三分工，现阶段三种分工均由 Source Han Sans SC 一族承担（Medium/Bold/Regular） | Source Han Sans SC（SIL OFL 1.1）；商业字体候选待逐项清权 | 逐项核验授权，未清权字体不进入公开成果 | 品牌图版（`brand-system.png`）的字体策略区块已与清权后事实对齐：三种分工同出思源黑体一族（Medium/Bold/Regular，SIL OFL 1.1），与四册 PDF 实际嵌入的三个子集一一对应；Georgia、Helvetica Neue、SF Mono 等商业字体在图版上明示为未来深化候选，须逐项取得商用授权后方可引入。本包唯一嵌入字体程序的载体是四册 PDF（见首行），图版与页面均不分发字体文件 | `proposal.md` 品牌章与「版权与授权」段 |
 
 **一致口径：** 全包不以独立资产形式再分发任何字体文件；PDF 内的子集嵌入按 SIL OFL 1.1 进行；其余交付物均依赖运行环境本地字体。
 
@@ -211,8 +222,8 @@ The ledger below restates, asset by asset, what the sections above declare in pr
 | 撰写模型 | Claude Fable 5 via Claude Code；v1.0 阶段由 GPT-5.6 Sol via Codex 搭建与撰写；后续迭代含 Claude Opus 子代理 | `agent.json` `model_detail` |
 | 初始化脚本 | `scripts/scaffold_ai_submission.py` | `agent.json` `generated_with` |
 | 语音合成 | MiniMax 语音合成服务，模型 `speech-2.8-hd`，经官方命令行工具 `mmx` 1.0.7 调用；预置合成音色 `Chinese (Mandarin)_Reliable_Executive`；非声音克隆、非对任何自然人声音的复制。依据《MiniMax Open Platform Terms of Service》（Nanonoble Pte Ltd.，生效日 2026-03-30，官方稳定地址 platform.minimax.io/protocol/terms-of-service，访问核验日 2026-08-14）：其「Intellectual Property (Non-Transfer)」节明文约定客户保留输入与生成内容的所有权（"you retain your ownership rights in Client input and generated content"），并含平台对第三方知识产权索赔的辩护条款；其「User Rights and Obligations」节要求深度合成内容作显著标识——本包在音频、短片、文字稿与片尾声明中通篇标注合成语音性质，即该义务之履行 | `audio-guide.md` §四；`journey.md` §五 |
-| 图像生成模型 | 未使用。全包不含扩散模型、图像生成模型或 AI 绘图工具的产物 | `cover.md` §二；`journey.md` §五 |
-| 生成式影像 | 未使用。画面全部由排版代码、包内自制图件与包内交互页面的真实运行结果构成 | `journey.md` §五 |
+| 图像生成模型 | **仅用于 `assets/figures` 六件场景概念图**（scene-dual-state / scene-interface-yard / scene-corridor-aerial，中英双版）：OpenAI 图像生成能力经 Codex CLI 原生图像生成工具（GPT-5.6 Sol 智能体）调用，生成日 2026-08-14。依据《OpenAI Terms of Use》（OpenAI OpCo, LLC，生效日 2026-01-01，访问核验日 2026-08-14）：其「Content」节约定用户享有输出所有权并获平台权利让与；其禁止行为清单要求不得将非人类生成输出虚假陈述为人类生成——每件图上直接印刷「概念意象 · AI 生成 · 非工程依据」徽章并在台账登记生成方式，即该义务之履行。封面、短片画面、其余图版与品牌标志不含图像生成模型产物 | 本文件 §三 I 类；`sources.json` `OPENAI-TERMS-OF-USE-20260814` |
+| 生成式影像 | 未使用于短片。`journey.mp4` 画面全部由排版代码、包内自制图件与包内交互页面的真实运行结果构成；六件静态场景概念图另行登记于上行与 §三 I 类 | `journey.md` §五 |
 | 责任边界 | 见本文件 §AI-generation responsibility | 本文件 |
 
 ## 八、复用限制与尚未清权事项 / Reuse limits and items not yet cleared

@@ -52,8 +52,8 @@
      "date": "2026-08-13",
      "scope_zh": "drawings/a3-booklet.pdf 与 drawings/a3-booklet.en.pdf",
      "scope_en": "drawings/a3-booklet.pdf and drawings/a3-booklet.en.pdf",
-     "result_zh": "中文册 12 页 2,078,274 字节，英文册 12 页 1,710,501 字节，合计 24 页，与「12 × 2」的登记一致",
-     "result_en": "12 pages / 2,078,274 bytes (zh) and 12 pages / 1,710,501 bytes (en); 24 pages in total, matching the registered 12 x 2",
+     "result_zh": "中文册 12 页 1,910,612 字节，英文册 12 页 1,515,262 字节，合计 24 页，与「12 × 2」的登记一致",
+     "result_en": "12 pages / 1,910,612 bytes (zh) and 12 pages / 1,515,262 bytes (en); 24 pages in total, matching the registered 12 x 2",
      "provenance": "本轮实测",
      "limitations_zh": "仅核对页数与体量，不核对页面内容"
     },
@@ -150,8 +150,8 @@
      "date": "2026-08-13",
      "scope_zh": "proposal.md 与 proposal.en.md 全文",
      "scope_en": "The full text of proposal.md and proposal.en.md",
-     "result_zh": "非空行 478 行对 478 行，结构类型逐行不一致数为 0",
-     "result_en": "478 non-blank lines on each side, with zero line-by-line type mismatches",
+     "result_zh": "非空行 494 行对 494 行，结构类型逐行不一致数为 0",
+     "result_en": "494 non-blank lines on each side, with zero line-by-line type mismatches",
      "provenance": "本轮实测",
      "limitations_zh": "结构级比对，不判断译文是否准确、是否遗漏语义"
     },
@@ -195,8 +195,8 @@
      "date": "2026-08-13",
      "scope_zh": "proposal.md 与 proposal.en.md 全文",
      "scope_en": "The full text of proposal.md and proposal.en.md",
-     "result_zh": "实际出现四类：metric 64 对 64、data 40 对 40、source 68 对 68、standard 12 对 12，合计 184 对 184，四类全部持平",
-     "result_en": "Four kinds are present: metric 64/64, data 40/40, source 68/68, standard 12/12, totalling 184/184, all balanced",
+     "result_zh": "实际出现四类：metric 64 对 64、data 41 对 41、source 68 对 68、standard 12 对 12，合计 185 对 185，四类全部持平",
+     "result_en": "Four kinds are present: metric 64/64, data 41/41, source 68/68, standard 12/12, totalling 185/185, all balanced",
      "provenance": "本轮实测（本记录文件的挂接句在双方各新增一个 data 锚点，改动后仍为双侧持平）",
      "limitations_zh": "计数持平只说明锚点未在翻译中丢失，不说明每个锚点指向的证据本身成立"
     },
@@ -221,14 +221,14 @@
      "id": "R2-06",
      "item_zh": "评审可见图版双语成对与核心指标读数一致性",
      "item_en": "Bilingual pairing of reviewer-visible drawings and consistency of headline metric readings",
-     "method_zh": "按文件名规则枚举图版目录，核对每张中文图存在对应英文图；并核对图上人读位的核心指标与 metrics.json 的 display 位是否一致",
-     "method_en": "Enumerate the figures directory by filename rule and verify that each Chinese drawing has an English counterpart; also verify that headline metrics printed for human reading match the display fields in metrics.json",
+     "method_zh": "按文件名规则枚举图版目录，核对每张中文图存在对应英文图；并核对图上人读位的核心指标与 metrics.json 的展示位数（人读位精度）是否一致",
+     "method_en": "Enumerate the figures directory by filename rule and verify that each Chinese drawing has an English counterpart; also verify that headline metrics printed for human reading match the displayed precision of the values in metrics.json",
      "tool": "文件清单枚举 + 数值比对",
      "date": "2026-08-13",
-     "scope_zh": "assets/figures 全部 16 个图版文件；五张评审可见图的中英双版",
-     "scope_en": "All 16 files in assets/figures; the zh and en versions of the five reviewer-visible drawings",
-     "result_zh": "16 个图版文件全部成对，五张评审可见图的中英双版齐备；核心指标人读位与 metrics.json 的 display 位一致",
-     "result_en": "All 16 drawing files are paired and the five reviewer-visible drawings are present in both languages; the headline metrics read by humans match the display fields in metrics.json",
+     "scope_zh": "assets/figures 全部 22 个图版文件；五张评审可见图的中英双版",
+     "scope_en": "All 22 files in assets/figures; the zh and en versions of the five reviewer-visible drawings",
+     "result_zh": "22 个图版文件全部成对，五张评审可见图的中英双版齐备；核心指标人读位与 metrics.json 的展示位数一致",
+     "result_en": "All 22 drawing files are paired and the five reviewer-visible drawings are present in both languages; the headline metrics read by humans match the displayed precision of the values in metrics.json",
      "provenance": "成对性为本轮实测；读数一致性引自包内既有检查记录",
      "limitations_zh": "成对性是文件级核对，不核对两版图面内容是否逐项对应"
     },
@@ -274,7 +274,7 @@
     "Structural equivalence does not guarantee semantic equivalence: two versions can align structurally while individual wordings differ in the strength of their claim, a layer not tested here."
    ],
    "remeasured_on": "2026-08-14",
-   "remeasured_note_zh": "正文行数随后续修订变化后按当前版本复测:688/688 行、488/488 非空、229/229 表格行、锚点 185/185,逐行结构不一致 0"
+   "remeasured_note_zh": "正文行数随后续修订变化后按当前版本复测:700/700 行、494/494 非空、229/229 表格行、锚点 185/185,逐行结构不一致 0"
   },
   {
    "id": "R3",
@@ -388,8 +388,8 @@
      "date": "2026-08-13",
      "scope_zh": "双语展示页全部图像元素",
      "scope_en": "All image elements in both language versions",
-     "result_zh": "每版 9 个 img，9 个全部具备非空 alt，无缺失、无空 alt。中文版 alt 长度 25—121 字符，英文版 178—403 字符（中英字符密度不同，信息量相当）。抽样判读：五张图版的 alt 均描述图面内容与结论要点而非仅给标题，例如慢行图 alt 写明按 EPSG:4548 真实比例绘制、AI 开启域与关闭域及两者差集、差集为待现场审计的靶区。每版 1 个内联 svg（品牌标识），设 role=\"img\" 并配 aria-label 描述图形构成。装饰性元素共 12 个，其中交互场景图例的 6 个色块与 6 个开关标记设 aria-hidden=\"true\"。",
-     "result_en": "9 img elements per version, all 9 with non-empty alt; none missing, none empty. Chinese alt text runs 25-121 characters and English 178-403, carrying comparable information at different character densities. Sample reading: the alt on all five drawings describes content and conclusions rather than only a title; the mobility drawing's alt states that it is drawn to true scale in EPSG:4548 and names the AI-on domain, the AI-off domain, and the difference set as a target for site audit. Each version has one inline svg (the brand mark) with role=\"img\" and an aria-label describing its construction. Twelve decorative elements exist, of which the six legend swatches and six switch ticks in the interactive scene carry aria-hidden=\"true\".",
+     "result_zh": "每版 12 个 img，12 个全部具备非空 alt，无缺失、无空 alt。中文版 alt 长度 25—144 字符，英文版 27—533 字符（中英字符密度不同，信息量相当）。抽样判读：五张图版的 alt 均描述图面内容与结论要点而非仅给标题，例如慢行图 alt 写明双态可达域与差集口径、四张判断卡要点、差集为待现场审计的靶区。每版 1 个内联 svg（品牌标识），设 role=\"img\" 并配 aria-label 描述图形构成。装饰性元素共 8 个，其中交互场景图例的 6 个色块与 AI 开关的 2 个刻度标记设 aria-hidden=\"true\"。",
+     "result_en": "12 img elements per version, all 12 with non-empty alt; none missing, none empty. Chinese alt text runs 25-144 characters and English 27-533, carrying comparable information at different character densities. Sample reading: the alt on all five drawings describes content and conclusions rather than only a title; the mobility drawing's alt states the dual-state reach domains, the gap definition, the four judgment cards, and the gap as a target for site audit. Each version has one inline svg (the brand mark) with role=\"img\" and an aria-label describing its construction. Eight decorative elements exist, of which the six legend swatches and the two AI-switch ticks in the interactive scene carry aria-hidden=\"true\".",
      "limitations_zh": "alt 质量为抽样人工判读，未逐条评估是否完整传达图面全部信息；alt 无法替代复杂图版的完整数据，图内数据的等价获取路径依赖正文与结构化文件"
     },
     {

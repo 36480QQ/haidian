@@ -79,6 +79,8 @@
         "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/measurement-protocol.schema.json",
         "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/role-spec.json",
         "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/role-spec.schema.json",
+        "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/rule-check-report.json",
+        "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/shift-ledger-suite.json",
         "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/shift-ledger.schema.json",
         "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/validation-report.json",
         "submissions/Sonike/jingzhang-handover-line/visual/index.en.html",
@@ -87,7 +89,7 @@
       "ai_package_stages": {
         "submissions/Sonike/jingzhang-handover-line": "formal"
       },
-      "total_bytes": 7604484,
+      "total_bytes": 7726495,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -161,15 +163,15 @@
       "summary": {
         "standard_matrix_items": 6,
         "design_depth_items": 15,
-        "known_metric_refs_required": 34,
+        "known_metric_refs_required": 36,
         "proposal_format_version": "1",
         "evidence_contract": "legacy-exhaustive-inline",
         "proposal_reference_counts": {
           "source": 23,
           "standard": 6,
           "depth": 15,
-          "data": 22,
-          "metric": 45
+          "data": 24,
+          "metric": 47
         }
       }
     },

@@ -1,5 +1,18 @@
 # 方案迭代记录 / Changelog
 
+## v20.0 - 2026-08-14
+
+**Review handoff index and package navigation / 评审交接索引与包内导航**
+
+- 第 20 轮只在第 19 轮 PR #2566 的 merge commit `bfc77558d20e563b8069dd1dc9aa85016655b641` 进入 canonical `main@67539db2a9c3e2b91a765e109feb8f40861bb3c4`、且对全部 452 个开放 PR 做文件级扫描确认没有竞争 PR 后开始。本轮只新增一份包内导航层：`visual/assets/review-handoff-index.json`（`JZ-REVIEW-HANDOFF-INDEX-R20`）。
+- Round 20 began only after Round 19 PR #2566 merged into canonical `main@67539db2a9c3e2b91a765e109feb8f40861bb3c4` at `bfc77558d20e563b8069dd1dc9aa85016655b641` and a file-level scan of all 452 open PRs found no competing package PR. The round adds exactly one navigation layer: `visual/assets/review-handoff-index.json` (`JZ-REVIEW-HANDOFF-INDEX-R20`).
+- 索引把七条阅读路线（30 秒／3 分钟／15 分钟、五步可访问漫游、21 个章节阅读单元、D01—D08/H01—H07 交接、八问冷读）与全部 141 个路径的逐文件登记（现行／历史快照／机器输入／冻结／临时五种状态、语言对、轮次来源与权利回链）一次定位；`round15-baseline.json` 标注为历史快照，`t02-g0-g1-replay-fixtures.json` 标注为机器输入，`review-walkthrough.json` 与 `key-area-evidence-matrix.json` 的 `as_of` 与真实编辑同步。索引只负责定位，不生成新证据、不改变成熟度或权利状态。
+- The index locates seven reading routes (30-second / 3-minute / 15-minute, the five-step accessible walk, 21 chapter reading units, the D01–D08/H01–H07 handoff and the eight-question cold read) and a per-file registry for all 141 paths (five statuses: current / historical snapshot / machine input / frozen / provisional, with language pairs, round provenance and rights backlinks). `round15-baseline.json` is labelled a historical snapshot and `t02-g0-g1-replay-fixtures.json` machine input; the `as_of` values of `review-walkthrough.json` and `key-area-evidence-matrix.json` now match their real edits. The index only locates; it creates no evidence and changes no maturity or rights state.
+- 双语 proposal 阅读入口、visual 的 `#review-handoff` 小节与 A3 P14“核心回链”卡片同步指向索引；manifest、逐文件权利台账与 site-grounding 回归合同统一为 141/141/141。中英文 A3 保持 14/14 页，用两个全新进程确定性重建并逐文件字节一致；A0 输入未变、字节保持第 19 轮固定点。
+- The bilingual proposal reading entry, the visual `#review-handoff` section and the A3 P14 core-backlink card now point to the index; manifest, the file-level rights ledger and the site-grounding regression contract agree on 141/141/141. The Chinese and English A3 booklets keep 14/14 pages and were rebuilt deterministically in two fresh processes with byte-identical files; A0 inputs are unchanged and their bytes keep the Round 19 fixed point.
+- 冻结项保持不变：全部 geometry、`metrics.json`、12 场景、8 项目、3 重点区、36 概念用地单元、G0、NO-GO、临时边界、非 AI 同任务权利、失败停止/恢复优先与专业方修改/拒绝/删除权；现实结果、现场采集、批准、GO、成熟度变化仍为 0 或 `unknown`；独立逐文件清权审计仍为 0，总体权利仍为 `not_fully_cleared`。导航、链接闭合、机器 PASS、PR 或合并均不构成证据、批准、运营或权利升级。
+- Frozen items remain unchanged: all geometry, `metrics.json`, 12 scenes, 8 projects, 3 key areas, 36 conceptual land-use units, G0, NO-GO, provisional boundaries, same-task non-AI rights, failure stop/recovery-first rules and professional power to revise/reject/delete. Real results, field collection, approvals, GO and maturity changes remain 0 or `unknown`; completed independent file-level rights audits remain 0 and overall rights remain `not_fully_cleared`. Navigation, link closure, a machine PASS, a PR or a merge creates no evidence, approval, operation or rights upgrade.
+
 ## v19.0 - 2026-08-14
 
 **Final-grade quality-only convergence and judgement-first reading / 终稿级纯质量收束与判断优先阅读**

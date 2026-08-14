@@ -1,5 +1,11 @@
 # 方案迭代记录
 
+## v0.6 - 2026-08-14
+
+- Locked the review thesis to one sentence: lunch gate first, AI second. Real park gates must be walkable and still usable without power; AI only buys water, calls a staffed search, or logs a lost item, then hands off to a person.
+- Redrew the five core review figures so each answers that sentence: real lunch doors, the same rule at three official scales, three everyday gate tests, G5 dual-scale evidence, and lunch-gate acceptance before area ratios.
+- Kept Xuezhiyuan/Xueqing Road only in sources and assumptions as an off-corridor workplace observation. Qinghua East Road West, Wudaokou and Dazhongsi remain the named gates.
+
 ## v0.5 - 2026-08-13–14
 
 - Constrained the provisional 11.4 km² envelope by the official four-side limits: Xizhimen Outer Street, North Fifth Ring, Xueyuan/Xitucheng Roads, and Dazhongsi East/Heqing Roads; removed out-of-scope northern and eastern workplace anchors from the review path.

@@ -427,7 +427,8 @@
       "metric_refs": [
         "key_area_count",
         "building_count",
-        "equipment_family_count"
+        "equipment_family_count",
+        "release_replay_fixture_count"
       ],
       "source_ids": [
         "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
@@ -435,7 +436,8 @@
       ],
       "assumption_ids": [
         "A-KEYAREA-001",
-        "A-EXISTING-BUILDINGS-001"
+        "A-EXISTING-BUILDINGS-001",
+        "A-RELEASE-READINESS-001"
       ],
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",
@@ -443,7 +445,7 @@
         "VISUAL_PACKAGING",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "三重点区各形成五设备族、公共前场、后台模块、物流接口、实施抓手与风险边界。",
+      "evidence_summary_zh": "三重点区形成“进入证据—专业工位—输出回执—暂停/恢复”的接力合同，并保留临时范围与未授权状态。",
       "completeness_limited_by": [
         "official key-area and parcel polygons unavailable"
       ]
@@ -468,14 +470,16 @@
       ],
       "metric_refs": [
         "building_count",
-        "public_space_area_sqm"
+        "public_space_area_sqm",
+        "release_replay_fixture_count"
       ],
       "source_ids": [
         "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
       ],
       "assumption_ids": [
         "A-OWNERSHIP-001",
-        "A-COST-APPROVAL-001"
+        "A-COST-APPROVAL-001",
+        "A-RELEASE-READINESS-001"
       ],
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",
@@ -483,7 +487,7 @@
         "VISUAL_PACKAGING",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "项目清单按协议、公共界面、互换件公库、微工厂模块、复认证线和数据公报组织，并列明责任和前置条件。",
+      "evidence_summary_zh": "项目清单增加R0—R5门、单设备族90天可退出试点、责任角色和空值成本方法，不虚构实施主体或金额。",
       "completeness_limited_by": [
         "delivery entities and funding unavailable"
       ]
@@ -508,14 +512,17 @@
         "phase_1_area_sqm",
         "phase_2_area_sqm",
         "phase_3_area_sqm",
-        "phasing_gap_sqm"
+        "phasing_gap_sqm",
+        "release_replay_fixture_count",
+        "release_replay_field_run_count"
       ],
       "source_ids": [
         "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
       ],
       "assumption_ids": [
         "A-COST-APPROVAL-001",
-        "A-BOUNDARY-001"
+        "A-BOUNDARY-001",
+        "A-RELEASE-READINESS-001"
       ],
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",
@@ -523,7 +530,7 @@
         "VISUAL_PACKAGING",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "三期以数据、协议、运营主体和官方几何为触发条件，表达依赖次序而非获批工期。"
+      "evidence_summary_zh": "总体三期之前设置0—90天单设备族试点；只有权属、数据、风险、部件、复测和人工放行门全部闭合才可放大。"
     },
     {
       "item_id": "metrics_recalculation",
@@ -554,14 +561,18 @@
         "building_footprint_ratio",
         "green_ratio",
         "public_space_ratio",
-        "road_centerline_length_m"
+        "road_centerline_length_m",
+        "release_replay_expected_match_rate",
+        "service_continuity_rate",
+        "receipt_completeness_rate"
       ],
       "source_ids": [
         "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605"
       ],
       "assumption_ids": [
         "A-BOUNDARY-001",
-        "A-KPI-BASELINE-001"
+        "A-KPI-BASELINE-001",
+        "A-RELEASE-READINESS-001"
       ],
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",
@@ -569,7 +580,7 @@
         "VISUAL_PACKAGING",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "全部空间指标由 EPSG:4548 复算，已知与待补分层；运营 KPI 只给定义和首期采集方法。"
+      "evidence_summary_zh": "空间量继续由EPSG:4548复算；新增合成规则一致性指标与运营KPI取数计划，明确现场运行0、基线待采。"
     },
     {
       "item_id": "risk_missing_data",
@@ -591,7 +602,9 @@
         "building_density",
         "floor_area_ratio",
         "road_area_sqm",
-        "building_height_m"
+        "building_height_m",
+        "release_replay_field_run_count",
+        "qualified_handover_traceability_rate"
       ],
       "source_ids": [
         "CN-WEEE-REGULATION",
@@ -611,7 +624,8 @@
         "A-REPAIR-LEGAL-001",
         "A-DATA-GOVERNANCE-001",
         "A-KPI-BASELINE-001",
-        "A-CASE-TRANSFER-001"
+        "A-CASE-TRANSFER-001",
+        "A-RELEASE-READINESS-001"
       ],
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",
@@ -619,7 +633,7 @@
         "VISUAL_PACKAGING",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "边界、控规、现状、权属、交通、市政、工程、投资、数据治理、许可和 KPI 基线均登记触发器与影响。",
+      "evidence_summary_zh": "风险从散文升级为触发器、暂停角色、恢复证据和不可单独放行决定；现实机构、授权和现场证据仍缺失。",
       "completeness_limited_by": [
         "multiple official, survey, operator, and approval inputs remain unavailable"
       ]
