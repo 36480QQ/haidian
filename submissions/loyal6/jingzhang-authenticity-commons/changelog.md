@@ -1,5 +1,14 @@
 # 方案迭代记录
 
+## v1.3.0 - 2026-08-15
+
+- Replaced the metric-heavy opening with one public test: if an error cannot be corrected through every channel that carried it, the AI service must not remain in Jing-Zhang.
+- Converted PILOT-A into a controlled synthetic same-channel correction drill with one ordinary visitor, two original channels, human pause, independent review, product retest and spatial/data recovery.
+- Added a machine-readable correction receipt and four fail-closed field-removal tests; the drill is explicitly not a real incident, field result or operating KPI.
+- Reordered the first three pages around the public test, the bidirectional spatial spine and the 90-day drill receipt while retaining the 10-page count and all v1.2 breadth after page three.
+- Increased drawing and core-figure typography, reduced card density and grouped cases/scenarios so the package remains readable at normal review scale.
+- Kept video deferred and added no new global cases, application scenarios, fabricated KPI, partnership claim or statutory boundary.
+
 ## v1.2.0 - 2026-08-14
 
 - Positioned this release as a visibility-and-consistency repair: synchronized v1.2 labels, added a four-line originality comparison, explicit implementation gates and one parallel compliance boundary statement.

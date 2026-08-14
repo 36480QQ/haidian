@@ -112,12 +112,18 @@ code {
 <main>
 <section class="hero">
 <h1>京张验真公地</h1>
-<p class="summary">以百年京张可测量、可交接、可维护、可检修的公共工程精神，构建证据南行、纠错北返的双向证据脊，让AI错误能够同渠道更正并反向触发产品重测与空间恢复。</p>
+<p class="summary">以一句公众判据和一场受控合成演练，把证据南行、纠错北返的双向证据脊变成可自行验证的城市纠错基础设施：错误必须暂停、独立复核、沿原渠道更正，并触发产品重测与空间数据恢复。</p>
 <p class="translation-link"><a href="proposal.en.html">Read in English</a></p>
 </section>
 <h1>京张验真公地</h1>
-<blockquote><p><strong>一条把错误送回源头的双向证据脊</strong></p><p>证据南行，纠错北返；结论有期限，错误能回送，服务可恢复。</p></blockquote>
+<blockquote><p><strong>公众判据</strong></p><p><strong>一条错误如果不能沿原渠道被纠正，这项 AI 服务就不能留在京张。</strong></p><p>“证据南行、纠错北返”是承载这句判据的空间结构：结论有期限，错误能回送，服务可恢复。</p></blockquote>
 <p>京张验真公地（JZAC）不是“判真中心”，也不追求给人、内容或企业打一个永久可信分。它把百年京张最重要的现代性——可测量、可交接、可维护、出错后可检修的公共工程制度——转译成AI时代的城市基础设施：众智园测试主张及失败边界，AI原点社区让证据可理解、可争议，大钟寺在采购和使用前验证能否退出；使用端发现的伤害再沿原路径回到共同复核、产品重测和采购更新。成功不是“机器判断了真假”，而是错误被暂停、复核、同渠道更正，并触发下一轮修订。</p>
+<h2>核心概念与可验证机制：PILOT-A 合成纠错演练</h2>
+<p>原创机制不是一套新的判真模型，而是“原渠道清单—人工暂停—独立复核—同渠道更正—产品重测—空间与数据恢复”的城市闭环；PILOT-A把这个闭环压缩成一个公众可复现的服务场景。</p>
+<p>一位普通参观者在受控演练环境中看到一条“京张铁路历史照片”的说明：实体展签和离线网页都把一幅明确标注为合成测试材料的AI重建图误写成“原始史料”。这不是一宗真实事故，也不发布到真实公共渠道；它是一场专门检验系统能否认错、回送和恢复的合成演练。参观者不需要理解模型参数，只需检查一件事：<strong>更正有没有回到他实际看见错误的每个渠道</strong> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="visual/assets/correction-receipt-demo.json#JZAC-DEMO-001" title="空间数据：visual/assets/correction-receipt-demo.json#JZAC-DEMO-001">空间数据</sup>。</p>
+<div class="proposal-table"><table><thead><tr><th>演练时刻</th><th>人与系统的动作</th><th>公众可见证据</th><th>失败即停止</th></tr></thead><tbody><tr><td>T+00</td><td>合成误标同时出现在演练展签与离线网页</td><td>两个原渠道编号和一张纸面案件号</td><td>不记录原渠道，不得开始</td></tr><tr><td>T+05</td><td>值守人员人工暂停两个演练界面</td><td>暂停时间、责任角色和不确定性提示</td><td>无责任角色，立即暂停</td></tr><tr><td>T+20</td><td>独立档案复核角色分别检查来源、检测结果和人工判断</td><td>复核意见明确“AI重建，不是原始史料”</td><td>来源与判断混写，维持暂停</td></tr><tr><td>T+35</td><td>更正返回原展签和原离线网页，不只修改后台</td><td>两个渠道逐项签收，覆盖率为 2/2</td><td>任一渠道未回送，禁止恢复服务</td></tr><tr><td>T+50</td><td>误标转成发布流程的产品重测任务</td><td>可追踪的重测任务号与修改/退役决定</td><td>无重测任务，不得关闭案件</td></tr><tr><td>T+60</td><td>临时展签、缓存数据和测试材料恢复或清除</td><td>空间、资产与数据恢复记录</td><td>无恢复记录，演练判为退役</td></tr></tbody></table></div>
+<h3>一张可核查、可故障注入的纠错收据</h3>
+<p>演练输出机器可读的 <code>correction-receipt-demo.json</code>：记录合成案例声明、原始传播渠道、暂停时刻、证据依据、独立复核角色、逐渠道更正状态、产品重测任务、数据与场地恢复以及最终处置。它不是运营KPI或真实服务绩效。演练还主动删除责任角色、原渠道清单、独立复核角色或恢复记录；系统必须分别转为暂停或退役。只有四项故障注入都“闭锁通过”，并且两个原渠道均完成更正，PILOT-A 才能进入下一阶段 <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="visual/assets/correction-receipt-demo.json#fail_closed_tests" title="空间数据：visual/assets/correction-receipt-demo.json#fail_closed_tests">空间数据</sup>。</p>
 <h2>一页总览：任务书不是清单，而是一套闭环</h2>
 <div class="proposal-table"><table><thead><tr><th>任务书要求</th><th>JZAC 回答</th><th>可检查成果</th></tr></thead><tbody><tr><td>三大定位</td><td>国家人工智能创新核心引领区的公共验真接口、具有国际影响力的AI原始创新策源地的失败学习场、AI未来城市创新试验区的可逆采用基础设施</td><td>一条双向证据脊、三处原型、90天可退役试点</td></tr><tr><td>五大功能</td><td>原始创新验证、企业全周期服务、AI+场景开放、公共文化与媒介素养、全球交流与年度运营</td><td>6站、15场景、12旅程、5项产业测试、4季年度计划</td></tr><tr><td>三片区两翼</td><td>众智园失效证据场、原点社区共同复核厅、大钟寺可逆采用门厅；中关村科技服务翼与小月河场景赋能翼双向供给</td><td>三态空间、六字段服务合同、南行/北返责任链</td></tr><tr><td>原创增量</td><td>不再只问“能否验证”，而是把使用端错误送回源头，让更正覆盖原渠道并触发产品、采购和空间恢复</td><td>四项城市纠错权、同渠道恢复、失败注入与退役判定</td></tr><tr><td>成败标准</td><td>不以大屏、流量或单一准确率评判；以能否转人工、能否申诉、能否纠错、能否导出与停用、能否恢复场地评判</td><td>可计算准备度 + 待试点实测成效，禁止用方案值冒充运营值</td></tr></tbody></table></div>
 <p>这张表把品牌、产业、场景、空间、文化和运营六项任务放在同一条证据链上：品牌表达公共承诺，产业提供可复现实验，场景产生真实问题，空间承载复核与恢复，文化解释为什么错误必须可检修，运营则决定何时暂停、修改或退役 <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="AGENT-TASKBOOK" title="来源：AGENT-TASKBOOK">来源</sup> <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="PROJECT-AGENT-OPEN-CALL-TASKBOOK" title="标准：PROJECT-AGENT-OPEN-CALL-TASKBOOK">标准</sup>。</p>

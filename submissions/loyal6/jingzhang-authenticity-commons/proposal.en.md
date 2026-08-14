@@ -6,18 +6,39 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "Translate the century-old Jing-Zhang discipline of measurement, handover, maintenance and repair into a bidirectional evidence spine where evidence moves south, corrections return north, affected channels are repaired and failures trigger product retesting."
+summary: "Turn the bidirectional evidence spine into publicly testable urban correction infrastructure through one plain-language test and one controlled synthetic drill: pause error, review independently, correct every original channel, then trigger product retesting and spatial/data recovery."
 tracks: ["enterprise-services-ecosystem", "civic-agent-governance", "ai-public-services"]
 scenarios: ["ai-health-service-navigation", "enterprise-service-copilot", "public-safety-operations-review", "ai-cultural-guide", "ai-traffic-walkability"]
 ---
 
 # Jing-Zhang Authenticity Commons
 
-> **A bidirectional evidence spine that sends errors back to their source**
+> **Public test**
 >
-> Evidence moves south and corrections return north; conclusions expire, errors can be returned, and services can recover.
+> **If an error cannot be corrected through every channel that carried it, the AI service must not remain in Jing-Zhang.**
+>
+> “Evidence moves south; corrections return north” remains the spatial structure that makes this test operable: conclusions expire, errors can return, and services can recover.
 
 Jing-Zhang Authenticity Commons (JZAC) is neither a truth authority nor a permanent trust score for people, content or firms. It translates the most important modernity of the century-old Jing-Zhang Railway—a public-works discipline of measurement, handover, maintenance and repair—into AI-era urban infrastructure. Zhongzhiyuan tests claims and failure boundaries; the AI Origin Community makes evidence understandable and contestable; Dazhongsi tests whether procurement and use can be reversed. Harm found at the point of use returns through the same channels to public review, product retesting and procurement updates. Success is not “the machine decided truth”; it is that an error was paused, reviewed, corrected through the same channels and converted into a revision task.
+
+## Core Concept and Verifiable Mechanism: The PILOT-A Synthetic Correction Drill
+
+The original mechanism is not another truth-detection model. It is an urban loop of original-channel inventory, human pause, independent review, same-channel correction, product retest, and spatial/data recovery; PILOT-A compresses that loop into one publicly reproducible service scenario.
+
+In a controlled drill, an ordinary visitor sees a Jing-Zhang “historical photograph” described on both a physical exhibit label and an offline webpage. The image is clearly designated as synthetic test material, yet both drill channels mislabel it as an “original historical record.” This is neither a real incident nor a release into live public channels. It is a synthetic exercise designed to test whether the system can admit error, return correction and recover. The visitor need not understand model parameters; they check one thing: **did the correction return to every channel on which they saw the error?** [data:visual/assets/correction-receipt-demo.json#JZAC-DEMO-001]
+
+| Drill time | Human and system action | Publicly inspectable evidence | Fail-closed rule |
+| --- | --- | --- | --- |
+| T+00 | Synthetic mislabel appears on the drill label and offline page | Two original-channel IDs and one paper case number | Do not start without a channel inventory |
+| T+05 | Staff pause both drill interfaces manually | Pause time, accountable role and uncertainty notice | No accountable role means immediate pause |
+| T+20 | An independent archive-review role checks provenance, detector output and human judgement separately | Review states “AI reconstruction, not an original record” | Keep paused if basis and judgement are conflated |
+| T+35 | Correction returns to the original label and original offline page, not only the backend | Channel-by-channel acknowledgements; coverage 2/2 | One missed channel blocks service restoration |
+| T+50 | The mislabel becomes a product retest task for the publishing workflow | Traceable retest ID and modify/retire decision | The case cannot close without a retest task |
+| T+60 | Temporary label, cached data and test material are restored or cleared | Spatial, asset and data recovery record | No recovery record means retirement |
+
+### One Machine-readable Receipt That Can Be Failure-injected
+
+The drill emits `correction-receipt-demo.json`, recording the synthetic-case declaration, original propagation channels, pause time, evidence basis, independent reviewer, per-channel correction status, product-retest task, data/site recovery and final disposition. It is not an operating KPI or field-service result. The drill deliberately removes the accountable role, original-channel inventory, independent reviewer or recovery record; the system must switch to pause or retire. PILOT-A may advance only when all four fail-closed injections pass and both original channels acknowledge correction [data:visual/assets/correction-receipt-demo.json#fail_closed_tests].
 
 ## One-page Overview: One Closed Loop, Not Six Checklists
 
