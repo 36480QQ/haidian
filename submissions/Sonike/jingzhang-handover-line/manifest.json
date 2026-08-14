@@ -25,7 +25,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "b26cc0cdc02bf0a96d19c15d5a788ec491ff44aaee3cdd4b65f4335f822b994e"
+      "sha256": "ea0c613a2585702af2ba54eb97dc55c50240e39655bd2fb837483cfca730e1b9"
     },
     {
       "path": "agent.json",
@@ -49,13 +49,13 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "a311174bd7ed64dca5d1712e417e605f7004d289a0239d4629c710ba6212228e"
+      "sha256": "9838d92f06b196b892143f648587eecb4022f61f5c9ebbb9a5f58acc4dd2d268"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "d69d3b16c553f3363f1072f674b7f716499c5e370211714ce9b42f18b1b0c1a1"
+      "sha256": "666e3d1e2e66b4c10e5181629f69a6c6eb36d2e0e51c4d506506d90803131ffe"
     },
     {
       "path": "compliance_matrix.json",
@@ -80,7 +80,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "b59421677e8c19cff89083c67122ae3d8f864f2aa7838de7d9625729bbca5c10"
+      "sha256": "206e3e6772ef1365ba259f7749204a5976e7498eac6839b7636fd11967d07c20"
     },
     {
       "path": "report/narrative.md",
@@ -210,7 +210,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "568d09c56bc555a206da59c62768675f7d26d8f5b79ffcc615f54c532f8650cc"
+      "sha256": "68d78cee32f8e5f7e06b1c93208076a4424227262aab335ffda7e7a0c0935544"
     },
     {
       "path": "report/proposal.en.html",
@@ -218,7 +218,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "89c8051d00b9ffda90f586c2379dde57b806a85e2b3285bba7f630f5d2f7b212"
+      "sha256": "bc739dc848200fe438d1b352b90e182b2bddf7a3e3db6c27b26240ea1fd98c3f"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -349,7 +349,7 @@
       "role": "narrative",
       "required": false,
       "language": "neutral",
-      "sha256": "cb1b9a48d629b8846de739cbd244f8d34a32ef859f00dfc2e175db761364ec10"
+      "sha256": "bf54dfd9a0f6d8483e1d043bc41e81ca2550942faf3090421c8f16b7dc199fb2"
     },
     {
       "path": "assets/figures/spatial-prototype.png",
