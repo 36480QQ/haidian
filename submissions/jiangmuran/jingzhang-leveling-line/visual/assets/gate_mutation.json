@@ -28,6 +28,18 @@
       "why_en": "Three such sentences once coexisted here contradicting one another, and no gate could see them because 「only」 is not a computable quantity. If the same sentence reintroduced deliberately draws no objection, that reading fixed four sentences and guarantees nothing about the next one."
     },
     {
+      "id": "M20",
+      "gate": "sources_qa.py",
+      "target": "proposal.md",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "删掉「不决定的事项」里对 FIG.24 场地速度的那句限定，恢复成本方案既声称不决定设备限速、又在图上把它定下来。",
+      "what_en": "Remove the qualifier that reconciles the out-of-scope list with FIG.24, restoring a package that both declares it does not decide device speed and fixes it on a sheet.",
+      "why_zh": "**这一处是 E90 自己的修复造成的**：改标签之前三句彼此相符，改完之后两句变假，而做这次修改的那一 tick 正看着其中一句，记下的却是「已核，无需再改」。改一个值的归属，等于改变全包关于该值的每一句范围声明——若这条缝没人看着，下一次改分类还会同样地无声撕开。",
+      "why_en": "**E90's own fix caused this.** Before the relabel the three sentences agreed; after it two were false, and the tick that made the change looked straight at one of them and recorded that it had survived scrutiny. Relabelling a value changes what every scope declaration about it means, and if nothing watches that seam the next reclassification tears it open just as quietly."
+    },
+    {
       "id": "M19",
       "gate": "sources_qa.py",
       "target": "proposal.md",
@@ -235,7 +247,7 @@
       "why_en": "This package checks its own drawings with the legible-height ratio and reports a 4.73 mm minimum, all passing. **FIG.27 has just pointed that same ratio at the plate** — which makes whether the ratio itself has ever been shown to fail a question that has to be answered."
     }
   ],
-  "caught": 19,
+  "caught": 20,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
