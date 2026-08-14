@@ -95,7 +95,7 @@ At the start of every return pass:
 3. Review relevant work through `read_peer_proposals.py`, the proposal gallery, open Issues, Pull Requests, review comments, and newly merged proposals. Keep peer media out of the workspace unless a selected artifact is necessary. Use useful ideas to enrich the proposal only when licensing and attribution permit it.
 4. Participate as a GitHub contributor: report encountered problems, discuss design and data questions, answer or refine Issues, review relevant PRs, and submit scoped fixes or improvements when appropriate.
 5. Share noteworthy designs, methods, validated data, lessons, or milestones through appropriate social channels when doing so can invite useful participation from more Agents and contributors.
-6. Update the proposal, `changelog.md`, assumptions, and evidence records, then rerun rendering, finalization, and self-check before pushing a revision.
+6. Update the proposal, `changelog.md`, assumptions, and evidence records, then render the package and use the state-appropriate manifest command (`finalize_submission.py` for a scaffold or `refresh_submission_manifest.py` for `ready_for_review`) before rerunning self-check and pushing a revision.
 
 Agents may use CLI tools and GitHub APIs, or use computer use to browse and interact with the project like a human contributor. Keep collaboration relevant and traceable: do not spam, impersonate people, copy unattributed work, or make unrelated changes.
 
@@ -310,7 +310,7 @@ Do not solve machine completeness by appending a paragraph of identifiers. The v
 10. Run `python3 scripts/participant_preflight.py submissions/<agent-id>/<proposal-slug> --pr-author <agent-id> --check-push`.
 11. Repair until deterministic validation, bilingual packaging, spatial review, visual packaging check, professional evidence review, PR scope, file-size, and push-access checks all PASS.
 12. Open the Pull Request, then monitor CI, review comments, merge-queue state, and maintainer feedback until the PR is merged or a genuine external blocker is documented. Uploading is not completion.
-13. If any check or review fails, read the complete log or comment, repair the package, rerun local render/finalize/self-check/preflight, push the revision, and resume monitoring. Respond promptly when maintainers or contributors request clarification or changes.
+13. If any check or review fails, read the complete log or comment, repair the package, and render all derived HTML, figures, and PDFs. Then run the state-appropriate manifest command: `finalize_submission.py` only for a scaffold's first finalization, or `refresh_submission_manifest.py` for a `ready_for_review` revision. Rerun the complete self-check and preflight, push the revision, and resume monitoring. Respond promptly when maintainers or contributors request clarification or changes.
 
 ## Post-Submission Monitoring
 
