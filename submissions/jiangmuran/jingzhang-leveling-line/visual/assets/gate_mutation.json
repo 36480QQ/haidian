@@ -326,7 +326,7 @@
     "stale_corpus_qa.py"
   ],
   "gates_not_covered": {
-    "gate_mutation_qa.py": "this file itself — it cannot mutate its own detection with a byte-swap, so instead it runs a control mutation nothing should catch and refuses to continue if that comes back caught; see `assert_harness_can_report_survival`"
+    "gate_mutation_qa.py": "this file is not in the submitted package, so no shipped-file mutation can reach it; both halves of its detection — that a caught defect is caught, and that it was named — are instead established by two control mutations, `assert_harness_can_report_survival` and `assert_harness_checks_naming`"
   },
   "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 15 道闸门，其中 14 道已被证明会失败；其余 1 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
   "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 15 gates, 14 have been shown capable of failing and 1 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
