@@ -63,7 +63,7 @@
       "severity": "info",
       "target": "self_check.json",
       "source": "package-provided",
-      "message": "以 PKG_ 开头的条目是本方案自建的闸门，不是组织方检查项，不参与 ok / can_enter_formal_review 的判定。**它们只可能记录『通过』**——任一闸门不过，构建即停止，包不会存在，因此『通过』二字本身不构成证据。有证据价值的是每条 message 里的读数：它可以拿随包产物直接复核。（本次记录 36 道闸门，逐道由构建的输出现取，而不是从一份手写名单里挑——名单曾经只列了 7 道。）"
+      "message": "以 PKG_ 开头的条目是本方案自建的闸门，不是组织方检查项，不参与 ok / can_enter_formal_review 的判定。**它们只可能记录『通过』**——任一闸门不过，构建即停止，包不会存在，因此『通过』二字本身不构成证据。有证据价值的是每条 message 里的读数：它可以拿随包产物直接复核。（本次记录 37 道闸门，逐道由构建的输出现取，而不是从一份手写名单里挑——名单曾经只列了 7 道。）"
     },
     {
       "check_id": "PKG_ACCESSIBILITY_QA",
@@ -175,7 +175,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "gate_count_qa.py — gate counts: both editions quote the harness correctly — 54 mutations, 32 of 36 gates proven able to fail, 4 with published reasons, every figure read from gate_mutation.json rather than trusted"
+      "message": "gate_count_qa.py — gate counts: both editions quote the harness correctly — 54 mutations, 32 of 37 gates proven able to fail, 5 with published reasons, every figure read from gate_mutation.json rather than trusted"
     },
     {
       "check_id": "PKG_GATE_MUTATION_QA",
@@ -183,7 +183,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "gate_mutation_qa.py — gate mutation: 54 deliberate defects across 32 of 36 gates, all caught and all named by the gate that caught them; 4 gates not yet proven able to fail, each with its reason published"
+      "message": "gate_mutation_qa.py — gate mutation: 54 deliberate defects across 32 of 37 gates, all caught and all named by the gate that caught them; 5 gates not yet proven able to fail, each with its reason published"
     },
     {
       "check_id": "PKG_I18N_ORDER_QA",
@@ -352,6 +352,14 @@
       "target": "package",
       "source": "package-provided",
       "message": "upstream_validator_qa.py — 本次构建未记录到该闸门的输出，因此不声称它跑过"
+    },
+    {
+      "check_id": "PKG_VISUAL_PACKET_QA",
+      "result": "pass",
+      "severity": "info",
+      "target": "package",
+      "source": "package-provided",
+      "message": "visual_packet_qa.py — visual packet: 18 images against the organisers' cap of 18 (0 slot(s) free) — 10 figures in both languages, 4 PDF first pages, 4 screenshots; largest is assets/figures/metrics-evidence.png at 1.20 MiB against a 4 MiB per-image cap, read from upstream/main"
     },
     {
       "check_id": "PKG_ERRATA_REGISTER",

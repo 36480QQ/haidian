@@ -694,6 +694,7 @@
     "upstream_validator_qa.py"
   ],
   "gates_not_covered": {
+    "visual_packet_qa.py": "every branch it holds turns on a file being absent, being larger than the organisers' per-image cap, or the packet exceeding their image count — and this harness damages bytes inside shipped text files, which cannot unlink a PNG, cannot make one 4 MiB, and cannot add a nineteenth image to a list the organisers hard-code. It is the one gate here whose failing states are all facts about the file system rather than about file contents.",
     "upstream_drift_qa.py": "it compares organiser files on `upstream/main` with the blobs this build last read them against; both sides are outside the submitted package, so no mutation of a shipped file can reach the condition it tests.",
     "build_rubric_coverage.py": "it refuses when a published review dimension is unmapped, and the mapping lives in `analysis/`, which intake excludes — so no mutation of a shipped file can reach the condition. The same package-boundary fact as the two below.",
     "scarce_surface_qa.py": "it reads which sheets `build_drawings.py` puts on the rasterised board, and that file is in `analysis/`, which intake excludes — so no mutation of a shipped file can change what this gate sees. The same package-boundary fact that leaves the harness itself unproven, and stated rather than left to be inferred from a count.",
@@ -730,6 +731,6 @@
       "why_en": "The English patterns match the unscoped present perfect, and the English text writes the past perfect, where the tense is the scope. Zero matches is the correct reading, and it was probed: switching one English sentence to the present perfect makes the gate name it."
     }
   ],
-  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 36 道闸门，其中 32 道已被证明会失败；其余 4 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
-  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 36 gates, 32 have been shown capable of failing and 4 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
+  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 37 道闸门，其中 32 道已被证明会失败；其余 5 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
+  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 37 gates, 32 have been shown capable of failing and 5 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
 }
