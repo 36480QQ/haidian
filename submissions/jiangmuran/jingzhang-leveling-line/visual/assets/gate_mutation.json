@@ -580,6 +580,32 @@
       "why_en": "The first coverage number measured whether the strings handed to the translator came back translated — always 100%, while real content coverage was 65% and the design chapters nearer 45%. **After changing what is measured, the new measure has to be shown capable of falling**, or all that changed is a nicer-sounding 100%."
     },
     {
+      "id": "M52",
+      "gate": "label_collision_qa.py",
+      "target": "fig_key_areas.py",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "rendered": true,
+      "what_zh": "把 FIG.04 定位条上三个片区的名字下移到水准点编号所在的那一行。",
+      "what_en": "Move the three area names on FIG.04's locator down onto the row the benchmark ids occupy.",
+      "why_zh": "**这道闸门是为「英文版没人打开」写的**，而它必须能在中文版上也失败——否则它证明的只是翻译，不是版式。E167 的三处压字全部出在英文，但压字是版式问题不是语言问题，一道只在一种语言上会响的闸门，下一次改中文版时就是哑的。",
+      "why_en": "**This gate exists because nobody opens the English edition**, and it has to be able to fail on the Chinese one too — otherwise what it proves is about translation rather than layout. E167's three collisions were all in English, but a collision is a layout fault, not a language fault, and a gate that can only speak about one edition is silent the next time the other one moves."
+    },
+    {
+      "id": "M53",
+      "gate": "i18n_order_qa.py",
+      "target": "i18n_drawings.py",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "rendered": true,
+      "what_zh": "把读数牌那条模板改回交叉的语序——英文读者会看到「at the 27 m distance FIG.3.0 fixes」。",
+      "what_en": "Restore the crossed word order in the plate-width template, the one that printed \"at the 27 m distance FIG.3.0 fixes\".",
+      "why_zh": "**这一处不是假想的：它在包里躺了很久，两道闸门都对它沉默。** 覆盖率报告把它记作「已翻译」，`cjk_leak_qa` 找不到中文——因为一个中文字都没剩下。把它放回去，是要证明这道新闸门抓的是那一处真事，不是一个方便的替身。",
+      "why_en": "**This one is not hypothetical: it sat in the package and both existing gates were silent about it.** The coverage report counted it as translated and cjk_leak_qa found no Chinese, because none was left. Putting it back proves the new gate catches the thing that actually happened rather than a convenient stand-in."
+    },
+    {
       "id": "M12",
       "gate": "overflow_qa.py",
       "target": "fig_visit.py",
@@ -619,7 +645,7 @@
       "why_en": "This package checks its own drawings with the legible-height ratio and reports a 4.73 mm minimum, all passing. **FIG.27 has just pointed that same ratio at the plate** — which makes whether the ratio itself has ever been shown to fail a question that has to be answered."
     }
   ],
-  "caught": 51,
+  "caught": 53,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
@@ -634,7 +660,9 @@
     "figure_citation_qa.py",
     "forward_reference_qa.py",
     "gate_count_qa.py",
+    "i18n_order_qa.py",
     "intake_limits_qa.py",
+    "label_collision_qa.py",
     "markdown_structure_qa.py",
     "matrix_refs_qa.py",
     "naming_qa.py",
@@ -689,6 +717,6 @@
       "why_en": "The English patterns match the unscoped present perfect, and the English text writes the past perfect, where the tense is the scope. Zero matches is the correct reading, and it was probed: switching one English sentence to the present perfect makes the gate name it."
     }
   ],
-  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 33 道闸门，其中 29 道已被证明会失败；其余 4 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
-  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 33 gates, 29 have been shown capable of failing and 4 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
+  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 35 道闸门，其中 31 道已被证明会失败；其余 4 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
+  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 35 gates, 31 have been shown capable of failing and 4 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
 }
