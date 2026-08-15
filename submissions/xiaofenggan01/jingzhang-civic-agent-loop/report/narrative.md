@@ -331,6 +331,80 @@
 | visual_interactive_gate_count | count | 7 | high |
 | stitch_corridor_map_annotation_count | count | 5 | high |
 | land_use_compatibility_rule_count | count | 8 | high |
+| metric_dictionary_entry_count | count | 52 | high |
+| changelog_entry_count | count | 28 | high |
+| reader_guide_step_count | count | 5 | high |
+| iteration_count | count | 30 | high |
+| gate_deep_dive_count | count | 7 | high |
+| persona_deep_dive_count | count | 7 | high |
+| corridor_deep_dive_count | count | 5 | high |
+| receipt_optional_field_count | count | 3 | high |
+| rollback_path_count | count | 7 | high |
+| compatibility_category_count | count | 3 | high |
+| passport_optional_field_count | count | 2 | high |
+| visual_deep_dive_row_count | count | 6 | high |
+| visual_rollback_row_count | count | 7 | high |
+| visual_scenario_clause_count | count | 13 | high |
+| visual_source_row_count | count | 10 | high |
+
+字典与 metrics.json 一一对应，由资料环自动生成，随版本滚动更新（v2 全量重生成）。
+
+## 指标字典（全量速查）
+
+| 指标 | 单位 | 值 | 置信 |
+|---|---|---|---|
+| site_area_sqm | sqm | 11,412,825.386 | high |
+| building_footprint_area_sqm | sqm | 2,083,289.604 | medium |
+| green_ratio | ratio | 0.311944 | medium |
+| public_space_ratio | ratio | 0.113433 | medium |
+| floor_area_ratio | ratio | unknown | unknown |
+| key_area_count | count | 3 | high |
+| data_evidence_anchor_count | count | 18 | high |
+| scenario_card_count | count | 13 | high |
+| persona_count | count | 7 | high |
+| human_review_checkpoint_count | count | 13 | high |
+| exit_mechanism_count | count | 13 | high |
+| ai_landmark_count | count | 3 | high |
+| land_use_area_0702_sqm | sqm | 574,648.601 | high |
+| land_use_area_1401_sqm | sqm | 3,560,158.242 | high |
+| land_use_area_0803_sqm | sqm | 1,106,411.767 | high |
+| land_use_area_0802_sqm | sqm | 2,909,027.707 | high |
+| land_use_area_0701_sqm | sqm | 764,666.814 | high |
+| land_use_area_0806_sqm | sqm | 323,809.974 | high |
+| land_use_area_0804_sqm | sqm | 879,534.459 | high |
+| land_use_area_1403_sqm | sqm | 1,294,587.148 | high |
+| governance_gate_count | count | 7 | high |
+| receipt_schema_field_count | count | 8 | high |
+| falsifiability_question_count | count | 3 | high |
+| temporal_segment_count | count | 4 | high |
+| accessibility_checkpoint_count | count | 5 | high |
+| stitch_corridor_count | count | 5 | high |
+| material_traceability_field_count | count | 3 | high |
+| agent_passport_field_count | count | 6 | high |
+| agent_passport_count | count | 4 | high |
+| ecosystem_merged_proposal_count | count | 833 | high |
+| governance_track_sample_share | ratio | 0.675 | medium |
+| compute_governance_parcel_count | count | 11 | high |
+| energy_audit_field_count | count | 3 | high |
+| blueway_corridor_count | count | 2 | medium |
+| sponge_policy_parcel_count | count | 11 | high |
+| acoustic_zone_type_count | count | 3 | high |
+| dark_friendly_lighting_parcel_count | count | 40 | high |
+| child_friendly_route_count | count | 5 | high |
+| all_age_node_count | count | 10 | high |
+| regional_synergy_loop_count | count | 4 | medium |
+| zhongzhiyuan_workshop_count | count | 4 | high |
+| ai_origin_hall_count | count | 3 | high |
+| dazhongsi_market_count | count | 3 | high |
+| developer_walkway_length_km | count | 9 | medium |
+| pilgrimage_route_color_count | count | 3 | high |
+| annual_event_count | count | 4 | high |
+| risk_dimension_count | count | 8 | high |
+| photo_register_field_count | count | 5 | high |
+| falsifiable_clause_count | count | 13 | high |
+| visual_interactive_gate_count | count | 7 | high |
+| stitch_corridor_map_annotation_count | count | 5 | high |
+| land_use_compatibility_rule_count | count | 8 | high |
 
 字典与 metrics.json 一一对应，由资料环自动生成，随版本滚动更新。
 
